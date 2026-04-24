@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Позиционная классификация санскритских частиц (по А. А. Зализняку)</title>
+<style>
+  :root {
+    --bg: #faf7f2;
+    --ink: #1c1c1c;
+    --muted: #6b6258;
+    --rule: #b8a98f;
+    --rule-soft: #e0d5c0;
+    --accent: #7a2d1e;
+    --accent-soft: #f0e2d8;
+    --pre: #2c5f7c;
+    --pre-soft: #e3eef5;
+    --post: #5c4a2c;
+    --post-soft: #f5edd9;
+    --free: #4a5d3a;
+    --free-soft: #e6ecdf;
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: 'Charter', 'Iowan Old Style', 'Palatino Linotype', 'Book Antiqua', Palatino, Georgia, serif;
+    font-size: 16px;
+    line-height: 1.45;
+  }
+  .slide {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 40px 48px 56px;
+  }
+  header {
+    text-align: center;
+    border-bottom: 2px solid var(--rule);
+    padding-bottom: 18px;
+    margin-bottom: 28px;
+  }
+  h1 {
+    font-size: 26px;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    margin: 0 0 6px;
+  }
+  .subtitle {
+    font-size: 14px;
+    color: var(--muted);
+    font-style: italic;
+    letter-spacing: 0.02em;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1.7fr;
+    gap: 32px;
+  }
+  .col-left {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    gap: 24px;
+  }
+  .block {
+    border: 1.5px solid var(--rule);
+    background: #fff;
+    padding: 18px 20px 20px;
+    position: relative;
+  }
+  .block-pre { border-color: var(--pre); background: var(--pre-soft); }
+  .block-free { border-color: var(--free); background: var(--free-soft); }
+  .block-post { border-color: var(--post); background: var(--post-soft); padding: 0; }
+  .block-title {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+  }
+  .block-pre .block-title { color: var(--pre); }
+  .block-free .block-title { color: var(--free); }
+  .block-post .block-title-wrap {
+    background: var(--post);
+    color: #fff;
+    padding: 10px 18px;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+  .block-subtitle {
+    font-size: 12px;
+    font-style: italic;
+    color: var(--muted);
+    margin-bottom: 12px;
+    line-height: 1.35;
+  }
+  .block-pre .block-subtitle,
+  .block-free .block-subtitle { color: #555; }
+  .block-post .block-subtitle-inner {
+    padding: 8px 18px 10px;
+    font-size: 12px;
+    font-style: italic;
+    color: #5c4a2c;
+    background: rgba(255,255,255,0.5);
+    border-bottom: 1px solid var(--rule-soft);
+  }
+  .particle-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .particle-list li {
+    display: grid;
+    grid-template-columns: 90px 1fr;
+    gap: 12px;
+    padding: 4px 0;
+    font-size: 15px;
+    align-items: baseline;
+  }
+  .particle-list li + li { border-top: 1px dashed var(--rule-soft); }
+  .skt {
+    font-family: 'Sanskrit Text', 'Charter', Georgia, serif;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 17px;
+    color: var(--accent);
+  }
+  .gloss {
+    color: var(--ink);
+    font-size: 14px;
+  }
+  .post-section {
+    padding: 14px 18px 16px;
+  }
+  .post-section + .post-section {
+    border-top: 1.5px solid var(--rule-soft);
+  }
+  .post-section-title {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--post);
+    margin-bottom: 8px;
+  }
+  footer {
+    margin-top: 32px;
+    padding-top: 16px;
+    border-top: 1px solid var(--rule-soft);
+    font-size: 12px;
+    color: var(--muted);
+    font-style: italic;
+    text-align: center;
+  }
+  .annotation {
+    font-size: 12px;
+    color: var(--muted);
+    margin-top: 6px;
+    font-style: italic;
+  }
+  @media print {
+    body { background: #fff; }
+    .slide { padding: 20px; }
+  }
+</style>
+</head>
+<body>
+<div class="slide">
+
+<header>
+  <h1>Позиционная классификация санскритских частиц</h1>
+  <div class="subtitle">по А. А. Зализняку, с опорой на закон Ваккернагеля</div>
+</header>
+
+<div class="grid">
+
+  <div class="col-left">
+
+    <div class="block block-pre">
+      <div class="block-title">Препозитивные</div>
+      <div class="block-subtitle">в начале клаузы или перед словом, к которому относятся</div>
+      <ul class="particle-list">
+        <li><span class="skt">na</span><span class="gloss">не <em style="color:var(--muted);font-size:12px">(дескриптивное)</em></span></li>
+        <li><span class="skt">mā</span><span class="gloss">не <em style="color:var(--muted);font-size:12px">(прохибитивное)</em></span></li>
+      </ul>
+    </div>
+
+    <div class="block block-free">
+      <div class="block-title">Свободной позиции</div>
+      <div class="block-subtitle">не привязаны к ваккернагелевской позиции</div>
+      <ul class="particle-list">
+        <li><span class="skt">iti</span><span class="gloss">так / маркер конца цитаты</span></li>
+        <li><span class="skt">evam</span><span class="gloss">так, таким образом</span></li>
+      </ul>
+      <div class="annotation">iti фактически почти всегда постпозитивно (закрывает цитату)</div>
+    </div>
+
+  </div>
+
+  <div class="block block-post">
+    <div class="block-title-wrap">Постпозитивные</div>
+    <div class="block-subtitle-inner">примыкают к предыдущему слову; не могут открывать клаузу. По закону Ваккернагеля стоят во второй позиции клаузы</div>
+
+    <div class="post-section">
+      <div class="post-section-title">Основные</div>
+      <ul class="particle-list">
+        <li><span class="skt">ca</span><span class="gloss">и</span></li>
+        <li><span class="skt">vā</span><span class="gloss">или</span></li>
+        <li><span class="skt">tu</span><span class="gloss">но, же</span></li>
+        <li><span class="skt">hi</span><span class="gloss">ведь, ибо</span></li>
+        <li><span class="skt">iva</span><span class="gloss">как бы, как</span></li>
+        <li><span class="skt">api</span><span class="gloss">также, даже</span></li>
+      </ul>
+    </div>
+
+    <div class="post-section">
+      <div class="post-section-title">Более редкие</div>
+      <ul class="particle-list">
+        <li><span class="skt">u, uta</span><span class="gloss">и</span></li>
+        <li><span class="skt">nu</span><span class="gloss">же</span></li>
+        <li><span class="skt">aṅga</span><span class="gloss">вот, как раз, именно</span></li>
+        <li><span class="skt">khalu</span><span class="gloss">ведь, как известно</span></li>
+      </ul>
+    </div>
+
+    <div class="post-section">
+      <div class="post-section-title">Неопределённые «-нибудь, -то»</div>
+      <ul class="particle-list">
+        <li><span class="skt">cit, svit</span><span class="gloss">в составе ko 'pi, kaścit, kim svit</span></li>
+        <li><span class="skt">cana, api</span><span class="gloss">в составе na kadācana, ko 'pi</span></li>
+      </ul>
+    </div>
+
+    <div class="post-section">
+      <div class="post-section-title">«Условно пустые» — на самом деле прагматически нагруженные</div>
+      <ul class="particle-list">
+        <li><span class="skt">eva</span><span class="gloss">фокус-идентификация: «именно, только»</span></li>
+        <li><span class="skt">ha</span><span class="gloss">эпический усилитель</span></li>
+        <li><span class="skt">sma</span><span class="gloss">+ презенс = нарративное прошлое</span></li>
+        <li><span class="skt">vai</span><span class="gloss">маркер ритуальной истинности (упанишады, шастры)</span></li>
+      </ul>
+    </div>
+
+  </div>
+
+</div>
+
+<footer>
+  Базовая классификация — А. А. Зализняк. Пояснения функций — Whitney §§1096–1135, Speyer §§393–419, Gonda (статьи 1950–70-х), Apte. Позиционная мотивация — закон Ваккернагеля (см. Gillon 1996).
+</footer>
+
+</div>
+</body>
+</html>
