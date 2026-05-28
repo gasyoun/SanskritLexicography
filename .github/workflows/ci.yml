@@ -1,0 +1,102 @@
+name: CI
+
+# Baseline CI for generic / satellite repos.
+# Language-agnostic checks: markdown lint, link check, YAML lint,
+# plus opportunistic language-specific lint if package.json/requirements.txt present.
+
+on:
+  push:
+    branches: [master, main]
+  pull_request:
+    branches: [master, main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  markdown-lint:
+    name: Markdown lint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Install markdownlint-cli2
+        run: npm install -g markdownlint-cli2
+      - name: Lint markdown (warnings only)
+        run: markdownlint-cli2 "**/*.md" "#node_modules" || echo "::warning::Markdown lint issues found"
+
+  link-check:
+    name: Markdown link check
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: gaurav-nelson/github-action-markdown-link-check@v1
+        with:
+          use-quiet-mode: "yes"
+          use-verbose-mode: "yes"
+          config-file: ".github/mlc_config.json"
+        continue-on-error: true
+
+  yaml-lint:
+    name: YAML lint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+      - run: pip install pyyaml
+      - name: Validate all YAML
+        run: |
+          python -c "
+          import sys, glob, yaml
+          fail = 0
+          for f in glob.glob('**/*.yml', recursive=True) + glob.glob('**/*.yaml', recursive=True):
+              if '.git' in f: continue
+              try:
+                  with open(f, encoding='utf-8') as fh: yaml.safe_load(fh)
+              except yaml.YAMLError as e:
+                  print(f'::error file={f}::{e}'); fail = 1
+          sys.exit(fail)
+          "
+
+  # Conditional Python lint
+  python-lint:
+    name: Python lint (if any .py present)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - id: check
+        run: |
+          if find . -name "*.py" -not -path "./.git/*" | head -1 | grep -q .; then
+            echo "has_python=true" >> $GITHUB_OUTPUT
+          fi
+      - if: steps.check.outputs.has_python == 'true'
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - if: steps.check.outputs.has_python == 'true'
+        run: pip install ruff
+      - if: steps.check.outputs.has_python == 'true'
+        run: ruff check --select=E9,F63,F7,F82 --output-format=github .
+
+  # Conditional JS lint
+  js-lint:
+    name: JS lint (if package.json present)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - id: check
+        run: |
+          if [ -f package.json ]; then
+            echo "has_pkg=true" >> $GITHUB_OUTPUT
+          fi
+      - if: steps.check.outputs.has_pkg == 'true'
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - if: steps.check.outputs.has_pkg == 'true'
+        run: npm install
+      - if: steps.check.outputs.has_pkg == 'true'
+        run: npm test --if-present
