@@ -6,6 +6,19 @@ This repository does not currently publish versioned release notes. Entries use
 dated maintenance snapshots; keep upcoming work under [Unreleased] until it is
 ready for a dated entry.
 
+## [Unreleased]
+
+### Added
+- `Syntax-Lectures/sanskrit_particles_explorer.html` — a self-contained,
+  Russian-language interactive explorer that digests the particle lectures for
+  students: a clickable positional map (Zaliznyak / Wackernagel) over 16
+  particles, with per-particle function, examples (deep-linked to the Gītā/Manu
+  parallel corpus, Whitney, Speyer, Archive.org and DCS), Gonda/König/Hock
+  citations, the full bibliography, and the folded-in Apte (1957) dictionary
+  entries for the seven particles that have them. Built from
+  `sanskrit_particles_lectures.md`, `sanskrit_particles_schema.html`, and the
+  `Apte_1957-*_RU.md` series.
+
 ## [1.0.0] - 2026-06-13
 
 ### Added

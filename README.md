@@ -15,7 +15,7 @@ lexicographic tools.
 | Path | Purpose |
 |---|---|
 | `HeadwordLists/` | Exported and derived headword lists for CDSL dictionaries, including MW, PWG, PWK, AP, BHS, CAE, CCS, SCH, SKD, VCP, VEI, and aggregate comparison files. |
-| `Syntax-Lectures/` | Markdown and HTML lecture material, mostly Russian-language notes on Sanskrit particles and syntactic usage. |
+| `Syntax-Lectures/` | Markdown and HTML lecture material (mostly Russian) on Sanskrit particles and syntax, including the interactive [particle explorer](Syntax-Lectures/sanskrit_particles_explorer.html). |
 | `ROADMAP_2026_2027.md` | Research roadmap covering csl-atlas review, publication plans, FAIR gaps, standards exports, and learner-layer work. |
 | `CDSL-2025.pdf` | Snapshot/reference document for the 2025 CDSL-related work. |
 | `DCS_statistical_evaluation.htm` | Statistical evaluation material connected with DCS and Sanskrit lexical data. |
@@ -78,8 +78,12 @@ Suggested entry points:
 2. Use `HeadwordLists/*unique-key2*.txt` for print-form and display tasks.
 3. Use `HeadwordLists/mw-apte-mcdonell-hk.txt` for a ready-made comparison
    across major Sanskrit dictionary traditions.
-4. Use `Syntax-Lectures/sanskrit_particles_lectures.md` as the main teaching
-   note entry point for the particles material.
+4. Use [`Syntax-Lectures/sanskrit_particles_lectures.md`](Syntax-Lectures/sanskrit_particles_lectures.md)
+   as the main teaching note for the particles material, and open
+   [`Syntax-Lectures/sanskrit_particles_explorer.html`](Syntax-Lectures/sanskrit_particles_explorer.html)
+   in a browser for the interactive, student-facing version (positional map plus
+   per-particle function, deep-linked examples, citations, and the Apte 1957
+   dictionary entries).
 5. Use `ROADMAP_2026_2027.md` to understand how this repository connects with
    csl-atlas, VisualDCS, csl-standards, and publication work.
 

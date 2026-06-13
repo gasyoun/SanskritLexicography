@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Санскритские частицы — интерактивный разбор</title>
+<style>
+  :root {
+    --bg: #faf7f2;
+    --panel: #ffffff;
+    --ink: #1c1c1c;
+    --muted: #6b6258;
+    --rule: #b8a98f;
+    --rule-soft: #e0d5c0;
+    --accent: #7a2d1e;
+    --accent-soft: #f0e2d8;
+    --pre: #2c5f7c;
+    --pre-soft: #e3eef5;
+    --post: #5c4a2c;
+    --post-soft: #f5edd9;
+    --free: #4a5d3a;
+    --free-soft: #e6ecdf;
+    --gold: #b8860b;
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0; padding: 0;
+    background: var(--bg); color: var(--ink);
+    font-family: 'Charter', 'Iowan Old Style', 'Palatino Linotype', 'Book Antiqua', Palatino, Georgia, serif;
+    font-size: 16px; line-height: 1.5;
+  }
+  a { color: var(--accent); text-decoration: none; border-bottom: 1px solid var(--accent-soft); }
+  a:hover { border-bottom-color: var(--accent); }
+  .wrap { max-width: 1280px; margin: 0 auto; padding: 28px 32px 64px; }
+  header.top { text-align: center; border-bottom: 2px solid var(--rule); padding-bottom: 16px; margin-bottom: 18px; }
+  header.top h1 { font-size: 27px; font-weight: 600; margin: 0 0 6px; letter-spacing: 0.01em; }
+  header.top .subtitle { font-size: 14px; color: var(--muted); font-style: italic; }
+
+  details.about { background: var(--panel); border: 1px solid var(--rule-soft); border-left: 3px solid var(--accent); padding: 10px 16px; margin-bottom: 20px; }
+  details.about summary { cursor: pointer; font-weight: 600; color: var(--accent); font-size: 14px; }
+  details.about[open] summary { margin-bottom: 8px; }
+  details.about p { margin: 8px 0; font-size: 14px; }
+  details.about .thesis { border-left: 2px solid var(--rule-soft); padding-left: 12px; color: #333; }
+
+  .toolbar { display: flex; flex-wrap: wrap; gap: 10px 14px; align-items: center; margin-bottom: 20px; }
+  .toolbar input[type=search] {
+    flex: 1 1 220px; min-width: 180px; padding: 8px 12px; font-size: 15px;
+    font-family: inherit; border: 1.5px solid var(--rule); background: #fff; color: var(--ink); border-radius: 2px;
+  }
+  .filters { display: flex; flex-wrap: wrap; gap: 6px; }
+  .filters button {
+    font-family: inherit; font-size: 12.5px; padding: 5px 11px; cursor: pointer;
+    background: #fff; border: 1px solid var(--rule); color: var(--muted); border-radius: 14px; transition: all .12s;
+  }
+  .filters button.active { background: var(--accent); color: #fff; border-color: var(--accent); }
+
+  .layout { display: grid; grid-template-columns: 360px 1fr; gap: 28px; align-items: start; }
+  @media (max-width: 880px) { .layout { grid-template-columns: 1fr; } .map { position: static !important; } }
+
+  .map { position: sticky; top: 12px; }
+  .map .legend { font-size: 11.5px; color: var(--muted); font-style: italic; margin-bottom: 12px; line-height: 1.4; }
+  .group { border: 1.5px solid var(--rule); background: #fff; margin-bottom: 14px; }
+  .group.pre { border-color: var(--pre); background: var(--pre-soft); }
+  .group.free { border-color: var(--free); background: var(--free-soft); }
+  .group.post { border-color: var(--post); }
+  .group-title { font-size: 11.5px; font-weight: 700; letter-spacing: 0.07em; text-transform: uppercase; padding: 8px 12px 4px; }
+  .group.pre .group-title { color: var(--pre); }
+  .group.free .group-title { color: var(--free); }
+  .group.post .group-title { color: var(--post); background: var(--post); color: #fff; padding: 8px 12px; }
+  .sub { padding: 6px 10px 8px; }
+  .sub + .sub { border-top: 1px solid var(--rule-soft); }
+  .sub-title { font-size: 10px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--post); margin: 2px 2px 6px; }
+  .chips { display: flex; flex-wrap: wrap; gap: 5px; }
+  .chip {
+    font-family: 'Sanskrit Text', 'Charter', Georgia, serif; font-style: italic; font-weight: 600;
+    font-size: 15px; color: var(--accent); background: #fff; border: 1px solid var(--rule);
+    padding: 3px 10px; border-radius: 13px; cursor: pointer; position: relative; transition: all .12s; white-space: nowrap;
+  }
+  .chip:hover { background: var(--accent-soft); }
+  .chip.active { background: var(--accent); color: #fff; border-color: var(--accent); }
+  .chip.core { box-shadow: inset 0 0 0 1.5px var(--gold); }
+  .chip.dim { opacity: 0.28; }
+  .chip .apte-dot { font-style: normal; font-size: 8px; font-weight: 700; color: var(--gold); position: absolute; top: -4px; right: -2px; }
+  .chip.active .apte-dot { color: #ffe08a; }
+  .chip.plain { color: var(--muted); cursor: default; font-style: italic; border-style: dashed; }
+  .chip.plain:hover { background: #fff; }
+
+  .detail { background: var(--panel); border: 1.5px solid var(--rule); min-height: 420px; padding: 0; }
+  .placeholder { padding: 48px 36px; color: var(--muted); font-style: italic; text-align: center; }
+  .d-head { padding: 20px 28px 16px; border-bottom: 2px solid var(--rule); background: linear-gradient(180deg, #fff, var(--bg)); }
+  .d-dev { font-size: 40px; line-height: 1; color: var(--ink); }
+  .d-iast { font-style: italic; font-weight: 600; font-size: 26px; color: var(--accent); margin-left: 4px; }
+  .d-gloss { font-size: 16px; color: var(--muted); margin-left: 10px; }
+  .badges { margin-top: 10px; display: flex; flex-wrap: wrap; gap: 6px; }
+  .badge { font-size: 11px; font-weight: 600; padding: 3px 9px; border-radius: 11px; letter-spacing: 0.02em; }
+  .badge.pos { background: var(--post-soft); color: var(--post); border: 1px solid var(--post); }
+  .badge.pos.pre { background: var(--pre-soft); color: var(--pre); border-color: var(--pre); }
+  .badge.pos.free { background: var(--free-soft); color: var(--free); border-color: var(--free); }
+  .badge.type { background: #fff; color: var(--muted); border: 1px solid var(--rule); }
+  .badge.tier-core { background: var(--gold); color: #fff; }
+  .badge.tier-apte { background: var(--accent-soft); color: var(--accent); border: 1px solid var(--accent); }
+  .badge.tier-extra { background: #eee; color: #777; }
+
+  .d-body { padding: 6px 28px 26px; }
+  .sec { margin-top: 22px; }
+  .sec h3 { font-size: 12.5px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); margin: 0 0 10px; padding-bottom: 4px; border-bottom: 1px solid var(--rule-soft); }
+  .fn { font-size: 15px; }
+  .fn .inv { display: block; margin-top: 8px; padding: 8px 12px; background: var(--accent-soft); border-left: 3px solid var(--accent); font-size: 14px; }
+
+  .ex { margin-bottom: 14px; padding-bottom: 12px; border-bottom: 1px dashed var(--rule-soft); }
+  .ex:last-child { border-bottom: none; margin-bottom: 0; }
+  .ex-skt { font-family: 'Sanskrit Text', 'Charter', Georgia, serif; font-style: italic; color: var(--accent); font-size: 15.5px; font-weight: 600; }
+  .ex-ru { margin: 5px 0 5px; padding-left: 14px; border-left: 2px solid var(--rule-soft); color: #2a2a2a; font-size: 14.5px; }
+  .ex-meta { font-size: 12px; color: var(--muted); }
+  .ex-meta .src { font-weight: 700; color: var(--post); }
+  .ex-meta .tag { font-style: italic; }
+
+  table.chains, table.poly { width: 100%; border-collapse: collapse; font-size: 13.5px; }
+  table.chains td, table.poly td { padding: 6px 8px; border-bottom: 1px solid var(--rule-soft); vertical-align: top; }
+  table.chains td.k, table.poly td.k { font-family: Georgia, serif; font-style: italic; color: var(--accent); font-weight: 600; white-space: nowrap; width: 1%; }
+
+  ul.gram { list-style: none; margin: 0; padding: 0; font-size: 14px; }
+  ul.gram li { padding: 4px 0; border-bottom: 1px dashed var(--rule-soft); }
+  ul.gram li:last-child { border-bottom: none; }
+  ul.gram .who { font-weight: 700; }
+
+  details.apte { margin-top: 6px; border: 1px solid var(--accent); border-radius: 2px; }
+  details.apte > summary { cursor: pointer; padding: 9px 14px; background: var(--accent-soft); color: var(--accent); font-weight: 700; font-size: 13px; list-style: none; }
+  details.apte > summary::-webkit-details-marker { display: none; }
+  details.apte > summary::before { content: '▸ '; }
+  details.apte[open] > summary::before { content: '▾ '; }
+  .apte-body { padding: 10px 16px 14px; font-size: 14px; }
+  .apte-sense { margin-bottom: 9px; }
+  .apte-sense .n { font-weight: 700; color: var(--post); margin-right: 4px; }
+  .apte-note { font-style: italic; color: var(--muted); font-size: 13.5px; padding: 10px 14px; }
+
+  .biblio { margin-top: 44px; border-top: 2px solid var(--rule); padding-top: 8px; }
+  .biblio summary { cursor: pointer; font-size: 16px; font-weight: 700; color: var(--accent); padding: 8px 0; }
+  .biblio h4 { font-size: 13px; letter-spacing: 0.05em; text-transform: uppercase; color: var(--post); margin: 18px 0 6px; }
+  .biblio ul { margin: 0; padding-left: 20px; font-size: 14px; }
+  .biblio li { margin-bottom: 5px; }
+  footer.bot { margin-top: 40px; padding-top: 16px; border-top: 1px solid var(--rule-soft); font-size: 12px; color: var(--muted); font-style: italic; text-align: center; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="top">
+  <h1>Санскритские частицы — интерактивный разбор</h1>
+  <div class="subtitle">позиционная классификация по А. А. Зализняку · функции по Whitney — Speyer — Gonda — Apte · закон Ваккернагеля</div>
+</header>
+
+<details class="about">
+  <summary>О материале и как пользоваться</summary>
+  <p>Карта слева — позиционная классификация (по&nbsp;А.&nbsp;А.&nbsp;Зализняку). Нажмите на частицу, чтобы открыть разбор справа: позиция, функция, примеры с переводами и ссылками на корпус, отсылки к грамматикам и — где есть — словарную статью <em>Apte (1957)</em>. Поиск и фильтры по функциональному типу сужают карту.</p>
+  <p class="thesis"><strong>Тезис.</strong> Неизменяемые слова санскрита, по <a href="https://en.wikisource.org/wiki/Sanskrit_Grammar_(Whitney)">Whitney §1096</a>, «менее отчётливо разделены на части речи». Это свойство материала, а не дефект описания. При этом, по Gillon (1996), <strong>порядок частиц — самый жёсткий элемент синтаксиса</strong>: безударные клитики по закону Ваккернагеля встают во 2-ю позицию клаузы (<em>hi, tu</em> — ровно одно слово перед собой; <em>kiṃtu, api&nbsp;tu</em> — ноль). Через частицы виден скелет предложения.</p>
+  <p style="font-size:13px;color:var(--muted)">Источники: <a href="sanskrit_particles_lectures.md">sanskrit_particles_lectures.md</a> (v.4), <a href="sanskrit_particles_schema.html">sanskrit_particles_schema.html</a>, и серия <a href="Apte_1957-api_RU.md">Apte_1957-*_RU.md</a>. <span style="color:var(--gold)">●</span> — золотая обводка: ядро курса (7 частиц). <span style="color:var(--gold);font-weight:700">A</span> — есть словарная статья Apte.</p>
+</details>
+
+<div class="toolbar">
+  <input type="search" id="search" placeholder="Поиск: ca, hi, фокус, цитата, Ваккернагель…" autocomplete="off">
+  <div class="filters" id="filters">
+    <button data-f="all" class="active">Все</button>
+    <button data-f="connect">Связующие</button>
+    <button data-f="logic">Логико-дискурсивные</button>
+    <button data-f="focus">Фокусные</button>
+    <button data-f="modal">Модально-цитатные</button>
+    <button data-f="neg">Отрицание</button>
+  </div>
+</div>
+
+<div class="layout">
+  <div class="map" id="map"><!-- groups injected --></div>
+  <div class="detail" id="detail">
+    <div class="placeholder">← Выберите частицу на карте, чтобы открыть разбор.</div>
+  </div>
+</div>
+
+<details class="biblio">
+  <summary>Библиография — полный аппарат</summary>
+  <h4>Словари и учебники</h4>
+  <ul>
+    <li><strong>Apte V. S.</strong> <em>The Practical Sanskrit-English Dictionary</em> (1957). Особо подробные статьи: <em>api, eva, hi, tu, iti, khalu, vai</em>.</li>
+    <li><strong>Apte V. S.</strong> <a href="https://archive.org/details/studentsguidetos00apte"><em>The Student's Guide to Sanskrit Composition</em> (1885)</a> — корпусный источник для Gillon 1996.</li>
+    <li><strong>Monier-Williams</strong> — стандартная сверка.</li>
+  </ul>
+  <h4>Грамматика и синтаксис</h4>
+  <ul>
+    <li><a href="https://en.wikisource.org/wiki/Sanskrit_Grammar_(Whitney)"><strong>Whitney W. D.</strong> <em>Sanskrit Grammar</em> (1879/1924)</a> — §§1096–1135; §1102 — <em>ca</em>; §1104 — <em>api</em>; §1119 — <em>iti</em>.</li>
+    <li><a href="https://archive.org/details/sanskritsyntax00speiuoft"><strong>Speyer J. S.</strong> <em>Sanskrit Syntax</em> (Leiden, 1886)</a> — §§393–419; §§395–398 — <em>ca, vā</em>; §399 — <em>api</em>; §400 — <em>eva</em>; §402 — <em>hi</em>; §§493–494 — <em>iti</em>.</li>
+    <li><strong>Speyer J. S.</strong> <em>Vedische und Sanskrit-Syntax</em> (1896) — для <em>vai, sma, ha</em>.</li>
+    <li><strong>Gillon B. S.</strong> <em>Word Order in Classical Sanskrit</em> // <em>Indian Linguistics</em> 57 (1996): 1–35 — закон Ваккернагеля для частиц (§§2, 7).</li>
+  </ul>
+  <h4>Гонда — монографические работы</h4>
+  <ul>
+    <li><strong>Gonda J.</strong> <em>The Sanskrit particle</em> api // <em>Lingua</em>.</li>
+    <li><strong>Gonda J.</strong> <em>The Indo-European particle</em> *kʷe // <em>Mnemosyne</em> (Leiden), 1954, 177–214; 267–296. Расш.: <em>Vāk</em> 5, Poona, 1957, 1–73.</li>
+    <li><strong>Gonda J.</strong> о <em>iva</em> — <em>Vāk / Mnemosyne</em> 1950-х.</li>
+    <li><strong>Gonda J.</strong> <em>Stylistic Repetition in the Veda</em> (Amsterdam, 1959) — <em>eva, vai</em>.</li>
+    <li><strong>Gonda J.</strong> <em>The Vision of the Vedic Poets</em> (The Hague, 1963) — <em>eva</em>.</li>
+    <li><strong>Hartman C. G.</strong> <em>Emphasizing and Connecting Particles in the Thirteen Principal Upanishads</em> (Helsinki, 1966).</li>
+  </ul>
+  <h4>Синтаксис и типология</h4>
+  <ul>
+    <li><strong>Hock H. H.</strong> — работы 1980–90-х по синтаксису санскрита, в т. ч. об <em>iti</em> как комплементайзере.</li>
+    <li><strong>König E.</strong> <em>The Meaning of Focus Particles</em> (Routledge, 1991) — для <em>eva, api</em>.</li>
+    <li><a href="https://www.degruyter.com/document/doi/10.1515/9783110209372/html"><strong>Güldemann T.</strong> <em>Quotative Indexes in African Languages</em> (2008)</a> — для <em>iti</em> в типологии квотативов.</li>
+    <li><a href="https://global.oup.com/academic/product/syntactic-change-in-akkadian-9780198238645"><strong>Deutscher G.</strong> <em>Syntactic Change in Akkadian</em> (2000)</a> — квотатив → комплементайзер.</li>
+  </ul>
+  <h4>Русская традиция</h4>
+  <ul>
+    <li><strong>Зализняк А. А.</strong> <em>Древнерусские энклитики</em> (М., 2008) — таблицы рангов и позиционная иерархия.</li>
+    <li><strong>Елизаренкова Т. Я.</strong> <em>Грамматика ведийского языка</em> (М., 1982) — <em>vai, ha, sma</em> в ведийском.</li>
+  </ul>
+  <h4>Переводы и корпуса</h4>
+  <ul>
+    <li><strong>Семенцов В. С.</strong> Рамануджа. Гитабхашья. М., 2021 // <a href="https://samskrtam.ru/parallel-corpus/ramanuja_gitabhashya.html">samskrtam.ru</a>.</li>
+    <li><strong>Эльманович С. Д. / Ильин Г. Ф.</strong> Законы Ману. М., 1992 // <a href="https://samskrtam.ru/parallel-corpus/manavadharmashastra.html">samskrtam.ru</a>.</li>
+    <li><strong>Сыркин А. Я.</strong> Чхандогья-упанишада. М., 1992 — для ЧхУп 6.2.1.</li>
+    <li><a href="https://www.sanskrit-linguistics.org/dcs/index.php?contents=abfrage"><strong>DCS</strong> — Digital Corpus of Sanskrit</a> — проверка локусов и статистики.</li>
+  </ul>
+</details>
+
+<footer class="bot">
+  Базовая классификация — А. А. Зализняк. Функции — Whitney §§1096–1135, Speyer §§393–419, Gonda (1950–70-е), Apte (1957). Позиционная мотивация — закон Ваккернагеля (Gillon 1996). Переводы примеров — Семенцов, Эльманович–Ильин, Сыркин, Gillon.
+</footer>
+
+</div>
+
+<script>
+// ---- ссылки на источники ----
+const U = {
+  gita: 'https://samskrtam.ru/parallel-corpus/ramanuja_gitabhashya.html',
+  manu: 'https://samskrtam.ru/parallel-corpus/manavadharmashastra.html',
+  whitney: 'https://en.wikisource.org/wiki/Sanskrit_Grammar_(Whitney)',
+  speyer: 'https://archive.org/details/sanskritsyntax00speiuoft',
+  apteSG: 'https://archive.org/details/studentsguidetos00apte',
+  dcs: 'https://www.sanskrit-linguistics.org/dcs/index.php?contents=abfrage',
+  guldemann: 'https://www.degruyter.com/document/doi/10.1515/9783110209372/html',
+  deutscher: 'https://global.oup.com/academic/product/syntactic-change-in-akkadian-9780198238645'
+};
+
+// ---- данные частиц ----
+const P = {
+
+  ca: { dev:'च', iast:'ca', gloss:'и', tier:'core', type:['connect'],
+    position:'Постпозитивная, основная. Клитика; по Ваккернагелю — 2-я позиция клаузы. Не открывает клаузу.',
+    fn:`Сочинение, которое не вполне сочинение. Три типа: (1) <em>X ca Y ca</em> — исчерпывающий список или пара; (2) <em>X Y ca</em> — нейтральное присоединение второго члена; (3) бессоюзное соположение (санскрит охотно обходится без <em>ca</em>). Особый случай — комментирующее <em>ca</em> («причём, и притом»): второй член не равноправен, а обостряет.`,
+    ex:[
+      {skt:'yuyudhāno virāṭaś ca drupadaś ca mahārathaḥ', ru:'«Вирата и Ююдхана, и Друпада, колесничий великий»', src:'БхГ 1.4', url:U.gita, trans:'Семенцов', tag:'двойное ca — исчерпывающий список'},
+      {skt:'bhavān bhīṣmaś ca karṇaś ca kṛpaś ca […] saumadattis tathaiva ca', ru:'«Сам ты здесь, и Бхишма, Карна, Крипа… и сын Сомадатты»', src:'БхГ 1.8', url:U.gita, trans:'Семенцов', tag:'длинный список, каждый второй с ca'},
+      {skt:'aśocyān anvaśocas tvaṃ prajñāvādāṃś ca bhāṣase', ru:'«Ты скорбишь о тех, о ком скорбеть не должно, — и притом говоришь мудрые слова»', src:'БхГ 2.11', url:U.gita, trans:'ср. Семенцов', tag:'комментирующее ca — обостряет, а не уравнивает'},
+      {skt:'anye ca bahavaḥ śūrā', ru:'«И иные стоят здесь герои»', src:'БхГ 1.9', url:U.gita, trans:'Семенцов', tag:'ca продолжает список'},
+      {skt:'vedo ’khilo dharmamūlaṃ smṛtiśīle ca […] ātmanas tuṣṭir eva ca', ru:'«Веды целиком — корень дхармы; память и поведение знающих… и довольство собственной душой»', src:'Ману 2.6', url:U.manu, trans:'Эльманович–Ильин', tag:'4 источника дхармы; последний — усиленное eva ca'}
+    ],
+    chains:[
+      {k:'caiva (ca+eva)', v:'БхГ 1.14 — <em>mādhavaḥ pāṇḍavaś caiva</em>: связка + фокус'},
+      {k:'na ca', v:'БхГ 1.30 — <em>na ca śaknomy avasthātuṃ</em>: отрицание + связующее'},
+      {k:'na ca … iva ca', v:'БхГ 1.30 — два ca: связка и аппозиция'},
+      {k:'tathaiva ca', v:'БхГ 1.8 — <em>saumadattis tathaiva ca</em>: наречие + фокус + связка'}
+    ],
+    gram:[ {who:'Whitney', ref:'§1102', url:U.whitney}, {who:'Speyer', ref:'§§395–398', url:U.speyer}, {who:'Gonda', ref:'*kʷe* (Mnemosyne 1954; Vāk 5, 1957)', url:null} ],
+    apte:null },
+
+  va: { dev:'वा', iast:'vā', gloss:'или', tier:'core', type:['connect'],
+    position:'Постпозитивная, основная. Клитика, 2-я позиция клаузы.',
+    fn:`Дизъюнкция: «или». Регулярно — в альтернативном вопросе; может повторяться (<em>X vā Y vā</em>) для исчерпывающей альтернативы.`,
+    ex:[
+      {skt:'kiṃ no rājyena govinda kiṃ bhogair jīvitena vā', ru:'«что за радость нам в царстве, Говинда, что за польза в усладах, в жизни?»', src:'БхГ 1.32', url:U.gita, trans:'Семенцов', tag:'vā в альтернативном вопросе'}
+    ],
+    chains:[], gram:[ {who:'Whitney', ref:'§§1096–1135', url:U.whitney}, {who:'Speyer', ref:'§§395–398', url:U.speyer} ],
+    apte:null },
+
+  tu: { dev:'तु', iast:'tu', gloss:'но, же', tier:'apte', type:['connect','logic'],
+    position:'Постпозитивная, основная. Никогда не в начале предложения — обычно после первого слова (2-я позиция, Ваккернагель). Ср. <em>kiṃtu / api tu</em> — нулевая позиция, открывают клаузу.',
+    fn:`Мягкое противопоставление и переключение темы. В отличие от резкого контраста, <em>tu</em> часто лишь сдвигает фокус повествования («же», «а вот»).`,
+    ex:[
+      {skt:'dṛṣṭvā tu pāṇḍavānīkaṃ vyūḍhaṃ duryodhanas tadā', ru:'«Увидев же армию сынов Панду, построенную в боевом порядке»', src:'БхГ 1.2', url:U.gita, trans:'Семенцов', tag:'каноническая ваккернагелевская позиция — tu после dṛṣṭvā'},
+      {skt:'paryāptaṃ tv idam eteṣāṃ', ru:'«их же, этих — достаточна сила»', src:'БхГ 1.10', url:U.gita, trans:'Семенцов', tag:'tv = tu; противопоставление во 2-й позиции пады'}
+    ],
+    chains:[ {k:'tv eva (tu+eva)', v:'БхГ 1.10 — <em>paryāptaṃ tv idam</em>: противопоставление + фокус'} ],
+    gram:[ {who:'Speyer', ref:'§§393–419', url:U.speyer}, {who:'Gillon', ref:'1996, §7 (позиция)', url:null} ],
+    apte:[
+      {n:'1', t:'Противительная — «но, напротив, с другой стороны, тем не менее». Часто присоединяется к kiṃ, param → kiṃtu, paraṃtu (в отличие от tu, всегда в начале предложения).'},
+      {n:'2', t:'«И вот, а теперь, в свою очередь»: rājā tu tām… śrutvā ’bravīt — «царь же, услышав…».'},
+      {n:'3', t:'«Что касается, а что до…»: candroparāgaṃ prati tu — «что же касается лунного затмения…».'},
+      {n:'4', t:'Различие (bheda) или превосходство в качестве: mṛṣṭaṃ payo mṛṣṭataraṃ tu dugdham — «вода вкусна, но молоко вкуснее».'},
+      {n:'5', t:'Усилительная: bālānāṃ tu śubhaṃ vākyaṃ grāhyam — «даже от детей следует принимать доброе слово».'},
+      {n:'6', t:'Эксплетив — для заполнения метра.'},
+      {n:'7', t:'«Несомненно»: tuśabdaḥ saṃśayavyābṛttyarthaḥ — «слово tu служит для устранения сомнения» (ŚB. на MS. 10.3.74).'}
+    ] },
+
+  hi: { dev:'हि', iast:'hi', gloss:'ведь, ибо', tier:'apte', type:['logic'],
+    position:'Постпозитивная, основная. <strong>Никогда не в начале предложения</strong>; строго 2-я позиция. Если <em>hi</em> в начале клаузы — что-то не так с разбором (диагностический критерий, Gillon §7).',
+    fn:`Обоснование через апелляцию к разделяемому знанию: «как известно», «ведь очевидно». Не каузальный союз, а маркер общего места — факультативный, выбираемый, когда хочется подчеркнуть очевидность (Speyer §402).`,
+    ex:[
+      {skt:'svajanaṃ hi kathaṃ hatvā sukhinaḥ syāma mādhava', ru:'«Убивая родных — как мы сможем наслаждаться, убийца Мадху?»', src:'БхГ 1.37', url:U.gita, trans:'Семенцов', tag:'hi вводит риторический вопрос-обоснование'},
+      {skt:'patanti pitaro hy eṣāṃ luptapiṇḍodakakriyāḥ', ru:'«ибо гибнут ушедшие предки, без воды и без жертвенных клёцек»', src:'БхГ 1.42', url:U.gita, trans:'Семенцов', tag:'классическое hi во 2-й позиции; общеизвестный ритуальный факт'},
+      {skt:'ete hi hṛdaya-marma-bhidaḥ saṃsāra-bhāvāḥ', ru:'«ведь эти мирские вещи — раздирающие сердце»', src:'U 1.8.4 (SG 8.1.3)', url:null, trans:'Gillon', tag:'hi во 2-й позиции после ete (корпус Gillon 1996)'},
+      {skt:'(Ману 2.1 — дидактическая сентенция без hi)', ru:'правило работает и без hi', src:'Ману 2.1', url:U.manu, trans:'', tag:'контраст: hi факультативен'}
+    ],
+    chains:[ {k:'hy eṣāṃ (hi+gen.)', v:'БхГ 1.42 — hi во 2-й позиции после pitaraḥ'}, {k:'sarva eva hi', v:'БхГ 1.11 — фокус (eva) + обоснование (hi в конце)'}, {k:'api hi (обратный порядок)', v:'K 169.2 — маркированная экстрапозиция'} ],
+    gram:[ {who:'Whitney', ref:'§§1096–1135', url:U.whitney}, {who:'Speyer', ref:'§402', url:U.speyer}, {who:'Gillon', ref:'1996, §7', url:null} ],
+    apte:[
+      {n:'1', t:'«Ибо, потому что, так как» (строгая логическая причина): agnirihāsti dhūmo hi dṛśyate — «здесь есть огонь, ибо виден дым».'},
+      {n:'2', t:'«В самом деле, поистине, несомненно»: prayogapradhānaṃ hi nāṭyaśāstram — «ведь наука о театре прежде всего практическая».'},
+      {n:'3', t:'«Например, как известно» (общее правило подкрепляется примером): …hi rasaṃ raviḥ — «ведь и солнце вбирает влагу, чтобы вернуть её тысячекратно».'},
+      {n:'4', t:'«Только, лишь» (усиление): mūḍho hi madanenāyāsyate — «только глупец мучим любовью».'},
+      {n:'5', t:'Эксплетив — для заполнения метра или завершения фразы.'}
+    ] },
+
+  api: { dev:'अपि', iast:'api', gloss:'также, даже', tier:'core', type:['connect','focus'],
+    position:'Постпозитивная (основная и в составе неопределённых). 2-я позиция; примыкает к выделяемому слову. Как преверб (<em>api-√i, api-√dhā</em>) — несамостоятельна.',
+    fn:`Полифункциональна. По Gonda — единый инвариант: <strong>идея прибавления к уже имеющемуся множеству или ситуации</strong>. Скалярное «даже» = аддитивность на шкале ожидаемости; неопределённое <em>ko ’pi</em> = «некто из множества возможных»; преверб <em>api-</em> = пространственное прибавление.`,
+    poly:[
+      {k:'«даже» скалярное', v:'БхГ 1.35 — ghnato ’pi — «пусть убит буду ими»'},
+      {k:'при крайнем члене', v:'БхГ 1.35 — api trailokyarājyasya hetoḥ — «даже ради господства над тремя мирами»'},
+      {k:'в неопределённых', v:'ko ’pi, kasmiṁścit api — «кто-то, хоть какой-нибудь»'},
+      {k:'уступительный', v:'Mu 1.13.1 — kasmiṁścit api jīvati — «пока жив хоть кто-нибудь»'},
+      {k:'преверб', v:'api-√i, api-√dhā — «входить, покрывать»'}
+    ],
+    ex:[
+      {skt:'etān na hantum icchāmi ghnato ’pi… api trailokyarājyasya hetoḥ', ru:'«И пусть убит буду ими; но я их не убью… Не нужны такою ценою ни земля, ни господство над миром!»', src:'БхГ 1.35', url:U.gita, trans:'Семенцов', tag:'ghnato ’pi уступительное; api trailokya… скалярное'},
+      {skt:'śvaśurān suhṛdaś caiva senayor ubhayor api', ru:'«шуринов и товарищей — в обоих войсках»', src:'БхГ 1.27', url:U.gita, trans:'Семенцов', tag:'аддитивное «и в обоих»'},
+      {skt:'śraddadhānaḥ śubhāṃ vidyām ādadītāvarād api', ru:'«Исполненный веры, пусть принимает благое знание даже от низшего»', src:'Ману 2.238', url:U.manu, trans:'Эльманович–Ильин', tag:'скалярное «даже»'},
+      {skt:'atikrāntāni api hi… anubhava-samāṃ vedanām upajanayanti', ru:'«ведь страдания, даже бывшие в прошлом, когда о них рассказывают, причиняют боль, равную самому переживанию»', src:'K 169.2 (SG 16.2.1)', url:null, trans:'Gillon', tag:'api при причастии прошедшего (корпус Gillon 1996)'},
+      {skt:'api ced asi pāpebhyaḥ sarvebhyaḥ pāpakṛttamaḥ', ru:'«Даже если ты грешнее всех грешников»', src:'БхГ 4.36', url:U.gita, trans:'Семенцов', tag:'api ced — «даже если»'}
+    ],
+    chains:[ {k:'caiva … api', v:'БхГ 1.27 — связка + скалярный «и в обоих»'}, {k:'api hi', v:'K 169.2 — маркированный обратный порядок (экстрапозиция)'}, {k:'api ced', v:'БхГ 4.36 — уступительное условие'} ],
+    gram:[ {who:'Whitney', ref:'§1104', url:U.whitney}, {who:'Speyer', ref:'§399', url:U.speyer}, {who:'Gonda', ref:'The Sanskrit particle api (Lingua)', url:null}, {who:'König', ref:'1991 (фокусные частицы)', url:null} ],
+    apte:[
+      {n:'1', t:'Глагольная приставка/префикс: «помещение рядом или над, направление к, соединение, достижение, близость». Как преверб встречается в основном в Ведах (в классике обычно abhi).'},
+      {n:'2', t:'Союз (samuccaya): «и, также, тоже, более того». api—api / api ca — «как… так и»; nāpi — «также не»; vā’pi — «или».'},
+      {n:'3', t:'Эмфаза: «даже, самый, очень». vidhurapi — «даже луна»; adyāpi — «всё ещё»; yadyapi… tathāpi — «хотя… всё же».'},
+      {n:'4', t:'Уступительное «хотя / даже если» (virodha): balavadapi śikṣitānām — «пусть даже у образованных».'},
+      {n:'5', t:'Противительное «но, однако».'},
+      {n:'6', t:'Вопросительная частица в начале предложения (≈ «ли»): api sannihito ’tra kulapatiḥ? — «Здесь ли глава рода?».'},
+      {n:'7', t:'Надежда/ожидание (āśis), часто с nāma и потенциалисом: api nāma… labheya — «о, если бы я получил…».'},
+      {n:'8', t:'Неопределённость с вопросительными местоимениями: ko ’pi — «кто-то»; kimapi — «нечто / неописуемое».'},
+      {n:'9', t:'Совокупность после числительных — «все целиком»: caturṇāmapi varṇānām — «всех четырёх каст».'},
+      {n:'10–13', t:'Сомнение/опасение (śaṅkā), предположение (saṃbhāvanā), порицание (garhā), позволение (anvavasarga, с императивом: api stuhi — «можешь и восхвалять»).'},
+      {n:'14–16', t:'Восклицательная частица; редко «следовательно»; как предлог с Gen. — «малая часть» чего-то: sarpiṣo ’pi syāt — «хоть капля топлёного масла».'}
+    ] },
+
+  eva: { dev:'एव', iast:'eva', gloss:'именно, только', tier:'apte', type:['focus'],
+    position:'«Условно пустая» (на деле прагматически нагруженная), постпозитивная. Позиция — <strong>непосредственно после выделяемого слова</strong>; во 2-й позиции по Ваккернагелю.',
+    fn:`Фокус-идентификация. Контраст с <em>api</em>: <em>api</em> прибавляет — <em>eva</em> <strong>вычитает</strong>, выделяет один элемент и исключает остальные. «Хозяином» может быть имя, местоимение, наречие, именная часть сказуемого.`,
+    ex:[
+      {skt:'karmaṇaiva hi saṃsiddhim āsthitā janakādayaḥ', ru:'«Именно действием достигли совершенства Джанака и другие»', src:'БхГ 3.20', url:U.gita, trans:'Семенцов', tag:'хозяин — имя (инструменталис): «действием, а не отречением»'},
+      {skt:'ātmaiva hy ātmano bandhur ātmaiva ripur ātmanaḥ', ru:'«Именно сам человек себе и друг, и враг»', src:'БхГ 6.5', url:U.gita, trans:'Семенцов', tag:'хозяин — местоимение; двойное eva при ātmā'},
+      {skt:'abhyavahāryam eva viṣayaḥ', ru:'«единственно еда — его объект»', src:'V 3.28 (SG 1.1.2)', url:null, trans:'Gillon', tag:'хозяин — именная часть сказуемого (корпус Gillon 1996)'},
+      {skt:'sad eva somyedam agra āsīd ekam evādvitīyam', ru:'«Поистине, именно сущее было вначале — одно-единственное, без второго»', src:'ЧхУп 6.2.1', url:null, trans:'Сыркин', tag:'двойное eva; хозяин — sat'},
+      {skt:'sarva eva mahārathāḥ', ru:'«все они великие воины»', src:'БхГ 1.6', url:U.gita, trans:'Семенцов', tag:'eva при sarva — «именно все, до единого»'}
+    ],
+    chains:[ {k:'caiva (ca+eva)', v:'БхГ 1.14; Ману 2.6 — связка + выделение члена'}, {k:'tv eva (tu+eva)', v:'БхГ 1.10 — противопоставление + фокус'}, {k:'sarva eva hi', v:'БхГ 1.11 — фокус + обоснование'}, {k:'tathaiva ca', v:'БхГ 1.8 — наречие + фокус + связка'} ],
+    gram:[ {who:'Speyer', ref:'§400', url:U.speyer}, {who:'Gonda', ref:'Stylistic Repetition (1959); Vision of the Vedic Poets (1963)', url:null}, {who:'König', ref:'1991 (фокусные частицы)', url:null} ],
+    apte:[
+      {n:'A. eva (a., Вед.)', t:'Прилагательное: «идущий, движущийся; быстрый, скорый» (Uṇ. 1.150).'},
+      {n:'1', t:'«Именно, как раз, точно»: evameva — «именно так».'},
+      {n:'2', t:'«Тот же самый, идентичный»: …puruṣaḥ sa eva — «тот же самый человек».'},
+      {n:'3', t:'«Только, лишь, единственно» (исключение): sā tathyam evābhihitā — «сказана только истина»; sa eva vīraḥ — «только он герой».'},
+      {n:'4', t:'«Уже»: gata eva na te nivartate — «ушедшие уже не возвращаются».'},
+      {n:'5', t:'«Едва, как только» (с причастиями): kīrtita eva — «как только имя было произнесено».'},
+      {n:'6', t:'«Также, подобным образом»: tathaiva — «также».'},
+      {n:'7', t:'«Словно, подобно» (= iva): śrīsta eva mestu — «пусть твоя удача будет подобна моей».'},
+      {n:'8', t:'Общее усиление утверждения: bhavitavyam eva — «это непременно произойдёт».'},
+      {n:'9–13', t:'Также: детракция, уменьшение, приказ, ограничение; часто — простой эксплетив. В Ведах: «так, именно так, воистину, действительно».'},
+      {n:'14', t:'«Снова, опять» (ŚB. на MS. 10.8.36): bhuñjītaiva — «пусть ест снова».'}
+    ] },
+
+  iti: { dev:'इति', iast:'iti', gloss:'так / конец цитаты', tier:'core', type:['modal'],
+    position:'Свободной позиции, но фактически почти всегда постпозитивна — закрывает цитату (ставится в самом конце передаваемой речи).',
+    fn:`Цитатный оператор и не только. Закрывает прямую речь; служит ментальным комплементайзером («думает, что…»); номинализует пропозицию; в шастрах размечает голоса. <em>iti</em> — это найденная граница голоса в тексте.`,
+    ex:[
+      {skt:'uvāca pārtha paśyaitān samavetān kurūn iti', ru:'«и сказал: смотри теперь, Партха, на сошедшихся вместе Куру»', src:'БхГ 1.25', url:U.gita, trans:'Семенцов', tag:'iti закрывает прямую речь Кришны'},
+      {skt:'adya eva naṣṭaṃ kurūṇāṃ balam iti […] menire', ru:'«[с мыслью] „именно сегодня погибло войско Кауравов“ — так подумали»', src:'БхГ 1.21 [Рамануджа]', url:U.gita, trans:'Семенцов', tag:'ментальное содержание'},
+      {skt:'iti prathamo ’dhyāyaḥ', ru:'«таков первый раздел»', src:'колофон', url:null, trans:'', tag:'шастрическая функция: завершение раздела'},
+      {skt:'gamiṣyāmīti cintayati', ru:'«думает: „пойду“»', src:'тип', url:null, trans:'', tag:'ментальный комплементайзер'},
+      {skt:'mṛto bhaviṣyatīti śaṅkā', ru:'«опасение, что умрёт»', src:'тип', url:null, trans:'', tag:'номинализация пропозиции'}
+    ],
+    chains:[ {k:'ity uvāca (iti+uvāca)', v:'БхГ 1.25 — сандхи на границе цитаты'}, {k:'ityādi', v:'«и так далее» — иллюстративная формула'} ],
+    gram:[ {who:'Whitney', ref:'§1119', url:U.whitney}, {who:'Speyer', ref:'§§493–494', url:U.speyer}, {who:'Hock', ref:'iti как комплементайзер (1980–90-е)', url:null}, {who:'Güldemann', ref:'2008 (квотативы)', url:U.guldemann}, {who:'Deutscher', ref:'2000 (квотатив → комплементайзер)', url:U.deutscher} ],
+    apte:[
+      {n:'1', t:'Основное: передаёт подлинные слова (≈ кавычки). Может закрывать: (1) отдельное слово — kūjantaṃ rāmarāmeti; (2) имя в номинативе — dilīpa iti rājenduḥ; (3) целое предложение, iti в конце — …āgatosmīti.'},
+      {n:'a–b', t:'Причина: «потому что» — vaideśiko ’smīti pṛcchāmi. Цель: «чтобы» — mā bhūditi.'},
+      {n:'c–e', t:'Завершение (антоним atha): iti prathamo ’ṅkaḥ. Обобщение (объединяет перечень в группу). Образ действия: «так» — ityuktavantaṃ.'},
+      {n:'f–h', t:'Описание/природа объекта; содержание («в том смысле, что»): harirityuvāca; в роли/в качестве: piteti sa pūjyaḥ — «как отец он достоин почитания».'},
+      {n:'i–l', t:'С именами авторов (avyayībhāva): itipāṇini. Иллюстрация (с ādi). Ссылка на мнение: iti pāṇiniḥ, ityamaraḥ. В комментариях: «согласно такому-то правилу».'},
+      {n:'Comp.', t:'ityarthaḥ (имеющий такой смысл), ityādi (и т. д.), itikartavyatā (долг, что надлежит делать), itivṛttam (событие, сюжет).'}
+    ] },
+
+  khalu: { dev:'खलु', iast:'khalu', gloss:'ведь, как известно', tier:'apte', type:['logic','focus'],
+    position:'Постпозитивная, более редкая. 2-я позиция; характерна для драматической прозы.',
+    fn:`Маркер очевидности + эмфаза: «в самом деле», «как известно». Часто в сочетании с вопросительными и побудительными конструкциями.`,
+    ex:[
+      {skt:'kva nu khalu', ru:'«Где же, в самом деле…»', src:'Ś 3.3.1 (SG 17.1.1)', url:null, trans:'Gillon', tag:'двойная эмфаза в вопросе (корпус Gillon 1996)'},
+      {skt:'sa khalu kasmiṁścit api jīvati Nanda-anvaya-avayave', ru:'«он, как известно, [не может быть склонён], пока жив хоть какой-нибудь отпрыск рода Нанды»', src:'Mu 1.13.1 (SG 21.2.5)', url:null, trans:'Gillon', tag:'khalu — маркер очевидности'}
+    ],
+    chains:[ {k:'nu khalu', v:'Ś 3.3.1 — двойная эмфаза в вопросе'} ],
+    gram:[ {who:'Speyer', ref:'§§393–419', url:U.speyer}, {who:'Apte', ref:'статья khalu', url:null} ],
+    apte:[
+      {n:'1a', t:'«Конечно, несомненно, воистину»: anutsekaḥ khalu vikramālaṅkāraḥ — «скромность — поистине украшение доблести».'},
+      {n:'1b', t:'«Итак, теперь, далее» (Rv. 10.34.14).'},
+      {n:'2', t:'Просьба/увещевание («право же, же»): na khalu na khalu bāṇaḥ… — «нельзя, право же нельзя пускать эту стрелу!».'},
+      {n:'3', t:'Вопрос (= kim): na khalu… guruḥ — «неужели учитель разгневан?».'},
+      {n:'4', t:'Запрет (с абсолютивом): khalūktvā — «довольно говорить».'},
+      {n:'5', t:'Причина («так как, ведь»): …kaṭhināḥ khalu striyaḥ — «воистину, женщины суровы».'},
+      {n:'6–7', t:'Эксплетив; украшение фразы (vākyālaṅkāra, Bṛ. Up. 1.3.6).'}
+    ] },
+
+  vai: { dev:'वै', iast:'vai', gloss:'поистине (вед.)', tier:'apte', type:['focus','modal'],
+    position:'«Условно пустая», постпозитивная; ведийская. В классике сохранилась в шастрической и философской прозе.',
+    fn:`Ведийский маркер истинности. Перевести одним русским словом нельзя; «ведь, поистине» огрубляет. <strong>Непереводимость — не дефект словаря, а свойство прагматической частицы.</strong>`,
+    ex:[
+      {skt:'puruṣo vai… / manas tad vai', ru:'формульные утверждения истинности', src:'БрУп / ШБр', url:null, trans:'', tag:'ведийский маркер истинности'},
+      {skt:'āpo vai narasūnavaḥ', ru:'«воды воистину суть дети Нары (Пуруши)»', src:'Ману 1.10', url:U.manu, trans:'Apte', tag:'классическое vai в шастрической прозе'}
+    ],
+    chains:[],
+    gram:[ {who:'Speyer', ref:'Vedische und Sanskrit-Syntax (1896)', url:null}, {who:'Gonda', ref:'Stylistic Repetition (1959)', url:null}, {who:'Елизаренкова', ref:'1982 (ведийский)', url:null} ],
+    apte:[
+      {n:'1', t:'Утверждение/уверенность: «поистине, воистину, действительно». Однако чаще — эксплетив (особенно в стихах для метра): āpo vai narasūnavaḥ.'},
+      {n:'2', t:'Вокативная частица (при обращении).'},
+      {n:'3', t:'Иногда выражает просьбу/увещевание (anunaya).'}
+    ] },
+
+  // --- дополнительные (вне ядра, по материалам лекций; Apte не приводится) ---
+  na: { dev:'न', iast:'na', gloss:'не (дескриптивное)', tier:'extra', type:['neg'],
+    position:'Препозитивная: в начале клаузы или перед словом, к которому относится.',
+    fn:`Дескриптивное (констатирующее) отрицание — в отличие от прохибитивного <em>mā</em>. Сочетается со связующими (<em>na ca</em>).`,
+    ex:[
+      {skt:'etān na hantum icchāmi ghnato ’pi madhusūdhana', ru:'«И пусть убит буду ими; но я их не убью, о убийца Мадху»', src:'БхГ 1.35', url:U.gita, trans:'Семенцов', tag:'дескриптивное отрицание'},
+      {skt:'na ca śaknomy avasthātuṃ', ru:'«не могу устоять»', src:'БхГ 1.30', url:U.gita, trans:'Семенцов', tag:'na ca — отрицание + связующее'}
+    ],
+    chains:[ {k:'na ca', v:'БхГ 1.30 — отрицание + связующее'}, {k:'nāpi (na+api)', v:'«также не, ни»'} ],
+    gram:[ {who:'Whitney', ref:'§§1096–1135', url:U.whitney}, {who:'Speyer', ref:'§§393–419', url:U.speyer} ],
+    apte:null },
+
+  ma: { dev:'मा', iast:'mā', gloss:'не (прохибитивное)', tier:'extra', type:['neg'],
+    position:'Препозитивная. Прохибитив — обычно с инъюнктивом/аористом без аугмента или с императивом.',
+    fn:`Прохибитивное отрицание: запрет, «не делай». Каноническая функция — <em>mā</em> при запрете действия.`,
+    ex:[
+      {skt:'(каноническое mā в прохибитиве)', ru:'«пусть не будет…»', src:'БхГ 2.47', url:U.gita, trans:'Семенцов', tag:'прохибитивная функция (см. лекцию 2)'}
+    ],
+    chains:[], gram:[ {who:'Whitney', ref:'§§1096–1135', url:U.whitney}, {who:'Speyer', ref:'§§393–419', url:U.speyer} ],
+    apte:null },
+
+  iva: { dev:'इव', iast:'iva', gloss:'как бы, словно', tier:'extra', type:['modal'],
+    position:'Постпозитивная, основная. Примыкает к слову, с которым сравнивается; 2-я позиция.',
+    fn:`Маркер сравнения/уподобления: «как, словно, как бы». Может и смягчать утверждение («как бы»).`,
+    ex:[
+      {skt:'bhramati iva ca me manaḥ', ru:'«ум мой, точно безумный, блуждает»', src:'БхГ 1.30', url:U.gita, trans:'Семенцов', tag:'сравнение; здесь же iva ca — аппозиция'}
+    ],
+    chains:[ {k:'na ca … iva ca', v:'БхГ 1.30 — два ca: связка и аппозиция'} ],
+    gram:[ {who:'Speyer', ref:'§§393–419', url:U.speyer}, {who:'Gonda', ref:'о iva (Vāk/Mnemosyne, 1950-е)', url:null} ],
+    apte:null },
+
+  sma: { dev:'स्म', iast:'sma', gloss:'(+ презенс) нарративное прошлое', tier:'extra', type:['modal'],
+    position:'«Условно пустая», постпозитивная. На границе «частица / грамматический маркер».',
+    fn:`<em>sma</em> + презенс = нарративное / хабитуальное прошедшее. Грамматикализованный показатель «эпического настоящего».`,
+    ex:[
+      {skt:'vasati sma', ru:'«жил-был»', src:'зачины рассказов (P)', url:null, trans:'', tag:'sma + презенс → нарративное прошлое'}
+    ],
+    chains:[], gram:[ {who:'Speyer', ref:'Vedische und Sanskrit-Syntax (1896)', url:null}, {who:'Елизаренкова', ref:'1982', url:null} ],
+    apte:null },
+
+  ha: { dev:'ह', iast:'ha', gloss:'эпический усилитель', tier:'extra', type:['modal'],
+    position:'«Условно пустая», постпозитивная. 2-я позиция; близка к sma по нарративной функции.',
+    fn:`Эпический усилитель торжественной нарративной завершённости. Близок к <em>sma</em> по функции.`,
+    ex:[
+      {skt:'tūṣṇīṁ babhūva ha', ru:'«и замолк»', src:'БхГ 2.9', url:U.gita, trans:'Семенцов', tag:'ha — эпическая завершённость'}
+    ],
+    chains:[], gram:[ {who:'Speyer', ref:'Vedische und Sanskrit-Syntax (1896)', url:null}, {who:'Елизаренкова', ref:'1982', url:null} ],
+    apte:null },
+
+  evam: { dev:'एवम्', iast:'evam', gloss:'так, таким образом', tier:'extra', type:['modal'],
+    position:'Свободной позиции; не привязана к ваккернагелевской позиции.',
+    fn:`Анафорическое наречие «так, таким образом» — указывает на предшествующее (часто на сказанное). Не путать с фокусной <em>eva</em>.`,
+    ex:[
+      {skt:'evam ukto hṛṣīkeśo guḍākeśena bhārata', ru:'«О сын Бхараты! Слово это, таким образом, услыхав из уст Гудакеши»', src:'БхГ 1.24', url:U.gita, trans:'Семенцов', tag:'evam отсылает к сказанному'}
+    ],
+    chains:[], gram:[ {who:'Whitney', ref:'§§1096–1135', url:U.whitney} ],
+    apte:null },
+
+  nu: { dev:'नु', iast:'nu', gloss:'же (вопросит.)', tier:'extra', type:['logic'],
+    position:'Постпозитивная, более редкая. 2-я позиция; характерна для вопросов.',
+    fn:`Вопросительно-эмфатическая частица «же» (ср. рус. «Что же ты молчишь?»). Часто в цепочке с <em>khalu</em>.`,
+    ex:[
+      {skt:'kva nu khalu', ru:'«где же, в самом деле»', src:'Ś 3.3.1 (SG 17.1.1)', url:null, trans:'Gillon', tag:'nu + khalu — двойная эмфаза в вопросе'}
+    ],
+    chains:[ {k:'nu khalu', v:'Ś 3.3.1 — эмфаза в вопросе'} ],
+    gram:[ {who:'Speyer', ref:'Vedische und Sanskrit-Syntax (1896)', url:null} ],
+    apte:null }
+};
+
+// ---- карта (позиционная классификация) ----
+const MAP = [
+  { cls:'pre',  title:'Препозитивные', sub:[ {t:null, ids:['na','ma']} ] },
+  { cls:'free', title:'Свободной позиции', sub:[ {t:null, ids:['iti','evam']} ] },
+  { cls:'post', title:'Постпозитивные', sub:[
+      {t:'Основные', ids:['ca','va','tu','hi','iva','api']},
+      {t:'Более редкие', ids:['nu','khalu'], plain:['u','uta','aṅga']},
+      {t:'Неопределённые «-нибудь, -то»', plain:['cit','svit','cana'], note:'в составе ko ’pi, kaścit, kim svit, na kadācana'},
+      {t:'«Условно пустые» — прагматически нагруженные', ids:['eva','ha','sma','vai']}
+  ]}
+];
+
+const TYPE_LABEL = { connect:'связующая', logic:'логико-дискурсивная', focus:'фокусная', modal:'модально-цитатная', neg:'отрицание' };
+const TIER_LABEL = { core:'ядро курса', apte:'+ Apte 1957', extra:'дополнительно' };
+
+let activeId = null;
+let activeFilter = 'all';
+
+function clean(s){ return (s||'').replace(/\\\\'/g, "'"); }
+
+const CORE7 = new Set(['ca','va','tu','hi','api','eva','iti']);
+function chipHTML(id){
+  const p = P[id]; if(!p) return '';
+  const cls = ['chip']; if(CORE7.has(id)) cls.push('core');
+  const dot = p.apte ? '<span class="apte-dot">A</span>' : '';
+  return `<span class="${cls.join(' ')}" data-id="${id}" title="${clean(p.gloss)}">${clean(p.iast)}${dot}</span>`;
+}
+
+function buildMap(){
+  const el = document.getElementById('map');
+  let h = '<div class="legend">Нажмите частицу → разбор справа. <span style="color:var(--gold);font-weight:700">обводка</span> — ядро курса; <span style="color:var(--gold);font-weight:700">A</span> — есть статья Apte.</div>';
+  MAP.forEach(g => {
+    h += `<div class="group ${g.cls}"><div class="group-title">${g.title}</div>`;
+    g.sub.forEach(s => {
+      h += '<div class="sub">';
+      if(s.t) h += `<div class="sub-title">${s.t}</div>`;
+      h += '<div class="chips">';
+      (s.ids||[]).forEach(id => h += chipHTML(id));
+      (s.plain||[]).forEach(x => h += `<span class="chip plain" title="вне разбора">${clean(x)}</span>`);
+      h += '</div>';
+      if(s.note) h += `<div style="font-size:11px;color:var(--muted);font-style:italic;margin-top:4px">${clean(s.note)}</div>`;
+      h += '</div>';
+    });
+    h += '</div>';
+  });
+  el.innerHTML = h;
+  el.querySelectorAll('.chip[data-id]').forEach(c =>
+    c.addEventListener('click', () => selectParticle(c.dataset.id)));
+}
+
+function exHTML(e){
+  const loc = e.url ? `<a href="${e.url}" target="_blank" rel="noopener">${clean(e.src)}</a>` : clean(e.src);
+  const trans = e.trans ? ` · ${clean(e.trans)}` : '';
+  const tag = e.tag ? ` · <span class="tag">${clean(e.tag)}</span>` : '';
+  return `<div class="ex"><div class="ex-skt">${clean(e.skt)}</div>`
+    + `<div class="ex-ru">${clean(e.ru)}</div>`
+    + `<div class="ex-meta"><span class="src">${loc}</span>${trans}${tag}</div></div>`;
+}
+
+function renderDetail(id){
+  const p = P[id];
+  const posCls = p.position && /Препозитив/.test(p.position) ? 'pre'
+    : (/Свободн/.test(p.position) ? 'free' : '');
+  let h = `<div class="d-head">`
+    + `<span class="d-dev">${p.dev}</span><span class="d-iast">${clean(p.iast)}</span><span class="d-gloss">— ${clean(p.gloss)}</span>`
+    + `<div class="badges">`
+    + `<span class="badge pos ${posCls}">${posCls==='pre'?'препозитивная':posCls==='free'?'свободная позиция':'постпозитивная (2-я, Ваккернагель)'}</span>`
+    + p.type.map(t => `<span class="badge type">${TYPE_LABEL[t]}</span>`).join('')
+    + (CORE7.has(id) ? `<span class="badge tier-core">ядро курса</span>` : '')
+    + (p.apte ? `<span class="badge tier-apte">+ Apte 1957</span>` : '')
+    + (!CORE7.has(id) && !p.apte ? `<span class="badge tier-extra">дополнительно</span>` : '')
+    + `</div></div><div class="d-body">`;
+
+  h += `<div class="sec"><h3>Позиция (Зализняк / Ваккернагель)</h3><div class="fn">${clean(p.position)}</div></div>`;
+  h += `<div class="sec"><h3>Функция</h3><div class="fn">${clean(p.fn)}</div></div>`;
+
+  if(p.poly && p.poly.length){
+    h += `<div class="sec"><h3>Полифункциональность</h3><table class="poly">`
+      + p.poly.map(r => `<tr><td class="k">${clean(r.k)}</td><td>${clean(r.v)}</td></tr>`).join('')
+      + `</table></div>`;
+  }
+
+  if(p.ex && p.ex.length){
+    h += `<div class="sec"><h3>Примеры</h3>${p.ex.map(exHTML).join('')}</div>`;
+  }
+
+  if(p.chains && p.chains.length){
+    h += `<div class="sec"><h3>Сочетания (цепочки)</h3><table class="chains">`
+      + p.chains.map(c => `<tr><td class="k">${clean(c.k)}</td><td>${clean(c.v)}</td></tr>`).join('')
+      + `</table></div>`;
+  }
+
+  if(p.gram && p.gram.length){
+    h += `<div class="sec"><h3>В грамматиках</h3><ul class="gram">`
+      + p.gram.map(g => {
+          const ref = g.url ? `<a href="${g.url}" target="_blank" rel="noopener">${clean(g.ref)}</a>` : clean(g.ref);
+          return `<li><span class="who">${clean(g.who)}</span> — ${ref}</li>`;
+        }).join('')
+      + `</ul></div>`;
+  }
+
+  h += `<div class="sec"><h3>Словарь Apte (1957)</h3>`;
+  if(p.apte && p.apte.length){
+    h += `<details class="apte"><summary>Развернуть статью Apte — ${clean(p.iast)}</summary><div class="apte-body">`
+      + p.apte.map(s => `<div class="apte-sense"><span class="n">${clean(s.n)}.</span>${clean(s.t)}</div>`).join('')
+      + `</div></details>`;
+  } else {
+    h += `<div class="apte-note">Отдельной развёрнутой статьи в подборке курса нет. См. <a href="${U.apteSG}" target="_blank" rel="noopener">Apte, <em>Student's Guide</em></a> и грамматики выше.</div>`;
+  }
+  h += `</div>`;
+
+  h += `</div>`;
+  return h;
+}
+
+function selectParticle(id){
+  if(!P[id]) return;
+  activeId = id;
+  document.querySelectorAll('.chip[data-id]').forEach(c =>
+    c.classList.toggle('active', c.dataset.id === id));
+  const d = document.getElementById('detail');
+  d.innerHTML = renderDetail(id);
+  if(window.innerWidth <= 880) d.scrollIntoView({behavior:'smooth', block:'start'});
+}
+
+function applyFilter(){
+  const q = document.getElementById('search').value.trim().toLowerCase();
+  document.querySelectorAll('.chip[data-id]').forEach(c => {
+    const p = P[c.dataset.id];
+    const typeOk = activeFilter === 'all' || p.type.includes(activeFilter);
+    const hay = (p.iast + ' ' + p.gloss + ' ' + (p.fn||'') + ' ' + (p.position||'') + ' ' + p.type.map(t=>TYPE_LABEL[t]).join(' ')).toLowerCase();
+    const searchOk = !q || hay.includes(q);
+    c.classList.toggle('dim', !(typeOk && searchOk));
+  });
+}
+
+document.getElementById('filters').addEventListener('click', e => {
+  if(e.target.tagName !== 'BUTTON') return;
+  document.querySelectorAll('#filters button').forEach(b => b.classList.remove('active'));
+  e.target.classList.add('active');
+  activeFilter = e.target.dataset.f;
+  applyFilter();
+});
+document.getElementById('search').addEventListener('input', applyFilter);
+
+buildMap();
+selectParticle('ca');
+</script>
+</body>
+</html>
