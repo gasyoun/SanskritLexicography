@@ -1,9 +1,100 @@
-SanskritLexicography
-====================
+# SanskritLexicography
 
-Cologne headword lists
+Research and data workspace for Sanskrit digital lexicography, with a focus on
+Cologne Digital Sanskrit Lexicon headword lists, cross-dictionary comparison,
+and teaching materials for Sanskrit lexical and syntactic study.
 
-What is key1 and key2?
+The repository is part of the wider
+[Sanskrit Lexicon](https://github.com/sanskrit-lexicon) ecosystem. It collects
+large reference files, headword exports, research notes, and lecture material
+that support work on dictionary structure, corpus alignment, and learner-facing
+lexicographic tools.
 
-key1 - something non-existing in the printed book, used only on PC.
-key2 - original form, as close as possible to the printed book.
+## Contents
+
+| Path | Purpose |
+|---|---|
+| `HeadwordLists/` | Exported and derived headword lists for CDSL dictionaries, including MW, PWG, PWK, AP, BHS, CAE, CCS, SCH, SKD, VCP, VEI, and aggregate comparison files. |
+| `Syntax-Lectures/` | Markdown and HTML lecture material, mostly Russian-language notes on Sanskrit particles and syntactic usage. |
+| `ROADMAP_2026_2027.md` | Research roadmap covering csl-atlas review, publication plans, FAIR gaps, standards exports, and learner-layer work. |
+| `CDSL-2025.pdf` | Snapshot/reference document for the 2025 CDSL-related work. |
+| `DCS_statistical_evaluation.htm` | Statistical evaluation material connected with DCS and Sanskrit lexical data. |
+| `DCS-Moniers-roots-w-references.html` | DCS and Monier-Williams root-reference material. |
+| `helpmorphids.html` | Morphological identifier reference material. |
+| `gasuns_cologne-zograf_2019.pdf` | Supporting publication/reference material. |
+
+## Headword Lists
+
+The files in `HeadwordLists/` are named to show both the dictionary/source and
+the kind of key exported. For example:
+
+- `MW-unique-key1-193978.txt`
+- `MW-unique-key2-198220.txt`
+- `PWK-unique-key2-133741.txt`
+- `SCH-accents-IAST-20247.txt`
+- `mw-apte-mcdonell-hk.txt`
+- `sanhw1.xlsx`
+
+The trailing number usually records the count of entries in that export.
+
+### key1 and key2
+
+The historical README defined the two central headword keys this way:
+
+- `key1` is a normalized computational key. It may not exist as a form printed
+  in the source dictionary, but it is useful for machine comparison.
+- `key2` is closer to the original printed form and is generally the better
+  key for display, citation, and philological inspection.
+
+When comparing dictionaries, start from `key1` if the task is algorithmic
+matching, deduplication, or joining. Start from `key2` if the task is editorial
+review, citation, or checking the digitized text against the printed source.
+
+## Research Directions
+
+The current roadmap frames the work around evidence-graded digital
+lexicography:
+
+- dictionary evidence should be reproducible and citable;
+- inferred, derived, observed, and reviewed claims should be kept distinct;
+- Sanskrit's European and indigenous lexicographic traditions should be modeled
+  as parallel evidence systems rather than flattened into one format;
+- learner-facing tools should connect dictionary evidence with corpus frequency
+  and grammatical information.
+
+See [`ROADMAP_2026_2027.md`](ROADMAP_2026_2027.md) for the publication plan,
+FAIR/standards gaps, and proposed learner-layer work.
+
+## Working With The Data
+
+Most files are plain text and can be inspected with standard command-line tools
+or loaded into scripts. A few files are large enough to be awkward in an editor,
+especially `sanhw1.xlsx`, `DCS_statistical_evaluation.htm`, and the PWG/PWK
+error-list exports.
+
+Suggested entry points:
+
+1. Use `HeadwordLists/*unique-key1*.txt` for normalized matching tasks.
+2. Use `HeadwordLists/*unique-key2*.txt` for print-form and display tasks.
+3. Use `HeadwordLists/mw-apte-mcdonell-hk.txt` for a ready-made comparison
+   across major Sanskrit dictionary traditions.
+4. Use `Syntax-Lectures/sanskrit_particles_lectures.md` as the main teaching
+   note entry point for the particles material.
+5. Use `ROADMAP_2026_2027.md` to understand how this repository connects with
+   csl-atlas, VisualDCS, csl-standards, and publication work.
+
+## Contributing
+
+Contributions should follow [`CONTRIBUTING.md`](CONTRIBUTING.md). In short:
+
+1. Fork the repository.
+2. Create a feature branch.
+3. Submit a pull request and reference any related issue.
+
+For larger data changes, include the source of the data, the transformation
+method, and enough counts or checksums for another maintainer to reproduce the
+result.
+
+## License
+
+The repository is distributed under the MIT License. See [`LICENSE`](LICENSE).

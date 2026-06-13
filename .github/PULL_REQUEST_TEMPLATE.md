@@ -1,24 +1,38 @@
-## Description
-Brief description of what this PR changes and why.
+## PR Type
+- [ ] data
+- [ ] build
+- [ ] docs
+- [ ] navigation
 
-## Type of change
-- [ ] Bug fix (non-breaking change fixing an issue)
-- [ ] New feature (non-breaking change adding functionality)
-- [ ] Breaking change (fix or feature that would cause existing functionality to change)
-- [ ] Documentation update
-- [ ] Refactoring (no functional change)
+## Summary
+- What changed:
+- Why this change exists:
 
-## Related issues
-Closes #(issue number)
+## Test Surface
+- Automated checks:
+- Manual checks:
+- Pure helpers / decision points covered:
+- If build-related: import-safe verified? yes / no / n/a
 
-## Testing
-- [ ] Tested locally
-- [ ] Existing tests pass
-- [ ] New tests added (if applicable)
+## Invariants
+- Must stay true:
+- Counts / alignment / join rules:
+- Source-of-truth assumptions:
+- What would count as regression:
 
-## Checklist
-- [ ] Code follows the project style guidelines
-- [ ] Comments added for complex logic
-- [ ] Documentation updated (if needed)
-- [ ] No new warnings generated
-- [ ] Commit message(s) are clear and concise
+## Safety
+- Fallback / failure mode:
+- Observable marker or sanity check:
+- Rebuild / validate / verify command:
+
+## Reader-Facing Done
+- Navigation / entry point updated:
+- Docs / changelog / handoff updated:
+- Known limits or caveats exposed:
+- If not applicable, say why:
+
+## Type-Specific Notes
+- If `data`: schema/FK/PK checks, row-count expectations, epistemic limits
+- If `build`: side effects on import, generated artifact scope, rollback path
+- If `docs`: stale wording removed, authoritative docs confirmed
+- If `navigation`: links tested, discoverability improved in 1-2 clicks
