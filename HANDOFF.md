@@ -55,26 +55,29 @@ git ls-files '*.md' | xargs grep -ohoE "[A-Za-z0-9_][A-Za-z0-9_./-]*\.(md|py|jso
   | sort -u  # then classify: external repo / intentional-absence / URL fragment
 ```
 
-## Open documentation gaps (candidates, not yet agreed)
+## Open documentation gaps
 
-Confirm priority with the user before doing these — none is committed work.
+All five gaps from the original 2026-06-14 documentation pass are now closed:
 
-1. **`HeadwordLists/` has no dedicated README.** Only the root
-   [README.md](README.md) covers the `{DICT}-unique-{key1|key2}-{N}` naming and
-   the `fehlerhaft` / `accents-IAST` variants. A directory index listing each
-   dictionary code, its key files, and counts would help.
-2. **Large reference files are undocumented.** `helpmorphids.html`,
-   `DCS_statistical_evaluation.htm` (~75 MB), `DCS-Moniers-roots-w-references.html`
-   (~16 MB), `CDSL-2025.pdf`, and the PDFs have no provenance note (source, date,
-   how generated). A short "Reference documents" section or sidecar would fix it.
-3. **No top-level docs map.** A navigation index tying CLAUDE.md / ROADMAP /
-   mw_ru docs / lectures / headword lists together was proposed but not built.
-4. **`CONTRIBUTING.md` is minimal** — could spell out the data-change provenance
-   expectation (source + transformation + counts/checksums) already hinted at in
-   the README.
-5. **`docs/dict/kosha_ai_translation.md`** (dev counterpart to `mw_ru.md`) is
-   referenced but lives in the working repo; decide whether to import a copy or
-   keep it external (currently external, documented in mw_ru.md section 7).
+1. **HeadwordLists index** — done: [HeadwordLists/README.md](HeadwordLists/README.md)
+   (naming scheme, key1/key2, variant patterns, BOM caveat, 16-code dictionary
+   table). Released in v1.0.2.
+2. **Reference-file provenance** — done: [REFERENCES.md](REFERENCES.md) (source,
+   date, producer, size per asset). Released in v1.0.2.
+3. **Top-level docs map** — done: the "Documentation map" section in
+   [README.md](README.md). Released in v1.0.2.
+4. **CONTRIBUTING expansion** — done: [CONTRIBUTING.md](CONTRIBUTING.md) now
+   spells out the data-change provenance expectation and doc conventions.
+   Released in v1.0.2.
+5. **kosha import** — **decided: keep external** (user, 2026-06-14).
+   `docs/dict/kosha_ai_translation.md` (dev counterpart to `mw_ru.md`) lives in
+   the separate mw_ru working repo and is not present on disk here, so it cannot
+   be imported without fabrication. It stays external and is documented in
+   [RussianTranslation/mw_ru.md](RussianTranslation/mw_ru.md) §7. If the file is
+   ever supplied, place it and convert the §7 plain-text reference into a link.
+
+No documentation gaps are currently open. New work should start from a
+user-confirmed need, following the loop below.
 
 ## How to work
 
