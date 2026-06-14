@@ -22,6 +22,7 @@ lexicographic tools.
 | `DCS-Moniers-roots-w-references.html` | DCS and Monier-Williams root-reference material. |
 | `helpmorphids.html` | Morphological identifier reference material. |
 | `gasuns_cologne-zograf_2019.pdf` | Supporting publication/reference material. |
+| [REFERENCES.md](REFERENCES.md) | Provenance (source, date, producer, size) for the reference assets above, including `WSC 2025 Reviews 7.pdf`. |
 
 ## Headword Lists
 
