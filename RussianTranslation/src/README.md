@@ -4,7 +4,7 @@
 по которым этап 4 ([../pwg_ru_prompts/4_korpus_proverka.txt](../pwg_ru_prompts/4_korpus_proverka.txt))
 сверяет русский перевод PWG. Шлюз — неблокирующий аннотатор с двумя сигналами;
 см. [../pwg_ru.md](../pwg_ru.md), раздел 7. План интеграции корпуса —
-`SAMUDRA_INTEGRATION.md` (готовится).
+[../SAMUDRA_INTEGRATION.md](../SAMUDRA_INTEGRATION.md).
 
 ## Что здесь
 
