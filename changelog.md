@@ -9,6 +9,12 @@ ready for a dated entry.
 ## [Unreleased]
 
 ### Added
+- `CLAUDE.md` — repository-level guidance for Claude Code. Documents what is
+  specific to this data/research workspace (no source code): `HeadwordLists/`
+  naming and key1/key2 semantics, the inconsistent UTF-8 BOM state across
+  exports, the `mw_ru` translation format invariant, and the lint-only
+  CI/pre-commit expectations. Ecosystem/workflow/taxonomy conventions are
+  deferred to the org-level `../CLAUDE.md`.
 - `Syntax-Lectures/sanskrit_particles_explorer.html` — a self-contained,
   Russian-language interactive explorer that digests the particle lectures for
   students: a clickable positional map (Zaliznyak / Wackernagel) over 16
