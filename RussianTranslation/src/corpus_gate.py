@@ -105,9 +105,13 @@ def corpus_examples(slp1, limit=3):
     out = []
     try:
         con = sqlite3.connect('file:%s?mode=ro' % CORPUS_DB, uri=True)
+        # NB: corpus_lines also holds dictionary rows (no #sa/#ru suffix); filter
+        # to Sanskrit verse lines in SQL so LIMIT captures verses, not dict rows
+        # (otherwise common headwords return 0 — the first 400 matches are dicts).
         rows = con.execute(
             "SELECT canonical_id, line_text FROM corpus_lines "
-            "WHERE corpus_lines MATCH ? LIMIT 400", ('"%s"' % term,))
+            "WHERE corpus_lines MATCH ? AND canonical_id LIKE '%#sa' LIMIT 400",
+            ('"%s"' % term,))
         for cid, _ in rows:
             if not cid or not cid.endswith('#sa'):
                 continue
