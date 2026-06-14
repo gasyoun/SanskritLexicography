@@ -24,6 +24,38 @@ lexicographic tools.
 | `gasuns_cologne-zograf_2019.pdf` | Supporting publication/reference material. |
 | [REFERENCES.md](REFERENCES.md) | Provenance (source, date, producer, size) for the reference assets above, including `WSC 2025 Reviews 7.pdf`. |
 
+## Documentation map
+
+Where to read what.
+
+**Orientation**
+
+- [README.md](README.md) — this file: overview and entry points.
+- [ROADMAP_2026_2027.md](ROADMAP_2026_2027.md) — research direction, publication
+  plan, FAIR/standards gaps.
+- [changelog.md](changelog.md) — what changed, by dated snapshot.
+
+**Contributors & agents**
+
+- [CONTRIBUTING.md](CONTRIBUTING.md) — how to contribute.
+- [CLAUDE.md](CLAUDE.md) — repo conventions for Claude Code (key1/key2, BOM
+  caveat, external-refs-as-plain-text); defers ecosystem/taxonomy to the
+  org-level [../CLAUDE.md](../CLAUDE.md).
+- [HANDOFF.md](HANDOFF.md) — orientation for the next agent continuing
+  documentation work: conventions, link-sweep recipes, open gaps.
+- [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) — community expectations.
+
+**Material, by area**
+
+- [HeadwordLists/README.md](HeadwordLists/README.md) — headword exports: naming,
+  key1/key2, encoding, the dictionary-code table.
+- [Syntax-Lectures/README.md](Syntax-Lectures/README.md) — particle lectures,
+  Zaliznyak schema, interactive explorer, Apte entries.
+- [RussianTranslation/mw_ru.md](RussianTranslation/mw_ru.md) — how the AI Russian
+  Monier-Williams translation was made (+ the stage prompts in
+  [RussianTranslation/mw_ru_prompts/README.md](RussianTranslation/mw_ru_prompts/README.md)).
+- [REFERENCES.md](REFERENCES.md) — provenance for the large reference assets.
+
 ## Headword Lists
 
 The files in `HeadwordLists/` are named to show both the dictionary/source and
