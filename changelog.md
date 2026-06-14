@@ -8,6 +8,8 @@ ready for a dated entry.
 
 ## [Unreleased]
 
+## [1.0.1] - 2026-06-14
+
 ### Added
 - `CLAUDE.md` — repository-level guidance for Claude Code. Documents what is
   specific to this data/research workspace (no source code): `HeadwordLists/`
