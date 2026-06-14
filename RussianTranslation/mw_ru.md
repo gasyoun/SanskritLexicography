@@ -179,7 +179,8 @@ divine → божественный      mind → ум              war → во
 ```
 
 Полный список — 91 пара, файл
-[data/scripts/translate_pilot/glossary.json](../../data/scripts/translate_pilot/glossary.json).
+data/scripts/translate_pilot/glossary.json в рабочем репозитории
+(не входит в этот репозиторий).
 
 ### 5.2. Промпт QA-судьи (Opus 4.7)
 
@@ -416,7 +417,8 @@ kind of plant → род растения      vow → обет          cf. →
 ```
 
 Полный список — 145 пар, файл
-[data/scripts/translate_pilot/retranslate_glossary.json](../../data/scripts/translate_pilot/retranslate_glossary.json).
+data/scripts/translate_pilot/retranslate_glossary.json в рабочем
+репозитории (не входит в этот репозиторий).
 
 #### Примеры реальных per-card сообщений
 
