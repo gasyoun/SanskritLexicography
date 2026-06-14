@@ -1,7 +1,7 @@
 # QA-судья V4 (tag_dropped + pre-filter + Yandex-slim)
 
-Готовый к внедрению апдейт QA-судьи. Включает изменения из
-[improvements.md](improvements.md), пункт 3.
+Готовый к внедрению апдейт QA-судьи. Включает изменения из рабочего
+документа improvements.md (не входит в этот репозиторий), пункт 3.
 
 **Целевое внедрение:**
 - `data/scripts/qa_pilot.py` — основной QA_SYSTEM_PROMPT + калибровка
@@ -150,7 +150,7 @@ Yandex слабее на anchors/structure, сильнее на anglicism/gramma
 
 ### Цена (на 287K карточек full mw_ru)
 
-Yandex Pro: sync ₽0.80/1K tokens, async ₽0.40/1K (см. [docs/yandex_api.md](../yandex_api.md)).
+Yandex Pro: sync ₽0.80/1K tokens, async ₽0.40/1K (см. docs/yandex_api.md в рабочем репозитории — не входит в этот репозиторий).
 Output на QA — ~30 tok per call (короткий verdict JSON).
 
 | | Full prompt (2700 tok) | Slim prompt (200 tok) |
