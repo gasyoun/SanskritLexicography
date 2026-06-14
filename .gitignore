@@ -1,3 +1,8 @@
 # audit sidecars
 .contributing_old.md
 .contributing_audit.txt
+
+# pwg_ru corpus-gate dictionary data — extracted from SamudraManthanam by
+# RussianTranslation/src/build_src.py (some sources are modern/copyright).
+# The build script + README are committed; the data is regenerated locally.
+RussianTranslation/src/*.jsonl
