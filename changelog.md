@@ -24,6 +24,23 @@ ready for a dated entry.
   entries for the seven particles that have them. Built from
   `sanskrit_particles_lectures.md`, `sanskrit_particles_schema.html`, and the
   `Apte_1957-*_RU.md` series.
+- `Syntax-Lectures/README.md` — Russian index of the particle materials: a
+  start-here pointer to the lectures conspect, a table of the three primary
+  files (lectures, the Zaliznyak positional schema, the interactive explorer),
+  and a mapping of the seven `Apte_1957-*_RU.md` particle entries (those of the
+  16 explorer particles that have an Apte article).
+- `RussianTranslation/mw_ru.md` — new section 7 "Внешние документы", an
+  appendix tabling the six files referenced from the mw_ru docs that live in
+  the separate working repo (`kosha_ai_translation.md`, `improvements.md`,
+  `yandex_api.md`, the two glossary JSONs, the QA scripts): what each is and
+  where it is cited.
+
+### Fixed
+- mw_ru docs: demoted four dead links pointing at external working-repo files
+  to plain text (`improvements.md` and `docs/yandex_api.md` in `qa_judge_v4.md`;
+  two glossary JSONs in `mw_ru.md`), so all relative links in
+  `RussianTranslation/` now resolve. Added `qa_judge_v4.md` to the prompts
+  `README.md` index, marked as a proposed v4 update to the stage-2 judge.
 
 ## [1.0.0] - 2026-06-13
 
