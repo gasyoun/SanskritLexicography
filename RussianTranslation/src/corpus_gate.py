@@ -17,7 +17,7 @@ Modes:
   python corpus_gate.py coverage [N]               per-signal coverage over PWG
   python corpus_gate.py tune     [N]               inter-dictionary agreement → threshold
 """
-import json, os, re, sys, sqlite3, unicodedata
+import json, os, re, sys, sqlite3, unicodedata, random
 from collections import defaultdict
 
 sys.stdout.reconfigure(encoding='utf-8')
@@ -197,12 +197,24 @@ def cmd_lookup(idx, args):
 def cmd_card(idx, args):
     print(json.dumps(build_card(idx, args[0], None, args[1]), ensure_ascii=False, indent=2))
 
+COVERAGE_SEED = 20260615   # fixed seed → reproducible random samples
+
 def cmd_coverage(idx, args):
     n = int(args[0]) if args else None
-    corpus_sample = 300
-    tot = per = kow_n = corp_hit = corp_seen = 0
+    rng = random.Random(COVERAGE_SEED)
+    all_keys = [k for k in read_keys(None)]
+    total = len(all_keys)
+    # RANDOM sample, not first-N: PWG keys are SLP1-sorted and the a- section is
+    # over-covered (esp. KOW), so a first-N slice badly overstates coverage.
+    if n and n < total:
+        keys = rng.sample(all_keys, n)
+        label = 'random sample %d / %d (seed %d)' % (n, total, COVERAGE_SEED)
+    else:
+        keys = all_keys
+        label = 'full %d' % total
+    tot = per = kow_n = 0
     persrc = defaultdict(int)
-    for k in read_keys(n):
+    for k in keys:
         tot += 1
         hit = idx.get(form_key(k)) or {}
         if any(c in hit for c in INDEP):
@@ -212,19 +224,20 @@ def cmd_coverage(idx, args):
                 persrc[c] += 1
         if REF in hit:
             kow_n += 1
-        if corp_seen < corpus_sample:
-            corp_seen += 1
-            if corpus_examples(k, 1):
-                corp_hit += 1
-    print('PWG headwords scanned: %d' % tot)
+    # corpus signal: its own random sub-sample of the scanned keys (the corpus
+    # query is the slow part, so it stays capped) — representative, not first-300.
+    corpus_n = min(300, len(keys))
+    corp_keys = rng.sample(keys, corpus_n)
+    corp_hit = sum(1 for k in corp_keys if corpus_examples(k, 1))
+    print('PWG headwords scanned: %d (%s)' % (tot, label))
     print('--- signal 1: correctness coverage (any independent dict) ---')
     print('  covered: %d (%.1f%%)' % (per, 100.0 * per / tot))
     for c in INDEP:
         print('    %-8s %6d (%.1f%%)' % (NAME[c], persrc[c], 100.0 * persrc[c] / tot))
     print('--- signal 2: reference coverage (KOW) ---')
     print('  KOW: %d (%.1f%%)' % (kow_n, 100.0 * kow_n / tot))
-    print('--- corpus signal (sample of %d): %d had >=1 aligned verse (%.1f%%)'
-          % (corp_seen, corp_hit, 100.0 * corp_hit / max(corp_seen, 1)))
+    print('--- corpus signal (random sample of %d): %d had >=1 aligned verse (%.1f%%)'
+          % (corpus_n, corp_hit, 100.0 * corp_hit / max(corpus_n, 1)))
 
 def cmd_tune(idx, args):
     """Inter-dictionary agreement: for headwords covered by >=2 independent
