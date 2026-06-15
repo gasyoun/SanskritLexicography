@@ -6,6 +6,18 @@ This repository does not currently publish versioned release notes. Entries use
 dated maintenance snapshots; keep upcoming work under [Unreleased] until it is
 ready for a dated entry.
 
+## [1.1.2] - 2026-06-15
+
+### Fixed
+- `RussianTranslation/src/corpus_gate.py` — `coverage` now draws a **random**
+  sample (fixed seed, reproducible) instead of the first N keys. PWG headwords are
+  SLP1-sorted and the `a-` section is over-covered (especially KOW), so first-N
+  coverage badly overstated true numbers (3000-sample KOW was 39.8% vs the full
+  8.0%). The corpus signal also gets its own random sub-sample. A random
+  3000-sample now matches the full run (independent correctness 16.6% vs 16.4%,
+  KOW 7.0% vs 8.0%, corpus ~15%). Full-PWG coverage of 106,085 headwords:
+  independent correctness ≈16%, KOW reference ≈8%, corpus ≈15%.
+
 ## [1.1.1] - 2026-06-15
 
 ### Fixed
