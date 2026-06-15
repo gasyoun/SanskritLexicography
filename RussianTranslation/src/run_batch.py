@@ -34,7 +34,7 @@ def done_ids():
         with open(STORE, encoding='utf-8') as f:
             for line in f:
                 try:
-                    ids.add(json.loads(line)['i'])
+                    ids.add(json.loads(line)['ord'])
                 except Exception:
                     pass
     return ids
@@ -63,8 +63,9 @@ def cmd_build(args):
             att = [{'source': g['source'], 'gloss': _clean(g['gloss'])[:110]} for g in indep]
             if kow:
                 att.append({'source': 'KOW (reference)', 'gloss': _clean(kow[0])[:110]})
-            o.write(json.dumps({'i': ordi, 'key1': k1, 'key2': k2, 'iast': assemble.iast(k1),
-                                'de_skeleton': sk, 'placeholders': ph, 'attested': att},
+            o.write(json.dumps({'i': written, 'ord': ordi, 'key1': k1, 'key2': k2,
+                                'iast': assemble.iast(k1), 'de_skeleton': sk,
+                                'placeholders': ph, 'attested': att},
                                ensure_ascii=False) + '\n')
             written += 1
             if written >= n:
@@ -92,15 +93,16 @@ def cmd_collect(args):
             ru = re.sub(r'\{T(\d+)\}',
                         lambda m: ph[int(m.group(1)) - 1] if 0 < int(m.group(1)) <= len(ph) else m.group(0),
                         r['ru_skeleton'])
+            keymatch = r.get('key1') == card['key1']
             v = r.get('verdict', {})
-            rec = {'i': i, 'key1': card['key1'], 'key2': card['key2'], 'ru': ru,
-                   'placeholders_ok': integrity, 'verdict': v,
-                   'ok': bool(v.get('ok')) and integrity, 'severity': v.get('severity')}
+            rec = {'ord': card['ord'], 'key1': card['key1'], 'key2': card['key2'], 'ru': ru,
+                   'placeholders_ok': integrity, 'key_match': keymatch, 'verdict': v,
+                   'ok': bool(v.get('ok')) and integrity and keymatch, 'severity': v.get('severity')}
             out.write(json.dumps(rec, ensure_ascii=False) + '\n')
             appended += 1
             ok += 1 if rec['ok'] else 0
             bad += 0 if rec['ok'] else 1
-            mism += 0 if integrity else 1
+            mism += 0 if (integrity and keymatch) else 1
     print('collected %d → %s  (ok %d, flagged %d, placeholder-mismatch %d)'
           % (appended, os.path.basename(STORE), ok, bad, mism))
 
