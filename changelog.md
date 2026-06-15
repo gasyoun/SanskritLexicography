@@ -6,6 +6,16 @@ This repository does not currently publish versioned release notes. Entries use
 dated maintenance snapshots; keep upcoming work under [Unreleased] until it is
 ready for a dated entry.
 
+## [1.1.3] - 2026-06-15
+
+### Fixed
+- `RussianTranslation/src/corpus_gate.py` — `tune` now draws a reproducible
+  random sample (same fixed seed as `coverage`) instead of the first N keys, so
+  mid-size runs are representative. A random 4000-sample matches the full-PWG
+  agreement shape (head-term Jaccard ≥0.5 ≈3.6% vs the full 3.7%); `n ≥ total`
+  still reports the full run (106,085 headwords, 2,585 ≥2-dict pairs). Completes
+  the random-sampling fix begun for `coverage` in 1.1.2.
+
 ## [1.1.2] - 2026-06-15
 
 ### Fixed
