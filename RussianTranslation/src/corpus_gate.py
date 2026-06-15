@@ -243,8 +243,18 @@ def cmd_tune(idx, args):
     """Inter-dictionary agreement: for headwords covered by >=2 independent
     dicts, the head-term token Jaccard distribution — calibrates THRESHOLD."""
     n = int(args[0]) if args else 4000
+    rng = random.Random(COVERAGE_SEED)
+    all_keys = [k for k in read_keys(None)]
+    total = len(all_keys)
+    # RANDOM sample, not first-N (PWG is SLP1-sorted; the a- section is skewed).
+    if n and n < total:
+        keys = rng.sample(all_keys, n)
+        label = 'random sample %d / %d (seed %d)' % (n, total, COVERAGE_SEED)
+    else:
+        keys = all_keys
+        label = 'full %d' % total
     buckets = defaultdict(int); pairs = 0
-    for k in read_keys(n):
+    for k in keys:
         hit = idx.get(form_key(k)) or {}
         present = [c for c in INDEP if hit.get(c)]
         if len(present) < 2:
@@ -258,7 +268,8 @@ def cmd_tune(idx, args):
                 ov = len(a & b) / len(a | b)
                 pairs += 1
                 buckets[min(int(ov * 10) / 10, 0.9)] += 1
-    print('inter-dictionary head-term agreement over %d headwords (%d dict pairs):' % (n, pairs))
+    print('inter-dictionary head-term agreement over %d headwords [%s] (%d dict pairs):'
+          % (len(keys), label, pairs))
     cum = 0
     for b in sorted(buckets, reverse=True):
         cum += buckets[b]
