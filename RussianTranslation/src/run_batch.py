@@ -46,6 +46,7 @@ def _clean(s):
 
 def cmd_build(args):
     n = int(args[0]) if args else 30
+    covered_only = 'covered' in args   # coverage-first: only records with dict/KOW reuse
     done = done_ids()
     idx = cg.load_index()
     written = skipped = 0
@@ -60,6 +61,9 @@ def cmd_build(args):
                 skipped += 1
                 continue
             indep, kow = cg.lookup(idx, k1, k2)
+            if covered_only and not (indep or kow):
+                skipped += 1
+                continue
             att = [{'source': g['source'], 'gloss': _clean(g['gloss'])[:110]} for g in indep]
             if kow:
                 att.append({'source': 'KOW (reference)', 'gloss': _clean(kow[0])[:110]})
