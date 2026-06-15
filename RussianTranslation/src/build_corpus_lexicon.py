@@ -78,16 +78,19 @@ def align(sa_text, ru_text):
 
 
 def pairs_of(textfile):
+    # key by `seg`, not `lang`: a group has seg=sa (verse), seg=ru (the
+    # translation), and seg=comm1/comm2/… (footnotes, also lang=ru). We align
+    # the VERSE translation only — commentary is skipped, not mistaken for it.
     by_group = {}
     for line in open(os.path.join(SM, textfile), encoding='utf-8'):
         e = json.loads(line)
         if e.get('deleted'):
             continue
-        by_group.setdefault(e.get('group'), {})[e.get('lang')] = e
+        by_group.setdefault(e.get('group'), {})[e.get('seg')] = e
     work = textfile.replace('.jsonl', '')
     for g, d in by_group.items():
         if 'sa' in d and 'ru' in d and d['sa'].get('text') and d['ru'].get('text'):
-            yield g, work, d['sa']['passage'], d['sa']['text'], d['ru']['text']
+            yield g, work, d['sa'].get('passage', ''), d['sa']['text'], d['ru']['text']
 
 
 def to_slp1(sa_iast):
@@ -167,11 +170,26 @@ def cmd_status(args):
           % (n, len(keys), len(works)))
 
 
+def cmd_buildall(args):
+    workers = args[0] if args else '8'
+    texts = sorted(STRATA.keys())
+    print('building %d corpus texts (workers=%s) …' % (len(texts), workers))
+    for i, work in enumerate(texts, 1):
+        tf = work + '.jsonl'
+        if not os.path.exists(os.path.join(SM, tf)):
+            continue
+        print('[%d/%d] %s' % (i, len(texts), work))
+        try:
+            cmd_build([tf, str(10**9), str(workers)])
+        except Exception as ex:
+            sys.stderr.write('ERROR %s: %s\n' % (work, ex))
+
+
 def main():
     if len(sys.argv) < 2:
         print(__doc__); return
-    {'test': cmd_test, 'build': cmd_build, 'status': cmd_status}.get(
-        sys.argv[1], lambda *_: print(__doc__))(sys.argv[2:])
+    {'test': cmd_test, 'build': cmd_build, 'buildall': cmd_buildall,
+     'status': cmd_status}.get(sys.argv[1], lambda *_: print(__doc__))(sys.argv[2:])
 
 
 if __name__ == '__main__':
