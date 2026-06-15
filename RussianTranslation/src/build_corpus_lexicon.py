@@ -37,6 +37,8 @@ def _key():
 
 
 KEY = _key()
+_STRATA_PATH = os.path.join(HERE, 'corpus_strata.json')
+STRATA = json.load(open(_STRATA_PATH, encoding='utf-8')) if os.path.exists(_STRATA_PATH) else {}
 SYS = ('You align a Sanskrit verse to its Russian translation at the WORD level. '
        'For each notable Sanskrit CONTENT word (noun, verb, adjective; skip pure '
        'particles/conjunctions), give the Russian word or phrase that renders it '
@@ -105,7 +107,9 @@ def done_groups():
 def cmd_test(args):
     tf = args[0] if args else 'bhagavadgita-sementsov.jsonl'
     for g, work, passage, sa, ru in pairs_of(tf):
-        print('work=%s group=%s passage=%s' % (work, g, passage))
+        st = STRATA.get(work, {})
+        print('work=%s group=%s passage=%s | %s · ~%s · %s'
+              % (work, g, passage, st.get('genre'), st.get('date_median'), st.get('period')))
         print('SA:', sa[:170])
         print('RU:', ru[:170])
         print('--- DeepSeek word alignment ---')
@@ -127,8 +131,11 @@ def cmd_build(args):
             for p in align(sa, ru):
                 slp1 = to_slp1(p.get('sa', ''))
                 if slp1 and p.get('ru'):
+                    st = STRATA.get(work, {})
                     out.write(json.dumps({'group': g, 'work': work, 'passage': passage,
-                                          'slp1': slp1, 'sa': p.get('sa'), 'ru': p.get('ru')},
+                                          'slp1': slp1, 'sa': p.get('sa'), 'ru': p.get('ru'),
+                                          'genre': st.get('genre'), 'period': st.get('period'),
+                                          'date': st.get('date_median')},
                                          ensure_ascii=False) + '\n')
                     wrote += 1
             out.flush()
