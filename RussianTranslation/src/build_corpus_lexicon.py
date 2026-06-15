@@ -14,6 +14,7 @@ are gitignored. Append-only + resumable (skips verse groups already processed).
   python build_corpus_lexicon.py status                 entries + distinct keys
 """
 import json, os, re, sys, time
+from concurrent.futures import ThreadPoolExecutor, as_completed
 import requests
 sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
@@ -121,31 +122,36 @@ def cmd_test(args):
 def cmd_build(args):
     tf = args[0]
     n = int(args[1]) if len(args) > 1 else 10**9
+    workers = int(args[2]) if len(args) > 2 else 8
     done = done_groups()
     work = tf.replace('.jsonl', '')
-    processed = wrote = 0
-    with open(OUT, 'a', encoding='utf-8', newline='') as out:
-        for g, _, passage, sa, ru in pairs_of(tf):
-            if g in done:
-                continue
-            for p in align(sa, ru):
-                slp1 = to_slp1(p.get('sa', ''))
-                if slp1 and p.get('ru'):
-                    st = STRATA.get(work, {})
-                    out.write(json.dumps({'group': g, 'work': work, 'passage': passage,
-                                          'slp1': slp1, 'sa': p.get('sa'), 'ru': p.get('ru'),
-                                          'genre': st.get('genre'), 'period': st.get('period'),
-                                          'date': st.get('date_median')},
-                                         ensure_ascii=False) + '\n')
-                    wrote += 1
+    st = STRATA.get(work, {})
+    todo = [(g, passage, sa, ru) for g, _, passage, sa, ru in pairs_of(tf) if g not in done][:n]
+
+    def proc(item):
+        g, passage, sa, ru = item
+        rows = []
+        for p in align(sa, ru):
+            slp1 = to_slp1(p.get('sa', ''))
+            if slp1 and p.get('ru'):
+                rows.append({'group': g, 'work': work, 'passage': passage, 'slp1': slp1,
+                             'sa': p.get('sa'), 'ru': p.get('ru'), 'genre': st.get('genre'),
+                             'period': st.get('period'), 'date': st.get('date_median')})
+        return rows
+
+    wrote = donen = 0
+    with open(OUT, 'a', encoding='utf-8', newline='') as out, ThreadPoolExecutor(workers) as ex:
+        futs = [ex.submit(proc, it) for it in todo]
+        for fut in as_completed(futs):
+            for r in fut.result():
+                out.write(json.dumps(r, ensure_ascii=False) + '\n')
+                wrote += 1
             out.flush()
-            processed += 1
-            if processed % 20 == 0:
-                print('  %s: %d pairs, %d alignments' % (work, processed, wrote))
-            if processed >= n:
-                break
-    print('%s: processed %d pairs → %d alignments appended to %s'
-          % (work, processed, wrote, os.path.basename(OUT)))
+            donen += 1
+            if donen % 50 == 0:
+                print('  %s: %d/%d pairs, %d alignments' % (work, donen, len(todo), wrote))
+    print('%s [%s · ~%s]: %d pairs → %d alignments (x%d) appended to %s'
+          % (work, st.get('genre'), st.get('date_median'), len(todo), wrote, workers, os.path.basename(OUT)))
 
 
 def cmd_status(args):
