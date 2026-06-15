@@ -98,7 +98,7 @@ def cmd_collect(args):
                         lambda m: ph[int(m.group(1)) - 1] if 0 < int(m.group(1)) <= len(ph) else m.group(0),
                         r['ru_skeleton'])
             keymatch = r.get('key1') == card['key1']
-            v = r.get('verdict', {})
+            v = r.get('verdict') or {}   # judge may be null (e.g. rate-limited) → treat as pending
             rec = {'ord': card['ord'], 'key1': card['key1'], 'key2': card['key2'], 'ru': ru,
                    'placeholders_ok': integrity, 'key_match': keymatch, 'verdict': v,
                    'ok': bool(v.get('ok')) and integrity and keymatch, 'severity': v.get('severity')}
