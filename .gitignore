@@ -10,3 +10,7 @@ RussianTranslation/src/*.jsonl
 # Python bytecode
 __pycache__/
 *.pyc
+
+# secrets — API keys, NEVER commit
+.env
+*.env
