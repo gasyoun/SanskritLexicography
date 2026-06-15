@@ -1,0 +1,1091 @@
+{
+ "01_atharvaveda": {
+  "date_hi95": -720,
+  "date_lo95": -1160,
+  "date_median": -940,
+  "genre": "Veda — Saṃhitā",
+  "genre_code": "GV",
+  "period": "Vedic (Brāhmaṇa–Upaniṣad)",
+  "source": "Dharmamitra (date) + Renou (genre)"
+ },
+ "01_mahabharata-adiparva": {
+  "date_hi95": 390,
+  "date_lo95": -230,
+  "date_median": 80,
+  "genre": "Epic — Itihāsa (MBh)",
+  "genre_code": "GE",
+  "period": "Epic / early-Classical",
+  "source": "Dharmamitra (date) + Renou (genre)"
+ },
+ "01_ramayana-balakanda": {
+  "date_hi95": 410,
+  "date_lo95": -250,
+  "date_median": 70,
+  "genre": "Epic — Itihāsa (Rām)",
+  "genre_code": "GE",
+  "period": "Epic / early-Classical",
+  "source": "Dharmamitra (date) + Renou (genre)"
+ },
+ "01_rigveda": {
+  "date_hi95": -860,
+  "date_lo95": -1390,
+  "date_median": -1125,
+  "genre": "Veda — Saṃhitā",
+  "genre_code": "GV",
+  "period": "Ṛgvedic",
+  "source": "Dharmamitra (date) + Renou (genre)"
+ },
+ "02_atharvaveda": {
+  "date_hi95": -720,
+  "date_lo95": -1160,
+  "date_median": -940,
+  "genre": "Veda — Saṃhitā",
+  "genre_code": "GV",
+  "period": "Vedic (Brāhmaṇa–Upaniṣad)",
+  "source": "Dharmamitra (date) + Renou (genre)"
+ },
+ "02_mahabharata-sabhaparva": {
+  "date_hi95": 390,
+  "date_lo95": -230,
+  "date_median": 80,
+  "genre": "Epic — Itihāsa (MBh)",
+  "genre_code": "GE",
+  "period": "Epic / early-Classical",
+  "source": "Dharmamitra (date) + Renou (genre)"
+ },
+ "02_ramayana-ayodhyakanda": {
+  "date_hi95": 410,
+  "date_lo95": -250,
+  "date_median": 70,
+  "genre": "Epic — Itihāsa (Rām)",
+  "genre_code": "GE",
+  "period": "Epic / early-Classical",
+  "source": "Dharmamitra (date) + Renou (genre)"
+ },
+ "02_rigveda": {
+  "date_hi95": -860,
+  "date_lo95": -1390,
+  "date_median": -1125,
+  "genre": "Veda — Saṃhitā",
+  "genre_code": "GV",
+  "period": "Ṛgvedic",
+  "source": "Dharmamitra (date) + Renou (genre)"
+ },
+ "03_atharvaveda": {
+  "date_hi95": -720,
+  "date_lo95": -1160,
+  "date_median": -940,
+  "genre": "Veda — Saṃhitā",
+  "genre_code": "GV",
+  "period": "Vedic (Brāhmaṇa–Upaniṣad)",
+  "source": "Dharmamitra (date) + Renou (genre)"
+ },
+ "03_mahabharata-aranyakaparva": {
+  "date_hi95": 390,
+  "date_lo95": -230,
+  "date_median": 80,
+  "genre": "Epic — Itihāsa (MBh)",
+  "genre_code": "GE",
+  "period": "Epic / early-Classical",
+  "source": "Dharmamitra (date) + Renou (genre)"
+ },
+ "03_ramayana-aranyakanda": {
+  "date_hi95": 410,
+  "date_lo95": -250,
+  "date_median": 70,
+  "genre": "Epic — Itihāsa (Rām)",
+  "genre_code": "GE",
+  "period": "Epic / early-Classical",
+  "source": "Dharmamitra (date) + Renou (genre)"
+ },
+ "03_rigveda": {
+  "date_hi95": -860,
+  "date_lo95": -1390,
+  "date_median": -1125,
+  "genre": "Veda — Saṃhitā",
+  "genre_code": "GV",
+  "period": "Ṛgvedic",
+  "source": "Dharmamitra (date) + Renou (genre)"
+ },
+ "04_atharvaveda": {
+  "date_hi95": -720,
+  "date_lo95": -1160,
+  "date_median": -940,
+  "genre": "Veda — Saṃhitā",
+  "genre_code": "GV",
+  "period": "Vedic (Brāhmaṇa–Upaniṣad)",
+  "source": "Dharmamitra (date) + Renou (genre)"
+ },
+ "04_mahabharata-virataparva": {
+  "date_hi95": 390,
+  "date_lo95": -230,
+  "date_median": 80,
+  "genre": "Epic — Itihāsa (MBh)",
+  "genre_code": "GE",
+  "period": "Epic / early-Classical",
+  "source": "Dharmamitra (date) + Renou (genre)"
+ },
+ "04_rigveda": {
+  "date_hi95": -860,
+  "date_lo95": -1390,
+  "date_median": -1125,
+  "genre": "Veda — Saṃhitā",
+  "genre_code": "GV",
+  "period": "Ṛgvedic",
+  "source": "Dharmamitra (date) + Renou (genre)"
+ },
+ "05_atharvaveda": {
+  "date_hi95": -720,
+  "date_lo95": -1160,
+  "date_median": -940,
+  "genre": "Veda — Saṃhitā",
+  "genre_code": "GV",
+  "period": "Vedic (Brāhmaṇa–Upaniṣad)",
+  "source": "Dharmamitra (date) + Renou (genre)"
+ },
+ "05_mahabharata-udyogaparva": {
+  "date_hi95": 390,
+  "date_lo95": -230,
+  "date_median": 80,
+  "genre": "Epic — Itihāsa (MBh)",
+  "genre_code": "GE",
+  "period": "Epic / early-Classical",
+  "source": "Dharmamitra (date) + Renou (genre)"
+ },
+ "05_ramayana-sundarakanda": {
+  "date_hi95": 410,
+  "date_lo95": -250,
+  "date_median": 70,
+  "genre": "Epic — Itihāsa (Rām)",
+  "genre_code": "GE",
+  "period": "Epic / early-Classical",
+  "source": "Dharmamitra (date) + Renou (genre)"
+ },
+ "05_rigveda": {
+  "date_hi95": -860,
+  "date_lo95": -1390,
+  "date_median": -1125,
+  "genre": "Veda — Saṃhitā",
+  "genre_code": "GV",
+  "period": "Ṛgvedic",
+  "source": "Dharmamitra (date) + Renou (genre)"
+ },
+ "06_atharvaveda": {
+  "date_hi95": -720,
+  "date_lo95": -1160,
+  "date_median": -940,
+  "genre": "Veda — Saṃhitā",
+  "genre_code": "GV",
+  "period": "Vedic (Brāhmaṇa–Upaniṣad)",
+  "source": "Dharmamitra (date) + Renou (genre)"
+ },
+ "06_mahabharata-bhishmaparva": {
+  "date_hi95": 390,
+  "date_lo95": -230,
+  "date_median": 80,
+  "genre": "Epic — Itihāsa (MBh)",
+  "genre_code": "GE",
+  "period": "Epic / early-Classical",
+  "source": "Dharmamitra (date) + Renou (genre)"
+ },
+ "06_rigveda": {
+  "date_hi95": -860,
+  "date_lo95": -1390,
+  "date_median": -1125,
+  "genre": "Veda — Saṃhitā",
+  "genre_code": "GV",
+  "period": "Ṛgvedic",
+  "source": "Dharmamitra (date) + Renou (genre)"
+ },
+ "07_atharvaveda": {
+  "date_hi95": -720,
+  "date_lo95": -1160,
+  "date_median": -940,
+  "genre": "Veda — Saṃhitā",
+  "genre_code": "GV",
+  "period": "Vedic (Brāhmaṇa–Upaniṣad)",
+  "source": "Dharmamitra (date) + Renou (genre)"
+ },
+ "07_mahabharata-dronaparva": {
+  "date_hi95": 390,
+  "date_lo95": -230,
+  "date_median": 80,
+  "genre": "Epic — Itihāsa (MBh)",
+  "genre_code": "GE",
+  "period": "Epic / early-Classical",
+  "source": "Dharmamitra (date) + Renou (genre)"
+ },
+ "07_rigveda": {
+  "date_hi95": -860,
+  "date_lo95": -1390,
+  "date_median": -1125,
+  "genre": "Veda — Saṃhitā",
+  "genre_code": "GV",
+  "period": "Ṛgvedic",
+  "source": "Dharmamitra (date) + Renou (genre)"
+ },
+ "08_atharvaveda": {
+  "date_hi95": -720,
+  "date_lo95": -1160,
+  "date_median": -940,
+  "genre": "Veda — Saṃhitā",
+  "genre_code": "GV",
+  "period": "Vedic (Brāhmaṇa–Upaniṣad)",
+  "source": "Dharmamitra (date) + Renou (genre)"
+ },
+ "08_mahabharata-karnaparva": {
+  "date_hi95": 390,
+  "date_lo95": -230,
+  "date_median": 80,
+  "genre": "Epic — Itihāsa (MBh)",
+  "genre_code": "GE",
+  "period": "Epic / early-Classical",
+  "source": "Dharmamitra (date) + Renou (genre)"
+ },
+ "08_rigveda": {
+  "date_hi95": -860,
+  "date_lo95": -1390,
+  "date_median": -1125,
+  "genre": "Veda — Saṃhitā",
+  "genre_code": "GV",
+  "period": "Ṛgvedic",
+  "source": "Dharmamitra (date) + Renou (genre)"
+ },
+ "09_atharvaveda": {
+  "date_hi95": -720,
+  "date_lo95": -1160,
+  "date_median": -940,
+  "genre": "Veda — Saṃhitā",
+  "genre_code": "GV",
+  "period": "Vedic (Brāhmaṇa–Upaniṣad)",
+  "source": "Dharmamitra (date) + Renou (genre)"
+ },
+ "09_mahabharata-shalyaparva": {
+  "date_hi95": 390,
+  "date_lo95": -230,
+  "date_median": 80,
+  "genre": "Epic — Itihāsa (MBh)",
+  "genre_code": "GE",
+  "period": "Epic / early-Classical",
+  "source": "Dharmamitra (date) + Renou (genre)"
+ },
+ "09_rigveda": {
+  "date_hi95": -860,
+  "date_lo95": -1390,
+  "date_median": -1125,
+  "genre": "Veda — Saṃhitā",
+  "genre_code": "GV",
+  "period": "Ṛgvedic",
+  "source": "Dharmamitra (date) + Renou (genre)"
+ },
+ "10_atharvaveda": {
+  "date_hi95": -720,
+  "date_lo95": -1160,
+  "date_median": -940,
+  "genre": "Veda — Saṃhitā",
+  "genre_code": "GV",
+  "period": "Vedic (Brāhmaṇa–Upaniṣad)",
+  "source": "Dharmamitra (date) + Renou (genre)"
+ },
+ "10_mahabharata-sauptikaparva": {
+  "date_hi95": 390,
+  "date_lo95": -230,
+  "date_median": 80,
+  "genre": "Epic — Itihāsa (MBh)",
+  "genre_code": "GE",
+  "period": "Epic / early-Classical",
+  "source": "Dharmamitra (date) + Renou (genre)"
+ },
+ "10_rigveda": {
+  "date_hi95": -860,
+  "date_lo95": -1390,
+  "date_median": -1125,
+  "genre": "Veda — Saṃhitā",
+  "genre_code": "GV",
+  "period": "Ṛgvedic",
+  "source": "Dharmamitra (date) + Renou (genre)"
+ },
+ "11_atharvaveda": {
+  "date_hi95": -720,
+  "date_lo95": -1160,
+  "date_median": -940,
+  "genre": "Veda — Saṃhitā",
+  "genre_code": "GV",
+  "period": "Vedic (Brāhmaṇa–Upaniṣad)",
+  "source": "Dharmamitra (date) + Renou (genre)"
+ },
+ "11_mahabharata-striparva": {
+  "date_hi95": 390,
+  "date_lo95": -230,
+  "date_median": 80,
+  "genre": "Epic — Itihāsa (MBh)",
+  "genre_code": "GE",
+  "period": "Epic / early-Classical",
+  "source": "Dharmamitra (date) + Renou (genre)"
+ },
+ "12_atharvaveda": {
+  "date_hi95": -720,
+  "date_lo95": -1160,
+  "date_median": -940,
+  "genre": "Veda — Saṃhitā",
+  "genre_code": "GV",
+  "period": "Vedic (Brāhmaṇa–Upaniṣad)",
+  "source": "Dharmamitra (date) + Renou (genre)"
+ },
+ "12_mahabharata-shantiparva": {
+  "date_hi95": 390,
+  "date_lo95": -230,
+  "date_median": 80,
+  "genre": "Epic — Itihāsa (MBh)",
+  "genre_code": "GE",
+  "period": "Epic / early-Classical",
+  "source": "Dharmamitra (date) + Renou (genre)"
+ },
+ "13_atharvaveda": {
+  "date_hi95": -720,
+  "date_lo95": -1160,
+  "date_median": -940,
+  "genre": "Veda — Saṃhitā",
+  "genre_code": "GV",
+  "period": "Vedic (Brāhmaṇa–Upaniṣad)",
+  "source": "Dharmamitra (date) + Renou (genre)"
+ },
+ "13_mahabharata-anushasanaparva": {
+  "date_hi95": 390,
+  "date_lo95": -230,
+  "date_median": 80,
+  "genre": "Epic — Itihāsa (MBh)",
+  "genre_code": "GE",
+  "period": "Epic / early-Classical",
+  "source": "Dharmamitra (date) + Renou (genre)"
+ },
+ "14_atharvaveda": {
+  "date_hi95": -720,
+  "date_lo95": -1160,
+  "date_median": -940,
+  "genre": "Veda — Saṃhitā",
+  "genre_code": "GV",
+  "period": "Vedic (Brāhmaṇa–Upaniṣad)",
+  "source": "Dharmamitra (date) + Renou (genre)"
+ },
+ "14_mahabharata-ashvamedhikaparva": {
+  "date_hi95": 390,
+  "date_lo95": -230,
+  "date_median": 80,
+  "genre": "Epic — Itihāsa (MBh)",
+  "genre_code": "GE",
+  "period": "Epic / early-Classical",
+  "source": "Dharmamitra (date) + Renou (genre)"
+ },
+ "15_atharvaveda": {
+  "date_hi95": -720,
+  "date_lo95": -1160,
+  "date_median": -940,
+  "genre": "Veda — Saṃhitā",
+  "genre_code": "GV",
+  "period": "Vedic (Brāhmaṇa–Upaniṣad)",
+  "source": "Dharmamitra (date) + Renou (genre)"
+ },
+ "15_mahabharata-ashramavasikaparva": {
+  "date_hi95": 390,
+  "date_lo95": -230,
+  "date_median": 80,
+  "genre": "Epic — Itihāsa (MBh)",
+  "genre_code": "GE",
+  "period": "Epic / early-Classical",
+  "source": "Dharmamitra (date) + Renou (genre)"
+ },
+ "16_atharvaveda": {
+  "date_hi95": -720,
+  "date_lo95": -1160,
+  "date_median": -940,
+  "genre": "Veda — Saṃhitā",
+  "genre_code": "GV",
+  "period": "Vedic (Brāhmaṇa–Upaniṣad)",
+  "source": "Dharmamitra (date) + Renou (genre)"
+ },
+ "16_mahabharata-mausalaparva": {
+  "date_hi95": 390,
+  "date_lo95": -230,
+  "date_median": 80,
+  "genre": "Epic — Itihāsa (MBh)",
+  "genre_code": "GE",
+  "period": "Epic / early-Classical",
+  "source": "Dharmamitra (date) + Renou (genre)"
+ },
+ "17_atharvaveda": {
+  "date_hi95": -720,
+  "date_lo95": -1160,
+  "date_median": -940,
+  "genre": "Veda — Saṃhitā",
+  "genre_code": "GV",
+  "period": "Vedic (Brāhmaṇa–Upaniṣad)",
+  "source": "Dharmamitra (date) + Renou (genre)"
+ },
+ "17_mahabharata-mahaprasthanikaparva": {
+  "date_hi95": 390,
+  "date_lo95": -230,
+  "date_median": 80,
+  "genre": "Epic — Itihāsa (MBh)",
+  "genre_code": "GE",
+  "period": "Epic / early-Classical",
+  "source": "Dharmamitra (date) + Renou (genre)"
+ },
+ "18_atharvaveda": {
+  "date_hi95": -720,
+  "date_lo95": -1160,
+  "date_median": -940,
+  "genre": "Veda — Saṃhitā",
+  "genre_code": "GV",
+  "period": "Vedic (Brāhmaṇa–Upaniṣad)",
+  "source": "Dharmamitra (date) + Renou (genre)"
+ },
+ "18_mahabharata-svargarohanikaparva": {
+  "date_hi95": 390,
+  "date_lo95": -230,
+  "date_median": 80,
+  "genre": "Epic — Itihāsa (MBh)",
+  "genre_code": "GE",
+  "period": "Epic / early-Classical",
+  "source": "Dharmamitra (date) + Renou (genre)"
+ },
+ "19_atharvaveda": {
+  "date_hi95": -720,
+  "date_lo95": -1160,
+  "date_median": -940,
+  "genre": "Veda — Saṃhitā",
+  "genre_code": "GV",
+  "period": "Vedic (Brāhmaṇa–Upaniṣad)",
+  "source": "Dharmamitra (date) + Renou (genre)"
+ },
+ "ait-up": {
+  "date_hi95": -365,
+  "date_lo95": -600,
+  "date_median": -483,
+  "genre": "Veda — Upaniṣad",
+  "genre_code": "GV",
+  "period": "Vedic (Brāhmaṇa–Upaniṣad)",
+  "source": "Dharmamitra (date) + Renou (genre)"
+ },
+ "amaru-shataka": {
+  "date_hi95": 600,
+  "date_lo95": 350,
+  "date_median": 450,
+  "genre": "Kāvya — lyric",
+  "genre_code": "GK",
+  "period": "Classical",
+  "source": "Dharmamitra (date) + Renou (genre)"
+ },
+ "atma-up": {
+  "date_hi95": 700,
+  "date_lo95": 0,
+  "date_median": 300,
+  "genre": "Veda — Upaniṣad (later)",
+  "genre_code": "GV",
+  "period": "Epic / early-Classical",
+  "source": "Dharmamitra (date) + Renou (genre)"
+ },
+ "bhagavadgita-1788": {
+  "date_hi95": 350,
+  "date_lo95": 15,
+  "date_median": 200,
+  "genre": "Epic — Gītā",
+  "genre_code": "GE",
+  "period": "Epic / early-Classical",
+  "source": "Dharmamitra (date) + Renou (genre)"
+ },
+ "bhagavadgita-1909": {
+  "date_hi95": 350,
+  "date_lo95": 15,
+  "date_median": 200,
+  "genre": "Epic — Gītā",
+  "genre_code": "GE",
+  "period": "Epic / early-Classical",
+  "source": "Dharmamitra (date) + Renou (genre)"
+ },
+ "bhagavadgita-1914": {
+  "date_hi95": 350,
+  "date_lo95": 15,
+  "date_median": 200,
+  "genre": "Epic — Gītā",
+  "genre_code": "GE",
+  "period": "Epic / early-Classical",
+  "source": "Dharmamitra (date) + Renou (genre)"
+ },
+ "bhagavadgita-burba": {
+  "date_hi95": 350,
+  "date_lo95": 15,
+  "date_median": 200,
+  "genre": "Epic — Gītā",
+  "genre_code": "GE",
+  "period": "Epic / early-Classical",
+  "source": "Dharmamitra (date) + Renou (genre)"
+ },
+ "bhagavadgita-erman": {
+  "date_hi95": 350,
+  "date_lo95": 15,
+  "date_median": 200,
+  "genre": "Epic — Gītā",
+  "genre_code": "GE",
+  "period": "Epic / early-Classical",
+  "source": "Dharmamitra (date) + Renou (genre)"
+ },
+ "bhagavadgita-prabhupada": {
+  "date_hi95": 350,
+  "date_lo95": 15,
+  "date_median": 200,
+  "genre": "Epic — Gītā",
+  "genre_code": "GE",
+  "period": "Epic / early-Classical",
+  "source": "Dharmamitra (date) + Renou (genre)"
+ },
+ "bhagavadgita-radha": {
+  "date_hi95": 350,
+  "date_lo95": 15,
+  "date_median": 200,
+  "genre": "Epic — Gītā",
+  "genre_code": "GE",
+  "period": "Epic / early-Classical",
+  "source": "Dharmamitra (date) + Renou (genre)"
+ },
+ "bhagavadgita-sementsov": {
+  "date_hi95": 350,
+  "date_lo95": 15,
+  "date_median": 200,
+  "genre": "Epic — Gītā",
+  "genre_code": "GE",
+  "period": "Epic / early-Classical",
+  "source": "Dharmamitra (date) + Renou (genre)"
+ },
+ "bhagavadgita-sharma": {
+  "date_hi95": 350,
+  "date_lo95": 15,
+  "date_median": 200,
+  "genre": "Epic — Gītā",
+  "genre_code": "GE",
+  "period": "Epic / early-Classical",
+  "source": "Dharmamitra (date) + Renou (genre)"
+ },
+ "bhagavadgita-smirnov": {
+  "date_hi95": 350,
+  "date_lo95": 15,
+  "date_median": 200,
+  "genre": "Epic — Gītā",
+  "genre_code": "GE",
+  "period": "Epic / early-Classical",
+  "source": "Dharmamitra (date) + Renou (genre)"
+ },
+ "bhagavadgity": {
+  "date_hi95": 350,
+  "date_lo95": 15,
+  "date_median": 200,
+  "genre": "Epic — Gītā",
+  "genre_code": "GE",
+  "period": "Epic / early-Classical",
+  "source": "Dharmamitra (date) + Renou (genre)"
+ },
+ "br-up": {
+  "date_hi95": -460,
+  "date_lo95": -700,
+  "date_median": -585,
+  "genre": "Veda — Upaniṣad",
+  "genre_code": "GV",
+  "period": "Vedic (Brāhmaṇa–Upaniṣad)",
+  "source": "Dharmamitra (date) + Renou (genre)"
+ },
+ "brb-up": {
+  "date_hi95": -460,
+  "date_lo95": -700,
+  "date_median": -585,
+  "genre": "Veda — Upaniṣad",
+  "genre_code": "GV",
+  "period": "Vedic (Brāhmaṇa–Upaniṣad)",
+  "source": "Dharmamitra (date) + Renou (genre)"
+ },
+ "buddhacharita": {
+  "date_hi95": 168,
+  "date_lo95": 70,
+  "date_median": 118,
+  "genre": "Kāvya — Buddhist mahākāvya",
+  "genre_code": "GK",
+  "period": "Epic / early-Classical",
+  "source": "Dharmamitra (date) + Renou (genre)"
+ },
+ "buddhacharita-balmont": {
+  "date_hi95": 168,
+  "date_lo95": 70,
+  "date_median": 118,
+  "genre": "Kāvya — Buddhist mahākāvya",
+  "genre_code": "GK",
+  "period": "Epic / early-Classical",
+  "source": "Dharmamitra (date) + Renou (genre)"
+ },
+ "ch-up": {
+  "date_hi95": -460,
+  "date_lo95": -700,
+  "date_median": -585,
+  "genre": "Veda — Upaniṣad",
+  "genre_code": "GV",
+  "period": "Vedic (Brāhmaṇa–Upaniṣad)",
+  "source": "Dharmamitra (date) + Renou (genre)"
+ },
+ "chag-up": {
+  "date_hi95": -460,
+  "date_lo95": -700,
+  "date_median": -585,
+  "genre": "Veda — Upaniṣad",
+  "genre_code": "GV",
+  "period": "Vedic (Brāhmaṇa–Upaniṣad)",
+  "source": "Dharmamitra (date) + Renou (genre)"
+ },
+ "chaurapanchashika": {
+  "date_hi95": 600,
+  "date_lo95": 350,
+  "date_median": 450,
+  "genre": "Kāvya — lyric",
+  "genre_code": "GK",
+  "period": "Classical",
+  "source": "Dharmamitra (date) + Renou (genre)"
+ },
+ "devi-gita": {
+  "date_hi95": 1200,
+  "date_lo95": 700,
+  "date_median": 950,
+  "genre": "Āgama / Tantra (Śaiva)",
+  "genre_code": "GR",
+  "period": "Classical",
+  "source": "Dharmamitra (date) + Renou (genre)"
+ },
+ "erman-temkin": {
+  "date_hi95": 400,
+  "date_lo95": -200,
+  "date_median": 200,
+  "genre": "Epic — retelling",
+  "genre_code": "GE",
+  "period": "Epic / early-Classical",
+  "source": "Dharmamitra (date) + Renou (genre)"
+ },
+ "gitagovinda": {
+  "date_hi95": 1106,
+  "date_lo95": 988,
+  "date_median": 1048,
+  "genre": "Kāvya — lyric (Jayadeva)",
+  "genre_code": "GK",
+  "period": "Medieval",
+  "source": "Dharmamitra (date) + Renou (genre)"
+ },
+ "gitartha-samgraha_yamunacharya": {
+  "date_hi95": 1000,
+  "date_lo95": 900,
+  "date_median": 950,
+  "genre": "Śāstra — Commentary (Yāmuna)",
+  "genre_code": "GSP",
+  "period": "Classical",
+  "source": "Dharmamitra (date) + Renou (genre)"
+ },
+ "gitarthasamgraha-abhinavagupta": {
+  "date_hi95": 1050,
+  "date_lo95": 950,
+  "date_median": 1000,
+  "genre": "Śāstra — Commentary (Abhinavagupta)",
+  "genre_code": "GSP",
+  "period": "Medieval",
+  "source": "Dharmamitra (date) + Renou (genre)"
+ },
+ "hatha-yoga-pradipika": {
+  "date_hi95": 1490,
+  "date_lo95": 1260,
+  "date_median": 1374,
+  "genre": "Śāstra — Yoga (Haṭha)",
+  "genre_code": "GS",
+  "period": "Medieval",
+  "source": "Dharmamitra (date) + Renou (genre)"
+ },
+ "isha-up": {
+  "date_hi95": -10,
+  "date_lo95": -470,
+  "date_median": -245,
+  "genre": "Veda — Upaniṣad",
+  "genre_code": "GV",
+  "period": "Epic / early-Classical",
+  "source": "Dharmamitra (date) + Renou (genre)"
+ },
+ "jab-up": {
+  "date_hi95": 700,
+  "date_lo95": 0,
+  "date_median": 300,
+  "genre": "Veda — Upaniṣad (later)",
+  "genre_code": "GV",
+  "period": "Epic / early-Classical",
+  "source": "Dharmamitra (date) + Renou (genre)"
+ },
+ "jabala-up": {
+  "date_hi95": 700,
+  "date_lo95": 0,
+  "date_median": 300,
+  "genre": "Veda — Upaniṣad (later)",
+  "genre_code": "GV",
+  "period": "Epic / early-Classical",
+  "source": "Dharmamitra (date) + Renou (genre)"
+ },
+ "kai-up": {
+  "date_hi95": 700,
+  "date_lo95": 0,
+  "date_median": 300,
+  "genre": "Veda — Upaniṣad (later)",
+  "genre_code": "GV",
+  "period": "Epic / early-Classical",
+  "source": "Dharmamitra (date) + Renou (genre)"
+ },
+ "kama-sutra": {
+  "date_hi95": 519,
+  "date_lo95": 290,
+  "date_median": 388,
+  "genre": "Śāstra — Kāma / kathā",
+  "genre_code": "GS",
+  "period": "Epic / early-Classical",
+  "source": "Dharmamitra (date) + Renou (genre)"
+ },
+ "kan-up": {
+  "date_hi95": 700,
+  "date_lo95": 0,
+  "date_median": 300,
+  "genre": "Veda — Upaniṣad (later)",
+  "genre_code": "GV",
+  "period": "Epic / early-Classical",
+  "source": "Dharmamitra (date) + Renou (genre)"
+ },
+ "kat-up": {
+  "date_hi95": -51,
+  "date_lo95": -498,
+  "date_median": -273,
+  "genre": "Veda — Upaniṣad",
+  "genre_code": "GV",
+  "period": "Epic / early-Classical",
+  "source": "Dharmamitra (date) + Renou (genre)"
+ },
+ "kau-up": {
+  "date_hi95": 700,
+  "date_lo95": 0,
+  "date_median": 300,
+  "genre": "Veda — Upaniṣad (later)",
+  "genre_code": "GV",
+  "period": "Epic / early-Classical",
+  "source": "Dharmamitra (date) + Renou (genre)"
+ },
+ "kena-up": {
+  "date_hi95": -30,
+  "date_lo95": -470,
+  "date_median": -250,
+  "genre": "Veda — Upaniṣad",
+  "genre_code": "GV",
+  "period": "Epic / early-Classical",
+  "source": "Dharmamitra (date) + Renou (genre)"
+ },
+ "kumarasambhava": {
+  "date_hi95": 468,
+  "date_lo95": 370,
+  "date_median": 420,
+  "genre": "Kāvya — Mahākāvya (Kālidāsa)",
+  "genre_code": "GK",
+  "period": "Classical",
+  "source": "Dharmamitra (date) + Renou (genre)"
+ },
+ "mai-up": {
+  "date_hi95": 300,
+  "date_lo95": -210,
+  "date_median": 50,
+  "genre": "Veda — Upaniṣad",
+  "genre_code": "GV",
+  "period": "Epic / early-Classical",
+  "source": "Dharmamitra (date) + Renou (genre)"
+ },
+ "man-up": {
+  "date_hi95": 300,
+  "date_lo95": -210,
+  "date_median": 50,
+  "genre": "Veda — Upaniṣad",
+  "genre_code": "GV",
+  "period": "Epic / early-Classical",
+  "source": "Dharmamitra (date) + Renou (genre)"
+ },
+ "manavadharmashastra": {
+  "date_hi95": 350,
+  "date_lo95": -100,
+  "date_median": 150,
+  "genre": "Śāstra — Dharma (Manu)",
+  "genre_code": "GSD",
+  "period": "Epic / early-Classical",
+  "source": "Dharmamitra (date) + Renou (genre)"
+ },
+ "megha-duta": {
+  "date_hi95": 468,
+  "date_lo95": 370,
+  "date_median": 420,
+  "genre": "Kāvya — Mahākāvya (Kālidāsa)",
+  "genre_code": "GK",
+  "period": "Classical",
+  "source": "Dharmamitra (date) + Renou (genre)"
+ },
+ "mnar-up": {
+  "date_hi95": 700,
+  "date_lo95": 0,
+  "date_median": 300,
+  "genre": "Veda — Upaniṣad (later)",
+  "genre_code": "GV",
+  "period": "Epic / early-Classical",
+  "source": "Dharmamitra (date) + Renou (genre)"
+ },
+ "mun-up": {
+  "date_hi95": 80,
+  "date_lo95": -380,
+  "date_median": -150,
+  "genre": "Veda — Upaniṣad",
+  "genre_code": "GV",
+  "period": "Epic / early-Classical",
+  "source": "Dharmamitra (date) + Renou (genre)"
+ },
+ "nr-up": {
+  "date_hi95": 700,
+  "date_lo95": 0,
+  "date_median": 300,
+  "genre": "Veda — Upaniṣad (later)",
+  "genre_code": "GV",
+  "period": "Epic / early-Classical",
+  "source": "Dharmamitra (date) + Renou (genre)"
+ },
+ "nyaya-bhashya": {
+  "date_hi95": 600,
+  "date_lo95": 300,
+  "date_median": 450,
+  "genre": "Śāstra — Darśana (Nyāya)",
+  "genre_code": "GSP",
+  "period": "Classical",
+  "source": "Dharmamitra (date) + Renou (genre)"
+ },
+ "pai-up": {
+  "date_hi95": 118,
+  "date_lo95": -227,
+  "date_median": -54,
+  "genre": "Veda — Upaniṣad",
+  "genre_code": "GV",
+  "period": "Epic / early-Classical",
+  "source": "Dharmamitra (date) + Renou (genre)"
+ },
+ "paramarthasara-abhinavagupta": {
+  "date_hi95": 1200,
+  "date_lo95": 700,
+  "date_median": 950,
+  "genre": "Āgama / Tantra (Śaiva)",
+  "genre_code": "GR",
+  "period": "Classical",
+  "source": "Dharmamitra (date) + Renou (genre)"
+ },
+ "pr-up": {
+  "date_hi95": 118,
+  "date_lo95": -227,
+  "date_median": -54,
+  "genre": "Veda — Upaniṣad",
+  "genre_code": "GV",
+  "period": "Epic / early-Classical",
+  "source": "Dharmamitra (date) + Renou (genre)"
+ },
+ "pratyabhijna-hridaya_kshemaraja": {
+  "date_hi95": 1200,
+  "date_lo95": 700,
+  "date_median": 950,
+  "genre": "Āgama / Tantra (Śaiva)",
+  "genre_code": "GR",
+  "period": "Classical",
+  "source": "Dharmamitra (date) + Renou (genre)"
+ },
+ "raghuvamsha": {
+  "date_hi95": 468,
+  "date_lo95": 370,
+  "date_median": 420,
+  "genre": "Kāvya — Mahākāvya (Kālidāsa)",
+  "genre_code": "GK",
+  "period": "Classical",
+  "source": "Dharmamitra (date) + Renou (genre)"
+ },
+ "ramanuja_gitabhashya": {
+  "date_hi95": 350,
+  "date_lo95": -100,
+  "date_median": 150,
+  "genre": "Śāstra — Dharma (Manu)",
+  "genre_code": "GSD",
+  "period": "Epic / early-Classical",
+  "source": "Dharmamitra (date) + Renou (genre)"
+ },
+ "rampt-up": {
+  "date_hi95": 700,
+  "date_lo95": 0,
+  "date_median": 300,
+  "genre": "Veda — Upaniṣad (later)",
+  "genre_code": "GV",
+  "period": "Epic / early-Classical",
+  "source": "Dharmamitra (date) + Renou (genre)"
+ },
+ "sankhya-karika": {
+  "date_hi95": 520,
+  "date_lo95": 200,
+  "date_median": 370,
+  "genre": "Śāstra — Darśana (Sāṃkhya)",
+  "genre_code": "GSP",
+  "period": "Epic / early-Classical",
+  "source": "Dharmamitra (date) + Renou (genre)"
+ },
+ "shatakatrayam": {
+  "date_hi95": 670,
+  "date_lo95": 490,
+  "date_median": 550,
+  "genre": "Kāvya — gnomic (śataka)",
+  "genre_code": "GK",
+  "period": "Classical",
+  "source": "Dharmamitra (date) + Renou (genre)"
+ },
+ "shatakatrayam-serebryakov": {
+  "date_hi95": 670,
+  "date_lo95": 490,
+  "date_median": 550,
+  "genre": "Kāvya — gnomic (śataka)",
+  "genre_code": "GK",
+  "period": "Classical",
+  "source": "Dharmamitra (date) + Renou (genre)"
+ },
+ "shiva-sutry_sharma": {
+  "date_hi95": 1200,
+  "date_lo95": 700,
+  "date_median": 950,
+  "genre": "Āgama / Tantra (Śaiva)",
+  "genre_code": "GR",
+  "period": "Classical",
+  "source": "Dharmamitra (date) + Renou (genre)"
+ },
+ "shukasaptati": {
+  "date_hi95": 519,
+  "date_lo95": 290,
+  "date_median": 388,
+  "genre": "Śāstra — Kāma / kathā",
+  "genre_code": "GS",
+  "period": "Epic / early-Classical",
+  "source": "Dharmamitra (date) + Renou (genre)"
+ },
+ "shv-up": {
+  "date_hi95": -20,
+  "date_lo95": -470,
+  "date_median": -244,
+  "genre": "Veda — Upaniṣad",
+  "genre_code": "GV",
+  "period": "Epic / early-Classical",
+  "source": "Dharmamitra (date) + Renou (genre)"
+ },
+ "sub-up": {
+  "date_hi95": 700,
+  "date_lo95": 0,
+  "date_median": 300,
+  "genre": "Veda — Upaniṣad (later)",
+  "genre_code": "GV",
+  "period": "Epic / early-Classical",
+  "source": "Dharmamitra (date) + Renou (genre)"
+ },
+ "syrkin_tom_1_utf": {
+  "date_hi95": 300,
+  "date_lo95": -500,
+  "date_median": -100,
+  "genre": "Veda — Upaniṣad (Syrkin tr.)",
+  "genre_code": "GV",
+  "period": "Epic / early-Classical",
+  "source": "Dharmamitra (date) + Renou (genre)"
+ },
+ "tai-up": {
+  "date_hi95": 700,
+  "date_lo95": 0,
+  "date_median": 300,
+  "genre": "Veda — Upaniṣad (later)",
+  "genre_code": "GV",
+  "period": "Epic / early-Classical",
+  "source": "Dharmamitra (date) + Renou (genre)"
+ },
+ "vajs-up": {
+  "date_hi95": 700,
+  "date_lo95": 0,
+  "date_median": 300,
+  "genre": "Veda — Upaniṣad (later)",
+  "genre_code": "GV",
+  "period": "Epic / early-Classical",
+  "source": "Dharmamitra (date) + Renou (genre)"
+ },
+ "vedanga_jyotisha": {
+  "date_hi95": 519,
+  "date_lo95": 290,
+  "date_median": 403,
+  "genre": "Śāstra — Jyotiṣa",
+  "genre_code": "GS",
+  "period": "Classical",
+  "source": "Dharmamitra (date) + Renou (genre)"
+ },
+ "vedartha-samgraha_ramanuja": {
+  "date_hi95": 350,
+  "date_lo95": -100,
+  "date_median": 150,
+  "genre": "Śāstra — Dharma (Manu)",
+  "genre_code": "GSD",
+  "period": "Epic / early-Classical",
+  "source": "Dharmamitra (date) + Renou (genre)"
+ },
+ "vishnu-purana": {
+  "date_hi95": 700,
+  "date_lo95": 350,
+  "date_median": 450,
+  "genre": "Purāṇa",
+  "genre_code": "GP",
+  "period": "Classical",
+  "source": "Dharmamitra (date) + Renou (genre)"
+ },
+ "yoga-sutry": {
+  "date_hi95": 330,
+  "date_lo95": 95,
+  "date_median": 210,
+  "genre": "Śāstra — Darśana (Yoga-sūtra)",
+  "genre_code": "GSP",
+  "period": "Epic / early-Classical",
+  "source": "Dharmamitra (date) + Renou (genre)"
+ },
+ "yoga-sutry_sharma": {
+  "date_hi95": 330,
+  "date_lo95": 95,
+  "date_median": 210,
+  "genre": "Śāstra — Darśana (Yoga-sūtra)",
+  "genre_code": "GSP",
+  "period": "Epic / early-Classical",
+  "source": "Dharmamitra (date) + Renou (genre)"
+ },
+ "yoga-sutry_vyasa-bhashya": {
+  "date_hi95": 330,
+  "date_lo95": 95,
+  "date_median": 210,
+  "genre": "Śāstra — Darśana (Yoga-sūtra)",
+  "genre_code": "GSP",
+  "period": "Epic / early-Classical",
+  "source": "Dharmamitra (date) + Renou (genre)"
+ },
+ "yoga-sutry_zagumennov": {
+  "date_hi95": 330,
+  "date_lo95": 95,
+  "date_median": 210,
+  "genre": "Śāstra — Darśana (Yoga-sūtra)",
+  "genre_code": "GSP",
+  "period": "Epic / early-Classical",
+  "source": "Dharmamitra (date) + Renou (genre)"
+ },
+ "yotat-up": {
+  "date_hi95": 700,
+  "date_lo95": 0,
+  "date_median": 300,
+  "genre": "Veda — Upaniṣad (later)",
+  "genre_code": "GV",
+  "period": "Epic / early-Classical",
+  "source": "Dharmamitra (date) + Renou (genre)"
+ }
+}
