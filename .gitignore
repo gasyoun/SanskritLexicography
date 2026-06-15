@@ -6,3 +6,7 @@
 # RussianTranslation/src/build_src.py (some sources are modern/copyright).
 # The build script + README are committed; the data is regenerated locally.
 RussianTranslation/src/*.jsonl
+
+# Python bytecode
+__pycache__/
+*.pyc

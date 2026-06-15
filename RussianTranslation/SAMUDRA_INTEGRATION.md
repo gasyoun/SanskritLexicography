@@ -153,6 +153,39 @@ Design constraints, to keep it honest:
 - **Non-blocking.** Like the dictionary signal, the corpus signal annotates and
   routes doubtful cards to the editor; it never withholds a card.
 
+### 2.3 Built: `corpus_gate.py`, measured coverage & threshold tuning (2026-06-15)
+
+The deterministic half of the gate is built — [src/corpus_gate.py](src/corpus_gate.py)
+does the SLP1 join over the five dictionaries, the corpus query (reusing
+SamudraManthanam's FTS, `#sa`→`#ru` verse alignment), assembles the
+`4_korpus_proverka.txt` input, and offers a cheap heuristic pre-check. The
+dictionary index, the join and the corpus query all run; the LLM verdict is the
+remaining, not-yet-run step.
+
+**Measured coverage over all 106 085 PWG headwords** (key1; random sub-sample for
+the slow corpus query, fixed seed for reproducibility):
+
+| Signal | Source(s) | Coverage |
+|--------|-----------|----------|
+| (1) correctness | any of Кочергина / Фриш / Кнауэр / Смирнов | **16.4 %** (Кочергина alone 14.4 %, Фриш 4.0 %, Кнауэр 2.7 %, Смирнов 1.7 %) |
+| (2) reference | KOW | **8.0 %** |
+| corpus (soft) | parallel corpus, ≥1 aligned verse | **≈14–15 %** (random sample; the corpus query is sampling-noisy) |
+
+So **the dominant outcome is `no-check`** (~84 % of headwords have no independent
+gloss) — exactly why the gate is a non-blocking annotator, not a filter. Coverage
+is a reported metric, never hidden as passes.
+
+**Threshold tuning (`tune`).** Calibrating the heuristic against inter-dictionary
+agreement: where two independent dictionaries both cover a headword, their Russian
+head-terms overlap only at **low** token levels (only ~5 % of dictionary pairs
+reach Jaccard ≥ 0.4 — synonyms and paraphrase dominate). The consequence is
+decisive: **a token-overlap threshold cannot detect divergence without massive
+false positives.** So `corpus_gate.py` uses the heuristic only to auto-**pass**
+high-overlap cases (`THRESHOLD = 0.5`, head-sense only) and routes everything else
+to the synonym-aware LLM verdict (`review`) — it never calls `divergence` itself.
+Sense-granularity: `HEAD_SENSE_ONLY = True` (compare sense 1, the text before the
+first `;`), matching the gate's head-sense rule.
+
 ---
 
 ## 3. `mw_ru` — validating and citing the completed Russian Monier-Williams
@@ -236,7 +269,9 @@ the build phase; the contract above is what the three projects depend on.
   domain**; Кочергина (1987, koch), Фриш (1956, fri) and Смирнов (1955–1989,
   smirnov) are **modern / under copyright** — another reason the extracted data
   stays local-only and is treated as a sverka (cross-check) input, not a
-  redistributed corpus.
+  redistributed corpus. Кочергина copyright **confirmed**: В.А. Кочергина
+  (1924–2018), so under Russian copyright (author's life + 70 years) through
+  ~2088 — gitignore is the correct call.
 - **Corpus stays in SamudraManthanam.** The parallel corpus and its databases
   are queried in place; only the specific citations a card needs are pulled into
   this repository, keeping the redistribution surface minimal.
@@ -251,11 +286,11 @@ the build phase; the contract above is what the three projects depend on.
 extracted from SamudraManthanam into [src/](src/) via
 [src/build_src.py](src/build_src.py) (57 640 entries). Data gitignored.
 
-**Phase 1 — wire the dictionary signal into the `pwg_ru` gate.** Feed koch /
-kna / fri / smirnov as independent correctness authorities and kow as the
-reference-agreement signal into the stage-4 annotator
-([pwg_ru_prompts/4_korpus_proverka.txt](pwg_ru_prompts/4_korpus_proverka.txt)).
-Ready to run once the `pwg_ru` run is launched.
+**Phase 1 — dictionary-signal join. BUILT (2026-06-15).**
+[src/corpus_gate.py](src/corpus_gate.py) feeds koch / kna / fri / smirnov
+(correctness) and kow (reference) into the stage-4 input
+([pwg_ru_prompts/4_korpus_proverka.txt](pwg_ru_prompts/4_korpus_proverka.txt));
+coverage measured (§2.3). The LLM verdict runs when the `pwg_ru` run launches.
 
 **Phase 2 — shared corpus query interface (§5).** Build the `cite(slp1_key)`
 shim over SamudraManthanam's `corpus.db` / `dict.db`, reusing its morphological
@@ -284,6 +319,6 @@ interface.
    how many citations to keep per card.
 4. **`dic_mw` / `warnemyr` extraction.** A separate, gitignored extraction step
    analogous to Phase 0, scoped to the mw_ru and WhitneyRoots consumers.
-5. **Coverage reporting.** Per-signal coverage (dictionary vs corpus) is a
-   measured metric at ingest — no numbers are assumed here; they are filled in
-   once the `pwg_ru` run executes.
+5. **Coverage reporting.** Measured 2026-06-15 (§2.3): correctness 16.4 %, KOW
+   8.0 %, corpus ≈14–15 % (sampling-noisy). The LLM verdict distribution still
+   awaits the `pwg_ru` run.
