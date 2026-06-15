@@ -6,6 +6,19 @@ This repository does not currently publish versioned release notes. Entries use
 dated maintenance snapshots; keep upcoming work under [Unreleased] until it is
 ready for a dated entry.
 
+## [1.1.1] - 2026-06-15
+
+### Fixed
+- `RussianTranslation/src/corpus_gate.py` — the stage-4 corpus query returned 0
+  aligned verses for common headwords (agni, rāma, kṛṣṇa, deva). `corpus_lines`
+  (FTS) also holds dictionary rows (no `#sa`/`#ru` suffix); the query did
+  `MATCH ? LIMIT 400` with no `#sa` filter in SQL, so for high-frequency words the
+  first 400 matches were all dictionary rows and the Python `#sa` filter discarded
+  every one. Pushed the `#sa` filter into SQL so `LIMIT` captures Sanskrit verse
+  lines. Found while validating the gate end-to-end (lookup/card/coverage/tune all
+  run; 5 dictionaries = 57,640 entries; coverage on a 3000-key sample: independent
+  correctness 20.4%, KOW reference 39.8%, corpus 20.7%).
+
 ## [1.1.0] - 2026-06-14
 
 ### Added
