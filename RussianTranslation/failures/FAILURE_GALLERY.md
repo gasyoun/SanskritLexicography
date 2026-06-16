@@ -148,3 +148,29 @@ per-sense `publishable` flag + CC BY-SA 4.0; `review_status` state machine +
 
 **Good.** Every card is reproducible and rights-aware; 11 flagged cards sit in a
 severity-sorted human queue instead of going silently to print.
+
+---
+
+## F9 · The auditor cried wolf — verify before you purge — `2026-06-16`
+
+**Bad (the alarm).** At 95% the auditor flagged `shukasaptati` (18) then
+`01_atharvaveda` (10) as placeholder-leak — the same signature as the F1
+fabrication. The tempting move: purge them.
+
+**Why it was a FALSE POSITIVE.** All 28 were `kind=commentary` rows with *correct*
+Russian (`brahmā→Брахма`, `śarman→защиту`). `_audit.py`'s leak check asked "does
+the group's `seg=ru` carry Cyrillic?" — but a commentary row is legitimate when
+the group has a Cyrillic commentary, or (AV 21.4) a real `seg=ru` translation
+while the `comm1` is just a cross-reference (`"4c-d. = I» 20…"`). The data was
+clean; the *check* was too strict.
+
+**Fix.** Make the leak rule the true fabrication signal: a row leaks only if its
+group has **no Cyrillic source segment at all** (neither `ru` nor `comm`).
+
+**Good.** Audit CLEAN; no legitimate row purged.
+
+**Lesson.** A QA signal is a hypothesis, not a verdict — reproduce the specific
+rows and read the source before destroying data. (A minor legacy item remains: a
+few pre-fix commentary rows were aligned against non-Cyrillic reference notes and
+mis-tagged; the Russian is the verse's, harmless, queued for the post-build
+re-stamp.)

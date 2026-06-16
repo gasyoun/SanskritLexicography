@@ -26,11 +26,15 @@ def has_cyr(s):
 
 
 _tg = {}
-def translated_groups(work):
-    """Groups whose source seg=ru carries Cyrillic (a real translation)."""
+def cyr_groups(work):
+    """(ru_groups, comm_groups): groups with a Cyrillic seg=ru, and groups with a
+    Cyrillic seg=comm*. A translation row is legit only if its group is in
+    ru_groups; a COMMENTARY row is legit if its group is in comm_groups — the
+    verse translation may be an untranslated placeholder while a commentary note
+    is in Russian (e.g. a proper-name gloss). Kind-aware to avoid false leaks."""
     if work in _tg:
         return _tg[work]
-    s = set()
+    ru, comm = set(), set()
     f = os.path.join(SM, work + '.jsonl')
     if os.path.exists(f):
         for line in open(f, encoding='utf-8'):
@@ -38,10 +42,15 @@ def translated_groups(work):
                 e = json.loads(line)
             except Exception:
                 continue
-            if e.get('seg') == 'ru' and not e.get('deleted') and has_cyr(e.get('text')):
-                s.add(e.get('group'))
-    _tg[work] = s
-    return s
+            if e.get('deleted') or not has_cyr(e.get('text')):
+                continue
+            seg = e.get('seg', '')
+            if seg == 'ru':
+                ru.add(e.get('group'))
+            elif seg.startswith('comm'):
+                comm.add(e.get('group'))
+    _tg[work] = (ru, comm)
+    return _tg[work]
 
 
 def main():
@@ -63,7 +72,11 @@ def main():
         rows[w] += 1; groups[w].add(g)
         ru = (r.get('ru') or '').strip(); sa = (r.get('sa') or '').strip()
         contam = False
-        if g not in translated_groups(w):
+        ru_g, comm_g = cyr_groups(w)
+        # fabrication = a row whose group has NO Cyrillic source at all (the
+        # placeholder case). A group with a real seg=ru OR a Cyrillic commentary
+        # is genuinely translated, so its rows are not leaks.
+        if g not in ru_g and g not in comm_g:
             leak[w] += 1; contam = True
         if not has_cyr(ru): nocyr += 1; contam = True
         if ru == sa or ru in REJECT_RU: rusa += 1; contam = True
