@@ -32,9 +32,9 @@ standards & interoperability · editorial & print production.
 
 ## Prioritized roadmap
 
-### Priority 1 — now (cheap, load-bearing, unblock everything)
+### Priority 1 — now (cheap, load-bearing, unblock everything) — ✅ ALL SHIPPED 2026-06-16
 
-1. **Freeze full provenance onto the published card** — *FAIR R1.2; W3C PROV-O.*
+1. **Freeze full provenance onto the published card** — ✅ *shipped.* — *FAIR R1.2; W3C PROV-O.*
    The LLM-translated card records no `model_id`, prompt hash, `pwg.txt` commit, or
    timestamp, and never persists the assembled attested senses → it cannot be
    reproduced or bisected. Stamp `model_id`, `prompt_sha`, `pwg_src_commit`,
@@ -43,8 +43,9 @@ standards & interoperability · editorial & print production.
    SamudraManthanam build id so corpus citations resolve to a fixed corpus version.
    *(effort S)*
 
-2. **Human-review state machine + editor-queue emitter** — *Human-in-the-loop QA;
-   ELEXIS/Lexonomy; Fleiss/Cohen κ.* An LLM verdict cannot be final for a printed
+2. **Human-review state machine + editor-queue emitter** — ✅ *scaffold shipped
+   (`run_batch.py review` → `_review_queue.jsonl`; `review_status` field; κ pool TODO).* —
+   *Human-in-the-loop QA; ELEXIS/Lexonomy; Fleiss/Cohen κ.* An LLM verdict cannot be final for a printed
    edition, but the store has no `review_status`/`reviewer`/sign-off and nothing
    emits a worklist. Add the state field (`mt_translated → judged → needs_review →
    human_reviewed → approved`), a `run_batch.py review` mode emitting a sorted
@@ -52,8 +53,10 @@ standards & interoperability · editorial & print production.
    gate the exporter on `human_reviewed`. Double-key a stratified sample and report κ.
    *(effort M)*
 
-3. **Per-sense rights enforcement + a dataset licence** — *FAIR R1.1; Creative
-   Commons; ELEXIS rights-metadata.* [assemble.py](src/assemble.py)/[run_batch.py](src/run_batch.py)
+3. **Per-sense rights enforcement + a dataset licence** — ✅ *shipped
+   (`corpus_gate.RIGHTS`/`publishable()`; per-sense `publishable` flag in
+   `assemble.py`; [DATA_LICENSE.md](DATA_LICENSE.md) = CC BY-SA 4.0).* —
+   *FAIR R1.1; Creative Commons; ELEXIS rights-metadata.* [assemble.py](src/assemble.py)/[run_batch.py](src/run_batch.py)
    write modern copyrighted glosses (Kochergina, Smirnov, Frisch) verbatim into the
    card body with no rights filter, and only a software MIT licence exists. Add a
    `publishable` boolean per sense (PD kow/kna → true; modern koch/smirnov/fri →
