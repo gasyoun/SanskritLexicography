@@ -7,6 +7,12 @@ ALREADY-DONE / MISTAKEN) so the roadmap proposes only what is genuinely missing.
 Lenses: FAIR/DH data · bilingual-lexicography theory · corpus-NLP evaluation ·
 standards & interoperability · editorial & print production.
 
+> **Theoretical backbone:** for a Russian-*target* dictionary the native and more
+> exacting tradition is the Moscow Semantic School of **Apresjan** —
+> see [APRESJAN.md](APRESJAN.md), which grounds recs 4/6/7 in *лексикографический
+> портрет*, *лексикографические типы*, *регулярная многозначность*, and
+> near-synonym discrimination, and adds three concrete proposals.
+
 ## What is already strong (keep it)
 
 - **Lossless masker with a per-card round-trip assertion** ([src/pwg_mask.py](src/pwg_mask.py),
