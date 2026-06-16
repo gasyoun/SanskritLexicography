@@ -1,6 +1,6 @@
 import json, os, sys, time
 sys.stdout.reconfigure(encoding='utf-8')
-TOTAL = 78139                    # verse-groups (sa+ru) across the whole corpus
+TOTAL = 58897                    # GENUINELY-translated verse-groups (Cyrillic ru; placeholders excluded)
 COST_PER_ALIGN = 6.0 / 133838   # empirical DeepSeek $/alignment
 P = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'corpus_lexicon.jsonl')
 

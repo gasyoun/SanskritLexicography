@@ -95,8 +95,13 @@ def stratum_for(name):
     return None
 
 
+_CYR = re.compile('[Ѐ-ӿԀ-ԯⷠ-ⷿꙀ-ꚟ]')
+
+
 def count_groups(f):
-    """Number of verse-groups that have BOTH a Sanskrit verse and a translation."""
+    """Verse-groups that have a Sanskrit verse AND a REAL (Cyrillic) translation.
+    A ru segment of only '…' is an untranslated placeholder — excluded, so the
+    size/ordering reflect genuinely-translated material, not stubs."""
     sa, ru = set(), set()
     for line in open(os.path.join(SM, f), encoding='utf-8'):
         try:
@@ -107,7 +112,7 @@ def count_groups(f):
             continue
         if e.get('seg') == 'sa':
             sa.add(e.get('group'))
-        elif e.get('seg') == 'ru':
+        elif e.get('seg') == 'ru' and _CYR.search(e.get('text') or ''):
             ru.add(e.get('group'))
     return len(sa & ru)
 
