@@ -57,7 +57,7 @@ def deepseek(user, retries=3):
                                     'response_format': {'type': 'json_object'},
                                     'messages': [{'role': 'system', 'content': SYS},
                                                  {'role': 'user', 'content': user}]},
-                              timeout=120)
+                              timeout=(10, 45))   # (connect, read) — fail fast, never hang a worker
             r.raise_for_status()
             return r.json()['choices'][0]['message']['content']
         except Exception as ex:
