@@ -17,14 +17,49 @@ Modes:
   python assemble.py sample [N]        show N covered cards (richest reuse first)
   python assemble.py build  [N]        emit assembled_cards.jsonl (gitignored)
 """
-import json, os, sys
+import json, os, sys, collections
 sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
 
 import pwg_mask
 import corpus_gate as cg
+import corpus_harvest as ch
 
 OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'assembled_cards.jsonl')
+
+_CHIDX = None
+
+
+def ch_index():
+    """The SLP1→alignments index over the whole corpus lexicon (built once)."""
+    global _CHIDX
+    if _CHIDX is None:
+        _CHIDX = ch.index()
+    return _CHIDX
+
+
+def corpus_lexicon_senses(key1, prefer_period=None):
+    """Stratified, lemma-grouped, content-filtered Russian attested in the
+    parallel corpus for this headword, plus the near-synonym candidate set
+    (distinct content lemmas, freq-ranked) to be DISCRIMINATED per Apresjan."""
+    rows = ch_index().get(cg.form_key(key1), [])
+    if not rows:
+        return None
+    strata = ch.harvest(rows, prefer_period)
+    cand = collections.Counter()
+    for s in strata:
+        for r in s['renderings']:
+            if r.get('pos') != 'func':
+                cand[r['lemma']] += r['count']
+    return {
+        'n_attestations': len(rows),
+        'strata': [{'period': s['period'], 'genre': s['genre'], 'total': s['total'],
+                    'renderings': [{'lemma': r['lemma'], 'count': r['count'],
+                                    'kinds': r['kinds'], 'pos': r.get('pos'),
+                                    'forms': r['forms'][:4]} for r in s['renderings'][:6]]}
+                   for s in strata],
+        'synonym_candidates': [w for w, _ in cand.most_common(12)],
+    }
 
 
 def iast(key1):
@@ -47,6 +82,7 @@ def assemble(idx, key1, key2, records):
                      'placeholders': ph,
                      'lossless': pwg_mask.restore(sk, ph) == body})
     pub_dict = sum(1 for g in indep if g.get('publishable'))
+    clex = corpus_lexicon_senses(key1)        # stratified corpus reuse (the 190k-key lexicon)
     return {
         'key1': key1, 'key2': key2, 'iast': iast(key1),
         'records': recs,
@@ -54,7 +90,8 @@ def assemble(idx, key1, key2, records):
             'dict': [{'source': g['source'], 'code': g['code'], 'gloss': g['gloss'],
                       'publishable': g.get('publishable', False)} for g in indep],
             'kow_reference': kow,            # Kossowich d.1883 = public domain, citable as reference
-            'corpus': corpus,
+            'corpus': corpus,                # verse examples (FTS)
+            'corpus_lexicon': clex,          # stratified, discriminated attested renderings
         },
         # rights for the PRINTED edition: only PD senses may be quoted verbatim;
         # modern dicts + corpus translations are correctness signals for a fresh
@@ -67,7 +104,8 @@ def assemble(idx, key1, key2, records):
                     'and corpus glosses inform a fresh translation but are not copied.',
         },
         'reuse': {'n_dict': len(indep), 'n_kow': len(kow), 'n_corpus': len(corpus),
-                  'covered': bool(indep or kow or corpus)},
+                  'n_corpus_lex': clex['n_attestations'] if clex else 0,
+                  'covered': bool(indep or kow or corpus or clex)},
     }
 
 
@@ -101,13 +139,23 @@ def pretty(card):
     if a['corpus']:
         for e in a['corpus']:
             print('    · [corpus %s %s] %s' % (e['work'], e['passage'], e['ru'][:120]))
-    if not (a['dict'] or a['kow_reference'] or a['corpus']):
+    cl = a.get('corpus_lexicon')
+    if cl:
+        print('  CORPUS-ATTESTED RUSSIAN by stratum (%d attestations):' % cl['n_attestations'])
+        for s in cl['strata']:
+            rends = ', '.join('%s(%d)' % (r['lemma'], r['count'])
+                              for r in s['renderings'] if r.get('pos') != 'func')
+            print('    · %-26s %s' % (s['period'], rends))
+        print('    → near-synonym set to DISCRIMINATE (Apresjan): %s'
+              % ' · '.join(cl['synonym_candidates']))
+    if not (a['dict'] or a['kow_reference'] or a['corpus'] or cl):
         print('    (none — long-tail headword; full German translation needed)')
     print('\n  GERMAN GLOSS — pending translation (stage 3):')
     for r in card['records']:
         print('    %s' % r['de_skeleton'].replace('\n', ' ')[:200])
-    print('  reuse: %d dict · %d KOW · %d corpus  | round-trip ok: %s'
+    print('  reuse: %d dict · %d KOW · %d corpus-ex · %d corpus-lex  | round-trip ok: %s'
           % (card['reuse']['n_dict'], card['reuse']['n_kow'], card['reuse']['n_corpus'],
+             card['reuse'].get('n_corpus_lex', 0),
              all(r['lossless'] for r in card['records'])))
 
 
