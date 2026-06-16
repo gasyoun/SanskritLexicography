@@ -9,6 +9,7 @@ is known, ls_source_map.json resolves it to a stratum so that stratum's
 renderings surface first (a Ṛgvedic citation → the Vedic Russian).
 
   python corpus_harvest.py top [N]                   most-attested keys
+  python corpus_harvest.py coverage                  per-stratum coverage (honesty check)
   python corpus_harvest.py <slp1> [LS_KEY] [--raw]   attested Russian for a headword
       LS_KEY  PWG <ls> source (e.g. M, MBH) → its stratum surfaces first
       --raw   keep function-word renderings (for particle/pronoun headwords)
@@ -118,9 +119,43 @@ def resolve_period(ls_key):
     return rec.get('period') if rec else None
 
 
+def cmd_coverage():
+    """Per-stratum coverage of the lexicon vs the corpus's translatable total.
+    Exposes which strata are still thin/empty so a cited sense is not silently
+    given another era's Russian (the build is biggest-first, so strata fill
+    unevenly)."""
+    spath = os.path.join(HERE, 'corpus_strata.json')
+    strata = json.load(open(spath, encoding='utf-8')) if os.path.exists(spath) else {}
+    pot = collections.Counter()
+    for st in strata.values():
+        pot[st.get('period') or '?'] += st.get('groups', 0)
+    rows = collections.Counter()
+    keys = collections.defaultdict(set)
+    groups = collections.defaultdict(set)
+    works = collections.defaultdict(set)
+    if os.path.exists(LEX):
+        for line in open(LEX, encoding='utf-8'):
+            try:
+                r = json.loads(line)
+            except Exception:
+                continue
+            p = r.get('period') or '?'
+            rows[p] += 1; keys[p].add(r['slp1']); groups[p].add(r['group']); works[p].add(r['work'])
+    allp = sorted(set(pot) | set(rows), key=lambda p: PERIOD_ORDER.get(p, 9))
+    print('%-30s %9s %8s %18s %6s %6s' % ('stratum (period)', 'rows', 'keys', 'groups done/total', 'pct', 'works'))
+    for p in allp:
+        done, tot = len(groups[p]), pot.get(p, 0)
+        pct = (100.0 * done / tot) if tot else 0.0
+        flag = '  ◀ EMPTY' if done == 0 else ('  ◀ thin' if pct < 15 else '')
+        print('%-30s %9d %8d %8d/%-8d %5.1f%% %5d%s'
+              % (p, rows[p], len(keys[p]), done, tot, pct, len(works[p]), flag))
+
+
 def main():
     if len(sys.argv) < 2:
         print(__doc__); return
+    if sys.argv[1] == 'coverage':
+        cmd_coverage(); return
     idx = index()
     if sys.argv[1] == 'top':
         n = int(sys.argv[2]) if len(sys.argv) > 2 else 30

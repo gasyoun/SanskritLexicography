@@ -59,6 +59,22 @@ The curated map covers the top **45** sources = **72.4%** of all citations:
 - **commentary-aware**: renderings tag `+comm` when commentary footnotes (not
   just the verse translation) attest them.
 
+## Stratum coverage is build-dependent — check it
+
+The corpus lexicon fills **biggest-first**, so strata fill unevenly while the
+build runs. A sense cited from an empty stratum has no corpus Russian yet — do
+not let it silently fall back to another era. Always check:
+
+```
+python src/corpus_harvest.py coverage
+```
+
+reports rows / keys / groups-done-vs-total / % per stratum and flags `EMPTY` /
+`thin` strata. As of the mid-build snapshot only the Epic stratum is well-covered
+(~44%); Ṛgvedic, Classical, and Medieval are still empty and fill as the
+Rigveda / kāvya / later texts are processed. **Do not assemble print cards whose
+`<ls>` resolves to a below-floor stratum until that stratum lands.**
+
 ## Next
 
 - Wire the reader into [src/assemble.py](src/assemble.py): for each PWG sense,
