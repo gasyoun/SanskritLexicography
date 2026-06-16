@@ -20,6 +20,7 @@ sys.stderr.reconfigure(encoding='utf-8')
 import pwg_mask
 import corpus_gate as cg
 import corpus_harvest as ch
+import pwg_sources as ps   # authoritative <ls> abbreviation resolver (pwgbib)
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 LSMAP = json.load(open(os.path.join(HERE, 'ls_source_map.json'), encoding='utf-8'))
@@ -114,6 +115,7 @@ def sense_node(seg):
     return {'n': seg['n'], 'sub': seg['sub'], 'equivalents_de': de,
             'gloss_de': gloss[:200], 'equivalence_type': eq, 'grammar': grammar,
             'diasystem': dia, 'citations': sorted(set(cites)),
+            'citations_resolved': {c: ps.resolve(c) for c in sorted(set(cites))},
             'strata': strata_of(cites), 'examples_sa': examples}
 
 
@@ -172,7 +174,10 @@ def pretty(p):
         if s['equivalence_type'] == 'explanatory' and s['gloss_de']:
             print('         %s' % s['gloss_de'][:110])
         if s['citations']:
-            print('         cited: %s' % ', '.join(s['citations'][:8]))
+            cr = s.get('citations_resolved', {})
+            print('         cited: %s' % ', '.join(
+                '%s=%s' % (c, (cr.get(c) or '?').split(',')[0].split('(')[0].strip()[:22])
+                for c in s['citations'][:6]))
     cs = p['corpus_synonyms']
     if cs:
         print('  CORPUS NEAR-SYNONYM SET (%d attestations, translation-weighted):' % cs['n'])
