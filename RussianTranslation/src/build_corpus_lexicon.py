@@ -49,15 +49,15 @@ SYS = ('You align a Sanskrit verse to its Russian translation at the WORD level.
        'counterpart. Use the dictionary/citation form of the Sanskrit word.')
 
 
-def deepseek(user, retries=3):
+def deepseek(user, retries=3, system=None):
     for a in range(retries):
         try:
             r = requests.post(API, headers={'Authorization': 'Bearer ' + KEY},
                               json={'model': 'deepseek-chat', 'temperature': 0,
                                     'response_format': {'type': 'json_object'},
-                                    'messages': [{'role': 'system', 'content': SYS},
+                                    'messages': [{'role': 'system', 'content': system or SYS},
                                                  {'role': 'user', 'content': user}]},
-                              timeout=(10, 45))   # (connect, read) — fail fast, never hang a worker
+                              timeout=(10, 60))   # (connect, read) — fail fast, never hang a worker
             r.raise_for_status()
             return r.json()['choices'][0]['message']['content']
         except Exception as ex:
@@ -75,6 +75,32 @@ def align(sa_text, ru_text):
         return json.loads(out).get('pairs', [])
     except Exception:
         return []
+
+
+SYS_BATCH = ('You word-align Sanskrit to Russian. You are given N items; each has a '
+             'Sanskrit text and its Russian rendering. For EACH item INDEPENDENTLY, map '
+             'every Sanskrit content word (noun, verb, adjective; skip pure particles) to '
+             'its Russian equivalent in THAT item — NEVER carry a word between items. Use '
+             'the dictionary/citation form of the Sanskrit word. Output ONLY JSON: '
+             '{"items":[{"i":<0-based item index>,"pairs":[{"sa":"<sanskrit word, IAST>",'
+             '"ru":"<russian equivalent>"}]}]} — exactly one entry per item index i.')
+
+
+def align_batch(units):
+    """units = [(sa_text, ru_text), …] → list of pairs-lists, aligned by index."""
+    body = '\n\n'.join('ITEM %d\nSanskrit: %s\nRussian: %s'
+                       % (i, sa[:700], ru[:900]) for i, (sa, ru) in enumerate(units))
+    out = deepseek(body, system=SYS_BATCH)
+    res = [[] for _ in units]
+    if out:
+        try:
+            for it in json.loads(out).get('items', []):
+                i = it.get('i')
+                if isinstance(i, int) and 0 <= i < len(units):
+                    res[i] = it.get('pairs') or []
+        except Exception:
+            pass
+    return res
 
 
 def pairs_of(textfile, with_comm=True):
@@ -137,17 +163,31 @@ def cmd_test(args):
 def cmd_build(args):
     tf = args[0]
     n = int(args[1]) if len(args) > 1 else 10**9
-    workers = int(args[2]) if len(args) > 2 else 8
+    workers = int(args[2]) if len(args) > 2 else 12
     done = done_groups()
     work = tf.replace('.jsonl', '')
     st = STRATA.get(work, {})
-    todo = [(g, passage, sa, targets) for g, _, passage, sa, targets in pairs_of(tf) if g not in done][:n]
+    groups = [(g, passage, sa, targets) for g, _, passage, sa, targets in pairs_of(tf) if g not in done][:n]
 
-    def proc(item):
-        g, passage, sa, targets = item
+    # batch consecutive groups until ~BATCH align-units per DeepSeek call; never
+    # split a group across batches → group-level resumability holds.
+    BATCH = 8
+    batches, cur, curn = [], [], 0
+    for item in groups:
+        cur.append(item); curn += len(item[3])
+        if curn >= BATCH:
+            batches.append(cur); cur, curn = [], 0
+    if cur:
+        batches.append(cur)
+
+    def proc(batch):
+        meta, units = [], []                     # meta[i] ↔ units[i]
+        for g, passage, sa, targets in batch:
+            for text, kind in targets:
+                meta.append((g, passage, kind)); units.append((sa, text))
         rows = []
-        for text, kind in targets:
-            for p in align(sa, text):
+        for (g, passage, kind), pairs in zip(meta, align_batch(units)):
+            for p in pairs:
                 slp1 = to_slp1(p.get('sa', ''))
                 if slp1 and p.get('ru'):
                     rows.append({'group': g, 'work': work, 'passage': passage, 'slp1': slp1,
@@ -156,19 +196,19 @@ def cmd_build(args):
                                  'date': st.get('date_median')})
         return rows
 
-    wrote = donen = 0
+    wrote = doneb = 0
     with open(OUT, 'a', encoding='utf-8', newline='') as out, ThreadPoolExecutor(workers) as ex:
-        futs = [ex.submit(proc, it) for it in todo]
+        futs = [ex.submit(proc, b) for b in batches]
         for fut in as_completed(futs):
             for r in fut.result():
                 out.write(json.dumps(r, ensure_ascii=False) + '\n')
                 wrote += 1
             out.flush()
-            donen += 1
-            if donen % 50 == 0:
-                print('  %s: %d/%d pairs, %d alignments' % (work, donen, len(todo), wrote))
-    print('%s [%s · ~%s]: %d pairs → %d alignments (x%d) appended to %s'
-          % (work, st.get('genre'), st.get('date_median'), len(todo), wrote, workers, os.path.basename(OUT)))
+            doneb += 1
+            if doneb % 20 == 0:
+                print('  %s: %d/%d batches, %d alignments' % (work, doneb, len(batches), wrote))
+    print('%s [%s · ~%s]: %d groups in %d batches → %d alignments (x%d) → %s'
+          % (work, st.get('genre'), st.get('date_median'), len(groups), len(batches), wrote, workers, os.path.basename(OUT)))
 
 
 def cmd_status(args):
