@@ -95,6 +95,28 @@ def stratum_for(name):
     return None
 
 
+def count_groups(f):
+    """Number of verse-groups that have BOTH a Sanskrit verse and a translation."""
+    sa, ru = set(), set()
+    for line in open(os.path.join(SM, f), encoding='utf-8'):
+        try:
+            e = json.loads(line)
+        except Exception:
+            continue
+        if e.get('deleted') or not e.get('text'):
+            continue
+        if e.get('seg') == 'sa':
+            sa.add(e.get('group'))
+        elif e.get('seg') == 'ru':
+            ru.add(e.get('group'))
+    return len(sa & ru)
+
+
+def size_rating(g):
+    """1 (tiny) … 5 (huge), by verse-group count."""
+    return 5 if g >= 5000 else 4 if g >= 2000 else 3 if g >= 500 else 2 if g >= 100 else 1
+
+
 def main():
     files = sorted(f for f in os.listdir(SM) if f.endswith('.jsonl'))
     strata, unmatched, skipped = {}, [], []
@@ -104,6 +126,9 @@ def main():
             skipped.append(work); continue
         s = stratum_for(work)
         if s:
+            g = count_groups(f)
+            s['groups'] = g
+            s['size'] = size_rating(g)
             strata[work] = s
         else:
             unmatched.append(work)
@@ -113,6 +138,11 @@ def main():
     import collections
     by_g = collections.Counter(s['genre'].split(' —')[0] for s in strata.values())
     print('by top genre:', dict(by_g))
+    bysz = collections.Counter(s['size'] for s in strata.values())
+    print('by size 1–5:', dict(sorted(bysz.items(), reverse=True)))
+    print('biggest works (processed first):')
+    for w, s in sorted(strata.items(), key=lambda x: -x[1]['groups'])[:8]:
+        print('  size %d · %5d groups · %s' % (s['size'], s['groups'], w))
     if unmatched:
         print('\nUNMATCHED (need a rule): %d' % len(unmatched))
         for u in unmatched:

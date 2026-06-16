@@ -186,8 +186,8 @@ def cmd_status(args):
 
 def cmd_buildall(args):
     workers = args[0] if args else '8'
-    texts = sorted(STRATA.keys())
-    print('building %d corpus texts (workers=%s) …' % (len(texts), workers))
+    texts = sorted(STRATA.keys(), key=lambda w: -STRATA[w].get('groups', 0))   # biggest first
+    print('building %d corpus texts biggest-first (workers=%s) …' % (len(texts), workers))
     for i, work in enumerate(texts, 1):
         tf = work + '.jsonl'
         if not os.path.exists(os.path.join(SM, tf)):
