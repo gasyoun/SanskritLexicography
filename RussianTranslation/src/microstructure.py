@@ -21,20 +21,19 @@ import pwg_mask
 import corpus_gate as cg
 import corpus_harvest as ch
 import pwg_sources as ps   # authoritative <ls> abbreviation resolver (pwgbib)
+import pwg_ab as pab       # authoritative <ab> abbreviation resolver (pwgab)
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 LSMAP = json.load(open(os.path.join(HERE, 'ls_source_map.json'), encoding='utf-8'))
 
 LS = re.compile(r'<ls\b[^>]*>(.*?)</ls>', re.S)
 LEX = re.compile(r'<lex>(.*?)</lex>', re.S)
-AB = re.compile(r'<ab>(.*?)</ab>', re.S)
+ABFULL = re.compile(r'<ab\b([^>]*)>(.*?)</ab>', re.S)
+NATTR_AB = re.compile(r'\bn\s*=\s*"([^"]*)"')
 SA = re.compile(r'\{#(.*?)#\}', re.S)
 PCT = re.compile(r'\{%(.*?)%\}', re.S)
 PROT = re.compile(r'<[^>]+>|\{#.*?#\}|\{%.*?%\}', re.S)
 MARK = re.compile(r'(?<![^\s—(])(\d{1,2}|[a-z])\)')   # marker preceded by space/—/(/start
-# diasystem markers PWG uses (abbreviation → label)
-DIA = {'ved.': 'Vedic', 'vedisch': 'Vedic', 'ep.': 'Epic', 'episch': 'Epic',
-       'i.': 'Veda', 'klass.': 'Classical', 'spät': 'late', 'gramm.': 'grammatical'}
 
 
 def header(buf):
@@ -108,13 +107,21 @@ def sense_node(seg):
     cites = [c for c in cites if c]
     examples = [s for s in SA.findall(seg['text'])][:4]
     grammar = [g.strip() for g in LEX.findall(seg['text'])]
-    abs = [a.strip() for a in AB.findall(seg['text'])]
-    dia = sorted({DIA[a] for a in abs if a in DIA})
+    ab_labels, dia = [], set()
+    for attrs, content in ABFULL.findall(seg['text']):
+        nm = NATTR_AB.search(attrs)
+        tok = re.sub(r'<[^>]+>', '', content).strip()
+        lab = nm.group(1) if nm else (pab.label(tok) or tok)
+        if lab:
+            ab_labels.append(lab)
+            if pab.is_diasystem(lab):
+                dia.add(lab)
     eq = 'equivalent' if (de and all(len(d.split()) <= 2 for d in de)) else \
          ('explanatory' if gloss else 'none')
     return {'n': seg['n'], 'sub': seg['sub'], 'equivalents_de': de,
             'gloss_de': gloss[:200], 'equivalence_type': eq, 'grammar': grammar,
-            'diasystem': dia, 'citations': sorted(set(cites)),
+            'ab_labels': sorted(set(ab_labels)), 'diasystem': sorted(dia),
+            'citations': sorted(set(cites)),
             'citations_resolved': {c: ps.resolve(c) for c in sorted(set(cites))},
             'strata': strata_of(cites), 'examples_sa': examples}
 
@@ -152,8 +159,9 @@ def portrait(buf):
     senses = [sense_node(s) for s in split_senses(body)]
     pos = sorted({g for s in senses for g in s['grammar']})
     dia = sorted({d for s in senses for d in s['diasystem']})
+    labels = sorted({l for s in senses for l in s.get('ab_labels', []) if l not in dia})
     return {'key1': k1, 'key2': k2, 'h': h, 'iast': ''.join(cg._S2I.get(c, c) for c in cg.form_key(k1)),
-            'pos': pos, 'diasystem': dia, 'senses': senses,
+            'pos': pos, 'diasystem': dia, 'labels': labels, 'senses': senses,
             'corpus_synonyms': corpus_synonyms(k1)}
 
 
@@ -162,6 +170,8 @@ def pretty(p):
     hh = ('  ·  homonym %s' % p['h']) if p['h'] else ''
     print('%s  (%s)%s   pos=%s   diasystem=%s' % (p['key1'], p['iast'], hh,
           '/'.join(p['pos']) or '–', '/'.join(p['diasystem']) or '–'))
+    if p.get('labels'):
+        print('  labels: %s' % ', '.join(p['labels'][:14]))
     print('  SENSE TREE:')
     for s in p['senses']:
         if s['n'] == '0':
