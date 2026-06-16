@@ -24,8 +24,15 @@ LSMAP = os.path.join(HERE, 'ls_source_map.json')
 LS_SOURCES = json.load(open(LSMAP, encoding='utf-8')) if os.path.exists(LSMAP) else {}
 
 # period ordering oldest→newest for stable stratum sort
-PERIOD_ORDER = {'Ṛgvedic': 0, 'Vedic (Brāhmaṇa–Upaniṣad)': 1,
-                'Epic / early-Classical': 2, 'Classical': 3, 'Medieval': 4}
+PERIOD_ORDER = {'Vedic': 1, 'Epic / early-Classical': 2, 'Classical': 3, 'Medieval': 4}
+
+
+def norm_period(p):
+    """Ṛgvedic is part of the Vedic period → one Vedic stratum (Ṛgveda + Saṃhitās
+    + Brāhmaṇas + Upaniṣads). Folds the older labels onto a single 'Vedic'."""
+    if p in ('Ṛgvedic', 'Vedic (Brāhmaṇa–Upaniṣad)', 'Vedic (Brāhmaṇa-Upaniṣad)'):
+        return 'Vedic'
+    return p or '?'
 
 # optional Russian lemmatizer: collapse inflected variants (царя/царю→царь) under
 # the lemma. Falls back to lowercased surface form if pymorphy3 is not installed.
@@ -94,7 +101,7 @@ def harvest(rows, prefer_period=None):
         ru = (r.get('ru') or '').strip()
         if not ru:
             continue
-        cell = by_stratum[(r.get('period') or '?', r.get('genre') or '?')][lemma_key(ru)]
+        cell = by_stratum[(norm_period(r.get('period')), r.get('genre') or '?')][lemma_key(ru)]
         cell['n'] += 1
         cell['kinds'].add(r.get('kind'))
         cell['works'].add(r.get('work'))
@@ -128,7 +135,7 @@ def cmd_coverage():
     strata = json.load(open(spath, encoding='utf-8')) if os.path.exists(spath) else {}
     pot = collections.Counter()
     for st in strata.values():
-        pot[st.get('period') or '?'] += st.get('groups', 0)
+        pot[norm_period(st.get('period'))] += st.get('groups', 0)
     rows = collections.Counter()
     keys = collections.defaultdict(set)
     groups = collections.defaultdict(set)
@@ -139,7 +146,7 @@ def cmd_coverage():
                 r = json.loads(line)
             except Exception:
                 continue
-            p = r.get('period') or '?'
+            p = norm_period(r.get('period'))
             rows[p] += 1; keys[p].add(r['slp1']); groups[p].add(r['group']); works[p].add(r['work'])
     allp = sorted(set(pot) | set(rows), key=lambda p: PERIOD_ORDER.get(p, 9))
     print('%-30s %9s %8s %18s %6s %6s' % ('stratum (period)', 'rows', 'keys', 'groups done/total', 'pct', 'works'))
@@ -169,7 +176,7 @@ def main():
     raw = '--raw' in rest             # particle/pronoun headwords: don't filter function words
     rest = [a for a in rest if a != '--raw']
     ls_key = rest[0] if rest else None
-    pref = resolve_period(ls_key)
+    pref = norm_period(resolve_period(ls_key)) if ls_key else None
     rows = idx.get(slp1, [])
     if not rows:
         print('no corpus attestation for key %r' % slp1); return

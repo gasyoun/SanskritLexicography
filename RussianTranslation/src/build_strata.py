@@ -30,10 +30,11 @@ SKIP = re.compile(r'^(kochergina|kossovich|knauer|frish|slovar|dic_|warnemyr|'
                   r'fasmer|mify|induizm|stepanyants|biruni|iliada|kewa|dsg|'
                   r'yoga-bessmertie)', re.I)
 
-# period buckets by Dharmamitra median date (year; negative = BCE)
+# period buckets by Dharmamitra median date (year; negative = BCE).
+# Ṛgveda + Saṃhitās + Brāhmaṇas + Upaniṣads = ONE Vedic period (Ṛgvedic is not
+# split out separately).
 def period(d):
-    if d < -1000: return 'Ṛgvedic'
-    if d < -300:  return 'Vedic (Brāhmaṇa–Upaniṣad)'
+    if d < -300:  return 'Vedic'
     if d < 400:   return 'Epic / early-Classical'
     if d < 1000:  return 'Classical'
     return 'Medieval'
