@@ -24,6 +24,26 @@ LS_SOURCES = json.load(open(LSMAP, encoding='utf-8')) if os.path.exists(LSMAP) e
 PERIOD_ORDER = {'Ṛgvedic': 0, 'Vedic (Brāhmaṇa–Upaniṣad)': 1,
                 'Epic / early-Classical': 2, 'Classical': 3, 'Medieval': 4}
 
+# optional Russian lemmatizer: collapse inflected variants (царя/царю→царь) under
+# the lemma. Falls back to lowercased surface form if pymorphy3 is not installed.
+try:
+    import pymorphy3
+    _MORPH = pymorphy3.MorphAnalyzer()
+except Exception:
+    _MORPH = None
+_lemcache = {}
+
+
+def lemma_key(ru):
+    if not _MORPH or ' ' in ru:          # phrases kept as-is (head-lemma is unreliable)
+        return ru.lower()
+    if ru not in _lemcache:
+        try:
+            _lemcache[ru] = _MORPH.parse(ru)[0].normal_form
+        except Exception:
+            _lemcache[ru] = ru.lower()
+    return _lemcache[ru]
+
 
 def index():
     idx = collections.defaultdict(list)
@@ -38,21 +58,25 @@ def index():
 
 
 def harvest(rows, prefer_period=None):
-    """rows for one slp1 key → strata, each with counted Russian renderings."""
+    """rows for one slp1 key → strata, each with Russian renderings grouped by
+    lemma (inflected surface forms collapsed, counted, kept as evidence)."""
     by_stratum = collections.defaultdict(lambda: collections.defaultdict(
-        lambda: {'n': 0, 'kinds': set(), 'works': set()}))
+        lambda: {'n': 0, 'kinds': set(), 'works': set(), 'forms': collections.Counter()}))
     for r in rows:
-        key = (r.get('period') or '?', r.get('genre') or '?')
         ru = (r.get('ru') or '').strip()
-        cell = by_stratum[key][ru]
+        if not ru:
+            continue
+        cell = by_stratum[(r.get('period') or '?', r.get('genre') or '?')][lemma_key(ru)]
         cell['n'] += 1
         cell['kinds'].add(r.get('kind'))
         cell['works'].add(r.get('work'))
+        cell['forms'][ru] += 1
     out = []
     for (period, genre), rends in by_stratum.items():
         renderings = sorted(
-            ({'ru': ru, 'count': c['n'], 'kinds': sorted(c['kinds']),
-              'works': len(c['works'])} for ru, c in rends.items()),
+            ({'lemma': lem, 'count': c['n'], 'kinds': sorted(c['kinds']),
+              'works': len(c['works']),
+              'forms': [f for f, _ in c['forms'].most_common(6)]} for lem, c in rends.items()),
             key=lambda x: -x['count'])
         out.append({'period': period, 'genre': genre,
                     'total': sum(r['count'] for r in renderings),
@@ -91,7 +115,9 @@ def main():
         print('· %s · %s (%d)%s' % (s['period'], s['genre'], s['total'], star))
         for r in s['renderings'][:8]:
             tag = '+comm' if 'commentary' in r['kinds'] else ''
-            print('     %4d  %s  %s' % (r['count'], r['ru'], tag))
+            var = [f for f in r['forms'] if f.lower() != r['lemma']]
+            variants = ('  [' + ', '.join(var[:5]) + ']') if var else ''
+            print('     %4d  %-16s%s %s' % (r['count'], r['lemma'], variants, tag))
 
 
 if __name__ == '__main__':
