@@ -1,0 +1,508 @@
+{
+ "AIT. BR": {
+  "citations": 5213,
+  "corpus_works": [],
+  "date": -700,
+  "genre": "Veda — Brāhmaṇa",
+  "harvestable": false,
+  "name": "Aitareya-Brāhmaṇa",
+  "period": "Vedic (Brāhmaṇa–Upaniṣad)"
+ },
+ "AK": {
+  "citations": 16156,
+  "corpus_works": [],
+  "date": 450,
+  "genre": "Kośa (lexicon)",
+  "harvestable": false,
+  "name": "Amarakośa",
+  "period": "Classical"
+ },
+ "AMAR": {
+  "citations": 511,
+  "corpus_works": [
+   "amaru-shataka"
+  ],
+  "date": 450,
+  "genre": "Kāvya — lyric",
+  "harvestable": true,
+  "name": "Amaru-śataka",
+  "period": "Classical"
+ },
+ "AV": {
+  "citations": 16245,
+  "corpus_works": [
+   "01_atharvaveda",
+   "02_atharvaveda",
+   "03_atharvaveda",
+   "04_atharvaveda",
+   "05_atharvaveda",
+   "06_atharvaveda",
+   "07_atharvaveda",
+   "08_atharvaveda",
+   "09_atharvaveda",
+   "10_atharvaveda",
+   "11_atharvaveda",
+   "12_atharvaveda",
+   "13_atharvaveda",
+   "14_atharvaveda",
+   "15_atharvaveda",
+   "16_atharvaveda",
+   "17_atharvaveda",
+   "18_atharvaveda",
+   "19_atharvaveda"
+  ],
+  "date": -940,
+  "genre": "Veda — Saṃhitā",
+  "harvestable": true,
+  "name": "Atharvaveda",
+  "period": "Vedic (Brāhmaṇa–Upaniṣad)"
+ },
+ "BHAG": {
+  "citations": 2584,
+  "corpus_works": [
+   "bhagavadgita-1788",
+   "bhagavadgita-1909",
+   "bhagavadgita-1914",
+   "bhagavadgita-burba",
+   "bhagavadgita-erman",
+   "bhagavadgita-prabhupada",
+   "bhagavadgita-radha",
+   "bhagavadgita-sementsov",
+   "bhagavadgita-sharma",
+   "bhagavadgita-smirnov"
+  ],
+  "date": 200,
+  "genre": "Epic — Gītā",
+  "harvestable": true,
+  "name": "Bhagavadgītā",
+  "period": "Epic / early-Classical"
+ },
+ "BHĀG. P": {
+  "citations": 30483,
+  "corpus_works": [],
+  "date": 950,
+  "genre": "Purāṇa",
+  "harvestable": false,
+  "name": "Bhāgavata-Purāṇa",
+  "period": "Classical"
+ },
+ "GĪT": {
+  "citations": 1207,
+  "corpus_works": [
+   "bhagavadgita-1788",
+   "bhagavadgita-1909",
+   "bhagavadgita-1914",
+   "bhagavadgita-burba",
+   "bhagavadgita-erman",
+   "bhagavadgita-prabhupada",
+   "bhagavadgita-radha",
+   "bhagavadgita-sementsov",
+   "bhagavadgita-sharma",
+   "bhagavadgita-smirnov"
+  ],
+  "date": 200,
+  "genre": "Epic — Gītā",
+  "harvestable": true,
+  "name": "Bhagavadgītā",
+  "period": "Epic / early-Classical"
+ },
+ "GĪT. GOV": {
+  "citations": 0,
+  "corpus_works": [
+   "gitagovinda"
+  ],
+  "date": 1048,
+  "genre": "Kāvya — lyric (Jayadeva)",
+  "harvestable": true,
+  "name": "Gītagovinda",
+  "period": "Medieval"
+ },
+ "H": {
+  "citations": 16657,
+  "corpus_works": [],
+  "date": 1150,
+  "genre": "Kośa (lexicon)",
+  "harvestable": false,
+  "name": "Hemacandra, Abhidhānacintāmaṇi",
+  "period": "Medieval"
+ },
+ "H. an": {
+  "citations": 9830,
+  "corpus_works": [],
+  "date": 1150,
+  "genre": "Kośa (lexicon)",
+  "harvestable": false,
+  "name": "Hemacandra, Anekārthasaṃgraha",
+  "period": "Medieval"
+ },
+ "HALĀY": {
+  "citations": 5160,
+  "corpus_works": [],
+  "date": 950,
+  "genre": "Kośa (lexicon)",
+  "harvestable": false,
+  "name": "Halāyudha, Abhidhānaratnamālā",
+  "period": "Medieval"
+ },
+ "HARIV": {
+  "citations": 15691,
+  "corpus_works": [],
+  "date": 200,
+  "genre": "Epic — appendix (MBh)",
+  "harvestable": false,
+  "name": "Harivaṃśa",
+  "period": "Epic / early-Classical"
+ },
+ "HIT": {
+  "citations": 3845,
+  "corpus_works": [],
+  "date": 1000,
+  "genre": "Kāvya — kathā",
+  "harvestable": false,
+  "name": "Hitopadeśa",
+  "period": "Medieval"
+ },
+ "KATHĀS": {
+  "citations": 25016,
+  "corpus_works": [],
+  "date": 1050,
+  "genre": "Kāvya — kathā",
+  "harvestable": false,
+  "name": "Kathāsaritsāgara",
+  "period": "Medieval"
+ },
+ "KUMĀRAS": {
+  "citations": 2692,
+  "corpus_works": [
+   "kumarasambhava"
+  ],
+  "date": 420,
+  "genre": "Kāvya — Mahākāvya (Kālidāsa)",
+  "harvestable": true,
+  "name": "Kumārasambhava",
+  "period": "Classical"
+ },
+ "KĀTY. ŚR": {
+  "citations": 8648,
+  "corpus_works": [],
+  "date": -400,
+  "genre": "Veda — Sūtra",
+  "harvestable": false,
+  "name": "Kātyāyana-Śrautasūtra",
+  "period": "Vedic (Brāhmaṇa–Upaniṣad)"
+ },
+ "M": {
+  "citations": 22575,
+  "corpus_works": [
+   "manavadharmashastra"
+  ],
+  "date": 150,
+  "genre": "Śāstra — Dharma (Manu)",
+  "harvestable": true,
+  "name": "Manusmṛti",
+  "period": "Epic / early-Classical"
+ },
+ "MBH": {
+  "citations": 67238,
+  "corpus_works": [
+   "01_mahabharata-adiparva",
+   "02_mahabharata-sabhaparva",
+   "03_mahabharata-aranyakaparva",
+   "04_mahabharata-virataparva",
+   "05_mahabharata-udyogaparva",
+   "06_mahabharata-bhishmaparva",
+   "07_mahabharata-dronaparva",
+   "08_mahabharata-karnaparva",
+   "09_mahabharata-shalyaparva",
+   "10_mahabharata-sauptikaparva",
+   "11_mahabharata-striparva",
+   "12_mahabharata-shantiparva",
+   "13_mahabharata-anushasanaparva",
+   "14_mahabharata-ashvamedhikaparva",
+   "15_mahabharata-ashramavasikaparva",
+   "16_mahabharata-mausalaparva",
+   "17_mahabharata-mahaprasthanikaparva",
+   "18_mahabharata-svargarohanikaparva"
+  ],
+  "date": 80,
+  "genre": "Epic — Itihāsa (MBh)",
+  "harvestable": true,
+  "name": "Mahābhārata",
+  "period": "Epic / early-Classical"
+ },
+ "MED": {
+  "citations": 7211,
+  "corpus_works": [],
+  "date": 1200,
+  "genre": "Kośa (lexicon)",
+  "harvestable": false,
+  "name": "Medinīkośa",
+  "period": "Medieval"
+ },
+ "MEGH": {
+  "citations": 2363,
+  "corpus_works": [
+   "megha-duta"
+  ],
+  "date": 420,
+  "genre": "Kāvya — Mahākāvya (Kālidāsa)",
+  "harvestable": true,
+  "name": "Meghadūta",
+  "period": "Classical"
+ },
+ "MĀRK. P": {
+  "citations": 6419,
+  "corpus_works": [],
+  "date": 550,
+  "genre": "Purāṇa",
+  "harvestable": false,
+  "name": "Mārkaṇḍeya-Purāṇa",
+  "period": "Classical"
+ },
+ "NIR": {
+  "citations": 3678,
+  "corpus_works": [],
+  "date": -500,
+  "genre": "Veda — Vedāṅga",
+  "harvestable": false,
+  "name": "Nirukta",
+  "period": "Vedic (Brāhmaṇa–Upaniṣad)"
+ },
+ "P": {
+  "citations": 25291,
+  "corpus_works": [],
+  "date": -400,
+  "genre": "Śāstra — Vyākaraṇa",
+  "harvestable": false,
+  "name": "Pāṇini, Aṣṭādhyāyī",
+  "period": "Vedic (Brāhmaṇa–Upaniṣad)"
+ },
+ "PAÑCAT": {
+  "citations": 8992,
+  "corpus_works": [],
+  "date": 300,
+  "genre": "Kāvya — kathā",
+  "harvestable": false,
+  "name": "Pañcatantra",
+  "period": "Classical"
+ },
+ "R": {
+  "citations": 37806,
+  "corpus_works": [
+   "01_ramayana-balakanda",
+   "02_ramayana-ayodhyakanda",
+   "03_ramayana-aranyakanda",
+   "05_ramayana-sundarakanda"
+  ],
+  "date": 70,
+  "genre": "Epic — Itihāsa (Rām)",
+  "harvestable": true,
+  "name": "Rāmāyaṇa",
+  "period": "Epic / early-Classical"
+ },
+ "R. GORR": {
+  "citations": 7145,
+  "corpus_works": [
+   "01_ramayana-balakanda",
+   "02_ramayana-ayodhyakanda",
+   "03_ramayana-aranyakanda",
+   "05_ramayana-sundarakanda"
+  ],
+  "date": 70,
+  "genre": "Epic — Itihāsa (Rām)",
+  "harvestable": true,
+  "name": "Rāmāyaṇa (Gorresio rec.)",
+  "period": "Epic / early-Classical"
+ },
+ "R. SCHL": {
+  "citations": 246,
+  "corpus_works": [
+   "01_ramayana-balakanda",
+   "02_ramayana-ayodhyakanda",
+   "03_ramayana-aranyakanda",
+   "05_ramayana-sundarakanda"
+  ],
+  "date": 70,
+  "genre": "Epic — Itihāsa (Rām)",
+  "harvestable": true,
+  "name": "Rāmāyaṇa (Schlegel rec.)",
+  "period": "Epic / early-Classical"
+ },
+ "RAGH": {
+  "citations": 9728,
+  "corpus_works": [
+   "raghuvamsha"
+  ],
+  "date": 420,
+  "genre": "Kāvya — Mahākāvya (Kālidāsa)",
+  "harvestable": true,
+  "name": "Raghuvaṃśa",
+  "period": "Classical"
+ },
+ "RĀJA-TAR": {
+  "citations": 10269,
+  "corpus_works": [],
+  "date": 1150,
+  "genre": "Kāvya — historical",
+  "harvestable": false,
+  "name": "Rājataraṅgiṇī",
+  "period": "Medieval"
+ },
+ "RĀJAN": {
+  "citations": 6778,
+  "corpus_works": [],
+  "date": 1300,
+  "genre": "Kośa (nighaṇṭu)",
+  "harvestable": false,
+  "name": "Rājanighaṇṭu",
+  "period": "Medieval"
+ },
+ "SUŚR": {
+  "citations": 12450,
+  "corpus_works": [],
+  "date": 400,
+  "genre": "Śāstra — Āyurveda",
+  "harvestable": false,
+  "name": "Suśruta-Saṃhitā",
+  "period": "Classical"
+ },
+ "Spr": {
+  "citations": 12976,
+  "corpus_works": [],
+  "date": 600,
+  "genre": "Kāvya — gnomic (mixed)",
+  "harvestable": false,
+  "name": "Indische Sprüche (gnomic anthology)",
+  "period": "Classical"
+ },
+ "SĀH. D": {
+  "citations": 4645,
+  "corpus_works": [],
+  "date": 1400,
+  "genre": "Śāstra — poetics",
+  "harvestable": false,
+  "name": "Sāhityadarpaṇa",
+  "period": "Medieval"
+ },
+ "TRIK": {
+  "citations": 8819,
+  "corpus_works": [],
+  "date": 1150,
+  "genre": "Kośa (lexicon)",
+  "harvestable": false,
+  "name": "Trikāṇḍaśeṣa",
+  "period": "Medieval"
+ },
+ "TS": {
+  "citations": 6189,
+  "corpus_works": [],
+  "date": -1000,
+  "genre": "Veda — Saṃhitā",
+  "harvestable": false,
+  "name": "Taittirīya-Saṃhitā",
+  "period": "Vedic (Brāhmaṇa–Upaniṣad)"
+ },
+ "VARĀH": {
+  "citations": 123,
+  "corpus_works": [],
+  "date": 550,
+  "genre": "Śāstra — Jyotiṣa",
+  "harvestable": false,
+  "name": "Varāhamihira",
+  "period": "Classical"
+ },
+ "VARĀH. BṚH. S": {
+  "citations": 14292,
+  "corpus_works": [],
+  "date": 550,
+  "genre": "Śāstra — Jyotiṣa",
+  "harvestable": false,
+  "name": "Varāhamihira, Bṛhatsaṃhitā",
+  "period": "Classical"
+ },
+ "VOP": {
+  "citations": 5861,
+  "corpus_works": [],
+  "date": 1250,
+  "genre": "Śāstra — Vyākaraṇa",
+  "harvestable": false,
+  "name": "Vopadeva, Mugdhabodha",
+  "period": "Medieval"
+ },
+ "VP": {
+  "citations": 3677,
+  "corpus_works": [
+   "vishnu-purana"
+  ],
+  "date": 450,
+  "genre": "Purāṇa",
+  "harvestable": true,
+  "name": "Viṣṇu-Purāṇa",
+  "period": "Classical"
+ },
+ "VS": {
+  "citations": 6848,
+  "corpus_works": [],
+  "date": -900,
+  "genre": "Veda — Saṃhitā",
+  "harvestable": false,
+  "name": "Vājasaneyi-Saṃhitā",
+  "period": "Vedic (Brāhmaṇa–Upaniṣad)"
+ },
+ "YĀJÑ": {
+  "citations": 4004,
+  "corpus_works": [],
+  "date": 300,
+  "genre": "Śāstra — Dharma",
+  "harvestable": false,
+  "name": "Yājñavalkya-Smṛti",
+  "period": "Classical"
+ },
+ "ŚAT. BR": {
+  "citations": 20767,
+  "corpus_works": [],
+  "date": -800,
+  "genre": "Veda — Brāhmaṇa",
+  "harvestable": false,
+  "name": "Śatapatha-Brāhmaṇa",
+  "period": "Vedic (Brāhmaṇa–Upaniṣad)"
+ },
+ "ŚKDR": {
+  "citations": 20110,
+  "corpus_works": [],
+  "date": 1830,
+  "genre": "Kośa (modern compilation)",
+  "harvestable": false,
+  "name": "Śabdakalpadruma (= SKD)",
+  "period": "Medieval"
+ },
+ "ŚĀK": {
+  "citations": 6587,
+  "corpus_works": [],
+  "date": 420,
+  "genre": "Kāvya — drama (Kālidāsa)",
+  "harvestable": false,
+  "name": "Abhijñānaśākuntala",
+  "period": "Classical"
+ },
+ "ṚV": {
+  "citations": 56218,
+  "corpus_works": [
+   "01_rigveda",
+   "02_rigveda",
+   "03_rigveda",
+   "04_rigveda",
+   "05_rigveda",
+   "06_rigveda",
+   "07_rigveda",
+   "08_rigveda",
+   "09_rigveda",
+   "10_rigveda"
+  ],
+  "date": -1125,
+  "genre": "Veda — Saṃhitā",
+  "harvestable": true,
+  "name": "Ṛgveda",
+  "period": "Ṛgvedic"
+ }
+}
