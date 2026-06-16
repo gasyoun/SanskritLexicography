@@ -32,8 +32,10 @@ ABFULL = re.compile(r'<ab\b([^>]*)>(.*?)</ab>', re.S)
 NATTR_AB = re.compile(r'\bn\s*=\s*"([^"]*)"')
 SA = re.compile(r'\{#(.*?)#\}', re.S)
 PCT = re.compile(r'\{%(.*?)%\}', re.S)
-PROT = re.compile(r'<[^>]+>|\{#.*?#\}|\{%.*?%\}', re.S)
-MARK = re.compile(r'(?<![^\s—(])(\d{1,2}|[a-z])\)')   # marker preceded by space/—/(/start
+# protect full citation/italic-Sanskrit spans too — a sense marker must never be
+# found inside <ls>…</ls> (e.g. 'Lebensb. 233 (3).' is not a sense '3)').
+PROT = re.compile(r'<ls\b[^>]*>.*?</ls>|<is\b[^>]*>.*?</is>|<[^>]+>|\{#.*?#\}|\{%.*?%\}', re.S)
+MARK = re.compile(r'(?<![^\s—])(\d{1,2}|[a-z])\)')   # preceded by space/—/start (NOT '(': that's citation-internal)
 
 
 def header(buf):
@@ -55,10 +57,14 @@ def source_key(inner):
 
 
 def strata_of(citations):
+    # Only CORPUS-BACKED text sources set a sense's stratum. A grammarian/lexicon
+    # form-citation (Pāṇini, the kośas) attests that the WORD exists, not a dated
+    # textual usage — so it must not label the sense's diasystem (the audit caught
+    # 'Erde im Vedānta' mislabeled Vedic because Pāṇini cites the form).
     seen = {}
     for c in citations:
         rec = LSMAP.get(c)
-        if rec and rec.get('period'):
+        if rec and rec.get('harvestable') and rec.get('period'):
             seen[ch.norm_period(rec['period'])] = rec['name']
     return seen
 
@@ -100,7 +106,10 @@ def split_senses(body):
 
 
 def sense_node(seg):
-    de = [clean_de(g) for g in PCT.findall(seg['text'])]
+    # headword equivalents come BEFORE the first citation; {%German%} after a cited
+    # compound {#…#} glosses that compound, not the headword (audit: anna ≠ 'zubereiteter Reis').
+    head = seg['text'].split('<ls', 1)[0]
+    de = [clean_de(g) for g in PCT.findall(head)]
     de = [d for d in de if d]
     gloss = clean_de(seg['text'])
     cites = [source_key(c) for c in LS.findall(seg['text'])]
