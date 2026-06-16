@@ -77,10 +77,11 @@ def align(sa_text, ru_text):
         return []
 
 
-def pairs_of(textfile):
-    # key by `seg`, not `lang`: a group has seg=sa (verse), seg=ru (the
-    # translation), and seg=comm1/comm2/… (footnotes, also lang=ru). We align
-    # the VERSE translation only — commentary is skipped, not mistaken for it.
+def pairs_of(textfile, with_comm=True):
+    # key by `seg`: a group has seg=sa (verse), seg=ru (the translation), and
+    # seg=comm1/comm2/… (commentary notes, also lang=ru). We align BOTH — the
+    # translation tagged kind='translation', the notes kind='commentary' (they
+    # carry valuable lexical evidence) — never confusing one for the other.
     by_group = {}
     for line in open(os.path.join(SM, textfile), encoding='utf-8'):
         e = json.loads(line)
@@ -89,8 +90,18 @@ def pairs_of(textfile):
         by_group.setdefault(e.get('group'), {})[e.get('seg')] = e
     work = textfile.replace('.jsonl', '')
     for g, d in by_group.items():
-        if 'sa' in d and 'ru' in d and d['sa'].get('text') and d['ru'].get('text'):
-            yield g, work, d['sa'].get('passage', ''), d['sa']['text'], d['ru']['text']
+        sa = d.get('sa')
+        if not (sa and sa.get('text')):
+            continue
+        targets = []
+        if d.get('ru') and d['ru'].get('text'):
+            targets.append((d['ru']['text'], 'translation'))
+        if with_comm:
+            for seg in sorted(s for s in d if s and s.startswith('comm')):
+                if d[seg].get('text'):
+                    targets.append((d[seg]['text'], 'commentary'))
+        if targets:
+            yield g, work, sa.get('passage', ''), sa['text'], targets
 
 
 def to_slp1(sa_iast):
@@ -110,15 +121,16 @@ def done_groups():
 
 def cmd_test(args):
     tf = args[0] if args else 'bhagavadgita-sementsov.jsonl'
-    for g, work, passage, sa, ru in pairs_of(tf):
+    for g, work, passage, sa, targets in pairs_of(tf):
         st = STRATA.get(work, {})
         print('work=%s group=%s passage=%s | %s · ~%s · %s'
               % (work, g, passage, st.get('genre'), st.get('date_median'), st.get('period')))
         print('SA:', sa[:170])
-        print('RU:', ru[:170])
-        print('--- DeepSeek word alignment ---')
-        for p in align(sa, ru):
-            print('  %-16s → slp1=%-12s → %s' % (p.get('sa', ''), to_slp1(p.get('sa', '')), p.get('ru', '')))
+        for text, kind in targets:
+            print('--- %s ---' % kind.upper())
+            print('  ', text[:150])
+            for p in align(sa, text):
+                print('    %-16s → slp1=%-12s → %s' % (p.get('sa', ''), to_slp1(p.get('sa', '')), p.get('ru', '')))
         break
 
 
@@ -129,17 +141,19 @@ def cmd_build(args):
     done = done_groups()
     work = tf.replace('.jsonl', '')
     st = STRATA.get(work, {})
-    todo = [(g, passage, sa, ru) for g, _, passage, sa, ru in pairs_of(tf) if g not in done][:n]
+    todo = [(g, passage, sa, targets) for g, _, passage, sa, targets in pairs_of(tf) if g not in done][:n]
 
     def proc(item):
-        g, passage, sa, ru = item
+        g, passage, sa, targets = item
         rows = []
-        for p in align(sa, ru):
-            slp1 = to_slp1(p.get('sa', ''))
-            if slp1 and p.get('ru'):
-                rows.append({'group': g, 'work': work, 'passage': passage, 'slp1': slp1,
-                             'sa': p.get('sa'), 'ru': p.get('ru'), 'genre': st.get('genre'),
-                             'period': st.get('period'), 'date': st.get('date_median')})
+        for text, kind in targets:
+            for p in align(sa, text):
+                slp1 = to_slp1(p.get('sa', ''))
+                if slp1 and p.get('ru'):
+                    rows.append({'group': g, 'work': work, 'passage': passage, 'slp1': slp1,
+                                 'sa': p.get('sa'), 'ru': p.get('ru'), 'kind': kind,
+                                 'genre': st.get('genre'), 'period': st.get('period'),
+                                 'date': st.get('date_median')})
         return rows
 
     wrote = donen = 0
