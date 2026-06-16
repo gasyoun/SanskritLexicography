@@ -46,13 +46,25 @@ def assemble(idx, key1, key2, records):
         recs.append({'de_skeleton': sk,
                      'placeholders': ph,
                      'lossless': pwg_mask.restore(sk, ph) == body})
+    pub_dict = sum(1 for g in indep if g.get('publishable'))
     return {
         'key1': key1, 'key2': key2, 'iast': iast(key1),
         'records': recs,
         'attested_senses': {
-            'dict': [{'source': g['source'], 'code': g['code'], 'gloss': g['gloss']} for g in indep],
-            'kow_reference': kow,
+            'dict': [{'source': g['source'], 'code': g['code'], 'gloss': g['gloss'],
+                      'publishable': g.get('publishable', False)} for g in indep],
+            'kow_reference': kow,            # Kossowich d.1883 = public domain, citable as reference
             'corpus': corpus,
+        },
+        # rights for the PRINTED edition: only PD senses may be quoted verbatim;
+        # modern dicts + corpus translations are correctness signals for a fresh
+        # translation, not copy sources. The exporter gates the card BODY on this.
+        'rights': {
+            'publishable_dict_senses': pub_dict,
+            'restricted_dict_senses': len(indep) - pub_dict,
+            'corpus_rights': 'unverified',   # corpus translations may be in-copyright → evidence-only by default
+            'note': 'Quote verbatim only Knauer/Kossowich (PD); Kochergina/Smirnov/Frisch '
+                    'and corpus glosses inform a fresh translation but are not copied.',
         },
         'reuse': {'n_dict': len(indep), 'n_kow': len(kow), 'n_corpus': len(corpus),
                   'covered': bool(indep or kow or corpus)},

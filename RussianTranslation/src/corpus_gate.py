@@ -45,6 +45,22 @@ REF = 'kow'                                  # WIL-seeded human PWG→RU referen
 NAME = {'koch': 'Кочергина', 'kna': 'Кнауэр', 'fri': 'Фриш',
         'smirnov': 'Смирнов', 'kow': 'Коссович'}
 
+# Rights status per source for the PUBLISHED edition. EVERY source is used as a
+# correctness signal; but only public-domain sources may be quoted VERBATIM in a
+# printed card body — modern dictionaries inform the (fresh) translation without
+# being copied. Basis = author death-year (RU life+70). Confirm before print.
+RIGHTS = {
+    'koch':    {'publishable': False, 'status': 'modern',       'basis': 'Кочергина 1924–2018 → ©~2088'},
+    'smirnov': {'publishable': False, 'status': 'modern',       'basis': 'Б.Л. Смирнов 1891–1967 → ©~2037'},
+    'fri':     {'publishable': False, 'status': 'modern',       'basis': 'Frisch, Cologne 2015'},
+    'kna':     {'publishable': True,  'status': 'public-domain', 'basis': 'Ф.И. Кнауэр d.1917 → PD'},
+    'kow':     {'publishable': True,  'status': 'public-domain', 'basis': 'К.А. Коссович d.1883 → PD (cite as reference)'},
+}
+
+
+def publishable(code):
+    return RIGHTS.get(code, {}).get('publishable', False)
+
 # SLP1 -> IAST (for corpus search / display)
 _S2I = {'A':'ā','I':'ī','U':'ū','f':'ṛ','F':'ṝ','x':'ḷ','X':'ḹ','E':'ai','O':'au',
         'M':'ṃ','H':'ḥ','N':'ṅ','Y':'ñ','w':'ṭ','W':'ṭh','q':'ḍ','Q':'ḍh','R':'ṇ',
@@ -90,7 +106,7 @@ def lookup(idx, key1, key2=None):
     if not hit and key2:
         hit = idx.get(form_key(key2))
     hit = hit or {}
-    indep = [{'source': NAME[c], 'code': c, 'gloss': g}
+    indep = [{'source': NAME[c], 'code': c, 'gloss': g, 'publishable': publishable(c)}
              for c in INDEP for g in hit.get(c, [])[:MAX_GLOSS_PER_SOURCE]]
     kow = hit.get(REF, [])[:MAX_GLOSS_PER_SOURCE]
     return indep, kow
@@ -212,11 +228,18 @@ def cmd_coverage(idx, args):
     else:
         keys = all_keys
         label = 'full %d' % total
-    tot = per = kow_n = 0
+    # KOW (Kossovich) is alphabetically INCOMPLETE — its headwords start with
+    # only a handful of SLP1 letters (WIL-seeded, scattered). Coverage averaged
+    # over the whole alphabet dilutes its real density: outside its letter-zone
+    # KOW is absent by construction, not because a headword is missing. So report
+    # KOW both overall and WITHIN its attested zone.
+    kow_zone = set(k[0] for k, h in idx.items() if REF in h and k)
+    tot = per = kow_n = kow_zone_n = 0
     persrc = defaultdict(int)
     for k in keys:
         tot += 1
-        hit = idx.get(form_key(k)) or {}
+        fk = form_key(k)
+        hit = idx.get(fk) or {}
         if any(c in hit for c in INDEP):
             per += 1
         for c in INDEP:
@@ -224,6 +247,8 @@ def cmd_coverage(idx, args):
                 persrc[c] += 1
         if REF in hit:
             kow_n += 1
+        if fk and fk[0] in kow_zone:
+            kow_zone_n += 1
     # corpus signal: its own random sub-sample of the scanned keys (the corpus
     # query is the slow part, so it stays capped) — representative, not first-300.
     corpus_n = min(300, len(keys))
@@ -235,7 +260,11 @@ def cmd_coverage(idx, args):
     for c in INDEP:
         print('    %-8s %6d (%.1f%%)' % (NAME[c], persrc[c], 100.0 * persrc[c] / tot))
     print('--- signal 2: reference coverage (KOW) ---')
-    print('  KOW: %d (%.1f%%)' % (kow_n, 100.0 * kow_n / tot))
+    print('  KOW over all PWG:   %d (%.1f%%)' % (kow_n, 100.0 * kow_n / tot))
+    print('  KOW within its letter-zone [%s]: %d / %d (%.1f%%) — zone = %.1f%% of scanned;'
+          % (''.join(sorted(kow_zone)), kow_n, kow_zone_n,
+             100.0 * kow_n / max(kow_zone_n, 1), 100.0 * kow_zone_n / tot))
+    print('    outside the zone KOW is absent by construction, not a missing entry.')
     print('--- corpus signal (random sample of %d): %d had >=1 aligned verse (%.1f%%)'
           % (corpus_n, corp_hit, 100.0 * corp_hit / max(corpus_n, 1)))
 

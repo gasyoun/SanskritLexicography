@@ -7,14 +7,15 @@ workflow on the Max subscription; this driver prepares its input and collects
 its output. Resumable: `build` skips records already in the store.
 
   python run_batch.py build   <N>            → _batch_in.jsonl (next N undone)
-  python run_batch.py collect <wf-output>    → restore + append to the store
-  python run_batch.py status                 → progress + pass rate
+  python run_batch.py collect <wf-output>    → restore + provenance + append to store
+  python run_batch.py status                 → progress + pass rate + review state
+  python run_batch.py review                 → emit _review_queue.jsonl (human worklist)
 
 Files (all gitignored, in this dir):
   _batch_in.jsonl          current batch input (one record per line, with i, placeholders)
   pwg_ru_translated.jsonl  append-only store: {i,key1,ru,verdict,ok,...}
 """
-import json, os, re, sys
+import json, os, re, sys, glob, hashlib, subprocess, datetime
 sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
 
@@ -25,7 +26,45 @@ import assemble
 HERE = os.path.dirname(os.path.abspath(__file__))
 BATCH_IN = os.path.join(HERE, '_batch_in.jsonl')
 STORE = os.path.join(HERE, 'pwg_ru_translated.jsonl')
+REVIEW_Q = os.path.join(HERE, '_review_queue.jsonl')
 GERMAN = re.compile(r'[A-Za-zÄÖÜäöüß]{3,}')
+
+# --- provenance (FAIR R1.2 / PROV-O): every card records how it was produced,
+# so the edition is reproducible and bisectable. ----------------------------
+SCHEMA_VERSION = 'pwg_ru.card.v1'
+TRANSLATE_MODEL = 'claude-sonnet-4-6'        # Max-subscription translate stage
+JUDGE_MODEL = 'claude-opus-4-8'              # Max-subscription judge stage
+PROMPTS_DIR = os.path.normpath(os.path.join(HERE, '..', 'pwg_ru_prompts'))
+
+
+def _prompt_set_sha():
+    files = sorted(glob.glob(os.path.join(PROMPTS_DIR, '*.txt')))
+    if not files:
+        return 'na'
+    h = hashlib.sha256()
+    for f in files:
+        h.update(open(f, 'rb').read())
+    return h.hexdigest()[:16]
+
+
+def _pwg_commit():
+    repo = os.path.normpath(os.path.join(HERE, '..', '..', '..', 'csl-orig'))
+    try:
+        r = subprocess.run(['git', '-C', repo, 'rev-parse', '--short', 'HEAD'],
+                           capture_output=True, text=True, timeout=10)
+        return r.stdout.strip() or 'unknown'
+    except Exception:
+        return 'unknown'
+
+
+def provenance(run_id, translate_model=None):
+    return {'schema_version': SCHEMA_VERSION,
+            'translate_model': translate_model or TRANSLATE_MODEL,
+            'judge_model': JUDGE_MODEL,
+            'prompt_set_sha': _prompt_set_sha(),
+            'pwg_src_commit': _pwg_commit(),
+            'run_id': run_id,
+            'generated_at': datetime.datetime.now().isoformat(timespec='seconds')}
 
 
 def done_ids():
@@ -64,9 +103,11 @@ def cmd_build(args):
             if covered_only and not (indep or kow):
                 skipped += 1
                 continue
-            att = [{'source': g['source'], 'gloss': _clean(g['gloss'])[:110]} for g in indep]
+            att = [{'source': g['source'], 'code': g['code'], 'gloss': _clean(g['gloss'])[:110],
+                    'publishable': g.get('publishable', False)} for g in indep]
             if kow:
-                att.append({'source': 'KOW (reference)', 'gloss': _clean(kow[0])[:110]})
+                att.append({'source': 'KOW (reference)', 'code': 'kow',
+                            'gloss': _clean(kow[0])[:110], 'publishable': True})
             o.write(json.dumps({'i': written, 'ord': ordi, 'key1': k1, 'key2': k2,
                                 'iast': assemble.iast(k1), 'de_skeleton': sk,
                                 'placeholders': ph, 'attested': att},
@@ -80,11 +121,13 @@ def cmd_build(args):
 
 def cmd_collect(args):
     wf = args[0]
+    model = args[1] if len(args) > 1 else None      # optional translate-model override
     raw = json.load(open(wf, encoding='utf-8'))
     res = raw.get('result', raw).get('results', raw.get('results', []))
     by_i = {r['i']: r for r in res if 'i' in r}
     batch = {json.loads(l)['i']: json.loads(l) for l in open(BATCH_IN, encoding='utf-8')}
-    appended = ok = bad = mism = 0
+    prov = provenance(os.path.splitext(os.path.basename(wf))[0], model)
+    appended = ok = bad = mism = needs = 0
     with open(STORE, 'a', encoding='utf-8', newline='') as out:
         for i, card in batch.items():
             r = by_i.get(i)
@@ -99,16 +142,27 @@ def cmd_collect(args):
                         r['ru_skeleton'])
             keymatch = r.get('key1') == card['key1']
             v = r.get('verdict') or {}   # judge may be null (e.g. rate-limited) → treat as pending
+            good = bool(v.get('ok')) and integrity and keymatch
+            sev = v.get('severity')
+            # review state machine: an LLM verdict is never final for print —
+            # anything failing or sev>=3 or with a structural mismatch queues for a human.
+            review_status = 'judged' if (good and (sev or 0) < 3) else 'needs_review'
             rec = {'ord': card['ord'], 'key1': card['key1'], 'key2': card['key2'], 'ru': ru,
                    'placeholders_ok': integrity, 'key_match': keymatch, 'verdict': v,
-                   'ok': bool(v.get('ok')) and integrity and keymatch, 'severity': v.get('severity')}
+                   'ok': good, 'severity': sev,
+                   'review_status': review_status, 'reviewer': None,
+                   'attested': card.get('attested', []),     # persist the reuse evidence (rec 1)
+                   'provenance': prov}
             out.write(json.dumps(rec, ensure_ascii=False) + '\n')
             appended += 1
-            ok += 1 if rec['ok'] else 0
-            bad += 0 if rec['ok'] else 1
+            ok += 1 if good else 0
+            bad += 0 if good else 1
             mism += 0 if (integrity and keymatch) else 1
-    print('collected %d → %s  (ok %d, flagged %d, placeholder-mismatch %d)'
-          % (appended, os.path.basename(STORE), ok, bad, mism))
+            needs += 1 if review_status == 'needs_review' else 0
+    print('collected %d → %s  (ok %d, flagged %d, placeholder-mismatch %d, needs_review %d)'
+          % (appended, os.path.basename(STORE), ok, bad, mism, needs))
+    print('  provenance: %s @ %s (pwg %s, prompts %s)'
+          % (prov['translate_model'], prov['generated_at'], prov['pwg_src_commit'], prov['prompt_set_sha']))
 
 
 def cmd_status(args):
@@ -126,12 +180,51 @@ def cmd_status(args):
     print('translated cards in store: %d  | publishable (ok+placeholders): %d (%.0f%%)'
           % (n, ok, 100.0 * ok / max(n, 1)))
     print('judge severity histogram:', dict(sorted(sev.items())))
+    rs = {}
+    for line in open(STORE, encoding='utf-8'):
+        s = (json.loads(line).get('review_status') or 'unstamped')
+        rs[s] = rs.get(s, 0) + 1
+    print('review status:', dict(sorted(rs.items())))
+
+
+def cmd_review(args):
+    """Emit the human-review worklist: every card the LLM could not clear,
+    sorted by severity, evidence inlined. The exporter gates print on a human
+    advancing these to 'approved' (Human-in-the-loop QA; ELEXIS/Lexonomy)."""
+    if not os.path.exists(STORE):
+        print('store empty'); return
+    items = []
+    for line in open(STORE, encoding='utf-8'):
+        r = json.loads(line)
+        status = r.get('review_status')
+        if status is None:                 # legacy card → derive from ok+severity
+            status = 'judged' if (r.get('ok') and (r.get('severity') or 0) < 3) else 'needs_review'
+        if status in ('judged', 'human_reviewed', 'approved'):
+            continue                       # cleared (by LLM or human); not in the queue
+        v = r.get('verdict') or {}
+        items.append({'ord': r['ord'], 'key1': r['key1'], 'key2': r.get('key2'),
+                      'severity': r.get('severity') or v.get('severity') or 0,
+                      'reason': v.get('reason') or v.get('issues') or v.get('note') or '',
+                      'key_match': r.get('key_match'), 'placeholders_ok': r.get('placeholders_ok'),
+                      'review_status': r.get('review_status', 'unstamped'),
+                      'ru': r.get('ru', ''), 'attested': r.get('attested', [])})
+    items.sort(key=lambda x: -(x['severity'] or 0))
+    with open(REVIEW_Q, 'w', encoding='utf-8', newline='') as o:
+        for it in items:
+            o.write(json.dumps(it, ensure_ascii=False) + '\n')
+    print('review queue: %d card(s) need a human → %s (sorted by severity)'
+          % (len(items), os.path.basename(REVIEW_Q)))
+    for it in items[:15]:
+        print('  sev%s  ord=%s  %s  key_match=%s ph_ok=%s  %s'
+              % (it['severity'], it['ord'], it['key1'], it['key_match'],
+                 it['placeholders_ok'], (it['reason'] or '')[:60]))
 
 
 def main():
     if len(sys.argv) < 2:
         print(__doc__); return
-    {'build': cmd_build, 'collect': cmd_collect, 'status': cmd_status}.get(
+    {'build': cmd_build, 'collect': cmd_collect, 'status': cmd_status,
+     'review': cmd_review}.get(
         sys.argv[1], lambda *_: print(__doc__))(sys.argv[2:])
 
 
