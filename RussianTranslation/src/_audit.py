@@ -1,0 +1,103 @@
+#!/usr/bin/env python
+"""Recurring deterministic integrity audit of corpus_lexicon.jsonl.
+
+Run at each build milestone. Catches every known corruption mode STRUCTURALLY
+(no LLM, ~1s): placeholder-group fabrication leak, non-Cyrillic ru, ru==sa,
+refusal strings, '√' in key, exact dups, stratum mis-attachment, un-stratified
+works. Reports the delta since the last run (_audit_state.json) so attention
+goes to newly-processed works. Exit 0 = clean, 1 = contamination found.
+"""
+import json, os, re, sys, collections
+sys.stdout.reconfigure(encoding='utf-8')
+sys.stderr.reconfigure(encoding='utf-8')
+
+HERE = os.path.dirname(os.path.abspath(__file__))
+SM = os.path.normpath(os.path.join(HERE, '..', '..', '..', 'SamudraManthanam',
+                                   'web', 'corpus_builder', 'jsonl'))
+LEX = os.path.join(HERE, 'corpus_lexicon.jsonl')
+STRATA = json.load(open(os.path.join(HERE, 'corpus_strata.json'), encoding='utf-8'))
+STATE = os.path.join(HERE, '_audit_state.json')
+CYR = re.compile('[Ѐ-ӿԀ-ԯⷠ-ⷿꙀ-ꚟ]')
+REJECT_RU = {'(no clear counterpart)', 'нет соответствия', '—', '…', '...'}
+
+
+def has_cyr(s):
+    return bool(s) and bool(CYR.search(s))
+
+
+_tg = {}
+def translated_groups(work):
+    """Groups whose source seg=ru carries Cyrillic (a real translation)."""
+    if work in _tg:
+        return _tg[work]
+    s = set()
+    f = os.path.join(SM, work + '.jsonl')
+    if os.path.exists(f):
+        for line in open(f, encoding='utf-8'):
+            try:
+                e = json.loads(line)
+            except Exception:
+                continue
+            if e.get('seg') == 'ru' and not e.get('deleted') and has_cyr(e.get('text')):
+                s.add(e.get('group'))
+    _tg[work] = s
+    return s
+
+
+def main():
+    if not os.path.exists(LEX):
+        print('lexicon empty'); return 0
+    rows = collections.Counter()
+    groups = collections.defaultdict(set)
+    bad = collections.Counter()   # work -> contamination count
+    leak = collections.Counter()  # work -> rows whose group is NOT a real translation
+    seen = set(); dup = 0
+    tot = nocyr = rusa = sqrt = stratbad = unstrat = 0
+    for line in open(LEX, encoding='utf-8'):
+        try:
+            r = json.loads(line)
+        except Exception:
+            continue
+        tot += 1
+        w, g = r.get('work'), r.get('group')
+        rows[w] += 1; groups[w].add(g)
+        ru = (r.get('ru') or '').strip(); sa = (r.get('sa') or '').strip()
+        contam = False
+        if g not in translated_groups(w):
+            leak[w] += 1; contam = True
+        if not has_cyr(ru): nocyr += 1; contam = True
+        if ru == sa or ru in REJECT_RU: rusa += 1; contam = True
+        if chr(0x221a) in (r.get('slp1') or ''): sqrt += 1; contam = True
+        k = (g, r.get('slp1'), ru, r.get('kind'))
+        if k in seen: dup += 1; contam = True
+        seen.add(k)
+        st = STRATA.get(w)
+        if st is None:
+            unstrat += 1; contam = True
+        elif r.get('genre') != st.get('genre') or r.get('date') != st.get('date_median'):
+            stratbad += 1; contam = True
+        if contam:
+            bad[w] += 1
+
+    prev = json.load(open(STATE, encoding='utf-8')) if os.path.exists(STATE) else {}
+    prev_rows = prev.get('rows', {})
+    new_works = [w for w in rows if w not in prev_rows]
+
+    print('=== integrity audit: %d rows, %d works, %d distinct groups ==='
+          % (tot, len(rows), sum(len(s) for s in groups.values())))
+    print('contamination (all MUST be 0): placeholder-leak=%d non-Cyrillic=%d ru==sa=%d sqrt-key=%d dup=%d stratum-mismatch=%d un-stratified=%d'
+          % (sum(leak.values()), nocyr, rusa, sqrt, dup, stratbad, unstrat))
+    if new_works:
+        print('NEW works since last audit: ' + ', '.join('%s(+%d)' % (w, rows[w]) for w in new_works))
+    if bad:
+        print('!! DIRTY works:')
+        for w, c in bad.most_common():
+            print('   %s: %d contaminated rows (leak=%d)' % (w, c, leak[w]))
+    json.dump({'rows': dict(rows), 'total': tot}, open(STATE, 'w', encoding='utf-8'))
+    clean = not bad
+    print('VERDICT:', 'CLEAN' if clean else 'CONTAMINATION FOUND')
+    return 0 if clean else 1
+
+
+if __name__ == '__main__':
+    sys.exit(main())

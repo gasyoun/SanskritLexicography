@@ -7,6 +7,9 @@
 # The build script + README are committed; the data is regenerated locally.
 RussianTranslation/src/*.jsonl
 
+# transient audit/build state (regenerated each run)
+RussianTranslation/src/_audit_state.json
+
 # Python bytecode
 __pycache__/
 *.pyc
