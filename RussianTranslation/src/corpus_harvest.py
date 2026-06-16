@@ -8,8 +8,10 @@ counted, and split translation-vs-commentary. When the PWG sense's <ls> citation
 is known, ls_source_map.json resolves it to a stratum so that stratum's
 renderings surface first (a Ṛgvedic citation → the Vedic Russian).
 
-  python corpus_harvest.py top [N]            most-attested keys
-  python corpus_harvest.py <slp1> [LS_KEY]    attested Russian for a headword
+  python corpus_harvest.py top [N]                   most-attested keys
+  python corpus_harvest.py <slp1> [LS_KEY] [--raw]   attested Russian for a headword
+      LS_KEY  PWG <ls> source (e.g. M, MBH) → its stratum surfaces first
+      --raw   keep function-word renderings (for particle/pronoun headwords)
 """
 import json, os, sys, collections
 sys.stdout.reconfigure(encoding='utf-8')
@@ -45,6 +47,31 @@ def lemma_key(ru):
     return _lemcache[ru]
 
 
+# classify a rendering so alignment noise (particles, pronouns) is separable from
+# real lexical senses; proper names are kept but tagged (they may be the correct
+# rendering of a name-headword, or leakage from the verse's referent).
+_FUNC = {'CONJ', 'PREP', 'PRCL', 'NPRO', 'INTJ', 'PRED'}
+_NAME = {'Name', 'Surn', 'Patr', 'Geox', 'Orgn'}
+_posc = {}
+
+
+def pos_class(lemma):
+    if not _MORPH or ' ' in lemma:       # multi-word gloss = content
+        return 'content'
+    if lemma not in _posc:
+        cls = 'content'
+        try:
+            tag = _MORPH.parse(lemma)[0].tag
+            if tag.POS in _FUNC:
+                cls = 'func'
+            elif any(g in tag for g in _NAME):
+                cls = 'name'
+        except Exception:
+            pass
+        _posc[lemma] = cls
+    return _posc[lemma]
+
+
 def index():
     idx = collections.defaultdict(list)
     if os.path.exists(LEX):
@@ -75,7 +102,7 @@ def harvest(rows, prefer_period=None):
     for (period, genre), rends in by_stratum.items():
         renderings = sorted(
             ({'lemma': lem, 'count': c['n'], 'kinds': sorted(c['kinds']),
-              'works': len(c['works']),
+              'works': len(c['works']), 'pos': pos_class(lem),
               'forms': [f for f, _ in c['forms'].most_common(6)]} for lem, c in rends.items()),
             key=lambda x: -x['count'])
         out.append({'period': period, 'genre': genre,
@@ -103,7 +130,10 @@ def main():
             print('  %-18s %5d' % (k, c))
         return
     slp1 = sys.argv[1]
-    ls_key = sys.argv[2] if len(sys.argv) > 2 else None
+    rest = sys.argv[2:]
+    raw = '--raw' in rest             # particle/pronoun headwords: don't filter function words
+    rest = [a for a in rest if a != '--raw']
+    ls_key = rest[0] if rest else None
     pref = resolve_period(ls_key)
     rows = idx.get(slp1, [])
     if not rows:
@@ -113,11 +143,18 @@ def main():
     for s in harvest(rows, pref):
         star = ' ◀ cited stratum' if s['period'] == pref else ''
         print('· %s · %s (%d)%s' % (s['period'], s['genre'], s['total'], star))
-        for r in s['renderings'][:8]:
+        shown = s['renderings'] if raw else [r for r in s['renderings'] if r['pos'] != 'func']
+        if not shown:                 # pure function-word headword → the func words ARE the senses
+            shown = s['renderings']
+        hid = len(s['renderings']) - len(shown)
+        for r in shown[:8]:
             tag = '+comm' if 'commentary' in r['kinds'] else ''
+            nm = ' (name)' if r['pos'] == 'name' else ''
             var = [f for f in r['forms'] if f.lower() != r['lemma']]
             variants = ('  [' + ', '.join(var[:5]) + ']') if var else ''
-            print('     %4d  %-16s%s %s' % (r['count'], r['lemma'], variants, tag))
+            print('     %4d  %-16s%s%s %s' % (r['count'], r['lemma'] + nm, variants, '', tag))
+        if hid:
+            print('       (+%d function-word rendering(s) suppressed as noise)' % hid)
 
 
 if __name__ == '__main__':
