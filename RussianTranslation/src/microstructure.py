@@ -105,12 +105,30 @@ def split_senses(body):
     return out
 
 
+FUNC_DE = set('der die das den dem des ein eine einen einem eines und oder aber auf in an zu von '
+              'mit bei nach für so als wie am im zum zur ist sind war auch nur noch nicht wo wenn '
+              'dass vor über unter durch ohne um bis'.split())
+
+
+def _is_func(s):
+    toks = [t for t in re.sub(r'[^\wäöüßÄÖÜ ]', ' ', s.lower()).split() if t]
+    return bool(toks) and all(t in FUNC_DE for t in toks)
+
+
 def sense_node(seg):
-    # headword equivalents come BEFORE the first citation; {%German%} after a cited
-    # compound {#…#} glosses that compound, not the headword (audit: anna ≠ 'zubereiteter Reis').
-    head = seg['text'].split('<ls', 1)[0]
-    de = [clean_de(g) for g in PCT.findall(head)]
-    de = [d for d in de if d]
+    # headword equivalent(s) = {%German%} in the sub-sense HEAD: before the first
+    # citation, outside (...) cross-refs, before a compound {#…#} interrupts the run,
+    # and not a bare function word. (audit: anna≠'zubereiteter Reis', agni≠'der/auf/
+    # und', arjuna≠ parenthetical 'die Morgenröthe'.)
+    head = re.sub(r'\([^)]*\)', ' ', seg['text'].split('<ls', 1)[0])
+    de, gl = [], list(PCT.finditer(head))
+    if gl:
+        nxt = SA.search(head, gl[0].end())          # first Sanskrit form after the first gloss
+        cut = nxt.start() if nxt else len(head)
+        for m in gl:
+            g = clean_de(m.group(1))
+            if m.start() < cut and g and not _is_func(g):
+                de.append(g)
     gloss = clean_de(seg['text'])
     cites = [source_key(c) for c in LS.findall(seg['text'])]
     cites = [c for c in cites if c]
