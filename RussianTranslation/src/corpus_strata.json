@@ -27,7 +27,7 @@
   "date_median": 70,
   "genre": "Epic — Itihāsa (Rām)",
   "genre_code": "GE",
-  "groups": 2268,
+  "groups": 2265,
   "period": "Epic / early-Classical",
   "size": 4,
   "source": "Dharmamitra (date) + Renou (genre)"
@@ -71,7 +71,7 @@
   "date_median": 70,
   "genre": "Epic — Itihāsa (Rām)",
   "genre_code": "GE",
-  "groups": 4307,
+  "groups": 4292,
   "period": "Epic / early-Classical",
   "size": 4,
   "source": "Dharmamitra (date) + Renou (genre)"
@@ -115,7 +115,7 @@
   "date_median": 70,
   "genre": "Epic — Itihāsa (Rām)",
   "genre_code": "GE",
-  "groups": 2447,
+  "groups": 2441,
   "period": "Epic / early-Classical",
   "size": 4,
   "source": "Dharmamitra (date) + Renou (genre)"
@@ -368,7 +368,7 @@
   "date_median": -1125,
   "genre": "Veda — Saṃhitā",
   "genre_code": "GV",
-  "groups": 1751,
+  "groups": 1750,
   "period": "Ṛgvedic",
   "size": 3,
   "source": "Dharmamitra (date) + Renou (genre)"
@@ -412,9 +412,9 @@
   "date_median": 80,
   "genre": "Epic — Itihāsa (MBh)",
   "genre_code": "GE",
-  "groups": 12692,
+  "groups": 22,
   "period": "Epic / early-Classical",
-  "size": 5,
+  "size": 1,
   "source": "Dharmamitra (date) + Renou (genre)"
  },
  "13_atharvaveda": {
@@ -434,9 +434,9 @@
   "date_median": 80,
   "genre": "Epic — Itihāsa (MBh)",
   "genre_code": "GE",
-  "groups": 6537,
+  "groups": 0,
   "period": "Epic / early-Classical",
-  "size": 5,
+  "size": 1,
   "source": "Dharmamitra (date) + Renou (genre)"
  },
  "14_atharvaveda": {
@@ -555,7 +555,7 @@
   "date_median": -940,
   "genre": "Veda — Saṃhitā",
   "genre_code": "GV",
-  "groups": 311,
+  "groups": 310,
   "period": "Vedic (Brāhmaṇa–Upaniṣad)",
   "size": 2,
   "source": "Dharmamitra (date) + Renou (genre)"
@@ -676,7 +676,7 @@
   "date_median": 200,
   "genre": "Epic — Gītā",
   "genre_code": "GE",
-  "groups": 696,
+  "groups": 695,
   "period": "Epic / early-Classical",
   "size": 3,
   "source": "Dharmamitra (date) + Renou (genre)"
@@ -1149,7 +1149,7 @@
   "date_median": 550,
   "genre": "Kāvya — gnomic (śataka)",
   "genre_code": "GK",
-  "groups": 310,
+  "groups": 309,
   "period": "Classical",
   "size": 2,
   "source": "Dharmamitra (date) + Renou (genre)"
@@ -1182,7 +1182,7 @@
   "date_median": 388,
   "genre": "Śāstra — Kāma / kathā",
   "genre_code": "GS",
-  "groups": 260,
+  "groups": 253,
   "period": "Epic / early-Classical",
   "size": 2,
   "source": "Dharmamitra (date) + Renou (genre)"

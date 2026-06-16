@@ -40,6 +40,18 @@ def _key():
 KEY = _key()
 _STRATA_PATH = os.path.join(HERE, 'corpus_strata.json')
 STRATA = json.load(open(_STRATA_PATH, encoding='utf-8')) if os.path.exists(_STRATA_PATH) else {}
+
+# A Russian segment with NO Cyrillic letter is an UNTRANSLATED placeholder
+# (e.g. '…' / '—' in works the corpus has not yet rendered). Feeding such a
+# segment to DeepSeek makes it HALLUCINATE fluent alignments against a
+# translation that does not exist — pure invention. We refuse to align, or to
+# write, any Russian that carries no Cyrillic.
+CYR = re.compile('[Ѐ-ӿԀ-ԯⷠ-ⷿꙀ-ꚟ]')
+REJECT_RU = {'(no clear counterpart)', 'нет соответствия', '—', '…', '...'}
+
+
+def has_cyr(s):
+    return bool(s) and bool(CYR.search(s))
 SYS = ('You align a Sanskrit verse to its Russian translation at the WORD level. '
        'For each notable Sanskrit CONTENT word (noun, verb, adjective; skip pure '
        'particles/conjunctions), give the Russian word or phrase that renders it '
@@ -78,18 +90,24 @@ def align(sa_text, ru_text):
 
 
 SYS_BATCH = ('You word-align Sanskrit to Russian. You are given N items; each has a '
-             'Sanskrit text and its Russian rendering. For EACH item INDEPENDENTLY, map '
-             'every Sanskrit content word (noun, verb, adjective; skip pure particles) to '
-             'its Russian equivalent in THAT item — NEVER carry a word between items. Use '
-             'the dictionary/citation form of the Sanskrit word. Output ONLY JSON: '
+             'Sanskrit text and a Russian rendering. For EACH item INDEPENDENTLY, map '
+             'each Sanskrit content word (noun, verb, adjective; skip pure particles) to '
+             'its Russian equivalent in THAT item only — NEVER carry a word between items. '
+             'Use the dictionary/citation form of the Sanskrit word. Items marked [NOTE] '
+             'are sparse commentary footnotes, NOT full translations: for those align ONLY '
+             'the words the note actually glosses and OMIT verse words it does not mention. '
+             'CRITICAL: if a Sanskrit word has no genuine Russian counterpart in the '
+             'item, OMIT it — never invent a rendering, never output a placeholder, never '
+             'echo the Sanskrit. Output ONLY JSON: '
              '{"items":[{"i":<0-based item index>,"pairs":[{"sa":"<sanskrit word, IAST>",'
              '"ru":"<russian equivalent>"}]}]} — exactly one entry per item index i.')
 
 
 def align_batch(units):
-    """units = [(sa_text, ru_text), …] → list of pairs-lists, aligned by index."""
-    body = '\n\n'.join('ITEM %d\nSanskrit: %s\nRussian: %s'
-                       % (i, sa[:700], ru[:900]) for i, (sa, ru) in enumerate(units))
+    """units = [(sa_text, ru_text, kind), …] → list of pairs-lists, aligned by index."""
+    body = '\n\n'.join('ITEM %d %s\nSanskrit: %s\nRussian: %s'
+                       % (i, '[NOTE]' if k == 'commentary' else '[TRANSLATION]', sa[:700], ru[:900])
+                       for i, (sa, ru, k) in enumerate(units))
     out = deepseek(body, system=SYS_BATCH)
     res = [[] for _ in units]
     if out:
@@ -120,18 +138,22 @@ def pairs_of(textfile, with_comm=True):
         if not (sa and sa.get('text')):
             continue
         targets = []
-        if d.get('ru') and d['ru'].get('text'):
+        # only align a Russian segment that actually carries Cyrillic — an
+        # untranslated placeholder ('…') would otherwise make DeepSeek fabricate.
+        if d.get('ru') and has_cyr(d['ru'].get('text')):
             targets.append((d['ru']['text'], 'translation'))
         if with_comm:
             for seg in sorted(s for s in d if s and s.startswith('comm')):
-                if d[seg].get('text'):
+                if has_cyr(d[seg].get('text')):
                     targets.append((d[seg]['text'], 'commentary'))
         if targets:
             yield g, work, sa.get('passage', ''), sa['text'], targets
 
 
 def to_slp1(sa_iast):
-    return cg.form_key(build_src.iast_to_slp1(sa_iast))
+    # DeepSeek sometimes emits dhātu citation notation (√gam); strip the √ so the
+    # key is a clean SLP1 token that can match a verse form and join the lexicon.
+    return cg.form_key(build_src.iast_to_slp1((sa_iast or '').replace('√', '').strip()))
 
 
 def done_groups():
@@ -184,16 +206,25 @@ def cmd_build(args):
         meta, units = [], []                     # meta[i] ↔ units[i]
         for g, passage, sa, targets in batch:
             for text, kind in targets:
-                meta.append((g, passage, kind)); units.append((sa, text))
-        rows = []
+                meta.append((g, passage, kind)); units.append((sa, text, kind))
+        rows, seen = [], set()
         for (g, passage, kind), pairs in zip(meta, align_batch(units)):
             for p in pairs:
-                slp1 = to_slp1(p.get('sa', ''))
-                if slp1 and p.get('ru'):
-                    rows.append({'group': g, 'work': work, 'passage': passage, 'slp1': slp1,
-                                 'sa': p.get('sa'), 'ru': p.get('ru'), 'kind': kind,
-                                 'genre': st.get('genre'), 'period': st.get('period'),
-                                 'date': st.get('date_median')})
+                sa_w = (p.get('sa') or '').strip()
+                ru_w = (p.get('ru') or '').strip()
+                slp1 = to_slp1(sa_w)
+                if not (slp1 and has_cyr(ru_w)):       # gloss must be real Russian
+                    continue
+                if ru_w == sa_w or ru_w in REJECT_RU:  # untranslated / refusal string
+                    continue
+                key = (g, slp1, ru_w, kind)
+                if key in seen:                        # dedup repeated commentary units
+                    continue
+                seen.add(key)
+                rows.append({'group': g, 'work': work, 'passage': passage, 'slp1': slp1,
+                             'sa': sa_w, 'ru': ru_w, 'kind': kind,
+                             'genre': st.get('genre'), 'period': st.get('period'),
+                             'date': st.get('date_median')})
         return rows
 
     wrote = doneb = 0
