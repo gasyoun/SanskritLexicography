@@ -57,15 +57,33 @@ def source_key(inner):
 
 
 def strata_of(citations):
-    # Only CORPUS-BACKED text sources set a sense's stratum. A grammarian/lexicon
-    # form-citation (Pāṇini, the kośas) attests that the WORD exists, not a dated
-    # textual usage — so it must not label the sense's diasystem (the audit caught
-    # 'Erde im Vedānta' mislabeled Vedic because Pāṇini cites the form).
+    # HARVEST stratum: only CORPUS-BACKED text sources, so the reader's corpus
+    # Russian is pulled from a stratum we actually have. (A grammarian/lexicon
+    # form-citation must not select a harvest stratum.)
     seen = {}
     for c in citations:
         rec = LSMAP.get(c)
         if rec and rec.get('harvestable') and rec.get('period'):
             seen[ch.norm_period(rec['period'])] = rec['name']
+    return seen
+
+
+# form-citation genres attest the WORD, not a dated usage → never a diasystem label
+_FORM_CIT = ('Kośa', 'Vyākaraṇa', 'lexicon', 'nighaṇṭu')
+
+
+def diasystem_of(citations):
+    """Reader-facing diachronic label from ALL dated TEXT citations — including
+    Vedic texts not in our corpus (Brāhmaṇas, Saṃhitās) — but excluding
+    form-citation sources (grammars, kośas) so a Pāṇini form-cite cannot mislabel."""
+    seen = set()
+    for c in citations:
+        rec = LSMAP.get(c)
+        if not (rec and rec.get('period')):
+            continue
+        if any(t in (rec.get('genre') or '') for t in _FORM_CIT):
+            continue
+        seen.add(ch.norm_period(rec['period']))
     return seen
 
 
@@ -143,6 +161,7 @@ def sense_node(seg):
             ab_labels.append(lab)
             if pab.is_diasystem(lab):
                 dia.add(lab)
+    dia |= diasystem_of(cites)          # + diachronic label from dated text citations
     eq = 'equivalent' if (de and all(len(d.split()) <= 2 for d in de)) else \
          ('explanatory' if gloss else 'none')
     return {'n': seg['n'], 'sub': seg['sub'], 'equivalents_de': de,
@@ -205,7 +224,7 @@ def pretty(p):
             print('   · [head] %s' % s['gloss_de'][:120])
             continue
         tag = s['n'] + (s['sub'] or '')
-        strat = (' {%s}' % ', '.join(s['strata'])) if s['strata'] else ''
+        strat = (' {%s}' % ', '.join(sorted(s['diasystem']))) if s.get('diasystem') else ''
         eqs = ' = ' + ' · '.join(s['equivalents_de']) if s['equivalents_de'] else ''
         print('   %-4s [%s]%s%s' % (tag + ')', s['equivalence_type'], eqs, strat))
         if s['equivalence_type'] == 'explanatory' and s['gloss_de']:
