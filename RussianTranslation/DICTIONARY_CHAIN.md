@@ -104,12 +104,28 @@ Confirmed from [`nws.uzi.uni-halle.de`](https://nws.uzi.uni-halle.de/?lang=de) (
   pw/Schmidt, (b) **new senses/grammar flags** on existing lemmas, (c) **citations to
   follow up** — high value for *coverage* and *recency*, low volume for translation.
 
-**Drift severity — measurable, not speculative.** The scraper captures, per headword,
-the `pw` and `sch` fragments NWS itself returns. Diffing those against current
-`csl-orig/v02/pw` + `/sch` quantifies how far the ~2013 snapshot has drifted from
-today's Cologne text (PWK timeline since: bibliography crefs 2016, IAST 2018, verbs
-2020, abbrev 2022–24, MBH/Rām link-splitting 2025). This diff runs once the a-section
-has accumulated — no separate access request needed for the measurement.
+**Drift severity — MEASURED on the a-section (2026-06-17, `_nws_drift.py`): LOW.**
+Comparing the `sch` fragment NWS returns against current `csl-orig/v02/sch` over all
+24,621 a-headwords:
+- **SCH coverage drift ≈ 0.2 %** — of 7,958 shared Schmidt entries, only 26 are
+  NWS-only and 29 csl-orig-only. The Schmidt headword set is essentially unchanged
+  since NWS's 2013 snapshot.
+- **SCH content ≈ 96 % identical** (mean token-Jaccard **0.984** after stripping
+  boilerplate — NWS's `― Schmidt S. NN (show scan)` tail vs csl-orig's
+  `{part=,seq=,…}` metadata). The residual ~4 % is mostly **homonym-rendering
+  granularity** (NWS bundles `agnihotra` 1+2; csl-orig splits them), not corrections.
+- **PW coverage:** the apparent 19.9 % "csl-orig-only" is an **artifact**, not drift —
+  every case is a PW *supplement* record (`<info n="sup_N"/>`) or an `a`-privative
+  sub-compound (`abahirvāsas`, `abahis`) that csl-orig indexes separately but NWS's
+  search doesn't surface standalone. (Only `pw_len` was stored, so a byte-level pw
+  content diff would need a re-scrape — not worth it given SCH shows minimal drift.)
+
+**Conclusion:** NWS's 2013 Cologne base is **not dangerously stale** — we can trust its
+pw/Schmidt content as-is; its real contribution is the **net-new `nws` material**
+(~23 % of a-headwords), not a divergent base. No reconciliation needed before using it.
+⚠️ *Methodology note (F9 lesson):* the first pass reported 43 % "major" SCH drift and
+19.9 % PW drift; both were verification artifacts (formatting boilerplate; index
+granularity). Always eyeball a flagged case before trusting a scary aggregate.
 
 **Access caveat.** NWS states no licence and is a small/slow server; the scrape is
 rate-limited, identified, gitignored, and provisional. For the *full* dataset a formal
