@@ -174,3 +174,34 @@ rows and read the source before destroying data. (A minor legacy item remains: a
 few pre-fix commentary rows were aligned against non-Cyrillic reference notes and
 mis-tagged; the Russian is the verse's, harmless, queued for the post-build
 re-stamp.)
+
+
+---
+
+## F10 · Windows ate the capital letters — case-insensitive filenames — `2026-06-17`
+
+**Bad.** The NWS scrape wrote one `pilot/nws/<key>.json` per headword, named by the
+raw SLP1 key. On Windows `aMSa.json` and `AMSa.json` are the **same file**, so the
+second variant's existence-check returned True and it was skipped as "already done"
+— **silently lost**. The a-section alone: **1,795 colliding groups, 2,311 headwords
+dropped** (e.g. `ABIka`/`aBIka`/`aBika` = ābhīka/abhīka/abhika → one file). The retry
+pass even reported *"24621 done, 0 to fetch"* while 2,311 files were missing — the bug
+wearing the mask of completion. Concurrency made it worse: 8 workers could both pass
+the existence check and overwrite via `os.replace` (last-writer-wins).
+
+**Why.** SLP1 is **case-sensitive** — uppercase encodes distinct phonemes (`A`=ā,
+`S`=ś, `B`=bh, `R`=ṇ). NTFS is **case-insensitive**. Using the key directly as a
+filename collapses every case variant.
+
+**Fix.** `safe_name()` encodes each uppercase letter as `_`+lowercase → an injective,
+all-lowercase stem with no case-insensitive collisions (`aMSa`→`a_m_sa`, `AMSa`→
+`_a_m_sa`). **Proven**: 24,621 keys → 24,621 distinct case-insensitive names. Existing
+files migrated by their internal `key1`; the lost variants re-fetched.
+
+**Good.** Full a-section with **zero collisions** — and the bug was caught on the
+**15% a-section sample BEFORE scaling** to all 167,990 headwords, where it would have
+quietly lost ~15k.
+
+**Lesson.** Never use externally-supplied, case-sensitive identifiers as filenames on
+a case-insensitive filesystem. And a clean-looking "completion" can hide silent data
+loss — **audit the representative sample before you scale**, not after.
