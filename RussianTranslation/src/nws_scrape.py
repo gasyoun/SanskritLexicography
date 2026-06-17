@@ -37,6 +37,15 @@ def iast(key1):
     return ''.join(cg._S2I.get(c, c) for c in cg.form_key(key1))
 
 
+def safe_name(key1):
+    """Case-collision-safe filename stem. SLP1 is case-sensitive (aMSa != AMSa,
+    s != S=ś) but Windows filesystems are case-INSENSITIVE, so the raw key as a
+    filename silently merges case variants. Encode each uppercase letter as '_'+
+    lowercase ('_' never occurs in SLP1 keys) → an all-lowercase, injective stem
+    with no case-insensitive collisions. aMSa→a_m_sa, AMSa→_a_m_sa."""
+    return ''.join('_' + c.lower() if c.isupper() else c for c in key1)
+
+
 def session():
     s = requests.Session()
     s.headers['User-Agent'] = UA
@@ -94,7 +103,7 @@ def tl_session(force=False):
 def scrape_one(word, delay):
     """Fetch + write one headword. Thread-safe (own session, atomic write).
     Returns 'extra' / 'plain' / 'skip' (skip = no result; left un-written → retried)."""
-    out_path = os.path.join(OUT, word + '.json')
+    out_path = os.path.join(OUT, safe_name(word) + '.json')
     if os.path.exists(out_path):
         return 'plain'
     ia = iast(word)
@@ -157,7 +166,7 @@ def main():
     else:
         words = args or ['agni', 'arTa', 'aMSa', 'amfta', 'anna']
     os.makedirs(OUT, exist_ok=True)
-    todo = [w for w in words if not os.path.exists(os.path.join(OUT, w + '.json'))]   # resumable
+    todo = [w for w in words if not os.path.exists(os.path.join(OUT, safe_name(w) + '.json'))]   # resumable
     s, token = session()                          # validate connectivity up front
     if not token:
         sys.exit('could not establish session / csrf-token')
