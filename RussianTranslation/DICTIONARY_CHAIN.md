@@ -24,19 +24,37 @@ the earlier ones.
 - **SCH, NWS, PWKVN are *supplements*** — pure addenda keyed to the Petersburg
   tradition (NWS explicitly excludes what PW/Schmidt already have).
 
-## NWS and the "old Cologne snapshot" (the prerequisite research task)
-NWS was built on **PW + Schmidt data handed to Halle by Th. Malten (Köln)** — a
-*snapshot* of the Cologne data, with Halle's own modifications/corrections. So:
-1. **How old?** Determine the snapshot date Malten supplied (the NWS project's
-   start; likely late-1990s–2000s) vs today's `csl-orig` PW/SCH.
-2. **What changed since?** Diff that snapshot against current `csl-orig/v02/pw` +
-   `/sch` — the Cologne repos have had years of issue-driven corrections (PWK
-   timeline: bibliography crefs 2016, IAST 2018, verbs 2020, abbrev 2022–24, MBH/
-   Rām link-splitting 2025).
-3. **How severe?** Quantify (entries changed / corrected) to know whether NWS's
-   base is stale enough to need reconciliation before we trust its data.
-This is a standalone research + diff task (no NWS data is local yet — access/export
-from Halle is step 0).
+## NWS and the "old Cologne snapshot" — verified from the live site (2026-06-17)
+
+Confirmed from [`nws.uzi.uni-halle.de`](https://nws.uzi.uni-halle.de/?lang=de) (German project page, authoritative):
+
+- **What it is.** *Kumulatives Nachtragswörterbuch des Sanskrit* — a cumulative
+  supplement built **on** ("aufbauend auf") the Petersburg *kürzere Fassung* (**pw**,
+  Böhtlingk 1879–89) **+ Schmidt's Nachträge (1928)**. It records *only what those do
+  not already have*.
+- **When.** DFG project, **1 December 2013 – 31 December 2016**. Indology: Hanneder +
+  Demoto-Hahn (Marburg), Slaje + Einicke + Siegfried + Wilke (Halle). Informatics:
+  Molitor + Ritter + Heße (Halle). → The pw/Schmidt **base it rests on is a
+  ~2013-era Cologne snapshot** (Th. Malten's digitization), *not* the late-1990s I had
+  guessed.
+- **How its entries are shaped — important for us.** NWS does **not** reproduce the
+  evaluated glossary articles in full. Each is condensed to a *„Kleines Zitat"* —
+  noting only **new** information on *lemma / meaning / grammar* plus a **literature
+  reference**. So NWS gives us a **completeness index + pointers**, not bulk
+  translatable prose. Architecturally NWS contributes: (a) **new lemmas** absent from
+  pw/Schmidt, (b) **new senses/grammar flags** on existing lemmas, (c) **citations to
+  follow up** — high value for *coverage* and *recency*, low volume for translation.
+
+**Drift severity — measurable, not speculative.** The scraper captures, per headword,
+the `pw` and `sch` fragments NWS itself returns. Diffing those against current
+`csl-orig/v02/pw` + `/sch` quantifies how far the ~2013 snapshot has drifted from
+today's Cologne text (PWK timeline since: bibliography crefs 2016, IAST 2018, verbs
+2020, abbrev 2022–24, MBH/Rām link-splitting 2025). This diff runs once the a-section
+has accumulated — no separate access request needed for the measurement.
+
+**Access caveat.** NWS states no licence and is a small/slow server; the scrape is
+rate-limited, identified, gitignored, and provisional. For the *full* dataset a formal
+Halle data request remains the clean path (deferred per your call — scrape-only for now).
 
 ## Proposed architecture — layered per-headword aggregation
 
