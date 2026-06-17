@@ -16,13 +16,15 @@ dictionary average of ~1.5–3 senses/card).
 | tool calls | 98 | — | — |
 
 **One-time costs already paid (amortized over the whole dictionary, not per card):**
-- **Corpus word-alignment lexicon**: **$49 DeepSeek** (1.09M alignments, 190k keys),
-  ~hours of build. Every card reuses it for free → ~**$0.0005/card** amortized.
+- **Corpus word-alignment lexicon**: **$18.35 DeepSeek** (actual bill; 1.09M
+  alignments, 190k keys), ~hours of build. *(The watcher's live "$37–49" was an
+  over-projection — off-peak pricing + context-caching made the real $/alignment
+  lower.)* Every card reuses it for free → ~**$0.0005/card** amortized.
 - Gold-standard precision run: 1 workflow (~6 min). Microstructure, resolvers,
   abbreviation tables, prefaces: build effort, done.
 
 So the pilot's **marginal money cost was ≈ $0**; the only real money in the whole
-project so far is the **$49** one-time lexicon.
+project so far is the **$18** one-time lexicon.
 
 ## 2. Per-unit economics (corrected for density)
 
@@ -42,7 +44,7 @@ senses** total (the a-section is dense; the long tail is sparse).
 | **Tokens** | **~1.5–2.5 billion** | 300k senses × 8–10k tokens (translate+judge) |
 | **LLM agents** | ~210k+ | 2 per card (translate + judge), more on re-passes |
 | **Machine time** | **~300–600 h of *continuous* throughput** | pilot rate ~1.9 cards/min, faster on sparse cards; **but** the environment reaps long runs and Max has usage windows → **~1–2 months elapsed** with restarts (matches the "run Sonnet for a month" plan) |
-| **Direct money** | **≈ $49 total** (the lexicon, already spent) | LLM is $0 on Max; DeepSeek is one-time |
+| **Direct money** | **≈ $18 total** (the lexicon, already spent) | LLM is $0 on Max; DeepSeek is one-time |
 | **Human review** | **~15–25% of cards flagged** → the real bottleneck | pilot flagged 3/15 = 20%; the 3 guards should lower it; even at 15%, ~16k cards × a few min each = **hundreds of editor-hours** |
 
 ## 4. The headline
@@ -53,7 +55,7 @@ For a **printed scholarly dictionary**, the costs rank, in order:
    months). Quality—not compute—is the constraint, exactly as intended.
 2. **Calendar time** — ~1–2 months of mostly-unattended machine run-time (interrupted
    by reaps/quota; resumable, lossless).
-3. **Money** — **negligible**: ~$49 one-time (the DeepSeek lexicon). The Sonnet+Opus
+3. **Money** — **negligible**: ~$18 one-time (the DeepSeek lexicon). The Sonnet+Opus
    translation+judging is **free** on the Max subscription.
 
 ## 5. Levers (already in place or cheap)
