@@ -20,6 +20,8 @@ sys.stderr.reconfigure(encoding='utf-8')
 HERE = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(HERE, 'pilot', 'nws')
 STATE = os.path.join(OUT, '_watch_state.json')
+STATUS_TXT = os.path.join(OUT, '_status.txt')      # live one-line bar, every poll
+PROGRESS_LOG = os.path.join(OUT, '_progress.log')  # one line per 5% mark (history)
 KEYS = os.path.join(OUT, '_keys_a.txt')
 POLL = 30          # seconds between samples
 STALL = 180        # seconds with no new write → consider the scrape dead
@@ -54,14 +56,20 @@ def fmt_eta(sec):
     return ('%dh%02dm' % (h, m)) if h else ('%dm' % m)
 
 
-def line(n, extra, newest, total, rate_cpm, eta, tag=''):
+def status_str(n, extra, newest, total, rate_cpm, eta, tag=''):
     pct = 100 * n / total if total else 0
     stall = '  ⚠ STALLED (no write %.0fs — relaunch: python nws_scrape.py section a 1)' % newest if newest > STALL else ''
     ex = ('%d (%.0f%%)' % (extra, 100 * extra / n)) if n else '0'
-    print('%s %s %5.1f%%  %d/%d  NWS-extra %s  %.0f cards/min  ETA %s%s%s'
-          % (time.strftime('%H:%M:%S'), bar(pct), pct, n, total, ex,
-             rate_cpm, fmt_eta(eta), ('  '+tag) if tag else '', stall))
+    return ('%s %s %5.1f%%  %d/%d  NWS-extra %s  %.0f cards/min  ETA %s%s%s'
+            % (time.strftime('%H:%M:%S'), bar(pct), pct, n, total, ex,
+               rate_cpm, fmt_eta(eta), ('  ' + tag) if tag else '', stall))
+
+
+def line(n, extra, newest, total, rate_cpm, eta, tag=''):
+    s = status_str(n, extra, newest, total, rate_cpm, eta, tag)
+    print(s)
     sys.stdout.flush()
+    return s
 
 
 def load_state():
@@ -98,13 +106,15 @@ def main():
     if once:
         n, extra, newest, total = snapshot()
         cpm, eta = rate_eta(load_state().get('samples', []), n, total)
-        line(n, extra, newest, total, cpm, eta)
+        s = line(n, extra, newest, total, cpm, eta)
+        open(STATUS_TXT, 'w', encoding='utf-8').write(s + '\n')
         return
 
     st = load_state()
     samples = collections.deque(st.get('samples', []), maxlen=20)
     print('watching NWS a-section, bar every %g%%%s (Ctrl-C to stop)'
           % (step, '  [supervise on]' if supervise else ''))
+    print('  live bar: pilot/nws/_status.txt   milestones: pilot/nws/_progress.log')
     while True:
         n, extra, newest, total = snapshot()
         if not total:
@@ -112,13 +122,18 @@ def main():
         samples.append([time.time(), n])
         st['samples'] = list(samples)
         cpm, eta = rate_eta(samples, n, total)
+        # live bar — rewritten every poll so there's always a current status to read
+        open(STATUS_TXT, 'w', encoding='utf-8').write(
+            status_str(n, extra, newest, total, cpm, eta) + '\n')
         bucket = int((100 * n / total) // step)
         if bucket > st.get('last_bucket', -1):
-            line(n, extra, newest, total, cpm, eta, tag='◆ %g%% mark' % (bucket * step))
+            s = line(n, extra, newest, total, cpm, eta, tag='◆ %g%% mark' % (bucket * step))
+            open(PROGRESS_LOG, 'a', encoding='utf-8').write(s + '\n')
             st['last_bucket'] = bucket
         save_state(st)
         if n >= total:
-            line(n, extra, newest, total, cpm, eta, tag='✅ COMPLETE')
+            s = line(n, extra, newest, total, cpm, eta, tag='✅ COMPLETE')
+            open(PROGRESS_LOG, 'a', encoding='utf-8').write(s + '\n')
             return
         if supervise and newest > STALL:
             print('  ↻ stalled — relaunching scrape')
