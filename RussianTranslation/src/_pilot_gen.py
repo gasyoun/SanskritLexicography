@@ -34,8 +34,15 @@ def main():
             print('  MISSING: %s' % k); continue
         json.dump(portraits[k], open(os.path.join(OUT, k + '.portrait.json'), 'w', encoding='utf-8'),
                   ensure_ascii=False, indent=1)
-        open(os.path.join(OUT, k + '.raw.txt'), 'w', encoding='utf-8').write(
-            ('\n\n=== RECORD ===\n\n').join(raws[k]))
+        # label records: first = main entry, rest = Nachträge/Addenda (patches keyed
+        # to the main entry's sense numbers) — so the translator covers them all.
+        labeled = []
+        for i, body in enumerate(raws[k]):
+            role = ('MAIN ENTRY' if i == 0 else
+                    'NACHTRÄGE / ADDENDA #%d — patches (added citations, corrigenda, new senses) '
+                    'keyed to the MAIN entry sense numbers; render every one in full' % i)
+            labeled.append('=== RECORD %d — %s ===\n\n%s' % (i + 1, role, body))
+        open(os.path.join(OUT, k + '.raw.txt'), 'w', encoding='utf-8').write('\n\n'.join(labeled))
         ns = sum(len([s for s in p['senses'] if s['n'] != '0']) for p in portraits[k])
         print('  %-12s %d record(s), %d senses, corpus n=%s'
               % (k, len(portraits[k]), ns,
