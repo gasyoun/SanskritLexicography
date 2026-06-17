@@ -54,34 +54,59 @@ def frag(name, html):
     return re.sub(r'\s+', ' ', s).strip()
 
 
+def section_keys(section):
+    """All SLP1 form-keys for a letter-section across the 4 local layers (the
+    complete set we'd translate), so we scrape NWS for the merged headword set."""
+    import dict_merge as dm
+    keys = set()
+    for code, _, _ in dm.LAYERS:
+        for k in dm.index(code):
+            if k and (section == 'all' or k[:1].lower() == section.lower()):
+                keys.add(k)
+    return sorted(keys)
+
+
 def main():
     args = sys.argv[1:]
-    delay = float(args[0]) if args and args[0].replace('.', '').isdigit() else 3.0
-    words = [a for a in args if not a.replace('.', '').isdigit()] or \
-            ['agni', 'arTa', 'aMSa', 'amfta', 'anna']
+    delay = 2.0
+    for a in list(args):
+        if a.replace('.', '').isdigit():
+            delay = float(a); args.remove(a)
+    if args and args[0] == 'section':
+        words = section_keys(args[1] if len(args) > 1 else 'a')
+    else:
+        words = args or ['agni', 'arTa', 'aMSa', 'amfta', 'anna']
     os.makedirs(OUT, exist_ok=True)
+    todo = [w for w in words if not os.path.exists(os.path.join(OUT, w + '.json'))]   # resumable
     s, token = session()
     if not token:
         sys.exit('could not establish session / csrf-token')
-    print('session ok (csrf %s…), delay %.1fs' % (token[:10], delay))
-    for w in words:
+    print('session ok; %d headwords, %d already done, %d to fetch; delay %.1fs'
+          % (len(words), len(words) - len(todo), len(todo), delay))
+    n = extra_n = 0
+    for w in todo:
         ia = iast(w)
-        try:
-            html = fetch(s, token, ia)
-        except Exception as e:
-            print('  %s: fetch error %s' % (w, e)); time.sleep(delay); continue
+        html = ''
+        for attempt in (1, 2):
+            try:
+                html = fetch(s, token, ia)
+            except Exception:
+                html = ''
+            if html and 'was rejected' not in html[:2000] and len(html) > 1500:
+                break
+            s, token = session(); time.sleep(delay)   # refresh expired session
         nws, pw, sch = frag('nws', html), frag('pw', html), frag('sch', html)
-        extra = bool(nws) and nws not in (pw, sch)
+        ex = bool(nws) and nws not in (pw, sch)
         json.dump({'key1': w, 'iast': ia, 'nws': nws, 'sch': sch,
-                   'pw_len': len(pw), 'has_nws_extra': extra},
+                   'pw_len': len(pw), 'has_nws_extra': ex},
                   open(os.path.join(OUT, w + '.json'), 'w', encoding='utf-8'),
                   ensure_ascii=False, indent=1)
-        print('%-10s %-10s nws=%-4d pw=%-4d sch=%-3d %s' %
-              (w, ia, len(nws), len(pw), len(sch), '★ NWS-extra' if extra else ''))
-        if nws:
-            print('   NWS: %s' % nws[:140])
+        n += 1; extra_n += 1 if ex else 0
+        if n % 50 == 0 or n <= 5:
+            print('  [%d/%d] %-12s nws=%-4d %s  (NWS-extra so far: %d)'
+                  % (n, len(todo), ia, len(nws), '★' if ex else ' ', extra_n))
         time.sleep(delay)
-    print('→ %s' % OUT)
+    print('done: fetched %d, with NWS-extra %d → %s' % (n, extra_n, OUT))
 
 
 if __name__ == '__main__':
