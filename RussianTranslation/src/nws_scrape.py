@@ -56,14 +56,21 @@ def frag(name, html):
 
 def section_keys(section):
     """All SLP1 form-keys for a letter-section across the 4 local layers (the
-    complete set we'd translate), so we scrape NWS for the merged headword set."""
+    complete set we'd translate). Cached to a file so reap-restarts are instant
+    (rebuilding the 4 dict indexes costs ~90s)."""
+    os.makedirs(OUT, exist_ok=True)
+    cache = os.path.join(OUT, '_keys_%s.txt' % section)
+    if os.path.exists(cache):
+        return [l.strip() for l in open(cache, encoding='utf-8') if l.strip()]
     import dict_merge as dm
     keys = set()
     for code, _, _ in dm.LAYERS:
         for k in dm.index(code):
             if k and (section == 'all' or k[:1].lower() == section.lower()):
                 keys.add(k)
-    return sorted(keys)
+    keys = sorted(keys)
+    open(cache, 'w', encoding='utf-8').write('\n'.join(keys))
+    return keys
 
 
 def main():
