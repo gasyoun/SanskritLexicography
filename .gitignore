@@ -17,3 +17,7 @@ __pycache__/
 # secrets — API keys, NEVER commit
 .env
 *.env
+
+# pilot run data (PWG German + copyrighted corpus Russian)
+RussianTranslation/src/pilot/input/
+RussianTranslation/src/pilot/output/
