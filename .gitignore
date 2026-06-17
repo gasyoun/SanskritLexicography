@@ -21,3 +21,4 @@ __pycache__/
 # pilot run data (PWG German + copyrighted corpus Russian)
 RussianTranslation/src/pilot/input/
 RussianTranslation/src/pilot/output/
+RussianTranslation/src/pilot/nws/
