@@ -33,7 +33,7 @@ def iast(key1):
 def session():
     s = requests.Session()
     s.headers['User-Agent'] = UA
-    r = s.get(BASE + '/?lang=en', timeout=20)
+    r = s.get(BASE + '/?lang=en', timeout=30)
     m = re.search(r'name="csrf-token" content="([^"]+)"', r.text)
     return s, (m.group(1) if m else '')
 
@@ -87,14 +87,21 @@ def main():
     for w in todo:
         ia = iast(w)
         html = ''
-        for attempt in (1, 2):
+        for attempt in (1, 2, 3):
             try:
                 html = fetch(s, token, ia)
+                if html and 'was rejected' not in html[:2000] and len(html) > 1500:
+                    break
             except Exception:
                 html = ''
-            if html and 'was rejected' not in html[:2000] and len(html) > 1500:
-                break
-            s, token = session(); time.sleep(delay)   # refresh expired session
+            try:                                 # refresh session, tolerate failure
+                s, token = session()
+            except Exception:
+                pass
+            time.sleep(delay * 2)                # back off
+        if not (html and len(html) > 1500):
+            print('  skip %s (no result after retries; will retry next run)' % ia)
+            time.sleep(delay); continue          # leave un-written → resumable retry
         nws, pw, sch = frag('nws', html), frag('pw', html), frag('sch', html)
         ex = bool(nws) and nws not in (pw, sch)
         json.dump({'key1': w, 'iast': ia, 'nws': nws, 'sch': sch,
