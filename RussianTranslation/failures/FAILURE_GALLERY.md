@@ -205,3 +205,32 @@ quietly lost ~15k.
 **Lesson.** Never use externally-supplied, case-sensitive identifiers as filenames on
 a case-insensitive filesystem. And a clean-looking "completion" can hide silent data
 loss — **audit the representative sample before you scale**, not after.
+
+---
+
+## F11 · The translator narrated editorial intent it could not know — `2026-06-17`
+
+**Bad.** First merged-layer pilot (`anna`). The Sonnet translator, folding PW + NWS into
+the PWG entry, wrote *"[PW] omits m. Sonne **as unreliable**"* and listed PW's own sense
+2c (*Wolke* "cloud") as a brand-new *"[PW new]"* addition, duplicating it. The Opus
+judge (severity 3, not publishable) confirmed: PW silently drops *Sonne* — it never
+states a **reason**; and *Wolke* is ordinary PW structure, not a new addition.
+
+**Why it's the dangerous kind.** No citation, date, or gloss was invented — every
+*content* claim checked out (the judge even cleared the suspicious "1349 A.D.", Geldner
+1907:10, and the King Ānāka sense as genuinely in NWS). What was fabricated was
+**editorial meta-narration**: a confident *why* the source never gives, and a *"[new]"*
+label applied without checking the earlier layer. This reads as scholarship but is
+unsourced inference — exactly what a printed dictionary must not carry.
+
+**Fix.** Two locked guards in
+[`6_merged_translate.md`](pwg_ru_prompts/6_merged_translate.md): (1) attribute facts to
+layers, never narrate *why* a layer changed something; (2) never mark a sense "[new]"
+without confirming it is absent from the earlier layer, and never re-list it.
+
+**Good.** With guards 1–2 the card states only what each layer *carries* (PWG: m.+n.;
+PW: n. only; NWS: re-adds an m. proper-name) — no invented motive, no phantom "new".
+
+**Lesson.** Fabrication isn't only invented citations. A model will also invent the
+*editorial story* — why an editor dropped or added something — which sounds like
+expertise and is just as false. Judge for unsourced intent, not only unsourced facts.
