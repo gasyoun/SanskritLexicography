@@ -10,9 +10,16 @@ pw/Schmidt. Polite: identified UA, sequential, configurable delay.
 NOTE: NWS has no stated licence and rests on an old Cologne PW/Schmidt snapshot;
 scraped output is gitignored and provisional pending the Halle data request.
 
-  python nws_scrape.py [delay_s] [key1 ...]   default delay 3s, default 5 a-cards
+  python nws_scrape.py [delay_s] [key1 ...]            default 3s, 5 sample a-cards
+  python nws_scrape.py section a 1                     whole a-section, 1s, 1 worker
+  python nws_scrape.py section a 1 --workers 8         8 concurrent workers (~8 req/s)
+
+Each worker keeps its OWN session (cookie+csrf); writes are atomic + resumable, so
+parallel workers never collide and a reaped run continues from the cards on disk.
+Be a good citizen: this is a small academic server — keep aggregate req/s modest.
 """
-import os, re, sys, time, json
+import os, re, sys, time, json, threading
+from concurrent.futures import ThreadPoolExecutor
 sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
 
@@ -73,8 +80,61 @@ def section_keys(section):
     return keys
 
 
+# --- per-thread session (requests.Session is not safe to share across threads) ---
+_tl = threading.local()
+
+
+def tl_session(force=False):
+    s = getattr(_tl, 's', None)
+    if force or s is None:
+        _tl.s, _tl.tok = session()
+    return _tl.s, _tl.tok
+
+
+def scrape_one(word, delay):
+    """Fetch + write one headword. Thread-safe (own session, atomic write).
+    Returns 'extra' / 'plain' / 'skip' (skip = no result; left un-written → retried)."""
+    out_path = os.path.join(OUT, word + '.json')
+    if os.path.exists(out_path):
+        return 'plain'
+    ia = iast(word)
+    html = ''
+    for _ in (1, 2, 3):
+        try:
+            s, tok = tl_session()
+            html = fetch(s, tok, ia)
+            # an EMPTY result ('$nws_lemmas = $("");') is valid — keep it; only a
+            # Rails error page ('was rejected') is a real failure.
+            if html and '_lemmas = $(' in html and 'was rejected' not in html[:2000]:
+                break
+            html = ''
+        except Exception:
+            html = ''
+        try:
+            tl_session(force=True)               # refresh session, tolerate failure
+        except Exception:
+            pass
+        time.sleep(delay * 2)                    # back off
+    if not html:
+        time.sleep(delay)
+        return 'skip'                            # leave un-written → resumable retry
+    nws, pw, sch = frag('nws', html), frag('pw', html), frag('sch', html)
+    ex = bool(nws) and nws not in (pw, sch)
+    tmp = out_path + '.tmp'
+    json.dump({'key1': word, 'iast': ia, 'nws': nws, 'sch': sch,
+               'pw_len': len(pw), 'has_nws_extra': ex},
+              open(tmp, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
+    os.replace(tmp, out_path)                     # atomic — no half-written card
+    time.sleep(delay)
+    return 'extra' if ex else 'plain'
+
+
 def main():
     args = sys.argv[1:]
+    workers = 1
+    if '--workers' in args:
+        i = args.index('--workers')
+        workers = int(args[i + 1]); del args[i:i + 2]
     delay = 2.0
     for a in list(args):
         if a.replace('.', '').isdigit():
@@ -85,46 +145,33 @@ def main():
         words = args or ['agni', 'arTa', 'aMSa', 'amfta', 'anna']
     os.makedirs(OUT, exist_ok=True)
     todo = [w for w in words if not os.path.exists(os.path.join(OUT, w + '.json'))]   # resumable
-    s, token = session()
+    s, token = session()                          # validate connectivity up front
     if not token:
         sys.exit('could not establish session / csrf-token')
-    print('session ok; %d headwords, %d already done, %d to fetch; delay %.1fs'
-          % (len(words), len(words) - len(todo), len(todo), delay))
-    n = extra_n = 0
-    for w in todo:
-        ia = iast(w)
-        html = ''
-        for attempt in (1, 2, 3):
-            try:
-                html = fetch(s, token, ia)
-                # success = the JS result structure is present (an EMPTY result is
-                # valid — '$nws_lemmas = $("");' — and must be kept, not retried);
-                # only a Rails error page ('was rejected') is a real failure.
-                if html and '_lemmas = $(' in html and 'was rejected' not in html[:2000]:
-                    break
-                html = ''
-            except Exception:
-                html = ''
-            try:                                 # refresh session, tolerate failure
-                s, token = session()
-            except Exception:
-                pass
-            time.sleep(delay * 2)                # back off
-        if not html:
-            print('  skip %s (no result after retries; will retry next run)' % ia)
-            time.sleep(delay); continue          # leave un-written → resumable retry
-        nws, pw, sch = frag('nws', html), frag('pw', html), frag('sch', html)
-        ex = bool(nws) and nws not in (pw, sch)
-        json.dump({'key1': w, 'iast': ia, 'nws': nws, 'sch': sch,
-                   'pw_len': len(pw), 'has_nws_extra': ex},
-                  open(os.path.join(OUT, w + '.json'), 'w', encoding='utf-8'),
-                  ensure_ascii=False, indent=1)
-        n += 1; extra_n += 1 if ex else 0
-        if n % 50 == 0 or n <= 5:
-            print('  [%d/%d] %-12s nws=%-4d %s  (NWS-extra so far: %d)'
-                  % (n, len(todo), ia, len(nws), '★' if ex else ' ', extra_n))
-        time.sleep(delay)
-    print('done: fetched %d, with NWS-extra %d → %s' % (n, extra_n, OUT))
+    print('session ok; %d headwords, %d done, %d to fetch; %d worker(s), %.1fs/req each (~%.1f req/s)'
+          % (len(words), len(words) - len(todo), len(todo), workers, delay, workers / max(delay, 0.1)))
+    counts = {'extra': 0, 'plain': 0, 'skip': 0}
+    lock = threading.Lock()
+    done = [0]
+
+    def run(w):
+        r = scrape_one(w, delay)
+        with lock:
+            counts[r] += 1
+            done[0] += 1
+            if done[0] % 100 == 0:
+                print('  [%d/%d] extra=%d skip=%d'
+                      % (done[0], len(todo), counts['extra'], counts['skip']))
+                sys.stdout.flush()
+
+    if workers > 1:
+        with ThreadPoolExecutor(max_workers=workers) as ex:
+            list(ex.map(run, todo))
+    else:
+        for w in todo:
+            run(w)
+    print('done: %d fetched (NWS-extra %d), %d skipped → %s'
+          % (counts['extra'] + counts['plain'], counts['extra'], counts['skip'], OUT))
 
 
 if __name__ == '__main__':
