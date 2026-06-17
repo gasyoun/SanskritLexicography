@@ -35,6 +35,7 @@ HARD RULES (the judge fails the card otherwise):
 1. NO FABRICATION — never output a sense, sub-sense, or tag that is not an actual division in the raw German. Tags must match the raw exactly; do not invent, split, or merge senses (no added "epic"/"vedic" sub-sense the source lacks).
 2. COMPLETE COVERAGE — render EVERY sense the raw card contains, in order: every numbered 1)/2), every lettered a)/b) sub-sense, AND any etymology / cross-reference / "personif." note (render the note too, with a short Russian gloss). Skip nothing.
 3. SIGLA UNTOUCHED — never translate or transliterate ANY siglum or abbreviation, including COMMENTATOR sigla (Sāy., Schol., Sch., Comm.) and grammar abbrevs (m./f./Pl./Du.); they stay verbatim in PWG form. Let no German or English word leak into the Russian.
+4. ALL RECORDS, INCLUDING NACHTRÄGE — a headword is often a MAIN record plus one or more ADDENDA/NACHTRÄGE records (each marked in the raw input). These do not repeat the word; they PATCH the main entry — "to sense 3 add citation X", "sense 10: read … instead of …", an etymology tail, a new astrological/numeric sense. Render EVERY record completely and EVERY addendum in full, including its tail (etymology, cross-reference, corrigendum). Addenda are first-class — never drop, summarise, or truncate them. Key each addendum sense to the main-entry sense number it patches.
 
 Return ONLY the structured object.`
 
