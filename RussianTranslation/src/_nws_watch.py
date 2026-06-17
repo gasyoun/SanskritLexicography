@@ -23,7 +23,7 @@ STATE = os.path.join(OUT, '_watch_state.json')
 KEYS = os.path.join(OUT, '_keys_a.txt')
 POLL = 30          # seconds between samples
 STALL = 180        # seconds with no new write → consider the scrape dead
-RELAUNCH = ['python', 'nws_scrape.py', 'section', 'a', '3']
+RELAUNCH = ['python', 'nws_scrape.py', 'section', 'a', '1']
 
 
 def snapshot():
@@ -56,7 +56,7 @@ def fmt_eta(sec):
 
 def line(n, extra, newest, total, rate_cpm, eta, tag=''):
     pct = 100 * n / total if total else 0
-    stall = '  ⚠ STALLED (no write %.0fs — relaunch: python nws_scrape.py section a 3)' % newest if newest > STALL else ''
+    stall = '  ⚠ STALLED (no write %.0fs — relaunch: python nws_scrape.py section a 1)' % newest if newest > STALL else ''
     ex = ('%d (%.0f%%)' % (extra, 100 * extra / n)) if n else '0'
     print('%s %s %5.1f%%  %d/%d  NWS-extra %s  %.0f cards/min  ETA %s%s%s'
           % (time.strftime('%H:%M:%S'), bar(pct), pct, n, total, ex,
