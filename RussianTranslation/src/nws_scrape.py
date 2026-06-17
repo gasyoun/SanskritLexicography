@@ -97,8 +97,12 @@ def main():
         for attempt in (1, 2, 3):
             try:
                 html = fetch(s, token, ia)
-                if html and 'was rejected' not in html[:2000] and len(html) > 1500:
+                # success = the JS result structure is present (an EMPTY result is
+                # valid — '$nws_lemmas = $("");' — and must be kept, not retried);
+                # only a Rails error page ('was rejected') is a real failure.
+                if html and '_lemmas = $(' in html and 'was rejected' not in html[:2000]:
                     break
+                html = ''
             except Exception:
                 html = ''
             try:                                 # refresh session, tolerate failure
@@ -106,7 +110,7 @@ def main():
             except Exception:
                 pass
             time.sleep(delay * 2)                # back off
-        if not (html and len(html) > 1500):
+        if not html:
             print('  skip %s (no result after retries; will retry next run)' % ia)
             time.sleep(delay); continue          # leave un-written → resumable retry
         nws, pw, sch = frag('nws', html), frag('pw', html), frag('sch', html)
