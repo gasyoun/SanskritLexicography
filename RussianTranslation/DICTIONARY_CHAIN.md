@@ -24,6 +24,65 @@ the earlier ones.
 - **SCH, NWS, PWKVN are *supplements*** — pure addenda keyed to the Petersburg
   tradition (NWS explicitly excludes what PW/Schmidt already have).
 
+## SCH preface — what Schmidt's own front matter gives us (2026-06-17)
+
+Source: [`SCH/prefaces/schpref_all.de.md`](https://github.com/sanskrit-lexicon/SCH/blob/master/prefaces/schpref_all.de.md)
+(foreword **Münster, 26 Sept 1924**; published **Leipzig 1928**, Harrassowitz). The
+preface is Schmidt's **spec for reading his entries** — and almost all of it is
+verifiable as live structure in `csl-orig/v02/sch/sch.txt`.
+
+**1. Marker semantics (the decoder ring).** Schmidt's two relational marks are not
+decoration — the digitization already lifted them into a structured `type=` field in
+each record's trailing `{…}`:
+
+| Mark | Meaning (per preface) | In data |
+|---|---|---|
+| `°` | word / sense / gender **wholly absent from pw** (net-new) | **9,254×**, `type=˚` |
+| `*` | item **not yet attested** in pw (first attestation) | **5,327×**, `type=*` |
+| *(no mark)* | a vocable Böhtlingk added in his Generalindex, carried over | — |
+
+→ We get a **free machine flag for net-new-ness** per SCH headword (`type=˚`/`type=*`),
+exactly the "what does this layer add over pw" signal the merge needs.
+
+**2. Contributor / provenance tags (preserve verbatim, like sigla).**
+`(Ko.)` = 2,295× — finds from Śrutadevasūri's commentary on the Yaśastilaka;
+`[Z.]` = 344× — Zachariae's new attestations; `[B.]` = 137× — E. Baer's ~100+ Kashmir-
+Śaivism vocables. These are authorship attributions inside the entry; the translator
+must leave them untouched (the existing "sigla untouched" guard already covers them).
+
+**3. Citation conventions.** Cited by **Band, Seite, Zeile**; `v.u.` = *von unten*
+(line counted from the bottom, annotation lines excluded); strophes keyed `a,b` /
+`a,b,c,d`; location lists deliberately partial (`etc`). Needed to render SCH `<ls>`
+refs correctly.
+
+**4. Source-sigla are already resolved — do not rebuild.** [`ls/front1a.txt`](https://github.com/sanskrit-lexicon/SCH/blob/master/ls/front1a.txt)
+maps every SCH siglum → full title+edition, **tagged `(PW)`/`(SCH)`/`(CSL)`/`[unknown]`**
+(the preface's Pages 03–04 list, extracted *and* merged with the inherited pw
+bibliography); [`ls/freq_ls1.txt`](https://github.com/sanskrit-lexicon/SCH/blob/master/ls/freq_ls1.txt)
+gives frequencies (Kauś. 236, Daśak. 212, Daśar. 169, Praty.Hṛd. 133, Govardh. 138…).
+This is the SCH analogue of `pwgbib.txt` — wire `front1a.txt` into a `sch_sources`
+resolver, don't re-extract from the preface.
+
+**5. Two caveats that lower SCH citation confidence vs PWG.**
+- Schmidt **took over Böhtlingk's Nachträge citations unverified** ("ich habe alles
+  einfach übernommen") — so SCH's Böhtlingk-derived refs are 1889-vintage, unchecked.
+- The print **has known typos** ("eine ganze Anzahl von Druckfehlern"); Schmidt even
+  flags them inline (e.g. `aṃśumatphala … (Ko.; aśu˚ gedruckt)` = "printed as aśu°").
+- Authorship rule when `°`/`*` don't settle it: "the citation or its form decides"
+  Böhtlingk-vs-Schmidt.
+
+**6. Scale + dominant source** (corroborates our merge count of ~28,455 SCH entries):
+~**14,450** Böhtlingk-Nachträge articles + ~**12,000** Schmidt-original. The new
+material is led by the **Yaśastilakacampū** (Somadeva + comm.), the *bhāṇa* plays,
+Kashmir-Śaiva texts, and the Kāvyamālā erotic-science editions — a **Classical/late,
+kāvya-and-śāstra** stratum (useful for our genre tagging: SCH skews post-classical,
+*not* Vedic).
+
+**7. The chain's rationale, in Schmidt's words.** He closes wishing for a full new pw
+edition incorporating everything since 1889, needing "alle Indologen der Welt" — which
+is precisely the brief **NWS** (Halle, 2013–16) later took up. SCH is the ideological
+bridge PWG→PW→**SCH**→NWS.
+
 ## NWS and the "old Cologne snapshot" — verified from the live site (2026-06-17)
 
 Confirmed from [`nws.uzi.uni-halle.de`](https://nws.uzi.uni-halle.de/?lang=de) (German project page, authoritative):
