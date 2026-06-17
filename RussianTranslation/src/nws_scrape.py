@@ -120,11 +120,24 @@ def scrape_one(word, delay):
         return 'skip'                            # leave un-written → resumable retry
     nws, pw, sch = frag('nws', html), frag('pw', html), frag('sch', html)
     ex = bool(nws) and nws not in (pw, sch)
-    tmp = out_path + '.tmp'
-    json.dump({'key1': word, 'iast': ia, 'nws': nws, 'sch': sch,
-               'pw_len': len(pw), 'has_nws_extra': ex},
-              open(tmp, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
-    os.replace(tmp, out_path)                     # atomic — no half-written card
+    tmp = out_path + '.%d.tmp' % threading.get_ident()   # per-thread tmp name
+    with open(tmp, 'w', encoding='utf-8') as f:           # close BEFORE replace
+        json.dump({'key1': word, 'iast': ia, 'nws': nws, 'sch': sch,
+                   'pw_len': len(pw), 'has_nws_extra': ex}, f,
+                  ensure_ascii=False, indent=1)
+    for _ in range(6):                                    # atomic; retry transient Win locks
+        try:
+            os.replace(tmp, out_path)
+            break
+        except PermissionError:
+            time.sleep(0.2)
+    else:
+        try:
+            os.remove(tmp)
+        except OSError:
+            pass
+        time.sleep(delay)
+        return 'skip'
     time.sleep(delay)
     return 'extra' if ex else 'plain'
 
@@ -155,7 +168,10 @@ def main():
     done = [0]
 
     def run(w):
-        r = scrape_one(w, delay)
+        try:
+            r = scrape_one(w, delay)
+        except Exception:
+            r = 'skip'                            # never let one word kill the pool
         with lock:
             counts[r] += 1
             done[0] += 1
