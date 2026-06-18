@@ -3,7 +3,7 @@
 The translation stage for the **full supplement chain** (PWG + PW + SCH + PWKVN +
 NWS), producing ONE consolidated Russian entry per headword. Supersedes the PWG-only
 [`5_corpus_translate.md`](5_corpus_translate.md) for merged cards. Hardened from the
-2026-06-17 a-section pilot (`aṃśa`, `anna`) — see the five guards below, each tied to
+2026-06-17/18 a-section pilot (`aṃśa`, `anna`) — see the six guards below, each tied to
 a real judge finding.
 
 ## Conventions (unchanged)
@@ -21,7 +21,7 @@ NWS cumulative addendum), each net-new fact attributed in brackets `[PW]`/`[Schm
 `[PWKVN]`/`[NWS]`. Use `portrait.json` `corpus_synonyms` as the primary word-choice
 evidence; discriminate near-synonyms à la Apresjan.
 
-## The five HARD guards (each from a pilot judge finding)
+## The six HARD guards (each from a pilot judge finding)
 
 1. **No editorial-intent fabrication.** Attribute *facts* to layers, but NEVER narrate
    *why* a layer changed something. Forbidden: "[PW] omits X as unreliable", "dropped
@@ -49,18 +49,38 @@ evidence; discriminate near-synonyms à la Apresjan.
    proper-name sense), say exactly that as a single clear note — don't scatter
    contradictory `m.`/`n.` fragments across senses. *(anna: m./n. layering muddled.)*
 
+6. **NWS "Kleines Zitat" reads cite-AFTER-gloss.** The NWS string packs many sub-sources
+   as `TAG > gloss … SOURCE:page >` — the diasystem tag comes BEFORE each gloss and the
+   citation CLOSES it (comes AFTER). Pair every gloss with the source that *follows* it,
+   never the one before; otherwise every label slides forward one entry. Sanity-check by
+   author specialty (Keller = Indian mathematics; Hoernle = medical Bower Ms; Olivelle =
+   Arthaśāstra/KA cites; TAK = Tāntrikābhidhānakośa; BHSD = Buddhist Hybrid Sanskrit;
+   Sircar = epigraphy/EI). The unambiguous head entries prove the direction: `… a share
+   of booty … MW:1 >` (English gloss is MW's, cite after). *(aṃśa: parsed as
+   `SOURCE > TAG > gloss`, mis-attributing ~15 sub-sources and dropping Grassmann; the QA
+   judge inherited the same misparse and false-cleared it — F12.)*
+
 Plus the original four (still in force): NO content fabrication · COMPLETE coverage ·
 SIGLA UNTOUCHED (no German/English leaks into the Russian) · ALL records incl.
 Nachträge. And: **discrimination must be built only from `portrait.json`
 `corpus_synonyms.candidates`** — do not add register-synonyms absent from that evidence
 *(anna: added "прокормление", not a candidate; missed corpus-attested рис/зерно/блюдо)*.
 
-## Pilot result (baseline)
-- `aṃśa` — severity **2** (publishable after light edits): 0 content fabrication, sigla
-  15/15, PWG+PW coverage complete, PW/SCH/PWKVN consolidated correctly, `{{Lbody}}`
-  dropped. Fix: Keller/Olivelle attribution; restore dropped NWS senses.
-- `anna` — severity **3**: 0 content fabrication, but two editorial-intent/[new]
-  meta-claims (guards 1–2) + weak discrimination (corpus-grounding) + m./n. delta.
+**QA-judge note (F12).** When a source format has an ambiguous reading-direction, a second
+judge can share the translator's blind spot and rubber-stamp a systematic error. Arm the
+judge with the parse rule explicitly and have it disambiguate by an independent signal
+(here, each sub-source author's field).
 
-→ With guards 1–5 the recurring defects are addressed; re-run before scaling to the
+## Pilot result (baseline)
+- `anna` — re-pass severity **3 → 2** (publishable after light edits): guards 1–2 fixed the
+  editorial-intent/[new] meta-claims; discrimination re-grounded in corpus candidates; m./n.
+  delta stated once. King Ānāka (1349 A.D., SJS 2:43) + the MW:45-vs-1313 derivative split
+  verified faithful. Residual nits: stray German connectives (`u. s. w.`, `oder`) in the
+  Russian column.
+- `aṃśa` — first re-pass *regressed* (hidden severity ~4): the NWS layer had a systematic
+  cite-after-gloss off-by-one (F12) that the QA judge inherited and false-cleared. Rebuilt
+  from an explicit pre-parsed owner map; all 17 NWS sub-sources now correctly attributed,
+  Grassmann's gloss restored, the `[aṃśena] partly` duplicate collapsed. Now severity ~1–2.
+
+→ With guards 1–6 the recurring defects are addressed; re-run before scaling to the
 full a-section.
