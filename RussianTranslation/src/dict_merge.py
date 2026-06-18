@@ -10,7 +10,7 @@ picture and the conflicts (e.g. PWG gender vs PW gender).
   python dict_merge.py stats                 records + headword coverage per layer
   python dict_merge.py merge <key1>          the layered view of one headword
 """
-import os, re, sys, collections
+import os, re, sys, json, glob, collections
 sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
 
@@ -19,14 +19,42 @@ import corpus_gate as cg
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 V02 = os.path.normpath(os.path.join(HERE, '..', '..', '..', 'csl-orig', 'v02'))
+NWS_DIR = os.path.join(HERE, 'pilot', 'nws')       # scraped JSON, one file per headword
 
-# layer code → (role, blurb). NWS added once scraped.
+# Local Cologne csl layers, indexed from csl-orig/v02/<code>/<code>.txt by SLP1
+# headword. These DEFINE the headword universe (nws_scrape enumerates them).
 LAYERS = [
     ('pwg',   'base',       'PWG — Böhtlingk-Roth, large (1855-75)'),
     ('pw',    'revision',   'PW/PWK — Böhtlingk, kürzere Fassung (1879-89)'),
     ('sch',   'supplement', 'SCH — Schmidt, Nachträge (1928)'),
     ('pwkvn', 'supplement', 'PWKVN — PWK variant supplement'),
 ]
+
+# NWS is folded in SEPARATELY (not in LAYERS): it is external, JSON-backed, and
+# adds NO new headwords — its keys are derived from the layers above. We keep only
+# its net-new fragment (has_nws_extra), looked up per-key on demand (no 168k-file
+# index). Cumulative Halle addendum, ~2013; provisional pending the data request.
+NWS_LAYER = ('nws', 'external',
+             'NWS — Nachtragswörterbuch (Halle), cumulative addendum ~2013; net-new beyond pw/Schmidt')
+
+
+def _nws_safe(k):
+    """Case-collision-safe filename stem (mirror of nws_scrape.safe_name)."""
+    return ''.join('_' + c.lower() if c.isupper() else c for c in k)
+
+
+def nws_record(key1):
+    """Net-new NWS fragment for a form-key, or '' — the single scraped card, read
+    on demand. Returns the fragment only when it adds beyond the pw/Schmidt layers
+    (has_nws_extra); otherwise NWS is redundant with what we already hold."""
+    p = os.path.join(NWS_DIR, _nws_safe(cg.form_key(key1)) + '.json')
+    if not os.path.exists(p):
+        return ''
+    try:
+        d = json.load(open(p, encoding='utf-8'))
+    except Exception:
+        return ''
+    return d.get('nws', '') if d.get('has_nws_extra') else ''
 
 
 def records_of(code):
@@ -67,6 +95,10 @@ def merged(key1):
         if recs:
             out.append({'layer': code, 'role': role, 'blurb': blurb,
                         'records': ['\n'.join(b[1:]) for b in recs]})
+    nws = nws_record(fk)               # external addendum, last; only if net-new
+    if nws:
+        code, role, blurb = NWS_LAYER
+        out.append({'layer': code, 'role': role, 'blurb': blurb, 'records': [nws]})
     return out
 
 
@@ -76,6 +108,22 @@ def cmd_stats(args):
         idx = index(code)
         print('%-7s %-11s %9d %9d   %s'
               % (code, role, sum(len(v) for v in idx.values()), len(idx), blurb))
+    # NWS — counted from the scraped JSON (not a csl index). net-new = has_nws_extra.
+    files = glob.glob(os.path.join(NWS_DIR, '*.json'))
+    nws_total, nws_extra = 0, 0
+    for f in files:
+        if os.path.basename(f).startswith('_keys_') or os.path.basename(f) in ('_watch_state.json',):
+            continue
+        nws_total += 1
+        try:
+            with open(f, 'rb') as fh:
+                if b'"has_nws_extra": true' in fh.read():
+                    nws_extra += 1
+        except OSError:
+            pass
+    print('%-7s %-11s %9s %9d   %s'
+          % ('nws', NWS_LAYER[1], '%d*' % nws_extra, nws_total, NWS_LAYER[2]))
+    print('  (* records = net-new fragments folded into merge; headwords = scraped cards on disk)')
     # how many PWG headwords gain extra material from a later layer
     pwg = set(index('pwg'))
     for code, role, _ in LAYERS[1:]:
