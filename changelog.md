@@ -6,6 +6,33 @@ This repository does not currently publish versioned release notes. Entries use
 dated maintenance snapshots; keep upcoming work under [Unreleased] until it is
 ready for a dated entry.
 
+## [0.0.1] - 2026-06-18
+
+### Added
+- **NWS layer fully scraped, drift-validated, and folded into the merge spine.**
+  `RussianTranslation/src/nws_scrape.py section all` captured all **167,990**
+  headwords of the *Nachtragswörterbuch des Sanskrit* (Halle); `_nws_audit.py all`
+  = CLEAN (0 missing / 0 case-collisions / 0 dups / 0 refusals), net-new
+  `has_nws_extra` = 34,101 (20 %). `_nws_drift.py all` confirms the a-section's "LOW
+  staleness" finding across the whole dictionary (Schmidt 96.7 % identical, mean
+  Jaccard 0.987; pw 80.9 % overlap, only 0.1 % NWS-only). `dict_merge.merged()` now
+  appends NWS as a 5th "external" layer — net-new only, per-key on demand, kept out
+  of `LAYERS` since it adds no new headwords. (NWS scraped data stays gitignored and
+  provisional pending a formal Halle data request.)
+- **Merged+NWS pilot scaled from 6 hardcoded keys to a manifest-driven run.**
+  `_pilot_gen_merged.py --manifest <section> --limit N` consumes `scale_route.py`'s
+  coverage-first manifest to generate full layered inputs (PWG+PW+SCH+PWKVN+NWS) at
+  volume, resumable. On the top-300 dense a-section heads, NWS-extra coverage reaches
+  95 % (vs 20 % dict-wide). `RussianTranslation/DICTIONARY_CHAIN.md` updated with the
+  all-sections scrape/drift/fold status.
+
+### Fixed
+- `_pilot_gen_merged.py` resumable skip now verifies a pre-existing `<key>.raw.txt`
+  is actually in merged (`=== LAYER:`) format. The superseded PWG-only `_pilot_gen.py`
+  writes the same filenames in `=== RECORD` format; trusting mere file existence
+  silently skipped ~17 of the top-300 cards (e.g. `api`, `Atman`), leaving them
+  un-merged. Now those stale files are regenerated.
+
 ## [1.1.3] - 2026-06-15
 
 ### Fixed
