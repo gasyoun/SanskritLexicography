@@ -234,3 +234,51 @@ PW: n. only; NWS: re-adds an m. proper-name) — no invented motive, no phantom 
 **Lesson.** Fabrication isn't only invented citations. A model will also invent the
 *editorial story* — why an editor dropped or added something — which sounds like
 expertise and is just as false. Judge for unsourced intent, not only unsourced facts.
+
+---
+
+## F12 · NWS "Kleines Zitat" off-by-one — the source label slid one entry, and the judge slid with it — `2026-06-18`
+
+**Bad.** Hardened re-pass of `aṃśa`. The NWS addendum packs many sub-dictionaries into
+one condensed string, format `TAG > gloss … SOURCE:page >` (diasystem tag *before* the
+gloss, citation *after* it, closing the entry). The Sonnet translator parsed it as
+`SOURCE > TAG > gloss` — so from the second entry on, **every sub-source label slid
+forward one position** and Grassmann's own gloss was dropped:
+
+```
+gloss "numerator of a fraction"   → credited Olivelle 2015   (true: Keller 2006:198, Śā Math)
+gloss "(for aṃsa) shoulder"       → credited Keller 2006     (true: Hoernle 1908:241, Śā Med)
+gloss "tantric participation"     → credited Hoernle 1908    (true: TAK 1:73, Tan)
+gloss "inheritance share KA 3.5.13"→ credited Meyer 1926     (true: Olivelle 2015:1, Śā Soc)
+gloss "territorial unit EI XV"    → credited BHSD            (true: Sircar 1966:18, Epigr)
+```
+
+≈15 sub-sources mis-attributed — **worse than the single Keller↔Olivelle mis-pairing the
+re-pass was meant to fix.** Domain knowledge is the tell: Keller works on Indian
+*mathematics*, Hoernle on the *medical* Bower Ms, Olivelle on the *Arthaśāstra* (the KA
+citations), TAK = *Tāntrikābhidhānakośa*, BHSD = *Buddhist* Hybrid Sanskrit, Sircar =
+*epigraphy*. Each specialty matches the gloss the *cite-after* reading assigns it.
+
+**Why it's the dangerous kind.** The Russian, the diasystem tags, and the citations were
+all individually correct — only the *pairing* of gloss↔source was shifted. The card reads
+as immaculate scholarship. And the independent Opus judge **false-cleared it (severity 1,
+"fixed")** because it re-parsed the format the same way — confidently "verifying" Keller =
+shoulder against the source. A second judge sharing the translator's blind spot is not an
+independent check.
+
+**Fix.** [`6_merged_translate.md`](pwg_ru_prompts/6_merged_translate.md) guard 6: the NWS
+citation *closes* its gloss; pair each gloss with the source that *follows* it, never the
+one before. Sanity-check by author specialty. Rebuilt `aṃśa` from an explicit pre-parsed
+owner map ([`src/pilot/_aMSa_nws_correct_parse.md`](../src/pilot/_aMSa_nws_correct_parse.md));
+Grassmann's gloss restored, the duplicated "[aṃśena] partly" collapsed to one.
+
+**Good.** All 17 NWS entries now own their true gloss: Keller = числитель дроби, Hoernle =
+плечо, TAK = тантрич. причастность, Olivelle = доля наследства, BHSD = буддийское «время»,
+Sircar = территориальная единица.
+
+**Lesson.** A condensed citation format has a reading-direction, and a wrong guess produces
+a *systematic* off-by-one that looks perfect locally. Worse, the QA judge can inherit the
+exact same parse and rubber-stamp it — so when a format is ambiguous, **arm the judge with
+the parse rule explicitly**, and disambiguate with an independent signal (here, each
+scholar's field). `anna` was immune only because its NWS entries each lead with a literal
+lemma (`annada … MW:45 >`), making the boundaries unambiguous.
