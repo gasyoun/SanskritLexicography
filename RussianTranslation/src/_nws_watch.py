@@ -22,10 +22,10 @@ OUT = os.path.join(HERE, 'pilot', 'nws')
 STATE = os.path.join(OUT, '_watch_state.json')
 STATUS_TXT = os.path.join(OUT, '_status.txt')      # live one-line bar, every poll
 PROGRESS_LOG = os.path.join(OUT, '_progress.log')  # one line per 5% mark (history)
-KEYS = os.path.join(OUT, '_keys_a.txt')
+KEYS = os.path.join(OUT, '_keys_all.txt')
 POLL = 30          # seconds between samples
 STALL = 180        # seconds with no new write → consider the scrape dead
-RELAUNCH = ['python', 'nws_scrape.py', 'section', 'a', '1', '--workers', '8']
+RELAUNCH = ['python', 'nws_scrape.py', 'section', 'all', '1', '--workers', '8']
 
 
 def snapshot():

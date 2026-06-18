@@ -11,7 +11,7 @@ Output: src/pilot/input/<key>.portrait.json + <key>.raw.txt (gitignored).
 
   python _pilot_gen_merged.py [key ...]      default: a small NWS-exercising batch
 """
-import json, os, sys, glob
+import json, os, sys
 sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
 
@@ -21,28 +21,14 @@ import corpus_gate as cg
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(HERE, 'pilot', 'input')
-NWS = os.path.join(HERE, 'pilot', 'nws')
 
 DEFAULT = ['arTa', 'agni', 'amfta', 'aMSa', 'anna', 'akzara']
 
 ROLE = {'pw': 'PW — Böhtlingk kürzere Fassung (revision of PWG; may correct gender/sense)',
         'sch': 'SCH — Schmidt Nachträge 1928 (pure addenda to PW; °=new vs pw, *=first attestation)',
-        'pwkvn': 'PWKVN — PWK variant supplement (keyed to PW sense numbers)'}
-
-
-def safe_name(k):
-    return ''.join('_' + c.lower() if c.isupper() else c for c in k)
-
-
-def nws_netnew(key):
-    p = os.path.join(NWS, safe_name(key) + '.json')
-    if not os.path.exists(p):
-        return ''
-    try:
-        d = json.load(open(p, encoding='utf-8'))
-    except Exception:
-        return ''
-    return d.get('nws', '') if d.get('has_nws_extra') else ''
+        'pwkvn': 'PWKVN — PWK variant supplement (keyed to PW sense numbers)',
+        'nws': 'NWS — Nachtragswörterbuch (Halle, cumulative addendum; condensed "Kleines Zitat" '
+               '— render the new lemma/sense/grammar + keep its sigla)'}
 
 
 def main():
@@ -66,7 +52,9 @@ def main():
                     'render in full' % i)
             sections.append('=== LAYER: %s ===\n\n%s' % (role, '\n'.join(buf[1:])))
 
-        # 2) PW / SCH / PWKVN layers (from the merge), each labeled
+        # 2) PW / SCH / PWKVN + NWS net-new layers (all from the merge), each labeled.
+        #    dm.merged() now owns the NWS fold — it appends the external addendum last
+        #    when (and only when) it adds beyond pw/Schmidt (has_nws_extra).
         layer_counts = {}
         for L in dm.merged(key):
             code = L['layer']
@@ -76,17 +64,11 @@ def main():
             for r in L['records']:
                 sections.append('=== LAYER: %s ===\n\n%s' % (ROLE.get(code, code.upper()), r))
 
-        # 3) NWS net-new (cumulative addendum, ~2013) if it adds beyond pw/Schmidt
-        nws = nws_netnew(key)
-        if nws:
-            sections.append('=== LAYER: NWS — Nachtragswörterbuch (Halle, cumulative addendum; '
-                            'condensed "Kleines Zitat" — render the new lemma/sense/grammar + keep its sigla) ===\n\n' + nws)
-
         open(os.path.join(OUT, key + '.raw.txt'), 'w', encoding='utf-8').write('\n\n'.join(sections))
         ns = sum(len([s for s in p['senses'] if s['n'] != '0']) for p in portraits)
         print('  %-10s PWG rec=%d senses=%d | PW=%d SCH=%d PWKVN=%d | NWS-extra=%s'
               % (key, len(pwg_bufs), ns, layer_counts.get('pw', 0), layer_counts.get('sch', 0),
-                 layer_counts.get('pwkvn', 0), 'yes(%d)' % len(nws) if nws else 'no'))
+                 layer_counts.get('pwkvn', 0), 'yes' if layer_counts.get('nws') else 'no'))
     print('wrote merged pilot inputs → %s' % OUT)
 
 
