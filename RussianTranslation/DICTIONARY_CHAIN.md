@@ -104,28 +104,42 @@ Confirmed from [`nws.uzi.uni-halle.de`](https://nws.uzi.uni-halle.de/?lang=de) (
   pw/Schmidt, (b) **new senses/grammar flags** on existing lemmas, (c) **citations to
   follow up** — high value for *coverage* and *recency*, low volume for translation.
 
-**Drift severity — MEASURED on the a-section (2026-06-17, `_nws_drift.py`): LOW.**
-Comparing the `sch` fragment NWS returns against current `csl-orig/v02/sch` over all
-24,621 a-headwords:
-- **SCH coverage drift ≈ 0.2 %** — of 7,958 shared Schmidt entries, only 26 are
-  NWS-only and 29 csl-orig-only. The Schmidt headword set is essentially unchanged
-  since NWS's 2013 snapshot.
-- **SCH content ≈ 96 % identical** (mean token-Jaccard **0.984** after stripping
-  boilerplate — NWS's `― Schmidt S. NN (show scan)` tail vs csl-orig's
-  `{part=,seq=,…}` metadata). The residual ~4 % is mostly **homonym-rendering
-  granularity** (NWS bundles `agnihotra` 1+2; csl-orig splits them), not corrections.
-- **PW coverage:** the apparent 19.9 % "csl-orig-only" is an **artifact**, not drift —
-  every case is a PW *supplement* record (`<info n="sup_N"/>`) or an `a`-privative
-  sub-compound (`abahirvāsas`, `abahis`) that csl-orig indexes separately but NWS's
-  search doesn't surface standalone. (Only `pw_len` was stored, so a byte-level pw
-  content diff would need a re-scrape — not worth it given SCH shows minimal drift.)
+**Scrape status — COMPLETE (2026-06-18): all 167,990 headwords, audit CLEAN.**
+The whole dictionary is scraped (`nws_scrape.py section all`), not just the a-section:
+`_nws_audit.py all` = 167,990/167,990 present, 0 missing / 0 case-collisions / 0 dups /
+0 refusals. Net-new (`has_nws_extra`) = **34,101 (20 %)**; has-NWS-fragment 20 %, has-
+Schmidt 17 %, has-pw 81 %, fully-empty 6 %.
 
-**Conclusion:** NWS's 2013 Cologne base is **not dangerously stale** — we can trust its
-pw/Schmidt content as-is; its real contribution is the **net-new `nws` material**
-(~23 % of a-headwords), not a divergent base. No reconciliation needed before using it.
-⚠️ *Methodology note (F9 lesson):* the first pass reported 43 % "major" SCH drift and
-19.9 % PW drift; both were verification artifacts (formatting boilerplate; index
-granularity). Always eyeball a flagged case before trusting a scary aggregate.
+**Drift severity — MEASURED across ALL sections (2026-06-18, `_nws_drift.py all`): LOW.**
+Comparing the `sch` fragment NWS returns against current `csl-orig/v02/sch` over all
+167,990 headwords (extends the a-section finding to the whole dictionary):
+- **SCH coverage drift ≈ 0.1 %** — of 28,372 shared Schmidt entries, only 211 are
+  NWS-only and 83 csl-orig-only. The Schmidt headword set is essentially unchanged
+  since NWS's 2013 snapshot.
+- **SCH content 96.7 % identical** (mean token-Jaccard **0.987** after stripping
+  boilerplate; only 0.8 % "major" <.5, and those are huge polysemous heads — `a`,
+  `agnihotra` — where low overlap = restructuring/granularity, not corrections).
+- **PW coverage:** 135,848 in-both (80.9 %); NWS-only just 170 (0.1 %). The 15,501
+  (9.2 %) csl-orig-only is **Cologne growth since 2013** (added/re-indexed pw entries),
+  not NWS being wrong. (Only `pw_len` was stored, so the pw diff stays coarse — 7.2 %
+  show |Δlen|>50 %, inflated by markup; not worth a re-scrape given SCH is near-frozen.)
+
+**Conclusion:** NWS's 2013 Cologne base is **not dangerously stale** — we trust its
+pw/Schmidt content as-is. Crucially, the merge sources pw/Schmidt from **current**
+`csl-orig` and uses NWS **only for its net-new `has_nws_extra` fragment**, so even the
+9.2 % pw coverage NWS lacks never propagates staleness downstream. No reconciliation
+needed before using it. ⚠️ *Methodology note (F9 lesson):* an early pass reported scary
+43 % "major" SCH / 19.9 % PW drift; both were verification artifacts (formatting
+boilerplate; index granularity). Always eyeball a flagged case before trusting an aggregate.
+
+**Fold status — DONE (2026-06-18):** NWS is wired into the merge spine as the 5th layer.
+`dict_merge.merged()` appends the NWS fragment last, **only when net-new**, looked up
+per-key on demand (kept *out* of `LAYERS` since it adds no new headwords — its keys
+derive from the csl layers, and `nws_scrape` enumerates `LAYERS` for the key universe).
+The scaled merged-input generator (`_pilot_gen_merged.py --manifest <sec> --limit N`,
+driven by `scale_route.py`'s coverage-first manifest) shows NWS-extra reaching **95 %**
+on the dense coverage-first core vs 20 % dict-wide — the addendum lands on the high-value
+heads that translate first.
 
 **Access caveat.** NWS states no licence and is a small/slow server; the scrape is
 rate-limited, identified, gitignored, and provisional. For the *full* dataset a formal
