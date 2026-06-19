@@ -99,7 +99,7 @@
     {
       "id": "phase_4_gold_set_and_double_review",
       "title": "Freeze a human-checked gold set and measure scientific reliability",
-      "status": "planned",
+      "status": "partly_done",
       "deliverables": [
         "stratified frozen gold set",
         "human labels for correct, lemma-variant, proper-name, partial, wrong-sense, hallucinated",
@@ -190,11 +190,13 @@
     },
     {
       "id": "G6_human_gold_set",
-      "status": "not_started",
+      "status": "partial",
       "blocks_print": true,
       "evidence": [
         "existing precision report is LLM-judged scaffold only",
-        "human-checked frozen gold set still required"
+        "gold/HUMAN_GOLD_PROTOCOL.md defines labels, workflow, adjudication, and acceptance criteria",
+        "python src/gold_review_csv.py exports 320 balanced rows for human review",
+        "human-checked final labels still required before precision claims"
       ]
     },
     {

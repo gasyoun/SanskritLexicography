@@ -20,6 +20,9 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 - `run_batch.py review_csv` exports `_review_queue.jsonl` to a spreadsheet-ready
   `_review_queue.csv` with blank human-review columns (`reviewer_id`, `decision`,
   `edit`, `notes`) while leaving review state unchanged.
+- `gold/HUMAN_GOLD_PROTOCOL.md` defines the human gold-set labeling protocol,
+  double-review/adjudication workflow, and acceptance criteria; `gold_review_csv.py`
+  exports the existing 320-row balanced scaffold for reviewers.
 
 ### Changed
 - Modern Sanskrit-Russian sources with project approvals are now marked
