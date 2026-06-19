@@ -6,6 +6,17 @@ This repository does not currently publish versioned release notes. Entries use
 dated maintenance snapshots; keep upcoming work under [Unreleased] until it is
 ready for a dated entry.
 
+## [Unreleased]
+
+### Changed
+- `RussianTranslation/src/pilot/run_pilot_wf.js` — the translate→judge workflow is
+  now **manifest-driven** instead of a hardcoded 15-key list: it reads
+  `scale_route.py`'s coverage-first `scale_manifest.<section>.json` and runs a
+  `[OFFSET, OFFSET+LIMIT)` slice (editable consts), so the full a-section's 12,155
+  inputs can be translated in successive batches. Falls back to the original 15-key
+  pilot list if the manifest can't be read. Verified: a 30-card batch resolves
+  30/30 inputs on disk via the shared `safeName()` stem.
+
 ## [0.0.2] - 2026-06-19
 
 ### Fixed

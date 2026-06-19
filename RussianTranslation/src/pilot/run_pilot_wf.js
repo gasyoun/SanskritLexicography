@@ -1,6 +1,10 @@
+import { readFileSync } from 'node:fs'
+import { fileURLToPath } from 'node:url'
+import { dirname, join } from 'node:path'
+
 export const meta = {
   name: 'pwgru-pilot-a-section',
-  description: 'Pilot: corpus-first per-sense Russian translation + Apresjan discrimination of 15 richest-reuse a-cards, Opus-judged',
+  description: 'corpus-first per-sense Russian translation + Apresjan discrimination of a-section cards (coverage-first manifest), Opus-judged',
   phases: [
     { title: 'Translate', detail: 'Sonnet: per-sense Russian + near-synonym discrimination' },
     { title: 'Judge', detail: 'Opus: review register, sigla, discrimination, coverage' },
@@ -12,8 +16,26 @@ const IN = 'C:\\\\Users\\\\user\\\\Documents\\\\GitHub\\\\SanskritLexicography\\
 // (uppercase→'_'+lower) so we read the file the generator actually wrote. SLP1 is
 // case-sensitive but Windows filenames are not (api/Api/ApI would collide). F10.
 const safeName = k => [...k].map(c => (c >= 'A' && c <= 'Z') ? '_' + c.toLowerCase() : c).join('')
-const CARDS = ['arTa', 'agni', 'amfta', 'anna', 'aNga', 'akzara', 'anta', 'antarikza',
-               'ap', 'anya', 'apara', 'arjuna', 'anaGa', 'antar', 'api']
+
+// Manifest-driven batch: read scale_route.py's coverage-first ordering and take a
+// slice. Edit SECTION/OFFSET/LIMIT to run successive batches (0–29, 30–59, …) over
+// the full a-section's 12,155 inputs. Falls back to the original 15-key pilot list
+// if the manifest can't be read (e.g. scale_route hasn't run, or no fs access).
+const SECTION = 'a'
+const OFFSET = 0
+const LIMIT = 30
+const FALLBACK = ['arTa', 'agni', 'amfta', 'anna', 'aNga', 'akzara', 'anta', 'antarikza',
+                  'ap', 'anya', 'apara', 'arjuna', 'anaGa', 'antar', 'api']
+let CARDS
+try {
+  const __dir = dirname(fileURLToPath(import.meta.url))
+  const manifest = JSON.parse(readFileSync(join(__dir, 'output', `scale_manifest.${SECTION}.json`), 'utf-8'))
+  CARDS = manifest.map(e => e.key1).slice(OFFSET, OFFSET + LIMIT)
+  console.error(`manifest ${SECTION}: ${manifest.length} keys; batch [${OFFSET}, ${OFFSET + LIMIT}) → ${CARDS.length} cards`)
+} catch (e) {
+  CARDS = FALLBACK
+  console.error(`manifest read failed (${e.message}); using ${FALLBACK.length}-key fallback`)
+}
 
 const CONV = `pwg_ru CONVENTIONS (from Böhtlingk-Roth's own prefaces + project decisions — follow EXACTLY):
 - REGISTER: scholarly-philological. Faithful to PWG's density and precision; this is a printed scholarly dictionary.
