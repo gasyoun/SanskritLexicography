@@ -15,6 +15,13 @@ import microstructure as M
 HERE = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(HERE, 'pilot', 'input')
 
+
+def safe_name(k):
+    """Case-collision-safe filename stem (match _pilot_gen_merged.safe_name):
+    uppercase→'_'+lower, so SLP1's case-sensitive keys don't collide on Windows."""
+    return ''.join('_' + c.lower() if c.isupper() else c for c in k)
+
+
 CARDS = ['arTa', 'agni', 'amfta', 'anna', 'aNga', 'akzara', 'anta', 'antarikza',
          'ap', 'anya', 'apara', 'arjuna', 'anaGa', 'antar', 'api']
 
@@ -32,7 +39,7 @@ def main():
     for k in CARDS:
         if not portraits[k]:
             print('  MISSING: %s' % k); continue
-        json.dump(portraits[k], open(os.path.join(OUT, k + '.portrait.json'), 'w', encoding='utf-8'),
+        json.dump(portraits[k], open(os.path.join(OUT, safe_name(k) + '.portrait.json'), 'w', encoding='utf-8'),
                   ensure_ascii=False, indent=1)
         # label records: first = main entry, rest = Nachträge/Addenda (patches keyed
         # to the main entry's sense numbers) — so the translator covers them all.
@@ -42,7 +49,7 @@ def main():
                     'NACHTRÄGE / ADDENDA #%d — patches (added citations, corrigenda, new senses) '
                     'keyed to the MAIN entry sense numbers; render every one in full' % i)
             labeled.append('=== RECORD %d — %s ===\n\n%s' % (i + 1, role, body))
-        open(os.path.join(OUT, k + '.raw.txt'), 'w', encoding='utf-8').write('\n\n'.join(labeled))
+        open(os.path.join(OUT, safe_name(k) + '.raw.txt'), 'w', encoding='utf-8').write('\n\n'.join(labeled))
         ns = sum(len([s for s in p['senses'] if s['n'] != '0']) for p in portraits[k])
         print('  %-12s %d record(s), %d senses, corpus n=%s'
               % (k, len(portraits[k]), ns,
