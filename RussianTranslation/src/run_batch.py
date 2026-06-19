@@ -175,22 +175,25 @@ def cmd_collect(args):
 def cmd_status(args):
     if not os.path.exists(STORE):
         print('store empty'); return
-    n = ok = sevsum = 0
+    n = ok = final = 0
     sev = {}
+    rs = {}
     for line in open(STORE, encoding='utf-8'):
         r = json.loads(line)
         n += 1
-        ok += 1 if r.get('ok') else 0
+        machine_ok = bool(r.get('ok') and r.get('placeholders_ok') and r.get('key_match'))
+        ok += 1 if machine_ok else 0
+        status = r.get('review_status') or 'unstamped'
+        rs[status] = rs.get(status, 0) + 1
+        final += 1 if status in ('human_reviewed', 'approved') and machine_ok else 0
         s = r.get('severity')
         if s:
             sev[s] = sev.get(s, 0) + 1
-    print('translated cards in store: %d  | publishable (ok+placeholders): %d (%.0f%%)'
+    print('translated cards in store: %d  | machine-ok (ok+placeholders+key): %d (%.0f%%)'
           % (n, ok, 100.0 * ok / max(n, 1)))
+    print('print-ready (human-reviewed/approved + machine-ok): %d (%.0f%%)'
+          % (final, 100.0 * final / max(n, 1)))
     print('judge severity histogram:', dict(sorted(sev.items())))
-    rs = {}
-    for line in open(STORE, encoding='utf-8'):
-        s = (json.loads(line).get('review_status') or 'unstamped')
-        rs[s] = rs.get(s, 0) + 1
     print('review status:', dict(sorted(rs.items())))
 
 

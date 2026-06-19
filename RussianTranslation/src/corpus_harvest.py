@@ -65,8 +65,6 @@ def _preserve_surface_name(ru, parsed):
     tag = parsed.tag
     if any(g in tag for g in _NAME) and parsed.normal_form != lo:
         return True
-    if tag.POS in {'VERB', 'INFN'} and parsed.normal_form != lo:
-        return True
     return False
 
 
