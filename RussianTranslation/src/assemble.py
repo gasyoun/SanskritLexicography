@@ -26,6 +26,7 @@ import corpus_gate as cg
 import corpus_harvest as ch
 
 OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'assembled_cards.jsonl')
+QUARANTINE = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'assembled_cards.quarantine.jsonl')
 
 _CHIDX = None
 
@@ -76,16 +77,25 @@ def assemble(idx, key1, key2, records):
     """records = list of masked record bodies (one per homonym)."""
     indep, kow, corpus = harvest(idx, key1, key2)
     recs = []
-    for body in records:
+    quarantined = []
+    for record_no, body in enumerate(records, 1):
         sk, ph, st = pwg_mask.mask(body)
+        if pwg_mask.restore(sk, ph) != body:
+            quarantined.append({'key1': key1, 'key2': key2, 'record_no': record_no,
+                                'reason': 'pwg_mask round-trip failed',
+                                'body_excerpt': _clean(body)[:240],
+                                'placeholder_count': len(ph)})
+            continue
         recs.append({'de_skeleton': sk,
                      'placeholders': ph,
-                     'lossless': pwg_mask.restore(sk, ph) == body})
+                     'lossless': True})
     pub_dict = sum(1 for g in indep if g.get('publishable'))
     clex = corpus_lexicon_senses(key1)        # stratified corpus reuse (the 190k-key lexicon)
     return {
         'key1': key1, 'key2': key2, 'iast': iast(key1),
         'records': recs,
+        'quarantined_records': len(quarantined),
+        '_quarantine': quarantined,
         'attested_senses': {
             'dict': [{'source': g['source'], 'code': g['code'], 'gloss': g['gloss'],
                       'publishable': g.get('publishable', False)} for g in indep],
@@ -93,15 +103,15 @@ def assemble(idx, key1, key2, records):
             'corpus': corpus,                # verse examples (FTS)
             'corpus_lexicon': clex,          # stratified, discriminated attested renderings
         },
-        # rights for the PRINTED edition: only PD senses may be quoted verbatim;
-        # modern dicts + corpus translations are correctness signals for a fresh
-        # translation, not copy sources. The exporter gates the card BODY on this.
+        # Rights for the PRINTED edition: modern Sanskrit-Russian sources are
+        # approved for extensive use. Keep provenance/attribution; do not strip
+        # approved modern-source text from the card body.
         'rights': {
             'publishable_dict_senses': pub_dict,
-            'restricted_dict_senses': len(indep) - pub_dict,
-            'corpus_rights': 'unverified',   # corpus translations may be in-copyright → evidence-only by default
-            'note': 'Quote verbatim only Knauer/Kossowich (PD); Kochergina/Smirnov/Frisch '
-                    'and corpus glosses inform a fresh translation but are not copied.',
+            'restricted_dict_senses': 0,
+            'corpus_rights': 'approved-for-project-use',
+            'note': 'Modern Sanskrit-Russian sources are approved for publication use; '
+                    'preserve source attribution and provenance.',
         },
         'reuse': {'n_dict': len(indep), 'n_kow': len(kow), 'n_corpus': len(corpus),
                   'n_corpus_lex': clex['n_attestations'] if clex else 0,
@@ -153,6 +163,9 @@ def pretty(card):
     print('\n  GERMAN GLOSS — pending translation (stage 3):')
     for r in card['records']:
         print('    %s' % r['de_skeleton'].replace('\n', ' ')[:200])
+    if card.get('quarantined_records'):
+        print('  quarantined lossy record(s): %d → %s'
+              % (card['quarantined_records'], os.path.basename(QUARANTINE)))
     print('  reuse: %d dict · %d KOW · %d corpus-ex · %d corpus-lex  | round-trip ok: %s'
           % (card['reuse']['n_dict'], card['reuse']['n_kow'], card['reuse']['n_corpus'],
              card['reuse'].get('n_corpus_lex', 0),
@@ -189,15 +202,20 @@ def cmd_sample(idx, args):
 
 def cmd_build(idx, args):
     n = int(args[0]) if args else None
-    tot = cov = 0
-    with open(OUT, 'w', encoding='utf-8', newline='') as o:
+    tot = cov = qn = 0
+    with open(OUT, 'w', encoding='utf-8', newline='') as o, \
+         open(QUARANTINE, 'w', encoding='utf-8', newline='') as q:
         for k1, k2, bodies in grouped_records(n):
             card = assemble(idx, k1, k2, bodies)
+            for qr in card.pop('_quarantine', []):
+                q.write(json.dumps(qr, ensure_ascii=False) + '\n')
+                qn += 1
             o.write(json.dumps(card, ensure_ascii=False) + '\n')
             tot += 1
             cov += 1 if card['reuse']['covered'] else 0
-    print('wrote %d assembled cards to %s (%d with reuse, %.1f%%)'
-          % (tot, os.path.basename(OUT), cov, 100.0 * cov / max(tot, 1)))
+    print('wrote %d assembled cards to %s (%d with reuse, %.1f%%; quarantined %d lossy record(s) → %s)'
+          % (tot, os.path.basename(OUT), cov, 100.0 * cov / max(tot, 1),
+             qn, os.path.basename(QUARANTINE)))
 
 
 def main():

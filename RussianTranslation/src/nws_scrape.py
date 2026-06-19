@@ -25,6 +25,7 @@ sys.stderr.reconfigure(encoding='utf-8')
 
 import requests
 import corpus_gate as cg
+from safe_filename import safe_name
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(HERE, 'pilot', 'nws')
@@ -35,15 +36,6 @@ FRAG = re.compile(r'\$%s_lemmas = \$\("(.*?)"\);', re.S)
 
 def iast(key1):
     return ''.join(cg._S2I.get(c, c) for c in cg.form_key(key1))
-
-
-def safe_name(key1):
-    """Case-collision-safe filename stem. SLP1 is case-sensitive (aMSa != AMSa,
-    s != S=ś) but Windows filesystems are case-INSENSITIVE, so the raw key as a
-    filename silently merges case variants. Encode each uppercase letter as '_'+
-    lowercase ('_' never occurs in SLP1 keys) → an all-lowercase, injective stem
-    with no case-insensitive collisions. aMSa→a_m_sa, AMSa→_a_m_sa."""
-    return ''.join('_' + c.lower() if c.isupper() else c for c in key1)
 
 
 def session():

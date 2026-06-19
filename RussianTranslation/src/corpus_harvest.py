@@ -14,7 +14,7 @@ renderings surface first (a Ṛgvedic citation → the Vedic Russian).
       LS_KEY  PWG <ls> source (e.g. M, MBH) → its stratum surfaces first
       --raw   keep function-word renderings (for particle/pronoun headwords)
 """
-import json, os, sys, collections
+import json, os, re, sys, collections
 sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
 
@@ -42,6 +42,32 @@ try:
 except Exception:
     _MORPH = None
 _lemcache = {}
+_surface_names = set()
+_CYR_TOKEN = re.compile(r'^[А-Яа-яЁё-]+$')
+_FUNC = {'CONJ', 'PREP', 'PRCL', 'NPRO', 'INTJ', 'PRED'}
+_NAME = {'Name', 'Surn', 'Patr', 'Geox', 'Orgn'}
+_SURFACE_NAME_OVERRIDES = {'агни', 'вишну'}
+
+
+def _preserve_surface_name(ru, parsed):
+    """Avoid false Russian lemmata for Sanskrit names.
+
+    pymorphy3 parses Агни/агни as the Russian verb "агнуть"; Вишну can become
+    "вишн". For corpus-harvest evidence, a false common-Russian lemma is worse
+    than keeping the surface Sanskrit name.
+    """
+    token = (ru or '').strip()
+    lo = token.lower()
+    if not token or ' ' in token or not _CYR_TOKEN.match(token):
+        return False
+    if lo in _SURFACE_NAME_OVERRIDES:
+        return True
+    tag = parsed.tag
+    if any(g in tag for g in _NAME) and parsed.normal_form != lo:
+        return True
+    if tag.POS in {'VERB', 'INFN'} and parsed.normal_form != lo:
+        return True
+    return False
 
 
 def lemma_key(ru):
@@ -49,7 +75,12 @@ def lemma_key(ru):
         return ru.lower()
     if ru not in _lemcache:
         try:
-            _lemcache[ru] = _MORPH.parse(ru)[0].normal_form
+            parsed = _MORPH.parse(ru)[0]
+            if _preserve_surface_name(ru, parsed):
+                _lemcache[ru] = ru.lower()
+                _surface_names.add(_lemcache[ru])
+            else:
+                _lemcache[ru] = parsed.normal_form
         except Exception:
             _lemcache[ru] = ru.lower()
     return _lemcache[ru]
@@ -58,8 +89,6 @@ def lemma_key(ru):
 # classify a rendering so alignment noise (particles, pronouns) is separable from
 # real lexical senses; proper names are kept but tagged (they may be the correct
 # rendering of a name-headword, or leakage from the verse's referent).
-_FUNC = {'CONJ', 'PREP', 'PRCL', 'NPRO', 'INTJ', 'PRED'}
-_NAME = {'Name', 'Surn', 'Patr', 'Geox', 'Orgn'}
 _posc = {}
 
 
@@ -70,7 +99,9 @@ def pos_class(lemma):
         cls = 'content'
         try:
             tag = _MORPH.parse(lemma)[0].tag
-            if tag.POS in _FUNC:
+            if lemma in _surface_names:
+                cls = 'name'
+            elif tag.POS in _FUNC:
                 cls = 'func'
             elif any(g in tag for g in _NAME):
                 cls = 'name'

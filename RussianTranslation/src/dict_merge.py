@@ -16,6 +16,7 @@ sys.stderr.reconfigure(encoding='utf-8')
 
 import pwg_mask
 import corpus_gate as cg
+from safe_filename import candidate_names
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 V02 = os.path.normpath(os.path.join(HERE, '..', '..', '..', 'csl-orig', 'v02'))
@@ -38,17 +39,17 @@ NWS_LAYER = ('nws', 'external',
              'NWS — Nachtragswörterbuch (Halle), cumulative addendum ~2013; net-new beyond pw/Schmidt')
 
 
-def _nws_safe(k):
-    """Case-collision-safe filename stem (mirror of nws_scrape.safe_name)."""
-    return ''.join('_' + c.lower() if c.isupper() else c for c in k)
-
-
 def nws_record(key1):
     """Net-new NWS fragment for a form-key, or '' — the single scraped card, read
     on demand. Returns the fragment only when it adds beyond the pw/Schmidt layers
     (has_nws_extra); otherwise NWS is redundant with what we already hold."""
-    p = os.path.join(NWS_DIR, _nws_safe(cg.form_key(key1)) + '.json')
-    if not os.path.exists(p):
+    p = None
+    for stem in candidate_names(cg.form_key(key1)):
+        cand = os.path.join(NWS_DIR, stem + '.json')
+        if os.path.exists(cand):
+            p = cand
+            break
+    if p is None:
         return ''
     try:
         d = json.load(open(p, encoding='utf-8'))

@@ -1,11 +1,23 @@
 # audit sidecars
 .contributing_old.md
 .contributing_audit.txt
+RussianTranslation/.claude/
+RussianTranslation/src/pilot/.claude/
+RussianTranslation/tmp.md
+RussianTranslation/src/audit[0-9].py
+RussianTranslation/src/audit_fidelity.py
+RussianTranslation/src/inspect_*.py
+RussianTranslation/src/nf.pkl
+RussianTranslation/src/_line28_dump.txt
+RussianTranslation/src/_obj4.json
+RussianTranslation/src/_tmp_*.txt
 
 # pwg_ru corpus-gate dictionary data — extracted from SamudraManthanam by
 # RussianTranslation/src/build_src.py (some sources are modern/copyright).
 # The build script + README are committed; the data is regenerated locally.
 RussianTranslation/src/*.jsonl
+RussianTranslation/src/*.jsonl.backup.*
+RussianTranslation/src/*.jsonl.tmp
 
 # transient audit/build state (regenerated each run)
 RussianTranslation/src/_audit_state.json

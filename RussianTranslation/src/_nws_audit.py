@@ -13,13 +13,10 @@ Deterministic, ~seconds. Checks:
 """
 import os, sys, json, glob, collections
 sys.stdout.reconfigure(encoding='utf-8')
+from safe_filename import safe_name
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(HERE, 'pilot', 'nws')
-
-
-def safe_name(k):
-    return ''.join('_' + c.lower() if c.isupper() else c for c in k)
 
 
 # control sidecars to exclude — NOT '_'-prefix (safe_name encodes uppercase-initial

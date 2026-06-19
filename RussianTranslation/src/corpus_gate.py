@@ -45,14 +45,15 @@ REF = 'kow'                                  # WIL-seeded human PWG→RU referen
 NAME = {'koch': 'Кочергина', 'kna': 'Кнауэр', 'fri': 'Фриш',
         'smirnov': 'Смирнов', 'kow': 'Коссович'}
 
-# Rights status per source for the PUBLISHED edition. EVERY source is used as a
-# correctness signal; but only public-domain sources may be quoted VERBATIM in a
-# printed card body — modern dictionaries inform the (fresh) translation without
-# being copied. Basis = author death-year (RU life+70). Confirm before print.
+# Rights status per source for the PUBLISHED edition. EVERY source is both a
+# correctness signal and, where useful, publishable text: the project owner has
+# secured approvals for extensive use of the modern Sanskrit-Russian sources.
+# Keep provenance/attribution, but do not downgrade approved modern sources to
+# evidence-only.
 RIGHTS = {
-    'koch':    {'publishable': False, 'status': 'modern',       'basis': 'Кочергина 1924–2018 → ©~2088'},
-    'smirnov': {'publishable': False, 'status': 'modern',       'basis': 'Б.Л. Смирнов 1891–1967 → ©~2037'},
-    'fri':     {'publishable': False, 'status': 'modern',       'basis': 'Frisch, Cologne 2015'},
+    'koch':    {'publishable': True, 'status': 'approved-modern', 'basis': 'copyright approval on file'},
+    'smirnov': {'publishable': True, 'status': 'approved-modern', 'basis': 'copyright approval on file'},
+    'fri':     {'publishable': True, 'status': 'approved-modern', 'basis': 'copyright approval on file'},
     'kna':     {'publishable': True,  'status': 'public-domain', 'basis': 'Ф.И. Кнауэр d.1917 → PD'},
     'kow':     {'publishable': True,  'status': 'public-domain', 'basis': 'К.А. Коссович d.1883 → PD (cite as reference)'},
 }

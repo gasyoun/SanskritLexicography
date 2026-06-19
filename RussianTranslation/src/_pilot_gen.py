@@ -11,15 +11,10 @@ sys.stderr.reconfigure(encoding='utf-8')
 
 import pwg_mask
 import microstructure as M
+from safe_filename import safe_name
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(HERE, 'pilot', 'input')
-
-
-def safe_name(k):
-    """Case-collision-safe filename stem (match _pilot_gen_merged.safe_name):
-    uppercase→'_'+lower, so SLP1's case-sensitive keys don't collide on Windows."""
-    return ''.join('_' + c.lower() if c.isupper() else c for c in k)
 
 
 CARDS = ['arTa', 'agni', 'amfta', 'anna', 'aNga', 'akzara', 'anta', 'antarikza',

@@ -10,12 +10,13 @@ its output. Resumable: `build` skips records already in the store.
   python run_batch.py collect <wf-output>    → restore + provenance + append to store
   python run_batch.py status                 → progress + pass rate + review state
   python run_batch.py review                 → emit _review_queue.jsonl (human worklist)
+  python run_batch.py migrate_legacy         → backfill old store rows safely
 
 Files (all gitignored, in this dir):
   _batch_in.jsonl          current batch input (one record per line, with i, placeholders)
   pwg_ru_translated.jsonl  append-only store: {i,key1,ru,verdict,ok,...}
 """
-import json, os, re, sys, glob, hashlib, subprocess, datetime
+import json, os, re, sys, glob, hashlib, subprocess, datetime, shutil
 sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
 
@@ -83,6 +84,16 @@ def _clean(s):
     return re.sub(r'\s+', ' ', re.sub(r'<[^>]+>', '', s or '')).strip()
 
 
+def attested_for(idx, key1, key2):
+    indep, kow = cg.lookup(idx, key1, key2)
+    att = [{'source': g['source'], 'code': g['code'], 'gloss': _clean(g['gloss'])[:110],
+            'publishable': g.get('publishable', False)} for g in indep]
+    if kow:
+        att.append({'source': 'KOW (reference)', 'code': 'kow',
+                    'gloss': _clean(kow[0])[:110], 'publishable': True})
+    return att
+
+
 def cmd_build(args):
     n = int(args[0]) if args else 30
     covered_only = 'covered' in args   # coverage-first: only records with dict/KOW reuse
@@ -103,11 +114,7 @@ def cmd_build(args):
             if covered_only and not (indep or kow):
                 skipped += 1
                 continue
-            att = [{'source': g['source'], 'code': g['code'], 'gloss': _clean(g['gloss'])[:110],
-                    'publishable': g.get('publishable', False)} for g in indep]
-            if kow:
-                att.append({'source': 'KOW (reference)', 'code': 'kow',
-                            'gloss': _clean(kow[0])[:110], 'publishable': True})
+            att = attested_for(idx, k1, k2)
             o.write(json.dumps({'i': written, 'ord': ordi, 'key1': k1, 'key2': k2,
                                 'iast': assemble.iast(k1), 'de_skeleton': sk,
                                 'placeholders': ph, 'attested': att},
@@ -220,11 +227,76 @@ def cmd_review(args):
                  it['placeholders_ok'], (it['reason'] or '')[:60]))
 
 
+def _legacy_provenance(migrated_at):
+    return {
+        'schema_version': 'pwg_ru.card.v0_legacy',
+        'legacy': True,
+        'complete': False,
+        'reason': 'migrated from a pre-provenance store; original run metadata unavailable',
+        'translate_model': 'unknown-legacy',
+        'judge_model': 'unknown-legacy',
+        'prompt_set_sha_at_migration': _prompt_set_sha(),
+        'pwg_src_commit_at_migration': _pwg_commit(),
+        'run_id': 'legacy-migration',
+        'migrated_at': migrated_at,
+    }
+
+
+def cmd_migrate_legacy(args):
+    """Backfill old store rows without pretending they are publication-ready."""
+    if not os.path.exists(STORE):
+        print('store empty'); return
+    dry = '--dry-run' in args
+    idx = cg.load_index()
+    migrated_at = datetime.datetime.now().isoformat(timespec='seconds')
+    rows, changed = [], 0
+    review_counts = {}
+    with open(STORE, encoding='utf-8') as f:
+        for line in f:
+            if not line.strip():
+                continue
+            r = json.loads(line)
+            row_changed = False
+            if 'review_status' not in r or not r.get('review_status'):
+                r['review_status'] = 'legacy_needs_review'
+                row_changed = True
+            if 'reviewer' not in r:
+                r['reviewer'] = None
+                row_changed = True
+            if 'attested' not in r:
+                r['attested'] = attested_for(idx, r.get('key1'), r.get('key2'))
+                row_changed = True
+            if 'provenance' not in r:
+                r['provenance'] = _legacy_provenance(migrated_at)
+                row_changed = True
+            if row_changed:
+                changed += 1
+            review_counts[r.get('review_status', 'unstamped')] = review_counts.get(r.get('review_status', 'unstamped'), 0) + 1
+            rows.append(r)
+    if dry:
+        print('would migrate %d/%d row(s); review status after migration: %s'
+              % (changed, len(rows), dict(sorted(review_counts.items()))))
+        return
+    if not changed:
+        print('store already migrated; review status: %s' % dict(sorted(review_counts.items())))
+        return
+    backup = STORE + '.backup.' + datetime.datetime.now().strftime('%Y%m%d%H%M%S')
+    shutil.copy2(STORE, backup)
+    tmp = STORE + '.tmp'
+    with open(tmp, 'w', encoding='utf-8', newline='') as out:
+        for r in rows:
+            out.write(json.dumps(r, ensure_ascii=False) + '\n')
+    os.replace(tmp, STORE)
+    print('migrated %d/%d row(s) → %s; backup: %s'
+          % (changed, len(rows), os.path.basename(STORE), os.path.basename(backup)))
+    print('review status:', dict(sorted(review_counts.items())))
+
+
 def main():
     if len(sys.argv) < 2:
         print(__doc__); return
     {'build': cmd_build, 'collect': cmd_collect, 'status': cmd_status,
-     'review': cmd_review}.get(
+     'review': cmd_review, 'migrate_legacy': cmd_migrate_legacy}.get(
         sys.argv[1], lambda *_: print(__doc__))(sys.argv[2:])
 
 
