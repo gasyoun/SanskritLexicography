@@ -6,6 +6,30 @@ This repository does not currently publish versioned release notes. Entries use
 dated maintenance snapshots; keep upcoming work under [Unreleased] until it is
 ready for a dated entry.
 
+## [0.0.2] - 2026-06-19
+
+### Fixed
+- **Case-collision in pilot input filenames (F10) — silently dropped 1,237 of
+  12,156 a-section cards.** SLP1 headword keys are case-sensitive (`api`/`Api`/`ApI`,
+  `as`/`As`/`aS`) but Windows filenames are not, so `_pilot_gen_merged.py` writing
+  `<key>.raw.txt` made case-variants overwrite each other — including high-value
+  heads (`api`, `arTa`, `As`, `aNga`), whose translation inputs held the wrong
+  variant's content. Applied the NWS scraper's proven `safe_name()` (uppercase →
+  `_`+lower, injective) across every reader/writer of these files
+  (`_pilot_gen_merged.py`, the superseded `_pilot_gen.py`, `nws_split.py`, and the
+  JS workflow `run_pilot_wf.js` with a matching `safeName()`); Python/JS encodings
+  verified identical. The full a-section regenerated CLEAN (12,155 distinct files =
+  12,155 by-key lookups, no collisions; 1 unwritable, `arI|a`, which contains a `|`).
+  Also added per-card error-resilience so a single unwritable key no longer aborts
+  an 11k-card run.
+
+### Added
+- `_pilot_gen_merged.py` now supports a manifest-driven scaled mode
+  (`--manifest <section> --limit N`) driven by `scale_route.py`'s coverage-first
+  order, used to generate the **full a-section** merged+NWS inputs (12,155 cards;
+  PW 90 % / SCH 13 % / PWKVN 10 % / NWS-extra 35 %). `nws_split.py` (deterministic
+  NWS "Kleines Zitat" splitter, F12 audit tool) is now tracked.
+
 ## [0.0.1] - 2026-06-18
 
 ### Added
