@@ -139,7 +139,12 @@ def signatures(entries):
 def card_rows(key):
     p = os.path.join(OUTP, safe_name(key) + '.merged.md')
     if not os.path.exists(p):
-        p = os.path.join(OUTP, key + '.merged.md')   # legacy pilot output name
+        legacy = key + '.merged.md'
+        try:
+            has_legacy = legacy in set(os.listdir(OUTP))
+        except OSError:
+            has_legacy = False
+        p = os.path.join(OUTP, legacy) if has_legacy else p   # legacy pilot output name
     if not os.path.exists(p):
         return None
     rows = []

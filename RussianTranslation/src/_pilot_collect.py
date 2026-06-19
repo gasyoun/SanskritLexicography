@@ -7,8 +7,11 @@ import json, os, sys
 sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
 
+from safe_filename import safe_name
+
 HERE = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(HERE, 'pilot', 'output')
+PROTECTED = {k for k in os.environ.get('PILOT_COLLECT_PROTECTED', '').split(',') if k}
 
 
 def find_results(o):
@@ -69,7 +72,11 @@ def main():
             'Y' if j.get('coverage_ok') else 'n', j.get('discrimination_quality', '?'),
             '; '.join('s%s:%s' % (i.get('severity'), i.get('detail', '')[:50]) for i in j.get('issues', [])[:2])))
         md = render(res)
-        open(os.path.join(OUT, '%s.md' % k), 'w', encoding='utf-8').write(md)
+        out_md = os.path.join(OUT, safe_name(k) + '.merged.md')
+        if k in PROTECTED and os.path.exists(out_md):
+            print('  %s protected — kept existing %s' % (k, os.path.basename(out_md)))
+        else:
+            open(out_md, 'w', encoding='utf-8').write(md)
         combined.append(md)
         combined.append('\n---\n')
     open(os.path.join(OUT, 'pilot_review.md'), 'w', encoding='utf-8').write('\n'.join(combined))
