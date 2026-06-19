@@ -80,7 +80,7 @@
     {
       "id": "phase_3_promote_apresjan_microstructure",
       "title": "Promote the Apresjan portrait into the canonical card schema",
-      "status": "planned",
+      "status": "partly_done",
       "deliverables": [
         "homonym key based on key1+h",
         "sense tree rather than flat sense bag",
@@ -210,11 +210,14 @@
     },
     {
       "id": "G8_canonical_microstructure",
-      "status": "not_started",
+      "status": "partial",
       "blocks_print": true,
       "evidence": [
-        "Apresjan design is documented",
-        "canonical homonym/sense-tree/equivalence/diasystem schema still required"
+        "APRESJAN.md documents the target",
+        "schemas/pwg_ru_lexicographic_portrait.schema.json defines the v1 portrait contract",
+        "microstructure.portrait() emits schema_version=pwg_ru.lexicographic_portrait.v1",
+        "python src/validate_portrait_schema.py validates 25 live PWG portraits",
+        "final assembled-card schema and synonym-discrimination output still pending"
       ]
     },
     {
