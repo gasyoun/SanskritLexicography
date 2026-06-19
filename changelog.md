@@ -14,6 +14,10 @@ ready for a dated entry.
   review. The CSV keeps the severity-sorted machine evidence and adds blank
   `reviewer_id` / `decision` / `edit` / `notes` columns without advancing any
   review state.
+- `RussianTranslation/gold/HUMAN_GOLD_PROTOCOL.md` and
+  `RussianTranslation/src/gold_review_csv.py` define and export the human
+  precision-review scaffold: 320 balanced `period × kind` rows, LLM labels kept
+  separate from blank human-label/adjudication columns.
 
 ## [0.0.3] - 2026-06-19
 
