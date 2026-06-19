@@ -8,7 +8,12 @@ ready for a dated entry.
 
 ## [Unreleased]
 
-No entries yet.
+### Added
+- `RussianTranslation/src/run_batch.py review_csv` exports the existing
+  `_review_queue.jsonl` human worklist to `_review_queue.csv` for spreadsheet
+  review. The CSV keeps the severity-sorted machine evidence and adds blank
+  `reviewer_id` / `decision` / `edit` / `notes` columns without advancing any
+  review state.
 
 ## [0.0.3] - 2026-06-19
 
