@@ -18,6 +18,9 @@ ready for a dated entry.
   `RussianTranslation/src/gold_review_csv.py` define and export the human
   precision-review scaffold: 320 balanced `period × kind` rows, LLM labels kept
   separate from blank human-label/adjudication columns.
+- `RussianTranslation/schemas/pwg_ru_lexicographic_portrait.schema.json` and
+  `RussianTranslation/src/validate_portrait_schema.py` define a v1 Apresjan
+  portrait contract and validate live `microstructure.portrait()` output.
 
 ## [0.0.3] - 2026-06-19
 

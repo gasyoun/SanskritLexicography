@@ -23,6 +23,9 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 - `gold/HUMAN_GOLD_PROTOCOL.md` defines the human gold-set labeling protocol,
   double-review/adjudication workflow, and acceptance criteria; `gold_review_csv.py`
   exports the existing 320-row balanced scaffold for reviewers.
+- `schemas/pwg_ru_lexicographic_portrait.schema.json` and
+  `validate_portrait_schema.py` define and check the v1 Apresjan portrait
+  contract for live `microstructure.portrait()` output.
 
 ### Changed
 - Modern Sanskrit-Russian sources with project approvals are now marked

@@ -25,6 +25,7 @@ import pwg_ab as pab       # authoritative <ab> abbreviation resolver (pwgab)
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 LSMAP = json.load(open(os.path.join(HERE, 'ls_source_map.json'), encoding='utf-8'))
+SCHEMA_VERSION = 'pwg_ru.lexicographic_portrait.v1'
 
 LS = re.compile(r'<ls\b[^>]*>(.*?)</ls>', re.S)
 LEX = re.compile(r'<lex>(.*?)</lex>', re.S)
@@ -206,7 +207,8 @@ def portrait(buf):
     pos = sorted({g for s in senses for g in s['grammar']})
     dia = sorted({d for s in senses for d in s['diasystem']})
     labels = sorted({l for s in senses for l in s.get('ab_labels', []) if l not in dia})
-    return {'key1': k1, 'key2': k2, 'h': h, 'iast': ''.join(cg._S2I.get(c, c) for c in cg.form_key(k1)),
+    return {'schema_version': SCHEMA_VERSION,
+            'key1': k1, 'key2': k2, 'h': h, 'iast': ''.join(cg._S2I.get(c, c) for c in cg.form_key(k1)),
             'pos': pos, 'diasystem': dia, 'labels': labels, 'senses': senses,
             'corpus_synonyms': corpus_synonyms(k1)}
 
