@@ -17,6 +17,9 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 - `src/pilot/run_real_test.py` audit preflight was exercised with a synthetic
   `ap` workflow output, proving the collect → protected-card preservation →
   `nws_split.py check` → report path before the June-22 Max run.
+- `run_batch.py review_csv` exports `_review_queue.jsonl` to a spreadsheet-ready
+  `_review_queue.csv` with blank human-review columns (`reviewer_id`, `decision`,
+  `edit`, `notes`) while leaving review state unchanged.
 
 ### Changed
 - Modern Sanskrit-Russian sources with project approvals are now marked

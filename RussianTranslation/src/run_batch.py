@@ -10,13 +10,14 @@ its output. Resumable: `build` skips records already in the store.
   python run_batch.py collect <wf-output>    → restore + provenance + append to store
   python run_batch.py status                 → progress + pass rate + review state
   python run_batch.py review                 → emit _review_queue.jsonl (human worklist)
+  python run_batch.py review_csv             → emit _review_queue.csv (spreadsheet view)
   python run_batch.py migrate_legacy         → backfill old store rows safely
 
 Files (all gitignored, in this dir):
   _batch_in.jsonl          current batch input (one record per line, with i, placeholders)
   pwg_ru_translated.jsonl  append-only store: {i,key1,ru,verdict,ok,...}
 """
-import json, os, re, sys, glob, hashlib, subprocess, datetime, shutil
+import csv, json, os, re, sys, glob, hashlib, subprocess, datetime, shutil
 sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
 
@@ -28,6 +29,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 BATCH_IN = os.path.join(HERE, '_batch_in.jsonl')
 STORE = os.path.join(HERE, 'pwg_ru_translated.jsonl')
 REVIEW_Q = os.path.join(HERE, '_review_queue.jsonl')
+REVIEW_CSV = os.path.join(HERE, '_review_queue.csv')
 GERMAN = re.compile(r'[A-Za-zÄÖÜäöüß]{3,}')
 
 # --- provenance (FAIR R1.2 / PROV-O): every card records how it was produced,
@@ -230,6 +232,54 @@ def cmd_review(args):
                  it['placeholders_ok'], (it['reason'] or '')[:60]))
 
 
+def _attested_summary(attested):
+    bits = []
+    for a in attested or []:
+        source = a.get('source') or a.get('code') or '?'
+        gloss = _clean(a.get('gloss'))[:80]
+        bits.append('%s: %s' % (source, gloss))
+    return ' | '.join(bits)
+
+
+def cmd_review_csv(args):
+    """Emit a spreadsheet-friendly view of the existing human-review queue.
+    Does not change review_status/reviewer/decision; those blank columns are for
+    humans to fill in a copy of the CSV."""
+    if not os.path.exists(REVIEW_Q):
+        print('no %s — run: python run_batch.py review' % os.path.basename(REVIEW_Q))
+        return
+    fields = ['severity', 'ord', 'key1', 'key2', 'review_status',
+              'key_match', 'placeholders_ok', 'reason', 'attested',
+              'ru', 'reviewer_id', 'decision', 'edit', 'notes']
+    n = 0
+    with open(REVIEW_Q, encoding='utf-8') as inp, \
+            open(REVIEW_CSV, 'w', encoding='utf-8-sig', newline='') as out:
+        w = csv.DictWriter(out, fieldnames=fields, extrasaction='ignore')
+        w.writeheader()
+        for line in inp:
+            if not line.strip():
+                continue
+            r = json.loads(line)
+            w.writerow({
+                'severity': r.get('severity'),
+                'ord': r.get('ord'),
+                'key1': r.get('key1'),
+                'key2': r.get('key2'),
+                'review_status': r.get('review_status'),
+                'key_match': r.get('key_match'),
+                'placeholders_ok': r.get('placeholders_ok'),
+                'reason': r.get('reason') or '',
+                'attested': _attested_summary(r.get('attested')),
+                'ru': r.get('ru') or '',
+                'reviewer_id': '',
+                'decision': '',
+                'edit': '',
+                'notes': '',
+            })
+            n += 1
+    print('review CSV: %d card(s) → %s' % (n, os.path.basename(REVIEW_CSV)))
+
+
 def _legacy_provenance(migrated_at):
     return {
         'schema_version': 'pwg_ru.card.v0_legacy',
@@ -299,7 +349,8 @@ def main():
     if len(sys.argv) < 2:
         print(__doc__); return
     {'build': cmd_build, 'collect': cmd_collect, 'status': cmd_status,
-     'review': cmd_review, 'migrate_legacy': cmd_migrate_legacy}.get(
+     'review': cmd_review, 'review_csv': cmd_review_csv,
+     'migrate_legacy': cmd_migrate_legacy}.get(
         sys.argv[1], lambda *_: print(__doc__))(sys.argv[2:])
 
 
