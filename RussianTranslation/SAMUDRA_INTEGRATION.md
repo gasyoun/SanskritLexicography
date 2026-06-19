@@ -265,13 +265,13 @@ the build phase; the contract above is what the three projects depend on.
   [src/](src/) are in `.gitignore` and are never committed. The committed,
   regenerable contract is [src/build_src.py](src/build_src.py) +
   [src/README.md](src/README.md); the data is rebuilt locally / on the server.
-- **PD vs modern.** Коссович (1854, kow) and Кнауэр (1908, kna) are **public
-  domain**; Кочергина (1987, koch), Фриш (1956, fri) and Смирнов (1955–1989,
-  smirnov) are **modern / under copyright** — another reason the extracted data
-  stays local-only and is treated as a sverka (cross-check) input, not a
-  redistributed corpus. Кочергина copyright **confirmed**: В.А. Кочергина
-  (1924–2018), so under Russian copyright (author's life + 70 years) through
-  ~2088 — gitignore is the correct call.
+- **PD vs approved modern.** Коссович (1854, kow) and Кнауэр (1908, kna) are
+  **public domain**. Кочергина (1987, koch), Фриш (1956, fri) and Смирнов
+  (1955–1989, smirnov) are modern sources, but the project has copyright
+  approvals for extensive use in the publishable `pwg_ru` edition. They are no
+  longer evidence-only inputs; they may feed card body text with source
+  attribution/provenance. The extracted data still stays local/gitignored as an
+  operational discipline, not as a publication blocker.
 - **Corpus stays in SamudraManthanam.** The parallel corpus and its databases
   are queried in place; only the specific citations a card needs are pulled into
   this repository, keeping the redistribution surface minimal.

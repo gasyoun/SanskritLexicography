@@ -8,8 +8,9 @@ produces ONE Russian entry that is the union of all layers. Per card key:
   • NWS net-new fragment                    → the ~2013 cumulative addendum (if any)
 
 Output: src/pilot/input/<safe>.portrait.json + <safe>.raw.txt (gitignored), where
-<safe> = safe_name(key) — uppercase→'_'+lower, so SLP1's case-sensitive keys
-(api/Api/ApI, as/As/aS) don't collide on case-insensitive Windows filesystems (F10).
+<safe> = safe_name(key) — the shared reversible Windows-safe stem, so SLP1's
+case-sensitive keys (api/Api/ApI, as/As/aS) and PWG keys containing characters
+like "|" don't collide or become unwritable on Windows.
 
   python _pilot_gen_merged.py [key ...]              default: a small NWS-exercising batch
   python _pilot_gen_merged.py --manifest a           whole a-section, coverage-first order
@@ -26,18 +27,13 @@ sys.stderr.reconfigure(encoding='utf-8')
 import microstructure as M
 import dict_merge as dm
 import corpus_gate as cg
+from safe_filename import safe_name
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(HERE, 'pilot', 'input')
 
 DEFAULT = ['arTa', 'agni', 'amfta', 'aMSa', 'anna', 'akzara']
 
-
-def safe_name(k):
-    """Case-collision-safe filename stem (mirror of nws_scrape.safe_name): SLP1 is
-    case-sensitive but Windows filenames are not, so uppercase→'_'+lower gives an
-    injective, all-lowercase stem. api→api, Api→_api, ApI→_ap_i."""
-    return ''.join('_' + c.lower() if c.isupper() else c for c in k)
 
 ROLE = {'pw': 'PW — Böhtlingk kürzere Fassung (revision of PWG; may correct gender/sense)',
         'sch': 'SCH — Schmidt Nachträge 1928 (pure addenda to PW; °=new vs pw, *=first attestation)',

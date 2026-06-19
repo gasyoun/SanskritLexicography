@@ -22,13 +22,16 @@ relicense third-party material:
 
 - **The source dictionary PWG** (Böhtlingk–Roth) is in the public domain; we
   credit it, we do not own it.
-- **Modern Sanskrit–Russian reference dictionaries** used purely as *correctness
-  signals* (Kochergina, Smirnov, Frisch) and **modern corpus translations**
-  remain under their authors'/publishers' copyright. They are **not
-  redistributed**: the pipeline uses them to validate a *fresh* translation and
-  to gate quality, and the rights model (`corpus_gate.RIGHTS`) keeps their text
-  **out of the published card body**. Only public-domain sources — **Knauer**
-  (d. 1917) and **Kossowich** (d. 1883) — may be quoted verbatim, with attribution.
+- **Modern Sanskrit–Russian reference dictionaries** (Kochergina, Smirnov,
+  Frisch) remain third-party works, but the project has copyright approvals for
+  extensive use in the publishable `pwg_ru` edition. They are therefore **not**
+  limited to evidence-only use, and their approved text may appear in card body
+  material with source attribution/provenance. See
+  [RIGHTS_APPROVALS.md](RIGHTS_APPROVALS.md).
+- **Public-domain sources** — **Knauer** (d. 1917) and **Kossowich** (d. 1883)
+  — may be quoted verbatim, with attribution, as before.
+- **Modern corpus translations** remain tied to their source corpus/project
+  permissions. Keep citation/provenance metadata on every reused passage.
 
 The **code** in this repository is licensed separately; see the repository's
 top-level `LICENSE`.

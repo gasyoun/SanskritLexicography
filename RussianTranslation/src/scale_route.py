@@ -8,17 +8,17 @@ ordered manifest the scale driver consumes.
 
   python scale_route.py [a|all]      # a = a-section (default), all = whole dict
 """
-import json, os, re, sys, collections
+import json, os, sys, collections
 sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
 
 import pwg_mask
 import corpus_gate as cg
 import corpus_harvest as ch
+import microstructure as M
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(HERE, 'pilot', 'output')
-MARK = re.compile(r'(?<![^\s—(])(\d{1,2})\)')   # top-level sense markers in the raw body
 
 
 def heavy(c):
@@ -31,16 +31,15 @@ def main():
     didx = cg.load_index()
     cards = {}
     for buf in pwg_mask.records():
-        m = pwg_mask.HEADER_RE.match(buf[0])
-        if not m:
+        k1, k2, _ = M.header(buf)
+        if not k1:
             continue
-        k1, k2 = m.group(3), m.group(4)
         if section != 'all' and k1[:1] not in ('a', 'A'):
             continue
         body = '\n'.join(buf[1:])
         c = cards.setdefault(k1, {'k2': k2, 'n_records': 0, 'n_senses': 0})
         c['n_records'] += 1
-        c['n_senses'] += len(set(MARK.findall(body)))
+        c['n_senses'] += sum(1 for s in M.split_senses(body) if s['n'] != '0')
     for k1, c in cards.items():
         c['corpus'] = len(idx.get(cg.form_key(k1), []))
         indep, kow = cg.lookup(didx, k1, c['k2'])

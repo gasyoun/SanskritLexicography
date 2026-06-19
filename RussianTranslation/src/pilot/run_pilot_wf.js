@@ -12,10 +12,14 @@ export const meta = {
 }
 
 const IN = 'C:\\\\Users\\\\user\\\\Documents\\\\GitHub\\\\SanskritLexicography\\\\RussianTranslation\\\\src\\\\pilot\\\\input'
-// Case-collision-safe filename stem — MUST match _pilot_gen_merged.safe_name
-// (uppercase→'_'+lower) so we read the file the generator actually wrote. SLP1 is
-// case-sensitive but Windows filenames are not (api/Api/ApI would collide). F10.
-const safeName = k => [...k].map(c => (c >= 'A' && c <= 'Z') ? '_' + c.toLowerCase() : c).join('')
+// Reversible Windows-safe filename stem — MUST match src/safe_filename.py.
+// Keeps the legacy uppercase encoding for compatibility, and escapes forbidden
+// filename chars such as "|" as ~hhhh.
+const safeName = k => [...k].map(c => {
+  if (c >= 'A' && c <= 'Z') return '_' + c.toLowerCase()
+  if (/^[a-z0-9-]$/.test(c)) return c
+  return '~' + c.charCodeAt(0).toString(16).padStart(4, '0')
+}).join('')
 
 // Manifest-driven batch: read scale_route.py's coverage-first ordering and take a
 // slice. Edit SECTION/OFFSET/LIMIT to run successive batches (0–29, 30–59, …) over

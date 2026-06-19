@@ -24,16 +24,12 @@ without needing to know the tag vocabulary.
 import os, re, sys, json
 sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
+from safe_filename import safe_name
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 INP = os.path.join(HERE, 'pilot', 'input')
 OUTP = os.path.join(HERE, 'pilot', 'output')
 
-
-def safe_name(k):
-    """Case-collision-safe filename stem — must match _pilot_gen_merged.safe_name
-    (uppercase→'_'+lower) so we read the same input file the generator wrote."""
-    return ''.join('_' + c.lower() if c.isupper() else c for c in k)
 
 # An owner citation that CLOSES a gloss: `Name : page` at the very end of a
 # segment.  Name starts uppercase and carries NO period (real owners — MW,
@@ -141,7 +137,9 @@ def signatures(entries):
 
 
 def card_rows(key):
-    p = os.path.join(OUTP, key + '.merged.md')
+    p = os.path.join(OUTP, safe_name(key) + '.merged.md')
+    if not os.path.exists(p):
+        p = os.path.join(OUTP, key + '.merged.md')   # legacy pilot output name
     if not os.path.exists(p):
         return None
     rows = []

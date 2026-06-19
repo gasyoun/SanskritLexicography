@@ -8,6 +8,25 @@ See also: [METHODOLOGY_REVIEW.md](METHODOLOGY_REVIEW.md) (where we want to go),
 [failures/FAILURE_GALLERY.md](failures/FAILURE_GALLERY.md) (what went wrong and
 how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
+## 2026-06-19
+
+### Changed
+- Modern Sanskrit-Russian sources with project approvals are now marked
+  publishable with attribution/provenance, not evidence-only; see
+  [RIGHTS_APPROVALS.md](RIGHTS_APPROVALS.md).
+- Shared the case-collision-safe filename encoder across NWS scrape/split/audit,
+  pilot generation, and merge lookup; forbidden Windows filename characters are
+  escaped reversibly.
+
+### Fixed
+- Corpus harvest no longer lemmatizes Sanskrit proper names such as `Агни` to
+  unrelated Russian verbs such as `агнуть`.
+- `scale_route.py` now routes by the protected microstructure sense parser.
+- `assemble.py` quarantines lossy round-trip records instead of emitting them
+  into the normal assembled card stream.
+- `run_batch.py migrate_legacy` backfills old translation-store rows and marks
+  unverifiable legacy cards `legacy_needs_review`.
+
 ## 2026-06-16
 
 ### Added

@@ -31,8 +31,10 @@ standards & interoperability · editorial & print production.
 - **Real diachronic apparatus**: [build_strata.py](src/build_strata.py) classifies
   154 texts by Renou genre + Dharmamitra date; [corpus_harvest.py](src/corpus_harvest.py)
   surfaces the cited-stratum Russian first.
-- **Responsible rights baseline**: modern copyrighted dicts gitignored, PD-vs-modern
-  per source; corpus queried in place, not duplicated.
+- **Responsible rights baseline**: extracted source data remains gitignored;
+  modern Sanskrit-Russian sources now have project approvals for publication use,
+  with attribution/provenance retained per source; corpus queried in place, not
+  duplicated.
 - **Editor-grade QA rubric**: 9 PWG-specific error categories, severity 1–5 with
   anchored calibration, the German-vs-Latin rule, severity≥3 re-translate.
 
@@ -59,16 +61,15 @@ standards & interoperability · editorial & print production.
    gate the exporter on `human_reviewed`. Double-key a stratified sample and report κ.
    *(effort M)*
 
-3. **Per-sense rights enforcement + a dataset licence** — ✅ *shipped
+3. **Per-sense rights/provenance metadata + dataset licence** — ✅ *updated
    (`corpus_gate.RIGHTS`/`publishable()`; per-sense `publishable` flag in
-   `assemble.py`; [DATA_LICENSE.md](DATA_LICENSE.md) = CC BY-SA 4.0).* —
-   *FAIR R1.1; Creative Commons; ELEXIS rights-metadata.* [assemble.py](src/assemble.py)/[run_batch.py](src/run_batch.py)
-   write modern copyrighted glosses (Kochergina, Smirnov, Frisch) verbatim into the
-   card body with no rights filter, and only a software MIT licence exists. Add a
-   `publishable` boolean per sense (PD kow/kna → true; modern koch/smirnov/fri →
-   false; KOW → attribution-needed); drop/hash non-publishable glosses out of the
-   card *body* while keeping them as the correctness signal; add a dataset licence
-   (CC BY-SA or CC BY-NC) distinct from MIT. *(effort M — needs a licence decision)*
+   `assemble.py`; [DATA_LICENSE.md](DATA_LICENSE.md) = CC BY-SA 4.0; approvals
+   recorded in [RIGHTS_APPROVALS.md](RIGHTS_APPROVALS.md)).* —
+   *FAIR R1.1; Creative Commons; ELEXIS rights-metadata.* The earlier
+   evidence-only restriction for modern sources is no longer needed: project
+   approvals cover extensive use of Kochergina, Smirnov, and Frisch in the
+   publishable card body. Keep source attribution and provenance; do **not**
+   strip/hash approved modern-source text merely because it is modern.
 
 ### Priority 2 — next (the scholarly core)
 
@@ -122,7 +123,8 @@ standards & interoperability · editorial & print production.
 - Pin a `canonical_id` + SamudraManthanam build id on corpus citations (rec 1).
 - Make the fidelity probe lemma-aware; report true hallucination rate (rec 4).
 - **Print a coverage-by-stratum table** — exposes the empty Rigvedic/kāvya strata (rec 5). ✅ *shipped this session — `corpus_harvest.py coverage`.*
-- Add a `publishable` boolean per sense in [assemble.py](src/assemble.py) (rec 3).
+- Keep `publishable`/rights metadata per sense, with approved modern sources
+  marked publishable and cited by source (rec 3).
 - Commit a versioned JSON Schema for the assembled card (rec 8).
 - Thread the `h` homonym number through [pwg_mask.py](src/pwg_mask.py) `parse()` (rec 6).
 - Add a `CITATION.cff` and list pwg_ru/mw_ru in the ROADMAP Zenodo/DOI plan (rec 8).
