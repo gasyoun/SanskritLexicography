@@ -8,6 +8,15 @@ ready for a dated entry.
 
 ## [Unreleased]
 
+### Added
+- `RussianTranslation/src/pilot/run_real_test.py` — driver for the real-conditions
+  pilot test (run locally on the Max subscription, two phases, one command each):
+  `prep [N] [OFFSET]` selects a coverage-first a-section batch, marks fresh vs
+  protected (hand-authored `aMSa`/`anna`/`ap`) cards, and sets the workflow's
+  `OFFSET`/`LIMIT`; `audit <wf_output.json>` renders via `_pilot_collect.py`,
+  bridges `<key>.md` → `<key>.merged.md`, runs `nws_split.py check` per card, and
+  reports judge pass rate + NWS-attribution (F12) clean count + misattributions.
+
 ### Changed
 - `RussianTranslation/src/pilot/run_pilot_wf.js` — the translate→judge workflow is
   now **manifest-driven** instead of a hardcoded 15-key list: it reads
@@ -16,6 +25,15 @@ ready for a dated entry.
   inputs can be translated in successive batches. Falls back to the original 15-key
   pilot list if the manifest can't be read. Verified: a 30-card batch resolves
   30/30 inputs on disk via the shared `safeName()` stem.
+- `run_pilot_wf.js` translator prompt — new **HARD RULE 5 (NWS layer format)**:
+  render the NWS "Kleines Zitat" fragment as ONE entry per source, tagged `[NWS:]`,
+  keeping each OWNER citation (`Author year : page`) verbatim as the last citation,
+  never merging/compressing owners, never sliding the owner onto the next gloss
+  (failure F12 reading-direction trap), sub-lemmas as first-class rows. Encodes the
+  format the deterministic `nws_split.py` auditor requires — found while validating
+  the loop manually on card `ap` (2026-06-19): the translation was sound but the
+  first draft failed the audit purely on output format; the rule makes future cards
+  audit-ready (re-checked: `nws_split.py check ap` → CLEAN, 0 misattributions).
 
 ## [0.0.2] - 2026-06-19
 
