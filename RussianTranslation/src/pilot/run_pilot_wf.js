@@ -8,6 +8,10 @@ export const meta = {
 }
 
 const IN = 'C:\\\\Users\\\\user\\\\Documents\\\\GitHub\\\\SanskritLexicography\\\\RussianTranslation\\\\src\\\\pilot\\\\input'
+// Case-collision-safe filename stem — MUST match _pilot_gen_merged.safe_name
+// (uppercase→'_'+lower) so we read the file the generator actually wrote. SLP1 is
+// case-sensitive but Windows filenames are not (api/Api/ApI would collide). F10.
+const safeName = k => [...k].map(c => (c >= 'A' && c <= 'Z') ? '_' + c.toLowerCase() : c).join('')
 const CARDS = ['arTa', 'agni', 'amfta', 'anna', 'aNga', 'akzara', 'anta', 'antarikza',
                'ap', 'anya', 'apara', 'arjuna', 'anaGa', 'antar', 'api']
 
@@ -23,8 +27,8 @@ const TR = `You are producing the Russian scholarly entry for one PWG headword (
 ${CONV}
 
 INPUTS for headword KEY (read both):
-  ${IN}\\KEY.raw.txt        — the RAW German PWG record(s); the FULL sense text to translate (numbered 1)/2) senses, lettered a)/b) sub-senses; {%German%}, {#Sanskrit#}, <ls>sources</ls>, <ab>abbrev</ab>, <lex>grammar</lex>)
-  ${IN}\\KEY.portrait.json  — the parsed structure + EVIDENCE: per sense its equivalence_type, citations resolved to full source names + stratum, grammar/diasystem labels; and corpus_synonyms = the Russian ACTUALLY ATTESTED in the parallel corpus for this headword, by stratum (by_stratum) + a freq-ranked candidate set (candidates).
+  ${IN}\\KEYFILE.raw.txt        — the RAW German PWG record(s); the FULL sense text to translate (numbered 1)/2) senses, lettered a)/b) sub-senses; {%German%}, {#Sanskrit#}, <ls>sources</ls>, <ab>abbrev</ab>, <lex>grammar</lex>)
+  ${IN}\\KEYFILE.portrait.json  — the parsed structure + EVIDENCE: per sense its equivalence_type, citations resolved to full source names + stratum, grammar/diasystem labels; and corpus_synonyms = the Russian ACTUALLY ATTESTED in the parallel corpus for this headword, by stratum (by_stratum) + a freq-ranked candidate set (candidates).
 
 TASK: for EACH record (homonym) and EACH sense/sub-sense in the tree, write the Russian rendering.
 - Use the corpus candidates as the PRIMARY evidence for word choice (they are attested, 84% precision; translation-weighted). Where SEVERAL near-synonyms fit, DISCRIMINATE them à la Apresjan: pick the one(s) right for THIS sense and state the differentia (semantic / combinatorial / stratum-connotational) briefly. Prefer renderings attested in the sense's CITED stratum (a ṚV-cited sense → the Vedic corpus renderings).
@@ -102,14 +106,14 @@ const JUDGE = {
 phase('Translate')
 const out = await pipeline(
   CARDS,
-  k => agent(TR.replace(/KEY/g, k), { label: `tr:${k}`, phase: 'Translate', schema: CARD, model: 'sonnet' }),
+  k => agent(TR.replace(/KEYFILE/g, safeName(k)).replace(/KEY/g, k), { label: `tr:${k}`, phase: 'Translate', schema: CARD, model: 'sonnet' }),
   (card, k) => {
     if (!card) return { key: k, card: null, judge: null }
     return agent(`You are the Opus QA judge for the pwg_ru pilot. Review this translated card against the conventions and the source.
 
 ${CONV}
 
-You may re-read the source: ${IN}\\${k}.raw.txt and ${IN}\\${k}.portrait.json.
+You may re-read the source: ${IN}\\${safeName(k)}.raw.txt and ${IN}\\${safeName(k)}.portrait.json.
 
 Check: (1) Russian correctness vs the German; (2) scholarly-philological register; (3) sigla + grammar abbreviations kept VERBATIM (not translated/transliterated) — fail sigla_kept if any ṚV./MBH./m./f. was rendered into Russian; (4) per-sense near-synonym discrimination quality (real Apresjan differentiae, not a flat list); (5) corpus evidence actually used; (6) coverage — every PWG sense rendered. severity 1=publishable … 5=broken.
 

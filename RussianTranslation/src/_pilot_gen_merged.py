@@ -7,7 +7,9 @@ produces ONE Russian entry that is the union of all layers. Per card key:
   • PW (revision) / SCH (Schmidt) / PWKVN   → raw, layer-labeled (from dict_merge)
   • NWS net-new fragment                    → the ~2013 cumulative addendum (if any)
 
-Output: src/pilot/input/<key>.portrait.json + <key>.raw.txt (gitignored).
+Output: src/pilot/input/<safe>.portrait.json + <safe>.raw.txt (gitignored), where
+<safe> = safe_name(key) — uppercase→'_'+lower, so SLP1's case-sensitive keys
+(api/Api/ApI, as/As/aS) don't collide on case-insensitive Windows filesystems (F10).
 
   python _pilot_gen_merged.py [key ...]              default: a small NWS-exercising batch
   python _pilot_gen_merged.py --manifest a           whole a-section, coverage-first order
@@ -30,6 +32,13 @@ OUT = os.path.join(HERE, 'pilot', 'input')
 
 DEFAULT = ['arTa', 'agni', 'amfta', 'aMSa', 'anna', 'akzara']
 
+
+def safe_name(k):
+    """Case-collision-safe filename stem (mirror of nws_scrape.safe_name): SLP1 is
+    case-sensitive but Windows filenames are not, so uppercase→'_'+lower gives an
+    injective, all-lowercase stem. api→api, Api→_api, ApI→_ap_i."""
+    return ''.join('_' + c.lower() if c.isupper() else c for c in k)
+
 ROLE = {'pw': 'PW — Böhtlingk kürzere Fassung (revision of PWG; may correct gender/sense)',
         'sch': 'SCH — Schmidt Nachträge 1928 (pure addenda to PW; °=new vs pw, *=first attestation)',
         'pwkvn': 'PWKVN — PWK variant supplement (keyed to PW sense numbers)',
@@ -49,7 +58,7 @@ def gen_card(key, pwg_idx, verbose=True):
 
     # 1) PWG portrait (corpus evidence) + labeled raw records (main + Nachträge)
     portraits = [M.portrait(buf) for buf in pwg_bufs]
-    json.dump(portraits, open(os.path.join(OUT, key + '.portrait.json'), 'w', encoding='utf-8'),
+    json.dump(portraits, open(os.path.join(OUT, safe_name(key) + '.portrait.json'), 'w', encoding='utf-8'),
               ensure_ascii=False, indent=1)
     sections = []
     for i, buf in enumerate(pwg_bufs):
@@ -70,7 +79,7 @@ def gen_card(key, pwg_idx, verbose=True):
         for r in L['records']:
             sections.append('=== LAYER: %s ===\n\n%s' % (ROLE.get(code, code.upper()), r))
 
-    open(os.path.join(OUT, key + '.raw.txt'), 'w', encoding='utf-8').write('\n\n'.join(sections))
+    open(os.path.join(OUT, safe_name(key) + '.raw.txt'), 'w', encoding='utf-8').write('\n\n'.join(sections))
     if verbose:
         ns = sum(len([s for s in p['senses'] if s['n'] != '0']) for p in portraits)
         print('  %-10s PWG rec=%d senses=%d | PW=%d SCH=%d PWKVN=%d | NWS-extra=%s'
@@ -106,9 +115,9 @@ def main():
 
     def is_merged(key):
         """True only if a current MERGED input already exists. The superseded
-        PWG-only _pilot_gen.py writes the SAME <key>.raw.txt name in '=== RECORD'
+        PWG-only _pilot_gen.py writes the SAME <safe>.raw.txt name in '=== RECORD'
         format — those must be regenerated, not skipped as done."""
-        p = os.path.join(OUT, key + '.raw.txt')
+        p = os.path.join(OUT, safe_name(key) + '.raw.txt')
         try:
             with open(p, encoding='utf-8') as f:
                 return '=== LAYER:' in f.read(200)
@@ -121,9 +130,15 @@ def main():
           % (len(keys), ' [scaled, resumable]' if scaled else '', len(todo)))
 
     n = missing = with_nws = 0
+    errored = []                       # keys unwritable on this FS (e.g. '|' in arI|a)
     lc_tot = {'pw': 0, 'sch': 0, 'pwkvn': 0, 'nws': 0}
     for j, key in enumerate(todo, 1):
-        lc = gen_card(key, pwg_idx, verbose=not scaled)
+        try:
+            lc = gen_card(key, pwg_idx, verbose=not scaled)
+        except OSError as e:           # one bad key must not kill an 11k-card run
+            errored.append(key)
+            print('  SKIP (unwritable: %s): %r' % (e.strerror or e, key))
+            continue
         if lc is None:
             missing += 1
             continue
@@ -136,8 +151,9 @@ def main():
             print('  [%d/%d] generated; NWS-extra so far %d' % (j, len(todo), with_nws))
             sys.stdout.flush()
 
-    print('wrote %d merged pilot inputs → %s%s'
-          % (n, OUT, (' (%d missing in PWG)' % missing) if missing else ''))
+    print('wrote %d merged pilot inputs → %s%s%s'
+          % (n, OUT, (' (%d missing in PWG)' % missing) if missing else '',
+             (' (%d unwritable: %s)' % (len(errored), errored)) if errored else ''))
     if scaled and n:
         print('  layer coverage: PW %d (%.0f%%)  SCH %d (%.0f%%)  PWKVN %d (%.0f%%)  NWS-extra %d (%.0f%%)'
               % (lc_tot['pw'], 100 * lc_tot['pw'] / n, lc_tot['sch'], 100 * lc_tot['sch'] / n,
