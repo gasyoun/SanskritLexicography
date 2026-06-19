@@ -85,6 +85,12 @@ Concrete assets now on disk / in the repo:
 
 ## 4. Roadmap
 
+Machine-readable companion artifacts:
+[roadmap/scientific_hardening.json](roadmap/scientific_hardening.json) is the
+canonical phase/gate record; [roadmap/quality_gates.jsonl](roadmap/quality_gates.jsonl)
+is the line-oriented audit/dashboard feed; validate both with
+`python src/roadmap_check.py`.
+
 **Phase A — prove the output (now).** Corpus-first re-harvest + re-translate the
 216 a-section cards; ship a reviewable sample edition slice; measure first-pass
 quality. *Deliverable: a-section cards with corpus-attested, stratified senses.*

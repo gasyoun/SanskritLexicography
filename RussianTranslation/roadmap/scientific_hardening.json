@@ -1,0 +1,236 @@
+{
+  "$schema": "scientific_hardening.schema.json",
+  "schema_version": "pwg_ru.scientific_hardening.v1",
+  "updated": "2026-06-19",
+  "current_verdict": {
+    "milestone": "audit_defects_closed_for_first_scale_milestone",
+    "status": "implementation_solid_for_milestone_1",
+    "not_print_ready_until": [
+      "human-reviewed gold set is frozen",
+      "stratified double review reports reviewer agreement",
+      "canonical lexicographic microstructure is implemented",
+      "full deterministic assembled export passes gates",
+      "immutable edition cut is produced"
+    ]
+  },
+  "modern_source_policy": {
+    "policy": "approved modern Sanskrit-Russian sources are publishable body text with attribution and provenance; do not downgrade them to evidence-only and do not strip them solely because they are modern",
+    "approved_modern_sources": [
+      "kochergina",
+      "frisch",
+      "smirnov"
+    ],
+    "public_domain_or_legacy_sources": [
+      "knauer",
+      "kossovich"
+    ],
+    "source_attribution_required": true,
+    "publication_blocker": false,
+    "recorded_in": [
+      "RIGHTS_APPROVALS.md",
+      "DATA_LICENSE.md",
+      "src/corpus_gate.py"
+    ]
+  },
+  "phases": [
+    {
+      "id": "phase_1_repair_audit_defects",
+      "title": "Repair concrete audit defects before scale-up",
+      "status": "done",
+      "deliverables": [
+        "proper-name-safe harvest lemmatization",
+        "legacy translation-store migration path",
+        "shared reversible Windows-safe filename encoder",
+        "scale routing via the microstructure sense parser",
+        "lossy assembled records quarantined",
+        "modern-source approvals policy recorded"
+      ],
+      "exit_criteria": [
+        "py_compile passes for src/*.py",
+        "pwg_mask stats round-trip audit is clean except quarantined legacy tail",
+        "_audit.py reports VERDICT: CLEAN",
+        "nws_split.py selftest passes",
+        "Agni/agni do not lemmatize to agnut",
+        "every PWG key maps to a unique filesystem-legal stem",
+        "normal assembled output has no lossless=false records"
+      ],
+      "evidence": [
+        "commit c76e2c6",
+        "commit 8f1da57",
+        "commit 6de94eb"
+      ]
+    },
+    {
+      "id": "phase_2_reharvest_a_slice",
+      "title": "Re-harvest and re-translate a small a-section slice",
+      "status": "next",
+      "deliverables": [
+        "fixed-router a-section manifest",
+        "corpus-first translated sample cards",
+        "review queue seeded from the regenerated slice",
+        "comparison against legacy provisional cards"
+      ],
+      "exit_criteria": [
+        "sample cards use the shared filename mapping",
+        "sample cards carry provenance and review_status",
+        "approved modern-source text is retained with attribution",
+        "all severity >=3 cards are in the human review queue"
+      ]
+    },
+    {
+      "id": "phase_3_promote_apresjan_microstructure",
+      "title": "Promote the Apresjan portrait into the canonical card schema",
+      "status": "planned",
+      "deliverables": [
+        "homonym key based on key1+h",
+        "sense tree rather than flat sense bag",
+        "equivalence_type per sense",
+        "diasystem labels from PWG markers and source strata",
+        "citation-bearing sense records",
+        "discriminated Russian near-synonym sets"
+      ],
+      "exit_criteria": [
+        "card schema can represent homographs without pooling",
+        "every sense has a parent/path or explicit root",
+        "equivalent glosses and explanatory glosses are separated",
+        "synonym candidates are converted into Apresjan-style differentiae"
+      ]
+    },
+    {
+      "id": "phase_4_gold_set_and_double_review",
+      "title": "Freeze a human-checked gold set and measure scientific reliability",
+      "status": "planned",
+      "deliverables": [
+        "stratified frozen gold set",
+        "human labels for correct, lemma-variant, proper-name, partial, wrong-sense, hallucinated",
+        "Wilson confidence intervals",
+        "stratified double-reviewed sample",
+        "reviewer agreement report"
+      ],
+      "exit_criteria": [
+        "precision is reported with Wilson 95 percent confidence intervals",
+        "reviewer agreement is tracked on the double-reviewed sample",
+        "gold-set inputs and labels are immutable for the edition cut",
+        "machine-only estimates are clearly separated from human-reviewed estimates"
+      ]
+    },
+    {
+      "id": "phase_5_schema_ci_exports_edition_cut",
+      "title": "Make the edition citable, reproducible, and interoperable",
+      "status": "planned",
+      "deliverables": [
+        "JSON Schema for assembled and final cards",
+        "CI gate for deterministic audits",
+        "CITATION.cff",
+        "immutable edition_vN cut",
+        "TEI Lex-0 export",
+        "OntoLex-Lemon or vartrans export",
+        "Russian-to-Sanskrit reverse index"
+      ],
+      "exit_criteria": [
+        "all release artifacts validate against committed schemas",
+        "edition cut records source commits, prompts, model IDs, and build commands",
+        "TEI/OntoLex exports round-trip key and sense identifiers",
+        "reverse index links Russian lemmas back to Sanskrit headwords and senses"
+      ]
+    }
+  ],
+  "quality_gates": [
+    {
+      "id": "G1_deterministic_audits",
+      "status": "passing",
+      "blocks_print": true,
+      "evidence": [
+        "python -m py_compile src/*.py",
+        "python src/pwg_mask.py stats",
+        "python src/_audit.py",
+        "python src/nws_split.py selftest"
+      ]
+    },
+    {
+      "id": "G2_name_lemmatization_guard",
+      "status": "passing",
+      "blocks_print": true,
+      "evidence": [
+        "corpus_harvest.py agni emits agni/name rather than agnut",
+        "real Russian verbs such as idi, dai, nesi still lemmatize as verbs"
+      ]
+    },
+    {
+      "id": "G3_filename_mapping",
+      "status": "passing",
+      "blocks_print": true,
+      "evidence": [
+        "123366 records checked",
+        "106083 unique stems",
+        "0 filesystem-illegal stems",
+        "0 collisions",
+        "0 Python/JS safeName parity mismatches"
+      ]
+    },
+    {
+      "id": "G4_full_assembled_export",
+      "status": "partial",
+      "blocks_print": true,
+      "evidence": [
+        "bounded assembled sample verified",
+        "lossy records are quarantined",
+        "full assemble.py build 1500 needs a longer supervised run"
+      ]
+    },
+    {
+      "id": "G5_translation_store_review_gate",
+      "status": "partial",
+      "blocks_print": true,
+      "evidence": [
+        "217 translated legacy rows are stamped",
+        "206 are machine-ok",
+        "0 are print-ready because legacy rows are legacy_needs_review"
+      ]
+    },
+    {
+      "id": "G6_human_gold_set",
+      "status": "not_started",
+      "blocks_print": true,
+      "evidence": [
+        "existing precision report is LLM-judged scaffold only",
+        "human-checked frozen gold set still required"
+      ]
+    },
+    {
+      "id": "G7_double_review_agreement",
+      "status": "not_started",
+      "blocks_print": true,
+      "evidence": [
+        "review_status machinery exists",
+        "stratified double-reviewed sample and agreement report still required"
+      ]
+    },
+    {
+      "id": "G8_canonical_microstructure",
+      "status": "not_started",
+      "blocks_print": true,
+      "evidence": [
+        "Apresjan design is documented",
+        "canonical homonym/sense-tree/equivalence/diasystem schema still required"
+      ]
+    },
+    {
+      "id": "G9_schema_ci_interop",
+      "status": "not_started",
+      "blocks_print": true,
+      "evidence": [
+        "roadmap schema is committed",
+        "assembled-card and final-card schemas, CI, TEI, OntoLex, and reverse index still required"
+      ]
+    },
+    {
+      "id": "G10_immutable_edition_cut",
+      "status": "not_started",
+      "blocks_print": true,
+      "evidence": [
+        "CITATION.cff, DOI plan, edition_vN cut, and release manifest still required"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "pwg_ru.scientific_hardening.schema.v1",
+  "title": "PWG Russian scientific hardening roadmap",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "updated",
+    "current_verdict",
+    "modern_source_policy",
+    "phases",
+    "quality_gates"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "pwg_ru.scientific_hardening.v1"
+    },
+    "updated": {
+      "type": "string",
+      "pattern": "^20[0-9]{2}-[0-9]{2}-[0-9]{2}$"
+    },
+    "current_verdict": {
+      "type": "object",
+      "required": ["milestone", "status", "not_print_ready_until"],
+      "properties": {
+        "milestone": { "type": "string" },
+        "status": { "type": "string" },
+        "not_print_ready_until": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      },
+      "additionalProperties": true
+    },
+    "modern_source_policy": {
+      "type": "object",
+      "required": ["policy", "approved_modern_sources", "source_attribution_required"],
+      "properties": {
+        "policy": { "type": "string" },
+        "approved_modern_sources": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "source_attribution_required": { "type": "boolean" }
+      },
+      "additionalProperties": true
+    },
+    "phases": {
+      "type": "array",
+      "minItems": 5,
+      "items": {
+        "type": "object",
+        "required": ["id", "title", "status", "deliverables", "exit_criteria"],
+        "properties": {
+          "id": { "type": "string" },
+          "title": { "type": "string" },
+          "status": {
+            "enum": ["done", "partly_done", "next", "planned", "blocked"]
+          },
+          "deliverables": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "exit_criteria": {
+            "type": "array",
+            "items": { "type": "string" }
+          }
+        },
+        "additionalProperties": true
+      }
+    },
+    "quality_gates": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["id", "status", "blocks_print", "evidence"],
+        "properties": {
+          "id": { "type": "string" },
+          "status": {
+            "enum": ["passing", "partial", "not_started", "blocked", "failing"]
+          },
+          "blocks_print": { "type": "boolean" },
+          "evidence": {
+            "type": "array",
+            "items": { "type": "string" }
+          }
+        },
+        "additionalProperties": true
+      }
+    }
+  },
+  "additionalProperties": true
+}

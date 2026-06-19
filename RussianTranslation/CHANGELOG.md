@@ -10,6 +10,11 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## 2026-06-19
 
+### Added
+- Machine-readable scientific-hardening roadmap and print-blocking quality gates:
+  `roadmap/scientific_hardening.json`, `roadmap/quality_gates.jsonl`, and
+  `src/roadmap_check.py`.
+
 ### Changed
 - Modern Sanskrit-Russian sources with project approvals are now marked
   publishable with attribution/provenance, not evidence-only; see
