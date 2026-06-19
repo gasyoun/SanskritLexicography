@@ -8,14 +8,24 @@ ready for a dated entry.
 
 ## [Unreleased]
 
+No entries yet.
+
+## [0.0.3] - 2026-06-19
+
 ### Added
 - `RussianTranslation/src/pilot/run_real_test.py` — driver for the real-conditions
   pilot test (run locally on the Max subscription, two phases, one command each):
   `prep [N] [OFFSET]` selects a coverage-first a-section batch, marks fresh vs
   protected (hand-authored `aMSa`/`anna`/`ap`) cards, and sets the workflow's
   `OFFSET`/`LIMIT`; `audit <wf_output.json>` renders via `_pilot_collect.py`,
-  bridges `<key>.md` → `<key>.merged.md`, runs `nws_split.py check` per card, and
-  reports judge pass rate + NWS-attribution (F12) clean count + misattributions.
+  runs `nws_split.py check` per card, and reports judge pass rate +
+  NWS-attribution (F12) clean count + misattributions.
+- The audit phase was pre-flighted with a synthetic `ap` workflow output:
+  collect → protected-card preservation → `nws_split.py check` → report. Result:
+  publishable 1/1, NWS audit CLEAN 1, F12 misattribution 0.
+- Materialized the human-review worklist with `run_batch.py review`: 217
+  `legacy_needs_review` cards, severity-sorted, with no reviewer decisions
+  advanced.
 
 ### Changed
 - `RussianTranslation/src/pilot/run_pilot_wf.js` — the translate→judge workflow is
@@ -34,6 +44,19 @@ ready for a dated entry.
   the loop manually on card `ap` (2026-06-19): the translation was sound but the
   first draft failed the audit purely on output format; the rule makes future cards
   audit-ready (re-checked: `nws_split.py check ap` → CLEAN, 0 misattributions).
+- `_pilot_collect.py` now writes audited `<safe>.merged.md` files directly using
+  the shared `safe_name()` encoder; `run_real_test.py` no longer uses the brittle
+  external `<key>.md` → `<key>.merged.md` copy bridge.
+- `run_real_test.py prep` was refreshed for the June-22 batch window
+  (`OFFSET=0`, `LIMIT=10`): `as As Ap api amfta agni Atman anu arjuna arTa`,
+  now correctly all fresh after exact-case output checks.
+
+### Fixed
+- Legacy `.merged.md` compatibility checks now require exact filenames, avoiding
+  Windows case-insensitive false positives such as `Ap` being treated as protected
+  because `ap.merged.md` exists.
+- Generated the missing writable a-section input for `arI|a` (`|` escaped as
+  `~007c`); pilot inputs now cover 12,156/12,156 a-section manifest cards.
 
 ## [0.0.2] - 2026-06-19
 

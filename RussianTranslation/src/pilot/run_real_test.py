@@ -14,7 +14,7 @@ subscription quota resets. Two phases, one command each:
       (This driver cannot invoke the Max-subscription harness for you.)
 
   python run_real_test.py audit wf_output.json
-      Renders cards via _pilot_collect.py, bridges <key>.md → <key>.merged.md (never
+      Renders cards via _pilot_collect.py directly to <safe>.merged.md (never
       overwriting a protected hand-authored card), runs `nws_split.py check` on each,
       and reports: judge pass rate + NWS-attribution (F12) clean count + any misattrib.
 
@@ -22,13 +22,17 @@ Context: on 2026-06-19 the loop was validated manually on card `ap` (nws_split a
 CLEAN); run_pilot_wf.js HARD RULE 5 now encodes the NWS one-row-per-owner format the
 auditor needs. See .ai_state.md / changelog [Unreleased].
 """
-import os, re, sys, json, shutil, subprocess
+import os, re, sys, json, subprocess
 
 sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
 
 HERE = os.path.dirname(os.path.abspath(__file__))          # .../src/pilot
 SRC = os.path.dirname(HERE)                                 # .../src
+sys.path.insert(0, SRC)
+
+from safe_filename import safe_name
+
 OUT = os.path.join(HERE, 'output')
 MANIFEST = os.path.join(OUT, 'scale_manifest.a.json')
 WF = os.path.join(HERE, 'run_pilot_wf.js')
@@ -38,14 +42,33 @@ NWS_SPLIT = os.path.join(SRC, 'nws_split.py')
 PROTECTED = {'aMSa', 'anna', 'ap'}                          # hand-authored — never overwrite
 
 
-def safe_name(k):
-    """Match nws_split / safe_filename: uppercase→'_'+lower (collision-safe stem)."""
-    return ''.join('_' + c.lower() if c.isupper() else c for c in k)
+def exact_file_exists(directory, name):
+    """Case-sensitive existence check, even on case-insensitive filesystems."""
+    try:
+        return name in set(os.listdir(directory))
+    except OSError:
+        return False
 
 
 def merged_exists(key):
-    return (os.path.exists(os.path.join(OUT, safe_name(key) + '.merged.md'))
-            or os.path.exists(os.path.join(OUT, key + '.merged.md')))
+    return (exact_file_exists(OUT, safe_name(key) + '.merged.md')
+            or exact_file_exists(OUT, key + '.merged.md'))
+
+
+def find_results(o):
+    if isinstance(o, dict):
+        if isinstance(o.get('results'), list):
+            return o['results']
+        for v in o.values():
+            r = find_results(v)
+            if r is not None:
+                return r
+    if isinstance(o, list):
+        for v in o:
+            r = find_results(v)
+            if r is not None:
+                return r
+    return None
 
 
 def cmd_prep(args):
@@ -82,9 +105,11 @@ def cmd_prep(args):
     print('  2) python run_real_test.py audit wf_output.json')
 
 
-def _run(argv):
+def _run(argv, protected=None):
+    env = os.environ.copy()
+    env['PILOT_COLLECT_PROTECTED'] = ','.join(sorted(protected or PROTECTED))
     return subprocess.run([sys.executable] + argv, cwd=SRC, capture_output=True,
-                          text=True, encoding='utf-8')
+                          text=True, encoding='utf-8', env=env)
 
 
 def cmd_audit(args):
@@ -93,34 +118,31 @@ def cmd_audit(args):
     wf_out = args[0]
     if not os.path.exists(wf_out):
         sys.exit('no workflow output %r' % wf_out)
-    batch = (json.load(open(BATCH_FILE, encoding='utf-8'))['batch']
-             if os.path.exists(BATCH_FILE) else None)
+    batch_meta = json.load(open(BATCH_FILE, encoding='utf-8')) if os.path.exists(BATCH_FILE) else {}
+    batch = batch_meta.get('batch')
+    protected = PROTECTED | set(batch_meta.get('protected') or [])
 
     # 1) render cards + judge summary
     print('=== 1. collect (render + judge summary) ===')
-    r = _run([COLLECT, os.path.abspath(wf_out)])
+    r = _run([COLLECT, os.path.abspath(wf_out)], protected=protected)
     print(r.stdout.rstrip())
     if r.returncode:
         print(r.stderr.rstrip()); sys.exit('collect failed')
 
     # which keys were produced (from the workflow output)
     raw = json.load(open(wf_out, encoding='utf-8'))
-    res = raw.get('results') or raw.get('result', {}).get('results') or []
+    res = find_results(raw) or []
     keys = [c.get('key') for c in res if c.get('key')] or (batch or [])
 
-    # 2) bridge <key>.md → <key>.merged.md (the auditor reads .merged.md), never
-    #    clobbering a protected hand-authored card
-    print('\n=== 2. bridge + NWS attribution audit (nws_split) ===')
+    # 2) _pilot_collect.py writes <safe>.merged.md directly. For protected
+    #    hand-authored cards, audit the existing card but never overwrite it.
+    print('\n=== 2. NWS attribution audit (nws_split) ===')
     clean = misattr = noidx = 0
     bad_cards = []
     for k in keys:
-        src_md = os.path.join(OUT, k + '.md')
-        dst_md = os.path.join(OUT, safe_name(k) + '.merged.md')
-        if k in PROTECTED:
-            print('  %-12s protected — skipped' % k); continue
-        if os.path.exists(src_md) and not (k not in PROTECTED and merged_exists(k) and not os.path.exists(src_md)):
-            shutil.copyfile(src_md, dst_md)
-        a = _run([NWS_SPLIT, 'check', k])
+        if k in protected:
+            print('  %-12s protected — keeping hand-authored card' % k)
+        a = _run([NWS_SPLIT, 'check', k], protected=protected)
         out = a.stdout + a.stderr
         verdict = ('CLEAN' if 'CLEAN' in out else
                    'MISATTRIBUTION' if 'MISATTRIBUTION' in out else

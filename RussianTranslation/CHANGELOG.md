@@ -14,6 +14,9 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 - Machine-readable scientific-hardening roadmap and print-blocking quality gates:
   `roadmap/scientific_hardening.json`, `roadmap/quality_gates.jsonl`, and
   `src/roadmap_check.py`.
+- `src/pilot/run_real_test.py` audit preflight was exercised with a synthetic
+  `ap` workflow output, proving the collect → protected-card preservation →
+  `nws_split.py check` → report path before the June-22 Max run.
 
 ### Changed
 - Modern Sanskrit-Russian sources with project approvals are now marked
@@ -22,6 +25,13 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 - Shared the case-collision-safe filename encoder across NWS scrape/split/audit,
   pilot generation, and merge lookup; forbidden Windows filename characters are
   escaped reversibly.
+- `_pilot_collect.py` now writes audited `<safe>.merged.md` files directly using
+  `safe_name()`; the real-test auditor no longer needs a brittle external
+  `<key>.md` copy bridge and uses the same filename encoder as the rest of the
+  pipeline.
+- `run_real_test.py prep` was refreshed for the June-22 batch window
+  (`OFFSET=0`, `LIMIT=10`): `as As Ap api amfta agni Atman anu arjuna arTa`,
+  now correctly all fresh after exact-case output checks.
 
 ### Fixed
 - Corpus harvest no longer lemmatizes Sanskrit proper names such as `Агни` to
@@ -31,6 +41,16 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
   into the normal assembled card stream.
 - `run_batch.py migrate_legacy` backfills old translation-store rows and marks
   unverifiable legacy cards `legacy_needs_review`.
+- Protected hand-authored pilot cards (`aMSa`, `anna`, `ap`) are preserved during
+  real-test collection/audit, while still being audited by `nws_split.py`.
+- Legacy `.merged.md` compatibility checks now require exact filenames, avoiding
+  Windows case-insensitive false positives such as `Ap` being treated as protected
+  because `ap.merged.md` exists.
+- Generated the missing writable a-section input for `arI|a` (`|` escaped as
+  `~007c`); pilot inputs now cover 12,156/12,156 a-section manifest cards.
+- Materialized the human review worklist with `run_batch.py review`: 217
+  `legacy_needs_review` cards, severity-sorted, with no reviewer decisions
+  advanced.
 
 ## 2026-06-16
 
