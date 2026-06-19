@@ -144,10 +144,14 @@ queue.
 
 **Fix.** Provenance stamping + persisted senses; `corpus_gate.RIGHTS` +
 per-sense `publishable` flag + CC BY-SA 4.0; `review_status` state machine +
-`run_batch.py review` editor worklist.
+`run_batch.py review` editor worklist. Later update (2026-06-19): project
+copyright approvals mean modern Sanskrit-Russian sources are publishable with
+attribution/provenance, not evidence-only; the rights metadata is an audit and
+citation layer, not a blocker.
 
-**Good.** Every card is reproducible and rights-aware; 11 flagged cards sit in a
-severity-sorted human queue instead of going silently to print.
+**Good.** Every card is reproducible, source-attributed, and rights-aware under
+the approval policy; flagged cards sit in a severity-sorted human queue instead
+of going silently to print.
 
 ---
 
