@@ -12,6 +12,8 @@ export const meta = {
 }
 
 const IN = 'C:\\\\Users\\\\user\\\\Documents\\\\GitHub\\\\SanskritLexicography\\\\RussianTranslation\\\\src\\\\pilot\\\\input'
+const HERE = dirname(fileURLToPath(import.meta.url))
+const FINAL_CARD_SCHEMA = JSON.parse(readFileSync(join(HERE, '..', '..', 'schemas', 'pwg_ru_final_card.schema.json'), 'utf-8'))
 // Reversible Windows-safe filename stem — MUST match src/safe_filename.py.
 // Keeps the legacy uppercase encoding for compatibility, and escapes forbidden
 // filename chars such as "|" as ~hhhh.
@@ -32,8 +34,7 @@ const FALLBACK = ['arTa', 'agni', 'amfta', 'anna', 'aNga', 'akzara', 'anta', 'an
                   'ap', 'anya', 'apara', 'arjuna', 'anaGa', 'antar', 'api']
 let CARDS
 try {
-  const __dir = dirname(fileURLToPath(import.meta.url))
-  const manifest = JSON.parse(readFileSync(join(__dir, 'output', `scale_manifest.${SECTION}.json`), 'utf-8'))
+  const manifest = JSON.parse(readFileSync(join(HERE, 'output', `scale_manifest.${SECTION}.json`), 'utf-8'))
   CARDS = manifest.map(e => e.key1).slice(OFFSET, OFFSET + LIMIT)
   console.error(`manifest ${SECTION}: ${manifest.length} keys; batch [${OFFSET}, ${OFFSET + LIMIT}) → ${CARDS.length} cards`)
 } catch (e) {
@@ -70,65 +71,8 @@ HARD RULES (the judge fails the card otherwise):
 
 Return ONLY the structured object.`
 
-const CARD = {
-  type: 'object', additionalProperties: false,
-  properties: {
-    key1: { type: 'string' }, iast: { type: 'string' },
-    records: {
-      type: 'array',
-      items: {
-        type: 'object', additionalProperties: false,
-        properties: {
-          h: { type: 'string' },
-          grammar: { type: 'string', description: 'POS/gender as PWG (m./f./n./…), verbatim' },
-          senses: {
-            type: 'array',
-            items: {
-              type: 'object', additionalProperties: false,
-              properties: {
-                tag: { type: 'string' },
-                german: { type: 'string', description: 'the PWG German for this sense (trimmed, sigla kept)' },
-                russian: { type: 'string', description: 'the Russian rendering (scholarly; sigla/abbrevs kept)' },
-                equivalence_type: { enum: ['equivalent', 'explanatory'] },
-                source_type: { enum: ['attested', 'lexicographic', 'mixed'] },
-                stratum: { type: 'string', description: 'stratum used (Vedic/Epic/Classical/Medieval or empty)' },
-                differentia: { type: 'string', description: 'Apresjan note when discriminating near-synonyms, else empty' },
-              },
-              required: ['tag', 'german', 'russian', 'equivalence_type', 'source_type', 'stratum', 'differentia'],
-            },
-          },
-        },
-        required: ['h', 'grammar', 'senses'],
-      },
-    },
-    notes: { type: 'string' },
-  },
-  required: ['key1', 'iast', 'records', 'notes'],
-}
-
-const JUDGE = {
-  type: 'object', additionalProperties: false,
-  properties: {
-    key1: { type: 'string' },
-    ok: { type: 'boolean' },
-    severity: { type: 'integer', description: '1 best … 5 worst' },
-    register_ok: { type: 'boolean' },
-    sigla_kept: { type: 'boolean', description: 'sources + grammar abbrevs left verbatim, NOT translated' },
-    coverage_ok: { type: 'boolean', description: 'every PWG sense rendered' },
-    corpus_used: { type: 'boolean' },
-    discrimination_quality: { enum: ['strong', 'adequate', 'weak', 'missing'] },
-    issues: {
-      type: 'array',
-      items: {
-        type: 'object', additionalProperties: false,
-        properties: { severity: { type: 'integer' }, detail: { type: 'string' } },
-        required: ['severity', 'detail'],
-      },
-    },
-    note: { type: 'string' },
-  },
-  required: ['key1', 'ok', 'severity', 'register_ok', 'sigla_kept', 'coverage_ok', 'corpus_used', 'discrimination_quality', 'issues', 'note'],
-}
+const CARD = { ...FINAL_CARD_SCHEMA.$defs.card, $defs: FINAL_CARD_SCHEMA.$defs }
+const JUDGE = { ...FINAL_CARD_SCHEMA.$defs.judge, $defs: FINAL_CARD_SCHEMA.$defs }
 
 phase('Translate')
 const out = await pipeline(

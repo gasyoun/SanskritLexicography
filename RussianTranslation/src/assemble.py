@@ -15,7 +15,8 @@ is queried in place from SamudraManthanam.
 Modes:
   python assemble.py card   <key1>     show one assembled card (pretty)
   python assemble.py sample [N]        show N covered cards (richest reuse first)
-  python assemble.py build  [N]        emit assembled_cards.jsonl (gitignored)
+  python assemble.py build  [N] [--offset K] [--out PATH] [--quarantine PATH]
+                                      emit assembled_cards.jsonl (gitignored)
 """
 import json, os, sys, collections
 sys.stdout.reconfigure(encoding='utf-8')
@@ -27,8 +28,20 @@ import corpus_harvest as ch
 
 OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'assembled_cards.jsonl')
 QUARANTINE = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'assembled_cards.quarantine.jsonl')
+OUT_TMP = OUT + '.tmp'
+QUARANTINE_TMP = QUARANTINE + '.tmp'
 
 _CHIDX = None
+
+
+def replace_output(tmp, dest):
+    try:
+        os.replace(tmp, dest)
+    except PermissionError as e:
+        raise RuntimeError(
+            'could not replace %s; existing export left untouched, temp output kept at %s'
+            % (dest, tmp)
+        ) from e
 
 
 def ch_index():
@@ -39,11 +52,7 @@ def ch_index():
     return _CHIDX
 
 
-def corpus_lexicon_senses(key1, prefer_period=None):
-    """Stratified, lemma-grouped, content-filtered Russian attested in the
-    parallel corpus for this headword, plus the near-synonym candidate set
-    (distinct content lemmas, freq-ranked) to be DISCRIMINATED per Apresjan."""
-    rows = ch_index().get(cg.form_key(key1), [])
+def _corpus_lexicon_senses_from_rows(rows, prefer_period=None):
     if not rows:
         return None
     strata = ch.harvest(rows, prefer_period)
@@ -63,19 +72,80 @@ def corpus_lexicon_senses(key1, prefer_period=None):
     }
 
 
+def corpus_lexicon_senses(key1, prefer_period=None):
+    """Stratified, lemma-grouped, content-filtered Russian attested in the
+    parallel corpus for this headword, plus the near-synonym candidate set
+    (distinct content lemmas, freq-ranked) to be DISCRIMINATED per Apresjan."""
+    return _corpus_lexicon_senses_from_rows(
+        ch_index().get(cg.form_key(key1), []), prefer_period)
+
+
+def corpus_examples_from_rows(rows, limit=3):
+    """Cheap build-time corpus examples from corpus_lexicon rows.
+
+    Interactive lookup still uses corpus_gate.corpus_examples(), whose SQLite FTS
+    result is fuller. The assembled export only requires stable {work, passage,
+    ru} evidence, so build can avoid per-card FTS queries.
+    """
+    out, seen = [], set()
+    for r in rows:
+        if r.get('kind') != 'translation':
+            continue
+        ru = (r.get('ru') or '').strip()
+        work = r.get('work')
+        passage = r.get('passage')
+        if not (ru and work and passage):
+            continue
+        key = (work, passage)
+        if key in seen:
+            continue
+        seen.add(key)
+        out.append({'work': work, 'passage': passage, 'ru': ru})
+        if len(out) >= limit:
+            break
+    return out
+
+
+def precompute_corpus_lexicon_cache(raw_idx):
+    cache = {}
+    for key, rows in raw_idx.items():
+        senses = _corpus_lexicon_senses_from_rows(rows)
+        if senses:
+            cache[key] = senses
+    return cache
+
+
+def precompute_corpus_examples_cache(raw_idx):
+    return {key: examples for key, rows in raw_idx.items()
+            for examples in [corpus_examples_from_rows(rows)] if examples}
+
+
+def build_context():
+    raw_idx = ch_index()
+    print('  precomputing corpus lexicon cache for %d attested key(s)'
+          % len(raw_idx), file=sys.stderr)
+    return {
+        'corpus_lexicon': precompute_corpus_lexicon_cache(raw_idx),
+        'corpus_examples': precompute_corpus_examples_cache(raw_idx),
+    }
+
+
 def iast(key1):
     return ''.join(cg._S2I.get(c, c) for c in cg.form_key(key1))
 
 
-def harvest(idx, key1, key2):
+def harvest(idx, key1, key2, ctx=None):
     indep, kow = cg.lookup(idx, key1, key2)
-    corpus = cg.corpus_examples(key1, limit=3)
+    if ctx is None:
+        corpus = cg.corpus_examples(key1, limit=3)
+    else:
+        corpus = ctx['corpus_examples'].get(cg.form_key(key1), [])
     return indep, kow, corpus
 
 
-def assemble(idx, key1, key2, records):
+def assemble(idx, key1, key2, records, ctx=None):
     """records = list of masked record bodies (one per homonym)."""
-    indep, kow, corpus = harvest(idx, key1, key2)
+    indep, kow, corpus = harvest(idx, key1, key2, ctx)
     recs = []
     quarantined = []
     for record_no, body in enumerate(records, 1):
@@ -90,7 +160,10 @@ def assemble(idx, key1, key2, records):
                      'placeholders': ph,
                      'lossless': True})
     pub_dict = sum(1 for g in indep if g.get('publishable'))
-    clex = corpus_lexicon_senses(key1)        # stratified corpus reuse (the 190k-key lexicon)
+    if ctx is None:
+        clex = corpus_lexicon_senses(key1)    # lazy interactive path
+    else:
+        clex = ctx['corpus_lexicon'].get(cg.form_key(key1))
     return {
         'key1': key1, 'key2': key2, 'iast': iast(key1),
         'records': recs,
@@ -119,19 +192,35 @@ def assemble(idx, key1, key2, records):
     }
 
 
-def grouped_records(limit_scan=None):
+def grouped_records(limit_scan=None, offset=0, limit=None):
     """Yield (key1, key2, [bodies]) grouping consecutive same-key1 records."""
     cur_k1 = cur_k2 = None
     bodies = []
+    seen = emitted = 0
+
+    def maybe_emit(k1, k2, recs):
+        nonlocal seen, emitted
+        if seen >= offset and (limit is None or emitted < limit):
+            emitted += 1
+            return k1, k2, recs
+        seen += 1
+        return None
+
     for buf in pwg_mask.records(limit_scan):
         k1, k2, body = pwg_mask.parse(buf)
         if k1 != cur_k1:
             if cur_k1 is not None:
-                yield cur_k1, cur_k2, bodies
+                row = maybe_emit(cur_k1, cur_k2, bodies)
+                if row:
+                    yield row
+                if limit is not None and emitted >= limit:
+                    return
             cur_k1, cur_k2, bodies = k1, k2, []
         bodies.append(body)
     if cur_k1 is not None:
-        yield cur_k1, cur_k2, bodies
+        row = maybe_emit(cur_k1, cur_k2, bodies)
+        if row:
+            yield row
 
 
 def pretty(card):
@@ -200,22 +289,55 @@ def cmd_sample(idx, args):
             break
 
 
+def build_tmp_path(path):
+    return path + '.tmp'
+
+
+def parse_build_args(args):
+    n = offset = None
+    out, quarantine = OUT, QUARANTINE
+    i = 0
+    while i < len(args):
+        a = args[i]
+        if a == '--offset':
+            offset = int(args[i + 1]); i += 2
+        elif a == '--out':
+            out = args[i + 1]; i += 2
+        elif a == '--quarantine':
+            quarantine = args[i + 1]; i += 2
+        elif a.startswith('--'):
+            raise SystemExit('unknown build option: %s' % a)
+        elif n is None:
+            n = int(a); i += 1
+        else:
+            raise SystemExit('unexpected build argument: %s' % a)
+    return n, (offset or 0), out, quarantine
+
+
 def cmd_build(idx, args):
-    n = int(args[0]) if args else None
+    n, offset, out, quarantine = parse_build_args(args)
+    out_tmp = build_tmp_path(out)
+    quarantine_tmp = build_tmp_path(quarantine)
+    ctx = build_context()
     tot = cov = qn = 0
-    with open(OUT, 'w', encoding='utf-8', newline='') as o, \
-         open(QUARANTINE, 'w', encoding='utf-8', newline='') as q:
-        for k1, k2, bodies in grouped_records(n):
-            card = assemble(idx, k1, k2, bodies)
+    with open(out_tmp, 'w', encoding='utf-8', newline='') as o, \
+         open(quarantine_tmp, 'w', encoding='utf-8', newline='') as q:
+        for k1, k2, bodies in grouped_records(offset=offset, limit=n):
+            card = assemble(idx, k1, k2, bodies, ctx)
             for qr in card.pop('_quarantine', []):
                 q.write(json.dumps(qr, ensure_ascii=False) + '\n')
                 qn += 1
             o.write(json.dumps(card, ensure_ascii=False) + '\n')
             tot += 1
             cov += 1 if card['reuse']['covered'] else 0
+            if tot % 5000 == 0:
+                print('  assembled %d card(s), covered %d, quarantined %d'
+                      % (tot, cov, qn), file=sys.stderr)
+    replace_output(out_tmp, out)
+    replace_output(quarantine_tmp, quarantine)
     print('wrote %d assembled cards to %s (%d with reuse, %.1f%%; quarantined %d lossy record(s) → %s)'
-          % (tot, os.path.basename(OUT), cov, 100.0 * cov / max(tot, 1),
-             qn, os.path.basename(QUARANTINE)))
+          % (tot, os.path.basename(out), cov, 100.0 * cov / max(tot, 1),
+             qn, os.path.basename(quarantine)))
 
 
 def main():

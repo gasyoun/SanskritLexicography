@@ -1,0 +1,50 @@
+{
+  "results": [
+    {
+      "key": "ap",
+      "card": {
+        "key1": "ap",
+        "iast": "ap",
+        "records": [
+          {
+            "h": "2",
+            "grammar": "f.",
+            "senses": [
+              {
+                "tag": "1",
+                "german": "Wasser, Gewässer",
+                "russian": "вода, воды",
+                "equivalence_type": "equivalent",
+                "source_type": "attested",
+                "stratum": "Vedic",
+                "differentia": "вода — основной корпусный перевод во всех стратах; влага сохраняется для оттенка Feuchtigkeit."
+              },
+              {
+                "tag": "2",
+                "german": "der Stern δ Virginis",
+                "russian": "звезда δ Virginis",
+                "equivalence_type": "equivalent",
+                "source_type": "lexicographic",
+                "stratum": "",
+                "differentia": ""
+              }
+            ]
+          }
+        ],
+        "notes": "Fixture distilled from the ap pilot card for final-card schema validation."
+      },
+      "judge": {
+        "key1": "ap",
+        "ok": true,
+        "severity": 1,
+        "register_ok": true,
+        "sigla_kept": true,
+        "coverage_ok": true,
+        "corpus_used": true,
+        "discrimination_quality": "strong",
+        "issues": [],
+        "note": "Corpus candidates were used and near-synonyms were discriminated."
+      }
+    }
+  ]
+}

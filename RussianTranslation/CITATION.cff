@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use this Sanskrit-Russian lexicography dataset, please cite the edition manifest and repository."
+title: "PWG Russian Translation Lexicography Release"
+type: dataset
+authors:
+  - name: "Sanskrit Lexicography Project"
+repository-code: "https://github.com/"
+license: "CC-BY-4.0"
+version: "unreleased"

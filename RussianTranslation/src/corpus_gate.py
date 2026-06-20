@@ -17,7 +17,7 @@ Modes:
   python corpus_gate.py coverage [N]               per-signal coverage over PWG
   python corpus_gate.py tune     [N]               inter-dictionary agreement → threshold
 """
-import json, os, re, sys, sqlite3, unicodedata, random
+import atexit, json, os, re, sys, sqlite3, unicodedata, random
 from collections import defaultdict
 
 sys.stdout.reconfigure(encoding='utf-8')
@@ -28,6 +28,7 @@ GITHUB = os.path.normpath(os.path.join(HERE, '..', '..', '..'))
 PWG_KEY1 = os.path.join(HERE, '..', '..', 'HeadwordLists', 'PWG-unique-key1-106085.txt')
 CORPUS_DB = os.environ.get('SAMUDRA_CORPUS_DB',
                            os.path.join(GITHUB, 'SamudraManthanam', 'web', 'corpus.db'))
+_CORPUS_CON = None
 
 # ---- tunables ------------------------------------------------------------
 # THRESHOLD tuned by `tune` (inter-dictionary agreement): two independent human
@@ -113,6 +114,23 @@ def lookup(idx, key1, key2=None):
     return indep, kow
 
 # ---- corpus query (reuse SamudraManthanam, read-only) --------------------
+def corpus_connection():
+    global _CORPUS_CON
+    if _CORPUS_CON is None and os.path.exists(CORPUS_DB):
+        _CORPUS_CON = sqlite3.connect('file:%s?mode=ro' % CORPUS_DB, uri=True)
+    return _CORPUS_CON
+
+
+def close_corpus_connection():
+    global _CORPUS_CON
+    if _CORPUS_CON is not None:
+        _CORPUS_CON.close()
+        _CORPUS_CON = None
+
+
+atexit.register(close_corpus_connection)
+
+
 def corpus_examples(slp1, limit=3):
     if not os.path.exists(CORPUS_DB):
         return []
@@ -121,7 +139,7 @@ def corpus_examples(slp1, limit=3):
         return []
     out = []
     try:
-        con = sqlite3.connect('file:%s?mode=ro' % CORPUS_DB, uri=True)
+        con = corpus_connection()
         # NB: corpus_lines also holds dictionary rows (no #sa/#ru suffix); filter
         # to Sanskrit verse lines in SQL so LIMIT captures verses, not dict rows
         # (otherwise common headwords return 0 — the first 400 matches are dicts).
@@ -141,7 +159,6 @@ def corpus_examples(slp1, limit=3):
                 out.append({'work': work, 'passage': passage, 'ru': ru[0]})
                 if len(out) >= limit:
                     break
-        con.close()
     except Exception as ex:
         sys.stderr.write('corpus query skipped: %s\n' % ex)
     return out

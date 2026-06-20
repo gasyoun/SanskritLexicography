@@ -8,6 +8,53 @@ See also: [METHODOLOGY_REVIEW.md](METHODOLOGY_REVIEW.md) (where we want to go),
 [failures/FAILURE_GALLERY.md](failures/FAILURE_GALLERY.md) (what went wrong and
 how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
+## 2026-06-20
+
+### Added
+- `schemas/pwg_ru_final_card.schema.json` and
+  `validate_final_card_schema.py` define the final translated-card + judge
+  contract, including auditable Apresjan `differentia` evidence.
+- `validate_assembled_export.py` checks deterministic assembled-card JSONL
+  exports, with full count-match mode and bounded supervised-sample mode.
+- `run_batch.py validate_review` and `run_batch.py apply_review` make the
+  review store gate machine-checkable before any row can become print-ready.
+- `gold_validate.py`, `gold_ingest.py`, and `gold_agreement.py` validate human
+  gold labels, ingest release-bound JSONL, and compute Wilson precision plus
+  double-review agreement metrics.
+- `export_interop.py` and `validate_interop.py` generate and validate minimal
+  TEI Lex-0, OntoLex, and Russian reverse-index artifacts.
+- `make_edition_cut.py`, `validate_release.py`, `CITATION.cff`, and
+  `DOI_PLAN.md` add the immutable edition-cut skeleton and manifest hash check.
+- Nonhuman print-gate helper tooling now prepares reviewer work without filling
+  human decisions: `run_batch.py review_report`, `gold_status.py`,
+  `gold_packet.py`, `gold_double_review_queue.py`, and `release_readiness.py`.
+- `gold_ingest_double_review.py` bridges filled wide double-review queues into
+  long-form reviewer JSONL that `gold_agreement.py` can score.
+
+### Changed
+- `assemble.py build` now writes to temp files and installs outputs only after
+  successful completion, protecting `assembled_cards.jsonl` from killed-run
+  corruption.
+- Failed atomic replacement now leaves the previous assembled export untouched
+  and keeps the temp file for manual recovery instead of unlinking the old file.
+- `assemble.py build` now precomputes corpus evidence once per build, uses
+  `corpus_lexicon.jsonl` rows for export-time examples instead of per-card
+  SQLite FTS, and supports grouped-card chunks via `--offset`, `--out`, and
+  `--quarantine`.
+- The top-level AI/release status now says the core release machinery is ready
+  but print remains blocked by human review, human gold labels, double-review
+  agreement, and a real immutable edition cut.
+- `roadmap_check.py` now detects gate status drift between the aggregate
+  scientific-hardening JSON and the JSONL gate ledger.
+- Release manifest validation now rejects missing/null gate status maps and
+  checks manifest gate statuses against the edition's copied gate ledger.
+- The monorepo CI now exercises final-card schema fixtures, gold-label fixtures,
+  interop fixture exports, and a fixture edition cut without requiring local
+  gitignored production data.
+- Full interop export now validates: `release/tei_lex0.xml` and
+  `release/ontolex.ttl` each cover 120,173 lexical entries, and
+  `release/reverse_index.jsonl` has 209,319 Russian-to-Sanskrit rows.
+
 ## 2026-06-19
 
 ### Added
@@ -41,6 +88,8 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 - `run_real_test.py prep` was refreshed for the June-22 batch window
   (`OFFSET=0`, `LIMIT=10`): `as As Ap api amfta agni Atman anu arjuna arTa`,
   now correctly all fresh after exact-case output checks.
+- `run_pilot_wf.js` now loads the canonical final-card schema instead of
+  carrying a prompt-local schema copy.
 
 ### Fixed
 - Corpus harvest no longer lemmatizes Sanskrit proper names such as `Агни` to
