@@ -1,0 +1,137 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "pwg_ru.final_card.schema.v1",
+  "title": "PWG Russian final translated card with QA verdict",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["card", "judge"],
+  "properties": {
+    "key": {
+      "type": "string",
+      "description": "Workflow batch key; when present it must match card.key1."
+    },
+    "card": { "$ref": "#/$defs/card" },
+    "judge": { "$ref": "#/$defs/judge" }
+  },
+  "$defs": {
+    "card": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["key1", "iast", "records", "notes"],
+      "properties": {
+        "key1": { "type": "string", "minLength": 1 },
+        "iast": { "type": "string" },
+        "records": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/record" }
+        },
+        "notes": { "type": "string" }
+      }
+    },
+    "record": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["h", "grammar", "senses"],
+      "properties": {
+        "h": { "type": "string" },
+        "grammar": {
+          "type": "string",
+          "description": "POS/gender as PWG, verbatim where applicable."
+        },
+        "senses": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/sense" }
+        }
+      }
+    },
+    "sense": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "tag",
+        "german",
+        "russian",
+        "equivalence_type",
+        "source_type",
+        "stratum",
+        "differentia"
+      ],
+      "properties": {
+        "tag": { "type": "string", "minLength": 1 },
+        "german": {
+          "type": "string",
+          "description": "The PWG German for this sense, trimmed with sigla kept."
+        },
+        "russian": {
+          "type": "string",
+          "description": "The Russian rendering in scholarly register."
+        },
+        "equivalence_type": { "enum": ["equivalent", "explanatory"] },
+        "source_type": { "enum": ["attested", "lexicographic", "mixed"] },
+        "stratum": {
+          "type": "string",
+          "description": "Stratum used, such as Vedic, Epic / early-Classical, Classical, Medieval, or empty."
+        },
+        "differentia": {
+          "type": "string",
+          "description": "Apresjan near-synonym discrimination note, or empty when no discrimination was needed."
+        }
+      }
+    },
+    "judge": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "key1",
+        "ok",
+        "severity",
+        "register_ok",
+        "sigla_kept",
+        "coverage_ok",
+        "corpus_used",
+        "discrimination_quality",
+        "issues",
+        "note"
+      ],
+      "properties": {
+        "key1": { "type": "string", "minLength": 1 },
+        "ok": { "type": "boolean" },
+        "severity": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 5,
+          "description": "1 is best, 5 is worst."
+        },
+        "register_ok": { "type": "boolean" },
+        "sigla_kept": {
+          "type": "boolean",
+          "description": "Source sigla and grammar abbreviations remain verbatim."
+        },
+        "coverage_ok": {
+          "type": "boolean",
+          "description": "Every PWG sense was rendered."
+        },
+        "corpus_used": { "type": "boolean" },
+        "discrimination_quality": {
+          "enum": ["strong", "adequate", "weak", "missing"]
+        },
+        "issues": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/judge_issue" }
+        },
+        "note": { "type": "string" }
+      }
+    },
+    "judge_issue": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["severity", "detail"],
+      "properties": {
+        "severity": { "type": "integer", "minimum": 1, "maximum": 5 },
+        "detail": { "type": "string" }
+      }
+    }
+  }
+}

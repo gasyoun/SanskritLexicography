@@ -81,6 +81,68 @@ jobs:
       - if: steps.check.outputs.has_python == 'true'
         run: ruff check --select=E9,F63,F7,F82 --output-format=github .
 
+  russian-translation-gates:
+    name: RussianTranslation gates
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.11"
+      - uses: actions/setup-node@v6
+        with:
+          node-version: "20"
+      - name: Compile gate scripts
+        run: |
+          python -m py_compile \
+            RussianTranslation/src/roadmap_check.py \
+            RussianTranslation/src/validate_final_card_schema.py \
+            RussianTranslation/src/validate_assembled_export.py \
+            RussianTranslation/src/run_batch.py \
+            RussianTranslation/src/gold_validate.py \
+            RussianTranslation/src/gold_ingest.py \
+            RussianTranslation/src/gold_status.py \
+            RussianTranslation/src/gold_packet.py \
+            RussianTranslation/src/gold_double_review_queue.py \
+            RussianTranslation/src/gold_ingest_double_review.py \
+            RussianTranslation/src/gold_agreement.py \
+            RussianTranslation/src/export_interop.py \
+            RussianTranslation/src/validate_interop.py \
+            RussianTranslation/src/make_edition_cut.py \
+            RussianTranslation/src/validate_release.py \
+            RussianTranslation/src/release_readiness.py
+      - name: Validate roadmap
+        working-directory: RussianTranslation
+        run: python src/roadmap_check.py
+      - name: Validate final-card schema fixture
+        working-directory: RussianTranslation
+        run: |
+          python src/validate_final_card_schema.py
+          python src/validate_final_card_schema.py --selftest
+          python src/validate_assembled_export.py --cards src/fixtures/assembled_card.fixture.jsonl --quarantine src/fixtures/assembled_quarantine.fixture.jsonl --min-cards 1
+      - name: Check pilot workflow syntax
+        working-directory: RussianTranslation
+        run: node --check src/pilot/run_pilot_wf.js
+      - name: Validate gold fixture
+        working-directory: RussianTranslation
+        run: |
+          python src/gold_validate.py src/fixtures/human_gold_review.fixture.csv --expect 3
+          python src/gold_status.py src/fixtures/human_gold_review.fixture.csv
+          python src/gold_packet.py src/fixtures/human_gold_review.fixture.csv --batch-size 2 --out-dir "$RUNNER_TEMP/gold_packets"
+          python src/gold_double_review_queue.py src/fixtures/human_gold_review.fixture.csv --sample-size 3 --out "$RUNNER_TEMP/double_review_queue.csv"
+          python src/gold_ingest.py src/fixtures/human_gold_review.fixture.csv "$RUNNER_TEMP/human_gold_labels.fixture.jsonl"
+          python src/gold_ingest_double_review.py src/fixtures/double_review_queue.fixture.csv "$RUNNER_TEMP/double_review_labels.fixture.jsonl"
+          python src/gold_agreement.py "$RUNNER_TEMP/human_gold_labels.fixture.jsonl" "$RUNNER_TEMP/gold_reports" --fixture
+          python src/gold_agreement.py "$RUNNER_TEMP/double_review_labels.fixture.jsonl" "$RUNNER_TEMP/double_review_reports" --fixture
+      - name: Validate interop and release fixtures
+        working-directory: RussianTranslation
+        run: |
+          python src/export_interop.py all --cards src/fixtures/assembled_card.fixture.jsonl --out-dir "$RUNNER_TEMP/interop_fixture"
+          python src/validate_interop.py --dir "$RUNNER_TEMP/interop_fixture"
+          python src/release_readiness.py --release-dir "$RUNNER_TEMP/interop_fixture" --out "$RUNNER_TEMP/readiness_report.md"
+          python src/make_edition_cut.py edition_fixture --cards src/fixtures/assembled_card.fixture.jsonl --release-root "$RUNNER_TEMP/release_fixture" --source-release "$RUNNER_TEMP/release_fixture/source"
+          python src/validate_release.py "$RUNNER_TEMP/release_fixture/edition_fixture"
+
   # Conditional JS lint
   js-lint:
     name: JS lint (if package.json present)

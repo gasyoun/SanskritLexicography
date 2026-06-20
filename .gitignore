@@ -20,6 +20,10 @@ RussianTranslation/src/*.jsonl.backup.*
 RussianTranslation/src/*.jsonl.tmp
 RussianTranslation/src/_review_queue.csv
 RussianTranslation/gold/_human_gold_review.csv
+RussianTranslation/gold/_double_review_queue.csv
+RussianTranslation/gold/reviewer_packets/
+RussianTranslation/review_readiness_report.md
+RussianTranslation/release/readiness_report.md
 
 # transient audit/build state (regenerated each run)
 RussianTranslation/src/_audit_state.json

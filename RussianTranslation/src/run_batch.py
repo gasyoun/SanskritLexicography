@@ -11,6 +11,9 @@ its output. Resumable: `build` skips records already in the store.
   python run_batch.py status                 → progress + pass rate + review state
   python run_batch.py review                 → emit _review_queue.jsonl (human worklist)
   python run_batch.py review_csv             → emit _review_queue.csv (spreadsheet view)
+  python run_batch.py validate_review [csv]  → validate reviewer decisions
+  python run_batch.py review_report [csv]    → write review_readiness_report.md
+  python run_batch.py apply_review <csv>     → apply reviewer decisions to store
   python run_batch.py migrate_legacy         → backfill old store rows safely
 
 Files (all gitignored, in this dir):
@@ -26,11 +29,15 @@ import corpus_gate as cg
 import assemble
 
 HERE = os.path.dirname(os.path.abspath(__file__))
+ROOT = os.path.normpath(os.path.join(HERE, '..'))
 BATCH_IN = os.path.join(HERE, '_batch_in.jsonl')
 STORE = os.path.join(HERE, 'pwg_ru_translated.jsonl')
 REVIEW_Q = os.path.join(HERE, '_review_queue.jsonl')
 REVIEW_CSV = os.path.join(HERE, '_review_queue.csv')
+REVIEW_REPORT = os.path.join(ROOT, 'review_readiness_report.md')
 GERMAN = re.compile(r'[A-Za-zÄÖÜäöüß]{3,}')
+REVIEW_DECISIONS = {'approved', 'human_reviewed', 'needs_review', 'reject'}
+PRINT_READY = {'approved', 'human_reviewed'}
 
 # --- provenance (FAIR R1.2 / PROV-O): every card records how it was produced,
 # so the edition is reproducible and bisectable. ----------------------------
@@ -187,7 +194,7 @@ def cmd_status(args):
         ok += 1 if machine_ok else 0
         status = r.get('review_status') or 'unstamped'
         rs[status] = rs.get(status, 0) + 1
-        final += 1 if status in ('human_reviewed', 'approved') and machine_ok else 0
+        final += 1 if status in PRINT_READY and machine_ok else 0
         s = r.get('severity')
         if s:
             sev[s] = sev.get(s, 0) + 1
@@ -280,6 +287,220 @@ def cmd_review_csv(args):
     print('review CSV: %d card(s) → %s' % (n, os.path.basename(REVIEW_CSV)))
 
 
+def _read_review_csv(path):
+    rows = []
+    with open(path, encoding='utf-8-sig', newline='') as f:
+        for row in csv.DictReader(f):
+            if not any((v or '').strip() for v in row.values()):
+                continue
+            rows.append(row)
+    return rows
+
+
+def _load_store_rows():
+    rows = []
+    if not os.path.exists(STORE):
+        return rows
+    with open(STORE, encoding='utf-8') as f:
+        for line in f:
+            if line.strip():
+                rows.append(json.loads(line))
+    return rows
+
+
+def _review_validation(rows):
+    errors = []
+    decisions = {}
+    for i, row in enumerate(rows, 2):  # header is line 1
+        raw_ord = (row.get('ord') or '').strip()
+        if not raw_ord.isdigit():
+            errors.append('line %d: ord must be an integer' % i)
+            continue
+        ord_ = int(raw_ord)
+        decision = (row.get('decision') or '').strip()
+        reviewer = (row.get('reviewer_id') or '').strip()
+        edit = (row.get('edit') or '').strip()
+        if not decision:
+            continue                    # blank = not reviewed yet
+        if decision not in REVIEW_DECISIONS:
+            errors.append('line %d ord=%d: bad decision %r' % (i, ord_, decision))
+        if not reviewer:
+            errors.append('line %d ord=%d: reviewer_id required for decision' % (i, ord_))
+        if decision in PRINT_READY and (row.get('key_match') != 'True' or row.get('placeholders_ok') != 'True'):
+            errors.append('line %d ord=%d: cannot mark non-integral row print-ready' % (i, ord_))
+        if decision in PRINT_READY and edit:
+            pass                        # edit is optional; accepted when reviewer fixed text
+        decisions[ord_] = {'decision': decision, 'reviewer': reviewer,
+                           'edit': edit, 'notes': (row.get('notes') or '').strip()}
+    return errors, decisions
+
+
+def _machine_ok(row):
+    return bool(row.get('ok') and row.get('placeholders_ok') and row.get('key_match'))
+
+
+def _csv_machine_ok(row):
+    return (row.get('key_match') == 'True' and row.get('placeholders_ok') == 'True')
+
+
+def _review_summary(rows, decisions, errors, store):
+    by_ord = {r.get('ord'): r for r in store}
+    counts = {
+        'rows': len(rows),
+        'blank': 0,
+        'decisions': 0,
+        'print_ready_candidate': 0,
+        'reject': 0,
+        'needs_review': 0,
+        'malformed': len(errors),
+        'non_machine_ok_approvals': 0,
+        'applied_in_store': 0,
+    }
+    pending = []
+    top = []
+    for row in rows:
+        raw_ord = (row.get('ord') or '').strip()
+        decision = (row.get('decision') or '').strip()
+        if not decision:
+            counts['blank'] += 1
+            try:
+                sev = int(row.get('severity') or 0)
+            except ValueError:
+                sev = 0
+            pending.append((sev, raw_ord, row.get('key1') or '', row.get('reason') or ''))
+            continue
+        counts['decisions'] += 1
+        if decision in PRINT_READY:
+            counts['print_ready_candidate'] += 1
+            if not _csv_machine_ok(row):
+                counts['non_machine_ok_approvals'] += 1
+        elif decision == 'reject':
+            counts['reject'] += 1
+        elif decision == 'needs_review':
+            counts['needs_review'] += 1
+
+    for r in store:
+        if r.get('review_status') in PRINT_READY and _machine_ok(r):
+            counts['applied_in_store'] += 1
+    top = sorted(pending, reverse=True)[:20]
+    return counts, top, by_ord
+
+
+def cmd_validate_review(args):
+    path = args[0] if args else REVIEW_CSV
+    if not os.path.exists(path):
+        sys.exit('no %s — run: python run_batch.py review_csv' % path)
+    rows = _read_review_csv(path)
+    errors, decisions = _review_validation(rows)
+    store = _load_store_rows()
+    by_ord = {r.get('ord'): r for r in store}
+    missing = sorted(o for o in decisions if o not in by_ord)
+    errors.extend('ord=%d: not found in store' % o for o in missing)
+    counts, _, _ = _review_summary(rows, decisions, errors, store)
+    print('review CSV rows: %(rows)d | blank: %(blank)d | decisions: %(decisions)d' % counts)
+    print('  print-ready candidates: %(print_ready_candidate)d | reject: %(reject)d | needs_review: %(needs_review)d' % counts)
+    print('  malformed: %(malformed)d | non-machine-ok approvals: %(non_machine_ok_approvals)d | already applied print-ready: %(applied_in_store)d' % counts)
+    if errors:
+        for e in errors[:50]:
+            print('  ERROR:', e)
+        sys.exit('review validation failed: %d error(s)' % len(errors))
+    machine_ok = {r.get('ord') for r in store
+                  if r.get('ok') and r.get('placeholders_ok') and r.get('key_match')}
+    approved = {o for o, d in decisions.items() if d['decision'] in PRINT_READY}
+    print('review validation OK: %d print-ready decision(s), %d machine-ok row(s) in store'
+          % (len(approved), len(machine_ok)))
+
+
+def cmd_review_report(args):
+    path = args[0] if args else REVIEW_CSV
+    if not os.path.exists(path):
+        sys.exit('no %s — run: python run_batch.py review_csv' % path)
+    rows = _read_review_csv(path)
+    errors, decisions = _review_validation(rows)
+    store = _load_store_rows()
+    by_ord = {r.get('ord'): r for r in store}
+    missing = sorted(o for o in decisions if o not in by_ord)
+    errors.extend('ord=%d: not found in store' % o for o in missing)
+    counts, top, _ = _review_summary(rows, decisions, errors, store)
+    lines = [
+        '# Review readiness report',
+        '',
+        '| metric | count |',
+        '|---|---:|',
+        '| CSV rows | %(rows)d |' % counts,
+        '| blank reviewer decisions | %(blank)d |' % counts,
+        '| non-blank decisions | %(decisions)d |' % counts,
+        '| print-ready candidates | %(print_ready_candidate)d |' % counts,
+        '| reject | %(reject)d |' % counts,
+        '| needs_review | %(needs_review)d |' % counts,
+        '| malformed rows/errors | %(malformed)d |' % counts,
+        '| non-machine-ok approvals | %(non_machine_ok_approvals)d |' % counts,
+        '| already applied print-ready rows | %(applied_in_store)d |' % counts,
+        '',
+        '## Top Pending Rows',
+        '',
+        '| severity | ord | key1 | reason |',
+        '|---:|---:|---|---|',
+    ]
+    for sev, ord_, key1, reason in top:
+        lines.append('| %s | %s | %s | %s |' % (
+            sev, ord_, key1, _clean(reason).replace('|', '\\|')[:140]))
+    if errors:
+        lines += ['', '## Validation Errors', '']
+        lines.extend('- %s' % e for e in errors[:50])
+    os.makedirs(os.path.dirname(REVIEW_REPORT), exist_ok=True)
+    open(REVIEW_REPORT, 'w', encoding='utf-8').write('\n'.join(lines) + '\n')
+    print('review readiness report → %s' % REVIEW_REPORT)
+
+
+def cmd_apply_review(args):
+    if not args:
+        sys.exit('usage: python run_batch.py apply_review <review_csv>')
+    path = args[0]
+    rows = _read_review_csv(path)
+    errors, decisions = _review_validation(rows)
+    store = _load_store_rows()
+    by_ord = {r.get('ord'): r for r in store}
+    missing = sorted(o for o in decisions if o not in by_ord)
+    errors.extend('ord=%d: not found in store' % o for o in missing)
+    if errors:
+        for e in errors[:50]:
+            print('  ERROR:', e)
+        sys.exit('review validation failed: %d error(s)' % len(errors))
+
+    changed = 0
+    reviewed_at = datetime.datetime.now().isoformat(timespec='seconds')
+    for r in store:
+        d = decisions.get(r.get('ord'))
+        if not d or not d['decision']:
+            continue
+        decision = d['decision']
+        if decision == 'reject':
+            status = 'needs_review'
+        else:
+            status = decision
+        if d['edit']:
+            r['ru'] = d['edit']
+        r['review_status'] = status
+        r['reviewer'] = d['reviewer']
+        r['human_review'] = {'decision': decision, 'notes': d['notes'],
+                             'reviewed_at': reviewed_at}
+        changed += 1
+    if not changed:
+        print('no non-blank reviewer decisions to apply')
+        return
+
+    backup = STORE + '.backup.' + datetime.datetime.now().strftime('%Y%m%d%H%M%S')
+    shutil.copy2(STORE, backup)
+    tmp = STORE + '.tmp'
+    with open(tmp, 'w', encoding='utf-8', newline='') as out:
+        for r in store:
+            out.write(json.dumps(r, ensure_ascii=False) + '\n')
+    os.replace(tmp, STORE)
+    print('applied %d review decision(s) → %s; backup: %s'
+          % (changed, os.path.basename(STORE), os.path.basename(backup)))
+
+
 def _legacy_provenance(migrated_at):
     return {
         'schema_version': 'pwg_ru.card.v0_legacy',
@@ -350,6 +571,8 @@ def main():
         print(__doc__); return
     {'build': cmd_build, 'collect': cmd_collect, 'status': cmd_status,
      'review': cmd_review, 'review_csv': cmd_review_csv,
+     'validate_review': cmd_validate_review, 'review_report': cmd_review_report,
+     'apply_review': cmd_apply_review,
      'migrate_legacy': cmd_migrate_legacy}.get(
         sys.argv[1], lambda *_: print(__doc__))(sys.argv[2:])
 

@@ -105,6 +105,7 @@ def main() -> int:
             f"json={sorted(gate_ids)} jsonl={sorted(jsonl_gate_ids)}"
         )
 
+    gate_rows_by_id = {row["id"]: row for row in gate_rows}
     for gate in gates:
         if gate.get("status") not in ALLOWED_GATE_STATUS:
             fail(f"bad status for gate {gate.get('id')}: {gate.get('status')}")
@@ -112,6 +113,19 @@ def main() -> int:
             fail(f"gate {gate.get('id')} needs boolean blocks_print")
         if not isinstance(gate.get("evidence"), list) or not gate["evidence"]:
             fail(f"gate {gate.get('id')} needs evidence")
+        jsonl_gate = gate_rows_by_id[gate["id"]]
+        if gate.get("status") != jsonl_gate.get("status"):
+            fail(
+                f"gate {gate['id']} status drift: "
+                f"json={gate.get('status')} jsonl={jsonl_gate.get('status')}"
+            )
+        if gate.get("blocks_print") != jsonl_gate.get("blocks_print"):
+            fail(
+                f"gate {gate['id']} blocks_print drift: "
+                f"json={gate.get('blocks_print')} jsonl={jsonl_gate.get('blocks_print')}"
+            )
+        if not isinstance(jsonl_gate.get("evidence"), list) or not jsonl_gate["evidence"]:
+            fail(f"jsonl gate {gate.get('id')} needs evidence")
 
     modern_policy = roadmap.get("modern_source_policy", {})
     policy_text = modern_policy.get("policy", "").lower()
