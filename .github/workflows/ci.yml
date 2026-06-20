@@ -103,14 +103,17 @@ jobs:
             RussianTranslation/src/gold_ingest.py \
             RussianTranslation/src/gold_status.py \
             RussianTranslation/src/gold_packet.py \
+            RussianTranslation/src/gold_packet_verify.py \
             RussianTranslation/src/gold_double_review_queue.py \
+            RussianTranslation/src/gold_double_review_verify.py \
             RussianTranslation/src/gold_ingest_double_review.py \
             RussianTranslation/src/gold_agreement.py \
             RussianTranslation/src/export_interop.py \
             RussianTranslation/src/validate_interop.py \
             RussianTranslation/src/make_edition_cut.py \
             RussianTranslation/src/validate_release.py \
-            RussianTranslation/src/release_readiness.py
+            RussianTranslation/src/release_readiness.py \
+            RussianTranslation/src/preflight_remaining_gates.py
       - name: Validate roadmap
         working-directory: RussianTranslation
         run: python src/roadmap_check.py
@@ -123,13 +126,57 @@ jobs:
       - name: Check pilot workflow syntax
         working-directory: RussianTranslation
         run: node --check src/pilot/run_pilot_wf.js
+      - name: Validate review gate fixtures
+        working-directory: RussianTranslation
+        run: |
+          cp src/fixtures/review_store.fixture.jsonl "$RUNNER_TEMP/review_store.jsonl"
+          PWG_RU_STORE="$RUNNER_TEMP/review_store.jsonl" python src/run_batch.py validate_review src/fixtures/review_queue.blank.fixture.csv
+          if PWG_RU_STORE="$RUNNER_TEMP/review_store.jsonl" python src/run_batch.py validate_review src/fixtures/review_queue.bad_missing_reviewer.fixture.csv; then
+            echo "expected missing-reviewer fixture to fail"
+            exit 1
+          fi
+          if PWG_RU_STORE="$RUNNER_TEMP/review_store.jsonl" python src/run_batch.py validate_review src/fixtures/review_queue.bad_non_machine_ok.fixture.csv; then
+            echo "expected non-machine-ok approval fixture to fail"
+            exit 1
+          fi
+          PWG_RU_STORE="$RUNNER_TEMP/review_store.jsonl" python src/run_batch.py validate_review src/fixtures/review_queue.apply.fixture.csv
+          PWG_RU_STORE="$RUNNER_TEMP/review_store.jsonl" PWG_RU_REVIEW_REPORT="$RUNNER_TEMP/review_readiness_report.md" python src/run_batch.py review_report src/fixtures/review_queue.apply.fixture.csv
+          PWG_RU_STORE="$RUNNER_TEMP/review_store.jsonl" python src/run_batch.py apply_review src/fixtures/review_queue.apply.fixture.csv
+          PWG_RU_STORE="$RUNNER_TEMP/review_store.jsonl" python src/run_batch.py status
+          PWG_RU_STORE="$RUNNER_TEMP/review_store.jsonl" python src/release_readiness.py --release-dir "$RUNNER_TEMP" --out "$RUNNER_TEMP/readiness_after_review.md"
+          python - <<'PY'
+          import json, os
+          rows = [json.loads(line) for line in open(os.path.join(os.environ['RUNNER_TEMP'], 'review_store.jsonl'), encoding='utf-8')]
+          by_ord = {r['ord']: r for r in rows}
+          assert by_ord[1]['review_status'] == 'human_reviewed'
+          assert by_ord[1]['ru'] == 'исправленный огонь'
+          assert by_ord[1]['reviewer'] == 'editor-a'
+          assert by_ord[2]['review_status'] == 'approved'
+          assert by_ord[3]['review_status'] == 'needs_review'
+          assert by_ord[4]['review_status'] == 'needs_review'
+          print('review apply fixture OK')
+          PY
+          python src/export_interop.py all --cards src/fixtures/assembled_card.fixture.jsonl --store "$RUNNER_TEMP/review_store.jsonl" --out-dir "$RUNNER_TEMP/review_interop"
+          python src/validate_interop.py --dir "$RUNNER_TEMP/review_interop"
+          python - <<'PY'
+          import json, os
+          path = os.path.join(os.environ['RUNNER_TEMP'], 'review_interop', 'reverse_index.jsonl')
+          lemmas = {json.loads(line)['ru'] for line in open(path, encoding='utf-8') if line.strip()}
+          assert 'исправленный' in lemmas
+          assert 'жертвенный' in lemmas
+          assert 'запретный' not in lemmas
+          assert 'отклоненный' not in lemmas
+          print('fail-closed export fixture OK')
+          PY
       - name: Validate gold fixture
         working-directory: RussianTranslation
         run: |
           python src/gold_validate.py src/fixtures/human_gold_review.fixture.csv --expect 3
           python src/gold_status.py src/fixtures/human_gold_review.fixture.csv
-          python src/gold_packet.py src/fixtures/human_gold_review.fixture.csv --batch-size 2 --out-dir "$RUNNER_TEMP/gold_packets"
-          python src/gold_double_review_queue.py src/fixtures/human_gold_review.fixture.csv --sample-size 3 --out "$RUNNER_TEMP/double_review_queue.csv"
+          python src/gold_packet.py src/fixtures/human_gold_scaffold.fixture.csv --batch-size 2 --out-dir "$RUNNER_TEMP/gold_packets"
+          python src/gold_packet_verify.py src/fixtures/human_gold_scaffold.fixture.csv "$RUNNER_TEMP/gold_packets"
+          python src/gold_double_review_queue.py src/fixtures/human_gold_scaffold.fixture.csv --sample-size 3 --out "$RUNNER_TEMP/double_review_queue.csv"
+          python src/gold_double_review_verify.py "$RUNNER_TEMP/double_review_queue.csv" --sample-size 3
           python src/gold_ingest.py src/fixtures/human_gold_review.fixture.csv "$RUNNER_TEMP/human_gold_labels.fixture.jsonl"
           python src/gold_ingest_double_review.py src/fixtures/double_review_queue.fixture.csv "$RUNNER_TEMP/double_review_labels.fixture.jsonl"
           python src/gold_agreement.py "$RUNNER_TEMP/human_gold_labels.fixture.jsonl" "$RUNNER_TEMP/gold_reports" --fixture
@@ -140,6 +187,7 @@ jobs:
           python src/export_interop.py all --cards src/fixtures/assembled_card.fixture.jsonl --out-dir "$RUNNER_TEMP/interop_fixture"
           python src/validate_interop.py --dir "$RUNNER_TEMP/interop_fixture"
           python src/release_readiness.py --release-dir "$RUNNER_TEMP/interop_fixture" --out "$RUNNER_TEMP/readiness_report.md"
+          python src/preflight_remaining_gates.py --release-dir "$RUNNER_TEMP/interop_fixture" --readiness-out "$RUNNER_TEMP/preflight_readiness_report.md" --skip-local-human-artifacts
           python src/make_edition_cut.py edition_fixture --cards src/fixtures/assembled_card.fixture.jsonl --release-root "$RUNNER_TEMP/release_fixture" --source-release "$RUNNER_TEMP/release_fixture/source"
           python src/validate_release.py "$RUNNER_TEMP/release_fixture/edition_fixture"
 

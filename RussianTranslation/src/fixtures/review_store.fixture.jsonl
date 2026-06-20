@@ -1,0 +1,4 @@
+{"ord":1,"key1":"agni","key2":"agni","ok":true,"placeholders_ok":true,"key_match":true,"severity":1,"review_status":"legacy_needs_review","reviewer":null,"ru":"старый огонь"}
+{"ord":2,"key1":"agni","key2":"agni","ok":true,"placeholders_ok":true,"key_match":true,"severity":2,"review_status":"legacy_needs_review","reviewer":null,"ru":"жертвенный огонь"}
+{"ord":3,"key1":"agni","key2":"agni","ok":false,"placeholders_ok":true,"key_match":false,"severity":4,"review_status":"legacy_needs_review","reviewer":null,"ru":"запретный текст"}
+{"ord":4,"key1":"agni","key2":"agni","ok":true,"placeholders_ok":true,"key_match":true,"severity":3,"review_status":"legacy_needs_review","reviewer":null,"ru":"отклоненный текст"}

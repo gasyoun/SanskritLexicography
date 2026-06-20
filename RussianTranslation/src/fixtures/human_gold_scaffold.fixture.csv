@@ -1,0 +1,4 @@
+id,slp1,sa,ru,kind,period,work,llm_label,src_sa,src_ru,src_comm,human_label,reviewer_id,confidence,needs_adjudication,human_note
+1,agni,agni,огонь,translation,Vedic,rigveda,correct,agni,огонь,,,,,,
+2,ap,ap,вода,translation,Vedic,rigveda,correct,ap,вода,,,,,,
+3,roDAt,rodhāt,вздутия воды,commentary,Classical,nyaya-bhashya,wrong-sense,rodhāt,вздутия воды,,,,,,

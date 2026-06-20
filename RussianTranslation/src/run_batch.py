@@ -31,10 +31,10 @@ import assemble
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.normpath(os.path.join(HERE, '..'))
 BATCH_IN = os.path.join(HERE, '_batch_in.jsonl')
-STORE = os.path.join(HERE, 'pwg_ru_translated.jsonl')
-REVIEW_Q = os.path.join(HERE, '_review_queue.jsonl')
-REVIEW_CSV = os.path.join(HERE, '_review_queue.csv')
-REVIEW_REPORT = os.path.join(ROOT, 'review_readiness_report.md')
+STORE = os.environ.get('PWG_RU_STORE') or os.path.join(HERE, 'pwg_ru_translated.jsonl')
+REVIEW_Q = os.environ.get('PWG_RU_REVIEW_Q') or os.path.join(HERE, '_review_queue.jsonl')
+REVIEW_CSV = os.environ.get('PWG_RU_REVIEW_CSV') or os.path.join(HERE, '_review_queue.csv')
+REVIEW_REPORT = os.environ.get('PWG_RU_REVIEW_REPORT') or os.path.join(ROOT, 'review_readiness_report.md')
 GERMAN = re.compile(r'[A-Za-zÄÖÜäöüß]{3,}')
 REVIEW_DECISIONS = {'approved', 'human_reviewed', 'needs_review', 'reject'}
 PRINT_READY = {'approved', 'human_reviewed'}
@@ -91,6 +91,12 @@ def done_ids():
 
 def _clean(s):
     return re.sub(r'\s+', ' ', re.sub(r'<[^>]+>', '', s or '')).strip()
+
+
+def _ensure_parent(path):
+    parent = os.path.dirname(os.path.abspath(path))
+    if parent:
+        os.makedirs(parent, exist_ok=True)
 
 
 def attested_for(idx, key1, key2):
@@ -228,6 +234,7 @@ def cmd_review(args):
                       'review_status': r.get('review_status', 'unstamped'),
                       'ru': r.get('ru', ''), 'attested': r.get('attested', [])})
     items.sort(key=lambda x: -(x['severity'] or 0))
+    _ensure_parent(REVIEW_Q)
     with open(REVIEW_Q, 'w', encoding='utf-8', newline='') as o:
         for it in items:
             o.write(json.dumps(it, ensure_ascii=False) + '\n')
@@ -259,6 +266,7 @@ def cmd_review_csv(args):
               'key_match', 'placeholders_ok', 'reason', 'attested',
               'ru', 'reviewer_id', 'decision', 'edit', 'notes']
     n = 0
+    _ensure_parent(REVIEW_CSV)
     with open(REVIEW_Q, encoding='utf-8') as inp, \
             open(REVIEW_CSV, 'w', encoding='utf-8-sig', newline='') as out:
         w = csv.DictWriter(out, fieldnames=fields, extrasaction='ignore')
@@ -448,7 +456,7 @@ def cmd_review_report(args):
     if errors:
         lines += ['', '## Validation Errors', '']
         lines.extend('- %s' % e for e in errors[:50])
-    os.makedirs(os.path.dirname(REVIEW_REPORT), exist_ok=True)
+    _ensure_parent(REVIEW_REPORT)
     open(REVIEW_REPORT, 'w', encoding='utf-8').write('\n'.join(lines) + '\n')
     print('review readiness report → %s' % REVIEW_REPORT)
 
@@ -493,6 +501,7 @@ def cmd_apply_review(args):
     backup = STORE + '.backup.' + datetime.datetime.now().strftime('%Y%m%d%H%M%S')
     shutil.copy2(STORE, backup)
     tmp = STORE + '.tmp'
+    _ensure_parent(STORE)
     with open(tmp, 'w', encoding='utf-8', newline='') as out:
         for r in store:
             out.write(json.dumps(r, ensure_ascii=False) + '\n')
@@ -557,6 +566,7 @@ def cmd_migrate_legacy(args):
     backup = STORE + '.backup.' + datetime.datetime.now().strftime('%Y%m%d%H%M%S')
     shutil.copy2(STORE, backup)
     tmp = STORE + '.tmp'
+    _ensure_parent(STORE)
     with open(tmp, 'w', encoding='utf-8', newline='') as out:
         for r in rows:
             out.write(json.dumps(r, ensure_ascii=False) + '\n')
