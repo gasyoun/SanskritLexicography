@@ -81,5 +81,7 @@ it is intentional. Most content in this directory is in Russian.
 - [`ROADMAP_2026_2027.md`](ROADMAP_2026_2027.md) frames the research direction
   (evidence-graded lexicography, csl-atlas review, paper pipeline P1–P6) and is
   the orientation document for how this repo connects to the broader project.
-- Per the global rule, render every path/URL as a clickable link in chat and in
-  GitHub issue/PR bodies (full `blob`/`tree` URLs in GitHub bodies).
+- Per the global rule, render every path/URL as a clickable Markdown link in
+  chat and in GitHub issue/PR/release bodies. Do not put repository file paths
+  in bare backticks when a human is expected to click them. In GitHub bodies,
+  use full `blob`/`tree` URLs; relative links do not resolve reliably there.

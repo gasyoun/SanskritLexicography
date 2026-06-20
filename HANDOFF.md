@@ -15,9 +15,10 @@ conventions, provenance of data files, and keeping cross-references honest.
 
 ## Conventions you must follow
 
-- **Clickable links everywhere.** Every path/URL is a Markdown link. In chat use
-  working-dir-relative links; in GitHub issue/PR/release bodies use full
-  `blob`/`tree` URLs (relative links don't resolve there).
+- **Clickable links everywhere.** Every path/URL is a Markdown link. Do not put
+  repository file paths in bare backticks when a human is expected to click
+  them. In chat use working-dir-relative links; in GitHub issue/PR/release
+  bodies use full `blob`/`tree` URLs (relative links don't resolve there).
 - **Language matches the material.** Russian-content directories get Russian
   indexes (see [Syntax-Lectures/README.md](Syntax-Lectures/README.md),
   [RussianTranslation/mw_ru_prompts/README.md](RussianTranslation/mw_ru_prompts/README.md));
