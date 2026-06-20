@@ -1,0 +1,5 @@
+severity,ord,key1,key2,review_status,key_match,placeholders_ok,reason,attested,ru,reviewer_id,decision,edit,notes
+1,1,agni,agni,legacy_needs_review,True,True,,fixture: огонь,старый огонь,,,,
+2,2,agni,agni,legacy_needs_review,True,True,,fixture: жертвенный огонь,жертвенный огонь,,,,
+4,3,agni,agni,legacy_needs_review,False,True,key mismatch,fixture: запретный текст,запретный текст,,,,
+3,4,agni,agni,legacy_needs_review,True,True,needs editorial rejection,fixture: отклоненный текст,отклоненный текст,,,,

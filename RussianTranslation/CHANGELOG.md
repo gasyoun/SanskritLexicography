@@ -28,8 +28,16 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 - Nonhuman print-gate helper tooling now prepares reviewer work without filling
   human decisions: `run_batch.py review_report`, `gold_status.py`,
   `gold_packet.py`, `gold_double_review_queue.py`, and `release_readiness.py`.
+- `gold/REVIEWER_HANDOFF.md` gives reviewers one place for allowed enum values,
+  protected columns, validation commands, and the G5-G7 handoff flow.
+- `gold_packet_verify.py`, `gold_double_review_verify.py`, and
+  `preflight_remaining_gates.py` verify reviewer packets, second-review queues,
+  and the compact "what's left?" status without inferring any human labels.
 - `gold_ingest_double_review.py` bridges filled wide double-review queues into
   long-form reviewer JSONL that `gold_agreement.py` can score.
+- Review-gate fixture coverage now exercises blank decisions, invalid approvals,
+  explicit `apply_review`, and fail-closed interop export without touching the
+  real local translation store.
 
 ### Changed
 - `assemble.py build` now writes to temp files and installs outputs only after
@@ -48,9 +56,12 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
   scientific-hardening JSON and the JSONL gate ledger.
 - Release manifest validation now rejects missing/null gate status maps and
   checks manifest gate statuses against the edition's copied gate ledger.
-- The monorepo CI now exercises final-card schema fixtures, gold-label fixtures,
-  interop fixture exports, and a fixture edition cut without requiring local
-  gitignored production data.
+- The monorepo CI/local fixture checks now exercise final-card schemas,
+  gold-label packets, double-review queues, interop fixture exports, and a
+  fixture edition cut without requiring local gitignored production data.
+- `run_batch.py` and `release_readiness.py` accept `PWG_RU_STORE`,
+  `PWG_RU_REVIEW_Q`, `PWG_RU_REVIEW_CSV`, and `PWG_RU_REVIEW_REPORT` path
+  overrides so review-gate tests can run against disposable fixture stores.
 - Full interop export now validates: `release/tei_lex0.xml` and
   `release/ontolex.ttl` each cover 120,173 lexical entries, and
   `release/reverse_index.jsonl` has 209,319 Russian-to-Sanskrit rows.

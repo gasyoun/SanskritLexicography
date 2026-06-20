@@ -194,12 +194,14 @@
       "status": "partial",
       "blocks_print": true,
       "evidence": [
+        "gold/REVIEWER_HANDOFF.md",
         "python src/run_batch.py validate_review",
         "python src/run_batch.py review_report",
+        "python src/preflight_remaining_gates.py",
         "python src/run_batch.py apply_review <review_csv>",
         "217 review CSV rows validate with 0 reviewer decisions",
-        "206 are machine-ok",
-        "0 are print-ready because legacy rows await human decisions"
+        "206 machine-ok rows in store",
+        "0 print-ready because legacy rows still await human decisions"
       ]
     },
     {
@@ -207,11 +209,14 @@
       "status": "partial",
       "blocks_print": true,
       "evidence": [
+        "gold/HUMAN_GOLD_PROTOCOL.md",
+        "gold/REVIEWER_HANDOFF.md",
         "python src/gold_status.py gold/_human_gold_review.csv reports 0/320 complete",
         "python src/gold_packet.py gold/_human_gold_review.csv --batch-size 40",
+        "python src/gold_packet_verify.py gold/_human_gold_review.csv gold/reviewer_packets",
         "python src/gold_validate.py gold/_human_gold_review.csv requires 320 unique labeled items",
         "python src/gold_ingest.py <csv> writes gold/human_gold_labels.jsonl",
-        "human-checked final labels still required before precision claims"
+        "human labels not yet complete"
       ]
     },
     {
@@ -220,10 +225,11 @@
       "blocks_print": true,
       "evidence": [
         "python src/gold_double_review_queue.py gold/_human_gold_review.csv --sample-size 80",
+        "python src/gold_double_review_verify.py gold/_double_review_queue.csv --sample-size 80",
         "python src/gold_ingest_double_review.py <double_review_queue.csv> <out.jsonl>",
-        "python src/gold_agreement.py computes Wilson CI, percent agreement, and Cohen kappa",
-        "fixture double-review labels generate report files",
-        "stratified double-reviewed sample and real agreement report still required"
+        "python src/gold_agreement.py computes Wilson CI, per-period/per-kind precision, percent agreement, and Cohen kappa",
+        "fixture double-review labels generate human_precision_report.md and double_review_agreement.md",
+        "real double-review agreement report not yet produced"
       ]
     },
     {
@@ -262,10 +268,11 @@
         "CITATION.cff",
         "DOI_PLAN.md",
         "python src/release_readiness.py",
+        "python src/preflight_remaining_gates.py",
         "python src/make_edition_cut.py edition_vN",
         "python src/validate_release.py release/edition_vN validates manifest gate_statuses against copied quality_gates.jsonl",
-        "fixture release cut validates in CI",
-        "real edition_vN cut still required"
+        "fixture release cut validates in local/CI fixture checks",
+        "real immutable edition cut still pending"
       ]
     }
   ]
