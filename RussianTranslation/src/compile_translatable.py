@@ -21,7 +21,8 @@ import os, re, sys, json
 sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
 
-from safe_filename import safe_name
+import glob, time
+from safe_filename import safe_name, decode_safe_name
 import nws_split as NS
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -206,6 +207,62 @@ def write(keys):
               % (key, len(man['units']), ','.join(langs), safe_name(key)))
 
 
+def all_keys():
+    fs = sorted(glob.glob(os.path.join(INP, '*.raw.txt')))
+    return [decode_safe_name(os.path.basename(f)[:-len('.raw.txt')]) for f in fs]
+
+
+def run_all(emit_md=False):
+    """Compile every input headword -> pilot/translate/<safe>.json (+md if asked).
+    Writes a coverage/language summary; resilient to per-card errors."""
+    os.makedirs(OUT, exist_ok=True)
+    keys = all_keys()
+    from collections import Counter
+    lang_units, cards_with, errors = Counter(), Counter(), []
+    nws_cards = tot_units = 0
+    t0 = time.time()
+    for i, key in enumerate(keys):
+        try:
+            man = manifest(key)
+        except Exception as e:                       # never let one card kill the batch
+            errors.append((key, repr(e)[:120]))
+            continue
+        base = os.path.join(OUT, safe_name(key))
+        json.dump(man, open(base + '.json', 'w', encoding='utf-8'),
+                  ensure_ascii=False, indent=1)
+        if emit_md:
+            open(base + '.md', 'w', encoding='utf-8').write(to_md(man))
+        us = man['units']
+        tot_units += len(us)
+        has_nws = any(u['layer'] == 'NWS' for u in us)
+        nws_cards += has_nws
+        seen = set()
+        for u in us:
+            for l in u['lang']:
+                lang_units[l] += 1
+                seen.add(l)
+        for l in seen:
+            cards_with[l] += 1
+        if (i + 1) % 1000 == 0:
+            print('  ... %d/%d (%.0fs)' % (i + 1, len(keys), time.time() - t0))
+    rep = ['# a-section translatable-content compile — summary',
+           '', '- cards compiled: **%d** (%d errors)' % (len(keys) - len(errors), len(errors)),
+           '- cards with an NWS layer: **%d**' % nws_cards,
+           '- total translatable units: **%d**' % tot_units,
+           '- elapsed: %.0fs' % (time.time() - t0), '',
+           '## language spread (per unit / per card)', '',
+           '| lang | units | cards |', '|---|---|---|']
+    for l in ['de', 'en', 'fr', 'sa', 'en?']:
+        rep.append('| %s | %d | %d |' % (l, lang_units.get(l, 0), cards_with.get(l, 0)))
+    if errors:
+        rep += ['', '## errors (first 30)', '']
+        rep += ['- `%s` — %s' % (k, e) for k, e in errors[:30]]
+    open(os.path.join(OUT, '_SUMMARY.md'), 'w', encoding='utf-8').write('\n'.join(rep) + '\n')
+    print('\n'.join(l for l in rep if not l.startswith('|') or l.startswith('| lang')))
+    print('  wrote %d manifests -> %s  (summary: _SUMMARY.md)'
+          % (len(keys) - len(errors), OUT))
+
+
 def main():
     cmd = sys.argv[1] if len(sys.argv) > 1 else 'one'
     keys = sys.argv[2:] or ['aMSa']
@@ -213,6 +270,8 @@ def main():
         print(to_md(manifest(keys[0])))
     elif cmd == 'write':
         write(keys)
+    elif cmd == 'all':
+        run_all(emit_md='--md' in sys.argv)
     elif cmd == 'langs':
         for u in units(keys[0]):
             if u['layer'] == 'NWS':
