@@ -40,3 +40,4 @@ __pycache__/
 RussianTranslation/src/pilot/input/
 RussianTranslation/src/pilot/output/
 RussianTranslation/src/pilot/nws/
+RussianTranslation/src/pilot/translate/
