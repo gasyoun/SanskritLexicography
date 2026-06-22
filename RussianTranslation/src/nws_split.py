@@ -106,34 +106,39 @@ STOP = {'Subst', 'Adj', 'mfn', 'part', 'portion', 'share', 'thing', 'object',
         'food', 'light', 'fire', 'name', 'gold', 'water', 'earth', 'time'}
 
 
-# an internal reference siglum (kept VERBATIM in the card by the sigla rule, so
-# it survives translation) — an abbreviation/work-name immediately before a number
-SIGLUM = re.compile(r'[A-ZÀ-ÖŚṚṢṬĀ][A-Za-zÀ-ÿĀ-ỿ]{2,}(?=[\s.]\s?\d)')
+# Tokens kept VERBATIM in the card (sigla rule) so they survive translation and
+# can locate the row: an internal citation (siglum + roman/number, e.g. «ṚV V,58,3»,
+# «DurghVṛ 7.1,24») and a Sanskrit/IAST term (e.g. «nivṛtti»).
+SA_DIA = re.compile(r'[āīūṛṝḷḹṅñṭḍṇśṣṃḥ]')
+INTREF = re.compile(r'[A-ZÀ-ÖŚṚṢṬĀ][\wĀ-ỿ’.]*\.?\s+[IVXLC\d][\d.,]*')
 
 
-def signatures(entries):
-    """One locating token per entry that is UNIQUE to the fragment (df==1) so the
-    audit can't match the wrong row (the «Anteil»/«degree» collision that gave
-    false positives). Prefers an internal siglum — kept verbatim in the card, so
-    it survives translation — over a gloss word; falls back to the lemma."""
+def locators(entries):
+    """Per entry, the set of fragment-UNIQUE tokens that can locate its card row.
+    Unique (df==1) so the audit can't match the wrong row (the «Anteil»/«degree»
+    collision). Draws from gloss words, internal citations AND Sanskrit terms — all
+    kept verbatim in the card — so a stopword-only («fire, light») or Sanskrit-only
+    («nivṛtti») gloss is still locatable. Falls back to the lemma."""
     from collections import Counter
-    refsets, wordsets, dfa = [], [], Counter()
+    cands, df = [], Counter()
     for e in entries:
-        refs = set(SIGLUM.findall(e['gloss']))
-        words = {w for w in re.findall(r'[A-Za-zÀ-ÿĀ-ỿ]{6,}', e['gloss'])
-                 if not w.isupper() and w not in STOP}
-        refsets.append(refs)
-        wordsets.append(words)
-        for t in refs | words:
-            dfa[t] += 1
-    sigs = []
-    for e, refs, words in zip(entries, refsets, wordsets):
-        uref = [t for t in refs if dfa[t] == 1]
-        uword = [t for t in words if dfa[t] == 1]
-        sigs.append(max(uref, key=len) if uref else
-                    max(uword, key=len) if uword else
-                    max(words, key=len) if words else e['lemma'])
-    return sigs
+        g = e['gloss']
+        c = {w for w in re.findall(r'[A-Za-zÀ-ÿĀ-ỿ]{6,}', g)
+             if not w.isupper() and w not in STOP}
+        c |= {t for t in re.findall(r'[A-Za-zÀ-ÿĀ-ỿ]{3,}', g) if SA_DIA.search(t)}
+        c |= {m.group(0).strip() for m in INTREF.finditer(g)}
+        cands.append(c)
+        for t in c:
+            df[t] += 1
+    out = []
+    for e, c in zip(entries, cands):
+        uniq = sorted((t for t in c if df[t] == 1), key=len, reverse=True)
+        # unique tokens give a collision-proof locate; when an entry has none
+        # (e.g. duplicate glosses sharing one owner) fall back to all its tokens —
+        # still owner-verified by check(), so a true misattribution still fails
+        out.append(uniq or sorted(c, key=len, reverse=True)
+                   or ([e['lemma']] if e['lemma'] else []))
+    return out
 
 
 def card_rows(key):
@@ -179,21 +184,22 @@ def check(key):
             print('   %-26s | %s' % (' / '.join(e['owners']), e['gloss'][:70]))
         return 0
     bad, miss = 0, 0
-    sigs = signatures(entries)
+    locs = locators(entries)
     print('  %s: %d NWS entries vs %d card NWS rows' % (key, len(entries), len(rows)))
-    for e, sig in zip(entries, sigs):
+    for e, cand in zip(entries, locs):
         exp = [owner_surname(o) for o in e['owners']]
-        hit = [r for r in rows if sig and sig in r]
+        # rows located by ANY of this entry's fragment-unique tokens
+        hit = [r for r in rows if any(c and c in r for c in cand)]
         if not hit:
             miss += 1
-            print('   ?  «%s» not found in card (owner %s) — verify by hand'
-                  % (sig, '/'.join(exp)))
+            print('   ?  no unique locator for owner %s — verify by hand (gloss: %s)'
+                  % ('/'.join(exp), e['gloss'][:50]))
             continue
-        # PASS if ANY row carrying this unique signature is correctly attributed
+        # PASS if ANY located row is correctly attributed
         if not any(any(s and s in row_owner(r) for s in exp) for r in hit):
             bad += 1
             print('   ✗  «%s» card owner=[%s]  expected=[%s]'
-                  % (sig, row_owner(hit[0]), '/'.join(exp)))
+                  % (cand[0], row_owner(hit[0]), '/'.join(exp)))
     verdict = 'CLEAN' if not bad else 'MISATTRIBUTION'
     print('  → %s (%d mismatch%s%s)' % (
         verdict, bad, '' if bad == 1 else 'es',
