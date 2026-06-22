@@ -3,12 +3,14 @@
 The translation stage for the **full supplement chain** (PWG + PW + SCH + PWKVN +
 NWS), producing ONE consolidated Russian entry per headword. Supersedes the PWG-only
 [`5_corpus_translate.md`](5_corpus_translate.md) for merged cards. Hardened from the
-2026-06-17/18 a-section pilot (`aṃśa`, `anna`) — see the six guards below, each tied to
+2026-06-17/18 a-section pilot (`aṃśa`, `anna`) — see the seven guards below, each tied to
 a real judge finding.
 
 ## Conventions (unchanged)
 - REGISTER: scholarly-philological Russian, faithful to the source's density.
-- Translate to Russian ONLY the German (and NWS-layer English) gloss prose.
+- Translate to Russian ONLY the natural-language gloss prose — which is German (PWG/PW/
+  SCH/PWKVN and many NWS sub-sources) but ALSO English and French in the NWS layer
+  (see Guard 7). Translate each gloss FROM ITS OWN language, never relayed through German.
 - KEEP VERBATIM: Sanskrit (IAST/Devanāgarī in `{#…#}`/`{%…%}`); literary sigla
   (ṚV., MBH., AK., MW, R., TS., …); German grammar abbrevs (m./f./n./Pl./Du./v.l.).
 - TWO-SOURCE PRINCIPLE: text-cited sense = `attested`; kośa/grammarian-only =
@@ -21,7 +23,7 @@ NWS cumulative addendum), each net-new fact attributed in brackets `[PW]`/`[Schm
 `[PWKVN]`/`[NWS]`. Use `portrait.json` `corpus_synonyms` as the primary word-choice
 evidence; discriminate near-synonyms à la Apresjan.
 
-## The six HARD guards (each from a pilot judge finding)
+## The seven HARD guards (each from a pilot judge finding)
 
 1. **No editorial-intent fabrication.** Attribute *facts* to layers, but NEVER narrate
    *why* a layer changed something. Forbidden: "[PW] omits X as unreliable", "dropped
@@ -60,6 +62,22 @@ evidence; discriminate near-synonyms à la Apresjan.
    `SOURCE > TAG > gloss`, mis-attributing ~15 sub-sources and dropping Grassmann; the QA
    judge inherited the same misparse and false-cleared it — F12.)*
 
+7. **The chain is MULTILINGUAL — translate each gloss from its own language.** NWS
+   sub-sources are written in German (Geldner, Graßmann, Vishva Bandhu, Meyer, Windisch…),
+   English (MW, Olivelle, Keller, Hoernle, BHSD, Sircar…) AND French (Renou, Padoux,
+   Caland, Rivelex…). Do NOT assume "German" for the whole card and do NOT relay a French
+   or English gloss through German. The per-unit source language is precomputed in the
+   compiled manifest [`pilot/translate/<safe>.json`](../src/compile_translatable.py)
+   (`lang`: `de`/`fr`/`en`; `en?` = undecided, read the gloss and judge; `sa` = a bare
+   Sanskrit headword — KEEP verbatim, never translate). Render directly: French `N de
+   division` → «название деления», `idée de participation` → «идея причастности», `tire au
+   sort` → «тянуть жребий»; English `numerator of a fraction` → «числитель дроби», `a
+   share of booty` → «доля добычи». A gloss given in two/three languages (NWS `riz cuit;
+   cooked rice; gekochter Reis`) is ONE sense — render it once, not thrice. Sigla / IAST /
+   grammar stay verbatim regardless of source language. *(a-section compile: 2,432 cards
+   carry English NWS prose and 490 carry French — a German-only assumption mistranslates
+   ~4,900 units.)*
+
 Plus the original four (still in force): NO content fabrication · COMPLETE coverage ·
 SIGLA UNTOUCHED (no German/English leaks into the Russian) · ALL records incl.
 Nachträge. And: **discrimination must be built only from `portrait.json`
@@ -82,5 +100,8 @@ judge with the parse rule explicitly and have it disambiguate by an independent 
   from an explicit pre-parsed owner map; all 17 NWS sub-sources now correctly attributed,
   Grassmann's gloss restored, the `[aṃśena] partly` duplicate collapsed. Now severity ~1–2.
 
-→ With guards 1–6 the recurring defects are addressed; re-run before scaling to the
-full a-section.
+→ With guards 1–7 the recurring defects are addressed; re-run before scaling to the
+full a-section. Source-language routing for the whole a-section is precompiled by
+[`compile_translatable.py`](../src/compile_translatable.py) (`all` mode → one manifest per
+headword, each unit tagged de/fr/en/sa/en?); audit NWS attribution with
+[`nws_split.py check`](../src/nws_split.py) as a deterministic, judge-independent F12 gate.
