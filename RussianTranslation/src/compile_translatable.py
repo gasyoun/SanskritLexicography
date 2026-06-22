@@ -45,20 +45,49 @@ EN_W = set('the of a an and with for or in to part share fire food name water '
            'inheritance booty earnest territorial cooked draw lots'.split())
 
 
-def detect(text):
-    """-> sorted list of language codes with positive evidence (de/fr/en)."""
-    toks = re.findall(r"[A-Za-zÀ-ÿĀ-ỿ']+", text)
+# suffix morphology — resolves the short cue-less glosses (scurrilous, freilaufend)
+EN_SUF = ('ous', 'ing', 'ness', 'less', 'ful', 'ity', 'ical', 'ically', 'ed',
+          'tion', 'sion')
+DE_SUF = ('ung', 'heit', 'keit', 'lich', 'isch', 'schaft', 'end', 'bar', 'ungen',
+          'erei', 'keiten')
+FR_SUF = ('eur', 'aire', 'ique', 'isme', 'ée', 'ées', 'ité')
+
+# NWS sub-source -> source language (the author IS the strongest signal). Used as a
+# prior only when the gloss text itself is inconclusive. Vishva Bandhu / NṚV mix
+# languages, so they are deliberately left to text detection.
+OWNER_LANG = {
+    'MW': 'en', 'Olivelle': 'en', 'Keller': 'en', 'Hoernle': 'en', 'BHSD': 'en',
+    'Sircar': 'en', 'Halbfass': 'en', 'Gerow': 'en', 'Ensink': 'en', 'Rao': 'en',
+    'Rocher': 'en', 'Vedic Hymns': 'en', 'Edgerton': 'en',
+    'Geldner': 'de', 'Graßmann': 'de', 'Grassmann': 'de', 'Meyer': 'de',
+    'Windisch': 'de', 'Hellwig': 'de', 'Kümmel': 'de', 'Krick': 'de',
+    'Rivelex': 'de', 'WdaR': 'de', 'SIjNS': 'de', 'Sarma': 'en',
+    'Renou': 'fr', 'Padoux': 'fr', 'Caland': 'fr', 'TAK': 'fr',
+}
+
+
+def detect(text, owner=None):
+    """-> sorted list of language codes with positive evidence (de/fr/en). Uses the
+    NWS sub-source author as a prior when the gloss text alone is inconclusive."""
+    toks = re.findall(r"[A-Za-zÀ-ÿĀ-ỿ'\-]+", text)
     low = [t.lower() for t in toks]
     de = sum(t in DE_W for t in low) + 2 * sum(c in DE_CH for c in text)
     fr = sum(t in FR_W for t in low) + 2 * sum(c in FR_CH for c in text)
     en = sum(t in EN_W for t in low)
+    if '(MW)' in text or 'Lex(MW' in text:        # Monier-Williams gloss = English
+        en += 2
+    for t in low:
+        en += sum(t.endswith(s) for s in EN_SUF)
+        de += sum(t.endswith(s) for s in DE_SUF)
+        fr += sum(t.endswith(s) for s in FR_SUF)
     # German capitalises common nouns mid-clause — a weak German signal
     de += 0.5 * sum(1 for i, t in enumerate(toks)
                     if i and t[:1].isupper() and len(t) > 3 and t.lower() not in DE_W)
     score = {'de': de, 'fr': fr, 'en': en}
     hi = max(score.values())
     if hi == 0:
-        return ['en?']                      # Latin script, no decisive cue
+        prior = OWNER_LANG.get(NS.owner_surname(owner)) if owner else None
+        return [prior] if prior else ['en?']
     keep = [k for k, v in score.items() if v >= max(1, hi * 0.5)]
     return sorted(keep, key=lambda k: -score[k])
 
@@ -166,8 +195,9 @@ def units(key):
         for e in NS.split(frag):
             owner = e['owners'][0] if e['owners'] else ''
             prose, keep = mask_nws_gloss(e['gloss'], owner)
+            lang = detect(prose, owner) if prose else ['none']  # only sigla/Sanskrit left
             U.append({'layer': 'NWS', 'ref': ' / '.join(e['owners']) or '?',
-                      'lemma': e['lemma'], 'lang': detect(prose),
+                      'lemma': e['lemma'], 'lang': lang,
                       'text': prose, 'keep': keep})
     return U
 
@@ -252,7 +282,7 @@ def run_all(emit_md=False):
            '- elapsed: %.0fs' % (time.time() - t0), '',
            '## language spread (per unit / per card)', '',
            '| lang | units | cards |', '|---|---|---|']
-    for l in ['de', 'en', 'fr', 'sa', 'en?']:
+    for l in ['de', 'en', 'fr', 'sa', 'none', 'en?']:
         rep.append('| %s | %d | %d |' % (l, lang_units.get(l, 0), cards_with.get(l, 0)))
     if errors:
         rep += ['', '## errors (first 30)', '']
