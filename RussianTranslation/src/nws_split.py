@@ -36,8 +36,11 @@ OUTP = os.path.join(HERE, 'pilot', 'output')
 # BHSD, Graßmann 1873 (1996), Vishva Bandhu 1972, Vedic Hymns I, NṚV 2A — have
 # none), which stops the name from swallowing the preceding sentence or an
 # internal dotted ref (Hoernle 1893-1912 (II) 30.81, EI Vol. XV, MaiSaṃ 3.8.4).
+# It also stops at `;` so the trailing-tag variant used for prefix/compound
+# sub-entries (`gloss … <DIATAG> ; SOURCE:page >`, e.g. aYj) keeps only the
+# SOURCE, not the diasystem tag, as the owner.
 OWNER = re.compile(
-    r'(?P<name>[A-ZÀ-ÖØ-ÞĀ-ỿ][^>:.]*?)\s:\s(?P<page>\d+[A-Za-z]?)'
+    r'(?P<name>[A-ZÀ-ÖØ-ÞĀ-ỿ][^>:.;]*?)\s:\s(?P<page>\d+[A-Za-z]?)'
     r'(?P<sv>\s*\(s\.v\.[^)]*\))?\s*$')
 BARE = re.compile(r'^[,;]?\s*' + OWNER.pattern)
 
