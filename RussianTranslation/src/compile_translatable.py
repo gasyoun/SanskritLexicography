@@ -115,6 +115,12 @@ def mask_nws_gloss(gloss, owner):
     """Strip grammar, sigla and the owner cite from an NWS gloss -> (prose, keep)."""
     keep = []
     g = gloss
+    # A roman-numeral co-owner cite (e.g. `Rivelex (2) : XLV`) that nws_split's
+    # digit-only OWNER can't tag rides onto the FRONT of the next gloss as
+    # `<tag> ; Source : page > …`. Strip that leading bleed so the competing
+    # source neither reaches translation nor misleads the LLM's owner choice
+    # (it is what slid av's + upa gloss from Geldner onto Rivelex).
+    g = re.sub(r'^[\s,;]*[^>]*?;\s*[A-ZÀ-ÖØ-ÞĀ-ỿ][^>:]*?\s:\s[\dIVXLCDM]+[A-Za-z]?\s*>\s*', '', g)
     if owner:                                       # drop the trailing owner cite
         g = re.sub(re.escape(owner.split(' (s.v')[0]).replace(r'\ ', r'\s*')
                    + r'.*$', '', g).rstrip(' .')
