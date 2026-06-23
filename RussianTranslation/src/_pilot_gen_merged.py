@@ -43,6 +43,16 @@ ROLE = {'pw': 'PW — Böhtlingk kürzere Fassung (revision of PWG; may correct 
                '— render the new lemma/sense/grammar + keep its sigla)'}
 
 
+# A roman-numeral co-owner cite (e.g. `Hillebrandt 1885 : IV`) that nws_split's
+# digit-only OWNER can't tag rides onto the next entry — into the gloss as a
+# leading `<tag> ; Name : page > …` bleed, into the tag as a stray `; Name :
+# page`, and leaving a punctuation-only lemma. The owner stays correct; these
+# strip the cosmetic contamination so the translator sees a clean gloss/tag
+# (mirrors compile_translatable.mask_nws_gloss for the owner-map consumer path).
+_BLEED_LEAD = re.compile(r'^[\s,;]*[^>]*?;\s*[A-ZÀ-ÖØ-ÞĀ-ỿ][^>:]*?\s:\s[\dIVXLCDM]+[A-Za-z]?\s*>\s*')
+_BLEED_TAG = re.compile(r'\s*[;,]?\s*[A-ZÀ-ÖØ-ÞĀ-ỿ][^;,]*?\s:\s(?:\d+[A-Za-z]?|[IVXLCDM]+)')
+
+
 def nws_owner_map(key):
     """The AUTHORITATIVE deterministic NWS (owner, gloss) pairing from nws_split —
     so the translator NEVER re-derives owners (kills F12 by construction). Reads the
@@ -56,12 +66,14 @@ def nws_owner_map(key):
     lines = []
     for i, e in enumerate(entries, 1):
         owner = ' / '.join(e.get('owners') or []) or '?'
-        gloss = re.sub(r'\s+', ' ', e.get('gloss') or '').strip()
+        gloss = _BLEED_LEAD.sub('', re.sub(r'\s+', ' ', e.get('gloss') or '').strip())
         for o in (e.get('owners') or []):            # drop a trailing copy of the cite
             if gloss.endswith(o):
                 gloss = gloss[:-len(o)].rstrip(' .;,')
-        lemma = (' {#%s#}' % e['lemma']) if e.get('lemma') else ''
-        tag = (' [%s]' % e['tag']) if e.get('tag') else ''
+        lem = (e.get('lemma') or '').strip()
+        lemma = (' {#%s#}' % lem) if re.search(r'[\wĀ-ỿ]', lem) else ''   # drop punct-only lemma
+        tg = _BLEED_TAG.sub('', e.get('tag') or '').strip(' ;,')          # drop bled-in cite
+        tag = (' [%s]' % tg) if tg else ''
         lines.append('%2d. [NWS: %s]%s%s %s' % (i, owner, lemma, tag, gloss))
     return '\n'.join(lines)
 
