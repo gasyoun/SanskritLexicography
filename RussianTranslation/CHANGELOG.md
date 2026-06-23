@@ -83,6 +83,16 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
   Böhtlingk `*NNN`, plus one page-less cross-reference
   (`duHzvapnya → s.v. duṣvápnya (Graßmann 1873 (1996))`, no `: page` to
   parse). The 14 remaining unowned are benign empty terminal segments.
+- **Full e-section deterministic split-preview** (all 663 e-keys → 203
+  NWS-bearing, 470 entries): **0 roman-cite bleeds**, cleanest section so
+  far. 3 unowned = 2 benign empty + 1 page-less cross-reference
+  (`eta → s.v. éta . Rivelex (2) (s.v. éta)`, no `: page` to parse); none
+  of the Meister/roman/Böhtlingk classes appear. Cross-checked against the
+  injected owner map: 470 map entries with exactly 3 `[NWS: ?]`, matching
+  the split-preview one-for-one — confirming the `nws_fragment` fix and
+  owner-map generation are consistent. The page-less cross-reference (no
+  `Name : page` cite exists) is a recurring benign category, not a parser
+  gap — it also appears once in d (`duHzvapnya`).
 
 ### Known limitations
 - **`Meister 1988 (2.1) : 397`** — a source name carrying a `.` *inside* a
