@@ -54,6 +54,9 @@ Where to read what.
 - [RussianTranslation/mw_ru.md](RussianTranslation/mw_ru.md) — how the AI Russian
   Monier-Williams translation was made (+ the stage prompts in
   [RussianTranslation/mw_ru_prompts/README.md](RussianTranslation/mw_ru_prompts/README.md)).
+- [RussianTranslation/NWS_AUDIT_REPORT.md](RussianTranslation/NWS_AUDIT_REPORT.md)
+  — living cumulative report of the NWS attribution-parser audit (per-section
+  roll-up, real-loss taxonomy, source errata).
 - [REFERENCES.md](REFERENCES.md) — provenance for the large reference assets.
 
 ## Headword Lists
