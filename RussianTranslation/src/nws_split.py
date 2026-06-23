@@ -51,12 +51,18 @@ DIASET = {'Gen', 'Ved', 'Tan', 'Buddh', 'Śā', 'Jin', 'Epigr', 'Kāv', 'Reg',
 
 
 def nws_fragment(key):
-    """The raw NWS string from <key>.raw.txt (text after the NWS layer marker)."""
+    """The raw NWS string from <key>.raw.txt (the net-new NWS addendum layer).
+
+    Stops at the next `=== LAYER:` marker so it does NOT swallow the appended
+    `NWS — PRE-PARSED OWNER MAP` layer (which _pilot_gen_merged.py writes after
+    the addendum); over-capturing it would make split()/check() re-parse the
+    map as if it were source content."""
     p = os.path.join(INP, safe_name(key) + '.raw.txt')
     if not os.path.exists(p):
         return ''
     txt = open(p, encoding='utf-8').read()
-    m = re.search(r'=== LAYER: NWS[^\n]*===\s*\n(.*)\Z', txt, re.S)
+    m = re.search(r'=== LAYER: NWS(?! — PRE-PARSED)[^\n]*===\s*\n(.*?)(?=\n+=== LAYER:|\Z)',
+                  txt, re.S)
     return (m.group(1).strip() if m else '')
 
 
