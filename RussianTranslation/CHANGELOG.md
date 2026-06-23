@@ -53,6 +53,16 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
   section generated with the owner-map injection); `selftest` + all 10
   a-section checks still CLEAN, `compile_translatable('day')` → 7 clean
   units, 0 map artifacts.
+- **`nws_owner_map` debleeds the injected owner map.** The roman co-owner
+  bleed (e.g. `Hillebrandt 1885 : IV`) that `compile_translatable` already
+  strips also contaminated the appended `PRE-PARSED OWNER MAP`: `split`'s
+  `lemma_tag` scatters the bled segment into an entry's leading gloss, its
+  tag (stray `; Name : page`) and a punctuation-only lemma (`{#,#}`). The
+  owner stays correct, so this is cosmetic for what the translator reads.
+  `nws_owner_map` now strips the leading-bleed from the gloss, removes a
+  bled-in `Name : page` cite from the tag, and drops punct-only lemmas
+  (mirrors `mask_nws_gloss`). The owner field is never touched; clean
+  sections are no-ops. Found in the g-section (`gam`).
 
 ### Added
 - `run_real_test.py audit` is now a true **NWS attribution gate**: a fresh
@@ -98,6 +108,13 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
   losses** — the only unowned entry is a benign empty terminal segment, no
   Meister/roman/Böhtlingk/page-less cases. Owner-map cross-check: 502 map
   entries, exactly 1 `[NWS: ?]`, matching the split-preview one-for-one.
+- **Full g-section deterministic split-preview** (all 3,354 g-keys → 974
+  NWS-bearing, 2,866 entries): **2 roman-cite bleeds** (both `gam`,
+  `Hillebrandt 1885 : IV`) — the first bleeds since the a-section; the
+  owner stays correct (`Geldner 1907 : 52`), and the cosmetic owner-map
+  contamination is fixed by the `nws_owner_map` debleed above. 9 unowned =
+  8 benign empty + 1 Meister `(2.1)` (0.03% real loss). Owner-map
+  cross-check: 2,866 entries, 9 `[NWS: ?]`, matching the split-preview.
 
 ### Known limitations
 - **`Meister 1988 (2.1) : 397`** — a source name carrying a `.` *inside* a
