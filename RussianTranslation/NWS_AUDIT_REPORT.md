@@ -104,6 +104,13 @@ full rationale and the guarding selftests.
 Defects in the NWS source itself (not parser gaps), to report to the Halle
 maintainers — see [DICTIONARY_CHAIN.md](DICTIONARY_CHAIN.md) for the project.
 
+This table lists only the defect that breaks **owner attribution** (the one this
+audit is scoped to). A separate structural scan of the full NWS corpus found
+**70 entries** with unbalanced delimiters (mostly a dropped closing `)`
+mid-gloss, invisible to attribution) — the complete list is in
+[NWS_SOURCE_DEFECTS.md](NWS_SOURCE_DEFECTS.md), and the consolidated report to
+Halle is drafted in [NWS_ERRATUM_EMAIL.md](NWS_ERRATUM_EMAIL.md).
+
 | headword | as printed | should read | section |
 |---|---|---|---|
 | `vṛtrakhādá` | `NṚV 2B : 79 (s. (2. khād )` | `NṚV 2B : 79 (s.v. 2. khād )` | k, v |
