@@ -18,6 +18,12 @@ subscription quota resets. Two phases, one command each:
       overwriting a protected hand-authored card), runs `nws_split.py check` on each,
       and reports: judge pass rate + NWS-attribution (F12) clean count + any misattrib.
 
+      GATE: a fresh card whose NWS owners disagree with the deterministic
+      nws_split parse (F12 slide) is REJECTED — its <safe>.merged.md is moved
+      aside to <safe>.merged.REJECTED.md (so merged_exists() treats it as
+      not-done and the next `prep` re-queues it) and the command exits non-zero.
+      Protected hand-authored cards are audited but never quarantined.
+
 Context: on 2026-06-19 the loop was validated manually on card `ap` (nws_split audit
 CLEAN); run_pilot_wf.js HARD RULE 5 now encodes the NWS one-row-per-owner format the
 auditor needs. See .ai_state.md / changelog [Unreleased].
@@ -53,6 +59,20 @@ def exact_file_exists(directory, name):
 def merged_exists(key):
     return (exact_file_exists(OUT, safe_name(key) + '.merged.md')
             or exact_file_exists(OUT, key + '.merged.md'))
+
+
+def quarantine(key):
+    """Move a slid card aside so merged_exists() treats it as not-done and the
+    next prep re-queues it. Returns True if a card file was moved."""
+    for nm in (safe_name(key) + '.merged.md', key + '.merged.md'):
+        if exact_file_exists(OUT, nm):
+            src = os.path.join(OUT, nm)
+            dst = os.path.join(OUT, nm[:-len('.merged.md')] + '.merged.REJECTED.md')
+            if os.path.exists(dst):
+                os.remove(dst)
+            os.replace(src, dst)
+            return True
+    return False
 
 
 def find_results(o):
@@ -138,7 +158,7 @@ def cmd_audit(args):
     #    hand-authored cards, audit the existing card but never overwrite it.
     print('\n=== 2. NWS attribution audit (nws_split) ===')
     clean = misattr = noidx = 0
-    bad_cards = []
+    bad_cards, rejected = [], []
     for k in keys:
         if k in protected:
             print('  %-12s protected — keeping hand-authored card' % k)
@@ -153,6 +173,8 @@ def cmd_audit(args):
             clean += 1
         elif verdict == 'MISATTRIBUTION':
             misattr += 1; bad_cards.append(k)
+            if k not in protected and quarantine(k):   # GATE: reject the slid card
+                rejected.append(k)
         else:
             noidx += 1
 
@@ -162,6 +184,15 @@ def cmd_audit(args):
     print('  F12 misattribution : %d %s' % (misattr, ('→ ' + ' '.join(bad_cards)) if bad_cards else ''))
     print('  no-NWS / other     : %d' % noidx)
     print('  judge pass rate    : see "publishable" line in section 1 above')
+
+    gate_fail = [k for k in bad_cards if k not in protected]
+    if gate_fail:
+        print('\n  GATE: FAIL — %d card(s) rejected (F12 slide): %s' % (len(rejected), ' '.join(rejected)))
+        if any(k in protected for k in bad_cards):
+            print('  (note: %s is protected & misattributed — fix the hand-authored card by hand)'
+                  % ' '.join(k for k in bad_cards if k in protected))
+        sys.exit(1)
+    print('\n  GATE: PASS — no F12 misattribution in fresh cards')
 
 
 def main():
