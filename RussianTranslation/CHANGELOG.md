@@ -115,6 +115,13 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
   contamination is fixed by the `nws_owner_map` debleed above. 9 unowned =
   8 benign empty + 1 Meister `(2.1)` (0.03% real loss). Owner-map
   cross-check: 2,866 entries, 9 `[NWS: ?]`, matching the split-preview.
+- **Full h-section deterministic split-preview** (all 2,027 h-keys → 466
+  NWS-bearing, 1,353 entries): **0 roman-cite bleeds**. 10 unowned = 8
+  benign empty + 2 real (1 Meister `(2.1)`, 1 page-less cross-reference
+  `hriRIy → s.v. hṛṇīy (TŚPC 3)`, no `: page`) = 0.15%. Owner-map
+  cross-check: 1,353 entries, 10 `[NWS: ?]`, matching the split-preview,
+  and **0 inputs with residual contamination** — confirming the
+  `nws_owner_map` debleed produces clean maps on fresh generation.
 
 ### Known limitations
 - **`Meister 1988 (2.1) : 397`** — a source name carrying a `.` *inside* a
