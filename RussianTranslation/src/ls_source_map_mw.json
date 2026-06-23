@@ -1,0 +1,464 @@
+{
+ "AV": {
+  "citations": 7079,
+  "date": -940,
+  "name": "Atharvaveda",
+  "renou": "I"
+ },
+ "AitBr": {
+  "citations": 1658,
+  "date": -700,
+  "name": "Aitareya-Brāhmaṇa",
+  "renou": "I"
+ },
+ "Amar": {
+  "citations": 228,
+  "date": 450,
+  "name": "Amarakośa",
+  "renou": "IV"
+ },
+ "BhP": {
+  "citations": 8476,
+  "date": 950,
+  "name": "Bhāgavata-Purāṇa",
+  "renou": "III"
+ },
+ "Bhartṛ": {
+  "citations": 837,
+  "date": 550,
+  "name": "Bhartṛhari, Śatakatraya",
+  "renou": "IV"
+ },
+ "Bhaṭṭ": {
+  "citations": 1030,
+  "date": 650,
+  "name": "Bhaṭṭikāvya",
+  "renou": "IV"
+ },
+ "Bhpr": {
+  "citations": 1471,
+  "date": 1550,
+  "name": "Bhāvaprakāśa",
+  "renou": "IV"
+ },
+ "Br": {
+  "citations": 1591,
+  "date": -800,
+  "name": "Brāhmaṇa (gen.)",
+  "renou": "I"
+ },
+ "Buddh": {
+  "citations": 1866,
+  "date": 200,
+  "name": "Buddhist Sanskrit (gen.)",
+  "renou": "V"
+ },
+ "Bālar": {
+  "citations": 922,
+  "date": 900,
+  "name": "Bālarāmāyaṇa",
+  "renou": "IV"
+ },
+ "Car": {
+  "citations": 1736,
+  "date": 100,
+  "name": "Caraka-Saṃhitā",
+  "renou": "IV"
+ },
+ "ChUp": {
+  "citations": 827,
+  "date": -585,
+  "name": "Chāndogya-Upaniṣad",
+  "renou": "I"
+ },
+ "Daś": {
+  "citations": 1312,
+  "date": 600,
+  "name": "Daśakumāracarita",
+  "renou": "IV"
+ },
+ "Dhātup": {
+  "citations": 1777,
+  "date": -350,
+  "name": "Dhātupāṭha",
+  "renou": "II"
+ },
+ "Divyāv": {
+  "citations": 1066,
+  "date": 250,
+  "name": "Divyāvadāna",
+  "renou": "V"
+ },
+ "Gaut": {
+  "citations": 758,
+  "date": -450,
+  "name": "Gautama-Dharmasūtra",
+  "renou": "I"
+ },
+ "Gīt": {
+  "citations": 409,
+  "date": 1100,
+  "name": "Gītagovinda",
+  "renou": "IV"
+ },
+ "Hariv": {
+  "citations": 6313,
+  "date": 200,
+  "name": "Harivaṃśa",
+  "renou": "III"
+ },
+ "Hcat": {
+  "citations": 1292,
+  "date": 1300,
+  "name": "Hemādri, Caturvargacintāmaṇi",
+  "renou": "IV"
+ },
+ "Hit": {
+  "citations": 1506,
+  "date": 1000,
+  "name": "Hitopadeśa",
+  "renou": "IV"
+ },
+ "Jain": {
+  "citations": 277,
+  "date": 400,
+  "name": "Jaina Sanskrit (gen.)",
+  "renou": "V"
+ },
+ "Kalpas": {
+  "citations": 12,
+  "date": -100,
+  "name": "Kalpasūtra (Jaina)",
+  "renou": "V"
+ },
+ "Kathās": {
+  "citations": 6756,
+  "date": 1050,
+  "name": "Kathāsaritsāgara",
+  "renou": "IV"
+ },
+ "Kauś": {
+  "citations": 1139,
+  "date": -600,
+  "name": "Kauśika-Sūtra",
+  "renou": "I"
+ },
+ "Kum": {
+  "citations": 876,
+  "date": 420,
+  "name": "Kumārasambhava",
+  "renou": "IV"
+ },
+ "Kād": {
+  "citations": 1210,
+  "date": 620,
+  "name": "Kādambarī",
+  "renou": "IV"
+ },
+ "Kām": {
+  "citations": 828,
+  "date": 750,
+  "name": "Kāmandakīya-Nītisāra",
+  "renou": "IV"
+ },
+ "Kāraṇḍ": {
+  "citations": 503,
+  "date": 400,
+  "name": "Kāraṇḍavyūha",
+  "renou": "V"
+ },
+ "KātyŚr": {
+  "citations": 2543,
+  "date": -400,
+  "name": "Kātyāyana-Śrautasūtra",
+  "renou": "I"
+ },
+ "Kāv": {
+  "citations": 4667,
+  "date": 600,
+  "name": "Kāvya / poetics",
+  "renou": "IV"
+ },
+ "Kāś": {
+  "citations": 1736,
+  "date": 650,
+  "name": "Kāśikā-vṛtti",
+  "renou": "II"
+ },
+ "Kāṭh": {
+  "citations": 819,
+  "date": -900,
+  "name": "Kāṭhaka",
+  "renou": "I"
+ },
+ "L": {
+  "citations": 40213,
+  "date": 1100,
+  "name": "lexicographers (kośa tradition)",
+  "renou": "IV"
+ },
+ "Lalit": {
+  "citations": 741,
+  "date": 200,
+  "name": "Lalitavistara",
+  "renou": "V"
+ },
+ "Lāṭy": {
+  "citations": 985,
+  "date": -400,
+  "name": "Lāṭyāyana-Śrautasūtra",
+  "renou": "I"
+ },
+ "MBh": {
+  "citations": 28032,
+  "date": 80,
+  "name": "Mahābhārata",
+  "renou": "III"
+ },
+ "MaitrS": {
+  "citations": 1147,
+  "date": -1000,
+  "name": "Maitrāyaṇī-Saṃhitā",
+  "renou": "I"
+ },
+ "MaitrUp": {
+  "citations": 242,
+  "date": 50,
+  "name": "Maitrī-Upaniṣad",
+  "renou": "I"
+ },
+ "Megh": {
+  "citations": 638,
+  "date": 420,
+  "name": "Meghadūta",
+  "renou": "IV"
+ },
+ "Mn": {
+  "citations": 7005,
+  "date": 150,
+  "name": "Manusmṛti",
+  "renou": "III"
+ },
+ "MārkP": {
+  "citations": 1586,
+  "date": 550,
+  "name": "Mārkaṇḍeya-Purāṇa",
+  "renou": "III"
+ },
+ "Mṛcch": {
+  "citations": 998,
+  "date": 400,
+  "name": "Mṛcchakaṭikā",
+  "renou": "IV"
+ },
+ "Nir": {
+  "citations": 1183,
+  "date": -500,
+  "name": "Nirukta",
+  "renou": "I"
+ },
+ "Pat": {
+  "citations": 1633,
+  "date": -150,
+  "name": "Patañjali, Mahābhāṣya",
+  "renou": "II"
+ },
+ "Pañcar": {
+  "citations": 864,
+  "date": 800,
+  "name": "Pañcarātra",
+  "renou": "IV"
+ },
+ "Pañcat": {
+  "citations": 2666,
+  "date": 300,
+  "name": "Pañcatantra",
+  "renou": "IV"
+ },
+ "Pur": {
+  "citations": 1281,
+  "date": 700,
+  "name": "Purāṇa (gen.)",
+  "renou": "III"
+ },
+ "Pāṇ": {
+  "citations": 8527,
+  "date": -400,
+  "name": "Pāṇini, Aṣṭādhyāyī",
+  "renou": "II"
+ },
+ "R": {
+  "citations": 10662,
+  "date": 70,
+  "name": "Rāmāyaṇa",
+  "renou": "III"
+ },
+ "RV": {
+  "citations": 15916,
+  "date": -1125,
+  "name": "Ṛgveda",
+  "renou": "I"
+ },
+ "Ragh": {
+  "citations": 2651,
+  "date": 420,
+  "name": "Raghuvaṃśa",
+  "renou": "IV"
+ },
+ "Rājat": {
+  "citations": 3409,
+  "date": 1150,
+  "name": "Rājataraṅgiṇī",
+  "renou": "IV"
+ },
+ "SaddhP": {
+  "citations": 146,
+  "date": 200,
+  "name": "Saddharmapuṇḍarīka",
+  "renou": "V"
+ },
+ "Sarvad": {
+  "citations": 1188,
+  "date": 1350,
+  "name": "Sarvadarśanasaṃgraha",
+  "renou": "IV"
+ },
+ "Suśr": {
+  "citations": 6201,
+  "date": 400,
+  "name": "Suśruta-Saṃhitā",
+  "renou": "IV"
+ },
+ "Sāh": {
+  "citations": 1790,
+  "date": 1400,
+  "name": "Sāhityadarpaṇa",
+  "renou": "IV"
+ },
+ "Sāy": {
+  "citations": 926,
+  "date": 1350,
+  "name": "Sāyaṇa (comm.)",
+  "renou": "IV"
+ },
+ "TBr": {
+  "citations": 1413,
+  "date": -800,
+  "name": "Taittirīya-Brāhmaṇa",
+  "renou": "I"
+ },
+ "TS": {
+  "citations": 3206,
+  "date": -1000,
+  "name": "Taittirīya-Saṃhitā",
+  "renou": "I"
+ },
+ "TāṇḍyaBr": {
+  "citations": 440,
+  "date": -700,
+  "name": "Tāṇḍya-Brāhmaṇa",
+  "renou": "I"
+ },
+ "Up": {
+  "citations": 450,
+  "date": -400,
+  "name": "Upaniṣad (gen.)",
+  "renou": "I"
+ },
+ "Uṇ": {
+  "citations": 907,
+  "date": -300,
+  "name": "Uṇādisūtra",
+  "renou": "II"
+ },
+ "VBr": {
+  "citations": 57,
+  "date": -700,
+  "name": "Vaṃśa-Brāhmaṇa",
+  "renou": "I"
+ },
+ "VP": {
+  "citations": 2167,
+  "date": 450,
+  "name": "Viṣṇu-Purāṇa",
+  "renou": "III"
+ },
+ "VS": {
+  "citations": 2996,
+  "date": -900,
+  "name": "Vājasaneyi-Saṃhitā",
+  "renou": "I"
+ },
+ "Var": {
+  "citations": 1039,
+  "date": 550,
+  "name": "Varāhamihira",
+  "renou": "IV"
+ },
+ "VarBṛS": {
+  "citations": 3467,
+  "date": 550,
+  "name": "Varāhamihira, Bṛhatsaṃhitā",
+  "renou": "IV"
+ },
+ "Vikr": {
+  "citations": 454,
+  "date": 420,
+  "name": "Vikramorvaśīya",
+  "renou": "IV"
+ },
+ "Vop": {
+  "citations": 763,
+  "date": 1250,
+  "name": "Vopadeva, Mugdhabodha",
+  "renou": "II"
+ },
+ "Yājñ": {
+  "citations": 2087,
+  "date": 300,
+  "name": "Yājñavalkya-Smṛti",
+  "renou": "III"
+ },
+ "ĀpŚr": {
+  "citations": 912,
+  "date": -450,
+  "name": "Āpastamba-Śrautasūtra",
+  "renou": "I"
+ },
+ "ĀśvŚr": {
+  "citations": 738,
+  "date": -450,
+  "name": "Āśvalāyana-Śrautasūtra",
+  "renou": "I"
+ },
+ "ŚBr": {
+  "citations": 7028,
+  "date": -800,
+  "name": "Śatapatha-Brāhmaṇa",
+  "renou": "I"
+ },
+ "Śak": {
+  "citations": 1402,
+  "date": 420,
+  "name": "Abhijñānaśākuntala",
+  "renou": "IV"
+ },
+ "Śiś": {
+  "citations": 1718,
+  "date": 650,
+  "name": "Śiśupālavadha",
+  "renou": "IV"
+ },
+ "ŚrS": {
+  "citations": 738,
+  "date": -450,
+  "name": "Śrautasūtra (gen.)",
+  "renou": "I"
+ },
+ "ŚāṅkhŚr": {
+  "citations": 961,
+  "date": -500,
+  "name": "Śāṅkhāyana-Śrautasūtra",
+  "renou": "I"
+ }
+}

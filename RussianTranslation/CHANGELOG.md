@@ -32,6 +32,13 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
   months on one Max seat**. Documents the data gaps (Max weekly quota, typical-card
   cost, total size) and the one instrumented-window experiment that resolves them.
 
+- **Frequency-first ordering (DCS) built + validated.** `freq_route.py` ranks PWG
+  headwords by hybrid token×breadth×richness → `scale_manifest.freq.json` (41% DCS-attested;
+  ~3.8k band-4+5 core). Top cards = verbal **roots** (sthā 379 senses, i 272, gam 213). Freq-
+  first pipeline validated: `rūpa`/`rasa` CLEAN through the owner-map gate. **Finding:** roots
+  (`vid` 74, `bhū` 131) fail single-pass translation ("connection closed mid-response") →
+  root-entry sectioning is the open design question before scaling (pending manuals review).
+
 ### Added
 - **Renou language-state (I–V) tag on every cited sense.** Each dictionary
   *meaning* is now classified into one of Louis Renou's five states of Sanskrit
@@ -83,8 +90,39 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
   - On the 217 PWG cards: 127 (58.5 %) DCS-hit, 83 gained ≥1 state; **state V
     went 0 → 37 cards** (Buddhist attestation `<ls>` never supplied). Enriched
     coverage I 93 · II 30 · III 90 · IV 136 · V 37.
-  - Next enrichment tier (designed, not built): wisdomlib tradition/source tags as
-    a tertiary **V**-focused hint, kept lower-confidence in `renou_provenance`.
+  - **Scaled to the whole dictionary** — ran on `assembled_cards.jsonl`, all
+    **120 173 PWG headwords** (key1→IAST join, no translations needed): **54 519
+    (45.4 %) DCS-hit** → corpus-grounded Renou states. Coverage I 22 075 · II 4 926 ·
+    III 31 187 · IV 35 544 · **V 10 171** (e.g. *akaniṣṭha, akṣayamati, akṣobhya* —
+    Buddhist headwords `<ls>` never marks). DCS is itself built from GRETIL e-texts,
+    so it already subsumes the raw-corpus layer; the 45.4 % ceiling is the
+    exact-lemma-form join (rare/variant/compound headwords miss).
+  - [src/add_corpus_renou.py](src/add_corpus_renou.py) (new): reusable augmenter
+    that folds a raw IAST text (no lemmatiser) into the index at a given Renou
+    state, word-FORM level — additive, idempotent (`__sources__` meta guards
+    re-runs). Applied to GRETIL's **Skandapurāṇa Revākhaṇḍa** (state III): 25 075
+    forms → 23 765 new form-keys + 184 existing lemmas gained III (index 90 346 →
+    114 111). **Data-availability finding:** GRETIL serves only the Revākhaṇḍa for
+    Skanda (the `sa_skandapurANa1-31` critical edition is listed but 404s in all
+    formats); the Revākhaṇḍa is *already in DCS lemmatised*, so the fold is near-zero
+    marginal on the 217-card sample (III unchanged). The full 81 k-verse vulgate is
+    not available as clean Sanskrit e-text on GRETIL — the augmenter is ready for it
+    when a source surfaces.
+  - Next enrichment tier (deferred per request): wisdomlib — used as a Sanskrit-word
+    → English-gloss / tradition source (notably a tertiary **V** hint), to be folded
+    into `renou_provenance` at lower confidence; code not yet built.
+
+- **Renou tagging extended to Monier-Williams (both layers).** The MW *Russian*
+  cards live in a separate working repo, but the Renou tag is language-independent
+  (headword + `<ls>`), so [src/tag_mw_from_source.py](src/tag_mw_from_source.py)
+  (new) derives it straight from the MW source `csl-orig/v02/mw/mw.txt` and keys it
+  by `key1` (joins to the Russian cards later) → `mw_renou.jsonl` (gitignored).
+  All **286 560 MW entries**: **59.1 % `<ls>`-tagged**, **47.6 % DCS-hit**. The two
+  signals now cross-check — `<ls>` state **V** = 4 503 (citation-based:
+  Buddh./Lalit./Divyāv./SaddhP./Jaina), DCS state **V** = 38 200 (attestation-based),
+  enriched union **41 195**, of which **1 508 are corroborated by BOTH `<ls>` and
+  DCS** (e.g. *aṭaṭa* — a Buddhist hell — `ls=[V] dcs=[V]`). Per-entry
+  `renou_provenance` records which signal(s) back each state.
 
 ### Fixed
 - `nws_split.py` OWNER citation now stops at `;` so the trailing-tag

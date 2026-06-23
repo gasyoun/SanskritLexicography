@@ -43,6 +43,11 @@
           "type": "array",
           "minItems": 1,
           "items": { "$ref": "#/$defs/sense" }
+        },
+        "renou_oldest_sense": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Index into senses[] of the sense whose oldest <ls> citation is earliest in this record (the meaning attested first). Omitted when no sense carries a dated citation. Added by annotate_renou.py."
         }
       }
     },
@@ -77,6 +82,16 @@
         "differentia": {
           "type": "string",
           "description": "Apresjan near-synonym discrimination note, or empty when no discrimination was needed."
+        },
+        "renou": {
+          "type": "array",
+          "items": { "enum": ["I", "II", "III", "IV", "V"] },
+          "uniqueItems": true,
+          "description": "Renou language-state(s) of Sanskrit this sense is attested in, derived deterministically from its <ls> citations (I Vedic, II Pāṇinian, III Epic, IV Classical, V Buddhist/Jaina). Multi-label, ordered I→V. Empty/absent when the sense carries no recognised quotation. Added by annotate_renou.py."
+        },
+        "renou_oldest": {
+          "enum": ["I", "II", "III", "IV", "V", ""],
+          "description": "The Renou state of this sense's earliest-dated <ls> citation, or empty when no dated citation is present."
         }
       }
     },
