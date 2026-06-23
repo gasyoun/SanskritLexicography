@@ -312,6 +312,27 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
   in both section-fragments — one source defect, two losses. No new classes,
   both OTHER classified. Owner-map cross-check: 6,526 entries, 79 `[NWS: ?]`,
   matching the split-preview one-for-one, 0 residual contamination.
+- **Full w-section deterministic split-preview** (all 92 w-keys [SLP1 `w` =
+  retroflex ṭ] → 19 NWS-bearing, 45 entries): **0 roman-cite bleeds**, **0
+  real** (1 benign empty), 0 OTHER. Owner-map cross-check: 45 entries, 1
+  `[NWS: ?]`, one-for-one, 0 residual contamination.
+- **Full x-section deterministic split-preview** (all 3 x-keys [SLP1 `x` =
+  vocalic ḷ] → 2 NWS-bearing, 9 entries): **0 roman-cite bleeds**, **0
+  unowned**, 0 OTHER — the smallest section. Owner-map cross-check: 9 entries,
+  0 `[NWS: ?]`, one-for-one, 0 residual contamination.
+- **Full y-section deterministic split-preview** (all 1,810 y-keys → 420
+  NWS-bearing, 1,286 entries): **0 roman-cite bleeds**. 3 unowned = 1 benign
+  empty + 2 real (0.16%): 1 × roman page + 1 × Böhtlingk `*NNN`; no new
+  classes, no OTHER. Owner-map cross-check: 1,286 entries, 3 `[NWS: ?]`,
+  one-for-one, 0 residual contamination.
+- **Full z-section deterministic split-preview** (all 302 z-keys [SLP1 `z` =
+  ṣ] → 64 NWS-bearing, 112 entries): **0 roman-cite bleeds**. 2 unowned = 1
+  benign empty + 1 real, a single Böhtlingk `*NNN`; no OTHER. The 0.89%
+  real-loss rate is the 112-entry small base magnifying one cite, not a new
+  gap. Owner-map cross-check: 112 entries, 2 `[NWS: ?]`, one-for-one, 0
+  residual contamination. **This completes the full SLP1 key universe (a–z,
+  with capital/long-vowel sections folded into their lowercase counterparts by
+  the case-insensitive section router).**
 
 ### Known limitations
 - **`Meister 1988 (2.1) : 397`** — a source name carrying a `.` *inside* a
