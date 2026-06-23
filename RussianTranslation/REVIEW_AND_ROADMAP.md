@@ -85,6 +85,11 @@ Concrete assets now on disk / in the repo:
 
 ## 4. Roadmap
 
+> **2026-06-23 pivot — ordering is now FREQUENCY-FIRST, not alphabetical.** Phases
+> below stand, but the *sequence of cards* within the scale-up follows DCS frequency
+> (hybrid token × breadth × richness), top ~2–5k core first — see §5. The a-section
+> remains the validated gold/proof slice.
+
 Machine-readable companion artifacts:
 [roadmap/scientific_hardening.json](roadmap/scientific_hardening.json) is the
 canonical phase/gate record; [roadmap/quality_gates.jsonl](roadmap/quality_gates.jsonl)
@@ -109,16 +114,39 @@ strata; regular-polysemy layer to predict/audit sense extensions.
 exporters), Russian→Sanskrit reverse index, CITATION.cff + Zenodo DOI, an
 immutable edition cut, and the JSONL→typeset print path.
 
-## 5. Immediate plan — the 216 a-section cards (Phase A)
+## 5. Immediate plan — FREQUENCY-FIRST core tranche (2026-06-23 pivot)
 
-1. **Re-harvest** the a-section with the corpus-first `assemble` (done: the
-   machinery is wired; cards now carry `corpus_lexicon` senses + synonym sets).
-2. **Re-translate** via the Claude Code workflow (Sonnet translate + Opus judge),
-   now feeding the corpus synonym set + stratum into the prompt, so the output
-   reflects attested usage rather than a cold translation.
-3. **(Optional) discriminate** the near-synonym sets in the same or a follow-on
-   pass (Apresjan differentiae).
-4. **Collect** → provenance-stamp → review queue; spot-check a sample.
-5. **Review** the slice together; decide print microstructure before scaling.
+**Pivot: translate in DCS-frequency order, not alphabetical.** The words readers
+meet most get done first, instead of accidents of the alphabet. The a-section work
+already done stays as the validated **gold reference + pipeline proof** (owner-map
+gated loop, 5/6 first-pass clean); it is not wasted — only the *queue order* for the
+bulk changes.
 
-Open decisions are in §questions of this turn's message.
+**Ranking — hybrid token × breadth × richness** (decided 2026-06-23):
+- **token** = DCS occurrence frequency — `freqBand` 1–5 (log10 orders, Hellwig DCS
+  ~2021) in [`../VisualDCS/dcs_lemma_summary.json`](../../VisualDCS/dcs_lemma_summary.json)
+  (83,239 lemmas), exact counts from the DCS SQLite to break ties.
+- **breadth** = `n_texts` (distinct DCS texts the lemma appears in) from
+  [`src/dcs_lemma_renou.json`](src/dcs_lemma_renou.json).
+- **richness** = PWG entry content (sense count + PW/SCH/PWKVN/NWS layer presence).
+- **composite** = token × breadth × richness (log-scaled product), ranked descending.
+
+**Target — top core tranche first (~2–5 k DCS-attested lemmas)**, which cover the bulk
+of running Sanskrit text; translate + review them, then **reassess** the tail (the
+frequency-0 lexicographic-only words are deferred until that checkpoint).
+
+**Build (next step):** `freq_route.py` — join DCS token+breadth to PWG headwords (IAST→
+SLP1 via the existing `build_dcs_renou` join), score richness, emit
+`pilot/output/scale_manifest.freq.json` (ranked). The rest of the chain is unchanged:
+`_pilot_gen_merged.py --manifest freq` → owner-map → gated translate→audit
+([RUN_ASECTION_MAX.md](src/pilot/RUN_ASECTION_MAX.md) loop, just pointed at the freq
+manifest). **Only the order changes; the pipeline is the same.**
+
+**Why frequency-first wins:** the most-cited words also have the richest corpus evidence
+(best Apresjan discrimination) and the most cross-checks, so early cards are both the
+highest reader-value *and* the highest-confidence. The alphabetical a-section proved the
+machine; frequency-first is how the bulk should actually run.
+
+Then per card: **harvest → translate (Sonnet) → F12 gate + Opus judge → collect +
+provenance-stamp → review queue**, drawing from the freq manifest. Review the core
+tranche together; decide the tail strategy at the reassess checkpoint.
