@@ -163,15 +163,20 @@ def main():
     pwg_idx = dm.index('pwg')
 
     def is_merged(key):
-        """True only if a current MERGED input already exists. The superseded
-        PWG-only _pilot_gen.py writes the SAME <safe>.raw.txt name in '=== RECORD'
-        format — those must be regenerated, not skipped as done."""
+        """Done (skip) iff a current MERGED input exists AND (it has no NWS layer
+        or it already carries the owner map). Regenerate: (a) superseded PWG-only
+        _pilot_gen.py outputs ('=== RECORD' format, no '=== LAYER:'), and (b) merged
+        inputs written before the owner-map feed (have an NWS layer but no map)."""
         p = os.path.join(OUT, safe_name(key) + '.raw.txt')
         try:
             with open(p, encoding='utf-8') as f:
-                return '=== LAYER:' in f.read(200)
+                t = f.read()
         except OSError:
             return False
+        if '=== LAYER:' not in t[:200]:
+            return False
+        has_nws = '=== LAYER: NWS' in t
+        return (not has_nws) or ('PRE-PARSED OWNER MAP' in t)
 
     # resumable in scaled runs: skip only keys already written in merged format
     todo = [k for k in keys if not (scaled and is_merged(k))]
