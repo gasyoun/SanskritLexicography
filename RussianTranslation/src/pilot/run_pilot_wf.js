@@ -44,7 +44,7 @@ try {
 
 const CONV = `pwg_ru CONVENTIONS (from Böhtlingk-Roth's own prefaces + project decisions — follow EXACTLY):
 - REGISTER: scholarly-philological. Faithful to PWG's density and precision; this is a printed scholarly dictionary.
-- Translate into Russian ONLY the German gloss prose.
+- Translate into Russian the natural-language gloss prose. This is German in PWG/PW/SCH/PWKVN and most NWS sub-sources, but the NWS layer ALSO carries English (MW, Olivelle, Keller, Hoernle, BHSD, Sircar) and French (Renou, Padoux, Caland, Rivelex) glosses — translate each gloss FROM ITS OWN language, never relayed through German. A gloss given in two/three languages (e.g. "riz cuit; cooked rice; gekochter Reis") is ONE sense — render it once, not thrice (Guard 7).
 - KEEP VERBATIM (never translate or transliterate): Sanskrit (IAST / Devanagari); the literary-source sigla (ṚV., MBH., M., AK., H., …); and the German grammatical abbreviations (m., f., n., Pl., Du., adj., …). They stay in PWG's Latin/German form.
 - TWO-SOURCE PRINCIPLE (B&R's own): a sense backed by a TEXT citation (ṚV, MBH, M, …) is demonstrable usage = attested; a sense from a kośa/grammarian only (Amarakośa AK, Hemacandra H, Pāṇini P, Medinī Med.) is Indian-lexicographic — render it but mark source_type=lexicographic.
 - VEDIC senses are 19th-c. European philology and may be superseded; render faithfully; if the German itself hedges, keep the hedge.`
