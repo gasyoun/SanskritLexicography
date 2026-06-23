@@ -107,9 +107,11 @@ maintainers — see [DICTIONARY_CHAIN.md](DICTIONARY_CHAIN.md) for the project.
 This table lists only the defect that breaks **owner attribution** (the one this
 audit is scoped to). A separate structural scan of the full NWS corpus found
 **70 entries** with unbalanced delimiters (mostly a dropped closing `)`
-mid-gloss, invisible to attribution) — the complete list is in
-[NWS_SOURCE_DEFECTS.md](NWS_SOURCE_DEFECTS.md), and the consolidated report to
-Halle is drafted in [NWS_ERRATUM_EMAIL.md](NWS_ERRATUM_EMAIL.md).
+mid-gloss, invisible to attribution). The complete located list is generated
+locally by [`src/_nws_defect_list.py`](src/_nws_defect_list.py) →
+`NWS_SOURCE_DEFECTS.md` (gitignored — it is a personal to-do artifact, tracked
+in `../Uprava`); the consolidated report to Halle is drafted in
+[NWS_ERRATUM_EMAIL.md](NWS_ERRATUM_EMAIL.md).
 
 | headword | as printed | should read | section |
 |---|---|---|---|
