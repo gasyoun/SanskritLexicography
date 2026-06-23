@@ -8,6 +8,40 @@ See also: [METHODOLOGY_REVIEW.md](METHODOLOGY_REVIEW.md) (where we want to go),
 [failures/FAILURE_GALLERY.md](failures/FAILURE_GALLERY.md) (what went wrong and
 how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
+## 2026-06-23
+
+### Fixed
+- `nws_split.py` OWNER citation now stops at `;` so the trailing-tag
+  sub-entry variant (`gloss … <DIATAG> ; SOURCE:page`, e.g. `aYj`) keeps
+  only the SOURCE as owner, not the diasystem tag.
+- `nws_split.py check` locates card rows on word boundaries instead of raw
+  substring, killing a false MISATTRIBUTION where the short Sanskrit
+  locator `apāṃ` matched inside the compounds `apāṃpitta`/`apāṃnidhi`
+  (the `ap` cross-reference `apāṃ napāt → s.v. napāt` has no card row).
+- **Root cause of the `av` `+ upa` owner slide:** `compile_translatable`
+  `mask_nws_gloss` now strips the leading owner *bleed*. A roman-numeral
+  co-owner cite (`Rivelex (2) : XLV`) that `nws_split`'s digit-only OWNER
+  can't tag rode onto the FRONT of the next gloss as `<tag> ; Source :
+  page > …`, putting a competing source in the to-translate prose of
+  glosses whose deterministic owner was already correct — which led the
+  LLM assembly to attribute `+ upa` to Rivelex instead of Geldner. The
+  strip fires only on real bleeds (5 `av` glosses) and leaves
+  `nws_split.py` itself untouched (parsing the roman co-owner there
+  destabilises lemma/gloss alignment).
+- Hand-corrected the slid `av` `+ upa` block in the (gitignored) merged
+  card to the reading-direction owners (Geldner → Graßmann → NṚV → NṚV →
+  Rivelex); all other prefix blocks verified already-correct.
+
+### Added
+- `run_real_test.py audit` is now a true **NWS attribution gate**: a fresh
+  (non-protected) card whose NWS owners disagree with the deterministic
+  `nws_split` parse is rejected — its `<safe>.merged.md` is moved to
+  `<safe>.merged.REJECTED.md` so the next `prep` re-queues it — and the
+  command exits non-zero. Protected hand-authored cards are audited but
+  never quarantined. Verified end-to-end (slid card → FAIL → quarantined →
+  exit 1; clean card → PASS → exit 0). `selftest` + all 10 audited keys
+  CLEAN.
+
 ## 2026-06-20
 
 ### Added
