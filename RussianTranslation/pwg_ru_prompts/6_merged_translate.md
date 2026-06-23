@@ -89,6 +89,8 @@ judge can share the translator's blind spot and rubber-stamp a systematic error.
 judge with the parse rule explicitly and have it disambiguate by an independent signal
 (here, each sub-source author's field).
 
+**Owner-map feed (F12 eliminated by construction, 2026-06-23).** `_pilot_gen_merged.py` now appends an AUTHORITATIVE "PRE-PARSED OWNER MAP" (deterministic `nws_split` triples) to each card's NWS layer; the translator emits one row per entry with the owner VERBATIM and never re-derives owners. Validated: `ās` went MISATTRIBUTION (3 owner-swaps) → **CLEAN** (0 mismatches). Workflow HARD RULE 5 updated to consume the map.
+
 ## Pilot result (baseline)
 - `anna` — re-pass severity **3 → 2** (publishable after light edits): guards 1–2 fixed the
   editorial-intent/[new] meta-claims; discrimination re-grounded in corpus candidates; m./n.

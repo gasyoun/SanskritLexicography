@@ -20,13 +20,14 @@ like "|" don't collide or become unwritable on Windows.
 so input generation follows the same coverage-first HEAVY/LIGHT ordering the scale driver
 uses. Resumable: keys whose .raw.txt already exists are skipped.
 """
-import json, os, sys
+import json, os, re, sys
 sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
 
 import microstructure as M
 import dict_merge as dm
 import corpus_gate as cg
+import nws_split
 from safe_filename import safe_name
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -40,6 +41,29 @@ ROLE = {'pw': 'PW — Böhtlingk kürzere Fassung (revision of PWG; may correct 
         'pwkvn': 'PWKVN — PWK variant supplement (keyed to PW sense numbers)',
         'nws': 'NWS — Nachtragswörterbuch (Halle, cumulative addendum; condensed "Kleines Zitat" '
                '— render the new lemma/sense/grammar + keep its sigla)'}
+
+
+def nws_owner_map(key):
+    """The AUTHORITATIVE deterministic NWS (owner, gloss) pairing from nws_split —
+    so the translator NEVER re-derives owners (kills F12 by construction). Reads the
+    just-written <safe>.raw.txt so it sees exactly what `nws_split.py check` will."""
+    frag = nws_split.nws_fragment(key)
+    if not frag:
+        return ''
+    entries = nws_split.split(frag)
+    if not entries:
+        return ''
+    lines = []
+    for i, e in enumerate(entries, 1):
+        owner = ' / '.join(e.get('owners') or []) or '?'
+        gloss = re.sub(r'\s+', ' ', e.get('gloss') or '').strip()
+        for o in (e.get('owners') or []):            # drop a trailing copy of the cite
+            if gloss.endswith(o):
+                gloss = gloss[:-len(o)].rstrip(' .;,')
+        lemma = (' {#%s#}' % e['lemma']) if e.get('lemma') else ''
+        tag = (' [%s]' % e['tag']) if e.get('tag') else ''
+        lines.append('%2d. [NWS: %s]%s%s %s' % (i, owner, lemma, tag, gloss))
+    return '\n'.join(lines)
 
 
 def gen_card(key, pwg_idx, verbose=True):
@@ -75,7 +99,24 @@ def gen_card(key, pwg_idx, verbose=True):
         for r in L['records']:
             sections.append('=== LAYER: %s ===\n\n%s' % (ROLE.get(code, code.upper()), r))
 
-    open(os.path.join(OUT, safe_name(key) + '.raw.txt'), 'w', encoding='utf-8').write('\n\n'.join(sections))
+    raw_path = os.path.join(OUT, safe_name(key) + '.raw.txt')
+    open(raw_path, 'w', encoding='utf-8').write('\n\n'.join(sections))
+
+    # 3) append the AUTHORITATIVE deterministic NWS owner map (reads the file just
+    #    written, so it matches the F12 gate exactly). The translator emits one row
+    #    per entry with the owner verbatim — it does NOT re-derive owners.
+    if layer_counts.get('nws'):
+        omap = nws_owner_map(key)
+        if omap:
+            n_entries = omap.count('\n') + 1
+            sections.append(
+                '=== LAYER: NWS — PRE-PARSED OWNER MAP (AUTHORITATIVE, %d entries) ===\n\n'
+                'Deterministic owner-to-gloss pairing (kills F12). Emit EXACTLY one card row\n'
+                'per numbered entry below, in this order; copy its [NWS: OWNER] VERBATIM as the\n'
+                'row’s last citation; translate the gloss from its own language; keep IAST/sigla.\n'
+                'Do NOT re-derive owners from the raw fragment above.\n\n%s' % (n_entries, omap))
+            open(raw_path, 'w', encoding='utf-8').write('\n\n'.join(sections))
+            layer_counts['nws_map'] = n_entries
     if verbose:
         ns = sum(len([s for s in p['senses'] if s['n'] != '0']) for p in portraits)
         print('  %-10s PWG rec=%d senses=%d | PW=%d SCH=%d PWKVN=%d | NWS-extra=%s'
