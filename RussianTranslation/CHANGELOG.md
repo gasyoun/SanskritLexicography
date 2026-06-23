@@ -122,6 +122,13 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
   cross-check: 1,353 entries, 10 `[NWS: ?]`, matching the split-preview,
   and **0 inputs with residual contamination** — confirming the
   `nws_owner_map` debleed produces clean maps on fresh generation.
+- **Full i-section deterministic split-preview** (all 777 i-keys → 281
+  NWS-bearing, 1,045 entries): **0 roman-cite bleeds**. 4 unowned = 3
+  benign empty + 1 real (`in → … : XLVII (als Lemma in Rivelex 1, S. 561
+  hinzuzufügen)`, a roman-page owner trailed by an editorial note — the
+  roman-page known limitation) = 0.10%. Owner-map cross-check: 1,045
+  entries, 4 `[NWS: ?]`, matching the split-preview, 0 residual
+  contamination.
 
 ### Known limitations
 - **`Meister 1988 (2.1) : 397`** — a source name carrying a `.` *inside* a
