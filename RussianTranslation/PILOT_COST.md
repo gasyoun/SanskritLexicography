@@ -72,3 +72,58 @@ For a **printed scholarly dictionary**, the costs rank, in order:
   texts cost a few $ each (off-peak halves it), only if added.
 - **Human review is gateable** — the `review_status` state machine + severity-sorted
   worklist means humans touch only the flagged minority, not all 106k.
+
+## 6. Measurement-grounded update (2026-06-23) — tokens, days, and what we still lack
+
+The §3 figure ("1.5–2.5 B") extrapolated the **dense head** as typical. Real per-card
+measurement (6 coverage-first cards via the Agent path) plus the actual input-size
+distribution corrects it.
+
+**Measured:** translate cost ≈ **0.78 tokens per input byte**. The 6 cards averaged
+**129 KB input each (~100 k tokens)** — but the a-section **average card is 3.3 KB**,
+**~39× smaller**. Coverage-first front-loads the giants; the long tail is tiny. So a
+flat "100 k/card" massively overstates the bulk.
+
+| | cards | translate | +Opus judge (~1×) | total |
+|---|---|---|---|---|
+| **a-section** | 12,156 | ~0.25–0.4 B | ~0.25–0.4 B | **~0.5–0.8 B** |
+| **whole PWG dict** | **106,083** (8.7×) | ~2–3.5 B | ~2–3.5 B | **~4–7 B** |
+
+Content tokens alone are only ~270 M dict-wide; the band is dominated by **fixed
+per-card overhead** (prompt + reading two files + reasoning + output floor), which is
+unmeasured for small cards.
+
+**Wall-clock / throughput.** Measured durations: dense cards 2–11.5 min; the average
+card ~1–2.5 min. At a ~12-card concurrency cap and ~2.5 min/card → **~290 cards/h ≈
+~7 k cards/day at 24/7** → whole dict **~15 days of *continuous* running**. That is the
+*optimistic* floor and assumes no reaps, no gaps, **and no quota**.
+
+**The real ceiling is the Max weekly token quota**, which we *hit* this session but
+never recorded numerically. Whole dict in 2 weeks ⇒ 2–3.5 B tokens/week — far above a
+single Max plan's weekly allowance. So on one Max seat the dictionary is **quota-bound
+to ~1–2 months, not 2 weeks**. The a-section (~0.5–0.8 B) plausibly fits ~1–2 weekly
+windows.
+
+**Can 2 months of Max finish the whole dictionary? Unknown — and here is exactly what
+we lack to decide it:**
+
+| # | Missing datum | How to get it | Source |
+|---|---|---|---|
+| 1 | **Max weekly token quota** (the divisor in `weeks = total ÷ quota`) | record cumulative tokens at the moment the weekly cap fires | **Max only** |
+| 2 | **Per-card cost on a *typical* (small) card** | run ~10 small cards, record `subagent_tokens` | now (Agent) |
+| 3 | **Whole-dict total input bytes** | generate all-section inputs / extrapolate the size distribution | now |
+| 4 | **Reject / re-pass rate** (rework multiplier) | accrues as gated windows run (1/6 so far) | falls out of the run |
+| 5 | **Judge policy** — every card vs sample + gate-flagged only | a decision; halves the total | editorial call |
+
+**The one experiment that collapses the uncertainty:** run the prepped 50-card Max
+window *instrumented* — record (a) tokens, (b) wall-clock, (c) keep running windows
+until the cap fires and note the cumulative-token number. That single run yields the
+per-card cost (item 2), the real harness throughput, **and** the weekly quota (item 1)
+together → `2-months feasible? ⇔ refined_total ÷ measured_weekly_quota ≤ 8` becomes a
+clean yes/no.
+
+**Levers to fit 2 months / 2 weeks** (compounding): drop per-card Opus judging in favor
+of the deterministic F12 gate + a judged *sample* (halves to ~2–4 B); coverage-first so
+the high-value core lands first; or move the **bulk to the DeepSeek API** (parallel, no
+weekly cap, ≈ **$1.5–4 k** for the whole dict) and reserve Max/Opus for hard/flagged
+cards. The a-section stays the Max-validated gold reference either way.
