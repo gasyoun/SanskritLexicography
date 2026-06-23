@@ -175,6 +175,18 @@ def owner_surname(owner):
     return re.split(r'\s*[:(]| \d', owner.strip())[0].strip()
 
 
+# A locator must match a whole token, not a substring: the 4-char Sanskrit
+# locator «apāṃ» is contained in the compounds «apāṃpitta»/«apāṃnidhi», which
+# would mis-locate a bare cross-reference (`apāṃ napāt → s.v. napāt`) onto an
+# unrelated MW row. Require non-letter boundaries on both sides.
+_LET = 'A-Za-zÀ-ÿĀ-ỿ'
+
+
+def located_in(cand, row):
+    return any(c and re.search(r'(?<![%s])%s(?![%s])' % (_LET, re.escape(c), _LET), row)
+               for c in cand)
+
+
 def check(key):
     frag = nws_fragment(key)
     if not frag:
@@ -192,7 +204,7 @@ def check(key):
     for e, cand in zip(entries, locs):
         exp = [owner_surname(o) for o in e['owners']]
         # rows located by ANY of this entry's fragment-unique tokens
-        hit = [r for r in rows if any(c and c in r for c in cand)]
+        hit = [r for r in rows if located_in(cand, r)]
         if not hit:
             miss += 1
             print('   ?  no unique locator for owner %s — verify by hand (gloss: %s)'
