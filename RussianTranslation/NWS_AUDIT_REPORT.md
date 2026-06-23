@@ -127,3 +127,11 @@ page, page-less x-ref, multi-page cite, `(pw)` lowercase name, and one
 source-data typo — are all rare, terminal, and confined to a handful of works;
 none warrants a code change (each was tried in `nws_split` and reverted, or is
 bad input). **The NWS attribution audit is complete.**
+
+*Coverage note:* a–z exhausts the SLP1 key space. A first-char scan of the full
+merged index finds 10 keys outside a–z — punctuation/digit-leading junk (`(nu`,
+`11`, `5)`), a stray `см.↑` cross-reference, and mojibake with literal-IAST or
+Cyrillic initials (`Īdfkza…`, `ргаdA`, `араnI`, `расбpacati…`, `араbAD`,
+`араbrU`). All 10 are non-SLP1 index artifacts and **none carries an NWS
+fragment** (0 NWS entries), so they are out of scope here; they are an index
+hygiene matter, not an NWS attribution one.
