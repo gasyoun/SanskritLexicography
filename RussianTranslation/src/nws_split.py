@@ -41,7 +41,7 @@ OUTP = os.path.join(HERE, 'pilot', 'output')
 # SOURCE, not the diasystem tag, as the owner.
 OWNER = re.compile(
     r'(?P<name>[A-ZÀ-ÖØ-ÞĀ-ỿ][^>:.;]*?)\s:\s(?P<page>\d+[A-Za-z]?)'
-    r'(?P<sv>\s*\(s\.v\.[^)]*\))?\s*$')
+    r'(?P<sv>\s*\((?:[^()]|\([^()]*\))*\))?\s*$')
 BARE = re.compile(r'^[,;]?\s*' + OWNER.pattern)
 
 # diasystem first-tokens, to peel a leading lemma off a TAG segment (cosmetic)
