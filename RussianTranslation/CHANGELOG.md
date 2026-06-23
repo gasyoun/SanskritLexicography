@@ -10,6 +10,60 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## 2026-06-23
 
+### Added
+- **Renou language-state (I–V) tag on every cited sense.** Each dictionary
+  *meaning* is now classified into one of Louis Renou's five states of Sanskrit
+  (*Histoire de la langue sanskrite*, the five chapters): **I** Vedic, **II**
+  Pāṇinian/grammarians', **III** Epic & prolongements, **IV** Classical, **V**
+  Buddhist/Jaina. Derivation is **deterministic from the sense's `<ls>`
+  citations** — no LLM — so it is fully auditable. A sense is **multi-label**
+  (a meaning attested across eras carries all applicable states, e.g.
+  `["I","III"]`), and its **oldest citation** is flagged separately
+  (`renou_oldest`, plus `renou_oldest_sense` on the record) to answer "in which
+  era was this meaning first attested".
+  - [src/build_ls_map.py](src/build_ls_map.py): every curated PWG source in
+    `CANON` carries a `renou` state; `ls_source_map.json` regenerated with it.
+    PWG coverage — I 123 806 · II 25 291 · III 199 075 · IV 211 071 · V 0
+    citations (PWG's curated canon has no Buddhist/Jaina source).
+  - [src/build_ls_map_mw.py](src/build_ls_map_mw.py) (new): MW-side map
+    (`ls_source_map_mw.json`), with an MW-specific siglum extractor (no `n=""`
+    attribute; lowercase-roman volume refs stripped; `L.` kept as
+    lexicographers). 77 sources, 84.1 % of MW `<ls>` citations; **state V
+    populates here** (Buddh./Lalit./Divyāv./SaddhP./Jaina — 4 611 citations).
+  - [src/renou.py](src/renou.py) (new): `states_for_text/keys` resolves
+    citations → states, dict-aware (`pwg`/`mw`).
+  - [src/annotate_renou.py](src/annotate_renou.py) (new): idempotent, BOM-free,
+    temp-swap backfill of `renou` / `renou_oldest` onto final-card senses (and
+    `renou_oldest_sense` per record); `--report` prints the I–V distribution,
+    multi-label count and first-attestation breakdown.
+  - [schemas/pwg_ru_final_card.schema.json](schemas/pwg_ru_final_card.schema.json):
+    `renou` (array of I–V) and `renou_oldest` added to the sense as **optional**
+    fields, and `renou_oldest_sense` to the record — existing MW/PWG cards stay
+    valid.
+  - Ran record-level on the legacy PWG store (`pwg_ru_translated.jsonl`, 217
+    cards): **184 tagged (84.8 %)**, 45 multi-label · I 70 · II 21 · III 48 ·
+    IV 106 · V 0.
+
+- **DCS corpus enrichment of the Renou tag (second, provenance-tagged signal).**
+  `<ls>` is authoritative but narrow (only cited sources); the Digital Corpus of
+  Sanskrit (DCS, 2026 CoNLL-U, 270 texts / 5.46 M words) shows where a headword
+  *lemma is actually attested*, recovering states the citations miss.
+  - [src/build_dcs_renou.py](src/build_dcs_renou.py) (new): resolves each DCS text
+    → Renou state (genre from VisualDCS `dcs_texts_clean.json`, name-hints for the
+    Buddhist **V** / grammar **II** texts it misses, date fallback), then scans the
+    corpus (lemma = CoNLL-U col 3) → `dcs_lemma_renou.json` (gitignored build
+    artifact): **90 346 lemmas** → `{renou states, oldest text/date, n_texts}`.
+  - [src/enrich_renou_dcs.py](src/enrich_renou_dcs.py) (new): joins the index to
+    cards on `key1`→IAST, adding `renou_dcs`, `renou_dcs_oldest`, `renou_dcs_texts`,
+    `renou_enriched` (ls ∪ dcs) and `renou_provenance` (`{state:["ls","dcs"]}`).
+    DCS is per-lemma, so it merges at the card/record level and **never overwrites**
+    the per-sense `<ls>` tag.
+  - On the 217 PWG cards: 127 (58.5 %) DCS-hit, 83 gained ≥1 state; **state V
+    went 0 → 37 cards** (Buddhist attestation `<ls>` never supplied). Enriched
+    coverage I 93 · II 30 · III 90 · IV 136 · V 37.
+  - Next enrichment tier (designed, not built): wisdomlib tradition/source tags as
+    a tertiary **V**-focused hint, kept lower-confidence in `renou_provenance`.
+
 ### Fixed
 - `nws_split.py` OWNER citation now stops at `;` so the trailing-tag
   sub-entry variant (`gloss … <DIATAG> ; SOURCE:page`, e.g. `aYj`) keeps
@@ -200,6 +254,18 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
   `, viii` breaks the close). No Meister/Böhtlingk/roman/OTHER cases. Owner-map
   cross-check: 1,770 entries, 9 `[NWS: ?]`, matching the split-preview
   one-for-one, 0 residual contamination.
+- **Full s-section deterministic split-preview** (all 18,140 s-keys → 4,297
+  NWS-bearing, 10,588 entries — the largest section): **0 roman-cite bleeds**.
+  88 unowned = 73 benign empty + 15 real (0.14%): 6 × Meister `(2.1)` + 3 ×
+  multi-page cite (`TPSI 3 : 235, 238`, `213, 216`, `248, 249, 251`) + 3 ×
+  page-less x-ref (incl. `śelu → Olivelle 2013 : śelu (s.v. śleṣmātaka )`, a
+  word locator, no numeric page) + 2 × roman page + **1 new known-limitation
+  class** — a lowercase parenthetical source name (`succhardís → s.v. suchardís
+  Graßmann 1873 (1996). (pw) : 1531`). OWNER's name class is capital-initial, so
+  `(pw)` is not matched (the canonical `PW : 1531` parses); it is a rare,
+  well-formed citation style, not a typo. Owner-map cross-check: 10,588 entries,
+  88 `[NWS: ?]`, matching the split-preview one-for-one, 0 residual
+  contamination.
 
 ### Known limitations
 - **`Meister 1988 (2.1) : 397`** — a source name carrying a `.` *inside* a
@@ -225,8 +291,16 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
   family as roman/asterisk pages: broadening the page class to swallow
   comma-joined lists would let trailing comma-separated gloss content be read
   as page numbers, destabilising segment/owner alignment, so it stays out by
-  design. Drops 1 p-section owner (`prakaraRasama`); the only multi-page cite
-  in the section.
+  design. Drops `prakaraRasama` (p), `ratnasaMBava` (r,
+  `Ensink 1964 : 156, viii`) and 3 s-section owners (`savyaBicAra`,
+  `saMSayasama`, `sADyasama`, all `TPSI 3 : …, …`).
+- **`(pw) : 1531`** — a lowercase parenthetical source name is not matched,
+  because OWNER's name class is capital-initial (the canonical `PW : 1531`
+  parses); admitting lowercase parenthetical tokens would let parenthetical
+  gloss asides be read as owners, so it stays out by the same name-class design
+  as `Meister (2.1)`. Drops 1 s-section owner (`sucCardis → s.v. suchardís
+  Graßmann 1873 (1996). (pw) : 1531`); a rare, well-formed citation style, not
+  a typo.
 - These are rare (b: 7 / 2,655 = 0.26%; c: 9 / 1,828 = 0.49%), terminal,
   and confined to a few works (Meister 1988, Walter 1893, Böhtlingk 1887);
   the safely-fixable nested/variant-paren gap is already fixed. Roman and
