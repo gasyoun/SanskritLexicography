@@ -10,6 +10,28 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## 2026-06-23
 
+### Scaled + handed off (translation pipeline)
+- **Owner-map feed — F12 eliminated by construction.** `_pilot_gen_merged.py` appends
+  an AUTHORITATIVE "PRE-PARSED OWNER MAP" (deterministic `nws_split` triples) to each
+  card's NWS layer; the translator emits one row per entry with the owner VERBATIM and
+  never re-derives attribution. `run_pilot_wf.js` HARD RULE 5 + Guard 7 consume it.
+- **Re-validated on fresh cards:** `ātman` CLEAN (13/13, incl. French TAK *le soi*→RU);
+  `ās` went MISATTRIBUTION (3 owner-swaps, pre-fix) → **CLEAN** (0 mismatches) after the
+  owner-map feed. First coverage-first batch of 6 (`as`/`A`/`anu`/`akṣa`/`arjuna` clean,
+  `as` with 60 NWS owners CLEAN) = **5/6 first-pass clean**; `Ap` quarantined + re-queued.
+- **Full a-section staged for the Max workflow:** regenerated **4,264 NWS a-cards** with
+  owner maps (`--manifest a`); runbook [src/pilot/RUN_ASECTION_MAX.md](src/pilot/RUN_ASECTION_MAX.md)
+  (per-window prep → run `run_pilot_wf.js` on Max → `run_real_test.py audit`; rejects
+  auto-re-queue). Window 1 (`[0,50)`, 37 fresh) prepped.
+- **Failure gallery:** F10 (Windows case-insensitive filename collision — would lose
+  ~15 k headwords), F11 (editorial-intent fabrication), F12 (NWS cite-after-gloss
+  off-by-one inherited by the judge). See [failures/FAILURE_GALLERY.md](failures/FAILURE_GALLERY.md).
+- **Cost & feasibility re-grounded** — [PILOT_COST.md](PILOT_COST.md) §6: measured
+  **0.78 tok/byte**; a-section ≈ **0.5–0.8 B** tokens, whole PWG dict ≈ **4–7 B**;
+  throughput ~7 k cards/day at 24/7 (~15 days *continuous*) but **quota-bound to ~1–2
+  months on one Max seat**. Documents the data gaps (Max weekly quota, typical-card
+  cost, total size) and the one instrumented-window experiment that resolves them.
+
 ### Added
 - **Renou language-state (I–V) tag on every cited sense.** Each dictionary
   *meaning* is now classified into one of Louis Renou's five states of Sanskrit
@@ -279,6 +301,17 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
   roman page; no new classes, no OTHER. Owner-map cross-check: 2,656 entries,
   39 `[NWS: ?]`, matching the split-preview one-for-one, 0 residual
   contamination.
+- **Full v-section deterministic split-preview** (all 9,658 v-keys → 2,418
+  NWS-bearing, 6,526 entries): **0 roman-cite bleeds**. 79 unowned = 65 benign
+  empty + 14 real (0.21%): 8 × Meister `(2.1)` + 2 × page-less x-ref + 2 ×
+  roman page + 1 × multi-page cite (`vErocana → Ensink 1964 : 180, viii`) + 1 ×
+  source-data typo (`vftraKAda` = vṛtrakhāda → `NṚV 2B : 79 (s. (2. khād )`).
+  The typo is the **same upstream NWS defect** already in the errata (an
+  unbalanced trailing paren); it surfaces here under the v-keyed headword and
+  in the k-section under the khād-root fragment (`KAd`), so it costs an owner
+  in both section-fragments — one source defect, two losses. No new classes,
+  both OTHER classified. Owner-map cross-check: 6,526 entries, 79 `[NWS: ?]`,
+  matching the split-preview one-for-one, 0 residual contamination.
 
 ### Known limitations
 - **`Meister 1988 (2.1) : 397`** — a source name carrying a `.` *inside* a
@@ -306,8 +339,8 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
   as page numbers, destabilising segment/owner alignment, so it stays out by
   design. Drops `prakaraRasama` (p), `ratnasaMBava` (r,
   `Ensink 1964 : 156, viii`), 3 s-section owners (`savyaBicAra`,
-  `saMSayasama`, `sADyasama`, all `TPSI 3 : …, …`) and `taTAgata` (t,
-  `Ensink 1964 : 73, vii`).
+  `saMSayasama`, `sADyasama`, all `TPSI 3 : …, …`), `taTAgata` (t,
+  `Ensink 1964 : 73, vii`) and `vErocana` (v, `Ensink 1964 : 180, viii`).
 - **`(pw) : 1531`** — a lowercase parenthetical source name is not matched,
   because OWNER's name class is capital-initial (the canonical `PW : 1531`
   parses); admitting lowercase parenthetical tokens would let parenthetical
