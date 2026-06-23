@@ -1,7 +1,7 @@
 # NWS attribution-parser audit — cumulative report
 
 **Status: living document.** Updated as each alphabet section is audited.
-Last section folded in: **m** (sections **b–m** complete; the a-section was the
+Last section folded in: **n** (sections **b–n** complete; the a-section was the
 original development pilot, validated per-key via `nws_split.py check` rather
 than this split-preview format).
 
@@ -29,7 +29,7 @@ is recovered. It reports four things:
 - **cross-check** — owner-map entry count vs split-preview entry count, and the
   `[NWS: ?]` count vs the no-owner count. Must read OK.
 
-## Cumulative roll-up (b–m)
+## Cumulative roll-up (b–n)
 
 | sec | keys | NWS-bearing | entries | bleeds | benign | real | real % |
 |---|--:|--:|--:|--:|--:|--:|--:|
@@ -45,14 +45,15 @@ is recovered. It reports four things:
 | k | 8,637 | 2,590 | 6,530 | 3 | 28 | 11 | 0.17% |
 | l | 1,464 | 286 | 735 | 0 | 6 | 5 | 0.68% |
 | m | 6,350 | 1,425 | 3,495 | 0 | 17 | 11 | 0.31% |
-| **Σ** | **38,698** | **10,016** | **26,494** | **5** | **105** | **52** | **0.196%** |
+| n | 4,278 | 1,022 | 2,407 | 0 | 24 | 3 | 0.12% |
+| **Σ** | **42,976** | **11,038** | **28,901** | **5** | **129** | **55** | **0.190%** |
 
 Notes: `f` = SLP1 `f` = ṛ. The 0.68% in `l` is the small-base effect of one
 `*NNN` cluster over just 735 entries, not a new gap. All 5 bleeds (g: 2 × `gam`,
 k: 3 × `kar`, all `Hillebrandt 1885 : IV`) leave the owner correct and produce
 **0 residual contamination** after the debleed.
 
-## Real-loss taxonomy (all 52)
+## Real-loss taxonomy (all 55)
 
 Every real no-owner falls into a documented known-limitation class or is bad
 input. **No parser bug has been found.**
@@ -61,8 +62,8 @@ input. **No parser bug has been found.**
 |---|--:|---|---|
 | Meister `(2.1)` | 27 | `Meister 1988 (2.1) : 397` | none — name with `.` inside `(2.1)` excluded by design |
 | Böhtlingk `*NNN` | 7 | `Böhtlingk 1887 : *163` | none — asterisk page; admitting it regressed `ap`/`av` |
-| roman page | 10 | `Walter 1893 : XXXII` | none — digit-only page; roman pages destabilise alignment |
-| page-less x-ref | 7 | `duHzvapnya → s.v. duṣvápnya` | none — benign; no `: page` exists to parse |
+| roman page | 11 | `Walter 1893 : XXXII` | none — digit-only page; roman pages destabilise alignment |
+| page-less x-ref | 9 | `duHzvapnya → s.v. duṣvápnya` | none — benign; no `: page` exists to parse |
 | source-data typo | 1 | `vṛtrakhādá → … NṚV 2B : 79 (s. (2. khād )` | none — bad input → [NWS errata](#nws-source-data-errata) |
 
 The first three classes were each tried in `nws_split` and reverted: admitting
@@ -87,8 +88,8 @@ the intended form.
 
 ## Conclusion (so far)
 
-Across **26,494 NWS entries in 10,016 NWS-bearing keys**, the deterministic
-owner-attribution parser recovers the source for all but 52 entries
-(**0.196%**), every one of which is an accepted known limitation or a single
+Across **28,901 NWS entries in 11,038 NWS-bearing keys**, the deterministic
+owner-attribution parser recovers the source for all but 55 entries
+(**0.190%**), every one of which is an accepted known limitation or a single
 source typo. Zero parser bugs; bleeds are cosmetic and fully cleaned. The
-audit continues through the remaining sections (n–z).
+audit continues through the remaining sections (o–z).

@@ -164,6 +164,12 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
   roman page + 1 page-less x-ref; no Böhtlingk `*NNN`/OTHER cases. Owner-map
   cross-check: 3,495 entries, 28 `[NWS: ?]`, matching the split-preview
   one-for-one, 0 residual contamination.
+- **Full n-section deterministic split-preview** (all 4,278 n-keys → 1,022
+  NWS-bearing, 2,407 entries): **0 roman-cite bleeds**. 27 unowned = 24 benign
+  empty + 3 real (0.12%), all known limitations: 2 × page-less x-ref + 1 ×
+  roman page; no Meister `(2.1)`/Böhtlingk `*NNN`/OTHER cases. Owner-map
+  cross-check: 2,407 entries, 27 `[NWS: ?]`, matching the split-preview
+  one-for-one, 0 residual contamination.
 
 ### Known limitations
 - **`Meister 1988 (2.1) : 397`** — a source name carrying a `.` *inside* a
