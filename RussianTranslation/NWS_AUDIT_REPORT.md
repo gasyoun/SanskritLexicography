@@ -1,7 +1,7 @@
 # NWS attribution-parser audit — cumulative report
 
 **Status: living document.** Updated as each alphabet section is audited.
-Last section folded in: **r** (sections **b–r** complete; the a-section was the
+Last section folded in: **s** (sections **b–s** complete; the a-section was the
 original development pilot, validated per-key via `nws_split.py check` rather
 than this split-preview format).
 
@@ -29,7 +29,7 @@ is recovered. It reports four things:
 - **cross-check** — owner-map entry count vs split-preview entry count, and the
   `[NWS: ?]` count vs the no-owner count. Must read OK.
 
-## Cumulative roll-up (b–r)
+## Cumulative roll-up (b–s)
 
 | sec | keys | NWS-bearing | entries | bleeds | benign | real | real % |
 |---|--:|--:|--:|--:|--:|--:|--:|
@@ -50,7 +50,8 @@ is recovered. It reports four things:
 | p | 11,095 | 2,878 | 6,863 | 0 | 73 | 17 | 0.25% |
 | q | 105 | 18 | 42 | 0 | 1 | 1 | 2.38% |
 | r | 2,905 | 656 | 1,770 | 0 | 8 | 1 | 0.06% |
-| **Σ** | **57,542** | **14,719** | **37,882** | **5** | **211** | **74** | **0.195%** |
+| s | 18,140 | 4,297 | 10,588 | 0 | 73 | 15 | 0.14% |
+| **Σ** | **75,682** | **19,016** | **48,470** | **5** | **284** | **89** | **0.184%** |
 
 Notes: `f` = SLP1 `f` = ṛ; `q` = SLP1 `q` = retroflex ḍ. The 0.68% in `l` and
 the 2.38% in `q` are small-base effects (one `*NNN` cluster over 735 entries;
@@ -58,18 +59,19 @@ one Meister cite over just 42 entries), not new gaps. All 5 bleeds (g: 2 × `gam
 k: 3 × `kar`, all `Hillebrandt 1885 : IV`) leave the owner correct and produce
 **0 residual contamination** after the debleed.
 
-## Real-loss taxonomy (all 74)
+## Real-loss taxonomy (all 89)
 
 Every real no-owner falls into a documented known-limitation class or is bad
 input. **No parser bug has been found.**
 
 | class | count | example | code action |
 |---|--:|---|---|
-| Meister `(2.1)` | 34 | `Meister 1988 (2.1) : 397` | none — name with `.` inside `(2.1)` excluded by design |
+| Meister `(2.1)` | 40 | `Meister 1988 (2.1) : 397` | none — name with `.` inside `(2.1)` excluded by design |
 | Böhtlingk `*NNN` | 7 | `Böhtlingk 1887 : *163` | none — asterisk page; admitting it regressed `ap`/`av` |
-| roman page | 13 | `Walter 1893 : XXXII` | none — digit-only page; roman pages destabilise alignment |
-| page-less x-ref | 17 | `duHzvapnya → s.v. duṣvápnya` | none — benign; no `: page` exists to parse |
-| multi-page cite | 2 | `TPSI 3 : 19, 22`; `Ensink 1964 : 156, viii` | none — comma-joined page list; single-token page by design (see below) |
+| roman page | 15 | `Walter 1893 : XXXII` | none — digit-only page; roman pages destabilise alignment |
+| page-less x-ref | 20 | `duHzvapnya → s.v. duṣvápnya`; `śelu → Olivelle 2013 : śelu` | none — no numeric `: page` exists to parse |
+| multi-page cite | 5 | `TPSI 3 : 19, 22`; `Ensink 1964 : 156, viii` | none — comma-joined page list; single-token page by design (see below) |
+| `(pw)` lowercase name | 1 | `… Graßmann 1873 (1996). (pw) : 1531` | none — capital-initial name class by design; canonical `PW : 1531` parses |
 | source-data typo | 1 | `vṛtrakhādá → … NṚV 2B : 79 (s. (2. khād )` | none — bad input → [NWS errata](#nws-source-data-errata) |
 
 The roman-page, asterisk-page, and multi-page classes share one cause —
@@ -77,10 +79,13 @@ OWNER's page is a single digit-only token (`\d+[A-Za-z]?`) that must close the
 gloss — and admitting roman/`.`/`*` tokens was each tried in `nws_split` and
 reverted, because it turns co-owner segments into gloss-closers and
 destabilises segment/owner alignment. The multi-page cite (`TPSI 3 : 19, 22`,
-new in p) is the same family: broadening the page to a comma-joined list would
-let trailing comma-separated gloss content be misread as page numbers, so it
-stays out by the same design. They are rare, terminal, and confined to a few
-works (Meister 1988, Walter 1893, Böhtlingk 1887, TPSI). See
+new in p, recurring in r and s) is the same family: broadening the page to a
+comma-joined list would let trailing comma-separated gloss content be misread
+as page numbers, so it stays out by the same design. The `(pw)` lowercase-name
+case (new in s) shares the `Meister (2.1)` name-class cause: OWNER is
+capital-initial, and the canonical `PW : 1531` parses. They are rare, terminal,
+and confined to a few works (Meister 1988, Walter 1893, Böhtlingk 1887, TPSI,
+Ensink 1964). See
 [CHANGELOG.md](CHANGELOG.md) "Known limitations" for the
 full rationale and the guarding selftests.
 
@@ -99,8 +104,8 @@ the intended form.
 
 ## Conclusion (so far)
 
-Across **37,882 NWS entries in 14,719 NWS-bearing keys**, the deterministic
-owner-attribution parser recovers the source for all but 74 entries
-(**0.195%**), every one of which is an accepted known limitation or a single
+Across **48,470 NWS entries in 19,016 NWS-bearing keys**, the deterministic
+owner-attribution parser recovers the source for all but 89 entries
+(**0.184%**), every one of which is an accepted known limitation or a single
 source typo. Zero parser bugs; bleeds are cosmetic and fully cleaned. The
-audit continues through the remaining sections (s–z).
+audit continues through the remaining sections (t–z).
