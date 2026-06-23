@@ -98,13 +98,35 @@ w('which only adds closing `)`); the bracket class is high but worth a human gla
 w('before sending, as a few `[ ]` could be intentional nesting.')
 w('')
 
-def section(title, rows, note):
+# per-entry suggested fixes for the bracket class (judgment-confirmed by hand)
+BRK_FIX = {
+    'aS': "insert the missing closing `]` after the `[a) … b) …]` editorial note",
+    'brahman': "`Brahma[-Götter)` → `Brahma(-Götter)` (`[` should be `(`)",
+    'Dar': "two `]` → `)`: `(Abl oder Abl mit ā́ ]` and the parallel aside",
+    'etad': "`(Akk n von etád ]` → `(Akk n von etád )` (`]` should be `)`)",
+    'gam': "`(Lok, Adv des Ortes]` → `… Ortes)` (`]` should be `)`)",
+    'gar': "`(Lok, ádhi mit Lok]` → `… mit Lok)` (`]` should be `)`)",
+    'guRa': "insert the missing closing `]` after `[e.g. viśiṣṭo daśabhir guṇaiḥ …`",
+    'gA': "`(Lok oder Adv des Ortes]` → `… Ortes)` (`]` should be `)`)",
+    'jYA': "`(Akk des Inf]` → `(Akk des Inf)` (`]` should be `)`)",
+    'lok': "`investigates [=, … vyavalo °)` → `(=, … vyavalo °)` (`[` should be `(`)",
+    'muktikA': "insert the missing closing `]` after `[contrasted in Mvy with …`",
+    'nu': "insert the missing closing `]` after `[ nū́ cit : …`",
+    'ruh': "insert the missing closing `]` after `[very commonly of planting roots …`",
+    'saMSaya': "`CarakaSaṃ [vim] 8.43]` → delete the stray trailing `]` after `8.43`",
+    'viS': "`eingehen in (Akk, Lok)];` → delete the stray `]` after `)`",
+    'vizRu': "insert the missing closing `]` after `[esp. with Indra whom he assists …`",
+}
+
+def section(title, rows, note, fixes=None):
     w('## %s (%d)' % (title, len(rows)))
     w('')
     w(note)
     w('')
     for ia, k1, c in sorted(rows):
         w('- **%s** (`%s`) — …%s…' % (ia, k1, c))
+        if fixes and k1 in fixes:
+            w('    - **Fix:** %s' % fixes[k1])
     w('')
 
 section('Unmatched opening parenthesis — a closing `)` is missing', paren,
@@ -112,8 +134,9 @@ section('Unmatched opening parenthesis — a closing `)` is missing', paren,
 section('Stray doubled `((` (not already covered above)', dbl_new,
         'Fix: delete the extra `(`.')
 section('Unbalanced editorial brackets `[ ]`', brk,
-        'Fix: usually a `]` typed for `)` (or `[` for `(`), or an unclosed `[`; '
-        'see each locus.')
+        'Each carries a per-entry fix (hand-confirmed): a `]` typed for `)` '
+        '(6), a `[` for `(` (2), a stray `]` to delete (2), or a missing '
+        'closing `]` to insert (6).', fixes=BRK_FIX)
 
 open(OUT, 'w', encoding='utf-8').write('\n'.join(lines) + '\n')
 print('wrote', OUT, '—', total, 'distinct entries',
