@@ -1,7 +1,7 @@
 # NWS attribution-parser audit — cumulative report
 
 **Status: living document.** Updated as each alphabet section is audited.
-Last section folded in: **n** (sections **b–n** complete; the a-section was the
+Last section folded in: **o** (sections **b–o** complete; the a-section was the
 original development pilot, validated per-key via `nws_split.py check` rather
 than this split-preview format).
 
@@ -29,7 +29,7 @@ is recovered. It reports four things:
 - **cross-check** — owner-map entry count vs split-preview entry count, and the
   `[NWS: ?]` count vs the no-owner count. Must read OK.
 
-## Cumulative roll-up (b–n)
+## Cumulative roll-up (b–o)
 
 | sec | keys | NWS-bearing | entries | bleeds | benign | real | real % |
 |---|--:|--:|--:|--:|--:|--:|--:|
@@ -46,7 +46,8 @@ is recovered. It reports four things:
 | l | 1,464 | 286 | 735 | 0 | 6 | 5 | 0.68% |
 | m | 6,350 | 1,425 | 3,495 | 0 | 17 | 11 | 0.31% |
 | n | 4,278 | 1,022 | 2,407 | 0 | 24 | 3 | 0.12% |
-| **Σ** | **42,976** | **11,038** | **28,901** | **5** | **129** | **55** | **0.190%** |
+| o | 461 | 129 | 306 | 0 | 0 | 0 | 0.00% |
+| **Σ** | **43,437** | **11,167** | **29,207** | **5** | **129** | **55** | **0.188%** |
 
 Notes: `f` = SLP1 `f` = ṛ. The 0.68% in `l` is the small-base effect of one
 `*NNN` cluster over just 735 entries, not a new gap. All 5 bleeds (g: 2 × `gam`,
@@ -88,8 +89,8 @@ the intended form.
 
 ## Conclusion (so far)
 
-Across **28,901 NWS entries in 11,038 NWS-bearing keys**, the deterministic
+Across **29,207 NWS entries in 11,167 NWS-bearing keys**, the deterministic
 owner-attribution parser recovers the source for all but 55 entries
-(**0.190%**), every one of which is an accepted known limitation or a single
+(**0.188%**), every one of which is an accepted known limitation or a single
 source typo. Zero parser bugs; bleeds are cosmetic and fully cleaned. The
-audit continues through the remaining sections (o–z).
+audit continues through the remaining sections (p–z).
