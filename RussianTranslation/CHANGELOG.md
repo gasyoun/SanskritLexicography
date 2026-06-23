@@ -41,6 +41,18 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
   `selftest` + all 10 a-section checks still CLEAN.
 - `scale_route.py` accepts any single-letter section (e.g. `b`), not just
   `a`/`all`, emitting `scale_manifest.<letter>.json`.
+- **`nws_split.nws_fragment` no longer swallows the appended owner map.**
+  `_pilot_gen_merged.py` writes an authoritative `NWS — PRE-PARSED OWNER
+  MAP` layer after the net-new NWS addendum, but `nws_fragment` captured
+  `(.*)\Z` from the first `=== LAYER: NWS` marker to EOF, so on any
+  owner-map input it re-parsed that map as source content — corrupting
+  `split()`, the F12 gate (`check`) and `compile_translatable` (the
+  d-section first showed 1,380 phantom empty-gloss + 33 phantom no-owner
+  entries). It now captures only up to the next `=== LAYER:` marker and
+  skips the `PRE-PARSED` header. Found while auditing the d-section (first
+  section generated with the owner-map injection); `selftest` + all 10
+  a-section checks still CLEAN, `compile_translatable('day')` → 7 clean
+  units, 0 map artifacts.
 
 ### Added
 - `run_real_test.py audit` is now a true **NWS attribution gate**: a fresh
@@ -63,6 +75,14 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
   NWS-bearing, 1,828 entries): **0 roman-cite bleeds**. 17 unowned = 8
   benign empty-segments + 9 real losses, all in the known-limitation
   sources below (8 × Meister `(2.1)`, 1 × Böhtlingk `*NNN`).
+- **Full d-section deterministic split-preview** (all 6,019 d-keys → 1,439
+  NWS-bearing, 3,808 entries): **0 roman-cite bleeds**. First section
+  generated with the owner-map injection, which surfaced the
+  `nws_fragment` over-capture bug fixed above; after that fix only 4
+  entries (0.10%) are real losses — one each Meister `(2.1)`, roman page,
+  Böhtlingk `*NNN`, plus one page-less cross-reference
+  (`duHzvapnya → s.v. duṣvápnya (Graßmann 1873 (1996))`, no `: page` to
+  parse). The 14 remaining unowned are benign empty terminal segments.
 
 ### Known limitations
 - **`Meister 1988 (2.1) : 397`** — a source name carrying a `.` *inside* a
