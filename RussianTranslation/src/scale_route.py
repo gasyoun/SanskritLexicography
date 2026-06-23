@@ -6,7 +6,8 @@ Opus judge — for polysemous / corpus-backed cards) or the LIGHT path (one
 lightweight Sonnet pass — for the 1-sense long tail), and emits a coverage-first
 ordered manifest the scale driver consumes.
 
-  python scale_route.py [a|all]      # a = a-section (default), all = whole dict
+  python scale_route.py [<letter>|all]   # <letter> = that section (default a),
+                                         #   e.g. b ; all = whole dict
 """
 import json, os, sys, collections
 sys.stdout.reconfigure(encoding='utf-8')
@@ -34,7 +35,7 @@ def main():
         k1, k2, _ = M.header(buf)
         if not k1:
             continue
-        if section != 'all' and k1[:1] not in ('a', 'A'):
+        if section != 'all' and k1[:1].lower() != section.lower():
             continue
         body = '\n'.join(buf[1:])
         c = cards.setdefault(k1, {'k2': k2, 'n_records': 0, 'n_senses': 0})
