@@ -266,6 +266,13 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
   well-formed citation style, not a typo. Owner-map cross-check: 10,588 entries,
   88 `[NWS: ?]`, matching the split-preview one-for-one, 0 residual
   contamination.
+- **Full t-section deterministic split-preview** (all 3,477 t-keys → 821
+  NWS-bearing, 1,968 entries): **0 roman-cite bleeds**. 15 unowned = 12 benign
+  empty + 3 real (0.15%): 1 × Meister `(2.1)` + 1 × roman page + 1 × multi-page
+  cite (`taTAgata → Ensink 1964 : 73, vii`, comma-joined page list, as in
+  r/s). No new classes, no OTHER left after classification. Owner-map
+  cross-check: 1,968 entries, 15 `[NWS: ?]`, matching the split-preview
+  one-for-one, 0 residual contamination.
 
 ### Known limitations
 - **`Meister 1988 (2.1) : 397`** — a source name carrying a `.` *inside* a
@@ -292,8 +299,9 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
   comma-joined lists would let trailing comma-separated gloss content be read
   as page numbers, destabilising segment/owner alignment, so it stays out by
   design. Drops `prakaraRasama` (p), `ratnasaMBava` (r,
-  `Ensink 1964 : 156, viii`) and 3 s-section owners (`savyaBicAra`,
-  `saMSayasama`, `sADyasama`, all `TPSI 3 : …, …`).
+  `Ensink 1964 : 156, viii`), 3 s-section owners (`savyaBicAra`,
+  `saMSayasama`, `sADyasama`, all `TPSI 3 : …, …`) and `taTAgata` (t,
+  `Ensink 1964 : 73, vii`).
 - **`(pw) : 1531`** — a lowercase parenthetical source name is not matched,
   because OWNER's name class is capital-initial (the canonical `PW : 1531`
   parses); admitting lowercase parenthetical tokens would let parenthetical
