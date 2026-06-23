@@ -158,6 +158,12 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
   one `*NNN` cluster — not a new gap. Owner-map cross-check: 735 entries, 11
   `[NWS: ?]`, matching the split-preview one-for-one, 0 residual
   contamination.
+- **Full m-section deterministic split-preview** (all 6,350 m-keys → 1,425
+  NWS-bearing, 3,495 entries): **0 roman-cite bleeds**. 28 unowned = 17 benign
+  empty + 11 real (0.31%), all known limitations: 6 × Meister `(2.1)` + 4 ×
+  roman page + 1 page-less x-ref; no Böhtlingk `*NNN`/OTHER cases. Owner-map
+  cross-check: 3,495 entries, 28 `[NWS: ?]`, matching the split-preview
+  one-for-one, 0 residual contamination.
 
 ### Known limitations
 - **`Meister 1988 (2.1) : 397`** — a source name carrying a `.` *inside* a
