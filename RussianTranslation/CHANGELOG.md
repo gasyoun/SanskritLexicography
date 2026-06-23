@@ -273,6 +273,12 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
   r/s). No new classes, no OTHER left after classification. Owner-map
   cross-check: 1,968 entries, 15 `[NWS: ?]`, matching the split-preview
   one-for-one, 0 residual contamination.
+- **Full u-section deterministic split-preview** (all 2,903 u-keys → 1,126
+  NWS-bearing, 2,656 entries): **0 roman-cite bleeds**. 39 unowned = 34 benign
+  empty + 5 real (0.19%): 2 × page-less x-ref + 2 × Meister `(2.1)` + 1 ×
+  roman page; no new classes, no OTHER. Owner-map cross-check: 2,656 entries,
+  39 `[NWS: ?]`, matching the split-preview one-for-one, 0 residual
+  contamination.
 
 ### Known limitations
 - **`Meister 1988 (2.1) : 397`** — a source name carrying a `.` *inside* a
