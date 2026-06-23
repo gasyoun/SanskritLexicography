@@ -175,6 +175,17 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
   cleanest section so far (0.00% real loss; no benign empties, no known-
   limitation classes, no OTHER). Owner-map cross-check: 306 entries, 0
   `[NWS: ?]`, matching the split-preview one-for-one, 0 residual contamination.
+- **Full p-section deterministic split-preview** (all 11,095 p-keys → 2,878
+  NWS-bearing, 6,863 entries): **0 roman-cite bleeds**. 90 unowned = 73 benign
+  empty + 17 real (0.25%): 8 × page-less x-ref + 6 × Meister `(2.1)` + 2 ×
+  roman page + **1 new known-limitation class** — a multi-page citation
+  (`TPSI 3 : 19, 22` on `prakaraRasama`). The fragment's terminal owner closes
+  with a comma-joined page list, which OWNER's single-token page class
+  (`\d+[A-Za-z]?`) cannot represent, so the owner does not close the gloss and
+  is dropped — structurally the same digit-only-page cause as the roman/
+  asterisk-page limitations (single TPSI multi-page cite in the section; not a
+  typo, not a bug). Owner-map cross-check: 6,863 entries, 90 `[NWS: ?]`,
+  matching the split-preview one-for-one, 0 residual contamination.
 
 ### Known limitations
 - **`Meister 1988 (2.1) : 397`** — a source name carrying a `.` *inside* a
@@ -193,6 +204,15 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
   and reverted: like roman pages, admitting `*NNN` turns segments such as
   `Böhtlingk 1887 : *150 >` into gloss-closers and regressed `ap`/`av` to
   MISATTRIBUTION. Drops 1 c-section owner (`ci`).
+- **`TPSI 3 : 19, 22`** — a multi-page citation (comma-joined page list) is
+  not matched, because OWNER's page is a single token (`\d+[A-Za-z]?`) and the
+  owner must close the gloss; the trailing `, 22` leaves residue after `: 19`,
+  so the owner does not close and is dropped entirely. Same digit-only-page
+  family as roman/asterisk pages: broadening the page class to swallow
+  comma-joined lists would let trailing comma-separated gloss content be read
+  as page numbers, destabilising segment/owner alignment, so it stays out by
+  design. Drops 1 p-section owner (`prakaraRasama`); the only multi-page cite
+  in the section.
 - These are rare (b: 7 / 2,655 = 0.26%; c: 9 / 1,828 = 0.49%), terminal,
   and confined to a few works (Meister 1988, Walter 1893, Böhtlingk 1887);
   the safely-fixable nested/variant-paren gap is already fixed. Roman and
