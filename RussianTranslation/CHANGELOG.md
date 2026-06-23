@@ -93,6 +93,11 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
   owner-map generation are consistent. The page-less cross-reference (no
   `Name : page` cite exists) is a recurring benign category, not a parser
   gap — it also appears once in d (`duHzvapnya`).
+- **Full f-section deterministic split-preview** (all 339 f-keys [SLP1 `f`
+  = ṛ] → 156 NWS-bearing, 502 entries): **0 roman-cite bleeds, 0 real
+  losses** — the only unowned entry is a benign empty terminal segment, no
+  Meister/roman/Böhtlingk/page-less cases. Owner-map cross-check: 502 map
+  entries, exactly 1 `[NWS: ?]`, matching the split-preview one-for-one.
 
 ### Known limitations
 - **`Meister 1988 (2.1) : 397`** — a source name carrying a `.` *inside* a
