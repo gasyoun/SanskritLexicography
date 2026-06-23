@@ -32,6 +32,16 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
   card to the reading-direction owners (Geldner → Graßmann → NṚV → NṚV →
   Rivelex); all other prefix blocks verified already-correct.
 
+- `nws_split.py` OWNER trailing parenthetical now spans one level of
+  nested parens and no longer requires the `s.v.` prefix, so cites like
+  `BHSD : 154 (s.v. ekoti -(° tī -) bhūta)`,
+  `Olivelle 2015 : 391 (s.v. ṣaḍvidha (- bala))` and bare headword
+  variants `MW : 756 (bhā́s)` / `MW : 759 (bhujiṣyà)` resolve their owner
+  instead of being dropped. Found by the b-section split-preview audit;
+  `selftest` + all 10 a-section checks still CLEAN.
+- `scale_route.py` accepts any single-letter section (e.g. `b`), not just
+  `a`/`all`, emitting `scale_manifest.<letter>.json`.
+
 ### Added
 - `run_real_test.py audit` is now a true **NWS attribution gate**: a fresh
   (non-protected) card whose NWS owners disagree with the deterministic
@@ -41,6 +51,29 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
   never quarantined. Verified end-to-end (slid card → FAIL → quarantined →
   exit 1; clean card → PASS → exit 0). `selftest` + all 10 audited keys
   CLEAN.
+
+### Audited
+- **Full b-section deterministic split-preview** (all 4,613 b-keys → 971
+  NWS-bearing, 2,655 entries): **0 roman-cite bleeds** — the `av`-class
+  F12 owner slide does not occur anywhere in the b-section. After the
+  trailer-paren fix above, only 11 entries are unowned: 4 benign
+  empty-segments + 7 real losses confined to the two known-limitation
+  sources below.
+
+### Known limitations
+- **`Meister 1988 (2.1) : 397`** — a source name carrying a `.` *inside* a
+  parenthetical volume number (`(2.1)`) is not recognized as an owner,
+  because OWNER's name class excludes `.` on purpose (to stop names like
+  `Hoernle 1893-1912 (II) 30.81` / `EI Vol. XV` from swallowing whole
+  sentences — guarded by the `aMSa` selftest). Drops 4 b-section owners
+  (`BadrapIWa`, `boDimaRqa`, `BadraraTa`, `BUmiKaRqa`).
+- **`Walter 1893 : XXXII`** — a roman-numeral page is not matched, because
+  OWNER's page is digit-only. Admitting roman pages globally is what
+  destabilised the parser earlier (it turns co-owner segments into
+  gloss-closers → lemma-stuffing) and was reverted, so it stays out.
+  Drops 3 b-section owners (`brahmagranTi`, `brahmaranDra`, `brahmadvAra`).
+- Both are rare (7 / 2,655 = 0.26%), terminal, and confined to these two
+  works; the safely-fixable nested/variant-paren gap is already fixed.
 
 ## 2026-06-20
 
