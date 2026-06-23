@@ -129,6 +129,12 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
   roman-page known limitation) = 0.10%. Owner-map cross-check: 1,045
   entries, 4 `[NWS: ?]`, matching the split-preview, 0 residual
   contamination.
+- **Full j-section deterministic split-preview** (all 2,089 j-keys → 506
+  NWS-bearing, 1,207 entries): **0 roman-cite bleeds, 0 real losses** — the
+  6 unowned entries are all benign empty terminal segments, with no
+  Meister/roman/Böhtlingk/page-less cases (0.00% real loss). Owner-map
+  cross-check: 1,207 entries, exactly 6 `[NWS: ?]`, matching the
+  split-preview one-for-one, 0 residual contamination.
 
 ### Known limitations
 - **`Meister 1988 (2.1) : 397`** — a source name carrying a `.` *inside* a
