@@ -186,6 +186,20 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
   asterisk-page limitations (single TPSI multi-page cite in the section; not a
   typo, not a bug). Owner-map cross-check: 6,863 entries, 90 `[NWS: ?]`,
   matching the split-preview one-for-one, 0 residual contamination.
+- **Full q-section deterministic split-preview** (all 105 q-keys [SLP1 `q` =
+  retroflex ḍ] → 18 NWS-bearing, 42 entries): **0 roman-cite bleeds**. 2
+  unowned = 1 benign empty + 1 real, a single Meister `(2.1)`; no OTHER. The
+  2.38% real-loss rate is purely the 42-entry small base magnifying one
+  Meister cite, not a new gap. Owner-map cross-check: 42 entries, 2
+  `[NWS: ?]`, matching the split-preview one-for-one, 0 residual contamination.
+- **Full r-section deterministic split-preview** (all 2,905 r-keys → 656
+  NWS-bearing, 1,770 entries): **0 roman-cite bleeds**. 9 unowned = 8 benign
+  empty + 1 real (0.06%), the multi-page-cite known limitation again
+  (`Ensink 1964 : 156, viii` on `ratnasaMBava` — a comma-joined page list, the
+  second token a lowercase roman; single page `Ensink 1964 : 156` parses, the
+  `, viii` breaks the close). No Meister/Böhtlingk/roman/OTHER cases. Owner-map
+  cross-check: 1,770 entries, 9 `[NWS: ?]`, matching the split-preview
+  one-for-one, 0 residual contamination.
 
 ### Known limitations
 - **`Meister 1988 (2.1) : 397`** — a source name carrying a `.` *inside* a
