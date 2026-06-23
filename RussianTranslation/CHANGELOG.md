@@ -59,6 +59,10 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
   trailer-paren fix above, only 11 entries are unowned: 4 benign
   empty-segments + 7 real losses confined to the two known-limitation
   sources below.
+- **Full c-section deterministic split-preview** (all 2,366 c-keys → 719
+  NWS-bearing, 1,828 entries): **0 roman-cite bleeds**. 17 unowned = 8
+  benign empty-segments + 9 real losses, all in the known-limitation
+  sources below (8 × Meister `(2.1)`, 1 × Böhtlingk `*NNN`).
 
 ### Known limitations
 - **`Meister 1988 (2.1) : 397`** — a source name carrying a `.` *inside* a
@@ -72,8 +76,16 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
   destabilised the parser earlier (it turns co-owner segments into
   gloss-closers → lemma-stuffing) and was reverted, so it stays out.
   Drops 3 b-section owners (`brahmagranTi`, `brahmaranDra`, `brahmadvAra`).
-- Both are rare (7 / 2,655 = 0.26%), terminal, and confined to these two
-  works; the safely-fixable nested/variant-paren gap is already fixed.
+- **`Böhtlingk 1887 : *163`** — an asterisk-prefixed page is not matched,
+  because OWNER's page is digit-only. Extending it to `\*?\d+` was tried
+  and reverted: like roman pages, admitting `*NNN` turns segments such as
+  `Böhtlingk 1887 : *150 >` into gloss-closers and regressed `ap`/`av` to
+  MISATTRIBUTION. Drops 1 c-section owner (`ci`).
+- These are rare (b: 7 / 2,655 = 0.26%; c: 9 / 1,828 = 0.49%), terminal,
+  and confined to a few works (Meister 1988, Walter 1893, Böhtlingk 1887);
+  the safely-fixable nested/variant-paren gap is already fixed. Roman and
+  asterisk pages share one cause — admitting them as page tokens
+  destabilises segment/owner alignment — so both stay out by design.
 
 ## 2026-06-20
 
