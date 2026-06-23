@@ -135,6 +135,21 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
   Meister/roman/Böhtlingk/page-less cases (0.00% real loss). Owner-map
   cross-check: 1,207 entries, exactly 6 `[NWS: ?]`, matching the
   split-preview one-for-one, 0 residual contamination.
+- **Full k-section deterministic split-preview** (all 8,637 k-keys → 2,590
+  NWS-bearing, 6,530 entries — the largest section): **3 roman-cite
+  bleeds** (all `kar`, `Hillebrandt 1885 : IV`, the same g-section pattern;
+  owner stays correct and the cosmetic owner-map contamination is cleaned
+  by the `nws_owner_map` debleed — **0 residual contamination**). 39 unowned
+  = 28 benign empty + 11 real (0.17%): 6 × Meister `(2.1)`, 2 page-less
+  x-ref, 1 roman page, 1 Böhtlingk `*NNN`, all known limitations, plus **1
+  source-data typo** — `vṛtrakhādá → … NṚV 2B : 79 (s. (2. khād )` has an
+  **unbalanced** trailing parenthetical (a stray extra `(`, a digitization
+  error for `(s.v. 2. khād )`); its two sibling entries with the identical
+  owner `NṚV 2B : 79` (`amitrakhādá`, `vikhādá`) parse correctly, so this is
+  bad input, not a parser gap — admitting unbalanced parens is the kind of
+  destabilising relaxation already reverted, so no code change. Owner-map
+  cross-check: 6,530 entries, 39 `[NWS: ?]`, matching the split-preview
+  one-for-one.
 
 ### Known limitations
 - **`Meister 1988 (2.1) : 397`** — a source name carrying a `.` *inside* a
