@@ -150,6 +150,14 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
   destabilising relaxation already reverted, so no code change. Owner-map
   cross-check: 6,530 entries, 39 `[NWS: ?]`, matching the split-preview
   one-for-one.
+- **Full l-section deterministic split-preview** (all 1,464 l-keys → 286
+  NWS-bearing, 735 entries): **0 roman-cite bleeds**. 11 unowned = 6 benign
+  empty + 5 real (0.68%), all known limitations: 4 × Böhtlingk `*NNN` + 1
+  page-less x-ref; no Meister/roman/OTHER cases. The 0.68% real-loss rate is
+  the highest section so far only because the small 735-entry base magnifies
+  one `*NNN` cluster — not a new gap. Owner-map cross-check: 735 entries, 11
+  `[NWS: ?]`, matching the split-preview one-for-one, 0 residual
+  contamination.
 
 ### Known limitations
 - **`Meister 1988 (2.1) : 397`** — a source name carrying a `.` *inside* a
