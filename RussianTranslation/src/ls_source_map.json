@@ -6,7 +6,8 @@
   "genre": "Veda — Brāhmaṇa",
   "harvestable": false,
   "name": "Aitareya-Brāhmaṇa",
-  "period": "Vedic (Brāhmaṇa–Upaniṣad)"
+  "period": "Vedic (Brāhmaṇa–Upaniṣad)",
+  "renou": "I"
  },
  "AK": {
   "citations": 16156,
@@ -15,7 +16,8 @@
   "genre": "Kośa (lexicon)",
   "harvestable": false,
   "name": "Amarakośa",
-  "period": "Classical"
+  "period": "Classical",
+  "renou": "IV"
  },
  "AMAR": {
   "citations": 511,
@@ -26,7 +28,8 @@
   "genre": "Kāvya — lyric",
   "harvestable": true,
   "name": "Amaru-śataka",
-  "period": "Classical"
+  "period": "Classical",
+  "renou": "IV"
  },
  "AV": {
   "citations": 16245,
@@ -55,7 +58,8 @@
   "genre": "Veda — Saṃhitā",
   "harvestable": true,
   "name": "Atharvaveda",
-  "period": "Vedic (Brāhmaṇa–Upaniṣad)"
+  "period": "Vedic (Brāhmaṇa–Upaniṣad)",
+  "renou": "I"
  },
  "BHAG": {
   "citations": 2584,
@@ -75,7 +79,8 @@
   "genre": "Epic — Gītā",
   "harvestable": true,
   "name": "Bhagavadgītā",
-  "period": "Epic / early-Classical"
+  "period": "Epic / early-Classical",
+  "renou": "III"
  },
  "BHĀG. P": {
   "citations": 30483,
@@ -84,7 +89,8 @@
   "genre": "Purāṇa",
   "harvestable": false,
   "name": "Bhāgavata-Purāṇa",
-  "period": "Classical"
+  "period": "Classical",
+  "renou": "III"
  },
  "GĪT": {
   "citations": 1207,
@@ -104,7 +110,8 @@
   "genre": "Epic — Gītā",
   "harvestable": true,
   "name": "Bhagavadgītā",
-  "period": "Epic / early-Classical"
+  "period": "Epic / early-Classical",
+  "renou": "III"
  },
  "GĪT. GOV": {
   "citations": 0,
@@ -115,7 +122,8 @@
   "genre": "Kāvya — lyric (Jayadeva)",
   "harvestable": true,
   "name": "Gītagovinda",
-  "period": "Medieval"
+  "period": "Medieval",
+  "renou": "IV"
  },
  "H": {
   "citations": 16657,
@@ -124,7 +132,8 @@
   "genre": "Kośa (lexicon)",
   "harvestable": false,
   "name": "Hemacandra, Abhidhānacintāmaṇi",
-  "period": "Medieval"
+  "period": "Medieval",
+  "renou": "IV"
  },
  "H. an": {
   "citations": 9830,
@@ -133,7 +142,8 @@
   "genre": "Kośa (lexicon)",
   "harvestable": false,
   "name": "Hemacandra, Anekārthasaṃgraha",
-  "period": "Medieval"
+  "period": "Medieval",
+  "renou": "IV"
  },
  "HALĀY": {
   "citations": 5160,
@@ -142,7 +152,8 @@
   "genre": "Kośa (lexicon)",
   "harvestable": false,
   "name": "Halāyudha, Abhidhānaratnamālā",
-  "period": "Medieval"
+  "period": "Medieval",
+  "renou": "IV"
  },
  "HARIV": {
   "citations": 15691,
@@ -151,7 +162,8 @@
   "genre": "Epic — appendix (MBh)",
   "harvestable": false,
   "name": "Harivaṃśa",
-  "period": "Epic / early-Classical"
+  "period": "Epic / early-Classical",
+  "renou": "III"
  },
  "HIT": {
   "citations": 3845,
@@ -160,7 +172,8 @@
   "genre": "Kāvya — kathā",
   "harvestable": false,
   "name": "Hitopadeśa",
-  "period": "Medieval"
+  "period": "Medieval",
+  "renou": "IV"
  },
  "KATHĀS": {
   "citations": 25016,
@@ -169,7 +182,8 @@
   "genre": "Kāvya — kathā",
   "harvestable": false,
   "name": "Kathāsaritsāgara",
-  "period": "Medieval"
+  "period": "Medieval",
+  "renou": "IV"
  },
  "KUMĀRAS": {
   "citations": 2692,
@@ -180,7 +194,8 @@
   "genre": "Kāvya — Mahākāvya (Kālidāsa)",
   "harvestable": true,
   "name": "Kumārasambhava",
-  "period": "Classical"
+  "period": "Classical",
+  "renou": "IV"
  },
  "KĀTY. ŚR": {
   "citations": 8648,
@@ -189,7 +204,8 @@
   "genre": "Veda — Sūtra",
   "harvestable": false,
   "name": "Kātyāyana-Śrautasūtra",
-  "period": "Vedic (Brāhmaṇa–Upaniṣad)"
+  "period": "Vedic (Brāhmaṇa–Upaniṣad)",
+  "renou": "I"
  },
  "M": {
   "citations": 22575,
@@ -200,7 +216,8 @@
   "genre": "Śāstra — Dharma (Manu)",
   "harvestable": true,
   "name": "Manusmṛti",
-  "period": "Epic / early-Classical"
+  "period": "Epic / early-Classical",
+  "renou": "III"
  },
  "MBH": {
   "citations": 67238,
@@ -228,7 +245,8 @@
   "genre": "Epic — Itihāsa (MBh)",
   "harvestable": true,
   "name": "Mahābhārata",
-  "period": "Epic / early-Classical"
+  "period": "Epic / early-Classical",
+  "renou": "III"
  },
  "MED": {
   "citations": 7211,
@@ -237,7 +255,8 @@
   "genre": "Kośa (lexicon)",
   "harvestable": false,
   "name": "Medinīkośa",
-  "period": "Medieval"
+  "period": "Medieval",
+  "renou": "IV"
  },
  "MEGH": {
   "citations": 2363,
@@ -248,7 +267,8 @@
   "genre": "Kāvya — Mahākāvya (Kālidāsa)",
   "harvestable": true,
   "name": "Meghadūta",
-  "period": "Classical"
+  "period": "Classical",
+  "renou": "IV"
  },
  "MĀRK. P": {
   "citations": 6419,
@@ -257,7 +277,8 @@
   "genre": "Purāṇa",
   "harvestable": false,
   "name": "Mārkaṇḍeya-Purāṇa",
-  "period": "Classical"
+  "period": "Classical",
+  "renou": "III"
  },
  "NIR": {
   "citations": 3678,
@@ -266,7 +287,8 @@
   "genre": "Veda — Vedāṅga",
   "harvestable": false,
   "name": "Nirukta",
-  "period": "Vedic (Brāhmaṇa–Upaniṣad)"
+  "period": "Vedic (Brāhmaṇa–Upaniṣad)",
+  "renou": "I"
  },
  "P": {
   "citations": 25291,
@@ -275,7 +297,8 @@
   "genre": "Śāstra — Vyākaraṇa",
   "harvestable": false,
   "name": "Pāṇini, Aṣṭādhyāyī",
-  "period": "Vedic (Brāhmaṇa–Upaniṣad)"
+  "period": "Vedic (Brāhmaṇa–Upaniṣad)",
+  "renou": "II"
  },
  "PAÑCAT": {
   "citations": 8992,
@@ -284,7 +307,8 @@
   "genre": "Kāvya — kathā",
   "harvestable": false,
   "name": "Pañcatantra",
-  "period": "Classical"
+  "period": "Classical",
+  "renou": "IV"
  },
  "R": {
   "citations": 37806,
@@ -298,7 +322,8 @@
   "genre": "Epic — Itihāsa (Rām)",
   "harvestable": true,
   "name": "Rāmāyaṇa",
-  "period": "Epic / early-Classical"
+  "period": "Epic / early-Classical",
+  "renou": "III"
  },
  "R. GORR": {
   "citations": 7145,
@@ -312,7 +337,8 @@
   "genre": "Epic — Itihāsa (Rām)",
   "harvestable": true,
   "name": "Rāmāyaṇa (Gorresio rec.)",
-  "period": "Epic / early-Classical"
+  "period": "Epic / early-Classical",
+  "renou": "III"
  },
  "R. SCHL": {
   "citations": 246,
@@ -326,7 +352,8 @@
   "genre": "Epic — Itihāsa (Rām)",
   "harvestable": true,
   "name": "Rāmāyaṇa (Schlegel rec.)",
-  "period": "Epic / early-Classical"
+  "period": "Epic / early-Classical",
+  "renou": "III"
  },
  "RAGH": {
   "citations": 9728,
@@ -337,7 +364,8 @@
   "genre": "Kāvya — Mahākāvya (Kālidāsa)",
   "harvestable": true,
   "name": "Raghuvaṃśa",
-  "period": "Classical"
+  "period": "Classical",
+  "renou": "IV"
  },
  "RĀJA-TAR": {
   "citations": 10269,
@@ -346,7 +374,8 @@
   "genre": "Kāvya — historical",
   "harvestable": false,
   "name": "Rājataraṅgiṇī",
-  "period": "Medieval"
+  "period": "Medieval",
+  "renou": "IV"
  },
  "RĀJAN": {
   "citations": 6778,
@@ -355,7 +384,8 @@
   "genre": "Kośa (nighaṇṭu)",
   "harvestable": false,
   "name": "Rājanighaṇṭu",
-  "period": "Medieval"
+  "period": "Medieval",
+  "renou": "IV"
  },
  "SUŚR": {
   "citations": 12450,
@@ -364,7 +394,8 @@
   "genre": "Śāstra — Āyurveda",
   "harvestable": false,
   "name": "Suśruta-Saṃhitā",
-  "period": "Classical"
+  "period": "Classical",
+  "renou": "IV"
  },
  "Spr": {
   "citations": 12976,
@@ -373,7 +404,8 @@
   "genre": "Kāvya — gnomic (mixed)",
   "harvestable": false,
   "name": "Indische Sprüche (gnomic anthology)",
-  "period": "Classical"
+  "period": "Classical",
+  "renou": "IV"
  },
  "SĀH. D": {
   "citations": 4645,
@@ -382,7 +414,8 @@
   "genre": "Śāstra — poetics",
   "harvestable": false,
   "name": "Sāhityadarpaṇa",
-  "period": "Medieval"
+  "period": "Medieval",
+  "renou": "IV"
  },
  "TRIK": {
   "citations": 8819,
@@ -391,7 +424,8 @@
   "genre": "Kośa (lexicon)",
   "harvestable": false,
   "name": "Trikāṇḍaśeṣa",
-  "period": "Medieval"
+  "period": "Medieval",
+  "renou": "IV"
  },
  "TS": {
   "citations": 6189,
@@ -400,7 +434,8 @@
   "genre": "Veda — Saṃhitā",
   "harvestable": false,
   "name": "Taittirīya-Saṃhitā",
-  "period": "Vedic (Brāhmaṇa–Upaniṣad)"
+  "period": "Vedic (Brāhmaṇa–Upaniṣad)",
+  "renou": "I"
  },
  "VARĀH": {
   "citations": 123,
@@ -409,7 +444,8 @@
   "genre": "Śāstra — Jyotiṣa",
   "harvestable": false,
   "name": "Varāhamihira",
-  "period": "Classical"
+  "period": "Classical",
+  "renou": "IV"
  },
  "VARĀH. BṚH. S": {
   "citations": 14292,
@@ -418,7 +454,8 @@
   "genre": "Śāstra — Jyotiṣa",
   "harvestable": false,
   "name": "Varāhamihira, Bṛhatsaṃhitā",
-  "period": "Classical"
+  "period": "Classical",
+  "renou": "IV"
  },
  "VOP": {
   "citations": 5861,
@@ -427,7 +464,8 @@
   "genre": "Śāstra — Vyākaraṇa",
   "harvestable": false,
   "name": "Vopadeva, Mugdhabodha",
-  "period": "Medieval"
+  "period": "Medieval",
+  "renou": "II"
  },
  "VP": {
   "citations": 3677,
@@ -438,7 +476,8 @@
   "genre": "Purāṇa",
   "harvestable": true,
   "name": "Viṣṇu-Purāṇa",
-  "period": "Classical"
+  "period": "Classical",
+  "renou": "III"
  },
  "VS": {
   "citations": 6848,
@@ -447,7 +486,8 @@
   "genre": "Veda — Saṃhitā",
   "harvestable": false,
   "name": "Vājasaneyi-Saṃhitā",
-  "period": "Vedic (Brāhmaṇa–Upaniṣad)"
+  "period": "Vedic (Brāhmaṇa–Upaniṣad)",
+  "renou": "I"
  },
  "YĀJÑ": {
   "citations": 4004,
@@ -456,7 +496,8 @@
   "genre": "Śāstra — Dharma",
   "harvestable": false,
   "name": "Yājñavalkya-Smṛti",
-  "period": "Classical"
+  "period": "Classical",
+  "renou": "III"
  },
  "ŚAT. BR": {
   "citations": 20767,
@@ -465,7 +506,8 @@
   "genre": "Veda — Brāhmaṇa",
   "harvestable": false,
   "name": "Śatapatha-Brāhmaṇa",
-  "period": "Vedic (Brāhmaṇa–Upaniṣad)"
+  "period": "Vedic (Brāhmaṇa–Upaniṣad)",
+  "renou": "I"
  },
  "ŚKDR": {
   "citations": 20110,
@@ -474,7 +516,8 @@
   "genre": "Kośa (modern compilation)",
   "harvestable": false,
   "name": "Śabdakalpadruma (= SKD)",
-  "period": "Medieval"
+  "period": "Medieval",
+  "renou": "IV"
  },
  "ŚĀK": {
   "citations": 6587,
@@ -483,7 +526,8 @@
   "genre": "Kāvya — drama (Kālidāsa)",
   "harvestable": false,
   "name": "Abhijñānaśākuntala",
-  "period": "Classical"
+  "period": "Classical",
+  "renou": "IV"
  },
  "ṚV": {
   "citations": 56218,
@@ -503,6 +547,7 @@
   "genre": "Veda — Saṃhitā",
   "harvestable": true,
   "name": "Ṛgveda",
-  "period": "Ṛgvedic"
+  "period": "Ṛgvedic",
+  "renou": "I"
  }
 }
