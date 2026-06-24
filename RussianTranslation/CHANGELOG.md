@@ -10,6 +10,24 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## 2026-06-24
 
+### Freq 38-unit test TRANSLATED + glued + audited (split→translate→glue end-to-end)
+- Ran the prepped freq test (8 nouns + giant `man`, 38 units) via the Workflow tool
+  (38 Sonnet agents, ~14-way concurrency) → **38/38 translated**; `root_glue_translated.py man`
+  → **30/30 sub-cards glued, 0 pending** → `man.NESTED.md` (797 lines, correct structure:
+  Омоним 1 simple-verb → caus/desid → 18 prefixes; Омоним 2 + PW/SCH/PWKVN last). **10.5 min,
+  1.61 M tokens** (avg inflated by the 8 big nouns; `man` sub-cards median 9 output lines).
+- **Apresjan evidence-weighting validated live**: the `ava` agent used the corpus hint
+  «смотреть свысока» but rejected it as colloquial for the scholarly «презирать» (avamāna =
+  contempt); `pari` saw `evidence_scope='root-fallback'` and deferred to the German gloss.
+- **Audited.** New deterministic gate [src/audit_translation.py](src/audit_translation.py)
+  (judge-independent; complements the Opus judge + `nws_split` owner-map check): **38/38 clean**
+  — `<ls>` citations ≥90 % preserved, `{#…#}` Sanskrit ≥85 %, Russian present everywhere.
+  Semantic spot-check (3 `fact-check-against-source` agents): `anu`/`nara` PASS (NWS owner-map
+  12/12 verbatim, EN glosses from EN), `ava` substantively PASS. 2 trivial nits: `ava`
+  "ein Schol."→«один» (borderline-correct gloss prose), `nara` a Hoernle multi-cite NWS row
+  compressed (NWS guard-4 follow-up). The Opus severity judge was **not** run (translate-only,
+  to bound cost) — run separately before print-ready. Outputs gitignored.
+
 ### Frequency-first queue RUN at volume + root-split hardened + audited
 - **Freq queue runs** (`_pilot_gen_merged.py --manifest freq --root-split`): top-50 =
   40 giant roots → 2,316 single-pass sub-cards, none overflow. Two fixes unblocked the

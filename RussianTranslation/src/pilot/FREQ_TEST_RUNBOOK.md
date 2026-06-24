@@ -99,3 +99,36 @@ back — matching them needs the **sandhi-joined surface form** already computed
 [`PWG/verbs01/pwg_preverb1.txt`](https://github.com/sanskrit-lexicon/PWG/blob/master/verbs01/pwg_preverb1.txt)
 (`join_prefix_verb`). Wiring that lookup raises prefix-specific coverage; the interim hint is
 safe in the meantime.
+
+## Run log — executed 2026-06-24 (translate-only; no Opus judge)
+
+Ran via the Workflow tool (38 general-purpose Sonnet agents, ~14-way concurrency), then
+`root_glue_translated.py man`.
+
+| Metric | Value |
+|---|---|
+| Translated | **38/38** units; all `<stem>.merged.md` written |
+| Glued | `man` → **30/30 sub-cards, 0 pending** → `man.NESTED.md` (797 lines, structure correct) |
+| Wall-clock | **10.5 min** (38 units at ~14 concurrency) |
+| Tokens | **1.61 M** (avg 42.5k/unit — inflated by the 8 big nouns; `man` sub-cards median **9** output lines) |
+
+**Apresjan worked as designed.** The `ava` agent *used* the corpus hint «смотреть свысока»
+but **rejected** it as too colloquial, choosing the scholarly «презирать / относиться с
+пренебрежением» (avamāna = contempt); the `pari` agent saw `evidence_scope='root-fallback'`
+and deferred to the German gloss — exactly the weak-hint behaviour.
+
+### Audit (this run)
+- **Deterministic fidelity gate** [`src/audit_translation.py`](../audit_translation.py):
+  **38/38 clean** — `<ls>` citations preserved ≥90 % (several units even expanded `n="…"`
+  abbreviations to full), `{#…#}` Sanskrit preserved ≥85 %, Russian present in every unit.
+- **Semantic spot-check** (3 `fact-check-against-source` agents on the hardest units):
+  `anu` **PASS**, `nara` **PASS** (NWS owner-map 12/12 verbatim, EN glosses translated from
+  EN), `ava` substantively **PASS**. Two trivial nits found:
+  1. `ava`: `ein <ab>Schol.</ab>` → «один Schol.» — the gloss-prose article "ein" (= "one
+     scholiast reads…") was translated; borderline-correct, not a siglum leak.
+  2. `nara`: a Hoernle multi-citation NWS row was compressed (3 cites merged, one "physician"
+     sub-sense dropped) — relates to NWS guard 4 ("render EVERY sub-sense"); owner verbatim.
+
+**Verdict:** the split → translate → glue pipeline runs end-to-end at publishable quality;
+no overflow; format invariants hold. The Opus judge pass (severity scoring) was **not** run
+here to bound cost — run it separately on these outputs before declaring print-ready.
