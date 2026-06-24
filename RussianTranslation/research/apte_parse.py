@@ -114,8 +114,76 @@ def build():
     return n, roots, prefixed, sidecar
 
 
+DEVA_CHAIN = re.compile(r'[ऀ-ॿ]+(?:\+[ऀ-ॿ]+)+')
+
+
+def etym_chain(etym):
+    """Extract the [root, affix1, affix2, ...] Pāṇinian derivation chain from the
+    etymology field (अंश्+ण्वुल् -> ['अंश्','ण्वुल्']; final element = the deriving suffix)."""
+    m = DEVA_CHAIN.search(re.sub(r'<[^>]*>', '', etym or ''))
+    return m.group(0).split('+') if m else None
+
+
+def productivity():
+    """Two affix-productivity lenses: upasarga×root + kṛt/taddhita-suffix×root (Apte),
+    cross-listed with MWderivations' wsfx surface-suffix counts."""
+    upa, suf = {}, {}                       # upasarga(slp1)->roots ; pratyaya(deva)->roots
+    aff_iast = {}
+    for r in records(BABYLON):
+        if r['pos'] == 'D' and len(r['parse_parts']) >= 2:      # prefixed verb
+            root = r['parse_parts'][-1]
+            for u in r['parse_parts'][:-1]:
+                upa.setdefault(u, set()).add(root)
+        parts = etym_chain(r['etym'])                            # nominal derivation
+        if parts and len(parts) >= 2:
+            aff = parts[-1]                                      # the deriving (outermost) suffix
+            try:
+                aff_iast[aff] = deva_to_iast(aff)
+            except Exception:
+                aff_iast[aff] = aff
+            suf.setdefault(aff, set()).add(slp1(parts[0]))
+    # MW surface-suffix counts (a complementary lens; different key namespace)
+    mwsuf = {}
+    try:
+        import mw_deriv
+        D = mw_deriv.load()
+        for recs in D.values():
+            b = mw_deriv.best(recs)
+            if b and b['method'].startswith('wsfx'):
+                s = b['method'].split(':')[1] if ':' in b['method'] else b['method']
+                mwsuf[s] = mwsuf.get(s, 0) + 1
+    except Exception as e:
+        print('  (MW wsfx cross unavailable: %s)' % e)
+
+    up = sorted(upa.items(), key=lambda kv: -len(kv[1]))
+    sf = sorted(suf.items(), key=lambda kv: -len(kv[1]))
+    mw = sorted(mwsuf.items(), key=lambda kv: -kv[1])
+    print('Apte productivity:  %d upasargas, %d kṛt/taddhita suffixes' % (len(up), len(sf)))
+    print('  top upasargas (by # distinct roots):')
+    for u, roots in up[:15]:
+        print('    %-8s %4d roots' % (u, len(roots)))
+    print('  top Apte suffixes (pratyaya, by # distinct roots):')
+    for a, roots in sf[:15]:
+        print('    %-10s %-7s %4d roots' % (a, aff_iast.get(a, ''), len(roots)))
+    if mw:
+        print('  top MW surface-suffixes (wsfx, by count) — complementary lens:')
+        for s, c in mw[:12]:
+            print('    %-8s %5d' % (s, c))
+    with open(os.path.join(HERE, 'apte_productivity.tsv'), 'w', encoding='utf-8') as f:
+        f.write('kind\taffix\tiast\tn_distinct_roots\n')
+        for u, roots in up:
+            f.write('upasarga\t%s\t\t%d\n' % (u, len(roots)))
+        for a, roots in sf:
+            f.write('suffix\t%s\t%s\t%d\n' % (a, aff_iast.get(a, ''), len(roots)))
+    print('  wrote apte_productivity.tsv (%d upasargas + %d suffixes)' % (len(up), len(sf)))
+
+
 def main():
     cmd = sys.argv[1] if len(sys.argv) > 1 else 'demo'
+    if cmd == 'productivity':
+        if not os.path.exists(BABYLON):
+            print('missing %s' % BABYLON); return
+        productivity(); return
     if not os.path.exists(BABYLON):
         print('missing %s — fetch apte-hi.babylon from indic-dict/stardict-sanskrit' % BABYLON)
         return
