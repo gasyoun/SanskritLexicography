@@ -72,7 +72,10 @@ def main():
             'Y' if j.get('coverage_ok') else 'n', j.get('discrimination_quality', '?'),
             '; '.join('s%s:%s' % (i.get('severity'), i.get('detail', '')[:50]) for i in j.get('issues', [])[:2])))
         md = render(res)
-        out_md = os.path.join(OUT, safe_name(k) + '.merged.md')
+        # root-split sub-card keys (e.g. man~~h0_00_pwg00) are ALREADY safe stems — keep them
+        # verbatim so root_glue_translated finds <subkey>.merged.md; only headword keys get safe_name.
+        stem = k if '~~' in (k or '') else safe_name(k)
+        out_md = os.path.join(OUT, stem + '.merged.md')
         if k in PROTECTED and os.path.exists(out_md):
             print('  %s protected — kept existing %s' % (k, os.path.basename(out_md)))
         else:

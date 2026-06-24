@@ -74,17 +74,21 @@ Return ONLY the structured object.`
 const CARD = { ...FINAL_CARD_SCHEMA.$defs.card, $defs: FINAL_CARD_SCHEMA.$defs }
 const JUDGE = { ...FINAL_CARD_SCHEMA.$defs.judge, $defs: FINAL_CARD_SCHEMA.$defs }
 
+// root-split sub-card keys (man~~h0_00_pwg00, …) are ALREADY safe filename stems — use them
+// verbatim; only true headword keys get re-encoded by safeName.
+const fileOf = k => (k.includes('~~') ? k : safeName(k))
+
 phase('Translate')
 const out = await pipeline(
   CARDS,
-  k => agent(TR.replace(/KEYFILE/g, safeName(k)).replace(/KEY/g, k), { label: `tr:${k}`, phase: 'Translate', schema: CARD, model: 'sonnet' }),
+  k => agent(TR.replace(/KEYFILE/g, fileOf(k)).replace(/KEY/g, k), { label: `tr:${k}`, phase: 'Translate', schema: CARD, model: 'sonnet' }),
   (card, k) => {
     if (!card) return { key: k, card: null, judge: null }
     return agent(`You are the Opus QA judge for the pwg_ru pilot. Review this translated card against the conventions and the source.
 
 ${CONV}
 
-You may re-read the source: ${IN}\\${safeName(k)}.raw.txt and ${IN}\\${safeName(k)}.portrait.json.
+You may re-read the source: ${IN}\\${fileOf(k)}.raw.txt and ${IN}\\${fileOf(k)}.portrait.json.
 
 Check: (1) Russian correctness vs the German; (2) scholarly-philological register; (3) sigla + grammar abbreviations kept VERBATIM (not translated/transliterated) — fail sigla_kept if any ṚV./MBH./m./f. was rendered into Russian; (4) per-sense near-synonym discrimination quality (real Apresjan differentiae, not a flat list); (5) corpus evidence actually used; (6) coverage — every PWG sense rendered. severity 1=publishable … 5=broken.
 
