@@ -42,6 +42,13 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
   one `<safe>.NESTED.md` Russian article (head → prefixes by seg order; missing → pending).
   Demoed on `BU`: 3 prefix sub-cards (anu/abhi/ud) translated → glued into the 41-sub-card
   nested article, each in its slot, Sanskrit/sigla preserved. SPLIT→translate→GLUE confirmed.
+- **Head-card sense-splitter (the gate confirmed it was needed):** a single-pass translation of
+  the 820-line `bhū` HEAD overflowed the 32k-token output limit and wrote nothing. So
+  `_pilot_gen_merged.py` now splits the head into single-pass parts — simple-verb senses chunked at
+  `<div`/blank boundaries (budget 100, cap 1.5×), each supplement layer (PW/SCH/PWKVN) chunked, the
+  NWS owner map batched (25/unit); prefix sub-cards are chunked the same way. `BU` → 56 sub-cards
+  (14 head-parts + 40 prefix), **every one ≤143 lines**; `gam` → 81. PWG side stays lossless.
+  `root_glue_translated.py` orders by (seg_index, part) and labels the parts.
 - **Scale-proven:** `scale_test.py` segments **all 1,163 PWG verb roots, 100 % LOSSLESS**;
   the slicer's 8,588 prefix-divisions vs verbs01's 8,361 vetted upasargas (+227 FP gap, 159
   roots) confirm the false-positive guard is needed at scale.
