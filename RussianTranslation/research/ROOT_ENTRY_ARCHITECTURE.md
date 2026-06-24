@@ -250,9 +250,31 @@ MW glue   root=BU : 1 head + 34 preverb records assembled (0 cvi/denominal exclu
   cleanly keeps cvi/denominal `parse` forms (`kfzRI+BU`, `ekI+BU`, `a+punar+BU`) out of
   the verbal glue. Output written to `glue_mw_<root>.txt`.
 
-### Lexicalised-noun linking — spec (decided 2026-06-24, to build)
+### Lexicalised-noun linking — built + tested 2026-06-24
 
-Decisions (user): **(1) root_key = chain** — each nominal carries both its immediate
+[`lex_noun_link.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/research/lex_noun_link.py) builds the sidecar link table from PWG; `root_glue.py` consumes
+its `depth`/`is_leading_word_compound` flags to **cap** the inline nested view.
+
+```
+PWG: 123366 records scanned; 38110 linked (30.9%)  [37972 from PWG's own field, 138 morph-fallback]
+  aDiBU          root=BU base=aDi+BU   prefix_root depth=2 lwc=False  aDiBU>aDi+BU>BU
+  anuBUti        root=BU base=anu+BU   prefix_root depth=2 lwc=False  anuBUti>anu+BU>BU
+  anuBUtiprakASa root=BU base=anuBUti  compound    depth=3 lwc=True   anuBUtiprakASa>anuBUti>anu+BU>BU
+MW glue BU --links: 135 nominals inline (depth<=2, non-compound) + 87 capped (compound/deeper)
+```
+
+So **both** are realised: the table records the *full* chain (e.g.
+`anuBUtiprakASa>anuBUti>anu+BU>BU`), while `root_glue.py` nests only the direct
+derivatives (`depth<=CAP_DEPTH=2`, non-compound) under each prefix-verb base and leaves
+the leading-word compounds (`lwc=True` / deeper) to the table — matching MW's own
+"compounds under the leading word, not the root" convention.
+
+Caveats (prototype): coverage 30.9% is the *stated-derivation* family (primary nouns and
+unstated derivations stay unlinked, by design — morphology only fills 138); a few PWG
+parentheticals parse imperfectly (stray `aDi)+BU`-type base tokens) and want a tighter
+derivation grammar before production. Decisions behind the design:
+
+**(1) root_key = chain** — each nominal carries both its immediate
 prefixed base *and* the ultimate verbal root (`anuBUti → anuBU → BU`). **(2) source of
 truth = the dict's own derivation field, morphology as fallback** — parse PWG's
 parenthetical `(von {#BU#} mit {#aDi#})` / `(wie eben)` and MW's native `parse="aDi+BU"`;

@@ -44,6 +44,45 @@ UPASARGAS = {
 SLP1_ORDER = "aAiIuUfFxXeEoOMHkKgGNcCjJYwWqQRtTdDnpPbBmyrlvSzsh"
 RANK = {c: i for i, c in enumerate(SLP1_ORDER)}
 
+CAP_DEPTH = 2   # nest prefix-verb (depth2) + direct derivatives inline; cap deeper / compounds
+
+
+def load_links(path, root):
+    """Read lex_noun_link_pwg.tsv; split this root's nominals into inline-eligible vs
+    capped (leading-word compounds / depth>CAP). The table keeps the full chain either way."""
+    inline, capped = [], []
+    try:
+        with open(path, encoding='utf-8') as f:
+            head = f.readline()
+            for line in f:
+                p = line.rstrip('\n').split('\t')
+                if len(p) < 10 or p[2] != root:
+                    continue
+                row = {'hw': p[0], 'base': p[3], 'depth': int(p[7]),
+                       'lwc': p[8] == 'True', 'chain': p[9]}
+                (capped if (row['lwc'] or row['depth'] > CAP_DEPTH) else inline).append(row)
+    except FileNotFoundError:
+        return None, None
+    return inline, capped
+
+
+def report_links(root, links_path):
+    inline, capped = load_links(links_path, root)
+    if inline is None:
+        return []
+    print('  linked nominals: %d inline (depth<=%d, non-compound) + %d capped '
+          '(leading-word compound / deeper) — full chain kept in table'
+          % (len(inline), CAP_DEPTH, len(capped)))
+    out = ['<derivatives root="%s" cap_depth="%d">' % (root, CAP_DEPTH)]
+    bybase = {}
+    for r in inline:
+        bybase.setdefault(r['base'], []).append(r['hw'])
+    for base in sorted(bybase):
+        out.append('  <under base="%s">%s</under>' % (base, ' '.join(sorted(bybase[base]))))
+    out.append('  <!-- %d capped (compound/deeper) recorded in link table only -->' % len(capped))
+    out.append('</derivatives>')
+    return out
+
 
 def slp1_key(s):
     return tuple(RANK.get(c, 99) for c in s)
@@ -129,7 +168,7 @@ def read_all_records(path):
     return recs
 
 
-def glue_mw(path, root):
+def glue_mw(path, root, links_path=None):
     recs = read_all_records(path)
     heads = [r for r in recs if r['k1'] == root and r['verb'] in ('genuineroot', 'root')]
     preverbs, skipped_cvi = [], 0
@@ -149,9 +188,11 @@ def glue_mw(path, root):
         out.extend(r['lines'])
     for r in preverbs:
         out.extend(r['lines'])
-    out.append('</NESTED>')
     print('MW glue   root=%s : %d head + %d preverb records assembled (%d cvi/denominal forms excluded)'
           % (root, len(heads), len(preverbs), skipped_cvi))
+    if links_path:
+        out.extend(report_links(root, links_path))
+    out.append('</NESTED>')
     print('  nested order: ' + ' '.join(r['parse'] for r in preverbs[:18]) + (' ...' if len(preverbs) > 18 else ''))
     # write the assembled article for inspection
     fileout = 'glue_mw_%s.txt' % root
@@ -171,7 +212,10 @@ if __name__ == '__main__':
             pv = sys.argv[sys.argv.index('--preverb') + 1]
         ok = glue_pwg(path, L, pv)
     elif mode == 'mw':
-        ok = glue_mw(path, sys.argv[3])
+        links = None
+        if '--links' in sys.argv:
+            links = sys.argv[sys.argv.index('--links') + 1]
+        ok = glue_mw(path, sys.argv[3], links)
     else:
         print('mode must be pwg or mw'); sys.exit(2)
     sys.exit(0 if ok else 1)
