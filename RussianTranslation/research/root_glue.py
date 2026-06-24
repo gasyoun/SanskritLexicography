@@ -168,7 +168,9 @@ def read_all_records(path):
     return recs
 
 
-def glue_mw(path, root, links_path=None):
+def collect_mw_preverbs(path, root):
+    """-> (head records, preverb records sorted by parse, #cvi/denominal excluded).
+    Shared by glue_mw and root_merge so the MW collection lives in one place."""
     recs = read_all_records(path)
     heads = [r for r in recs if r['k1'] == root and r['verb'] in ('genuineroot', 'root')]
     preverbs, skipped_cvi = [], 0
@@ -183,6 +185,11 @@ def glue_mw(path, root, links_path=None):
         else:
             skipped_cvi += 1
     preverbs.sort(key=lambda r: parse_sort_key(r['parse']))
+    return heads, preverbs, skipped_cvi
+
+
+def glue_mw(path, root, links_path=None):
+    heads, preverbs, skipped_cvi = collect_mw_preverbs(path, root)
     out = ['<NESTED root="%s">' % root]
     for r in heads:
         out.extend(r['lines'])
