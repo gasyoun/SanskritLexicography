@@ -19,3 +19,15 @@ MW, GRA, SCH; AP90/FRI = print front-matter); entry files in `csl-orig/v02/<dict
 method · output table · preliminary priors), runnable in a fresh chat or by an agent —
 the project's handoff idiom (cf. `src/NWS_AUDIT_HANDOFF.md`). Findings feed back into the
 merged-translate prompt + the (to-build) root segmenter/glue before scaling.
+
+
+## Spawned as handoff chats (2026-06-23)
+Each brief was spun off as its own cold background-task chat (one click to start in a
+fresh worktree):
+- **A — root architecture** → `task_740ea467`
+- **B — sense ordering** → `task_2242dc13`
+- **C — microstructure conventions** → `task_9b9ce8db`
+
+Each chat reads its brief, the OCRed prefaces, and probe entries from `csl-orig/v02/`,
+appends a `## RESULTS` section to its doc, and commits. Findings then fold into the
+merged-translate prompt + the root segmenter/glue **before** the translation scale-up.
