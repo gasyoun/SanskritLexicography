@@ -116,6 +116,55 @@ audit ([`research/HANDOFF_sense_ordering.md`](../research/HANDOFF_sense_ordering
   model — eliminating stratum-guess error the same way the pre-parsed NWS owner map
   eliminated F12. Tracked as a follow-up, not yet wired.
 
+## Microstructure & apparatus rules (added 2026-06-24 — grounds: studies A33 + microstructure C + apparatus)
+
+Additive policy folding in the three convention studies
+([`research/HANDOFF_microstructure_conventions.md`](../research/HANDOFF_microstructure_conventions.md),
+[`research/HANDOFF_apparatus_conventions.md`](../research/HANDOFF_apparatus_conventions.md),
+[`research/HANDOFF_sense_ordering.md`](../research/HANDOFF_sense_ordering.md)). Verdict on every
+axis: **PWG is the structural spine; Kochergina is the Russian-rendering model; never let a
+later layer or Koch override PWG content.** Each rule below is keep / adapt / drop.
+
+**Structural conventions (study C).**
+1. **Homonyms — KEEP PWG's numbered split** (the `h` field). Carry PWG's `<h>1/2` as the record's
+   `h`, split on PWG's etymology/POS basis. When PW *collapses* a PWG homonym (e.g. `aMSa` 1/2 →
+   single + `aMsa`), keep PWG's finer split and note PW's collapse — do not inherit PW's single entry.
+2. **Gloss — default to PWG's mixed equivalent + толкование.** Lead with a terse Russian equivalent,
+   add a толкование where the equivalent is anisomorphic (Apresjan *требования к толкованиям*). Tag
+   each sense `equivalence_type` = `equivalent` | `explanatory`. DROP MW's pile-of-synonyms habit —
+   discriminate near-synonyms from `corpus_synonyms` instead (existing guard).
+3. **Citation — KEEP the two-source `source_type`** (`attested` vs `lexicographic`, already in force).
+   Density follows the layer: PWG full citations are the spine; PW/SCH cites are *supplements keyed to
+   PWG*; treat GRA's exhaustive per-occurrence lists as collapsible (count + first cite). Flag SCH's
+   inherited Böhtlingk cites as 1889-vintage, never re-verify them.
+4. **Run-on — SPLIT for translation, GLUE for display.** Derivatives/compounds are their own
+   translatable cards (PWG/PW idiom); reassemble into a MW-style nest only at display. Keep PWG's
+   parenthetical etymology as the glue key. See [`ROOT_ENTRY_ARCHITECTURE.md`](../research/ROOT_ENTRY_ARCHITECTURE.md).
+
+**Apparatus conventions (apparatus study).**
+5. **Government / rekcija — NEW `government` sense field, rendered in the Kochergina idiom.** Where a
+   sense governs a case/preposition, fill `government` like Koch: `+ Acc. (ради, для)`, `с Instr.`,
+   `Abl. (по причине)`. Derive from PWG/PW case-`<ab>` tokens (PW alone carries ~14,420). Empty when
+   nothing is governed. This is the integral grammar↔entry link (Apresjan pillar 1).
+6. **Labels / diasystem — NEW `labels` sense field, Koch's Russian abbreviation set.** Map PWG `<ab>`
+   (`N. pr.`→`nom. pr.`, `patron.`, `Bein.`) and AP90 bracketed domain markers onto Koch's vocabulary
+   (`грам./миф./бот./мед./астр./филос./юр.`). Chronology does NOT go here — that is the `stratum`/`renou`
+   fields (rule from study A33). DROP register/style back-fill from the 19th-c. dicts (effectively
+   absent: PWG 0.2 %, PW 0, MW 3 tokens) — only Koch carries a thin register set, treat as optional.
+7. **Etymology — KEEP PWG's `(von X)` derivation, translated** into the `notes`/inline gloss
+   (`(von {#aMSa#} {%Schulter%})` → `(от {#aMSa#} «плечо»)`). DROP comparative-IE amplification — PWG's
+   own preface assigns risky etymology to the big dictionary, not a learner-facing one. An AP90-style
+   `[prakṛti+pratyaya]` bracket is an optional future enhancement, not required.
+8. **Cross-references — KEEP & translate the pointer token** (`Vgl.`→«ср.», `S. u.`→«см.»). Capturing
+   them as a typed, sense-numbered relations layer (Koch's `см. <lemma> N)` model; kośa co-citations →
+   near-synonym sets) is a **follow-up SKOS layer**, not part of this prompt. DROP a dedicated antonymy
+   schema (too sparse: `Gegens.`/`opp.`/`противоп.` are rare and inline).
+
+**Schema.** Rules 5–6 add two OPTIONAL fields to
+[`schemas/pwg_ru_final_card.schema.json`](../schemas/pwg_ru_final_card.schema.json) — `sense.government`
+(string) and `sense.labels` (array of Koch label strings) — validated when present by
+[`validate_final_card_schema.py`](../src/validate_final_card_schema.py); existing cards stay valid.
+
 ## Pilot result (baseline)
 - `anna` — re-pass severity **3 → 2** (publishable after light edits): guards 1–2 fixed the
   editorial-intent/[new] meta-claims; discrimination re-grounded in corpus candidates; m./n.
