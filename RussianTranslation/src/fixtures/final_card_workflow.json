@@ -17,7 +17,9 @@
                 "equivalence_type": "equivalent",
                 "source_type": "attested",
                 "stratum": "Vedic",
-                "differentia": "вода — основной корпусный перевод во всех стратах; влага сохраняется для оттенка Feuchtigkeit."
+                "differentia": "вода — основной корпусный перевод во всех стратах; влага сохраняется для оттенка Feuchtigkeit.",
+                "government": "",
+                "labels": []
               },
               {
                 "tag": "2",
@@ -26,7 +28,9 @@
                 "equivalence_type": "equivalent",
                 "source_type": "lexicographic",
                 "stratum": "",
-                "differentia": ""
+                "differentia": "",
+                "government": "",
+                "labels": ["астр."]
               }
             ]
           }

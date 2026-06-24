@@ -164,6 +164,15 @@ def validate_sense(sense, where):
         fail('%s bad equivalence_type: %r' % (where, sense.get('equivalence_type')))
     if sense.get('source_type') not in SOURCE_TYPES:
         fail('%s bad source_type: %r' % (where, sense.get('source_type')))
+    # Optional apparatus fields (added 2026-06-24, apparatus study). Validated
+    # only when present, so existing cards stay valid.
+    if 'government' in sense:
+        need_str(sense, 'government', where)
+    if 'labels' in sense:
+        need_list(sense, 'labels', where)
+        for k, lab in enumerate(sense['labels']):
+            if not isinstance(lab, str) or not lab:
+                fail('%s.labels[%d] must be a non-empty string' % (where, k))
 
 
 def validate_card(card):
@@ -241,6 +250,14 @@ def cmd_selftest():
     for sense in no_nonempty_diff['card']['records'][0]['senses']:
         sense['differentia'] = ''
     cases.append(('strong discrimination without differentia', no_nonempty_diff))
+
+    bad_labels = copy.deepcopy(base)
+    bad_labels['card']['records'][0]['senses'][0]['labels'] = 'астр.'
+    cases.append(('labels not a list', bad_labels))
+
+    bad_government = copy.deepcopy(base)
+    bad_government['card']['records'][0]['senses'][0]['government'] = ['+ Acc.']
+    cases.append(('government not a string', bad_government))
 
     for name, bad in cases:
         try:

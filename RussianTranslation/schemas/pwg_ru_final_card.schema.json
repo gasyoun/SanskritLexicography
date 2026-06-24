@@ -83,6 +83,16 @@
           "type": "string",
           "description": "Apresjan near-synonym discrimination note, or empty when no discrimination was needed."
         },
+        "government": {
+          "type": "string",
+          "description": "OPTIONAL. The rekcija / government pattern of this sense rendered in the Kochergina idiom — the case(s)/preposition frame the word takes, e.g. '+ Acc. (ради, для)', 'с Instr.', 'Abl. (по причине)'. Derived from PWG/PW case-<ab> tokens + the Koch model. Empty/absent when the sense governs nothing. Grounds: apparatus study Dimension 1."
+        },
+        "labels": {
+          "type": "array",
+          "items": { "type": "string" },
+          "uniqueItems": true,
+          "description": "OPTIONAL. Diasystem / domain labels in the Kochergina Russian abbreviation set (e.g. грам., миф., бот., мед., астр., филос., юр., воен., поэт., nom. pr.). Maps PWG <ab>/AP90 bracketed domain markers onto Koch's vocabulary. Chronology is NOT carried here — that is the separate Renou stratum/renou fields. Empty/absent when no domain applies. Grounds: apparatus study Dimension 2."
+        },
         "renou": {
           "type": "array",
           "items": { "enum": ["I", "II", "III", "IV", "V"] },
