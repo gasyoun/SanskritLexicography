@@ -334,3 +334,46 @@ DECISION section). That integration — plus the per-gloss `keep`-list alignment
 is the only thing between this prototype and running the frequency-first queue, whose top is
 exactly these giant roots (`freq_route.py`: #1 sthā, #2 bhū, #3 gam …). Tracked as the next
 build; the slicer/glue themselves need no further work.
+
+---
+
+## RESOURCES (provided by user 2026-06-24) — use, don't reinvent
+
+Two external resources were provided so the root/compound splitting reuses existing
+authoritative work instead of the prototype's home-grown parsers. Both vendored
+(gitignored) under [`external/`](https://github.com/gasyoun/SanskritLexicography/tree/master/RussianTranslation/research/external); re-fetch from the URLs below.
+
+### 1. [`funderburkjim/MWderivations`](https://github.com/funderburkjim/MWderivations) — the authoritative MW derivation/samāsa analysis
+
+Same author as `verbs01`, so it dovetails. The prize is `step4/analysis2.txt`
+(**220,248 rows**, ~95 % resolved): every MW headword with its `parse` (hyphen/`+`-split
+members) and a `method` code that **already classifies the derivation** —
+`pfx1/pfx2:<upa>` (prefixed verb), `cpd1-5`/`srs` (compound), `wsfx:<suffix>` (word+affix),
+`noparts` (primary). [`mw_deriv.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/research/mw_deriv.py) reads it into an oracle:
+
+```
+193892 distinct MW headwords -> compound 114444 · primary 32593 · preverb 12899 · suffix 6396 · unresolved 27560
+BU primary · anuBU/aBiBU preverb (anu-BU/aBi-BU) · aMSaBU/aMSaBUta compound · aBiBava preverb (aBi-Bava)
+```
+
+This **replaces the faked PWG-parenthetical compound/derivation parser on the MW side**
+of [`lex_noun_link.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/research/lex_noun_link.py) (the `aDi)+BU` mis-parse class) and feeds `root_glue.py`'s MW
+preverb split. Cross-check result: `MWderivations/compounds/compounds.txt` is **byte-
+identical** to [`WhitneyRoots/MW_compounds_12610.txt`](https://github.com/sanskrit-lexicon/WhitneyRoots/blob/master/MW_compounds_12610.txt) — the WhitneyRoots file is a vendored
+copy, so "combine both" collapses to **one** source (`analysis2.txt` is the superset; the
+per-leading-word `compounds.txt` is derivable from it).
+
+### 2. [`indic-dict/stardict-sanskrit … apte-hi`](https://github.com/indic-dict/stardict-sanskrit/tree/master/sa-head/other-indic-entries/apte-hi) — Apte Sanskrit–Hindi (genuinely new here)
+
+A 19.6 MB StarDict `.babylon` (only `AP90` S–E and `ApteES` existed locally — no S–H).
+Format: blank-line-separated records, line 1 = `headword|synonyms` (Devanāgarī), line 2 =
+`हेडवर्ड<br>POS \t H-code \t - \t POS-tag(NS/AV) \t etymology(रूट+affix)<br>Hindi gloss`.
+Four roles agreed (all): **(a) root oracle** via the `अव्+ड`-style etymology field
+(augments `verbs01`'s PWG→MW root map); **(b) 3rd SPLIT/NESTED datapoint** (a new row in
+the comparison table); **(c) Hindi gloss** as an independent non-DE/EN sense cross-check;
+**(d) compound splitting**. Needs Devanāgarī→SLP1 transcode (use `sanskrit-util`) before
+keying against the SLP1 pipeline — that parser is the next build for this resource.
+
+**Net effect on the plan:** the MW compound/derivation side is now *solved upstream* (use
+`mw_deriv.py`); the home-grown linker stays only for **PWG** (which `MWderivations` doesn't
+cover) and as a fallback. Apte S–H integration (transcode + 4 roles) is queued.
