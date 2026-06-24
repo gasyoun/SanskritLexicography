@@ -10,6 +10,34 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## 2026-06-24
 
+### Renou tag validation + DCS over-tag min-support fix
+- **Validation by inter-signal agreement** (no human labels): new
+  [src/renou_audit.py](src/renou_audit.py) cross-tabulates the four provenance
+  signals per dictionary, treats `<ls>` (the lexicographer's citation) as the trusted
+  anchor, and quantifies the dominant accuracy risk — `dcs` over-tagging. The DCS index
+  is keyed by bare lemma, so homographs collapse to one entry carrying the *union* of
+  all eras (`akāra`, the letter, inherited I–V), and the tagger kept only the state list
+  — a one-text state was indistinguishable from a hundred-text one. Findings:
+  `dcs`-widening is the dominant disagreement (MW 52 %, BEN 76 %, AP90 79 % of both-
+  signal entries) and 42–90 % of `dcs` assertions are uncorroborated by `ls`/`bhs`.
+  Report → gitignored `src/renou_audit_report.md`.
+- **The fix (applied):** [src/build_dcs_renou.py](src/build_dcs_renou.py) now records
+  lossless per-state `state_support` `{n_texts, best_confidence}`, and
+  `renou.filter_dcs_states()` ([src/renou.py](src/renou.py)) applies the policy at
+  *tagger* time (tunable, no rescan): **keep a `dcs` state iff ≥`DCS_MIN_SUPPORT` (=2)
+  texts OR ≥1 confidently-typed text** (authoritative DCS genre / curated Buddhist–
+  grammar name hint). Wired into `tag_dict_from_source.py` / `tag_mw_from_source.py`
+  (`--dcs-min-support N`). Effect: **9.9 % of `dcs` state-assignments pruned** (14.8 %
+  of lemmas) — almost all spurious **IV** (9,736; the `date≥400` fallback bucket) and
+  **I** (2,923); **0 state-II / 0 state-V** dropped (those come only from typed
+  Vyākaraṇa / Buddhist texts, so the curated signal is untouched). The residual
+  `ca`/`idam`/`akāra` = I–V breadth is *not* pruned — it is corpus-accurate (high-conf
+  support in every era), merely uninformative → a display concern, not an error.
+- Index + all 8 `{code}.renou.jsonl` regenerated; [RENOU.md](RENOU.md) gained a
+  Validation section + refreshed post-policy coverage table. The `wl` (wisdomlib) layer
+  was reconstructed losslessly from surviving intermediates (V-by-source `wl` counts
+  match the originals exactly). Shipped in `ecc7bb9` (core) + `9666591` (docs/audit).
+
 ### Root-entry segmenter suite (the giant-root fix) + external resources
 - **The structural fix for "translation pass dies on bhū/vid":** a root mega-record is now
   split into per-prefix sub-cards and gluable back. Built one at a time in
