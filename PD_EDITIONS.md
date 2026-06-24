@@ -20,6 +20,15 @@ thesaurus that arranges each word's senses **in chronological order of attestati
 | Coverage *now* | the digitized published volumes — **currently more matter online** than KoshaSHRI | newer portal; **less matter exposed so far** (per observation 2026-06-24) |
 | Growth | fixed snapshot of what was digitized | the **live editorial project** — grows as new volumes/edits land |
 
+## Local copy — already downloaded, do NOT re-fetch from Cologne
+
+The CDSL PDScan text is **already on disk** (downloaded in another session):
+[`SanskritSpellCheck/external_src/pd/pd.txt`](../SanskritSpellCheck/external_src/pd/pd.txt)
+— 55 MB, **107,630 `<L>` records**, 879,172 lines, standard csl `<L>/<k1>/<k2>/<h>` markup
+(header: *DFG-Sanskrit-Projekt 2010, PD1-8_FINAL, 2011-10-14*). Use this copy; do not
+re-download from `sanskrit-lexicon.uni-koeln.de`. (The `SanskritSpellCheck/o_vs_O/output/PD.txt`
+files are detector outputs, not the source.)
+
 ## Differences that matter for our use
 
 - **Same source dictionary, two digitizations.** They are not different works; they are
