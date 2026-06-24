@@ -66,6 +66,11 @@ def glue(root, outdir):
                 head = '## NWS — словник источников (%s)' % sec
             else:
                 head = '## Простой глагол (корень {#%s#})' % root
+        elif s['kind'] == 'secondary':
+            # caus./desid./intens./partic. of the SIMPLE root — its own derived stem, NOT a
+            # prefixed verb. Belongs with the simple verb, never under the last prefix.
+            lab = s.get('label') or s.get('section') or 'вторичная основа'
+            head = '## Вторичная основа корня {#%s#}: %s' % (root, lab)
         else:
             head = '## {#%s#}-{#%s#}  (приставка %s)' % (s['upasarga'], root, s['upasarga'])
         parts.append(head)
