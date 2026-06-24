@@ -82,6 +82,12 @@ def parse_derivation(line):
     return None
 
 
+def clean(s):
+    """Keep only SLP1 letters (+ the * variant marker); kills stray ')' / digits / spaces
+    that leak from imperfect derivation parentheses (the aDi)+BU mis-parse class)."""
+    return re.sub(r'[^A-Za-z*]', '', s or '')
+
+
 def strip_upasarga(k1, rootset):
     for u in UPASARGAS:
         if k1.startswith(u) and len(k1) > len(u):
@@ -136,13 +142,16 @@ def main(path, rootspath):
                        'dtype': 'prefix_root', 'src': 'morph', 'depth': 2,
                        'lwc': False, 'chain': [k1, '%s+%s' % (u, r), r]}
         elif d['type'] == 'prefix_root':
-            r, u = d['base'], d['upa']
+            r, u = clean(d['base']), clean(d['upa'])
+            if not r or not u:
+                memo[k1] = None
+                return None
             res = {'root': r, 'base': '%s+%s' % (u, r), 'upa': u,
                    'dtype': 'prefix_root', 'src': 'pwg', 'depth': 2,
                    'lwc': False, 'chain': [k1, '%s+%s' % (u, r), r]}
         elif d['type'] in ('derived', 'xref'):
-            X = d['base']
-            sub = resolve(X, seen)
+            X = clean(d['base'])
+            sub = resolve(X, seen) if X else None
             if sub:
                 res = {'root': sub['root'], 'base': X, 'upa': sub['upa'],
                        'dtype': d['type'], 'src': 'pwg', 'depth': sub['depth'] + 1,
@@ -151,8 +160,8 @@ def main(path, rootspath):
                 res = {'root': X, 'base': X, 'upa': '', 'dtype': d['type'],
                        'src': 'pwg', 'depth': 1, 'lwc': False, 'chain': [k1, X]}
         elif d['type'] == 'compound':
-            for mem in d['members']:
-                sub = resolve(mem, seen)
+            for mem in [clean(m) for m in d['members']]:
+                sub = resolve(mem, seen) if mem else None
                 if sub:
                     res = {'root': sub['root'], 'base': mem, 'upa': sub['upa'],
                            'dtype': 'compound', 'src': 'pwg', 'depth': sub['depth'] + 1,
