@@ -89,11 +89,11 @@ def audit_dict(path, dcs_index):
                 st['dcs_only_state'] += 1
                 st['dcs_only_by_state'][s] += 1
 
-        # over-tag load + suspect ranking, via the lemma's breadth/frequency
+        # over-tag load + suspect ranking. breadth = the entry's *emitted* dcs span
+        # (post-policy); n_texts comes from the lemma index for frequency ranking.
         info = dcs_index.get(e.get('iast', ''))
-        breadth = len(info['renou']) if info else len(dcs)
         n_texts = info['n_texts'] if info else 0
-        if breadth == 5 and dcs:
+        if len(dcs) == 5:
             st['inherit_5state_lemma'] += 1
         # a suspect: dcs widens a *tight* ls span (<=2 eras) to a broad one (>=4),
         # on a high-frequency lemma — the homograph/register-inflation signature.
@@ -102,7 +102,7 @@ def audit_dict(path, dcs_index):
             st['suspects'].append({
                 'hw': clean_hw(e.get('key2') or e.get('iast')),
                 'ls': sorted(ls, key=_ORDER.get), 'dcs': sorted(dcs, key=_ORDER.get),
-                'added': added, 'n_texts': n_texts, 'breadth': breadth,
+                'added': added, 'n_texts': n_texts,
             })
     # dedup suspect rows by (headword, ls→dcs pattern); count affected entries
     # (a frequent headword like `ca` recurs once per sense — collapse to one row).
@@ -150,7 +150,7 @@ def render(stats, n_suspects):
     L += ['', '## dcs state-assignments by corroboration', '',
           'Every (entry, state) pair `dcs` asserts: is that state also backed by `<ls>`',
           '(or `bhs` for V)? `dcs-only` states are unverified by any other signal.', '',
-          '| Dict | dcs states | corroborated | dcs-only | dcs-only I·II·III·IV·V | entries inheriting a 5-state lemma |',
+          '| Dict | dcs states | corroborated | dcs-only | dcs-only I·II·III·IV·V | entries tagged all 5 states |',
           '|---|--:|--:|--:|---|--:|']
     for s in stats:
         t = s['dcs_state_total']
