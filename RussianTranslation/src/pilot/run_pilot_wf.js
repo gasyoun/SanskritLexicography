@@ -29,7 +29,7 @@ const safeName = k => [...k].map(c => {
 // if the manifest can't be read (e.g. scale_route hasn't run, or no fs access).
 const SECTION = 'a'
 const OFFSET = 0
-const LIMIT = 10
+const LIMIT = 50
 const FALLBACK = ['arTa', 'agni', 'amfta', 'anna', 'aNga', 'akzara', 'anta', 'antarikza',
                   'ap', 'anya', 'apara', 'arjuna', 'anaGa', 'antar', 'api']
 let CARDS
