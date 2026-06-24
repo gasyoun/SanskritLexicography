@@ -91,6 +91,31 @@ judge with the parse rule explicitly and have it disambiguate by an independent 
 
 **Owner-map feed (F12 eliminated by construction, 2026-06-23).** `_pilot_gen_merged.py` now appends an AUTHORITATIVE "PRE-PARSED OWNER MAP" (deterministic `nws_split` triples) to each card's NWS layer; the translator emits one row per entry with the owner VERBATIM and never re-derives owners. Validated: `ās` went MISATTRIBUTION (3 owner-swaps) → **CLEAN** (0 mismatches). Workflow HARD RULE 5 updated to consume the map.
 
+## Sense-order policy & stratum badge (added 2026-06-24 — grounds: study A33)
+
+Additive policy, not a change to the seven guards. Settled by the quantified sense-ordering
+audit ([`research/HANDOFF_sense_ordering.md`](../research/HANDOFF_sense_ordering.md),
+[`sense_order_metrics.md`](../research/sense_order_metrics.md)):
+
+- **ORDER — render senses in PWG MAIN's PRINTED order** (the `<div>` numbering), verbatim.
+  **NEVER re-sort senses** by frequency, by attestation date, or by anything else. The
+  frequency-first pivot reorders the *translation queue* (which headwords are done first),
+  **not** the senses inside a card. Why it matters: PWG's order is *etymological-genetic*,
+  not historical — its sense 1 is the oldest-attested only **73.5 %** of the time (Kendall
+  τ = 0.375), so a date/frequency re-sort would change the lead sense for **~1 entry in 4**
+  and fight the source. Faithfulness to PWG's editorial order wins; chronology and frequency
+  are *lenses laid over* that order, never replacements for it.
+- **STRATUM BADGE (the «страт» column) = display metadata, never a reordering key.** Fill it
+  from the sense's OWN cited sources: floor = Renou state of the *oldest* citation, ceiling =
+  the *youngest* (e.g. ṚV + Manu → "Vedic–Classical"). Renou states: **I** ведийский · **II**
+  паниниевский · **III** эпический · **IV** классический · **V** буддийско-джайнский. A sense
+  with only kośa/grammarian citations (`lexicographic`) → «–».
+- **Optional hardening (mirrors the F12 owner-map).** The per-sense stratum can be
+  *precomputed deterministically* from `ls_source_map.json` (every `<ls>` siglum already
+  carries a Renou state + date) and fed to the translator, instead of being inferred by the
+  model — eliminating stratum-guess error the same way the pre-parsed NWS owner map
+  eliminated F12. Tracked as a follow-up, not yet wired.
+
 ## Pilot result (baseline)
 - `anna` — re-pass severity **3 → 2** (publishable after light edits): guards 1–2 fixed the
   editorial-intent/[new] meta-claims; discrimination re-grounded in corpus candidates; m./n.
