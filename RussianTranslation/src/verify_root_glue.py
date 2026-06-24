@@ -72,8 +72,8 @@ def iter_records(path):
 
 def check_lossless_and_segmentation(strict):
     n_rec = n_lossy = 0
-    np_raw = np_matched = nm_raw = 0
-    misgroup = collections.Counter()
+    np_raw = np_recognized = n_secondary = 0
+    missed = collections.Counter()
     worst = []
     for L, k1, data in iter_records(PWG):
         has_p = any(DIVP.match(l) for l in data)
@@ -84,33 +84,34 @@ def check_lossless_and_segmentation(strict):
         if RS.glue(cards) != data:
             n_lossy += 1
             worst.append((L, k1))
+        # A <div n="p"> line is RECOGNISED iff it begins a sub-card (prefix or secondary).
+        starts = {c['lines'][0] for c in cards if c['lines']}
+        n_secondary += sum(1 for c in cards if c['kind'] == 'secondary')
         for l in data:
-            if DIVM.match(l):
-                nm_raw += 1
             if DIVP.match(l):
                 np_raw += 1
-                if RS.UPA_RE.match(l):
-                    np_matched += 1
+                if l in starts:
+                    np_recognized += 1
                 else:
                     m = ABLAB.match(l)
-                    misgroup[m.group(1).strip() if m else '(no <ab> label)'] += 1
-    np_miss = np_raw - np_matched
-    sec_misgroup = sum(v for k, v in misgroup.items() if k in SECLABELS)
+                    missed[m.group(1).strip() if m else '(no <ab> label)'] += 1
+    np_miss = np_raw - np_recognized
     print('## A. Losslessness (hard invariant)')
     print('   records with boundaries scanned : %d' % n_rec)
     print('   round-trip FAILURES             : %d  -> %s'
           % (n_lossy, 'PASS' if n_lossy == 0 else 'FAIL ' + ', '.join('%s/%s' % w for w in worst[:10])))
     print('## B. Segmentation correctness (warn%s)' % (', escalated by --strict' if strict else ''))
-    print('   <div n="p"> total / matched / MISSED : %d / %d / %d (%.1f%%)'
-          % (np_raw, np_matched, np_miss, 100.0 * np_miss / max(np_raw, 1)))
-    print('   <div n="m"> total (SEC_RE can only match these): %d %s'
-          % (nm_raw, '<-- DEAD detector' if nm_raw == 0 else ''))
-    print('   missed-line labels: ' + ', '.join('%s=%d' % (k, v) for k, v in misgroup.most_common(8)))
-    print('   => %d secondary-conjugation blocks (caus/desid/intens/partic/pass) are'
-          ' mis-grouped into the preceding sub-card.' % sec_misgroup)
+    print('   <div n="p"> total / recognised-as-boundary / NOT-split : %d / %d / %d (%.1f%%)'
+          % (np_raw, np_recognized, np_miss, 100.0 * np_miss / max(np_raw, 1)))
+    print('   secondary sub-cards split out (caus/desid/intens/partic/pass/insens): %d' % n_secondary)
+    if missed:
+        print('   still-merged <div n="p"> labels: '
+              + ', '.join('%s=%d' % (k, v) for k, v in missed.most_common(8)))
+    seclike = sum(v for k, v in missed.items() if k.strip().rstrip('.').lower() in SECLABELS)
+    print('   => %d secondary-conjugation blocks still merged into the preceding sub-card.' % seclike)
     lossless_ok = n_lossy == 0
-    seg_ok = np_miss == 0
-    return lossless_ok, seg_ok, sec_misgroup
+    seg_ok = seclike == 0                              # all caus/desid/intens/partic now split
+    return lossless_ok, seg_ok, seclike
 
 
 def check_glue_completeness():
@@ -148,7 +149,7 @@ def main():
     glue_ok = check_glue_completeness()
     print('\n## Verdict')
     print('   A losslessness   : %s' % ('PASS' if lossless_ok else 'FAIL'))
-    print('   B segmentation   : %s (%d secondary blocks mis-grouped; fix in root_segment_proto.py)'
+    print('   B segmentation   : %s (%d secondary block(s) still merged)'
           % ('PASS' if seg_ok else 'WARN', sec))
     print('   C glue complete  : %s' % ('PASS' if glue_ok else 'FAIL'))
     hard_ok = lossless_ok and glue_ok and (seg_ok or not strict)

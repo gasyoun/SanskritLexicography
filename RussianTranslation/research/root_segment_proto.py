@@ -25,6 +25,13 @@ sys.stderr.reconfigure(encoding='utf-8')
 
 UPA_RE = re.compile(r'^<div n="p">\s*—\s*(?:Mit\s*)?\{#([*]?[a-zA-Z]+)#\}')
 SEC_RE = re.compile(r'^<div n="m">.*?<ab>(Caus\.|Desid\.|Intens\.)</ab>')
+# Real PWG never uses <div n="m"> (0 occurrences); the secondary stems of the SIMPLE root
+# — causative/desiderative/intensive/participle/passive — are encoded as
+#   <div n="p">— <ab>caus.</ab> {#BAvayati#}
+# i.e. a <div n="p"> whose first token is an <ab> label, NOT a {#upasarga#}. These do NOT
+# belong to the preceding prefixed verb, so they must start their OWN sub-card.
+SEC_DIVP_RE = re.compile(r'^<div n="p">\s*—?\s*<ab>([^<]+)</ab>')
+SEC_LABELS = {'caus', 'desid', 'intens', 'partic', 'pass', 'insens'}
 
 
 def read_record(path, L):
@@ -50,12 +57,18 @@ def segment(datalines):
     cur = {'kind': 'head', 'upasarga': '', 'label': '', 'lines': []}
     for ln in datalines:
         mu, ms = UPA_RE.match(ln), SEC_RE.match(ln)
+        m2 = SEC_DIVP_RE.match(ln)
+        sec2 = m2 and m2.group(1).strip().rstrip('.').lower() in SEC_LABELS
         if mu:
             cards.append(cur)
             cur = {'kind': 'prefix', 'upasarga': mu.group(1), 'label': '', 'lines': [ln]}
         elif ms:
             cards.append(cur)
             cur = {'kind': 'secondary', 'upasarga': '', 'label': ms.group(1), 'lines': [ln]}
+        elif sec2:                               # <div n="p">— <ab>caus./desid./intens./partic.…</ab>
+            cards.append(cur)
+            cur = {'kind': 'secondary', 'upasarga': '',
+                   'label': m2.group(1).strip().rstrip('.'), 'lines': [ln]}
         else:
             cur['lines'].append(ln)
     cards.append(cur)
