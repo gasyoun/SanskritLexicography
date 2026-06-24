@@ -124,11 +124,9 @@ def etym_chain(etym):
     return m.group(0).split('+') if m else None
 
 
-def productivity():
-    """Two affix-productivity lenses: upasarga×root + kṛt/taddhita-suffix×root (Apte),
-    cross-listed with MWderivations' wsfx surface-suffix counts."""
-    upa, suf = {}, {}                       # upasarga(slp1)->roots ; pratyaya(deva)->roots
-    aff_iast = {}
+def _compute():
+    """-> (upa: upasarga->roots, suf: pratyaya_deva->roots, mwsuf: surface->count, aff_iast)."""
+    upa, suf, aff_iast = {}, {}, {}
     for r in records(BABYLON):
         if r['pos'] == 'D' and len(r['parse_parts']) >= 2:      # prefixed verb
             root = r['parse_parts'][-1]
@@ -142,19 +140,55 @@ def productivity():
             except Exception:
                 aff_iast[aff] = aff
             suf.setdefault(aff, set()).add(slp1(parts[0]))
-    # MW surface-suffix counts (a complementary lens; different key namespace)
-    mwsuf = {}
+    mwsuf = {}                                  # MW surface-suffix counts (complementary lens)
     try:
         import mw_deriv
-        D = mw_deriv.load()
-        for recs in D.values():
+        for recs in mw_deriv.load().values():
             b = mw_deriv.best(recs)
             if b and b['method'].startswith('wsfx'):
                 s = b['method'].split(':')[1] if ':' in b['method'] else b['method']
                 mwsuf[s] = mwsuf.get(s, 0) + 1
     except Exception as e:
         print('  (MW wsfx cross unavailable: %s)' % e)
+    return upa, suf, mwsuf, aff_iast
 
+
+def crossmap():
+    """Join the two suffix lenses through affix_map.tsv (pratyaya <-> surface <-> MW wsfx).
+    Shows how Apte's formation-affix names line up with MW's surface morphemes, and where
+    each lens has coverage the other lacks."""
+    upa, suf, mwsuf, aff_iast = _compute()
+    rows = []
+    with open(os.path.join(HERE, 'affix_map.tsv'), encoding='utf-8') as f:
+        for line in f:
+            if line.startswith('#') or not line.strip():
+                continue
+            c = line.rstrip('\n').split('\t')
+            if len(c) < 7:
+                continue
+            surf_i, surf_d, prat_i, prat_d, mwk, kind, fn = c[:7]
+            apte = sum(len(suf.get(p, set())) for p in prat_d.split('|'))
+            mw = sum(mwsuf.get(k, 0) for k in mwk.split('|') if k != '-')
+            rows.append((surf_i, prat_i, prat_d.split('|')[0], mwk, kind, fn, apte, mw))
+    print('Affix map — Pāṇinian pratyaya <-> surface suffix <-> MW wsfx '
+          '(Apte = #distinct roots; MW = #headwords):')
+    print('  %-7s %-9s %-9s %-8s %-9s %6s %6s  %s'
+          % ('surf', 'pratyaya', 'देव', 'mw_wsfx', 'kind', 'Apte', 'MW', 'function'))
+    for surf_i, prat_i, prat_d, mwk, kind, fn, apte, mw in rows:
+        print('  -%-6s %-9s %-9s %-8s %-9s %6d %6d  %s'
+              % (surf_i, prat_i, prat_d, mwk, kind, apte, mw, fn))
+    krt = [r for r in rows if 'kṛt' in r[4]]
+    print('\n  Reading: the two lenses OVERLAP on transparent taddhita (-tva/-tā/-vat/-tara…),')
+    print('  but Apte alone covers the kṛt formation affixes (kta/ghañ/lyuṭ/ṇvul…, MW wsfx="-"')
+    print('  because those are lexicalised headwords); and MW counts ≫ Apte on -tva/-tā/-vat')
+    print('  (Apte rarely cites a transparent taddhita; MW flags every one).')
+    print('  kṛt rows with no MW-wsfx counterpart: %d' % sum(1 for r in krt if r[3] == '-'))
+
+
+def productivity():
+    """Two affix-productivity lenses: upasarga×root + kṛt/taddhita-suffix×root (Apte),
+    cross-listed with MWderivations' wsfx surface-suffix counts."""
+    upa, suf, mwsuf, aff_iast = _compute()
     up = sorted(upa.items(), key=lambda kv: -len(kv[1]))
     sf = sorted(suf.items(), key=lambda kv: -len(kv[1]))
     mw = sorted(mwsuf.items(), key=lambda kv: -kv[1])
@@ -180,10 +214,10 @@ def productivity():
 
 def main():
     cmd = sys.argv[1] if len(sys.argv) > 1 else 'demo'
-    if cmd == 'productivity':
+    if cmd in ('productivity', 'crossmap'):
         if not os.path.exists(BABYLON):
             print('missing %s' % BABYLON); return
-        productivity(); return
+        (crossmap if cmd == 'crossmap' else productivity)(); return
     if not os.path.exists(BABYLON):
         print('missing %s — fetch apte-hi.babylon from indic-dict/stardict-sanskrit' % BABYLON)
         return

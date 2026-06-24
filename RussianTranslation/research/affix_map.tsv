@@ -1,0 +1,34 @@
+## Pāṇinian pratyaya  <->  surface suffix  <->  MW wsfx key.
+## Each pratyaya IS its surface suffix once the anubandhas (it-markers, P.1.3.2-1.3.9)
+## are stripped, plus a few substitutions: yu->ana, vu->aka (P.7.1.1), ṭha->ika (P.7.3.50),
+## matup m->v after a/ā (P.8.2.9); ṇ/ñ-marked affixes trigger vṛddhi (P.7.2.115).
+## pratyaya_deva / mw_wsfx may list variants separated by '|'. mw_wsfx '-' = MW's wsfx
+## tagger does not track it (kṛt formations are lexicalised headwords, not word+suffix).
+## Columns: surface_iast  surface_deva  pratyaya_iast  pratyaya_deva  mw_wsfx  kind  function
+ta	त	kta	क्त	-	kṛt	past passive participle
+ana	अन	lyuṭ	ल्युट्	-	kṛt	action / instrument noun
+aka	अक	ṇvul	ण्वुल्	-	kṛt	agent noun (vṛddhi)
+tṛ	तृ	tṛc	तृच्	-	kṛt	agent noun (-tṛ/-tar)
+a	अ	ghañ	घञ्	-	kṛt	action/result noun (bhāva, vṛddhi)
+a	अ	ac	अच्	-	kṛt	agent / action -a
+ti	ति	ktin	क्तिन्	-	kṛt	action noun (fem. -ti)
+ya	य	yat	यत्	-	kṛt	gerundive -ya
+a	अ	aṇ	अण्	-	taddhita	patronymic / relational (vṛddhi)
+ika	इक	ṭhak	ठक्	-	taddhita	relational -ika (vṛddhi)
+ya	य	ṣyañ	ष्यञ्	-	taddhita	abstract "-ness/-hood" -ya (vṛddhi)
+in	इन्	ini	इनि|इन्	-	taddhita	possessive -in
+tva	त्व	tva	त्व	tva	taddhita	abstract noun "-ness" (n.)
+tā	ता	tal	तल्|ता	tA	taddhita	abstract noun "-ness" (f.)
+mat	मत्	matup	मतुप्|मत्	mat|vat	taddhita	possessive "having"
+tara	तर	tarap	तरप्	tara	taddhita	comparative
+tama	तम	tamap	तमप्	tama	taddhita	superlative
+tas	तस्	tasil	तसिल्|तस्	tas	taddhita	ablatival adverb "from"
+śas	शस्	śas	शस्	Sas	taddhita	distributive adverb
+vin	विन्	vini	विनि|विन्	vin	taddhita	possessive -vin
+vala	वल	valac	वलच्|वल	vala	taddhita	possessive -vala
+tana	तन	ṭyu	ट्यु|तन	tana	taddhita	temporal "-tana"
+ka	क	kan	कन्	ka	taddhita	diminutive / svārthe -ka
+ka	क	ka	क	ka	taddhita/kṛt	-ka
+ā	आ	ṭāp	टाप्	-	strī	feminine -ā
+ī	ई	ṅīp	ङीप्	-	strī	feminine -ī
+ī	ई	ṅīṣ	ङीष्	-	strī	feminine -ī (vṛddhi)
