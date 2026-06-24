@@ -127,3 +127,31 @@ of the deterministic F12 gate + a judged *sample* (halves to ~2–4 B); coverage
 the high-value core lands first; or move the **bulk to the DeepSeek API** (parallel, no
 weekly cap, ≈ **$1.5–4 k** for the whole dict) and reserve Max/Opus for hard/flagged
 cards. The a-section stays the Max-validated gold reference either way.
+
+## 7. API-cost reference for the scale-up queue (2026-06-24) — *comparison only; we run on Max*
+
+[`scale_preflight.py`](src/scale_preflight.py) projects an **Opus-API pay-per-token** cost
+for a batch as a `--budget` guardrail. For the **top 500** of the frequency queue (the dense
+head — the giant roots `sTā`/`bhū`/`gam`/`i`/`yuj` …, all heavy path, costed per split
+sub-card) it estimates:
+
+| | value |
+|---|---|
+| tokens | ~55 M (≈ 43.3 M input + 12.0 M output) |
+| **Opus-API cost** | **≈ $1 548** = input ~$650 + output ~$900 |
+| model assumption | heavy = Opus ($15/$75 per Mtok in/out), light = Sonnet ($3/$15), **4 passes/card** (translate + 2 judges + repass) |
+
+**We do not pay this.** Translation runs on the Claude **Max** subscription, so the marginal
+money cost is **≈ $0** (per §1). The API figure is a reference *only* for: (a) anyone
+reproducing the run via the API, (b) sizing the **DeepSeek-bulk** alternative (§6: ≈ $1.5–4 k
+whole-dict), and (c) an upper bound on compute. **The binding constraint stays the Max weekly
+token quota** (§6 item 1) and **editor-hours** (§4) — not USD.
+
+*Caveats on the API number:* it is a **lower bound** (the 166 non-root oversize cards in the
+top-500 are costed as 1 unit but will be sense-chunked into K parts → K×); the $/Mtok prices
+are placeholders to verify against current pricing; and it ignores **prompt caching** — the
+locked system prompt is charged per call (`3000 tok × sub-cards × 4 passes`, which for a
+101-sub-card root like `sTā` alone is ~1.2 M input tokens), so caching that identical prompt
+would cut the input side sharply. None of this changes the Max conclusion; it only refines the
+API-reference figure. The cost-model knobs (`--chars-per-tok`, prices, passes) are overridable
+on the command line.

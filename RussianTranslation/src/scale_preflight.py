@@ -10,7 +10,8 @@ frequency queue, it answers three questions BEFORE any model call is spent —
   2. SPLIT-READY — any card too big for a single pass (bytes > --ceiling) that does NOT
                   yet have a pilot/input/<safe>.rootmap.json is a BLOCKER: it would
                   overwhelm the translator. The root segmenter must run on it first.
-  3. COST       — projected input/output tokens and USD for the batch, vs --budget.
+  3. COST       — projected input/output tokens, and an Opus-API USD REFERENCE vs --budget.
+                  We run on Claude Max (≈$0 marginal); USD is comparison-only. See PILOT_COST.md §7.
 
 Reuses freq_route's manifest (scale_manifest.freq.json) + scale_route's per-section
 manifests + safe_filename.safe_name (no reinvention). Read-only; never touches the
@@ -165,6 +166,8 @@ def main():
     print('   projected cost ≈ $%.0f%s' % (cost, '' if a.budget is None else '  (budget $%.0f)' % a.budget))
     print('   caveat: not-yet-split oversize cards are costed as 1 unit; once chunked they cost more, '
           'so this is a LOWER bound for the batch.')
+    print('   NOTE: Opus-API pay-per-token REFERENCE only. Translation runs on Claude Max '
+          '(≈$0 marginal); the binding limit is the Max weekly token quota, not USD. See PILOT_COST.md §7.')
     over_budget = a.budget is not None and cost > a.budget
     print('\n## Verdict')
     print('   coverage      : OK')
