@@ -149,3 +149,90 @@ presence of a separate headword.
 | MW splits prefixed verbs as `√`-headwords, run-ons nominals | **CONFIRMED** — cue is the `-√` in the body + the hyphen in `k2`. |
 | AP "compact nesting" | **CONFIRMED, sharpened to RUN-ON** — prose `;`-list with **no** markup boundary; this is the *hardest* dict to segment and should fall back to its split `<k1>` headwords. |
 | (new) all dicts also emit separate `<k1>` headwords for lexicalised prefix-nouns | **the trap**: presence of `<k1>anuBU` ≠ "split verb"; only MW splits the verb. Segment on the `<div>` cue, not on headword presence. |
+
+---
+
+## PRIOR ART (checked 2026-06-24) — the segmenter substantially already exists
+
+Before building anything: per the "check prior art first" rule, swept the sibling repos.
+The root-record prefix segmenter sketched in §"Implementation sketch" above is **already
+built** by Jim Funderburk in [`PWG/verbs01/`](https://github.com/sanskrit-lexicon/PWG/tree/master/verbs01) (flagged in
+[`SHARED_CODE.md`](https://github.com/sanskrit-lexicon/csl-orig/blob/master/SHARED_CODE.md) §4 "verb/preverb morphology"). It does **more** than the sketch
+asked for, on real data, and its outputs are committed.
+
+### What `verbs01` already computes
+
+| File / program | What it produces | Scale |
+|---|---|---|
+| [`preverb1.py`](https://github.com/sanskrit-lexicon/PWG/blob/master/verbs01/preverb1.py) | splits each PWG verb record at `<div n="p">— {#<upasarga>#}`, joins prefix+root via a full **sandhi map** (`sandhimap`, `join_prefix_verb`), and matches each surface prefixed-verb to its MW headword | 6819 upasargas in 711 PWG verb entries; 8370 total upasarga divisions |
+| [`pwg_preverb1.txt`](https://github.com/sanskrit-lexicon/PWG/blob/master/verbs01/pwg_preverb1.txt) | the per-root parse table: every upasarga, its sandhi-joined PWG spelling, the matched MW spelling, and the **canonical Pāṇinian-order parse** (`prati+anu+BU`) | 6773 MW-matched ("yes") + 1588 unmatched ("no") |
+| [`mwverbs1.txt`](https://github.com/sanskrit-lexicon/PWG/blob/master/verbs01/mwverbs1.txt) | MW verb inventory categorised verb-vs-preverb from MW's own `<info verb=…>` tags, with class/pada | 10 122 MW verb/preverb headwords |
+| [`pwg_verb_filter_map.txt`](https://github.com/sanskrit-lexicon/PWG/blob/master/verbs01/pwg_verb_filter_map.txt) | PWG-root → MW-root correspondence map (the cross-dict `root_key` align) | 2444 PWG verb roots (21 with `mw=?`) |
+| [`pwg_verb_exclude.txt`](https://github.com/sanskrit-lexicon/PWG/blob/master/verbs01/pwg_verb_exclude.txt) | empirical list of non-verb records that *carry* root patterns — the `<div n="p">` **false-positive** guard | 149 exclusions |
+
+Worked example — the probe root `bhū`, straight from `pwg_preverb1.txt` (Case 1211,
+`L=55166`): **38 upasargas, 32 MW-matched**, including stacked prefixes resolved to
+Pāṇinian order: `anvABU → anu+A+BU`, `aByABU → aBi+A+BU`, `AvirBU → Avis+BU`. `gam` is
+parsed **twice** (`L=21814` 61 upasargas; `L=72578` 27) — i.e. the multi-homonym root
+case is already handled per `<L>` record.
+
+### This answers the four planned analyses — mostly already done
+
+1. **Quantify the mega-record problem** → 711 PWG verb records hold the 6819 nested
+   prefix-divisions; `bhū`=38, `gam`=61+27, etc. The upasarga count *is* the sub-card
+   count (the histogram is `pwg_preverb1.txt`'s per-Case `#upasargas`).
+2. **Validate the `<div n="p">` cue** → the cue is **not** 1:1 with "prefixed verb":
+   8370 total upasarga divisions vs 6819 inside verb entries → the surplus is in
+   **non-verb** entries (`non_verb_upasargas()` + the 149-row `pwg_verb_exclude.txt`).
+   So the FP guard is required and already characterised. (Caveat: PWG also uses
+   `<div n="p">` for phrasal notes like `— Mit {#na#}`/`— Mit {#kva#}`; `preverb1` keys
+   on the `{#<roman>#}` upasarga shape and excludes those.)
+3. **Secondary-conjugation boundaries** → `preverb1.mark_entries_verb()` already detects
+   `<ab>(Desid.|Intens.|Caus.)</ab>` as separate marks alongside the `<div n="m">` cue.
+4. **Cross-dict root-key alignment** → `pwg_verb_filter_map.txt` (PWG↔MW root) +
+   the per-prefix MW match in `pwg_preverb1.txt`. **And MW carries the parse natively**:
+   prefixed-verb records have `<info verb="pre" … parse="anu+BU"/>` and simple roots
+   `<info verb="genuineroot" cp="1P,1Ā"/>` ([mw.txt L25020 / L507286](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/mw/mw.txt)) — so MW's `root_key`+`upasarga` need **no** inference, just a tag read.
+
+### The actual GAP (what to build — small, not a segmenter from scratch)
+
+`verbs01` *analyses and aligns*; it does **not** emit translation-ready sub-cards. For
+the SPLIT/NESTED pipeline the remaining work is:
+
+- **Text-slicer**: cut the giant PWG record into the actual `<div n="p">…</div>` German
+  text slices (gloss + `<ls>` apparatus) per `(root, upasarga)`, carrying `root_key`,
+  `upasarga`, and `seg_index` = position in the parse string. Reuse `preverb1`'s
+  `Entry`/`init_entries` record splitter and its parse output for the keys — don't
+  re-derive sandhi.
+- **Glue** (`root_glue.py`): order sub-cards by the `prati+anu+BU` parse (Pāṇinian
+  upasarga order is already encoded in the parse string) and re-emit the nested article.
+- **Lexicalised-noun link**: join the separate `<k1>aDiBU`-type headwords to their
+  `root_key` (they are *not* in `verbs01`, which is verbs-only).
+
+Net: the hard parts (cue, sandhi join, MW alignment, FP guard, Pāṇinian order) are
+**done and committed**; the translation pipeline needs a thin text-slicing + glue layer
+on top of `preverb1`'s record model, PWG-only to start.
+
+### Prototype + test (built 2026-06-24)
+
+[`root_segment_proto.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/research/root_segment_proto.py) implements the text-slicer + glue gap (the head card +
+one sub-card per `<div n="p">` / `<div n="m">` boundary, each carrying `root_key` /
+`upasarga`) and asserts a **lossless** SPLIT→glue round-trip. Self-test on the probes:
+
+```
+L=55166  k1=BU   lines=1315  sub-cards=41 (1 head + 40 prefix)  round-trip=LOSSLESS
+L=21814  k1=gam  lines=1695  sub-cards=63 (1 head + 62 prefix)  round-trip=LOSSLESS
+L=72578  k1=gam  lines=180   sub-cards=36 (1 head + 35 prefix)  round-trip=LOSSLESS
+```
+
+Two findings the test surfaced (both confirm the RESULTS analysis):
+
+1. **Raw `<div n="p">` count ≥ true-upasarga count.** The slicer finds **40** prefix
+   divisions for `bhū` vs `preverb1`'s **38** upasargas — the surplus is exactly the FP
+   class (`preverb1`'s shape-filter + 149-row exclude list reconcile 40→38). Confirms
+   analysis #2: the cue needs `verbs01`'s guard before the sub-cards are trusted as verbs.
+2. **The secondary-conjugation cue is dict-specific** (0 `<div n="m">` matched in PWG):
+   `<div n="m">` is the **PW** caus/desid cue ([pw.txt L331019](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/pw/pw.txt)); **PWG** marks caus/desid
+   inline as `— <ab>caus./desid./intens.</ab>` (often inside `<div n="v">`/`<div n="p">`),
+   which is what `preverb1.mark_entries_verb()` keys on. The per-dict segmenter rules in
+   RESULTS therefore need a per-dict secondary-conjugation cue, not a shared one.
