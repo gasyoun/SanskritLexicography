@@ -75,3 +75,25 @@ the lowest-maintenance and is what [`build_dsg.py`](RussianTranslation/research/
   `dsg_url` into the affix tools and the reader.
 - ⏳ Confirm: deploy the generated `dsg.html` at `…/dsg/` (replacing the current page), or host the
   anchored page alongside it?
+
+## EXECUTED (2026-06-24) — source was the bilingual HTML page
+
+You provided the **saved samskrtam.ru DSG page** (not the CDSL `<L>` source): `external/dsg.html`
+(6.1 MB) + `index_files/`. It is already **bilingual** — each `<tr>` entry carries `.sa`
+(Devanāgarī), `.iast`, `.HK`, `.transl` (English) and `.transl2` (**Russian**) plus Wikisource
+scan links and a numeric `<a id="N">`. **4,383 entries.**
+
+So instead of generating a new page, `build_dsg.py html` **augments the existing one** (keeps the
+bilingual layout + scan links you have) and extracts the data:
+- `external/dsg_anchored.html` — your page **with a stable `id="t-<slp1>"` anchor injected** next
+  to every numeric id. **Deploy: replace** `samskrtam.ru/sanskrit-lexicon/dsg/index.html` with this
+  (confirmed: replace). Verified `id="t-GaY"` (ghañ) etc. are present.
+- `dsg.json` — 4,383 structured entries `{id, anchor, slp1, iast, deva, en, ru}` (gitignored,
+  4 MB; feeds the pwg_ru grammar-term resolver + the CDSL spine).
+- `dsg_affix_crosswalk.tsv` (tracked) — **25/27 affix pratyayas matched** to real DSG entries with
+  their deep-link; only `kan`, `valac` missed (listed in DSG under variant forms — fixable by hand).
+
+Interlink wired (affix side): `affix_pedagogy.json` now carries `dsg_url` per matched affix, and
+the **affix explorer / flashcards** + the **WhitneyRoots affix view** ([PR #21](https://github.com/gasyoun/WhitneyRoots/pull/21)) render a
+`📖 DSG entry` deep-link. Remaining: resolve `kan`/`valac` variants; wire the reader + pwg_ru
+grammar-term tokens to `dsg.json`; deploy `dsg_anchored.html`.

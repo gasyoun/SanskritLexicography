@@ -129,9 +129,69 @@ def ingest(path):
     print('  affix pratyayas found in DSG: %d / %d' % (hit, len(ped['affixes'])))
 
 
+def slugify(iast):
+    s = slp1(iast)
+    return re.sub(r'[^A-Za-z0-9]', '', s) or re.sub(r'[^A-Za-z0-9]', '', iast) or 'x'
+
+
+def from_html(path):
+    """Parse the saved samskrtam.ru DSG page (bilingual <tr> entries: .sa/.iast/.HK/.transl/
+    .transl2) and (1) inject a STABLE per-term anchor id="t-<slp1>" next to each numeric id,
+    (2) emit dsg.json, (3) emit the verified affix crosswalk. Output beside the source."""
+    if not os.path.exists(path):
+        sys.exit('DSG html not found: %s' % path)
+    out_html = os.path.join(os.path.dirname(path), 'dsg_anchored.html')
+    lines = open(path, encoding='utf-8').read().split('\n')
+    entries, seen = [], {}
+    rx_id = re.compile(r'<a id="(\d+)">')
+    rx_iast = re.compile(r'<a class="iast">([^<]*)</a>')
+    rx_sa = re.compile(r'<a class="sa">([^<]*)</a>')
+    rx_en = re.compile(r'<p class="transl">(.*?)</p>', re.S)
+    rx_ru = re.compile(r'<p class="transl2">(.*?)</p>', re.S)
+    strip = lambda h: re.sub(r'\s+', ' ', re.sub(r'<[^>]+>', '', h)).strip()
+    for i, ln in enumerate(lines):
+        m = rx_id.search(ln)
+        mi = rx_iast.search(ln)
+        if not (m and mi):
+            continue
+        iast = mi.group(1).strip().strip('/').split('/')[0].split(',')[0].strip()
+        slug = slugify(iast)
+        n = seen.get(slug, 0); seen[slug] = n + 1
+        anchor = 't-%s' % slug if n == 0 else 't-%s-%d' % (slug, n + 1)
+        sa = (rx_sa.search(ln) or [None, ''])[1]
+        en = strip((rx_en.search(ln) or [None, ''])[1])
+        ru = strip((rx_ru.search(ln) or [None, ''])[1])
+        entries.append({'id': m.group(1), 'anchor': anchor, 'slp1': slp1(iast),
+                        'iast': iast, 'deva': sa, 'en': en[:1200], 'ru': ru[:1200]})
+        # inject the stable anchor right after the numeric one (minimal, keeps the page intact)
+        lines[i] = ln.replace(m.group(0), '%s<a id="%s"></a>' % (m.group(0), anchor), 1)
+    open(out_html, 'w', encoding='utf-8').write('\n'.join(lines))
+    json.dump(entries, open(os.path.join(HERE, 'dsg.json'), 'w', encoding='utf-8'),
+              ensure_ascii=False, indent=1)
+    # verified affix crosswalk
+    ped = json.load(open(os.path.join(HERE, 'affix_pedagogy.json'), encoding='utf-8'))
+    have = {e['slp1']: e['anchor'] for e in entries}
+    out = os.path.join(HERE, 'dsg_affix_crosswalk.tsv')
+    hit = 0
+    with open(out, 'w', encoding='utf-8') as f:
+        f.write('pratyaya\tslp1\tin_dsg\tdsg_url\n')
+        for a in ped['affixes']:
+            anc = slp1(a['pratyaya'])
+            present = anc in have
+            hit += present
+            f.write('%s\t%s\t%s\t%s\n' % (a['pratyaya'], anc, 'Y' if present else 'N',
+                    (DSG_BASE + '#' + have[anc]) if present else ''))
+    print('DSG html: %d entries → %s (stable id="t-<slp1>" anchors) + dsg.json + %s'
+          % (len(entries), os.path.basename(out_html), os.path.basename(out)))
+    print('  affix pratyayas found in DSG: %d / %d' % (hit, len(ped['affixes'])))
+    print('  deploy: upload %s to samskrtam.ru/sanskrit-lexicon/dsg/index.html' % out_html)
+
+
 if __name__ == '__main__':
     cmd = sys.argv[1] if len(sys.argv) > 1 else 'anchors'
     if cmd == 'ingest':
         ingest(sys.argv[2] if len(sys.argv) > 2 else os.path.join(HERE, 'external', 'dsg.txt'))
+    elif cmd == 'html':
+        from_html(sys.argv[2] if len(sys.argv) > 2 else os.path.join(HERE, 'external', 'dsg.html'))
     else:
         anchors()

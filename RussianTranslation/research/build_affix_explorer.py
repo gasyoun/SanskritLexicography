@@ -54,9 +54,10 @@ function card(a){
     const steps=a.anubandha.map(s=>'<span style="background:var(--color-background-secondary); padding:2px 8px; border-radius:var(--border-radius-md); margin:0 4px 4px 0; display:inline-block;">'+s+'</span>').join('');
     const ex=a.examples.map(e=>'<span style="margin:0 12px 4px 0; display:inline-block;"><span style="color:var(--color-text-tertiary);">'+e.root+'</span> → <span style="font-weight:500;">'+e.word_iast+'</span></span>').join('') || '<span style="color:var(--color-text-tertiary);">—</span>';
     const mw=a.mw_count? ' · MW surface-suffix headwords: '+a.mw_count : '';
+    const dsg=a.dsg_url? ' · <a href="'+a.dsg_url+'" target="_blank" rel="noopener">📖 DSG entry</a>' : '';
     det.innerHTML='<div style="margin-bottom:8px;"><span style="color:var(--color-text-secondary);">Anubandha → surface: </span>'+steps+'</div>'
       +'<div><span style="color:var(--color-text-secondary);">Examples: </span>'+ex+'</div>'
-      +'<div style="color:var(--color-text-tertiary); margin-top:8px;">'+a.kind+mw+'</div>';
+      +'<div style="color:var(--color-text-tertiary); margin-top:8px;">'+a.kind+mw+dsg+'</div>';
     c.appendChild(det);
   };
   return c;

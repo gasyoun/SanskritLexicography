@@ -128,8 +128,9 @@ cards = []
 for a in AFX:
     ex = ', '.join(e['word_iast'] for e in a['examples'][:3])
     front = '%s (%s) →' % (a['pratyaya_deva'], a['pratyaya'])
-    back = '-%s · %s · %s%s' % (a['surface'], a['function'], ' '.join(a['anubandha']),
-                                ('  ⟨e.g. ' + ex + '⟩') if ex else '')
+    back = '-%s · %s · %s%s%s' % (a['surface'], a['function'], ' '.join(a['anubandha']),
+                                  ('  ⟨e.g. ' + ex + '⟩') if ex else '',
+                                  ('  ' + a['dsg_url']) if a.get('dsg_url') else '')
     cards.append('%s\t%s' % (front, back))
 
 open(os.path.join(HERE, 'affix_poster.html'), 'w', encoding='utf-8').write(POSTER)
