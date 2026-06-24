@@ -1,0 +1,83 @@
+# anya — other — PD minimal mode (sense skeleton)
+
+Deccan **PD** definition outline only — `{@…@}` sense markers with glosses, all etymology and citation bulk removed. Full PD kept in the verbatim/IAST files.
+
+**77 senses**
+
+- **1A** — (inanimate)
+- **i** — another or other (with Abl.) other than (with Gen.) other than (used as noun) another or other things (with Abl.) thing other than
+- **ii** — (with interrogative or indefinite pronoun or negative particle) any other, some other (with vinā) something else than (used as noun) anything else, something el
+- **B** — (animate)
+- **i** — another or other (with Abl.) other than (used as noun) another one, other one (with Abl.) one other than (with Inst.) one other than
+- **ii** — (with interrogative or indefinite pronoun or negative particle) any other, some other (with Abl.) any other than (with ṛte) any other than (used as noun) anybod
+- **2A** — (inanimate)
+- **i** — different, distinct or separate (with Abl.) different, distinct or separate from (used as noun) different, distinct or separate thing or idea etc. (with Abl.) d
+- **ii** — (with anya) different, i. e. various (used as noun) various things
+- **iii** — different i. e. disturbed
+- **iv** — different, i. e. immaterial or irrelevant
+- **B** — (animate)
+- **i** — different, distinct or separate (with Abl.) different, distinct or separate from (used as noun) different, distinct or separate one (with Abl.) different, disti
+- **ii** — separate from i. e. estranged from
+- **iii** — (used as noun) (with anya) various ones
+- **3A** — (inanimate) one or some (used as noun) one or something (with Gen. dual) one of the two things
+- **B** — (animate)
+- **i** — one some (used as noun) one or someone (with Gen. pl.) one among many (with Gen dual) one of the two beings
+- **ii** — animal- like, stupid
+- **4A** — (inanimate) new
+- **Bi** — dissimilar
+- **ii** — unequal
+- **5A** — (animate) (used as noun) other one, i. e. competitor, rival, opponent or enemy
+- **B** — (inanimate) (used as noun)
+- **i** — thing belonging to another person
+- **ii** — other thing, i. e. something wrong
+- **iii** — (used as noun) other thing, i. e. countersubject
+- **6A** — (animate) additional, more or many
+- **B** — (inanimate) additional, more or much (used as noun) additional thing
+- **7A** — (animate) rest, remaining (used as noun) rest or remaining one
+- **B** — (inanimate) rest, remaining (used as noun) rest or remaining thing
+- **8A** — (animate) stranger (used as noun) stranger one
+- **B** — (inanimate) (used as noun) strange thing
+- **9** — (used as noun) former one
+- **10A** — (animate)
+- **i** — (used as noun) second, i. e. latter one
+- **ii** — second, next or following (used as noun) second one, next one or following one
+- **iii** — third (used as noun) third one
+- **B** — (inanimate)
+- **i** — (used as noun) second, i. e. latter thing
+- **ii** — second, next or following (used as noun) second thing, next thing or following thing
+- **iii** — second i. e. right
+- **iv** — second, i. e. left
+- **v** — third (used as noun) third thing, idea etc
+- **11A** — (inanimate) great, wonderful, extraordinary, unique (used as noun) great, i. e. unusual thing
+- **B** — (animate) great, wonderful, extraordinary, unique
+- **12** — (animate) inferior, subordinate
+- **13** — (animate or inanimate) similar
+- **14** — (animate) changed, altered
+- **15** — (animate) ordinary (used as noun) ordinary one
+- **16** — the pronominal word anya
+- **17** — extrinsic or extraneous
+- **1** — name of one of the twelve Bhṛgu-gods a son of Bhṛgu
+- **2** — name of a sage-like king (Rājarṣi)
+- **3** — epithet of Śiva
+- **4** — name of a mountain
+- **5** — name of a figure of speech
+- **6** — term of particular quantity
+- **1** — particular kind of uṇādi suffix Uṇā. 3. 100
+- **2** — second person MahāBh. i. 352. 2 (on 4. 108)
+- **3** — third person JaineVyā. i. 2. 152; 44. 37 (on i. 2. 152); JaineVyā. i. 4. 154; JaineVyā. 44. 37 (on i. 2. 152); ŚākaṭāVyā. i. 4. 1; SiddhaHe. iii. 3. 17
+- **1A** — further, additionally, optionally
+- **B** — anew, more
+- **2A** — except, otherwise
+- **B** — separately
+- **3A** — in other cases
+- **B** — moreover, again and again, besides
+- **4** — or else
+- **5** — the indeclinable word anyat
+- **1A** — one of the three types of heroine DaśRū. 2. 15; BhāvPra.(Śā.) 94. 20 (4); SāhiSā. 4. 4; BhāvPra.(Śā.) 95. 11 (4); BhāvPra.(Śā.) 96. 12 (4)
+- **1B** — another woman, cf
+- **{#anyAkara#}**
+- **2** — name of a medicinal plant RasRaSa. 22. 85
+- **3** — female attendant of harem, cf
+- **{#anyAhUti#}**
+- **4** — co-wife, cf
+- **{#anyABiDAgrahaRa#}**

@@ -1,0 +1,108 @@
+# ananta — endless / Viṣṇu — PD minimal mode (sense skeleton)
+
+Deccan **PD** definition outline only — `{@…@}` sense markers with glosses, all etymology and citation bulk removed. Full PD kept in the verbatim/IAST files.
+
+**102 senses**
+
+- **1A** — having no limit (in space), limitless or boundless (in expanse or depth)
+- **B** — having no limit (in time) (often implying limitless in space and matter), eternal, imperishable, long-lasting, continuous
+- **C** — endless (in number), indefinitely or ex- ceedingly great, uncountable, innumerable, many (mainly observable entities)
+- **D** — (entity) having no limit (in space, time and matter) (used often as noun in apposition with brahman along with satya and jñāna)
+- **2A** — having no end or definite terminal point, large, huge, great, abundant, immeasurably great, of infinite degree (mainly abstract notions, quality, quantity, size
+- **2B** — not final
+- **3** — (Jain.) perfect, infinite (knowledge)
+- **1A** — infinite entity deified
+- **B** — the infinite or limitless one, the Supreme Being
+- **2A** — eternal time
+- **B** — in- finity, eternality
+- **3** — name or epithet of various divinities or divine beings
+- **i** — the mythological serpent-king Śeṣa
+- **ii** — Viṣṇu or Kṛṣṇa
+- **iii** — the sun
+- **iv** — an attendant of Skanda
+- **v** — Śiva
+- **vi** — Balarāma
+- **vii** — the third of the thirty-nine vibhavas
+- **viii** — various Rudras
+- **ix** — one [of the eight Vighneśas
+- **x** — Bṛhaspati
+- **xi** — the Saturn
+- **xii** — Vāsuki, the mythical serpent
+- **xiii** — Brahmā, a form of Brahmā
+- **xiv** — one of the assistants of Gaṇapati
+- **xv** — a Tāntric deity
+- **xvi** — deity presiding over the sound ā
+- **xvii** — Agni
+- **4** — name of the fourteenth Arhat or Jina
+- **5** — name of various personalities
+- **i** — kings
+- **ii** — a minister
+- **iii** — various persons
+- **iv** — a sage
+- **v** — various authors
+- **vi** — Patañjali
+- **6** — name of various plants
+- **7** — (Tantra) mystic name standing for various sounds
+- **i** — sound a
+- **ii** — sound ā
+- **iii** — sound ḥ (visarga)
+- **iv** — sound ka
+- **v** — sound la
+- **vi** — sound ha
+- **vii** — sound kṣa
+- **8** — name of a mountain
+- **9** — name of a country
+- **10** — name of a kind of incense (dhūpa)
+- **11** — name of a type of Śālagrāma
+- **12** — a silken cord tied with the invoking of Ananta
+- **13** — name of a part of a pent-roof
+- **14** — name of the month of Pauṣa
+- **15** — cloud
+- **16** — sky, ether or atmosphere
+- **17A** — not the final sound or syllable
+- **B** — other than the augment finally added
+- **1A** — eternality, infinity
+- **Bi** — the infinite or eternal entity, the Supreme Being
+- **ii** — the eternal Primordial Matter
+- **2** — name of a Tāntric diagram or a part thereof
+- **3** — name of a holy place
+- **4** — cipher
+- **5** — mica
+- **6A** — name of a pitcher
+- **B** — (Arch.) name of a type of pent-roof
+- **C** — temple of the serpent Vāsuki
+- **7** — name of a pleasance or garden
+- **8** — sky, atmosphere
+- **9** — name of a city
+- **10** — water
+- **11** — name of an inedible fruit
+- **1A** — (du.) heaven and earth
+- **B** — the earth
+- **C** — the north-west quarter
+- **2Ai** — name of Janamejaya's wife
+- **ii** — name of the wife of Svāyambhuva Manu
+- **Bi** — name of Pārvatī
+- **ii** — name of the śakti related to Brahmā
+- **iii** — name of the Buddhist goddess Tārā
+- **iv** — one of the names of Cāmuṇḍā
+- **Ci** — name or epithet of the river Gaṅgā
+- **ii** — epithet of the river Aruṇā
+- **3** — name of various plants
+- **Ai** — śārivā, Hemedesmus indicus
+- **ii** — bhadrā
+- **Bi** — dūrvāgrass
+- **ii** — śveta- dūrvā
+- **iii** — niladūrvā
+- **C** — durālabhā or yavāsa, Alhagi maurorum or Hedysarum alhagi
+- **D** — āmalakī, Emblica myrobalan
+- **E** — various plants (which cannot be identified)
+- **4Ai** — name of one of the eight kalās of cidātman
+- **ii** — name of one of the eight śaktis
+- **iii** — name of one of the sixteen kalās produced from the nāda
+- **iv** — name of a Tantric deity
+- **Bi** — name of the opposite of the first of the nine tuṣṭis (of the Sāṃkhyas)
+- **ii** — name of Prakṛti
+- **Ci** — mystic name of the syllable au
+- **ii** — mystic name of the syllable aḥ
+- **5** — name of a vein (of a horse)
+- **6** — full-moon day

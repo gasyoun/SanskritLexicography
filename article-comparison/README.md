@@ -6,15 +6,42 @@ Frequency ranking from **DCS 2026** (`dcs_full.sqlite`, 5.69 M tokens); article 
 
 ## Finalists
 
-| Headword | Class | Gloss | Dicts | Files |
-|----------|-------|-------|------:|-------|
-| **agni** | non-samāsa | fire (m.) | 20 | [verbatim](agni.verbatim.md) · [IAST](agni.iast.md) |
-| **anya** | non-samāsa | other, another (pron. adj.) | 19 | [verbatim](anya.verbatim.md) · [IAST](anya.iast.md) |
-| **akṣara** | a-samāsa (nañ) | imperishable; syllable; Brahman (a-+kṣara) | 19 | [verbatim](aksara.verbatim.md) · [IAST](aksara.iast.md) |
-| **ananta** | a-samāsa (nañ) | endless; Viṣṇu/Śeṣa (an-+anta) | 18 | [verbatim](ananta.verbatim.md) · [IAST](ananta.iast.md) |
+| Headword | Class | Gloss | Dicts | Senses (PD) |
+|----------|-------|-------|------:|------:|
+| **agni** | non-samāsa | fire | 20 | 130 |
+| **anya** | non-samāsa | other | 19 | 77 |
+| **akṣara** | a-samāsa (nañ) | imperishable / syllable | 19 | 55 |
+| **ananta** | a-samāsa (nañ) | endless / Viṣṇu, Śeṣa | 18 | 102 |
+
+## Files per word
+
+| View | Pattern | What it is |
+|------|---------|------------|
+| **Side-by-side table** | `<w>.table.md` | All dictionaries in one table, condensed (citations stripped, SLP1→IAST). PD shown as its sense skeleton. The comparison overview. |
+| **PD minimal mode** | `<w>.pd-min.md` | PD definition outline only — `{@…@}` sense markers, no etymology/citation bulk. |
+| **PD minimal + Russian** | `<w>.pd-min.ru.md` | Bilingual EN/RU sense skeleton + key supporting Sanskrit quotes with Russian translations. *(agni done as the reference word; others on request.)* |
+| **Full verbatim** | `<w>.verbatim.md` | Faithful raw `csl-orig` entries, every dictionary, full Cologne markup. The full PD is here. |
+| **Full IAST** | `<w>.iast.md` | Same entries, SLP1→IAST transcoded, tags stripped. |
+
+### agni — fire (non-samāsa)
+
+[table](agni.table.md) · [pd-min](agni.pd-min.md) · [**pd-min + RU**](agni.pd-min.ru.md) · [verbatim](agni.verbatim.md) · [iast](agni.iast.md)
+
+### anya — other (non-samāsa)
+
+[table](anya.table.md) · [pd-min](anya.pd-min.md) · [verbatim](anya.verbatim.md) · [iast](anya.iast.md)
+
+### akṣara — imperishable / syllable (a-samāsa)
+
+[table](aksara.table.md) · [pd-min](aksara.pd-min.md) · [verbatim](aksara.verbatim.md) · [iast](aksara.iast.md)
+
+### ananta — endless / Viṣṇu (a-samāsa)
+
+[table](ananta.table.md) · [pd-min](ananta.pd-min.md) · [verbatim](ananta.verbatim.md) · [iast](ananta.iast.md)
 
 ## Method
 
-- **PD** = Deccan College *Encyclopaedic Dictionary of Sanskrit on Historical Principles* (unfinished; "a" coverage stops ~`apaca-`). All candidates were filtered to fall inside PD’s wordlist.
+- **PD** = Deccan College *Encyclopaedic Dictionary of Sanskrit on Historical Principles* (unfinished; "a" coverage stops ~`apaca-`). All candidates were filtered to fall inside PD's wordlist — that is the real constraint, since every other CDSL dictionary has a complete "a".
 - Keys matched on both **stem** (MW/PW style: `agni`) and **nominative citation form** (Apte/SKD style: `agniH`) so no dictionary is missed.
-- Each word file has a **verbatim** (faithful Cologne markup) and an **IAST** (transcoded, tag-stripped) rendering.
+- **PD minimal mode** keeps only the `{@…@}` sense outline; the full PD (often the largest entry by an order of magnitude — `anya` ≈ 278 KB) stays in the verbatim/IAST files.
+- **Russian** translations are drafts (Indological terminology aligned to Kochergina/Smirnov via the SamudraManthanam corpus); they need expert review before any reuse.
