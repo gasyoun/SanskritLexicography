@@ -124,6 +124,26 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
   DCS** (e.g. *aṭaṭa* — a Buddhist hell — `ls=[V] dcs=[V]`). Per-entry
   `renou_provenance` records which signal(s) back each state.
 
+- **Renou tagging extended to the 6 remaining LS-rich dictionaries (8 total).**
+  Ranked the whole csl-orig corpus by `<ls>` richness and tagged the leaders:
+  **AP** (Apte), **AP90**, **PW**, **BEN** (Benfey), **SCH** (Schmidt), **BHS**
+  (Edgerton). New [src/renou_sigla.py](src/renou_sigla.py) holds the curated
+  Apte/Benfey siglum→state tables (Apte `R`=Raghuvaṃśa, `Mv`=Mahāvīracarita — *not*
+  Rāmāyaṇa/Mahāvastu) and the BHS rule (**default-V** + a meta blocklist of
+  editors/dictionaries); [src/tag_dict_from_source.py](src/tag_dict_from_source.py)
+  generalises the MW tagger over any dict (Petersburg dicts PW/SCH **reuse the PWG
+  map**; AP/AP90/BEN use the inline tables; BHS the default-V rule) and emits
+  `{code}_renou.jsonl` (gitignored). **360 366 more entries tagged:**
+  - **BHS** 17 839 — 73.8 % `<ls>`-tagged, **all V** (13 172; the pure Buddhist
+    signal: *dharma/buddha/bodhisattva* `ls=[V]`, corroborated by DCS).
+  - **BEN** 17 310 — 70.0 % `<ls>` (citations concentrate in ~30 sigla).
+  - **AP** 90 654 / **AP90** 34 882 — 26–29 % `<ls>` (long Apte siglum tail), DCS V
+    4 774 / 3 646.
+  - **PW** 170 556 / **SCH** 29 125 — `<ls>` partial (10–13 %; their Petersburg sigla
+    exceed the PWG canon), but DCS carries them (PW enriched V = 10 340).
+  Together with PWG + MW, all eight LS-rich dictionaries now carry the two-layer,
+  provenance-tagged Renou state, keyed by `key1`.
+
 ### Fixed
 - `nws_split.py` OWNER citation now stops at `;` so the trailing-tag
   sub-entry variant (`gloss … <DIATAG> ; SOURCE:page`, e.g. `aYj`) keeps
