@@ -135,13 +135,24 @@ for a batch as a `--budget` guardrail. For the **top 500** of the frequency queu
 head — the giant roots `sTā`/`bhū`/`gam`/`i`/`yuj` …, all heavy path, costed per split
 sub-card) it estimates:
 
-| | value |
-|---|---|
-| tokens | ~55 M (≈ 43.3 M input + 12.0 M output) |
-| **Opus-API cost** | **≈ $1 548** = input ~$650 + output ~$900 |
-| model assumption | heavy = Opus ($15/$75 per Mtok in/out), light = Sonnet ($3/$15), **4 passes/card** (translate + 2 judges + repass) |
+The tool now models the pipeline **per pass**, with prompt-caching and per-pass model knobs,
+so the projection reflects the **cheap-judge / cached-prompt config we actually run** rather
+than a worst-case all-Opus number:
 
-**We do not pay this.** Translation runs on the Claude **Max** subscription, so the marginal
+| config | passes | tokens | **Opus-API cost** |
+|---|---|---|---|
+| **ORIGINAL estimate** (all-Opus, full output every pass, no cache) | 4 full Opus | ~55 M | **≈ $1 549** (in ~$650 + out ~$900) |
+| **config we run** — `translate=Sonnet · judge=Sonnet ×2 · repass=Opus ×0.2 · cache on` | realistic | ~39 M | **≈ $143** (91 % less) |
+
+Per-pass at the run config: translate (Sonnet) ≈ $55 · judges (Sonnet ×2, small verdict
+output) ≈ $33 · repass (Opus, only ~20 % of cards) ≈ $55. The drop comes from three levers:
+**prompt caching** (the locked system prompt — charged per sub-card × passes — drops to ~0.1×
+on cache reads), **Sonnet judges** instead of Opus ($15 vs $75 per Mtok out), and a realistic
+**0.2 repass rate** + small judge-output. All are flags on `scale_preflight.py`
+(`--translate-model/--judge-model/--repass-model {opus,sonnet,haiku}`, `--judges`,
+`--repass-rate`, `--prompt-tok`, `--no-cache`).
+
+**We do not pay either figure.** Translation runs on the Claude **Max** subscription, so the marginal
 money cost is **≈ $0** (per §1). The API figure is a reference *only* for: (a) anyone
 reproducing the run via the API, (b) sizing the **DeepSeek-bulk** alternative (§6: ≈ $1.5–4 k
 whole-dict), and (c) an upper bound on compute. **The binding constraint stays the Max weekly
@@ -149,9 +160,6 @@ token quota** (§6 item 1) and **editor-hours** (§4) — not USD.
 
 *Caveats on the API number:* it is a **lower bound** (the 166 non-root oversize cards in the
 top-500 are costed as 1 unit but will be sense-chunked into K parts → K×); the $/Mtok prices
-are placeholders to verify against current pricing; and it ignores **prompt caching** — the
-locked system prompt is charged per call (`3000 tok × sub-cards × 4 passes`, which for a
-101-sub-card root like `sTā` alone is ~1.2 M input tokens), so caching that identical prompt
-would cut the input side sharply. None of this changes the Max conclusion; it only refines the
-API-reference figure. The cost-model knobs (`--chars-per-tok`, prices, passes) are overridable
-on the command line.
+are placeholders to verify against current pricing; and the cache figure models cached reads
+at ~0.1× input but **ignores the one-time per-window cache-write surcharge** (negligible at
+scale). None of this changes the Max conclusion; it only refines the API-reference figure.
