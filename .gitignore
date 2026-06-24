@@ -57,3 +57,4 @@ RussianTranslation/src/pilot/root_translate/
 # vendored external resources (re-fetch: MWderivations + stardict-sanskrit apte-hi)
 RussianTranslation/research/external/
 RussianTranslation/research/apte_sidecar.tsv
+RussianTranslation/research/merge_*.md
