@@ -284,6 +284,27 @@ family** (prefix-nominals + suffix-derivatives + compounds-of-derivatives). **(4
 derivation_type, source`); never edits csl-orig. The table feeds both the translation
 manifest and `root_glue.py`'s nesting.
 
+### Pipeline wiring — build #1 (2026-06-24): the fix for "translation pass dies on bhū"
+
+[`src/root_units.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/root_units.py) is the bridge that closes the loop with the *actual* translation
+pipeline: it segments a PWG root mega-record and emits one translation unit **per prefix
+sub-card per German gloss**, in the exact manifest shape [`compile_translatable.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/compile_translatable.py)
+already uses (`layer/ref/lang/text/keep`), plus `root_key` / `upasarga` / `seg_index` so
+downstream batching, translation and QA group and order by sub-card. It reuses
+`root_segment_proto` (the `<div n="p">` slicer) and `compile_translatable`'s `PCT`/`INLINE_SA`
+masks — no reinvention.
+
+```
+BU  (L=55166): 41 sub-cards -> 380 units (377 German)   ref e.g. anu+BU:0 "umfassen, einschliessen"
+gam (L=21814): 63 sub-cards -> 397 units
+```
+
+This is the structural fix the DECISION section called for: instead of one 1315-line `bhū`
+card that kills the pass, the translator receives ~40 grouped sub-card unit-sets, each
+carrying its prefixed-verb context. Output -> `pilot/root_translate/` (generated,
+gitignored). Known prototype limit: head-card senses share one capped `keep` list (per-card,
+not per-gloss); fine for batching, wants per-gloss citation alignment before production.
+
 ### Findings the segmenter test surfaced (both confirm the RESULTS analysis):
 
 1. **Raw `<div n="p">` count ≥ true-upasarga count.** The slicer finds **40** prefix
