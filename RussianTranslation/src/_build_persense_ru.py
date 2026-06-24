@@ -40,11 +40,19 @@ def match_lemmas(ru, lemma):
         return out
     return {SYN.get(lemma, lemma)}
 
+# where a headword's own theonym should land (specific referent, not generic)
+ROUTE = {'agni': r'бог огня|\bбог\b', 'ananta': r'Шеша', 'aksara': r'Высшее Существо', 'anya': None}
 _word = re.compile(r'[А-Яа-яЁё]+')
+_COUNT = re.compile(r'\bодн(?:ого|ой|ому|им|ом|а|о|у|и)?\s+из\b', re.I)  # "one of" scaffolding
 def gloss_lemmas(ru_gloss):
-    """content lemmas of a Russian sense-gloss (drop 1-2 char tokens, func words)"""
+    """content lemmas of a Russian sense-gloss (drop 1-2 char tokens, func words,
+    scaffolding 'имя/название/эпитет' and the counting phrase 'один из …')"""
+    ru_gloss = _COUNT.sub(' ', ru_gloss)
+    STOP = {'имя', 'название', 'эпитет', 'разновидность'}
     out = set()
     for tok in _word.findall(ru_gloss):
+        if tok.lower() in STOP:
+            continue
         if len(tok) < 3:
             continue
         lem = ch.lemma_key(tok)
@@ -62,13 +70,13 @@ def load_senses(w):
             senses.append((lbl, en, ru, gloss_lemmas(ru)))
     return senses
 
-def assign(ru, lemma, pos, senses, theos):
+def assign(ru, lemma, pos, senses, theos, route):
     """return list of sense indices this rendering supports"""
     mls = match_lemmas(ru, lemma)
-    if (pos == 'name' and lemma in theos) or (mls & theos):
-        # principal name/deva sense: first sense whose RU gloss names a god/имя/бог
+    if route and ((pos == 'name' and lemma in theos) or (mls & theos)):
+        # route the headword's own theonym to its specific referent sense
         for i,(lbl,en,ru2,ls) in enumerate(senses):
-            if re.search(r'\bбог\b|божество|имя |Высшее Существо|Шеша|Вишну', ru2):
+            if re.search(route, ru2):
                 return [i]
     return [i for i,(lbl,en,ru2,ls) in enumerate(senses) if mls & ls]
 
@@ -92,7 +100,7 @@ for w, keys in WORDS.items():
     mapped_occ = 0; total_occ = sum(a['n'] for a in agg.values())
     for lem,a in sorted(agg.items(), key=lambda kv:-kv[1]['n']):
         ru_form = a['forms'].most_common(1)[0][0]
-        sidx = assign(ru_form, lem, a['pos'], senses, THEONYM[w])
+        sidx = assign(ru_form, lem, a["pos"], senses, THEONYM[w], ROUTE[w])
         if sidx:
             for i in sidx: persense[i].append((lem,a))
             mapped_occ += a['n']
