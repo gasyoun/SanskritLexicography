@@ -1,0 +1,83 @@
+#!/usr/bin/env python
+"""audit_translation.py — deterministic, judge-independent fidelity gate for translated cards.
+
+Complements run_real_test.py (the Opus judge) and nws_split.py (owner-map parse) with a cheap
+format-invariant check that scales to the full freq run (you cannot eyeball 142k units). For
+every <stem>.merged.md vs its <stem>.raw.txt source it checks the HARD invariants:
+
+  LS   every <ls>…</ls> literary-source citation is preserved (output keeps >=90% — the source
+       sigla are demonstrable usage and must survive verbatim).
+  SAN  every {#…#} Sanskrit span is preserved (>=85% of the distinct spans).
+  RU   the output actually contains Russian (Cyrillic) when the source had {%…%} gloss prose
+       to translate (else the card is empty / untranslated).
+
+Reports per-unit s/o counts and flags; exits non-zero if any unit fails (CI-usable).
+
+  python audit_translation.py [manifest.json]   # default: scale_manifest.freqtest.json
+"""
+import json, os, re, sys
+
+sys.stdout.reconfigure(encoding='utf-8')
+sys.stderr.reconfigure(encoding='utf-8')
+
+HERE = os.path.dirname(os.path.abspath(__file__))
+IN = os.path.join(HERE, 'pilot', 'input')
+OUT = os.path.join(HERE, 'pilot', 'output')
+
+LS = re.compile(r'<ls\b')
+SAN = re.compile(r'\{#.*?#\}')
+GER = re.compile(r'\{%.*?%\}')
+CYR = re.compile(r'[а-яёА-ЯЁ]')
+
+LS_KEEP, SAN_KEEP = 0.90, 0.85
+
+
+def body(t):
+    return t.split('===\n\n', 1)[1] if '===\n\n' in t else t
+
+
+def audit_unit(stem):
+    rawp, outp = os.path.join(IN, stem + '.raw.txt'), os.path.join(OUT, stem + '.merged.md')
+    if not os.path.exists(outp):
+        return stem, None, ['NO-OUTPUT']
+    rb = body(open(rawp, encoding='utf-8').read())
+    out = open(outp, encoding='utf-8').read()
+    sls, ols = len(LS.findall(rb)), len(LS.findall(out))
+    ssan, osan = len(set(SAN.findall(rb))), len(set(SAN.findall(out)))
+    cyr = bool(CYR.search(out))
+    flags = []
+    if sls > 0 and ols < sls * LS_KEEP:
+        flags.append('LS-LOSS(%d/%d)' % (ols, sls))
+    if ssan > 0 and osan < ssan * SAN_KEEP:
+        flags.append('SAN-LOSS(%d/%d)' % (osan, ssan))
+    if GER.search(rb) and not cyr:
+        flags.append('NO-RUSSIAN')
+    return stem, (sls, ols, ssan, osan, cyr), flags
+
+
+def main():
+    mpath = sys.argv[1] if len(sys.argv) > 1 else os.path.join(OUT, 'scale_manifest.freqtest.json')
+    stems = [e['key1'] for e in json.load(open(mpath, encoding='utf-8'))]
+    print('=== translation fidelity audit (%d units) ===' % len(stems))
+    print('%-24s %-10s %-10s %-5s %s' % ('unit', 'ls s/o', 'san s/o', 'ru', 'flags'))
+    fails = []
+    for s in stems:
+        stem, nums, flags = audit_unit(s)
+        if nums is None:
+            print('%-24s %s' % (stem[:24], ' '.join(flags)))
+            fails.append(stem)
+            continue
+        sls, ols, ssan, osan, cyr = nums
+        print('%-24s %-10s %-10s %-5s %s' % (
+            stem[:24], '%d/%d' % (sls, ols), '%d/%d' % (ssan, osan),
+            'Y' if cyr else 'n', ' '.join(flags) if flags else 'ok'))
+        if flags:
+            fails.append(stem)
+    print('\n%s: %d/%d units clean%s'
+          % ('PASS' if not fails else 'FAIL', len(stems) - len(fails), len(stems),
+             '' if not fails else ' | flagged: ' + ', '.join(fails)))
+    sys.exit(0 if not fails else 1)
+
+
+if __name__ == '__main__':
+    main()
