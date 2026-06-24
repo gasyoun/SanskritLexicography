@@ -22,7 +22,9 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
     `mw_deriv.py` — MW derivation oracle + link table (133.7 k rows) from Funderburk's
     `MWderivations`; `root_merge.py` — PWG↔MW merged comparative article (bhū 33/41 aligned);
     `apte_parse.py` — Apte Sanskrit–Hindi → independent root oracle (1,654 dhātus, 793 not in
-    verbs01).
+    verbs01) + `productivity` (affix-productivity from 38,757 `+`-etymologies: upasarga×root —
+    `vi`>`sam`>`pra` — and kṛt/taddhita pratyaya×root — `kta`>`ṭāp`>`lyuṭ`>`ac` — cross-listed
+    with MWderivations' `wsfx` surface-suffix counts `-tva`>`-tā`>`-vat`; → `apte_productivity.tsv`).
 - **Wired into the pipeline (the unblocker):** `_pilot_gen_merged.py --root-split` (also
   `--manifest freq --root-split`) auto-detects a giant root (≥8 prefix divisions) and explodes
   it into one single-pass-sized sub-card per prefix — HEAD card keeps the simple verb + all
