@@ -316,3 +316,21 @@ not per-gloss); fine for batching, wants per-gloss citation alignment before pro
    inline as `— <ab>caus./desid./intens.</ab>` (often inside `<div n="v">`/`<div n="p">`),
    which is what `preverb1.mark_entries_verb()` keys on. The per-dict segmenter rules in
    RESULTS therefore need a per-dict secondary-conjugation cue, not a shared one.
+
+### Verification re-run (2026-06-24) — segmenter + glue confirmed working end-to-end
+
+Re-ran all three on the current `csl-orig` to confirm no drift:
+
+| Test | Result |
+|---|---|
+| `root_segment_proto.py` self-test (bhū L=55166, gam L=21814, gam L=72578) | **LOSSLESS** round-trip on all three (41 / 63 / 36 sub-cards) |
+| `root_glue.py pwg 55166` (bhū) | 41 sub-cards reordered to canonical SLP1/Pāṇinian order, **content-preserving=True** |
+| `root_glue.py mw BU` (bhū) | 1 head + 34 preverb records assembled (0 cvi/denominal misclassified) |
+
+So the SPLIT⇄NESTED machinery is complete and correct as a prototype. **The one remaining
+gap is production wiring**: `_pilot_gen_merged.py` does not yet auto-invoke the segmenter on
+a giant-root record before merged-generation (the `--root-split` hook sketched in the
+DECISION section). That integration — plus the per-gloss `keep`-list alignment noted above —
+is the only thing between this prototype and running the frequency-first queue, whose top is
+exactly these giant roots (`freq_route.py`: #1 sthā, #2 bhū, #3 gam …). Tracked as the next
+build; the slicer/glue themselves need no further work.
