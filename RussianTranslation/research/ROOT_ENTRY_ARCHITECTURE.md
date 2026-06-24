@@ -376,4 +376,40 @@ keying against the SLP1 pipeline — that parser is the next build for this reso
 
 **Net effect on the plan:** the MW compound/derivation side is now *solved upstream* (use
 `mw_deriv.py`); the home-grown linker stays only for **PWG** (which `MWderivations` doesn't
-cover) and as a fallback. Apte S–H integration (transcode + 4 roles) is queued.
+cover) and as a fallback.
+
+---
+
+## BUILDS A–C (2026-06-24) — resources wired in, segmenter proven corpus-wide
+
+Three builds, run one at a time after the resources landed:
+
+### Build A — Apte Sanskrit–Hindi parser + root oracle ([`apte_parse.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/research/apte_parse.py))
+Parses the vendored `apte-hi.babylon` (Devanāgarī→SLP1 via `sanskrit-util`): **111,139
+sense-records → 60,667 headwords**; POS=`D` + the field-2 prefix-root parse give an
+**independent root oracle** — 1,654 primary dhātus + 1,616 prefixed verbs (`anuBU→anu+BU`,
+`praBU→pra+BU`, with Hindi glosses). Independence check vs `verbs01`: **861 overlap, 793
+Apte-only roots** (real new coverage). Tracks [`apte_roots.tsv`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/research/apte_roots.tsv); the babylon is the
+3rd SPLIT/NESTED datapoint — structurally **SPLIT** (a flat headword list).
+
+### Build B — PWG↔MW merged comparative article ([`root_merge.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/research/root_merge.py))
+Aligns PWG sub-cards (NESTED in one record) with MW prefixed-verb records (SPLIT across the
+file) on the canonical parse key — one article, PWG German beside MW English per prefix.
+`bhū`: **41 prefixes, 33 in both**, 7 PWG-only, 1 MW-only. The PWG-only set is exactly the
+`verbs01`-undecomposed surface forms (`atyaBi`=ati+aBi, `anupra`=anu+pra, `vyati`=vi+ati) —
+build #3 hardening folds them into "both".
+
+### Build C — harden + fold + scale-test
+- **Harden** ([`lex_noun_link.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/research/lex_noun_link.py)): `clean()` strips the stray-token leak (the
+  `aDi)+BU` class) → coverage **30.9 % → 34.8 %** (42,924 links).
+- **Fold** ([`mw_deriv.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/research/mw_deriv.py) `link`): the MW link table (**133,739 rows**) now comes from
+  Funderburk's authoritative analysis, not faked prose.
+- **Scale-test** ([`scale_test.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/research/scale_test.py)): segment **all 1,163** `verbs01` verb roots in one
+  pass → **1,163 / 1,163 LOSSLESS** round-trips. 8,588 slicer prefix-cards vs 8,361 vetted
+  upasargas (**+227 FP gap, 159 roots** need `verbs01`'s guard — confirms analysis #2 at
+  scale). Biggest roots: `i` 114, `har` 89, `DA` 82, `vart` 78, `sTA` 73/70, `gam` 62/61.
+
+**State:** slicer/glue/merge proven across the corpus; MW derivation/compound solved
+upstream; PWG linker hardened; Apte oracle independent. Remaining: Apte roles (b)/(c)/(d)
+beyond the oracle, the per-gloss `keep` alignment, and the `_pilot_gen_merged` `--root-split`
+hook to run the frequency-first queue.
