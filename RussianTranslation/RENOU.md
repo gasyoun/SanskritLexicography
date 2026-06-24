@@ -108,8 +108,10 @@ so the curated signal is untouched. Only 33 maximal lemmas fall below five state
 The residual `dcs_adds` breadth (MW 52 %, BEN 76 %) is **not** pruned, and that is
 correct: it is dominated by genuinely era-neutral high-frequency words — `ca`, `idam`,
 `akāra` carry well-attested high-confidence support in *every* era, so their I–V span
-is corpus-accurate, merely uninformative. That is a *display* concern (flag an all-five
-tag as low-information in `renou_portrait`), not a tagging error to delete.
+is corpus-accurate, merely uninformative. That is a *display* concern, not a tagging
+error to delete: `renou_portrait.portrait()` now sets **`renou_low_info: True`** on an
+all-era span (tunable via `LOW_INFO_MIN_STATES`) so a UI can de-emphasise the badge
+rather than show a meaningless five-era label.
 
 ## Reproduce
 
