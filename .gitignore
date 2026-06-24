@@ -56,3 +56,4 @@ RussianTranslation/src/pilot/root_translate/
 # regenerate with research/lex_noun_link.py
 # vendored external resources (re-fetch: MWderivations + stardict-sanskrit apte-hi)
 RussianTranslation/research/external/
+RussianTranslation/research/apte_sidecar.tsv
