@@ -40,14 +40,43 @@
 первой **чисто деванагарской** формы записи, иначе строку отбрасывает: 4
 восстановлено (3 koch + 1 fri), 6 отброшено (5 fri + 1 smirnov).
 
+## Хинди-сигнал значения (indic-dict) — `build_indic.py`
+
+Помимо пяти санскритско-русских словарей, шлюз использует МЯГКИЙ
+**третьеязычный сигнал ЗНАЧЕНИЯ** на хинди — для снятия многозначности (какое
+значение головное), НЕ для корректности русского перевода. Источник —
+словари [indic-dict/stardict-sanskrit](https://github.com/indic-dict/stardict-sanskrit),
+свободное использование с атрибуцией (мейнтейнер, e-mail 2026-06-24; см.
+[../INDIC_DICT_EVALUATION.md](../INDIC_DICT_EVALUATION.md)).
+
+[build_indic.py](build_indic.py) парсит StarDict-экспорты `.babylon` (заглавное
+слово — деванагари, глосса — хинди) в SLP1-ключённый JSONL:
+
+| Файл | Словарь | Записей | Покрытие PWG |
+|------|---------|---------|--------------|
+| `apte_hi.jsonl` | Apte → हिन्दी | 111 235 | 31.7 % |
+| `vedic_rituals_hi.jsonl` | ведийская обрядовая лексика → हिन्दी | 6 166 | 2.3 % |
+
+Строка: `{source, slp1, stem, dev, pos, gloss, attribution}`. apte-hi даёт леммы
+в **именительном падеже** (अग्निः→`agniH`, फलम्→`…am`), а PWG ключит по основе —
+поэтому добавлено поле `stem` (снятие nom-sg висарги / среднего `-am`), и индекс
+шлюза несёт оба ключа. Эти словари в `heuristic()` НЕ подаются (хинди ≠ русский);
+они только наполняют `hindi_sense` карточки и могут попасть в `corroborated_by`
+как `"Hindi"` (правило 8 в
+[../pwg_ru_prompts/4_korpus_proverka.txt](../pwg_ru_prompts/4_korpus_proverka.txt)).
+
+Исходные `.babylon` лежат (gitignored) в `../research/external/`; выходные
+`*.jsonl` тоже gitignored.
+
 ## Регенерация
 
 ```sh
-python build_src.py [путь-к-SamudraManthanam]
+python build_src.py [путь-к-SamudraManthanam]      # 5 санскр.-рус. словарей
+python build_indic.py [путь-к-.babylon-каталогу]   # хинди-сигнал значения
 ```
 
-По умолчанию читает `web/corpus_builder/jsonl/` соседнего репозитория
-SamudraManthanam.
+`build_src.py` по умолчанию читает `web/corpus_builder/jsonl/` соседнего
+репозитория SamudraManthanam; `build_indic.py` — `../research/external/`.
 
 ## Git и авторские права
 

@@ -38,6 +38,23 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
   records, 0 failures); 60/60 top giant roots LOSSLESS · all homonyms split · glue-complete
   · portraits present (3,035 sub-cards); whole-card regression OK; csl-orig untouched.
 
+### indic-dict Hindi sense signal folded into the stage-4 gate
+- **License cleared** (free use with attribution, all four Indic-gloss dicts, by email)
+  → folded the two Hindi ones as a soft **third-language sense signal** (which sense is
+  primary), never a correctness vote. New [src/build_indic.py](src/build_indic.py)
+  parses the `.babylon` exports (Devanagari headword → Hindi gloss) into SLP1-keyed
+  JSONL: **111,235 `apte_hi` + 6,166 `vedic_rituals_hi`**. apte-hi cites nominatives
+  (अग्निः→`agniH`), so each row also carries a `stem` key and is indexed under both.
+- **Gate:** [src/corpus_gate.py](src/corpus_gate.py) gains a `SENSE` index +
+  `lookup_sense()`; `build_card` emits `hindi_sense`; kept **out** of the Russian-token
+  `heuristic()`. [pwg_ru_prompts/4_korpus_proverka.txt](pwg_ru_prompts/4_korpus_proverka.txt)
+  gains Rule 8 + the `hindi_sense` input field + `"Hindi"` in `corroborated_by`.
+- **Coverage:** Hindi sense gloss for **32.7 %** of PWG headwords (apte_hi 31.7 %,
+  vedic 2.3 %) — ~2× the Russian correctness coverage (16.4 %). Verified joins: `agni`
+  (4 senses incl. the three ritual fires), `arTa`, `aMSa` (कंधा = «плечо»).
+- Kannada (`shabdArtha_kaustubha`) / Tamil (`samskritam-tamizham`) held pending a
+  reader. Full assessment in [INDIC_DICT_EVALUATION.md](INDIC_DICT_EVALUATION.md).
+
 ### indic-dict / stardict-sanskrit evaluated as a source — declined, deferred
 - New [INDIC_DICT_EVALUATION.md](INDIC_DICT_EVALUATION.md). Most of the repo
   (en-head reverse indexes, EN/FR/DE/SA gloss sets) is **Cologne-generated** —
