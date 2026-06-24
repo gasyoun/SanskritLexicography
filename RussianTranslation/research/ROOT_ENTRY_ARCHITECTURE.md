@@ -225,7 +225,44 @@ L=21814  k1=gam  lines=1695  sub-cards=63 (1 head + 62 prefix)  round-trip=LOSSL
 L=72578  k1=gam  lines=180   sub-cards=36 (1 head + 35 prefix)  round-trip=LOSSLESS
 ```
 
-Two findings the test surfaced (both confirm the RESULTS analysis):
+### NESTED glue — PWG + MW (built 2026-06-24)
+
+[`root_glue.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/research/root_glue.py) is the SPLIT→NESTED inverse (presentation view, lossy-by-bytes by
+design). Ordering is **by the parse string**: simple verb first, then prefixed forms
+sorted under SLP1/Sanskrit collation so forms group by shared outer prefix. It is
+dict-independent on purpose — we *merge* dicts, so one canonical order beats any single
+dict's native sequence (PWG/GRA print order is Devanāgarī-alphabetical; this is too).
+
+```
+PWG glue  L=55166 k1=BU : 41 sub-cards reordered (1 head + 40 prefix)  content-preserving=True
+   order: ati+BU atyaBi+BU anu+BU anu+A+BU anu+parA+BU anu+vi+BU anu+sam+BU antaH+BU apa+BU aBi+BU aBi+pra+BU aBi+sam+BU A+BU ...
+MW glue   root=BU : 1 head + 34 preverb records assembled (0 cvi/denominal excluded)
+   order: ati+BU anu+BU anu+A+BU anu+parA+BU anu+vi+BU anu+sam+BU antaH+BU apa+BU aBi+BU aBi+pra+BU aBi+sam+BU A+BU Avis+BU ud+BU upa+BU upa+pra+BU ...
+```
+
+- **PWG mode** reuses `root_segment_proto.segment()` and reorders the sub-cards;
+  content-preserving (same line multiset, only reordered). Parse strings are read from
+  `verbs01/pwg_preverb1.txt` (already computed); unmatched forms fall back to a
+  single-prefix parse (e.g. `atyaBi+BU` instead of the ideal `ati+aBi+BU`).
+- **MW mode** is the real win: it gathers the **scattered** `<L>` records (alphabetised
+  across the file) for the root into one article — the genuineroot head + every
+  `verb="pre"` record whose `parse` is upasarga(s)+root. The **upasarga-set classifier**
+  cleanly keeps cvi/denominal `parse` forms (`kfzRI+BU`, `ekI+BU`, `a+punar+BU`) out of
+  the verbal glue. Output written to `glue_mw_<root>.txt`.
+
+### Lexicalised-noun linking — spec (decided 2026-06-24, to build)
+
+Decisions (user): **(1) root_key = chain** — each nominal carries both its immediate
+prefixed base *and* the ultimate verbal root (`anuBUti → anuBU → BU`). **(2) source of
+truth = the dict's own derivation field, morphology as fallback** — parse PWG's
+parenthetical `(von {#BU#} mit {#aDi#})` / `(wie eben)` and MW's native `parse="aDi+BU"`;
+strip-upasarga-and-match only where the dict says nothing. **(3) scope = full derivative
+family** (prefix-nominals + suffix-derivatives + compounds-of-derivatives). **(4) output
+= a non-destructive sidecar link table** (`headword → root_key, immediate_base, upasarga,
+derivation_type, source`); never edits csl-orig. The table feeds both the translation
+manifest and `root_glue.py`'s nesting.
+
+### Findings the segmenter test surfaced (both confirm the RESULTS analysis):
 
 1. **Raw `<div n="p">` count ≥ true-upasarga count.** The slicer finds **40** prefix
    divisions for `bhū` vs `preverb1`'s **38** upasargas — the surplus is exactly the FP
