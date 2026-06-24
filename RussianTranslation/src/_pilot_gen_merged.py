@@ -15,6 +15,8 @@ like "|" don't collide or become unwritable on Windows.
   python _pilot_gen_merged.py [key ...]              default: a small NWS-exercising batch
   python _pilot_gen_merged.py --manifest a           whole a-section, coverage-first order
   python _pilot_gen_merged.py --manifest a --limit 300   first 300 of that order (scale slice)
+  python _pilot_gen_merged.py --root-split BU gam        explode giant roots into per-prefix sub-cards
+  python _pilot_gen_merged.py --manifest freq --root-split   freq queue, auto-splitting giant roots
 
 --manifest reads scale_route.py's scale_manifest.<section>.json (run scale_route first),
 so input generation follows the same coverage-first HEAVY/LIGHT ordering the scale driver
@@ -32,6 +34,13 @@ from safe_filename import safe_name
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(HERE, 'pilot', 'input')
+
+sys.path.insert(0, os.path.join(HERE, '..', 'research'))
+import root_segment_proto as RS                 # the lossless <div n="p"> root slicer
+
+# Only explode genuinely GIANT roots (the ones that kill a single-pass translation);
+# small records with 1-2 prefix divisions stay whole.
+MIN_SPLIT = int(os.environ.get('ROOT_SPLIT_MIN', '8'))
 
 DEFAULT = ['arTa', 'agni', 'amfta', 'aMSa', 'anna', 'akzara']
 
@@ -137,6 +146,60 @@ def gen_card(key, pwg_idx, verbose=True):
     return layer_counts
 
 
+def gen_root_split(key, pwg_idx, verbose=True):
+    """--root-split: explode a GIANT root record into one single-pass-sized sub-card per
+    prefix (the fix for 'translation pass dies on bhū/vid'). The HEAD sub-card (simple verb)
+    carries the PW/SCH/PWKVN/NWS supplements + owner map exactly as gen_card; each PREFIX
+    sub-card is just its <div n="p"> block. Writes <safe>~~NN[_upa].raw.txt per sub-card and
+    <safe>.rootmap.json (root_key/upasarga/seg_index, parse order) so root_glue can reassemble.
+    Returns sub-card count, or None if the key is absent / not giant (caller falls back)."""
+    fk = cg.form_key(key)
+    bufs = pwg_idx.get(fk, [])
+    if not bufs:
+        return None
+    datalines = [l for l in bufs[0] if not (l.startswith('<L>') or l.startswith('<LEND>'))]
+    cards = RS.segment(datalines)
+    npfx = sum(1 for c in cards if c['kind'] == 'prefix')
+    if npfx < MIN_SPLIT:
+        return None                                 # not giant — let gen_card handle it whole
+    root = safe_name(key)
+    submap = []
+    for seg, c in enumerate(cards):
+        upa = c['upasarga']
+        sub = '%s~~%02d%s' % (root, seg, '_' + safe_name(upa) if upa else '')
+        if c['kind'] == 'prefix':
+            hdr = ('PWG-ROOT SUBCARD — root=%s upasarga=%s seg=%d (prefixed verb, nested in '
+                   'the %s root article; root_key links it back)' % (key, upa, seg, key))
+            secs = ['=== LAYER: %s ===\n\n%s' % (hdr, '\n'.join(c['lines']))]
+        else:
+            hdr = ('PWG-ROOT HEAD — root=%s seg=%d (simple verb + senses; the supplement '
+                   'layers attach to this head card)' % (key, seg))
+            secs = ['=== LAYER: %s ===\n\n%s' % (hdr, '\n'.join(c['lines']))]
+            for L in dm.merged(key):                # PW / SCH / PWKVN / NWS on the head only
+                if L['layer'] == 'pwg':
+                    continue
+                for r in L['records']:
+                    secs.append('=== LAYER: %s ===\n\n%s' % (ROLE.get(L['layer'], L['layer'].upper()), r))
+            omap = nws_owner_map(key)
+            if omap:
+                secs.append(
+                    '=== LAYER: NWS — PRE-PARSED OWNER MAP (AUTHORITATIVE, %d entries) ===\n\n'
+                    'Emit EXACTLY one card row per numbered entry; copy its [NWS: OWNER] VERBATIM;\n'
+                    'translate the gloss from its own language; keep IAST/sigla. Do NOT re-derive '
+                    'owners.\n\n%s' % (omap.count('\n') + 1, omap))
+        open(os.path.join(OUT, sub + '.raw.txt'), 'w', encoding='utf-8').write('\n\n'.join(secs))
+        json.dump([], open(os.path.join(OUT, sub + '.portrait.json'), 'w', encoding='utf-8'))
+        submap.append({'subkey': sub, 'seg_index': seg, 'kind': c['kind'],
+                       'upasarga': upa, 'root_key': key})
+    json.dump({'root': key, 'safe': root, 'sub_cards': submap},
+              open(os.path.join(OUT, root + '.rootmap.json'), 'w', encoding='utf-8'),
+              ensure_ascii=False, indent=1)
+    if verbose:
+        print('  %-10s ROOT-SPLIT → %d sub-cards (1 head + %d prefix) → %s~~*.raw.txt + rootmap'
+              % (key, len(cards), npfx, root))
+    return len(cards)
+
+
 def manifest_keys(section):
     p = os.path.join(HERE, 'pilot', 'output', 'scale_manifest.%s.json' % section)
     if not os.path.exists(p):
@@ -147,6 +210,9 @@ def manifest_keys(section):
 def main():
     args = sys.argv[1:]
     limit = None
+    root_split = '--root-split' in args
+    if root_split:
+        args.remove('--root-split')
     if '--limit' in args:
         i = args.index('--limit'); limit = int(args[i + 1]); del args[i:i + 2]
     if '--manifest' in args:
@@ -183,11 +249,17 @@ def main():
     print('merged pilot: %d key(s)%s, %d to generate'
           % (len(keys), ' [scaled, resumable]' if scaled else '', len(todo)))
 
-    n = missing = with_nws = 0
+    n = missing = with_nws = split_roots = split_subcards = 0
     errored = []                       # keys unwritable on this FS (e.g. '|' in arI|a)
     lc_tot = {'pw': 0, 'sch': 0, 'pwkvn': 0, 'nws': 0}
     for j, key in enumerate(todo, 1):
         try:
+            if root_split:
+                nsub = gen_root_split(key, pwg_idx, verbose=not scaled)
+                if nsub is not None:   # giant root -> exploded into sub-cards; skip whole-card gen
+                    split_roots += 1
+                    split_subcards += nsub
+                    continue
             lc = gen_card(key, pwg_idx, verbose=not scaled)
         except OSError as e:           # one bad key must not kill an 11k-card run
             errored.append(key)
@@ -208,6 +280,9 @@ def main():
     print('wrote %d merged pilot inputs → %s%s%s'
           % (n, OUT, (' (%d missing in PWG)' % missing) if missing else '',
              (' (%d unwritable: %s)' % (len(errored), errored)) if errored else ''))
+    if root_split and split_roots:
+        print('  ROOT-SPLIT: %d giant root(s) exploded into %d sub-cards (+ rootmap.json each)'
+              % (split_roots, split_subcards))
     if scaled and n:
         print('  layer coverage: PW %d (%.0f%%)  SCH %d (%.0f%%)  PWKVN %d (%.0f%%)  NWS-extra %d (%.0f%%)'
               % (lc_tot['pw'], 100 * lc_tot['pw'] / n, lc_tot['sch'], 100 * lc_tot['sch'] / n,

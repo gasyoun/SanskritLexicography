@@ -23,6 +23,13 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
     `MWderivations`; `root_merge.py` — PWG↔MW merged comparative article (bhū 33/41 aligned);
     `apte_parse.py` — Apte Sanskrit–Hindi → independent root oracle (1,654 dhātus, 793 not in
     verbs01).
+- **Wired into the pipeline (the unblocker):** `_pilot_gen_merged.py --root-split` (also
+  `--manifest freq --root-split`) auto-detects a giant root (≥8 prefix divisions) and explodes
+  it into one single-pass-sized sub-card per prefix — HEAD card keeps the simple verb + all
+  supplements + NWS owner map; each prefix sub-card is its own `<div n="p">` block — plus a
+  `<safe>.rootmap.json` for `root_glue` reassembly. `BU`→41 sub-cards (head 820 lines + 93-entry
+  owner map; `anu` prefix card 87 lines vs the 1315-line whole record), `gam`→63. This lets the
+  frequency-first queue (top = sthā/bhū/gam) run without the single-pass death.
 - **Scale-proven:** `scale_test.py` segments **all 1,163 PWG verb roots, 100 % LOSSLESS**;
   the slicer's 8,588 prefix-divisions vs verbs01's 8,361 vetted upasargas (+227 FP gap, 159
   roots) confirm the false-positive guard is needed at scale.
