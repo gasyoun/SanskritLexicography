@@ -107,16 +107,40 @@ def mine(rows):
     return roots, examples
 
 
-def pick_examples(cands):
-    """Prefer short, root-diverse, non-negated (skip leading a-/an-) example derivatives."""
-    cands = sorted(cands, key=lambda e: (e['word_iast'].startswith(('a', 'an')), len(e['word_iast'])))
+def _surface_match(word, surface):
+    """A real example of affix -X ends in -X once a case ending is stripped (the correctness
+    guard that drops mis-mined forms, e.g. -vin should not yield 'kanakam')."""
+    w = word
+    for suf in ('āḥ', 'aḥ', 'am', 'āni', 'ā', 'ḥ', 'm', 'ḥ'):
+        if w.endswith(suf) and len(w) > len(suf) + 1:
+            w = w[:-len(suf)]
+            break
+    return w.endswith(surface) or word.endswith(surface)
+
+
+def pick_examples(cands, surface=''):
+    """Prefer examples that actually END in the surface suffix (correctness), then root-diverse,
+    short, and non-negated (skip leading a-/an-). The surface-match guard drops mis-mined forms."""
+    def key(e):
+        w = e['word_iast']
+        return (not _surface_match(w, surface) if surface else False,
+                w.startswith(('a', 'an')), len(w))
+    cands = sorted(cands, key=key)
     out, seen_root = [], set()
     for e in cands:
         if e['root'] in seen_root:
             continue
+        if surface and len(surface) >= 2 and not _surface_match(e['word_iast'], surface):
+            continue                                  # for distinctive suffixes, require the match
         seen_root.add(e['root']); out.append(e)
         if len(out) >= 6:
             break
+    if not out:                                       # fall back rather than show nothing
+        for e in cands:
+            if e['root'] not in seen_root:
+                seen_root.add(e['root']); out.append(e)
+            if len(out) >= 6:
+                break
     return out or cands[:6]
 
 
@@ -151,7 +175,7 @@ def main():
         for e in ex:
             if e['word'] not in seen:
                 seen.add(e['word']); exu.append(e)
-        exu = pick_examples(exu)
+        exu = pick_examples(exu, r['surface'])
         mwc = sum(mw.get(k, 0) for k in r['mw_wsfx'].split('|') if k != '-')
         affixes.append({
             'surface': r['surface'], 'surface_deva': r['surface_deva'],

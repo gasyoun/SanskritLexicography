@@ -41,9 +41,9 @@
      "word_iast": "utta"
     },
     {
-     "root": "vah",
-     "word": "ऊढ",
-     "word_iast": "ūḍha"
+     "root": "tana",
+     "word": "तत",
+     "word_iast": "tata"
     }
    ]
   },
@@ -113,34 +113,34 @@
    "mw_count": 0,
    "examples": [
     {
-     "root": "ūṣ",
-     "word": "ऊषणा",
-     "word_iast": "ūṣaṇā"
+     "root": "jīv",
+     "word": "जीवन",
+     "word_iast": "jīvana"
     },
     {
-     "root": "dā",
-     "word": "दानम्",
-     "word_iast": "dānam"
+     "root": "kam",
+     "word": "कमन",
+     "word_iast": "kamana"
     },
     {
-     "root": "yā",
-     "word": "यानम्",
-     "word_iast": "yānam"
+     "root": "kal",
+     "word": "कालन",
+     "word_iast": "kālana"
     },
     {
-     "root": "hā",
-     "word": "हानम्",
-     "word_iast": "hānam"
+     "root": "gah",
+     "word": "गहन",
+     "word_iast": "gahana"
     },
     {
      "root": "ā",
-     "word": "आदानम्",
-     "word_iast": "ādānam"
+     "word": "आमोदन",
+     "word_iast": "āmodana"
     },
     {
-     "root": "ās",
-     "word": "आसनम्",
-     "word_iast": "āsanam"
+     "root": "jval",
+     "word": "ज्वलन",
+     "word_iast": "jvalana"
     }
    ]
   },
@@ -160,19 +160,9 @@
    "mw_count": 0,
    "examples": [
     {
-     "root": "ā",
-     "word": "आशा",
-     "word_iast": "āśā"
-    },
-    {
      "root": "ūn",
      "word": "ऊन",
      "word_iast": "ūna"
-    },
-    {
-     "root": "il",
-     "word": "इडा",
-     "word_iast": "iḍā"
     },
     {
      "root": "tap",
@@ -188,6 +178,16 @@
      "root": "la",
      "word": "लल",
      "word_iast": "lala"
+    },
+    {
+     "root": "loḍ",
+     "word": "लोल",
+     "word_iast": "lola"
+    },
+    {
+     "root": "tṛ",
+     "word": "तार",
+     "word_iast": "tāra"
     }
    ]
   },
@@ -255,26 +255,6 @@
    "mw_count": 0,
    "examples": [
     {
-     "root": "ā",
-     "word": "आरा",
-     "word_iast": "ārā"
-    },
-    {
-     "root": "aś",
-     "word": "आशः",
-     "word_iast": "āśaḥ"
-    },
-    {
-     "root": "ās",
-     "word": "आसः",
-     "word_iast": "āsaḥ"
-    },
-    {
-     "root": "ūh",
-     "word": "ऊहः",
-     "word_iast": "ūhaḥ"
-    },
-    {
      "root": "kal",
      "word": "कल",
      "word_iast": "kala"
@@ -283,6 +263,26 @@
      "root": "yam",
      "word": "यम",
      "word_iast": "yama"
+    },
+    {
+     "root": "ram",
+     "word": "राम",
+     "word_iast": "rāma"
+    },
+    {
+     "root": "ud",
+     "word": "उदास",
+     "word_iast": "udāsa"
+    },
+    {
+     "root": "khaṇḍ",
+     "word": "खण्ड",
+     "word_iast": "khaṇḍa"
+    },
+    {
+     "root": "dṛ",
+     "word": "दीर्घ",
+     "word_iast": "dīrgha"
     }
    ]
   },
@@ -302,34 +302,34 @@
    "mw_count": 0,
    "examples": [
     {
-     "root": "ā",
-     "word": "आलि",
-     "word_iast": "āli"
-    },
-    {
      "root": "ūh",
      "word": "ऊहिन्",
      "word_iast": "ūhin"
     },
     {
-     "root": "ni",
-     "word": "नीवी",
-     "word_iast": "nīvī"
+     "root": "jīva",
+     "word": "जीविन्",
+     "word_iast": "jīvin"
     },
     {
-     "root": "naḍ",
-     "word": "नाडी",
-     "word_iast": "nāḍī"
+     "root": "pel",
+     "word": "पेलिन्",
+     "word_iast": "pelin"
     },
     {
-     "root": "rāj",
-     "word": "राजी",
-     "word_iast": "rājī"
+     "root": "kar",
+     "word": "करिन्",
+     "word_iast": "karin"
     },
     {
-     "root": "ānāya",
-     "word": "आनायी",
-     "word_iast": "ānāyī"
+     "root": "kāya",
+     "word": "कायिन्",
+     "word_iast": "kāyin"
+    },
+    {
+     "root": "gaja",
+     "word": "गजिन्",
+     "word_iast": "gajin"
     }
    ]
   },
@@ -350,24 +350,9 @@
    "mw_count": 37,
    "examples": [
     {
-     "root": "i",
-     "word": "एकः",
-     "word_iast": "ekaḥ"
-    },
-    {
-     "root": "kai",
-     "word": "काकः",
-     "word_iast": "kākaḥ"
-    },
-    {
      "root": "ātman",
      "word": "आत्मक",
      "word_iast": "ātmaka"
-    },
-    {
-     "root": "āryā",
-     "word": "आर्यका",
-     "word_iast": "āryakā"
     },
     {
      "root": "ud",
@@ -378,6 +363,21 @@
      "root": "uṣṇa",
      "word": "उष्णक",
      "word_iast": "uṣṇaka"
+    },
+    {
+     "root": "toṭa",
+     "word": "तोटक",
+     "word_iast": "toṭaka"
+    },
+    {
+     "root": "prati",
+     "word": "प्रतीक",
+     "word_iast": "pratīka"
+    },
+    {
+     "root": "pheṇa",
+     "word": "फेणक",
+     "word_iast": "pheṇaka"
     }
    ]
   },
@@ -451,16 +451,6 @@
      "word_iast": "āvika"
     },
     {
-     "root": "kuja",
-     "word": "कौज",
-     "word_iast": "kauja"
-    },
-    {
-     "root": "asi",
-     "word": "आसिकः",
-     "word_iast": "āsikaḥ"
-    },
-    {
      "root": "asti",
      "word": "आस्तिक",
      "word_iast": "āstika"
@@ -474,6 +464,16 @@
      "root": "lasa",
      "word": "लासिक",
      "word_iast": "lāsika"
+    },
+    {
+     "root": "vāta",
+     "word": "वातिक",
+     "word_iast": "vātika"
+    },
+    {
+     "root": "ācāra",
+     "word": "आचारिक",
+     "word_iast": "ācārika"
     }
    ]
   },
@@ -504,24 +504,14 @@
      "word_iast": "laukya"
     },
     {
-     "root": "naṭ",
-     "word": "नाट्यम्",
-     "word_iast": "nāṭyam"
-    },
-    {
-     "root": "sama",
-     "word": "साम्यम्",
-     "word_iast": "sāmyam"
-    },
-    {
      "root": "atithi",
      "word": "आतिथ्य",
      "word_iast": "ātithya"
     },
     {
-     "root": "anṛṇa",
-     "word": "आनृण्यम्",
-     "word_iast": "ānṛṇyam"
+     "root": "niraṃtara",
+     "word": "नैरन्तर्य",
+     "word_iast": "nairantarya"
     }
    ]
   },
@@ -540,34 +530,24 @@
    "mw_count": 37,
    "examples": [
     {
-     "root": "pā",
-     "word": "प",
-     "word_iast": "pa"
+     "root": "kṛ",
+     "word": "कर्क",
+     "word_iast": "karka"
     },
     {
-     "root": "uṣ",
-     "word": "उषा",
-     "word_iast": "uṣā"
+     "root": "dvi",
+     "word": "द्विक",
+     "word_iast": "dvika"
     },
     {
-     "root": "jñā",
-     "word": "ज्ञ",
-     "word_iast": "jña"
+     "root": "ṭuṭu",
+     "word": "टुण्टुक",
+     "word_iast": "ṭuṇṭuka"
     },
     {
-     "root": "ur",
-     "word": "उरः",
-     "word_iast": "uraḥ"
-    },
-    {
-     "root": "ūṣ",
-     "word": "ऊषः",
-     "word_iast": "ūṣaḥ"
-    },
-    {
-     "root": "jīv",
-     "word": "जीव",
-     "word_iast": "jīva"
+     "root": "adhi",
+     "word": "अधिक",
+     "word_iast": "adhika"
     }
    ]
   },
@@ -613,9 +593,9 @@
      "word_iast": "uptiḥ"
     },
     {
-     "root": "vah",
-     "word": "ऊढिः",
-     "word_iast": "ūḍhiḥ"
+     "root": "ji",
+     "word": "जितिः",
+     "word_iast": "jitiḥ"
     }
    ]
   },
@@ -637,16 +617,6 @@
    "mw_count": 0,
    "examples": [
     {
-     "root": "aṇ",
-     "word": "आनकः",
-     "word_iast": "ānakaḥ"
-    },
-    {
-     "root": "ud",
-     "word": "उदकम्",
-     "word_iast": "udakam"
-    },
-    {
      "root": "puṭ",
      "word": "पोटक",
      "word_iast": "poṭaka"
@@ -657,14 +627,24 @@
      "word_iast": "lāsaka"
     },
     {
-     "root": "tṛ",
-     "word": "तारिका",
-     "word_iast": "tārikā"
-    },
-    {
      "root": "duṣ",
      "word": "दूषक",
      "word_iast": "dūṣaka"
+    },
+    {
+     "root": "pūr",
+     "word": "पूरक",
+     "word_iast": "pūraka"
+    },
+    {
+     "root": "ā",
+     "word": "आलोचक",
+     "word_iast": "ālocaka"
+    },
+    {
+     "root": "jñā",
+     "word": "ज्ञापक",
+     "word_iast": "jñāpaka"
     }
    ]
   },
@@ -709,9 +689,9 @@
      "word_iast": "citya"
     },
     {
-     "root": "tu",
-     "word": "तोयम्",
-     "word_iast": "toyam"
+     "root": "paṇ",
+     "word": "पण्य",
+     "word_iast": "paṇya"
     }
    ]
   },
@@ -785,19 +765,9 @@
      "word_iast": "gomat"
     },
     {
-     "root": "tad",
-     "word": "तद्वत्",
-     "word_iast": "tadvat"
-    },
-    {
      "root": "bhū",
      "word": "भूमत्",
      "word_iast": "bhūmat"
-    },
-    {
-     "root": "ātman",
-     "word": "आत्मवत्",
-     "word_iast": "ātmavat"
     },
     {
      "root": "āyus",
@@ -805,9 +775,19 @@
      "word_iast": "āyuṣmat"
     },
     {
-     "root": "udaka",
-     "word": "उदन्वत्",
-     "word_iast": "udanvat"
+     "root": "gati",
+     "word": "गतिमत्",
+     "word_iast": "gatimat"
+    },
+    {
+     "root": "bhānu",
+     "word": "भानुमत्",
+     "word_iast": "bhānumat"
+    },
+    {
+     "root": "vapus",
+     "word": "वपुष्मत्",
+     "word_iast": "vapuṣmat"
     }
    ]
   },
@@ -847,14 +827,14 @@
      "word_iast": "jñātṛ"
     },
     {
-     "root": "takṣ",
-     "word": "तष्ट",
-     "word_iast": "taṣṭa"
+     "root": "dhā",
+     "word": "धातृ",
+     "word_iast": "dhātṛ"
     },
     {
-     "root": "neṣ",
-     "word": "नेष्टृ",
-     "word_iast": "neṣṭṛ"
+     "root": "ud",
+     "word": "उद्गातृ",
+     "word_iast": "udgātṛ"
     }
    ]
   },
@@ -874,34 +854,19 @@
    "mw_count": 308,
    "examples": [
     {
-     "root": "ādi",
-     "word": "आदौ",
-     "word_iast": "ādau"
-    },
-    {
      "root": "tad",
      "word": "ततस्",
      "word_iast": "tatas"
     },
     {
-     "root": "tala",
-     "word": "तलतः",
-     "word_iast": "talataḥ"
+     "root": "pṛṣṭha",
+     "word": "पृष्ठतस्",
+     "word_iast": "pṛṣṭhatas"
     },
     {
-     "root": "āpāta",
-     "word": "आपाततः",
-     "word_iast": "āpātataḥ"
-    },
-    {
-     "root": "jñāna",
-     "word": "ज्ञानतः",
-     "word_iast": "jñānataḥ"
-    },
-    {
-     "root": "phala",
-     "word": "फलतः",
-     "word_iast": "phalataḥ"
+     "root": "idam",
+     "word": "अतस्",
+     "word_iast": "atas"
     }
    ]
   },
@@ -1028,21 +993,6 @@
      "root": "lakṣ",
      "word": "लक्षशस्",
      "word_iast": "lakṣaśas"
-    },
-    {
-     "root": "padma",
-     "word": "पद्यशः",
-     "word_iast": "padyaśaḥ"
-    },
-    {
-     "root": "bhūri",
-     "word": "भूरिशः",
-     "word_iast": "bhūriśaḥ"
-    },
-    {
-     "root": "yūtha",
-     "word": "यूथशः",
-     "word_iast": "yūthaśaḥ"
     }
    ]
   },
@@ -1070,11 +1020,6 @@
      "root": "ojas",
      "word": "ओजस्विन्",
      "word_iast": "ojasvin"
-    },
-    {
-     "root": "kana",
-     "word": "कनकम्",
-     "word_iast": "kanakam"
     },
     {
      "root": "tapas",
@@ -1119,11 +1064,6 @@
      "word_iast": "darśanīyatama"
     },
     {
-     "root": "jit",
-     "word": "जितुमः|जित्तमः",
-     "word_iast": "jitumaḥ|jittamaḥ"
-    },
-    {
      "root": "antara",
      "word": "अन्तरतम",
      "word_iast": "antaratama"
@@ -1146,11 +1086,6 @@
    "apte_roots": 3,
    "mw_count": 8,
    "examples": [
-    {
-     "root": "ā",
-     "word": "एतनः",
-     "word_iast": "etanaḥ"
-    },
     {
      "root": "pra",
      "word": "प्रतन",
@@ -1209,11 +1144,6 @@
      "root": "ūrjas",
      "word": "ऊर्जस्वल",
      "word_iast": "ūrjasvala"
-    },
-    {
-     "root": "bhrātṛ",
-     "word": "भ्रातृबल",
-     "word_iast": "bhrātṛbala"
     }
    ]
   }
