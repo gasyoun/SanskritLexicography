@@ -95,6 +95,15 @@ SKD/VCP stay Sanskrit-side only (Sanskrit→Sanskrit). The join is on the SLP1
 key1, with key2 as a homograph fallback, using the length-preserving
 `form_key()`.
 
+A **third-language sense signal** was evaluated 2026-06-24 (indic-dict Indic-gloss
+dicts — Hindi `apte-hi`/`vedic-rituals-hi`, Kannada/Tamil; see
+[INDIC_DICT_EVALUATION.md](INDIC_DICT_EVALUATION.md)). These gloss in Hindi/Tamil/
+Kannada, not Russian, so they are **not** a correctness vote on the Russian head-term;
+they can only corroborate **which sense is primary** — softer even than the verse-level
+corpus signal (§2.2), annotate-only, never overriding. `apte-hi` is the one with real
+leverage (Apte-aligned → structured sense map). **Ingestion deferred** — indic-dict
+carries no license; the technical fit is recorded but nothing is wired in.
+
 ### 2.1 Dictionary signal — BUILT
 
 The five dictionaries are **extracted and on disk** via

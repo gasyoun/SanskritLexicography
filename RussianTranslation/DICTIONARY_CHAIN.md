@@ -199,5 +199,17 @@ record back-references the main entry's sense numbers; we render the patch under
 `[к знач. N]` and new senses as `[новое знач. N]`, preserving the corrigenda
 ("read X instead of Y") verbatim.
 
+## External sources considered and declined as layers
+
+- **indic-dict / stardict-sanskrit** — evaluated 2026-06-24, see
+  [INDIC_DICT_EVALUATION.md](INDIC_DICT_EVALUATION.md). Most of it (en-head reverse
+  indexes, the EN/FR/DE/SA gloss sets) is **Cologne-generated** — we already hold the
+  fresher source in csl-orig, so it adds nothing to the chain. The only net-new content
+  is four **Indic-language gloss** dictionaries (Hindi `apte-hi`/`vedic-rituals-hi`,
+  Kannada `shabdArtha_kaustubha`, Tamil `samskritam-tamizham`). None is Sa→Ru, so none
+  is a **translation layer**; at most they are a soft cross-lingual *sense* signal for
+  the stage-4 gate (see [SAMUDRA_INTEGRATION.md](SAMUDRA_INTEGRATION.md) §2). Ingestion
+  is **deferred** — the repo carries no license.
+
 ## Open questions
 See this turn's message.

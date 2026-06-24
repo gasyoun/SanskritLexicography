@@ -10,6 +10,21 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## 2026-06-24
 
+### indic-dict / stardict-sanskrit evaluated as a source — declined, deferred
+- New [INDIC_DICT_EVALUATION.md](INDIC_DICT_EVALUATION.md). Most of the repo
+  (en-head reverse indexes, EN/FR/DE/SA gloss sets) is **Cologne-generated** —
+  csl-orig already holds fresher copies, so it adds nothing. The only net-new content
+  is four **Indic-language gloss** dictionaries: `apte-hi` (Hindi, 19.6 MB, Apte→Hindi),
+  `vedic-rituals-hi` (Hindi, Vedic-ritual, 3.3 MB), `shabdArtha_kaustubha` (Kannada,
+  34.9 MB — `bookname` mistags it `sa-sa`), `samskritam-tamizham` (Tamil, blog scrape).
+- **Role:** none is Sa→Ru, so none is a translation layer. At most a **soft cross-lingual
+  sense vote** in the stage-4 gate — corroborates *which sense is primary*, never the
+  Russian wording; `apte-hi` is the standout (Apte-aligned → structured sense map).
+- **Blocker:** the repo has **no license** (SPDX `none`; `.babylon` headers carry only
+  `#bookname`). Decision: note the gap, record the technical fit, **defer ingestion**.
+  Pointers added to [DICTIONARY_CHAIN.md](DICTIONARY_CHAIN.md) and
+  [SAMUDRA_INTEGRATION.md](SAMUDRA_INTEGRATION.md) §2.
+
 ### Renou tag validation + DCS over-tag min-support fix
 - **Validation by inter-signal agreement** (no human labels): new
   [src/renou_audit.py](src/renou_audit.py) cross-tabulates the four provenance
