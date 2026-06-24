@@ -68,11 +68,45 @@
 Исходные `.babylon` лежат (gitignored) в `../research/external/`; выходные
 `*.jsonl` тоже gitignored.
 
+## Корпусный лексикон пословного выравнивания (DeepSeek) — `build_corpus_lexicon.py`
+
+Главный **множитель повторного использования**: пословное (word-by-word)
+санскритско-русское выравнивание всего параллельного корпуса. Для каждой
+выровненной по стиху пары Sa↔Ru из SamudraManthanam DeepSeek сопоставляет
+каждому санскритскому знаменательному слову его русское соответствие **в этом
+переводе**. Пакетно (~8 стиховых единиц на вызов, 12 потоков), append-only,
+возобновляемо.
+
+| Файл | Что | Записей |
+|------|-----|---------|
+| `corpus_lexicon.jsonl` | пословный лексикон Sa→Ru, ключ SLP1 | **1 091 528** |
+
+Строка: `{group, work, passage, slp1, sa, ru, kind(translation|commentary),
+genre, period, date}`. Соединение с заглавным словом — по `slp1`; даёт
+**эмпирическое распределение засвидетельствованных русских соответствий** на
+слово (напр. `agni`→Агни ×1111 / огонь ×~600; `akṣara`→слог / Непреходящее;
+`ananta`→бесконечный / Ананта). Постишевые **опубликованные** русские переводы
+(Елизаренкова РВ/АВ, акад. Махабхарата, русские Гиты) — в
+`SamudraManthanam/web/corpus.db` по `canonical_id` (`#sa`/`#ru`).
+
+> ⚠️ **Где искать.** Ключ DeepSeek задаётся через окружение
+> (`ai_service.py`/`.env`), а `corpus_lexicon.jsonl` в `.gitignore` — поэтому
+> `grep -ri deepseek` по репозиториям **ничего не находит**. Ищите по артефакту
+> (`build_corpus_lexicon.py` / `corpus_lexicon.jsonl`), не по строке «deepseek».
+> Сборка — DeepSeek, июнь 2026; история и ловушка галлюцинаций (плейсхолдер `…`)
+> — в [../CHANGELOG.md](../CHANGELOG.md).
+
+**Потребитель (2026-06-24):** корпусная русская опора в
+[../../article-comparison/](../../article-comparison/) (`*.corpus-ru.md` для
+agni/anya/akṣara/ananta).
+
 ## Регенерация
 
 ```sh
 python build_src.py [путь-к-SamudraManthanam]      # 5 санскр.-рус. словарей
 python build_indic.py [путь-к-.babylon-каталогу]   # хинди-сигнал значения
+python build_corpus_lexicon.py build <textfile> [N]  # пословный лексикон (нужен DEEPSEEK_API_KEY в .env)
+python build_corpus_lexicon.py status                # записей + различных ключей
 ```
 
 `build_src.py` по умолчанию читает `web/corpus_builder/jsonl/` соседнего
