@@ -272,19 +272,27 @@ def gen_root_split(key, pwg_idx, verbose=True):
                 submap.append({'subkey': sub, 'hom': hom, 'seg_index': 0, 'part': part,
                                'kind': 'head', 'section': label, 'upasarga': '', 'root_key': key})
             for seg, c in enumerate(cards[1:], start=1):
-                upa = c['upasarga']
+                # c['kind'] is 'prefix' (<div n="p">) or 'secondary' (<div n="m"> caus/desid/
+                # intens) — preserve it so root_glue nests secondary stems with the simple verb,
+                # not under the last prefix. (PWG marks secondary inline → 0 in practice; latent.)
+                kind, upa, label = c['kind'], c['upasarga'], c.get('label', '')
+                tok = safe_name(upa) if upa else ('sec_%s' % seg)
                 chunks = chunk_lines(c['lines'], HEAD_BUDGET)
                 for part, ch in enumerate(chunks):
-                    sub = '%s~~h%d_%02d_%s%s' % (root, hom, seg, safe_name(upa),
+                    sub = '%s~~h%d_%02d_%s%s' % (root, hom, seg, tok,
                                                  '_%d' % part if len(chunks) > 1 else '')
                     pp = ' part %d/%d' % (part + 1, len(chunks)) if len(chunks) > 1 else ''
                     htag = (' homonym %d' % (hom + 1)) if n_hom > 1 else ''
-                    hdr = ('PWG-ROOT SUBCARD%s — root=%s upasarga=%s%s (prefixed verb nested in '
-                           'the %s root article; root_key links it back)' % (htag, key, upa, pp, key))
+                    if kind == 'secondary':
+                        hdr = ('PWG-ROOT SUBCARD%s — root=%s SECONDARY %s%s (caus./desid./intens. '
+                               'of the simple verb)' % (htag, key, label, pp))
+                    else:
+                        hdr = ('PWG-ROOT SUBCARD%s — root=%s upasarga=%s%s (prefixed verb nested in '
+                               'the %s root article; root_key links it back)' % (htag, key, upa, pp, key))
                     write(sub, '=== LAYER: %s ===\n\n%s' % (hdr, '\n'.join(ch)))
                     submap.append({'subkey': sub, 'hom': hom, 'seg_index': seg, 'part': part,
-                                   'kind': 'prefix', 'section': 'prefix', 'upasarga': upa,
-                                   'root_key': key})
+                                   'kind': kind, 'section': kind, 'upasarga': upa,
+                                   'label': label, 'root_key': key})
         else:                                       # small homonym -> keep whole (chunked if long)
             for part, (label, blob) in enumerate(head_sense_parts(key, dl, hom, n_hom)):
                 sub = '%s~~h%d_00_%s' % (root, hom, label)
