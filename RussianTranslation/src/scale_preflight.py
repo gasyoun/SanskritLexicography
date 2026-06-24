@@ -18,7 +18,11 @@ manifests + safe_filename.safe_name (no reinvention). Read-only; never touches t
 active pipeline files.
 
   python scale_preflight.py --top 500 --budget 400
-  python scale_preflight.py --top 500 --ceiling 8000 --chars-per-tok 3 --strict
+  python scale_preflight.py --top 500 --judge-model sonnet --repass-model opus   # cheap-judge (default)
+  python scale_preflight.py --top 500 --translate-model opus --judge-model opus --no-cache   # the all-Opus "before"
+
+Cost knobs (defaults reflect the config we actually run): --translate-model/--judge-model/
+--repass-model {opus,sonnet,haiku}, --judges N, --repass-rate F, --prompt-tok N, --no-cache.
 """
 import argparse, json, os, re, sys
 sys.stdout.reconfigure(encoding='utf-8')
@@ -58,11 +62,29 @@ def div_p_counts(keys):
     return out
 
 # --- Cost model (transparent + CLI-overridable; verify $/Mtok against current pricing) ---
-PROMPT_OVERHEAD_TOK = 3000          # the locked merged-translate system prompt, per call
-OUTPUT_RATIO = 1.2                  # Russian card+JSON ≈ 1.2× the source content tokens
-PASSES = {'heavy': 4, 'light': 1}   # heavy = translate + 2 judges + ~repass; light = 1 pass
-# heavy path -> Opus, light path -> Sonnet ($/Mtok in,out). Override via flags.
-PRICE = {'heavy': (15.0, 75.0), 'light': (3.0, 15.0)}
+OUTPUT_RATIO = 1.2                  # a full translation ≈ 1.2× the source content tokens
+# $ per Mtok: (input, cached-input-read, output). Cached read ≈ 0.1× input (Anthropic).
+MODELS = {
+    'opus':   (15.0, 1.5,  75.0),
+    'sonnet': (3.0,  0.3,  15.0),
+    'haiku':  (0.80, 0.08,  4.0),
+}
+# Baseline for the "before" comparison: 4 full Opus passes, no prompt caching.
+BASE_PASSES, BASE_IN, BASE_OUT = 4, 15.0, 75.0
+
+
+def build_pipeline(a):
+    """The per-pass pipeline as configured. Each pass runs `factor` times per sub-card on the
+    given `paths`, on `model`, emitting `out_factor`× a full translation's output tokens
+    (judges emit only a small verdict). Defaults = the cheap-judge / cached config we run."""
+    return [
+        {'name': 'translate', 'model': a.translate_model, 'factor': 1.0,
+         'out_factor': 1.0,  'paths': {'heavy', 'light'}},
+        {'name': 'judge',     'model': a.judge_model,     'factor': float(a.judges),
+         'out_factor': 0.15, 'paths': {'heavy'}},
+        {'name': 'repass',    'model': a.repass_model,    'factor': a.repass_rate,
+         'out_factor': 1.0,  'paths': {'heavy'}},
+    ]
 
 _section_cache = {}
 
@@ -103,7 +125,16 @@ def main():
     ap.add_argument('--chars-per-tok', type=float, default=3.0)
     ap.add_argument('--manifest', default=FREQ)
     ap.add_argument('--strict', action='store_true', help='also fail if any split-ready blocker exists')
+    # Per-pass model + prompt-caching knobs (defaults = the cheap-judge / cached config we run).
+    ap.add_argument('--translate-model', default='sonnet', choices=sorted(MODELS))
+    ap.add_argument('--judge-model', default='sonnet', choices=sorted(MODELS))
+    ap.add_argument('--repass-model', default='opus', choices=sorted(MODELS))
+    ap.add_argument('--judges', type=int, default=2, help='QA judges per heavy card')
+    ap.add_argument('--repass-rate', type=float, default=0.2, help='expected re-translate fraction (rejects)')
+    ap.add_argument('--prompt-tok', type=int, default=3000, help='locked system prompt tokens, per call')
+    ap.add_argument('--no-cache', dest='cache', action='store_false', help='disable prompt caching')
     a = ap.parse_args()
+    pipeline = build_pipeline(a)
 
     if not os.path.exists(a.manifest):
         print('NO freq manifest at %s — run: python freq_route.py' % a.manifest)
@@ -113,7 +144,8 @@ def main():
         print('empty manifest'); return 2
 
     heavy = light = covered = 0
-    in_tok = out_tok = cost = 0.0
+    in_tok = out_tok = cost = base_cost = 0.0
+    per_pass = {p['name']: {'in': 0.0, 'out': 0.0, 'cost': 0.0} for p in pipeline}
     oversize_unsplit = []   # (key1, bytes) oversize and no rootmap yet
     splits_ready = 0
     for r in rows:
@@ -129,12 +161,25 @@ def main():
         # token estimate: split roots cost per sub-card; others one card.
         units = subs if subs else 1
         content_in = b / a.chars_per_tok
-        per_unit_in = content_in / max(units, 1) + PROMPT_OVERHEAD_TOK
-        ci = per_unit_in * units * PASSES[path]
-        co = (content_in / max(units, 1)) * OUTPUT_RATIO * units * PASSES[path]
-        pin, pout = PRICE[path]
-        in_tok += ci; out_tok += co
-        cost += ci / 1e6 * pin + co / 1e6 * pout
+        content_out = content_in * OUTPUT_RATIO
+        for p in pipeline:
+            if path not in p['paths']:
+                continue
+            pin, pcached, pout = MODELS[p['model']]
+            f = p['factor']
+            sys_tok = a.prompt_tok * units * f         # the locked system prompt — cacheable
+            cont_in = content_in * f                   # the card content — unique, full price
+            out_p = content_out * p['out_factor'] * f
+            sys_cost = sys_tok / 1e6 * (pcached if a.cache else pin)
+            c = sys_cost + cont_in / 1e6 * pin + out_p / 1e6 * pout
+            in_tok += sys_tok + cont_in; out_tok += out_p; cost += c
+            per_pass[p['name']]['in'] += sys_tok + cont_in
+            per_pass[p['name']]['out'] += out_p
+            per_pass[p['name']]['cost'] += c
+        # "before" baseline: 4 full Opus passes, no caching.
+        base_ci = (content_in + a.prompt_tok * units) * BASE_PASSES
+        base_co = content_out * BASE_PASSES
+        base_cost += base_ci / 1e6 * BASE_IN + base_co / 1e6 * BASE_OUT
 
     # Classify the oversize-unsplit cards: verbal roots (--root-split) vs non-root (sense-chunk).
     dp = div_p_counts([k for k, _ in oversize_unsplit]) if oversize_unsplit else {}
@@ -161,11 +206,20 @@ def main():
         print('      … +%d more' % (len(nonroots) - 10))
     blockers = oversize_unsplit
     print('## 3. Cost projection (estimate; verify $/Mtok)')
-    print('   input  tokens ≈ %.1fM' % (in_tok / 1e6))
-    print('   output tokens ≈ %.1fM' % (out_tok / 1e6))
-    print('   projected cost ≈ $%.0f%s' % (cost, '' if a.budget is None else '  (budget $%.0f)' % a.budget))
-    print('   caveat: not-yet-split oversize cards are costed as 1 unit; once chunked they cost more, '
-          'so this is a LOWER bound for the batch.')
+    print('   config: translate=%s · judge=%s ×%d · repass=%s ×%.2f · prompt-cache=%s'
+          % (a.translate_model, a.judge_model, a.judges, a.repass_model, a.repass_rate,
+             'on' if a.cache else 'off'))
+    for name in ('translate', 'judge', 'repass'):
+        d = per_pass.get(name)
+        if d:
+            print('     %-9s in %5.1fM  out %4.1fM  $%-6.0f' % (name, d['in'] / 1e6, d['out'] / 1e6, d['cost']))
+    print('   TOTAL  input ≈ %.1fM | output ≈ %.1fM | cost ≈ $%.0f%s'
+          % (in_tok / 1e6, out_tok / 1e6, cost, '' if a.budget is None else '  (budget $%.0f)' % a.budget))
+    save = 100.0 * (1 - cost / base_cost) if base_cost else 0.0
+    print('   for comparison: ORIGINAL estimate (%d full Opus passes, no cache) ≈ $%.0f  → this config = %.0f%% less'
+          % (BASE_PASSES, base_cost, save))
+    print('   caveat: oversize-unsplit cards costed as 1 unit (LOWER bound); prompt-cache models '
+          'cached reads at ~0.1× input and ignores the one-time per-window cache-write surcharge.')
     print('   NOTE: Opus-API pay-per-token REFERENCE only. Translation runs on Claude Max '
           '(≈$0 marginal); the binding limit is the Max weekly token quota, not USD. See PILOT_COST.md §7.')
     over_budget = a.budget is not None and cost > a.budget
@@ -174,7 +228,14 @@ def main():
     print('   split-ready   : %s (%d blockers)' % ('PASS' if not blockers else 'BLOCKED', len(blockers)))
     print('   budget        : %s' % ('n/a' if a.budget is None else ('OVER' if over_budget else 'OK')))
     fail = over_budget or (a.strict and blockers)
-    print('   => %s' % ('PRE-FLIGHT FAIL' if fail else 'CLEARED FOR SCALE-UP'))
+    if over_budget:
+        verdict = 'PRE-FLIGHT FAIL (over budget)'
+    elif blockers:
+        verdict = ('NOT READY: split %d oversize card(s) first%s'
+                   % (len(blockers), ' [fatal under --strict]' if not a.strict else ''))
+    else:
+        verdict = 'CLEARED FOR SCALE-UP'
+    print('   => %s' % verdict)
     return 1 if fail else 0
 
 
