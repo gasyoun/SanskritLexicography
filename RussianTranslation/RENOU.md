@@ -35,16 +35,18 @@ is the weakest (register attestation, not a semantic Buddhist claim).
 Canonical index `{code}.renou.jsonl`, keyed by `key1` (joins to the Russian cards).
 **8 dictionaries · 770,292 entries** (`renou_pipeline.py --all`, 2026-06-24):
 
+Counts are **after** the DCS min-support policy (see *Validation* below).
+
 | Dict | Entries | I | II | III | IV | V | V sources (ls·dcs·bhs·wl) |
 |---|--:|--:|--:|--:|--:|--:|---|
-| PWG | 123,366 | 32,327 | 18,627 | 45,929 | 61,866 | 17,357 | 0·11,341·10,343·23 |
-| MW | 286,560 | 79,543 | 28,705 | 112,992 | 142,244 | 56,434 | 4,503·38,200·33,949·50 |
-| PW | 170,556 | 26,188 | 5,639 | 37,271 | 42,292 | 17,694 | 0·10,340·11,481·30 |
-| AP | 90,654 | 9,773 | 3,873 | 21,756 | 23,993 | 7,138 | 0·4,774·3,650·5 |
-| AP90 | 34,882 | 6,779 | 2,607 | 10,097 | 13,503 | 5,011 | 0·3,646·2,307·2 |
-| BEN | 17,310 | 6,434 | 2,347 | 11,774 | 11,840 | 5,468 | 0·4,378·2,580·0 |
-| SCH | 29,125 | 3,661 | 1,241 | 5,920 | 8,410 | 4,375 | 0·2,407·3,157·2 |
-| BHS | 17,839 | 1,612 | 624 | 3,139 | 3,108 | 13,629 | 13,172·2,877·0·27 |
+| PWG | 123,366 | 31,090 | 18,627 | 45,351 | 59,946 | 17,357 | 0·11,341·10,343·23 |
+| MW | 286,560 | 76,328 | 28,705 | 111,203 | 137,232 | 56,434 | 4,503·38,200·33,949·50 |
+| PW | 170,556 | 24,238 | 5,639 | 36,427 | 38,091 | 17,694 | 0·10,340·11,481·30 |
+| AP | 90,654 | 9,203 | 3,873 | 20,856 | 22,802 | 7,138 | 0·4,774·3,650·5 |
+| AP90 | 34,882 | 6,360 | 2,607 | 9,681 | 13,013 | 5,011 | 0·3,646·2,307·2 |
+| BEN | 17,310 | 6,010 | 2,347 | 11,683 | 11,485 | 5,468 | 0·4,378·2,580·0 |
+| SCH | 29,125 | 3,358 | 1,241 | 5,783 | 7,747 | 4,375 | 0·2,407·3,157·2 |
+| BHS | 17,839 | 1,488 | 624 | 2,878 | 2,820 | 13,622 | 13,172·2,877·0·27 |
 
 Notes: **V**'s sources are complementary — `<ls>` gives it only where a dict cites
 Buddhist texts (MW, BHS); `dcs` + `bhs` carry it everywhere else; `wl` is the partial
@@ -79,14 +81,35 @@ Findings (`renou_audit_report.md`, 2026-06-24):
   `iti`, `api`, `idam`, `tad`, `yad`.
 
 Root cause = (1) homograph collapse in the lemma-keyed index and (2) discarded per-
-state evidence depth. The indicated fix (not yet applied): record per-state `n_texts`
-in `build_dcs_renou.py` and prune `dcs` states below a min-support threshold (and/or
-exclude closed-class lemmas from `dcs` widening). The audit is read-only — it changes
-no tags, only measures them.
+state evidence depth. The audit itself is read-only — it changes no tags, only
+measures them.
 
 ```sh
 python renou_audit.py            # -> renou_audit_report.md (+ console summary)
 ```
+
+### The min-support fix (applied)
+
+`build_dcs_renou.py` now records, per lemma, **`state_support`** = `{state: {n_texts,
+best_confidence}}` (lossless), and `renou.filter_dcs_states()` applies the policy at
+*tagger* time (so the threshold is tunable without rescanning): **keep a `dcs` state
+iff it is attested in ≥ `DCS_MIN_SUPPORT` (=2) corpus texts, OR at least one of those
+texts is confidently typed** (authoritative DCS genre / curated Buddhist–grammar name
+hint). This drops the thin, low-confidence tail — single date-fallback occurrences —
+while leaving genuinely-attested and curated states intact. Tune with
+`tag_dict_from_source.py CODE --dcs-min-support N`.
+
+Effect (2026-06-24, default threshold): **9.9 % of `dcs` state-assignments pruned**
+across 14.8 % of lemmas, almost all of it spurious **IV** (the `date ≥ 400` fallback
+bucket: 9,736 dropped) and **I** (2,923); **0** state-II and state-V assignments
+dropped, because those come only from confidently-typed Vyākaraṇa / Buddhist texts —
+so the curated signal is untouched. Only 33 maximal lemmas fall below five states.
+
+The residual `dcs_adds` breadth (MW 52 %, BEN 76 %) is **not** pruned, and that is
+correct: it is dominated by genuinely era-neutral high-frequency words — `ca`, `idam`,
+`akāra` carry well-attested high-confidence support in *every* era, so their I–V span
+is corpus-accurate, merely uninformative. That is a *display* concern (flag an all-five
+tag as low-information in `renou_portrait`), not a tagging error to delete.
 
 ## Reproduce
 
@@ -113,7 +136,7 @@ Individual stages are also runnable standalone (`tag_dict_from_source.py CODE`,
 | `renou.py`, `renou_sigla.py` | ✓ | siglum→state resolvers (PWG/MW + Apte/Benfey/BHS) |
 | `build_ls_map.py`, `build_ls_map_mw.py` | ✓ | build the `<ls>` source maps |
 | `ls_source_map.json`, `ls_source_map_mw.json` | ✓ | curated source → state (small, auditable) |
-| `build_dcs_renou.py` | ✓ | scan DCS corpus → lemma→state index |
+| `build_dcs_renou.py` | ✓ | scan DCS corpus → lemma→state index, with per-state `state_support` (n_texts + confidence) |
 | `tag_dict_from_source.py`, `tag_mw_from_source.py` | ✓ | per-dict `<ls>`+DCS tagger |
 | `enrich_renou_dcs.py`, `enrich_renou_bhs.py`, `enrich_renou_wisdomlib.py` | ✓ | the DCS / BHS / wisdomlib enrichers |
 | `annotate_renou.py`, `add_corpus_renou.py` | ✓ | per-sense card backfill; raw-text corpus augmenter |
