@@ -68,7 +68,7 @@ def merge(ls, dcs):
     return enriched, prov
 
 
-def run(code, out, index_path, report_only):
+def run(code, out, index_path, report_only, min_support=renou.DCS_MIN_SUPPORT):
     src = os.path.join(CSL, code, code + '.txt')
     if not os.path.exists(src):
         raise SystemExit('no source: %s' % src)
@@ -90,7 +90,9 @@ def run(code, out, index_path, report_only):
             ls, ls_oldest = ls_states(code, block)
             iast = to_iast(key1)
             dcs = index.get(iast)
-            dcs_states = dcs['renou'] if dcs else []
+            # apply the DCS over-tag min-support policy (drops thin low-confidence
+            # states — homograph/date-fallback noise; see renou.filter_dcs_states)
+            dcs_states = renou.filter_dcs_states(dcs, min_support) if dcs else []
             enriched, prov = merge(ls, dcs_states)
 
             st['entries'] += 1
@@ -143,6 +145,7 @@ def main():
     out = os.path.join(HERE, code + '_renou.jsonl')
     index_path = DEFAULT_INDEX
     report_only = False
+    min_support = renou.DCS_MIN_SUPPORT
     i = 1
     while i < len(args):
         a = args[i]
@@ -152,9 +155,11 @@ def main():
             index_path = args[i + 1]; i += 2
         elif a == '--report':
             report_only = True; i += 1
+        elif a == '--dcs-min-support':
+            min_support = int(args[i + 1]); i += 2
         else:
             raise SystemExit('unknown option: %s' % a)
-    run(code, out, index_path, report_only)
+    run(code, out, index_path, report_only, min_support)
 
 
 if __name__ == '__main__':

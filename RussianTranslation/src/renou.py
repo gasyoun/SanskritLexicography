@@ -40,6 +40,31 @@ RENOU_NAME = {'I': 'Vedic', 'II': 'Pāṇinian', 'III': 'Epic',
 _MAP_FILE = {'pwg': 'ls_source_map.json', 'mw': 'ls_source_map_mw.json'}
 _CACHE = {}
 
+# DCS over-tag policy. A lemma's corpus states are filtered: a state backed only by
+# a thin, low-confidence tail (fewer than DCS_MIN_SUPPORT texts AND no authoritative
+# genre/name-hint text) is dropped before it tags a headword — this removes the
+# homograph/date-fallback noise the inter-signal audit surfaced. The DCS index is
+# lossless (`state_support`); this is the consumption-time threshold, so it is tunable
+# without rescanning. _TRUSTED = confidences that justify keeping a single-text state.
+DCS_MIN_SUPPORT = 2
+_TRUSTED_CONF = ('high', 'medium')
+
+
+def filter_dcs_states(index_entry, min_support=DCS_MIN_SUPPORT):
+    """Apply the min-support policy to one dcs_lemma_renou.json entry.
+
+    Keep a state iff it is attested in ≥ `min_support` corpus texts, OR at least one
+    of those texts is confidently typed (authoritative DCS genre / curated name hint).
+    Back-compatible: an old index entry without `state_support` is returned unchanged.
+    """
+    states = list(index_entry.get('renou') or [])
+    support = index_entry.get('state_support')
+    if not support:
+        return states
+    return [st for st in states
+            if support.get(st, {}).get('n', 0) >= min_support
+            or support.get(st, {}).get('conf') in _TRUSTED_CONF]
+
 
 def load_map(dict_name='pwg'):
     """source_key → record ({renou, date, name, …}) for the named dictionary."""

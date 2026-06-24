@@ -165,9 +165,15 @@ def lemmas_in_file(path):
     return out
 
 
+# text-state confidence → rank (for per-state "best evidence" tracking). A state
+# resting only on low-confidence date-fallback texts is the over-tag thin tail.
+_CONF_RANK = {'high': 2, 'medium': 1, 'low': 0, 'none': 0}
+_RANK_CONF = {2: 'high', 1: 'medium', 0: 'low'}
+
+
 def build_index(limit=None):
     texts = build_text_states()
-    idx = {}  # lemma → {states:set, oldest_date, oldest_text, n_texts}
+    idx = {}  # lemma → per-state evidence + oldest
     scanned = 0
     names = sorted(texts)
     if limit:
@@ -177,6 +183,7 @@ def build_index(limit=None):
         state, date = ts['renou'], ts['date']
         if not state:
             continue
+        conf = _CONF_RANK.get(ts['confidence'], 0)
         d = os.path.join(FILES, name)
         lemmas = set()
         for fn in os.listdir(d):
@@ -185,9 +192,11 @@ def build_index(limit=None):
         for lem in lemmas:
             e = idx.get(lem)
             if e is None:
-                e = idx[lem] = {'states': set(), 'oldest_date': None,
+                e = idx[lem] = {'state_n': collections.Counter(),
+                                'state_conf': {}, 'oldest_date': None,
                                 'oldest_text': None, 'n_texts': 0}
-            e['states'].add(state)
+            e['state_n'][state] += 1                 # texts of this state for this lemma
+            e['state_conf'][state] = max(e['state_conf'].get(state, 0), conf)
             e['n_texts'] += 1
             if date is not None and (e['oldest_date'] is None or date < e['oldest_date']):
                 e['oldest_date'] = date
@@ -196,12 +205,17 @@ def build_index(limit=None):
         if scanned % 25 == 0:
             print('  scanned %d/%d texts, %d lemmas so far'
                   % (scanned, len(names), len(idx)), file=sys.stderr)
-    # finalise: sets → ordered lists; derive oldest state from oldest_text
+    # finalise: ordered state list + per-state support (n_texts, best confidence).
+    # The index is LOSSLESS — the min-support policy is applied by the tagger, so
+    # the threshold is tunable without rescanning the corpus.
     final = {}
     for lem, e in idx.items():
-        states = sorted(e['states'], key=_ORDER.get)
+        states = sorted(e['state_n'], key=_ORDER.get)
         oldest_state = texts[e['oldest_text']]['renou'] if e['oldest_text'] else ''
-        final[lem] = {'renou': states, 'renou_oldest': oldest_state,
+        support = {st: {'n': e['state_n'][st], 'conf': _RANK_CONF[e['state_conf'][st]]}
+                   for st in states}
+        final[lem] = {'renou': states, 'state_support': support,
+                      'renou_oldest': oldest_state,
                       'oldest_date': e['oldest_date'], 'oldest_text': e['oldest_text'],
                       'n_texts': e['n_texts']}
     return final, texts

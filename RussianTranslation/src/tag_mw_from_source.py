@@ -75,7 +75,7 @@ def run(out, index_path, report_only):
             ls = renou.states_for_text(block, 'mw')
             iast = to_iast(key1)
             dcs = index.get(iast)
-            dcs_states = dcs['renou'] if dcs else []
+            dcs_states = renou.filter_dcs_states(dcs) if dcs else []
             enriched, prov = merge(ls['renou'], dcs_states)
 
             stats['entries'] += 1

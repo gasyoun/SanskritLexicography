@@ -35,7 +35,12 @@ def glue(root, outdir):
     if not os.path.exists(rmpath):
         sys.exit('no rootmap %s — run: _pilot_gen_merged.py --root-split %s' % (rmpath, root))
     rm = json.load(open(rmpath, encoding='utf-8'))
-    subs = sorted(rm['sub_cards'], key=lambda s: (s['seg_index'], s.get('part', 0)))
+    # order: PWG homonyms first (hom → seg_index → part), then headword-level supplements.
+    subs = sorted(rm['sub_cards'],
+                  key=lambda s: (1,) if s['kind'] == 'supplement'
+                  else (0, s.get('hom', 0), s['seg_index'], s.get('part', 0)))
+    n_hom = 1 + max((s.get('hom', 0) for s in subs), default=0)
+    cur_hom = None
     parts = ['# %s — собранная статья корня (NESTED, из %d под-карточек)'
              % (root, len(subs)), '',
              '_Склейка переведённых под-карточек обратно в одну вложенную статью '
@@ -44,7 +49,11 @@ def glue(root, outdir):
     for s in subs:
         mdp = os.path.join(outdir, s['subkey'] + '.merged.md')
         sec = s.get('section', '')
-        if s['kind'] == 'head':
+        if n_hom > 1 and s['kind'] != 'supplement' and s.get('hom', 0) != cur_hom:
+            cur_hom = s.get('hom', 0)
+            parts.append('# Омоним %d (корень {#%s#})' % (cur_hom + 1, root))
+            parts.append('')
+        if s['kind'] in ('head', 'supplement'):
             if sec.startswith('pwg'):
                 head = '## Простой глагол (корень {#%s#}) — значения, часть %d' % (root, s.get('part', 0) + 1)
             elif sec.startswith('pwkvn'):

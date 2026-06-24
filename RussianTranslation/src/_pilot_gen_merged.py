@@ -188,17 +188,24 @@ def chunk_records(records, budget):
     return groups
 
 
-def build_head_parts(key, head_lines):
-    """The head-card sense-splitter. -> list of (label, layer_blob) head sub-units, each
-    single-pass-sized: simple-verb senses chunked, each supplement layer chunked, NWS batched."""
+def head_sense_parts(key, head_lines, hom, n_hom):
+    """The PWG simple-verb head, chunked to single-pass size. hom = homonym index (0-based);
+    when a headword has >1 homonym the label says so. -> [(section_label, blob), ...]."""
     parts = []
-    sense_chunks = chunk_lines(head_lines, HEAD_BUDGET)
-    multi = len(sense_chunks) > 1
-    for i, ch in enumerate(sense_chunks):
-        tag = ('PWG-ROOT HEAD part %d/%d — root=%s (simple-verb senses; same root_key)'
-               % (i + 1, len(sense_chunks), key)) if multi else \
-              ('PWG-ROOT HEAD — root=%s (simple verb + senses)' % key)
+    chunks = chunk_lines(head_lines, HEAD_BUDGET)
+    htag = (' homonym %d' % (hom + 1)) if n_hom > 1 else ''
+    for i, ch in enumerate(chunks):
+        ptag = (' part %d/%d' % (i + 1, len(chunks))) if len(chunks) > 1 else ''
+        tag = ('PWG-ROOT HEAD%s%s — root=%s (simple verb + senses; same root_key)'
+               % (htag, ptag, key))
         parts.append(('pwg%02d' % i, '=== LAYER: %s ===\n\n%s' % (tag, '\n'.join(ch))))
+    return parts
+
+
+def supplement_parts(key):
+    """The headword-level supplement layers (PW / SCH / PWKVN chunked, NWS owner map batched).
+    These attach ONCE to the whole headword, not per homonym. -> [(section_label, blob), ...]."""
+    parts = []
     supp = {}
     for L in dm.merged(key):                        # group supplement records by layer
         if L['layer'] == 'pwg':
@@ -228,46 +235,70 @@ def build_head_parts(key, head_lines):
 
 
 def gen_root_split(key, pwg_idx, verbose=True):
-    """--root-split: explode a GIANT root record into single-pass-sized sub-cards — one per
-    PREFIX (its <div n="p"> block), and the HEAD further split by build_head_parts (simple-verb
-    sense chunks + each supplement layer + batched NWS owner map). Writes <safe>~~*.raw.txt +
-    <safe>.rootmap.json (seg_index / part / section / upasarga) so root_glue reassembles.
-    Returns sub-card count, or None if the key is absent / not giant (caller falls back)."""
+    """--root-split: explode a GIANT root record into single-pass-sized sub-cards. Handles
+    MULTIPLE homonyms: EACH homonym record is segmented; a giant one (>=MIN_SPLIT prefix
+    <div n="p"> divisions) becomes head-sense-parts + one chunked sub-card per prefix; a
+    small homonym is kept whole (still chunked if long) so nothing is dropped. Supplement
+    layers (PW/SCH/PWKVN/NWS) attach ONCE to the headword. Writes <safe>~~h<H>_*.raw.txt +
+    <safe>.rootmap.json (hom / seg_index / part / section / upasarga) so root_glue reassembles.
+    Returns sub-card count, or None if the key is absent / no homonym is giant (caller falls back)."""
     fk = cg.form_key(key)
     bufs = pwg_idx.get(fk, [])
     if not bufs:
         return None
-    datalines = [l for l in bufs[0] if not (l.startswith('<L>') or l.startswith('<LEND>'))]
-    cards = RS.segment(datalines)
-    npfx = sum(1 for c in cards if c['kind'] == 'prefix')
-    if npfx < MIN_SPLIT:
-        return None                                 # not giant — let gen_card handle it whole
+    segmented = []
+    for buf in bufs:
+        dl = [l for l in buf if not (l.startswith('<L>') or l.startswith('<LEND>'))]
+        cards = RS.segment(dl)
+        npfx = sum(1 for c in cards if c['kind'] == 'prefix')
+        segmented.append((dl, cards, npfx))
+    if not any(npfx >= MIN_SPLIT for _, _, npfx in segmented):
+        return None                                 # no giant homonym — let gen_card handle it whole
     root = safe_name(key)
+    n_hom = len(bufs)
     submap = []
+    npfx_total = 0
 
     def write(sub, text):
         open(os.path.join(OUT, sub + '.raw.txt'), 'w', encoding='utf-8').write(text)
         json.dump([], open(os.path.join(OUT, sub + '.portrait.json'), 'w', encoding='utf-8'))
 
-    # HEAD (cards[0]) -> one or more single-pass parts
-    head_parts = build_head_parts(key, cards[0]['lines'])
-    for part, (label, blob) in enumerate(head_parts):
-        sub = '%s~~00_%s' % (root, label)
+    for hom, (dl, cards, npfx) in enumerate(segmented):
+        if npfx >= MIN_SPLIT:                       # giant homonym -> head parts + prefix sub-cards
+            npfx_total += npfx
+            for part, (label, blob) in enumerate(head_sense_parts(key, cards[0]['lines'], hom, n_hom)):
+                sub = '%s~~h%d_00_%s' % (root, hom, label)
+                write(sub, blob)
+                submap.append({'subkey': sub, 'hom': hom, 'seg_index': 0, 'part': part,
+                               'kind': 'head', 'section': label, 'upasarga': '', 'root_key': key})
+            for seg, c in enumerate(cards[1:], start=1):
+                upa = c['upasarga']
+                chunks = chunk_lines(c['lines'], HEAD_BUDGET)
+                for part, ch in enumerate(chunks):
+                    sub = '%s~~h%d_%02d_%s%s' % (root, hom, seg, safe_name(upa),
+                                                 '_%d' % part if len(chunks) > 1 else '')
+                    pp = ' part %d/%d' % (part + 1, len(chunks)) if len(chunks) > 1 else ''
+                    htag = (' homonym %d' % (hom + 1)) if n_hom > 1 else ''
+                    hdr = ('PWG-ROOT SUBCARD%s — root=%s upasarga=%s%s (prefixed verb nested in '
+                           'the %s root article; root_key links it back)' % (htag, key, upa, pp, key))
+                    write(sub, '=== LAYER: %s ===\n\n%s' % (hdr, '\n'.join(ch)))
+                    submap.append({'subkey': sub, 'hom': hom, 'seg_index': seg, 'part': part,
+                                   'kind': 'prefix', 'section': 'prefix', 'upasarga': upa,
+                                   'root_key': key})
+        else:                                       # small homonym -> keep whole (chunked if long)
+            for part, (label, blob) in enumerate(head_sense_parts(key, dl, hom, n_hom)):
+                sub = '%s~~h%d_00_%s' % (root, hom, label)
+                write(sub, blob)
+                submap.append({'subkey': sub, 'hom': hom, 'seg_index': 0, 'part': part,
+                               'kind': 'head', 'section': label, 'upasarga': '', 'root_key': key})
+    head_parts = [s for s in submap if s['kind'] == 'head']   # for the verbose line
+    # headword-level supplements: attach once, tagged to homonym 0
+    for part, (label, blob) in enumerate(supplement_parts(key)):
+        sub = '%s~~h0_zz_%s' % (root, label)
         write(sub, blob)
-        submap.append({'subkey': sub, 'seg_index': 0, 'part': part, 'kind': 'head',
-                       'section': label, 'upasarga': '', 'root_key': key})
-    # PREFIX sub-cards (seg 1..), each chunked to single-pass size
-    for seg, c in enumerate(cards[1:], start=1):
-        upa = c['upasarga']
-        chunks = chunk_lines(c['lines'], HEAD_BUDGET)
-        for part, ch in enumerate(chunks):
-            sub = '%s~~%02d_%s%s' % (root, seg, safe_name(upa), '_%d' % part if len(chunks) > 1 else '')
-            pp = ' part %d/%d' % (part + 1, len(chunks)) if len(chunks) > 1 else ''
-            hdr = ('PWG-ROOT SUBCARD — root=%s upasarga=%s%s (prefixed verb nested in the %s '
-                   'root article; root_key links it back)' % (key, upa, pp, key))
-            write(sub, '=== LAYER: %s ===\n\n%s' % (hdr, '\n'.join(ch)))
-            submap.append({'subkey': sub, 'seg_index': seg, 'part': part, 'kind': 'prefix',
-                           'section': 'prefix', 'upasarga': upa, 'root_key': key})
+        submap.append({'subkey': sub, 'hom': 0, 'seg_index': 99, 'part': part,
+                       'kind': 'supplement', 'section': label, 'upasarga': '', 'root_key': key})
+    npfx = npfx_total
     json.dump({'root': key, 'safe': root, 'sub_cards': submap},
               open(os.path.join(OUT, root + '.rootmap.json'), 'w', encoding='utf-8'),
               ensure_ascii=False, indent=1)
@@ -276,8 +307,10 @@ def gen_root_split(key, pwg_idx, verbose=True):
         os.remove(stale)
     if verbose:
         nhead = len(head_parts)
-        print('  %-10s ROOT-SPLIT → %d sub-cards (%d head-parts + %d prefix) → %s~~*.raw.txt + rootmap'
-              % (key, len(submap), nhead, npfx, root))
+        ngiant = sum(1 for _, _, p in segmented if p >= MIN_SPLIT)
+        htag = ' across %d homonyms (%d giant)' % (n_hom, ngiant) if n_hom > 1 else ''
+        print('  %-10s ROOT-SPLIT → %d sub-cards (%d head-parts + %d prefix)%s → %s~~*.raw.txt + rootmap'
+              % (key, len(submap), nhead, npfx, htag, root))
     return len(submap)
 
 
@@ -326,12 +359,13 @@ def main():
         return (not has_nws) or ('PRE-PARSED OWNER MAP' in t)
 
     def is_giant(key):
-        """Would --root-split explode this key? (>=MIN_SPLIT prefix divisions.)"""
-        bufs = pwg_idx.get(cg.form_key(key), [])
-        if not bufs:
-            return False
-        dl = [l for l in bufs[0] if not (l.startswith('<L>') or l.startswith('<LEND>'))]
-        return sum(1 for c in RS.segment(dl) if c['kind'] == 'prefix') >= MIN_SPLIT
+        """Would --root-split explode this key? True if ANY homonym record has >=MIN_SPLIT
+        prefix divisions (matches gen_root_split, which splits every giant homonym)."""
+        for buf in pwg_idx.get(cg.form_key(key), []):
+            dl = [l for l in buf if not (l.startswith('<L>') or l.startswith('<LEND>'))]
+            if sum(1 for c in RS.segment(dl) if c['kind'] == 'prefix') >= MIN_SPLIT:
+                return True
+        return False
 
     def is_done(key):
         """Resumability. In --root-split mode a GIANT root counts as done only once its
