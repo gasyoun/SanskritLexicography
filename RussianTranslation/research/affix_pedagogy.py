@@ -187,6 +187,17 @@ def main():
             'examples': exu[:6],
         })
     affixes.sort(key=lambda a: -a['apte_roots'])
+    # optional: attach the verified DSG deep-link per affix (from build_dsg.py html crosswalk)
+    xw = os.path.join(HERE, 'dsg_affix_crosswalk.tsv')
+    if os.path.exists(xw):
+        dsg = {}
+        for line in open(xw, encoding='utf-8').read().splitlines()[1:]:
+            c = line.split('\t')
+            if len(c) >= 4 and c[2] == 'Y':
+                dsg[c[0]] = c[3]
+        for a in affixes:
+            if a['pratyaya'] in dsg:
+                a['dsg_url'] = dsg[a['pratyaya']]
     groups = {}
     for a in affixes:
         groups.setdefault(a['group'], []).append(a['pratyaya'])
