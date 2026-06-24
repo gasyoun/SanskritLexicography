@@ -25,6 +25,11 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
     verbs01) + `productivity` (affix-productivity from 38,757 `+`-etymologies: upasarga×root —
     `vi`>`sam`>`pra` — and kṛt/taddhita pratyaya×root — `kta`>`ṭāp`>`lyuṭ`>`ac` — cross-listed
     with MWderivations' `wsfx` surface-suffix counts `-tva`>`-tā`>`-vat`; → `apte_productivity.tsv`).
+    `apte_parse.py crossmap` + curated `affix_map.tsv` **bridge the two lenses**
+    (Pāṇinian pratyaya ↔ surface suffix ↔ MW wsfx, via anubandha-stripping): they OVERLAP on
+    transparent taddhita but MW≫Apte there (`tva` 11 vs 1996 — Apte rarely cites the obvious
+    suffix), while Apte alone covers the kṛt formation affixes (`kta`/`ghañ`/`lyuṭ`/`ṭāp`, MW
+    wsfx=0 — lexicalised headwords). Complementary coverage, now quantified.
 - **Wired into the pipeline (the unblocker):** `_pilot_gen_merged.py --root-split` (also
   `--manifest freq --root-split`) auto-detects a giant root (≥8 prefix divisions) and explodes
   it into one single-pass-sized sub-card per prefix — HEAD card keeps the simple verb + all
