@@ -80,8 +80,22 @@ The 8 nouns need no glue — each `<noun>.merged.md` is already its final articl
 - **Quality**: judge severity ≤ 2; sigla/IAST kept verbatim; NWS owner-map rows one-per-entry.
 - **Timing**: per-unit wall-clock × the queue profile → full-run cost.
 
-## Known limitation (expected, not a bug)
-Split sub-cards carry an **empty `portrait.json`** (`[]`), so they translate from the raw
-German only — no corpus-synonym candidate evidence for the per-sense Apresjan discrimination.
-The 8 nouns carry full portraits. Wiring per-sub-card portraits is the next refinement if the
-giant-root translations need the corpus evidence.
+## Apresjan evidence on sub-cards (interim solution — now wired)
+Split sub-cards **no longer translate evidence-blind**. `gen_root_split` writes a real
+`corpus_synonyms` per sub-card via `subcard_portrait`:
+- **head / secondary** (the simple verb + its caus/desid) → the **root's** corpus renderings
+  (e.g. `man` → считать, думать, мыслить). Exactly right — they *are* the simple verb.
+- **prefix** → keyed on the prefixed **surface form** (`upasarga+root`), because the corpus
+  distinguishes them: `anu+man` → одобрять, `ava+man` → смотреть свысока, `abhi+man` →
+  охватить мыслью — *different* from the bare root. The portrait's `evidence_scope` =
+  `prefixed-form` when the corpus has the form, else `root-fallback …` (the bare-root
+  candidates as a **weak hint** — the translate prompt is told to defer to the German gloss
+  for these, so a shifted prefix meaning isn't overwritten by a root synonym).
+
+On `man`: **3 of 18** prefixes get prefix-specific corpus evidence; the other 15 fall back
+to the labelled root hint. **Residual gap (the proper fix):** sandhi-changed and stacked
+prefixes (`sam+man`→saṃman, `abhi+sam+man`) miss the naïve `upasarga+root` concat and fall
+back — matching them needs the **sandhi-joined surface form** already computed in
+[`PWG/verbs01/pwg_preverb1.txt`](https://github.com/sanskrit-lexicon/PWG/blob/master/verbs01/pwg_preverb1.txt)
+(`join_prefix_verb`). Wiring that lookup raises prefix-specific coverage; the interim hint is
+safe in the meantime.

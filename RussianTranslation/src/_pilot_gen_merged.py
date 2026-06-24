@@ -234,6 +234,27 @@ def supplement_parts(key):
     return parts
 
 
+def subcard_portrait(root_key, upasarga):
+    """Apresjan corpus evidence for a root sub-card (interim: keeps split sub-cards from
+    translating evidence-blind). A PREFIX sub-card is keyed on the prefixed SURFACE form
+    (upasarga+root) — the corpus distinguishes them (anu+BU → «переживать», aBi+BU →
+    «победитель», unlike bare BU → «быть»). If that form is absent from the corpus, fall
+    back to the bare root's candidates as a hint. HEAD / SECONDARY (upasarga='') → the root."""
+    if upasarga:
+        form = upasarga + root_key
+        cs = M.corpus_synonyms(form)
+        if cs:
+            return [{'key1': form, 'iast': ''.join(cg._S2I.get(c, c) for c in cg.form_key(form)),
+                     'evidence_scope': 'prefixed-form', 'corpus_synonyms': cs}]
+    cs = M.corpus_synonyms(root_key)
+    if not cs:
+        return []
+    scope = ('root-fallback (prefixed form %s+%s not in corpus — hint only, defer to the German gloss)'
+             % (upasarga, root_key)) if upasarga else 'root'
+    return [{'key1': root_key, 'iast': ''.join(cg._S2I.get(c, c) for c in cg.form_key(root_key)),
+             'evidence_scope': scope, 'corpus_synonyms': cs}]
+
+
 def gen_root_split(key, pwg_idx, verbose=True):
     """--root-split: explode a GIANT root record into single-pass-sized sub-cards. Handles
     MULTIPLE homonyms: EACH homonym record is segmented; a giant one (>=MIN_SPLIT prefix
@@ -259,16 +280,18 @@ def gen_root_split(key, pwg_idx, verbose=True):
     submap = []
     npfx_total = 0
 
-    def write(sub, text):
+    def write(sub, text, portrait=None):
         open(os.path.join(OUT, sub + '.raw.txt'), 'w', encoding='utf-8').write(text)
-        json.dump([], open(os.path.join(OUT, sub + '.portrait.json'), 'w', encoding='utf-8'))
+        json.dump(portrait or [], open(os.path.join(OUT, sub + '.portrait.json'), 'w', encoding='utf-8'),
+                  ensure_ascii=False)
 
     for hom, (dl, cards, npfx) in enumerate(segmented):
         if npfx >= MIN_SPLIT:                       # giant homonym -> head parts + prefix sub-cards
             npfx_total += npfx
+            head_pf = subcard_portrait(key, '')   # simple-verb head -> root corpus evidence
             for part, (label, blob) in enumerate(head_sense_parts(key, cards[0]['lines'], hom, n_hom)):
                 sub = '%s~~h%d_00_%s' % (root, hom, label)
-                write(sub, blob)
+                write(sub, blob, head_pf)
                 submap.append({'subkey': sub, 'hom': hom, 'seg_index': 0, 'part': part,
                                'kind': 'head', 'section': label, 'upasarga': '', 'root_key': key})
             for seg, c in enumerate(cards[1:], start=1):
@@ -277,6 +300,8 @@ def gen_root_split(key, pwg_idx, verbose=True):
                 # not under the last prefix. (PWG marks secondary inline → 0 in practice; latent.)
                 kind, upa, label = c['kind'], c['upasarga'], c.get('label', '')
                 tok = safe_name(upa) if upa else ('sec_%s' % seg)
+                # prefix -> prefixed-form corpus evidence; secondary (no upasarga) -> root
+                sub_pf = subcard_portrait(key, upa)
                 chunks = chunk_lines(c['lines'], HEAD_BUDGET)
                 for part, ch in enumerate(chunks):
                     sub = '%s~~h%d_%02d_%s%s' % (root, hom, seg, tok,
@@ -289,14 +314,15 @@ def gen_root_split(key, pwg_idx, verbose=True):
                     else:
                         hdr = ('PWG-ROOT SUBCARD%s — root=%s upasarga=%s%s (prefixed verb nested in '
                                'the %s root article; root_key links it back)' % (htag, key, upa, pp, key))
-                    write(sub, '=== LAYER: %s ===\n\n%s' % (hdr, '\n'.join(ch)))
+                    write(sub, '=== LAYER: %s ===\n\n%s' % (hdr, '\n'.join(ch)), sub_pf)
                     submap.append({'subkey': sub, 'hom': hom, 'seg_index': seg, 'part': part,
                                    'kind': kind, 'section': kind, 'upasarga': upa,
                                    'label': label, 'root_key': key})
         else:                                       # small homonym -> keep whole (chunked if long)
+            small_pf = subcard_portrait(key, '')
             for part, (label, blob) in enumerate(head_sense_parts(key, dl, hom, n_hom)):
                 sub = '%s~~h%d_00_%s' % (root, hom, label)
-                write(sub, blob)
+                write(sub, blob, small_pf)
                 submap.append({'subkey': sub, 'hom': hom, 'seg_index': 0, 'part': part,
                                'kind': 'head', 'section': label, 'upasarga': '', 'root_key': key})
     head_parts = [s for s in submap if s['kind'] == 'head']   # for the verbose line
