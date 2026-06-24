@@ -41,6 +41,13 @@ import root_segment_proto as RS                 # the lossless <div n="p"> root 
 # Only explode genuinely GIANT roots (the ones that kill a single-pass translation);
 # small records with 1-2 prefix divisions stay whole.
 MIN_SPLIT = int(os.environ.get('ROOT_SPLIT_MIN', '8'))
+# Head-card sense-splitter: a head still over HEAD_BUDGET lines is split further — its
+# simple-verb senses chunked at top-level sense boundaries, each supplement layer its own
+# unit, and the NWS owner map batched NWS_BATCH entries at a time. (The 820-line bhū head
+# overflowed a single 32k-token translation pass; these parts are single-pass-sized.)
+HEAD_BUDGET = int(os.environ.get('HEAD_SPLIT_BUDGET', '100'))
+NWS_BATCH = int(os.environ.get('NWS_OWNER_BATCH', '25'))
+SENSE_BOUND = re.compile(r'^<div n="\d+"> *\d+\)')
 
 DEFAULT = ['arTa', 'agni', 'amfta', 'aMSa', 'anna', 'akzara']
 
@@ -146,12 +153,85 @@ def gen_card(key, pwg_idx, verbose=True):
     return layer_counts
 
 
+def chunk_lines(lines, budget):
+    """Split lines into <= budget-line chunks, breaking only at <div / blank boundaries once
+    the chunk reaches budget (hard cap at 2x budget so a boundary-less run can't overflow)."""
+    cap = int(1.5 * budget)
+    chunks, cur = [], []
+    for ln in lines:
+        brk = (len(cur) >= budget and (ln.startswith('<div') or not ln.strip())) or len(cur) >= cap
+        if cur and brk:
+            chunks.append(cur); cur = []
+        cur.append(ln)
+    if cur:
+        chunks.append(cur)
+    return chunks
+
+
+def chunk_records(records, budget):
+    """Group whole records so each group is <= budget lines; a single over-budget record is
+    itself line-chunked rather than left to overflow."""
+    groups, cur, n = [], [], 0
+    for r in records:
+        rl = r.count('\n') + 1
+        if rl > budget:                              # huge single record -> line-chunk it alone
+            if cur:
+                groups.append(cur); cur, n = [], 0
+            for piece in chunk_lines(r.split('\n'), budget):
+                groups.append(['\n'.join(piece)])
+            continue
+        if cur and n + rl > budget:
+            groups.append(cur); cur, n = [], 0
+        cur.append(r); n += rl
+    if cur:
+        groups.append(cur)
+    return groups
+
+
+def build_head_parts(key, head_lines):
+    """The head-card sense-splitter. -> list of (label, layer_blob) head sub-units, each
+    single-pass-sized: simple-verb senses chunked, each supplement layer chunked, NWS batched."""
+    parts = []
+    sense_chunks = chunk_lines(head_lines, HEAD_BUDGET)
+    multi = len(sense_chunks) > 1
+    for i, ch in enumerate(sense_chunks):
+        tag = ('PWG-ROOT HEAD part %d/%d — root=%s (simple-verb senses; same root_key)'
+               % (i + 1, len(sense_chunks), key)) if multi else \
+              ('PWG-ROOT HEAD — root=%s (simple verb + senses)' % key)
+        parts.append(('pwg%02d' % i, '=== LAYER: %s ===\n\n%s' % (tag, '\n'.join(ch))))
+    supp = {}
+    for L in dm.merged(key):                        # group supplement records by layer
+        if L['layer'] == 'pwg':
+            continue
+        supp.setdefault(L['layer'], []).extend(L['records'])
+    for code in ('pw', 'sch', 'pwkvn'):
+        if not supp.get(code):
+            continue
+        groups = chunk_records(supp[code], HEAD_BUDGET)
+        for i, grp in enumerate(groups):
+            label = code if len(groups) == 1 else '%s%02d' % (code, i)
+            blob = '\n\n'.join('=== LAYER: %s ===\n\n%s' % (ROLE.get(code, code.upper()), r)
+                               for r in grp)
+            parts.append((label, blob))
+    omap = nws_owner_map(key)
+    if omap:
+        rows = omap.split('\n')
+        nb = (len(rows) + NWS_BATCH - 1) // NWS_BATCH
+        for i in range(0, len(rows), NWS_BATCH):
+            hdr = ('NWS — PRE-PARSED OWNER MAP (AUTHORITATIVE, batch %d/%d) — emit EXACTLY one '
+                   'card row per numbered entry; copy its [NWS: OWNER] VERBATIM; translate the '
+                   'gloss from its own language; keep IAST/sigla; do NOT re-derive owners.'
+                   % (i // NWS_BATCH + 1, nb))
+            parts.append(('nws%02d' % (i // NWS_BATCH),
+                          '=== LAYER: %s ===\n\n%s' % (hdr, '\n'.join(rows[i:i + NWS_BATCH]))))
+    return parts
+
+
 def gen_root_split(key, pwg_idx, verbose=True):
-    """--root-split: explode a GIANT root record into one single-pass-sized sub-card per
-    prefix (the fix for 'translation pass dies on bhū/vid'). The HEAD sub-card (simple verb)
-    carries the PW/SCH/PWKVN/NWS supplements + owner map exactly as gen_card; each PREFIX
-    sub-card is just its <div n="p"> block. Writes <safe>~~NN[_upa].raw.txt per sub-card and
-    <safe>.rootmap.json (root_key/upasarga/seg_index, parse order) so root_glue can reassemble.
+    """--root-split: explode a GIANT root record into single-pass-sized sub-cards — one per
+    PREFIX (its <div n="p"> block), and the HEAD further split by build_head_parts (simple-verb
+    sense chunks + each supplement layer + batched NWS owner map). Writes <safe>~~*.raw.txt +
+    <safe>.rootmap.json (seg_index / part / section / upasarga) so root_glue reassembles.
     Returns sub-card count, or None if the key is absent / not giant (caller falls back)."""
     fk = cg.form_key(key)
     bufs = pwg_idx.get(fk, [])
@@ -164,40 +244,41 @@ def gen_root_split(key, pwg_idx, verbose=True):
         return None                                 # not giant — let gen_card handle it whole
     root = safe_name(key)
     submap = []
-    for seg, c in enumerate(cards):
-        upa = c['upasarga']
-        sub = '%s~~%02d%s' % (root, seg, '_' + safe_name(upa) if upa else '')
-        if c['kind'] == 'prefix':
-            hdr = ('PWG-ROOT SUBCARD — root=%s upasarga=%s seg=%d (prefixed verb, nested in '
-                   'the %s root article; root_key links it back)' % (key, upa, seg, key))
-            secs = ['=== LAYER: %s ===\n\n%s' % (hdr, '\n'.join(c['lines']))]
-        else:
-            hdr = ('PWG-ROOT HEAD — root=%s seg=%d (simple verb + senses; the supplement '
-                   'layers attach to this head card)' % (key, seg))
-            secs = ['=== LAYER: %s ===\n\n%s' % (hdr, '\n'.join(c['lines']))]
-            for L in dm.merged(key):                # PW / SCH / PWKVN / NWS on the head only
-                if L['layer'] == 'pwg':
-                    continue
-                for r in L['records']:
-                    secs.append('=== LAYER: %s ===\n\n%s' % (ROLE.get(L['layer'], L['layer'].upper()), r))
-            omap = nws_owner_map(key)
-            if omap:
-                secs.append(
-                    '=== LAYER: NWS — PRE-PARSED OWNER MAP (AUTHORITATIVE, %d entries) ===\n\n'
-                    'Emit EXACTLY one card row per numbered entry; copy its [NWS: OWNER] VERBATIM;\n'
-                    'translate the gloss from its own language; keep IAST/sigla. Do NOT re-derive '
-                    'owners.\n\n%s' % (omap.count('\n') + 1, omap))
-        open(os.path.join(OUT, sub + '.raw.txt'), 'w', encoding='utf-8').write('\n\n'.join(secs))
+
+    def write(sub, text):
+        open(os.path.join(OUT, sub + '.raw.txt'), 'w', encoding='utf-8').write(text)
         json.dump([], open(os.path.join(OUT, sub + '.portrait.json'), 'w', encoding='utf-8'))
-        submap.append({'subkey': sub, 'seg_index': seg, 'kind': c['kind'],
-                       'upasarga': upa, 'root_key': key})
+
+    # HEAD (cards[0]) -> one or more single-pass parts
+    head_parts = build_head_parts(key, cards[0]['lines'])
+    for part, (label, blob) in enumerate(head_parts):
+        sub = '%s~~00_%s' % (root, label)
+        write(sub, blob)
+        submap.append({'subkey': sub, 'seg_index': 0, 'part': part, 'kind': 'head',
+                       'section': label, 'upasarga': '', 'root_key': key})
+    # PREFIX sub-cards (seg 1..), each chunked to single-pass size
+    for seg, c in enumerate(cards[1:], start=1):
+        upa = c['upasarga']
+        chunks = chunk_lines(c['lines'], HEAD_BUDGET)
+        for part, ch in enumerate(chunks):
+            sub = '%s~~%02d_%s%s' % (root, seg, safe_name(upa), '_%d' % part if len(chunks) > 1 else '')
+            pp = ' part %d/%d' % (part + 1, len(chunks)) if len(chunks) > 1 else ''
+            hdr = ('PWG-ROOT SUBCARD — root=%s upasarga=%s%s (prefixed verb nested in the %s '
+                   'root article; root_key links it back)' % (key, upa, pp, key))
+            write(sub, '=== LAYER: %s ===\n\n%s' % (hdr, '\n'.join(ch)))
+            submap.append({'subkey': sub, 'seg_index': seg, 'part': part, 'kind': 'prefix',
+                           'section': 'prefix', 'upasarga': upa, 'root_key': key})
     json.dump({'root': key, 'safe': root, 'sub_cards': submap},
               open(os.path.join(OUT, root + '.rootmap.json'), 'w', encoding='utf-8'),
               ensure_ascii=False, indent=1)
+    stale = os.path.join(OUT, root + '.raw.txt')   # drop a superseded whole-card input so the
+    if os.path.exists(stale):                      # translator never sees both the whole + the split
+        os.remove(stale)
     if verbose:
-        print('  %-10s ROOT-SPLIT → %d sub-cards (1 head + %d prefix) → %s~~*.raw.txt + rootmap'
-              % (key, len(cards), npfx, root))
-    return len(cards)
+        nhead = len(head_parts)
+        print('  %-10s ROOT-SPLIT → %d sub-cards (%d head-parts + %d prefix) → %s~~*.raw.txt + rootmap'
+              % (key, len(submap), nhead, npfx, root))
+    return len(submap)
 
 
 def manifest_keys(section):
@@ -244,8 +325,25 @@ def main():
         has_nws = '=== LAYER: NWS' in t
         return (not has_nws) or ('PRE-PARSED OWNER MAP' in t)
 
-    # resumable in scaled runs: skip only keys already written in merged format
-    todo = [k for k in keys if not (scaled and is_merged(k))]
+    def is_giant(key):
+        """Would --root-split explode this key? (>=MIN_SPLIT prefix divisions.)"""
+        bufs = pwg_idx.get(cg.form_key(key), [])
+        if not bufs:
+            return False
+        dl = [l for l in bufs[0] if not (l.startswith('<L>') or l.startswith('<LEND>'))]
+        return sum(1 for c in RS.segment(dl) if c['kind'] == 'prefix') >= MIN_SPLIT
+
+    def is_done(key):
+        """Resumability. In --root-split mode a GIANT root counts as done only once its
+        rootmap exists — a stale whole-card input must NOT mask it, or it never gets split."""
+        if root_split:
+            if os.path.exists(os.path.join(OUT, safe_name(key) + '.rootmap.json')):
+                return True                        # already split
+            return is_merged(key) and not is_giant(key)   # non-giant whole-card is fine
+        return is_merged(key)
+
+    # resumable in scaled runs: skip only keys already finished in the active mode
+    todo = [k for k in keys if not (scaled and is_done(k))]
     print('merged pilot: %d key(s)%s, %d to generate'
           % (len(keys), ' [scaled, resumable]' if scaled else '', len(todo)))
 

@@ -35,16 +35,28 @@ def glue(root, outdir):
     if not os.path.exists(rmpath):
         sys.exit('no rootmap %s — run: _pilot_gen_merged.py --root-split %s' % (rmpath, root))
     rm = json.load(open(rmpath, encoding='utf-8'))
-    subs = sorted(rm['sub_cards'], key=lambda s: s['seg_index'])
+    subs = sorted(rm['sub_cards'], key=lambda s: (s['seg_index'], s.get('part', 0)))
     parts = ['# %s — собранная статья корня (NESTED, из %d под-карточек)'
              % (root, len(subs)), '',
              '_Склейка переведённых под-карточек обратно в одну вложенную статью '
-             '(простой глагол → приставочные глаголы)._', '']
+             '(простой глагол + дополнения → приставочные глаголы)._', '']
     have = miss = 0
     for s in subs:
         mdp = os.path.join(outdir, s['subkey'] + '.merged.md')
+        sec = s.get('section', '')
         if s['kind'] == 'head':
-            head = '## Простой глагол (корень {#%s#})' % root
+            if sec.startswith('pwg'):
+                head = '## Простой глагол (корень {#%s#}) — значения, часть %d' % (root, s.get('part', 0) + 1)
+            elif sec.startswith('pwkvn'):
+                head = '## PWKVN'
+            elif sec.startswith('pw'):
+                head = '## PW — Böhtlingk (kürzere Fassung)'
+            elif sec.startswith('sch'):
+                head = '## SCH — Schmidt, Nachträge 1928'
+            elif sec.startswith('nws'):
+                head = '## NWS — словник источников (%s)' % sec
+            else:
+                head = '## Простой глагол (корень {#%s#})' % root
         else:
             head = '## {#%s#}-{#%s#}  (приставка %s)' % (s['upasarga'], root, s['upasarga'])
         parts.append(head)
