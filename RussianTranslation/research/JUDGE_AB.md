@@ -106,3 +106,55 @@ now has materially stronger support (33 cards, POS-diverse, no false-clears), so
 for the bulk is **production fidelity**: re-run through the real masked, two-judge pipeline (and,
 once non-a-section translations exist, across more of the alphabet), scored by the same rule
 (κ ≥ 0.7, 0 false-clears). The ad-hoc-rubric / unmasked-input caveat from run 1 still applies.
+
+---
+
+## RUN 3 — full a-section audit, 201 cards (2026-06-24, workflow `judge-ab-201`)
+
+Ran the **entire** translated a-section through both judges as a background workflow (21
+chunks × Opus + Sonnet = 42 batch-judge agents, deterministic scoring). Verdicts:
+[`judge_ab_run3_opus.jsonl`](judge_ab_run3_opus.jsonl) ·
+[`judge_ab_run3_sonnet.jsonl`](judge_ab_run3_sonnet.jsonl). One Opus chunk (10 cards
+`akanizWa`…`akartana`) died on an API 500, so **191/201 cards have both verdicts**.
+
+### A/B result (the valid conclusion) — holds decisively at scale
+
+| metric | value |
+|---|---|
+| BAD/not-BAD agreement | **191/191 — Cohen κ = 1.00** |
+| severity exact / within ±1 | 114/191 / **190/191** (lone Δ2 = `aMhasaspati`, both still OK) |
+| **Sonnet false-clears** | **0** |
+| over-flags / verdict disagreements | **0 / 0** |
+
+Across **224 cards total** (runs 1–3, 7 POS classes) Opus and Sonnet have **never disagreed on
+a single accept/reject call** and Sonnet has **never once false-cleared** a card Opus flagged.
+The model choice is settled on this evidence; only production-pipeline fidelity remains to test.
+
+### Audit result — and an honest correction to my own harness
+
+The raw run flagged **14/191 cards (7%)** as severity-5, **13 of them `wrong_entry`** (Russian
+body describes a *different homonym* than the German). That looked like a systemic translation
+bug — **but it is mostly an artifact of MY pairing harness, not the data.** `pwg_ru_translated.jsonl`
+has **14 keys with multiple homonym rows**; my extractor joined each `key1`'s *first* PWG German
+record to the *last* homonym's Russian (dedup by bare `key1`), guaranteeing a cross-homonym
+mismatch. **13 of the 14 flagged cards are exactly those 14 multi-homonym keys** — so the judges
+correctly detected a mismatch *I* created.
+
+Corrected reading:
+- Of the **178 correctly-paired (single-homonym) cards, exactly one** was flagged — `akzamA`,
+  for a **single stray untranslated connective** "im" (→ "в"); Opus sev 2, Sonnet sev 3, and run 2
+  had judged the same card clean. A borderline minor, not a substantive defect.
+- So the **legacy a-section translations are clean** at the substantive level (≈0 real defects in
+  178 correctly-paired cards); there is **no 7% defect rate**.
+
+### Two real findings (beyond the A/B)
+
+1. **The judge is a reliable homonym-mismatch detector.** Both models flagged all 13 crossed-
+   homonym pairs at sev 5 with the exact diagnosis — a useful standing QA guardrail.
+2. **Pipeline lesson: pair `de`↔`ru` by homonym, never by bare `key1`.** Joining on `key1` alone
+   silently crosses homonyms (the bug my harness hit). Any merge/QA step must key on
+   `key2`/`hom`/`ord`. This is the actionable takeaway for the scale-up wiring.
+
+*Caveat: run-3 verdicts are valid as judge-**agreement** data but NOT as a translation-defect
+inventory — 13 of the BAD calls reflect harness mis-pairing, flagged via `mispaired_homonym:true`
+in the verdict files. A clean defect audit needs homonym-correct pairing (follow-up).*
