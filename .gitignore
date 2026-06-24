@@ -54,3 +54,5 @@ RussianTranslation/research/glue_mw_*.txt
 RussianTranslation/src/pilot/root_translate/
 # NB: lex_noun_link_pwg.tsv is intentionally TRACKED (auditable chain decisions);
 # regenerate with research/lex_noun_link.py
+# vendored external resources (re-fetch: MWderivations + stardict-sanskrit apte-hi)
+RussianTranslation/research/external/
