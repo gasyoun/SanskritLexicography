@@ -31,7 +31,8 @@ def iast(k):
 def main():
     topn = int(sys.argv[1]) if len(sys.argv) > 1 and sys.argv[1].isdigit() else 50
     band = {k: v.get('freqBand', 0) for k, v in json.load(open(SUMMARY, encoding='utf-8'))['lemmas'].items()}
-    ntexts = {k: v.get('n_texts', 0) for k, v in json.load(open(RENOU, encoding='utf-8')).items()}
+    ntexts = {k: v.get('n_texts', 0) for k, v in json.load(open(RENOU, encoding='utf-8')).items()
+              if isinstance(v, dict)}   # skip meta keys (e.g. __sources__, whose value is a list)
 
     agg = {}                                   # form_key -> aggregated headword
     for buf in pwg_mask.records():
