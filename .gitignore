@@ -47,3 +47,6 @@ RussianTranslation/src/pilot/translate/
 
 # Generated NWS source-defect list (regenerate via src/_nws_defect_list.py); actionable to-dos tracked in ../Uprava
 RussianTranslation/NWS_SOURCE_DEFECTS.md
+
+# generated glue artifacts
+RussianTranslation/research/glue_mw_*.txt
