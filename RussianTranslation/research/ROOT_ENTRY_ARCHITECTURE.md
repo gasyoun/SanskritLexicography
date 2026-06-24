@@ -69,3 +69,83 @@ sense-vs-form nesting) + a one-line rule per dict for the segmenter.
 inside the root article (why our cards are giant); **MW** lists prefixed verbs as
 separate `√`-headwords and **run-on**s nominal derivatives; **AP** tends to compact
 nesting. Confirm via prefaces + the real records.
+
+---
+
+## RESULTS (executed 2026-06-24)
+
+Method as briefed: read each preface for explicit arrangement statements, then pulled
+the actual `bhū` (SLP1 `BU`) root record from each `csl-orig/v02/<dict>/<dict>.txt`
+entry file and classified the **realized** structure (the marked-up text the segmenter
+will actually see), spot-checking `kṛ`/`gam` and the prefixed-form headwords
+(`aDiBU`, `anuBU`, `pariBU`, `praBU`, `aBiBU`, `samBU`).
+
+### Headline finding — the priors are *half right*, and the nuance matters for the segmenter
+
+Every Petersburg-family dictionary does **two things at once**, and conflating them is
+what made our cards giant:
+
+1. **Verbal prefix-forms are NESTED run-on inside the root `<L>` record** — `anu-bhū`,
+   `abhi-bhū`, `sam-bhū` (and stacked `anu-sam-`, `abhi-sam-`) live *inside* the `bhū`
+   record as `<div>`-delimited sub-paragraphs. This is the bulk that overflows a single
+   translation pass.
+2. **Lexicalised nominal prefix-forms are ALSO split out as their own `<k1>` headwords** —
+   e.g. PWG [`aDiBU`](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/pwg/pwg.txt) m. "Herrscher, Gebieter", glossed `(von {#BU#} mit {#aDi#})`. So a grep for
+   `<k1>anuBU<k2>` hits in *every* dict — that does **not** mean the dict is "split"; the
+   verbal force usually still nests under the root. Only **MW** splits the *verb itself*.
+
+So the segmenter must split on the **in-record `<div>` prefix boundary**, not on the
+presence of a separate headword.
+
+### Comparison table
+
+| Dict | Prefixed **verbs** | Nominal derivatives | Prefix-boundary cue (the thing the segmenter keys on) | Evidence |
+|---|---|---|---|---|
+| **PWG** | **NESTED** run-on in root record | mostly run-on; lexicalised ones SPLIT to own `<k1>` | `<div n="p">— {#<upasarga>#}` (prefix in `{#…#}`, may stack: `{#anusam#}`, `{#aBisam#}`); 2ary conj `<div n="m">` / `— <ab>caus./desid.</ab>`; senses `<div n="1"> N)` | `BU` rec. [pwg.txt L535553–536869](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/pwg/pwg.txt): `<div n="p">— {#aBisam#}`, `— {#parisam#}`, `— {#pratisam#}`; split `aDiBU` m. |
+| **PW** (kürzere) | **NESTED** run-on | run-on; lexicalised ones SPLIT | `<div n="p">— Mit {#<prefix>#}`; 2ary conj `<div n="m">— <ab>Caus./Desid.</ab>`; senses `<div n="1">— N〉`, subsenses `<div n="2">— a〉` | `BU` rec. [pw.txt L331003–](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/pw/pw.txt): `<div n="p">— Mit {#na#}`, `<div n="m">— <ab>Caus.</ab>` |
+| **MW** | **SPLIT** — each `prefix-√root` is its **own `<L>` headword** | **NICHED** run-on under the root/leading word (subordinate line) | headword `<k1>anuBU<k2>anu-BU` + body `<s>anu-√ BU</s>` (the `-√` is the cue); senses `<div n="to"/>`, 2ary conj `<div n="vp"/>` | `anu-BU` [mw.txt L25014](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/mw/mw.txt); preface §"under every root the continuous series of derivative words" |
+| **GRA** | **NESTED** run-on in root record | run-on; a few lexicalised SPLIT | `<div n="Pf">{@<prefix>@}` (Pf = *Präfix*; prefix in `{@…@}`, stacks: `{@ánu prá@}`, `{@abhí sám@}`); morphology blocks `<div n="H">`/`<div n="TS">` | `BU` rec. [gra.txt L42470–](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/gra/gra.txt): `<div n="Pf">{@ánu@}`, `{@abhí@}`, `{@pári@}`, `{@sám@}` |
+| **AP90** | **RUN-ON** in a prose "Note" paragraph | run-on; lexicalised ones SPLIT | *text-level only, no `<div>`*: `;`-separated inline `{#<prefix>BU#}` glosses inside the Note; 2ary conj inline `{%--<ab>Caus.</ab>%}` | `BU` rec. [ap90.txt L190844–190948](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/ap90/ap90.txt): `{#punarBU#} to marry again; {#AvirBU#} to appear; {#tiroBU#} to disappear …` |
+| **SCH** | **NESTED** run-on (additive supplement) | — | `— Mit {%<prefix>%}` (note: italic `{%…%}`, not `{#…#}`); stacks `{%samabhi%}`, `{%˚saṃpari%}` | `BU` rec. [sch.txt L63863](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/sch/sch.txt): `mit {%samabhi%} … — Mit {%abhyā%} … — Mit {%ud%}` |
+| **FRI** | **none** (reader glossary) | — | no prefix forms; senses are trilingual `<div n="1"/> <lang n="…">` blocks | `BU` rec. [fri.txt L28267](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/fri/fri.txt): simple `√bhū` only, cz/ru/en glosses |
+
+### Preface evidence (quoted)
+
+- **MW** — explicitly abandons full root-arrangement but niches derivatives under roots:
+  > "I also felt constrained to abandon the theoretically perfect ideal of a wholly
+  > root-arranged Dictionary in favour of a more practical performance" — and the
+  > subordinate line is used "for exhibiting clearly to the eye in regular sequence
+  > **under every root the continuous series of derivative words which grow out of each
+  > root**" ([`mwpref_all.en.md`](https://github.com/sanskrit-lexicon/MWS/blob/master/prefaces/mwpref_all.en.md), §"Explanation of the Plan and Arrangement"). MW *niches nominals, splits the prefixed verb.*
+- **PWG/PW/GRA** — the prefaces give layout/transliteration policy (e.g. PWG banishes
+  `ऋ ॠ ऌ` from verbal-root spellings, gives no class number since the 3 sg. pres. shows
+  it — [`pwgpref_all.de.md`](https://github.com/sanskrit-lexicon/PWG/blob/master/prefaces/pwgpref_all.de.md) §187–189) but make **no** explicit statement that overrides the
+  realized structure; the entry markup above is the decisive evidence (all three nest).
+
+### One-line segmenter rule per dict
+
+- **PWG** → split the root `<L>` record at every `<div n="p">` (prefixed-verb) and
+  `<div n="m">` (caus/desid/intens) boundary; `upasarga` = the `{#…#}` token immediately
+  after `— ` (split on internal `+`/concatenation for stacked `anusam`); additionally
+  ingest already-split lexical forms by their own `<k1>` headword, linking via `root_key=BU`.
+- **PW** → identical to PWG, but the prefix token follows the literal `Mit ` inside
+  `<div n="p">`; secondary conjugation under `<div n="m">`.
+- **MW** → **no in-record split needed** — prefixed verbs are already separate `<L>`
+  records; group by `root_key` = the root after `-√` in the body (`<s>anu-√ BU</s>`),
+  `upasarga` = the `k2` segment before the first hyphen (`anu-BU` → `anu`).
+- **GRA** → split the root record at every `<div n="Pf">` boundary; `upasarga` = the
+  `{@…@}` token (keep multi-word values verbatim for stacked prefixes, e.g. `ánu prá`).
+- **AP90** → *no structural cue*: segment the run-on "Note" paragraph on `;`-delimited
+  `{#<x>BU#}` tokens (lowest-fidelity; the prefix is fused to `BU` with no boundary
+  marker), and otherwise rely on the separate `<k1>` headwords for lexicalised forms.
+- **SCH** → split on `— Mit {%<prefix>%}` (italic `{%…%}`, supplement-only deltas).
+- **FRI** → no segmentation (carries no prefixed forms).
+
+### Net correction to the priors
+
+| Prior | Verdict |
+|---|---|
+| PWG/PW/GRA **nest** prefixed verbs → giant cards | **CONFIRMED** — and the boundary is a real `<div>` cue (`p` / `Pf`), so segmentation is mechanical, not heuristic. |
+| MW splits prefixed verbs as `√`-headwords, run-ons nominals | **CONFIRMED** — cue is the `-√` in the body + the hyphen in `k2`. |
+| AP "compact nesting" | **CONFIRMED, sharpened to RUN-ON** — prose `;`-list with **no** markup boundary; this is the *hardest* dict to segment and should fall back to its split `<k1>` headwords. |
+| (new) all dicts also emit separate `<k1>` headwords for lexicalised prefix-nouns | **the trap**: presence of `<k1>anuBU` ≠ "split verb"; only MW splits the verb. Segment on the `<div>` cue, not on headword presence. |
