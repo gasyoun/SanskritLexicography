@@ -110,6 +110,42 @@ Built and verified the same day the license cleared:
 - **Held:** `shabdArtha_kaustubha` (Kannada) and `samskritam-tamizham` (Tamil) — not
   built; logged as available votes pending a Kannada/Tamil-reading reviewer (§5).
 
+## 4b. Second sweep — Sanskrit synonym-kośas + Meulenbeld binomials (2026-06-24)
+
+A full-repo survey (every `.babylon` cross-checked against csl-orig codes) found two
+more reusable, non-Cologne assets. **The cross-check is the point:** four datasets that
+*look* new are already Cologne — `Vedic-Index-of-Names-and-Subjects` = **vei**,
+`aufrecht-catalogus-catalogorum` = **acc**, `indian-epigraphical-glossary` = **ieg**,
+`Personal-and-Geographical-Names-in-the-Gupta-Inscriptions` = **pgn**; and `Meulenbeld`
+itself is **SNP** (its header reads *Data from sanskrit-lexicon.uni-koeln.de*). All
+skipped as dupes.
+
+**(i) Sanskrit synonym-kośas → the gate's `skd_vcp_synonyms` channel (Rule 5).**
+[src/build_kosha.py](src/build_kosha.py) parses the 10 non-Cologne synonym/homonym
+kośas (Amarakośa `amara-onto` — which carries an explicit `समानार्थक:` field —
+`anekArthadhvanimanjarI`, `nAmamAlikA`, the two Abhidhānacintāmaṇi supplements,
+`vaiShNava`/`shaiva-kosha`, `upasargArthachandrikA`, `bhUtasankhyA`,
+`jhaLkI-bhIma-nyAya-koshaH`) into an SLP1-keyed synonym index: **103,518 rows →
+9.4 % of PWG headwords** get a Sanskrit synonym set. This populates the gate's
+previously-empty `skd_vcp_synonyms` (it's the *first* real Sanskrit-side corroboration
+source — SKD/VCP were never wired). Verified: `arka`→अरुण/अर्यमन्/अंशुमालिन् (sun),
+`deva`→अमर/अमर्त्य, `aMSa`→भाग.
+  - **Excluded after sampling** (not synonym sources): `amara-sudhA` is a **Pāṇinian
+    derivation (prakriyā)** resource (dhātu + sūtra refs — valuable for *paradigm/
+    derivation* work, not synonyms), `laxaNa-sangraha` is nyāya *definitions*,
+    `ekAkSharanAmamAlA` is verse-only, `e-bhAratI-sampat` yielded ~3 rows.
+
+**(ii) Meulenbeld plant → Latin binomial (= SNP).**
+[src/build_meulenbeld.py](src/build_meulenbeld.py) parses the pre-extracted plant
+glossary into **453 plant headwords, 235 with a Latin binomial** (`ajamodā`→*Apium
+graveolens*, `agaru`→*Commiphora roxburghii*). Surfaces as `latin_binomials` on the
+gate card — a deterministic fix for the binomial-left-untranslated failure mode
+(`Hedysarum gangeticum`). Source is our own SNP; the indic-dict packaging is just the
+convenient pre-extracted form.
+
+Both stay gitignored (`src/*.jsonl`), kept out of the Russian heuristic, attribution
+on file. Coverage lines added to `corpus_gate.py coverage`.
+
 ## 5. Recommendation / phased plan
 
 1. **Skip en-head and the EN/FR/DE/SA gloss sets entirely** — pure Cologne duplication,

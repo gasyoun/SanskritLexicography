@@ -68,6 +68,30 @@
 Исходные `.babylon` лежат (gitignored) в `../research/external/`; выходные
 `*.jsonl` тоже gitignored.
 
+## Санскритские синонимы из кош (indic-dict) — `build_kosha.py`
+
+Санскритско-санскритские СИНОНИМИЧЕСКИЕ коши indic-dict (НЕ из Cologne) питают
+санскритскую корроборацию значения (поле `skd_vcp_synonyms`, правило 5) — какой
+референт у головного слова, через его санскритские синонимы. НИКОГДА не русская
+глосса, не корректность. [build_kosha.py](build_kosha.py) → `kosha_syn.jsonl`,
+строка `{source, slp1, dev, syn_dev, syn_slp1}`. **103 518 строк ≈ 9.4 %
+заглавных слов PWG.** Главный источник — Amarakosha `amara-onto` (явное поле
+`समानार्थक:`); также anekArtha- (омонимы), nAmamAlikA, дополнения
+Abhidhanachintamani, vaiShNava-/shaiva-kosha, upasargArthachandrikA, bhUtasankhyA,
+jhaLkI-bhIma-nyAya. **Исключены** (не синонимы, проверено): `amara-sudhA` =
+паниниева деривация (prakriyA, для парадигм/деривации, не сюда), `laxaNa-sangraha`
+= ньяя-определения, `ekAkSharanAmamAlA` = только стих, `e-bhAratI-sampat` ≈3 строки.
+Коши уже в csl-orig (skd/vcp/abch/armh) сюда НЕ берутся.
+
+## Латинские биномены растений (Meulenbeld=SNP) — `build_meulenbeld.py`
+
+[build_meulenbeld.py](build_meulenbeld.py) парсит уже извлечённый глоссарий
+названий растений Meulenbeld (= Cologne-словарь **SNP**) → `meulenbeld_plants.jsonl`,
+строка `{slp1, stem, dev, binomials, sa_equivalents, gloss}`. **453 заглавных
+слова, 235 с латинским биноменом** (`ajamodA`→*Apium graveolens*,
+`agaru`→*Commiphora roxburghii*). Поле карточки `latin_binomials` — детерминированно
+закрывает «латинский биномен оставлен непереведённым» (`Hedysarum gangeticum`).
+
 ## Корпусный лексикон пословного выравнивания (DeepSeek) — `build_corpus_lexicon.py`
 
 Главный **множитель повторного использования**: пословное (word-by-word)
@@ -105,6 +129,8 @@ agni/anya/akṣara/ananta).
 ```sh
 python build_src.py [путь-к-SamudraManthanam]      # 5 санскр.-рус. словарей
 python build_indic.py [путь-к-.babylon-каталогу]   # хинди-сигнал значения
+python build_kosha.py [путь-к-.babylon-каталогу]   # санскритские синонимы из кош
+python build_meulenbeld.py [путь-к-.babylon-каталогу] # латинские биномены растений
 python build_corpus_lexicon.py build <textfile> [N]  # пословный лексикон (нужен DEEPSEEK_API_KEY в .env)
 python build_corpus_lexicon.py status                # записей + различных ключей
 ```

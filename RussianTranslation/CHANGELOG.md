@@ -10,6 +10,27 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## 2026-06-24
 
+### indic-dict 2nd sweep — Sanskrit synonym-kośas + Meulenbeld binomials folded
+- Full-repo survey of indic-dict cross-checked against csl-orig codes (the check caught
+  4 false-new dupes: Vedic-Index=`vei`, Aufrecht-CC=`acc`, epigraphical-glossary=`ieg`,
+  Gupta-names=`pgn`; Meulenbeld=`SNP`). Two genuinely non-Cologne assets folded:
+- **Sanskrit synonym-kośas** → gate's `skd_vcp_synonyms` (Rule 5, Sanskrit-side
+  corroboration; the first real source there — SKD/VCP were never wired).
+  [src/build_kosha.py](src/build_kosha.py) parses 10 synonym/homonym kośas (Amarakośa
+  `amara-onto` with its explicit `समानार्थक:` field, anekārtha-, nāmamālikā, Abhidhāna
+  supplements, …) → **103,518 rows, 9.4 % of PWG headwords**. Verified: `arka`→अरुण/
+  अर्यमन् (sun), `deva`→अमर/अमर्त्य, `aMSa`→भाग. Excluded after sampling: `amara-sudhA`
+  (Pāṇinian prakriyā/derivation — not synonyms), `laxaNa-sangraha` (nyāya definitions),
+  `ekAkSharanAmamAlA` (verse-only), `e-bhAratI-sampat`.
+- **Meulenbeld plant→Latin binomial** (= SNP). [src/build_meulenbeld.py](src/build_meulenbeld.py)
+  → **453 plants, 235 with a binomial** (`ajamodA`→*Apium graveolens*); surfaces as
+  card `latin_binomials` — deterministic fix for the binomial-left-untranslated failure.
+- `corpus_gate.py`: `load_kosha_index`/`lookup_synonyms` + `load_plant_index`/
+  `lookup_binomials`; `build_card` now populates `skd_vcp_synonyms` + `latin_binomials`;
+  coverage cmd + lookup print extended. Prompt Rule 5 + input schema updated.
+  Full survey (incl. the 5 header-checked en-entries: MT-Slang/pract/pund_v1/Vaidya/
+  laukika — all low-value) in [INDIC_DICT_EVALUATION.md](INDIC_DICT_EVALUATION.md) §4b.
+
 ### Freq 38-unit test TRANSLATED + glued + audited (split→translate→glue end-to-end)
 - Ran the prepped freq test (8 nouns + giant `man`, 38 units) via the Workflow tool
   (38 Sonnet agents, ~14-way concurrency) → **38/38 translated**; `root_glue_translated.py man`

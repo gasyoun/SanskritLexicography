@@ -162,6 +162,60 @@ def lookup_sense(key1, key2=None):
              'gloss': r['gloss'], 'dev': r['dev'], 'attribution': r['attribution']}
             for c in SENSE for r in hit.get(c, [])[:MAX_GLOSS_PER_SOURCE]]
 
+# ---- Sanskrit synonym koshas (Sanskrit-side corroboration, Rule 5) -----------
+# Non-Cologne indic-dict koshas (Amarakosha etc.), built by build_kosha.py. They
+# fill `skd_vcp_synonyms`: Sanskrit synonyms that corroborate WHICH sense a PWG
+# headword carries. NEVER Russian, never a correctness verdict (like SKD/VCP).
+_KOSHA_IDX = None
+def load_kosha_index():
+    global _KOSHA_IDX
+    if _KOSHA_IDX is not None:
+        return _KOSHA_IDX
+    idx = defaultdict(set)
+    path = os.path.join(HERE, 'kosha_syn.jsonl')
+    if os.path.exists(path):
+        with open(path, encoding='utf-8') as f:
+            for line in f:
+                line = line.strip()
+                if not line:
+                    continue
+                e = json.loads(line)
+                k = form_key(e.get('slp1', ''))
+                if k:
+                    idx[k].update(e.get('syn_dev', []))
+    _KOSHA_IDX = idx
+    return idx
+
+def lookup_synonyms(key1, key2=None, limit=12):
+    kidx = load_kosha_index()
+    syn = kidx.get(form_key(key1)) or (kidx.get(form_key(key2)) if key2 else None) or set()
+    return sorted(syn)[:limit]
+
+# ---- Meulenbeld plant → Latin binomial (SNP) --------------------------------
+_PLANT_IDX = None
+def load_plant_index():
+    global _PLANT_IDX
+    if _PLANT_IDX is not None:
+        return _PLANT_IDX
+    idx = {}
+    path = os.path.join(HERE, 'meulenbeld_plants.jsonl')
+    if os.path.exists(path):
+        with open(path, encoding='utf-8') as f:
+            for line in f:
+                line = line.strip()
+                if not line:
+                    continue
+                e = json.loads(line)
+                for k in {form_key(e.get('slp1', '')), form_key(e.get('stem', ''))}:
+                    if k and e.get('binomials'):
+                        idx.setdefault(k, e['binomials'])
+    _PLANT_IDX = idx
+    return idx
+
+def lookup_binomials(key1, key2=None):
+    pidx = load_plant_index()
+    return pidx.get(form_key(key1)) or (pidx.get(form_key(key2)) if key2 else None) or []
+
 # ---- corpus query (reuse SamudraManthanam, read-only) --------------------
 def corpus_connection():
     global _CORPUS_CON
@@ -250,7 +304,8 @@ def build_card(idx, key1, key2, pwg_ru):
             'kow_reference': kow,
             'hindi_sense': lookup_sense(key1, key2),   # soft sense signal, not correctness
             'corpus_examples': corpus_examples(key1),
-            'skd_vcp_synonyms': []}
+            'latin_binomials': lookup_binomials(key1, key2),   # Meulenbeld/SNP, botanical
+            'skd_vcp_synonyms': lookup_synonyms(key1, key2)}   # Sanskrit kosha synonyms
 
 # ---- CLI -----------------------------------------------------------------
 def read_keys(limit=None):
@@ -277,6 +332,13 @@ def cmd_lookup(idx, args):
     print('\nHindi sense signal (%d) — soft, sense-disambiguation only:' % len(sense))
     for s in sense:
         print('  [%s %s] %s' % (s['source'], s['pos'], s['gloss'][:140]))
+    syn = lookup_synonyms(key1, key2)
+    print('\nSanskrit kosha synonyms (%d) — Sanskrit-side corroboration:' % len(syn))
+    if syn:
+        print('  ' + ', '.join(syn))
+    binom = lookup_binomials(key1, key2)
+    if binom:
+        print('\nLatin binomials (Meulenbeld/SNP): ' + '; '.join(binom))
     ex = corpus_examples(key1, 3)
     print('\ncorpus examples (%d):' % len(ex))
     for e in ex:
@@ -307,7 +369,9 @@ def cmd_coverage(idx, args):
     # KOW both overall and WITHIN its attested zone.
     kow_zone = set(k[0] for k, h in idx.items() if REF in h and k)
     sidx = load_sense_index()
-    tot = per = kow_n = kow_zone_n = sense_n = 0
+    kidx = load_kosha_index()
+    pidx = load_plant_index()
+    tot = per = kow_n = kow_zone_n = sense_n = syn_n = plant_n = 0
     persrc = defaultdict(int)
     sensesrc = defaultdict(int)
     for k in keys:
@@ -329,6 +393,10 @@ def cmd_coverage(idx, args):
         for c in SENSE:
             if c in shit:
                 sensesrc[c] += 1
+        if fk in kidx:
+            syn_n += 1
+        if fk in pidx:
+            plant_n += 1
     # corpus signal: its own random sub-sample of the scanned keys (the corpus
     # query is the slow part, so it stays capped) — representative, not first-300.
     corpus_n = min(300, len(keys))
@@ -351,6 +419,10 @@ def cmd_coverage(idx, args):
     print('  any Hindi gloss: %d (%.1f%%)' % (sense_n, 100.0 * sense_n / tot))
     for c in SENSE:
         print('    %-22s %6d (%.1f%%)' % (SENSE_NAME[c], sensesrc[c], 100.0 * sensesrc[c] / tot))
+    print('--- Sanskrit kosha synonyms (Sanskrit-side corroboration, Rule 5) ---')
+    print('  kosha synonym set: %d (%.1f%%)' % (syn_n, 100.0 * syn_n / tot))
+    print('--- Meulenbeld/SNP Latin binomials (botanical) ---')
+    print('  plant w/ binomial: %d (%.1f%%)' % (plant_n, 100.0 * plant_n / tot))
 
 def cmd_tune(idx, args):
     """Inter-dictionary agreement: for headwords covered by >=2 independent
