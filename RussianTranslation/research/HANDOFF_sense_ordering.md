@@ -89,6 +89,7 @@ frequency axis remains a `pwg_ru` innovation (DCS-powered), as hypothesised.
 | **MW** | *aim, purpose* | *advantage, use, utility* | *thing, object* (ŚBr. xiv) | wealth = **#5**, meaning = **#8 (last)** | **explicit gender history**: "in RV i-ix only n.; in RV x … n. and m.; in later Sanskṛt only m." |
 | **GRA** | *Ziel* (goal) | *Geschäft, Arbeit* (work) | *(idiom)* an die Arbeit gehen | (Rig-Veda only; wealth/meaning n/a) | states inline: *"Grundbegriff ist „das Erstrebte" (von ar „streben"). **Daher** 1〉 Ziel; 2〉 …"* |
 | **AP90** | *Object, purpose, end and aim* | *Cause, motive, reason* | **Meaning, sense, signification** | wealth = **#6**, **meaning = #3 (elevated)** | classical only (Mu./Dk./Ku./R./Bg.); **no Vedic, non-chronological** |
+| **Koch** (RU target) | *цель* (aim) | *причина, повод* (cause) | *преимущество* (advantage) | wealth = **#6**, meaning = **#10** | **no citations** — a target-language gloss list; government shown instead (`Acc. अर्थम् … ради, для`) |
 
 **`dharma` (धर्म, SLP1 `Darma`)** — the discriminator is sharper here:
 
@@ -98,6 +99,7 @@ frequency axis remains a `pwg_ru` innovation (DCS-powered), as hypothesised.
 | **PW** | *Satzung, Ordnung, Gesetz, Brauch, Sitte…* | identical core-first lead |
 | **MW** | *"that which is established or firm, steadfast decree, statute, ordinance, law"* | **explicit historical note**: "(the **older form of the RV is `Darman`**, q.v.)" — derives from the Vedic *-man* stem |
 | **AP90** | **Religion** → 2) Law/ordinance/statute → 3) virtue → … → 8) Nature → 9) essential quality | leads with the **pedagogically salient gloss**; the etymon *Driyate loko'nena … Df-man* sits in a head-bracket but does **not** drive the order; the philosophical core ("essential property") is demoted to #8–9 |
+| **Koch** (RU target) | *состояние (душевное)* "(mental) state" → мораль, религиозное предписание, совесть, добродетель… | leads with an **abstract psychological sense**; закон #8, природа/сущность #9, Дхарма/религия #10 — **neither** PWG's statute-core **nor** Apte's Religion-first: a modern semantic re-ordering for the Russian reader |
 
 **Reading.** PWG/PW/MW lead with the **root core** and thread citations **oldest-first**;
 MW even date-stamps the gender shift (RV i-ix → RV x → later) and flags the older Vedic
@@ -117,6 +119,17 @@ attestation-apparatus** are the decisive signals.
 | **GRA** | **Etymological-logical** — *stated*: basic concept → numbered derived senses (single Vedic corpus, so chronology is moot) | Very high (explicit) | preface L74–85 + inline *"Grundbegriff … Daher 1〉…"* |
 | **SCH** | N/A (supplement; inherits PWK) | n/a | single-sense additions |
 | **AP90** | **Logical-semantic / pedagogical** (salience-first, grouped) | High | `dharma` #1 = "Religion", core demoted; `artha` "meaning" promoted to #3; no Vedic/chronological apparatus |
+| **Koch** (RU target) | **Logical-semantic (modern, target-reader)** — neither etymological-genetic nor chronological; zero citation apparatus | High | `artha` #1 = *цель* (aim — coincides with the genetic core) but `dharma` #1 = "(mental) state", религия demoted to #10; no `<ls>`, government shown instead |
+
+> **Kochergina (the Russian-target precedent) does NOT order historically.** Like Apte it
+> is **logical-semantic**, salience-ranked for a modern reader, and carries no chronological
+> citation apparatus — so the existing Russian Sanskrit dictionary is in the *Apte camp*,
+> not the *Petersburg camp*. This **does not change the recommendation below**: `pwg_ru` is
+> a translation *of PWG*, so it keeps PWG's etymological-genetic order. Unlike the four
+> *apparatus* conventions (government, labels, cross-refs — where Koch is the model to
+> follow, see [`HANDOFF_apparatus_conventions.md`](HANDOFF_apparatus_conventions.md)),
+> sense *order* is the one axis where Koch is a **contrast, not a template**: adopting its
+> re-ordering would fight the PWG source.
 
 > **Refinement of the brief's wording.** Call the European group **"etymological-genetic
 > with historical citation-threading,"** not plain "historical." Strict *oldest-sense-first*
