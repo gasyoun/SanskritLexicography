@@ -56,13 +56,21 @@ but historical order *within* a homonym).
 the four 19th-c. European dictionaries (PWG, PW, MW, GRA) are **NOT historical in the
 strict "oldest-sense-first" sense** the brief proposed. They are **etymological-genetic**:
 the *lead* sense is the reconstructed **Grundbedeutung** (root core), and the *historical*
-axis governs (a) the **chronological ordering of citations *within* each sense** (Veda →
+axis governs (a) a **chronological *tendency* in the citations *within* each sense** (Veda →
 Brāhmaṇa/Sūtra → epic → classical) and (b) explicit **attestation/gender notes**. Apte
 (AP90) is **logical-semantic / pedagogical** — it leads with the practically salient gloss
 for an English-medium student, relegates etymology to a head-bracket, and carries **no
 historical citation apparatus**. So the two camps mix axes exactly as the brief warned:
-*genetic sense-heads + chronological citation-threading* (European) vs. *salience-ranked
+*genetic sense-heads + chronologically-leaning citations* (European) vs. *salience-ranked
 sense-heads, no chronology* (Apte).
+
+> **Quantified below (PWG full corpus, 13,900 multi-sense entries).** "Genetic, not a
+> date-sort" is now a measurement, not an impression: PWG's printed sense-1 is the
+> oldest-attested sense **73.5 %** of the time and overall order correlates with date only
+> **moderately** (Kendall τ = 0.375); citations inside a sense run old→new in **76 %** of
+> adjacent pairs but are *strictly* chronological in only **26 %** of senses. See
+> [§ Quantitative audit](#quantitative-audit-pwg-executed-2026-06-24) and
+> [sense_order_metrics.md](sense_order_metrics.md).
 
 No printed **frequency** dictionary of Sanskrit was found or implied by any preface — the
 frequency axis remains a `pwg_ru` innovation (DCS-powered), as hypothesised.
@@ -109,6 +117,33 @@ discipline** in its citations. `artha` sense-1 alone under-discriminates (its et
 core *and* a common sense both = "aim/purpose"), so `dharma` and the **citation-ordering +
 attestation-apparatus** are the decisive signals.
 
+### Quantitative audit (PWG, executed 2026-06-24)
+
+The qualitative reads above were re-run at corpus scale to put numbers on "genetic, not a
+date-sort." Tooling reused the existing Renou stack — [`src/renou.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/renou.py)
++ [`src/ls_source_map.json`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/ls_source_map.json)
+(each `<ls>` siglum already carries a Renou state **and a numeric date**) — driven over
+`csl-orig/v02/pwg/pwg.txt` by [`analyze_sense_order.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/research/analyze_sense_order.py).
+Full tables: [`sense_order_metrics.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/research/sense_order_metrics.md)
+/ [`.json`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/research/sense_order_metrics.json).
+
+| # | Question | Result (PWG) | Reading |
+|---|---|---|---|
+| **1** | Does PWG print senses oldest-first? (13,900 entries, ≥2 dated senses) | sense-1 = oldest **73.5 %**; Kendall **τ = 0.375** | **genetic, moderately date-correlated — NOT a chronological sort** |
+| **3** | Are citations threaded Veda→classical *inside* a sense? (32,254 senses) | adjacent pairs old→new **76.3 %**; *strictly* sorted only **26.2 %** (τ̄ = 0.28) | a real **tendency**, not a rule — B-R also group cites by sub-sense/construction |
+| **2** | Probe set (40 polysemous words, 57 homonym-entries) | sense-1 = oldest **71.9 %** | convergent with the 73.5 % corpus rate |
+
+**Two consequences.** (a) The earlier "chronological citation-threading" wording is
+**tempered to a tendency** (76 % directional, 26 % strict). (b) A `renou_oldest` re-sort
+would **change sense-1 for ~26.5 %** of multi-sense entries and impose a stricter chronology
+than Böhtlingk-Roth used — i.e. it *would* fight the source. The audit also exposed a
+**pocket of logical-semantic ordering inside PWG**: grammar/philosophy technical terms
+(*prakṛti, vṛtti, nyāya, karaṇa, mātrā*) lead with the **Pāṇinian/Classical technical
+sense**, not the oldest — PWG itself mixes axes for śāstra vocabulary. *(MW/AP90 were not
+date-audited: MW's senses are split across `<L>` sub-entries that resist clean
+segmentation, and AP90 has **no dated-citation apparatus to audit** — which is itself the
+finding for Apte.)*
+
 ### Classification
 
 | Dict | Sense-ordering principle (microstructure) | Confidence | Decisive evidence |
@@ -141,9 +176,10 @@ attestation-apparatus** are the decisive signals.
 
 1. **Preserve PWG's own `<div n>` sense order verbatim — do NOT re-sort by `renou_oldest`.**
    `pwg_ru` is a translation *of* PWG; PWG's order is already etymological-genetic and
-   authoritative. A strict `renou_oldest` re-sort would reproduce sense 1 (root core =
-   oldest) but **fight the source** in the middle and tail, discarding Böhtlingk-Roth's
-   editorial judgement. Faithfulness to the source wins.
+   authoritative. **Now measured:** a strict `renou_oldest` re-sort reproduces sense 1 only
+   ~74 % of the time — it would **change the lead sense for ~26.5 %** of multi-sense entries
+   and impose a tighter chronology than B-R used (τ = 0.375), discarding their editorial
+   judgement. Faithfulness to the source wins.
 2. **Use the Renou I–V tag + `renou_oldest` as per-sense *display metadata*, not a sort
    key.** Render a small period badge on each sense (Vedic / Brāhmaṇa / epic / classical).
    This surfaces exactly the historical signal the user wants — *for free, since we already
@@ -157,8 +193,26 @@ attestation-apparatus** are the decisive signals.
    editorial stance* for a *different audience*; mixing it into a PWG translation would be
    incoherent. If a learner-facing layer is ever wanted (cf. the lexicography roadmap),
    build it as a separate, explicitly-labelled view.
+5. **Watch the śāstra pocket.** The audit found PWG itself leads with the *classical*
+   technical sense (not the oldest) for grammar/philosophy terms (*prakṛti, vṛtti, nyāya,
+   karaṇa, mātrā*, …). Since the badge in (2) is per-sense, this is handled automatically —
+   but it confirms a global "oldest-first" re-sort would mis-serve exactly the technical
+   vocabulary scholarly users care about most.
+
+### OCR-index check (Apte front matter)
+
+Per the steer to *check the index before fetching*: there is **no central preface index** —
+each repo's `prefaces/` directory is self-describing, and the set of those directories *is*
+the index (PWG, PWK, MWS, GRA, SCH, BHS, BOP, BOR, BUR, CAE, CCS, INM, KRM, MCI, MD, MW72,
+PUI, SHS, SKD, STC, VCP, VEI, Wil-YAT, prefaces_ieg, prefaces_pe). **Neither `AP` nor
+`AP90` has a `prefaces/` directory**, and the only "Apte" strings in any preface README are
+cross-references from CCS/GRA/INM. So Apte's "Scheme of the Work" is **not OCR'd anywhere in
+the local tree** (indexed or not) — the AP90 classification here stands on entry evidence.
+If his explicit statement is wanted, it is a fresh [`/cologne-preface-ocr AP90`](https://github.com/sanskrit-lexicon/AP90)
+job against the csldoc scans, out of scope for this research pass.
 
 **One-line answer:** PWG/PW/MW/GRA order senses **etymologically-genetically (root core
-first) with Vedic-first citation chronology**; Apte orders them **by pedagogical salience**.
-For `pwg_ru`, **keep PWG's printed sense order** and attach the Renou period tag as a
-per-sense badge rather than re-sorting.
+first), with citations that *lean* oldest-first** (PWG: sense-1 = oldest 73.5 %, τ = 0.375 —
+a tendency, not a sort); Apte orders them **by pedagogical salience**. For `pwg_ru`, **keep
+PWG's printed sense order** and attach the Renou period tag as a per-sense badge rather than
+re-sorting (a re-sort would move the lead sense for ~1 in 4 entries).

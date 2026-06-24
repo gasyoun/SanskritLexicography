@@ -1,0 +1,478 @@
+{
+  "source": "C:\\Users\\user\\Documents\\GitHub\\csl-orig\\v02\\pwg\\pwg.txt",
+  "analysis_1_cross_sense_order": {
+    "entries_with_numbered_senses": 19172,
+    "entries_with_>=2_dated_senses": 13900,
+    "pct_printed_sense1_is_oldest_attested": 73.5,
+    "mean_kendall_tau_printed_vs_date": 0.375,
+    "note": "tau=1 -> printed order already = oldest-first; tau=0 -> uncorrelated."
+  },
+  "analysis_3_within_sense_chronology": {
+    "senses_with_>=2_dated_citations": 32254,
+    "pct_senses_fully_chronological(tau=1)": 26.2,
+    "mean_within_sense_kendall_tau": 0.28,
+    "pct_adjacent_citation_pairs_nondecreasing": 76.3
+  },
+  "analysis_2_probe": {
+    "n_probe_words_with_>=2_dated_senses": 57,
+    "pct_probe_sense1_is_oldest": 71.9,
+    "rows": [
+      {
+        "k1": "BAva",
+        "n_dated_senses": 15,
+        "sense1_oldest": true,
+        "sense1_date": -500,
+        "min_date": -500,
+        "tau": 0.22916666666666666
+      },
+      {
+        "k1": "Darma",
+        "n_dated_senses": 11,
+        "sense1_oldest": true,
+        "sense1_date": -1000,
+        "min_date": -1000,
+        "tau": 0.20833333333333334
+      },
+      {
+        "k1": "Darma",
+        "n_dated_senses": 4,
+        "sense1_oldest": true,
+        "sense1_date": 80,
+        "min_date": 80,
+        "tau": 1.0
+      },
+      {
+        "k1": "aMSa",
+        "n_dated_senses": 3,
+        "sense1_oldest": true,
+        "sense1_date": -1125,
+        "min_date": -1125,
+        "tau": 0.0
+      },
+      {
+        "k1": "aNga",
+        "n_dated_senses": 7,
+        "sense1_oldest": true,
+        "sense1_date": -1125,
+        "min_date": -1125,
+        "tau": 0.7
+      },
+      {
+        "k1": "aNga",
+        "n_dated_senses": 2,
+        "sense1_oldest": false,
+        "sense1_date": -940,
+        "min_date": -1125,
+        "tau": -1.0
+      },
+      {
+        "k1": "aNga",
+        "n_dated_senses": 8,
+        "sense1_oldest": true,
+        "sense1_date": -1125,
+        "min_date": -1125,
+        "tau": 0.08333333333333333
+      },
+      {
+        "k1": "aNga",
+        "n_dated_senses": 2,
+        "sense1_oldest": true,
+        "sense1_date": -400,
+        "min_date": -400,
+        "tau": 1.0
+      },
+      {
+        "k1": "aNga",
+        "n_dated_senses": 2,
+        "sense1_oldest": true,
+        "sense1_date": 550,
+        "min_date": 550,
+        "tau": null
+      },
+      {
+        "k1": "aRu",
+        "n_dated_senses": 4,
+        "sense1_oldest": false,
+        "sense1_date": -500,
+        "min_date": -1125,
+        "tau": 0.0
+      },
+      {
+        "k1": "akzara",
+        "n_dated_senses": 4,
+        "sense1_oldest": true,
+        "sense1_date": -1125,
+        "min_date": -1125,
+        "tau": -0.3333333333333333
+      },
+      {
+        "k1": "arTa",
+        "n_dated_senses": 12,
+        "sense1_oldest": true,
+        "sense1_date": -1125,
+        "min_date": -1125,
+        "tau": 0.5789473684210527
+      },
+      {
+        "k1": "arTa",
+        "n_dated_senses": 6,
+        "sense1_oldest": true,
+        "sense1_date": 80,
+        "min_date": 80,
+        "tau": 0.07692307692307693
+      },
+      {
+        "k1": "dravya",
+        "n_dated_senses": 9,
+        "sense1_oldest": true,
+        "sense1_date": -400,
+        "min_date": -400,
+        "tau": 0.8518518518518519
+      },
+      {
+        "k1": "dravya",
+        "n_dated_senses": 2,
+        "sense1_oldest": true,
+        "sense1_date": -400,
+        "min_date": -400,
+        "tau": 1.0
+      },
+      {
+        "k1": "dravya",
+        "n_dated_senses": 2,
+        "sense1_oldest": false,
+        "sense1_date": 1400,
+        "min_date": 70,
+        "tau": -1.0
+      },
+      {
+        "k1": "gati",
+        "n_dated_senses": 14,
+        "sense1_oldest": true,
+        "sense1_date": -1125,
+        "min_date": -1125,
+        "tau": 0.4457831325301205
+      },
+      {
+        "k1": "gati",
+        "n_dated_senses": 4,
+        "sense1_oldest": false,
+        "sense1_date": 1400,
+        "min_date": 300,
+        "tau": -0.3333333333333333
+      },
+      {
+        "k1": "grAma",
+        "n_dated_senses": 4,
+        "sense1_oldest": true,
+        "sense1_date": -1125,
+        "min_date": -1125,
+        "tau": 1.0
+      },
+      {
+        "k1": "guRa",
+        "n_dated_senses": 2,
+        "sense1_oldest": true,
+        "sense1_date": -940,
+        "min_date": -940,
+        "tau": 1.0
+      },
+      {
+        "k1": "kAla",
+        "n_dated_senses": 5,
+        "sense1_oldest": true,
+        "sense1_date": -400,
+        "min_date": -400,
+        "tau": 0.7777777777777778
+      },
+      {
+        "k1": "kAla",
+        "n_dated_senses": 5,
+        "sense1_oldest": true,
+        "sense1_date": -1125,
+        "min_date": -1125,
+        "tau": 0.6
+      },
+      {
+        "k1": "kAla",
+        "n_dated_senses": 2,
+        "sense1_oldest": false,
+        "sense1_date": 80,
+        "min_date": 70,
+        "tau": -1.0
+      },
+      {
+        "k1": "karaRa",
+        "n_dated_senses": 3,
+        "sense1_oldest": false,
+        "sense1_date": -400,
+        "min_date": -1125,
+        "tau": -1.0
+      },
+      {
+        "k1": "karaRa",
+        "n_dated_senses": 2,
+        "sense1_oldest": false,
+        "sense1_date": 70,
+        "min_date": -900,
+        "tau": -1.0
+      },
+      {
+        "k1": "karman",
+        "n_dated_senses": 6,
+        "sense1_oldest": true,
+        "sense1_date": -1125,
+        "min_date": -1125,
+        "tau": 0.7142857142857143
+      },
+      {
+        "k1": "karman",
+        "n_dated_senses": 3,
+        "sense1_oldest": false,
+        "sense1_date": 600,
+        "min_date": 550,
+        "tau": -1.0
+      },
+      {
+        "k1": "kzetra",
+        "n_dated_senses": 7,
+        "sense1_oldest": true,
+        "sense1_date": -1125,
+        "min_date": -1125,
+        "tau": 0.2222222222222222
+      },
+      {
+        "k1": "kzetra",
+        "n_dated_senses": 2,
+        "sense1_oldest": true,
+        "sense1_date": 550,
+        "min_date": 550,
+        "tau": null
+      },
+      {
+        "k1": "liNga",
+        "n_dated_senses": 11,
+        "sense1_oldest": true,
+        "sense1_date": -500,
+        "min_date": -500,
+        "tau": 0.6470588235294118
+      },
+      {
+        "k1": "mAtra",
+        "n_dated_senses": 2,
+        "sense1_oldest": false,
+        "sense1_date": -500,
+        "min_date": -1125,
+        "tau": -1.0
+      },
+      {
+        "k1": "mAtra",
+        "n_dated_senses": 2,
+        "sense1_oldest": true,
+        "sense1_date": 70,
+        "min_date": 70,
+        "tau": 1.0
+      },
+      {
+        "k1": "mUrti",
+        "n_dated_senses": 2,
+        "sense1_oldest": true,
+        "sense1_date": -500,
+        "min_date": -500,
+        "tau": 1.0
+      },
+      {
+        "k1": "naya",
+        "n_dated_senses": 8,
+        "sense1_oldest": true,
+        "sense1_date": 70,
+        "min_date": 70,
+        "tau": 0.4166666666666667
+      },
+      {
+        "k1": "naya",
+        "n_dated_senses": 4,
+        "sense1_oldest": false,
+        "sense1_date": 600,
+        "min_date": 80,
+        "tau": 0.6
+      },
+      {
+        "k1": "nyAya",
+        "n_dated_senses": 5,
+        "sense1_oldest": true,
+        "sense1_date": -1000,
+        "min_date": -1000,
+        "tau": -0.1111111111111111
+      },
+      {
+        "k1": "nyAya",
+        "n_dated_senses": 3,
+        "sense1_oldest": false,
+        "sense1_date": 1050,
+        "min_date": 70,
+        "tau": -1.0
+      },
+      {
+        "k1": "pada",
+        "n_dated_senses": 13,
+        "sense1_oldest": true,
+        "sense1_date": -1125,
+        "min_date": -1125,
+        "tau": 0.37142857142857144
+      },
+      {
+        "k1": "pakza",
+        "n_dated_senses": 10,
+        "sense1_oldest": true,
+        "sense1_date": -1125,
+        "min_date": -1125,
+        "tau": 0.627906976744186
+      },
+      {
+        "k1": "pakza",
+        "n_dated_senses": 4,
+        "sense1_oldest": true,
+        "sense1_date": 70,
+        "min_date": 70,
+        "tau": 1.0
+      },
+      {
+        "k1": "prakfti",
+        "n_dated_senses": 9,
+        "sense1_oldest": false,
+        "sense1_date": -500,
+        "min_date": -940,
+        "tau": 0.5294117647058824
+      },
+      {
+        "k1": "rUpa",
+        "n_dated_senses": 3,
+        "sense1_oldest": true,
+        "sense1_date": -1125,
+        "min_date": -1125,
+        "tau": 1.0
+      },
+      {
+        "k1": "rasa",
+        "n_dated_senses": 4,
+        "sense1_oldest": true,
+        "sense1_date": -1125,
+        "min_date": -1125,
+        "tau": 0.3333333333333333
+      },
+      {
+        "k1": "sADana",
+        "n_dated_senses": 4,
+        "sense1_oldest": true,
+        "sense1_date": -1125,
+        "min_date": -1125,
+        "tau": 0.6
+      },
+      {
+        "k1": "sAra",
+        "n_dated_senses": 5,
+        "sense1_oldest": true,
+        "sense1_date": -1125,
+        "min_date": -1125,
+        "tau": 0.2
+      },
+      {
+        "k1": "sUtra",
+        "n_dated_senses": 9,
+        "sense1_oldest": true,
+        "sense1_date": -940,
+        "min_date": -940,
+        "tau": 0.2
+      },
+      {
+        "k1": "tantra",
+        "n_dated_senses": 2,
+        "sense1_oldest": true,
+        "sense1_date": -1125,
+        "min_date": -1125,
+        "tau": 1.0
+      },
+      {
+        "k1": "tantra",
+        "n_dated_senses": 2,
+        "sense1_oldest": false,
+        "sense1_date": 600,
+        "min_date": 70,
+        "tau": -1.0
+      },
+      {
+        "k1": "tattva",
+        "n_dated_senses": 2,
+        "sense1_oldest": true,
+        "sense1_date": -800,
+        "min_date": -800,
+        "tau": 1.0
+      },
+      {
+        "k1": "tejas",
+        "n_dated_senses": 9,
+        "sense1_oldest": true,
+        "sense1_date": -1125,
+        "min_date": -1125,
+        "tau": 0.7575757575757576
+      },
+      {
+        "k1": "vAc",
+        "n_dated_senses": 2,
+        "sense1_oldest": true,
+        "sense1_date": -1125,
+        "min_date": -1125,
+        "tau": null
+      },
+      {
+        "k1": "vaMSa",
+        "n_dated_senses": 3,
+        "sense1_oldest": true,
+        "sense1_date": -1125,
+        "min_date": -1125,
+        "tau": 1.0
+      },
+      {
+        "k1": "varRa",
+        "n_dated_senses": 14,
+        "sense1_oldest": false,
+        "sense1_date": 450,
+        "min_date": -1125,
+        "tau": 0.6867469879518072
+      },
+      {
+        "k1": "vftti",
+        "n_dated_senses": 13,
+        "sense1_oldest": false,
+        "sense1_date": 420,
+        "min_date": -500,
+        "tau": -0.17142857142857143
+      },
+      {
+        "k1": "vidyA",
+        "n_dated_senses": 4,
+        "sense1_oldest": true,
+        "sense1_date": -1000,
+        "min_date": -1000,
+        "tau": 1.0
+      },
+      {
+        "k1": "vyaya",
+        "n_dated_senses": 3,
+        "sense1_oldest": false,
+        "sense1_date": 80,
+        "min_date": -500,
+        "tau": 0.3333333333333333
+      },
+      {
+        "k1": "yoga",
+        "n_dated_senses": 2,
+        "sense1_oldest": true,
+        "sense1_date": -1125,
+        "min_date": -1125,
+        "tau": 1.0
+      }
+    ]
+  }
+}
