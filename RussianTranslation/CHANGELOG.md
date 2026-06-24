@@ -30,6 +30,14 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
     transparent taddhita but MW≫Apte there (`tva` 11 vs 1996 — Apte rarely cites the obvious
     suffix), while Apte alone covers the kṛt formation affixes (`kta`/`ghañ`/`lyuṭ`/`ṭāp`, MW
     wsfx=0 — lexicalised headwords). Complementary coverage, now quantified.
+- **Teaching layer (for Sanskrit affixation):** one dataset `affix_pedagogy.json` (27 affixes in
+  13 function groups, with surface form, Pāṇinian pratyaya, anubandha-stripping steps, Apte
+  productivity, MW count, real example derivatives) feeds four artifacts: `affix_explorer.html`
+  (interactive, function-grouped, productivity bars, click-to-decode — also wired into the
+  **WhitneyRoots** reader, [PR #21](https://github.com/gasyoun/WhitneyRoots/pull/21)),
+  `affix_poster.html` (printable one-page wall chart), `affix_quiz.html` (data-driven MCQ drill),
+  and `affix_flashcards.tsv` (Anki/Quizlet-importable). Built by `affix_pedagogy.py` +
+  `build_affix_explorer.py` + `build_affix_teaching.py`.
 - **Wired into the pipeline (the unblocker):** `_pilot_gen_merged.py --root-split` (also
   `--manifest freq --root-split`) auto-detects a giant root (≥8 prefix divisions) and explodes
   it into one single-pass-sized sub-card per prefix — HEAD card keeps the simple verb + all
