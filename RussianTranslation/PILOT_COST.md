@@ -139,16 +139,19 @@ The tool now models the pipeline **per pass**, with prompt-caching and per-pass 
 so the projection reflects the **cheap-judge / cached-prompt config we actually run** rather
 than a worst-case all-Opus number:
 
-| config | passes | tokens | **Opus-API cost** |
+| config | judges | tokens | **Opus-API cost** |
 |---|---|---|---|
-| **ORIGINAL estimate** (all-Opus, full output every pass, no cache) | 4 full Opus | ~55 M | **≈ $1 549** (in ~$650 + out ~$900) |
-| **config we run** — `translate=Sonnet · judge=Sonnet ×2 · repass=Opus ×0.2 · cache on` | realistic | ~39 M | **≈ $143** (91 % less) |
+| **ORIGINAL estimate** (all-Opus, full output every pass, no cache) | Opus ×2, full out | ~55 M | **≈ $1 552** (in ~$650 + out ~$900) |
+| **MAIN PATH we run** — `translate=Sonnet · judge=Opus ×2 · repass=Opus ×0.2 · cache on` | **Opus** | ~39 M | **≈ $277** (82 % less) |
+| *alternative* — `--judge-model sonnet` (validate vs Opus first) | Sonnet | ~39 M | ≈ $143 |
 
-Per-pass at the run config: translate (Sonnet) ≈ $55 · judges (Sonnet ×2, small verdict
-output) ≈ $33 · repass (Opus, only ~20 % of cards) ≈ $55. The drop comes from three levers:
-**prompt caching** (the locked system prompt — charged per sub-card × passes — drops to ~0.1×
-on cache reads), **Sonnet judges** instead of Opus ($15 vs $75 per Mtok out), and a realistic
-**0.2 repass rate** + small judge-output. All are flags on `scale_preflight.py`
+Per-pass on the **main (Opus-judge) path**: translate (Sonnet) ≈ $55 · **judges (Opus ×2)
+≈ $167** · repass (Opus, ~20 % of cards) ≈ $55. The judges dominate, so the Sonnet-judge
+alternative roughly halves the figure ($277 → $143) — but **only if a Sonnet judge agrees
+with an Opus judge on real cards**; that is an empirical question settled by the judge A/B
+([`research/JUDGE_AB.md`](research/JUDGE_AB.md)), not assumed. The other two levers are
+non-controversial: **prompt caching** (the locked system prompt drops to ~0.1× on cache reads)
+and a realistic **0.2 repass rate**. All are flags on `scale_preflight.py`
 (`--translate-model/--judge-model/--repass-model {opus,sonnet,haiku}`, `--judges`,
 `--repass-rate`, `--prompt-tok`, `--no-cache`).
 

@@ -17,12 +17,14 @@ Reuses freq_route's manifest (scale_manifest.freq.json) + scale_route's per-sect
 manifests + safe_filename.safe_name (no reinvention). Read-only; never touches the
 active pipeline files.
 
-  python scale_preflight.py --top 500 --budget 400
-  python scale_preflight.py --top 500 --judge-model sonnet --repass-model opus   # cheap-judge (default)
-  python scale_preflight.py --top 500 --translate-model opus --judge-model opus --no-cache   # the all-Opus "before"
+  python scale_preflight.py --top 500 --budget 400                       # main path: Opus judges, cache on
+  python scale_preflight.py --top 500 --judge-model sonnet               # cheaper ALTERNATIVE (validate first)
+  python scale_preflight.py --top 500 --translate-model opus --no-cache  # the all-Opus "before"
 
-Cost knobs (defaults reflect the config we actually run): --translate-model/--judge-model/
---repass-model {opus,sonnet,haiku}, --judges N, --repass-rate F, --prompt-tok N, --no-cache.
+Cost knobs (defaults = the config we run — Sonnet translate, Opus judges, Opus repass, cache
+on): --translate-model/--judge-model/--repass-model {opus,sonnet,haiku}, --judges N,
+--repass-rate F, --prompt-tok N, --no-cache. The Sonnet-judge alternative must be validated
+against Opus on real cards first — see judge_ab.py.
 """
 import argparse, json, os, re, sys
 sys.stdout.reconfigure(encoding='utf-8')
@@ -76,7 +78,9 @@ BASE_PASSES, BASE_IN, BASE_OUT = 4, 15.0, 75.0
 def build_pipeline(a):
     """The per-pass pipeline as configured. Each pass runs `factor` times per sub-card on the
     given `paths`, on `model`, emitting `out_factor`× a full translation's output tokens
-    (judges emit only a small verdict). Defaults = the cheap-judge / cached config we run."""
+    (judges emit only a small verdict). Defaults = the config we run: Sonnet translate +
+    **Opus judges** + Opus repass, prompt-cache on. A Sonnet judge (--judge-model sonnet) is a
+    documented cheaper ALTERNATIVE, validated against Opus by the judge A/B before trusting it."""
     return [
         {'name': 'translate', 'model': a.translate_model, 'factor': 1.0,
          'out_factor': 1.0,  'paths': {'heavy', 'light'}},
@@ -127,7 +131,8 @@ def main():
     ap.add_argument('--strict', action='store_true', help='also fail if any split-ready blocker exists')
     # Per-pass model + prompt-caching knobs (defaults = the cheap-judge / cached config we run).
     ap.add_argument('--translate-model', default='sonnet', choices=sorted(MODELS))
-    ap.add_argument('--judge-model', default='sonnet', choices=sorted(MODELS))
+    ap.add_argument('--judge-model', default='opus', choices=sorted(MODELS),
+                    help='main path = opus; sonnet is the cheaper alternative (validate via judge_ab.py first)')
     ap.add_argument('--repass-model', default='opus', choices=sorted(MODELS))
     ap.add_argument('--judges', type=int, default=2, help='QA judges per heavy card')
     ap.add_argument('--repass-rate', type=float, default=0.2, help='expected re-translate fraction (rejects)')
