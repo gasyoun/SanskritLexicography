@@ -133,6 +133,15 @@ Full tables: [`sense_order_metrics.md`](https://github.com/gasyoun/SanskritLexic
 | **3** | Are citations threaded Veda→classical *inside* a sense? (32,254 senses) | adjacent pairs old→new **76.3 %**; *strictly* sorted only **26.2 %** (τ̄ = 0.28) | a real **tendency**, not a rule — B-R also group cites by sub-sense/construction |
 | **2** | Probe set (40 polysemous words, 57 homonym-entries) | sense-1 = oldest **71.9 %** | convergent with the 73.5 % corpus rate |
 
+**Cross-dict confirmation** (full audit, [`cross_dict_metrics.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/research/cross_dict_metrics.md)
+/ [`analyze_cross_dict.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/research/analyze_cross_dict.py)).
+**Vedic-citation density** (fraction of cited senses reaching a Renou-I source) separates the
+two camps by an order of magnitude — **PWG 23.4 % ≈ MW 24.8 % ≫ AP90 2.3 % ≫ Koch 0 %**.
+MW also matches PWG on the cross-sense axis (sense-1 = oldest **69.4 %** vs 73.5 %; τ = **0.367**
+vs 0.375 — same genetic regime). AP90's #1/#3 are *not computable* — no dated apparatus to
+sort on, which **is** the Apte finding; Kochergina carries **5 dated citations in 29,177
+records** (logical-semantic by construction).
+
 **Two consequences.** (a) The earlier "chronological citation-threading" wording is
 **tempered to a tendency** (76 % directional, 26 % strict). (b) A `renou_oldest` re-sort
 would **change sense-1 for ~26.5 %** of multi-sense entries and impose a stricter chronology

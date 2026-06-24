@@ -39,3 +39,24 @@ group cites by sub-sense / grammatical construction. This *tempers* the earlier
 - Counter-examples (lead with a *non*-oldest, usually a classical/technical sense): aNga, aRu, dravya, gati, kAla, karaRa, karman, mAtra, naya, nyAya, prakfti, tantra, varRa, vftti, vyaya.
   These are mostly grammar/philosophy technical terms (prakfti, vftti, nyAya, karaRa) where the
   Paninian/Classical technical sense leads -- a pocket of logical-semantic ordering inside PWG.
+
+## Foundations check (executed 2026-06-24)
+
+The metrics above only "see" citations whose `<ls>` siglum is in `ls_source_map.json`
+(45 primary sources, each dated, range −1125 → 1830). Coverage of PWG's `<ls>` stream:
+
+| Metric | Value |
+|---|---|
+| Total `<ls>` citation-keys in pwg.txt | 772,567 |
+| Recognized **and dated** by the map | 559,243 (**72.4 %**) |
+| Unrecognized (long tail) | 27.6 % |
+
+The unrecognized 27.6 % is dominated by **catalogues / secondary literature**, not primary
+datable texts: *Verz. d. Oxf. H.* (Aufrecht's Oxford catalogue, 18k), *Ind. St.*
+(Indische Studien), *Spr.* (Indische Sprüche), *Śabdaratnāvalī*, *Dhātupāṭha*, etc. So the
+sample is the **most-cited primary sources**, with the tail skewing *late/secondary* — if
+anything that means excluding the tail mildly favours the oldest-first appearance, so the
+73.5 % / τ = 0.375 figures are conservative-to-fair, not inflated by missing old texts.
+**DCS frequency foundation** (for the optional freq view / `freq_route.py`) is likewise in
+place: `VisualDCS/dcs_lemma_summary.json` (83,239 lemmas, freqBand 1–5, Hellwig DCS-2021),
+`src/dcs_lemma_renou.json` (breadth `n_texts` + oldest_date), `dcs_full.sqlite` exact counts.
