@@ -208,8 +208,9 @@ record back-references the main entry's sense numbers; we render the patch under
   is four **Indic-language gloss** dictionaries (Hindi `apte-hi`/`vedic-rituals-hi`,
   Kannada `shabdArtha_kaustubha`, Tamil `samskritam-tamizham`). None is Sa→Ru, so none
   is a **translation layer**; at most they are a soft cross-lingual *sense* signal for
-  the stage-4 gate (see [SAMUDRA_INTEGRATION.md](SAMUDRA_INTEGRATION.md) §2). Ingestion
-  is **deferred** — the repo carries no license.
+  the stage-4 gate (see [SAMUDRA_INTEGRATION.md](SAMUDRA_INTEGRATION.md) §2). Licensing
+  **cleared 2026-06-24** — free use with attribution granted for all four by email;
+  `apte-hi` is being folded first.
 
 ## Open questions
 See this turn's message.

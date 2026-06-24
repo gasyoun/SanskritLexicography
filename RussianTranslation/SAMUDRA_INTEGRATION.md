@@ -101,8 +101,9 @@ dicts — Hindi `apte-hi`/`vedic-rituals-hi`, Kannada/Tamil; see
 Kannada, not Russian, so they are **not** a correctness vote on the Russian head-term;
 they can only corroborate **which sense is primary** — softer even than the verse-level
 corpus signal (§2.2), annotate-only, never overriding. `apte-hi` is the one with real
-leverage (Apte-aligned → structured sense map). **Ingestion deferred** — indic-dict
-carries no license; the technical fit is recorded but nothing is wired in.
+leverage (Apte-aligned → structured sense map). **Licensing cleared 2026-06-24** (free
+use with attribution for all four, by email); `apte-hi` is being folded as the first
+third-language sense signal.
 
 ### 2.1 Dictionary signal — BUILT
 

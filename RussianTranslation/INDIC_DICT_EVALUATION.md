@@ -69,35 +69,59 @@ softer and different in kind:
 **Gate-fit ranking:** `apte-hi` ≫ `vedic-rituals-hi` > `shabdArtha_kaustubha` >
 `samskritam-tamizham`.
 
-## 4. License — the blocker, ingestion deferred
+## 4. License — CLEARED (2026-06-24)
 
-- The repo has **no SPDX license** (`gh api …/repos/… .license` → `none`), and the
-  `.babylon` headers carry **no** `#author`/`#description`/`#website`/license field —
-  only `#bookname`. So all four are **license-unspecified**.
-- `samskritam-tamizham` is explicitly a scrape of an individual's blog and *requires*
-  attribution to Visalakshi Ramani — redistribution terms unclear.
-- Per the standing decision: **note the gap, evaluate the technical fit (done above),
-  defer actual ingestion** until per-dictionary licensing is cleared. Nothing from
-  indic-dict enters the build or the gate yet.
+- **Granted by email (2026-06-24):** the indic-dict maintainer granted **free use with
+  attribution** for **all four** Indic-gloss dictionaries (`apte-hi`, `vedic-rituals-hi`,
+  `shabdArtha_kaustubha`, `samskritam-tamizham`). The grant resolves the earlier gap —
+  the repo still carries no SPDX `LICENSE` and the `.babylon` headers carry only
+  `#bookname`, but the maintainer's email is our authoritative provenance.
+- **Attribution obligation:** each source must be credited wherever it surfaces. For
+  `samskritam-tamizham`, credit **Visalakshi Ramani** (her blog
+  `sanskrittotamil.wordpress.com`); for the others, credit the indic-dict packaging plus
+  the named work (Apte for `apte-hi`, etc.). Record the source per card/annotation.
+- The earlier "defer ingestion" hold is **lifted**. Operationally the extracted data
+  still stays **local/gitignored** like the other gate inputs (cf.
+  SAMUDRA_INTEGRATION.md §6) — that is build discipline, no longer a rights blocker.
 
-This matches our existing discipline: gate inputs are local/gitignored and only enter
-publishable card bodies once rights are confirmed (cf. SAMUDRA_INTEGRATION.md §6).
+> **Provenance note:** the grant lives in email, not a repo `LICENSE`. Keep the message
+> (sender, date, exact wording) on file; it is the citable basis for redistribution.
+
+## 4a. Folded — `apte_hi` + `vedic_rituals_hi` wired into the gate (2026-06-24)
+
+Built and verified the same day the license cleared:
+
+- **Extraction** — [src/build_indic.py](src/build_indic.py) parses the StarDict
+  `.babylon` exports (Devanagari headword → Hindi gloss) into SLP1-keyed JSONL,
+  reusing build_src.py's Devanagari→SLP1 transducer. Output **111,235 `apte_hi` +
+  6,166 `vedic_rituals_hi`** entries (gitignored `src/*.jsonl`; `.babylon` sources
+  gitignored in `research/external/`). apte-hi cites headwords in the **nominative**
+  (अग्निः→`agniH`, फलम्→`…am`) while PWG keys on stems — so each entry also carries a
+  `stem` key (strip nom-sg visarga / neuter `-am`) and is indexed under both.
+- **Gate wiring** — [src/corpus_gate.py](src/corpus_gate.py) gains a `SENSE` index +
+  `lookup_sense()`; `build_card` emits a `hindi_sense` field. It is deliberately kept
+  **out** of the Russian-token `heuristic()` — soft, sense-disambiguation only, never a
+  correctness vote. [pwg_ru_prompts/4_korpus_proverka.txt](pwg_ru_prompts/4_korpus_proverka.txt)
+  gains Rule 8 + a `hindi_sense` input field + `"Hindi"` in `corroborated_by`.
+- **Measured coverage:** a Hindi sense gloss exists for **32.7 %** of PWG headwords
+  (`apte_hi` 31.7 %, `vedic_rituals_hi` 2.3 %) — nearly **double** the Russian
+  correctness coverage (16.4 %). Verified joins: `agni`→4 Apte senses (आग / fire-god /
+  the three ritual fires / digestive fire), `arTa`, `aMSa` (incl. कंधा = «плечо»).
+- **Held:** `shabdArtha_kaustubha` (Kannada) and `samskritam-tamizham` (Tamil) — not
+  built; logged as available votes pending a Kannada/Tamil-reading reviewer (§5).
 
 ## 5. Recommendation / phased plan
 
 1. **Skip en-head and the EN/FR/DE/SA gloss sets entirely** — pure Cologne duplication,
    we hold fresher copies. No action.
-2. **Clear licensing first** for the four Indic-gloss dicts — a short query to the
-   indic-dict maintainers (Vishvas Vasuki) on terms + upstream provenance, plus the
-   Visalakshi Ramani attribution question for Tamil. Draft ready in
-   [indic_dict_license_query.md](indic_dict_license_query.md).
-3. **If cleared, fold `apte-hi` first** as a structured Apte-aligned Hindi sense signal:
-   join on the SLP1 key, map sense-by-sense against our Apte structure, emit a soft
-   `sense_corroborated_by=apte-hi` annotation in the stage-4 verdict. Never blocking,
-   never overriding the Sa→Ru verdict.
-4. **Add `vedic-rituals-hi`** as a domain top-up on Vedic-ritual headwords.
+2. ~~**Clear licensing first**~~ **DONE (2026-06-24)** — free use with attribution
+   granted for all four by email (§4). Query draft kept in
+   [indic_dict_license_query.md](indic_dict_license_query.md) for the record.
+3. ~~Fold `apte-hi` first~~ **DONE (2026-06-24, §4a)** — SLP1+stem join, `hindi_sense`
+   on the card, Rule 8 in the stage-4 prompt; 31.7 % coverage.
+4. ~~Add `vedic-rituals-hi`~~ **DONE (2026-06-24, §4a)** — Vedic-ritual top-up, +2.3 %.
 5. **Hold `shabdArtha_kaustubha` / `samskritam-tamizham`** unless a Kannada/Tamil-reading
-   reviewer joins — log them as available independent votes, don't wire them in.
+   reviewer joins — logged as available votes, not wired in.
 
 All four stay **query/annotate-only** and **gitignored** like the other gate inputs;
 none is a translation source and none touches csl-orig.

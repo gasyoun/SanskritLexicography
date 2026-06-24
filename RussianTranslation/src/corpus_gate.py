@@ -46,6 +46,17 @@ REF = 'kow'                                  # WIL-seeded human PWG→RU referen
 NAME = {'koch': 'Кочергина', 'kna': 'Кнауэр', 'fri': 'Фриш',
         'smirnov': 'Смирнов', 'kow': 'Коссович'}
 
+# Third-language (Hindi) SENSE signal — indic-dict, built by build_indic.py.
+# These gloss in HINDI, not Russian, so they are NOT a correctness vote and are
+# deliberately kept OUT of the Russian-token heuristic(). Their only role is soft
+# SENSE-disambiguation (which sense is primary), reported alongside the corpus
+# signal: it may corroborate, never decides, never withholds. Rights: free use
+# with attribution (indic-dict maintainer, email 2026-06-24); see
+# INDIC_DICT_EVALUATION.md. apte_hi is Apte-aligned (structured sense map);
+# vedic_rituals_hi is a Vedic-ritual top-up.
+SENSE = ['apte_hi', 'vedic_rituals_hi']
+SENSE_NAME = {'apte_hi': 'Apte→हिन्दी', 'vedic_rituals_hi': 'Vedic-rituals→हिन्दी'}
+
 # Rights status per source for the PUBLISHED edition. EVERY source is both a
 # correctness signal and, where useful, publishable text: the project owner has
 # secured approvals for extensive use of the modern Sanskrit-Russian sources.
@@ -112,6 +123,44 @@ def lookup(idx, key1, key2=None):
              for c in INDEP for g in hit.get(c, [])[:MAX_GLOSS_PER_SOURCE]]
     kow = hit.get(REF, [])[:MAX_GLOSS_PER_SOURCE]
     return indep, kow
+
+# ---- Hindi sense index (soft third-language signal, separate from INDEP) ------
+_SENSE_IDX = None
+def load_sense_index():
+    """apte_hi / vedic_rituals_hi indexed under BOTH the faithful citation key and
+    the bare stem (build_indic.to_stem) — apte-hi prints nominatives (agniH), PWG
+    keys on stems (agni)."""
+    global _SENSE_IDX
+    if _SENSE_IDX is not None:
+        return _SENSE_IDX
+    idx = defaultdict(lambda: defaultdict(list))
+    for code in SENSE:
+        path = os.path.join(HERE, code + '.jsonl')
+        if not os.path.exists(path):
+            continue
+        with open(path, encoding='utf-8') as f:
+            for line in f:
+                line = line.strip()
+                if not line:
+                    continue
+                e = json.loads(line)
+                rec = {'pos': e.get('pos', ''), 'gloss': e.get('gloss', ''),
+                       'dev': e.get('dev', ''), 'attribution': e.get('attribution', '')}
+                for k in {form_key(e.get('slp1', '')), form_key(e.get('stem', ''))}:
+                    if k:
+                        idx[k][code].append(rec)
+    _SENSE_IDX = idx
+    return idx
+
+def lookup_sense(key1, key2=None):
+    sidx = load_sense_index()
+    hit = sidx.get(form_key(key1))
+    if not hit and key2:
+        hit = sidx.get(form_key(key2))
+    hit = hit or {}
+    return [{'source': SENSE_NAME[c], 'code': c, 'pos': r['pos'],
+             'gloss': r['gloss'], 'dev': r['dev'], 'attribution': r['attribution']}
+            for c in SENSE for r in hit.get(c, [])[:MAX_GLOSS_PER_SOURCE]]
 
 # ---- corpus query (reuse SamudraManthanam, read-only) --------------------
 def corpus_connection():
@@ -199,6 +248,7 @@ def build_card(idx, key1, key2, pwg_ru):
             'independent_glosses': [{'source': g['source'], 'code': g['code'],
                                      'gloss': g['gloss']} for g in indep],
             'kow_reference': kow,
+            'hindi_sense': lookup_sense(key1, key2),   # soft sense signal, not correctness
             'corpus_examples': corpus_examples(key1),
             'skd_vcp_synonyms': []}
 
@@ -223,6 +273,10 @@ def cmd_lookup(idx, args):
     print('\nKOW reference (%d):' % len(kow))
     for g in kow:
         print('  %s' % g[:160])
+    sense = lookup_sense(key1, key2)
+    print('\nHindi sense signal (%d) — soft, sense-disambiguation only:' % len(sense))
+    for s in sense:
+        print('  [%s %s] %s' % (s['source'], s['pos'], s['gloss'][:140]))
     ex = corpus_examples(key1, 3)
     print('\ncorpus examples (%d):' % len(ex))
     for e in ex:
@@ -252,8 +306,10 @@ def cmd_coverage(idx, args):
     # KOW is absent by construction, not because a headword is missing. So report
     # KOW both overall and WITHIN its attested zone.
     kow_zone = set(k[0] for k, h in idx.items() if REF in h and k)
-    tot = per = kow_n = kow_zone_n = 0
+    sidx = load_sense_index()
+    tot = per = kow_n = kow_zone_n = sense_n = 0
     persrc = defaultdict(int)
+    sensesrc = defaultdict(int)
     for k in keys:
         tot += 1
         fk = form_key(k)
@@ -267,6 +323,12 @@ def cmd_coverage(idx, args):
             kow_n += 1
         if fk and fk[0] in kow_zone:
             kow_zone_n += 1
+        shit = sidx.get(fk) or {}
+        if shit:
+            sense_n += 1
+        for c in SENSE:
+            if c in shit:
+                sensesrc[c] += 1
     # corpus signal: its own random sub-sample of the scanned keys (the corpus
     # query is the slow part, so it stays capped) — representative, not first-300.
     corpus_n = min(300, len(keys))
@@ -285,6 +347,10 @@ def cmd_coverage(idx, args):
     print('    outside the zone KOW is absent by construction, not a missing entry.')
     print('--- corpus signal (random sample of %d): %d had >=1 aligned verse (%.1f%%)'
           % (corpus_n, corp_hit, 100.0 * corp_hit / max(corpus_n, 1)))
+    print('--- Hindi SENSE signal (soft, third-language; not correctness) ---')
+    print('  any Hindi gloss: %d (%.1f%%)' % (sense_n, 100.0 * sense_n / tot))
+    for c in SENSE:
+        print('    %-22s %6d (%.1f%%)' % (SENSE_NAME[c], sensesrc[c], 100.0 * sensesrc[c] / tot))
 
 def cmd_tune(idx, args):
     """Inter-dictionary agreement: for headwords covered by >=2 independent
