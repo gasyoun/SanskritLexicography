@@ -6,7 +6,15 @@ Two editorial uses of the tags:
 1. `portrait(entry)` — a compact, human-readable Renou label for a headword, for
    display in the dictionary entry: the era span, the first attestation, and a
    confidence note from `renou_provenance` (a V supported only by `bhs` is flagged
-   register-only). Runs on a canonical `{code}.renou.jsonl`.
+   register-only; an all-era span is flagged low-information — see below). Runs on a
+   canonical `{code}.renou.jsonl`.
+
+   Low-information flag: a tag spanning every Renou state (`ca`, `idam`, `akāra` =
+   I–V) is corpus-accurate but says nothing diachronic — era-neutral high-frequency
+   words attested everywhere. The inter-signal audit (renou_audit.py) showed this is
+   the residual the min-support fix correctly does NOT prune, because it is not an
+   error — it is a *display* concern. `portrait` sets `renou_low_info: True` so a UI
+   can de-emphasise / collapse the badge instead of showing a meaningless five-era span.
 
 2. `order_senses_oldest_first(card)` — reorder a structured card's senses so the
    earliest-attested meaning comes first (uses the per-sense `renou_oldest` +
@@ -25,24 +33,32 @@ NAME = {'I': 'ведийское', 'II': 'паниниевское', 'III': 'э�
         'IV': 'классическое', 'V': 'буддийско-джайнское'}
 EN = {'I': 'Vedic', 'II': 'Pāṇinian', 'III': 'Epic', 'IV': 'Classical', 'V': 'Buddhist/Jaina'}
 _ORDER = {s: i for i, s in enumerate(renou.STATES)}
+# a span covering this many states is era-neutral → low-information for display
+# (default = all five; tighten to 4 to also flag near-universal words).
+LOW_INFO_MIN_STATES = len(renou.STATES)
 
 
 def portrait(e):
-    """-> {renou_label, renou_first, renou_note} or None when untagged."""
+    """-> {renou_label, renou_first, renou_note, renou_low_info} or None when untagged."""
     states = e.get('renou_enriched') or []
     if not states:
         return None
     prov = e.get('renou_provenance') or {}
     first = e.get('renou_dcs_oldest') or e.get('renou_ls_oldest') or ''
-    # weak-V flag: V attested only via the BHS register membership (no ls/dcs/wl)
     notes = []
+    # weak-V flag: V attested only via the BHS register membership (no ls/dcs/wl)
     if 'V' in states and set(prov.get('V', [])) <= {'bhs'}:
         notes.append('V: только регистр (BHS)')
+    # low-information flag: an all-era span discriminates nothing (era-neutral word)
+    low_info = len(states) >= LOW_INFO_MIN_STATES
+    if low_info:
+        notes.append('малоинформативно: во всех эпохах')
     label = ' · '.join(NAME[s] for s in states)
     return {
         'renou_label': label,
         'renou_first': NAME.get(first, ''),
         'renou_note': '; '.join(notes),
+        'renou_low_info': low_info,
     }
 
 
@@ -85,7 +101,8 @@ def cmd_demo(path, words):
         o = json.loads(line)
         if o.get('iast') in want:
             p = portrait(o)
-            print('%-14s %s' % (o['iast'], o.get('renou_enriched')))
+            print('%-14s %s%s' % (o['iast'], o.get('renou_enriched'),
+                  '  [малоинформативно]' if p and p.get('renou_low_info') else ''))
             print('   label: %s' % (p['renou_label'] if p else '—'))
             print('   первое свидетельство: %s%s' % (p['renou_first'] or '—',
                   ('  · ' + p['renou_note']) if p and p['renou_note'] else '') if p else '—')
