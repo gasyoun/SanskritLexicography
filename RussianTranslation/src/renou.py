@@ -66,6 +66,18 @@ def filter_dcs_states(index_entry, min_support=DCS_MIN_SUPPORT):
             or support.get(st, {}).get('conf') in _TRUSTED_CONF]
 
 
+def dcs_oldest(index_entry, kept_states):
+    """The earliest-attested *kept* dcs state, for `renou_dcs_oldest`. The index's
+    raw `renou_oldest` may name a state the min-support policy just pruned; fall back
+    to the earliest surviving state (by chronological state order). '' when none survive."""
+    if not kept_states:
+        return ''
+    raw = (index_entry or {}).get('renou_oldest') or ''
+    if raw in kept_states:
+        return raw
+    return min(kept_states, key=lambda s: _ORDER.get(s, 99))
+
+
 def load_map(dict_name='pwg'):
     """source_key → record ({renou, date, name, …}) for the named dictionary."""
     if dict_name not in _CACHE:

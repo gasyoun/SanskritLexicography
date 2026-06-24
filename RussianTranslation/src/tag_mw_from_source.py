@@ -95,7 +95,7 @@ def run(out, index_path, report_only):
                        'iast': iast, 'hom': homm.group(1) if homm else None,
                        'renou_ls': ls['renou'], 'renou_ls_oldest': ls['renou_oldest'],
                        'renou_dcs': dcs_states,
-                       'renou_dcs_oldest': dcs['renou_oldest'] if dcs else '',
+                       'renou_dcs_oldest': renou.dcs_oldest(dcs, dcs_states),
                        'renou_enriched': enriched, 'renou_provenance': prov}
                 sink.write(json.dumps(rec, ensure_ascii=False) + '\n')
     finally:

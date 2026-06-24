@@ -113,7 +113,7 @@ def run(code, out, index_path, report_only, min_support=renou.DCS_MIN_SUPPORT):
                        'iast': iast,
                        'renou_ls': sorted(ls, key=_ORDER.get), 'renou_ls_oldest': ls_oldest,
                        'renou_dcs': dcs_states,
-                       'renou_dcs_oldest': dcs['renou_oldest'] if dcs else '',
+                       'renou_dcs_oldest': renou.dcs_oldest(dcs, dcs_states),
                        'renou_enriched': enriched, 'renou_provenance': prov}
                 sink.write(json.dumps(rec, ensure_ascii=False) + '\n')
     finally:
