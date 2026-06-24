@@ -24,9 +24,11 @@ corpus-wide and separates two properties the self-test conflates:
   python verify_root_glue.py            # corpus scan + named giant roots + rootmaps
   python verify_root_glue.py --strict   # treat segmentation mis-grouping as a failure too
 
-Known finding (2026-06-24): `<div n="m">` never occurs in pwg.txt (SEC_RE is dead); the
-caus./desid./intens./partic. blocks are encoded `<div n="p">— <ab>caus.</ab>…` and so are
-mis-grouped. Reported by Check B; the fix lives in root_segment_proto.py (owned elsewhere).
+History (2026-06-24): `<div n="m">` never occurs in pwg.txt (the original SEC_RE was dead);
+the caus./desid./intens./partic. blocks are encoded `<div n="p">— <ab>caus.</ab>…`, which
+were once mis-grouped into the preceding sub-card. FIXED — root_segment_proto.py added
+`SEC_DIVP_RE` (a `<div n="p">` whose first token is an `<ab>` label in SEC_LABELS, not a
+`{#upasarga#}`), so Check B now reports **0 secondary blocks still merged** (570 split out).
 """
 import os, re, sys, json, collections
 sys.stdout.reconfigure(encoding='utf-8')
