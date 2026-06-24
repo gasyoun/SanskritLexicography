@@ -10,6 +10,34 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## 2026-06-24
 
+### Frequency-first queue RUN at volume + root-split hardened + audited
+- **Freq queue runs** (`_pilot_gen_merged.py --manifest freq --root-split`): top-50 =
+  40 giant roots → 2,316 single-pass sub-cards, none overflow. Two fixes unblocked the
+  volume run: **resumability composition** (`is_done`/`is_giant` — a giant root with only a
+  stale whole-card input is still re-split; the superseded whole-card is then removed), and
+  the **multi-homonym fix** (hit 19/50 top roots): `gen_root_split` segmented only `bufs[0]`,
+  so a giant verb root at a non-zero homonym index (√i at hom 2 = 114 prefixes; mā/As/vā/iṣ)
+  was missed and extra giant homonyms (gam/as/dā) dropped. Now segments **every** homonym,
+  splits each giant one, keeps small ones whole, attaches supplements once; rootmap gains a
+  `hom` field; `root_glue_translated` orders (hom→seg→part), supplements last; secondary
+  (caus/desid, `<div n="p">— <ab>caus.</ab>` via `SEC_DIVP_RE`) preserved + nested with the
+  simple verb.
+- **Apresjan evidence on sub-cards (interim)**: the split path wrote `[]` portraits →
+  evidence-blind giants. `subcard_portrait` now writes real `corpus_synonyms` keyed by the
+  right form — head/secondary → the root (`man` → считать/думать); prefix → the prefixed
+  SURFACE form (`anu+man` → одобрять, `ava+man` → смотреть свысока, unlike bare `man`),
+  `evidence_scope='prefixed-form'` when the corpus has it, else `root-fallback` (weak hint;
+  the translate prompt is told to defer to the German gloss). Residual: sandhi/stacked
+  prefixes need `pwg_preverb1.txt`'s `join_prefix_verb` surface form (proper later fix).
+- **Sub-card plumbing through Max**: `run_pilot_wf.js` (`fileOf`) and `_pilot_collect.py`
+  keep a `~~` sub-card stem verbatim instead of re-`safe_name`-ing it, so
+  `<subkey>.raw.txt` → `<subkey>.merged.md` flows into the glue. 38-unit freq test
+  ([pilot/FREQ_TEST_RUNBOOK.md](src/pilot/FREQ_TEST_RUNBOOK.md): 8 nouns + giant `man`).
+- **Audited** ([src/audit_root_split.py](src/audit_root_split.py) + the maintainer's
+  [src/verify_root_glue.py](src/verify_root_glue.py)): corpus-wide losslessness PASS (1226
+  records, 0 failures); 60/60 top giant roots LOSSLESS · all homonyms split · glue-complete
+  · portraits present (3,035 sub-cards); whole-card regression OK; csl-orig untouched.
+
 ### indic-dict / stardict-sanskrit evaluated as a source — declined, deferred
 - New [INDIC_DICT_EVALUATION.md](INDIC_DICT_EVALUATION.md). Most of the repo
   (en-head reverse indexes, EN/FR/DE/SA gloss sets) is **Cologne-generated** —
