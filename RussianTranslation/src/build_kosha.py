@@ -27,17 +27,23 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 DEFAULT_SRC = os.path.join(HERE, '..', 'research', 'external')
 SRC = sys.argv[1] if len(sys.argv) > 1 else DEFAULT_SRC
 
-# non-Cologne sa-sa SYNONYM/homonym koshas (file slug == gate code). Excluded
-# (not synonym sources, verified by sampling): amara-sudhA (Paninian derivation /
-# prakriyA, amarasudha.in — useful for paradigm/derivation work, NOT synonyms),
-# laxaNa-sangraha (nyAya definitions), ekAkSharanAmamAlA (verse-only, no parseable
-# group), e-bhAratI-sampat (yielded ~3 rows, not a synonym lexicon).
+# non-Cologne sa-sa SYNONYM/homonym koshas (file slug == gate code). Only TRUE
+# synonym sources are kept — a data-quality audit (2026-06-24) found five whose
+# pipe-groups are NOT synonymy and would inject misleading corroboration:
+#   bhUtasankhyA_kp_shukla — number-code words (अनन्त/अभ्र grouped only as "0")
+#   upasargArthachandrikA  — root ↔ prefixed-root pairs (अज्→प्राज्), derivation
+#   jhaLkI-bhIma-nyAya-koshaH — word ↔ its own visarga-variant (अकारः↔अकार), trivial
+#   vaiShNava-koshaH / shaiva-kosha — HTML-table CATEGORY labels (विष्णु "≈" ब्रह्मन्)
+#   anekArthadhvanimanjarI — a HOMONYM/polysemy lexicon: it lists the many UNRELATED
+#     meanings of a form, so its groups are not synonyms (svarga ↦ गो/अक्षि/जल =
+#     cow/eye/water). Useful as a polysemy flag, NOT as synonymy → out.
+# Also excluded earlier (not synonym sources at all): amara-sudhA (Paninian
+# prakriyA/derivation — value for paradigm work, not synonyms), laxaNa-sangraha
+# (nyAya definitions), ekAkSharanAmamAlA (verse-only), e-bhAratI-sampat (~3 rows).
+# Kept = the true synonym (nAmamAlA-genre) koshas only.
 KOSHAS = [
-    'amara-onto', 'anekArthadhvanimanjarI', 'nAmamAlikA',
-    'vaiShNava-koshaH', 'shaiva-kosha',
+    'amara-onto', 'nAmamAlikA',
     'abhidhAnachintAmaNiparishiShTa', 'abhidhAnachintAmaNishilonCha',
-    'bhUtasankhyA_kp_shukla', 'upasargArthachandrikA',
-    'jhaLkI-bhIma-nyAya-koshaH',
 ]
 
 # amara-onto carries an explicit "समानार्थक:a,b,c" (synonym) field — harvest it.

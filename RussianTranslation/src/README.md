@@ -74,13 +74,16 @@
 санскритскую корроборацию значения (поле `skd_vcp_synonyms`, правило 5) — какой
 референт у головного слова, через его санскритские синонимы. НИКОГДА не русская
 глосса, не корректность. [build_kosha.py](build_kosha.py) → `kosha_syn.jsonl`,
-строка `{source, slp1, dev, syn_dev, syn_slp1}`. **103 518 строк ≈ 9.4 %
-заглавных слов PWG.** Главный источник — Amarakosha `amara-onto` (явное поле
-`समानार्थक:`); также anekArtha- (омонимы), nAmamAlikA, дополнения
-Abhidhanachintamani, vaiShNava-/shaiva-kosha, upasargArthachandrikA, bhUtasankhyA,
-jhaLkI-bhIma-nyAya. **Исключены** (не синонимы, проверено): `amara-sudhA` =
-паниниева деривация (prakriyA, для парадигм/деривации, не сюда), `laxaNa-sangraha`
-= ньяя-определения, `ekAkSharanAmamAlA` = только стих, `e-bhAratI-sampat` ≈3 строки.
+строка `{source, slp1, dev, syn_dev, syn_slp1}`. **88 839 строк ≈ 7.8 %
+заглавных слов PWG** — только ИСТИННО синонимические коши (жанр nAmamAlA):
+Amarakosha `amara-onto` (явное поле `समानार्थक:`), nAmamAlikA, дополнения
+Abhidhanachintamani (parishiShTa/shilonCha). **Исключены аудитом 2026-06-24** (не
+синонимы): anekArtha- (омонимы/многозначность: svarga↦गो/अक्षि/जल), bhUtasankhyA
+(числовые код-слова), upasargArthachandrikA (корень↔приставочный), jhaLkI-nyAya
+(вариант с висаргой), vaiShNava-/shaiva-kosha (ярлыки HTML-таблиц); а также
+`amara-sudhA` = паниниева деривация (prakriyA, для парадигм, не сюда),
+`laxaNa-sangraha` = ньяя-определения, `ekAkSharanAmamAlA` = только стих,
+`e-bhAratI-sampat` ≈3 строки.
 Коши уже в csl-orig (skd/vcp/abch/armh) сюда НЕ берутся.
 
 ## Латинские биномены растений (Meulenbeld=SNP) — `build_meulenbeld.py`

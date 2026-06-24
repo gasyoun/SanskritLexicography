@@ -10,6 +10,23 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## 2026-06-24
 
+### AUDIT: pruned 6 non-synonym kośas from the synonym channel (9.4 %→7.8 %)
+- A data-quality audit of the just-shipped kośa fold (095bee1) found the first-pass
+  inclusion of 10 kośas too loose: **6 inject non-synonymy** and were removed from
+  [src/build_kosha.py](src/build_kosha.py) `KOSHAS`:
+  `anekArthadhvanimanjarI` (homonym/polysemy lexicon — `svarga`↦गो/अक्षि/जल =
+  cow/eye/water), `bhUtasankhyA` (number-code words, grouped only as "0"),
+  `upasargArthachandrikA` (root↔prefixed-root derivation pairs), `jhaLkI-bhIma-nyAya`
+  (word↔its-own-visarga-variant), `vaiShNava`/`shaiva-kosha` (HTML-table category
+  labels — विष्णु "≈" ब्रह्मन्).
+- Kept = the 4 true synonym (nāmamālā-genre) kośas: `amara-onto`, `nAmamAlikA`,
+  `abhidhAnachintAmaNiparishiShTa`, `abhidhAnachintAmaNishilonCha`. Rebuilt:
+  **103,518→88,839 rows, 9.4 %→7.8 % of PWG headwords.** Synonyms now clean
+  (`svarga`→नाक/त्रिदिव/सुरलोक). Docs (eval §4b, README, prompt Rule 5) corrected.
+- Cross-fact-check of all other indic-dict numeric claims (apte_hi 111,235, Hindi
+  coverage 32.7 %, Meulenbeld 453/235, `heuristic()` isolation, vei/acc/ieg/pgn/snp =
+  Cologne) — all re-derived and CONFIRMED accurate.
+
 ### indic-dict 2nd sweep — Sanskrit synonym-kośas + Meulenbeld binomials folded
 - Full-repo survey of indic-dict cross-checked against csl-orig codes (the check caught
   4 false-new dupes: Vedic-Index=`vei`, Aufrecht-CC=`acc`, epigraphical-glossary=`ieg`,
