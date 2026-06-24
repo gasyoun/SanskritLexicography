@@ -39,6 +39,14 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
   (`vid` 74, `bhū` 131) fail single-pass translation ("connection closed mid-response") →
   root-entry sectioning is the open design question before scaling (pending manuals review).
 
+- **Lexicography design studies — 3 handoff chats spawned.** The giant-root failure opened the
+  microstructure question; decided the **two-mode root architecture** (SPLIT cards for translation +
+  `root_key` linkage → glue to a NESTED root article on demand) and created 3 grounded research briefs
+  in [research/](research/) — (A) root architecture, (B) sense ordering, (C) homonym/gloss/citation/
+  run-on conventions — each spun off as its own cold handoff chat (`task_740ea467`/`task_2242dc13`/
+  `task_9b9ce8db`) to read the OCRed prefaces + probe entries and fill a per-dict comparison table
+  before scaling.
+
 ### Added
 - **Renou language-state (I–V) tag on every cited sense.** Each dictionary
   *meaning* is now classified into one of Louis Renou's five states of Sanskrit
@@ -108,9 +116,20 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
     marginal on the 217-card sample (III unchanged). The full 81 k-verse vulgate is
     not available as clean Sanskrit e-text on GRETIL — the augmenter is ready for it
     when a source surfaces.
-  - Next enrichment tier (deferred per request): wisdomlib — used as a Sanskrit-word
-    → English-gloss / tradition source (notably a tertiary **V** hint), to be folded
-    into `renou_provenance` at lower confidence; code not yet built.
+  - **Third tier — wisdomlib (built; reuses the existing Samudra crawler).** A word's
+    wisdomlib **tradition** sections (Buddhism/Jainism/Ayurveda/Vyakarana/Vedic/…) give
+    a tertiary, lower-confidence Renou hint (Buddhism/Jainism → **V**). New
+    `SamudraManthanam/web/corpus_builder/wisdomlib/definitions.py` fetches `/definition/`
+    pages **reusing `crawl.py`'s** polite fetch + `is_block_page`, parses tradition
+    headings → `word_traditions.jsonl`. Consumer
+    [src/enrich_renou_wisdomlib.py](src/enrich_renou_wisdomlib.py) (new) folds it into
+    `renou_wl` + `renou_provenance` as source `"wl"` — never overriding `<ls>`/DCS; a
+    state backed by `wl` alone is the weakest evidence. Join is on a diacritic-free key
+    (wisdomlib ASCII slug `akshobhya` ↔ SLP1→IAST `akṣobhya`); consumer + parser
+    self-test pass. **Blocked on live fetch:** wisdomlib is Cloudflare-gated per-IP (the
+    crawler README's documented reality — `http=000` here), so `word_traditions.jsonl`
+    must be produced gently from a residential connection, validating the parser with
+    `definitions.py parse <page>` on the first real page.
 
 - **Renou tagging extended to Monier-Williams (both layers).** The MW *Russian*
   cards live in a separate working repo, but the Renou tag is language-independent
