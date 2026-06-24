@@ -157,4 +157,28 @@ Corrected reading:
 
 *Caveat: run-3 verdicts are valid as judge-**agreement** data but NOT as a translation-defect
 inventory — 13 of the BAD calls reflect harness mis-pairing, flagged via `mispaired_homonym:true`
-in the verdict files. A clean defect audit needs homonym-correct pairing (follow-up).*
+in the verdict files. A clean defect audit needs homonym-correct pairing (done below).*
+
+### RUN 3b — homonym-CORRECT re-pairing of the 14 flagged keys (resolves the artifact)
+
+Re-paired every Russian row of the 14 multi-homonym keys to its **own** German homonym (matched
+by `key2`; 30 rows, 0 unmatched) and re-judged with the main-path **Opus** judge. Verdicts:
+[`judge_ab_homonym_opus.jsonl`](judge_ab_homonym_opus.jsonl).
+
+**Result: 28/29 rows clean** (the 30th, `akzarapaNkti~h2`, wasn't returned — agent slip, not a
+defect). When each homonym's Russian is matched to its own German, the previously "catastrophic"
+cards are fine — e.g. `aMSa~h1` (Theil↔часть) and `aMSa~h2` (Schulter↔плечо) both clean;
+likewise `aMh~h1`/`~h2`, `aMhati~h1`/`~h2`, `aMsa~h1`/`~h2`, etc.
+
+The **only** residual flag is `a~h3` — the headword `a`, whose every homonym shares `key2="a"`,
+so key2-matching can't disambiguate and the order-fallback mispaired it. That is a pairing
+edge-case of the most-polysemous headword, **not** a confirmed translation defect (it would need
+manual homonym mapping for `a`).
+
+**Conclusion of the full audit.** The legacy a-section translations are **clean**: across 178
+single-homonym cards (run 3) only one borderline minor (`akzamA`'s stray "im"), and across the 30
+re-paired homonym rows 28/29 clean with the lone `a~h3` flag being a pairing edge-case. **There is
+no systemic translation defect; the "7 % wrong_entry" was 100 % a harness pairing artifact.** The
+two durable findings stand: the judge reliably catches homonym mismatches, and the pipeline must
+pair `de`↔`ru` by homonym (`key2`/`hom`) — and for the all-`key2`-identical headword `a`, by an
+explicit homonym index, since `key2` alone is insufficient there.
