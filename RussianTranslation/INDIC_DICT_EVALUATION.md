@@ -121,19 +121,24 @@ itself is **SNP** (its header reads *Data from sanskrit-lexicon.uni-koeln.de*). 
 skipped as dupes.
 
 **(i) Sanskrit synonym-kośas → the gate's `skd_vcp_synonyms` channel (Rule 5).**
-[src/build_kosha.py](src/build_kosha.py) parses the 10 non-Cologne synonym/homonym
-kośas (Amarakośa `amara-onto` — which carries an explicit `समानार्थक:` field —
-`anekArthadhvanimanjarI`, `nAmamAlikA`, the two Abhidhānacintāmaṇi supplements,
-`vaiShNava`/`shaiva-kosha`, `upasargArthachandrikA`, `bhUtasankhyA`,
-`jhaLkI-bhIma-nyAya-koshaH`) into an SLP1-keyed synonym index: **103,518 rows →
-9.4 % of PWG headwords** get a Sanskrit synonym set. This populates the gate's
-previously-empty `skd_vcp_synonyms` (it's the *first* real Sanskrit-side corroboration
-source — SKD/VCP were never wired). Verified: `arka`→अरुण/अर्यमन्/अंशुमालिन् (sun),
-`deva`→अमर/अमर्त्य, `aMSa`→भाग.
-  - **Excluded after sampling** (not synonym sources): `amara-sudhA` is a **Pāṇinian
-    derivation (prakriyā)** resource (dhātu + sūtra refs — valuable for *paradigm/
-    derivation* work, not synonyms), `laxaNa-sangraha` is nyāya *definitions*,
-    `ekAkSharanAmamAlA` is verse-only, `e-bhAratI-sampat` yielded ~3 rows.
+[src/build_kosha.py](src/build_kosha.py) parses the **4 true synonym (nāmamālā-genre)
+kośas** — Amarakośa `amara-onto` (which carries an explicit `समानार्थक:` field),
+`nAmamAlikA`, and the two Abhidhānacintāmaṇi supplements (`pariShiShTa`/`shilonCha`) —
+into an SLP1-keyed synonym index: **88,839 rows → 7.8 % of PWG headwords** get a
+Sanskrit synonym set. This populates the gate's previously-empty `skd_vcp_synonyms`
+(the *first* real Sanskrit-side corroboration source — SKD/VCP were never wired).
+Verified: `arka`→अरुण/अर्यमन्/अंशुमालिन् (sun), `deva`→अमर/अमर्त्य, `aMSa`→भाग,
+`svarga`→नाक/त्रिदिव/सुरलोक.
+  - **Excluded by a data-quality audit (2026-06-24)** — 6 candidates whose groups are
+    *not* synonymy and would inject misleading corroboration: `anekArthadhvanimanjarI`
+    (a homonym/polysemy lexicon — `svarga`↦गो/अक्षि/जल = cow/eye/water), `bhUtasankhyA`
+    (number-code words — grouped only as "0"), `upasargArthachandrikA` (root↔prefixed-
+    root pairs), `jhaLkI-bhIma-nyAya-koshaH` (word↔its-own-visarga-variant, trivial),
+    `vaiShNava`/`shaiva-kosha` (HTML-table *category* labels — विष्णु "≈" ब्रह्मन्).
+    Also not synonym sources at all: `amara-sudhA` (Pāṇinian prakriyā/derivation —
+    value for *paradigm* work), `laxaNa-sangraha` (nyāya definitions),
+    `ekAkSharanAmamAlA` (verse-only), `e-bhAratI-sampat` (~3 rows). The first-pass
+    inclusion of all 10 over-counted by ~1.6 pp (9.4 %→7.8 %); the audit pruned it.
 
 **(ii) Meulenbeld plant → Latin binomial (= SNP).**
 [src/build_meulenbeld.py](src/build_meulenbeld.py) parses the pre-extracted plant

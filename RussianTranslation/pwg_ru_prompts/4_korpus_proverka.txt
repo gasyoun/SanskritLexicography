@@ -212,14 +212,16 @@ PWG дробит значения через `<div n="1">` (1), 2), 3)…) и `<
 или `divergence` — оно лишь двигает `confidence`.
 
 `skd_vcp_synonyms` теперь питается из санскритских СИНОНИМИЧЕСКИХ КОШ indic-dict
-(`build_kosha.py` → `src/kosha_syn.jsonl`): Amarakosha (amara-onto, с явным полем
-`समानार्थक:`), anekArthadhvanimanjarI (омонимы), nAmamAlikA, дополнения
-Abhidhanachintamani (parishiShTa/shilonCha), vaiShNava-/shaiva-kosha,
-upasargArthachandrikA, bhUtasankhyA и др. — покрытие ≈9.4% заглавных слов PWG.
-Это ИНДОАРИЙСКИЕ санскритские синонимы (देवनागरी): они подтверждают, КАКОЙ
-референт у головного значения (напр. `arka` → अरुण/अर्यमन्/अंशुमालिन् = «солнце»,
-а не «Calotropis»; `aMSa` → भाग = «доля/часть»). Лицензия — свободное
-использование с атрибуцией (indic-dict, e-mail 2026-06-24).
+(`build_kosha.py` → `src/kosha_syn.jsonl`) — только ИСТИННО синонимические коши
+(жанр nAmamAlA): Amarakosha (amara-onto, с явным полем `समानार्थक:`), nAmamAlikA,
+дополнения Abhidhanachintamani (parishiShTa/shilonCha). Покрытие ≈7.8% заглавных
+слов PWG (88 839 строк). Это санскритские синонимы (देवनागरी): они подтверждают,
+КАКОЙ референт у головного значения (напр. `arka` → अरुण/अर्यमन्/अंशुमालिन् =
+«солнце», а не «Calotropis»; `aMSa` → भाग = «доля/часть»). НЕ включены (по аудиту
+2026-06-24 — это не синонимы): anekArtha- (омонимы/многозначность), bhUtasankhyA
+(числовые код-слова), upasargArthachandrikA (корень↔приставочный), jhaLkI-nyAya
+(вариант с висаргой), vaiShNava-/shaiva-kosha (ярлыки HTML-таблиц). Лицензия —
+свободное использование с атрибуцией (indic-dict, e-mail 2026-06-24).
 
 ═══ ПРАВИЛО 6: два сигнала независимы ═══
 
