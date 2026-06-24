@@ -130,6 +130,22 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
     crawler README's documented reality — `http=000` here), so `word_traditions.jsonl`
     must be produced gently from a residential connection, validating the parser with
     `definitions.py parse <page>` on the first real page.
+  - **Parser validated on real pages (2026-06-24)** once the IP cooled: `akshobhya`/
+    `bodhisattva` tradition extraction correct; fixed two bugs the run exposed — force
+    HTTP/1.1 (wisdomlib drops HTTP/2 from this egress) and gloss count via
+    `class="suffix source"` (Samudra PR #15). A real BHS batch (16,837 slugs) re-tripped
+    the per-IP block, exposing + fixing two more: resumable (don't persist transient
+    failures) and a timeout-aware circuit breaker.
+
+- **BHS → PWG/MW/AP deterministic V transfer ([src/enrich_renou_bhs.py](src/enrich_renou_bhs.py), new).**
+  Edgerton's Buddhist Hybrid Sanskrit dictionary *is* the state-**V** register, so any
+  headword present in BHS but lacking V in a mainstream dict is a missed attestation —
+  filled deterministically, no fetching (what the Cloudflare-blocked wisdomlib batch was
+  approximating). Adds V with provenance source `"bhs"` (an attestation claim, so common
+  words used in Buddhist texts — e.g. *viṣṇu* — correctly gain a V-register attestation,
+  marked `bhs`-only and distinguishable from `ls`/`dcs`/`wl`). **New V tags: MW 15 239 ·
+  PWG 5 734 · AP 2 364 (23 337 total), plus 23 911 corroborated.** Join on the
+  diacritic-free key; outputs `{store}.bhs.jsonl` (gitignored).
 
 - **Renou tagging extended to Monier-Williams (both layers).** The MW *Russian*
   cards live in a separate working repo, but the Renou tag is language-independent
