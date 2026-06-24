@@ -9,8 +9,9 @@ the broader "which convention do we follow?" set.
 | Doc | Question | Status |
 |---|---|---|
 | [ROOT_ENTRY_ARCHITECTURE.md](ROOT_ENTRY_ARCHITECTURE.md) | nest / niche / split / run-on roots? | **DECISION made** (two modes: SPLIT for translation + glue to NESTED on demand) + handoff A to compare the dicts |
-| [HANDOFF_sense_ordering.md](HANDOFF_sense_ordering.md) | historical / logical-semantic / etymological / frequency sense order? | handoff — read prefaces + probe `artha`/`dharma` |
-| [HANDOFF_microstructure_conventions.md](HANDOFF_microstructure_conventions.md) | homonym / gloss-type / citation / run-on conventions per dict? | handoff — read prefaces + probe entries |
+| [HANDOFF_sense_ordering.md](HANDOFF_sense_ordering.md) | historical / logical-semantic / etymological / frequency sense order? | **DONE** (2026-06-24) — European = etymological-genetic + chronological citation-threading; AP90 + Koch = logical-semantic; keep PWG order, Renou = display badge |
+| [HANDOFF_microstructure_conventions.md](HANDOFF_microstructure_conventions.md) | homonym / gloss-type / citation / run-on conventions per dict? | **DONE** (2026-06-24) — 4-convention matrix; spine = PWG, keep/adapt/drop |
+| [HANDOFF_apparatus_conventions.md](HANDOFF_apparatus_conventions.md) | grammar+government / labels / etymology / cross-ref conventions per dict (+ Kochergina)? | **DONE** (2026-06-24) — Koch = Russian-apparatus model, PWG = spine, Renou solves chronology; new policy only for `government` + domain labels |
 
 **Sources (all local):** OCRed prefaces in each sibling repo's `prefaces/` (PWG, PW(K),
 MW, GRA, SCH; AP90/FRI = print front-matter); entry files in `csl-orig/v02/<dict>/<dict>.txt`.
