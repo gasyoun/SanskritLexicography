@@ -1,0 +1,61 @@
+# akṣara — imperishable / syllable — PD minimal mode (sense skeleton)
+
+Deccan **PD** definition outline only — `{@…@}` sense markers with glosses, all etymology and citation bulk removed. Full PD kept in the verbatim/IAST files.
+
+**55 senses**
+
+- **A** — imperishable, immutable, eternal ṚV. vi. 16. 35; ŚatBr. XIV. vi. 8. 8; TaiĀ. x. 11. 1 (822. 1); MuṇḍaU. i. 2. 13; Rāmā. vi. 105. 13; Rāmā. vii. 4. 29; MahāBhā.
+- **B** — unalterable BhaviP. 575B. 20 (iii(4). 15. 58)
+- **C** — giving imperishable (fruit) BhaviP. 241B. 33 (i. 162. 44)
+- **D** — consisting of letters KālīViT. 1. 18
+- **1Ai** — syllable
+- **ii** — word, speech, verse
+- **B** — sound, phoneme, letter
+- **C** — vowel
+- **D** — semi-vowel
+- **E** — word, utterance
+- **F** — the syllable om
+- **G** — the text (of a song)
+- **2A** — the imperishable one, the supreme being
+- **B** — puruṣa
+- **Ci** — the abode of Brahma
+- **ii** — the imperishable (being the abode of Puruṣottama or Viṣṇu)
+- **Di** — individual soul
+- **ii** — liberated soul
+- **iii** — ex- perience of individual soul
+- **iv** — totality of individual souls together with the totality of insentient things
+- **Ei** — primordial matter
+- **ii** — illusion, Māyā
+- **iii** — name of Mahat or Buddhi
+- **3A** — name of a Sāman
+- **B** — name of Viṣṇu
+- **C** — name of Śiva
+- **D** — name of Gaṇeśa
+- **E** — an attendant of Vāmana
+- **F** — an attendant of Haranārāyaṇa
+- **G** — name of a sacred place
+- **H** — name of Brahmā
+- **I** — name of daṇḍa (punishment)
+- **4** — water
+- **5** — result, consequence
+- **6** — nescience
+- **7** — three kūṭas beginning with Vāgbhava
+- **8A** — the letter sa
+- **B** — the letter pla
+- **9** — emancipation
+- **10** — sky
+- **11** — sword
+- **12** — semen
+- **13** — penance
+- **14** — sacrifice
+- **15** — a measure of time
+- **16** — continuance, permanence
+- **17** — the plant Achyranthes Aspera
+- **1** — cow, the cow which never runs dry ṚV. i. 34. 4; ṚV. iii. 31. 6; ṚV. vii. 36. 7
+- **2** — speech, vāc personified ṚV. vii. 1. 14; ṚV. vii. 15. 9
+- **3** — name of a medicinal plant Rasa- PraSu. 9. 7
+- **4i** — name of a śakti of Durgā SkandP. iv. 72. 9
+- **4ii** — name of Pārvatī SaurP. 49. 45
+- **4iii** — name of Kālī ŚaktiSaṃT. i. 1. 38
+- **4iv** — name of one of the śaktis residing in the petals of the Lotus in the heart NityoNi. 81. 4
+- **4v** — name of one of the thirteen wives of Kaśyapa ŚabdaRa.(Vā.) 402

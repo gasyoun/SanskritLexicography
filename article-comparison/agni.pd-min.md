@@ -1,0 +1,136 @@
+# agni — fire — PD minimal mode (sense skeleton)
+
+Deccan **PD** definition outline only — `{@…@}` sense markers with glosses, all etymology and citation bulk removed. Full PD kept in the verbatim/IAST files.
+
+**130 senses**
+
+- **1** — fire, ordinary fire
+- **2i** — sacrificial fire, sacred fire
+- **ii** — gārhapatya
+- **iii** — āhavanīya
+- **iv** — dakṣiṇāgni v sacrificial fire with other names and attributes
+- **vi** — domestic fire
+- **vii** — fire worshipped by the Brahmacārin
+- **viii** — funeral fire
+- **ix** — Tantric fire
+- **x** — fire for ordeal etc
+- **xi** — fire for penance
+- **xii** — kitchen fire
+- **xiii** — five fires
+- **3i** — god of fire
+- **ii** — killer of demons
+- **iii** — with ghoe as food etc
+- **iv** — as gṛhapati, viśpati
+- **v** — as damūnas
+- **vi** — son of strength
+- **vii** — as guest
+- **viii** — with smoke as banner
+- **ix** — bringer of gods to the sacrifice
+- **x** — as hotṛ
+- **xi** — messenger
+- **xii** — mentioned with Manu
+- **xiii** — with ṛta, vrata
+- **xiv** — who taught the Sāmaveda
+- **xv** — presiding over a Sāma Saṃhitā
+- **xvi** — presiding over a specific Sāman
+- **xvii** — as jātavedas
+- **xviii** — as vaiśvānara
+- **xix** — as sviṣṭakṛt
+- **xx** — called Aṅgiras
+- **xxi** — called Bhārata
+- **xxii** — other epithets of Agni
+- **xxiii** — mentioned in association with other gods in compounds
+- **4i** — fire-altar
+- **ii** — earth for sacrificial fire-altar
+- **iii** — brick for building the altar
+- **iv** — area for the fire-altar
+- **v** — text dealing with the rite of fire-altar
+- **vi** — rite of preparing the fire-altar
+- **5** — fire as one of the five elements
+- **6i** — the plant Plumbago zeylanica
+- **ii** — a kind of citraka
+- **iii** — bhallātaka
+- **iv** — Semicarpu sanacardium
+- **v** — Citrus acida
+- **vi** — jāra
+- **7i** — number three
+- **ii** — the third house in a horoscope
+- **iii** — the third lunar day
+- **8** — a sage who composed various Sāmans
+- **9** — digestive faculty, digestive fire
+- **10** — cauterization
+- **11Ai** — year
+- **ii** — lord of the first year
+- **B** — south-east direction
+- **C** — the asterism Pleiades
+- **Di** — name of a muhūrta
+- **ii** — the seventh part of the night
+- **E** — the tenth of the sixty divisions of a zodiacal sign
+- **12** — burning sensation, sorrow
+- **13** — a mental disposition
+- **14** — a synonym of kleśa
+- **15** — heat of fire
+- **16i** — mystic fire in the Mūlādhāra
+- **ii** — Kuṇḍa- linī
+- **17** — fire or heat in the body
+- **18** — danger from fire
+- **19** — Hiraṇya- garbha
+- **20** — Virāj
+- **21** — sacrifice
+- **22** — incarnation of fire
+- **23** — world of the god of fire
+- **24** — akind of earthquake
+- **25i** — deity of speech
+- **ii** — of Sudarśana mantra
+- **iii** — of Lavaṇa mantra
+- **iv** — of Vyāhṛtis
+- **v** — of the first syllable of Gāyatri
+- **vi** — of a syllable of the mantra for Viṣṇu
+- **vii** — the mouth of Gāyatrī
+- **viii** — of the first day of the lunar fortnight
+- **ix** — god of Agnihotra
+- **x** — de- ified types of fires
+- **xi** — god of Kṛttikā
+- **xii** — regent of a quarter
+- **xiii** — god of the south-east
+- **xiv** — of the udātta
+- **xv** — of time
+- **xvi** — of the sword
+- **26i** — name of one of the Vāstudevatās
+- **ii** — one of the ten Rudras
+- **iii** — one of the hundred Rudras
+- **iv** — attendant of Viṣṇu
+- **v** — name of Bālakṛṣṇa
+- **vi** — attendant of Skandasena
+- **vii** — deity of the eastern gate
+- **viii** — a group of Bhavanavāsin gods
+- **ix** — leader of Śiva's attendants
+- **x** — one of the seven sages
+- **xi** — son of Ūru
+- **xii** — father of Mars
+- **xiii** — first son of Brahmā
+- **xiv** — lord of Saṃvatsara
+- **xv** — son of Saṃvatsara
+- **xvi** — son of Marutvatī
+- **xvii** — son of Aṅgiras
+- **xviii** — seer of a mantra
+- **xix** — members of the Kaśyapa family
+- **xx** — one of the ten pitṛs
+- **xxi** — one of the forms of Śiva
+- **xxii** — one of the eight Vasus
+- **xxiii** — rathantara Sāman
+- **xxiv** — a Brahmin priest
+- **xxv** — one of the hells
+- **27i** — mystic name for letter i
+- **ii** — e
+- **iii** — ai
+- **iv** — r
+- **v** — raṃ
+- **vi** — rāṃ
+- **vii** — ṣa
+- **viii** — haṃ
+- **ix** — group of Vyāpaka letters
+- **x** — group of ten syllables
+- **28i** — fiery, vehement
+- **ii** — a fiery person
+- **29** — gold
