@@ -1,0 +1,31 @@
+{
+  "mw": {
+    "sense_grouping": "consecutive <L> records sharing k1+k2(bare)+hom; compounds (—) excluded",
+    "entries_multisense_dated": 13825,
+    "pct_sense1_is_oldest": 69.4,
+    "mean_tau_printed_vs_date": 0.367,
+    "within_sense_senses_ge2_dated": 25134,
+    "pct_within_sense_strict_chrono": 55.0,
+    "pct_adjacent_pairs_nondecreasing": 67.6,
+    "vedic_density_pct": 24.8,
+    "vedic_density_basis_cited_senses": 99726
+  },
+  "pwg_vedic_density": {
+    "vedic_density_pct": 23.4,
+    "basis_cited_senses": 118528
+  },
+  "ap90": {
+    "sense_marker": "{@N@} within one <L>",
+    "multisense_entries": 16005,
+    "vedic_density_pct": 2.3,
+    "basis_cited_senses": 19163,
+    "note": "Vedic matched on Apte sigla (Rv/Av/Brāhmaṇa/Upaniṣad/Nir); Manu(Ms.)=Classical, excluded."
+  },
+  "koch": {
+    "records": 29177,
+    "records_with_citation_apparatus": 5,
+    "pct_with_apparatus": 0.0,
+    "pct_with_numbered_senses_in_gloss": 37.9,
+    "reading": "modern learner dict: ~0 dated citations -> sense order is logical-semantic by construction"
+  }
+}
