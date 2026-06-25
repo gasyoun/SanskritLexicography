@@ -2,11 +2,14 @@
 
 All notable changes to SanskritLexicography are documented here.
 
-This repository does not currently publish versioned release notes. Entries use
-dated maintenance snapshots; keep upcoming work under [Unreleased] until it is
-ready for a dated entry.
+Entries use dated, versioned releases. Keep upcoming work under [Unreleased],
+then **cut a new version every time the changelog is updated** (promote
+[Unreleased] to the next `x.y.z` with today's date and start a fresh
+[Unreleased]).
 
 ## [Unreleased]
+
+## [0.0.4] - 2026-06-25
 
 ### Added
 - **`article-comparison/` — one headword across every CDSL dictionary.** A study
