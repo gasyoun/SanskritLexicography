@@ -137,9 +137,14 @@ orthogonal **`renou_register`** + `renou_register_provenance`:
 Per-register provenance is `["dcs"]`/`["ls"]`/both. Coverage: ~38–41 % of entries carry
 ≥1 register; `bhasya` ~14 k (PWG) / 45 k (MW).
 
+**Audit + display.** `renou_audit.py` has a register section (coverage + per-register
+`ls`/`dcs`/`both` provenance + register-low-info), and `renou_portrait` emits a
+`renou_register_label` (+ a `bhāṣya` editorial note, low-info flag at ≥10 registers).
+
 **Pending:** **`épig`** (no inscription sigla in either CANON yet — needs a curation
-pass) and the register audit/portrait — Phases 3 & 5. Registers do **not** affect the
-state fields.
+pass, Phase 3) and the inline dicts' (`ap`/`ben`/`bhs`) `<ls>` register route (they use
+`renou_sigla`, so their registers are corpus-only today). Registers do **not** affect
+the state fields.
 
 ## Reproduce
 

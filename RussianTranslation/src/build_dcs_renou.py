@@ -87,6 +87,8 @@ GENRE_REGISTER = {
 # (commentary) — DCS has no commentary genre, so name-stems are the only corpus route.
 # Buddhist name hints (for V-texts the genre file misses) are appended from NAME_HINTS.
 NAME_REGISTER = [
+    # 'dīpikā' kept: mostly genuine commentary (Āyurvedadīpikā, Gūḍhārthadīpikā, …);
+    # the one known FP is Haṭhayoga*pradīpikā* (a primary manual) — left for human review.
     ('bhasya', ('bhāṣya', 'bhāsya', 'ṭīkā', 'ṭippaṇ', 'vṛtti', 'vārttika',
                 'vivaraṇa', 'vyākhyā', 'pañjikā', 'dīpikā')),
     ('vyakarana', ('aṣṭādhyāyī', 'kāśikā', 'vyākaraṇa', 'siddhāntakaumudī', 'prakriyā')),

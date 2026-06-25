@@ -60,6 +60,9 @@ def audit_dict(path, dcs_index):
         'dcs_only_by_state': collections.Counter(),
         'inherit_5state_lemma': 0,
         'suspects': [],
+        # register axis
+        'reg_entries': 0, 'reg_cov': collections.Counter(),
+        'reg_by_src': {}, 'reg_low_info': 0,
     }
     for line in open(path, encoding='utf-8'):
         line = line.strip()
@@ -78,6 +81,20 @@ def audit_dict(path, dcs_index):
         if ls and dcs:
             st['both'] += 1
             st['rel'][relation(ls, dcs)] += 1
+
+        # register axis: coverage + per-register provenance breakdown
+        regs = e.get('renou_register') or []
+        rp = e.get('renou_register_provenance') or {}
+        if regs:
+            st['reg_entries'] += 1
+        if len(regs) >= 10:
+            st['reg_low_info'] += 1
+        for r in regs:
+            st['reg_cov'][r] += 1
+            srcs = set(rp.get(r, []))
+            bucket = ('both' if {'ls', 'dcs'} <= srcs
+                      else 'ls' if 'ls' in srcs else 'dcs' if 'dcs' in srcs else 'other')
+            st['reg_by_src'].setdefault(r, collections.Counter())[bucket] += 1
 
         # corroboration of each dcs-assigned state
         for s in dcs:
@@ -178,7 +195,41 @@ def render(stats, n_suspects):
                 r['hw'], '·'.join(r['ls']), '·'.join(r['dcs']),
                 '·'.join(r['added']), r['n_texts'], r['count']))
         L.append('')
+
+    L += render_registers(stats)
     return '\n'.join(L) + '\n'
+
+
+# registers worth a focused inter-signal column (editorially salient / corpus-thin)
+_KEY_REGS = ('bhasya', 'jaina', 'epig', 'natya', 'kavya')
+
+
+def render_registers(stats):
+    L = ['## Register axis (Renou subsections)', '',
+         'Orthogonal to the state. Coverage = entries carrying ≥1 register; `low-info` =',
+         'entries in ≥10 registers (era-neutral, register-uninformative). The state',
+         'columns above are unaffected by this axis.', '',
+         '| Dict | with-register | low-info | bhasya | jaina | épig | kavya |',
+         '|---|--:|--:|--:|--:|--:|--:|']
+    for s in stats:
+        cov = s['reg_cov']
+        L.append('| %s | %s | %d | %d | %d | %d | %d |' % (
+            s['code'].upper(), fmt_pct(s['reg_entries'], s['entries']),
+            s['reg_low_info'], cov.get('bhasya', 0), cov.get('jaina', 0),
+            cov.get('epig', 0), cov.get('kavya', 0)))
+
+    L += ['', '### Per-register provenance (ls-only · dcs-only · both)', '',
+          'Which signal supports each editorially-key register. `ls` is the trusted',
+          'citation route (the only source for `jaina`/`épig`); `dcs` is corpus attestation.', '']
+    for s in stats:
+        rows = [r for r in _KEY_REGS if s['reg_by_src'].get(r)]
+        if not rows:
+            continue
+        L.append('**%s** — %s' % (s['code'].upper(), ' · '.join(
+            '%s: %d/%d/%d (ls/dcs/both)' % (
+                r, s['reg_by_src'][r].get('ls', 0), s['reg_by_src'][r].get('dcs', 0),
+                s['reg_by_src'][r].get('both', 0)) for r in rows)))
+    return L
 
 
 def main():
@@ -216,6 +267,9 @@ def main():
               % (s['code'].upper(), s['entries'], s['ls_tagged'], s['dcs_hit'],
                  fmt_pct(s['dcs_only_state'], s['dcs_state_total']),
                  fmt_pct(s['inherit_5state_lemma'], s['dcs_hit'])))
+        print('      register: %s of entries · bhasya %d · jaina %d · épig %d · low-info %d'
+              % (fmt_pct(s['reg_entries'], s['entries']), s['reg_cov'].get('bhasya', 0),
+                 s['reg_cov'].get('jaina', 0), s['reg_cov'].get('epig', 0), s['reg_low_info']))
     open(out, 'w', encoding='utf-8').write(render(stats, n_suspects))
     print('\n→ %s' % out)
 
