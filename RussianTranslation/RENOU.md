@@ -147,6 +147,43 @@ reads an inscription marker in the `<ls>` text (PWG `Inschr.`, MW/Apte `Inscr.`)
 `renou_sigla.SIGLUM_REGISTER` (+ `bhs`→`bauddha` wholesale). Only `hors_inde` stays 0
 (no source). Registers do **not** affect the state fields — the axis is complete.
 
+## Use cases
+
+Both axes are per-sense, multi-label, and provenance-graded, so they answer queries a
+flat headword list can't. Join any `{code}.renou.jsonl` to the Russian cards by `key1`.
+
+**State axis (I–V) — *when* is this Sanskrit?**
+- **Diachronic filter / archaism hunt** — `renou_enriched == ["I"]` (Vedic-only) surfaces
+  words that dropped out after the Saṃhitās; `"I" in … and "IV" in …` finds the long-lived
+  core. Good for a learner's "Vedic vs Classical" layer.
+- **Oldest-sense ordering** — `renou_portrait.order_senses_oldest_first` floats the
+  earliest-attested meaning first (genetic, not alphabetical) — the PWG sense-order study's
+  payload.
+- **Date a headword's currency** — the I–V span + `renou_oldest` = "first attested Vedic,
+  still live in kāvya."
+- **Trust grading** — prefer `ls`-backed states (the lexicographer cited it) over
+  `dcs`-only (corpus attestation) over `bhs`-only V (register, not a Buddhist-semantic
+  claim); the `renou_low_info` flag hides era-neutral function words (`ca`, `idam`).
+
+**Register axis — *what kind* of Sanskrit?**
+- **Build a register glossary** — filter `renou_register` to one code for a **kāvya**
+  poetic lexicon, a **bauddha** Buddhist glossary, a **jaina** Jaina glossary, or the
+  **bhāṣya** scholastic/meta-language vocabulary.
+- **Epigraphic vocabulary** — `epig` isolates the donative/administrative/regional terms
+  inscriptions use (`akṣayanīvī` "perpetual endowment", regional names) — a ready feed for
+  epigraphists.
+- **Cross-axis queries** — `state I + register bhasya` = Vedic words the commentarial
+  tradition kept alive; `register kavya & not state I` = vocabulary born in classical poetry.
+- **Translation register-matching** — a `kavya` word cues poetic Russian, a `bhāṣya` word
+  technical/terse Russian, a `bauddha` word Buddhist terminology — drives the `pwg_ru`
+  style choice per sense (the Apresjan register-judgment hook).
+- **Headword genre profile** — the register set shows which text-types actually use a word
+  (drama vs epic vs commentary), independent of its date.
+
+The two axes compose: `(state, register, provenance)` is an evidence-graded coordinate per
+sense — e.g. *akṣobhya* = `III·V` / `purana·tantra·bauddha` / all-four-signals = "an Epic-
+and-Buddhist word, used in Purāṇa/Tantra/Buddhist registers, maximally corroborated."
+
 ## Reproduce
 
 ```sh

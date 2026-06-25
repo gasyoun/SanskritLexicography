@@ -10,6 +10,32 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## 2026-06-25
 
+### Renou *register* axis — subsections as an orthogonal tag (épigraphique, bhāṣya, …)
+- **Reread the source.** Renou's five states = his five *chapters*; his *subsections* are
+  distinct registers a flat I–V tag can't express. Verified the table des matières from
+  the scan → [`../../VisualDCS/docs/Renou_1956_structure.md`](https://github.com/gasyoun/VisualDCS/blob/main/docs/Renou_1956_structure.md):
+  **`épigraphique`** lives in Ch. II (p. 94) and **`bhāṣya`** (commentary, its own grammar)
+  leads Ch. IV (p. 133) — neither fits the five states. Design in
+  [RENOU_SUBSECTIONS_PLAN.md](RENOU_SUBSECTIONS_PLAN.md).
+- **New orthogonal `renou_register` field** (multi-label, 20-code lattice), parallel to
+  the state — a word can carry registers across eras (a *bhāṣya* on a Vedic base). Two
+  provenance-tagged detector routes, same lossless min-support policy as states:
+  - **DCS corpus** ([src/build_dcs_renou.py](src/build_dcs_renou.py)): per-lemma `register`
+    + `register_support {n,conf}` in the same scan; genre→register + name-stem detectors
+    (esp. `bhāṣya` by `*bhāṣya/ṭīkā/vṛtti/…` — DCS has no commentary genre).
+  - **`<ls>` citation** ([src/renou_register.py](src/renou_register.py), new): siglum's
+    map record → register(s) (PWG genre / MW name); the only route for **`jaina`** (288 MW)
+    + `bhāṣya` corroboration (Sāy/Kāś/Pat). Inline dicts (ap/ben/bhs) via
+    `renou_sigla.SIGLUM_REGISTER` + `bhs`→`bauddha` wholesale.
+  - **dedicated `épig` detector**: an inscription marker in `<ls>` text (`Insch?r`) →
+    `epig` (MW 687, AP 17, PWG 9; sparse, as inscriptions are).
+- **Wired end-to-end**: `renou.filter_dcs_registers`, the taggers emit `renou_register` +
+  `renou_register_provenance` (`ls`/`dcs`/both), `renou_audit.py` register mode
+  (coverage + per-register provenance + low-info), `renou_portrait.py` register sub-label
+  + a `bhāṣya` editorial note. Coverage ~19–100 % of entries/dict; every lattice register
+  populated except `hors_inde` (no source). **The state axis is unchanged.** Use cases in
+  [RENOU.md](RENOU.md#use-cases).
+
 ### TRIAGE: pre-sorted the legacy `needs_review` queue for the human reviewer
 - New tool [src/triage_review_queue.py](src/triage_review_queue.py) reads the
   gitignored `_review_queue.jsonl` (217 legacy `needs_review` cards already scored
