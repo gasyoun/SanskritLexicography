@@ -10,6 +10,28 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## 2026-06-25
 
+### Judge-model A/B settled — Sonnet for the bulk judge, Opus for repass + audit
+- **Question:** can a cheaper **Sonnet** QA judge replace the **Opus** judge for the scale-up?
+  Tested across 5 runs / ~650 judged cards ([research/JUDGE_AB.md](research/JUDGE_AB.md),
+  [research/JUDGE_POLICY.md](research/JUDGE_POLICY.md)).
+- **Result — indistinguishable.** Run 3 (201 real a-section cards): 191/191 verdict agreement,
+  κ = 1.0, 0 Sonnet false-clears. Run 4 (250-item **ground-truth** defect battery — dropped
+  anchor / falsified citation / dropped sense / translated Latin / changed number): both **99 %
+  recall, 0 % false-positives**, head-to-head 208/208 with each model missing one *different*
+  card. No Opus power advantage for the mechanical core of judging.
+- **Decision:** Sonnet judges the bulk (≈ halves the judge token cost / Max-quota), Opus
+  re-judges every **reject** + a periodic **~5 % audited sample** (halt if false-clear > 1 % or
+  κ < 0.7). New [src/judge_disagreements.py](src/judge_disagreements.py) emits a full-context
+  queue of the rare Opus-vs-Sonnet conflicts for editor adjudication;
+  [src/judge_ab_score.py](src/judge_ab_score.py) scores any A/B.
+- **Dropped the synthetic semantic-defect test** on the editor's objection: a wrong-but-related
+  gloss (`Theil` → часть vs доля) is **undecidable from a word pair** without the full entry +
+  the Sanskrit sense; the decidable cases are rude ones Sonnet already catches. The only honest
+  semantic ground truth = real Opus-vs-Sonnet disagreements adjudicated in context — and those
+  run **~0.5 %** (0 in run 3, 2 in run 4), so the adjudication queue is near-empty.
+- **Lesson kept:** don't build a synthetic test whose ground truth you can't defend; for
+  translation correctness the only honest ground truth is the entry in full context.
+
 ### Renou *register* axis — subsections as an orthogonal tag (épigraphique, bhāṣya, …)
 - **Reread the source.** Renou's five states = his five *chapters*; his *subsections* are
   distinct registers a flat I–V tag can't express. Verified the table des matières from
