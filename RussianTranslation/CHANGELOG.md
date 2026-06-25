@@ -8,6 +8,24 @@ See also: [METHODOLOGY_REVIEW.md](METHODOLOGY_REVIEW.md) (where we want to go),
 [failures/FAILURE_GALLERY.md](failures/FAILURE_GALLERY.md) (what went wrong and
 how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
+## 2026-06-25
+
+### TRIAGE: pre-sorted the legacy `needs_review` queue for the human reviewer
+- New tool [src/triage_review_queue.py](src/triage_review_queue.py) reads the
+  gitignored `_review_queue.jsonl` (217 legacy `needs_review` cards already scored
+  by the Opus QA judge) and **buckets the existing verdicts by defect type** —
+  it does **not** re-judge or auto-edit anything. Classifies on the judge's
+  *defect clauses* (not whole-reason keywords, which false-match the pass-narration)
+  into: **C** source-data defect, **A** mechanical/format (untranslated German
+  function-word, anchor/structure damage), **B** translation-quality doubt, plus a
+  **FAST** likely-clean tier; orders by the judge's own severity.
+- Result: **0 C · 13 A · 19 B · 185 FAST** (217 total). Only **23 cards score
+  sev ≥ 2** — the real work; every "source quirk" was faithfully mirrored, so
+  nothing escalates to Cologne. **197/217** carry an attested-dictionary
+  corroboration. Ranked worklist → gitignored `src/_review_queue.triage.csv`;
+  one-page reviewer guide → [REVIEW_QUEUE_TRIAGE.md](REVIEW_QUEUE_TRIAGE.md).
+  Final adjudication stays human.
+
 ## 2026-06-24
 
 ### AUDIT: pruned 6 non-synonym kośas from the synonym channel (9.4 %→7.8 %)

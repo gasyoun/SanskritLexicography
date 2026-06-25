@@ -27,6 +27,9 @@ RussianTranslation/src/*.jsonl.tmp
 RussianTranslation/src/dcs_lemma_renou.json
 RussianTranslation/src/dcs_lemma_renou.*.json
 RussianTranslation/src/_review_queue.csv
+# Triaged worklist derived from the gitignored queue (personal to-do; the
+# committed REVIEW_QUEUE_TRIAGE.md surfaces the actionable summary).
+RussianTranslation/src/_review_queue.triage.csv
 RussianTranslation/gold/_human_gold_review.csv
 RussianTranslation/gold/_double_review_queue.csv
 RussianTranslation/gold/reviewer_packets/
