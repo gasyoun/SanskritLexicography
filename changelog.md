@@ -9,6 +9,19 @@ then **cut a new version every time the changelog is updated** (promote
 
 ## [Unreleased]
 
+## [0.0.8] - 2026-06-25
+
+### Changed
+- **`article-comparison/*.table.md` — every quote now carries its dictionary's
+  edition year.** Previously only a few EN dictionaries showed a year (MW 1899,
+  AP90 1890, WIL 1832, MW72 1872); the Dictionary column now labels all 20 sources
+  with their CDSL edition year — e.g. PWG 1855, pw/PWK 1879, GRA 1873, VCP 1873,
+  SKD 1886, SHS 1900, BUR 1866, CAE 1891, BEN 1866, YAT 1846, BOP 1847, STC 1932,
+  AP 1957, PE 1975, PD 1976. Years are taken from the authoritative
+  [CDSL front page](https://www.sanskrit-lexicon.uni-koeln.de/) catalog (via
+  `csl-guides/src/data/dictionaries.json`), the same source as the existing labels;
+  a provenance note was added to each table header.
+
 ## [0.0.7] - 2026-06-25
 
 ### Changed
