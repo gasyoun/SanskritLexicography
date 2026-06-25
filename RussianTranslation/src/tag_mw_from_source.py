@@ -77,8 +77,12 @@ def run(out, index_path, report_only):
             dcs = index.get(iast)
             dcs_states = renou.filter_dcs_states(dcs) if dcs else []
             enriched, prov = merge(ls['renou'], dcs_states)
-            registers = renou.filter_dcs_registers(dcs) if dcs else []
-            reg_prov = {r: ['dcs'] for r in registers}
+            import renou_register
+            dcs_regs = renou.filter_dcs_registers(dcs) if dcs else []
+            ls_regs = renou.ls_registers_for_text(block, 'mw')
+            registers = renou_register.sort_registers(set(ls_regs) | set(dcs_regs))
+            reg_prov = {r: (['ls'] if r in ls_regs else []) + (['dcs'] if r in dcs_regs else [])
+                        for r in registers}
 
             stats['entries'] += 1
             if ls['renou']:

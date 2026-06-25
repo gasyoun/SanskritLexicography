@@ -123,17 +123,23 @@ own grammar), which fits none of the five. The verified book structure is in
 the full design (orthogonal, multi-label, ~20-register lattice, combined detectors) is
 in [`RENOU_SUBSECTIONS_PLAN.md`](RENOU_SUBSECTIONS_PLAN.md).
 
-**Built — the DCS-corpus route (additive; the state axis is unchanged).** Every entry
-now carries an orthogonal **`renou_register`** + `renou_register_provenance` from the
-corpus: `build_dcs_renou.py` emits per-lemma `register` + lossless `register_support`
-(genre→register + name-stem detectors, esp. `bhāṣya` by `*bhāṣya/ṭīkā/vṛtti/…`), the
-same min-support policy applies (`renou.filter_dcs_registers`), and the taggers emit
-the field (provenance `["dcs"]`). Coverage: ~38–41 % of entries carry ≥1 register;
-`bhasya` reaches 14 k (PWG) / 45 k (MW) headwords.
+**Built — two routes (additive; the state axis is unchanged).** Every entry carries an
+orthogonal **`renou_register`** + `renou_register_provenance`:
 
-**Pending:** the `<ls>` siglum→register route (the only source for **`épig`** and
-`jaina`, which the corpus has ~zero of) and the register audit/portrait — Phases 2–5
-in the plan. Registers do **not** affect the state fields.
+- **DCS corpus** — `build_dcs_renou.py` emits per-lemma `register` + lossless
+  `register_support` (genre→register + name-stem detectors, esp. `bhāṣya` by
+  `*bhāṣya/ṭīkā/vṛtti/…`); same min-support policy (`renou.filter_dcs_registers`).
+- **`<ls>` citation** — `renou_register.py` maps each cited siglum's
+  `ls_source_map*.json` record → register(s) (`renou.ls_registers_for_text`); the only
+  route for **`jaina`** (MW `Jain`/`Kalpas` → 288 entries) and a second signal for
+  **`bhāṣya`** (commentary sigla Sāy/Kāś/Pat → 4,109 MW entries).
+
+Per-register provenance is `["dcs"]`/`["ls"]`/both. Coverage: ~38–41 % of entries carry
+≥1 register; `bhasya` ~14 k (PWG) / 45 k (MW).
+
+**Pending:** **`épig`** (no inscription sigla in either CANON yet — needs a curation
+pass) and the register audit/portrait — Phases 3 & 5. Registers do **not** affect the
+state fields.
 
 ## Reproduce
 

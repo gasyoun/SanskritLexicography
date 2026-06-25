@@ -68,14 +68,9 @@ NAME_HINTS = [
 ]
 
 # ── Register axis (Renou's subsections; orthogonal to the state) ──────────────
-# See RENOU_SUBSECTIONS_PLAN.md. Codes are ordered by the chapter Renou discusses
-# them in, but a register can attach across states (e.g. a bhāṣya on a Vedic text).
-REGISTERS = ('rgveda', 'atharva', 'yajus', 'brahmana', 'upanisad', 'sutra',   # I
-             'vyakarana', 'epig',                                             # II
-             'epic', 'purana', 'tantra', 'smrti', 'karika',                   # III
-             'bhasya', 'katha', 'natya', 'kavya',                             # IV
-             'bauddha', 'jaina', 'hors_inde')                                 # V
-_RORDER = {r: i for i, r in enumerate(REGISTERS)}
+# See RENOU_SUBSECTIONS_PLAN.md. The canonical code list lives in renou_register.py
+# (shared with the <ls> citation route) so the two never drift.
+from renou_register import REGISTERS, _RORDER
 
 # DCS genre → register (the clean, high-confidence route). 'Vedic Saṃhitā' is split
 # by name (RV/AV/YV) and 'Sūtra/Dharma' by date (Vedic sūtra vs later smṛti); both
