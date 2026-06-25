@@ -9,6 +9,23 @@ then **cut a new version every time the changelog is updated** (promote
 
 ## [Unreleased]
 
+## [0.0.11] - 2026-06-25
+
+### Changed
+- **`article-comparison/*.table.md` — full, untruncated entries.** The side-by-side
+  tables previously capped each cell at ~800 chars with a trailing ` …`, so longer
+  entries (e.g. STC, PWG, AP90, VCP, PE) showed only a fragment. Every cell now
+  carries the **complete** condensed entry (citations in `[ ]` stripped, SLP1→IAST,
+  paragraphs joined with ▸); PD remains its full sense skeleton (its verbatim entry is
+  20–234 KB and stays in the verbatim/IAST files). 40 truncated cells expanded.
+
+### Added
+- **`RussianTranslation/src/_build_tables.py`** — the table builder, now committed (it
+  never was). Regenerates all four tables from the full `*.iast.md` sections (+ the
+  `*.pd-min.md` skeleton for the PD row), reproducing the original condensation but
+  without the length cap, and with **nested-citation-safe** bracket stripping (fixes a
+  stray `]` the old run left on `[m., [RāmatUp.]]`-style nested refs, e.g. akṣara/MW).
+
 ## [0.0.10] - 2026-06-25
 
 ### Added
