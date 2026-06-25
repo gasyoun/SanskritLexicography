@@ -1,18 +1,22 @@
 #!/usr/bin/env python
-"""renou_register.py — resolve a Renou *register* (subsection) from an <ls> source.
+"""renou_register.py — the Renou *register* (subsection) axis: codes + citation routes.
 
-Phase 2 of RENOU_SUBSECTIONS_PLAN.md: the citation route to the register axis,
-complementing the DCS-corpus route in build_dcs_renou.py. Given one record from an
-`ls_source_map*.json` (the curated siglum → {renou, genre, name, …} table), return
-the set of registers that source belongs to. This is the only route for registers
-the corpus barely has — **jaina** (Jaina sigla) and a second signal for **bhāṣya**
-(commentary sigla: Sāyaṇa, Kāśikā-vṛtti, Mahābhāṣya).
+Companion to the DCS-corpus route in build_dcs_renou.py (which imports `REGISTERS`
+from here so the two never drift). Holds the canonical 20-code register lattice and
+the `<ls>`-citation detectors that complement the corpus:
 
-A record can map to several registers (Kāśikā-vṛtti = vyākaraṇa **and** bhāṣya).
+  • `ls_registers(rec)` — one `ls_source_map*.json` record → its register(s), from the
+    PWG structured `genre` and the source `name`. The only route for **jaina** (Jaina
+    sigla) and a second signal for **bhāṣya** (Sāyaṇa, Kāśikā-vṛtti, Mahābhāṣya). One
+    record can map to several (Kāśikā-vṛtti = vyākaraṇa **and** bhāṣya).
+  • `dedicated_registers(block)` — citation-text detectors not keyed on the siglum map.
+    Currently **`epig`**: an inscription marker (`Insch?r` — PWG German 'Inschr.',
+    MW/Apte 'Inscr.') in any <ls>. This is the only route to épig (no inscription text
+    in DCS, no inscription sigla in the curated CANON), so coverage is sparse by nature.
 
-Note on `epig`: the curated maps are top-citation *literary* sources; inscriptions
-are rarely top-cited, so `epig` is ~0 from this route too. Inscriptional sigla would
-have to be added to the CANON in build_ls_map*.py — tracked as Phase 3.
+The inline dicts (ap/ben/bhs), which use renou_sigla not the ls maps, get their
+registers from renou_sigla.SIGLUM_REGISTER (+ bhs→bauddha wholesale). See
+RENOU_SUBSECTIONS_PLAN.md (Phases 0–5, all done) and RENOU.md.
 """
 import sys
 sys.stdout.reconfigure(encoding='utf-8')
