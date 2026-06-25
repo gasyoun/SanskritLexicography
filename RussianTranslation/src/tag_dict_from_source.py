@@ -94,6 +94,10 @@ def run(code, out, index_path, report_only, min_support=renou.DCS_MIN_SUPPORT):
             # states — homograph/date-fallback noise; see renou.filter_dcs_states)
             dcs_states = renou.filter_dcs_states(dcs, min_support) if dcs else []
             enriched, prov = merge(ls, dcs_states)
+            # register axis (Renou subsections), orthogonal to state. Corpus route
+            # only for now (the <ls>/epig route is a later phase); same min-support.
+            registers = renou.filter_dcs_registers(dcs, min_support) if dcs else []
+            reg_prov = {r: ['dcs'] for r in registers}
 
             st['entries'] += 1
             if ls:
@@ -114,7 +118,8 @@ def run(code, out, index_path, report_only, min_support=renou.DCS_MIN_SUPPORT):
                        'renou_ls': sorted(ls, key=_ORDER.get), 'renou_ls_oldest': ls_oldest,
                        'renou_dcs': dcs_states,
                        'renou_dcs_oldest': renou.dcs_oldest(dcs, dcs_states),
-                       'renou_enriched': enriched, 'renou_provenance': prov}
+                       'renou_enriched': enriched, 'renou_provenance': prov,
+                       'renou_register': registers, 'renou_register_provenance': reg_prov}
                 sink.write(json.dumps(rec, ensure_ascii=False) + '\n')
     finally:
         if sink:

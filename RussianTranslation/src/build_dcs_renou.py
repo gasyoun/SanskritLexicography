@@ -67,6 +67,68 @@ NAME_HINTS = [
     ('III', ('purāṇa', 'harivaṃśa')),
 ]
 
+# ── Register axis (Renou's subsections; orthogonal to the state) ──────────────
+# See RENOU_SUBSECTIONS_PLAN.md. Codes are ordered by the chapter Renou discusses
+# them in, but a register can attach across states (e.g. a bhāṣya on a Vedic text).
+REGISTERS = ('rgveda', 'atharva', 'yajus', 'brahmana', 'upanisad', 'sutra',   # I
+             'vyakarana', 'epig',                                             # II
+             'epic', 'purana', 'tantra', 'smrti', 'karika',                   # III
+             'bhasya', 'katha', 'natya', 'kavya',                             # IV
+             'bauddha', 'jaina', 'hors_inde')                                 # V
+_RORDER = {r: i for i, r in enumerate(REGISTERS)}
+
+# DCS genre → register (the clean, high-confidence route). 'Vedic Saṃhitā' is split
+# by name (RV/AV/YV) and 'Sūtra/Dharma' by date (Vedic sūtra vs later smṛti); both
+# handled in registers_for_text. Medical/Arthaśāstra/Philosophy/Kośa have no distinct
+# Renou register (classical śāstra prose) → None.
+GENRE_REGISTER = {
+    'Brāhmaṇa': 'brahmana', 'Upaniṣad': 'upanisad', 'Ritual': 'sutra',
+    'Vyākaraṇa': 'vyakarana',
+    'Epic': 'epic', 'Purāṇa': 'purana', 'Tantra/Āgama': 'tantra',
+    'Kāvya': 'kavya', 'Nāṭya': 'natya', 'Narrative Prose': 'katha',
+    'Buddhist': 'bauddha',
+}
+# Name substrings → register, additive (medium confidence). The key one is **bhasya**
+# (commentary) — DCS has no commentary genre, so name-stems are the only corpus route.
+# Buddhist name hints (for V-texts the genre file misses) are appended from NAME_HINTS.
+NAME_REGISTER = [
+    ('bhasya', ('bhāṣya', 'bhāsya', 'ṭīkā', 'ṭippaṇ', 'vṛtti', 'vārttika',
+                'vivaraṇa', 'vyākhyā', 'pañjikā', 'dīpikā')),
+    ('vyakarana', ('aṣṭādhyāyī', 'kāśikā', 'vyākaraṇa', 'siddhāntakaumudī', 'prakriyā')),
+    ('jaina', ('jaina',)),
+    ('karika', ('kārikā',)),
+    ('purana', ('purāṇa', 'harivaṃśa')),
+    ('sutra', ('śrautasūtra', 'gṛhyasūtra', 'dharmasūtra', 'kalpasūtra', 'śrauta', 'gṛhya')),
+    ('smrti', ('smṛti', 'dharmaśāstra')),
+    ('upanisad', ('upaniṣad', 'upaniṣat')),
+    ('brahmana', ('brāhmaṇa', 'āraṇyaka')),
+    ('bauddha', dict(NAME_HINTS)['V']),
+]
+_VEDA_SPLIT = (('atharva', ('atharva',)),
+               ('yajus', ('yajur', 'yajus', 'taittirīya', 'vājasaneyi',
+                          'maitrāyaṇī', 'kāṭhaka')))
+
+
+def registers_for_text(genre, date, low, conf_rank):
+    """{register_code: confidence_rank} for one text. Genre route = the text's own
+    confidence; name route = medium; both are unioned (a text can be several registers)."""
+    regs = {}
+    base = GENRE_REGISTER.get(genre)
+    if genre == 'Vedic Saṃhitā':
+        base = 'rgveda'
+        for code, subs in _VEDA_SPLIT:
+            if any(s in low for s in subs):
+                base = code
+                break
+    elif genre == 'Sūtra/Dharma':
+        base = 'sutra' if (date is not None and date < -200) else 'smrti'
+    if base:
+        regs[base] = conf_rank
+    for code, subs in NAME_REGISTER:
+        if any(s in low for s in subs):
+            regs[code] = max(regs.get(code, 0), _CONF_RANK['medium'])
+    return regs
+
 
 def _norm(name):
     """Match key: strip a trailing parenthetical recension ('(Śaunaka)') + spaces."""
@@ -147,8 +209,9 @@ def build_text_states():
             source = 'date' if state else None
         conf = {'clean-genre': 'high', 'clean-genre+date': 'high',
                 'name-hint': 'medium', 'date': 'low'}.get(source, 'none')
+        regs = registers_for_text(genre, date, low, _CONF_RANK.get(conf, 0))
         out[name] = {'renou': state, 'genre': genre, 'date': date,
-                     'source': source, 'confidence': conf}
+                     'source': source, 'confidence': conf, 'registers': regs}
     return out
 
 
@@ -189,14 +252,19 @@ def build_index(limit=None):
         for fn in os.listdir(d):
             if fn.endswith('.conllu'):
                 lemmas |= lemmas_in_file(os.path.join(d, fn))
+        regs = ts['registers']
         for lem in lemmas:
             e = idx.get(lem)
             if e is None:
                 e = idx[lem] = {'state_n': collections.Counter(),
-                                'state_conf': {}, 'oldest_date': None,
+                                'state_conf': {}, 'reg_n': collections.Counter(),
+                                'reg_conf': {}, 'oldest_date': None,
                                 'oldest_text': None, 'n_texts': 0}
             e['state_n'][state] += 1                 # texts of this state for this lemma
             e['state_conf'][state] = max(e['state_conf'].get(state, 0), conf)
+            for rc, rrank in regs.items():           # registers of this text
+                e['reg_n'][rc] += 1
+                e['reg_conf'][rc] = max(e['reg_conf'].get(rc, 0), rrank)
             e['n_texts'] += 1
             if date is not None and (e['oldest_date'] is None or date < e['oldest_date']):
                 e['oldest_date'] = date
@@ -214,7 +282,11 @@ def build_index(limit=None):
         oldest_state = texts[e['oldest_text']]['renou'] if e['oldest_text'] else ''
         support = {st: {'n': e['state_n'][st], 'conf': _RANK_CONF[e['state_conf'][st]]}
                    for st in states}
+        regs = sorted(e['reg_n'], key=lambda c: _RORDER.get(c, 99))
+        reg_support = {c: {'n': e['reg_n'][c], 'conf': _RANK_CONF[e['reg_conf'][c]]}
+                       for c in regs}
         final[lem] = {'renou': states, 'state_support': support,
+                      'register': regs, 'register_support': reg_support,
                       'renou_oldest': oldest_state,
                       'oldest_date': e['oldest_date'], 'oldest_text': e['oldest_text'],
                       'n_texts': e['n_texts']}
@@ -255,11 +327,15 @@ def main():
               ensure_ascii=False, sort_keys=True)
     os.replace(tmp, out)
     cov = collections.Counter()
+    rcov = collections.Counter()
     for e in final.values():
         for s in e['renou']:
             cov[s] += 1
+        for r in e.get('register', ()):
+            rcov[r] += 1
     print('lemmas indexed: %d' % len(final))
     print('lemmas carrying each state:', {k: cov.get(k, 0) for k in STATES})
+    print('lemmas carrying each register:', {k: rcov.get(k, 0) for k in REGISTERS})
     print('→ %s' % os.path.basename(out))
 
 

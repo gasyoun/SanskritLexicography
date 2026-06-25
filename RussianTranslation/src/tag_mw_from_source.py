@@ -77,6 +77,8 @@ def run(out, index_path, report_only):
             dcs = index.get(iast)
             dcs_states = renou.filter_dcs_states(dcs) if dcs else []
             enriched, prov = merge(ls['renou'], dcs_states)
+            registers = renou.filter_dcs_registers(dcs) if dcs else []
+            reg_prov = {r: ['dcs'] for r in registers}
 
             stats['entries'] += 1
             if ls['renou']:
@@ -96,7 +98,8 @@ def run(out, index_path, report_only):
                        'renou_ls': ls['renou'], 'renou_ls_oldest': ls['renou_oldest'],
                        'renou_dcs': dcs_states,
                        'renou_dcs_oldest': renou.dcs_oldest(dcs, dcs_states),
-                       'renou_enriched': enriched, 'renou_provenance': prov}
+                       'renou_enriched': enriched, 'renou_provenance': prov,
+                       'renou_register': registers, 'renou_register_provenance': reg_prov}
                 sink.write(json.dumps(rec, ensure_ascii=False) + '\n')
     finally:
         if sink:
