@@ -11,6 +11,11 @@ RussianTranslation/src/nf.pkl
 RussianTranslation/src/_line28_dump.txt
 RussianTranslation/src/_obj4.json
 RussianTranslation/src/_tmp_*.txt
+RussianTranslation/src/_battery*.json
+RussianTranslation/src/_judge*.txt
+RussianTranslation/src/_qa*.txt
+RussianTranslation/src/_out.txt
+RussianTranslation/src/_review_queue.triage.csv
 
 # pwg_ru corpus-gate dictionary data — extracted from SamudraManthanam by
 # RussianTranslation/src/build_src.py (some sources are modern/copyright).

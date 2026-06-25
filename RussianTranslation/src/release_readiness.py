@@ -103,7 +103,9 @@ def main():
                                                     'G6_human_gold_set',
                                                     'G7_double_review_agreement')) else 'ready-to-cut'),
     ]
-    os.makedirs(os.path.dirname(args.out), exist_ok=True)
+    out_dir = os.path.dirname(args.out)
+    if out_dir:
+        os.makedirs(out_dir, exist_ok=True)
     open(args.out, 'w', encoding='utf-8').write('\n'.join(lines) + '\n')
     print('release readiness report -> %s' % args.out)
     print('blocking:', ', '.join(blocking) or 'none')
