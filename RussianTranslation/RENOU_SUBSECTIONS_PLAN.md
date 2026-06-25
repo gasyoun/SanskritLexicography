@@ -74,6 +74,15 @@ Renou register** — Philosophy base-texts are classical prose (state IV, no reg
 unless the **name** marks them commentary (`bhasya`). They map to *no* register, which
 is correct: not every text is a Renou register.
 
+**Noise control — by confidence floor, not the n≥2 gate (audited 2026-06-25).** Unlike
+the state axis (where single low-confidence *date-fallback* texts are the over-tag noise,
+pruned by `n≥2 OR typed`), a register only ever comes from a **typed** source — a DCS
+genre (`high`) or a name/siglum hint (floored at `medium`). So `register_support` never
+carries `conf=low`, and `renou.filter_dcs_registers` (which shares the state policy)
+prunes **0** of ~174 k register-supports today: a register may rest on a single
+well-typed text, which is legitimate register attestation. The min-support gate is wired
+and tunable, but register noise control rides on the genre/name confidence floor.
+
 ## Detector strategy (combine all three)
 
 1. **DCS genre → register** — a `GENRE_REGISTER` map parallel to `build_dcs_renou.py`'s
