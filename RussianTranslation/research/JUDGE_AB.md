@@ -239,3 +239,35 @@ no systemic translation defect; the "7 % wrong_entry" was 100 % a harness pairin
 two durable findings stand: the judge reliably catches homonym mismatches, and the pipeline must
 pair `de`↔`ru` by homonym (`key2`/`hom`) — and for the all-`key2`-identical headword `a`, by an
 explicit homonym index, since `key2` alone is insufficient there.
+
+---
+
+## Run 5 — the semantic question, and why we stopped synthesizing defects (2026-06-25)
+
+Runs 1–4 settled **vigilance** (mechanical/structural defects): Sonnet = Opus. The open
+question was deep **semantic** judgment — a *plausible-but-wrong gloss*. I attempted a synthetic
+battery (Opus generates one wrong-but-related / antonym / register-drift gloss per card, editor
+verifies ground truth). **Abandoned on the editor's objection, which is correct:**
+
+> A one-word gloss pair (`Theil` → часть vs доля, `Strahl` → луч vs свет) is **undecidable in
+> isolation.** Both the German and the Russian word are polysemous; deciding which is right needs
+> the **whole entry plus the Sanskrit sense in that passage**. The cases decidable by eye are the
+> *rude* ones — which Sonnet already catches (run 4). So a planted "subtle defect" has a
+> contestable ground truth and tests nothing real.
+
+**The honest gate instead: mine real Opus-vs-Sonnet disagreements in production.** Both judges
+score every card; the editor adjudicates **only** the cards where they disagree, each shown with
+the complete German + Russian entry (real context, the editor is ground truth). Tooled by
+[`../src/judge_disagreements.py`](../src/judge_disagreements.py).
+
+**Already near-conclusive on the data we have:** `judge_disagreements.py` finds **0 conflicts in
+run 3 (191 real a-section cards)** and **2 in run 4 (209)** — a ~0.5 % rate. The adjudication
+queue is essentially empty; the two models almost never disagree, so there is barely anything
+left for a human to decide. No hidden Opus advantage surfaces as a backlog of disagreements.
+
+**Final decision** (see [`JUDGE_POLICY.md`](JUDGE_POLICY.md)): **Sonnet for the bulk judge, Opus
+for the reject-repass + a ~5 % audited sample.** The semantic gate is a *standing production
+check*, not a blocker — let `judge_disagreements.py` surface the rare conflicts each batch, and
+revisit only if that rate climbs. **Methodological lesson worth keeping: do not build a synthetic
+test whose ground truth you cannot defend; for translation correctness the only honest ground
+truth is the entry in full context, adjudicated by the editor on genuine disagreements.**
