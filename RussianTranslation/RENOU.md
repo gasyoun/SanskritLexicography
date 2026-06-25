@@ -206,16 +206,18 @@ Individual stages are also runnable standalone (`tag_dict_from_source.py CODE`,
 
 | Path | Committed? | What |
 |---|---|---|
-| `renou.py`, `renou_sigla.py` | ✓ | siglum→state resolvers (PWG/MW + Apte/Benfey/BHS) |
+| `renou.py` | ✓ | state resolver + min-support policy (`filter_dcs_states`, `filter_dcs_registers`) |
+| `renou_sigla.py` | ✓ | Apte/Benfey/BHS siglum→state **and** `SIGLUM_REGISTER` (inline-dict register route) |
+| `renou_register.py` | ✓ | register axis: canonical `REGISTERS` lattice + `<ls>` register routes (`ls_registers`, dedicated `epig`) |
 | `build_ls_map.py`, `build_ls_map_mw.py` | ✓ | build the `<ls>` source maps |
-| `ls_source_map.json`, `ls_source_map_mw.json` | ✓ | curated source → state (small, auditable) |
-| `build_dcs_renou.py` | ✓ | scan DCS corpus → lemma→state index, with per-state `state_support` (n_texts + confidence) |
-| `tag_dict_from_source.py`, `tag_mw_from_source.py` | ✓ | per-dict `<ls>`+DCS tagger |
-| `enrich_renou_dcs.py`, `enrich_renou_bhs.py`, `enrich_renou_wisdomlib.py` | ✓ | the DCS / BHS / wisdomlib enrichers |
+| `ls_source_map.json`, `ls_source_map_mw.json` | ✓ | curated source → state + genre/name (drives both axes) |
+| `build_dcs_renou.py` | ✓ | scan DCS corpus → lemma index: per-state `state_support` **and** per-register `register_support` |
+| `tag_dict_from_source.py`, `tag_mw_from_source.py` | ✓ | per-dict tagger — emits both `renou_*` (state) and `renou_register*` |
+| `enrich_renou_dcs.py`, `enrich_renou_bhs.py`, `enrich_renou_wisdomlib.py` | ✓ | the DCS / BHS / wisdomlib state enrichers (pass registers through) |
 | `annotate_renou.py`, `add_corpus_renou.py` | ✓ | per-sense card backfill; raw-text corpus augmenter |
 | `renou_pipeline.py` | ✓ | the driver (this system's entry point) |
-| `renou_portrait.py` | ✓ | editor-facing label (`portrait`) + oldest-sense reorder, on a `{code}.renou.jsonl` |
-| `renou_audit.py` | ✓ | inter-signal agreement audit (the validation tool above) |
+| `renou_portrait.py` | ✓ | editor badge: state label + register sub-label + low-info flags + oldest-sense reorder |
+| `renou_audit.py` | ✓ | inter-signal agreement audit — state over-tag suspects **and** register mode |
 | `dcs_lemma_renou.json`, `{code}.renou.jsonl`, `*_renou*.jsonl`, `renou_audit_report.md` | gitignored | derived indices + audit report (regenerated) |
 
 The wisdomlib fetcher itself (`definitions.py`, producing `word_traditions.jsonl`)
@@ -226,8 +228,15 @@ connection). See that repo's wisdomlib README.
 ## Provenance example
 
 ```json
-{"iast": "akṣobhya", "renou_enriched": ["III","V"],
- "renou_provenance": {"III": ["dcs"], "V": ["ls","dcs","bhs","wl"]}}
+{"iast": "akṣobhya",
+ "renou_enriched": ["III","V"],
+ "renou_provenance": {"III": ["dcs"], "V": ["dcs","bhs","wl"]},
+ "renou_register": ["purana","tantra","bauddha"],
+ "renou_register_provenance": {"purana": ["dcs"], "tantra": ["dcs"], "bauddha": ["dcs"]}}
 ```
-`akṣobhya` is Epic (III) by corpus attestation, and Buddhist (V) confirmed by all
-four signals — its citation, corpus, the BHS register, and wisdomlib's tradition tag.
+The actual MW record. Two orthogonal axes. **State:** `akṣobhya` is Epic (III) by corpus
+attestation, and Buddhist (V) by three signals — corpus, the BHS register, and
+wisdomlib's tradition tag (MW happens not to cite a Buddhist text for it; in the BHS
+dictionary the `ls` citation route fires too). **Register:** used in the Purāṇa, Tantra,
+and Buddhist registers (all by corpus). The fields are independent — the register set is
+never derived from the state, and vice versa.
