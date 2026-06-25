@@ -131,10 +131,15 @@ signal is the weakest, exactly as with states.
   sigla (they're top-citation literary sources). Needs an inscription-siglum curation
   pass in `build_ls_map*.py` (e.g. add the dicts' `Inscr.`-class sigla). Lower value —
   inscriptional citations are sparse in these dictionaries.
-- **Phase 5 — validate + display.** `renou_audit.py` register mode; `renou_portrait`
-  register sub-label (+ reuse the low-info flag for all-register breadth). Human
-  spot-check focused on **`bhasya`** precision (tighten the `dīpikā`-class name FPs,
-  e.g. Haṭhayogapradīpikā) and **`epig`** recall.
+- **✅ Phase 5 — validate + display (done, 2026-06-25).** `renou_audit.py` register mode
+  (coverage + per-register ls/dcs/both provenance + register-low-info) and
+  `renou_portrait` register sub-label (`renou_register_label` + `renou_register_low_info`,
+  a `bhāṣya` editorial note, low-info at ≥10 registers). FP review: kept `dīpikā` (mostly
+  genuine commentary — Āyurvedadīpikā etc.; only Haṭhayoga*pradīpikā* is a manual, left
+  for human review) — dropping it would lose more than it fixes. Outstanding for a human:
+  **`bhāṣya`** precision spot-check and the inline-dict (`ap`/`ben`/`bhs`) `<ls>` register
+  route (they use `renou_sigla`, not the `ls_source_map`, so their registers are
+  corpus-only today).
 
 ## Risks / open issues
 

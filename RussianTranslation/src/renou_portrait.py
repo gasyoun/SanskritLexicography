@@ -36,6 +36,18 @@ _ORDER = {s: i for i, s in enumerate(renou.STATES)}
 # a span covering this many states is era-neutral → low-information for display
 # (default = all five; tighten to 4 to also flag near-universal words).
 LOW_INFO_MIN_STATES = len(renou.STATES)
+# Register (subsection) display names. The bhāṣya/épig registers are the editorially
+# interesting ones; an entry in very many registers is register-uninformative.
+NAME_REG = {
+    'rgveda': 'ригведа', 'atharva': 'атхарваведа', 'yajus': 'яджус',
+    'brahmana': 'брахманы', 'upanisad': 'упанишады', 'sutra': 'сутры',
+    'vyakarana': 'грамматика', 'epig': 'эпиграфика',
+    'epic': 'эпос', 'purana': 'пураны', 'tantra': 'тантры', 'smrti': 'смрити',
+    'karika': 'карики', 'bhasya': 'комментарий', 'katha': 'повеств. проза',
+    'natya': 'драма', 'kavya': 'кавья',
+    'bauddha': 'буддийское', 'jaina': 'джайнское', 'hors_inde': 'вне Индии',
+}
+REG_LOW_INFO_MIN = 10  # carrying ≥half the lattice = register-uninformative
 
 
 def portrait(e):
@@ -54,12 +66,21 @@ def portrait(e):
     if low_info:
         notes.append('малоинформативно: во всех эпохах')
     label = ' · '.join(NAME[s] for s in states)
-    return {
+    # register sub-label (orthogonal axis). A bhāṣya tag is the editorially salient one.
+    regs = e.get('renou_register') or []
+    reg_low_info = len(regs) >= REG_LOW_INFO_MIN
+    if regs and not reg_low_info and 'bhasya' in regs:
+        notes.append('регистр: комментарий (бхашья)')
+    out = {
         'renou_label': label,
         'renou_first': NAME.get(first, ''),
         'renou_note': '; '.join(notes),
         'renou_low_info': low_info,
     }
+    if regs:
+        out['renou_register_label'] = ' · '.join(NAME_REG.get(r, r) for r in regs)
+        out['renou_register_low_info'] = reg_low_info
+    return out
 
 
 def order_senses_oldest_first(card):
@@ -107,6 +128,10 @@ def cmd_demo(path, words):
             print('   первое свидетельство: %s%s' % (p['renou_first'] or '—',
                   ('  · ' + p['renou_note']) if p and p['renou_note'] else '') if p else '—')
             print('   provenance: %s' % o.get('renou_provenance'))
+            if p and p.get('renou_register_label'):
+                print('   регистр: %s%s' % (p['renou_register_label'],
+                      '  [малоинформативно]' if p.get('renou_register_low_info') else ''))
+                print('   register provenance: %s' % o.get('renou_register_provenance'))
             want.discard(o['iast'])
             if not want:
                 break
