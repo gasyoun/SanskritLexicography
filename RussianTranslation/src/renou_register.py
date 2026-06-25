@@ -86,6 +86,23 @@ def _genre_register(genre):
     return None
 
 
+import re
+# Dedicated epigraphic detector: an inscription marker inside an <ls> citation. The
+# only route to `epig` (no inscription text in DCS, none in the curated sigla CANON).
+# PWG uses German 'Inschr.', MW/Apte 'Inscr.' — 'Insch?r' covers both.
+_LS_BLOCK = re.compile(r'<ls\b[^>]*>(.*?)</ls>', re.S)
+_INSCRIPTION = re.compile(r'Insch?r')
+
+
+def dedicated_registers(block):
+    """{register codes} from direct citation-text detectors (not the siglum map).
+    Currently just `epig` — any <ls> citation carrying an inscription marker."""
+    for m in _LS_BLOCK.finditer(block or ''):
+        if _INSCRIPTION.search(m.group(1)):
+            return {'epig'}
+    return set()
+
+
 def ls_registers(rec):
     """{register codes} for one ls_source_map record. Genre route (PWG) ∪ name route."""
     regs = set()

@@ -127,10 +127,13 @@ signal is the weakest, exactly as with states.
   **bhāṣya** ls-corroboration (4,109 MW; Sāy/Kāś/Pat) + an `ls` source on ~119 k (PWG) /
   ~155 k (MW) register-assignments. `REGISTERS` now canonical in `renou_register.py`
   (shared with the corpus builder). Minor known FP: Bālarāmāyaṇa → epic+natya.
-- **Phase 3 — dedicated `epig` (+ `hors_inde`).** Still 0: neither CANON has inscription
-  sigla (they're top-citation literary sources). Needs an inscription-siglum curation
-  pass in `build_ls_map*.py` (e.g. add the dicts' `Inscr.`-class sigla). Lower value —
-  inscriptional citations are sparse in these dictionaries.
+- **✅ Phase 3 — dedicated `epig` + inline-dict route (done, 2026-06-25).**
+  `renou_register.dedicated_registers` scans `<ls>` content for an inscription marker
+  (PWG `Inschr.`, MW/Apte `Inscr.` → `Insch?r`) → **`epig`** (provenance `ls`): MW 687,
+  AP 17, PWG 9, BHS 2, PW 1 — sparse, as expected. Inline dicts (`ap`/`ben`/`bhs`) now
+  get registers via `renou_sigla.SIGLUM_REGISTER` (curated siglum→register) +
+  `registers_for_block` (and `bhs` → `bauddha` wholesale: 17,839/17,839). The dedicated
+  detector runs for all dicts. `hors_inde` remains 0 (no such corpus/citation source).
 - **✅ Phase 5 — validate + display (done, 2026-06-25).** `renou_audit.py` register mode
   (coverage + per-register ls/dcs/both provenance + register-low-info) and
   `renou_portrait` register sub-label (`renou_register_label` + `renou_register_low_info`,

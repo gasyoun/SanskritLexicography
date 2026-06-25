@@ -82,6 +82,48 @@ BHS_DATE = 200  # Buddhist Hybrid Sanskrit ~ early centuries CE
 
 _TABLES = {'ap': APTE, 'ap90': APTE, 'ben': BENFEY}
 
+# Inline-dict siglum → Renou register (subsection). Curated from the APTE/BENFEY works
+# above; the register axis complement to the (state,date) tables. A few works have no
+# distinct Renou register (Suśruta=Āyurveda, Vedāntasāra) → omitted.
+SIGLUM_REGISTER = {
+    # epic / itihāsa
+    'R': 'epic', 'Rām': 'epic', 'MBh': 'epic', 'Mb': 'epic', 'Mbh': 'epic',
+    'Bg': 'epic', 'Bhag': 'epic', 'Hariv': 'epic', 'Nal': 'epic',
+    # smṛti / dharma
+    'Ms': 'smrti', 'Man': 'smrti', 'Y': 'smrti', 'Yājñ': 'smrti',
+    # purāṇa
+    'Bhāg': 'purana', 'Bhāg. P': 'purana',
+    # kāvya (mahākāvya / lyric / historical)
+    'Ku': 'kavya', 'Kum': 'kavya', 'Ki': 'kavya', 'Kir': 'kavya', 'Śi': 'kavya',
+    'Śiś': 'kavya', 'Bk': 'kavya', 'Bh': 'kavya', 'Bhartṛ': 'kavya', 'N': 'kavya',
+    'Me': 'kavya', 'Megh': 'kavya', 'Rag': 'kavya', 'Ragh': 'kavya', 'Gīt': 'kavya',
+    'Amar': 'kavya', 'Rājat': 'kavya',
+    # kathā (narrative prose)
+    'Pt': 'katha', 'Pañc': 'katha', 'K': 'katha', 'Dk': 'katha', 'Daśak': 'katha',
+    'H': 'katha', 'Hit': 'katha', 'Kathās': 'katha', 'Vet': 'katha',
+    # nāṭya (drama)
+    'Ś': 'natya', 'Śāk': 'natya', 'U': 'natya', 'Utt. Rāmac': 'natya', 'Mu': 'natya',
+    'Mk': 'natya', 'Mv': 'natya', 'Ve': 'natya', 'Nā': 'natya', 'Pratimā': 'natya',
+    'Māl': 'natya', 'Mal': 'natya', 'Mālat': 'natya', 'Vikr': 'natya',
+    # vyākaraṇa / commentary
+    'P': 'vyakarana', 'Uṇ': 'vyakarana', 'Pat': 'bhasya',
+    # Veda
+    'Rv': 'rgveda', 'Rigv': 'rgveda', 'Av': 'atharva',
+}
+
+
+def registers_for_block(code, block):
+    """{register codes} for an inline-dict entry (ap/ben/bhs) from its <ls> sigla.
+    bhs is wholly Buddhist → bauddha. (epig comes from renou_register.dedicated_registers.)"""
+    regs = set()
+    if code == 'bhs':
+        regs.add('bauddha')
+    for sig in sigla_in_block(block):
+        r = SIGLUM_REGISTER.get(sig)
+        if r:
+            regs.add(r)
+    return regs
+
 
 def states_for_block(code, block):
     """({states}, (oldest_state, oldest_date)) for an inline-dict entry block."""

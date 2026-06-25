@@ -141,10 +141,11 @@ Per-register provenance is `["dcs"]`/`["ls"]`/both. Coverage: ~38–41 % of entr
 `ls`/`dcs`/`both` provenance + register-low-info), and `renou_portrait` emits a
 `renou_register_label` (+ a `bhāṣya` editorial note, low-info flag at ≥10 registers).
 
-**Pending:** **`épig`** (no inscription sigla in either CANON yet — needs a curation
-pass, Phase 3) and the inline dicts' (`ap`/`ben`/`bhs`) `<ls>` register route (they use
-`renou_sigla`, so their registers are corpus-only today). Registers do **not** affect
-the state fields.
+**`épig` + inline dicts (done).** A dedicated detector (`renou_register.dedicated_registers`)
+reads an inscription marker in the `<ls>` text (PWG `Inschr.`, MW/Apte `Inscr.`) → `epig`
+(MW 687, AP 17, PWG 9, …; sparse by nature). The inline dicts get registers via
+`renou_sigla.SIGLUM_REGISTER` (+ `bhs`→`bauddha` wholesale). Only `hors_inde` stays 0
+(no source). Registers do **not** affect the state fields — the axis is complete.
 
 ## Reproduce
 

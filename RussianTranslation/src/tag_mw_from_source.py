@@ -79,7 +79,8 @@ def run(out, index_path, report_only):
             enriched, prov = merge(ls['renou'], dcs_states)
             import renou_register
             dcs_regs = renou.filter_dcs_registers(dcs) if dcs else []
-            ls_regs = renou.ls_registers_for_text(block, 'mw')
+            ls_regs = (renou.ls_registers_for_text(block, 'mw')
+                       | renou_register.dedicated_registers(block))
             registers = renou_register.sort_registers(set(ls_regs) | set(dcs_regs))
             reg_prov = {r: (['ls'] if r in ls_regs else []) + (['dcs'] if r in dcs_regs else [])
                         for r in registers}
