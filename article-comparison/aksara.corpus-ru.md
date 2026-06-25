@@ -25,7 +25,7 @@ _Источник: DeepSeek-выравнивание параллельного 
 _Существующие академические переводы (Елизаренкова РВ/АВ, акад. Махабхарата и др.), привязанные к стиху по локусу из выравнивания. Не перевожу заново — цитирую изданное._
 
 > **06_mahabharata-bhishmaparva:6.30.13**  
-> _Sa._ omityekākṣaraṃ brahma vyāharanmāmanusmaran । БхГ 8.13 yaḥ prayāti tyajandehaṃ sa yāti paramāṃ gatim ॥13 БхГ 8.13॥  
+> _Sa._ omityekākṣaraṃ brahma vyāharanmāmanusmaran । yaḥ prayāti tyajandehaṃ sa yāti paramāṃ gatim ॥13॥  
 > _Ru._ Кто, слог Ом единый, что есть Брахман, произнося и меня вспоминая, уходит, покидая тело, тот идет высшим путем.  
 > — Махабхарата VI (2009); В.Г. Эрман
 
