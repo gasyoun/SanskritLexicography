@@ -9,6 +9,20 @@ then **cut a new version every time the changelog is updated** (promote
 
 ## [Unreleased]
 
+## [0.0.10] - 2026-06-25
+
+### Added
+- **`article-comparison/agni.gloss-review.md` — agent draft review of agni's 130
+  hand-authored RU sense-glosses.** An Opus-4.8 editorial pass against the English PD
+  sense + Sanskrit term + Russian Indological norm (Kochergina / Elizarenkova),
+  produced as a **sign-off worklist** (the glosses themselves are untouched — they
+  remain the draft they were flagged as). Findings: 1 factual category error (the
+  *agnicayana* altar↔rite mix-up at senses 4i/4vi), 3 transliteration/precision fixes
+  (ахаванья→ахавания; hotṛ "возливатель"→"призыватель"; udātta), 3 optional polish,
+  4 optional add-glosses, and 6 English-source OCR typos already corrected in the RU.
+  This is the agent-doable half of the Track B gloss review; final scholarly sign-off
+  is the human step.
+
 ## [0.0.9] - 2026-06-25
 
 ### Changed

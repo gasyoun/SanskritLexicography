@@ -10,6 +10,18 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## 2026-06-25
 
+### agni gloss review — agent draft pass over the 130 hand-authored RU glosses
+- Produced [`../article-comparison/agni.gloss-review.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/article-comparison/agni.gloss-review.md):
+  an Opus-4.8 editorial review of agni's 130 hand-authored Russian sense-glosses against
+  the English PD sense, the Sanskrit term, and Russian Indological convention
+  (Kochergina / Elizarenkova). **The glosses are untouched** — the output is a
+  sign-off worklist for the human editor. Findings: **1 H** (the *agnicayana*
+  altar↔rite category error at 4i/4vi), **3 M** (ахаванья→ахавания, hotṛ
+  "возливатель"→"призыватель", udātta precision), **3 L** polish, **4** optional
+  add-glosses, **6 FYI** English-source OCR typos the RU already corrects.
+- This is the **agent-doable half** of the remaining Track B item; the final scholarly
+  sign-off on the proposals is the human step. (semver `[0.0.10]`)
+
 ### Comparison tables — dictionary edition year on every quote
 - Each row of [`../article-comparison/*.table.md`](https://github.com/gasyoun/SanskritLexicography/tree/master/article-comparison)
   now carries the source dictionary's **edition year**, not just the four EN dicts
