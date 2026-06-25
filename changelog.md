@@ -9,7 +9,7 @@ then **cut a new version every time the changelog is updated** (promote
 
 ## [Unreleased]
 
-## [0.0.4] - 2026-06-25
+## [0.0.5] - 2026-06-25
 
 ### Added
 - **`article-comparison/` — one headword across every CDSL dictionary.** A study
@@ -38,6 +38,25 @@ then **cut a new version every time the changelog is updated** (promote
 - `RussianTranslation/schemas/pwg_ru_lexicographic_portrait.schema.json` and
   `RussianTranslation/src/validate_portrait_schema.py` define a v1 Apresjan
   portrait contract and validate live `microstructure.portrait()` output.
+
+## [0.0.4] - 2026-06-23
+
+_(Backfilled 2026-06-25 — this release was tagged and published on GitHub but
+not previously recorded here.)_
+
+### Fixed
+- **NWS attribution: the `av` `+ upa` owner slide root-caused & gated.**
+  `compile_translatable.mask_nws_gloss` strips the leading owner *bleed* — a
+  roman-numeral co-owner cite (`Rivelex (2) : XLV`) that `nws_split`'s digit-only
+  OWNER can't tag was riding onto the next gloss's prose and misleading the LLM
+  assembly. `nws_split` OWNER now stops at `;`; `check` uses word-boundary locator
+  matching (kills the `apāṃ`-in-`apāṃpitta` false MISATTRIBUTION).
+
+### Added
+- **NWS attribution gate** (`run_real_test.py audit`): a fresh non-protected card
+  whose NWS owners disagree with the deterministic `nws_split` parse is rejected
+  (→ `<safe>.merged.REJECTED.md`, re-queued; run exits non-zero); protected
+  hand-authored cards are audited but never quarantined.
 
 ## [0.0.3] - 2026-06-19
 
