@@ -30,9 +30,9 @@ the real run. (See `Uprava/GTD_NEXT_ACTIONS.md` → SanskritLexicography.)
   validated). Fidelity gate `src/audit_translation.py` = **38/38 clean**.
 
 **Resume steps (do in order):**
-1. **Opus judge pass on the 38 freq-test outputs** for severity scores — *not yet
-   run*; this is the gate before scaling. (Pattern: Sonnet translate → Opus
-   judge, as in `pilot/run_pilot_wf.js`.)
+1. **Opus 4.8 judge pass on the 38 freq-test outputs** for severity scores — *not
+   yet run*; this is the gate before scaling. (Pattern: Sonnet translate → Opus
+   judge, as in `pilot/run_pilot_wf.js`. Model locked to Opus 4.8.)
 2. **Run the freq queue on Max with `--root-split`**, window by window, per
    [`src/pilot/RUN_ASECTION_MAX.md`](src/pilot/RUN_ASECTION_MAX.md): `prep N
    OFFSET` → run the workflow on the interactive Max harness (`run_pilot_wf.js`,
@@ -58,14 +58,12 @@ keep `{#..#}`/`<ls>` sigla verbatim; NWS owners verbatim, one row per source.
 The `article-comparison/` study (agni, anya, akṣara, ananta) is complete and
 released (**v0.0.5**). Two tasks remain, per the user (2026-06-25):
 
-1. **Lock the final 1 + 1 flagship pair** (non-samāsa + a-samāsa). The other two
-   become supporting examples.
-   - **Recommended:** **agni** (non-samāsa) + **akṣara** (a-samāsa). Both sort
-     early (maximal cross-dict coverage), both high-frequency, and both have the
-     cleanest comparison *finding* — the theonym↔common-noun split
-     (Агни/огонь) and the syllable↔Brahman split (слог/Непреходящее).
-   - Alternative a-samāsa: **ananta** (richest PD article, 876 lines; adj.↔Śeṣa).
-   - **This is the opening decision of Track B — confirm or swap before going deep.**
+1. **Flagship 1 + 1 pair — LOCKED (2026-06-25): `agni` (non-samāsa) + `akṣara`
+   (a-samāsa).** Both sort early (maximal cross-dict coverage), both
+   high-frequency, and both carry the cleanest comparison *finding* — the
+   theonym↔common-noun split (Агни/огонь) and the syllable↔Brahman split
+   (слог/Непреходящее). **`anya` and `ananta` become supporting examples**, not
+   the flagship.
 2. **Finish the chosen pair's Russian to 100 %** (user said "close the tail"):
    - Run a **Max-LLM per-sense assignment** over the residual renderings (the
      `### Не привязано к значению` bucket in each `*.persense-ru.md`, currently
@@ -105,6 +103,8 @@ the server fix.
 | Comparison study | [`../article-comparison/README.md`](../article-comparison/README.md) |
 | Per-sense RU + residual tail | `../article-comparison/*.persense-ru.md`, `src/_build_persense_ru.py` |
 
-## Open decisions for the user
-- **Track B flagship pair:** confirm **agni + akṣara**, or swap the a-samāsa to ananta.
-- **Track A judge model:** Opus 4.8 for the 38-output severity pass (default), or Fable for cheaper triage?
+## Decisions (locked 2026-06-25)
+- **Track B flagship pair:** **agni + akṣara** (anya/ananta = supporting examples).
+- **Track A judge model:** **Opus 4.8** for the 38-output severity pass.
+
+No open decisions — both tracks are cleared to execute.
