@@ -175,7 +175,64 @@ so key2-matching can't disambiguate and the order-fallback mispaired it. That is
 edge-case of the most-polysemous headword, **not** a confirmed translation defect (it would need
 manual homonym mapping for `a`).
 
-**Conclusion of the full audit.** The legacy a-section translations are **clean**: across 178
+---
+
+## RUN 4 — ground-truth POWER test: does Opus catch subtle defects Sonnet misses? (2026-06-25)
+
+Runs 1–3 mostly judged *clean* cards, so agreement was partly "both agree it's fine." To test
+**discriminating power** I built a **250-item battery with known ground truth** (workflow
+`judge-ab-battery`): from the 178 clean single-homonym cards I planted exactly one *subtle*
+defect per card and kept controls —
+
+| ground truth | category | n |
+|---|---|---|
+| **BAD** | anchor-drop (one `{#…#}` removed) | 90 |
+| **BAD** | sigla-alter (one `<ls>` source falsified, e.g. RV→AV) | 40 |
+| **BAD** | drop-sense (one `<div>` sub-sense removed) | 36 |
+| **BAD** | latin-translated (a binomial wrongly Russified) | 6 |
+| **BAD** | numeral-drift (a number inside a gloss changed) | 2 |
+| **OK** | clean control (unmutated) | 70 |
+| **OK** | latin-kept decoy (binomial correctly verbatim — false-positive trap) | 6 |
+
+Both judges scored the **blinded** battery (no ground-truth fields visible). The API was
+unstable (two passes + a resume; transient connection-closed/403 errors), so **Opus judged 239,
+Sonnet 209**. Verdicts: [`judge_ab_battery_opus.jsonl`](judge_ab_battery_opus.jsonl) ·
+[`judge_ab_battery_sonnet.jsonl`](judge_ab_battery_sonnet.jsonl).
+
+### Result — a statistical tie
+
+| | Opus | Sonnet |
+|---|---|---|
+| defect **recall** | **163/164 = 99 %** | **143/144 = 99 %** |
+| false-positives on the 76 OK items | **0 %** | **0 %** |
+| accuracy, head-to-head (209 shared) | **208/209** | **208/209** |
+
+Per category both scored ~100 % recall (anchor-drop, sigla-alter, drop-sense, latin-translated,
+numeral-drift). **Each missed exactly one — different — card** (Opus missed `anchordrop~akava`;
+Sonnet missed `dropsense~aga`). The "Opus edge" and "Sonnet edge" are **1 card apiece**. Neither
+model false-flagged a single clean card or Latin-kept decoy.
+
+### Answer to "is Sonnet enough, or does Opus have power Sonnet lacks?"
+
+**For the QA-judge job, Sonnet = Opus.** On 200+ subtle defects with ground truth, the cheaper
+model matched the reference at 99 % recall / 0 % false-positives, with a 1-vs-1 wash on the only
+misses. There is **no detectable Opus power advantage** for the mechanical core of judging
+(gloss translated? anchors intact? citations faithful? coverage complete? Latin kept?).
+
+**Honest scope.** These defects are *structural/mechanical* (anchors, citations, coverage,
+Latin, numbers) — clean ground truth, but they test **vigilance**, not deep **semantic**
+discrimination. The one category I could not auto-generate with reliable ground truth is the
+**plausible-but-wrong gloss** (a correct-looking but semantically wrong Russian rendering) — the
+likeliest place a weaker judge could slip. That remains the single open question; testing it
+needs an LLM-generated defect set with verified ground truth. Subject to that caveat, the
+evidence now strongly supports **Sonnet as the bulk judge** (the ~$134/top-500 Max-quota saving),
+with Opus kept for the repass and a periodic audited sample.
+
+---
+
+## Conclusion of the full audit
+
+**The legacy a-section translations are clean**: across 178
 single-homonym cards (run 3) only one borderline minor (`akzamA`'s stray "im"), and across the 30
 re-paired homonym rows 28/29 clean with the lone `a~h3` flag being a pairing edge-case. **There is
 no systemic translation defect; the "7 % wrong_entry" was 100 % a harness pairing artifact.** The
