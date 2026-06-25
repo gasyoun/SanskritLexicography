@@ -9,6 +9,8 @@ then **cut a new version every time the changelog is updated** (promote
 
 ## [Unreleased]
 
+## [0.0.7] - 2026-06-25
+
 ### Changed
 - **`article-comparison/` — Max-LLM residual per-sense pass (Track B tail).** Each
   attested Russian rendering the deterministic matcher left in the
@@ -21,11 +23,29 @@ then **cut a new version every time the changelog is updated** (promote
   mirroring `SYN`/`ROUTE`); LLM-assigned renderings carry a **°** marker and the
   coverage line reports the deterministic-vs-LLM split.
 
-> **Versioning note:** tag `v0.0.6` was cut by a parallel actor against the
-> project narrative `RussianTranslation/CHANGELOG.md` (judge-A/B + Renou register)
-> without a matching section here, so this semver changelog skips from `[0.0.5]`.
-> Backfill `[0.0.6]` (= the v0.0.6 tag scope) and decide whether this tail becomes
-> `[0.0.7]` before cutting the next tag.
+## [0.0.6] - 2026-06-25
+
+> Backfilled to match tag `v0.0.6` (cut by a parallel actor against the project
+> narrative `RussianTranslation/CHANGELOG.md`); this section records the same scope
+> in the semver changelog.
+
+### Added
+- **Renou *register* axis** — an orthogonal multi-label `renou_register` field
+  (20-code lattice: épigraphique, bhāṣya, jaina, …) parallel to the I–V Renou
+  *state*, per `RussianTranslation/RENOU_SUBSECTIONS_PLAN.md`. Two provenance-tagged
+  detector routes (DCS corpus `build_dcs_renou.py` + `<ls>` citation
+  `renou_register.py`) plus a dedicated `épig` detector; wired end-to-end through
+  `renou_audit.py` (register mode) and `renou_portrait.py`. The state axis is
+  unchanged.
+
+### Changed
+- **Judge-model A/B settled — Sonnet bulk judge + Opus repass/audit.** Across
+  ~650 judged cards a Sonnet QA judge is statistically indistinguishable from Opus
+  (κ = 1.0 on real cards; both 99 % recall / 0 % FP on a 250-item ground-truth
+  defect battery). Policy: Sonnet judges the bulk, Opus re-judges every reject + a
+  ~5 % audited sample. New `src/judge_disagreements.py` / `src/judge_ab_score.py`.
+  The synthetic semantic-defect test was dropped (a word-pair gloss is undecidable
+  out of context). See `RussianTranslation/research/JUDGE_AB.md` / `JUDGE_POLICY.md`.
 
 ## [0.0.5] - 2026-06-25
 
