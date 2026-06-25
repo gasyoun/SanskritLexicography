@@ -9,6 +9,16 @@ then **cut a new version every time the changelog is updated** (promote
 
 ## [Unreleased]
 
+## [0.0.9] - 2026-06-25
+
+### Changed
+- **`article-comparison/*.table.md` — multi-volume Petersburg dictionaries now name
+  the volume, not just the span.** A 7-volume dictionary's true year is the year of
+  the *volume* containing the headword's letter. All four study words are a-stems, so
+  the PWG / pw / PWK labels now read **Bd./Th. I** with the volume-1 year (PWG
+  `Bd. I, 1855`; pw/PWK `Th. I, 1879`) instead of a bare year that read as the whole
+  1855–1875 / 1879–1889 run. Header note explains the volume convention.
+
 ## [0.0.8] - 2026-06-25
 
 ### Changed
