@@ -10,6 +10,16 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## 2026-06-25
 
+### Comparison tables — dictionary edition year on every quote
+- Each row of [`../article-comparison/*.table.md`](https://github.com/gasyoun/SanskritLexicography/tree/master/article-comparison)
+  now carries the source dictionary's **edition year**, not just the four EN dicts
+  that already had one. Years are pulled from the authoritative
+  [CDSL front page](https://www.sanskrit-lexicon.uni-koeln.de/) catalog (mirrored in
+  `csl-guides/src/data/dictionaries.json`): PWG 1855, pw/PWK 1879, AP90 1890,
+  AP 1957, GRA 1873, SHS 1900, VCP 1873, SKD 1886, BUR 1866, CAE 1891, WIL 1832,
+  BEN 1866, MW 1899 / MW72 1872, YAT 1846, BOP 1847, STC 1932, PE 1975, PD 1976.
+  Header provenance note added. (semver `[0.0.8]`)
+
 ### Track B tail — Max-LLM residual per-sense assignment (article-comparison closed)
 - **What.** Closed the per-sense corpus tail for the comparison study. Every attested
   Russian rendering that the deterministic matcher dropped into the
