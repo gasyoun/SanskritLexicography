@@ -10,6 +10,18 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## 2026-06-25
 
+### Comparison tables — full untruncated entries + the builder, committed
+- The side-by-side [`../article-comparison/*.table.md`](https://github.com/gasyoun/SanskritLexicography/tree/master/article-comparison)
+  capped each cell at ~800 chars with a trailing ` …`; long entries (STC, PWG, AP90,
+  VCP, PE…) showed only a fragment. **Every cell now carries the complete entry**
+  (citations `[ ]` stripped, SLP1→IAST, paragraphs joined with ▸); **40** truncated
+  cells expanded. PD stays its full sense skeleton (verbatim PD is 20–234 KB).
+- Committed the previously-uncommitted table builder as
+  [src/_build_tables.py](src/_build_tables.py): regenerates all four tables from the
+  full `*.iast.md` sections + the `*.pd-min.md` skeleton, no length cap, with
+  **nested-citation-safe** bracket stripping (fixes a stray `]` the old run left on
+  nested refs like `[m., [RāmatUp.]]` in akṣara/MW). (semver `[0.0.11]`)
+
 ### agni gloss review — agent draft pass over the 130 hand-authored RU glosses
 - Produced [`../article-comparison/agni.gloss-review.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/article-comparison/agni.gloss-review.md):
   an Opus-4.8 editorial review of agni's 130 hand-authored Russian sense-glosses against
