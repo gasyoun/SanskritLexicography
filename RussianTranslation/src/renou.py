@@ -129,6 +129,21 @@ def states_for_keys(source_keys, dict_name='pwg'):
     }
 
 
+def ls_registers_for_text(text, dict_name='pwg'):
+    """{register codes} from the <ls> citations in a chunk of dict source — the
+    citation route to the register axis (Renou subsections). Resolves each cited
+    siglum via the curated map + renou_register.ls_registers. pwg/mw maps only;
+    the inline dicts (ap/ben/bhs) have no map → empty (a later phase)."""
+    import renou_register
+    smap = load_map(dict_name)
+    regs = set()
+    for k in keys_in_text(text, dict_name):
+        rec = smap.get(k)
+        if rec:
+            regs |= renou_register.ls_registers(rec)
+    return regs
+
+
 def states_for_text(text, dict_name='pwg'):
     """Convenience: extract <ls> keys from source text, then classify."""
     return states_for_keys(keys_in_text(text, dict_name), dict_name)

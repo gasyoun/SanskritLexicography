@@ -59,6 +59,15 @@ def ls_states(code, block):
     return states, (oldest[0] if oldest else '')
 
 
+def ls_registers(code, block):
+    """{register codes} from the entry's <ls> citations (pwg/mw map route only)."""
+    if code in PWG_STYLE:
+        return renou.ls_registers_for_text(block, 'pwg')
+    if code == 'mw':
+        return renou.ls_registers_for_text(block, 'mw')
+    return set()  # ap/ben/bhs: no <ls> map yet (later phase)
+
+
 def merge(ls, dcs):
     enriched = sorted(set(ls) | set(dcs), key=_ORDER.get)
     prov = {}
@@ -66,6 +75,15 @@ def merge(ls, dcs):
         src = (['ls'] if st in ls else []) + (['dcs'] if st in dcs else [])
         prov[st] = src
     return enriched, prov
+
+
+def merge_registers(ls_regs, dcs_regs):
+    """Union ls + dcs registers, ordered, with per-register provenance."""
+    import renou_register
+    allr = renou_register.sort_registers(set(ls_regs) | set(dcs_regs))
+    prov = {r: (['ls'] if r in ls_regs else []) + (['dcs'] if r in dcs_regs else [])
+            for r in allr}
+    return allr, prov
 
 
 def run(code, out, index_path, report_only, min_support=renou.DCS_MIN_SUPPORT):
@@ -94,10 +112,10 @@ def run(code, out, index_path, report_only, min_support=renou.DCS_MIN_SUPPORT):
             # states — homograph/date-fallback noise; see renou.filter_dcs_states)
             dcs_states = renou.filter_dcs_states(dcs, min_support) if dcs else []
             enriched, prov = merge(ls, dcs_states)
-            # register axis (Renou subsections), orthogonal to state. Corpus route
-            # only for now (the <ls>/epig route is a later phase); same min-support.
-            registers = renou.filter_dcs_registers(dcs, min_support) if dcs else []
-            reg_prov = {r: ['dcs'] for r in registers}
+            # register axis (Renou subsections), orthogonal to state. Two routes:
+            # DCS corpus (min-support filtered) + <ls> citation siglum → register.
+            dcs_regs = renou.filter_dcs_registers(dcs, min_support) if dcs else []
+            registers, reg_prov = merge_registers(ls_registers(code, block), dcs_regs)
 
             st['entries'] += 1
             if ls:

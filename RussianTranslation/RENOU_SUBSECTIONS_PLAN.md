@@ -120,11 +120,17 @@ signal is the weakest, exactly as with states.
   shared with states) + the taggers emit `renou_register` + `renou_register_provenance`
   (`["dcs"]`); regenerated all 8. Coverage ~38–41 % of entries; survives the bhs/wl
   enrich chain. (Provenance gains `ls`/`bhs` sources in Phase 2–3.)
-- **Phase 2 — citation side.** Add a `register` column to the `<ls>` maps; build
-  siglum→register (the only good route for **`epig`**); add `lssiglum`/`lsname` to
-  register provenance.
-- **Phase 3 — dedicated `epig` (+ `jaina`/`hors_inde`).** Inscription/Jaina sigla & a
-  curated set — the registers the corpus has ~zero of.
+- **✅ Phase 2 — citation side (done, 2026-06-25).** `renou_register.py` maps each
+  `ls_source_map*.json` record → register(s) (PWG structured `genre` + name rules; MW
+  by name); `renou.ls_registers_for_text` + the taggers union it with the corpus route,
+  provenance `["ls"]`/`["dcs"]`/both. Adds **jaina** (288 MW entries, corpus had 0) +
+  **bhāṣya** ls-corroboration (4,109 MW; Sāy/Kāś/Pat) + an `ls` source on ~119 k (PWG) /
+  ~155 k (MW) register-assignments. `REGISTERS` now canonical in `renou_register.py`
+  (shared with the corpus builder). Minor known FP: Bālarāmāyaṇa → epic+natya.
+- **Phase 3 — dedicated `epig` (+ `hors_inde`).** Still 0: neither CANON has inscription
+  sigla (they're top-citation literary sources). Needs an inscription-siglum curation
+  pass in `build_ls_map*.py` (e.g. add the dicts' `Inscr.`-class sigla). Lower value —
+  inscriptional citations are sparse in these dictionaries.
 - **Phase 5 — validate + display.** `renou_audit.py` register mode; `renou_portrait`
   register sub-label (+ reuse the low-info flag for all-register breadth). Human
   spot-check focused on **`bhasya`** precision (tighten the `dīpikā`-class name FPs,
