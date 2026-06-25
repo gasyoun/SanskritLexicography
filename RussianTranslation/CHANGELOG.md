@@ -10,6 +10,32 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## 2026-06-25
 
+### Track B tail — Max-LLM residual per-sense assignment (article-comparison closed)
+- **What.** Closed the per-sense corpus tail for the comparison study. Every attested
+  Russian rendering that the deterministic matcher dropped into the
+  `### Не привязано к значению` bucket of each
+  [`../article-comparison/*.persense-ru.md`](https://github.com/gasyoun/SanskritLexicography/tree/main/article-comparison)
+  was adjudicated by an **Opus-4.8** pass against the full bilingual PD sense
+  skeleton and routed to its specific sense — or kept as honest *other*.
+- **Coverage** (per-sense, of aligned occurrences): **agni 100 %** (det 2199 + LLM 16),
+  **akṣara 99 %** (237 + 28), **anya 97 %** (1104 + 46), **ananta 97 %** (141 + 13).
+  The deterministic pass alone was 97–99 %; the LLM pass closes the synonym /
+  paraphrase / pre-1918-orthography tail (e.g. `Агни-Джатаведас`→*as jātavedas*,
+  `жертвах`→*sacrifice*, `не гибнет`→*imperishable*, `иныхъ`→*another/other*).
+- **How — reproducible, not a one-off LLM call.** Decisions are frozen as an
+  `LLM_ASSIGN` override map in [src/_build_persense_ru.py](src/_build_persense_ru.py)
+  (surface form → 0-based sense ordinal), mirroring the existing `SYN`/`ROUTE`
+  mechanism. Re-running the builder reproduces the assignment deterministically.
+  LLM-assigned renderings carry a **°** marker in the table; the coverage line now
+  reports the deterministic-vs-LLM split; the residual heading documents that the
+  pass ran and what genuinely remains (function words, context fragments,
+  off-headword names with no PD sense to bind).
+- **Flagship pair (agni + akṣara) priority** per the 2026-06-25 handoff; anya/ananta
+  done as supporting examples (confident routes only — the rest left honestly in
+  *other*, since anya is a pronoun with a long function-word tail).
+- **Still open (heavier editorial pass, not this commit):** publication-quality review
+  of the hand-authored RU sense-glosses for the flagship pair (`agni`'s 130 senses).
+
 ### Judge-model A/B settled — Sonnet for the bulk judge, Opus for repass + audit
 - **Question:** can a cheaper **Sonnet** QA judge replace the **Opus** judge for the scale-up?
   Tested across 5 runs / ~650 judged cards ([research/JUDGE_AB.md](research/JUDGE_AB.md),
