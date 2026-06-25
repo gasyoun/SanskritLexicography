@@ -113,6 +113,18 @@ error to delete: `renou_portrait.portrait()` now sets **`renou_low_info: True`**
 all-era span (tunable via `LOW_INFO_MIN_STATES`) so a UI can de-emphasise the badge
 rather than show a meaningless five-era label.
 
+## Planned — register axis (subsections)
+
+The five states are Renou's five **chapters**. His **subsections** are distinct
+registers a flat I–V tag cannot express — notably **`épigraphique`** (inside Ch. II,
+p. 94) and **`bhāṣya`** = commentary language (the lead of Ch. IV, p. 133, with its
+own grammar), which fits none of the five. The verified book structure is in
+[`../../VisualDCS/docs/Renou_1956_structure.md`](../../VisualDCS/docs/Renou_1956_structure.md);
+the design for an **orthogonal, multi-label `renou_register` axis** (full lattice of
+~18 registers, combined DCS-genre / `<ls>` / dedicated detectors) is in
+[`RENOU_SUBSECTIONS_PLAN.md`](RENOU_SUBSECTIONS_PLAN.md). Not yet built — additive to
+the state axis, which is unchanged.
+
 ## Reproduce
 
 ```sh
