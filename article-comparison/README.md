@@ -4,6 +4,8 @@ Single-headword comparison of one **non-samāsa** and one **a-samāsa (nañ-priv
 
 Frequency ranking from **DCS 2026** (`dcs_full.sqlite`, 5.69 M tokens); article sizes from `csl-orig/v02`.
 
+> **Status (2026-06-25):** complete for four finalists — **agni, anya** (non-samāsa) and **akṣara, ananta** (a-samāsa). All six views generated and audited; the per-sense corpus Russian maps 88–99 % of attested occurrences. The verse pairs were regenerated after the SamudraManthanam `#sa` Cyrillic leak (БхГ markers + 5 homoglyph words) was purged at source — see [SamudraManthanam #16](https://github.com/gasyoun/SamudraManthanam/issues/16).
+
 ## Finalists
 
 | Headword | Class | Gloss | Dicts | Senses (PD) |

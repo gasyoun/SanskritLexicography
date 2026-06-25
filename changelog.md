@@ -9,6 +9,20 @@ ready for a dated entry.
 ## [Unreleased]
 
 ### Added
+- **`article-comparison/` — one headword across every CDSL dictionary.** A study
+  comparing four "a-" headwords — `agni`, `anya` (non-samāsa) and `akṣara`,
+  `ananta` (a-samāsa / nañ-privative) — each chosen as most-frequent in DCS 2026
+  **and** present in the unfinished Deccan **PD** dictionary (PD's "a" stops at
+  ~`apaca-`, the real constraint). Six views per word: `.table.md` (side-by-side
+  all dicts, SLP1→IAST), `.pd-min.md` (PD `{@..@}` sense skeleton),
+  `.pd-min.ru.md` (bilingual EN/RU), `.corpus-ru.md` (attested Russian from the
+  DeepSeek word-alignment lexicon + published SamudraManthanam verse pairs),
+  `.persense-ru.md` (each rendering hung under its PD sense, 88–99 % coverage),
+  `.verbatim.md`/`.iast.md` (full). Builders in `RussianTranslation/src/`
+  (`_build_corpus_ru.py`, `_build_skeletons_ru.py`, `_build_agni_ru.py`,
+  `_build_persense_ru.py`). Audited; 2 per-sense assignment bugs fixed. Headline:
+  the per-sense attested-RU split (`agni`→Агни/огонь, `akṣara`→слог/Непреходящее,
+  `ananta`→бесконечный/Ананта).
 - `RussianTranslation/src/run_batch.py review_csv` exports the existing
   `_review_queue.jsonl` human worklist to `_review_queue.csv` for spreadsheet
   review. The CSV keeps the severity-sorted machine evidence and adds blank
