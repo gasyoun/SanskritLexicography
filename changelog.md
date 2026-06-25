@@ -9,6 +9,24 @@ then **cut a new version every time the changelog is updated** (promote
 
 ## [Unreleased]
 
+### Changed
+- **`article-comparison/` — Max-LLM residual per-sense pass (Track B tail).** Each
+  attested Russian rendering the deterministic matcher left in the
+  `### Не привязано к значению` bucket of every `*.persense-ru.md` was adjudicated
+  by an Opus-4.8 pass against the full bilingual PD sense skeleton and routed to a
+  specific sense — or kept as honest "other" (function-word / context / off-headword
+  name). Per-sense coverage rises to **97–100 %** (`agni` 100 %, `akṣara` 99 %,
+  `anya`/`ananta` 97 %). Implemented as a reproducible `LLM_ASSIGN` override map in
+  `RussianTranslation/src/_build_persense_ru.py` (surface form → sense ordinal,
+  mirroring `SYN`/`ROUTE`); LLM-assigned renderings carry a **°** marker and the
+  coverage line reports the deterministic-vs-LLM split.
+
+> **Versioning note:** tag `v0.0.6` was cut by a parallel actor against the
+> project narrative `RussianTranslation/CHANGELOG.md` (judge-A/B + Renou register)
+> without a matching section here, so this semver changelog skips from `[0.0.5]`.
+> Backfill `[0.0.6]` (= the v0.0.6 tag scope) and decide whether this tail becomes
+> `[0.0.7]` before cutting the next tag.
+
 ## [0.0.5] - 2026-06-25
 
 ### Added
