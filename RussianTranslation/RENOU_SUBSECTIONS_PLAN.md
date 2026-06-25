@@ -109,20 +109,26 @@ signal is the weakest, exactly as with states.
 
 ## Phasing
 
-- **Phase 0 — tables.** Finalise the register code list + `GENRE_REGISTER`,
-  `NAME_REGISTER`, and the `register` column spec for the `<ls>` maps. (This doc is the
-  draft; one review pass to freeze codes.)
-- **Phase 1 — corpus side.** Extend `build_dcs_renou.py` to emit `register_support`
-  per lemma (same scan). Verify `kavya`/`purana`/`epic`/`bauddha` light up sanely.
-- **Phase 2 — citation side.** Add `register` to the `<ls>` maps; build siglum→register
-  (the only good route for `epig`).
-- **Phase 3 — dedicated `bhasya` + `epig`.** The two registers that matter and that the
-  genre map misses: commentary by name-stem + commentary sigla; epigraphic by sigla.
-- **Phase 4 — wire + emit.** Tagger writes `renou_register` + provenance; pipeline regen;
-  portrait sub-label; coverage table in `RENOU.md`.
-- **Phase 5 — validate.** `renou_audit.py` register mode. Focus the human spot-check on
-  **`bhasya`** (precision: is a flagged word really commentary-attested?) and **`epig`**
-  (recall: how much inscriptional usage do we even see?).
+- **✅ Phase 0 — tables (done).** Register code list `REGISTERS` (20 codes) +
+  `GENRE_REGISTER` + `NAME_REGISTER` + `registers_for_text` frozen in `build_dcs_renou.py`.
+- **✅ Phase 1 — corpus side (done, 2026-06-25).** `build_dcs_renou.py` emits per-lemma
+  `register` + lossless `register_support` `{n,conf}` in the same scan. Sane coverage:
+  `bhasya` 13,102 lemmas (28 commentary texts: Nyāyabhāṣya, Kāśikāvṛtti, …), plus
+  `epic`/`purana`/`sutra`/`katha`/`bauddha`/`kavya`/…; `atharva`/`epig`/`jaina`/
+  `hors_inde` = 0 from corpus (await the `<ls>` route).
+- **✅ Phase 4-dcs — wire + emit (done).** `renou.filter_dcs_registers` (min-support,
+  shared with states) + the taggers emit `renou_register` + `renou_register_provenance`
+  (`["dcs"]`); regenerated all 8. Coverage ~38–41 % of entries; survives the bhs/wl
+  enrich chain. (Provenance gains `ls`/`bhs` sources in Phase 2–3.)
+- **Phase 2 — citation side.** Add a `register` column to the `<ls>` maps; build
+  siglum→register (the only good route for **`epig`**); add `lssiglum`/`lsname` to
+  register provenance.
+- **Phase 3 — dedicated `epig` (+ `jaina`/`hors_inde`).** Inscription/Jaina sigla & a
+  curated set — the registers the corpus has ~zero of.
+- **Phase 5 — validate + display.** `renou_audit.py` register mode; `renou_portrait`
+  register sub-label (+ reuse the low-info flag for all-register breadth). Human
+  spot-check focused on **`bhasya`** precision (tighten the `dīpikā`-class name FPs,
+  e.g. Haṭhayogapradīpikā) and **`epig`** recall.
 
 ## Risks / open issues
 

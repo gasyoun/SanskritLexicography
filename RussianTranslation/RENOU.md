@@ -113,17 +113,27 @@ error to delete: `renou_portrait.portrait()` now sets **`renou_low_info: True`**
 all-era span (tunable via `LOW_INFO_MIN_STATES`) so a UI can de-emphasise the badge
 rather than show a meaningless five-era label.
 
-## Planned — register axis (subsections)
+## Register axis (subsections) — corpus route live
 
 The five states are Renou's five **chapters**. His **subsections** are distinct
 registers a flat I–V tag cannot express — notably **`épigraphique`** (inside Ch. II,
 p. 94) and **`bhāṣya`** = commentary language (the lead of Ch. IV, p. 133, with its
 own grammar), which fits none of the five. The verified book structure is in
 [`../../VisualDCS/docs/Renou_1956_structure.md`](../../VisualDCS/docs/Renou_1956_structure.md);
-the design for an **orthogonal, multi-label `renou_register` axis** (full lattice of
-~18 registers, combined DCS-genre / `<ls>` / dedicated detectors) is in
-[`RENOU_SUBSECTIONS_PLAN.md`](RENOU_SUBSECTIONS_PLAN.md). Not yet built — additive to
-the state axis, which is unchanged.
+the full design (orthogonal, multi-label, ~20-register lattice, combined detectors) is
+in [`RENOU_SUBSECTIONS_PLAN.md`](RENOU_SUBSECTIONS_PLAN.md).
+
+**Built — the DCS-corpus route (additive; the state axis is unchanged).** Every entry
+now carries an orthogonal **`renou_register`** + `renou_register_provenance` from the
+corpus: `build_dcs_renou.py` emits per-lemma `register` + lossless `register_support`
+(genre→register + name-stem detectors, esp. `bhāṣya` by `*bhāṣya/ṭīkā/vṛtti/…`), the
+same min-support policy applies (`renou.filter_dcs_registers`), and the taggers emit
+the field (provenance `["dcs"]`). Coverage: ~38–41 % of entries carry ≥1 register;
+`bhasya` reaches 14 k (PWG) / 45 k (MW) headwords.
+
+**Pending:** the `<ls>` siglum→register route (the only source for **`épig`** and
+`jaina`, which the corpus has ~zero of) and the register audit/portrait — Phases 2–5
+in the plan. Registers do **not** affect the state fields.
 
 ## Reproduce
 

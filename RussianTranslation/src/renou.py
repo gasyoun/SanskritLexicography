@@ -50,20 +50,28 @@ DCS_MIN_SUPPORT = 2
 _TRUSTED_CONF = ('high', 'medium')
 
 
-def filter_dcs_states(index_entry, min_support=DCS_MIN_SUPPORT):
-    """Apply the min-support policy to one dcs_lemma_renou.json entry.
-
-    Keep a state iff it is attested in ≥ `min_support` corpus texts, OR at least one
-    of those texts is confidently typed (authoritative DCS genre / curated name hint).
-    Back-compatible: an old index entry without `state_support` is returned unchanged.
-    """
-    states = list(index_entry.get('renou') or [])
-    support = index_entry.get('state_support')
+def _filter_by_support(items, support, min_support):
+    """Keep an item iff attested in ≥ min_support texts OR backed by ≥1 confidently
+    typed text. Back-compatible: no support map → items returned unchanged."""
     if not support:
-        return states
-    return [st for st in states
-            if support.get(st, {}).get('n', 0) >= min_support
-            or support.get(st, {}).get('conf') in _TRUSTED_CONF]
+        return list(items)
+    return [it for it in items
+            if support.get(it, {}).get('n', 0) >= min_support
+            or support.get(it, {}).get('conf') in _TRUSTED_CONF]
+
+
+def filter_dcs_states(index_entry, min_support=DCS_MIN_SUPPORT):
+    """Apply the min-support policy to a dcs_lemma_renou.json entry's *states*.
+    Drops thin low-confidence tails (homograph / date-fallback noise)."""
+    return _filter_by_support(index_entry.get('renou') or [],
+                              index_entry.get('state_support'), min_support)
+
+
+def filter_dcs_registers(index_entry, min_support=DCS_MIN_SUPPORT):
+    """Same min-support policy for the orthogonal *register* axis (Renou subsections).
+    A register backed only by a single low-confidence text is dropped."""
+    return _filter_by_support(index_entry.get('register') or [],
+                              index_entry.get('register_support'), min_support)
 
 
 def dcs_oldest(index_entry, kept_states):
