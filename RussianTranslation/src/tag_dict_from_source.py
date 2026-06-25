@@ -60,12 +60,16 @@ def ls_states(code, block):
 
 
 def ls_registers(code, block):
-    """{register codes} from the entry's <ls> citations (pwg/mw map route only)."""
+    """{register codes} from the entry's <ls> citations: the siglum-map route (pwg/mw)
+    or inline-sigla route (ap/ben/bhs), plus the dedicated épig inscription detector."""
+    import renou_register
     if code in PWG_STYLE:
-        return renou.ls_registers_for_text(block, 'pwg')
-    if code == 'mw':
-        return renou.ls_registers_for_text(block, 'mw')
-    return set()  # ap/ben/bhs: no <ls> map yet (later phase)
+        base = renou.ls_registers_for_text(block, 'pwg')
+    elif code == 'mw':
+        base = renou.ls_registers_for_text(block, 'mw')
+    else:
+        base = renou_sigla.registers_for_block(code, block)
+    return set(base) | renou_register.dedicated_registers(block)
 
 
 def merge(ls, dcs):
