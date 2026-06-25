@@ -57,13 +57,27 @@ kept?).
   connection-closed/403 errors; the workflow's resume-with-cache recovered them. Batch judging
   (≈10 cards/agent) + resume is the resilient pattern; expect to resume once.
 
-## Open gate before full commitment — semantic discrimination
+## Semantic discrimination — settled by mining real disagreements, NOT synthetic defects
 
-Runs 1–4 prove Sonnet's **vigilance** (mechanical/structural defects). They do **not** test deep
-**semantic** judgment: a **plausible-but-wrong gloss** — a fluent, correct-looking Russian
-rendering that is the *wrong meaning* of the German. That is the likeliest place a weaker judge
-could slip, and the one class I could not auto-generate with reliable ground truth. **Full
-commitment to Sonnet-as-bulk-judge is contingent on Sonnet matching Opus on a semantic-defect
-battery with verified ground truth** (design pending — see the open questions in this turn).
-Until then: adopt the rollout above in *shadow* (Sonnet judges, Opus re-judges everything, compare)
-on the first real batch, rather than trusting Sonnet unsupervised.
+Runs 1–4 prove Sonnet's **vigilance** (mechanical/structural defects). The remaining question is
+deep **semantic** judgment: a **plausible-but-wrong gloss** — fluent Russian that is the *wrong
+meaning* of the German. A **synthetic** battery for this was abandoned (2026-06-25) on the
+editor's objection: a one-word gloss pair (`Theil` → часть vs доля) is **undecidable in
+isolation** — deciding it needs the whole entry *and* the Sanskrit sense in that passage; the
+cases that *are* decidable from inspection are the rude ones Sonnet already catches. So a planted
+"subtle defect" has a contestable ground truth and tests nothing real.
+
+**The gate instead: mine real Opus-vs-Sonnet disagreements during production.** Both judges score
+every card; the human adjudicates **only the cards where they disagree**, each shown with the
+complete German + Russian entry (real context, the editor is ground truth). Tooled by
+[`../src/judge_disagreements.py`](../src/judge_disagreements.py) (emits a full-context
+adjudication queue). Adopt Sonnet-bulk fully if the disagreement rate stays low **and** the editor
+sides with Sonnet about as often as with Opus on the few conflicts.
+
+**Already near-conclusive on real data:** across the ~400 cards judged so far,
+`judge_disagreements.py` finds **0 disagreements in run 3 (191 real a-section cards)** and **2 in
+run 4 (209 cards)** — a ~0.5 % conflict rate, i.e. the adjudication queue is essentially empty.
+The two models almost never disagree, so there is barely anything left to test. The gate is
+therefore mostly a **standing production check**, not a blocker: run the rollout above, let
+`judge_disagreements.py` surface the rare conflicts each batch for the editor, and revisit only if
+the conflict rate climbs.
