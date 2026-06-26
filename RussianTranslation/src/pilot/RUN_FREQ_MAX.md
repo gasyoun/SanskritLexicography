@@ -30,18 +30,28 @@ Observed state:
 The preflight writes only gitignored pilot artifacts except when code/docs are
 changed intentionally.
 
-## One-time prompt/gate nits before the first Max window
+## Prompt/gate nits — DONE, encoded in the harness (verify, don't re-apply)
 
-Apply these in the Max harness prompt / review checklist before translating the
-first production window:
+These four were folded into the inlined prompt of
+[`run_pilot_wf.js`](run_pilot_wf.js) and the audit loop; this is now a
+**verification checklist**, not a to-do:
 
-- keep German abbreviations such as `Bed.` and `Schol.` verbatim; do not expand
-  them into Russian prose;
-- render **every** PWG Nachträge patch, even when it looks like a small addendum;
-- treat `<is>...</is>` source italics as source/siglum text, not as `{%...%}`
-  German gloss text;
-- keep the `nws_split.py` check in the audit loop so idam-class owner-row swaps
-  are rejected and re-queued.
+- ✅ keep German abbreviations such as `Bed.`/`Schol.` verbatim, never expand —
+  `CONV` line + **HARD RULE 3**;
+- ✅ render **every** PWG Nachträge patch — **HARD RULE 4** ("ALL RECORDS,
+  INCLUDING NACHTRÄGE … dropping any single patch fails coverage"); inputs are
+  assembled main+Nachträge by `_pilot_gen_merged.py`;
+- ✅ treat `<is>...</is>` source italics as siglum text, never `{%...%}` gloss —
+  `CONV` line + **HARD RULE 3**;
+- ✅ `nws_split.py` owner-map gate — **HARD RULE 5** (authoritative pre-parsed
+  owner map) + the deterministic auditor wired into `run_real_test.py audit`
+  (quarantines misattribution → `*.merged.REJECTED.md`).
+
+Also encoded (2026-06-26 literature-harvest port): Sanskrit-microstructure
+rendering guidance (samāsa right-headedness, the *yad…tad* correlative map,
+śāstric formulas, synonym-string cardinality, comma/semicolon sense-grouping,
+manner/position forcing) as soft-judged guidance (judge check 7). Source tables:
+[`../../glossaries/de_ru_translation_aids.md`](../../glossaries/de_ru_translation_aids.md).
 
 ## Window loop
 
@@ -58,7 +68,9 @@ python freq_route.py 20
 python _pilot_gen_merged.py --manifest freq --root-split --limit 50
 ```
 
-Then set the Max workflow harness to the frequency manifest:
+Then set the Max workflow harness to the frequency manifest. **The committed
+file ships as `SECTION = 'a'`** — you MUST edit these three lines before the run
+(no guard catches a SECTION/manifest mismatch):
 
 ```js
 const SECTION = 'freq'
@@ -70,14 +82,18 @@ Run `run_pilot_wf.js` in the interactive Max workflow harness and save the JSON
 result as `wf_output.json`. The in-chat Workflow tool is not sufficient because
 the harness reads local files with `node:fs`.
 
-Audit the window:
+Audit the window — run **both** gates:
 
 ```powershell
+# 1) NWS owner-map gate (quarantines misattribution → *.merged.REJECTED.md)
 python src\pilot\run_real_test.py audit wf_output.json
+# 2) Fidelity gate (sigla ≥90% kept, Sanskrit ≥85% kept, Russian present where German gloss was)
+python src\audit_translation.py
 ```
 
 Any NWS owner mismatch is quarantined as `*.merged.REJECTED.md`; the next prep
-cycle should re-queue rejects instead of accepting them.
+cycle should re-queue rejects instead of accepting them. A fidelity-gate failure
+(lost sigla/Sanskrit or an empty card) is likewise a re-queue, not an accept.
 
 ## Instrumentation
 

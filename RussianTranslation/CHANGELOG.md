@@ -10,6 +10,27 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## 2026-06-26
 
+### Pre-launch audit + harvest ported into the production Max harness
+- **Launch-readiness audit (Track A).** Verdict: **Sonnet translator is GREEN to start the
+  first instrumented window.** All 4 "pre-run prompt nits" are confirmed already encoded in
+  [src/pilot/run_pilot_wf.js](src/pilot/run_pilot_wf.js) (HARD RULES 3/4/5 + the NWS owner-map);
+  all 8 harness/gate scripts exist and are wired (`nws_split.py` quarantine + `audit_translation.py`
+  fidelity gate). The only true finding: the harness **inlines its own prompt** and does not read
+  `pwg_ru_prompts/*.txt`, so the literature-harvest refinements had not reached the run.
+- **Harvest ported into the live harness.** Added Sanskrit-microstructure rendering guidance to
+  `run_pilot_wf.js` (samāsa right-headedness + `-ādi`=hypernym, the *yad…tad* correlative map,
+  śāstric formulas, synonym-string cardinality, comma/semicolon sense-grouping, manner/position
+  forcing) + judge check 7. Apresjan discrimination, the kośa two-source principle, and
+  equivalence-type were already live. `node --check` clean.
+- **Runbook refreshed.** [src/pilot/RUN_FREQ_MAX.md](src/pilot/RUN_FREQ_MAX.md): the stale "one-time
+  nits" section is now a verification checklist (all done-in-harness); the window loop gained the
+  `SECTION='a'→'freq'` warning and the `audit_translation.py` fidelity-gate step.
+- **Findings status map.** [MANUALS_FIVE_DEEP_DIVE.md](MANUALS_FIVE_DEEP_DIVE.md) closing section
+  rewritten from a "queued" list to a per-finding **pipeline-status table** (live / ported /
+  deferred). Riemer's sense-distinctness battery and Klosa's display layer are marked deliberately
+  out of scope for the bulk translation step (PWG sense division is authoritative; display is a
+  post-translation frontend concern). pwg_ru.md gains a "теоретическая основа" pointer block.
+
 ### Literature shelf mined for pwg_ru → folded into prompts, glossary, and docs
 - New [LITERATURE_FOR_PWG_RU.md](LITERATURE_FOR_PWG_RU.md): three-pass full-text harvest of
   the whole `literature/md/` reference shelf, distilled into drop-ins **by insertion point** —

@@ -500,27 +500,38 @@ cannot supply.
 
 ---
 
-## Before the real run — the concrete asks these five generate
+## Where each finding now lives in the pipeline (status as of the bulk-run preflight)
 
-- **Glossary:** load Apresjan's §1d register tagset + connotation field + synonym-dominant
-  ranking; add Hartmann's explanatory-equivalent marker for culture-bound terms; add
-  Riemer's `antonym-type` and `autohyponym:technical` tags. Keep equivalent wording
-  controlled (Klosa's reverse-index requirement).
-- **Translator prompt:** force manner/position resolution (Apresjan); preserve
-  comma/semicolon semantics and prefer equal-breadth equivalents (Hartmann, Riemer §3);
-  strip kośa filler particles and resolve dvandvas before glossing (Gonda–Vogel).
-- **QA-judge prompt:** the ≥2-of-3 sense-distinctness battery (Riemer); polyequivalence
-  under-differentiation, dropped-label, and punctuation-flattening defect classes
-  (Hartmann); circular/cryptographic-gloss and register-mismatch defects (Apresjan).
-- **Corpus gate:** confidence tiers keyed to source type — kośa-only < text-quoted;
-  *ekaśeṣa* dual ⇒ sense-split signal; never read koša order as frequency (Gonda–Vogel).
-- **Display / data model:** addressable `lemma → sense → equivalent → attestation` fields;
-  typed cross-refs with explicit ordering; transliteration-tolerant + faceted + full-text
-  search; dangling-link/orphan CI graph (Klosa).
+The run-relevant findings are **ported into the production Max harness**
+([`src/pilot/run_pilot_wf.js`](src/pilot/run_pilot_wf.js), 2026-06-26) — that file inlines
+its own translator + judge prompt, so this is where a finding has to be to affect the run
+(the `pwg_ru_prompts/*.txt` files and `glossaries/de_ru_translation_aids.md` are the
+human-facing source-of-record; they do **not** drive the Max harness). Status:
 
-All of these are already queued in [`.ai_state.md`](.ai_state.md) Track-A ("fold the
-literature harvest into prompts/glossary"); this document is the theoretical justification
-behind each line of that queue.
+| Finding | Insertion point | Status in the live harness |
+|---|---|---|
+| Apresjan — near-synonym discrimination (differentia per sense) | translator | ✅ live (`TR`, "DISCRIMINATE … à la Apresjan") |
+| Apresjan — manner/position forcing | translator | ✅ ported (rendering guidance) |
+| Apresjan — register faithfulness (scholarly-philological) | translator + judge | ✅ live (`CONV` + judge check 2); §1d colloquial tagset is N/A for a uniform scholarly register |
+| Apresjan — circular/cryptographic-gloss ban | judge | ⚠️ **not yet an explicit judge check** — candidate add |
+| Hartmann — equivalent type (1–2 word vs толкование) | translator | ✅ live (`equivalence_type`) |
+| Hartmann — comma/semicolon sense-grouping | translator | ✅ ported (rendering guidance) |
+| Hartmann — polyequivalence / coverage (every sense a distinct RU) | translator + judge | ✅ live (HARD RULE 2 + judge check 6) |
+| Gonda–Vogel — kośa two-source / `source_type=lexicographic` | translator | ✅ live (`CONV` two-source principle) |
+| Gonda–Vogel — *ekaśeṣa* dual = sense-count; kośa order ≠ frequency | corpus gate / input gen | ✅ handled upstream (portrait/strata), not a prompt rule |
+| Baalbaki/Apresjan — synonym-string cardinality | translator | ✅ ported (rendering guidance) |
+| Apte/Inglese-Geupel — samāsa right-headedness, `-ādi` = hypernym | translator | ✅ ported (rendering guidance + judge check 7) |
+| Tubb — śāstric formula equivalents | translator | ✅ ported (rendering guidance) |
+| Mitrenina/Ruppel — *yad…tad* correlative map | translator | ✅ ported (rendering guidance) |
+| Riemer — ≥2-of-3 sense-distinctness battery; autohyponymy; antonym-type | (judge) | ⏸️ **deliberately out of scope for the bulk run** — PWG's printed sense division is authoritative ("Renou = badge, never re-sort/merge/split", HARD RULE 1). The battery informs the `article-comparison` study + human review, not bulk re-individuation. |
+| Klosa — display/data-model, search, cross-ref graph | web frontend | ⏸️ post-translation (CDSL frontend); not a translation-run concern |
+
+**Net:** every finding that can change a *rendering* is live in the harness as of the
+preflight; two are open candidates (Apresjan circularity judge check), and two
+(Riemer's battery, Klosa's display layer) are intentionally not part of the bulk
+translation step. This document is the theoretical justification behind each row; the
+source tables are [`glossaries/de_ru_translation_aids.md`](glossaries/de_ru_translation_aids.md)
+and [`LITERATURE_FOR_PWG_RU.md`](LITERATURE_FOR_PWG_RU.md).
 
 ---
 

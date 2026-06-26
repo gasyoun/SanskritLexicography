@@ -9,6 +9,22 @@ then **cut a new version every time the changelog is updated** (promote
 
 ## [Unreleased]
 
+## [0.0.29] - 2026-06-26
+
+### Changed — pwg_ru bulk-run preflight: harvest ported into the production harness
+- **Launch-readiness audit** of the PWG→Russian bulk run (translator = Sonnet, judge =
+  Opus 4.8). Verdict: GREEN to start the first instrumented window. Confirmed all four
+  "pre-run prompt nits" already encoded in the Max harness and all gate scripts wired.
+- **Literature-harvest refinements ported into the live harness**
+  (`RussianTranslation/src/pilot/run_pilot_wf.js`, which inlines its own prompt and does not
+  read `pwg_ru_prompts/*.txt`): samāsa right-headedness, the *yad…tad* correlative map,
+  śāstric formula equivalents, synonym-string cardinality, comma/semicolon sense-grouping,
+  manner/position forcing, plus a soft judge check. `node --check` clean.
+- **Runbook + docs updated:** `RUN_FREQ_MAX.md` window loop (SECTION warning + fidelity-gate
+  step); [`MANUALS_FIVE_DEEP_DIVE.md`](RussianTranslation/MANUALS_FIVE_DEEP_DIVE.md) closing
+  section rewritten as a per-finding pipeline-status table (live / ported / deferred);
+  `pwg_ru.md` gains a theoretical-basis pointer to the literature docs.
+
 ## [0.0.28] - 2026-06-26
 
 ### Added — literature shelf mined for the Sanskrit→Russian dictionary
