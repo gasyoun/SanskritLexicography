@@ -10,6 +10,18 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## 2026-06-26
 
+### Renou register glossaries — first tangible artifacts from the register axis
+- New [src/renou_glossary.py](src/renou_glossary.py): filter the Renou-tagged dictionaries
+  by register / state / provenance → a deduplicated headword glossary (aggregated by IAST
+  across the 8 dicts; each row = states · register provenance ls/dcs · dicts · senses).
+  Supports `--state`, `--prov`, `--min-dicts`, `--state-only`, md/tsv.
+- Shipped three glossaries in [glossaries/](glossaries/README.md): **épigraphique** (709
+  inscriptional words — `akṣayanīvī`, `abhayagirivihāra`, dynastic names), **bhāṣya**
+  (14,498 commentary words; 10,320 in ≥2 dicts), **jaina** (286). Headline finding:
+  **484 of 709 épig words (68 %) are corpus-absent** — attested only in inscriptions, so a
+  corpus-only method never sees them. The clearest proof the register axis adds signal the
+  state axis can't.
+
 ### Comparison tables — rows sorted chronologically by edition year
 - [`../article-comparison/*.table.md`](https://github.com/gasyoun/SanskritLexicography/tree/master/article-comparison)
   rows now run **oldest → newest** by edition year (WIL 1832 → YAT 1846 → BOP 1847 →

@@ -166,9 +166,11 @@ flat headword list can't. Join any `{code}.renou.jsonl` to the Russian cards by 
   claim); the `renou_low_info` flag hides era-neutral function words (`ca`, `idam`).
 
 **Register axis — *what kind* of Sanskrit?**
-- **Build a register glossary** — filter `renou_register` to one code for a **kāvya**
-  poetic lexicon, a **bauddha** Buddhist glossary, a **jaina** Jaina glossary, or the
-  **bhāṣya** scholastic/meta-language vocabulary.
+- **Build a register glossary** — `renou_glossary.py REGISTER` filters `renou_register`
+  to one code for a **kāvya** poetic lexicon, a **bauddha** Buddhist glossary, a **jaina**
+  Jaina glossary, or the **bhāṣya** scholastic/meta-language vocabulary. Shipped examples
+  in [`glossaries/`](glossaries/README.md): épigraphique (709 words, **68 % corpus-absent**),
+  bhāṣya (14,498), jaina (286).
 - **Epigraphic vocabulary** — `epig` isolates the donative/administrative/regional terms
   inscriptions use (`akṣayanīvī` "perpetual endowment", regional names) — a ready feed for
   epigraphists.
