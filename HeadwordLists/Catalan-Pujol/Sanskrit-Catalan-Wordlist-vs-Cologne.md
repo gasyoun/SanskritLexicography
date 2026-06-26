@@ -88,6 +88,31 @@ Matching the 59,377 normalised keys against `<k1>` of **all 43** CDSL dictionari
 
 **Bottom line:** of the ~4,680 uncovered, the large majority (groups 1–3, ~4,550) are *real* — unselected compounds, rare derivatives, and denominative roots that reflect Pujol's editorial choices, especially a strong Vedānta-philosophical layer. Only ~126 are genuine file noise.
 
+## 5. Corpus reality check — vs the DCS
+
+§2–4 ask *"is each lemma in a CDSL **dictionary**?"*. The orthogonal question is *"is it actually **attested in texts**?"* — answered against the **Digital Corpus of Sanskrit** lemma index ([`VisualDCS/dcs_lemma_summary.json`](https://github.com/gasyoun/VisualDCS), DCS-2021, 83,239 lemmas, frequency-banded 1–5), the same index the `pwg_ru` frequency pipeline uses. Script: [`coverage_vs_dcs.py`](coverage_vs_dcs.py); keys normalised identically to §2 so the three analyses line up.
+
+| | share of the 59,377 Catalan keys |
+|---|---:|
+| Dictionary-covered (any of 15 CDSL dicts) | **91.0 %** |
+| **DCS corpus-attested** | **46.4 %** |
+
+So **less than half** the list is attested in the ~650-text DCS corpus, even though 91 % sits in a dictionary. By DCS frequency band: band 5 (most frequent) 671 · band 4 3,610 · band 3 8,944 · band 2 9,286 · band 1 5,020.
+
+### Dictionary coverage × corpus attestation (the 2×2)
+
+| | DCS-attested | not in DCS |
+|---|---:|---:|
+| **in a CDSL dict** | 27,354 (46.1 %) | **26,662 (44.9 %)** — *listed but unattested* |
+| **in no CDSL dict** | **177 (0.3 %)** — *corpus-real CDSL gaps* | 5,184 (8.7 %) |
+
+### Reading the numbers
+- **Lexicographic "dark matter" dominates.** **44.9 %** of the list is in a CDSL dictionary yet never appears in the DCS corpus — the Catalan list inherits MW's long tail of rare/Vedic/grammarians' forms that the corpus doesn't sample. The dictionary spine is ~2× larger than corpus usage.
+- **CDSL has almost no corpus-gap here.** Only **177 (0.3 %)** lemmas are DCS-attested but absent from every CDSL dictionary, and inspection shows these are overwhelmingly **DCS lemmatisation-convention differences, not missing words**: DCS lemmatises prefixed/denominative verbs as units (`namaskf` = namas-√kṛ, `vyavasA` = vy-ava-√so, `aByavapad`, `saMpradIp`, `AKya` = ā-√khyā) which CDSL stores under the simple root. They overlap with §4's "prefixed-root / denominative" groups — corroborating that finding from the corpus side.
+- **The 8.7 % "neither" corner** (in no dictionary *and* unattested) is where real noise + hapax compounds concentrate — the best-yield slice to send back to the Catalan editors (it subsumes most of §4's `suspect-char`).
+
+> ⚠️ DCS lemmatisation differs from CDSL headwording (it splits/joins preverbs and resolves sandhi its own way), so corpus *non-attestation* of a key is a soft signal, not proof a word is unused — a few percent is lemmatisation drift, not genuine absence.
+
 ---
 
-*Counts: 61,266 lemmas → 59,377 unique normalised keys; 4,950 with `√`, 3,947 vowel-accented. Matching is accent- and compound-insensitive lemma identity against `<k1>` of CDSL dictionaries in `csl-orig/v02` (15 for §2's greedy table, all 43 for §4's uncovered list).*
+*Counts: 61,266 lemmas → 59,377 unique normalised keys; 4,950 with `√`, 3,947 vowel-accented. Matching is accent- and compound-insensitive lemma identity against `<k1>` of CDSL dictionaries in `csl-orig/v02` (15 for §2's greedy table, all 43 for §4's uncovered list) and against the DCS-2021 lemma index for §5.*
