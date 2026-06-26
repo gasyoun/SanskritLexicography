@@ -12,6 +12,14 @@
 > в будущем времени (*планируется*, *будет*). Когда прогон состоится, документ
 > переведут в форму отчёта — по образцу уже завершённого
 > [mw_ru.md](mw_ru.md) (английский→русский).
+>
+> **Теоретическая основа.** Правила перевода и рубрика судьи опираются на
+> профильную лексикографическую литературу: сводный разбор —
+> [LITERATURE_FOR_PWG_RU.md](LITERATURE_FOR_PWG_RU.md) (по точкам подключения),
+> [MANUALS_FOR_PWG_RU.md](MANUALS_FOR_PWG_RU.md) (аудит всех 37 руководств) и
+> [MANUALS_FIVE_DEEP_DIVE.md](MANUALS_FIVE_DEEP_DIVE.md) (пять ключевых: Апресян,
+> Riemer, Hartmann & James, Gonda–Vogel, Klosa) с картой «где каждый вывод живёт
+> в конвейере». Готовые таблицы — [glossaries/de_ru_translation_aids.md](glossaries/de_ru_translation_aids.md).
 
 ---
 
