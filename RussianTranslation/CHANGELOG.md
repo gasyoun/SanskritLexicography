@@ -8,6 +8,15 @@ See also: [METHODOLOGY_REVIEW.md](METHODOLOGY_REVIEW.md) (where we want to go),
 [failures/FAILURE_GALLERY.md](failures/FAILURE_GALLERY.md) (what went wrong and
 how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
+## 2026-06-26
+
+### Comparison tables — rows sorted chronologically by edition year
+- [`../article-comparison/*.table.md`](https://github.com/gasyoun/SanskritLexicography/tree/master/article-comparison)
+  rows now run **oldest → newest** by edition year (WIL 1832 → YAT 1846 → BOP 1847 →
+  PWG Bd. I 1855 → … → AP 1957 → PE 1975 → PD 1976), so the side-by-side reads as the
+  tradition developing. `#` renumbered; sort lives in `src/_build_tables.py` (stable on
+  prior order for same-year ties). (semver `[0.0.12]`)
+
 ## 2026-06-25
 
 ### Comparison tables — full untruncated entries + the builder, committed
