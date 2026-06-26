@@ -176,6 +176,17 @@ a probe), never a hunch. When a finding is later refuted or superseded, strike i
   zero-markup trap); validate a marker's *sense* per dictionary before parsing it.
   **Source:** `csl-orig/v02/{cae,md}/` entry contexts — csl-orig · 2026-06-26
 
+- **Inferred root-recovery tiers err on root FORM, not root identity — and an LLM root pass must be dhātu-validated.**
+  Evidence: a DeepSeek-judged audit of the etymology extractor's inferred tiers gives nearest-root ≈ 69 %,
+  oracle-join ≈ 74 % root precision, but most "misses" are a correct root in a stem rather than citation
+  form (`sada` for `sad`, `kṝ` for `kṛ`) — true identity-precision is higher. A DeepSeek `resolve` pass over
+  the residual empties (VCP 87→97 %, SHS 59→95 %) only writes a root that validates against the canonical
+  dhātu list, so hallucinated non-dhātu roots are discarded, not stored.
+  Implication: when filling roots by inference or LLM, (1) normalize to dhātupāṭha citation form before
+  comparing/joining, and (2) always gate an LLM-proposed root through a known-dhātu set — never trust it raw.
+  **Source:** [`nearest_root_audit.json`](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/etymology_stats/nearest_root_audit.json)
+  + [`llm_root_tools.py`](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/etymology_stats/llm_root_tools.py) — csl-orig · 2026-06-26
+
 ---
 
 _Started 2026-06-26 (relocated from `Uprava/FINDINGS.md`, which now holds **non-Sanskrit**
