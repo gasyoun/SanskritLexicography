@@ -9,6 +9,16 @@ then **cut a new version every time the changelog is updated** (promote
 
 ## [Unreleased]
 
+## [0.0.12] - 2026-06-26
+
+### Changed
+- **`article-comparison/*.table.md` — rows ordered chronologically by edition year**
+  (oldest → newest), so the side-by-side reads as the lexicographic tradition
+  developing: WIL 1832 → YAT 1846 → BOP 1847 → PWG (Bd. I) 1855 → … → AP 1957 →
+  PE 1975 → PD 1976. The `#` column renumbers to the new order. Sorting is in
+  `_build_tables.py` (stable on the prior order for same-year ties, e.g. BUR/BEN 1866,
+  GRA/VCP 1873, pw/PWK 1879).
+
 ## [0.0.11] - 2026-06-25
 
 ### Changed

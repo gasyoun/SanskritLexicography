@@ -82,23 +82,34 @@ def build(w, verify=False):
     path = os.path.join(OUT, f'{w}.table.md')
     lines = open(path, encoding='utf-8').read().split('\n')
     out, expanded, restyled, missing = [], 0, 0, 0
+    rows, row_slot = [], None   # collect data rows, remember where to re-emit them
     for ln in lines:
         m = re.match(r'^\| (\d+) \| (.+?) \| (.+?) \| (.*?) \|$', ln)
         if not m:
             out.append(ln); continue
+        if row_slot is None:
+            row_slot = len(out); out.append(None)   # placeholder for the sorted block
         num, label, lang, cell = m.groups()
         code = code_of(label)
         full = pdc if code == 'PD' else by_code.get(code)
         if full is None:
-            out.append(ln); missing += 1
-            print(f'  {w}: no source for code {code!r} (row {num})'); continue
+            missing += 1
+            print(f'  {w}: no source for code {code!r} (row {num})')
+            full = cell
         if full != cell:
             if cell.rstrip().endswith('…'): expanded += 1
             else: restyled += 1
-        out.append(f'| {num} | {label} | {lang} | {full} |')
+        rows.append((label, lang, full))
+    # sort by edition year (oldest first); stable on the original order for ties
+    def year_of(label):
+        yy = re.findall(r'\b(1[5-9]\d{2}|20\d{2})\b', label)
+        return int(yy[-1]) if yy else 9999
+    rows.sort(key=lambda r: year_of(r[0]))
+    block = [f'| {i} | {lab} | {lang} | {cell} |' for i, (lab, lang, cell) in enumerate(rows, 1)]
+    out[row_slot:row_slot + 1] = block
     leftover = sum(1 for l in out if re.match(r'^\| \d+ \|', l) and l.rstrip().endswith('… |'))
     print(f'{w}: {expanded} truncated cell(s) expanded, {restyled} restyled, '
-          f'{missing} unmatched, {leftover} still ending in "…"')
+          f'{missing} unmatched, {leftover} still ending in "…"; sorted {len(rows)} rows by year')
     if not verify:
         assert leftover == 0, f'{w}: {leftover} cells still truncated — aborting write'
         open(path, 'w', encoding='utf-8', newline='\n').write('\n'.join(out))
