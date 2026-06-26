@@ -6,6 +6,14 @@ post-judge path: the 38-unit freq test is complete, 37/38 were publishable, and
 the lone sev-3 belongs to the NWS owner-row slip class that the deterministic
 audit gate catches.
 
+**Judge policy (implemented 2026-06-26, [`../../research/JUDGE_POLICY.md`](../../research/JUDGE_POLICY.md)):**
+translate = **Sonnet**; **Sonnet judges every card**; **Opus re-judges ONLY the
+rejects** (`ok=false || severity>=3`) and its verdict is final. Publishable cards
+(sev 1–2) spend no Opus tokens — the weekly-quota headroom that makes the run
+feasible. Per batch also run the periodic ~5 % Opus audit of clean-passed cards
+(`judge_disagreements.py`) until it is wired into the loop. The earlier
+"Opus-judged" framing was the validation phase, not the bulk policy.
+
 ## Current preflight
 
 Last local preflight: **2026-06-26**.

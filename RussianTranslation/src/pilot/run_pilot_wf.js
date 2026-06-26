@@ -4,10 +4,11 @@ import { dirname, join } from 'node:path'
 
 export const meta = {
   name: 'pwgru-pilot-a-section',
-  description: 'corpus-first per-sense Russian translation + Apresjan discrimination + Sanskrit-microstructure rules (samasa/correlative/sastric) of a-section cards (coverage-first manifest), Opus-judged',
+  description: 'corpus-first per-sense Russian translation + Apresjan discrimination + Sanskrit-microstructure rules (samasa/correlative/sastric) of a-section cards (coverage-first manifest); Sonnet bulk-judged, Opus adjudicates ONLY the rejects',
   phases: [
     { title: 'Translate', detail: 'Sonnet: per-sense Russian + near-synonym discrimination' },
-    { title: 'Judge', detail: 'Opus: review register, sigla, discrimination, coverage' },
+    { title: 'Judge', detail: 'Sonnet: review register, sigla, discrimination, coverage — every card' },
+    { title: 'Adjudicate', detail: 'Opus: re-judge ONLY the hard cases Sonnet flagged (ok=false or severity>=3)' },
   ],
 }
 
@@ -86,24 +87,47 @@ const JUDGE = { ...FINAL_CARD_SCHEMA.$defs.judge, $defs: FINAL_CARD_SCHEMA.$defs
 // verbatim; only true headword keys get re-encoded by safeName.
 const fileOf = k => (k.includes('~~') ? k : safeName(k))
 
-phase('Translate')
-const out = await pipeline(
-  CARDS,
-  k => agent(TR.replace(/KEYFILE/g, fileOf(k)).replace(/KEY/g, k), { label: `tr:${k}`, phase: 'Translate', schema: CARD, model: 'sonnet' }),
-  (card, k) => {
-    if (!card) return { key: k, card: null, judge: null }
-    return agent(`You are the Opus QA judge for the pwg_ru pilot. Review this translated card against the conventions and the source.
+// QA-judge prompt, model-neutral (Sonnet judges every card; Opus re-judges only rejects).
+const CHECKS = `Check: (1) Russian correctness vs the German; (2) scholarly-philological register; (3) sigla + grammar abbreviations kept VERBATIM (not translated/transliterated) — fail sigla_kept if any ṚV./MBH./m./f. was rendered into Russian; (4) per-sense near-synonym discrimination quality (real Apresjan differentiae, not a flat list); (5) corpus evidence actually used; (6) coverage — every PWG sense rendered; (7) Sanskrit-microstructure rendering (soft) — compounds right-headed (head = 2nd member, bahuvrīhi exocentric, -ādi = hypernym «и тому подобное»), correlatives preposed (кто…тот), śāstric formulas fixed-and-flat, synonym-string cardinality preserved, comma/semicolon sense-grouping kept; flag drift but do not fail an otherwise-correct card on (7) alone. severity 1=publishable … 5=broken; set ok=false when severity>=3.`
+
+const judgePrompt = (card, k, role) => `${role}
 
 ${CONV}
 
 You may re-read the source: ${IN}\\${fileOf(k)}.raw.txt and ${IN}\\${fileOf(k)}.portrait.json.
 
-Check: (1) Russian correctness vs the German; (2) scholarly-philological register; (3) sigla + grammar abbreviations kept VERBATIM (not translated/transliterated) — fail sigla_kept if any ṚV./MBH./m./f. was rendered into Russian; (4) per-sense near-synonym discrimination quality (real Apresjan differentiae, not a flat list); (5) corpus evidence actually used; (6) coverage — every PWG sense rendered; (7) Sanskrit-microstructure rendering (soft) — compounds right-headed (head = 2nd member, bahuvrīhi exocentric, -ādi = hypernym «и тому подобное»), correlatives preposed (кто…тот), śāstric formulas fixed-and-flat, synonym-string cardinality preserved, comma/semicolon sense-grouping kept; flag drift but do not fail an otherwise-correct card on (7) alone. severity 1=publishable … 5=broken.
+${CHECKS}
 
 TRANSLATED CARD (JSON):
-${JSON.stringify(card).slice(0, 12000)}`,
-      { label: `judge:${k}`, phase: 'Judge', schema: JUDGE, model: 'opus' })
-      .then(j => ({ key: k, card, judge: j }))
+${JSON.stringify(card).slice(0, 12000)}`
+
+// Escalation policy (research/JUDGE_POLICY.md, 2026-06-25; A/B-validated in JUDGE_AB.md,
+// κ=1.0 over 474 cards). Sonnet judges EVERY card; Opus re-judges ONLY the hard cases Sonnet
+// cannot clear — a reject: ok=false or severity>=3 — and its verdict is FINAL. Publishable
+// cards (sev 1–2) keep Sonnet's verdict and spend no Opus tokens: that is the weekly-quota
+// headroom (PILOT_COST.md §6/§7) that makes the bulk run feasible on one Max seat.
+const isHard = j => !j || j.ok === false || (j.severity ?? 5) >= 3
+
+phase('Translate')
+const out = await pipeline(
+  CARDS,
+  // Stage 1 — translate (Sonnet)
+  k => agent(TR.replace(/KEYFILE/g, fileOf(k)).replace(/KEY/g, k), { label: `tr:${k}`, phase: 'Translate', schema: CARD, model: 'sonnet' }),
+  // Stage 2 — bulk judge (Sonnet), every card
+  (card, k) => {
+    if (!card) return { key: k, card: null, judge: null, judge_sonnet: null, escalated: false }
+    return agent(judgePrompt(card, k, 'You are the QA judge for the pwg_ru bulk run. Review this translated card against the conventions and the source.'),
+      { label: `judge:${k}`, phase: 'Judge', schema: JUDGE, model: 'sonnet' })
+      .then(j => ({ key: k, card, judge: j, judge_sonnet: null, escalated: false }))
+  },
+  // Stage 3 — Opus adjudication, ONLY the hard cases Sonnet rejected. `judge` becomes the
+  // final (Opus) verdict; Sonnet's original is preserved as `judge_sonnet`.
+  (res, k) => {
+    if (!res || !res.card || !res.judge || !isHard(res.judge)) return res
+    return agent(judgePrompt(res.card, k,
+      `You are the Opus adjudicator for the pwg_ru bulk run. The Sonnet judge flagged this card as a HARD case it could not clear (ok=${res.judge.ok}, severity=${res.judge.severity}; issues: ${JSON.stringify(res.judge.issues || []).slice(0, 1500)}). Re-judge it INDEPENDENTLY and authoritatively against the conventions and the source — confirm or OVERTURN Sonnet's verdict. Your verdict is final and decides whether the card is re-translated.`),
+      { label: `opus-adj:${res.key}`, phase: 'Adjudicate', schema: JUDGE, model: 'opus' })
+      .then(opus => ({ key: res.key, card: res.card, judge: opus, judge_sonnet: res.judge, escalated: true }))
   }
 )
 

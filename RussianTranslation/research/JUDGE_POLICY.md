@@ -5,6 +5,17 @@ and a **periodic audited sample**. Full commitment is gated on one remaining tes
 discrimination — see bottom). This is the target operating policy; the conservative production
 default (`--judge-model opus`) stays until the gate passes, then flips.
 
+> **IMPLEMENTED in the Max harness (2026-06-26).** The A/B gate is near-conclusive
+> (κ=1.0 over 474 cards; ~0.5 % disagreement), so the flip is done:
+> [`../src/pilot/run_pilot_wf.js`](../src/pilot/run_pilot_wf.js) now **judges every card with
+> Sonnet** and escalates to **Opus only on a reject** (`isHard` = `ok=false || severity>=3`);
+> the Opus verdict is final (becomes `judge`; Sonnet's original kept as `judge_sonnet`,
+> `escalated:true`). Publishable cards (sev 1–2) spend **no Opus tokens** — the weekly-quota
+> headroom that makes the bulk run feasible on one Max seat. Still TODO for full defence-in-depth:
+> the **periodic ~5 % Opus audit of clean-passed cards** (rollout step 3) is not yet wired into
+> the window loop — run it manually per batch with [`../src/judge_disagreements.py`](../src/judge_disagreements.py)
+> until automated.
+
 Grounds: the four-run A/B in [`JUDGE_AB.md`](JUDGE_AB.md). Summary:
 
 | run | what | result |
