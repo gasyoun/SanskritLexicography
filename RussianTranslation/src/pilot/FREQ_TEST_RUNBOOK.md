@@ -129,6 +129,23 @@ and deferred to the German gloss — exactly the weak-hint behaviour.
   2. `nara`: a Hoernle multi-citation NWS row was compressed (3 cites merged, one "physician"
      sub-sense dropped) — relates to NWS guard 4 ("render EVERY sub-sense"); owner verbatim.
 
-**Verdict:** the split → translate → glue pipeline runs end-to-end at publishable quality;
-no overflow; format invariants hold. The Opus judge pass (severity scoring) was **not** run
-here to bound cost — run it separately on these outputs before declaring print-ready.
+### Opus judge pass — executed 2026-06-24 (38 Opus agents, 2.4 min, 2.06 M tok)
+**Severity: {1: 24, 2: 13, 3: 1} → 37/38 publishable (sev ≤ 2).** Discrimination "good" on every
+polysemous unit. The judge caught what the fidelity gate + spot-check did not:
+- **`idam` — sev 3** (the only one): the translator **swapped NWS owner rows** Geldner↔Graßmann
+  (Graßmann's distinct gloss lost) — the F12 the owner-map feed targets. The authoritative map is
+  **correct** (row 1 = Graßmann:207, row 3 = Geldner:28), so this is a translator slip on a hard
+  double-Geldner case, **caught in production by `nws_split.py check`** (my test ran translate-only
+  without that gate). Also a broken `{%pāda{%}` brace and `<is>` italics rendered inside `{%..%}`.
+- **`k_arya` — sev 2, coverage**: dropped 2 PWG Nachträge patches (1a ṚV.PRĀT 14,16; 2a Spr. 3008).
+- **`jana` — sev 2, sigla**: merged two Sanskrit tokens `{#paTi#}`+`{#ka˚#}` → `{#paTika˚#}`.
+- **`man~~h0_zz_pw00` — sev 2, sigla**: German abbrev `<ab>Bed.</ab>` expanded to «значением».
+
+**Prompt-tuning findings for the scale run** (not blocking): (a) keep German abbrevs Bed./Schol.
+verbatim, never expand; (b) render EVERY Nachträge patch (kārya drop); (c) `<is>` source-italics →
+keep as transliterated siglum, not `{%..%}`; (d) the owner-map F12 is real on hard multi-cite rows —
+keep the deterministic `nws_split.py check` gate in the scale loop (it catches idam).
+
+**Verdict:** split → translate → glue runs end-to-end; **37/38 publishable**, no overflow, format
+invariants hold; the 1 sev-3 is a known F12 class the production owner-gate catches. Pipeline is
+scale-ready pending the prompt nits above + the `nws_split` gate wired into the run loop.
