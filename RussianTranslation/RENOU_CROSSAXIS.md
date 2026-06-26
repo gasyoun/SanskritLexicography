@@ -3,7 +3,7 @@
 The two Renou axes — diachronic **state** (I–V) and **register** (the 20 subsections,
 [`RENOU_REGISTERS.md`](RENOU_REGISTERS.md)) — are orthogonal, so their **intersections and
 differences** name strata neither axis can name alone. This note works through the most
-revealing of them: for each, what it is, how it breaks down, real headwords, and what it
+revealing of them: for each, what it is, how it breaks down, real headwords (glosses abridged from the **Monier-Williams** entry), and what it
 tells us. Companion to the data note [`papers/A34_renou_register_note.md`](../../papers/A34_renou_register_note.md).
 
 **Counting convention.** Each slice's **headline count is the reproducible figure** printed
@@ -37,11 +37,11 @@ load-bearing lexicon.
 
 | headword | gloss | spans |
 |---|---|---|
-| `mārga` | path, way; (later) method, system | I → IV |
-| `sārathi` | charioteer | I → III |
-| `siṃha` | lion | I → IV |
-| `lāṅgala` | plough | I (Vedic agriculture) → IV |
-| `hutāśana` | fire ("oblation-eater") | I → IV |
+| `mārga` | seeking, tracing (fr. *mṛga* "game"); path, way; (later) method | I → IV |
+| `sārathi` | a charioteer, driver of a car | I → III |
+| `siṃha` | "the powerful one", a lion (RV.) | I → IV |
+| `lāṅgala` | a plough (RV.) | I → IV |
+| `hutāśana` | "oblation-eater", fire | I → IV |
 | `sapatnī` | co-wife, rival | I → IV |
 
 **Reading.** The bhāṣya register is, lexically, a **Vedic reservoir**: the commentators
@@ -64,12 +64,11 @@ the next does not. These are abstract nouns, bahuvrīhi epithets, and rare ornam
 
 | headword | gloss | note |
 |---|---|---|
-| `vāñchā` | wish, desire | classical; the Veda used `kāma` |
-| `sthairya` | steadfastness | abstract `-ya` derivative, a classical formation |
-| `udbhūti` | origin, rise | |
-| `sūcita` | hinted at, indicated | the *dhvani* poetics vocabulary |
-| `vicchāya` | pale, lustreless | ornamental |
-| `rogahṛt` | disease-removing | classical compound (medical/poetic) |
+| `vāñchā` | wish, desire, longing for | classical; the Veda used `kāma` |
+| `sthairya` | firmness, solidity, steadfastness | abstract `-ya` derivative |
+| `udbhūti` | coming forth, appearance, origin | |
+| `sūcita` | pointed out, indicated, hinted | the *dhvani* poetics vocabulary |
+| `rogahṛt` | disease-curing | classical compound (medical/poetic) |
 
 **Reading.** Where slice 1 is conservation, this is **invention**. Classical poetry is the
 register that *grows* the lexicon — abstract nominalisations for poetic theory (`sūcita`,
@@ -91,10 +90,10 @@ Mahābhārata or a Dharmaśāstra actually needs to explain.
 
 | headword | gloss |
 |---|---|
-| `guṇa` | quality; strand; merit; (gram.) vowel grade |
-| `lakṣaṇa` | mark, characteristic; (śāstra) definition |
-| `viveka` | discrimination, discernment |
-| `daiva` | fate, divine dispensation |
+| `guṇa` | a thread, strand; quality; merit; (gram.) vowel grade |
+| `lakṣaṇa` | mark, sign, characteristic; (śāstra) definition |
+| `viveka` | discrimination, distinction |
+| `daiva` | divine, of the gods; (n.) fate, destiny |
 
 **Reading.** That epic∩bhāṣya is the largest commentary intersection (larger than
 vyākaraṇa∩bhāṣya, §4) reflects what the commentarial industry mostly *was*: exegesis of the
@@ -117,8 +116,7 @@ terms and their illustrative vocabulary. 502 single-dict.
 |---|---|
 | `dvaṃdva` | pair; **(gram.) copulative compound** |
 | `guṇa` | **(gram.) the a/e/o vowel grade**; quality |
-| `kartṛka` | having (such) an agent — a grammatical-analysis term |
-| `tāra` | high-pitched (accent term); shrill |
+| `kartṛka` | (ifc.) having (such) an agent |
 
 **Reading.** This slice isolates Sanskrit's most reflexive layer: `dvaṃdva` is the perfect
 specimen — a word that *names a grammatical category* and is *defined in a grammatical
@@ -138,11 +136,11 @@ single-dict; 2,411 in ≥6). `bhāṣya` co-occurs 4,232 (Buddhist scholastic co
 
 | headword | gloss |
 |---|---|
-| `sugata` | **the Buddha** ("well-gone"); also "well-departed" generally |
-| `megha` | cloud (the *Meghadūta* register, also Buddhist) |
-| `candra` | moon |
-| `vihaṃgama` | bird; (in flight) |
-| `gadgada` | stammering (with emotion) |
+| `sugata` | going well; (m.) **the Buddha** ("well-gone") |
+| `megha` | "sprinkler", a cloud (RV.) |
+| `candra` | shining, bright; (m.) the moon |
+| `vihaṃgama` | moving in the sky, flying; (m.) a bird |
+| `gadgada` | stammering, stuttering (with emotion) |
 
 **Reading.** The slice quantifies that Buddhist Sanskrit poetry is **lexically classical** —
 `sugata` is the rare register-marked term (an epithet that is Buddhist *and* poetic), but
@@ -166,12 +164,11 @@ one-dictionary quirk.
 
 | headword | gloss | type |
 |---|---|---|
-| `vākāṭaka` | the **Vākāṭaka** dynasty | dynasty |
-| `cālikya` | **Cālukya** (inscriptional spelling) | dynasty |
-| `kṛṣṇarāya` | a king's name (cf. Kṛṣṇadevarāya) | ruler |
-| `humāuṃ` | **Humāyūn** (Mughal emperor) | ruler (Indo-Persian) |
-| `durgāvatī` | a queen's name (cf. Rāni Durgāvatī) | ruler |
-| `somāditya` | a king's name | ruler |
+| `vākāṭaka` | N. of a family of princes (the Vākāṭaka dynasty) | dynasty |
+| `cālikya` | = Cālukya (Inscr., dated 489 A.D.) | dynasty |
+| `kṛṣṇarāya` | N. of various kings | ruler |
+| `humāuṃ` | Humāyūn (emperor) | ruler (Indo-Persian) |
+| `durgāvatī` | N. of a princess | ruler |
 
 **Reading.** This is the slice that only the register axis can produce: a word attested
 solely in an undated inscription has **no definable Renou state** (no literary text dates

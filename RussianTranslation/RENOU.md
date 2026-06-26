@@ -116,9 +116,10 @@ rather than show a meaningless five-era label.
 ## Register axis (subsections) — corpus route live
 
 The five states are Renou's five **chapters**. His **subsections** are distinct
-registers a flat I–V tag cannot express — notably **`épigraphique`** (inside Ch. II,
-p. 94) and **`bhāṣya`** = commentary language (the lead of Ch. IV, p. 133, with its
-own grammar), which fits none of the five. The verified book structure is in
+registers a flat I–V tag cannot express — all twenty of them, e.g. `épigraphique`
+(Ch. II, p. 94) or `bhāṣya` = commentary language (Ch. IV, p. 133, with its own grammar),
+but equally the drama, the narrative, the Purāṇa, the grammarians' norm: each is a register,
+not a period, and fits none of the five states as such. The verified book structure is in
 [`../../VisualDCS/docs/Renou_1956_structure.md`](../../VisualDCS/docs/Renou_1956_structure.md);
 the full design (orthogonal, multi-label, ~20-register lattice, combined detectors) is
 in [`RENOU_SUBSECTIONS_PLAN.md`](RENOU_SUBSECTIONS_PLAN.md). The **full catalog of all 20
