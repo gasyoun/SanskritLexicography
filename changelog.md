@@ -9,6 +9,20 @@ then **cut a new version every time the changelog is updated** (promote
 
 ## [Unreleased]
 
+## [0.0.25] - 2026-06-26
+
+### Changed — typo queue extended to all 122; coverage additions cross-tagged
+- **A — all 122 typos.** [`assemble_typo_queue.py`](HeadwordLists/assemble_typo_queue.py) now
+  auto-discovers every dict's FILE-FIRST queue → [`A_TYPO_QUEUE.md`](HeadwordLists/A_TYPO_QUEUE.md)
+  is the full **122 across 11 dicts** (spine MW 4 + PWG 12 first, then SHS 37, YAT 27, ACC 22,
+  MCI 10, SKD 3, WIL 3, PW 2, GST 1, VCP 1), each with IAST + error type + entry-body evidence.
+- **B — cross-tagged.** [`crosstag_additions.py`](HeadwordLists/crosstag_additions.py) tags the 416
+  priority additions with Catalan/Huet external attestation
+  ([`union/coverage_additions_crosstagged.tsv`](HeadwordLists/union/coverage_additions_crosstagged.tsv)).
+  **Only 25/416 (6 %) are externally corroborated, and ~8 are genuine real words** (`karkandhū`
+  jujube, `maṇikā` jar, `cittamātra`, `nistaraṅga`…); the rest are verb roots / Pāṇinian affixes
+  (`ghañ`, `ktvā`) Catalan/Huet also headword. **Conclusion: CDSL coverage of attested vocabulary
+  is essentially complete — the print list needs ~nothing added.**
 ## [0.0.24] - 2026-06-26
 
 ### Added — MW+PWG typo queue assembled (item A)
