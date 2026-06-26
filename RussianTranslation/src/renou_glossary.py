@@ -8,8 +8,13 @@ a kāvya poetic lexicon. Headwords are aggregated by IAST across dictionaries an
 each row records the states it spans, which dictionaries attest it, and the register's
 provenance (ls = lexicographer cited it, dcs = corpus attestation).
 
-  python renou_glossary.py REGISTER [--state S] [--prov ls|dcs] [--dicts pwg,mw,…]
-        [--min-dicts N] [--format md|tsv] [--out FILE] [--title "…"]
+  python renou_glossary.py REGISTER [--state S] [--exclude-state S,S] [--prov ls|dcs]
+        [--dicts pwg,mw,…] [--min-dicts N] [--format md|tsv] [--out FILE] [--title "…"]
+
+`--state S` keeps only words also attested in state S; `--exclude-state S,S` drops
+words attested in any listed state — together they carve cross-axis slices, e.g.
+`kavya --exclude-state I` = poetic words with no Vedic attestation ("born in kāvya"),
+or `I --state-only --exclude-state II,III,IV,V` = words attested *only* in Vedic.
 
 REGISTER is a renou_register code (renou_register.REGISTERS) — or pass --state-only to
 glossary a *state* (I–V) instead. Examples:
@@ -28,25 +33,29 @@ CANON = ('pwg', 'mw', 'pw', 'ap', 'ap90', 'ben', 'sch', 'bhs')
 _SORD = {s: i for i, s in enumerate(renou.STATES)}
 
 
-def collect(code_filter, dicts, state_filter, prov_filter, state_only):
+def collect(code_filter, dicts, state_filter, prov_filter, state_only, exclude_states):
     """iast -> {dicts:set, states:set, prov:set, key2:str, n:int}."""
     agg = {}
+    exclude_states = set(exclude_states or ())
     for code in dicts:
         path = os.path.join(HERE, code + '.renou.jsonl')
         if not os.path.exists(path):
             continue
         for line in open(path, encoding='utf-8'):
             e = json.loads(line)
+            states = e.get('renou_enriched') or []
             if state_only:
-                if code_filter not in (e.get('renou_enriched') or []):
+                if code_filter not in states:
                     continue
                 srcs = (e.get('renou_provenance') or {}).get(code_filter, [])
             else:
                 if code_filter not in (e.get('renou_register') or []):
                     continue
                 srcs = (e.get('renou_register_provenance') or {}).get(code_filter, [])
-            if state_filter and state_filter not in (e.get('renou_enriched') or []):
+            if state_filter and state_filter not in states:
                 continue
+            if exclude_states and exclude_states & set(states):
+                continue  # drop entries attested in any excluded state
             if prov_filter and prov_filter not in srcs:
                 continue
             ia = e.get('iast') or ''
@@ -92,6 +101,7 @@ def main():
     reg = args[0]
     dicts = list(CANON)
     state_filter = prov_filter = out = title = None
+    exclude_states = []
     fmt = 'md'
     min_dicts = 1
     state_only = False
@@ -102,6 +112,8 @@ def main():
             dicts = args[i + 1].split(','); i += 2
         elif a == '--state':
             state_filter = args[i + 1]; i += 2
+        elif a == '--exclude-state':
+            exclude_states = args[i + 1].split(','); i += 2
         elif a == '--prov':
             prov_filter = args[i + 1]; i += 2
         elif a == '--min-dicts':
@@ -119,7 +131,7 @@ def main():
 
     if not state_only and reg not in renou_register.REGISTERS:
         raise SystemExit('unknown register %r (see renou_register.REGISTERS)' % reg)
-    agg = collect(reg, dicts, state_filter, prov_filter, state_only)
+    agg = collect(reg, dicts, state_filter, prov_filter, state_only, exclude_states)
     if not title:
         kind = 'state' if state_only else 'register'
         title = 'Renou %s glossary: %s' % (kind, reg)
