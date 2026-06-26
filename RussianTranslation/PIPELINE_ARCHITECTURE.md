@@ -7,6 +7,10 @@
 > the engine itself: its components, the harvest-first data flow, the model
 > plumbing, and what is BUILT versus TODO. It is scoped to the code and data
 > that actually exist in this repository — it invents no run statistics.
+>
+> **Judge-policy note:** where this doc shows "Opus judges each card," the bulk
+> policy is now **Sonnet judges every card, Opus re-judges rejects only** —
+> [research/JUDGE_POLICY.md](research/JUDGE_POLICY.md).
 
 ---
 

@@ -11,8 +11,9 @@ pipeline enforces quality by:
   the one failure to manual review. No Sanskrit / ref / markup is ever altered.
 - **Harvest-first reuse** — translations are anchored to *existing human*
   Russian (dictionaries + the parallel corpus), not invented from scratch.
-- **Judge every card** — Opus 4.8 judges each card (severity 1–5); nothing is
-  published unjudged.
+- **Judge every card** — every card is judged (severity 1–5); nothing is
+  published unjudged. Bulk judge = Sonnet, Opus re-judges rejects only
+  ([research/JUDGE_POLICY.md](research/JUDGE_POLICY.md)).
 - **Re-translate rejects** — severity ≥ 3 cards go to an Opus re-translate pass.
 
 ## 1. The corpus-first reorder (the key change, 2026-06-15)
@@ -34,7 +35,7 @@ every card harvests the maximum attested Russian *before* a word is translated.
    senses** in the card.
 3. **Translate** — Sonnet 4.6 renders the German gaps, *anchored to the
    harvested senses* (so terminology matches existing usage).
-4. **Judge** — Opus 4.8, every card.
+4. **Judge** — every card (Sonnet bulk, Opus on rejects; see JUDGE_POLICY.md).
 5. **Re-translate** — Opus on severity ≥ 3.
 6. **Stage-4 corpus gate** — [src/corpus_gate.py](src/corpus_gate.py) annotates
    correctness vs. independent dicts + agreement vs. KOW.

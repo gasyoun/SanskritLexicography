@@ -10,6 +10,13 @@
 > - **`pwg_ru`** — Russian translation of the **German** Petersburger Wörterbuch
 >   (Böhtlingk–Roth, PWG); see [pwg_ru.md](pwg_ru.md). **Not yet run.**
 >
+> **Superseded on two points** (this is the original pre-Max-harness plan): the
+> production vehicle is now the Claude **Max** workflow harness (not the
+> DeepSeek-key-gated path below), and the bulk judge is **Sonnet with Opus
+> re-judging rejects only** (not Opus-every-card) — see
+> [research/JUDGE_POLICY.md](research/JUDGE_POLICY.md). The phase-level engineering
+> below remains the build reference.
+>
 > Both are one engine parameterized by **source language** (En→Ru vs De→Ru).
 > This document is the build-side companion to the editor-facing
 > [pwg_ru.md](pwg_ru.md); the corpus-feed roadmap is

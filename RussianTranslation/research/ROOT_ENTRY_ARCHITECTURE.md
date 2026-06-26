@@ -335,6 +335,10 @@ is the only thing between this prototype and running the frequency-first queue, 
 exactly these giant roots (`freq_route.py`: #1 sthā, #2 bhū, #3 gam …). Tracked as the next
 build; the slicer/glue themselves need no further work.
 
+> **UPDATE 2026-06-26 — the `--root-split` production hook is now implemented** in
+> `_pilot_gen_merged.py` (`--manifest freq --root-split`), and `verify_root_glue.py` passes all
+> gates across 60 rootmaps. This "one remaining gap" is closed.
+
 ---
 
 ## RESOURCES (provided by user 2026-06-24) — use, don't reinvent

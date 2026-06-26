@@ -10,6 +10,19 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## 2026-06-26
 
+### Stale-doc cleanup — align planning/runbook docs with the current pipeline
+- Triaged the pwg_ru `.md` set against current ground truth (judge = Sonnet-bulk + Opus-on-reject;
+  four prompt nits done-in-harness; harvest ported; `pwg_preverb1.txt` sandhi-join dropped;
+  `--root-split` hook done). Fixed present-tense contradictions, kept correct history intact:
+  - **STRATEGY.md** (judge-every-card now attributes Sonnet-bulk/Opus-on-reject),
+    **FREQ_TEST_RUNBOOK.md** (step-2 judge model; +dropped-`pwg_preverb1` note; +four-nits/`nws_split`
+    done-status note), **HANDOFF** (judge-model line scoped to the validation pass; dropped the
+    `pwg_preverb1` follow-up).
+  - Superseded-pointers added to the pre-Max-harness plans **IMPLEMENTATION_PLAN.md** /
+    **PIPELINE_ARCHITECTURE.md**; **PILOT_COST.md** §7 "now-implemented" note; **research/ROOT_ENTRY_ARCHITECTURE.md**
+    `--root-split`-done note. `JUDGE_POLICY.md` is the single source of truth for the judge policy.
+- `tmp.md` (chat-narration scratch) left untouched — it is gitignored (`.gitignore:6`), never in the repo.
+
 ### Judge escalation implemented — Sonnet bulk, Opus only on the hard cases
 - Flipped [src/pilot/run_pilot_wf.js](src/pilot/run_pilot_wf.js) from "Opus judges every card" to
   the decided [research/JUDGE_POLICY.md](research/JUDGE_POLICY.md) policy: **Sonnet judges every
