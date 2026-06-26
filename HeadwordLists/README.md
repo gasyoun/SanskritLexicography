@@ -53,6 +53,11 @@ slightly. The **key2** snapshots are in the *legacy Cologne numeric transliterat
 (`am2s4a` = aṃśa) whereas csl-orig is now SLP1, so their raw diff is a format
 migration, not a headword change. PD is not in csl-orig.
 
+The **current** regeneration of the **key1** lists lives in [`now/`](now/) (THEN files
+here are kept frozen for comparison); see [`now/README.md`](now/README.md). key1 is the
+comparable set (THEN & NOW both SLP1); key2 is not regenerated (legacy-numeric THEN /
+`{#..#}` blob fields). Compare by set, not raw line-diff (now/ uses Sanskrit collation).
+
 ## Note on duplicates / versions
 
 Two MW `key2` files are present — [MW-unique-key2-198220.txt](MW-unique-key2-198220.txt)

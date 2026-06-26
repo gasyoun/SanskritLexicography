@@ -33,6 +33,13 @@ def field_set(path, tag):
     txt = open(path, encoding="utf-8").read()
     return set(m.group(1) for m in re.finditer(r'<%s>([^<]*)' % tag, txt))
 
+# SLP1 Sanskrit (varṇa-krama) collation, to match the committed snapshots' order
+# (vowels incl. vocalic ṛ/ḷ, then anusvāra/visarga, then the consonant series).
+_SLP1_ORDER = "aAiIuUfFxXeEoOMHkKgGNcCjJYwWqQRtTdDnpPbBmyrlvSzshL"
+_ORD = {c: i for i, c in enumerate(_SLP1_ORDER)}
+def sanskrit_key(s):
+    return tuple(_ORD.get(c, 200 + ord(c) % 200) for c in s)
+
 def main():
     files = sorted(f for f in os.listdir(HERE)
                    if re.match(r'^[A-Z]+-unique-key[12]-\d+\.txt$', f))
@@ -121,5 +128,54 @@ def main():
     open(os.path.join(HERE, "NOW_VS_THEN.md"), "w", encoding="utf-8", newline="\n").write("\n".join(md))
     print(f"\nWrote NOW_VS_THEN.md; full per-list diffs in {OUT}/")
 
+NOW = os.path.join(HERE, "now")
+def _clean_keyset(keys):
+    """True if this looks like clean headword keys, not <k2> markup/blob fields
+    (SKD/VCP/INM <k2> hold concatenated '{#..#}, ...' compound lists, not lemmas)."""
+    if not keys:
+        return False
+    longest = max(len(k) for k in keys)
+    has_markup = any('{#' in k or ',' in k for k in list(keys)[:5000])
+    return longest <= 60 and not has_markup
+
+def write_now():
+    """Regenerate the *comparable* lists from current csl-orig into now/ with the now
+    count in the filename, Sanskrit-collated. THEN files are kept untouched for
+    comparison. Only clean SLP1 headword fields are emitted — key1 for every dict,
+    plus key2 where the field is clean lemmas (not legacy-numeric / not {#..#} blobs)."""
+    os.makedirs(NOW, exist_ok=True)
+    files = sorted(f for f in os.listdir(HERE)
+                   if re.match(r'^[A-Z]+-unique-key[12]-\d+\.txt$', f))
+    written, skipped = [], []
+    for f in files:
+        m = re.match(r'^([A-Z]+)-unique-key([12])-\d+\.txt$', f)
+        code, kt = m.group(1), m.group(2)
+        d = CODE2DIR.get(code)
+        src = src_path(d) if d else None
+        if not src:
+            skipped.append(f"{code} key{kt} (no csl-orig source)"); continue
+        keys = field_set(src, "k1" if kt == "1" else "k2")
+        if not _clean_keyset(keys):
+            skipped.append(f"{code} key{kt} (<k2> not clean lemmas — markup/blob field)"); continue
+        keys = sorted(keys, key=sanskrit_key)
+        out = os.path.join(NOW, f"{code}-unique-key{kt}-{len(keys)}.txt")
+        # drop any stale now/ file for this dict+keytype (count may have changed)
+        for old in os.listdir(NOW):
+            if re.match(rf'^{code}-unique-key{kt}-\d+\.txt$', old):
+                os.remove(os.path.join(NOW, old))
+        open(out, "w", encoding="utf-8", newline="\n").write("\n".join(keys) + "\n")
+        written.append(os.path.basename(out))
+    print(f"\nWrote {len(written)} now/ snapshots:")
+    for w in written:
+        print("  now/" + w)
+    if skipped:
+        print(f"\nSkipped {len(skipped)}:")
+        for s in skipped:
+            print("  " + s)
+
 if __name__ == "__main__":
-    main()
+    import sys as _s
+    if len(_s.argv) > 1 and _s.argv[1] == "now":
+        write_now()
+    else:
+        main()
