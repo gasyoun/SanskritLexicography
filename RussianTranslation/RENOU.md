@@ -186,7 +186,9 @@ flat headword list can't. Join any `{code}.renou.jsonl` to the Russian cards by 
 
 The two axes compose: `(state, register, provenance)` is an evidence-graded coordinate per
 sense — e.g. *akṣobhya* = `III·V` / `purana·tantra·bauddha` / all-four-signals = "an Epic-
-and-Buddhist word, used in Purāṇa/Tantra/Buddhist registers, maximally corroborated."
+and-Buddhist word, used in Purāṇa/Tantra/Buddhist registers, maximally corroborated." Six
+**cross-axis slices** (Vedic-in-commentary, born-in-kāvya, the grammatical meta-language, …)
+are worked through with anatomy + examples in [`RENOU_CROSSAXIS.md`](RENOU_CROSSAXIS.md).
 
 ## Reproduce
 
