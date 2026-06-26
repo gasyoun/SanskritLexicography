@@ -38,8 +38,8 @@ So a **2014 list is already stale** (+21.1 % across the 9 comparable lists,
 | **B** | **Coverage decision** — whether to add the corpus-attested lexemes absent from CDSL ([177 from Pujol](Catalan-Pujol/DCS-attested-no-CDSL.md), esp. plant/animal names; + Huet's set). | ⬜ open | **human / editorial** |
 | **C** | **Accents** — resolve the ~3 % accent-position disagreements (Pujol vs GRA/MW, [§7](Catalan-Pujol/Sanskrit-Catalan-Wordlist-vs-Cologne.md), e.g. *bhága*) if the book prints udātta. | ⬜ open | **human** (canonical = RV/GRA) |
 | **D** | **key2 as SLP1** — the print/citation form (accents, compound markers). The 2014 key2 was legacy numeric. | ✅ **done** — clean SLP1 key2 in [`now-2026/`](now-2026/) | agent (done) |
-| **E** | **Scope** — single dict (MW or PWG — the ready ones) or a cross-dict **union**? If union, settle dedup/homograph merge across dicts. | ⬜ open | **human / editorial** |
-| **F** | **Alternate & feminine headword policy** — how to treat feminine stems and variant/alternate spellings (see below). | ⬜ open | **human policy** (agent can pre-list) |
+| **E** | **Scope** — single dict or a cross-dict **union**? | ✅ **decided: union** — built ([union/UNION.md](union/UNION.md), 295,298 headwords, 8 key1 dicts, provenance + gender) | agent (v1 done) |
+| **F** | **Alternate & feminine headword policy** — how to treat feminine stems and variant/alternate spellings (see below). | 🟡 **policy chosen: fold under masc `mf(ā/ī)`** — applied to the union (238 `-inī` auto-folded; 3,993 `-ā/-ī` candidates for review) | agent applied; editor confirms candidates |
 
 ## F — alternate & feminine headwords (detail)
 
