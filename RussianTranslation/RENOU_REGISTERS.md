@@ -83,6 +83,44 @@ register across all 8 dictionaries (PWG · MW · PW · AP · AP90 · BEN · SCH 
   `katha` 24,393 · `bauddha` 25,740) dominate by headword count; the **editorially salient
   small ones** are `epig` and `bhasya` (the two Renou singles out for distinct treatment).
 
+## Numbered index — chapter-relative (Scheme A)
+
+Each register gets a strict number **within its Renou chapter** (`{state}.{n}`):
+
+- **I.1** rgveda · **I.2** atharva · **I.3** yajus · **I.4** brahmana · **I.5** upanisad · **I.6** sutra
+- **II.1** vyakarana · **II.2** epig
+- **III.1** epic · **III.2** purana · **III.3** tantra · **III.4** smrti · **III.5** karika
+- **IV.1** bhasya · **IV.2** katha · **IV.3** natya · **IV.4** kavya
+- **V.1** bauddha · **V.2** jaina · **V.3** hors_inde
+
+## Numbered index — global unique (Scheme B)
+
+Each subcategory also gets one **unique running number** `(1.)–(20.)`, carried alongside
+its chapter-relative code, so every register has a single stable id across the whole lattice:
+
+| # | Chapter-rel. | Register | Headwords |
+|--:|---|---|--:|
+| (1.) | I.1 | rgveda | 15,370 |
+| (2.) | I.2 | atharva | 8,512 |
+| (3.) | I.3 | yajus | 11,015 |
+| (4.) | I.4 | brahmana | 16,562 |
+| (5.) | I.5 | upanisad | 4,831 |
+| (6.) | I.6 | sutra | 18,893 |
+| (7.) | II.1 | vyakarana | 22,429 |
+| (8.) | II.2 | epig | 709 |
+| (9.) | III.1 | epic | 48,713 |
+| (10.) | III.2 | purana | 31,255 |
+| (11.) | III.3 | tantra | 5,416 |
+| (12.) | III.4 | smrti | 17,546 |
+| (13.) | III.5 | karika | 3,021 |
+| (14.) | IV.1 | bhasya | 14,498 |
+| (15.) | IV.2 | katha | 24,393 |
+| (16.) | IV.3 | natya | 12,611 |
+| (17.) | IV.4 | kavya | 26,973 |
+| (18.) | V.1 | bauddha | 25,740 |
+| (19.) | V.2 | jaina | 286 |
+| (20.) | V.3 | hors_inde | 0 |
+
 ## See also
 
 - [`RENOU.md`](RENOU.md) — the two-axis tagging system (states + registers).
