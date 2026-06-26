@@ -1,30 +1,41 @@
-# *Obscaena Latine*: the Latin discretion-screen in the Cologne German dictionaries (PWG, PW, SCH) — and who lifts it
+# Measuring the discretion-screen: a metalanguage-relative method for detecting lexicographic euphemism — with the Sanskrit *obscaena Latine* (eleven Cologne dictionaries) as case study
 
-**A36 · research note / short communication · draft 2026-06-26 · target (history-of-lexicography): Dictionaries (DSNA) / Historiographia Linguistica / Beiträge zur Geschichte der Sprachwissenschaft**
+**A36 · research note / short communication · draft 2026-06-26 · target: history-of-lexicography / DH-methods — Dictionaries (DSNA) / Historiographia Linguistica / IJL / Beiträge zur Geschichte der Sprachwissenschaft**
 
-> **Status:** draft (2/5). Dataset extracted, filtered, and reproducible across **eleven
-> Cologne dictionaries** (5 German, 5 English, 1 Latin-medium); vulgar set hand-vetted,
-> clinical set audited for binomial false positives, comparative-apparatus sub-study done.
-> Needs a related-work paragraph (Adams 1982; the history of *verba obscena* in scholarly
-> lexicography, the Anglo-Indian decency debates) and a final venue decision.
+> **Status:** draft (3/5). Methods-first: the metalanguage-relative test (§3b) is the
+> contribution; the *obscaena Latine* across **eleven Cologne dictionaries** (1832–1959; 5
+> German, 5 English, 1 Latin-medium) is the validated case study, with three internal
+> controls — screen-vs-doublet (§5b), the 401-entry blunt-German counter-inventory (§5b), and
+> Bopp's all-Latin *Glossarium* as positive control (§5b) — plus a diachronic shape (§3c) and
+> a comparative-philology sub-study (§5a). Vulgar set hand-vetted; clinical set audited for
+> binomial false positives. Needs a related-work section (Adams 1982; *verba obscena* in
+> scholarly lexicography; the Anglo-Indian decency debates) and a final venue decision.
 
 ## Abstract
 
-Nineteenth-century European Sanskrit lexicography inherited a classical-philology
-convention: **taboo vocabulary is glossed in Latin, not in the vernacular**, so that the
-classically educated reader can follow while the general reader (in the period's terms,
-women and the young) cannot. The locus classicus is Böhtlingk–Roth's entry for the root
-√*yabh*, glossed simply **futuere** — with a footnote to the Slavic cognate (Miklosich) —
-rather than with any German verb. We extract every Latin sexual/scatological gloss from
-**eleven machine-readable Cologne dictionaries** — five German (**PWG** *Großes
-Petersburger Wörterbuch*, **PW** *Kürzere Fassung*, **SCH** Schmidt's *Nachträge*, **PWK**
-Böhtlingk's abridgment, **GRA** Grassmann's *Wörterbuch zum Rig-Veda*), five English (**MW**
-Monier-Williams 1899, **AP90** Apte 1890, **AP** Apte revised, **WIL** Wilson 1832, **CAE**
-Cappeller), and one Latin-medium (**BOP** Bopp's *Glossarium*, where the whole gloss is
-Latin and the distinction collapses). We separate two registers that the practice conflates:
-a small **vulgar veil** (Latin words that are themselves obscene — *futuere, cunnus,
-mentula, paedicare, mingere, stercus/cacare*) and a large **clinical Latin** default
-(*coitus, penis, vulva, pudenda, semen, clitoris*). We find **2 104 Latin-glossed senses**
+A *discretion-screen* — glossing a taboo headword in a language the lay reader cannot read —
+is a recurrent device in historical lexicography, but measuring it computationally is
+confounded by a subtlety: **the screen-language is often also the source of the target
+language's ordinary technical vocabulary.** A naïve string-match for Latin in a Sanskrit–
+English dictionary flags *semen, penis, coitus* — words that are simply English — and so
+cannot tell a euphemistic screen from native scientific register. We propose a
+**metalanguage-relative test**: split the Latin lexicon into an *obscene core* (words
+obscene *in Latin itself* — Adams 1982: *futuere, cunnus, mentula, stercus, paedicare*) and
+a *clinical* tier (*coitus, penis, vulva, semen*), and treat a Latin gloss as a screen only
+when it is *marked* in that dictionary's metalanguage — for a German dictionary, either tier
+standing in for an available Germanic word; for an English dictionary, only the obscene core.
+We validate the test on **eleven machine-readable Cologne Sanskrit dictionaries** (1832–1959;
+five German, five English, one Latin-medium) with three internal controls — a screen-vs-
+doublet check, a blunt-vernacular counter-inventory, and Bopp's all-Latin *Glossarium* as a
+positive control — and show it isolates the genuine screen where raw matching cannot.
+
+Applied, the method yields a clean history. The classic case is Böhtlingk–Roth's √*yabh*,
+glossed simply **futuere** rather than with any German verb. The corpus: five German (**PWG**
+*Großes Petersburger Wörterbuch*, **PW** *Kürzere Fassung*, **SCH** Schmidt's *Nachträge*,
+**PWK** Böhtlingk's abridgment, **GRA** Grassmann's *Wörterbuch zum Rig-Veda*), five English
+(**MW** Monier-Williams 1899, **AP90** Apte 1890, **AP** Apte revised, **WIL** Wilson 1832,
+**CAE** Cappeller), and one Latin-medium (**BOP** Bopp's *Glossarium*). We find **2 104
+Latin-glossed senses**
 in all, concentrated in the German Petersburg core (**875 in PWG/PW/SCH**: 79 vulgar, 796
 clinical), and document a **gradient of editorial candour by audience**: the German
 dictionaries veil in Latin only; **Monier-Williams gives both** ("to have sexual
@@ -222,6 +233,36 @@ clinical Latinate is not. Applying *that* test (and only that test) to the Engli
 isolates the result of §3a: Monier-Williams and Cappeller screen, the Aptes and Wilson do
 not. Counting raw Latin strings would have buried this under 800-odd naturalised English
 *semen*/*penis* tokens.
+
+## 3c. The screen in time — a high-Victorian phenomenon
+
+Ordering the dictionaries by publication date (taken from each CDSL header) and asking only
+the metalanguage-correct question — *does it screen the obscene core?* — gives a clear
+diachronic shape:
+
+| Dict | Date | Lang | Screens obscene core? |
+|---|---|---|---|
+| WIL | 1832 | en | **no** — open English |
+| BOP | (1830–)1847 | la | n/a — all-Latin metalanguage |
+| PWG | 1855–75 | de | **yes** — the rule |
+| GRA | 1873–75 | de | — (root absent from the Ṛgveda corpus) |
+| PW | 1879–89 | de | **yes** |
+| PWK | 1879–89 | de | no — abridged out with the bulk |
+| AP90 | 1890 | en | **no** — open English |
+| CAE | 1891 | en | **yes** — *futuere* ×2 |
+| MW | 1899 | en | **yes** — *futuere* beside English |
+| SCH | 1928 | de | minimal — one *futuere*, one *cunnus*; clinical only |
+| AP | 1957–59 | en | **no** — open English |
+
+The obscene screen is concentrated in **c. 1855–1899**. It is absent in the earliest English
+dictionary (Wilson 1832), appears in English *only* in the 1890s (Cappeller, Monier-Williams),
+and is gone again by the mid-20th century (Schmidt's 1928 supplement keeps only the clinical
+tier; the 1957–59 Gode–Karve Apte has none). The device is thus not "Victorian English" or
+"German philology" as such but a **high-Victorian moment** shared across both metalanguages —
+roughly the half-century when a learned readership and a strict print-decency norm
+co-existed. (Caveat: eleven editions are a small, clustered sample; the shape is suggestive,
+not a fitted trend, and BOP/PWK/GRA are structurally outside the screen for the reasons
+given.)
 
 ## 4. The vulgar veil — full list (79 senses, 52 headwords)
 
@@ -463,26 +504,61 @@ waste, absent on the morally-but-not-verbally charged (the whore, the rape). Bop
 all-Latin glossary, by flattening every field to Latin, is exactly the baseline that makes
 this German gradient legible.
 
+### Blunt German is printed — for everything but sex
+
+The decisive counter-evidence: the German dictionaries are *not* squeamish in general. A
+sweep for blunt or plain German taboo words finds **401 entries** where the editors print
+exactly the vernacular they supposedly avoid — and the distribution is the proof:
+
+| Taboo field | blunt/plain German printed | entries (5 German dicts) |
+|---|---|---:|
+| prostitution | *Hure, Hurenwirthin, Hurenkind, Buhlerin, Dirne* | 158 |
+| excrement (noun) | *Koth, Unrat, Mist, Dreck* | 106 |
+| urination | *Harn, harnen, seichen, pissen* | 68 |
+| sexual violence | *schänden, geschändet, entehren, Unzucht, vergewaltigen* | 44 |
+| flatulence | *Furz, furzen* | 15 |
+| defecation (verb) | ***scheissen, beschissen*** | 10 |
+| **sex act / genitalia** | *ficken, vögeln, Fotze, Möse, Schwanz, Pimmel* … | **0** |
+
+The editors who would not write a German word for "to copulate" or "vulva" cheerfully printed
+**√*had* → *scheissen*** "to shit" (Dhātup. 23,8), **√*mih* → *seichen*** "to piss",
+**√*snu*/√*sru* → *beschissen***, *Furz* "fart", and **158** instances of *Hure* "whore".
+The blunt-German count for the **sex act and the genitalia is exactly zero** — the apparent
+hits (*vögeln* = "(of) birds", *Schwanz* = animal "tail") are homographs, not the sexual
+words. So the screen is not a decency policy in general; it is a precise, near-surgical
+suppression of the **sexual** vernacular specifically, with the body's other functions left
+in plain (often crude) German. (Full inventory: [`A36_blunt_german.csv`](A36_blunt_german.csv).)
+
 ## 6. Why it matters
 
-1. **Coverage gap for the modern reader.** A learner consulting PWG/SCH for *yabh*,
+1. **A reusable method (the contribution).** The metalanguage-relative test (§3b) generalises
+   beyond Sanskrit and beyond Latin: any historical dictionary whose discretion-screen is
+   written in a *prestige* language that also feeds the target language's technical register
+   (Latin/Greek into the European vernaculars; Classical Chinese; Sanskrit into the modern
+   Indian languages) faces the same confound, and the same fix — score the screen against the
+   *marked-ness* of the gloss in that dictionary's own metalanguage, not against a raw word
+   list. The three controls here (screen-vs-doublet, blunt-vernacular counter-inventory,
+   all-screen-language positive control) are a portable validation kit.
+2. **Coverage gap for the modern reader.** A learner consulting PWG/SCH for *yabh*,
    *cunnus*-glossed kennings, or the Aśvamedha vocabulary meets a Latin wall. Any
    evidence-graded or learner-facing layer over these dictionaries (cf.
    [`ROADMAP_2026_2027.md`](../ROADMAP_2026_2027.md) P6) should **resolve the Latin
    screen into the target language** — the CSV here is a ready de-veiling key.
-2. **A register signal, machine-readable.** The Latin gloss is a reliable flag for
+3. **A register signal, machine-readable.** The Latin gloss is a reliable flag for
    "sexual/scatological sense" across 2 104 senses in eleven dictionaries — usable for
    content tagging, for filtering, or as a feature in sense classification.
-3. **A candour axis across dictionaries.** Pairs neatly with A33 (sense-ordering) and A34
+4. **A candour axis across dictionaries.** Pairs neatly with A33 (sense-ordering) and A34
    (Renou registers): the *language of the gloss itself* encodes the editor's stance
    toward the reader, and it varies systematically by audience and date.
 
 ## 7. Data & reproducibility
 
-- Full dataset: [`A36_latin_obscena.csv`](A36_latin_obscena.csv) (2 104 senses, eleven
-  dictionaries, with a `lang` column for metalanguage). The `register` column is the raw,
-  metalanguage-neutral Adams tag; for English dictionaries it should be read through the
+- Full dataset: [`A36_latin_obscena.csv`](A36_latin_obscena.csv) (2 104 Latin-glossed senses,
+  eleven dictionaries, with a `lang` column for metalanguage). The `register` column is the
+  raw, metalanguage-neutral Adams tag; for English dictionaries it should be read through the
   caveat below (naturalised *faeces/coitus/penis* are not veils there).
+- Counter-inventory: [`A36_blunt_german.csv`](A36_blunt_german.csv) (401 entries where the
+  German dictionaries print blunt/plain German for a taboo concept), supporting §5b.
 - Extraction is a single pass over the eleven SLP1 source files with the term list,
   binomial/homograph filters, and Adams-based register map described in §2; transliteration
   via [`sanskrit-util`](https://github.com/sanskrit-lexicon/sanskrit-util). The scripts are
