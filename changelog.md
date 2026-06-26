@@ -9,6 +9,17 @@ then **cut a new version every time the changelog is updated** (promote
 
 ## [Unreleased]
 
+## [0.0.24] - 2026-06-26
+
+### Added — MW+PWG typo queue assembled (item A)
+- [`assemble_typo_queue.py`](HeadwordLists/assemble_typo_queue.py) consolidates the print
+  spine's body-confirmed FILE-FIRST typos from
+  [SanskritSpellCheck](https://github.com/gasyoun/SanskritSpellCheck) into
+  [`A_TYPO_QUEUE.md`](HeadwordLists/A_TYPO_QUEUE.md): **16 (MW 4 + PWG 12)**, each with SLP1 +
+  IAST, an **error-type** label (n→ṇ, vowel-length, sibilant, b↔v, aspirate) and the
+  dictionary's **own entry-body evidence**. PWG's are mostly **b↔v** (Fraktur-OCR). Verify on
+  scan → flip `n`→`y` → file to csl-corrections (workflow stays in SanskritSpellCheck). The
+  spine's "don't print known typos" pass is now a 16-row checklist.
 ## [0.0.23] - 2026-06-26
 
 ### Added — coverage additions ranked by DCS band (item B)
