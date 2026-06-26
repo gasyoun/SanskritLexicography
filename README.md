@@ -16,7 +16,7 @@ lexicographic tools.
 |---|---|
 | `HeadwordLists/` | Exported and derived headword lists for CDSL dictionaries, including MW, PWG, PWK, AP, BHS, CAE, CCS, SCH, SKD, VCP, VEI, aggregate comparison files, and the external [Catalan-Pujol/](HeadwordLists/Catalan-Pujol/) Sanskrit–Catalan wordlist + CDSL-coverage analysis. |
 | `Syntax-Lectures/` | Markdown and HTML lecture material (mostly Russian) on Sanskrit particles and syntax, including the interactive [particle explorer](Syntax-Lectures/sanskrit_particles_explorer.html). |
-| `literature/md/` | Full-text markdown extractions of the research literature collection (63 of 65 files; 2 are image-only scans). See [literature/md/INDEX.md](literature/md/INDEX.md) for the cross-repo relevance map. PDFs are not versioned; only the markdown index is tracked. |
+| `literature/md/` | Full-text markdown extractions of the research literature collection (65 files; 5 still **⚠ blocked** for mining — image-only scans / OCR-noise / un-isolated multi-paper bundles, flagged in the index). See [literature/md/INDEX.md](literature/md/INDEX.md) for the cross-repo relevance map. PDFs are not versioned; only the markdown index is tracked. |
 | `ROADMAP_2026_2027.md` | Research roadmap covering csl-atlas review, publication plans, FAIR gaps, standards exports, and learner-layer work. |
 | `CDSL-2025.pdf` | Snapshot/reference document for the 2025 CDSL-related work. |
 | `DCS_statistical_evaluation.htm` | Statistical evaluation material connected with DCS and Sanskrit lexical data. |
@@ -58,6 +58,15 @@ Where to read what.
 - [RussianTranslation/NWS_AUDIT_REPORT.md](RussianTranslation/NWS_AUDIT_REPORT.md)
   — living cumulative report of the NWS attribution-parser audit (per-section
   roll-up, real-loss taxonomy, source errata).
+- [RussianTranslation/LITERATURE_FOR_PWG_RU.md](RussianTranslation/LITERATURE_FOR_PWG_RU.md)
+  — the reference-shelf harvest for the Sanskrit→Russian PWG translation, mined by
+  pipeline insertion point (glossary, translator prompt, QA judge, corpus gate,
+  display); with the per-manual audit
+  [RussianTranslation/MANUALS_FOR_PWG_RU.md](RussianTranslation/MANUALS_FOR_PWG_RU.md)
+  (all 37 Lexicography-Manuals, verdict per book) and the detailed five-manual
+  theory deep-dive
+  [RussianTranslation/MANUALS_FIVE_DEEP_DIVE.md](RussianTranslation/MANUALS_FIVE_DEEP_DIVE.md)
+  (Apresjan · Riemer · Hartmann & James · Gonda–Vogel · Klosa).
 - [REFERENCES.md](REFERENCES.md) — provenance for the large reference assets.
 - [literature/md/INDEX.md](literature/md/INDEX.md) — cross-repo relevance map for
   the research literature collection: 65 sources tagged by which dictionary repo,

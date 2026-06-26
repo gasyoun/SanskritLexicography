@@ -10,6 +10,31 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## 2026-06-26
 
+### Literature shelf mined for pwg_ru → folded into prompts, glossary, and docs
+- New [LITERATURE_FOR_PWG_RU.md](LITERATURE_FOR_PWG_RU.md): three-pass full-text harvest of
+  the whole `literature/md/` reference shelf, distilled into drop-ins **by insertion point** —
+  §1 glossary tables (canonical RU grammar terms, the *yad…tad*→correlative map, a 19th-c.
+  German→RU spelling/term decoder, the Apresjan register tagset), §2 translator-prompt rules,
+  §3 QA-judge defect classes, §4 corpus-gate/strata rules, §5 web display.
+- New per-manual audit [MANUALS_FOR_PWG_RU.md](MANUALS_FOR_PWG_RU.md): walks all **37**
+  `Lexicography-Manuals/` one at a time with a verdict each — **19 drive theory · 2 marginal ·
+  15 serve other repos · 1 OCR-blocked** (Rātānjanakar; not a run blocker).
+- New deep-dive [MANUALS_FIVE_DEEP_DIVE.md](MANUALS_FIVE_DEEP_DIVE.md): detailed,
+  text-grounded theoretical input of the 5 load-bearing manuals (Apresjan · Riemer ·
+  Hartmann & James · Gonda–Vogel · Klosa) for the Sanskrit–Russian dictionary, with
+  quotations + page/chapter anchors, a "→ Sa–Ru application" per point, and a
+  "how the five compose" synthesis (Riemer→Hartmann→Apresjan decision chain;
+  Apresjan⇄Klosa glossary/reverse-index loop).
+- **Folded into the live prompts:** [pwg_ru_prompts/1_perevod.txt](pwg_ru_prompts/1_perevod.txt)
+  gains compound-type (samāsa) rendering, case-absolute constructions, śāstric formulas, and a
+  pointer to the new manual glossary; [pwg_ru_prompts/2_qa_sudya_opus.txt](pwg_ru_prompts/2_qa_sudya_opus.txt)
+  gains the matching judge defect classes.
+- New hand-curated glossary [glossaries/de_ru_translation_aids.md](glossaries/de_ru_translation_aids.md)
+  (compound-type RU names, case-absolute constructions, śāstric formulas, the correlative map,
+  the 19th-c. German orthography decoder), each row sourced to a `LITERATURE_FOR_PWG_RU.md`
+  section. This is the **one manually-maintained** file in `glossaries/` (the rest are
+  `renou_glossary.py`-generated).
+
 ### Renou register glossaries — first tangible artifacts from the register axis
 - New [src/renou_glossary.py](src/renou_glossary.py): filter the Renou-tagged dictionaries
   by register / state / provenance → a deduplicated headword glossary (aggregated by IAST
