@@ -105,6 +105,27 @@ a probe), never a hunch. When a finding is later refuted or superseded, strike i
   **Source:** [`sense_order_metrics.md` § "Foundations check"](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/research/sense_order_metrics.md)
   · [`analyze_sense_order.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/research/analyze_sense_order.py). — RussianTranslation · 2026-06-24
 
+- **MW has no sense-level `<div>`; the sense unit is the record itself.**
+  Evidence: `csl-orig/v02/mw/mw.txt` carries **0** `<div n="m">` and only **4** `<div n="p">` across
+  **286,526** `<L>` records — MW essentially never subdivides an entry by sense in markup (senses are
+  separated by `¦` inside the single record body).
+  Implication: a sense-segmenter for MW must split on `¦` inside the record, not on `<div>`; and do
+  **not** template MW's flat structure onto subentry-rich dicts (PWG/Apte) or vice-versa — `<div>` depth
+  is structural, not a sense boundary, so it over-counts senses.
+  **Source:** measured `grep -c '<div n="m"' / '<L>'` on
+  [`v02/mw/mw.txt`](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/mw/mw.txt). — csl-orig (mw) · 2026-06-26
+
+- **"Apte" is three distinct dictionaries, and the same lemma keys differently across dicts (stem vs nominative).**
+  Evidence: AP90 (Apte 1890), AP (Apte Revised 1957–59), and AE/ApteES (reverse English→Sanskrit Apte)
+  are separate `csl-orig` dicts with different markup (AP90 uses `∙²` sense markers, numeric `<pc>0002-1`
+  page-cols, `{%<lex>a.</lex>%}` labels). The same headword also keys differently *between* dictionaries —
+  MW stores the bare stem `agni`, Apte the nominative `agniH` — so a cross-dict join on the raw key
+  silently misses matches (independently re-hit in csl-guides and csl-apidev).
+  Implication: never treat "Apte" as one source — pick AP90 / AP / AE explicitly. For any cross-dict
+  headword join, normalise stem↔nominative and join on the `key1` computational key, not `key2`/printed form.
+  **Source:** csl-guides/.ai_state.md + csl-apidev/.ai_state.md (the `agni`/`agniH` resolver note); markup per
+  [`v02/ap90/ap90.txt`](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/ap90/ap90.txt). — csl-guides / csl-apidev / csl-orig · 2026-06
+
 ## Encoding & normalization
 
 - **IAST Unicode collides and lossily normalises if you're naïve.**
