@@ -130,9 +130,13 @@ def cmd_build(args):
                 skipped += 1
                 continue
             att = attested_for(idx, k1, k2)
+            provider_gate = {'translation_provider_required': True,
+                             'verdict_provider_required_after_translation': True,
+                             'reuse_signal_count': len(indep) + (1 if kow else 0)}
             o.write(json.dumps({'i': written, 'ord': ordi, 'key1': k1, 'key2': k2,
                                 'iast': assemble.iast(k1), 'de_skeleton': sk,
-                                'placeholders': ph, 'attested': att},
+                                'placeholders': ph, 'attested': att,
+                                'provider_gate': provider_gate},
                                ensure_ascii=False) + '\n')
             written += 1
             if written >= n:
@@ -174,6 +178,7 @@ def cmd_collect(args):
                    'ok': good, 'severity': sev,
                    'review_status': review_status, 'reviewer': None,
                    'attested': card.get('attested', []),     # persist the reuse evidence (rec 1)
+                   'provider_gate': card.get('provider_gate', {}),
                    'provenance': prov}
             out.write(json.dumps(rec, ensure_ascii=False) + '\n')
             appended += 1
