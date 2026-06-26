@@ -13,7 +13,7 @@ SamudraManthanam's corpus.db (read-only) — it does not duplicate the corpus.
 
 Modes:
   python corpus_gate.py lookup  <key1> [key2]      one headword → glosses + examples
-  python corpus_gate.py card    <key1> "<pwg_ru>"  emit the 4_korpus input JSON
+  python corpus_gate.py card    <key1> "<pwg_ru>"  emit the 4_korpus input JSON + deterministic precheck
   python corpus_gate.py coverage [N]               per-signal coverage over PWG
   python corpus_gate.py tune     [N]               inter-dictionary agreement → threshold
 """
@@ -296,12 +296,29 @@ def heuristic(pwg_ru, indep):
             best = max(best, len(a & b) / len(a))
     return ('pass' if best >= THRESHOLD else 'review'), round(best, 2)
 
+
+def deterministic_precheck(pwg_ru, indep):
+    status, score = heuristic(pwg_ru, indep)
+    if status == 'pass':
+        route = 'auto-pass-deterministic'
+        note = 'high head-term overlap with an independent Sanskrit-Russian gloss'
+    elif status == 'review':
+        route = 'llm-verdict-required'
+        note = 'independent evidence exists, but synonym-aware LLM verdict is required'
+    else:
+        route = 'llm-verdict-required'
+        note = 'no usable independent Russian gloss for a deterministic precheck'
+    return {'status': status, 'route': route, 'score': score,
+            'threshold': THRESHOLD, 'head_sense_only': HEAD_SENSE_ONLY,
+            'note': note}
+
 def build_card(idx, key1, key2, pwg_ru):
     indep, kow = lookup(idx, key1, key2)
     return {'key1': key1, 'key2': key2 or key1, 'pwg_ru': pwg_ru,
             'independent_glosses': [{'source': g['source'], 'code': g['code'],
                                      'gloss': g['gloss']} for g in indep],
             'kow_reference': kow,
+            'deterministic_precheck': deterministic_precheck(pwg_ru, indep),
             'hindi_sense': lookup_sense(key1, key2),   # soft sense signal, not correctness
             'corpus_examples': corpus_examples(key1),
             'latin_binomials': lookup_binomials(key1, key2),   # Meulenbeld/SNP, botanical

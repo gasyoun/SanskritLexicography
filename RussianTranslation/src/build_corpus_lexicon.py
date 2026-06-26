@@ -37,7 +37,7 @@ def _key():
     sys.exit('no DEEPSEEK_API_KEY in .env')
 
 
-KEY = _key()
+KEY = None
 _STRATA_PATH = os.path.join(HERE, 'corpus_strata.json')
 STRATA = json.load(open(_STRATA_PATH, encoding='utf-8')) if os.path.exists(_STRATA_PATH) else {}
 
@@ -62,6 +62,9 @@ SYS = ('You align a Sanskrit verse to its Russian translation at the WORD level.
 
 
 def deepseek(user, retries=3, system=None):
+    global KEY
+    if KEY is None:
+        KEY = _key()
     for a in range(retries):
         try:
             r = requests.post(API, headers={'Authorization': 'Bearer ' + KEY},
