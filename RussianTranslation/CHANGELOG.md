@@ -14,10 +14,13 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 - New [src/renou_glossary.py](src/renou_glossary.py): filter the Renou-tagged dictionaries
   by register / state / provenance → a deduplicated headword glossary (aggregated by IAST
   across the 8 dicts; each row = states · register provenance ls/dcs · dicts · senses).
-  Supports `--state`, `--prov`, `--min-dicts`, `--state-only`, md/tsv.
-- Shipped three glossaries in [glossaries/](glossaries/README.md): **épigraphique** (709
-  inscriptional words — `akṣayanīvī`, `abhayagirivihāra`, dynastic names), **bhāṣya**
-  (14,498 commentary words; 10,320 in ≥2 dicts), **jaina** (286). Headline finding:
+  Supports `--state`, `--exclude-state` (cross-axis slices), `--prov`, `--min-dicts`,
+  `--state-only`, md/tsv.
+- Shipped **8 glossaries** in [glossaries/](glossaries/README.md): register lexica —
+  **épigraphique** (709 inscriptional words: `akṣayanīvī`, `abhayagirivihāra`, dynastic
+  names), **bhāṣya** (14,498; 10,320 in ≥2 dicts), **kāvya** (26,973), **bauddha** (25,740),
+  **jaina** (286); cross-axis slices — Vedic-in-commentary (`bhasya∩I`, 6,895), born-in-kāvya
+  (`kavya∖I`, 20,758), Vedic-only archaisms (`state I` only, 25,220). Headline finding:
   **484 of 709 épig words (68 %) are corpus-absent** — attested only in inscriptions, so a
   corpus-only method never sees them. The clearest proof the register axis adds signal the
   state axis can't.
