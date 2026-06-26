@@ -1,0 +1,876 @@
+dict,headword_iast,headword_slp1,register,field,latin_gloss,sanskrit_example_iast,citation
+PW,aṅkuśa,aNkuSa,CLINICAL,clitoris,clitoris,ā,GAL.
+PW,bhagāṅkura,BagANkura,CLINICAL,clitoris,clitoris,bhagāṅkura,
+PWG,bhagāṅkura,BagANkura,CLINICAL,clitoris,clitoris,a˚,ŚABDĀRTHAK.
+PW,gula,gula,CLINICAL,clitoris,clitoris,ā,
+PWG,gula,gula,CLINICAL,clitoris,clitoris,ā,H. 611
+PWG,yoniliṅga,yoniliNga,CLINICAL,clitoris,clitoris,yoniliṅga,WILSON
+SCH,adhorata,aDorata,CLINICAL,coitus,coitus,,
+PW,aharṣaṇa,aharzaRa,CLINICAL,coitus,coitus,aharṣaṇa,"CARAKA. 8,13"
+SCH,aibha,EBa,CLINICAL,coitus,coitus,,
+SCH,aiṇa,ERa,CLINICAL,coitus,coitus,,
+PW,aiṇeya,EReya,CLINICAL,coitus,coeundi,eṇa,
+PWG,aiṇeya,EReya,CLINICAL,coitus,coitus,eṇa,"H. an. 3,484"
+SCH,aiṇeya,EReya,CLINICAL,coitus,coitus,,
+SCH,antaḥsaṃdaṃśa,antaHsaMdaMSa,CLINICAL,coitus,coitus,,
+PWG,aratatrapa,aratatrapa,CLINICAL,coitus,coitus,rata — trapā,"TRIK. 2,10,6"
+SCH,ardhanipīḍita,arDanipIqita,CLINICAL,coitus,coitus,,
+SCH,ardhapadmāsana,arDapadmAsana,CLINICAL,coitus,coitus,,
+SCH,ardhapīḍita,arDapIqita,CLINICAL,coitus,coitus,,
+SCH,ardhapīḍitaka,arDapIqitaka,CLINICAL,coitus,coitus,,
+PW,asaṃvartamāna,asaMvartamAna,CLINICAL,coitus,coitu,asaṃvartamāna,
+SCH,avagiraṇa,avagiraRa,CLINICAL,coitus,coitus,,
+SCH,avalambita,avalambita,CLINICAL,coitus,coitus,,
+SCH,avalambitaka,avalambitaka,CLINICAL,coitus,coitus,,
+SCH,avamardana,avamardana,CLINICAL,coitus,coitus,,
+SCH,avidārita,avidArita,CLINICAL,coitus,coitus,,
+SCH,aṅgulipīḍana,aNgulipIqana,CLINICAL,coitus,coitus,,
+SCH,aṅgulīrata,aNgulIrata,CLINICAL,coitus,coitus,,
+SCH,bakapīḍaka,bakapIqaka,CLINICAL,coitus,coitus,,
+SCH,bandharāja,banDarAja,CLINICAL,coitus,coitus,,
+SCH,bandhurita,banDurita,CLINICAL,coitus,coitus,,
+SCH,bhramaraka,Bramaraka,CLINICAL,coitus,coitus,,
+SCH,bhramaṇa,BramaRa,CLINICAL,coitus,coitus,,
+SCH,bhrāmara,BrAmara,CLINICAL,coitus,coitus,,
+SCH,bhrāmaraka,BrAmaraka,CLINICAL,coitus,coitus,,
+SCH,bhugna,Bugna,CLINICAL,coitus,coitus,,
+SCH,bhugnaka,Bugnaka,CLINICAL,coitus,coitus,,
+PWG,bhū,BU,CLINICAL,coitus,coire,patyā saṃ bhaveha,"TS. 5,5,2,1"
+SCH,bībhatsa,bIBatsa,CLINICAL,coitus,coitus,,
+SCH,cakrabandha,cakrabanDa,CLINICAL,coitus,coitus,,"MBh. 7,191,22."
+SCH,candrābharaṇabhandha,candrABaraRaBanDa,CLINICAL,coitus,coitus,,
+PW,casamāsa,casamAsa,CLINICAL,coitus,copulatives,casamāsa,
+PWG,casamāsa,casamAsa,CLINICAL,coitus,copulatives,sa˚,"Verz. d. Oxf. H. 175,a,5"
+PW,catuṣpada,catuzpada,CLINICAL,coitus,coeundi,ā,
+PWG,catuṣpada,catuzpada,CLINICAL,coitus,coitus,strīṇāṃ karaṇabhede,RĀJAN.
+SCH,caṭakavilasita,cawakavilasita,CLINICAL,coitus,coitus,,
+SCH,caṭakavilāsa,cawakavilAsa,CLINICAL,coitus,coitus,,
+PW,ceṣṭaka,cezwaka,CLINICAL,coitus,coeundi,ceṣṭaka,
+PWG,ceṣṭaka,cezwaka,CLINICAL,coitus,coitus,pādamekaṃ hṛdi nyasya itareṇaiva ceṣṭayet . kāntaḥ kroḍe sthitāṃ nārīṃ bandho 'yaṃ ceṣṭako mataḥ ..,SMARADĪPIKĀ
+SCH,chāgala,CAgala,CLINICAL,coitus,coitus,,
+SCH,cumbitaka,cumbitaka,CLINICAL,coitus,coitus,,
+SCH,cāṭukapheluka,cAwukaPeluka,CLINICAL,coitus,coitus,,
+SCH,dantāvalopamardita,dantAvalopamardita,CLINICAL,coitus,coitus,,
+SCH,darpavināśana,darpavinASana,CLINICAL,coitus,coitus,,
+SCH,devabandha,devabanDa,CLINICAL,coitus,coitus,,
+PW,dhainuka,DEnuka,CLINICAL,coitus,coeundi,dhainuka,
+PWG,dhainuka,DEnuka,CLINICAL,coitus,coitus,dhenuka,MED. k. 106
+SCH,dhainuka,DEnuka,CLINICAL,coitus,coitus,,
+PW,dhenuka,Denuka,CLINICAL,coitus,coeundi,dhenuka,"MBH. 6,50,51"
+PWG,dhenuka,Denuka,CLINICAL,coitus,coitus,dhainuka,RATIM.
+SCH,dhenuka,Denuka,CLINICAL,coitus,coeundi,,"S I,198,3."
+SCH,dhvajabandha,DvajabanDa,CLINICAL,coitus,coitus,,
+SCH,dolitabandha,dolitabanDa,CLINICAL,coitus,coitus,,
+SCH,dolāyitabandha,dolAyitabanDa,CLINICAL,coitus,coitus,,
+PW,dvayadvayasamāpatti,dvayadvayasamApatti,CLINICAL,coitus,copulation,dvayadvayasamāpatti,"MAHĀVY. 281,265"
+SCH,dvitala,dvitala,CLINICAL,coitus,coitus,,
+PW,dyo,dyo,CLINICAL,coitus,copulativen,dyo,"MBH. 8,90,32"
+PWG,dīrgharata,dIrGarata,CLINICAL,coitus,coitus,rata,WILS.
+PWG,dīrghasurata,dIrGasurata,CLINICAL,coitus,coitus,su˚,"TRIK. 2,10,5"
+PW,ekapada,ekapada,CLINICAL,coitus,coeundi,ekapadā,"VARĀH. BṚH. S. 6,12"
+PWG,ekapada,ekapada,CLINICAL,coitus,coitus,pādamekaṃ hṛdi sthāpya dvitīyaṃ skandhasaṃsthitam . stanau dhṛtvā rametkāmī bandhastvekapadaḥ smṛtaḥ ..,13997
+SCH,ekapāda,ekapAda,CLINICAL,coitus,coitus,,
+SCH,ekarūpa,ekarUpa,CLINICAL,coitus,coitus,,
+SCH,gajopamardita,gajopamardita,CLINICAL,coitus,coitus,,
+PW,gantavya,gantavya,CLINICAL,coitus,coitus,viśrambha,7
+PWG,gantavya,gantavya,CLINICAL,coitus,coitus,paradārā na gantavyāḥ,"M. 8,314"
+SCH,gardabhākrānta,gardaBAkrAnta,CLINICAL,coitus,coitus,,
+SCH,garuḍabandha,garuqabanDa,CLINICAL,coitus,coitus,,
+SCH,gaurīpriya,gOrIpriya,CLINICAL,coitus,coitus,,
+SCH,ghaṭṭita,Gawwita,CLINICAL,coitus,coitus,,
+PWG,gotrapravara,gotrapravara,CLINICAL,coitus,copulatives,gotrapravara,
+SCH,goyūthika,goyUTika,CLINICAL,coitus,coitus,,
+PW,grāmin,grAmin,CLINICAL,coitus,coitus,grāmiṇāṃ ratiḥ,
+PWG,grāmin,grAmin,CLINICAL,coitus,coitus,grāmiṇāṃ ratiḥ,"BHĀG. P. 4,29,14"
+SCH,grāmyarata,grAmyarata,CLINICAL,coitus,coitus,,
+SCH,gārdabha,gArdaBa,CLINICAL,coitus,coitus,,
+SCH,gārdabhika,gArdaBika,CLINICAL,coitus,coitus,,
+SCH,harivikrama,harivikrama,CLINICAL,coitus,coitus,,"Ragh. XIX,25"
+PW,harṣakīlaka,harzakIlaka,CLINICAL,coitus,coeundi,harṣakīlaka,
+PWG,harṣakīlaka,harzakIlaka,CLINICAL,coitus,coeundi,nārī pādadvayaṃ dhṛtvā kāntasyoruyugopari . kaṭimāloḍayedāśu bandho 'yaṃ harṣakīlakaḥ ..,SMARADĪPIKĀ Tüb. Hdschr.
+SCH,harṣalīlaka,harzalIlaka,CLINICAL,coitus,coitus,,
+PW,harṣasaṃpuṭa,harzasaMpuwa,CLINICAL,coitus,coeundi,harṣasaṃpuṭa,
+PWG,harṣasaṃpuṭa,harzasaMpuwa,CLINICAL,coitus,coeundi,nāryāścoruyugaṃ dhṛtvā karābhyāṃ pīḍayetpunaḥ . kāmayennirbhayaḥ kāmī bandho 'yaṃ harṣasaṃpuṭaḥ ..,SMARADĪPIKĀ Tüb. Hdschr.
+SCH,haṃsabandha,haMsabanDa,CLINICAL,coitus,coitus,,
+PW,haṃsakīlaka,haMsakIlaka,CLINICAL,coitus,coeundi,haṃsakīlaka,
+PWG,haṃsakīlaka,haMsakIlaka,CLINICAL,coitus,coeundi,haṃsakīlaka,SMARADĪPIKĀ
+SCH,haṃsalīlaka,haMsalIlaka,CLINICAL,coitus,coitus,,
+SCH,hula,hula,CLINICAL,coitus,coitus,,H
+SCH,hāriṇa,hAriRa,CLINICAL,coitus,coitus,,
+SCH,hāstikabandha,hAstikabanDa,CLINICAL,coitus,coitus,,
+SCH,hāsya,hAsya,CLINICAL,coitus,coitus,,
+PWG,i,i,CLINICAL,coitus,coire,rohiṇīmupait,"M. 6,22"
+SCH,indrāṇika,indrARika,CLINICAL,coitus,coitus,,"Vās. 244,3."
+PW,indrāṇī,indrARI,CLINICAL,coitus,coeundi,indrāṇī,"ŚAT. BR. 10,5,2,9"
+PWG,indrāṇī,indrARI,CLINICAL,coitus,coitus,strībandha,TRIK.
+SCH,indrāṇī,indrARI,CLINICAL,coitus,coeundi,,"H 27,48"
+SCH,indrāṇīka,indrARIka,CLINICAL,coitus,coitus,,
+SCH,jayabandha,jayabanDa,CLINICAL,coitus,coitus,,
+SCH,jvālāmukhabandha,jvAlAmuKabanDa,CLINICAL,coitus,coitus,,
+SCH,jānukūrpara,jAnukUrpara,CLINICAL,coitus,coitus,,
+PW,jṛmbhita,jfmBita,CLINICAL,coitus,coeundi,jrambh,
+PWG,jṛmbhita,jfmBita,CLINICAL,coitus,coitus,strīṇāṃ karaṇa,MED.
+SCH,jṛmbhita,jfmBita,CLINICAL,coitus,coitus,,
+SCH,jṛmbhitaka,jfmBitaka,CLINICAL,coitus,coitus,,
+SCH,kalāgraha,kalAgraha,CLINICAL,coitus,coitus,,
+SCH,kalāvataraṇa,kalAvataraRa,CLINICAL,coitus,coitus,,
+PWG,kam,kam,CLINICAL,coitus,coire,saṃdhyāyāṃ hṛcchayārditā,"BHĀG. P. 3,14,7"
+SCH,kandarpa,kandarpa,CLINICAL,coitus,coitus,,"S I,406,11"
+SCH,kandarpayuddha,kandarpayudDa,CLINICAL,coitus,coitus,,"S I,103,2"
+PW,kandarpaśṛṅkhala,kandarpaSfNKala,CLINICAL,coitus,coeundi,kandarpaśṛṅkhala,
+PWG,kandarpaśṛṅkhala,kandarpaSfNKala,CLINICAL,coitus,coitus,śṛṅgārabandhaviśeṣaḥ . tasya lakṣaṇam nārī padadvayaṃ sthāpya kāntasyorudvayopari . kaṭiṃ ceddholayedāśu bandhaḥ kandarpaśṛṅkhalaḥ .. iti ratimañjarī .,ŚKDR.
+SCH,kanduka,kanduka,CLINICAL,coitus,coitus,,
+PWG,karaṇa,karaRa,CLINICAL,coitus,coitus,yoṣitāṃ karaṇam,H. an.
+PW,karkaṭa,karkawa,CLINICAL,coitus,coeundi,ā,"BHĀVAPR. 3,71"
+PWG,karkaṭa,karkawa,CLINICAL,coitus,coitus,karkaṭī,H. an.
+SCH,karkaṭa,karkawa,CLINICAL,coitus,coitus,,
+SCH,karṇābharaṇa,karRABaraRa,CLINICAL,coitus,coitus,,
+SCH,kaurma,kOrma,CLINICAL,coitus,coitus,,
+SCH,kaurmaka,kOrmaka,CLINICAL,coitus,coitus,,
+PW,keyūra,keyUra,CLINICAL,coitus,coeundi,keyūra,"KĀRAṆḌ. 51,11"
+PWG,keyūra,keyUra,CLINICAL,coitus,coitus,strījaṅghe caiva saṃpīḍya dorbhyāmāliṅgya sundarīm . kārayet ṣṭhāpanaṃ,"BHARTṚ. 2,16"
+PW,krīḍāratna,krIqAratna,CLINICAL,coitus,coitus,krīḍāratna,
+PW,kuharita,kuharita,CLINICAL,coitus,coitus,kuharita,
+SCH,kukkuṭabandha,kukkuwabanDa,CLINICAL,coitus,coitus,,
+SCH,kuliśa,kuliSa,CLINICAL,coitus,coitus,,
+PW,kuliśanāyaka,kuliSanAyaka,CLINICAL,coitus,coeundi,kuliśanāyaka,
+PWG,kuliśanāyaka,kuliSanAyaka,CLINICAL,coitus,coitus,strīpādadvayamākṛṣya vimumukṣitaliṅgakaḥ . yoniṃ ca pīḍayetkāmī bandhaḥ kuliśanāyakaḥ ..,RATIM.
+SCH,kuṇḍala,kuRqala,CLINICAL,coitus,coitus,,
+PW,kāka,kAka,CLINICAL,coitus,coeundi,ī,"MBH. 8,41,58"
+PWG,kāka,kAka,CLINICAL,coitus,coitus,kāka,H. an.
+PW,kākapada,kAkapada,CLINICAL,coitus,coeundi,kākapada,
+PWG,kākapada,kAkapada,CLINICAL,coitus,coitus,pādau dvau skandhayugmasthau kṣiptvā liṅgaṃ bhage laghu . kāmayetkāmukīṃ kāmī bandhaḥ kākapado mataḥ ..,MOLESW.
+SCH,kākila,kAkila,CLINICAL,coitus,coeundi,,"S I,83,2"
+PW,kāla,kAla,CLINICAL,coitus,coitus,kālaṃ gacchati,"CHĀND. UP. 2,13,1"
+PWG,kāla,kAla,CLINICAL,coitus,coitus,kālaṃ gacchati,"CHĀND. UP. 2,13,1"
+PW,kāmaprada,kAmaprada,CLINICAL,coitus,coeundi,kāmaprada,
+PWG,kāmaprada,kAmaprada,CLINICAL,coitus,coitus,dvau pādau skandhasaṃlagnau kṣiptvā liṅgaṃ bhage tathā . kāmayetkāmukaḥ prītyā bandhaḥ kāmaprado hi saḥ ..,SMARAD.
+SCH,kāmapāśaka,kAmapASaka,CLINICAL,coitus,coitus,,
+SCH,kāmasundara,kAmasundara,CLINICAL,coitus,coitus,,
+SCH,kāminīpriya,kAminIpriya,CLINICAL,coitus,coitus,,
+SCH,kārkaṭaka,kArkawaka,CLINICAL,coitus,coitus,,
+PWG,kīla,kIla,CLINICAL,coitus,coitus,ratahati,ŚKDR.
+SCH,kīrti,kIrti,CLINICAL,coitus,coitus,,
+SCH,kūrmabandha,kUrmabanDa,CLINICAL,coitus,coitus,,
+PW,kṛcchravyavāya,kfcCravyavAya,CLINICAL,coitus,coitus,kṛcchravyavāya,"CARAKA 1,21"
+PW,kṣip,kzip,CLINICAL,coitus,coitus,ākṣipta,"NĀR. 12,16. 13"
+PW,kṣubdha,kzubDa,CLINICAL,coitus,coeundi,kṣubh,
+PWG,kṣubdha,kzubDa,CLINICAL,coitus,coitus,pārśvopari padau kṛtvā yonau liṅgena tāḍayet . bāhubhyāṃ dhāraṇaṃ gāḍhaṃ bandho vai kṣubdhasaṃjñakaḥ ..,H. 1023
+SCH,lambaka,lambaka,CLINICAL,coitus,coitus,,
+PW,latāveṣṭa,latAvezwa,CLINICAL,coitus,coeundi,latāveṣṭa,
+PWG,latāveṣṭa,latAvezwa,CLINICAL,coitus,coeundi,bāhubhyāṃ pādayugmābhyāṃ veṣṭayitvā striyaṃ ramet . laghu liṅgatāḍanaṃ,10319
+PW,likh,liK,CLINICAL,coitus,coire,lekhayati,"NĀRADA (a.) 2,1,150"
+PWG,likh,liK,CLINICAL,coitus,coire,lekhayati,"MBH. 13,2456"
+SCH,lolita,lolita,CLINICAL,coitus,coitus,,
+SCH,līlāsana,lIlAsana,CLINICAL,coitus,coitus,,
+SCH,līna,lIna,CLINICAL,coitus,coitus,,
+SCH,manmatha,manmaTa,CLINICAL,coitus,coitus,,"S I,96,6"
+SCH,manmathakalaha,manmaTakalaha,CLINICAL,coitus,coitus,,"S I,103,5."
+SCH,manmathakeli,manmaTakeli,CLINICAL,coitus,coitus,,"Rasas. 49,11"
+SCH,mantha,manTa,CLINICAL,coitus,coitus,,
+SCH,manthana,manTana,CLINICAL,coitus,coitus,,
+PW,markaṭa,markawa,CLINICAL,coitus,coeundi,markaṭi,"BHĀVAPR. 1,206"
+PWG,markaṭa,markawa,CLINICAL,coitus,coitus,strīkaraṇāntara,H. 1197
+SCH,mausalabandha,mOsalabanDa,CLINICAL,coitus,coitus,,
+PW,maṇḍūka,maRqUka,CLINICAL,coitus,coeundi,maṇḍūkī,Mat. med. 213
+PWG,maṇḍūka,maRqUka,CLINICAL,coitus,coitus,"abdhimaṇḍūkī, brahma˚, māṇḍūka, māṇḍūki, māṇḍūkeya",VIŚVA
+SCH,maṇḍūka,maRqUka,CLINICAL,coitus,coitus,,"Aśvav. 39,6. 11."
+SCH,mukula,mukula,CLINICAL,coitus,coitus,,"S I,310,7."
+SCH,muraja,muraja,CLINICAL,coitus,coitus,,
+SCH,musala,musala,CLINICAL,coitus,coitus,,
+SCH,mārga,mArga,CLINICAL,coitus,coitus,,"R. ed. Bomb. 3,59,26."
+SCH,mārjāra,mArjAra,CLINICAL,coitus,coitus,,
+SCH,mārjārakrīḍitaka,mArjArakrIqitaka,CLINICAL,coitus,coitus,,
+SCH,mārjāralatitaka,mArjAralatitaka,CLINICAL,coitus,coitus,,
+SCH,mārkaṭa,mArkawa,CLINICAL,coitus,coitus,,
+SCH,mārkaṭika,mArkawika,CLINICAL,coitus,coitus,,
+SCH,mātsyabandha,mAtsyabanDa,CLINICAL,coitus,coitus,,
+SCH,mātsyapuṭa,mAtsyapuwa,CLINICAL,coitus,coitus,,
+SCH,māyūra,mAyUra,CLINICAL,coitus,coitus,,H
+PW,mṛga,mfga,CLINICAL,coitus,coitus,maṅga,"HEMĀDRI 1,651,19. 654,11"
+PWG,mṛga,mfga,CLINICAL,coitus,coitus,vadati madhuravāṇīṃ dīrghanetro 'tibhīruścapalamatiḥ sudehaḥ śīghravego mṛgo 'yam . — . mṛge tuṣṭā ca citriṇī . — . citriṇīmṛgayoryonimeḍhrakau ca tathāvidhau,"VARĀH. BṚH. S. 53,44"
+SCH,nabhovyāpta,naBovyApta,CLINICAL,coitus,coitus,,
+SCH,narāyita,narAyita,CLINICAL,coitus,coitus,,
+PW,nidhuvana,niDuvana,CLINICAL,coitus,coitus,nidhuvana,"HARṢAC. 162,6"
+PWG,nidhuvana,niDuvana,CLINICAL,coitus,coitus,ni,UJJVAL.
+SCH,nirghāta,nirGAta,CLINICAL,coitus,coitus,,
+SCH,nirhāti,nirhAti,CLINICAL,coitus,coitus,,
+PW,nāga,nAga,CLINICAL,coitus,coeundi,karaṇa,GOLĀDHY. BHUV. 41
+PWG,nāga,nAga,CLINICAL,coitus,coitus,strībandha,H. an.
+SCH,nāga,nAga,CLINICAL,coitus,coitus,,"H XXXI,28."
+SCH,nāgakesara,nAgakesara,CLINICAL,coitus,coitus,,
+PW,nāgapada,nAgapada,CLINICAL,coitus,coeundi,nāgapada,
+PWG,nāgapada,nAgapada,CLINICAL,coitus,coitus,pada,RATIM.
+PW,nāgapāśa,nAgapASa,CLINICAL,coitus,coeundi,nāgapāśa,
+PWG,nāgapāśa,nAgapASa,CLINICAL,coitus,coitus,nāga,H. an.
+PW,nāgapāśaka,nAgapASaka,CLINICAL,coitus,coeundi,nāgapāśaka,
+PWG,nāgapāśaka,nAgapASaka,CLINICAL,coitus,coitus,nāgapāśaka,RATIM.
+PW,nāgara,nAgara,CLINICAL,coitus,coeundi,˚deśa,"HEMĀDRI 1,550,17"
+PWG,nāgara,nAgara,CLINICAL,coitus,coitus,kelināgara,VIŚVA
+SCH,nāgaraka,nAgaraka,CLINICAL,coitus,coitus,,
+PW,nīlāsana,nIlAsana,CLINICAL,coitus,coeundi,nīlāsana,"RĀJAN. 9,140"
+PWG,nīlāsana,nIlAsana,CLINICAL,coitus,coitus,nīla,ŚKDR.
+SCH,nīrabandha,nIrabanDa,CLINICAL,coitus,coitus,,
+SCH,nīvīnivāraṇa,nIvInivAraRa,CLINICAL,coitus,coitus,,
+PW,nṛsiṃha,nfsiMha,CLINICAL,coitus,coeundi,˚siṃhācārya,"AGNI-P. 43,18"
+PWG,nṛsiṃha,nfsiMha,CLINICAL,coitus,coitus,˚caturdaśī,RATIM.
+PW,padma,padma,CLINICAL,coitus,coeundi,padmaka,"BHĀVAPR. 1,186"
+PWG,padma,padma,CLINICAL,coitus,coitus,hastābhyāṃ ca samāliṅgya nārī padmāsanopari . ramedgāḍhaṃ samākṛṣya bandho 'yaṃ padmasaṃjñakaḥ ..,VEDĀNTAS. (Allah.) No. 130
+SCH,padmabandha,padmabanDa,CLINICAL,coitus,coitus,,
+PW,padmāsana,padmAsana,CLINICAL,coitus,coeundi,padmāsana,
+PWG,padmāsana,padmAsana,CLINICAL,coitus,coitus,himagiriśilābaddha˚,"Ind. St. 2,47, N. 2"
+SCH,pallava,pallava,CLINICAL,coitus,coitus,,"Vās. 38,4."
+PWG,parimala,parimala,CLINICAL,coitus,coitus,suratopamardavikasaccharīrarāgādisaurabhe,MED.
+SCH,parimṛṣṭaka,parimfzwaka,CLINICAL,coitus,coitus,,
+SCH,parivartanaka,parivartanaka,CLINICAL,coitus,coitus,,
+SCH,parivartita,parivartita,CLINICAL,coitus,coitus,,
+SCH,parāvṛtta,parAvftta,CLINICAL,coitus,coitus,,
+SCH,parāvṛttaka,parAvfttaka,CLINICAL,coitus,coitus,,
+SCH,paśubandha,paSubanDa,CLINICAL,coitus,coitus,,
+PW,paśupāśaka,paSupASaka,CLINICAL,coitus,coeundi,paśupāśaka,
+PWG,paśupāśaka,paSupASaka,CLINICAL,coitus,coitus,striyamānatapūrvāṅgīṃ svapādāntaḥ padadvayam . ūrdhvāṃśena rametkāmī bandho 'yaṃ paśupāśakaḥ ..,RATIM.
+SCH,paṅkajāsana,paNkajAsana,CLINICAL,coitus,coitus,,
+SCH,phaṇipāśa,PaRipASa,CLINICAL,coitus,coitus,,
+PWG,pravara,pravara,CLINICAL,coitus,copulatives,gotra˚,"Verz. d. Oxf. H. 268,b,39"
+PW,praveśana,praveSana,CLINICAL,coitus,coitus,praveśana,GAL.
+PWG,praveśana,praveSana,CLINICAL,coitus,coitus,paracitta˚,"PĀR. GṚHY. 1,11"
+SCH,preṅkha,preNKa,CLINICAL,coitus,coitus,,
+SCH,preṅkholita,preNKolita,CLINICAL,coitus,coitus,,
+SCH,preṅkholitaka,preNKolitaka,CLINICAL,coitus,coitus,,
+PW,priyatoṣaṇa,priyatozaRa,CLINICAL,coitus,coeundi,priyatoṣaṇa,
+PWG,priyatoṣaṇa,priyatozaRa,CLINICAL,coitus,coitus,ratibandhaviśeṣa,ŚKDR.
+SCH,prālambaka,prAlambaka,CLINICAL,coitus,coitus,,
+SCH,puruṣarata,puruzarata,CLINICAL,coitus,coitus,,"S I,526,5"
+SCH,puruṣopasṛpta,puruzopasfpta,CLINICAL,coitus,coitus,,
+SCH,puruṣopasṛptaka,puruzopasfptaka,CLINICAL,coitus,coitus,,
+PW,puruṣāyita,puruzAyita,CLINICAL,coitus,coitus,˚tva,"DEŚĪN. 1,42"
+PWG,pāra,pAra,CLINICAL,coitus,coitus,abhayasya,"CHĀND. UP. 2,13,1"
+SCH,pārāvata,pArAvata,CLINICAL,coitus,coitus,,
+SCH,pārśvasaṃpuṭa,pArSvasaMpuwa,CLINICAL,coitus,coitus,,
+PW,pīḍita,pIqita,CLINICAL,coitus,coeundi,pīḍana,"MBH. 15,227"
+PWG,pīḍita,pIqita,CLINICAL,coitus,coitus,karaṇe strīṇām,"H. an. 3,282"
+SCH,pīḍita,pIqita,CLINICAL,coitus,coitus,,
+SCH,pīḍā,pIqA,CLINICAL,coitus,coitus,,
+SCH,pūruṣāyitarata,pUruzAyitarata,CLINICAL,coitus,coitus,,Rasas. 183
+SCH,rahas,rahas,CLINICAL,coitus,coitus,,
+SCH,ramaṇarata,ramaRarata,CLINICAL,coitus,coitus,,"S I,101,2."
+SCH,rambhāpriya,ramBApriya,CLINICAL,coitus,coitus,,
+PW,rata,rata,CLINICAL,coitus,coitus,ā,
+PWG,rata,rata,CLINICAL,coitus,coitus,ā,"AK. 2,7,56"
+PWG,ratabandha,ratabanDa,CLINICAL,coitus,coitus,ratabandha,"H. an. 2,355"
+PWG,rataguru,rataguru,CLINICAL,coitus,coitus,rata,"TRIK. 2,6,10"
+PWG,ratajvara,ratajvara,CLINICAL,coitus,coitus,rata,"TRIK. 2,5,19"
+PWG,ratakīla,ratakIla,CLINICAL,coitus,coitus,rata,H. 1280
+SCH,ratakṣamā,ratakzamA,CLINICAL,coitus,coitus,,Śṛṅgt. 125
+PWG,ratanidhi,rataniDi,CLINICAL,coitus,coitus,rata,"TRIK. 2,5,16"
+PW,ratanārāca,ratanArAca,CLINICAL,coitus,coitu,ratanārāca,
+PWG,ratanārīca,ratanArIca,CLINICAL,coitus,coitu,ratanārāca,TRIK.
+PWG,ratavraṇa,ratavraRa,CLINICAL,coitus,coitus,rata,"TRIK. 2,10,6"
+PWG,rataśāyin,rataSAyin,CLINICAL,coitus,coitus,rata,H. 1280
+PW,rati,rati,CLINICAL,coitus,coitus,bandh,"134,21"
+PWG,rati,rati,CLINICAL,coitus,coitus,ye divā ratyā saṃyujyante,H. 537
+PW,ratimitra,ratimitra,CLINICAL,coitus,coeundi,ratimitra,SUBHĀṢITAR. 1709. 1749
+PWG,ratimitra,ratimitra,CLINICAL,coitus,coeundi,pātayedūruyugme ca kāmukaṃ yadi kāmukī . ratimitrastadā khyātaḥ kāminīnāṃ sukhāvahaḥ ..,RATIM.
+PW,ratināga,ratinAga,CLINICAL,coitus,coeundi,ratināga,
+PWG,ratināga,ratinAga,CLINICAL,coitus,coeundi,pīḍyedūruyugmena kāmukaṃ kāminī yadā . ratināgaḥ samākhyātaḥ kāminīnāṃ manoramaḥ ..,RATIM.
+PW,ratipriya,ratipriya,CLINICAL,coitus,coitus,ratipriya,"VĀSAV. 229,1"
+PW,ratipāśa,ratipASa,CLINICAL,coitus,coeundi,ratipāśa,
+PWG,ratipāśa,ratipASa,CLINICAL,coitus,coeundi,pīḍayedūruyugmena kāmuko yadi sundarīm . ratipāśastathā,SMARADĪPIKĀ
+PWG,ratisaṃyoga,ratisaMyoga,CLINICAL,coitus,coitus,ratisaṃyoga,"R. 2,71,22"
+PW,ratisundara,ratisundara,CLINICAL,coitus,coeundi,ratisundara,
+PWG,ratisundara,ratisundara,CLINICAL,coitus,coeundi,nārīpadadvayaṃ kāmī dhārayeddhṛdaye yadi . dhṛtakaṇṭho rametkāmī bandhaḥ syādratisundaraḥ ..,RATIM.
+SCH,rativyatyaya,rativyatyaya,CLINICAL,coitus,coitus,,"Śrīk. XV,44."
+SCH,ratākṣamā,ratAkzamA,CLINICAL,coitus,coitus,,Śṛṅgt. 125
+PWG,ratānduka,ratAnduka,CLINICAL,coitus,coitus,rata,H. 1280
+SCH,rāsabha,rAsaBa,CLINICAL,coitus,coitus,,Śuk.
+SCH,sairibha,sEriBa,CLINICAL,coitus,coitus,,"H 47,149."
+PW,samapada,samapada,CLINICAL,coitus,coeundi,samapāda,
+PWG,samapada,samapada,CLINICAL,coitus,coeundi,yoṣitpādau hṛdi sthāpya karābhyāṃ pīḍayetstanau . yatheṣṭaṃ tāḍayedyoniṃ bandhaḥ samapadaḥ smṛtaḥ ..,RATIM.
+SCH,samapāda,samapAda,CLINICAL,coitus,coitus,,
+PW,samarata,samarata,CLINICAL,coitus,coeundi,samarata,
+PWG,samarata,samarata,CLINICAL,coitus,coeundi,bandha,RATIM.
+SCH,samarati,samarati,CLINICAL,coitus,coitus,,
+SCH,samudga,samudga,CLINICAL,coitus,coitus,,
+PW,sant,sant,CLINICAL,coitus,copulativen,as,"211,31"
+PWG,sant,sant,CLINICAL,coitus,copulativen,as,Spr. (II) 5249
+PW,sarj,sarj,CLINICAL,coitus,coire,saha,"DAŚAK. 44,10"
+PWG,sarj,sarj,CLINICAL,coitus,coire,saṃsraṣṭum,"DAŚAK. 86,12. fg."
+SCH,sarvatomukhabandha,sarvatomuKabanDa,CLINICAL,coitus,coitus,,
+SCH,sarvāṅgamardana,sarvANgamardana,CLINICAL,coitus,coitus,,
+SCH,saukaraka,sOkaraka,CLINICAL,coitus,coitus,,
+SCH,saumya,sOmya,CLINICAL,coitus,coitus,,
+SCH,saṃdaṃśa,saMdaMSa,CLINICAL,coitus,coitus,,
+SCH,saṃgara,saMgara,CLINICAL,coitus,coitus,,
+PW,saṃgharṣaṇa,saMGarzaRa,CLINICAL,coitus,coitus,saṃgharṣaṇa,"MBH. 9,1251"
+PWG,saṃgharṣaṇa,saMGarzaRa,CLINICAL,coitus,coitus,veṇu˚,"BHĀG. P. 5,6,9"
+SCH,saṃghāṭaka,saMGAwaka,CLINICAL,coitus,coitus,,
+SCH,saṃkaṭa,saMkawa,CLINICAL,coitus,coitus,,
+PWG,saṃmarda,saMmarda,CLINICAL,coitus,coitus,sam,"PRATĀPAR. 56,a,6"
+SCH,saṃmukha,saMmuKa,CLINICAL,coitus,coitus,,"Lalit. 464,6; 466,4."
+PW,saṃnipāta,saMnipAta,CLINICAL,coitus,coitus,maithune,"ŚIŚ. 18,37"
+PWG,saṃnipāta,saMnipAta,CLINICAL,coitus,coitus,maithune,"ĀPAST. 2,1,17. fg."
+PWG,saṃparka,saMparka,CLINICAL,coitus,coitus,"surata, rati",H. an.
+PW,saṃprayoga,saMprayoga,CLINICAL,coitus,coitus,ṣaha,"71,7"
+PWG,saṃprayoga,saMprayoga,CLINICAL,coitus,coitus,(jalasya) uṣṇatvamagnyātapasaṃprayogāt,"TRIK. 2,7,31"
+PW,saṃprayogikā,saMprayogikA,CLINICAL,coitus,coitus,saṃprayogikā,SĀRĀV.
+PW,saṃpuṭa,saMpuwa,CLINICAL,coitus,coeundi,ekajātīyobhayamathyavartin,"BHĀVAPR. 2,84. 101"
+PWG,saṃpuṭa,saMpuwa,CLINICAL,coitus,coeundi,saṃprasāryobhayoḥ pādau śayyāgatakapolakaḥ . bhagaliṅgasya saṃyogādramate saṃpuṭo hi saḥ ..,"PAÑCAR. 3,15,18"
+SCH,saṃpuṭa,saMpuwa,CLINICAL,coitus,coitus,,
+SCH,saṃpuṭaka,saMpuwaka,CLINICAL,coitus,coitus,,
+PWG,saṃsarga,saMsarga,CLINICAL,coitus,coitus,itaretara˚,ŚAṂK.
+PW,saṃveśa,saMveSa,CLINICAL,coitus,coeundi,saṃveśa,
+PWG,saṃveśa,saMveSa,CLINICAL,coitus,coeundi,upabhogasthāna,MED.
+SCH,saṃyamana,saMyamana,CLINICAL,coitus,coitus,,
+SCH,saṃyutabandha,saMyutabanDa,CLINICAL,coitus,coitus,,
+PWG,siñjāśvattha,siYjASvatTa,CLINICAL,coitus,copulative,siñjāśvattha,"P. 2,2,31"
+PW,siṃhalīla,siMhalIla,CLINICAL,coitus,coeundi,siṃhalīla,S. S. S. 165. 207
+PWG,siṃhalīla,siMhalIla,CLINICAL,coitus,coeundi,siṃhalīla,RATIM.
+PW,siṃhāsana,siMhAsana,CLINICAL,coitus,coeundi,siṃhāsana,
+PWG,siṃhāsana,siMhAsana,CLINICAL,coitus,coeundi,siṃhāsana,RATIM.
+SCH,smaracakra,smaracakra,CLINICAL,coitus,coitus,,
+PW,smaracandra,smaracandra,CLINICAL,coitus,coeundi,smaracandra,
+PWG,smaracandra,smaracandra,CLINICAL,coitus,coeundi,smaracandra,SMARADĪPIKĀ Tüb. Hdschr.
+PW,sparśa,sparSa,CLINICAL,coitus,coeundi,spaśa,"MBH. 1,5792"
+PWG,sparśa,sparSa,CLINICAL,coitus,coeundi,antaḥ˚,ŚABDAR.
+SCH,sphuṭita,sPuwita,CLINICAL,coitus,coitus,,
+PW,stanabhava,stanaBava,CLINICAL,coitus,coeundi,stanabhava,
+PWG,stanabhava,stanaBava,CLINICAL,coitus,coeundi,stanabhava,SMARADĪPIKĀ
+PW,strībandha,strIbanDa,CLINICAL,coitus,coitus,strībandha,
+PWG,strībandha,strIbanDa,CLINICAL,coitus,coitus,strībandha,"TRIK. 3,3,121"
+PW,strīdharma,strIDarma,CLINICAL,coitus,coitus,strīdharma,HARIV. 4853
+PW,strīkaraṇa,strIkaraRa,CLINICAL,coitus,coitus,strīkaraṇa,
+PWG,strīkaraṇa,strIkaraRa,CLINICAL,coitus,coitus,strīkaraṇa,MED. y. 17
+PW,strīkṛta,strIkfta,CLINICAL,coitus,coitus,ā,GAUT.
+PW,strīviṣaya,strIvizaya,CLINICAL,coitus,coitus,strīviṣaya,"108,5"
+SCH,sukhakrīḍā,suKakrIqA,CLINICAL,coitus,coitus,,"S II,215,9"
+PW,suratabandha,suratabanDa,CLINICAL,coitus,coeundi,suratabandha,MED. k. 21
+SCH,suratāvasānika,suratAvasAnika,CLINICAL,coitus,coitus,,"S II,29,3."
+PW,suyāśu,suyASu,CLINICAL,coitus,coitu,suyāśu,
+PWG,suyāśu,suyASu,CLINICAL,coitus,coitu,˚tara,"ṚV. 10,86,6"
+PW,svanacakra,svanacakra,CLINICAL,coitus,coeundi,svanacakra,
+PWG,svanacakra,svanacakra,CLINICAL,coitus,coeundi,svanacakra,RATIM.
+SCH,svastikabandha,svastikabanDa,CLINICAL,coitus,coitus,,
+SCH,sāmyadharma,sAmyaDarma,CLINICAL,coitus,coitus,,"S I,518,6."
+SCH,sārita,sArita,CLINICAL,coitus,coitus,,
+SCH,sārpabandha,sArpabanDa,CLINICAL,coitus,coitus,,
+PW,sūci,sUci,CLINICAL,coitus,coeundi,˚pattra,"DIVYĀVAD. 221,8"
+PWG,sūci,sUci,CLINICAL,coitus,coeundi,˚pattra,TRIK.
+SCH,sūkaraghṛṣṭaka,sUkaraGfzwaka,CLINICAL,coitus,coitus,,
+PW,tanudāna,tanudAna,CLINICAL,coitus,coitus,tanudāna,Spr. 7723
+PW,til,til,CLINICAL,coitus,coeundi,pra,
+PW,traivikrama,trEvikrama,CLINICAL,coitus,coeundi,ī,HĀLA. 411
+SCH,traivikrama,trEvikrama,CLINICAL,coitus,coitus,,
+SCH,tripāda,tripAda,CLINICAL,coitus,coitus,,
+SCH,trivallībandha,trivallIbanDa,CLINICAL,coitus,coitus,,
+SCH,turagādhirūḍhaka,turagADirUQaka,CLINICAL,coitus,coitus,,
+SCH,turagārohaṇa,turagArohaRa,CLINICAL,coitus,coitus,,
+SCH,udbhugnaka,udBugnaka,CLINICAL,coitus,coitus,,
+SCH,udghaṭṭita,udGawwita,CLINICAL,coitus,coitus,,
+PW,upabhoga,upaBoga,CLINICAL,coitus,coitus,upabhoga,"108,4"
+SCH,upapada,upapada,CLINICAL,coitus,coitus,,
+SCH,uparati,uparati,CLINICAL,coitus,coitus,,
+SCH,uparikrīḍā,uparikrIqA,CLINICAL,coitus,coitus,,"Śṛṅgt. 22,7."
+PW,uparītaka,uparItaka,CLINICAL,coitus,coeundi,uparītaka,
+PWG,uparītaka,uparItaka,CLINICAL,coitus,coitus,ekapādamūrau kṛtvā dvitīyaṃ skandhasaṃsthitam . nārīṃ kāmayate kāmī bandhaḥ syāduparītakaḥ,ŚKDR.
+SCH,upasṛptaka,upasfptaka,CLINICAL,coitus,coeundi,,"H 42,7"
+SCH,upavītaka,upavItaka,CLINICAL,coitus,coitus,,
+PWG,upaślāghā,upaSlAGA,CLINICAL,coitus,copulatives,krodhopaślāgha,"GOP. BR. 1,2,2"
+SCH,uraḥsphuṭana,uraHsPuwana,CLINICAL,coitus,coitus,,R.
+SCH,utkalikā,utkalikA,CLINICAL,coitus,coitus,,"Śrīk. 9,15."
+PW,utkaṇṭha,utkaRWa,CLINICAL,coitus,coeundi,ā,"163,3"
+PWG,utkaṇṭha,utkaRWa,CLINICAL,coitus,coitus,durnivārayotkaṇṭhayā,ŚKDR.
+PW,utphulla,utPulla,CLINICAL,coitus,coeundi,˚phaṇa,"MAHĀBH. 8,39,b."
+PWG,utphulla,utPulla,CLINICAL,coitus,coitus,strīkaraṇāntare,H. an.
+SCH,utphullaka,utPullaka,CLINICAL,coitus,coeundi,,"H 6,19"
+SCH,uttānaka,uttAnaka,CLINICAL,coitus,coitus,,
+SCH,uttānasaṃpuṭa,uttAnasaMpuwa,CLINICAL,coitus,coitus,,
+SCH,uḍḍīna,uqqIna,CLINICAL,coitus,coitus,,
+SCH,valgita,valgita,CLINICAL,coitus,coitus,,
+SCH,vallībandha,vallIbanDa,CLINICAL,coitus,coitus,,
+PW,vart,vart,CLINICAL,coitus,coitu,mithas,"ĀPAST. 2,11,20"
+PWG,vart,vart,CLINICAL,coitus,coitu,so 'ntarorū asaṃvartamānaḥ śete,"ṚV. 4,24,4"
+SCH,varāhaghāta,varAhaGAta,CLINICAL,coitus,coitus,,
+SCH,varāhaghātaka,varAhaGAtaka,CLINICAL,coitus,coitus,,
+SCH,varāhaghṛṣṭaka,varAhaGfzwaka,CLINICAL,coitus,coitus,,
+SCH,veṇibandha,veRibanDa,CLINICAL,coitus,coitus,,
+SCH,veṇikā,veRikA,CLINICAL,coitus,coitus,,
+SCH,veṇudārita,veRudArita,CLINICAL,coitus,coitus,,
+SCH,veṇudāritaka,veRudAritaka,CLINICAL,coitus,coitus,,
+SCH,veṇuvidārita,veRuvidArita,CLINICAL,coitus,coitus,,
+SCH,veṇuvidāritaka,veRuvidAritaka,CLINICAL,coitus,coitus,,
+PWG,veṣṭ,vezw,CLINICAL,coitus,coeundi,veṣṭayate,MED.
+PW,veṣṭanaka,vezwanaka,CLINICAL,coitus,coeundi,veṣṭanaka,
+PWG,veṣṭanaka,vezwanaka,CLINICAL,coitus,coeundi,ūrdhvagaṃ pādamekaṃ ca bhujāntarairveṣṭayedyadi,RATIM.
+PW,veṣṭita,vezwita,CLINICAL,coitus,coeundi,lāsaka,
+SCH,veṣṭita,vezwita,CLINICAL,coitus,coitus,,
+SCH,veṣṭitaka,vezwitaka,CLINICAL,coitus,coitus,,
+SCH,vijaya,vijaya,CLINICAL,coitus,coitus,,"S I,416,6."
+SCH,vijṛmbhitaka,vijfmBitaka,CLINICAL,coitus,coitus,,
+SCH,vikrama,vikrama,CLINICAL,coitus,coitus,,"Kauṭ. 134,5"
+SCH,vimarditaka,vimarditaka,CLINICAL,coitus,coitus,,
+SCH,viparītabandha,viparItabanDa,CLINICAL,coitus,coitus,,
+PW,viparītaka,viparItaka,CLINICAL,coitus,coeundi,viparītaka,
+PW,viparītarata,viparItarata,CLINICAL,coitus,coitus,viparītarata,"KUVALAY. 62,a."
+SCH,viparītarūpa,viparItarUpa,CLINICAL,coitus,coitus,,
+SCH,viplutabandha,viplutabanDa,CLINICAL,coitus,coitus,,
+SCH,vitardita,vitardita,CLINICAL,coitus,coitus,,
+SCH,viyutabandha,viyutabanDa,CLINICAL,coitus,coitus,,
+SCH,viṭādhipatibandha,viwADipatibanDa,CLINICAL,coitus,coitus,,
+PW,vyavāya,vyavAya,CLINICAL,coitus,coitus,śuddhi,ZACH. Beitr. 16
+PWG,vyavāya,vyavAya,CLINICAL,coitus,coitus,antardhi,"AK. 2,7,56"
+SCH,vyomapada,vyomapada,CLINICAL,coitus,coitus,,
+SCH,vyāghrāvaskandhana,vyAGrAvaskanDana,CLINICAL,coitus,coitus,,
+SCH,vyānata,vyAnata,CLINICAL,coitus,coitus,,
+SCH,vyānataka,vyAnataka,CLINICAL,coitus,coitus,,
+SCH,vyāyataka,vyAyataka,CLINICAL,coitus,coitus,,
+SCH,vājyārūḍha,vAjyArUQa,CLINICAL,coitus,coitus,,
+SCH,vārikrīḍitaka,vArikrIqitaka,CLINICAL,coitus,coitus,,
+PW,vāḍaba,vAqaba,CLINICAL,coitus,coeundi,vāḍaba,"50,15"
+PWG,vāḍava,vAqava,CLINICAL,coitus,coitus,khaṇḍikādi,H. an.
+SCH,vāḍavaka,vAqavaka,CLINICAL,coitus,coitus,,
+SCH,vīra,vIra,CLINICAL,coitus,coitus,,
+SCH,vīrāyita,vIrAyita,CLINICAL,coitus,coitus,,Śṛṅgārasarv. 38
+SCH,vṛścikabandha,vfScikabanDa,CLINICAL,coitus,coitus,,
+SCH,vṛṣabhabandha,vfzaBabanDa,CLINICAL,coitus,coitus,,
+SCH,vṛṣaghāta,vfzaGAta,CLINICAL,coitus,coitus,,
+SCH,vṛṣāghāta,vfzAGAta,CLINICAL,coitus,coitus,,
+SCH,yugmapada,yugmapada,CLINICAL,coitus,coitus,,
+PW,yādura,yAdura,CLINICAL,coitus,coitus,yādura,SĀY.
+PWG,yādura,yAdura,CLINICAL,coitus,coitus,ī,"ṚV. 1,126,6"
+PW,yāśu,yASu,CLINICAL,coitus,coitus,yāśu,SĀY.
+PWG,yāśu,yASu,CLINICAL,coitus,coitus,yāśu,SĀY.
+SCH,āmracūṣita,AmracUzita,CLINICAL,coitus,coitus,,
+SCH,āmracūṣitaka,AmracUzitaka,CLINICAL,coitus,coitus,,
+SCH,āmrāvacūṣita,AmrAvacUzita,CLINICAL,coitus,coitus,,
+SCH,ānata,Anata,CLINICAL,coitus,coitus,,
+PW,ārata,Arata,CLINICAL,coitus,coeundi,ārata,"Comm. zu KIR. 5,23"
+SCH,ārata,Arata,CLINICAL,coitus,coeundi,,"Kir. 5,23."
+SCH,āsita,Asita,CLINICAL,coitus,coitus,,
+SCH,āsitaka,Asitaka,CLINICAL,coitus,coitus,,
+PW,śacī,SacI,CLINICAL,coitus,coeundi,śacī,
+PWG,śacī,SacI,CLINICAL,coitus,coeundi,strīkaraṇāntara,MED.
+PW,śauka,SOka,CLINICAL,coitus,coeundi,śauka,
+PWG,śauka,SOka,CLINICAL,coitus,coeundi,śoka,H. an.
+SCH,śauna,SOna,CLINICAL,coitus,coitus,,
+SCH,śaunaka,SOnaka,CLINICAL,coitus,coitus,,
+SCH,śaṃkarapriya,SaMkarapriya,CLINICAL,coitus,coitus,,
+SCH,śaṅkhabandha,SaNKabanDa,CLINICAL,coitus,coitus,,
+PWG,śiñjāśvattha,SiYjASvatTa,CLINICAL,coitus,copulative,śiñjāśvattha,"P. 2,2,31"
+SCH,śrama,Srama,CLINICAL,coitus,coitus,,"S II,76,6."
+PWG,śāṭa,SAwa,CLINICAL,coitus,copulative,śāṭīpracchadam,"P. 2,4,11"
+SCH,śūlacita,SUlacita,CLINICAL,coitus,coitus,,
+SCH,śūlācitaka,SUlAcitaka,CLINICAL,coitus,coitus,,
+PWG,āroha,Aroha,CLINICAL,nates,nates,ratnānām,"AK. 3,4,240"
+PW,abhisaṃdeha,aBisaMdeha,CLINICAL,penis,penis,abhisaṃdeha,
+PWG,adhidaiva,aDidEva,CLINICAL,penis,penis,adhyātman,TATTVAS. 27
+PW,aja,aja,CLINICAL,penis,penis,ikapād,GAL.
+PW,anavamehanīya,anavamehanIya,CLINICAL,penis,penis,anavamehanīya,"GOBH. 3,3,15"
+SCH,apadravya,apadravya,CLINICAL,penis,penis,,
+PW,artha,arTa,CLINICAL,penis,penis,ayam,"67,26"
+PWG,artha,arTa,CLINICAL,penis,penis,tasyāmarthaṃ niṣṭhāpya,MEGH. 57
+PW,aunīta,OnIta,CLINICAL,penis,penis,aunīta,"AŚVAV. 51,4"
+SCH,aunīta,OnIta,CLINICAL,penis,penis,,"Aśvav. 51,4."
+PW,avastha,avasTa,CLINICAL,penis,penis,avastha,
+PW,avāṃśa,avAMSa,CLINICAL,penis,penis,avāṃśa,"SĀMAV. BR. 2,5,11"
+PW,añji,aYji,CLINICAL,penis,penis,añji,"13,16"
+PWG,añji,aYji,CLINICAL,penis,penis,samañjiṃ cārayā vṛṣan,"VS. 23,21"
+PW,aśvaśiśna,aSvaSiSna,CLINICAL,penis,penis,aśvaśiśna,"KĀTY. ŚR. 20,6,16"
+PWG,durmada,durmada,CLINICAL,penis,penis,upastho,"BHĀG. P. 1,15,7"
+PW,ekaliṅga,ekaliNga,CLINICAL,penis,phallus,ekaliṅga,
+PWG,ekaliṅga,ekaliNga,CLINICAL,penis,phallus,pañcakrośāntare yatra na liṅgāntaramīkṣyate . tadekaliṅgamākhyātaṃ tatra siddhiranuttamā ..,ĀGAMA
+PW,golaka,golaka,CLINICAL,penis,penis,golaka,GAL.
+PWG,golaka,golaka,CLINICAL,penis,penis,nakṣatrāṇi,SĀY.
+PW,gula,gula,CLINICAL,penis,penis,ā,
+PWG,gula,gula,CLINICAL,penis,penis,ā,H. 611
+PW,jaghanya,jaGanya,CLINICAL,penis,penis,jaghanyatara,29
+PWG,jaghanya,jaGanya,CLINICAL,penis,penis,mehane,H. an.
+SCH,jaghanya,jaGanya,CLINICAL,penis,membrum virile,,"Sam. VIII,92."
+PW,kandarpa,kandarpa,CLINICAL,penis,penis,ā,GAL.
+PWG,kapṛth,kapfT,CLINICAL,penis,penis,na seśe yasya rambate 'ntarā sakathyā3 kapṛt,"ṚV. 10,86,16"
+PW,kośa,koSa,CLINICAL,penis,penis,kośam pā,"VARĀH. BṚH. 5,4"
+PWG,kośa,koSa,CLINICAL,penis,penis,yoni,WILS.
+SCH,kośa,koSa,CLINICAL,penis,penis,,"S I,30,3."
+PW,kāmalatā,kAmalatA,CLINICAL,penis,penis,kāmalatā,Mat. med. 302
+PWG,kāmalatā,kAmalatA,CLINICAL,penis,penis,latā,H. 610
+SCH,kāmalatā,kAmalatA,CLINICAL,penis,penis,,"S I,129,4"
+PW,kāmāyudha,kAmAyuDa,CLINICAL,penis,penis,kāmāyudha,"RĀJAN. 11,18"
+PWG,kāmāyudha,kAmAyuDa,CLINICAL,penis,penis,mahārājacūta,WILS.
+PW,kāmāṅkuśa,kAmANkuSa,CLINICAL,penis,penis,kāmāṅkuśa,
+PWG,kāmāṅkuśa,kAmANkuSa,CLINICAL,penis,penis,aṅkuśa,JAṬĀDH.
+SCH,kāmāṅkuśa,kAmANkuSa,CLINICAL,penis,penis,,"S I,294,3"
+PW,lakāra,lakAra,CLINICAL,penis,penis,liṅga,SUBHĀṢITĀV. 2400
+SCH,lakāra,lakAra,CLINICAL,penis,penis,,Subhāṣitāv. 2401.
+PW,lalāmagu,lalAmagu,CLINICAL,penis,penis,lalāmagu,
+PWG,lalāmagu,lalAmagu,CLINICAL,penis,penis,lalāmagu,"VS. 23,29"
+PW,liṅga,liNga,CLINICAL,penis,phallus,ākāśa,"Chr. 212,14"
+PWG,liṅga,liNga,CLINICAL,penis,phallus,liṅgādhyakṣa,"TRIK. 3,3,69"
+SCH,liṅgabheda,liNgaBeda,CLINICAL,penis,penis,,"S II,224,4."
+SCH,liṅgadhārin,liNgaDArin,CLINICAL,penis,phallus,,"Prabandh. 258,5."
+PW,liṅgaja,liNgaja,CLINICAL,penis,penis,liṅgaja,GAL.
+PW,liṅgamūrti,liNgamUrti,CLINICAL,penis,phallus,liṅgamūrti,
+PWG,liṅgamūrti,liNgamUrti,CLINICAL,penis,phallus,liṅgamūrti,"Verz. d. Oxf. H. 74,a,2"
+PW,liṅgapratiṣṭhāvidhi,liNgapratizWAviDi,CLINICAL,penis,phallus,liṅgapratiṣṭhāvidhi,
+PW,liṅgapīṭha,liNgapIWa,CLINICAL,penis,phallus,liṅgapīṭha,
+PW,liṅgavant,liNgavant,CLINICAL,penis,phallus,liṅgavant,VAITĀN.
+PW,liṅgin,liNgin,CLINICAL,penis,phallus,liṅginī,"RĀJAN. 3,32"
+SCH,liṅgopajīvin,liNgopajIvin,CLINICAL,penis,phallus,,"Prabandh. 257,2"
+PW,liṅgāgra,liNgAgra,CLINICAL,penis,penis,liṅgāgra,
+PWG,liṅgāgra,liNgAgra,CLINICAL,penis,penis,liṅgāgra,"TRIK. 3,3,135"
+PW,lola,lola,CLINICAL,penis,penis,ā,GAL.
+PW,lāṅgala,lANgala,CLINICAL,penis,penis,lāṅgūla,"CARAKA. 1,27"
+PW,lāṅgula,lANgula,CLINICAL,penis,penis,lāṅgula,
+PW,lāṅgūla,lANgUla,CLINICAL,penis,penis,ā,"HEMĀDRI 1,436,22"
+PW,madanāṅkuśa,madanANkuSa,CLINICAL,penis,penis,madanāṅkuśa,
+PWG,madanāṅkuśa,madanANkuSa,CLINICAL,penis,penis,a˚,"TRIK. 2,6,23"
+SCH,madanāṅkuśa,madanANkuSa,CLINICAL,penis,penis,,"S I,566,3"
+PWG,manthin,manTin,CLINICAL,penis,penis,ūrdhva˚,"P. 6,2,142"
+PW,maṇi,maRi,CLINICAL,penis,penis,maṇīvoṣṭrasya,"Ind. St. 15,323"
+PWG,maṇi,maRi,CLINICAL,penis,penis,kaṅkaṇamaṇījalpākadorvacaḥ,NĪLAK. 215
+SCH,meda,meda,CLINICAL,penis,penis,,"S I,294,14"
+PW,mlā,mlA,CLINICAL,penis,penis,mlāna,"DAŚAK. (1925) 2,70,11"
+PW,muṣṭi,muzwi,CLINICAL,penis,penis,muṣṭi,
+PWG,muṣṭi,muzwi,CLINICAL,penis,penis,muṣṭi,MAHĪDH.
+PWG,mūrdhan,mUrDan,CLINICAL,penis,penis,mūrdhāvaraṇa,"SUŚR. 2,148,2"
+PW,naraṅga,naraNga,CLINICAL,penis,penis,narāṅga,
+PWG,naraṅga,naraNga,CLINICAL,penis,penis,varaṇḍaka,UṆĀDIK.
+PW,narāṅga,narANga,CLINICAL,penis,penis,narāṅga,
+SCH,nyūnonnata,nyUnonnata,CLINICAL,penis,penis,,"Amit. XXX,9."
+PW,nāgalatā,nAgalatA,CLINICAL,penis,penis,nāgalatā,"BĀLAR. 302,12"
+PWG,nāgalatā,nAgalatA,CLINICAL,penis,penis,latā,"TRIK. 2,6,24"
+PW,piṇḍika,piRqika,CLINICAL,penis,penis,piṇḍika,
+PWG,piṇḍika,piRqika,CLINICAL,penis,penis,piṇḍika,"LIṄGA-P. 1,108,12"
+PW,pramehana,pramehana,CLINICAL,penis,penis,pramehana,KAUŚ. 25
+PW,pratiliṅgam,pratiliNgam,CLINICAL,penis,phallus,pratiliṅgam,
+PWG,pratiliṅgam,pratiliNgam,CLINICAL,penis,phallus,liṅga,"RĀJA-TAR. 2,132"
+PW,sahasraliṅgī,sahasraliNgI,CLINICAL,penis,phallus,sahasraliṅgī,
+PWG,sahasraliṅgī,sahasraliNgI,CLINICAL,penis,phallus,sahasraliṅgī,"RĀJA-TAR. 2,129"
+SCH,samujjṛmbhaṇa,samujjfmBaRa,CLINICAL,penis,penis,,Muk. 155
+PW,sapa,sapa,CLINICAL,penis,penis,sapa,"MAITR. S. 3,7,7 (84,9)"
+PWG,sapa,sapa,CLINICAL,penis,penis,sap,"TBR. 2,4,6,5"
+PWG,saṃhṛṣṭa,saMhfzwa,CLINICAL,penis,penis,saṃhṛṣṭin,"LĀṬY. 9,10,6"
+PW,saṃhṛṣṭin,saMhfzwin,CLINICAL,penis,penis,saṃhṛṣṭin,
+PW,sevana,sevana,CLINICAL,penis,penis,ī,"Comm. zu ĀPAST. ŚR. 11,8,1"
+PWG,sevana,sevana,CLINICAL,penis,penis,ī,BHĀVAPR.
+PW,smaradhvaja,smaraDvaja,CLINICAL,penis,penis,ā,
+PWG,smaradhvaja,smaraDvaja,CLINICAL,penis,penis,ā,ŚABDĀRTHAK.
+PW,smarastambha,smarastamBa,CLINICAL,penis,penis,smarastambha,
+PWG,smarastambha,smarastamBa,CLINICAL,penis,penis,smarastambha,"TRIK. 2,6,24"
+SCH,smarayantra,smarayantra,CLINICAL,penis,penis,,
+PW,sthagikā,sTagikA,CLINICAL,penis,penis,sthagikā,"HEMĀDRI 1,645,5"
+PWG,sthagikā,sTagikA,CLINICAL,penis,penis,sthagikā,"SUŚR. 1,65,17"
+PWG,sthavira,sTavira,CLINICAL,penis,penis,vraja,"ṚV. 9,86,4"
+PW,sthiraliṅga,sTiraliNga,CLINICAL,penis,penis,sthiraliṅga,"MBH. 13,162,11"
+PWG,sthūla,sTUla,CLINICAL,penis,penis,yadasyā aṃhubhedyāḥ kṛdhu sthūlamupātasat,"ṚV. 8,1,34"
+SCH,sukośa,sukoSa,CLINICAL,penis,penis,,"S I,492,5."
+SCH,sādhana,sADana,CLINICAL,penis,penis,,"Vāmana, Kāvy."
+PW,udañji,udaYji,CLINICAL,penis,penis,udañji,"TS. 7,4,19,1"
+SCH,udañji,udaYji,CLINICAL,penis,penis,,"TS. 7,4,19,1."
+PW,udumbara,udumbara,CLINICAL,penis,penis,naḍādi,"2,5"
+SCH,unnata,unnata,CLINICAL,penis,penis,,
+PW,unnati,unnati,CLINICAL,penis,penis,unnati,KAUTUKAR. 68
+SCH,unnati,unnati,CLINICAL,penis,penis,,Kautukar. 68.
+SCH,upadravya,upadravya,CLINICAL,penis,penis,,"S II,360,11."
+PW,upasthaka,upasTaka,CLINICAL,penis,penis,upasthaka,GAL.
+PWG,āsura,Asura,CLINICAL,penis,penis,meḍhra,"BHĀG. P. 4,25,52"
+SCH,śarīra,SarIra,CLINICAL,penis,penis,,
+PW,śaṅku,SaNku,CLINICAL,penis,penis,aṃśa,GOVARDH. 60
+PWG,śaṅku,SaNku,CLINICAL,penis,penis,nakhī,H. an.
+PW,śephas,SePas,CLINICAL,penis,penis,śephaḥstambha,
+PW,śeva,Seva,CLINICAL,penis,penis,śevā,
+PWG,śeva,Seva,CLINICAL,penis,penis,"śepa, śepha",UṆĀDIK.
+PW,śivaliṅga,SivaliNga,CLINICAL,penis,phallus,śivaliṅga,"Ind. St. 15,286. 291. 362"
+PWG,śivaliṅga,SivaliNga,CLINICAL,penis,phallus,śivaliṅga,"VARĀH. BṚH. S. 50,2"
+PW,śiśan,SiSan,CLINICAL,penis,penis,śiśna,"ĀŚV. GṚHY. PARIŚ. 1,13"
+PWG,śiśan,SiSan,CLINICAL,penis,penis,śiśna,"PAÑCAR. 3,9,7"
+PW,śiśnadeva,SiSnadeva,CLINICAL,penis,phallusverehrer,śiśnadeva,"ZIMMER, Altind. Leben 116"
+PW,śiśnodara,SiSnodara,CLINICAL,penis,penis,śiśnodara,"MBH. 3,2,65."
+PW,śāṅkura,SANkura,CLINICAL,penis,penis,śāṅkura,
+PWG,śāṅkura,SANkura,CLINICAL,penis,penis,śaṅku,"AV. 7,90,3"
+PW,śūka,SUka,CLINICAL,penis,penis,śūkapūrṇagalāsyatā,"BHĀVAPR. 6,15"
+PWG,śūka,SUka,CLINICAL,penis,penis,jalaśūka,BHĀVAPR. 7
+PWG,śūkadoṣa,SUkadoza,CLINICAL,penis,penis,śūka,WISE 380
+PW,ūrdhvaliṅga,UrDvaliNga,CLINICAL,penis,penis,ūrdhvaliṅga,"HEMĀDRI 1,203,20"
+PWG,ūrdhvamanthin,UrDvamanTin,CLINICAL,penis,penis,ūrdhvaretas,"BHĀG. P. 5,3,20"
+PWG,ūrdhvamanthin,UrDvamanTin,CLINICAL,penis,penis,manthin,"BHĀG. P. 11,6,47"
+PW,adhara,aDara,CLINICAL,pudenda,pudendum,ā,GAL.
+PWG,adhara,aDara,CLINICAL,pudenda,pudendum,oṣṭha,"TRIK. 2,6,22"
+PWG,adhas,aDas,CLINICAL,pudenda,pudendum,adhaḥ śayīta,"M. 11,224"
+PWG,adhastāt,aDastAt,CLINICAL,pudenda,pudendum,adhastācchiṃśapāyāṃ tu adhyāste,"R. 5,57,6"
+PWG,bharaṇa,BaraRa,CLINICAL,pudenda,pudendum,ī,"Journ. of the Am. Or. S. 6,328"
+PW,matkuṇa,matkuRa,CLINICAL,pudenda,pudendum,ā,
+PWG,matkuṇa,matkuRa,CLINICAL,pudenda,pudendum,ā,ŚABDAR.
+SCH,mekhalāsthāna,meKalAsTAna,CLINICAL,pudenda,pudenda,,"S II,59,3."
+PW,ratigṛha,ratigfha,CLINICAL,pudenda,pudendum,ratigṛha,
+PWG,ratigṛha,ratigfha,CLINICAL,pudenda,pudendum,ratigṛha,"VARĀH. BṚH. S. 53,16"
+PW,ratikuhara,ratikuhara,CLINICAL,pudenda,pudendum,ratikuhara,
+PWG,ratikuhara,ratikuhara,CLINICAL,pudenda,pudendum,ratikuhara,"TRIK. 2,6,22"
+PW,ratimandira,ratimandira,CLINICAL,pudenda,pudendum,ratimandira,
+PWG,ratimandira,ratimandira,CLINICAL,pudenda,pudendum,ratimandira,ŚKDR.
+PW,ratyaṅga,ratyaNga,CLINICAL,pudenda,pudendum,ratyaṅga,
+PWG,ratyaṅga,ratyaNga,CLINICAL,pudenda,pudendum,aṅga,ŚABDAR.
+PWG,romaśa,romaSa,CLINICAL,pudenda,pudenda,lomaśa,"ṚV. 10,86,16"
+PW,ya,ya,CLINICAL,pudenda,pudendum,yāna,H. 226
+PWG,ya,ya,CLINICAL,pudenda,pudendum,"yā yātrāptidhūmitatyāgeṣu, vāraṇayogasamajñāyāneṣu",WILSON
+PWG,yojana,yojana,CLINICAL,pudenda,pudendum,triṃśadasyā jaghanaṃ yojanāni,"TBR. 2,4,2,7"
+PWG,aṇḍa,aRqa,CLINICAL,semen,semen virile,aṇḍajā,VIŚVA
+SCH,daityaguru,dEtyaguru,CLINICAL,semen,sperma,,
+SCH,madanāmbhas,madanAmBas,CLINICAL,semen,sperma,,
+SCH,manojanīra,manojanIra,CLINICAL,semen,sperma,,
+SCH,retas,retas,CLINICAL,semen,sperma,,
+PWG,retra,retra,CLINICAL,semen,semen virile,"retas, pīyūpa, paṭavāsa, sūtaka",MED.
+SCH,saptamadhātu,saptamaDAtu,CLINICAL,semen,sperma,,"S II,65,14"
+SCH,saumyadhātu,sOmyaDAtu,CLINICAL,semen,sperma,,"S II,219,3."
+PW,sthā,sTA,CLINICAL,semen,semen virile,samīpe,"313,8"
+PW,turīpa,turIpa,CLINICAL,semen,spermaticus,turīpa,
+PWG,turīpa,turIpa,CLINICAL,semen,spermaticus,turīpaḥ,"ṚV. 1,142,10"
+SCH,śukra,Sukra,CLINICAL,semen,sperma,,
+PW,muṣkabhāra,muzkaBAra,CLINICAL,testiculi,testiculatus,muṣkabhāra,
+PWG,muṣkabhāra,muzkaBAra,CLINICAL,testiculi,testiculatus,bhāra,"ṚV. 10,102,4"
+PWG,muṣkara,muzkara,CLINICAL,testiculi,testiculatus,muṣka,"P. 5,2,107"
+PW,muṣkavant,muzkavant,CLINICAL,testiculi,testiculatus,muṣkavant,"ṚV. 10,38"
+PWG,muṣkavant,muzkavant,CLINICAL,testiculi,testiculatus,muṣka,"ṚV. 10,38"
+PW,mūtrakośa,mUtrakoSa,CLINICAL,testiculi,scrotum,mūtrakośa,
+PWG,mūtrakośa,mUtrakoSa,CLINICAL,testiculi,scrotum,kośa,"ŚĀRṄG. SAṂH. 3,5,8"
+PWG,mūtravṛddhi,mUtravfdDi,CLINICAL,testiculi,scrotum,mūtravṛddhi,WISE 371
+PWG,puṣkalaka,puzkalaka,CLINICAL,testiculi,scrotum,sīman,"LIA. I, 316, N. 2"
+PW,abhisaṃdeha,aBisaMdeha,CLINICAL,vulva,vulva,abhisaṃdeha,
+PWG,abhisaṃdeha,aBisaMdeha,CLINICAL,vulva,vulvam,tau saṃkrāmayatāṃ tataḥ,"MBH. 5,7494"
+SCH,anaṅgajala,anaNgajala,CLINICAL,vulva,vulva,,"Yudh. 5,79."
+SCH,anaṅgaka,anaNgaka,CLINICAL,vulva,vulva,,
+SCH,anaṅgāgāraka,anaNgAgAraka,CLINICAL,vulva,vulva,,
+PW,avastha,avasTa,CLINICAL,vulva,vulva,ā,
+PW,avācyadeśa,avAcyadeSa,CLINICAL,vulva,vulva,avācyadeśa,
+PW,bandhura,banDura,CLINICAL,vulva,vulva,ā,HĀSY.
+PWG,bandhura,banDura,CLINICAL,vulva,vulva,strīcihna,MED.
+PWG,bhagabhakṣaka,BagaBakzaka,CLINICAL,vulva,vulva,bha˚,ŚKDR.
+PW,bhagavat,Bagavat,CLINICAL,vulva,vulva,bhagavat,"Comm. zu VIṢṆUS. 45,24"
+PW,bhagavṛtti,Bagavftti,CLINICAL,vulva,vulva,bhagavṛtti,"NĀRADA (a.) 2,1,183"
+SCH,bhagavṛtti,Bagavftti,CLINICAL,vulva,vulva,,"Nārada (a.) 2,1,183."
+PW,bhagāsya,BagAsya,CLINICAL,vulva,vulva,bhagāsya,"VIṢṆUS. 45,24"
+PW,bhagāṅka,BagANka,CLINICAL,vulva,vulva,bhagāṅka,"MBH. 13,61,21"
+PW,bhagāṅka,BagANka,CLINICAL,vulva,vulva,ā,"MBH. 13,14,233."
+PWG,bāhya,bAhya,CLINICAL,vulva,vulva,kācidbāhyaratābhijñā kācidābhyantarapriyā,"KATHĀS. 47,114"
+PW,candramauli,candramOli,CLINICAL,vulva,vulva,candramauli,"BHĀVAPR. 1,18"
+PW,candramukha,candramuKa,CLINICAL,vulva,vulva,ī,"BHĀVAPR. 1,18"
+PWG,chidray,Cidray,CLINICAL,vulva,vulva,adhastācchidritaṃ carma,"PRAB. 96, Śl. 30"
+SCH,cāndramasī,cAndramasI,CLINICAL,vulva,vulva,,
+PWG,dvāra,dvAra,CLINICAL,vulva,vulva,tasmādevaṃvicchrotriyasya dvāreṇa,POLEY
+PW,gabha,gaBa,CLINICAL,vulva,vulva,gabha,
+PWG,gabha,gaBa,CLINICAL,vulva,vulva,āhanti gabhe pasaḥ,"VS. 23,22"
+SCH,gaurī,gOrI,CLINICAL,vulva,vulva,,
+PW,janmapatha,janmapaTa,CLINICAL,vulva,vulva,janmapatha,GAL.
+PW,janmavartman,janmavartman,CLINICAL,vulva,vulva,janmavartman,
+PWG,janmavartman,janmavartman,CLINICAL,vulva,vulva,va˚,"TRIK. 2,6,21"
+PW,jartu,jartu,CLINICAL,vulva,vulva,jartu,
+PWG,jartu,jartu,CLINICAL,vulva,vulva,jartu,"Uṇ. 5,46"
+SCH,kandarpageha,kandarpageha,CLINICAL,vulva,vulva,,
+SCH,kandarpajala,kandarpajala,CLINICAL,vulva,vulva,,R.
+SCH,kandarpanīra,kandarpanIra,CLINICAL,vulva,vulva,,
+PW,kośa,koSa,CLINICAL,vulva,vulva,kośam pā,"VARĀH. BṚH. 5,4"
+PWG,kośa,koSa,CLINICAL,vulva,vulva,yoni,H. an.
+PW,kuhara,kuhara,CLINICAL,vulva,vulva,kuhara,GAL.
+PW,kullaliṅga,kullaliNga,CLINICAL,vulva,vulva,kullaliṅga,GAL.
+SCH,kulyā,kulyA,CLINICAL,vulva,vulva,,"S I,526,1."
+SCH,kusumeṣujala,kusumezujala,CLINICAL,vulva,vulva,,
+SCH,kusumeṣuveśman,kusumezuveSman,CLINICAL,vulva,vulva,,
+SCH,kāmabhuvana,kAmaBuvana,CLINICAL,vulva,vulva,,
+SCH,kāmadhāman,kAmaDAman,CLINICAL,vulva,vulva,,
+SCH,kāmadhārā,kAmaDArA,CLINICAL,vulva,vulva,,
+SCH,kāmagṛha,kAmagfha,CLINICAL,vulva,vulva,,
+SCH,kāmasalila,kAmasalila,CLINICAL,vulva,vulva,,
+SCH,kāmaukas,kAmOkas,CLINICAL,vulva,vulva,,
+SCH,kāmavār,kAmavAr,CLINICAL,vulva,vulva,,
+SCH,kāmāgāra,kAmAgAra,CLINICAL,vulva,vulva,,
+SCH,kāmālaya,kAmAlaya,CLINICAL,vulva,vulva,,
+SCH,kāmāmbhas,kAmAmBas,CLINICAL,vulva,vulva,,
+SCH,kāmātapatra,kAmAtapatra,CLINICAL,vulva,vulva,,
+SCH,kāmāśrama,kAmASrama,CLINICAL,vulva,vulva,,"S I,36,6."
+SCH,madajala,madajala,CLINICAL,vulva,vulva,,
+SCH,madanacchattra,madanacCattra,CLINICAL,vulva,vulva,,
+SCH,madanagṛha,madanagfha,CLINICAL,vulva,vulva,,Śārṅg. 3101.
+SCH,madanajala,madanajala,CLINICAL,vulva,vulva,,
+SCH,madanamandira,madanamandira,CLINICAL,vulva,vulva,,
+SCH,madananivāsa,madananivAsa,CLINICAL,vulva,vulva,,
+SCH,madanarandhra,madanaranDra,CLINICAL,vulva,vulva,,
+SCH,madanasadana,madanasadana,CLINICAL,vulva,vulva,,
+SCH,madanasadman,madanasadman,CLINICAL,vulva,vulva,,
+SCH,madanasthāna,madanasTAna,CLINICAL,vulva,vulva,,
+SCH,madanasyanda,madanasyanda,CLINICAL,vulva,vulva,,
+SCH,madanatoya,madanatoya,CLINICAL,vulva,vulva,,
+SCH,madanāgāra,madanAgAra,CLINICAL,vulva,vulva,,
+SCH,madanālaya,madanAlaya,CLINICAL,vulva,vulva,,
+SCH,madanāmbu,madanAmbu,CLINICAL,vulva,vulva,,
+SCH,madanātrapatra,madanAtrapatra,CLINICAL,vulva,vulva,,
+SCH,madanāvāsa,madanAvAsa,CLINICAL,vulva,vulva,,
+SCH,madavāri,madavAri,CLINICAL,vulva,vulva,,
+SCH,manmathacchatra,manmaTacCatra,CLINICAL,vulva,vulva,,
+SCH,manmathajala,manmaTajala,CLINICAL,vulva,vulva,,
+SCH,manmathamandira,manmaTamandira,CLINICAL,vulva,vulva,,
+SCH,manmathasadman,manmaTasadman,CLINICAL,vulva,vulva,,
+SCH,manmathāgāra,manmaTAgAra,CLINICAL,vulva,vulva,,
+SCH,manobhavagṛha,manoBavagfha,CLINICAL,vulva,vulva,,
+SCH,manobhavāgāra,manoBavAgAra,CLINICAL,vulva,vulva,,
+SCH,manojageha,manojageha,CLINICAL,vulva,vulva,,
+SCH,manojavāri,manojavAri,CLINICAL,vulva,vulva,,
+PWG,meḍhra,meQra,CLINICAL,vulva,vulva,˚tas,"4,29,14"
+PW,mukhabhagā,muKaBagA,CLINICAL,vulva,vulva,mukhabhagā,HARIV. 11178
+SCH,mārāgāra,mArAgAra,CLINICAL,vulva,vulva,,
+PW,narakavartman,narakavartman,CLINICAL,vulva,vulva,narakavartman,
+SCH,narakavartman,narakavartman,CLINICAL,vulva,vulva,,
+PW,nyūna,nyUna,CLINICAL,vulva,vulva,nyūnataram,"SĀY. zu ṚV. 2,33,4"
+PWG,nyūna,nyUna,CLINICAL,vulva,vulva,nyūne vai retaḥ siñcati,"AIT. BR. 6,9"
+SCH,nyūnonnata,nyUnonnata,CLINICAL,vulva,vulva,,"Amit. XXX,9."
+PW,puṣpapatha,puzpapaTa,CLINICAL,vulva,vulva,puṣpapadavī,HĀSY. 27
+PWG,puṣpapatha,puzpapaTa,CLINICAL,vulva,vulva,patha,"TRIK. 2,6,23"
+PW,pāpayoni,pApayoni,CLINICAL,vulva,vulva,pāpayoni,
+PWG,pāpayoni,pApayoni,CLINICAL,vulva,vulva,˚ṣu jāyate,"M. 4,166"
+SCH,pūrṇacandrā,pUrRacandrA,CLINICAL,vulva,vulva,,
+PW,randhra,ranDra,CLINICAL,vulva,vulva,randhra,BHĀG. P.
+SCH,ratadrāva,ratadrAva,CLINICAL,vulva,vulva,,Śārṅg. 3099.
+PW,ratagṛha,ratagfha,CLINICAL,vulva,vulva,ratagṛha,
+SCH,ratagṛha,ratagfha,CLINICAL,vulva,vulva,,"H V,11"
+SCH,ratajala,ratajala,CLINICAL,vulva,vulva,,Śārṅg. 3104.
+SCH,ratanīra,ratanIra,CLINICAL,vulva,vulva,,Śārṅg. 3096.
+SCH,ratasalila,ratasalila,CLINICAL,vulva,vulva,,Śārṅg. 3102.
+SCH,ratinilaya,ratinilaya,CLINICAL,vulva,vulva,,
+SCH,ratisalila,ratisalila,CLINICAL,vulva,vulva,,
+SCH,ratyambu,ratyambu,CLINICAL,vulva,vulva,,
+SCH,ratāmbu,ratAmbu,CLINICAL,vulva,vulva,,
+SCH,samīraṇā,samIraRA,CLINICAL,vulva,vulva,,
+PW,sar,sar,CLINICAL,vulva,vulva,bāhuniḥsṛta,Nachtr. 6
+SCH,sasyanda,sasyanda,CLINICAL,vulva,vulva,,
+PW,sayoni,sayoni,CLINICAL,vulva,vulva,sayoni,"AK. 3,6,1,2"
+PW,saṃbādha,saMbADa,CLINICAL,vulva,vulva,narakavartman,"VĀMANA 2,1,17"
+PWG,saṃbādha,saMbADa,CLINICAL,vulva,vulva,śatrusaṃbādhakāraka,H. an.
+PWG,saṃpīḍana,saMpIqana,CLINICAL,vulva,vulva,yoni˚,"11,108"
+PW,saṃsāramārga,saMsAramArga,CLINICAL,vulva,vulva,saṃsāramārga,Spr. 2847
+PWG,saṃsāramārga,saMsAramArga,CLINICAL,vulva,vulva,saṃsāramārga,"TRIK. 2,6,22"
+PW,saṃsārapatha,saMsArapaTa,CLINICAL,vulva,vulva,saṃsārapatha,GAL.
+PW,smaracchattra,smaracCattra,CLINICAL,vulva,vulva,smaracchattra,
+PWG,smaracchattra,smaracCattra,CLINICAL,vulva,vulva,smaracchattra,WILSON
+PW,smaradhvaja,smaraDvaja,CLINICAL,vulva,vulva,ā,
+PWG,smaradhvaja,smaraDvaja,CLINICAL,vulva,vulva,ā,ŚABDAR.
+SCH,smarageha,smarageha,CLINICAL,vulva,vulva,,Śārṅg. 3104.
+SCH,smaragṛha,smaragfha,CLINICAL,vulva,vulva,,
+SCH,smarajala,smarajala,CLINICAL,vulva,vulva,,
+SCH,smaramandira,smaramandira,CLINICAL,vulva,vulva,,"S I,34,6"
+SCH,smararandhra,smararanDra,CLINICAL,vulva,vulva,,
+SCH,smarasadana,smarasadana,CLINICAL,vulva,vulva,,
+SCH,smarasadman,smarasadman,CLINICAL,vulva,vulva,,
+SCH,smarasalila,smarasalila,CLINICAL,vulva,vulva,,
+SCH,smaraveśman,smaraveSman,CLINICAL,vulva,vulva,,
+SCH,smaravāri,smaravAri,CLINICAL,vulva,vulva,,
+SCH,smarayantra,smarayantra,CLINICAL,vulva,vulva,,
+SCH,smarayantrageha,smarayantrageha,CLINICAL,vulva,vulva,,
+SCH,smarāgāra,smarAgAra,CLINICAL,vulva,vulva,,
+SCH,smarālaya,smarAlaya,CLINICAL,vulva,vulva,,
+SCH,smarāmbu,smarAmbu,CLINICAL,vulva,vulva,,
+SCH,smarāvāsa,smarAvAsa,CLINICAL,vulva,vulva,,Śārṅg. 3100.
+PW,strībhaga,strIBaga,CLINICAL,vulva,vulva,strībhaga,"NIR. 3,16"
+PW,strīcihna,strIcihna,CLINICAL,vulva,vulva,strīcihna,
+PWG,strīcihna,strIcihna,CLINICAL,vulva,vulva,strīcihna,H. 610
+PW,strīvraṇa,strIvraRa,CLINICAL,vulva,vulva,strīvraṇa,"KĀVYAPR. 190,5"
+SCH,suratapayas,suratapayas,CLINICAL,vulva,vulva,,
+SCH,suratāmbu,suratAmbu,CLINICAL,vulva,vulva,,
+PW,sādhana,sADana,CLINICAL,vulva,vulva,vikaraṇa,"SĀH. D. 237,9"
+PW,sūcīmukha,sUcImuKa,CLINICAL,vulva,vulva,ī,
+PW,sūcīvaktra,sUcIvaktra,CLINICAL,vulva,vulva,ā,
+PWG,trikoṇa,trikoRa,CLINICAL,vulva,vulva,"trikoṇabhavana, tritrikoṇa",ŚABDĀRTHAKALPATARU
+PW,tīrtha,tIrTa,CLINICAL,vulva,vulva,tīrtha,"MĀN. GṚHY. 1,7"
+PWG,tīrtha,tIrTa,CLINICAL,vulva,vulva,pātra,H. an.
+PWG,ulba,ulba,CLINICAL,vulva,vulva,"avakolba, nānolba, samānolva",ŚKDR.
+SCH,varāṅgaka,varANgaka,CLINICAL,vulva,vulva,,
+PW,viyoni,viyoni,CLINICAL,vulva,vulva,˚nī,
+PW,viyoni,viyoni,CLINICAL,vulva,vulva,viyoni,NĪLAK.
+PWG,viyoni,viyoni,CLINICAL,vulva,vulva,saṃbhavaḥ viyonīṣu,"M. 12,77"
+PWG,viyoni,viyoni,CLINICAL,vulva,vulva,ayoni,"SUŚR. 1,290,16"
+PW,vāmin,vAmin,CLINICAL,vulva,vulva,yoni,
+PW,yoni,yoni,CLINICAL,vulva,vulva,yonī,"Comm. zu NYĀYAM. 9,2,6"
+PWG,yoni,yoni,CLINICAL,vulva,vulva,yonī,"NIR. 2,8"
+PW,yonidoṣa,yonidoza,CLINICAL,vulva,vulva,yonidoṣa,Verz. d. B. H. No. 972
+PW,yonināsā,yoninAsA,CLINICAL,vulva,vulva,yonināsā,
+PWG,yonināsā,yoninAsA,CLINICAL,vulva,vulva,yonināsā,WILSON
+PWG,āsura,Asura,CLINICAL,vulva,vulva,meḍhra,"29,14"
+PW,āsyamaithunika,AsyamETunika,CLINICAL,vulva,vulva,āsyamaithunika,"MBH. 7,73,43"
+SCH,āsyamaithunika,AsyamETunika,CLINICAL,vulva,vulva,,"MBh. 7,73,43."
+SCH,śroṇīsadman,SroRIsadman,CLINICAL,vulva,vulva,,"Amit. VI,25."
+PW,ṣaṇḍha,zaRQa,CLINICAL,vulva,vulva,yoni,"VASIṢṬHA 14,2"
+PWG,gar,gar,VULGAR,cunnus,cunnus,ā hanti gabhe paso ni galgalīti dhārakā,"VS. 23,22"
+SCH,garta,garta,VULGAR,cunnus,cunnus,,"Sam. IV,66."
+PW,jaghanacyuti,jaGanacyuti,VULGAR,cunnus,cunnus,jaghanacyuti,"TBR. 2,4,6,4"
+PWG,kuṇḍāśin,kuRqASin,VULGAR,cunnus,cunnus,kuṇḍa,ŚKDR.
+PW,madanātapatra,madanAtapatra,VULGAR,cunnus,cunnus,madanātapatra,"BHĀVAPR. 1,18"
+PW,manobhavāgāra,manoBavAgAra,VULGAR,cunnus,cunnus,manobhavāgāra,"BHĀVAPR. 1,18,14"
+PWG,maṇḍūradhāṇika,maRqUraDARika,VULGAR,cunnus,cunni,dhāṇikā,"ṚV. 10,155,4"
+PW,sakthan,sakTan,VULGAR,cunnus,cunnus,sakthī,
+PWG,sakthan,sakTan,VULGAR,cunnus,cunnus,sakthnā dediśyate nārī,"VS. 23,29"
+PW,asaṃhata,asaMhata,VULGAR,excrement,faeces,asaṃhata,"SUŚR. 1,45,8"
+PW,bhinnaviṭka,Binnaviwka,VULGAR,excrement,faeces,bhinnavarcas,"BHĀVAPR. 4,41,14"
+PWG,bhinnaviṭka,Binnaviwka,VULGAR,excrement,faeces,˚tva,"ŚĀRṄG. SAṂH. 1,7,71"
+PW,dhātumala,DAtumala,VULGAR,excrement,faeces,dhātumala,
+PW,gu,gu,VULGAR,excrement,cacare,guvati,
+PWG,gu,gu,VULGAR,excrement,cacare,guvati,"DHĀTUP. 28,106"
+PW,gūtha,gUTa,VULGAR,excrement,stercus,gūtha,
+PWG,kar,kar,VULGAR,excrement,cacare,apaskara,WEST.
+PW,kīṭa,kIwa,VULGAR,excrement,stercus,kiṭṭa,"HEMĀDRI 2,a,76,6"
+PW,laṇḍa,laRqa,VULGAR,excrement,stercus,laṇḍa,"KĀVYAPR. S. 155, N. 51"
+PW,leṇḍa,leRqa,VULGAR,excrement,stercus,laṇḍa,
+PW,mīḍha,mIQa,VULGAR,excrement,stercus,mīḍha,"LALIT. 205,6. 11. 259,12"
+PW,niṣpad,nizpad,VULGAR,excrement,excrementum,niṣpad,
+PWG,niṣpad,nizpad,VULGAR,excrement,excrementum,dudheryuktasya dravataḥ sahānasa ṛcchanti ṣmā niṣpado mudgalānīm,"ṚV. 10,103,6"
+PW,pravāhaṇa,pravAhaRa,VULGAR,excrement,faeces,pravāhaṇī,"CARAKA. 8,10"
+PWG,pravāhaṇa,pravAhaRa,VULGAR,excrement,faeces,bali,"SUŚR. 1,258,11"
+PW,purīṣasaṃgrahaṇīya,purIzasaMgrahaRIya,VULGAR,excrement,faeces,purīṣasaṃgrahaṇīya,Mat. med. 3
+PW,purīṣavirañjanīya,purIzaviraYjanIya,VULGAR,excrement,faeces,purīṣavirañjanīya,Mat. med. 3
+PW,pāy,pAy,VULGAR,excrement,cacare,pāyate,
+PWG,pāy,pAy,VULGAR,excrement,cacare,pāyate,"PRAŚNOP. 4,2"
+PW,suga,suga,VULGAR,excrement,faeces,sugā,"HEMĀDRI 1,463,15"
+PWG,suga,suga,VULGAR,excrement,faeces,pṛtsva1smabhyaṃ mahi varivaḥ sugaṃ kaḥ,ŚABDAC.
+PW,utsarga,utsarga,VULGAR,excrement,stercus,chandasām,"JAIM. 3,7,19"
+PW,varcas,varcas,VULGAR,excrement,stercus,varcas,
+PWG,varcas,varcas,VULGAR,excrement,stercus,vigalitamegha˚,UJJVAL.
+PW,varcaska,varcaska,VULGAR,excrement,stercus,varcaska,
+PW,viś,viS,VULGAR,excrement,cacare,upa,"CARAKA. 3,5"
+PW,viś,viS,VULGAR,excrement,faeces,viṣ,
+PWG,viś,viS,VULGAR,excrement,faeces,viṣ,H. 634
+PWG,viś,viS,VULGAR,excrement,cacare,upa,"CARAKA 3,5"
+PW,viḍbandha,viqbanDa,VULGAR,excrement,faeces,viḍbandha,
+PWG,viḍbandha,viqbanDa,VULGAR,excrement,faeces,sa˚,"SUŚR. 2,437,16"
+PW,viṣ,viz,VULGAR,excrement,faeces,viṣ,
+PWG,viṣ,viz,VULGAR,excrement,faeces,viṭ,"SIDDH. K. 247,b,2 v. u."
+PW,viṣṭhā,vizWA,VULGAR,excrement,faeces,viṣṭhā,
+PWG,viṣṭhā,vizWA,VULGAR,excrement,faeces,viṣ,"AK. 2,6,2,19"
+PWG,viṭka,viwka,VULGAR,excrement,faeces,karṇa˚,"SUŚR. 2,368,13"
+PW,viṭsaṅga,viwsaNga,VULGAR,excrement,faeces,viṭsaṅga,"CARAKA. 8,10"
+PWG,viṭsaṅga,viwsaNga,VULGAR,excrement,faeces,saṅga,"SUŚR. 2,428,12"
+PW,śakan,Sakan,VULGAR,excrement,stercus,śaknas,
+PW,śakṛt,Sakft,VULGAR,excrement,stercus,śakṛt,
+PWG,śakṛt,Sakft,VULGAR,excrement,stercus,śaknas,165
+PWG,śamala,Samala,VULGAR,excrement,stercus,viṣṭhā,"AK. 2,6,2,18"
+PW,śodhana,SoDana,VULGAR,excrement,faeces,tāmravallī,"216,14"
+PWG,śodhana,SoDana,VULGAR,excrement,faeces,tattvaṃpadārtha˚,ŚABDAC.
+PW,śārīra,SArIra,VULGAR,excrement,faeces,vṛṣa,S. S. S. 246
+PWG,śārīra,SArIra,VULGAR,excrement,faeces,vṛṣe,"M. 11,202"
+PW,ayabhyā,ayaByA,VULGAR,futuere,futuenda,ayabhyā,
+PW,han,han,VULGAR,futuere,fututa,brāhmaṇihatā,"127,28"
+PWG,han,han,VULGAR,futuere,fututa,he hate he hatetyevaṃ svāmibhartṛhateti ca,"8,9,15"
+PW,jabh,jaB,VULGAR,futuere,futuere,yabh,ed. Bomb.
+PW,ram,ram,VULGAR,futuere,futuere,ramyetām,Spr. 7818
+PWG,ram,ram,VULGAR,futuere,futuere,tasya kalatraṃ rantuṃ samīhate,"ŚUK. in LA. (III) 37,3"
+PW,sap,sap,VULGAR,futuere,futuens,sāpayant,
+PWG,sap,sap,VULGAR,futuere,futuens,kanīkhunadiva sāpayan,"TBR. 2,4,6,5"
+PW,suyabhyā,suyaByA,VULGAR,futuere,futuenda,suyabhyā,"AV. 20,128,9"
+PW,yabh,yaB,VULGAR,futuere,futuere,yabhate,"VET. [U.] 116,3"
+PWG,yabh,yaB,VULGAR,futuere,futuere,yapsyati,"P. 7,2,10"
+SCH,yabh,yaB,VULGAR,futuere,futuere,,"Dināl.-Śuk. 23,18."
+PWG,yabhana,yaBana,VULGAR,futuere,fututio,yabh,VOP.
+PWG,yabhya,yaBya,VULGAR,futuere,futuenda,ayabhyā,"AV. 20,128,8"
+PW,yabhyā,yaByA,VULGAR,futuere,futuenda,ā˚,
+PW,yābha,yABa,VULGAR,futuere,fututio,yābha,
+PWG,yābha,yABa,VULGAR,futuere,fututio,yabh,"VOP. 21,5"
+PW,yābhavant,yABavant,VULGAR,futuere,futuens,yābhavant,
+PWG,yābhavant,yABavant,VULGAR,futuere,futuens,yābhavataḥ,"KĀVYĀD. 1,66"
+PW,kumbhīka,kumBIka,VULGAR,sodomy(paedicare),paedicat,kumbhīka,
+PWG,kar,kar,VULGAR,urine(mingere),mingere,ālikhya vikṣipati,WEST.
+PW,mih,mih,VULGAR,urine(mingere),mingere,mīḍha,"MBH. 13,5979"
+PWG,mih,mih,VULGAR,urine(mingere),mingere,secane,"P. 7,2,10"
