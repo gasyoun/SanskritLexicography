@@ -52,8 +52,8 @@ editors prefer — to provide the article in German.
 With thanks for your consideration, and kind regards,
 
 Mārcis Gasūns
-*[affiliation to confirm]*
-ORCID: 0000-0003-4513-884X · [e-mail to confirm]
+Independent researcher
+gasyoun@ya.ru · ORCID: 0000-0003-4513-884X
 
 ---
 
