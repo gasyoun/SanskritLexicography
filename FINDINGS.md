@@ -184,8 +184,12 @@ a probe), never a hunch. When a finding is later refuted or superseded, strike i
   dhātu list, so hallucinated non-dhātu roots are discarded, not stored.
   Implication: when filling roots by inference or LLM, (1) normalize to dhātupāṭha citation form before
   comparing/joining, and (2) always gate an LLM-proposed root through a known-dhātu set — never trust it raw.
+  Resolved by a `build_root_normalization.py` pass (CANON = `mw_roots.tsv` citation forms ONLY — vidyut's
+  surface forms keep the thematic `-a` and must NOT seed CANON): 622 variants folded (`sada`→`sad`),
+  guarded so a real distinct root (`kṝ` ≠ `kṛ`) is never collapsed; oracle-join precision then rose 74→83 %,
+  nearest-root stays the weakest tier (~66–75 %, genuine wrong-token grabs) and is tagged for downweighting.
   **Source:** [`nearest_root_audit.json`](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/etymology_stats/nearest_root_audit.json)
-  + [`llm_root_tools.py`](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/etymology_stats/llm_root_tools.py) — csl-orig · 2026-06-26
+  + [`build_root_normalization.py`](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/etymology_stats/build_root_normalization.py) — csl-orig · 2026-06-26
 
 ---
 
