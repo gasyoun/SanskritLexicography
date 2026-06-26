@@ -14,7 +14,7 @@ lexicographic tools.
 
 | Path | Purpose |
 |---|---|
-| `HeadwordLists/` | Exported and derived headword lists for CDSL dictionaries, including MW, PWG, PWK, AP, BHS, CAE, CCS, SCH, SKD, VCP, VEI, and aggregate comparison files. |
+| `HeadwordLists/` | Exported and derived headword lists for CDSL dictionaries, including MW, PWG, PWK, AP, BHS, CAE, CCS, SCH, SKD, VCP, VEI, aggregate comparison files, and the external [Catalan-Pujol/](HeadwordLists/Catalan-Pujol/) Sanskrit–Catalan wordlist + CDSL-coverage analysis. |
 | `Syntax-Lectures/` | Markdown and HTML lecture material (mostly Russian) on Sanskrit particles and syntax, including the interactive [particle explorer](Syntax-Lectures/sanskrit_particles_explorer.html). |
 | `ROADMAP_2026_2027.md` | Research roadmap covering csl-atlas review, publication plans, FAIR gaps, standards exports, and learner-layer work. |
 | `CDSL-2025.pdf` | Snapshot/reference document for the 2025 CDSL-related work. |

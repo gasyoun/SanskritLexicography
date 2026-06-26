@@ -85,9 +85,29 @@ cross-checked against that site and the org-level
 | VCP | Tārānātha Tarkavācaspati, Vācaspatyam | key1, key2 |
 | VEI | Macdonell & Keith, Vedic Index of Names and Subjects | key1, key2 |
 
+## Subdirectory: `Catalan-Pujol/`
+
+An **external** Sanskrit headword spine and its coverage analysis against CDSL —
+not a CDSL export. Source: the *Diccionari Sànscrit–Català* (Òscar Pujol,
+Enciclopèdia Catalana, 2005, the first Sanskrit→Catalan dictionary). The lemma
+list is mirrored from the `sanskrit-lexicon/CORRECTIONS` repo.
+
+| File | What it is |
+|---|---|
+| [Catalan-Pujol/61267-Sanskrit-Catalan-Words-List.txt](Catalan-Pujol/61267-Sanskrit-Catalan-Words-List.txt) | The raw lemma spine — 61,266 lines, **accented IAST with `√`-roots, Vedic udātta, and Pujol's compound-segmenting hyphens**, UTF-8 **with BOM**. |
+| [Catalan-Pujol/Sanskrit-Catalan-Wordlist-vs-Cologne.md](Catalan-Pujol/Sanskrit-Catalan-Wordlist-vs-Cologne.md) | The analysis: the list is ≈ a subset of Monier-Williams (**MW alone covers 88.5 %**; 89.9 % cumulative with PW; ~89 % overall match). Documents the two transcoding traps (display-added line numbers; `ś`=s+U+0301 accent collision). |
+| [Catalan-Pujol/Catalan-uncovered-by-CDSL.txt](Catalan-Pujol/Catalan-uncovered-by-CDSL.txt) + [Catalan-uncovered/](Catalan-Pujol/Catalan-uncovered/) | The ~4.7k lemmas no CDSL dictionary covers, bucketed (simple / compound / root / prefixed-root / suspect-char). |
+| `coverage_by_dict.py`, `match_rate.py`, `make_uncovered_lists.py` | The analysis scripts (repo-portable; IAST→SLP1 via [`sanskrit-util`](https://github.com/sanskrit-lexicon/sanskrit-util)). |
+
+> ⚠️ Unlike the `key1`/`key2` files here, this list is **accented IAST**, not SLP1,
+> and carries an editorial compound-segmentation layer absent from any CDSL key —
+> normalize (strip `√`, accents, hyphens; IAST→SLP1) before matching.
+
 ## Entry points
 
 1. `*-unique-key1-*.txt` — normalized matching, dedup, joins.
 2. `*-unique-key2-*.txt` — print-form display, citation, scan checking.
 3. [mw-apte-mcdonell-hk.txt](mw-apte-mcdonell-hk.txt) — ready-made comparison
    across three major dictionary traditions.
+4. [Catalan-Pujol/](Catalan-Pujol/) — external Sanskrit–Catalan wordlist + its
+   CDSL-coverage analysis (see subsection above).
