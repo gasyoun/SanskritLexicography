@@ -9,6 +9,27 @@ then **cut a new version every time the changelog is updated** (promote
 
 ## [Unreleased]
 
+## [0.0.28] - 2026-06-26
+
+### Added — literature shelf mined for the Sanskrit→Russian dictionary
+- **Per-manual audit + theory deep-dive for pwg_ru.** Three new docs under
+  `RussianTranslation/`: [`LITERATURE_FOR_PWG_RU.md`](RussianTranslation/LITERATURE_FOR_PWG_RU.md)
+  (three-pass full-text harvest of the whole `literature/md/` shelf, distilled by pipeline
+  insertion point), [`MANUALS_FOR_PWG_RU.md`](RussianTranslation/MANUALS_FOR_PWG_RU.md) (all
+  **37** `Lexicography-Manuals/` walked one at a time — 19 drive theory, 2 marginal, 15 serve
+  other repos, 1 OCR-blocked), and
+  [`MANUALS_FIVE_DEEP_DIVE.md`](RussianTranslation/MANUALS_FIVE_DEEP_DIVE.md) (detailed,
+  text-grounded theory of the five load-bearing manuals — Apresjan, Riemer, Hartmann & James,
+  Gonda–Vogel, Klosa — for making a Sanskrit–Russian dictionary).
+- **Harvest folded into the live pipeline:** the pwg_ru translator and QA-judge prompts plus a
+  new hand-curated glossary `RussianTranslation/glossaries/de_ru_translation_aids.md` (samāsa
+  types, case-absolute constructions, śāstric formulas, the *yad…tad* correlative map, the
+  19th-c. German orthography decoder).
+- **Literature index refreshed.** [`literature/md/INDEX.md`](literature/md/INDEX.md) gains the
+  **⚠ blocked** convention (5 files un-mineable until re-OCR'd / re-extracted), RuTrans tags on
+  Renou/Apresjan/Tubb, and ✓-fixed notes on the two re-sliced NLP-proceedings bundles
+  (Adapting-NLP, Performance-POS). README documentation-map updated to point at the new docs.
+
 ## [0.0.27] - 2026-06-26
 
 ### Fixed — doc consolidation

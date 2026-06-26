@@ -305,7 +305,108 @@ two PWG German sub-senses should stay split or merge.
 
 ---
 
-*Mined 2026-06-26 from the full-text `literature/md/` extractions (originally 16 PDFs in
-pass 1, plus 9 comparative-lexicography / semantics / corpus-methodology sources in pass 2)
-via per-source close reading. The pass-2 sense-distinctness test battery (§6 judge rules)
-is the highest-value addition for the QA stage.*
+## 7. Third pass — full-shelf completion (every remaining source)
+
+Sweep of all files not yet touched. The high-value adds are the **compound-type Russian
+names**, the **śāstric formula equivalents**, the **expanded correlative inventory**, and
+the **lexicalized-participle keying** rule.
+
+### Translator-prompt additions
+- **Compound (samāsa) rendering, right-headed.** Build the Russian gloss off the *vigraha*
+  (paraphrase), head = the **second** member: татпуруша *asi-kalaha* → «бой мечом» (head
+  *бой*); never calque member-by-member off the first constituent. A literal member-by-member
+  Russian calque should be flagged suspect (Gillon95/96, Apte).
+- **Bahuvrīhi is exocentric** — denotes a possessor *outside* the compound; *hata-putra-* →
+  «та, у кого убиты сыновья / чьи сыновья убиты», not the literal sum (Apte, Ruppel).
+- **`-ādi`/`-prabhṛti` compounds** = open-ended category = the *hypernym* of members →
+  «X и тому подобное / и прочее», never a closed dvandva list (Inglese & Geupel).
+- **Split over-long compounds into clauses** rather than one Russian calque — Apte's own
+  rule that stacked compounds become "unintelligible" (Apte §356).
+- **Preserve the absolutive/participial character.** Sanskrit prefers gerunds, absolute
+  locatives and noun-predicates over subordinate clauses; when a German gloss unpacks one
+  into a finite/relative clause, keep the Russian деепричастный/participial where natural,
+  don't over-subordinate (Speyer 1886).
+- **Derived/compound headword may itself BE a relative clause** — gloss it as one
+  («тот, кто…»), lifting an embedded Sanskrit head out and fronting it (Ruppel).
+
+### Correlative-map additions (extend §1b)
+- **Doubled relative** *yo yaḥ* = «кто бы ни / всякий, кто»; adverbial pairs
+  *yatas…tatas* «откуда…оттуда», *yāvat…tāvat* «пока…до тех пор», *yadi…tarhi* «если…то»
+  (Ruppel).
+- **Multiple-head correlative** (two relative pronouns, one-to-one to two correlates) →
+  distributive Russian «каждый… того, с кем…», not a single *который* pair (Lipták).
+- **Default reading is maximalizing/universal/definite** → correlate defaults to «все, кто…»
+  / «тот, кто…»; use «два/некоторые» only with an explicit partitive (Lipták).
+- **`yad…tad` is a *weak* correlative** — one form covers restrictive, appositive,
+  conditional («если…»), and indirect-question readings. **Judge/gate: widen the acceptable
+  band** — flag a Russian rendering only when it contradicts the German, not merely for
+  choosing conditional/appositive over restrictive (Davison LSA08; Historical Syntax:
+  Vedic-flavored citations may be paratactic «…, и тот…», not subordinate).
+
+### Glossary additions
+- **Compound-type Russian names:** татпуруша (определительное/падежное) · кармадхарая
+  (аппозитивное определительное) · бахуврихи (притяжательное/посессивное, «тот, у кого…»)
+  · двандва (копулятивное/сочинительное) · авьяйибхава (наречное неизменяемое) · двигу
+  (числительное определительное) (Apte).
+- **Absolutive/case-construction names:** локативный абсолютив (абсолютный локатив) as the
+  canonical rendering for абсолютные обороты (genitive absolute = the marked variant);
+  dative subtypes «датив выгоды/заинтересованности» (*commodi*) vs «датив цели» (*finalis*)
+  (Speyer 1886).
+- **Śāstric analysis formulas → fixed dry Russian equivalents** (don't re-translate per
+  occurrence): *iti arthaḥ* → «то есть; таков смысл»; *anena … vivakṣitam* → «этим он хочет
+  сказать»; *X-bhāvaḥ* → «состояние/свойство X» (Tubb). Their presence also *marks* a gloss
+  as scholastic-register → flat terminological Russian.
+
+### Corpus-gate / strata additions
+- **Lexicalized participle ≠ live participle — separate keys.** A `-ant/-vant/-ta` surface
+  form (e.g. *sunvánt-* "Soma-presser") can attest either the verb's sense or a lexicalized
+  nominal sense; don't collapse them onto one headword key, and flag `-ta/-na/-ant` forms as
+  POS-ambiguous when keying (Lowe).
+- **Sense-by-distinct-collocate-set:** two proposed Russian senses drawing on the *same*
+  Sanskrit collocate set are likely one sense (merge); genuinely distinct senses show
+  distinct collocates (Sinclair) — a concrete sense-split/merge cross-check.
+- **Decision-list WSD with positional weighting:** weight disambiguating collocates by
+  offset/distance (Smadja-style), not flat PMI, when picking the cue for which sense a usage
+  supports (Ryan).
+- **Range via `nunique()`** as a fast pre-filter (how many texts/strata a sense appears in)
+  before the heavier dispersion test (Keller).
+
+### QA / human-verify additions
+- **Jaccard span-IoU agreement metric** for the human-verify step: measure agreement on
+  *which Sanskrit token-span* a Russian sense attaches to (intersection-over-union of spans),
+  since the unit boundaries themselves vary and label-kappa doesn't apply. Report
+  `raw → cleaned → cleaned-sameSeg`; budget more review on prose strata (lower reliability
+  than metrical) (Biagetti & Hellwig).
+- **Grammatical-parallelism check:** when the German sets two glosses in analogous slots
+  (paired/antithetical sense-lists, dvandva-style "X und Y"), the Russian should preserve
+  the same case/number/POS parallelism across the pair, not vary the construction — judge
+  symmetry, not just lexical accuracy (Jakobson).
+
+### Display / learner-layer additions
+- **Sense-ordering policy:** PWG is a 19th-c. *historical* dictionary, so its sense order is
+  genealogical; a modern pwg_ru may legitimately re-sort senses by frequency/generality for
+  the reader (Allan) — but keep this an explicit, flagged transform, not silent.
+- **Coverage-tier profiling for the learner layer:** compute SLP1-lemma coverage over the
+  aligned corpus to bucket headwords into core / mid-frequency / specialist tiers; the
+  mid-frequency band is the learner layer's primary target (Szudarski). Attach paradigm +
+  KWIC corpus-concordance links around the gloss (Allan mediostructure).
+
+### Coverage ledger (every source, honest verdict)
+
+| Status | Sources |
+|---|---|
+| **Mined — new material** | Peshkovsky · Testelets · Lomov · Синтаксис-2009 · Mitrenina · Zaliznyak-Paducheva · Apresjan · Hartmann · Bloomsbury · Klosa · Leitan · Delbrück · Renou · Gonda-Vogel · Baalbaki · Ferri · Dickey · Jackson · Riemer · Desagulier · Egbert · Apte-Composition · Tubb · Inglese-Geupel · Speyer-1886 · Gillon95 · Gillon96 · Ruppel · Correlatives-Cross-Ling · Lowe · Biagetti-Hellwig · Szudarski · Keller · Ryan · Sinclair · Allan · Jakobson · Davison-LSA08 |
+| **Overlap only** (covered elsewhere) | Gillon-Shaer (in Gillon96) · "55"=Mitrenina-correlatives (in mitrenina_fdsl) · Kumar (nominalization typology) · Historical-Syntax (paratactic→hypotactic, 1 line) · Gerow (marginal learner note) |
+| **Zero yield for pwg_ru** | McEnery · O'Keeffe · Partridge · Энциклопедический-словарь · Patterns-of-Exchange · StrategiesDoing · Pérez-Paredes · Lu · Wong-Barcroft · Applied-Ling ×2 · Carnie · Teaching-English-YL · Bowern · AEK (RU intro textbook) |
+| **⚠ Blocked — needs OCR / re-extract** | Speyer-1895 (image PDF, 0 chars) · Meenakshi-1983 (no OCR body) · Rātānjanakar/Hints (Devanagari OCR noise) · Загадки_5 (Cyrillic mojibake) · Adapting-NLP & Performance-POS (mis-titled multi-paper bundles; the relevant single paper wasn't OCR'd) |
+
+> **Actionable:** the five **⚠ blocked** sources can't be mined until re-OCR'd. Worth a
+> `/cologne-preface-ocr`-style pass on Speyer-1895 (a genuinely relevant German source) and
+> re-extracting the two NLP proceedings to isolate the Hellwig tagger paper.
+
+---
+
+*Mined 2026-06-26 from the full-text `literature/md/` extractions across three passes
+(16 + 9 + ~37 sources = the whole shelf) via per-source close reading. Highest-value adds:
+the §6 sense-distinctness test battery (judge), the §1b/§7 correlative map (translator),
+and the §1c/§7 German→Russian + compound-type glossary tables.*
