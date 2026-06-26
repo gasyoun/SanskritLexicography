@@ -112,7 +112,7 @@ So **less than half** the list is attested in the ~650-text DCS corpus, even tho
 
 ### The 177 "corpus-attested but in no CDSL dictionary" — triaged
 
-This corner is **not all convention** — it splits into convention/morphology vs genuine candidate gaps. Full triage (band-sorted dump reproducible via [`coverage_vs_dcs.py`](coverage_vs_dcs.py)):
+This corner is **not all convention** — it splits into convention/morphology vs genuine candidate gaps. The **complete categorised list of all 177** is in [`DCS-attested-no-CDSL.md`](DCS-attested-no-CDSL.md) (band-sorted, reproducible via [`coverage_vs_dcs.py`](coverage_vs_dcs.py)); summary triage:
 
 | Type | n | Convention or gap? | Examples (Pujol form) |
 |---|---:|---|---|
@@ -147,6 +147,21 @@ The list is in **accented IAST with an explicit morphological-analysis layer** �
 
 **Practical upshot:** conventions 1–3, 5, 7–8 and 10 are exactly why a word present in CDSL can still miss the flat-key match, and why the §5 "corpus-attested, no-dict" corner is dominated by verb/suffix/bīja convention rather than true gaps. To match Pujol against any CDSL or corpus key set: drop `√`, parentheticals and trailing digits; join internal hyphens; transcode IAST→SLP1; then strip SLP1 accents (in that order).
 
+## 7. Do Pujol's accents agree with Cologne's?
+
+**The notation differs; the placement mostly agrees.** Pujol marks the udātta with a **combining acute on the vowel** in IAST (`áṃśa-`, `viṣā́ṇā-`); Cologne marks it with a **`/` after the accented vowel** in SLP1 `<k2>` (`a/MSa`). Comparing accent *position* as a vowel ordinal (1 = first vowel), on lemmas accented on both sides — matching against **any** accent-variant of a key so homographs like *bhara*/*bhárā* aren't falsely counted as conflicts (script: [`accent_compare.py`](accent_compare.py)):
+
+| vs dict | both-accented shared lemmas | **same position** | differ | accented in Pujol only | accented in dict only |
+|---|--:|--:|--:|--:|--:|
+| **GRA** (Grassmann RV) | 1,023 | **991 = 96.9 %** | 32 | 46 | 242 |
+| **MW** | 1,611 | **1,564 = 97.1 %** | 47 | 534 | 524 |
+
+- **~97 % place the udātta on the same vowel** — Pujol's accentuation is essentially the standard Vedic/MW accent, just in a different notation.
+- **Coverage is selective and asymmetric.** Pujol accents ~11,535 lemmas total (mostly the Vedic stratum); GRA accents 242 shared lemmas Pujol leaves bare, and against MW each side accents ~520 the other doesn't. So Pujol is *not* an exhaustive accent source — absence of a Pujol accent ≠ the word is unaccented.
+- **~3 % genuine position disagreements** (32 vs GRA, 47 vs MW). Spot-checked, these are real notation/analysis differences, and where they conflict with the Rigveda the **Cologne/GRA reading is generally the canonical one** — e.g. `bhaga` Pujol vowel 2 vs GRA vowel 1 (RV *bhága*, first-syllable udātta), `amatra` Pujol 3 vs GRA/MW 1, `dvāra` Pujol 1 vs 2. A useful small QA list to send back to the Catalan editors (full set reproducible via the script).
+
+> Method caveat: positions are computed in SLP1 vowel-ordinal space; diphthong/transcoding edge cases and the any-variant match mean the ~3 % is an *upper-ish* bound on real conflicts, not an exact error count.
+
 ---
 
-*Counts: 61,266 lemmas → 59,377 unique normalised keys; 4,950 with `√`, 3,947 vowel-accented. Matching is accent- and compound-insensitive lemma identity against `<k1>` of CDSL dictionaries in `csl-orig/v02` (15 for §2's greedy table, all 43 for §4's uncovered list) and against the DCS-2021 lemma index for §5.*
+*Counts: 61,266 lemmas → 59,377 unique normalised keys; 4,950 with `√`, 3,947 vowel-accented (≈11,535 carry an accent counting all variants). Matching is accent- and compound-insensitive lemma identity against `<k1>` of CDSL dictionaries in `csl-orig/v02` (15 for §2's greedy table, all 43 for §4's uncovered list) and against the DCS-2021 lemma index for §5; §7 compares accent position against the accented `<k2>` of GRA and MW.*
