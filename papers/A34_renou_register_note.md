@@ -132,6 +132,23 @@ date-fallback texts that produce state-axis noise. Register quality therefore ri
 genre/name confidence floor, not on a frequency gate — a result of the audit, not an
 assumption.
 
+### 3.5 Further register findings
+
+Beyond épigraphique, the per-register metrics (dictionary-specificity, corpus-absence,
+era-spread) surface four results, detailed in
+[`RENOU_FINDINGS.md`](../RussianTranslation/RENOU_FINDINGS.md):
+(i) **bhāṣya is a cross-disciplinary *syntactic* register** — Renou's own thesis (the
+nominal style "*durci*… expression doctrinale à tous les types de problèmes et de
+disciplines*", p. 133), corroborated by its low 8.8 % dictionary-specificity (a standardised,
+not idiosyncratic, vocabulary); (ii) **bauddha is a second self-contained lexical world** —
+44.5 % single-dictionary, of which 92 % (10,511 headwords) are recorded only by Edgerton's
+BHS, and 12.4 % corpus-absent — a parallel to épigraphique by a different mechanism;
+(iii) **the doctrinal registers carry the perennial lexicon** (kārikā/tantra/upaniṣad,
+57–65 % of headwords spanning ≥4 states) while narrative/poetic/documentary registers are
+period-bound (épig/epic/kāvya, 10–22 %); (iv) **nāṭya and kāvya are the coinage registers**
+(highest dictionary-specificity), the śāstric ones the standardising — conservation vs
+invention, read straight off the register metrics.
+
 ## 4. Consequence
 
 For an evidence-graded digital dictionary, the register is a second per-sense badge,
