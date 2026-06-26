@@ -1,11 +1,13 @@
 import sys, re, os, unicodedata
 sys.stdout.reconfigure(encoding='utf-8'); sys.stderr.reconfigure(encoding='utf-8')
-sys.path.insert(0, r"C:/Users/user/Documents/GitHub/sanskrit-util/py")
+# Repo-relative paths. Override the two deps with env vars if your clone differs.
+HERE=os.path.dirname(os.path.abspath(__file__))
+sys.path.insert(0, os.environ.get("SANSKRIT_UTIL_PY", r"C:/Users/user/Documents/GitHub/sanskrit-util/py"))
 import sanskrit_util as su
 
-ORIG=r"C:/Users/user/Documents/GitHub/csl-orig/v02"
-CAT=r"C:/Users/user/Documents/GitHub/CORRECTIONS/61267-Sanskrit-Catalan-Words-List.txt"
-OUT=r"C:/Users/user/Documents/GitHub/CORRECTIONS/Catalan-uncovered-by-CDSL.txt"
+ORIG=os.environ.get("CSL_ORIG_V02", r"C:/Users/user/Documents/GitHub/csl-orig/v02")
+CAT=os.path.join(HERE, "61267-Sanskrit-Catalan-Words-List.txt")
+OUT=os.path.join(HERE, "Catalan-uncovered-by-CDSL.txt")
 
 def ascii_clean(k):
     k=unicodedata.normalize('NFD',k)
@@ -99,7 +101,7 @@ with open(OUT,'w',encoding='utf-8') as f:
 print("\nwrote",OUT)
 
 # write one Markdown file per category
-OUTDIR=r"C:/Users/user/Documents/GitHub/CORRECTIONS/Catalan-uncovered"
+OUTDIR=os.path.join(HERE, "Catalan-uncovered")
 os.makedirs(OUTDIR,exist_ok=True)
 SLUG={'suspect-char':'00-suspect-char','simple':'01-simple','compound(2)':'02-compound-2',
       'long-compound(3+)':'03-long-compound-3plus','root':'04-root','prefixed-root':'05-prefixed-root'}
