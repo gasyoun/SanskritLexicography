@@ -1,6 +1,6 @@
 # Measuring the discretion-screen: a metalanguage-relative method for detecting lexicographic euphemism — with the Sanskrit *obscaena Latine* (eleven Cologne dictionaries) as case study
 
-**A36 · research note / short communication · draft 2026-06-26 · target: history-of-lexicography / DH-methods — Dictionaries (DSNA) / Historiographia Linguistica / IJL / Beiträge zur Geschichte der Sprachwissenschaft**
+**A36 · research note / short communication · draft 2026-06-26 · target: *Beiträge zur Geschichte der Sprachwissenschaft* (Nodus Publikationen, Münster; ISSN 0939-2815; eds. G. Haßler & A. Rüter) — English-language submission**
 
 > **Status:** draft (3/5). Methods-first: the metalanguage-relative test (§3b) is the
 > contribution; the *obscaena Latine* across **eleven Cologne dictionaries** (1832–1959; 5
@@ -9,9 +9,10 @@
 > Bopp's all-Latin *Glossarium* as positive control (§5b) — plus a diachronic shape (§3c) and
 > a comparative-philology sub-study (§5a). Vulgar set hand-vetted; clinical set audited for
 > binomial false positives; method confirmed corpus-wide across all **43 CDSL dictionaries**
-> (§3d), incl. the Cappeller bilingual and Monier-Williams two-edition controls. Needs a
-> related-work section (Adams 1982; *verba obscena* in scholarly lexicography; the Anglo-Indian
-> decency debates) — drafted below in §0 — and a final venue decision.
+> (§3d), incl. the Cappeller bilingual and Monier-Williams two-edition controls. Related work
+> (§0) and References drafted. **Venue fixed: *Beiträge zur Geschichte der Sprachwissenschaft***
+> — framing leads with the historiographic recovery, the method serving it. Remaining: a
+> proofread pass and a final check against the Nodus house style.
 
 ## Abstract
 
@@ -623,7 +624,17 @@ in plain (often crude) German. (Full inventory: [`A36_blunt_german.csv`](A36_blu
 
 ## 6. Why it matters
 
-1. **A reusable method (the contribution).** The metalanguage-relative test (§3b) generalises
+1. **For the historiography of the discipline.** The study recovers and dates a practice that
+   the literature on 19th-century comparative philology and lexicography has not described as
+   such: a systematic *linguistic* discretion-screen, distinct from the Anglophone strategy of
+   omission (Mugglestone 2005), by which the St Petersburg school and its heirs kept their
+   dictionaries simultaneously *complete* and *decent*. It locates the practice precisely —
+   strongest in Böhtlingk–Roth, fading by Schmidt (1928), tightening within Monier-Williams's
+   own two editions — and ties it to the same impulse that produced Loeb's Latin-screened
+   Greek a generation later. For the history of Indology it also returns to view a stratum of
+   the lexica (the Aśvamedha and *kāvya* obscene vocabulary) that the screen made invisible to
+   non-classicists for over a century.
+2. **A reusable method (the formal contribution).** The metalanguage-relative test (§3b) generalises
    beyond Sanskrit and beyond Latin: any historical dictionary whose discretion-screen is
    written in a *prestige* language that also feeds the target language's technical register
    (Latin/Greek into the European vernaculars; Classical Chinese; Sanskrit into the modern
@@ -631,15 +642,15 @@ in plain (often crude) German. (Full inventory: [`A36_blunt_german.csv`](A36_blu
    *marked-ness* of the gloss in that dictionary's own metalanguage, not against a raw word
    list. The three controls here (screen-vs-doublet, blunt-vernacular counter-inventory,
    all-screen-language positive control) are a portable validation kit.
-2. **Coverage gap for the modern reader.** A learner consulting PWG/SCH for *yabh*,
+3. **Coverage gap for the modern reader.** A learner consulting PWG/SCH for *yabh*,
    *cunnus*-glossed kennings, or the Aśvamedha vocabulary meets a Latin wall. Any
    evidence-graded or learner-facing layer over these dictionaries (cf.
    [`ROADMAP_2026_2027.md`](../ROADMAP_2026_2027.md) P6) should **resolve the Latin
    screen into the target language** — the CSV here is a ready de-veiling key.
-3. **A register signal, machine-readable.** The Latin gloss is a reliable flag for
+4. **A register signal, machine-readable.** The Latin gloss is a reliable flag for
    "sexual/scatological sense" across 2 104 senses in eleven dictionaries — usable for
    content tagging, for filtering, or as a feature in sense classification.
-4. **A candour axis across dictionaries.** Pairs neatly with A33 (sense-ordering) and A34
+5. **A candour axis across dictionaries.** Pairs neatly with A33 (sense-ordering) and A34
    (Renou registers): the *language of the gloss itself* encodes the editor's stance
    toward the reader, and it varies systematically by audience and date.
 
@@ -678,3 +689,46 @@ in plain (often crude) German. (Full inventory: [`A36_blunt_german.csv`](A36_blu
   naturalised, so the English "vulgar" counts are read through the obscene-core test
   (*futuere/cunnus/stercus*), not the raw tag. In Bopp (Latin-medium) the distinction does
   not apply at all (§5b).
+
+## References
+
+### Secondary literature
+
+- Adams, James Noel. 1982. *The Latin Sexual Vocabulary*. London: Duckworth.
+- Clérice, Thibault. 2024. Detecting Sexual Content at the Sentence Level in First Millennium
+  Latin Texts. In *Proceedings of LREC-COLING 2024*. Torino. (arXiv:2309.14974.)
+- Lee, Patrick, Anna Feldman & Jing Peng. 2022. A Report on the Euphemisms Detection Shared
+  Task. In *Proceedings of the 3rd Workshop on Figurative Language Processing (FLP)*, 184–190.
+  Abu Dhabi / EMNLP. (ACL Anthology 2022.flp-1.27.)
+- Mugglestone, Lynda. 2005. *Lost for Words: The Hidden History of the Oxford English
+  Dictionary*. New Haven & London: Yale University Press.
+
+### Primary sources — the dictionaries (with CDSL sigla)
+
+- **PWG** Böhtlingk, Otto & Rudolph Roth. 1855–1875. *Sanskrit-Wörterbuch* (Großes
+  Petersburger Wörterbuch). 7 vols. St. Petersburg: Kaiserliche Akademie der Wissenschaften.
+- **PW / PWK** Böhtlingk, Otto. 1879–1889. *Sanskrit-Wörterbuch in kürzerer Fassung*.
+  St. Petersburg: Kaiserliche Akademie der Wissenschaften.
+- **SCH** Schmidt, Richard. 1928. *Nachträge zum Sanskrit-Wörterbuch in kürzerer Fassung von
+  Otto Böhtlingk*. Leipzig: Harrassowitz.
+- **GRA** Grassmann, Hermann. 1873–1875. *Wörterbuch zum Rig-Veda*. Leipzig: Brockhaus.
+- **BOP** Bopp, Franz. 1847. *Glossarium Sanscritum*. 2nd ed. Berlin: Dümmler.
+- **MW72 / MW** Monier-Williams, Monier. 1872 (1st ed.), 1899 (2nd ed., rev.). *A
+  Sanskrit-English Dictionary*. Oxford: Clarendon Press.
+- **AP90** Apte, Vaman Shivram. 1890. *The Practical Sanskrit-English Dictionary*. Poona:
+  Shiralkar. **AP** Rev. & enl. ed. P. K. Gode & C. G. Karve. 1957–1959. Poona: Prasad
+  Prakashan.
+- **WIL** Wilson, Horace Hayman. 1832. *A Dictionary in Sanscrit and English*. 2nd ed.
+  Calcutta: Education Press.
+- **CCS** Cappeller, Carl. 1887. *Sanskrit-Wörterbuch*. Strassburg: Trübner. **CAE** id. 1891.
+  *A Sanskrit-English Dictionary*. London: Luzac.
+- **BEN** Benfey, Theodor. 1866. *A Sanskrit-English Dictionary*. London: Longmans, Green.
+- **STC** Stchoupak, Nadine, Luigia Nitti & Louis Renou. 1932. *Dictionnaire sanscrit-
+  français*. Paris: Geuthner. **BUR** Burnouf, Émile. 1866. *Dictionnaire classique
+  sanscrit-français*. Paris/Nancy.
+- All consulted in the machine-readable editions of the **Cologne Digital Sanskrit
+  Dictionaries (CDSL)**, Universität zu Köln,
+  [`www.sanskrit-lexicon.uni-koeln.de`](https://www.sanskrit-lexicon.uni-koeln.de/) /
+  [`github.com/sanskrit-lexicon/csl-orig`](https://github.com/sanskrit-lexicon/csl-orig).
+
+*(Citation style to be normalised to the Nodus / BGS house style on submission.)*
