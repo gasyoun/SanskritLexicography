@@ -9,6 +9,23 @@ then **cut a new version every time the changelog is updated** (promote
 
 ## [Unreleased]
 
+## [0.0.15] - 2026-06-26
+
+### Added — `HeadwordLists/now/` current regeneration of the key1 snapshots
+- Regenerated the **key1** lists from the **current** csl-orig into
+  [`HeadwordLists/now/`](HeadwordLists/now/) (filename = now-count), Sanskrit-collated;
+  the parent THEN files are kept frozen so the two can be compared directly.
+  `headword_diff.py now` produces them.
+- **key1 only, deliberately** — it's the genuinely comparable set (THEN and NOW both
+  SLP1 `<k1>`). key2 is skipped: the THEN `<k2>` is legacy numeric transliteration
+  (format migration, not a headword diff), and several dicts' raw `<k2>` is `{#..#}`
+  compound blobs, not lemmas (a naïve dump was 64 MB of markup). 8 written
+  (AP, GRA, MW, PWG, PWK, SKD, VCP, VEI); PD has no csl-orig source.
+- Notable now-counts: **AP 88,867** (was 36,030), **PWK 151,349** (was 131,918),
+  **MW 194,084**, PWG 106,082, VCP 48,636. `now/README.md` documents scope + the
+  Sanskrit-collation (compare by set, not line-diff) caveat; refreshed `NOW_VS_THEN.md`
+  to match (csl-orig had drifted a little since the previous run).
+
 ## [0.0.14] - 2026-06-26
 
 ### Added — `HeadwordLists/` drift tooling, Huet/INRIA control, accent check, use cases
