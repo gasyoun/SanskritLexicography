@@ -136,9 +136,11 @@ a probe), never a hunch. When a finding is later refuted or superseded, strike i
 
 - **The indigenous Sanskrit dictionaries agree on a head-word's derivation 90–100 %; Wilson 1832 is the systematic outlier (23–61 %).**
   Evidence: across 10 Cologne dicts whose etymology was extracted to `<dict>_etymology.tsv`, affix
-  agreement on shared head-words is SKD↔VCP 94 %, Apte↔AP 100 %, VCP↔SHS 98 %, SKD↔Apte 92 %, but
-  WIL↔SKD only 23 % and WIL↔VCP 61 %. Cross-tradition root attribution: MW↔PWG (English √ vs German
-  "Wurzel") 65 %, PWG↔PW 93 %.
+  agreement on shared head-words (proportion, 95 % Wilson CI) is SKD↔VCP 93.8 % [85.2–97.6], Apte↔AP
+  100 % [97.9–100], VCP↔SHS 98.5 % [95.8–99.5], but WIL↔SKD only **22.9 % [14.6–34.0]** and WIL↔VCP
+  **61.2 % [58.7–63.7]** — the Wilson interval (≤34 %) is **disjoint** from every Sanskrit-side pair
+  (≥83 %), so the divergence is statistically clear, not sampling noise. Cross-tradition root
+  attribution: MW↔PWG (English √ vs German "Wurzel") 65 %, PWG↔PW 93 %.
   Implication: the Pāṇinian analysis is a stable cross-source signal usable as a consensus/QA oracle;
   Wilson's divergence is a distinct stratum, not noise.
   **Source:** [`cross_dict_agreement.csv`](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/etymology_stats/cross_dict_agreement.csv)
