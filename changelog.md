@@ -9,6 +9,18 @@ then **cut a new version every time the changelog is updated** (promote
 
 ## [Unreleased]
 
+## [0.0.21] - 2026-06-26
+
+### Changed — union now covers all 15 dicts + fold candidates ranked
+- **Fuller union.** `build_union.py` now reads `<k1>` directly from current csl-orig for
+  **all 15 dicts** with a source (adds the 7 key2-only dicts BHS/BUR/CAE/CCS/INM/MD/SCH to
+  the original 8) → **323,425** headwords (was 295,298), 180,989 in ≥2 dicts.
+- **Fold candidates ranked for review.** The `-ā`/`-ī` candidates in
+  [`union/fold_candidates.tsv`](HeadwordLists/union/fold_candidates.tsv) now carry a
+  `confidence` (+ `n_shared_dicts`, `masc_gender`): **3,569 high** (the masculine base is
+  itself `mfn`, so the `-ā/-ī` genuinely is its feminine — `parā←para`) vs **426 low** (masc
+  `m`-only → likely a distinct lexeme like `āśā`≠`āśa`). Review high first. 237 `-inī`
+  auto-folded. Gender is MW/AP-driven (BUR has no `<lex>`).
 ## [0.0.20] - 2026-06-26
 
 ### Added — cross-dict UNION headword index (scope E) with feminine fold (F)
