@@ -1,11 +1,12 @@
 import sys, re, os
 sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
-sys.path.insert(0, r"C:/Users/user/Documents/GitHub/sanskrit-util/py")
+HERE = os.path.dirname(os.path.abspath(__file__))
+sys.path.insert(0, os.environ.get("SANSKRIT_UTIL_PY", r"C:/Users/user/Documents/GitHub/sanskrit-util/py"))
 import sanskrit_util as su
 
-CAT = r"C:/Users/user/Documents/GitHub/CORRECTIONS/61267-Sanskrit-Catalan-Words-List.txt"
-ORIG = r"C:/Users/user/Documents/GitHub/csl-orig/v02"
+CAT = os.path.join(HERE, "61267-Sanskrit-Catalan-Words-List.txt")
+ORIG = os.environ.get("CSL_ORIG_V02", r"C:/Users/user/Documents/GitHub/csl-orig/v02")
 
 import unicodedata
 def norm_cat(w, joinhyphen=True):
