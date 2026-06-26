@@ -4,7 +4,7 @@ title: "Twelve Years of Headwords: A Controlled 2014-vs-2026 Census of the Colog
 status: draft (skeleton, 2/5) — scaffolded 2026-06-26
 readiness: 2/5
 venue: "IJL / eLex"
-author: "M. Gasūns (sole)"
+author: "Mārcis Gasūns, independent scholar ([ORCID 0000-0003-4513-884X](https://orcid.org/0000-0003-4513-884X)), gasyoun@ya.ru"
 data_source: "HeadwordLists/NOW_VS_THEN.md (census complete; figures regenerate from headword_diff.py against pinned csl-orig) + VisualDCS/dcs_lemma_summary.json (DCS-2021 attested lemmas)"
 ---
 
