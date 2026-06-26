@@ -9,6 +9,18 @@ then **cut a new version every time the changelog is updated** (promote
 
 ## [Unreleased]
 
+## [0.0.26] - 2026-06-26
+
+### Added — accent disagreements rendered for adjudication (item C)
+- [`accent_review.py`](HeadwordLists/accent_review.py) → [`Catalan-Pujol/accent_disagreements.tsv`](HeadwordLists/Catalan-Pujol/accent_disagreements.tsv):
+  the **63** Pujol-vs-Cologne accent-position disagreements (32 vs GRA, 31 vs MW), each
+  rendered as **accented IAST on both sides** (`bhagá` vs `bhága`) with the vowel ordinal and
+  a `recommend` column (Cologne RV/MW canonical). The print list (the union) already uses the
+  Cologne `<k2>` accents, so item C resolves to: **use Cologne accents; the 63 are a QA list
+  for the Catalan editors**, not a change to the print list. §7 + PRINT_READINESS C updated.
+- **All PRINT_READINESS agent-prep is now complete** (A–F): the remaining work is human
+  verification/decisions, and the two headline findings stand — CDSL coverage of attested
+  vocabulary is essentially complete (B), and the MW/PWG spine is gated only by 16 typos (A).
 ## [0.0.25] - 2026-06-26
 
 ### Changed — typo queue extended to all 122; coverage additions cross-tagged
