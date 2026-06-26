@@ -9,8 +9,8 @@ Each `*-unique-key{1,2}-N.txt` in [`then-2014/`](then-2014/) is a snapshot whose
 
 | List | then (2014) | now (2026) | added | removed | overlap | growth | verdict |
 |---|--:|--:|--:|--:|--:|--:|---|
-| [AP-unique-key1-36030.txt](then-2014/AP-unique-key1-36030.txt) | 36030 | 88867 | 53740 | 903 | 97.5% | +146.6% | comparable |
-| [AP-unique-key2-36704.txt](then-2014/AP-unique-key2-36704.txt) | 36126 | 88828 | 56023 | 3321 | 90.8% | +145.9% | comparable |
+| [AP-unique-key1-36030.txt](then-2014/AP-unique-key1-36030.txt) | 36030 | 88869 | 53742 | 903 | 97.5% | +146.7% | comparable |
+| [AP-unique-key2-36704.txt](then-2014/AP-unique-key2-36704.txt) | 36126 | 88829 | 56024 | 3321 | 90.8% | +145.9% | comparable |
 | [BHS-unique-key2-17784.txt](then-2014/BHS-unique-key2-17784.txt) | 17784 | 18188 | 16457 | 16053 | 9.7% | +2.3% | format-migrated (legacy numeric → SLP1); raw diff not meaningful |
 | [BUR-unique-key2-19238.txt](then-2014/BUR-unique-key2-19238.txt) | 19238 | 19251 | 297 | 284 | 98.5% | +0.1% | comparable |
 | [CAE-unique-key2-39256.txt](then-2014/CAE-unique-key2-39256.txt) | 39256 | 39280 | 3000 | 2976 | 92.4% | +0.1% | comparable |
@@ -35,7 +35,7 @@ Each `*-unique-key{1,2}-N.txt` in [`then-2014/`](then-2014/) is a snapshot whose
 | [VCP-unique-key2-47145.txt](then-2014/VCP-unique-key2-47145.txt) | 47145 | 48638 | 4360 | 2867 | 93.9% | +3.2% | comparable |
 | [VEI-unique-key1-3703.txt](then-2014/VEI-unique-key1-3703.txt) | 3703 | 3704 | 18 | 17 | 99.5% | +0.0% | comparable |
 | [VEI-unique-key2-3770.txt](then-2014/VEI-unique-key2-3770.txt) | 3770 | 3704 | 3703 | 3769 | 0.0% | -1.8% | format-migrated (legacy numeric → SLP1); raw diff not meaningful |
-| **TOTAL (comparable, 18 lists)** | **1055081** | **1206381** | **171641** | **20341** | — | **+14.3%** | — |
+| **TOTAL (comparable, 18 lists)** | **1055081** | **1206384** | **171644** | **20341** | — | **+14.3%** | — |
 
 _Grand total of all 26 snapshots' *then* line counts: **1721983**._
 
@@ -50,10 +50,10 @@ _Grand total of all 26 snapshots' *then* line counts: **1721983**._
 
 For the comparable lists, `removed` headwords (present then, gone now — merged, corrected, or deleted) are the sharpest QA signal; `added` are new/expanded keys. Full lists in `_diff/<list>.added.txt` and `_diff/<list>.removed.txt`.
 
-### AP-unique-key1-36030.txt — 36030 → 88867  (+53740 / −903)
+### AP-unique-key1-36030.txt — 36030 → 88869  (+53742 / −903)
 removed (903): `ABAsu`, `ABogya`, `AJA`, `AJAnam`, `AJApaka`, `AJApanam`, `AJAtf`, `AJAyin`, `ANgAra`, `ASArikaH`, `ASImat`, `ASco`, `ASrukarRa`, `ASuman`, `AcCA`, `AcCodanama`, `Adda`, `AddaS`, `Addata`, `AddazwiH`, `Agamizwa`, `AgnIDpya`, `AgrahAyaRa`, `Agu`, `AjAnepya`, `AjiJAsenya`, `Ajura`, `AkA`, `AkAmakaH`, `AkAnta`, `AkAntiH`, `AkApya`, `AkI`, `AkIq`, `AkIqanam`, `AkIqin`, `Akam`, `AkamaH`, `Akand`, `AkandaH` … (full list in `_diff/`)
 
-### AP-unique-key2-36704.txt — 36126 → 88828  (+56023 / −3321)
+### AP-unique-key2-36704.txt — 36126 → 88829  (+56024 / −3321)
 removed (3321): `A,`, `ABAsu`, `ABicaraRika,`, `ABirUpakam,`, `ABogya`, `ADitvam,`, `AGarzaH,`, `AGozaRam,`, `AJA`, `AJAnam`, `AJApaka`, `AJApanam`, `AJAtf`, `AJAyin`, `AKAtaH,`, `AKaH,`, `ANgAra`, `ANgUzaH,`, `AQakaH,`, `AQakika,`, `AQyaMBavizRu,`, `ASArikaH,`, `ASImat`, `ASaMsitf,`, `AScaryatA,`, `ASco`, `ASita,`, `ASramaH,`, `ASrukarRa`, `ASuman`, `ASutvam,`, `AYjalikyam,`, `AbanDaH,`, `AcAryatA,`, `AcCA`, `AcCedaH,`, `AcCodanama`, `AcaraRIya,`, `AdArin,`, `AdIpita,` … (full list in `_diff/`)
 
 ### BUR-unique-key2-19238.txt — 19238 → 19251  (+297 / −284)
