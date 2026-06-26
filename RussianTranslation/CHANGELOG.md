@@ -195,6 +195,22 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
   Full survey (incl. the 5 header-checked en-entries: MT-Slang/pract/pund_v1/Vaidya/
   laukika — all low-value) in [INDIC_DICT_EVALUATION.md](INDIC_DICT_EVALUATION.md) §4b.
 
+### Freq test — Opus judge pass: 37/38 publishable (sev ≤ 2)
+- Judged all 38 outputs (38 Opus agents, 2.4 min, 2.06 M tok): severity **{1: 24, 2: 13, 3: 1}**,
+  discrimination "good" on every polysemous unit. The judge caught issues the fidelity gate +
+  3-agent spot-check missed: **`idam` (sev 3)** = translator swapped NWS owner rows Geldner↔Graßmann
+  (the F12 the owner-map prevents) — but the authoritative map is CORRECT, so it's a translator slip
+  on a hard double-Geldner case that the production `nws_split.py check` gate catches (my test was
+  translate-only). `k_arya` (sev 2) dropped 2 Nachträge patches; `jana`/`pw00` (sev 2) minor sigla
+  (token merge; `Bed.`→«значением»). Prompt-tuning findings recorded in the runbook; the pipeline
+  is scale-ready pending those nits + wiring `nws_split` into the loop.
+- **Item dropped — sandhi-join prefix portrait is FUTILE**: validated only **3/15** of `man`'s
+  prefixed surface forms are corpus-attested (anuman/abhiman/avaman) regardless of sandhi spelling —
+  `pwg_preverb1.txt`'s join gives the SAME strings; the limit is **corpus coverage**, so the
+  `root-fallback`+defer-to-German interim is already optimal. Large-non-giant overflow: 4/64 top
+  freq nouns >400 lines (kāla 530, ka 522, śrī 412, para 401, ~6%) — head-splitter extension is a
+  conditional follow-up (overflow at ~520 lines untested).
+
 ### Freq 38-unit test TRANSLATED + glued + audited (split→translate→glue end-to-end)
 - Ran the prepped freq test (8 nouns + giant `man`, 38 units) via the Workflow tool
   (38 Sonnet agents, ~14-way concurrency) → **38/38 translated**; `root_glue_translated.py man`
