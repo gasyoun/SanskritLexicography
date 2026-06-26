@@ -83,6 +83,11 @@ then **cross-tagged** with Catalan/Huet external attestation
 ([`crosstag_additions.py`](crosstag_additions.py)). Finding: of 416 priority additions only 25 are
 externally corroborated, ~8 genuine real words — CDSL coverage is essentially complete.
 
+**Accent adjudication (item C):** [`Catalan-Pujol/accent_disagreements.tsv`](Catalan-Pujol/accent_disagreements.tsv)
+([`accent_review.py`](accent_review.py)) — the 63 Pujol-vs-Cologne udātta-position disagreements
+rendered as accented IAST on both sides (`bhagá` vs `bhága`), recommend = Cologne/RV canonical.
+The print list uses the Cologne accents; this is the QA list for the Catalan editors.
+
 **Cross-dict union (the print target):** [`union/UNION.md`](union/UNION.md) — a single merged
 headword index across all **15** csl-orig dicts (**323,425** headwords with per-dict provenance
 + gender), feminines folded under the masculine (`mf(ā/ī)`; 237 `-inī` auto-folded, 3,995 `-ā/-ī`

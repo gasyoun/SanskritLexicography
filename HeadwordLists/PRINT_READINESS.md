@@ -36,7 +36,7 @@ So a **2014 list is already stale** (+21.1 % across the 9 comparable lists,
 |---|---|---|---|
 | **A** | **Headword correctness** — clear SanskritSpellCheck's **122 fileable suspect typos** across 11 dicts: verify against the scans, flip `n`→`y`, file to CORRECTIONS. *The "don't print known typos" pass.* | 🟡 **all 122 assembled** in [A_TYPO_QUEUE.md](A_TYPO_QUEUE.md) (IAST + error type + evidence; spine MW 4 + PWG 12 first) | **human** verifies vs scan + files |
 | **B** | **Coverage decision** — whether to add the corpus-attested lexemes absent from CDSL. | 🟡 **ranked + cross-tagged** ([COVERAGE_ADDITIONS.md](COVERAGE_ADDITIONS.md)): of 416 priority adds only 25 externally corroborated, **~8 genuine real words** → CDSL coverage essentially complete | agent ranked; editor decides ~8 |
-| **C** | **Accents** — resolve the ~3 % accent-position disagreements (Pujol vs GRA/MW, [§7](Catalan-Pujol/Sanskrit-Catalan-Wordlist-vs-Cologne.md), e.g. *bhága*) if the book prints udātta. | ⬜ open | **human** (canonical = RV/GRA) |
+| **C** | **Accents** — if the book prints udātta. | 🟡 **resolved for the union**: it uses Cologne `<k2>` accents (canonical). The 63 Pujol-vs-Cologne disagreements are rendered for adjudication ([accent_disagreements.tsv](Catalan-Pujol/accent_disagreements.tsv), recommend = Cologne/RV) — a QA list for the Catalan editors, not a change to the print list | agent done; editor confirms if printing accents |
 | **D** | **key2 as SLP1** — the print/citation form (accents, compound markers). The 2014 key2 was legacy numeric. | ✅ **done** — clean SLP1 key2 in [`now-2026/`](now-2026/) | agent (done) |
 | **E** | **Scope** — single dict or a cross-dict **union**? | ✅ **decided: union** — built ([union/UNION.md](union/UNION.md), **323,425** headwords across all **15** csl-orig dicts, provenance + gender) | agent (done) |
 | **F** | **Alternate & feminine headword policy** — how to treat feminine stems and variant/alternate spellings (see below). | 🟡 **policy chosen: fold under masc `mf(ā/ī)`** — applied (237 `-inī` auto-folded; 3,995 `-ā/-ī` ranked 3,569 high / 426 low; the 426 low **gloss-screened** → 419 reject, **7 to review**) | agent applied; editor confirms ~7 + spot-checks high |
@@ -81,8 +81,13 @@ The editor's actionable worklist for the spine = the 5,036 pairs + 1,217 variant
 - **A union, or AP/PWK included → more work**: refresh AP/PWK (done — 2026 set), make the
   scope (E), coverage (B), and alternate/feminine (F) calls, resolve accents (C), and clear
   the larger typo queues (SHS 37, YAT 27, ACC 22 …).
-- **Only D was agent-doable and is closed.** A, B, C, E, F are human/editorial decisions
-  (agent can pre-list candidates for B/C/F) — A being the highest-value (it literally
-  prevents printing known errors).
+- **All agent prep is now done.** D (key2) and E (union) built; A (122 typos assembled),
+  B (additions ranked + cross-tagged → ~8 real adds), F (folds applied, candidates
+  gloss-screened to ~7), C (63 accent disagreements rendered) all pre-resolved. What
+  remains is **human verification/decisions**: file the typos (verify vs scan, spine =
+  16), rule on the ~8 B adds + ~7 F candidates, and confirm the accent QA if printing
+  udātta. The findings: **CDSL coverage is essentially complete** (B) and **the spine is
+  near-ready** (only 16 typos gate MW+PWG).
 
-_Tracked: gap-D close + this checklist = `now-2026/` key2 + `PRINT_READINESS.md`._
+_Tracked: every gate has a linked artifact above; the human worklists are A_TYPO_QUEUE.md
+(file), the ~8 cross-tagged B adds, the ~7 F candidates, and accent_disagreements.tsv._
