@@ -30,14 +30,14 @@ the real run. (See `Uprava/GTD_NEXT_ACTIONS.md` → SanskritLexicography.)
   validated). Fidelity gate `src/audit_translation.py` = **38/38 clean**.
 
 **Resume steps (do in order):**
-1. **Opus 4.8 judge pass on the 38 freq-test outputs** for severity scores — *not
-   yet run*; this is the gate before scaling. (Pattern: Sonnet translate → Opus
-   judge, as in `pilot/run_pilot_wf.js`. Model locked to Opus 4.8.)
+1. ✅ **Opus 4.8 judge pass is done** (recorded 2026-06-26): severity
+   **{1:24, 2:13, 3:1} → 37/38 publishable**; the lone sev-3 is the idam
+   NWS-owner-row swap class that the deterministic owner gate is meant to catch.
 2. **Run the freq queue on Max with `--root-split`**, window by window, per
-   [`src/pilot/RUN_ASECTION_MAX.md`](src/pilot/RUN_ASECTION_MAX.md): `prep N
-   OFFSET` → run the workflow on the interactive Max harness (`run_pilot_wf.js`,
-   it has `node:fs`; the Workflow tool does not) → `audit wf_output.json`
-   (rejects auto-re-queue). Top of queue = sthā/bhū/gam (now nothing overflows).
+   [`src/pilot/RUN_FREQ_MAX.md`](src/pilot/RUN_FREQ_MAX.md): refresh/verify the
+   freq manifest, generate root-split inputs for the next slice, run
+   `run_pilot_wf.js` on the interactive Max harness (`node:fs` required), then
+   audit `wf_output.json` so rejects auto-re-queue. Top of queue = sthā/bhū/gam.
 3. **Instrument the run** (the decisive cost experiment, `PILOT_COST.md` §6):
    record tokens + wall-clock per window, keep going until the **Max weekly cap**
    fires, note the cumulative-token number → yields per-card cost + harness
@@ -94,7 +94,8 @@ the server fix.
 
 | Purpose | Path / command |
 |---|---|
-| Max window loop | [`src/pilot/RUN_ASECTION_MAX.md`](src/pilot/RUN_ASECTION_MAX.md) |
+| Max window loop | [`src/pilot/RUN_FREQ_MAX.md`](src/pilot/RUN_FREQ_MAX.md) |
+| Older a-section loop | [`src/pilot/RUN_ASECTION_MAX.md`](src/pilot/RUN_ASECTION_MAX.md) |
 | 38-unit freq test runbook | [`src/pilot/FREQ_TEST_RUNBOOK.md`](src/pilot/FREQ_TEST_RUNBOOK.md) |
 | Workflow harness (has fs; Max only) | [`src/pilot/run_pilot_wf.js`](src/pilot/run_pilot_wf.js) |
 | Freq order + giant-root split | `src/freq_route.py`, `_pilot_gen_merged.py --manifest freq --root-split` |
