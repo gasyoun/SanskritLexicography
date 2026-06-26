@@ -189,7 +189,10 @@ The two axes compose: `(state, register, provenance)` is an evidence-graded coor
 sense — e.g. *akṣobhya* = `III·V` / `purana·tantra·bauddha` / all-four-signals = "an Epic-
 and-Buddhist word, used in Purāṇa/Tantra/Buddhist registers, maximally corroborated." Six
 **cross-axis slices** (Vedic-in-commentary, born-in-kāvya, the grammatical meta-language, …)
-are worked through with anatomy + examples in [`RENOU_CROSSAXIS.md`](RENOU_CROSSAXIS.md).
+are worked through with anatomy + examples in [`RENOU_CROSSAXIS.md`](RENOU_CROSSAXIS.md); the
+per-register empirical findings (bhāṣya as Renou's cross-disciplinary syntactic register; BHS
+as a second self-contained lexical world; doctrinal registers = perennial lexicon) are in
+[`RENOU_FINDINGS.md`](RENOU_FINDINGS.md).
 
 ## Reproduce
 
