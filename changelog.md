@@ -9,6 +9,18 @@ then **cut a new version every time the changelog is updated** (promote
 
 ## [Unreleased]
 
+## [0.0.23] - 2026-06-26
+
+### Added — coverage additions ranked by DCS band (item B)
+- [`coverage_additions.py`](HeadwordLists/coverage_additions.py) → DCS-corpus lemmas absent
+  from all 15 CDSL dicts (the union, with folded feminines added back to the baseline),
+  ranked by frequency band: [`COVERAGE_ADDITIONS.md`](HeadwordLists/COVERAGE_ADDITIONS.md) +
+  [`union/coverage_additions.tsv`](HeadwordLists/union/coverage_additions.tsv).
+- **21,759 absent**, but the high-frequency end is **lemmatisation artifacts** (causative `-ay`
+  stems, prefixed/desiderative roots, bīja, indeclinables — flagged by a `kind` column), not
+  real gaps. Genuine **nominal** additions concentrate low-band; the **actionable priority =
+  409 band-3 nominal** (e.g. `bhasmasūta`, `bhṛgutīrtha`, `āntarika`). Confirms the Catalan §5
+  pattern: real coverage gaps are rare words. PRINT_READINESS B marked ranked.
 ## [0.0.22] - 2026-06-26
 
 ### Added — gloss pre-screen of the low-confidence fold candidates
