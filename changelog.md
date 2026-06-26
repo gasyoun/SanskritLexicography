@@ -9,6 +9,32 @@ then **cut a new version every time the changelog is updated** (promote
 
 ## [Unreleased]
 
+## [0.0.14] - 2026-06-26
+
+### Added — `HeadwordLists/` drift tooling, Huet/INRIA control, accent check, use cases
+- **Now-vs-then diff of the `*-unique-key{1,2}-N.txt` snapshots.** `headword_diff.py`
+  regenerates each list from current csl-orig; `NOW_VS_THEN.md` is the summary. The
+  **key1** (SLP1) lists are comparable and have drifted: **AP 36,030 → 88,701**,
+  **PWK 131,918 → 151,349** (large real growth), **MW 193,978 → 194,084** (+753/−647),
+  PWG/GRA/SKD/VCP/VEI small. The **key2** snapshots are in the *legacy Cologne numeric
+  transliteration* (`am2s4a` = aṃśa) vs current SLP1 — a format migration, flagged not
+  reported. PD is not in csl-orig. (`removed`-word lists embedded for QA; scratch
+  `_diff/` dumps gitignored.)
+- **Huet / INRIA Heritage wordlist** — a non-Cologne control alongside Catalan-Pujol.
+  `huet_coverage.py` decodes Huet's VH/Velthuis (`z`=ś, `f`=ṅ, `.s`=ṣ, `aa/ii/uu`) to
+  IAST→SLP1 and runs the same coverage. 21,055 keys, **MW 83.5 % / all CDSL 86.2 %,
+  DCS-attested 60.0 %**. Headline ([`Huet-INRIA-Wordlist-vs-Cologne.md`]): both are MW
+  subsets, but the reader's lexicon is far more corpus-attested than Pujol's full
+  dictionary spine (60 % vs 46 %) — less dictionary "dark matter".
+- **Catalan-Pujol additions.** The full 177-lemma corpus-attested-no-CDSL list
+  (`DCS-attested-no-CDSL.md`, §5, triaged); the **accent comparison** (§7,
+  `accent_compare.py`): Pujol marks udātta with a combining acute, Cologne with `/`
+  after the vowel, but **~97 %** agree on position (GRA 96.9 %, MW 97.1 %).
+- **Use-case sections** added to all three studies: Catalan-Pujol §8 (CDSL gloss layer,
+  corpus-confirmed candidate headwords, editor QA list, morphology overlay, learner's
+  layer), Huet §5 (corpus-weighted core vocab, VH↔SLP1 bridge, benchmark), and
+  `NOW_VS_THEN.md` (snapshot refresh, removed-word audit, re-transcoding triage).
+
 ## [0.0.13] - 2026-06-26
 
 ### Added — `HeadwordLists/Catalan-Pujol/` dataset + full coverage analysis

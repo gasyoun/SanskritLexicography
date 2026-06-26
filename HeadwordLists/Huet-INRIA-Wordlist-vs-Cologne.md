@@ -45,6 +45,13 @@ Like the Catalan list, it is **MW-dominated** — MW alone covers 83.5 %, and ev
 - **The Huet list is far more corpus-attested (60 % vs 46 %).** It is a *reader's* working lexicon — selected toward forms a parser actually meets in texts — so it carries much less of the dictionary "dark matter" (rare/Vedic/grammarians' forms) that inflates a full dictionary spine like Pujol's. Smaller list, denser corpus signal.
 - **Both have a tiny corpus-but-no-CDSL corner** (0.3–0.6 %); as in the Catalan case these are dominated by lemmatisation-convention differences (prefixed/denominative verbs, productive derivatives) rather than genuine missing words.
 
+## 5. Use cases
+
+1. **A corpus-weighted core vocabulary.** At 60 % DCS-attested, the Huet stem list is a higher-precision base for a learner's lexicon or a parser dictionary than a full dictionary spine — most of it is vocabulary actually met in texts.
+2. **VH↔SLP1 bridge for ingesting INRIA Heritage data.** The validated Velthuis→IAST→SLP1 map in [`huet_coverage.py`](huet_coverage.py) lets the INRIA Heritage reader's output be joined to the CDSL/SLP1 and DCS ecosystems on a common key — the prerequisite for linking Heritage analyses to Cologne entries.
+3. **Lemmatisation-interoperability check.** The 131 corpus-attested-no-CDSL keys map INRIA's lemmatisation conventions (prefixed/denominative units) onto CDSL's root-based headwording — a small crosswalk for tools that consume both.
+4. **A control/benchmark.** Side by side with Pujol it quantifies the "reader's lexicon vs dictionary spine" axis (60 % vs 46 % corpus density at similar ~85 % MW coverage) — a reusable yardstick when evaluating any new Sanskrit wordlist's character.
+
 ---
 
 *Method: VH→IAST→SLP1, accent- and (where applicable) hyphen-insensitive lemma-identity match against `<k1>` of CDSL dictionaries in `csl-orig/v02` and against the DCS-2021 lemma index. Reproducible via [`huet_coverage.py`](huet_coverage.py) (includes a transcoder self-check).*

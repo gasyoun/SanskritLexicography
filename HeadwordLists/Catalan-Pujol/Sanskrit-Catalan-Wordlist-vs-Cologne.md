@@ -162,6 +162,17 @@ The list is in **accented IAST with an explicit morphological-analysis layer** �
 
 > Method caveat: positions are computed in SLP1 vowel-ordinal space; diphthong/transcoding edge cases and the any-variant match mean the ~3 % is an *upper-ish* bound on real conflicts, not an exact error count.
 
+## 8. Use cases
+
+What this analysis is *for*:
+
+1. **Wire a Sanskrit→Catalan gloss layer into CDSL cheaply.** 91 % of Pujol lemmas map 1:1 onto an existing CDSL `<k1>` (overwhelmingly MW), so the Catalan glosses can be surfaced in the CDSL frontend keyed on the MW headword with almost no fuzzy matching.
+2. **Candidate new headwords for CDSL — corpus-confirmed.** The genuine residue in [`DCS-attested-no-CDSL.md`](DCS-attested-no-CDSL.md) (rare lexemes, esp. plant/animal names like `alasāndra-`, `kustumburī-`) is attested in real texts *and* absent from all 43 CDSL dictionaries — the highest-value slice to propose to the dictionary makers, distinct from §4's dictionary-only list.
+3. **QA list back to the Catalan editors.** Three buckets: the §4 `suspect-char` export artifacts (encoding clean-up), the §5 "neither dict nor DCS" corner (likely typos/hapax), and the §7 ~3 % accent-position disagreements (where the Cologne/RV reading is usually canonical, e.g. *bhága*).
+4. **Enrich CDSL's flat keys with Pujol's morphology.** The compound/preverb segmentation and the `√`-root + sandhi-resolution layer (§6) is information CDSL's flat `<k1>` lacks — a ready source for sandhi-split / morphological-analysis overlays if licensing permits.
+5. **Build a frequency-graded learner's layer.** The DCS bands (§5) split the list into a corpus-attested core (46 %) vs dictionary "dark matter" (45 %); prioritising the attested half — band 5→1 — yields a usable pedagogical vocabulary instead of the full 61 k spine.
+6. **Cross-resource interoperability key.** The normalisation recipe (§6 upshot) is the bridge that lets the Pujol list, the CDSL `<k1>` sets, and the DCS lemma index be joined on one accent-/compound-insensitive SLP1 key — reused for the [Huet/INRIA](../Huet-INRIA-Wordlist-vs-Cologne.md) control too.
+
 ---
 
 *Counts: 61,266 lemmas → 59,377 unique normalised keys; 4,950 with `√`, 3,947 vowel-accented (≈11,535 carry an accent counting all variants). Matching is accent- and compound-insensitive lemma identity against `<k1>` of CDSL dictionaries in `csl-orig/v02` (15 for §2's greedy table, all 43 for §4's uncovered list) and against the DCS-2021 lemma index for §5; §7 compares accent position against the accented `<k2>` of GRA and MW.*

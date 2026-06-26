@@ -85,6 +85,22 @@ def main():
         md.append(f"| [{f}]({f}) | {t} | {'' if nw is None else nw} | {'' if a is None else a} "
                   f"| {'' if rm is None else rm} | {'' if ov is None else f'{ov:.1f}%'} | {v} |")
     md += ["",
+           "## Use cases",
+           "",
+           "1. **Refresh the snapshots.** Several lists have drifted hard from current "
+           "csl-orig (AP 36,030 → 88,701; PWK 131,918 → 151,349); regenerate the committed "
+           "`*-unique-key1-*.txt` to current counts when an up-to-date headword set is needed.",
+           "2. **`removed` = a data-loss / correction audit.** Headwords present *then* and "
+           "gone *now* are merges, corrections, or accidental deletions — review the "
+           "`_diff/<list>.removed.txt` lists to catch anything dropped by mistake.",
+           "3. **Spot which snapshots need re-transcoding.** The `format-migrated` verdict "
+           "flags the `<k2>` lists still in the legacy Cologne numeric transliteration "
+           "(`am2s4a`); they must be transcoded to SLP1 before they can be diffed or reused.",
+           "4. **Provenance / dictionary-growth tracking.** The then→now deltas record how "
+           "each dictionary's headword count has evolved — useful for citation and for "
+           "deciding which `csl-orig` dictionaries have changed enough to re-run downstream "
+           "analyses (e.g. the Catalan/Huet coverage studies).",
+           "",
            "## Genuine changes (comparable lists)",
            "",
            "For the comparable lists, `removed` headwords (present then, gone now — merged, "
