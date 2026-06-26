@@ -3,8 +3,10 @@
 Renou's *Histoire de la langue sanskrite* (1956) is usually reduced to its **five
 chapters** = the five **states** (I Vedic · II Pāṇinian · III Epic · IV Classical ·
 V Buddhist/Jaina). But each chapter is divided into **subsections that are registers,
-not periods** — the *bhāṣya* (commentary) has its own grammar, *épigraphique* is a
-documentary witness filed under the spoken-norm chapter, and so on. This is the canonical
+not periods** — e.g. the *bhāṣya* (commentary) has its own grammar section (p. 139) and
+*épigraphique* is a documentary witness (p. 94), but the same is true of every one of the
+twenty: drama, narrative, the Purāṇa, the grammarians' norm — each is a register in its own
+right, treated here on equal footing. This is the canonical
 list of the **20 registers** (`renou_register.REGISTERS`), the orthogonal axis built in
 [`RENOU.md`](RENOU.md) / designed in [`RENOU_SUBSECTIONS_PLAN.md`](RENOU_SUBSECTIONS_PLAN.md);
 the source structure is transcribed in
@@ -35,7 +37,7 @@ register across all 8 dictionaries (PWG · MW · PW · AP · AP90 · BEN · SCH 
 | Code | Renou subsection (page) | Covers | Detector | Headwords |
 |---|---|---|---|--:|
 | `vyakarana` | L'enseignement de Pāṇini → l'autorité des *śiṣṭa* (p. 62–80) | the grammarians' normative metalanguage (Pāṇini, Kātyāyana, Patañjali, later grammar) | G·N·L | 22,429 |
-| `epig` | **Le sanskrit épigraphique (p. 94)** | inscriptional Sanskrit — a witness to real usage vs the grammarians' ideal | **D** (`Insch?r` marker) | 709 |
+| `epig` | Le sanskrit épigraphique (p. 94) | inscriptional Sanskrit — a witness to real usage vs the grammarians' ideal | D (`Insch?r` marker) | 709 |
 
 ## State III — La langue épique et ses prolongements (chap. III, p. 101)
 
@@ -51,7 +53,7 @@ register across all 8 dictionaries (PWG · MW · PW · AP · AP90 · BEN · SCH 
 
 | Code | Renou subsection (page) | Covers | Detector | Headwords |
 |---|---|---|---|--:|
-| `bhasya` | **Le commentaire (*bhāṣya*) · Caractères linguistiques du bhāṣya (p. 133, 139)** | commentary language — terse, formulaic, meta-textual; *its own grammar* | N·L (name-stems `*bhāṣya/ṭīkā/vṛtti/vārttika`) | 14,498 |
+| `bhasya` | Le commentaire (*bhāṣya*) · Caractères linguistiques du bhāṣya (p. 133, 139) | commentary language — terse, formulaic, meta-textual; its own grammar | N·L (name-stems `*bhāṣya/ṭīkā/vṛtti/vārttika`) | 14,498 |
 | `katha` | Le sanskrit narratif (*kathā*) (p. 146) | narrative prose (Pañcatantra, Kathāsaritsāgara, Daśakumāra) | G·N·L | 24,393 |
 | `natya` | Le dialogue du théâtre (p. 150) | dramatic dialogue (Śākuntala, Mṛcchakaṭikā, …) | G·N·L | 12,611 |
 | `kavya` | La poésie savante (*kāvya*) (p. 158–185) | high poetry (Kālidāsa, Bhaṭṭi, the Śatakas, …) | G·N·L | 26,973 |
@@ -79,9 +81,10 @@ register across all 8 dictionaries (PWG · MW · PW · AP · AP90 · BEN · SCH 
 - **`bauddha` is the only register with all four detector routes**, because state V has a
   dedicated set (Edgerton's BHS), so `renou_bhs` → `bauddha` wholesale (all 17,839 BHS
   entries; every BHS-dictionary headword is Buddhist by construction).
-- **The big literary registers** (`epic` 48,713 · `purana` 31,255 · `kavya` 26,973 ·
-  `katha` 24,393 · `bauddha` 25,740) dominate by headword count; the **editorially salient
-  small ones** are `epig` and `bhasya` (the two Renou singles out for distinct treatment).
+- **Coverage spans three orders of magnitude** — from `epic` (48,713) and `kavya` (26,973)
+  down to `jaina` (286) and `epig` (709) — but every register is one of Renou's own
+  subsections and carries equal standing here; a small count reflects a thin *source*
+  (few inscriptions, few Jaina sigla), not a lesser register.
 
 ## Numbered index — chapter-relative (Scheme A)
 
