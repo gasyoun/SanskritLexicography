@@ -1,16 +1,9 @@
 # Speyer-Syntax1895
 
-**Source:** `Speyer-Syntax1895.pdf`
-**Location:** На иностранных/
-**Size:** 7075724 bytes
+**Source:** `Speyer-Syntax1895.pdf`  
+**Format:** PDF  
+**Size:** 6.7 MB
 
-## Repos
-**MWS** · **GRA**
+---
 
-## Use
-J.S. Speyer, *Vedische und Sanskrit-Syntax* (German edition, 1895). Primary uses:
-- `<ls>` link-target for "Spe." citations in MW/GRA entries (German edition is the one most cited in those dictionaries)
-- Complements [Speyer-Syntax1886](../../Speyer-Syntax1886.md) (English edition) — use whichever matches the citation abbreviation in the entry
-
-Language: German.
-
+> **Note:** Scanned image PDF (54 pages, avg 0 chars/page). Full text requires OCR (Tesseract/ABBYY).

@@ -45,7 +45,7 @@ Repo codes: **MWS** · **AP90** · **GRA** · **PWG**/**PW** · **PWK** · **DCS
 | [Primary Education in Sanskrit.md](Lexicography-Manuals/Primary%20Education%20in%20Sanskrit.md) | Edwin Gerow | **SaLex**, AP90 | Sanskrit pedagogy; AP90 as pedagogical dictionary; learner's layer roadmap (Q4 2026) |
 | [Programming for Corpus Linguistics with Python.md](Lexicography-Manuals/Programming%20for%20Corpus%20Linguistics%20with%20Python.md) | Daniel Keller · 2024 | **DCS**, csl-observatory, RuTrans | Python corpus pipeline patterns; methods for DCS statistical pipeline and pwg\_ru corpus gate |
 | [StrategiesDoing Corpus Linguistics.md](Lexicography-Manuals/StrategiesDoing%20Corpus%20Linguistics.md) | — · 2024 | **DCS**, SaLex | Corpus study design; methodology reference for DCS-based papers |
-| [Systematic Lexicography.md](Lexicography-Manuals/Systematic%20Lexicography.md) | Apresjan · 2008 | **SaLex**, **MWS** | Structured/systematic lexicography theory; primary theoretical grounding for P1 (evidence-graded entries); MWS entry structure |
+| [Systematic Lexicography.md](Lexicography-Manuals/Systematic%20Lexicography.md) | Apresjan · 2008 | **RuTrans**, **SaLex**, **MWS** | Structured/systematic lexicography theory; primary theoretical grounding for P1 (evidence-graded entries); MWS entry structure; Russian sense-structure / lexical-function model behind [RussianTranslation/APRESJAN.md](../../RussianTranslation/APRESJAN.md) (pwg_ru register & sense-splitting decisions) |
 | [The Arabic Lexicographical Tradition.md](Lexicography-Manuals/The%20Arabic%20Lexicographical%20Tradition.md) | Ramzi Baalbaki · 2014 | **SaLex** | Comparative ancient lexicography (Arabic vs Sanskrit traditions); P5 paper |
 | [The Bloomsbury Companion to Lexicography.md](Lexicography-Manuals/The%20Bloomsbury%20Companion%20to%20Lexicography.md) | Howard Jackson · 2013 | **SaLex**, MWS | Survey reference covering all major lexicography subfields; P1–P6 background |
 | [The encoding of ad hoc categories in Sanskrit.md](Lexicography-Manuals/The%20encoding%20of%20ad%20hoc%20categories%20in%20Sanskrit.md) | Inglese & Geupel · 2018 | **csl-atlas**, **MWS**, DCS | Semantic category encoding in Sanskrit grammar; direct relevance to csl-atlas markup decisions and MWS `<gram>` tagging |
@@ -90,7 +90,7 @@ Repo codes: **MWS** · **AP90** · **GRA** · **PWG**/**PW** · **PWK** · **DCS
 | File | Author · Year | Repos | Primary use |
 |---|---|---|---|
 | [Delbruck Altindische_Syntax 1888.md](На%20иностранных/Delbruck%20Altindische_Syntax%201888.md) | Berthold Delbrück · 1888 | **GRA**, **MWS**, **PWG** | *Altindische Syntax* — foundational Vedic syntax reference; `<ls>` link target for "Delb." citations in GRA/MW/PWG entries; essential for link-target work (DTB milestone) |
-| [Renou-Histoire-de-La-Language-Sanskrite.md](На%20иностранных/Renou-Histoire-de-La-Language-Sanskrite.md) | Louis Renou | **SaLex**, MWS | Renou's Sanskrit language history; cited in multiple SaLex papers; Renou nominal-style study source |
+| [Renou-Histoire-de-La-Language-Sanskrite.md](На%20иностранных/Renou-Histoire-de-La-Language-Sanskrite.md) | Louis Renou | **RuTrans**, **SaLex**, MWS | Renou's Sanskrit language history; cited in multiple SaLex papers; Renou nominal-style study source; genre/register taxonomy behind the [RussianTranslation/RENOU*.md](../../RussianTranslation/RENOU.md) cluster and the pwg_ru corpus genre strata (`corpus_strata.json`) |
 | [Speyer-Syntax1895.md](На%20иностранных/Speyer-Syntax1895.md) | J.S. Speyer · 1895 | **MWS**, **GRA** | *Vedische und Sanskrit-Syntax* (1895 German ed.); `<ls>` target for Speyer citations in MW/GRA; complements the 1886 English edition |
 
 ---
@@ -135,7 +135,7 @@ internet lexicography
 Lowe-Participles
 
 ### RussianTranslation (mw\_ru / pwg\_ru)
-Leitan-Sintaksis · Corpus Linguistics for Vocabulary · Corpus Linguistics + SLA · How to Use Corpora · Programming for Corpus Linguistics · Routledge Handbook of SLA · Peshkovsky · Lomov · Sintaksis-2009 · mitrenina-fdsl · Zaliznyak-Paducheva · Testelets · Entsiklopedicheskiy-slovar
+Leitan-Sintaksis · Corpus Linguistics for Vocabulary · Corpus Linguistics + SLA · How to Use Corpora · Programming for Corpus Linguistics · Routledge Handbook of SLA · Peshkovsky · Lomov · Sintaksis-2009 · mitrenina-fdsl · Zaliznyak-Paducheva · Testelets · Entsiklopedicheskiy-slovar · Systematic Lexicography (Apresjan) · Renou-Histoire
 
 ### SanskritLexicography (papers P1–P6, roadmap)
 Systematic Lexicography · Dictionary of lexicography · Bloomsbury Companion · Lexicography: An Introduction · Gentle Art of Lexicography · Arabic Lexicographical Tradition · Ancient Greek Scholarship · Latin of Roman Lexicography · History of Indian Literature · Routledge Handbook of Semantics · Routledge Handbook of Linguistics · Routledge Handbook of Historical Linguistics · Routledge Handbook of Syntax · Primary Education in Sanskrit · Jakobson-Parallelism · Gillon96-wordorder · Gillon-wildtrees · Historical Syntax · Kumar-Syntax · Meenakshi-Syntax · Ruppel-Correlatives · Correlatives-Cross-Linguistically · Zaliznyak-Paducheva · Renou-Histoire · Patterns of Exchange · Testelets · LSA08
