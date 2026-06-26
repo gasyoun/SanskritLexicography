@@ -39,15 +39,45 @@ So a **2014 list is already stale** (+21.1 % across the 9 comparable lists,
 | **C** | **Accents** — resolve the ~3 % accent-position disagreements (Pujol vs GRA/MW, [§7](Catalan-Pujol/Sanskrit-Catalan-Wordlist-vs-Cologne.md), e.g. *bhága*) if the book prints udātta. | ⬜ open | **human** (canonical = RV/GRA) |
 | **D** | **key2 as SLP1** — the print/citation form (accents, compound markers). The 2014 key2 was legacy numeric. | ✅ **done** — clean SLP1 key2 in [`now-2026/`](now-2026/) | agent (done) |
 | **E** | **Scope** — single dict (MW or PWG — the ready ones) or a cross-dict **union**? If union, settle dedup/homograph merge across dicts. | ⬜ open | **human / editorial** |
+| **F** | **Alternate & feminine headword policy** — how to treat feminine stems and variant/alternate spellings (see below). | ⬜ open | **human policy** (agent can pre-list) |
+
+## F — alternate & feminine headwords (detail)
+
+A printed list must decide *what counts as one headword*, and CDSL itself is
+inconsistent here — so this is its own gate.
+
+**Feminines.** In MW (2026) **~14 % of headwords are ā/ī-stems** — 18,186 `-ā`
+(9.4 %) + 9,148 `-ī` (4.7 %), largely feminines. CDSL headwords them *unevenly*:
+only **24 %** of the `-ā` feminines have their masculine `-a` base as a separate
+headword, and of 803 `-inī` feminines only **237 (~30 %)** also headword the `-in`
+masculine. Pujol and INRIA-Huet instead give feminines their own line (Pujol
+convention §8: `ajitā-`, `vairiṇī-`, `vyāpinī-`), and the DCS corpus attests
+feminines CDSL omits ([§5 residue](Catalan-Pujol/DCS-attested-no-CDSL.md)). Decision:
+- **(a)** headword every attested feminine separately (comprehensive index), or
+- **(b)** fold under the masculine with a `mf(ā/ī)` marker (learner's edition), or
+- **(c)** inherit CDSL's as-is inconsistency — *not advisable for print*.
+
+**Alternate spellings / variants.** Orthographic variants (b~v ≈ 397 MW pairs,
+ś~ṣ, single~geminate), sandhi variants, and the **same lemma under several `<k2>`
+forms** (comma-lists in SKD/VCP/… — the `now-2026/` key2 extraction splits these
+into separate lines, so true alternates currently appear as distinct entries; MW
+has none, so the MW/PWG spine is unaffected). A print list needs a
+lemma→alternates grouping ("see X"), not silent duplication.
+
+**What's agent-doable:** generate the candidate lists — feminine↔masculine pairs,
+b~v / ś~ṣ variant pairs, and the multi-`<k2>` alternate groups — for the editor to
+rule on. The *policy* (a/b/c, and merge-vs-list) is human. For the **MW/PWG spine**
+this is small (MW key2 is one clean form per entry); it bites mainly for a union (E).
 
 ## Bottom line
 
 - **MW or PWG alone → near-print-ready now**: stable spine + clean SLP1 key1/key2 in
   `now-2026/`. The one remaining gate is **A** (file the MW/PWG typos: MW 4, PWG 12).
 - **A union, or AP/PWK included → more work**: refresh AP/PWK (done — 2026 set), make the
-  scope (E) and coverage (B) calls, resolve accents (C), and clear the larger typo queues
-  (SHS 37, YAT 27, ACC 22 …).
-- **Only D was agent-doable and is closed.** A, B, C, E are human/editorial decisions —
-  A being the highest-value (it literally prevents printing known errors).
+  scope (E), coverage (B), and alternate/feminine (F) calls, resolve accents (C), and clear
+  the larger typo queues (SHS 37, YAT 27, ACC 22 …).
+- **Only D was agent-doable and is closed.** A, B, C, E, F are human/editorial decisions
+  (agent can pre-list candidates for B/C/F) — A being the highest-value (it literally
+  prevents printing known errors).
 
 _Tracked: gap-D close + this checklist = `now-2026/` key2 + `PRINT_READINESS.md`._

@@ -9,6 +9,18 @@ then **cut a new version every time the changelog is updated** (promote
 
 ## [Unreleased]
 
+## [0.0.18] - 2026-06-26
+
+### Changed — PRINT_READINESS: add alternate/feminine headword gate (F)
+- New checklist item **F — alternate & feminine headword policy** in
+  [`PRINT_READINESS.md`](HeadwordLists/PRINT_READINESS.md). MW (2026) is **~14 % ā/ī-stems**
+  (18,186 `-ā` + 9,148 `-ī`) and CDSL headwords feminines *inconsistently* — only 24 % of
+  `-ā` feminines have a separate masculine base, 30 % of `-inī` have the `-in`. Pujol/INRIA
+  list feminines separately; the corpus attests feminines CDSL omits. Plus variant/alternate
+  spellings (b~v ≈ 397 MW pairs) and same-lemma multi-`<k2>` forms (comma-lists in SKD/VCP,
+  which the now-2026 key2 split into separate lines). Policy (headword separately / fold with
+  `mf(ā/ī)` / merge-and-cross-ref) is human; the candidate pair-lists are agent-doable. The
+  MW/PWG print spine is largely unaffected (MW key2 = one clean form per entry).
 ## [0.0.17] - 2026-06-26
 
 ### Added — key2 re-extracted as SLP1 + a print-readiness checklist
