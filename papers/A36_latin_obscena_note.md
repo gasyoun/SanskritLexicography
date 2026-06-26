@@ -8,8 +8,10 @@
 > controls — screen-vs-doublet (§5b), the 401-entry blunt-German counter-inventory (§5b), and
 > Bopp's all-Latin *Glossarium* as positive control (§5b) — plus a diachronic shape (§3c) and
 > a comparative-philology sub-study (§5a). Vulgar set hand-vetted; clinical set audited for
-> binomial false positives. Needs a related-work section (Adams 1982; *verba obscena* in
-> scholarly lexicography; the Anglo-Indian decency debates) and a final venue decision.
+> binomial false positives; method confirmed corpus-wide across all **43 CDSL dictionaries**
+> (§3d), incl. the Cappeller bilingual and Monier-Williams two-edition controls. Needs a
+> related-work section (Adams 1982; *verba obscena* in scholarly lexicography; the Anglo-Indian
+> decency debates) — drafted below in §0 — and a final venue decision.
 
 ## Abstract
 
@@ -27,7 +29,10 @@ standing in for an available Germanic word; for an English dictionary, only the 
 We validate the test on **eleven machine-readable Cologne Sanskrit dictionaries** (1832–1959;
 five German, five English, one Latin-medium) with three internal controls — a screen-vs-
 doublet check, a blunt-vernacular counter-inventory, and Bopp's all-Latin *Glossarium* as a
-positive control — and show it isolates the genuine screen where raw matching cannot.
+positive control — then confirm it **corpus-wide across all 43 CDSL dictionaries** (five
+metalanguages), including two natural experiments: Cappeller's parallel German and English
+dictionaries (he screens in both) and Monier-Williams's two editions (the screen *tightens*
+1872→1899). It isolates the genuine screen where raw matching cannot.
 
 Applied, the method yields a clean history. The classic case is Böhtlingk–Roth's √*yabh*,
 glossed simply **futuere** rather than with any German verb. The corpus: five German (**PWG**
@@ -49,6 +54,47 @@ shows the screen is near-total even
 for the editors themselves: of the entire obscene vocabulary across five German
 dictionaries, **exactly one entry** (PWG √*yabh*) carries an etymological footnote — and
 it is one of only **seven** comparative-grammar references in all 593 596 lines of PWG.
+
+## 0. Related work and prior art
+
+**The obscene/euphemistic distinction in Latin.** The register split this method depends on is
+J. N. Adams's, *The Latin Sexual Vocabulary* (Duckworth, 1982), which established that Latin
+had a small set of *basic obscenities* (*cunnus, mentula, futuo, pēdīcō*) alongside a rich
+stock of euphemisms and clinical/medical terms ([archive.org](https://archive.org/details/latinsexualvocab0000adam)).
+We use that distinction not, as Adams did, to study Latin, but as a **diagnostic** applied to
+the *metalanguage* of dictionaries of another language.
+
+**The discretion-screen as an editorial device.** Rendering taboo passages into a learned
+language rather than the vernacular is a known practice of classical philology — most visibly
+the Loeb Classical Library, which for decades printed the "dirty bits" of Greek authors in
+*Latin* on the facing English page (and ribald Romans in Italian), a policy its editor
+G. P. Goold dismantled after 1973 as "shabby scholarship"
+([Loeb history](https://www.loebclassics.com/page/history); [Harvard Magazine, "Some Classical Profanity"](https://www.harvardmagazine.com/2001/01/some-classical-profanity-html)).
+The Sanskrit *obscaena Latine* studied here is the same device, moved from text-editing into
+the dictionary entry. It has, to our knowledge, never been measured.
+
+**Decency in vernacular lexicography — and a contrast.** Anglophone lexicography of the same
+period handled obscenity mostly by **omission**: the *OED* under Murray excluded *cunt* and
+*fuck*, not restored until the 1972 Supplement, and no English dictionary printed *fuck* until
+the Penguin (1965), after the 1960 *Lady Chatterley* trial — under the shadow of Victorian
+obscenity law ([Murray Scriptorium, "Defining obscenity"](https://www.murrayscriptorium.org/commentaries/com-defining-obscenity.shtml);
+[OUPblog](https://blog.oup.com/2016/08/victorian-profanities-english/)). The Petersburg
+strategy is the **opposite** trade-off: *include* the word — scholarship demands completeness —
+but *screen* it in Latin. The two solutions (omit vs. encrypt) are the genre's two answers to
+the same pressure, and the Latin screen is the one that let a dictionary be both complete and
+"decent".
+
+**Computational treatment.** NLP work on euphemism is recent and aimed at running text and
+content-moderation (the FigLang 2022 Euphemism Detection shared task and successors,
+[ACL](https://aclanthology.org/2022.flp-1.27.pdf)); the nearest classical-philology effort is
+Clérice's *Detecting Sexual Content … in First Millennium Latin Texts* (LREC-COLING 2024,
+[arXiv:2309.14974](https://arxiv.org/abs/2309.14974)), which classifies sexual content *within*
+Latin. Our problem is the inverse and, we believe, novel: not detecting obscenity in a text,
+but detecting the **act of screening** in a dictionary — where the screen-language doubles as
+the target language's technical register, so the naïve signal is confounded (§3b). No prior
+work, computational or historiographic, measures the discretion-screen across a dictionary
+corpus or addresses that metalanguage-relativity confound; that gap is this note's
+contribution.
 
 ## 1. The convention
 
@@ -242,27 +288,73 @@ diachronic shape:
 
 | Dict | Date | Lang | Screens obscene core? |
 |---|---|---|---|
-| WIL | 1832 | en | **no** — open English |
-| BOP | (1830–)1847 | la | n/a — all-Latin metalanguage |
-| PWG | 1855–75 | de | **yes** — the rule |
-| GRA | 1873–75 | de | — (root absent from the Ṛgveda corpus) |
-| PW | 1879–89 | de | **yes** |
-| PWK | 1879–89 | de | no — abridged out with the bulk |
-| AP90 | 1890 | en | **no** — open English |
-| CAE | 1891 | en | **yes** — *futuere* ×2 |
-| MW | 1899 | en | **yes** — *futuere* beside English |
-| SCH | 1928 | de | minimal — one *futuere*, one *cunnus*; clinical only |
-| AP | 1957–59 | en | **no** — open English |
+| Dict | Date | Lang | obscene-core | Screens? |
+|---|---|---|---:|---|
+| WIL Wilson | 1832 | en | 0 | **no** — open English |
+| BOP Bopp | (1830–)1847 | la | (13) | n/a — all-Latin metalanguage |
+| PWG | 1855–75 | de | 20 | **yes** — the rule |
+| BEN Benfey | 1866 | en | 4 | **yes** — *mingere, stercus* |
+| MW72 Monier-W. 1st ed | 1872 | en | 1 | barely — *cunnus* once, **no *futuere*** |
+| GRA Grassmann | 1873–75 | de | 0 | — (√*yabh* absent from the Ṛgveda) |
+| PW | 1879–89 | de | 30 | **yes** |
+| PWK | 1879–89 | de | 0 | no — abridged out with the bulk |
+| AP90 Apte 1st ed | 1890 | en | 1 | no — one *cacare*; else open English |
+| CAE Cappeller (Engl.) | 1891 | en | 4 | **yes** — *futuere* ×2 |
+| CCS Cappeller (Germ.) | 1887 | de | 7 | **yes** — √*yabh* → *futuere* |
+| MW Monier-W. 2nd ed | 1899 | en | 6 | **yes** — *futuere* ×4 beside English |
+| LAN | 1906 | en | 2 | *mingere* |
+| SCH | 1928 | de | 2 | minimal — one *futuere*, one *cunnus* |
+| AP Apte (Gode–Karve) | 1957–59 | en | 0 | **no** — open English |
 
-The obscene screen is concentrated in **c. 1855–1899**. It is absent in the earliest English
-dictionary (Wilson 1832), appears in English *only* in the 1890s (Cappeller, Monier-Williams),
-and is gone again by the mid-20th century (Schmidt's 1928 supplement keeps only the clinical
-tier; the 1957–59 Gode–Karve Apte has none). The device is thus not "Victorian English" or
-"German philology" as such but a **high-Victorian moment** shared across both metalanguages —
-roughly the half-century when a learned readership and a strict print-decency norm
-co-existed. (Caveat: eleven editions are a small, clustered sample; the shape is suggestive,
-not a fitted trend, and BOP/PWK/GRA are structurally outside the screen for the reasons
-given.)
+The obscene screen is concentrated in **c. 1855–1899**, absent before (Wilson 1832) and
+fading after (Schmidt 1928 keeps only clinical Latin; Gode–Karve Apte 1957–59 has none). The
+most telling datum is **within one author**: Monier-Williams's *first* edition (1872) uses
+*futuere* **zero** times; his *second* (1899) uses it **four** times — the screen *tightened*
+across the high-Victorian quarter-century, in the same lexicographer's hands. The device is
+thus not "Victorian English" or "German philology" as such but a **shared high-Victorian
+moment** — the half-century when a learned readership and a strict print-decency norm
+co-existed.
+
+## 3d. Corpus-wide validation — all 43 Cologne dictionaries
+
+To check that the eleven-dictionary case study is representative and that the method does not
+mis-fire elsewhere, we ran the metalanguage detector and the strict obscene-core count over
+**every CDSL dictionary above 50 kB — 43 in five metalanguages** (full table:
+[`A36_corpus_screen.csv`](A36_corpus_screen.csv)). Each gloss-text sample was language-typed by
+function-word frequency, then the obscene core (*futuere/cunnus/mentula/stercus/cacare/
+paedicare/mingere*) was counted with the binomial + denylist filters of §2.
+
+| Metalanguage | dicts | screeners (obscene-core > 0) |
+|---|---|---|
+| German | 6 | **PW 30, PWG 20, CCS 7, SCH 2** (PWK 0, GRA 0) |
+| English | ~29 | **MW 6, BEN 4, CAE 4, LAN 2**, MW72 1, AP90 1 (24 others 0) |
+| French | 2 | BUR 1 (one *cacare*), STC 0 |
+| Latin | 1 | BOP 13 — metalanguage, not a screen |
+| Sanskrit-medium | 5 | VCP 1, KRM 1 (one *cacare* each); SKD, ABCH, ARMH 0 |
+
+The sweep confirms and sharpens the case study:
+
+- **The screen is a German speciality with a thin English band.** Substantive screening
+  occurs only in the German Petersburg/Cappeller dicts (PW, PWG, CCS, SCH) and four English
+  ones (MW, Benfey, Cappeller-English, Lanman). The remaining ~24 English dictionaries — and
+  every later one — score zero. Across 43 dictionaries the obscene veil is **not** a general
+  feature of Sanskrit lexicography; it is a local, dated practice.
+- **A within-author, cross-metalanguage control: Cappeller.** Carl Cappeller wrote *both* a
+  Sanskrit–German dictionary (**CCS**, 1887) and a Sanskrit–English one (**CAE**, 1891), and
+  he screens in **both** — *yabh* → *futuere* in the German, *futuere* ×2 in the English.
+  Holding the author constant, the screen survives the change of metalanguage: it is a
+  property of the scholarly register, not of German alone.
+- **French takes a third path.** Neither Latin obscenity nor vulgar French: Stchoupak–Nitti
+  (STC, 1932) glosses √*yabh* "**faire le coït**" — a clinical *French* phrase. Romance
+  vernaculars, already close to the Latinate clinical register, euphemise *in the vernacular*
+  rather than switching languages.
+- **Sanskrit-medium dictionaries do not screen at all.** The Śabdakalpadruma, Vācaspatya
+  &c. score zero obscene Latin (the lone *cacare* tokens are incidental): a dictionary whose
+  metalanguage *is* the learned language has no lay outsider to screen against — the veil
+  presupposes a vernacular/elite split that a Sanskrit-to-Sanskrit kośa lacks.
+
+(The corpus-wide obscene-core counts are raw per-field tallies for triage; the curated
+eleven-dictionary figures in §3–§5 are the hand-vetted numbers.)
 
 ## 4. The vulgar veil — full list (79 senses, 52 headwords)
 
@@ -559,6 +651,8 @@ in plain (often crude) German. (Full inventory: [`A36_blunt_german.csv`](A36_blu
   caveat below (naturalised *faeces/coitus/penis* are not veils there).
 - Counter-inventory: [`A36_blunt_german.csv`](A36_blunt_german.csv) (401 entries where the
   German dictionaries print blunt/plain German for a taboo concept), supporting §5b.
+- Corpus-wide sweep: [`A36_corpus_screen.csv`](A36_corpus_screen.csv) (all 43 CDSL
+  dictionaries with metalanguage, year, raw obscene-core and clinical counts), supporting §3d.
 - Extraction is a single pass over the eleven SLP1 source files with the term list,
   binomial/homograph filters, and Adams-based register map described in §2; transliteration
   via [`sanskrit-util`](https://github.com/sanskrit-lexicon/sanskrit-util). The scripts are
