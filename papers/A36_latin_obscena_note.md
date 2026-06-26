@@ -4,7 +4,7 @@
 
 **A36 · research note / short communication · draft 2026-06-26 · target: *Beiträge zur Geschichte der Sprachwissenschaft* (Nodus Publikationen, Münster; ISSN 0939-2815; eds. G. Haßler & A. Rüter) — English-language submission**
 
-> **Status:** draft (3/5). Methods-first: the metalanguage-relative test (§3b) is the
+> **Status:** draft (4/5). Methods-first: the metalanguage-relative test (§3b) is the
 > contribution; the *obscaena Latine* across **eleven Cologne dictionaries** (1832–1959; 5
 > German, 5 English, 1 Latin-medium) is the validated case study, with three internal
 > controls — screen-vs-doublet (§5b), the 401-entry blunt-German counter-inventory (§5b), and
@@ -12,9 +12,11 @@
 > a comparative-philology sub-study (§5a). Vulgar set hand-vetted; clinical set audited for
 > binomial false positives; method confirmed corpus-wide across all **43 CDSL dictionaries**
 > (§3d), incl. the Cappeller bilingual and Monier-Williams two-edition controls. Related work
-> (§0) and References drafted. **Venue fixed: *Beiträge zur Geschichte der Sprachwissenschaft***
-> — framing leads with the historiographic recovery, the method serving it. Remaining: a
-> proofread pass and a final check against the Nodus house style.
+> (§0) and References drafted; byline final (M. Gasūns, ORCID 0000-0003-4513-884X). **Venue
+> fixed: *Beiträge zur Geschichte der Sprachwissenschaft*** — framing leads with the
+> historiographic recovery, the method serving it. Proofread + English-house-style pass done;
+> English + German cover letters drafted. Remaining: final normalisation to the Nodus stylesheet
+> once obtained from the editors (and an optional German version of the article).
 
 ## Abstract
 
@@ -42,7 +44,7 @@ glossed simply **futuere** rather than with any German verb. The corpus: five Ge
 *Großes Petersburger Wörterbuch*, **PW** *Kürzere Fassung*, **SCH** Schmidt's *Nachträge*,
 **PWK** Böhtlingk's abridgment, **GRA** Grassmann's *Wörterbuch zum Rig-Veda*), five English
 (**MW** Monier-Williams 1899, **AP90** Apte 1890, **AP** Apte revised, **WIL** Wilson 1832,
-**CAE** Cappeller), and one Latin-medium (**BOP** Bopp's *Glossarium*). We find **2 104
+**CAE** Cappeller), and one Latin-medium (**BOP** Bopp's *Glossarium*). We find **2,104
 Latin-glossed senses**
 in all, concentrated in the German Petersburg core (**875 in PWG/PW/SCH**: 79 vulgar, 796
 clinical), and document a **gradient of editorial candour by audience**: the German
@@ -56,12 +58,12 @@ hypothesised Gode–Karve "re-Latinising" does not occur. A comparative-philolog
 shows the screen is near-total even
 for the editors themselves: of the entire obscene vocabulary across five German
 dictionaries, **exactly one entry** (PWG √*yabh*) carries an etymological footnote — and
-it is one of only **seven** comparative-grammar references in all 593 596 lines of PWG.
+it is one of only **seven** comparative-grammar references in all 593,596 lines of PWG.
 
 ## 0. Related work and prior art
 
 **The obscene/euphemistic distinction in Latin.** The register split this method depends on is
-J. N. Adams's, *The Latin Sexual Vocabulary* (Duckworth, 1982), which established that Latin
+J. N. Adams's *The Latin Sexual Vocabulary* (Duckworth, 1982), which established that Latin
 had a small set of *basic obscenities* (*cunnus, mentula, futuo, pēdīcō*) alongside a rich
 stock of euphemisms and clinical/medical terms ([archive.org](https://archive.org/details/latinsexualvocab0000adam)).
 We use that distinction not, as Adams did, to study Latin, but as a **diagnostic** applied to
@@ -169,7 +171,7 @@ Counts are Latin-glossed **senses** (one per field per entry).
 | | **clinical subtotal** | **206** | **228** | **362** | **796** |
 | | **TOTAL** | **239** | **272** | **364** | **875** |
 
-The full per-sense dataset (all 2 104 rows across eleven dictionaries: dict, metalanguage,
+The full per-sense dataset (all 2,104 rows across eleven dictionaries: dict, metalanguage,
 headword, register, field, Latin gloss, Sanskrit example, citation) is
 [`A36_latin_obscena.csv`](A36_latin_obscena.csv); the table above is the German Petersburg
 core, where the convention is densest and the vulgar set was hand-vetted.
@@ -191,7 +193,7 @@ Latin-glossed senses per dictionary (one per field per entry):
 | WIL | en | 5* | 218 | 223 | Wilson 1832 — the 5 are *faeces*, not obscene Latin |
 | CAE | en | 6 | 49 | 55 | Cappeller — incl. *futuere* ×2 (English, *not* Latin-medium) |
 | BOP | la | 24 | 30 | 54 | Bopp's *Glossarium* — all-Latin; "vulgar" here is not a veil |
-| **Total** | | **150** | **1 954** | **2 104** | |
+| **Total** | | **150** | **1,954** | **2,104** | |
 
 > **\*Register is metalanguage-relative — read the English vulgar column with care.** The
 > VULGAR/CLINICAL split is calibrated for a *vernacular* dictionary (Adams' criterion: which
@@ -514,7 +516,7 @@ dictionaries for comparative-philology apparatus (the sigla *Miklosich, Curtius,
 Pott, Kuhn, Benfey*; *Vgl. Gr.*; cognate-language tags *slav., lat., gr., got., lit.,
 ahd.*), **exactly one entry matches: PWG √*yabh***. PW's √*yabh* is terse — "*futuere*
 BHĀG. P." — with no footnote; *mih, gu, viś, śakṛt, gūtha* and the rest carry none. And the
-rarity is structural, not incidental: the entire 593 596-line PWG contains only **seven**
+rarity is structural, not incidental: the entire 593,596-line PWG contains only **seven**
 comparative-grammar references at all (the Petersburg *Wörterbuch* programmatically excluded
 Indo-European etymology). That √*yabh* is one of those seven is the point — the single place
 where Böhtlingk reached past the Sanskrit into comparative grammar is an obscene root, and
@@ -650,7 +652,7 @@ in plain (often crude) German. (Full inventory: [`A36_blunt_german.csv`](A36_blu
    [`ROADMAP_2026_2027.md`](../ROADMAP_2026_2027.md) P6) should **resolve the Latin
    screen into the target language** — the CSV here is a ready de-veiling key.
 4. **A register signal, machine-readable.** The Latin gloss is a reliable flag for
-   "sexual/scatological sense" across 2 104 senses in eleven dictionaries — usable for
+   "sexual/scatological sense" across 2,104 senses in eleven dictionaries — usable for
    content tagging, for filtering, or as a feature in sense classification.
 5. **A candour axis across dictionaries.** Pairs neatly with A33 (sense-ordering) and A34
    (Renou registers): the *language of the gloss itself* encodes the editor's stance
@@ -658,7 +660,7 @@ in plain (often crude) German. (Full inventory: [`A36_blunt_german.csv`](A36_blu
 
 ## 7. Data & reproducibility
 
-- Full dataset: [`A36_latin_obscena.csv`](A36_latin_obscena.csv) (2 104 Latin-glossed senses,
+- Full dataset: [`A36_latin_obscena.csv`](A36_latin_obscena.csv) (2,104 Latin-glossed senses,
   eleven dictionaries, with a `lang` column for metalanguage). The `register` column is the
   raw, metalanguage-neutral Adams tag; for English dictionaries it should be read through the
   caveat below (naturalised *faeces/coitus/penis* are not veils there).

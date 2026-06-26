@@ -58,9 +58,10 @@ gasyoun@ya.ru · ORCID: 0000-0003-4513-884X
 ---
 
 **Note on language.** The *Beiträge* publish in German, English, French, Spanish and
-Italian; this draft is in English. A German version of both the article and this letter can
-be prepared on request (the technical terminology — *Schamwort*, *verhüllende
-Latinisierung*, *Diskretionsschirm* — adapts cleanly).
+Italian; the article is submitted in **English**. A **German version of this cover letter**
+accompanies it ([`A36_cover_letter_de.md`](A36_cover_letter_de.md)); a German version of the
+article itself can be prepared on request (the technical terminology — *Diskretionsschirm*,
+*verhüllende Latinisierung*, *Schamwort* — adapts cleanly).
 
 **Suggested reviewers / contacts** *(optional, to be completed)*: a historian of Indology /
 Sanskrit lexicography; a historian of nineteenth-century philological practice; a digital-
