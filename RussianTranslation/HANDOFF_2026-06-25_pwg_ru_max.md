@@ -43,9 +43,10 @@ the real run. (See `Uprava/GTD_NEXT_ACTIONS.md` → SanskritLexicography.)
    fires, note the cumulative-token number → yields per-card cost + harness
    throughput + the weekly quota together = the clean "2-months-feasible? yes/no".
 
-**Known follow-ups (lower priority):** sandhi-join prefix-portrait fix
-(`pwg_preverb1.txt`); extend the head-splitter to large non-giant nouns
-(kāla/ka ~520 lines); Apte roles b/c/d in `apte_parse.py`.
+**Known follow-ups (lower priority):** extend the head-splitter to large
+non-giant nouns (kāla/ka ~520 lines); Apte roles b/c/d in `apte_parse.py`.
+(The sandhi-join prefix-portrait `pwg_preverb1.txt` fix was **dropped as futile** —
+only 3/15 prefixed forms corpus-attested; the root-fallback hint is final.)
 
 **Policy reminders for the translator:** preserve PWG sense order (Renou = badge,
 never re-sort); `{%…%}` wraps BOTH German glosses (translate) AND Latin (leave);
@@ -106,6 +107,8 @@ the server fix.
 
 ## Decisions (locked 2026-06-25)
 - **Track B flagship pair:** **agni + akṣara** (anya/ananta = supporting examples).
-- **Track A judge model:** **Opus 4.8** for the 38-output severity pass.
+- **Track A judge model:** **Opus 4.8** for the 38-output severity *validation* pass.
+  (Bulk policy since 2026-06-26: Sonnet judges every card, Opus re-judges rejects only —
+  [`research/JUDGE_POLICY.md`](research/JUDGE_POLICY.md).)
 
 No open decisions — both tracks are cleared to execute.

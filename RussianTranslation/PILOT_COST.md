@@ -130,6 +130,11 @@ cards. The a-section stays the Max-validated gold reference either way.
 
 ## 7. API-cost reference for the scale-up queue (2026-06-24) — *comparison only; we run on Max*
 
+> **NOTE 2026-06-26:** the "*alternative* — `--judge-model sonnet`" config in the table below is
+> now the **IMPLEMENTED main path** — Sonnet judges every card, Opus re-judges rejects only
+> ([research/JUDGE_POLICY.md](research/JUDGE_POLICY.md)). The "MAIN PATH we run = Opus ×2" labels
+> are kept as the original worst-case cost anchor, not a description of the live run.
+
 [`scale_preflight.py`](src/scale_preflight.py) projects an **Opus-API pay-per-token** cost
 for a batch as a `--budget` guardrail. For the **top 500** of the frequency queue (the dense
 head — the giant roots `sTā`/`bhū`/`gam`/`i`/`yuj` …, all heavy path, costed per split

@@ -56,7 +56,8 @@ const LIMIT   = 38           // all 38 units
 (Revert to `'a'` / `50` afterwards to resume the a-section.)
 
 **2. Translate + judge** through your harness; save the JSON result to `wf_output.json`.
-Translate = Sonnet (per-sense Russian + Apresjan discrimination); Judge = Opus.
+Translate = Sonnet (per-sense Russian + Apresjan discrimination); Judge = Sonnet bulk,
+Opus on rejects only (per [`../../research/JUDGE_POLICY.md`](../../research/JUDGE_POLICY.md)).
 **Record wall-clock + token totals** — that's the scaling number we're after.
 
 **3. Render to `.merged.md`:**
@@ -99,6 +100,10 @@ back — matching them needs the **sandhi-joined surface form** already computed
 [`PWG/verbs01/pwg_preverb1.txt`](https://github.com/sanskrit-lexicon/PWG/blob/master/verbs01/pwg_preverb1.txt)
 (`join_prefix_verb`). Wiring that lookup raises prefix-specific coverage; the interim hint is
 safe in the meantime.
+
+> **UPDATE 2026-06-26 — this sandhi-join wiring was DROPPED as futile.** Only 3/15 of `man`'s
+> prefixed surface forms are corpus-attested, so the `pwg_preverb1.txt` join buys almost
+> nothing; the labelled root-fallback hint is the accepted final behaviour. Do not revive it.
 
 ## Run log — executed 2026-06-24 (translate-only; no Opus judge)
 
@@ -149,3 +154,8 @@ keep the deterministic `nws_split.py check` gate in the scale loop (it catches i
 **Verdict:** split → translate → glue runs end-to-end; **37/38 publishable**, no overflow, format
 invariants hold; the 1 sev-3 is a known F12 class the production owner-gate catches. Pipeline is
 scale-ready pending the prompt nits above + the `nws_split` gate wired into the run loop.
+
+> **STATUS 2026-06-26 — all four prompt nits (a)–(d) and the `nws_split.py` owner-map gate are
+> now encoded** in [`run_pilot_wf.js`](run_pilot_wf.js) (HARD RULES 3/4/5) and the audit loop
+> (`run_real_test.py audit`); they are no longer pending. The findings above stay as the record
+> of *why*. The judge is now Sonnet-bulk + Opus-on-reject (see step 2).

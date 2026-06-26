@@ -9,6 +9,18 @@ then **cut a new version every time the changelog is updated** (promote
 
 ## [Unreleased]
 
+## [0.0.31] - 2026-06-26
+
+### Fixed — stale-doc cleanup across the pwg_ru planning/runbook set
+- Aligned the `RussianTranslation/` docs with the current pipeline after the judge-escalation +
+  harvest-port changes: corrected present-tense "Opus judges every card" claims to the
+  Sonnet-bulk + Opus-on-reject policy (STRATEGY.md, FREQ_TEST_RUNBOOK.md, HANDOFF); marked the
+  four prompt nits and the `--root-split` hook as done; noted the dropped `pwg_preverb1.txt`
+  sandhi-join follow-up; added superseded-pointers to the pre-Max-harness plans
+  (IMPLEMENTATION_PLAN.md, PIPELINE_ARCHITECTURE.md) and a "now-implemented" note to PILOT_COST §7.
+  Correct historical statements (the Opus-run validation passes) were left intact;
+  `research/JUDGE_POLICY.md` is the single source of truth for the judge policy.
+
 ## [0.0.30] - 2026-06-26
 
 ### Changed — pwg_ru judge escalation: Sonnet bulk, Opus only on hard cases
