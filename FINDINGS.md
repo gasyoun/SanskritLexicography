@@ -134,6 +134,25 @@ a probe), never a hunch. When a finding is later refuted or superseded, strike i
   Implication: scan PHP with Semgrep instead; keep `php` out of any CodeQL language matrix.
   **Source:** [GitHub CodeQL — supported languages](https://codeql.github.com/docs/codeql-overview/supported-languages-and-frameworks/) (PHP not listed). — org-wide · 2026-06
 
+- **The indigenous Sanskrit dictionaries agree on a head-word's derivation 90–100 %; Wilson 1832 is the systematic outlier (23–61 %).**
+  Evidence: across 10 Cologne dicts whose etymology was extracted to `<dict>_etymology.tsv`, affix
+  agreement on shared head-words is SKD↔VCP 94 %, Apte↔AP 100 %, VCP↔SHS 98 %, SKD↔Apte 92 %, but
+  WIL↔SKD only 23 % and WIL↔VCP 61 %. Cross-tradition root attribution: MW↔PWG (English √ vs German
+  "Wurzel") 65 %, PWG↔PW 93 %.
+  Implication: the Pāṇinian analysis is a stable cross-source signal usable as a consensus/QA oracle;
+  Wilson's divergence is a distinct stratum, not noise.
+  **Source:** [`cross_dict_agreement.csv`](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/etymology_stats/cross_dict_agreement.csv)
+  + [PAPER_DRAFT.md](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/etymology_stats/PAPER_DRAFT.md)
+  · dashboard https://sanskrit-lexicon.github.io/csl-orig/ — csl-orig · 2026-06-26
+
+- **The same `<ab>E.</ab>` tag means different things across dicts — count the meaning, not the marker.**
+  Evidence: WIL `E.` = Etymology (39,713×); but CAE `E.` = "Epithet of" (`E. of Śiva/Viṣṇu/Indra`,
+  584×) and MD `E.` = "Epic" (`āste (E. + I. Ā.)`). A tag-count survey wrongly flagged CAE/MD as
+  etymology sources; reading the entry contexts corrected it.
+  Implication: never infer content from a shared tag across dicts (generalises the SKD/VCP
+  zero-markup trap); validate a marker's *sense* per dictionary before parsing it.
+  **Source:** `csl-orig/v02/{cae,md}/` entry contexts — csl-orig · 2026-06-26
+
 ---
 
 _Started 2026-06-26 (relocated from `Uprava/FINDINGS.md`, which now holds **non-Sanskrit**
