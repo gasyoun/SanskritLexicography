@@ -192,7 +192,9 @@ and-Buddhist word, used in Purāṇa/Tantra/Buddhist registers, maximally corrob
 are worked through with anatomy + examples in [`RENOU_CROSSAXIS.md`](RENOU_CROSSAXIS.md); the
 per-register empirical findings (bhāṣya as Renou's cross-disciplinary syntactic register; BHS
 as a second self-contained lexical world; doctrinal registers = perennial lexicon) are in
-[`RENOU_FINDINGS.md`](RENOU_FINDINGS.md).
+[`RENOU_FINDINGS.md`](RENOU_FINDINGS.md). Renou's **nominal-style** thesis (the finite verb
+receding Vedic→Classical, bhāṣya more nominal than kāvya) is verified on the corpus in
+[`RENOU_NOMINAL_STYLE.md`](RENOU_NOMINAL_STYLE.md).
 
 ## Reproduce
 
