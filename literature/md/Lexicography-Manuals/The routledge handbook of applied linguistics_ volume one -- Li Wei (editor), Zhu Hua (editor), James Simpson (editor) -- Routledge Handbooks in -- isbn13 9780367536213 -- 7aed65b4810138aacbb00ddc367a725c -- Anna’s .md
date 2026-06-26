@@ -6,7 +6,7 @@
 
 ---
 
-<!-- page 2 -->
+<!-- page 1 -->
 
  
  
@@ -46,7 +46,7 @@ Education. He was formerly in the School of Education, University of Leeds UK.
 
 ---
 
-<!-- page 3 -->
+<!-- page 2 -->
 
 Routledge Handbooks in Applied Linguistics 
 Routledge Handbooks in Applied Linguistics provide comprehensive overviews of the key 
@@ -81,7 +81,7 @@ Applied-Linguistics/book-series/RHAL
 
 ---
 
-<!-- page 4 -->
+<!-- page 3 -->
 
 The Routledge Handbook 
 of Applied Linguistics 
@@ -91,7 +91,7 @@ Edited by Li Wei, Zhu Hua, and James Simpson
 
 ---
 
-<!-- page 5 -->
+<!-- page 4 -->
 
  
  
@@ -178,7 +178,7 @@ by Apex CoVantage, LLC
 
 ---
 
-<!-- page 6 -->
+<!-- page 5 -->
 
  
  
@@ -241,7 +241,7 @@ v
 
 ---
 
-<!-- page 7 -->
+<!-- page 6 -->
 
   
  
@@ -324,7 +324,7 @@ vi
 
 ---
 
-<!-- page 8 -->
+<!-- page 7 -->
 
  
  
@@ -381,7 +381,7 @@ vii
 
 ---
 
-<!-- page 9 -->
+<!-- page 8 -->
 
  
  
@@ -461,7 +461,7 @@ viii
 
 ---
 
-<!-- page 10 -->
+<!-- page 9 -->
 
 ix 
  
@@ -515,7 +515,7 @@ in particular, on listening.
 
 ---
 
-<!-- page 11 -->
+<!-- page 10 -->
 
  
  
@@ -575,7 +575,7 @@ x
 
 ---
 
-<!-- page 12 -->
+<!-- page 11 -->
 
 Contributors
 Richard Kern is Professor of French at the University of California at Berkeley. His research 
@@ -622,7 +622,7 @@ xi
 
 ---
 
-<!-- page 13 -->
+<!-- page 12 -->
 
  
  
@@ -687,7 +687,7 @@ xii
 
 ---
 
-<!-- page 14 -->
+<!-- page 13 -->
 
  
  
@@ -743,7 +743,7 @@ xiii
 
 ---
 
-<!-- page 15 -->
+<!-- page 14 -->
 
  
 Acknowledgements 
@@ -773,7 +773,7 @@ xiv
 
 ---
 
-<!-- page 16 -->
+<!-- page 15 -->
 
  
 Introduction 
@@ -811,7 +811,7 @@ DOI: 10.4324/9781003082644-1
 
 ---
 
-<!-- page 17 -->
+<!-- page 16 -->
 
  
 Li Wei, Zhu Hua, and James Simpson 
@@ -865,7 +865,7 @@ development in last few years, such as content and language integrated learning,
 
 ---
 
-<!-- page 18 -->
+<!-- page 17 -->
 
  
   
@@ -970,7 +970,7 @@ attrition – Beatriz Duarte Wirth, Anita Auer, and Merel Keijzer
 
 ---
 
-<!-- page 19 -->
+<!-- page 18 -->
 
  
  
@@ -1002,7 +1002,7 @@ Li, W. (2018) ‘Translanguaging as a practical theory of language’, Applied L
 
 ---
 
-<!-- page 20 -->
+<!-- page 19 -->
 
  
 Part I 
@@ -1011,7 +1011,7 @@ language education
 
 ---
 
-<!-- page 22 -->
+<!-- page 20 -->
 
  
  
@@ -1061,7 +1061,7 @@ DOI: 10.4324/9781003082644-3
 
 ---
 
-<!-- page 23 -->
+<!-- page 21 -->
 
  
  
@@ -1100,7 +1100,7 @@ outcome of dialogical interaction, a social semiotic, the intuitions of native s
 
 ---
 
-<!-- page 24 -->
+<!-- page 22 -->
 
  
  
@@ -1158,7 +1158,7 @@ its focus on meaning (Strauss et al. 2018), such as modality (Tyler 2012) and ph
 
 ---
 
-<!-- page 25 -->
+<!-- page 23 -->
 
  
  
@@ -1227,7 +1227,7 @@ the Global South (Sousa Santos 2018; Guilherme and Menezes de Souza 2020).
 
 ---
 
-<!-- page 26 -->
+<!-- page 24 -->
 
  
 Conceptualizing language education 
@@ -1280,7 +1280,7 @@ guage while focusing their attention on the meanings they wish to express. Pract
 
 ---
 
-<!-- page 27 -->
+<!-- page 25 -->
 
  
  
@@ -1349,7 +1349,7 @@ that a teacher can provide tailored support to a learner, such as modelling a ta
 
 ---
 
-<!-- page 28 -->
+<!-- page 26 -->
 
  
  
@@ -1407,7 +1407,7 @@ language acquisition, usually ending around the time of puberty, after which a f
 
 ---
 
-<!-- page 29 -->
+<!-- page 27 -->
 
  
  
@@ -1469,7 +1469,7 @@ be enacted is project-based learning (PBL) (Fried-Booth 2002). PBL encourages st
 
 ---
 
-<!-- page 30 -->
+<!-- page 28 -->
 
  
  
@@ -1525,7 +1525,7 @@ implemented in many countries as a way to integrate foreign language learning in
 
 ---
 
-<!-- page 31 -->
+<!-- page 29 -->
 
  
  
@@ -1589,7 +1589,7 @@ between languages, but among ‘multiple and dynamic varieties of these differen
 
 ---
 
-<!-- page 32 -->
+<!-- page 30 -->
 
  
  
@@ -1642,7 +1642,7 @@ attempts to do so. At the very least, teacher educators set out to understand wh
 
 ---
 
-<!-- page 33 -->
+<!-- page 31 -->
 
  
  
@@ -1710,7 +1710,7 @@ lem is that general education teachers’ identities as content teachers result 
 
 ---
 
-<!-- page 34 -->
+<!-- page 32 -->
 
  
  
@@ -1766,7 +1766,7 @@ dieu (the connection of language and power) and Garfinkel (ethnomethodology); an
 
 ---
 
-<!-- page 35 -->
+<!-- page 33 -->
 
  
  
@@ -1835,7 +1835,7 @@ Canagarajah, S. (2013) Translingual Practice, New York: Routledge.
 
 ---
 
-<!-- page 36 -->
+<!-- page 34 -->
 
  
  
@@ -1904,7 +1904,7 @@ Freeman, D. (2016) Educating Second Language Teachers, Oxford: Oxford University
 
 ---
 
-<!-- page 37 -->
+<!-- page 35 -->
 
  
  
@@ -1973,7 +1973,7 @@ Johnson, K. E. and Golombek, P. R. (2016) Mindful L2 Teacher Education, New York
 
 ---
 
-<!-- page 38 -->
+<!-- page 36 -->
 
  
  
@@ -2048,7 +2048,7 @@ Loewen, S. (2020) Introduction to Instructed Second Language Acquisition, New Yo
 
 ---
 
-<!-- page 39 -->
+<!-- page 37 -->
 
  
  
@@ -2118,7 +2118,7 @@ Bristol: Multilingual Matters.
 
 ---
 
-<!-- page 40 -->
+<!-- page 38 -->
 
  
  
@@ -2188,7 +2188,7 @@ ment, Hillsdale, NJ: Lawrence Erlbaum.
 
 ---
 
-<!-- page 41 -->
+<!-- page 39 -->
 
  
 Diane Larsen-Freeman 
@@ -2235,7 +2235,7 @@ Psychology and Psychiatry, 17: 89–100.
 
 ---
 
-<!-- page 42 -->
+<!-- page 40 -->
 
  
  
@@ -2290,7 +2290,7 @@ DOI: 10.4324/9781003082644-4
 
 ---
 
-<!-- page 43 -->
+<!-- page 41 -->
 
  
  
@@ -2357,7 +2357,7 @@ the main obstacles to additional language learning for adults stem from affectiv
 
 ---
 
-<!-- page 44 -->
+<!-- page 42 -->
 
  
  
@@ -2414,7 +2414,7 @@ among the affinities and discontinuities between the two pairs.
 
 ---
 
-<!-- page 45 -->
+<!-- page 43 -->
 
  
  
@@ -2471,7 +2471,7 @@ researchers (N. Ellis 2019) are empiricist, generalist, and associationist. In o
 
 ---
 
-<!-- page 46 -->
+<!-- page 44 -->
 
  
  
@@ -2534,7 +2534,7 @@ that I consider to be fundamental areas of disciplinary inquiry.
 
 ---
 
-<!-- page 47 -->
+<!-- page 45 -->
 
  
  
@@ -2596,7 +2596,7 @@ restricted lives that infants and toddlers lead before they enter school.
 
 ---
 
-<!-- page 48 -->
+<!-- page 46 -->
 
  
  
@@ -2653,7 +2653,7 @@ and longer support for groups for whom the language learning distance from their
 
 ---
 
-<!-- page 49 -->
+<!-- page 47 -->
 
  
  
@@ -2717,7 +2717,7 @@ and draws on social psychological constructs and methods (Li et al. 2022). This 
 
 ---
 
-<!-- page 50 -->
+<!-- page 48 -->
 
  
  
@@ -2793,7 +2793,7 @@ defines success in each case.
 
 ---
 
-<!-- page 51 -->
+<!-- page 49 -->
 
  
  
@@ -2853,7 +2853,7 @@ meta-analyses in the last decade means that increasingly more extant areas of kn
 
 ---
 
-<!-- page 52 -->
+<!-- page 50 -->
 
  
  
@@ -2912,7 +2912,7 @@ the lifespan that treats child bilingualism and adult SLA holistically, as cases
 
 ---
 
-<!-- page 53 -->
+<!-- page 51 -->
 
  
  
@@ -2979,7 +2979,7 @@ Routledge.
 
 ---
 
-<!-- page 54 -->
+<!-- page 52 -->
 
  
  
@@ -3048,7 +3048,7 @@ Norton Peirce, B. (1995) ‘Social identity, investment, and language learning�
 
 ---
 
-<!-- page 55 -->
+<!-- page 53 -->
 
  
  
@@ -3115,7 +3115,7 @@ dental L2 vocabulary learning? A meta-analysis’, Language Learning, 71(2): 487
 
 ---
 
-<!-- page 56 -->
+<!-- page 54 -->
 
 3 
 Language teaching and 
@@ -3151,7 +3151,7 @@ DOI: 10.4324/9781003082644-5
 
 ---
 
-<!-- page 57 -->
+<!-- page 55 -->
 
  
  
@@ -3212,7 +3212,7 @@ another, without proper research into the effect of their actions.
 
 ---
 
-<!-- page 58 -->
+<!-- page 56 -->
 
  
  
@@ -3280,7 +3280,7 @@ cated on the belief that the acquisition of a set of techniques, typically assoc
 
 ---
 
-<!-- page 59 -->
+<!-- page 57 -->
 
  
  
@@ -3343,7 +3343,7 @@ that languages should be taught in the target language, not in the pupils’ mot
 
 ---
 
-<!-- page 60 -->
+<!-- page 58 -->
 
    
  
@@ -3406,7 +3406,7 @@ c
 
 ---
 
-<!-- page 61 -->
+<!-- page 59 -->
 
  
  
@@ -3471,7 +3471,7 @@ knowledge is collaboratively constructed’
 
 ---
 
-<!-- page 62 -->
+<!-- page 60 -->
 
  
  
@@ -3541,7 +3541,7 @@ to an online environment (see, for example, Chong and Reinders 2020), as well as
 
 ---
 
-<!-- page 63 -->
+<!-- page 61 -->
 
  
  
@@ -3608,7 +3608,7 @@ controlling all the variables at play in any one teaching situation.
 
 ---
 
-<!-- page 64 -->
+<!-- page 62 -->
 
  
  
@@ -3666,7 +3666,7 @@ discourse features, which provides a framework for self-evaluation and teacher d
 
 ---
 
-<!-- page 65 -->
+<!-- page 63 -->
 
  
  
@@ -3739,7 +3739,7 @@ constantly be at the mercy of folk theories and faddishness. As Long (2015) argu
 
 ---
 
-<!-- page 66 -->
+<!-- page 64 -->
 
  
  
@@ -3800,7 +3800,7 @@ vindicating diversity at the local level.
 
 ---
 
-<!-- page 67 -->
+<!-- page 65 -->
 
  
  
@@ -3865,7 +3865,7 @@ Corder, S. P. (1973) Introducing Applied Linguistics, Harmondsworth: Penguin.
 
 ---
 
-<!-- page 68 -->
+<!-- page 66 -->
 
  
  
@@ -3933,7 +3933,7 @@ Assessment and Policy in Britain, Abingdon: Routledge.
 
 ---
 
-<!-- page 69 -->
+<!-- page 67 -->
 
  
 Scott Thornbury 
@@ -3983,7 +3983,7 @@ Yu, L. (2001) ‘Communicative language teaching in China: Progress and resistan
 
 ---
 
-<!-- page 70 -->
+<!-- page 68 -->
 
  
  
@@ -4025,7 +4025,7 @@ DOI: 10.4324/9781003082644-6
 
 ---
 
-<!-- page 71 -->
+<!-- page 69 -->
 
  
  
@@ -4083,7 +4083,7 @@ specific applications since applications may appeal to more than one metaphor. F
 
 ---
 
-<!-- page 72 -->
+<!-- page 70 -->
 
  
  
@@ -4139,7 +4139,7 @@ nature of the writing. On the product-oriented end of the continuum, messages ar
 
 ---
 
-<!-- page 73 -->
+<!-- page 71 -->
 
  
  
@@ -4206,7 +4206,7 @@ finds chatty, conversational messages and formal administrative communications.
 
 ---
 
-<!-- page 74 -->
+<!-- page 72 -->
 
  
  
@@ -4263,7 +4263,7 @@ ing, blended learning is increasingly becoming the norm in university level cour
 
 ---
 
-<!-- page 75 -->
+<!-- page 73 -->
 
  
  
@@ -4332,7 +4332,7 @@ common ground for cross-cultural understanding. What needed to be negotiated, th
 
 ---
 
-<!-- page 76 -->
+<!-- page 74 -->
 
    
  
@@ -4391,7 +4391,7 @@ into the discourse rules of a particular online community. This means we must un
 
 ---
 
-<!-- page 77 -->
+<!-- page 75 -->
 
  
  
@@ -4462,7 +4462,7 @@ complex or as interesting as it is today. The accelerating diffusion of digital 
 
 ---
 
-<!-- page 78 -->
+<!-- page 76 -->
 
  
  
@@ -4530,7 +4530,7 @@ cation
 
 ---
 
-<!-- page 79 -->
+<!-- page 77 -->
 
  
  
@@ -4594,7 +4594,7 @@ Chik, A. (2014) ‘Digital gaming and language learning: Autonomy and community�
 
 ---
 
-<!-- page 80 -->
+<!-- page 78 -->
 
  
  
@@ -4660,7 +4660,7 @@ education’, Modern Language Journal, 98: 330–347.
 
 ---
 
-<!-- page 81 -->
+<!-- page 79 -->
 
 Richard Kern 
 Kern, R. and Develotte, C. (eds.) (2018) Screens and Scenes: Multimodal Communication in Online 
@@ -4724,7 +4724,7 @@ cations and New Directions, New York: Routledge.
 
 ---
 
-<!-- page 82 -->
+<!-- page 80 -->
 
  
 Technology and language learning 
@@ -4770,7 +4770,7 @@ in Foreign and Second Language Education, San Marcos, TX: CALICO Monograph Serie
 
 ---
 
-<!-- page 83 -->
+<!-- page 81 -->
 
  
  
@@ -4817,7 +4817,7 @@ DOI: 10.4324/9781003082644-7
 
 ---
 
-<!-- page 84 -->
+<!-- page 82 -->
 
  
  
@@ -4888,7 +4888,7 @@ in shaping their views of effective teaching and learning and their teaching pra
 
 ---
 
-<!-- page 85 -->
+<!-- page 83 -->
 
  
  
@@ -4962,7 +4962,7 @@ therefore most expensive evaluations tend to be associated only with the largest
 
 ---
 
-<!-- page 86 -->
+<!-- page 84 -->
 
  
  
@@ -5052,7 +5052,7 @@ eficial.
 
 ---
 
-<!-- page 87 -->
+<!-- page 85 -->
 
  
  
@@ -5108,7 +5108,7 @@ which are formally initiated (by, for example, a ministry of education or teache
 
 ---
 
-<!-- page 88 -->
+<!-- page 86 -->
 
  
  
@@ -5163,7 +5163,7 @@ ular interactive meetings during which shared aspects of teaching and learning a
 
 ---
 
-<!-- page 89 -->
+<!-- page 87 -->
 
  
  
@@ -5205,7 +5205,7 @@ Figure 5.1 Structure of designed teacher CoPs
 
 ---
 
-<!-- page 90 -->
+<!-- page 88 -->
 
  
  
@@ -5271,7 +5271,7 @@ mostly systemic in nature, related, for example, to limited awareness and unders
 
 ---
 
-<!-- page 91 -->
+<!-- page 89 -->
 
  
  
@@ -5344,7 +5344,7 @@ Lack of technological support for teachers (for example, no access to free Wi-Fi
 
 ---
 
-<!-- page 92 -->
+<!-- page 90 -->
 
  
  
@@ -5419,7 +5419,7 @@ autonomy are necessarily more beneficial for teacher growth, this is not necessa
 
 ---
 
-<!-- page 93 -->
+<!-- page 91 -->
 
  
  
@@ -5504,7 +5504,7 @@ an online CoP consists of a less homogeneous group of individuals.
 
 ---
 
-<!-- page 94 -->
+<!-- page 92 -->
 
  
 Teacher communities of practice 
@@ -5554,7 +5554,7 @@ language teaching methodology; key concepts in language learning and language ed
 
 ---
 
-<!-- page 95 -->
+<!-- page 93 -->
 
  
  
@@ -5622,7 +5622,7 @@ and Improvement, New York: Teachers College.
 
 ---
 
-<!-- page 96 -->
+<!-- page 94 -->
 
  
  
@@ -5692,7 +5692,7 @@ Lawrence Erlbaum Associates.
 
 ---
 
-<!-- page 97 -->
+<!-- page 95 -->
 
  
  
@@ -5718,7 +5718,7 @@ Zepeda, S. J. (2019) Professional Development: What Works, 3rd ed., New York: Ro
 
 ---
 
-<!-- page 98 -->
+<!-- page 96 -->
 
  
  
@@ -5766,7 +5766,7 @@ DOI: 10.4324/9781003082644-8
 
 ---
 
-<!-- page 99 -->
+<!-- page 97 -->
 
  
  
@@ -5840,7 +5840,7 @@ syllabus design and methodology. Graves (2016) identifies three main phases of c
 
 ---
 
-<!-- page 100 -->
+<!-- page 98 -->
 
  
  
@@ -5921,7 +5921,7 @@ aspects of second language teaching and the ways in which materials played a key
 
 ---
 
-<!-- page 101 -->
+<!-- page 99 -->
 
  
  
@@ -5999,7 +5999,7 @@ However, the representational regimes on display in most textbooks produced for 
 
 ---
 
-<!-- page 102 -->
+<!-- page 100 -->
 
  
  
@@ -6059,7 +6059,7 @@ of such erasure points to the damage that can be done. As the queer Indonesian p
 
 ---
 
-<!-- page 103 -->
+<!-- page 101 -->
 
  
  
@@ -6137,7 +6137,7 @@ qualified activity in which the deployment of so-called named languages is chara
 
 ---
 
-<!-- page 104 -->
+<!-- page 102 -->
 
   
  
@@ -6205,7 +6205,7 @@ to develop a tourist gaze as opposed to a critical perspective regarding the mon
 
 ---
 
-<!-- page 105 -->
+<!-- page 103 -->
 
  
  
@@ -6272,7 +6272,7 @@ questions such as the following:
 
 ---
 
-<!-- page 106 -->
+<!-- page 104 -->
 
  
 Curriculum and materials 
@@ -6325,7 +6325,7 @@ project, but O’Regan argues that such work views language largely as speech an
 
 ---
 
-<!-- page 107 -->
+<!-- page 105 -->
 
  
  
@@ -6394,7 +6394,7 @@ language teaching and explore the ways in which contestation might take place.)
 
 ---
 
-<!-- page 108 -->
+<!-- page 106 -->
 
  
  
@@ -6460,7 +6460,7 @@ Oxford: Oxford University Press.
 
 ---
 
-<!-- page 109 -->
+<!-- page 107 -->
 
  
  
@@ -6524,7 +6524,7 @@ riculum Development, Oxford: Oxford University Press.
 
 ---
 
-<!-- page 110 -->
+<!-- page 108 -->
 
  
  
@@ -6570,7 +6570,7 @@ DOI: 10.4324/9781003082644-9
 
 ---
 
-<!-- page 111 -->
+<!-- page 109 -->
 
  
  
@@ -6639,7 +6639,7 @@ to choose the foreign language over other available mediums of instruction.
 
 ---
 
-<!-- page 112 -->
+<!-- page 110 -->
 
  
  
@@ -6708,7 +6708,7 @@ within the general curriculum. For example, the European Commission (2003, cited
 
 ---
 
-<!-- page 113 -->
+<!-- page 111 -->
 
  
  
@@ -6777,7 +6777,7 @@ context to another.
 
 ---
 
-<!-- page 114 -->
+<!-- page 112 -->
 
  
  
@@ -6832,7 +6832,7 @@ inequalities in Chinese society’ (Hu et al. 2014: 21). In terms of CBI and CLI
 
 ---
 
-<!-- page 115 -->
+<!-- page 113 -->
 
  
  
@@ -6886,7 +6886,7 @@ ing and content learning outcomes in a Hong Kong setting, restricting their anal
 
 ---
 
-<!-- page 116 -->
+<!-- page 114 -->
 
  
  
@@ -6948,7 +6948,7 @@ who elected to enrol on these programs rather than traditional programs. The sel
 
 ---
 
-<!-- page 117 -->
+<!-- page 115 -->
 
  
  
@@ -7009,7 +7009,7 @@ for example, Sandhu 2018).
 
 ---
 
-<!-- page 118 -->
+<!-- page 116 -->
 
  
  
@@ -7067,7 +7067,7 @@ ing in EMI in higher education settings (Lasagabaster et al. 2018).
 
 ---
 
-<!-- page 119 -->
+<!-- page 117 -->
 
  
  
@@ -7135,7 +7135,7 @@ informed decisions for the future development of CLIL, CBI, and EMI. This might 
 
 ---
 
-<!-- page 120 -->
+<!-- page 118 -->
 
  
  
@@ -7213,7 +7213,7 @@ Linguistics, 35(2): 213–218.
 
 ---
 
-<!-- page 121 -->
+<!-- page 119 -->
 
  
  
@@ -7318,7 +7318,7 @@ and Multicultural Development, 39(3): 256–270.
 
 ---
 
-<!-- page 122 -->
+<!-- page 120 -->
 
  
  
@@ -7396,7 +7396,7 @@ Journal of Applied Linguistics, 161(1): 111–123.
 
 ---
 
-<!-- page 123 -->
+<!-- page 121 -->
 
  
  
@@ -7443,7 +7443,7 @@ DOI: 10.4324/9781003082644-10
 
 ---
 
-<!-- page 124 -->
+<!-- page 122 -->
 
  
  
@@ -7507,7 +7507,7 @@ community with monolinguals, i.e. with the vast majority of countrymen.
 
 ---
 
-<!-- page 125 -->
+<!-- page 123 -->
 
  
  
@@ -7565,7 +7565,7 @@ that supersedes all previous patterns of migration-driven diversity (Meissner an
 
 ---
 
-<!-- page 126 -->
+<!-- page 124 -->
 
  
  
@@ -7621,7 +7621,7 @@ composed of 50% bilinguals and 50% of monolinguals. Both languages are taught fr
 
 ---
 
-<!-- page 127 -->
+<!-- page 125 -->
 
  
  
@@ -7680,7 +7680,7 @@ bilingual (Cummins 2000).
 
 ---
 
-<!-- page 128 -->
+<!-- page 126 -->
 
  
  
@@ -7751,7 +7751,7 @@ languages than the partner language in the bilingual model. Furthermore, the pre
 
 ---
 
-<!-- page 129 -->
+<!-- page 127 -->
 
  
  
@@ -7816,7 +7816,7 @@ acteristics of every program in their analysis and thus provide a picture of the
 
 ---
 
-<!-- page 130 -->
+<!-- page 128 -->
 
  
  
@@ -7878,7 +7878,7 @@ tions to the ‘bilingualism controversy’ presented?
 
 ---
 
-<!-- page 131 -->
+<!-- page 129 -->
 
  
   
@@ -7951,7 +7951,7 @@ constellations of teaching and learning which are increasingly common.
 
 ---
 
-<!-- page 132 -->
+<!-- page 130 -->
 
  
  
@@ -8015,7 +8015,7 @@ approaches to teaching practice.)
 
 ---
 
-<!-- page 133 -->
+<!-- page 131 -->
 
  
  
@@ -8079,7 +8079,7 @@ Gogolin, I. (2006) ‘Linguistic habitus’, in K. Brown (ed.), Encyclopedia of 
 
 ---
 
-<!-- page 134 -->
+<!-- page 132 -->
 
  
  
@@ -8147,7 +8147,7 @@ Berlin: Arbeitsstelle Interkulturelle Konflikte.
 
 ---
 
-<!-- page 135 -->
+<!-- page 133 -->
 
  
  
@@ -8165,7 +8165,7 @@ Vertovec, S. (2007) ‘Super-diversity and its implications’, Ethnic and Racia
 
 ---
 
-<!-- page 136 -->
+<!-- page 134 -->
 
  
  
@@ -8213,7 +8213,7 @@ DOI: 10.4324/9781003082644-11
 
 ---
 
-<!-- page 137 -->
+<!-- page 135 -->
 
 122 
 Nigel Harwood and Bojana Petric’ 
@@ -8270,7 +8270,7 @@ where EAP teachers have little time or resources to design subject-specific prog
 
 ---
 
-<!-- page 138 -->
+<!-- page 136 -->
 
  
  
@@ -8330,7 +8330,7 @@ relating to learners’ lives and societies in any given class. Indeed, in one o
 
 ---
 
-<!-- page 139 -->
+<!-- page 137 -->
 
 124 
 Nigel Harwood and Bojana Petric’ 
@@ -8387,7 +8387,7 @@ compare equivalent genres written by L1 speakers of different languages. Various
 
 ---
 
-<!-- page 140 -->
+<!-- page 138 -->
 
  
  
@@ -8443,7 +8443,7 @@ beliefs about (in)appropriate pronoun and citation use can partly be explained b
 
 ---
 
-<!-- page 141 -->
+<!-- page 139 -->
 
 126 
 Nigel Harwood and Bojana Petric’ 
@@ -8494,7 +8494,7 @@ and grammatical patterns (Green 2019).
 
 ---
 
-<!-- page 142 -->
+<!-- page 140 -->
 
  
  
@@ -8552,7 +8552,7 @@ practices and experiences. The study emphasizes the role of academics’ social 
 
 ---
 
-<!-- page 143 -->
+<!-- page 141 -->
 
 128 
 Nigel Harwood and Bojana Petric’ 
@@ -8603,7 +8603,7 @@ about cooperation to institutional policy-making.
 
 ---
 
-<!-- page 144 -->
+<!-- page 142 -->
 
  
  
@@ -8657,7 +8657,7 @@ other packages evolve, their impact on learners and their perceived place in EAP
 
 ---
 
-<!-- page 145 -->
+<!-- page 143 -->
 
 130 
 Nigel Harwood and Bojana Petric’ 
@@ -8724,7 +8724,7 @@ to pedagogical applications and EAP contexts.)
 
 ---
 
-<!-- page 146 -->
+<!-- page 144 -->
 
  
  
@@ -8794,7 +8794,7 @@ bridge: Cambridge University Press, pp. 252–267.
 
 ---
 
-<!-- page 147 -->
+<!-- page 145 -->
 
 132 
 Nigel Harwood and Bojana Petric’ 
@@ -8860,7 +8860,7 @@ Associates.
 
 ---
 
-<!-- page 148 -->
+<!-- page 146 -->
 
  
  
@@ -8927,7 +8927,7 @@ A corpus-based study’, English for Specific Purposes, 28: 183–198.
 
 ---
 
-<!-- page 149 -->
+<!-- page 147 -->
 
 134 
 Nigel Harwood and Bojana Petric’ 
@@ -9002,7 +9002,7 @@ sity Press.
 
 ---
 
-<!-- page 150 -->
+<!-- page 148 -->
 
  
  
@@ -9022,7 +9022,7 @@ sions’, English for Specific Purposes, 22: 365–385.
 
 ---
 
-<!-- page 151 -->
+<!-- page 149 -->
 
 10 
 Language testing 
@@ -9057,7 +9057,7 @@ DOI: 10.4324/9781003082644-12
 
 ---
 
-<!-- page 152 -->
+<!-- page 150 -->
 
  
 Language testing 
@@ -9102,7 +9102,7 @@ Figure 10.1 Kane’s interpretative argument (IA)
 
 ---
 
-<!-- page 153 -->
+<!-- page 151 -->
 
  
  
@@ -9158,7 +9158,7 @@ explicit focus on the language to be tested. An example of this is the use of th
 
 ---
 
-<!-- page 154 -->
+<!-- page 152 -->
 
  
    
@@ -9231,7 +9231,7 @@ with local language usage; otherwise, there is a significant risk of bias. This
 
 ---
 
-<!-- page 155 -->
+<!-- page 153 -->
 
   
   
@@ -9307,7 +9307,7 @@ ences in brain structure (e.g. see Dehaene et al. 2015; Boltzmann et al. 2019; a
 
 ---
 
-<!-- page 156 -->
+<!-- page 154 -->
 
  
  
@@ -9366,7 +9366,7 @@ particular sub-populations and against others. In addition to this criticism, Wi
 
 ---
 
-<!-- page 157 -->
+<!-- page 155 -->
 
  
  
@@ -9429,7 +9429,7 @@ been demonstrated by Carter and McCarthy (2015).
 
 ---
 
-<!-- page 158 -->
+<!-- page 156 -->
 
  
  
@@ -9512,7 +9512,7 @@ Weale (2023). While there were obvious weaknesses in the early versions of the s
 
 ---
 
-<!-- page 159 -->
+<!-- page 157 -->
 
  
  
@@ -9584,7 +9584,7 @@ in how test takers responded to multiple-choice questions (MCQs) and matching qu
 
 ---
 
-<!-- page 160 -->
+<!-- page 158 -->
 
  
  
@@ -9658,7 +9658,7 @@ are growing. As this happens, it is imperative that we address the major issues 
 
 ---
 
-<!-- page 161 -->
+<!-- page 159 -->
 
  
  
@@ -9724,7 +9724,7 @@ topic – the focus ranges from how current approaches fail these learners to th
 
 ---
 
-<!-- page 162 -->
+<!-- page 160 -->
 
  
  
@@ -9795,7 +9795,7 @@ DOI: 10.1038/nrn3924
 
 ---
 
-<!-- page 163 -->
+<!-- page 161 -->
 
  
  
@@ -9872,7 +9872,7 @@ pdf
 
 ---
 
-<!-- page 164 -->
+<!-- page 162 -->
 
  
  
@@ -9907,7 +9907,7 @@ www.ets.org/s/commonassessments/pdf/AutomatedScoringAssessCommonCoreStandards.pd
 
 ---
 
-<!-- page 165 -->
+<!-- page 163 -->
 
  
 11 
@@ -9944,7 +9944,7 @@ DOI: 10.4324/9781003082644-13
 
 ---
 
-<!-- page 166 -->
+<!-- page 164 -->
 
  
    
@@ -10002,7 +10002,7 @@ when they are engaged in multilingual universities or equip them with an enhance
 
 ---
 
-<!-- page 167 -->
+<!-- page 165 -->
 
  
  
@@ -10061,7 +10061,7 @@ individual’s ability to focus attention on language as an object in and of its
 
 ---
 
-<!-- page 168 -->
+<!-- page 166 -->
 
  
  
@@ -10122,7 +10122,7 @@ studies on language learners’ beliefs have emerged as a significant component 
 
 ---
 
-<!-- page 169 -->
+<!-- page 167 -->
 
  
  
@@ -10178,7 +10178,7 @@ ers a wide variety of opportunities to use the target language, but they also cr
 
 ---
 
-<!-- page 170 -->
+<!-- page 168 -->
 
  
    
@@ -10236,7 +10236,7 @@ language learners’ critical language awareness through critical literacy activ
 
 ---
 
-<!-- page 171 -->
+<!-- page 169 -->
 
  
  
@@ -10292,7 +10292,7 @@ communication breakdown speaks to a lack of the relevant language knowledge that
 
 ---
 
-<!-- page 172 -->
+<!-- page 170 -->
 
  
  
@@ -10351,7 +10351,7 @@ use English as the medium of instruction and happen to teach students whose firs
 
 ---
 
-<!-- page 173 -->
+<!-- page 171 -->
 
  
  
@@ -10411,7 +10411,7 @@ tent (e.g. Kalaja et al. 2017). Language teachers’ knowledge of classroom disc
 
 ---
 
-<!-- page 174 -->
+<!-- page 172 -->
 
  
 Language awareness 
@@ -10465,7 +10465,7 @@ different modalities. Research should also take into account these multilingual 
 
 ---
 
-<!-- page 175 -->
+<!-- page 173 -->
 
  
  
@@ -10521,7 +10521,7 @@ standards being promoted in the field to facilitate the professionalization of T
 
 ---
 
-<!-- page 176 -->
+<!-- page 174 -->
 
  
  
@@ -10598,7 +10598,7 @@ Routledge Handbook of Language Awareness, London: Routledge, pp. 141–154.
 
 ---
 
-<!-- page 177 -->
+<!-- page 175 -->
 
  
  
@@ -10673,7 +10673,7 @@ ogy of Education, 36(1): 21–43. DOI: 10.1007/s10212-020-00464-7
 
 ---
 
-<!-- page 178 -->
+<!-- page 176 -->
 
  
 12 
@@ -10711,7 +10711,7 @@ DOI: 10.4324/9781003082644-14
 
 ---
 
-<!-- page 179 -->
+<!-- page 177 -->
 
  
  
@@ -10771,7 +10771,7 @@ studies.
 
 ---
 
-<!-- page 180 -->
+<!-- page 178 -->
 
  
 Classroom discourse 
@@ -10819,7 +10819,7 @@ between these two dyad types: (1) the presence of comprehensible input and (2) n
 
 ---
 
-<!-- page 181 -->
+<!-- page 179 -->
 
  
  
@@ -10877,7 +10877,7 @@ abilities in their ZDP is necessary in order for teachers to tailor their suppor
 
 ---
 
-<!-- page 182 -->
+<!-- page 180 -->
 
  
  
@@ -10941,7 +10941,7 @@ vadivelu 1999).
 
 ---
 
-<!-- page 183 -->
+<!-- page 181 -->
 
  
  
@@ -11013,7 +11013,7 @@ ship, and how they shape opportunities for learning. Teacher positioning studies
 
 ---
 
-<!-- page 184 -->
+<!-- page 182 -->
 
  
  
@@ -11067,7 +11067,7 @@ ubiquity of technology-enabled teaching and learning.
 
 ---
 
-<!-- page 185 -->
+<!-- page 183 -->
 
  
  
@@ -11143,7 +11143,7 @@ settings.
 
 ---
 
-<!-- page 186 -->
+<!-- page 184 -->
 
  
  
@@ -11197,7 +11197,7 @@ Social theory of learning, which places participation in communities of practice
 
 ---
 
-<!-- page 187 -->
+<!-- page 185 -->
 
  
 Amy B. M. Tsui 
@@ -11251,7 +11251,7 @@ their own classroom discourses.
 
 ---
 
-<!-- page 188 -->
+<!-- page 186 -->
 
  
 Classroom discourse 
@@ -11307,7 +11307,7 @@ Clevedon: Multilingual Matters.
 
 ---
 
-<!-- page 189 -->
+<!-- page 187 -->
 
  
  
@@ -11387,7 +11387,7 @@ Acquisition, Rowley, MA: Newbury House, pp. 268–286.
 
 ---
 
-<!-- page 190 -->
+<!-- page 188 -->
 
  
  
@@ -11465,7 +11465,7 @@ Press.
 
 ---
 
-<!-- page 191 -->
+<!-- page 189 -->
 
 Amy B. M. Tsui 
 Wenger, E. (1998) Communities of Practice: Learning, Meaning and Identity, Cambridge: Cambridge 
@@ -11480,7 +11480,7 @@ method’, Applied Linguistics, 23(3): 283–288.
 
 ---
 
-<!-- page 192 -->
+<!-- page 190 -->
 
  
  
@@ -11520,7 +11520,7 @@ DOI: 10.4324/9781003082644-15
 
 ---
 
-<!-- page 193 -->
+<!-- page 191 -->
 
  
  
@@ -11578,7 +11578,7 @@ with unequal speaking rights. It has helped professionals in the legal, medical,
 
 ---
 
-<!-- page 194 -->
+<!-- page 192 -->
 
  
  
@@ -11638,7 +11638,7 @@ exchanges across social and cultural contexts. However, while the focus on disco
 
 ---
 
-<!-- page 195 -->
+<!-- page 193 -->
 
  
  
@@ -11693,7 +11693,7 @@ and subjectivities. As linguistic anthropologist William Hanks (1996) demonstrat
 
 ---
 
-<!-- page 196 -->
+<!-- page 194 -->
 
  
 Language and culture 
@@ -11749,7 +11749,7 @@ well as our understanding of our surrounding culture.
 
 ---
 
-<!-- page 197 -->
+<!-- page 195 -->
 
  
  
@@ -11806,7 +11806,7 @@ how to teach the nexus of language and culture (see the section ‘Recommendatio
 
 ---
 
-<!-- page 198 -->
+<!-- page 196 -->
 
  
  
@@ -11870,7 +11870,7 @@ cational linguistics, linguistic anthropology, and sociolinguistics. Because cul
 
 ---
 
-<!-- page 199 -->
+<!-- page 197 -->
 
  
  
@@ -11936,7 +11936,7 @@ task of knowing, let alone interpreting, foreign cultures. In our days of multip
 
 ---
 
-<!-- page 200 -->
+<!-- page 198 -->
 
  
 Language and culture 
@@ -11990,7 +11990,7 @@ it only exacerbates the desire to create new communities of practice that will, 
 
 ---
 
-<!-- page 201 -->
+<!-- page 199 -->
 
  
  
@@ -12048,7 +12048,7 @@ power inequality impacts the way language is used)
 
 ---
 
-<!-- page 202 -->
+<!-- page 200 -->
 
   
  
@@ -12115,7 +12115,7 @@ Kramsch, C. (2014) ‘Language and culture’, AILA Review, 27: 30–55.
 
 ---
 
-<!-- page 203 -->
+<!-- page 201 -->
 
  
  
@@ -12184,7 +12184,7 @@ tion und Kognition im Fremdsprachenunterricht, Tübingen: Narr, pp. 66–86.
 
 ---
 
-<!-- page 204 -->
+<!-- page 202 -->
 
  
  
@@ -12222,7 +12222,7 @@ of Power, New York: Public Affairs.
 
 ---
 
-<!-- page 205 -->
+<!-- page 203 -->
 
  
  
@@ -12269,7 +12269,7 @@ DOI: 10.4324/9781003082644-16
 
 ---
 
-<!-- page 206 -->
+<!-- page 204 -->
 
  
  
@@ -12347,7 +12347,7 @@ of the communicative event, such that the indexing of one evokes or indexes the 
 
 ---
 
-<!-- page 207 -->
+<!-- page 205 -->
 
  
  
@@ -12403,7 +12403,7 @@ it attaches to context show strong affinity with various sociocultural approache
 
 ---
 
-<!-- page 208 -->
+<!-- page 206 -->
 
  
  
@@ -12456,7 +12456,7 @@ matical forms. The underlying assumption is that ‘in every community, grammati
 
 ---
 
-<!-- page 209 -->
+<!-- page 207 -->
 
  
  
@@ -12509,7 +12509,7 @@ as a volunteer teacher in community-based heritage language schools in order to 
 
 ---
 
-<!-- page 210 -->
+<!-- page 208 -->
 
  
 Language socialization 
@@ -12563,7 +12563,7 @@ lin and Ochs 1986a, 1986b). During the period from 1990s to 2010s, research guid
 
 ---
 
-<!-- page 211 -->
+<!-- page 209 -->
 
  
  
@@ -12641,7 +12641,7 @@ choice, socializing not merely cultures but also intercultural competence and in
 
 ---
 
-<!-- page 212 -->
+<!-- page 210 -->
 
  
 Language socialization 
@@ -12695,7 +12695,7 @@ guage endangerment, and from racial identities to writing abilities.
 
 ---
 
-<!-- page 213 -->
+<!-- page 211 -->
 
  
  
@@ -12759,7 +12759,7 @@ M. Wilce (eds.), The Routledge Handbook of Language and Emotion, New York: Routl
 
 ---
 
-<!-- page 214 -->
+<!-- page 212 -->
 
  
  
@@ -12854,7 +12854,7 @@ tions of speakers in the twenty-first century’, Heritage Language Journal, 17(
 
 ---
 
-<!-- page 215 -->
+<!-- page 213 -->
 
  
  
@@ -12937,7 +12937,7 @@ Communication, 61: 75–87.
 
 ---
 
-<!-- page 216 -->
+<!-- page 214 -->
 
  
  
@@ -12996,7 +12996,7 @@ Research in Second Language Teaching and Learning, 1: 301–316.
 
 ---
 
-<!-- page 218 -->
+<!-- page 215 -->
 
  
 Part II 
@@ -13005,7 +13005,7 @@ in applied linguistics
 
 ---
 
-<!-- page 220 -->
+<!-- page 216 -->
 
  
  
@@ -13048,7 +13048,7 @@ DOI: 10.4324/9781003082644-18
 
 ---
 
-<!-- page 221 -->
+<!-- page 217 -->
 
  
  
@@ -13103,7 +13103,7 @@ coordination, or subordination. Current analyses may therefore adopt rather diff
 
 ---
 
-<!-- page 222 -->
+<!-- page 218 -->
 
  
  
@@ -13159,7 +13159,7 @@ at a high and, in the view of some critics, implausible level of abstraction and
 
 ---
 
-<!-- page 223 -->
+<!-- page 219 -->
 
  
  
@@ -13214,7 +13214,7 @@ decision-making in many fields. In general, for a model of language to support i
 
 ---
 
-<!-- page 224 -->
+<!-- page 220 -->
 
  
  
@@ -13270,7 +13270,7 @@ cational syllabus through the trivium of grammar (correct language use), dialect
 
 ---
 
-<!-- page 225 -->
+<!-- page 221 -->
 
  
  
@@ -13327,7 +13327,7 @@ dinner table; or natural in a teenager’s speech but peculiar in her mother’s
 
 ---
 
-<!-- page 226 -->
+<!-- page 222 -->
 
  
  
@@ -13385,7 +13385,7 @@ tal 2017), learners can come to see (as did mediaeval students of rhetoric) how 
 
 ---
 
-<!-- page 227 -->
+<!-- page 223 -->
 
  
  
@@ -13450,7 +13450,7 @@ gogic criteria (Hulstijn 1995; Swan 1994). Further, a pedagogic grammar does not
 
 ---
 
-<!-- page 228 -->
+<!-- page 224 -->
 
  
     
@@ -13507,7 +13507,7 @@ reassuringly solid evidence does now exist that grammar instruction can support 
 
 ---
 
-<!-- page 229 -->
+<!-- page 225 -->
 
  
  
@@ -13569,7 +13569,7 @@ better-focused instructional materials for learners with different levels of nee
 
 ---
 
-<!-- page 230 -->
+<!-- page 226 -->
 
  
 Grammar 
@@ -13621,7 +13621,7 @@ consolidate and pass on our discoveries through cultural transmission. Consequen
 
 ---
 
-<!-- page 231 -->
+<!-- page 227 -->
 
  
  
@@ -13678,7 +13678,7 @@ Cambridge University Press.
 
 ---
 
-<!-- page 232 -->
+<!-- page 228 -->
 
 Grammar 
 Hulstijn, J. (1995) ‘Not all grammar rules are equal: Giving grammar instruction its proper place in for­
@@ -13721,7 +13721,7 @@ Walter, C. (2008) Conference Presentation, IATEFL Poland, Łodż.
 
 ---
 
-<!-- page 233 -->
+<!-- page 229 -->
 
  
  
@@ -13772,7 +13772,7 @@ DOI: 10.4324/9781003082644-19
 
 ---
 
-<!-- page 234 -->
+<!-- page 230 -->
 
    
  
@@ -13826,7 +13826,7 @@ one word. In some languages, especially in English, meanings can be represented 
 
 ---
 
-<!-- page 235 -->
+<!-- page 231 -->
 
  
  
@@ -13886,7 +13886,7 @@ lexical characteristics of words that may affect processing.
 
 ---
 
-<!-- page 236 -->
+<!-- page 232 -->
 
  
  
@@ -13940,7 +13940,7 @@ item produced.
 
 ---
 
-<!-- page 237 -->
+<!-- page 233 -->
 
  
  
@@ -14002,7 +14002,7 @@ mote incidental vocabulary learning and are known as indirect vocabulary instruc
 
 ---
 
-<!-- page 238 -->
+<!-- page 234 -->
 
  
  
@@ -14073,7 +14073,7 @@ only language learning but also human memory in general. The second is that spac
 
 ---
 
-<!-- page 239 -->
+<!-- page 235 -->
 
  
  
@@ -14139,7 +14139,7 @@ in turn, decreased homograph learning, as is consistent with TOPRA predictions.
 
 ---
 
-<!-- page 240 -->
+<!-- page 236 -->
 
  
  
@@ -14196,7 +14196,7 @@ Lexis
 
 ---
 
-<!-- page 241 -->
+<!-- page 237 -->
 
  
  
@@ -14262,7 +14262,7 @@ ceptual store. According to this model, no translation strategy is needed.
 
 ---
 
-<!-- page 242 -->
+<!-- page 238 -->
 
  
  
@@ -14316,7 +14316,7 @@ lexicons for L1 and L2 words and one common conceptual store.
 
 ---
 
-<!-- page 243 -->
+<!-- page 239 -->
 
  
  
@@ -14384,7 +14384,7 @@ and provides support for the hypothesis that in the early stages of L2 learning,
 
 ---
 
-<!-- page 244 -->
+<!-- page 240 -->
 
  
  
@@ -14440,7 +14440,7 @@ corpus linguistics; generative grammar; cognitive linguistics
 
 ---
 
-<!-- page 245 -->
+<!-- page 241 -->
 
  
  
@@ -14502,7 +14502,7 @@ Dornic (ed.), Attention and Performance VI, New York: Academic Press.
 
 ---
 
-<!-- page 246 -->
+<!-- page 242 -->
 
  
  
@@ -14568,7 +14568,7 @@ grammatical class’, Studies in Second Language Acquisition, 28: 387–422.
 
 ---
 
-<!-- page 247 -->
+<!-- page 243 -->
 
  
 Joe Barcroft and Gretchen Sunderman 
@@ -14588,7 +14588,7 @@ pp. 64–73.
 
 ---
 
-<!-- page 248 -->
+<!-- page 244 -->
 
  
  
@@ -14631,7 +14631,7 @@ DOI: 10.4324/9781003082644-20
 
 ---
 
-<!-- page 249 -->
+<!-- page 245 -->
 
  
  
@@ -14689,7 +14689,7 @@ breathe.’ None heard ‘I shot the prick.’ Participants were then divided in
 
 ---
 
-<!-- page 250 -->
+<!-- page 246 -->
 
  
  
@@ -14752,7 +14752,7 @@ ten if they had been asked to transcribe their responses, not in ordinary spelli
 
 ---
 
-<!-- page 251 -->
+<!-- page 247 -->
 
  
  
@@ -14832,7 +14832,7 @@ The results of this research can be summarized with one word: variability (Perke
 
 ---
 
-<!-- page 252 -->
+<!-- page 248 -->
 
  
  
@@ -14902,7 +14902,7 @@ terms, that the units are actually abstractions, derived from the continuous str
 
 ---
 
-<!-- page 253 -->
+<!-- page 249 -->
 
    
  
@@ -14970,7 +14970,7 @@ not exist independently in the continuous stream of speech means we have to aban
 
 ---
 
-<!-- page 254 -->
+<!-- page 250 -->
 
  
  
@@ -15030,7 +15030,7 @@ familiar personal experiences – Port (2007b) gives some arresting examples fro
 
 ---
 
-<!-- page 255 -->
+<!-- page 251 -->
 
  
  
@@ -15096,7 +15096,7 @@ adult learners of a second language and their teachers. English speakers are for
 
 ---
 
-<!-- page 256 -->
+<!-- page 252 -->
 
  
  
@@ -15150,7 +15150,7 @@ and phrases requires prior learning of how to produce and perceive sublexical un
 
 ---
 
-<!-- page 257 -->
+<!-- page 253 -->
 
  
  
@@ -15218,7 +15218,7 @@ of language development; intercultural communication; forensic linguistics
 
 ---
 
-<!-- page 258 -->
+<!-- page 254 -->
 
  
  
@@ -15287,7 +15287,7 @@ Linguistics, Oxfordshire: Routledge, pp. 416–431.
 
 ---
 
-<!-- page 259 -->
+<!-- page 255 -->
 
  
  
@@ -15358,7 +15358,7 @@ Yavas, M. (2020) Applied English Phonology, 4th ed., New York City: Wiley Blackw
 
 ---
 
-<!-- page 260 -->
+<!-- page 256 -->
 
  
  
@@ -15397,7 +15397,7 @@ DOI: 10.4324/9781003082644-21
 
 ---
 
-<!-- page 261 -->
+<!-- page 257 -->
 
  
  
@@ -15461,7 +15461,7 @@ been used, in age after age, to solidify the social hierarchy, empower elites, a
 
 ---
 
-<!-- page 262 -->
+<!-- page 258 -->
 
  
  
@@ -15532,7 +15532,7 @@ images supplement or replace writing.
 
 ---
 
-<!-- page 263 -->
+<!-- page 259 -->
 
  
  
@@ -15592,7 +15592,7 @@ ing’, Vasquez et al. (2019) argue that the benefits of a critical literacy app
 
 ---
 
-<!-- page 264 -->
+<!-- page 260 -->
 
  
  
@@ -15668,7 +15668,7 @@ institutional, cultural, historical, ideological).
 
 ---
 
-<!-- page 265 -->
+<!-- page 261 -->
 
  
 Doris S. Warriner 
@@ -15719,7 +15719,7 @@ tories of individuals and their communities. By going outside schools and classr
 
 ---
 
-<!-- page 266 -->
+<!-- page 262 -->
 
  
  
@@ -15775,7 +15775,7 @@ beyond mandated curricula and standardized exams.
 
 ---
 
-<!-- page 267 -->
+<!-- page 263 -->
 
  
  
@@ -15840,7 +15840,7 @@ of the social sciences more generally.
 
 ---
 
-<!-- page 268 -->
+<!-- page 264 -->
 
  
 Literacy 
@@ -15895,7 +15895,7 @@ tion of emergent bilingual transfronterizx students’, Anthropology and Educati
 
 ---
 
-<!-- page 269 -->
+<!-- page 265 -->
 
  
  
@@ -15966,7 +15966,7 @@ emancipatory acts among urban youth’, Journal of Adolescent & Adult Literacy, 
 
 ---
 
-<!-- page 270 -->
+<!-- page 266 -->
 
  
  
@@ -16036,7 +16036,7 @@ University Press, pp. 57–69.
 
 ---
 
-<!-- page 271 -->
+<!-- page 267 -->
 
  
  
@@ -16106,7 +16106,7 @@ studies’, Literacy, 48: 3–11.
 
 ---
 
-<!-- page 272 -->
+<!-- page 268 -->
 
  
  
@@ -16173,7 +16173,7 @@ Literacy, 51: 670–680.
 
 ---
 
-<!-- page 273 -->
+<!-- page 269 -->
 
  
  
@@ -16226,7 +16226,7 @@ DOI: 10.4324/9781003082644-22
 
 ---
 
-<!-- page 274 -->
+<!-- page 270 -->
 
 Genre analysis 
 and bureaucratic systems (Martin and Rose 2008). Such knowledge and skill give access to 
@@ -16276,7 +16276,7 @@ torical genre studies [RGS]), led by Miller (1984). The ESP and the Australian t
 
 ---
 
-<!-- page 275 -->
+<!-- page 271 -->
 
  
  
@@ -16333,7 +16333,7 @@ the expense of individual variation – that is, genre performance and competenc
 
 ---
 
-<!-- page 276 -->
+<!-- page 272 -->
 
  
  
@@ -16387,7 +16387,7 @@ type of game it is (a game between friends or the final at Wimbledon, for exampl
 
 ---
 
-<!-- page 277 -->
+<!-- page 273 -->
 
  
  
@@ -16452,7 +16452,7 @@ different from others that participants have experienced.
 
 ---
 
-<!-- page 278 -->
+<!-- page 274 -->
 
  
  
@@ -16506,7 +16506,7 @@ social and educational contexts. ESP, by definition, typically sees its role as 
 
 ---
 
-<!-- page 279 -->
+<!-- page 275 -->
 
  
 John Flowerdew 
@@ -16557,7 +16557,7 @@ website, and social media genres. An online blog, https://laurenbronsteincom.wor
 
 ---
 
-<!-- page 280 -->
+<!-- page 276 -->
 
  
  
@@ -16618,7 +16618,7 @@ analysis in many domains. Fairclough (1995), for example, has shown how genre an
 
 ---
 
-<!-- page 281 -->
+<!-- page 277 -->
 
  
  
@@ -16676,7 +16676,7 @@ the ESP and RGT traditions, with ESP emphasizing context more, in particular (e.
 
 ---
 
-<!-- page 282 -->
+<!-- page 278 -->
 
    
  
@@ -16734,7 +16734,7 @@ Bhatia, V. K. (2004) Worlds of Written Discourse: A Genre-Based View, London: Co
 
 ---
 
-<!-- page 283 -->
+<!-- page 279 -->
 
  
  
@@ -16820,7 +16820,7 @@ Martin, J. R. and Rose, D. (2008) Genre Relations: Mapping Culture, London: Equi
 
 ---
 
-<!-- page 284 -->
+<!-- page 280 -->
 
  
  
@@ -16879,7 +16879,7 @@ reviews: A genre-based view’, Discourse and Communication, 13(3): 342–365.
 
 ---
 
-<!-- page 285 -->
+<!-- page 281 -->
 
  
  
@@ -16926,7 +16926,7 @@ DOI: 10.4324/9781003082644-23
 
 ---
 
-<!-- page 286 -->
+<!-- page 282 -->
 
  
  
@@ -16984,7 +16984,7 @@ ing, and the language of religion (see also Leech 1966 for an early study of the
 
 ---
 
-<!-- page 287 -->
+<!-- page 283 -->
 
  
  
@@ -17051,7 +17051,7 @@ speech, writing, and thought presentation (e.g. direct speech, free indirect tho
 
 ---
 
-<!-- page 288 -->
+<!-- page 284 -->
 
  
  
@@ -17128,7 +17128,7 @@ ronisms.
 
 ---
 
-<!-- page 289 -->
+<!-- page 285 -->
 
  
  
@@ -17192,7 +17192,7 @@ understanding of agency and cause-effect relationships. This limited understandi
 
 ---
 
-<!-- page 290 -->
+<!-- page 286 -->
 
  
  
@@ -17283,7 +17283,7 @@ and films, which also require the development of multimodal forms of stylistic a
 
 ---
 
-<!-- page 291 -->
+<!-- page 287 -->
 
  
  
@@ -17346,7 +17346,7 @@ within literary stylistics. Although stylistic analysis is primarily focused on 
 
 ---
 
-<!-- page 292 -->
+<!-- page 288 -->
 
  
  
@@ -17422,7 +17422,7 @@ ars that have reoccurred cyclically since the 1960s (e.g. see Fowler 1971; Fish 
 
 ---
 
-<!-- page 293 -->
+<!-- page 289 -->
 
  
  
@@ -17488,7 +17488,7 @@ interactions between readers and texts.
 
 ---
 
-<!-- page 294 -->
+<!-- page 290 -->
 
  
  
@@ -17555,7 +17555,7 @@ reader response study using focus groups’, Language and Literature, 29(2): 124
 
 ---
 
-<!-- page 295 -->
+<!-- page 291 -->
 
  
  
@@ -17632,7 +17632,7 @@ Sanford, A. and Emmott, C. (2012) Mind, Brain and Narrative, Cambridge: Cambridg
 
 ---
 
-<!-- page 296 -->
+<!-- page 292 -->
 
  
  
@@ -17687,7 +17687,7 @@ Zwaan, R. (1993) Aspects of Literary Comprehension, Amsterdam: John Benjamins.
 
 ---
 
-<!-- page 297 -->
+<!-- page 293 -->
 
  
  
@@ -17743,7 +17743,7 @@ DOI: 10.4324/9781003082644-24
 
 ---
 
-<!-- page 298 -->
+<!-- page 294 -->
 
  
  
@@ -17801,7 +17801,7 @@ liday’s concerns with language function (e.g. 1973) and the use of language as
 
 ---
 
-<!-- page 299 -->
+<!-- page 295 -->
 
  
  
@@ -17883,7 +17883,7 @@ puter.
 
 ---
 
-<!-- page 300 -->
+<!-- page 296 -->
 
  
  
@@ -17942,7 +17942,7 @@ theory is a powerful tool in DA as it can help to explain both high level aspect
 
 ---
 
-<!-- page 301 -->
+<!-- page 297 -->
 
  
  
@@ -18020,7 +18020,7 @@ everyday communication and understanding participants’ own perspectives on the
 
 ---
 
-<!-- page 302 -->
+<!-- page 298 -->
 
  
  
@@ -18078,7 +18078,7 @@ of much more than the bare words and treat other communicative phenomena as more
 
 ---
 
-<!-- page 303 -->
+<!-- page 299 -->
 
  
  
@@ -18140,7 +18140,7 @@ signs, cannot be simply reduced to linguistic terms as they were in early semiot
 
 ---
 
-<!-- page 304 -->
+<!-- page 300 -->
 
  
  
@@ -18198,7 +18198,7 @@ to validate these posited structures.
 
 ---
 
-<!-- page 305 -->
+<!-- page 301 -->
 
  
  
@@ -18272,7 +18272,7 @@ texts or the language as a whole, corpus comparisons have enabled DA to talk wit
 
 ---
 
-<!-- page 306 -->
+<!-- page 302 -->
 
  
  
@@ -18333,7 +18333,7 @@ overview of key concepts in DA)
 
 ---
 
-<!-- page 307 -->
+<!-- page 303 -->
 
  
  
@@ -18398,7 +18398,7 @@ London: Longman.
 
 ---
 
-<!-- page 308 -->
+<!-- page 304 -->
 
  
  
@@ -18467,7 +18467,7 @@ Practice in Corpus-Assisted Discourse Studies (CADS), Amsterdam: JohnBenjamins.
 
 ---
 
-<!-- page 309 -->
+<!-- page 305 -->
 
  
  
@@ -18536,7 +18536,7 @@ thesis, Department of Linguistics, University of Edinburgh.
 
 ---
 
-<!-- page 310 -->
+<!-- page 306 -->
 
 Discourse analysis 
 Widdowson, H. G. (1979) Explorations in Applied Linguistics, Oxford: Oxford University Press. 
@@ -18550,7 +18550,7 @@ Widdowson, H. G. (2007) Discourse Analysis, Oxford: Oxford University Press.
 
 ---
 
-<!-- page 311 -->
+<!-- page 307 -->
 
  
 22 
@@ -18587,7 +18587,7 @@ DOI: 10.4324/9781003082644-25
 
 ---
 
-<!-- page 312 -->
+<!-- page 308 -->
 
  
  
@@ -18653,7 +18653,7 @@ by the company it keeps’. A simple example to illustrate the dynamics of word 
 
 ---
 
-<!-- page 313 -->
+<!-- page 309 -->
 
  
  
@@ -18734,7 +18734,7 @@ teaching and learning: first, corpus-based insights have been incorporated into 
 
 ---
 
-<!-- page 314 -->
+<!-- page 310 -->
 
  
  
@@ -18803,7 +18803,7 @@ pleted more efficiently at a relatively low cost. These opportunities can be cre
 
 ---
 
-<!-- page 315 -->
+<!-- page 311 -->
 
  
  
@@ -18868,7 +18868,7 @@ built based on the original Brown Corpus sampling frame – 500 texts of around 
 
 ---
 
-<!-- page 316 -->
+<!-- page 312 -->
 
  
 Corpus linguistics 
@@ -18918,7 +18918,7 @@ able providing information about the name, size, design, and purpose of the corp
 
 ---
 
-<!-- page 317 -->
+<!-- page 313 -->
 
  
  
@@ -19005,7 +19005,7 @@ Of
 
 ---
 
-<!-- page 318 -->
+<!-- page 314 -->
 
  
  
@@ -19028,7 +19028,7 @@ expression ‘I see’. Users can specify the number of words to the left and to
 
 ---
 
-<!-- page 319 -->
+<!-- page 315 -->
 
  
  
@@ -19117,7 +19117,7 @@ Corpus with CANCODE (ordered by significance)
 
 ---
 
-<!-- page 320 -->
+<!-- page 316 -->
 
  
  
@@ -19169,7 +19169,7 @@ by Louw (1993) and also used by Sinclair (1996), referring to the idea that word
 
 ---
 
-<!-- page 321 -->
+<!-- page 317 -->
 
  
  
@@ -19236,7 +19236,7 @@ Ivor, T. (2015) Corpus Linguistics for ELT: Research and Practice, Abingdon: Rou
 
 ---
 
-<!-- page 322 -->
+<!-- page 318 -->
 
  
  
@@ -19299,7 +19299,7 @@ Open Parallel Corpus (OPUS), collection of translated texts from the web: https:
 
 ---
 
-<!-- page 323 -->
+<!-- page 319 -->
 
 Phoebe Lin and Svenja Adolphs 
 Kaggle, a repository of (language) corpora: www.kaggle.com/datasets 
@@ -19349,7 +19349,7 @@ cran.r-project.org/web/packages/available_packages_by_date.html
 
 ---
 
-<!-- page 324 -->
+<!-- page 320 -->
 
  
 23 
@@ -19389,7 +19389,7 @@ DOI: 10.4324/9781003082644-26
 
 ---
 
-<!-- page 325 -->
+<!-- page 321 -->
 
  
  
@@ -19464,7 +19464,7 @@ ing conceptual mappings).
 
 ---
 
-<!-- page 326 -->
+<!-- page 322 -->
 
  
  
@@ -19525,7 +19525,7 @@ for various branches of applied linguistics. Some work within the cognitive ling
 
 ---
 
-<!-- page 327 -->
+<!-- page 323 -->
 
  
  
@@ -19583,7 +19583,7 @@ different perspectives. Frame semantics has led to the development of FrameNet (
 
 ---
 
-<!-- page 328 -->
+<!-- page 324 -->
 
  
  
@@ -19639,7 +19639,7 @@ Another example of such a ‘syntactic idiom’ is the so-called way-constructio
 
 ---
 
-<!-- page 329 -->
+<!-- page 325 -->
 
  
 Bodo Winter and Florent Perek 
@@ -19695,7 +19695,7 @@ ing this chapter, construction projects in various languages are currently in pr
 
 ---
 
-<!-- page 330 -->
+<!-- page 326 -->
 
  
  
@@ -19758,7 +19758,7 @@ aspect as involving different dynamic or static construals of temporal events (L
 
 ---
 
-<!-- page 331 -->
+<!-- page 327 -->
 
  
  
@@ -19828,7 +19828,7 @@ including polysemy, fictive motion, tense and aspect, and more.)
 
 ---
 
-<!-- page 332 -->
+<!-- page 328 -->
 
  
  
@@ -19903,7 +19903,7 @@ Fillmore, C. J. (1982) ‘Frame semantics’, in Linguistics in the Morning Calm
 
 ---
 
-<!-- page 333 -->
+<!-- page 329 -->
 
  
  
@@ -19974,7 +19974,7 @@ cog-2017-0009
 
 ---
 
-<!-- page 334 -->
+<!-- page 330 -->
 
  
  
@@ -20044,7 +20044,7 @@ aspectual framing: How people talk about car accidents’, Studies in Language. 
 
 ---
 
-<!-- page 335 -->
+<!-- page 331 -->
 
  
  
@@ -20111,7 +20111,7 @@ Extended theory and practice’. https://framenet2.icsi.berkeley.edu/docs/r1.7/b
 
 ---
 
-<!-- page 336 -->
+<!-- page 332 -->
 
  
  
@@ -20178,7 +20178,7 @@ Zima, E. and Bergs, A. (2017) ‘Multimodality and construction grammar’, Ling
 
 ---
 
-<!-- page 337 -->
+<!-- page 333 -->
 
    
 24 
@@ -20212,7 +20212,7 @@ DOI: 10.4324/9781003082644-27
 
 ---
 
-<!-- page 338 -->
+<!-- page 334 -->
 
  
  
@@ -20261,7 +20261,7 @@ tems. It is beyond the scope of this chapter to give a detailed account of the r
 
 ---
 
-<!-- page 339 -->
+<!-- page 335 -->
 
  
  
@@ -20328,7 +20328,7 @@ The experiential metafunction includes language functions related to construing 
 
 ---
 
-<!-- page 340 -->
+<!-- page 336 -->
 
  
  
@@ -20397,7 +20397,7 @@ functional labels.
 
 ---
 
-<!-- page 341 -->
+<!-- page 337 -->
 
  
  
@@ -20474,7 +20474,7 @@ both in terms of how language is a means of reflecting on things and how it is a
 
 ---
 
-<!-- page 342 -->
+<!-- page 338 -->
 
  
  
@@ -20550,7 +20550,7 @@ abstraction in the language of schooling.
 
 ---
 
-<!-- page 343 -->
+<!-- page 339 -->
 
  
  
@@ -20608,7 +20608,7 @@ rheme (Martínez Insua 2018), nominal group complexity (Parkinson and Musgrave 2
 
 ---
 
-<!-- page 344 -->
+<!-- page 340 -->
 
  
  
@@ -20664,7 +20664,7 @@ that we face.
 
 ---
 
-<!-- page 345 -->
+<!-- page 341 -->
 
  
  
@@ -20721,7 +20721,7 @@ culture of expectations in medical care. In an excellent overview of language an
 
 ---
 
-<!-- page 346 -->
+<!-- page 342 -->
 
  
  
@@ -20777,7 +20777,7 @@ development projects, and corporations along with local communities need to work
 
 ---
 
-<!-- page 347 -->
+<!-- page 343 -->
 
  
  
@@ -20843,7 +20843,7 @@ guistics in Action in the Context of U.S. School Reform, London and New York: Ro
 
 ---
 
-<!-- page 348 -->
+<!-- page 344 -->
 
  
  
@@ -20921,7 +20921,7 @@ Routledge.
 
 ---
 
-<!-- page 349 -->
+<!-- page 345 -->
 
  
  
@@ -20997,7 +20997,7 @@ First Two and a Half Years, Nottingham: Department of English Studies, Universit
 
 ---
 
-<!-- page 350 -->
+<!-- page 346 -->
 
  
  
@@ -21017,7 +21017,7 @@ systemic functional approach’, Journal of Second Language Writing, 27: 105–1
 
 ---
 
-<!-- page 351 -->
+<!-- page 347 -->
 
  
  
@@ -21067,7 +21067,7 @@ DOI: 10.4324/9781003082644-28
 
 ---
 
-<!-- page 352 -->
+<!-- page 348 -->
 
  
  
@@ -21128,7 +21128,7 @@ come to understand and produce combinations in a potentially infinite number of 
 
 ---
 
-<!-- page 353 -->
+<!-- page 349 -->
 
  
  
@@ -21189,7 +21189,7 @@ Factor 3: Principles not specific to the language faculty
 
 ---
 
-<!-- page 354 -->
+<!-- page 350 -->
 
  
  
@@ -21238,7 +21238,7 @@ are based on the demands at interfaces to ‘sound’ and ‘meaning’. Constru
 
 ---
 
-<!-- page 355 -->
+<!-- page 351 -->
 
  
  
@@ -21306,7 +21306,7 @@ heritage speakers’ knowledge.
 
 ---
 
-<!-- page 356 -->
+<!-- page 352 -->
 
  
  
@@ -21372,7 +21372,7 @@ sitive to differences in degrees of ungrammaticality (Chomsky 1986b), learners�
 
 ---
 
-<!-- page 357 -->
+<!-- page 353 -->
 
  
  
@@ -21433,7 +21433,7 @@ and Roussou 1991), which is formalized under the minimalist program (Chomsky 199
 
 ---
 
-<!-- page 358 -->
+<!-- page 354 -->
 
  
  
@@ -21490,7 +21490,7 @@ analyses comparing the input with their predictions, which ultimately leads to s
 
 ---
 
-<!-- page 359 -->
+<!-- page 355 -->
 
  
  
@@ -21558,7 +21558,7 @@ linguistic knowledge.
 
 ---
 
-<!-- page 360 -->
+<!-- page 356 -->
 
  
  
@@ -21612,7 +21612,7 @@ learner’s L1 or L2 but not both. Naturally, other models and related issues ar
 
 ---
 
-<!-- page 361 -->
+<!-- page 357 -->
 
  
 Shigenori Wakabayashi 
@@ -21660,7 +21660,7 @@ among generative based and other lines in SLA studies.)
 
 ---
 
-<!-- page 362 -->
+<!-- page 358 -->
 
  
 Generative grammar 
@@ -21722,7 +21722,7 @@ acquisition: The ‘failed functional features hypothesis’, Second Language Re
 
 ---
 
-<!-- page 363 -->
+<!-- page 359 -->
 
  
  
@@ -21789,7 +21789,7 @@ Chomsky, Cambridge: Cambridge University Press.
 
 ---
 
-<!-- page 364 -->
+<!-- page 360 -->
 
 Generative grammar 
 Smith, N. and Tsimpli, I. M. (1995) The Mind of a Savant, Oxford: Basil Blackwell. 
@@ -21837,7 +21837,7 @@ ism, 8: 665–706.
 
 ---
 
-<!-- page 365 -->
+<!-- page 361 -->
 
  
  
@@ -21883,7 +21883,7 @@ DOI: 10.4324/9781003082644-29
 
 ---
 
-<!-- page 366 -->
+<!-- page 362 -->
 
  
  
@@ -21939,7 +21939,7 @@ Typically, the research exposes participants to samples of artificial language w
 
 ---
 
-<!-- page 367 -->
+<!-- page 363 -->
 
  
 John Field 
@@ -21993,7 +21993,7 @@ resources of working memory so that we can take full account of higher-level inf
 
 ---
 
-<!-- page 368 -->
+<!-- page 364 -->
 
  
  
@@ -22051,7 +22051,7 @@ variants of the phonemes that we have encountered. We also store traces of diffe
 
 ---
 
-<!-- page 369 -->
+<!-- page 365 -->
 
  
  
@@ -22115,7 +22115,7 @@ a threshold vocabulary of around 3,000 words before such idiomatic patterns real
 
 ---
 
-<!-- page 370 -->
+<!-- page 366 -->
 
    
  
@@ -22173,7 +22173,7 @@ a form of information processing. It treats the generation of piece of speech or
 
 ---
 
-<!-- page 371 -->
+<!-- page 367 -->
 
 John Field 
 series of processes, in which a basic idea is turned by stages into an utterance or a text. The 
@@ -22213,7 +22213,7 @@ Figure 26.1 A simplified information-processing model of the listening and readi
 
 ---
 
-<!-- page 372 -->
+<!-- page 368 -->
 
  
  
@@ -22276,7 +22276,7 @@ The relevance to assessing second language performance will be obvious. Internat
 
 ---
 
-<!-- page 373 -->
+<!-- page 369 -->
 
  
  
@@ -22336,7 +22336,7 @@ given the danger of false recall. There is also the fact that processes at a cog
 
 ---
 
-<!-- page 374 -->
+<!-- page 370 -->
 
  
  
@@ -22386,7 +22386,7 @@ Cohen, A. D. and Macaro, E. (2007) Language Learner Strategies, Oxford: Oxford U
 
 ---
 
-<!-- page 375 -->
+<!-- page 371 -->
 
  
  
@@ -22450,7 +22450,7 @@ R. Beard (eds.), Reading Development and the Teaching of Reading, Oxford: Blackw
 
 ---
 
-<!-- page 376 -->
+<!-- page 372 -->
 
  
  
@@ -22484,7 +22484,7 @@ Wray, A. (2002) Formulaic Language and the Lexicon, Cambridge: Cambridge Univers
 
 ---
 
-<!-- page 377 -->
+<!-- page 373 -->
 
 27 
 Neurolinguistics in language 
@@ -22522,7 +22522,7 @@ DOI: 10.4324/9781003082644-30
 
 ---
 
-<!-- page 378 -->
+<!-- page 374 -->
 
  
 Neurolinguistics in language learning and teaching 
@@ -22578,7 +22578,7 @@ but inability to comprehend oral speech with a lesion in the posterior division 
 
 ---
 
-<!-- page 379 -->
+<!-- page 375 -->
 
 John W. Schwieter and Stefano Rastelli 
 temporal convolution of the left hemisphere that was found in the post mortem examination. 
@@ -22631,7 +22631,7 @@ brain to brain, but the areas that are mapped are extremely circumscribed and we
 
 ---
 
-<!-- page 380 -->
+<!-- page 376 -->
 
  
  
@@ -22689,7 +22689,7 @@ and functional changes to environmental challenges ‘because of the plasticity 
 
 ---
 
-<!-- page 381 -->
+<!-- page 377 -->
 
 John W. Schwieter and Stefano Rastelli 
 underlying brain circuitry elements necessary for these abilities’ (Uylings 2006: 60). Indeed, 
@@ -22742,7 +22742,7 @@ the relational memory of facts and events. It is an associative memory system th
 
 ---
 
-<!-- page 382 -->
+<!-- page 378 -->
 
  
  
@@ -22799,7 +22799,7 @@ in the brain overlap with those used in cognitive linguistics (see Winter and Pe
 
 ---
 
-<!-- page 383 -->
+<!-- page 379 -->
 
  
  
@@ -22858,7 +22858,7 @@ tion of neural pathways that connect different brain areas.
 
 ---
 
-<!-- page 384 -->
+<!-- page 380 -->
 
  
 Neurolinguistics in language learning and teaching 
@@ -22912,7 +22912,7 @@ correlate specific language functions with cortical areas. In clinical psycholog
 
 ---
 
-<!-- page 385 -->
+<!-- page 381 -->
 
  
  
@@ -22988,7 +22988,7 @@ riencing a reduction in population size is growing’ (para. 3). By 2050, it is 
 
 ---
 
-<!-- page 386 -->
+<!-- page 382 -->
 
  
  
@@ -23058,7 +23058,7 @@ tions, and processes of the multilingual brain.)
 
 ---
 
-<!-- page 387 -->
+<!-- page 383 -->
 
  
  
@@ -23124,7 +23124,7 @@ Paradis, M. (2004) A Neurolinguistic Theory of Bilingualism, Amsterdam: Benjamin
 
 ---
 
-<!-- page 388 -->
+<!-- page 384 -->
 
  
  
@@ -23179,7 +23179,7 @@ contributions from the cerebral hemispheres’, Frontiers in Psychology, 4(181):
 
 ---
 
-<!-- page 389 -->
+<!-- page 385 -->
 
  
  
@@ -23241,7 +23241,7 @@ DOI: 10.4324/9781003082644-31
 
 ---
 
-<!-- page 390 -->
+<!-- page 386 -->
 
  
  
@@ -23303,7 +23303,7 @@ learning that whenever a significant relationship is identified between a person
 
 ---
 
-<!-- page 391 -->
+<!-- page 387 -->
 
  
  
@@ -23358,7 +23358,7 @@ often correlated with Big Five traits but also explain unique variance (Pervin a
 
 ---
 
-<!-- page 392 -->
+<!-- page 388 -->
 
  
  
@@ -23418,7 +23418,7 @@ activities. Anxiety is conceptualized as arising from the uncontrollability or u
 
 ---
 
-<!-- page 393 -->
+<!-- page 389 -->
 
  
  
@@ -23476,7 +23476,7 @@ an overwhelming focus on negative issues. Seligman and Csikszentmihalyi (2000) w
 
 ---
 
-<!-- page 394 -->
+<!-- page 390 -->
 
  
  
@@ -23542,7 +23542,7 @@ and a sense of accomplishment (Dewaele and MacIntyre 2016).
 
 ---
 
-<!-- page 395 -->
+<!-- page 391 -->
 
  
  
@@ -23613,7 +23613,7 @@ in the tasks that caused anxiety or a private reminder of the crucial importance
 
 ---
 
-<!-- page 396 -->
+<!-- page 392 -->
 
  
  
@@ -23692,7 +23692,7 @@ the teachers of the EFL used a better didactic approach.
 
 ---
 
-<!-- page 397 -->
+<!-- page 393 -->
 
  
  
@@ -23750,7 +23750,7 @@ static predictors of learner performance and progress in the FL. Causality is mu
 
 ---
 
-<!-- page 398 -->
+<!-- page 394 -->
 
 Psychology of language learning 
 in a highly complex dynamic system at micro-, meso- and macro-level (Dewaele et al. 2023). 
@@ -23804,7 +23804,7 @@ language enjoyment’, Studies in Second Language Learning and Teaching, 12(2): 
 
 ---
 
-<!-- page 399 -->
+<!-- page 395 -->
 
  
  
@@ -23879,7 +23879,7 @@ ies of learners’ foreign language anxiety’, The Modern Language Journal, 98(
 
 ---
 
-<!-- page 400 -->
+<!-- page 396 -->
 
  
  
@@ -23948,7 +23948,7 @@ Frontiers in Psychology, 12: 731721.
 
 ---
 
-<!-- page 401 -->
+<!-- page 397 -->
 
  
  
@@ -24009,7 +24009,7 @@ DOI: 10.4324/9781003082644-32
 
 ---
 
-<!-- page 402 -->
+<!-- page 398 -->
 
  
  
@@ -24075,7 +24075,7 @@ include the evolution of the modern human hand (providing greater manual dexteri
 
 ---
 
-<!-- page 403 -->
+<!-- page 399 -->
 
  
  
@@ -24135,7 +24135,7 @@ use of semiotic systems, such as languages, textual and digital literacies, nume
 
 ---
 
-<!-- page 404 -->
+<!-- page 400 -->
 
  
  
@@ -24191,7 +24191,7 @@ lowing discussion), and through the process of learning a language and using it 
 
 ---
 
-<!-- page 405 -->
+<!-- page 401 -->
 
  
  
@@ -24249,7 +24249,7 @@ general cognitive and social skills of intention-reading and pattern recognition
 
 ---
 
-<!-- page 406 -->
+<!-- page 402 -->
 
  
  
@@ -24322,7 +24322,7 @@ that indicate the level of development that has been already attained, the ZPD i
 
 ---
 
-<!-- page 407 -->
+<!-- page 403 -->
 
  
  
@@ -24383,7 +24383,7 @@ ants of the ZPD, Kinginger (2002) notes that in the skills case, the ZPD concept
 
 ---
 
-<!-- page 408 -->
+<!-- page 404 -->
 
  
  
@@ -24458,7 +24458,7 @@ guages classroom practice.
 
 ---
 
-<!-- page 409 -->
+<!-- page 405 -->
 
  
  
@@ -24515,7 +24515,7 @@ that the group faces. The participants are introduced to a conceptual tool (ofte
 
 ---
 
-<!-- page 410 -->
+<!-- page 406 -->
 
  
  
@@ -24579,7 +24579,7 @@ impact that development.
 
 ---
 
-<!-- page 411 -->
+<!-- page 407 -->
 
  
  
@@ -24642,7 +24642,7 @@ questions’, Language Learning, 65(1): 33–62.
 
 ---
 
-<!-- page 412 -->
+<!-- page 408 -->
 
  
  
@@ -24716,7 +24716,7 @@ Second Language Development, Berlin: Springer Publishing.
 
 ---
 
-<!-- page 413 -->
+<!-- page 409 -->
 
  
  
@@ -24788,7 +24788,7 @@ bridge, MA: Harvard University Press.
 
 ---
 
-<!-- page 414 -->
+<!-- page 410 -->
 
  
  
@@ -24818,7 +24818,7 @@ Psychology and Psychiatry, 17: 89–100.
 
 ---
 
-<!-- page 415 -->
+<!-- page 411 -->
 
  
  
@@ -24860,7 +24860,7 @@ DOI: 10.4324/9781003082644-33
 
 ---
 
-<!-- page 416 -->
+<!-- page 412 -->
 
  
  
@@ -24922,7 +24922,7 @@ maticity of AAVE, categorically rejected demeaning characterizations like ‘laz
 
 ---
 
-<!-- page 417 -->
+<!-- page 413 -->
 
  
  
@@ -24985,7 +24985,7 @@ in sociolinguistics.
 
 ---
 
-<!-- page 418 -->
+<!-- page 414 -->
 
  
  
@@ -25050,7 +25050,7 @@ a schprach is a dialekt mit an armej un flot
 
 ---
 
-<!-- page 419 -->
+<!-- page 415 -->
 
  
  
@@ -25107,7 +25107,7 @@ policies and practices of language policing. Cushing shows how operating in a co
 
 ---
 
-<!-- page 420 -->
+<!-- page 416 -->
 
  
  
@@ -25186,7 +25186,7 @@ et al. 2018).
 
 ---
 
-<!-- page 421 -->
+<!-- page 417 -->
 
  
  
@@ -25243,7 +25243,7 @@ such as in the presence of non-regular participants. These policies contrasted w
 
 ---
 
-<!-- page 422 -->
+<!-- page 418 -->
 
    
  
@@ -25299,7 +25299,7 @@ et al. (2018: 30–31) offer some useful pointers for researchers who need to be
 
 ---
 
-<!-- page 423 -->
+<!-- page 419 -->
 
  
  
@@ -25359,7 +25359,7 @@ involves training teachers on language variation, language ideologies, language 
 
 ---
 
-<!-- page 424 -->
+<!-- page 420 -->
 
  
  
@@ -25415,7 +25415,7 @@ Blommaert, J. (2010) The Sociolinguistics of Globalization, Cambridge: Cambridge
 
 ---
 
-<!-- page 425 -->
+<!-- page 421 -->
 
  
  
@@ -25483,7 +25483,7 @@ of Multilingual and Multicultural Development, 43(2): 140–153.
 
 ---
 
-<!-- page 426 -->
+<!-- page 422 -->
 
  
  
@@ -25557,7 +25557,7 @@ Representation in Participant Observations, Oxford: Oxford University Press, pp.
 
 ---
 
-<!-- page 427 -->
+<!-- page 423 -->
 
  
  
@@ -25584,7 +25584,7 @@ un/דערDer YIVO  ייווא
 
 ---
 
-<!-- page 428 -->
+<!-- page 424 -->
 
 413 
  
@@ -25660,7 +25660,7 @@ cultural reality 177–186
 
 ---
 
-<!-- page 429 -->
+<!-- page 425 -->
 
  
  
@@ -25779,7 +25779,7 @@ local, global and glocal 136, 139–141, 145
 
 ---
 
-<!-- page 430 -->
+<!-- page 426 -->
 
  
  
@@ -25901,7 +25901,7 @@ teacher education 55–63
 
 ---
 
-<!-- page 431 -->
+<!-- page 427 -->
 
  
 Index 

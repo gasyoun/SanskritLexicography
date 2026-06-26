@@ -6,13 +6,13 @@
 
 ---
 
-<!-- page 2 -->
+<!-- page 1 -->
 
 How to Use Corpora in Language Teaching
 
 ---
 
-<!-- page 3 -->
+<!-- page 2 -->
 
 Studies in Corpus Linguistics
 Studies in Corpus Linguistics aims to provide insights into the way a corpus can
@@ -64,7 +64,7 @@ Edited by John McH. Sinclair
 
 ---
 
-<!-- page 4 -->
+<!-- page 3 -->
 
 How to Use Corpora
 in Language Teaching
@@ -75,7 +75,7 @@ Amsterdam/Philadelphia
 
 ---
 
-<!-- page 5 -->
+<!-- page 4 -->
 
 The paper used in this publication meets the minimum requirements
 8
@@ -104,7 +104,7 @@ John Benjamins North America · P.O. Box 27519 · Philadelphia pa 19118-0519 · 
 
 ---
 
-<!-- page 6 -->
+<!-- page 5 -->
 
 Table of contents
 List of contributors
@@ -146,7 +146,7 @@ Nadja Nesselhauf
 
 ---
 
-<!-- page 7 -->
+<!-- page 6 -->
 
 
 Table of contents
@@ -187,7 +187,7 @@ Index
 
 ---
 
-<!-- page 8 -->
+<!-- page 7 -->
 
 List of contributors
 Silvia Bernardini
@@ -258,7 +258,7 @@ via Pandolﬁni 27
 
 ---
 
-<!-- page 10 -->
+<!-- page 8 -->
 
 Introduction
 John Sinclair
@@ -292,7 +292,7 @@ but their descriptions were not detailed enough to provide a ﬁrm foundation.
 
 ---
 
-<!-- page 11 -->
+<!-- page 9 -->
 
 
 John Sinclair
@@ -336,7 +336,7 @@ and a conscious effort was made to attract younger topic leaders rather than
 
 ---
 
-<!-- page 12 -->
+<!-- page 10 -->
 
 Introduction
 
@@ -380,7 +380,7 @@ rooms, the language problems are assessed by an expert team under Amy’s di-
 
 ---
 
-<!-- page 13 -->
+<!-- page 11 -->
 
 
 John Sinclair
@@ -425,7 +425,7 @@ about the stressing, intonation, pausing and general delivery.
 
 ---
 
-<!-- page 14 -->
+<!-- page 12 -->
 
 Introduction
 
@@ -471,7 +471,7 @@ language backgrounds. Nadja covers the whole world in her survey, showing
 
 ---
 
-<!-- page 15 -->
+<!-- page 13 -->
 
 
 John Sinclair
@@ -517,7 +517,7 @@ ably written for the purpose, does not show the same features as are found in
 
 ---
 
-<!-- page 16 -->
+<!-- page 14 -->
 
 Introduction
 
@@ -562,7 +562,7 @@ KWIC concordancer. Many of Michael’s corpus rearrangements can be carried
 
 ---
 
-<!-- page 17 -->
+<!-- page 15 -->
 
 
 John Sinclair
@@ -608,7 +608,7 @@ corpus construction and networking, offer the prospect of new methodologies,
 
 ---
 
-<!-- page 18 -->
+<!-- page 16 -->
 
 Introduction
 
@@ -651,7 +651,7 @@ informed by corpus evidence, gave promise of improving the situation.
 
 ---
 
-<!-- page 19 -->
+<!-- page 17 -->
 
 
 John Sinclair
@@ -684,19 +684,19 @@ Benjamins.
 
 ---
 
-<!-- page 20 -->
+<!-- page 18 -->
 
 The corpus and the teacher
 
 ---
 
-<!-- page 22 -->
+<!-- page 19 -->
 
 In the classroom
 
 ---
 
-<!-- page 24 -->
+<!-- page 20 -->
 
 Corpora in the classroom
 An overview and some reﬂections
@@ -732,7 +732,7 @@ the number of conference papers, software applications and corpora address-
 
 ---
 
-<!-- page 25 -->
+<!-- page 21 -->
 
 
 Silvia Bernardini
@@ -774,7 +774,7 @@ involve the observation and interpretation of patterns of use; (c) the role of
 
 ---
 
-<!-- page 26 -->
+<!-- page 22 -->
 
 Corpora in the classroom
 
@@ -817,7 +817,7 @@ pairings. In other words, they allow learners to observe what is typically said 
 
 ---
 
-<!-- page 27 -->
+<!-- page 23 -->
 
 
 Silvia Bernardini
@@ -863,7 +863,7 @@ is received from such experimentation” (Skehan 1996b:22). Below (3.) I shall
 
 ---
 
-<!-- page 28 -->
+<!-- page 24 -->
 
 Corpora in the classroom
 
@@ -907,7 +907,7 @@ ities” (ibid.:211). In this view, the emphasis is not so much on mistakes, and
 
 ---
 
-<!-- page 29 -->
+<!-- page 25 -->
 
 
 Silvia Bernardini
@@ -953,7 +953,7 @@ an attempt to increase the consciousness-raising function of translation cor-
 
 ---
 
-<!-- page 30 -->
+<!-- page 26 -->
 
 Corpora in the classroom
 
@@ -996,7 +996,7 @@ A similar point is made by Mparutsa et al. (1991:130) who found that
 
 ---
 
-<!-- page 31 -->
+<!-- page 27 -->
 
 
 Silvia Bernardini
@@ -1040,7 +1040,7 @@ the learning as research approach favoured by Johns (1991) and Gavioli (2000)
 
 ---
 
-<!-- page 32 -->
+<!-- page 28 -->
 
 Corpora in the classroom
 
@@ -1085,7 +1085,7 @@ edition, 06/11/01).
 
 ---
 
-<!-- page 33 -->
+<!-- page 29 -->
 
 
 Silvia Bernardini
@@ -1139,7 +1139,7 @@ which to conduct further queries.
 
 ---
 
-<!-- page 34 -->
+<!-- page 30 -->
 
 Corpora in the classroom
 
@@ -1189,7 +1189,7 @@ Figure 2. 20 randomly selected occurrences of hailed as in the BNC (sorted to th
 
 ---
 
-<!-- page 35 -->
+<!-- page 31 -->
 
 
 Silvia Bernardini
@@ -1267,7 +1267,7 @@ Conservative party members and consequently, that the colour red may refer
 
 ---
 
-<!-- page 36 -->
+<!-- page 32 -->
 
 Corpora in the classroom
 
@@ -1313,7 +1313,7 @@ Council of Europe suggesting that “language pedagogy [...] should [...]
 
 ---
 
-<!-- page 37 -->
+<!-- page 33 -->
 
 
 Silvia Bernardini
@@ -1362,7 +1362,7 @@ corpus-aided discovery learning.
 
 ---
 
-<!-- page 38 -->
+<!-- page 34 -->
 
 Corpora in the classroom
 
@@ -1410,7 +1410,7 @@ of a given discourse setting. The language and learning awareness that discov-
 
 ---
 
-<!-- page 39 -->
+<!-- page 35 -->
 
 
 Silvia Bernardini
@@ -1457,7 +1457,7 @@ Hong Kong-based Virtual Language Centre Web Concordancer for Chinese,
 
 ---
 
-<!-- page 40 -->
+<!-- page 36 -->
 
 Corpora in the classroom
 
@@ -1501,7 +1501,7 @@ haps less obviously), corpora and corpus analysis tools would seem to provide
 
 ---
 
-<!-- page 41 -->
+<!-- page 37 -->
 
 
 Silvia Bernardini
@@ -1547,7 +1547,7 @@ and indeed corpus-teacher interaction are not replacements for learner-learner
 
 ---
 
-<!-- page 42 -->
+<!-- page 38 -->
 
 Corpora in the classroom
 
@@ -1591,7 +1591,7 @@ of Spoken and Written English. London: Longman.
 
 ---
 
-<!-- page 43 -->
+<!-- page 39 -->
 
 
 Silvia Bernardini
@@ -1643,7 +1643,7 @@ S. Fligelstone, A. M. McEnery, & G. Knowles (Eds.), Teaching and Language Corpor
 
 ---
 
-<!-- page 44 -->
+<!-- page 40 -->
 
 Corpora in the classroom
 
@@ -1695,7 +1695,7 @@ Jerome.
 
 ---
 
-<!-- page 45 -->
+<!-- page 41 -->
 
 
 Silvia Bernardini
@@ -1747,13 +1747,13 @@ http://www.ruf.rice.edu/∼barlow/corpus.html
 
 ---
 
-<!-- page 46 -->
+<!-- page 42 -->
 
 In preparation
 
 ---
 
-<!-- page 48 -->
+<!-- page 43 -->
 
 What teachers have always wanted to know –
 and how corpora can help
@@ -1788,7 +1788,7 @@ computer has made it possible for us to test the robustness of linguistic de-
 
 ---
 
-<!-- page 49 -->
+<!-- page 44 -->
 
 
 Amy B M Tsui
@@ -1831,7 +1831,7 @@ to school by bus every day.” (5.5%), but rather the actual present, such as �
 
 ---
 
-<!-- page 50 -->
+<!-- page 45 -->
 
 What teachers have always wanted to know
 
@@ -1874,7 +1874,7 @@ education, particularly in the area of teachers’ language awareness (see also
 
 ---
 
-<!-- page 51 -->
+<!-- page 46 -->
 
 
 Amy B M Tsui
@@ -1917,7 +1917,7 @@ cuss the ways in which corpus data, including corpora which were compiled
 
 ---
 
-<!-- page 52 -->
+<!-- page 47 -->
 
 What teachers have always wanted to know
 
@@ -1960,7 +1960,7 @@ students to explain whether there is any difference in meaning, for example,
 
 ---
 
-<!-- page 53 -->
+<!-- page 48 -->
 
 
 Amy B M Tsui
@@ -2001,7 +2001,7 @@ He is 1m 65 cm high.
 
 ---
 
-<!-- page 54 -->
+<!-- page 49 -->
 
 What teachers have always wanted to know
 
@@ -2048,7 +2048,7 @@ f failure. My career started on a high note, then plummeted to icy d
 
 ---
 
-<!-- page 55 -->
+<!-- page 50 -->
 
 
 Amy B M Tsui
@@ -2109,7 +2109,7 @@ ground
 
 ---
 
-<!-- page 56 -->
+<!-- page 51 -->
 
 What teachers have always wanted to know
 
@@ -2153,7 +2153,7 @@ phisticated”. In different contexts, the Chinese translation of “a high degr
 
 ---
 
-<!-- page 57 -->
+<!-- page 52 -->
 
 
 Amy B M Tsui
@@ -2195,7 +2195,7 @@ ur people, in the poor women who day after day discover suffering
 
 ---
 
-<!-- page 58 -->
+<!-- page 53 -->
 
 What teachers have always wanted to know
 
@@ -2236,7 +2236,7 @@ Smooth and manageable hair, day after day.
 
 ---
 
-<!-- page 59 -->
+<!-- page 54 -->
 
 
 Amy B M Tsui
@@ -2277,7 +2277,7 @@ rule of subject-verb agreement to the example provided by Teacher 4. Teacher
 
 ---
 
-<!-- page 60 -->
+<!-- page 55 -->
 
 What teachers have always wanted to know
 
@@ -2319,7 +2319,7 @@ the context of “one of the + plural noun”.
 
 ---
 
-<!-- page 61 -->
+<!-- page 56 -->
 
 
 Amy B M Tsui
@@ -2364,7 +2364,7 @@ For example,
 
 ---
 
-<!-- page 62 -->
+<!-- page 57 -->
 
 What teachers have always wanted to know
 
@@ -2408,7 +2408,7 @@ So, should I say:
 
 ---
 
-<!-- page 63 -->
+<!-- page 58 -->
 
 
 Amy B M Tsui
@@ -2449,7 +2449,7 @@ educated, well-brought-up etc. So why shouldn’t we say well-experienced?
 
 ---
 
-<!-- page 64 -->
+<!-- page 59 -->
 
 What teachers have always wanted to know
 
@@ -2492,7 +2492,7 @@ fact that “well experienced” is found in the BNC, its occurrence is far fewe
 
 ---
 
-<!-- page 65 -->
+<!-- page 60 -->
 
 
 Amy B M Tsui
@@ -2575,7 +2575,7 @@ language as well as critically examine grammar rules and patterns that they
 
 ---
 
-<!-- page 66 -->
+<!-- page 61 -->
 
 What teachers have always wanted to know
 
@@ -2616,7 +2616,7 @@ not been well.
 
 ---
 
-<!-- page 67 -->
+<!-- page 62 -->
 
 
 Amy B M Tsui
@@ -2664,7 +2664,7 @@ f Irish catholicism is not meant to imply a negation of its positive aspects:
 
 ---
 
-<!-- page 68 -->
+<!-- page 63 -->
 
 What teachers have always wanted to know
 
@@ -2704,7 +2704,7 @@ much as linguistic researchers.
 
 ---
 
-<!-- page 69 -->
+<!-- page 64 -->
 
 
 Amy B M Tsui
@@ -2749,7 +2749,7 @@ Longman.
 
 ---
 
-<!-- page 70 -->
+<!-- page 65 -->
 
 What teachers have always wanted to know
 
@@ -2781,19 +2781,19 @@ computer conferencing. Journal of Information Technology for Teacher Education, 
 
 ---
 
-<!-- page 72 -->
+<!-- page 66 -->
 
 Resources – Corpora
 
 ---
 
-<!-- page 74 -->
+<!-- page 67 -->
 
 Corpus variety
 
 ---
 
-<!-- page 76 -->
+<!-- page 68 -->
 
 Corpus linguistics, language variation,
 and language teaching
@@ -2828,7 +2828,7 @@ doesn’t help students ﬁnish their homework or pass exams. (Ward 2000:167)
 
 ---
 
-<!-- page 77 -->
+<!-- page 69 -->
 
 
 Susan Conrad
@@ -2873,7 +2873,7 @@ Currently, by minimizing the importance of variation, we are misrepresenting
 
 ---
 
-<!-- page 78 -->
+<!-- page 70 -->
 
 Corpus linguistics, language variation, and language teaching
 
@@ -2919,7 +2919,7 @@ others. The verb provide is typical with the pattern “V n with n” (“provid
 
 ---
 
-<!-- page 79 -->
+<!-- page 71 -->
 
 
 Susan Conrad
@@ -2962,7 +2962,7 @@ a subordinate clause, as in this example (subordinate clause in [ ]):
 
 ---
 
-<!-- page 80 -->
+<!-- page 72 -->
 
 Corpus linguistics, language variation, and language teaching
 
@@ -3007,7 +3007,7 @@ further insight into its usefulness. Consider these examples:
 
 ---
 
-<!-- page 81 -->
+<!-- page 73 -->
 
 
 Susan Conrad
@@ -3051,7 +3051,7 @@ the Longman Grammar of Spoken and Written English, p. 887)
 
 ---
 
-<!-- page 82 -->
+<!-- page 74 -->
 
 Corpus linguistics, language variation, and language teaching
 
@@ -3107,7 +3107,7 @@ Steer & Carlisi 1998
 
 ---
 
-<!-- page 83 -->
+<!-- page 75 -->
 
 
 Susan Conrad
@@ -3166,7 +3166,7 @@ Total
 
 ---
 
-<!-- page 84 -->
+<!-- page 76 -->
 
 Corpus linguistics, language variation, and language teaching
 
@@ -3213,7 +3213,7 @@ military invasion.
 
 ---
 
-<!-- page 85 -->
+<!-- page 77 -->
 
 
 Susan Conrad
@@ -3296,7 +3296,7 @@ tive adjective combinations such as good e-commerce and noun phrases that
 
 ---
 
-<!-- page 86 -->
+<!-- page 78 -->
 
 Corpus linguistics, language variation, and language teaching
 
@@ -3342,7 +3342,7 @@ terval measure provides a means of seeing how typical or atypical the new text
 
 ---
 
-<!-- page 87 -->
+<!-- page 79 -->
 
 
 Susan Conrad
@@ -3416,7 +3416,7 @@ in the class sessions.
 
 ---
 
-<!-- page 88 -->
+<!-- page 80 -->
 
 Corpus linguistics, language variation, and language teaching
 
@@ -3462,7 +3462,7 @@ corpus found that class sessions were a rather unusual register: they have an
 
 ---
 
-<!-- page 89 -->
+<!-- page 81 -->
 
 
 Susan Conrad
@@ -3501,7 +3501,7 @@ should be asking when they wonder about the use of a language structure.
 
 ---
 
-<!-- page 90 -->
+<!-- page 82 -->
 
 Corpus linguistics, language variation, and language teaching
 
@@ -3545,7 +3545,7 @@ century? TESOL Quarterly, 34, 548–560.
 
 ---
 
-<!-- page 91 -->
+<!-- page 83 -->
 
 
 Susan Conrad
@@ -3595,7 +3595,7 @@ contractions
 
 ---
 
-<!-- page 92 -->
+<!-- page 84 -->
 
 Corpus linguistics, language variation, and language teaching
 
@@ -3666,7 +3666,7 @@ public verbs
 
 ---
 
-<!-- page 93 -->
+<!-- page 85 -->
 
 
 Susan Conrad
@@ -3718,7 +3718,7 @@ split auxiliaries
 
 ---
 
-<!-- page 94 -->
+<!-- page 86 -->
 
 Corpus linguistics, language variation, and language teaching
 
@@ -3744,13 +3744,13 @@ Non-impersonal Style
 
 ---
 
-<!-- page 96 -->
+<!-- page 87 -->
 
 Spoken – general
 
 ---
 
-<!-- page 98 -->
+<!-- page 88 -->
 
 Spoken corpus for an ordinary learner
 Anna Mauranen
@@ -3786,7 +3786,7 @@ typical, or common in the language. So for instance if the most frequent use of
 
 ---
 
-<!-- page 99 -->
+<!-- page 89 -->
 
 
 Anna Mauranen
@@ -3834,7 +3834,7 @@ glish for Academic Purposes) world is beginning to show more interest in
 
 ---
 
-<!-- page 100 -->
+<!-- page 90 -->
 
 Spoken corpus for an ordinary learner
 
@@ -3878,7 +3878,7 @@ interaction is co-constructed by participants as it unfolds, and is interactivel
 
 ---
 
-<!-- page 101 -->
+<!-- page 91 -->
 
 
 Anna Mauranen
@@ -3924,7 +3924,7 @@ relatively low (for example because communicative content normally receives
 
 ---
 
-<!-- page 102 -->
+<!-- page 92 -->
 
 Spoken corpus for an ordinary learner
 
@@ -3969,7 +3969,7 @@ cally changeable. Educators can promote learners’ acceptance of corpora in
 
 ---
 
-<!-- page 103 -->
+<!-- page 93 -->
 
 
 Anna Mauranen
@@ -4011,7 +4011,7 @@ summarised here (Jääskeläinen & Mauranen 2001):
 
 ---
 
-<!-- page 104 -->
+<!-- page 94 -->
 
 Spoken corpus for an ordinary learner
 
@@ -4055,7 +4055,7 @@ position of prefabricated elements (or gambits, formulae, lexical phrases –
 
 ---
 
-<!-- page 105 -->
+<!-- page 95 -->
 
 
 Anna Mauranen
@@ -4100,7 +4100,7 @@ particular emphasis:
 
 ---
 
-<!-- page 106 -->
+<!-- page 96 -->
 
 Spoken corpus for an ordinary learner
 
@@ -4146,7 +4146,7 @@ a learner’s automatised chunks are reorganised internally, which presumably
 
 ---
 
-<!-- page 107 -->
+<!-- page 97 -->
 
 
 Anna Mauranen
@@ -4191,7 +4191,7 @@ knowledge into capacity is as difﬁcult as in language learning generally.
 
 ---
 
-<!-- page 108 -->
+<!-- page 98 -->
 
 Spoken corpus for an ordinary learner
 
@@ -4234,7 +4234,7 @@ refreshed.
 
 ---
 
-<!-- page 109 -->
+<!-- page 99 -->
 
 
 Anna Mauranen
@@ -4280,7 +4280,7 @@ of corpora, they may and will draw their own conclusions from the data, which
 
 ---
 
-<!-- page 110 -->
+<!-- page 100 -->
 
 Spoken corpus for an ordinary learner
 
@@ -4325,7 +4325,7 @@ discretion of native speakers.
 
 ---
 
-<!-- page 111 -->
+<!-- page 101 -->
 
 
 Anna Mauranen
@@ -4369,7 +4369,7 @@ terning in language, independently of traditional linguistic categorisation. Thi
 
 ---
 
-<!-- page 112 -->
+<!-- page 102 -->
 
 Spoken corpus for an ordinary learner
 
@@ -4415,7 +4415,7 @@ BNC Sampler (or the International version of the British National Corpus),
 
 ---
 
-<!-- page 113 -->
+<!-- page 103 -->
 
 
 Anna Mauranen
@@ -4462,7 +4462,7 @@ T. Johns & P. King (Eds.), Classroom Concordancing [ELR Journal 4] (pp. 1–16).
 
 ---
 
-<!-- page 114 -->
+<!-- page 104 -->
 
 Spoken corpus for an ordinary learner
 
@@ -4511,13 +4511,13 @@ CLUEB.
 
 ---
 
-<!-- page 116 -->
+<!-- page 105 -->
 
 Spoken – an example
 
 ---
 
-<!-- page 118 -->
+<!-- page 106 -->
 
 The use of concordancing in the teaching
 of Portuguese
@@ -4553,7 +4553,7 @@ lexicon construction and lexicographic work.
 
 ---
 
-<!-- page 119 -->
+<!-- page 107 -->
 
 
 Luísa Alice Santos Pereira
@@ -4598,7 +4598,7 @@ instance. The recordings were transcribed using normal orthographic conven-
 
 ---
 
-<!-- page 120 -->
+<!-- page 108 -->
 
 The use of concordancing in the teaching of Portuguese
 
@@ -4657,7 +4657,7 @@ macabras (A)
 
 ---
 
-<!-- page 121 -->
+<!-- page 109 -->
 
 
 Luísa Alice Santos Pereira
@@ -4762,7 +4762,7 @@ F
 
 ---
 
-<!-- page 122 -->
+<!-- page 110 -->
 
 The use of concordancing in the teaching of Portuguese
 
@@ -4812,7 +4812,7 @@ law.
 
 ---
 
-<!-- page 123 -->
+<!-- page 111 -->
 
 
 Luísa Alice Santos Pereira
@@ -4952,7 +4952,7 @@ demais circunstãncias do caso concreto, deduz-se, com suﬁciente clareza, que 
 
 ---
 
-<!-- page 124 -->
+<!-- page 112 -->
 
 The use of concordancing in the teaching of Portuguese
 
@@ -5026,7 +5026,7 @@ inﬂected forms of the verb. If we observe the lemmas arreigar-se, graduar and
 
 ---
 
-<!-- page 125 -->
+<!-- page 113 -->
 
 
 Luísa Alice Santos Pereira
@@ -5135,7 +5135,7 @@ revealed very distinct lexical patterns.
 
 ---
 
-<!-- page 126 -->
+<!-- page 114 -->
 
 The use of concordancing in the teaching of Portuguese
 
@@ -5356,7 +5356,7 @@ collocates with the more emphatic verdadeiramente.
 
 ---
 
-<!-- page 127 -->
+<!-- page 115 -->
 
 
 Luísa Alice Santos Pereira
@@ -5419,7 +5419,7 @@ and terms in specialized discourse.
 
 ---
 
-<!-- page 128 -->
+<!-- page 116 -->
 
 The use of concordancing in the teaching of Portuguese
 
@@ -5453,7 +5453,7 @@ Sinclair, J. McH. (1991). Corpus, Concordance, Collocation. Oxford: Oxford Unive
 
 ---
 
-<!-- page 129 -->
+<!-- page 117 -->
 
 
 Luísa Alice Santos Pereira
@@ -5526,7 +5526,7 @@ MACAO
 
 ---
 
-<!-- page 130 -->
+<!-- page 118 -->
 
 The use of concordancing in the teaching of Portuguese
 
@@ -5593,7 +5593,7 @@ acusação por homicídio negligente cont
 
 ---
 
-<!-- page 131 -->
+<!-- page 119 -->
 
 
 Luísa Alice Santos Pereira
@@ -5668,13 +5668,13 @@ Note: Proper nouns were replaced by XXX.
 
 ---
 
-<!-- page 132 -->
+<!-- page 120 -->
 
 Learner corpora
 
 ---
 
-<!-- page 134 -->
+<!-- page 121 -->
 
 Learner corpora and their potential
 for language teaching
@@ -5709,7 +5709,7 @@ it is not only essential to know what native speakers typically say, but also wh
 
 ---
 
-<!-- page 135 -->
+<!-- page 122 -->
 
 
 Nadja Nesselhauf
@@ -5752,7 +5752,7 @@ Figure 1. Connections between corpora and language teaching
 
 ---
 
-<!-- page 136 -->
+<!-- page 123 -->
 
 Learner corpora and their potential for language teaching
 
@@ -5794,7 +5794,7 @@ son for this is that in a foreign language environment it is extremely difﬁcul
 
 ---
 
-<!-- page 137 -->
+<!-- page 124 -->
 
 
 Nadja Nesselhauf
@@ -5839,7 +5839,7 @@ a repository for errors and not exploited as corpora, so that the text collec-
 
 ---
 
-<!-- page 138 -->
+<!-- page 125 -->
 
 Learner corpora and their potential for language teaching
 
@@ -5885,7 +5885,7 @@ other than English are also rare and so far usually quite small, one of the
 
 ---
 
-<!-- page 139 -->
+<!-- page 126 -->
 
 
 Nadja Nesselhauf
@@ -5929,7 +5929,7 @@ be attributed. Another advantage is that with learner corpora, real production
 
 ---
 
-<!-- page 140 -->
+<!-- page 127 -->
 
 Learner corpora and their potential for language teaching
 
@@ -5975,7 +5975,7 @@ characteristics, such as language aptitude or motivation, is also difﬁcult wit
 
 ---
 
-<!-- page 141 -->
+<!-- page 128 -->
 
 
 Nadja Nesselhauf
@@ -6019,7 +6019,7 @@ corpus (with proper attention to quality, design criteria and so on) always take
 
 ---
 
-<!-- page 142 -->
+<!-- page 129 -->
 
 Learner corpora and their potential for language teaching
 
@@ -6065,7 +6065,7 @@ which are among the few corpora that have been or soon will be made available.
 
 ---
 
-<!-- page 143 -->
+<!-- page 130 -->
 
 
 Nadja Nesselhauf
@@ -6110,7 +6110,7 @@ reports an underuse of hedging devices, such as certain verbs (e.g. seem, sug-
 
 ---
 
-<!-- page 144 -->
+<!-- page 131 -->
 
 Learner corpora and their potential for language teaching
 
@@ -6156,7 +6156,7 @@ at certain individual words, at continuous word sequences, or at other fea-
 
 ---
 
-<!-- page 145 -->
+<!-- page 132 -->
 
 
 Nadja Nesselhauf
@@ -6201,7 +6201,7 @@ more studies comparing different levels of learners, different media and text
 
 ---
 
-<!-- page 146 -->
+<!-- page 133 -->
 
 Learner corpora and their potential for language teaching
 
@@ -6245,7 +6245,7 @@ have, however, started to appear. One of the pioneering projects in this ﬁeld
 
 ---
 
-<!-- page 147 -->
+<!-- page 134 -->
 
 
 Nadja Nesselhauf
@@ -6287,7 +6287,7 @@ results from learner corpus studies in pedagogic material. But if what is start-
 
 ---
 
-<!-- page 148 -->
+<!-- page 135 -->
 
 Learner corpora and their potential for language teaching
 
@@ -6331,7 +6331,7 @@ evidence is useful at least to a certain degree and under certain circumstances
 
 ---
 
-<!-- page 149 -->
+<!-- page 136 -->
 
 
 Nadja Nesselhauf
@@ -6377,7 +6377,7 @@ time-consuming (though less so if the students hand in their assignments in
 
 ---
 
-<!-- page 150 -->
+<!-- page 137 -->
 
 Learner corpora and their potential for language teaching
 
@@ -6439,7 +6439,7 @@ Figure 3. Suggest(s/ed/ing) in the German subcorpus of ICLE
 
 ---
 
-<!-- page 151 -->
+<!-- page 138 -->
 
 
 Nadja Nesselhauf
@@ -6491,7 +6491,7 @@ learning. Take the combination *an example for (as in *The Waste Land is an
 
 ---
 
-<!-- page 152 -->
+<!-- page 139 -->
 
 Learner corpora and their potential for language teaching
 
@@ -6532,7 +6532,7 @@ her two colleagues); and, as suggest + ing only occurs in the learner but not in
 
 ---
 
-<!-- page 153 -->
+<!-- page 140 -->
 
 
 Nadja Nesselhauf
@@ -6576,7 +6576,7 @@ search, and other corpora, especially native speaker corpora, also have an im-
 
 ---
 
-<!-- page 154 -->
+<!-- page 141 -->
 
 Learner corpora and their potential for language teaching
 
@@ -6618,7 +6618,7 @@ even syllabuses.
 
 ---
 
-<!-- page 155 -->
+<!-- page 142 -->
 
 
 Nadja Nesselhauf
@@ -6668,7 +6668,7 @@ well as the Centre for English Corpus Linguistics at the Université Catholique 
 
 ---
 
-<!-- page 156 -->
+<!-- page 143 -->
 
 Learner corpora and their potential for language teaching
 
@@ -6714,7 +6714,7 @@ Stockholm, 4–8 August 1991 (pp. 35–60). Berlin: de Gruyter.
 
 ---
 
-<!-- page 157 -->
+<!-- page 144 -->
 
 
 Nadja Nesselhauf
@@ -6764,7 +6764,7 @@ Kaszubski, P. (1998). Enhancing a writing textbook: A national perspective. In S
 
 ---
 
-<!-- page 158 -->
+<!-- page 145 -->
 
 Learner corpora and their potential for language teaching
 
@@ -6814,7 +6814,7 @@ Cambridge: Cambridge University Press.
 
 ---
 
-<!-- page 159 -->
+<!-- page 146 -->
 
 
 Nadja Nesselhauf
@@ -6860,7 +6860,7 @@ pus: ∼25 million words, L1 Chinese, undergraduate students, different aca-
 
 ---
 
-<!-- page 160 -->
+<!-- page 147 -->
 
 Learner corpora and their potential for language teaching
 
@@ -6903,7 +6903,7 @@ different levels, different text types
 
 ---
 
-<!-- page 161 -->
+<!-- page 148 -->
 
 
 Nadja Nesselhauf
@@ -6931,19 +6931,19 @@ different proﬁciency levels, interviews
 
 ---
 
-<!-- page 162 -->
+<!-- page 149 -->
 
 Research
 
 ---
 
-<!-- page 164 -->
+<!-- page 150 -->
 
 Composition
 
 ---
 
-<!-- page 166 -->
+<!-- page 151 -->
 
 The use of adverbial connectors
 in Hungarian university students’
@@ -6979,7 +6979,7 @@ L1 and English texts and contrasted Swedish learners’ English texts with those
 
 ---
 
-<!-- page 167 -->
+<!-- page 152 -->
 
 
 Gyula Tankó
@@ -7025,7 +7025,7 @@ dents’ argumentative texts. The sixth section is the conclusion, and the seven
 
 ---
 
-<!-- page 168 -->
+<!-- page 153 -->
 
 The use of adverbial connectors
 
@@ -7066,7 +7066,7 @@ these devices.
 
 ---
 
-<!-- page 169 -->
+<!-- page 154 -->
 
 
 Gyula Tankó
@@ -7111,7 +7111,7 @@ subcategory under the contrastive conjuncts in Quirk et al.’s classiﬁcation 
 
 ---
 
-<!-- page 170 -->
+<!-- page 155 -->
 
 The use of adverbial connectors
 
@@ -7155,7 +7155,7 @@ other difﬁculties.
 
 ---
 
-<!-- page 171 -->
+<!-- page 156 -->
 
 
 Gyula Tankó
@@ -7201,7 +7201,7 @@ through limiting the number of connectors used by students to a few under-
 
 ---
 
-<!-- page 172 -->
+<!-- page 157 -->
 
 The use of adverbial connectors
 
@@ -7244,7 +7244,7 @@ What type of adverbial connectors do the texts contain?
 
 ---
 
-<!-- page 173 -->
+<!-- page 158 -->
 
 
 Gyula Tankó
@@ -7292,7 +7292,7 @@ dardised marking criteria and the ﬁnal scores were calculated on the basis of
 
 ---
 
-<!-- page 174 -->
+<!-- page 159 -->
 
 The use of adverbial connectors
 
@@ -7350,7 +7350,7 @@ native speaker usage of connectors as a reasonable target and interprets the
 
 ---
 
-<!-- page 175 -->
+<!-- page 160 -->
 
 
 Gyula Tankó
@@ -7397,7 +7397,7 @@ holding a diploma in humanities. (Hun E67)
 
 ---
 
-<!-- page 176 -->
+<!-- page 161 -->
 
 The use of adverbial connectors
 
@@ -7443,7 +7443,7 @@ Types
 
 ---
 
-<!-- page 177 -->
+<!-- page 162 -->
 
 
 Gyula Tankó
@@ -7522,7 +7522,7 @@ also have a marked preference for those connectors that denote superstructural
 
 ---
 
-<!-- page 178 -->
+<!-- page 163 -->
 
 The use of adverbial connectors
 
@@ -7634,7 +7634,7 @@ structured and artiﬁcial.
 
 ---
 
-<!-- page 179 -->
+<!-- page 164 -->
 
 
 Gyula Tankó
@@ -7896,7 +7896,7 @@ Total
 
 ---
 
-<!-- page 180 -->
+<!-- page 165 -->
 
 The use of adverbial connectors
 
@@ -7958,7 +7958,7 @@ to emphasise the cause-effect relations with the overt use of signiﬁcantly mor
 
 ---
 
-<!-- page 181 -->
+<!-- page 166 -->
 
 
 Gyula Tankó
@@ -8055,7 +8055,7 @@ ian writers can be divided in two broad categories on the basis of the linguisti
 
 ---
 
-<!-- page 182 -->
+<!-- page 167 -->
 
 The use of adverbial connectors
 
@@ -8099,7 +8099,7 @@ than two sentences. In the following excerpt the resultive adverbial connector
 
 ---
 
-<!-- page 183 -->
+<!-- page 168 -->
 
 
 Gyula Tankó
@@ -8147,7 +8147,7 @@ ual writers in the practice of using adverbial connectors to mark relationships
 
 ---
 
-<!-- page 184 -->
+<!-- page 169 -->
 
 The use of adverbial connectors
 
@@ -8190,7 +8190,7 @@ ingly well with the Native Corpus, as shown in Table 11.
 
 ---
 
-<!-- page 185 -->
+<!-- page 170 -->
 
 
 Gyula Tankó
@@ -8307,7 +8307,7 @@ encounter frequently (e.g. by reading) and that have a regular pattern.
 
 ---
 
-<!-- page 186 -->
+<!-- page 171 -->
 
 The use of adverbial connectors
 
@@ -8350,7 +8350,7 @@ frequently even in short texts. There is a low frequency of phrasal equivalents
 
 ---
 
-<!-- page 187 -->
+<!-- page 172 -->
 
 
 Gyula Tankó
@@ -8394,7 +8394,7 @@ teacher and student controlled. However, the ratio of the control is paramount
 
 ---
 
-<!-- page 188 -->
+<!-- page 173 -->
 
 The use of adverbial connectors
 
@@ -8440,7 +8440,7 @@ indicator of text quality. A text that contains an acceptable number of stylisti
 
 ---
 
-<!-- page 189 -->
+<!-- page 174 -->
 
 
 Gyula Tankó
@@ -8481,7 +8481,7 @@ articles (i.e. review of the literature, methods, limitations).
 
 ---
 
-<!-- page 190 -->
+<!-- page 175 -->
 
 The use of adverbial connectors
 
@@ -8521,13 +8521,13 @@ Zamel, V. (1983). Teaching those missing links in writing. ELT Journal, 37, 22�
 
 ---
 
-<!-- page 192 -->
+<!-- page 176 -->
 
 Textbooks
 
 ---
 
-<!-- page 194 -->
+<!-- page 177 -->
 
 A corpus-driven approach to modal
 auxiliaries and their didactics
@@ -8561,7 +8561,7 @@ the grammar of ‘school’ English differ from authentic spoken English?”
 
 ---
 
-<!-- page 195 -->
+<!-- page 178 -->
 
 
 Ute Römer
@@ -8605,7 +8605,7 @@ to) including negative forms in the spoken part of the BNC. As can be seen in
 
 ---
 
-<!-- page 196 -->
+<!-- page 179 -->
 
 A corpus-driven approach to modal auxiliaries and their didactics
 
@@ -8655,7 +8655,7 @@ the corpus material with the following frequency distribution: 36% ability,
 
 ---
 
-<!-- page 197 -->
+<!-- page 180 -->
 
 
 Ute Römer
@@ -8699,7 +8699,7 @@ might, will, would, shall, should, ought to and must can be found in Table 1 bel
 
 ---
 
-<!-- page 198 -->
+<!-- page 181 -->
 
 A corpus-driven approach to modal auxiliaries and their didactics
 
@@ -8787,7 +8787,7 @@ We shall see him says John, and we shall be like him. (BNC, J8Y, 336)
 
 ---
 
-<!-- page 199 -->
+<!-- page 182 -->
 
 
 Ute Römer
@@ -8831,7 +8831,7 @@ Grundgrammatik were included in the analysis.
 
 ---
 
-<!-- page 200 -->
+<!-- page 183 -->
 
 A corpus-driven approach to modal auxiliaries and their didactics
 
@@ -8880,7 +8880,7 @@ most frequently used to express an ability (52.5% of the cases). The meanings
 
 ---
 
-<!-- page 201 -->
+<!-- page 184 -->
 
 
 Ute Römer
@@ -8951,7 +8951,7 @@ must
 
 ---
 
-<!-- page 202 -->
+<!-- page 185 -->
 
 A corpus-driven approach to modal auxiliaries and their didactics
 
@@ -8994,7 +8994,7 @@ than in spoken English (13%), although the modal is mainly used to convey
 
 ---
 
-<!-- page 203 -->
+<!-- page 186 -->
 
 
 Ute Römer
@@ -9058,7 +9058,7 @@ English. It is striking, however, that some modals (might, shall, ought to) are 
 
 ---
 
-<!-- page 204 -->
+<!-- page 187 -->
 
 A corpus-driven approach to modal auxiliaries and their didactics
 
@@ -9100,7 +9100,7 @@ the learning process than the less frequent ones. Secondly, I consider it impor-
 
 ---
 
-<!-- page 205 -->
+<!-- page 188 -->
 
 
 Ute Römer
@@ -9146,7 +9146,7 @@ to full verbs such as the so-called “NICE properties” ought to be stressed t
 
 ---
 
-<!-- page 206 -->
+<!-- page 189 -->
 
 A corpus-driven approach to modal auxiliaries and their didactics
 
@@ -9186,7 +9186,7 @@ ten and spoken British English. The spoken subcorpus makes up 10% of the whole c
 
 ---
 
-<!-- page 207 -->
+<!-- page 190 -->
 
 
 Ute Römer
@@ -9232,7 +9232,7 @@ S. Fligelstone, A. M. McEnery, & G. Knowles (Eds.), Teaching and Language Corpor
 
 ---
 
-<!-- page 208 -->
+<!-- page 191 -->
 
 A corpus-driven approach to modal auxiliaries and their didactics
 
@@ -9258,19 +9258,19 @@ Harper Collins.
 
 ---
 
-<!-- page 210 -->
+<!-- page 192 -->
 
 Resources – Computing
 
 ---
 
-<!-- page 212 -->
+<!-- page 193 -->
 
 Basic processing
 
 ---
 
-<!-- page 214 -->
+<!-- page 194 -->
 
 Software for corpus access and analysis
 Michael Barlow
@@ -9306,7 +9306,7 @@ transmission of data. In addition, the representation of a text in digital forma
 
 ---
 
-<!-- page 215 -->
+<!-- page 195 -->
 
 Michael Barlow
 allows for unlimited duplication without any loss of quality. Consequently it is
@@ -9352,7 +9352,7 @@ Figure 1. Letter to the editor of The Times
 
 ---
 
-<!-- page 216 -->
+<!-- page 196 -->
 
 Software for corpus access and analysis 
 explicit the provenance of the text. The annotations, or tags, at the beginning of
@@ -9395,7 +9395,7 @@ whether it’s is one word or two. In other words, is the apostrophe to be treat
 
 ---
 
-<!-- page 217 -->
+<!-- page 197 -->
 
 Michael Barlow
 as a word boundary? And then if we add the apostrophe to the set of word de-
@@ -9458,7 +9458,7 @@ Figure 2. A frequency-ordered wordlist
 
 ---
 
-<!-- page 218 -->
+<!-- page 198 -->
 
 Software for corpus access and analysis 
 In general, wordlists are created for larger corpora and their distinctiveness
@@ -9501,7 +9501,7 @@ of the context affect the patterns that emerge.
 
 ---
 
-<!-- page 219 -->
+<!-- page 199 -->
 
 
 Michael Barlow
@@ -9588,7 +9588,7 @@ tant change in perspective. We have moved from a completely linear, syntag-
 
 ---
 
-<!-- page 220 -->
+<!-- page 200 -->
 
 Software for corpus access and analysis
 
@@ -9633,7 +9633,7 @@ alphabetical order).
 
 ---
 
-<!-- page 221 -->
+<!-- page 201 -->
 
 
 Michael Barlow
@@ -9677,7 +9677,7 @@ frequency of words within a particular span of the search word. A collocate fre-
 
 ---
 
-<!-- page 222 -->
+<!-- page 202 -->
 
 Software for corpus access and analysis
 
@@ -9824,7 +9824,7 @@ be
 
 ---
 
-<!-- page 223 -->
+<!-- page 203 -->
 
 
 Michael Barlow
@@ -9887,7 +9887,7 @@ sessive nouns that typically occur with each of the two words, as in daughter’
 
 ---
 
-<!-- page 224 -->
+<!-- page 204 -->
 
 Software for corpus access and analysis
 
@@ -9976,7 +9976,7 @@ thing to do
 
 ---
 
-<!-- page 225 -->
+<!-- page 205 -->
 
 
 Michael Barlow
@@ -10104,7 +10104,7 @@ of words occurring before the use of the complementary another phrase ranges
 
 ---
 
-<!-- page 226 -->
+<!-- page 206 -->
 
 Software for corpus access and analysis
 
@@ -10190,7 +10190,7 @@ a country that
 
 ---
 
-<!-- page 227 -->
+<!-- page 207 -->
 
 
 Michael Barlow
@@ -10232,7 +10232,7 @@ such as syntactic categories or semantic information.
 
 ---
 
-<!-- page 228 -->
+<!-- page 208 -->
 
 Software for corpus access and analysis
 
@@ -10292,7 +10292,7 @@ Figure 8. Position of kind of thing within sentences
 
 ---
 
-<!-- page 229 -->
+<!-- page 209 -->
 
 Michael Barlow
 Another kind of annotation that can be loosely described as part of the
@@ -10332,7 +10332,7 @@ Amsterdam: John Benjamins.
 
 ---
 
-<!-- page 230 -->
+<!-- page 210 -->
 
 Software for corpus access and analysis
 
@@ -10344,13 +10344,13 @@ B. Altenberg (Eds.), English Corpus Linguistics (pp. 128–143). Harlow: Longman
 
 ---
 
-<!-- page 232 -->
+<!-- page 211 -->
 
 Programming
 
 ---
 
-<!-- page 234 -->
+<!-- page 212 -->
 
 Simple Perl programming for corpus work
 Pernilla Danielsson
@@ -10386,7 +10386,7 @@ difﬁcult to mark sentences?
 
 ---
 
-<!-- page 235 -->
+<!-- page 213 -->
 
 
 Pernilla Danielsson
@@ -10430,7 +10430,7 @@ tics has affected the number and type of jobs for which corpora are used. It is
 
 ---
 
-<!-- page 236 -->
+<!-- page 214 -->
 
 Simple Perl programming for corpus work
 
@@ -10476,7 +10476,7 @@ contained in this article will be sufﬁcient to enable any required alterations
 
 ---
 
-<!-- page 237 -->
+<!-- page 215 -->
 
 
 Pernilla Danielsson
@@ -10511,7 +10511,7 @@ Figure 1. Command line with ‘which perl’
 
 ---
 
-<!-- page 238 -->
+<!-- page 216 -->
 
 Simple Perl programming for corpus work
 
@@ -10551,7 +10551,7 @@ on the new machine.
 
 ---
 
-<!-- page 239 -->
+<!-- page 217 -->
 
 
 Pernilla Danielsson
@@ -10598,7 +10598,7 @@ tokenizer.prl
 
 ---
 
-<!-- page 240 -->
+<!-- page 218 -->
 
 Simple Perl programming for corpus work
 
@@ -10630,7 +10630,7 @@ an initial step to solve these problems. Some POS taggers come with their own
 
 ---
 
-<!-- page 241 -->
+<!-- page 219 -->
 
 
 Pernilla Danielsson
@@ -10674,7 +10674,7 @@ you ﬁnd a short list of some of the most useful regular expressions.
 
 ---
 
-<!-- page 242 -->
+<!-- page 220 -->
 
 Simple Perl programming for corpus work
 
@@ -10729,7 +10729,7 @@ s/\./ ./g;
 
 ---
 
-<!-- page 243 -->
+<!-- page 221 -->
 
 
 Pernilla Danielsson
@@ -10770,7 +10770,7 @@ do_something;
 
 ---
 
-<!-- page 244 -->
+<!-- page 222 -->
 
 Simple Perl programming for corpus work
 
@@ -10812,7 +10812,7 @@ this is achieved by including the “\n” in the print line.
 
 ---
 
-<!-- page 245 -->
+<!-- page 223 -->
 
 
 Pernilla Danielsson
@@ -10853,7 +10853,7 @@ we use our tokeniser before our word splitter, then this will prove to be a good
 
 ---
 
-<!-- page 246 -->
+<!-- page 224 -->
 
 Simple Perl programming for corpus work
 
@@ -10904,7 +10904,7 @@ Vanilla Aligner (Danielsson & Ridings 1997). This aligner is freely available
 
 ---
 
-<!-- page 247 -->
+<!-- page 225 -->
 
 
 Pernilla Danielsson
@@ -10951,7 +10951,7 @@ the symbol, into the ﬁle stated on the right hand side.
 
 ---
 
-<!-- page 248 -->
+<!-- page 226 -->
 
 Simple Perl programming for corpus work
 
@@ -10991,7 +10991,7 @@ calculation program are not far.
 
 ---
 
-<!-- page 249 -->
+<!-- page 227 -->
 
 Pernilla Danielsson
 The frequency program will introduce a sub function, here named inorder.
@@ -11034,7 +11034,7 @@ $freqlist{$a}<=> $freqlist{$b}
 
 ---
 
-<!-- page 250 -->
+<!-- page 228 -->
 
 Simple Perl programming for corpus work
 
@@ -11079,7 +11079,7 @@ the
 
 ---
 
-<!-- page 251 -->
+<!-- page 229 -->
 
 
 Pernilla Danielsson
@@ -11130,7 +11130,7 @@ sort text.tok| uniq -c | sort -rn |more
 
 ---
 
-<!-- page 252 -->
+<!-- page 230 -->
 
 Simple Perl programming for corpus work
 
@@ -11173,7 +11173,7 @@ number only once, and this number will be used with the grep command, both
 
 ---
 
-<!-- page 253 -->
+<!-- page 231 -->
 
 
 Pernilla Danielsson
@@ -11218,7 +11218,7 @@ input to your frequency count program. The result will be a frequency list of
 
 ---
 
-<!-- page 254 -->
+<!-- page 232 -->
 
 Simple Perl programming for corpus work
 
@@ -11256,7 +11256,7 @@ Associates.
 
 ---
 
-<!-- page 255 -->
+<!-- page 233 -->
 
 Pernilla Danielsson
 Danielsson, P. & D. Ridings (1997). Practical presentation of a ‘Vanilla’ aligner. In U. Reyle
@@ -11277,13 +11277,13 @@ Wall, L. & R. L. Schwartz (1992). Programming Perl. Sebastopol, CA: O’Reilly &
 
 ---
 
-<!-- page 256 -->
+<!-- page 234 -->
 
 Network
 
 ---
 
-<!-- page 258 -->
+<!-- page 235 -->
 
 Learner oral corpora and network-based
 language teaching
@@ -11316,7 +11316,7 @@ be a priority in certain foreign language learning contexts, particularly where
 
 ---
 
-<!-- page 259 -->
+<!-- page 236 -->
 
 
 Pascual Pérez-Paredes
@@ -11360,7 +11360,7 @@ data retrieval, will deﬁnitely help rethink the pre-network conceptualisation 
 
 ---
 
-<!-- page 260 -->
+<!-- page 237 -->
 
 Learner oral corpora and network-based language teaching
 
@@ -11405,7 +11405,7 @@ and develop learning tools. Depending on the needs and goals of the project
 
 ---
 
-<!-- page 261 -->
+<!-- page 238 -->
 
 
 Pascual Pérez-Paredes
@@ -11450,7 +11450,7 @@ activity. On the contrary, web-based learning is associated with learning mate-
 
 ---
 
-<!-- page 262 -->
+<!-- page 239 -->
 
 Learner oral corpora and network-based language teaching
 
@@ -11500,7 +11500,7 @@ students’, teachers’ and researchers’ performance.
 
 ---
 
-<!-- page 263 -->
+<!-- page 240 -->
 
 
 Pascual Pérez-Paredes
@@ -11543,7 +11543,7 @@ achronic feedback information from a group or groups of students. In this way
 
 ---
 
-<!-- page 264 -->
+<!-- page 241 -->
 
 Learner oral corpora and network-based language teaching
 
@@ -11589,7 +11589,7 @@ ingly it is obvious that learners are inﬂuenced by a potentialy stressful situ
 
 ---
 
-<!-- page 265 -->
+<!-- page 242 -->
 
 
 Pascual Pérez-Paredes
@@ -11647,7 +11647,7 @@ its praxis has been altered. For example, in the world of business and econ-
 
 ---
 
-<!-- page 266 -->
+<!-- page 243 -->
 
 Learner oral corpora and network-based language teaching
 
@@ -11692,7 +11692,7 @@ ingly digitally-oriented culture.12 This new phenomenon is well rooted in both
 
 ---
 
-<!-- page 267 -->
+<!-- page 244 -->
 
 
 Pascual Pérez-Paredes
@@ -11734,7 +11734,7 @@ meaningful interaction are not abundant.
 
 ---
 
-<!-- page 268 -->
+<!-- page 245 -->
 
 Learner oral corpora and network-based language teaching
 
@@ -11780,7 +11780,7 @@ fascinating enough, converge in networking LOC.
 
 ---
 
-<!-- page 269 -->
+<!-- page 246 -->
 
 Pascual Pérez-Paredes
 .
@@ -11824,7 +11824,7 @@ have both informative and formative roles. Networked delivery of multimedia
 
 ---
 
-<!-- page 270 -->
+<!-- page 247 -->
 
 Learner oral corpora and network-based language teaching
 
@@ -11870,7 +11870,7 @@ phone-lines, which are very slow, power-lines and wireless ethernet.
 
 ---
 
-<!-- page 271 -->
+<!-- page 248 -->
 
 
 Pascual Pérez-Paredes
@@ -11914,7 +11914,7 @@ linguistics.22 LOC data do certainly (1) open up doors to the objective veri-
 
 ---
 
-<!-- page 272 -->
+<!-- page 249 -->
 
 Learner oral corpora and network-based language teaching
 
@@ -11957,7 +11957,7 @@ language learning environments.
 
 ---
 
-<!-- page 273 -->
+<!-- page 250 -->
 
 Pascual Pérez-Paredes
 Notes
@@ -12003,7 +12003,7 @@ depth discussions on oral communication management in FL classrooms.
 
 ---
 
-<!-- page 274 -->
+<!-- page 251 -->
 
 Learner oral corpora and network-based language teaching
 
@@ -12050,7 +12050,7 @@ Cambridge University Press.
 
 ---
 
-<!-- page 275 -->
+<!-- page 252 -->
 
 Pascual Pérez-Paredes
 Chapelle, C. (2001b). Innovative language learning: Achieving the vision. ReCALL, 13(1),
@@ -12109,7 +12109,7 @@ of Hawai’i, Second Language Teaching & Curriculum Center.
 
 ---
 
-<!-- page 276 -->
+<!-- page 253 -->
 
 Learner oral corpora and network-based language teaching
 
@@ -12161,7 +12161,7 @@ Skehan, P. (1989). Individual Differences in Second Language Learning. London: A
 
 ---
 
-<!-- page 277 -->
+<!-- page 254 -->
 
 Pascual Pérez-Paredes
 Skehan, P. (2001). The role of a focus on form during task-based instruction. In C. Muñoz
@@ -12181,13 +12181,13 @@ Wichmann, A. et al. (Eds.). (1997). Teaching and Language Corpora. Harlow: Longm
 
 ---
 
-<!-- page 278 -->
+<!-- page 255 -->
 
 Prospects
 
 ---
 
-<!-- page 280 -->
+<!-- page 256 -->
 
 New evidence, new priorities, new attitudes
 John Sinclair
@@ -12222,7 +12222,7 @@ that corpora uniquely provide; many of the problems just dissolve when the
 
 ---
 
-<!-- page 281 -->
+<!-- page 257 -->
 
 
 John Sinclair
@@ -12263,7 +12263,7 @@ something. There are two kinds – those that seem to mean something, like past
 
 ---
 
-<!-- page 282 -->
+<!-- page 258 -->
 
 New evidence, new priorities, new attitudes
 
@@ -12305,7 +12305,7 @@ such a complex organisation as a natural language there will always be the pos-
 
 ---
 
-<!-- page 283 -->
+<!-- page 259 -->
 
 
 John Sinclair
@@ -12350,7 +12350,7 @@ can be directly and exclusively associated with a meaning, teachers are often
 
 ---
 
-<!-- page 284 -->
+<!-- page 260 -->
 
 New evidence, new priorities, new attitudes
 
@@ -12395,7 +12395,7 @@ addition of own, which stresses the self-centredness of the meaning.
 
 ---
 
-<!-- page 285 -->
+<!-- page 261 -->
 
 
 John Sinclair
@@ -12439,7 +12439,7 @@ characterises the classes that are uncovered in the pattern grammars.
 
 ---
 
-<!-- page 286 -->
+<!-- page 262 -->
 
 New evidence, new priorities, new attitudes
 
@@ -12484,7 +12484,7 @@ grammars. Complementary to the grammar there is a lexicon, which is also a
 
 ---
 
-<!-- page 287 -->
+<!-- page 263 -->
 
 
 John Sinclair
@@ -12529,7 +12529,7 @@ and writing. It would in fact be confusing to a student to be introduced to
 
 ---
 
-<!-- page 288 -->
+<!-- page 264 -->
 
 New evidence, new priorities, new attitudes
 
@@ -12574,7 +12574,7 @@ which in turn means that any codiﬁcation of the patterns with respect to mean-
 
 ---
 
-<!-- page 289 -->
+<!-- page 265 -->
 
 John Sinclair
 ing will have to leave a proportion of the patterns to be interpreted by the
@@ -12612,7 +12612,7 @@ An appropriate hypothesis would be:
 
 ---
 
-<!-- page 290 -->
+<!-- page 266 -->
 
 New evidence, new priorities, new attitudes
 
@@ -12650,7 +12650,7 @@ We can formulate another hypothesis to clarify this area:
 
 ---
 
-<!-- page 291 -->
+<!-- page 267 -->
 
 
 John Sinclair
@@ -12695,7 +12695,7 @@ apparently independent sources, it cannot be evaluated; it could be a mistake, a
 
 ---
 
-<!-- page 292 -->
+<!-- page 268 -->
 
 New evidence, new priorities, new attitudes
 
@@ -12739,7 +12739,7 @@ so a “negative” is not only realised by a grammatical negative structure, bu
 
 ---
 
-<!-- page 293 -->
+<!-- page 269 -->
 
 
 John Sinclair
@@ -12780,7 +12780,7 @@ verbs, like help, the base form is also used.
 
 ---
 
-<!-- page 294 -->
+<!-- page 270 -->
 
 New evidence, new priorities, new attitudes
 
@@ -12822,7 +12822,7 @@ list the words and phrases that realise the nastiness, we can make two further
 
 ---
 
-<!-- page 295 -->
+<!-- page 271 -->
 
 
 John Sinclair
@@ -12863,7 +12863,7 @@ unlikely to recur that they cannot be included in a description on principle.
 
 ---
 
-<!-- page 296 -->
+<!-- page 272 -->
 
 New evidence, new priorities, new attitudes
 
@@ -12906,7 +12906,7 @@ language course.
 
 ---
 
-<!-- page 297 -->
+<!-- page 273 -->
 
 
 John Sinclair
@@ -12950,7 +12950,7 @@ reference to collocational proﬁles, it can be established fairly quickly that 
 
 ---
 
-<!-- page 298 -->
+<!-- page 274 -->
 
 New evidence, new priorities, new attitudes
 
@@ -12996,7 +12996,7 @@ sense or a phrasing, but it is an indication; for example, with the passage of
 
 ---
 
-<!-- page 299 -->
+<!-- page 275 -->
 
 John Sinclair
 time usages that no longer occur in numbers can be summarily discarded from
@@ -13039,7 +13039,7 @@ that is sufﬁcient. In our example it does seem that most of the positive in-
 
 ---
 
-<!-- page 300 -->
+<!-- page 276 -->
 
 New evidence, new priorities, new attitudes
 
@@ -13080,7 +13080,7 @@ minor variant. Here they are:
 
 ---
 
-<!-- page 301 -->
+<!-- page 277 -->
 
 
 John Sinclair
@@ -13125,7 +13125,7 @@ easier to master, and light-years away from lists of words and “their” meani
 
 ---
 
-<!-- page 302 -->
+<!-- page 278 -->
 
 New evidence, new priorities, new attitudes
 
@@ -13171,7 +13171,7 @@ not sound completely unacceptable.
 
 ---
 
-<!-- page 303 -->
+<!-- page 279 -->
 
 John Sinclair
 In the teaching/learning process this does not need to be a big problem.
@@ -13215,7 +13215,7 @@ of realisations, and insights into the nature of the vocabulary.
 
 ---
 
-<!-- page 304 -->
+<!-- page 280 -->
 
 New evidence, new priorities, new attitudes
 
@@ -13259,7 +13259,7 @@ language proﬁciency), and use this experience to feed and expand the store.
 
 ---
 
-<!-- page 305 -->
+<!-- page 281 -->
 
 John Sinclair
 Concordances are ideal material for developing interpretive strategies, as
@@ -13313,7 +13313,7 @@ times it maddeningly refuses to do the obvious. We can certainly look forward
 
 ---
 
-<!-- page 306 -->
+<!-- page 282 -->
 
 New evidence, new priorities, new attitudes
 
@@ -13356,7 +13356,7 @@ for continued access to this unique resource.
 
 ---
 
-<!-- page 307 -->
+<!-- page 283 -->
 
 
 John Sinclair
@@ -13402,7 +13402,7 @@ Chomsky, N. (1965). Aspects of the Theory of Syntax. Cambridge, MA: The MIT Pres
 
 ---
 
-<!-- page 308 -->
+<!-- page 284 -->
 
 New evidence, new priorities, new attitudes
 
@@ -13436,7 +13436,7 @@ Sinclair, J. (2004b). Trust the Text, ed. R. Carter. London: Routledge.
 
 ---
 
-<!-- page 310 -->
+<!-- page 285 -->
 
 Notes on contributors
 Silvia Bernardini
@@ -13474,7 +13474,7 @@ English as lingua franca and translation studies. She is compiling a corpus on
 
 ---
 
-<!-- page 311 -->
+<!-- page 286 -->
 
 
 Notes on contributors
@@ -13519,7 +13519,7 @@ linguistics and language teaching.
 
 ---
 
-<!-- page 312 -->
+<!-- page 287 -->
 
 Notes on contributors
 
@@ -13561,7 +13561,7 @@ Association of Great Britain and a member of the Academia Europæa.
 
 ---
 
-<!-- page 314 -->
+<!-- page 288 -->
 
 Index
 A
@@ -13673,7 +13673,7 @@ imply
 
 ---
 
-<!-- page 315 -->
+<!-- page 289 -->
 
 Index
 incompleteness of description
@@ -13818,7 +13818,7 @@ sub-corpus
 
 ---
 
-<!-- page 316 -->
+<!-- page 290 -->
 
 Index
 
@@ -13871,7 +13871,7 @@ wordlist
 
 ---
 
-<!-- page 317 -->
+<!-- page 291 -->
 
 In the series STUDIES IN CORPUS LINGUISTICS (SCL) the following titles have been
 published thus far:

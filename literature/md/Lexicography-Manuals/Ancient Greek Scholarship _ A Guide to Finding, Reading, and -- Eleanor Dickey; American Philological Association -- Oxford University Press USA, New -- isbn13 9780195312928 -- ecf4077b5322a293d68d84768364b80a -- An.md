@@ -6,13 +6,13 @@
 
 ---
 
-<!-- page 2 -->
+<!-- page 1 -->
 
 Ancient Greek Scholarship
 
 ---
 
-<!-- page 3 -->
+<!-- page 2 -->
 
 AMERICAN PHILOLOGICAL ASSOCIATION
 classical resources series
@@ -31,7 +31,7 @@ Eleanor Dickey
 
 ---
 
-<!-- page 4 -->
+<!-- page 3 -->
 
 Ancient Greek Scholarship
 A Guide to Finding, Reading,
@@ -44,7 +44,7 @@ eleanor dickey
 
 ---
 
-<!-- page 5 -->
+<!-- page 4 -->
 
 3
 Oxford University Press, Inc., publishes works that further
@@ -121,20 +121,20 @@ on acid-free paper
 
 ---
 
-<!-- page 6 -->
+<!-- page 5 -->
 
 Dedicated to my mother, BARBARA DICKEY,
 who put up with a great deal while this book was being written.
 
 ---
 
-<!-- page 7 -->
+<!-- page 6 -->
 
 This page intentionally left blank
 
 ---
 
-<!-- page 8 -->
+<!-- page 7 -->
 
 Preface
 In recent years a growing interest in ancient scholarship
@@ -172,7 +172,7 @@ scholarly” is intended by this usage.
 
 ---
 
-<!-- page 9 -->
+<!-- page 8 -->
 
 This book has two aims: to explain what ancient scholarship exists, where to
 find it, and when and how to use it; and to help readers acquire the facility in
@@ -223,7 +223,7 @@ PREFACE
 
 ---
 
-<!-- page 10 -->
+<!-- page 9 -->
 
 writings very little survives. A similar policy has been adopted in giving lists of
 modern references: generally speaking, when several secondary sources are listed
@@ -273,7 +273,7 @@ ix
 
 ---
 
-<!-- page 11 -->
+<!-- page 10 -->
 
 symbols appears in the electronic version. The editions used as the basis for the
 TLG are usually well chosen, however, and in many cases it is better to consult
@@ -323,7 +323,7 @@ scoli, scolie, scolies, and scolii.
 
 ---
 
-<!-- page 12 -->
+<!-- page 11 -->
 
 vant sections of Chapter 5 for practice in reading that material. Users are encour-
 aged to translate the pertinent passages in section 5.1, making use of the glossary
@@ -373,7 +373,7 @@ xi
 
 ---
 
-<!-- page 13 -->
+<!-- page 12 -->
 
 product might be good enough to benefit readers as it was intended to do. That
 world-famous Classicists were willing to painstakingly scrutinize details so that
@@ -423,7 +423,7 @@ PREFACE
 
 ---
 
-<!-- page 14 -->
+<!-- page 13 -->
 
 on which so much of this project is based; they were also unusually kind and
 patient. I am also grateful to Columbia University for several research grants, to
@@ -435,13 +435,13 @@ xiii
 
 ---
 
-<!-- page 15 -->
+<!-- page 14 -->
 
 This page intentionally left blank
 
 ---
 
-<!-- page 16 -->
+<!-- page 15 -->
 
 Contents
 1
@@ -515,7 +515,7 @@ Scholia, Commentaries, and Lexica on Specific Literary Works
 
 ---
 
-<!-- page 17 -->
+<!-- page 16 -->
 
 2.3.9 Callimachus
 66
@@ -609,7 +609,7 @@ CONTENTS
 
 ---
 
-<!-- page 18 -->
+<!-- page 17 -->
 
 3.2.19 Zonaras
 102
@@ -694,25 +694,25 @@ xvii
 
 ---
 
-<!-- page 19 -->
+<!-- page 18 -->
 
 This page intentionally left blank
 
 ---
 
-<!-- page 20 -->
+<!-- page 19 -->
 
 Ancient Greek Scholarship
 
 ---
 
-<!-- page 21 -->
+<!-- page 20 -->
 
 This page intentionally left blank
 
 ---
 
-<!-- page 22 -->
+<!-- page 21 -->
 
 1
 Introduction to Ancient Scholarship
@@ -751,7 +751,7 @@ Ax (1986, 1991), Blank (1994), Hovdhaugen (1982), Diels (1910), and Koller (1958
 
 ---
 
-<!-- page 23 -->
+<!-- page 22 -->
 
 4
 ANCIENT GREEK SCHOLARSHIP
@@ -800,7 +800,7 @@ Laum (1928), RE, NP, and OCD.
 
 ---
 
-<!-- page 24 -->
+<!-- page 23 -->
 
 INTRODUCTION TO ANCIENT SCHOLARSHIP
 5
@@ -851,7 +851,7 @@ sometimes questioned.
 
 ---
 
-<!-- page 25 -->
+<!-- page 24 -->
 
 6
 ANCIENT GREEK SCHOLARSHIP
@@ -901,7 +901,7 @@ ers, who believed in irregularity). Some scholars (e.g. Fehling 1956–7; Pinbor
 
 ---
 
-<!-- page 26 -->
+<!-- page 25 -->
 
 INTRODUCTION TO ANCIENT SCHOLARSHIP
 7
@@ -952,7 +952,7 @@ work have been collected by Guhl (1969).
 
 ---
 
-<!-- page 27 -->
+<!-- page 26 -->
 
 8
 ANCIENT GREEK SCHOLARSHIP
@@ -1002,7 +1002,7 @@ and Cameron (2004).
 
 ---
 
-<!-- page 28 -->
+<!-- page 27 -->
 
 INTRODUCTION TO ANCIENT SCHOLARSHIP
 9
@@ -1052,7 +1052,7 @@ and Wouters (1996), Ildefonse (1997), and the works cited in section 3.1.
 
 ---
 
-<!-- page 29 -->
+<!-- page 28 -->
 
 10
 ANCIENT GREEK SCHOLARSHIP
@@ -1101,7 +1101,7 @@ tradition.
 
 ---
 
-<!-- page 30 -->
+<!-- page 29 -->
 
 INTRODUCTION TO ANCIENT SCHOLARSHIP
 11
@@ -1154,7 +1154,7 @@ mentary in general, see in addition to the works already cited Slater (1989a), R
 
 ---
 
-<!-- page 31 -->
+<!-- page 30 -->
 
 12
 ANCIENT GREEK SCHOLARSHIP
@@ -1204,7 +1204,7 @@ coming) and Van Thiel (1992).
 
 ---
 
-<!-- page 32 -->
+<!-- page 31 -->
 
 INTRODUCTION TO ANCIENT SCHOLARSHIP
 13
@@ -1254,7 +1254,7 @@ compiled in the 5th or 6th cent., but that those to the Iliad come from the 9th 
 
 ---
 
-<!-- page 33 -->
+<!-- page 32 -->
 
 14
 ANCIENT GREEK SCHOLARSHIP
@@ -1303,7 +1303,7 @@ ger (1978: ii. 3–83), Reynolds and Wilson (1991), and Robins (1993).
 
 ---
 
-<!-- page 34 -->
+<!-- page 33 -->
 
 INTRODUCTION TO ANCIENT SCHOLARSHIP
 15
@@ -1354,7 +1354,7 @@ century), Etymologicum Gudianum (eleventh century), and lexicon of Zonaras
 
 ---
 
-<!-- page 35 -->
+<!-- page 34 -->
 
 16
 ANCIENT GREEK SCHOLARSHIP
@@ -1405,7 +1405,7 @@ textual history of a literary work. Still others seem to offer valuable informat
 
 ---
 
-<!-- page 36 -->
+<!-- page 35 -->
 
 INTRODUCTION TO ANCIENT SCHOLARSHIP
 17
@@ -1424,7 +1424,7 @@ material from different sources.
 
 ---
 
-<!-- page 37 -->
+<!-- page 36 -->
 
 SCHOLIA, COMMENTARIES, AND LEXICA ON SPECIFIC LITERARY WORKS
 18
@@ -1464,7 +1464,7 @@ marily into one of the other categories, for they contain material that was wide
 
 ---
 
-<!-- page 38 -->
+<!-- page 37 -->
 
 19
 19
@@ -1515,7 +1515,7 @@ chronological order of creation of the earliest elements of each group.
 
 ---
 
-<!-- page 39 -->
+<!-- page 38 -->
 
 SCHOLIA, COMMENTARIES, AND LEXICA ON SPECIFIC LITERARY WORKS
 20
@@ -1566,7 +1566,7 @@ printed form (in 1517) and remained pre-eminent until superseded by the A
 
 ---
 
-<!-- page 40 -->
+<!-- page 39 -->
 
 21
 21
@@ -1617,7 +1617,7 @@ Etymologicum magnum shows that they must be earlier; see Alpers (1981: 93 n. 36)
 
 ---
 
-<!-- page 41 -->
+<!-- page 40 -->
 
 SCHOLIA, COMMENTARIES, AND LEXICA ON SPECIFIC LITERARY WORKS
 22
@@ -1666,7 +1666,7 @@ was owned by Manuel Moschopulus and by H. Stephanus (Henri Estienne).
 
 ---
 
-<!-- page 42 -->
+<!-- page 41 -->
 
 23
 23
@@ -1716,7 +1716,7 @@ ous fragments of her work are preserved, and she offers a rare example of a fema
 
 ---
 
-<!-- page 43 -->
+<!-- page 42 -->
 
 SCHOLIA, COMMENTARIES, AND LEXICA ON SPECIFIC LITERARY WORKS
 24
@@ -1765,7 +1765,7 @@ other Apollonii involved with ancient scholarship.
 
 ---
 
-<!-- page 44 -->
+<!-- page 43 -->
 
 25
 25
@@ -1817,7 +1817,7 @@ can be found in Jacoby (1958: 122–44). See Dillery (2003).
 
 ---
 
-<!-- page 45 -->
+<!-- page 44 -->
 
 SCHOLIA, COMMENTARIES, AND LEXICA ON SPECIFIC LITERARY WORKS
 26
@@ -1867,7 +1867,7 @@ translation and another good introduction. Discussions include those of Long
 
 ---
 
-<!-- page 46 -->
+<!-- page 45 -->
 
 27
 27
@@ -1917,7 +1917,7 @@ Dionysius Thrax.
 
 ---
 
-<!-- page 47 -->
+<!-- page 46 -->
 
 SCHOLIA, COMMENTARIES, AND LEXICA ON SPECIFIC LITERARY WORKS
 28
@@ -1966,7 +1966,7 @@ tion, making them easier to use than many scholia.
 
 ---
 
-<!-- page 48 -->
+<!-- page 47 -->
 
 29
 29
@@ -2016,7 +2016,7 @@ the sophist.
 
 ---
 
-<!-- page 49 -->
+<!-- page 48 -->
 
 SCHOLIA, COMMENTARIES, AND LEXICA ON SPECIFIC LITERARY WORKS
 30
@@ -2066,7 +2066,7 @@ the Koster–Holwerda edition, only in Dübner and in the Suda.
 
 ---
 
-<!-- page 50 -->
+<!-- page 49 -->
 
 31
 31
@@ -2117,7 +2117,7 @@ difficult to separate.
 
 ---
 
-<!-- page 51 -->
+<!-- page 50 -->
 
 SCHOLIA, COMMENTARIES, AND LEXICA ON SPECIFIC LITERARY WORKS
 32
@@ -2168,7 +2168,7 @@ also found with other plays, consist of a well-preserved commentary by Moscho-
 
 ---
 
-<!-- page 52 -->
+<!-- page 51 -->
 
 33
 33
@@ -2220,7 +2220,7 @@ eses (particularly the “Tales from Euripides”) and their history and influen
 
 ---
 
-<!-- page 53 -->
+<!-- page 52 -->
 
 SCHOLIA, COMMENTARIES, AND LEXICA ON SPECIFIC LITERARY WORKS
 34
@@ -2270,7 +2270,7 @@ are frequently used for historical, textual, lexical, and interpretive informati
 
 ---
 
-<!-- page 54 -->
+<!-- page 53 -->
 
 35
 35
@@ -2320,7 +2320,7 @@ mata for the text (cf. O. L. Smith 1981).
 
 ---
 
-<!-- page 55 -->
+<!-- page 54 -->
 
 SCHOLIA, COMMENTARIES, AND LEXICA ON SPECIFIC LITERARY WORKS
 36
@@ -2371,7 +2371,7 @@ when they discuss B (or A) scholia.
 
 ---
 
-<!-- page 56 -->
+<!-- page 55 -->
 
 37
 37
@@ -2422,7 +2422,7 @@ are which.
 
 ---
 
-<!-- page 57 -->
+<!-- page 56 -->
 
 SCHOLIA, COMMENTARIES, AND LEXICA ON SPECIFIC LITERARY WORKS
 38
@@ -2472,7 +2472,7 @@ our metrical scholia, as well as for an understanding of the revival of metrical
 
 ---
 
-<!-- page 58 -->
+<!-- page 57 -->
 
 39
 39
@@ -2523,7 +2523,7 @@ sets of line numbers.
 
 ---
 
-<!-- page 59 -->
+<!-- page 58 -->
 
 SCHOLIA, COMMENTARIES, AND LEXICA ON SPECIFIC LITERARY WORKS
 40
@@ -2573,7 +2573,7 @@ being unmixed with any later commentaries.
 
 ---
 
-<!-- page 60 -->
+<!-- page 59 -->
 
 41
 41
@@ -2625,7 +2625,7 @@ ferent form, in Gaisford (1823 =TLG).
 
 ---
 
-<!-- page 61 -->
+<!-- page 60 -->
 
 SCHOLIA, COMMENTARIES, AND LEXICA ON SPECIFIC LITERARY WORKS
 42
@@ -2674,7 +2674,7 @@ century ad. The spectacular Derveni papyrus from the fourth century bc contains
 
 ---
 
-<!-- page 62 -->
+<!-- page 61 -->
 
 43
 43
@@ -2722,7 +2722,7 @@ information about them from discussions in extant commentaries and glossaries.
 
 ---
 
-<!-- page 63 -->
+<!-- page 62 -->
 
 SCHOLIA, COMMENTARIES, AND LEXICA ON SPECIFIC LITERARY WORKS
 44
@@ -2772,7 +2772,7 @@ probably the same person as the Stephanus who commented on Aristotle.
 
 ---
 
-<!-- page 64 -->
+<!-- page 63 -->
 
 45
 45
@@ -2823,7 +2823,7 @@ see Ch. 1 n. 25 above.
 
 ---
 
-<!-- page 65 -->
+<!-- page 64 -->
 
 SCHOLIA, COMMENTARIES, AND LEXICA ON SPECIFIC LITERARY WORKS
 46
@@ -2872,7 +2872,7 @@ could, however, belong to the late 1st cent. BC; see Sedley (1996: 84).
 
 ---
 
-<!-- page 66 -->
+<!-- page 65 -->
 
 47
 47
@@ -2924,7 +2924,7 @@ are now considered to be of little use for the study of Plato’s own writings, 
 
 ---
 
-<!-- page 67 -->
+<!-- page 66 -->
 
 SCHOLIA, COMMENTARIES, AND LEXICA ON SPECIFIC LITERARY WORKS
 48
@@ -2975,7 +2975,7 @@ otherwise unknown Alcinous entitled Didaskalikov" or Handbook of Platonism
 
 ---
 
-<!-- page 68 -->
+<!-- page 67 -->
 
 49
 49
@@ -3026,7 +3026,7 @@ ies. In addition, there are anonymous commentaries of each type (Aristotelian,
 
 ---
 
-<!-- page 69 -->
+<!-- page 68 -->
 
 SCHOLIA, COMMENTARIES, AND LEXICA ON SPECIFIC LITERARY WORKS
 50
@@ -3076,7 +3076,7 @@ certain other authors, see Ch. 1 n. 25 above.
 
 ---
 
-<!-- page 70 -->
+<!-- page 69 -->
 
 51
 51
@@ -3127,7 +3127,7 @@ appearance in the text. The lexicon’s editor believes it could have served as 
 
 ---
 
-<!-- page 71 -->
+<!-- page 70 -->
 
 SCHOLIA, COMMENTARIES, AND LEXICA ON SPECIFIC LITERARY WORKS
 52
@@ -3177,7 +3177,7 @@ a lexicon to Or. 21 from the 4th or 5th cent. (see C. Gibson 2002: 190–9).
 
 ---
 
-<!-- page 72 -->
+<!-- page 71 -->
 
 53
 53
@@ -3227,7 +3227,7 @@ arranged in the order of the words’ appearance in Herodotus’ text and one in
 
 ---
 
-<!-- page 73 -->
+<!-- page 72 -->
 
 SCHOLIA, COMMENTARIES, AND LEXICA ON SPECIFIC LITERARY WORKS
 54
@@ -3277,7 +3277,7 @@ treated in the surviving ancient scholarship to Herodotus.
 
 ---
 
-<!-- page 74 -->
+<!-- page 73 -->
 
 55
 55
@@ -3325,7 +3325,7 @@ portant material.
 
 ---
 
-<!-- page 75 -->
+<!-- page 74 -->
 
 SCHOLIA, COMMENTARIES, AND LEXICA ON SPECIFIC LITERARY WORKS
 56
@@ -3375,7 +3375,7 @@ nology (1958–9).
 
 ---
 
-<!-- page 76 -->
+<!-- page 75 -->
 
 57
 57
@@ -3425,7 +3425,7 @@ the commentary.
 
 ---
 
-<!-- page 77 -->
+<!-- page 76 -->
 
 SCHOLIA, COMMENTARIES, AND LEXICA ON SPECIFIC LITERARY WORKS
 58
@@ -3476,7 +3476,7 @@ tosthenes see Geus (2002).
 
 ---
 
-<!-- page 78 -->
+<!-- page 77 -->
 
 59
 59
@@ -3527,7 +3527,7 @@ tin (1974: 560–2) merely reprints an uncorrected version of Maass’s text (18
 
 ---
 
-<!-- page 79 -->
+<!-- page 78 -->
 
 SCHOLIA, COMMENTARIES, AND LEXICA ON SPECIFIC LITERARY WORKS
 60
@@ -3577,7 +3577,7 @@ and (probably) the Optica. Traces of his work on the Elements are preserved in
 
 ---
 
-<!-- page 80 -->
+<!-- page 79 -->
 
 61
 61
@@ -3627,7 +3627,7 @@ have been published from the manuscripts.
 
 ---
 
-<!-- page 81 -->
+<!-- page 80 -->
 
 SCHOLIA, COMMENTARIES, AND LEXICA ON SPECIFIC LITERARY WORKS
 62
@@ -3676,7 +3676,7 @@ see Henrichs 1970); also P.Oxy. xxxiv. 2693 and 2694, both 2nd cent. AD.
 
 ---
 
-<!-- page 82 -->
+<!-- page 81 -->
 
 63
 63
@@ -3727,7 +3727,7 @@ of gross errors. It is thought that Munatius, who clearly had little interest in
 
 ---
 
-<!-- page 83 -->
+<!-- page 82 -->
 
 SCHOLIA, COMMENTARIES, AND LEXICA ON SPECIFIC LITERARY WORKS
 64
@@ -3777,7 +3777,7 @@ The definitive discussion of the scholia is also by Wendel (1920, with further
 
 ---
 
-<!-- page 84 -->
+<!-- page 83 -->
 
 65
 65
@@ -3827,7 +3827,7 @@ ing perhaps to the fourth century ad. An interesting piece of papyrus commentary
 
 ---
 
-<!-- page 85 -->
+<!-- page 84 -->
 
 SCHOLIA, COMMENTARIES, AND LEXICA ON SPECIFIC LITERARY WORKS
 66
@@ -3875,7 +3875,7 @@ to the classical period can sometimes be found in scholarship on writers of the
 
 ---
 
-<!-- page 86 -->
+<!-- page 85 -->
 
 67
 67
@@ -3926,7 +3926,7 @@ preserved as scholia to the Little Commentary. The Great Commentary and Little
 
 ---
 
-<!-- page 87 -->
+<!-- page 86 -->
 
 SCHOLIA, COMMENTARIES, AND LEXICA ON SPECIFIC LITERARY WORKS
 68
@@ -3976,7 +3976,7 @@ second version of Philoponus’ commentary is published only in the form of col-
 
 ---
 
-<!-- page 88 -->
+<!-- page 87 -->
 
 69
 69
@@ -4026,7 +4026,7 @@ completely untrustworthy. For orations 1–3 a better choice is Frommel’s edit
 
 ---
 
-<!-- page 89 -->
+<!-- page 88 -->
 
 SCHOLIA, COMMENTARIES, AND LEXICA ON SPECIFIC LITERARY WORKS
 70
@@ -4075,7 +4075,7 @@ fredini (1975, 1979).
 
 ---
 
-<!-- page 90 -->
+<!-- page 89 -->
 
 71
 71
@@ -4120,7 +4120,7 @@ see Hunger (1978: ii. 55–77).
 
 ---
 
-<!-- page 91 -->
+<!-- page 90 -->
 
 72
 OTHER SCHOLARLY WORKS
@@ -4159,7 +4159,7 @@ two crucial figures from the second century ad, Apollonius Dyscolus and Herodian
 
 ---
 
-<!-- page 92 -->
+<!-- page 91 -->
 
 73
 3.1.1 Apollonius Dyscolus
@@ -4208,7 +4208,7 @@ from Apollonius even if his name is not explicitly mentioned.
 
 ---
 
-<!-- page 93 -->
+<!-- page 92 -->
 
 74
 OTHER SCHOLARLY WORKS
@@ -4259,7 +4259,7 @@ Schneider provides such help for all the minor works (GG ii.i: 259–64).
 
 ---
 
-<!-- page 94 -->
+<!-- page 93 -->
 
 75
 Modern scholarship on Apollonius, which is abundant, tends to focus on the
@@ -4308,7 +4308,7 @@ as to the form and extent of that tradition.
 
 ---
 
-<!-- page 95 -->
+<!-- page 94 -->
 
 76
 OTHER SCHOLARLY WORKS
@@ -4358,7 +4358,7 @@ tuation is discussed in the scholia (1969–88: vii. 5–15).
 
 ---
 
-<!-- page 96 -->
+<!-- page 95 -->
 
 77
 iv. i–ii is far superior to the texts on which Lentz’s reconstruction (GG iii.ii: 634–
@@ -4408,7 +4408,7 @@ tionally attributed to Dionysius (c.170–c.90 bc), a pupil of Aristarchus. This
 
 ---
 
-<!-- page 97 -->
+<!-- page 96 -->
 
 78
 OTHER SCHOLARLY WORKS
@@ -4458,7 +4458,7 @@ edition (see Lallot 1998: 15), and the older edition by Bekker (1814–21: vol. 
 
 ---
 
-<!-- page 98 -->
+<!-- page 97 -->
 
 79
 should be used only as a last resort. Translations of the Tevcnh abound; there is an
@@ -4509,7 +4509,7 @@ pp. lvii–lxxiii), and Uhlig (GG i.i, pp. xliii–xlvi). The Armenian translati
 
 ---
 
-<!-- page 99 -->
+<!-- page 98 -->
 
 80
 OTHER SCHOLARLY WORKS
@@ -4559,7 +4559,7 @@ Pomponius Porphyrio, but an otherwise unknown later scholar; see GG i.iii, pp. x
 
 ---
 
-<!-- page 100 -->
+<!-- page 99 -->
 
 81
 There are also a number of extant works of uncertain authorship that are some-
@@ -4607,7 +4607,7 @@ and from the 9th-cent. iconoclast Joannes Grammaticus.
 
 ---
 
-<!-- page 101 -->
+<!-- page 100 -->
 
 82
 OTHER SCHOLARLY WORKS
@@ -4656,7 +4656,7 @@ the 10th cent. See Laurent (1963), Becares (1988), and Montana (1995: pp. xlviii
 
 ---
 
-<!-- page 102 -->
+<!-- page 101 -->
 
 83
 issues; this work may be based partly on lost ancient sources, but it is now gener-
@@ -4706,7 +4706,7 @@ Bithynia, an astronomer and mathematician who wrote c.100 bc.
 
 ---
 
-<!-- page 103 -->
+<!-- page 102 -->
 
 84
 OTHER SCHOLARLY WORKS
@@ -4755,7 +4755,7 @@ work little is known.
 
 ---
 
-<!-- page 104 -->
+<!-- page 103 -->
 
 85
 born (1976: 48–9, 89, 150–1, 161–2), Fraser (1972: i. 474, ii. 687–8), Wackernagel
@@ -4803,7 +4803,7 @@ torian probably of the 3rd cent. bc), a mathematician, a comic poet, and several
 
 ---
 
-<!-- page 105 -->
+<!-- page 104 -->
 
 86
 OTHER SCHOLARLY WORKS
@@ -4850,7 +4850,7 @@ the 9th century.
 
 ---
 
-<!-- page 106 -->
+<!-- page 105 -->
 
 87
 do not on the whole preserve significant amounts of ancient scholarship. In addi-
@@ -4898,7 +4898,7 @@ not complete.
 
 ---
 
-<!-- page 107 -->
+<!-- page 106 -->
 
 88
 OTHER SCHOLARLY WORKS
@@ -4947,7 +4947,7 @@ AD; the author was not the Epicurean Diogenianus. The lexicon is now lost.
 
 ---
 
-<!-- page 108 -->
+<!-- page 107 -->
 
 89
 The lexicon in its current form is substantially different from the one Hesychius
@@ -4997,7 +4997,7 @@ pathy for their readers give a numerical reference, such as “a 4430” or (eve
 
 ---
 
-<!-- page 109 -->
+<!-- page 108 -->
 
 90
 OTHER SCHOLARLY WORKS
@@ -5045,7 +5045,7 @@ Hunger (1978: ii. 40–1).
 
 ---
 
-<!-- page 110 -->
+<!-- page 109 -->
 
 91
 There is an excellent edition of the Suda by Ada Adler (1928–38 =TLG), and
@@ -5093,7 +5093,7 @@ many are the uncorrected work of people with no expertise in the subject.
 
 ---
 
-<!-- page 111 -->
+<!-- page 110 -->
 
 92
 OTHER SCHOLARLY WORKS
@@ -5142,7 +5142,7 @@ how different our versions of these hypotheses are from the ones he produced.
 
 ---
 
-<!-- page 112 -->
+<!-- page 111 -->
 
 93
 proverbs, and an important glossary entitled Levxei", which contained sections
@@ -5192,7 +5192,7 @@ that the overall title Levxei" is a fiction (see Slater 1976: 237 n. 11).
 
 ---
 
-<!-- page 113 -->
+<!-- page 112 -->
 
 94
 OTHER SCHOLARLY WORKS
@@ -5240,7 +5240,7 @@ Aristarchus, and author of many scholarly works now lost), Ammonius Saccas (an A
 
 ---
 
-<!-- page 114 -->
+<!-- page 113 -->
 
 95
 only as epitomes, of which the most significant are the Peri; diaûora÷" levxewn
@@ -5291,7 +5291,7 @@ authority by associating it with a more famous scholar.
 
 ---
 
-<!-- page 115 -->
+<!-- page 114 -->
 
 96
 OTHER SCHOLARLY WORKS
@@ -5339,7 +5339,7 @@ to the classical period.
 
 ---
 
-<!-- page 116 -->
+<!-- page 115 -->
 
 97
 long to fifth-century usage. Two of his works survive, both concerned with the
@@ -5389,7 +5389,7 @@ than a contemporary.
 
 ---
 
-<!-- page 117 -->
+<!-- page 116 -->
 
 98
 OTHER SCHOLARLY WORKS
@@ -5437,7 +5437,7 @@ bers 13 and 14 in RE.
 
 ---
 
-<!-- page 118 -->
+<!-- page 117 -->
 
 99
 Attic words and their Attic equivalents. One covers the whole alphabet and has been
@@ -5485,7 +5485,7 @@ tinople, and Caesarea.
 
 ---
 
-<!-- page 119 -->
+<!-- page 118 -->
 
 100
 OTHER SCHOLARLY WORKS
@@ -5534,7 +5534,7 @@ cannot be simply the composition of any of these Cyrils.
 
 ---
 
-<!-- page 120 -->
+<!-- page 119 -->
 
 101
 Henrichs (1971–3: 112–16), Reitzenstein (1888), and Lucà (1994), but much
@@ -5582,7 +5582,7 @@ tion of Plato.
 
 ---
 
-<!-- page 121 -->
+<!-- page 120 -->
 
 102
 OTHER SCHOLARLY WORKS
@@ -5629,7 +5629,7 @@ and Galen’s glossaries of Hippocratic words (see 2.2.1), Timaeus’ lexicon to
 
 ---
 
-<!-- page 122 -->
+<!-- page 121 -->
 
 103
 is a substantial body of other lexicographical material surviving on papyrus or via
@@ -5677,7 +5677,7 @@ trustworthy.
 
 ---
 
-<!-- page 123 -->
+<!-- page 122 -->
 
 104
 OTHER SCHOLARLY WORKS
@@ -5726,7 +5726,7 @@ author himself, we now have an epitome in one book, known as the Handbook or
 
 ---
 
-<!-- page 124 -->
+<!-- page 123 -->
 
 105
 Encheiridion. There are also some fragments of disputed authorship that could
@@ -5776,7 +5776,7 @@ in Macedonia. He compiled an anthology of Greek literature from Homer to the
 
 ---
 
-<!-- page 125 -->
+<!-- page 124 -->
 
 106
 OTHER SCHOLARLY WORKS
@@ -5801,7 +5801,7 @@ citation processes.
 
 ---
 
-<!-- page 126 -->
+<!-- page 125 -->
 
 4
 Introduction to Scholarly Greek
@@ -5837,7 +5837,7 @@ ing, a note on spelling or punctuation, a discussion of interpretation, etc.—b
 
 ---
 
-<!-- page 127 -->
+<!-- page 126 -->
 
 108
 INTRODUCTION TO SCHOLARLY GREEK
@@ -5884,7 +5884,7 @@ ings of a[rko", -eo", tov with those of a[rk(t)o", -ou, oJ and hJ.
 
 ---
 
-<!-- page 128 -->
+<!-- page 127 -->
 
 109
 mevro" hjrhvmwsan kai; ajûeivlanto: . . . This could be translated “to;n me;n ojxeivaisi:
@@ -5932,7 +5932,7 @@ original.
 
 ---
 
-<!-- page 129 -->
+<!-- page 128 -->
 
 110
 INTRODUCTION TO SCHOLARLY GREEK
@@ -5979,7 +5979,7 @@ lated “ejpevtrapen: Aristarchus [reads] ejpevtrepe [instead],” and a T schol
 
 ---
 
-<!-- page 130 -->
+<!-- page 129 -->
 
 111
 “ojtruvnei": the [texts6] of Aristarchus [have] ojtrunevei" separately [i.e. without con-
@@ -6026,7 +6026,7 @@ alternative and no ou{tw("), the source named is the source of the alternative.
 
 ---
 
-<!-- page 131 -->
+<!-- page 130 -->
 
 112
 INTRODUCTION TO SCHOLARLY GREEK
@@ -6076,7 +6076,7 @@ function as the vocative of the article in grammatical works.
 
 ---
 
-<!-- page 132 -->
+<!-- page 131 -->
 
 113
 toi÷n carievntoin, wj¿ carivente” (GG iv.i: 11. 15), which is the equivalent of
@@ -6126,7 +6126,7 @@ verbal description of gender, number, and case. Nominal paradigms without articl
 
 ---
 
-<!-- page 133 -->
+<!-- page 132 -->
 
 114
 INTRODUCTION TO SCHOLARLY GREEK
@@ -6179,7 +6179,7 @@ Sanskrit grammatical order; see Allen and Brink (1980).
 
 ---
 
-<!-- page 134 -->
+<!-- page 133 -->
 
 115
 some other types of literature, since most scholars were well trained in classical Greek
@@ -6227,7 +6227,7 @@ like paideuvw.
 
 ---
 
-<!-- page 135 -->
+<!-- page 134 -->
 
 116
 INTRODUCTION TO SCHOLARLY GREEK
@@ -6275,7 +6275,7 @@ excellent explanation in GG ii.iii: 141–61.
 
 ---
 
-<!-- page 136 -->
+<!-- page 135 -->
 
 117
 4.1.26 Substantivization
@@ -6326,7 +6326,7 @@ chez and Latin apud; it is English that is difficult here.
 
 ---
 
-<!-- page 137 -->
+<!-- page 136 -->
 
 118
 INTRODUCTION TO SCHOLARLY GREEK
@@ -6372,7 +6372,7 @@ pare them to these lines as they now appear in texts of Homer.
 
 ---
 
-<!-- page 138 -->
+<!-- page 137 -->
 
 119
 4.1.32 Prepositions: katav
@@ -6421,7 +6421,7 @@ the specialized meaning “be a (noted) exception.” It is thus used for except
 
 ---
 
-<!-- page 139 -->
+<!-- page 138 -->
 
 120
 INTRODUCTION TO SCHOLARLY GREEK
@@ -6471,7 +6471,7 @@ scholion on Lucian’s Phalaris 1. 1 reads in part pavredroi: pavredro" tou÷ de
 
 ---
 
-<!-- page 140 -->
+<!-- page 139 -->
 
 121
 paredreuvei de; tw÷/ dei÷ni: to; o[noma meta; genikh÷", to; de; rJh÷ma meta; dotikh÷",
@@ -6521,7 +6521,7 @@ antine writers.
 
 ---
 
-<!-- page 141 -->
+<!-- page 140 -->
 
 122
 INTRODUCTION TO SCHOLARLY GREEK
@@ -6571,7 +6571,7 @@ remains of an important point made by Aristonicus, for this fundamental meaning 
 
 ---
 
-<!-- page 142 -->
+<!-- page 141 -->
 
 123
 scripts as well as in modern editions, an editor’s practice in this respect may well
@@ -6617,7 +6617,7 @@ had three genders, but many Greek grammarians thought there were four or five
 
 ---
 
-<!-- page 143 -->
+<!-- page 142 -->
 
 124
 INTRODUCTION TO SCHOLARLY GREEK
@@ -6665,7 +6665,7 @@ times o[noma, movrion, mevro" lovgou, or other terms are also used for our “wo
 
 ---
 
-<!-- page 144 -->
+<!-- page 143 -->
 
 125
 all with slightly different meanings), which in turn are composed of sullabaiv (syl-
@@ -6712,7 +6712,7 @@ cumflex accent, lit. one “drawn around”). These are designated by perispa÷n
 
 ---
 
-<!-- page 145 -->
+<!-- page 144 -->
 
 126
 INTRODUCTION TO SCHOLARLY GREEK
@@ -6759,7 +6759,7 @@ the grave came to be used to mark the suppression of a final acute before anothe
 
 ---
 
-<!-- page 146 -->
+<!-- page 145 -->
 
 127
 and relative pronouns), ajntwnumiva (pronoun,25 lit. “name-replacement,”), provqesi"
@@ -6806,7 +6806,7 @@ ings, e.g. Plavtwn Dionusivw/ caivrein “Plato to Dionysius, greetings” (Epis
 
 ---
 
-<!-- page 147 -->
+<!-- page 146 -->
 
 128
 INTRODUCTION TO SCHOLARLY GREEK
@@ -6858,7 +6858,7 @@ a type of present tense.
 
 ---
 
-<!-- page 148 -->
+<!-- page 147 -->
 
 129
 this type of Greek, however, is not always adequate to explain everything one finds
@@ -6907,7 +6907,7 @@ The situation is complicated by the fact that the concept of a book title was no
 
 ---
 
-<!-- page 149 -->
+<!-- page 148 -->
 
 130
 INTRODUCTION TO SCHOLARLY GREEK
@@ -6957,7 +6957,7 @@ editor was referring once it has become obsolete and obscure.
 
 ---
 
-<!-- page 150 -->
+<!-- page 149 -->
 
 131
 There are three large collections of fragments that between them cover more
@@ -7026,7 +7026,7 @@ tude, with the diagonal mark occurring only after the last one: thus ndV is 54, 
 
 ---
 
-<!-- page 151 -->
+<!-- page 150 -->
 
 132
 INTRODUCTION TO SCHOLARLY GREEK
@@ -7097,7 +7097,7 @@ Greek epigraphy, e.g. Woodhead (1959: 109).
 
 ---
 
-<!-- page 152 -->
+<!-- page 151 -->
 
 133
 translated “bivstax [means] the 2nd [man] after the king, among the Persians [i.e.
@@ -7146,7 +7146,7 @@ in Chronique d’Égypte, 7 (1932), 285–7 (cf. also 262–9).
 
 ---
 
-<!-- page 153 -->
+<!-- page 152 -->
 
 134
 INTRODUCTION TO SCHOLARLY GREEK
@@ -7195,7 +7195,7 @@ by editors, but not all editions follow these recommendations.
 
 ---
 
-<!-- page 154 -->
+<!-- page 153 -->
 
 135
 information in question than is the passage one is consulting, and sometimes one
@@ -7260,7 +7260,7 @@ text and therefore constructing his or her own apparatus criticus.
 
 ---
 
-<!-- page 155 -->
+<!-- page 154 -->
 
 136
 INTRODUCTION TO SCHOLARLY GREEK
@@ -7341,7 +7341,7 @@ initium “beginning”
 
 ---
 
-<!-- page 156 -->
+<!-- page 155 -->
 
 137
 ins.
@@ -7433,7 +7433,7 @@ placing square brackets around words or letters)
 
 ---
 
-<!-- page 157 -->
+<!-- page 156 -->
 
 138
 INTRODUCTION TO SCHOLARLY GREEK
@@ -7501,7 +7501,7 @@ A and B do not have kaiv at this point (but implying that the other manuscripts 
 
 ---
 
-<!-- page 158 -->
+<!-- page 157 -->
 
 139
 have it), or “kaiv AB,” meaning that manuscripts A and B have kaiv at this point
@@ -7551,7 +7551,7 @@ ciples on which his or her apparatus is based.) Sometimes even major deviations
 
 ---
 
-<!-- page 159 -->
+<!-- page 158 -->
 
 140
 INTRODUCTION TO SCHOLARLY GREEK
@@ -7565,7 +7565,7 @@ divisions are usually editorial additions.
 
 ---
 
-<!-- page 160 -->
+<!-- page 159 -->
 
 5
 Reader
@@ -7603,7 +7603,7 @@ terests of legibility.
 
 ---
 
-<!-- page 161 -->
+<!-- page 160 -->
 
 142
 READER
@@ -7655,7 +7655,7 @@ READER
 
 ---
 
-<!-- page 162 -->
+<!-- page 161 -->
 
 143
 translated can be found in the commentary: if notes are given on a quotation, it
@@ -7700,7 +7700,7 @@ Notes: parav: cf. 4.1.28.
 
 ---
 
-<!-- page 163 -->
+<!-- page 162 -->
 
 144
 READER
@@ -7747,7 +7747,7 @@ singular diaûevrei interchangeably with the plural in such contexts.
 
 ---
 
-<!-- page 164 -->
+<!-- page 163 -->
 
 145
 17. Ammonius, ed. Nickau, 26
@@ -7794,7 +7794,7 @@ Notes: d– is the equivalent of dV here; aiJretov" “chosen”; suvssito" “m
 
 ---
 
-<!-- page 165 -->
+<!-- page 164 -->
 
 146
 READER
@@ -7843,7 +7843,7 @@ Notes: cf. 4.1.20; divata “way of living”; dai÷" for daiv" “meal.”
 
 ---
 
-<!-- page 166 -->
+<!-- page 165 -->
 
 147
 27. Etymologicum genuinum, ed. Lasserre and Livadaras, A 131
@@ -7894,7 +7894,7 @@ Notes: ajlûhsthv" is a Homeric word now thought to mean “bread-eating”; euJ
 
 ---
 
-<!-- page 167 -->
+<!-- page 166 -->
 
 148
 READER
@@ -7943,7 +7943,7 @@ $O  #Ai>di ãA3Ã: oiJ mevn ûacin: para; to; ei[dw, to; blevpw, oJ mevllwn
 
 ---
 
-<!-- page 168 -->
+<!-- page 167 -->
 
 149
 ei[cw, o[noma rJhmatiko;n i[c dia; tou÷  i–: polla; gavr eijcin ojnovmata—:
@@ -7993,7 +7993,7 @@ kai; ma÷llon ajlhqevc: oJ ga;r Ckopelivnou ejcti;n ajûanevcteroc kai;
 
 ---
 
-<!-- page 169 -->
+<!-- page 168 -->
 
 150
 READER
@@ -8041,7 +8041,7 @@ two ways.”
 
 ---
 
-<!-- page 170 -->
+<!-- page 169 -->
 
 151
 41. Homer scholia, ed. Erbse, Iliad 15. 437 (from Nicanor)
@@ -8093,7 +8093,7 @@ undergone different developments before ultimately finding their way to differen
 
 ---
 
-<!-- page 171 -->
+<!-- page 170 -->
 
 152
 READER
@@ -8143,7 +8143,7 @@ tally a future less vivid (remote future), despite the abandonment of the optati
 
 ---
 
-<!-- page 172 -->
+<!-- page 171 -->
 
 153
 for the present indicative and then for the future indicative. ejntelhv" “complete”;
@@ -8192,7 +8192,7 @@ tw/÷ iJppeuvonti.
 
 ---
 
-<!-- page 173 -->
+<!-- page 172 -->
 
 154
 READER
@@ -8242,7 +8242,7 @@ ing into the text on the authority of this scholion. h[mhn “I was” (late Gre
 
 ---
 
-<!-- page 174 -->
+<!-- page 173 -->
 
 155
 of eijmiv); kai; cwri;" dev: the presence of both kaiv and dev shows that kaiv means “also,”
@@ -8290,7 +8290,7 @@ has Io as its subject; metabavllw “change”; parav + gen. “by” (cf. 4.1.2
 
 ---
 
-<!-- page 175 -->
+<!-- page 174 -->
 
 156
 READER
@@ -8338,7 +8338,7 @@ kata; th;n o" v !Olumpiavda, th÷" kh v Puqiavdo" th/÷ prokeimevnh/
 
 ---
 
-<!-- page 176 -->
+<!-- page 175 -->
 
 157
 th;n u{steron Puqiavda, h{ti" gevgone peri; th;n oe v !Olumpiavda,
@@ -8388,7 +8388,7 @@ eij ¿nai ajpodivdwsin, ejn h/J ¿ ejxivstanto kai; tw÷n skeuarivwn oiJ
 
 ---
 
-<!-- page 177 -->
+<!-- page 176 -->
 
 158
 READER
@@ -8439,7 +8439,7 @@ hJ¿kon “threw”; e[raze “to the ground”; oijnopovth" “wine-drinker”;
 
 ---
 
-<!-- page 178 -->
+<!-- page 177 -->
 
 159
 ajpeikovtw" “unreasonably.” The fragments are Critias fr. B 2 in M. L. West, Iambi
@@ -8487,7 +8487,7 @@ in Pfeiffer (1949–53).
 
 ---
 
-<!-- page 179 -->
+<!-- page 178 -->
 
 160
 READER
@@ -8536,7 +8536,7 @@ puvrgo" “dice-box.”
 
 ---
 
-<!-- page 180 -->
+<!-- page 179 -->
 
 161
 75. Aeschines scholia, ed. Dilts, 2. 10
@@ -8586,7 +8586,7 @@ Kw/vou kV biblivwn ejkponhvsanto" pragmateivan meta; tou÷ triva me;n
 
 ---
 
-<!-- page 181 -->
+<!-- page 180 -->
 
 162
 READER
@@ -8635,7 +8635,7 @@ lovgo" aujtw/÷ givnetai, dia; tou÷t! ejpigraûh÷nai kat! ijhtrei÷on aujtav
 
 ---
 
-<!-- page 182 -->
+<!-- page 181 -->
 
 163
 ûasi, dia; taujto; de; tou÷to kai; th;n th÷" didaskaliva" tavxin oujk ajkribw÷"
@@ -8683,7 +8683,7 @@ script had a sign linking this scholion to the word patrw/÷a.
 
 ---
 
-<!-- page 183 -->
+<!-- page 182 -->
 
 164
 READER
@@ -8732,7 +8732,7 @@ from ajlkuwvn “halcyon” (a kind of bird); o[ssa “omen-bearing cry.” The 
 
 ---
 
-<!-- page 184 -->
+<!-- page 183 -->
 
 165
 would now be given as fr. 62 Snell–Maehler, referring to H. Maehler, Pindari
@@ -8781,7 +8781,7 @@ Fainovmena, iJkanw÷" oij¿mai deiknuvnai dia; tw÷n proeirhmevnwn. ejn oiJ¿"
 
 ---
 
-<!-- page 185 -->
+<!-- page 184 -->
 
 166
 READER
@@ -8833,7 +8833,7 @@ lambavnein to; ejntele;ç kai; ou{twç poiei÷n th;n çunaivreçin, tou÷
 
 ---
 
-<!-- page 186 -->
+<!-- page 185 -->
 
 167
 Dhmoçqevneoç tou÷ Dhmoçqevnouç. tw/÷ Dhmoçqevnei> tw/÷ Dhmoçqevnei,
@@ -8887,7 +8887,7 @@ e[nia dev ejstin ejpivkoina.
 
 ---
 
-<!-- page 187 -->
+<!-- page 186 -->
 
 168
 READER
@@ -8939,7 +8939,7 @@ proparoxuvnetai kata; th;n koinh;n sunhvqeian.
 
 ---
 
-<!-- page 188 -->
+<!-- page 187 -->
 
 169
 Trevpei hJ !Atqi;" to; s– ph/÷ me;n eij" t–, ph/÷ de; eij" x–: th;n ga;r qavlassan
@@ -8989,7 +8989,7 @@ oiJ¿on i{ppoç kuvwn, ejpivkoinon de; oiJ¿on celidwvn ajetovç.
 
 ---
 
-<!-- page 189 -->
+<!-- page 188 -->
 
 170
 READER
@@ -9040,7 +9040,7 @@ ajlla; “kaq! eJno;ç kurivou”, pavnu ajnohvtwç.
 
 ---
 
-<!-- page 190 -->
+<!-- page 189 -->
 
 171
 Notes: cf. 4.2.12 for vocabulary; ajntivgraûon “copy, manuscript”; sûavllomai “to
@@ -9089,7 +9089,7 @@ crovnon oJra÷tai prw÷ton provçwpon eJnikou÷ kai; trivton eJnikou÷ kai; prw�
 
 ---
 
-<!-- page 191 -->
+<!-- page 190 -->
 
 172
 READER
@@ -9140,7 +9140,7 @@ barunovmenon “[the eijmi] that has a recessive accent,” i.e. eij¿mi ibo; pa
 
 ---
 
-<!-- page 192 -->
+<!-- page 191 -->
 
 173
 that a verb conjugated 1st sing. -mi, 3rd sing. -si is a true mi-verb (and thus should
@@ -9190,7 +9190,7 @@ tou;ç uJpotaktikou;ç mevllontaç, kai; oiJ ejpizhthvçanteç kata; tiv ouj
 
 ---
 
-<!-- page 193 -->
+<!-- page 192 -->
 
 174
 READER
@@ -9240,7 +9240,7 @@ ojxei÷an, kai; to; ejmou÷ aujtou÷ di;ç e[con th;n periçpwmevnhn. tau÷ta
 
 ---
 
-<!-- page 194 -->
+<!-- page 193 -->
 
 175
 ga;r kai; ta; touvtoiç o{moia, a[peira o[nta, çunelqovnta me;n kata;
@@ -9284,7 +9284,7 @@ language].
 
 ---
 
-<!-- page 195 -->
+<!-- page 194 -->
 
 176
 READER
@@ -9329,7 +9329,7 @@ troop-transport ploi÷a.”
 
 ---
 
-<!-- page 196 -->
+<!-- page 195 -->
 
 177
 21. Puvqioi [refers], among the Spartans, [to] four chosen men, two messmates
@@ -9375,7 +9375,7 @@ two sigmas [i.e. into an ending in -ssw], [so in this case from] nivptw, [they
 
 ---
 
-<!-- page 197 -->
+<!-- page 196 -->
 
 178
 READER
@@ -9423,7 +9423,7 @@ an ending in -ao" because the a is short]. And it is worth inquiring why it
 
 ---
 
-<!-- page 198 -->
+<!-- page 197 -->
 
 179
 is not declined [nom.] taw÷", [gen.] taw÷to", and [why] Tuûw÷" [is not
@@ -9469,7 +9469,7 @@ after the conjunction dhv.
 
 ---
 
-<!-- page 199 -->
+<!-- page 198 -->
 
 180
 READER
@@ -9515,7 +9515,7 @@ in this passage does not require.
 
 ---
 
-<!-- page 200 -->
+<!-- page 199 -->
 
 181
 50. clwroi; uJpai; deivou" peûobhmevnoi: the preposition uJpov became uJpaiv in
@@ -9563,7 +9563,7 @@ also [there is a reading here] without the n, hj¿, instead of [i.e. contracted
 
 ---
 
-<!-- page 201 -->
+<!-- page 200 -->
 
 182
 READER
@@ -9609,7 +9609,7 @@ the chronological information [in the ode] also accords with [this dating].
 
 ---
 
-<!-- page 202 -->
+<!-- page 201 -->
 
 183
 For he says, implying that [Hieron] is already king, o}" Surakovssaisin
@@ -9659,7 +9659,7 @@ prize.
 
 ---
 
-<!-- page 203 -->
+<!-- page 202 -->
 
 184
 READER
@@ -9707,7 +9707,7 @@ council into blame for the thank-offering for good news.”
 
 ---
 
-<!-- page 204 -->
+<!-- page 203 -->
 
 185
 74. ajstragavlou" tev tina" diaseivstou" (“and some shaken dice”): often
@@ -9757,7 +9757,7 @@ books after writing three [books on this topic] against Cydias the follower
 
 ---
 
-<!-- page 205 -->
+<!-- page 204 -->
 
 186
 READER
@@ -9806,7 +9806,7 @@ mincemeat”.
 
 ---
 
-<!-- page 206 -->
+<!-- page 205 -->
 
 187
 80. ejûhvbwn: those who happen (to be) up to 15 years [old] are called ephebes.
@@ -9853,7 +9853,7 @@ each of the things that are said. And it [is] not without profit now too in a
 
 ---
 
-<!-- page 207 -->
+<!-- page 206 -->
 
 188
 READER
@@ -9902,7 +9902,7 @@ Dhmosqevnei", voc. Dhmosqevnee", Dhmosqevnei".
 
 ---
 
-<!-- page 208 -->
+<!-- page 207 -->
 
 189
 90. It is necessary to know that the feminine [nouns and adjectives] ending in
@@ -9952,7 +9952,7 @@ nectar] is nameless.
 
 ---
 
-<!-- page 209 -->
+<!-- page 208 -->
 
 190
 READER
@@ -10001,7 +10001,7 @@ such as gaihvi>o" (“earth-born”) (attested at Odyssey 7. 324).
 
 ---
 
-<!-- page 210 -->
+<!-- page 209 -->
 
 191
 And the types of derived [nouns] are seven: patronymic, possessive, com-
@@ -10050,7 +10050,7 @@ both of them also shows that that [Dionysius] is one and this one is an-
 
 ---
 
-<!-- page 211 -->
+<!-- page 210 -->
 
 192
 READER
@@ -10100,7 +10100,7 @@ sion, offering also other [examples] pertaining to the same silliness [i.e.
 
 ---
 
-<!-- page 212 -->
+<!-- page 211 -->
 
 193
 other equally silly examples]. In the first place, [it is clear] that no nomi-
@@ -10151,7 +10151,7 @@ are stubbornly turning things upside down.
 
 ---
 
-<!-- page 213 -->
+<!-- page 212 -->
 
 194
 READER
@@ -10198,7 +10198,7 @@ traced to the Odyssey.
 
 ---
 
-<!-- page 214 -->
+<!-- page 213 -->
 
 195
 108. Hesychius, ed. Latte, A 7279
@@ -10244,7 +10244,7 @@ Notes: stugnov" “gloomy”; kathûhv" “downcast”; pareimevno" (pf. part < 
 
 ---
 
-<!-- page 215 -->
+<!-- page 214 -->
 
 196
 READER
@@ -10291,7 +10291,7 @@ polevmioi õei[te aujtoi;Õ eJtevroiõ"Õ ejpistrateuvoien. ejpimacei÷n de;
 
 ---
 
-<!-- page 216 -->
+<!-- page 215 -->
 
 197
 o{tan tou;" ejpiovnta" ajmuvnwntai movnon. dievstalke Qoukudivdh"
@@ -10340,7 +10340,7 @@ to; proçtaktikovn.
 
 ---
 
-<!-- page 217 -->
+<!-- page 216 -->
 
 198
 READER
@@ -10392,7 +10392,7 @@ diphthong (geivnw) rather than the i alone (givnw).
 
 ---
 
-<!-- page 218 -->
+<!-- page 217 -->
 
 199
 138. Etymologicum genuinum, ed. Lasserre and Livadaras, A 122
@@ -10440,7 +10440,7 @@ body of marginal scholia.
 
 ---
 
-<!-- page 219 -->
+<!-- page 218 -->
 
 200
 READER
@@ -10488,7 +10488,7 @@ Notes: o{ti: cf. 4.1.44; ajrsenikw÷" “in masculine form.”
 
 ---
 
-<!-- page 220 -->
+<!-- page 219 -->
 
 201
 150. Homer scholia, ed. Erbse, Iliad 15. 563a1 (from Didymus)
@@ -10537,7 +10537,7 @@ healing; e[sti = ejsti; peripaqhv" “passionate”; ajnaûwvnhsi" “appellatio
 
 ---
 
-<!-- page 221 -->
+<!-- page 220 -->
 
 202
 READER
@@ -10587,7 +10587,7 @@ cordance with”; stivzw “punctuate”; ejpiv: cf. 4.1.31; teleiva stigmhv “
 
 ---
 
-<!-- page 222 -->
+<!-- page 221 -->
 
 203
 eJautov “by itself”; hJmistivcion “half line”; lovgo" “sense” (introducing another para-
@@ -10637,7 +10637,7 @@ ajetouv" ûasi tw÷n muqeuomevnwn ajetw÷n uJpomnhvmata:—MTAB
 
 ---
 
-<!-- page 223 -->
+<!-- page 222 -->
 
 204
 READER
@@ -10684,7 +10684,7 @@ tee of the ode, which celebrates his Pythian victory; lambavnw i.e. “win”; P
 
 ---
 
-<!-- page 224 -->
+<!-- page 223 -->
 
 205
 games”; the point of the last sentence is only to give the name of the games where
@@ -10733,7 +10733,7 @@ Kuvnna de; kai; Salabakcw; povrnai !Aqhvnhsin. Â◊G
 
 ---
 
-<!-- page 225 -->
+<!-- page 224 -->
 
 206
 READER
@@ -10781,7 +10781,7 @@ Carion are standard slave names in comedy.
 
 ---
 
-<!-- page 226 -->
+<!-- page 225 -->
 
 207
 172. Aeschines scholia, ed. Dilts, 1. 29
@@ -10829,7 +10829,7 @@ de; th÷" ejxaplwvsew" ejmûanivsomen povsa shmaivnousi, mimnh/skovmenoi
 
 ---
 
-<!-- page 227 -->
+<!-- page 226 -->
 
 208
 READER
@@ -10879,7 +10879,7 @@ i.e. with ejmevousi; katacravomai “misuse”; proshgoriva “word.”
 
 ---
 
-<!-- page 228 -->
+<!-- page 227 -->
 
 209
 178. Galen, glossary, introduction (Kühn xix. 63–5)
@@ -10929,7 +10929,7 @@ ognition”; the symbols at the end refer to manuscripts.
 
 ---
 
-<!-- page 229 -->
+<!-- page 228 -->
 
 210
 READER
@@ -10978,7 +10978,7 @@ ejn @Ellhçpovntw/. ghvmaç de; Eujçwvrou baçilevwç tw÷n Qra/kw÷n Aijnhvthn
 
 ---
 
-<!-- page 230 -->
+<!-- page 229 -->
 
 211
 genna/÷ Kuvzikon, ajû! ouJ¿ hJ povliç. Eujçwvrou de; uiJo;ç !Akavmaç, o}n
@@ -11028,7 +11028,7 @@ pro;" ta; gV. ejkei÷ dh; toivnun hJ megivsth hJmevra ejsti;n wJrw÷n ijshmerinw
 
 ---
 
-<!-- page 231 -->
+<!-- page 230 -->
 
 212
 READER
@@ -11083,7 +11083,7 @@ kai; hjwvç, kai; eijç o–uç
 
 ---
 
-<!-- page 232 -->
+<!-- page 231 -->
 
 213
 di! o{lou klivnontai w{çper ta; eijç w– qhluka; ejn aJpavçaiç tai÷ç ptwvçeçi:
@@ -11133,7 +11133,7 @@ Notes: cf. 4.2.11–12 for vocabulary; oJmoiogenw÷" i.e. agreeing in gender; sc
 
 ---
 
-<!-- page 233 -->
+<!-- page 232 -->
 
 214
 READER
@@ -11183,7 +11183,7 @@ d– is equivalent to dV here.
 
 ---
 
-<!-- page 234 -->
+<!-- page 233 -->
 
 215
 193. Gregory of Corinth, On Dialects, ed. Schaefer, pp. 179–82
@@ -11232,7 +11232,7 @@ this is the second scholion (cf. 4.1.5) on a lemma given earlier (!Erwthmatiko;n
 
 ---
 
-<!-- page 235 -->
+<!-- page 234 -->
 
 216
 READER
@@ -11283,7 +11283,7 @@ cent”; ajna; cei÷ra “current, everyday”; oJmiliva “conversation.” @Ap
 
 ---
 
-<!-- page 236 -->
+<!-- page 235 -->
 
 217
 aJpaxaJplw÷" must be written as aJpa;x a{panta" and aJpa;x aJplw÷" in modern no-
@@ -11332,7 +11332,7 @@ mh; paralavbwçi to;n lovgon, diaçwv/zein ta; th÷ç çuntavxewç. ouJ¿toi
 
 ---
 
-<!-- page 237 -->
+<!-- page 236 -->
 
 218
 READER
@@ -11364,7 +11364,7 @@ ajnavgnwsi" “reading”; ajna; cei÷ra “current, everyday”; oJmiliva “us
 
 ---
 
-<!-- page 238 -->
+<!-- page 237 -->
 
 6
 Glossary of Grammatical Terms
@@ -11412,7 +11412,7 @@ syllable)
 
 ---
 
-<!-- page 239 -->
+<!-- page 238 -->
 
 220
 ANCIENT GREEK SCHOLARSHIP
@@ -11501,7 +11501,7 @@ accumulation, succession (lit. one-on-anotherness)
 
 ---
 
-<!-- page 240 -->
+<!-- page 239 -->
 
 GLOSSARY OF GRAMMATICAL TERMS
 221
@@ -11588,7 +11588,7 @@ to reduplicate
 
 ---
 
-<!-- page 241 -->
+<!-- page 240 -->
 
 222
 ANCIENT GREEK SCHOLARSHIP
@@ -11679,7 +11679,7 @@ to be subject to anastrophe
 
 ---
 
-<!-- page 242 -->
+<!-- page 241 -->
 
 GLOSSARY OF GRAMMATICAL TERMS
 223
@@ -11770,7 +11770,7 @@ to fill up, complete
 
 ---
 
-<!-- page 243 -->
+<!-- page 242 -->
 
 224
 ANCIENT GREEK SCHOLARSHIP
@@ -11859,7 +11859,7 @@ corresponding (of letters)
 
 ---
 
-<!-- page 244 -->
+<!-- page 243 -->
 
 GLOSSARY OF GRAMMATICAL TERMS
 225
@@ -11944,7 +11944,7 @@ inadmissible, unacceptable
 
 ---
 
-<!-- page 245 -->
+<!-- page 244 -->
 
 226
 ANCIENT GREEK SCHOLARSHIP
@@ -12028,7 +12028,7 @@ parative); independent
 
 ---
 
-<!-- page 246 -->
+<!-- page 245 -->
 
 GLOSSARY OF GRAMMATICAL TERMS
 227
@@ -12118,7 +12118,7 @@ correct, without solecisms
 
 ---
 
-<!-- page 247 -->
+<!-- page 246 -->
 
 228
 ANCIENT GREEK SCHOLARSHIP
@@ -12205,7 +12205,7 @@ augment, lengthening, intensification
 
 ---
 
-<!-- page 248 -->
+<!-- page 247 -->
 
 GLOSSARY OF GRAMMATICAL TERMS
 229
@@ -12281,7 +12281,7 @@ see section 4.2.9 above, Moore-Blunt (1978), Probert (2003: 16–17), and Lallot
 
 ---
 
-<!-- page 249 -->
+<!-- page 248 -->
 
 230
 ANCIENT GREEK SCHOLARSHIP
@@ -12361,7 +12361,7 @@ to aspirate
 
 ---
 
-<!-- page 250 -->
+<!-- page 249 -->
 
 GLOSSARY OF GRAMMATICAL TERMS
 231
@@ -12444,7 +12444,7 @@ elements, of a word into letters, of a diphthong into two vowels, of a double
 
 ---
 
-<!-- page 251 -->
+<!-- page 250 -->
 
 232
 ANCIENT GREEK SCHOLARSHIP
@@ -12530,7 +12530,7 @@ reduplication; doubling of consonants (as in tovsso")
 
 ---
 
-<!-- page 252 -->
+<!-- page 251 -->
 
 GLOSSARY OF GRAMMATICAL TERMS
 233
@@ -12617,7 +12617,7 @@ action, active force of a verb
 
 ---
 
-<!-- page 253 -->
+<!-- page 252 -->
 
 234
 ANCIENT GREEK SCHOLARSHIP
@@ -12699,7 +12699,7 @@ specific, not generic; see Swiggers and Wouters (1995a:
 
 ---
 
-<!-- page 254 -->
+<!-- page 253 -->
 
 GLOSSARY OF GRAMMATICAL TERMS
 235
@@ -12783,7 +12783,7 @@ expressive, vivid
 
 ---
 
-<!-- page 255 -->
+<!-- page 254 -->
 
 236
 ANCIENT GREEK SCHOLARSHIP
@@ -12868,7 +12868,7 @@ meaning
 
 ---
 
-<!-- page 256 -->
+<!-- page 255 -->
 
 GLOSSARY OF GRAMMATICAL TERMS
 237
@@ -12950,7 +12950,7 @@ to be defective (lack certain forms)
 
 ---
 
-<!-- page 257 -->
+<!-- page 256 -->
 
 238
 ANCIENT GREEK SCHOLARSHIP
@@ -13036,7 +13036,7 @@ epithet, additional name; see Lallot (1998: 155–6)
 
 ---
 
-<!-- page 258 -->
+<!-- page 257 -->
 
 GLOSSARY OF GRAMMATICAL TERMS
 239
@@ -13122,7 +13122,7 @@ optative mood
 
 ---
 
-<!-- page 259 -->
+<!-- page 258 -->
 
 240
 ANCIENT GREEK SCHOLARSHIP
@@ -13207,7 +13207,7 @@ to make a feminine form
 
 ---
 
-<!-- page 260 -->
+<!-- page 259 -->
 
 GLOSSARY OF GRAMMATICAL TERMS
 241
@@ -13294,7 +13294,7 @@ syllable
 
 ---
 
-<!-- page 261 -->
+<!-- page 260 -->
 
 242
 ANCIENT GREEK SCHOLARSHIP
@@ -13379,7 +13379,7 @@ to close, end with or together with (+ eij" + acc.)
 
 ---
 
-<!-- page 262 -->
+<!-- page 261 -->
 
 GLOSSARY OF GRAMMATICAL TERMS
 243
@@ -13464,7 +13464,7 @@ to use ordinary language
 
 ---
 
-<!-- page 263 -->
+<!-- page 262 -->
 
 244
 ANCIENT GREEK SCHOLARSHIP
@@ -13538,7 +13538,7 @@ meaning
 
 ---
 
-<!-- page 264 -->
+<!-- page 263 -->
 
 GLOSSARY OF GRAMMATICAL TERMS
 245
@@ -13618,7 +13618,7 @@ middle stop (in punctuation, indicates a pause for breath greater than that of a
 
 ---
 
-<!-- page 265 -->
+<!-- page 264 -->
 
 246
 ANCIENT GREEK SCHOLARSHIP
@@ -13700,7 +13700,7 @@ change, alteration
 
 ---
 
-<!-- page 266 -->
+<!-- page 265 -->
 
 GLOSSARY OF GRAMMATICAL TERMS
 247
@@ -13787,7 +13787,7 @@ grammarians)
 
 ---
 
-<!-- page 267 -->
+<!-- page 266 -->
 
 248
 ANCIENT GREEK SCHOLARSHIP
@@ -13878,7 +13878,7 @@ of similar form, agreeing
 
 ---
 
-<!-- page 268 -->
+<!-- page 267 -->
 
 GLOSSARY OF GRAMMATICAL TERMS
 249
@@ -13962,7 +13962,7 @@ correct pronunciation, diction
 
 ---
 
-<!-- page 269 -->
+<!-- page 268 -->
 
 250
 ANCIENT GREEK SCHOLARSHIP
@@ -14045,7 +14045,7 @@ between sections of text)
 
 ---
 
-<!-- page 270 -->
+<!-- page 269 -->
 
 GLOSSARY OF GRAMMATICAL TERMS
 251
@@ -14127,7 +14127,7 @@ pleonasm, expletive, superfluous complement
 
 ---
 
-<!-- page 271 -->
+<!-- page 270 -->
 
 252
 ANCIENT GREEK SCHOLARSHIP
@@ -14214,7 +14214,7 @@ to mean, signify; see Van Ophuijsen (1993a)
 
 ---
 
-<!-- page 272 -->
+<!-- page 271 -->
 
 GLOSSARY OF GRAMMATICAL TERMS
 253
@@ -14298,7 +14298,7 @@ conclusion, end
 
 ---
 
-<!-- page 273 -->
+<!-- page 272 -->
 
 254
 ANCIENT GREEK SCHOLARSHIP
@@ -14381,7 +14381,7 @@ y, s, z)
 
 ---
 
-<!-- page 274 -->
+<!-- page 273 -->
 
 GLOSSARY OF GRAMMATICAL TERMS
 255
@@ -14467,7 +14467,7 @@ relational (of nouns implying a relationship, as pathvr and ûivlo");
 
 ---
 
-<!-- page 275 -->
+<!-- page 274 -->
 
 256
 ANCIENT GREEK SCHOLARSHIP
@@ -14548,7 +14548,7 @@ tion, other aspects of pronunciation that were normally unwritten (quantity,
 
 ---
 
-<!-- page 276 -->
+<!-- page 275 -->
 
 GLOSSARY OF GRAMMATICAL TERMS
 257
@@ -14625,7 +14625,7 @@ significant, indicative of, meaning
 
 ---
 
-<!-- page 277 -->
+<!-- page 276 -->
 
 258
 ANCIENT GREEK SCHOLARSHIP
@@ -14707,7 +14707,7 @@ feet in meter); group of related words; syncope; see Lallot (1997: ii. 86–7; 1
 
 ---
 
-<!-- page 278 -->
+<!-- page 277 -->
 
 GLOSSARY OF GRAMMATICAL TERMS
 259
@@ -14790,7 +14790,7 @@ see Lallot (1998: 246–7), Dalimier (2001: 313–17), Schenkeveld (1982: 250,
 
 ---
 
-<!-- page 279 -->
+<!-- page 278 -->
 
 260
 ANCIENT GREEK SCHOLARSHIP
@@ -14873,7 +14873,7 @@ lable made up of several individual sounds), or of metrical elements); see Lallo
 
 ---
 
-<!-- page 280 -->
+<!-- page 279 -->
 
 GLOSSARY OF GRAMMATICAL TERMS
 261
@@ -14953,7 +14953,7 @@ order, series; position
 
 ---
 
-<!-- page 281 -->
+<!-- page 280 -->
 
 262
 ANCIENT GREEK SCHOLARSHIP
@@ -15042,7 +15042,7 @@ trivptwto", -on
 
 ---
 
-<!-- page 282 -->
+<!-- page 281 -->
 
 GLOSSARY OF GRAMMATICAL TERMS
 263
@@ -15128,7 +15128,7 @@ subject; see Pfister (1976), Lallot (1994b; 1997: ii. 44,
 
 ---
 
-<!-- page 283 -->
+<!-- page 282 -->
 
 264
 ANCIENT GREEK SCHOLARSHIP
@@ -15211,7 +15211,7 @@ vowel; see Lallot (1998: 98–101)
 
 ---
 
-<!-- page 284 -->
+<!-- page 283 -->
 
 GLOSSARY OF GRAMMATICAL TERMS
 265
@@ -15265,7 +15265,7 @@ and Wouters (1995a)
 
 ---
 
-<!-- page 285 -->
+<!-- page 284 -->
 
 Hints for Finding Works on Ancient Scholarship
 in Library Catalogs
@@ -15297,7 +15297,7 @@ Appendix A
 
 ---
 
-<!-- page 286 -->
+<!-- page 285 -->
 
 if the name contains ae or another combination that can also be expressed by a single
 letter with a diacritic, try it both with the combination of letters and with the single-
@@ -15350,7 +15350,7 @@ FINDING WORKS IN LIBRARY CATALOGS
 
 ---
 
-<!-- page 287 -->
+<!-- page 286 -->
 
 the book up in WorldCat (see paragraph 8 below) to see whether it belongs to a series
 and then to search in one’s library catalog under the name of the series.
@@ -15379,7 +15379,7 @@ APPENDIX A
 
 ---
 
-<!-- page 288 -->
+<!-- page 287 -->
 
 Hints for Using Facsimiles
 Some famous manuscripts with scholia have been published in
@@ -15411,7 +15411,7 @@ l’original du ms. grec 1807 de la bibliothèque nationale (Paris 1908).
 
 ---
 
-<!-- page 289 -->
+<!-- page 288 -->
 
 270
 ANCIENT GREEK SCHOLARSHIP
@@ -15455,7 +15455,7 @@ paleografici greci e latini (Florence 1884–97).
 
 ---
 
-<!-- page 290 -->
+<!-- page 289 -->
 
 Annotated Bibliography
 ABBREVIATIONS
@@ -15501,7 +15501,7 @@ Alexander of Aphrodisias, Supplement to On the Soul, trans. R. W. Sharples
 
 ---
 
-<!-- page 291 -->
+<!-- page 290 -->
 
 272
 ANNOTATED BIBLIOGRAPHY
@@ -15562,7 +15562,7 @@ tains commentary on Physics 4, pp. 601. 1–645. 19 and 773. 8–800. 25.
 
 ---
 
-<!-- page 292 -->
+<!-- page 291 -->
 
 REFERENCES
 273
@@ -15638,7 +15638,7 @@ ABBREVIATIONS
 
 ---
 
-<!-- page 293 -->
+<!-- page 292 -->
 
 274
 ANNOTATED BIBLIOGRAPHY
@@ -15704,7 +15704,7 @@ ed. R. Schneider 1878. Text of Pronouns, Adverbs, and Conjunctions with
 
 ---
 
-<!-- page 294 -->
+<!-- page 293 -->
 
 REFERENCES
 275
@@ -15781,7 +15781,7 @@ ABBREVIATIONS
 
 ---
 
-<!-- page 295 -->
+<!-- page 294 -->
 
 276
 ANNOTATED BIBLIOGRAPHY
@@ -15861,7 +15861,7 @@ of Byzantium in the tragic and comic hypotheses.
 
 ---
 
-<!-- page 296 -->
+<!-- page 295 -->
 
 REFERENCES
 277
@@ -15920,7 +15920,7 @@ Primarily on Aristarchus’ edition.
 
 ---
 
-<!-- page 297 -->
+<!-- page 296 -->
 
 278
 ANNOTATED BIBLIOGRAPHY
@@ -15979,7 +15979,7 @@ oped grammatical theory.
 
 ---
 
-<!-- page 298 -->
+<!-- page 297 -->
 
 REFERENCES
 279
@@ -16038,7 +16038,7 @@ fragments.
 
 ---
 
-<!-- page 299 -->
+<!-- page 298 -->
 
 280
 ANNOTATED BIBLIOGRAPHY
@@ -16097,7 +16097,7 @@ Dyscolus (Chico, Calif.). Important study of Apollonius’ Syntax; argues that i
 
 ---
 
-<!-- page 300 -->
+<!-- page 299 -->
 
 REFERENCES
 281
@@ -16156,7 +16156,7 @@ Borries, Johann von / Ioannes de (1911), Phrynichi sophistae Praeparatio sophist
 
 ---
 
-<!-- page 301 -->
+<!-- page 300 -->
 
 282
 ANNOTATED BIBLIOGRAPHY
@@ -16215,7 +16215,7 @@ of Cyrillus’ lexicon, with edition of a few glosses.
 
 ---
 
-<!-- page 302 -->
+<!-- page 301 -->
 
 REFERENCES
 283
@@ -16274,7 +16274,7 @@ Cazzaniga, Ignazio (1976), “Note Nicandree,” SCO 25: 317–19. Uses scholia 
 
 ---
 
-<!-- page 303 -->
+<!-- page 302 -->
 
 284
 ANNOTATED BIBLIOGRAPHY
@@ -16333,7 +16333,7 @@ text of Hephaestion’s work, Choeroboscus’ commentary, and scholia to Hephaes
 
 ---
 
-<!-- page 304 -->
+<!-- page 303 -->
 
 REFERENCES
 285
@@ -16392,7 +16392,7 @@ Daly, Lloyd W. (1967), Contributions to a History of Alphabetization in Antiquit
 
 ---
 
-<!-- page 305 -->
+<!-- page 304 -->
 
 286
 ANNOTATED BIBLIOGRAPHY
@@ -16451,7 +16451,7 @@ De Marco, Vittorio (1936), “Sulla tradizione manoscritta degli scolii Sofoclei
 
 ---
 
-<!-- page 306 -->
+<!-- page 305 -->
 
 REFERENCES
 287
@@ -16510,7 +16510,7 @@ duction, extensive commentary, and bibliography.
 
 ---
 
-<!-- page 307 -->
+<!-- page 306 -->
 
 288
 ANNOTATED BIBLIOGRAPHY
@@ -16568,7 +16568,7 @@ and related texts, excellent indices, and extensive bibliography.
 
 ---
 
-<!-- page 308 -->
+<!-- page 307 -->
 
 REFERENCES
 289
@@ -16626,7 +16626,7 @@ suggestions.
 
 ---
 
-<!-- page 309 -->
+<!-- page 308 -->
 
 290
 ANNOTATED BIBLIOGRAPHY
@@ -16685,7 +16685,7 @@ Eide, Tormod (1995), “Aristotelian topos and Greek Geometry,” Symbolae Osloe
 
 ---
 
-<!-- page 310 -->
+<!-- page 309 -->
 
 REFERENCES
 291
@@ -16744,7 +16744,7 @@ Hephaestion.
 
 ---
 
-<!-- page 311 -->
+<!-- page 310 -->
 
 292
 ANNOTATED BIBLIOGRAPHY
@@ -16803,7 +16803,7 @@ Geerlings, Wilhelm, and Schulze, Christian (2002) (edd.), Der Kommentar in Antik
 
 ---
 
-<!-- page 312 -->
+<!-- page 311 -->
 
 REFERENCES
 293
@@ -16862,7 +16862,7 @@ lxxxiv.
 
 ---
 
-<!-- page 313 -->
+<!-- page 312 -->
 
 294
 ANNOTATED BIBLIOGRAPHY
@@ -16921,7 +16921,7 @@ des Referierens und Exzerpierens in der Bibliotheke (Stockholm).
 
 ---
 
-<!-- page 314 -->
+<!-- page 313 -->
 
 REFERENCES
 295
@@ -16980,7 +16980,7 @@ Helm, Karl (1908), De Luciani scholiorum fontibus (Diss. Marburg). Important stu
 
 ---
 
-<!-- page 315 -->
+<!-- page 314 -->
 
 296
 ANNOTATED BIBLIOGRAPHY
@@ -17039,7 +17039,7 @@ Discusses scholia to the Tevcnh.
 
 ---
 
-<!-- page 316 -->
+<!-- page 315 -->
 
 REFERENCES
 297
@@ -17098,7 +17098,7 @@ Hunger, Herbert (1967), “Palimpsest-Fragmente aus Herodians Kaqolikh; prosw/di
 
 ---
 
-<!-- page 317 -->
+<!-- page 316 -->
 
 298
 ANNOTATED BIBLIOGRAPHY
@@ -17157,7 +17157,7 @@ formation of Classical Traditions Presented to Professor I. G. Kidd (New Brunswi
 
 ---
 
-<!-- page 318 -->
+<!-- page 317 -->
 
 REFERENCES
 299
@@ -17216,7 +17216,7 @@ commentarios ad Homeri Iliadem pertinentes (Leiden). Index to Van der Valk (1971
 
 ---
 
-<!-- page 319 -->
+<!-- page 318 -->
 
 300
 ANNOTATED BIBLIOGRAPHY
@@ -17275,7 +17275,7 @@ with the scholia to Aristophanes.
 
 ---
 
-<!-- page 320 -->
+<!-- page 319 -->
 
 REFERENCES
 301
@@ -17334,7 +17334,7 @@ tax, with Greek text based on Uhlig (not identical, but all differences are indi
 
 ---
 
-<!-- page 321 -->
+<!-- page 320 -->
 
 302
 ANNOTATED BIBLIOGRAPHY
@@ -17393,7 +17393,7 @@ magnum as Etymologicum magnum auctum.
 
 ---
 
-<!-- page 322 -->
+<!-- page 321 -->
 
 REFERENCES
 303
@@ -17452,7 +17452,7 @@ l’aristotélisme,” Ktèma, 13: 179–86.
 
 ---
 
-<!-- page 323 -->
+<!-- page 322 -->
 
 304
 ANNOTATED BIBLIOGRAPHY
@@ -17511,7 +17511,7 @@ Lowe, N. J. (1998), “Thesmophoria and Haloa: Myth, Physics and Mysteries,” i
 
 ---
 
-<!-- page 324 -->
+<!-- page 323 -->
 
 REFERENCES
 305
@@ -17570,7 +17570,7 @@ pyri,” in Geerlings and Schulze (2002): 55–77.
 
 ---
 
-<!-- page 325 -->
+<!-- page 324 -->
 
 306
 ANNOTATED BIBLIOGRAPHY
@@ -17629,7 +17629,7 @@ McNamee 1977.
 
 ---
 
-<!-- page 326 -->
+<!-- page 325 -->
 
 REFERENCES
 307
@@ -17688,7 +17688,7 @@ Aristarchus’ fragments on the doctrine of parts of speech.
 
 ---
 
-<!-- page 327 -->
+<!-- page 326 -->
 
 308
 ANNOTATED BIBLIOGRAPHY
@@ -17747,7 +17747,7 @@ d’Alexandrie et le Vat. Gr. 190,” AC 50: 526–34.
 
 ---
 
-<!-- page 328 -->
+<!-- page 327 -->
 
 REFERENCES
 309
@@ -17806,7 +17806,7 @@ Moraux, Paul (1967), “Le Parisinus graecus 1853 (Ms. E) d’Aristote,” Scrip
 
 ---
 
-<!-- page 329 -->
+<!-- page 328 -->
 
 310
 ANNOTATED BIBLIOGRAPHY
@@ -17865,7 +17865,7 @@ with particular reference to the editing of Homer.
 
 ---
 
-<!-- page 330 -->
+<!-- page 329 -->
 
 REFERENCES
 311
@@ -17924,7 +17924,7 @@ Hildesheim 1966). Text only; superseded by Westerink (1970).
 
 ---
 
-<!-- page 331 -->
+<!-- page 330 -->
 
 312
 ANNOTATED BIBLIOGRAPHY
@@ -17983,7 +17983,7 @@ is interspersed with the text and indented.
 
 ---
 
-<!-- page 332 -->
+<!-- page 331 -->
 
 REFERENCES
 313
@@ -18042,7 +18042,7 @@ Piérart, Marcel (1993), “De l’endroit où l’on abritait quelques statues 
 
 ---
 
-<!-- page 333 -->
+<!-- page 332 -->
 
 314
 ANNOTATED BIBLIOGRAPHY
@@ -18101,7 +18101,7 @@ Programm des königlichen humanistischen Gymnasiums Ansbach für das Schuljahr
 
 ---
 
-<!-- page 334 -->
+<!-- page 333 -->
 
 REFERENCES
 315
@@ -18160,7 +18160,7 @@ e commento (Catania). Reprints Pasquali’s text (1908) with Italian trans. and 
 
 ---
 
-<!-- page 335 -->
+<!-- page 334 -->
 
 316
 ANNOTATED BIBLIOGRAPHY
@@ -18219,7 +18219,7 @@ the Aratus scholia and the commentary on Hesiod.
 
 ---
 
-<!-- page 336 -->
+<!-- page 335 -->
 
 REFERENCES
 317
@@ -18278,7 +18278,7 @@ a number of key ideas and their dates.
 
 ---
 
-<!-- page 337 -->
+<!-- page 336 -->
 
 318
 ANNOTATED BIBLIOGRAPHY
@@ -18336,7 +18336,7 @@ königlichen Gymnasiums zu Duisburg). Only edition of this work of ps.-Theodosiu
 
 ---
 
-<!-- page 338 -->
+<!-- page 337 -->
 
 REFERENCES
 319
@@ -18394,7 +18394,7 @@ prescriptive grammar.
 
 ---
 
-<!-- page 339 -->
+<!-- page 338 -->
 
 320
 ANNOTATED BIBLIOGRAPHY
@@ -18452,7 +18452,7 @@ rections 1993). Standard text of these scholia.
 
 ---
 
-<!-- page 340 -->
+<!-- page 339 -->
 
 REFERENCES
 321
@@ -18510,7 +18510,7 @@ not always 100 percent accurate about contents of editions.
 
 ---
 
-<!-- page 341 -->
+<!-- page 340 -->
 
 322
 ANNOTATED BIBLIOGRAPHY
@@ -18569,7 +18569,7 @@ dans l’antiquité à la lumière des papyrus grammaticaux,” Lalies, 15: 83�
 
 ---
 
-<!-- page 342 -->
+<!-- page 341 -->
 
 REFERENCES
 323
@@ -18628,7 +18628,7 @@ sages in Pronouns, Adverbs, and Syntax. Cf. Mette (1938); Sluiter (1990: 83, 118
 
 ---
 
-<!-- page 343 -->
+<!-- page 342 -->
 
 324
 ANNOTATED BIBLIOGRAPHY
@@ -18687,7 +18687,7 @@ Eumenides, pp. 123–37.
 
 ---
 
-<!-- page 344 -->
+<!-- page 343 -->
 
 REFERENCES
 325
@@ -18746,7 +18746,7 @@ book 5.
 
 ---
 
-<!-- page 345 -->
+<!-- page 344 -->
 
 326
 ANNOTATED BIBLIOGRAPHY
@@ -18805,7 +18805,7 @@ known as “Wecklein and Vitelli” and as “Vitelli and Wecklein”). Good edi
 
 ---
 
-<!-- page 346 -->
+<!-- page 345 -->
 
 REFERENCES
 327
@@ -18864,7 +18864,7 @@ Edition of a commentary on a commentary to Aristotle.
 
 ---
 
-<!-- page 347 -->
+<!-- page 346 -->
 
 328
 ANNOTATED BIBLIOGRAPHY
@@ -18923,7 +18923,7 @@ and R. Raffaelli (edd.), Atti del convegno internazionale “Il libro e il testo
 
 ---
 
-<!-- page 348 -->
+<!-- page 347 -->
 
 REFERENCES
 329
@@ -18982,7 +18982,7 @@ Collection of essays.
 
 ---
 
-<!-- page 349 -->
+<!-- page 348 -->
 
 330
 ANNOTATED BIBLIOGRAPHY
@@ -19004,7 +19004,7 @@ the 9th or 10th cent. AD.
 
 ---
 
-<!-- page 350 -->
+<!-- page 349 -->
 
 Index Locorum
 Aeschines, scholia to
@@ -19085,7 +19085,7 @@ GG iv.i. 333. 5ff.: 212–13
 
 ---
 
-<!-- page 351 -->
+<!-- page 350 -->
 
 Dionysius Thrax
 GG i.i. 24. 3ff.: 169–70,
@@ -19193,7 +19193,7 @@ INDEX LOCORUM
 
 ---
 
-<!-- page 352 -->
+<!-- page 351 -->
 
 A 7616 Latte: 110
 A 7617 Latte: 144, 176
@@ -19303,7 +19303,7 @@ INDEX LOCORUM
 
 ---
 
-<!-- page 353 -->
+<!-- page 352 -->
 
 Michael Syncellus
 11. 69ff.: 167–8, 189
@@ -19354,7 +19354,7 @@ peri; trovpwn p. 238: 168, 189
 
 ---
 
-<!-- page 354 -->
+<!-- page 353 -->
 
 Words discussed in Chapters 1–4 are systematically included, those found in the
 reader (Ch. 5) are selectively included, and those in the glossary (Ch. 6) are included
@@ -19427,7 +19427,7 @@ glwsshmatikov", 146, 230
 
 ---
 
-<!-- page 355 -->
+<!-- page 354 -->
 
 336
 INDEX OF GREEK WORDS DISCUSSED
@@ -19530,7 +19530,7 @@ iJstorevw, 145, 150, 161, 208, 211
 
 ---
 
-<!-- page 356 -->
+<!-- page 355 -->
 
 INDEX OF GREEK WORDS DISCUSSED
 337
@@ -19635,7 +19635,7 @@ paralhvgw, 167, 172, 251
 
 ---
 
-<!-- page 357 -->
+<!-- page 356 -->
 
 338
 INDEX OF GREEK WORDS DISCUSSED
@@ -19744,7 +19744,7 @@ trivton, 128
 
 ---
 
-<!-- page 358 -->
+<!-- page 357 -->
 
 INDEX OF GREEK WORDS DISCUSSED
 339
@@ -19787,13 +19787,13 @@ wJspereiv, 122
 
 ---
 
-<!-- page 359 -->
+<!-- page 358 -->
 
 This page intentionally left blank
 
 ---
 
-<!-- page 360 -->
+<!-- page 359 -->
 
 General Index
 More detailed discussions are italicized.
@@ -19872,7 +19872,7 @@ on other classical poetry, 29, 32, 35,
 
 ---
 
-<!-- page 361 -->
+<!-- page 360 -->
 
 Aristotle
 mentioned in excerpts, 144, 145
@@ -19979,7 +19979,7 @@ GENERAL INDEX
 
 ---
 
-<!-- page 362 -->
+<!-- page 361 -->
 
 Euclid, 10, 60–1
 Eudemus of Rhodes, 60
@@ -20084,7 +20084,7 @@ GENERAL INDEX
 
 ---
 
-<!-- page 363 -->
+<!-- page 362 -->
 
 metrical scholarship
 ancient, 5, 29–30, 32, 38–40, 84, 93
@@ -20187,7 +20187,7 @@ GENERAL INDEX
 
 ---
 
-<!-- page 364 -->
+<!-- page 363 -->
 
 Strabo, 71, 101
 substantivization, 117

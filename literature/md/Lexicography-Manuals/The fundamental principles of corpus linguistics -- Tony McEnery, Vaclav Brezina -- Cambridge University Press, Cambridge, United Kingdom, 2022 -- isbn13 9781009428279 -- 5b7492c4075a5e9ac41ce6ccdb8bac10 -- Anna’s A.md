@@ -6,7 +6,7 @@
 
 ---
 
-<!-- page 2 -->
+<!-- page 1 -->
 
 The Fundamental Principles of Corpus Linguistics
 How might evidence of language use – such as writing and speech – be used as
@@ -36,13 +36,13 @@ Published online by Cambridge University Press
 
 ---
 
-<!-- page 3 -->
+<!-- page 2 -->
 
 Published online by Cambridge University Press
 
 ---
 
-<!-- page 4 -->
+<!-- page 3 -->
 
 The Fundamental Principles
 of Corpus Linguistics
@@ -54,7 +54,7 @@ Published online by Cambridge University Press
 
 ---
 
-<!-- page 5 -->
+<!-- page 4 -->
 
 University Printing House, Cambridge CB2 8BS, United Kingdom
 One Liberty Plaza, 20th Floor, New York, NY 10006, USA
@@ -99,7 +99,7 @@ Published online by Cambridge University Press
 
 ---
 
-<!-- page 6 -->
+<!-- page 5 -->
 
 Contents
 List of Figures
@@ -198,7 +198,7 @@ Published online by Cambridge University Press
 
 ---
 
-<!-- page 7 -->
+<!-- page 6 -->
 
 3.7
 The Hair Shirt of Honesty
@@ -310,7 +310,7 @@ Published online by Cambridge University Press
 
 ---
 
-<!-- page 8 -->
+<!-- page 7 -->
 
 7.6
 Discussion
@@ -335,7 +335,7 @@ Published online by Cambridge University Press
 
 ---
 
-<!-- page 9 -->
+<!-- page 8 -->
 
 Figures
 1.1
@@ -373,7 +373,7 @@ Published online by Cambridge University Press
 
 ---
 
-<!-- page 10 -->
+<!-- page 9 -->
 
 Tables
 6.1
@@ -444,13 +444,13 @@ Published online by Cambridge University Press
 
 ---
 
-<!-- page 11 -->
+<!-- page 10 -->
 
 Published online by Cambridge University Press
 
 ---
 
-<!-- page 12 -->
+<!-- page 11 -->
 
 Preface
 This book started as a dialogue between the two authors, debating
@@ -500,7 +500,7 @@ https://doi.org/10.1017/9781107110625.001 Published online by Cambridge Universi
 
 ---
 
-<!-- page 13 -->
+<!-- page 12 -->
 
 a printable version of the key principles to which we refer throughout this
 volume.
@@ -519,7 +519,7 @@ https://doi.org/10.1017/9781107110625.001 Published online by Cambridge Universi
 
 ---
 
-<!-- page 14 -->
+<!-- page 13 -->
 
 Introduction
 Corpus linguistics has, to date, largely been oriented towards the develop-
@@ -558,7 +558,7 @@ https://doi.org/10.1017/9781107110625.002 Published online by Cambridge Universi
 
 ---
 
-<!-- page 15 -->
+<!-- page 14 -->
 
 language that enables comment on that which is not seen. Readers inter-
 ested in a critical view, which we agree with, should see the comments on
@@ -596,7 +596,7 @@ https://doi.org/10.1017/9781107110625.002 Published online by Cambridge Universi
 
 ---
 
-<!-- page 16 -->
+<!-- page 15 -->
 
 CHAPTER ONE
 The First Sketch
@@ -636,7 +636,7 @@ https://doi.org/10.1017/9781107110625.003 Published online by Cambridge Universi
 
 ---
 
-<!-- page 17 -->
+<!-- page 16 -->
 
 reality and truth, which will be further reﬁned in later chapters of this
 book. The guide in the process of reﬁning our initial ideas will be
@@ -674,7 +674,7 @@ https://doi.org/10.1017/9781107110625.003 Published online by Cambridge Universi
 
 ---
 
-<!-- page 18 -->
+<!-- page 17 -->
 
 absolute – in most cases, absolute claims lead to self-refutation. Instead, we
 seek to deﬁne and subsequently reﬁne our understanding of the role of
@@ -720,7 +720,7 @@ https://doi.org/10.1017/9781107110625.003 Published online by Cambridge Universi
 
 ---
 
-<!-- page 19 -->
+<!-- page 18 -->
 
 1.1 Linguistics and Science
 The question of the relationship of linguistics to science has been very
@@ -767,7 +767,7 @@ https://doi.org/10.1017/9781107110625.003 Published online by Cambridge Universi
 
 ---
 
-<!-- page 20 -->
+<!-- page 19 -->
 
 videotapes, which Chomsky condescendingly uses as a metaphor for
 measurements in real-world contexts, can provide indispensable and
@@ -809,7 +809,7 @@ https://doi.org/10.1017/9781107110625.003 Published online by Cambridge Universi
 
 ---
 
-<!-- page 21 -->
+<!-- page 20 -->
 
 because of how Chomsky has characterised it – as not being science – but
 also because of how some corpus linguists (e.g. Leech 1992) have char-
@@ -858,7 +858,7 @@ https://doi.org/10.1017/9781107110625.003 Published online by Cambridge Universi
 
 ---
 
-<!-- page 22 -->
+<!-- page 21 -->
 
 when we move to problematise the engagement of corpus linguistics with
 the scientiﬁc method, we will consider a wider range of searches and
@@ -904,7 +904,7 @@ https://doi.org/10.1017/9781107110625.003 Published online by Cambridge Universi
 
 ---
 
-<!-- page 23 -->
+<!-- page 22 -->
 
 philosophers or religious teachers, have great appeal. So-called privi-
 leged cynicism7 is one of the standard fallacies of reasoning, where
@@ -952,7 +952,7 @@ https://doi.org/10.1017/9781107110625.003 Published online by Cambridge Universi
 
 ---
 
-<!-- page 24 -->
+<!-- page 23 -->
 
 with common-sense views of reality like ours than any of alternative
 positions outlined earlier. A cursory inspection of popular science jour-
@@ -999,7 +999,7 @@ https://doi.org/10.1017/9781107110625.003 Published online by Cambridge Universi
 
 ---
 
-<!-- page 25 -->
+<!-- page 24 -->
 
 Note, however, that common sense, while useful in supporting
 a realist position, must itself be held accountable to correspondence
@@ -1048,7 +1048,7 @@ https://doi.org/10.1017/9781107110625.003 Published online by Cambridge Universi
 
 ---
 
-<!-- page 26 -->
+<!-- page 25 -->
 
 had initially deﬁned science as a search for rational statements11 about
 reality.
@@ -1093,7 +1093,7 @@ https://doi.org/10.1017/9781107110625.003 Published online by Cambridge Universi
 
 ---
 
-<!-- page 27 -->
+<!-- page 26 -->
 
 when looking across the matrix built from how different researchers
 working together ﬁll these preconditions, we need to ask why and how
@@ -1142,7 +1142,7 @@ https://doi.org/10.1017/9781107110625.003 Published online by Cambridge Universi
 
 ---
 
-<!-- page 28 -->
+<!-- page 27 -->
 
 useful to be able to set out a ﬁxed menu of the things that scientiﬁc studies
 do, in the order in which they should be done, this is not possible.
@@ -1189,7 +1189,7 @@ https://doi.org/10.1017/9781107110625.003 Published online by Cambridge Universi
 
 ---
 
-<!-- page 29 -->
+<!-- page 28 -->
 
 As an example of an epistemological presupposition, which we have
 discussed earlier (see Section 1.1), we can state a new principle of corpus
@@ -1230,7 +1230,7 @@ https://doi.org/10.1017/9781107110625.003 Published online by Cambridge Universi
 
 ---
 
-<!-- page 30 -->
+<!-- page 29 -->
 
 to the non-observed through a process of reasoning. So, Newton could
 make a series of observations of the operation of gravity on and from
@@ -1278,7 +1278,7 @@ https://doi.org/10.1017/9781107110625.003 Published online by Cambridge Universi
 
 ---
 
-<!-- page 31 -->
+<!-- page 30 -->
 
 There are premises here – that A is a bird, B is a fruit and that A enjoys
 eating B. Then there is an induction, a generalisation, that all birds enjoy
@@ -1326,7 +1326,7 @@ https://doi.org/10.1017/9781107110625.003 Published online by Cambridge Universi
 
 ---
 
-<!-- page 32 -->
+<!-- page 31 -->
 
 • The existence of the word machine from nanomachine
 • The part of speech of machine: singular noun
@@ -1374,7 +1374,7 @@ https://doi.org/10.1017/9781107110625.003 Published online by Cambridge Universi
 
 ---
 
-<!-- page 33 -->
+<!-- page 32 -->
 
 Chapter 3. For now note that the way in which the Martian scientists worked
 together parallels, to an extent, some of the established paradigms of science
@@ -1420,7 +1420,7 @@ https://doi.org/10.1017/9781107110625.003 Published online by Cambridge Universi
 
 ---
 
-<!-- page 34 -->
+<!-- page 33 -->
 
 in corpus linguistics research. Rather the logic is implied and embedded
 in the narrative of the arguments presented. For example, consider the
@@ -1464,7 +1464,7 @@ https://doi.org/10.1017/9781107110625.003 Published online by Cambridge Universi
 
 ---
 
-<!-- page 35 -->
+<!-- page 34 -->
 
 In corpus linguistics, by building a small-scale model of language, one
 allows inductive inference to be based on it and the inferences made
@@ -1507,7 +1507,7 @@ https://doi.org/10.1017/9781107110625.003 Published online by Cambridge Universi
 
 ---
 
-<!-- page 36 -->
+<!-- page 35 -->
 
 Key Thinkers: William Ockham, also spelled as Occam
 (c.1287–1347)
@@ -1551,7 +1551,7 @@ https://doi.org/10.1017/9781107110625.003 Published online by Cambridge Universi
 
 ---
 
-<!-- page 37 -->
+<!-- page 36 -->
 
 such as Francis Bacon, an empiricist, emphasised instead the need for
 empirical data. Principle 6 locates corpus linguistics clearly in the empiri-
@@ -1600,7 +1600,7 @@ https://doi.org/10.1017/9781107110625.003 Published online by Cambridge Universi
 
 ---
 
-<!-- page 38 -->
+<!-- page 37 -->
 
 of introspection we look for patterns of language use in our data (cor-
 pora). So far, following the metaphor of laying foundations for corpus
@@ -1647,7 +1647,7 @@ https://doi.org/10.1017/9781107110625.003 Published online by Cambridge Universi
 
 ---
 
-<!-- page 39 -->
+<!-- page 38 -->
 
 the same result. Note that this example also shows that we have choice in
 making more or less speciﬁc inferences. Our inference was quite general,
@@ -1692,7 +1692,7 @@ https://doi.org/10.1017/9781107110625.003 Published online by Cambridge Universi
 
 ---
 
-<!-- page 40 -->
+<!-- page 39 -->
 
 represents British English from ten years or so before that in the BE06
 and the balance of different types of writing within it differs from that in
@@ -1739,7 +1739,7 @@ https://doi.org/10.1017/9781107110625.003 Published online by Cambridge Universi
 
 ---
 
-<!-- page 41 -->
+<!-- page 40 -->
 
 By the end of Chapter 3 we will have outlined further useful principles of
 corpus linguistics, but we will have also shifted the discussion of the
@@ -1764,7 +1764,7 @@ https://doi.org/10.1017/9781107110625.003 Published online by Cambridge Universi
 
 ---
 
-<!-- page 42 -->
+<!-- page 41 -->
 
 CHAPTER TWO
 What Is Science?
@@ -1802,7 +1802,7 @@ https://doi.org/10.1017/9781107110625.004 Published online by Cambridge Universi
 
 ---
 
-<!-- page 43 -->
+<!-- page 42 -->
 
 Third, and importantly, the questions asked within the framework of
 the scientiﬁc method need to be appropriate for scientiﬁc investigation.
@@ -1850,7 +1850,7 @@ https://doi.org/10.1017/9781107110625.004 Published online by Cambridge Universi
 
 ---
 
-<!-- page 44 -->
+<!-- page 43 -->
 
 command the loyalty of successful professional scientists’ (Godfrey-
 Smith 2016: 104). His approach to science continues to be inﬂuential in
@@ -1895,7 +1895,7 @@ https://doi.org/10.1017/9781107110625.004 Published online by Cambridge Universi
 
 ---
 
-<!-- page 45 -->
+<!-- page 44 -->
 
 Brame’s (1976) attack on generative semantics, where he draws on
 Popper to claim of generative semantics that (Brame 1976: 45):
@@ -1941,7 +1941,7 @@ https://doi.org/10.1017/9781107110625.004 Published online by Cambridge Universi
 
 ---
 
-<!-- page 46 -->
+<!-- page 45 -->
 
 he also became aware of the need to process them in ways that were of use to
 the linguist, notably by the automatic addition of linguistic information
@@ -1988,7 +1988,7 @@ https://doi.org/10.1017/9781107110625.004 Published online by Cambridge Universi
 
 ---
 
-<!-- page 47 -->
+<!-- page 46 -->
 
 Moisl (2015: 1), in a brief outline of Popper’s scientiﬁc method, also states
 that ‘no scientiﬁc hypothesis is ever proven because it is always open to
@@ -2035,7 +2035,7 @@ https://doi.org/10.1017/9781107110625.004 Published online by Cambridge Universi
 
 ---
 
-<!-- page 48 -->
+<!-- page 47 -->
 
 (Popper 1972: 164, see Figure 2.1). We start with a problem that we attempt
 to solve – ‘Knowledge does not start from perceptions or observations’
@@ -2083,7 +2083,7 @@ https://doi.org/10.1017/9781107110625.004 Published online by Cambridge Universi
 
 ---
 
-<!-- page 49 -->
+<!-- page 48 -->
 
 these hypotheses can only proceed through tests against some objective
 reality. Yet before the tests are carried out, we need to consider questions
@@ -2131,7 +2131,7 @@ https://doi.org/10.1017/9781107110625.004 Published online by Cambridge Universi
 
 ---
 
-<!-- page 50 -->
+<!-- page 49 -->
 
 both only on the basis of inference, most likely through ampliative
 reasoning, because in each case a generalisation from a ﬁnite set of
@@ -2177,7 +2177,7 @@ https://doi.org/10.1017/9781107110625.004 Published online by Cambridge Universi
 
 ---
 
-<!-- page 51 -->
+<!-- page 50 -->
 
 no amount of observations of white swans can allow the inference that all
 swans are white, but the observation of a single black swan is sufﬁcient to
@@ -2209,7 +2209,7 @@ https://doi.org/10.1017/9781107110625.004 Published online by Cambridge Universi
 
 ---
 
-<!-- page 52 -->
+<!-- page 51 -->
 
 certainty in Newton’s thought’ (Guicciardini 2009: 20).21 This certainty
 was rooted in a belief in induction as ‘Newton believed that science could
@@ -2255,7 +2255,7 @@ https://doi.org/10.1017/9781107110625.004 Published online by Cambridge Universi
 
 ---
 
-<!-- page 53 -->
+<!-- page 52 -->
 
 does not accept induction, favouring rather what he calls a ‘quasi-
 inductive’ (Popper 2002a : 276–278)23 approach to science for reasons
@@ -2302,7 +2302,7 @@ https://doi.org/10.1017/9781107110625.004 Published online by Cambridge Universi
 
 ---
 
-<!-- page 54 -->
+<!-- page 53 -->
 
 support inferences endlessly; if X, then Y – we believe we have X because
 we have Y and we believe Y because we have X. This is broken by the
@@ -2349,7 +2349,7 @@ https://doi.org/10.1017/9781107110625.004 Published online by Cambridge Universi
 
 ---
 
-<!-- page 55 -->
+<!-- page 54 -->
 
 the language represented by the corpus’. This again is the problem of
 induction writ large – because it does not occur within what we see in
@@ -2396,7 +2396,7 @@ https://doi.org/10.1017/9781107110625.004 Published online by Cambridge Universi
 
 ---
 
-<!-- page 56 -->
+<!-- page 55 -->
 
 be veriﬁed (proved to be right) by any number of single observations, it
 takes, in principle, only one observation (a counter-example) to falsify an
@@ -2441,7 +2441,7 @@ https://doi.org/10.1017/9781107110625.004 Published online by Cambridge Universi
 
 ---
 
-<!-- page 57 -->
+<!-- page 56 -->
 
 Interlocutor cannot be falsiﬁed – you cannot prove that the creature does
 not exist. However, precisely for this reason, the creature can be dis-
@@ -2490,7 +2490,7 @@ https://doi.org/10.1017/9781107110625.004 Published online by Cambridge Universi
 
 ---
 
-<!-- page 58 -->
+<!-- page 57 -->
 
 scientiﬁc may be viewed as at least as important, or perhaps more so in
 terms of innovation, than exploring those hypotheses currently thought
@@ -2533,7 +2533,7 @@ https://doi.org/10.1017/9781107110625.004 Published online by Cambridge Universi
 
 ---
 
-<!-- page 59 -->
+<!-- page 58 -->
 
 each of these in turn. To do so, let us consider collocation as a theory in
 linguistics. For ease of presentation, while there were antecedents of the
@@ -2582,7 +2582,7 @@ https://doi.org/10.1017/9781107110625.004 Published online by Cambridge Universi
 
 ---
 
-<!-- page 60 -->
+<!-- page 59 -->
 
 example, we may show that collocations are systematically observable in
 any corpus in any point of time but that does not mean to say that
@@ -2628,7 +2628,7 @@ https://doi.org/10.1017/9781107110625.004 Published online by Cambridge Universi
 
 ---
 
-<!-- page 61 -->
+<!-- page 60 -->
 
 and it is one that leads us to cast ourselves as critical realist. This apparent
 contact with reality should be viewed sceptically.
@@ -2673,7 +2673,7 @@ https://doi.org/10.1017/9781107110625.004 Published online by Cambridge Universi
 
 ---
 
-<!-- page 62 -->
+<!-- page 61 -->
 
 Principle 15: Corpora are theoretically underdetermined and hence may support
 a range of theoretical perspectives.
@@ -2717,7 +2717,7 @@ https://doi.org/10.1017/9781107110625.004 Published online by Cambridge Universi
 
 ---
 
-<!-- page 63 -->
+<!-- page 62 -->
 
 doing so, corpus linguists and other linguists using such data tend to be, in
 epistemological terms, particularists – they take as fact something that they
@@ -2765,7 +2765,7 @@ https://doi.org/10.1017/9781107110625.004 Published online by Cambridge Universi
 
 ---
 
-<!-- page 64 -->
+<!-- page 63 -->
 
 too late. The doors are closed at six.’ meaning ‘you’ll
 ﬁnd them closed if you go there then.’ It is even possible
@@ -2819,7 +2819,7 @@ https://doi.org/10.1017/9781107110625.004 Published online by Cambridge Universi
 
 ---
 
-<!-- page 65 -->
+<!-- page 64 -->
 
 sex and one can perform magic, for example, as a quick study of most
 general English corpora will show (McEnery and Wilson 2001: 11).
@@ -2867,7 +2867,7 @@ https://doi.org/10.1017/9781107110625.004 Published online by Cambridge Universi
 
 ---
 
-<!-- page 66 -->
+<!-- page 65 -->
 
 unlikely that somebody will have heard the ﬁrst . . . the full paradigm. Things
 just aren’t that frequent.
@@ -2915,7 +2915,7 @@ https://doi.org/10.1017/9781107110625.004 Published online by Cambridge Universi
 
 ---
 
-<!-- page 67 -->
+<!-- page 66 -->
 
 a combination of child-directed and environmental speech.35 One can only
 begin to imagine the basis on which Chomsky makes this claim about
@@ -2963,7 +2963,7 @@ https://doi.org/10.1017/9781107110625.004 Published online by Cambridge Universi
 
 ---
 
-<!-- page 68 -->
+<!-- page 67 -->
 
 system that we may conceive of as being scientiﬁc? First, as noted, it must
 not be contradictory. It must describe a possible world – a system that
@@ -3012,7 +3012,7 @@ https://doi.org/10.1017/9781107110625.004 Published online by Cambridge Universi
 
 ---
 
-<!-- page 69 -->
+<!-- page 68 -->
 
 Principle 60: Corpus linguistics inclines to scientia realis – it is the study of
 observable language on which experience may be tested in accordance
@@ -3059,7 +3059,7 @@ https://doi.org/10.1017/9781107110625.004 Published online by Cambridge Universi
 
 ---
 
-<!-- page 70 -->
+<!-- page 69 -->
 
 of an utterance causes perturbation in eye movement when reading. What
 would the result of the failed collocation reading experiment be? It is
@@ -3104,7 +3104,7 @@ https://doi.org/10.1017/9781107110625.004 Published online by Cambridge Universi
 
 ---
 
-<!-- page 71 -->
+<!-- page 70 -->
 
 rescue unfairly a statement from falsiﬁcation. One way of evading falsi-
 ﬁcation is to forever dodge the bullet – providing amendments to a theory
@@ -3152,7 +3152,7 @@ https://doi.org/10.1017/9781107110625.004 Published online by Cambridge Universi
 
 ---
 
-<!-- page 72 -->
+<!-- page 71 -->
 
 falsiﬁed. While the authors strongly believed that they would be falsiﬁed,
 they were not. The experiments provided corroboration for collocation
@@ -3196,7 +3196,7 @@ https://doi.org/10.1017/9781107110625.004 Published online by Cambridge Universi
 
 ---
 
-<!-- page 73 -->
+<!-- page 72 -->
 
 directly observable – there was a time in the history of the UK when it
 would have been possible to ask people if God existed and they would
@@ -3244,7 +3244,7 @@ https://doi.org/10.1017/9781107110625.004 Published online by Cambridge Universi
 
 ---
 
-<!-- page 74 -->
+<!-- page 73 -->
 
 One possibility is that the falsiﬁcation may, in fact, be the product not of
 science but of dogmatism. We would argue that the example from Chomsky
@@ -3292,7 +3292,7 @@ https://doi.org/10.1017/9781107110625.004 Published online by Cambridge Universi
 
 ---
 
-<!-- page 75 -->
+<!-- page 74 -->
 
 provided by corpora have repeatedly falsiﬁed the claims made in support of
 this hypothesis. It would be much better for those linguists who believe in
@@ -3335,7 +3335,7 @@ https://doi.org/10.1017/9781107110625.004 Published online by Cambridge Universi
 
 ---
 
-<!-- page 76 -->
+<!-- page 75 -->
 
 one would reach for the data that would drive that method and begin to
 fashion the perfect data set. Our attempts to eliminate error will end and
@@ -3384,7 +3384,7 @@ https://doi.org/10.1017/9781107110625.004 Published online by Cambridge Universi
 
 ---
 
-<!-- page 77 -->
+<!-- page 76 -->
 
 musings are metaphysical. For example, much work has been undertaken
 using the Brown family sampling structure. A convention has been
@@ -3429,7 +3429,7 @@ https://doi.org/10.1017/9781107110625.004 Published online by Cambridge Universi
 
 ---
 
-<!-- page 78 -->
+<!-- page 77 -->
 
 that we gain the greatest defence of those methods and data as scientiﬁc.
 With this in mind, we can recast debates such as those between Millar
@@ -3475,7 +3475,7 @@ https://doi.org/10.1017/9781107110625.004 Published online by Cambridge Universi
 
 ---
 
-<!-- page 79 -->
+<!-- page 78 -->
 
 language fruitfully in this way, no more than we can study the universe in
 this way in the observational sciences, such speciﬁc statements – while
@@ -3523,7 +3523,7 @@ https://doi.org/10.1017/9781107110625.004 Published online by Cambridge Universi
 
 ---
 
-<!-- page 80 -->
+<!-- page 79 -->
 
 then, through induction, claim that the description matches that of the
 language as a whole, though such non-veriﬁable statements made on the
@@ -3572,7 +3572,7 @@ https://doi.org/10.1017/9781107110625.004 Published online by Cambridge Universi
 
 ---
 
-<!-- page 81 -->
+<!-- page 80 -->
 
 a vanishingly rare attainment, if it is attainable at all, corpus linguists
 should accept constructive critiques of a corpus as a part of the scien-
@@ -3613,7 +3613,7 @@ https://doi.org/10.1017/9781107110625.004 Published online by Cambridge Universi
 
 ---
 
-<!-- page 82 -->
+<!-- page 81 -->
 
 confounding factors alone can show how Grail-like this quest would be.
 For any question of reasonable scale in linguistics, we are forced to build
@@ -3661,7 +3661,7 @@ https://doi.org/10.1017/9781107110625.004 Published online by Cambridge Universi
 
 ---
 
-<!-- page 83 -->
+<!-- page 82 -->
 
 concepts in different ways – so we might categorise the singular concept of
 a word to the universal concept of part-of-speech, or the universal concept
@@ -3710,7 +3710,7 @@ https://doi.org/10.1017/9781107110625.004 Published online by Cambridge Universi
 
 ---
 
-<!-- page 84 -->
+<!-- page 83 -->
 
 Leary 2005: 927). A further critique of the phoneme as a concept is
 provided by Davis (2006). Port and Leary (2005: 959) also rightly draw
@@ -3758,7 +3758,7 @@ https://doi.org/10.1017/9781107110625.004 Published online by Cambridge Universi
 
 ---
 
-<!-- page 85 -->
+<!-- page 84 -->
 
 set, nor seeking to generate rules of classiﬁcation but, rather, asserting that
 the set exists and that it has at least one member. Negating the universal
@@ -3802,7 +3802,7 @@ https://doi.org/10.1017/9781107110625.004 Published online by Cambridge Universi
 
 ---
 
-<!-- page 86 -->
+<!-- page 85 -->
 
 produce the axioms of a theory – what one might call the fundamental
 assumptions on which a theory is built. The axioms work in such a way
@@ -3851,7 +3851,7 @@ https://doi.org/10.1017/9781107110625.004 Published online by Cambridge Universi
 
 ---
 
-<!-- page 87 -->
+<!-- page 86 -->
 
 itself. These rules are useful in linguistic theory in terms of making the
 system parsimonious (see Section 1.6), determining how the axioms
@@ -3898,7 +3898,7 @@ https://doi.org/10.1017/9781107110625.004 Published online by Cambridge Universi
 
 ---
 
-<!-- page 88 -->
+<!-- page 87 -->
 
 extra-logical constants are ‘statements about empirical objects’ Popper
 (2002a: 53). To give an example used by Popper (2002a: 53), a line in
@@ -3947,7 +3947,7 @@ https://doi.org/10.1017/9781107110625.004 Published online by Cambridge Universi
 
 ---
 
-<!-- page 89 -->
+<!-- page 88 -->
 
 Principle 25: Corpus linguists should seek to explore and develop axioms, which
 are integrated, non-redundant, parsimonious and necessary.
@@ -3989,7 +3989,7 @@ https://doi.org/10.1017/9781107110625.004 Published online by Cambridge Universi
 
 ---
 
-<!-- page 90 -->
+<!-- page 89 -->
 
 a claim that, for example, through observing collocation in a text, we have
 quasi-contact with the operations of the mind. This is a claim that some
@@ -4037,7 +4037,7 @@ https://doi.org/10.1017/9781107110625.004 Published online by Cambridge Universi
 
 ---
 
-<!-- page 91 -->
+<!-- page 90 -->
 
 methods as we would for pursuing the collocation axiom. Yet by bringing
 multiple methods to bear, not simply on a whim, but because the system
@@ -4068,7 +4068,7 @@ https://doi.org/10.1017/9781107110625.004 Published online by Cambridge Universi
 
 ---
 
-<!-- page 92 -->
+<!-- page 91 -->
 
 CHAPTER THREE
 How to Do Science?
@@ -4113,7 +4113,7 @@ https://doi.org/10.1017/9781107110625.005 Published online by Cambridge Universi
 
 ---
 
-<!-- page 93 -->
+<!-- page 92 -->
 
 2019 for plentiful examples of methodological triangulation involving
 corpora) – by seeking falsiﬁcation across a range of systems and using
@@ -4161,7 +4161,7 @@ https://doi.org/10.1017/9781107110625.005 Published online by Cambridge Universi
 
 ---
 
-<!-- page 94 -->
+<!-- page 93 -->
 
 system is being produced to operate on. If we built the system with a
 wider set of parameters – for example, making claims about all varieties
@@ -4210,7 +4210,7 @@ https://doi.org/10.1017/9781107110625.005 Published online by Cambridge Universi
 
 ---
 
-<!-- page 95 -->
+<!-- page 94 -->
 
 clearly that the statements in the axiom are ‘true’ just because they
 generate these two sets.
@@ -4256,7 +4256,7 @@ https://doi.org/10.1017/9781107110625.005 Published online by Cambridge Universi
 
 ---
 
-<!-- page 96 -->
+<!-- page 95 -->
 
 ‘cherry picking’ results. As an explanatory model of language, in line with
 the scientiﬁc philosophy put forward by Popper, topic models, because of
@@ -4302,7 +4302,7 @@ https://doi.org/10.1017/9781107110625.005 Published online by Cambridge Universi
 
 ---
 
-<!-- page 97 -->
+<!-- page 96 -->
 
 the previous chapter where Chomsky drew the set of falsiﬁers more
 broadly and more metaphysically than a corpus linguist would – the set
@@ -4351,7 +4351,7 @@ https://doi.org/10.1017/9781107110625.005 Published online by Cambridge Universi
 
 ---
 
-<!-- page 98 -->
+<!-- page 97 -->
 
 Spoken BNC1994 sequences that conform to an overall pattern of narra-
 tive that he wishes to explore. In a case like this, the set of falsiﬁers for
@@ -4400,7 +4400,7 @@ https://doi.org/10.1017/9781107110625.005 Published online by Cambridge Universi
 
 ---
 
-<!-- page 99 -->
+<!-- page 98 -->
 
 towards one theoretical viewpoint or another and by then applying
 the Principle 29, a study was possible that would not have been
@@ -4449,7 +4449,7 @@ https://doi.org/10.1017/9781107110625.005 Published online by Cambridge Universi
 
 ---
 
-<!-- page 100 -->
+<!-- page 99 -->
 
 3.2 Popper and Intuition
 Popper does, of course, accept that intuition exists, as do corpus linguists.
@@ -4494,7 +4494,7 @@ https://doi.org/10.1017/9781107110625.005 Published online by Cambridge Universi
 
 ---
 
-<!-- page 101 -->
+<!-- page 100 -->
 
 from the second decade of the twenty-ﬁrst century needs to be built by
 observers with access to that point in time. So observability is as important
@@ -4538,7 +4538,7 @@ https://doi.org/10.1017/9781107110625.005 Published online by Cambridge Universi
 
 ---
 
-<!-- page 102 -->
+<!-- page 101 -->
 
 statements that one is going to decide to accept, reasoning by convention,
 if you will. McEnery (1995) built on such ideas to suggest that probability
@@ -4583,7 +4583,7 @@ https://doi.org/10.1017/9781107110625.005 Published online by Cambridge Universi
 
 ---
 
-<!-- page 103 -->
+<!-- page 102 -->
 
 course, it could be the case that at this point linguists could say that they
 will accept perceptions about language as the statements that they wish to
@@ -4632,7 +4632,7 @@ https://doi.org/10.1017/9781107110625.005 Published online by Cambridge Universi
 
 ---
 
-<!-- page 104 -->
+<!-- page 103 -->
 
 facilitates the overturning of convention when circumstances dictate that
 the time has come for conventions to be put aside (Principle 9).
@@ -4679,7 +4679,7 @@ https://doi.org/10.1017/9781107110625.005 Published online by Cambridge Universi
 
 ---
 
-<!-- page 105 -->
+<!-- page 104 -->
 
 system and 3) unnecessary statements. This allows the researcher to com-
 partmentalise the task they have in hypothesis and theory development
@@ -4728,7 +4728,7 @@ https://doi.org/10.1017/9781107110625.005 Published online by Cambridge Universi
 
 ---
 
-<!-- page 106 -->
+<!-- page 105 -->
 
 reﬁnement using corpus data: ‘experiment is a planned action in which
 every step is guided by theory’ (Popper 2002a: 280). Popper favoured a
@@ -4772,7 +4772,7 @@ https://doi.org/10.1017/9781107110625.005 Published online by Cambridge Universi
 
 ---
 
-<!-- page 107 -->
+<!-- page 106 -->
 
 the statements it is based upon. We can, however, decide, on the basis of
 the corroboration that is gained by resisting falsiﬁcation, that we deem
@@ -4821,7 +4821,7 @@ https://doi.org/10.1017/9781107110625.005 Published online by Cambridge Universi
 
 ---
 
-<!-- page 108 -->
+<!-- page 107 -->
 
 statement being proved false is non-zero. Hence the more testable
 proposition is the one where the chances of it being false are non-
@@ -4868,7 +4868,7 @@ https://doi.org/10.1017/9781107110625.005 Published online by Cambridge Universi
 
 ---
 
-<!-- page 109 -->
+<!-- page 108 -->
 
 falsiﬁers for the statement, thus increasing its empirical content. So in
 making a presumption in our choices as theorists and testers of theory in
@@ -4914,7 +4914,7 @@ https://doi.org/10.1017/9781107110625.005 Published online by Cambridge Universi
 
 ---
 
-<!-- page 110 -->
+<!-- page 109 -->
 
 freedom’ that the model exhibits with regard to its correspondence to
 reality, which is in the range also. The range of a theory at any one point
@@ -4960,7 +4960,7 @@ https://doi.org/10.1017/9781107110625.005 Published online by Cambridge Universi
 
 ---
 
-<!-- page 111 -->
+<!-- page 110 -->
 
 extension, is one which is deemed to be in correspondence with reality by
 convention. However, range is a reminder of the tacit nature of that
@@ -5006,7 +5006,7 @@ https://doi.org/10.1017/9781107110625.005 Published online by Cambridge Universi
 
 ---
 
-<!-- page 112 -->
+<!-- page 111 -->
 
 (Popper 2002a: 279) because ‘We do not know, we can only guess’
 (Popper 2002a: 278).
@@ -5052,7 +5052,7 @@ https://doi.org/10.1017/9781107110625.005 Published online by Cambridge Universi
 
 ---
 
-<!-- page 113 -->
+<!-- page 112 -->
 
 testable.’ Thus in conﬁguring the set of permissible statements, the set of
 potential falsiﬁers (and the set of experimental falsiﬁers by extension),
@@ -5095,7 +5095,7 @@ https://doi.org/10.1017/9781107110625.005 Published online by Cambridge Universi
 
 ---
 
-<!-- page 114 -->
+<!-- page 113 -->
 
 Popper favours a view of science in which hypothetical assumptions ‘can
 only be corroborated, in the sense that they ‘prove their mettle’ under ﬁre –
@@ -5139,7 +5139,7 @@ https://doi.org/10.1017/9781107110625.005 Published online by Cambridge Universi
 
 ---
 
-<!-- page 115 -->
+<!-- page 114 -->
 
 something that is corroborated the same way again and again, in the same
 context and by the same means, is proportionately corroborated – the
@@ -5185,7 +5185,7 @@ https://doi.org/10.1017/9781107110625.005 Published online by Cambridge Universi
 
 ---
 
-<!-- page 116 -->
+<!-- page 115 -->
 
 culturomics and more generally in data mining.58 Such work often comes
 well corroborated from the physical sciences in which it was employed and is
@@ -5230,7 +5230,7 @@ https://doi.org/10.1017/9781107110625.005 Published online by Cambridge Universi
 
 ---
 
-<!-- page 117 -->
+<!-- page 116 -->
 
 them true. With topic modelling a similar criticism can apply, as
 outlined by Brookes and McEnery (2019: 4–8): the discovery proce-
@@ -5278,7 +5278,7 @@ https://doi.org/10.1017/9781107110625.005 Published online by Cambridge Universi
 
 ---
 
-<!-- page 118 -->
+<!-- page 117 -->
 
 Principle 180: Reporting falsiﬁcations is arguably more important than reporting
 corroboration. At the very least, both should be reported unless the report is
@@ -5323,7 +5323,7 @@ https://doi.org/10.1017/9781107110625.005 Published online by Cambridge Universi
 
 ---
 
-<!-- page 119 -->
+<!-- page 118 -->
 
 critiques of Popper’s framework. Another, very notable, system is that of
 Kuhn (1962), which we have mentioned already. It is easy to cast Kuhn as
@@ -5371,7 +5371,7 @@ https://doi.org/10.1017/9781107110625.005 Published online by Cambridge Universi
 
 ---
 
-<!-- page 120 -->
+<!-- page 119 -->
 
 But since this theory is no more than a metaphysical idea, or is at least
 impregnated with metaphysical ideas, it acquires the status of a scientiﬁc
@@ -5414,7 +5414,7 @@ https://doi.org/10.1017/9781107110625.005 Published online by Cambridge Universi
 
 ---
 
-<!-- page 121 -->
+<!-- page 120 -->
 
 though the truth of the falsiﬁcation is no more defensible than the
 truth of what was falsiﬁed. This has led philosophers such as Lakatos
@@ -5462,7 +5462,7 @@ https://doi.org/10.1017/9781107110625.005 Published online by Cambridge Universi
 
 ---
 
-<!-- page 122 -->
+<!-- page 121 -->
 
 Principle 16″: When building and using corpora, our goal is to facilitate (corpus
 building) and/or perform a genuine test (corpus use) and a genuine test must
@@ -5505,7 +5505,7 @@ https://doi.org/10.1017/9781107110625.005 Published online by Cambridge Universi
 
 ---
 
-<!-- page 123 -->
+<!-- page 122 -->
 
 be partial. As the species evolves, so too the genome that encodes such a
 priori assumptions that we could make about language, should they exist,
@@ -5547,7 +5547,7 @@ https://doi.org/10.1017/9781107110625.005 Published online by Cambridge Universi
 
 ---
 
-<!-- page 124 -->
+<!-- page 123 -->
 
 C H A P T E R F O U R
 What Is Social Science and the Digital Humanities?
@@ -5586,7 +5586,7 @@ https://doi.org/10.1017/9781107110625.006 Published online by Cambridge Universi
 
 ---
 
-<!-- page 125 -->
+<!-- page 124 -->
 
 knowledge, there is knowledge that is more rather than less likely to be
 worth accepting on conventional grounds. That is the knowledge that is in
@@ -5634,7 +5634,7 @@ https://doi.org/10.1017/9781107110625.006 Published online by Cambridge Universi
 
 ---
 
-<!-- page 126 -->
+<!-- page 125 -->
 
 Throughout the whole range of science, thus far, we have seen that the
 conditions of combination and of progress are originally identical: and I
@@ -5680,7 +5680,7 @@ https://doi.org/10.1017/9781107110625.006 Published online by Cambridge Universi
 
 ---
 
-<!-- page 127 -->
+<!-- page 126 -->
 
 subject as it is to processes that may be viewed through a naturalist optic.
 This insight by Popper is one that should guide corpus linguists in inter-
@@ -5726,7 +5726,7 @@ https://doi.org/10.1017/9781107110625.006 Published online by Cambridge Universi
 
 ---
 
-<!-- page 128 -->
+<!-- page 127 -->
 
 The Google engineers did not, doubtless, wish to create a racist, sexist
 and homophobic system, but because the data was reﬂective of the social
@@ -5774,7 +5774,7 @@ https://doi.org/10.1017/9781107110625.006 Published online by Cambridge Universi
 
 ---
 
-<!-- page 129 -->
+<!-- page 128 -->
 
 to us, but their work, in all likelihood, derived from a scientiﬁc approach
 rooted in mathematics.64 Yet because of the entangled nature of the
@@ -5822,7 +5822,7 @@ https://doi.org/10.1017/9781107110625.006 Published online by Cambridge Universi
 
 ---
 
-<!-- page 130 -->
+<!-- page 129 -->
 
 hypothesis is based (Gries 2013; Gablasova et al. 2017b). While there may
 be, and is, an interaction between researchers working in all three areas,
@@ -5867,7 +5867,7 @@ https://doi.org/10.1017/9781107110625.006 Published online by Cambridge Universi
 
 ---
 
-<!-- page 131 -->
+<!-- page 130 -->
 
 position. The theory of the God’s truth linguists . . . is that language ‘has’ a
 structure and the job of the linguist is (a) to ﬁnd out what the structure is, and
@@ -5922,7 +5922,7 @@ https://doi.org/10.1017/9781107110625.006 Published online by Cambridge Universi
 
 ---
 
-<!-- page 132 -->
+<!-- page 131 -->
 
 Yet any truth that arises from this is rooted in an illusion conjured by a
 ﬂight from the reality of language use.65
@@ -5968,7 +5968,7 @@ https://doi.org/10.1017/9781107110625.006 Published online by Cambridge Universi
 
 ---
 
-<!-- page 133 -->
+<!-- page 132 -->
 
 important it is to pay attention to the individual in corpus-based socio-
 linguistic studies; disregarding individual variation, as their study shows,
@@ -6011,7 +6011,7 @@ https://doi.org/10.1017/9781107110625.006 Published online by Cambridge Universi
 
 ---
 
-<!-- page 134 -->
+<!-- page 133 -->
 
 they acquire, we might argue, is the result of tradition – the social norms and
 practices of speakers over time transmitting the speciﬁc version of a language
@@ -6058,7 +6058,7 @@ https://doi.org/10.1017/9781107110625.006 Published online by Cambridge Universi
 
 ---
 
-<!-- page 135 -->
+<!-- page 134 -->
 
 adequacy of those theories are the same rules that we would apply to
 scientiﬁc theories. In exploring institutions and traditions, Popper would
@@ -6107,7 +6107,7 @@ https://doi.org/10.1017/9781107110625.006 Published online by Cambridge Universi
 
 ---
 
-<!-- page 136 -->
+<!-- page 135 -->
 
 based upon it, if we are to fully understand the nature and possibilities of
 working with corpus data.
@@ -6153,7 +6153,7 @@ https://doi.org/10.1017/9781107110625.006 Published online by Cambridge Universi
 
 ---
 
-<!-- page 137 -->
+<!-- page 136 -->
 
 process of modelling reality with a 3D wireframe model being a useful
 approximation of the spatial properties of the object being modelled, an
@@ -6186,7 +6186,7 @@ https://doi.org/10.1017/9781107110625.006 Published online by Cambridge Universi
 
 ---
 
-<!-- page 138 -->
+<!-- page 137 -->
 
 The Oedipus effect is deﬁned by Popper in The Poverty of
 Historicism as:
@@ -6233,7 +6233,7 @@ https://doi.org/10.1017/9781107110625.006 Published online by Cambridge Universi
 
 ---
 
-<!-- page 139 -->
+<!-- page 138 -->
 
 nineteenth century reveals many examples of split inﬁnitives produced
 before Alford was born, including ‘to precipitately raise’ (23 July 1813),
@@ -6280,7 +6280,7 @@ https://doi.org/10.1017/9781107110625.006 Published online by Cambridge Universi
 
 ---
 
-<!-- page 140 -->
+<!-- page 139 -->
 
 pretty untidy world; but ontological clarity and economy can be promoted’
 by making ‘our language regimented to ﬁt . . . predicative calculus’ (Quine
@@ -6326,7 +6326,7 @@ https://doi.org/10.1017/9781107110625.006 Published online by Cambridge Universi
 
 ---
 
-<!-- page 141 -->
+<!-- page 140 -->
 
 corpus users, we wish to permit the case where the simpliﬁcation was
 done as part of a process of incrementally testing hypotheses (in line with
@@ -6375,7 +6375,7 @@ https://doi.org/10.1017/9781107110625.006 Published online by Cambridge Universi
 
 ---
 
-<!-- page 142 -->
+<!-- page 141 -->
 
 Yet importantly, we can also claim that the closer the approximation to
 the truth that the corpus represents, the better the explanation produced
@@ -6423,7 +6423,7 @@ https://doi.org/10.1017/9781107110625.006 Published online by Cambridge Universi
 
 ---
 
-<!-- page 143 -->
+<!-- page 142 -->
 
 irrelevant conditions as memory limitations, distractions, shifts of attention
 and interest, and errors (random or characteristic) in applying his knowledge
@@ -6471,7 +6471,7 @@ https://doi.org/10.1017/9781107110625.006 Published online by Cambridge Universi
 
 ---
 
-<!-- page 144 -->
+<!-- page 143 -->
 
 be a more rational theory than that based on our introspections alone.
 Hence, we embrace Popper’s concept of critical rationalism which:
@@ -6513,7 +6513,7 @@ https://doi.org/10.1017/9781107110625.006 Published online by Cambridge Universi
 
 ---
 
-<!-- page 145 -->
+<!-- page 144 -->
 
 generally predictable, effects in reality. We deliberately introduced the
 common-sense defence of realism at the start of this book in preparation
@@ -6562,7 +6562,7 @@ https://doi.org/10.1017/9781107110625.006 Published online by Cambridge Universi
 
 ---
 
-<!-- page 146 -->
+<!-- page 145 -->
 
 broadly compatible with this approach, relying on ‘commonsense con-
 structs that have served us throughout intellectual history’ (Levinson
@@ -6608,7 +6608,7 @@ https://doi.org/10.1017/9781107110625.006 Published online by Cambridge Universi
 
 ---
 
-<!-- page 147 -->
+<!-- page 146 -->
 
 true) whatever has withstood our criticisms, our attempts to show it is
 false’ (Musgrave 2016: 225). While the results are not certain, and indeed
@@ -6657,7 +6657,7 @@ https://doi.org/10.1017/9781107110625.006 Published online by Cambridge Universi
 
 ---
 
-<!-- page 148 -->
+<!-- page 147 -->
 
 use language in the context of traditions and we may presume that those
 traditions are an important part of their decision making when speaking,
@@ -6706,7 +6706,7 @@ https://doi.org/10.1017/9781107110625.006 Published online by Cambridge Universi
 
 ---
 
-<!-- page 149 -->
+<!-- page 148 -->
 
 as the Spoken BNC2014, the corpus metadata may provide information
 on the age, social class, gender and occupation of the participants. It may
@@ -6755,7 +6755,7 @@ https://doi.org/10.1017/9781107110625.006 Published online by Cambridge Universi
 
 ---
 
-<!-- page 150 -->
+<!-- page 149 -->
 
 falsiﬁcation and surprise, where factors such as social context and the
 traditions of language are considered, diachronic falsiﬁcation and sur-
@@ -6804,7 +6804,7 @@ https://doi.org/10.1017/9781107110625.006 Published online by Cambridge Universi
 
 ---
 
-<!-- page 151 -->
+<!-- page 150 -->
 
 engaged with. The task of expanding the empirical range of linguistic
 hypotheses and enabling surprise, based on corpus data, is continuous,
@@ -6850,7 +6850,7 @@ https://doi.org/10.1017/9781107110625.006 Published online by Cambridge Universi
 
 ---
 
-<!-- page 152 -->
+<!-- page 151 -->
 
 results, but also in the sense that they could, under certain circumstances
 (coherence), interfere, that is, interact, with one another.
@@ -6898,7 +6898,7 @@ https://doi.org/10.1017/9781107110625.006 Published online by Cambridge Universi
 
 ---
 
-<!-- page 153 -->
+<!-- page 152 -->
 
 probability of a die roll being a speciﬁc value for all throws of dice
 throughout time: we know that there are loaded dice in existence and
@@ -6946,7 +6946,7 @@ https://doi.org/10.1017/9781107110625.006 Published online by Cambridge Universi
 
 ---
 
-<!-- page 154 -->
+<!-- page 153 -->
 
 that this distinction is important: it is an acceptance that linguistic struc-
 tures or features, for example, do not have a probability of occurring that
@@ -6994,7 +6994,7 @@ https://doi.org/10.1017/9781107110625.006 Published online by Cambridge Universi
 
 ---
 
-<!-- page 155 -->
+<!-- page 154 -->
 
 While the context may be very speciﬁc, the precise nature of the context,
 while apparently known, is actually subject to a range of forces that may
@@ -7043,7 +7043,7 @@ https://doi.org/10.1017/9781107110625.006 Published online by Cambridge Universi
 
 ---
 
-<!-- page 156 -->
+<!-- page 155 -->
 
 description of those factors. Given Principle 14, we should expect issues
 such as this when we are quasi-contact with reality.
@@ -7076,7 +7076,7 @@ https://doi.org/10.1017/9781107110625.006 Published online by Cambridge Universi
 
 ---
 
-<!-- page 157 -->
+<!-- page 156 -->
 
 after a corpus is published have the same value as ones determined
 before a corpus is published. We also only consider a speciﬁc language
@@ -7122,7 +7122,7 @@ https://doi.org/10.1017/9781107110625.006 Published online by Cambridge Universi
 
 ---
 
-<!-- page 158 -->
+<!-- page 157 -->
 
 Consider A\B. The simplest example of this imaginable is that if we do
 not have corpus data, it may be impossible to infer anything about word
@@ -7171,7 +7171,7 @@ https://doi.org/10.1017/9781107110625.006 Published online by Cambridge Universi
 
 ---
 
-<!-- page 159 -->
+<!-- page 158 -->
 
 very difﬁcult at this point, but also the possibility of doing so had not been
 thought of. Hence, B\A is a set that may shift over time, with items
@@ -7220,7 +7220,7 @@ https://doi.org/10.1017/9781107110625.006 Published online by Cambridge Universi
 
 ---
 
-<!-- page 160 -->
+<!-- page 159 -->
 
 People are not as simple as coins or dice – and their complexity relates
 directly to the forces that shape the propensity of language. So the relation-
@@ -7267,7 +7267,7 @@ https://doi.org/10.1017/9781107110625.006 Published online by Cambridge Universi
 
 ---
 
-<!-- page 161 -->
+<!-- page 160 -->
 
 This principle represents a good guide for corpus builders and users
 considering propensity. However, reality is not quite as simple as the
@@ -7317,7 +7317,7 @@ https://doi.org/10.1017/9781107110625.006 Published online by Cambridge Universi
 
 ---
 
-<!-- page 162 -->
+<!-- page 161 -->
 
 Of course, one response to the problem outlined may be to reach for a
 method that does not exhibit this problem. Sadly, as should be apparent
@@ -7366,7 +7366,7 @@ https://doi.org/10.1017/9781107110625.006 Published online by Cambridge Universi
 
 ---
 
-<!-- page 163 -->
+<!-- page 162 -->
 
 background, age and other factors in major psychological studies.
 Speciﬁcally in linguistics, researchers such as Kormos and Sáfár (2008),
@@ -7415,7 +7415,7 @@ https://doi.org/10.1017/9781107110625.006 Published online by Cambridge Universi
 
 ---
 
-<!-- page 164 -->
+<!-- page 163 -->
 
 gravity that rotation works against that gravity to support the cohesions
 of the galaxy against this force that would tear it apart. Starting with
@@ -7471,7 +7471,7 @@ https://doi.org/10.1017/9781107110625.006 Published online by Cambridge Universi
 
 ---
 
-<!-- page 165 -->
+<!-- page 164 -->
 
 We feel that at this point we should return to fallibilism. Much of what
 has been written about fallibilism and the social sciences thus far may
@@ -7517,7 +7517,7 @@ https://doi.org/10.1017/9781107110625.006 Published online by Cambridge Universi
 
 ---
 
-<!-- page 166 -->
+<!-- page 165 -->
 
 of social science that recognises the role of the individual, institutions and
 traditions. In addition, within the context of fallibilism, we have estab-
@@ -7537,7 +7537,7 @@ https://doi.org/10.1017/9781107110625.006 Published online by Cambridge Universi
 
 ---
 
-<!-- page 167 -->
+<!-- page 166 -->
 
 CHAPT ER F IVE
 Everyday Linguistics: Form and Function
@@ -7577,7 +7577,7 @@ https://doi.org/10.1017/9781107110625.007 Published online by Cambridge Universi
 
 ---
 
-<!-- page 168 -->
+<!-- page 167 -->
 
 distinction between the approach of the engineer (formalism) and the
 collector (functionalism). The former creates a ‘framework of a building
@@ -7622,7 +7622,7 @@ https://doi.org/10.1017/9781107110625.007 Published online by Cambridge Universi
 
 ---
 
-<!-- page 169 -->
+<!-- page 168 -->
 
 Protean nature of interpretation leads to a fundamental distinction between
 the natural and the social sciences. Language as socially situated action,
@@ -7665,7 +7665,7 @@ https://doi.org/10.1017/9781107110625.007 Published online by Cambridge Universi
 
 ---
 
-<!-- page 170 -->
+<!-- page 169 -->
 
 were formulated in the Circle’s Theses (https://cercledeprague.org/pdf/theses
 .pdf) in 1929, a manifesto of the Circle. The Circle still meets every other
@@ -7711,7 +7711,7 @@ https://doi.org/10.1017/9781107110625.007 Published online by Cambridge Universi
 
 ---
 
-<!-- page 171 -->
+<!-- page 170 -->
 
 Key Thinkers: Libuše Dušková (1930) and Eva Hajičová
 (1935)
@@ -7754,7 +7754,7 @@ https://doi.org/10.1017/9781107110625.007 Published online by Cambridge Universi
 
 ---
 
-<!-- page 172 -->
+<!-- page 171 -->
 
 deﬁne the limits of its applicability, and seek further generalizations to back it
 up. . . . In order to escape from this trap, linguists have had to invent the
@@ -7801,7 +7801,7 @@ https://doi.org/10.1017/9781107110625.007 Published online by Cambridge Universi
 
 ---
 
-<!-- page 173 -->
+<!-- page 172 -->
 
 because theories and descriptions, for instance, in physics (gravity, rela-
 tivity theory) merge in their universal impact. Gravity is present wher-
@@ -7845,7 +7845,7 @@ https://doi.org/10.1017/9781107110625.007 Published online by Cambridge Universi
 
 ---
 
-<!-- page 174 -->
+<!-- page 173 -->
 
 Axiomatic functionalism, later expanded and re-framed (e.g. Dickins 1998,
 2009), positions itself against the Chomskyan universalist approach to
@@ -7890,7 +7890,7 @@ https://doi.org/10.1017/9781107110625.007 Published online by Cambridge Universi
 
 ---
 
-<!-- page 175 -->
+<!-- page 174 -->
 
 communication in the context of language acquisition full of trials and
 errors? Third, what if a person is not producing speech or writing within
@@ -7937,7 +7937,7 @@ https://doi.org/10.1017/9781107110625.007 Published online by Cambridge Universi
 
 ---
 
-<!-- page 176 -->
+<!-- page 175 -->
 
 recipients also applied a version of Principle 40 and rejected the utterances if
 the claim to appropriacy (Principle 41) and well-formedness was not true.
@@ -7984,7 +7984,7 @@ https://doi.org/10.1017/9781107110625.007 Published online by Cambridge Universi
 
 ---
 
-<!-- page 177 -->
+<!-- page 176 -->
 
 the view that speakers are not committed to Principle 41. Here we follow a
 well-established Gricean co-operative principle, which states the following
@@ -8032,7 +8032,7 @@ https://doi.org/10.1017/9781107110625.007 Published online by Cambridge Universi
 
 ---
 
-<!-- page 178 -->
+<!-- page 177 -->
 
 capricious hearer may claim that an utterance is ill-formed when in fact
 they believe it is not? Perhaps they are doing so in jest or for rhetorical
@@ -8088,7 +8088,7 @@ https://doi.org/10.1017/9781107110625.007 Published online by Cambridge Universi
 
 ---
 
-<!-- page 179 -->
+<!-- page 178 -->
 
 are falsiﬁcations to our claims made on the basis of observation of corpus
 data: regarding corroborations, the speaker may not have been com-
@@ -8137,7 +8137,7 @@ https://doi.org/10.1017/9781107110625.007 Published online by Cambridge Universi
 
 ---
 
-<!-- page 180 -->
+<!-- page 179 -->
 
 to reject an utterance as ill-formed, we should be alert to the possibility of
 a violation of Principle 40. Principle 37 plays a key role here because if
@@ -8186,7 +8186,7 @@ https://doi.org/10.1017/9781107110625.007 Published online by Cambridge Universi
 
 ---
 
-<!-- page 181 -->
+<!-- page 180 -->
 
 those sentences or utterances that abide by Principle 40 and those which do
 not. We may then consider those utterances that do not appear to abide by
@@ -8238,7 +8238,7 @@ https://doi.org/10.1017/9781107110625.007 Published online by Cambridge Universi
 
 ---
 
-<!-- page 182 -->
+<!-- page 181 -->
 
 for concern with regard to well-formedness and appropriacy. Where they
 do, however, the identiﬁcation of sentences that appear to breach
@@ -8287,7 +8287,7 @@ https://doi.org/10.1017/9781107110625.007 Published online by Cambridge Universi
 
 ---
 
-<!-- page 183 -->
+<!-- page 182 -->
 
 enabled – by the extent to which any given corpus may allow us to model
 the forces composing propensity. This leads to the types of approximations
@@ -8333,7 +8333,7 @@ https://doi.org/10.1017/9781107110625.007 Published online by Cambridge Universi
 
 ---
 
-<!-- page 184 -->
+<!-- page 183 -->
 
 period, they are never the intended audience of that text and they are
 not a speaker of that variety of English. Essentially, Brereton had no
@@ -8382,7 +8382,7 @@ https://doi.org/10.1017/9781107110625.007 Published online by Cambridge Universi
 
 ---
 
-<!-- page 185 -->
+<!-- page 184 -->
 
 boundaries, we may hypothesise that this is the case also in Assamese.
 Similarly, we might assume there is a rough letter/phoneme correspon-
@@ -8431,7 +8431,7 @@ https://doi.org/10.1017/9781107110625.007 Published online by Cambridge Universi
 
 ---
 
-<!-- page 186 -->
+<!-- page 185 -->
 
 they are speaking, or writing, is committing themselves, from the point of
 view of themselves and their speech community, to the well-formedness
@@ -8482,7 +8482,7 @@ https://doi.org/10.1017/9781107110625.007 Published online by Cambridge Universi
 
 ---
 
-<!-- page 187 -->
+<!-- page 186 -->
 
 Here, punctuated with laughter (as marked by <laugh>) the student (L)
 produces a series of false starts, apologises for them and provides an
@@ -8530,7 +8530,7 @@ https://doi.org/10.1017/9781107110625.007 Published online by Cambridge Universi
 
 ---
 
-<!-- page 188 -->
+<!-- page 187 -->
 
 English from the speech community they are seeking to communicate
 with.
@@ -8578,7 +8578,7 @@ https://doi.org/10.1017/9781107110625.007 Published online by Cambridge Universi
 
 ---
 
-<!-- page 189 -->
+<!-- page 188 -->
 
 The difference between A and E is crucial: A represents a set of utter-
 ances that appear to be appropriate and well formed in use, while E
@@ -8627,7 +8627,7 @@ https://doi.org/10.1017/9781107110625.007 Published online by Cambridge Universi
 
 ---
 
-<!-- page 190 -->
+<!-- page 189 -->
 
 dispute the axiom underlying a normative conjecture. For example, if
 we discover that the axiom supporting a normative conjecture assumes
@@ -8676,7 +8676,7 @@ https://doi.org/10.1017/9781107110625.007 Published online by Cambridge Universi
 
 ---
 
-<!-- page 191 -->
+<!-- page 190 -->
 
 the Lancaster Spoken Language Transcription Guidelines (Gablasova
 et al. 2019).
@@ -8729,7 +8729,7 @@ https://doi.org/10.1017/9781107110625.007 Published online by Cambridge Universi
 
 ---
 
-<!-- page 192 -->
+<!-- page 191 -->
 
 BEVERLEY 1:
 but quite erm (.) you know you’d say things to
@@ -8781,7 +8781,7 @@ https://doi.org/10.1017/9781107110625.007 Published online by Cambridge Universi
 
 ---
 
-<!-- page 193 -->
+<!-- page 192 -->
 
 example, assessing the appropriateness of what a speaker says and then
 accepting or rejecting that or, potentially, deciding to accept the appro-
@@ -8825,7 +8825,7 @@ https://doi.org/10.1017/9781107110625.007 Published online by Cambridge Universi
 
 ---
 
-<!-- page 194 -->
+<!-- page 193 -->
 
 Buchanan (1929) produced a wordlist for Spanish based on an analysis of
 1.2 million words of written materials covering a range of genres, while
@@ -8874,7 +8874,7 @@ https://doi.org/10.1017/9781107110625.007 Published online by Cambridge Universi
 
 ---
 
-<!-- page 195 -->
+<!-- page 194 -->
 
 observation made – Zipf’s law – that can be tested and retested as each
 new insight into wordlist creation is made. The corpus has a powerfully
@@ -8921,7 +8921,7 @@ https://doi.org/10.1017/9781107110625.007 Published online by Cambridge Universi
 
 ---
 
-<!-- page 196 -->
+<!-- page 195 -->
 
 bride. Is it a noun or an adjective?’ (Leech 1997: 3). The answer can be
 argued either way and the word future can accommodate either annota-
@@ -8957,7 +8957,7 @@ https://doi.org/10.1017/9781107110625.007 Published online by Cambridge Universi
 
 ---
 
-<!-- page 197 -->
+<!-- page 196 -->
 
 CHAPT ER SI X
 Repetition and Replication: Laying the Groundwork
@@ -8999,7 +8999,7 @@ https://doi.org/10.1017/9781107110625.008 Published online by Cambridge Universi
 
 ---
 
-<!-- page 198 -->
+<!-- page 197 -->
 
 explore hypotheses already produced (Principle 33) that allow us to
 engage with our data in a structured and controlled way (Principle 1).
@@ -9046,7 +9046,7 @@ https://doi.org/10.1017/9781107110625.008 Published online by Cambridge Universi
 
 ---
 
-<!-- page 199 -->
+<!-- page 198 -->
 
 that are now promoting Open Science, a movement which came to the fore
 in the early twenty-ﬁrst century, which aims ‘to improve transparency of
@@ -9094,7 +9094,7 @@ https://doi.org/10.1017/9781107110625.008 Published online by Cambridge Universi
 
 ---
 
-<!-- page 200 -->
+<!-- page 199 -->
 
 corpus so that results based on it may be revisited – as researchers are about
 this issue in other ﬁelds, for example, computer science.
@@ -9171,7 +9171,7 @@ https://doi.org/10.1017/9781107110625.008 Published online by Cambridge Universi
 
 ---
 
-<!-- page 201 -->
+<!-- page 200 -->
 
 of scholars such as Gries (2022), who caution that we should be mindful of,
 and try to account for, variation in frequency at even this rather rudimentary
@@ -9218,7 +9218,7 @@ https://doi.org/10.1017/9781107110625.008 Published online by Cambridge Universi
 
 ---
 
-<!-- page 202 -->
+<!-- page 201 -->
 
 component ‘makes up just over 40% of the spoken corpus (over 4 million
 words)’ and within that roughly 40%, 41.14% of the words are spoken by
@@ -9264,7 +9264,7 @@ https://doi.org/10.1017/9781107110625.008 Published online by Cambridge Universi
 
 ---
 
-<!-- page 203 -->
+<!-- page 202 -->
 
 studies in corpus linguistics, though it can be easily overlooked.
 Repeatability provides an important anchor in reality and allows us to
@@ -9311,7 +9311,7 @@ https://doi.org/10.1017/9781107110625.008 Published online by Cambridge Universi
 
 ---
 
-<!-- page 204 -->
+<!-- page 203 -->
 
 He reads it and is delighted to discover that it appears to be based on
 some familiar data – the Brown family of corpora. He knows also that, via
@@ -9360,7 +9360,7 @@ https://doi.org/10.1017/9781107110625.008 Published online by Cambridge Universi
 
 ---
 
-<!-- page 205 -->
+<!-- page 204 -->
 
 We are also not told exactly how the data reported in the paper were
 retrieved, forcing us to assume once again, by convention, that an unknown
@@ -9408,7 +9408,7 @@ https://doi.org/10.1017/9781107110625.008 Published online by Cambridge Universi
 
 ---
 
-<!-- page 206 -->
+<!-- page 205 -->
 
 not a million-word corpus, and likewise neither is the Frown corpus. Using
 one concordance package, CQPweb, LOB is 1,141,986 words and Frown is
@@ -9476,7 +9476,7 @@ https://doi.org/10.1017/9781107110625.008 Published online by Cambridge Universi
 
 ---
 
-<!-- page 207 -->
+<!-- page 206 -->
 
 6.1.2 The Difﬁculty of Repetition
 How typical is the experience of our slightly disappointed and bafﬂed
@@ -9543,7 +9543,7 @@ https://doi.org/10.1017/9781107110625.008 Published online by Cambridge Universi
 
 ---
 
-<!-- page 208 -->
+<!-- page 207 -->
 
 that a direct repetition was not possible, a conclusion also reached also by
 Brezina et al. (2015: 142–143). Many of the issues discussed here were
@@ -9591,7 +9591,7 @@ https://doi.org/10.1017/9781107110625.008 Published online by Cambridge Universi
 
 ---
 
-<!-- page 209 -->
+<!-- page 208 -->
 
 Principle 45: Version management for corpora and tools should be considered at
 the start of a project and then maintained over time.
@@ -9657,7 +9657,7 @@ https://doi.org/10.1017/9781107110625.008 Published online by Cambridge Universi
 
 ---
 
-<!-- page 210 -->
+<!-- page 209 -->
 
 So, it appears, we must rely, in cases such as this, which are far from
 uncommon, on nothing but convention (Principle 20) by necessity rather
@@ -9704,7 +9704,7 @@ https://doi.org/10.1017/9781107110625.008 Published online by Cambridge Universi
 
 ---
 
-<!-- page 211 -->
+<!-- page 210 -->
 
 insight into the ﬁndings via replication as we will see in the next section.
 We will also slightly alter our perspective on the 2003 and 2010 studies.
@@ -9751,7 +9751,7 @@ https://doi.org/10.1017/9781107110625.008 Published online by Cambridge Universi
 
 ---
 
-<!-- page 212 -->
+<!-- page 211 -->
 
 different varieties of English and a wide range of text types it could only
 ever be partially successful at best.
@@ -9799,7 +9799,7 @@ https://doi.org/10.1017/9781107110625.008 Published online by Cambridge Universi
 
 ---
 
-<!-- page 213 -->
+<!-- page 212 -->
 
 resulted in a number of claims based on observational data, including that
 there existed a set of dominant discourses in the period (claim A) and
@@ -9847,7 +9847,7 @@ https://doi.org/10.1017/9781107110625.008 Published online by Cambridge Universi
 
 ---
 
-<!-- page 214 -->
+<!-- page 213 -->
 
 seventeenth century. However, there are 17,911 examples of the word in
 the century and they did not have the time and resources to examine each
@@ -9894,7 +9894,7 @@ https://doi.org/10.1017/9781107110625.008 Published online by Cambridge Universi
 
 ---
 
-<!-- page 215 -->
+<!-- page 214 -->
 
 expose the members of the set to a particular factor or set of factors;
 corpora thus reﬂect naturally occurring language in a variety of contexts.
@@ -9943,7 +9943,7 @@ https://doi.org/10.1017/9781107110625.008 Published online by Cambridge Universi
 
 ---
 
-<!-- page 216 -->
+<!-- page 215 -->
 
 individuals. In written corpus construction, the data collection is typically
 retrospective (published works are gathered) and in spoken corpus
@@ -9992,7 +9992,7 @@ https://doi.org/10.1017/9781107110625.008 Published online by Cambridge Universi
 
 ---
 
-<!-- page 217 -->
+<!-- page 216 -->
 
 insufﬁcient data to permit the precise experimental design a user may
 wish to pursue with the data.
@@ -10041,7 +10041,7 @@ https://doi.org/10.1017/9781107110625.008 Published online by Cambridge Universi
 
 ---
 
-<!-- page 218 -->
+<!-- page 217 -->
 
 W we are dealing with an inverse existential claim, namely ¬∃(x). Should we
 ﬁnd x ∈W, then we have not merely falsiﬁed the claim about Twitter, we
@@ -10089,7 +10089,7 @@ https://doi.org/10.1017/9781107110625.008 Published online by Cambridge Universi
 
 ---
 
-<!-- page 219 -->
+<!-- page 218 -->
 
 be tested on both cohorts (e.g. by Love 2021) to try to determine what
 type of effect was being observed.
@@ -10136,7 +10136,7 @@ https://doi.org/10.1017/9781107110625.008 Published online by Cambridge Universi
 
 ---
 
-<!-- page 220 -->
+<!-- page 219 -->
 
 Written BNC1994, the word occurs once – so we may conclude that 1) is
 corroborated as the existential statement ∃(peregrinating) has been satis-
@@ -10184,7 +10184,7 @@ https://doi.org/10.1017/9781107110625.008 Published online by Cambridge Universi
 
 ---
 
-<!-- page 221 -->
+<!-- page 220 -->
 
 we use the Written BNC1994. In it we ﬁnd these three words with a
 frequency of 139,674, 96,889 and 63,890, respectively. Both hypothesis
@@ -10222,7 +10222,7 @@ https://doi.org/10.1017/9781107110625.008 Published online by Cambridge Universi
 
 ---
 
-<!-- page 222 -->
+<!-- page 221 -->
 
 problems may arise. The population that is being studied in Figure 6.1 is
 the written sentences of British English produced in 1990–1992. This is
@@ -10271,7 +10271,7 @@ https://doi.org/10.1017/9781107110625.008 Published online by Cambridge Universi
 
 ---
 
-<!-- page 223 -->
+<!-- page 222 -->
 
 categorised on the basis of sentences. However, when we examine C and
 D, we discover that the intersection is in fact empty; C⋂D= Ø occurs as
@@ -10316,7 +10316,7 @@ https://doi.org/10.1017/9781107110625.008 Published online by Cambridge Universi
 
 ---
 
-<!-- page 224 -->
+<!-- page 223 -->
 
 interact. While if we take a sentence inventory approach to our sampling
 structure, the sets C and D do not (or are highly unlikely to) have an
@@ -10354,7 +10354,7 @@ https://doi.org/10.1017/9781107110625.008 Published online by Cambridge Universi
 
 ---
 
-<!-- page 225 -->
+<!-- page 224 -->
 
 this ontological level, but not equivalence. For example, FLOB contains
 belle lettres, a category not present in the BNC1994 sampling structure.
@@ -10401,7 +10401,7 @@ https://doi.org/10.1017/9781107110625.008 Published online by Cambridge Universi
 
 ---
 
-<!-- page 226 -->
+<!-- page 225 -->
 
 a corpus as a set of sentence types is likely to confound replication. This is
 largely because the deﬁnition of sentence type within the structuralist tradi-
@@ -10445,7 +10445,7 @@ https://doi.org/10.1017/9781107110625.008 Published online by Cambridge Universi
 
 ---
 
-<!-- page 227 -->
+<!-- page 226 -->
 
 British English, with the exception that ﬁndings may be the result of
 both propensity and features of the language in question.
@@ -10493,7 +10493,7 @@ https://doi.org/10.1017/9781107110625.008 Published online by Cambridge Universi
 
 ---
 
-<!-- page 228 -->
+<!-- page 227 -->
 
 who adds two further corpora into the study (E, British English and F,
 American English) drawn from around 2006, as will be discussed in more
@@ -10537,7 +10537,7 @@ https://doi.org/10.1017/9781107110625.008 Published online by Cambridge Universi
 
 ---
 
-<!-- page 229 -->
+<!-- page 228 -->
 
 while we cannot derive true probabilities, through working with our
 corpus data and replication, we may be able to better, though not
@@ -10554,7 +10554,7 @@ https://doi.org/10.1017/9781107110625.008 Published online by Cambridge Universi
 
 ---
 
-<!-- page 230 -->
+<!-- page 229 -->
 
 CHAPTER SEVEN
 Replication: Carrying out an Empirical Study
@@ -10594,7 +10594,7 @@ https://doi.org/10.1017/9781107110625.009 Published online by Cambridge Universi
 
 ---
 
-<!-- page 231 -->
+<!-- page 230 -->
 
 which points out that ‘[r]eproducibility, rigour, transparency and inde-
 pendent veriﬁcation are cornerstones of the scientiﬁc method’ (Nature
@@ -10643,7 +10643,7 @@ https://doi.org/10.1017/9781107110625.009 Published online by Cambridge Universi
 
 ---
 
-<!-- page 232 -->
+<!-- page 231 -->
 
 Table 7.1 Comparative overview of three studies on modals in British and American English
 Study
@@ -10705,7 +10705,7 @@ https://doi.org/10.1017/9781107110625.009 Published online by Cambridge Universi
 
 ---
 
-<!-- page 233 -->
+<!-- page 232 -->
 
 Table 7.1 (cont.)
 Study
@@ -10735,7 +10735,7 @@ https://doi.org/10.1017/9781107110625.009 Published online by Cambridge Universi
 
 ---
 
-<!-- page 234 -->
+<!-- page 233 -->
 
 used in Baker (2017). This allows us to carry out direct replication, a
 process that is very rare in corpus linguistic largely for practical reasons,
@@ -10784,7 +10784,7 @@ https://doi.org/10.1017/9781107110625.009 Published online by Cambridge Universi
 
 ---
 
-<!-- page 235 -->
+<!-- page 234 -->
 
 pursue that goal as fully as we would if we were solely interested in the
 outcome of the replication. Our study is guided more by the desire to
@@ -10836,7 +10836,7 @@ https://doi.org/10.1017/9781107110625.009 Published online by Cambridge Universi
 
 ---
 
-<!-- page 236 -->
+<!-- page 235 -->
 
 In our experiment we will be guided by two overarching research
 questions (RQs):
@@ -10933,7 +10933,7 @@ https://doi.org/10.1017/9781107110625.009 Published online by Cambridge Universi
 
 ---
 
-<!-- page 237 -->
+<!-- page 236 -->
 
 RQ2: In either set AM or BR, will results from one corpus be replicated
 approximately in another?
@@ -10993,7 +10993,7 @@ https://doi.org/10.1017/9781107110625.009 Published online by Cambridge Universi
 
 ---
 
-<!-- page 238 -->
+<!-- page 237 -->
 
 So far we have drawn on three axioms by convention. AC1 con-
 trols membership of the set of British or American English texts.
@@ -11041,7 +11041,7 @@ https://doi.org/10.1017/9781107110625.009 Published online by Cambridge Universi
 
 ---
 
-<!-- page 239 -->
+<!-- page 238 -->
 
 proportions were based on the amount of actual publications during
 1961.
@@ -11087,7 +11087,7 @@ https://doi.org/10.1017/9781107110625.009 Published online by Cambridge Universi
 
 ---
 
-<!-- page 240 -->
+<!-- page 239 -->
 
 to share the syntactic properties associated with the class of auxiliaries in
 English – including the so-called NICE properties (negation, inversion,
@@ -11130,7 +11130,7 @@ https://doi.org/10.1017/9781107110625.009 Published online by Cambridge Universi
 
 ---
 
-<!-- page 241 -->
+<!-- page 240 -->
 
 The ‘overall picture of the modal auxiliaries in gradual decline is
 unquestionable’ (Leech et al. 2010: 71).
@@ -11178,7 +11178,7 @@ https://doi.org/10.1017/9781107110625.009 Published online by Cambridge Universi
 
 ---
 
-<!-- page 242 -->
+<!-- page 241 -->
 
 Hypothesis 6: Between a point in time T1 and a following point of time T2,
 the ordering of the set AM-M, based on frequency of occurrence, will be
@@ -11273,7 +11273,7 @@ https://doi.org/10.1017/9781107110625.009 Published online by Cambridge Universi
 
 ---
 
-<!-- page 243 -->
+<!-- page 242 -->
 
 7.2 Results: Hypothesis 1 and Hypothesis 2
 First, let us look at the results comparing frequency and rank order of
@@ -11371,7 +11371,7 @@ https://doi.org/10.1017/9781107110625.009 Published online by Cambridge Universi
 
 ---
 
-<!-- page 244 -->
+<!-- page 243 -->
 
 noted from the last column in Tables 7.5 and 7.6, the results for BR and
 AM are in some ways not exactly the same: the max-min distance shows a
@@ -11417,7 +11417,7 @@ https://doi.org/10.1017/9781107110625.009 Published online by Cambridge Universi
 
 ---
 
-<!-- page 245 -->
+<!-- page 244 -->
 
 74.47% ≮73.54% and 2) 25.53% ≯26.46%. Hypothesis 3 is thus falsi-
 ﬁed. Interestingly, in pairings of Frown with the replication corpora
@@ -11499,7 +11499,7 @@ https://doi.org/10.1017/9781107110625.009 Published online by Cambridge Universi
 
 ---
 
-<!-- page 246 -->
+<!-- page 245 -->
 
 that axiom fails on British English as would declines in usage by 11.54%
 between LOB and FLOB, so we need to reﬁne our arbitrary decision to
@@ -11621,7 +11621,7 @@ https://doi.org/10.1017/9781107110625.009 Published online by Cambridge Universi
 
 ---
 
-<!-- page 247 -->
+<!-- page 246 -->
 
 some degree, falsify the two hypotheses. Of the two elements of AC6, only
 one, the frequency criterion, seems to still separate the two groups – in all
@@ -11742,7 +11742,7 @@ https://doi.org/10.1017/9781107110625.009 Published online by Cambridge Universi
 
 ---
 
-<!-- page 248 -->
+<!-- page 247 -->
 
 Hypothesis 4, as H and L clearly do not have the same members over
 time, nor between varieties. As for Hypothesis 3, while we can ﬁnd
@@ -11788,7 +11788,7 @@ https://doi.org/10.1017/9781107110625.009 Published online by Cambridge Universi
 
 ---
 
-<!-- page 249 -->
+<!-- page 248 -->
 
 7.4 Results: Hypothesis 5, Hypothesis 6 and Hypothesis 7
 Based on the analyses so far we can note that Hypothesis 5 is falsiﬁed
@@ -11930,7 +11930,7 @@ https://doi.org/10.1017/9781107110625.009 Published online by Cambridge Universi
 
 ---
 
-<!-- page 250 -->
+<!-- page 249 -->
 
 things are similar enough to be called approximately the same. We will
 not do that here as such an axiom will be called for shortly anyway (see
@@ -11978,7 +11978,7 @@ https://doi.org/10.1017/9781107110625.009 Published online by Cambridge Universi
 
 ---
 
-<!-- page 251 -->
+<!-- page 250 -->
 
 In our replication study, we experimented by computing Spearman’s
 correlations for pairs of corpora for both varieties of English. First we
@@ -12080,7 +12080,7 @@ https://doi.org/10.1017/9781107110625.009 Published online by Cambridge Universi
 
 ---
 
-<!-- page 252 -->
+<!-- page 251 -->
 
 Hypothesis 60: Between a point in time T1 and a following point of time, T2,
 the rank ordering (R), based on frequency, of the set AM-M will be such
@@ -12181,7 +12181,7 @@ https://doi.org/10.1017/9781107110625.009 Published online by Cambridge Universi
 
 ---
 
-<!-- page 253 -->
+<!-- page 252 -->
 
 Hypothesis 8 also states that there is an exception to the decline for can
 and could in BR-M. However, this exception is falsiﬁed for can in all BR
@@ -12228,7 +12228,7 @@ https://doi.org/10.1017/9781107110625.009 Published online by Cambridge Universi
 
 ---
 
-<!-- page 254 -->
+<!-- page 253 -->
 
 hypotheses in Leech et al. (2010) survived our attempts at falsiﬁcation and,
 where they did not, survived sometimes in a modiﬁed form. It is particularly
@@ -12276,7 +12276,7 @@ https://doi.org/10.1017/9781107110625.009 Published online by Cambridge Universi
 
 ---
 
-<!-- page 255 -->
+<!-- page 254 -->
 
 nothing more than compare two quantities and, on the basis of a compar-
 ison rooted within simple mathematics, provided a yes/no outcome that,
@@ -12325,7 +12325,7 @@ https://doi.org/10.1017/9781107110625.009 Published online by Cambridge Universi
 
 ---
 
-<!-- page 256 -->
+<!-- page 255 -->
 
 otherwise of the type of approach that lies behind signiﬁcance tests, the
 so-called frequentist approach. Some reject it and argue for a ‘new
@@ -12373,7 +12373,7 @@ https://doi.org/10.1017/9781107110625.009 Published online by Cambridge Universi
 
 ---
 
-<!-- page 257 -->
+<!-- page 256 -->
 
 as we moved to methodological falsiﬁcations it may be the case, ulti-
 mately, that we were relying more heavily on convention in asserting our
@@ -12420,7 +12420,7 @@ https://doi.org/10.1017/9781107110625.009 Published online by Cambridge Universi
 
 ---
 
-<!-- page 258 -->
+<!-- page 257 -->
 
 decline in both American and British English. Similarly, the decline is
 more pronounced in American English. There is a corollary to these
@@ -12468,7 +12468,7 @@ https://doi.org/10.1017/9781107110625.009 Published online by Cambridge Universi
 
 ---
 
-<!-- page 259 -->
+<!-- page 258 -->
 
 ‘unhealthy preoccupation with relationships between variables that fre-
 quently obscure relations between people’ (Elliot 2005: 99). Language as
@@ -12515,7 +12515,7 @@ https://doi.org/10.1017/9781107110625.009 Published online by Cambridge Universi
 
 ---
 
-<!-- page 260 -->
+<!-- page 259 -->
 
 variation in another variety (British English). The explanation is not only
 social, but also clearly has the capacity to vary across a population – just
@@ -12564,7 +12564,7 @@ https://doi.org/10.1017/9781107110625.009 Published online by Cambridge Universi
 
 ---
 
-<!-- page 261 -->
+<!-- page 260 -->
 
 contented, present our perfectly corroborated theory? Of course,
 given the arguments in this book, we would say ‘no’. Yet again it
@@ -12611,7 +12611,7 @@ https://doi.org/10.1017/9781107110625.009 Published online by Cambridge Universi
 
 ---
 
-<!-- page 262 -->
+<!-- page 261 -->
 
 assumptions that they make may set parameters on the mechanism that
 creates the effect – for example, in terms of the distributions presumed
@@ -12659,7 +12659,7 @@ https://doi.org/10.1017/9781107110625.009 Published online by Cambridge Universi
 
 ---
 
-<!-- page 263 -->
+<!-- page 262 -->
 
 point out ﬂaws in them, those ﬂaws become ampliﬁed through time and
 we do not know the population of language well enough to be able to
@@ -12708,7 +12708,7 @@ https://doi.org/10.1017/9781107110625.009 Published online by Cambridge Universi
 
 ---
 
-<!-- page 264 -->
+<!-- page 263 -->
 
 operationalise the knowledge we have, it remains a moot point whether
 we will be able to problematise that knowledge and improve upon it. In
@@ -12741,7 +12741,7 @@ https://doi.org/10.1017/9781107110625.009 Published online by Cambridge Universi
 
 ---
 
-<!-- page 265 -->
+<!-- page 264 -->
 
 CHAPT ER EI GHT
 Conclusion
@@ -12782,7 +12782,7 @@ https://doi.org/10.1017/9781107110625.010 Published online by Cambridge Universi
 
 ---
 
-<!-- page 266 -->
+<!-- page 265 -->
 
 explicitly stating the principles upon which it rests. One thing, which we,
 however, have left out of the equation is the person who is carrying out
@@ -12827,7 +12827,7 @@ https://doi.org/10.1017/9781107110625.010 Published online by Cambridge Universi
 
 ---
 
-<!-- page 267 -->
+<!-- page 266 -->
 
 In Popper’s version of the story, Wittgenstein is portrayed as a short-
 tempered person, who left the room after being stung by a witty repost
@@ -12875,7 +12875,7 @@ https://doi.org/10.1017/9781107110625.010 Published online by Cambridge Universi
 
 ---
 
-<!-- page 268 -->
+<!-- page 267 -->
 
 need to be added. You the reader may wish to participate in this venture.
 This may involve an elaboration of the position or a critique of our
@@ -12894,7 +12894,7 @@ https://doi.org/10.1017/9781107110625.010 Published online by Cambridge Universi
 
 ---
 
-<!-- page 269 -->
+<!-- page 268 -->
 
 AP PENDIX 1
 Fundamental Principles of Corpus Linguistics
@@ -12930,58 +12930,58 @@ observable language on which experience may be tested in accordance
 with Principles 7 and 11.
 Principle 6″: Corpus linguistics, drawing on scientia realis, works, as
 a social science, in a way which is informed by concepts from science –
+Published online by Cambridge University Press
+
+---
+
+<!-- page 269 -->
+
+it is the study of observable language on which experience may be
+tested in accordance with Principles 7 and 11.
+Principle 7: Corpus linguistics promotes and is based upon an intersub-
+jectively observable approach to language in which results are repea-
+table and replicable.
+Principle 8: In any given corpus investigation, data and theory are criti-
+cally considered.
+Principle 9: Corpus analysis does not pave a pathway to certainty – it is
+a problem-solving exercise and requires a constant engagement with
+new problems and the revisiting of old problems.
+Principle 10: Corpus linguistics, being closely linked to processes of
+induction (see Principle 4), also entails the problems of induction
+which in turn points towards uncertainty (Principle 9).
+Principle 100: Corpus linguistics, being closely linked to induction and
+quasi-induction (see Principe 4), also experiences the problem of
+induction which in turn points towards uncertainty (Principle 9).
+Principle 11: A corpus is of use for testing the falsiﬁability of a hypothesis
+about language.
+Principle 12: In developing new tools and data sets, corpus linguists are
+mindful of the need, where possible, to transition hypotheses from the
+realm of metaphysics to one where important principles of corpus
+linguistics may be brought to bear, especially Principles 4, 5, 6 and 11.
+Principle 13: The observable is not always of importance or utility.
+Principle 14: Corpus linguists are critical realists who use corpus data as
+a way to come into quasi-contact with language in use.
+Principle 15: Corpora are theoretically underdetermined and hence may
+support a range of theoretical perspectives.
+Principle 16: When building and using corpora, our goal is to facilitate
+(corpus building) or perform a genuine test (corpus use) and a genuine
+test must permit the possibility of falsiﬁcation.
+Principle 160: When building and using corpora, our goal is to facilitate
+(corpus building) and/or perform a genuine test (corpus use) and
+a genuine test must permit the possibility of falsiﬁcation while also
+achieving surprise.
+Principle 16″: When building and using corpora, our goal is to facilitate
+(corpus building) and/or perform a genuine test (corpus use) and
+a genuine test must permit the possibility of conditional falsiﬁcation
+while also achieving surprise.
+Appendix 1
+257
 Published online by Cambridge University Press
 
 ---
 
 <!-- page 270 -->
 
-it is the study of observable language on which experience may be
-tested in accordance with Principles 7 and 11.
-Principle 7: Corpus linguistics promotes and is based upon an intersub-
-jectively observable approach to language in which results are repea-
-table and replicable.
-Principle 8: In any given corpus investigation, data and theory are criti-
-cally considered.
-Principle 9: Corpus analysis does not pave a pathway to certainty – it is
-a problem-solving exercise and requires a constant engagement with
-new problems and the revisiting of old problems.
-Principle 10: Corpus linguistics, being closely linked to processes of
-induction (see Principle 4), also entails the problems of induction
-which in turn points towards uncertainty (Principle 9).
-Principle 100: Corpus linguistics, being closely linked to induction and
-quasi-induction (see Principe 4), also experiences the problem of
-induction which in turn points towards uncertainty (Principle 9).
-Principle 11: A corpus is of use for testing the falsiﬁability of a hypothesis
-about language.
-Principle 12: In developing new tools and data sets, corpus linguists are
-mindful of the need, where possible, to transition hypotheses from the
-realm of metaphysics to one where important principles of corpus
-linguistics may be brought to bear, especially Principles 4, 5, 6 and 11.
-Principle 13: The observable is not always of importance or utility.
-Principle 14: Corpus linguists are critical realists who use corpus data as
-a way to come into quasi-contact with language in use.
-Principle 15: Corpora are theoretically underdetermined and hence may
-support a range of theoretical perspectives.
-Principle 16: When building and using corpora, our goal is to facilitate
-(corpus building) or perform a genuine test (corpus use) and a genuine
-test must permit the possibility of falsiﬁcation.
-Principle 160: When building and using corpora, our goal is to facilitate
-(corpus building) and/or perform a genuine test (corpus use) and
-a genuine test must permit the possibility of falsiﬁcation while also
-achieving surprise.
-Principle 16″: When building and using corpora, our goal is to facilitate
-(corpus building) and/or perform a genuine test (corpus use) and
-a genuine test must permit the possibility of conditional falsiﬁcation
-while also achieving surprise.
-Appendix 1
-257
-Published online by Cambridge University Press
-
----
-
-<!-- page 271 -->
-
 Principle 17: When conducting a test with corpus data, one must consider
 the overall impact of any falsiﬁcation produced by that test.
 Principle 170: When conducting a test with corpus data, one must consider
@@ -13028,7 +13028,7 @@ Published online by Cambridge University Press
 
 ---
 
-<!-- page 272 -->
+<!-- page 271 -->
 
 Principle 25: Corpus linguists should seek to explore and develop axioms,
 which are integrated, non-redundant, parsimonious and necessary.
@@ -13074,7 +13074,7 @@ Published online by Cambridge University Press
 
 ---
 
-<!-- page 273 -->
+<!-- page 272 -->
 
 Principle 34: The weight of any given corroboration that we derive from
 a study, and thus the conﬁdence we may express in convention, is
@@ -13122,7 +13122,7 @@ Published online by Cambridge University Press
 
 ---
 
-<!-- page 274 -->
+<!-- page 273 -->
 
 Principle 41: The evidence for language is the production and reception
 of language by users and learners of language. The way in which it acts
@@ -13179,7 +13179,7 @@ Published online by Cambridge University Press
 
 ---
 
-<!-- page 275 -->
+<!-- page 274 -->
 
 Treatment design and experimental design should be clearly identiﬁed
 and, in the case of replication, a clear explanation given of what
@@ -13192,7 +13192,7 @@ Published online by Cambridge University Press
 
 ---
 
-<!-- page 276 -->
+<!-- page 275 -->
 
 AP PENDIX 1
 Fundamental Principles of Corpus Linguistics
@@ -13232,7 +13232,7 @@ https://doi.org/10.1017/9781107110625.011 Published online by Cambridge Universi
 
 ---
 
-<!-- page 277 -->
+<!-- page 276 -->
 
 it is the study of observable language on which experience may be
 tested in accordance with Principles 7 and 11.
@@ -13278,7 +13278,7 @@ https://doi.org/10.1017/9781107110625.011 Published online by Cambridge Universi
 
 ---
 
-<!-- page 278 -->
+<!-- page 277 -->
 
 Principle 17: When conducting a test with corpus data, one must consider
 the overall impact of any falsiﬁcation produced by that test.
@@ -13326,7 +13326,7 @@ https://doi.org/10.1017/9781107110625.011 Published online by Cambridge Universi
 
 ---
 
-<!-- page 279 -->
+<!-- page 278 -->
 
 Principle 25: Corpus linguists should seek to explore and develop axioms,
 which are integrated, non-redundant, parsimonious and necessary.
@@ -13372,7 +13372,7 @@ https://doi.org/10.1017/9781107110625.011 Published online by Cambridge Universi
 
 ---
 
-<!-- page 280 -->
+<!-- page 279 -->
 
 Principle 34: The weight of any given corroboration that we derive from
 a study, and thus the conﬁdence we may express in convention, is
@@ -13420,7 +13420,7 @@ https://doi.org/10.1017/9781107110625.011 Published online by Cambridge Universi
 
 ---
 
-<!-- page 281 -->
+<!-- page 280 -->
 
 Principle 41: The evidence for language is the production and reception
 of language by users and learners of language. The way in which it acts
@@ -13477,7 +13477,7 @@ https://doi.org/10.1017/9781107110625.011 Published online by Cambridge Universi
 
 ---
 
-<!-- page 282 -->
+<!-- page 281 -->
 
 Treatment design and experimental design should be clearly identiﬁed
 and, in the case of replication, a clear explanation given of what
@@ -13490,7 +13490,7 @@ https://doi.org/10.1017/9781107110625.011 Published online by Cambridge Universi
 
 ---
 
-<!-- page 283 -->
+<!-- page 282 -->
 
 APPENDIX 2
 Glossary
@@ -13539,7 +13539,7 @@ https://doi.org/10.1017/9781107110625.012 Published online by Cambridge Universi
 
 ---
 
-<!-- page 284 -->
+<!-- page 283 -->
 
 Aristotelian
 Following the procedures for investigation as set out by
@@ -13598,7 +13598,7 @@ https://doi.org/10.1017/9781107110625.012 Published online by Cambridge Universi
 
 ---
 
-<!-- page 285 -->
+<!-- page 284 -->
 
 broad replication
 Confrontation of any aspect of prior research with new
@@ -13655,7 +13655,7 @@ https://doi.org/10.1017/9781107110625.012 Published online by Cambridge Universi
 
 ---
 
-<!-- page 286 -->
+<!-- page 285 -->
 
 conjecture
 A hypothesis that we make that, while it may initially be
@@ -13717,7 +13717,7 @@ https://doi.org/10.1017/9781107110625.012 Published online by Cambridge Universi
 
 ---
 
-<!-- page 287 -->
+<!-- page 286 -->
 
 argument and experience in an effort to approach the
 unattainable, the truth. A key feature of critical
@@ -13771,7 +13771,7 @@ https://doi.org/10.1017/9781107110625.012 Published online by Cambridge Universi
 
 ---
 
-<!-- page 288 -->
+<!-- page 287 -->
 
 degree of
 corroboration
@@ -13831,7 +13831,7 @@ https://doi.org/10.1017/9781107110625.012 Published online by Cambridge Universi
 
 ---
 
-<!-- page 289 -->
+<!-- page 288 -->
 
 with high empirical content are preferable to those with lower
 empirical content, all other considerations being equal.
@@ -13889,7 +13889,7 @@ https://doi.org/10.1017/9781107110625.012 Published online by Cambridge Universi
 
 ---
 
-<!-- page 290 -->
+<!-- page 289 -->
 
 systematically and reliably to something in reality – for
 example, light rays in homogenous media.
@@ -13949,7 +13949,7 @@ https://doi.org/10.1017/9781107110625.012 Published online by Cambridge Universi
 
 ---
 
-<!-- page 291 -->
+<!-- page 290 -->
 
 genuine test
 A genuine test is one that leads to the possibility of
@@ -14008,7 +14008,7 @@ https://doi.org/10.1017/9781107110625.012 Published online by Cambridge Universi
 
 ---
 
-<!-- page 292 -->
+<!-- page 291 -->
 
 induction
 In inductive logic the premises of an argument, which are
@@ -14068,7 +14068,7 @@ https://doi.org/10.1017/9781107110625.012 Published online by Cambridge Universi
 
 ---
 
-<!-- page 293 -->
+<!-- page 292 -->
 
 irrationalism
 In distinction to the rational approach to belief, the
@@ -14131,7 +14131,7 @@ https://doi.org/10.1017/9781107110625.012 Published online by Cambridge Universi
 
 ---
 
-<!-- page 294 -->
+<!-- page 293 -->
 
 new statistics
 An approach to statistics in which concepts such as
@@ -14190,7 +14190,7 @@ https://doi.org/10.1017/9781107110625.012 Published online by Cambridge Universi
 
 ---
 
-<!-- page 295 -->
+<!-- page 294 -->
 
 but, as their observability is non-existent, observability
 alone renders the attempt at falsification null and void.
@@ -14247,7 +14247,7 @@ https://doi.org/10.1017/9781107110625.012 Published online by Cambridge Universi
 
 ---
 
-<!-- page 296 -->
+<!-- page 295 -->
 
 acquiring certain types of data. Opportunistic corpus
 building usually proceeds on a ‘best effort’ basis to work
@@ -14304,7 +14304,7 @@ https://doi.org/10.1017/9781107110625.012 Published online by Cambridge Universi
 
 ---
 
-<!-- page 297 -->
+<!-- page 296 -->
 
 phenomenological
 approach
@@ -14362,7 +14362,7 @@ https://doi.org/10.1017/9781107110625.012 Published online by Cambridge Universi
 
 ---
 
-<!-- page 298 -->
+<!-- page 297 -->
 
 Prague Linguistic Circle
 Prague Linguistic Circle started as informal meetings of
@@ -14421,7 +14421,7 @@ https://doi.org/10.1017/9781107110625.012 Published online by Cambridge Universi
 
 ---
 
-<!-- page 299 -->
+<!-- page 298 -->
 
 provisional truth
 Well-corroborated hypotheses or theories that we deem
@@ -14481,7 +14481,7 @@ https://doi.org/10.1017/9781107110625.012 Published online by Cambridge Universi
 
 ---
 
-<!-- page 300 -->
+<!-- page 299 -->
 
 range
 How close, or otherwise, the degree of correspondence
@@ -14544,7 +14544,7 @@ https://doi.org/10.1017/9781107110625.012 Published online by Cambridge Universi
 
 ---
 
-<!-- page 301 -->
+<!-- page 300 -->
 
 society, to replace the methods of inquiry with those of the
 natural sciences.
@@ -14600,7 +14600,7 @@ https://doi.org/10.1017/9781107110625.012 Published online by Cambridge Universi
 
 ---
 
-<!-- page 302 -->
+<!-- page 301 -->
 
 scientia rationalis
 A precursor of rationalism. Scientia rationalis foregrounds
@@ -14657,7 +14657,7 @@ https://doi.org/10.1017/9781107110625.012 Published online by Cambridge Universi
 
 ---
 
-<!-- page 303 -->
+<!-- page 302 -->
 
 not as severe a test as looking at ﬁve thousand examples of
 the use of the inﬁnitive derived from a corpus.
@@ -14714,7 +14714,7 @@ https://doi.org/10.1017/9781107110625.012 Published online by Cambridge Universi
 
 ---
 
-<!-- page 304 -->
+<!-- page 303 -->
 
 speech community
 A group of speakers who are relatively homogeneous in
@@ -14771,7 +14771,7 @@ https://doi.org/10.1017/9781107110625.012 Published online by Cambridge Universi
 
 ---
 
-<!-- page 305 -->
+<!-- page 304 -->
 
 test corpus
 Such corpora arise from the practice of splitting apart
@@ -14830,7 +14830,7 @@ https://doi.org/10.1017/9781107110625.012 Published online by Cambridge Universi
 
 ---
 
-<!-- page 306 -->
+<!-- page 305 -->
 
 using the standard rules of orthography, usually, though
 not necessarily, for the writing system linked to the
@@ -14886,7 +14886,7 @@ https://doi.org/10.1017/9781107110625.012 Published online by Cambridge Universi
 
 ---
 
-<!-- page 307 -->
+<!-- page 306 -->
 
 reports based upon it are produced. If this is not done, the
 process of repetition in particular can be very difﬁcult.
@@ -14909,7 +14909,7 @@ https://doi.org/10.1017/9781107110625.012 Published online by Cambridge Universi
 
 ---
 
-<!-- page 308 -->
+<!-- page 307 -->
 
 References
 Aarts, J. (1991). ‘Intuition-based and observation-based grammars’, English
@@ -14950,7 +14950,7 @@ https://doi.org/10.1017/9781107110625.013 Published online by Cambridge Universi
 
 ---
 
-<!-- page 309 -->
+<!-- page 308 -->
 
 Baker, P. (2009). ‘The BE06 corps of British English and recent language
 change’, International Journal of Corpus Linguistics, 14 (3), pp. 312–337.
@@ -15000,7 +15000,7 @@ https://doi.org/10.1017/9781107110625.013 Published online by Cambridge Universi
 
 ---
 
-<!-- page 310 -->
+<!-- page 309 -->
 
 Brereton, W. (1644). The Successes of Our Cheshire Forces, as They Came
 Related by Sir William Breretons Own Pen to a Minister of Note, Thomas
@@ -15050,7 +15050,7 @@ https://doi.org/10.1017/9781107110625.013 Published online by Cambridge Universi
 
 ---
 
-<!-- page 311 -->
+<!-- page 310 -->
 
 Choi, H.-S., Guillaume, B. and Fort. K. (2022). ‘Corpus-based Language
 Universals Analysis using Universal Dependencies’, Quasy (Quantitative
@@ -15113,7 +15113,7 @@ https://doi.org/10.1017/9781107110625.013 Published online by Cambridge Universi
 
 ---
 
-<!-- page 312 -->
+<!-- page 311 -->
 
 de Beaugrande, R. (1996). ‘The ‘pragmatics’ of doing language science: The
 ‘warrant’ for large-scale corpus linguistics’, Journal of Pragmatics, 25 (4), pp.
@@ -15169,7 +15169,7 @@ https://doi.org/10.1017/9781107110625.013 Published online by Cambridge Universi
 
 ---
 
-<!-- page 313 -->
+<!-- page 312 -->
 
 Equality
 and
@@ -15225,7 +15225,7 @@ https://doi.org/10.1017/9781107110625.013 Published online by Cambridge Universi
 
 ---
 
-<!-- page 314 -->
+<!-- page 313 -->
 
 Gauch, H.G. (2003). Scientiﬁc Method in Practice, Cambridge University
 Press, Cambridge.
@@ -15275,7 +15275,7 @@ https://doi.org/10.1017/9781107110625.013 Published online by Cambridge Universi
 
 ---
 
-<!-- page 315 -->
+<!-- page 314 -->
 
 Guicciardini, N. (2009). Isaac Newton on Mathematical Certainty and
 Method, MIT Press, Cambridge, MA.
@@ -15325,7 +15325,7 @@ https://doi.org/10.1017/9781107110625.013 Published online by Cambridge Universi
 
 ---
 
-<!-- page 316 -->
+<!-- page 315 -->
 
 Hume, D. (1748). An Enquiry Concerning Human Understanding, Andrew
 Millar, The Strand, London.
@@ -15384,7 +15384,7 @@ https://doi.org/10.1017/9781107110625.013 Published online by Cambridge Universi
 
 ---
 
-<!-- page 317 -->
+<!-- page 316 -->
 
 Kuhn, T. (1962). The Structure of Scientiﬁc Revolutions, University of
 Chicago Press, Chicago.
@@ -15434,7 +15434,7 @@ https://doi.org/10.1017/9781107110625.013 Published online by Cambridge Universi
 
 ---
 
-<!-- page 318 -->
+<!-- page 317 -->
 
 Levinson, P. (1982). ‘Introduction: In pursuit of truth’, in P. Levinson (ed.) In
 Pursuit of Truth: Essays on the philosophy of Karl Popper on the occasion
@@ -15490,7 +15490,7 @@ https://doi.org/10.1017/9781107110625.013 Published online by Cambridge Universi
 
 ---
 
-<!-- page 319 -->
+<!-- page 318 -->
 
 McEnery, T. (2005). Swearing in English: Bad language, purity and power
 from 1586 to the present, Routledge, London.
@@ -15540,7 +15540,7 @@ https://doi.org/10.1017/9781107110625.013 Published online by Cambridge Universi
 
 ---
 
-<!-- page 320 -->
+<!-- page 319 -->
 
 philosophy of Karl Popper on the occasion of his 80th birthday, Harvester
 Press, Sussex, pp. 17–49.
@@ -15602,7 +15602,7 @@ https://doi.org/10.1017/9781107110625.013 Published online by Cambridge Universi
 
 ---
 
-<!-- page 321 -->
+<!-- page 320 -->
 
 Newmeyer, F.J. (2010). ‘Formalism and functionalism in linguistics’, in Wiley
 Interdisciplinary Reviews: Cognitive Science, 1 (3): 301–307.
@@ -15652,7 +15652,7 @@ https://doi.org/10.1017/9781107110625.013 Published online by Cambridge Universi
 
 ---
 
-<!-- page 322 -->
+<!-- page 321 -->
 
 Popper, K. (1957b). ‘The propensity interpretation of the calculus of prob-
 ability, and the quantum theory’, in S. Kő rner (ed.) Observation and
@@ -15702,7 +15702,7 @@ https://doi.org/10.1017/9781107110625.013 Published online by Cambridge Universi
 
 ---
 
-<!-- page 323 -->
+<!-- page 322 -->
 
 Quine, W.V.O. and Ullians, J. (1978). The Web of Belief (2nd ed.), Random
 House, New York.
@@ -15766,7 +15766,7 @@ https://doi.org/10.1017/9781107110625.013 Published online by Cambridge Universi
 
 ---
 
-<!-- page 324 -->
+<!-- page 323 -->
 
 Searle, J.R. (1969). Speech Acts: An essay in the philosophy of language,
 Cambridge University Press, Cambridge.
@@ -15815,7 +15815,7 @@ https://doi.org/10.1017/9781107110625.013 Published online by Cambridge Universi
 
 ---
 
-<!-- page 325 -->
+<!-- page 324 -->
 
 Stubbs, M. (2007). ‘On texts, corpora and models of language’, in M. Hoey,
 M. Mahlberg, M. Stubbs and W. Teubert (eds.) Text, Discourse and
@@ -15864,7 +15864,7 @@ https://doi.org/10.1017/9781107110625.013 Published online by Cambridge Universi
 
 ---
 
-<!-- page 326 -->
+<!-- page 325 -->
 
 Whitt, R. (ed.) (2018). Diachronic Corpora, Genre, and Language Change,
 John Benjamins, Amsterdam.
@@ -15920,7 +15920,7 @@ https://doi.org/10.1017/9781107110625.013 Published online by Cambridge Universi
 
 ---
 
-<!-- page 327 -->
+<!-- page 326 -->
 
 Index
 #LancsBox, 25, 224, 226, 227
@@ -15999,7 +15999,7 @@ https://doi.org/10.1017/9781107110625.014 Published online by Cambridge Universi
 
 ---
 
-<!-- page 328 -->
+<!-- page 327 -->
 
 BE06
 replication of, 226
@@ -16098,7 +16098,7 @@ https://doi.org/10.1017/9781107110625.014 Published online by Cambridge Universi
 
 ---
 
-<!-- page 329 -->
+<!-- page 328 -->
 
 and provisional truth, 75
 and statistics, 250
@@ -16195,7 +16195,7 @@ https://doi.org/10.1017/9781107110625.014 Published online by Cambridge Universi
 
 ---
 
-<!-- page 330 -->
+<!-- page 329 -->
 
 falsiﬁcation (cont.)
 methodological, deﬁned and discussed, 243
@@ -16289,7 +16289,7 @@ https://doi.org/10.1017/9781107110625.014 Published online by Cambridge Universi
 
 ---
 
-<!-- page 331 -->
+<!-- page 330 -->
 
 relativism, 10
 scepticism, 10
@@ -16385,7 +16385,7 @@ https://doi.org/10.1017/9781107110625.014 Published online by Cambridge Universi
 
 ---
 
-<!-- page 332 -->
+<!-- page 331 -->
 
 range, 96–98
 rationality principle, 126–128, 165, 172
@@ -16484,7 +16484,7 @@ https://doi.org/10.1017/9781107110625.014 Published online by Cambridge Universi
 
 ---
 
-<!-- page 333 -->
+<!-- page 332 -->
 
 epistemology, 217
 quantitative, 245, 246
@@ -16526,6 +16526,6 @@ https://doi.org/10.1017/9781107110625.014 Published online by Cambridge Universi
 
 ---
 
-<!-- page 334 -->
+<!-- page 333 -->
 
 https://doi.org/10.1017/9781107110625.014 Published online by Cambridge University Press
