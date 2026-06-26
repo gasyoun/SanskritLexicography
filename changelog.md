@@ -9,6 +9,21 @@ then **cut a new version every time the changelog is updated** (promote
 
 ## [Unreleased]
 
+## [0.0.20] - 2026-06-26
+
+### Added — cross-dict UNION headword index (scope E) with feminine fold (F)
+- **Scope decided = union**, feminines folded under the masculine. [`build_union.py`](HeadwordLists/build_union.py)
+  merges the 8 key1 dicts (AP GRA MW PWG PWK SKD VCP VEI) from `now-2026/` into a single
+  **295,298-headword** index with per-headword **provenance** (which dicts attest it) and
+  **gender** aggregated from each dict's `<lex>` (parsed per multi-line `<L>` record).
+  → [`union/UNION.md`](HeadwordLists/union/UNION.md), `union/union_headwords.tsv`
+  (`slp1, iast, n_dicts, dicts, gender, fem_fold`).
+- **Feminine fold, gender-driven and split for safety:** only the unambiguous **`-inī`→`-in`**
+  (238, gender-confirmed) is auto-folded — the masculine base gets an `mf(ī)` marker; the
+  **3,993 `-ā`/`-ī`** cases go to [`union/fold_candidates.tsv`](HeadwordLists/union/fold_candidates.tsv)
+  for editor review, because a feminine `-ā` noun often shares a stem with an unrelated
+  masculine `-a` (e.g. `āśā` "hope" ≠ feminine of `āśa` "corner"). Auto-fold audit in
+  `union/folded_feminines.tsv`. Covers the 8 key1 dicts; key2-only dicts mergeable next.
 ## [0.0.19] - 2026-06-26
 
 ### Added — item-F candidate lists (`alternate_headwords.py` + `f_candidates/`)
