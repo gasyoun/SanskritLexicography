@@ -9,6 +9,16 @@ then **cut a new version every time the changelog is updated** (promote
 
 ## [Unreleased]
 
+## [0.0.27] - 2026-06-26
+
+### Fixed — doc consolidation
+- **Broken relative links repaired.** `union/UNION.md` (generated) linked its scripts and
+  sibling TSVs with HeadwordLists-relative paths although the file lives in `union/`; fixed
+  in `build_union.py`'s md generation (`../build_union.py`, `../screen_candidates.py`,
+  same-dir TSVs) and the Catalan §7 `accent_review.py` link → `../accent_review.py`. All **143
+  internal links across the 19 HeadwordLists md files now resolve** (0 broken).
+- **`.ai_state.md`** gains a "Current status (2026-06-26)" header: HeadwordLists print-readiness
+  agent-prep complete (A–F), pwg_ru Track A ongoing.
 ## [0.0.26] - 2026-06-26
 
 ### Added — accent disagreements rendered for adjudication (item C)
