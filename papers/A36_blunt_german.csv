@@ -1,0 +1,402 @@
+dict,headword_iast,headword_slp1,category,german_word,citation
+PW,had,had,defecation,scheissen,"SARASVATĪK. 1,22"
+PWG,had,had,defecation,scheissen,"DHĀTUP. 23,8"
+SCH,jihatsu,jihatsu,defecation,scheißen,"S I,1,509."
+PW,purīṣay,purIzay,defecation,scheissen,
+PWG,purīṣay,purIzay,defecation,scheissen,"P. 5,2,36"
+PW,purīṣita,purIzita,defecation,beschissen,
+PW,snu,snu,defecation,beschissen,"KĀD. 136,23"
+PWG,snu,snu,defecation,beschissen,"KĀTY. ŚR. 25,11,32"
+PW,sru,sru,defecation,beschissen,"Comm. zu ĀPAST. 1,5,2"
+PWG,sru,sru,defecation,beschissen,"KĀTY. ŚR. 25,11,32"
+PW,apraśasta,apraSasta,excrement-noun,Unrath,"KATHĀS. 49,19"
+SCH,avaskara,avaskara,excrement-noun,Kot,"S I,447,1."
+PW,cikkhilla,cikKilla,excrement-noun,Dreck,
+PWG,cikkhilla,cikKilla,excrement-noun,Dreck,HĀLA 66
+PWG,goha,goha,excrement-noun,Unrath,"AIT. BR. 2,6"
+PW,gomaya,gomaya,excrement-noun,Mist,"237,10"
+PWG,gomaya,gomaya,excrement-noun,Mist,"VARĀH. BṚH. S. 55,30"
+PW,grāhaka,grAhaka,excrement-noun,Unrath,"HEMĀDRI 1,424,9. 429,11"
+PWG,grāhaka,grAhaka,excrement-noun,Unrath,"ŚĀRṄG. SAṂH. 1,6,5"
+SCH,gūtha,gUTa,excrement-noun,Kot,"S I,447,12"
+PW,har,har,excrement-noun,Koth,"CARAKA. 6,18"
+PWG,har,har,excrement-noun,Koth,"MBH. 13,3841"
+PW,kalka,kalka,excrement-noun,Koth,
+PWG,kalka,kalka,excrement-noun,Koth,"AK. 3,4,1,14"
+PW,kaluṣa,kaluza,excrement-noun,Unflath,"104,6"
+PW,kardamāṭaka,kardamAwaka,excrement-noun,Unrath,
+PWG,kardamāṭaka,kardamAwaka,excrement-noun,Koth,ŚABDAR.
+PW,kaśmala,kaSmala,excrement-noun,Unrath,
+PWG,kaśmala,kaSmala,excrement-noun,Unrath,Spr. (II) 1761
+PW,kṣar,kzar,excrement-noun,Koth,"MĀRK. P. 8,142"
+PW,laṇḍa,laRqa,excrement-noun,Unrath,"KĀVYAPR. S. 155, N. 51"
+PWG,laṇḍa,laRqa,excrement-noun,Unrath,ŚKDR.
+PW,leṇḍa,leRqa,excrement-noun,Unrath,
+PWG,leṇḍa,leRqa,excrement-noun,Unrath,"BHĀG. P. 10,37,8"
+PWG,lopāśaka,lopASaka,excrement-noun,Unrath,"SCHIEFNER, Lebensb. 294 (64)"
+PW,mahāpaṅka,mahApaNka,excrement-noun,Koth,"140,33"
+PWG,mahāpaṅka,mahApaNka,excrement-noun,Koth,"HIT. 12,2"
+PW,mala,mala,excrement-noun,Unrath,"ṚV. 10,136,2"
+PWG,mala,mala,excrement-noun,Unrath,"AK. 2,6,2,16"
+PWG,malabhuj,malaBuj,excrement-noun,Unrath,ŚABDAR.
+PWG,maladrāvin,maladrAvin,excrement-noun,Unrath,RĀJAN.
+PW,mil,mil,excrement-noun,Koth,CAMPAKA. 256. fg.
+PW,mīḍha,mIQa,excrement-noun,Koth,"LALIT. 205,6. 11. 259,12"
+PW,niṣadvara,nizadvara,excrement-noun,Koth,"23,17"
+PWG,niṣadvara,nizadvara,excrement-noun,Koth,"AK. 1,2,3,9"
+SCH,niṣadvara,nizadvara,excrement-noun,Kot,"S I,340,14"
+PW,niṣpurīṣa,nizpurIza,excrement-noun,Unrath,"ĀŚV. ŚR. 6,10,5"
+PW,parikṣā,parikzA,excrement-noun,Koth,
+PWG,parikṣā,parikzA,excrement-noun,Koth,ŚABDĀRTHAK.
+PW,pañcagavya,paYcagavya,excrement-noun,Koth,"HEMĀDRI 1,201,22"
+PWG,pañcagavya,paYcagavya,excrement-noun,Koth,ŚABDAC.
+PW,paṅka,paNka,excrement-noun,Koth,"SUPARṆ. 2,4"
+PWG,paṅka,paNka,excrement-noun,Koth,"AK. 1,2,3,9"
+PWG,paṅkadigdhaśarīra,paNkadigDaSarIra,excrement-noun,Koth,HARIV. 12938
+PWG,paṅkadigdhāṅga,paNkadigDANga,excrement-noun,Koth,"MBH. 9,2570"
+PW,purīṣa,purIza,excrement-noun,Unrath,"KUHNʼS Z. 26,62. fgg."
+PWG,purīṣa,purIza,excrement-noun,Unrath,"AK. 2,6,2,19"
+PW,purīṣasaṃhita,purIzasaMhita,excrement-noun,Unrath,"ŚAT. BR. 6,7,1,10"
+PWK,purīṣasaṃhita,purIzasaMhita,excrement-noun,Unrath,"ŚAT. BR. 6,7,1,10"
+SCH,purīṣasaṃhita,purIzasaMhita,excrement-noun,Unrat,"Śat. Br. 6,7,1,10."
+PWG,purīṣay,purIzay,excrement-noun,Koth,"P. 5,2,36"
+PW,purīṣaṇa,purIzaRa,excrement-noun,Unrath,GAL.
+PWG,purīṣaṇa,purIzaRa,excrement-noun,Unrath,"TRIK. 2,6,20"
+PWG,pārṣī,pArzI,excrement-noun,Mist,VYUTP. 126
+PW,rasamala,rasamala,excrement-noun,Unrath,
+PWG,rasamala,rasamala,excrement-noun,Unrath,"KAP. 2,28"
+PW,romantha,romanTa,excrement-noun,Unrath,"KĀD. 30,10. 129,1"
+PWG,romantha,romanTa,excrement-noun,Unrath,"P. 3,1,15"
+PW,ruksadman,ruksadman,excrement-noun,Koth,
+PWG,ruksadman,ruksadman,excrement-noun,Koth,ŚABDĀRTHAK.
+PW,sapurīṣa,sapurIza,excrement-noun,Koth,"ŚAT. BR. 12,5,2,5"
+PW,saṃkara,saMkara,excrement-noun,Mist,"CARAKA. 1,14. 6,19. 24. 30. 8,6"
+PW,saṃlepa,saMlepa,excrement-noun,Koth,"HEMĀDRI 1,604,7"
+PW,sru,sru,excrement-noun,Koth,"ŚĀṄKH. BR. 2,2"
+PWK,sru,sru,excrement-noun,Koth,"ŚĀṄKH. BR. 2,2"
+SCH,sru,sru,excrement-noun,Kot,"Śāṅkh. Br. 2,2"
+PWG,udāvarta,udAvarta,excrement-noun,Koth,WISE 351
+SCH,utsāraṇa,utsAraRa,excrement-noun,Mist,"S I,254,5."
+PW,varcas,varcas,excrement-noun,Koth,
+PWG,varcas,varcas,excrement-noun,Koth,UJJVAL.
+PW,varcaska,varcaska,excrement-noun,Koth,
+PW,vigarha,vigarha,excrement-noun,Koth,
+PW,vipurīṣa,vipurIza,excrement-noun,Unrath,
+PWG,vipurīṣa,vipurIza,excrement-noun,Unrath,"ŚAT. BR. 12,5,2,5"
+PW,viḍbhuj,viqBuj,excrement-noun,Mist,"BHĀG. P. 5,5,1"
+PWG,viḍbhuj,viqBuj,excrement-noun,Mist,"BHĀG. P. 11,27,54"
+PW,viḍja,viqja,excrement-noun,Mist,
+PWG,viḍja,viqja,excrement-noun,Mist,"YĀJÑ. 1,171"
+PW,viṇmūtra,viRmUtra,excrement-noun,Koth,
+PWG,viṇmūtra,viRmUtra,excrement-noun,Koth,"M. 4,48"
+PWG,viṣṭaruhā,vizwaruhA,excrement-noun,Mist,ŚKDR.
+PW,viṣṭhābhū,vizWABU,excrement-noun,Koth,
+PWG,viṣṭhābhū,vizWABU,excrement-noun,Koth,"BHĀG. P. 3,31,10"
+PW,viṣṭhāsāt,vizWAsAt,excrement-noun,Koth,
+PWG,viṣṭhāsāt,vizWAsAt,excrement-noun,Koth,HEM.
+PWG,yāvaka,yAvaka,excrement-noun,Unrath,"MBH. 13,1796"
+PW,yāvakavratin,yAvakavratin,excrement-noun,Koth,"NĪLAK. zu MBH. 13,26,38"
+GRA,śaka,Saka,excrement-noun,Mist,AV.
+PW,śaka,Saka,excrement-noun,Mist,"MBH. 13,2835"
+PWG,śaka,Saka,excrement-noun,Mist,"AV. 3,14,4"
+PW,śakaidha,SakEDa,excrement-noun,Mist,"ĀPAST. ŚR. 9,9,12"
+GRA,śakamaya,Sakamaya,excrement-noun,Mist,
+PW,śakamaya,Sakamaya,excrement-noun,Mist,
+PWG,śakamaya,Sakamaya,excrement-noun,Mist,"ṚV. 1,164,43"
+PW,śakan,Sakan,excrement-noun,Mist,
+PW,śakaṃbhara,SakaMBara,excrement-noun,Mist,
+PWG,śakaṃbhara,SakaMBara,excrement-noun,Mist,"AV. 5,22,8"
+PW,śakṛdita,Sakfdita,excrement-noun,Mist,
+PWG,śakṛdita,Sakfdita,excrement-noun,Mist,"NIR. 6,22"
+GRA,śakṛt,Sakft,excrement-noun,Koth,Fi. 〔346〕
+PW,śakṛt,Sakft,excrement-noun,Mist,
+PWG,śakṛt,Sakft,excrement-noun,Mist,"AK. 2,6,2,18"
+PWG,śakṛtkari,Sakftkari,excrement-noun,Unrath,"P. 3,2,24"
+PW,śakṛtpadī,SakftpadI,excrement-noun,Mist,
+PWG,śakṛtpadī,SakftpadI,excrement-noun,Mist,"P. 5,4,139"
+PWG,śrīkṛcchra,SrIkfcCra,excrement-noun,Mist,"PRĀYAŚCITTEND. 9,a,5"
+PWG,apāna,apAna,flatulence,Furz,903
+PWG,durvāta,durvAta,flatulence,Furz,"BHĀG. P. 11,23,39"
+PWG,marutkarman,marutkarman,flatulence,Furzen,"Verz. d. Oxf. H. 60,a,1"
+PW,pard,pard,flatulence,farzen,
+PWG,pard,pard,flatulence,furzen,"DHĀTUP. 2,28"
+SCH,pard,pard,flatulence,farzen,"Sarasvatīk. 1,22."
+PWG,parda,parda,flatulence,Furz,ŚKDR.
+PWG,pardana,pardana,flatulence,Furzen,H. 1403
+PWG,pūtivāta,pUtivAta,flatulence,Furz,"BHĀG. P. 5,5,30"
+PWG,sraddhū,sradDU,flatulence,Furz,ŚABDĀRTHAK.
+PWG,vāta,vAta,flatulence,Furz,"MBH. 4,117"
+PWG,vātakarman,vAtakarman,flatulence,Furz,VARĀHA-P.
+PW,śardh,SarD,flatulence,farzen,
+PWG,śardh,SarD,flatulence,farzen,"7,2,59"
+PWG,śardha,SarDa,flatulence,Furz,"VOP. 26,61"
+PWG,ajjukā,ajjukA,prostitute,Buhlerin,"AK. 1,1,7,11"
+PW,akkā,akkA,prostitute,Hurenwirthin,PAÑCAD.
+PWK,akkā,akkA,prostitute,Hurenwirthin,PAÑCAD.
+SCH,akkā,akkA,prostitute,Hurenwirtin,Pañcad.
+PW,apuṃścalīya,apuMScalIya,prostitute,Hurenkind,Spr. 3591
+PW,avagūlikā,avagUlikA,prostitute,Hure,GAL.
+PW,bahubhogyā,bahuBogyA,prostitute,Hure,"DAŚAK. 84,6"
+PW,bandhura,banDura,prostitute,Hure,HĀSY.
+PWG,bandhura,banDura,prostitute,Hure,H. an.
+PW,bandiśūlā,bandiSUlA,prostitute,Hure,GAL.
+PW,barbaṭa,barbawa,prostitute,Hure,
+PWG,barbaṭa,barbawa,prostitute,Hure,H. an.
+PW,beṭī,bewI,prostitute,Hure,"Z. d. d. m. G. 27,22"
+PW,bhagabhakṣaka,BagaBakzaka,prostitute,Hurenwirth,
+PWG,bhagabhakṣaka,BagaBakzaka,prostitute,Hurenwirth,ŚKDR.
+PW,bhaṇḍahāsinī,BaRqahAsinI,prostitute,Hure,
+PWG,bhaṇḍahāsinī,BaRqahAsinI,prostitute,Hure,ŚABDAR.
+PW,bhoga,Boga,prostitute,Hurenlohn,"Ind. St. 15,144"
+PWG,bhoga,Boga,prostitute,Hurenlohn,"AK. 3,4,3,24"
+PW,bhogaguccha,BogagucCa,prostitute,Hurenlohn,
+PWG,bhogaguccha,BogagucCa,prostitute,Hurenlohn,WILSON
+PW,bhogya,Bogya,prostitute,Hure,"RĀJAN. 18,10"
+PWG,bhogya,Bogya,prostitute,Hure,49
+PW,bhujiṣya,Bujizya,prostitute,Hure,"CAṆḌAK. 65,4"
+PWG,bhujiṣya,Bujizya,prostitute,Hure,H. 533
+PW,bhāṭi,BAwi,prostitute,Hurenlohn,"HEM. PAR. 7,51"
+PWG,bhāṭi,BAwi,prostitute,Hurenlohn,H. ś. 92
+PW,bāndhakineya,bAnDakineya,prostitute,Hurensohn,
+PW,bārbarīṭa,bArbarIwa,prostitute,Hurensohn,
+PWG,bārbaṭīra,bArbawIra,prostitute,Hure,"H. an. 4,273"
+PW,chinna,Cinna,prostitute,Hure,"RĀJAN. 3,1"
+PWG,chinna,Cinna,prostitute,Hure,"H. an. 2,265"
+PW,diṇḍika,diRqika,prostitute,Hure,ebend.
+PWK,diṇḍika,diRqika,prostitute,Hure,ebend.
+SCH,diṇḍika,diRqika,prostitute,Hure,"Alaṃkārav. 28,"
+PW,dāraka,dAraka,prostitute,Hure,BHĀG. P.
+PWG,dārikā,dArikA,prostitute,Hure,DHAR.
+PW,dāsa,dAsa,prostitute,Hure,"VP. 3,10,9"
+PWG,dāsī,dAsI,prostitute,Hure,WILS.
+PW,gamya,gamya,prostitute,Hure,DAŚAK.
+PW,gaṇaka,gaRaka,prostitute,Hure,
+PW,gaṇeru,gaReru,prostitute,Hure,"MADANAV. 49,109"
+PWG,gaṇeru,gaReru,prostitute,Hure,"H. an. 3,534"
+PWG,gaṇikā,gaRikA,prostitute,Hure,"AK. 2,6,1,19"
+PW,golomī,golomI,prostitute,Hure,"CARAKA. 1,4"
+PWG,golomī,golomI,prostitute,Hure,WILSON
+PW,grāmaṇī,grAmaRI,prostitute,Hure,HARIV. 9556
+PWG,grāmaṇī,grAmaRI,prostitute,Hure,H. an.
+PWG,gāṇikya,gARikya,prostitute,Huren,"P. 4,2,40, Vārtt."
+PW,jharjhara,JarJara,prostitute,Hure,"BHĀVAPR. 2,17"
+PWG,jharjhara,JarJara,prostitute,Hure,"TRIK. 2,6,5"
+PW,jāyānujīvin,jAyAnujIvin,prostitute,Hure,
+PWG,jāyānujīvin,jAyAnujIvin,prostitute,Hure,ŚABDAR.
+PW,kumbha,kumBa,prostitute,Hure,"M. 4,7"
+PWG,kumbha,kumBa,prostitute,Hure,ŚABDAM.
+PW,kumbhadāsa,kumBadAsa,prostitute,Hure,"HARṢAC. 149,2"
+PW,kāvera,kAvera,prostitute,Hure,"VP.² 2,148, N."
+PWG,kāvera,kAvera,prostitute,Hure,"H. an. 3,537"
+PWG,kāṇelīmātar,kARelImAtar,prostitute,Hurenkind,"14,5"
+PW,kṣetrajña,kzetrajYa,prostitute,Hurenjäger,"TBR. 3,10,10,4"
+PWG,kṣetrajña,kzetrajYa,prostitute,Hurenjäger,MED.
+PW,kṣudra,kzudra,prostitute,Hure,"SUŚR. 1,9,5"
+PWG,kṣudra,kzudra,prostitute,Hure,"HALĀY. 2,335"
+PW,lañjikā,laYjikA,prostitute,Hure,
+PWG,lañjikā,laYjikA,prostitute,Hure,"TRIK. 2,6,5"
+SCH,lañjikā,laYjikA,prostitute,Hure,"S I,417,5"
+SCH,liñjikā,liYjikA,prostitute,Hure,"S II,346,17"
+PW,mahānagna,mahAnagna,prostitute,Buhlerin,"ĀPAST. ŚR. 15,20,8"
+PWG,mahānagna,mahAnagna,prostitute,Buhlerin,"AIT. BR. 1,27"
+PW,mahāṇagnī,mahARagnI,prostitute,Buhlerin,
+PW,masura,masura,prostitute,Hure,
+PWG,masura,masura,prostitute,Hure,H. an.
+PW,masūra,masUra,prostitute,Hure,
+PWG,masūra,masUra,prostitute,Hure,H. an.
+PW,mañjikā,maYjikA,prostitute,Hure,
+PWG,mañjikā,maYjikA,prostitute,Hure,HĀR. 144
+SCH,mañjikā,maYjikA,prostitute,Hure,"S I,515,7"
+PWG,mithyādhyavasiti,miTyADyavasiti,prostitute,Hure,"KUVALAY. 128,a"
+PW,mukta,mukta,prostitute,Hure,"RĀJAN. 13,152"
+PWG,mukta,mukta,prostitute,Hure,H. an.
+PW,māṇavaka,mARavaka,prostitute,Dirne,"Ind. St. 13,416. 420"
+PWG,māṇavaka,mARavaka,prostitute,Dirne,"P. 3,4,72"
+PW,naṭa,nawa,prostitute,Hure,"BHĀVAPR. 1,195"
+PWG,naṭa,nawa,prostitute,Hure,ŚABDAR.
+PWG,nāgadanta,nAgadanta,prostitute,Hure,H. an.
+PW,pauṃścaleya,pOMScaleya,prostitute,Hurensohn,"ĀPAST. ŚR. 20,3"
+PWG,pauṃścaleya,pOMScaleya,prostitute,Hurensohn,"TBR. 3,8,4,2"
+PW,pauṃścalīya,pOMScalIya,prostitute,Huren,
+PWG,pauṃścalīya,pOMScalIya,prostitute,Huren,"RĀJA-TAR. 4,662"
+PW,paśyantī,paSyantI,prostitute,Hure,
+PWG,paśyantī,paSyantI,prostitute,Hure,ŚABDĀRTHAK.
+PWG,paṇa,paRa,prostitute,Hurenlohn,"MṚCCH. 87,6"
+PW,paṇastrī,paRastrI,prostitute,Hure,
+PWG,paṇastrī,paRastrI,prostitute,Hure,"MṚCCH. 127,20"
+PW,paṇyastrī,paRyastrI,prostitute,Hure,
+PWG,paṇyastrī,paRyastrI,prostitute,Hure,"BHARTṚ. 1,89"
+PW,paṇyavilāsinī,paRyavilAsinI,prostitute,Hure,"RĀJAN. 12,129"
+PWG,paṇyavilāsinī,paRyavilAsinI,prostitute,Hure,"KATHĀS. 19,82"
+PW,paṇyayoṣit,paRyayozit,prostitute,Hure,
+PWG,paṇyayoṣit,paRyayozit,prostitute,Hure,"M. 9,259"
+PW,paṇāṅganā,paRANganA,prostitute,Hure,
+PWG,paṇāṅganā,paRANganA,prostitute,Hure,H. 532
+PW,prakāśanārī,prakASanArI,prostitute,Hure,
+PWG,prakāśanārī,prakASanArI,prostitute,Hure,"MṚCCH. 46,2"
+PW,pratihastin,pratihastin,prostitute,Hurenwirth,"DAŚAK. 49,20"
+PWG,pratihastin,pratihastin,prostitute,Hurenwirth,"DAŚAK. 62,2"
+PW,puṃścalī,puMScalI,prostitute,Hure,"VARĀH. BṚH. 23,5"
+PWG,puṃścalī,puMScalI,prostitute,Hure,"AK. 2,6,1,10"
+PW,puṃścalīya,puMScalIya,prostitute,Hurensohn,
+PWG,puṃścalīya,puMScalIya,prostitute,Hure,Spr. 1536
+PW,puṃścalū,puMScalU,prostitute,Hure,
+PWG,rambha,ramBa,prostitute,Hure,DHAR.
+PWG,ratāyanī,ratAyanI,prostitute,Hure,ŚABDAM.
+PW,rūpājīva,rUpAjIva,prostitute,Hure,
+PWG,rūpājīva,rUpAjIva,prostitute,Hure,"AK. 2,6,1,19"
+PW,sarvavallabhā,sarvavallaBA,prostitute,Hure,
+PW,tatkṣaṇikā,tatkzaRikA,prostitute,Hure,"MAHĀVY. 281,260"
+PWK,tatkṣaṇikā,tatkzaRikA,prostitute,Hure,"MAHĀVY. 281,260"
+SCH,tatkṣaṇikā,tatkzaRikA,prostitute,Hure,"Mahāvy. 281,260."
+PW,trapāraṇḍā,trapAraRqA,prostitute,Hure,
+PWG,trapāraṇḍā,trapAraRqA,prostitute,Hure,JAṬĀDH.
+PWG,vaiśika,vESika,prostitute,Buhlerin,"VARĀH. BṚH. S. 2,2"
+PW,vaśa,vaSa,prostitute,Hurenhaus,"ṚV. 8,46"
+PWG,vaśa,vaSa,prostitute,Hurenhaus,H. an.
+PW,vaḍabā,vaqabA,prostitute,Hure,"VIṢṆUS. 85,37"
+PW,veśa,veSa,prostitute,Hurenwirthschaft,"125,7"
+PWG,veśa,veSa,prostitute,Hurenwirthschaft,"AK. 2,2,1"
+PW,veśabhāva,veSaBAva,prostitute,Hurenart,
+PWG,veśabhāva,veSaBAva,prostitute,Hurenart,"MṚCCH. 120,21"
+PW,veśakula,veSakula,prostitute,Huren,"BHĀR. NĀṬYAŚ. 18,49"
+PWG,veśakula,veSakula,prostitute,Huren,"DAŚAK. 82,6"
+PWG,veśasthā,veSasTA,prostitute,Hure,"SĀMAVIDH. BR. 2,6,11"
+PW,veśavant,veSavant,prostitute,Hurenwirth,
+PWG,veśavant,veSavant,prostitute,Hurenhaus,KULL.
+PW,veśavāsa,veSavAsa,prostitute,Hurenhaus,
+PWG,veśavāsa,veSavAsa,prostitute,Hurenhaus,"MṚCCH. 13,12. fg."
+PW,veśya,veSya,prostitute,Hure,
+PWG,veśya,veSya,prostitute,Hure,"AK. 2,6,1,19"
+PWK,veśya,veSya,prostitute,Hurenwirthschaft,"DIVYĀVAD. 14,20"
+SCH,veśya,veSya,prostitute,Hurenwirtschaft,"Divyāvad. 14,20."
+PWG,veśyastrī,veSyastrI,prostitute,Hure,Spr. (II) 2942
+PW,veśyāgṛha,veSyAgfha,prostitute,Hurenhaus,"VARĀH. YOGAY. 7,15"
+PW,veśyājana,veSyAjana,prostitute,Hurenhaus,"ŚIŚ. 5,27"
+PW,veśyāvāsa,veSyAvAsa,prostitute,Hurenhaus,ŚĀŚVATA 702
+PW,veśyāśraya,veSyASraya,prostitute,Hurenhaus,
+PW,viṭa,viwa,prostitute,Hurenjäger,GAL.
+PWG,viṭa,viwa,prostitute,Hurenjäger,"BHAR. NĀṬYAŚ. 18,46"
+PW,vārasevā,vArasevA,prostitute,Hurenwirthschaft,
+PWG,vārasevā,vArasevA,prostitute,Hurenwirthschaft,JAṬĀDH.
+PW,vṛṣala,vfzala,prostitute,Hure,"ŚAT. BR. 14,9,4,12"
+PW,śulka,Sulka,prostitute,Hurenlohn,"VIṢṆUS. 17,18"
+PWG,śulka,Sulka,prostitute,Hurenlohn,"KATHĀS. 43,92"
+PW,śuṇḍa,SuRqa,prostitute,Hure,"RĀJAN. 5,75"
+PWG,śuṇḍa,SuRqa,prostitute,Hure,H. an.
+PW,śūla,SUla,prostitute,Hure,"VĀSAV. 116,2"
+PWG,śūla,SUla,prostitute,Hure,"TRIK. 2,6,5"
+PW,śūlapāla,SUlapAla,prostitute,Hurenwirth,"VĀSAV. 244,4"
+PWG,ṛccharā,fcCarA,prostitute,Hure,"Uṇ. 3,130"
+PW,abhidharṣayitavya,aBiDarzayitavya,rape/violate,entehren,"CARAKA 3,8"
+PWK,abhidharṣayitavya,aBiDarzayitavya,rape/violate,entehren,"CARAKA 3,8"
+SCH,abhidharṣayitavya,aBiDarzayitavya,rape/violate,entehren,"Caraka 3,8."
+PW,adūṣita,adUzita,rape/violate,geschändet,HARIV. 8544
+PW,brahmajya,brahmajya,rape/violate,vergewaltigend,
+PWG,brahmajya,brahmajya,rape/violate,vergewaltigend,"P. 3,2,3, Vārtt."
+PW,dharṣ,Darz,rape/violate,geschändet,"SUPARṆ. 27,1"
+PWG,dharṣ,Darz,rape/violate,geschändet,ŚABDAR.
+PW,dhvaṃs,DvaMs,rape/violate,schänden,"TBR. 1,4,3,6"
+PWG,dhvaṃs,DvaMs,rape/violate,schänden,"KATHĀS. 63,34"
+SCH,dhṛṣ,Dfz,rape/violate,schänden,Śuk.
+PWG,duṣ,duz,rape/violate,schänden,"M. 8,364"
+PW,dūṣay,dUzay,rape/violate,schänden,"43,6"
+PW,gam,gam,rape/violate,Unzucht,"ṚV. 1,83,1. 86,3. 2,25,4. 7,32,10. 8,46,9"
+PWG,gam,gam,rape/violate,Unzucht,"YĀJÑ. 2,289"
+PW,gogamana,gogamana,rape/violate,Unzucht,
+PWG,gogamana,gogamana,rape/violate,Unzucht,"Verz. d. Oxf. H. 282,a,5 v. u."
+PW,kar,kar,rape/violate,entehren,"HARṢAC. 163,11. 186,5. 192,22. 211,9"
+PWG,kar,kar,rape/violate,entehren,"ṚV. 8,48,3"
+PWG,karṣ,karz,rape/violate,entehren,"MBH. 13,2186"
+PWG,kṣata,kzata,rape/violate,geschändet,
+PW,lup,lup,rape/violate,schänden,Spr. 2819
+PWG,lup,lup,rape/violate,schänden,"MBH. 12,3401"
+PW,mahāpātaka,mahApAtaka,rape/violate,Unzucht,GAUT.
+PWG,mahāpātaka,mahApAtaka,rape/violate,Unzucht,"M. 11,54"
+PW,man,man,rape/violate,entehren,"SAṂHITOPAN. 36,3"
+PWG,man,man,rape/violate,entehren,"BHĀG. P. 6,6,43"
+PW,marś,marS,rape/violate,entehren,"226,20"
+PWG,marś,marS,rape/violate,entehren,"MBH. 3,11476"
+PW,mātṛgāmin,mAtfgAmin,rape/violate,Unzucht,
+PWG,mātṛgāmin,mAtfgAmin,rape/violate,Unzucht,"PAÑCAR. 1,6,50"
+PW,naś,naS,rape/violate,schänden,"DAŚAK. 92,2"
+PWG,naś,naS,rape/violate,schänden,KULL.
+PW,plu,plu,rape/violate,Unzucht,"CARAKA. 8,8"
+PWG,plu,plu,rape/violate,Unzucht,"M. 8,377"
+PWG,ram,ram,rape/violate,Unzucht,"MBH. 8,2115"
+PW,sah,sah,rape/violate,schänden,Padap.
+PWG,sah,sah,rape/violate,schänden,"M. 8,367"
+PW,saṃgrahaṇa,saMgrahaRa,rape/violate,Unzucht,UTTAMAC. 61
+PWG,saṃgrahaṇa,saMgrahaRa,rape/violate,Unzucht,"M. 8,6"
+PW,vart,vart,rape/violate,Unzucht,"VAJRACCH. 21,4. fgg. 36,5"
+PWG,vart,vart,rape/violate,Unzucht,Spr. 4815
+PWG,vimāna,vimAna,rape/violate,geschändet,"BHĀG. P. 5,13,10"
+PWG,vyabhicāra,vyaBicAra,rape/violate,Unzucht,"P. 4,1,127"
+PW,baddhamūtra,badDamUtra,urination,Harn,
+PWG,baddhamūtra,badDamUtra,urination,Harn,"SUŚR. 1,181,4"
+PW,baddhaviṇmūtra,badDaviRmUtra,urination,Harn,
+PWG,baddhaviṇmūtra,badDaviRmUtra,urination,Harn,"SUŚR. 1,181,7"
+PW,bahumūtra,bahumUtra,urination,harnend,
+PWG,bahumūtra,bahumUtra,urination,harnend,H. 470
+PWG,dhamani,Damani,urination,Harn,"SUŚR. 1,363. fgg."
+PWG,gaṇḍa,gaRqa,urination,harness,WILS.
+PW,kṣar,kzar,urination,Harn,"MĀRK. P. 8,142"
+PWG,kṣārameha,kzArameha,urination,Harn,"SUŚR. 1,272,6"
+PW,meha,meha,urination,harnen,"CARAKA. 6,6"
+PWG,mehin,mehin,urination,harnend,
+GRA,mih,mih,urination,pissen,Cu. 〔175〕
+PW,mih,mih,urination,seichen,"MBH. 13,5979"
+PWG,mih,mih,urination,seichen,DHĀTUP.
+PW,mūtra,mUtra,urination,Harn,"RĀJAN. 22,53"
+PWG,mūtra,mUtra,urination,Harn,"AK. 2,6,2,18"
+PW,mūtrakara,mUtrakara,urination,Harn,
+PWG,mūtrakara,mUtrakara,urination,Harn,"VĀGBH. 1,6,20"
+PW,mūtrakṛta,mUtrakfta,urination,Harn,
+PW,mūtrala,mUtrala,urination,Harn,"RĀJAN. 7,199"
+PWG,mūtrala,mUtrala,urination,Harn,"SUŚR. 1,186,12"
+PW,mūtramārga,mUtramArga,urination,Harn,RASAR. 663
+PWG,mūtramārga,mUtramArga,urination,Harn,"SUŚR. 1,25,8"
+PW,mūtrasāt,mUtrasAt,urination,Harn,
+PW,mūtraukasāda,mUtrOkasAda,urination,Harn,"CARAKA. 8,9"
+PWG,mūtraukasāda,mUtrOkasAda,urination,Harn,"SUŚR. 2,525,13"
+PW,mūtravaha,mUtravaha,urination,Harn,
+PWG,mūtravaha,mUtravaha,urination,Harn,"SUŚR. 1,264,7"
+PW,mūtravibandhaghna,mUtravibanDaGna,urination,Harn,
+PWG,mūtravibandhaghna,mUtravibanDaGna,urination,Harn,"SUŚR. 1,213,12"
+PW,mūtraviṣa,mUtraviza,urination,Harn,
+PWG,mūtraviṣa,mUtraviza,urination,Harn,"SUŚR. 2,251,14"
+PWG,mūtravṛddhi,mUtravfdDi,urination,Harn,WISE 371
+PW,mūtray,mUtray,urination,harnen,GAUT.
+PWG,mūtray,mUtray,urination,harnen,"DHĀTUP. 35,55"
+PW,mūtraśukra,mUtraSukra,urination,Harn,
+PWG,mūtraśukra,mUtraSukra,urination,Harn,"SUŚR. 2,525,7"
+PW,mūtrya,mUtrya,urination,Harn,
+PWG,mūtrya,mUtrya,urination,Harn,"AIT. BR. 1,20"
+PW,nīlamehin,nIlamehin,urination,Harn,"CARAKA. 2,4"
+PWG,nīlamehin,nIlamehin,urination,Harn,SUŚR. 2
+PW,nṛjala,nfjala,urination,Harn,
+PWG,nṛjala,nfjala,urination,Harn,H. 633
+PW,pañcagavya,paYcagavya,urination,Harn,"HEMĀDRI 1,201,22"
+PWG,pañcagavya,paYcagavya,urination,Harn,ŚABDAC.
+PW,pañcamūtra,paYcamUtra,urination,Harn,
+PWG,pañcamūtra,paYcamUtra,urination,Harn,RĀJAN.
+PW,phenamehin,Penamehin,urination,Harn,
+PWG,phenamehin,Penamehin,urination,Harn,"SUŚR. 2,78,4"
+PW,saktamūtra,saktamUtra,urination,harnend,
+PWG,saktamūtra,saktamUtra,urination,harnend,"CARAKA 1,27"
+PWG,saṃstha,saMsTa,urination,harniSAsaMsTAM,"MBH. 12,1992"
+PW,sikatāmeha,sikatAmeha,urination,Harn,
+PWG,sikatāmeha,sikatAmeha,urination,Harn,WISE 360
+PW,sru,sru,urination,pissen,"Comm. zu ĀPAST. 1,5,2"
+PWG,sru,sru,urination,pissen,"ŚAT. BR. 4,2,4,7"
+PW,sāndramūtra,sAndramUtra,urination,Harn,"CARAKA. 409,2"
+PW,ukṣ,ukz,urination,harnen,"GOBH. 1,3,11. 8,26"
+PWG,ukṣ,ukz,urination,harnen,"BHĀG. P. 11,28,31"
+PW,āghāta,AGAta,urination,Harn,
+PWG,āghāta,AGAta,urination,Harn,"SUŚR. 2,192,5"
+PW,ālāla,AlAla,urination,Harn,ebend.
+PWK,ālāla,AlAla,urination,Harn,ebend.
+SCH,ālāla,AlAla,urination,Harn,"Caraka 2,4."
+PW,śoṇitamehin,SoRitamehin,urination,harnend,
+PWG,śoṇitamehin,SoRitamehin,urination,harnend,"SUŚR. 1,272,20"
+PW,śvetamūtra,SvetamUtra,urination,Harn,
