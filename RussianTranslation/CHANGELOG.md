@@ -10,6 +10,19 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## 2026-06-26
 
+### Judge escalation implemented — Sonnet bulk, Opus only on the hard cases
+- Flipped [src/pilot/run_pilot_wf.js](src/pilot/run_pilot_wf.js) from "Opus judges every card" to
+  the decided [research/JUDGE_POLICY.md](research/JUDGE_POLICY.md) policy: **Sonnet judges every
+  card; Opus re-judges ONLY a reject** (`isHard` = `ok=false || severity>=3`). The Opus verdict is
+  final (becomes `judge`; Sonnet's original kept as `judge_sonnet`, `escalated:true`). Publishable
+  cards (sev 1–2) spend **zero Opus tokens** → weekly-quota headroom (PILOT_COST §6/§7), the binding
+  constraint on a single Max seat.
+- Pipeline now 3-stage (Translate · Judge · Adjudicate); judge prompt factored model-neutral
+  (`judgePrompt`/`CHECKS`). Justified by the A/B in JUDGE_AB.md (κ=1.0 over 474 cards, ~0.5 %
+  disagreement). `node --check` clean; `_pilot_collect.py` reads `judge` (now the final verdict)
+  unchanged. JUDGE_POLICY.md + RUN_FREQ_MAX.md marked implemented. **TODO:** wire the periodic ~5 %
+  Opus audit of clean-passed cards (rollout step 3) into the window loop.
+
 ### Pre-launch audit + harvest ported into the production Max harness
 - **Launch-readiness audit (Track A).** Verdict: **Sonnet translator is GREEN to start the
   first instrumented window.** All 4 "pre-run prompt nits" are confirmed already encoded in

@@ -9,6 +9,16 @@ then **cut a new version every time the changelog is updated** (promote
 
 ## [Unreleased]
 
+## [0.0.30] - 2026-06-26
+
+### Changed — pwg_ru judge escalation: Sonnet bulk, Opus only on hard cases
+- Implemented the decided judge policy (`RussianTranslation/research/JUDGE_POLICY.md`) in the Max
+  harness (`RussianTranslation/src/pilot/run_pilot_wf.js`): **Sonnet judges every card; Opus
+  re-judges ONLY the rejects** (`ok=false || severity>=3`), Opus verdict final. Publishable cards
+  (sev 1–2) spend no Opus tokens — the weekly-quota headroom that makes the bulk run feasible on one
+  Max seat. Justified by the κ=1.0 / 474-card A/B (`JUDGE_AB.md`). Pipeline now 3-stage
+  (Translate · Judge · Adjudicate); `node --check` clean. Runbook + policy docs marked implemented.
+
 ## [0.0.29] - 2026-06-26
 
 ### Changed — pwg_ru bulk-run preflight: harvest ported into the production harness
