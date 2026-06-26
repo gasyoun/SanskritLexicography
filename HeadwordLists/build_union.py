@@ -1,10 +1,10 @@
 """Cross-dict UNION headword index, feminines folded under the masculine (mf(ā/ī)).
 
 Scope decision (2026-06-26): a single merged headword list across the dictionaries,
-with feminine stems folded under their masculine base. This builds it from the 2026
-key1 sets in now-2026/ (the 8 dicts with a key1: AP GRA MW PWG PWK SKD VCP VEI),
-records per-headword provenance (which dicts attest it), aggregates gender from each
-dict's <lex> tags, and folds GENDER-CONFIRMED feminines onto their masculine base.
+with feminine stems folded under their masculine base. Built from the current csl-orig
+<k1> of all 15 dicts that have one (PD has none), records per-headword provenance
+(which dicts attest it), aggregates gender from each dict's <lex> tags, and folds
+GENDER-CONFIRMED feminines onto their masculine base.
 
 Fold rule (conservative, gender-driven — not word-shape guessing):
   fold feminine F under masculine M iff
@@ -38,32 +38,32 @@ def gender_letters(lexstr):
     if 'ind' in s: return frozenset()
     return frozenset(c for c in s if c in 'mfn')
 
-def main():
-    key1files = sorted(glob.glob(os.path.join(HERE, "now-2026", "*-unique-key1-*.txt")))
-    codes = [os.path.basename(f).split('-')[0] for f in key1files]
-    union = collections.defaultdict(set)              # k1 -> {dict codes}
-    for f, code in zip(key1files, codes):
-        for l in open(f, encoding='utf-8'):
-            k = l.strip()
-            if k: union[k].add(code)
-    print(f"union over {len(codes)} dicts {codes}: {len(union)} headwords")
+# All HeadwordLists dicts that have a csl-orig source (PD has none). key1 is read
+# straight from csl-orig <k1>, so the union covers every dict — not just the 8 with a
+# 2014 key1 snapshot. Provenance uses the HeadwordLists code (PWK, not pw).
+DICTS = ["AP", "BHS", "BUR", "CAE", "CCS", "GRA", "INM", "MD", "MW",
+         "PWG", "PWK", "SCH", "SKD", "VCP", "VEI"]
 
-    # gender per k1, aggregated across the same dicts' csl-orig <lex>.
+def main():
+    union = collections.defaultdict(set)              # k1 -> {dict codes}
+    gender = collections.defaultdict(set)             # k1 -> set of letters {m,f,n}
     # Entries are multi-line records delimited by <L>; <k1> is on the header and
     # <lex> in the body, so parse per-record (not per-line).
-    gender = collections.defaultdict(set)             # k1 -> set of letters
-    for code in set(codes):
+    for code in DICTS:
         d = CODE2DIR.get(code, code.lower())
         p = os.path.join(ORIG, d, d + ".txt")
-        if not os.path.exists(p): continue
-        txt = open(p, encoding='utf-8').read()
-        for rec in txt.split('<L>'):
+        if not os.path.exists(p):
+            print(f"  skip {code}: no csl-orig source"); continue
+        for rec in open(p, encoding='utf-8').read().split('<L>'):
             mk = re.search(r'<k1>([^<]+)', rec)
             if not mk: continue
             k = mk.group(1).strip()
-            if k not in union: continue
+            if not k: continue
+            union[k].add(code)
             for ml in re.finditer(r'<lex>([^<]*)</lex>', rec):
                 gender[k] |= gender_letters(ml.group(1))
+    codes = DICTS
+    print(f"union over {len(DICTS)} dicts: {len(union)} headwords")
     fem_only = lambda k: ('f' in gender.get(k, ())) and ('m' not in gender.get(k, ()))
     masc_cap = lambda k: 'm' in gender.get(k, ())
 
@@ -101,21 +101,36 @@ def main():
         fh.write("fem_slp1\tfem_iast\tmasc_slp1\tmasc_iast\tending\n")
         for F, (M, e) in sorted(folded.items()):
             fh.write(f"{F}\t{iast(F)}\t{M}\t{iast(M)}\t{e}\n")
+    # Rank the -ā/-ī fold candidates so the editor reviews the likely-true ones first:
+    #   confidence HIGH  = the masculine base is itself mfn (gender has 'f') → it is an
+    #                      adjective/n. whose feminine is exactly this -ā/-ī (fold likely right).
+    #   confidence LOW   = masc is m-only → the -ā is probably a distinct feminine noun
+    #                      sharing the stem (āśā "hope" vs āśa "corner") → likely NOT a fold.
+    # secondary key: number of dicts attesting BOTH forms (more shared = more likely related).
+    ranked = []
+    for F, M, e in candidates:
+        conf = "high" if 'f' in gender.get(M, ()) else "low"
+        nshared = len(union[F] & union[M])
+        ranked.append((0 if conf == "high" else 1, -nshared, F, conf, nshared, M, e))
+    ranked.sort()
+    nhigh = sum(1 for r in ranked if r[3] == "high")
     with open(os.path.join(OUT, "fold_candidates.tsv"), "w", encoding="utf-8", newline="\n") as fh:
-        fh.write("fem_slp1\tfem_iast\tmasc_slp1\tmasc_iast\tending\tnote\n")
-        for F, M, e in sorted(candidates):
-            fh.write(f"{F}\t{iast(F)}\t{M}\t{iast(M)}\t{e}\tconfirm same lexeme (e.g. āśā≠āśa)\n")
+        fh.write("confidence\tn_shared_dicts\tfem_slp1\tfem_iast\tmasc_slp1\tmasc_iast\tending\tmasc_gender\n")
+        for _, _, F, conf, nshared, M, e in ranked:
+            fh.write(f"{conf}\t{nshared}\t{F}\t{iast(F)}\t{M}\t{iast(M)}\t{e}\t{''.join(sorted(gender.get(M, ()))) or '-'}\n")
+    print(f"fold candidates ranked: {nhigh} high-confidence (masc is mfn), {len(ranked) - nhigh} low")
 
     byn = collections.Counter(len(v) for v in union.values())
     md = ["# Cross-dict UNION headword index (2026)", "",
           f"A single merged headword list across **{len(codes)} dictionaries** "
-          f"({', '.join(sorted(set(codes)))}), built from their 2026 key1 sets in "
-          f"[`now-2026/`](now-2026/). Feminines are folded under the masculine (`mf(ā/ī)`) "
+          f"({', '.join(sorted(set(codes)))}), built from their current csl-orig `<k1>`. "
+          f"Feminines are folded under the masculine (`mf(ā/ī)`) "
           f"by confirmed `<lex>` gender. Generated by [`build_union.py`](build_union.py).", "",
           f"- **Union headwords:** {len(union)}  → **{len(rows)}** after auto-folding "
           f"{len(folded)} gender-confirmed `-inī` feminines onto their `-in` base.",
-          f"- **Fold candidates for editor review:** {len(candidates)} `-ā`/`-ī` feminines "
-          f"(gender-confirmed but stem-sharing — may be independent lexemes).",
+          f"- **Fold candidates for editor review:** {len(candidates)} `-ā`/`-ī` feminines, "
+          f"**ranked** — {nhigh} high-confidence (masculine is `mfn`, so the feminine is its) "
+          f"vs {len(candidates) - nhigh} low (masc `m`-only — likely a distinct lexeme).",
           f"- **Provenance:** in ≥2 dicts {sum(1 for v in union.values() if len(v) >= 2)}, "
           f"singletons {sum(1 for v in union.values() if len(v) == 1)}.", "",
           "| in N dicts | headwords |", "|--:|--:|"]
@@ -127,15 +142,18 @@ def main():
            "- [`union/folded_feminines.tsv`](union/folded_feminines.tsv) — audit of every "
            "auto-fold (`-inī`→`-in`).",
            "- [`union/fold_candidates.tsv`](union/fold_candidates.tsv) — `-ā`/`-ī` feminines to "
-           "**confirm by hand** (gender + shape match, but may be a distinct lexeme — `āśā` "
-           "\"hope\" is *not* the feminine of `āśa` \"corner\").", "",
+           "**confirm by hand**, ranked `confidence` high→low with `n_shared_dicts` and "
+           "`masc_gender`. **High** = masc is `mfn` (the feminine is genuinely its); **low** = "
+           "masc `m`-only, likely a distinct lexeme (`āśā` \"hope\" ≠ feminine of `āśa` "
+           "\"corner\"). Review high first.", "",
            "**Caveats.** The fold is deliberately split: only the unambiguous **`-inī`→`-in`** "
            "(gender-confirmed) is applied automatically; `-ā`/`-ī` are left as **candidates** "
            "because a feminine `-ā` noun often shares a stem with an unrelated masculine `-a` "
            "noun. Feminines without a `<lex>` (dicts lacking gender tags) or without an attested "
            "base stay as their own headword. Homograph numbering (`<h>`) is collapsed — the "
-           "union key is the bare lemma. Covers the 8 key1 dicts; the key2-only dicts "
-           "(BHS/BUR/CAE/CCS/INM/MD/SCH) can be merged next via accent-stripped key2."]
+           "union key is the bare lemma. Covers all 15 dicts with a csl-orig `<k1>` (PD has "
+           "none); gender is richest in MW/AP and sparse elsewhere (BUR has no `<lex>`), so "
+           "folds are MW/AP-driven."]
     open(os.path.join(OUT, "UNION.md"), "w", encoding="utf-8", newline="\n").write("\n".join(md) + "\n")
     print(f"wrote union/ ({len(rows)} headwords, {len(folded)} folded)")
 
