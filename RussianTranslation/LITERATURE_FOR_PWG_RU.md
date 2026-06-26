@@ -215,7 +215,97 @@ Concrete, checkable defect classes for the judge stage (OK/BAD + severity):
 
 ---
 
-*Mined 2026-06-26 from 16 PDFs under [`../literature/`](../literature/) via per-source
-close reading. Lower-yield note: the Soviet *Энциклопедический словарь юного филолога*
-and Partridge's *Gentle Art* added little beyond what Синтаксис-2009 and Apresjan state
-more authoritatively.*
+## 6. Second pass — comparative lexicography, semantics, corpus methodology
+
+Additions from the sources first judged off-topic. The big win is **§6 judge rules**:
+the polysemy/distinctness tests give the QA stage a principled way to decide whether
+two PWG German sub-senses should stay split or merge.
+
+### Translator-prompt additions
+- **Synonym-string cardinality.** Render a German synonym-string (*Glanz, Schimmer,
+  Pracht*) as a Russian synonym-string of *equal cardinality* — never collapse to one
+  word; each member is a distinct near-equivalent (Baalbaki, Arabic tradition).
+- **Never abridge an entry.** A shorter Russian entry is a defect, not an improvement:
+  Paul-the-Deacon's compression of Festus destroyed the very sense/form distinctions the
+  source drew (Ferri, Latin). Preserve every sub-sense and source context.
+- **Don't harmonize a multi-source entry** into one smooth Russian register — PWG entries
+  are stratified accretions of glosses from different authorities; preserve the seams,
+  smoothing is the error (Dickey, Greek scholia).
+- **Function-word "use" definitions** (German *dient zum Ausdruck…*, *zur Bezeichnung
+  von…*) → Russian function-paraphrase (*служит для выражения…*), never coerced into a
+  noun-equivalent (Jackson's 4th definition type).
+- **German `un-` forms:** follow the form actually used; don't auto-map *ungefährlich* to
+  the lexical Russian antonym of *gefährlich* (the base is gradable, the *un-* form often
+  absolute) (Riemer).
+- **Preserve vagueness/underspecification** — a gloss that leaves gender/number/sub-type
+  open is correctly vague; don't over-commit the Russian equivalent to one reading (Riemer).
+
+### Judge-prompt additions
+- **Sense-distinctness test battery (the headline addition).** To decide whether two PWG
+  German sub-senses are genuinely distinct vs. should merge, apply three independent tests
+  and weight by agreement: (a) **Quinean** truth test, (b) **zeugma/identity** test, (c)
+  **definitional** test (distinct iff no single maximally-general-yet-minimally-specific
+  gloss covers both). Calibrate by reading-distance — require a *strong* zeugma clash for
+  metaphor/metonymy-linked senses before splitting (Riemer).
+- **Autohyponymy is legitimate** — a general gloss + a narrowed technical/ritual gloss of
+  the same word (very common in Sanskrit) is NOT redundant duplication; don't flag it as
+  circular (Riemer).
+- **Antonym-type-mismatch defect.** A German opposition must map to the same Russian
+  sub-type — комплементарные (*dead/alive*) · градуальные (*long/short*, where *nicht lang*
+  ≠ *короткий*) · реверсивы (*rise/fall*) · конверсивы (*buy/sell*). Don't render a converse
+  as a gradable antonym (Riemer).
+- **Synonym-string flattening** (n German near-synonyms → 1 Russian word) and
+  **abridgement/context-loss** (dropping a distinction the German drew) are new defect
+  classes (Baalbaki, Ferri).
+- **Never "correct" a citation to match a suspect gloss.** The `<ls>` quote/siglum is an
+  *independent* witness and is often textually sounder than the surrounding prose — if
+  gloss and quote disagree, the quote usually wins (Dickey).
+- **Respect source homonym numbering** — don't merge two superscript-numbered PWG
+  headwords because their German glosses look close (splitting is etymology-driven, not
+  sense-distance-driven), nor re-segment a single entry on sense-distance alone (Jackson).
+- **`gewöhnlich`/`meist` is a hedge on a core sense, not a new sub-sense** — keep it
+  attached, don't split on it (Jackson).
+
+### Corpus-gate / strata additions
+- **Quote-count as a confidence metric:** a sense backed by a single `<ls>` siglum carries
+  lower grounding-confidence than a multiply-attested one — count distinct sigla
+  (Baalbaki; sharpens the existing "weak grounding" kośa caveat).
+- **Transmission-depth signal:** when a PWG gloss is visibly second-hand (copied from an
+  earlier kośa/lexicon), lower confidence and don't present it as primary attestation
+  (Ferri).
+- **Association measures, not raw counts:** rank a candidate Russian sense by the
+  association strength of its collocates (PMI / log-likelihood G² / Fisher exact), and do
+  **not** read high raw frequency as association (Desagulier).
+- **Dispersion test:** require a Russian sense to attest across *multiple* corpus texts
+  (good dispersion), not just clear a token threshold — reject senses carried by one
+  outlier text; compute normalized per-stratum rates, not pooled totals (Egbert & Biber).
+- **Rater-agreement check** when a human verifies gate output (intra-/inter-rater
+  reliability) (Egbert).
+
+### Glossary additions
+- **German register-cue → Apresjan tag crosswalk:** map German *abwertend/scherzh./iron.*
+  cues to the §1d Russian register labels; connotation belongs in the label slot, not the
+  gloss body (Jackson).
+- **Sense-relation marker rows** (extend the §1c decoder): *auch genannt / ein anderes
+  Wort für* → *также называется / другое название для*; negation *nicht…* → *не…* (keep
+  polarity); *Teil von* → *часть…* (Jackson).
+- **Opposite-type tagset:** комплементарные · градуальные · реверсивы · конверсивы (Riemer).
+- **Controlled Russian metalanguage** for PWG's own apparatus terms (gloss vs. definition
+  vs. citation vs. note) — the learned metavocabulary doesn't map 1:1 across traditions, so
+  fix it once and enforce it (Dickey).
+
+### Confirmed low/zero yield for pwg_ru
+- **McEnery & Brezina** (philosophy of corpus science), **O'Keeffe & McCarthy Handbook**
+  (spoken/multimodal alignment, not parallel-corpus), **Энциклопедический словарь юного
+  филолога**, **Partridge** — nothing beyond what other sources state more usefully.
+- **Not mined** (confirmed serving other repos, not DE→RU): the Sanskrit-syntax-theory set
+  (Carnie, Gillon ×3, Ruppel, Kumar, Meenakshi, Speyer ×2, Lowe), the SLA/pedagogy set
+  (Lu, Sinclair, Szudarski, Wong-Barcroft, Pérez-Paredes), and the DCS NLP/UD-eval set
+  (Adapting-NLP, Evaluating-Syntactic-Annotation, Performance-POS, Patterns-of-Exchange).
+
+---
+
+*Mined 2026-06-26 from the full-text `literature/md/` extractions (originally 16 PDFs in
+pass 1, plus 9 comparative-lexicography / semantics / corpus-methodology sources in pass 2)
+via per-source close reading. The pass-2 sense-distinctness test battery (§6 judge rules)
+is the highest-value addition for the QA stage.*
