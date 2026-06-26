@@ -55,11 +55,17 @@ lists **605,813 → 733,617 (+21.1 %)**. The **key2** snapshots are in the *lega
 numeric transliteration* (`am2s4a` = aṃśa) whereas csl-orig is now SLP1, so their raw diff
 is a format migration, not a headword change. PD is not in csl-orig.
 
-The **current** regeneration of the **key1** lists lives in [`now-2026/`](now-2026/) (the
+The **current** regeneration of **both keys** lives in [`now-2026/`](now-2026/) (the
 `then-2014/` files are kept frozen for comparison); see
-[`now-2026/README.md`](now-2026/README.md). key1 is the comparable set (THEN & NOW both
-SLP1); key2 is not regenerated (legacy-numeric THEN / `{#..#}` blob fields). Compare by
-set, not raw line-diff (now-2026/ uses Sanskrit collation).
+[`now-2026/README.md`](now-2026/README.md). **key1** (machine key) is directly
+set-comparable to the 2014 file; **key2** is re-extracted as clean **SLP1** — the
+print/citation form (keeps `/` accent, `-`/`—`, `(...)`) — since the 2014 key2 was legacy
+numeric, key2 then-vs-now is a format migration (not line-diffable) but the now-2026 key2
+is directly usable. Compare by set, not raw line-diff (now-2026/ uses Sanskrit collation).
+
+**Print-readiness:** [`PRINT_READINESS.md`](PRINT_READINESS.md) consolidates whether the
+headword lists can go to a printed edition — MW/PWG are the stable print-ready spine; the
+remaining gates (typo-filing, coverage, accents, scope) are human/editorial.
 
 ## Note on duplicates / versions
 
