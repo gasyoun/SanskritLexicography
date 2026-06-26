@@ -56,12 +56,15 @@ Renou defines by **syntax/style** rather than by text-genre, and explicitly as s
 disciplines*. This is a principled special status — not arbitrary elevation — and it
 coexists with treating the 20 registers equally by default.
 
-**[data] corroboration.** bhāṣya's 1-dict rate is **8.8 %** — among the *lowest* of all
-literary registers (vs kāvya 19.8 %, nāṭya 23.8 %, epic 21.7 %). A register whose vocabulary
-is **standardised across dictionaries**, not idiosyncratic — exactly what a cross-
-disciplinary technical instrument should be. (*Next sources to check, per the plan:* Tubb &
-Boose, *Scholastic Sanskrit*; Speijer's syntax; a finite-verb-density count on a real
-bhāṣya sample vs a kāvya sample.)
+**[data] corroboration — two independent measures.**
+(a) *Lexical:* bhāṣya's 1-dict rate is **8.8 %** — among the *lowest* of all literary
+registers (vs kāvya 19.8 %, nāṭya 23.8 %, epic 21.7 %): a vocabulary **standardised across
+dictionaries**, exactly what a cross-disciplinary technical instrument should be.
+(b) *Syntactic (corpus):* the finite-verb-density count (now done — see F5 /
+[`RENOU_NOMINAL_STYLE.md`](RENOU_NOMINAL_STYLE.md)) puts bhāṣya at **6.25 %** finite verbs,
+**below kāvya (7.48 %)** — confirming Renou's exact p. 139 claim that the nominal style
+asserts itself in bhāṣya "plus complètement que dans le style littéraire." (*External
+sources still to read + cite:* Tubb & Boose, *Scholastic Sanskrit*; Speijer's syntax.)
 
 ## F2. bauddha (BHS) is a **second self-contained lexical world** — **[data]**
 
@@ -98,6 +101,22 @@ epic 21.7 %, kāvya 19.8 % at the top, and the śāstric registers — bhāṣya
 dictionary records and the next does not); the technical/doctrinal registers **standardise**
 it. This is the same conservation-vs-invention axis seen in the cross-axis slices
 ([`RENOU_CROSSAXIS.md`](RENOU_CROSSAXIS.md) §1–2), now read off the register metrics directly.
+
+## F5. The finite verb recedes across the states — Renou's nominalisation, measured — **[source + data]**
+
+Renou's central diachronic thesis — the **personal/finite verb is progressively replaced by
+a nominal style** — is verifiable on running text (not headwords). Measured over the DCS
+corpus (finite verb = `VERB` + `Mood/Person`, no `VerbForm`), **finite-verb density more than
+halves** across the states: **I 14.40 % → III 8.33 % → IV 6.66 %**, while participles rise
+(3.9 → 6.2 %) and noun+adj rise (44 → 59 %) — the exact trade-off Renou names. By register
+the nominal floor is the **philosophical-sūtra / grammar / scholastic / kośa** texts
+(Nyāyasūtra 0.18 %, Aṣṭādhyāyī 0.57 %, Abhidharmakośa 2.02 %, Amarakośa 2.52 %), the verbal
+ceiling the **Vedic Saṃhitā/Brāhmaṇa** (Taittirīyasaṃhitā 18.5 %) — a 50–100× span. Full
+study, tables, and caveats (the "sūtra" register is verbal because it is the *Vedic ritual*
+sūtra, not the darśana-sūtra): [`RENOU_NOMINAL_STYLE.md`](RENOU_NOMINAL_STYLE.md);
+tool [`src/nominal_style.py`](src/nominal_style.py). This is the strongest single result of
+the project: a named 1956 thesis confirmed at corpus scale, with the predicted mechanism
+(participle/nominal rise) visible in the same numbers.
 
 ---
 

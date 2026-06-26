@@ -149,6 +149,15 @@ period-bound (épig/epic/kāvya, 10–22 %); (iv) **nāṭya and kāvya are the 
 (highest dictionary-specificity), the śāstric ones the standardising — conservation vs
 invention, read straight off the register metrics.
 
+A fifth result steps off the headword axis entirely and onto running text: **(v)** Renou's
+*nominal-style* thesis is confirmed on the DCS corpus — finite-verb density more than halves
+across the states (Vedic 14.4 % → Classical 6.7 %) as participles and nominals rise, and
+**bhāṣya (6.25 %) is more nominal than kāvya (7.48 %)**, the exact wording of *Histoire*
+p. 139. Full study in
+[`RENOU_NOMINAL_STYLE.md`](../RussianTranslation/RENOU_NOMINAL_STYLE.md) (tool
+`nominal_style.py`); it corroborates F1 from a second, syntactic direction and may seed a
+separate short paper on register-predicted finite-verb density.
+
 ## 4. Consequence
 
 For an evidence-graded digital dictionary, the register is a second per-sense badge,
