@@ -115,7 +115,13 @@ editorially meaningful strata that neither axis alone can name:
 
 The full coordinate per sense is `(state, register, provenance)` — e.g. *akṣobhya* =
 `III·V` / `purāṇa·tantra·bauddha` / all-signals — an evidence-graded position, not a
-single label.
+single label. Six such slices are worked through in detail — with quantitative anatomy
+and glossed examples — in
+[`RENOU_CROSSAXIS.md`](../RussianTranslation/RENOU_CROSSAXIS.md): the bhāṣya register as a
+**Vedic reservoir**, kāvya as a **coinage engine** (≈¼ of its words dictionary-specific),
+the *dvaṃdva*-type **grammatical meta-language** (vyākaraṇa∩bhāṣya), **Buddhist poetry**
+(bauddha∩kāvya, *sugata* etc.), and the inscription-only **onomasticon** (épig∖corpus:
+*vākāṭaka*, *humāuṃ* = Humāyūn) — register in the *absence* of period.
 
 ### 3.4 What does *not* need correcting
 

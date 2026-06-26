@@ -33,10 +33,13 @@ CANON = ('pwg', 'mw', 'pw', 'ap', 'ap90', 'ben', 'sch', 'bhs')
 _SORD = {s: i for i, s in enumerate(renou.STATES)}
 
 
-def collect(code_filter, dicts, state_filter, prov_filter, state_only, exclude_states):
+def collect(code_filter, dicts, state_filter, prov_filter, state_only, exclude_states,
+            and_registers=(), not_registers=()):
     """iast -> {dicts:set, states:set, prov:set, key2:str, n:int}."""
     agg = {}
     exclude_states = set(exclude_states or ())
+    and_registers = set(and_registers or ())
+    not_registers = set(not_registers or ())
     for code in dicts:
         path = os.path.join(HERE, code + '.renou.jsonl')
         if not os.path.exists(path):
@@ -44,18 +47,23 @@ def collect(code_filter, dicts, state_filter, prov_filter, state_only, exclude_s
         for line in open(path, encoding='utf-8'):
             e = json.loads(line)
             states = e.get('renou_enriched') or []
+            regs = set(e.get('renou_register') or [])
             if state_only:
                 if code_filter not in states:
                     continue
                 srcs = (e.get('renou_provenance') or {}).get(code_filter, [])
             else:
-                if code_filter not in (e.get('renou_register') or []):
+                if code_filter not in regs:
                     continue
                 srcs = (e.get('renou_register_provenance') or {}).get(code_filter, [])
             if state_filter and state_filter not in states:
                 continue
             if exclude_states and exclude_states & set(states):
                 continue  # drop entries attested in any excluded state
+            if and_registers and not and_registers <= regs:
+                continue  # require every listed register too (register intersection)
+            if not_registers and not_registers & regs:
+                continue  # drop entries carrying any listed register
             if prov_filter and prov_filter not in srcs:
                 continue
             ia = e.get('iast') or ''
@@ -102,6 +110,8 @@ def main():
     dicts = list(CANON)
     state_filter = prov_filter = out = title = None
     exclude_states = []
+    and_registers = []
+    not_registers = []
     fmt = 'md'
     min_dicts = 1
     state_only = False
@@ -114,6 +124,10 @@ def main():
             state_filter = args[i + 1]; i += 2
         elif a == '--exclude-state':
             exclude_states = args[i + 1].split(','); i += 2
+        elif a == '--and-register':
+            and_registers = args[i + 1].split(','); i += 2
+        elif a == '--not-register':
+            not_registers = args[i + 1].split(','); i += 2
         elif a == '--prov':
             prov_filter = args[i + 1]; i += 2
         elif a == '--min-dicts':
@@ -131,7 +145,8 @@ def main():
 
     if not state_only and reg not in renou_register.REGISTERS:
         raise SystemExit('unknown register %r (see renou_register.REGISTERS)' % reg)
-    agg = collect(reg, dicts, state_filter, prov_filter, state_only, exclude_states)
+    agg = collect(reg, dicts, state_filter, prov_filter, state_only, exclude_states,
+                  and_registers, not_registers)
     if not title:
         kind = 'state' if state_only else 'register'
         title = 'Renou %s glossary: %s' % (kind, reg)
