@@ -39,7 +39,7 @@ So a **2014 list is already stale** (+21.1 % across the 9 comparable lists,
 | **C** | **Accents** — resolve the ~3 % accent-position disagreements (Pujol vs GRA/MW, [§7](Catalan-Pujol/Sanskrit-Catalan-Wordlist-vs-Cologne.md), e.g. *bhága*) if the book prints udātta. | ⬜ open | **human** (canonical = RV/GRA) |
 | **D** | **key2 as SLP1** — the print/citation form (accents, compound markers). The 2014 key2 was legacy numeric. | ✅ **done** — clean SLP1 key2 in [`now-2026/`](now-2026/) | agent (done) |
 | **E** | **Scope** — single dict or a cross-dict **union**? | ✅ **decided: union** — built ([union/UNION.md](union/UNION.md), **323,425** headwords across all **15** csl-orig dicts, provenance + gender) | agent (done) |
-| **F** | **Alternate & feminine headword policy** — how to treat feminine stems and variant/alternate spellings (see below). | 🟡 **policy chosen: fold under masc `mf(ā/ī)`** — applied to the union (237 `-inī` auto-folded; 3,995 `-ā/-ī` candidates **ranked** 3,569 high / 426 low for review) | agent applied; editor confirms candidates |
+| **F** | **Alternate & feminine headword policy** — how to treat feminine stems and variant/alternate spellings (see below). | 🟡 **policy chosen: fold under masc `mf(ā/ī)`** — applied (237 `-inī` auto-folded; 3,995 `-ā/-ī` ranked 3,569 high / 426 low; the 426 low **gloss-screened** → 419 reject, **7 to review**) | agent applied; editor confirms ~7 + spot-checks high |
 
 ## F — alternate & feminine headwords (detail)
 
