@@ -37,3 +37,28 @@ under the root/components, so they are **not** missing headwords.
   [Huet](Huet-INRIA-Wordlist-vs-Cologne.md)) but in no CDSL dict — those are the safest adds.
 - The `kind` flags are heuristic (shape-based); the editor confirms. Decision (add / don't) is
   human — this just ranks and de-noises the pool.
+
+## Cross-tag with external wordlists (the safest adds)
+
+The strongest add-evidence is **corpus + an independent dictionary** agreeing the word is
+real. [`crosstag_additions.py`](crosstag_additions.py) tags the **416** priority additions
+(band ≥3, nominal) with whether each is also in the [Catalan-Pujol](Catalan-Pujol/Sanskrit-Catalan-Wordlist-vs-Cologne.md)
+and/or [Huet/INRIA](Huet-INRIA-Wordlist-vs-Cologne.md) wordlists →
+[`union/coverage_additions_crosstagged.tsv`](union/coverage_additions_crosstagged.tsv)
+(ranked by corroboration).
+
+**Only 25 of 416 (6 %) are externally corroborated** — and triaging those 25:
+
+- **~8 genuine real-word candidates** (the actual safe adds): `karkandhū` (a jujube berry),
+  `maṇikā` (a small water-jar / measure), `nistaraṅga` (calm, waveless), `cittamātra` (Yogācāra
+  "mere thought"), `atigati`, `kāritva`, `hehaya` (the Haihaya), and the comparatives
+  `guhyatara`/`guhyatama`.
+- **the rest are still artifacts** that slipped the `kind` filter: prefixed/desiderative **verb
+  roots** (`vyavasā`, `nidhyā`, `caṅkram`, `vijigīṣ`), **Pāṇinian affixes** (`ghañ`, `ṭhak`,
+  `ktvā`), and pronouns (`enad`) — Catalan/Huet headword these too, so corroboration doesn't make
+  them nouns.
+
+**Bottom line for B:** even with triple (corpus + 2 external dicts) corroboration, the genuine
+real-word additions number **~8**. CDSL's coverage of *attested* vocabulary is essentially
+complete; the print list needs almost nothing added. The handful worth considering are rare
+nouns (plants, vessels, philosophical terms) — exactly the Catalan §5 profile.

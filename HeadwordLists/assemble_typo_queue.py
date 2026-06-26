@@ -1,19 +1,19 @@
-"""Assemble the PRINT_READINESS item-A typo queue for MW + PWG into one ready-to-file list.
+"""Assemble the PRINT_READINESS item-A typo queue for ALL dicts into one ready-to-file list.
 
-Pulls the body-confirmed FILE-FIRST typos from SanskritSpellCheck
+Pulls every body-confirmed FILE-FIRST typo from SanskritSpellCheck
 (corrections_draft/<DICT>/<DICT>_file_first_sf.txt, CORRECTIONS format DICT:wrong:right:n),
 enriches each with IAST, an error-type label, and the entry-body evidence from the triaged
 file, and writes A_TYPO_QUEUE.md. The human verifies each on the scan, flips n→y, and files
 via SanskritSpellCheck's chg_nchg_sep.py — this is just the consolidated, readable queue.
 """
-import sys, re, os
+import sys, re, os, glob
 sys.stdout.reconfigure(encoding='utf-8'); sys.stderr.reconfigure(encoding='utf-8')
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, os.environ.get("SANSKRIT_UTIL_PY", r"C:/Users/user/Documents/GitHub/sanskrit-util/py"))
 import sanskrit_util as su
 SSC = os.environ.get("SSC_DIR", os.path.normpath(os.path.join(HERE, "..", "..", "SanskritSpellCheck", "corrections_draft")))
 OUT = os.path.join(HERE, "A_TYPO_QUEUE.md")
-DICTS = ["MW", "PWG"]
+SPINE = ("MW", "PWG")   # print spine — list first
 
 def iast(s):
     try: return su.from_slp1(s)
@@ -47,33 +47,42 @@ def evidence(dictcode):
             ev[m.group(1)] = (m.group(2), body[:160])
     return ev
 
-def main():
-    rows = []
-    for d in DICTS:
-        sf = os.path.join(SSC, d, f"{d}_file_first_sf.txt")
-        if not os.path.exists(sf):
-            print(f"  missing {sf}"); continue
-        ev = evidence(d)
-        for ln in open(sf, encoding="utf-8"):
-            ln = ln.rstrip("\n")
-            if ln.startswith(";") or not ln.strip():
-                continue
-            parts = ln.split(":")
-            if len(parts) != 4:
-                continue
-            dc, w, r, flag = parts
-            tag, body = ev.get(w, ("", ""))
-            rows.append((dc, w, iast(w), r, iast(r), err_label(w, r), tag, body))
+def read_dict(d):
+    sf = os.path.join(SSC, d, f"{d}_file_first_sf.txt")
+    if not os.path.exists(sf): return []
+    ev = evidence(d); out = []
+    for ln in open(sf, encoding="utf-8"):
+        ln = ln.rstrip("\n")
+        if ln.startswith(";") or not ln.strip(): continue
+        parts = ln.split(":")
+        if len(parts) != 4: continue
+        dc, w, r, flag = parts
+        tag, body = ev.get(w, ("", ""))
+        out.append((dc, w, iast(w), r, iast(r), err_label(w, r), tag, body))
+    return out
 
-    L = ["# Item A — MW + PWG typo queue (ready to file)", "",
-         f"The **{len(rows)}** body-confirmed FILE-FIRST typos for the print spine "
-         "(MW + PWG), consolidated from "
-         "[SanskritSpellCheck](https://github.com/gasyoun/SanskritSpellCheck) "
+def main():
+    # discover every dict with a non-empty FILE-FIRST queue; spine first, then by count desc
+    found = {}
+    for sf in glob.glob(os.path.join(SSC, "*", "*_file_first_sf.txt")):
+        d = os.path.basename(os.path.dirname(sf))
+        rs = read_dict(d)
+        if rs: found[d] = rs
+    order = sorted(found, key=lambda d: (d not in SPINE, SPINE.index(d) if d in SPINE else 0, -len(found[d]), d))
+    rows = [r for d in order for r in found[d]]
+    total = len(rows)
+    percent = {d: len(found[d]) for d in order}
+
+    L = ["# Item A — typo queue, all dicts (ready to file)", "",
+         f"All **{total}** body-confirmed FILE-FIRST typos across **{len(order)}** dictionaries, "
+         "consolidated from [SanskritSpellCheck](https://github.com/gasyoun/SanskritSpellCheck) "
          "(`corrections_draft/<DICT>/<DICT>_file_first_sf.txt`). Each was classified TYPO from "
          "the dictionary's **own entry text** and source-confirmed; the consonant-class flags "
-         "(retroflex / sibilant / aspirate / b↔v) are the high-precision ones.", "",
+         "(retroflex / sibilant / aspirate / b↔v) are the high-precision ones. The **print "
+         "spine (MW, PWG)** is listed first.", "",
+         "Per dict: " + " · ".join(f"**{d}** {percent[d]}" for d in order) + ".", "",
          "**To file:** verify each on the scan, then in the SanskritSpellCheck repo flip the "
-         "trailing `n`→`y` in the `*_file_first_sf.txt` and run "
+         "trailing `n`→`y` in that dict's `*_file_first_sf.txt` and run "
          "`python chg_nchg_sep.py <DICT>_file_first_sf.txt chg.txt nchg.txt` → file to "
          "[csl-corrections](https://github.com/sanskrit-lexicon/csl-corrections). "
          "Do **not** bulk-apply — these are individually confirmed.", "",
@@ -82,12 +91,12 @@ def main():
     for dc, w, wi, r, ri, lab, tag, body in rows:
         ev = (f"`{tag}` " if tag else "") + (body.replace("|", "\\|") if body else "")
         L.append(f"| {dc} | `{w}` | {wi} | `{r}` | {ri} | {lab} | {ev} |")
-    L += ["", f"_MW: {sum(1 for x in rows if x[0]=='MW')} · "
-          f"PWG: {sum(1 for x in rows if x[0]=='PWG')} · total {len(rows)}. "
-          "Source-of-truth + filing workflow live in SanskritSpellCheck; this is the print-readiness "
-          "(item A) consolidated view._"]
+    L += ["", f"_Total {total} across {len(order)} dicts. Source-of-truth + filing workflow live in "
+          "SanskritSpellCheck; this is the print-readiness (item A) consolidated view. The MW+PWG "
+          "spine subset is the minimum to clear before the spine goes to print._"]
     open(OUT, "w", encoding="utf-8", newline="\n").write("\n".join(L) + "\n")
-    print(f"wrote {OUT}: {len(rows)} typos ({', '.join(d + '=' + str(sum(1 for x in rows if x[0]==d)) for d in DICTS)})")
+    print(f"wrote {OUT}: {total} typos across {len(order)} dicts ("
+          + ", ".join(f"{d}={percent[d]}" for d in order) + ")")
 
 if __name__ == "__main__":
     main()
