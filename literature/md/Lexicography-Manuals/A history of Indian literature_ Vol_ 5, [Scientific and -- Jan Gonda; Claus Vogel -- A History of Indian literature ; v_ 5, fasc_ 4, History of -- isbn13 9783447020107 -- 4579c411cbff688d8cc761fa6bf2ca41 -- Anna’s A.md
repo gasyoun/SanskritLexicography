@@ -102,7 +102,7 @@ burg. Printed in Germany. Sigel: HIL.
 
 ---
 
-<!-- page 8 -->
+<!-- page 7 -->
 
 Digitized by the Internet Archive 
 in 2024 
@@ -110,7 +110,7 @@ https://archive.org/details/indianlexicograp0000voge
 
 ---
 
-<!-- page 9 -->
+<!-- page 8 -->
 
 SEE 
 SE 
@@ -250,7 +250,7 @@ Sighrabodhininämamälä
 
 ---
 
-<!-- page 10 -->
+<!-- page 9 -->
 
 36. Appayya Diksita’s Nämasamgrahamälä... 
 .. 
@@ -333,7 +333,7 @@ EAEZSS
 
 ---
 
-<!-- page 11 -->
+<!-- page 10 -->
 
 Claus Vogel 
 INDIAN LEXICOGRAPHY 
@@ -375,7 +375,7 @@ the ten Nighantus on account of usage” (Rgveda I! p. 39.4-5; I? p. 21.3-4).
 
 ---
 
-<!-- page 12 -->
+<!-- page 11 -->
 
 304 
 C. Vogel : Indian Lexicography 
@@ -431,7 +431,7 @@ kara’s Subhäsitaratnakosa.
 
 ---
 
-<!-- page 13 -->
+<!-- page 12 -->
 
 Characterization of Indian lexica 
 305 
@@ -479,7 +479,7 @@ laviae, 1847, and Tu. ZACHARIAE, Die indischen Wörterbücher (Ko$a), Straßburg
 
 ---
 
-<!-- page 14 -->
+<!-- page 13 -->
 
 306 
 C. Vogel - Indian Lexicography 
@@ -529,7 +529,7 @@ s
 
 ---
 
-<!-- page 15 -->
+<!-- page 14 -->
 
 Väcaspati’s Sabdärnava, Vyädi’s Utpalini, Vikramäditya’s Samsärävarta 307 
 He has also rightly pointed out that the collocation Väcaspati- Vyädi-Vikrama- 
@@ -582,7 +582,7 @@ Hemacandra’s Abhidhänacintämani 852 and Purusottamadeva’s Trikändasesa 36
 
 ---
 
-<!-- page 16 -->
+<!-- page 15 -->
 
 308 
 C. Vogel - Indian Lexicography 
@@ -631,7 +631,7 @@ works (see frs. 8-9 and Bhänuji Diksita on Amarakosa I 1.63).
 
 ---
 
-<!-- page 17 -->
+<!-- page 16 -->
 
 Weber Fragment No. 6 
 309 
@@ -679,7 +679,7 @@ because of its recent origin, both the genuineness of Wilmot’s find and the tr
 
 ---
 
-<!-- page 18 -->
+<!-- page 17 -->
 
 310 
 C. Vogel - Indian Lexicography 
@@ -735,7 +735,7 @@ Govindapäla Deva [March-April 1185]. Cf. H.P. SuAstrı, JASB 62, pt. 1, p. 250.
 
 ---
 
-<!-- page 19 -->
+<!-- page 18 -->
 
 Amarasimha’s Nämalingänusäsana 
 311 
@@ -788,7 +788,7 @@ anya-, tri-, bhedya-, or väcyalinga(ka).
 
 ---
 
-<!-- page 20 -->
+<!-- page 19 -->
 
 312 
 C. Vogel - Indian Lexicography 
@@ -847,7 +847,7 @@ to
 
 ---
 
-<!-- page 21 -->
+<!-- page 20 -->
 
 Commentaries on Amarasimha’s Nämalingänusäsana 
 313 
@@ -898,7 +898,7 @@ W. GEIGER, Päli Literatur und Sprache, Straßburg, 1916, p. 37.
 
 ---
 
-<!-- page 22 -->
+<!-- page 21 -->
 
 314 
 C. Vogel - Indian Lexicography 
@@ -955,7 +955,7 @@ particular see N.N. DAsGUPTA, IC 2, p. 261.
 
 ---
 
-<!-- page 23 -->
+<!-- page 22 -->
 
 Commentaries on Amarasimha’s Nämalingänusäsana 
 315 
@@ -1009,7 +1009,7 @@ mukutamani, son of Govinda, of Rädhä in Bengal, composed in 8. 1353 [1431/
 
 ---
 
-<!-- page 24 -->
+<!-- page 23 -->
 
 316 
 C. Vogel - Indian Lexicography 
@@ -1065,7 +1065,7 @@ Bhandarkar Oriental Research Institute, Poona, and dated s. 1705 [1648/49], has
 
 ---
 
-<!-- page 25 -->
+<!-- page 24 -->
 
 Commentaries on Amarasimha’s Nämalingänusäsana 
 317 
@@ -1121,7 +1121,7 @@ Sabdabhedaprakäsa (8 17), see V. KRISHNAMACHARYA, [ABCIM 191], VI, p. 386.
 
 ---
 
-<!-- page 26 -->
+<!-- page 25 -->
 
 318 
 C. Vogel - Indian Lexicography 
@@ -1174,7 +1174,7 @@ Nomalinganushasana, Berhampore, 1887, p. XI, and P.E. Pavorını, GSAI5, P-
 
 ---
 
-<!-- page 27 -->
+<!-- page 26 -->
 
 Mahäksapanaka’s Anekärthadhvanimaäjari 
 319 
@@ -1223,7 +1223,7 @@ SHAH, [ABCIM 281], III, p. 976.
 
 ---
 
-<!-- page 28 -->
+<!-- page 27 -->
 
 320 
 C. Vogel - Indian Lexicography 
@@ -1273,7 +1273,7 @@ Prakrit manuscripts, Jesalmer collection, Ahmedabad, 1972, p- 123).
 
 ---
 
-<!-- page 29 -->
+<!-- page 28 -->
 
 Haläyudha’s Abhidhänaratnamälä 
 321 
@@ -1324,7 +1324,7 @@ commentary, styled Tilaka, is noted by G. BüHLer, [ABCIM 108], III, p. 34.
 
 ---
 
-<!-- page 30 -->
+<!-- page 29 -->
 
 322 
 C. Vogel : Indian Lexicography 
@@ -1376,7 +1376,7 @@ Karpüramanjari was performed (I 11).
 
 ---
 
-<!-- page 31 -->
+<!-- page 30 -->
 
 Yädavaprakä$a’s Vaijayanti 
 323 
@@ -1424,7 +1424,7 @@ and the Purädhyäya of the Pätälakända (IV 3) see D.C. Ganaury, IHQ 19, p. 2
 
 ---
 
-<!-- page 32 -->
+<!-- page 31 -->
 
 324 
 C. Vogel - Indian Lexicography 
@@ -1474,7 +1474,7 @@ ekärthakairaväkarakaumudi II 144, for IV 1.60 to Haläyudhakosa III 41.
 
 ---
 
-<!-- page 33 -->
+<!-- page 32 -->
 
 Bhoja’s Nämamälikä 
 325 
@@ -1520,7 +1520,7 @@ above figure refers only to what has been transmitted in the codices.
 
 ---
 
-<!-- page 34 -->
+<!-- page 33 -->
 
 326 
 C. Vogel - Indian Lexicography 
@@ -1569,7 +1569,7 @@ tions in the printed text running contrary to this rule (e.g. ll. 143, 1381, 140
 
 ---
 
-<!-- page 35 -->
+<!-- page 34 -->
 
 Dhanamjaya’s Nämamälä 
 327 
@@ -1619,7 +1619,7 @@ Pathak, Poona, 1934, p. 374.
 
 ---
 
-<!-- page 36 -->
+<!-- page 35 -->
 
 328 
 C. Vogel - Indian Lexicography 
@@ -1671,7 +1671,7 @@ STRI, [ABCIM 302], IX, p. 3869 (No. 5016).
 
 ---
 
-<!-- page 37 -->
+<!-- page 36 -->
 
 Dhanamjaya’s Paryäyasabdaratna 
 329 
@@ -1721,7 +1721,7 @@ beginning and end.
 
 ---
 
-<!-- page 38 -->
+<!-- page 37 -->
 
 330 
 C. Vogel : Indian Lexicography 
@@ -1773,7 +1773,7 @@ Leipzig, 1940.
 
 ---
 
-<!-- page 39 -->
+<!-- page 38 -->
 
 Purusottamadeva’s Trikändasesa, Härävali, Ekäksarakosa, Dvirüpakosa 331 
 44 stanzas!0® of words with orthographie variants in general (sabdabheda), 
@@ -1821,7 +1821,7 @@ j
 
 ---
 
-<!-- page 40 -->
+<!-- page 39 -->
 
 332 
 C. Vogel - Indian Lexicography 
@@ -1877,7 +1877,7 @@ bay, 1889.
 
 ---
 
-<!-- page 41 -->
+<!-- page 40 -->
 
 Purusottamadeva’s Trikändasesa, Härävali, Ekäksarakoga, Dvirüpakosa 333 
 from it in the mode of presentation, tuning back to the old custom of serializ- 
@@ -1930,7 +1930,7 @@ not then be mixed up with Mahesvara’s work of that title ($ 17).
 
 ---
 
-<!-- page 42 -->
+<!-- page 41 -->
 
 334 
 C. Vogel - Indian Lexicography 
@@ -1980,7 +1980,7 @@ colophons of the manuscripts.
 
 ---
 
-<!-- page 43 -->
+<!-- page 42 -->
 
 Hemacandra 
 335 
@@ -2029,7 +2029,7 @@ zig, 1908, p. 1, n. 2).
 
 ---
 
-<!-- page 44 -->
+<!-- page 43 -->
 
 336 
 C. Vogel - Indian Lexicography 
@@ -2081,7 +2081,7 @@ Maniprabhä Hindi commentary). The earliest known codex, written in s. 1314
 
 ---
 
-<!-- page 45 -->
+<!-- page 44 -->
 
 Hemacandra’s Abhidhänacintämani 
 337 
@@ -2133,7 +2133,7 @@ PunyaAvısayasl, [ABCIM 281], II, p. 782.
 
 ---
 
-<!-- page 46 -->
+<!-- page 45 -->
 
 338 
 C. Vogel - Indian Lexicography 
@@ -2186,7 +2186,7 @@ month of Nabha [Srävana], in the most beautiful town bearing Vikrama’s name
 
 ---
 
-<!-- page 47 -->
+<!-- page 46 -->
 
 Hemacandra’s Abhidhänaeintämani 
 339 
@@ -2237,7 +2237,7 @@ Institute at Poona; see R.G. BHANDARKAR, [ABCIM 273], VI, p. 107.
 
 ---
 
-<!-- page 48 -->
+<!-- page 47 -->
 
 340 
 C. Vogel - Indian Lexicography 
@@ -2291,7 +2291,7 @@ adduced in his definitions has been drawn up by ZACHARIARE, Beiträge, p. 65.
 
 ---
 
-<!-- page 49 -->
+<!-- page 48 -->
 
 Hemacandra’s Anekärthasamgraha 
 341 
@@ -2345,7 +2345,7 @@ is mediocre in style.
 
 ---
 
-<!-- page 50 -->
+<!-- page 49 -->
 
 342 
 C. Vogel - Indian Lexicography 
@@ -2397,7 +2397,7 @@ Si$upälavadha (V 24, XII 18) and Bäna’s Harsacarita (p. 13.1-2 ed. FÜHRER).
 
 ---
 
-<!-- page 51 -->
+<!-- page 50 -->
 
 Hemacandra’s Desinämamälä 
 343 
@@ -2449,7 +2449,7 @@ nası, 1966.
 
 ---
 
-<!-- page 52 -->
+<!-- page 51 -->
 
 344 
 C. Vogel - Indian Lexicography 
@@ -2499,7 +2499,7 @@ I, p. 181a (who mentions a Pattan manuscript of s. 1640 or 1583/84). — In 8. J
 
 ---
 
-<!-- page 53 -->
+<!-- page 52 -->
 
 Hemacandra’s Nighantusesa 
 345 
@@ -2551,7 +2551,7 @@ eintämanitikä at Jodhpur in s. 1667 [1610/11] ($ 21).
 
 ---
 
-<!-- page 54 -->
+<!-- page 53 -->
 
 346 
 C. Vogel - Indian Lexicography 
@@ -2601,7 +2601,7 @@ I, Baroda, 1928, p. XXXIX; V. KRISHNAMACHARYA, [ABCIM 191], VI, p- 345.
 
 ---
 
-<!-- page 55 -->
+<!-- page 54 -->
 
 Medinikara’s Nänärtha$abdakosa 
 347 
@@ -2650,7 +2650,7 @@ VerSses.
 
 ---
 
-<!-- page 56 -->
+<!-- page 55 -->
 
 348 
 C. Vogel - Indian Lexicography 
@@ -2698,7 +2698,7 @@ the Red Cap Karma-pas and abbot of Phag-mo-gru.
 
 ---
 
-<!-- page 57 -->
+<!-- page 56 -->
 
 Sridharasena’s Vi$valocana or Muktävali 
 349 
@@ -2753,7 +2753,7 @@ kosasamgraha, RPG 64, Jodhpur, 1964.
 
 ---
 
-<!-- page 58 -->
+<!-- page 57 -->
 
 350 
 C. Vogel - Indian Lexicography 
@@ -2800,7 +2800,7 @@ month, its end having possibly been visible east of the 82nd meridian.
 
 ---
 
-<!-- page 59 -->
+<!-- page 58 -->
 
 Mahipa’s Sabdaratnäkara and Anekärthatilaka 
 351 
@@ -2848,7 +2848,7 @@ Prakrit manuscripts, Jesalmer collection, Ahmedabad, 1972, p. 353.
 
 ---
 
-<!-- page 60 -->
+<!-- page 59 -->
 
 352 
 C. Vogel - Indian Lexicography 
@@ -2899,7 +2899,7 @@ with six tops, five tops, and four tops.”
 
 ---
 
-<!-- page 61 -->
+<!-- page 60 -->
 
 Räghava’s Nänärthamaäijari 
 353 
@@ -2947,7 +2947,7 @@ to Sunday, 18 October 1863.
 
 ---
 
-<!-- page 62 -->
+<!-- page 61 -->
 
 354 
 C. Vogel - Indian Lexicography 
@@ -2994,7 +2994,7 @@ Darbhanga, 1965.
 
 ---
 
-<!-- page 63 -->
+<!-- page 62 -->
 
 Makarandadäsa’s Paramänandiyanämamälä 
 355 
@@ -3044,7 +3044,7 @@ app, p- 397.
 
 ---
 
-<!-- page 64 -->
+<!-- page 63 -->
 
 356 
 C. Vogel : Indian Lexicography 
@@ -3093,7 +3093,7 @@ syllables with initial @ are inserted after the only pentasyllable with initial 
 
 ---
 
-<!-- page 65 -->
+<!-- page 64 -->
 
 Makarandadäsa’s Paramänandiyanämamälä 
 357 
@@ -3142,7 +3142,7 @@ Aryä (IV 2*, 12*, 16*, 18*; VI1, 162 [?]); Udgiti (VI 53); Aryägiti (VI 57).
 
 ---
 
-<!-- page 66 -->
+<!-- page 65 -->
 
 358 
 ©. Vogel - Indian Lexicography 
@@ -3191,7 +3191,7 @@ tilakä.
 
 ---
 
-<!-- page 67 -->
+<!-- page 66 -->
 
 Rüpacandra’s Rüpamafijarinämamälä 
 359 
@@ -3238,7 +3238,7 @@ learned.”’
 
 ---
 
-<!-- page 68 -->
+<!-- page 67 -->
 
 360 
 C. Vogel - Indian Lexicography 
@@ -3291,7 +3291,7 @@ payya Diksita is distinct from his famous namesake.
 
 ---
 
-<!-- page 69 -->
+<!-- page 68 -->
 
 Sahajakirti’s Siddhasabdärnava 
 361 
@@ -3341,7 +3341,7 @@ VI, p. 388.
 
 ---
 
-<!-- page 70 -->
+<!-- page 69 -->
 
 362 
 C. Vogel : Indian Lexicography 
@@ -3394,7 +3394,7 @@ Poona, 1957-
 
 ---
 
-<!-- page 71 -->
+<!-- page 70 -->
 
 Venidatta’s Pafcatattvaprakä$a and Miramiräsuta’s Asälatiprakäga 
 363 
@@ -3448,7 +3448,7 @@ SARMA, [ABCIM 28], p. 411.
 
 ---
 
-<!-- page 72 -->
+<!-- page 71 -->
 
 364 
 C. Vogel - Indian Lexicography 
@@ -3496,7 +3496,7 @@ earth’s best Khän — the glorious Nasälati.’”
 
 ---
 
-<!-- page 73 -->
+<!-- page 72 -->
 
 Mathuresa Vidyälamkära’s Sabdaratnävali 
 365 
@@ -3543,7 +3543,7 @@ defines the vocable at issue (kasäya) in quite different terms (III 5.347).
 
 ---
 
-<!-- page 74 -->
+<!-- page 73 -->
 
 366 
 C. Vogel - Indian Lexicography 
@@ -3594,7 +3594,7 @@ Sabdaratnävali — and not the Särasundari — was written in $. 1588.
 
 ---
 
-<!-- page 75 -->
+<!-- page 74 -->
 
 Sähaji’s Sabdaratnasamanvaya and Sabdärthasamgraha 
 367 
@@ -3639,7 +3639,7 @@ turagabrahmacarya “‘celibacy for want of a woman” (p. 249.11).
 
 ---
 
-<!-- page 76 -->
+<!-- page 75 -->
 
 368 
 C. Vogel - Indian Lexicography 
@@ -3689,7 +3689,7 @@ ited by J.D. Zanoo, KSTS 75, Srinagar, 1947.
 
 ---
 
-<!-- page 77 -->
+<!-- page 76 -->
 
 Special dictionaries 
 369 
@@ -3735,7 +3735,7 @@ I, Caleutta-London, 1913 (21937).
 
 ---
 
-<!-- page 78 -->
+<!-- page 77 -->
 
 370 
 C. Vogel : Indian Lexicography 
@@ -3785,7 +3785,7 @@ jay, wagtail; saint, scholar, hero).
 
 ---
 
-<!-- page 79 -->
+<!-- page 78 -->
 
 Special dietionaries 
 371 
@@ -3833,7 +3833,7 @@ Dhäturatnäkara see v. 20 of its colophon; v. sup. (note 147).
 
 ---
 
-<!-- page 80 -->
+<!-- page 79 -->
 
 372 
 C. Vogel : Indian Lexicography 
@@ -3881,7 +3881,7 @@ Cf. C. BENDALL, [ABCIM 157], p. 170. For the author see above ($ 21).
 
 ---
 
-<!-- page 81 -->
+<!-- page 80 -->
 
 Special dictionaries 
 373 
@@ -3928,7 +3928,7 @@ of the three worlds, the three places of existence, the three forms of the earth
 
 ---
 
-<!-- page 82 -->
+<!-- page 81 -->
 
 374 
 C. Vogel - Indian Lexicography 
@@ -3977,7 +3977,7 @@ found in his private library.
 
 ---
 
-<!-- page 83 -->
+<!-- page 82 -->
 
 Special dietionaries 
 375 
@@ -4026,7 +4026,7 @@ in Mathurä, son of Mathurädäsa and grandson of Gurudäsa (of Aryalä); and
 
 ---
 
-<!-- page 84 -->
+<!-- page 83 -->
 
 376 
 C. Vogel - Indian Lexicography 
@@ -4079,7 +4079,7 @@ mediaeval period), II, Calcutta, 1936, p. 732.
 
 ---
 
-<!-- page 85 -->
+<!-- page 84 -->
 
 Special dietionaries 
 377 
@@ -4131,7 +4131,7 @@ which is variously counted as chapter 202, 204, and 208 and numbers between
 
 ---
 
-<!-- page 86 -->
+<!-- page 85 -->
 
 378 
 C. Vogel - Indian Lexicography 
@@ -4180,7 +4180,7 @@ LER, Tausend Buddhanamen des Bhadrakalpa, Leipzig, 1928; the Sanskrit portion
 
 ---
 
-<!-- page 87 -->
+<!-- page 86 -->
 
 Bilingual and multilingual dietionaries 
 379 
@@ -4230,7 +4230,7 @@ Cf. H. Kern, ACIO 6, pt. 3, p. 1.
 
 ---
 
-<!-- page 88 -->
+<!-- page 87 -->
 
 380 
 C. Vogel - Indian Lexicography 
@@ -4281,7 +4281,7 @@ YAJj, loc. cit.
 
 ---
 
-<!-- page 89 -->
+<!-- page 88 -->
 
 Bilingual and multilingual dietionaries 
 381 
@@ -4336,7 +4336,7 @@ guna, on Friday, the first lunar day of its dark (fortnight).”
 
 ---
 
-<!-- page 90 -->
+<!-- page 89 -->
 
 382 
 C. Vogel - Indian Lexicography 
@@ -4391,7 +4391,7 @@ piled at the instance of the Emperor K’ang-hsi (1662-1723).
 
 ---
 
-<!-- page 91 -->
+<!-- page 90 -->
 
 Bilingual and multilingual dietionaries 
 383 
@@ -4422,7 +4422,7 @@ HER
 
 ---
 
-<!-- page 92 -->
+<!-- page 91 -->
 
 ie 
 m 
@@ -4434,7 +4434,7 @@ je ak, A
 
 ---
 
-<!-- page 93 -->
+<!-- page 92 -->
 
 BIBLIOGRAPHY 
 I. Previous representations of Indian lexicography 
@@ -4463,7 +4463,7 @@ V. Krishnamacharya: [ABCIM 191], VI, pp. 326-413.
 
 ---
 
-<!-- page 94 -->
+<!-- page 93 -->
 
 JB(O)RS 
 ABBREVIATIONS 
@@ -4518,7 +4518,7 @@ Journal of the Bihar (and Orissa) Research Society
 
 ---
 
-<!-- page 95 -->
+<!-- page 94 -->
 
 SPS 
 Abbreviations 
@@ -4580,7 +4580,7 @@ Zeitschrift für die Kunde des Morgenlandes
 
 ---
 
-<!-- page 96 -->
+<!-- page 95 -->
 
 INDICES 
 The order is that of the Roman alphabet. The references are to pages when 
@@ -4676,7 +4676,7 @@ Avantisundari 322 (62), 344
 
 ---
 
-<!-- page 97 -->
+<!-- page 96 -->
 
 Indices 
 Avantisundariya 361 
@@ -4793,7 +4793,7 @@ Dharanidäsa 326-7, 348, 353 (197)
 
 ---
 
-<!-- page 98 -->
+<!-- page 97 -->
 
 390 
 Dharanıikosa 320 (53) 
@@ -4906,7 +4906,7 @@ Harsakirti 320, 355, 358-9, 360, 361
 
 ---
 
-<!-- page 99 -->
+<!-- page 98 -->
 
 Indices 
 Harsavardhana 312 
@@ -5020,7 +5020,7 @@ Ksemendra 368-9
 
 ---
 
-<!-- page 100 -->
+<!-- page 99 -->
 
 392 
 Ksirasvämin 
@@ -5136,7 +5136,7 @@ Mugdhabodha 303 (1), 317
 
 ---
 
-<!-- page 101 -->
+<!-- page 100 -->
 
 Indices 
 Mugdhabodhini 317 
@@ -5252,7 +5252,7 @@ Pedda Komati Vema 354
 
 ---
 
-<!-- page 102 -->
+<!-- page 101 -->
 
 394 
 Peru Süri 373 
@@ -5377,7 +5377,7 @@ Sabdendusekhara 329
 
 ---
 
-<!-- page 103 -->
+<!-- page 102 -->
 
 Indices 
 Säbdikavidvatkavipramodaka 373 
@@ -5495,7 +5495,7 @@ Sriharsa 304 (5), 308 (17), 318, 333
 
 ---
 
-<!-- page 104 -->
+<!-- page 103 -->
 
 396 
 Srihira 372 
@@ -5610,7 +5610,7 @@ Vararuci 305 (6), 306, 307 (14), 312,
 
 ---
 
-<!-- page 105 -->
+<!-- page 104 -->
 
 Indices 
 321, 347, 348, 354, 367, 369, 379; 
@@ -5717,7 +5717,7 @@ Banerji, S.C. 371, 372
 
 ---
 
-<!-- page 106 -->
+<!-- page 105 -->
 
 398 
 Bechardas 336 (135), 371 
@@ -5826,7 +5826,7 @@ Harshe, R.G. 377
 
 ---
 
-<!-- page 107 -->
+<!-- page 106 -->
 
 Indices 
 Hauschild, R. 363 (234) 
@@ -5947,7 +5947,7 @@ Parab, K.P. 310 (28), 317, 332 (116,
 
 ---
 
-<!-- page 108 -->
+<!-- page 107 -->
 
 400 
 Patel, M. 336 (134) 
@@ -6082,7 +6082,7 @@ ea
 
 ---
 
-<!-- page 109 -->
+<!-- page 108 -->
 
 Indices 
 Tarkaratna, G. 320 (53), 333 (123), 378 
@@ -6167,7 +6167,7 @@ Varnakosas 372
 
 ---
 
-<!-- page 110 -->
+<!-- page 109 -->
 
 ENT 
 MIDDLEBURY COLLEGE l 
@@ -6175,14 +6175,14 @@ MIDDLEBURY COLLEGE l
 
 ---
 
-<!-- page 111 -->
+<!-- page 110 -->
 
 Vogel, Claus. 
 Indian lexicography.
 
 ---
 
-<!-- page 112 -->
+<!-- page 111 -->
 
 EU 
 IE 

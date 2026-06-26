@@ -6,7 +6,7 @@
 
 ---
 
-<!-- page 2 -->
+<!-- page 1 -->
 
 The Routledge Handbook of Teaching English to Young Learners celebrates the ‘coming 
 of age’ for the field of research in primary-level English Language Teaching. With 32 
@@ -37,7 +37,7 @@ Young Learners
 
 ---
 
-<!-- page 3 -->
+<!-- page 2 -->
 
 Routledge Handbooks in Applied Linguistics
 Routledge Handbooks in Applied Linguistics provide comprehensive overviews of the key 
@@ -72,7 +72,7 @@ For a full list of titles in this series, please visit www.routledge.com/series/
 
 ---
 
-<!-- page 4 -->
+<!-- page 3 -->
 
 The Routledge Handbook 
 of Teaching English to 
@@ -81,7 +81,7 @@ Edited by Sue Garton and Fiona Copland
 
 ---
 
-<!-- page 5 -->
+<!-- page 4 -->
 
 First published 2019
 by Routledge
@@ -123,7 +123,7 @@ by Apex CoVantage, LLC
 
 ---
 
-<!-- page 6 -->
+<!-- page 5 -->
 
 v
 List of figures
@@ -166,7 +166,7 @@ Contents
 
 ---
 
-<!-- page 7 -->
+<!-- page 6 -->
 
 Contents
 vi
@@ -218,7 +218,7 @@ Yuko Goto Butler
 
 ---
 
-<!-- page 8 -->
+<!-- page 7 -->
 
 Contents
 vii
@@ -266,7 +266,7 @@ Shelagh Rixon
 
 ---
 
-<!-- page 9 -->
+<!-- page 8 -->
 
 Contents
 viii
@@ -284,7 +284,7 @@ Index
 
 ---
 
-<!-- page 10 -->
+<!-- page 9 -->
 
 ix
 	 8.1	
@@ -322,7 +322,7 @@ Figures
 
 ---
 
-<!-- page 11 -->
+<!-- page 10 -->
 
 x
 	 3.1	
@@ -366,7 +366,7 @@ Tables
 
 ---
 
-<!-- page 12 -->
+<!-- page 11 -->
 
 xi
 Wendy Arnold, MA in TEYL (University of York, UK), is Co-Founder of ELT-Consult-
@@ -404,7 +404,7 @@ Contributors
 
 ---
 
-<!-- page 13 -->
+<!-- page 12 -->
 
 Contributors
 xii
@@ -450,7 +450,7 @@ Linguistics.
 
 ---
 
-<!-- page 14 -->
+<!-- page 13 -->
 
 Contributors
 xiii
@@ -496,7 +496,7 @@ Perspectives on Teaching English in Difficult Circumstances (2018).
 
 ---
 
-<!-- page 15 -->
+<!-- page 14 -->
 
 Contributors
 xiv
@@ -543,7 +543,7 @@ concerns.​
 
 ---
 
-<!-- page 16 -->
+<!-- page 15 -->
 
 Contributors
 xv
@@ -590,7 +590,7 @@ and Ambiguities in English Language Teaching (2012). His current work focuses on
 
 ---
 
-<!-- page 17 -->
+<!-- page 16 -->
 
 Contributors
 xvi
@@ -636,7 +636,7 @@ and teacher integration of technologies, and the didactics of English for specif
 
 ---
 
-<!-- page 18 -->
+<!-- page 17 -->
 
 Contributors
 xvii
@@ -651,7 +651,7 @@ Journal of Education for Teaching.
 
 ---
 
-<!-- page 19 -->
+<!-- page 18 -->
 
 xviii
 Figure 13.1 is taken from Teaching Grammar Creatively by Gerngross, G., H. Puchta and 
@@ -664,7 +664,7 @@ Acknowledgements
 
 ---
 
-<!-- page 20 -->
+<!-- page 19 -->
 
 1
 At the 2014 International Association of Teachers of English as a Foreign Language 
@@ -702,7 +702,7 @@ Sue Garton and Fiona Copland
 
 ---
 
-<!-- page 21 -->
+<!-- page 20 -->
 
 Sue Garton and Fiona Copland
 2
@@ -755,7 +755,7 @@ to refer to children learning English. They include: ‘young learners’ (YLs),
 
 ---
 
-<!-- page 22 -->
+<!-- page 21 -->
 
 Introduction
 3
@@ -808,7 +808,7 @@ on young language learners’ motivation.
 
 ---
 
-<!-- page 23 -->
+<!-- page 22 -->
 
 Sue Garton and Fiona Copland
 4
@@ -860,7 +860,7 @@ learners’ self-regulation.
 
 ---
 
-<!-- page 24 -->
+<!-- page 23 -->
 
 Introduction
 5
@@ -913,7 +913,7 @@ the YL classroom. Whilst critical pedagogy is not new, its application in YL cla
 
 ---
 
-<!-- page 25 -->
+<!-- page 24 -->
 
 Sue Garton and Fiona Copland
 6
@@ -966,7 +966,7 @@ and collaborative learning perspective. He concludes with a comprehensive overvi
 
 ---
 
-<!-- page 26 -->
+<!-- page 25 -->
 
 Introduction
 7
@@ -1019,7 +1019,7 @@ questions and data collection methods and collecting the data. However, Pinter s
 
 ---
 
-<!-- page 27 -->
+<!-- page 26 -->
 
 Sue Garton and Fiona Copland
 8
@@ -1072,7 +1072,7 @@ CLIL, which are becoming increasingly influential, even outside Europe. Like Pap
 
 ---
 
-<!-- page 28 -->
+<!-- page 27 -->
 
 Introduction
 9
@@ -1124,7 +1124,7 @@ dynamics of primary English. Bristol: Multilingual Matters.
 
 ---
 
-<!-- page 29 -->
+<!-- page 28 -->
 
 Sue Garton and Fiona Copland
 10
@@ -1163,14 +1163,14 @@ S. (eds.) TESOL Voices: Young Learner Education. Alexandria, VA: TESOL Press, 66
 
 ---
 
-<!-- page 30 -->
+<!-- page 29 -->
 
 PART 1
 Macro Issues
 
 ---
 
-<!-- page 32 -->
+<!-- page 30 -->
 
 13
 1
@@ -1206,7 +1206,7 @@ be embedded along with other languages in a country’s overall approach. While 
 
 ---
 
-<!-- page 33 -->
+<!-- page 31 -->
 
 Richard Johnstone
 14
@@ -1256,7 +1256,7 @@ explicit or implicit EYL policy already in existence. If so, then policy makers 
 
 ---
 
-<!-- page 34 -->
+<!-- page 32 -->
 
 Languages policy and EYL in early education
 15
@@ -1306,7 +1306,7 @@ claimed that, following World War II, the education of children ought not to be 
 
 ---
 
-<!-- page 35 -->
+<!-- page 33 -->
 
 Richard Johnstone
 16
@@ -1355,7 +1355,7 @@ some cities from Grade 1 (children begin primary education at age 6). A rapid e
 
 ---
 
-<!-- page 36 -->
+<!-- page 34 -->
 
 Languages policy and EYL in early education
 17
@@ -1402,7 +1402,7 @@ of the value of teachers’ situated craft skills (Hamilton, ibid.), is offered 
 
 ---
 
-<!-- page 37 -->
+<!-- page 35 -->
 
 Richard Johnstone
 18
@@ -1453,7 +1453,7 @@ proficient in it and for roughly one hour per week during the school year.
 
 ---
 
-<!-- page 38 -->
+<!-- page 36 -->
 
 Languages policy and EYL in early education
 19
@@ -1507,7 +1507,7 @@ and parents as well as the children themselves), thereby increasing children’s
 
 ---
 
-<!-- page 39 -->
+<!-- page 37 -->
 
 Richard Johnstone
 20
@@ -1561,7 +1561,7 @@ the medium of Scottish Gaelic, Welsh or Irish Gaelic. In both of these cases imm
 
 ---
 
-<!-- page 40 -->
+<!-- page 38 -->
 
 Languages policy and EYL in early education
 21
@@ -1614,7 +1614,7 @@ of time, after which it ‘exits’ from the school curriculum. She mentions two
 
 ---
 
-<!-- page 41 -->
+<!-- page 39 -->
 
 Richard Johnstone
 22
@@ -1665,7 +1665,7 @@ to all children across continents and cultures may well be imaginative English a
 
 ---
 
-<!-- page 42 -->
+<!-- page 40 -->
 
 Languages policy and EYL in early education
 23
@@ -1714,7 +1714,7 @@ din et al. 1998) – that prevent children in the early years of secondary educ
 
 ---
 
-<!-- page 43 -->
+<!-- page 41 -->
 
 Richard Johnstone
 24
@@ -1767,7 +1767,7 @@ land context (my emphasis).
 
 ---
 
-<!-- page 44 -->
+<!-- page 42 -->
 
 Languages policy and EYL in early education
 25
@@ -1821,7 +1821,7 @@ each year; number of hours of EYL per week, per year and for primary school peri
 
 ---
 
-<!-- page 45 -->
+<!-- page 43 -->
 
 Richard Johnstone
 26
@@ -1881,7 +1881,7 @@ e.g., in Asia, South America, Africa and Central Europe  – who achieve public
 
 ---
 
-<!-- page 46 -->
+<!-- page 44 -->
 
 Languages policy and EYL in early education
 27
@@ -1932,7 +1932,7 @@ Bristol: Multilingual Matters, 269–288.
 
 ---
 
-<!-- page 47 -->
+<!-- page 45 -->
 
 Richard Johnstone
 28
@@ -1985,7 +1985,7 @@ ism: Empowering Individuals, Transforming Societies (MEITS) [Accessed 9 August 
 
 ---
 
-<!-- page 48 -->
+<!-- page 46 -->
 
 Languages policy and EYL in early education
 29
@@ -2018,7 +2018,7 @@ The Age Factor and Early Language Learning. Berlin: Mouton de Gruyter, 277–310
 
 ---
 
-<!-- page 49 -->
+<!-- page 47 -->
 
 30
 2
@@ -2056,7 +2056,7 @@ envenomed ire at those who point out these facts (see Singleton and Pfenninger 2
 
 ---
 
-<!-- page 50 -->
+<!-- page 48 -->
 
 The age debate
 31
@@ -2107,7 +2107,7 @@ pensates for the slow learning rate of young children.
 
 ---
 
-<!-- page 51 -->
+<!-- page 49 -->
 
 David Singleton and Simone E. Pfenninger
 32
@@ -2162,7 +2162,7 @@ and Tarcov 1996, § 1). Writing of the learning of classical languages, Montaign
 
 ---
 
-<!-- page 52 -->
+<!-- page 50 -->
 
 The age debate
 33
@@ -2214,7 +2214,7 @@ immigrant studies. There has been a longstanding plethora of work (e.g., Hyltens
 
 ---
 
-<!-- page 53 -->
+<!-- page 51 -->
 
 David Singleton and Simone E. Pfenninger
 34
@@ -2269,7 +2269,7 @@ tionships between age, affect and linguistic experience’ (Moyer 2013, p. 19)
 
 ---
 
-<!-- page 54 -->
+<!-- page 52 -->
 
 The age debate
 35
@@ -2321,7 +2321,7 @@ findings, ideally in a methodology in which the two kinds of findings interact. 
 
 ---
 
-<!-- page 55 -->
+<!-- page 53 -->
 
 David Singleton and Simone E. Pfenninger
 36
@@ -2374,7 +2374,7 @@ children acquire prior to coming to school are important predictors of success i
 
 ---
 
-<!-- page 56 -->
+<!-- page 54 -->
 
 The age debate
 37
@@ -2427,7 +2427,7 @@ CLIL education experts have formulated an array of additional goals that CLIL is
 
 ---
 
-<!-- page 57 -->
+<!-- page 55 -->
 
 David Singleton and Simone E. Pfenninger
 38
@@ -2482,7 +2482,7 @@ set realistic expectations for themselves and the students involved.
 
 ---
 
-<!-- page 58 -->
+<!-- page 56 -->
 
 The age debate
 39
@@ -2538,7 +2538,7 @@ and schooling involving various kinds and degrees of ‘immersion’ in the L2. 
 
 ---
 
-<!-- page 59 -->
+<!-- page 57 -->
 
 David Singleton and Simone E. Pfenninger
 40
@@ -2588,7 +2588,7 @@ to grammar in children with focal brain injury. Developmental Neuropsychology, 1
 
 ---
 
-<!-- page 60 -->
+<!-- page 58 -->
 
 The age debate
 41
@@ -2647,7 +2647,7 @@ L2 attainment in three linguistic domains. Second Language Research, 29(3), 311�
 
 ---
 
-<!-- page 61 -->
+<!-- page 59 -->
 
 David Singleton and Simone E. Pfenninger
 42
@@ -2706,7 +2706,7 @@ Childhood Education in English for Speakers of Other Languages. London: British 
 
 ---
 
-<!-- page 62 -->
+<!-- page 60 -->
 
 The age debate
 43
@@ -2760,7 +2760,7 @@ tion in a Migrant Community. Bristol: Multilingual Matters, 156–182.
 
 ---
 
-<!-- page 63 -->
+<!-- page 61 -->
 
 44
 3
@@ -2799,7 +2799,7 @@ agenda.
 
 ---
 
-<!-- page 64 -->
+<!-- page 62 -->
 
 Early language learning teacher education
 45
@@ -2850,7 +2850,7 @@ The influence of teacher education on teachers’ practice.
 
 ---
 
-<!-- page 65 -->
+<!-- page 63 -->
 
 Sarah Rich
 46
@@ -2905,7 +2905,7 @@ cation (Johnson 2009b). That is a pedagogical model which seeks to uncover teach
 
 ---
 
-<!-- page 66 -->
+<!-- page 64 -->
 
 Early language learning teacher education
 47
@@ -2956,7 +2956,7 @@ with educational reforms; namely, to initially prioritise in-service support and
 
 ---
 
-<!-- page 67 -->
+<!-- page 65 -->
 
 Sarah Rich
 48
@@ -3005,7 +3005,7 @@ teachers (sometimes referred to as semi-specialists) present yet another set of 
 
 ---
 
-<!-- page 68 -->
+<!-- page 66 -->
 
 Early language learning teacher education
 49
@@ -3055,7 +3055,7 @@ have been published within the last 5 years is one indicator of the ways in whi
 
 ---
 
-<!-- page 69 -->
+<!-- page 67 -->
 
 Sarah Rich
 50
@@ -3102,7 +3102,7 @@ dealing with differentiation and identifying suitable resources). Given that, as
 
 ---
 
-<!-- page 70 -->
+<!-- page 68 -->
 
 Early language learning teacher education
 51
@@ -3151,7 +3151,7 @@ emphasis on, reflection, experiential learning and practice opportunities which 
 
 ---
 
-<!-- page 71 -->
+<!-- page 69 -->
 
 Sarah Rich
 52
@@ -3199,7 +3199,7 @@ pre-service programmes to ensure that there is a ready pool of teachers who have
 
 ---
 
-<!-- page 72 -->
+<!-- page 70 -->
 
 Early language learning teacher education
 53
@@ -3249,7 +3249,7 @@ forums (e.g., Karavas 2014)
 
 ---
 
-<!-- page 73 -->
+<!-- page 71 -->
 
 Sarah Rich
 54
@@ -3303,7 +3303,7 @@ any formal input sessions that they receive. This means that it is important to 
 
 ---
 
-<!-- page 74 -->
+<!-- page 72 -->
 
 Early language learning teacher education
 55
@@ -3360,7 +3360,7 @@ regard to in-service provision, where possible, adopting a day-release approach 
 
 ---
 
-<!-- page 75 -->
+<!-- page 73 -->
 
 Sarah Rich
 56
@@ -3416,7 +3416,7 @@ micro-teaching.
 
 ---
 
-<!-- page 76 -->
+<!-- page 74 -->
 
 Early language learning teacher education
 57
@@ -3469,7 +3469,7 @@ rials. Strasbourg/Graz: Council of Europe/European Centre for Modern Languages, 
 
 ---
 
-<!-- page 77 -->
+<!-- page 75 -->
 
 Sarah Rich
 58
@@ -3527,7 +3527,7 @@ Teaching of English to Young Learners. London: Palgrave Macmillan.
 
 ---
 
-<!-- page 78 -->
+<!-- page 76 -->
 
 Early language learning teacher education
 59
@@ -3553,7 +3553,7 @@ for Teaching, 42(2), 205–223.
 
 ---
 
-<!-- page 79 -->
+<!-- page 77 -->
 
 60
 4
@@ -3590,7 +3590,7 @@ by both social and cognitive theories. Among a variety of theories of motivation
 
 ---
 
-<!-- page 80 -->
+<!-- page 78 -->
 
 YLs’ motivation for learning English
 61
@@ -3641,7 +3641,7 @@ reward (e.g., good grades) or avoiding punishment’ (ibid.).
 
 ---
 
-<!-- page 81 -->
+<!-- page 79 -->
 
 Yingying Li, Ye Han and Xuesong Gao
 62
@@ -3694,7 +3694,7 @@ system is still emerging and developing, and the process is most likely to be sh
 
 ---
 
-<!-- page 82 -->
+<!-- page 80 -->
 
 YLs’ motivation for learning English
 63
@@ -3745,7 +3745,7 @@ learners (e.g., Copland et al. 2014; Garton 2014) has reported that young learn
 
 ---
 
-<!-- page 83 -->
+<!-- page 81 -->
 
 Yingying Li, Ye Han and Xuesong Gao
 64
@@ -3798,7 +3798,7 @@ confidence and enhance English competence, as well as strengthen motivation for 
 
 ---
 
-<!-- page 84 -->
+<!-- page 82 -->
 
 YLs’ motivation for learning English
 65
@@ -3851,7 +3851,7 @@ of the L2 Motivational Self System (Dörnyei and Ushioda 2009) to explore the co
 
 ---
 
-<!-- page 85 -->
+<!-- page 83 -->
 
 Yingying Li, Ye Han and Xuesong Gao
 66
@@ -3904,7 +3904,7 @@ port. In addition, teachers can also play an important role in mediating young l
 
 ---
 
-<!-- page 86 -->
+<!-- page 84 -->
 
 YLs’ motivation for learning English
 67
@@ -3955,7 +3955,7 @@ fore, more research taking different theoretical perspectives should be conducte
 
 ---
 
-<!-- page 87 -->
+<!-- page 85 -->
 
 Yingying Li, Ye Han and Xuesong Gao
 68
@@ -4008,7 +4008,7 @@ presents an overview of theoretical and methodological trends in relevant resear
 
 ---
 
-<!-- page 88 -->
+<!-- page 86 -->
 
 YLs’ motivation for learning English
 69
@@ -4062,7 +4062,7 @@ mentary school students in Japan. System, 40, 191–202.
 
 ---
 
-<!-- page 89 -->
+<!-- page 87 -->
 
 Yingying Li, Ye Han and Xuesong Gao
 70
@@ -4120,7 +4120,7 @@ ond language learning. Journal of Language and Social Psychology, 18, 419–437.
 
 ---
 
-<!-- page 90 -->
+<!-- page 88 -->
 
 YLs’ motivation for learning English
 71
@@ -4178,7 +4178,7 @@ secondary school students. Canadian Journal of Education, 33, 564–587.
 
 ---
 
-<!-- page 91 -->
+<!-- page 89 -->
 
 Yingying Li, Ye Han and Xuesong Gao
 72
@@ -4234,7 +4234,7 @@ TESOL Quarterly, 40, 35–58.
 
 ---
 
-<!-- page 92 -->
+<!-- page 90 -->
 
 73
 5
@@ -4273,7 +4273,7 @@ in contexts with limited exposure to English language outside the classroom, con
 
 ---
 
-<!-- page 93 -->
+<!-- page 91 -->
 
 Kuchah Kuchah
 74
@@ -4324,7 +4324,7 @@ Kuchah and Shamim 2018; Phyak 2015; UIS 2016; Verspoor 2008) have highlighted th
 
 ---
 
-<!-- page 94 -->
+<!-- page 92 -->
 
 Teaching EYL in difficult circumstances
 75
@@ -4376,7 +4376,7 @@ outside the control of teachers and learners which affect their daily experience
 
 ---
 
-<!-- page 95 -->
+<!-- page 93 -->
 
 Kuchah Kuchah
 76
@@ -4425,7 +4425,7 @@ classrooms, lack of textbooks, lack of libraries, low teacher proficiency, quali
 
 ---
 
-<!-- page 96 -->
+<!-- page 94 -->
 
 Teaching EYL in difficult circumstances
 77
@@ -4478,7 +4478,7 @@ Nguyen et al. 2016) have examined a variety of challenges faced by teachers and
 
 ---
 
-<!-- page 97 -->
+<!-- page 95 -->
 
 Kuchah Kuchah
 78
@@ -4531,7 +4531,7 @@ instruction in the early years of formal education raises questions of justice a
 
 ---
 
-<!-- page 98 -->
+<!-- page 96 -->
 
 Teaching EYL in difficult circumstances
 79
@@ -4584,7 +4584,7 @@ based assessment demands, teachers’ language proficiency, training levels espe
 
 ---
 
-<!-- page 99 -->
+<!-- page 97 -->
 
 Kuchah Kuchah
 80
@@ -4637,7 +4637,7 @@ cumstances (e.g., Alyasin 2018; Ekembe and Fonjong 2018; Okpe 2016; Hillyard 201
 
 ---
 
-<!-- page 100 -->
+<!-- page 98 -->
 
 Teaching EYL in difficult circumstances
 81
@@ -4689,7 +4689,7 @@ Cook 2012) and codeswitching (Clegg and Afitska 2011; Milligan et al. 2016; Mad
 
 ---
 
-<!-- page 101 -->
+<!-- page 99 -->
 
 Kuchah Kuchah
 82
@@ -4744,7 +4744,7 @@ experience which affirms their multilingual identities. These are two significan
 
 ---
 
-<!-- page 102 -->
+<!-- page 100 -->
 
 Teaching EYL in difficult circumstances
 83
@@ -4798,7 +4798,7 @@ involving young learners as co-researchers (for details, see Pinter et al. 2016
 
 ---
 
-<!-- page 103 -->
+<!-- page 101 -->
 
 Kuchah Kuchah
 84
@@ -4849,7 +4849,7 @@ questions based on their contextual challenges as a basis for developing a futur
 
 ---
 
-<!-- page 104 -->
+<!-- page 102 -->
 
 Teaching EYL in difficult circumstances
 85
@@ -4902,7 +4902,7 @@ examples of contextualised inquiry-based strategies and interventions to address
 
 ---
 
-<!-- page 105 -->
+<!-- page 103 -->
 
 Kuchah Kuchah
 86
@@ -4957,7 +4957,7 @@ Palgrave Macmillan, 1–13.
 
 ---
 
-<!-- page 106 -->
+<!-- page 104 -->
 
 Teaching EYL in difficult circumstances
 87
@@ -5016,7 +5016,7 @@ Research, 33(5), 539–555.
 
 ---
 
-<!-- page 107 -->
+<!-- page 105 -->
 
 Kuchah Kuchah
 88
@@ -5075,7 +5075,7 @@ principles. Innovation in Language Learning and Teaching, 5(2), 119–140.
 
 ---
 
-<!-- page 108 -->
+<!-- page 106 -->
 
 Teaching EYL in difficult circumstances
 89
@@ -5133,7 +5133,7 @@ Nicolai, S., Greenhill, R., Jalles d’Orey, M. A., Magee, A., Rogerson, A., Wil
 
 ---
 
-<!-- page 109 -->
+<!-- page 107 -->
 
 Kuchah Kuchah
 90
@@ -5192,7 +5192,7 @@ TESOL Quarterly, 43(2), 341–344.
 
 ---
 
-<!-- page 110 -->
+<!-- page 108 -->
 
 Teaching EYL in difficult circumstances
 91
@@ -5251,7 +5251,7 @@ education curriculum. RELC Journal, 39(1), 5–24.
 
 ---
 
-<!-- page 111 -->
+<!-- page 109 -->
 
 Kuchah Kuchah
 92
@@ -5266,14 +5266,14 @@ TESOL Quarterly, 36(3), 297–322.
 
 ---
 
-<!-- page 112 -->
+<!-- page 110 -->
 
 PART 2
 In the young learner classroom
 
 ---
 
-<!-- page 114 -->
+<!-- page 111 -->
 
 95
 6
@@ -5310,7 +5310,7 @@ countries. For example, in the UK alone, official statistics (NALDIC 2013) showe
 
 ---
 
-<!-- page 115 -->
+<!-- page 112 -->
 
 Farrah Ching and Angel M. Y. Lin
 96
@@ -5363,7 +5363,7 @@ nised territories was high on the national development agendas of BANA countries
 
 ---
 
-<!-- page 116 -->
+<!-- page 113 -->
 
 Contexts of learning in TEYL
 97
@@ -5418,7 +5418,7 @@ gains in oral comprehension in English than those in the five classrooms that mi
 
 ---
 
-<!-- page 117 -->
+<!-- page 114 -->
 
 Farrah Ching and Angel M. Y. Lin
 98
@@ -5471,7 +5471,7 @@ have permeated into school practices, as well as their pedagogical implications 
 
 ---
 
-<!-- page 118 -->
+<!-- page 115 -->
 
 Contexts of learning in TEYL
 99
@@ -5522,7 +5522,7 @@ children into limited language users by not speaking and using English effective
 
 ---
 
-<!-- page 119 -->
+<!-- page 116 -->
 
 Farrah Ching and Angel M. Y. Lin
 100
@@ -5573,7 +5573,7 @@ dren noticed similarities between English and Spanish. In the Grade 1 class, the
 
 ---
 
-<!-- page 120 -->
+<!-- page 117 -->
 
 Contexts of learning in TEYL
 101
@@ -5628,7 +5628,7 @@ ties, and to label them in English and their heritage language. These images bec
 
 ---
 
-<!-- page 121 -->
+<!-- page 118 -->
 
 Farrah Ching and Angel M. Y. Lin
 102
@@ -5683,7 +5683,7 @@ mins and Early 2011).
 
 ---
 
-<!-- page 122 -->
+<!-- page 119 -->
 
 Contexts of learning in TEYL
 103
@@ -5747,7 +5747,7 @@ risk saying more in the target language.
 
 ---
 
-<!-- page 123 -->
+<!-- page 120 -->
 
 Farrah Ching and Angel M. Y. Lin
 104
@@ -5803,7 +5803,7 @@ to the imposition of legitimate language.
 
 ---
 
-<!-- page 124 -->
+<!-- page 121 -->
 
 Contexts of learning in TEYL
 105
@@ -5856,7 +5856,7 @@ Cummins, J. (2001). Bilingual children’s mother tongue: Why is it important fo
 
 ---
 
-<!-- page 125 -->
+<!-- page 122 -->
 
 Farrah Ching and Angel M. Y. Lin
 106
@@ -5915,7 +5915,7 @@ New York: Academic.
 
 ---
 
-<!-- page 126 -->
+<!-- page 123 -->
 
 Contexts of learning in TEYL
 107
@@ -5974,7 +5974,7 @@ Heller, M. (ed.) Bilingualism: A social approach. Basingstoke: Palgrave Macmill
 
 ---
 
-<!-- page 127 -->
+<!-- page 124 -->
 
 Farrah Ching and Angel M. Y. Lin
 108
@@ -6033,7 +6033,7 @@ Research Journal, 37(1), 6–23.
 
 ---
 
-<!-- page 128 -->
+<!-- page 125 -->
 
 Contexts of learning in TEYL
 109
@@ -6051,7 +6051,7 @@ spectives. Reading: Garnet Press.
 
 ---
 
-<!-- page 129 -->
+<!-- page 126 -->
 
 110
 7
@@ -6088,7 +6088,7 @@ more people are living in contexts where their native or home languages are not 
 
 ---
 
-<!-- page 130 -->
+<!-- page 127 -->
 
 Multilingualism in primary schools
 111
@@ -6143,7 +6143,7 @@ child does well at school, not only whether they have another language spoken in
 
 ---
 
-<!-- page 131 -->
+<!-- page 128 -->
 
 Victoria Murphy
 112
@@ -6196,7 +6196,7 @@ note however, that this discussion does not represent an exhaustive account.
 
 ---
 
-<!-- page 132 -->
+<!-- page 129 -->
 
 Multilingualism in primary schools
 113
@@ -6251,7 +6251,7 @@ immigrant pupils and non immigrant pupils on reading and mathematics performance
 
 ---
 
-<!-- page 133 -->
+<!-- page 130 -->
 
 Victoria Murphy
 114
@@ -6303,7 +6303,7 @@ and chunks for comprehension. PA is very important in the development of decodin
 
 ---
 
-<!-- page 134 -->
+<!-- page 131 -->
 
 Multilingualism in primary schools
 115
@@ -6358,7 +6358,7 @@ than their monolingual peers (Bialystok et al. 2010; Cameron 2002). More recent
 
 ---
 
-<!-- page 135 -->
+<!-- page 132 -->
 
 Victoria Murphy
 116
@@ -6411,7 +6411,7 @@ two paragraphs in response to a given prompt (e.g., ‘my favourite game is. .�
 
 ---
 
-<!-- page 136 -->
+<!-- page 133 -->
 
 Multilingualism in primary schools
 117
@@ -6464,7 +6464,7 @@ as concept formation, classification, creativity and analogical reasoning skills
 
 ---
 
-<!-- page 137 -->
+<!-- page 134 -->
 
 Victoria Murphy
 118
@@ -6516,7 +6516,7 @@ of complex (multiword) vocabulary learners may be unaware of the fact that they 
 
 ---
 
-<!-- page 138 -->
+<!-- page 135 -->
 
 Multilingualism in primary schools
 119
@@ -6568,7 +6568,7 @@ lingual mindset in a multilingual world.
 
 ---
 
-<!-- page 139 -->
+<!-- page 136 -->
 
 Victoria Murphy
 120
@@ -6619,7 +6619,7 @@ York: Guildford Press.
 
 ---
 
-<!-- page 140 -->
+<!-- page 137 -->
 
 Multilingualism in primary schools
 121
@@ -6678,7 +6678,7 @@ Comparative Human Cognition, 7, 16–22.
 
 ---
 
-<!-- page 141 -->
+<!-- page 138 -->
 
 Victoria Murphy
 122
@@ -6736,7 +6736,7 @@ tion, 20(1), 10–21.
 
 ---
 
-<!-- page 142 -->
+<!-- page 139 -->
 
 Multilingualism in primary schools
 123
@@ -6794,7 +6794,7 @@ primary school. Educational Studies, 31(3) 275–291.
 
 ---
 
-<!-- page 143 -->
+<!-- page 140 -->
 
 Victoria Murphy
 124
@@ -6813,7 +6813,7 @@ attainment among children learning English as an additional language. Child Deve
 
 ---
 
-<!-- page 144 -->
+<!-- page 141 -->
 
 125
 8
@@ -6850,7 +6850,7 @@ ferences, universal design). As a unified approach, however, development of DI h
 
 ---
 
-<!-- page 145 -->
+<!-- page 142 -->
 
 Amanda L. Sullivan and Mollie R. Weeks
 126
@@ -6905,7 +6905,7 @@ curiosity or other internal drivers. Appropriately supporting student learning a
 
 ---
 
-<!-- page 146 -->
+<!-- page 143 -->
 
 Differentiated instruction for young ELs
 127
@@ -6956,7 +6956,7 @@ achievement and productivity as well (Tomlinson et al. 2003).
 
 ---
 
-<!-- page 147 -->
+<!-- page 144 -->
 
 Amanda L. Sullivan and Mollie R. Weeks
 128
@@ -7030,7 +7030,7 @@ bridge and Helman 2016; Grinder 1993; Watts-Taffe et al. 2012; Ernest et al. 2
 
 ---
 
-<!-- page 148 -->
+<!-- page 145 -->
 
 Differentiated instruction for young ELs
 129
@@ -7083,7 +7083,7 @@ literacy difficulties in both their native language and English, which complicat
 
 ---
 
-<!-- page 149 -->
+<!-- page 146 -->
 
 Amanda L. Sullivan and Mollie R. Weeks
 130
@@ -7131,7 +7131,7 @@ is also critical.
 
 ---
 
-<!-- page 150 -->
+<!-- page 147 -->
 
 Table 8.1  Key features and related practice for effective DI
 Key Feature
@@ -7200,7 +7200,7 @@ small groups.
 
 ---
 
-<!-- page 151 -->
+<!-- page 148 -->
 
 Amanda L. Sullivan and Mollie R. Weeks
 132
@@ -7254,7 +7254,7 @@ Table 8.1  (Continued)
 
 ---
 
-<!-- page 152 -->
+<!-- page 149 -->
 
 Differentiated instruction for young ELs
 133
@@ -7309,7 +7309,7 @@ essential to effective DI.
 
 ---
 
-<!-- page 153 -->
+<!-- page 150 -->
 
 Amanda L. Sullivan and Mollie R. Weeks
 134
@@ -7363,7 +7363,7 @@ One challenge for implementing research-based practices is identifying the facto
 
 ---
 
-<!-- page 154 -->
+<!-- page 151 -->
 
 Differentiated instruction for young ELs
 135
@@ -7414,7 +7414,7 @@ based Measurement. New York: Guildford Press, 175–213.
 
 ---
 
-<!-- page 155 -->
+<!-- page 152 -->
 
 Amanda L. Sullivan and Mollie R. Weeks
 136
@@ -7471,7 +7471,7 @@ Reading Research Quarterly, 41(1), 108–117.
 
 ---
 
-<!-- page 156 -->
+<!-- page 153 -->
 
 Differentiated instruction for young ELs
 137
@@ -7523,7 +7523,7 @@ and accurate identification. School Psychology Review, 45(1), 109–132.
 
 ---
 
-<!-- page 157 -->
+<!-- page 154 -->
 
 138
 9
@@ -7560,7 +7560,7 @@ available to people using more than one language. While we welcome the nuance th
 
 ---
 
-<!-- page 158 -->
+<!-- page 155 -->
 
 Languages in the young learner classroom
 139
@@ -7613,7 +7613,7 @@ The students were discouraged from using their L1 and to immerse themselves in t
 
 ---
 
-<!-- page 159 -->
+<!-- page 156 -->
 
 Fiona Copland and Ming Ni
 140
@@ -7668,7 +7668,7 @@ accurate. Proponents of CLIL suggest that the subject teacher provides a strong 
 
 ---
 
-<!-- page 160 -->
+<!-- page 157 -->
 
 Languages in the young learner classroom
 141
@@ -7723,7 +7723,7 @@ A number of scholars have suggested that teachers should aim for ‘judicious�
 
 ---
 
-<!-- page 161 -->
+<!-- page 158 -->
 
 Fiona Copland and Ming Ni
 142
@@ -7774,7 +7774,7 @@ land et al. (2016) for a full discussion). Many others work autonomously in pri
 
 ---
 
-<!-- page 162 -->
+<!-- page 159 -->
 
 Languages in the young learner classroom
 143
@@ -7824,7 +7824,7 @@ language and where the emphasis is on learning through play rather than on forma
 
 ---
 
-<!-- page 163 -->
+<!-- page 160 -->
 
 Fiona Copland and Ming Ni
 144
@@ -7873,7 +7873,7 @@ language use in classrooms taught by two different teachers: one bilingual and t
 
 ---
 
-<!-- page 164 -->
+<!-- page 161 -->
 
 Languages in the young learner classroom
 145
@@ -7932,7 +7932,7 @@ e.g., Palmer et al. 2014).
 
 ---
 
-<!-- page 165 -->
+<!-- page 162 -->
 
 Fiona Copland and Ming Ni
 146
@@ -8027,7 +8027,7 @@ Do they pay (upfront) or do they write it in a book, i.e. ‘all your goods’
 
 ---
 
-<!-- page 166 -->
+<!-- page 163 -->
 
 Languages in the young learner classroom
 147
@@ -8091,7 +8091,7 @@ everyday reality for most people globally (Canagarajah 2013) have been less expl
 
 ---
 
-<!-- page 167 -->
+<!-- page 164 -->
 
 Fiona Copland and Ming Ni
 148
@@ -8146,7 +8146,7 @@ their efforts to engage and motivate young learners (Copland and Yonetsugi 2016)
 
 ---
 
-<!-- page 168 -->
+<!-- page 165 -->
 
 Languages in the young learner classroom
 149
@@ -8196,7 +8196,7 @@ tives, but this is because there are few research papers on the subject.
 
 ---
 
-<!-- page 169 -->
+<!-- page 166 -->
 
 Fiona Copland and Ming Ni
 150
@@ -8250,7 +8250,7 @@ Sage, 1–12.
 
 ---
 
-<!-- page 170 -->
+<!-- page 167 -->
 
 Languages in the young learner classroom
 151
@@ -8308,7 +8308,7 @@ google.co.uk/scholar_url?url=http%3A%2F%2Faces.ir%2Fattachments%2F22d1286622494-
 
 ---
 
-<!-- page 171 -->
+<!-- page 168 -->
 
 Fiona Copland and Ming Ni
 152
@@ -8367,7 +8367,7 @@ and teachers’ language beliefs. System, 39(3), 391–402.
 
 ---
 
-<!-- page 172 -->
+<!-- page 169 -->
 
 Languages in the young learner classroom
 153
@@ -8407,7 +8407,7 @@ Education and Bilingualism, 18(4), 361–382.
 
 ---
 
-<!-- page 173 -->
+<!-- page 170 -->
 
 154
 10
@@ -8447,7 +8447,7 @@ assist teachers with managing young learner behaviour. Finally, the chapter poin
 
 ---
 
-<!-- page 174 -->
+<!-- page 171 -->
 
 Classroom management for TEYL
 155
@@ -8497,7 +8497,7 @@ demonstrate that effective classroom managers: (1) provide sufficient advance pr
 
 ---
 
-<!-- page 175 -->
+<!-- page 172 -->
 
 Subhan Zein
 156
@@ -8550,7 +8550,7 @@ students.
 
 ---
 
-<!-- page 176 -->
+<!-- page 173 -->
 
 Classroom management for TEYL
 157
@@ -8602,7 +8602,7 @@ Stough 2001, Evertson and Weinstein 2006).
 
 ---
 
-<!-- page 177 -->
+<!-- page 174 -->
 
 Subhan Zein
 158
@@ -8657,7 +8657,7 @@ ate in a transactional, dynamic fashion in determining student behaviour (Dodge,
 
 ---
 
-<!-- page 178 -->
+<!-- page 175 -->
 
 Classroom management for TEYL
 159
@@ -8710,7 +8710,7 @@ and Onat-Stelma 2010, Zein 2016, 2017). Generalist teachers who teach English al
 
 ---
 
-<!-- page 179 -->
+<!-- page 176 -->
 
 Subhan Zein
 160
@@ -8765,7 +8765,7 @@ innovations for teaching young learners. Nevertheless, the extent to which the p
 
 ---
 
-<!-- page 180 -->
+<!-- page 177 -->
 
 Classroom management for TEYL
 161
@@ -8818,7 +8818,7 @@ of the affective aspect of classroom management. However, it appears that none o
 
 ---
 
-<!-- page 181 -->
+<!-- page 178 -->
 
 Subhan Zein
 162
@@ -8871,7 +8871,7 @@ classroom rules by themselves; they may create and draw the rules as they see fi
 
 ---
 
-<!-- page 182 -->
+<!-- page 179 -->
 
 Classroom management for TEYL
 163
@@ -8924,7 +8924,7 @@ performance of all students. A classroom conducive to learning is one that is f
 
 ---
 
-<!-- page 183 -->
+<!-- page 180 -->
 
 Subhan Zein
 164
@@ -8979,7 +8979,7 @@ school as the large learning ecology.
 
 ---
 
-<!-- page 184 -->
+<!-- page 181 -->
 
 Classroom management for TEYL
 165
@@ -9032,7 +9032,7 @@ includes classroom management approaches, models and programmes.
 
 ---
 
-<!-- page 185 -->
+<!-- page 182 -->
 
 Subhan Zein
 166
@@ -9087,7 +9087,7 @@ ventions. Child Development, 82, 405–432. doi:10.1111/j.1467–8624.2010.01564
 
 ---
 
-<!-- page 186 -->
+<!-- page 183 -->
 
 Classroom management for TEYL
 167
@@ -9146,7 +9146,7 @@ Marzano, R. J., and Marzano, J. S. (2003). The key to classroom management. Educ
 
 ---
 
-<!-- page 187 -->
+<!-- page 184 -->
 
 Subhan Zein
 168
@@ -9197,14 +9197,14 @@ Multilingual Matters, 166–181.
 
 ---
 
-<!-- page 188 -->
+<!-- page 185 -->
 
 PART 3
 Young learner pedagogy
 
 ---
 
-<!-- page 190 -->
+<!-- page 186 -->
 
 171
 11
@@ -9243,7 +9243,7 @@ with suggestions for future directions in this area of research.
 
 ---
 
-<!-- page 191 -->
+<!-- page 187 -->
 
 Yasemin Kırkgöz
 172
@@ -9290,7 +9290,7 @@ istics into consideration.
 
 ---
 
-<!-- page 192 -->
+<!-- page 188 -->
 
 Fostering YLs’ listening and speaking skills
 173
@@ -9345,7 +9345,7 @@ meet both the English language and developmental needs of learners.
 
 ---
 
-<!-- page 193 -->
+<!-- page 189 -->
 
 Yasemin Kırkgöz
 174
@@ -9397,7 +9397,7 @@ corner (see Mourão 2014).
 
 ---
 
-<!-- page 194 -->
+<!-- page 190 -->
 
 Fostering YLs’ listening and speaking skills
 175
@@ -9450,7 +9450,7 @@ the main source of listening input may be due to concerns about their own levels
 
 ---
 
-<!-- page 195 -->
+<!-- page 191 -->
 
 Yasemin Kırkgöz
 176
@@ -9505,7 +9505,7 @@ show that some textbooks lacked a listening component, which suggests that the c
 
 ---
 
-<!-- page 196 -->
+<!-- page 192 -->
 
 Fostering YLs’ listening and speaking skills
 177
@@ -9558,7 +9558,7 @@ telling website, Tsou, Wang, Tzeng (2006) found that the retention of words, phr
 
 ---
 
-<!-- page 197 -->
+<!-- page 193 -->
 
 Yasemin Kırkgöz
 178
@@ -9608,7 +9608,7 @@ levels by varying content and language.
 
 ---
 
-<!-- page 198 -->
+<!-- page 194 -->
 
 Fostering YLs’ listening and speaking skills
 179
@@ -9653,7 +9653,7 @@ Figure 11.1. shows scrambled pictures of the story.
 
 ---
 
-<!-- page 199 -->
+<!-- page 195 -->
 
 Yasemin Kırkgöz
 180
@@ -9682,7 +9682,7 @@ com/lessons/NsAaJUsLnhhyKg/daily-routine-work
 
 ---
 
-<!-- page 200 -->
+<!-- page 196 -->
 
 Fostering YLs’ listening and speaking skills
 181
@@ -9698,7 +9698,7 @@ Figure 11.2  The shopping trip
 
 ---
 
-<!-- page 201 -->
+<!-- page 197 -->
 
 Yasemin Kırkgöz
 182
@@ -9743,7 +9743,7 @@ to YLs through a puppet, having conversations with it and presenting dialogues a
 
 ---
 
-<!-- page 202 -->
+<!-- page 198 -->
 
 Fostering YLs’ listening and speaking skills
 183
@@ -9795,7 +9795,7 @@ forms of intelligence represented in each of our classes’ (p. 10).
 
 ---
 
-<!-- page 203 -->
+<!-- page 199 -->
 
 Yasemin Kırkgöz
 184
@@ -9844,7 +9844,7 @@ Productions.
 
 ---
 
-<!-- page 204 -->
+<!-- page 200 -->
 
 Fostering YLs’ listening and speaking skills
 185
@@ -9902,7 +9902,7 @@ for pupils with English as an additional language in the Foundation Stage. Educa
 
 ---
 
-<!-- page 205 -->
+<!-- page 201 -->
 
 Yasemin Kırkgöz
 186
@@ -9960,7 +9960,7 @@ Journal, 68(3), 321–329.
 
 ---
 
-<!-- page 206 -->
+<!-- page 202 -->
 
 Fostering YLs’ listening and speaking skills
 187
@@ -9983,7 +9983,7 @@ Science Publishing House. [in Chinese]
 
 ---
 
-<!-- page 207 -->
+<!-- page 203 -->
 
 188
 12
@@ -10021,7 +10021,7 @@ learners’ (48). For some EYL programmes, there is a heavy emphasis on phoneme-
 
 ---
 
-<!-- page 208 -->
+<!-- page 204 -->
 
 Teaching reading and writing to YLs
 189
@@ -10071,7 +10071,7 @@ guage literacy promote taking a balanced literacy approach, which integrates asp
 
 ---
 
-<!-- page 209 -->
+<!-- page 205 -->
 
 Joan Kang Shin and JoAnn (Jodi) Crandall
 190
@@ -10121,7 +10121,7 @@ instruction for YLs in the early grades and only focus on listening and speaking
 
 ---
 
-<!-- page 210 -->
+<!-- page 206 -->
 
 Teaching reading and writing to YLs
 191
@@ -10176,7 +10176,7 @@ difficulty learning to read and write in English than those who do not use an al
 
 ---
 
-<!-- page 211 -->
+<!-- page 207 -->
 
 Joan Kang Shin and JoAnn (Jodi) Crandall
 192
@@ -10229,7 +10229,7 @@ their English levels are low as it can discourage them or make them feel inadequ
 
 ---
 
-<!-- page 212 -->
+<!-- page 208 -->
 
 Teaching reading and writing to YLs
 193
@@ -10280,7 +10280,7 @@ to help students gain comprehension of text. It is more common now to find multi
 
 ---
 
-<!-- page 213 -->
+<!-- page 209 -->
 
 Joan Kang Shin and JoAnn (Jodi) Crandall
 194
@@ -10329,7 +10329,7 @@ could articulate differences in shapes of letters/words (block shaped vs. linear
 
 ---
 
-<!-- page 214 -->
+<!-- page 210 -->
 
 Teaching reading and writing to YLs
 195
@@ -10384,7 +10384,7 @@ Use a ‘To/With/By’ approach.
 
 ---
 
-<!-- page 215 -->
+<!-- page 211 -->
 
 Joan Kang Shin and JoAnn (Jodi) Crandall
 196
@@ -10432,7 +10432,7 @@ For example, many cultures have a ‘Cinderella’ story with which children can
 
 ---
 
-<!-- page 216 -->
+<!-- page 212 -->
 
 Teaching reading and writing to YLs
 197
@@ -10484,7 +10484,7 @@ also dress up as the characters and act out while they are reading their parts o
 
 ---
 
-<!-- page 217 -->
+<!-- page 213 -->
 
 Joan Kang Shin and JoAnn (Jodi) Crandall
 198
@@ -10547,7 +10547,7 @@ several times and tells them the letters to write as they write them on the boar
 
 ---
 
-<!-- page 218 -->
+<!-- page 214 -->
 
 Teaching reading and writing to YLs
 199
@@ -10595,7 +10595,7 @@ from the USA or the UK, as is common for authentic texts in English. We will nee
 
 ---
 
-<!-- page 219 -->
+<!-- page 215 -->
 
 Joan Kang Shin and JoAnn (Jodi) Crandall
 200
@@ -10648,7 +10648,7 @@ Listening and speaking, teaching grammar, differentiation, assessment
 
 ---
 
-<!-- page 220 -->
+<!-- page 216 -->
 
 Teaching reading and writing to YLs
 201
@@ -10706,7 +10706,7 @@ Children and Youth Learning English: Promising futures. Washington, DC: National
 
 ---
 
-<!-- page 221 -->
+<!-- page 217 -->
 
 Joan Kang Shin and JoAnn (Jodi) Crandall
 202
@@ -10752,7 +10752,7 @@ Reading Teacher, 71(3), 351–355.
 
 ---
 
-<!-- page 222 -->
+<!-- page 218 -->
 
 203
 13
@@ -10791,7 +10791,7 @@ stated I use the term ‘young learners’ in this chapter in order to refer to
 
 ---
 
-<!-- page 223 -->
+<!-- page 219 -->
 
 Herbert Puchta
 204
@@ -10842,7 +10842,7 @@ natural phenomena that are an integral part of the language learning process.
 
 ---
 
-<!-- page 224 -->
+<!-- page 220 -->
 
 Teaching grammar to young learners
 205
@@ -10907,7 +10907,7 @@ An egg!
 
 ---
 
-<!-- page 225 -->
+<!-- page 221 -->
 
 Herbert Puchta
 206
@@ -10960,7 +10960,7 @@ work well if students are scared of making mistakes or nervous because they have
 
 ---
 
-<!-- page 226 -->
+<!-- page 222 -->
 
 Teaching grammar to young learners
 207
@@ -11013,7 +11013,7 @@ influential in the teaching of young learners, too.
 
 ---
 
-<!-- page 227 -->
+<!-- page 223 -->
 
 Herbert Puchta
 208
@@ -11067,7 +11067,7 @@ S3:	 Apple pie yummy.
 
 ---
 
-<!-- page 228 -->
+<!-- page 224 -->
 
 Teaching grammar to young learners
 209
@@ -11124,7 +11124,7 @@ gains than instruction that hopes to do so incidentally and/or implicitly’ (ib
 
 ---
 
-<!-- page 229 -->
+<!-- page 225 -->
 
 Herbert Puchta
 210
@@ -11176,7 +11176,7 @@ opportunities to practise forms and to use them in output-oriented activities.
 
 ---
 
-<!-- page 230 -->
+<!-- page 226 -->
 
 Teaching grammar to young learners
 211
@@ -11229,7 +11229,7 @@ grammar effectively, they have to ‘act on it, building it into their working h
 
 ---
 
-<!-- page 231 -->
+<!-- page 227 -->
 
 Herbert Puchta
 212
@@ -11280,7 +11280,7 @@ to syntactically complexify their language once they had a large enough vocabula
 
 ---
 
-<!-- page 232 -->
+<!-- page 228 -->
 
 Teaching grammar to young learners
 213
@@ -11333,7 +11333,7 @@ than the present progressive).
 
 ---
 
-<!-- page 233 -->
+<!-- page 229 -->
 
 Herbert Puchta
 214
@@ -11385,7 +11385,7 @@ learning and automatization no longer carries much credibility in linguistics or
 
 ---
 
-<!-- page 234 -->
+<!-- page 230 -->
 
 	
 	
@@ -11396,7 +11396,7 @@ Images from Gerngross et al. (2006, p. 131)
 
 ---
 
-<!-- page 235 -->
+<!-- page 231 -->
 
 Herbert Puchta
 216
@@ -11446,7 +11446,7 @@ ________ _________ and ___________.
 
 ---
 
-<!-- page 236 -->
+<!-- page 232 -->
 
 Teaching grammar to young learners
 217
@@ -11496,7 +11496,7 @@ articles on the use of formulaic language and poetry in teaching grammar to youn
 
 ---
 
-<!-- page 237 -->
+<!-- page 233 -->
 
 Herbert Puchta
 218
@@ -11549,7 +11549,7 @@ ing Publications.
 
 ---
 
-<!-- page 238 -->
+<!-- page 234 -->
 
 Teaching grammar to young learners
 219
@@ -11604,7 +11604,7 @@ mann, 17–30.
 
 ---
 
-<!-- page 239 -->
+<!-- page 235 -->
 
 220
 14
@@ -11642,7 +11642,7 @@ This represents both recognition of the role of vocabulary and a shift away from
 
 ---
 
-<!-- page 240 -->
+<!-- page 236 -->
 
 Vocabulary teaching for young learners
 221
@@ -11697,7 +11697,7 @@ initiated play in English (Mourão 2014).
 
 ---
 
-<!-- page 241 -->
+<!-- page 237 -->
 
 Torill Irene Hestetræet
 222
@@ -11750,7 +11750,7 @@ standing spoken and written English, with a focus on high-frequency vocabulary.
 
 ---
 
-<!-- page 242 -->
+<!-- page 238 -->
 
 Vocabulary teaching for young learners
 223
@@ -11802,7 +11802,7 @@ classroom, we must create a learning environment that is real life in its own ri
 
 ---
 
-<!-- page 243 -->
+<!-- page 239 -->
 
 Torill Irene Hestetræet
 224
@@ -11852,7 +11852,7 @@ for socio-interactional purposes. These functions (Wray 2002, pp. 161–169) in
 
 ---
 
-<!-- page 244 -->
+<!-- page 240 -->
 
 Vocabulary teaching for young learners
 225
@@ -11905,7 +11905,7 @@ mentioned that in ‘the first year of English, the most able performers appear 
 
 ---
 
-<!-- page 245 -->
+<!-- page 241 -->
 
 Torill Irene Hestetræet
 226
@@ -11957,7 +11957,7 @@ belongs in a modern YLL classroom to support vocabulary learning.
 
 ---
 
-<!-- page 246 -->
+<!-- page 242 -->
 
 Vocabulary teaching for young learners
 227
@@ -12008,7 +12008,7 @@ L2 learners may find the content of the books to be ‘of “low interest” �
 
 ---
 
-<!-- page 247 -->
+<!-- page 243 -->
 
 Torill Irene Hestetræet
 228
@@ -12063,7 +12063,7 @@ in turn, performing for one another and the rest of the class. This type of acti
 
 ---
 
-<!-- page 248 -->
+<!-- page 244 -->
 
 Vocabulary teaching for young learners
 229
@@ -12114,7 +12114,7 @@ creates a need for using both familiar and unfamiliar vocabulary in a context. L
 
 ---
 
-<!-- page 249 -->
+<!-- page 245 -->
 
 Torill Irene Hestetræet
 230
@@ -12167,7 +12167,7 @@ lary theory and recommendations for practice. Finally, the use of ICT offers tre
 
 ---
 
-<!-- page 250 -->
+<!-- page 246 -->
 
 Vocabulary teaching for young learners
 231
@@ -12218,7 +12218,7 @@ Classroom: Theory into Practice. Bergen: Fagbokforlaget.
 
 ---
 
-<!-- page 251 -->
+<!-- page 247 -->
 
 Torill Irene Hestetræet
 232
@@ -12277,7 +12277,7 @@ Mourão, S. (2014). Taking play seriously in the pre-primary English classroom. 
 
 ---
 
-<!-- page 252 -->
+<!-- page 248 -->
 
 Vocabulary teaching for young learners
 233
@@ -12329,7 +12329,7 @@ Huckin, T. (eds.) Second Language Vocabulary Acquisition. Cambridge: Cambridge U
 
 ---
 
-<!-- page 253 -->
+<!-- page 249 -->
 
 234
 15
@@ -12368,7 +12368,7 @@ elicit various and probably irreconcilable answers’ (xv, quotations in origina
 
 ---
 
-<!-- page 254 -->
+<!-- page 250 -->
 
 Critical pedagogy and teaching English
 235
@@ -12421,7 +12421,7 @@ low-paying jobs, they were not questioning the nature of those jobs. During this
 
 ---
 
-<!-- page 255 -->
+<!-- page 251 -->
 
 Mario E. López-Gopar
 236
@@ -12476,7 +12476,7 @@ cal pedagogy now represents a constellation of insights from other intellectual 
 
 ---
 
-<!-- page 256 -->
+<!-- page 252 -->
 
 Critical pedagogy and teaching English
 237
@@ -12529,7 +12529,7 @@ in English than do more disadvantaged children. Not only does ELT in primary sch
 
 ---
 
-<!-- page 257 -->
+<!-- page 253 -->
 
 Mario E. López-Gopar
 238
@@ -12584,7 +12584,7 @@ cultures, rendering these cultures inferior to the ones represented in the mater
 
 ---
 
-<!-- page 258 -->
+<!-- page 254 -->
 
 Critical pedagogy and teaching English
 239
@@ -12637,7 +12637,7 @@ text entitled The New Country, which reflected the experience of an Urdu-speakin
 
 ---
 
-<!-- page 259 -->
+<!-- page 255 -->
 
 Mario E. López-Gopar
 240
@@ -12690,7 +12690,7 @@ about multilingualism’ (p. 96).
 
 ---
 
-<!-- page 260 -->
+<!-- page 256 -->
 
 Critical pedagogy and teaching English
 241
@@ -12743,7 +12743,7 @@ on to change the world.
 
 ---
 
-<!-- page 261 -->
+<!-- page 257 -->
 
 Mario E. López-Gopar
 242
@@ -12795,7 +12795,7 @@ has been positioned in educational policy as the only language to learn. The cri
 
 ---
 
-<!-- page 262 -->
+<!-- page 258 -->
 
 Critical pedagogy and teaching English
 243
@@ -12843,7 +12843,7 @@ children have actively participated in and shaped the research activities in the
 
 ---
 
-<!-- page 263 -->
+<!-- page 259 -->
 
 Mario E. López-Gopar
 244
@@ -12898,7 +12898,7 @@ Minneapolis: University of Minnesota Press.
 
 ---
 
-<!-- page 264 -->
+<!-- page 260 -->
 
 Critical pedagogy and teaching English
 245
@@ -12956,7 +12956,7 @@ ing Multilingual Schools. Clevedon: Multilingual Matters, 262–283.
 
 ---
 
-<!-- page 265 -->
+<!-- page 261 -->
 
 Mario E. López-Gopar
 246
@@ -13011,7 +13011,7 @@ credited, what does Giroux think he is doing? Discourse, 13, 124–133.
 
 ---
 
-<!-- page 266 -->
+<!-- page 262 -->
 
 247
 16
@@ -13050,7 +13050,7 @@ or electrical circuits. The same content would not be pre- taught in the mother 
 
 ---
 
-<!-- page 267 -->
+<!-- page 263 -->
 
 Maria Ellison
 248
@@ -13105,7 +13105,7 @@ any given curricular area, language for learning or content compatible language,
 
 ---
 
-<!-- page 268 -->
+<!-- page 264 -->
 
 CLIL in the primary school context
 249
@@ -13165,7 +13165,7 @@ Figure 16.1  CLIL: the 4Cs Principles, curriculum and framework for planning 
 
 ---
 
-<!-- page 269 -->
+<!-- page 265 -->
 
 Table 16.1  A teacher’s 4Cs planning based on the framework of Coyle et al (2010, pp. 80–81)
 Unit: ‘Animal world’ – LESSON 3	
@@ -13205,7 +13205,7 @@ Cognition
 
 ---
 
-<!-- page 270 -->
+<!-- page 266 -->
 
 Culture/Community
 •	 To understand that animals have their own way of life as we do
@@ -13239,7 +13239,7 @@ Using language from their own and other resources
 
 ---
 
-<!-- page 271 -->
+<!-- page 267 -->
 
 Maria Ellison
 252
@@ -13292,7 +13292,7 @@ not widespread.
 
 ---
 
-<!-- page 272 -->
+<!-- page 268 -->
 
 CLIL in the primary school context
 253
@@ -13344,7 +13344,7 @@ standing. Modular CLIL, in which a part of a subject or topic is taught through 
 
 ---
 
-<!-- page 273 -->
+<!-- page 269 -->
 
 Maria Ellison
 254
@@ -13393,7 +13393,7 @@ in order to raise consciousness of the need for scaffolding before and during le
 
 ---
 
-<!-- page 274 -->
+<!-- page 270 -->
 
 Table 16.2  Taxonomy of scaffolding strategies for CLIL lessons (Ellison 2014, p. 414)
 Planning
@@ -13440,7 +13440,7 @@ correction
 
 ---
 
-<!-- page 275 -->
+<!-- page 271 -->
 
 Maria Ellison
 256
@@ -13491,7 +13491,7 @@ cepts through a language in which they are not fully proficient, it is necessary
 
 ---
 
-<!-- page 276 -->
+<!-- page 272 -->
 
 CLIL in the primary school context
 257
@@ -13544,7 +13544,7 @@ I can create a food chain on my own and explain how it works to my friends.
 
 ---
 
-<!-- page 277 -->
+<!-- page 273 -->
 
 Maria Ellison
 258
@@ -13618,13 +13618,13 @@ NON – SPOKEN
 
 ---
 
-<!-- page 278 -->
+<!-- page 274 -->
 
 Figure 16.2  Sample test
 
 ---
 
-<!-- page 279 -->
+<!-- page 275 -->
 
 Maria Ellison
 260
@@ -13677,7 +13677,7 @@ an increasing number of Special Interest Groups (SIGs), journals (e.g., Internat
 
 ---
 
-<!-- page 280 -->
+<!-- page 276 -->
 
 CLIL in the primary school context
 261
@@ -13727,7 +13727,7 @@ paper clip? Yes, it does. Does the magnet attract the piece of string? No it doe
 
 ---
 
-<!-- page 281 -->
+<!-- page 277 -->
 
 Maria Ellison
 262
@@ -13784,7 +13784,7 @@ medium instruction so that challenges may be realistic when planning for future 
 
 ---
 
-<!-- page 282 -->
+<!-- page 278 -->
 
 Table 16.4  Primary CLIL lesson plan on food chains
 TEACHING/LEARNING ACTIVITIES
@@ -13855,7 +13855,7 @@ Worksheets
 
 ---
 
-<!-- page 283 -->
+<!-- page 279 -->
 
 TEACHING/LEARNING ACTIVITIES
 Time Interaction
@@ -13918,7 +13918,7 @@ Table 16.4  (Continued)
 
 ---
 
-<!-- page 284 -->
+<!-- page 280 -->
 
 CLIL in the primary school context
 265
@@ -13965,7 +13965,7 @@ Languages in the classroom, policy, projects, syllabus, materials
 
 ---
 
-<!-- page 285 -->
+<!-- page 281 -->
 
 Maria Ellison
 266
@@ -14023,7 +14023,7 @@ the learning society. Brussels: European Commission.
 
 ---
 
-<!-- page 286 -->
+<!-- page 282 -->
 
 CLIL in the primary school context
 267
@@ -14082,7 +14082,7 @@ doi:10.1080/13670050.2015.1051944.
 
 ---
 
-<!-- page 287 -->
+<!-- page 283 -->
 
 Maria Ellison
 268
@@ -14136,7 +14136,7 @@ tion: Moving towards integration. Language, Culture and Curriculum, 28(1), 90–
 
 ---
 
-<!-- page 288 -->
+<!-- page 284 -->
 
 269
 17
@@ -14173,7 +14173,7 @@ cal English literature for adults had a privileged place in language teaching (H
 
 ---
 
-<!-- page 289 -->
+<!-- page 285 -->
 
 Janice Bland
 270
@@ -14228,7 +14228,7 @@ with literary texts in the classroom.
 
 ---
 
-<!-- page 290 -->
+<!-- page 286 -->
 
 Learning through literature
 271
@@ -14279,7 +14279,7 @@ because they enable the struggling reader, motivate the reluctant one, and chall
 
 ---
 
-<!-- page 291 -->
+<!-- page 287 -->
 
 Janice Bland
 272
@@ -14328,7 +14328,7 @@ The little dog laughed
 
 ---
 
-<!-- page 292 -->
+<!-- page 288 -->
 
 Learning through literature
 273
@@ -14380,14 +14380,14 @@ enjoyment. Witness the pleasure of repetitive rhythmic patterns in music and lan
 
 ---
 
-<!-- page 293 -->
+<!-- page 289 -->
 
 Figure 17.1  Illustration by Edward Cogger of the anonymous nursery rhyme Hey Diddle Diddle 
 (circa 1885, public domain)
 
 ---
 
-<!-- page 294 -->
+<!-- page 290 -->
 
 Learning through literature
 275
@@ -14436,7 +14436,7 @@ these characteristics:
 
 ---
 
-<!-- page 295 -->
+<!-- page 291 -->
 
 Janice Bland
 276
@@ -14500,7 +14500,7 @@ into a series, which has inspired intercultural primary-school project work inte
 
 ---
 
-<!-- page 296 -->
+<!-- page 292 -->
 
 Learning through literature
 277
@@ -14552,7 +14552,7 @@ to a number of problematic issues – connected firstly to the lack of access t
 
 ---
 
-<!-- page 297 -->
+<!-- page 293 -->
 
 Janice Bland
 278
@@ -14606,7 +14606,7 @@ ance of unfamiliar vocabulary and hence language development. For example young 
 
 ---
 
-<!-- page 298 -->
+<!-- page 294 -->
 
 Learning through literature
 279
@@ -14659,7 +14659,7 @@ such as exploring visual literacy, critical literacy, diversity in literary text
 
 ---
 
-<!-- page 299 -->
+<!-- page 295 -->
 
 Janice Bland
 280
@@ -14717,7 +14717,7 @@ life-affirming humour. The small, empathetic hero is busily working on his agenc
 
 ---
 
-<!-- page 300 -->
+<!-- page 296 -->
 
 Learning through literature
 281
@@ -14766,7 +14766,7 @@ or difference. As Ghosn writes: ‘In literature-based lessons students can rema
 
 ---
 
-<!-- page 301 -->
+<!-- page 297 -->
 
 Janice Bland
 282
@@ -14785,7 +14785,7 @@ by permission of Little Brown Books for Young Readers
 
 ---
 
-<!-- page 302 -->
+<!-- page 298 -->
 
 Learning through literature
 283
@@ -14836,7 +14836,7 @@ to divide, to engage rather than to marginalize – is more important than ever
 
 ---
 
-<!-- page 303 -->
+<!-- page 299 -->
 
 Janice Bland
 284
@@ -14888,7 +14888,7 @@ Macmillan.
 
 ---
 
-<!-- page 304 -->
+<!-- page 300 -->
 
 Learning through literature
 285
@@ -14946,7 +14946,7 @@ ers. In Bland, J. (ed.) Teaching English to Young Learners: Critical issues in l
 
 ---
 
-<!-- page 305 -->
+<!-- page 301 -->
 
 Janice Bland
 286
@@ -15005,7 +15005,7 @@ educating-teachers-english-young-learners/ [Accessed 14 January 2017].
 
 ---
 
-<!-- page 306 -->
+<!-- page 302 -->
 
 Learning through literature
 287
@@ -15042,7 +15042,7 @@ Zipes, J. (2004). Speaking Out: Storytelling and creative drama for children. Ne
 
 ---
 
-<!-- page 307 -->
+<!-- page 303 -->
 
 288
 18
@@ -15078,7 +15078,7 @@ solving, oral or written reporting, and display’ (Hedge 2004, p. 49).
 
 ---
 
-<!-- page 308 -->
+<!-- page 304 -->
 
 Language learning through projects
 289
@@ -15129,7 +15129,7 @@ ing real-world issues and solving practical problems.
 
 ---
 
-<!-- page 309 -->
+<!-- page 305 -->
 
 Wendy Arnold et al.
 290
@@ -15183,7 +15183,7 @@ Edition 2014). A number of glocal coursebooks (Arnold and Rixon 2008, p. 40) w
 
 ---
 
-<!-- page 310 -->
+<!-- page 306 -->
 
 Language learning through projects
 291
@@ -15233,7 +15233,7 @@ ate TEYL methodology or adequate English language levels. This has implications 
 
 ---
 
-<!-- page 311 -->
+<!-- page 307 -->
 
 Wendy Arnold et al.
 292
@@ -15283,7 +15283,7 @@ within and across settings.’
 
 ---
 
-<!-- page 312 -->
+<!-- page 308 -->
 
 Language learning through projects
 293
@@ -15337,7 +15337,7 @@ ELT mainstream education (e.g., Thomas 2011; Holm 2011) and tertiary ELT context
 
 ---
 
-<!-- page 313 -->
+<!-- page 309 -->
 
 Wendy Arnold et al.
 294
@@ -15396,7 +15396,7 @@ Collaborative and co-operative skills (especially in TEYL: Fragoulis 2009; Mukhu
 
 ---
 
-<!-- page 314 -->
+<!-- page 310 -->
 
 Language learning through projects
 295
@@ -15450,7 +15450,7 @@ challenged by ongoing responsive planning and negotiation with students, and at 
 
 ---
 
-<!-- page 315 -->
+<!-- page 311 -->
 
 Wendy Arnold et al.
 296
@@ -15500,7 +15500,7 @@ supplementary to published materials.
 
 ---
 
-<!-- page 316 -->
+<!-- page 312 -->
 
 Language learning through projects
 297
@@ -15563,7 +15563,7 @@ to the design of the published materials.
 
 ---
 
-<!-- page 317 -->
+<!-- page 313 -->
 
 Wendy Arnold et al.
 298
@@ -15618,7 +15618,7 @@ that are also at a suitable level for teachers would also be welcome. A number 
 
 ---
 
-<!-- page 318 -->
+<!-- page 314 -->
 
 Language learning through projects
 299
@@ -15671,7 +15671,7 @@ nal/Revenue TESL Du Canada, 19(2).
 
 ---
 
-<!-- page 319 -->
+<!-- page 315 -->
 
 Wendy Arnold et al.
 300
@@ -15730,7 +15730,7 @@ Garvie, E. (1990). Story as Vehicle. Avon: Multilingual Matters Ltd.
 
 ---
 
-<!-- page 320 -->
+<!-- page 316 -->
 
 Language learning through projects
 301
@@ -15789,7 +15789,7 @@ ALA 2000 Conference, Hong Kong, 21–25 June, 2000. www.hole-in-the-wall.com/doc
 
 ---
 
-<!-- page 321 -->
+<!-- page 317 -->
 
 Wendy Arnold et al.
 302
@@ -15846,7 +15846,7 @@ Wilhelm, K. H. (1999). Collaborative do’s and don’t’s. TESOL Journal, 8(2)
 
 ---
 
-<!-- page 322 -->
+<!-- page 318 -->
 
 PART 4
 Technology and young 
@@ -15854,7 +15854,7 @@ learner curriculum
 
 ---
 
-<!-- page 324 -->
+<!-- page 319 -->
 
 305
 19
@@ -15891,7 +15891,7 @@ have mostly targeted learners in their early teens and older, although some stud
 
 ---
 
-<!-- page 325 -->
+<!-- page 320 -->
 
 Yuko Goto Butler
 306
@@ -15942,7 +15942,7 @@ learning and pedagogical environments as game-enhanced and game-based environmen
 
 ---
 
-<!-- page 326 -->
+<!-- page 321 -->
 
 Gaming and young learners
 307
@@ -15995,7 +15995,7 @@ performing tasks. A task is not a random activity but ‘results in language us
 
 ---
 
-<!-- page 327 -->
+<!-- page 322 -->
 
 Yuko Goto Butler
 308
@@ -16046,7 +16046,7 @@ fied above. Research on digital games has been conducted largely in the fields o
 
 ---
 
-<!-- page 328 -->
+<!-- page 323 -->
 
 Gaming and young learners
 309
@@ -16099,7 +16099,7 @@ ness or simplicity motivated the children to use them. Greater enjoyment in play
 
 ---
 
-<!-- page 329 -->
+<!-- page 324 -->
 
 Yuko Goto Butler
 310
@@ -16152,7 +16152,7 @@ tain more narrative or verbal components than others. In Reinders and Wattana (2
 
 ---
 
-<!-- page 330 -->
+<!-- page 325 -->
 
 Gaming and young learners
 311
@@ -16207,7 +16207,7 @@ however, are not well understood.
 
 ---
 
-<!-- page 331 -->
+<!-- page 326 -->
 
 Yuko Goto Butler
 312
@@ -16259,7 +16259,7 @@ new computer applications and functions, figuring out the meaning of unknown wor
 
 ---
 
-<!-- page 332 -->
+<!-- page 327 -->
 
 Gaming and young learners
 313
@@ -16310,7 +16310,7 @@ eral if they are combined with regular instruction. Although our understanding o
 
 ---
 
-<!-- page 333 -->
+<!-- page 328 -->
 
 Yuko Goto Butler
 314
@@ -16361,7 +16361,7 @@ not be able to invest sufficient mental resources in L2/FL language. Being too i
 
 ---
 
-<!-- page 334 -->
+<!-- page 329 -->
 
 Gaming and young learners
 315
@@ -16410,7 +16410,7 @@ tional demands, game procedures, learner characteristics, conditions for impleme
 
 ---
 
-<!-- page 335 -->
+<!-- page 330 -->
 
 Yuko Goto Butler
 316
@@ -16461,7 +16461,7 @@ learning and motivation. However, we need to better understand how best to desig
 
 ---
 
-<!-- page 336 -->
+<!-- page 331 -->
 
 Gaming and young learners
 317
@@ -16512,7 +16512,7 @@ Cook, G. (2000). Language Play, Language Learning. Oxford: Oxford University Pre
 
 ---
 
-<!-- page 337 -->
+<!-- page 332 -->
 
 Yuko Goto Butler
 318
@@ -16569,7 +16569,7 @@ Macmillan.
 
 ---
 
-<!-- page 338 -->
+<!-- page 333 -->
 
 Gaming and young learners
 319
@@ -16623,7 +16623,7 @@ CALICO Journal, 27(1), 205–231.
 
 ---
 
-<!-- page 339 -->
+<!-- page 334 -->
 
 320
 20
@@ -16660,7 +16660,7 @@ Nowadays, due to the fast evolution of mobile devices and the ambiguity of the t
 
 ---
 
-<!-- page 340 -->
+<!-- page 335 -->
 
 Mobile learning for young English learners
 321
@@ -16713,7 +16713,7 @@ them into an existing network, including those offered by mobile devices. The st
 
 ---
 
-<!-- page 341 -->
+<!-- page 336 -->
 
 Florià Belinchón Majoral
 322
@@ -16766,7 +16766,7 @@ in a school context give the opportunity to enrich learning, but also offer the 
 
 ---
 
-<!-- page 342 -->
+<!-- page 337 -->
 
 Mobile learning for young English learners
 323
@@ -16820,7 +16820,7 @@ its users and the subject matter at hand, to dynamically facilitate the learning
 
 ---
 
-<!-- page 343 -->
+<!-- page 338 -->
 
 Florià Belinchón Majoral
 324
@@ -16873,7 +16873,7 @@ privileged and the least fortunate students.
 
 ---
 
-<!-- page 344 -->
+<!-- page 339 -->
 
 Mobile learning for young English learners
 325
@@ -16926,7 +16926,7 @@ and attitudes.
 
 ---
 
-<!-- page 345 -->
+<!-- page 340 -->
 
 Florià Belinchón Majoral
 326
@@ -16977,7 +16977,7 @@ extremely dynamic mobile learning context and the different ways that mobile tec
 
 ---
 
-<!-- page 346 -->
+<!-- page 341 -->
 
 Mobile learning for young English learners
 327
@@ -17029,7 +17029,7 @@ encourage student collaboration
 
 ---
 
-<!-- page 347 -->
+<!-- page 342 -->
 
 Florià Belinchón Majoral
 328
@@ -17080,7 +17080,7 @@ on the Internet and, consequently, they become tools that allow access to inform
 
 ---
 
-<!-- page 348 -->
+<!-- page 343 -->
 
 Mobile learning for young English learners
 329
@@ -17131,7 +17131,7 @@ and the student.
 
 ---
 
-<!-- page 349 -->
+<!-- page 344 -->
 
 Florià Belinchón Majoral
 330
@@ -17177,7 +17177,7 @@ of pedagogical aspects, the author lists six characteristics: management, person
 
 ---
 
-<!-- page 350 -->
+<!-- page 345 -->
 
 Mobile learning for young English learners
 331
@@ -17225,7 +17225,7 @@ and communication.
 
 ---
 
-<!-- page 351 -->
+<!-- page 346 -->
 
 Florià Belinchón Majoral
 332
@@ -17274,7 +17274,7 @@ Motivation, projects, CLIL, English outside the classroom, classroom management
 
 ---
 
-<!-- page 352 -->
+<!-- page 347 -->
 
 Mobile learning for young English learners
 333
@@ -17312,7 +17312,7 @@ Blip  http://blip.tv/
 
 ---
 
-<!-- page 353 -->
+<!-- page 348 -->
 
 Florià Belinchón Majoral
 334
@@ -17356,7 +17356,7 @@ Edmodo  www.edmodo.com/
 
 ---
 
-<!-- page 354 -->
+<!-- page 349 -->
 
 Mobile learning for young English learners
 335
@@ -17397,7 +17397,7 @@ celona: Asociación Espiral, Educación y Tecnología, 13–32.
 
 ---
 
-<!-- page 355 -->
+<!-- page 350 -->
 
 Florià Belinchón Majoral
 336
@@ -17454,7 +17454,7 @@ pean Union, and Austin, Texas: The New Media Consortium.
 
 ---
 
-<!-- page 356 -->
+<!-- page 351 -->
 
 Mobile learning for young English learners
 337
@@ -17505,7 +17505,7 @@ tional Technology, 51(2), 6.
 
 ---
 
-<!-- page 357 -->
+<!-- page 352 -->
 
 338
 21
@@ -17543,7 +17543,7 @@ beyond the classroom walls.
 
 ---
 
-<!-- page 358 -->
+<!-- page 353 -->
 
 Classroom technology for young learners
 339
@@ -17600,7 +17600,7 @@ Figure 21.1  Dimensions of technology-mediated ELT with young learners
 
 ---
 
-<!-- page 359 -->
+<!-- page 354 -->
 
 Shona Whyte and Euline Cutrim Schmid
 340
@@ -17651,7 +17651,7 @@ technologies in the YELL classroom is the question of interactivity: in work wit
 
 ---
 
-<!-- page 360 -->
+<!-- page 355 -->
 
 Table 21.1  Tools and activities for technology-mediated ELT with young learners
 Tools /Activities
@@ -17739,7 +17739,7 @@ Dooly and Sadler
 
 ---
 
-<!-- page 361 -->
+<!-- page 356 -->
 
 Tools /Activities
 Uses
@@ -17791,7 +17791,7 @@ Table 21.1  (Continued)
 
 ---
 
-<!-- page 362 -->
+<!-- page 357 -->
 
 Classroom technology for young learners
 343
@@ -17847,7 +17847,7 @@ Facilitating the noticing of errors and incorporation of feedback (Chapelle 2001
 
 ---
 
-<!-- page 363 -->
+<!-- page 358 -->
 
 Shona Whyte and Euline Cutrim Schmid
 344
@@ -17899,7 +17899,7 @@ need for sophisticated oral language, with limitations on interests and topics, 
 
 ---
 
-<!-- page 364 -->
+<!-- page 359 -->
 
 Classroom technology for young learners
 345
@@ -17952,7 +17952,7 @@ than for instruction’ (Underwood et al. 2013, 480). In our own work we have f
 
 ---
 
-<!-- page 365 -->
+<!-- page 360 -->
 
 Shona Whyte and Euline Cutrim Schmid
 346
@@ -18007,7 +18007,7 @@ trolled, limited to recalling previously learned chunks or performing minor subs
 
 ---
 
-<!-- page 366 -->
+<!-- page 361 -->
 
 Table 21.2  Funded digital language research projects involving young learners
 Projects
@@ -18090,7 +18090,7 @@ Cvetkovic (2016)
 
 ---
 
-<!-- page 367 -->
+<!-- page 362 -->
 
 Shona Whyte and Euline Cutrim Schmid
 348
@@ -18145,7 +18145,7 @@ focused CALL research, in particular, research driven by theory rather than poli
 
 ---
 
-<!-- page 368 -->
+<!-- page 363 -->
 
 Classroom technology for young learners
 349
@@ -18196,7 +18196,7 @@ adequate linguistic and emotional support, on one hand, and space to create on t
 
 ---
 
-<!-- page 369 -->
+<!-- page 364 -->
 
 Shona Whyte and Euline Cutrim Schmid
 350
@@ -18245,7 +18245,7 @@ room is institutional policy. Considering the fact that ICTs are usually promote
 
 ---
 
-<!-- page 370 -->
+<!-- page 365 -->
 
 Classroom technology for young learners
 351
@@ -18299,7 +18299,7 @@ context of the young learner CALL classroom.
 
 ---
 
-<!-- page 371 -->
+<!-- page 366 -->
 
 Shona Whyte and Euline Cutrim Schmid
 352
@@ -18353,7 +18353,7 @@ to socio-constructivist hegemonies. Language Learning and Technology, 16(2), 65�
 
 ---
 
-<!-- page 372 -->
+<!-- page 367 -->
 
 Classroom technology for young learners
 353
@@ -18412,7 +18412,7 @@ whiteboard use: A resource book for teacher development. London: Bloomsbury, 80
 
 ---
 
-<!-- page 373 -->
+<!-- page 368 -->
 
 Shona Whyte and Euline Cutrim Schmid
 354
@@ -18470,7 +18470,7 @@ Cutrim Schmid, E., and Whyte, S. (eds.) Teaching Languages with Technology: Comm
 
 ---
 
-<!-- page 374 -->
+<!-- page 369 -->
 
 Classroom technology for young learners
 355
@@ -18496,7 +18496,7 @@ tion. Annual Review of Applied Linguistics, 36, 136–163.
 
 ---
 
-<!-- page 375 -->
+<!-- page 370 -->
 
 356
 Introduction
@@ -18535,7 +18535,7 @@ Virginia Parker and David Valente
 
 ---
 
-<!-- page 376 -->
+<!-- page 371 -->
 
 Syllabus development in EELT
 357
@@ -18587,7 +18587,7 @@ meal (Richards and Rodgers 2001; Thornbury 2006; White 1988). Assessment also ca
 
 ---
 
-<!-- page 377 -->
+<!-- page 372 -->
 
 Virginia Parker and David Valente
 358
@@ -18642,7 +18642,7 @@ targets.
 
 ---
 
-<!-- page 378 -->
+<!-- page 373 -->
 
 Syllabus development in EELT
 359
@@ -18698,7 +18698,7 @@ language teaching, the promised gains frequently fail to materialise’ (Littlej
 
 ---
 
-<!-- page 379 -->
+<!-- page 374 -->
 
 Virginia Parker and David Valente
 360
@@ -18752,7 +18752,7 @@ ing personal identification, daily routines, leisure activities and the weather 
 
 ---
 
-<!-- page 380 -->
+<!-- page 375 -->
 
 Syllabus development in EELT
 361
@@ -18803,7 +18803,7 @@ to a major increase in the demand for English language teachers. Whereas the ide
 
 ---
 
-<!-- page 381 -->
+<!-- page 376 -->
 
 Virginia Parker and David Valente
 362
@@ -18858,7 +18858,7 @@ themselves pressured by outside forces to ensure success in future examinations,
 
 ---
 
-<!-- page 382 -->
+<!-- page 377 -->
 
 Syllabus development in EELT
 363
@@ -18908,7 +18908,7 @@ approaches.
 
 ---
 
-<!-- page 383 -->
+<!-- page 378 -->
 
 Virginia Parker and David Valente
 364
@@ -18966,7 +18966,7 @@ of clarity for teachers. It has created a tendency to refer to learners with a v
 
 ---
 
-<!-- page 384 -->
+<!-- page 379 -->
 
 Syllabus development in EELT
 365
@@ -19019,7 +19019,7 @@ becomes a vehicle for meaningful child-friendly content (Lourenço and Mourão 2
 
 ---
 
-<!-- page 385 -->
+<!-- page 380 -->
 
 Virginia Parker and David Valente
 366
@@ -19069,7 +19069,7 @@ implemented with any degree of success, it needs to be an integral component of 
 
 ---
 
-<!-- page 386 -->
+<!-- page 381 -->
 
 Syllabus development in EELT
 367
@@ -19116,7 +19116,7 @@ syllabus. Therefore, such a ‘values’ focused trend is worthy of serious atte
 
 ---
 
-<!-- page 387 -->
+<!-- page 382 -->
 
 Virginia Parker and David Valente
 368
@@ -19170,7 +19170,7 @@ of the SDGs is complex and daunting, the creative approaches outlined above demo
 
 ---
 
-<!-- page 388 -->
+<!-- page 383 -->
 
 Syllabus development in EELT
 369
@@ -19221,7 +19221,7 @@ of work. www.onestopenglish.com/clil/young-learners/animals/project-amazing-worl
 
 ---
 
-<!-- page 389 -->
+<!-- page 384 -->
 
 Virginia Parker and David Valente
 370
@@ -19275,7 +19275,7 @@ Ellis, G., and Ibrahim, N. (2015). Teaching children how to learn. Surrey: Delta
 
 ---
 
-<!-- page 390 -->
+<!-- page 385 -->
 
 Syllabus development in EELT
 371
@@ -19334,7 +19334,7 @@ Pinter, A. (2017). Teaching Young Language Learners, 2nd ed. Oxford: Oxford Univ
 
 ---
 
-<!-- page 391 -->
+<!-- page 386 -->
 
 Virginia Parker and David Valente
 372
@@ -19391,7 +19391,7 @@ UAE%20English%20Framework.pdf
 
 ---
 
-<!-- page 392 -->
+<!-- page 387 -->
 
 Syllabus development in EELT
 373
@@ -19405,7 +19405,7 @@ Research Notes, (46), 2–6.
 
 ---
 
-<!-- page 393 -->
+<!-- page 388 -->
 
 374
 23
@@ -19444,7 +19444,7 @@ flashcards, posters, cassettes, CD-ROMs, videos, dictionaries, worksheets and su
 
 ---
 
-<!-- page 394 -->
+<!-- page 389 -->
 
 Materials for early language learning
 375
@@ -19494,7 +19494,7 @@ structured approach, with a variety of songs, rhymes, TPR and short-story script
 
 ---
 
-<!-- page 395 -->
+<!-- page 390 -->
 
 Irma-Kaarina Ghosn
 376
@@ -19545,7 +19545,7 @@ Since the 1980s, there has been a significant increase in TEYL materials and sin
 
 ---
 
-<!-- page 396 -->
+<!-- page 391 -->
 
 Materials for early language learning
 377
@@ -19597,7 +19597,7 @@ even for nursery and kindergarten children. Yet, teaching children as young as f
 
 ---
 
-<!-- page 397 -->
+<!-- page 392 -->
 
 Irma-Kaarina Ghosn
 378
@@ -19649,7 +19649,7 @@ I think students liked it . . . but anyway, the coordinator told me stop doin
 
 ---
 
-<!-- page 398 -->
+<!-- page 393 -->
 
 Materials for early language learning
 379
@@ -19713,7 +19713,7 @@ be tailored to the local context and needs.
 
 ---
 
-<!-- page 399 -->
+<!-- page 394 -->
 
 Irma-Kaarina Ghosn
 380
@@ -19765,7 +19765,7 @@ the materials fell into two main categories: those which promoted ‘structural/
 
 ---
 
-<!-- page 400 -->
+<!-- page 395 -->
 
 Materials for early language learning
 381
@@ -19818,7 +19818,7 @@ a sequence that puts ‘the teacher in the position of mediator between student 
 
 ---
 
-<!-- page 401 -->
+<!-- page 396 -->
 
 Irma-Kaarina Ghosn
 382
@@ -19884,7 +19884,7 @@ To paint. Maybe, maybe. Very good.
 
 ---
 
-<!-- page 402 -->
+<!-- page 397 -->
 
 Materials for early language learning
 383
@@ -19933,7 +19933,7 @@ ken and written language. Developing such complex word knowledge is a gradual pr
 
 ---
 
-<!-- page 403 -->
+<!-- page 398 -->
 
 Irma-Kaarina Ghosn
 384
@@ -19983,7 +19983,7 @@ for it to be remembered, and according to Nation and Wang (1997) a minimum of te
 
 ---
 
-<!-- page 404 -->
+<!-- page 399 -->
 
 Materials for early language learning
 385
@@ -20035,7 +20035,7 @@ would be more aligned with DAP than a traditional coursebook.
 
 ---
 
-<!-- page 405 -->
+<!-- page 400 -->
 
 Irma-Kaarina Ghosn
 386
@@ -20086,7 +20086,7 @@ tion, 46(3/4), 233–255.
 
 ---
 
-<!-- page 406 -->
+<!-- page 401 -->
 
 Materials for early language learning
 387
@@ -20145,7 +20145,7 @@ New York: Mouton de Gruyter, 311–332.
 
 ---
 
-<!-- page 407 -->
+<!-- page 402 -->
 
 Irma-Kaarina Ghosn
 388
@@ -20198,7 +20198,7 @@ Webster, D., and Worrall, A. (1992). English Together. Addison Wesley Longman.
 
 ---
 
-<!-- page 408 -->
+<!-- page 403 -->
 
 389
 24
@@ -20235,7 +20235,7 @@ ment, which stages of schooling tend to recognise and build on. However, large v
 
 ---
 
-<!-- page 409 -->
+<!-- page 404 -->
 
 Szilvia Papp
 390
@@ -20296,7 +20296,7 @@ ried out by teachers to make sound pedagogical decisions, while large-scale test
 
 ---
 
-<!-- page 410 -->
+<!-- page 405 -->
 
 Assessment of YELLs
 391
@@ -20349,7 +20349,7 @@ English.
 
 ---
 
-<!-- page 411 -->
+<!-- page 406 -->
 
 Szilvia Papp
 392
@@ -20401,7 +20401,7 @@ tem. In these contexts, minimum standards are specified in English language deve
 
 ---
 
-<!-- page 412 -->
+<!-- page 407 -->
 
 Assessment of YELLs
 393
@@ -20454,7 +20454,7 @@ the student has achieved the outcomes or not.
 
 ---
 
-<!-- page 413 -->
+<!-- page 408 -->
 
 Szilvia Papp
 394
@@ -20504,7 +20504,7 @@ ers. Ethics of assessment is a branch of philosophy dealing with issues of right
 
 ---
 
-<!-- page 414 -->
+<!-- page 409 -->
 
 Assessment of YELLs
 395
@@ -20556,7 +20556,7 @@ ultimately from learning English.
 
 ---
 
-<!-- page 415 -->
+<!-- page 410 -->
 
 Szilvia Papp
 396
@@ -20606,7 +20606,7 @@ is well suited to the principles of assessment of young learners. International 
 
 ---
 
-<!-- page 416 -->
+<!-- page 411 -->
 
 Assessment of YELLs
 397
@@ -20666,7 +20666,7 @@ C1
 
 ---
 
-<!-- page 417 -->
+<!-- page 412 -->
 
 Szilvia Papp
 398
@@ -20727,7 +20727,7 @@ Cambridge English: Key (KET)
 
 ---
 
-<!-- page 418 -->
+<!-- page 413 -->
 
 Assessment of YELLs
 399
@@ -20777,7 +20777,7 @@ There should be recommendation for legitimate uses of test results and some exam
 
 ---
 
-<!-- page 419 -->
+<!-- page 414 -->
 
 Szilvia Papp
 400
@@ -20830,7 +20830,7 @@ basic grasp of numbers and measurement and an ability to extract data and interp
 
 ---
 
-<!-- page 420 -->
+<!-- page 415 -->
 
 Assessment of YELLs
 401
@@ -20883,7 +20883,7 @@ vide instant diagnostic feedback to inform learning and teaching. This is the pr
 
 ---
 
-<!-- page 421 -->
+<!-- page 416 -->
 
 Szilvia Papp
 402
@@ -20932,7 +20932,7 @@ Differentiation, syllabus, grammar, vocabulary, speaking and listening, reading 
 
 ---
 
-<!-- page 422 -->
+<!-- page 417 -->
 
 Assessment of YELLs
 403
@@ -20989,7 +20989,7 @@ Longitudinal Studies.
 
 ---
 
-<!-- page 423 -->
+<!-- page 418 -->
 
 Szilvia Papp
 404
@@ -21047,7 +21047,7 @@ successful subject learning. CEFR-linked descriptors for mathematics and history
 
 ---
 
-<!-- page 424 -->
+<!-- page 419 -->
 
 Assessment of YELLs
 405
@@ -21104,7 +21104,7 @@ Nikolov, M., and Szabó, G. (2012). Developing diagnostic tests for young learne
 
 ---
 
-<!-- page 425 -->
+<!-- page 420 -->
 
 Szilvia Papp
 406
@@ -21161,7 +21161,7 @@ ToAssessment.pdf
 
 ---
 
-<!-- page 426 -->
+<!-- page 421 -->
 
 Assessment of YELLs
 407
@@ -21188,14 +21188,14 @@ WIDA Consortium. www.wida.us
 
 ---
 
-<!-- page 428 -->
+<!-- page 422 -->
 
 PART 5
 Researching young learners
 
 ---
 
-<!-- page 430 -->
+<!-- page 423 -->
 
 411
 25
@@ -21234,7 +21234,7 @@ with child participants, and undertaking research with children is therefore qua
 
 ---
 
-<!-- page 431 -->
+<!-- page 424 -->
 
 Annamaria Pinter
 412
@@ -21285,7 +21285,7 @@ the different roles and status positions children can take. Following Kellett (2
 
 ---
 
-<!-- page 432 -->
+<!-- page 425 -->
 
 Research issues with young learners
 413
@@ -21338,7 +21338,7 @@ in Piaget’s experiments also fits with research ‘on’ children in the sense
 
 ---
 
-<!-- page 433 -->
+<!-- page 426 -->
 
 Annamaria Pinter
 414
@@ -21391,7 +21391,7 @@ of a range of so-called ‘child-friendly’ methods and approaches. For example
 
 ---
 
-<!-- page 434 -->
+<!-- page 427 -->
 
 Research issues with young learners
 415
@@ -21444,7 +21444,7 @@ dren as social actors can lead to unexpected opportunities of gaining new insigh
 
 ---
 
-<!-- page 435 -->
+<!-- page 428 -->
 
 Annamaria Pinter
 416
@@ -21499,7 +21499,7 @@ the original adult focus.
 
 ---
 
-<!-- page 436 -->
+<!-- page 429 -->
 
 Research issues with young learners
 417
@@ -21551,7 +21551,7 @@ in all phases of decision-making’. Some go as far as to suggest that children 
 
 ---
 
-<!-- page 437 -->
+<!-- page 430 -->
 
 Annamaria Pinter
 418
@@ -21600,7 +21600,7 @@ do not believe that children can do their own research (e.g., Ellis and Ibrahim,
 
 ---
 
-<!-- page 438 -->
+<!-- page 431 -->
 
 Research issues with young learners
 419
@@ -21653,7 +21653,7 @@ as written consent) will be needed in order to for them to participate. However,
 
 ---
 
-<!-- page 439 -->
+<!-- page 432 -->
 
 Annamaria Pinter
 420
@@ -21703,7 +21703,7 @@ undertaking research of all kinds including on, about, with and by children. Thi
 
 ---
 
-<!-- page 440 -->
+<!-- page 433 -->
 
 Research issues with young learners
 421
@@ -21755,7 +21755,7 @@ voices heard within the field of second language learning.
 
 ---
 
-<!-- page 441 -->
+<!-- page 434 -->
 
 Annamaria Pinter
 422
@@ -21808,7 +21808,7 @@ Dörnyei, Z. (2007). Research Methods in Applied Linguistics. Oxford: Oxford Uni
 
 ---
 
-<!-- page 442 -->
+<!-- page 435 -->
 
 Research issues with young learners
 423
@@ -21867,7 +21867,7 @@ London: Bloomsbury.
 
 ---
 
-<!-- page 443 -->
+<!-- page 436 -->
 
 Annamaria Pinter
 424
@@ -21908,7 +21908,7 @@ text. Unpublished PhD dissertation, University of Warwick.
 
 ---
 
-<!-- page 444 -->
+<!-- page 437 -->
 
 425
 26
@@ -21946,7 +21946,7 @@ improves development and learning.
 
 ---
 
-<!-- page 445 -->
+<!-- page 438 -->
 
 Sandie Mourão
 426
@@ -22001,7 +22001,7 @@ of ECEC, it is not surprising that English, in particular, is rapidly being intr
 
 ---
 
-<!-- page 446 -->
+<!-- page 439 -->
 
 Research into teaching EFL in ECEC
 427
@@ -22056,7 +22056,7 @@ restrictions on their creation (Butler 2009). Furthermore, in South Korea, there
 
 ---
 
-<!-- page 447 -->
+<!-- page 440 -->
 
 Sandie Mourão
 428
@@ -22107,7 +22107,7 @@ volume). Research has also shown that parents are keen to ensure their child is 
 
 ---
 
-<!-- page 448 -->
+<!-- page 441 -->
 
 Research into teaching EFL in ECEC
 429
@@ -22154,7 +22154,7 @@ language learning’ (ibid.). Edelenbos et al. (2006) describe a variety of lan
 
 ---
 
-<!-- page 449 -->
+<!-- page 442 -->
 
 Sandie Mourão
 430
@@ -22208,7 +22208,7 @@ the study paid extra for their child’s English education and though SES, regio
 
 ---
 
-<!-- page 450 -->
+<!-- page 443 -->
 
 Research into teaching EFL in ECEC
 431
@@ -22259,7 +22259,7 @@ tures generally and a positive response from children with learning difficulties
 
 ---
 
-<!-- page 451 -->
+<!-- page 444 -->
 
 Sandie Mourão
 432
@@ -22310,7 +22310,7 @@ ing. Another result emerging from the study was the lack of sensitivity shown by
 
 ---
 
-<!-- page 452 -->
+<!-- page 445 -->
 
 Research into teaching EFL in ECEC
 433
@@ -22364,7 +22364,7 @@ tative approach, Brumen concluded that children showed intrinsic motivation thro
 
 ---
 
-<!-- page 453 -->
+<!-- page 446 -->
 
 Sandie Mourão
 434
@@ -22421,7 +22421,7 @@ to be possible, English is made available to children in an English learning are
 
 ---
 
-<!-- page 454 -->
+<!-- page 447 -->
 
 Research into teaching EFL in ECEC
 435
@@ -22472,7 +22472,7 @@ with the opportunities for continuation into primary education. Parents should a
 
 ---
 
-<!-- page 455 -->
+<!-- page 448 -->
 
 Sandie Mourão
 436
@@ -22523,7 +22523,7 @@ language learning, bilingual education, plurilingualism and home-schooling.
 
 ---
 
-<!-- page 456 -->
+<!-- page 449 -->
 
 Research into teaching EFL in ECEC
 437
@@ -22577,7 +22577,7 @@ Childhood Education Research Journal, 23(5), 706–719.
 
 ---
 
-<!-- page 457 -->
+<!-- page 450 -->
 
 Sandie Mourão
 438
@@ -22635,7 +22635,7 @@ Bloomsbury, 51–70.
 
 ---
 
-<!-- page 458 -->
+<!-- page 451 -->
 
 Research into teaching EFL in ECEC
 439
@@ -22695,7 +22695,7 @@ very young learners: A case study. Language Teaching Research. doi:10.1177/1362
 
 ---
 
-<!-- page 459 -->
+<!-- page 452 -->
 
 Sandie Mourão
 440
@@ -22731,7 +22731,7 @@ Council, 137–158.
 
 ---
 
-<!-- page 460 -->
+<!-- page 453 -->
 
 441
 27
@@ -22768,7 +22768,7 @@ neglected areas such as child early second language acquisition and bilingual fi
 
 ---
 
-<!-- page 461 -->
+<!-- page 454 -->
 
 Peter Sayer and Ruth Ban
 442
@@ -22826,7 +22826,7 @@ dren’s informal learning of English beyond school settings.
 
 ---
 
-<!-- page 462 -->
+<!-- page 455 -->
 
 Learning English outside the classroom
 443
@@ -22878,7 +22878,7 @@ called the acculturation model. Likewise, Schmidt’s (1983) study of Wes, an ad
 
 ---
 
-<!-- page 463 -->
+<!-- page 456 -->
 
 Peter Sayer and Ruth Ban
 444
@@ -22933,7 +22933,7 @@ by Day (2002) in her study of Hari, a kindergarten-aged immigrant boy in Canada 
 
 ---
 
-<!-- page 464 -->
+<!-- page 457 -->
 
 Learning English outside the classroom
 445
@@ -22990,7 +22990,7 @@ recordings of naturally occurring interactions, field notes of observations and 
 
 ---
 
-<!-- page 465 -->
+<!-- page 458 -->
 
 Peter Sayer and Ruth Ban
 446
@@ -23043,7 +23043,7 @@ but according to the diagram then, there are no opportunities for naturalistic l
 
 ---
 
-<!-- page 466 -->
+<!-- page 459 -->
 
 Learning English outside the classroom
 447
@@ -23071,7 +23071,7 @@ Figure 27.1  Contexts of L2 English (adapted from Block 2003)
 
 ---
 
-<!-- page 467 -->
+<!-- page 460 -->
 
 Peter Sayer and Ruth Ban
 448
@@ -23121,7 +23121,7 @@ theorised them through key concepts of Vygotskyan sociocultural theory such as t
 
 ---
 
-<!-- page 468 -->
+<!-- page 461 -->
 
 Learning English outside the classroom
 449
@@ -23172,7 +23172,7 @@ English [. . .] It’s called Super Mario Sunshine.
 
 ---
 
-<!-- page 469 -->
+<!-- page 462 -->
 
 Peter Sayer and Ruth Ban
 450
@@ -23226,7 +23226,7 @@ L2 learning for younger learners. However, does research in this area hold any p
 
 ---
 
-<!-- page 470 -->
+<!-- page 463 -->
 
 Learning English outside the classroom
 451
@@ -23284,7 +23284,7 @@ and heritage languages such as Welsh and Irish, the ‘universal’ language Esp
 
 ---
 
-<!-- page 471 -->
+<!-- page 464 -->
 
 Peter Sayer and Ruth Ban
 452
@@ -23336,7 +23336,7 @@ the language for spoken or written communication as contrasted with receptive sk
 
 ---
 
-<!-- page 472 -->
+<!-- page 465 -->
 
 Learning English outside the classroom
 453
@@ -23384,7 +23384,7 @@ Research. New York and London: Routledge.
 
 ---
 
-<!-- page 473 -->
+<!-- page 466 -->
 
 Peter Sayer and Ruth Ban
 454
@@ -23442,7 +23442,7 @@ Harmondsworth: Penguin Books, 269–293.
 
 ---
 
-<!-- page 474 -->
+<!-- page 467 -->
 
 Learning English outside the classroom
 455
@@ -23500,7 +23500,7 @@ NJ: Rutgers Press.
 
 ---
 
-<!-- page 475 -->
+<!-- page 468 -->
 
 Peter Sayer and Ruth Ban
 456
@@ -23557,7 +23557,7 @@ Quarterly, 29(3), 473–503.
 
 ---
 
-<!-- page 476 -->
+<!-- page 469 -->
 
 Learning English outside the classroom
 457
@@ -23570,7 +23570,7 @@ Blackwell.
 
 ---
 
-<!-- page 478 -->
+<!-- page 470 -->
 
 PART 6
 Teaching English to 
@@ -23579,7 +23579,7 @@ Regional perspectives
 
 ---
 
-<!-- page 480 -->
+<!-- page 471 -->
 
 461
 Introduction
@@ -23619,7 +23619,7 @@ Medadi E. Ssentanda and Jacob Marriote Ngwaru
 
 ---
 
-<!-- page 481 -->
+<!-- page 472 -->
 
 Medadi E. Ssentanda et al.
 462
@@ -23674,7 +23674,7 @@ than ‘destroy’ it (subtractive language development).
 
 ---
 
-<!-- page 482 -->
+<!-- page 473 -->
 
 Early English language learning in Africa
 463
@@ -23728,7 +23728,7 @@ of learning and teaching (LoLT) in lower primary school, the transition to Engli
 
 ---
 
-<!-- page 483 -->
+<!-- page 474 -->
 
 Medadi E. Ssentanda et al.
 464
@@ -23780,7 +23780,7 @@ contentious because of the inescapable reality of their implications (e.g., see 
 
 ---
 
-<!-- page 484 -->
+<!-- page 475 -->
 
 Early English language learning in Africa
 465
@@ -23831,7 +23831,7 @@ ten), it cannot be acquired successfully (Benson 2008; Dutcher 1997; McLaughlin 
 
 ---
 
-<!-- page 485 -->
+<!-- page 476 -->
 
 Medadi E. Ssentanda et al.
 466
@@ -23881,7 +23881,7 @@ employs in its orthography. In English, sounds/letters have names e.g., [bi] for
 
 ---
 
-<!-- page 486 -->
+<!-- page 477 -->
 
 Early English language learning in Africa
 467
@@ -23947,7 +23947,7 @@ read. The case study shows that teachers are not prepared for using English and 
 
 ---
 
-<!-- page 487 -->
+<!-- page 478 -->
 
 Medadi E. Ssentanda et al.
 468
@@ -23996,7 +23996,7 @@ and classroom environment can negatively affect the learning process.
 
 ---
 
-<!-- page 488 -->
+<!-- page 479 -->
 
 Early English language learning in Africa
 469
@@ -24049,7 +24049,7 @@ language is used as a medium of instruction. This is why we highlight that resea
 
 ---
 
-<!-- page 489 -->
+<!-- page 480 -->
 
 Medadi E. Ssentanda et al.
 470
@@ -24102,7 +24102,7 @@ cific case studies about bilingual English teaching and learning in their own co
 
 ---
 
-<!-- page 490 -->
+<!-- page 481 -->
 
 Early English language learning in Africa
 471
@@ -24157,7 +24157,7 @@ into their mother tongue. This means that the learning of English in the African
 
 ---
 
-<!-- page 491 -->
+<!-- page 482 -->
 
 Medadi E. Ssentanda et al.
 472
@@ -24209,7 +24209,7 @@ at different levels of compliance with policy in government and private schools.
 
 ---
 
-<!-- page 492 -->
+<!-- page 483 -->
 
 Early English language learning in Africa
 473
@@ -24261,7 +24261,7 @@ issues. In Haddad, C. (ed.), Improving the Quality of Mother Tongue-based Litera
 
 ---
 
-<!-- page 493 -->
+<!-- page 484 -->
 
 Medadi E. Ssentanda et al.
 474
@@ -24320,7 +24320,7 @@ org/10.1007/s10993-009-9136-9.
 
 ---
 
-<!-- page 494 -->
+<!-- page 485 -->
 
 Early English language learning in Africa
 475
@@ -24379,7 +24379,7 @@ Uganda. Stellenbosch Papers in Linguistics Plus, 42, 281–296.
 
 ---
 
-<!-- page 495 -->
+<!-- page 486 -->
 
 Medadi E. Ssentanda et al.
 476
@@ -24436,7 +24436,7 @@ ing of the British Association for applied linguistics. British Association for 
 
 ---
 
-<!-- page 496 -->
+<!-- page 487 -->
 
 477
 29
@@ -24475,7 +24475,7 @@ sociocultural beliefs about learning (Li 2012; Chan and Rao 2009; Jin and Cortaz
 
 ---
 
-<!-- page 497 -->
+<!-- page 488 -->
 
 Lixian Jin and Martin Cortazzi
 478
@@ -24528,7 +24528,7 @@ children start at Grade 3 (age 9); in Japan, children start in Grades 5 or 6 (ag
 
 ---
 
-<!-- page 498 -->
+<!-- page 489 -->
 
 Early English language learning in East Asia
 479
@@ -24579,7 +24579,7 @@ ELL. The nearly 1.4 billion population and the geographic size of China has led
 
 ---
 
-<!-- page 499 -->
+<!-- page 490 -->
 
 Lixian Jin and Martin Cortazzi
 480
@@ -24630,7 +24630,7 @@ ing numbers of private and pre-school education, including ELL. It accrues socia
 
 ---
 
-<!-- page 500 -->
+<!-- page 491 -->
 
 Early English language learning in East Asia
 481
@@ -24683,7 +24683,7 @@ local graduates, some international graduates or undergraduate students of Engli
 
 ---
 
-<!-- page 501 -->
+<!-- page 492 -->
 
 Lixian Jin and Martin Cortazzi
 482
@@ -24735,7 +24735,7 @@ use brief animated episodes and feature teachers and children engaging in contex
 
 ---
 
-<!-- page 502 -->
+<!-- page 493 -->
 
 Early English language learning in East Asia
 483
@@ -24788,7 +24788,7 @@ of picture books (see Mourão 2015) or brief presentations by learners after pre
 
 ---
 
-<!-- page 503 -->
+<!-- page 494 -->
 
 Lixian Jin and Martin Cortazzi
 484
@@ -24841,7 +24841,7 @@ expect homework to be given.
 
 ---
 
-<!-- page 504 -->
+<!-- page 495 -->
 
 Early English language learning in East Asia
 485
@@ -24893,7 +24893,7 @@ in the evenings or on weekends to private chains of schools for individual Engli
 
 ---
 
-<!-- page 505 -->
+<!-- page 496 -->
 
 Lixian Jin and Martin Cortazzi
 486
@@ -24948,7 +24948,7 @@ petence and were more aware of the role of English in the curriculum. While many
 
 ---
 
-<!-- page 506 -->
+<!-- page 497 -->
 
 Early English language learning in East Asia
 487
@@ -24999,7 +24999,7 @@ engage children’s interest and creativity and are shown to yield fascinating i
 
 ---
 
-<!-- page 507 -->
+<!-- page 498 -->
 
 Lixian Jin and Martin Cortazzi
 488
@@ -25047,7 +25047,7 @@ Language Education and Technology, 49, 47–64.
 
 ---
 
-<!-- page 508 -->
+<!-- page 499 -->
 
 Early English language learning in East Asia
 489
@@ -25105,7 +25105,7 @@ Journal of Multilingual and Multicultural Development, 33(4), 345–362.
 
 ---
 
-<!-- page 509 -->
+<!-- page 500 -->
 
 Lixian Jin and Martin Cortazzi
 490
@@ -25164,7 +25164,7 @@ Bloomsbury, 51–70.
 
 ---
 
-<!-- page 510 -->
+<!-- page 501 -->
 
 Early English language learning in East Asia
 491
@@ -25223,7 +25223,7 @@ Council, 137–156.
 
 ---
 
-<!-- page 511 -->
+<!-- page 502 -->
 
 Lixian Jin and Martin Cortazzi
 492
@@ -25236,7 +25236,7 @@ ters, 189–211.
 
 ---
 
-<!-- page 512 -->
+<!-- page 503 -->
 
 493
 30
@@ -25275,7 +25275,7 @@ Culture Executive Agency (EACEA) in the EEA region, has made provision for infor
 
 ---
 
-<!-- page 513 -->
+<!-- page 504 -->
 
 Shelagh Rixon
 494
@@ -25324,7 +25324,7 @@ ing of modern languages is practicable. This seems to hold good also for relativ
 
 ---
 
-<!-- page 514 -->
+<!-- page 505 -->
 
 Teaching English to young learners in Europe
 495
@@ -25375,7 +25375,7 @@ become the European Union. That is even without considering the different ways i
 
 ---
 
-<!-- page 515 -->
+<!-- page 506 -->
 
 Shelagh Rixon
 496
@@ -25430,7 +25430,7 @@ Latvia) had already made English the first compulsory foreign language at primar
 
 ---
 
-<!-- page 516 -->
+<!-- page 507 -->
 
 Teaching English to young learners in Europe
 497
@@ -25480,7 +25480,7 @@ spectrum of language learning, conditioned by the policy in almost all countries
 
 ---
 
-<!-- page 517 -->
+<!-- page 508 -->
 
 Shelagh Rixon
 498
@@ -25527,7 +25527,7 @@ for gathering information concerning objectives for primary school language lear
 
 ---
 
-<!-- page 518 -->
+<!-- page 509 -->
 
 Teaching English to young learners in Europe
 499
@@ -25581,7 +25581,7 @@ picture varies, and in some countries pre-service teacher training courses for p
 
 ---
 
-<!-- page 519 -->
+<!-- page 510 -->
 
 Shelagh Rixon
 500
@@ -25631,7 +25631,7 @@ children attended private language institutes. The claim for Cyprus, Greece and 
 
 ---
 
-<!-- page 520 -->
+<!-- page 511 -->
 
 Teaching English to young learners in Europe
 501
@@ -25684,7 +25684,7 @@ British Council in Spain, starting in 1996, in the Basque country and Slovakia. 
 
 ---
 
-<!-- page 521 -->
+<!-- page 512 -->
 
 Shelagh Rixon
 502
@@ -25736,7 +25736,7 @@ highly innovative and child-friendly instruments have been created, particularly
 
 ---
 
-<!-- page 522 -->
+<!-- page 513 -->
 
 Teaching English to young learners in Europe
 503
@@ -25785,7 +25785,7 @@ ods in which activities are intrinsically engaging, have meaning for the learner
 
 ---
 
-<!-- page 523 -->
+<!-- page 514 -->
 
 Shelagh Rixon
 504
@@ -25831,7 +25831,7 @@ Norwich Institute for Language Education 2016) are starting to cater to Teacher 
 
 ---
 
-<!-- page 524 -->
+<!-- page 515 -->
 
 Teaching English to young learners in Europe
 505
@@ -25883,7 +25883,7 @@ burg, Germany, 10–15 April 1961. Strasbourg: Council of Europe.
 
 ---
 
-<!-- page 525 -->
+<!-- page 516 -->
 
 Shelagh Rixon
 506
@@ -25942,7 +25942,7 @@ University of Pecs Press.
 
 ---
 
-<!-- page 526 -->
+<!-- page 517 -->
 
 Teaching English to young learners in Europe
 507
@@ -25990,7 +25990,7 @@ National and international research. Münster: Waxmann.
 
 ---
 
-<!-- page 527 -->
+<!-- page 518 -->
 
 508
 31
@@ -26030,7 +26030,7 @@ breaking away from reductionist dichotomies such as oral/written, literate/illit
 
 ---
 
-<!-- page 528 -->
+<!-- page 519 -->
 
 Teaching English to young learners in Latin America
 509
@@ -26083,7 +26083,7 @@ and equity in Chilean education (MINEDUC 2012; 2013). The justification was that
 
 ---
 
-<!-- page 529 -->
+<!-- page 520 -->
 
 Inés K. Miller et al.
 510
@@ -26135,7 +26135,7 @@ be addressed in the following subsections.
 
 ---
 
-<!-- page 530 -->
+<!-- page 521 -->
 
 Teaching English to young learners in Latin America
 511
@@ -26184,7 +26184,7 @@ to adopt or adapt imported models because pedagogic coordinators and teachers pe
 
 ---
 
-<!-- page 531 -->
+<!-- page 522 -->
 
 Inés K. Miller et al.
 512
@@ -26234,7 +26234,7 @@ course, the observed teaching practices and teachers’ language input, the auth
 
 ---
 
-<!-- page 532 -->
+<!-- page 523 -->
 
 Teaching English to young learners in Latin America
 513
@@ -26288,7 +26288,7 @@ encouraged, so that sounder research-based suggestions for practice can be made.
 
 ---
 
-<!-- page 533 -->
+<!-- page 524 -->
 
 Inés K. Miller et al.
 514
@@ -26342,7 +26342,7 @@ et al. 2015). Following the Exploratory Practice principles, pre-service teache
 
 ---
 
-<!-- page 534 -->
+<!-- page 525 -->
 
 Teaching English to young learners in Latin America
 515
@@ -26391,7 +26391,7 @@ the puzzles related to the ‘quality of their language classroom life’ (Gieve
 
 ---
 
-<!-- page 535 -->
+<!-- page 526 -->
 
 Inés K. Miller et al.
 516
@@ -26442,7 +26442,7 @@ develop as practitioners of learning (Allwright and Hanks 2009).
 
 ---
 
-<!-- page 536 -->
+<!-- page 527 -->
 
 Teaching English to young learners in Latin America
 517
@@ -26494,7 +26494,7 @@ perspectives. Education Policy Analysis Archives, Special issue on English Langu
 
 ---
 
-<!-- page 537 -->
+<!-- page 528 -->
 
 Inés K. Miller et al.
 518
@@ -26552,7 +26552,7 @@ doi/10.1002/tesq.148/abstract [Accessed 27 Mar. 2017].
 
 ---
 
-<!-- page 538 -->
+<!-- page 529 -->
 
 Teaching English to young learners in Latin America
 519
@@ -26612,7 +26612,7 @@ Linse, C. (2005). Practical English Language Teaching: Young learners. New York:
 
 ---
 
-<!-- page 539 -->
+<!-- page 530 -->
 
 Inés K. Miller et al.
 520
@@ -26674,7 +26674,7 @@ Cortez.
 
 ---
 
-<!-- page 540 -->
+<!-- page 531 -->
 
 Teaching English to young learners in Latin America
 521
@@ -26732,7 +26732,7 @@ Singleton, D. (1989). Language Acquisition: The age factor. Clevedon: Multilingu
 
 ---
 
-<!-- page 541 -->
+<!-- page 532 -->
 
 Inés K. Miller et al.
 522
@@ -26767,7 +26767,7 @@ emotions in teaching. International Journal of Qualitative Studies in Education,
 
 ---
 
-<!-- page 542 -->
+<!-- page 533 -->
 
 523
 32
@@ -26806,7 +26806,7 @@ aid donors (along with new donors such as China). In short, English is the langu
 
 ---
 
-<!-- page 543 -->
+<!-- page 534 -->
 
 Table 32.1  An overview of the region
 Country
@@ -26922,7 +26922,7 @@ Year 1–13: English
 
 ---
 
-<!-- page 544 -->
+<!-- page 535 -->
 
 Teaching English to YLs across the Pacific
 525
@@ -26992,7 +26992,7 @@ New Hebrides. The New Zealand territories of (then Western) Sāmoa and the Cook 
 
 ---
 
-<!-- page 545 -->
+<!-- page 536 -->
 
 Fiona Willans
 526
@@ -27046,7 +27046,7 @@ language.
 
 ---
 
-<!-- page 546 -->
+<!-- page 537 -->
 
 Teaching English to YLs across the Pacific
 527
@@ -27098,7 +27098,7 @@ that ‘provisions will be made for students whose first language is not Cook Is
 
 ---
 
-<!-- page 547 -->
+<!-- page 538 -->
 
 Fiona Willans
 528
@@ -27151,7 +27151,7 @@ the children who do not speak English at home as in need of remedial attention.
 
 ---
 
-<!-- page 548 -->
+<!-- page 539 -->
 
 Teaching English to YLs across the Pacific
 529
@@ -27203,7 +27203,7 @@ frequently expressed during both internal and external meetings regarding the Un
 
 ---
 
-<!-- page 549 -->
+<!-- page 540 -->
 
 Fiona Willans
 530
@@ -27255,7 +27255,7 @@ Pacific nations have been politically independent for some decades.
 
 ---
 
-<!-- page 550 -->
+<!-- page 541 -->
 
 Teaching English to YLs across the Pacific
 531
@@ -27306,7 +27306,7 @@ who have been trained specifically to teach English. The more typical arrangemen
 
 ---
 
-<!-- page 551 -->
+<!-- page 542 -->
 
 Fiona Willans
 532
@@ -27361,7 +27361,7 @@ doing in the Pacific in the first place, why it is so important to learn and how
 
 ---
 
-<!-- page 552 -->
+<!-- page 543 -->
 
 Teaching English to YLs across the Pacific
 533
@@ -27414,7 +27414,7 @@ policy advisors in the relevant areas can be produced.
 
 ---
 
-<!-- page 553 -->
+<!-- page 544 -->
 
 Fiona Willans
 534
@@ -27467,7 +27467,7 @@ Council of Educational Research and the Institute of Education, University of th
 
 ---
 
-<!-- page 554 -->
+<!-- page 545 -->
 
 Teaching English to YLs across the Pacific
 535
@@ -27525,7 +27525,7 @@ images/downloads/2015_Pocket-Statistical-Summary.pdf.
 
 ---
 
-<!-- page 555 -->
+<!-- page 546 -->
 
 Fiona Willans
 536
@@ -27564,7 +27564,7 @@ Directions: Journal of Educational Studies, 13, 3–17.
 
 ---
 
-<!-- page 556 -->
+<!-- page 547 -->
 
 537
 Note: Page numbers in italic indicate a figure and page numbers in bold indicate a table on the 
@@ -27652,7 +27652,7 @@ audiolingualism 205, 207
 
 ---
 
-<!-- page 557 -->
+<!-- page 548 -->
 
 Index
 538
@@ -27772,7 +27772,7 @@ Collins Corpus 221
 
 ---
 
-<!-- page 558 -->
+<!-- page 549 -->
 
 Index
 539
@@ -27891,7 +27891,7 @@ e-books 101, 348
 
 ---
 
-<!-- page 559 -->
+<!-- page 550 -->
 
 Index
 540
@@ -28005,7 +28005,7 @@ information and communication technology
 
 ---
 
-<!-- page 560 -->
+<!-- page 551 -->
 
 Index
 541
@@ -28125,7 +28125,7 @@ directions 385; historical perspectives on
 
 ---
 
-<!-- page 561 -->
+<!-- page 552 -->
 
 Index
 542
@@ -28241,7 +28241,7 @@ picturebooks 227 – 228, 271 – 272, 276, 279 – 283,
 
 ---
 
-<!-- page 562 -->
+<!-- page 553 -->
 
 Index
 543
@@ -28360,7 +28360,7 @@ critical pedagogy and 242; in East Asia
 
 ---
 
-<!-- page 563 -->
+<!-- page 554 -->
 
 Index
 544

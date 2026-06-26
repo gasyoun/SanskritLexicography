@@ -6,7 +6,7 @@
 
 ---
 
-<!-- page 2 -->
+<!-- page 1 -->
 
  
  
@@ -41,7 +41,7 @@ University of Oregon, USA
 
 ---
 
-<!-- page 4 -->
+<!-- page 2 -->
 
  
  
@@ -80,7 +80,7 @@ of Computational Methods for Corpus Annotation and Analysis (2014).
 
 ---
 
-<!-- page 5 -->
+<!-- page 3 -->
 
  
  
@@ -133,7 +133,7 @@ https://www.routledge.com/Cognitive-Science-and-Second-Language
 
 ---
 
-<!-- page 6 -->
+<!-- page 4 -->
 
 CORPUS LINGUISTICS 
 AND SECOND 
@@ -144,7 +144,7 @@ Xiaofei Lu
 
 ---
 
-<!-- page 7 -->
+<!-- page 5 -->
 
  
  
@@ -198,7 +198,7 @@ by Deanta Global Publishing Services, Chennai, India
 
 ---
 
-<!-- page 8 -->
+<!-- page 6 -->
 
  
  
@@ -209,7 +209,7 @@ unconditional love and support.
 
 ---
 
-<!-- page 10 -->
+<!-- page 7 -->
 
  
  
@@ -276,7 +276,7 @@ and Production
 
 ---
 
-<!-- page 11 -->
+<!-- page 8 -->
 
   
  
@@ -361,7 +361,7 @@ Index
 
 ---
 
-<!-- page 12 -->
+<!-- page 9 -->
 
  
  
@@ -381,7 +381,7 @@ analysis
 
 ---
 
-<!-- page 13 -->
+<!-- page 10 -->
 
  
  
@@ -422,7 +422,7 @@ of language development. Chapters describe in detail usage-based approaches to
 
 ---
 
-<!-- page 14 -->
+<!-- page 11 -->
 
  
  
@@ -449,7 +449,7 @@ Series Editor
 
 ---
 
-<!-- page 15 -->
+<!-- page 12 -->
 
  
  
@@ -506,7 +506,7 @@ continuous encouragement and support. I am also grateful to the colleagues
 
 ---
 
-<!-- page 16 -->
+<!-- page 13 -->
 
  
  
@@ -527,7 +527,7 @@ book a reality during this pandemic.
 
 ---
 
-<!-- page 18 -->
+<!-- page 14 -->
 
   
  
@@ -572,7 +572,7 @@ DOI: 10.4324/9781003054948-1
 
 ---
 
-<!-- page 19 -->
+<!-- page 15 -->
 
  
  
@@ -651,7 +651,7 @@ frequency, and range of text samples in which they occur) from a corpus.The
 
 ---
 
-<!-- page 20 -->
+<!-- page 16 -->
 
  
  
@@ -741,7 +741,7 @@ What types of individual variability and variation exist in L2 development?
 
 ---
 
-<!-- page 21 -->
+<!-- page 17 -->
 
  
  
@@ -809,7 +809,7 @@ in which such variation has been measured. It then systematically reviews result
 
 ---
 
-<!-- page 22 -->
+<!-- page 18 -->
 
  
  
@@ -873,7 +873,7 @@ University. http://www.laurenceanthony.net/software.
 
 ---
 
-<!-- page 23 -->
+<!-- page 19 -->
 
  
  
@@ -1057,7 +1057,7 @@ Applied Linguistics, 18(2), 141–165. https://doi.org/10.1093/applin/18.2.141
 
 ---
 
-<!-- page 24 -->
+<!-- page 20 -->
 
  
  
@@ -1181,7 +1181,7 @@ Benjamins. https://doi.org/10.1075/sibil.54.03wul
 
 ---
 
-<!-- page 25 -->
+<!-- page 21 -->
 
   
  
@@ -1235,7 +1235,7 @@ DOI: 10.4324/9781003054948-2
 
 ---
 
-<!-- page 26 -->
+<!-- page 22 -->
 
  
  
@@ -1319,7 +1319,7 @@ ized in terms of the reference-corpus frequency of the words in a text, either b
 
 ---
 
-<!-- page 27 -->
+<!-- page 23 -->
 
  
  
@@ -1401,7 +1401,7 @@ complex nominals per clause, complex nominals per T-unit, and verb phrases per
 
 ---
 
-<!-- page 28 -->
+<!-- page 24 -->
 
  
  
@@ -1472,7 +1472,7 @@ number of errors, such as the number of errors per text, per T-unit, per words,
 
 ---
 
-<!-- page 29 -->
+<!-- page 25 -->
 
  
  
@@ -1540,7 +1540,7 @@ produced in a given amount of time) have been derived from measures of speech
 
 ---
 
-<!-- page 30 -->
+<!-- page 26 -->
 
  
  
@@ -1606,7 +1606,7 @@ language learning experience including age of first exposure to English, context
 
 ---
 
-<!-- page 31 -->
+<!-- page 27 -->
 
  
  
@@ -1667,7 +1667,7 @@ the language. Text-centered methods assign texts to proficiency levels based on
 
 ---
 
-<!-- page 32 -->
+<!-- page 28 -->
 
  
  
@@ -1729,7 +1729,7 @@ the choice and definition of the measures used among those studies, the results
 
 ---
 
-<!-- page 33 -->
+<!-- page 29 -->
 
  
  
@@ -1805,7 +1805,7 @@ phrases per T-unit.
 
 ---
 
-<!-- page 34 -->
+<!-- page 30 -->
 
  
  
@@ -1881,7 +1881,7 @@ Sketch Engine (Kilgarriff et al., 2014) to extract verbs followed by about, for,
 
 ---
 
-<!-- page 35 -->
+<!-- page 31 -->
 
  
  
@@ -1946,7 +1946,7 @@ Eskildsen, 2009).The authors carefully controlled for the effect of L1 backgroun
 
 ---
 
-<!-- page 36 -->
+<!-- page 32 -->
 
  
  
@@ -2020,7 +2020,7 @@ proficiency variation in their use of LVCs. The normalized frequency of LVCs
 
 ---
 
-<!-- page 37 -->
+<!-- page 33 -->
 
  
  
@@ -2084,7 +2084,7 @@ used a corpus of 960 written texts produced by 480 L2 English learners (two text
 
 ---
 
-<!-- page 38 -->
+<!-- page 34 -->
 
  
  
@@ -2147,7 +2147,7 @@ learners at five different proficiency levels.The data used in the study came fr
 
 ---
 
-<!-- page 39 -->
+<!-- page 35 -->
 
  
  
@@ -2250,7 +2250,7 @@ phrase-frames generally declined as the learners’ proficiency level increased.
 
 ---
 
-<!-- page 40 -->
+<!-- page 36 -->
 
  
  
@@ -2320,7 +2320,7 @@ dependency relations, and subsequently extracted all pairs of words in the text
 
 ---
 
-<!-- page 41 -->
+<!-- page 37 -->
 
  
  
@@ -2387,7 +2387,7 @@ of the effect of L1 background on variation in L2 use in the next section.
 
 ---
 
-<!-- page 42 -->
+<!-- page 38 -->
 
  
  
@@ -2455,7 +2455,7 @@ significantly less frequently than L2 writers.Among the 13 L2 subcorpora, seven
 
 ---
 
-<!-- page 43 -->
+<!-- page 39 -->
 
  
  
@@ -2547,7 +2547,7 @@ convergence using items that convey uncertainty, such as maybe, possible, and I
 
 ---
 
-<!-- page 44 -->
+<!-- page 40 -->
 
  
  
@@ -2621,7 +2621,7 @@ the L1 group among the three upper intermediate L2 groups (Chinese, Japanese,
 
 ---
 
-<!-- page 45 -->
+<!-- page 41 -->
 
  
  
@@ -2687,7 +2687,7 @@ Spanish EFL learners at different proficiency levels in the TLC. In addition to 
 
 ---
 
-<!-- page 46 -->
+<!-- page 42 -->
 
  
  
@@ -2779,7 +2779,7 @@ L1 backgrounds at higher proficiency levels.
 
 ---
 
-<!-- page 47 -->
+<!-- page 43 -->
 
  
  
@@ -2842,7 +2842,7 @@ triadic framework distinguishes cognitive task complexity from task conditions a
 
 ---
 
-<!-- page 48 -->
+<!-- page 44 -->
 
  
  
@@ -2916,7 +2916,7 @@ task type, and instructional focus.The authors cited their focus on L2 writing a
 
 ---
 
-<!-- page 49 -->
+<!-- page 45 -->
 
  
  
@@ -2979,7 +2979,7 @@ both of which were coded as involving low vocabulary load, would elicit language
 
 ---
 
-<!-- page 50 -->
+<!-- page 46 -->
 
  
  
@@ -3045,7 +3045,7 @@ subordination” (p. 63).They further argued that the appearance topic, which di
 
 ---
 
-<!-- page 51 -->
+<!-- page 47 -->
 
  
  
@@ -3127,7 +3127,7 @@ were found to be associated with writing and integrated tasks, including word
 
 ---
 
-<!-- page 52 -->
+<!-- page 48 -->
 
  
  
@@ -3223,7 +3223,7 @@ the argumentative essays was found in ESL writing but not L1 English speakers’
 
 ---
 
-<!-- page 53 -->
+<!-- page 49 -->
 
  
  
@@ -3289,7 +3289,7 @@ between the two genres in ESL writing, the authors tentatively concluded that
 
 ---
 
-<!-- page 54 -->
+<!-- page 50 -->
 
  
  
@@ -3386,7 +3386,7 @@ type of EMs used by the L2 speakers across the four speaking tasks. In discussin
 
 ---
 
-<!-- page 55 -->
+<!-- page 51 -->
 
  
  
@@ -3465,7 +3465,7 @@ the information-processing, functional, or interactive demand accounts are in
 
 ---
 
-<!-- page 56 -->
+<!-- page 52 -->
 
  
  
@@ -3524,7 +3524,7 @@ implications for verifying the predictions of SLA theories and for informing L2
 
 ---
 
-<!-- page 57 -->
+<!-- page 53 -->
 
  
  
@@ -3689,7 +3689,7 @@ Learner Corpus Research, 5(2), 231–252. https://doi.org/10.1075/ijlcr.17020.ca
 
 ---
 
-<!-- page 58 -->
+<!-- page 54 -->
 
  
  
@@ -3871,7 +3871,7 @@ English (Version 2.0). Louvain-la-Neuve: Presses universitaires de Louvain.
 
 ---
 
-<!-- page 59 -->
+<!-- page 55 -->
 
  
  
@@ -4072,7 +4072,7 @@ https://doi.org/10.5054/tq.2011.240859
 
 ---
 
-<!-- page 60 -->
+<!-- page 56 -->
 
  
  
@@ -4265,7 +4265,7 @@ accuracy in second language writing research. Journal of Second Language Writing
 
 ---
 
-<!-- page 61 -->
+<!-- page 57 -->
 
  
  
@@ -4447,7 +4447,7 @@ Canada:Association for Computational Linguistics.
 
 ---
 
-<!-- page 62 -->
+<!-- page 58 -->
 
  
  
@@ -4538,7 +4538,7 @@ Yu,G.(2010).Lexical diversity in writing and speaking task performances.Applied 
 
 ---
 
-<!-- page 63 -->
+<!-- page 59 -->
 
   
  
@@ -4582,7 +4582,7 @@ DOI: 10.4324/9781003054948-3
 
 ---
 
-<!-- page 64 -->
+<!-- page 60 -->
 
  
  
@@ -4658,7 +4658,7 @@ learners, despite their high frequency of usage (e.g., Bardovi-Harlig, 1992).The
 
 ---
 
-<!-- page 65 -->
+<!-- page 61 -->
 
  
  
@@ -4719,7 +4719,7 @@ examined factors in usage-based studies of L2 processing and production. In a
 
 ---
 
-<!-- page 66 -->
+<!-- page 62 -->
 
  
  
@@ -4785,7 +4785,7 @@ ones (e.g., active and cleft-subject constructions) (e.g., Miyake et al., 1994) 
 
 ---
 
-<!-- page 67 -->
+<!-- page 63 -->
 
  
  
@@ -4847,7 +4847,7 @@ words on the first list should be easier to acquire.These lists were derived fro
 
 ---
 
-<!-- page 68 -->
+<!-- page 64 -->
 
  
  
@@ -4926,7 +4926,7 @@ index and the word familiarity index accurately classified 70 out of the 89
 
 ---
 
-<!-- page 69 -->
+<!-- page 65 -->
 
  
  
@@ -4999,7 +4999,7 @@ The authors performed a path model analysis in the structural equation model
 
 ---
 
-<!-- page 70 -->
+<!-- page 66 -->
 
  
  
@@ -5074,7 +5074,7 @@ used the log-likelihood statistic to identify formulas that occurred significant
 
 ---
 
-<!-- page 71 -->
+<!-- page 67 -->
 
  
  
@@ -5155,7 +5155,7 @@ then shown the last word of a formula and asked to read it aloud as quickly
 
 ---
 
-<!-- page 72 -->
+<!-- page 68 -->
 
  
  
@@ -5227,7 +5227,7 @@ trial, the participants first saw dashes on the monitor; upon pressing the F key
 
 ---
 
-<!-- page 73 -->
+<!-- page 69 -->
 
  
  
@@ -5293,7 +5293,7 @@ These sequences were divided into four groups (high frequency and high MI;
 
 ---
 
-<!-- page 74 -->
+<!-- page 70 -->
 
  
  
@@ -5355,7 +5355,7 @@ processing from limited prior research that relied on experimental tasks with
 
 ---
 
-<!-- page 75 -->
+<!-- page 71 -->
 
  
  
@@ -5419,7 +5419,7 @@ each of the nine levels of collocation frequency and MI combination (e.g., high
 
 ---
 
-<!-- page 76 -->
+<!-- page 72 -->
 
  
  
@@ -5497,7 +5497,7 @@ gruent collocations (e.g., strong wind), 24 English-only (incongruent) collocati
 
 ---
 
-<!-- page 77 -->
+<!-- page 73 -->
 
  
  
@@ -5580,7 +5580,7 @@ speakers. The authors interpreted these findings as evidence in support of the
 
 ---
 
-<!-- page 78 -->
+<!-- page 74 -->
 
  
  
@@ -5676,7 +5676,7 @@ proficiency levels.
 
 ---
 
-<!-- page 79 -->
+<!-- page 75 -->
 
  
  
@@ -5752,7 +5752,7 @@ in usage-based approaches to SLA that frequency effects on language learning,
 
 ---
 
-<!-- page 80 -->
+<!-- page 76 -->
 
  
  
@@ -5820,7 +5820,7 @@ d (other VACs with other verbs)
 
 ---
 
-<!-- page 81 -->
+<!-- page 77 -->
 
  
  
@@ -5890,7 +5890,7 @@ verbs (50/262 or 19.48%). Mixed-effects models were used to analyze the data
 
 ---
 
-<!-- page 82 -->
+<!-- page 78 -->
 
  
  
@@ -5958,7 +5958,7 @@ were interpreted as evidence for the existence of a construction between the mat
 
 ---
 
-<!-- page 83 -->
+<!-- page 79 -->
 
  
  
@@ -6025,7 +6025,7 @@ all instances of the English /ð/ were coded into one of eight phonetic contexts
 
 ---
 
-<!-- page 84 -->
+<!-- page 80 -->
 
  
  
@@ -6094,7 +6094,7 @@ instances of /ð/ in teacher input.
 
 ---
 
-<!-- page 85 -->
+<!-- page 81 -->
 
  
  
@@ -6163,7 +6163,7 @@ lines retrieved were manually checked, and 480 ing-construction tokens and
 
 ---
 
-<!-- page 86 -->
+<!-- page 82 -->
 
  
  
@@ -6252,7 +6252,7 @@ university in Germany.
 
 ---
 
-<!-- page 87 -->
+<!-- page 83 -->
 
  
  
@@ -6320,7 +6320,7 @@ a pair of verbs reflected the distance between their conceptual categories in th
 
 ---
 
-<!-- page 88 -->
+<!-- page 84 -->
 
  
  
@@ -6388,7 +6388,7 @@ distributed across three lexical aspectual categories: 16 states (e.g., want, th
 
 ---
 
-<!-- page 89 -->
+<!-- page 85 -->
 
  
  
@@ -6457,7 +6457,7 @@ factors and a wider range of constructions.The authors of two of the three studi
 
 ---
 
-<!-- page 90 -->
+<!-- page 86 -->
 
  
  
@@ -6517,7 +6517,7 @@ of MI by Abugaber, 2020), and diverse operationalizations of saliency exist (e.g
 
 ---
 
-<!-- page 91 -->
+<!-- page 87 -->
 
  
  
@@ -6588,7 +6588,7 @@ use. Oxford: Blackwell.
 
 ---
 
-<!-- page 92 -->
+<!-- page 88 -->
 
  
  
@@ -6693,7 +6693,7 @@ Linguistic Approaches to Bilingualism, 4(4), 405–431.
 
 ---
 
-<!-- page 93 -->
+<!-- page 89 -->
 
  
  
@@ -6819,7 +6819,7 @@ London: Routledge.
 
 ---
 
-<!-- page 94 -->
+<!-- page 90 -->
 
  
  
@@ -6938,7 +6938,7 @@ D. Miller, F. Bayram, J. Rothman, & L. Serratrice (Eds.), Bilingual cognition an
 
 ---
 
-<!-- page 95 -->
+<!-- page 91 -->
 
  
  
@@ -6977,7 +6977,7 @@ Zipf, G. K. (1935). The psycho-biology of language. New York: Houghton-Mifflin.
 
 ---
 
-<!-- page 96 -->
+<!-- page 92 -->
 
   
  
@@ -7030,7 +7030,7 @@ DOI: 10.4324/9781003054948-4
 
 ---
 
-<!-- page 97 -->
+<!-- page 93 -->
 
  
  
@@ -7096,7 +7096,7 @@ as within-subjects variables to examine how the CAF measures developed over
 
 ---
 
-<!-- page 98 -->
+<!-- page 94 -->
 
  
  
@@ -7167,7 +7167,7 @@ tions from Parkinson and Musgrave (2014) as well as the authors themselves. In
 
 ---
 
-<!-- page 99 -->
+<!-- page 95 -->
 
  
  
@@ -7260,7 +7260,7 @@ plexity have generally been found to be more characteristic of advanced rather
 
 ---
 
-<!-- page 100 -->
+<!-- page 96 -->
 
  
  
@@ -7330,7 +7330,7 @@ from the written sections of the Corpus of Contemporary American English
 
 ---
 
-<!-- page 101 -->
+<!-- page 97 -->
 
  
  
@@ -7426,7 +7426,7 @@ Section 3.2). One possible explanation offered by the authors for the absence
 
 ---
 
-<!-- page 102 -->
+<!-- page 98 -->
 
  
  
@@ -7518,7 +7518,7 @@ vidual learners. For range, the authors plotted the mean frequency counts for
 
 ---
 
-<!-- page 103 -->
+<!-- page 99 -->
 
  
  
@@ -7602,7 +7602,7 @@ patterns of development observed.
 
 ---
 
-<!-- page 104 -->
+<!-- page 100 -->
 
  
  
@@ -7668,7 +7668,7 @@ and Guiraud’s index for each content word class (i.e., nouns, verbs, and adjec
 
 ---
 
-<!-- page 105 -->
+<!-- page 101 -->
 
  
  
@@ -7731,7 +7731,7 @@ shed useful light on adolescent L2 French learners’ (significant albeit limite
 
 ---
 
-<!-- page 106 -->
+<!-- page 102 -->
 
  
  
@@ -7797,7 +7797,7 @@ over time. For these analyses, the authors used data from Weeks 2, 4, 16, 32, 50
 
 ---
 
-<!-- page 107 -->
+<!-- page 103 -->
 
  
  
@@ -7859,7 +7859,7 @@ learner and one matriculated student took place once a month every four months
 
 ---
 
-<!-- page 108 -->
+<!-- page 104 -->
 
  
  
@@ -7929,7 +7929,7 @@ regardless of their age, gender, and L1 background. Such lexical acquisition
 
 ---
 
-<!-- page 109 -->
+<!-- page 105 -->
 
  
  
@@ -8003,7 +8003,7 @@ only percentage of words beyond the second band exhibited a significant, weak
 
 ---
 
-<!-- page 110 -->
+<!-- page 106 -->
 
  
  
@@ -8069,7 +8069,7 @@ COCA spoken token frequency was significantly lower than advanced learners
 
 ---
 
-<!-- page 111 -->
+<!-- page 107 -->
 
  
  
@@ -8134,7 +8134,7 @@ same words in the same way. In reality, however, they may perceive the propertie
 
 ---
 
-<!-- page 112 -->
+<!-- page 108 -->
 
  
  
@@ -8202,7 +8202,7 @@ two that were shared between the learner corpus and the L1 English corpus and
 
 ---
 
-<!-- page 113 -->
+<!-- page 109 -->
 
  
  
@@ -8279,7 +8279,7 @@ number of focal learners and the narrow focus on bigrams only, it would be
 
 ---
 
-<!-- page 114 -->
+<!-- page 110 -->
 
  
  
@@ -8357,7 +8357,7 @@ methodological focus of the study, the authors did not explicitly explain these
 
 ---
 
-<!-- page 115 -->
+<!-- page 111 -->
 
  
  
@@ -8432,7 +8432,7 @@ essays produced by the ESL learners with those produced by the L1 English
 
 ---
 
-<!-- page 116 -->
+<!-- page 112 -->
 
  
  
@@ -8507,7 +8507,7 @@ Section 4.3. The corpus was POS-tagged using the TreeTagger (Schmid, 1994)
 
 ---
 
-<!-- page 117 -->
+<!-- page 113 -->
 
  
  
@@ -8594,7 +8594,7 @@ features were found between noun and adjective frequency and length as well.
 
 ---
 
-<!-- page 118 -->
+<!-- page 114 -->
 
  
  
@@ -8675,7 +8675,7 @@ exemplars, Ellis and Ferreira-Junior (2009a) investigated the effects of constru
 
 ---
 
-<!-- page 119 -->
+<!-- page 115 -->
 
  
  
@@ -8752,7 +8752,7 @@ more types later on. Notably, one exemplar seeded each construction and led its
 
 ---
 
-<!-- page 120 -->
+<!-- page 116 -->
 
  
  
@@ -8830,7 +8830,7 @@ of non-verb islands in the VL (i.e., Subject, Preposition, Locative), VOL (i.e.,
 
 ---
 
-<!-- page 121 -->
+<!-- page 117 -->
 
  
  
@@ -8904,7 +8904,7 @@ acquire (e.g., Bardovi-Harlig, 2000). The authors used a 110K-word corpus of
 
 ---
 
-<!-- page 122 -->
+<!-- page 118 -->
 
  
  
@@ -8970,7 +8970,7 @@ emphasis (stress, repetition, pausing). It was found that all progressive marker
 
 ---
 
-<!-- page 123 -->
+<!-- page 119 -->
 
  
  
@@ -9047,7 +9047,7 @@ revealed a significant effect of the interaction of the three factors. However, 
 
 ---
 
-<!-- page 124 -->
+<!-- page 120 -->
 
  
  
@@ -9138,7 +9138,7 @@ four different words represented by four different morphological 1-grams (say
 
 ---
 
-<!-- page 125 -->
+<!-- page 121 -->
 
  
  
@@ -9247,7 +9247,7 @@ ment research.
 
 ---
 
-<!-- page 126 -->
+<!-- page 122 -->
 
  
  
@@ -9322,7 +9322,7 @@ boosting, and self-mention, and its interaction with DP had a significant effect
 
 ---
 
-<!-- page 127 -->
+<!-- page 123 -->
 
  
  
@@ -9396,7 +9396,7 @@ ous input and linguistic factors on L2 development. Collectively, these studies
 
 ---
 
-<!-- page 128 -->
+<!-- page 124 -->
 
  
  
@@ -9515,7 +9515,7 @@ https://doi.org/10.1163/9789004361133_011
 
 ---
 
-<!-- page 129 -->
+<!-- page 125 -->
 
  
  
@@ -9744,7 +9744,7 @@ Linguistics, 14(2), 159–190. https://doi.org/10.1075/ijcl.14.2.02dav
 
 ---
 
-<!-- page 130 -->
+<!-- page 126 -->
 
  
  
@@ -9949,7 +9949,7 @@ Amsterdam: John Benjamins. https://doi.org/10.1075/scl.70.01kre
 
 ---
 
-<!-- page 131 -->
+<!-- page 127 -->
 
  
  
@@ -10121,7 +10121,7 @@ of English for Academic Purposes students. Journal of English for Academic Purpo
 
 ---
 
-<!-- page 132 -->
+<!-- page 128 -->
 
  
  
@@ -10302,7 +10302,7 @@ developmental corpus of learner German. International Journal of Learner Corpus 
 
 ---
 
-<!-- page 133 -->
+<!-- page 129 -->
 
  
  
@@ -10375,7 +10375,7 @@ Cambridge, MA: MIT Press.
 
 ---
 
-<!-- page 134 -->
+<!-- page 130 -->
 
   
  
@@ -10418,7 +10418,7 @@ DOI: 10.4324/9781003054948-5
 
 ---
 
-<!-- page 135 -->
+<!-- page 131 -->
 
  
  
@@ -10496,7 +10496,7 @@ with respect to their empirical contributions to L2 development, methodological
 
 ---
 
-<!-- page 136 -->
+<!-- page 132 -->
 
  
  
@@ -10578,7 +10578,7 @@ ment.The first subsection discusses Larsen-Freeman (2006), a seminal study that
 
 ---
 
-<!-- page 137 -->
+<!-- page 133 -->
 
  
  
@@ -10641,7 +10641,7 @@ ied across the four measures.The author interpreted these results as pointing to
 
 ---
 
-<!-- page 138 -->
+<!-- page 134 -->
 
  
  
@@ -10706,7 +10706,7 @@ pictures to stories and diaries, to comments on assigned readings.To alleviate t
 
 ---
 
-<!-- page 139 -->
+<!-- page 135 -->
 
  
  
@@ -10775,7 +10775,7 @@ of progression, fluctuation, and regression) and inter- and intra-learner variab
 
 ---
 
-<!-- page 140 -->
+<!-- page 136 -->
 
  
  
@@ -10848,7 +10848,7 @@ their interaction, as the small local increases or decreases are not accounted f
 
 ---
 
-<!-- page 141 -->
+<!-- page 137 -->
 
  
  
@@ -10940,7 +10940,7 @@ phase between the two more stable periods.
 
 ---
 
-<!-- page 142 -->
+<!-- page 138 -->
 
  
  
@@ -11001,7 +11001,7 @@ abundant patterns confirming the CDST assumption that “variability appearing
 
 ---
 
-<!-- page 143 -->
+<!-- page 139 -->
 
  
  
@@ -11069,7 +11069,7 @@ bly from the 42nd text onward. For sentence-level complexity, simple sentences
 
 ---
 
-<!-- page 144 -->
+<!-- page 140 -->
 
  
  
@@ -11164,7 +11164,7 @@ instead of solely in terms of inter-learner differences.
 
 ---
 
-<!-- page 145 -->
+<!-- page 141 -->
 
  
  
@@ -11227,7 +11227,7 @@ their lack of general language proficiency growth over the observation period.
 
 ---
 
-<!-- page 146 -->
+<!-- page 142 -->
 
  
  
@@ -11296,7 +11296,7 @@ information for Cassie.
 
 ---
 
-<!-- page 147 -->
+<!-- page 143 -->
 
  
  
@@ -11369,7 +11369,7 @@ pathways against the developmental trendlines of the cohort they were part of
 
 ---
 
-<!-- page 148 -->
+<!-- page 144 -->
 
  
  
@@ -11453,7 +11453,7 @@ declining trend in this period. Additionally, Cassie’s use of complex structur
 
 ---
 
-<!-- page 149 -->
+<!-- page 145 -->
 
  
  
@@ -11542,7 +11542,7 @@ arises and/or manifests.
 
 ---
 
-<!-- page 150 -->
+<!-- page 146 -->
 
  
  
@@ -11619,7 +11619,7 @@ writings, capturing cross-sectional development), writing number (within-learner
 
 ---
 
-<!-- page 151 -->
+<!-- page 147 -->
 
  
  
@@ -11688,7 +11688,7 @@ proficiency (increase by proficiency), and the interaction between morpheme
 
 ---
 
-<!-- page 152 -->
+<!-- page 148 -->
 
  
  
@@ -11773,7 +11773,7 @@ differences were large enough to be fit by the model).Their results showed no
 
 ---
 
-<!-- page 153 -->
+<!-- page 149 -->
 
  
  
@@ -11845,7 +11845,7 @@ variability of those correlations over time. Studies of inter-learner variabilit
 
 ---
 
-<!-- page 154 -->
+<!-- page 150 -->
 
  
  
@@ -11947,7 +11947,7 @@ https://doi.org/10.1080/14664208.2013.829276
 
 ---
 
-<!-- page 155 -->
+<!-- page 151 -->
 
  
  
@@ -12119,7 +12119,7 @@ Acquisition, 43(4), 781–812. https://doi:10.1017/S0272263120000546
 
 ---
 
-<!-- page 156 -->
+<!-- page 152 -->
 
  
  
@@ -12321,7 +12321,7 @@ https://doi.org/10.1111/j.1540-4781.2008.00715.x
 
 ---
 
-<!-- page 157 -->
+<!-- page 153 -->
 
  
  
@@ -12392,7 +12392,7 @@ https://doi.org/10.1558/lst.3171
 
 ---
 
-<!-- page 158 -->
+<!-- page 154 -->
 
   
  
@@ -12437,7 +12437,7 @@ DOI: 10.4324/9781003054948-6
 
 ---
 
-<!-- page 159 -->
+<!-- page 155 -->
 
  
  
@@ -12498,7 +12498,7 @@ significant frequency and contingency effects have been found on L2 processing
 
 ---
 
-<!-- page 160 -->
+<!-- page 156 -->
 
  
  
@@ -12561,7 +12561,7 @@ ine the interaction between developmental variables over time, and to determine
 
 ---
 
-<!-- page 161 -->
+<!-- page 157 -->
 
  
  
@@ -12622,7 +12622,7 @@ development.There is increasing consensus regarding the importance for learner
 
 ---
 
-<!-- page 162 -->
+<!-- page 158 -->
 
  
  
@@ -12696,7 +12696,7 @@ and repetition errors (Crossley et al., 2019), and AutoSubClause, a tool for aut
 
 ---
 
-<!-- page 163 -->
+<!-- page 159 -->
 
  
  
@@ -12781,7 +12781,7 @@ pus-based SLA research can engage with a number of emerging or new analytical
 
 ---
 
-<!-- page 164 -->
+<!-- page 160 -->
 
  
  
@@ -12887,7 +12887,7 @@ Purposes, 66, 94–107. https://doi.org/10.1016/j.esp.2022.01.004
 
 ---
 
-<!-- page 165 -->
+<!-- page 161 -->
 
  
  
@@ -13102,7 +13102,7 @@ among writers with diverse L1 backgrounds. Journal of Second Language Writing, 2
 
 ---
 
-<!-- page 166 -->
+<!-- page 162 -->
 
  
  
@@ -13292,7 +13292,7 @@ Lexical aspect and phonological saliency. International Journal of Learner Corpu
 
 ---
 
-<!-- page 168 -->
+<!-- page 163 -->
 
  
  
@@ -13367,7 +13367,7 @@ cloze task 72
 
 ---
 
-<!-- page 169 -->
+<!-- page 164 -->
 
   
  
@@ -13489,7 +13489,7 @@ and development of articles in child
 
 ---
 
-<!-- page 170 -->
+<!-- page 165 -->
 
  
  
@@ -13604,7 +13604,7 @@ and morphosyntactic constructions
 
 ---
 
-<!-- page 171 -->
+<!-- page 166 -->
 
   
  
@@ -13724,7 +13724,7 @@ complexity 81–82, 83; production 52
 
 ---
 
-<!-- page 172 -->
+<!-- page 167 -->
 
  
  
@@ -13841,7 +13841,7 @@ scores 15
 
 ---
 
-<!-- page 173 -->
+<!-- page 168 -->
 
   
  

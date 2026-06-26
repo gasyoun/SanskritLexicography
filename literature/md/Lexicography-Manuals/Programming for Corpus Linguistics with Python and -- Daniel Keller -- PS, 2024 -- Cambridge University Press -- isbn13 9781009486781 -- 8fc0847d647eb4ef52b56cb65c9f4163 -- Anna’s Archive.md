@@ -19,7 +19,7 @@ Corpus Linguistics
 
 ---
 
-<!-- page 3 -->
+<!-- page 2 -->
 
 Elements in Corpus Linguistics
 edited by
@@ -34,7 +34,7 @@ Western Kentucky University
 
 ---
 
-<!-- page 4 -->
+<!-- page 3 -->
 
 Shaftesbury Road, Cambridge CB2 8EA, United Kingdom
 One Liberty Plaza, 20th Floor, New York, NY 10006, USA
@@ -68,7 +68,7 @@ remain, accurate or appropriate.
 
 ---
 
-<!-- page 5 -->
+<!-- page 4 -->
 
 Programming for Corpus Linguistics with Python
 and Dataframes
@@ -99,7 +99,7 @@ ISSNs: 2632-8097 (online), 2632-8089 (print)
 
 ---
 
-<!-- page 6 -->
+<!-- page 5 -->
 
 Contents
 1 Dataframe Corpora
@@ -119,7 +119,7 @@ References
 
 ---
 
-<!-- page 7 -->
+<!-- page 6 -->
 
 1 Dataframe Corpora
 This Element is about programming for corpus linguistics using dataframes – that
@@ -160,7 +160,7 @@ Programming for Corpus Linguistics
 
 ---
 
-<!-- page 8 -->
+<!-- page 7 -->
 
 1.1.2 A Note on Formatting
 Throughout this Element, the names of keywords, methods, functions, proper-
@@ -200,7 +200,7 @@ Corpus Linguistics
 
 ---
 
-<!-- page 9 -->
+<!-- page 8 -->
 
 creating n-grams) can be chained directly into other tasks (e.g., counting
 values).
@@ -238,7 +238,7 @@ Programming for Corpus Linguistics
 
 ---
 
-<!-- page 10 -->
+<!-- page 9 -->
 
 various approaches to CL analysis that can be extended to a range of other uses.
 Finally, in the ﬁfth section, an algorithm for creating dataframe corpora from text
@@ -284,7 +284,7 @@ Corpus Linguistics
 
 ---
 
-<!-- page 11 -->
+<!-- page 10 -->
 
 2 Python Basics for Corpus Linguistics
 2.1 Installing Python
@@ -331,7 +331,7 @@ Programming for Corpus Linguistics
 
 ---
 
-<!-- page 12 -->
+<!-- page 11 -->
 
 allows you to type commands directly into the interpreter and see the results
 immediately. The code in the following sections can be executed in IDLE.
@@ -372,7 +372,7 @@ Corpus Linguistics
 
 ---
 
-<!-- page 13 -->
+<!-- page 12 -->
 
 In the code we have just executed, we enclosed the greeting message in
 quotation marks.
@@ -412,7 +412,7 @@ Programming for Corpus Linguistics
 
 ---
 
-<!-- page 14 -->
+<!-- page 13 -->
 
 9
 But, if you add two strings ‘hello’ and ‘world’,
@@ -451,7 +451,7 @@ Corpus Linguistics
 
 ---
 
-<!-- page 15 -->
+<!-- page 14 -->
 
 1
 Here, ‘hello world’ is called a string literal. We will see list literals and dict
@@ -493,7 +493,7 @@ Programming for Corpus Linguistics
 
 ---
 
-<!-- page 16 -->
+<!-- page 15 -->
 
 2.10 Calling Functions
 Functions are called just like methods, by typing their names and passing any
@@ -536,7 +536,7 @@ Corpus Linguistics
 
 ---
 
-<!-- page 17 -->
+<!-- page 16 -->
 
 passed in, but without this assignment, we would lose the new lowercase values
 into the void. We then use the count() string method to count ﬁve vowel types,
@@ -579,7 +579,7 @@ Programming for Corpus Linguistics
 
 ---
 
-<!-- page 18 -->
+<!-- page 17 -->
 
 2.14 More on Lists and Dictionaries
 Lists and dictionaries hold instances of other values or variables. Dictionaries
@@ -620,7 +620,7 @@ Corpus Linguistics
 
 ---
 
-<!-- page 19 -->
+<!-- page 18 -->
 
 2.14.2 Joining Elements in Lists
 Just as there is a str method that converts a str to a list, there is
@@ -657,7 +657,7 @@ Programming for Corpus Linguistics
 
 ---
 
-<!-- page 20 -->
+<!-- page 19 -->
 
 ['a', 'dark']
 Note that the sublist contains only elements 2 and 3 of words, not 4. This
@@ -700,7 +700,7 @@ Corpus Linguistics
 
 ---
 
-<!-- page 21 -->
+<!-- page 20 -->
 
 2.14.5 Appending to, Removing from, Copying, and Extending Lists
 We can add elements to a list using the append() method.
@@ -741,7 +741,7 @@ Programming for Corpus Linguistics
 
 ---
 
-<!-- page 22 -->
+<!-- page 21 -->
 
 ['It',
 'was',
@@ -788,7 +788,7 @@ Corpus Linguistics
 
 ---
 
-<!-- page 23 -->
+<!-- page 22 -->
 
 following subsection), but it can cause a lot of confusion. Variables that hold other
 variables often behave this way, while variables that hold only raw data often do not.
@@ -831,7 +831,7 @@ Programming for Corpus Linguistics
 
 ---
 
-<!-- page 24 -->
+<!-- page 23 -->
 
 (6); and one for greeting. Mutable types like lists and dicts thus
 provide a signiﬁcant advantage over str variables for corpus linguists who
@@ -872,7 +872,7 @@ Corpus Linguistics
 
 ---
 
-<!-- page 25 -->
+<!-- page 24 -->
 
 {'beginning': 8, 'ending': 7}
 We now have two items in our dictionary, separated by a comma. Each item is
@@ -911,7 +911,7 @@ Programming for Corpus Linguistics
 
 ---
 
-<!-- page 26 -->
+<!-- page 25 -->
 
 in a string is a letter or number character. If all characters in the string are
 alphabetical or numeric, the method returns True, and if not, False.
@@ -951,7 +951,7 @@ Corpus Linguistics
 
 ---
 
-<!-- page 27 -->
+<!-- page 26 -->
 
 True
 True
@@ -995,7 +995,7 @@ Programming for Corpus Linguistics
 
 ---
 
-<!-- page 28 -->
+<!-- page 27 -->
 
 True,
 True]
@@ -1043,7 +1043,7 @@ Corpus Linguistics
 
 ---
 
-<!-- page 29 -->
+<!-- page 28 -->
 
 ['It',
 'was',
@@ -1086,7 +1086,7 @@ Programming for Corpus Linguistics
 
 ---
 
-<!-- page 30 -->
+<!-- page 29 -->
 
 True
 a = '1'
@@ -1123,7 +1123,7 @@ Corpus Linguistics
 
 ---
 
-<!-- page 31 -->
+<!-- page 30 -->
 
 the variable does not have a value
 With numeric variables, we can use the < (less than), > (greater than), <= (less
@@ -1163,7 +1163,7 @@ Programming for Corpus Linguistics
 
 ---
 
-<!-- page 32 -->
+<!-- page 31 -->
 
 with the syntax for creating a dict literal
 new_dict = {key: value}
@@ -1205,7 +1205,7 @@ Corpus Linguistics
 
 ---
 
-<!-- page 33 -->
+<!-- page 32 -->
 
 We can add a second for loop to the ﬁrst one. When a loop is inside another
 loop, it is “nested” in the ﬁrst. When we take all the values from every cell in
@@ -1247,7 +1247,7 @@ Programming for Corpus Linguistics
 
 ---
 
-<!-- page 34 -->
+<!-- page 33 -->
 
 ['It',
 'was',
@@ -1292,7 +1292,7 @@ Corpus Linguistics
 
 ---
 
-<!-- page 35 -->
+<!-- page 34 -->
 
 3 Working with DataFrames
 This section introduces Pandas DataFrame and Series classes, methods for
@@ -1334,7 +1334,7 @@ Programming for Corpus Linguistics
 
 ---
 
-<!-- page 36 -->
+<!-- page 35 -->
 
 This installation process will automatically install other packages that Pandas
 requires. One of these is NumPy, a package that contains functions and data-
@@ -1375,7 +1375,7 @@ Corpus Linguistics
 
 ---
 
-<!-- page 37 -->
+<!-- page 36 -->
 
 69933607
 c.shape[1] # returns the number of columns
@@ -1539,7 +1539,7 @@ Programming for Corpus Linguistics
 
 ---
 
-<!-- page 38 -->
+<!-- page 37 -->
 
 DataFrame. The index starts at 0 for the ﬁrst row and runs all the way to
 69,933,606 for the last. The numeric value of the index for the ith row is
@@ -1584,7 +1584,7 @@ Corpus Linguistics
 
 ---
 
-<!-- page 39 -->
+<!-- page 38 -->
 
 type
 tag
@@ -1644,7 +1644,7 @@ Programming for Corpus Linguistics
 
 ---
 
-<!-- page 40 -->
+<!-- page 39 -->
 
 the British National Corpus would require 27.5 gigabytes of memory just to
 store the elements in the cells of the dataframe.
@@ -1692,7 +1692,7 @@ Corpus Linguistics
 
 ---
 
-<!-- page 41 -->
+<!-- page 40 -->
 
 Index(['col1', 'col2'], dtype='object')
 df.columns = ['letters', 'numbers']
@@ -1760,7 +1760,7 @@ Programming for Corpus Linguistics
 
 ---
 
-<!-- page 42 -->
+<!-- page 41 -->
 
 be curious as to how to take text data from ﬁles and transform them into columns
 or rows – that is, how to create a dataframe corpus from text ﬁles. An algorithm
@@ -1816,7 +1816,7 @@ Corpus Linguistics
 
 ---
 
-<!-- page 43 -->
+<!-- page 42 -->
 
 value_counts() method the normalize=True argument and multiply
 by the integer we wish to normalize to.
@@ -1862,7 +1862,7 @@ Programming for Corpus Linguistics
 
 ---
 
-<!-- page 44 -->
+<!-- page 43 -->
 
 export DataFrames to ﬁles for later use. We can do this using the
 to_csv() method.
@@ -1913,7 +1913,7 @@ Corpus Linguistics
 
 ---
 
-<!-- page 45 -->
+<!-- page 44 -->
 
 3.6.3 Measuring Range
 We may wish to ﬁnd the number or proportion of texts that a word occurs in (its
@@ -1960,7 +1960,7 @@ Programming for Corpus Linguistics
 
 ---
 
-<!-- page 46 -->
+<!-- page 45 -->
 
 type
 the
@@ -2003,7 +2003,7 @@ Corpus Linguistics
 
 ---
 
-<!-- page 47 -->
+<!-- page 46 -->
 
 token
 type
@@ -2091,7 +2091,7 @@ Programming for Corpus Linguistics
 
 ---
 
-<!-- page 48 -->
+<!-- page 47 -->
 
 token
 type
@@ -2215,7 +2215,7 @@ Corpus Linguistics
 
 ---
 
-<!-- page 49 -->
+<!-- page 48 -->
 
 token
 type
@@ -2315,7 +2315,7 @@ Programming for Corpus Linguistics
 
 ---
 
-<!-- page 50 -->
+<!-- page 49 -->
 
 Each condition must be joined with & to indicate and, or | to indicate or. A ~ can
 be placed in front of a condition to mean not. The following code locates
@@ -2410,7 +2410,7 @@ Corpus Linguistics
 
 ---
 
-<!-- page 51 -->
+<!-- page 50 -->
 
 c.shift(1).head()
 token
@@ -2571,7 +2571,7 @@ Programming for Corpus Linguistics
 
 ---
 
-<!-- page 52 -->
+<!-- page 51 -->
 
 df.type.value_counts().head()
 type
@@ -2637,7 +2637,7 @@ Corpus Linguistics
 
 ---
 
-<!-- page 53 -->
+<!-- page 52 -->
 
 remove_unused_categories(). Then we count the remaining values using
 value_counts(). Finally, we display the tail of the dataframe using tail
@@ -2688,7 +2688,7 @@ Programming for Corpus Linguistics
 
 ---
 
-<!-- page 54 -->
+<!-- page 53 -->
 
 operator after the name of a column. In particular, three methods are useful here:
 str.beginswith(), str.endswith(), and str.contains(). The
@@ -2788,7 +2788,7 @@ Corpus Linguistics
 
 ---
 
-<!-- page 55 -->
+<!-- page 54 -->
 
 69847836 undergoing
 undergoing
@@ -2857,7 +2857,7 @@ Programming for Corpus Linguistics
 
 ---
 
-<!-- page 56 -->
+<!-- page 55 -->
 
 token
 type
@@ -3021,7 +3021,7 @@ Corpus Linguistics
 
 ---
 
-<!-- page 57 -->
+<!-- page 56 -->
 
 3.6.8 Finding Multiword Strings
 It is possible to search for sequences of values using shift(). We previously used
@@ -3106,7 +3106,7 @@ Programming for Corpus Linguistics
 
 ---
 
-<!-- page 58 -->
+<!-- page 57 -->
 
 df.type.
 cat.remove_unused_categories().
@@ -3160,7 +3160,7 @@ Corpus Linguistics
 
 ---
 
-<!-- page 59 -->
+<!-- page 58 -->
 
 type_tag_pairs = c.type.str.cat(others=c.tag, sep='_')
 type_tag_pairs.head()
@@ -3223,7 +3223,7 @@ Programming for Corpus Linguistics
 
 ---
 
-<!-- page 60 -->
+<!-- page 59 -->
 
 We can use this procedure to concatenate multiple sequential values by
 passing in a list with multiple shifts of the same column.
@@ -3273,7 +3273,7 @@ Corpus Linguistics
 
 ---
 
-<!-- page 61 -->
+<!-- page 60 -->
 
 0
 i am 22 and
@@ -3331,7 +3331,7 @@ Programming for Corpus Linguistics
 
 ---
 
-<!-- page 62 -->
+<!-- page 61 -->
 
 after this. To get a list of all four-grams that start with i do not, we use loc[] with
 str.startswith().
@@ -3388,7 +3388,7 @@ Corpus Linguistics
 
 ---
 
-<!-- page 63 -->
+<!-- page 62 -->
 
 or ﬁnding lists of collocates for one or more node words. In these cases (and
 others), it is necessary to adjust our unit of analysis from single word tokens
@@ -3445,7 +3445,7 @@ Programming for Corpus Linguistics
 
 ---
 
-<!-- page 64 -->
+<!-- page 63 -->
 
 This is precisely the approach taken in the following code sample: ﬁrst, we use
 the loc[] indexer to ﬁnd all rows where the value in the lemma column is
@@ -3575,7 +3575,7 @@ Corpus Linguistics
 
 ---
 
-<!-- page 65 -->
+<!-- page 64 -->
 
 labels that do not appear in the index and cannot ﬁnd them (e.g., -1 or 100001 in
 a 100,000-token corpus). We can avoid this problem by slicing the
@@ -3618,7 +3618,7 @@ Programming for Corpus Linguistics
 
 ---
 
-<!-- page 66 -->
+<!-- page 65 -->
 
 step of the algorithm – how the sample is structured and annotated, (b) what you
 intend the algorithm to produce (e.g., frequency counts, a list of collocates), and
@@ -3659,7 +3659,7 @@ Corpus Linguistics
 
 ---
 
-<!-- page 67 -->
+<!-- page 66 -->
 
 The output of this algorithm, therefore, might reasonably be a DataFrame
 where every row is one collocate, and each column is one piece of information
@@ -3702,7 +3702,7 @@ Programming for Corpus Linguistics
 
 ---
 
-<!-- page 68 -->
+<!-- page 67 -->
 
 programming and, when examined in sequence, build on the previous algorithms.
 The linguistic and programming focuses for each algorithm appear in Table 4.
@@ -3768,7 +3768,7 @@ Corpus Linguistics
 
 ---
 
-<!-- page 69 -->
+<!-- page 68 -->
 
 In the input stage, the corpus is loaded into memory and the values of the
 constants are set. In the processing stage, all instances of the search terms are
@@ -3805,7 +3805,7 @@ Programming for Corpus Linguistics
 
 ---
 
-<!-- page 70 -->
+<!-- page 69 -->
 
 L = 3
 R = 3
@@ -3846,7 +3846,7 @@ Corpus Linguistics
 
 ---
 
-<!-- page 71 -->
+<!-- page 70 -->
 
 would cause problems if we tried to put all the Series together into a single
 dataframe, as Pandas will try to align the columns based on their indexes instead
@@ -3907,7 +3907,7 @@ Programming for Corpus Linguistics
 
 ---
 
-<!-- page 72 -->
+<!-- page 71 -->
 
 2) Next, modify the algorithm to locate only inﬁnitives. Look for rows
 where the lemma of the preceding row is to.
@@ -3951,7 +3951,7 @@ Corpus Linguistics
 
 ---
 
-<!-- page 73 -->
+<!-- page 72 -->
 
 we can use str.contains() to ﬁlter out punctuation later. In the processing
 stage, we add an n-gram column to the corpus, ﬁlter on our three criteria, and then
@@ -3988,7 +3988,7 @@ Programming for Corpus Linguistics
 
 ---
 
-<!-- page 74 -->
+<!-- page 73 -->
 
 # 4. add four_gram column to corpus
 shifted_cols = [c.type.shift(-i) for i in range(1, 4)]
@@ -4037,7 +4037,7 @@ Corpus Linguistics
 
 ---
 
-<!-- page 75 -->
+<!-- page 74 -->
 
 In the preceding algorithm, the four_gram column is created using str.
 cat() and shift(). Then a four-gram frequency dataframe is created in step
@@ -4081,7 +4081,7 @@ Programming for Corpus Linguistics
 
 ---
 
-<!-- page 76 -->
+<!-- page 75 -->
 
 1. counting the word types in the corpus to establish base frequencies,
 2. ﬁnding how often each word occurs in a window around instances of the
@@ -4123,7 +4123,7 @@ Corpus Linguistics
 
 ---
 
-<!-- page 77 -->
+<!-- page 76 -->
 
 6. Get the indices of all instances of the node in the corpus using loc.
 7. Create context windows from the indices.
@@ -4165,7 +4165,7 @@ Programming for Corpus Linguistics
 
 ---
 
-<!-- page 78 -->
+<!-- page 77 -->
 
 # 6. get indices of node in the corpus
 indices = c.loc[c.lemma.eq(node)].index
@@ -4201,7 +4201,7 @@ Corpus Linguistics
 
 ---
 
-<!-- page 79 -->
+<!-- page 78 -->
 
 Y
 O
@@ -4258,7 +4258,7 @@ Programming for Corpus Linguistics
 
 ---
 
-<!-- page 80 -->
+<!-- page 79 -->
 
 The results indicate that the top collocate of misinformation in news is
 lies with a logDice score of 8.978. One might wonder if this is true in
@@ -4311,7 +4311,7 @@ Corpus Linguistics
 
 ---
 
-<!-- page 81 -->
+<!-- page 80 -->
 
 a line of code to ﬁlter out slices that do not include the collocate. Drop
 the index=indices parameter from the DataFrame() function
@@ -4361,7 +4361,7 @@ Programming for Corpus Linguistics
 
 ---
 
-<!-- page 82 -->
+<!-- page 81 -->
 
 An algorithm for ﬁnding LLRs thus requires the range of the target word
 in the focal corpus (Ofoc) the range of the word in the reference corpus
@@ -4406,7 +4406,7 @@ Corpus Linguistics
 
 ---
 
-<!-- page 83 -->
+<!-- page 82 -->
 
 N_ref = 51168525
 ## Processing
@@ -4446,7 +4446,7 @@ Programming for Corpus Linguistics
 
 ---
 
-<!-- page 84 -->
+<!-- page 83 -->
 
 Output
 9. Filter out rows with LLR < 3.84 and sort the DataFrame.
@@ -4484,7 +4484,7 @@ Corpus Linguistics
 
 ---
 
-<!-- page 85 -->
+<!-- page 84 -->
 
 # return LLR
 return llr
@@ -4521,7 +4521,7 @@ Programming for Corpus Linguistics
 
 ---
 
-<!-- page 86 -->
+<!-- page 85 -->
 
 foc
 ref
@@ -4592,7 +4592,7 @@ Corpus Linguistics
 
 ---
 
-<!-- page 87 -->
+<!-- page 86 -->
 
 . . .
 matter
@@ -4644,7 +4644,7 @@ Programming for Corpus Linguistics
 
 ---
 
-<!-- page 88 -->
+<!-- page 87 -->
 
 The algorithm in this section demonstrates keyword analysis but is more
 generally designed to demonstrate grouping and hierarchical counting, as well
@@ -4686,7 +4686,7 @@ Corpus Linguistics
 
 ---
 
-<!-- page 89 -->
+<!-- page 88 -->
 
 • Adjectives
 • Adverbs of place
@@ -4737,7 +4737,7 @@ Programming for Corpus Linguistics
 
 ---
 
-<!-- page 90 -->
+<!-- page 89 -->
 
 central to the analysis. The cells in these dataframes should contain normalized
 frequency counts for each feature in each text. The output should be a Series
@@ -4774,7 +4774,7 @@ Corpus Linguistics
 
 ---
 
-<!-- page 91 -->
+<!-- page 90 -->
 
 token
 type
@@ -4853,7 +4853,7 @@ Programming for Corpus Linguistics
 
 ---
 
-<!-- page 92 -->
+<!-- page 91 -->
 
 3751580
 22.583559
@@ -4895,7 +4895,7 @@ Corpus Linguistics
 
 ---
 
-<!-- page 93 -->
+<!-- page 92 -->
 
 r'.+age$|.+ness$|.+ity$|.+dom$|.+ship$|.+hood$|'+
 r'.+ite$|.+ish$|.+ism')
@@ -4941,7 +4941,7 @@ Programming for Corpus Linguistics
 
 ---
 
-<!-- page 94 -->
+<!-- page 93 -->
 
 # 5. normalize counts to per 1000 words
 text_lengths = c.text.value_counts()
@@ -4993,7 +4993,7 @@ Corpus Linguistics
 
 ---
 
-<!-- page 95 -->
+<!-- page 94 -->
 
 formulae. In step 3, the corpus is loaded, and punctuation is dropped by
 selecting only rows where pos does not equal PUNCT (punctuation).
@@ -5040,7 +5040,7 @@ Programming for Corpus Linguistics
 
 ---
 
-<!-- page 96 -->
+<!-- page 95 -->
 
 Like def, the lambda keyword is followed by one or more arguments (separ-
 ated by commas). At the end of the sequence of variables is a colon, followed by
@@ -5091,7 +5091,7 @@ Corpus Linguistics
 
 ---
 
-<!-- page 97 -->
+<!-- page 96 -->
 
 passed into cohen(). The cohen() function ﬁnds the standardized mean
 difference between the two columns and returns it to the anonymous function,
@@ -5136,7 +5136,7 @@ Programming for Corpus Linguistics
 
 ---
 
-<!-- page 98 -->
+<!-- page 97 -->
 
 rate at which each word type occurs outside the node word’s context
 windows. Then divide by the pooled standard deviation. Compare
@@ -5179,7 +5179,7 @@ Corpus Linguistics
 
 ---
 
-<!-- page 99 -->
+<!-- page 98 -->
 
 and produces a DataFrame corpus from the ﬁles at that location. In the
 processing stage, data are read from ﬁles, tokenized and annotated, and aggre-
@@ -5220,7 +5220,7 @@ Programming for Corpus Linguistics
 
 ---
 
-<!-- page 100 -->
+<!-- page 99 -->
 
 characteristics of each corpus. Step 3.1, for example, will vary based on the
 format of the data being processed. However, so long as the data can be coerced
@@ -5260,7 +5260,7 @@ Corpus Linguistics
 
 ---
 
-<!-- page 101 -->
+<!-- page 100 -->
 
 With spaCy installed, it can be imported like other packages (note that the
 package name is lowercase despite its usual irregular capitalization).
@@ -5304,7 +5304,7 @@ Programming for Corpus Linguistics
 
 ---
 
-<!-- page 102 -->
+<!-- page 101 -->
 
 Here, we create a doc from a string using nlp. Then we iterate over doc using
 a for loop. On each iteration of the loop, the variable t is assigned the value of
@@ -5356,7 +5356,7 @@ Corpus Linguistics
 
 ---
 
-<!-- page 103 -->
+<!-- page 102 -->
 
 2
 Jonah
@@ -5409,7 +5409,7 @@ Programming for Corpus Linguistics
 
 ---
 
-<!-- page 104 -->
+<!-- page 103 -->
 
 ↳academic
 ↳ﬁle 3.txt
@@ -5453,7 +5453,7 @@ Corpus Linguistics
 
 ---
 
-<!-- page 105 -->
+<!-- page 104 -->
 
 that the corpus contains text ﬁles as well as several XML ﬁles containing
 metadata. In the following algorithms, we will be working with only the text
@@ -5494,7 +5494,7 @@ Programming for Corpus Linguistics
 
 ---
 
-<!-- page 106 -->
+<!-- page 105 -->
 
 # 2. set path to data
 path = "data"
@@ -5535,7 +5535,7 @@ Corpus Linguistics
 
 ---
 
-<!-- page 107 -->
+<!-- page 106 -->
 
 # 6.5. append the text to the corpus DataFrame
 df.to_csv('temp.csv', mode='a', header=False,
@@ -5576,7 +5576,7 @@ Programming for Corpus Linguistics
 
 ---
 
-<!-- page 108 -->
+<!-- page 107 -->
 
 In these lines, a context manager is used with the open() function to create
 a connection to a ﬁle. That connection is stored in the variable f. The text of the
@@ -5635,7 +5635,7 @@ Corpus Linguistics
 
 ---
 
-<!-- page 109 -->
+<!-- page 108 -->
 
 lemma tag pos
 text
@@ -5696,7 +5696,7 @@ Programming for Corpus Linguistics
 
 ---
 
-<!-- page 110 -->
+<!-- page 109 -->
 
 about algorithms (see, e.g., Hetland, 2014; Lee & Hubbard, 2015). Those
 interested in reusing algorithms or distributing their work may wish to learn
@@ -5709,7 +5709,7 @@ Corpus Linguistics
 
 ---
 
-<!-- page 111 -->
+<!-- page 110 -->
 
 References
 Anthony, L. (2020). Programming for corpus linguistics. In M. Paquot and
@@ -5751,7 +5751,7 @@ raslan/2008/raslan08.pdf
 
 ---
 
-<!-- page 113 -->
+<!-- page 111 -->
 
 Corpus Linguistics
 Susan Hunston
@@ -5777,7 +5777,7 @@ of the latest ideas and developments by leading researchers.
 
 ---
 
-<!-- page 114 -->
+<!-- page 112 -->
 
 Corpus Linguistics
 Elements in the Series

@@ -6,7 +6,7 @@
 
 ---
 
-<!-- page 2 -->
+<!-- page 1 -->
 
 The Routledge Handbook of 
 Historical Linguistics
@@ -49,7 +49,7 @@ Bethwyn Evans is Research Fellow in Linguistics at the Australian National Unive
 
 ---
 
-<!-- page 3 -->
+<!-- page 2 -->
 
 Routledge Handbooks in Linguistics
 Routledge Handbooks in Linguistics provide overviews of a whole subject area or 
@@ -85,7 +85,7 @@ Forchtner
 
 ---
 
-<!-- page 4 -->
+<!-- page 3 -->
 
 The Routledge Handbook 
 of Historical Linguistics
@@ -97,7 +97,7 @@ LONDON AND NEW YORK
 
 ---
 
-<!-- page 5 -->
+<!-- page 4 -->
 
 First published 2015
 by Routledge
@@ -135,7 +135,7 @@ by Saxon Graphics Ltd, Derby
 
 ---
 
-<!-- page 6 -->
+<!-- page 5 -->
 
 v
 Contents
@@ -189,7 +189,7 @@ Michael Dunn
 
 ---
 
-<!-- page 7 -->
+<!-- page 6 -->
 
 Contents
 vi
@@ -244,7 +244,7 @@ Lev Michael
 
 ---
 
-<!-- page 8 -->
+<!-- page 7 -->
 
 Contents
 vii
@@ -295,7 +295,7 @@ Index
 
 ---
 
-<!-- page 9 -->
+<!-- page 8 -->
 
 viii
 Figures 
@@ -403,7 +403,7 @@ Current version of ASL ‘HELP’
 
 ---
 
-<!-- page 10 -->
+<!-- page 9 -->
 
 Figures
 ix
@@ -493,7 +493,7 @@ Examples of a balanced (A) and unbalanced tree (B)
 
 ---
 
-<!-- page 11 -->
+<!-- page 10 -->
 
 x
 Tables 
@@ -594,7 +594,7 @@ Hittite (preliminary)
 
 ---
 
-<!-- page 12 -->
+<!-- page 11 -->
 
 Tables
 xi
@@ -650,7 +650,7 @@ Canonical phonological system of Australian languages
 
 ---
 
-<!-- page 13 -->
+<!-- page 12 -->
 
 xii
 Contributors
@@ -687,7 +687,7 @@ cross-linguistically observed systematic patterns of variation and change in lin
 
 ---
 
-<!-- page 14 -->
+<!-- page 13 -->
 
 Contributors
 xiii
@@ -734,7 +734,7 @@ California, especially Karuk and Yurok.
 
 ---
 
-<!-- page 15 -->
+<!-- page 14 -->
 
 Contributors
 xiv
@@ -781,7 +781,7 @@ Historical and Comparative Linguistics, University of Cape Town (ret. 2002), and
 
 ---
 
-<!-- page 16 -->
+<!-- page 15 -->
 
 Contributors
 xv
@@ -828,7 +828,7 @@ works on Australian Aboriginal languages (syntax, semantics, dictionaries, kinsh
 
 ---
 
-<!-- page 17 -->
+<!-- page 16 -->
 
 Contributors
 xvi
@@ -874,7 +874,7 @@ Wichmann is General Editor of the journal Language Dynamics and Change.
 
 ---
 
-<!-- page 18 -->
+<!-- page 17 -->
 
 xvii
 Acknowledgements
@@ -906,7 +906,7 @@ this volume, they would be grateful to hear from any they were unable to contact
 
 ---
 
-<!-- page 19 -->
+<!-- page 18 -->
 
 xviii
 Editors’ acknowledgements
@@ -933,7 +933,7 @@ Sophie Jaques, Sara Marchington, Nadia Seemungal and Amanda Speake.
 
 ---
 
-<!-- page 20 -->
+<!-- page 19 -->
 
 1
 Editors’ introduction
@@ -972,7 +972,7 @@ standard textbooks in historical linguistics (Campbell 2004; Crowley and Bowern 
 
 ---
 
-<!-- page 21 -->
+<!-- page 20 -->
 
 Claire Bowern and Bethwyn Evans
 2
@@ -1027,7 +1027,7 @@ languages change remains elusive. It is telling that the questions that motivate
 
 ---
 
-<!-- page 22 -->
+<!-- page 21 -->
 
 Editors’ introduction
 3
@@ -1083,7 +1083,7 @@ example, Blevins (2004: xi), explicitly states that evolutionary phonology is a 
 
 ---
 
-<!-- page 23 -->
+<!-- page 22 -->
 
 Claire Bowern and Bethwyn Evans
 4
@@ -1136,7 +1136,7 @@ change.
 
 ---
 
-<!-- page 24 -->
+<!-- page 23 -->
 
 Editors’ introduction
 5
@@ -1191,7 +1191,7 @@ relation to language relatedness. Linguists have tended to think of their goal a
 
 ---
 
-<!-- page 25 -->
+<!-- page 24 -->
 
 Claire Bowern and Bethwyn Evans
 6
@@ -1244,7 +1244,7 @@ data. Other problems stem from over-interpretation of data.13 And when we speak 
 
 ---
 
-<!-- page 26 -->
+<!-- page 25 -->
 
 Editors’ introduction
 7
@@ -1297,7 +1297,7 @@ studied language families, experts in the languages will discuss the weight of e
 
 ---
 
-<!-- page 27 -->
+<!-- page 26 -->
 
 Claire Bowern and Bethwyn Evans
 8
@@ -1347,7 +1347,7 @@ discussion about why certain cues seem to be particularly targeted for phonologi
 
 ---
 
-<!-- page 28 -->
+<!-- page 27 -->
 
 Editors’ introduction
 9
@@ -1400,7 +1400,7 @@ obscured by talk at cross-purposes about the locus of change. Several authors (H
 
 ---
 
-<!-- page 29 -->
+<!-- page 28 -->
 
 Claire Bowern and Bethwyn Evans
 10
@@ -1453,7 +1453,7 @@ change (Atkinson et al. 2008).
 
 ---
 
-<!-- page 30 -->
+<!-- page 29 -->
 
 Editors’ introduction
 11
@@ -1508,7 +1508,7 @@ that family trees do not well represent some language diversi cation events (e.
 
 ---
 
-<!-- page 31 -->
+<!-- page 30 -->
 
 Claire Bowern and Bethwyn Evans
 12
@@ -1561,7 +1561,7 @@ structures in a particular way on the other. Other work sees a role for external
 
 ---
 
-<!-- page 32 -->
+<!-- page 31 -->
 
 Editors’ introduction
 13
@@ -1614,7 +1614,7 @@ social conditions may be different enough to render models non-transferable. Con
 
 ---
 
-<!-- page 33 -->
+<!-- page 32 -->
 
 Claire Bowern and Bethwyn Evans
 14
@@ -1667,7 +1667,7 @@ transmitted as whole packages, not piecemeal. Three parts of this claim have bee
 
 ---
 
-<!-- page 34 -->
+<!-- page 33 -->
 
 Editors’ introduction
 15
@@ -1716,7 +1716,7 @@ chapters in the current volume.
 
 ---
 
-<!-- page 35 -->
+<!-- page 34 -->
 
 Claire Bowern and Bethwyn Evans
 16
@@ -1770,7 +1770,7 @@ maintain the importance of the ‘critical period’, they show in their study o
 
 ---
 
-<!-- page 36 -->
+<!-- page 35 -->
 
 Editors’ introduction
 17
@@ -1825,7 +1825,7 @@ Recognising that speakers of many different ages may be involved in language cha
 
 ---
 
-<!-- page 37 -->
+<!-- page 36 -->
 
 Claire Bowern and Bethwyn Evans
 18
@@ -1878,7 +1878,7 @@ tokens shifted in the direction of 2 occur with greater frequency from younger 
 
 ---
 
-<!-- page 38 -->
+<!-- page 37 -->
 
 Editors’ introduction
 19
@@ -1933,7 +1933,7 @@ on local-level case studies and generalisations to plot the effects of individua
 
 ---
 
-<!-- page 39 -->
+<!-- page 38 -->
 
 Claire Bowern and Bethwyn Evans
 20
@@ -1985,7 +1985,7 @@ Yang 2000; Croft 2000; Pargman 2002; Jones and Esch (eds) 2002;19 Torgersen and 
 
 ---
 
-<!-- page 40 -->
+<!-- page 39 -->
 
 Editors’ introduction
 21
@@ -2038,7 +2038,7 @@ Yang 2000; Farrar and Jones 2002; Hickey 2012). For Thomason and Kaufman (1988),
 
 ---
 
-<!-- page 41 -->
+<!-- page 40 -->
 
 Claire Bowern and Bethwyn Evans
 22
@@ -2091,7 +2091,7 @@ one or more linguistic systems (see Mufwene 2001: 15ff).
 
 ---
 
-<!-- page 42 -->
+<!-- page 41 -->
 
 Editors’ introduction
 23
@@ -2143,7 +2143,7 @@ diachrony and synchrony. He, however, takes a single fundamental principle of na
 
 ---
 
-<!-- page 43 -->
+<!-- page 42 -->
 
 Claire Bowern and Bethwyn Evans
 24
@@ -2196,7 +2196,7 @@ interpretation of their results. The phylogenetic approaches that Dunn discusses
 
 ---
 
-<!-- page 44 -->
+<!-- page 43 -->
 
 Editors’ introduction
 25
@@ -2249,7 +2249,7 @@ change that is needed to undertake morphological reconstruction with Anderson’
 
 ---
 
-<!-- page 45 -->
+<!-- page 44 -->
 
 Claire Bowern and Bethwyn Evans
 26
@@ -2304,7 +2304,7 @@ approaches are not incompatible with each other. The view that grammar is shaped
 
 ---
 
-<!-- page 46 -->
+<!-- page 45 -->
 
 Editors’ introduction
 27
@@ -2359,7 +2359,7 @@ industrialised Western speech communities, Stanford and Michael highlight the im
 
 ---
 
-<!-- page 47 -->
+<!-- page 46 -->
 
 Claire Bowern and Bethwyn Evans
 28
@@ -2412,7 +2412,7 @@ Heggarty describes as key in the “search for correspondences between linguisti
 
 ---
 
-<!-- page 48 -->
+<!-- page 47 -->
 
 Editors’ introduction
 29
@@ -2465,7 +2465,7 @@ area – the Paci c Northwest.
 
 ---
 
-<!-- page 49 -->
+<!-- page 48 -->
 
 Claire Bowern and Bethwyn Evans
 30
@@ -2518,7 +2518,7 @@ can be incorporated into models of language history.
 
 ---
 
-<!-- page 50 -->
+<!-- page 49 -->
 
 Editors’ introduction
 31
@@ -2569,7 +2569,7 @@ ways that deepen our understanding of both language and change.
 
 ---
 
-<!-- page 51 -->
+<!-- page 50 -->
 
 Claire Bowern and Bethwyn Evans
 32
@@ -2627,7 +2627,7 @@ Bowern [2007]), the vocabularies are poorly attested varieties from closely-rela
 
 ---
 
-<!-- page 52 -->
+<!-- page 51 -->
 
 Editors’ introduction
 33
@@ -2682,7 +2682,7 @@ phylogenetic thinking in biology and historical linguistics. Systematic Biology 
 
 ---
 
-<!-- page 53 -->
+<!-- page 52 -->
 
 Claire Bowern and Bethwyn Evans
 34
@@ -2741,7 +2741,7 @@ ONE 6(9): e25195.
 
 ---
 
-<!-- page 54 -->
+<!-- page 53 -->
 
 Editors’ introduction
 35
@@ -2798,7 +2798,7 @@ of Anthropology 32, 13–40.
 
 ---
 
-<!-- page 55 -->
+<!-- page 54 -->
 
 Claire Bowern and Bethwyn Evans
 36
@@ -2857,7 +2857,7 @@ Hammarström and van den Heuvel (eds), 428–539.
 
 ---
 
-<!-- page 56 -->
+<!-- page 55 -->
 
 Editors’ introduction
 37
@@ -2916,7 +2916,7 @@ MA: Blackwell Publishers.
 
 ---
 
-<!-- page 57 -->
+<!-- page 56 -->
 
 Claire Bowern and Bethwyn Evans
 38
@@ -2975,7 +2975,7 @@ Oxford University Press.
 
 ---
 
-<!-- page 58 -->
+<!-- page 57 -->
 
 Editors’ introduction
 39
@@ -3034,7 +3034,7 @@ and Brain Sciences 27: 169–226.
 
 ---
 
-<!-- page 59 -->
+<!-- page 58 -->
 
 Claire Bowern and Bethwyn Evans
 40
@@ -3092,7 +3092,7 @@ Canberra: Paci c Linguistics.
 
 ---
 
-<!-- page 60 -->
+<!-- page 59 -->
 
 Editors’ introduction
 41
@@ -3149,7 +3149,7 @@ Winter.
 
 ---
 
-<!-- page 61 -->
+<!-- page 60 -->
 
 Claire Bowern and Bethwyn Evans
 42
@@ -3177,20 +3177,20 @@ University Press.
 
 ---
 
-<!-- page 62 -->
+<!-- page 61 -->
 
 Part I
 Overviews
 
 ---
 
-<!-- page 63 -->
+<!-- page 62 -->
 
 This page intentionally left blank
 
 ---
 
-<!-- page 64 -->
+<!-- page 63 -->
 
 45
 1
@@ -3229,7 +3229,7 @@ what language the people who built the Tower spoke before the dissolution into m
 
 ---
 
-<!-- page 65 -->
+<!-- page 64 -->
 
 Roger Lass
 46
@@ -3284,7 +3284,7 @@ as something very like the modern idea of Indo-European.14
 
 ---
 
-<!-- page 66 -->
+<!-- page 65 -->
 
 Lineage and the constructive imagination 
 47
@@ -3335,7 +3335,7 @@ ancestors of manuscript traditions reconstructed. Contrary to the usual belief t
 
 ---
 
-<!-- page 67 -->
+<!-- page 66 -->
 
 Roger Lass
 48
@@ -3388,7 +3388,7 @@ to the general educated public (rather like the later Sapir 1921), this was a mi
 
 ---
 
-<!-- page 68 -->
+<!-- page 67 -->
 
 Lineage and the constructive imagination 
 49
@@ -3441,7 +3441,7 @@ what is familiar now (see section 4.2 below).
 
 ---
 
-<!-- page 69 -->
+<!-- page 68 -->
 
 Roger Lass
 50
@@ -3493,7 +3493,7 @@ current praxis.
 
 ---
 
-<!-- page 70 -->
+<!-- page 69 -->
 
 Lineage and the constructive imagination 
 51
@@ -3547,7 +3547,7 @@ simplicity26 I will display only the crucial relations between Greek and ‘Goth
 
 ---
 
-<!-- page 71 -->
+<!-- page 70 -->
 
 Roger Lass
 52
@@ -3617,7 +3617,7 @@ up to the 1870s to be the primordial state for Indo-European.31
 
 ---
 
-<!-- page 72 -->
+<!-- page 71 -->
 
 Lineage and the constructive imagination 
 53
@@ -3669,7 +3669,7 @@ remains in French, becomes a palatal in Italian and r in Portuguese: so blanc, b
 
 ---
 
-<!-- page 73 -->
+<!-- page 72 -->
 
 Roger Lass
 54
@@ -3722,7 +3722,7 @@ the next section for an example of its value). As Henry Hoenigswald has said (19
 
 ---
 
-<!-- page 74 -->
+<!-- page 73 -->
 
 Lineage and the constructive imagination 
 55
@@ -3772,7 +3772,7 @@ paradigms in Old English and Old Frisian:41
 
 ---
 
-<!-- page 75 -->
+<!-- page 74 -->
 
 Roger Lass
 56
@@ -3840,7 +3840,7 @@ theoretically guaranteed by behaving the same way as s.
 
 ---
 
-<!-- page 76 -->
+<!-- page 75 -->
 
 Lineage and the constructive imagination 
 57
@@ -3891,7 +3891,7 @@ modern notation only where absolutely necessary.
 
 ---
 
-<!-- page 77 -->
+<!-- page 76 -->
 
 Roger Lass
 58
@@ -3950,7 +3950,7 @@ also odd that he should be doubtful about early Iranian, which appears to be muc
 
 ---
 
-<!-- page 78 -->
+<!-- page 77 -->
 
 Lineage and the constructive imagination 
 59
@@ -4009,7 +4009,7 @@ original thinking) should read at least the summary and exposition in Joseph (20
 
 ---
 
-<!-- page 79 -->
+<!-- page 78 -->
 
 Roger Lass
 60
@@ -4068,7 +4068,7 @@ pattern.
 
 ---
 
-<!-- page 80 -->
+<!-- page 79 -->
 
 Lineage and the constructive imagination 
 61
@@ -4122,7 +4122,7 @@ Gessner, Conrad. 1555. Mithridates. Zurich: Christoph Frosch.
 
 ---
 
-<!-- page 81 -->
+<!-- page 80 -->
 
 Roger Lass
 62
@@ -4181,7 +4181,7 @@ Mouton de Gruyter.
 
 ---
 
-<!-- page 82 -->
+<!-- page 81 -->
 
 Lineage and the constructive imagination 
 63
@@ -4217,7 +4217,7 @@ Charles Scribner’s Sons.
 
 ---
 
-<!-- page 83 -->
+<!-- page 82 -->
 
 64
 2
@@ -4256,7 +4256,7 @@ that it  ts the reconstructable vocabulary, that early contacts with Uralic sup
 
 ---
 
-<!-- page 84 -->
+<!-- page 83 -->
 
 New perspectives in historical linguistics 
 65
@@ -4309,7 +4309,7 @@ precise testable predictions. Recent novel proposals connect the Andaman Islands
 
 ---
 
-<!-- page 85 -->
+<!-- page 84 -->
 
 Paul Kiparsky
 66
@@ -4421,7 +4421,7 @@ many
 
 ---
 
-<!-- page 86 -->
+<!-- page 85 -->
 
 New perspectives in historical linguistics 
 67
@@ -4474,7 +4474,7 @@ on an Indo-European base. Ross (1996, 2001) has assembled a dossier of what he c
 
 ---
 
-<!-- page 87 -->
+<!-- page 86 -->
 
 Paul Kiparsky
 68
@@ -4525,7 +4525,7 @@ its category (whether it is morphology, phonology, and so on) and on the contact
 
 ---
 
-<!-- page 88 -->
+<!-- page 87 -->
 
 New perspectives in historical linguistics 
 69
@@ -4583,7 +4583,7 @@ consonant is dropped: konvehti, sahrami, únivòrmu.12
 
 ---
 
-<!-- page 89 -->
+<!-- page 88 -->
 
 Paul Kiparsky
 70
@@ -4641,7 +4641,7 @@ mammary
 
 ---
 
-<!-- page 90 -->
+<!-- page 89 -->
 
 New perspectives in historical linguistics 
 71
@@ -4696,7 +4696,7 @@ counterpart of the same analogical process. For example, after [m	stæ] is rep
 
 ---
 
-<!-- page 91 -->
+<!-- page 90 -->
 
 Paul Kiparsky
 72
@@ -4756,7 +4756,7 @@ completion and some aspect of the target language is never acquired.
 
 ---
 
-<!-- page 92 -->
+<!-- page 91 -->
 
 New perspectives in historical linguistics 
 73
@@ -4809,7 +4809,7 @@ and Heine 2011) which invite semantic and pragmatic explanation. In subjectivisa
 
 ---
 
-<!-- page 93 -->
+<!-- page 92 -->
 
 Paul Kiparsky
 74
@@ -4861,7 +4861,7 @@ schematically represented in (7):
 
 ---
 
-<!-- page 94 -->
+<!-- page 93 -->
 
 New perspectives in historical linguistics 
 75
@@ -4911,7 +4911,7 @@ granted the natural assumption that innovations originate in favouring contexts 
 
 ---
 
-<!-- page 95 -->
+<!-- page 94 -->
 
 Paul Kiparsky
 76
@@ -4966,7 +4966,7 @@ actualisation of the new adjective, beginning with the attributive environment f
 
 ---
 
-<!-- page 96 -->
+<!-- page 95 -->
 
 New perspectives in historical linguistics 
 77
@@ -5018,7 +5018,7 @@ function of language as a marker of social identity. Exceptions and idiosyncrasi
 
 ---
 
-<!-- page 97 -->
+<!-- page 96 -->
 
 Paul Kiparsky
 78
@@ -5073,7 +5073,7 @@ precisely the cases where the existence of a covert stage is least plausible. Fo
 
 ---
 
-<!-- page 98 -->
+<!-- page 97 -->
 
 New perspectives in historical linguistics 
 79
@@ -5126,7 +5126,7 @@ in press; Hale, Kissock, and Reiss 2006, in press). On this view, all sound chan
 
 ---
 
-<!-- page 99 -->
+<!-- page 98 -->
 
 Paul Kiparsky
 80
@@ -5186,7 +5186,7 @@ resist analogical remodelling in virtue of being heard often). Hale (2007: 141) 
 
 ---
 
-<!-- page 100 -->
+<!-- page 99 -->
 
 New perspectives in historical linguistics 
 81
@@ -5238,7 +5238,7 @@ itself. The recent  ourishing of historical syntax has gone hand in hand with t
 
 ---
 
-<!-- page 101 -->
+<!-- page 100 -->
 
 Paul Kiparsky
 82
@@ -5296,7 +5296,7 @@ dominated by a paradigm-centred approach which rei es various accent types (acr
 
 ---
 
-<!-- page 102 -->
+<!-- page 101 -->
 
 New perspectives in historical linguistics 
 83
@@ -5351,7 +5351,7 @@ it may still have a place in textbooks for pedagogical reasons, but it is as for
 
 ---
 
-<!-- page 103 -->
+<!-- page 102 -->
 
 Paul Kiparsky
 84
@@ -5402,7 +5402,7 @@ unremarkable and simple structures (for example, some of the pathways to ergativ
 
 ---
 
-<!-- page 104 -->
+<!-- page 103 -->
 
 New perspectives in historical linguistics 
 85
@@ -5457,7 +5457,7 @@ morphosyntax, and semantics. Operations that determine the grammatical functions
 
 ---
 
-<!-- page 105 -->
+<!-- page 104 -->
 
 Paul Kiparsky
 86
@@ -5508,7 +5508,7 @@ history, and the philologies (see, among others, the chapters by Pakendorf, Hegg
 
 ---
 
-<!-- page 106 -->
+<!-- page 105 -->
 
 New perspectives in historical linguistics 
 87
@@ -5572,7 +5572,7 @@ native American women married to French fur traders (Bakker 1997). Mednyj Aleut 
 
 ---
 
-<!-- page 107 -->
+<!-- page 106 -->
 
 Paul Kiparsky
 88
@@ -5631,7 +5631,7 @@ her? but reject Is every bear washing her? Kroch (2001) notes the spontaneous em
 
 ---
 
-<!-- page 108 -->
+<!-- page 107 -->
 
 New perspectives in historical linguistics 
 89
@@ -5686,7 +5686,7 @@ In Good (ed.), 215–230.
 
 ---
 
-<!-- page 109 -->
+<!-- page 108 -->
 
 Paul Kiparsky
 90
@@ -5745,7 +5745,7 @@ change. Dordrecht: Kluwer, 91–119.
 
 ---
 
-<!-- page 110 -->
+<!-- page 109 -->
 
 New perspectives in historical linguistics 
 91
@@ -5803,7 +5803,7 @@ Campbell, Alistair. 1983. Old English grammar. Oxford: Clarendon Press.
 
 ---
 
-<!-- page 111 -->
+<!-- page 110 -->
 
 Paul Kiparsky
 92
@@ -5861,7 +5861,7 @@ Austronesian history. Current Anthropology 51: 223–256.
 
 ---
 
-<!-- page 112 -->
+<!-- page 111 -->
 
 New perspectives in historical linguistics 
 93
@@ -5920,7 +5920,7 @@ Marc Ettlinger, Nicholas Fleisher and Mischa Park-Doob (eds) Proceedings of the 
 
 ---
 
-<!-- page 113 -->
+<!-- page 112 -->
 
 Paul Kiparsky
 94
@@ -5979,7 +5979,7 @@ Finnisch-Ugrische Forschungen 61: 7–28.
 
 ---
 
-<!-- page 114 -->
+<!-- page 113 -->
 
 New perspectives in historical linguistics 
 95
@@ -6038,7 +6038,7 @@ Chicago Press.
 
 ---
 
-<!-- page 115 -->
+<!-- page 114 -->
 
 Paul Kiparsky
 96
@@ -6097,7 +6097,7 @@ Philadelphia: John Benjamins.
 
 ---
 
-<!-- page 116 -->
+<!-- page 115 -->
 
 New perspectives in historical linguistics 
 97
@@ -6155,7 +6155,7 @@ change 1: 199–244.
 
 ---
 
-<!-- page 117 -->
+<!-- page 116 -->
 
 Paul Kiparsky
 98
@@ -6214,7 +6214,7 @@ Meier-Brügger, Michael. 2002. Indogermanische Sprachwissenschaft. Berlin: de Gr
 
 ---
 
-<!-- page 118 -->
+<!-- page 117 -->
 
 New perspectives in historical linguistics 
 99
@@ -6273,7 +6273,7 @@ Benjamins, 123–136.
 
 ---
 
-<!-- page 119 -->
+<!-- page 118 -->
 
 Paul Kiparsky
 100
@@ -6331,7 +6331,7 @@ comparative linguistics. Oxford: Oxford University Press, 134–166.
 
 ---
 
-<!-- page 120 -->
+<!-- page 119 -->
 
 New perspectives in historical linguistics 
 101
@@ -6390,7 +6390,7 @@ linguistics. Berkeley: University of California Press.
 
 ---
 
-<!-- page 121 -->
+<!-- page 120 -->
 
 Paul Kiparsky
 102
@@ -6437,7 +6437,7 @@ Yu, Alan. 2007. Understanding near mergers: the case of morphological tone in Ca
 
 ---
 
-<!-- page 122 -->
+<!-- page 121 -->
 
 103
 3
@@ -6478,7 +6478,7 @@ consists of the present of ÊTRE ‘be’ plus the perfect participle of ALLER �
 
 ---
 
-<!-- page 123 -->
+<!-- page 122 -->
 
 Nigel Vincent
 104
@@ -6531,7 +6531,7 @@ Whereas the former, as our English rendering implies, commonly conveyed a sense 
 
 ---
 
-<!-- page 124 -->
+<!-- page 123 -->
 
 Compositionality and change
 105
@@ -6627,7 +6627,7 @@ varieties of Italian but not, for example, of Spanish and Portuguese, the presen
 
 ---
 
-<!-- page 125 -->
+<!-- page 124 -->
 
 Nigel Vincent
 106
@@ -6706,7 +6706,7 @@ go.PRET.1SG to G
 
 ---
 
-<!-- page 126 -->
+<!-- page 125 -->
 
 Compositionality and change
 107
@@ -6759,7 +6759,7 @@ such as Givón, Lehmann, Traugott, Hopper, Heine and others in the 1970s and 198
 
 ---
 
-<!-- page 127 -->
+<!-- page 126 -->
 
 Nigel Vincent
 108
@@ -6812,7 +6812,7 @@ counterfactuality. This last is in turn analysed as resulting from the combinati
 
 ---
 
-<!-- page 128 -->
+<!-- page 127 -->
 
 Compositionality and change
 109
@@ -6894,7 +6894,7 @@ you go.INF
 
 ---
 
-<!-- page 129 -->
+<!-- page 128 -->
 
 Nigel Vincent
 110
@@ -6974,7 +6974,7 @@ combines with D to form a new construction, whose interpretation is compositiona
 
 ---
 
-<!-- page 130 -->
+<!-- page 129 -->
 
 Compositionality and change
 111
@@ -7052,7 +7052,7 @@ or else eu has been reanalysed as a tense-shifting particle which can be inserte
 
 ---
 
-<!-- page 131 -->
+<!-- page 130 -->
 
 Nigel Vincent
 112
@@ -7140,7 +7140,7 @@ specialist literature. It is, however, important to appreciate that, despite occ
 
 ---
 
-<!-- page 132 -->
+<!-- page 131 -->
 
 Compositionality and change
 113
@@ -7195,7 +7195,7 @@ are to be expected, given the universal dimensions alluded to above, and those t
 
 ---
 
-<!-- page 133 -->
+<!-- page 132 -->
 
 Nigel Vincent
 114
@@ -7275,7 +7275,7 @@ seems to lie in the suggestion by Detges (2004) that the construction emerges ou
 
 ---
 
-<!-- page 134 -->
+<!-- page 133 -->
 
 Compositionality and change
 115
@@ -7344,7 +7344,7 @@ We  nd a similar restriction with the Italian construction in (15) discussed ab
 
 ---
 
-<!-- page 135 -->
+<!-- page 134 -->
 
 Nigel Vincent
 116
@@ -7427,7 +7427,7 @@ replacement form wended?
 
 ---
 
-<!-- page 136 -->
+<!-- page 135 -->
 
 Compositionality and change
 117
@@ -7504,7 +7504,7 @@ miserable world
 
 ---
 
-<!-- page 137 -->
+<!-- page 136 -->
 
 Nigel Vincent
 118
@@ -7559,7 +7559,7 @@ diachronic implications of this fact.
 
 ---
 
-<!-- page 138 -->
+<!-- page 137 -->
 
 Compositionality and change
 119
@@ -7611,7 +7611,7 @@ have been the mediating behaviour of the language users.
 
 ---
 
-<!-- page 139 -->
+<!-- page 138 -->
 
 Nigel Vincent
 120
@@ -7664,7 +7664,7 @@ compositionality. Oxford: Oxford University Press.
 
 ---
 
-<!-- page 140 -->
+<!-- page 139 -->
 
 Compositionality and change
 121
@@ -7723,7 +7723,7 @@ Philadelphia: John Benjamins, 61–72.
 
 ---
 
-<!-- page 141 -->
+<!-- page 140 -->
 
 Nigel Vincent
 122
@@ -7781,7 +7781,7 @@ autonomy: perspectives from Romance in ectional morphology. Oxford: Oxford Univ
 
 ---
 
-<!-- page 142 -->
+<!-- page 141 -->
 
 Compositionality and change
 123
@@ -7797,26 +7797,26 @@ Wray, Alison. 2002. Formulaic language and the lexicon. Cambridge: Cambridge Uni
 
 ---
 
-<!-- page 143 -->
+<!-- page 142 -->
 
 This page intentionally left blank
 
 ---
 
-<!-- page 144 -->
+<!-- page 143 -->
 
 Part II 
 Methods and models
 
 ---
 
-<!-- page 145 -->
+<!-- page 144 -->
 
 This page intentionally left blank
 
 ---
 
-<!-- page 146 -->
+<!-- page 145 -->
 
 127
 4
@@ -7855,7 +7855,7 @@ resulted from a common origin in a language he called Scythian. The author of De
 
 ---
 
-<!-- page 147 -->
+<!-- page 146 -->
 
 Michael Weiss
 128
@@ -7908,7 +7908,7 @@ Meillet, philosophically committed to a formalist approach to reconstruction, ar
 
 ---
 
-<!-- page 148 -->
+<!-- page 147 -->
 
 The Comparative Method
 129
@@ -8002,7 +8002,7 @@ the basis of the three sets we must set up two proto-segments. In the case of Se
 
 ---
 
-<!-- page 149 -->
+<!-- page 148 -->
 
 Michael Weiss
 130
@@ -8105,7 +8105,7 @@ Sets 5 and 7? When we compare Sets 4, 5, and 6 we note that the re exes in 5 ov
 
 ---
 
-<!-- page 150 -->
+<!-- page 149 -->
 
 The Comparative Method
 131
@@ -8156,7 +8156,7 @@ cannot represent the same thing and hence the reconstruction *kj would seem to b
 
 ---
 
-<!-- page 151 -->
+<!-- page 150 -->
 
 Michael Weiss
 132
@@ -8208,7 +8208,7 @@ This statement naturally extends to CM as well.
 
 ---
 
-<!-- page 152 -->
+<!-- page 151 -->
 
 The Comparative Method
 133
@@ -8261,7 +8261,7 @@ from a common origin obviously the patent similarities will rise well above the 
 
 ---
 
-<!-- page 153 -->
+<!-- page 152 -->
 
 Michael Weiss
 134
@@ -8363,7 +8363,7 @@ narrow region of the vowel space. So is this perhaps a sound change that has not
 
 ---
 
-<!-- page 154 -->
+<!-- page 153 -->
 
 The Comparative Method
 135
@@ -8415,7 +8415,7 @@ rare, while a change from stop to glide is more common; frequencies which are re
 
 ---
 
-<!-- page 155 -->
+<!-- page 154 -->
 
 Michael Weiss
 136
@@ -8468,7 +8468,7 @@ relaxes the requirements for matching of the initial consonant in such a case fo
 
 ---
 
-<!-- page 156 -->
+<!-- page 155 -->
 
 The Comparative Method
 137
@@ -8516,7 +8516,7 @@ would regularly have been deleted in French and the initial k before a would be 
 
 ---
 
-<!-- page 157 -->
+<!-- page 156 -->
 
 Michael Weiss
 138
@@ -8567,7 +8567,7 @@ hypothesis a valid alternative model for the Indo-European languages or any grou
 
 ---
 
-<!-- page 158 -->
+<!-- page 157 -->
 
 The Comparative Method
 139
@@ -8620,7 +8620,7 @@ reconstruction of such an unusual phenomenon cannot be excluded.
 
 ---
 
-<!-- page 159 -->
+<!-- page 158 -->
 
 Michael Weiss
 140
@@ -8668,7 +8668,7 @@ still remains the primary tool for uncovering linguistic history.
 
 ---
 
-<!-- page 160 -->
+<!-- page 159 -->
 
 The Comparative Method
 141
@@ -8721,7 +8721,7 @@ a crucial role in semantic reconstruction. Once regular correspondences have bee
 
 ---
 
-<!-- page 161 -->
+<!-- page 160 -->
 
 Michael Weiss
 142
@@ -8770,7 +8770,7 @@ Pedersen. Wiesbaden: Reichert, 449–454.
 
 ---
 
-<!-- page 162 -->
+<!-- page 161 -->
 
 The Comparative Method
 143
@@ -8829,7 +8829,7 @@ phonological theory. Oxford: Blackwell, 640–670.
 
 ---
 
-<!-- page 163 -->
+<!-- page 162 -->
 
 Michael Weiss
 144
@@ -8887,7 +8887,7 @@ the original Russian manuscript  rst published in Voprosy jazykoznanija, 1958 7
 
 ---
 
-<!-- page 164 -->
+<!-- page 163 -->
 
 The Comparative Method
 145
@@ -8908,7 +8908,7 @@ Wright, Joseph. 1905. The English dialect grammar. Henry Frowde: Oxford.
 
 ---
 
-<!-- page 165 -->
+<!-- page 164 -->
 
 146
 5
@@ -8947,7 +8947,7 @@ comparison.
 
 ---
 
-<!-- page 166 -->
+<!-- page 165 -->
 
 The Comparative Method
 147
@@ -8998,7 +8998,7 @@ problematic.
 
 ---
 
-<!-- page 167 -->
+<!-- page 166 -->
 
 Mark Hale
 148
@@ -9126,7 +9126,7 @@ terms cannot be coherently de ned, and their relationship to the data sets used
 
 ---
 
-<!-- page 168 -->
+<!-- page 167 -->
 
 The Comparative Method
 149
@@ -9177,7 +9177,7 @@ ancestor of that dialectally-divided entity.
 
 ---
 
-<!-- page 169 -->
+<!-- page 168 -->
 
 Mark Hale
 150
@@ -9228,7 +9228,7 @@ language has ‘broken up’ (to use traditional terminology) and we are looking
 
 ---
 
-<!-- page 170 -->
+<!-- page 169 -->
 
 The Comparative Method
 151
@@ -9278,7 +9278,7 @@ Comparative Method:
 
 ---
 
-<!-- page 171 -->
+<!-- page 170 -->
 
 Mark Hale
 152
@@ -9325,7 +9325,7 @@ in areas of phonology, morphology, syntax, etc. by only allowing some of those f
 
 ---
 
-<!-- page 172 -->
+<!-- page 171 -->
 
 The Comparative Method
 153
@@ -9452,7 +9452,7 @@ phonemic-based tree. Here is the new tree:
 
 ---
 
-<!-- page 173 -->
+<!-- page 172 -->
 
 Mark Hale
 154
@@ -9497,7 +9497,7 @@ not, for the vast majority of us, a real linguistic entity. Using such forms amo
 
 ---
 
-<!-- page 174 -->
+<!-- page 173 -->
 
 The Comparative Method
 155
@@ -9550,7 +9550,7 @@ whereby morphologically related forms are reduced to a single phonemic represent
 
 ---
 
-<!-- page 175 -->
+<!-- page 174 -->
 
 Mark Hale
 156
@@ -9601,7 +9601,7 @@ for example, that it is masculine, accusative and a noun. The reconstruction of 
 
 ---
 
-<!-- page 176 -->
+<!-- page 175 -->
 
 The Comparative Method
 157
@@ -9656,7 +9656,7 @@ lexeme,14 the latter to a more global change in the syntactic typology of the la
 
 ---
 
-<!-- page 177 -->
+<!-- page 176 -->
 
 Mark Hale
 158
@@ -9725,7 +9725,7 @@ reconstructed data to argue for the view that proto-language heterogeneity exist
 
 ---
 
-<!-- page 178 -->
+<!-- page 177 -->
 
 The Comparative Method
 159
@@ -9788,7 +9788,7 @@ to fully recover what happened. But that is the correct result: it is but cold c
 
 ---
 
-<!-- page 179 -->
+<!-- page 178 -->
 
 Mark Hale
 160
@@ -9842,7 +9842,7 @@ Linguistics.
 
 ---
 
-<!-- page 180 -->
+<!-- page 179 -->
 
 161
 6
@@ -9881,7 +9881,7 @@ the availability of data explains why the process of language diversi cation pl
 
 ---
 
-<!-- page 181 -->
+<!-- page 180 -->
 
 Alexandre François
 162
@@ -9933,7 +9933,7 @@ languages.
 
 ---
 
-<!-- page 182 -->
+<!-- page 181 -->
 
 Trees, waves and linkages
 163
@@ -9985,7 +9985,7 @@ division of an earlier uni ed community into separate social groups.
 
 ---
 
-<!-- page 183 -->
+<!-- page 182 -->
 
 Alexandre François
 164
@@ -10033,7 +10033,7 @@ during the lifetime of the intermediate proto-language – after the split from 
 
 ---
 
-<!-- page 184 -->
+<!-- page 183 -->
 
 Trees, waves and linkages
 165
@@ -10084,7 +10084,7 @@ the Tree Model, a given language may belong to only one higher-level subgroup at
 
 ---
 
-<!-- page 185 -->
+<!-- page 184 -->
 
 Alexandre François
 166
@@ -10139,7 +10139,7 @@ and trees should not be assigned more explanatory value than they actually have.
 
 ---
 
-<!-- page 186 -->
+<!-- page 185 -->
 
 Trees, waves and linkages
 167
@@ -10191,7 +10191,7 @@ enriched by sociolinguistic studies, which observed how individual instances of 
 
 ---
 
-<!-- page 187 -->
+<!-- page 186 -->
 
 Alexandre François
 168
@@ -10244,7 +10244,7 @@ Hugo Schuchardt and Johannes Schmidt proposed in the early 1870s (Schmidt 1872),
 
 ---
 
-<!-- page 188 -->
+<!-- page 187 -->
 
 Trees, waves and linkages
 169
@@ -10300,7 +10300,7 @@ Figure 6.3 Intersecting isoglosses in a dialect continuum or a linkage
 
 ---
 
-<!-- page 189 -->
+<!-- page 188 -->
 
 Alexandre François
 170
@@ -10353,7 +10353,7 @@ which have arisen by dialect differentiation,” where ‘communalect’ is a ge
 
 ---
 
-<!-- page 190 -->
+<!-- page 189 -->
 
 Trees, waves and linkages
 171
@@ -10406,7 +10406,7 @@ CDEFGH would still be incompatible with a tree, and would need to be represented
 
 ---
 
-<!-- page 191 -->
+<!-- page 190 -->
 
 Alexandre François
 172
@@ -10455,7 +10455,7 @@ support for each subgroup in a tree (e.g. Dunn et al. 2008; Greenhill and Gray 2
 
 ---
 
-<!-- page 192 -->
+<!-- page 191 -->
 
 Trees, waves and linkages
 173
@@ -10508,7 +10508,7 @@ the Comparative Method can perfectly well be applied to a wave-based or network-
 
 ---
 
-<!-- page 193 -->
+<!-- page 192 -->
 
 Alexandre François
 174
@@ -10556,7 +10556,7 @@ are given on Map 6.1, together with customised abbreviations and numbers of spea
 
 ---
 
-<!-- page 194 -->
+<!-- page 193 -->
 
 Ureparapara
 Vanua Lava
@@ -10621,7 +10621,7 @@ Map 6.1 The 17 languages of the Torres and Banks Islands, in northern Vanuatu
 
 ---
 
-<!-- page 195 -->
+<!-- page 194 -->
 
 Alexandre François
 176
@@ -10674,7 +10674,7 @@ supported than BC: the two subgroups should be given equal weight, regardless of
 
 ---
 
-<!-- page 196 -->
+<!-- page 195 -->
 
 Trees, waves and linkages
 177
@@ -10891,7 +10891,7 @@ MRL
 
 ---
 
-<!-- page 197 -->
+<!-- page 196 -->
 
 Alexandre François
 178
@@ -10966,7 +10966,7 @@ history cannot be represented by a tree, and is better approached using a non-cl
 
 ---
 
-<!-- page 198 -->
+<!-- page 197 -->
 
 Trees, waves and linkages
 179
@@ -11007,7 +11007,7 @@ similarity
 
 ---
 
-<!-- page 199 -->
+<!-- page 198 -->
 
 Alexandre François
 180
@@ -11062,7 +11062,7 @@ p + q
 
 ---
 
-<!-- page 200 -->
+<!-- page 199 -->
 
 Trees, waves and linkages
 181
@@ -11115,7 +11115,7 @@ have been mentioned in this chapter.
 
 ---
 
-<!-- page 201 -->
+<!-- page 200 -->
 
 Alexandre François
 182
@@ -11196,7 +11196,7 @@ the potential of the glottometric method for reconstructing the shape of past so
 
 ---
 
-<!-- page 202 -->
+<!-- page 201 -->
 
 HIW
 LTG
@@ -11219,7 +11219,7 @@ Figure 6.5 A glottometric diagram of the Torres–Banks languages
 
 ---
 
-<!-- page 203 -->
+<!-- page 202 -->
 
 Alexandre François
 184
@@ -11277,7 +11277,7 @@ Hale (this volume) expresses a similar idea in terms of individual ‘grammars�
 
 ---
 
-<!-- page 204 -->
+<!-- page 203 -->
 
 Trees, waves and linkages
 185
@@ -11333,7 +11333,7 @@ Journal of Linguistics 21(2): 339–384.
 
 ---
 
-<!-- page 205 -->
+<!-- page 204 -->
 
 Alexandre François
 186
@@ -11390,7 +11390,7 @@ Linguistics 5(3): 174–187.
 
 ---
 
-<!-- page 206 -->
+<!-- page 205 -->
 
 Trees, waves and linkages
 187
@@ -11448,7 +11448,7 @@ Hock, Hans Henrich. 1991. Principles of historical linguistics. Berlin: de Gruyt
 
 ---
 
-<!-- page 207 -->
+<!-- page 206 -->
 
 Alexandre François
 188
@@ -11506,7 +11506,7 @@ Durie and Ross (eds), 180–217.
 
 ---
 
-<!-- page 208 -->
+<!-- page 207 -->
 
 Trees, waves and linkages
 189
@@ -11546,7 +11546,7 @@ Strasbourg, London: Trübner.
 
 ---
 
-<!-- page 209 -->
+<!-- page 208 -->
 
 190
  7
@@ -11589,7 +11589,7 @@ Method and the statistical, hypothesis testing approach of quantitative methods.
 
 ---
 
-<!-- page 210 -->
+<!-- page 209 -->
 
 Language phylogenies
 191
@@ -11650,7 +11650,7 @@ per meaning (as in Language C, Meaning 2).
 
 ---
 
-<!-- page 211 -->
+<!-- page 210 -->
 
 Michael Dunn
 192
@@ -11724,7 +11724,7 @@ similarity measures work best at relatively shallow time depths (Greenhill 2011)
 
 ---
 
-<!-- page 212 -->
+<!-- page 211 -->
 
 Language phylogenies
 193
@@ -11775,7 +11775,7 @@ culturally neutral vocabulary. According to this constant, a pair of languages w
 
 ---
 
-<!-- page 213 -->
+<!-- page 212 -->
 
 Michael Dunn
 194
@@ -11837,7 +11837,7 @@ languages and dialects at the time of the Holman et al. (2011) paper.
 
 ---
 
-<!-- page 214 -->
+<!-- page 213 -->
 
 Language phylogenies
 195
@@ -11898,7 +11898,7 @@ changes in linguistic distance uncorrelated with geographic space.
 
 ---
 
-<!-- page 215 -->
+<!-- page 214 -->
 
 Michael Dunn
 196
@@ -11951,7 +11951,7 @@ provide an evolutionarily plausible pathway to each language from their inferred
 
 ---
 
-<!-- page 216 -->
+<!-- page 215 -->
 
 Language phylogenies
 197
@@ -12004,7 +12004,7 @@ Markov chain (MCMC) sampling. This algorithm searches the tree space for the reg
 
 ---
 
-<!-- page 217 -->
+<!-- page 216 -->
 
 Michael Dunn
 198
@@ -12053,7 +12053,7 @@ support for Model A (see Section 4.3.1)
 
 ---
 
-<!-- page 218 -->
+<!-- page 217 -->
 
 Language phylogenies
 199
@@ -12107,7 +12107,7 @@ Stochastic Dollo model necessarily produces a rooted tree.
 
 ---
 
-<!-- page 219 -->
+<!-- page 218 -->
 
 Michael Dunn
 200
@@ -12172,7 +12172,7 @@ particular model. Even assuming that for each model the optimal parameter values
 
 ---
 
-<!-- page 220 -->
+<!-- page 219 -->
 
 Language phylogenies
 201
@@ -12232,7 +12232,7 @@ trees. Consensus trees are built by ranking all the binary splits in a tree samp
 
 ---
 
-<!-- page 221 -->
+<!-- page 220 -->
 
 Michael Dunn
 202
@@ -12281,7 +12281,7 @@ over the other.
 
 ---
 
-<!-- page 222 -->
+<!-- page 221 -->
 
 Batek_Deq_Koh
 Batek_Deq_Terengganu
@@ -12402,7 +12402,7 @@ showing conﬂ icting splits.
 
 ---
 
-<!-- page 223 -->
+<!-- page 222 -->
 
 Michael Dunn
 204
@@ -12456,7 +12456,7 @@ inconsistencies localised particularly in the Germanic languages, presumably re
 
 ---
 
-<!-- page 224 -->
+<!-- page 223 -->
 
 Language phylogenies
 205
@@ -12507,7 +12507,7 @@ Ribeiro 2011; Bouckaert et al. 2012). This allows probabilistic inference of the
 
 ---
 
-<!-- page 225 -->
+<!-- page 224 -->
 
 Michael Dunn
 206
@@ -12558,7 +12558,7 @@ linguistic questions.
 
 ---
 
-<!-- page 226 -->
+<!-- page 225 -->
 
 Language phylogenies
 207
@@ -12607,7 +12607,7 @@ databases undergoing active development.
 
 ---
 
-<!-- page 227 -->
+<!-- page 226 -->
 
 Michael Dunn
 208
@@ -12662,7 +12662,7 @@ reasoning in the evaluation of typological diversity in Island Melanesia. Oceani
 
 ---
 
-<!-- page 228 -->
+<!-- page 227 -->
 
 Language phylogenies
 209
@@ -12721,7 +12721,7 @@ coevolution in northern Island Melanesia. PLoS Genetics 4 (10).
 
 ---
 
-<!-- page 229 -->
+<!-- page 228 -->
 
 Michael Dunn
 210
@@ -12780,7 +12780,7 @@ language history. In Nicholas Evans and Marian Klamer (eds) Melanesian languages
 
 ---
 
-<!-- page 230 -->
+<!-- page 229 -->
 
 Language phylogenies
 211
@@ -12820,7 +12820,7 @@ Archaeological Research, 75–90.
 
 ---
 
-<!-- page 231 -->
+<!-- page 230 -->
 
 212
 8
@@ -12858,7 +12858,7 @@ processes, as in (1).
 
 ---
 
-<!-- page 232 -->
+<!-- page 231 -->
 
 Diachronic stability and typology 
 213
@@ -12909,7 +12909,7 @@ state-process model, as shown in (3).
 
 ---
 
-<!-- page 233 -->
+<!-- page 232 -->
 
 Søren Wichmann
 214
@@ -12960,7 +12960,7 @@ suggestion, that they do not always behave in tandem:
 
 ---
 
-<!-- page 234 -->
+<!-- page 233 -->
 
 Diachronic stability and typology 
 215
@@ -13012,7 +13012,7 @@ directionality of valence-changing processes is somewhat genealogically stable. 
 
 ---
 
-<!-- page 235 -->
+<!-- page 234 -->
 
 Søren Wichmann
 216
@@ -13064,7 +13064,7 @@ Eurasian feature?
 
 ---
 
-<!-- page 236 -->
+<!-- page 235 -->
 
 Diachronic stability and typology 
 217
@@ -13116,7 +13116,7 @@ assumption that both genealogical and areal cohesiveness are inherent in typolog
 
 ---
 
-<!-- page 237 -->
+<!-- page 236 -->
 
 Søren Wichmann
 218
@@ -13167,7 +13167,7 @@ stability, which is to estimate numbers and rates of change in different typolog
 
 ---
 
-<!-- page 238 -->
+<!-- page 237 -->
 
 Diachronic stability and typology 
 219
@@ -13220,7 +13220,7 @@ therefore make exclusive reference to their results.
 
 ---
 
-<!-- page 239 -->
+<!-- page 238 -->
 
 Søren Wichmann
 220
@@ -13313,7 +13313,7 @@ is very unstable; the various word order features, e.g., ‘Order of subject, ob
 
 ---
 
-<!-- page 240 -->
+<!-- page 239 -->
 
 Diachronic stability and typology 
 221
@@ -13366,7 +13366,7 @@ coupled changes is still not well understood, however (but see Dunn et al. 2011;
 
 ---
 
-<!-- page 241 -->
+<!-- page 240 -->
 
 Søren Wichmann
 222
@@ -13423,7 +13423,7 @@ same data.
 
 ---
 
-<!-- page 242 -->
+<!-- page 241 -->
 
 Diachronic stability and typology 
 223
@@ -13478,7 +13478,7 @@ Hawkins, John. 1983. Word order universals. San Diego: Academic Press.
 
 ---
 
-<!-- page 243 -->
+<!-- page 242 -->
 
 Søren Wichmann
 224
@@ -13517,20 +13517,20 @@ research. Diachronica 24: 373–404.
 
 ---
 
-<!-- page 244 -->
+<!-- page 243 -->
 
 Part III
 Language change
 
 ---
 
-<!-- page 245 -->
+<!-- page 244 -->
 
 This page intentionally left blank
 
 ---
 
-<!-- page 246 -->
+<!-- page 245 -->
 
 227
 9
@@ -13571,7 +13571,7 @@ thinking (Bloom eld 1933), had two main tenets. The  rst and more celebrated, 
 
 ---
 
-<!-- page 247 -->
+<!-- page 246 -->
 
 Andrew Garrett
 228
@@ -13632,7 +13632,7 @@ gos ‘goose’
 
 ---
 
-<!-- page 248 -->
+<!-- page 247 -->
 
 Sound change
 229
@@ -13717,7 +13717,7 @@ k-k-re
 
 ---
 
-<!-- page 249 -->
+<!-- page 248 -->
 
 Andrew Garrett
 230
@@ -13775,7 +13775,7 @@ Morphologically isolated forms in Kesswil: /frø/ ‘frog’, /gøtti/ ‘godf
 
 ---
 
-<!-- page 250 -->
+<!-- page 249 -->
 
 Sound change
 231
@@ -13829,7 +13829,7 @@ in postvocalic positions; cf. boc /phk/ ‘male goat’ vs. bog /pok/ ‘soft�
 
 ---
 
-<!-- page 251 -->
+<!-- page 250 -->
 
 Andrew Garrett
 232
@@ -13880,7 +13880,7 @@ no phonetic process; on Blust’s dossier see Goddard (2007) and Blevins (2007, 
 
 ---
 
-<!-- page 252 -->
+<!-- page 251 -->
 
 Sound change
 233
@@ -13960,7 +13960,7 @@ from Cleveland-area speakers born from 1878 to 1977, Moreton and Thomas (2007) a
 
 ---
 
-<!-- page 253 -->
+<!-- page 252 -->
 
 Andrew Garrett
 234
@@ -14017,7 +14017,7 @@ properly be put on a level with ordinary sound-change’, in the words of Bloom
 
 ---
 
-<!-- page 254 -->
+<!-- page 253 -->
 
 Sound change
 235
@@ -14069,7 +14069,7 @@ glottis] segment). Examples appear in (10).
 
 ---
 
-<!-- page 255 -->
+<!-- page 254 -->
 
 Andrew Garrett
 236
@@ -14128,7 +14128,7 @@ language. In this approach, pronunciation changes that produce new phones merely
 
 ---
 
-<!-- page 256 -->
+<!-- page 255 -->
 
 Sound change
 237
@@ -14181,7 +14181,7 @@ of the latter was a pattern in which labial consonants are followed by high vowe
 
 ---
 
-<!-- page 257 -->
+<!-- page 256 -->
 
 Andrew Garrett
 238
@@ -14234,7 +14234,7 @@ as independent diachronic processes. Therefore the existence of analogical effec
 
 ---
 
-<!-- page 258 -->
+<!-- page 257 -->
 
 Sound change
 239
@@ -14289,7 +14289,7 @@ inhibit sound change. The  rst involves lexical frequency, a debated matter tha
 
 ---
 
-<!-- page 259 -->
+<!-- page 258 -->
 
 Andrew Garrett
 240
@@ -14347,7 +14347,7 @@ sociolinguistic processes.
 
 ---
 
-<!-- page 260 -->
+<!-- page 259 -->
 
 Sound change
 241
@@ -14400,7 +14400,7 @@ they compensate perceptually for coarticulation. Since perceptual compensation i
 
 ---
 
-<!-- page 261 -->
+<!-- page 260 -->
 
 Andrew Garrett
 242
@@ -14450,7 +14450,7 @@ Cambridge University Press.
 
 ---
 
-<!-- page 262 -->
+<!-- page 261 -->
 
 Sound change
 243
@@ -14507,7 +14507,7 @@ Phonetically based phonology. Cambridge: Cambridge University Press, 117–156.
 
 ---
 
-<!-- page 263 -->
+<!-- page 262 -->
 
 Andrew Garrett
 244
@@ -14566,7 +14566,7 @@ Benjamins, 157–173.
 
 ---
 
-<!-- page 264 -->
+<!-- page 263 -->
 
 Sound change
 245
@@ -14625,7 +14625,7 @@ Labov, William. 1981. Resolving the Neogrammarian controversy. Language 57: 267�
 
 ---
 
-<!-- page 265 -->
+<!-- page 264 -->
 
 Andrew Garrett
 246
@@ -14684,7 +14684,7 @@ Historical linguistics II: theory and description in phonology. Amsterdam: North
 
 ---
 
-<!-- page 266 -->
+<!-- page 265 -->
 
 Sound change
 247
@@ -14743,7 +14743,7 @@ Cambridge: Cambridge University Press, 313–334.
 
 ---
 
-<!-- page 267 -->
+<!-- page 266 -->
 
 Andrew Garrett
 248
@@ -14799,7 +14799,7 @@ Press.
 
 ---
 
-<!-- page 268 -->
+<!-- page 267 -->
 
 249
 10
@@ -14841,7 +14841,7 @@ split. A split usually occurs when the allophones of a single phoneme produced b
 
 ---
 
-<!-- page 269 -->
+<!-- page 268 -->
 
 Silke Hamann
 250
@@ -14894,7 +14894,7 @@ change; we will come back to this case in section 2.3.
 
 ---
 
-<!-- page 270 -->
+<!-- page 269 -->
 
 Phonological changes
 251
@@ -14947,7 +14947,7 @@ system: the number is either enlarged (by split or the integration of a loan pho
 
 ---
 
-<!-- page 271 -->
+<!-- page 270 -->
 
 Silke Hamann
 252
@@ -15008,7 +15008,7 @@ phonological category between the two [generations]” with older listeners havi
 
 ---
 
-<!-- page 272 -->
+<!-- page 271 -->
 
 Phonological changes
 253
@@ -15065,7 +15065,7 @@ simpli cations (lenitions, assimilations) or show a directionality of perceptua
 
 ---
 
-<!-- page 273 -->
+<!-- page 272 -->
 
 Silke Hamann
 254
@@ -15126,7 +15126,7 @@ active, as it blocks the process of glide formation (turning /i/ into [j] in fas
 
 ---
 
-<!-- page 274 -->
+<!-- page 273 -->
 
 Phonological changes
 255
@@ -15181,7 +15181,7 @@ change.
 
 ---
 
-<!-- page 275 -->
+<!-- page 274 -->
 
 Silke Hamann
 256
@@ -15227,7 +15227,7 @@ Figure 10.1 A modular theory for the formalisation of sound changes
 
 ---
 
-<!-- page 276 -->
+<!-- page 275 -->
 
 Phonological changes
 257
@@ -15282,7 +15282,7 @@ information on the simulation of some of the aspects mentioned here. When formal
 
 ---
 
-<!-- page 277 -->
+<!-- page 276 -->
 
 Silke Hamann
 258
@@ -15333,7 +15333,7 @@ this type of experiment shows peaks at category boundary locations. In discrimin
 
 ---
 
-<!-- page 278 -->
+<!-- page 277 -->
 
 Phonological changes
 259
@@ -15386,7 +15386,7 @@ of a near-neutralised voicing contrast in alveolar plosives (based on word- nal
 
 ---
 
-<!-- page 279 -->
+<!-- page 278 -->
 
 Silke Hamann
 260
@@ -15439,7 +15439,7 @@ and argues that their results are artefacts of the experimental conditions.
 
 ---
 
-<!-- page 280 -->
+<!-- page 279 -->
 
 Phonological changes
 261
@@ -15496,7 +15496,7 @@ Africana Linguistica 13: 53–78.
 
 ---
 
-<!-- page 281 -->
+<!-- page 280 -->
 
 Silke Hamann
 262
@@ -15554,7 +15554,7 @@ progress. Philadelphia: U.S. Regional Survey.
 
 ---
 
-<!-- page 282 -->
+<!-- page 281 -->
 
 Phonological changes
 263
@@ -15573,7 +15573,7 @@ Yu, Alan C. L. 2011. Mergers and neutralization. In van Oostendorp et al. (eds),
 
 ---
 
-<!-- page 283 -->
+<!-- page 282 -->
 
 264
 11
@@ -15617,7 +15617,7 @@ lexical stock of a language, since they affect the content of the lexicon, are i
 
 ---
 
-<!-- page 284 -->
+<!-- page 283 -->
 
 Morphological change
 265
@@ -15672,7 +15672,7 @@ huis ‘of the lord, house’ and koninkskrone ‘royal crown’ from koninks kr
 
 ---
 
-<!-- page 285 -->
+<!-- page 284 -->
 
 Stephen R. Anderson
 266
@@ -15727,7 +15727,7 @@ linguistics, and which has been claimed to represent an independent force drivin
 
 ---
 
-<!-- page 286 -->
+<!-- page 285 -->
 
 Morphological change
 267
@@ -15780,7 +15780,7 @@ conditioned process of metathesis in some languages of the Straits Salish group,
 
 ---
 
-<!-- page 287 -->
+<!-- page 286 -->
 
 Stephen R. Anderson
 268
@@ -15834,7 +15834,7 @@ phonology, which has become opaque and morphologised. As Montler (1989: 96) poin
 
 ---
 
-<!-- page 288 -->
+<!-- page 287 -->
 
 Morphological change
 269
@@ -15889,7 +15889,7 @@ reinterpreted in new ways. I address each of these possibilities in turn.
 
 ---
 
-<!-- page 289 -->
+<!-- page 288 -->
 
 Stephen R. Anderson
 270
@@ -15943,7 +15943,7 @@ complexity in the history of the language are explored, however, it becomes rath
 
 ---
 
-<!-- page 290 -->
+<!-- page 289 -->
 
 Morphological change
 271
@@ -16008,7 +16008,7 @@ the syntactic subject. What appears to have happened is that the syntactic sourc
 
 ---
 
-<!-- page 291 -->
+<!-- page 290 -->
 
 Stephen R. Anderson
 272
@@ -16065,7 +16065,7 @@ least some sub-groups of earlier Polynesian, we can imagine that from the learne
 
 ---
 
-<!-- page 292 -->
+<!-- page 291 -->
 
 Morphological change
 273
@@ -16121,7 +16121,7 @@ humans outrank babies and large animals, which outrank sheep, goats, and chicken
 
 ---
 
-<!-- page 293 -->
+<!-- page 292 -->
 
 Stephen R. Anderson
 274
@@ -16174,7 +16174,7 @@ at the expense of complications in the morphology.
 
 ---
 
-<!-- page 294 -->
+<!-- page 293 -->
 
 Morphological change
 275
@@ -16231,7 +16231,7 @@ poi
 
 ---
 
-<!-- page 295 -->
+<!-- page 294 -->
 
 Stephen R. Anderson
 276
@@ -16295,7 +16295,7 @@ Fr. carriole ‘covered carriage’ > English carry-all; Algonquian ot"ek > Engl
 
 ---
 
-<!-- page 296 -->
+<!-- page 295 -->
 
 Morphological change
 277
@@ -16347,7 +16347,7 @@ the grammar prior to their introduction, but overridden by the use of other, les
 
 ---
 
-<!-- page 297 -->
+<!-- page 296 -->
 
 Stephen R. Anderson
 278
@@ -16402,7 +16402,7 @@ difference between these examples and the ones where Kuryowicz’s fourth law p
 
 ---
 
-<!-- page 298 -->
+<!-- page 297 -->
 
 Morphological change
 279
@@ -16455,7 +16455,7 @@ of ‘grammaticalisation’. This is particularly invoked in the case of morphol
 
 ---
 
-<!-- page 299 -->
+<!-- page 298 -->
 
 Stephen R. Anderson
 280
@@ -16505,7 +16505,7 @@ by the theory of grammaticalisation.
 
 ---
 
-<!-- page 300 -->
+<!-- page 299 -->
 
 Morphological change
 281
@@ -16558,7 +16558,7 @@ from those of a number of particular types of change that are to be studied in t
 
 ---
 
-<!-- page 301 -->
+<!-- page 300 -->
 
 Stephen R. Anderson
 282
@@ -16610,7 +16610,7 @@ chapter. Needless to say, they are not responsible for the use I have made of th
 
 ---
 
-<!-- page 302 -->
+<!-- page 301 -->
 
 Morphological change
 283
@@ -16670,7 +16670,7 @@ Press, 1–21.
 
 ---
 
-<!-- page 303 -->
+<!-- page 302 -->
 
 Stephen R. Anderson
 284
@@ -16729,7 +16729,7 @@ on Formal Linguistics 7: 229–240.
 
 ---
 
-<!-- page 304 -->
+<!-- page 303 -->
 
 Morphological change
 285
@@ -16760,7 +16760,7 @@ Zwicky, Arnold M. and Geoffrey K. Pullum. 1983. Cliticization vs. in ection: En
 
 ---
 
-<!-- page 305 -->
+<!-- page 304 -->
 
 286
 12
@@ -16803,7 +16803,7 @@ necessarily related (in reconstructing borrowing). Morphological reconstruction,
 
 ---
 
-<!-- page 306 -->
+<!-- page 305 -->
 
 Morphological reconstruction
 287
@@ -16854,7 +16854,7 @@ to the morphological analysis in descendant languages, this is an example of rec
 
 ---
 
-<!-- page 307 -->
+<!-- page 306 -->
 
 Harold Koch
 288
@@ -16920,7 +16920,7 @@ Koch 2003a: 274–275.)
 
 ---
 
-<!-- page 308 -->
+<!-- page 307 -->
 
 Morphological reconstruction
 289
@@ -16973,7 +16973,7 @@ ake, both ‘brother’, the  rst elements occurring also on their own as words
 
 ---
 
-<!-- page 309 -->
+<!-- page 308 -->
 
 Harold Koch
 290
@@ -17044,7 +17044,7 @@ plausible grounds for a reanalysis that absorbs this into the stem.
 
 ---
 
-<!-- page 310 -->
+<!-- page 309 -->
 
 Morphological reconstruction
 291
@@ -17117,7 +17117,7 @@ nimidi-yirra
 
 ---
 
-<!-- page 311 -->
+<!-- page 310 -->
 
 Harold Koch
 292
@@ -17167,7 +17167,7 @@ paradigms.11
 
 ---
 
-<!-- page 312 -->
+<!-- page 311 -->
 
 Morphological reconstruction
 293
@@ -17237,7 +17237,7 @@ language. The following section describes the opposite situation, morphologisati
 
 ---
 
-<!-- page 313 -->
+<!-- page 312 -->
 
 Harold Koch
 294
@@ -17287,7 +17287,7 @@ case value.13
 
 ---
 
-<!-- page 314 -->
+<!-- page 313 -->
 
 Morphological reconstruction
 295
@@ -17355,7 +17355,7 @@ person meaning.16
 
 ---
 
-<!-- page 315 -->
+<!-- page 314 -->
 
 Harold Koch
 296
@@ -17439,7 +17439,7 @@ associated motion function.
 
 ---
 
-<!-- page 316 -->
+<!-- page 315 -->
 
 Morphological reconstruction
 297
@@ -17504,7 +17504,7 @@ morphological elements.19
 
 ---
 
-<!-- page 317 -->
+<!-- page 316 -->
 
 Harold Koch
 298
@@ -17566,7 +17566,7 @@ languages. Hence it is concluded that the locative sense of Arabana-Wangkangurru
 
 ---
 
-<!-- page 318 -->
+<!-- page 317 -->
 
 Morphological reconstruction
 299
@@ -17625,7 +17625,7 @@ morphologised, i.e. acquire morphological functions. Reconstruction from morphol
 
 ---
 
-<!-- page 319 -->
+<!-- page 318 -->
 
 Harold Koch
 300
@@ -17688,7 +17688,7 @@ wup-un
 
 ---
 
-<!-- page 320 -->
+<!-- page 319 -->
 
 Morphological reconstruction
 301
@@ -17735,7 +17735,7 @@ Panyjima and Nyangumarta.
 
 ---
 
-<!-- page 321 -->
+<!-- page 320 -->
 
 Harold Koch
 302
@@ -17816,7 +17816,7 @@ single paradigm (cf. Meillet 1967: chapter 3).
 
 ---
 
-<!-- page 322 -->
+<!-- page 321 -->
 
 Morphological reconstruction
 303
@@ -17879,7 +17879,7 @@ explain the second example.
 
 ---
 
-<!-- page 323 -->
+<!-- page 322 -->
 
 Harold Koch
 304
@@ -17930,7 +17930,7 @@ morphological change.
 
 ---
 
-<!-- page 324 -->
+<!-- page 323 -->
 
 Morphological reconstruction
 305
@@ -17986,7 +17986,7 @@ University Press, 218–263.
 
 ---
 
-<!-- page 325 -->
+<!-- page 324 -->
 
 Harold Koch
 306
@@ -18042,7 +18042,7 @@ Press, 218–263.
 
 ---
 
-<!-- page 326 -->
+<!-- page 325 -->
 
 Morphological reconstruction
 307
@@ -18087,7 +18087,7 @@ O’Grady. Canberra: Paci c Lingusitics, 413–444.
 
 ---
 
-<!-- page 327 -->
+<!-- page 326 -->
 
 308
 13
@@ -18128,7 +18128,7 @@ component of the model, viz. the notion of the grammaticalised meaning, is intro
 
 ---
 
-<!-- page 328 -->
+<!-- page 327 -->
 
 Functional syntax and language change 
 309
@@ -18179,7 +18179,7 @@ lexical items with which to express them. This is followed by the choice of othe
 
 ---
 
-<!-- page 329 -->
+<!-- page 328 -->
 
 Zygmunt Frajzyngier
 310
@@ -18226,7 +18226,7 @@ however, a coding means. This is the case with some verb-initial languages, such
 
 ---
 
-<!-- page 330 -->
+<!-- page 329 -->
 
 Functional syntax and language change 
 311
@@ -18274,7 +18274,7 @@ modalities and contrastive focus. Vowel reduction can code phrase-internal posit
 
 ---
 
-<!-- page 331 -->
+<!-- page 330 -->
 
 Zygmunt Frajzyngier
 312
@@ -18322,7 +18322,7 @@ means in the language.
 
 ---
 
-<!-- page 332 -->
+<!-- page 331 -->
 
 Functional syntax and language change 
 313
@@ -18375,7 +18375,7 @@ variety of information structure functions.
 
 ---
 
-<!-- page 333 -->
+<!-- page 332 -->
 
 Zygmunt Frajzyngier
 314
@@ -18427,7 +18427,7 @@ of the processes involved, see Frajzyngier (1983).
 
 ---
 
-<!-- page 334 -->
+<!-- page 333 -->
 
 Functional syntax and language change 
 315
@@ -18475,7 +18475,7 @@ function. Direct means are those that are used for the function for which they h
 
 ---
 
-<!-- page 335 -->
+<!-- page 334 -->
 
 Zygmunt Frajzyngier
 316
@@ -18525,7 +18525,7 @@ just the function (see papers in Matras and Sakel 2007). The frequent targets of
 
 ---
 
-<!-- page 336 -->
+<!-- page 335 -->
 
 Functional syntax and language change 
 317
@@ -18577,7 +18577,7 @@ language change is when a lexical item becomes grammaticalised, then loses its i
 
 ---
 
-<!-- page 337 -->
+<!-- page 336 -->
 
 Zygmunt Frajzyngier
 318
@@ -18626,7 +18626,7 @@ such a list, the linguist can then establish what functions were coded by what m
 
 ---
 
-<!-- page 338 -->
+<!-- page 337 -->
 
 Functional syntax and language change 
 319
@@ -18679,7 +18679,7 @@ orientation, the point of view, and a host of other functions. Some West Chadic 
 
 ---
 
-<!-- page 339 -->
+<!-- page 338 -->
 
 Zygmunt Frajzyngier
 320
@@ -18724,7 +18724,7 @@ categories subject and object. Within the functional approach this is a non-triv
 
 ---
 
-<!-- page 340 -->
+<!-- page 339 -->
 
 Functional syntax and language change 
 321
@@ -18772,7 +18772,7 @@ a function from another language.
 
 ---
 
-<!-- page 341 -->
+<!-- page 340 -->
 
 Zygmunt Frajzyngier
 322
@@ -18825,7 +18825,7 @@ Mithun, Marianne. in press. Field methods in syntactic research. In Silvia Lurag
 
 ---
 
-<!-- page 342 -->
+<!-- page 341 -->
 
 Functional syntax and language change 
 323
@@ -18884,7 +18884,7 @@ Frajzyngier, Zygmunt and Mohammed Munkaila. 2004. Grammatical and semantic relat
 
 ---
 
-<!-- page 343 -->
+<!-- page 342 -->
 
 Zygmunt Frajzyngier
 324
@@ -18942,7 +18942,7 @@ Methuen.
 
 ---
 
-<!-- page 344 -->
+<!-- page 343 -->
 
 Functional syntax and language change 
 325
@@ -18965,7 +18965,7 @@ morphology, internal and comparative reconstruction. Amsterdam: North-Holland, 3
 
 ---
 
-<!-- page 345 -->
+<!-- page 344 -->
 
 326
 14
@@ -19003,7 +19003,7 @@ The exception is a chapter in Chomsky and Halle’s (1968) The Sound Pattern of 
 
 ---
 
-<!-- page 346 -->
+<!-- page 345 -->
 
 Generative syntax and language change 
 327
@@ -19056,7 +19056,7 @@ speakers and included only a handful of generative papers.
 
 ---
 
-<!-- page 347 -->
+<!-- page 346 -->
 
 Elly van Gelderen
 328
@@ -19110,7 +19110,7 @@ input in a certain way.
 
 ---
 
-<!-- page 348 -->
+<!-- page 347 -->
 
 Generative syntax and language change 
 329
@@ -19163,7 +19163,7 @@ to develop. If language arose in humans between 100,000 and 150,000 years ago, a
 
 ---
 
-<!-- page 349 -->
+<!-- page 348 -->
 
 Elly van Gelderen
 330
@@ -19213,7 +19213,7 @@ rule can ‘bleed’ the raising one since the latter occurs only before voicele
 
 ---
 
-<!-- page 350 -->
+<!-- page 349 -->
 
 Generative syntax and language change 
 331
@@ -19280,7 +19280,7 @@ English as in (8):
 
 ---
 
-<!-- page 351 -->
+<!-- page 350 -->
 
 Elly van Gelderen
 332
@@ -19344,7 +19344,7 @@ similar to Opacity mentioned in section 3.1.
 
 ---
 
-<!-- page 352 -->
+<!-- page 351 -->
 
 Generative syntax and language change 
 333
@@ -19409,7 +19409,7 @@ become more restricted in this area.
 
 ---
 
-<!-- page 353 -->
+<!-- page 352 -->
 
 Elly van Gelderen
 334
@@ -19462,7 +19462,7 @@ parameters. I will focus on the latter but will introduce the other areas  rst.
 
 ---
 
-<!-- page 354 -->
+<!-- page 353 -->
 
 Generative syntax and language change 
 335
@@ -19526,7 +19526,7 @@ features of the lexical items. Lexical items have features that vary across lang
 
 ---
 
-<!-- page 355 -->
+<!-- page 354 -->
 
 Elly van Gelderen
 336
@@ -19577,7 +19577,7 @@ Figure 14.1 Interfaces
 
 ---
 
-<!-- page 356 -->
+<!-- page 355 -->
 
 Generative syntax and language change 
 337
@@ -19642,7 +19642,7 @@ Chomsky 1995: 278)
 
 ---
 
-<!-- page 357 -->
+<!-- page 356 -->
 
 Elly van Gelderen
 338
@@ -19704,7 +19704,7 @@ grammaticalise as articles and stop being used to refer to persons. This trigger
 
 ---
 
-<!-- page 358 -->
+<!-- page 357 -->
 
 Generative syntax and language change 
 339
@@ -19757,7 +19757,7 @@ Oxford University Press.
 
 ---
 
-<!-- page 359 -->
+<!-- page 358 -->
 
 Elly van Gelderen
 340
@@ -19814,7 +19814,7 @@ Oxford University Press.
 
 ---
 
-<!-- page 360 -->
+<!-- page 359 -->
 
 Generative syntax and language change 
 341
@@ -19871,7 +19871,7 @@ Landau, Barbara. 1994. Where’s what and what’s where: the language of object
 
 ---
 
-<!-- page 361 -->
+<!-- page 360 -->
 
 Elly van Gelderen
 342
@@ -19922,7 +19922,7 @@ economy. Amsterdam/Philadelphia: John Benjamins.
 
 ---
 
-<!-- page 362 -->
+<!-- page 361 -->
 
 343
 15
@@ -19962,7 +19962,7 @@ The issue of word order was already prominent at the time (cf. Jolly 1872; Wacke
 
 ---
 
-<!-- page 363 -->
+<!-- page 362 -->
 
 Jóhanna Barðdal
 344
@@ -20017,7 +20017,7 @@ that may or may not appear as causally related.
 
 ---
 
-<!-- page 364 -->
+<!-- page 363 -->
 
 Syntax and syntactic reconstruction 
 345
@@ -20096,7 +20096,7 @@ Dat-Gen
 
 ---
 
-<!-- page 365 -->
+<!-- page 364 -->
 
 Jóhanna Barðdal
 346
@@ -20151,7 +20151,7 @@ information on the direction a sound change may take, i.e. from A to B rather th
 
 ---
 
-<!-- page 366 -->
+<!-- page 365 -->
 
 Syntax and syntactic reconstruction 
 347
@@ -20206,7 +20206,7 @@ while the grammar is not. Instead, Lightfoot argues, language learners have to b
 
 ---
 
-<!-- page 367 -->
+<!-- page 366 -->
 
 Jóhanna Barðdal
 348
@@ -20261,7 +20261,7 @@ boxes around the SYN  eld as a whole and the SEM  eld as a whole. Marking each
 
 ---
 
-<!-- page 368 -->
+<!-- page 367 -->
 
 Syntax and syntactic reconstruction 
 349
@@ -20306,7 +20306,7 @@ language change may be relevant for reconstruction.
 
 ---
 
-<!-- page 369 -->
+<!-- page 368 -->
 
 Jóhanna Barðdal
 350
@@ -20360,7 +20360,7 @@ abilities to do syntactic reconstruction.
 
 ---
 
-<!-- page 370 -->
+<!-- page 369 -->
 
 Syntax and syntactic reconstruction 
 351
@@ -20422,7 +20422,7 @@ anymore, but has acquired argument status. The opposite development, that argume
 
 ---
 
-<!-- page 371 -->
+<!-- page 370 -->
 
 Jóhanna Barðdal
 352
@@ -20490,7 +20490,7 @@ generative approach. Longobardi has developed a method, the Parametric Compariso
 
 ---
 
-<!-- page 372 -->
+<!-- page 371 -->
 
 Syntax and syntactic reconstruction 
 353
@@ -20572,7 +20572,7 @@ that.GEN
 
 ---
 
-<!-- page 373 -->
+<!-- page 372 -->
 
 Jóhanna Barðdal
 354
@@ -20632,7 +20632,7 @@ ACC-GEN-lusts
 
 ---
 
-<!-- page 374 -->
+<!-- page 373 -->
 
 Syntax and syntactic reconstruction 
 355
@@ -20677,7 +20677,7 @@ Figure 15.4 A reconstruction of the argument structure of ‘lust’ in Proto-Ge
 
 ---
 
-<!-- page 375 -->
+<!-- page 374 -->
 
 Jóhanna Barðdal
 356
@@ -20768,7 +20768,7 @@ and it has been documented in language after language, such as Korean (Gerdts an
 
 ---
 
-<!-- page 376 -->
+<!-- page 375 -->
 
 Syntax and syntactic reconstruction 
 357
@@ -20860,7 +20860,7 @@ European languages exhibit structures of considerably more variety, shown in Tab
 
 ---
 
-<!-- page 377 -->
+<!-- page 376 -->
 
 Jóhanna Barðdal
 358
@@ -20954,7 +20954,7 @@ missing in Latin. This is indicated with the strikethrough. The Ancient Greek pa
 
 ---
 
-<!-- page 378 -->
+<!-- page 377 -->
 
 Syntax and syntactic reconstruction 
 359
@@ -21012,7 +21012,7 @@ birth in the Indo-European languages. Generally, the source and origin of these 
 
 ---
 
-<!-- page 379 -->
+<!-- page 378 -->
 
 Jóhanna Barðdal
 360
@@ -21098,7 +21098,7 @@ pattern is also found with other verb alternations of this type in Old Norse-Ice
 
 ---
 
-<!-- page 380 -->
+<!-- page 379 -->
 
 Syntax and syntactic reconstruction 
 361
@@ -21165,7 +21165,7 @@ Nom-Acc-Dat
 
 ---
 
-<!-- page 381 -->
+<!-- page 380 -->
 
 Jóhanna Barðdal
 362
@@ -21240,7 +21240,7 @@ as an intransitive with Acc-only case frame.
 
 ---
 
-<!-- page 382 -->
+<!-- page 381 -->
 
 Syntax and syntactic reconstruction 
 363
@@ -21341,7 +21341,7 @@ and as a transitive with Acc-Gen.
 
 ---
 
-<!-- page 383 -->
+<!-- page 382 -->
 
 Jóhanna Barðdal
 364
@@ -21416,7 +21416,7 @@ only variant denotes an event that has occurred spontaneously, with no causer, w
 
 ---
 
-<!-- page 384 -->
+<!-- page 383 -->
 
 Syntax and syntactic reconstruction 
 365
@@ -21468,7 +21468,7 @@ from that construction as well as from the causative Nom-Acc construction. The i
 
 ---
 
-<!-- page 385 -->
+<!-- page 384 -->
 
 Jóhanna Barðdal
 366
@@ -21518,7 +21518,7 @@ correspondences, and that the meaning of a sentence is simply the sum of the mea
 
 ---
 
-<!-- page 386 -->
+<!-- page 385 -->
 
 Syntax and syntactic reconstruction 
 367
@@ -21571,7 +21571,7 @@ European Research Council (EVALISA).
 
 ---
 
-<!-- page 387 -->
+<!-- page 386 -->
 
 Jóhanna Barðdal
 368
@@ -21626,7 +21626,7 @@ change in Indo-European languages. Amsterdam/Philadelphia: John Benjamins, 179�
 
 ---
 
-<!-- page 388 -->
+<!-- page 387 -->
 
 Syntax and syntactic reconstruction 
 369
@@ -21685,7 +21685,7 @@ within a theory of preferred argument structure. In Barðdal and Chelliah (eds),
 
 ---
 
-<!-- page 389 -->
+<!-- page 388 -->
 
 Jóhanna Barðdal
 370
@@ -21744,7 +21744,7 @@ Havers, Wilhelm. 1911. Untersuchungen zur Kasussyntax der idg. Sprachen. Strassb
 
 ---
 
-<!-- page 390 -->
+<!-- page 389 -->
 
 Syntax and syntactic reconstruction 
 371
@@ -21803,7 +21803,7 @@ on Historical Linguistics. Amsterdam/Philadelphia: John Benjamins, 355–371.
 
 ---
 
-<!-- page 391 -->
+<!-- page 390 -->
 
 Jóhanna Barðdal
 372
@@ -21862,7 +21862,7 @@ Zeitschrift für vergleichende Sprachforschung auf dem Gebiete der Indogermanisc
 
 ---
 
-<!-- page 392 -->
+<!-- page 391 -->
 
 Syntax and syntactic reconstruction 
 373
@@ -21904,7 +21904,7 @@ undocumented stages in the development of languages and language families. In Fi
 
 ---
 
-<!-- page 393 -->
+<!-- page 392 -->
 
 374
 16
@@ -21942,7 +21942,7 @@ and the top of a table respectively), and they ful l a similar function in supp
 
 ---
 
-<!-- page 394 -->
+<!-- page 393 -->
 
 Lexical semantic change and semantic reconstruction
 375
@@ -21997,7 +21997,7 @@ Hui, using its indigenous words for ‘day’ and ‘bowl’ for ‘thousand’ 
 
 ---
 
-<!-- page 395 -->
+<!-- page 394 -->
 
 Matthias Urban
 376
@@ -22051,7 +22051,7 @@ were in a better position to describe the ongoing processes in detail.
 
 ---
 
-<!-- page 396 -->
+<!-- page 395 -->
 
 Lexical semantic change and semantic reconstruction
 377
@@ -22114,7 +22114,7 @@ B (> B)
 
 ---
 
-<!-- page 397 -->
+<!-- page 396 -->
 
 Matthias Urban
 378
@@ -22169,7 +22169,7 @@ there are not many languages with a long enough history of literacy for corpus a
 
 ---
 
-<!-- page 398 -->
+<!-- page 397 -->
 
 Lexical semantic change and semantic reconstruction
 379
@@ -22224,7 +22224,7 @@ least common, while the abovementioned dominant prototypical core remains consta
 
 ---
 
-<!-- page 399 -->
+<!-- page 398 -->
 
 Matthias Urban
 380
@@ -22277,7 +22277,7 @@ empirical results. Likewise, frequency may play a role. Ogura and Wang (1995), b
 
 ---
 
-<!-- page 400 -->
+<!-- page 399 -->
 
 Lexical semantic change and semantic reconstruction
 381
@@ -22330,7 +22330,7 @@ by Paul (1920/1960: 96), according to which meanings in the spatial domain give 
 
 ---
 
-<!-- page 401 -->
+<!-- page 400 -->
 
 Matthias Urban
 382
@@ -22439,7 +22439,7 @@ reverse unlikely
 
 ---
 
-<!-- page 402 -->
+<!-- page 401 -->
 
 Lexical semantic change and semantic reconstruction
 383
@@ -22494,7 +22494,7 @@ section 6).
 
 ---
 
-<!-- page 403 -->
+<!-- page 402 -->
 
 Matthias Urban
 384
@@ -22547,7 +22547,7 @@ question is, of course, where the cut-off point of Proto-Oceanic *ikan itself wa
 
 ---
 
-<!-- page 404 -->
+<!-- page 403 -->
 
 Lexical semantic change and semantic reconstruction
 385
@@ -22602,7 +22602,7 @@ hitherto worked out, and Niepokuj employs cognitive linguistics theory to do so.
 
 ---
 
-<!-- page 405 -->
+<!-- page 404 -->
 
 Matthias Urban
 386
@@ -22650,7 +22650,7 @@ basis of generalisations such as those mentioned in section 5.
 
 ---
 
-<!-- page 406 -->
+<!-- page 405 -->
 
 Lexical semantic change and semantic reconstruction
 387
@@ -22698,7 +22698,7 @@ Niepokuj’s [1994] work as well as Pawley [2011] for a similar situation, in wh
 
 ---
 
-<!-- page 407 -->
+<!-- page 406 -->
 
 Matthias Urban
 388
@@ -22748,7 +22748,7 @@ John Benjamins.
 
 ---
 
-<!-- page 408 -->
+<!-- page 407 -->
 
 Lexical semantic change and semantic reconstruction
 389
@@ -22806,7 +22806,7 @@ Geschichte in Afrika). Cologne: Rüdiger Köppe, 67–106.
 
 ---
 
-<!-- page 409 -->
+<!-- page 408 -->
 
 Matthias Urban
 390
@@ -22865,7 +22865,7 @@ Menner, Robert J. 1936. The con ict of homonyms in English. Language 12(4): 229
 
 ---
 
-<!-- page 410 -->
+<!-- page 409 -->
 
 Lexical semantic change and semantic reconstruction
 391
@@ -22930,7 +22930,7 @@ and Östen Dahl (eds) Explanations for language universals. Berlin: Mouton Publi
 
 ---
 
-<!-- page 411 -->
+<!-- page 410 -->
 
 Matthias Urban
 392
@@ -22951,7 +22951,7 @@ semshifts.iling-ran.ru; accessed 10 February 2013]
 
 ---
 
-<!-- page 412 -->
+<!-- page 411 -->
 
 393
 17
@@ -22993,7 +22993,7 @@ regularities in the ways that functional morphemes undergo semantic change (Hein
 
 ---
 
-<!-- page 413 -->
+<!-- page 412 -->
 
 Ashwini Deo
 394
@@ -23047,7 +23047,7 @@ prospective aspect (Bybee et al. 1994; Eckardt 2006).
 
 ---
 
-<!-- page 414 -->
+<!-- page 413 -->
 
 Formal semantics/pragmatics and language change 
 395
@@ -23107,7 +23107,7 @@ community (the dynamic component) on the other. Providing explicit, experimental
 
 ---
 
-<!-- page 415 -->
+<!-- page 414 -->
 
 Ashwini Deo
 396
@@ -23158,7 +23158,7 @@ phenomena involving recruitment such as the grammaticalisation of the be going t
 
 ---
 
-<!-- page 416 -->
+<!-- page 415 -->
 
 Formal semantics/pragmatics and language change 
 397
@@ -23214,7 +23214,7 @@ have conveyed the general nature of her compositionality-driven programme. Any i
 
 ---
 
-<!-- page 417 -->
+<!-- page 416 -->
 
 Ashwini Deo
 398
@@ -23280,7 +23280,7 @@ linguistically. The imperfective aspect essentially involves the generalisation 
 
 ---
 
-<!-- page 418 -->
+<!-- page 417 -->
 
 Formal semantics/pragmatics and language change 
 399
@@ -23333,7 +23333,7 @@ possibilities in which an insigni cant amount of water is present in the tank. 
 
 ---
 
-<!-- page 419 -->
+<!-- page 418 -->
 
 Ashwini Deo
 400
@@ -23389,7 +23389,7 @@ interval – that is, they use the present perfect if the eventuality being desc
 
 ---
 
-<!-- page 420 -->
+<!-- page 419 -->
 
 Formal semantics/pragmatics and language change 
 401
@@ -23440,7 +23440,7 @@ which signals come to acquire particular meanings because of the ways in which t
 
 ---
 
-<!-- page 421 -->
+<!-- page 420 -->
 
 Ashwini Deo
 402
@@ -23493,7 +23493,7 @@ in the form of the possible strategies in (7) and (8) respectively. Here, a spea
 
 ---
 
-<!-- page 422 -->
+<!-- page 421 -->
 
 Formal semantics/pragmatics and language change 
 403
@@ -23561,7 +23561,7 @@ population is closely tied to its communicative success and economy. The relativ
 
 ---
 
-<!-- page 423 -->
+<!-- page 422 -->
 
 Ashwini Deo
 404
@@ -23612,7 +23612,7 @@ theory of language use.
 
 ---
 
-<!-- page 424 -->
+<!-- page 423 -->
 
 Formal semantics/pragmatics and language change 
 405
@@ -23672,7 +23672,7 @@ innovation and generalisation emerges from extravagance – the speaker’s tend
 
 ---
 
-<!-- page 425 -->
+<!-- page 424 -->
 
 Ashwini Deo
 406
@@ -23726,7 +23726,7 @@ Historical Pragmatics. International Review of Pragmatics 4: 261–292.
 
 ---
 
-<!-- page 426 -->
+<!-- page 425 -->
 
 Formal semantics/pragmatics and language change 
 407
@@ -23785,7 +23785,7 @@ framework. Chicago: University of Chicago Press.
 
 ---
 
-<!-- page 427 -->
+<!-- page 426 -->
 
 Ashwini Deo
 408
@@ -23843,7 +23843,7 @@ Cambridge University Press.
 
 ---
 
-<!-- page 428 -->
+<!-- page 427 -->
 
 Formal semantics/pragmatics and language change 
 409
@@ -23859,7 +23859,7 @@ implications for models of sound change. PLoS One 5(8): e11950.
 
 ---
 
-<!-- page 429 -->
+<!-- page 428 -->
 
 410
 18
@@ -23897,7 +23897,7 @@ variationist sociolinguistics is not simply discourse, but the vernacular.
 
 ---
 
-<!-- page 430 -->
+<!-- page 429 -->
 
 Discourse
 411
@@ -23953,7 +23953,7 @@ Once the primary marker of future temporal reference, its use is now highly rest
 
 ---
 
-<!-- page 431 -->
+<!-- page 430 -->
 
 Alexandra D’Arcy
 412
@@ -24011,7 +24011,7 @@ Figure 18.1 Layering of forms for modal obligation/necessity in English
 
 ---
 
-<!-- page 432 -->
+<!-- page 431 -->
 
 Discourse
 413
@@ -24068,7 +24068,7 @@ theory – the set of claims that have been made concerning these phenomena – 
 
 ---
 
-<!-- page 433 -->
+<!-- page 432 -->
 
 Alexandra D’Arcy
 414
@@ -24123,7 +24123,7 @@ acquire constraints, mostly as a reaction to the activity in the remainder of th
 
 ---
 
-<!-- page 434 -->
+<!-- page 433 -->
 
 Discourse
 415
@@ -24178,7 +24178,7 @@ Futurate Present
 
 ---
 
-<!-- page 435 -->
+<!-- page 434 -->
 
 Alexandra D’Arcy
 416
@@ -24244,7 +24244,7 @@ to explore lexicalisation pathways.
 
 ---
 
-<!-- page 436 -->
+<!-- page 435 -->
 
 Discourse
 417
@@ -24298,7 +24298,7 @@ the past tense consistently disfavours be like). This historical pattern is evid
 
 ---
 
-<!-- page 437 -->
+<!-- page 436 -->
 
 Alexandra D’Arcy
 418
@@ -24354,7 +24354,7 @@ play. Nonetheless, there was little  uctuation in the roles of individual forms
 
 ---
 
-<!-- page 438 -->
+<!-- page 437 -->
 
 Discourse
 419
@@ -24406,7 +24406,7 @@ it within the frame.
 
 ---
 
-<!-- page 439 -->
+<!-- page 438 -->
 
 Alexandra D’Arcy
 420
@@ -24462,7 +24462,7 @@ Hock, Hans Henrich. 1991. Principles of historical linguistics. Berlin: Mouton d
 
 ---
 
-<!-- page 440 -->
+<!-- page 439 -->
 
 Discourse
 421
@@ -24521,7 +24521,7 @@ past time marking in Nigerian Pidgin English. In Philip Baker and Anand Syea (ed
 
 ---
 
-<!-- page 441 -->
+<!-- page 440 -->
 
 Alexandra D’Arcy
 422
@@ -24562,7 +24562,7 @@ linguistics: a symposium. Austin: University of Texas Press, 95–189.
 
 ---
 
-<!-- page 442 -->
+<!-- page 441 -->
 
 423
 19
@@ -24605,7 +24605,7 @@ in section 5 summarises the main points.
 
 ---
 
-<!-- page 443 -->
+<!-- page 442 -->
 
 Robert Mailhammer
 424
@@ -24657,7 +24657,7 @@ durchsichtig ist, gehört diese Fragestellung in die Wortbildungslehre der betre
 
 ---
 
-<!-- page 444 -->
+<!-- page 443 -->
 
 Etymology
 425
@@ -24710,7 +24710,7 @@ origin that de nes the etymological perspective rather than the subject of inve
 
 ---
 
-<!-- page 445 -->
+<!-- page 444 -->
 
 Robert Mailhammer
 426
@@ -24763,7 +24763,7 @@ the suf x (-an rather than -ian in class II).4
 
 ---
 
-<!-- page 446 -->
+<!-- page 445 -->
 
 Etymology
 427
@@ -24828,7 +24828,7 @@ units needs to consider shifts in function, as Koch (2013: 53) observes:
 
 ---
 
-<!-- page 447 -->
+<!-- page 446 -->
 
 Robert Mailhammer
 428
@@ -24882,7 +24882,7 @@ spread of a pattern that develops naturally in a substantial number of verbs (Ma
 
 ---
 
-<!-- page 448 -->
+<!-- page 447 -->
 
 Etymology
 429
@@ -24935,7 +24935,7 @@ The former relies on the comparison of related languages in order to  nd system
 
 ---
 
-<!-- page 449 -->
+<!-- page 448 -->
 
 Robert Mailhammer
 430
@@ -24989,7 +24989,7 @@ bhárati is an exact formal and semantic match to PGmc. *biridi11
 
 ---
 
-<!-- page 450 -->
+<!-- page 449 -->
 
 Etymology
 431
@@ -25046,7 +25046,7 @@ Germanic strong verbs are within the Indo-European language family, demonstratin
 
 ---
 
-<!-- page 451 -->
+<!-- page 450 -->
 
 Robert Mailhammer
 432
@@ -25099,7 +25099,7 @@ Contact etymologies often stop at the point of the horizontal transmission by st
 
 ---
 
-<!-- page 452 -->
+<!-- page 451 -->
 
 Etymology
 433
@@ -25156,7 +25156,7 @@ Figure 19.1 Internal and external etymologies
 
 ---
 
-<!-- page 453 -->
+<!-- page 452 -->
 
 Robert Mailhammer
 434
@@ -25211,7 +25211,7 @@ and thus in principle no different from the reconstruction of contact-induced ch
 
 ---
 
-<!-- page 454 -->
+<!-- page 453 -->
 
 Etymology
 435
@@ -25262,7 +25262,7 @@ references).
 
 ---
 
-<!-- page 455 -->
+<!-- page 454 -->
 
 Robert Mailhammer
 436
@@ -25319,7 +25319,7 @@ semantic similarity to their own perfective aspect stem, which already had the v
 
 ---
 
-<!-- page 456 -->
+<!-- page 455 -->
 
 Etymology
 437
@@ -25383,7 +25383,7 @@ been established and these are as reconstructions, naturally historical.
 
 ---
 
-<!-- page 457 -->
+<!-- page 456 -->
 
 Robert Mailhammer
 438
@@ -25442,7 +25442,7 @@ languages (Durkin 2009: 146).
 
 ---
 
-<!-- page 458 -->
+<!-- page 457 -->
 
 Etymology
 439
@@ -25501,7 +25501,7 @@ and to German Arnoldsweiler. In Jose Ignacio Hualde and Joseba Lakarra (eds) Stu
 
 ---
 
-<!-- page 459 -->
+<!-- page 458 -->
 
 Robert Mailhammer
 440
@@ -25558,7 +25558,7 @@ Matras, Yaron. 2009. Language contact. Cambridge: Cambridge University Press.
 
 ---
 
-<!-- page 460 -->
+<!-- page 459 -->
 
 Etymology
 441
@@ -25610,7 +25610,7 @@ linguistics: a symposium. Austin: University of Texas Press, 95–189.
 
 ---
 
-<!-- page 461 -->
+<!-- page 460 -->
 
 442
 20
@@ -25650,7 +25650,7 @@ This is not to say that there is no linearity in sign languages or no simultanei
 
 ---
 
-<!-- page 462 -->
+<!-- page 461 -->
 
 Sign languages in their historical context 
 443
@@ -25705,7 +25705,7 @@ expression of many morphemes. For example, in Japanese Sign Language (JSL), the 
 
 ---
 
-<!-- page 463 -->
+<!-- page 462 -->
 
 Susan D. Fischer
 444
@@ -25734,7 +25734,7 @@ Figure 20.1 JSL ‘Did-you-tell-her?’
 
 ---
 
-<!-- page 464 -->
+<!-- page 463 -->
 
 Sign languages in their historical context 
 445
@@ -25787,7 +25787,7 @@ Italian is spoken all over Italy. Trieste used to be part of Slovenia, and the s
 
 ---
 
-<!-- page 465 -->
+<!-- page 464 -->
 
 Susan D. Fischer
 446
@@ -25842,7 +25842,7 @@ independently. This is especially true in cases where sign languages are not use
 
 ---
 
-<!-- page 466 -->
+<!-- page 465 -->
 
 Sign languages in their historical context 
 447
@@ -25896,7 +25896,7 @@ types of languages, signed and spoken.
 
 ---
 
-<!-- page 467 -->
+<!-- page 466 -->
 
 Susan D. Fischer
 448
@@ -25949,7 +25949,7 @@ only a small distance; the result is a sign that stays in one major location.
 
 ---
 
-<!-- page 468 -->
+<!-- page 467 -->
 
 Sign languages in their historical context 
 449
@@ -25962,7 +25962,7 @@ Figure 20.5 Current version of ASL HELP
 
 ---
 
-<!-- page 469 -->
+<!-- page 468 -->
 
 Susan D. Fischer
 450
@@ -26015,7 +26015,7 @@ only in  ngerspelling (or in initialised signs made by superimposing a  ngersp
 
 ---
 
-<!-- page 470 -->
+<!-- page 469 -->
 
 Sign languages in their historical context 
 451
@@ -26069,7 +26069,7 @@ initialised sign I (based on the more common ME) has been part of ASL for a long
 
 ---
 
-<!-- page 471 -->
+<!-- page 470 -->
 
 Susan D. Fischer
 452
@@ -26109,7 +26109,7 @@ the initial position of the extended thumb. The amount of reduction is suf cien
 
 ---
 
-<!-- page 472 -->
+<!-- page 471 -->
 
 Sign languages in their historical context 
 453
@@ -26135,7 +26135,7 @@ Figure 20.13 ASL BROTHER
 
 ---
 
-<!-- page 473 -->
+<!-- page 472 -->
 
 Susan D. Fischer
 454
@@ -26173,7 +26173,7 @@ while using part of the form of the native language.13
 
 ---
 
-<!-- page 474 -->
+<!-- page 473 -->
 
 Sign languages in their historical context 
 455
@@ -26205,7 +26205,7 @@ board; in addition to verbs generally preceding their objects, auxiliaries and n
 
 ---
 
-<!-- page 475 -->
+<!-- page 474 -->
 
 Susan D. Fischer
 456
@@ -26260,7 +26260,7 @@ that a verb agreement in ASL developed from deictic pronouns similarly to the wa
 
 ---
 
-<!-- page 476 -->
+<!-- page 475 -->
 
 Sign languages in their historical context 
 457
@@ -26311,7 +26311,7 @@ The two signs WHAT can be used to form full questions, e.g., (1)–(2):
 
 ---
 
-<!-- page 477 -->
+<!-- page 476 -->
 
 Susan D. Fischer
 458
@@ -26359,7 +26359,7 @@ occurs in a sign language.
 
 ---
 
-<!-- page 478 -->
+<!-- page 477 -->
 
 Sign languages in their historical context 
 459
@@ -26380,7 +26380,7 @@ Figure 20.22 ASL ‘WH-#DO’ (‘what to do?’) reprinted with permission from
 
 ---
 
-<!-- page 479 -->
+<!-- page 478 -->
 
 Susan D. Fischer
 460
@@ -26431,7 +26431,7 @@ school, between the ages of 2–5; others, whose parents are counselled to esche
 
 ---
 
-<!-- page 480 -->
+<!-- page 479 -->
 
 Sign languages in their historical context 
 461
@@ -26493,7 +26493,7 @@ There is, however, a pocket of ASL users in Bangalore (Ulrike Zeshan, personal c
 
 ---
 
-<!-- page 481 -->
+<!-- page 480 -->
 
 Susan D. Fischer
 462
@@ -26548,7 +26548,7 @@ and protolanguage. Special Issue of Interaction Studies, 133–149.
 
 ---
 
-<!-- page 482 -->
+<!-- page 481 -->
 
 Sign languages in their historical context 
 463
@@ -26605,7 +26605,7 @@ Issues in Sign Language Research 9, Florianopolos, Brazil.
 
 ---
 
-<!-- page 483 -->
+<!-- page 482 -->
 
 Susan D. Fischer
 464
@@ -26662,7 +26662,7 @@ Benjamins, 15–42.
 
 ---
 
-<!-- page 484 -->
+<!-- page 483 -->
 
 Sign languages in their historical context 
 465
@@ -26684,7 +26684,7 @@ Mouton deGruyter.
 
 ---
 
-<!-- page 485 -->
+<!-- page 484 -->
 
 466
 21
@@ -26724,7 +26724,7 @@ variation, contact between dialects and languages, and many other sources of cha
 
 ---
 
-<!-- page 486 -->
+<!-- page 485 -->
 
 Language acquisition and language change 
 467
@@ -26775,7 +26775,7 @@ in a slightly different way, and therefore encounters slightly different frequen
 
 ---
 
-<!-- page 487 -->
+<!-- page 486 -->
 
 James N. Stanford
 468
@@ -26830,7 +26830,7 @@ Second, as noted above, many child-oriented approaches assume that adult grammar
 
 ---
 
-<!-- page 488 -->
+<!-- page 487 -->
 
 Language acquisition and language change 
 469
@@ -26874,7 +26874,7 @@ from Flege, Munro and MacKay 1995).
 
 ---
 
-<!-- page 489 -->
+<!-- page 488 -->
 
 James N. Stanford
 470
@@ -26924,7 +26924,7 @@ of ongoing language changes in their community:
 
 ---
 
-<!-- page 490 -->
+<!-- page 489 -->
 
 Language acquisition and language change 
 471
@@ -26974,7 +26974,7 @@ range of speakers in a speech community can potentially be involved in a change 
 
 ---
 
-<!-- page 491 -->
+<!-- page 490 -->
 
 James N. Stanford
 472
@@ -27022,7 +27022,7 @@ experiencing and constructing the same constraints on a given variable, then it 
 
 ---
 
-<!-- page 492 -->
+<!-- page 491 -->
 
 Language acquisition and language change 
 473
@@ -27062,7 +27062,7 @@ ED
 
 ---
 
-<!-- page 493 -->
+<!-- page 492 -->
 
 James N. Stanford
 474
@@ -27117,7 +27117,7 @@ be.like was present at that time as a minority variant (13 per cent). By the tim
 
 ---
 
-<!-- page 494 -->
+<!-- page 493 -->
 
 Language acquisition and language change 
 475
@@ -27202,7 +27202,7 @@ MON9
 
 ---
 
-<!-- page 495 -->
+<!-- page 494 -->
 
 James N. Stanford
 476
@@ -27254,7 +27254,7 @@ effects can be clearly seen in children’s tone pronunciations. Among the six b
 
 ---
 
-<!-- page 496 -->
+<!-- page 495 -->
 
 Language acquisition and language change 
 477
@@ -27306,7 +27306,7 @@ mom
 
 ---
 
-<!-- page 497 -->
+<!-- page 496 -->
 
 James N. Stanford
 478
@@ -27359,7 +27359,7 @@ the decline of traditional Eastern New England pronunciations in New Hampshire.
 
 ---
 
-<!-- page 498 -->
+<!-- page 497 -->
 
 Language acquisition and language change 
 479
@@ -27413,7 +27413,7 @@ York: Taylor and Francis Group, LLC, 345–355.
 
 ---
 
-<!-- page 499 -->
+<!-- page 498 -->
 
 James N. Stanford
 480
@@ -27472,7 +27472,7 @@ Papers in Language and Linguistics 31(1): 116–131.
 
 ---
 
-<!-- page 500 -->
+<!-- page 499 -->
 
 Language acquisition and language change 
 481
@@ -27531,7 +27531,7 @@ Educational Development Laboratory.
 
 ---
 
-<!-- page 501 -->
+<!-- page 500 -->
 
 James N. Stanford
 482
@@ -27590,7 +27590,7 @@ Cambridge handbook of child language. Cambridge: Cambridge University Press, 89�
 
 ---
 
-<!-- page 502 -->
+<!-- page 501 -->
 
 Language acquisition and language change 
 483
@@ -27620,7 +27620,7 @@ professional identity. Language in Society 34: 431–466.
 
 ---
 
-<!-- page 503 -->
+<!-- page 502 -->
 
 484
 22
@@ -27660,7 +27660,7 @@ change, they argued, emerges from this orderly heterogeneity as increasing numbe
 
 ---
 
-<!-- page 504 -->
+<!-- page 503 -->
 
 Social dimensions of language change 
 485
@@ -27713,7 +27713,7 @@ processes of variant selection by individual speakers in particular communicativ
 
 ---
 
-<!-- page 505 -->
+<!-- page 504 -->
 
 Lev Michael
 486
@@ -27766,7 +27766,7 @@ From this perspective, the notions of ‘prestige’ and its somewhat problemati
 
 ---
 
-<!-- page 506 -->
+<!-- page 505 -->
 
 Social dimensions of language change 
 487
@@ -27824,7 +27824,7 @@ it ceased to form part of the repertoire of most English speakers.
 
 ---
 
-<!-- page 507 -->
+<!-- page 506 -->
 
 Lev Michael
 488
@@ -27878,7 +27878,7 @@ which may lead to the conventionalisation and grammaticalisation of expressions 
 
 ---
 
-<!-- page 508 -->
+<!-- page 507 -->
 
 Social dimensions of language change 
 489
@@ -27931,7 +27931,7 @@ Hinskins (2005: 342–343) note that speakers tend to converge not to actual int
 
 ---
 
-<!-- page 509 -->
+<!-- page 508 -->
 
 Lev Michael
 490
@@ -27984,7 +27984,7 @@ must be made to indexical-ideological explanations. They observe, for example, t
 
 ---
 
-<!-- page 510 -->
+<!-- page 509 -->
 
 Social dimensions of language change 
 491
@@ -28037,7 +28037,7 @@ depends on an understanding of how repertoires of linguistic competences are for
 
 ---
 
-<!-- page 511 -->
+<!-- page 510 -->
 
 Lev Michael
 492
@@ -28092,7 +28092,7 @@ driving the change is understood to be incrementation, which in the case of chan
 
 ---
 
-<!-- page 512 -->
+<!-- page 511 -->
 
 Social dimensions of language change 
 493
@@ -28147,7 +28147,7 @@ variation, as in the case of rhoticity in New York, as discussed above.
 
 ---
 
-<!-- page 513 -->
+<!-- page 512 -->
 
 Lev Michael
 494
@@ -28201,7 +28201,7 @@ and that considerably more study of variation in minority language contexts is c
 
 ---
 
-<!-- page 514 -->
+<!-- page 513 -->
 
 Social dimensions of language change 
 495
@@ -28254,7 +28254,7 @@ societies and their structural complexity (Nettle 2012). Trudgill (2011: 146–1
 
 ---
 
-<!-- page 515 -->
+<!-- page 514 -->
 
 Lev Michael
 496
@@ -28307,7 +28307,7 @@ the social dimensions of language change than we did 50 years ago. In particular
 
 ---
 
-<!-- page 516 -->
+<!-- page 515 -->
 
 Social dimensions of language change 
 497
@@ -28362,7 +28362,7 @@ Labov, William. 2001. Principles of linguistic change. Volume 2: Social factors.
 
 ---
 
-<!-- page 517 -->
+<!-- page 516 -->
 
 Lev Michael
 498
@@ -28419,7 +28419,7 @@ Coseriu, Eugenio. 1985. Linguistic change does not exist. Linguistica nuova ed a
 
 ---
 
-<!-- page 518 -->
+<!-- page 517 -->
 
 Social dimensions of language change 
 499
@@ -28477,7 +28477,7 @@ study of the Walpole family. Transactions of the Philological Society 106(1): 29
 
 ---
 
-<!-- page 519 -->
+<!-- page 518 -->
 
 Lev Michael
 500
@@ -28536,7 +28536,7 @@ Press.
 
 ---
 
-<!-- page 520 -->
+<!-- page 519 -->
 
 Social dimensions of language change 
 501
@@ -28594,7 +28594,7 @@ Amsterdam/Philadelphia: John Benjamins.
 
 ---
 
-<!-- page 521 -->
+<!-- page 520 -->
 
 Lev Michael
 502
@@ -28636,7 +28636,7 @@ Oxford University Press, 3–47.
 
 ---
 
-<!-- page 522 -->
+<!-- page 521 -->
 
 503
 23
@@ -28678,7 +28678,7 @@ increases in frequency. The  nal cognitive mechanism we discuss (in section 3.8
 
 ---
 
-<!-- page 523 -->
+<!-- page 522 -->
 
 Joan Bybee and Clay Beckner
 504
@@ -28731,7 +28731,7 @@ below. We also see directionality in other types of change, i.e., analogical cha
 
 ---
 
-<!-- page 524 -->
+<!-- page 523 -->
 
 Language use, cognitive processes and linguistic change 
 505
@@ -28783,7 +28783,7 @@ different types distributed over several categories, each with their own central
 
 ---
 
-<!-- page 525 -->
+<!-- page 524 -->
 
 Joan Bybee and Clay Beckner
 506
@@ -28834,7 +28834,7 @@ account.
 
 ---
 
-<!-- page 526 -->
+<!-- page 525 -->
 
 Language use, cognitive processes and linguistic change 
 507
@@ -28886,7 +28886,7 @@ of change often included under analogy, folk etymology, will be discussed in sec
 
 ---
 
-<!-- page 527 -->
+<!-- page 526 -->
 
 Joan Bybee and Clay Beckner
 508
@@ -28940,7 +28940,7 @@ become a future pre x, as in this example (Bavin 1983: 151; Heine and Reh 1984:
 
 ---
 
-<!-- page 528 -->
+<!-- page 527 -->
 
 Language use, cognitive processes and linguistic change 
 509
@@ -28990,7 +28990,7 @@ can refer to the region at the rear of any type of object, not just the human ba
 
 ---
 
-<!-- page 529 -->
+<!-- page 528 -->
 
 Joan Bybee and Clay Beckner
 510
@@ -29043,7 +29043,7 @@ multiword sequences are largely  xed processing units (see also Beckner and Byb
 
 ---
 
-<!-- page 530 -->
+<!-- page 529 -->
 
 Language use, cognitive processes and linguistic change 
 511
@@ -29096,7 +29096,7 @@ conventionally and thus become part of its meaning.
 
 ---
 
-<!-- page 531 -->
+<!-- page 530 -->
 
 Joan Bybee and Clay Beckner
 512
@@ -29147,7 +29147,7 @@ on the one hand and deletion on the other, Poplack found that a strong predictor
 
 ---
 
-<!-- page 532 -->
+<!-- page 531 -->
 
 Language use, cognitive processes and linguistic change 
 513
@@ -29200,7 +29200,7 @@ or priming environments will reduce more quickly than other words.
 
 ---
 
-<!-- page 533 -->
+<!-- page 532 -->
 
 Joan Bybee and Clay Beckner
 514
@@ -29251,7 +29251,7 @@ isolated from grammatical change, but are in fact an integral part of it.
 
 ---
 
-<!-- page 534 -->
+<!-- page 533 -->
 
 Language use, cognitive processes and linguistic change 
 515
@@ -29306,7 +29306,7 @@ Cognition 75: 1–28.
 
 ---
 
-<!-- page 535 -->
+<!-- page 534 -->
 
 Joan Bybee and Clay Beckner
 516
@@ -29364,7 +29364,7 @@ and listeners’ perception and use of the distinction. Journal of Memory and La
 
 ---
 
-<!-- page 536 -->
+<!-- page 535 -->
 
 Language use, cognitive processes and linguistic change 
 517
@@ -29423,7 +29423,7 @@ Miller, Joanne L. 1994. On the internal structure of phonetic categories: a prog
 
 ---
 
-<!-- page 537 -->
+<!-- page 536 -->
 
 Joan Bybee and Clay Beckner
 518
@@ -29476,7 +29476,7 @@ Wray, Alison. 2002. Formulaic language and the lexicon. Cambridge: Cambridge Uni
 
 ---
 
-<!-- page 538 -->
+<!-- page 537 -->
 
 519
 24
@@ -29519,7 +29519,7 @@ induced change. These issues are discussed in section 5, but the primary concern
 
 ---
 
-<!-- page 539 -->
+<!-- page 538 -->
 
 Christopher Lucas
 520
@@ -29572,7 +29572,7 @@ different to that which previous acquirers were exposed to. For this ‘acquisit
 
 ---
 
-<!-- page 540 -->
+<!-- page 539 -->
 
 Contact-induced language change
 521
@@ -29625,7 +29625,7 @@ speakers will be dominant in their ‘native’ or ‘ rst’ language (L1), an
 
 ---
 
-<!-- page 541 -->
+<!-- page 540 -->
 
 Christopher Lucas
 522
@@ -29681,7 +29681,7 @@ lexical borrowing, see e.g. Brown (1999) and Haspelmath and Tadmor (2009).
 
 ---
 
-<!-- page 542 -->
+<!-- page 541 -->
 
 Contact-induced language change
 523
@@ -29742,7 +29742,7 @@ twentieth-century immigrant communities to the United States (e.g. Salmons and P
 
 ---
 
-<!-- page 543 -->
+<!-- page 542 -->
 
 Christopher Lucas
 524
@@ -29797,7 +29797,7 @@ resembles typical L2 knowledge than typical L1 knowledge? Here again the answer 
 
 ---
 
-<!-- page 544 -->
+<!-- page 543 -->
 
 Contact-induced language change
 525
@@ -29853,7 +29853,7 @@ Figure 24.1 Four types of contact-induced change
 
 ---
 
-<!-- page 545 -->
+<!-- page 544 -->
 
 Christopher Lucas
 526
@@ -29899,7 +29899,7 @@ the case of Yiddish dos-sentences, exempli ed in (5), described by Prince (2001
 
 ---
 
-<!-- page 546 -->
+<!-- page 545 -->
 
 Contact-induced language change
 527
@@ -29961,7 +29961,7 @@ complement, as in (7).
 
 ---
 
-<!-- page 547 -->
+<!-- page 546 -->
 
 Christopher Lucas
 528
@@ -30022,7 +30022,7 @@ Morocco.
 
 ---
 
-<!-- page 548 -->
+<!-- page 547 -->
 
 Contact-induced language change
 529
@@ -30076,7 +30076,7 @@ target-like German.
 
 ---
 
-<!-- page 549 -->
+<!-- page 548 -->
 
 Christopher Lucas
 530
@@ -30133,7 +30133,7 @@ subject (13), the opposite of the order found in other Arabic dialects (14).
 
 ---
 
-<!-- page 550 -->
+<!-- page 549 -->
 
 Contact-induced language change
 531
@@ -30195,7 +30195,7 @@ generalisations of this sort to be made, as long as we bear in mind that they ar
 
 ---
 
-<!-- page 551 -->
+<!-- page 550 -->
 
 Christopher Lucas
 532
@@ -30250,7 +30250,7 @@ the cognitive processes associated with L2 acquisition, L1 attrition (i.e. reduc
 
 ---
 
-<!-- page 552 -->
+<!-- page 551 -->
 
 Contact-induced language change
 533
@@ -30301,7 +30301,7 @@ linguistics. Berkeley, CA: University of California Press.
 
 ---
 
-<!-- page 553 -->
+<!-- page 552 -->
 
 Christopher Lucas
 534
@@ -30357,7 +30357,7 @@ and William C. Ritchie (eds) The handbook of bilingualism. Oxford: Blackwell, 32
 
 ---
 
-<!-- page 554 -->
+<!-- page 553 -->
 
 Contact-induced language change
 535
@@ -30416,7 +30416,7 @@ Anglophone countries. Amsterdam/Philadelphia: John Benjamins.
 
 ---
 
-<!-- page 555 -->
+<!-- page 554 -->
 
 Christopher Lucas
 536
@@ -30463,7 +30463,7 @@ Contact Thema 2: 124–145.
 
 ---
 
-<!-- page 556 -->
+<!-- page 555 -->
 
 537
 25
@@ -30503,7 +30503,7 @@ ways of talking, of the structure of the way of talking, and of the position in 
 
 ---
 
-<!-- page 557 -->
+<!-- page 556 -->
 
 Jane Simpson
 538
@@ -30558,7 +30558,7 @@ old way of talking and the language of the people whose in uence has become dom
 
 ---
 
-<!-- page 558 -->
+<!-- page 557 -->
 
 Language attrition and language change 
 539
@@ -30615,7 +30615,7 @@ subsequent generations2 of ‘heritage speakers’, ‘incomplete acquirers’, 
 
 ---
 
-<!-- page 559 -->
+<!-- page 558 -->
 
 Jane Simpson
 540
@@ -30667,7 +30667,7 @@ language, resulting from the interaction of L1 and L2.
 
 ---
 
-<!-- page 560 -->
+<!-- page 559 -->
 
 Language attrition and language change 
 541
@@ -30720,7 +30720,7 @@ expressed particular in ectional categories on irregular nouns or verbs, and th
 
 ---
 
-<!-- page 561 -->
+<!-- page 560 -->
 
 Jane Simpson
 542
@@ -30774,7 +30774,7 @@ cases of local languages in uencing an incoming creole.
 
 ---
 
-<!-- page 562 -->
+<!-- page 561 -->
 
 Language attrition and language change 
 543
@@ -30827,7 +30827,7 @@ all languages in the input is taken into account.
 
 ---
 
-<!-- page 563 -->
+<!-- page 562 -->
 
 Jane Simpson
 544
@@ -30881,7 +30881,7 @@ shift, restructuring and loss, summable as loss (losing L1 elements), convergenc
 
 ---
 
-<!-- page 564 -->
+<!-- page 563 -->
 
 Language attrition and language change 
 545
@@ -30932,7 +30932,7 @@ system in early primary school, and by the fact that most of these languages do 
 
 ---
 
-<!-- page 565 -->
+<!-- page 564 -->
 
 Jane Simpson
 546
@@ -30995,7 +30995,7 @@ which there is no equivalent Warumungu verb) is calqued from English in this tra
 
 ---
 
-<!-- page 566 -->
+<!-- page 565 -->
 
 Language attrition and language change 
 547
@@ -31053,7 +31053,7 @@ production of L2 categories are well-known; that L2 can affect the phonetics and
 
 ---
 
-<!-- page 567 -->
+<!-- page 566 -->
 
 Jane Simpson
 548
@@ -31111,7 +31111,7 @@ people, at a time when a few people remembered a few words, they were adamant th
 
 ---
 
-<!-- page 568 -->
+<!-- page 567 -->
 
 Language attrition and language change 
 549
@@ -31164,7 +31164,7 @@ this allowed a reordering of clauses to result-cause, not otherwise available in
 
 ---
 
-<!-- page 569 -->
+<!-- page 568 -->
 
 Jane Simpson
 550
@@ -31218,7 +31218,7 @@ translated into English, seems ‘too wordy’, ‘too cute’, or ‘too sharpl
 
 ---
 
-<!-- page 570 -->
+<!-- page 569 -->
 
 Language attrition and language change 
 551
@@ -31268,7 +31268,7 @@ theoretical perspectives. Amsterdam/Philadelphia: John Benjamins.
 
 ---
 
-<!-- page 571 -->
+<!-- page 570 -->
 
 Jane Simpson
 552
@@ -31327,7 +31327,7 @@ Amsterdam/Philadelphia: John Benjamins.
 
 ---
 
-<!-- page 572 -->
+<!-- page 571 -->
 
 Language attrition and language change 
 553
@@ -31386,7 +31386,7 @@ Ross, Malcolm. 2007. Calquing and metatypy. Journal of Language Contact 1(1): 11
 
 ---
 
-<!-- page 573 -->
+<!-- page 572 -->
 
 Jane Simpson
 554
@@ -31427,20 +31427,20 @@ community response. Cambridge: Cambridge University Press, 234–258.
 
 ---
 
-<!-- page 574 -->
+<!-- page 573 -->
 
 Part IV
 Interfaces
 
 ---
 
-<!-- page 575 -->
+<!-- page 574 -->
 
 This page intentionally left blank
 
 ---
 
-<!-- page 576 -->
+<!-- page 575 -->
 
 557
 26
@@ -31482,7 +31482,7 @@ these proposed explanations link language diversity to the age of the language f
 
 ---
 
-<!-- page 577 -->
+<!-- page 576 -->
 
 Simon J. Greenhill
 558
@@ -31523,7 +31523,7 @@ the way English was spoken, changing English markedly from its Germanic sister l
 
 ---
 
-<!-- page 578 -->
+<!-- page 577 -->
 
 Demographic correlates of language diversity
 559
@@ -31572,7 +31572,7 @@ Lees found a retention rate of 0.77 in the 1,000 years between Old and Modern En
 
 ---
 
-<!-- page 579 -->
+<!-- page 578 -->
 
 Simon J. Greenhill
 560
@@ -31625,7 +31625,7 @@ therefore not statistically independent. This is known as Galton’s Problem. Th
 
 ---
 
-<!-- page 580 -->
+<!-- page 579 -->
 
 Demographic correlates of language diversity
 561
@@ -31676,7 +31676,7 @@ like Mixe-Zoquean with 17 languages. Following the fall of glottochronology most
 
 ---
 
-<!-- page 581 -->
+<!-- page 580 -->
 
 Simon J. Greenhill
 562
@@ -31729,7 +31729,7 @@ varying the size of the speaker population, Nettle was able to infer the speed a
 
 ---
 
-<!-- page 582 -->
+<!-- page 581 -->
 
 Demographic correlates of language diversity
 563
@@ -31784,7 +31784,7 @@ Coalescent models can infer past population dynamics (Drummond et al. 2005) by e
 
 ---
 
-<!-- page 583 -->
+<!-- page 582 -->
 
 Simon J. Greenhill
 564
@@ -31835,7 +31835,7 @@ expand quicker to out-compete hunter-gatherer populations almost globally.
 
 ---
 
-<!-- page 584 -->
+<!-- page 583 -->
 
 Demographic correlates of language diversity
 565
@@ -31887,7 +31887,7 @@ Maddison et al. 2007).
 
 ---
 
-<!-- page 585 -->
+<!-- page 584 -->
 
 Simon J. Greenhill
 566
@@ -31937,7 +31937,7 @@ pattern in Micronesia (again, part of the Austronesian diaspora) where a major d
 
 ---
 
-<!-- page 586 -->
+<!-- page 585 -->
 
 Demographic correlates of language diversity
 567
@@ -31988,7 +31988,7 @@ Africa were not as fortunate.
 
 ---
 
-<!-- page 587 -->
+<!-- page 586 -->
 
 Simon J. Greenhill
 568
@@ -32050,7 +32050,7 @@ distribution of languages shows multiple bands corresponding to the major land-m
 
 ---
 
-<!-- page 588 -->
+<!-- page 587 -->
 
 Demographic correlates of language diversity
 569
@@ -32103,7 +32103,7 @@ travel costs by incorporating environmental parameters (e.g. elevation, terrain,
 
 ---
 
-<!-- page 589 -->
+<!-- page 588 -->
 
 Simon J. Greenhill
 570
@@ -32154,7 +32154,7 @@ languages themselves – as languages are born, people elaborate differences to 
 
 ---
 
-<!-- page 590 -->
+<!-- page 589 -->
 
 Demographic correlates of language diversity
 571
@@ -32207,7 +32207,7 @@ more speakers. This inference, however, needs to be tested further.
 
 ---
 
-<!-- page 591 -->
+<!-- page 590 -->
 
 Simon J. Greenhill
 572
@@ -32257,7 +32257,7 @@ There have been some preliminary studies quantifying the rates of change in basi
 
 ---
 
-<!-- page 592 -->
+<!-- page 591 -->
 
 Demographic correlates of language diversity
 573
@@ -32310,7 +32310,7 @@ drivers of diversity interact.
 
 ---
 
-<!-- page 593 -->
+<!-- page 592 -->
 
 Simon J. Greenhill
 574
@@ -32365,7 +32365,7 @@ the origins and expansion of the Indo-European language family. Science 337(6097
 
 ---
 
-<!-- page 594 -->
+<!-- page 593 -->
 
 Demographic correlates of language diversity
 575
@@ -32424,7 +32424,7 @@ occurrence of linguistic and biological diversity in biodiversity hotspots and h
 
 ---
 
-<!-- page 595 -->
+<!-- page 594 -->
 
 Simon J. Greenhill
 576
@@ -32483,7 +32483,7 @@ Evolution 55(9): 1762–1780.
 
 ---
 
-<!-- page 596 -->
+<!-- page 595 -->
 
 Demographic correlates of language diversity
 577
@@ -32542,7 +32542,7 @@ Canberra: Paci c Linguistics, 329–361.
 
 ---
 
-<!-- page 597 -->
+<!-- page 596 -->
 
 Simon J. Greenhill
 578
@@ -32598,7 +32598,7 @@ Wright, Sewall. 1931. Evolution in Mendelian populations. Genetics 16(2): 97–1
 
 ---
 
-<!-- page 598 -->
+<!-- page 597 -->
 
 579
 27
@@ -32639,7 +32639,7 @@ past are only as good as our reconstructions, which are necessarily hypotheses. 
 
 ---
 
-<!-- page 599 -->
+<!-- page 598 -->
 
 Patience Epps
 580
@@ -32690,7 +32690,7 @@ rate. Note, however, that while inheritability implies salience, the converse is
 
 ---
 
-<!-- page 600 -->
+<!-- page 599 -->
 
 Historical linguistics and socio-cultural reconstruction 
 581
@@ -32745,7 +32745,7 @@ their contemporary hunting/gathering focus, the speakers of Proto-Nadahup do not
 
 ---
 
-<!-- page 601 -->
+<!-- page 600 -->
 
 Patience Epps
 582
@@ -32835,7 +32835,7 @@ the Proto-Nyulnyulan homeland was on the coast.
 
 ---
 
-<!-- page 602 -->
+<!-- page 601 -->
 
 Historical linguistics and socio-cultural reconstruction 
 583
@@ -32890,7 +32890,7 @@ example, in Hup (Nadahup), we  nd p|h t ‘banana’ and haj’ay p|h t ‘
 
 ---
 
-<!-- page 603 -->
+<!-- page 602 -->
 
 Patience Epps
 584
@@ -32943,7 +32943,7 @@ example, with Nadahup words for ‘three’, which are identi able as ‘rubber
 
 ---
 
-<!-- page 604 -->
+<!-- page 603 -->
 
 Historical linguistics and socio-cultural reconstruction 
 585
@@ -32996,7 +32996,7 @@ be inherited on either side of a particular borrowing event (see Hill et al., in
 
 ---
 
-<!-- page 605 -->
+<!-- page 604 -->
 
 Patience Epps
 586
@@ -33049,7 +33049,7 @@ horticulture today, but have a strong hunting and gathering orientation. As Epps
 
 ---
 
-<!-- page 606 -->
+<!-- page 605 -->
 
 Historical linguistics and socio-cultural reconstruction 
 587
@@ -33102,7 +33102,7 @@ and its role in lexicalisation processes – as well as in grammaticalisation, a
 
 ---
 
-<!-- page 607 -->
+<!-- page 606 -->
 
 Patience Epps
 588
@@ -33153,7 +33153,7 @@ grammaticalisation of a future marker from the verb ‘count’ in Pennsylvania 
 
 ---
 
-<!-- page 608 -->
+<!-- page 607 -->
 
 Historical linguistics and socio-cultural reconstruction 
 589
@@ -33206,7 +33206,7 @@ community was before the shift occurred. For example, Thomason (2009: 111–113)
 
 ---
 
-<!-- page 609 -->
+<!-- page 608 -->
 
 Patience Epps
 590
@@ -33259,7 +33259,7 @@ is absent from many of the languages that intervene between them geographically.
 
 ---
 
-<!-- page 610 -->
+<!-- page 609 -->
 
 Historical linguistics and socio-cultural reconstruction 
 591
@@ -33312,7 +33312,7 @@ peoples. Language offers unprecedented possibilities to explore the less tangibl
 
 ---
 
-<!-- page 611 -->
+<!-- page 610 -->
 
 Patience Epps
 592
@@ -33370,7 +33370,7 @@ is in fact very limited.
 
 ---
 
-<!-- page 612 -->
+<!-- page 611 -->
 
 Historical linguistics and socio-cultural reconstruction 
 593
@@ -33425,7 +33425,7 @@ of  ora and fauna. In Alan Nussbaum (ed.) Verba Docenti: studies in historical 
 
 ---
 
-<!-- page 613 -->
+<!-- page 612 -->
 
 Patience Epps
 594
@@ -33482,7 +33482,7 @@ in Amazonian numerals. Journal of Language Contact 6: 329–357.
 
 ---
 
-<!-- page 614 -->
+<!-- page 613 -->
 
 Historical linguistics and socio-cultural reconstruction 
 595
@@ -33539,7 +33539,7 @@ Universiteit, Amsterdam.
 
 ---
 
-<!-- page 615 -->
+<!-- page 614 -->
 
 Patience Epps
 596
@@ -33598,7 +33598,7 @@ Urban, Gregory. 1988. Ritual wailing in Amerindian Brazil. American Anthropologi
 
 ---
 
-<!-- page 616 -->
+<!-- page 615 -->
 
 Historical linguistics and socio-cultural reconstruction 
 597
@@ -33618,7 +33618,7 @@ Witkowski, Stanley R. and Cecil H. Brown. 1983. Marking reversals and cultural i
 
 ---
 
-<!-- page 617 -->
+<!-- page 616 -->
 
 598
 28
@@ -33660,7 +33660,7 @@ and strength of Roman impact in different regions of the Empire, linguistic data
 
 ---
 
-<!-- page 618 -->
+<!-- page 617 -->
 
 Prehistory through language and archaeology 
 599
@@ -33710,7 +33710,7 @@ past.
 
 ---
 
-<!-- page 619 -->
+<!-- page 618 -->
 
 Paul Heggarty
 600
@@ -33759,7 +33759,7 @@ patterns observed across languages – of diversity, relatedness, divergence and
 
 ---
 
-<!-- page 620 -->
+<!-- page 619 -->
 
 Prehistory through language and archaeology 
 601
@@ -33811,7 +33811,7 @@ focused on language families, inevitably this chapter must too. And for the (pre
 
 ---
 
-<!-- page 621 -->
+<!-- page 620 -->
 
 Paul Heggarty
 602
@@ -33862,7 +33862,7 @@ models, both traditional and new: the ‘family tree’ concept.
 
 ---
 
-<!-- page 622 -->
+<!-- page 621 -->
 
 Prehistory through language and archaeology 
 603
@@ -33916,7 +33916,7 @@ historical linguists’ expectations that the tree model has led us most astray.
 
 ---
 
-<!-- page 623 -->
+<!-- page 622 -->
 
 Paul Heggarty
 604
@@ -33968,7 +33968,7 @@ attested timespans.
 
 ---
 
-<!-- page 624 -->
+<!-- page 623 -->
 
 Prehistory through language and archaeology 
 605
@@ -34023,7 +34023,7 @@ even without any such impacts, the basic determiner of whether and to what exten
 
 ---
 
-<!-- page 625 -->
+<!-- page 624 -->
 
 Paul Heggarty
 606
@@ -34078,7 +34078,7 @@ itself. Our very impressions of how rapidly languages typically change and diver
 
 ---
 
-<!-- page 626 -->
+<!-- page 625 -->
 
 Prehistory through language and archaeology 
 607
@@ -34131,7 +34131,7 @@ number of further assumptions, however. Its basic claim is that if a word can be
 
 ---
 
-<!-- page 627 -->
+<!-- page 626 -->
 
 Paul Heggarty
 608
@@ -34186,7 +34186,7 @@ reconstructed on the level of sound. Even in its modern technological sense, cog
 
 ---
 
-<!-- page 628 -->
+<!-- page 627 -->
 
 Prehistory through language and archaeology 
 609
@@ -34241,7 +34241,7 @@ Poser (2008: 346) to imply that the family must be post-agricultural. In sum, in
 
 ---
 
-<!-- page 629 -->
+<!-- page 628 -->
 
 Paul Heggarty
 610
@@ -34292,7 +34292,7 @@ is only the briefest of summaries.
 
 ---
 
-<!-- page 630 -->
+<!-- page 629 -->
 
 Prehistory through language and archaeology 
 611
@@ -34348,7 +34348,7 @@ absolutely con rm direct contiguity of homelands.
 
 ---
 
-<!-- page 631 -->
+<!-- page 630 -->
 
 Paul Heggarty
 612
@@ -34401,7 +34401,7 @@ societies, out of different points within each. In the Near East, for example, a
 
 ---
 
-<!-- page 632 -->
+<!-- page 631 -->
 
 Prehistory through language and archaeology 
 613
@@ -34454,7 +34454,7 @@ that was much less regimented and progressive, and more haphazard and network-li
 
 ---
 
-<!-- page 633 -->
+<!-- page 632 -->
 
 Paul Heggarty
 614
@@ -34507,7 +34507,7 @@ for simply assuming that things worked the same in prehistory, especially at ear
 
 ---
 
-<!-- page 634 -->
+<!-- page 633 -->
 
 Prehistory through language and archaeology 
 615
@@ -34558,7 +34558,7 @@ emerged out of just those parts of Europe at the forefront of the rise of the na
 
 ---
 
-<!-- page 635 -->
+<!-- page 634 -->
 
 Paul Heggarty
 616
@@ -34611,7 +34611,7 @@ back in on itself once circumstances change: witness ‘The Death of Sanskrit’
 
 ---
 
-<!-- page 636 -->
+<!-- page 635 -->
 
 Prehistory through language and archaeology 
 617
@@ -34664,7 +34664,7 @@ linguistic impact. All cases of external conquest involve at least some genetic 
 
 ---
 
-<!-- page 637 -->
+<!-- page 636 -->
 
 Paul Heggarty
 618
@@ -34716,7 +34716,7 @@ as a stock explanation for major language families.
 
 ---
 
-<!-- page 638 -->
+<!-- page 637 -->
 
 Prehistory through language and archaeology 
 619
@@ -34768,7 +34768,7 @@ one, then. In a partial analogy with the phenomenon of drift to  xation in popu
 
 ---
 
-<!-- page 639 -->
+<!-- page 638 -->
 
 Paul Heggarty
 620
@@ -34821,7 +34821,7 @@ of degree: just how signi cant a role may the spread of agriculture have played
 
 ---
 
-<!-- page 640 -->
+<!-- page 639 -->
 
 Prehistory through language and archaeology 
 621
@@ -34874,7 +34874,7 @@ and language expansions might most plausibly be entertained where they are known
 
 ---
 
-<!-- page 641 -->
+<!-- page 640 -->
 
 Paul Heggarty
 622
@@ -34927,7 +34927,7 @@ enjoying wide currency, prestige and utility right across it. Lingua franca stat
 
 ---
 
-<!-- page 642 -->
+<!-- page 641 -->
 
 Prehistory through language and archaeology 
 623
@@ -34980,7 +34980,7 @@ which also have much to teach us of prehistory. They lie beyond the con nes of 
 
 ---
 
-<!-- page 643 -->
+<!-- page 642 -->
 
 Paul Heggarty
 624
@@ -35033,7 +35033,7 @@ Austronesian history. Current Anthropology 51(2): 223–256.
 
 ---
 
-<!-- page 644 -->
+<!-- page 643 -->
 
 Prehistory through language and archaeology 
 625
@@ -35092,7 +35092,7 @@ Oceanic society. Volume 4: Animals. Canberra: Paci c Linguistics, 421–452.
 
 ---
 
-<!-- page 645 -->
+<!-- page 644 -->
 
 Paul Heggarty
 626
@@ -35125,7 +35125,7 @@ Cambridge University Press.
 
 ---
 
-<!-- page 646 -->
+<!-- page 645 -->
 
 627
 29
@@ -35167,7 +35167,7 @@ same does not hold for languages, which can be and often are transmitted horizon
 
 ---
 
-<!-- page 647 -->
+<!-- page 646 -->
 
 Brigitte Pakendorf
 628
@@ -35220,7 +35220,7 @@ linguistic ‘distances’ far too crude to provide any meaningful basis for com
 
 ---
 
-<!-- page 648 -->
+<!-- page 647 -->
 
 Historical linguistics and molecular anthropology 
 629
@@ -35272,7 +35272,7 @@ contact situations with known linguistic outcomes with which to calibrate our di
 
 ---
 
-<!-- page 649 -->
+<!-- page 648 -->
 
 Brigitte Pakendorf
 630
@@ -35327,7 +35327,7 @@ close interactions between speakers of different languages, Y-chromosomal result
 
 ---
 
-<!-- page 650 -->
+<!-- page 649 -->
 
 Historical linguistics and molecular anthropology 
 631
@@ -35379,7 +35379,7 @@ overall speech community of the Sakha ancestors most probably remained dominant 
 
 ---
 
-<!-- page 651 -->
+<!-- page 650 -->
 
 Brigitte Pakendorf
 632
@@ -35434,7 +35434,7 @@ spoken by the Nama, a group of traditional herders of cattle as well as small li
 
 ---
 
-<!-- page 652 -->
+<!-- page 651 -->
 
 Historical linguistics and molecular anthropology 
 633
@@ -35489,7 +35489,7 @@ of the maternal gene pool of the populations concerned, while the paternal gene 
 
 ---
 
-<!-- page 653 -->
+<!-- page 652 -->
 
 Brigitte Pakendorf
 634
@@ -35542,7 +35542,7 @@ that are very different from those found in any Bantu language without adapting 
 
 ---
 
-<!-- page 654 -->
+<!-- page 653 -->
 
 Historical linguistics and molecular anthropology 
 635
@@ -35595,7 +35595,7 @@ studies, and that this will help us to understand the processes underlying conta
 
 ---
 
-<!-- page 655 -->
+<!-- page 654 -->
 
 Brigitte Pakendorf
 636
@@ -35648,7 +35648,7 @@ approximately three billion nucleotides in total; mtDNA is a very small (only ap
 
 ---
 
-<!-- page 656 -->
+<!-- page 655 -->
 
 Historical linguistics and molecular anthropology 
 637
@@ -35703,7 +35703,7 @@ son and from mother to offspring; the only variation stems from newly arising mu
 
 ---
 
-<!-- page 657 -->
+<!-- page 656 -->
 
 Brigitte Pakendorf
 638
@@ -35760,7 +35760,7 @@ the foragers speaking Khoisan languages are widely assumed to be the autochthono
 
 ---
 
-<!-- page 658 -->
+<!-- page 657 -->
 
 Historical linguistics and molecular anthropology 
 639
@@ -35818,7 +35818,7 @@ Journal of Human Genetics 92(2): 285–292.
 
 ---
 
-<!-- page 659 -->
+<!-- page 658 -->
 
 Brigitte Pakendorf
 640
@@ -35877,7 +35877,7 @@ Current Biology 16(7): 668–673.
 
 ---
 
-<!-- page 660 -->
+<!-- page 659 -->
 
 Historical linguistics and molecular anthropology 
 641
@@ -35931,26 +35931,26 @@ for sex-biased demographic processes. European Journal of Human Genetics, 13(7):
 
 ---
 
-<!-- page 661 -->
+<!-- page 660 -->
 
 This page intentionally left blank
 
 ---
 
-<!-- page 662 -->
+<!-- page 661 -->
 
 Part V
 Regional summaries
 
 ---
 
-<!-- page 663 -->
+<!-- page 662 -->
 
 This page intentionally left blank
 
 ---
 
-<!-- page 664 -->
+<!-- page 663 -->
 
 645
 30
@@ -35990,7 +35990,7 @@ around the mid-fourth millennium BC. See Anthony (2008). This is, interestingly,
 
 ---
 
-<!-- page 665 -->
+<!-- page 664 -->
 
 Benjamin W. Fortson IV
 646
@@ -36042,7 +36042,7 @@ Garrett’s conclusions are approvingly cited in Clackson (2007: 14–16).
 
 ---
 
-<!-- page 666 -->
+<!-- page 665 -->
 
 Indo-European
 647
@@ -36097,7 +36097,7 @@ with, respectively, Italic *-mos to the west and Anatolian * -wen to the east (1
 
 ---
 
-<!-- page 667 -->
+<!-- page 666 -->
 
 Benjamin W. Fortson IV
 648
@@ -36149,7 +36149,7 @@ laryngeals only left indirect traces, principally the following: the second and 
 
 ---
 
-<!-- page 668 -->
+<!-- page 667 -->
 
 Indo-European
 649
@@ -36204,7 +36204,7 @@ yet suf cient to prove or disprove its naturalness, though Weiss (2009) observe
 
 ---
 
-<!-- page 669 -->
+<!-- page 668 -->
 
 Benjamin W. Fortson IV
 650
@@ -36257,7 +36257,7 @@ grammatical gender. See the collection of papers in Schuhmann and Neri (forthcom
 
 ---
 
-<!-- page 670 -->
+<!-- page 669 -->
 
 Indo-European
 651
@@ -36309,7 +36309,7 @@ the weak stem *h2us-s-´, and strong stem *ph2-tér- ‘father’ did likewise, 
 
 ---
 
-<!-- page 671 -->
+<!-- page 670 -->
 
 Benjamin W. Fortson IV
 652
@@ -36364,7 +36364,7 @@ remained productive in the prehistories of each daughter branch.
 
 ---
 
-<!-- page 672 -->
+<!-- page 671 -->
 
 Indo-European
 653
@@ -36416,7 +36416,7 @@ in nitives (aside from a gamut of verbal nouns that could function in quasi-in
 
 ---
 
-<!-- page 673 -->
+<!-- page 672 -->
 
 Benjamin W. Fortson IV
 654
@@ -36469,7 +36469,7 @@ have sampled in this brief survey, every archaeological season sees the discover
 
 ---
 
-<!-- page 674 -->
+<!-- page 673 -->
 
 Indo-European
 655
@@ -36522,7 +36522,7 @@ Berkeley Linguistics Society, February 12–15. Berkeley: Berkeley Linguistics S
 
 ---
 
-<!-- page 675 -->
+<!-- page 674 -->
 
 Benjamin W. Fortson IV
 656
@@ -36566,7 +36566,7 @@ European Conference, University of Reykjavík, Iceland.
 
 ---
 
-<!-- page 676 -->
+<!-- page 675 -->
 
 657
 31
@@ -36609,7 +36609,7 @@ stone inscriptions of Old Cham (fourth century AD), Old Malay (seventh century A
 
 ---
 
-<!-- page 677 -->
+<!-- page 676 -->
 
  
 Madagascar
@@ -36645,7 +36645,7 @@ Figure 31.1 Geographic dispersal of Austronesian languages.
 
 ---
 
-<!-- page 678 -->
+<!-- page 677 -->
 
 The Austronesian language family
 659
@@ -36759,7 +36759,7 @@ language family where philological approaches form part of the foundation for it
 
 ---
 
-<!-- page 679 -->
+<!-- page 678 -->
 
 Ritsuko Kikusawa
 660
@@ -36812,7 +36812,7 @@ Austronesian languages to test and re-de ne the genetic relationships between t
 
 ---
 
-<!-- page 680 -->
+<!-- page 679 -->
 
 The Austronesian language family
 661
@@ -36938,7 +36938,7 @@ j
 
 ---
 
-<!-- page 681 -->
+<!-- page 680 -->
 
 Ritsuko Kikusawa
 662
@@ -37013,7 +37013,7 @@ determined by the innovations shown in (1). While some Formosan languages (i.e. 
 
 ---
 
-<!-- page 682 -->
+<!-- page 681 -->
 
 The Austronesian language family
 663
@@ -37074,7 +37074,7 @@ summary of migration hypotheses of Austronesian peoples, see, for example, Bellw
 
 ---
 
-<!-- page 683 -->
+<!-- page 682 -->
 
 Ritsuko Kikusawa
 664
@@ -37128,7 +37128,7 @@ Indonesia and Oceania in the  rst millennium after the movement out of Taiwan. 
 
 ---
 
-<!-- page 684 -->
+<!-- page 683 -->
 
 The Austronesian language family
 665
@@ -37178,7 +37178,7 @@ historical linguistics is the method to identify contact relationships among clo
 
 ---
 
-<!-- page 685 -->
+<!-- page 684 -->
 
 Ritsuko Kikusawa
 666
@@ -37254,7 +37254,7 @@ This occurs as the result of bilingualism, during which a language that is emble
 
 ---
 
-<!-- page 686 -->
+<!-- page 685 -->
 
 The Austronesian language family
 667
@@ -37300,7 +37300,7 @@ Rotuman
 
 ---
 
-<!-- page 687 -->
+<!-- page 686 -->
 
 Ritsuko Kikusawa
 668
@@ -37353,7 +37353,7 @@ systems, where changes between ergative and accusative systems come into questio
 
 ---
 
-<!-- page 688 -->
+<!-- page 687 -->
 
 The Austronesian language family
 669
@@ -37445,7 +37445,7 @@ in angle brackts <x> is an in x.
 
 ---
 
-<!-- page 689 -->
+<!-- page 688 -->
 
 Ritsuko Kikusawa
 670
@@ -37498,7 +37498,7 @@ by Sagart (2005).
 
 ---
 
-<!-- page 690 -->
+<!-- page 689 -->
 
 The Austronesian language family
 671
@@ -37554,7 +37554,7 @@ Lawrence A. Reid. Manila: Linguistics Society of the Philippines and SIL Philipp
 
 ---
 
-<!-- page 691 -->
+<!-- page 690 -->
 
 Ritsuko Kikusawa
 672
@@ -37613,7 +37613,7 @@ Nichols, Johanna. 1996. The comparative method as heuristic. In Durie and Ross (
 
 ---
 
-<!-- page 692 -->
+<!-- page 691 -->
 
 The Austronesian language family
 673
@@ -37671,7 +37671,7 @@ Language Contact 6(1): 5–47.
 
 ---
 
-<!-- page 693 -->
+<!-- page 692 -->
 
 Ritsuko Kikusawa
 674
@@ -37728,7 +37728,7 @@ Canberra: Paci c Linguistics, 541–594.
 
 ---
 
-<!-- page 694 -->
+<!-- page 693 -->
 
 675
 32
@@ -37768,7 +37768,7 @@ that have occurred in Austroasiatic, although for the sake of space and coherenc
 
 ---
 
-<!-- page 695 -->
+<!-- page 694 -->
 
 Figure 32.1 Geographical distribution of Austroasiatic branches (originally appearing in van Driem 2001: 267; reproduced with permission)
 Arabia n 
@@ -37819,7 +37819,7 @@ Mandalay
 
 ---
 
-<!-- page 696 -->
+<!-- page 695 -->
 
 The Austroasiatic language phylum
 677
@@ -37871,7 +37871,7 @@ l, w, j, h/). C4 segments corresponded to the C2 inventory but without the voici
 
 ---
 
-<!-- page 697 -->
+<!-- page 696 -->
 
 Paul Sidwell
 678
@@ -37929,7 +37929,7 @@ assimilation to a dominant areal pattern.
 
 ---
 
-<!-- page 698 -->
+<!-- page 697 -->
 
 The Austroasiatic language phylum
 679
@@ -38001,7 +38001,7 @@ neighbouring tongues, whom I have heard characterise it as ‘baby talk’. See 
 
 ---
 
-<!-- page 699 -->
+<!-- page 698 -->
 
 Paul Sidwell
 680
@@ -38101,7 +38101,7 @@ maw11
 
 ---
 
-<!-- page 700 -->
+<!-- page 699 -->
 
 The Austroasiatic language phylum
 681
@@ -38170,7 +38170,7 @@ syllable coda.
 
 ---
 
-<!-- page 701 -->
+<!-- page 700 -->
 
 Paul Sidwell
 682
@@ -38247,7 +38247,7 @@ syllable roots and pre xed stems as well.” Examples are given in (9).
 
 ---
 
-<!-- page 702 -->
+<!-- page 701 -->
 
 The Austroasiatic language phylum
 683
@@ -38309,7 +38309,7 @@ lexicon are given in (12).
 
 ---
 
-<!-- page 703 -->
+<!-- page 702 -->
 
 Paul Sidwell
 684
@@ -38372,7 +38372,7 @@ snjlaj ‘swidden (count)’
 
 ---
 
-<!-- page 704 -->
+<!-- page 703 -->
 
 The Austroasiatic language phylum
 685
@@ -38447,7 +38447,7 @@ see (17).
 
 ---
 
-<!-- page 705 -->
+<!-- page 704 -->
 
 Paul Sidwell
 686
@@ -38539,7 +38539,7 @@ sii
 
 ---
 
-<!-- page 706 -->
+<!-- page 705 -->
 
 The Austroasiatic language phylum
 687
@@ -38583,7 +38583,7 @@ examples.
 
 ---
 
-<!-- page 707 -->
+<!-- page 706 -->
 
 Paul Sidwell
 688
@@ -38689,7 +38689,7 @@ emergence of implosives in Vietnamese are given in (21).
 
 ---
 
-<!-- page 708 -->
+<!-- page 707 -->
 
 The Austroasiatic language phylum
 689
@@ -38820,7 +38820,7 @@ The general pattern is one of a chain shift that proceeds partly or completely a
 
 ---
 
-<!-- page 709 -->
+<!-- page 708 -->
 
 Paul Sidwell
 690
@@ -38962,7 +38962,7 @@ mechanism behind such complexity is the splitting of vowel systems into high and
 
 ---
 
-<!-- page 710 -->
+<!-- page 709 -->
 
 The Austroasiatic language phylum
 691
@@ -39042,7 +39042,7 @@ to treat them separately. As can been seen in Thurgood’s table of ‘most comm
 
 ---
 
-<!-- page 711 -->
+<!-- page 710 -->
 
 Paul Sidwell
 692
@@ -39124,7 +39124,7 @@ complex phonetics of Modern Spoken Mon emerged from the apparently much simpler 
 
 ---
 
-<!-- page 712 -->
+<!-- page 711 -->
 
 The Austroasiatic language phylum
 693
@@ -39232,7 +39232,7 @@ Huffman’s less ambiguous categories.
 
 ---
 
-<!-- page 713 -->
+<!-- page 712 -->
 
 Paul Sidwell
 694
@@ -39316,7 +39316,7 @@ simple high/low tone systems.
 
 ---
 
-<!-- page 714 -->
+<!-- page 713 -->
 
 The Austroasiatic language phylum
 695
@@ -39411,7 +39411,7 @@ developments will be largely governed by internal factors.
 
 ---
 
-<!-- page 715 -->
+<!-- page 714 -->
 
 Paul Sidwell
 696
@@ -39480,7 +39480,7 @@ speci ed, is as in (32).
 
 ---
 
-<!-- page 716 -->
+<!-- page 715 -->
 
 The Austroasiatic language phylum
 697
@@ -39596,7 +39596,7 @@ k$n
 
 ---
 
-<!-- page 717 -->
+<!-- page 716 -->
 
 Paul Sidwell
 698
@@ -39696,7 +39696,7 @@ re ecting Proto-Aslian *V m, *Vp, *Vm respectively.
 
 ---
 
-<!-- page 718 -->
+<!-- page 717 -->
 
 The Austroasiatic language phylum
 699
@@ -39755,7 +39755,7 @@ for the present purposes is treated as equivalent to Proto-Austroasiatic. This i
 
 ---
 
-<!-- page 719 -->
+<!-- page 718 -->
 
 Paul Sidwell
 700
@@ -39811,7 +39811,7 @@ Bangkok: Chulalongkorn University Printing House.
 
 ---
 
-<!-- page 720 -->
+<!-- page 719 -->
 
 The Austroasiatic language phylum
 701
@@ -39870,7 +39870,7 @@ to Paul K. Benedict for his 71st birthday. Canberra: Paci c Linguistics, 141–
 
 ---
 
-<!-- page 721 -->
+<!-- page 720 -->
 
 Paul Sidwell
 702
@@ -39930,7 +39930,7 @@ Hypothesis. In N. J. En eld (ed.) Dynamics of human diversity. Canberra, Paci 
 
 ---
 
-<!-- page 722 -->
+<!-- page 721 -->
 
 The Austroasiatic language phylum
 703
@@ -39966,7 +39966,7 @@ analyses. The Mon-Khmer Studies Journal 31: 65–82.
 
 ---
 
-<!-- page 723 -->
+<!-- page 722 -->
 
 704
 33
@@ -40006,7 +40006,7 @@ percentages used to arrive at the various levels of classi cation are summarise
 
 ---
 
-<!-- page 724 -->
+<!-- page 723 -->
 
 Pama-Nyungan
 705
@@ -40052,7 +40052,7 @@ Different families of the same phylum
 
 ---
 
-<!-- page 725 -->
+<!-- page 724 -->
 
 Luisa Miceli
 706
@@ -40105,7 +40105,7 @@ been questioned at various points in time is the West Torres Strait language, wh
 
 ---
 
-<!-- page 726 -->
+<!-- page 725 -->
 
 Pama-Nyungan
 707
@@ -40158,7 +40158,7 @@ various nodes/groupings that have been proposed. For example, if a certain node 
 
 ---
 
-<!-- page 727 -->
+<!-- page 726 -->
 
 Luisa Miceli
 708
@@ -40213,7 +40213,7 @@ higher – i.e. a larger percentage of the total number of proposed cognate sets
 
 ---
 
-<!-- page 728 -->
+<!-- page 727 -->
 
 Pama-Nyungan
 709
@@ -40257,7 +40257,7 @@ primarily genealogical, as a clearly distinct grouping, as the majority of Austr
 
 ---
 
-<!-- page 729 -->
+<!-- page 728 -->
 
 Luisa Miceli
 710
@@ -40308,7 +40308,7 @@ helps to explain aspects of modern language systems that would otherwise be left
 
 ---
 
-<!-- page 730 -->
+<!-- page 729 -->
 
 Pama-Nyungan
 711
@@ -40359,7 +40359,7 @@ and Australia, estimated to have occurred around 4,000 years ago.6
 
 ---
 
-<!-- page 731 -->
+<!-- page 730 -->
 
 Luisa Miceli
 712
@@ -40411,7 +40411,7 @@ these languages, giving a predictable pattern.
 
 ---
 
-<!-- page 732 -->
+<!-- page 731 -->
 
 Pama-Nyungan
 713
@@ -40473,7 +40473,7 @@ Nyungan case.
 
 ---
 
-<!-- page 733 -->
+<!-- page 732 -->
 
 Luisa Miceli
 714
@@ -40521,7 +40521,7 @@ correspondences are near identical, there is no clear proof that all the items h
 
 ---
 
-<!-- page 734 -->
+<!-- page 733 -->
 
 Pama-Nyungan
 715
@@ -40587,7 +40587,7 @@ Nyungan, but see Sutton and Koch (2008) and Evans (2005) for a critique of this 
 
 ---
 
-<!-- page 735 -->
+<!-- page 734 -->
 
 Luisa Miceli
 716
@@ -40651,7 +40651,7 @@ represent the velar stop as there is no voicing distinction in Australian langua
 
 ---
 
-<!-- page 736 -->
+<!-- page 735 -->
 
 Pama-Nyungan
 717
@@ -40723,7 +40723,7 @@ above example, twenty concepts with four, seventy concepts with three, while the
 
 ---
 
-<!-- page 737 -->
+<!-- page 736 -->
 
 Luisa Miceli
 718
@@ -40785,7 +40785,7 @@ are the number of apical and laminal contrasts, so that as well as languages dis
 
 ---
 
-<!-- page 738 -->
+<!-- page 737 -->
 
 Pama-Nyungan
 719
@@ -40863,7 +40863,7 @@ great enough to offset the common misperception which [usually] results in … a
 
 ---
 
-<!-- page 739 -->
+<!-- page 738 -->
 
 Luisa Miceli
 720
@@ -40915,7 +40915,7 @@ pattern, but that pattern is not one predicted by the model.
 
 ---
 
-<!-- page 740 -->
+<!-- page 739 -->
 
 Pama-Nyungan
 721
@@ -40968,7 +40968,7 @@ way or the other. Another way of dealing with the problem would be to re-evaluat
 
 ---
 
-<!-- page 741 -->
+<!-- page 740 -->
 
 Luisa Miceli
 722
@@ -41020,7 +41020,7 @@ consistent with usage in much of the psycholinguistic literature (see e.g. De Gr
 
 ---
 
-<!-- page 742 -->
+<!-- page 741 -->
 
 Pama-Nyungan
 723
@@ -41076,7 +41076,7 @@ Breen, Gavin. 2007. Reassessing Karnic. Australian Journal of Linguistics 25(1):
 
 ---
 
-<!-- page 743 -->
+<!-- page 742 -->
 
 Luisa Miceli
 724
@@ -41134,7 +41134,7 @@ Linguists, Prague: Matfyzpress, 1–12.
 
 ---
 
-<!-- page 744 -->
+<!-- page 743 -->
 
 Pama-Nyungan
 725
@@ -41184,7 +41184,7 @@ Wurm, Stephen A. 1972. The languages of Australia and Tasmania. The Hague: Mouto
 
 ---
 
-<!-- page 745 -->
+<!-- page 744 -->
 
 726
 34
@@ -41221,7 +41221,7 @@ the languages in contact are unrelated or distantly related (1999: 314). Surely,
 
 ---
 
-<!-- page 746 -->
+<!-- page 745 -->
 
 The Paciﬁ c Northwest linguistic area 
 727
@@ -41274,7 +41274,7 @@ Plateau culture area, including northern Idaho and western Montana. In this chap
 
 ---
 
-<!-- page 747 -->
+<!-- page 746 -->
 
 Sarah G. Thomason
 728
@@ -41329,7 +41329,7 @@ comparative reconstruction we cannot know what is old and what is new in a given
 
 ---
 
-<!-- page 748 -->
+<!-- page 747 -->
 
 The Paciﬁ c Northwest linguistic area 
 729
@@ -41382,7 +41382,7 @@ features.
 
 ---
 
-<!-- page 749 -->
+<!-- page 748 -->
 
 Sarah G. Thomason
 730
@@ -41437,7 +41437,7 @@ the linguistic area. One example is the  ve so-called nasalless languages, in w
 
 ---
 
-<!-- page 750 -->
+<!-- page 749 -->
 
 The Paciﬁ c Northwest linguistic area 
 731
@@ -41490,7 +41490,7 @@ cases, in peripheral languages as well. First, some characteristic phonological 
 
 ---
 
-<!-- page 751 -->
+<!-- page 750 -->
 
 Sarah G. Thomason
 732
@@ -41545,7 +41545,7 @@ and then diffused throughout an ancient linguistic area, namely, an area in whic
 
 ---
 
-<!-- page 752 -->
+<!-- page 751 -->
 
 The Paciﬁ c Northwest linguistic area 
 733
@@ -41600,7 +41600,7 @@ since the break-up of Proto-Salishan into separate branches appears to have happ
 
 ---
 
-<!-- page 753 -->
+<!-- page 752 -->
 
 Sarah G. Thomason
 734
@@ -41647,7 +41647,7 @@ Institution, 30–51.
 
 ---
 
-<!-- page 754 -->
+<!-- page 753 -->
 
 The Paciﬁ c Northwest linguistic area 
 735
@@ -41706,7 +41706,7 @@ California Press, 169–178.
 
 ---
 
-<!-- page 755 -->
+<!-- page 754 -->
 
 Sarah G. Thomason
 736
@@ -41733,7 +41733,7 @@ Association for the Advancement of Science, Seattle.
 
 ---
 
-<!-- page 756 -->
+<!-- page 755 -->
 
 737
 Index
@@ -41803,7 +41803,7 @@ analysability: and compositionality 103–7,
 
 ---
 
-<!-- page 757 -->
+<!-- page 756 -->
 
 Index
 738
@@ -41913,7 +41913,7 @@ Bahnar 679, 682–3, 685–6, 687, 690, 698
 
 ---
 
-<!-- page 758 -->
+<!-- page 757 -->
 
 Index
 739
@@ -42023,7 +42023,7 @@ of 1–3, 8–15, 350; universality theories
 
 ---
 
-<!-- page 759 -->
+<!-- page 758 -->
 
 Index
 740
@@ -42134,7 +42134,7 @@ complexity, linguistic 495–6, 543, 549, 571
 
 ---
 
-<!-- page 760 -->
+<!-- page 759 -->
 
 Index
 741
@@ -42244,7 +42244,7 @@ degradation of information 138, 139
 
 ---
 
-<!-- page 761 -->
+<!-- page 760 -->
 
 Index
 742
@@ -42354,7 +42354,7 @@ endangered languages 468, 478, 541, 547
 
 ---
 
-<!-- page 762 -->
+<!-- page 761 -->
 
 Index
 743
@@ -42464,7 +42464,7 @@ change and 71–2; token 507; type 352, 359,
 
 ---
 
-<!-- page 763 -->
+<!-- page 762 -->
 
 Index
 744
@@ -42574,7 +42574,7 @@ example 131–2; formation of 646–7; Jones on
 
 ---
 
-<!-- page 764 -->
+<!-- page 763 -->
 
 Index
 745
@@ -42683,7 +42683,7 @@ grammaticalisation 589; invited 378, 396,
 
 ---
 
-<!-- page 765 -->
+<!-- page 764 -->
 
 Index
 746
@@ -42792,7 +42792,7 @@ lactose tolerance 206
 
 ---
 
-<!-- page 766 -->
+<!-- page 765 -->
 
 Index
 747
@@ -42903,7 +42903,7 @@ Wakashan
 
 ---
 
-<!-- page 767 -->
+<!-- page 766 -->
 
 Index
 748
@@ -43013,7 +43013,7 @@ monophthongs 685–6, 692, 696
 
 ---
 
-<!-- page 768 -->
+<!-- page 767 -->
 
 Index
 749
@@ -43123,7 +43123,7 @@ Nivkh 218
 
 ---
 
-<!-- page 769 -->
+<!-- page 768 -->
 
 Index
 750
@@ -43232,7 +43232,7 @@ Pennsylvania German 588–9
 
 ---
 
-<!-- page 770 -->
+<!-- page 769 -->
 
 Index
 751
@@ -43343,7 +43343,7 @@ diversity, language families 561, 572, 607;
 
 ---
 
-<!-- page 771 -->
+<!-- page 770 -->
 
 Index
 752
@@ -43452,7 +43452,7 @@ and 50; lexical reconstruction and inferences
 
 ---
 
-<!-- page 772 -->
+<!-- page 771 -->
 
 Index
 753
@@ -43562,7 +43562,7 @@ phonological similarities, Australian
 
 ---
 
-<!-- page 773 -->
+<!-- page 772 -->
 
 Index
 754
@@ -43673,7 +43673,7 @@ monosyllabism 677, 678–81; presyllables
 
 ---
 
-<!-- page 774 -->
+<!-- page 773 -->
 
 Index
 755
@@ -43783,7 +43783,7 @@ DensiTree 202, 203; evolutionary history of
 
 ---
 
-<!-- page 775 -->
+<!-- page 774 -->
 
 Index
 756
@@ -43892,7 +43892,7 @@ weak ties and language change 19, 493
 
 ---
 
-<!-- page 776 -->
+<!-- page 775 -->
 
 Index
 757
@@ -43943,7 +43943,7 @@ Zambia 29, 634, 636
 
 ---
 
-<!-- page 777 -->
+<!-- page 776 -->
 
 Taylor s 
 Franci s 

@@ -6,7 +6,7 @@
 
 ---
 
-<!-- page 2 -->
+<!-- page 1 -->
 
 THE LATIN
 OF ROMAN
@@ -22,7 +22,7 @@ MMXI
 
 ---
 
-<!-- page 3 -->
+<!-- page 2 -->
 
 RICERCHE SULLE LINGUE
 DI FRAMMENTARIA ATTESTAZIONE
@@ -32,7 +32,7 @@ collana diretta da paolo poccetti
 
 ---
 
-<!-- page 4 -->
+<!-- page 3 -->
 
 THE LATIN
 OF ROMAN
@@ -45,7 +45,7 @@ MMXI
 
 ---
 
-<!-- page 5 -->
+<!-- page 4 -->
 
 The publication of this volume was funded by the Fondazione Cassa di Risparmio di Lucca
 and the Università degli Studi di Pisa.
@@ -71,13 +71,13 @@ isbn elettronico 978-88-6227-377-0
 
 ---
 
-<!-- page 6 -->
+<!-- page 5 -->
 
 This page intentionally left blank
 
 ---
 
-<!-- page 7 -->
+<!-- page 6 -->
 
 CONTENTS
 Rolando Ferri, Introduction
@@ -118,13 +118,13 @@ Plates
 
 ---
 
-<!-- page 8 -->
+<!-- page 7 -->
 
 This page intentionally left blank
 
 ---
 
-<!-- page 9 -->
+<!-- page 8 -->
 
 INTRODUCTION
 Rolando Ferri
@@ -169,7 +169,7 @@ T
 
 ---
 
-<!-- page 10 -->
+<!-- page 9 -->
 
 Martyrius (v century), and Hermeneumata Celtis (extant in a Humanistic copy,
 but dating back to late-antique sources). Particularly centered on definitions of
@@ -203,7 +203,7 @@ rolando ferri
 
 ---
 
-<!-- page 11 -->
+<!-- page 10 -->
 
 LIST OF CONTRIBUTORS
 Frédérique Biville is Professeur émérite at the Université Lumière Lyon ii. She has
@@ -243,7 +243,7 @@ on Cassiodorus’ Variae.
 
 ---
 
-<!-- page 12 -->
+<!-- page 11 -->
 
 Jonathan G. F. Powell is Professor of  Latin at Royal Holloway, University of  London. He
 has published widely on many topics of Latin literature and Latin linguistics. Among
@@ -254,7 +254,7 @@ rolando ferri
 
 ---
 
-<!-- page 13 -->
+<!-- page 12 -->
 
 HOW DO LEXICA FIT
 INTO A WORK OF FICTION
@@ -296,7 +296,7 @@ E
 
 ---
 
-<!-- page 14 -->
+<!-- page 13 -->
 
 14
 dirk uwe hansen
@@ -344,7 +344,7 @@ ly accuse him of carelessness in his composition.
 
 ---
 
-<!-- page 15 -->
+<!-- page 14 -->
 
 how do lexica fit into a work of fiction
 15
@@ -393,7 +393,7 @@ remember I arrange them in alphabetical order for your convenience».
 
 ---
 
-<!-- page 16 -->
+<!-- page 15 -->
 
 16
 dirk uwe hansen
@@ -444,7 +444,7 @@ we will talk about those who were famous for their luxury».
 
 ---
 
-<!-- page 17 -->
+<!-- page 16 -->
 
 how do lexica fit into a work of fiction
 17
@@ -494,7 +494,7 @@ here in his recited kylikeion.
 
 ---
 
-<!-- page 18 -->
+<!-- page 17 -->
 
 18
 dirk uwe hansen
@@ -544,7 +544,7 @@ Moesia as a procurator I saw the bird in that country. When I heard this name gi
 
 ---
 
-<!-- page 19 -->
+<!-- page 18 -->
 
 how do lexica fit into a work of fiction
 19
@@ -580,7 +580,7 @@ that it knows the letter ‘H’.
 
 ---
 
-<!-- page 20 -->
+<!-- page 19 -->
 
 20
 dirk uwe hansen
@@ -627,7 +627,7 @@ Deipn. 3.85d ÙcÓ ÙÂÏÏ›Ó·Ó ‰b ÏÂÁÔÌ¤ÓËÓ úϲˆϲ ‰ËÏÔ�
 
 ---
 
-<!-- page 21 -->
+<!-- page 20 -->
 
 how do lexica fit into a work of fiction
 21
@@ -676,7 +676,7 @@ Deipn. 3.114e ‚ÏˆÌÈ·›Ô˘ϲ (‚ÏˆÌÈÏ›Ô˘ϲ cod.) ÙÂ ôÚÙÔ
 
 ---
 
-<!-- page 22 -->
+<!-- page 21 -->
 
 22
 dirk uwe hansen
@@ -726,7 +726,7 @@ Ael. Her. Philetairos 128 ÚÔÙ¤ÓıËÓ Ï¤ÁÔ˘ϲÈÓ nÓ Ôî ÓÜÓ �
 
 ---
 
-<!-- page 23 -->
+<!-- page 22 -->
 
 how do lexica fit into a work of fiction
 23
@@ -774,7 +774,7 @@ Deipn. 10.440e ·Úa ^PˆÌ·›ÔÈϲ ‰¤, œϲ ÊËϲÈ ¶ÔÏ‡‚ÈÔ�
 
 ---
 
-<!-- page 24 -->
+<!-- page 23 -->
 
 24
 dirk uwe hansen
@@ -822,7 +822,7 @@ that does not hurt the gum».
 
 ---
 
-<!-- page 25 -->
+<!-- page 24 -->
 
 how do lexica fit into a work of fiction
 25
@@ -870,7 +870,7 @@ known to Eust. Od. 2.142.2
 
 ---
 
-<!-- page 26 -->
+<!-- page 25 -->
 
 26
 dirk uwe hansen
@@ -918,7 +918,7 @@ Not only is the word itself then shown to be Greek, or even ‘more genuinely
 
 ---
 
-<!-- page 27 -->
+<!-- page 26 -->
 
 how do lexica fit into a work of fiction
 27
@@ -967,7 +967,7 @@ citrus, panis, tursio, rhombus, ballo are used to confront the wealth of the Lat
 
 ---
 
-<!-- page 28 -->
+<!-- page 27 -->
 
 28
 dirk uwe hansen
@@ -990,7 +990,7 @@ is not really a very good argument for the priority of the Greek language.
 
 ---
 
-<!-- page 29 -->
+<!-- page 28 -->
 
 DE L’ENCYCLOPÉDIE AU GLOSSAIRE:
 FESTUS ET SON ADAPTATION PAR PAUL DIACRE
@@ -1035,7 +1035,7 @@ L
 
 ---
 
-<!-- page 30 -->
+<!-- page 29 -->
 
 30
 marie-karine lhommé
@@ -1083,7 +1083,7 @@ Verrius Flaccus et d’autres ouvrages.
 
 ---
 
-<!-- page 31 -->
+<!-- page 30 -->
 
 festus et son adaptation par paul diacre
 31
@@ -1132,7 +1132,7 @@ cune critique de Verrius.
 
 ---
 
-<!-- page 32 -->
+<!-- page 31 -->
 
 32
 marie-karine lhommé
@@ -1183,7 +1183,7 @@ mercie Olga Smirnova pour la traduction du texte russe.
 
 ---
 
-<!-- page 33 -->
+<!-- page 32 -->
 
 festus et son adaptation par paul diacre
 33
@@ -1232,7 +1232,7 @@ avoir changé de forme entre le temps des anciens et le temps actuel: la forme a
 
 ---
 
-<!-- page 34 -->
+<!-- page 33 -->
 
 34
 marie-karine lhommé
@@ -1282,7 +1282,7 @@ Un même mot peut avoir deux sens également acceptables, comme pigere 234.05
 
 ---
 
-<!-- page 35 -->
+<!-- page 34 -->
 
 festus et son adaptation par paul diacre
 35
@@ -1331,7 +1331,7 @@ de Verrius Flaccus par rapport à Varron.
 
 ---
 
-<!-- page 36 -->
+<!-- page 35 -->
 
 36
 marie-karine lhommé
@@ -1381,7 +1381,7 @@ de Verrius ou de Festus?) y ajoutons le préfixe per- dans perplexa.
 
 ---
 
-<!-- page 37 -->
+<!-- page 36 -->
 
 festus et son adaptation par paul diacre
 37
@@ -1430,7 +1430,7 @@ complète d’un lemme qui portait sur tel ou tel sujet, l’abréviation partie
 
 ---
 
-<!-- page 38 -->
+<!-- page 37 -->
 
 38
 marie-karine lhommé
@@ -1479,7 +1479,7 @@ clamantes, ut homines se ab opere abstinerent, quia his opus facientem uidere in
 
 ---
 
-<!-- page 39 -->
+<!-- page 38 -->
 
 festus et son adaptation par paul diacre
 39
@@ -1530,7 +1530,7 @@ là où Festus avait Properam pro celeri ac strenua dixisse antiquos testimonio 
 
 ---
 
-<!-- page 40 -->
+<!-- page 39 -->
 
 40
 marie-karine lhommé
@@ -1580,7 +1580,7 @@ toucher, sauf à une femme mariée une seule fois.».
 
 ---
 
-<!-- page 41 -->
+<!-- page 40 -->
 
 festus et son adaptation par paul diacre
 41
@@ -1626,7 +1626,7 @@ Napurae: petites cordes.
 
 ---
 
-<!-- page 42 -->
+<!-- page 41 -->
 
 42
 marie-karine lhommé
@@ -1673,7 +1673,7 @@ sus ne signifie plus, chez Paul Diacre, ‘frappé d’interdiction’, ou ‘ex
 
 ---
 
-<!-- page 43 -->
+<!-- page 42 -->
 
 festus et son adaptation par paul diacre
 43
@@ -1721,7 +1721,7 @@ minée, elle reconnaît que c’étaient les lieux les moins significatifs qui a
 
 ---
 
-<!-- page 44 -->
+<!-- page 43 -->
 
 44
 marie-karine lhommé
@@ -1770,7 +1770,7 @@ cus, s’accumulent des noms de dieux rares et les traces de débats qui portent
 
 ---
 
-<!-- page 45 -->
+<!-- page 44 -->
 
 festus et son adaptation par paul diacre
 45
@@ -1818,7 +1818,7 @@ comme support de table.».
 
 ---
 
-<!-- page 46 -->
+<!-- page 45 -->
 
 46
 marie-karine lhommé
@@ -1868,7 +1868,7 @@ juxtaposition d’un mot implicitement considéré comme ancien ou rare et de so
 
 ---
 
-<!-- page 47 -->
+<!-- page 46 -->
 
 festus et son adaptation par paul diacre
 47
@@ -1900,13 +1900,13 @@ l’espace des realia et de la langue de l’époque d’Auguste.
 
 ---
 
-<!-- page 48 -->
+<!-- page 47 -->
 
 This page intentionally left blank
 
 ---
 
-<!-- page 49 -->
+<!-- page 48 -->
 
 NONIO MARCELLO
 E LA COMPENDIOSA DOCTRINA*
@@ -1950,7 +1950,7 @@ D
 
 ---
 
-<!-- page 50 -->
+<!-- page 49 -->
 
 50
 paolo gatti
@@ -2001,7 +2001,7 @@ Compendiosa doctrina.
 
 ---
 
-<!-- page 51 -->
+<!-- page 50 -->
 
 nonio marcello e la compendiosa doctrina
 51
@@ -2051,7 +2051,7 @@ il cosiddetto sermo hodiernus.
 
 ---
 
-<!-- page 52 -->
+<!-- page 51 -->
 
 52
 paolo gatti
@@ -2101,7 +2101,7 @@ trina corrisponde a ·›‰Â˘ϲÈϲ».
 
 ---
 
-<!-- page 53 -->
+<!-- page 52 -->
 
 nonio marcello e la compendiosa doctrina
 53
@@ -2150,7 +2150,7 @@ rentiae uerborum Stok 1997, 41.
 
 ---
 
-<!-- page 54 -->
+<!-- page 53 -->
 
 54
 paolo gatti
@@ -2198,7 +2198,7 @@ la Compendiosa doctrina sia opera incompiuta.
 
 ---
 
-<!-- page 55 -->
+<!-- page 54 -->
 
 nonio marcello e la compendiosa doctrina
 55
@@ -2247,7 +2247,7 @@ Pompeo Festo: Schmidt 1997a, 239.
 
 ---
 
-<!-- page 56 -->
+<!-- page 55 -->
 
 56
 paolo gatti
@@ -2296,7 +2296,7 @@ tere grammaticale-lessicografico.
 
 ---
 
-<!-- page 57 -->
+<!-- page 56 -->
 
 nonio marcello e la compendiosa doctrina
 57
@@ -2347,7 +2347,7 @@ secondo Lindsay, Nonio aveva sul proprio tavolo da lavoro e che è stata presen-
 
 ---
 
-<!-- page 58 -->
+<!-- page 57 -->
 
 58
 paolo gatti
@@ -2397,7 +2397,7 @@ giustamente, a venti canoni di giudizio che Nonio mette in atto nella costruzio-
 
 ---
 
-<!-- page 59 -->
+<!-- page 58 -->
 
 nonio marcello e la compendiosa doctrina
 59
@@ -2447,7 +2447,7 @@ vamente ripresa da Velaza 2007.
 
 ---
 
-<!-- page 60 -->
+<!-- page 59 -->
 
 60
 paolo gatti
@@ -2496,7 +2496,7 @@ tll, i, 2, c. 680.72-74.
 
 ---
 
-<!-- page 61 -->
+<!-- page 60 -->
 
 nonio marcello e la compendiosa doctrina
 61
@@ -2545,7 +2545,7 @@ di interventi: Bertini 1981, 1982, 1983, 1986.
 
 ---
 
-<!-- page 62 -->
+<!-- page 61 -->
 
 62
 paolo gatti
@@ -2587,7 +2587,7 @@ pito dei futuri editori di Nonio tenerne conto.
 
 ---
 
-<!-- page 63 -->
+<!-- page 62 -->
 
 SERVIUS ON STYLISTIC REGISTER
 IN HIS VIRGIL COMMENTARIES
@@ -2630,7 +2630,7 @@ T
 
 ---
 
-<!-- page 64 -->
+<!-- page 63 -->
 
 64
 robert maltby
@@ -2677,7 +2677,7 @@ made up of ordinary words, but it is commonplace… That which employs unfamilia
 
 ---
 
-<!-- page 65 -->
+<!-- page 64 -->
 
 servius on stylistic register in his virgil commentaries
 65
@@ -2725,7 +2725,7 @@ sounding periphrasis is commented upon at Aeneid 1.177:
 
 ---
 
-<!-- page 66 -->
+<!-- page 65 -->
 
 66
 robert maltby
@@ -2772,7 +2772,7 @@ the same phrase is repeated on Aeneid 3.197):
 
 ---
 
-<!-- page 67 -->
+<!-- page 66 -->
 
 servius on stylistic register in his virgil commentaries
 67
@@ -2816,7 +2816,7 @@ subleuat in 1.118, leuauit in 2.20, auxit in 2.482 and eleuauit here. There are 
 
 ---
 
-<!-- page 68 -->
+<!-- page 67 -->
 
 68
 robert maltby
@@ -2863,7 +2863,7 @@ monis humilitatem uitauit.
 
 ---
 
-<!-- page 69 -->
+<!-- page 68 -->
 
 servius on stylistic register in his virgil commentaries
 69
@@ -2906,7 +2906,7 @@ accipiunt.
 
 ---
 
-<!-- page 70 -->
+<!-- page 69 -->
 
 70
 robert maltby
@@ -2953,7 +2953,7 @@ Cf., e.g., Scholia in Iliadem 2.380a1
 
 ---
 
-<!-- page 71 -->
+<!-- page 70 -->
 
 servius on stylistic register in his virgil commentaries
 71
@@ -3001,7 +3001,7 @@ decide a correct reading, in this instance the ‘neoteric’ reading flauos bei
 
 ---
 
-<!-- page 72 -->
+<!-- page 71 -->
 
 72
 robert maltby
@@ -3051,7 +3051,7 @@ zel 1981, 25-53; Jocelyn 1984-1985; Timpanaro 1986, 77-127 and Delvigo 1987.
 
 ---
 
-<!-- page 73 -->
+<!-- page 72 -->
 
 servius on stylistic register in his virgil commentaries
 73
@@ -3100,13 +3100,13 @@ where the canon of acceptable writers was expanding.
 
 ---
 
-<!-- page 74 -->
+<!-- page 73 -->
 
 This page intentionally left blank
 
 ---
 
-<!-- page 75 -->
+<!-- page 74 -->
 
 THE APPENDIX PROBI
 AS LINGUISTIC EVIDENCE: A REASSESSMENT*
@@ -3149,7 +3149,7 @@ I
 
 ---
 
-<!-- page 76 -->
+<!-- page 75 -->
 
 76
 jonathan g. f. powell
@@ -3201,7 +3201,7 @@ In one or two places A. is more conservative in following the editorial consensu
 
 ---
 
-<!-- page 77 -->
+<!-- page 76 -->
 
 the appendix probi as linguistic evidence
 77
@@ -3248,7 +3248,7 @@ their corrections, and with lists of items which are regarded as in some way dif
 
 ---
 
-<!-- page 78 -->
+<!-- page 77 -->
 
 78
 jonathan g. f. powell
@@ -3297,7 +3297,7 @@ item is the transposition of two graphemes – in this case, of course, a charac
 
 ---
 
-<!-- page 79 -->
+<!-- page 78 -->
 
 the appendix probi as linguistic evidence
 79
@@ -3346,7 +3346,7 @@ Pseudo-Probus text (Instituta Artium) as well as the other appendices. These
 
 ---
 
-<!-- page 80 -->
+<!-- page 79 -->
 
 80
 jonathan g. f. powell
@@ -3396,7 +3396,7 @@ cal; these must be assumed to be casualties of the copying process, cf. Powell 2
 
 ---
 
-<!-- page 81 -->
+<!-- page 80 -->
 
 the appendix probi as linguistic evidence
 81
@@ -3446,7 +3446,7 @@ could just be that the sources of the remaining third do not happen to survive.
 
 ---
 
-<!-- page 82 -->
+<!-- page 81 -->
 
 82
 jonathan g. f. powell
@@ -3495,7 +3495,7 @@ I had followed scholarly convention in including ap in an undergraduate course o
 
 ---
 
-<!-- page 83 -->
+<!-- page 82 -->
 
 the appendix probi as linguistic evidence
 83
@@ -3547,7 +3547,7 @@ ring to orthographical treatises of the traditional kind.
 
 ---
 
-<!-- page 84 -->
+<!-- page 83 -->
 
 84
 jonathan g. f. powell
@@ -3597,7 +3597,7 @@ of contemporary literary or inscriptional evidence or by working back from the
 
 ---
 
-<!-- page 85 -->
+<!-- page 84 -->
 
 the appendix probi as linguistic evidence
 85
@@ -3645,7 +3645,7 @@ proves that it is genuine by means of one or more quotations, which can be of
 
 ---
 
-<!-- page 86 -->
+<!-- page 85 -->
 
 86
 jonathan g. f. powell
@@ -3694,7 +3694,7 @@ and ‘new’) grammar see Stuurman 1990.
 
 ---
 
-<!-- page 87 -->
+<!-- page 86 -->
 
 the appendix probi as linguistic evidence
 87
@@ -3743,7 +3743,7 @@ centuries before: in any given case the standard spelling may reflect a pronunci
 
 ---
 
-<!-- page 88 -->
+<!-- page 87 -->
 
 88
 jonathan g. f. powell
@@ -3793,7 +3793,7 @@ graphic error is in question.
 
 ---
 
-<!-- page 89 -->
+<!-- page 88 -->
 
 the appendix probi as linguistic evidence
 89
@@ -3840,7 +3840,7 @@ inally Greek theios ‘uncle’).
 
 ---
 
-<!-- page 90 -->
+<!-- page 89 -->
 
 90
 jonathan g. f. powell
@@ -3891,7 +3891,7 @@ Greek.
 
 ---
 
-<!-- page 91 -->
+<!-- page 90 -->
 
 the appendix probi as linguistic evidence
 91
@@ -3939,7 +3939,7 @@ it. This happens frequently when copying a text; there are some excellent exam-
 
 ---
 
-<!-- page 92 -->
+<!-- page 91 -->
 
 92
 jonathan g. f. powell
@@ -3988,7 +3988,7 @@ scribal error; if so, it was a bad example, but the general point may stand.
 
 ---
 
-<!-- page 93 -->
+<!-- page 92 -->
 
 the appendix probi as linguistic evidence
 93
@@ -4041,7 +4041,7 @@ meaning (foreign, extraneous) but they are clearly lexically different, and in c
 
 ---
 
-<!-- page 94 -->
+<!-- page 93 -->
 
 94
 jonathan g. f. powell
@@ -4092,7 +4092,7 @@ as «voce dotta», i.e., a borrowing from Latin, Italianised in phonology (Batti
 
 ---
 
-<!-- page 95 -->
+<!-- page 94 -->
 
 the appendix probi as linguistic evidence
 95
@@ -4141,7 +4141,7 @@ addition of letters (adiectio), omission (detractio), or change (immutatio); Man
 
 ---
 
-<!-- page 96 -->
+<!-- page 95 -->
 
 96
 jonathan g. f. powell
@@ -4189,7 +4189,7 @@ mitted reading is not an error; cf. esp. the chapter on Servius in Kaster 1988.
 
 ---
 
-<!-- page 97 -->
+<!-- page 96 -->
 
 the appendix probi as linguistic evidence
 97
@@ -4238,7 +4238,7 @@ rent as a mistaken nominative form.
 
 ---
 
-<!-- page 98 -->
+<!-- page 97 -->
 
 98
 jonathan g. f. powell
@@ -4287,7 +4287,7 @@ Santini 1988, 115-116.
 
 ---
 
-<!-- page 99 -->
+<!-- page 98 -->
 
 the appendix probi as linguistic evidence
 99
@@ -4337,7 +4337,7 @@ frigida at 3.5.16 (ap 112 and 53-54), camara at 3.7.3 (ap 84), fasioli (phaseoli
 
 ---
 
-<!-- page 100 -->
+<!-- page 99 -->
 
 100
 jonathan g. f. powell
@@ -4386,7 +4386,7 @@ would not be the only abstract noun in the list, cf. 123 occasio.
 
 ---
 
-<!-- page 101 -->
+<!-- page 100 -->
 
 the appendix probi as linguistic evidence
 101
@@ -4435,7 +4435,7 @@ grammatical arrangement was imposed on the existing material – but only par-
 
 ---
 
-<!-- page 102 -->
+<!-- page 101 -->
 
 102
 jonathan g. f. powell
@@ -4485,7 +4485,7 @@ sake of argument) a five per cent error rate would yield a hundred ap-style item
 
 ---
 
-<!-- page 103 -->
+<!-- page 102 -->
 
 the appendix probi as linguistic evidence
 103
@@ -4533,7 +4533,7 @@ nation of this item (2007, 718-719).
 
 ---
 
-<!-- page 104 -->
+<!-- page 103 -->
 
 104
 jonathan g. f. powell
@@ -4581,7 +4581,7 @@ a) hc 2.114-115 gives the word occasio in the meaning of ‘occasion’ or ‘ch
 
 ---
 
-<!-- page 105 -->
+<!-- page 104 -->
 
 the appendix probi as linguistic evidence
 105
@@ -4628,7 +4628,7 @@ more than one equivalent in Greek.
 
 ---
 
-<!-- page 106 -->
+<!-- page 105 -->
 
 106
 jonathan g. f. powell
@@ -4677,7 +4677,7 @@ ical categories, and these would have given the list its continuing usefulness
 
 ---
 
-<!-- page 107 -->
+<!-- page 106 -->
 
 the appendix probi as linguistic evidence
 107
@@ -4725,7 +4725,7 @@ cf. Barnett 2006 on the same characteristic in the Second Appendix.
 
 ---
 
-<!-- page 108 -->
+<!-- page 107 -->
 
 108
 jonathan g. f. powell
@@ -4773,7 +4773,7 @@ struction.
 
 ---
 
-<!-- page 109 -->
+<!-- page 108 -->
 
 the appendix probi as linguistic evidence
 109
@@ -4821,7 +4821,7 @@ presence of a nasal in pronunciation.
 
 ---
 
-<!-- page 110 -->
+<!-- page 109 -->
 
 110
 jonathan g. f. powell
@@ -4869,7 +4869,7 @@ of anni-culus ‘one year old’.
 
 ---
 
-<!-- page 111 -->
+<!-- page 110 -->
 
 the appendix probi as linguistic evidence
 111
@@ -4917,7 +4917,7 @@ Latin of the Imperial period; but Robson’s revision of the dating (which as we
 
 ---
 
-<!-- page 112 -->
+<!-- page 111 -->
 
 112
 jonathan g. f. powell
@@ -4962,7 +4962,7 @@ Hesitation over the writing of h is to be expected: there are two examples in ap
 
 ---
 
-<!-- page 113 -->
+<!-- page 112 -->
 
 the appendix probi as linguistic evidence
 113
@@ -5009,7 +5009,7 @@ with what right do they use the perfect tense?».
 
 ---
 
-<!-- page 114 -->
+<!-- page 113 -->
 
 114
 jonathan g. f. powell
@@ -5056,7 +5056,7 @@ Romance generally comes out as a palatalisation of the preceding consonant
 
 ---
 
-<!-- page 115 -->
+<!-- page 114 -->
 
 the appendix probi as linguistic evidence
 115
@@ -5104,7 +5104,7 @@ ing new on this question.
 
 ---
 
-<!-- page 116 -->
+<!-- page 115 -->
 
 116
 jonathan g. f. powell
@@ -5149,7 +5149,7 @@ and 303.
 
 ---
 
-<!-- page 117 -->
+<!-- page 116 -->
 
 the appendix probi as linguistic evidence
 117
@@ -5197,7 +5197,7 @@ see Rosén 1999, 71-72.
 
 ---
 
-<!-- page 118 -->
+<!-- page 117 -->
 
 118
 jonathan g. f. powell
@@ -5244,7 +5244,7 @@ tive forms. Cf. Meyer-Lübke, rew 8918.
 
 ---
 
-<!-- page 119 -->
+<!-- page 118 -->
 
 the appendix probi as linguistic evidence
 119
@@ -5260,13 +5260,13 @@ issues as a whole than has hitherto been available.
 
 ---
 
-<!-- page 120 -->
+<!-- page 119 -->
 
 This page intentionally left blank
 
 ---
 
-<!-- page 121 -->
+<!-- page 120 -->
 
 «QVAE NVSQVAM NISI IN DIVERSIS
 COTTIDIANIS GLOSSEMATIBVS REPPERI»
@@ -5309,7 +5309,7 @@ O
 
 ---
 
-<!-- page 122 -->
+<!-- page 121 -->
 
 122
 frédérique biville
@@ -5359,7 +5359,7 @@ négligées parce que pour eux elles étaient évidentes».
 
 ---
 
-<!-- page 123 -->
+<!-- page 122 -->
 
 gloses et glossaires bilingues chez martyrius
 123
@@ -5408,7 +5408,7 @@ verbe.
 
 ---
 
-<!-- page 124 -->
+<!-- page 123 -->
 
 124
 frédérique biville
@@ -5452,7 +5452,7 @@ cet article et pour ses suggestions avisées sur le texte de Cassiodore, que l�
 
 ---
 
-<!-- page 125 -->
+<!-- page 124 -->
 
 gloses et glossaires bilingues chez martyrius
 125
@@ -5499,7 +5499,7 @@ l’emporte en effet sur la vraisemblance et sur le poids de la tradition. À ce
 
 ---
 
-<!-- page 126 -->
+<!-- page 125 -->
 
 126
 frédérique biville
@@ -5543,7 +5543,7 @@ peut s’agir d’une erreur, ou d’une banalisation du compilateur.
 
 ---
 
-<!-- page 127 -->
+<!-- page 126 -->
 
 gloses et glossaires bilingues chez martyrius
 127
@@ -5589,7 +5589,7 @@ significat, per ‘u’; si bellus, id est ‘pulcher’, per ‘b’ scribitur 
 
 ---
 
-<!-- page 128 -->
+<!-- page 127 -->
 
 128
 frédérique biville
@@ -5636,7 +5636,7 @@ conforme au sens de l’adjectif uilis uile. Alcuin (Albin. vii.298.3-4) remplac
 
 ---
 
-<!-- page 129 -->
+<!-- page 128 -->
 
 gloses et glossaires bilingues chez martyrius
 129
@@ -5682,7 +5682,7 @@ minutis illis uolucribus, sed quia uespertino tempore eos efferunt qui funebri p
 
 ---
 
-<!-- page 130 -->
+<!-- page 129 -->
 
 130
 frédérique biville
@@ -5728,7 +5728,7 @@ parlée.
 
 ---
 
-<!-- page 131 -->
+<!-- page 130 -->
 
 gloses et glossaires bilingues chez martyrius
 131
@@ -5772,7 +5772,7 @@ graphie avec b ou u:
 
 ---
 
-<!-- page 132 -->
+<!-- page 131 -->
 
 132
 frédérique biville
@@ -5818,7 +5818,7 @@ dans des opérations d’équation et de transfert bilingues: ı‡Ú·ϲ = �
 
 ---
 
-<!-- page 133 -->
+<!-- page 132 -->
 
 gloses et glossaires bilingues chez martyrius
 133
@@ -5867,7 +5867,7 @@ dire le roi des uirides (note de Patrizia Stoppacci).
 
 ---
 
-<!-- page 134 -->
+<!-- page 133 -->
 
 134
 frédérique biville
@@ -5911,7 +5911,7 @@ grecque.
 
 ---
 
-<!-- page 135 -->
+<!-- page 134 -->
 
 gloses et glossaires bilingues chez martyrius
 135
@@ -5956,7 +5956,7 @@ thrum < grec ‚¿Ú·ıÚÔÓ > [‘gouffre’], et autres.
 
 ---
 
-<!-- page 136 -->
+<!-- page 135 -->
 
 136
 frédérique biville
@@ -6007,7 +6007,7 @@ r-r > l-r.
 
 ---
 
-<!-- page 137 -->
+<!-- page 136 -->
 
 gloses et glossaires bilingues chez martyrius
 137
@@ -6055,7 +6055,7 @@ tie(n)s. Hésychius: ‚·Ì‚¿ÏÂÈÓØ ÙÚ¤ÌÂÈÓ, „ÔÊÂÖÓ ÙÔÖ
 
 ---
 
-<!-- page 138 -->
+<!-- page 137 -->
 
 138
 frédérique biville
@@ -6104,7 +6104,7 @@ crassus; 569.27 bassus, grossus, pinguis; v.173.6 bassus pinguis obesus; 400.11-
 
 ---
 
-<!-- page 139 -->
+<!-- page 138 -->
 
 gloses et glossaires bilingues chez martyrius
 139
@@ -6150,7 +6150,7 @@ bisus, bissus, bisius), et par P. Guiraud ap. Rey 1992 (s.u. bis, bise).
 
 ---
 
-<!-- page 140 -->
+<!-- page 139 -->
 
 140
 frédérique biville
@@ -6190,7 +6190,7 @@ bex, uilis, uilla, uillus, Virbius, uiuo.
 
 ---
 
-<!-- page 141 -->
+<!-- page 140 -->
 
 HERMENEUMATA CELTIS. THE MAKING
 OF A LATE-ANTIQUE BILINGUAL GLOSSARY*
@@ -6235,7 +6235,7 @@ V
 
 ---
 
-<!-- page 142 -->
+<!-- page 141 -->
 
 142
 rolando ferri
@@ -6288,7 +6288,7 @@ Thiermann 1996, 663.
 
 ---
 
-<!-- page 143 -->
+<!-- page 142 -->
 
 hermeneumata celtis
 143
@@ -6340,7 +6340,7 @@ pl. xxxiii.
 
 ---
 
-<!-- page 144 -->
+<!-- page 143 -->
 
 144
 rolando ferri
@@ -6391,7 +6391,7 @@ will soon be published.
 
 ---
 
-<!-- page 145 -->
+<!-- page 144 -->
 
 hermeneumata celtis
 145
@@ -6442,7 +6442,7 @@ fist(ul)arium (an existent word, but indicating the player of the fistula: cf. h
 
 ---
 
-<!-- page 146 -->
+<!-- page 145 -->
 
 146
 rolando ferri
@@ -6492,7 +6492,7 @@ three book structure is also adumbrated in L (Leidensia, cgl, iii.30.21-22 ante 
 
 ---
 
-<!-- page 147 -->
+<!-- page 146 -->
 
 hermeneumata celtis
 147
@@ -6543,7 +6543,7 @@ the Vaticana, in Brugnoli, Buonocore 2002, 5.27-31 ÔéÎ âÊÂÈϲ¿ÌËÓ Ù�
 
 ---
 
-<!-- page 148 -->
+<!-- page 147 -->
 
 148
 rolando ferri
@@ -6592,7 +6592,7 @@ nominum et uerborum uniuscuiusque.
 
 ---
 
-<!-- page 149 -->
+<!-- page 148 -->
 
 hermeneumata celtis
 149
@@ -6635,7 +6635,7 @@ than Eastern, because the Greek numerals might have been ousted by a supralineat
 
 ---
 
-<!-- page 150 -->
+<!-- page 149 -->
 
 150
 rolando ferri
@@ -6683,7 +6683,7 @@ lowed by a fragmentary Latin translation).
 
 ---
 
-<!-- page 151 -->
+<!-- page 150 -->
 
 hermeneumata celtis
 151
@@ -6730,7 +6730,7 @@ are shared by at least two redactions, although most are common to all three.
 
 ---
 
-<!-- page 152 -->
+<!-- page 151 -->
 
 152
 rolando ferri
@@ -6819,7 +6819,7 @@ Hermeneumata Montepessulana
 
 ---
 
-<!-- page 153 -->
+<!-- page 152 -->
 
 hermeneumata celtis
 153
@@ -6851,7 +6851,7 @@ dies festi et castitatis feriae (?)
 
 ---
 
-<!-- page 154 -->
+<!-- page 153 -->
 
 154
 rolando ferri
@@ -6900,7 +6900,7 @@ cgl, iii.121.44-5 âÎÌ·Óı¿Óˆ ëÚÌËÓÂ‡Ì·Ù·, iii.122.11.13.
 
 ---
 
-<!-- page 155 -->
+<!-- page 154 -->
 
 hermeneumata celtis
 155
@@ -6950,7 +6950,7 @@ for burning corpses» (this translation is found in fact in Glossarium Philoxeni
 
 ---
 
-<!-- page 156 -->
+<!-- page 155 -->
 
 156
 rolando ferri
@@ -6996,7 +6996,7 @@ tions and folia consecutively.
 
 ---
 
-<!-- page 157 -->
+<!-- page 156 -->
 
 hermeneumata celtis
 157
@@ -7042,7 +7042,7 @@ from the previous one, because Homeric glosses were themselves sometimes an
 
 ---
 
-<!-- page 158 -->
+<!-- page 157 -->
 
 158
 rolando ferri
@@ -7090,7 +7090,7 @@ in a large house shared by different tenants, or a dining-room in an inn.
 
 ---
 
-<!-- page 159 -->
+<!-- page 158 -->
 
 hermeneumata celtis
 159
@@ -7138,7 +7138,7 @@ called ‘the small gru’ metaphorically, from the word used for the dirt formi
 
 ---
 
-<!-- page 160 -->
+<!-- page 159 -->
 
 160
 rolando ferri
@@ -7187,7 +7187,7 @@ interesting question.
 
 ---
 
-<!-- page 161 -->
+<!-- page 160 -->
 
 hermeneumata celtis
 161
@@ -7234,7 +7234,7 @@ Paul.-Fest. 87.70 L glos: uiri soror a Graeco Á·Ïﬁˆϲ, Non. p. 557. The it
 
 ---
 
-<!-- page 162 -->
+<!-- page 161 -->
 
 162
 rolando ferri
@@ -7283,7 +7283,7 @@ but not an unavoidable conclusion.
 
 ---
 
-<!-- page 163 -->
+<!-- page 162 -->
 
 hermeneumata celtis
 163
@@ -7332,7 +7332,7 @@ with the entries ‘Philoxenus’ tags with liber de officio proconsulis is cgl,
 
 ---
 
-<!-- page 164 -->
+<!-- page 163 -->
 
 164
 rolando ferri
@@ -7382,7 +7382,7 @@ third century.
 
 ---
 
-<!-- page 165 -->
+<!-- page 164 -->
 
 hermeneumata celtis
 165
@@ -7429,7 +7429,7 @@ public streets.
 
 ---
 
-<!-- page 166 -->
+<!-- page 165 -->
 
 166
 rolando ferri
@@ -7478,7 +7478,7 @@ Plautus’ issula at Cist. 450 meae issula sua aedes egent.
 
 ---
 
-<!-- page 167 -->
+<!-- page 166 -->
 
 hermeneumata celtis
 167
@@ -7528,7 +7528,7 @@ hitherto only suspected to have existed from Romance developments).
 
 ---
 
-<!-- page 168 -->
+<!-- page 167 -->
 
 168
 rolando ferri
@@ -7575,7 +7575,7 @@ gan rites, and total absence of Christian elements.
 
 ---
 
-<!-- page 169 -->
+<!-- page 168 -->
 
 hermeneumata celtis
 169
@@ -7610,13 +7610,13 @@ Latin one, in some cases apparently pairing uox propria with etymological calque
 
 ---
 
-<!-- page 170 -->
+<!-- page 169 -->
 
 This page intentionally left blank
 
 ---
 
-<!-- page 171 -->
+<!-- page 170 -->
 
 ETYMOLOGIEN IN DEN VARIAE CASSIODORS
 Paolo Pieroni
@@ -7663,7 +7663,7 @@ B
 
 ---
 
-<!-- page 172 -->
+<!-- page 171 -->
 
 172
 paolo pieroni
@@ -7716,7 +7716,7 @@ polemizzava con Verrio?».
 
 ---
 
-<!-- page 173 -->
+<!-- page 172 -->
 
 etymologien in den variae cassiodors
 173
@@ -7766,7 +7766,7 @@ tuae, ubi te omnis aetas uentura possit inspicere).
 
 ---
 
-<!-- page 174 -->
+<!-- page 173 -->
 
 174
 paolo pieroni
@@ -7816,7 +7816,7 @@ zen (vgl. 3.34, 3.67.10, 3.78.2).
 
 ---
 
-<!-- page 175 -->
+<!-- page 174 -->
 
 etymologien in den variae cassiodors
 175
@@ -7865,7 +7865,7 @@ musica.
 
 ---
 
-<!-- page 176 -->
+<!-- page 175 -->
 
 176
 paolo pieroni
@@ -7916,7 +7916,7 @@ non potrà nascondere nulla» (ebd., 134).
 
 ---
 
-<!-- page 177 -->
+<!-- page 176 -->
 
 etymologien in den variae cassiodors
 177
@@ -7963,7 +7963,7 @@ sed upon a root or primary form (mons > montanus)«.
 
 ---
 
-<!-- page 178 -->
+<!-- page 177 -->
 
 178
 paolo pieroni
@@ -8019,7 +8019,7 @@ neribus herleitet, und diese Etymologie zu den weiteren Zusammensetzungen stelle
 
 ---
 
-<!-- page 179 -->
+<!-- page 178 -->
 
 etymologien in den variae cassiodors
 179
@@ -8068,7 +8068,7 @@ kaum glauben könnte, er komme aus einem Menschen. Sie richtet sich auf Bockfü�
 
 ---
 
-<!-- page 180 -->
+<!-- page 179 -->
 
 180
 paolo pieroni
@@ -8119,7 +8119,7 @@ woher ihre Stadt diesen Namen bekam, denn ®‹ÁÈÔÓ heißt im Griechischen �
 
 ---
 
-<!-- page 181 -->
+<!-- page 180 -->
 
 etymologien in den variae cassiodors
 181
@@ -8167,7 +8167,7 @@ schon früh Eingang in die Kommentare der Schulautoren gefunden hätten.
 
 ---
 
-<!-- page 182 -->
+<!-- page 181 -->
 
 182
 paolo pieroni
@@ -8218,7 +8218,7 @@ sprungen, sozusagen ins eigene Meer abfließt».
 
 ---
 
-<!-- page 183 -->
+<!-- page 182 -->
 
 etymologien in den variae cassiodors
 183
@@ -8268,7 +8268,7 @@ geschöpft hätte; Benutzung durch Cassiodor von mehre ren Quellen: dazu Nicksta
 
 ---
 
-<!-- page 184 -->
+<!-- page 183 -->
 
 184
 paolo pieroni
@@ -8316,7 +8316,7 @@ sucinum appellantes [scil. prisci nostri]).
 
 ---
 
-<!-- page 185 -->
+<!-- page 184 -->
 
 etymologien in den variae cassiodors
 185
@@ -8341,13 +8341,13 @@ tens als sehr schwierig erweist und zu unsicheren Ergebnissen führen muss.
 
 ---
 
-<!-- page 186 -->
+<!-- page 185 -->
 
 This page intentionally left blank
 
 ---
 
-<!-- page 187 -->
+<!-- page 186 -->
 
 PROBLÈMES DE LEXICOGRAPHIE HUMANISTE:
 UN SAVANT ET UN DICTIONNAIRE,
@@ -8390,7 +8390,7 @@ L
 
 ---
 
-<!-- page 188 -->
+<!-- page 187 -->
 
 188
 martine furno
@@ -8437,7 +8437,7 @@ familles de mots, les primitifs ou étymons étant complétés par leurs dériv�
 
 ---
 
-<!-- page 189 -->
+<!-- page 188 -->
 
 problèmes de lexicographie humaniste
 189
@@ -8486,7 +8486,7 @@ en 1531, 1536 et 1543 du Thesaurus linguae Latinae de Robert Estienne. Les deux
 
 ---
 
-<!-- page 190 -->
+<!-- page 189 -->
 
 190
 martine furno
@@ -8532,7 +8532,7 @@ Eadem 2000.
 
 ---
 
-<!-- page 191 -->
+<!-- page 190 -->
 
 problèmes de lexicographie humaniste
 191
@@ -8608,7 +8608,7 @@ tienne lui-même.
 
 ---
 
-<!-- page 192 -->
+<!-- page 191 -->
 
 192
 martine furno
@@ -8657,7 +8657,7 @@ gustin, et des grecs, ont pour moi plus de valeur que la critique activiste de L
 
 ---
 
-<!-- page 193 -->
+<!-- page 192 -->
 
 problèmes de lexicographie humaniste
 193
@@ -8708,7 +8708,7 @@ hommes les plus sages, je trouvais que je serais de peu d’utilité à la répu
 
 ---
 
-<!-- page 194 -->
+<!-- page 193 -->
 
 194
 martine furno
@@ -8755,7 +8755,7 @@ des langues au xvie siècle, voir Furno 2008.
 
 ---
 
-<!-- page 195 -->
+<!-- page 194 -->
 
 problèmes de lexicographie humaniste
 195
@@ -8804,7 +8804,7 @@ parum latine scripta, sed plane barbare: huius generis nonnula mutauimus; nam om
 
 ---
 
-<!-- page 196 -->
+<!-- page 195 -->
 
 196
 martine furno
@@ -8856,7 +8856,7 @@ sciptoribus autoritates curaremus.
 
 ---
 
-<!-- page 197 -->
+<!-- page 196 -->
 
 problèmes de lexicographie humaniste
 197
@@ -8904,7 +8904,7 @@ diae populi Plin. cap. 19 lib. 6.
 
 ---
 
-<!-- page 198 -->
+<!-- page 197 -->
 
 198
 martine furno
@@ -8953,7 +8953,7 @@ Latinae linguae fontibus deriuata.
 
 ---
 
-<!-- page 199 -->
+<!-- page 198 -->
 
 problèmes de lexicographie humaniste
 199
@@ -9001,7 +9001,7 @@ nous avons signalé, Ab praepositio n’est pas repris, mais Aaron, Abaculi, Aba
 
 ---
 
-<!-- page 200 -->
+<!-- page 199 -->
 
 200
 martine furno
@@ -9051,7 +9051,7 @@ cune peine ni difficulté tant par les enfants que par les faibles vieillards»�
 
 ---
 
-<!-- page 201 -->
+<!-- page 200 -->
 
 problèmes de lexicographie humaniste
 201
@@ -9100,7 +9100,7 @@ dehors de Venise que quatre éditions italiennes, deux à Pavie, une à Rome et 
 
 ---
 
-<!-- page 202 -->
+<!-- page 201 -->
 
 202
 martine furno
@@ -9149,7 +9149,7 @@ glib.hab.de/drucke/kb-40-2f-2/start.htm?image=00851.
 
 ---
 
-<!-- page 203 -->
+<!-- page 202 -->
 
 problèmes de lexicographie humaniste
 203
@@ -9198,7 +9198,7 @@ mot pour mot, à peine condensé parfois; Gladiator (gladiatorum genera), repris
 
 ---
 
-<!-- page 204 -->
+<!-- page 203 -->
 
 204
 martine furno
@@ -9246,7 +9246,7 @@ les même sujets, et entre ateliers vénitiens.
 
 ---
 
-<!-- page 205 -->
+<!-- page 204 -->
 
 problèmes de lexicographie humaniste
 205
@@ -9295,7 +9295,7 @@ aedificemus nobis?
 
 ---
 
-<!-- page 206 -->
+<!-- page 205 -->
 
 206
 martine furno
@@ -9344,7 +9344,7 @@ seulement à faire lire les textes, qu’en ce cas on travaille plutôt avec des
 
 ---
 
-<!-- page 207 -->
+<!-- page 206 -->
 
 problèmes de lexicographie humaniste
 207
@@ -9394,7 +9394,7 @@ meur lui permet désormais de faire fructifier, il peut donc mettre en avant cet
 
 ---
 
-<!-- page 208 -->
+<!-- page 207 -->
 
 208
 martine furno
@@ -9443,7 +9443,7 @@ de J. Gryphe de 1546; comporte la traduction italienne des entrées.
 
 ---
 
-<!-- page 209 -->
+<!-- page 208 -->
 
 problèmes de lexicographie humaniste
 209
@@ -9498,7 +9498,7 @@ Comment. Pro Sestio
 
 ---
 
-<!-- page 210 -->
+<!-- page 209 -->
 
 210
 martine furno
@@ -9563,7 +9563,7 @@ De legibus Romanis
 
 ---
 
-<!-- page 211 -->
+<!-- page 210 -->
 
 problèmes de lexicographie humaniste
 211
@@ -9627,7 +9627,7 @@ De legibus Romanis
 
 ---
 
-<!-- page 212 -->
+<!-- page 211 -->
 
 212
 martine furno
@@ -9691,7 +9691,7 @@ Comment. Ad Quint.
 
 ---
 
-<!-- page 213 -->
+<!-- page 212 -->
 
 problèmes de lexicographie humaniste
 213
@@ -9757,7 +9757,7 @@ Comment. Ad Att.
 
 ---
 
-<!-- page 214 -->
+<!-- page 213 -->
 
 214
 martine furno
@@ -9818,7 +9818,7 @@ De legibus Romanis
 
 ---
 
-<!-- page 215 -->
+<!-- page 214 -->
 
 problèmes de lexicographie humaniste
 215
@@ -9885,7 +9885,7 @@ In Epist. Fam.
 
 ---
 
-<!-- page 216 -->
+<!-- page 215 -->
 
 216
 martine furno
@@ -9942,7 +9942,7 @@ obseruationibus
 
 ---
 
-<!-- page 217 -->
+<!-- page 216 -->
 
 problèmes de lexicographie humaniste
 217
@@ -9990,7 +9990,7 @@ istius modi suspicionibus ipsa natura.
 
 ---
 
-<!-- page 218 -->
+<!-- page 217 -->
 
 218
 martine furno
@@ -10041,7 +10041,7 @@ tis.
 
 ---
 
-<!-- page 219 -->
+<!-- page 218 -->
 
 problèmes de lexicographie humaniste
 219
@@ -10095,7 +10095,7 @@ communi.
 
 ---
 
-<!-- page 220 -->
+<!-- page 219 -->
 
 220
 martine furno
@@ -10148,7 +10148,7 @@ landa est in acerbissima iniuria remissio animi et dissolutio.
 
 ---
 
-<!-- page 221 -->
+<!-- page 220 -->
 
 problèmes de lexicographie humaniste
 221
@@ -10202,7 +10202,7 @@ Vir humanitate politus. Cic. De oratore 84.
 
 ---
 
-<!-- page 222 -->
+<!-- page 221 -->
 
 222
 martine furno
@@ -10216,7 +10216,7 @@ iudicanda sunt, disputabo.
 
 ---
 
-<!-- page 223 -->
+<!-- page 222 -->
 
 ABBREVIATIONS AND BIBLIOGRAPHY
 Abbreviations
@@ -10262,7 +10262,7 @@ documenti inediti, Roma.
 
 ---
 
-<!-- page 224 -->
+<!-- page 223 -->
 
 224
 abbreviations and bibliography
@@ -10316,7 +10316,7 @@ des 6e-8e s. p. C. (Cassiodore, Bède, Alcuin), in N. Kasansky, V. Mazhuga, A. W
 
 ---
 
-<!-- page 225 -->
+<!-- page 224 -->
 
 abbreviations and bibliography
 225
@@ -10371,7 +10371,7 @@ Coseriu 1981: E. Coseriu, Textlinguistik. Eine Einführung, Tübingen.
 
 ---
 
-<!-- page 226 -->
+<!-- page 225 -->
 
 226
 abbreviations and bibliography
@@ -10425,7 +10425,7 @@ ix. Actes du ixe Colloque international sur le latin vulgaire et tardif  (Lyon, 
 
 ---
 
-<!-- page 227 -->
+<!-- page 226 -->
 
 abbreviations and bibliography
 227
@@ -10479,7 +10479,7 @@ schrift», 30, 1367-1368.
 
 ---
 
-<!-- page 228 -->
+<!-- page 227 -->
 
 228
 abbreviations and bibliography
@@ -10533,7 +10533,7 @@ gy», 99, 181-209.
 
 ---
 
-<!-- page 229 -->
+<!-- page 228 -->
 
 abbreviations and bibliography
 229
@@ -10588,7 +10588,7 @@ Lindsay 1930b: W. M. Lindsay, Nonius Marcellus ii-iv, «The Classical Quarterly�
 
 ---
 
-<!-- page 230 -->
+<!-- page 229 -->
 
 230
 abbreviations and bibliography
@@ -10642,7 +10642,7 @@ of  Illinois, 1924-1960, Urbana (il) («Illinois Studies in Language & Literatur
 
 ---
 
-<!-- page 231 -->
+<!-- page 230 -->
 
 abbreviations and bibliography
 231
@@ -10696,7 +10696,7 @@ Rizzo 1997: S. Rizzo, Glosse antroponimiche di Cassiodoro in una recente edizion
 
 ---
 
-<!-- page 232 -->
+<!-- page 231 -->
 
 232
 abbreviations and bibliography
@@ -10751,7 +10751,7 @@ tuna, edizione critica, Firenze.
 
 ---
 
-<!-- page 233 -->
+<!-- page 232 -->
 
 abbreviations and bibliography
 233
@@ -10805,7 +10805,7 @@ lateinische Lexikographie und Grammatik», 8, 421-440, 563-585.
 
 ---
 
-<!-- page 234 -->
+<!-- page 233 -->
 
 234
 abbreviations and bibliography
@@ -10824,7 +10824,7 @@ riensis», 2), 191-197.
 
 ---
 
-<!-- page 235 -->
+<!-- page 234 -->
 
 Appendix Probi
 1: 91
@@ -10912,7 +10912,7 @@ INDEX OF PASSAGES DISCUSSED
 
 ---
 
-<!-- page 236 -->
+<!-- page 235 -->
 
 Athenaeus
 Deipnosophistae
@@ -11009,7 +11009,7 @@ index of passages discussed
 
 ---
 
-<!-- page 237 -->
+<!-- page 236 -->
 
 11.36.4: 177
 11.38.4: 184
@@ -11096,7 +11096,7 @@ index of passages discussed
 
 ---
 
-<!-- page 238 -->
+<!-- page 237 -->
 
 8.1-24: 152
 9.22: 103
@@ -11186,7 +11186,7 @@ index of passages discussed
 
 ---
 
-<!-- page 239 -->
+<!-- page 238 -->
 
 Martyrius
 De B muta et V uocali (gl Keil)
@@ -11277,7 +11277,7 @@ index of passages discussed
 
 ---
 
-<!-- page 240 -->
+<!-- page 239 -->
 
 Rufinus-Origenes,
 Expositio in epistolam Pauli ad Romanos
@@ -11364,7 +11364,7 @@ index of passages discussed
 
 ---
 
-<!-- page 241 -->
+<!-- page 240 -->
 
 Additamenta, of Paolo Manuzio, to his 1558
 Calepinus, 197-208
@@ -11448,7 +11448,7 @@ INDEX OF SUBJECTS1
 
 ---
 
-<!-- page 242 -->
+<!-- page 241 -->
 
 242
 index of subjects
@@ -11552,7 +11552,7 @@ Festus, 35; thematic, in Nonius, 54; not
 
 ---
 
-<!-- page 243 -->
+<!-- page 242 -->
 
 index of subjects
 243
@@ -11651,7 +11651,7 @@ ulary, 163
 
 ---
 
-<!-- page 244 -->
+<!-- page 243 -->
 
 244
 index of subjects
@@ -11752,7 +11752,7 @@ es, 126
 
 ---
 
-<!-- page 245 -->
+<!-- page 244 -->
 
 index of subjects
 245
@@ -11849,7 +11849,7 @@ tus, opposed to colloquial usage, 34; of
 
 ---
 
-<!-- page 246 -->
+<!-- page 245 -->
 
 246
 index of subjects
@@ -11947,7 +11947,7 @@ Lindsay, 160
 
 ---
 
-<!-- page 247 -->
+<!-- page 246 -->
 
 index of subjects
 247
@@ -12049,7 +12049,7 @@ levels, 67, 73
 
 ---
 
-<!-- page 248 -->
+<!-- page 247 -->
 
 248
 index of subjects
@@ -12148,7 +12148,7 @@ ern Latin dictionaries, 188; systemati-
 
 ---
 
-<!-- page 249 -->
+<!-- page 248 -->
 
 index of subjects
 249
@@ -12221,25 +12221,25 @@ Latin, 87
 
 ---
 
-<!-- page 250 -->
+<!-- page 249 -->
 
 This page intentionally left blank
 
 ---
 
-<!-- page 251 -->
+<!-- page 250 -->
 
 PLATES
 
 ---
 
-<!-- page 252 -->
+<!-- page 251 -->
 
 This page intentionally left blank
 
 ---
 
-<!-- page 253 -->
+<!-- page 252 -->
 
 Fig. 1, önb, Suppl. gr. 43, 43r.
 Fig. 2, önb, Suppl. gr. 43, 30r.
@@ -12247,7 +12247,7 @@ Fig. 3, önb, Suppl. gr. 43, 31r.
 
 ---
 
-<!-- page 254 -->
+<!-- page 253 -->
 
 254
 plates
@@ -12258,7 +12258,7 @@ Fig. 4. cil, xiii, 5010.
 
 ---
 
-<!-- page 255 -->
+<!-- page 254 -->
 
 composto in carattere dante monotype dalla
 fabrizio serra editore, pisa · roma.
@@ -12287,7 +12287,7 @@ newsletter@libraweb.net
 
 ---
 
-<!-- page 256 -->
+<!-- page 255 -->
 
 RICERCHE SULLE LINGUE
 DI FRAMMENTARIA ATTESTAZIONE
@@ -12309,7 +12309,7 @@ a cura di Paolo Poccetti, 2008.
 
 ---
 
-<!-- page 257 -->
+<!-- page 256 -->
 
 FABRIZIO SERRA EDITORE
 Pisa · Roma
@@ -12382,7 +12382,7 @@ isbn: 978-88-6227-144-8
 
 ---
 
-<!-- page 258 -->
+<!-- page 257 -->
 
 Le nostre riviste Online,
 la nostra libreria Internet

@@ -6,7 +6,7 @@
 
 ---
 
-<!-- page 2 -->
+<!-- page 1 -->
 
 The Routledge Handbook of 
 Linguistics
@@ -35,7 +35,7 @@ Associate Professor at the University of Queensland.
 
 ---
 
-<!-- page 3 -->
+<!-- page 2 -->
 
 Routledge Handbooks in Linguistics
 Routledge Handbooks in Linguistics provide overviews of a whole subject area or sub-
@@ -69,7 +69,7 @@ Edited by Annika Hermann, Roland Pfau and Josep Quer
 
 ---
 
-<!-- page 4 -->
+<!-- page 3 -->
 
 The Routledge 
 Handbook of Linguistics
@@ -77,7 +77,7 @@ Edited by Keith Allan
 
 ---
 
-<!-- page 5 -->
+<!-- page 4 -->
 
 First published 2016
 by Routledge
@@ -116,7 +116,7 @@ by Saxon Graphics Ltd, Derby
 
 ---
 
-<!-- page 6 -->
+<!-- page 5 -->
 
 v
 Contents
@@ -166,7 +166,7 @@ Ruth Kempson
 
 ---
 
-<!-- page 7 -->
+<!-- page 6 -->
 
 Contents
 vi
@@ -218,7 +218,7 @@ Simon Musgrave
 
 ---
 
-<!-- page 8 -->
+<!-- page 7 -->
 
 Contents
 vii
@@ -263,7 +263,7 @@ Index
 
 ---
 
-<!-- page 9 -->
+<!-- page 8 -->
 
 viii
 Figures
@@ -343,7 +343,7 @@ in the text
 
 ---
 
-<!-- page 10 -->
+<!-- page 9 -->
 
 ix
 Tables
@@ -376,7 +376,7 @@ Tables
 
 ---
 
-<!-- page 11 -->
+<!-- page 10 -->
 
 x
 Contributors
@@ -414,7 +414,7 @@ mainz.de/mitarbeiter/walter-bisang/.
 
 ---
 
-<!-- page 12 -->
+<!-- page 11 -->
 
 Contributors
 xi
@@ -463,7 +463,7 @@ published several books on language acquisition, including two major texts in
 
 ---
 
-<!-- page 13 -->
+<!-- page 12 -->
 
 Contributors
 xii
@@ -512,7 +512,7 @@ UK. She was previously a practising barrister. Her research interests include al
 
 ---
 
-<!-- page 14 -->
+<!-- page 13 -->
 
 Contributors
 xiii
@@ -562,7 +562,7 @@ Historiographia Linguistica, and works in the areas of language and identity, la
 
 ---
 
-<!-- page 15 -->
+<!-- page 14 -->
 
 Contributors
 xiv
@@ -612,7 +612,7 @@ Discourse Grammar but also on the valorization of linguistics and pragmatics in 
 
 ---
 
-<!-- page 16 -->
+<!-- page 15 -->
 
 Contributors
 xv
@@ -660,7 +660,7 @@ research interests include linguistic typology, Korean linguistics, Oceanic ling
 
 ---
 
-<!-- page 17 -->
+<!-- page 16 -->
 
 Contributors
 xvi
@@ -709,7 +709,7 @@ experimental and ﬁ eld methods. Homepage: www.msu.edu/~wagnersu.
 
 ---
 
-<!-- page 18 -->
+<!-- page 17 -->
 
 1
 1
@@ -745,7 +745,7 @@ reshapes land. Plants interact with their environment as individuals, e.g. many 
 
 ---
 
-<!-- page 19 -->
+<!-- page 18 -->
 
 K. Allan
 2
@@ -798,7 +798,7 @@ has the form of the sufﬁ x –s yielding the plural noun undesirables. Morphol
 
 ---
 
-<!-- page 20 -->
+<!-- page 19 -->
 
 What is linguistics?
 3
@@ -850,7 +850,7 @@ phrase, V = verb]
 
 ---
 
-<!-- page 21 -->
+<!-- page 20 -->
 
 K. Allan
 4
@@ -897,7 +897,7 @@ are, exploited to generate communicatively useful meaning differences.
 
 ---
 
-<!-- page 22 -->
+<!-- page 21 -->
 
 What is linguistics?
 5
@@ -950,7 +950,7 @@ conversation unfolds.
 
 ---
 
-<!-- page 23 -->
+<!-- page 22 -->
 
 K. Allan
 6
@@ -1002,7 +1002,7 @@ appropriately with people around them (see Chapter 20): it is the beginning of e
 
 ---
 
-<!-- page 24 -->
+<!-- page 23 -->
 
 What is linguistics?
 7
@@ -1055,7 +1055,7 @@ and techniques of archiving samples of language interchange and language perform
 
 ---
 
-<!-- page 25 -->
+<!-- page 24 -->
 
 K. Allan
 8
@@ -1106,7 +1106,7 @@ structuralist doctrine is based on relationships of contrast among elements in a
 
 ---
 
-<!-- page 26 -->
+<!-- page 25 -->
 
 What is linguistics?
 9
@@ -1160,7 +1160,7 @@ Chomsky-style linguistics.
 
 ---
 
-<!-- page 27 -->
+<!-- page 26 -->
 
 K. Allan
 10
@@ -1212,7 +1212,7 @@ anomalies that suggest the witness has been ‘verballed’ by an overzealous po
 
 ---
 
-<!-- page 28 -->
+<!-- page 27 -->
 
 What is linguistics?
 11
@@ -1265,7 +1265,7 @@ permanently than is possible in oral transmission. The oldest example known date
 
 ---
 
-<!-- page 29 -->
+<!-- page 28 -->
 
 K. Allan
 12
@@ -1320,7 +1320,7 @@ second century BCE Aristarchus of Samothrace refers to all eight traditional par
 
 ---
 
-<!-- page 30 -->
+<!-- page 29 -->
 
 What is linguistics?
 13
@@ -1375,7 +1375,7 @@ Aristotelian dictum that the world is the same for everyone, believing that lang
 
 ---
 
-<!-- page 31 -->
+<!-- page 30 -->
 
 K. Allan
 14
@@ -1430,7 +1430,7 @@ rationalist theory and semantics. All of these are back in vogue. If modern ling
 
 ---
 
-<!-- page 32 -->
+<!-- page 31 -->
 
 What is linguistics?
 15
@@ -1479,7 +1479,7 @@ Latini, Vol. 4, pp. 355–66 and pp. 367–402. Hildesheim: Georg Olms.
 
 ---
 
-<!-- page 33 -->
+<!-- page 32 -->
 
 K. Allan
 16
@@ -1505,7 +1505,7 @@ r%3DA%3Aentry+group%3D40%3Aentry%3Daristarchus-bio-8.
 
 ---
 
-<!-- page 34 -->
+<!-- page 33 -->
 
 17
 2
@@ -1545,7 +1545,7 @@ boundaries, it will be possible to deal with, for example, evolutionary semantic
 
 ---
 
-<!-- page 35 -->
+<!-- page 34 -->
 
 J.R. Hurford
 18
@@ -1598,7 +1598,7 @@ neural mechanisms, are nevertheless intended to be ‘psychologically real’ in
 
 ---
 
-<!-- page 36 -->
+<!-- page 35 -->
 
 Evolutionary linguistics
 19
@@ -1649,7 +1649,7 @@ word utterances, and then move on quite fast. Likewise with syllable structure, 
 
 ---
 
-<!-- page 37 -->
+<!-- page 36 -->
 
 J.R. Hurford
 20
@@ -1700,7 +1700,7 @@ or a tree. To a large extent, such mental categories are formed and kept distinc
 
 ---
 
-<!-- page 38 -->
+<!-- page 37 -->
 
 Evolutionary linguistics
 21
@@ -1755,7 +1755,7 @@ Propositions are sometimes identiﬁ ed as facts about a world, existing somehow
 
 ---
 
-<!-- page 39 -->
+<!-- page 38 -->
 
 J.R. Hurford
 22
@@ -1810,7 +1810,7 @@ for speciﬁ c events involving several individuals, is more debatable. This is 
 
 ---
 
-<!-- page 40 -->
+<!-- page 39 -->
 
 Evolutionary linguistics
 23
@@ -1865,7 +1865,7 @@ required connections are X for B and Y for A. Animals adapt to this reversal wit
 
 ---
 
-<!-- page 41 -->
+<!-- page 40 -->
 
 J.R. Hurford
 24
@@ -1918,7 +1918,7 @@ about what each party is likely to know and to want to know. Information structu
 
 ---
 
-<!-- page 42 -->
+<!-- page 41 -->
 
 Evolutionary linguistics
 25
@@ -1973,7 +1973,7 @@ pass the salt?) or point out the obviousness of some fact (e.g. Is the Pope Cath
 
 ---
 
-<!-- page 43 -->
+<!-- page 42 -->
 
 J.R. Hurford
 26
@@ -2027,7 +2027,7 @@ gradual, with the earliest languages of our species having few or none of them.
 
 ---
 
-<!-- page 44 -->
+<!-- page 43 -->
 
 Evolutionary linguistics
 27
@@ -2081,7 +2081,7 @@ tract that makes it possible to produce different vowel qualities. A high front 
 
 ---
 
-<!-- page 45 -->
+<!-- page 44 -->
 
 J.R. Hurford
 28
@@ -2135,7 +2135,7 @@ is capable of.
 
 ---
 
-<!-- page 46 -->
+<!-- page 45 -->
 
 Evolutionary linguistics
 29
@@ -2189,7 +2189,7 @@ far along the cultural evolutionary scale that leads to languages with greater n
 
 ---
 
-<!-- page 47 -->
+<!-- page 46 -->
 
 J.R. Hurford
 30
@@ -2244,7 +2244,7 @@ can be more degrees of embedding of subordinate clauses. Educated people start t
 
 ---
 
-<!-- page 48 -->
+<!-- page 47 -->
 
 Evolutionary linguistics
 31
@@ -2297,7 +2297,7 @@ Bickerton, D. (1981) Roots of Language. Ann Arbor: Karoma Press.
 
 ---
 
-<!-- page 49 -->
+<!-- page 48 -->
 
 J.R. Hurford
 32
@@ -2338,7 +2338,7 @@ Tomasello, Michael (2008) Origins of Human Communication. Cambridge, MA: MIT Pre
 
 ---
 
-<!-- page 50 -->
+<!-- page 49 -->
 
 33
 3
@@ -2377,7 +2377,7 @@ must take on the functions of content words. Vocabularies of kinesic actions dev
 
 ---
 
-<!-- page 51 -->
+<!-- page 50 -->
 
 A. Kendon
 34
@@ -2430,7 +2430,7 @@ and to those who came after him, who dealt in detail with manual actions in spea
 
 ---
 
-<!-- page 52 -->
+<!-- page 51 -->
 
 Gesture and sign
 35
@@ -2484,7 +2484,7 @@ focus in the study of gesture in relation to speech in recent decades (see Kendo
 
 ---
 
-<!-- page 53 -->
+<!-- page 52 -->
 
 A. Kendon
 36
@@ -2536,7 +2536,7 @@ children mature they come to use their hands in gesturing in similar ways. Evide
 
 ---
 
-<!-- page 54 -->
+<!-- page 53 -->
 
 Gesture and sign
 37
@@ -2591,7 +2591,7 @@ be used as a way of ensuring the transmission of key parts of what is being said
 
 ---
 
-<!-- page 55 -->
+<!-- page 54 -->
 
 A. Kendon
 38
@@ -2644,7 +2644,7 @@ as a language can develop in the kinesic medium, largely or even wholly without 
 
 ---
 
-<!-- page 56 -->
+<!-- page 55 -->
 
 Gesture and sign
 39
@@ -2697,7 +2697,7 @@ would include the various sign languages developed in monasteries where the use 
 
 ---
 
-<!-- page 57 -->
+<!-- page 56 -->
 
 A. Kendon
 40
@@ -2752,7 +2752,7 @@ the case among Warlpiri communities.
 
 ---
 
-<!-- page 58 -->
+<!-- page 57 -->
 
 Gesture and sign
 41
@@ -2805,7 +2805,7 @@ recognised as different languages.
 
 ---
 
-<!-- page 59 -->
+<!-- page 58 -->
 
 A. Kendon
 42
@@ -2858,7 +2858,7 @@ is also found to be a very common feature of individual lexical signs. It should
 
 ---
 
-<!-- page 60 -->
+<!-- page 59 -->
 
 Gesture and sign
 43
@@ -2913,7 +2913,7 @@ relation to other entities (in the horse and bird example the hand designating �
 
 ---
 
-<!-- page 61 -->
+<!-- page 60 -->
 
 A. Kendon
 44
@@ -2963,7 +2963,7 @@ General: Kendon (2004); McNeill (1992); Streeck (2009); Calbris (2011).
 
 ---
 
-<!-- page 62 -->
+<!-- page 61 -->
 
 Gesture and sign
 45
@@ -3018,7 +3018,7 @@ Kendon, A. (1981) Geography of gesture. Semiotica 37: 129–63.
 
 ---
 
-<!-- page 63 -->
+<!-- page 62 -->
 
 A. Kendon
 46
@@ -3067,7 +3067,7 @@ Mouton.
 
 ---
 
-<!-- page 64 -->
+<!-- page 63 -->
 
 47
 4
@@ -3106,7 +3106,7 @@ arguably, is not nowadays lack of good information about non-European scripts, b
 
 ---
 
-<!-- page 65 -->
+<!-- page 64 -->
 
 G. Sampson
 48
@@ -3159,7 +3159,7 @@ shown in Figure 4.1.) Blissymbolics is claimed to be particularly helpful to peo
 
 ---
 
-<!-- page 66 -->
+<!-- page 65 -->
 
 Writing systems
 49
@@ -3211,7 +3211,7 @@ differently usually has little to do with linguistic theory, and much more to do
 
 ---
 
-<!-- page 67 -->
+<!-- page 66 -->
 
 G. Sampson
 50
@@ -3264,7 +3264,7 @@ more words. First, a graph created for one word would be used also for other wor
 
 ---
 
-<!-- page 68 -->
+<!-- page 67 -->
 
 Writing systems
 51
@@ -3319,7 +3319,7 @@ assumed, a phonographic script for Mandarin Chinese would scarcely be usable.
 
 ---
 
-<!-- page 69 -->
+<!-- page 68 -->
 
 G. Sampson
 52
@@ -3372,7 +3372,7 @@ Chinese as its written language, as mediaeval Europe used Latin, but in the ﬁ 
 
 ---
 
-<!-- page 70 -->
+<!-- page 69 -->
 
 Writing systems
 53
@@ -3425,7 +3425,7 @@ In the Chinese language, most words are represented unambiguously with a unique 
 
 ---
 
-<!-- page 71 -->
+<!-- page 70 -->
 
 G. Sampson
 54
@@ -3477,7 +3477,7 @@ us look at the treatment of vowels in Semitic languages.3
 
 ---
 
-<!-- page 72 -->
+<!-- page 71 -->
 
 Writing systems
 55
@@ -3530,7 +3530,7 @@ English spelling), at least when the phonetic variation is regular and predictab
 
 ---
 
-<!-- page 73 -->
+<!-- page 72 -->
 
 G. Sampson
 56
@@ -3585,7 +3585,7 @@ not clear why this would be a rational direction for our societies to move in.
 
 ---
 
-<!-- page 74 -->
+<!-- page 73 -->
 
 Writing systems
 57
@@ -3636,7 +3636,7 @@ Figure 4.2 The word Gaelach (‘Irish’) in Irish script
 
 ---
 
-<!-- page 75 -->
+<!-- page 74 -->
 
 G. Sampson
 58
@@ -3688,7 +3688,7 @@ Figure 4.3 Arabic words distinguished by dots
 
 ---
 
-<!-- page 76 -->
+<!-- page 75 -->
 
 Writing systems
 59
@@ -3742,7 +3742,7 @@ vowels in helping a reader to identify it (which is unsurprising, since there is
 
 ---
 
-<!-- page 77 -->
+<!-- page 76 -->
 
 G. Sampson
 60
@@ -3793,7 +3793,7 @@ London: Thames & Hudson.
 
 ---
 
-<!-- page 78 -->
+<!-- page 77 -->
 
 Writing systems
 61
@@ -3818,7 +3818,7 @@ Oklahoma Press.
 
 ---
 
-<!-- page 79 -->
+<!-- page 78 -->
 
 62
 5
@@ -3857,7 +3857,7 @@ speech production or speech perception would work without knowledge of or refere
 
 ---
 
-<!-- page 80 -->
+<!-- page 79 -->
 
 Phonetics
 63
@@ -3908,7 +3908,7 @@ function of keeping the body alive by replenishing the oxygen in the bloodstream
 
 ---
 
-<!-- page 81 -->
+<!-- page 80 -->
 
 A. Butcher
 64
@@ -3962,7 +3962,7 @@ cavity; and
 
 ---
 
-<!-- page 82 -->
+<!-- page 81 -->
 
 Phonetics
 65
@@ -4014,7 +4014,7 @@ and for childbirth. The suprahyoid muscles contract to move the larynx upwards f
 
 ---
 
-<!-- page 83 -->
+<!-- page 82 -->
 
 A. Butcher
 66
@@ -4069,7 +4069,7 @@ or vocal fry). With the arytenoids tightly together, only the front, ligamental 
 
 ---
 
-<!-- page 84 -->
+<!-- page 83 -->
 
 Phonetics
 67
@@ -4124,7 +4124,7 @@ articulation
 
 ---
 
-<!-- page 85 -->
+<!-- page 84 -->
 
 A. Butcher
 68
@@ -4179,7 +4179,7 @@ be raised to close off the nasal cavity from the mouth or it can be lowered to a
 
 ---
 
-<!-- page 86 -->
+<!-- page 85 -->
 
 Phonetics
 69
@@ -4234,7 +4234,7 @@ four on the back edge of the space are said to have increased lip rounding from 
 
 ---
 
-<!-- page 87 -->
+<!-- page 86 -->
 
 A. Butcher
 70
@@ -4309,7 +4309,7 @@ subsystems: the laryngeal, the velic and the oral. At the boundary between the �
 
 ---
 
-<!-- page 88 -->
+<!-- page 87 -->
 
 Phonetics
 71
@@ -4360,7 +4360,7 @@ and statistical processing of the parallel signals.
 
 ---
 
-<!-- page 89 -->
+<!-- page 88 -->
 
 A. Butcher
 72
@@ -4415,7 +4415,7 @@ articulations, as well as movements of the velum and the jaw. Since they do not 
 
 ---
 
-<!-- page 90 -->
+<!-- page 89 -->
 
 Phonetics
 73
@@ -4467,7 +4467,7 @@ clinical speech pathology (assessment, diagnosis and treatment), speech technolo
 
 ---
 
-<!-- page 91 -->
+<!-- page 90 -->
 
 A. Butcher
 74
@@ -4518,7 +4518,7 @@ amplitude of each sine wave component or harmonic. In speech, the ﬁ rst harmon
 
 ---
 
-<!-- page 92 -->
+<!-- page 91 -->
 
 Phonetics
 75
@@ -4568,7 +4568,7 @@ frequency on the vertical axis, with intensity shown by the darkness of the shad
 
 ---
 
-<!-- page 93 -->
+<!-- page 92 -->
 
 A. Butcher
 76
@@ -4607,7 +4607,7 @@ Figure 5.4 The pressure wave produced by the vibrating larynx
 
 ---
 
-<!-- page 94 -->
+<!-- page 93 -->
 
 Phonetics
 77
@@ -4660,7 +4660,7 @@ consonant. But it is in distinguishing places of articulation that second forman
 
 ---
 
-<!-- page 95 -->
+<!-- page 94 -->
 
 A. Butcher
 78
@@ -4729,7 +4729,7 @@ their release (see Figure 5.3 (3)); the so-called strident fricatives (such as i
 
 ---
 
-<!-- page 96 -->
+<!-- page 95 -->
 
 Phonetics
 79
@@ -4777,7 +4777,7 @@ which makes them more difﬁ cult to distinguish from one another than oral vowe
 
 ---
 
-<!-- page 97 -->
+<!-- page 96 -->
 
 A. Butcher
 80
@@ -4828,7 +4828,7 @@ discriminated better at phoneme boundaries than within them), whereas less encod
 
 ---
 
-<!-- page 98 -->
+<!-- page 97 -->
 
 Phonetics
 81
@@ -4881,7 +4881,7 @@ attenuation, ﬁ ltering, or gating (shortening), presented in one or both ears 
 
 ---
 
-<!-- page 99 -->
+<!-- page 98 -->
 
 A. Butcher
 82
@@ -4933,7 +4933,7 @@ Hillsdale: Lawrence Erlbaum.
 
 ---
 
-<!-- page 100 -->
+<!-- page 99 -->
 
 83
 6
@@ -4970,7 +4970,7 @@ view, does not contain a module that deals with the perceptible utterances which
 
 ---
 
-<!-- page 101 -->
+<!-- page 100 -->
 
 H. van der Hulst
 84
@@ -5023,7 +5023,7 @@ distinctive properties are then assumed to be un(der)speciﬁ ed in the lexical 
 
 ---
 
-<!-- page 102 -->
+<!-- page 101 -->
 
 Phonology
 85
@@ -5074,7 +5074,7 @@ reference to these features rather than to a (random) list of phonemes. In addit
 
 ---
 
-<!-- page 103 -->
+<!-- page 102 -->
 
 H. van der Hulst
 86
@@ -5125,7 +5125,7 @@ Physical event (utterances)
 
 ---
 
-<!-- page 104 -->
+<!-- page 103 -->
 
 Phonology
 87
@@ -5178,7 +5178,7 @@ analyses in (4b) for English and Thai, respectively:10
 
 ---
 
-<!-- page 105 -->
+<!-- page 104 -->
 
 H. van der Hulst
 88
@@ -5240,7 +5240,7 @@ Allophones
 
 ---
 
-<!-- page 106 -->
+<!-- page 105 -->
 
 Phonology
 89
@@ -5298,7 +5298,7 @@ distribution of phonemes. In the spot before ‘pl’ no other consonant than /s
 
 ---
 
-<!-- page 107 -->
+<!-- page 106 -->
 
 H. van der Hulst
 90
@@ -5352,7 +5352,7 @@ as [+continuant], which requires a default ﬁ ll-in rule:
 
 ---
 
-<!-- page 108 -->
+<!-- page 107 -->
 
 Phonology
 91
@@ -5406,7 +5406,7 @@ the phonetic form for ‘writer’ and ‘rider.’13 This is known as phonemic 
 
 ---
 
-<!-- page 109 -->
+<!-- page 108 -->
 
 H. van der Hulst
 92
@@ -5477,7 +5477,7 @@ Allophonic level
 
 ---
 
-<!-- page 110 -->
+<!-- page 109 -->
 
 Phonology
 93
@@ -5581,7 +5581,7 @@ that the phoneme was no longer needed. This, of course, is not the correct concl
 
 ---
 
-<!-- page 111 -->
+<!-- page 110 -->
 
 H. van der Hulst
 94
@@ -5633,7 +5633,7 @@ different kinds of rules, namely morpho-lexical rules and all allophonic rules. 
 
 ---
 
-<!-- page 112 -->
+<!-- page 111 -->
 
 Phonology
 95
@@ -5691,7 +5691,7 @@ phonology (post-lexical: allophonic)
 
 ---
 
-<!-- page 113 -->
+<!-- page 112 -->
 
 H. van der Hulst
 96
@@ -5750,7 +5750,7 @@ like /np/ and /nk/. I will state these constraints simply, as in (22).
 
 ---
 
-<!-- page 114 -->
+<!-- page 113 -->
 
 Phonology
 97
@@ -5812,7 +5812,7 @@ to the central role of constraints, provides a good example of insertion and vow
 
 ---
 
-<!-- page 115 -->
+<!-- page 114 -->
 
 H. van der Hulst
 98
@@ -5878,7 +5878,7 @@ Physical event
 
 ---
 
-<!-- page 116 -->
+<!-- page 115 -->
 
 Phonology
 99
@@ -5929,7 +5929,7 @@ rules are truly ambiguous or not must be decided on a case-by-case basis.
 
 ---
 
-<!-- page 117 -->
+<!-- page 116 -->
 
 H. van der Hulst
 100
@@ -5983,7 +5983,7 @@ cognitive instrument for dealing with the inﬁ nite variability of percepts, no
 
 ---
 
-<!-- page 118 -->
+<!-- page 117 -->
 
 Phonology
 101
@@ -6042,7 +6042,7 @@ Cambridge: Cambridge University Press.
 
 ---
 
-<!-- page 119 -->
+<!-- page 118 -->
 
 H. van der Hulst
 102
@@ -6101,7 +6101,7 @@ Levelt, W.J.M. (1989) Speaking: From Intention to Articulation. Cambridge: MIT P
 
 ---
 
-<!-- page 120 -->
+<!-- page 119 -->
 
 Phonology
 103
@@ -6136,7 +6136,7 @@ Taylor, J. (2003) Linguistic Categorization. Oxford: Oxford University Press.
 
 ---
 
-<!-- page 121 -->
+<!-- page 120 -->
 
 104
 7
@@ -6182,7 +6182,7 @@ user
 
 ---
 
-<!-- page 122 -->
+<!-- page 121 -->
 
 Morphology
 105
@@ -6236,7 +6236,7 @@ compositional function of the meaning of the base verb, and the agent interpreta
 
 ---
 
-<!-- page 123 -->
+<!-- page 122 -->
 
 G. Booij
 106
@@ -6298,7 +6298,7 @@ work for English morphology is Bauer et al. (2013). Two journals devoted to morp
 
 ---
 
-<!-- page 124 -->
+<!-- page 123 -->
 
 Morphology
 107
@@ -6351,7 +6351,7 @@ selection of the neuter deﬁ nite singular determiner het (het kantoor, het pos
 
 ---
 
-<!-- page 125 -->
+<!-- page 124 -->
 
 G. Booij
 108
@@ -6411,7 +6411,7 @@ MASC.PERF forms are illustrated in (6).4
 
 ---
 
-<!-- page 126 -->
+<!-- page 125 -->
 
 Morphology
 109
@@ -6501,7 +6501,7 @@ applies to brunch, the combination of the ﬁ rst part of breakfast and the seco
 
 ---
 
-<!-- page 127 -->
+<!-- page 126 -->
 
 G. Booij
 110
@@ -6556,7 +6556,7 @@ not all lexical units are words.
 
 ---
 
-<!-- page 128 -->
+<!-- page 127 -->
 
 Morphology
 111
@@ -6610,7 +6610,7 @@ morphological operation, the concatenation of two words, as in the compound stra
 
 ---
 
-<!-- page 129 -->
+<!-- page 128 -->
 
 G. Booij
 112
@@ -6664,7 +6664,7 @@ agglutinating languages in which each bound morpheme corresponds with one gramma
 
 ---
 
-<!-- page 130 -->
+<!-- page 129 -->
 
 Morphology
 113
@@ -6716,7 +6716,7 @@ by knowledge of exceptions and lexical conventions. Hence, they might overgenera
 
 ---
 
-<!-- page 131 -->
+<!-- page 130 -->
 
 G. Booij
 114
@@ -6769,7 +6769,7 @@ with great such as great-grandfather and great-grandchild. The adjective great h
 
 ---
 
-<!-- page 132 -->
+<!-- page 131 -->
 
 Morphology
 115
@@ -6822,7 +6822,7 @@ Notes
 
 ---
 
-<!-- page 133 -->
+<!-- page 132 -->
 
 G. Booij
 116
@@ -6878,7 +6878,7 @@ Harley, H. and R. Noyer (1999) Distributed morphology. Glot International 4(4): 
 
 ---
 
-<!-- page 134 -->
+<!-- page 133 -->
 
 Morphology
 117
@@ -6913,7 +6913,7 @@ Wälchli, B. (2005) Co-compounds and Natural Coordination. Oxford: Oxford Univer
 
 ---
 
-<!-- page 135 -->
+<!-- page 134 -->
 
 118
 8
@@ -6950,7 +6950,7 @@ anger and existence would not normally be considered a ‘person, place or thing
 
 ---
 
-<!-- page 136 -->
+<!-- page 135 -->
 
 Syntax
 119
@@ -7002,7 +7002,7 @@ These categories have a large membership, and the words that belong to them tend
 
 ---
 
-<!-- page 137 -->
+<!-- page 136 -->
 
 K. Börjars
 120
@@ -7062,7 +7062,7 @@ then it is usually a constituent.
 
 ---
 
-<!-- page 138 -->
+<!-- page 137 -->
 
 Syntax
 121
@@ -7140,7 +7140,7 @@ Movement:
 
 ---
 
-<!-- page 139 -->
+<!-- page 138 -->
 
 K. Börjars
 122
@@ -7205,7 +7205,7 @@ theoretical assumptions made about syntax. In fact, even the general criteria I 
 
 ---
 
-<!-- page 140 -->
+<!-- page 139 -->
 
 Syntax
 123
@@ -7281,7 +7281,7 @@ Devoured in (8a) is different from smiled in that it cannot occur without a phra
 
 ---
 
-<!-- page 141 -->
+<!-- page 140 -->
 
 K. Börjars
 124
@@ -7341,7 +7341,7 @@ A/The/This study of rare birds with many great illustrations is expensive.
 
 ---
 
-<!-- page 142 -->
+<!-- page 141 -->
 
 Syntax
 125
@@ -7398,7 +7398,7 @@ same phrase occurs with to and follows the other phrase: The child fed some soap
 
 ---
 
-<!-- page 143 -->
+<!-- page 142 -->
 
 K. Börjars
 126
@@ -7451,7 +7451,7 @@ to talk about a house that was red in the past, we cannot add –ed to red. Inst
 
 ---
 
-<!-- page 144 -->
+<!-- page 143 -->
 
 Syntax
 127
@@ -7513,7 +7513,7 @@ to the issue of how to capture this variation.
 
 ---
 
-<!-- page 145 -->
+<!-- page 144 -->
 
 K. Börjars
 128
@@ -7567,7 +7567,7 @@ N
 
 ---
 
-<!-- page 146 -->
+<!-- page 145 -->
 
 Syntax
 129
@@ -7628,7 +7628,7 @@ X
 
 ---
 
-<!-- page 147 -->
+<!-- page 146 -->
 
 K. Börjars
 130
@@ -7683,7 +7683,7 @@ D
 
 ---
 
-<!-- page 148 -->
+<!-- page 147 -->
 
 Syntax
 131
@@ -7735,7 +7735,7 @@ Oscar
 
 ---
 
-<!-- page 149 -->
+<!-- page 148 -->
 
 K. Börjars
 132
@@ -7788,7 +7788,7 @@ S
 
 ---
 
-<!-- page 150 -->
+<!-- page 149 -->
 
 Syntax
 133
@@ -7839,7 +7839,7 @@ Börjars, K. and K. Burridge (2010) Introducing English Grammar, 2nd edition. Ab
 
 ---
 
-<!-- page 151 -->
+<!-- page 150 -->
 
 K. Börjars
 134
@@ -7868,7 +7868,7 @@ Rijkhoff, J. (2003) When can a language have nouns and verbs? Acta Linguistica H
 
 ---
 
-<!-- page 152 -->
+<!-- page 151 -->
 
 135
 9
@@ -7907,7 +7907,7 @@ phonology, morphology, morphosyntax, multilevelled syntax are replaced by two le
 
 ---
 
-<!-- page 153 -->
+<!-- page 152 -->
 
 R. Kempson
 136
@@ -7956,7 +7956,7 @@ To obtain the appropriate basis for generality, a level of discourse representat
 
 ---
 
-<!-- page 154 -->
+<!-- page 153 -->
 
 Syntax as the dynamics of understanding
 137
@@ -8007,7 +8007,7 @@ the traditional sentence-based methodology are very poorly placed to explain. Al
 
 ---
 
-<!-- page 155 -->
+<!-- page 154 -->
 
 R. Kempson
 138
@@ -8064,7 +8064,7 @@ B: that you have completely missed the point.
 
 ---
 
-<!-- page 156 -->
+<!-- page 155 -->
 
 Syntax as the dynamics of understanding
 139
@@ -8122,7 +8122,7 @@ at sub-sentence and supra-sentence levels; and TTR has been the ﬁ rst framewor
 
 ---
 
-<!-- page 157 -->
+<!-- page 156 -->
 
 R. Kempson
 140
@@ -8180,7 +8180,7 @@ learning.
 
 ---
 
-<!-- page 158 -->
+<!-- page 157 -->
 
 Syntax as the dynamics of understanding
 141
@@ -8234,7 +8234,7 @@ argument projected by tense (see Cann 2011):
 
 ---
 
-<!-- page 159 -->
+<!-- page 158 -->
 
 R. Kempson
 142
@@ -8289,7 +8289,7 @@ John´ : e
 
 ---
 
-<!-- page 160 -->
+<!-- page 159 -->
 
 Syntax as the dynamics of understanding
 143
@@ -8348,7 +8348,7 @@ consolidated over years into composite macro routines.
 
 ---
 
-<!-- page 161 -->
+<!-- page 160 -->
 
 R. Kempson
 144
@@ -8400,7 +8400,7 @@ its update possible.
 
 ---
 
-<!-- page 162 -->
+<!-- page 161 -->
 
 Syntax as the dynamics of understanding
 145
@@ -8462,7 +8462,7 @@ Figure 9.1 Action for reﬂ exive anaphora
 
 ---
 
-<!-- page 163 -->
+<!-- page 162 -->
 
 R. Kempson
 146
@@ -8526,7 +8526,7 @@ B: Bill will be too, tomorrow.
 
 ---
 
-<!-- page 164 -->
+<!-- page 163 -->
 
 Syntax as the dynamics of understanding
 147
@@ -8583,7 +8583,7 @@ independently constructed structure.
 
 ---
 
-<!-- page 165 -->
+<!-- page 164 -->
 
 R. Kempson
 148
@@ -8636,7 +8636,7 @@ of what she has uttered through successive updates, while Bob initially as heare
 
 ---
 
-<!-- page 166 -->
+<!-- page 165 -->
 
 Syntax as the dynamics of understanding
 149
@@ -8695,7 +8695,7 @@ actions used to build up that emergent partial structure. And since it is action
 
 ---
 
-<!-- page 167 -->
+<!-- page 166 -->
 
 R. Kempson
 150
@@ -8752,7 +8752,7 @@ Because syntax involves the emergent projection of representation of content in 
 
 ---
 
-<!-- page 168 -->
+<!-- page 167 -->
 
 Syntax as the dynamics of understanding
 151
@@ -8803,7 +8803,7 @@ Discourse 2: 199–233.
 
 ---
 
-<!-- page 169 -->
+<!-- page 168 -->
 
 R. Kempson
 152
@@ -8826,7 +8826,7 @@ Blackwell.
 
 ---
 
-<!-- page 170 -->
+<!-- page 169 -->
 
 153
 10
@@ -8863,7 +8863,7 @@ comprehensive coverage of a single language. Such linguists typically eschew for
 
 ---
 
-<!-- page 171 -->
+<!-- page 170 -->
 
 J. Saeed
 154
@@ -8950,7 +8950,7 @@ grammatical mapping, providing a dispersed account of grammatical semantics.
 
 ---
 
-<!-- page 172 -->
+<!-- page 171 -->
 
 Semantics
 155
@@ -9052,7 +9052,7 @@ as two members of a larger semantic grouping, is an open question.
 
 ---
 
-<!-- page 173 -->
+<!-- page 172 -->
 
 J. Saeed
 156
@@ -9105,7 +9105,7 @@ inﬂ uential and attractive to linguists; as did discussion of more general not
 
 ---
 
-<!-- page 174 -->
+<!-- page 173 -->
 
 Semantics
 157
@@ -9159,7 +9159,7 @@ have to have understood the meaning of the sentence and the concept of ‘truth�
 
 ---
 
-<!-- page 175 -->
+<!-- page 174 -->
 
 J. Saeed
 158
@@ -9216,7 +9216,7 @@ p and/or q
 
 ---
 
-<!-- page 176 -->
+<!-- page 175 -->
 
 Semantics
 159
@@ -9284,7 +9284,7 @@ natural language under study.
 
 ---
 
-<!-- page 177 -->
+<!-- page 176 -->
 
 J. Saeed
 160
@@ -9337,7 +9337,7 @@ created (x, y)
 
 ---
 
-<!-- page 178 -->
+<!-- page 177 -->
 
 Semantics
 161
@@ -9385,7 +9385,7 @@ owns (x, y)
 
 ---
 
-<!-- page 179 -->
+<!-- page 178 -->
 
 J. Saeed
 162
@@ -9434,7 +9434,7 @@ owns (x, y)
 
 ---
 
-<!-- page 180 -->
+<!-- page 179 -->
 
 Semantics
 163
@@ -9494,7 +9494,7 @@ The things speakers can refer to (i.e. identify) by an expression may be called 
 
 ---
 
-<!-- page 181 -->
+<!-- page 180 -->
 
 J. Saeed
 164
@@ -9551,7 +9551,7 @@ Figure 10.1 Path schema (adapted from Johnson 1987)
 
 ---
 
-<!-- page 182 -->
+<!-- page 181 -->
 
 Semantics
 165
@@ -9608,7 +9608,7 @@ where multiple senses are distributed in a network around prototypical senses. T
 
 ---
 
-<!-- page 183 -->
+<!-- page 182 -->
 
 J. Saeed
 166
@@ -9663,7 +9663,7 @@ complex analogies in what is called conceptual integration (or blending), as in 
 
 ---
 
-<!-- page 184 -->
+<!-- page 183 -->
 
 Semantics
 167
@@ -9709,7 +9709,7 @@ semantics. Ungerer and Schmid (2006) include semantics in their introduction to 
 
 ---
 
-<!-- page 185 -->
+<!-- page 184 -->
 
 J. Saeed
 168
@@ -9766,7 +9766,7 @@ Wilson, D. and D. Sperber (2012) Meaning and Relevance. Cambridge: Cambridge Uni
 
 ---
 
-<!-- page 186 -->
+<!-- page 185 -->
 
 169
 11
@@ -9804,7 +9804,7 @@ common to Wittgenstein, Bloomﬁ eld and DS is that you will know a word by the 
 
 ---
 
-<!-- page 187 -->
+<!-- page 186 -->
 
 N. Asher et al.
 170
@@ -9857,7 +9857,7 @@ cognitive features and lexical entries deﬁ ned in terms of them. Others in a m
 
 ---
 
-<!-- page 188 -->
+<!-- page 187 -->
 
 Lexical semantics today
 171
@@ -9910,7 +9910,7 @@ must be satisﬁ ed in order for the sentence in which it originates to have a t
 
 ---
 
-<!-- page 189 -->
+<!-- page 188 -->
 
 N. Asher et al.
 172
@@ -9959,7 +9959,7 @@ model of lexical meaning is the monomorphic, sense enumeration model, according 
 
 ---
 
-<!-- page 190 -->
+<!-- page 189 -->
 
 Lexical semantics today
 173
@@ -10020,7 +10020,7 @@ much ubiquitous (Sperber and Wilson 1986; Recanati 2004).
 
 ---
 
-<!-- page 191 -->
+<!-- page 190 -->
 
 N. Asher et al.
 174
@@ -10065,7 +10065,7 @@ These maps specify, inter alia, coercions. Frege’s theory of meaning includes 
 
 ---
 
-<!-- page 192 -->
+<!-- page 191 -->
 
 Lexical semantics today
 175
@@ -10114,7 +10114,7 @@ f(many books(x)) ∃e(enjoy(g, x, e) ∧ last weekend(e))
 
 ---
 
-<!-- page 193 -->
+<!-- page 192 -->
 
 N. Asher et al.
 176
@@ -10180,7 +10180,7 @@ d.
 
 ---
 
-<!-- page 194 -->
+<!-- page 193 -->
 
 Lexical semantics today
 177
@@ -10231,7 +10231,7 @@ of types, type checking and repair to say when coercion would be triggered. In f
 
 ---
 
-<!-- page 195 -->
+<!-- page 194 -->
 
 N. Asher et al.
 178
@@ -10286,7 +10286,7 @@ not a type shift in either the argument or the predicate but rather a type shift
 
 ---
 
-<!-- page 196 -->
+<!-- page 195 -->
 
 Lexical semantics today
 179
@@ -10340,7 +10340,7 @@ Julie did to the book that she enjoyed. All this is reﬂ ected in the logical f
 
 ---
 
-<!-- page 197 -->
+<!-- page 196 -->
 
 N. Asher et al.
 180
@@ -10395,7 +10395,7 @@ Julie enjoyed reading a book.
 
 ---
 
-<!-- page 198 -->
+<!-- page 197 -->
 
 Lexical semantics today
 181
@@ -10445,7 +10445,7 @@ percent on multiple-choice synonym questions of the Test of English as a Foreign
 
 ---
 
-<!-- page 199 -->
+<!-- page 198 -->
 
 N. Asher et al.
 182
@@ -10518,7 +10518,7 @@ strawberry and car
 
 ---
 
-<!-- page 200 -->
+<!-- page 199 -->
 
 Lexical semantics today
 183
@@ -10581,7 +10581,7 @@ see two ways this integration could go.
 
 ---
 
-<!-- page 201 -->
+<!-- page 200 -->
 
 N. Asher et al.
 184
@@ -10629,7 +10629,7 @@ theories.
 
 ---
 
-<!-- page 202 -->
+<!-- page 201 -->
 
 Lexical semantics today
 185
@@ -10680,7 +10680,7 @@ Harris, Z.S. (1954) Distributional structure. Word 10: 146–62.
 
 ---
 
-<!-- page 203 -->
+<!-- page 202 -->
 
 N. Asher et al.
 186
@@ -10719,7 +10719,7 @@ Veltman, F. (1996) Defaults in update semantics. Journal of Philosophical Logic 
 
 ---
 
-<!-- page 204 -->
+<!-- page 203 -->
 
 187
 12
@@ -10759,7 +10759,7 @@ accessing the vocabulary, via the known word forms or the abstract concepts whos
 
 ---
 
-<!-- page 205 -->
+<!-- page 204 -->
 
 P. Peters
 188
@@ -10811,7 +10811,7 @@ alternative approaches to the lemmatization of words:
 
 ---
 
-<!-- page 206 -->
+<!-- page 205 -->
 
 Lexicography
 189
@@ -10866,7 +10866,7 @@ from corpora showing the headword as a keyword in context. Some lexicographers (
 
 ---
 
-<!-- page 207 -->
+<!-- page 206 -->
 
 P. Peters
 190
@@ -10919,7 +10919,7 @@ abbreviation, e.g. [g] or [gr] for Greek, and the paragraph sign for French. Caw
 
 ---
 
-<!-- page 208 -->
+<!-- page 207 -->
 
 Lexicography
 191
@@ -10964,7 +10964,7 @@ and compendiums of specialized vocabulary.
 
 ---
 
-<!-- page 209 -->
+<!-- page 208 -->
 
 P. Peters
 192
@@ -11013,7 +11013,7 @@ language of Britain, sampling the ‘ﬂ ower’ of the English literary traditi
 
 ---
 
-<!-- page 210 -->
+<!-- page 209 -->
 
 Lexicography
 193
@@ -11066,7 +11066,7 @@ making pedagogical lexicography a driving force in adapting the construction and
 
 ---
 
-<!-- page 211 -->
+<!-- page 210 -->
 
 P. Peters
 194
@@ -11113,7 +11113,7 @@ to fresh air and treatment of the symptoms usually alleviate the condition
 
 ---
 
-<!-- page 212 -->
+<!-- page 211 -->
 
 Lexicography
 195
@@ -11165,7 +11165,7 @@ Roget’s Thesaurus.
 
 ---
 
-<!-- page 213 -->
+<!-- page 212 -->
 
 P. Peters
 196
@@ -11217,7 +11217,7 @@ lexical information.
 
 ---
 
-<!-- page 214 -->
+<!-- page 213 -->
 
 Lexicography
 197
@@ -11281,7 +11281,7 @@ by comparison with modern dictionaries of the same size. It was however ‘great
 
 ---
 
-<!-- page 215 -->
+<!-- page 214 -->
 
 P. Peters
 198
@@ -11334,7 +11334,7 @@ tendencies that contribute to the meanings of words and help to discriminate the
 
 ---
 
-<!-- page 216 -->
+<!-- page 215 -->
 
 Lexicography
 199
@@ -11387,7 +11387,7 @@ home’
 
 ---
 
-<!-- page 217 -->
+<!-- page 216 -->
 
 P. Peters
 200
@@ -11441,7 +11441,7 @@ not only to proﬁ le the key disciplinary concepts but to model the constructio
 
 ---
 
-<!-- page 218 -->
+<!-- page 217 -->
 
 Lexicography
 201
@@ -11494,7 +11494,7 @@ content management become ever more important. The allied disciplines of informa
 
 ---
 
-<!-- page 219 -->
+<!-- page 218 -->
 
 P. Peters
 202
@@ -11548,7 +11548,7 @@ Printed by I. R[oberts] for Edmund Weauer.
 
 ---
 
-<!-- page 220 -->
+<!-- page 219 -->
 
 Lexicography
 203
@@ -11606,7 +11606,7 @@ avec la collaboration de Albert Riedlinger.] Paris: Payot.
 
 ---
 
-<!-- page 221 -->
+<!-- page 220 -->
 
 P. Peters
 204
@@ -11633,7 +11633,7 @@ Science 11: 417–44.
 
 ---
 
-<!-- page 222 -->
+<!-- page 221 -->
 
 205
 13
@@ -11664,7 +11664,7 @@ what they express is context-dependent. Consider (2)–(7).
 
 ---
 
-<!-- page 223 -->
+<!-- page 222 -->
 
 Y. Huang
 206
@@ -11731,7 +11731,7 @@ Everyone [in my family] loves classical music.
 
 ---
 
-<!-- page 224 -->
+<!-- page 223 -->
 
 Pragmatics
 207
@@ -11789,7 +11789,7 @@ sentences.
 
 ---
 
-<!-- page 225 -->
+<!-- page 224 -->
 
 Y. Huang
 208
@@ -11836,7 +11836,7 @@ known as modules.
 
 ---
 
-<!-- page 226 -->
+<!-- page 225 -->
 
 Pragmatics
 209
@@ -11891,7 +11891,7 @@ the current debate).
 
 ---
 
-<!-- page 227 -->
+<!-- page 226 -->
 
 Y. Huang
 210
@@ -11946,7 +11946,7 @@ to point to the current, preceding or following utterances in the same spoken or
 
 ---
 
-<!-- page 228 -->
+<!-- page 227 -->
 
 Pragmatics
 211
@@ -11998,7 +11998,7 @@ inter)cultural, and part of inter-language pragmatics.
 
 ---
 
-<!-- page 229 -->
+<!-- page 228 -->
 
 Y. Huang
 212
@@ -12050,7 +12050,7 @@ importance of psycho-pragmatics is that it has a crucial role to play not only i
 
 ---
 
-<!-- page 230 -->
+<!-- page 229 -->
 
 Pragmatics
 213
@@ -12101,7 +12101,7 @@ investigates the acquisition and development of pragmatic competence in children
 
 ---
 
-<!-- page 231 -->
+<!-- page 230 -->
 
 Y. Huang
 214
@@ -12155,7 +12155,7 @@ sense. It refers to the ethnographically-oriented approach to context-sensitive 
 
 ---
 
-<!-- page 232 -->
+<!-- page 231 -->
 
 Pragmatics
 215
@@ -12210,7 +12210,7 @@ branch of macropragmatics. Grown out of a breakaway group of sociologists known 
 
 ---
 
-<!-- page 233 -->
+<!-- page 232 -->
 
 Y. Huang
 216
@@ -12263,7 +12263,7 @@ practical tasks such as the diagnosis, assessment and treatment of pragmatic dis
 
 ---
 
-<!-- page 234 -->
+<!-- page 233 -->
 
 Pragmatics
 217
@@ -12317,7 +12317,7 @@ politeness/impoliteness have also been used in these studies.
 
 ---
 
-<!-- page 235 -->
+<!-- page 234 -->
 
 Y. Huang
 218
@@ -12367,7 +12367,7 @@ these questions of context sensitivity and (covert) assignment of semantic conte
 
 ---
 
-<!-- page 236 -->
+<!-- page 235 -->
 
 Pragmatics
 219
@@ -12417,7 +12417,7 @@ much broader range of research topics and areas in pragmatics.
 
 ---
 
-<!-- page 237 -->
+<!-- page 236 -->
 
 Y. Huang
 220
@@ -12468,7 +12468,7 @@ Verschueren, J. (1999) Understanding Pragmatics. London: Arnold.
 
 ---
 
-<!-- page 238 -->
+<!-- page 237 -->
 
 221
 14
@@ -12507,7 +12507,7 @@ language to take an active interest in how people relate to each other through l
 
 ---
 
-<!-- page 239 -->
+<!-- page 238 -->
 
 M. Terkouraﬁ 
 222
@@ -12558,7 +12558,7 @@ are preferred.
 
 ---
 
-<!-- page 240 -->
+<!-- page 239 -->
 
 The linguistics of politeness
 223
@@ -12611,7 +12611,7 @@ may be necessary to avoid politeness misunderstandings in this case.
 
 ---
 
-<!-- page 241 -->
+<!-- page 240 -->
 
 M. Terkouraﬁ 
 224
@@ -12666,7 +12666,7 @@ every member wants to claim for himself’ (1987: 61) has been taken to mean tha
 
 ---
 
-<!-- page 242 -->
+<!-- page 241 -->
 
 The linguistics of politeness
 225
@@ -12721,7 +12721,7 @@ constitute an imposition on the hearer’s cognitive resources in its own right,
 
 ---
 
-<!-- page 243 -->
+<!-- page 242 -->
 
 M. Terkouraﬁ 
 226
@@ -12774,7 +12774,7 @@ whether politeness itself is considered a good thing can be contested. Mills (20
 
 ---
 
-<!-- page 244 -->
+<!-- page 243 -->
 
 The linguistics of politeness
 227
@@ -12829,7 +12829,7 @@ within the purview of a Politeness 2 deﬁ nition anchored on this notion.
 
 ---
 
-<!-- page 245 -->
+<!-- page 244 -->
 
 M. Terkouraﬁ 
 228
@@ -12884,7 +12884,7 @@ The acquisition of impoliteness, however, is a different story. As Culpeper (201
 
 ---
 
-<!-- page 246 -->
+<!-- page 245 -->
 
 The linguistics of politeness
 229
@@ -12937,7 +12937,7 @@ Because face resides not in individual speakers but in speaker–addressee pairs
 
 ---
 
-<!-- page 247 -->
+<!-- page 246 -->
 
 M. Terkouraﬁ 
 230
@@ -12988,7 +12988,7 @@ Terkouraﬁ  (2005: 249):
 
 ---
 
-<!-- page 248 -->
+<!-- page 247 -->
 
 The linguistics of politeness
 231
@@ -13042,7 +13042,7 @@ to honor them. However, at that point, rather than falling out as a by-product o
 
 ---
 
-<!-- page 249 -->
+<!-- page 248 -->
 
 M. Terkouraﬁ 
 232
@@ -13094,7 +13094,7 @@ seen through the lens of its potential to impact (threaten and/or enhance) face.
 
 ---
 
-<!-- page 250 -->
+<!-- page 249 -->
 
 The linguistics of politeness
 233
@@ -13150,7 +13150,7 @@ mother’s trust in the addressee at one and the same time.
 
 ---
 
-<!-- page 251 -->
+<!-- page 250 -->
 
 M. Terkouraﬁ 
 234
@@ -13206,7 +13206,7 @@ strategies and inferences based on their use. Journal of Personality and Social 
 
 ---
 
-<!-- page 252 -->
+<!-- page 251 -->
 
 The linguistics of politeness
 235
@@ -13265,7 +13265,7 @@ Language Discourse: A Textbook of Current Research, pp. 21–38. Norwood: Ablex.
 
 ---
 
-<!-- page 253 -->
+<!-- page 252 -->
 
 236
 15
@@ -13301,7 +13301,7 @@ narrative seems only partly to ﬁ t the Systemic-Functional Linguistic concepti
 
 ---
 
-<!-- page 254 -->
+<!-- page 253 -->
 
 Narrative and narrative structure
 237
@@ -13352,7 +13352,7 @@ narratives. Be that as it may, the subjects of the present chapter are indeed ve
 
 ---
 
-<!-- page 255 -->
+<!-- page 254 -->
 
 M. Toolan
 238
@@ -13402,7 +13402,7 @@ relevance and signiﬁ cance of the story being told. Other analysts have encaps
 
 ---
 
-<!-- page 256 -->
+<!-- page 255 -->
 
 Narrative and narrative structure
 239
@@ -13453,7 +13453,7 @@ The extract comes about twenty minutes into W’s recollections (Figure 15.1).
 
 ---
 
-<!-- page 257 -->
+<!-- page 256 -->
 
 M. Toolan
 240
@@ -13528,7 +13528,7 @@ Figure 15.1 Oral narrative extract (source: Document 351 at www.scottishcorpus.a
 
 ---
 
-<!-- page 258 -->
+<!-- page 257 -->
 
 Narrative and narrative structure
 241
@@ -13583,7 +13583,7 @@ enriched as I hit him, ‘pow!’ or Ducking and diving to keep out of range, I 
 
 ---
 
-<!-- page 259 -->
+<!-- page 258 -->
 
 M. Toolan
 242
@@ -13638,7 +13638,7 @@ internal evaluation. Most prominent are the abundant post-resolution repetitions
 
 ---
 
-<!-- page 260 -->
+<!-- page 259 -->
 
 Narrative and narrative structure
 243
@@ -13693,7 +13693,7 @@ the ball, she does so on behalf of Sam, who is nearly crying at the loss and kno
 
 ---
 
-<!-- page 261 -->
+<!-- page 260 -->
 
 M. Toolan
 244
@@ -13746,7 +13746,7 @@ formats. Today, personal stories are as frequently written digitally, or even mu
 
 ---
 
-<!-- page 262 -->
+<!-- page 261 -->
 
 Narrative and narrative structure
 245
@@ -13799,7 +13799,7 @@ each with its own formal marking in the language used, and each level playing a 
 
 ---
 
-<!-- page 263 -->
+<!-- page 262 -->
 
 M. Toolan
 246
@@ -13854,7 +13854,7 @@ among competing considerations.
 
 ---
 
-<!-- page 264 -->
+<!-- page 263 -->
 
 Narrative and narrative structure
 247
@@ -13907,7 +13907,7 @@ a half-eaten meal. In Georgakopoulou’s view, the interactionist ‘turn’ has
 
 ---
 
-<!-- page 265 -->
+<!-- page 264 -->
 
 M. Toolan
 248
@@ -13960,7 +13960,7 @@ Routledge.
 
 ---
 
-<!-- page 266 -->
+<!-- page 265 -->
 
 Narrative and narrative structure
 249
@@ -13993,7 +13993,7 @@ Cinnaminson: Foris Publications.
 
 ---
 
-<!-- page 267 -->
+<!-- page 266 -->
 
 250
 16
@@ -14031,7 +14031,7 @@ linguistic ﬁ eldwork techniques, Franz Boas, as he and his students – like E
 
 ---
 
-<!-- page 268 -->
+<!-- page 267 -->
 
 Anthropological linguistics
 251
@@ -14084,7 +14084,7 @@ that studies the meanings of signs, their interrelations and combinations, while
 
 ---
 
-<!-- page 269 -->
+<!-- page 268 -->
 
 W.A. Foley
 252
@@ -14139,7 +14139,7 @@ speakers unlike, say, those of Indonesian, cannot say man sick, but must indicat
 
 ---
 
-<!-- page 270 -->
+<!-- page 269 -->
 
 Anthropological linguistics
 253
@@ -14192,7 +14192,7 @@ is to my north, it is to my north regardless of whether it is in front of me, in
 
 ---
 
-<!-- page 271 -->
+<!-- page 270 -->
 
 W.A. Foley
 254
@@ -14244,7 +14244,7 @@ for the consequences for how these things can be known or remembered. In two cla
 
 ---
 
-<!-- page 272 -->
+<!-- page 271 -->
 
 Anthropological linguistics
 255
@@ -14291,7 +14291,7 @@ text is to be interpreted as a fairy tale; they trigger the interpretive context
 
 ---
 
-<!-- page 273 -->
+<!-- page 272 -->
 
 W.A. Foley
 256
@@ -14360,7 +14360,7 @@ can be taken as a wider context to indicate relative rank, such as dress or deme
 
 ---
 
-<!-- page 274 -->
+<!-- page 273 -->
 
 Anthropological linguistics
 257
@@ -14415,7 +14415,7 @@ traditional poetic genre among the Gayo of Sumatra has been recast now as a prop
 
 ---
 
-<!-- page 275 -->
+<!-- page 274 -->
 
 W.A. Foley
 258
@@ -14468,7 +14468,7 @@ any other way. Further, it is very important, if time and circumstances permit, 
 
 ---
 
-<!-- page 276 -->
+<!-- page 275 -->
 
 Anthropological linguistics
 259
@@ -14523,7 +14523,7 @@ on to grammar and discourse. The best way to do this is with simple words. The l
 
 ---
 
-<!-- page 277 -->
+<!-- page 276 -->
 
 W.A. Foley
 260
@@ -14577,7 +14577,7 @@ whether there are signiﬁ cant conjugation differences.
 
 ---
 
-<!-- page 278 -->
+<!-- page 277 -->
 
 Anthropological linguistics
 261
@@ -14631,7 +14631,7 @@ across a wide range of speakers to determine the patterns of variation. For exam
 
 ---
 
-<!-- page 279 -->
+<!-- page 278 -->
 
 W.A. Foley
 262
@@ -14684,7 +14684,7 @@ people in a relatively short time.
 
 ---
 
-<!-- page 280 -->
+<!-- page 279 -->
 
 Anthropological linguistics
 263
@@ -14730,7 +14730,7 @@ Cambridge: MIT Press.
 
 ---
 
-<!-- page 281 -->
+<!-- page 280 -->
 
 264
 17
@@ -14769,7 +14769,7 @@ and speakers could either form questions like Wrote you this letter? (the earlie
 
 ---
 
-<!-- page 282 -->
+<!-- page 281 -->
 
 Sociolinguistics
 265
@@ -14824,7 +14824,7 @@ diachronic developments. The underlying assumption of this construct is that the
 
 ---
 
-<!-- page 283 -->
+<!-- page 282 -->
 
 M. Ravindranath and S.E. Wagner
 266
@@ -14877,7 +14877,7 @@ with a simple question that is calibrated to elicit instances of a single lingui
 
 ---
 
-<!-- page 284 -->
+<!-- page 283 -->
 
 Sociolinguistics
 267
@@ -14932,7 +14932,7 @@ in the south. Dialect mapping has been pursued since at least the nineteenth cen
 
 ---
 
-<!-- page 285 -->
+<!-- page 284 -->
 
 M. Ravindranath and S.E. Wagner
 268
@@ -14983,7 +14983,7 @@ sociolinguists’ thinking about inter-speaker variation.
 
 ---
 
-<!-- page 286 -->
+<!-- page 285 -->
 
 Sociolinguistics
 269
@@ -15035,7 +15035,7 @@ USA, it follows that much of the work in which race is employed as an explanator
 
 ---
 
-<!-- page 287 -->
+<!-- page 286 -->
 
 M. Ravindranath and S.E. Wagner
 270
@@ -15088,7 +15088,7 @@ during adolescence; and for the most part undergoes no major changes in adulthoo
 
 ---
 
-<!-- page 288 -->
+<!-- page 287 -->
 
 Sociolinguistics
 271
@@ -15141,7 +15141,7 @@ education, may prove to be an increasingly important indicator of sociolinguisti
 
 ---
 
-<!-- page 289 -->
+<!-- page 288 -->
 
 M. Ravindranath and S.E. Wagner
 272
@@ -15196,7 +15196,7 @@ marker of social identity. Emic categories are also employed in studies of Weste
 
 ---
 
-<!-- page 290 -->
+<!-- page 289 -->
 
 Sociolinguistics
 273
@@ -15246,7 +15246,7 @@ United States as being less overtly prestigious than English dialects from the n
 
 ---
 
-<!-- page 291 -->
+<!-- page 290 -->
 
 M. Ravindranath and S.E. Wagner
 274
@@ -15299,7 +15299,7 @@ involve any differences in interlocutor or setting, Labov attributed these syste
 
 ---
 
-<!-- page 292 -->
+<!-- page 291 -->
 
 Sociolinguistics
 275
@@ -15354,7 +15354,7 @@ different languages in their repertoire. Most recent studies of the sociolinguis
 
 ---
 
-<!-- page 293 -->
+<!-- page 292 -->
 
 M. Ravindranath and S.E. Wagner
 276
@@ -15407,7 +15407,7 @@ Poplack and colleagues in Ottawa arguing that the inference of change in French 
 
 ---
 
-<!-- page 294 -->
+<!-- page 293 -->
 
 Sociolinguistics
 277
@@ -15460,7 +15460,7 @@ see in the contemporary world, in keeping with the Uniformitarian Principle. His
 
 ---
 
-<!-- page 295 -->
+<!-- page 294 -->
 
 M. Ravindranath and S.E. Wagner
 278
@@ -15510,7 +15510,7 @@ Cambridge: Cambridge University Press.
 
 ---
 
-<!-- page 296 -->
+<!-- page 295 -->
 
 Sociolinguistics
 279
@@ -15569,7 +15569,7 @@ University Press.
 
 ---
 
-<!-- page 297 -->
+<!-- page 296 -->
 
 M. Ravindranath and S.E. Wagner
 280
@@ -15581,7 +15581,7 @@ practice. Language and Linguistics Compass 2: 1–26.
 
 ---
 
-<!-- page 298 -->
+<!-- page 297 -->
 
 281
 18
@@ -15620,7 +15620,7 @@ function go wrong (as in Speciﬁ c Language Disorder, dyslexia and aphasia), th
 
 ---
 
-<!-- page 299 -->
+<!-- page 298 -->
 
 M.J. Traxler
 282
@@ -15675,7 +15675,7 @@ leading to disabilities in other aspects of life. SLI is deﬁ ned somewhat diff
 
 ---
 
-<!-- page 300 -->
+<!-- page 299 -->
 
 Psycholinguistics
 283
@@ -15729,7 +15729,7 @@ with language, presumably because neural and general cognitive development lags 
 
 ---
 
-<!-- page 301 -->
+<!-- page 300 -->
 
 M.J. Traxler
 284
@@ -15783,7 +15783,7 @@ psycholinguistic theory and research over the past half century.
 
 ---
 
-<!-- page 302 -->
+<!-- page 301 -->
 
 Psycholinguistics
 285
@@ -15835,7 +15835,7 @@ of language function has been largely if not completely abandoned.
 
 ---
 
-<!-- page 303 -->
+<!-- page 302 -->
 
 M.J. Traxler
 286
@@ -15890,7 +15890,7 @@ statement The little girl that is talking to Susan is leaving by moving the ﬁ 
 
 ---
 
-<!-- page 304 -->
+<!-- page 303 -->
 
 Psycholinguistics
 287
@@ -15945,7 +15945,7 @@ extension of the expression (You do? Postman Pat is nice, isn’t he?), but the 
 
 ---
 
-<!-- page 305 -->
+<!-- page 304 -->
 
 M.J. Traxler
 288
@@ -15998,7 +15998,7 @@ about the speaker and situation in which that expression was uttered to determin
 
 ---
 
-<!-- page 306 -->
+<!-- page 305 -->
 
 Psycholinguistics
 289
@@ -16053,7 +16053,7 @@ mental grammar.
 
 ---
 
-<!-- page 307 -->
+<!-- page 306 -->
 
 M.J. Traxler
 290
@@ -16108,7 +16108,7 @@ have just heard the word-fragment cap…. Thus, consistent with the model’s cl
 
 ---
 
-<!-- page 308 -->
+<!-- page 307 -->
 
 Psycholinguistics
 291
@@ -16161,7 +16161,7 @@ the phonological codes (pronunciations) that are associated with irregular sets 
 
 ---
 
-<!-- page 309 -->
+<!-- page 308 -->
 
 M.J. Traxler
 292
@@ -16216,7 +16216,7 @@ the actual output differs from the ideal, the connection weights between the inp
 
 ---
 
-<!-- page 310 -->
+<!-- page 309 -->
 
 Psycholinguistics
 293
@@ -16271,7 +16271,7 @@ versus judgment) and looked for areas in the brain that responded more strongly 
 
 ---
 
-<!-- page 311 -->
+<!-- page 310 -->
 
 M.J. Traxler
 294
@@ -16327,7 +16327,7 @@ Frith, C. (1995) The Cognitive Neuropsychology of Schizophrenia. New York: Psych
 
 ---
 
-<!-- page 312 -->
+<!-- page 311 -->
 
 Psycholinguistics
 295
@@ -16353,7 +16353,7 @@ and naming. Psychological Review 96: 523–68.
 
 ---
 
-<!-- page 313 -->
+<!-- page 312 -->
 
 296
 19
@@ -16389,7 +16389,7 @@ Further information can be found in the references listed under ‘Further readi
 
 ---
 
-<!-- page 314 -->
+<!-- page 313 -->
 
 Neurolinguistics
 297
@@ -16441,7 +16441,7 @@ Basically, this approach takes advantage of otherwise unfortunate cases of brain
 
 ---
 
-<!-- page 315 -->
+<!-- page 314 -->
 
 precentral gyrus
 (PreG)
@@ -16488,7 +16488,7 @@ cytoarchitectonically deﬁ ned Brodmann areas
 
 ---
 
-<!-- page 316 -->
+<!-- page 315 -->
 
 Neurolinguistics
 299
@@ -16540,7 +16540,7 @@ comprehension to unfold at a normal pace.
 
 ---
 
-<!-- page 317 -->
+<!-- page 316 -->
 
 allographic conversion;
 graphomotor planning
@@ -16578,7 +16578,7 @@ text
 
 ---
 
-<!-- page 318 -->
+<!-- page 317 -->
 
 Neurolinguistics
 301
@@ -16633,7 +16633,7 @@ level, like metrical stress.
 
 ---
 
-<!-- page 319 -->
+<!-- page 318 -->
 
 D. Kemmerer
 302
@@ -16686,7 +16686,7 @@ perisylvian cortical areas may also be involved. In contrast, a great deal of da
 
 ---
 
-<!-- page 320 -->
+<!-- page 319 -->
 
 Neurolinguistics
 303
@@ -16739,7 +16739,7 @@ modiﬁ ed to generate the expected feelings in the vocal tract.
 
 ---
 
-<!-- page 321 -->
+<!-- page 320 -->
 
 D. Kemmerer
 304
@@ -16792,7 +16792,7 @@ depend mainly on a more inferior set of structures that includes the ATL as well
 
 ---
 
-<!-- page 322 -->
+<!-- page 321 -->
 
 Neurolinguistics
 305
@@ -16843,7 +16843,7 @@ semantic information in an abstract symbolic code that might be called ‘mental
 
 ---
 
-<!-- page 323 -->
+<!-- page 322 -->
 
 D. Kemmerer
 306
@@ -16898,7 +16898,7 @@ to have integrative hub-like semantic functions, possibly analogous to those of 
 
 ---
 
-<!-- page 324 -->
+<!-- page 323 -->
 
 Neurolinguistics
 307
@@ -16947,7 +16947,7 @@ implicated in both types of operations – that is, parsing as well as interpret
 
 ---
 
-<!-- page 325 -->
+<!-- page 324 -->
 
 D. Kemmerer
 308
@@ -16998,7 +16998,7 @@ and sometimes does not lead to debilitating sentence comprehension deﬁ cits.
 
 ---
 
-<!-- page 326 -->
+<!-- page 325 -->
 
 Neurolinguistics
 309
@@ -17051,7 +17051,7 @@ update. Frontiers in Psychology 2: art. 255.
 
 ---
 
-<!-- page 327 -->
+<!-- page 326 -->
 
 D. Kemmerer
 310
@@ -17070,7 +17070,7 @@ Brain and Language 114: 1–15.
 
 ---
 
-<!-- page 328 -->
+<!-- page 327 -->
 
 311
 20
@@ -17108,7 +17108,7 @@ yyy [vocalizing while Mother speaks]
 
 ---
 
-<!-- page 329 -->
+<!-- page 328 -->
 
 E.V. Clark and M. Casillas
 312
@@ -17177,7 +17177,7 @@ Mother: ʔa1 raj0 nii2 kxxw2 naam3
 
 ---
 
-<!-- page 330 -->
+<!-- page 329 -->
 
 First language acquisition
 313
@@ -17235,7 +17235,7 @@ syllables delays their word recognition (Vihman et al. 2004).
 
 ---
 
-<!-- page 331 -->
+<!-- page 330 -->
 
 E.V. Clark and M. Casillas
 314
@@ -17288,7 +17288,7 @@ information at multiple levels, even very young children learn about prosody, ph
 
 ---
 
-<!-- page 332 -->
+<!-- page 331 -->
 
 First language acquisition
 315
@@ -17341,7 +17341,7 @@ other, and they make increasing use of these elements to infer each other’s in
 
 ---
 
-<!-- page 333 -->
+<!-- page 332 -->
 
 E.V. Clark and M. Casillas
 316
@@ -17392,7 +17392,7 @@ some meaning to terms like top, doggie, shoe or eat.
 
 ---
 
-<!-- page 334 -->
+<!-- page 333 -->
 
 First language acquisition
 317
@@ -17444,7 +17444,7 @@ rely heavily on shape in selecting a word, and this accounts for the majority of
 
 ---
 
-<!-- page 335 -->
+<!-- page 334 -->
 
 E.V. Clark and M. Casillas
 318
@@ -17495,7 +17495,7 @@ items – spoon, cup, brush, bottle, key, clock and light; for clothing – hat,
 
 ---
 
-<!-- page 336 -->
+<!-- page 335 -->
 
 First language acquisition
 319
@@ -17546,7 +17546,7 @@ for such coinages. Derivation adds afﬁ xes to the word-stem (e.g. a puller for
 
 ---
 
-<!-- page 337 -->
+<!-- page 336 -->
 
 E.V. Clark and M. Casillas
 320
@@ -17611,7 +17611,7 @@ Mother: El mar. Pintas el mar?
 
 ---
 
-<!-- page 338 -->
+<!-- page 337 -->
 
 First language acquisition
 321
@@ -17685,7 +17685,7 @@ Mother: Milk. That’s the milk being poured into the coffee in that picture.
 
 ---
 
-<!-- page 339 -->
+<!-- page 338 -->
 
 E.V. Clark and M. Casillas
 322
@@ -17746,7 +17746,7 @@ gloves.
 
 ---
 
-<!-- page 340 -->
+<!-- page 339 -->
 
 First language acquisition
 323
@@ -17797,7 +17797,7 @@ construction, and then spell out the phonological sequence needed for articulati
 
 ---
 
-<!-- page 341 -->
+<!-- page 340 -->
 
 E.V. Clark and M. Casillas
 324
@@ -17875,7 +17875,7 @@ E (3;0): Don’t giggle me. (make me giggle)
 
 ---
 
-<!-- page 342 -->
+<!-- page 341 -->
 
 First language acquisition
 325
@@ -17935,7 +17935,7 @@ of communicative exchange. These skills all demand extensive practice, and they 
 
 ---
 
-<!-- page 343 -->
+<!-- page 342 -->
 
 E.V. Clark and M. Casillas
 326
@@ -17988,7 +17988,7 @@ reading picture books, and in so doing, they ‘display’ the language to be ac
 
 ---
 
-<!-- page 344 -->
+<!-- page 343 -->
 
 First language acquisition
 327
@@ -18041,7 +18041,7 @@ and emerging grammatical contrasts. Morphology 22: 89–120.
 
 ---
 
-<!-- page 345 -->
+<!-- page 344 -->
 
 E.V. Clark and M. Casillas
 328
@@ -18078,7 +18078,7 @@ better. Developmental Science 6: 959–66.
 
 ---
 
-<!-- page 346 -->
+<!-- page 345 -->
 
 329
 21
@@ -18115,7 +18115,7 @@ age and heritage background.
 
 ---
 
-<!-- page 347 -->
+<!-- page 346 -->
 
 S.M. Gass
 330
@@ -18166,7 +18166,7 @@ language learning, the same occurred in SLA. One can date some of the earlier wo
 
 ---
 
-<!-- page 348 -->
+<!-- page 347 -->
 
 Second language acquisition
 331
@@ -18215,7 +18215,7 @@ with the Gass et al. (2003) study, learning was not the same across grammatical 
 
 ---
 
-<!-- page 349 -->
+<!-- page 348 -->
 
 S.M. Gass
 332
@@ -18267,7 +18267,7 @@ Learning is seen as simple instance learning (rather than explicit/implicit indu
 
 ---
 
-<!-- page 350 -->
+<!-- page 349 -->
 
 Second language acquisition
 333
@@ -18317,7 +18317,7 @@ what else is brought into the picture. One clear answer is the L1, but that, too
 
 ---
 
-<!-- page 351 -->
+<!-- page 350 -->
 
 S.M. Gass
 334
@@ -18368,7 +18368,7 @@ driving force of L2 acquisition.
 
 ---
 
-<!-- page 352 -->
+<!-- page 351 -->
 
 Second language acquisition
 335
@@ -18432,7 +18432,7 @@ a teacher) are signiﬁ cant in providing models for imitation (sensitive to one
 
 ---
 
-<!-- page 353 -->
+<!-- page 352 -->
 
 S.M. Gass
 336
@@ -18499,7 +18499,7 @@ Uh huh OK.
 
 ---
 
-<!-- page 354 -->
+<!-- page 353 -->
 
 Second language acquisition
 337
@@ -18558,7 +18558,7 @@ is forcing me to think harder, think harder for the correct word to give him so 
 
 ---
 
-<!-- page 355 -->
+<!-- page 354 -->
 
 S.M. Gass
 338
@@ -18611,7 +18611,7 @@ articles found an effect for anxiety on responses to recasts and on learning.
 
 ---
 
-<!-- page 356 -->
+<!-- page 355 -->
 
 Second language acquisition
 339
@@ -18661,7 +18661,7 @@ listening, reading, speaking).
 
 ---
 
-<!-- page 357 -->
+<!-- page 356 -->
 
 S.M. Gass
 340
@@ -18707,7 +18707,7 @@ mystery of acquisition.
 
 ---
 
-<!-- page 358 -->
+<!-- page 357 -->
 
 Second language acquisition
 341
@@ -18763,7 +18763,7 @@ output and working memory capacity. Language Learning 60: 501–33.
 
 ---
 
-<!-- page 359 -->
+<!-- page 358 -->
 
 S.M. Gass
 342
@@ -18822,7 +18822,7 @@ Acquisition: A Collection of Empirical Studies, pp. 171–95. Oxford: Oxford Uni
 
 ---
 
-<!-- page 360 -->
+<!-- page 359 -->
 
 Second language acquisition
 343
@@ -18849,7 +18849,7 @@ learning. The Modern Language Journal 97: 109–30.
 
 ---
 
-<!-- page 361 -->
+<!-- page 360 -->
 
 344
 22
@@ -19013,7 +19013,7 @@ beetle.
 
 ---
 
-<!-- page 362 -->
+<!-- page 361 -->
 
 Historical linguistics
 345
@@ -19066,7 +19066,7 @@ equally susceptible to innovation and replacement. Lexical components are the mo
 
 ---
 
-<!-- page 363 -->
+<!-- page 362 -->
 
 K. Burridge
 346
@@ -19119,7 +19119,7 @@ new discipline, as distinct from literary studies and philosophical enquiry. Sch
 
 ---
 
-<!-- page 364 -->
+<!-- page 363 -->
 
 Historical linguistics
 347
@@ -19174,7 +19174,7 @@ draws on inspirations from every one of the major branches of synchronic linguis
 
 ---
 
-<!-- page 365 -->
+<!-- page 364 -->
 
 K. Burridge
 348
@@ -19231,7 +19231,7 @@ system, and further discoveries of fragments of Gothic have yielded more informa
 
 ---
 
-<!-- page 366 -->
+<!-- page 365 -->
 
 Historical linguistics
 349
@@ -19337,7 +19337,7 @@ wine
 
 ---
 
-<!-- page 367 -->
+<!-- page 366 -->
 
 K. Burridge
 350
@@ -19432,7 +19432,7 @@ adverbs such as nothing, nowhere, never, at all, and so on. A third option is si
 
 ---
 
-<!-- page 368 -->
+<!-- page 367 -->
 
 Historical linguistics
 351
@@ -19485,7 +19485,7 @@ outside; hence the conservative nature of these high-usage verbs (Bybee 2003).
 
 ---
 
-<!-- page 369 -->
+<!-- page 368 -->
 
 K. Burridge
 352
@@ -19540,7 +19540,7 @@ linguistic change appear to go hand in hand with social upheaval (epidemics, civ
 
 ---
 
-<!-- page 370 -->
+<!-- page 369 -->
 
 Historical linguistics
 353
@@ -19594,7 +19594,7 @@ French showing signs of losing pre-verbal ne.
 
 ---
 
-<!-- page 371 -->
+<!-- page 370 -->
 
 K. Burridge
 354
@@ -19654,7 +19654,7 @@ koch sie in demselben Wasser mit den Schweinshaxen
 
 ---
 
-<!-- page 372 -->
+<!-- page 371 -->
 
 Historical linguistics
 355
@@ -19710,7 +19710,7 @@ the word comparisons from the pea soup recipes, Table 22.4.
 
 ---
 
-<!-- page 373 -->
+<!-- page 372 -->
 
 K. Burridge
 356
@@ -19786,7 +19786,7 @@ is no natural or necessary connection between the shape of a word and its meanin
 
 ---
 
-<!-- page 374 -->
+<!-- page 373 -->
 
 Historical linguistics
 357
@@ -19838,7 +19838,7 @@ was not until the activities of Sir William Jones (1746–1794) that the idea re
 
 ---
 
-<!-- page 375 -->
+<!-- page 374 -->
 
 K. Burridge
 358
@@ -19909,7 +19909,7 @@ Figure 22.3 Family tree of Germanic languages
 
 ---
 
-<!-- page 376 -->
+<!-- page 375 -->
 
 Historical linguistics
 359
@@ -19989,7 +19989,7 @@ and ultimately distinct languages.
 
 ---
 
-<!-- page 377 -->
+<!-- page 376 -->
 
 K. Burridge
 360
@@ -20043,7 +20043,7 @@ at work. Schleicher is also known for his model of displaying languages, the Sta
 
 ---
 
-<!-- page 378 -->
+<!-- page 377 -->
 
 Historical linguistics
 361
@@ -20096,7 +20096,7 @@ more than a century earlier than previously thought (It cannot be helped now, I 
 
 ---
 
-<!-- page 379 -->
+<!-- page 378 -->
 
 K. Burridge
 362
@@ -20150,7 +20150,7 @@ it’.
 
 ---
 
-<!-- page 380 -->
+<!-- page 379 -->
 
 Historical linguistics
 363
@@ -20208,7 +20208,7 @@ Linguistics, pp. 262–82. Oxford: Blackwell Publishers.
 
 ---
 
-<!-- page 381 -->
+<!-- page 380 -->
 
 K. Burridge
 364
@@ -20267,7 +20267,7 @@ Company.
 
 ---
 
-<!-- page 382 -->
+<!-- page 381 -->
 
 Historical linguistics
 365
@@ -20285,7 +20285,7 @@ Mediterranean: Volume I Case Studies, pp. 1–50. Oxford: Oxford University Pres
 
 ---
 
-<!-- page 383 -->
+<!-- page 382 -->
 
 366
 23
@@ -20331,7 +20331,7 @@ sociolinguistic and cultural factors.
 
 ---
 
-<!-- page 384 -->
+<!-- page 383 -->
 
 Linguistic change in grammar
 367
@@ -20381,7 +20381,7 @@ QUALITY. Each of the stages is illustrated by the word nâa ‘face’. In (3), 
 
 ---
 
-<!-- page 385 -->
+<!-- page 384 -->
 
 W. Bisang
 368
@@ -20442,7 +20442,7 @@ the motivations that drive grammaticalization (§23.2.7).
 
 ---
 
-<!-- page 386 -->
+<!-- page 385 -->
 
 Linguistic change in grammar
 369
@@ -20502,7 +20502,7 @@ category by one of its subcategories (e.g. present, past, etc.) in an utterance.
 
 ---
 
-<!-- page 387 -->
+<!-- page 386 -->
 
 W. Bisang
 370
@@ -20555,7 +20555,7 @@ possessive modiﬁ er bâan ‘house’. In the context of localization in space
 
 ---
 
-<!-- page 388 -->
+<!-- page 387 -->
 
 Linguistic change in grammar
 371
@@ -20604,7 +20604,7 @@ Figure 23.1 Reanalysis and analogy
 
 ---
 
-<!-- page 389 -->
+<!-- page 388 -->
 
 W. Bisang
 372
@@ -20653,7 +20653,7 @@ being addressed in discourse.
 
 ---
 
-<!-- page 390 -->
+<!-- page 389 -->
 
 Linguistic change in grammar
 373
@@ -20702,7 +20702,7 @@ environments, they develop into personal pronouns, complementizers, relative cla
 
 ---
 
-<!-- page 391 -->
+<!-- page 390 -->
 
 W. Bisang
 374
@@ -20755,7 +20755,7 @@ Haiman (1983). Economy reﬂ ects the desire of speakers and addressees to perfo
 
 ---
 
-<!-- page 392 -->
+<!-- page 391 -->
 
 Linguistic change in grammar
 375
@@ -20804,7 +20804,7 @@ different reasons (e.g. sports, friendship, shopping, child care, etc.) as we ty
 
 ---
 
-<!-- page 393 -->
+<!-- page 392 -->
 
 W. Bisang
 376
@@ -20849,7 +20849,7 @@ their emergence by their individual actions. More speciﬁ cally, the invisible-
 
 ---
 
-<!-- page 394 -->
+<!-- page 393 -->
 
 Linguistic change in grammar
 377
@@ -20907,7 +20907,7 @@ Poplack’s (1980) scene-setting paper Sometimes I’ll start a sentence in Span
 
 ---
 
-<!-- page 395 -->
+<!-- page 394 -->
 
 W. Bisang
 378
@@ -20958,7 +20958,7 @@ South-East Asia.
 
 ---
 
-<!-- page 396 -->
+<!-- page 395 -->
 
 Linguistic change in grammar
 379
@@ -21019,7 +21019,7 @@ integrates very detailed population statistics drawn from sources like old schoo
 
 ---
 
-<!-- page 397 -->
+<!-- page 396 -->
 
 W. Bisang
 380
@@ -21080,7 +21080,7 @@ Finally, low-contact communities are the places in which complexity is not only 
 
 ---
 
-<!-- page 398 -->
+<!-- page 397 -->
 
 Linguistic change in grammar
 381
@@ -21131,7 +21131,7 @@ view, metaphors are not based on truth conditions but rather on communicative us
 
 ---
 
-<!-- page 399 -->
+<!-- page 398 -->
 
 W. Bisang
 382
@@ -21185,7 +21185,7 @@ Chicago/London: The University of Chicago Press.
 
 ---
 
-<!-- page 400 -->
+<!-- page 399 -->
 
 Linguistic change in grammar
 383
@@ -21243,7 +21243,7 @@ la Haye, du 10–15 avril 1928, pp. 17–18. Leiden: A.W. Sijthoff.
 
 ---
 
-<!-- page 401 -->
+<!-- page 400 -->
 
 W. Bisang
 384
@@ -21255,7 +21255,7 @@ Winford, D. (2003) An Introduction to Contact Linguistics. Oxford: Blackwell.
 
 ---
 
-<!-- page 402 -->
+<!-- page 401 -->
 
 385
 24
@@ -21293,7 +21293,7 @@ physical geography (Gavin and Sibanda 2012) and human geography (Minett and Wang
 
 ---
 
-<!-- page 403 -->
+<!-- page 402 -->
 
 S. Musgrave
 386
@@ -21346,7 +21346,7 @@ endangered. Harmon and Loh (2010) use an Index of Linguistic Diversity to estima
 
 ---
 
-<!-- page 404 -->
+<!-- page 403 -->
 
 Language endangerment
 387
@@ -21399,7 +21399,7 @@ into ﬁ ve groups: (1) already extinct, (2) near extinction, (3) endangered, (4
 
 ---
 
-<!-- page 405 -->
+<!-- page 404 -->
 
 S. Musgrave
 388
@@ -21449,7 +21449,7 @@ Fishman’s claim that ‘the lion’s share’ of the world’s languages are a
 
 ---
 
-<!-- page 406 -->
+<!-- page 405 -->
 
 Language endangerment
 389
@@ -21556,7 +21556,7 @@ do focus on intergenerational transmission (or its absence), but the greater par
 
 ---
 
-<!-- page 407 -->
+<!-- page 406 -->
 
 S. Musgrave
 390
@@ -21632,7 +21632,7 @@ generations, but it is losing users.
 
 ---
 
-<!-- page 408 -->
+<!-- page 407 -->
 
 Language endangerment
 391
@@ -21695,7 +21695,7 @@ and doculect is ‘a linguistic variety as it is documented in a given resource�
 
 ---
 
-<!-- page 409 -->
+<!-- page 408 -->
 
 S. Musgrave
 392
@@ -21750,7 +21750,7 @@ sees lack of historicity and lack of autonomy (that is, being viewed as lesser v
 
 ---
 
-<!-- page 410 -->
+<!-- page 409 -->
 
 Language endangerment
 393
@@ -21801,7 +21801,7 @@ linguistics is initially set out by Himmelmann (1998) and has been developed by 
 
 ---
 
-<!-- page 411 -->
+<!-- page 410 -->
 
 S. Musgrave
 394
@@ -21853,7 +21853,7 @@ and the role of linguists in such activities.
 
 ---
 
-<!-- page 412 -->
+<!-- page 411 -->
 
 Language endangerment
 395
@@ -21915,7 +21915,7 @@ area now occupied by the city of Adelaide in Australia. This language is now bei
 
 ---
 
-<!-- page 413 -->
+<!-- page 412 -->
 
 S. Musgrave
 396
@@ -21962,7 +21962,7 @@ preservation-celp
 
 ---
 
-<!-- page 414 -->
+<!-- page 413 -->
 
 Language endangerment
 397
@@ -22022,7 +22022,7 @@ Cambridge: Cambridge University Press.
 
 ---
 
-<!-- page 415 -->
+<!-- page 414 -->
 
 S. Musgrave
 398
@@ -22081,7 +22081,7 @@ Green Book of Language Revitalization in Practice, pp. 119–28. San Diego: Acad
 
 ---
 
-<!-- page 416 -->
+<!-- page 415 -->
 
 Language endangerment
 399
@@ -22139,7 +22139,7 @@ Documentation and Description 4: 26–37.
 
 ---
 
-<!-- page 417 -->
+<!-- page 416 -->
 
 S. Musgrave
 400
@@ -22154,7 +22154,7 @@ UNESCO.
 
 ---
 
-<!-- page 418 -->
+<!-- page 417 -->
 
 401
 25
@@ -22193,7 +22193,7 @@ to encompass morphology because, for instance, what is done by syntax (e.g. word
 
 ---
 
-<!-- page 419 -->
+<!-- page 418 -->
 
 J.J. Song
 402
@@ -22246,7 +22246,7 @@ of basic word order. The skewed distribution of the six basic word orders emergi
 
 ---
 
-<!-- page 420 -->
+<!-- page 419 -->
 
 Linguistic typology and language universals
 403
@@ -22298,7 +22298,7 @@ prepositions. Logically speaking, there should also be an abundance of Verb-init
 
 ---
 
-<!-- page 421 -->
+<!-- page 420 -->
 
 J.J. Song
 404
@@ -22367,7 +22367,7 @@ student
 
 ---
 
-<!-- page 422 -->
+<!-- page 421 -->
 
 Linguistic typology and language universals
 405
@@ -22412,7 +22412,7 @@ patterns or regularities in the distribution of the types, for instance, with so
 
 ---
 
-<!-- page 423 -->
+<!-- page 422 -->
 
 J.J. Song
 406
@@ -22463,7 +22463,7 @@ may be referred to as the problem of cross-linguistic identiﬁ cation.
 
 ---
 
-<!-- page 424 -->
+<!-- page 423 -->
 
 Linguistic typology and language universals
 407
@@ -22515,7 +22515,7 @@ objects.
 
 ---
 
-<!-- page 425 -->
+<!-- page 424 -->
 
 J.J. Song
 408
@@ -22567,7 +22567,7 @@ human language is to study all languages of the world. For obvious reasons, it i
 
 ---
 
-<!-- page 426 -->
+<!-- page 425 -->
 
 Linguistic typology and language universals
 409
@@ -22622,7 +22622,7 @@ towards OV and NA.
 
 ---
 
-<!-- page 427 -->
+<!-- page 426 -->
 
 J.J. Song
 410
@@ -22675,7 +22675,7 @@ and (a) and (b) may have to be set aside. Needless to say, however, if the focus
 
 ---
 
-<!-- page 428 -->
+<!-- page 427 -->
 
 Linguistic typology and language universals
 411
@@ -22728,7 +22728,7 @@ the majority of the world’s languages. Far more frequently than not, however, 
 
 ---
 
-<!-- page 429 -->
+<!-- page 428 -->
 
 J.J. Song
 412
@@ -22783,7 +22783,7 @@ Implicational statements are also known as restricted or conditional, while non-
 
 ---
 
-<!-- page 430 -->
+<!-- page 429 -->
 
 Linguistic typology and language universals
 413
@@ -22841,7 +22841,7 @@ throw a curve ball, as it were. Thus, some linguistic typologists have argued th
 
 ---
 
-<!-- page 431 -->
+<!-- page 430 -->
 
 J.J. Song
 414
@@ -22896,7 +22896,7 @@ illustration of functional explanation, typically proposed in linguistic typolog
 
 ---
 
-<!-- page 432 -->
+<!-- page 431 -->
 
 Linguistic typology and language universals
 415
@@ -22944,7 +22944,7 @@ meaningful elements. In J.H. Greenberg (ed.) Universals of Language. Cambridge: 
 
 ---
 
-<!-- page 433 -->
+<!-- page 432 -->
 
 J.J. Song
 416
@@ -22978,7 +22978,7 @@ Stassen, L. (1985) Comparison and Universal Grammar. Oxford: Basil Blackwell.
 
 ---
 
-<!-- page 434 -->
+<!-- page 433 -->
 
 417
 26
@@ -23015,7 +23015,7 @@ translation constitutes the scandal of contemporary linguistics.
 
 ---
 
-<!-- page 435 -->
+<!-- page 434 -->
 
 A. Pym
 418
@@ -23067,7 +23067,7 @@ systematic differences between the languages. So we begin from there.
 
 ---
 
-<!-- page 436 -->
+<!-- page 435 -->
 
 Translating between languages
 419
@@ -23122,7 +23122,7 @@ effects’ that included explicitation, implicitation and compensation. This, at
 
 ---
 
-<!-- page 437 -->
+<!-- page 436 -->
 
 A. Pym
 420
@@ -23176,7 +23176,7 @@ of a pedagogical tradition that has survived through to today.
 
 ---
 
-<!-- page 438 -->
+<!-- page 437 -->
 
 Translating between languages
 421
@@ -23229,7 +23229,7 @@ fundamental kernel sentences, out of which the language builds up its elaborate 
 
 ---
 
-<!-- page 439 -->
+<!-- page 438 -->
 
 A. Pym
 422
@@ -23284,7 +23284,7 @@ between elements in the two languages. In the 1970s the Soviet translation theor
 
 ---
 
-<!-- page 440 -->
+<!-- page 439 -->
 
 Translating between languages
 423
@@ -23337,7 +23337,7 @@ operates and can be trusted, but with making translations less boring.
 
 ---
 
-<!-- page 441 -->
+<!-- page 440 -->
 
 A. Pym
 424
@@ -23388,7 +23388,7 @@ language is ﬂ atter, less structured, less ambiguous, less speciﬁ c to a giv
 
 ---
 
-<!-- page 442 -->
+<!-- page 441 -->
 
 Translating between languages
 425
@@ -23448,7 +23448,7 @@ tendencies seen on the level of universals (‘standardization’ means that tra
 
 ---
 
-<!-- page 443 -->
+<!-- page 442 -->
 
 A. Pym
 426
@@ -23501,7 +23501,7 @@ the spirit of competition had declined and long-term cooperation could brieﬂ y
 
 ---
 
-<!-- page 444 -->
+<!-- page 443 -->
 
 Translating between languages
 427
@@ -23552,7 +23552,7 @@ engine one by one, here is what happens:
 
 ---
 
-<!-- page 445 -->
+<!-- page 444 -->
 
 A. Pym
 428
@@ -23598,7 +23598,7 @@ for this might lie in the economics of English as the global lingua franca, part
 
 ---
 
-<!-- page 446 -->
+<!-- page 445 -->
 
 Translating between languages
 429
@@ -23653,7 +23653,7 @@ Darmstadt: Wissenschaftliche Buchgesellschaft.
 
 ---
 
-<!-- page 447 -->
+<!-- page 446 -->
 
 A. Pym
 430
@@ -23705,7 +23705,7 @@ de traduction, new edition revised and corrected. Paris: Didier.
 
 ---
 
-<!-- page 448 -->
+<!-- page 447 -->
 
 431
 27
@@ -23743,7 +23743,7 @@ Roman Jakobson (1896–1982), who read Saussure from the theoretical end of the 
 
 ---
 
-<!-- page 449 -->
+<!-- page 448 -->
 
 J.E. Joseph
 432
@@ -23796,7 +23796,7 @@ modernism – that we linguists are still working to accept all its consequences
 
 ---
 
-<!-- page 450 -->
+<!-- page 449 -->
 
 Structural linguistics
 433
@@ -23851,7 +23851,7 @@ as caw. With the signiﬁ ed as well: if an animal of a certain species entered 
 
 ---
 
-<!-- page 451 -->
+<!-- page 450 -->
 
 J.E. Joseph
 434
@@ -23906,7 +23906,7 @@ To a large extent, the distributional method developed by Leonard Bloomﬁ eld (
 
 ---
 
-<!-- page 452 -->
+<!-- page 451 -->
 
 Structural linguistics
 435
@@ -23959,7 +23959,7 @@ London, and to a certain extent in America. The ‘Theses Presented to the First
 
 ---
 
-<!-- page 453 -->
+<!-- page 452 -->
 
 J.E. Joseph
 436
@@ -24014,7 +24014,7 @@ Trubetzkoy wrote to Jakobson almost casually mentioning the idea. Jakobson immed
 
 ---
 
-<!-- page 454 -->
+<!-- page 453 -->
 
 Structural linguistics
 437
@@ -24069,7 +24069,7 @@ favour of the search for underlying organizing principles which operate with per
 
 ---
 
-<!-- page 455 -->
+<!-- page 454 -->
 
 J.E. Joseph
 438
@@ -24122,7 +24122,7 @@ usually reduced phonetically. An example is the English verb will, which changed
 
 ---
 
-<!-- page 456 -->
+<!-- page 455 -->
 
 Structural linguistics
 439
@@ -24175,7 +24175,7 @@ Two of the lecturers whom he hired were however more devoted Saussureans: ﬁ rs
 
 ---
 
-<!-- page 457 -->
+<!-- page 456 -->
 
 J.E. Joseph
 440
@@ -24230,7 +24230,7 @@ form, as the minimal sound-unit capable of distinguishing meaning in a language.
 
 ---
 
-<!-- page 458 -->
+<!-- page 457 -->
 
 Structural linguistics
 441
@@ -24285,7 +24285,7 @@ complex phenomenon, and that its analysis was bound to reﬂ ect and embody that
 
 ---
 
-<!-- page 459 -->
+<!-- page 458 -->
 
 J.E. Joseph
 442
@@ -24340,7 +24340,7 @@ linguistic work that no longer clings to the commitments that deﬁ ned a Chomsk
 
 ---
 
-<!-- page 460 -->
+<!-- page 459 -->
 
 Structural linguistics
 443
@@ -24393,7 +24393,7 @@ root of many ‘functionalist’ developments in twentieth-century linguistics, 
 
 ---
 
-<!-- page 461 -->
+<!-- page 460 -->
 
 J.E. Joseph
 444
@@ -24443,7 +24443,7 @@ Engler (1975); Hymes and Fought (1981); Joseph (2002, 2012); Joseph et al. (2001
 
 ---
 
-<!-- page 462 -->
+<!-- page 461 -->
 
 Structural linguistics
 445
@@ -24501,7 +24501,7 @@ Leipzig: B.G. Teubner.
 
 ---
 
-<!-- page 463 -->
+<!-- page 462 -->
 
 J.E. Joseph
 446
@@ -24521,7 +24521,7 @@ J.B. Carroll. Cambridge: MIT Press. (2nd edition, ed. J.B. Carroll, S.C. Levinso
 
 ---
 
-<!-- page 464 -->
+<!-- page 463 -->
 
 447
 28
@@ -24565,7 +24565,7 @@ the following questions, which bear obvious parallels with those of Tinbergen.
 
 ---
 
-<!-- page 465 -->
+<!-- page 464 -->
 
 C. Boeckx
 448
@@ -24627,7 +24627,7 @@ human populations.
 
 ---
 
-<!-- page 466 -->
+<!-- page 465 -->
 
 Biolinguistics
 449
@@ -24682,7 +24682,7 @@ sometimes been called, not without reason, ‘exuberant nativism’). In additio
 
 ---
 
-<!-- page 467 -->
+<!-- page 466 -->
 
 C. Boeckx
 450
@@ -24735,7 +24735,7 @@ tendency among scientists to believe that they knew what language is, even if th
 
 ---
 
-<!-- page 468 -->
+<!-- page 467 -->
 
 Biolinguistics
 451
@@ -24787,7 +24787,7 @@ brain does it, not where it does it.
 
 ---
 
-<!-- page 469 -->
+<!-- page 468 -->
 
 C. Boeckx
 452
@@ -24862,7 +24862,7 @@ have been reduced to evolutionary pressures (evolutionary psychology) or design
 
 ---
 
-<!-- page 470 -->
+<!-- page 469 -->
 
 Biolinguistics
 453
@@ -24913,7 +24913,7 @@ Noam Chomsky. Cambridge: Harvard University Press.
 
 ---
 
-<!-- page 471 -->
+<!-- page 470 -->
 
 C. Boeckx
 454
@@ -24928,7 +24928,7 @@ Walker, E. (ed.) (1978) Explorations in the Biology of Language. Montgomery: Bra
 
 ---
 
-<!-- page 472 -->
+<!-- page 471 -->
 
 455
 29
@@ -24966,7 +24966,7 @@ years, cognitive linguists tended to emphasize their polemical opposition to dom
 
 ---
 
-<!-- page 473 -->
+<!-- page 472 -->
 
 J.R. Taylor
 456
@@ -25017,7 +25017,7 @@ in light of these more general cognitive properties. These aspects of the cognit
 
 ---
 
-<!-- page 474 -->
+<!-- page 473 -->
 
 Cognitive linguistics
 457
@@ -25068,7 +25068,7 @@ this can be sought, admittedly post hoc, in well-established facts about cogniti
 
 ---
 
-<!-- page 475 -->
+<!-- page 474 -->
 
 J.R. Taylor
 458
@@ -25121,7 +25121,7 @@ phenomena (see below §29.4).
 
 ---
 
-<!-- page 476 -->
+<!-- page 475 -->
 
 Cognitive linguistics
 459
@@ -25173,7 +25173,7 @@ to situationally embedded utterances, in interaction, to be sure, with general l
 
 ---
 
-<!-- page 477 -->
+<!-- page 476 -->
 
 J.R. Taylor
 460
@@ -25226,7 +25226,7 @@ network of idiomatic and metaphorical uses than the other verbs; moreover, the i
 
 ---
 
-<!-- page 478 -->
+<!-- page 477 -->
 
 Cognitive linguistics
 461
@@ -25275,7 +25275,7 @@ some veriﬁ able state of affairs in the world. Lakoff, on the contrary, pursue
 
 ---
 
-<!-- page 479 -->
+<!-- page 478 -->
 
 J.R. Taylor
 462
@@ -25330,7 +25330,7 @@ modiﬁ cation, partly in response to critical evaluations and nuanced with the 
 
 ---
 
-<!-- page 480 -->
+<!-- page 479 -->
 
 Cognitive linguistics
 463
@@ -25383,7 +25383,7 @@ be used for V–ing Ns’). The schematic unit can sanction an open-ended set of
 
 ---
 
-<!-- page 481 -->
+<!-- page 480 -->
 
 J.R. Taylor
 464
@@ -25436,7 +25436,7 @@ express the speaker’s surprise at such a situation, and requests an explanatio
 
 ---
 
-<!-- page 482 -->
+<!-- page 481 -->
 
 Cognitive linguistics
 465
@@ -25489,7 +25489,7 @@ repeated use, a structure becomes entrenched, or automated. It can be stored and
 
 ---
 
-<!-- page 483 -->
+<!-- page 482 -->
 
 J.R. Taylor
 466
@@ -25544,7 +25544,7 @@ inextricably intertwined.
 
 ---
 
-<!-- page 484 -->
+<!-- page 483 -->
 
 Cognitive linguistics
 467
@@ -25599,7 +25599,7 @@ individuals, language is also a social, cooperative endeavour. In order to be ab
 
 ---
 
-<!-- page 485 -->
+<!-- page 484 -->
 
 J.R. Taylor
 468
@@ -25655,7 +25655,7 @@ Talmy, L. (1988) Force dynamics in language and cognition. Cognitive Science 12:
 
 ---
 
-<!-- page 486 -->
+<!-- page 485 -->
 
 Cognitive linguistics
 469
@@ -25668,7 +25668,7 @@ Cambridge: Harvard University Press.
 
 ---
 
-<!-- page 487 -->
+<!-- page 486 -->
 
 470
 30
@@ -25706,7 +25706,7 @@ only explanations from within the language system.
 
 ---
 
-<!-- page 488 -->
+<!-- page 487 -->
 
 Functional linguistics
 471
@@ -25757,7 +25757,7 @@ clause being seen as gradually growing more and more ‘dynamic’ as it advance
 
 ---
 
-<!-- page 489 -->
+<!-- page 488 -->
 
 J.L. Mackenzie
 472
@@ -25812,7 +25812,7 @@ little impact on or interaction with the rest of functional linguistics, which h
 
 ---
 
-<!-- page 490 -->
+<!-- page 489 -->
 
 Functional linguistics
 473
@@ -25865,7 +25865,7 @@ AdvC order; (b) discourse grounding, which favours AdvC-MC order; (c) semantic t
 
 ---
 
-<!-- page 491 -->
+<!-- page 490 -->
 
 J.L. Mackenzie
 474
@@ -25920,7 +25920,7 @@ deﬁ nite article is the norm (dance a night away is infrequent), that away is 
 
 ---
 
-<!-- page 492 -->
+<!-- page 491 -->
 
 Functional linguistics
 475
@@ -25973,7 +25973,7 @@ and addressee can be assumed, as in (1):
 
 ---
 
-<!-- page 493 -->
+<!-- page 492 -->
 
 J.L. Mackenzie
 476
@@ -26023,7 +26023,7 @@ coherence constraints.
 
 ---
 
-<!-- page 494 -->
+<!-- page 493 -->
 
 Functional linguistics
 477
@@ -26083,7 +26083,7 @@ extent been transferred to databases such as, notably, that underlying the World
 
 ---
 
-<!-- page 495 -->
+<!-- page 494 -->
 
 J.L. Mackenzie
 478
@@ -26138,7 +26138,7 @@ weighted and interpreted, for example with respect to the ‘cue validity’ of 
 
 ---
 
-<!-- page 496 -->
+<!-- page 495 -->
 
 Functional linguistics
 479
@@ -26187,7 +26187,7 @@ the system of choices available to the language user. This system is structured 
 
 ---
 
-<!-- page 497 -->
+<!-- page 496 -->
 
 J.L. Mackenzie
 480
@@ -26237,7 +26237,7 @@ contribute to theoretical linguistics rather than aiming for practical applicati
 
 ---
 
-<!-- page 498 -->
+<!-- page 497 -->
 
 Functional linguistics
 481
@@ -26289,7 +26289,7 @@ disinterested empirical research. On the assumption that it is the task of lingu
 
 ---
 
-<!-- page 499 -->
+<!-- page 498 -->
 
 J.L. Mackenzie
 482
@@ -26338,7 +26338,7 @@ and the distinction between interpersonal and representational meaning are of mu
 
 ---
 
-<!-- page 500 -->
+<!-- page 499 -->
 
 Functional linguistics
 483
@@ -26392,7 +26392,7 @@ Haspelmath, M. (2000) Why can’t we talk to each other? Lingua 110: 235–55.
 
 ---
 
-<!-- page 501 -->
+<!-- page 500 -->
 
 J.L. Mackenzie
 484
@@ -26427,7 +26427,7 @@ Cambridge University Press.
 
 ---
 
-<!-- page 502 -->
+<!-- page 501 -->
 
 485
 31
@@ -26465,7 +26465,7 @@ to produce meaning representations corresponding to different possible analyses.
 
 ---
 
-<!-- page 503 -->
+<!-- page 502 -->
 
 A. Copestake
 486
@@ -26520,7 +26520,7 @@ and mathematic terms. However, the attempt to use symbolic language-independent
 
 ---
 
-<!-- page 504 -->
+<!-- page 503 -->
 
 Computational linguistics
 487
@@ -26575,7 +26575,7 @@ provide speciﬁ c responses to certain types of question.
 
 ---
 
-<!-- page 505 -->
+<!-- page 504 -->
 
 A. Copestake
 488
@@ -26628,7 +26628,7 @@ the entire corpus to agree with the known ratings.
 
 ---
 
-<!-- page 506 -->
+<!-- page 505 -->
 
 Computational linguistics
 489
@@ -26683,7 +26683,7 @@ is reasonably close to the test data. For instance, a sentiment classiﬁ er tra
 
 ---
 
-<!-- page 507 -->
+<!-- page 506 -->
 
 A. Copestake
 490
@@ -26735,7 +26735,7 @@ of a computational model.
 
 ---
 
-<!-- page 508 -->
+<!-- page 507 -->
 
 Computational linguistics
 491
@@ -26789,7 +26789,7 @@ point is sensitive to both preceding and following contexts. For instance, this 
 
 ---
 
-<!-- page 509 -->
+<!-- page 508 -->
 
 A. Copestake
 492
@@ -26840,7 +26840,7 @@ For instance, in the context of a talk on computational linguistics, it would be
 
 ---
 
-<!-- page 510 -->
+<!-- page 509 -->
 
 Computational linguistics
 493
@@ -26890,7 +26890,7 @@ personal pronoun VM0 modal auxiliary verb
 
 ---
 
-<!-- page 511 -->
+<!-- page 510 -->
 
 A. Copestake
 494
@@ -26939,7 +26939,7 @@ to those in standard tagsets.
 
 ---
 
-<!-- page 512 -->
+<!-- page 511 -->
 
 Computational linguistics
 495
@@ -26994,7 +26994,7 @@ examples of unusual word uses.
 
 ---
 
-<!-- page 513 -->
+<!-- page 512 -->
 
 A. Copestake
 496
@@ -27045,7 +27045,7 @@ simplest type of distributional model, where the context corresponds to the word
 
 ---
 
-<!-- page 514 -->
+<!-- page 513 -->
 
 Computational linguistics
 497
@@ -27120,7 +27120,7 @@ elephant
 
 ---
 
-<!-- page 515 -->
+<!-- page 514 -->
 
 A. Copestake
 498
@@ -27173,7 +27173,7 @@ applications and are more robust to changes in domain. Furthermore, in both LFG 
 
 ---
 
-<!-- page 516 -->
+<!-- page 515 -->
 
 Computational linguistics
 499
@@ -27224,7 +27224,7 @@ models of human language.
 
 ---
 
-<!-- page 517 -->
+<!-- page 516 -->
 
 A. Copestake
 500
@@ -27279,7 +27279,7 @@ Language Processing (EMNLP), pp. 79–86.
 
 ---
 
-<!-- page 518 -->
+<!-- page 517 -->
 
 Computational linguistics
 501
@@ -27289,7 +27289,7 @@ Edinburgh University Press, 1986.
 
 ---
 
-<!-- page 519 -->
+<!-- page 518 -->
 
 502
 32
@@ -27327,7 +27327,7 @@ formalist approach. Without going into too much detail, the linguistics espoused
 
 ---
 
-<!-- page 520 -->
+<!-- page 519 -->
 
 Corpus linguistics
 503
@@ -27379,7 +27379,7 @@ In this case, the ﬁ rst step for the researcher is to build the corpus on whic
 
 ---
 
-<!-- page 521 -->
+<!-- page 520 -->
 
 A. Hardie
 504
@@ -27432,7 +27432,7 @@ interest. But we rarely use the whole text as the unit of analysis. Most of the 
 
 ---
 
-<!-- page 522 -->
+<!-- page 521 -->
 
 Corpus linguistics
 505
@@ -27485,7 +27485,7 @@ of different types of data within a corpus. A corpus of general English, for ins
 
 ---
 
-<!-- page 523 -->
+<!-- page 522 -->
 
 A. Hardie
 506
@@ -27538,7 +27538,7 @@ back to its source. If we are examining a series of examples extracted by search
 
 ---
 
-<!-- page 524 -->
+<!-- page 523 -->
 
 Corpus linguistics
 507
@@ -27591,7 +27591,7 @@ ontology, or way of dividing up all possible meanings into various domains or co
 
 ---
 
-<!-- page 525 -->
+<!-- page 524 -->
 
 A. Hardie
 508
@@ -27646,7 +27646,7 @@ next section – can be undertaken at levels of analysis higher than the orthogr
 
 ---
 
-<!-- page 526 -->
+<!-- page 525 -->
 
 Corpus linguistics
 509
@@ -27698,7 +27698,7 @@ data to the corpus server, while others restrict users to a static set of availa
 
 ---
 
-<!-- page 527 -->
+<!-- page 526 -->
 
 A. Hardie
 510
@@ -27751,7 +27751,7 @@ personal pronouns I and you are likely to top the list.
 
 ---
 
-<!-- page 528 -->
+<!-- page 527 -->
 
 Corpus linguistics
 511
@@ -27802,7 +27802,7 @@ procedure to identify on a quantitative basis the most important differences bet
 
 ---
 
-<!-- page 529 -->
+<!-- page 528 -->
 
 A. Hardie
 512
@@ -27855,7 +27855,7 @@ key items analysis, except that we are comparing the vicinity of the node to the
 
 ---
 
-<!-- page 530 -->
+<!-- page 529 -->
 
 Corpus linguistics
 513
@@ -27908,7 +27908,7 @@ discourse analysis; applied linguistics topics including the study of learner la
 
 ---
 
-<!-- page 531 -->
+<!-- page 530 -->
 
 A. Hardie
 514
@@ -27961,7 +27961,7 @@ Cambridge University Press.
 
 ---
 
-<!-- page 532 -->
+<!-- page 531 -->
 
 Corpus linguistics
 515
@@ -27973,7 +27973,7 @@ Sinclair, J. (1991) Corpus, Concordance, Collocation. Oxford: Oxford University 
 
 ---
 
-<!-- page 533 -->
+<!-- page 532 -->
 
 516
 33
@@ -28011,7 +28011,7 @@ map of language sciences and research on language in the twenty-ﬁ rst century.
 
 ---
 
-<!-- page 534 -->
+<!-- page 533 -->
 
 Linguistics and philosophy
 517
@@ -28062,7 +28062,7 @@ distinguish the logical from what is attached to it in the way of ideas and feel
 
 ---
 
-<!-- page 535 -->
+<!-- page 534 -->
 
 K.M. Jaszczolt
 518
@@ -28116,7 +28116,7 @@ using classical quantiﬁ ers of predicate logic, or (1b), using generalised qua
 
 ---
 
-<!-- page 536 -->
+<!-- page 535 -->
 
 Linguistics and philosophy
 519
@@ -28161,7 +28161,7 @@ this intention is successful. Then the reporter utters (2c).
 
 ---
 
-<!-- page 537 -->
+<!-- page 536 -->
 
 K.M. Jaszczolt
 520
@@ -28210,7 +28210,7 @@ with quantiﬁ ers and logical connectives such as (7) or (8) demonstrate that i
 
 ---
 
-<!-- page 538 -->
+<!-- page 537 -->
 
 Linguistics and philosophy
 521
@@ -28262,7 +28262,7 @@ attainable because the ﬂ exibility of meaning is reﬂ ected not only in the n
 
 ---
 
-<!-- page 539 -->
+<!-- page 538 -->
 
 K.M. Jaszczolt
 522
@@ -28314,7 +28314,7 @@ anaphoric relations marked by indices) already reveals problems. Its metalinguis
 
 ---
 
-<!-- page 540 -->
+<!-- page 539 -->
 
 Linguistics and philosophy
 523
@@ -28361,7 +28361,7 @@ And more generally:
 
 ---
 
-<!-- page 541 -->
+<!-- page 540 -->
 
 K.M. Jaszczolt
 524
@@ -28413,7 +28413,7 @@ called preparatory conditions. Next, there is also the essential condition where
 
 ---
 
-<!-- page 542 -->
+<!-- page 541 -->
 
 Linguistics and philosophy
 525
@@ -28464,7 +28464,7 @@ I promise not to wear stiletto heels.
 
 ---
 
-<!-- page 543 -->
+<!-- page 542 -->
 
 K.M. Jaszczolt
 526
@@ -28517,7 +28517,7 @@ speaker’s intentions.
 
 ---
 
-<!-- page 544 -->
+<!-- page 543 -->
 
 Linguistics and philosophy
 527
@@ -28570,7 +28570,7 @@ to a small, highly restricted set, one is a minimalist about meaning and searche
 
 ---
 
-<!-- page 545 -->
+<!-- page 544 -->
 
 K.M. Jaszczolt
 528
@@ -28623,7 +28623,7 @@ as some do, that scientiﬁ c disciplines and various areas of philosophical stu
 
 ---
 
-<!-- page 546 -->
+<!-- page 545 -->
 
 Linguistics and philosophy
 529
@@ -28674,7 +28674,7 @@ Donnellan, K.S. (1966) Reference and deﬁ nite descriptions. Philosophical Revi
 
 ---
 
-<!-- page 547 -->
+<!-- page 546 -->
 
 K.M. Jaszczolt
 530
@@ -28732,7 +28732,7 @@ in Pragmatics, pp. 165–89. Berlin: Mouton de Gruyter.
 
 ---
 
-<!-- page 548 -->
+<!-- page 547 -->
 
 Linguistics and philosophy
 531
@@ -28779,7 +28779,7 @@ Blackwell.
 
 ---
 
-<!-- page 549 -->
+<!-- page 548 -->
 
 532
 34
@@ -28817,7 +28817,7 @@ the scope of this chapter.
 
 ---
 
-<!-- page 550 -->
+<!-- page 549 -->
 
 Linguistics and the law
 533
@@ -28868,7 +28868,7 @@ local bye-laws, or even legislation, governing noise nuisance. As our morning co
 
 ---
 
-<!-- page 551 -->
+<!-- page 550 -->
 
 K. Haworth
 534
@@ -28923,7 +28923,7 @@ professionals, and therefore to be understood and interpreted within that profes
 
 ---
 
-<!-- page 552 -->
+<!-- page 551 -->
 
 Linguistics and the law
 535
@@ -28975,7 +28975,7 @@ They are thus ideally suited to the micro-approach of Conversation Analysis (see
 
 ---
 
-<!-- page 553 -->
+<!-- page 552 -->
 
 K. Haworth
 536
@@ -29029,7 +29029,7 @@ interview discourse make it a highly unusual, and linguistically fascinating, di
 
 ---
 
-<!-- page 554 -->
+<!-- page 553 -->
 
 Linguistics and the law
 537
@@ -29083,7 +29083,7 @@ from the ‘micro’ sense of individual turns between lawyer and witness being 
 
 ---
 
-<!-- page 555 -->
+<!-- page 554 -->
 
 K. Haworth
 538
@@ -29137,7 +29137,7 @@ designed to protect. Thus far, however, we have assumed that the lay participant
 
 ---
 
-<!-- page 556 -->
+<!-- page 555 -->
 
 Linguistics and the law
 539
@@ -29188,7 +29188,7 @@ outside the experience and knowledge of a judge or jury’ (R v Turner,4 a UK cr
 
 ---
 
-<!-- page 557 -->
+<!-- page 556 -->
 
 K. Haworth
 540
@@ -29241,7 +29241,7 @@ Svartvik’s. Recent examples include terrorism offences where linguistic analys
 
 ---
 
-<!-- page 558 -->
+<!-- page 557 -->
 
 Linguistics and the law
 541
@@ -29292,7 +29292,7 @@ brother, it is more likely to have been taken, and indeed intended, as a threat.
 
 ---
 
-<!-- page 559 -->
+<!-- page 558 -->
 
 K. Haworth
 542
@@ -29345,7 +29345,7 @@ through the use of marks or brands, and that any investment in that mark (in the
 
 ---
 
-<!-- page 560 -->
+<!-- page 559 -->
 
 Linguistics and the law
 543
@@ -29398,7 +29398,7 @@ demonstrate the need to bring our research into practice. Much of the work menti
 
 ---
 
-<!-- page 561 -->
+<!-- page 560 -->
 
 K. Haworth
 544
@@ -29451,7 +29451,7 @@ pp. 365–77. Abingdon: Routledge.
 
 ---
 
-<!-- page 562 -->
+<!-- page 561 -->
 
 Linguistics and the law
 545
@@ -29485,7 +29485,7 @@ Cambridge University Press.
 
 ---
 
-<!-- page 563 -->
+<!-- page 562 -->
 
 546
 35
@@ -29521,7 +29521,7 @@ you are a linguist who studies them!
 
 ---
 
-<!-- page 564 -->
+<!-- page 563 -->
 
 Linguistics and politics
 547
@@ -29574,7 +29574,7 @@ Goffman and Marvin Minsky, for different reasons. Goffman studied social institu
 
 ---
 
-<!-- page 565 -->
+<!-- page 564 -->
 
 G. Lakoff
 548
@@ -29627,7 +29627,7 @@ from the inferences of the primary metaphors and cultural frames.
 
 ---
 
-<!-- page 566 -->
+<!-- page 565 -->
 
 Linguistics and politics
 549
@@ -29680,7 +29680,7 @@ I reasoned as follows:
 
 ---
 
-<!-- page 567 -->
+<!-- page 566 -->
 
 G. Lakoff
 550
@@ -29730,7 +29730,7 @@ models of morality.
 
 ---
 
-<!-- page 568 -->
+<!-- page 567 -->
 
 Linguistics and politics
 551
@@ -29782,7 +29782,7 @@ to undermine progressive positions.
 
 ---
 
-<!-- page 569 -->
+<!-- page 568 -->
 
 G. Lakoff
 552
@@ -29829,7 +29829,7 @@ throughout society, making such questions political.
 
 ---
 
-<!-- page 570 -->
+<!-- page 569 -->
 
 Linguistics and politics
 553
@@ -29878,7 +29878,7 @@ Be moral: Know right from wrong and act accordingly
 
 ---
 
-<!-- page 571 -->
+<!-- page 570 -->
 
 G. Lakoff
 554
@@ -29955,7 +29955,7 @@ children he raises – must be strong and disciplined, and dependency on others 
 
 ---
 
-<!-- page 572 -->
+<!-- page 571 -->
 
 Linguistics and politics
 555
@@ -30004,7 +30004,7 @@ justice system, building codes and inspectors, public parks and recreational act
 
 ---
 
-<!-- page 573 -->
+<!-- page 572 -->
 
 G. Lakoff
 556
@@ -30057,7 +30057,7 @@ lower on the moral hierarchy, and deserve to be poor.
 
 ---
 
-<!-- page 574 -->
+<!-- page 573 -->
 
 Linguistics and politics
 557
@@ -30110,7 +30110,7 @@ The generalizations are overwhelming. Extreme conservatives – who are not bi-c
 
 ---
 
-<!-- page 575 -->
+<!-- page 574 -->
 
 G. Lakoff
 558
@@ -30162,7 +30162,7 @@ tend to teach an inadequate view of reason – reason that lacks an understandin
 
 ---
 
-<!-- page 576 -->
+<!-- page 575 -->
 
 Linguistics and politics
 559
@@ -30207,7 +30207,7 @@ Lakoff, G. (2008) The Political Mind. New York: Viking/Penguin.
 
 ---
 
-<!-- page 577 -->
+<!-- page 576 -->
 
 G. Lakoff
 560
@@ -30229,7 +30229,7 @@ Wehling, E. (2013) The US under joint custody. UC Berkeley dissertation.
 
 ---
 
-<!-- page 578 -->
+<!-- page 577 -->
 
 561
 36
@@ -30267,7 +30267,7 @@ meaningful usage.
 
 ---
 
-<!-- page 579 -->
+<!-- page 578 -->
 
 A. Deumert
 562
@@ -30320,7 +30320,7 @@ voice (see Shankar and Cavanaugh (2012) for a review of language and materiality
 
 ---
 
-<!-- page 580 -->
+<!-- page 579 -->
 
 Linguistics and social media
 563
@@ -30375,7 +30375,7 @@ convenience of their own home, almost half use their phone to go online, and the
 
 ---
 
-<!-- page 581 -->
+<!-- page 580 -->
 
 A. Deumert
 564
@@ -30473,7 +30473,7 @@ invisible online. This suggests that the digital space constitutes a linguistic 
 
 ---
 
-<!-- page 582 -->
+<!-- page 581 -->
 
 Linguistics and social media
 565
@@ -30526,7 +30526,7 @@ sent about forty text messages a day, teenagers more than 100. Similarly, textua
 
 ---
 
-<!-- page 583 -->
+<!-- page 582 -->
 
 A. Deumert
 566
@@ -30579,7 +30579,7 @@ as playful non-standard spellings (nawoo, painfulooo)?
 
 ---
 
-<!-- page 584 -->
+<!-- page 583 -->
 
 Linguistics and social media
 567
@@ -30631,7 +30631,7 @@ system,’ my emphasis).
 
 ---
 
-<!-- page 585 -->
+<!-- page 584 -->
 
 A. Deumert
 568
@@ -30684,7 +30684,7 @@ reality – there was none. Sherry Turkle’s (1995) book Life on the Screen cap
 
 ---
 
-<!-- page 586 -->
+<!-- page 585 -->
 
 Linguistics and social media
 569
@@ -30737,7 +30737,7 @@ random board /b/ on 4chan.org. The site was founded in the same year as MySpace 
 
 ---
 
-<!-- page 587 -->
+<!-- page 586 -->
 
 A. Deumert
 570
@@ -30798,7 +30798,7 @@ practice is to be accepted as a legitimate member on a particular site, such as 
 
 ---
 
-<!-- page 588 -->
+<!-- page 587 -->
 
 Linguistics and social media
 571
@@ -30850,7 +30850,7 @@ week-onlinesocial-media/UPI-61961372562999.
 
 ---
 
-<!-- page 589 -->
+<!-- page 588 -->
 
 A. Deumert
 572
@@ -30906,7 +30906,7 @@ Social, and Cross-Cultural Perspectives, pp. 147–70. Amsterdam: John Benjamins
 
 ---
 
-<!-- page 590 -->
+<!-- page 589 -->
 
 Linguistics and social media
 573
@@ -30943,7 +30943,7 @@ Turkle, S. (1995) Life on the Screen. Identity in the Age of the Internet. New Y
 
 ---
 
-<!-- page 591 -->
+<!-- page 590 -->
 
 574
 Index
@@ -31022,7 +31022,7 @@ articulation 17, 18, 27, 28, 36, 49, 53, 55,
 
 ---
 
-<!-- page 592 -->
+<!-- page 591 -->
 
 Index
 575
@@ -31123,7 +31123,7 @@ category 3, 20, 21, 22, 25, 44, 49, 50, 51, 67,
 
 ---
 
-<!-- page 593 -->
+<!-- page 592 -->
 
 Index
 576
@@ -31226,7 +31226,7 @@ Comrie, B. 112, 117, 359, 363, 415, 416,
 
 ---
 
-<!-- page 594 -->
+<!-- page 593 -->
 
 Index
 577
@@ -31329,7 +31329,7 @@ court (legal) 361, 533, 537, 538-544
 
 ---
 
-<!-- page 595 -->
+<!-- page 594 -->
 
 Index
 578
@@ -31431,7 +31431,7 @@ distributional semantics 169, 181-185,
 
 ---
 
-<!-- page 596 -->
+<!-- page 595 -->
 
 Index
 579
@@ -31533,7 +31533,7 @@ events 11, 12, 19, 21, 22, 23, 82-86, 98, 101,
 
 ---
 
-<!-- page 597 -->
+<!-- page 596 -->
 
 Index
 580
@@ -31634,7 +31634,7 @@ generalization 48, 93, 98, 103, 113, 146, 164,
 
 ---
 
-<!-- page 598 -->
+<!-- page 597 -->
 
 Index
 581
@@ -31736,7 +31736,7 @@ hyponymy 156, 185, 189, 197, 200, 201,
 
 ---
 
-<!-- page 599 -->
+<!-- page 598 -->
 
 Index
 582
@@ -31839,7 +31839,7 @@ Irish 57, 58, 61, 127, 132, 133
 
 ---
 
-<!-- page 600 -->
+<!-- page 599 -->
 
 Index
 583
@@ -31939,7 +31939,7 @@ linguistic area 378, 409
 
 ---
 
-<!-- page 601 -->
+<!-- page 600 -->
 
 Index
 584
@@ -32041,7 +32041,7 @@ Miyake, A. 332, 339, 342
 
 ---
 
-<!-- page 602 -->
+<!-- page 601 -->
 
 Index
 585
@@ -32142,7 +32142,7 @@ optimality theory 83, 98, 103, 210, 452, 473
 
 ---
 
-<!-- page 603 -->
+<!-- page 602 -->
 
 Index
 586
@@ -32244,7 +32244,7 @@ phrase 2, 3, 4, 9, 12, 30, 40, 43, 66, 110,
 
 ---
 
-<!-- page 604 -->
+<!-- page 603 -->
 
 Index
 587
@@ -32347,7 +32347,7 @@ prosody 12, 63, 67, 71, 80, 81, 95, 102,
 
 ---
 
-<!-- page 605 -->
+<!-- page 604 -->
 
 Index
 588
@@ -32448,7 +32448,7 @@ Robinson, P. 332, 339, 342
 
 ---
 
-<!-- page 606 -->
+<!-- page 605 -->
 
 Index
 589
@@ -32550,7 +32550,7 @@ sociolinguistics 6, 7, 208, 211, 214, 215, 238,
 
 ---
 
-<!-- page 607 -->
+<!-- page 606 -->
 
 Index
 590
@@ -32652,7 +32652,7 @@ tense (time) 8, 108, 110, 112, 113, 119, 126,
 
 ---
 
-<!-- page 608 -->
+<!-- page 607 -->
 
 Index
 591
@@ -32754,7 +32754,7 @@ utterance 5, 8, 9, 10, 19, 25, 26, 33, 347, 35,
 
 ---
 
-<!-- page 609 -->
+<!-- page 608 -->
 
 Index
 592

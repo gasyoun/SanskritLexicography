@@ -6,19 +6,19 @@
 
 ---
 
-<!-- page 2 -->
+<!-- page 1 -->
 
 Systematic Lexicography
 
 ---
 
-<!-- page 3 -->
+<!-- page 2 -->
 
 This page intentionally left blank
 
 ---
 
-<!-- page 4 -->
+<!-- page 3 -->
 
 1
 Systematic Lexicography
@@ -27,7 +27,7 @@ translated by Kevin Windle
 
 ---
 
-<!-- page 5 -->
+<!-- page 4 -->
 
 1
 Great Clarendon Street, Oxford ox2 6dp
@@ -83,7 +83,7 @@ First published in paperback
 
 ---
 
-<!-- page 6 -->
+<!-- page 5 -->
 
 Acknowledgements
 Chapter 1, ‘English Synonyms and a Dictionary of Synonyms’, was ﬁrst pub-
@@ -127,7 +127,7 @@ Chapter 6, ‘Khotet¹ [to want] and its Synonyms: Notes about Words’, was ﬁ
 
 ---
 
-<!-- page 7 -->
+<!-- page 6 -->
 
 vi
 Acknowledgements
@@ -159,7 +159,7 @@ Voprosy kibernetiki. Iazyk logiki i logika iazyka (Moscow, 1990).
 
 ---
 
-<!-- page 8 -->
+<!-- page 7 -->
 
 Contents
 Translator’s Note
@@ -209,7 +209,7 @@ Index of Names
 
 ---
 
-<!-- page 9 -->
+<!-- page 8 -->
 
 Translator’s Note
 This translation is based on the Russian text published in J. D. Apresjan, Izbran-
@@ -251,7 +251,7 @@ Readers should note that the author’s terminology does not always coincide wit
 
 ---
 
-<!-- page 10 -->
+<!-- page 9 -->
 
 Translator¹s Note
 ix
@@ -286,7 +286,7 @@ having provided an English introduction to the work at its request.
 
 ---
 
-<!-- page 11 -->
+<!-- page 10 -->
 
 1 These apply particularly to the dictionary entries for the verbs byt¹ and vyiti in Chapters 9 and 10.
 Abbreviations1
@@ -369,7 +369,7 @@ verb
 
 ---
 
-<!-- page 12 -->
+<!-- page 11 -->
 
 Introduction
 This book is a collection of articles, yet there is a unity to it. Throughout the
@@ -411,7 +411,7 @@ invention the noun telephone is used in the singular, although quantity is abso-
 
 ---
 
-<!-- page 13 -->
+<!-- page 12 -->
 
 xii
 Introduction
@@ -461,7 +461,7 @@ knigi would be odd or at least non-idiomatic.
 
 ---
 
-<!-- page 14 -->
+<!-- page 13 -->
 
 Introduction
 xiii
@@ -510,7 +510,7 @@ tain rules of grammar and other suﬃciently general linguistic rules we have to
 
 ---
 
-<!-- page 15 -->
+<!-- page 14 -->
 
 xiv
 Introduction
@@ -560,7 +560,7 @@ the undoubtedly true information by phonically accentuating it.
 
 ---
 
-<!-- page 16 -->
+<!-- page 15 -->
 
 Introduction
 xv
@@ -609,7 +609,7 @@ word are apt to ‘grow’ into one another and impart to the neighbouring sense
 
 ---
 
-<!-- page 17 -->
+<!-- page 16 -->
 
 xvi
 Introduction
@@ -658,7 +658,7 @@ The above distinctions are mirrored in the prosodic properties of the two
 
 ---
 
-<!-- page 18 -->
+<!-- page 17 -->
 
 Introduction
 xvii
@@ -706,7 +706,7 @@ As can be seen from this account, traditional grammars and dictionaries at
 
 ---
 
-<!-- page 19 -->
+<!-- page 18 -->
 
 xviii
 Introduction
@@ -727,20 +727,20 @@ book has a chance of ﬁnding its readership.
 
 ---
 
-<!-- page 20 -->
+<!-- page 19 -->
 
 Part I
 PROBLEMS OF SYNONYMY
 
 ---
 
-<!-- page 21 -->
+<!-- page 20 -->
 
 This page intentionally left blank
 
 ---
 
-<!-- page 22 -->
+<!-- page 21 -->
 
 1
 English Synonyms and a Dictionary
@@ -778,7 +778,7 @@ First, this dictionary is designed above all to foster an active command of
 
 ---
 
-<!-- page 23 -->
+<!-- page 22 -->
 
 4
 Problems of Synonymy
@@ -826,7 +826,7 @@ scription of their semantic similarities and distinctions. A description is full
 
 ---
 
-<!-- page 24 -->
+<!-- page 23 -->
 
 English Synonyms
 5
@@ -876,7 +876,7 @@ linguistic science is his hobby = the science of language is his hobby). It is n
 
 ---
 
-<!-- page 25 -->
+<!-- page 24 -->
 
 6
 Problems of Synonymy
@@ -926,7 +926,7 @@ Clearly, in a dictionary of synonyms aimed at fostering an active command
 
 ---
 
-<!-- page 26 -->
+<!-- page 25 -->
 
 English Synonyms
 7
@@ -974,7 +974,7 @@ Here, in a ﬁrst approximation, is the complex of ideas expressed by the verb
 
 ---
 
-<!-- page 27 -->
+<!-- page 26 -->
 
 8
 Problems of Synonymy
@@ -1024,7 +1024,7 @@ of verbs such as prekratit¹sia [to cease] and to stop. The above formula is not
 
 ---
 
-<!-- page 28 -->
+<!-- page 27 -->
 
 English Synonyms
 9
@@ -1074,7 +1074,7 @@ choice of an object corresponding to another object or to a certain purpose.
 
 ---
 
-<!-- page 29 -->
+<!-- page 28 -->
 
 10
 Problems of Synonymy
@@ -1122,7 +1122,7 @@ in all of their senses. In Slovar¹ sinonimov russkogo iazyka, in most cases the
 
 ---
 
-<!-- page 30 -->
+<!-- page 29 -->
 
 English Synonyms
 11
@@ -1172,7 +1172,7 @@ and syntactic diﬀerentiation within the series are by no means always the same
 
 ---
 
-<!-- page 31 -->
+<!-- page 30 -->
 
 12
 Problems of Synonymy
@@ -1222,7 +1222,7 @@ work (above all, I. A. Mel¹cˇuk’s writings), semantics is seen as one of the
 
 ---
 
-<!-- page 32 -->
+<!-- page 31 -->
 
 English Synonyms
 13
@@ -1272,7 +1272,7 @@ of linguistics and its applications—for the ﬁrst time in the history of ling
 
 ---
 
-<!-- page 33 -->
+<!-- page 32 -->
 
 14
 Problems of Synonymy
@@ -1317,7 +1317,7 @@ which is semantically very close to solitude, is added;
 
 ---
 
-<!-- page 34 -->
+<!-- page 33 -->
 
 English Synonyms
 15
@@ -1367,7 +1367,7 @@ The second situation diﬀers from the ﬁrst in that not all members of one of
 
 ---
 
-<!-- page 35 -->
+<!-- page 34 -->
 
 16
 Problems of Synonymy
@@ -1417,7 +1417,7 @@ In the synonym series face, countenance, visage only the ﬁrst word, being sty-
 
 ---
 
-<!-- page 36 -->
+<!-- page 35 -->
 
 English Synonyms
 17
@@ -1465,7 +1465,7 @@ position of the observer has no relevance. The synonym remote indicates that a
 
 ---
 
-<!-- page 37 -->
+<!-- page 36 -->
 
 18
 Problems of Synonymy
@@ -1515,7 +1515,7 @@ description of the evaluation its modal framework. However, a complete seman-
 
 ---
 
-<!-- page 38 -->
+<!-- page 37 -->
 
 English Synonyms
 19
@@ -1565,7 +1565,7 @@ tempted to demonstrate in § 1.2, is needed to describe the semantic similaritie
 
 ---
 
-<!-- page 39 -->
+<!-- page 38 -->
 
 20
 Problems of Synonymy
@@ -1615,7 +1615,7 @@ in Webster’s there is hardly any repetition of words.
 
 ---
 
-<!-- page 40 -->
+<!-- page 39 -->
 
 English Synonyms
 21
@@ -1665,7 +1665,7 @@ that English to cause has the required meaning: to open (the door) = ‘to cause
 
 ---
 
-<!-- page 41 -->
+<!-- page 40 -->
 
 22
 Problems of Synonymy
@@ -1715,7 +1715,7 @@ As is clear from the above, the requirements formulated here are no caprice
 
 ---
 
-<!-- page 42 -->
+<!-- page 41 -->
 
 English Synonyms
 23
@@ -1765,7 +1765,7 @@ words as belki [whites], brovi [eyebrows], veki [eyelids], vylupit¹ [to goggle]
 
 ---
 
-<!-- page 43 -->
+<!-- page 42 -->
 
 24
 Problems of Synonymy
@@ -1813,7 +1813,7 @@ in the English series, for example want, wish, desire, crave, covet—khotet¹, 
 
 ---
 
-<!-- page 44 -->
+<!-- page 43 -->
 
 English Synonyms
 25
@@ -1861,7 +1861,7 @@ In this zone of the entry—the most important of all—a description is ﬁrst 
 
 ---
 
-<!-- page 45 -->
+<!-- page 44 -->
 
 26
 Problems of Synonymy
@@ -1911,7 +1911,7 @@ ciative or connotational, (d) diﬀerences in emphasis or logical stress.
 
 ---
 
-<!-- page 46 -->
+<!-- page 45 -->
 
 English Synonyms
 27
@@ -1959,7 +1959,7 @@ dent/responsibility); evade suggests that the subject avoids an undesirable situ
 
 ---
 
-<!-- page 47 -->
+<!-- page 46 -->
 
 28
 Problems of Synonymy
@@ -2009,7 +2009,7 @@ tion of others to the virtues of the object’. This is as much as to say that t
 
 ---
 
-<!-- page 48 -->
+<!-- page 47 -->
 
 English Synonyms
 29
@@ -2059,7 +2059,7 @@ thing in detail with the aim of understanding or evaluating it’. Examine may
 
 ---
 
-<!-- page 49 -->
+<!-- page 48 -->
 
 30
 Problems of Synonymy
@@ -2109,7 +2109,7 @@ with interruptions—into mature years: his cronies at Harrow.
 
 ---
 
-<!-- page 50 -->
+<!-- page 49 -->
 
 English Synonyms
 31
@@ -2159,7 +2159,7 @@ tionate, the ﬁrst diﬀers from the second by indicating the depth of feeling 
 
 ---
 
-<!-- page 51 -->
+<!-- page 50 -->
 
 32
 Problems of Synonymy
@@ -2209,7 +2209,7 @@ interest in some form of activity or intention to do something useful: an ardent
 
 ---
 
-<!-- page 52 -->
+<!-- page 51 -->
 
 English Synonyms
 33
@@ -2259,7 +2259,7 @@ ization is examined in detail below, in § 2.4.2.2). Nevertheless it is essentia
 
 ---
 
-<!-- page 53 -->
+<!-- page 52 -->
 
 34
 Problems of Synonymy
@@ -2309,7 +2309,7 @@ perception’ (cf. Russian ostryi, rezkii, pronzitel¹nyi—of smell, taste, sou
 
 ---
 
-<!-- page 54 -->
+<!-- page 53 -->
 
 English Synonyms
 35
@@ -2358,7 +2358,7 @@ from reality, while the other two denote the ability to conjure up images which
 
 ---
 
-<!-- page 55 -->
+<!-- page 54 -->
 
 36
 Problems of Synonymy
@@ -2407,7 +2407,7 @@ Logically naïve concepts, evaluation, semantic associations, and emphasis are
 
 ---
 
-<!-- page 56 -->
+<!-- page 55 -->
 
 English Synonyms
 37
@@ -2455,7 +2455,7 @@ metaphor, and in its most typical form this process consists of the loss of one
 
 ---
 
-<!-- page 57 -->
+<!-- page 56 -->
 
 38
 Problems of Synonymy
@@ -2504,7 +2504,7 @@ collocations C1C3 and C2C3 in full may be synonymous, although the inexact
 
 ---
 
-<!-- page 58 -->
+<!-- page 57 -->
 
 English Synonyms
 39
@@ -2554,7 +2554,7 @@ the principle/demand/decision may be said regardless of whether the principle
 
 ---
 
-<!-- page 59 -->
+<!-- page 58 -->
 
 40
 Problems of Synonymy
@@ -2605,7 +2605,7 @@ is semantically broader than the second. Dull usually signiﬁes those manifesta
 
 ---
 
-<!-- page 60 -->
+<!-- page 59 -->
 
 English Synonyms
 41
@@ -2656,7 +2656,7 @@ the two are neutralized and they become mutually interchangeable: I’m grateful
 
 ---
 
-<!-- page 61 -->
+<!-- page 60 -->
 
 42
 Problems of Synonymy
@@ -2704,7 +2704,7 @@ Two basic types of relation between synonyms within a series are possible: (a) t
 
 ---
 
-<!-- page 62 -->
+<!-- page 61 -->
 
 English Synonyms
 43
@@ -2753,7 +2753,7 @@ Discuss, argue, debate, dispute diﬀer by the following features: (1) the type 
 
 ---
 
-<!-- page 63 -->
+<!-- page 62 -->
 
 44
 Problems of Synonymy
@@ -2801,7 +2801,7 @@ and cunning imply insincere behaviour, hypocrisy, an ability to act with caution
 
 ---
 
-<!-- page 64 -->
+<!-- page 63 -->
 
 English Synonyms
 45
@@ -2850,7 +2850,7 @@ trying to be gallant, he bowed. Chivalrous suggests the inner nobility of the su
 
 ---
 
-<!-- page 65 -->
+<!-- page 64 -->
 
 46
 Problems of Synonymy
@@ -2896,7 +2896,7 @@ to be used in a single grammatical form, whereas the other synonyms may freely
 
 ---
 
-<!-- page 66 -->
+<!-- page 65 -->
 
 English Synonyms
 47
@@ -2946,7 +2946,7 @@ be the main element in it.
 
 ---
 
-<!-- page 67 -->
+<!-- page 66 -->
 
 48
 Problems of Synonymy
@@ -2997,7 +2997,7 @@ with a preposition (to spring over a fence); why attain may have either a direct
 
 ---
 
-<!-- page 68 -->
+<!-- page 67 -->
 
 English Synonyms
 49
@@ -3048,7 +3048,7 @@ the last is followed by on smth.: to commend/applaud smb. for his performance;
 
 ---
 
-<!-- page 69 -->
+<!-- page 68 -->
 
 50
 Problems of Synonymy
@@ -3096,7 +3096,7 @@ occurrence constraints—lexical, semantic, and referential.
 
 ---
 
-<!-- page 70 -->
+<!-- page 69 -->
 
 English Synonyms
 51
@@ -3146,7 +3146,7 @@ coincides with the subject of condescend (he condescended to smile) and with the
 
 ---
 
-<!-- page 71 -->
+<!-- page 70 -->
 
 52
 Problems of Synonymy
@@ -3195,7 +3195,7 @@ means, purpose, cause, etc.). The applicability of this nomenclature in descrip-
 
 ---
 
-<!-- page 72 -->
+<!-- page 71 -->
 
 English Synonyms
 53
@@ -3242,7 +3242,7 @@ play a dual role: ﬁrst, they form a substantial part of the material upon whic
 
 ---
 
-<!-- page 73 -->
+<!-- page 72 -->
 
 54
 Problems of Synonymy
@@ -3268,7 +3268,7 @@ future we shall be able to remedy this defect.
 
 ---
 
-<!-- page 74 -->
+<!-- page 73 -->
 
 1 Besides his own materials, the author has made use of some material from the series boiat¹sia
 written by V. Apresjan and three entries compiled jointly with M. Glovinskaia: zhalovat¹sia—setovat¹,
@@ -3306,7 +3306,7 @@ regular and characteristically Russian type of lexical synonym produced by back-
 
 ---
 
-<!-- page 75 -->
+<!-- page 74 -->
 
 56
 Problems of Synonymy
@@ -3354,7 +3354,7 @@ which they suggest speciﬁc senses and connotations.
 
 ---
 
-<!-- page 76 -->
+<!-- page 75 -->
 
 Types of Information
 57
@@ -3402,7 +3402,7 @@ In order better to show the essence of our few innovations, we should recall
 
 ---
 
-<!-- page 77 -->
+<!-- page 76 -->
 
 58
 Problems of Synonymy
@@ -3452,7 +3452,7 @@ educated speaker may employ without risk to his linguistic reputation. Compare
 
 ---
 
-<!-- page 78 -->
+<!-- page 77 -->
 
 Types of Information
 59
@@ -3502,7 +3502,7 @@ by individual writers than with neutral lexemes; e.g. the following from
 
 ---
 
-<!-- page 79 -->
+<!-- page 78 -->
 
 60
 Problems of Synonymy
@@ -3550,7 +3550,7 @@ priladit¹sia, priteret¹sia, primenit¹sia; vzhit¹sia, szhit¹sia, prizhit¹si
 
 ---
 
-<!-- page 80 -->
+<!-- page 79 -->
 
 Types of Information
 61
@@ -3600,7 +3600,7 @@ is a semantic primitive’.
 
 ---
 
-<!-- page 81 -->
+<!-- page 80 -->
 
 62
 Problems of Synonymy
@@ -3648,7 +3648,7 @@ one’s trust in], rasschityvat¹ [to count on], polagat¹sia [to rely]. The syn
 
 ---
 
-<!-- page 82 -->
+<!-- page 81 -->
 
 Types of Information
 63
@@ -3699,7 +3699,7 @@ may be used, even metaphors if these are a short cut to understanding.2 The
 
 ---
 
-<!-- page 83 -->
+<!-- page 82 -->
 
 64
 Problems of Synonymy
@@ -3749,7 +3749,7 @@ describing the content of the linguistic units in this zone of the entry.3
 
 ---
 
-<!-- page 84 -->
+<!-- page 83 -->
 
 Types of Information
 65
@@ -3798,7 +3798,7 @@ Extending these concepts and this terminology to lexical meanings, we shall
 
 ---
 
-<!-- page 85 -->
+<!-- page 84 -->
 
 66
 Problems of Synonymy
@@ -3848,7 +3848,7 @@ explications, similar covert semantic components should be expected in the more
 
 ---
 
-<!-- page 86 -->
+<!-- page 85 -->
 
 Types of Information
 67
@@ -3898,7 +3898,7 @@ usually has a deﬁnite person as its object, while zhdat¹ may apply to any ind
 
 ---
 
-<!-- page 87 -->
+<!-- page 86 -->
 
 68
 Problems of Synonymy
@@ -3946,7 +3946,7 @@ tion of active will: Im [Rudinu, Karavaevu] on protivopolagaet liudei, umeiushch
 
 ---
 
-<!-- page 88 -->
+<!-- page 87 -->
 
 Types of Information
 69
@@ -3996,7 +3996,7 @@ to the participants]; Khoteli pet¹—i ne smogli, ¦ Khoteli vstat¹—dugoi po
 
 ---
 
-<!-- page 89 -->
+<!-- page 88 -->
 
 70
 Problems of Synonymy
@@ -4044,7 +4044,7 @@ nakleen(nym) [to be glued]: Na stenu nakleen list bumagi [a sheet of paper has
 
 ---
 
-<!-- page 90 -->
+<!-- page 89 -->
 
 Types of Information
 71
@@ -4092,7 +4092,7 @@ voice] (G. Gazdanov); [Inzhener] zhalovalsia, chto ona [zhena] vtravila ego v et
 
 ---
 
-<!-- page 91 -->
+<!-- page 90 -->
 
 72
 Problems of Synonymy
@@ -4142,7 +4142,7 @@ ekologicheskikh problem [at last we have achieved an objective discussion of eco
 
 ---
 
-<!-- page 92 -->
+<!-- page 91 -->
 
 Types of Information
 73
@@ -4190,7 +4190,7 @@ idiot]; e.g. Ia v tochnosti ponimaiu, za kogo ikh i nas derzhat. Ne za podrostko
 
 ---
 
-<!-- page 93 -->
+<!-- page 92 -->
 
 74
 Problems of Synonymy
@@ -4239,7 +4239,7 @@ na sebia [Tell him why you’ve been stirring up the population. If you do tell
 
 ---
 
-<!-- page 94 -->
+<!-- page 93 -->
 
 Types of Information
 75
@@ -4288,7 +4288,7 @@ the one at issue: ‘express to smb. mild displeasure with regard to that person
 
 ---
 
-<!-- page 95 -->
+<!-- page 94 -->
 
 76
 Problems of Synonymy
@@ -4333,7 +4333,7 @@ The verb zhazhdat¹ has no gerund and, moreover, there is no means of com-
 
 ---
 
-<!-- page 96 -->
+<!-- page 95 -->
 
 Types of Information
 77
@@ -4379,7 +4379,7 @@ In the series dumat¹—schitat¹, polagat¹, nakhodit¹, rassmatrivat¹, smotre
 
 ---
 
-<!-- page 97 -->
+<!-- page 96 -->
 
 78
 Problems of Synonymy
@@ -4429,7 +4429,7 @@ instruktsii o poriadke razgruzki [and as navigator I would recommend that you
 
 ---
 
-<!-- page 98 -->
+<!-- page 97 -->
 
 Types of Information
 79
@@ -4479,7 +4479,7 @@ dozhidaias¹ tends towards the sense of a preposition with the meaning ‘before
 
 ---
 
-<!-- page 99 -->
+<!-- page 98 -->
 
 80
 Problems of Synonymy
@@ -4527,7 +4527,7 @@ zhelaiushchii and zhelaia are used.5
 
 ---
 
-<!-- page 100 -->
+<!-- page 99 -->
 
 Types of Information
 81
@@ -4575,7 +4575,7 @@ can tell them about it, if it seems appropriate, of course].
 
 ---
 
-<!-- page 101 -->
+<!-- page 100 -->
 
 82
 Problems of Synonymy
@@ -4625,7 +4625,7 @@ see smth. from a balcony/a car]); (b) an aperture or an optical instrument aidin
 
 ---
 
-<!-- page 102 -->
+<!-- page 101 -->
 
 Types of Information
 83
@@ -4674,7 +4674,7 @@ gotten me]; Osetrovye ryby, schitaiut znatoki, utratili svoi byloi vkus [connois
 
 ---
 
-<!-- page 103 -->
+<!-- page 102 -->
 
 84
 Problems of Synonymy
@@ -4723,7 +4723,7 @@ stream, it follows that it burns, falls, blows, or ﬂows respectively. The reve
 
 ---
 
-<!-- page 104 -->
+<!-- page 103 -->
 
 Types of Information
 85
@@ -4771,7 +4771,7 @@ constructions characteristic of videt¹ (see above), except for the parenthetic 
 
 ---
 
-<!-- page 105 -->
+<!-- page 104 -->
 
 86
 Problems of Synonymy
@@ -4818,7 +4818,7 @@ of co-occurrence. We shall speak of the semantic co-occurrence (or of semantic
 
 ---
 
-<!-- page 106 -->
+<!-- page 105 -->
 
 Types of Information
 87
@@ -4866,7 +4866,7 @@ In the series risovat¹—zarisovyvat¹, pisat¹, malevat¹ [to draw, paint], th
 
 ---
 
-<!-- page 107 -->
+<!-- page 106 -->
 
 88
 Problems of Synonymy
@@ -4916,7 +4916,7 @@ or opinion: Ia tozhe tak dumaiu/polagaiu, a on schitaet inache [I think/believe 
 
 ---
 
-<!-- page 108 -->
+<!-- page 107 -->
 
 Types of Information
 89
@@ -4962,7 +4962,7 @@ well: it bears the logical phrasal stress.
 
 ---
 
-<!-- page 109 -->
+<!-- page 108 -->
 
 90
 Problems of Synonymy
@@ -5010,7 +5010,7 @@ sion of former opinions induced in the speaker by certain new circumstances.
 
 ---
 
-<!-- page 110 -->
+<!-- page 109 -->
 
 Types of Information
 91
@@ -5060,7 +5060,7 @@ Compare this with the same collocation with the verb in the imperfective,
 
 ---
 
-<!-- page 111 -->
+<!-- page 110 -->
 
 92
 Problems of Synonymy
@@ -5107,7 +5107,7 @@ ing of a word may not always be recognizable. Often a word will ﬂuctuate be-
 
 ---
 
-<!-- page 112 -->
+<!-- page 111 -->
 
 Types of Information
 93
@@ -5154,7 +5154,7 @@ be assumed that they will be cited in the dictionary entry for that analogue. Th
 
 ---
 
-<!-- page 113 -->
+<!-- page 112 -->
 
 94
 Problems of Synonymy
@@ -5200,7 +5200,7 @@ key word are less rigid.
 
 ---
 
-<!-- page 114 -->
+<!-- page 113 -->
 
 Types of Information
 95
@@ -5257,7 +5257,7 @@ Khvastat¹sia [to boast]: risovat¹sia, shchegoliat¹, forsit¹, bravirovat¹, k
 
 ---
 
-<!-- page 115 -->
+<!-- page 114 -->
 
 96
 Problems of Synonymy
@@ -5304,7 +5304,7 @@ onyms: they are one of the main sources of synonymy of whole utterances.
 
 ---
 
-<!-- page 116 -->
+<!-- page 115 -->
 
 Types of Information
 97
@@ -5349,7 +5349,7 @@ relations. In the case of exact antonymy the diﬀerence is reduced to these com
 
 ---
 
-<!-- page 117 -->
+<!-- page 116 -->
 
 98
 Problems of Synonymy
@@ -5395,7 +5395,7 @@ tura mogli byt¹ postroeny na ateizme kak dukhovnom osnovanii [the intelligentsi
 
 ---
 
-<!-- page 118 -->
+<!-- page 117 -->
 
 Types of Information
 99
@@ -5443,7 +5443,7 @@ ging]; samovoskhvalenie [self-praise]; neskromnost¹ [immodesty]; samoreklama
 
 ---
 
-<!-- page 119 -->
+<!-- page 118 -->
 
 100
 Problems of Synonymy
@@ -5479,7 +5479,7 @@ given synonym series.
 
 ---
 
-<!-- page 120 -->
+<!-- page 119 -->
 
 3
 The Picture of Man as Reconstructed
@@ -5518,7 +5518,7 @@ only when the reconstructed fragment was conﬁrmed not by unconnected data
 
 ---
 
-<!-- page 121 -->
+<!-- page 120 -->
 
 102
 Problems of Synonymy
@@ -5565,7 +5565,7 @@ typically Russian concepts dusha [soul], toska [yearning], sud¹ba [fate] (see
 
 ---
 
-<!-- page 122 -->
+<!-- page 121 -->
 
 The Picture of Man
 103
@@ -5616,7 +5616,7 @@ tions through many millennia, and may serve as a reliable guide to this world.
 
 ---
 
-<!-- page 123 -->
+<!-- page 122 -->
 
 104
 Problems of Synonymy
@@ -5663,7 +5663,7 @@ of the human make-up. In the Russian linguistic picture of the world (which is
 
 ---
 
-<!-- page 124 -->
+<!-- page 123 -->
 
 The Picture of Man
 105
@@ -5711,7 +5711,7 @@ Desires may be either rational and moral or irrational and amoral. The will
 
 ---
 
-<!-- page 125 -->
+<!-- page 124 -->
 
 106
 Problems of Synonymy
@@ -5762,7 +5762,7 @@ of others on the scales of supreme justice.3
 
 ---
 
-<!-- page 126 -->
+<!-- page 125 -->
 
 The Picture of Man
 107
@@ -5811,7 +5811,7 @@ shivering, colour, fever, perspiration, heartbeat, grimaces, etc.). Various part
 
 ---
 
-<!-- page 127 -->
+<!-- page 126 -->
 
 108
 Problems of Synonymy
@@ -5861,7 +5861,7 @@ explicate this verb in the meaning indicated turn out to be circular.4
 
 ---
 
-<!-- page 128 -->
+<!-- page 127 -->
 
 The Picture of Man
 109
@@ -5913,7 +5913,7 @@ of shoreline was visible to us].
 
 ---
 
-<!-- page 129 -->
+<!-- page 128 -->
 
 110
 Problems of Synonymy
@@ -5961,7 +5961,7 @@ to see—to be visible—to look;
 
 ---
 
-<!-- page 130 -->
+<!-- page 129 -->
 
 The Picture of Man
 111
@@ -6009,7 +6009,7 @@ Even plants perceive such stimuli as light and warmth, since they react to these
 
 ---
 
-<!-- page 131 -->
+<!-- page 130 -->
 
 112
 Problems of Synonymy
@@ -6058,7 +6058,7 @@ even when the other systems are functioning with increased or maximum inten-
 
 ---
 
-<!-- page 132 -->
+<!-- page 131 -->
 
 The Picture of Man
 113
@@ -6116,7 +6116,7 @@ meaning is not simply ‘to freeze into immobility under the stimulus of some
 
 ---
 
-<!-- page 133 -->
+<!-- page 132 -->
 
 114
 Problems of Synonymy
@@ -6166,7 +6166,7 @@ of the will. In this respect opinions are particularly interesting. Prototypical
 
 ---
 
-<!-- page 134 -->
+<!-- page 133 -->
 
 The Picture of Man
 115
@@ -6216,7 +6216,7 @@ slukh [hearing], obonianie [sense of smell], etc. form part of perception; znani
 
 ---
 
-<!-- page 135 -->
+<!-- page 134 -->
 
 116
 Problems of Synonymy
@@ -6266,7 +6266,7 @@ sounds], glukhie zapakhi [deaf smells], sladkaia na oshchup¹ tkan¹ [fabric swe
 
 ---
 
-<!-- page 136 -->
+<!-- page 135 -->
 
 The Picture of Man
 117
@@ -6314,7 +6314,7 @@ all the mental meanings which this verb has developed in Russian and demon-
 
 ---
 
-<!-- page 137 -->
+<!-- page 136 -->
 
 118
 Problems of Synonymy
@@ -6363,7 +6363,7 @@ comfort. Thus, in accordance with the general rule of metaphorical transfer,
 
 ---
 
-<!-- page 138 -->
+<!-- page 137 -->
 
 The Picture of Man
 119
@@ -6412,7 +6412,7 @@ voniuchii [stinking], aromatnyi [fragrant], dushistyi [sweet-scented], etc. are 
 
 ---
 
-<!-- page 139 -->
+<!-- page 138 -->
 
 120
 Problems of Synonymy
@@ -6459,7 +6459,7 @@ tion. These are metaphors denoting a certain physical symptom of a feeling.
 
 ---
 
-<!-- page 140 -->
+<!-- page 139 -->
 
 The Picture of Man
 121
@@ -6509,7 +6509,7 @@ sad], sokrushat¹sia [to regret]. Grustit¹ may apply whatever the cause, while
 
 ---
 
-<!-- page 141 -->
+<!-- page 140 -->
 
 122
 Problems of Synonymy
@@ -6559,7 +6559,7 @@ Nenavist¹ is an unpleasant feeling induced by the perception or at least the
 
 ---
 
-<!-- page 142 -->
+<!-- page 141 -->
 
 The Picture of Man
 123
@@ -6609,7 +6609,7 @@ of the word: Tiun¹ka radovalas¹ by. Ona liubit videt¹ srazu vmeste vsekh svoi
 
 ---
 
-<!-- page 143 -->
+<!-- page 142 -->
 
 124
 Problems of Synonymy
@@ -6659,7 +6659,7 @@ tation], iarost¹ [fury]). Weaker emotions, however, (if we exclude a few scatte
 
 ---
 
-<!-- page 144 -->
+<!-- page 143 -->
 
 The Picture of Man
 125
@@ -6709,7 +6709,7 @@ develops two series of devices to express the emotion proper and the fact of its
 
 ---
 
-<!-- page 145 -->
+<!-- page 144 -->
 
 126
 Problems of Synonymy
@@ -6759,7 +6759,7 @@ inner state of the subject.
 
 ---
 
-<!-- page 146 -->
+<!-- page 145 -->
 
 The Picture of Man
 127
@@ -6806,7 +6806,7 @@ author; the examples bearing on the series boiat¹sia are taken from V. Apresjan
 
 ---
 
-<!-- page 147 -->
+<!-- page 146 -->
 
 128
 Problems of Synonymy
@@ -6856,7 +6856,7 @@ Dreaming (mechtat¹) is an attribute of a human being, while the state of
 
 ---
 
-<!-- page 148 -->
+<!-- page 147 -->
 
 The Picture of Man
 129
@@ -6905,7 +6905,7 @@ object of censure has fundamental and, furthermore, incorrigible shortcomings;
 
 ---
 
-<!-- page 149 -->
+<!-- page 148 -->
 
 130
 Problems of Synonymy
@@ -6949,7 +6949,7 @@ while in the case of pisat¹ and malevat¹ [to paint] it is focused on the colou
 
 ---
 
-<!-- page 150 -->
+<!-- page 149 -->
 
 The Picture of Man
 131
@@ -6995,7 +6995,7 @@ tional’ objects in accordance with their function. The homonymy of sentences
 
 ---
 
-<!-- page 151 -->
+<!-- page 150 -->
 
 132
 Problems of Synonymy
@@ -7040,7 +7040,7 @@ the dative. Prisiagat¹ [to vow, swear] implies a larger audience whose name is
 
 ---
 
-<!-- page 152 -->
+<!-- page 151 -->
 
 The Picture of Man
 133
@@ -7083,7 +7083,7 @@ branit¹ [to curse] are possible when the object of censure is not present and t
 
 ---
 
-<!-- page 153 -->
+<!-- page 152 -->
 
 134
 Problems of Synonymy
@@ -7125,7 +7125,7 @@ We are ‘vexed’ or ‘annoyed’ [nas zlit] by things that we directly percei
 
 ---
 
-<!-- page 154 -->
+<!-- page 153 -->
 
 The Picture of Man
 135
@@ -7169,7 +7169,7 @@ sgoniat¹ [to round up] involves coercive measures.
 
 ---
 
-<!-- page 155 -->
+<!-- page 154 -->
 
 136
 Problems of Synonymy
@@ -7213,7 +7213,7 @@ while podzhidat¹, podozhdat¹ [to wait] usually imply a single period of observ
 
 ---
 
-<!-- page 156 -->
+<!-- page 155 -->
 
 The Picture of Man
 137
@@ -7259,7 +7259,7 @@ primarily of the visible attributes of the object, while kazat¹sia [to seem] im
 
 ---
 
-<!-- page 157 -->
+<!-- page 156 -->
 
 138
 Problems of Synonymy
@@ -7302,7 +7302,7 @@ When a person boitsia, pugaetsia, trusit [is fearful, cowardly] he may turn cold
 
 ---
 
-<!-- page 158 -->
+<!-- page 157 -->
 
 The Picture of Man
 139
@@ -7346,7 +7346,7 @@ stars and microbes without seeing them]; tot, kto voobrazil polet cheloveka, byl
 
 ---
 
-<!-- page 159 -->
+<!-- page 158 -->
 
 140
 Problems of Synonymy
@@ -7390,7 +7390,7 @@ than voskhishchenie [admiration]. In the case of vzorvat¹ (in the sense ‘to e
 
 ---
 
-<!-- page 160 -->
+<!-- page 159 -->
 
 The Picture of Man
 141
@@ -7433,7 +7433,7 @@ path is meanly crooked’ or the New England spring is ‘sour’] (Z. Shakhovsk
 
 ---
 
-<!-- page 161 -->
+<!-- page 160 -->
 
 142
 Problems of Synonymy
@@ -7477,7 +7477,7 @@ mototsikl [in front of the tree stood a motorcycle] places the motorcycle betwee
 
 ---
 
-<!-- page 162 -->
+<!-- page 161 -->
 
 The Picture of Man
 143
@@ -7494,7 +7494,7 @@ seeming to see it from afar.
 
 ---
 
-<!-- page 163 -->
+<!-- page 162 -->
 
 4
 The Synonymy of Mental Predicates:
@@ -7534,7 +7534,7 @@ duce the so-called ‘naïve’ world picture. The vocabulary which is thematica
 
 ---
 
-<!-- page 164 -->
+<!-- page 163 -->
 
 Schitat¹ and its Synonyms
 145
@@ -7585,7 +7585,7 @@ intentions of the subject but his needs.
 
 ---
 
-<!-- page 165 -->
+<!-- page 164 -->
 
 146
 Problems of Synonymy
@@ -7632,7 +7632,7 @@ think], polagat¹ (bookish) (no pf.) [to suppose], nakhodit¹ (bookish) (pf. nai
 
 ---
 
-<!-- page 166 -->
+<!-- page 165 -->
 
 Schitat¹ and its Synonyms
 147
@@ -7678,7 +7678,7 @@ of aﬀairs and evaluative judgements alike. Simple statements: kazhdyi tretii z
 
 ---
 
-<!-- page 167 -->
+<!-- page 166 -->
 
 148
 Problems of Synonymy
@@ -7728,7 +7728,7 @@ other hand, in most contexts introduces evaluative statements and is therefore
 
 ---
 
-<!-- page 168 -->
+<!-- page 167 -->
 
 Schitat¹ and its Synonyms
 149
@@ -7778,7 +7778,7 @@ nemnogo znal Varlama Tikhonovicha. Eto byl porazitel¹nyi chelovek. I vse-taki i
 
 ---
 
-<!-- page 169 -->
+<!-- page 168 -->
 
 150
 Problems of Synonymy
@@ -7828,7 +7828,7 @@ parenthetic construction with the subject pre-posed before dumat¹ the meaning
 
 ---
 
-<!-- page 170 -->
+<!-- page 169 -->
 
 Schitat¹ and its Synonyms
 151
@@ -7878,7 +7878,7 @@ formed or concurrent with the process of forming one, is essential. We may say
 
 ---
 
-<!-- page 171 -->
+<!-- page 170 -->
 
 152
 Problems of Synonymy
@@ -7929,7 +7929,7 @@ In some contexts, when certain semantic components are suppressed, a signiﬁ-
 
 ---
 
-<!-- page 172 -->
+<!-- page 171 -->
 
 Schitat¹ and its Synonyms
 153
@@ -7980,7 +7980,7 @@ eto kak svoe pervoe poruchenie [consider this your ﬁrst assignment], smotri na
 
 ---
 
-<!-- page 173 -->
+<!-- page 172 -->
 
 154
 Problems of Synonymy
@@ -8030,7 +8030,7 @@ v etom sostava prestupleniia [I can’t see a corpus delicti in this]; v chem vy
 
 ---
 
-<!-- page 174 -->
+<!-- page 173 -->
 
 Schitat¹ and its Synonyms
 155
@@ -8076,7 +8076,7 @@ garded him as his father].
 
 ---
 
-<!-- page 175 -->
+<!-- page 174 -->
 
 156
 Problems of Synonymy
@@ -8124,7 +8124,7 @@ tone (see above).
 
 ---
 
-<!-- page 176 -->
+<!-- page 175 -->
 
 Schitat¹ and its Synonyms
 157
@@ -8174,7 +8174,7 @@ chem-libo [to see smth. in smb./smth.]. Smotret¹ is also used in the constructi
 
 ---
 
-<!-- page 177 -->
+<!-- page 176 -->
 
 158
 Problems of Synonymy
@@ -8223,7 +8223,7 @@ istic of schitat¹, polagat¹, and nakhodit¹, the position of the instrumental 
 
 ---
 
-<!-- page 178 -->
+<!-- page 177 -->
 
 Schitat¹ and its Synonyms
 159
@@ -8274,7 +8274,7 @@ expressions: ia nachinaiu dumat¹ 〈schitat¹〉, chto on ne tak prost kak kazh
 
 ---
 
-<!-- page 179 -->
+<!-- page 178 -->
 
 160
 Problems of Synonymy
@@ -8322,7 +8322,7 @@ have an opinion]; imet¹ takoi-to vzgliad na veshchi [to have a certain view of 
 
 ---
 
-<!-- page 180 -->
+<!-- page 179 -->
 
 Schitat¹ and its Synonyms
 161
@@ -8350,7 +8350,7 @@ Derivatives: mysl¹ [thought]; mnenie [opinion]; vzgliad [view]; tochka zreniia
 
 ---
 
-<!-- page 181 -->
+<!-- page 180 -->
 
 5
 The Problem of Factivity: znat¹
@@ -8387,7 +8387,7 @@ logical and syntactic aspects. Among recent works we may cite Arutiunova 1988:
 
 ---
 
-<!-- page 182 -->
+<!-- page 181 -->
 
 Znat¹ and its Synonyms
 163
@@ -8435,7 +8435,7 @@ ber of published works by the author (J. Apresjan, 1986b, 1992c, 1995b, 1995c, a
 
 ---
 
-<!-- page 183 -->
+<!-- page 182 -->
 
 164
 Problems of Synonymy
@@ -8485,7 +8485,7 @@ but also clauses with interrogatives such as chto [what], kto [who], kakoi
 
 ---
 
-<!-- page 184 -->
+<!-- page 183 -->
 
 Znat¹ and its Synonyms
 165
@@ -8534,7 +8534,7 @@ give it its individuality. This is particularly true of such foregrounded lexeme
 
 ---
 
-<!-- page 185 -->
+<!-- page 184 -->
 
 166
 Problems of Synonymy
@@ -8579,7 +8579,7 @@ think’ and those meaning ‘to believe, to have faith in’. On the other hand
 
 ---
 
-<!-- page 186 -->
+<!-- page 185 -->
 
 Znat¹ and its Synonyms
 167
@@ -8629,7 +8629,7 @@ know?] and falling pitch on dones [denounced]) is impossible in a situation in
 
 ---
 
-<!-- page 187 -->
+<!-- page 186 -->
 
 168
 Problems of Synonymy
@@ -8678,7 +8678,7 @@ and belief (see for example Seleznev 1988, Bulygina and Shmelev 1989, Shmelev
 
 ---
 
-<!-- page 188 -->
+<!-- page 187 -->
 
 Znat¹ and its Synonyms
 169
@@ -8728,7 +8728,7 @@ with rising intonation (ia ↑veriu, chto ego zhena vernetsia [I believe his wif
 
 ---
 
-<!-- page 189 -->
+<!-- page 188 -->
 
 170
 Problems of Synonymy
@@ -8778,7 +8778,7 @@ only in connection with what exists everywhere and always] (S. Frank); i mozhet
 
 ---
 
-<!-- page 190 -->
+<!-- page 189 -->
 
 Znat¹ and its Synonyms
 171
@@ -8829,7 +8829,7 @@ sławski 1994c).
 
 ---
 
-<!-- page 191 -->
+<!-- page 190 -->
 
 172
 Problems of Synonymy
@@ -8879,7 +8879,7 @@ We have tried to demonstrate above that the sense ‘to know’ forms part of
 
 ---
 
-<!-- page 192 -->
+<!-- page 191 -->
 
 Znat¹ and its Synonyms
 173
@@ -8928,7 +8928,7 @@ tions than vedat¹.
 
 ---
 
-<!-- page 193 -->
+<!-- page 192 -->
 
 174
 Problems of Synonymy
@@ -8978,7 +8978,7 @@ tebe takogo nashla [I don’t know (~ don’t understand) what it is she ﬁnds 
 
 ---
 
-<!-- page 194 -->
+<!-- page 193 -->
 
 Znat¹ and its Synonyms
 175
@@ -9028,7 +9028,7 @@ Only in these are the distinctions between them partly neutralized.
 
 ---
 
-<!-- page 195 -->
+<!-- page 194 -->
 
 176
 Problems of Synonymy
@@ -9076,7 +9076,7 @@ ness〉]; krepostnogo prava ia ne znal i ne videl, no, pomniu, u tetki Anny Gera
 
 ---
 
-<!-- page 196 -->
+<!-- page 195 -->
 
 Znat¹ and its Synonyms
 177
@@ -9123,7 +9123,7 @@ met with mostly in poetry: no ty, khudozhnik, tverdo verui, ¦ V nachala i konts
 
 ---
 
-<!-- page 197 -->
+<!-- page 196 -->
 
 178
 Problems of Synonymy
@@ -9170,7 +9170,7 @@ own character 〈aware of his own habit〉] ~ on znal, chto u nego est¹ eta che
 
 ---
 
-<!-- page 198 -->
+<!-- page 197 -->
 
 Znat¹ and its Synonyms
 179
@@ -9220,7 +9220,7 @@ as otkuda [whence], ot kogo-libo [from smb.], iz chego-libo [from smth.], po
 
 ---
 
-<!-- page 199 -->
+<!-- page 198 -->
 
 180
 Problems of Synonymy
@@ -9270,7 +9270,7 @@ znaete, chto Olia razvelas¹ 〈chto pervyi otdel rasformirovali, chto v institu
 
 ---
 
-<!-- page 200 -->
+<!-- page 199 -->
 
 Znat¹ and its Synonyms
 181
@@ -9320,7 +9320,7 @@ you’re in no way to blame]. This reduplication, incidentally, is impossible or
 
 ---
 
-<!-- page 201 -->
+<!-- page 200 -->
 
 182
 Problems of Synonymy
@@ -9368,7 +9368,7 @@ to say *oni priblizitel¹no [roughly] 〈plokho〉[badly] znali, chto ia dolzhen
 
 ---
 
-<!-- page 202 -->
+<!-- page 201 -->
 
 Znat¹ and its Synonyms
 183
@@ -9418,7 +9418,7 @@ discourse to create a particular stylistic eﬀect: O, ia znaiu: ego otrada ¦ N
 
 ---
 
-<!-- page 203 -->
+<!-- page 202 -->
 
 184
 Problems of Synonymy
@@ -9466,7 +9466,7 @@ Analogues: schitat¹ [to believe], dumat¹ [to think]; verit¹ [to believe]; pon
 
 ---
 
-<!-- page 204 -->
+<!-- page 203 -->
 
 Znat¹ and its Synonyms
 185
@@ -9491,7 +9491,7 @@ razuznat¹, uznat¹ [to ﬁnd out].
 
 ---
 
-<!-- page 205 -->
+<!-- page 204 -->
 
 1 This series was discussed at a working meeting of the Theoretical Semantics Section of the
 RAN Russian Language Institute. I am grateful to the participants, V. Apresjan, O. Iu. Boguslavskaia,
@@ -9530,7 +9530,7 @@ types of semantic relations between words (antonymy, conversivity, etc.), the
 
 ---
 
-<!-- page 206 -->
+<!-- page 205 -->
 
 Khotet¹ and its Synonyms
 187
@@ -9580,7 +9580,7 @@ speciﬁcs; (6) syntactic constructions and their semantic speciﬁcs; (7) lexic
 
 ---
 
-<!-- page 207 -->
+<!-- page 206 -->
 
 188
 Problems of Synonymy
@@ -9625,7 +9625,7 @@ stronger desires than khotet¹ and zhelat¹).
 
 ---
 
-<!-- page 208 -->
+<!-- page 207 -->
 
 Khotet¹ and its Synonyms
 189
@@ -9673,7 +9673,7 @@ zabastovku [all the Vorkuta pits wanted to declare a warning strike]; plokh tot
 
 ---
 
-<!-- page 209 -->
+<!-- page 208 -->
 
 190
 Problems of Synonymy
@@ -9723,7 +9723,7 @@ following contexts:
 
 ---
 
-<!-- page 210 -->
+<!-- page 209 -->
 
 Khotet¹ and its Synonyms
 191
@@ -9773,7 +9773,7 @@ bassy to say that he wished to return to his dear motherland] (A. Solzhenitsyn);
 
 ---
 
-<!-- page 211 -->
+<!-- page 210 -->
 
 192
 Problems of Synonymy
@@ -9822,7 +9822,7 @@ ne pozhelal, etc. signify a more categorical absence of wish than ne khochu, ne
 
 ---
 
-<!-- page 212 -->
+<!-- page 211 -->
 
 Khotet¹ and its Synonyms
 193
@@ -9872,7 +9872,7 @@ possible only in the second situation.
 
 ---
 
-<!-- page 213 -->
+<!-- page 212 -->
 
 194
 Problems of Synonymy
@@ -9922,7 +9922,7 @@ exposed to the curious gaze of the girls and young technicians who were agog
 
 ---
 
-<!-- page 214 -->
+<!-- page 213 -->
 
 Khotet¹ and its Synonyms
 195
@@ -9969,7 +9969,7 @@ khotelos¹ mechtat¹ i dumat¹ o budushchem [one felt like day-dreaming and thin
 
 ---
 
-<!-- page 215 -->
+<!-- page 214 -->
 
 196
 Problems of Synonymy
@@ -10017,7 +10017,7 @@ its absence.
 
 ---
 
-<!-- page 216 -->
+<!-- page 215 -->
 
 Khotet¹ and its Synonyms
 197
@@ -10065,7 +10065,7 @@ Besides this, certain syntactic phrasemes are characteristic only of the verb
 
 ---
 
-<!-- page 217 -->
+<!-- page 216 -->
 
 198
 Problems of Synonymy
@@ -10113,7 +10113,7 @@ eto vam nuzhno?—Ia tak khochu [Why is this necessary?—I want it this way].
 
 ---
 
-<!-- page 218 -->
+<!-- page 217 -->
 
 Khotet¹ and its Synonyms
 199
@@ -10161,7 +10161,7 @@ Inexact antonyms: brezgovat¹, gnushat¹sia [to have an aversion to]; raskhotet�
 
 ---
 
-<!-- page 219 -->
+<!-- page 218 -->
 
 200
 Problems of Synonymy
@@ -10177,20 +10177,20 @@ willingly]; po-moemu 〈po-tvoemu, po-vashemu〉, etc. [as I 〈you〉choose]; r
 
 ---
 
-<!-- page 220 -->
+<!-- page 219 -->
 
 Part II
 SYSTEMATIC LEXICOGRAPHY
 
 ---
 
-<!-- page 221 -->
+<!-- page 220 -->
 
 This page intentionally left blank
 
 ---
 
-<!-- page 222 -->
+<!-- page 221 -->
 
 1 Hereafter the word ‘emotions’ will take the place of the expression ‘words (lexemes) denoting
 emotions’ in all contexts where this does not lead to ambiguity.
@@ -10230,7 +10230,7 @@ lexicographic explication of a word denoting an emotion.
 
 ---
 
-<!-- page 223 -->
+<!-- page 222 -->
 
 204
 Systematic Lexicography
@@ -10277,7 +10277,7 @@ or
 
 ---
 
-<!-- page 224 -->
+<!-- page 223 -->
 
 Metaphor and Emotion
 205
@@ -10328,7 +10328,7 @@ Thus Lakoﬀ’s and Johnson’s description is constructed in the form of a hie
 
 ---
 
-<!-- page 225 -->
+<!-- page 224 -->
 
 206
 Systematic Lexicography
@@ -10378,7 +10378,7 @@ False authority is hollow, with walls so thin that they can burst [lopnut¹]’
 
 ---
 
-<!-- page 226 -->
+<!-- page 225 -->
 
 Metaphor and Emotion
 207
@@ -10427,7 +10427,7 @@ tated by certain general considerations regarding the systems whose operation
 
 ---
 
-<!-- page 227 -->
+<!-- page 226 -->
 
 208
 Systematic Lexicography
@@ -10475,7 +10475,7 @@ types.
 
 ---
 
-<!-- page 228 -->
+<!-- page 227 -->
 
 Metaphor and Emotion
 209
@@ -10525,7 +10525,7 @@ cold is paralysing], krov¹ stynet v zhilakh ot kholoda [the blood freezes in on
 
 ---
 
-<!-- page 229 -->
+<!-- page 228 -->
 
 210
 Systematic Lexicography
@@ -10575,7 +10575,7 @@ foul taste; pity—physical pain; passion—fever, etc.) seem more clearly motiv
 
 ---
 
-<!-- page 230 -->
+<!-- page 229 -->
 
 Metaphor and Emotion
 211
@@ -10623,7 +10623,7 @@ them is surprise and related feelings: shiroko raskryt¹ glaza ot udivleniia; vy
 
 ---
 
-<!-- page 231 -->
+<!-- page 230 -->
 
 212
 Systematic Lexicography
@@ -10673,7 +10673,7 @@ cause of the emotion must be introduced by a quantiﬁer of singularity or deﬁ
 
 ---
 
-<!-- page 232 -->
+<!-- page 231 -->
 
 Metaphor and Emotion
 213
@@ -10720,7 +10720,7 @@ imagines something very unpleasant; his soul feels something akin to what his
 
 ---
 
-<!-- page 233 -->
+<!-- page 232 -->
 
 214
 Systematic Lexicography
@@ -10753,7 +10753,7 @@ ability to think rationally and impel him to act recklessly.’8
 
 ---
 
-<!-- page 234 -->
+<!-- page 233 -->
 
 8
 On the Language of Explications
@@ -10790,7 +10790,7 @@ ers (kauzirovat¹ [to cause], potok faktov [current of events]), or taken from t
 
 ---
 
-<!-- page 235 -->
+<!-- page 234 -->
 
 216
 Systematic Lexicography
@@ -10840,7 +10840,7 @@ ical, aﬀected, unnatural, facetious, or would have a diﬀerent sense (‘to l
 
 ---
 
-<!-- page 236 -->
+<!-- page 235 -->
 
 The Language of Explications
 217
@@ -10890,7 +10890,7 @@ vovat¹ [to walk triumphantly], semenit¹ [to walk with short mincing steps], an
 
 ---
 
-<!-- page 237 -->
+<!-- page 236 -->
 
 218
 Systematic Lexicography
@@ -10937,7 +10937,7 @@ perform their metalinguistic activity.1
 
 ---
 
-<!-- page 238 -->
+<!-- page 237 -->
 
 The Language of Explications
 219
@@ -10985,7 +10985,7 @@ tive explications follow: A zainteresovan v B [A has an interest in B] = ‘A th
 
 ---
 
-<!-- page 239 -->
+<!-- page 238 -->
 
 220
 Systematic Lexicography
@@ -11034,7 +11034,7 @@ blackmail can be reduced to the fact that ultimatum includes an indication of a
 
 ---
 
-<!-- page 240 -->
+<!-- page 239 -->
 
 The Language of Explications
 221
@@ -11084,7 +11084,7 @@ that X can do P only if he makes greater than normal eﬀorts; X says this be-
 
 ---
 
-<!-- page 241 -->
+<!-- page 240 -->
 
 222
 Systematic Lexicography
@@ -11134,7 +11134,7 @@ object-language units of which it is a component. We will term the former its
 
 ---
 
-<!-- page 242 -->
+<!-- page 241 -->
 
 The Language of Explications
 223
@@ -11183,7 +11183,7 @@ takes precedence over that of hierarchical structure and ﬁxes the lower limit 
 
 ---
 
-<!-- page 243 -->
+<!-- page 242 -->
 
 224
 Systematic Lexicography
@@ -11230,7 +11230,7 @@ lishing the set of primitives, given a profound theoretical analysis of this con
 
 ---
 
-<!-- page 244 -->
+<!-- page 243 -->
 
 The Language of Explications
 225
@@ -11280,7 +11280,7 @@ In the Moscow School, explications are constructed hierarchically. This require-
 
 ---
 
-<!-- page 245 -->
+<!-- page 244 -->
 
 226
 Systematic Lexicography
@@ -11327,7 +11327,7 @@ point of fact, Russian sentences such as ia khotel rasskazat¹ ei, chto ia perez
 
 ---
 
-<!-- page 246 -->
+<!-- page 245 -->
 
 The Language of Explications
 227
@@ -11381,7 +11381,7 @@ cally less speciﬁc.
 
 ---
 
-<!-- page 247 -->
+<!-- page 246 -->
 
 228
 Systematic Lexicography
@@ -11432,7 +11432,7 @@ always ‘foreground’ words, those most ﬁrmly established in a language and 
 
 ---
 
-<!-- page 248 -->
+<!-- page 247 -->
 
 The Language of Explications
 229
@@ -11482,7 +11482,7 @@ that she loves you] (shared knowledge). In none of these cases does the impera-
 
 ---
 
-<!-- page 249 -->
+<!-- page 248 -->
 
 230
 Systematic Lexicography
@@ -11528,7 +11528,7 @@ or ‘quarks’) that the vocabulary of the universal semantic language will be 
 
 ---
 
-<!-- page 250 -->
+<!-- page 249 -->
 
 9
 Lexicographic Portraits (A Case
@@ -11568,7 +11568,7 @@ guistic rules, with due account taken of all its connections in the lexicon and
 
 ---
 
-<!-- page 251 -->
+<!-- page 250 -->
 
 232
 Systematic Lexicography
@@ -11618,7 +11618,7 @@ tences, the main phrasal stress on the factive verb becomes almost a necessity: 
 
 ---
 
-<!-- page 252 -->
+<!-- page 251 -->
 
 Byt¹: A Case Study
 233
@@ -11668,7 +11668,7 @@ deistvitel¹no is the more interesting for the fact that parenthesis as a syntac
 
 ---
 
-<!-- page 253 -->
+<!-- page 252 -->
 
 234
 Systematic Lexicography
@@ -11718,7 +11718,7 @@ chim maﬁozi [I regard him as a real maﬁosi], etc.
 
 ---
 
-<!-- page 254 -->
+<!-- page 253 -->
 
 Byt¹: A Case Study
 235
@@ -11766,7 +11766,7 @@ the various facets of the member lexemes and reﬂect the nationally speciﬁc n
 
 ---
 
-<!-- page 255 -->
+<!-- page 254 -->
 
 236
 Systematic Lexicography
@@ -11816,7 +11816,7 @@ height (e.g. a solid metal cylinder) or breadth (e.g. a fortress wall seen from
 
 ---
 
-<!-- page 256 -->
+<!-- page 255 -->
 
 Byt¹: A Case Study
 237
@@ -11866,7 +11866,7 @@ pare vysota 〈dlina〉dereviannogo brusa [the height 〈length〉of a wooden be
 
 ---
 
-<!-- page 257 -->
+<!-- page 256 -->
 
 238
 Systematic Lexicography
@@ -11913,7 +11913,7 @@ lexical to semi-auxiliary and modal on to the purely grammatical. Moreover the
 
 ---
 
-<!-- page 258 -->
+<!-- page 257 -->
 
 Byt¹: A Case Study
 239
@@ -11963,7 +11963,7 @@ volume series by Verhaar 1967–73, constructed on the typological material of
 
 ---
 
-<!-- page 259 -->
+<!-- page 258 -->
 
 240
 Systematic Lexicography
@@ -12011,7 +12011,7 @@ today];
 
 ---
 
-<!-- page 260 -->
+<!-- page 259 -->
 
 Byt¹: A Case Study
 241
@@ -12058,7 +12058,7 @@ We leave it to the reader himself to establish the full measure of the divergenc
 
 ---
 
-<!-- page 261 -->
+<!-- page 260 -->
 
 242
 Systematic Lexicography
@@ -12106,7 +12106,7 @@ and Mozhno podumat¹ ~ ‘one should not think’ (Mozhno podumat¹, chto ty
 
 ---
 
-<!-- page 262 -->
+<!-- page 261 -->
 
 Byt¹: A Case Study
 243
@@ -12156,7 +12156,7 @@ same valency are separated by a slash (/) and enclosed in pointed brackets.
 
 ---
 
-<!-- page 263 -->
+<!-- page 262 -->
 
 244
 Systematic Lexicography
@@ -12208,7 +12208,7 @@ units (nekogo [nobody], nechego [nothing], negde [nowhere, no place], nekuda
 
 ---
 
-<!-- page 264 -->
+<!-- page 263 -->
 
 Byt¹: A Case Study
 245
@@ -12255,7 +12255,7 @@ have already been explained. Some of them, being transparent, are not explained.
 
 ---
 
-<!-- page 265 -->
+<!-- page 264 -->
 
 246
 Systematic Lexicography
@@ -12311,7 +12311,7 @@ a complex distribution among the meanings (see below); the second person fu-
 
 ---
 
-<!-- page 266 -->
+<!-- page 265 -->
 
 Byt¹: A Case Study
 247
@@ -12365,7 +12365,7 @@ form for A = nom is substandard: Uzh bol¹no vy obidchivye (you’re awfully
 
 ---
 
-<!-- page 267 -->
+<!-- page 266 -->
 
 248
 Systematic Lexicography
@@ -12422,7 +12422,7 @@ the children with?)—see 2.1].10 Ivanov byl iz rabochei sem¹i [Ivanov came fro
 
 ---
 
-<!-- page 268 -->
+<!-- page 267 -->
 
 Byt¹: A Case Study
 249
@@ -12480,7 +12480,7 @@ impersonal construction with predicatives.13
 
 ---
 
-<!-- page 269 -->
+<!-- page 268 -->
 
 250
 Systematic Lexicography
@@ -12537,7 +12537,7 @@ where], nekogda [no time] (cf. 4.2.2)].16
 
 ---
 
-<!-- page 270 -->
+<!-- page 269 -->
 
 Byt¹: A Case Study
 251
@@ -12597,7 +12597,7 @@ chetyre [there were four rooms]. Vintovok bylo nikak ne men¹she 〈bol¹she, ok
 
 ---
 
-<!-- page 271 -->
+<!-- page 270 -->
 
 252
 Systematic Lexicography
@@ -12650,7 +12650,7 @@ Lermontov).
 
 ---
 
-<!-- page 272 -->
+<!-- page 271 -->
 
 Byt¹: A Case Study
 253
@@ -12703,7 +12703,7 @@ nent ownership; compare U nego plastikovye lyzhi (i poetomu on tak bystro
 
 ---
 
-<!-- page 273 -->
+<!-- page 272 -->
 
 254
 Systematic Lexicography
@@ -12757,7 +12757,7 @@ stress or contrastive emphasis when byt¹ forms the rheme; in this case est¹ me
 
 ---
 
-<!-- page 274 -->
+<!-- page 273 -->
 
 Byt¹: A Case Study
 255
@@ -12811,7 +12811,7 @@ here].
 
 ---
 
-<!-- page 275 -->
+<!-- page 274 -->
 
 256
 Systematic Lexicography
@@ -12859,7 +12859,7 @@ usually precedes the subject; ANAL: bit¹ (to chime, strike)].
 
 ---
 
-<!-- page 276 -->
+<!-- page 275 -->
 
 Byt¹: A Case Study
 257
@@ -12915,7 +12915,7 @@ proiskhodit¹ (to happen); ~ ANT: izbezhat¹ (to avoid)].30
 
 ---
 
-<!-- page 277 -->
+<!-- page 276 -->
 
 258
 Systematic Lexicography
@@ -12973,7 +12973,7 @@ dostatochno, khvatit (enough)].
 
 ---
 
-<!-- page 278 -->
+<!-- page 277 -->
 
 Byt¹: A Case Study
 259
@@ -13023,7 +13023,7 @@ opredelennaia situatsiia imeet mesto, khotia i dopuskaet, chto mozhet oshibat¹s
 
 ---
 
-<!-- page 279 -->
+<!-- page 278 -->
 
 260
 Systematic Lexicography
@@ -13072,7 +13072,7 @@ doing something well].36
 
 ---
 
-<!-- page 280 -->
+<!-- page 279 -->
 
 10
 A Lexicographic Portrait of the Verb
@@ -13112,7 +13112,7 @@ matters is also greatly expanded. Previously co-occurrence was considered mainly
 
 ---
 
-<!-- page 281 -->
+<!-- page 280 -->
 
 262
 Systematic Lexicography
@@ -13162,7 +13162,7 @@ rial as word classes. Recognition of this fact led to a breakthrough into two
 
 ---
 
-<!-- page 282 -->
+<!-- page 281 -->
 
 A Lexicographic Portrait: Vyiti
 263
@@ -13209,7 +13209,7 @@ rather their application: the minimal objects of stylistic classiﬁcation are n
 
 ---
 
-<!-- page 283 -->
+<!-- page 282 -->
 
 264
 Systematic Lexicography
@@ -13259,7 +13259,7 @@ son with the mainly thematic putative verbs such as schitat¹ [to consider],
 
 ---
 
-<!-- page 284 -->
+<!-- page 283 -->
 
 A Lexicographic Portrait: Vyiti
 265
@@ -13309,7 +13309,7 @@ muzyku [there are those who don’t like music]); (7.8) syntactic (e.g. an attri
 
 ---
 
-<!-- page 285 -->
+<!-- page 284 -->
 
 266
 Systematic Lexicography
@@ -13356,7 +13356,7 @@ move into an enclosed space from a more open space’ and the impossible *voiti
 
 ---
 
-<!-- page 286 -->
+<!-- page 285 -->
 
 A Lexicographic Portrait: Vyiti
 267
@@ -13406,7 +13406,7 @@ vyshlo okolo kubometra drov [about a cubic metre of ﬁrewood was used up
 
 ---
 
-<!-- page 287 -->
+<!-- page 286 -->
 
 268
 Systematic Lexicography
@@ -13456,7 +13456,7 @@ dents will make good engineers]) [to emerge, be produced];
 
 ---
 
-<!-- page 288 -->
+<!-- page 287 -->
 
 A Lexicographic Portrait: Vyiti
 269
@@ -13504,7 +13504,7 @@ the deputy chairman];
 
 ---
 
-<!-- page 289 -->
+<!-- page 288 -->
 
 270
 Systematic Lexicography
@@ -13562,7 +13562,7 @@ acc [N2—aim of action].
 
 ---
 
-<!-- page 290 -->
+<!-- page 289 -->
 
 A Lexicographic Portrait: Vyiti
 271
@@ -13619,7 +13619,7 @@ at six in the morning].
 
 ---
 
-<!-- page 291 -->
+<!-- page 290 -->
 
 272
 Systematic Lexicography
@@ -13677,7 +13677,7 @@ become involved in, start)].
 
 ---
 
-<!-- page 292 -->
+<!-- page 291 -->
 
 A Lexicographic Portrait: Vyiti
 273
@@ -13735,7 +13735,7 @@ day 〈after the holidays〉].
 
 ---
 
-<!-- page 293 -->
+<!-- page 292 -->
 
 274
 Systematic Lexicography
@@ -13796,7 +13796,7 @@ venchat¹sia,
 
 ---
 
-<!-- page 294 -->
+<!-- page 293 -->
 
 A Lexicographic Portrait: Vyiti
 275
@@ -13849,7 +13849,7 @@ Iz etikh studentov vyidut prevoskhodnye inzhenery [these students will make su-
 
 ---
 
-<!-- page 295 -->
+<!-- page 294 -->
 
 276
 Systematic Lexicography
@@ -13900,7 +13900,7 @@ meaning; usually precedes the subject; ~ SYN: poluchit¹sia (to turn out, work
 
 ---
 
-<!-- page 296 -->
+<!-- page 295 -->
 
 A Lexicographic Portrait: Vyiti
 277
@@ -13948,7 +13948,7 @@ Dom vykhodil oknami vo dvor [the windows of the house gave onto the court-
 
 ---
 
-<!-- page 297 -->
+<!-- page 296 -->
 
 278
 Systematic Lexicography
@@ -13988,7 +13988,7 @@ nepriiatnostei’ [to end badly for smb., to bring smb. nothing but unpleasantne
 
 ---
 
-<!-- page 298 -->
+<!-- page 297 -->
 
 References
 Anichkov, I. E. (1964). ‘O tak nazyvaemykh novykh chastiakh rechi’, in Nekotorye
@@ -14040,7 +14040,7 @@ Semantic Primitives’].
 
 ---
 
-<!-- page 299 -->
+<!-- page 298 -->
 
 280
 References
@@ -14093,7 +14093,7 @@ Guide to Word Combinations. Amsterdam.
 
 ---
 
-<!-- page 300 -->
+<!-- page 299 -->
 
 References
 281
@@ -14146,7 +14146,7 @@ Grammar. London, 1958].
 
 ---
 
-<!-- page 301 -->
+<!-- page 300 -->
 
 282
 References
@@ -14199,7 +14199,7 @@ Ivanova, V. F. (1973). ‘Modeli kolichestvennykh predlozhenii’. Russkii iazyk
 
 ---
 
-<!-- page 302 -->
+<!-- page 301 -->
 
 References
 283
@@ -14252,7 +14252,7 @@ semantikoi’, dissertation for the degree of Candidate of Philological Sciences
 
 ---
 
-<!-- page 303 -->
+<!-- page 302 -->
 
 284
 References
@@ -14305,7 +14305,7 @@ Semiotika i informatika, 11.
 
 ---
 
-<!-- page 304 -->
+<!-- page 303 -->
 
 References
 285
@@ -14357,7 +14357,7 @@ Ziﬀ, P. (1983). Epistemic Analysis. A Coherence Theory of Knowledge. Dordrecht
 
 ---
 
-<!-- page 305 -->
+<!-- page 304 -->
 
 286
 References
@@ -14368,7 +14368,7 @@ sovremennogo russkogo iazyka, Moscow, 147–73.
 
 ---
 
-<!-- page 306 -->
+<!-- page 305 -->
 
 Index of English Lexemes
 abandon 8
@@ -14521,7 +14521,7 @@ dispute 43–4, 49, 50
 
 ---
 
-<!-- page 307 -->
+<!-- page 306 -->
 
 288
 Index of English Lexemes
@@ -14687,7 +14687,7 @@ proﬁcient 25
 
 ---
 
-<!-- page 308 -->
+<!-- page 307 -->
 
 Index of English Lexemes
 289
@@ -14833,13 +14833,13 @@ yearn 23, 228
 
 ---
 
-<!-- page 309 -->
+<!-- page 308 -->
 
 This page intentionally left blank
 
 ---
 
-<!-- page 310 -->
+<!-- page 309 -->
 
 Index of Russian lexemes
 adaptirovat¹sia 60, 129, 133,
@@ -14989,7 +14989,7 @@ garantirovat¹ 95, 137
 
 ---
 
-<!-- page 311 -->
+<!-- page 310 -->
 
 292
 Index of Russian lexemes
@@ -15164,7 +15164,7 @@ liuboznatel¹nost¹ 104
 
 ---
 
-<!-- page 312 -->
+<!-- page 311 -->
 
 Index of Russian lexemes
 293
@@ -15339,7 +15339,7 @@ otchityvat¹ 95, 133, 140
 
 ---
 
-<!-- page 313 -->
+<!-- page 312 -->
 
 294
 Index of Russian lexemes
@@ -15516,7 +15516,7 @@ prikazyvat¹ 60
 
 ---
 
-<!-- page 314 -->
+<!-- page 313 -->
 
 Index of Russian lexemes
 295
@@ -15692,7 +15692,7 @@ shagat¹ 218
 
 ---
 
-<!-- page 315 -->
+<!-- page 314 -->
 
 296
 Index of Russian lexemes
@@ -15871,7 +15871,7 @@ usmotret¹ 147, 154
 
 ---
 
-<!-- page 316 -->
+<!-- page 315 -->
 
 Index of Russian lexemes
 297
@@ -16047,7 +16047,7 @@ zaprosto 66
 
 ---
 
-<!-- page 317 -->
+<!-- page 316 -->
 
 298
 Index of Russian lexemes
@@ -16114,7 +16114,7 @@ zria 89, 159
 
 ---
 
-<!-- page 318 -->
+<!-- page 317 -->
 
 Subject Index
 Absolutive construction 82
@@ -16214,7 +16214,7 @@ Grammatical construction 7, 13, 156–8,
 
 ---
 
-<!-- page 319 -->
+<!-- page 318 -->
 
 300
 Subject Index
@@ -16328,7 +16328,7 @@ Proper meaning 65–6, 76
 
 ---
 
-<!-- page 320 -->
+<!-- page 319 -->
 
 Subject Index
 301
@@ -16430,13 +16430,13 @@ Word-formation model 100, 145, 211
 
 ---
 
-<!-- page 321 -->
+<!-- page 320 -->
 
 This page intentionally left blank
 
 ---
 
-<!-- page 322 -->
+<!-- page 321 -->
 
 Index of Names
 Anichkov, I. 250
@@ -16530,7 +16530,7 @@ Mosiagina, M. 280
 
 ---
 
-<!-- page 323 -->
+<!-- page 322 -->
 
 304
 Index of Names

@@ -6,4 +6,4 @@
 
 ---
 
-> **Note:** Scanned image PDF (54 pages, avg 0 chars/page). Full text requires OCR (Tesseract/ABBYY).
+> **Note:** Scanned image PDF (54 pages, avg pdftotext=0 / PyMuPDF=0 chars/page). Full text requires OCR.

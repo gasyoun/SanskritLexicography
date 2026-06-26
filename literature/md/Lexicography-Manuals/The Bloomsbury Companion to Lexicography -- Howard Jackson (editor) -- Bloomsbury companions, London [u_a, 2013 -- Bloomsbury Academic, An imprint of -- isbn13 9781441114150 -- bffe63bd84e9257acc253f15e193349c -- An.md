@@ -6,13 +6,13 @@
 
 ---
 
-<!-- page 2 -->
+<!-- page 1 -->
 
 The Bloomsbury Companion to Lexicography
 
 ---
 
-<!-- page 3 -->
+<!-- page 2 -->
 
 Bloomsbury Companions
 Bloomsbury Companion to Cognitive Linguistics, Edited by John R. Taylor  
@@ -44,7 +44,7 @@ Jody Bryne
 
 ---
 
-<!-- page 4 -->
+<!-- page 3 -->
 
 The Bloomsbury  
 Companion to  
@@ -55,7 +55,7 @@ LONDON • NEW DELHI • NEW YORK • SYDNEY
 
 ---
 
-<!-- page 5 -->
+<!-- page 4 -->
 
 Bloomsbury Academic
 An imprint of Bloomsbury Publishing Plc
@@ -87,7 +87,7 @@ Typeset by Newgen Imaging Systems Pvt Ltd, Chennai, India
 
 ---
 
-<!-- page 6 -->
+<!-- page 5 -->
 
 Contents
 List of Contributors	
@@ -153,7 +153,7 @@ Inge Zwitserlood, Jette Hedegaard Kristoffersen and Thomas Troelsgård
 
 ---
 
-<!-- page 7 -->
+<!-- page 6 -->
 
 Contents
 vi
@@ -198,7 +198,7 @@ Index
 
 ---
 
-<!-- page 8 -->
+<!-- page 7 -->
 
 List of Contributors
 Arleta Adamska-Sałaciak is Professor and Head of the Department of 
@@ -239,7 +239,7 @@ tion technology. She also leads the research projects ONTODIC I and II, which
 
 ---
 
-<!-- page 9 -->
+<!-- page 8 -->
 
 List of Contributors
 viii
@@ -286,7 +286,7 @@ publications include: ‘Dictionary, teaching and student – the English Langu
 
 ---
 
-<!-- page 10 -->
+<!-- page 9 -->
 
 List of Contributors
 ix
@@ -332,7 +332,7 @@ the HSK (Mouton de Gruyter, 2004).
 
 ---
 
-<!-- page 11 -->
+<!-- page 10 -->
 
 List of Contributors
 x
@@ -379,7 +379,7 @@ Journal of Lexicography (Oxford University Press). In 2011 he edited a special
 
 ---
 
-<!-- page 12 -->
+<!-- page 11 -->
 
 List of Contributors
 xi
@@ -425,7 +425,7 @@ in electronic dictionaries.
 
 ---
 
-<!-- page 13 -->
+<!-- page 12 -->
 
 List of Contributors
 xii
@@ -472,7 +472,7 @@ and Mattisson (eds) 2012).
 
 ---
 
-<!-- page 14 -->
+<!-- page 13 -->
 
 List of Contributors
 xiii
@@ -513,7 +513,7 @@ sionals and laymen’ (2008; available at www.ru.nl/corpusngt).
 
 ---
 
-<!-- page 16 -->
+<!-- page 14 -->
 
 1
 This introductory chapter has two purposes: to characterize the field of lexicog-
@@ -547,7 +547,7 @@ Howard Jackson
 
 ---
 
-<!-- page 17 -->
+<!-- page 15 -->
 
 The Bloomsbury Companion to Lexicography
 2
@@ -594,7 +594,7 @@ writing about dictionaries’ (Bergenholtz and Gouws 2012: 76).
 
 ---
 
-<!-- page 18 -->
+<!-- page 16 -->
 
 Introduction
 3
@@ -640,7 +640,7 @@ looks forward, with three contributions on directions in which the study of
 
 ---
 
-<!-- page 19 -->
+<!-- page 17 -->
 
 The Bloomsbury Companion to Lexicography
 4
@@ -686,7 +686,7 @@ in corpus linguistics that have influenced dictionary content, from the KWIC
 
 ---
 
-<!-- page 20 -->
+<!-- page 18 -->
 
 Introduction
 5
@@ -732,7 +732,7 @@ few (some seven) attempts to provide such criteria and observes that each of
 
 ---
 
-<!-- page 21 -->
+<!-- page 19 -->
 
 The Bloomsbury Companion to Lexicography
 6
@@ -781,7 +781,7 @@ on e-dictionaries, though she notes, encouragingly, the many university-based
 
 ---
 
-<!-- page 22 -->
+<!-- page 20 -->
 
 Introduction
 7
@@ -827,7 +827,7 @@ made for enhancing and developing search techniques to satisfy particular user
 
 ---
 
-<!-- page 23 -->
+<!-- page 21 -->
 
 The Bloomsbury Companion to Lexicography
 8
@@ -876,7 +876,7 @@ sider and review alternative etymological analyses. Etymology in the OED is of
 
 ---
 
-<!-- page 24 -->
+<!-- page 22 -->
 
 Introduction
 9
@@ -925,7 +925,7 @@ teachers and their influence, through their teaching methods and curriculum,
 
 ---
 
-<!-- page 25 -->
+<!-- page 23 -->
 
 The Bloomsbury Companion to Lexicography
 10
@@ -974,7 +974,7 @@ from those involved in compiling a monolingual dictionary. The target audience
 
 ---
 
-<!-- page 26 -->
+<!-- page 24 -->
 
 Introduction
 11
@@ -1023,7 +1023,7 @@ to produce general-purpose dictionaries rather than those tailored to the needs
 
 ---
 
-<!-- page 27 -->
+<!-- page 25 -->
 
 The Bloomsbury Companion to Lexicography
 12
@@ -1072,7 +1072,7 @@ sign variants, whether to regard as lemmas, among others, classifier predicates
 
 ---
 
-<!-- page 28 -->
+<!-- page 26 -->
 
 Introduction
 13
@@ -1121,7 +1121,7 @@ parallel corpora. After a brief excursus into menus and guidewords, as aids for
 
 ---
 
-<!-- page 29 -->
+<!-- page 27 -->
 
 The Bloomsbury Companion to Lexicography
 14
@@ -1170,7 +1170,7 @@ lexicographical theories have validity. He notes that they are not predictive,
 
 ---
 
-<!-- page 30 -->
+<!-- page 28 -->
 
 Introduction
 15
@@ -1216,7 +1216,7 @@ achieved.
 
 ---
 
-<!-- page 31 -->
+<!-- page 29 -->
 
 The Bloomsbury Companion to Lexicography
 16
@@ -1265,7 +1265,7 @@ change. Trends that have been noticed recently include: the shift of lexicograph
 
 ---
 
-<!-- page 32 -->
+<!-- page 30 -->
 
 Introduction
 17
@@ -1311,7 +1311,7 @@ research. He discusses eight types of resource: academies, associations, corpora
 
 ---
 
-<!-- page 33 -->
+<!-- page 31 -->
 
 The Bloomsbury Companion to Lexicography
 18
@@ -1360,7 +1360,7 @@ MA: Merriam-Webster.
 
 ---
 
-<!-- page 34 -->
+<!-- page 32 -->
 
 19
 1  Historical Overview
@@ -1395,7 +1395,7 @@ Paul Bogaards
 
 ---
 
-<!-- page 35 -->
+<!-- page 33 -->
 
 The Bloomsbury Companion to Lexicography
 20
@@ -1441,7 +1441,7 @@ paces, and methodologies have not been worked out in all domains.
 
 ---
 
-<!-- page 36 -->
+<!-- page 34 -->
 
 A History of Research in Lexicography
 21
@@ -1486,7 +1486,7 @@ taken into account, mainly depending on the expertise of the evaluator. Going
 
 ---
 
-<!-- page 37 -->
+<!-- page 35 -->
 
 The Bloomsbury Companion to Lexicography
 22
@@ -1532,7 +1532,7 @@ arthropods . . . and still awaits its Linnaeus or its Cuvier’.
 
 ---
 
-<!-- page 38 -->
+<!-- page 36 -->
 
 A History of Research in Lexicography
 23
@@ -1576,7 +1576,7 @@ As language dictionaries are never complete (only dictionaries of an author’s
 
 ---
 
-<!-- page 39 -->
+<!-- page 37 -->
 
 The Bloomsbury Companion to Lexicography
 24
@@ -1625,7 +1625,7 @@ bilingual dictionary or a learners’ dictionary).
 
 ---
 
-<!-- page 40 -->
+<!-- page 38 -->
 
 A History of Research in Lexicography
 25
@@ -1671,7 +1671,7 @@ turned out to be too global and not all variables involved were under control.
 
 ---
 
-<!-- page 41 -->
+<!-- page 39 -->
 
 The Bloomsbury Companion to Lexicography
 26
@@ -1720,7 +1720,7 @@ done by Bogaards (1998b) and was recently taken up by Nesi and Tan (2011) as
 
 ---
 
-<!-- page 42 -->
+<!-- page 40 -->
 
 A History of Research in Lexicography
 27
@@ -1766,7 +1766,7 @@ bines prototype theory with the outcomes of corpus linguistics and shows
 
 ---
 
-<!-- page 43 -->
+<!-- page 41 -->
 
 The Bloomsbury Companion to Lexicography
 28
@@ -1814,7 +1814,7 @@ at the DSNA 2009. Tel Aviv: KDictionaries, 11–27.
 
 ---
 
-<!-- page 44 -->
+<!-- page 42 -->
 
 A History of Research in Lexicography
 29
@@ -1873,7 +1873,7 @@ Kolloquium (Lexicographica. Series Maior 27). Tübingen: Max Niemeyer, 75–109.
 
 ---
 
-<!-- page 45 -->
+<!-- page 43 -->
 
 The Bloomsbury Companion to Lexicography
 30
@@ -1931,7 +1931,7 @@ cle: une révolution tranquille. In: M. Cormier, A Francoeur and J.-C. Boulanger
 
 ---
 
-<!-- page 46 -->
+<!-- page 44 -->
 
 A History of Research in Lexicography
 31
@@ -1966,14 +1966,14 @@ Zgusta, L. (1971) Manual of Lexicography. The Hague/Paris: Mouton.
 
 ---
 
-<!-- page 48 -->
+<!-- page 45 -->
 
 3
 Research Methods and Problems
 
 ---
 
-<!-- page 50 -->
+<!-- page 46 -->
 
 35
 The computerization of work routines that the world has witnessed over the 
@@ -2010,7 +2010,7 @@ Lars Trap-Jensen
 
 ---
 
-<!-- page 51 -->
+<!-- page 47 -->
 
 The Bloomsbury Companion to Lexicography
 36
@@ -2055,7 +2055,7 @@ of the chapter.
 
 ---
 
-<!-- page 52 -->
+<!-- page 48 -->
 
 Researching Lexicographical Practice
 37
@@ -2103,7 +2103,7 @@ other purposes. In a dictionary project that began in the early 1990s, The Danis
 
 ---
 
-<!-- page 53 -->
+<!-- page 49 -->
 
 The Bloomsbury Companion to Lexicography
 38
@@ -2149,7 +2149,7 @@ lemma selection, lexical variants, inflection, collocations, valency patterns, s
 
 ---
 
-<!-- page 54 -->
+<!-- page 50 -->
 
 Researching Lexicographical Practice
 39
@@ -2191,7 +2191,7 @@ Whenever the normative role of language is involved, an element of authority
 
 ---
 
-<!-- page 55 -->
+<!-- page 51 -->
 
 The Bloomsbury Companion to Lexicography
 40
@@ -2237,7 +2237,7 @@ represented in the corpus to warrant their inclusion. Even if absence from the
 
 ---
 
-<!-- page 56 -->
+<!-- page 52 -->
 
 Researching Lexicographical Practice
 41
@@ -2286,7 +2286,7 @@ simple answer to this problem, and the lexicographer must in each case carefully
 
 ---
 
-<!-- page 57 -->
+<!-- page 53 -->
 
 The Bloomsbury Companion to Lexicography
 42
@@ -2332,7 +2332,7 @@ man is superior to the computer.
 
 ---
 
-<!-- page 58 -->
+<!-- page 54 -->
 
 Researching Lexicographical Practice
 43
@@ -2378,7 +2378,7 @@ duction and workflow in the various editorial phases. DWSs may be developed
 
 ---
 
-<!-- page 59 -->
+<!-- page 55 -->
 
 The Bloomsbury Companion to Lexicography
 44
@@ -2419,7 +2419,7 @@ welcomed the digital possibilities with enthusiasm. Through hyperlinks they
 
 ---
 
-<!-- page 60 -->
+<!-- page 56 -->
 
 Researching Lexicographical Practice
 45
@@ -2464,7 +2464,7 @@ digital natives.
 
 ---
 
-<!-- page 61 -->
+<!-- page 57 -->
 
 The Bloomsbury Companion to Lexicography
 46
@@ -2512,7 +2512,7 @@ and what do they do once they have? In: R.V. Fjeld and J. M. Torjusen (eds) Proc
 
 ---
 
-<!-- page 62 -->
+<!-- page 58 -->
 
 Researching Lexicographical Practice
 47
@@ -2541,7 +2541,7 @@ de Louvain (Cahiers du CENTAL series), 325–34.
 
 ---
 
-<!-- page 63 -->
+<!-- page 59 -->
 
 48
 1  Introduction
@@ -2581,7 +2581,7 @@ Kaoru Akasu
 
 ---
 
-<!-- page 64 -->
+<!-- page 60 -->
 
 Methods in Dictionary Criticism
 49
@@ -2624,7 +2624,7 @@ or set up applicable criteria that may be used in the actual implementation of
 
 ---
 
-<!-- page 65 -->
+<!-- page 61 -->
 
 The Bloomsbury Companion to Lexicography
 50
@@ -2670,7 +2670,7 @@ produced by reputable people? 4. Is the dictionary reasonably current?
 
 ---
 
-<!-- page 66 -->
+<!-- page 62 -->
 
 Methods in Dictionary Criticism
 51
@@ -2718,7 +2718,7 @@ evaluative review?’. [C] contains questions such as ‘Who is the reviewer?’
 
 ---
 
-<!-- page 67 -->
+<!-- page 63 -->
 
 The Bloomsbury Companion to Lexicography
 52
@@ -2764,7 +2764,7 @@ by studies of evaluation criteria such as those I mentioned above.
 
 ---
 
-<!-- page 68 -->
+<!-- page 64 -->
 
 Methods in Dictionary Criticism
 53
@@ -2813,7 +2813,7 @@ erties of different criteria. We would eventually end up with something like
 
 ---
 
-<!-- page 69 -->
+<!-- page 65 -->
 
 The Bloomsbury Companion to Lexicography
 54
@@ -2859,7 +2859,7 @@ of NODE will be examined from a number of aspects. First, the core sense and
 
 ---
 
-<!-- page 70 -->
+<!-- page 66 -->
 
 Methods in Dictionary Criticism
 55
@@ -2908,7 +2908,7 @@ that a dictionary provides corresponds more closely to reliable empirical
 
 ---
 
-<!-- page 71 -->
+<!-- page 67 -->
 
 The Bloomsbury Companion to Lexicography
 56
@@ -2951,7 +2951,7 @@ analysis stands now. It is about time dictionary analysis itself was reviewed in
 
 ---
 
-<!-- page 72 -->
+<!-- page 68 -->
 
 Methods in Dictionary Criticism
 57
@@ -3002,7 +3002,7 @@ with subsequent analyses following one after another, long before Chapman (1977:
 
 ---
 
-<!-- page 73 -->
+<!-- page 69 -->
 
 The Bloomsbury Companion to Lexicography
 58
@@ -3069,7 +3069,7 @@ Macmillan Education.
 
 ---
 
-<!-- page 74 -->
+<!-- page 70 -->
 
 Methods in Dictionary Criticism
 59
@@ -3132,7 +3132,7 @@ say. International Journal of Lexicography 14/3, 163–80.
 
 ---
 
-<!-- page 75 -->
+<!-- page 71 -->
 
 The Bloomsbury Companion to Lexicography
 60
@@ -3191,7 +3191,7 @@ Lexicon 25, 1–13.
 
 ---
 
-<!-- page 76 -->
+<!-- page 72 -->
 
 Methods in Dictionary Criticism
 61
@@ -3222,7 +3222,7 @@ Aviv: KDictionaries, 147–68.
 
 ---
 
-<!-- page 77 -->
+<!-- page 73 -->
 
 62
 1  Introduction
@@ -3261,7 +3261,7 @@ Hilary Nesi
 
 ---
 
-<!-- page 78 -->
+<!-- page 74 -->
 
 Researching Users and Uses of Dictionaries
 63
@@ -3313,7 +3313,7 @@ ary users, for example, and East (2008) observed groups of six and five users.
 
 ---
 
-<!-- page 79 -->
+<!-- page 75 -->
 
 The Bloomsbury Companion to Lexicography
 64
@@ -3362,7 +3362,7 @@ of the special skills needed to think aloud, and the amount of time required to
 
 ---
 
-<!-- page 80 -->
+<!-- page 76 -->
 
 Researching Users and Uses of Dictionaries
 65
@@ -3411,7 +3411,7 @@ ity of the findings.
 
 ---
 
-<!-- page 81 -->
+<!-- page 77 -->
 
 The Bloomsbury Companion to Lexicography
 66
@@ -3470,7 +3470,7 @@ crossword puzzles at home.
 
 ---
 
-<!-- page 82 -->
+<!-- page 78 -->
 
 Researching Users and Uses of Dictionaries
 67
@@ -3521,7 +3521,7 @@ Activities associated with dictionary use.
 
 ---
 
-<!-- page 83 -->
+<!-- page 79 -->
 
 The Bloomsbury Companion to Lexicography
 68
@@ -3567,7 +3567,7 @@ that one lexicographical approach is superior to another, but they are a useful
 
 ---
 
-<!-- page 84 -->
+<!-- page 80 -->
 
 Researching Users and Uses of Dictionaries
 69
@@ -3613,7 +3613,7 @@ users’ misinterpretations of dictionary information, through failing to read t
 
 ---
 
-<!-- page 85 -->
+<!-- page 81 -->
 
 The Bloomsbury Companion to Lexicography
 70
@@ -3658,7 +3658,7 @@ Dziemianko (2006: 277) point out.
 
 ---
 
-<!-- page 86 -->
+<!-- page 82 -->
 
 Researching Users and Uses of Dictionaries
 71
@@ -3709,7 +3709,7 @@ Université Départements d’Anglais et de Néerlandais, 555–63.
 
 ---
 
-<!-- page 87 -->
+<!-- page 83 -->
 
 The Bloomsbury Companion to Lexicography
 72
@@ -3769,7 +3769,7 @@ Institute for Applied Slovene Studies.
 
 ---
 
-<!-- page 88 -->
+<!-- page 84 -->
 
 Researching Users and Uses of Dictionaries
 73
@@ -3829,7 +3829,7 @@ accuracy of sense selection. International Journal of Lexicography 24/1, 79–96
 
 ---
 
-<!-- page 89 -->
+<!-- page 85 -->
 
 The Bloomsbury Companion to Lexicography
 74
@@ -3885,14 +3885,14 @@ Zhang, P. (2004) Is the electronic dictionary your faithful friend? CELEA Journa
 
 ---
 
-<!-- page 90 -->
+<!-- page 86 -->
 
 4
 Current Research and Issues
 
 ---
 
-<!-- page 92 -->
+<!-- page 87 -->
 
 77
 1  Introduction
@@ -3934,7 +3934,7 @@ Adam Kilgarriff
 
 ---
 
-<!-- page 93 -->
+<!-- page 88 -->
 
 The Bloomsbury Companion to Lexicography
 78
@@ -3996,7 +3996,7 @@ leading edge of the use of corpora in lexicography.
 
 ---
 
-<!-- page 94 -->
+<!-- page 89 -->
 
 Using Corpora as Data Sources for Dictionaries
 79
@@ -4038,7 +4038,7 @@ items. Lists of high-frequency word-pairs in any English corpus are dominated
 
 ---
 
-<!-- page 95 -->
+<!-- page 90 -->
 
 The Bloomsbury Companion to Lexicography
 80
@@ -4081,7 +4081,7 @@ are described in detail in Kilgarriff (1997).
 
 ---
 
-<!-- page 96 -->
+<!-- page 91 -->
 
 Using Corpora as Data Sources for Dictionaries
 81
@@ -4163,7 +4163,7 @@ delete -ing
 
 ---
 
-<!-- page 97 -->
+<!-- page 92 -->
 
 The Bloomsbury Companion to Lexicography
 82
@@ -4212,7 +4212,7 @@ wheat to chaff is low, but among the nonce productions there are some which
 
 ---
 
-<!-- page 98 -->
+<!-- page 93 -->
 
 Using Corpora as Data Sources for Dictionaries
 83
@@ -4258,7 +4258,7 @@ lexicographers: the ratio of noise to signal was high, the first impression of a
 
 ---
 
-<!-- page 99 -->
+<!-- page 94 -->
 
 The Bloomsbury Companion to Lexicography
 84
@@ -4280,7 +4280,7 @@ web corpus)
 
 ---
 
-<!-- page 100 -->
+<!-- page 95 -->
 
 Using Corpora as Data Sources for Dictionaries
 85
@@ -4329,7 +4329,7 @@ language (Kilgarriff et al. 2010).
 
 ---
 
-<!-- page 101 -->
+<!-- page 96 -->
 
 The Bloomsbury Companion to Lexicography
 86
@@ -4338,7 +4338,7 @@ Figure 4.1.3  Sketch diff comparing strong and powerful
 
 ---
 
-<!-- page 102 -->
+<!-- page 97 -->
 
 Using Corpora as Data Sources for Dictionaries
 87
@@ -4396,7 +4396,7 @@ we do not want to bombard the dictionary user with too many labels (or the
 
 ---
 
-<!-- page 103 -->
+<!-- page 98 -->
 
 The Bloomsbury Companion to Lexicography
 88
@@ -4515,7 +4515,7 @@ Levy
 
 ---
 
-<!-- page 104 -->
+<!-- page 99 -->
 
 Using Corpora as Data Sources for Dictionaries
 89
@@ -4561,7 +4561,7 @@ for passives – the percentage of the lexicon we want to label for register.
 
 ---
 
-<!-- page 105 -->
+<!-- page 100 -->
 
 The Bloomsbury Companion to Lexicography
 90
@@ -4604,7 +4604,7 @@ West African English.
 
 ---
 
-<!-- page 106 -->
+<!-- page 101 -->
 
 Using Corpora as Data Sources for Dictionaries
 91
@@ -4646,7 +4646,7 @@ of language technology and the use of corpora.
 
 ---
 
-<!-- page 107 -->
+<!-- page 102 -->
 
 The Bloomsbury Companion to Lexicography
 92
@@ -4677,7 +4677,7 @@ language pair English-German
 
 ---
 
-<!-- page 108 -->
+<!-- page 103 -->
 
 Using Corpora as Data Sources for Dictionaries
 93
@@ -4697,7 +4697,7 @@ language pair English-French
 
 ---
 
-<!-- page 109 -->
+<!-- page 104 -->
 
 The Bloomsbury Companion to Lexicography
 94
@@ -4743,7 +4743,7 @@ cographer operating at that interface.
 
 ---
 
-<!-- page 110 -->
+<!-- page 105 -->
 
 Using Corpora as Data Sources for Dictionaries
 95
@@ -4796,7 +4796,7 @@ Euralex Congress. Copenhagen: University of Copenhagen, 807–18.
 
 ---
 
-<!-- page 111 -->
+<!-- page 106 -->
 
 The Bloomsbury Companion to Lexicography
 96
@@ -4834,7 +4834,7 @@ Lexicography 11/3, 187–203.
 
 ---
 
-<!-- page 112 -->
+<!-- page 107 -->
 
 97
 1  Introduction
@@ -4871,7 +4871,7 @@ Amparo Alcina
 
 ---
 
-<!-- page 113 -->
+<!-- page 108 -->
 
 The Bloomsbury Companion to Lexicography
 98
@@ -4919,7 +4919,7 @@ sification provides.
 
 ---
 
-<!-- page 114 -->
+<!-- page 109 -->
 
 Researching the Use of Electronic Dictionaries
 99
@@ -4948,7 +4948,7 @@ translation in de Schryver (2003: 148)
 
 ---
 
-<!-- page 115 -->
+<!-- page 110 -->
 
 The Bloomsbury Companion to Lexicography
 100
@@ -4997,7 +4997,7 @@ been implemented in electronic dictionaries, or that would be desirable to
 
 ---
 
-<!-- page 116 -->
+<!-- page 111 -->
 
 Researching the Use of Electronic Dictionaries
 101
@@ -5046,7 +5046,7 @@ for related words, which accesses words that are semantically related to other
 
 ---
 
-<!-- page 117 -->
+<!-- page 112 -->
 
 The Bloomsbury Companion to Lexicography
 102
@@ -5095,7 +5095,7 @@ tionaries and the search possibilities they offer.
 
 ---
 
-<!-- page 118 -->
+<!-- page 113 -->
 
 Researching the Use of Electronic Dictionaries
 103
@@ -5143,7 +5143,7 @@ cally related words, introduction of an inflected form, search for anagrams,
 
 ---
 
-<!-- page 119 -->
+<!-- page 114 -->
 
 The Bloomsbury Companion to Lexicography
 104
@@ -5189,7 +5189,7 @@ search in the definition field of a dictionary (resource), the result we obtain 
 
 ---
 
-<!-- page 120 -->
+<!-- page 115 -->
 
 Researching the Use of Electronic Dictionaries
 105
@@ -5223,7 +5223,7 @@ Figure 4.2.2  Representation of two search techniques in a dictionary
 
 ---
 
-<!-- page 121 -->
+<!-- page 116 -->
 
 The Bloomsbury Companion to Lexicography
 106
@@ -5267,7 +5267,7 @@ in more detail below.
 
 ---
 
-<!-- page 122 -->
+<!-- page 117 -->
 
 Researching the Use of Electronic Dictionaries
 107
@@ -5297,7 +5297,7 @@ Figure 4.2.3  Search by inflected form in the Ultralingua dictionary
 
 ---
 
-<!-- page 123 -->
+<!-- page 118 -->
 
 The Bloomsbury Companion to Lexicography
 108
@@ -5342,7 +5342,7 @@ the resource. Below, we present some examples.
 
 ---
 
-<!-- page 124 -->
+<!-- page 119 -->
 
 Researching the Use of Electronic Dictionaries
 109
@@ -5367,7 +5367,7 @@ Reverse Dictionary
 
 ---
 
-<!-- page 125 -->
+<!-- page 120 -->
 
 The Bloomsbury Companion to Lexicography
 110
@@ -5384,7 +5384,7 @@ Figure 4.2.5  Presence of any of the words in the Wordsmyth dictionary
 
 ---
 
-<!-- page 126 -->
+<!-- page 121 -->
 
 Researching the Use of Electronic Dictionaries
 111
@@ -5429,7 +5429,7 @@ in the definition of acuñar.
 
 ---
 
-<!-- page 127 -->
+<!-- page 122 -->
 
 The Bloomsbury Companion to Lexicography
 112
@@ -5446,7 +5446,7 @@ in the CED13
 
 ---
 
-<!-- page 128 -->
+<!-- page 123 -->
 
 Researching the Use of Electronic Dictionaries
 113
@@ -5474,7 +5474,7 @@ Thus, this system clearly does not understand complex questions.
 
 ---
 
-<!-- page 129 -->
+<!-- page 124 -->
 
 The Bloomsbury Companion to Lexicography
 114
@@ -5489,7 +5489,7 @@ Dictionary
 
 ---
 
-<!-- page 130 -->
+<!-- page 125 -->
 
 Researching the Use of Electronic Dictionaries
 115
@@ -5513,7 +5513,7 @@ Figure 4.2.9  Use of part of speech filters in the Lexical FreeNet dictionary
 
 ---
 
-<!-- page 131 -->
+<!-- page 126 -->
 
 The Bloomsbury Companion to Lexicography
 116
@@ -5521,7 +5521,7 @@ Figure 4.2.10a and b  Use of thematic area filters in Cercaterm
 
 ---
 
-<!-- page 132 -->
+<!-- page 127 -->
 
 Researching the Use of Electronic Dictionaries
 117
@@ -5565,7 +5565,7 @@ redacción ‘writing’, reacción ‘reaction’, facción ‘faction’, etc.
 
 ---
 
-<!-- page 133 -->
+<!-- page 128 -->
 
 The Bloomsbury Companion to Lexicography
 118
@@ -5573,7 +5573,7 @@ Figure 4.2.11  Search in the alphabetical list of entries in CED
 
 ---
 
-<!-- page 134 -->
+<!-- page 129 -->
 
 Researching the Use of Electronic Dictionaries
 119
@@ -5605,7 +5605,7 @@ Figure 4.2.12  Search in the inverse alphabetical list of entries in the DRAE
 
 ---
 
-<!-- page 135 -->
+<!-- page 130 -->
 
 The Bloomsbury Companion to Lexicography
 120
@@ -5634,7 +5634,7 @@ Figure 4.2.13  Search in the definition fields of the Wordsmyth
 
 ---
 
-<!-- page 136 -->
+<!-- page 131 -->
 
 Researching the Use of Electronic Dictionaries
 121
@@ -5650,7 +5650,7 @@ Figure 4.2.15  Direct search in the semantic relations in the Wordsmyth dictio
 
 ---
 
-<!-- page 137 -->
+<!-- page 132 -->
 
 The Bloomsbury Companion to Lexicography
 122
@@ -5670,7 +5670,7 @@ Figure 4.2.16  Direct search in semantic relations in the Lexical FreeNet dict
 
 ---
 
-<!-- page 138 -->
+<!-- page 133 -->
 
 Researching the Use of Electronic Dictionaries
 123
@@ -5678,7 +5678,7 @@ Figure 4.2.17  Search in the lexical relations field in the DiCoInfo dictionar
 
 ---
 
-<!-- page 139 -->
+<!-- page 134 -->
 
 The Bloomsbury Companion to Lexicography
 124
@@ -5692,7 +5692,7 @@ Figure 4.2.18  Search in a complementary forum in the WordReference dictionary
 
 ---
 
-<!-- page 140 -->
+<!-- page 135 -->
 
 Researching the Use of Electronic Dictionaries
 125
@@ -5707,7 +5707,7 @@ Figure 4.2.19  Search in a complementary corpus in the EOHS Term dictionary
 
 ---
 
-<!-- page 141 -->
+<!-- page 136 -->
 
 The Bloomsbury Companion to Lexicography
 126
@@ -5738,7 +5738,7 @@ such as pleasure garden, examples of flowers, structure of a flower, structure o
 
 ---
 
-<!-- page 142 -->
+<!-- page 137 -->
 
 Researching the Use of Electronic Dictionaries
 127
@@ -5782,7 +5782,7 @@ matically related words (e.g. synonyms, antonyms, etc.) and/or syntagmatically
 
 ---
 
-<!-- page 143 -->
+<!-- page 138 -->
 
 The Bloomsbury Companion to Lexicography
 128
@@ -5791,7 +5791,7 @@ Dictionary
 
 ---
 
-<!-- page 144 -->
+<!-- page 139 -->
 
 Researching the Use of Electronic Dictionaries
 129
@@ -5816,7 +5816,7 @@ Figure 4.2.22  Result of information about use in context in FrameNet
 
 ---
 
-<!-- page 145 -->
+<!-- page 140 -->
 
 The Bloomsbury Companion to Lexicography
 130
@@ -5841,7 +5841,7 @@ Figure 4.2.23  Graphical representation of relations in Ecolexicon
 
 ---
 
-<!-- page 146 -->
+<!-- page 141 -->
 
 Researching the Use of Electronic Dictionaries
 131
@@ -5885,7 +5885,7 @@ tionaries, we have synthesized the search techniques in electronic dictionaries
 
 ---
 
-<!-- page 147 -->
+<!-- page 142 -->
 
 The Bloomsbury Companion to Lexicography
 132
@@ -5918,7 +5918,7 @@ dictionaries
 
 ---
 
-<!-- page 148 -->
+<!-- page 143 -->
 
 Researching the Use of Electronic Dictionaries
 133
@@ -5951,7 +5951,7 @@ Government Services Canada, 2012.
 
 ---
 
-<!-- page 149 -->
+<!-- page 144 -->
 
 The Bloomsbury Companion to Lexicography
 134
@@ -6085,7 +6085,7 @@ corpus
 
 ---
 
-<!-- page 150 -->
+<!-- page 145 -->
 
 Researching the Use of Electronic Dictionaries
 135
@@ -6186,7 +6186,7 @@ Continued
 
 ---
 
-<!-- page 151 -->
+<!-- page 146 -->
 
 The Bloomsbury Companion to Lexicography
 136
@@ -6300,7 +6300,7 @@ Table 4.2.1  Continued
 
 ---
 
-<!-- page 152 -->
+<!-- page 147 -->
 
 Researching the Use of Electronic Dictionaries
 137
@@ -6395,7 +6395,7 @@ Continued
 
 ---
 
-<!-- page 153 -->
+<!-- page 148 -->
 
 The Bloomsbury Companion to Lexicography
 138
@@ -6526,7 +6526,7 @@ Table 4.2.1  Continued
 
 ---
 
-<!-- page 154 -->
+<!-- page 149 -->
 
 Researching the Use of Electronic Dictionaries
 139
@@ -6669,7 +6669,7 @@ Continued
 
 ---
 
-<!-- page 155 -->
+<!-- page 150 -->
 
 The Bloomsbury Companion to Lexicography
 140
@@ -6767,7 +6767,7 @@ Table 4.2.1  Continued
 
 ---
 
-<!-- page 156 -->
+<!-- page 151 -->
 
 Researching the Use of Electronic Dictionaries
 141
@@ -6874,7 +6874,7 @@ formes list
 
 ---
 
-<!-- page 157 -->
+<!-- page 152 -->
 
 The Bloomsbury Companion to Lexicography
 142
@@ -6930,7 +6930,7 @@ IATE (InterActive Terminology for Europe), European Communities <http://iate.eur
 
 ---
 
-<!-- page 158 -->
+<!-- page 153 -->
 
 Researching the Use of Electronic Dictionaries
 143
@@ -6989,7 +6989,7 @@ Lexicologie 52/1, 131–52.
 
 ---
 
-<!-- page 159 -->
+<!-- page 154 -->
 
 The Bloomsbury Companion to Lexicography
 144
@@ -7048,7 +7048,7 @@ on Linguistic Resources. Granada, 28–30 May 1998, 417–23.
 
 ---
 
-<!-- page 160 -->
+<!-- page 155 -->
 
 Researching the Use of Electronic Dictionaries
 145
@@ -7107,7 +7107,7 @@ Continuum, 230–50.
 
 ---
 
-<!-- page 161 -->
+<!-- page 156 -->
 
 The Bloomsbury Companion to Lexicography
 146
@@ -7166,7 +7166,7 @@ Routledge.
 
 ---
 
-<!-- page 162 -->
+<!-- page 157 -->
 
 Researching the Use of Electronic Dictionaries
 147
@@ -7205,7 +7205,7 @@ Conference on Meaning-Text Theory. Barcelona, 8–9 September 2011, 275–86.
 
 ---
 
-<!-- page 163 -->
+<!-- page 158 -->
 
 148
 Historical and etymological lexicography are abnormal in two respects. First, 
@@ -7238,7 +7238,7 @@ John Considine
 
 ---
 
-<!-- page 164 -->
+<!-- page 159 -->
 
 Researching Historical Lexicography and Etymology
 149
@@ -7285,7 +7285,7 @@ tion, giving the author, title, and often the date of the source, and as much
 
 ---
 
-<!-- page 165 -->
+<!-- page 160 -->
 
 The Bloomsbury Companion to Lexicography
 150
@@ -7332,7 +7332,7 @@ on an earlier dictionary, Jamieson’s of 1808 and 1825.2 But the vital role whi
 
 ---
 
-<!-- page 166 -->
+<!-- page 161 -->
 
 Researching Historical Lexicography and Etymology
 151
@@ -7378,7 +7378,7 @@ work: see Zgusta 2006: 35–8). But it is one thing to note a single omission in
 
 ---
 
-<!-- page 167 -->
+<!-- page 162 -->
 
 The Bloomsbury Companion to Lexicography
 152
@@ -7427,7 +7427,7 @@ a closed but indeterminately large body of evidence.
 
 ---
 
-<!-- page 168 -->
+<!-- page 163 -->
 
 Researching Historical Lexicography and Etymology
 153
@@ -7473,7 +7473,7 @@ usage in past decades with his printed sources. The third edition of the OED
 
 ---
 
-<!-- page 169 -->
+<!-- page 164 -->
 
 The Bloomsbury Companion to Lexicography
 154
@@ -7522,7 +7522,7 @@ was a variant of mammoth would indeed find it in the forms list s.v. mammoth in
 
 ---
 
-<!-- page 170 -->
+<!-- page 165 -->
 
 Researching Historical Lexicography and Etymology
 155
@@ -7568,7 +7568,7 @@ each of three conceptual axes.8 The first two have to do with the form in which
 
 ---
 
-<!-- page 171 -->
+<!-- page 166 -->
 
 The Bloomsbury Companion to Lexicography
 156
@@ -7614,7 +7614,7 @@ clear, like hexagon, may conceivably have entered English by any one of several
 
 ---
 
-<!-- page 172 -->
+<!-- page 167 -->
 
 Researching Historical Lexicography and Etymology
 157
@@ -7658,7 +7658,7 @@ previous etymological work which is flagged by the word analytic in its title.
 
 ---
 
-<!-- page 173 -->
+<!-- page 168 -->
 
 The Bloomsbury Companion to Lexicography
 158
@@ -7707,7 +7707,7 @@ by private benefactors (Liberman 2010: xxii–xxiii).
 
 ---
 
-<!-- page 174 -->
+<!-- page 169 -->
 
 Researching Historical Lexicography and Etymology
 159
@@ -7754,7 +7754,7 @@ be practicable in a dictionary of the second.
 
 ---
 
-<!-- page 175 -->
+<!-- page 170 -->
 
 The Bloomsbury Companion to Lexicography
 160
@@ -7801,7 +7801,7 @@ But the genre itself is alive with possibilities.
 
 ---
 
-<!-- page 176 -->
+<!-- page 171 -->
 
 Researching Historical Lexicography and Etymology
 161
@@ -7853,7 +7853,7 @@ and on CD-ROM. Toronto: Pontifical Institute of Medieval Studies.
 
 ---
 
-<!-- page 177 -->
+<!-- page 172 -->
 
 The Bloomsbury Companion to Lexicography
 162
@@ -7909,7 +7909,7 @@ UK: Cambridge Scholars Publishing, 290–308.
 
 ---
 
-<!-- page 178 -->
+<!-- page 173 -->
 
 Researching Historical Lexicography and Etymology
 163
@@ -7968,7 +7968,7 @@ Scholars Publishing, 61–82.
 
 ---
 
-<!-- page 179 -->
+<!-- page 174 -->
 
 The Bloomsbury Companion to Lexicography
 164
@@ -7992,7 +7992,7 @@ Thomas B. I. Creamer. Tübingen: Max Niemeyer.
 
 ---
 
-<!-- page 180 -->
+<!-- page 175 -->
 
 165
 1  Introduction
@@ -8026,7 +8026,7 @@ Amy Chi
 
 ---
 
-<!-- page 181 -->
+<!-- page 176 -->
 
 The Bloomsbury Companion to Lexicography
 166
@@ -8074,7 +8074,7 @@ while some are interrelated; hence, the sections should not be read as mutually
 
 ---
 
-<!-- page 182 -->
+<!-- page 177 -->
 
 Researching Pedagogical Lexicography
 167
@@ -8118,7 +8118,7 @@ research will be proposed.
 
 ---
 
-<!-- page 183 -->
+<!-- page 178 -->
 
 The Bloomsbury Companion to Lexicography
 168
@@ -8166,7 +8166,7 @@ cally related words are scattered in the dictionary following their orthographic
 
 ---
 
-<!-- page 184 -->
+<!-- page 179 -->
 
 Researching Pedagogical Lexicography
 169
@@ -8215,7 +8215,7 @@ Coxhead’s (2000) Academic Word List (OALD8). With the encoding function of
 
 ---
 
-<!-- page 185 -->
+<!-- page 180 -->
 
 The Bloomsbury Companion to Lexicography
 170
@@ -8261,7 +8261,7 @@ speed for isolated senses. No more.’
 
 ---
 
-<!-- page 186 -->
+<!-- page 181 -->
 
 Researching Pedagogical Lexicography
 171
@@ -8307,7 +8307,7 @@ dictionary consultations from target users would be for words they encounter
 
 ---
 
-<!-- page 187 -->
+<!-- page 182 -->
 
 The Bloomsbury Companion to Lexicography
 172
@@ -8353,7 +8353,7 @@ restricted by the vocabulary list, ‘the chain is short-circuited’ (ibid.: 17
 
 ---
 
-<!-- page 188 -->
+<!-- page 183 -->
 
 Researching Pedagogical Lexicography
 173
@@ -8401,7 +8401,7 @@ on their look-up needs.
 
 ---
 
-<!-- page 189 -->
+<!-- page 184 -->
 
 The Bloomsbury Companion to Lexicography
 174
@@ -8448,7 +8448,7 @@ phenomena have resulted in contradictory findings.
 
 ---
 
-<!-- page 190 -->
+<!-- page 185 -->
 
 Researching Pedagogical Lexicography
 175
@@ -8499,7 +8499,7 @@ Nesi and Kim (2011)
 
 ---
 
-<!-- page 191 -->
+<!-- page 186 -->
 
 The Bloomsbury Companion to Lexicography
 176
@@ -8542,7 +8542,7 @@ appropriate guidance and/or instruction’ (Hartmann 2001: 25). In other words,
 
 ---
 
-<!-- page 192 -->
+<!-- page 187 -->
 
 Researching Pedagogical Lexicography
 177
@@ -8587,7 +8587,7 @@ guage teaching position at a university) examining his or her own students’
 
 ---
 
-<!-- page 193 -->
+<!-- page 188 -->
 
 The Bloomsbury Companion to Lexicography
 178
@@ -8633,7 +8633,7 @@ dictionary is not ‘just a container of the lexicon of a language’. He propos
 
 ---
 
-<!-- page 194 -->
+<!-- page 189 -->
 
 Researching Pedagogical Lexicography
 179
@@ -8678,7 +8678,7 @@ phy and classroom teaching approach may have impacted on their students’
 
 ---
 
-<!-- page 195 -->
+<!-- page 190 -->
 
 The Bloomsbury Companion to Lexicography
 180
@@ -8726,7 +8726,7 @@ reached. Findings on students’ linguistic capacity and learning strategies wit
 
 ---
 
-<!-- page 196 -->
+<!-- page 191 -->
 
 Researching Pedagogical Lexicography
 181
@@ -8771,7 +8771,7 @@ solution that has been widely suggested by researchers is to provide training to
 
 ---
 
-<!-- page 197 -->
+<!-- page 192 -->
 
 The Bloomsbury Companion to Lexicography
 182
@@ -8818,7 +8818,7 @@ turers of English are unaware of the development and functions of electronic
 
 ---
 
-<!-- page 198 -->
+<!-- page 193 -->
 
 Researching Pedagogical Lexicography
 183
@@ -8866,7 +8866,7 @@ O. Reichmann, H. E. Wiegand and L. Zgusta (eds) Wörterbücher/Dictionaries/Dict
 
 ---
 
-<!-- page 199 -->
+<!-- page 194 -->
 
 The Bloomsbury Companion to Lexicography
 184
@@ -8924,7 +8924,7 @@ Fox, G. (1989) A vocabulary for writing dictionaries. In: M. L. Tickoo (ed.), 15
 
 ---
 
-<!-- page 200 -->
+<!-- page 195 -->
 
 Researching Pedagogical Lexicography
 185
@@ -8982,7 +8982,7 @@ lookup preferences and word retention. International Journal of Lexicography 22/
 
 ---
 
-<!-- page 201 -->
+<!-- page 196 -->
 
 The Bloomsbury Companion to Lexicography
 186
@@ -9041,7 +9041,7 @@ W. Meijs, M. Moerland, E. ten Pas, P. van Sterkenburg and P. Vossen (eds) EURALE
 
 ---
 
-<!-- page 202 -->
+<!-- page 197 -->
 
 Researching Pedagogical Lexicography
 187
@@ -9076,7 +9076,7 @@ P. Bogaards (eds), 147–68.
 
 ---
 
-<!-- page 203 -->
+<!-- page 198 -->
 
 188
 1  Introduction
@@ -9112,7 +9112,7 @@ Shigeru Yamada
 
 ---
 
-<!-- page 204 -->
+<!-- page 199 -->
 
 Monolingual Learners’ Dictionaries – Where Now?
 189
@@ -9180,7 +9180,7 @@ MWALED
 
 ---
 
-<!-- page 205 -->
+<!-- page 200 -->
 
 The Bloomsbury Companion to Lexicography
 190
@@ -9228,7 +9228,7 @@ to show the headword in use.
 
 ---
 
-<!-- page 206 -->
+<!-- page 201 -->
 
 Monolingual Learners’ Dictionaries – Where Now?
 191
@@ -9273,7 +9273,7 @@ exist between the sophistication of some features of dictionary design and the
 
 ---
 
-<!-- page 207 -->
+<!-- page 202 -->
 
 The Bloomsbury Companion to Lexicography
 192
@@ -9319,7 +9319,7 @@ the corpus. Special attention was given to collocations, which were indicated in
 
 ---
 
-<!-- page 208 -->
+<!-- page 203 -->
 
 Monolingual Learners’ Dictionaries – Where Now?
 193
@@ -9392,7 +9392,7 @@ Continued
 
 ---
 
-<!-- page 209 -->
+<!-- page 204 -->
 
 The Bloomsbury Companion to Lexicography
 194
@@ -9470,7 +9470,7 @@ Table 4.5.2  Continued
 
 ---
 
-<!-- page 210 -->
+<!-- page 205 -->
 
 Monolingual Learners’ Dictionaries – Where Now?
 195
@@ -9516,7 +9516,7 @@ has gone too far, considering the intended audience – advanced students and
 
 ---
 
-<!-- page 211 -->
+<!-- page 206 -->
 
 The Bloomsbury Companion to Lexicography
 196
@@ -9562,7 +9562,7 @@ the space constraints, print EFL dictionaries stand on a delicate balance carefu
 
 ---
 
-<!-- page 212 -->
+<!-- page 207 -->
 
 Monolingual Learners’ Dictionaries – Where Now?
 197
@@ -9605,7 +9605,7 @@ The 3,000 words were selected on three grounds: frequency from the analysis
 
 ---
 
-<!-- page 213 -->
+<!-- page 208 -->
 
 The Bloomsbury Companion to Lexicography
 198
@@ -9651,7 +9651,7 @@ activities as well, the dictionary should present much more than what is typical
 
 ---
 
-<!-- page 214 -->
+<!-- page 209 -->
 
 Monolingual Learners’ Dictionaries – Where Now?
 199
@@ -9705,7 +9705,7 @@ MED2 (2006)
 
 ---
 
-<!-- page 215 -->
+<!-- page 210 -->
 
 The Bloomsbury Companion to Lexicography
 200
@@ -9753,7 +9753,7 @@ slightly). This cannot be said to be an efficient use of space.
 
 ---
 
-<!-- page 216 -->
+<!-- page 211 -->
 
 Monolingual Learners’ Dictionaries – Where Now?
 201
@@ -9800,7 +9800,7 @@ users and makers. Kawamura (2009: 87–9) identifies six difficulties:
 
 ---
 
-<!-- page 217 -->
+<!-- page 212 -->
 
 The Bloomsbury Companion to Lexicography
 202
@@ -9842,7 +9842,7 @@ difficult-to-understand definitions.
 
 ---
 
-<!-- page 218 -->
+<!-- page 213 -->
 
 Monolingual Learners’ Dictionaries – Where Now?
 203
@@ -9889,7 +9889,7 @@ stomach; a medical term. (COBUILD2, emphasis added)
 
 ---
 
-<!-- page 219 -->
+<!-- page 214 -->
 
 The Bloomsbury Companion to Lexicography
 204
@@ -9933,7 +9933,7 @@ language is not a series of isolated sentences, and students should not be
 
 ---
 
-<!-- page 220 -->
+<!-- page 215 -->
 
 Monolingual Learners’ Dictionaries – Where Now?
 205
@@ -9976,7 +9976,7 @@ for example, from the sense arrangement based on sense development to that
 
 ---
 
-<!-- page 221 -->
+<!-- page 216 -->
 
 The Bloomsbury Companion to Lexicography
 206
@@ -10022,7 +10022,7 @@ irreconcilables by ‘striking a balance between several conflicting requirement
 
 ---
 
-<!-- page 222 -->
+<!-- page 217 -->
 
 Monolingual Learners’ Dictionaries – Where Now?
 207
@@ -10073,7 +10073,7 @@ to the example. The pattern followed the example.
 
 ---
 
-<!-- page 223 -->
+<!-- page 218 -->
 
 The Bloomsbury Companion to Lexicography
 208
@@ -10132,7 +10132,7 @@ ies towards customization.
 
 ---
 
-<!-- page 224 -->
+<!-- page 219 -->
 
 Monolingual Learners’ Dictionaries – Where Now?
 209
@@ -10187,7 +10187,7 @@ Perrault, Stephan J. Springfield: Merriam-Webster.
 
 ---
 
-<!-- page 225 -->
+<!-- page 220 -->
 
 The Bloomsbury Companion to Lexicography
 210
@@ -10242,7 +10242,7 @@ LDOCE3, COBUILD2 and CIDE. International Journal of Lexicography 9/4, 321–57.
 
 ---
 
-<!-- page 226 -->
+<!-- page 221 -->
 
 Monolingual Learners’ Dictionaries – Where Now?
 211
@@ -10299,7 +10299,7 @@ International Conference Hall, October 28–9.
 
 ---
 
-<!-- page 227 -->
+<!-- page 222 -->
 
 The Bloomsbury Companion to Lexicography
 212
@@ -10319,7 +10319,7 @@ English, 8th edition. Lexicon 42. Tokyo: Iwasaki Linguistic Circle, 1–67.
 
 ---
 
-<!-- page 228 -->
+<!-- page 223 -->
 
 213
 1  Preliminary Considerations
@@ -10356,7 +10356,7 @@ Arleta Adamska-Sałaciak
 
 ---
 
-<!-- page 229 -->
+<!-- page 224 -->
 
 The Bloomsbury Companion to Lexicography
 214
@@ -10404,7 +10404,7 @@ may vary considerably depending on the dictionary’s directionality. A
 
 ---
 
-<!-- page 230 -->
+<!-- page 225 -->
 
 Issues in Compiling Bilingual Dictionaries
 215
@@ -10453,7 +10453,7 @@ predominantly bidirectional.
 
 ---
 
-<!-- page 231 -->
+<!-- page 226 -->
 
 The Bloomsbury Companion to Lexicography
 216
@@ -10501,7 +10501,7 @@ iar (respectively, a general concept and a word in the user’s native language)
 
 ---
 
-<!-- page 232 -->
+<!-- page 227 -->
 
 Issues in Compiling Bilingual Dictionaries
 217
@@ -10543,7 +10543,7 @@ tionary, it is certain that existing dictionaries (bilingual Lx-Ly and Ly-Lx one
 
 ---
 
-<!-- page 233 -->
+<!-- page 228 -->
 
 The Bloomsbury Companion to Lexicography
 218
@@ -10592,7 +10592,7 @@ gual dictionary may follow different paths. As already indicated, ideally, the
 
 ---
 
-<!-- page 234 -->
+<!-- page 229 -->
 
 Issues in Compiling Bilingual Dictionaries
 219
@@ -10638,7 +10638,7 @@ word list (macrostructure) and the outer texts (outside matter).
 
 ---
 
-<!-- page 235 -->
+<!-- page 230 -->
 
 The Bloomsbury Companion to Lexicography
 220
@@ -10686,7 +10686,7 @@ headwords in bilingual dictionaries. This is a result of the growing realization
 
 ---
 
-<!-- page 236 -->
+<!-- page 231 -->
 
 Issues in Compiling Bilingual Dictionaries
 221
@@ -10732,7 +10732,7 @@ learner, a lot of thought has to go into their preparation. It may be a good ide
 
 ---
 
-<!-- page 237 -->
+<!-- page 232 -->
 
 The Bloomsbury Companion to Lexicography
 222
@@ -10774,7 +10774,7 @@ as polysemous, that is, whether it should be thought of as having one general,
 
 ---
 
-<!-- page 238 -->
+<!-- page 233 -->
 
 Issues in Compiling Bilingual Dictionaries
 223
@@ -10823,7 +10823,7 @@ often to some extent motivated (transparent). The motivating link between the
 
 ---
 
-<!-- page 239 -->
+<!-- page 234 -->
 
 The Bloomsbury Companion to Lexicography
 224
@@ -10869,7 +10869,7 @@ few dictionaries which continue this tradition. That it is not a tradition worth
 
 ---
 
-<!-- page 240 -->
+<!-- page 235 -->
 
 Issues in Compiling Bilingual Dictionaries
 225
@@ -10917,7 +10917,7 @@ Vase usw.];
 
 ---
 
-<!-- page 241 -->
+<!-- page 236 -->
 
 The Bloomsbury Companion to Lexicography
 226
@@ -10961,7 +10961,7 @@ they are normally found rather than in artificially simplified sentences. In sum
 
 ---
 
-<!-- page 242 -->
+<!-- page 237 -->
 
 Issues in Compiling Bilingual Dictionaries
 227
@@ -11015,7 +11015,7 @@ płynąć
 
 ---
 
-<!-- page 243 -->
+<!-- page 238 -->
 
 The Bloomsbury Companion to Lexicography
 228
@@ -11060,7 +11060,7 @@ have done over the past centuries.
 
 ---
 
-<!-- page 244 -->
+<!-- page 239 -->
 
 Issues in Compiling Bilingual Dictionaries
 229
@@ -11112,7 +11112,7 @@ e-LEX 2011) to organize panel discussions on the topic.
 
 ---
 
-<!-- page 245 -->
+<!-- page 240 -->
 
 The Bloomsbury Companion to Lexicography
 230
@@ -11164,7 +11164,7 @@ Franz-Josef Hausmann et al. [eds], Vol. 3, 2817–24.)
 
 ---
 
-<!-- page 246 -->
+<!-- page 241 -->
 
 Issues in Compiling Bilingual Dictionaries
 231
@@ -11187,7 +11187,7 @@ Zgusta, L. (1971) Manual of Lexicography. Prague: Academia/ The Hague: Mouton.
 
 ---
 
-<!-- page 247 -->
+<!-- page 242 -->
 
 232
 1  Introduction
@@ -11233,7 +11233,7 @@ Danie J. Prinsloo
 
 ---
 
-<!-- page 248 -->
+<!-- page 243 -->
 
 Issues in Compiling Dictionaries for African Languages
 233
@@ -11278,7 +11278,7 @@ as English and French.
 
 ---
 
-<!-- page 249 -->
+<!-- page 244 -->
 
 The Bloomsbury Companion to Lexicography
 234
@@ -11323,7 +11323,7 @@ Sesotho sa Leboa National Lexicography Unit in South Africa, which is the first
 
 ---
 
-<!-- page 250 -->
+<!-- page 245 -->
 
 Issues in Compiling Dictionaries for African Languages
 235
@@ -11369,7 +11369,7 @@ and objectives of a good dictionary, monolingual, bilingual or trilingual.
 
 ---
 
-<!-- page 251 -->
+<!-- page 246 -->
 
 The Bloomsbury Companion to Lexicography
 236
@@ -11435,7 +11435,7 @@ Source: Gouws and Prinsloo (2005: 42)
 
 ---
 
-<!-- page 252 -->
+<!-- page 247 -->
 
 Issues in Compiling Dictionaries for African Languages
 237
@@ -11524,7 +11524,7 @@ Source: Prinsloo and De Schryver (1999: 260)
 
 ---
 
-<!-- page 253 -->
+<!-- page 248 -->
 
 The Bloomsbury Companion to Lexicography
 238
@@ -11621,7 +11621,7 @@ the man who did not buy a book
 
 ---
 
-<!-- page 254 -->
+<!-- page 249 -->
 
 Issues in Compiling Dictionaries for African Languages
 239
@@ -11665,7 +11665,7 @@ block, as will be illustrated below.
 
 ---
 
-<!-- page 255 -->
+<!-- page 250 -->
 
 The Bloomsbury Companion to Lexicography
 240
@@ -11702,7 +11702,7 @@ alternative suggested alignment (column 2)
 
 ---
 
-<!-- page 256 -->
+<!-- page 251 -->
 
 Issues in Compiling Dictionaries for African Languages
 241
@@ -11758,7 +11758,7 @@ wokuhlabelela
 
 ---
 
-<!-- page 257 -->
+<!-- page 252 -->
 
 The Bloomsbury Companion to Lexicography
 242
@@ -11835,7 +11835,7 @@ change ‘the process of . . .’ to the plural
 
 ---
 
-<!-- page 258 -->
+<!-- page 253 -->
 
 Issues in Compiling Dictionaries for African Languages
 243
@@ -11877,7 +11877,7 @@ and passive
 
 ---
 
-<!-- page 259 -->
+<!-- page 254 -->
 
 The Bloomsbury Companion to Lexicography
 244
@@ -11894,7 +11894,7 @@ Figure 4.7.3  A section of the article for dira in GNSW
 
 ---
 
-<!-- page 260 -->
+<!-- page 255 -->
 
 Issues in Compiling Dictionaries for African Languages
 245
@@ -11919,7 +11919,7 @@ Figure 4.7.4 The article for phefa in GNSW
 
 ---
 
-<!-- page 261 -->
+<!-- page 256 -->
 
 The Bloomsbury Companion to Lexicography
 246
@@ -12008,7 +12008,7 @@ which nominal prefixes fall will be very large. In the OZSD for example, i- take
 
 ---
 
-<!-- page 262 -->
+<!-- page 257 -->
 
 Issues in Compiling Dictionaries for African Languages
 247
@@ -12050,7 +12050,7 @@ rising and falling tones, mid, mid-high and mid-low tones, etc.
 
 ---
 
-<!-- page 263 -->
+<!-- page 258 -->
 
 The Bloomsbury Companion to Lexicography
 248
@@ -12085,7 +12085,7 @@ Figure 4.7.5 Tonal indication in ZED (ZED: xi)
 
 ---
 
-<!-- page 264 -->
+<!-- page 259 -->
 
 Issues in Compiling Dictionaries for African Languages
 249
@@ -12128,7 +12128,7 @@ the Ruler and Block System for Setswana in Figures 4.7.6 and 4.7.7 in Prinsloo
 
 ---
 
-<!-- page 265 -->
+<!-- page 260 -->
 
 The Bloomsbury Companion to Lexicography
 250
@@ -12145,7 +12145,7 @@ Figure 4.7.7  A block system for Setswana
 
 ---
 
-<!-- page 266 -->
+<!-- page 261 -->
 
 Issues in Compiling Dictionaries for African Languages
 251
@@ -12214,7 +12214,7 @@ www.cbold.ish-lyon.cnrs.fr/
 
 ---
 
-<!-- page 267 -->
+<!-- page 262 -->
 
 The Bloomsbury Companion to Lexicography
 252
@@ -12239,7 +12239,7 @@ Source: www.dicts.info/dictionary.php?l1=English&l2=Sesotho&word=medicine&Search
 
 ---
 
-<!-- page 268 -->
+<!-- page 263 -->
 
 Issues in Compiling Dictionaries for African Languages
 253
@@ -12256,7 +12256,7 @@ Figure 4.7.11  Article for funda in the Online Lusoga Dictionary
 
 ---
 
-<!-- page 269 -->
+<!-- page 264 -->
 
 The Bloomsbury Companion to Lexicography
 254
@@ -12267,7 +12267,7 @@ Source: http://tshwanedje.com/dictionary/swahili/
 
 ---
 
-<!-- page 270 -->
+<!-- page 265 -->
 
 Issues in Compiling Dictionaries for African Languages
 255
@@ -12294,7 +12294,7 @@ Source: http://tshwanedje.com/dictionary/swahili/
 
 ---
 
-<!-- page 271 -->
+<!-- page 266 -->
 
 The Bloomsbury Companion to Lexicography
 256
@@ -12343,7 +12343,7 @@ wanedje.com/dictionary/swahili/
 
 ---
 
-<!-- page 272 -->
+<!-- page 267 -->
 
 Issues in Compiling Dictionaries for African Languages
 257
@@ -12399,7 +12399,7 @@ and Indo-European languages. Babel 31/3, 152–62.
 
 ---
 
-<!-- page 273 -->
+<!-- page 268 -->
 
 The Bloomsbury Companion to Lexicography
 258
@@ -12436,7 +12436,7 @@ African languages. Lexikos 5, 82–96.
 
 ---
 
-<!-- page 274 -->
+<!-- page 269 -->
 
 259
 1  Introduction
@@ -12474,7 +12474,7 @@ Thomas Troelsgård
 
 ---
 
-<!-- page 275 -->
+<!-- page 270 -->
 
 The Bloomsbury Companion to Lexicography
 260
@@ -12520,7 +12520,7 @@ that is, from a spoken to a signed language, such as the French–French Sign
 
 ---
 
-<!-- page 276 -->
+<!-- page 271 -->
 
 Issues in Sign Language Lexicography
 261
@@ -12566,7 +12566,7 @@ sign can be found in Figure 4.8.1.
 
 ---
 
-<!-- page 277 -->
+<!-- page 272 -->
 
 The Bloomsbury Companion to Lexicography
 262
@@ -12599,7 +12599,7 @@ permission of the editor.
 
 ---
 
-<!-- page 278 -->
+<!-- page 273 -->
 
 Issues in Sign Language Lexicography
 263
@@ -12627,7 +12627,7 @@ through video clip and SignWriting (Van Herreweeghe et al. 2004).
 
 ---
 
-<!-- page 279 -->
+<!-- page 274 -->
 
 The Bloomsbury Companion to Lexicography
 264
@@ -12658,7 +12658,7 @@ German Sign Language. Sign representation through video clip and HamNoSys
 
 ---
 
-<!-- page 280 -->
+<!-- page 275 -->
 
 Issues in Sign Language Lexicography
 265
@@ -12704,7 +12704,7 @@ in one and only one of the major parameters: handshape, place of articulation,
 
 ---
 
-<!-- page 281 -->
+<!-- page 276 -->
 
 The Bloomsbury Companion to Lexicography
 266
@@ -12735,7 +12735,7 @@ Source: Illustrations from the DTS Dictionary (Center for Tegnsprog 2008–12).
 
 ---
 
-<!-- page 282 -->
+<!-- page 277 -->
 
 Issues in Sign Language Lexicography
 267
@@ -12782,7 +12782,7 @@ instance, within a single sign language, nouns are idiosyncratic with respect
 
 ---
 
-<!-- page 283 -->
+<!-- page 278 -->
 
 The Bloomsbury Companion to Lexicography
 268
@@ -12794,7 +12794,7 @@ Source: All pictures are from the DTS Dictionary (Center for Tegnsprog 2008–12
 
 ---
 
-<!-- page 284 -->
+<!-- page 279 -->
 
 Issues in Sign Language Lexicography
 269
@@ -12850,7 +12850,7 @@ z
 
 ---
 
-<!-- page 285 -->
+<!-- page 280 -->
 
 The Bloomsbury Companion to Lexicography
 270
@@ -12910,7 +12910,7 @@ relevant Danish equivalents).
 
 ---
 
-<!-- page 286 -->
+<!-- page 281 -->
 
 Issues in Sign Language Lexicography
 271
@@ -12918,7 +12918,7 @@ Figure 4.8.7  Example of a sign entry in the NZSL dictionary (McKee 2011)
 
 ---
 
-<!-- page 287 -->
+<!-- page 282 -->
 
 The Bloomsbury Companion to Lexicography
 272
@@ -12940,7 +12940,7 @@ system like HamNoSys. For example, the signs in the Auslan dictionary
 
 ---
 
-<!-- page 288 -->
+<!-- page 283 -->
 
 Issues in Sign Language Lexicography
 273
@@ -12996,7 +12996,7 @@ Sign Language [FSL]: Kuurojen Liitto 2003–5), orientation (DGS, Konrad et al.
 
 ---
 
-<!-- page 289 -->
+<!-- page 284 -->
 
 The Bloomsbury Companion to Lexicography
 274
@@ -13006,7 +13006,7 @@ in total 63 handshapes.
 
 ---
 
-<!-- page 290 -->
+<!-- page 285 -->
 
 Issues in Sign Language Lexicography
 275
@@ -13019,7 +13019,7 @@ closing hand, finger wiggling and no movement.
 
 ---
 
-<!-- page 291 -->
+<!-- page 286 -->
 
 The Bloomsbury Companion to Lexicography
 276
@@ -13031,7 +13031,7 @@ shown as photos, as above, and 40 rendered as text in a drop-down list.
 
 ---
 
-<!-- page 292 -->
+<!-- page 287 -->
 
 Issues in Sign Language Lexicography
 277
@@ -13074,7 +13074,7 @@ are located to the right of the result list (not shown in this screenshot).
 
 ---
 
-<!-- page 293 -->
+<!-- page 288 -->
 
 The Bloomsbury Companion to Lexicography
 278
@@ -13096,7 +13096,7 @@ the composition of large corpora (e.g. the Auslan, NGT, British Sign Language
 
 ---
 
-<!-- page 294 -->
+<!-- page 289 -->
 
 Issues in Sign Language Lexicography
 279
@@ -13113,7 +13113,7 @@ easier to acquire sign language data covering a wide range of genres: news,
 
 ---
 
-<!-- page 295 -->
+<!-- page 290 -->
 
 The Bloomsbury Companion to Lexicography
 280
@@ -13159,7 +13159,7 @@ of other languages will increase.
 
 ---
 
-<!-- page 296 -->
+<!-- page 291 -->
 
 Issues in Sign Language Lexicography
 281
@@ -13213,7 +13213,7 @@ highly iconic structures, degenerated iconicity and diagrammatic iconicity. In:
 
 ---
 
-<!-- page 297 -->
+<!-- page 292 -->
 
 The Bloomsbury Companion to Lexicography
 282
@@ -13272,7 +13272,7 @@ American Sign Language. Dordrecht: Foris.
 
 ---
 
-<!-- page 298 -->
+<!-- page 293 -->
 
 Issues in Sign Language Lexicography
 283
@@ -13311,7 +13311,7 @@ guage: An International Handbook. Berlin: Mouton de Gruyter.
 
 ---
 
-<!-- page 299 -->
+<!-- page 294 -->
 
 284
 1  Sense(s) in Language versus Senses in the Dictionary
@@ -13349,7 +13349,7 @@ Robert Lew
 
 ---
 
-<!-- page 300 -->
+<!-- page 295 -->
 
 Identifying, Ordering and Defining Senses
 285
@@ -13396,7 +13396,7 @@ the lexical units of a language and the structural elements of a dictionary.
 
 ---
 
-<!-- page 301 -->
+<!-- page 296 -->
 
 The Bloomsbury Companion to Lexicography
 286
@@ -13445,7 +13445,7 @@ cally impoverished, such as, in English, have in have a go.
 
 ---
 
-<!-- page 302 -->
+<!-- page 297 -->
 
 Identifying, Ordering and Defining Senses
 287
@@ -13491,7 +13491,7 @@ ready to be picked up or ‘discovered’. Rather, corpus lines provide evidence
 
 ---
 
-<!-- page 303 -->
+<!-- page 298 -->
 
 The Bloomsbury Companion to Lexicography
 288
@@ -13535,7 +13535,7 @@ benefit to the target user.
 
 ---
 
-<!-- page 304 -->
+<!-- page 299 -->
 
 Identifying, Ordering and Defining Senses
 289
@@ -13581,7 +13581,7 @@ has different equivalents in Russian depending on whether it refers to an
 
 ---
 
-<!-- page 305 -->
+<!-- page 300 -->
 
 The Bloomsbury Companion to Lexicography
 290
@@ -13630,7 +13630,7 @@ distinctions typical of a monolingual dictionary. Still, if several senses share
 
 ---
 
-<!-- page 306 -->
+<!-- page 301 -->
 
 Identifying, Ordering and Defining Senses
 291
@@ -13674,7 +13674,7 @@ meaning in this privileged position is counterproductive for most typical uses
 
 ---
 
-<!-- page 307 -->
+<!-- page 302 -->
 
 The Bloomsbury Companion to Lexicography
 292
@@ -13721,7 +13721,7 @@ account for the special salience of final senses noted by Nesi and Tan (2011).
 
 ---
 
-<!-- page 308 -->
+<!-- page 303 -->
 
 Identifying, Ordering and Defining Senses
 293
@@ -13768,7 +13768,7 @@ Branches, with Roman numerals (I, II, II); Sections, with Arabic numerals
 
 ---
 
-<!-- page 309 -->
+<!-- page 304 -->
 
 The Bloomsbury Companion to Lexicography
 294
@@ -13811,7 +13811,7 @@ also some evidence (Nesi and Tan 2011) that more sophisticated users tend to
 
 ---
 
-<!-- page 310 -->
+<!-- page 305 -->
 
 Identifying, Ordering and Defining Senses
 295
@@ -13875,7 +13875,7 @@ on her salary.
 
 ---
 
-<!-- page 311 -->
+<!-- page 306 -->
 
 The Bloomsbury Companion to Lexicography
 296
@@ -13918,7 +13918,7 @@ with a particular function of making air or water hotter (differentia specifica)
 
 ---
 
-<!-- page 312 -->
+<!-- page 307 -->
 
 Identifying, Ordering and Defining Senses
 297
@@ -13966,7 +13966,7 @@ tion does a poor job at (Dziemianko and Lew 2006, Lew and Dziemianko 2006a,
 
 ---
 
-<!-- page 313 -->
+<!-- page 308 -->
 
 The Bloomsbury Companion to Lexicography
 298
@@ -14014,7 +14014,7 @@ guage learners, publishers should offer bilingual learners’ dictionaries
 
 ---
 
-<!-- page 314 -->
+<!-- page 309 -->
 
 Identifying, Ordering and Defining Senses
 299
@@ -14060,7 +14060,7 @@ P. Hiligsmann, A. Michiels, A. Moulin and S. Theissen (eds) EURALEX ‘98
 
 ---
 
-<!-- page 315 -->
+<!-- page 310 -->
 
 The Bloomsbury Companion to Lexicography
 300
@@ -14119,7 +14119,7 @@ Afûk, 1121–32.
 
 ---
 
-<!-- page 316 -->
+<!-- page 311 -->
 
 Identifying, Ordering and Defining Senses
 301
@@ -14177,7 +14177,7 @@ Amsterdam: John Benjamins, 55–79.
 
 ---
 
-<!-- page 317 -->
+<!-- page 312 -->
 
 The Bloomsbury Companion to Lexicography
 302
@@ -14199,7 +14199,7 @@ Peter Lang.
 
 ---
 
-<!-- page 318 -->
+<!-- page 313 -->
 
 303
 1  Introduction
@@ -14237,7 +14237,7 @@ Tadeusz Piotrowski
 
 ---
 
-<!-- page 319 -->
+<!-- page 314 -->
 
 The Bloomsbury Companion to Lexicography
 304
@@ -14282,7 +14282,7 @@ there is no dearth of theories of translation (cf. e.g. Gentzler 2001, Pym 2010)
 
 ---
 
-<!-- page 320 -->
+<!-- page 315 -->
 
 A Theory of Lexicography – Is There One?
 305
@@ -14326,7 +14326,7 @@ theory of relativity
 
 ---
 
-<!-- page 321 -->
+<!-- page 316 -->
 
 The Bloomsbury Companion to Lexicography
 306
@@ -14370,7 +14370,7 @@ like translation, has a number of theories.
 
 ---
 
-<!-- page 322 -->
+<!-- page 317 -->
 
 A Theory of Lexicography – Is There One?
 307
@@ -14418,7 +14418,7 @@ COBUILD project, which challenged many cherished tenets of lexicography
 
 ---
 
-<!-- page 323 -->
+<!-- page 318 -->
 
 The Bloomsbury Companion to Lexicography
 308
@@ -14463,7 +14463,7 @@ theories, and precisely this is not true of lexicographical activities. We must
 
 ---
 
-<!-- page 324 -->
+<!-- page 319 -->
 
 A Theory of Lexicography – Is There One?
 309
@@ -14511,7 +14511,7 @@ of user needs.
 
 ---
 
-<!-- page 325 -->
+<!-- page 320 -->
 
 The Bloomsbury Companion to Lexicography
 310
@@ -14560,7 +14560,7 @@ they answer the question why certain methods have been used. Explanation
 
 ---
 
-<!-- page 326 -->
+<!-- page 321 -->
 
 A Theory of Lexicography – Is There One?
 311
@@ -14607,7 +14607,7 @@ words with their equivalents in the other language. Hartmann’s comment is
 
 ---
 
-<!-- page 327 -->
+<!-- page 322 -->
 
 The Bloomsbury Companion to Lexicography
 312
@@ -14651,7 +14651,7 @@ DI.html).
 
 ---
 
-<!-- page 328 -->
+<!-- page 323 -->
 
 A Theory of Lexicography – Is There One?
 313
@@ -14693,7 +14693,7 @@ description, and this makes dictionaries like databases. It is the difficulty of
 
 ---
 
-<!-- page 329 -->
+<!-- page 324 -->
 
 The Bloomsbury Companion to Lexicography
 314
@@ -14742,7 +14742,7 @@ identified.
 
 ---
 
-<!-- page 330 -->
+<!-- page 325 -->
 
 A Theory of Lexicography – Is There One?
 315
@@ -14789,7 +14789,7 @@ tractable’ (Frigg and Hartmann 2012). For example, they take account of that
 
 ---
 
-<!-- page 331 -->
+<!-- page 326 -->
 
 The Bloomsbury Companion to Lexicography
 316
@@ -14835,7 +14835,7 @@ into account lexical functions as much as it should. How to judge who is right,
 
 ---
 
-<!-- page 332 -->
+<!-- page 327 -->
 
 A Theory of Lexicography – Is There One?
 317
@@ -14884,7 +14884,7 @@ tionaries in the past, we can be sure that their guide will help us make a good
 
 ---
 
-<!-- page 333 -->
+<!-- page 328 -->
 
 The Bloomsbury Companion to Lexicography
 318
@@ -14932,7 +14932,7 @@ Geeraerts, D. (1989) Principles of monolingual lexicography. In: F. J. Hausmann 
 
 ---
 
-<!-- page 334 -->
+<!-- page 329 -->
 
 A Theory of Lexicography – Is There One?
 319
@@ -14991,7 +14991,7 @@ Piotrowski, T. (2009) Review of Tarp 2008. International Journal of Lexicography
 
 ---
 
-<!-- page 335 -->
+<!-- page 330 -->
 
 The Bloomsbury Companion to Lexicography
 320
@@ -15041,14 +15041,14 @@ Science and Technology. Cambridge: Cambridge University Press.
 
 ---
 
-<!-- page 336 -->
+<!-- page 331 -->
 
 5
 New Directions in Lexicography
 
 ---
 
-<!-- page 338 -->
+<!-- page 332 -->
 
 323
 1  Introduction: Background and Definitions
@@ -15084,7 +15084,7 @@ Pedro A. Fuertes-Olivera
 
 ---
 
-<!-- page 339 -->
+<!-- page 333 -->
 
 The Bloomsbury Companion to Lexicography
 324
@@ -15133,7 +15133,7 @@ been limited to issues connected with a range of natural language processing
 
 ---
 
-<!-- page 340 -->
+<!-- page 334 -->
 
 e-Lexicography
 325
@@ -15182,7 +15182,7 @@ technology to dictionary-making (Bergenholtz and Tarp 2002, 2003, 2004, Tarp
 
 ---
 
-<!-- page 341 -->
+<!-- page 335 -->
 
 The Bloomsbury Companion to Lexicography
 326
@@ -15230,7 +15230,7 @@ gua extranjera (Daele) illustrates this challenge. This dictionary is presented 
 
 ---
 
-<!-- page 342 -->
+<!-- page 336 -->
 
 e-Lexicography
 327
@@ -15276,7 +15276,7 @@ I will show the working of this challenge in the context of making specialized
 
 ---
 
-<!-- page 343 -->
+<!-- page 337 -->
 
 The Bloomsbury Companion to Lexicography
 328
@@ -15325,7 +15325,7 @@ accounting terms included in Spanish accounting terminology, or for explaining
 
 ---
 
-<!-- page 344 -->
+<!-- page 338 -->
 
 e-Lexicography
 329
@@ -15366,7 +15366,7 @@ in the form of concepts, categories, theories and assumptions, has a (proto-)
 
 ---
 
-<!-- page 345 -->
+<!-- page 339 -->
 
 The Bloomsbury Companion to Lexicography
 330
@@ -15415,7 +15415,7 @@ level of efficiency to the dictionary and enhance the user experience with the
 
 ---
 
-<!-- page 346 -->
+<!-- page 340 -->
 
 e-Lexicography
 331
@@ -15469,7 +15469,7 @@ ies, that is, dictionaries serving exactly one lexicographic function’.
 
 ---
 
-<!-- page 347 -->
+<!-- page 341 -->
 
 The Bloomsbury Companion to Lexicography
 332
@@ -15522,7 +15522,7 @@ first line has three features: a search text-box, an Insert System button
 
 ---
 
-<!-- page 348 -->
+<!-- page 342 -->
 
 e-Lexicography
 333
@@ -15576,7 +15576,7 @@ cography it is also an intellectual and social challenge to add reflections on
 
 ---
 
-<!-- page 349 -->
+<!-- page 343 -->
 
 The Bloomsbury Companion to Lexicography
 334
@@ -15621,7 +15621,7 @@ one or more dictionaries, for example, the English Accounting Dictionary and
 
 ---
 
-<!-- page 350 -->
+<!-- page 344 -->
 
 e-Lexicography
 335
@@ -15669,7 +15669,7 @@ Spanish equivalent, English definition of the lemma, Spanish definition of the
 
 ---
 
-<!-- page 351 -->
+<!-- page 345 -->
 
 The Bloomsbury Companion to Lexicography
 336
@@ -15702,7 +15702,7 @@ Figure 5.1.1  Future online dictionaries
 
 ---
 
-<!-- page 352 -->
+<!-- page 346 -->
 
 e-Lexicography
 337
@@ -15746,7 +15746,7 @@ Odense: Ordbogen.com (www.ordbogen.com) (Accessed 10 March 2012).
 
 ---
 
-<!-- page 353 -->
+<!-- page 347 -->
 
 The Bloomsbury Companion to Lexicography
 338
@@ -15805,7 +15805,7 @@ International Encyclopedia of Lexicography. Supplementary Volume: Recent Develop
 
 ---
 
-<!-- page 354 -->
+<!-- page 348 -->
 
 e-Lexicography
 339
@@ -15863,7 +15863,7 @@ Journal of Translation Studies 7, 59–84.
 
 ---
 
-<!-- page 355 -->
+<!-- page 349 -->
 
 The Bloomsbury Companion to Lexicography
 340
@@ -15887,7 +15887,7 @@ Wikipedia. Available at: http://en.wikipedia.org/wiki/Main_Page. (Accessed 15 Ma
 
 ---
 
-<!-- page 356 -->
+<!-- page 350 -->
 
 341
 1  Introduction
@@ -15920,7 +15920,7 @@ Charlotte Brewer
 
 ---
 
-<!-- page 357 -->
+<!-- page 351 -->
 
 The Bloomsbury Companion to Lexicography
 342
@@ -15969,7 +15969,7 @@ certainly be criticized for imperfections and inconsistencies. And from early
 
 ---
 
-<!-- page 358 -->
+<!-- page 352 -->
 
 The Future of Historical Dictionaries
 343
@@ -16018,7 +16018,7 @@ are revealing the dictionary’s past and present stock of information to its
 
 ---
 
-<!-- page 359 -->
+<!-- page 353 -->
 
 The Bloomsbury Companion to Lexicography
 344
@@ -16064,7 +16064,7 @@ ally published in four volumes between 1972 and 1986 (Burchfield 1972–86).4
 
 ---
 
-<!-- page 360 -->
+<!-- page 354 -->
 
 The Future of Historical Dictionaries
 345
@@ -16113,7 +16113,7 @@ the principal evidence on which this dictionary was based, and from which
 
 ---
 
-<!-- page 361 -->
+<!-- page 355 -->
 
 The Bloomsbury Companion to Lexicography
 346
@@ -16162,7 +16162,7 @@ while they are engaged on revising the historical portion of the dictionary –
 
 ---
 
-<!-- page 362 -->
+<!-- page 356 -->
 
 The Future of Historical Dictionaries
 347
@@ -16208,7 +16208,7 @@ tion, and making it clear that the content of many existing entries dating back
 
 ---
 
-<!-- page 363 -->
+<!-- page 357 -->
 
 The Bloomsbury Companion to Lexicography
 348
@@ -16256,7 +16256,7 @@ explicit reference to ‘anal sex’ substituted. At a pinch, this could be desc
 
 ---
 
-<!-- page 364 -->
+<!-- page 358 -->
 
 The Future of Historical Dictionaries
 349
@@ -16304,7 +16304,7 @@ open up the history and development of the language in ways that could not
 
 ---
 
-<!-- page 365 -->
+<!-- page 359 -->
 
 The Bloomsbury Companion to Lexicography
 350
@@ -16353,7 +16353,7 @@ society’ (www.oed.com/public/oedhistory#future, accessed June 2012).
 
 ---
 
-<!-- page 366 -->
+<!-- page 360 -->
 
 The Future of Historical Dictionaries
 351
@@ -16401,7 +16401,7 @@ pages – was richly fascinating to contemplate, active research on it required
 
 ---
 
-<!-- page 367 -->
+<!-- page 361 -->
 
 The Bloomsbury Companion to Lexicography
 352
@@ -16450,7 +16450,7 @@ Scots Language (DSL, at www.dsl.ac.uk/), which combines the Dictionary of the
 
 ---
 
-<!-- page 368 -->
+<!-- page 362 -->
 
 The Future of Historical Dictionaries
 353
@@ -16498,7 +16498,7 @@ edition of 1989 and 2000, when the OED went online) appeared in print in the 199
 
 ---
 
-<!-- page 369 -->
+<!-- page 363 -->
 
 The Bloomsbury Companion to Lexicography
 354
@@ -16554,7 +16554,7 @@ Wright, J. (1898) The English Dialect Dictionary. London: Henry Frowde.
 
 ---
 
-<!-- page 370 -->
+<!-- page 364 -->
 
 355
 1  Introduction
@@ -16588,7 +16588,7 @@ Sandro Nielsen
 
 ---
 
-<!-- page 371 -->
+<!-- page 365 -->
 
 The Bloomsbury Companion to Lexicography
 356
@@ -16634,7 +16634,7 @@ provide help to acquire knowledge independently of communicative activities
 
 ---
 
-<!-- page 372 -->
+<!-- page 366 -->
 
 The Future of Dictionaries, Dictionaries of the Future
 357
@@ -16680,7 +16680,7 @@ had on lexicographic practice, either because publishers do not (sufficiently)
 
 ---
 
-<!-- page 373 -->
+<!-- page 367 -->
 
 The Bloomsbury Companion to Lexicography
 358
@@ -16726,7 +16726,7 @@ dictionaries and instead distinguish between offline and online dictionaries.
 
 ---
 
-<!-- page 374 -->
+<!-- page 368 -->
 
 The Future of Dictionaries, Dictionaries of the Future
 359
@@ -16772,7 +16772,7 @@ including dictionaries, to the internet and many contribute to the contents of
 
 ---
 
-<!-- page 375 -->
+<!-- page 369 -->
 
 The Bloomsbury Companion to Lexicography
 360
@@ -16818,7 +16818,7 @@ be presented with. The 18 contributions in Haß and Schmitz (2010) on internet
 
 ---
 
-<!-- page 376 -->
+<!-- page 370 -->
 
 The Future of Dictionaries, Dictionaries of the Future
 361
@@ -16878,7 +16878,7 @@ known in L2.
 
 ---
 
-<!-- page 377 -->
+<!-- page 371 -->
 
 The Bloomsbury Companion to Lexicography
 362
@@ -16937,7 +16937,7 @@ tion by a mental process.
 
 ---
 
-<!-- page 378 -->
+<!-- page 372 -->
 
 The Future of Dictionaries, Dictionaries of the Future
 363
@@ -16967,7 +16967,7 @@ Figure 5.3.1  Search result helping users to understand the word or term
 
 ---
 
-<!-- page 379 -->
+<!-- page 373 -->
 
 The Bloomsbury Companion to Lexicography
 364
@@ -16978,7 +16978,7 @@ Figure 5.3.3  Search result helping users to translate the word or term
 
 ---
 
-<!-- page 380 -->
+<!-- page 374 -->
 
 The Future of Dictionaries, Dictionaries of the Future
 365
@@ -17009,7 +17009,7 @@ known
 
 ---
 
-<!-- page 381 -->
+<!-- page 375 -->
 
 The Bloomsbury Companion to Lexicography
 366
@@ -17051,7 +17051,7 @@ search word
 
 ---
 
-<!-- page 382 -->
+<!-- page 376 -->
 
 The Future of Dictionaries, Dictionaries of the Future
 367
@@ -17097,7 +17097,7 @@ field of specialization.
 
 ---
 
-<!-- page 383 -->
+<!-- page 377 -->
 
 The Bloomsbury Companion to Lexicography
 368
@@ -17146,7 +17146,7 @@ may be particularly helpful for dictionaries whose functions are operative; for
 
 ---
 
-<!-- page 384 -->
+<!-- page 378 -->
 
 The Future of Dictionaries, Dictionaries of the Future
 369
@@ -17195,7 +17195,7 @@ the use of dictionaries.
 
 ---
 
-<!-- page 385 -->
+<!-- page 379 -->
 
 The Bloomsbury Companion to Lexicography
 370
@@ -17240,7 +17240,7 @@ Ordbogen.com. Available at: www.ordbogen.com (Accessed 30 March 2012).
 
 ---
 
-<!-- page 386 -->
+<!-- page 380 -->
 
 The Future of Dictionaries, Dictionaries of the Future
 371
@@ -17295,7 +17295,7 @@ Journal of Lexicography 25/1, 99–103.
 
 ---
 
-<!-- page 387 -->
+<!-- page 381 -->
 
 The Bloomsbury Companion to Lexicography
 372
@@ -17337,7 +17337,7 @@ S. Nielsen and S. Tarp (eds), 33–67.
 
 ---
 
-<!-- page 388 -->
+<!-- page 382 -->
 
 373
 1  Introduction
@@ -17380,7 +17380,7 @@ Reinhard Hartmann
 
 ---
 
-<!-- page 389 -->
+<!-- page 383 -->
 
 The Bloomsbury Companion to Lexicography
 374
@@ -17423,7 +17423,7 @@ for the study of language history, dialectology, lexicology, terminology and
 
 ---
 
-<!-- page 390 -->
+<!-- page 384 -->
 
 Resources
 375
@@ -17471,7 +17471,7 @@ are cited in general guides such as The Europa World of Learning, and some of
 
 ---
 
-<!-- page 391 -->
+<!-- page 385 -->
 
 The Bloomsbury Companion to Lexicography
 376
@@ -17589,7 +17589,7 @@ of their member academies.
 
 ---
 
-<!-- page 392 -->
+<!-- page 386 -->
 
 Resources
 377
@@ -17680,7 +17680,7 @@ www.guoxue.com/
 
 ---
 
-<!-- page 393 -->
+<!-- page 387 -->
 
 The Bloomsbury Companion to Lexicography
 378
@@ -17726,7 +17726,7 @@ Foundation Directory.
 
 ---
 
-<!-- page 394 -->
+<!-- page 388 -->
 
 Resources
 379
@@ -17772,7 +17772,7 @@ _data,
 
 ---
 
-<!-- page 395 -->
+<!-- page 389 -->
 
 The Bloomsbury Companion to Lexicography
 380
@@ -17872,7 +17872,7 @@ ice-gb/index.htm
 
 ---
 
-<!-- page 396 -->
+<!-- page 390 -->
 
 Resources
 381
@@ -17942,7 +17942,7 @@ htm?issn=0950–4125
 
 ---
 
-<!-- page 397 -->
+<!-- page 391 -->
 
 The Bloomsbury Companion to Lexicography
 382
@@ -17987,7 +17987,7 @@ Linked.In (www.linkedin.com/myGroups?trk=hb_side_mygrps).
 
 ---
 
-<!-- page 398 -->
+<!-- page 392 -->
 
 Resources
 383
@@ -18087,7 +18087,7 @@ university research centres (see Section 9).
 
 ---
 
-<!-- page 399 -->
+<!-- page 393 -->
 
 The Bloomsbury Companion to Lexicography
 384
@@ -18180,7 +18180,7 @@ http://atilf.atilf.fr/
 
 ---
 
-<!-- page 400 -->
+<!-- page 394 -->
 
 Resources
 385
@@ -18219,7 +18219,7 @@ Writer’s Handbook.
 
 ---
 
-<!-- page 401 -->
+<!-- page 395 -->
 
 The Bloomsbury Companion to Lexicography
 386
@@ -18305,7 +18305,7 @@ networks, online dictionary projects or publishers. The recent development of
 
 ---
 
-<!-- page 402 -->
+<!-- page 396 -->
 
 Resources
 387
@@ -18353,7 +18353,7 @@ iau), on lists of universities and academies (www.university-directory.eu/),
 
 ---
 
-<!-- page 403 -->
+<!-- page 397 -->
 
 The Bloomsbury Companion to Lexicography
 388
@@ -18481,7 +18481,7 @@ Lexicography
 
 ---
 
-<!-- page 404 -->
+<!-- page 398 -->
 
 Resources
 389
@@ -18536,7 +18536,7 @@ Serge Verlinde and Geoffrey Williams.
 
 ---
 
-<!-- page 405 -->
+<!-- page 399 -->
 
 The Bloomsbury Companion to Lexicography
 390
@@ -18584,7 +18584,7 @@ Thomas, G. (1991) Linguistic Purism. London/New York: Longman.
 
 ---
 
-<!-- page 406 -->
+<!-- page 400 -->
 
 391
 Glossary of Lexicographic 
@@ -18625,7 +18625,7 @@ two languages; a dictionary with translation equivalents of two languages
 
 ---
 
-<!-- page 407 -->
+<!-- page 401 -->
 
 The Bloomsbury Companion to Lexicography
 392
@@ -18674,7 +18674,7 @@ a certain mutual expectancy, that have a great likelihood of co-occurring, for
 
 ---
 
-<!-- page 408 -->
+<!-- page 402 -->
 
 Glossary of Lexicographic Terms
 393
@@ -18723,7 +18723,7 @@ not described.
 
 ---
 
-<!-- page 409 -->
+<!-- page 403 -->
 
 The Bloomsbury Companion to Lexicography
 394
@@ -18770,7 +18770,7 @@ of a dictionary.
 
 ---
 
-<!-- page 410 -->
+<!-- page 404 -->
 
 Glossary of Lexicographic Terms
 395
@@ -18818,7 +18818,7 @@ glossary is Latin glossa, from Greek glossa ‘tongue, language’.
 
 ---
 
-<!-- page 411 -->
+<!-- page 405 -->
 
 The Bloomsbury Companion to Lexicography
 396
@@ -18866,7 +18866,7 @@ or specialized subject or a wordlist defined concisely for a limited subject.
 
 ---
 
-<!-- page 412 -->
+<!-- page 406 -->
 
 Glossary of Lexicographic Terms
 397
@@ -18914,7 +18914,7 @@ tiger is a type of cat.
 
 ---
 
-<!-- page 413 -->
+<!-- page 407 -->
 
 The Bloomsbury Companion to Lexicography
 398
@@ -18961,7 +18961,7 @@ semantic value in a particular grammatical context.
 
 ---
 
-<!-- page 414 -->
+<!-- page 408 -->
 
 Glossary of Lexicographic Terms
 399
@@ -19008,7 +19008,7 @@ which it designates, that is, what a lexical unit denotes or conveys; a descrip-
 
 ---
 
-<!-- page 415 -->
+<!-- page 409 -->
 
 The Bloomsbury Companion to Lexicography
 400
@@ -19057,7 +19057,7 @@ language as expressions of semantically linked concepts (ideas, meanings);
 
 ---
 
-<!-- page 416 -->
+<!-- page 410 -->
 
 Glossary of Lexicographic Terms
 401
@@ -19105,7 +19105,7 @@ of communication.
 
 ---
 
-<!-- page 417 -->
+<!-- page 411 -->
 
 The Bloomsbury Companion to Lexicography
 402
@@ -19154,7 +19154,7 @@ affixes are removed, for example, vigour as the root of reinvigorating.
 
 ---
 
-<!-- page 418 -->
+<!-- page 412 -->
 
 Glossary of Lexicographic Terms
 403
@@ -19203,7 +19203,7 @@ dictionary project.
 
 ---
 
-<!-- page 419 -->
+<!-- page 413 -->
 
 The Bloomsbury Companion to Lexicography
 404
@@ -19252,7 +19252,7 @@ terms of denotation, connotation, formality or currency.
 
 ---
 
-<!-- page 420 -->
+<!-- page 414 -->
 
 Glossary of Lexicographic Terms
 405
@@ -19301,7 +19301,7 @@ cally according to time, space or circumstance in a language or by a part of
 
 ---
 
-<!-- page 421 -->
+<!-- page 415 -->
 
 The Bloomsbury Companion to Lexicography
 406
@@ -19332,7 +19332,7 @@ dictionary; also called vocabulary.
 
 ---
 
-<!-- page 422 -->
+<!-- page 416 -->
 
 407
 The aim of this bibliography is to point the reasearcher in lexicography in the 
@@ -19378,7 +19378,7 @@ Topic Headings
 
 ---
 
-<!-- page 423 -->
+<!-- page 417 -->
 
 The Bloomsbury Companion to Lexicography
 408
@@ -19432,7 +19432,7 @@ Lexicography). Barcelona: Biblograf.
 
 ---
 
-<!-- page 424 -->
+<!-- page 418 -->
 
 Annotated Bibliography
 409
@@ -19488,7 +19488,7 @@ LexicoNordica, Nordisk Forening for Leksikografi, since 1994, single annual volu
 
 ---
 
-<!-- page 425 -->
+<!-- page 419 -->
 
 The Bloomsbury Companion to Lexicography
 410
@@ -19543,7 +19543,7 @@ Mouton. [the original manual, now out of print]
 
 ---
 
-<!-- page 426 -->
+<!-- page 420 -->
 
 Annotated Bibliography
 411
@@ -19597,7 +19597,7 @@ University Press. [Vol. 1 covers the period 1567–1784, Vol. 2 1785–1858, Vol
 
 ---
 
-<!-- page 427 -->
+<!-- page 421 -->
 
 The Bloomsbury Companion to Lexicography
 412
@@ -19652,7 +19652,7 @@ sur la Lexicographie bilingue’, in 1998]
 
 ---
 
-<!-- page 428 -->
+<!-- page 422 -->
 
 Annotated Bibliography
 413
@@ -19707,7 +19707,7 @@ EFL dictionaries in teaching and learning]
 
 ---
 
-<!-- page 429 -->
+<!-- page 423 -->
 
 The Bloomsbury Companion to Lexicography
 414
@@ -19761,7 +19761,7 @@ de Huelva. [trends in the lexicographic investigation of Spanish]
 
 ---
 
-<!-- page 430 -->
+<!-- page 424 -->
 
 Annotated Bibliography
 415
@@ -19813,7 +19813,7 @@ Natural%20Language%20Processing/]
 
 ---
 
-<!-- page 431 -->
+<!-- page 425 -->
 
 The Bloomsbury Companion to Lexicography
 416
@@ -19867,7 +19867,7 @@ of lexicography and on the cultural and ideological influences on dictionaries. 
 
 ---
 
-<!-- page 432 -->
+<!-- page 426 -->
 
 Annotated Bibliography
 417
@@ -19887,7 +19887,7 @@ Dictionary]
 
 ---
 
-<!-- page 434 -->
+<!-- page 427 -->
 
 419
 Index
@@ -19970,7 +19970,7 @@ lemmatization 49, 80–1, 237, 239–46, 247,
 
 ---
 
-<!-- page 435 -->
+<!-- page 428 -->
 
 Index
 420

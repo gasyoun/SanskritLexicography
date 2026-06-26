@@ -6,7 +6,7 @@
 
 ---
 
-<!-- page 2 -->
+<!-- page 1 -->
 
 The study of syntax over the last half century has seen a remarkable expansion of the 
 boundaries of human knowledge about the structure of natural language. The Routledge 
@@ -45,7 +45,7 @@ Handbook of Syntax
 
 ---
 
-<!-- page 3 -->
+<!-- page 2 -->
 
 Routledge Handbooks in Linguistics
 Routledge Handbooks in Linguistics provide overviews of a whole subject area or sub- 
@@ -74,7 +74,7 @@ Edited by S. J. Hannahs and Anna Bosch
 
 ---
 
-<!-- page 4 -->
+<!-- page 3 -->
 
 Praise for this volume:
 “The Handbook brings together thoughtful and judicious essays by outstanding scholars, 
@@ -101,13 +101,13 @@ Mamoru Saito, Department of Anthropology and Philosophy, Nanzan University
 
 ---
 
-<!-- page 5 -->
+<!-- page 4 -->
 
 This page intentionally left blank
 
 ---
 
-<!-- page 6 -->
+<!-- page 5 -->
 
 The Routledge
 Handbook of Syntax
@@ -116,7 +116,7 @@ Yosuke Sato, and Daniel Siddiqi
 
 ---
 
-<!-- page 7 -->
+<!-- page 6 -->
 
 First published 2014
 by Routledge
@@ -161,7 +161,7 @@ by Sunrise Setting Ltd, Paignton, UK
 
 ---
 
-<!-- page 8 -->
+<!-- page 7 -->
 
 vii
 Contents
@@ -205,7 +205,7 @@ Maria Polinsky and Omer Preminger
 
 ---
 
-<!-- page 9 -->
+<!-- page 8 -->
 
 Contents
 viii
@@ -258,7 +258,7 @@ Susannah Kirby
 
 ---
 
-<!-- page 10 -->
+<!-- page 9 -->
 
 Contents
 ix
@@ -303,7 +303,7 @@ Index
 
 ---
 
-<!-- page 11 -->
+<!-- page 10 -->
 
 x
 Contributors
@@ -342,7 +342,7 @@ in both theoretical syntax and language documentation. He has worked on the Choc
 
 ---
 
-<!-- page 12 -->
+<!-- page 11 -->
 
 Contributors
 xi
@@ -390,7 +390,7 @@ syntax (Indeﬁ nite Pronouns, 1997; From Space to Time, 1997; Understanding Mor
 
 ---
 
-<!-- page 13 -->
+<!-- page 12 -->
 
 Contributors
 xii
@@ -436,7 +436,7 @@ He received his PhD in Linguistics from the University of Maryland, College Park
 
 ---
 
-<!-- page 14 -->
+<!-- page 13 -->
 
 Contributors
 xiii
@@ -483,7 +483,7 @@ edited several collections of articles. He was also Joint Editor of the Journal 
 
 ---
 
-<!-- page 15 -->
+<!-- page 14 -->
 
 Contributors
 xiv
@@ -531,7 +531,7 @@ Lisa deMena Travis received her PhD from MIT in 1984. Since then she has been a
 
 ---
 
-<!-- page 16 -->
+<!-- page 15 -->
 
 Contributors
 xv
@@ -567,7 +567,7 @@ research is syntax and real-time sentence comprehension.
 
 ---
 
-<!-- page 17 -->
+<!-- page 16 -->
 
 xvi
 Acknowledgments
@@ -586,7 +586,7 @@ Dorian Voorhees, Zechy Wong, Jianrong Yu, and Dwi Hesti Yuliani.
 
 ---
 
-<!-- page 18 -->
+<!-- page 17 -->
 
 xvii
 Editors’ introduction
@@ -629,7 +629,7 @@ module. Various issues that arise in syntax with semantics/pragmatics, the lexic
 
 ---
 
-<!-- page 19 -->
+<!-- page 18 -->
 
 xviii
 Editors’ introduction
@@ -659,7 +659,7 @@ venturing into the exciting discipline of syntax.
 
 ---
 
-<!-- page 20 -->
+<!-- page 19 -->
 
 Part I
 Constituency, categories, 
@@ -667,13 +667,13 @@ and structure
 
 ---
 
-<!-- page 21 -->
+<!-- page 20 -->
 
 This page intentionally left blank
 
 ---
 
-<!-- page 22 -->
+<!-- page 21 -->
 
 3
 1 Introduction*
@@ -710,7 +710,7 @@ ten comments and suggestions on earlier versions of this paper.
 
 ---
 
-<!-- page 23 -->
+<!-- page 22 -->
 
 4
 Naoki Fukui and Hiroki Narita
@@ -763,7 +763,7 @@ The purpose of this chapter is to provide a brief overview of this development, 
 
 ---
 
-<!-- page 24 -->
+<!-- page 23 -->
 
 5
 Merge, labeling, and projection
@@ -821,7 +821,7 @@ book
 
 ---
 
-<!-- page 25 -->
+<!-- page 24 -->
 
 6
 Naoki Fukui and Hiroki Narita
@@ -908,7 +908,7 @@ ti
 
 ---
 
-<!-- page 26 -->
+<!-- page 25 -->
 
 7
 Merge, labeling, and projection
@@ -986,7 +986,7 @@ book
 
 ---
 
-<!-- page 27 -->
+<!-- page 26 -->
 
 8
 Naoki Fukui and Hiroki Narita
@@ -1035,7 +1035,7 @@ schemata, where an atomic category X (X0) is necessarily dominated by an interme
 
 ---
 
-<!-- page 28 -->
+<!-- page 27 -->
 
 9
 Merge, labeling, and projection
@@ -1103,7 +1103,7 @@ book
 
 ---
 
-<!-- page 29 -->
+<!-- page 28 -->
 
 10
 Naoki Fukui and Hiroki Narita
@@ -1153,7 +1153,7 @@ grammar, language acquisition, and so on).
 
 ---
 
-<!-- page 30 -->
+<!-- page 29 -->
 
 11
 Merge, labeling, and projection
@@ -1215,7 +1215,7 @@ book
 
 ---
 
-<!-- page 31 -->
+<!-- page 30 -->
 
 12
 Naoki Fukui and Hiroki Narita
@@ -1268,7 +1268,7 @@ book
 
 ---
 
-<!-- page 32 -->
+<!-- page 31 -->
 
 13
 Merge, labeling, and projection
@@ -1323,7 +1323,7 @@ book
 
 ---
 
-<!-- page 33 -->
+<!-- page 32 -->
 
 14
 Naoki Fukui and Hiroki Narita
@@ -1372,7 +1372,7 @@ book
 
 ---
 
-<!-- page 34 -->
+<!-- page 33 -->
 
 15
 Merge, labeling, and projection
@@ -1423,7 +1423,7 @@ fJ
 
 ---
 
-<!-- page 35 -->
+<!-- page 34 -->
 
 16
 Naoki Fukui and Hiroki Narita
@@ -1473,7 +1473,7 @@ account of word order by advocating a single universal word order template. By f
 
 ---
 
-<!-- page 36 -->
+<!-- page 35 -->
 
 17
 Merge, labeling, and projection
@@ -1524,7 +1524,7 @@ How is unbounded Merge constrained?
 
 ---
 
-<!-- page 37 -->
+<!-- page 36 -->
 
 18
 Naoki Fukui and Hiroki Narita
@@ -1577,7 +1577,7 @@ framework that c-selection is reducible to s(emantic)-selection applying at SEM 
 
 ---
 
-<!-- page 38 -->
+<!-- page 37 -->
 
 19
 Merge, labeling, and projection
@@ -1629,7 +1629,7 @@ tric (asymmetric) structures {H, XP}, typically created by EM, are generally in 
 
 ---
 
-<!-- page 39 -->
+<!-- page 38 -->
 
 20
 Naoki Fukui and Hiroki Narita
@@ -1677,7 +1677,7 @@ vation (this operation is called “late-Merge”). Still another approach is to
 
 ---
 
-<!-- page 40 -->
+<!-- page 39 -->
 
 21
 Merge, labeling, and projection
@@ -1736,7 +1736,7 @@ Cambridge, MA: MIT Press.
 
 ---
 
-<!-- page 41 -->
+<!-- page 40 -->
 
 22
 Naoki Fukui and Hiroki Narita
@@ -1800,7 +1800,7 @@ Benjamins.
 
 ---
 
-<!-- page 42 -->
+<!-- page 41 -->
 
 23
 Merge, labeling, and projection
@@ -1825,7 +1825,7 @@ Norbert Hornstein, 251–282. Cambridge, MA: MIT Press.
 
 ---
 
-<!-- page 43 -->
+<!-- page 42 -->
 
 24
 2
@@ -1860,7 +1860,7 @@ editors for their constructive comments, suggestions, and editorial assistance.
 
 ---
 
-<!-- page 44 -->
+<!-- page 43 -->
 
 25
 Argument structure
@@ -1912,7 +1912,7 @@ licensed as arguments of the verb dance but by the particular transitive/causati
 
 ---
 
-<!-- page 45 -->
+<!-- page 44 -->
 
 26
 Jaume Mateu
@@ -1959,7 +1959,7 @@ skepticism of the usefulness of thematic roles in linguistic theory and claims t
 
 ---
 
-<!-- page 46 -->
+<!-- page 45 -->
 
 27
 Argument structure
@@ -2008,7 +2008,7 @@ b. John loaded the wagon with hay.
 
 ---
 
-<!-- page 47 -->
+<!-- page 46 -->
 
 28
 Jaume Mateu
@@ -2057,7 +2057,7 @@ internal argument(s); direct internal argument vs. indirect internal argument. F
 
 ---
 
-<!-- page 48 -->
+<!-- page 47 -->
 
 29
 Argument structure
@@ -2111,7 +2111,7 @@ SUBJECT    OBJECT
 
 ---
 
-<!-- page 49 -->
+<!-- page 48 -->
 
 30
 Jaume Mateu
@@ -2165,7 +2165,7 @@ b. Why are there so few l(exical)-syntactic categories?
 
 ---
 
-<!-- page 50 -->
+<!-- page 49 -->
 
 31
 Argument structure
@@ -2232,7 +2232,7 @@ N
 
 ---
 
-<!-- page 51 -->
+<!-- page 50 -->
 
 32
 Jaume Mateu
@@ -2285,7 +2285,7 @@ b.  A cow calved (cf. A cow [had calf])
 
 ---
 
-<!-- page 52 -->
+<!-- page 51 -->
 
 33
 Argument structure
@@ -2338,7 +2338,7 @@ construct any syntactic constituent”.
 
 ---
 
-<!-- page 53 -->
+<!-- page 52 -->
 
 34
 Jaume Mateu
@@ -2402,7 +2402,7 @@ content.13
 
 ---
 
-<!-- page 54 -->
+<!-- page 53 -->
 
 35
 Argument structure
@@ -2458,7 +2458,7 @@ that verbal predicates such as eat or wipe are more “elastic” than the causa
 
 ---
 
-<!-- page 55 -->
+<!-- page 54 -->
 
 36
 Jaume Mateu
@@ -2510,7 +2510,7 @@ interface module is posited. Furthermore, no generalized uniformity between synt
 
 ---
 
-<!-- page 56 -->
+<!-- page 55 -->
 
 37
 Argument structure
@@ -2579,7 +2579,7 @@ prise verbal meanings includes (as in much lexical research) Manner (=means/mann
 
 ---
 
-<!-- page 57 -->
+<!-- page 56 -->
 
 38
 Jaume Mateu
@@ -2656,7 +2656,7 @@ ment structure. The authors identify a small number of major semantic classes an
 
 ---
 
-<!-- page 58 -->
+<!-- page 57 -->
 
 39
 Argument structure
@@ -2715,7 +2715,7 @@ John Benjamins.
 
 ---
 
-<!-- page 59 -->
+<!-- page 58 -->
 
 40
 Jaume Mateu
@@ -2779,7 +2779,7 @@ sions in linguistic theory, ed. Osamu Fujimura, 259–376. Tokyo: TEC Corp.
 
 ---
 
-<!-- page 60 -->
+<!-- page 59 -->
 
 41
 Argument structure
@@ -2831,7 +2831,7 @@ motion. Cambridge, MA: MIT Press.
 
 ---
 
-<!-- page 61 -->
+<!-- page 60 -->
 
 42
 3
@@ -2869,7 +2869,7 @@ ing) node dominated by S, as shown in the tree below.4
 
 ---
 
-<!-- page 62 -->
+<!-- page 61 -->
 
 43
 The integration, proliferation, and expansion of functional categories
@@ -2962,7 +2962,7 @@ in that they are part of the featural system that Jackendoff created. They are n
 
 ---
 
-<!-- page 63 -->
+<!-- page 62 -->
 
 44
 Lisa deMena Travis 
@@ -3014,7 +3014,7 @@ giving them a place in the phrase structure system. It is shown that they behave
 
 ---
 
-<!-- page 64 -->
+<!-- page 63 -->
 
 45
 The integration, proliferation, and expansion of functional categories
@@ -3062,7 +3062,7 @@ his claim that, for example, Comp is a head.5 He observes that verbs specify wha
 
 ---
 
-<!-- page 65 -->
+<!-- page 64 -->
 
 46
 Lisa deMena Travis 
@@ -3110,7 +3110,7 @@ d. everything good
 
 ---
 
-<!-- page 66 -->
+<!-- page 65 -->
 
 47
 The integration, proliferation, and expansion of functional categories
@@ -3173,7 +3173,7 @@ in Section 2. Both projections contain a lexical domain (VP and NP) where lexica
 
 ---
 
-<!-- page 67 -->
+<!-- page 66 -->
 
 48
 Lisa deMena Travis 
@@ -3224,7 +3224,7 @@ selection and posits that the N is being selected.13
 
 ---
 
-<!-- page 68 -->
+<!-- page 67 -->
 
 49
 The integration, proliferation, and expansion of functional categories
@@ -3272,7 +3272,7 @@ ple taken from Li 1990: 399 and credited to Vitale 1981).
 
 ---
 
-<!-- page 69 -->
+<!-- page 68 -->
 
 50
 Lisa deMena Travis 
@@ -3322,7 +3322,7 @@ ment, constituting a Principle C violation.
 
 ---
 
-<!-- page 70 -->
+<!-- page 69 -->
 
 51
 The integration, proliferation, and expansion of functional categories
@@ -3373,7 +3373,7 @@ language where Agr precedes Tense.
 
 ---
 
-<!-- page 71 -->
+<!-- page 70 -->
 
 52
 Lisa deMena Travis 
@@ -3420,7 +3420,7 @@ given below, starting with the relevant template. Pollock shows that the negatio
 
 ---
 
-<!-- page 72 -->
+<!-- page 71 -->
 
 53
 The integration, proliferation, and expansion of functional categories
@@ -3479,7 +3479,7 @@ functional heads (see test (22b)).24
 
 ---
 
-<!-- page 73 -->
+<!-- page 72 -->
 
 54
 Lisa deMena Travis 
@@ -3529,7 +3529,7 @@ arguments for six head positions above the VP (test (22c)).
 
 ---
 
-<!-- page 74 -->
+<!-- page 73 -->
 
 55
 The integration, proliferation, and expansion of functional categories
@@ -3584,7 +3584,7 @@ ated to explain is the pattern of syncretism – only contiguous heads can be re
 
 ---
 
-<!-- page 75 -->
+<!-- page 74 -->
 
 56
 Lisa deMena Travis 
@@ -3636,7 +3636,7 @@ Number and Case. And ﬁ nally, since functional heads are seen as encoding valu
 
 ---
 
-<!-- page 76 -->
+<!-- page 75 -->
 
 57
 The integration, proliferation, and expansion of functional categories
@@ -3686,7 +3686,7 @@ to be functional categories according to the criteria that distinguish the two.
 
 ---
 
-<!-- page 77 -->
+<!-- page 76 -->
 
 58
 Lisa deMena Travis 
@@ -3738,7 +3738,7 @@ IntArg
 
 ---
 
-<!-- page 78 -->
+<!-- page 77 -->
 
 59
 The integration, proliferation, and expansion of functional categories
@@ -3787,7 +3787,7 @@ fJ
 
 ---
 
-<!-- page 79 -->
+<!-- page 78 -->
 
 60
 Lisa deMena Travis 
@@ -3839,7 +3839,7 @@ DECL = declarative; EPISTEM = epistemic; EVALUAT = evaluative; ExtArg = external
 
 ---
 
-<!-- page 80 -->
+<!-- page 79 -->
 
 61
 The integration, proliferation, and expansion of functional categories
@@ -3903,7 +3903,7 @@ against the existence of Agr heads.
 
 ---
 
-<!-- page 81 -->
+<!-- page 80 -->
 
 62
 Lisa deMena Travis 
@@ -3962,7 +3962,7 @@ Press, New York.
 
 ---
 
-<!-- page 82 -->
+<!-- page 81 -->
 
 63
 The integration, proliferation, and expansion of functional categories
@@ -4026,7 +4026,7 @@ and IP, pages 3–15. Oxford University Press, Oxford.
 
 ---
 
-<!-- page 83 -->
+<!-- page 82 -->
 
 64
 Lisa deMena Travis 
@@ -4055,7 +4055,7 @@ Cambridge University Press, Cambridge.
 
 ---
 
-<!-- page 84 -->
+<!-- page 83 -->
 
 65
 4
@@ -4095,7 +4095,7 @@ at the DP-hypothesis from a cross-linguistic perspective. Proposed functional pr
 
 ---
 
-<!-- page 85 -->
+<!-- page 84 -->
 
 66
 Jeffrey Punske
@@ -4146,7 +4146,7 @@ Compl
 
 ---
 
-<!-- page 86 -->
+<!-- page 85 -->
 
 67
 Functional structure inside nominal phrases 
@@ -4196,7 +4196,7 @@ a spaceship
 
 ---
 
-<!-- page 87 -->
+<!-- page 86 -->
 
 68
 Jeffrey Punske
@@ -4241,7 +4241,7 @@ tributed to Abney (1987). While Abney (1986) advocates for such a proposal, Abne
 
 ---
 
-<!-- page 88 -->
+<!-- page 87 -->
 
 69
 Functional structure inside nominal phrases 
@@ -4284,7 +4284,7 @@ moves
 
 ---
 
-<!-- page 89 -->
+<!-- page 88 -->
 
 70
 Jeffrey Punske
@@ -4328,7 +4328,7 @@ to say…
 
 ---
 
-<!-- page 90 -->
+<!-- page 89 -->
 
 71
 Functional structure inside nominal phrases 
@@ -4370,7 +4370,7 @@ the semantic consequences of the lack of this structure and the syntactic conseq
 
 ---
 
-<!-- page 91 -->
+<!-- page 90 -->
 
 72
 Jeffrey Punske
@@ -4437,7 +4437,7 @@ No
 
 ---
 
-<!-- page 92 -->
+<!-- page 91 -->
 
 73
 Functional structure inside nominal phrases 
@@ -4482,7 +4482,7 @@ pears
 
 ---
 
-<!-- page 93 -->
+<!-- page 92 -->
 
 74
 Jeffrey Punske
@@ -4528,7 +4528,7 @@ The Gianni my  has ﬁ nally   called
 
 ---
 
-<!-- page 94 -->
+<!-- page 93 -->
 
 75
 Functional structure inside nominal phrases 
@@ -4575,7 +4575,7 @@ extraction from the leftmost branch of an NP projection:
 
 ---
 
-<!-- page 95 -->
+<!-- page 94 -->
 
 76
 Jeffrey Punske
@@ -4621,7 +4621,7 @@ relative order of attributive adjectives and the proper name):
 
 ---
 
-<!-- page 96 -->
+<!-- page 95 -->
 
 77
 Functional structure inside nominal phrases 
@@ -4666,7 +4666,7 @@ sis are argued to be associated with the lack of determiners within the relevant
 
 ---
 
-<!-- page 97 -->
+<!-- page 96 -->
 
 78
 Jeffrey Punske
@@ -4736,7 +4736,7 @@ functional structure.
 
 ---
 
-<!-- page 98 -->
+<!-- page 97 -->
 
 79
 Functional structure inside nominal phrases 
@@ -4782,7 +4782,7 @@ DET-PL woman(PL)-DET]
 
 ---
 
-<!-- page 99 -->
+<!-- page 98 -->
 
 80
 Jeffrey Punske
@@ -4827,7 +4827,7 @@ N
 
 ---
 
-<!-- page 100 -->
+<!-- page 99 -->
 
 81
 Functional structure inside nominal phrases 
@@ -4871,7 +4871,7 @@ this man
 
 ---
 
-<!-- page 101 -->
+<!-- page 100 -->
 
 82
 Jeffrey Punske
@@ -4914,7 +4914,7 @@ ment to D.
 
 ---
 
-<!-- page 102 -->
+<!-- page 101 -->
 
 83
 Functional structure inside nominal phrases 
@@ -4961,7 +4961,7 @@ appear adjacent to the verb, as seen in the paradigms below.
 
 ---
 
-<!-- page 103 -->
+<!-- page 102 -->
 
 84
 Jeffrey Punske
@@ -5005,7 +5005,7 @@ some predicted orders are not found, while other non-predicted orders are found.
 
 ---
 
-<!-- page 104 -->
+<!-- page 103 -->
 
 85
 Functional structure inside nominal phrases 
@@ -5072,7 +5072,7 @@ Notes
 
 ---
 
-<!-- page 105 -->
+<!-- page 104 -->
 
 86
 Jeffrey Punske
@@ -5133,7 +5133,7 @@ tation, University of California.
 
 ---
 
-<!-- page 106 -->
+<!-- page 105 -->
 
 87
 Functional structure inside nominal phrases 
@@ -5197,7 +5197,7 @@ Megan Crowhurst, 173–186. Stanford, CA: CSLI Publications.
 
 ---
 
-<!-- page 107 -->
+<!-- page 106 -->
 
 88
 Jeffrey Punske
@@ -5247,7 +5247,7 @@ Cambridge, MA: MIT Press.
 
 ---
 
-<!-- page 108 -->
+<!-- page 107 -->
 
 89
 5
@@ -5283,7 +5283,7 @@ adjectives, predicative modiﬁ cation is not uncommon.
 
 ---
 
-<!-- page 109 -->
+<!-- page 108 -->
 
 90
 Artemis Alexiadou
@@ -5336,7 +5336,7 @@ Mary is an interesting student.
 
 ---
 
-<!-- page 110 -->
+<!-- page 109 -->
 
 91
 The syntax of adjectives
@@ -5387,7 +5387,7 @@ daughters of N¢. (10), from Lamarche (1991: 227), illustrates the difference:
 
 ---
 
-<!-- page 111 -->
+<!-- page 110 -->
 
 92
 Artemis Alexiadou
@@ -5443,7 +5443,7 @@ be inserted both pre-nominally or post-nominally. For instance, adopting an adju
 
 ---
 
-<!-- page 112 -->
+<!-- page 111 -->
 
 93
 The syntax of adjectives
@@ -5489,7 +5489,7 @@ be no landing site for the moved N. I will come to this discussion in §4.
 
 ---
 
-<!-- page 113 -->
+<!-- page 112 -->
 
 94
 Artemis Alexiadou
@@ -5538,7 +5538,7 @@ while the post-nominal adjective is strictly stage-level. See also the discussio
 
 ---
 
-<!-- page 114 -->
+<!-- page 113 -->
 
 95
 The syntax of adjectives
@@ -5583,7 +5583,7 @@ b. *gamle huset
 
 ---
 
-<!-- page 115 -->
+<!-- page 114 -->
 
 96
 Artemis Alexiadou
@@ -5630,7 +5630,7 @@ predicate modiﬁ er distinction, along the lines of (26) (see Kamp 1975; Kamp a
 
 ---
 
-<!-- page 116 -->
+<!-- page 115 -->
 
 97
 The syntax of adjectives
@@ -5678,7 +5678,7 @@ the noun dancer (28a), (e) is the event ‘dancing’ and (x) is Olga. The adjec
 
 ---
 
-<!-- page 117 -->
+<!-- page 116 -->
 
 98
 Artemis Alexiadou
@@ -5726,7 +5726,7 @@ cle is also a relative clause marker, supporting the suggestion that indirect mo
 
 ---
 
-<!-- page 118 -->
+<!-- page 117 -->
 
 99
 The syntax of adjectives
@@ -5807,7 +5807,7 @@ The director   declared that the  efﬁ cient the  researchers
 
 ---
 
-<!-- page 119 -->
+<!-- page 118 -->
 
 100
 Artemis Alexiadou
@@ -5863,7 +5863,7 @@ the extended projection of the noun (see Cinque 2010; Alexiadou and Wilder 1998)
 
 ---
 
-<!-- page 120 -->
+<!-- page 119 -->
 
 101
 The syntax of adjectives
@@ -5951,7 +5951,7 @@ scope over frozen chicken in (40a). These effects follow from the Spec approach:
 
 ---
 
-<!-- page 121 -->
+<!-- page 120 -->
 
 102
 Artemis Alexiadou
@@ -5995,7 +5995,7 @@ tion is strictly associated with an intersective reading (see the discussion in 
 
 ---
 
-<!-- page 122 -->
+<!-- page 121 -->
 
 103
 The syntax of adjectives
@@ -6074,7 +6074,7 @@ NP
 
 ---
 
-<!-- page 123 -->
+<!-- page 122 -->
 
 104
 Artemis Alexiadou
@@ -6129,7 +6129,7 @@ b. He is a very well-known young writer of detective stories
 
 ---
 
-<!-- page 124 -->
+<!-- page 123 -->
 
 105
 The syntax of adjectives
@@ -6177,7 +6177,7 @@ between adjectival scales and verbal aspect; the relationship between meaning an
 
 ---
 
-<!-- page 125 -->
+<!-- page 124 -->
 
 106
 Artemis Alexiadou
@@ -6237,7 +6237,7 @@ Press.
 
 ---
 
-<!-- page 126 -->
+<!-- page 125 -->
 
 107
 The syntax of adjectives
@@ -6263,7 +6263,7 @@ Valois, D. 1991. The syntax of DP. PhD dissertation, UCLA.
 
 ---
 
-<!-- page 127 -->
+<!-- page 126 -->
 
 108
 6
@@ -6301,7 +6301,7 @@ orders that deviate from this initial structure are derived by various movements
 
 ---
 
-<!-- page 128 -->
+<!-- page 127 -->
 
 109
 The syntax of adverbs
@@ -6350,7 +6350,7 @@ the construction:
 
 ---
 
-<!-- page 129 -->
+<!-- page 128 -->
 
 110
 Thomas Ernst
@@ -6402,7 +6402,7 @@ b. Mental-attitude: calmly, willingly, enthusiastically, …
 
 ---
 
-<!-- page 130 -->
+<!-- page 129 -->
 
 111
 The syntax of adverbs
@@ -6449,7 +6449,7 @@ hand.
 
 ---
 
-<!-- page 131 -->
+<!-- page 130 -->
 
 112
 Thomas Ernst
@@ -6493,7 +6493,7 @@ different scopes:
 
 ---
 
-<!-- page 132 -->
+<!-- page 131 -->
 
 113
 The syntax of adverbs
@@ -6538,7 +6538,7 @@ Ernst 2002: 218ff. for discussion).
 
 ---
 
-<!-- page 133 -->
+<!-- page 132 -->
 
 114
 Thomas Ernst
@@ -6579,7 +6579,7 @@ postverbal modiﬁ ers (see (34)):
 
 ---
 
-<!-- page 134 -->
+<!-- page 133 -->
 
 115
 The syntax of adverbs
@@ -6657,7 +6657,7 @@ b. She answered the questions {clearly/oddly/cleverly}.
 
 ---
 
-<!-- page 135 -->
+<!-- page 134 -->
 
 116
 Thomas Ernst
@@ -6713,7 +6713,7 @@ No, NOISILY Albert just mowed the lawn.
 
 ---
 
-<!-- page 136 -->
+<!-- page 135 -->
 
 117
 The syntax of adverbs
@@ -6770,7 +6770,7 @@ adverb via head movement.
 
 ---
 
-<!-- page 137 -->
+<!-- page 136 -->
 
 118
 Thomas Ernst
@@ -6827,7 +6827,7 @@ eats muffins
 
 ---
 
-<!-- page 138 -->
+<!-- page 137 -->
 
 119
 The syntax of adverbs
@@ -6879,7 +6879,7 @@ sion). Similarly, in the cartographic approach the fact that PPPs are fairly fre
 
 ---
 
-<!-- page 139 -->
+<!-- page 138 -->
 
 120
 Thomas Ernst
@@ -6928,7 +6928,7 @@ quite willingly
 
 ---
 
-<!-- page 140 -->
+<!-- page 139 -->
 
 121
 The syntax of adverbs
@@ -6976,7 +6976,7 @@ adverbials would be an extension of the head-direction parameter to adjuncts. On
 
 ---
 
-<!-- page 141 -->
+<!-- page 140 -->
 
 122
 Thomas Ernst
@@ -7028,7 +7028,7 @@ representation.
 
 ---
 
-<!-- page 142 -->
+<!-- page 141 -->
 
 123
 The syntax of adverbs
@@ -7078,7 +7078,7 @@ and the general ban on postverbal clausal predicationals (as in (60)):
 
 ---
 
-<!-- page 143 -->
+<!-- page 142 -->
 
 124
 Thomas Ernst
@@ -7127,7 +7127,7 @@ theory usually posits either (49) or (61) (where category labels are again irrel
 
 ---
 
-<!-- page 144 -->
+<!-- page 143 -->
 
 125
 The syntax of adverbs
@@ -7185,7 +7185,7 @@ quite willingly Z
 
 ---
 
-<!-- page 145 -->
+<!-- page 144 -->
 
 126
 Thomas Ernst
@@ -7242,7 +7242,7 @@ eat
 
 ---
 
-<!-- page 146 -->
+<!-- page 145 -->
 
 127
 The syntax of adverbs
@@ -7295,7 +7295,7 @@ discussion of this in German in Schäfer (2005).
 
 ---
 
-<!-- page 147 -->
+<!-- page 146 -->
 
 128
 Thomas Ernst
@@ -7359,7 +7359,7 @@ Inquiry 17:347–354.
 
 ---
 
-<!-- page 148 -->
+<!-- page 147 -->
 
 129
 The syntax of adverbs
@@ -7423,7 +7423,7 @@ Phillips, Colin. 2003. Linear Order and Constituency. Linguistic Inquiry 34:37�
 
 ---
 
-<!-- page 149 -->
+<!-- page 148 -->
 
 130
 Thomas Ernst
@@ -7443,20 +7443,20 @@ Truswell, Robert. 2011. Events, Phrases, and Questions. Oxford: Oxford Universit
 
 ---
 
-<!-- page 150 -->
+<!-- page 149 -->
 
 Part II
 Syntactic phenomena
 
 ---
 
-<!-- page 151 -->
+<!-- page 150 -->
 
 This page intentionally left blank
 
 ---
 
-<!-- page 152 -->
+<!-- page 151 -->
 
 133
 1 Introduction
@@ -7492,7 +7492,7 @@ Michael Barrie and Éric Mathieu
 
 ---
 
-<!-- page 153 -->
+<!-- page 152 -->
 
 134
 Michael Barrie and Éric Mathieu
@@ -7543,7 +7543,7 @@ f.i
 
 ---
 
-<!-- page 154 -->
+<!-- page 153 -->
 
 135
 Head movement
@@ -7597,7 +7597,7 @@ declining.
 
 ---
 
-<!-- page 155 -->
+<!-- page 154 -->
 
 136
 Michael Barrie and Éric Mathieu
@@ -7652,7 +7652,7 @@ b. *John kisses often Mary.
 
 ---
 
-<!-- page 156 -->
+<!-- page 155 -->
 
 137
 Head movement
@@ -7719,7 +7719,7 @@ eva
 
 ---
 
-<!-- page 157 -->
+<!-- page 156 -->
 
 138
 Michael Barrie and Éric Mathieu
@@ -7785,7 +7785,7 @@ s:-
 
 ---
 
-<!-- page 158 -->
+<!-- page 157 -->
 
 139
 Head movement
@@ -7833,7 +7833,7 @@ the commonly cited papers that discuss the problems with HM) is that of Bobaljik
 
 ---
 
-<!-- page 159 -->
+<!-- page 158 -->
 
 140
 Michael Barrie and Éric Mathieu
@@ -7893,7 +7893,7 @@ ti
 
 ---
 
-<!-- page 160 -->
+<!-- page 159 -->
 
 141
 Head movement
@@ -7940,7 +7940,7 @@ interpretation.
 
 ---
 
-<!-- page 161 -->
+<!-- page 160 -->
 
 142
 Michael Barrie and Éric Mathieu
@@ -7989,7 +7989,7 @@ v
 
 ---
 
-<!-- page 162 -->
+<!-- page 161 -->
 
 143
 Head movement
@@ -8043,7 +8043,7 @@ v* [Pers:a, Num:b]    (j[Pers:a, Num :b])
 
 ---
 
-<!-- page 163 -->
+<!-- page 162 -->
 
 144
 Michael Barrie and Éric Mathieu
@@ -8094,7 +8094,7 @@ v*min
 
 ---
 
-<!-- page 164 -->
+<!-- page 163 -->
 
 145
 Head movement
@@ -8167,7 +8167,7 @@ co..
 
 ---
 
-<!-- page 165 -->
+<!-- page 164 -->
 
 146
 Michael Barrie and Éric Mathieu
@@ -8220,7 +8220,7 @@ patients with aphasia. As the research presented indicates, there is a lack of c
 
 ---
 
-<!-- page 166 -->
+<!-- page 165 -->
 
 147
 Head movement
@@ -8278,7 +8278,7 @@ Cambridge, MA: MIT Press.
 
 ---
 
-<!-- page 167 -->
+<!-- page 166 -->
 
 148
 Michael Barrie and Éric Mathieu
@@ -8342,7 +8342,7 @@ Southern California.
 
 ---
 
-<!-- page 168 -->
+<!-- page 167 -->
 
 149
 Head movement
@@ -8376,7 +8376,7 @@ Berlin: Springer.
 
 ---
 
-<!-- page 169 -->
+<!-- page 168 -->
 
 150
 8
@@ -8415,7 +8415,7 @@ sion of case; and a distinction between argument and adjunct cases.
 
 ---
 
-<!-- page 170 -->
+<!-- page 169 -->
 
 151
 Case and grammatical relations
@@ -8483,7 +8483,7 @@ considered a matter of parametric variation (see Ouhalla 1991).1 However, beyond
 
 ---
 
-<!-- page 171 -->
+<!-- page 170 -->
 
 152
 Maria Polinsky and Omer Preminger
@@ -8547,7 +8547,7 @@ No morphological case marking
 
 ---
 
-<!-- page 172 -->
+<!-- page 171 -->
 
 153
 Case and grammatical relations
@@ -8597,7 +8597,7 @@ nominals book and editor have not received the appropriate genitive case:
 
 ---
 
-<!-- page 173 -->
+<!-- page 172 -->
 
 154
 Maria Polinsky and Omer Preminger
@@ -8639,7 +8639,7 @@ in (21a–b). The presence in (21a–b) of objective case marking on what is cle
 
 ---
 
-<!-- page 174 -->
+<!-- page 173 -->
 
 155
 Case and grammatical relations
@@ -8681,7 +8681,7 @@ be separated from him by intervening lexical material (Postal 1974):
 
 ---
 
-<!-- page 175 -->
+<!-- page 174 -->
 
 156
 Maria Polinsky and Omer Preminger
@@ -8730,7 +8730,7 @@ assign genitive Case under certain circumstances. Essentially, it turned out tha
 
 ---
 
-<!-- page 176 -->
+<!-- page 175 -->
 
 157
 Case and grammatical relations
@@ -8783,7 +8783,7 @@ preposition
 
 ---
 
-<!-- page 177 -->
+<!-- page 176 -->
 
 158
 Maria Polinsky and Omer Preminger
@@ -8824,7 +8824,7 @@ an uninterpretable feature in its own right, which resided on noun phrases; it w
 
 ---
 
-<!-- page 178 -->
+<!-- page 177 -->
 
 159
 Case and grammatical relations
@@ -8875,7 +8875,7 @@ JOI,intl'p cas:
 
 ---
 
-<!-- page 179 -->
+<!-- page 178 -->
 
 160
 Maria Polinsky and Omer Preminger
@@ -8928,7 +8928,7 @@ account for so-called ‘quirky case’ languages. In Icelandic, the normal nomi
 
 ---
 
-<!-- page 180 -->
+<!-- page 179 -->
 
 161
 Case and grammatical relations
@@ -8979,7 +8979,7 @@ seems quite strong; at least, it is stronger than the link between nominative ca
 
 ---
 
-<!-- page 181 -->
+<!-- page 180 -->
 
 162
 Maria Polinsky and Omer Preminger
@@ -9032,7 +9032,7 @@ notion of abstract Case is used to predict the distribution of overt and non-ove
 
 ---
 
-<!-- page 182 -->
+<!-- page 181 -->
 
 163
 Case and grammatical relations
@@ -9097,7 +9097,7 @@ Basque patterns as a structural case.
 
 ---
 
-<!-- page 183 -->
+<!-- page 182 -->
 
 164
 Maria Polinsky and Omer Preminger
@@ -9157,7 +9157,7 @@ Henry, Alison. 1995. Belfast English and Standard English. Oxford: Oxford Univer
 
 ---
 
-<!-- page 184 -->
+<!-- page 183 -->
 
 165
 Case and grammatical relations
@@ -9221,7 +9221,7 @@ and the theory of case. Natural Language and Linguistic Theory.
 
 ---
 
-<!-- page 185 -->
+<!-- page 184 -->
 
 166
 Maria Polinsky and Omer Preminger
@@ -9250,7 +9250,7 @@ The Icelandic passive. Natural Language and Linguistic Theory 3:441–483.
 
 ---
 
-<!-- page 186 -->
+<!-- page 185 -->
 
 167
 9
@@ -9290,7 +9290,7 @@ taken to differ in a number of ways.
 
 ---
 
-<!-- page 187 -->
+<!-- page 186 -->
 
 168
 Norvin Richards
@@ -9352,7 +9352,7 @@ takes scope, followed by A-movement to the speciﬁ er of matrix TP. The ban on 
 
 ---
 
-<!-- page 188 -->
+<!-- page 187 -->
 
 169
 A-bar movement
@@ -9401,7 +9401,7 @@ c. [Whose parents’ car] did he buy?
 
 ---
 
-<!-- page 189 -->
+<!-- page 188 -->
 
 170
 Norvin Richards
@@ -9459,7 +9459,7 @@ phrase that A-bar moves:
 
 ---
 
-<!-- page 190 -->
+<!-- page 189 -->
 
 171
 A-bar movement
@@ -9513,7 +9513,7 @@ those which do not (Baker 1970; Tsai 1994; Shimoyama 2008). A central deciding f
 
 ---
 
-<!-- page 191 -->
+<!-- page 190 -->
 
 172
 Norvin Richards
@@ -9588,7 +9588,7 @@ b. *aarə nin-ne talli?
 
 ---
 
-<!-- page 192 -->
+<!-- page 191 -->
 
 173
 A-bar movement
@@ -9673,7 +9673,7 @@ more literal translation of (29) would be ‘[The one who ate the meat] is who?�
 
 ---
 
-<!-- page 193 -->
+<!-- page 192 -->
 
 174
 Norvin Richards
@@ -9735,7 +9735,7 @@ Müller (2001), Grebenyova (2004), Jaeger (2004), Krapova and Cinque (2005), Bai
 
 ---
 
-<!-- page 194 -->
+<!-- page 193 -->
 
 175
 A-bar movement
@@ -9781,7 +9781,7 @@ Condition and derives the ordering of wh-phrases from locality conditions (Mulde
 
 ---
 
-<!-- page 195 -->
+<!-- page 194 -->
 
 176
 Norvin Richards
@@ -9826,7 +9826,7 @@ tiﬁ ers left behind by wh-movement may appear in theta-positions or at the beg
 
 ---
 
-<!-- page 196 -->
+<!-- page 195 -->
 
 177
 A-bar movement
@@ -9885,7 +9885,7 @@ b. *Where did you ask [what Bill put
 
 ---
 
-<!-- page 197 -->
+<!-- page 196 -->
 
 178
 Norvin Richards
@@ -9938,7 +9938,7 @@ including a general requirement that moved phrases c-command the positions in wh
 
 ---
 
-<!-- page 198 -->
+<!-- page 197 -->
 
 179
 A-bar movement
@@ -9991,7 +9991,7 @@ b. *What does John work [whistling
 
 ---
 
-<!-- page 199 -->
+<!-- page 198 -->
 
 180
 Norvin Richards
@@ -10054,7 +10054,7 @@ contrasts (48) with (49):
 
 ---
 
-<!-- page 200 -->
+<!-- page 199 -->
 
 181
 A-bar movement
@@ -10105,7 +10105,7 @@ effect (Bresnan 1977; Culicover 1993):
 
 ---
 
-<!-- page 201 -->
+<!-- page 200 -->
 
 182
 Norvin Richards
@@ -10177,7 +10177,7 @@ jects), and are acceptable.
 
 ---
 
-<!-- page 202 -->
+<!-- page 201 -->
 
 183
 A-bar movement
@@ -10234,7 +10234,7 @@ Williams (2003), Abels (2007), and Obata and Epstein (2011). A question about im
 
 ---
 
-<!-- page 203 -->
+<!-- page 202 -->
 
 184
 Norvin Richards
@@ -10288,7 +10288,7 @@ b. **Why are you wondering [whether you should buy it
 
 ---
 
-<!-- page 204 -->
+<!-- page 203 -->
 
 185
 A-bar movement
@@ -10344,7 +10344,7 @@ does not occur.
 
 ---
 
-<!-- page 205 -->
+<!-- page 204 -->
 
 186
 Norvin Richards
@@ -10405,7 +10405,7 @@ Linguistic Inquiry 38:139–166.
 
 ---
 
-<!-- page 206 -->
+<!-- page 205 -->
 
 187
 A-bar movement
@@ -10469,7 +10469,7 @@ Linguistic Inquiry 28:195–217.
 
 ---
 
-<!-- page 207 -->
+<!-- page 206 -->
 
 188
 Norvin Richards
@@ -10532,7 +10532,7 @@ Imanishi, Yusuke. 2012. Null resumption in Kaqchikel and its theoretical implica
 
 ---
 
-<!-- page 208 -->
+<!-- page 207 -->
 
 189
 A-bar movement
@@ -10595,7 +10595,7 @@ in German. Dordrecht: Kluwer.
 
 ---
 
-<!-- page 209 -->
+<!-- page 208 -->
 
 190
 Norvin Richards
@@ -10659,7 +10659,7 @@ Cambridge, MA: MIT Working Papers in Linguistics.
 
 ---
 
-<!-- page 210 -->
+<!-- page 209 -->
 
 191
 A-bar movement
@@ -10710,7 +10710,7 @@ Williams, Edwin. 2003. Representation theory. Cambridge, MA: MIT Press.
 
 ---
 
-<!-- page 211 -->
+<!-- page 210 -->
 
 192
 10
@@ -10748,7 +10748,7 @@ Under the second approach, the interpretive analysis, ellipsis is not associated
 
 ---
 
-<!-- page 212 -->
+<!-- page 211 -->
 
 193
 The syntax of ellipsis and related phenomena 
@@ -10798,7 +10798,7 @@ John ate something, but I don’t know [CP what1 [TP John ate t1]].
 
 ---
 
-<!-- page 213 -->
+<!-- page 212 -->
 
 194
 Masaya Yoshida, Chizuru Nakao, and Iván Ortega-Santos
@@ -10853,7 +10853,7 @@ clear.
 
 ---
 
-<!-- page 214 -->
+<!-- page 213 -->
 
 195
 The syntax of ellipsis and related phenomena 
@@ -10903,7 +10903,7 @@ at the bystsanders] *I wonder who.
 
 ---
 
-<!-- page 215 -->
+<!-- page 214 -->
 
 196
 Masaya Yoshida, Chizuru Nakao, and Iván Ortega-Santos
@@ -10952,7 +10952,7 @@ b. John ate sashimi, but not [TP John ate sushi.]
 
 ---
 
-<!-- page 216 -->
+<!-- page 215 -->
 
 197
 The syntax of ellipsis and related phenomena 
@@ -11004,7 +11004,7 @@ b. Juan escribe para Clarín y  *(para) La Nación también.   Spanish
 
 ---
 
-<!-- page 217 -->
+<!-- page 216 -->
 
 198
 Masaya Yoshida, Chizuru Nakao, and Iván Ortega-Santos
@@ -11050,7 +11050,7 @@ LBE. He argues that the apparent ‘repair’-examples of propositional islands 
 
 ---
 
-<!-- page 218 -->
+<!-- page 217 -->
 
 199
 The syntax of ellipsis and related phenomena 
@@ -11096,7 +11096,7 @@ a wh-island violation.
 
 ---
 
-<!-- page 219 -->
+<!-- page 218 -->
 
 200
 Masaya Yoshida, Chizuru Nakao, and Iván Ortega-Santos
@@ -11142,7 +11142,7 @@ are structurally constrained. First he assumes the following structure of verbal
 
 ---
 
-<!-- page 220 -->
+<!-- page 219 -->
 
 201
 The syntax of ellipsis and related phenomena 
@@ -11190,7 +11190,7 @@ islands. Thus (32) should have a short extraction structure. Under the semantic 
 
 ---
 
-<!-- page 221 -->
+<!-- page 220 -->
 
 202
 Masaya Yoshida, Chizuru Nakao, and Iván Ortega-Santos
@@ -11245,7 +11245,7 @@ it
 
 ---
 
-<!-- page 222 -->
+<!-- page 221 -->
 
 203
 The syntax of ellipsis and related phenomena 
@@ -11289,7 +11289,7 @@ and Stripping); among Sluice-Stripping, they refer to the examples where the ﬁ
 
 ---
 
-<!-- page 223 -->
+<!-- page 222 -->
 
 204
 Masaya Yoshida, Chizuru Nakao, and Iván Ortega-Santos
@@ -11336,7 +11336,7 @@ remember who no phonetician1 thought that twho talked about his1 presentation.
 
 ---
 
-<!-- page 224 -->
+<!-- page 223 -->
 
 205
 The syntax of ellipsis and related phenomena 
@@ -11379,7 +11379,7 @@ coordination constraint).
 
 ---
 
-<!-- page 225 -->
+<!-- page 224 -->
 
 206
 Masaya Yoshida, Chizuru Nakao, and Iván Ortega-Santos
@@ -11429,7 +11429,7 @@ coordination (e.g., (54a)). Finally, if the size of the conjuncts is VP then the
 
 ---
 
-<!-- page 226 -->
+<!-- page 225 -->
 
 207
 The syntax of ellipsis and related phenomena 
@@ -11475,7 +11475,7 @@ cially very similar: In both NG and VG, it looks like only the head is omitted.
 
 ---
 
-<!-- page 227 -->
+<!-- page 226 -->
 
 208
 Masaya Yoshida, Chizuru Nakao, and Iván Ortega-Santos
@@ -11525,7 +11525,7 @@ among others).
 
 ---
 
-<!-- page 228 -->
+<!-- page 227 -->
 
 209
 The syntax of ellipsis and related phenomena 
@@ -11577,7 +11577,7 @@ Studies in Theoretical Linguistics. Oxford: Oxford University Press.
 
 ---
 
-<!-- page 229 -->
+<!-- page 228 -->
 
 210
 Masaya Yoshida, Chizuru Nakao, and Iván Ortega-Santos
@@ -11636,7 +11636,7 @@ Engdahl, Elisabet. 1983. Parasitic Gaps. Linguistics and Philosophy 6:5–34.
 
 ---
 
-<!-- page 230 -->
+<!-- page 229 -->
 
 211
 The syntax of ellipsis and related phenomena 
@@ -11700,7 +11700,7 @@ of Massachusetts: GLSA.
 
 ---
 
-<!-- page 231 -->
+<!-- page 230 -->
 
 212
 Masaya Yoshida, Chizuru Nakao, and Iván Ortega-Santos
@@ -11764,7 +11764,7 @@ Montreal Working Papers in Linguistics.
 
 ---
 
-<!-- page 232 -->
+<!-- page 231 -->
 
 213
 The syntax of ellipsis and related phenomena 
@@ -11811,7 +11811,7 @@ Ms. Northwestern University.
 
 ---
 
-<!-- page 233 -->
+<!-- page 232 -->
 
 214
 11
@@ -11846,7 +11846,7 @@ lished, because himself c-commands John.2
 
 ---
 
-<!-- page 234 -->
+<!-- page 233 -->
 
 215
 Binding theory 
@@ -11897,7 +11897,7 @@ ton and Wexler (1999).
 
 ---
 
-<!-- page 235 -->
+<!-- page 234 -->
 
 216
 Robert Truswell 
@@ -11943,7 +11943,7 @@ However, we also predict, incorrectly, that (9) requires a reﬂ exive.4
 
 ---
 
-<!-- page 236 -->
+<!-- page 235 -->
 
 217
 Binding theory 
@@ -11990,7 +11990,7 @@ b. Y is free (within domain D) iff there is no X within D that binds Y.
 
 ---
 
-<!-- page 237 -->
+<!-- page 236 -->
 
 218
 Robert Truswell 
@@ -12043,7 +12043,7 @@ A¢-trace
 
 ---
 
-<!-- page 238 -->
+<!-- page 237 -->
 
 219
 Binding theory 
@@ -12088,7 +12088,7 @@ b. [The grade [that [each student receives]]] is recorded in his ﬁ le.
 
 ---
 
-<!-- page 239 -->
+<!-- page 238 -->
 
 220
 Robert Truswell 
@@ -12136,7 +12136,7 @@ binding therefore provides an account of the strict/sloppy ambiguity under VP-el
 
 ---
 
-<!-- page 240 -->
+<!-- page 239 -->
 
 221
 Binding theory 
@@ -12191,7 +12191,7 @@ Nonreferential
 
 ---
 
-<!-- page 241 -->
+<!-- page 240 -->
 
 222
 Robert Truswell 
@@ -12237,7 +12237,7 @@ b. He thinks Sally worships him.
 
 ---
 
-<!-- page 242 -->
+<!-- page 241 -->
 
 223
 Binding theory 
@@ -12283,7 +12283,7 @@ are free.
 
 ---
 
-<!-- page 243 -->
+<!-- page 242 -->
 
 224
 Robert Truswell 
@@ -12335,7 +12335,7 @@ b.   John schoot op zichzelf
 
 ---
 
-<!-- page 244 -->
+<!-- page 243 -->
 
 225
 Binding theory 
@@ -12391,7 +12391,7 @@ bition. See Reuland (2011) for a recent take on this idea.
 
 ---
 
-<!-- page 245 -->
+<!-- page 244 -->
 
 226
 Robert Truswell 
@@ -12440,7 +12440,7 @@ have possessive reﬂ exives.
 
 ---
 
-<!-- page 246 -->
+<!-- page 245 -->
 
 227
 Binding theory 
@@ -12489,7 +12489,7 @@ Of course, (59) is both reﬂ exive and reﬂ exive-marked.
 
 ---
 
-<!-- page 247 -->
+<!-- page 246 -->
 
 228
 Robert Truswell 
@@ -12537,7 +12537,7 @@ tence is well-formed. This correctly predicts noncomplementarity in Dutch ECM su
 
 ---
 
-<!-- page 248 -->
+<!-- page 247 -->
 
 229
 Binding theory 
@@ -12586,7 +12586,7 @@ and fell on himself.
 
 ---
 
-<!-- page 249 -->
+<!-- page 248 -->
 
 230
 Robert Truswell 
@@ -12639,7 +12639,7 @@ Similar concerns extend to (69).
 
 ---
 
-<!-- page 250 -->
+<!-- page 249 -->
 
 231
 Binding theory 
@@ -12689,7 +12689,7 @@ c. *[[Whati he likes ti] is John].
 
 ---
 
-<!-- page 251 -->
+<!-- page 250 -->
 
 232
 Robert Truswell 
@@ -12745,7 +12745,7 @@ b.  [Which story [that John wrote]] did he like
 
 ---
 
-<!-- page 252 -->
+<!-- page 251 -->
 
 233
 Binding theory 
@@ -12797,7 +12797,7 @@ the feelings, thoughts, or speech of John or communicated to John.
 
 ---
 
-<!-- page 253 -->
+<!-- page 252 -->
 
 234
 Robert Truswell 
@@ -12849,7 +12849,7 @@ uine connectivity effect, given the uncertainty about the basic nature of the bi
 
 ---
 
-<!-- page 254 -->
+<!-- page 253 -->
 
 235
 Binding theory 
@@ -12902,7 +12902,7 @@ m-command having fallen by the wayside.
 
 ---
 
-<!-- page 255 -->
+<!-- page 254 -->
 
 236
 Robert Truswell 
@@ -12971,7 +12971,7 @@ Lyra Magloughlin for discussion of this and related issues.
 
 ---
 
-<!-- page 256 -->
+<!-- page 255 -->
 
 237
 Binding theory 
@@ -13030,7 +13030,7 @@ Working Papers in Linguistics.
 
 ---
 
-<!-- page 257 -->
+<!-- page 256 -->
 
 238
 Robert Truswell 
@@ -13091,7 +13091,7 @@ Williams, E. 1994. Thematic Structure in Syntax. Cambridge, MA: MIT Press.
 
 ---
 
-<!-- page 258 -->
+<!-- page 257 -->
 
 239
 12
@@ -13127,7 +13127,7 @@ accounting for the positions that the controller and the controllee can occupy. 
 
 ---
 
-<!-- page 259 -->
+<!-- page 258 -->
 
 240
 Norbert Hornstein and Jairo Nunes
@@ -13175,7 +13175,7 @@ b. *[John1 asked Bill2 [PRO1+2 to shave themselves/each other]]
 
 ---
 
-<!-- page 260 -->
+<!-- page 259 -->
 
 241
 Minimalism and control
@@ -13226,7 +13226,7 @@ the other”. So, the task before us now is to investigate which mechanisms avai
 
 ---
 
-<!-- page 261 -->
+<!-- page 260 -->
 
 242
 Norbert Hornstein and Jairo Nunes
@@ -13276,7 +13276,7 @@ control structures support partial control. The complement of implicative verbs 
 
 ---
 
-<!-- page 262 -->
+<!-- page 261 -->
 
 243
 Minimalism and control
@@ -13321,7 +13321,7 @@ structures (see (14b)/(15b)). Moreover, as PRO-based accounts and the MTC need
 
 ---
 
-<!-- page 263 -->
+<!-- page 262 -->
 
 244
 Norbert Hornstein and Jairo Nunes
@@ -13373,7 +13373,7 @@ up’, above, that the special provisos required by PRO-based accounts can be in
 
 ---
 
-<!-- page 264 -->
+<!-- page 263 -->
 
 245
 Minimalism and control
@@ -13422,7 +13422,7 @@ trol, as shown in (24), but, crucially, not in NOC, as shown in (25).
 
 ---
 
-<!-- page 265 -->
+<!-- page 264 -->
 
 246
 Norbert Hornstein and Jairo Nunes
@@ -13488,7 +13488,7 @@ GB model incorporating the CED there is no way to generate adjunct control via m
 
 ---
 
-<!-- page 266 -->
+<!-- page 265 -->
 
 247
 Minimalism and control
@@ -13541,7 +13541,7 @@ operation, the computational system must be able to handle more than one root sy
 
 ---
 
-<!-- page 267 -->
+<!-- page 266 -->
 
 248
 Norbert Hornstein and Jairo Nunes
@@ -13595,7 +13595,7 @@ after Johni eating lunch
 
 ---
 
-<!-- page 268 -->
+<!-- page 267 -->
 
 249
 Minimalism and control
@@ -13641,7 +13641,7 @@ with PRO taking the matrix subject as its antecedent. Under the relevant reading
 
 ---
 
-<!-- page 269 -->
+<!-- page 268 -->
 
 250
 Norbert Hornstein and Jairo Nunes
@@ -13691,7 +13691,7 @@ Razor disfavors this route. In contrast, by relying on the combination of some k
 
 ---
 
-<!-- page 270 -->
+<!-- page 269 -->
 
 251
 Minimalism and control
@@ -13741,7 +13741,7 @@ we should expect comparable cases in the domain of control. Haddad and Potsdam (
 
 ---
 
-<!-- page 271 -->
+<!-- page 270 -->
 
 252
 Norbert Hornstein and Jairo Nunes
@@ -13799,7 +13799,7 @@ control constructions in (45) below, where the controller is realized with nomin
 
 ---
 
-<!-- page 272 -->
+<!-- page 271 -->
 
 253
 Minimalism and control
@@ -13858,7 +13858,7 @@ us to expect that the full range of options available for copy pronunciation in 
 
 ---
 
-<!-- page 273 -->
+<!-- page 272 -->
 
 254
 Norbert Hornstein and Jairo Nunes
@@ -13905,7 +13905,7 @@ appear where A-traces (i.e., deleted copies in A-chains) are licit and to exhibi
 
 ---
 
-<!-- page 274 -->
+<!-- page 273 -->
 
 255
 Minimalism and control
@@ -13956,7 +13956,7 @@ tural feature of the Minimalist Program, there exists a very tight conceptual co
 
 ---
 
-<!-- page 275 -->
+<!-- page 274 -->
 
 256
 Norbert Hornstein and Jairo Nunes
@@ -14010,7 +14010,7 @@ b.   John expected [someone to be [t in the room]]
 
 ---
 
-<!-- page 276 -->
+<!-- page 275 -->
 
 257
 Minimalism and control
@@ -14063,7 +14063,7 @@ grammatical products formed by movement. So, following a venerable tradition, th
 
 ---
 
-<!-- page 277 -->
+<!-- page 276 -->
 
 258
 Norbert Hornstein and Jairo Nunes
@@ -14116,7 +14116,7 @@ mechanism. Precisely the same theory that accounts for where OC PRO can appear
 
 ---
 
-<!-- page 278 -->
+<!-- page 277 -->
 
 259
 Minimalism and control
@@ -14170,7 +14170,7 @@ antecedent and anaphor that OC does. For reasons of space we will not be able to
 
 ---
 
-<!-- page 279 -->
+<!-- page 278 -->
 
 260
 Norbert Hornstein and Jairo Nunes
@@ -14234,7 +14234,7 @@ cussion, see Nunes (2012: section 5).
 
 ---
 
-<!-- page 280 -->
+<!-- page 279 -->
 
 261
 Minimalism and control
@@ -14296,7 +14296,7 @@ Extension Requirement. Linguistic Inquiry 28:345–356.
 
 ---
 
-<!-- page 281 -->
+<!-- page 280 -->
 
 262
 Norbert Hornstein and Jairo Nunes
@@ -14360,7 +14360,7 @@ Linguistic Theory 22:811–877.
 
 ---
 
-<!-- page 282 -->
+<!-- page 281 -->
 
 263
 Minimalism and control
@@ -14420,7 +14420,7 @@ Blackwell.
 
 ---
 
-<!-- page 283 -->
+<!-- page 282 -->
 
 264
 13
@@ -14458,7 +14458,7 @@ guidelines.
 
 ---
 
-<!-- page 284 -->
+<!-- page 283 -->
 
 265
 Scrambling
@@ -14512,7 +14512,7 @@ without VPs. Since there is no VP constituent in this type of language, there is
 
 ---
 
-<!-- page 285 -->
+<!-- page 284 -->
 
 266
 Yosuke Sato and Nobu Goto
@@ -14567,7 +14567,7 @@ The contrast between (4a) and (4b) can be accounted for in a way parallel to tha
 
 ---
 
-<!-- page 286 -->
+<!-- page 285 -->
 
 267
 Scrambling
@@ -14626,7 +14626,7 @@ quantiﬁ er in the manner shown in (10).
 
 ---
 
-<!-- page 287 -->
+<!-- page 286 -->
 
 268
 Yosuke Sato and Nobu Goto
@@ -14689,7 +14689,7 @@ ageta
 
 ---
 
-<!-- page 288 -->
+<!-- page 287 -->
 
 269
 Scrambling
@@ -14751,7 +14751,7 @@ c.  John-ga [NP subete-no gakusei-o]  [PP soitu-no    sensei-ni]   syookaisita.
 
 ---
 
-<!-- page 289 -->
+<!-- page 288 -->
 
 270
 Yosuke Sato and Nobu Goto
@@ -14812,7 +14812,7 @@ is within the Q-marked clause; (19b) is ungrammatical because the wh-phrase is i
 
 ---
 
-<!-- page 290 -->
+<!-- page 289 -->
 
 271
 Scrambling
@@ -14870,7 +14870,7 @@ then (22b) should be able to have embedded scope, contrary to fact. This observa
 
 ---
 
-<!-- page 291 -->
+<!-- page 290 -->
 
 272
 Yosuke Sato and Nobu Goto
@@ -14930,7 +14930,7 @@ the lines of recent work on the left periphery (Rizzi 1997).
 
 ---
 
-<!-- page 292 -->
+<!-- page 291 -->
 
 273
 Scrambling
@@ -14980,7 +14980,7 @@ driving force, rightward movements such as right dislocation are costly and must
 
 ---
 
-<!-- page 293 -->
+<!-- page 292 -->
 
 274
 Yosuke Sato and Nobu Goto
@@ -15041,7 +15041,7 @@ are licensed by being adjoined to semantically contentful categories rather than
 
 ---
 
-<!-- page 294 -->
+<!-- page 293 -->
 
 275
 Scrambling
@@ -15099,7 +15099,7 @@ a.  John-ga   hon-o   katta.
 
 ---
 
-<!-- page 295 -->
+<!-- page 294 -->
 
 276
 Yosuke Sato and Nobu Goto
@@ -15160,7 +15160,7 @@ introduced
 
 ---
 
-<!-- page 296 -->
+<!-- page 295 -->
 
 277
 Scrambling
@@ -15218,7 +15218,7 @@ as A¢-movement as well. This point is proved in (40).
 
 ---
 
-<!-- page 297 -->
+<!-- page 296 -->
 
 278
 Yosuke Sato and Nobu Goto
@@ -15275,7 +15275,7 @@ b.  [PP Sooru-ni]i   Taroo-ga [CP Hanako-ga ti iru to]  omotteiru.
 
 ---
 
-<!-- page 298 -->
+<!-- page 297 -->
 
 279
 Scrambling
@@ -15338,7 +15338,7 @@ DEM  book-ACC all-DAT    Hanako-NOM  have   COMP said
 
 ---
 
-<!-- page 299 -->
+<!-- page 298 -->
 
 280
 Yosuke Sato and Nobu Goto
@@ -15395,7 +15395,7 @@ NOM, nominative; Q, question particle; TOP, topic marker.
 
 ---
 
-<!-- page 300 -->
+<!-- page 299 -->
 
 281
 Scrambling
@@ -15456,7 +15456,7 @@ Kuno, Susumu. 1973. The structure of the Japanese language. Cambridge, MA: MIT P
 
 ---
 
-<!-- page 301 -->
+<!-- page 300 -->
 
 282
 Yosuke Sato and Nobu Goto
@@ -15507,7 +15507,7 @@ Imai and Mamoru Saito, 351–374. Dordrecht: Foris.
 
 ---
 
-<!-- page 302 -->
+<!-- page 301 -->
 
 283
 14
@@ -15548,7 +15548,7 @@ is found in many polysynthetic languages, such as Algonquian, Athabaskan, Caddoa
 
 ---
 
-<!-- page 303 -->
+<!-- page 302 -->
 
 284
 Kumiko Murasugi
@@ -15601,7 +15601,7 @@ porated noun displays “discourse transparency:” that is, the ability to be r
 
 ---
 
-<!-- page 304 -->
+<!-- page 303 -->
 
 285
 Noun incorporation, nonconfigurationality, and polysynthesis 
@@ -15654,7 +15654,7 @@ ported by theoretical studies on NI such as Rosen (1989) and Baker et al. (2004)
 
 ---
 
-<!-- page 305 -->
+<!-- page 304 -->
 
 286
 Kumiko Murasugi
@@ -15705,7 +15705,7 @@ adopted Baker’s head movement analysis, others were more critical, pointing ou
 
 ---
 
-<!-- page 306 -->
+<!-- page 305 -->
 
 287
 Noun incorporation, nonconfigurationality, and polysynthesis 
@@ -15756,7 +15756,7 @@ possibly, phonology) that assign separate representations to a linguistic expres
 
 ---
 
-<!-- page 307 -->
+<!-- page 306 -->
 
 288
 Kumiko Murasugi
@@ -15809,7 +15809,7 @@ continuous expression (in bold), and (2c) shows the use of null anaphora.
 
 ---
 
-<!-- page 308 -->
+<!-- page 307 -->
 
 289
 Noun incorporation, nonconfigurationality, and polysynthesis 
@@ -15866,7 +15866,7 @@ Jelinek (p. 50), the relation between pronominal arguments and NP adjuncts is si
 
 ---
 
-<!-- page 309 -->
+<!-- page 308 -->
 
 290
 Kumiko Murasugi
@@ -15921,7 +15921,7 @@ class, differ in the extent to which they exhibit the properties identiﬁ ed by
 
 ---
 
-<!-- page 310 -->
+<!-- page 309 -->
 
 291
 Noun incorporation, nonconfigurationality, and polysynthesis 
@@ -15974,7 +15974,7 @@ work was that the supposedly universal relation between arguments and structural
 
 ---
 
-<!-- page 311 -->
+<!-- page 310 -->
 
 292
 Kumiko Murasugi
@@ -16029,7 +16029,7 @@ nonconﬁ gurational languages in which grammatical functions are identiﬁ ed t
 
 ---
 
-<!-- page 312 -->
+<!-- page 311 -->
 
 293
 Noun incorporation, nonconfigurationality, and polysynthesis 
@@ -16081,7 +16081,7 @@ concludes that languages display different subsets of polysynthetic properties.
 
 ---
 
-<!-- page 313 -->
+<!-- page 312 -->
 
 294
 Kumiko Murasugi
@@ -16136,7 +16136,7 @@ rather than to ﬁ nd properties shared by all languages of this type.
 
 ---
 
-<!-- page 314 -->
+<!-- page 313 -->
 
 295
 Noun incorporation, nonconfigurationality, and polysynthesis 
@@ -16188,7 +16188,7 @@ theory.
 
 ---
 
-<!-- page 315 -->
+<!-- page 314 -->
 
 296
 Kumiko Murasugi
@@ -16243,7 +16243,7 @@ phrase arguments, NP reﬂ exives, true quantiﬁ ers and inﬁ nitival verb for
 
 ---
 
-<!-- page 316 -->
+<!-- page 315 -->
 
 297
 Noun incorporation, nonconfigurationality, and polysynthesis 
@@ -16296,7 +16296,7 @@ verbal elements), and how many of them, are necessary for a language to be class
 
 ---
 
-<!-- page 317 -->
+<!-- page 316 -->
 
 298
 Kumiko Murasugi
@@ -16350,7 +16350,7 @@ and Massam (2009).
 
 ---
 
-<!-- page 318 -->
+<!-- page 317 -->
 
 299
 Noun incorporation, nonconfigurationality, and polysynthesis 
@@ -16399,7 +16399,7 @@ T. Shopen, 1–65. Cambridge: Cambridge University Press.
 
 ---
 
-<!-- page 319 -->
+<!-- page 318 -->
 
 300
 Kumiko Murasugi
@@ -16463,7 +16463,7 @@ in Language 22:49–81.
 
 ---
 
-<!-- page 320 -->
+<!-- page 319 -->
 
 301
 Noun incorporation, nonconfigurationality, and polysynthesis 
@@ -16527,7 +16527,7 @@ Linguistic Theory 1:5–47.
 
 ---
 
-<!-- page 321 -->
+<!-- page 320 -->
 
 302
 Kumiko Murasugi
@@ -16591,7 +16591,7 @@ University.
 
 ---
 
-<!-- page 322 -->
+<!-- page 321 -->
 
 303
 Noun incorporation, nonconfigurationality, and polysynthesis 
@@ -16652,26 +16652,26 @@ Lingua 119:199–223.
 
 ---
 
-<!-- page 323 -->
+<!-- page 322 -->
 
 This page intentionally left blank
 
 ---
 
-<!-- page 324 -->
+<!-- page 323 -->
 
 Part III
 Syntactic interfaces
 
 ---
 
-<!-- page 325 -->
+<!-- page 324 -->
 
 This page intentionally left blank
 
 ---
 
-<!-- page 326 -->
+<!-- page 325 -->
 
 307
 1 Introduction
@@ -16709,7 +16709,7 @@ Sylvia L.R. Schreiner
 
 ---
 
-<!-- page 327 -->
+<!-- page 326 -->
 
 308
 Sylvia L.R. Schreiner
@@ -16763,7 +16763,7 @@ basic type; in their theory it was these types that had rules for interpretation
 
 ---
 
-<!-- page 328 -->
+<!-- page 327 -->
 
 309
 The syntax–semantics/pragmatics interface 
@@ -16816,7 +16816,7 @@ the role they play in the event or subevent” (p. 30).
 
 ---
 
-<!-- page 329 -->
+<!-- page 328 -->
 
 310
 Sylvia L.R. Schreiner
@@ -16868,7 +16868,7 @@ Hovav (1995) approach these topics through the phenomenon of unaccusativity. The
 
 ---
 
-<!-- page 330 -->
+<!-- page 329 -->
 
 311
 The syntax–semantics/pragmatics interface 
@@ -16919,7 +16919,7 @@ phenomena.
 
 ---
 
-<!-- page 331 -->
+<!-- page 330 -->
 
 312
 Sylvia L.R. Schreiner
@@ -16971,7 +16971,7 @@ Syntax and Relevance Theory, both common approaches at this particular interface
 
 ---
 
-<!-- page 332 -->
+<!-- page 331 -->
 
 313
 The syntax–semantics/pragmatics interface 
@@ -17022,7 +17022,7 @@ Instead, (partial) structures are interpreted at each spell-out or at the edge o
 
 ---
 
-<!-- page 333 -->
+<!-- page 332 -->
 
 314
 Sylvia L.R. Schreiner
@@ -17074,7 +17074,7 @@ of linear logic (the “glue”). Since f-structures contain both complement and
 
 ---
 
-<!-- page 334 -->
+<!-- page 333 -->
 
 315
 The syntax–semantics/pragmatics interface 
@@ -17124,7 +17124,7 @@ the meaning of the mother node. The semantic interpretation component, then, can
 
 ---
 
-<!-- page 335 -->
+<!-- page 334 -->
 
 316
 Sylvia L.R. Schreiner
@@ -17176,7 +17176,7 @@ the grammar – the grammar deals with conventional or coded meaning and pragmat
 
 ---
 
-<!-- page 336 -->
+<!-- page 335 -->
 
 317
 The syntax–semantics/pragmatics interface 
@@ -17228,7 +17228,7 @@ plished via a combination of domain-general processes.
 
 ---
 
-<!-- page 337 -->
+<!-- page 336 -->
 
 318
 Sylvia L.R. Schreiner
@@ -17280,7 +17280,7 @@ Vol. 3. New York: Oxford University Press.
 
 ---
 
-<!-- page 338 -->
+<!-- page 337 -->
 
 319
 The syntax–semantics/pragmatics interface 
@@ -17344,7 +17344,7 @@ Haegeman, Liliane. 1991. Introduction to Government and Binding Theory. Malden, 
 
 ---
 
-<!-- page 339 -->
+<!-- page 338 -->
 
 320
 Sylvia L.R. Schreiner
@@ -17408,7 +17408,7 @@ of Chicago Press.
 
 ---
 
-<!-- page 340 -->
+<!-- page 339 -->
 
 321
 The syntax–semantics/pragmatics interface 
@@ -17449,7 +17449,7 @@ Lingua 79(1):39–81.
 
 ---
 
-<!-- page 341 -->
+<!-- page 340 -->
 
 322
 16
@@ -17487,7 +17487,7 @@ phrases and sentences that have an irregular, unexpected property (such as idiom
 
 ---
 
-<!-- page 342 -->
+<!-- page 341 -->
 
 323
 The syntax–lexicon interface
@@ -17538,7 +17538,7 @@ them, are the topic of §5.
 
 ---
 
-<!-- page 343 -->
+<!-- page 342 -->
 
 324
 Peter Ackema
@@ -17589,7 +17589,7 @@ in *(the house), over *(the mountains), beside *(the railway tracks)
 
 ---
 
-<!-- page 344 -->
+<!-- page 343 -->
 
 325
 The syntax–lexicon interface
@@ -17639,7 +17639,7 @@ a structural deﬁ nition of traditional theta-roles such as Theme, Agent, or Go
 
 ---
 
-<!-- page 345 -->
+<!-- page 344 -->
 
 326
 Peter Ackema
@@ -17686,7 +17686,7 @@ the shelf)
 
 ---
 
-<!-- page 346 -->
+<!-- page 345 -->
 
 327
 The syntax–lexicon interface
@@ -17733,7 +17733,7 @@ be plugged into a structure containing any speciﬁ ers and/or complements, as l
 
 ---
 
-<!-- page 347 -->
+<!-- page 346 -->
 
 328
 Peter Ackema
@@ -17791,7 +17791,7 @@ only +values, or only -values, or mixed values. This plays a role in the princip
 
 ---
 
-<!-- page 348 -->
+<!-- page 347 -->
 
 329
 The syntax–lexicon interface
@@ -17841,7 +17841,7 @@ ing’ processes. These are discussed in §5.
 
 ---
 
-<!-- page 349 -->
+<!-- page 348 -->
 
 330
 Peter Ackema
@@ -17889,7 +17889,7 @@ there.
 
 ---
 
-<!-- page 350 -->
+<!-- page 349 -->
 
 331
 The syntax–lexicon interface
@@ -17936,7 +17936,7 @@ Direct Object in (28). It is not clear that this is really necessary, though (se
 
 ---
 
-<!-- page 351 -->
+<!-- page 350 -->
 
 332
 Peter Ackema
@@ -17986,7 +17986,7 @@ b. Mark a [+] cluster with index 1
 
 ---
 
-<!-- page 352 -->
+<!-- page 351 -->
 
 333
 The syntax–lexicon interface
@@ -18035,7 +18035,7 @@ clause, and is usually designated as v (“little v”, to distinguish it from l
 
 ---
 
-<!-- page 353 -->
+<!-- page 352 -->
 
 334
 Peter Ackema
@@ -18081,7 +18081,7 @@ blocked, but it is not clear how such blocking is achieved.
 
 ---
 
-<!-- page 354 -->
+<!-- page 353 -->
 
 335
 The syntax–lexicon interface
@@ -18129,7 +18129,7 @@ archies are only relative, meaning the highest available theta-role should be pr
 
 ---
 
-<!-- page 355 -->
+<!-- page 354 -->
 
 336
 Peter Ackema
@@ -18177,7 +18177,7 @@ b. *The victim killed. (with meaning ‘the victim got killed’)
 
 ---
 
-<!-- page 356 -->
+<!-- page 355 -->
 
 337
 The syntax–lexicon interface
@@ -18223,7 +18223,7 @@ b. Mary washes. (can only mean ‘Mary washes herself’)
 
 ---
 
-<!-- page 357 -->
+<!-- page 356 -->
 
 338
 Peter Ackema
@@ -18269,7 +18269,7 @@ sees these alternations as the product of purely syntax-internal processes.
 
 ---
 
-<!-- page 358 -->
+<!-- page 357 -->
 
 339
 The syntax–lexicon interface
@@ -18322,7 +18322,7 @@ of this case). But this does mean that it is not straightforward to base a decis
 
 ---
 
-<!-- page 359 -->
+<!-- page 358 -->
 
 340
 Peter Ackema
@@ -18374,7 +18374,7 @@ indicate that these languages opt for the ‘syntax’ setting for reﬂ exivisa
 
 ---
 
-<!-- page 360 -->
+<!-- page 359 -->
 
 341
 The syntax–lexicon interface
@@ -18426,7 +18426,7 @@ edn, ed. A. Alexiadou and T. Kiss. Berlin: Mouton de Gruyter.
 
 ---
 
-<!-- page 361 -->
+<!-- page 360 -->
 
 342
 Peter Ackema
@@ -18490,7 +18490,7 @@ Working Papers, MIT.
 
 ---
 
-<!-- page 362 -->
+<!-- page 361 -->
 
 343
 The syntax–lexicon interface
@@ -18554,7 +18554,7 @@ bridge University Press.
 
 ---
 
-<!-- page 363 -->
+<!-- page 362 -->
 
 344
 Peter Ackema
@@ -18591,7 +18591,7 @@ G. Ramchand and C. Reiss, 353–381. Oxford: Oxford University Press.
 
 ---
 
-<!-- page 364 -->
+<!-- page 363 -->
 
 345
 17
@@ -18630,7 +18630,7 @@ logical. This is where the ordering problem for the MSI is seen: Does the positi
 
 ---
 
-<!-- page 365 -->
+<!-- page 364 -->
 
 346
 Daniel Siddiqi
@@ -18683,7 +18683,7 @@ words through the transformations (see Lees 1960, for example). Allomorphy, or a
 
 ---
 
-<!-- page 366 -->
+<!-- page 365 -->
 
 347
 The morphology–syntax interface 
@@ -18739,7 +18739,7 @@ the list of morphemes as well as by the dictionary and later the syntactic and p
 
 ---
 
-<!-- page 367 -->
+<!-- page 366 -->
 
 348
 Daniel Siddiqi
@@ -18794,7 +18794,7 @@ adopted by Government and Binding Theory. Also, during this time is the Linguist
 
 ---
 
-<!-- page 368 -->
+<!-- page 367 -->
 
 349
 The morphology–syntax interface 
@@ -18847,7 +18847,7 @@ the typological generalization that languages have a choice in expressing gramma
 
 ---
 
-<!-- page 369 -->
+<!-- page 368 -->
 
 350
 Daniel Siddiqi
@@ -18902,7 +18902,7 @@ predicted form is unavailable – for example, in English: am/are/is but XX/aren
 
 ---
 
-<!-- page 370 -->
+<!-- page 369 -->
 
 351
 The morphology–syntax interface 
@@ -18957,7 +18957,7 @@ fairly typical in morphological study to assume one of two competing approaches:
 
 ---
 
-<!-- page 371 -->
+<!-- page 370 -->
 
 352
 Daniel Siddiqi
@@ -19008,7 +19008,7 @@ perf. act.’, kuttib ‘write perf. pass.’, etc., McCarthy 1981). A pure conc
 
 ---
 
-<!-- page 372 -->
+<!-- page 371 -->
 
 353
 The morphology–syntax interface 
@@ -19059,7 +19059,7 @@ litter a derivation, being proposed to be syntactic licensing conditions for inn
 
 ---
 
-<!-- page 373 -->
+<!-- page 372 -->
 
 354
 Daniel Siddiqi
@@ -19112,7 +19112,7 @@ morpheme useless and easily abandoned.
 
 ---
 
-<!-- page 374 -->
+<!-- page 373 -->
 
 355
 The morphology–syntax interface 
@@ -19165,7 +19165,7 @@ borrowed and ends with the sounds /-us/, regardless of historical source (octopi
 
 ---
 
-<!-- page 375 -->
+<!-- page 374 -->
 
 356
 Daniel Siddiqi
@@ -19216,7 +19216,7 @@ modules and separate generative mechanisms are the greater violations of parsimo
 
 ---
 
-<!-- page 376 -->
+<!-- page 375 -->
 
 357
 The morphology–syntax interface 
@@ -19269,7 +19269,7 @@ to die can’t mean kill (Fodor 1970), transmission can’t mean part.
 
 ---
 
-<!-- page 377 -->
+<!-- page 376 -->
 
 358
 Daniel Siddiqi
@@ -19320,7 +19320,7 @@ There are several phenomena that just cannot be categorized as either syntactic 
 
 ---
 
-<!-- page 378 -->
+<!-- page 377 -->
 
 359
 The morphology–syntax interface 
@@ -19375,7 +19375,7 @@ Particle verbs act as inputs to morphological processes but are separable by the
 
 ---
 
-<!-- page 379 -->
+<!-- page 378 -->
 
 360
 Daniel Siddiqi
@@ -19428,7 +19428,7 @@ contemporary morphological and syntactic discussion and increasingly is becoming
 
 ---
 
-<!-- page 380 -->
+<!-- page 379 -->
 
 361
 The morphology–syntax interface 
@@ -19485,7 +19485,7 @@ and Computer Applications, ed. P. Whitelock et al., 149–188. London: Academic 
 
 ---
 
-<!-- page 381 -->
+<!-- page 380 -->
 
 362
 Daniel Siddiqi
@@ -19546,7 +19546,7 @@ Press.
 
 ---
 
-<!-- page 382 -->
+<!-- page 381 -->
 
 363
 The morphology–syntax interface 
@@ -19610,7 +19610,7 @@ IL: University of Chicago Press.
 
 ---
 
-<!-- page 383 -->
+<!-- page 382 -->
 
 364
 Daniel Siddiqi
@@ -19657,7 +19657,7 @@ ogy 1995, ed. G. Booij and J. van Marle, 93–114. Dordrecht: Kluwer.
 
 ---
 
-<!-- page 384 -->
+<!-- page 383 -->
 
 365
 18
@@ -19700,7 +19700,7 @@ part supported by JSPS KAKENHI Grant No. 25370545.
 
 ---
 
-<!-- page 385 -->
+<!-- page 384 -->
 
 366
 Yoshihito Dobashi
@@ -19752,7 +19752,7 @@ theories, making reference to their approaches to cross-linguistic variation.
 
 ---
 
-<!-- page 386 -->
+<!-- page 385 -->
 
 367
 Prosodic domains and the syntax–phonology interface 
@@ -19821,7 +19821,7 @@ b.
 
 ---
 
-<!-- page 387 -->
+<!-- page 386 -->
 
 368
 Yoshihito Dobashi
@@ -19869,7 +19869,7 @@ into the j that contains X.
 
 ---
 
-<!-- page 388 -->
+<!-- page 387 -->
 
 369
 Prosodic domains and the syntax–phonology interface 
@@ -19920,7 +19920,7 @@ Thus, for the ditransitive VP structure in (13), (12iia) gives the phonological 
 
 ---
 
-<!-- page 389 -->
+<!-- page 388 -->
 
 370
 Yoshihito Dobashi
@@ -19966,7 +19966,7 @@ edge of a phonological phrase j.
 
 ---
 
-<!-- page 390 -->
+<!-- page 389 -->
 
 371
 Prosodic domains and the syntax–phonology interface 
@@ -20035,7 +20035,7 @@ sive phrasing is attributed to differences in constraint ranking.
 
 ---
 
-<!-- page 391 -->
+<!-- page 390 -->
 
 372
 Yoshihito Dobashi
@@ -20084,7 +20084,7 @@ phonology relations was an attempt to eliminate labels from the phrase structure
 
 ---
 
-<!-- page 392 -->
+<!-- page 391 -->
 
 373
 Prosodic domains and the syntax–phonology interface 
@@ -20135,7 +20135,7 @@ spelled-out earlier because syntactic information such as c-command upon which l
 
 ---
 
-<!-- page 393 -->
+<!-- page 392 -->
 
 374
 Yoshihito Dobashi
@@ -20180,7 +20180,7 @@ Marvin (2002), Pak (2008), Samuels (2009; 2011a), Sato (2009), Seidl (2001), Sch
 
 ---
 
-<!-- page 394 -->
+<!-- page 393 -->
 
 375
 Prosodic domains and the syntax–phonology interface 
@@ -20241,7 +20241,7 @@ which accounts for why u is not recursive:
 
 ---
 
-<!-- page 395 -->
+<!-- page 394 -->
 
 376
 Yoshihito Dobashi
@@ -20290,7 +20290,7 @@ corresponding prosodic type in phonological representation, call it w.
 
 ---
 
-<!-- page 396 -->
+<!-- page 395 -->
 
 377
 Prosodic domains and the syntax–phonology interface 
@@ -20344,7 +20344,7 @@ dominate it.
 
 ---
 
-<!-- page 397 -->
+<!-- page 396 -->
 
 378
 Yoshihito Dobashi
@@ -20394,7 +20394,7 @@ apply across the left edge of a non-branching noun phrase:
 
 ---
 
-<!-- page 398 -->
+<!-- page 397 -->
 
 379
 Prosodic domains and the syntax–phonology interface 
@@ -20447,7 +20447,7 @@ eliminate phonological phrases from a theory of grammar. If phonological rules c
 
 ---
 
-<!-- page 399 -->
+<!-- page 398 -->
 
 380
 Yoshihito Dobashi
@@ -20500,7 +20500,7 @@ ii. ® (bálísá káámúkúúkùlù) (dòòdô)
 
 ---
 
-<!-- page 400 -->
+<!-- page 399 -->
 
 381
 Prosodic domains and the syntax–phonology interface 
@@ -20552,7 +20552,7 @@ chy is derived from the linearization procedure.
 
 ---
 
-<!-- page 401 -->
+<!-- page 400 -->
 
 382
 Yoshihito Dobashi
@@ -20606,7 +20606,7 @@ and Kaisse (1987), among many others.
 
 ---
 
-<!-- page 402 -->
+<!-- page 401 -->
 
 383
 Prosodic domains and the syntax–phonology interface 
@@ -20664,7 +20664,7 @@ Chicago Press.
 
 ---
 
-<!-- page 403 -->
+<!-- page 402 -->
 
 384
 Yoshihito Dobashi
@@ -20728,7 +20728,7 @@ Post-graduate thesis, der Johann-Wolfgang-Goethe Universität.
 
 ---
 
-<!-- page 404 -->
+<!-- page 403 -->
 
 385
 Prosodic domains and the syntax–phonology interface 
@@ -20792,7 +20792,7 @@ Dickey, and S. Urbancxyk, 249–384. Amherst, MA: GLSA.
 
 ---
 
-<!-- page 405 -->
+<!-- page 404 -->
 
 386
 Yoshihito Dobashi
@@ -20856,7 +20856,7 @@ Tokizaki, H. 2005. Prosody and Phrase Structure without Labels. English Linguist
 
 ---
 
-<!-- page 406 -->
+<!-- page 405 -->
 
 387
 Prosodic domains and the syntax–phonology interface 
@@ -20888,26 +20888,26 @@ Yearbook 4:1–263.
 
 ---
 
-<!-- page 407 -->
+<!-- page 406 -->
 
 This page intentionally left blank
 
 ---
 
-<!-- page 408 -->
+<!-- page 407 -->
 
 Part IV
 Syntax in context
 
 ---
 
-<!-- page 409 -->
+<!-- page 408 -->
 
 This page intentionally left blank
 
 ---
 
-<!-- page 410 -->
+<!-- page 409 -->
 
 391
 1 Introduction: Universal Grammar, principles and parameters
@@ -20944,7 +20944,7 @@ Ian Roberts
 
 ---
 
-<!-- page 411 -->
+<!-- page 410 -->
 
 392
 Ian Roberts
@@ -20994,7 +20994,7 @@ change.
 
 ---
 
-<!-- page 412 -->
+<!-- page 411 -->
 
 393
 Syntactic change
@@ -21043,7 +21043,7 @@ convergent as to pose no serious problems of intergenerational communication. We
 
 ---
 
-<!-- page 413 -->
+<!-- page 412 -->
 
 394
 Ian Roberts
@@ -21087,7 +21087,7 @@ tences but only to a ﬁ nite number N after which it matures and its language c
 
 ---
 
-<!-- page 414 -->
+<!-- page 413 -->
 
 395
 Syntactic change
@@ -21132,7 +21132,7 @@ ers converge on a grammatical system which differs in at least one parameter val
 
 ---
 
-<!-- page 415 -->
+<!-- page 414 -->
 
 396
 Ian Roberts
@@ -21184,7 +21184,7 @@ century:
 
 ---
 
-<!-- page 416 -->
+<!-- page 415 -->
 
 397
 Syntactic change
@@ -21239,7 +21239,7 @@ V > C
 
 ---
 
-<!-- page 417 -->
+<!-- page 416 -->
 
 398
 Ian Roberts
@@ -21300,7 +21300,7 @@ we ﬁ nd a very strong tendency to verb-ﬁ nal order:
 
 ---
 
-<!-- page 418 -->
+<!-- page 417 -->
 
 399
 Syntactic change
@@ -21364,7 +21364,7 @@ VAux:
 
 ---
 
-<!-- page 419 -->
+<!-- page 418 -->
 
 400
 Ian Roberts
@@ -21417,7 +21417,7 @@ English. Again, this expectation is borne out:
 
 ---
 
-<!-- page 420 -->
+<!-- page 419 -->
 
 401
 Syntactic change
@@ -21471,7 +21471,7 @@ typically associated with social and cultural value (see Weinreich et al. 1968) 
 
 ---
 
-<!-- page 421 -->
+<!-- page 420 -->
 
 402
 Ian Roberts
@@ -21517,7 +21517,7 @@ No: present on ...
 
 ---
 
-<!-- page 422 -->
+<!-- page 421 -->
 
 403
 Syntactic change
@@ -21572,7 +21572,7 @@ property of the family.
 
 ---
 
-<!-- page 423 -->
+<!-- page 422 -->
 
 404
 Ian Roberts
@@ -21618,7 +21618,7 @@ sible. A recent illustration of this comes from the Final-over-Final Constraint 
 
 ---
 
-<!-- page 424 -->
+<!-- page 423 -->
 
 405
 Syntactic change
@@ -21668,7 +21668,7 @@ a Chomskyan linguistic paradigm. The existence of variation and change in langua
 
 ---
 
-<!-- page 425 -->
+<!-- page 424 -->
 
 406
 Ian Roberts
@@ -21725,7 +21725,7 @@ Chomsky, N. 1975. Reﬂ ections on Language. New York: Pantheon.
 
 ---
 
-<!-- page 426 -->
+<!-- page 425 -->
 
 407
 Syntactic change
@@ -21789,7 +21789,7 @@ tems 11:161–204.
 
 ---
 
-<!-- page 427 -->
+<!-- page 426 -->
 
 408
 Ian Roberts
@@ -21843,7 +21843,7 @@ tion of the optional inﬁ nitive stage. Lingua 106:23–79.
 
 ---
 
-<!-- page 428 -->
+<!-- page 427 -->
 
 409
 20
@@ -21882,7 +21882,7 @@ natural language expressions can be of considerable complexity and temporal exte
 
 ---
 
-<!-- page 429 -->
+<!-- page 428 -->
 
 410
 Matthew W. Wagers
@@ -21937,7 +21937,7 @@ Some processes, however, seem to entertain analyses of the expression which the 
 
 ---
 
-<!-- page 430 -->
+<!-- page 429 -->
 
 411
 Syntax in forward and in reverse
@@ -21992,7 +21992,7 @@ tion: syntactic category labels, dominance relations, agreement features, and so
 
 ---
 
-<!-- page 431 -->
+<!-- page 430 -->
 
 412
 Matthew W. Wagers
@@ -22047,7 +22047,7 @@ putational resources for linking the chunks into a whole (Frazier and Fodor 1978
 
 ---
 
-<!-- page 432 -->
+<!-- page 431 -->
 
 413
 Syntax in forward and in reverse
@@ -22100,7 +22100,7 @@ to those encodings by losing an effective index to them. Understanding why the e
 
 ---
 
-<!-- page 433 -->
+<!-- page 432 -->
 
 414
 Matthew W. Wagers
@@ -22155,7 +22155,7 @@ with ellipses. Participants were signiﬁ cantly above chance at discriminating 
 
 ---
 
-<!-- page 434 -->
+<!-- page 433 -->
 
 415
 Syntax in forward and in reverse
@@ -22216,7 +22216,7 @@ activated words and a salient conceptual representation. Verbatim recall, they r
 
 ---
 
-<!-- page 435 -->
+<!-- page 434 -->
 
 416
 Matthew W. Wagers
@@ -22269,7 +22269,7 @@ We will then extend the discussion to other dependency types.
 
 ---
 
-<!-- page 436 -->
+<!-- page 435 -->
 
 417
 Syntax in forward and in reverse
@@ -22319,7 +22319,7 @@ the subject and verb are linearly adjacent (Kimball and Aissen 1971; Bock and Mi
 
 ---
 
-<!-- page 437 -->
+<!-- page 436 -->
 
 418
 Matthew W. Wagers
@@ -22373,7 +22373,7 @@ have and then use those as cues. Examples include: nominative case, plural numbe
 
 ---
 
-<!-- page 438 -->
+<!-- page 437 -->
 
 419
 Syntax in forward and in reverse
@@ -22427,7 +22427,7 @@ memory is highly capacity limited (Miller 1956; Broadbent 1958; McElree 1998; Co
 
 ---
 
-<!-- page 439 -->
+<!-- page 438 -->
 
 420
 Matthew W. Wagers
@@ -22482,7 +22482,7 @@ forms cues at the retrieval site to include not only the abstract grammatical fe
 
 ---
 
-<!-- page 440 -->
+<!-- page 439 -->
 
 421
 Syntax in forward and in reverse
@@ -22535,7 +22535,7 @@ Against this backdrop we can see how the interaction of sentence processing with
 
 ---
 
-<!-- page 441 -->
+<!-- page 440 -->
 
 422
 Matthew W. Wagers
@@ -22591,7 +22591,7 @@ Bresnan, J. 2001. Lexical-Functional Syntax. Oxford: Blackwell.
 
 ---
 
-<!-- page 442 -->
+<!-- page 441 -->
 
 423
 Syntax in forward and in reverse
@@ -22655,7 +22655,7 @@ Levy, R. 2008. Expectation-based syntactic comprehension. Cognition 106:1126–1
 
 ---
 
-<!-- page 443 -->
+<!-- page 442 -->
 
 424
 Matthew W. Wagers
@@ -22719,7 +22719,7 @@ CUNY Conference on Human Sentence Processing, Columbia, SC.
 
 ---
 
-<!-- page 444 -->
+<!-- page 443 -->
 
 425
 Syntax in forward and in reverse
@@ -22760,7 +22760,7 @@ s10831-013-9115-1.
 
 ---
 
-<!-- page 445 -->
+<!-- page 444 -->
 
 426
 21
@@ -22798,7 +22798,7 @@ tically (Chomsky 1995). Many attempts to account for the constrained variation i
 
 ---
 
-<!-- page 446 -->
+<!-- page 445 -->
 
 427
 Major theories in acquisition of syntax research 
@@ -22849,7 +22849,7 @@ guages without expletives will also allow control into tensed clauses. Hyams (19
 
 ---
 
-<!-- page 447 -->
+<!-- page 446 -->
 
 428
 Susannah Kirby 
@@ -22903,7 +22903,7 @@ nativism” assumes a handful of innate but generalized cognitive mechanisms (in
 
 ---
 
-<!-- page 448 -->
+<!-- page 447 -->
 
 429
 Major theories in acquisition of syntax research 
@@ -22956,7 +22956,7 @@ sentence structures.
 
 ---
 
-<!-- page 449 -->
+<!-- page 448 -->
 
 430
 Susannah Kirby 
@@ -23011,7 +23011,7 @@ abstract rules, their language use is expected to be remarkably unproductive. As
 
 ---
 
-<!-- page 450 -->
+<!-- page 449 -->
 
 431
 Major theories in acquisition of syntax research 
@@ -23065,7 +23065,7 @@ children must have a more subtle knowledge of constituent ordering.
 
 ---
 
-<!-- page 451 -->
+<!-- page 450 -->
 
 432
 Susannah Kirby 
@@ -23121,7 +23121,7 @@ are (primarily) head-initial (9). In contrast, SOV languages like Turkish are he
 
 ---
 
-<!-- page 452 -->
+<!-- page 451 -->
 
 433
 Major theories in acquisition of syntax research 
@@ -23171,7 +23171,7 @@ known verb is stored along with its participant roles in the correct order (11).
 
 ---
 
-<!-- page 453 -->
+<!-- page 452 -->
 
 434
 Susannah Kirby 
@@ -23224,7 +23224,7 @@ them. A follow-up experiment, in which a known verb was produced in non-SVO orde
 
 ---
 
-<!-- page 454 -->
+<!-- page 453 -->
 
 435
 Major theories in acquisition of syntax research 
@@ -23274,7 +23274,7 @@ d. What this?
 
 ---
 
-<!-- page 455 -->
+<!-- page 454 -->
 
 436
 Susannah Kirby 
@@ -23327,7 +23327,7 @@ may continue to make inversion errors in negative wh-questions (Bellugi 1971). S
 
 ---
 
-<!-- page 456 -->
+<!-- page 455 -->
 
 437
 Major theories in acquisition of syntax research 
@@ -23378,7 +23378,7 @@ ti
 
 ---
 
-<!-- page 457 -->
+<!-- page 456 -->
 
 438
 Susannah Kirby 
@@ -23427,7 +23427,7 @@ that this may reﬂ ect a crosslinguistic parameter speciﬁ c to movement in ne
 
 ---
 
-<!-- page 458 -->
+<!-- page 457 -->
 
 439
 Major theories in acquisition of syntax research 
@@ -23481,7 +23481,7 @@ WH+AUX-speciﬁ c basis. The authors tested 28 children (3;6–4;6) by eliciting
 
 ---
 
-<!-- page 459 -->
+<!-- page 458 -->
 
 440
 Susannah Kirby 
@@ -23547,7 +23547,7 @@ didn’t utterances in adult speech may reﬂ ect the fact that speakers do not 
 
 ---
 
-<!-- page 460 -->
+<!-- page 459 -->
 
 441
 Major theories in acquisition of syntax research 
@@ -23598,7 +23598,7 @@ considered above, and I offer selected examples of these here. Wexler (Schütze 
 
 ---
 
-<!-- page 461 -->
+<!-- page 460 -->
 
 442
 Susannah Kirby 
@@ -23658,7 +23658,7 @@ opmental Perspective, ed. E. Dromi, 141–171. Norwood, NJ: Ablex.
 
 ---
 
-<!-- page 462 -->
+<!-- page 461 -->
 
 443
 Major theories in acquisition of syntax research 
@@ -23721,7 +23721,7 @@ based approach. Journal of Child Language 30: 333–370.
 
 ---
 
-<!-- page 463 -->
+<!-- page 462 -->
 
 444
 Susannah Kirby 
@@ -23785,7 +23785,7 @@ Sugisaki, K. 2008. Early acquisition of basic word order in Japanese. Language A
 
 ---
 
-<!-- page 464 -->
+<!-- page 463 -->
 
 445
 Major theories in acquisition of syntax research 
@@ -23807,7 +23807,7 @@ Yang, C. 2012. Computational models of syntactic acquisition. WIREs Cognitive Sc
 
 ---
 
-<!-- page 465 -->
+<!-- page 464 -->
 
 446
 22
@@ -23846,7 +23846,7 @@ ious kinds, such as wh-movement (Who did you (say you would) send the book to
 
 ---
 
-<!-- page 466 -->
+<!-- page 465 -->
 
 447
 The evolutionary origins of syntax
@@ -23901,7 +23901,7 @@ a language faculty, and that whatever underlies syntactic competence has in fact
 
 ---
 
-<!-- page 467 -->
+<!-- page 466 -->
 
 448
 Maggie Tallerman
@@ -23954,7 +23954,7 @@ guish between the faculty of language in the broad sense (FLB) and in the narrow
 
 ---
 
-<!-- page 468 -->
+<!-- page 467 -->
 
 449
 The evolutionary origins of syntax
@@ -24006,7 +24006,7 @@ diction in terms: ‘Syntax is by deﬁ nition combinatorial.’ In any case, th
 
 ---
 
-<!-- page 469 -->
+<!-- page 468 -->
 
 450
 Maggie Tallerman
@@ -24061,7 +24061,7 @@ typically known as PROTOLANGUAGE.
 
 ---
 
-<!-- page 470 -->
+<!-- page 469 -->
 
 451
 The evolutionary origins of syntax
@@ -24113,7 +24113,7 @@ sequence of development stages, starting with the ‘Merge’ procedure for asse
 
 ---
 
-<!-- page 471 -->
+<!-- page 470 -->
 
 452
 Maggie Tallerman
@@ -24178,7 +24178,7 @@ Apart, then, from its noted freedom in the ordering of elements, what properties
 
 ---
 
-<!-- page 472 -->
+<!-- page 471 -->
 
 453
 The evolutionary origins of syntax
@@ -24233,7 +24233,7 @@ stage; they are a prerequisite for the syntactic processes that follow. These ea
 
 ---
 
-<!-- page 473 -->
+<!-- page 472 -->
 
 454
 Maggie Tallerman
@@ -24286,7 +24286,7 @@ but by relationships which they contract with other elements in the clause: We k
 
 ---
 
-<!-- page 474 -->
+<!-- page 473 -->
 
 455
 The evolutionary origins of syntax
@@ -24340,7 +24340,7 @@ of each constituent is the semantic/syntactic head (e.g., V within VP), and othe
 
 ---
 
-<!-- page 475 -->
+<!-- page 474 -->
 
 456
 Maggie Tallerman
@@ -24392,7 +24392,7 @@ Utterances from the chimpanzee Nim Chimpsky (Terrace 1979) illustrate: for examp
 
 ---
 
-<!-- page 476 -->
+<!-- page 475 -->
 
 457
 The evolutionary origins of syntax
@@ -24445,7 +24445,7 @@ grammatical forms’ (Heine and Kuteva 2007: 32). Semantically based content wor
 
 ---
 
-<!-- page 477 -->
+<!-- page 476 -->
 
 458
 Maggie Tallerman
@@ -24497,7 +24497,7 @@ clausal embedding among older signers, whereas speakers from subsequent generati
 
 ---
 
-<!-- page 478 -->
+<!-- page 477 -->
 
 459
 The evolutionary origins of syntax
@@ -24556,7 +24556,7 @@ languages, not only do heads typically precede complements, ‘light’ constitu
 
 ---
 
-<!-- page 479 -->
+<!-- page 478 -->
 
 460
 Maggie Tallerman
@@ -24605,7 +24605,7 @@ ters, written both from a Minimalist standpoint and from opposing perspectives.
 
 ---
 
-<!-- page 480 -->
+<!-- page 479 -->
 
 461
 The evolutionary origins of syntax
@@ -24668,7 +24668,7 @@ development, ed. M. DeGraff, 179–237. Cambridge, MA: MIT Press.
 
 ---
 
-<!-- page 481 -->
+<!-- page 480 -->
 
 462
 Maggie Tallerman
@@ -24702,20 +24702,20 @@ yoder.pdf
 
 ---
 
-<!-- page 482 -->
+<!-- page 481 -->
 
 Part V
 Theoretical approaches to syntax
 
 ---
 
-<!-- page 483 -->
+<!-- page 482 -->
 
 This page intentionally left blank
 
 ---
 
-<!-- page 484 -->
+<!-- page 483 -->
 
 465
 1 Introduction
@@ -24755,7 +24755,7 @@ Peter W. Culicover
 
 ---
 
-<!-- page 485 -->
+<!-- page 484 -->
 
 466
 Peter W. Culicover
@@ -24805,7 +24805,7 @@ plexity and not to grammar (Gibson 1998; Lewis 1997).
 
 ---
 
-<!-- page 486 -->
+<!-- page 485 -->
 
 467
 The history of syntax
@@ -24856,7 +24856,7 @@ NP
 
 ---
 
-<!-- page 487 -->
+<!-- page 486 -->
 
 468
 Peter W. Culicover
@@ -24906,7 +24906,7 @@ by three innovations: (i) since any order of application of the same rewrite rul
 
 ---
 
-<!-- page 488 -->
+<!-- page 487 -->
 
 469
 The history of syntax
@@ -24954,7 +24954,7 @@ preserving.)
 
 ---
 
-<!-- page 489 -->
+<!-- page 488 -->
 
 470
 Peter W. Culicover
@@ -25000,7 +25000,7 @@ the relative pronoun is in the proper position. The problem is the conﬁ gurati
 
 ---
 
-<!-- page 490 -->
+<!-- page 489 -->
 
 471
 The history of syntax
@@ -25047,7 +25047,7 @@ c. I was introduced to the person [S whoi the police arrested ti ].
 
 ---
 
-<!-- page 491 -->
+<!-- page 490 -->
 
 472
 Peter W. Culicover
@@ -25092,7 +25092,7 @@ b. [everyone]i [S ti speaks [two languages]j]
 
 ---
 
-<!-- page 492 -->
+<!-- page 491 -->
 
 473
 The history of syntax
@@ -25130,7 +25130,7 @@ inalization are lexically related. But, more importantly, in this analysis the t
 
 ---
 
-<!-- page 493 -->
+<!-- page 492 -->
 
 474
 Peter W. Culicover
@@ -25174,7 +25174,7 @@ j+C0 [IP NP tj … ti …]]
 
 ---
 
-<!-- page 494 -->
+<!-- page 493 -->
 
 475
 The history of syntax
@@ -25219,7 +25219,7 @@ out of earlier proposals and remain inﬂ uential. To take just one case, Polloc
 
 ---
 
-<!-- page 495 -->
+<!-- page 494 -->
 
 476
 Peter W. Culicover
@@ -25272,7 +25272,7 @@ X0
 
 ---
 
-<!-- page 496 -->
+<!-- page 495 -->
 
 477
 The history of syntax
@@ -25317,7 +25317,7 @@ and others, as shown in (39).13
 
 ---
 
-<!-- page 497 -->
+<!-- page 496 -->
 
 478
 Peter W. Culicover
@@ -25368,7 +25368,7 @@ tences in (40) are synonymous.
 
 ---
 
-<!-- page 498 -->
+<!-- page 497 -->
 
 479
 The history of syntax
@@ -25416,7 +25416,7 @@ W
 
 ---
 
-<!-- page 499 -->
+<!-- page 498 -->
 
 480
 Peter W. Culicover
@@ -25457,7 +25457,7 @@ combines two objects a and b, which are words or phrases, into a new object; thi
 
 ---
 
-<!-- page 500 -->
+<!-- page 499 -->
 
 481
 The history of syntax
@@ -25508,7 +25508,7 @@ ically in the course of the derivation.15 An extension of this idea is found in 
 
 ---
 
-<!-- page 501 -->
+<!-- page 500 -->
 
 482
 Peter W. Culicover
@@ -25563,7 +25563,7 @@ structure of Sandy put the book on the table.
 
 ---
 
-<!-- page 502 -->
+<!-- page 501 -->
 
 483
 The history of syntax
@@ -25619,7 +25619,7 @@ dominated by S”, while in a case-marking language such as Russian it correspon
 
 ---
 
-<!-- page 503 -->
+<!-- page 502 -->
 
 484
 Peter W. Culicover
@@ -25672,7 +25672,7 @@ semantic representations. Semantic arguments are ordered in a hierarchy accordin
 
 ---
 
-<!-- page 504 -->
+<!-- page 503 -->
 
 485
 The history of syntax
@@ -25727,7 +25727,7 @@ direct experience. Processing accounts observe that there are well-formed exampl
 
 ---
 
-<!-- page 505 -->
+<!-- page 504 -->
 
 486
 Peter W. Culicover
@@ -25784,7 +25784,7 @@ features cause ill-formedness when mapped into PF and/or LF (Chomsky 1995).
 
 ---
 
-<!-- page 506 -->
+<!-- page 505 -->
 
 487
 The history of syntax
@@ -25843,7 +25843,7 @@ expresses it. Language 88:305–340.
 
 ---
 
-<!-- page 507 -->
+<!-- page 506 -->
 
 488
 Peter W. Culicover
@@ -25907,7 +25907,7 @@ ical Psychology, vol. 2, ed. R.D. Luce, R.R. Bush, and E. Galanter, 419–491. N
 
 ---
 
-<!-- page 508 -->
+<!-- page 507 -->
 
 489
 The history of syntax
@@ -25951,7 +25951,7 @@ Amsterdam: John Benjamins.
 
 ---
 
-<!-- page 509 -->
+<!-- page 508 -->
 
 490
 24
@@ -26004,7 +26004,7 @@ b. Lezgian (Haspelmath 1993)        (ergative alignment)
 
 ---
 
-<!-- page 510 -->
+<!-- page 509 -->
 
 491
 Comparative syntax
@@ -26065,7 +26065,7 @@ learning (e.g., König and Gast 2007 on English–German contrasts).
 
 ---
 
-<!-- page 511 -->
+<!-- page 510 -->
 
 492
 Martin Haspelmath
@@ -26115,7 +26115,7 @@ versally applicable comparative concepts is developed that makes it possible to 
 
 ---
 
-<!-- page 512 -->
+<!-- page 511 -->
 
 493
 Comparative syntax
@@ -26164,7 +26164,7 @@ structures is of interest to this approach. However, as clearly stated by Hoekst
 
 ---
 
-<!-- page 513 -->
+<!-- page 512 -->
 
 494
 Martin Haspelmath
@@ -26216,7 +26216,7 @@ verb phrase as a sister of the verb.
 
 ---
 
-<!-- page 514 -->
+<!-- page 513 -->
 
 495
 Comparative syntax
@@ -26271,7 +26271,7 @@ assumptions will be coloured by the properties of familiar languages that happen
 
 ---
 
-<!-- page 515 -->
+<!-- page 514 -->
 
 496
 Martin Haspelmath
@@ -26322,7 +26322,7 @@ even if they are not manifested everywhere. What matters is that they represent 
 
 ---
 
-<!-- page 516 -->
+<!-- page 515 -->
 
 497
 Comparative syntax
@@ -26377,7 +26377,7 @@ of universally applicable comparative concepts and can thus be tested. Universal
 
 ---
 
-<!-- page 517 -->
+<!-- page 516 -->
 
 498
 Martin Haspelmath
@@ -26426,7 +26426,7 @@ stem changes (e.g., plurals such as book-s, which are cross-linguistically far m
 
 ---
 
-<!-- page 518 -->
+<!-- page 517 -->
 
 499
 Comparative syntax
@@ -26477,7 +26477,7 @@ as needed. Efﬁ cient communication systems are expected to have more robust si
 
 ---
 
-<!-- page 519 -->
+<!-- page 518 -->
 
 500
 Martin Haspelmath
@@ -26528,7 +26528,7 @@ often say that the observed variation ‘falls out’ from the proposed formal f
 
 ---
 
-<!-- page 520 -->
+<!-- page 519 -->
 
 501
 Comparative syntax
@@ -26579,7 +26579,7 @@ head-complement order will allow the child to set this parameter – that is, th
 
 ---
 
-<!-- page 521 -->
+<!-- page 520 -->
 
 502
 Martin Haspelmath
@@ -26634,7 +26634,7 @@ means that exceptions cannot be tolerated. It is not possible, for example, to r
 
 ---
 
-<!-- page 522 -->
+<!-- page 521 -->
 
 503
 Comparative syntax
@@ -26687,7 +26687,7 @@ language-particular analysis and cross-linguistic generalization (Haspelmath 201
 
 ---
 
-<!-- page 523 -->
+<!-- page 522 -->
 
 504
 Martin Haspelmath
@@ -26745,7 +26745,7 @@ Roberts, Ian G. 2007. Diachronic syntax. Oxford: Oxford University Press.
 
 ---
 
-<!-- page 524 -->
+<!-- page 523 -->
 
 505
 Comparative syntax
@@ -26807,7 +26807,7 @@ Kenstowicz, 1–52. Cambridge, MA: MIT Press.
 
 ---
 
-<!-- page 525 -->
+<!-- page 524 -->
 
 506
 Martin Haspelmath
@@ -26871,7 +26871,7 @@ Series C-103. Canberra: Australian National University.
 
 ---
 
-<!-- page 526 -->
+<!-- page 525 -->
 
 507
 Comparative syntax
@@ -26935,7 +26935,7 @@ Schmidt Verlag.
 
 ---
 
-<!-- page 527 -->
+<!-- page 526 -->
 
 508
 Martin Haspelmath
@@ -26990,7 +26990,7 @@ Typology 2(2):141–194.
 
 ---
 
-<!-- page 528 -->
+<!-- page 527 -->
 
 509
 25
@@ -27026,7 +27026,7 @@ c. Mary proved [IP him wrong].
 
 ---
 
-<!-- page 529 -->
+<!-- page 528 -->
 
 510
 Terje Lohndal and Juan Uriagereka
@@ -27074,7 +27074,7 @@ linguistic expression is an optimal realization of interface conditions expresse
 
 ---
 
-<!-- page 530 -->
+<!-- page 529 -->
 
 511
 Principles and Parameters/Minimalism 
@@ -27125,7 +27125,7 @@ verbs). Hence, we are led to seek morphological properties that are reﬂ ected 
 
 ---
 
-<!-- page 531 -->
+<!-- page 530 -->
 
 512
 Terje Lohndal and Juan Uriagereka
@@ -27176,7 +27176,7 @@ as methodological minimalism.
 
 ---
 
-<!-- page 532 -->
+<!-- page 531 -->
 
 513
 Principles and Parameters/Minimalism 
@@ -27224,7 +27224,7 @@ consider the development from X-bar theory to Bare Phrase Structure as an exampl
 
 ---
 
-<!-- page 533 -->
+<!-- page 532 -->
 
 514
 Terje Lohndal and Juan Uriagereka
@@ -27271,7 +27271,7 @@ X-bar theory so that it does observe binarity – assuming that it is empiricall
 
 ---
 
-<!-- page 534 -->
+<!-- page 533 -->
 
 515
 Principles and Parameters/Minimalism 
@@ -27320,7 +27320,7 @@ shows the methodological part, since BPS makes use of fewer theoretical primitiv
 
 ---
 
-<!-- page 535 -->
+<!-- page 534 -->
 
 516
 Terje Lohndal and Juan Uriagereka
@@ -27369,7 +27369,7 @@ the trace t was not properly licensed (see note 13). Freidin and Vergnaud (2001:
 
 ---
 
-<!-- page 536 -->
+<!-- page 535 -->
 
 517
 Principles and Parameters/Minimalism 
@@ -27419,7 +27419,7 @@ If a adjoins to a head, b is a head.
 
 ---
 
-<!-- page 537 -->
+<!-- page 536 -->
 
 518
 Terje Lohndal and Juan Uriagereka
@@ -27468,7 +27468,7 @@ nature of minimalism can be found in Boeckx (2006), which we now rely on.
 
 ---
 
-<!-- page 538 -->
+<!-- page 537 -->
 
 519
 Principles and Parameters/Minimalism 
@@ -27516,7 +27516,7 @@ predictions.
 
 ---
 
-<!-- page 539 -->
+<!-- page 538 -->
 
 520
 Terje Lohndal and Juan Uriagereka
@@ -27567,7 +27567,7 @@ Notes
 
 ---
 
-<!-- page 540 -->
+<!-- page 539 -->
 
 521
 Principles and Parameters/Minimalism 
@@ -27626,7 +27626,7 @@ A collection of important papers on minimalism.
 
 ---
 
-<!-- page 541 -->
+<!-- page 540 -->
 
 522
 Terje Lohndal and Juan Uriagereka
@@ -27685,7 +27685,7 @@ of Syntactic Structures, ed. Adriana Belletti, 104–131. Oxford: Oxford Univers
 
 ---
 
-<!-- page 542 -->
+<!-- page 541 -->
 
 523
 Principles and Parameters/Minimalism 
@@ -27749,7 +27749,7 @@ Kayne, Richard S. 1984. Connectedness and Binary Branching. Dordrecht: Foris.
 
 ---
 
-<!-- page 543 -->
+<!-- page 542 -->
 
 524
 Terje Lohndal and Juan Uriagereka
@@ -27813,7 +27813,7 @@ Generative Syntax, ed. Liliane Haegeman, 281–337. Dordrecht: Kluwer.
 
 ---
 
-<!-- page 544 -->
+<!-- page 543 -->
 
 525
 Principles and Parameters/Minimalism 
@@ -27846,7 +27846,7 @@ Williams, Edwin. 1981. On the notions “lexically related” and “head of a w
 
 ---
 
-<!-- page 545 -->
+<!-- page 544 -->
 
 526
 26
@@ -27885,7 +27885,7 @@ dominance constraints and linear precedence constraints, respectively).
 
 ---
 
-<!-- page 546 -->
+<!-- page 545 -->
 
 527
 Head-driven Phrase Structure Grammar 
@@ -27934,7 +27934,7 @@ both of these (see Richter 2004b). Nevertheless, the structures currently assume
 
 ---
 
-<!-- page 547 -->
+<!-- page 546 -->
 
 528
 Felix Bildhauer
@@ -27978,7 +27978,7 @@ ATTR7
 
 ---
 
-<!-- page 548 -->
+<!-- page 547 -->
 
 529
 Head-driven Phrase Structure Grammar 
@@ -28030,7 +28030,7 @@ g
 
 ---
 
-<!-- page 549 -->
+<!-- page 548 -->
 
 530
 Felix Bildhauer
@@ -28085,7 +28085,7 @@ ATTR6 type6
 
 ---
 
-<!-- page 550 -->
+<!-- page 549 -->
 
 531
 Head-driven Phrase Structure Grammar 
@@ -28146,7 +28146,7 @@ word
 
 ---
 
-<!-- page 551 -->
+<!-- page 550 -->
 
 532
 Felix Bildhauer
@@ -28213,7 +28213,7 @@ symbol
 
 ---
 
-<!-- page 552 -->
+<!-- page 551 -->
 
 533
 Head-driven Phrase Structure Grammar 
@@ -28271,7 +28271,7 @@ nonlocal
 
 ---
 
-<!-- page 553 -->
+<!-- page 552 -->
 
 534
 Felix Bildhauer
@@ -28325,7 +28325,7 @@ Figure 26.10 Partial description of a headed phrase
 
 ---
 
-<!-- page 554 -->
+<!-- page 553 -->
 
 535
 Head-driven Phrase Structure Grammar 
@@ -28385,7 +28385,7 @@ Figure 26.11 Representation of phrase structure
 
 ---
 
-<!-- page 555 -->
+<!-- page 554 -->
 
 536
 Felix Bildhauer
@@ -28451,7 +28451,7 @@ ARG-ST
 
 ---
 
-<!-- page 556 -->
+<!-- page 555 -->
 
 537
 Head-driven Phrase Structure Grammar 
@@ -28523,7 +28523,7 @@ ARG-ST
 
 ---
 
-<!-- page 557 -->
+<!-- page 556 -->
 
 538
 Felix Bildhauer
@@ -28573,7 +28573,7 @@ tion (in this example, a saturated nominal projection)
 
 ---
 
-<!-- page 558 -->
+<!-- page 557 -->
 
 539
 Head-driven Phrase Structure Grammar 
@@ -28628,7 +28628,7 @@ SYNSEM
 
 ---
 
-<!-- page 559 -->
+<!-- page 558 -->
 
 540
 Felix Bildhauer
@@ -28688,7 +28688,7 @@ NON-HEAD-DTRS
 
 ---
 
-<!-- page 560 -->
+<!-- page 559 -->
 
 541
 Head-driven Phrase Structure Grammar 
@@ -28762,7 +28762,7 @@ daughter’s MOD value is identical to the head daughter’s SYNSEM value, thus 
 
 ---
 
-<!-- page 561 -->
+<!-- page 560 -->
 
 542
 Felix Bildhauer
@@ -28836,7 +28836,7 @@ Figure 26.20 Analysis of adjunction
 
 ---
 
-<!-- page 562 -->
+<!-- page 561 -->
 
 543
 Head-driven Phrase Structure Grammar 
@@ -28905,7 +28905,7 @@ Figure 26.21 The Head Feature Principle (Pollard and Sag 1994: 34)
 
 ---
 
-<!-- page 563 -->
+<!-- page 562 -->
 
 544
 Felix Bildhauer
@@ -28976,7 +28976,7 @@ Figure 26.23 Semantic description using MRS (simplified)
 
 ---
 
-<!-- page 564 -->
+<!-- page 563 -->
 
 head-complements-phrase
 PHON
@@ -29014,7 +29014,7 @@ Figure 26.24 Semantic composition in a phrase
 
 ---
 
-<!-- page 565 -->
+<!-- page 564 -->
 
 546
 Felix Bildhauer
@@ -29071,7 +29071,7 @@ Figure 26.25 Argument linking
 
 ---
 
-<!-- page 566 -->
+<!-- page 565 -->
 
 547
 Head-driven Phrase Structure Grammar 
@@ -29131,7 +29131,7 @@ Figure 26.26 The Passive Lexical Rule
 
 ---
 
-<!-- page 567 -->
+<!-- page 566 -->
 
 548
 Felix Bildhauer
@@ -29188,7 +29188,7 @@ QUE
 
 ---
 
-<!-- page 568 -->
+<!-- page 567 -->
 
 549
 Head-driven Phrase Structure Grammar 
@@ -29248,7 +29248,7 @@ SYNSEM|LOC
 
 ---
 
-<!-- page 569 -->
+<!-- page 568 -->
 
 550
 Felix Bildhauer
@@ -29314,7 +29314,7 @@ in a head-complements-phrase
 
 ---
 
-<!-- page 570 -->
+<!-- page 569 -->
 
 551
 Head-driven Phrase Structure Grammar 
@@ -29365,7 +29365,7 @@ system (Copestake 2002) and the TRALE platform (Meurers et al. 2002; Müller 200
 
 ---
 
-<!-- page 571 -->
+<!-- page 570 -->
 
 552
 Felix Bildhauer
@@ -29428,7 +29428,7 @@ Notes. Stanford, CA: CSLI Publications.
 
 ---
 
-<!-- page 572 -->
+<!-- page 571 -->
 
 553
 Head-driven Phrase Structure Grammar 
@@ -29492,7 +29492,7 @@ istischen Linguistik (GAGL), 43: 173–226.
 
 ---
 
-<!-- page 573 -->
+<!-- page 572 -->
 
 554
 Felix Bildhauer
@@ -29555,7 +29555,7 @@ University of Chicago Press.
 
 ---
 
-<!-- page 574 -->
+<!-- page 573 -->
 
 555
 Head-driven Phrase Structure Grammar 
@@ -29593,7 +29593,7 @@ Yip, M., Maling, J., and Jackendoff, R. S. 1987. Case in Tiers. Language, 63(2):
 
 ---
 
-<!-- page 575 -->
+<!-- page 574 -->
 
 556
 27
@@ -29624,7 +29624,7 @@ and in many LFG analyses there are no empty categories at all. (c) Functional st
 
 ---
 
-<!-- page 576 -->
+<!-- page 575 -->
 
 557
 Lexical-Functional Grammar
@@ -29696,7 +29696,7 @@ NUM sg
 
 ---
 
-<!-- page 577 -->
+<!-- page 576 -->
 
 558
 George Aaron Broadwell
@@ -29766,7 +29766,7 @@ PER 3
 
 ---
 
-<!-- page 578 -->
+<!-- page 577 -->
 
 559
 Lexical-Functional Grammar
@@ -29817,7 +29817,7 @@ and one headed by a pronominal. (We list its PRED value as ‘PRO’, since the 
 
 ---
 
-<!-- page 579 -->
+<!-- page 578 -->
 
 560
 George Aaron Broadwell
@@ -29879,7 +29879,7 @@ corresponds to f-structure.
 
 ---
 
-<!-- page 580 -->
+<!-- page 579 -->
 
 561
 Lexical-Functional Grammar
@@ -29942,7 +29942,7 @@ information from all these nodes goes into the AVM, which corresponds to the roo
 
 ---
 
-<!-- page 581 -->
+<!-- page 580 -->
 
 562
 George Aaron Broadwell
@@ -30007,7 +30007,7 @@ predication relations would not be good arguments for the right c-structure. Thi
 
 ---
 
-<!-- page 582 -->
+<!-- page 581 -->
 
 563
 Lexical-Functional Grammar
@@ -30079,7 +30079,7 @@ PRED   ‘chase <SUBJ,OBJ>’
 
 ---
 
-<!-- page 583 -->
+<!-- page 582 -->
 
 564
 George Aaron Broadwell
@@ -30150,7 +30150,7 @@ PRED   ‘chase <SUBJ,OBJ>’
 
 ---
 
-<!-- page 584 -->
+<!-- page 583 -->
 
 565
 Lexical-Functional Grammar
@@ -30235,7 +30235,7 @@ functions listed in the subcategorization of its predicate.
 
 ---
 
-<!-- page 585 -->
+<!-- page 584 -->
 
 566
 George Aaron Broadwell
@@ -30320,7 +30320,7 @@ PRED  ‘chase <SUBJ,OBJ>’
 
 ---
 
-<!-- page 586 -->
+<!-- page 585 -->
 
 567
 Lexical-Functional Grammar
@@ -30386,7 +30386,7 @@ also shown by comparing the English and Warlpiri sentences. Warlpiri is a non-co
 
 ---
 
-<!-- page 587 -->
+<!-- page 586 -->
 
 568
 George Aaron Broadwell
@@ -30440,7 +30440,7 @@ PRED    verb1  verb2 ]
 
 ---
 
-<!-- page 588 -->
+<!-- page 587 -->
 
 569
 Lexical-Functional Grammar
@@ -30497,7 +30497,7 @@ tions to the c-structure, gives a good account of the non-conﬁ gurationality o
 
 ---
 
-<!-- page 589 -->
+<!-- page 588 -->
 
 570
 George Aaron Broadwell
@@ -30552,7 +30552,7 @@ are pronominals, they count as distinct for the purposes of the Consistency requ
 
 ---
 
-<!-- page 590 -->
+<!-- page 589 -->
 
 571
 Lexical-Functional Grammar
@@ -30622,7 +30622,7 @@ i
 
 ---
 
-<!-- page 591 -->
+<!-- page 590 -->
 
 572
 George Aaron Broadwell
@@ -30690,7 +30690,7 @@ ent outranks it. The antecedent is a SUBJ and the reﬂ exive is an OBJ. In the 
 
 ---
 
-<!-- page 592 -->
+<!-- page 591 -->
 
 573
 Lexical-Functional Grammar
@@ -30751,7 +30751,7 @@ David
 
 ---
 
-<!-- page 593 -->
+<!-- page 592 -->
 
 574
 George Aaron Broadwell
@@ -30807,7 +30807,7 @@ Theory with two features [± Object] and [± Restricted] as follows:
 
 ---
 
-<!-- page 594 -->
+<!-- page 593 -->
 
 575
 Lexical-Functional Grammar
@@ -30856,7 +30856,7 @@ computational foundations of the formalism. This has led to the successful indus
 
 ---
 
-<!-- page 595 -->
+<!-- page 594 -->
 
 576
 George Aaron Broadwell
@@ -30911,7 +30911,7 @@ Asudeh, Ash. 2012. The Logic of Pronominal Resumption. Oxford: Oxford University
 
 ---
 
-<!-- page 596 -->
+<!-- page 595 -->
 
 577
 Lexical-Functional Grammar
@@ -30975,7 +30975,7 @@ Irish. Natural Language and Linguistic Theory 1(4):487–533.
 
 ---
 
-<!-- page 597 -->
+<!-- page 596 -->
 
 578
 George Aaron Broadwell
@@ -30992,7 +30992,7 @@ Natural Language and Linguistic Theory 29:999–1031.
 
 ---
 
-<!-- page 598 -->
+<!-- page 597 -->
 
 579
 28
@@ -31030,7 +31030,7 @@ is an idealization of what a speaker does (semantics to syntax) and what a heare
 
 ---
 
-<!-- page 599 -->
+<!-- page 598 -->
 
 580
 Robert D. Van Valin, Jr.
@@ -31077,7 +31077,7 @@ Figure 28.1 The organization of RRG
 
 ---
 
-<!-- page 600 -->
+<!-- page 599 -->
 
 581
 Role and Reference Grammar
@@ -31133,7 +31133,7 @@ Clausal operators:
 
 ---
 
-<!-- page 601 -->
+<!-- page 600 -->
 
 582
 Robert D. Van Valin, Jr.
@@ -31194,7 +31194,7 @@ Figure 28.3 An English sentence with both constituent and operator projections
 
 ---
 
-<!-- page 602 -->
+<!-- page 601 -->
 
 583
 Role and Reference Grammar
@@ -31273,7 +31273,7 @@ Figure 28.5 Combining syntactic templates from the syntactic inventory
 
 ---
 
-<!-- page 603 -->
+<!-- page 602 -->
 
 584
 Robert D. Van Valin, Jr.
@@ -31340,7 +31340,7 @@ The Queen saw the portrait. see¢ (Queen, portrait)
 
 ---
 
-<!-- page 604 -->
+<!-- page 603 -->
 
 585
 Role and Reference Grammar
@@ -31419,7 +31419,7 @@ a CAUSE b, where a, b are LSs of any type
 
 ---
 
-<!-- page 605 -->
+<!-- page 604 -->
 
 586
 Robert D. Van Valin, Jr.
@@ -31482,7 +31482,7 @@ pred´ (x)
 
 ---
 
-<!-- page 606 -->
+<!-- page 605 -->
 
 587
 Role and Reference Grammar
@@ -31538,7 +31538,7 @@ default
 
 ---
 
-<!-- page 607 -->
+<!-- page 606 -->
 
 588
 Robert D. Van Valin, Jr.
@@ -31597,7 +31597,7 @@ can be pivots without controllers (e.g., the extracted element in an extraction 
 
 ---
 
-<!-- page 608 -->
+<!-- page 607 -->
 
 589
 Role and Reference Grammar
@@ -31666,7 +31666,7 @@ determined; it is represented by the dotted lines in Figure 28.7.
 
 ---
 
-<!-- page 609 -->
+<!-- page 608 -->
 
 590
 Robert D. Van Valin, Jr.
@@ -31722,7 +31722,7 @@ Focus Structure Projection
 
 ---
 
-<!-- page 610 -->
+<!-- page 609 -->
 
 591
 Role and Reference Grammar
@@ -31800,7 +31800,7 @@ after she arrived at the party
 
 ---
 
-<!-- page 611 -->
+<!-- page 610 -->
 
 592
 Robert D. Van Valin, Jr.
@@ -31863,7 +31863,7 @@ pò le yí ge fànwan
 
 ---
 
-<!-- page 612 -->
+<!-- page 611 -->
 
 593
 Role and Reference Grammar
@@ -31915,7 +31915,7 @@ mismatch: at the semantic level, x to open the door is the second argument of tr
 
 ---
 
-<!-- page 613 -->
+<!-- page 612 -->
 
 594
 Robert D. Van Valin, Jr.
@@ -31974,7 +31974,7 @@ MOD
 
 ---
 
-<!-- page 614 -->
+<!-- page 613 -->
 
 595
 Role and Reference Grammar
@@ -32025,7 +32025,7 @@ b. Other core macrorole takes ergative case.
 
 ---
 
-<!-- page 615 -->
+<!-- page 614 -->
 
 596
 Robert D. Van Valin, Jr.
@@ -32074,7 +32074,7 @@ ate positions in the syntactic representation.14 The numbers in the diagram, esp
 
 ---
 
-<!-- page 616 -->
+<!-- page 615 -->
 
 597
 Role and Reference Grammar
@@ -32136,7 +32136,7 @@ PRAGMATICS:
 
 ---
 
-<!-- page 617 -->
+<!-- page 616 -->
 
 598
 Robert D. Van Valin, Jr.
@@ -32206,7 +32206,7 @@ Figure 28.13 Linking from semantics to syntax in a wh-question in English
 
 ---
 
-<!-- page 618 -->
+<!-- page 617 -->
 
 599
 Role and Reference Grammar
@@ -32267,7 +32267,7 @@ Figure 28.14 Linking from syntax to semantics in a wh-question in English
 
 ---
 
-<!-- page 619 -->
+<!-- page 618 -->
 
 600
 Robert D. Van Valin, Jr.
@@ -32324,7 +32324,7 @@ Figure 28.15 Organization of Role and Reference Grammar (final)
 
 ---
 
-<!-- page 620 -->
+<!-- page 619 -->
 
 601
 Role and Reference Grammar
@@ -32383,7 +32383,7 @@ BLS 3:293–320.
 
 ---
 
-<!-- page 621 -->
+<!-- page 620 -->
 
 602
 Robert D. Van Valin, Jr.
@@ -32446,7 +32446,7 @@ Shimojo, M. 2009. Focus structure and beyond: Discourse-pragmatics in RRG. In Gu
 
 ---
 
-<!-- page 622 -->
+<!-- page 621 -->
 
 603
 Role and Reference Grammar
@@ -32509,7 +32509,7 @@ morphology. Journal of Child Language 31:31–60.
 
 ---
 
-<!-- page 623 -->
+<!-- page 622 -->
 
 604
 29
@@ -32544,7 +32544,7 @@ structures associated with each – for example:
 
 ---
 
-<!-- page 624 -->
+<!-- page 623 -->
 
 605
 Dependency Grammar
@@ -32605,7 +32605,7 @@ the framework of Functional Generative Description and in Moscow and later Montr
 
 ---
 
-<!-- page 625 -->
+<!-- page 624 -->
 
 606
 Timothy Osborne
@@ -32666,7 +32666,7 @@ projection lines to be unnecessary; it simpliﬁ es the tree down to the words/n
 
 ---
 
-<!-- page 626 -->
+<!-- page 625 -->
 
 607
 Dependency Grammar
@@ -32758,7 +32758,7 @@ mainly because it lacks a ﬁ nite VP constituent.1 By its very nature, dependen
 
 ---
 
-<!-- page 627 -->
+<!-- page 626 -->
 
 608
 Timothy Osborne
@@ -32814,7 +32814,7 @@ of such a constituent. The results from constituency tests do not deliver a clea
 
 ---
 
-<!-- page 628 -->
+<!-- page 627 -->
 
 609
 Dependency Grammar
@@ -32865,7 +32865,7 @@ Some DGs distinguish between types of dependencies (e.g., Mel’cˇuk 1988: 106f
 
 ---
 
-<!-- page 629 -->
+<!-- page 628 -->
 
 610
 Timothy Osborne
@@ -32915,7 +32915,7 @@ on the participles because it is (part of) an argument of the participle predica
 
 ---
 
-<!-- page 630 -->
+<!-- page 629 -->
 
 611
 Dependency Grammar
@@ -32961,7 +32961,7 @@ word, the latter morphologically depends on the former. Like semantic dependenci
 
 ---
 
-<!-- page 631 -->
+<!-- page 630 -->
 
 612
 Timothy Osborne
@@ -33025,7 +33025,7 @@ vert-e
 
 ---
 
-<!-- page 632 -->
+<!-- page 631 -->
 
 613
 Dependency Grammar
@@ -33078,7 +33078,7 @@ cases and is easy to employ should be mentioned here: omission. A given constitu
 
 ---
 
-<!-- page 633 -->
+<!-- page 632 -->
 
 614
 Timothy Osborne
@@ -33127,7 +33127,7 @@ syntactic dependencies. Morphological dependencies especially can generate confu
 
 ---
 
-<!-- page 634 -->
+<!-- page 633 -->
 
 615
 Dependency Grammar
@@ -33178,7 +33178,7 @@ that
 
 ---
 
-<!-- page 635 -->
+<!-- page 634 -->
 
 616
 Timothy Osborne
@@ -33233,7 +33233,7 @@ head. Projectivity violations, when they occur, are clearly visible in syntax tr
 
 ---
 
-<!-- page 636 -->
+<!-- page 635 -->
 
 617
 Dependency Grammar
@@ -33296,7 +33296,7 @@ a.
 
 ---
 
-<!-- page 637 -->
+<!-- page 636 -->
 
 618
 Timothy Osborne
@@ -33386,7 +33386,7 @@ hat
 
 ---
 
-<!-- page 638 -->
+<!-- page 637 -->
 
 619
 Dependency Grammar
@@ -33452,7 +33452,7 @@ read.
 
 ---
 
-<!-- page 639 -->
+<!-- page 638 -->
 
 620
 Timothy Osborne
@@ -33505,7 +33505,7 @@ and dominance: that is, it is both a string and a catena.
 
 ---
 
-<!-- page 640 -->
+<!-- page 639 -->
 
 621
 Dependency Grammar
@@ -33560,7 +33560,7 @@ ABDEF, ABCDEG, etc.
 
 ---
 
-<!-- page 641 -->
+<!-- page 640 -->
 
 622
 Timothy Osborne
@@ -33632,7 +33632,7 @@ up!
 
 ---
 
-<!-- page 642 -->
+<!-- page 641 -->
 
 623
 Dependency Grammar
@@ -33716,7 +33716,7 @@ These predicates are catenae in syntax. For example:
 
 ---
 
-<!-- page 643 -->
+<!-- page 642 -->
 
 624
 Timothy Osborne
@@ -33786,7 +33786,7 @@ tional binary division of the clause into a subject NP and a predicate VP.
 
 ---
 
-<!-- page 644 -->
+<!-- page 643 -->
 
 625
 Dependency Grammar
@@ -33846,7 +33846,7 @@ de Gruyter.
 
 ---
 
-<!-- page 645 -->
+<!-- page 644 -->
 
 626
 Timothy Osborne
@@ -33910,7 +33910,7 @@ Zwicky, A. 1985. Heads. Journal of Linguistics 21:1–29.
 
 ---
 
-<!-- page 646 -->
+<!-- page 645 -->
 
 627
 30
@@ -33947,7 +33947,7 @@ discourse.
 
 ---
 
-<!-- page 647 -->
+<!-- page 646 -->
 
 628
 J. Lachlan Mackenzie
@@ -33997,7 +33997,7 @@ Figure 30.1 Model of Functional Discourse Grammar
 
 ---
 
-<!-- page 648 -->
+<!-- page 647 -->
 
 629
 Morphosyntax in Functional Discourse Grammar 
@@ -34049,7 +34049,7 @@ states that the Move M1 consists of Discourse Acts A1, A2, etc.; P is a position
 
 ---
 
-<!-- page 649 -->
+<!-- page 648 -->
 
 630
 J. Lachlan Mackenzie
@@ -34095,7 +34095,7 @@ cated in upper case:
 
 ---
 
-<!-- page 650 -->
+<!-- page 649 -->
 
 631
 Morphosyntax in Functional Discourse Grammar 
@@ -34160,7 +34160,7 @@ on the Individual layer (xi and xj respectively). Each will have an effect on th
 
 ---
 
-<!-- page 651 -->
+<!-- page 650 -->
 
 632
 J. Lachlan Mackenzie
@@ -34220,7 +34220,7 @@ Linguistic Expression
 
 ---
 
-<!-- page 652 -->
+<!-- page 651 -->
 
 633
 Morphosyntax in Functional Discourse Grammar 
@@ -34277,7 +34277,7 @@ before the Verb word in (13c) – is an a priori justiﬁ cation for analysing i
 
 ---
 
-<!-- page 653 -->
+<!-- page 652 -->
 
 634
 J. Lachlan Mackenzie
@@ -34326,7 +34326,7 @@ should not be interrupted by that of another Subact of Reference.
 
 ---
 
-<!-- page 654 -->
+<!-- page 653 -->
 
 635
 Morphosyntax in Functional Discourse Grammar 
@@ -34375,7 +34375,7 @@ the IL and ML and that between the RL and ML.
 
 ---
 
-<!-- page 655 -->
+<!-- page 654 -->
 
 636
 J. Lachlan Mackenzie
@@ -34420,7 +34420,7 @@ positions are relevant for a speciﬁ c language has to be determined empiricall
 
 ---
 
-<!-- page 656 -->
+<!-- page 655 -->
 
 637
 Morphosyntax in Functional Discourse Grammar 
@@ -34493,7 +34493,7 @@ morphosyntax, elements that derive from the conﬁ gurationally structured parts
 
 ---
 
-<!-- page 657 -->
+<!-- page 656 -->
 
 638
 J. Lachlan Mackenzie
@@ -34557,7 +34557,7 @@ Figure 30.2 Ordering of expression of hierarchical elements in FDG
 
 ---
 
-<!-- page 658 -->
+<!-- page 657 -->
 
 639
 Morphosyntax in Functional Discourse Grammar 
@@ -34609,7 +34609,7 @@ stao PF–1, and ki PF–2, with the verb being in PF–3. In the following exam
 
 ---
 
-<!-- page 659 -->
+<!-- page 658 -->
 
 640
 J. Lachlan Mackenzie
@@ -34658,7 +34658,7 @@ to PF position. As with (33a), the Subject position is necessarily ﬁ lled by t
 
 ---
 
-<!-- page 660 -->
+<!-- page 659 -->
 
 641
 Morphosyntax in Functional Discourse Grammar 
@@ -34717,7 +34717,7 @@ French:
 
 ---
 
-<!-- page 661 -->
+<!-- page 660 -->
 
 642
 J. Lachlan Mackenzie
@@ -34770,7 +34770,7 @@ Kiowa-Tanoan language Southern Tiwa (New Mexico and Texas; Allen et al. 1984: 29
 
 ---
 
-<!-- page 662 -->
+<!-- page 661 -->
 
 643
 Morphosyntax in Functional Discourse Grammar 
@@ -34815,7 +34815,7 @@ is established at the RL while they are separate units at the ML. Focusing on da
 
 ---
 
-<!-- page 663 -->
+<!-- page 662 -->
 
 644
 J. Lachlan Mackenzie
@@ -34921,7 +34921,7 @@ topic
 
 ---
 
-<!-- page 664 -->
+<!-- page 663 -->
 
 645
 Morphosyntax in Functional Discourse Grammar 
@@ -34977,7 +34977,7 @@ model of functional discourse grammar. Pragmatics 24.
 
 ---
 
-<!-- page 665 -->
+<!-- page 664 -->
 
 646
 J. Lachlan Mackenzie
@@ -35016,7 +35016,7 @@ Publications.
 
 ---
 
-<!-- page 666 -->
+<!-- page 665 -->
 
 647
 31
@@ -35049,7 +35049,7 @@ should not be followed by direct objects, but NPs appear after the verb.
 
 ---
 
-<!-- page 667 -->
+<!-- page 666 -->
 
 648
 Seizi Iwata
@@ -35101,7 +35101,7 @@ and result-goal roles are contributed by the construction, as shown in Figure 31
 
 ---
 
-<!-- page 668 -->
+<!-- page 667 -->
 
 649
 Construction Grammar
@@ -35172,7 +35172,7 @@ Figure 31.3 Composite structure: Resultative + talk (Goldberg 1995: 190)
 
 ---
 
-<!-- page 669 -->
+<!-- page 668 -->
 
 650
 Seizi Iwata
@@ -35220,7 +35220,7 @@ the box on the table
 
 ---
 
-<!-- page 670 -->
+<!-- page 669 -->
 
 651
 Construction Grammar
@@ -35268,7 +35268,7 @@ construction
 
 ---
 
-<!-- page 671 -->
+<!-- page 670 -->
 
 652
 Seizi Iwata
@@ -35315,7 +35315,7 @@ ars committed to Construction Grammar.
 
 ---
 
-<!-- page 672 -->
+<!-- page 671 -->
 
 653
 Construction Grammar
@@ -35363,7 +35363,7 @@ default associated with the word by the rest of the speech community.
 
 ---
 
-<!-- page 673 -->
+<!-- page 672 -->
 
 654
 Seizi Iwata
@@ -35429,7 +35429,7 @@ XP
 
 ---
 
-<!-- page 674 -->
+<!-- page 673 -->
 
 655
 Construction Grammar
@@ -35481,7 +35481,7 @@ tells us that, as a result of sneezing, the napkin ﬂ ies off the table. Rather
 
 ---
 
-<!-- page 675 -->
+<!-- page 674 -->
 
 656
 Seizi Iwata
@@ -35524,7 +35524,7 @@ c. *The bomb went off/detonated the desk through the window.
 
 ---
 
-<!-- page 676 -->
+<!-- page 675 -->
 
 657
 Construction Grammar
@@ -35571,7 +35571,7 @@ account of the four versions of ditransitive save in (25), so let us see them in
 
 ---
 
-<!-- page 677 -->
+<!-- page 676 -->
 
 658
 Seizi Iwata
@@ -35613,7 +35613,7 @@ in (28b) the subject is a preventer and the direct object a resource. And so on.
 
 ---
 
-<!-- page 678 -->
+<!-- page 677 -->
 
 659
 Construction Grammar
@@ -35664,7 +35664,7 @@ Figure 31.6 Fusion of roles for storage save (Nemoto 1998: 230)
 
 ---
 
-<!-- page 679 -->
+<!-- page 678 -->
 
 660
 Seizi Iwata
@@ -35710,7 +35710,7 @@ for the “do something” component of this verb meaning, we get “to say that
 
 ---
 
-<!-- page 680 -->
+<!-- page 679 -->
 
 661
 Construction Grammar
@@ -35755,7 +35755,7 @@ Figure 31.9 From deny to the ditransitive semantics
 
 ---
 
-<!-- page 681 -->
+<!-- page 680 -->
 
 662
 Seizi Iwata
@@ -35803,7 +35803,7 @@ Figure 31.10 From forbid to the ditransitive semantics
 
 ---
 
-<!-- page 682 -->
+<!-- page 681 -->
 
 663
 Construction Grammar
@@ -35859,7 +35859,7 @@ Figure 31.13 Verb-class-specific constructions (adapted from Croft 2003: 57)
 
 ---
 
-<!-- page 683 -->
+<!-- page 682 -->
 
 664
 Seizi Iwata
@@ -35910,7 +35910,7 @@ Figure 31.14 Verb-specific constructions (adapted from Croft 2003: 58)
 
 ---
 
-<!-- page 684 -->
+<!-- page 683 -->
 
 665
 Construction Grammar
@@ -35994,7 +35994,7 @@ advise
 
 ---
 
-<!-- page 685 -->
+<!-- page 684 -->
 
 666
 Seizi Iwata
@@ -36037,7 +36037,7 @@ Figure 31.15 Minimal construction in Cognitive Grammar (Langacker 2005a: 169)
 
 ---
 
-<!-- page 686 -->
+<!-- page 685 -->
 
 667
 Construction Grammar
@@ -36093,7 +36093,7 @@ Chicago, IL: University of Chicago Press.
 
 ---
 
-<!-- page 687 -->
+<!-- page 686 -->
 
 668
 Seizi Iwata
@@ -36157,7 +36157,7 @@ the perspective of grammaticalisation. Cognitive Linguistics 18:523–557.
 
 ---
 
-<!-- page 688 -->
+<!-- page 687 -->
 
 669
 Construction Grammar
@@ -36174,7 +36174,7 @@ Wierzbicka, Anna. 1988. The Semantics of Grammar. Amsterdam: John Benjamins.
 
 ---
 
-<!-- page 689 -->
+<!-- page 688 -->
 
 670
 32
@@ -36212,7 +36212,7 @@ name), and Lambek (1958) (who initiated the type-logical interpretation of CG).
 
 ---
 
-<!-- page 690 -->
+<!-- page 689 -->
 
 671
 Categorial Grammar 
@@ -36267,7 +36267,7 @@ distinct directions, neither of which is entirely true to its origins. One group
 
 ---
 
-<!-- page 691 -->
+<!-- page 690 -->
 
 672
 Mark Steedman 
@@ -36322,7 +36322,7 @@ ency. Thus, not all categorial theories discussed below are commensurable.
 
 ---
 
-<!-- page 692 -->
+<!-- page 691 -->
 
 673
 Categorial Grammar 
@@ -36380,7 +36380,7 @@ bureaucracy
 
 ---
 
-<!-- page 693 -->
+<!-- page 692 -->
 
 674
 Mark Steedman 
@@ -36426,7 +36426,7 @@ but with antecedents in the work of Geach (1970) and as a theorem of Lambek (195
 
 ---
 
-<!-- page 694 -->
+<!-- page 693 -->
 
 675
 Categorial Grammar 
@@ -36474,7 +36474,7 @@ NP : a Þ S/S(S\NP) : l  f . f a
 
 ---
 
-<!-- page 695 -->
+<!-- page 694 -->
 
 676
 Mark Steedman 
@@ -36528,7 +36528,7 @@ under the following universal syntactic projection principles (the term “princ
 
 ---
 
-<!-- page 696 -->
+<!-- page 695 -->
 
 677
 Categorial Grammar 
@@ -36582,7 +36582,7 @@ Steedman 1985):9
 
 ---
 
-<!-- page 697 -->
+<!-- page 696 -->
 
 678
 Mark Steedman 
@@ -36631,7 +36631,7 @@ arguments of verbs, as follows, a restriction that is a natural expression of th
 
 ---
 
-<!-- page 698 -->
+<!-- page 697 -->
 
 679
 Categorial Grammar 
@@ -36675,7 +36675,7 @@ Such rules allow examples like the following, related to (33):
 
 ---
 
-<!-- page 699 -->
+<!-- page 698 -->
 
 680
 Mark Steedman 
@@ -36720,7 +36720,7 @@ listing of all the ordered categories that would be required to support the spec
 
 ---
 
-<!-- page 700 -->
+<!-- page 699 -->
 
 681
 Categorial Grammar 
@@ -36773,7 +36773,7 @@ answering, and text entailment (see below).
 
 ---
 
-<!-- page 701 -->
+<!-- page 700 -->
 
 682
 Mark Steedman 
@@ -36818,7 +36818,7 @@ argument, and the NP as its second.
 
 ---
 
-<!-- page 702 -->
+<!-- page 701 -->
 
 683
 Categorial Grammar 
@@ -36869,7 +36869,7 @@ of modus ponens.16
 
 ---
 
-<!-- page 703 -->
+<!-- page 702 -->
 
 684
 Mark Steedman 
@@ -36920,7 +36920,7 @@ permutation completeness. Instead, they and Oehrle (1988) proposed to extend the
 
 ---
 
-<!-- page 704 -->
+<!-- page 703 -->
 
 685
 Categorial Grammar 
@@ -36973,7 +36973,7 @@ place. If pronoun binding obeys none of the same generalizations as syntactic de
 
 ---
 
-<!-- page 705 -->
+<!-- page 704 -->
 
 686
 Mark Steedman 
@@ -37020,7 +37020,7 @@ S : won¢him¢.22
 
 ---
 
-<!-- page 706 -->
+<!-- page 705 -->
 
 687
 Categorial Grammar 
@@ -37069,7 +37069,7 @@ nent. The proposal was inﬂ uentially taken up by Sánchez Valencia (1991, 1995
 
 ---
 
-<!-- page 707 -->
+<!-- page 706 -->
 
 688
 Mark Steedman 
@@ -37120,7 +37120,7 @@ The theory of syntactic competence should therefore ultimately be transparent to
 
 ---
 
-<!-- page 708 -->
+<!-- page 707 -->
 
 689
 Categorial Grammar 
@@ -37175,7 +37175,7 @@ large-scale question answering, using spreading activation to limit search and u
 
 ---
 
-<!-- page 709 -->
+<!-- page 708 -->
 
 690
 Mark Steedman 
@@ -37226,7 +37226,7 @@ confusing, because it does not assign a consistent left-right position to the re
 
 ---
 
-<!-- page 710 -->
+<!-- page 709 -->
 
 691
 Categorial Grammar 
@@ -37291,7 +37291,7 @@ absence of explicit types (as in won¢<e,t>) I let it stand as more intelligible
 
 ---
 
-<!-- page 711 -->
+<!-- page 710 -->
 
 692
 Mark Steedman 
@@ -37349,7 +37349,7 @@ Proceedings of 11th Annual Meeting of the European Association for Computational
 
 ---
 
-<!-- page 712 -->
+<!-- page 711 -->
 
 693
 Categorial Grammar 
@@ -37413,7 +37413,7 @@ Stroudsberg, PA: ACL.
 
 ---
 
-<!-- page 713 -->
+<!-- page 712 -->
 
 694
 Mark Steedman 
@@ -37476,7 +37476,7 @@ Reidel.
 
 ---
 
-<!-- page 714 -->
+<!-- page 713 -->
 
 695
 Categorial Grammar 
@@ -37539,7 +37539,7 @@ PA: ACL.
 
 ---
 
-<!-- page 715 -->
+<!-- page 714 -->
 
 696
 Mark Steedman 
@@ -37603,7 +37603,7 @@ Sag and Anna Szabolcsi (eds), Lexical Matters, 269–300. Stanford, CA: CSLI Pub
 
 ---
 
-<!-- page 716 -->
+<!-- page 715 -->
 
 697
 Categorial Grammar 
@@ -37667,7 +37667,7 @@ Stroudsberg, PA: ACL.
 
 ---
 
-<!-- page 717 -->
+<!-- page 716 -->
 
 698
 Mark Steedman 
@@ -37731,7 +37731,7 @@ Morrill, Glyn. 1994. Type-logical Grammar. Dordrecht: Kluwer.
 
 ---
 
-<!-- page 718 -->
+<!-- page 717 -->
 
 699
 Categorial Grammar 
@@ -37795,7 +37795,7 @@ Resources, Suntec, Singapore, 96–102. Stroudsberg, PA: ACL.
 
 ---
 
-<!-- page 719 -->
+<!-- page 718 -->
 
 700
 Mark Steedman 
@@ -37859,7 +37859,7 @@ University of Edinburgh.
 
 ---
 
-<!-- page 720 -->
+<!-- page 719 -->
 
 701
 Categorial Grammar 
@@ -37918,7 +37918,7 @@ Zwicky, Arnold. 1986. Concatenation and liberation. In C LS 22: Papers from the 
 
 ---
 
-<!-- page 721 -->
+<!-- page 720 -->
 
 702
 Index
@@ -38011,7 +38011,7 @@ Argument Realization Principle 534,
 
 ---
 
-<!-- page 722 -->
+<!-- page 721 -->
 
 703
 Index
@@ -38130,7 +38130,7 @@ nonconﬁ gurationality 292; and noun
 
 ---
 
-<!-- page 723 -->
+<!-- page 722 -->
 
 704
 Index
@@ -38251,7 +38251,7 @@ constituent structure 467
 
 ---
 
-<!-- page 724 -->
+<!-- page 723 -->
 
 705
 Index
@@ -38371,7 +38371,7 @@ discourse-pragmatics 580, 589, 599–600
 
 ---
 
-<!-- page 725 -->
+<!-- page 724 -->
 
 706
 Index
@@ -38490,7 +38490,7 @@ Grammar) 629, 632, 634, 637, 640, 641,
 
 ---
 
-<!-- page 726 -->
+<!-- page 725 -->
 
 707
 Index
@@ -38609,7 +38609,7 @@ formation 136–8; and XP movement 134,
 
 ---
 
-<!-- page 727 -->
+<!-- page 726 -->
 
 708
 Index
@@ -38727,7 +38727,7 @@ Kanazawa, Makoto 681
 
 ---
 
-<!-- page 728 -->
+<!-- page 727 -->
 
 709
 Index
@@ -38847,7 +38847,7 @@ linear order 108, 109, 118–19, 123, 373–4,
 
 ---
 
-<!-- page 729 -->
+<!-- page 728 -->
 
 710
 Index
@@ -38967,7 +38967,7 @@ Miyagawa, Shigeru 268, 270, 272
 
 ---
 
-<!-- page 730 -->
+<!-- page 729 -->
 
 711
 Index
@@ -39086,7 +39086,7 @@ Origins of Phrase Structure (thesis) 45
 
 ---
 
-<!-- page 731 -->
+<!-- page 730 -->
 
 712
 Index
@@ -39206,7 +39206,7 @@ Proper Binding Condition (PBC) effect 265,
 
 ---
 
-<!-- page 732 -->
+<!-- page 731 -->
 
 713
 Index
@@ -39324,7 +39324,7 @@ Sapir, Edward 285, 353
 
 ---
 
-<!-- page 733 -->
+<!-- page 732 -->
 
 714
 Index
@@ -39445,7 +39445,7 @@ Alignment Theory 370–2; and minimalism
 
 ---
 
-<!-- page 734 -->
+<!-- page 733 -->
 
 715
 Index
@@ -39562,7 +39562,7 @@ Wilder, C. 98
 
 ---
 
-<!-- page 735 -->
+<!-- page 734 -->
 
 716
 Index

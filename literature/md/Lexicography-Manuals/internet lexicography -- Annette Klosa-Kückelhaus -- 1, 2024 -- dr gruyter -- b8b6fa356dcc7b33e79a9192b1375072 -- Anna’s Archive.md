@@ -6,13 +6,13 @@
 
 ---
 
-<!-- page 2 -->
+<!-- page 1 -->
 
 Internet Lexicography
 
 ---
 
-<!-- page 3 -->
+<!-- page 2 -->
 
 LEXICOGRAPHICA
 Series Maior
@@ -30,7 +30,7 @@ Volume 164
 
 ---
 
-<!-- page 4 -->
+<!-- page 3 -->
 
 Internet
 Lexicography
@@ -40,7 +40,7 @@ Annette Klosa-Kückelhaus
 
 ---
 
-<!-- page 5 -->
+<!-- page 4 -->
 
 This publication has received funding from Leibniz-Gemeinschaft (Publikationsfonds für Monografien) and
 Leibniz-Institut für Deutsche Sprache (Mannheim). / Diese Publikation wurde gefördert durch den
@@ -70,7 +70,7 @@ www.degruyter.com
 
 ---
 
-<!-- page 6 -->
+<!-- page 5 -->
 
 Preface
 This introduction to Internet lexicography is based on the German publication “Kom-
@@ -119,7 +119,7 @@ https://doi.org/10.1515/9783111233758-202
 
 ---
 
-<!-- page 7 -->
+<!-- page 6 -->
 
 (COST Action IS1305, 2013–2017, https://www.elexicography.eu/) and “ELEXIS – European
 Lexicographic Infrastructure” (Horizon 2020 project no. 731015, 2018–2022, https://
@@ -134,7 +134,7 @@ Preface
 
 ---
 
-<!-- page 8 -->
+<!-- page 7 -->
 
 Contents
 Preface
@@ -226,7 +226,7 @@ Images
 
 ---
 
-<!-- page 9 -->
+<!-- page 8 -->
 
 Annette Klosa-Kückelhaus and Carole Tiberius
 3
@@ -333,7 +333,7 @@ Contents
 
 ---
 
-<!-- page 10 -->
+<!-- page 9 -->
 
 4.4.4
 Toolbox and Multi-Dictionary Formatter
@@ -442,7 +442,7 @@ IX
 
 ---
 
-<!-- page 11 -->
+<!-- page 10 -->
 
 7.4
 Information classes in dictionaries
@@ -549,7 +549,7 @@ Contents
 
 ---
 
-<!-- page 12 -->
+<!-- page 11 -->
 
 9.3.5
 Are frequent words in the corpus also consulted frequently
@@ -569,7 +569,7 @@ XI
 
 ---
 
-<!-- page 14 -->
+<!-- page 12 -->
 
 Annette Klosa-Kückelhaus
 Introduction
@@ -617,7 +617,7 @@ https://doi.org/10.1515/9783111233758-001
 
 ---
 
-<!-- page 15 -->
+<!-- page 13 -->
 
 introductory thematic overview of the individual areas of work, enriched through
 references to further, more in-depth reading. In the process, we have concentrated on
@@ -665,7 +665,7 @@ Annette Klosa-Kückelhaus
 
 ---
 
-<!-- page 16 -->
+<!-- page 14 -->
 
 other methods (e.g. grapheme-based searches). In the process, the differences between
 Internet dictionaries and print dictionaries become particularly clear.
@@ -714,7 +714,7 @@ Introduction
 
 ---
 
-<!-- page 17 -->
+<!-- page 15 -->
 
 digital resources (cf. Lew 2015: 7) and disappear as such. The role that digital dictionar-
 ies can and will play for Large Language Models and the other way round is now (in
@@ -744,7 +744,7 @@ Annette Klosa-Kückelhaus
 
 ---
 
-<!-- page 18 -->
+<!-- page 16 -->
 
 Axel Herold, Peter Meyer, and Frank Wiegand
 1 The Technological Context for Internet
@@ -769,7 +769,7 @@ https://doi.org/10.1515/9783111233758-002
 
 ---
 
-<!-- page 19 -->
+<!-- page 17 -->
 
 ments of modern Internet lexicography: by far the largest proportion of international
 data transfers is handled by a network of glass fibre cables measuring many hundreds
@@ -816,7 +816,7 @@ Axel Herold, Peter Meyer, and Frank Wiegand
 
 ---
 
-<!-- page 20 -->
+<!-- page 18 -->
 
 vance to lexicographic work. Furthermore, in order to make the discussion more acces-
 sible to newcomers, the presentation in →Section 1.2 very deliberately oversimplifies
@@ -857,7 +857,7 @@ from the desired website and displays it?
 
 ---
 
-<!-- page 21 -->
+<!-- page 19 -->
 
 First, a few general points. A web browser is a program that runs on a device con-
 nected to the Internet (PC, smartphone, etc.) and that is in a position to download in-
@@ -901,7 +901,7 @@ Axel Herold, Peter Meyer, and Frank Wiegand
 
 ---
 
-<!-- page 22 -->
+<!-- page 20 -->
 
 The keyword GET in the HTTP(S) protocol designates the method; in this case it simply
 requests the transfer of data from the remote computer, as opposed to, say, the modi-
@@ -948,7 +948,7 @@ web pages of the MyEnglishDict dictionary. So it is ultimately the web applicati
 
 ---
 
-<!-- page 23 -->
+<!-- page 21 -->
 
 services the request “GET /entry/disproof”, providing a specific description of the re-
 quested resource, in this case the code for the web page with the dictionary entry on
@@ -976,7 +976,7 @@ Axel Herold, Peter Meyer, and Frank Wiegand
 
 ---
 
-<!-- page 24 -->
+<!-- page 22 -->
 
 <!DOCTYPE html>
 <html>
@@ -1026,7 +1026,7 @@ path) for the web page that is brought up by clicking on the link is given as a 
 
 ---
 
-<!-- page 25 -->
+<!-- page 23 -->
 
 called attribute, an additional piece of information, inside the start tag (href
 stands for hypertext reference and is the name of the attribute; the text in quotes,
@@ -1073,7 +1073,7 @@ Axel Herold, Peter Meyer, and Frank Wiegand
 
 ---
 
-<!-- page 26 -->
+<!-- page 24 -->
 
 .teaser {
 color: blue;
@@ -1121,7 +1121,7 @@ the script element, is executed. A function is basically a block of programming 
 
 ---
 
-<!-- page 27 -->
+<!-- page 25 -->
 
 The code in the ‘toggleEmphasis’ function looks at each HTML element with the class
 ‘teaser’ and assigns to it – or removes if already present – the CSS class ‘alert’ that,
@@ -1143,7 +1143,7 @@ Axel Herold, Peter Meyer, and Frank Wiegand
 
 ---
 
-<!-- page 28 -->
+<!-- page 26 -->
 
 While processing this HTML code, further HTTP(S) requests are initiated to retrieve
 the referenced files. This is also a common way of integrating multimedia content:
@@ -1187,7 +1187,7 @@ the client request is answered. This is explained in more detail in →Chapter 4
 
 ---
 
-<!-- page 29 -->
+<!-- page 27 -->
 
 Finally, it is important to emphasise that we have only examined in some detail
 the simplest example of web content being accessed, namely the “classic” request-
@@ -1238,7 +1238,7 @@ Axel Herold, Peter Meyer, and Frank Wiegand
 
 ---
 
-<!-- page 30 -->
+<!-- page 28 -->
 
 In all of these cases, a set of rules is needed which a client program can use to retrieve
 or even modify data on a specific server. This rule set or protocol is called the server’s
@@ -1283,7 +1283,7 @@ integrated system. In the following illustration, we shall proceed like in →Se
 
 ---
 
-<!-- page 31 -->
+<!-- page 29 -->
 
 from the latter situation in order to be able to provide a concise overview. As such, we
 shall treat the Internet dictionary as a monolithic (server) system that communicates
@@ -1336,7 +1336,7 @@ Axel Herold, Peter Meyer, and Frank Wiegand
 
 ---
 
-<!-- page 32 -->
+<!-- page 30 -->
 
 of user behaviour (→Chapter 9). For that reason, the emphasis in what follows will be
 more on details about the type of metadata that can be gained for this purpose.
@@ -1384,7 +1384,7 @@ can provide help and support.
 
 ---
 
-<!-- page 33 -->
+<!-- page 31 -->
 
 1.4 Versioning
 The reader of a print dictionary is not dependent as a matter of principle on the sup-
@@ -1431,7 +1431,7 @@ Axel Herold, Peter Meyer, and Frank Wiegand
 
 ---
 
-<!-- page 34 -->
+<!-- page 32 -->
 
 very brief information in a foreword about the changes to the text that characterise
 the new edition.
@@ -1484,7 +1484,7 @@ entries should be accessible since the resources required for that are very exte
 
 ---
 
-<!-- page 35 -->
+<!-- page 33 -->
 
 sive. So-called “wikis” (e.g. WIKIPEDIA and WIKTIONARY) remain the exception. The
 version management of individual entries is an integral part of these systems
@@ -1532,7 +1532,7 @@ Axel Herold, Peter Meyer, and Frank Wiegand
 
 ---
 
-<!-- page 36 -->
+<!-- page 34 -->
 
 tween. Possible options are updates at particular intervals (e.g. monthly or weekly) or
 when a specific number of approved entries, either new or revised, are ready for
@@ -1566,7 +1566,7 @@ Fig. 1.4: Publication history of the entry for practical in the OED.
 
 ---
 
-<!-- page 37 -->
+<!-- page 35 -->
 
 number. The version number has three parts so that more significant changes
 can be distinguished from more minor ones. A change in the format of the data
@@ -1595,7 +1595,7 @@ Axel Herold, Peter Meyer, and Frank Wiegand
 
 ---
 
-<!-- page 38 -->
+<!-- page 36 -->
 
 storage cells in some non-volatile semiconductors (e.g. flash storage in memory sticks
 and cards) degenerate when they are written onto; their likelihood of failure in-
@@ -1644,7 +1644,7 @@ the form in which it appeared at a particular moment in time, unlike collaborati
 
 ---
 
-<!-- page 39 -->
+<!-- page 37 -->
 
 platforms like WIKTIONARY, as already explained, which offer a version history for
 every entry. In order to avoid the arbitrariness of the retrieval date, it is preferable to
@@ -1696,7 +1696,7 @@ Axel Herold, Peter Meyer, and Frank Wiegand
 
 ---
 
-<!-- page 40 -->
+<!-- page 38 -->
 
 to the inevitability of “link rot”, an Internet archive acts as a digital time capsule, cap-
 turing and storing historical versions of websites. This capability not only safeguards
@@ -1741,7 +1741,7 @@ dictionary data in a form that has already been further edited. In this way, the
 
 ---
 
-<!-- page 41 -->
+<!-- page 39 -->
 
 revolution of lexicography can be viewed not only from a technological perspective but
 also from a sociological one. As early as 1997, Niklas Luhmann was already offering a
@@ -1785,7 +1785,7 @@ Axel Herold, Peter Meyer, and Frank Wiegand
 
 ---
 
-<!-- page 42 -->
+<!-- page 40 -->
 
 Nesi, Hilary (2000): Electronic Dictionaries in Second Language Vocabulary Comprehension and
 Acquisition: the State of the Art. In: Heid, Ulrich, et al. (eds.): Proceedings of the Ninth Euralex
@@ -1816,7 +1816,7 @@ ShareAlike 4.0, URL: https://creativecommons.org/licenses/by-sa/4.0/legalcode.
 
 ---
 
-<!-- page 44 -->
+<!-- page 41 -->
 
 Stefan Engelberg and Angelika Storrer
 2 A Typology of Internet Dictionaries
@@ -1844,7 +1844,7 @@ https://doi.org/10.1515/9783111233758-003
 
 ---
 
-<!-- page 45 -->
+<!-- page 42 -->
 
 aim to demonstrate that the disorder brought to the classification of the animal king-
 dom by a “sniraffion” can be worthwhile.
@@ -1881,7 +1881,7 @@ Stefan Engelberg and Angelika Storrer
 
 ---
 
-<!-- page 46 -->
+<!-- page 43 -->
 
 2.2 Media-specific typological features of Internet
 dictionaries
@@ -1923,7 +1923,7 @@ project, e.g., the German IDIOMDATENBANK.
 
 ---
 
-<!-- page 47 -->
+<!-- page 44 -->
 
 In contrast, extension dictionaries are oriented towards continuous addition and
 revision. Many newly designed Internet dictionaries belong to this type, e.g., the dif-
@@ -1964,7 +1964,7 @@ Stefan Engelberg and Angelika Storrer
 
 ---
 
-<!-- page 48 -->
+<!-- page 45 -->
 
 By comparing the encyclopedic article in the English WIKIPEDIA-EN for the lemma gi-
 raffe (→Fig. 2.2) with the dictionary article for giraffe in the English WIKTIONARY-EN
@@ -1990,7 +1990,7 @@ Fig. 2.2: Extract from the article on the lemma giraffe in WIKIPEDIA-EN.
 
 ---
 
-<!-- page 49 -->
+<!-- page 46 -->
 
 assign equivalents to the lemmas (headwords) in a target language. Bilingual dictio-
 naries are important above all for language learning and teaching, for the reception
@@ -2009,7 +2009,7 @@ Stefan Engelberg and Angelika Storrer
 
 ---
 
-<!-- page 50 -->
+<!-- page 47 -->
 
 2.3.2 General dictionaries – special dictionaries
 The section of language described in a dictionary is also referred to as its subject mat-
@@ -2022,7 +2022,7 @@ Fig. 2.5: Extract from the article for the proverb never test the depth of water
 
 ---
 
-<!-- page 51 -->
+<!-- page 48 -->
 
 Those compiling the dictionary establish which language features are included in
 these articles as items, e.g., items giving the phonetics, items giving the meaning,
@@ -2071,7 +2071,7 @@ Stefan Engelberg and Angelika Storrer
 
 ---
 
-<!-- page 52 -->
+<!-- page 49 -->
 
 Sign language dictionaries, like the ‘ASL Sign Language Dictionary’ (ASL-DICT), take
 profit from the possibility of combining videos, text and images in their dictionary
@@ -2088,7 +2088,7 @@ Fig. 2.6: Typology of general and special dictionaries (adapted and translated f
 
 ---
 
-<!-- page 53 -->
+<!-- page 50 -->
 
 Fig. 2.7: Extract from the article on the lemma Rainford in the database ENGLISH-PLACE-NAMES.
 Fig. 2.8: Extract from the PF-DICT in the WÖRTERBUCHNETZ.
@@ -2097,7 +2097,7 @@ Stefan Engelberg and Angelika Storrer
 
 ---
 
-<!-- page 54 -->
+<!-- page 51 -->
 
 2.4 Dictionary portals
 2.4.1 Criteria for a description of dictionary portals
@@ -2117,7 +2117,7 @@ Fig. 2.9: Extract from the article on the lemma welcome in the ASL-DICT.
 
 ---
 
-<!-- page 55 -->
+<!-- page 52 -->
 
 ations and additions, due above all to the developments in the field of Internet lexi-
 cography in recent years.
@@ -2165,7 +2165,7 @@ Stefan Engelberg and Angelika Storrer
 
 ---
 
-<!-- page 56 -->
+<!-- page 53 -->
 
 Fig. 2.10: Result from the search for Dutch schrouf (‘screw’) in the ‘Database of the Southern Dutch
 Dialects’ (DSDD).
@@ -2176,7 +2176,7 @@ Fig. 2.12: Search for the German equivalent of Polish śpiewać ‘to sing’ in
 
 ---
 
-<!-- page 57 -->
+<!-- page 54 -->
 
 Dictionary portals differ in terms of the types of access that they offer to their lexico-
 graphic data (cf. Boelhouwer/Dijkstra/Sijens 2018: 761f). Here, we distinguish between
@@ -2199,7 +2199,7 @@ Stefan Engelberg and Angelika Storrer
 
 ---
 
-<!-- page 58 -->
+<!-- page 55 -->
 
 listed dictionary is complemented by a lemma search field, as can be seen in the Euro-
 pean Dictionary Portal EDP in →Fig. 2.14. If a multiple outer search is provided, enter-
@@ -2213,7 +2213,7 @@ Fig. 2.14: Single outer access for each Irish dictionary included in the ‘Euro
 
 ---
 
-<!-- page 59 -->
+<!-- page 56 -->
 
 Less frequently, portals offer the option of inner access (cf. Müller-Spitzer 2010 on
 inner access in OWID). Inner access makes it possible to directly access particular in-
@@ -2228,7 +2228,7 @@ Stefan Engelberg and Angelika Storrer
 
 ---
 
-<!-- page 60 -->
+<!-- page 57 -->
 
 naries HWNF (→Fig. 2.17). The inner access structure in the HWNF operates over all
 integrated dictionaries. The recent version of the German portal OWID and the portal
@@ -2257,7 +2257,7 @@ on the keyword in one of the dictionaries.
 
 ---
 
-<!-- page 61 -->
+<!-- page 58 -->
 
 tained in the portal; and the degree of integration of the dictionaries (access structure,
 cross-dictionary referencing, layout) (→Fig. 2.20).
@@ -2286,7 +2286,7 @@ Stefan Engelberg and Angelika Storrer
 
 ---
 
-<!-- page 62 -->
+<!-- page 59 -->
 
 Dictionary networks offer a high degree of networked integration, sophisticated access
 structures, and layout uniformity, and do not interfere with the integrity of the dictio-
@@ -2319,7 +2319,7 @@ and investigation of dictionary collections, search engines, and nets for differ
 
 ---
 
-<!-- page 63 -->
+<!-- page 60 -->
 
 ONLINE appear to involve no integration of embedded dictionaries – as in dictionary
 search engines – but present themselves in their layout and access in a manner similar
@@ -2333,7 +2333,7 @@ Stefan Engelberg and Angelika Storrer
 
 ---
 
-<!-- page 64 -->
+<!-- page 61 -->
 
 Viewed historically, dictionary collections and search engines stand at the beginning
 of portal lexicography, while dictionary networks and dictionary simulations are de-
@@ -2359,7 +2359,7 @@ articles are displayed in the integrated loanword dictionary.
 
 ---
 
-<!-- page 65 -->
+<!-- page 62 -->
 
 sented as lists, graphs, or word clouds, data on frequency of use, charts documenting
 the time course of usage, etc. (→Chapter 7). A prominent example is the DWDS portal
@@ -2383,7 +2383,7 @@ Stefan Engelberg and Angelika Storrer
 
 ---
 
-<!-- page 66 -->
+<!-- page 63 -->
 
 terns, or inflection tables. This again can be observed in commercial platforms of pub-
 lishing houses such as COLLINS (→Fig. 2.24).
@@ -2402,7 +2402,7 @@ Fig. 2.25: Enyclopedic article for French tortue ‘turtle’ on the LAROUSSE re
 
 ---
 
-<!-- page 67 -->
+<!-- page 64 -->
 
 Pure encyclopedic portals can of course also be found on the Internet. They relate to
 encyclopedic reference works as dictionary portals relate to language dictionaries. Ex-
@@ -2434,7 +2434,7 @@ Stefan Engelberg and Angelika Storrer
 
 ---
 
-<!-- page 68 -->
+<!-- page 65 -->
 
 Literature
 Academic literature
@@ -2487,7 +2487,7 @@ COST ENeL WG3 meeting (organized with WG1) Barcelona, Spain, 31 March–1 April 
 
 ---
 
-<!-- page 69 -->
+<!-- page 66 -->
 
 https://www.elexicography.eu/working-groups/working-group-3/wg3-meetings/wg3-barcelona
 -2016/ [last access: April 25, 2024].
@@ -2539,7 +2539,7 @@ Stefan Engelberg and Angelika Storrer
 
 ---
 
-<!-- page 70 -->
+<!-- page 67 -->
 
 DWDS = Das Digitale Wörterbuch der deutschen Sprache. Berlin: Berlin-Brandenburgische Akademie der
 Wissenschaften. http://www.dwds.de/ [last access: April 25, 2024].
@@ -2593,7 +2593,7 @@ webster.com/medical [last access: April 25, 2024].
 
 ---
 
-<!-- page 71 -->
+<!-- page 68 -->
 
 LOTH-DICT = Wörterbuch der deutsch-lothringischen Mundarten. In: Wörterbuchnetz. Trier:
 Kompetenzzentrum – Trier Center for Digital Humanities, Universität Trier. http://woerterbuchnetz.
@@ -2648,7 +2648,7 @@ Stefan Engelberg and Angelika Storrer
 
 ---
 
-<!-- page 72 -->
+<!-- page 69 -->
 
 WEBSTER-1828 = Webster’s Dictionary 1828. MasonSoft Technology Ltd. https://webstersdictionary1828.com/
 [last access: April 25, 2024].
@@ -2673,7 +2673,7 @@ wissensordnung.jpg [last access: April 25, 2024].
 
 ---
 
-<!-- page 74 -->
+<!-- page 70 -->
 
 Annette Klosa-Kückelhaus and Carole Tiberius
 3 The Lexicographic Process
@@ -2692,7 +2692,7 @@ https://doi.org/10.1515/9783111233758-004
 
 ---
 
-<!-- page 75 -->
+<!-- page 71 -->
 
 this type of manufacturing process, it is – still – a human being, here a machinist, who
 assembles and repairs the machines and whose specialist skills and expertise are indis-
@@ -2738,7 +2738,7 @@ Annette Klosa-Kückelhaus and Carole Tiberius
 
 ---
 
-<!-- page 76 -->
+<!-- page 72 -->
 
 course had to be made to freely available images that may not have fulfilled their
 purpose to optimum effect. A more valid comparison can also be drawn between
@@ -2790,7 +2790,7 @@ dation for our topic is provided by a brief summary of academic research into th
 
 ---
 
-<!-- page 77 -->
+<!-- page 73 -->
 
 duction process (→Section 3.2) and a description of various lexicographic processes for
 Internet dictionaries of different types (→Section 3.4). In addition, we consider the pro-
@@ -2834,7 +2834,7 @@ Annette Klosa-Kückelhaus and Carole Tiberius
 
 ---
 
-<!-- page 78 -->
+<!-- page 74 -->
 
 to compile a print dictionary. By contrast, the goal of a digital lexicographic process
 (involving the use of computers throughout the process) is to compile a dictionary
@@ -2877,7 +2877,7 @@ nary listed in →Tab. 3.1. The original form of an Internet dictionary particul
 
 ---
 
-<!-- page 79 -->
+<!-- page 75 -->
 
 not only) influences the dictionary’s online structure, the density of hypertexts, the
 number of multimedia elements, and the means of access available. The criterion of
@@ -2949,7 +2949,7 @@ Annette Klosa-Kückelhaus and Carole Tiberius
 
 ---
 
-<!-- page 80 -->
+<!-- page 76 -->
 
 lexicographic process more generally in seven phases, each with many individual
 tasks (→Tab. 3.2), using Wiegand (1998: 233ff.) as a starting point.
@@ -3005,7 +3005,7 @@ the online application
 
 ---
 
-<!-- page 81 -->
+<!-- page 77 -->
 
 The phase that takes up the most amount of time in the lexicographic process is the
 data evaluation phase in most dictionary projects. This is the lexicographers’ main area
@@ -3049,7 +3049,7 @@ Annette Klosa-Kückelhaus and Carole Tiberius
 
 ---
 
-<!-- page 82 -->
+<!-- page 78 -->
 
 –
 Preparation phase for online release: testing the user interface, developing a
@@ -3098,7 +3098,7 @@ development of the underlying data, and planning the user interface.
 
 ---
 
-<!-- page 83 -->
+<!-- page 79 -->
 
 –
 Data acquisition phase: this can be omitted if only the material from the print
@@ -3150,7 +3150,7 @@ Annette Klosa-Kückelhaus and Carole Tiberius
 
 ---
 
-<!-- page 84 -->
+<!-- page 80 -->
 
 combines the automatic compilation of lexicographic information with the manual
 editing of lemmas, the boundaries between the phases in the process will shift still
@@ -3197,7 +3197,7 @@ Section 3.4.2.
 
 ---
 
-<!-- page 85 -->
+<!-- page 81 -->
 
 The mistake in this example requires making a correction in a single entry and then
 systematically checking a whole series of words for corresponding corrections. In a
@@ -3228,7 +3228,7 @@ Annette Klosa-Kückelhaus and Carole Tiberius
 
 ---
 
-<!-- page 86 -->
+<!-- page 82 -->
 
 sions in dictionary blogs may have a similar effect, namely when these serve as an
 impetus for the dictionary team to further develop the dictionary in a particular way
@@ -3273,7 +3273,7 @@ retro-digitised dictionary, the ORDBOG OVER DET DANSKE SPROG (ODS).
 
 ---
 
-<!-- page 87 -->
+<!-- page 83 -->
 
 3.4.1 The lexicographic process for the ANW and ELEXIKO
 Here, we combine our discussion of the lexicographic processes for the ANW and
@@ -3301,7 +3301,7 @@ Annette Klosa-Kückelhaus and Carole Tiberius
 
 ---
 
-<!-- page 88 -->
+<!-- page 84 -->
 
 puter-aided compilation of word families. The data in →Tab. 3.3 also indicate that the
 ANW was more dependent on computer support than ELEXIKO.
@@ -3318,7 +3318,7 @@ Fig. 3.3: Information on the last update (bottom right) for the entry Wörterbuc
 
 ---
 
-<!-- page 89 -->
+<!-- page 85 -->
 
 plemented in both projects. In the preparatory phase, both projects concentrated on de-
 veloping the concept of the dictionary’s content and on pilot studies, underestimating the
@@ -3348,7 +3348,7 @@ Annette Klosa-Kückelhaus and Carole Tiberius
 
 ---
 
-<!-- page 90 -->
+<!-- page 86 -->
 
 Both projects also invested much time in gathering image material (in particular,
 image material that can be used free of charge). The ANW uses online databases of
@@ -3391,7 +3391,7 @@ stead an existing XML editor (OXYGEN5) was adapted to the needs of the project. 
 
 ---
 
-<!-- page 91 -->
+<!-- page 87 -->
 
 tor was supplemented with additional software, namely an in-house linking tool called
 “Vernetziko” (cf. Meyer 2011) and an administrative tool.
@@ -3432,7 +3432,7 @@ Annette Klosa-Kückelhaus and Carole Tiberius
 
 ---
 
-<!-- page 92 -->
+<!-- page 88 -->
 
 The ANW had a more complex workflow in the data evaluation phase than ELEXIKO
 since the lexicographers and lexicographic assistants worked closely together as can be
@@ -3457,7 +3457,7 @@ Fig. 3.4: The original ANW workflow.7
 
 ---
 
-<!-- page 93 -->
+<!-- page 89 -->
 
 checked automatically and then corrected manually. After that, a new version of the
 dictionary was uploaded into a test environment for one week. Errors and inconsis-
@@ -3485,7 +3485,7 @@ Annette Klosa-Kückelhaus and Carole Tiberius
 
 ---
 
-<!-- page 94 -->
+<!-- page 90 -->
 
 Maintenance and preservation phase
 Because ELEXIKO is part of the dictionary portal OWID at the Leibniz Institute for the
@@ -3527,7 +3527,7 @@ of examples and sources, and deletions of what some editors believe is irrelevan
 
 ---
 
-<!-- page 95 -->
+<!-- page 91 -->
 
 terial. There are special discussion pages relating to the overall concept of the dictio-
 nary as well as to individual entries that can be used for preparing, assessing, and
@@ -3557,7 +3557,7 @@ Annette Klosa-Kückelhaus and Carole Tiberius
 
 ---
 
-<!-- page 96 -->
+<!-- page 92 -->
 
 been extended with five additional volumes (1992 to 2005). There has been a digital ver-
 sion since November 2005 available at ORDNET.DK, a portal of dictionaries for the Danish
@@ -3599,7 +3599,7 @@ that the digital lexicographic process in this kind of scenario is never complet
 
 ---
 
-<!-- page 97 -->
+<!-- page 93 -->
 
 3.5 Software to support lexicographic processes
 Nowadays, lexicographic work is characterised by increasing automated support (cf.,
@@ -3646,7 +3646,7 @@ Annette Klosa-Kückelhaus and Carole Tiberius
 
 ---
 
-<!-- page 98 -->
+<!-- page 94 -->
 
 text should be written for an article in order to maintain an appropriate distribution
 of article lengths in a particular alphabetical category. When a new word is selected
@@ -3676,7 +3676,7 @@ Fig. 3.7: The XML editor OXYGEN, which was used in the ELEXIKO project to prepar
 
 ---
 
-<!-- page 99 -->
+<!-- page 95 -->
 
 in the corpus with around 20 words of surrounding context. KWIC stands for “Key-
 word in Context” and refers to the concordance being displayed with the keyword in
@@ -3707,7 +3707,7 @@ Annette Klosa-Kückelhaus and Carole Tiberius
 
 ---
 
-<!-- page 100 -->
+<!-- page 96 -->
 
 greater confidence. Preparing the texts means adding linguistic annotations to the raw
 corpus texts, i.e. lemmatisation, tagging (annotation according to word class), or parsing
@@ -3736,7 +3736,7 @@ Fig. 3.9: Example of TickBox lexicography (for the verb lesen ‘to read’) in 
 
 ---
 
-<!-- page 101 -->
+<!-- page 97 -->
 
 word senses automatically. This function categorises the collocations identified by a
 word sketch into groups corresponding to the different senses of a word.
@@ -3781,7 +3781,7 @@ Annette Klosa-Kückelhaus and Carole Tiberius
 
 ---
 
-<!-- page 102 -->
+<!-- page 98 -->
 
 usually the same. The website ONELOOK and the EUROPEAN DICTIONARY PORTAL are ex-
 amples of this kind of dictionary search engine.
@@ -3830,7 +3830,7 @@ ing to the process that have to be undertaken so that a particular dictionary or
 
 ---
 
-<!-- page 103 -->
+<!-- page 99 -->
 
 of dictionaries comes into being on or in an electronic carrier medium. This process
 can be divided into different phases in which computers are used consistently.
@@ -3875,7 +3875,7 @@ Annette Klosa-Kückelhaus and Carole Tiberius
 
 ---
 
-<!-- page 104 -->
+<!-- page 100 -->
 
 in the way of working for lexicographers. New editing tools are also needed to support
 this task-based editing, allowing different views on the data and supporting a more re-
@@ -3919,7 +3919,7 @@ Vatvedt/Torjusen, Julie Matilde (eds.): Proceedings of the 15th EURALEX Internat
 
 ---
 
-<!-- page 105 -->
+<!-- page 101 -->
 
 Abel, Andrea/Klosa, Annette (2014): Einleitung: “Ihr Beitrag bitte! – Der Nutzerbeitrag im Wörterbuchprozess”.
 Mannheim: Institut für Deutsche Sprache, 3–8.
@@ -3975,7 +3975,7 @@ Annette Klosa-Kückelhaus and Carole Tiberius
 
 ---
 
-<!-- page 106 -->
+<!-- page 102 -->
 
 Kilgarriff, Adam, et al. (2004): The Sketch Engine. In: Williams, Geoffrey/Vessier, Sandra (eds.): Proceedings
 of Eleventh EURALEX International Conference. Le Paquebot: Lorient, 105–116.
@@ -4031,7 +4031,7 @@ Niemeyer, 106–131.
 
 ---
 
-<!-- page 107 -->
+<!-- page 103 -->
 
 Storrer, Angelika (2001): Digitale Wörterbücher als Hypertexte: Zur Nutzung des Hypertextkonzepts in der
 Lexikographie. In: Lemberg, Ingrid/Schröder, Bernd/Storrer, Angelika (eds.): Chancen und
@@ -4082,7 +4082,7 @@ Annette Klosa-Kückelhaus and Carole Tiberius
 
 ---
 
-<!-- page 108 -->
+<!-- page 104 -->
 
 OED = Oxford English Dictionary online. Oxford: Oxford University Press. http://dictionary.oed.com [last
 access: April 27, 2024].
@@ -4134,7 +4134,7 @@ April 27, 2024].
 
 ---
 
-<!-- page 109 -->
+<!-- page 105 -->
 
 SKETCH ENGINE = Sketch Engine. https://www.sketchengine.co.uk/ [last access: April 27, 2024].
 TEI Lex-0 = TEI Lex-0. A baseline encoding for lexicographic data. https://dariah-eric.github.io/lexicalresour
@@ -4156,7 +4156,7 @@ Annette Klosa-Kückelhaus and Carole Tiberius
 
 ---
 
-<!-- page 110 -->
+<!-- page 106 -->
 
 Axel Herold, Peter Meyer, and Frank Wiegand
 4 Data Modelling
@@ -4185,7 +4185,7 @@ https://doi.org/10.1515/9783111233758-005
 
 ---
 
-<!-- page 111 -->
+<!-- page 107 -->
 
 4.1 Introduction
 Data modelling is also concerned with sorting and structuring, but of data rather than
@@ -4233,7 +4233,7 @@ Axel Herold, Peter Meyer, and Frank Wiegand
 
 ---
 
-<!-- page 112 -->
+<!-- page 108 -->
 
 tionaries. Another common type of data stored in lexicographic databases are sound files
 that capture the pronunciation of headwords and possibly other parts of the entries such
@@ -4262,7 +4262,7 @@ Fig. 4.2: Levels in the lexicographic process.
 
 ---
 
-<!-- page 113 -->
+<!-- page 109 -->
 
 to the data structures introduced before. put in, including the associated advantages
 and disadvantages. There are many lexicographic projects that face largely similar
@@ -4305,7 +4305,7 @@ Axel Herold, Peter Meyer, and Frank Wiegand
 
 ---
 
-<!-- page 114 -->
+<!-- page 110 -->
 
 (see code as shown above)”. However, this is not a viable approach since any change
 in the appearance of the web page for an entry would require a change in the code of
@@ -4356,7 +4356,7 @@ information in a data format that makes sense for the lexicographic work and tha
 
 ---
 
-<!-- page 115 -->
+<!-- page 111 -->
 
 abstracted as far as possible from the details of its final presentation. It is then the
 task of the web application to translate this data format into suitable HTML code. If
@@ -4403,7 +4403,7 @@ Axel Herold, Peter Meyer, and Frank Wiegand
 
 ---
 
-<!-- page 116 -->
+<!-- page 112 -->
 
 have been possible, for instance, to just have the blocks named spelling, pronuncia-
 tion, part of speech, definition, and cross-reference as pieces of information di-
@@ -4449,7 +4449,7 @@ entries in a particular dictionary – in a so-called schema.
 
 ---
 
-<!-- page 117 -->
+<!-- page 113 -->
 
 Fig. 4.3: Representation of the microstructure of an entry as a tree diagram.
 104
@@ -4457,7 +4457,7 @@ Axel Herold, Peter Meyer, and Frank Wiegand
 
 ---
 
-<!-- page 118 -->
+<!-- page 114 -->
 
 Represented in XML, the toy entry could appear as:
 <?xml version="1.0" encoding="UTF-8"?>
@@ -4504,7 +4504,7 @@ stylesheets, an XML document can be “translated” into HTML pages in complete
 
 ---
 
-<!-- page 119 -->
+<!-- page 115 -->
 
 ferent ways, depending, for example, on the user’s preference, or, alternatively, into
 other types of documents, such as a PDF file for printing. In the transformation pro-
@@ -4566,7 +4566,7 @@ Axel Herold, Peter Meyer, and Frank Wiegand
 
 ---
 
-<!-- page 120 -->
+<!-- page 116 -->
 
 dataset or “record” as in →Table 4.2). The database management system can automat-
 ically guarantee the referential integrity of these references to datasets in other tables;
@@ -4627,7 +4627,7 @@ Numbering column.
 
 ---
 
-<!-- page 121 -->
+<!-- page 117 -->
 
 for the entry on disproof with the ID “MED.disproof”. The following SQL query returns
 all of the column values belonging to the row with the ID “MED.disproof” in the main
@@ -4665,7 +4665,7 @@ Axel Herold, Peter Meyer, and Frank Wiegand
 
 ---
 
-<!-- page 122 -->
+<!-- page 118 -->
 
 moving laterally across sibling nodes). Consider the following XPath expression and
 its application on the XML representation presented in →Section 4.2.1:
@@ -4704,7 +4704,7 @@ path expression have to satisfy, with the @ symbol denoting the name of an XML a
 
 ---
 
-<!-- page 123 -->
+<!-- page 119 -->
 
 bute. Thus, the node set returned by this expression is the set of all <entry> nodes
 that have one or more descendant <sense> nodes, which, in turn, must meet the
@@ -4751,7 +4751,7 @@ Axel Herold, Peter Meyer, and Frank Wiegand
 
 ---
 
-<!-- page 124 -->
+<!-- page 120 -->
 
 taining a single path between any two given nodes, or whether the edges may carry
 additional information (such as weights), to name but a few.
@@ -4795,7 +4795,7 @@ facts_sense would allow us to retrieve further information on the first sense of
 
 ---
 
-<!-- page 125 -->
+<!-- page 121 -->
 
 entry. To query an RDF triple store, SPARQL (the SPARQL Protocol and RDF Query Lan-
 guage) is used. The following SPARQL query retrieves the senses that are associated with
@@ -4837,7 +4837,7 @@ Axel Herold, Peter Meyer, and Frank Wiegand
 
 ---
 
-<!-- page 126 -->
+<!-- page 122 -->
 
 need to be stored and processed. Particular questions that arise here are which types
 of lexicographic detail we need in our dictionary entries, which hierarchical relation-
@@ -4877,7 +4877,7 @@ Fig. 4.4: Simple UML modelling of an example entry.
 
 ---
 
-<!-- page 127 -->
+<!-- page 123 -->
 
 The relationships between the entities in classes are represented by associations,
 which are lines drawn between the relevant class rectangles to link them. The multi-
@@ -4928,7 +4928,7 @@ Axel Herold, Peter Meyer, and Frank Wiegand
 
 ---
 
-<!-- page 128 -->
+<!-- page 124 -->
 
 tensible to guarantee that each entry may be revised at any time. This often makes it
 necessary for the conceptual modelling to adjust to new requirements that arise
@@ -4973,7 +4973,7 @@ element senses {
 
 ---
 
-<!-- page 129 -->
+<!-- page 125 -->
 
 element sense {
 attribute numbering { text },
@@ -5016,7 +5016,7 @@ Axel Herold, Peter Meyer, and Frank Wiegand
 
 ---
 
-<!-- page 130 -->
+<!-- page 126 -->
 
 4.3.3 Technical implications of logical data modelling
 In principle, any given conceptual data modelling can be realised using any of the tech-
@@ -5064,7 +5064,7 @@ XML editor is constant automatic validation of an XML document with respect to a
 
 ---
 
-<!-- page 131 -->
+<!-- page 127 -->
 
 given XML schema. In this way, if an XML editor is set to use the schema from →Sec-
 tion 4.3.2, it can automatically prevent an additional part-of-speech element from
@@ -5109,7 +5109,7 @@ Axel Herold, Peter Meyer, and Frank Wiegand
 
 ---
 
-<!-- page 132 -->
+<!-- page 128 -->
 
 usually highlighted by a particular font or by its position at the beginning of the
 grouping. Of course, lexical information does not have to be presented in this particu-
@@ -5162,7 +5162,7 @@ ues may be used for detailing specialist domains. Some grammars such as
 
 ---
 
-<!-- page 133 -->
+<!-- page 129 -->
 
 Schematron also allow rules to be formulated that determine properties of ele-
 ments that refer to properties of elements positioned elsewhere in a dictionary
@@ -5211,7 +5211,7 @@ Axel Herold, Peter Meyer, and Frank Wiegand
 
 ---
 
-<!-- page 134 -->
+<!-- page 130 -->
 
 though the transformation then necessarily involves some loss of lexicographic infor-
 mation. Another possibility, albeit one that is only practicable in the long term, would
@@ -5260,7 +5260,7 @@ role similar to that of the International Organization for Standardization (ISO)
 
 ---
 
-<!-- page 135 -->
+<!-- page 131 -->
 
 advantage of international standardisation lies in the associated convergence towards
 a stable standard. Models and formats are no longer subject to short-term changes
@@ -5305,7 +5305,7 @@ Axel Herold, Peter Meyer, and Frank Wiegand
 
 ---
 
-<!-- page 136 -->
+<!-- page 132 -->
 
 the end of a line) no longer occur in this textual model. The lexicographic information
 is thus modelled conceptionally as a one-dimensional sequence of symbols.
@@ -5350,7 +5350,7 @@ rend="smallcaps">Petr.</hi>
 
 ---
 
-<!-- page 137 -->
+<!-- page 133 -->
 
 (b)
 <entry>
@@ -5398,7 +5398,7 @@ Axel Herold, Peter Meyer, and Frank Wiegand
 
 ---
 
-<!-- page 138 -->
+<!-- page 134 -->
 
 jects allowed in the general TEI framework (entry – general entry, re – related
 entry, superEntry – groups of entries, entryFree – unstructured entry, hom –
@@ -5443,7 +5443,7 @@ by synsets (collections of synonyms realised in individual languages: {rock, sto
 
 ---
 
-<!-- page 139 -->
+<!-- page 135 -->
 
 to the category of onomasiological dictionaries, that is, dictionaries that assign linguis-
 tic forms to lexical meanings.
@@ -5489,7 +5489,7 @@ Axel Herold, Peter Meyer, and Frank Wiegand
 
 ---
 
-<!-- page 140 -->
+<!-- page 136 -->
 
 ples are the consolidation of the elements on individual levels of linguistic description
 in modules (syntax, phonology, etc.) and the hierarchical arrangement of those units.
@@ -5531,7 +5531,7 @@ for the lemma; \sn – “sense number”, semantic classification mark; \ps –
 
 ---
 
-<!-- page 141 -->
+<!-- page 137 -->
 
 speech”, word class; \de – “definition”). The lexical model underlying the MDF stan-
 dard model is that of a semasiological dictionary, that is, a dictionary starting from
@@ -5572,7 +5572,7 @@ Axel Herold, Peter Meyer, and Frank Wiegand
 
 ---
 
-<!-- page 142 -->
+<!-- page 138 -->
 
 4.5 Outlook
 It is customary practice nowadays that standards are used in data modelling. For ex-
@@ -5619,7 +5619,7 @@ these developments for now.
 
 ---
 
-<!-- page 143 -->
+<!-- page 139 -->
 
 To return to the Lego analogy from the beginning of this chapter: at the moment,
 it is (still) more effective to ensure that the red and blue bricks, and the 2 × 1s and 2 ×
@@ -5662,7 +5662,7 @@ Axel Herold, Peter Meyer, and Frank Wiegand
 
 ---
 
-<!-- page 144 -->
+<!-- page 140 -->
 
 Kanngießer, Siegfried (1996): Zwei Prinzipien des Lexikonimports und Lexikonexports. In: Hötker, Wilfried/
 Ludewig, Petra (eds.): Lexikonimport, Lexikonexport. Studien zur Wiederverwertung lexikalischer
@@ -5708,7 +5708,7 @@ April 27, 2024].
 
 ---
 
-<!-- page 145 -->
+<!-- page 141 -->
 
 Internet Sources
 CLARIN = Common Language Resources and Technology Infrastructure. https://www.clarin.eu/ [last access:
@@ -5734,7 +5734,7 @@ Axel Herold, Peter Meyer, and Frank Wiegand
 
 ---
 
-<!-- page 146 -->
+<!-- page 142 -->
 
 Stefan Engelberg, Carolin Müller-Spitzer, and Thomas Schmidt
 5 Linking and Access Structures
@@ -5752,7 +5752,7 @@ https://doi.org/10.1515/9783111233758-006
 
 ---
 
-<!-- page 147 -->
+<!-- page 143 -->
 
 Lexicographic content interlinked within and between Internet dictionaries can be thought
 of as a network of streets. The streets connect different pieces of content in Internet dictio-
@@ -5791,7 +5791,7 @@ Stefan Engelberg, Carolin Müller-Spitzer, and Thomas Schmidt
 
 ---
 
-<!-- page 148 -->
+<!-- page 144 -->
 
 5.2 Linking structures
 The vocabulary of a language does not consist of individual words that exist as indepen-
@@ -5835,7 +5835,7 @@ digital dictionaries, we talk more generally of the linking structure (Müller-S
 
 ---
 
-<!-- page 149 -->
+<!-- page 145 -->
 
 by inspecting example entries from one or more dictionaries.1 The basis of the data
 for this kind of analysis is a printed book from which information is gathered and
@@ -5883,7 +5883,7 @@ Stefan Engelberg, Carolin Müller-Spitzer, and Thomas Schmidt
 
 ---
 
-<!-- page 150 -->
+<!-- page 146 -->
 
 link: “synonyms” and “example sentences”, etc. will each lead the user to different
 groups of information pertaining to the headword. These kinds of links will be referred
@@ -5908,7 +5908,7 @@ Fig. 5.2: Link markers in the field for related words in the entry for the lemma
 
 ---
 
-<!-- page 151 -->
+<!-- page 147 -->
 
 In a print dictionary, there are two principal types of search: first, a semasiological
 search in an alphabetical dictionary by means of successively flicking through pages,
@@ -5938,7 +5938,7 @@ Stefan Engelberg, Carolin Müller-Spitzer, and Thomas Schmidt
 
 ---
 
-<!-- page 152 -->
+<!-- page 148 -->
 
 search space; rather, it takes as its starting point certain information about the goal of
 the search that is already at the user’s disposal. This information could relate to the writ-
@@ -5967,7 +5967,7 @@ Fig. 5.4: Search based on sound form in the TLFi.
 
 ---
 
-<!-- page 153 -->
+<!-- page 149 -->
 
 (2) Type of search action. Basic search actions are oriented towards the medium and
 are familiar from other Internet-based forms of communication. Above all, they are
@@ -6019,7 +6019,7 @@ Stefan Engelberg, Carolin Müller-Spitzer, and Thomas Schmidt
 
 ---
 
-<!-- page 154 -->
+<!-- page 150 -->
 
 An index-based search involves lemmas being searched by means of lemma lists and
 lemma range indicators.4 Searching in lemma lists usually involves navigating through
@@ -6038,7 +6038,7 @@ the form of lemma range indicators, e.g., by giving the first and last lemma of 
 
 ---
 
-<!-- page 155 -->
+<!-- page 151 -->
 
 Navigating by clicking on particular expressions is also the basis for two other forms of
 search. In a text-based search, it is not lemmas that are clicked from the dictionary’s
@@ -6067,7 +6067,7 @@ Stefan Engelberg, Carolin Müller-Spitzer, and Thomas Schmidt
 
 ---
 
-<!-- page 156 -->
+<!-- page 152 -->
 
 taneously into a complex search query. For the most part, they do not serve to locate a
 single lemma but rather a number of expressions that satisfy particular criteria. This
@@ -6093,7 +6093,7 @@ drop-down menu (“part of speech”).
 
 ---
 
-<!-- page 157 -->
+<!-- page 153 -->
 
 5.3.2 Onomasiological access structures
 Semasiological dictionary access proceeds from linguistic forms and leads to information
@@ -6118,7 +6118,7 @@ Stefan Engelberg, Carolin Müller-Spitzer, and Thomas Schmidt
 
 ---
 
-<!-- page 158 -->
+<!-- page 154 -->
 
 can be assembled and (re)organised according to any criteria at all for presentational
 purposes.5 In this way, one or more onomasiological access options (e.g., in the form of
@@ -6145,7 +6145,7 @@ ing word senses and multilingual pre-trained word embeddings.
 
 ---
 
-<!-- page 159 -->
+<!-- page 155 -->
 
 ing different forms by placing them in relationships with one another (the alphabet and
 the classification of root forms and inflected forms). This is fundamentally different for
@@ -6174,7 +6174,7 @@ Stefan Engelberg, Carolin Müller-Spitzer, and Thomas Schmidt
 
 ---
 
-<!-- page 160 -->
+<!-- page 156 -->
 
 When it comes to linguistic representation, (intensional) meanings are described
 by linguistic forms: for example, if verbs – as in the dictionary of verbs of communi-
@@ -6189,7 +6189,7 @@ semantic-pragmatic features.
 
 ---
 
-<!-- page 161 -->
+<!-- page 157 -->
 
 or if – as in the Algemeen Nederlands Woordenboek (ANW; →Fig. 5.12) – the meaning
 of a lexeme is described by semagrams with linguistically named properties. Mean-
@@ -6216,7 +6216,7 @@ Stefan Engelberg, Carolin Müller-Spitzer, and Thomas Schmidt
 
 ---
 
-<!-- page 162 -->
+<!-- page 158 -->
 
 constructing them. In the following, this will be explained using four examples of ono-
 masiological access structures.
@@ -6233,7 +6233,7 @@ Fig. 5.13: “Pass scene” in KICKTIONARY.
 
 ---
 
-<!-- page 163 -->
+<!-- page 159 -->
 
 Fig. 5.14: Hierarchical construction of a pictorial dictionary (exemplified by Merriam-Webster Visual
 Dictionary; MWVDO).
@@ -6242,7 +6242,7 @@ Stefan Engelberg, Carolin Müller-Spitzer, and Thomas Schmidt
 
 ---
 
-<!-- page 164 -->
+<!-- page 160 -->
 
 Example 2 (Semantic Relations in KICKTIONARY): The so-called concept hierarchies in
 KICKTIONARY are also organised hierarchically; however, meanings are not represented
@@ -6290,7 +6290,7 @@ frame Commerce_buy and thereby “inherits” its properties. Likewise, Commerce
 
 ---
 
-<!-- page 165 -->
+<!-- page 161 -->
 
 Fig. 5.15: Concept hierarchies in KICKTIONARY.
 152
@@ -6298,7 +6298,7 @@ Stefan Engelberg, Carolin Müller-Spitzer, and Thomas Schmidt
 
 ---
 
-<!-- page 166 -->
+<!-- page 162 -->
 
 and Commerce_sell constitute opposing perspectives on the same superordinate frame
 Commerce_goods-Transfer and therefore share its core frame elements. In this way, a
@@ -6314,7 +6314,7 @@ FRAMENET.
 
 ---
 
-<!-- page 167 -->
+<!-- page 163 -->
 
 images or defines frames to which linguistic forms are then assigned – in the case of
 concept hierarchies, they result implicitly from mediostructural elements, namely the
@@ -6335,7 +6335,7 @@ Stefan Engelberg, Carolin Müller-Spitzer, and Thomas Schmidt
 
 ---
 
-<!-- page 168 -->
+<!-- page 164 -->
 
 As shown in →Fig. 5.12, for example, semagrams belonging to the word cockerspaniël
 (‘cocker spaniel’) record superordinate and subordinate terms (“dog” or “English
@@ -6351,7 +6351,7 @@ Fig. 5.18: Semagram-based search in the ANW.
 
 ---
 
-<!-- page 169 -->
+<!-- page 165 -->
 
 (‘chub’), steenuil (‘little owl’), and zandhagedis (‘sand lizard’) as responses as well as
 cockerspaniël.
@@ -6374,7 +6374,7 @@ Stefan Engelberg, Carolin Müller-Spitzer, and Thomas Schmidt
 
 ---
 
-<!-- page 170 -->
+<!-- page 166 -->
 
 As in a semasiological search, navigating through successive clicks also plays a role in
 onomasiological searches, when, for example, the user navigates through thematic
@@ -6399,7 +6399,7 @@ Fig. 5.20: “Search in meaning paraphrases” in OWID.
 
 ---
 
-<!-- page 171 -->
+<!-- page 167 -->
 
 In addition to graph-based search structures, further access structures that are based
 on various visual associations of lexemes have been popular. So, for example, it is
@@ -6426,7 +6426,7 @@ Stefan Engelberg, Carolin Müller-Spitzer, and Thomas Schmidt
 
 ---
 
-<!-- page 172 -->
+<!-- page 168 -->
 
 5.4 New perspectives for dictionary research
 The strengths of the digital medium are the possibilities for linking data and the op-
@@ -6450,7 +6450,7 @@ WORTSCHATZ using the option for graph-based searches.
 
 ---
 
-<!-- page 173 -->
+<!-- page 169 -->
 
 It is possible to download the entire basis of data of WIKTIONARY and, thus, to analyse it
 as a whole body of data.7 For example, it is possible to visualise all of the relevant infor-
@@ -6471,7 +6471,7 @@ Stefan Engelberg, Carolin Müller-Spitzer, and Thomas Schmidt
 
 ---
 
-<!-- page 174 -->
+<!-- page 170 -->
 
 nections between them close to one another spatially. As we would expect, the whole
 graph shows that paradigmatic linking exists above all between headwords from the
@@ -6502,7 +6502,7 @@ DWDS; corresponding dictionary articles are called up by clicking on words.
 
 ---
 
-<!-- page 175 -->
+<!-- page 171 -->
 
 bers of that group are linked with all of the other members. For instance, this was the
 case in the German WIKTIONARY for the causal connectors around deswegen (“there-
@@ -6519,7 +6519,7 @@ Stefan Engelberg, Carolin Müller-Spitzer, and Thomas Schmidt
 
 ---
 
-<!-- page 176 -->
+<!-- page 172 -->
 
 This kind of new approach to analysing linking structures may not only provide new
 impetus for describing linking structures but may also be used to create new access
@@ -6535,7 +6535,7 @@ parallel corpus.
 
 ---
 
-<!-- page 177 -->
+<!-- page 173 -->
 
 Fig. 5.27: Paradigmatic linking in the German WIKTIONARY as a complete graph; colours indicate different
 parts of speech.
@@ -6545,7 +6545,7 @@ Stefan Engelberg, Carolin Müller-Spitzer, and Thomas Schmidt
 
 ---
 
-<!-- page 178 -->
+<!-- page 174 -->
 
 Bibliography
 Further reading
@@ -6566,7 +6566,7 @@ frequency of consultation in 2014).
 
 ---
 
-<!-- page 179 -->
+<!-- page 175 -->
 
 Literature
 Academic literature
@@ -6618,7 +6618,7 @@ Stefan Engelberg, Carolin Müller-Spitzer, and Thomas Schmidt
 
 ---
 
-<!-- page 180 -->
+<!-- page 176 -->
 
 Meyer, Peter/Tu, Ngoc Duyen Tanja (2021): A word embedding approach to onomasiological search in
 multilingual loanword lexicography. In: Kosem, Iztok, et al. (eds.): Electronic Lexicography in the 21st
@@ -6673,7 +6673,7 @@ Lexicographica 18, 168–252.
 
 ---
 
-<!-- page 181 -->
+<!-- page 177 -->
 
 Wiegand, Herbert Ernst/Smit, Maria (2013): Mediostructures in printed dictionaries. In: Gouws, Rufus H.,
 et al. (eds.): Dictionaries. An International Encyclopedia of Lexicography. Supplementary Volume: Recent
@@ -6722,7 +6722,7 @@ Stefan Engelberg, Carolin Müller-Spitzer, and Thomas Schmidt
 
 ---
 
-<!-- page 182 -->
+<!-- page 178 -->
 
 VISUAL THESAURUS = Thinkmap Visual Thesaurus. New York: Thinkmap, Inc. http://www.visualthesaurus.com
 [last access: April 27, 2024].
@@ -6749,7 +6749,7 @@ licenses/by-sa/3.0/legalcode.
 
 ---
 
-<!-- page 184 -->
+<!-- page 179 -->
 
 Annette Klosa-Kückelhaus and Frank Michaelis
 6 The Design of Internet Dictionaries
@@ -6780,7 +6780,7 @@ https://doi.org/10.1515/9783111233758-007
 
 ---
 
-<!-- page 185 -->
+<!-- page 180 -->
 
 takes the content of the dictionary or its intended users as its starting point (→Sec-
 tion 6.4). Search functionality is what provides access to an Internet dictionary, so the
@@ -6824,7 +6824,7 @@ Annette Klosa-Kückelhaus and Frank Michaelis
 
 ---
 
-<!-- page 186 -->
+<!-- page 181 -->
 
 hancements, such as web fonts and rules for complex grid layouts, mean that HTML
 and CSS come pretty close to print in the possible forms of visual representation that
@@ -6867,7 +6867,7 @@ the environment in which the dictionary is embedded must be implemented first. I
 
 ---
 
-<!-- page 187 -->
+<!-- page 182 -->
 
 the most extreme cases, the dictionary in its own right may disappear almost entirely
 from the user interface and is visible only, for example, in a text editor through the
@@ -6912,7 +6912,7 @@ Annette Klosa-Kückelhaus and Frank Michaelis
 
 ---
 
-<!-- page 188 -->
+<!-- page 183 -->
 
 computer. Conversely, data structures may be supplemented by textual data, for ex-
 ample, in the form of detailed commentary fields.
@@ -6956,7 +6956,7 @@ role in academic lexicography to date.
 
 ---
 
-<!-- page 189 -->
+<!-- page 184 -->
 
 6.3 Usage studies on design
 Although there is now a relatively long tradition of research into the use of print and
@@ -6998,7 +6998,7 @@ Annette Klosa-Kückelhaus and Frank Michaelis
 
 ---
 
-<!-- page 190 -->
+<!-- page 185 -->
 
 tively short period of time. Something that was easy or difficult to read 200 years ago
 will continue to be so today.
@@ -7047,7 +7047,7 @@ complex structures, such as the individual views of an application or the applic
 
 ---
 
-<!-- page 191 -->
+<!-- page 186 -->
 
 as a whole. Components themselves are, in turn, made up of smaller components, or
 design primitives (lines, shapes, text; →Fig. 6.3).
@@ -7064,7 +7064,7 @@ Annette Klosa-Kückelhaus and Frank Michaelis
 
 ---
 
-<!-- page 192 -->
+<!-- page 187 -->
 
 3.
 for performing tasks or giving commands, e.g. buttons, menus;
@@ -7098,7 +7098,7 @@ Fig. 6.3: Examples for design primitives in the Dictionary of South African Engl
 
 ---
 
-<!-- page 193 -->
+<!-- page 188 -->
 
 clicks on it means they do not know whether the computer has recognised the click or
 not and whether it will perform the required action. In this respect, modern user in-
@@ -7143,7 +7143,7 @@ Annette Klosa-Kückelhaus and Frank Michaelis
 
 ---
 
-<!-- page 194 -->
+<!-- page 189 -->
 
 troducing a clearer visual hierarchy or by replacing an old-fashioned typeface such as
 Fraktur (a blackletter typescript) with a modern font in order to ensure legibility for
@@ -7186,7 +7186,7 @@ which they arise. A logical step would be, for example, to integrate dictionarie
 
 ---
 
-<!-- page 195 -->
+<!-- page 190 -->
 
 editing programs to assist in the production of texts, or in digital editions of texts to
 aid user comprehension. Here, dictionaries no longer appear as independent entities;
@@ -7226,7 +7226,7 @@ Annette Klosa-Kückelhaus and Frank Michaelis
 
 ---
 
-<!-- page 196 -->
+<!-- page 191 -->
 
 6.5 The design of search functions
 Users of Internet dictionaries are familiar with three different search options (for
@@ -7269,7 +7269,7 @@ leads from each snippet to the original dictionary entry.
 
 ---
 
-<!-- page 197 -->
+<!-- page 192 -->
 
 6.6 The design process
 At the end of this presentation of the design of Internet dictionaries, it is worth includ-
@@ -7314,7 +7314,7 @@ Annette Klosa-Kückelhaus and Frank Michaelis
 
 ---
 
-<!-- page 198 -->
+<!-- page 193 -->
 
 term undertakings, elements that are characteristic of a particular fashion should be
 used with caution. Use of such elements can draw unnecessary attention to them and
@@ -7357,7 +7357,7 @@ to consider that the linear planning and realisation of a dictionary project res
 
 ---
 
-<!-- page 199 -->
+<!-- page 194 -->
 
 particular dependencies between content and presentation being identified only
 when it is too late and being reworked only at great cost, if at all. For example, later
@@ -7399,7 +7399,7 @@ Annette Klosa-Kückelhaus and Frank Michaelis
 
 ---
 
-<!-- page 200 -->
+<!-- page 195 -->
 
 Literature
 Academic literature
@@ -7450,7 +7450,7 @@ the dictionary portal OWID. An attempt at using eye-tracking technology. In: Mü
 
 ---
 
-<!-- page 201 -->
+<!-- page 196 -->
 
 Nesi, Hilary/Hua Tan, Kim (2011): The Effect of Menus and Signposting on the Speed and Accuracy of
 Sense Selection. In: International Journal of Lexicography 24(1), 79–96.
@@ -7495,7 +7495,7 @@ Annette Klosa-Kückelhaus and Frank Michaelis
 
 ---
 
-<!-- page 202 -->
+<!-- page 197 -->
 
 Images
 Fig. 6.1
@@ -7511,7 +7511,7 @@ https://dsae.co.za/ [last access: April 4, 2024].
 
 ---
 
-<!-- page 204 -->
+<!-- page 198 -->
 
 Alexander Geyken and Lothar Lemnitzer
 7 The Automatic Extraction of Lexicographic
@@ -7553,7 +7553,7 @@ https://doi.org/10.1515/9783111233758-008
 
 ---
 
-<!-- page 205 -->
+<!-- page 199 -->
 
 does offer a whole range of possibilities for linking it in with other resources. Later,
 we shall examine the opportunities and risks of directly linking a dictionary with pri-
@@ -7564,7 +7564,7 @@ Alexander Geyken and Lothar Lemnitzer
 
 ---
 
-<!-- page 206 -->
+<!-- page 200 -->
 
 which the (semi-)automatic extraction of information is particularly fruitful. There
 is, however, no attempt on our part to be exhaustive concerning the microstructure
@@ -7575,7 +7575,7 @@ Fig. 7.2: A mine surveyor taking measurements.
 
 ---
 
-<!-- page 207 -->
+<!-- page 201 -->
 
 In →Section 7.2, we provide information about the different sources used in the
 process of compiling the dictionary, followed by a more detailed exploration of cor-
@@ -7620,7 +7620,7 @@ Alexander Geyken and Lothar Lemnitzer
 
 ---
 
-<!-- page 208 -->
+<!-- page 202 -->
 
 cal of this type of source.2 In addition, access to collections of attestations is cumber-
 some once they exceed a certain size. If we approach a large number of examples
@@ -7667,7 +7667,7 @@ or idiosyncratic usages which inevitably catch the reader’s eye . . .”.
 
 ---
 
-<!-- page 209 -->
+<!-- page 203 -->
 
 used here is the DEUTSCHES TEXTARCHIV. However, dictionaries can be used as more
 than simply a source of inspiration in the process of compiling entries. Insofar as an-
@@ -7714,7 +7714,7 @@ Alexander Geyken and Lothar Lemnitzer
 
 ---
 
-<!-- page 210 -->
+<!-- page 204 -->
 
 7.3 Corpora
 Drawing on Lemnitzer/Zinsmeister (2010: 8), we define “corpus” as a collection of writ-
@@ -7760,7 +7760,7 @@ schreiben, und aus linguistischen Annotationen, die diesen Daten zugeordnet sind
 
 ---
 
-<!-- page 211 -->
+<!-- page 205 -->
 
 graphic perspective, however, this kind of corpus should only be used as a supple-
 mentary source.
@@ -7811,7 +7811,7 @@ Alexander Geyken and Lothar Lemnitzer
 
 ---
 
-<!-- page 212 -->
+<!-- page 206 -->
 
 ther details, see https://cmc-corpora.org/). A reason for the distinction is that, lin-
 guistically, computer-mediated communication bears the characteristics of both
@@ -7859,7 +7859,7 @@ guage Observatory” (VLO; https://www.clarin.eu/content/virtual-language-observ
 
 ---
 
-<!-- page 213 -->
+<!-- page 207 -->
 
 sis can begin. At present the following modes of data extraction predominate in lexi-
 cographic practice.
@@ -7903,7 +7903,7 @@ Alexander Geyken and Lothar Lemnitzer
 
 ---
 
-<!-- page 214 -->
+<!-- page 208 -->
 
 language. This is independent of the medium in which the data for this kind of dictio-
 nary will be presented: in print, as an electronic dictionary app, or on the Internet.
@@ -7947,7 +7947,7 @@ More specifically, its goals are to monitor the development of German spelling o
 
 ---
 
-<!-- page 215 -->
+<!-- page 209 -->
 
 basis of large reference corpora, to maintain the uniformity of spelling in the Ger-
 man-speaking world, and, finally, to clarify cases of doubt in German spelling.
@@ -7999,7 +7999,7 @@ Alexander Geyken and Lothar Lemnitzer
 
 ---
 
-<!-- page 216 -->
+<!-- page 210 -->
 
 In certain circumstances, a change in usage preference over time has to be taken into
 account when observing spelling variants. One example of this concerns the variant Ski,
@@ -8044,7 +8044,7 @@ gines, although not all of these options are realised everywhere.
 
 ---
 
-<!-- page 217 -->
+<!-- page 211 -->
 
 –
 Searching for a surface form (gibt ‘gives’) or for a lemma (geben ‘to give’). In
@@ -8093,7 +8093,7 @@ Alexander Geyken and Lothar Lemnitzer
 
 ---
 
-<!-- page 218 -->
+<!-- page 212 -->
 
 further piece of information that is relevant for the inflection of nouns: number restric-
 tions. Some nouns are used exclusively in the plural (e.g. Kosten ‘costs’) and others pri-
@@ -8142,7 +8142,7 @@ individual meanings (see www.owid.de/wb/elexiko/glossar/Grammatik.html). How-
 
 ---
 
-<!-- page 219 -->
+<!-- page 213 -->
 
 ever, when we make a judgement such as “occurs (relatively) rarely” or read that as a
 user, we have to be aware that the dictionary basis can only ever illustrate the dictio-
@@ -8188,7 +8188,7 @@ Alexander Geyken and Lothar Lemnitzer
 
 ---
 
-<!-- page 220 -->
+<!-- page 214 -->
 
 7.4.2 Content-based information classes
 Meaning paraphrase/definition
@@ -8232,7 +8232,7 @@ learned, or translated without the basis.] (Hausmann 2007: 218).
 
 ---
 
-<!-- page 221 -->
+<!-- page 215 -->
 
 Word pairs such as Tisch;decken (table;lay) or Haar;dichtes (hair;thick) are examples
 of collocations. The first word in each of these example pairs denotes the basis (Tisch,
@@ -8281,7 +8281,7 @@ Alexander Geyken and Lothar Lemnitzer
 
 ---
 
-<!-- page 222 -->
+<!-- page 216 -->
 
 currences such as große Stadt (big town), Bier kaufen (buy beer), or neues Hemd (new
 shirt). Second, with a size of 10–50 million tokens, the corpora used at the time were
@@ -8330,7 +8330,7 @@ on a general formalism that can recognise syntactic sentence functions and resol
 
 ---
 
-<!-- page 223 -->
+<!-- page 217 -->
 
 local ambiguity of meaning (Ivanova et al. 2008; Geyken et al. 2009). The first is the ap-
 proach developed at the University of Stuttgart to extract “significant word pairs as a
@@ -8379,7 +8379,7 @@ Alexander Geyken and Lothar Lemnitzer
 
 ---
 
-<!-- page 224 -->
+<!-- page 218 -->
 
 Geyken (2011) includes a first attempt to undertake a comparison of the results of the
 word profile with the “Wörterbuch der deutschen Gegenwartssprache” (WDG). This is
@@ -8416,7 +8416,7 @@ occurrences for 90,000 lemmas.
 
 ---
 
-<!-- page 225 -->
+<!-- page 219 -->
 
 cally informed selection must be made from the array of co-occurring word pairs (cf.
 Klosa/Storjohann 2011).
@@ -8462,7 +8462,7 @@ Alexander Geyken and Lothar Lemnitzer
 
 ---
 
-<!-- page 226 -->
+<!-- page 220 -->
 
 However, if we know that Avatar originally denoted something like a god, we can
 search for shared occurrences of Avatar and Gott ‘God’ in a sentence and obtain (a
@@ -8482,7 +8482,7 @@ organising map” in CCDB.
 
 ---
 
-<!-- page 227 -->
+<!-- page 221 -->
 
 vided with a goodness score that depends on several parameters, including length, use
 of complicated vocabulary, and absence of pronouns and absence of named entities
@@ -8527,7 +8527,7 @@ Alexander Geyken and Lothar Lemnitzer
 
 ---
 
-<!-- page 228 -->
+<!-- page 222 -->
 
 In this case, it is not obvious that relationships of a language-system nature be-
 tween lexical units can be “found” in texts and extracted from them. However, there
@@ -8573,7 +8573,7 @@ word fleißig ‘industrious’.
 
 ---
 
-<!-- page 229 -->
+<!-- page 223 -->
 
 7.4.3 (Pragmatic) use-based information classes
 The class of pragmatic information involves details that indicate particularities or re-
@@ -8623,7 +8623,7 @@ Alexander Geyken and Lothar Lemnitzer
 
 ---
 
-<!-- page 230 -->
+<!-- page 224 -->
 
 pus metadata. Indications about these tendencies could be the provenance of a
 newspaper in which a word is predominantly used or the origin of authors who
@@ -8670,7 +8670,7 @@ generate high quality information in a dictionary entry depend on the following 
 
 ---
 
-<!-- page 231 -->
+<!-- page 225 -->
 
 pects, i.e. the quality and detail of the metadata and the linguistic annotation of the
 primary corpus data and the options provided by (linguistic) search engines.
@@ -8715,7 +8715,7 @@ Alexander Geyken and Lothar Lemnitzer
 
 ---
 
-<!-- page 232 -->
+<!-- page 226 -->
 
 nary entries (cf. Asmussen 2013), or to integrate primary sources directly into the lexi-
 cographic resource. In this case, we can talk of (heterogenous) word information sys-
@@ -8768,7 +8768,7 @@ forms that do not belong to the root form. The ambiguity of word forms also pro-
 
 ---
 
-<!-- page 233 -->
+<!-- page 227 -->
 
 duces allocations that seem bizarre but are systematically correct. Under certain
 circumstances, for example, all occurrences of heute are assigned to the root form
@@ -8814,7 +8814,7 @@ Alexander Geyken and Lothar Lemnitzer
 
 ---
 
-<!-- page 234 -->
+<!-- page 228 -->
 
 matically extract lexicographic information described in this chapter have to be revis-
 ited. Indeed, a recent survey by de Schryver (2023) provided evidence that many dic-
@@ -8856,7 +8856,7 @@ with Focus on Electronic and Computational Lexicography. Berlin/Boston: Mouton d
 
 ---
 
-<!-- page 235 -->
+<!-- page 229 -->
 
 Atkins, B. T. Sue/Rundell, Michael (2008): The Oxford Guide to Practical Lexicography. Oxford: Oxford
 University Press.
@@ -8912,7 +8912,7 @@ Alexander Geyken and Lothar Lemnitzer
 
 ---
 
-<!-- page 236 -->
+<!-- page 230 -->
 
 Greenbaum, Sidney (1970): Verb-Intensifier Collocations in English. An experimental approach. Den Haag/
 Paris: Mouton.
@@ -8967,7 +8967,7 @@ Ulrike (ed.): Große Lexika und Wörterbücher Europas. Berlin/Boston: De Gruyte
 
 ---
 
-<!-- page 237 -->
+<!-- page 231 -->
 
 Krek, Simon, et al. (2018): European Lexicographic Infrastructure (ELEXIS). In: Čibej, Jaka et al. (eds.):
 Proceedings of the 16th EURALEX International Congress: Lexicography in Global Contexts. Ljubljana:
@@ -9022,7 +9022,7 @@ Alexander Geyken and Lothar Lemnitzer
 
 ---
 
-<!-- page 238 -->
+<!-- page 232 -->
 
 Walter, Stephan (2011): Definitionsextraktion aus Urteilstexten, PhD Thesis, Universität des Saarlandes.
 http://www.coli.unisaarland.de/~stwa/publications/DissertationStephanWalter.pdf [last access:
@@ -9071,7 +9071,7 @@ BNC = British National Corpus. www.natcorp.ox.ac.uk [last access: May 2, 2024].
 
 ---
 
-<!-- page 239 -->
+<!-- page 233 -->
 
 CCDB = Kookkurrenzdatenbank. Mannheim: Institut für Deutsche Sprache. http://corpora.ids-mannheim.
 de/ccdb/ [last access: May 2, 2024].
@@ -9116,7 +9116,7 @@ Alexander Geyken and Lothar Lemnitzer
 
 ---
 
-<!-- page 240 -->
+<!-- page 234 -->
 
 Andrea Abel and Christian M. Meyer
 8 User Participation
@@ -9134,7 +9134,7 @@ https://doi.org/10.1515/9783111233758-009
 
 ---
 
-<!-- page 241 -->
+<!-- page 235 -->
 
 Democracy lives in the participation of citizens, who can contribute to the politics of a
 state, both directly by electing representatives and also indirectly by expressing their
@@ -9178,7 +9178,7 @@ Andrea Abel and Christian M. Meyer
 
 ---
 
-<!-- page 242 -->
+<!-- page 236 -->
 
 use of a dictionary. For one thing, the Web allows dictionary users to communicate
 with each other, which was a very laborious and time-consuming activity before – if at
@@ -9226,7 +9226,7 @@ nary portal as being supported by users rather than generated by users.
 
 ---
 
-<!-- page 243 -->
+<!-- page 237 -->
 
 In a different strand of research, de Schryver/Prinsloo (2001) coined the term
 fuzzy simultaneous feedback to point out user feedback which is available during the
@@ -9284,7 +9284,7 @@ Andrea Abel and Christian M. Meyer
 
 ---
 
-<!-- page 244 -->
+<!-- page 238 -->
 
 Engelberg/Müller-Spitzer 2013; →Chapter 2), i.e. interfaces that permit access to a
 whole series of dictionaries (e.g. LEO, DICT.CC).
@@ -9327,7 +9327,7 @@ specific licence (cf. Kreutzer 2011).
 
 ---
 
-<!-- page 245 -->
+<!-- page 239 -->
 
 In addition to the licence under which the contents are published, the source or
 origin of the contributions is also a relevant issue. Uncovering and preventing the
@@ -9374,7 +9374,7 @@ Andrea Abel and Christian M. Meyer
 
 ---
 
-<!-- page 246 -->
+<!-- page 240 -->
 
 Many of the collaborative dictionaries with fixed lexicographic instructions are
 translation dictionaries such as BAB.LA or GLOSBE, whose entries are often very simply
@@ -9399,7 +9399,7 @@ Fig. 8.2: Extract from the input forms in KAMUSI.
 
 ---
 
-<!-- page 247 -->
+<!-- page 241 -->
 
 Beside these form-based input options, we can also find dictionaries whose entries
 are composed in a markup language. Here, the dictionary content contributed is not
@@ -9441,7 +9441,7 @@ Andrea Abel and Christian M. Meyer
 
 ---
 
-<!-- page 248 -->
+<!-- page 242 -->
 
 The text set within three equals signs produces a heading. Italics are activated by two
 inverted commas and bold text by three inverted commas. Cross-references to other
@@ -9489,7 +9489,7 @@ LEX Congress in 2014 (cf. http://internetlexikografie.de).
 
 ---
 
-<!-- page 249 -->
+<!-- page 243 -->
 
 correct the issue themselves was able to assign a pre-defined text block to draw atten-
 tion to missing sources, necessary or useful additions, or inconsistent structure, among
@@ -9537,7 +9537,7 @@ Andrea Abel and Christian M. Meyer
 
 ---
 
-<!-- page 250 -->
+<!-- page 244 -->
 
 Given that well-known collaborative-institutional dictionaries such as the ones
 listed above have been closed down and we are not aware of any active projects of
@@ -9586,7 +9586,7 @@ the areas of knowledge covered and the forms of use of the linguistic units repr
 
 ---
 
-<!-- page 251 -->
+<!-- page 245 -->
 
 by the participants. For language varieties (e.g. youth language, technical languages, di-
 alects) and translation dictionaries, this provides clear additional value (cf. Meyer/Gure-
@@ -9629,7 +9629,7 @@ Andrea Abel and Christian M. Meyer
 
 ---
 
-<!-- page 252 -->
+<!-- page 246 -->
 
 sion criteria of the dictionary and were envisaged to be included in a new edition, e.g.
 Burgerbude (“burger stall”). Overall, the quality and usefulness of the explicit feed-
@@ -9666,7 +9666,7 @@ Fig. 8.3: Evaluation of quality in dict.cc.
 
 ---
 
-<!-- page 253 -->
+<!-- page 247 -->
 
 It is not unusual to find this kind of evaluation task in the field of (paid) crowdsourc-
 ing, a common strategy of companies to outsource certain tasks to volunteer partici-
@@ -9713,7 +9713,7 @@ Andrea Abel and Christian M. Meyer
 
 ---
 
-<!-- page 254 -->
+<!-- page 248 -->
 
 different forms for corrections and for suggesting new entries or translations, meaning
 that submissions from users are pre-sorted and relevant details can be requested in a
@@ -9761,7 +9761,7 @@ team has to decide whether the citation is relevant and informative for the exis
 
 ---
 
-<!-- page 255 -->
+<!-- page 249 -->
 
 Fig. 8.4: Input form for submitting examples to the OED Online.
 242
@@ -9769,7 +9769,7 @@ Andrea Abel and Christian M. Meyer
 
 ---
 
-<!-- page 256 -->
+<!-- page 250 -->
 
 entry, whether it can be verified, and in which form it can be integrated into the entry
 (e.g. which context is required).
@@ -9818,7 +9818,7 @@ typical problem for learners of French (Verlinde/Binon 2010).
 
 ---
 
-<!-- page 257 -->
+<!-- page 251 -->
 
 However, analysing log data usually does not provide precise results: for one
 thing, access by automated computer programs and search engines cannot be filtered
@@ -9865,7 +9865,7 @@ Andrea Abel and Christian M. Meyer
 
 ---
 
-<!-- page 258 -->
+<!-- page 252 -->
 
 almost impossible to manually check whether they improve the lexicographical de-
 scriptions and respect copyright and social norms. This is why publishers declare lim-
@@ -9909,7 +9909,7 @@ ber 24, 2023].
 
 ---
 
-<!-- page 259 -->
+<!-- page 253 -->
 
 customers to their brand. Using newsletters or social networks like Facebook or mi-
 croblogging services like X, formerly known as Twitter, to disseminate product infor-
@@ -9956,7 +9956,7 @@ Andrea Abel and Christian M. Meyer
 
 ---
 
-<!-- page 260 -->
+<!-- page 254 -->
 
 direct language-related questions by email to an expert in the CANOONET language blog
 “Ask Dr. Bopp”, which moved to the LEO language blog in 2020.19 In addition to a per-
@@ -10004,7 +10004,7 @@ which has implications when defining the term as a crossing of four or only two
 
 ---
 
-<!-- page 261 -->
+<!-- page 255 -->
 
 roads. Among other things, the extract makes clear what an important role sources
 perceived as authorities, like DUDEN or the DWDS, play in users’ argumentation but also
@@ -10053,7 +10053,7 @@ Andrea Abel and Christian M. Meyer
 
 ---
 
-<!-- page 262 -->
+<!-- page 256 -->
 
 Fig. 8.5: Extract from the discussion contribution on the headword Kreuzung in WIKTIONARY.
 8 User Participation
@@ -10061,7 +10061,7 @@ Fig. 8.5: Extract from the discussion contribution on the headword Kreuzung in W
 
 ---
 
-<!-- page 263 -->
+<!-- page 257 -->
 
 to fill gaps in information quickly, for which forms of bidirectional communication ap-
 pear to be particularly well suited (for more on possible motivations →Section 8.2).
@@ -10105,7 +10105,7 @@ Andrea Abel and Christian M. Meyer
 
 ---
 
-<!-- page 264 -->
+<!-- page 258 -->
 
 Furthermore, the strengths of collaborative lexicography lie in the diversity of
 the user group, which facilitates a wide-ranging description of different speech varie-
@@ -10152,7 +10152,7 @@ noun derives from Shewee, the company producing the devices.
 
 ---
 
-<!-- page 265 -->
+<!-- page 259 -->
 
 important competences in using dictionaries. Complementary services and products
 achieve this in particular, for example, in playful ways or through engaging blog
@@ -10200,7 +10200,7 @@ Andrea Abel and Christian M. Meyer
 
 ---
 
-<!-- page 266 -->
+<!-- page 260 -->
 
 also not captured, such as the interpretation of the German lemma Favorit as “pre-
 ferred object”27.
@@ -10244,7 +10244,7 @@ ning. https://de.wiktionary.org/wiki/Favorit [last access: February 22, 2024].
 
 ---
 
-<!-- page 267 -->
+<!-- page 261 -->
 
 options but with the common characteristic of directly integrating user contributions
 into the relevant dictionary. To a large degree, this type of user participation has only
@@ -10285,7 +10285,7 @@ Andrea Abel and Christian M. Meyer
 
 ---
 
-<!-- page 268 -->
+<!-- page 262 -->
 
 Bibliography
 Further reading
@@ -10331,7 +10331,7 @@ In: Studies in Lexicography 11:1, 97–111.
 
 ---
 
-<!-- page 269 -->
+<!-- page 263 -->
 
 de Schryver, Gilles-Maurice/Wolfer, Sascha/Lew, Robert (2019): The relationship between dictionary look-
 up frequency and corpus frequency revisited: a log-file analysis of a decade of user interaction with a
@@ -10386,7 +10386,7 @@ Andrea Abel and Christian M. Meyer
 
 ---
 
-<!-- page 270 -->
+<!-- page 264 -->
 
 Lew, Robert (2014): User-generated content (UGC) in English online dictionaries. In: Abel, Andrea/Klosa,
 Annette (eds.): Der Nutzerbeitrag im Wörterbuchprozess. 3. Arbeitsbericht des wissenschaftlichen
@@ -10440,7 +10440,7 @@ MIT Press, 658–659.
 
 ---
 
-<!-- page 271 -->
+<!-- page 265 -->
 
 Rundell, Michael (2012): ‘It works in practice but will it work in theory?’ The uneasy relationship between
 lexicography and matters theoretical. In: Vatdedt Fjeld, Ruth/Torjusen, Julie Matilde (eds.):
@@ -10491,7 +10491,7 @@ Andrea Abel and Christian M. Meyer
 
 ---
 
-<!-- page 272 -->
+<!-- page 266 -->
 
 GLOSBE = Glosbe – das mehrsprachige Online-Wörterbuch. Warschau: Cloud Inside. http://glosbe.com [last
 access: May 2, 2024].
@@ -10541,7 +10541,7 @@ May 2, 2024].
 
 ---
 
-<!-- page 273 -->
+<!-- page 267 -->
 
 Internet sources
 AMAZON MECHANICAL TURK = https://www.mturk.com/mturk/welcome [last access: May 2, 2024].
@@ -10582,7 +10582,7 @@ Andrea Abel and Christian M. Meyer
 
 ---
 
-<!-- page 274 -->
+<!-- page 268 -->
 
 Carolin Müller-Spitzer and Sascha Wolfer
 9 Research into Dictionary Use
@@ -10613,7 +10613,7 @@ https://doi.org/10.1515/9783111233758-010
 
 ---
 
-<!-- page 275 -->
+<!-- page 269 -->
 
 situations, in what way, to what success, etc. lexicographic tools are used. This knowl-
 edge can then serve to adapt future dictionaries better to the needs of users.
@@ -10658,7 +10658,7 @@ Carolin Müller-Spitzer and Sascha Wolfer
 
 ---
 
-<!-- page 276 -->
+<!-- page 270 -->
 
 von Goethes Sehen, Denken, Sprechen muß dies Verhältnis jedoch eine ganz besondere Bedeu-
 tung gewinnen. Die Aufbereitung der Sprache Goethes in einem Wörterbuch wird nicht nur
@@ -10704,7 +10704,7 @@ lowing questions:
 
 ---
 
-<!-- page 277 -->
+<!-- page 271 -->
 
 –
 How can a research problem be formulated and specified? (→Section 9.2.1)
@@ -10755,7 +10755,7 @@ Carolin Müller-Spitzer and Sascha Wolfer
 
 ---
 
-<!-- page 278 -->
+<!-- page 272 -->
 
 tion in line with the research aim, a research design, measurement of variables, sampling, and
 the survey process. Frequently, the result of empirical ‘research’ that has not been thought
@@ -10797,7 +10797,7 @@ we can distinguish between three types of study design:
 
 ---
 
-<!-- page 279 -->
+<!-- page 273 -->
 
 –
 cross-sectional design;
@@ -10830,7 +10830,7 @@ Carolin Müller-Spitzer and Sascha Wolfer
 
 ---
 
-<!-- page 280 -->
+<!-- page 274 -->
 
 In contrast to a trend design, a panel design involves eliciting (a) values of the same
 variables at (b) different points in time but with (c) the same sampling, i.e. the same
@@ -10857,7 +10857,7 @@ ogy/indiv_pages/mischel/Walter_Mischel.html) and also in the associated publicat
 
 ---
 
-<!-- page 281 -->
+<!-- page 275 -->
 
 the nursery school on the Stanford campus. The research question was whether the
 ability to delay gratification could predict a variety of subsequent developments and
@@ -10904,7 +10904,7 @@ Carolin Müller-Spitzer and Sascha Wolfer
 
 ---
 
-<!-- page 282 -->
+<!-- page 276 -->
 
 taken in lexicography. This kind of study is very labour intensive and therefore expensive.
 In comparison, the use of dictionaries is a research area that is not nearly as fundamental
@@ -10952,7 +10952,7 @@ user research, the usefulness of new features could be evaluated in this way: fo
 
 ---
 
-<!-- page 283 -->
+<!-- page 277 -->
 
 ample, the number of searches in a dictionary could be recorded that were unsuccess-
 ful before and after the implementation of a search feature that tolerates errors. The
@@ -11000,7 +11000,7 @@ Carolin Müller-Spitzer and Sascha Wolfer
 
 ---
 
-<!-- page 284 -->
+<!-- page 278 -->
 
 the reasons why users cancel a search or whether their query was successfully an-
 swered. This means that we have no non-reactive procedures for generating data at our
@@ -11047,7 +11047,7 @@ servation identifies which point is circled on a rating scale. However, as a dat
 
 ---
 
-<!-- page 285 -->
+<!-- page 279 -->
 
 method in the social sciences, observation means more specifically the direct observa-
 tion of human actions, spoken utterances, non-verbal reactions (e.g. body language),
@@ -11094,7 +11094,7 @@ Carolin Müller-Spitzer and Sascha Wolfer
 
 ---
 
-<!-- page 286 -->
+<!-- page 280 -->
 
 In (almost) every kind of data collection method, it is important to conduct a kind
 of “rehearsal” as well, also known as a pre-test, before the actual data are generated
@@ -11137,7 +11137,7 @@ know where to find particular types of information in the report.
 
 ---
 
-<!-- page 287 -->
+<!-- page 281 -->
 
 9.3 User research in relation to Internet dictionaries
 As mentioned at the beginning of this chapter, dictionary user research is a relatively
@@ -11183,7 +11183,7 @@ Carolin Müller-Spitzer and Sascha Wolfer
 
 ---
 
-<!-- page 288 -->
+<!-- page 282 -->
 
 flected in this article, such as: Will traditional dictionaries still exist in the future? What
 linguistic questions can be answered by AI systems? But presumably there will also be
@@ -11229,7 +11229,7 @@ from print dictionaries, established models are brought into question and priori
 
 ---
 
-<!-- page 289 -->
+<!-- page 283 -->
 
 have to be determined afresh. To put it in more general terms, to develop a good ser-
 vice, it is first of all necessary to find out which features of a product or service are
@@ -11274,7 +11274,7 @@ Carolin Müller-Spitzer and Sascha Wolfer
 
 ---
 
-<!-- page 290 -->
+<!-- page 284 -->
 
 portant by itself, since all of the criteria together perhaps represented the ideal Inter-
 net dictionary. However, in order to find out how the participants judged the features
@@ -11323,7 +11323,7 @@ accessibility) more precisely in a second online questionnaire. We also followed
 
 ---
 
-<!-- page 291 -->
+<!-- page 285 -->
 
 Fig. 9.4: Ranking of the criteria in the online questionnaire.
 Fig. 9.5: Correlation between the mean rank and mean importance of criteria in the use of an Internet
@@ -11333,7 +11333,7 @@ Carolin Müller-Spitzer and Sascha Wolfer
 
 ---
 
-<!-- page 292 -->
+<!-- page 286 -->
 
 the two features generally judged to be least important – multimedia and user
 adaptivity.
@@ -11363,7 +11363,7 @@ Fig. 9.6: Group-specific analyses of the rank orders.
 
 ---
 
-<!-- page 293 -->
+<!-- page 287 -->
 
 Precisely in relation to collaboratively or automatically compiled (parts of) dictionar-
 ies, it would be interesting to find out how highly the participants would judge the
@@ -11401,7 +11401,7 @@ Carolin Müller-Spitzer and Sascha Wolfer
 
 ---
 
-<!-- page 294 -->
+<!-- page 288 -->
 
 In addition, for each aspect, we asked participants to list any further aspects that
 were perhaps also important in an open question. These will not be shown in detail
@@ -11434,7 +11434,7 @@ Fig. 9.8: Pie chart: aspects of dictionary updates.
 
 ---
 
-<!-- page 295 -->
+<!-- page 289 -->
 
 The aspect “words processed by editors . . .” relates to online dictionaries that publish
 their data online when they become available, such as ELEXIKO or the ALGEMEEN NEDER-
@@ -11483,7 +11483,7 @@ Carolin Müller-Spitzer and Sascha Wolfer
 
 ---
 
-<!-- page 296 -->
+<!-- page 290 -->
 
 9.3.2 Does the evaluation of the innovative features of Internet
 dictionaries depend on previous knowledge?
@@ -11529,7 +11529,7 @@ important characteristic for the reliability of a statistical claim. Expressed i
 
 ---
 
-<!-- page 297 -->
+<!-- page 291 -->
 
 the p-value is less than p < 0.005, i.e. the probability that the different judgements are a
 matter of chance is less than 1:1,000.
@@ -11556,7 +11556,7 @@ Carolin Müller-Spitzer and Sascha Wolfer
 
 ---
 
-<!-- page 298 -->
+<!-- page 292 -->
 
 reach those who are interested in more extensive forms of dictionary use, such as
 more in-depth information about the range of meanings of headwords.
@@ -11584,7 +11584,7 @@ tracker/16957/picture/124519/ [last access: June 10, 2016].
 
 ---
 
-<!-- page 299 -->
+<!-- page 293 -->
 
 A suitably equipped laboratory is needed to conduct an eye-tracking study. For
 that reason, we carried out our study in collaboration with the University of Mann-
@@ -11631,7 +11631,7 @@ Carolin Müller-Spitzer and Sascha Wolfer
 
 ---
 
-<!-- page 300 -->
+<!-- page 294 -->
 
 look like when we asked the participants about individual meanings? Did they find
 the relevant meanings? Did they read or scan all the labels first and only then read
@@ -11659,7 +11659,7 @@ Fig. 9.11: General information (left) and meaning-specific information (right) i
 
 ---
 
-<!-- page 301 -->
+<!-- page 295 -->
 
 Fig. 9.12: Heat map of all of the participants (left); scan path of one participant (finding the individual meaning ‘Turngerät’; right).
 288
@@ -11667,7 +11667,7 @@ Carolin Müller-Spitzer and Sascha Wolfer
 
 ---
 
-<!-- page 302 -->
+<!-- page 296 -->
 
 In a second stage, we asked participants to find a particular meaning of the headword
 Mannschaft ‘team’: “Please try to find out whether the following entry contains a
@@ -11695,7 +11695,7 @@ other at 00:14 seconds (right).
 
 ---
 
-<!-- page 303 -->
+<!-- page 297 -->
 
 9.3.4 Do lexicographic resources really help with
 linguistic problems?
@@ -11742,7 +11742,7 @@ Carolin Müller-Spitzer and Sascha Wolfer
 
 ---
 
-<!-- page 304 -->
+<!-- page 298 -->
 
 use dictionaries more often than in another. Hence, none of the effects of the experi-
 mental condition that are reported below is attributable to the participants’ different
@@ -11790,7 +11790,7 @@ their task, it was worth it because they achieved more successful results per mi
 
 ---
 
-<!-- page 305 -->
+<!-- page 299 -->
 
 Taken together, these results paint a fairly clear picture of the benefits of working
 with lexicographic resources: the experimental group which received the most assis-
@@ -11809,7 +11809,7 @@ Carolin Müller-Spitzer and Sascha Wolfer
 
 ---
 
-<!-- page 306 -->
+<!-- page 300 -->
 
 relevant information for certain language problems, the participants still had to un-
 derstand them and put them to good use when revising a text. For practical applica-
@@ -11853,7 +11853,7 @@ GPT see Ptasznik et al. (2024).
 
 ---
 
-<!-- page 307 -->
+<!-- page 301 -->
 
 the selection of headwords on the underlying corpus was overvalued in lexicography
 (the title of their article is “On the Overestimation of the Value of Corpus-based Lexi-
@@ -11902,7 +11902,7 @@ Carolin Müller-Spitzer and Sascha Wolfer
 
 ---
 
-<!-- page 308 -->
+<!-- page 302 -->
 
 tween them are not actually comparable. →Tab. 9.1 summarises the results of this
 analysis of our log files.
@@ -11966,7 +11966,7 @@ very frequent
 
 ---
 
-<!-- page 309 -->
+<!-- page 303 -->
 
 The relationship between corpus ranking and frequency of consultation becomes ap-
 parent in this table: the more DEREKO ranks are included in the analysis, the smaller
@@ -12015,7 +12015,7 @@ Carolin Müller-Spitzer and Sascha Wolfer
 
 ---
 
-<!-- page 310 -->
+<!-- page 304 -->
 
 word Tugendfuror ‘virtue furore’ in relation to the debate on everyday sexism, thereby
 sparking a debate about whether this was an appropriate way to phrase it. It came as
@@ -12060,7 +12060,7 @@ from which the need to consult a dictionary arises. In essence, if we wish user 
 
 ---
 
-<!-- page 311 -->
+<!-- page 305 -->
 
 Fig. 9.17: Access to the word Borussia cleaned of trends (Jan.–Dec. 2013). Dotted vertical lines (BB) mark football matches between the German teams Borussia
 Mönchengladbach and Borussia Dortmund. Dashed lines indicate the Champions League 2023 semi-final matches (SF) and the final match (F).
@@ -12069,7 +12069,7 @@ Carolin Müller-Spitzer and Sascha Wolfer
 
 ---
 
-<!-- page 312 -->
+<!-- page 306 -->
 
 search to ensure that dictionary use corresponds more closely to actual user needs,
 we should begin precisely with those user needs. Theodore Levitt, a US economist,
@@ -12111,7 +12111,7 @@ the topic of “dictionary user research”.
 
 ---
 
-<!-- page 313 -->
+<!-- page 307 -->
 
 Müller-Spitzer, Carolin, et al. (2018): Correct Hypotheses and Careful Reading Are Essential: Results of an
 Observational Study on Learners Using Online Language Resources. In: Lexikos 28, 287–315.
@@ -12158,7 +12158,7 @@ Carolin Müller-Spitzer and Sascha Wolfer
 
 ---
 
-<!-- page 314 -->
+<!-- page 308 -->
 
 Dziemanko, Anna (2012): On the use(fulness) of paper and electronic dictionaries. In: Granger, Sylviane/
 Paquot, Magali (eds.): Electronic lexicography. Oxford: Oxford University Press, 320–341.
@@ -12211,7 +12211,7 @@ Personality and Social Psychology 21:2, 204–218.
 
 ---
 
-<!-- page 315 -->
+<!-- page 309 -->
 
 Müller-Spitzer, Carolin (2014) (ed.): Using Online Dictionaries. Berlin/Boston: De Gruyter.
 Müller-Spitzer, Carolin (2018): Correct Hypotheses and Careful Reading Are Essential: Results of an
@@ -12264,7 +12264,7 @@ Carolin Müller-Spitzer and Sascha Wolfer
 
 ---
 
-<!-- page 316 -->
+<!-- page 310 -->
 
 Trochim, William (2006): “Design”. Research Methods Knowledge Base. http://www.socialresearchmethods.
 net/kb/design.php [last access: May 2, 2024].
@@ -12310,7 +12310,7 @@ WIKTIONARY = Das deutsche Wiktionary. https://de.wiktionary.org/wiki/Wiktionary:
 
 ---
 
-<!-- page 317 -->
+<!-- page 311 -->
 
 Internet sources
 DEREKO = Deutsches Referenzkorpus. Mannheim: Institut für Deutsche Sprache. www1.ids-mannheim.de/
@@ -12327,7 +12327,7 @@ Carolin Müller-Spitzer and Sascha Wolfer
 
 ---
 
-<!-- page 318 -->
+<!-- page 312 -->
 
 Index
 abbreviation 38–39
@@ -12429,7 +12429,7 @@ https://doi.org/10.1515/9783111233758-011
 
 ---
 
-<!-- page 319 -->
+<!-- page 313 -->
 
 cross-reference 102, 106–107, 113–115,
 134–137, 161
@@ -12528,7 +12528,7 @@ Index
 
 ---
 
-<!-- page 320 -->
+<!-- page 314 -->
 
 empirical 3, 194, 203, 209, 262–265, 269–270,
 272–274, 282
@@ -12623,7 +12623,7 @@ Index
 
 ---
 
-<!-- page 321 -->
+<!-- page 315 -->
 
 image 15, 39, 63, 67, 69, 77, 98, 136, 145–146,
 148–149, 154, 161, 176, 180, 184, 244, 272, 285
@@ -12721,7 +12721,7 @@ Index
 
 ---
 
-<!-- page 322 -->
+<!-- page 316 -->
 
 lexicographic product 27, 139, 219, 230,
 234–235, 263
@@ -12823,7 +12823,7 @@ Index
 
 ---
 
-<!-- page 323 -->
+<!-- page 317 -->
 
 open-collaborative 231, 236, 248
 operationalisation 215, 265
@@ -12922,7 +12922,7 @@ Index
 
 ---
 
-<!-- page 324 -->
+<!-- page 318 -->
 
 search 270
 search action 138, 140, 142–143
@@ -13026,7 +13026,7 @@ Index
 
 ---
 
-<!-- page 325 -->
+<!-- page 319 -->
 
 trend study 266
 typesetting 25, 64, 70, 122–123, 128
