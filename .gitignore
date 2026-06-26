@@ -71,3 +71,8 @@ RussianTranslation/research/merge_*.md
 RussianTranslation/research/mw_noun_link.tsv
 RussianTranslation/research/affix_explorer.fragment.html
 RussianTranslation/research/dsg.json
+
+# large local-only reference sources (book scans/PDFs behind research citations,
+# e.g. literature/Tubb-ScholasticSans-2007.pdf for the Renou nominal-style note) —
+# never versioned; keep on the run machine only
+literature/
