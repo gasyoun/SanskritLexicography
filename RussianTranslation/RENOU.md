@@ -121,7 +121,9 @@ p. 94) and **`bhāṣya`** = commentary language (the lead of Ch. IV, p. 133, wi
 own grammar), which fits none of the five. The verified book structure is in
 [`../../VisualDCS/docs/Renou_1956_structure.md`](../../VisualDCS/docs/Renou_1956_structure.md);
 the full design (orthogonal, multi-label, ~20-register lattice, combined detectors) is
-in [`RENOU_SUBSECTIONS_PLAN.md`](RENOU_SUBSECTIONS_PLAN.md).
+in [`RENOU_SUBSECTIONS_PLAN.md`](RENOU_SUBSECTIONS_PLAN.md). The **full catalog of all 20
+registers** (Renou subsection + page, coverage, detector route) is in
+[`RENOU_REGISTERS.md`](RENOU_REGISTERS.md).
 
 **Built — two routes (additive; the state axis is unchanged).** Every entry carries an
 orthogonal **`renou_register`** + `renou_register_provenance`:
