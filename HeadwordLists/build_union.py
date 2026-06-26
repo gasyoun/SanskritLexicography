@@ -145,7 +145,12 @@ def main():
            "**confirm by hand**, ranked `confidence` high→low with `n_shared_dicts` and "
            "`masc_gender`. **High** = masc is `mfn` (the feminine is genuinely its); **low** = "
            "masc `m`-only, likely a distinct lexeme (`āśā` \"hope\" ≠ feminine of `āśa` "
-           "\"corner\"). Review high first.", "",
+           "\"corner\"). Review high first.",
+           "- [`union/low_candidates_screened.tsv`](union/low_candidates_screened.tsv) — the "
+           "**426 low** candidates pre-screened with their MW glosses (via "
+           "[`screen_candidates.py`](screen_candidates.py)): **419 likely-distinct** (reject — "
+           "`ārā` awl vs `āra` brass) and **7 MAYBE-related** to eyeball (`tālikā`/`tālika` "
+           "same gloss). Cuts the low-set review from 426 to ~7.", "",
            "**Caveats.** The fold is deliberately split: only the unambiguous **`-inī`→`-in`** "
            "(gender-confirmed) is applied automatically; `-ā`/`-ī` are left as **candidates** "
            "because a feminine `-ā` noun often shares a stem with an unrelated masculine `-a` "

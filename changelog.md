@@ -9,6 +9,16 @@ then **cut a new version every time the changelog is updated** (promote
 
 ## [Unreleased]
 
+## [0.0.22] - 2026-06-26
+
+### Added — gloss pre-screen of the low-confidence fold candidates
+- [`screen_candidates.py`](HeadwordLists/screen_candidates.py) pulls the short **MW gloss** for
+  both forms of each of the 426 low-confidence `-ā/-ī` fold candidates →
+  [`union/low_candidates_screened.tsv`](HeadwordLists/union/low_candidates_screened.tsv). Result:
+  **419 likely-distinct** (reject at a glance — `ārā` "awl" vs `āra` "brass"; `īṣā` "carriage-pole"
+  vs `īṣa` "the month Āśvina") and **7 MAYBE-related** to eyeball (`tālikā`/`tālika` same gloss;
+  `adharmā`/`adharma`). Cuts the editor's low-set review from 426 to ~7; the gloss is the first MW
+  sense (text after `</lex>`, before the first `<ls>` citation, etymology stripped).
 ## [0.0.21] - 2026-06-26
 
 ### Changed — union now covers all 15 dicts + fold candidates ranked
