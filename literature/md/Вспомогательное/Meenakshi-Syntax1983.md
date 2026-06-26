@@ -1,9 +1,9 @@
 # Meenakshi-Syntax1983
 
-**Source:** `Meenakshi-Syntax1983.pdf`
-**Location:** Вспомогательное/
-**Size:** 6649811 bytes
+**Source:** `Meenakshi-Syntax1983.pdf`  
+**Format:** PDF  
+**Size:** 6.3 MB
 
-## Reference
-Supporting material for lexicography and syntax studies.
+---
 
+> **Note:** Scanned image PDF (121 pages, avg 0 chars/page). Full text requires OCR (Tesseract/ABBYY).
