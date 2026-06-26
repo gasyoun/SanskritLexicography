@@ -1,6 +1,6 @@
 # Measuring the discretion-screen: a metalanguage-relative method for detecting lexicographic euphemism — with the Sanskrit *obscaena Latine* (eleven Cologne dictionaries) as case study
 
-**Mārcis Gasūns** · ORCID [0000-0003-4513-884X](https://orcid.org/0000-0003-4513-884X) · *[affiliation to confirm]*
+**Mārcis Gasūns** · independent researcher · gasyoun@ya.ru · ORCID [0000-0003-4513-884X](https://orcid.org/0000-0003-4513-884X)
 
 **A36 · research note / short communication · draft 2026-06-26 · target: *Beiträge zur Geschichte der Sprachwissenschaft* (Nodus Publikationen, Münster; ISSN 0939-2815; eds. G. Haßler & A. Rüter) — English-language submission**
 
