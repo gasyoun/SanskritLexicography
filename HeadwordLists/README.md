@@ -95,9 +95,9 @@ list is mirrored from the `sanskrit-lexicon/CORRECTIONS` repo.
 | File | What it is |
 |---|---|
 | [Catalan-Pujol/61267-Sanskrit-Catalan-Words-List.txt](Catalan-Pujol/61267-Sanskrit-Catalan-Words-List.txt) | The raw lemma spine — 61,266 lines, **accented IAST with `√`-roots, Vedic udātta, and Pujol's compound-segmenting hyphens**, UTF-8 **with BOM**. |
-| [Catalan-Pujol/Sanskrit-Catalan-Wordlist-vs-Cologne.md](Catalan-Pujol/Sanskrit-Catalan-Wordlist-vs-Cologne.md) | The analysis: the list is ≈ a subset of Monier-Williams (**MW alone covers 88.5 %**; 89.9 % cumulative with PW; ~89 % overall match). Documents the two transcoding traps (display-added line numbers; `ś`=s+U+0301 accent collision). |
+| [Catalan-Pujol/Sanskrit-Catalan-Wordlist-vs-Cologne.md](Catalan-Pujol/Sanskrit-Catalan-Wordlist-vs-Cologne.md) | The analysis. **Dictionary axis** (§2–4): the list is ≈ a subset of Monier-Williams (**MW alone covers 88.5 %**; 91 % with all 15 dicts). **Corpus axis** (§5, vs DCS): only **46.4 %** is attested in the DCS corpus — **44.9 % is dictionary-listed but corpus-unattested** ("dark matter"), and just 0.3 % is corpus-attested with no CDSL entry (mostly lemmatisation drift). Also documents the two transcoding traps (display-added line numbers; `ś`=s+U+0301 accent collision). |
 | [Catalan-Pujol/Catalan-uncovered-by-CDSL.txt](Catalan-Pujol/Catalan-uncovered-by-CDSL.txt) + [Catalan-uncovered/](Catalan-Pujol/Catalan-uncovered/) | The ~4.7k lemmas no CDSL dictionary covers, bucketed (simple / compound / root / prefixed-root / suspect-char). |
-| `coverage_by_dict.py`, `match_rate.py`, `make_uncovered_lists.py` | The analysis scripts (repo-portable; IAST→SLP1 via [`sanskrit-util`](https://github.com/sanskrit-lexicon/sanskrit-util)). |
+| `coverage_by_dict.py`, `match_rate.py`, `make_uncovered_lists.py`, `coverage_vs_dcs.py` | The analysis scripts (repo-portable; IAST→SLP1 via [`sanskrit-util`](https://github.com/sanskrit-lexicon/sanskrit-util); `coverage_vs_dcs.py` cross-tabs dictionary coverage × DCS corpus attestation using `VisualDCS/dcs_lemma_summary.json`). |
 
 > ⚠️ Unlike the `key1`/`key2` files here, this list is **accented IAST**, not SLP1,
 > and carries an editorial compound-segmentation layer absent from any CDSL key —
