@@ -35,6 +35,26 @@ def field_set(path, tag):
     txt = open(path, encoding="utf-8").read()
     return set(m.group(1) for m in re.finditer(r'<%s>([^<]*)' % tag, txt))
 
+def key2_forms(path):
+    """Current <k2> headword forms as clean SLP1 (the print/citation form: keeps
+    `/` accent, `-`, `(...)`, `*`, `˚`). The capture stops at the `¦` headword
+    separator / next tag / newline; `{#..#}` markup is stripped; comma-lists are
+    split into individual forms. This recovers clean lemmas where a naïve
+    `<k2>([^<]*)` over-captures entry body text or compound blobs."""
+    txt = open(path, encoding="utf-8").read()
+    out = set()
+    for m in re.finditer(r'<k2>([^<¦\n]*)', txt):
+        v = m.group(1).replace('{#', '').replace('#}', '')
+        for part in v.split(','):
+            p = part.strip()
+            if p and len(p) <= 80 and '“' not in p:
+                out.add(p)
+    return out
+
+def now_set(src, kt):
+    """current key set for a dict source: raw <k1> for key1, clean key2_forms for key2."""
+    return field_set(src, "k1") if kt == "1" else key2_forms(src)
+
 # SLP1 Sanskrit (varṇa-krama) collation, to match the committed snapshots' order
 # (vowels incl. vocalic ṛ/ḷ, then anusvāra/visarga, then the consonant series).
 _SLP1_ORDER = "aAiIuUfFxXeEoOMHkKgGNcCjJYwWqQRtTdDnpPbBmyrlvSzshL"
@@ -56,7 +76,7 @@ def main():
         if not src:
             rows.append((f, len(then), None, None, None, None, None,
                          "no csl-orig source (PD not in csl-orig)")); continue
-        now = field_set(src, "k1" if kt == "1" else "k2")
+        now = now_set(src, kt)
         added, removed = now - then, then - now
         kept = len(then) - len(removed)
         overlap = 100 * kept / max(1, len(then))
@@ -94,9 +114,11 @@ def main():
           "- **growth** = (now − then) / then. **overlap** = share of the *then* keys still present now.",
           "- **comparable** — the committed list and the live field share key format, so "
           "`added`/`removed`/`growth` are genuine headword changes.",
-          "- **format-migrated** — the committed `<k2>` snapshot is in the *legacy Cologne "
-          "numeric transliteration* (`am2s4a` = aṃśa) while csl-orig is now SLP1; the raw diff "
-          "is ~100 % and **not** a real headword change. Re-transcoding is needed to compare.",
+          "- **format-migrated** — the committed *2014* `<k2>` snapshot is in the *legacy "
+          "Cologne numeric transliteration* (`am2s4a` = aṃśa) while csl-orig is now SLP1; the raw "
+          "then-vs-now diff is ~100 % and **not** a real headword change. The current key2 has been "
+          "re-extracted as clean SLP1 into [`now-2026/`](now-2026/), so it is usable directly even "
+          "though it can't be line-diffed against the numeric 2014 file.",
           "- **PD** has no csl-orig source locally.",
           "",
           "| List | then (2014) | now (2026) | added | removed | overlap | growth | verdict |",
@@ -113,14 +135,14 @@ def main():
            "## Use cases",
            "",
            "1. **Refresh the snapshots.** Several lists have drifted hard from the 2014 "
-           "extraction (AP 36,030 → 88,867; PWK 131,918 → 151,349); the current key1 lists are "
-           "in [`now-2026/`](now-2026/) (regenerate with `headword_diff.py now`).",
+           "extraction (AP 36,030 → 88,867; PWK 131,918 → 151,349); the current key1 **and** key2 "
+           "lists are in [`now-2026/`](now-2026/) (regenerate with `headword_diff.py now`).",
            "2. **`removed` = a data-loss / correction audit.** Headwords present *then* and "
            "gone *now* are merges, corrections, or accidental deletions — review the "
            "`_diff/<list>.removed.txt` lists to catch anything dropped by mistake.",
-           "3. **Spot which snapshots need re-transcoding.** The `format-migrated` verdict "
-           "flags the `<k2>` lists still in the legacy Cologne numeric transliteration "
-           "(`am2s4a`); they must be transcoded to SLP1 before they can be diffed or reused.",
+           "3. **Print-ready key2.** The 2014 key2 files are legacy numeric transliteration; "
+           "`now-2026/` carries the **current key2 as clean SLP1** (the print/citation form — "
+           "keeps `/` accent, `-`, `(...)`), ready for a printed headword list.",
            "4. **Provenance / dictionary-growth tracking.** The then→now deltas record how "
            "each dictionary's headword count has evolved — useful for citation and for "
            "deciding which `csl-orig` dictionaries have changed enough to re-run downstream "
@@ -146,20 +168,11 @@ def main():
     open(os.path.join(HERE, "NOW_VS_THEN.md"), "w", encoding="utf-8", newline="\n").write("\n".join(md))
     print(f"\nWrote NOW_VS_THEN.md; full per-list diffs in {OUT}/")
 
-def _clean_keyset(keys):
-    """True if this looks like clean headword keys, not <k2> markup/blob fields
-    (SKD/VCP/INM <k2> hold concatenated '{#..#}, ...' compound lists, not lemmas)."""
-    if not keys:
-        return False
-    longest = max(len(k) for k in keys)
-    has_markup = any('{#' in k or ',' in k for k in list(keys)[:5000])
-    return longest <= 60 and not has_markup
-
 def write_now():
-    """Regenerate the *comparable* lists from current csl-orig into now/ with the now
-    count in the filename, Sanskrit-collated. THEN files are kept untouched for
-    comparison. Only clean SLP1 headword fields are emitted — key1 for every dict,
-    plus key2 where the field is clean lemmas (not legacy-numeric / not {#..#} blobs)."""
+    """Regenerate every list from current csl-orig into now-2026/ (filename = now
+    count), Sanskrit-collated. THEN files in then-2014/ are kept untouched for
+    comparison. key1 = raw <k1> (machine key, accent-stripped); key2 = clean SLP1
+    print form via key2_forms() (keeps `/` accent, `-`, `(...)`, `*`, `˚`)."""
     os.makedirs(NOW2026, exist_ok=True)
     files = sorted(f for f in os.listdir(THEN2014)
                    if re.match(r'^[A-Z]+-unique-key[12]-\d+\.txt$', f))
@@ -171,10 +184,7 @@ def write_now():
         src = src_path(d) if d else None
         if not src:
             skipped.append(f"{code} key{kt} (no csl-orig source)"); continue
-        keys = field_set(src, "k1" if kt == "1" else "k2")
-        if not _clean_keyset(keys):
-            skipped.append(f"{code} key{kt} (<k2> not clean lemmas — markup/blob field)"); continue
-        keys = sorted(keys, key=sanskrit_key)
+        keys = sorted(now_set(src, kt), key=sanskrit_key)
         out = os.path.join(NOW2026, f"{code}-unique-key{kt}-{len(keys)}.txt")
         # drop any stale now-2026/ file for this dict+keytype (count may have changed)
         for old in os.listdir(NOW2026):

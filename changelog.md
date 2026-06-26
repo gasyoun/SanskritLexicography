@@ -9,6 +9,23 @@ then **cut a new version every time the changelog is updated** (promote
 
 ## [Unreleased]
 
+## [0.0.17] - 2026-06-26
+
+### Added — key2 re-extracted as SLP1 + a print-readiness checklist
+- **key2 now regenerated as clean SLP1** into [`now-2026/`](HeadwordLists/now-2026/) for
+  every dict (was key1-only). The 2014 key2 files are legacy numeric transliteration; the
+  current `<k2>` is SLP1 but a naïve `<k2>([^<]*)` over-captured entry-body text / `{#..#}`
+  compound blobs (a 64 MB dump). Fixed in `headword_diff.py` (`key2_forms`): stop the
+  capture at the `¦` separator, strip `{#..#}`, split comma-lists → clean **print/citation
+  form** keeping `/` accent, `-`/`—`, `(...)`, `*`, `˚` (e.g. `aMSa—karaRa`; SKD recovered
+  40,817 vs the 64 MB blob). 23 now-2026 files (key1+key2; PD has no source).
+- **[`HeadwordLists/PRINT_READINESS.md`](HeadwordLists/PRINT_READINESS.md)** — consolidates
+  the A–E checks for publishing a printed headword list, with per-dictionary verdicts.
+  **MW/PWG are the print-ready spine** (stable, +0.1 %/−0.0 % since 2014); the gates are
+  human/editorial — **A** clear SanskritSpellCheck's 122 fileable typos (the "don't print
+  known typos" pass, highest value), **B** coverage additions, **C** accents, **E** scope —
+  while **D** (key2 as SLP1) is now closed.
+
 ## [0.0.16] - 2026-06-26
 
 ### Changed — foldered the snapshots (`then-2014/` + `now-2026/`) + % and TOTAL columns
