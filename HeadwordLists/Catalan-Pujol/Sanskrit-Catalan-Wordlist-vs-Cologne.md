@@ -108,10 +108,44 @@ So **less than half** the list is attested in the ~650-text DCS corpus, even tho
 
 ### Reading the numbers
 - **Lexicographic "dark matter" dominates.** **44.9 %** of the list is in a CDSL dictionary yet never appears in the DCS corpus — the Catalan list inherits MW's long tail of rare/Vedic/grammarians' forms that the corpus doesn't sample. The dictionary spine is ~2× larger than corpus usage.
-- **CDSL has almost no corpus-gap here.** Only **177 (0.3 %)** lemmas are DCS-attested but absent from every CDSL dictionary, and inspection shows these are overwhelmingly **DCS lemmatisation-convention differences, not missing words**: DCS lemmatises prefixed/denominative verbs as units (`namaskf` = namas-√kṛ, `vyavasA` = vy-ava-√so, `aByavapad`, `saMpradIp`, `AKya` = ā-√khyā) which CDSL stores under the simple root. They overlap with §4's "prefixed-root / denominative" groups — corroborating that finding from the corpus side.
 - **The 8.7 % "neither" corner** (in no dictionary *and* unattested) is where real noise + hapax compounds concentrate — the best-yield slice to send back to the Catalan editors (it subsumes most of §4's `suspect-char`).
 
-> ⚠️ DCS lemmatisation differs from CDSL headwording (it splits/joins preverbs and resolves sandhi its own way), so corpus *non-attestation* of a key is a soft signal, not proof a word is unused — a few percent is lemmatisation drift, not genuine absence.
+### The 177 "corpus-attested but in no CDSL dictionary" — triaged
+
+This corner is **not all convention** — it splits into convention/morphology vs genuine candidate gaps. Full triage (band-sorted dump reproducible via [`coverage_vs_dcs.py`](coverage_vs_dcs.py)):
+
+| Type | n | Convention or gap? | Examples (Pujol form) |
+|---|---:|---|---|
+| Prefixed / denominative **verb roots** | 41 | **Convention** — DCS lemmatises preverb+root as a unit; CDSL stores under the simple root (§4 "prefixed-root" group, corpus-confirmed) | `namas-√kṛ`, `vy-ava-√sā`, `saṃ-pra-√dhāv`, `abhi-vi-√hā`, `√ilay`; desideratives `saṃjihīrṣā-`, `visisṛkṣā-` |
+| Productive **-tā / -tva / -tara / -tama / -vat** | 9 | **Convention** — productive suffixes CDSL rarely headwords | `niścala-tā-`, `vaiśvātmya-`, `vikṛṣṭa-tara-`, `saṃpanna-tama-`, `aṅga-vat-` |
+| **Bīja / mantra syllables** | 5 | **Convention** — CDSL doesn't headword bare seed-syllables | `laṃ`, `vaṃ`, `yaṃ`, `hiṃ`, `sauḥ` |
+| Solid **compounds** | 29 | **Real, but expected** — MW systematically under-headwords compounds (= §4's bulk) | `gaja-vaktra-`, `amara-kāṣṭha-`, `ahaṃ-pratyaya-`, `arka-parṇī-`, `mahā-kadamba-` |
+| **Simple lexemes / feminine-derivatives / variants** | ~93 | **Mixed** — many are productive feminines of a CDSL base (`ajitā-←ajita`, `vairiṇī-←vairin`, `vyāpinī-←vyāpin`); a genuine residue is corpus-attested **and absent from all 43 CDSL dictionaries** | gaps: `alasāndra-` (cowpea), `kustumburī-` (coriander), `kaṅkolī-`, `udumbarī-`, `kāṇḍekṣukā-`, `eḍikā-`, `pulkasī-`, `ṣiṅga-`, `alavaṇā-` |
+
+- **So: ~55 (31 %) are pure lemmatisation/morphology convention** (verbs + productive suffixes + bīja). The remaining **~122 are nominal lexical content** — 29 unheadworded compounds plus the simple/feminine bucket — and within them a **genuine, corpus-confirmed residue of a few dozen rare lexemes (especially plant/animal/object names)** that no CDSL dictionary carries. *These* are the highest-value candidate additions: unlike §4's dictionary-only uncovered list, they are independently **attested in real texts**.
+
+> ⚠️ DCS lemmatisation differs from CDSL headwording (it splits/joins preverbs and resolves sandhi its own way), so corpus *non-attestation* of a key is a soft signal, not proof a word is unused — a few percent is lemmatisation drift, not genuine absence. Conversely, the verb/bīja/suffix rows above are *not* CDSL gaps.
+
+## 6. Pujol's headword conventions
+
+The list is in **accented IAST with an explicit morphological-analysis layer** — its signature, and the reason ~9 % of keys don't match a flat CDSL `<k1>` even when the word is present. Conventions observed (the normalisation in §2 strips all of these to recover the bare lemma):
+
+| # | Convention | Marker | Example | CDSL equivalent |
+|---|---|---|---|---|
+| 1 | **Verbal root** marked | leading `√` | `√aṃś`, `√hve`, `√ilay` (denominative) | root stored bare; 4,950 entries carry `√`, 1,561 are bare-root headwords |
+| 2 | **Preverb + root** fully segmented, `√` on the final root | hyphen chain + `√` | `vy-ava-√sā`, `saṃ-pra-√dhāv`, `abhi-vi-√hā` | listed under the *simple* root only → these miss `<k1>` |
+| 3 | **Sandhi / analysis resolved** in parentheses | `(…)` after the headword | `saṃ-pra-√ṇaś (√naś)`, `anu-vi-√ṣad (vi2+√sad1)`, `saṃprārth (pra+√arth)` | gives the underlying root CDSL keys on |
+| 4 | **Vedic udātta accent** kept on vowels | acute over a vowel | `áṃśa-`, `viṣā́ṇā-`, `grāma-ṇī́-` | 3,947 accented; CDSL `<k1>` is accent-free → strip before matching |
+| 5 | **Compound members segmented** | internal `-` | `aṃśa-karaṇa-`, `ahaṃ-pratyaya-`, `amara-kāṣṭha-` | CDSL stores compounds solid → join hyphens before matching |
+| 6 | **Nominal stem citation** | trailing `-` | `āmraka-`, `akampita-` (not `āmrakaḥ`) | CDSL `<k1>` is also stem-form |
+| 7 | **Productive suffixes shown as a final member** | `-tā`, `-tva`, `-tara`, `-tama`, `-vat`, `-ka` | `niścala-tā-`, `vikṛṣṭa-tara-`, `aṅga-vat-` | usually not separately headworded by CDSL |
+| 8 | **Feminine / derivative stems** given their own line | `-ā`, `-ī`, `-inī` headwords | `ajitā-`, `vairiṇī-`, `vyāpinī-` | CDSL often subsumes these under the masculine base |
+| 9 | **Homograph numbering** (style inconsistent) | trailing/medial digit | `a-1`, `a2`, `a-3`, `áṃsa-1`, `nirmūlya1 / nirmūlya-2` | CDSL uses its own homonym numbering |
+| 10 | **Bīja / mantra syllables** headworded | bare syllable | `laṃ`, `vaṃ`, `yaṃ`, `hiṃ`, `sauḥ` | CDSL doesn't headword bare seed-syllables |
+| 11 | **Encoding** | UTF-8 **with BOM**; precomposed accented IAST | `ś` = `s` + U+0301 (collides with the acute accent) | csl-orig is BOM-free; normalise length/retroflex *then* transcode *then* strip accents (see the §2 trap) |
+| — | **File-export artifacts** (not a convention) | leading `˜ • § U`, trailing `•`, inline `+ √kṛ` | `§pratikṛti-`, `Upari-√pracch`, `abhi-√p•` | noise to clean up; see §4 group 4 |
+
+**Practical upshot:** conventions 1–3, 5, 7–8 and 10 are exactly why a word present in CDSL can still miss the flat-key match, and why the §5 "corpus-attested, no-dict" corner is dominated by verb/suffix/bīja convention rather than true gaps. To match Pujol against any CDSL or corpus key set: drop `√`, parentheticals and trailing digits; join internal hyphens; transcode IAST→SLP1; then strip SLP1 accents (in that order).
 
 ---
 
