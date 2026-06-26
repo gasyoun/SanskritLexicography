@@ -17,7 +17,7 @@ sys.path.insert(0, os.environ.get("SANSKRIT_UTIL_PY", r"C:/Users/user/Documents/
 import sanskrit_util as su
 ORIG = os.environ.get("CSL_ORIG_V02", r"C:/Users/user/Documents/GitHub/csl-orig/v02")
 DCS = os.environ.get("DCS_LEMMA_SUMMARY", os.path.normpath(os.path.join(HERE, "..", "..", "VisualDCS", "dcs_lemma_summary.json")))
-HUET = os.path.join(HERE, "21562-huet-velthius.txt")
+HUET = os.path.join(HERE, "then-2014", "21562-huet-velthius.txt")
 DICTS = ['mw', 'pw', 'pwg', 'mw72', 'ap90', 'cae', 'yat', 'wil', 'bur', 'gra', 'bor', 'vcp', 'shs', 'ben', 'mwe']
 
 # Huet VH (Velthuis) -> IAST, longest tokens first (greedy left-to-right).

@@ -9,6 +9,19 @@ then **cut a new version every time the changelog is updated** (promote
 
 ## [Unreleased]
 
+## [0.0.16] - 2026-06-26
+
+### Changed — foldered the snapshots (`then-2014/` + `now-2026/`) + % and TOTAL columns
+- **Dated the snapshots.** The committed headword lists were verified (git) to have been
+  extracted **2014-10-05** ("Cologne headwords"), so all 31 root `*.txt` now live in
+  [`HeadwordLists/then-2014/`](HeadwordLists/then-2014/), and the current regeneration in
+  [`HeadwordLists/now-2026/`](HeadwordLists/now-2026/) (was `now/`). Paths updated across
+  the README, the Huet doc, and `huet_coverage.py`.
+- **`NOW_VS_THEN.md` gains a `growth %` column and a TOTAL row.** Net change per list
+  (e.g. **AP +146.6 %**, PWK +14.7 %, MW +0.1 %) and the aggregate over the 9 comparable
+  lists: **605,813 → 733,617 (+21.1 %)**; grand total of all 26 snapshots' then-counts =
+  1,721,983.
+
 ## [0.0.15] - 2026-06-26
 
 ### Added — `HeadwordLists/now/` current regeneration of the key1 snapshots

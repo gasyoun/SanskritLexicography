@@ -1,43 +1,47 @@
-# HeadwordLists — now vs then
+# HeadwordLists — now (2026) vs then (2014)
 
-Each `*-unique-key{1,2}-N.txt` is a snapshot whose filename count `N` is its line count at generation time ("then"). This compares each against the **current** csl-orig ("now"), regenerating the same field (`<k1>`/`<k2>`). Reproduce with [`headword_diff.py`](headword_diff.py); full word-level diffs land in `_diff/`.
+Each `*-unique-key{1,2}-N.txt` in [`then-2014/`](then-2014/) is a snapshot whose filename count `N` is its line count when extracted (first committed **2014-10-05**, "Cologne headwords"). This compares each against the **current** csl-orig ("now", 2026), regenerating the same field (`<k1>`/`<k2>`). The current key1 lists are written to [`now-2026/`](now-2026/). Reproduce with [`headword_diff.py`](headword_diff.py); full word-level diffs land in `_diff/`.
 
-- **comparable** — the committed list and the live field share key format, so `added`/`removed` are genuine headword changes.
+- **growth** = (now − then) / then. **overlap** = share of the *then* keys still present now.
+- **comparable** — the committed list and the live field share key format, so `added`/`removed`/`growth` are genuine headword changes.
 - **format-migrated** — the committed `<k2>` snapshot is in the *legacy Cologne numeric transliteration* (`am2s4a` = aṃśa) while csl-orig is now SLP1; the raw diff is ~100 % and **not** a real headword change. Re-transcoding is needed to compare.
 - **PD** has no csl-orig source locally.
 
-| List | then | now | added | removed | overlap | verdict |
-|---|--:|--:|--:|--:|--:|---|
-| [AP-unique-key1-36030.txt](AP-unique-key1-36030.txt) | 36030 | 88867 | 53740 | 903 | 97.5% | comparable |
-| [AP-unique-key2-36704.txt](AP-unique-key2-36704.txt) | 36126 | 88970 | 53773 | 929 | 97.4% | comparable |
-| [BHS-unique-key2-17784.txt](BHS-unique-key2-17784.txt) | 17784 | 17810 | 17793 | 17767 | 0.1% | format-migrated (legacy numeric → SLP1); raw diff not meaningful |
-| [BUR-unique-key2-19238.txt](BUR-unique-key2-19238.txt) | 19238 | 19598 | 19598 | 19238 | 0.0% | format-migrated (legacy numeric → SLP1); raw diff not meaningful |
-| [CAE-unique-key2-39256.txt](CAE-unique-key2-39256.txt) | 39256 | 39296 | 35152 | 35112 | 10.6% | format-migrated (legacy numeric → SLP1); raw diff not meaningful |
-| [CCS-unique-key2-29317.txt](CCS-unique-key2-29317.txt) | 29317 | 29474 | 28317 | 28160 | 3.9% | format-migrated (legacy numeric → SLP1); raw diff not meaningful |
-| [GRA-unique-key1-10315.txt](GRA-unique-key1-10315.txt) | 10315 | 11108 | 975 | 182 | 98.2% | comparable |
-| [GRA-unique-key2-10526.txt](GRA-unique-key2-10526.txt) | 10526 | 12481 | 12422 | 10467 | 0.6% | format-migrated (legacy numeric → SLP1); raw diff not meaningful |
-| [INM-unique-key2-9466.txt](INM-unique-key2-9466.txt) | 9466 | 9919 | 8346 | 7893 | 16.6% | format-migrated (legacy numeric → SLP1); raw diff not meaningful |
-| [MD-unique-key2-20748.txt](MD-unique-key2-20748.txt) | 20108 | 20243 | 19822 | 19687 | 2.1% | format-migrated (legacy numeric → SLP1); raw diff not meaningful |
-| [MW-unique-key1-193978.txt](MW-unique-key1-193978.txt) | 193978 | 194084 | 754 | 648 | 99.7% | comparable |
-| [MW-unique-key2-198220.txt](MW-unique-key2-198220.txt) | 198220 | 198489 | 110368 | 110099 | 44.5% | format-migrated (legacy numeric → SLP1); raw diff not meaningful |
-| [MW-unique-key2-198231.txt](MW-unique-key2-198231.txt) | 198231 | 198489 | 110388 | 110130 | 44.4% | format-migrated (legacy numeric → SLP1); raw diff not meaningful |
-| [PD-unique-key1-104936.txt](PD-unique-key1-104936.txt) | 104935 |  |  |  |  | no csl-orig source (PD not in csl-orig) |
-| [PD-unique-key2-104941.txt](PD-unique-key2-104941.txt) | 104941 |  |  |  |  | no csl-orig source (PD not in csl-orig) |
-| [PWG-unique-key1-106085.txt](PWG-unique-key1-106085.txt) | 106085 | 106082 | 149 | 152 | 99.9% | comparable |
-| [PWG-unique-key2-110402.txt](PWG-unique-key2-110402.txt) | 110402 | 119445 | 116080 | 107037 | 3.0% | format-migrated (legacy numeric → SLP1); raw diff not meaningful |
-| [PWK-unique-key1-131918.txt](PWK-unique-key1-131918.txt) | 131918 | 151349 | 19617 | 186 | 99.9% | comparable |
-| [PWK-unique-key2-133741.txt](PWK-unique-key2-133741.txt) | 133741 | 167351 | 162388 | 128778 | 3.7% | format-migrated (legacy numeric → SLP1); raw diff not meaningful |
-| [SCH-unique-key2-28495.txt](SCH-unique-key2-28495.txt) | 28495 | 29118 | 29118 | 28495 | 0.0% | format-migrated (legacy numeric → SLP1); raw diff not meaningful |
-| [SKD-unique-key1-40551.txt](SKD-unique-key1-40551.txt) | 40551 | 40817 | 807 | 541 | 98.7% | comparable |
-| [SKD-unique-key2-40595.txt](SKD-unique-key2-40595.txt) | 40595 | 42529 | 42529 | 40595 | 0.0% | format-migrated (legacy numeric → SLP1); raw diff not meaningful |
-| [VCP-unique-key1-47107.txt](VCP-unique-key1-47107.txt) | 47107 | 48636 | 2514 | 985 | 97.9% | comparable |
-| [VCP-unique-key2-47145.txt](VCP-unique-key2-47145.txt) | 47145 | 50135 | 50135 | 47145 | 0.0% | format-migrated (legacy numeric → SLP1); raw diff not meaningful |
-| [VEI-unique-key1-3703.txt](VEI-unique-key1-3703.txt) | 3703 | 3704 | 18 | 17 | 99.5% | comparable |
-| [VEI-unique-key2-3770.txt](VEI-unique-key2-3770.txt) | 3770 | 3722 | 3722 | 3770 | 0.0% | format-migrated (legacy numeric → SLP1); raw diff not meaningful |
+| List | then (2014) | now (2026) | added | removed | overlap | growth | verdict |
+|---|--:|--:|--:|--:|--:|--:|---|
+| [AP-unique-key1-36030.txt](then-2014/AP-unique-key1-36030.txt) | 36030 | 88867 | 53740 | 903 | 97.5% | +146.6% | comparable |
+| [AP-unique-key2-36704.txt](then-2014/AP-unique-key2-36704.txt) | 36126 | 88970 | 53773 | 929 | 97.4% | +146.3% | comparable |
+| [BHS-unique-key2-17784.txt](then-2014/BHS-unique-key2-17784.txt) | 17784 | 17810 | 17793 | 17767 | 0.1% | +0.1% | format-migrated (legacy numeric → SLP1); raw diff not meaningful |
+| [BUR-unique-key2-19238.txt](then-2014/BUR-unique-key2-19238.txt) | 19238 | 19598 | 19598 | 19238 | 0.0% | +1.9% | format-migrated (legacy numeric → SLP1); raw diff not meaningful |
+| [CAE-unique-key2-39256.txt](then-2014/CAE-unique-key2-39256.txt) | 39256 | 39296 | 35152 | 35112 | 10.6% | +0.1% | format-migrated (legacy numeric → SLP1); raw diff not meaningful |
+| [CCS-unique-key2-29317.txt](then-2014/CCS-unique-key2-29317.txt) | 29317 | 29474 | 28317 | 28160 | 3.9% | +0.5% | format-migrated (legacy numeric → SLP1); raw diff not meaningful |
+| [GRA-unique-key1-10315.txt](then-2014/GRA-unique-key1-10315.txt) | 10315 | 11108 | 975 | 182 | 98.2% | +7.7% | comparable |
+| [GRA-unique-key2-10526.txt](then-2014/GRA-unique-key2-10526.txt) | 10526 | 12481 | 12422 | 10467 | 0.6% | +18.6% | format-migrated (legacy numeric → SLP1); raw diff not meaningful |
+| [INM-unique-key2-9466.txt](then-2014/INM-unique-key2-9466.txt) | 9466 | 9919 | 8346 | 7893 | 16.6% | +4.8% | format-migrated (legacy numeric → SLP1); raw diff not meaningful |
+| [MD-unique-key2-20748.txt](then-2014/MD-unique-key2-20748.txt) | 20108 | 20243 | 19822 | 19687 | 2.1% | +0.7% | format-migrated (legacy numeric → SLP1); raw diff not meaningful |
+| [MW-unique-key1-193978.txt](then-2014/MW-unique-key1-193978.txt) | 193978 | 194084 | 754 | 648 | 99.7% | +0.1% | comparable |
+| [MW-unique-key2-198220.txt](then-2014/MW-unique-key2-198220.txt) | 198220 | 198489 | 110368 | 110099 | 44.5% | +0.1% | format-migrated (legacy numeric → SLP1); raw diff not meaningful |
+| [MW-unique-key2-198231.txt](then-2014/MW-unique-key2-198231.txt) | 198231 | 198489 | 110388 | 110130 | 44.4% | +0.1% | format-migrated (legacy numeric → SLP1); raw diff not meaningful |
+| [PD-unique-key1-104936.txt](then-2014/PD-unique-key1-104936.txt) | 104935 |  |  |  |  |  | no csl-orig source (PD not in csl-orig) |
+| [PD-unique-key2-104941.txt](then-2014/PD-unique-key2-104941.txt) | 104941 |  |  |  |  |  | no csl-orig source (PD not in csl-orig) |
+| [PWG-unique-key1-106085.txt](then-2014/PWG-unique-key1-106085.txt) | 106085 | 106082 | 149 | 152 | 99.9% | -0.0% | comparable |
+| [PWG-unique-key2-110402.txt](then-2014/PWG-unique-key2-110402.txt) | 110402 | 119445 | 116080 | 107037 | 3.0% | +8.2% | format-migrated (legacy numeric → SLP1); raw diff not meaningful |
+| [PWK-unique-key1-131918.txt](then-2014/PWK-unique-key1-131918.txt) | 131918 | 151349 | 19617 | 186 | 99.9% | +14.7% | comparable |
+| [PWK-unique-key2-133741.txt](then-2014/PWK-unique-key2-133741.txt) | 133741 | 167351 | 162388 | 128778 | 3.7% | +25.1% | format-migrated (legacy numeric → SLP1); raw diff not meaningful |
+| [SCH-unique-key2-28495.txt](then-2014/SCH-unique-key2-28495.txt) | 28495 | 29118 | 29118 | 28495 | 0.0% | +2.2% | format-migrated (legacy numeric → SLP1); raw diff not meaningful |
+| [SKD-unique-key1-40551.txt](then-2014/SKD-unique-key1-40551.txt) | 40551 | 40817 | 807 | 541 | 98.7% | +0.7% | comparable |
+| [SKD-unique-key2-40595.txt](then-2014/SKD-unique-key2-40595.txt) | 40595 | 42529 | 42529 | 40595 | 0.0% | +4.8% | format-migrated (legacy numeric → SLP1); raw diff not meaningful |
+| [VCP-unique-key1-47107.txt](then-2014/VCP-unique-key1-47107.txt) | 47107 | 48636 | 2514 | 985 | 97.9% | +3.2% | comparable |
+| [VCP-unique-key2-47145.txt](then-2014/VCP-unique-key2-47145.txt) | 47145 | 50135 | 50135 | 47145 | 0.0% | +6.3% | format-migrated (legacy numeric → SLP1); raw diff not meaningful |
+| [VEI-unique-key1-3703.txt](then-2014/VEI-unique-key1-3703.txt) | 3703 | 3704 | 18 | 17 | 99.5% | +0.0% | comparable |
+| [VEI-unique-key2-3770.txt](then-2014/VEI-unique-key2-3770.txt) | 3770 | 3722 | 3722 | 3770 | 0.0% | -1.3% | format-migrated (legacy numeric → SLP1); raw diff not meaningful |
+| **TOTAL (comparable, 9 lists)** | **605813** | **733617** | **132347** | **4543** | — | **+21.1%** | — |
+
+_Grand total of all 26 snapshots' *then* line counts: **1721983**._
 
 ## Use cases
 
-1. **Refresh the snapshots.** Several lists have drifted hard from current csl-orig (AP 36,030 → 88,701; PWK 131,918 → 151,349); regenerate the committed `*-unique-key1-*.txt` to current counts when an up-to-date headword set is needed.
+1. **Refresh the snapshots.** Several lists have drifted hard from the 2014 extraction (AP 36,030 → 88,867; PWK 131,918 → 151,349); the current key1 lists are in [`now-2026/`](now-2026/) (regenerate with `headword_diff.py now`).
 2. **`removed` = a data-loss / correction audit.** Headwords present *then* and gone *now* are merges, corrections, or accidental deletions — review the `_diff/<list>.removed.txt` lists to catch anything dropped by mistake.
 3. **Spot which snapshots need re-transcoding.** The `format-migrated` verdict flags the `<k2>` lists still in the legacy Cologne numeric transliteration (`am2s4a`); they must be transcoded to SLP1 before they can be diffed or reused.
 4. **Provenance / dictionary-growth tracking.** The then→now deltas record how each dictionary's headword count has evolved — useful for citation and for deciding which `csl-orig` dictionaries have changed enough to re-run downstream analyses (e.g. the Catalan/Huet coverage studies).

@@ -1,6 +1,6 @@
 # Huet / INRIA Heritage word list vs the Cologne (CDSL) wordlists + DCS
 
-**File analysed:** [`21562-huet-velthius.txt`](21562-huet-velthius.txt) — 21,562 lines, UTF-8 **with BOM**, in Huet's **VH (Velthuis) transliteration**.
+**File analysed:** [`21562-huet-velthius.txt`](then-2014/21562-huet-velthius.txt) — 21,562 lines, UTF-8 **with BOM**, in Huet's **VH (Velthuis) transliteration**.
 **Source work:** the stem list of the **INRIA "Sanskrit Heritage" reader** ([sanskrit.inria.fr/DICO/reader.fr.html](https://sanskrit.inria.fr/DICO/reader.fr.html), Gérard Huet) — an **older export**, non-Cologne.
 **Date:** 2026-06-26 · script: [`huet_coverage.py`](huet_coverage.py)
 
