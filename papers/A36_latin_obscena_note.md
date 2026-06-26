@@ -28,9 +28,13 @@ mentula, paedicare, mingere, stercus/cacare*) and a large **clinical Latin** def
 in all, concentrated in the German Petersburg core (**875 in PWG/PW/SCH**: 79 vulgar, 796
 clinical), and document a **gradient of editorial candour by audience**: the German
 dictionaries veil in Latin only; **Monier-Williams gives both** ("to have sexual
-intercourse, *futuere*"); **Apte 1890, an Indian lexicographer writing for Indian students,
-drops the screen entirely** — zero Latin veils, open English ("to cohabit", "excrement",
-"dung") throughout. A comparative-philology sub-study shows the screen is near-total even
+intercourse, *futuere*"); **both Apte editions (1890; Gode–Karve 1957–59), written for an
+Indian readership, drop the obscene screen entirely** — zero *futuere/cunnus/stercus*, open
+English ("to cohabit", "excrement", "dung") for the taboo core (they keep, like all English
+scientific prose, the naturalised Latinate *coitus/penis/vulva*). Among the English
+dictionaries only Monier-Williams and Cappeller use the genuinely obscene Latin; the
+hypothesised Gode–Karve "re-Latinising" does not occur. A comparative-philology sub-study
+shows the screen is near-total even
 for the editors themselves: of the entire obscene vocabulary across five German
 dictionaries, **exactly one entry** (PWG √*yabh*) carries an etymological footnote — and
 it is one of only **seven** comparative-grammar references in all 593 596 lines of PWG.
@@ -122,14 +126,31 @@ Latin-glossed senses per dictionary (one per field per entry):
 | PWK | de | **0** | 10 | 10 | Böhtlingk's abridgment — the screen is *dropped with the bulk* |
 | GRA | de | **0** | 3 | 3 | Grassmann (Rig-Veda only) — the obscene corpus is elsewhere |
 | MW | en | 24 | 370 | 394 | keeps Latin as a learned doublet beside English |
-| AP90 | en | **0** | 199 | 199 | Apte 1890 — **no Latin veil at all**; open English |
-| AP | en | 12 | 279 | 291 | Apte revised — reintroduces some Latin (esp. *stercus/faeces*) |
-| WIL | en | 5 | 218 | 223 | Wilson 1832 |
-| CAE | en | 6 | 49 | 55 | Cappeller (English, *not* Latin-medium) |
+| AP90 | en | 0* | 199 | 199 | Apte 1890 — no *obscene* Latin; open English for the taboo core |
+| AP | en | 12* | 279 | 291 | Apte (Gode–Karve 1957–59) — the 12 are *faeces* (see below) |
+| WIL | en | 5* | 218 | 223 | Wilson 1832 — the 5 are *faeces*, not obscene Latin |
+| CAE | en | 6 | 49 | 55 | Cappeller — incl. *futuere* ×2 (English, *not* Latin-medium) |
 | BOP | la | 24 | 30 | 54 | Bopp's *Glossarium* — all-Latin; "vulgar" here is not a veil |
 | **Total** | | **150** | **1 954** | **2 104** | |
 
-Four results fall out of the wider sweep:
+> **\*Register is metalanguage-relative — read the English vulgar column with care.** The
+> VULGAR/CLINICAL split is calibrated for a *vernacular* dictionary (Adams' criterion: which
+> Latin words are obscene *in Latin*). But a Latinate medical word that screens in German
+> (*coitus, penis, faeces*) is *naturalised* in English scientific prose — *faeces* is even
+> the ordinary British spelling. So the English "vulgar" counts above are inflated by
+> naturalised *faeces*. The honest veil-test for an English dictionary is the **truly
+> obscene Latin core** no English author would write except to screen — *futuere, cunnus,
+> mentula, stercus, paedicare, mingere* — which isolates a sharp result:
+
+| English dict | obscene-Latin core | screens? |
+|---|---|---|
+| **MW** (1899) | *futuere* ×4, *mingere* ×1 | **yes** |
+| **CAE** (Cappeller 1891) | *futuere* ×2 | **yes** (mildly) |
+| **AP90** (Apte 1890) | — none — | no |
+| **AP** (Gode–Karve 1957–59) | — none — | no |
+| **WIL** (Wilson 1832) | — none — | no |
+
+Five results fall out of the wider sweep:
 
 - **The abridgment drops the veil with the bulk.** PWK (Böhtlingk's one-volume *kürzere
   Fassung*) has **zero** vulgar veils and ten clinical senses — the obscene vocabulary is
@@ -138,16 +159,22 @@ Four results fall out of the wider sweep:
   √*yabh* entry at all**: the root is unattested in the Ṛgveda. The obscene Vedic material
   (the Aśvamedha dialogue, AV 20's *khila* hymns) sits in the *Yajur-* and *Atharvaveda*,
   outside Grassmann's scope. The screen tracks the source corpus, not just the editor.
-- **Apte 1890 is the candour benchmark.** AP90 carries **zero** Latin veils; where the
-  Germans write *stercus* and *futuere* it writes "excrement", "dung", "to cohabit" in plain
-  English (98 lines use open English *excrement/dung*). Writing in English for an Indian
-  student readership, Apte simply does not screen. The *revised* Apte (AP) reintroduces a
-  little Latin (12 vulgar senses, mostly *stercus/faeces*), a small step back toward the
-  European register.
+- **The veil is an English option too, but only for some.** Among the English dictionaries
+  only **Monier-Williams** and **Cappeller** reach for the genuine obscene Latin
+  (*futuere*); **both Apte editions and Wilson never do**, glossing √*yabh* "to cohabit" and
+  scatology as "excrement / dung / ordure" in plain English. So the screen does not split
+  cleanly German-vs-English — it splits by editor and intended reader.
+- **No Gode–Karve "re-Latinising".** A natural hypothesis — that the 1957–59 revision
+  (P. K. Gode & C. G. Karve) re-introduced the European Latin screen — is **false** for the
+  obscene core: the revised *AP* carries the same **zero** *futuere/cunnus/stercus* as the
+  1890 *AP90*, and glosses √*yabh* identically ("to cohabit"). The only edition-to-edition
+  drift is orthographic and clinical — *AP90*'s English "feces/fæces" becomes the classical
+  spelling *faeces*, and clinical Latinate terms tick up modestly (*coitus* 23→38, *penis*
+  33→38) — not a return of the veil.
 - **The all-Latin dictionary is the limiting case.** In Bopp's *Glossarium* (BOP) the whole
   gloss is Latin, so *futuere*/*cunnus* are not a discretion-screen but the ordinary
-  metalanguage; the register distinction that organises this study collapses, and BOP is
-  reported only for completeness.
+  metalanguage; the register distinction that organises this study collapses. BOP is
+  therefore not a counter-example but a **positive control** — see §5b.
 
 ## 4. The vulgar veil — full list (79 senses, 52 headwords)
 
@@ -274,16 +301,22 @@ reveals a gradient of candour. The verified worked example, √*yabh*:
 |---|---|---|
 | PWG / PW / SCH | German scholars, 1855–1928 | **futuere** (Latin only) |
 | MW | Anglophone scholars, 1899 | "to have sexual intercourse, **futuere**" (English **+** Latin) |
+| CAE | Anglophone scholars, 1891 | (uses *futuere* elsewhere; mild screen) |
 | AP90 | Indian students, 1890 | "To **cohabit**" (open English, no screen) |
+| AP | Indian students, 1957–59 | "To **cohabit**, have sexual intercourse with" (open English) |
 
-The pattern generalises: Monier-Williams keeps the Latin as a learned doublet *beside* an
-English gloss (belt and suspenders); **Apte, writing in English for an Indian readership,
-mostly drops the screen entirely**. The discretion-screen is a feature of the European
-philological apparatus, and it relaxes as the intended readership shifts away from the
-European drawing room.
+The pattern is **not** a simple German-veils / English-open split. The screen is an option in
+both metalanguages, taken up by editor and intended reader: the German Petersburg school
+uses it as a rule, **Monier-Williams** keeps the Latin as a learned doublet beside English,
+and **Cappeller** reaches for *futuere* twice — while **both Apte editions and Wilson never
+screen the obscene core**, glossing √*yabh* "to cohabit" in plain English. The veil is a
+feature of the *European philological drawing room*; it is absent precisely from the
+dictionaries made for Indian students, and (see §3a) it does **not** return in the
+Gode–Karve revision.
 
-(The automated MW/AP90 flag in the pipeline is a presence-of-Latin heuristic and should be
-read as indicative; the √*yabh* row above was confirmed by reading the entries.)
+(The automated MW/AP90 flag in the extraction is a presence-of-Latin heuristic and is read
+through the obscene-core test of §3a; the √*yabh* rows above were confirmed by reading the
+entries.)
 
 ## 5a. The one footnote behind the curtain — comparative philology and the obscene root
 
@@ -304,6 +337,38 @@ Indo-European etymology). That √*yabh* is one of those seven is the point — 
 where Böhtlingk reached past the Sanskrit into comparative grammar is an obscene root, and
 the reach is itself encrypted in Latin and a Latin-script Slavic siglum.
 
+## 5b. Positive control — what the screen actually suppressed (Bopp's *Glossarium*)
+
+Because Bopp's *Glossarium Sanscritum* (BOP, 1830–47) is written *entirely* in Latin, it
+gives the obscene Sanskrit vocabulary **unscreened** — Latin there is the ordinary
+metalanguage, not a discretion device. BOP therefore works as a positive control: it shows
+the full obscene semantic field in plain terms, against which the German screen's
+**selectivity** becomes visible.
+
+Two fields are decisive. BOP glosses Sanskrit "prostitute" words with *meretrix*
+(*bandhakī, gaṇikā, paṇyastrī, puṃścalī, veśyā*) and "violate / rape" words with
+*stuprum / stuprare* (*dhṛṣ, duṣ, mṛś*). **In the German dictionaries these two fields are
+glossed in German, never in Latin** — *gaṇikā* → *Hure / Buhlerin*, *duṣ* → *schänden* —
+and indeed the entire German corpus has **zero** *meretrix* and **zero** *stuprum*. The
+screen was *not* applied here. Why? Because German already had printable words for
+"whore" and "to violate"; it had no printable word for the sexual act, the genitalia, or
+excrement. **The Latin screen maps precisely onto the gaps in the decent German lexicon** —
+it covers *futuere / cunnus / stercus* (where German offered only *ficken / Fotze /
+Scheiße*) and stops exactly where German offered a usable euphemism. Bopp, lacking any
+vernacular to fall back on, Latinises the whole field and so throws that selectivity into
+relief.
+
+| Sanskrit field | Bopp (no screen) | German dicts (PWG/PW) |
+|---|---|---|
+| sexual act (√*yabh*) | *futuere* | *futuere* (Latin — no decent German) |
+| genitalia (*bhaga, meḍhra*) | *vulva, penis* | *vulva, penis* (Latin) |
+| excrement (*viṣ, śakṛt*) | *stercus, excrementum* | *stercus, faeces* (Latin) |
+| **prostitute** (*gaṇikā, veśyā*) | *meretrix* | **German** (*Hure, Buhlerin*) — never Latin |
+| **rape / violate** (*duṣ, dhṛṣ*) | *stuprum, stuprare* | **German** (*schänden*) — never Latin |
+
+The screen, in other words, is not a blanket policy on "indecent meanings"; it is a precise
+patch over the words the editors' own language could not print.
+
 ## 6. Why it matters
 
 1. **Coverage gap for the modern reader.** A learner consulting PWG/SCH for *yabh*,
@@ -321,7 +386,9 @@ the reach is itself encrypted in Latin and a Latin-script Slavic siglum.
 ## 7. Data & reproducibility
 
 - Full dataset: [`A36_latin_obscena.csv`](A36_latin_obscena.csv) (2 104 senses, eleven
-  dictionaries, with a `lang` column for metalanguage).
+  dictionaries, with a `lang` column for metalanguage). The `register` column is the raw,
+  metalanguage-neutral Adams tag; for English dictionaries it should be read through the
+  caveat below (naturalised *faeces/coitus/penis* are not veils there).
 - Extraction is a single pass over the eleven SLP1 source files with the term list,
   binomial/homograph filters, and Adams-based register map described in §2; transliteration
   via [`sanskrit-util`](https://github.com/sanskrit-lexicon/sanskrit-util). The scripts are
@@ -342,3 +409,8 @@ the reach is itself encrypted in Latin and a Latin-script Slavic siglum.
   was additionally vetted entry-by-entry.
 - Schmidt (SCH), PWK and GRA are a supplement, an abridgment and a single-corpus glossary
   respectively, so their proportions are not comparable head-to-head with PWG/PW.
+- **Register is metalanguage-relative** (§3a). The VULGAR/CLINICAL tag is calibrated for a
+  *vernacular* dictionary; in English prose the Latinate *coitus/penis/faeces* are
+  naturalised, so the English "vulgar" counts are read through the obscene-core test
+  (*futuere/cunnus/stercus*), not the raw tag. In Bopp (Latin-medium) the distinction does
+  not apply at all (§5b).
