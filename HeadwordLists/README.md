@@ -27,7 +27,7 @@ Variant patterns:
 |---|---|
 | `{DICT}-fehlerhaft-{N}.txt` | German "erroneous" — entries flagged as problematic. **These hold full XML records, not bare headwords** (see [PWG-fehlerhaft-1661.txt](PWG-fehlerhaft-1661.txt), [PWK-fehlerhaft-2227.txt](PWK-fehlerhaft-2227.txt)). |
 | `SCH-accents-IAST-{N}.txt` | Accented headwords in IAST rather than SLP1 ([SCH-accents-IAST-20247.txt](SCH-accents-IAST-20247.txt)). |
-| `{N}-huet-velthius.txt` | Count as a **prefix**; Velthuis transliteration ([21562-huet-velthius.txt](21562-huet-velthius.txt)). |
+| `{N}-huet-velthius.txt` | Count as a **prefix**; Velthuis transliteration ([21562-huet-velthius.txt](21562-huet-velthius.txt)). **Non-Cologne**: the INRIA "Sanskrit Heritage" reader stem list (Huet). Coverage/corpus analysis: [Huet-INRIA-Wordlist-vs-Cologne.md](Huet-INRIA-Wordlist-vs-Cologne.md). |
 | `mw-apte-mcdonell-hk.txt` | Aggregate cross-dictionary list in **Harvard-Kyoto**, MW ∪ Apte ∪ Macdonell (~202k lines) ([mw-apte-mcdonell-hk.txt](mw-apte-mcdonell-hk.txt)). |
 | `sanhw1.xlsx` | 41 MB binary spreadsheet — **do not open in an editor**; load with a library. |
 
@@ -122,3 +122,7 @@ list is mirrored from the `sanskrit-lexicon/CORRECTIONS` repo.
    across three major dictionary traditions.
 4. [Catalan-Pujol/](Catalan-Pujol/) — external Sanskrit–Catalan wordlist + its
    CDSL-coverage analysis (see subsection above).
+5. [Huet-INRIA-Wordlist-vs-Cologne.md](Huet-INRIA-Wordlist-vs-Cologne.md) — the
+   non-Cologne INRIA Heritage stem list, same coverage/corpus analysis (a control
+   for the Catalan study: 86.2 % CDSL-covered, **60.0 % corpus-attested** vs Pujol's
+   46.4 %).
