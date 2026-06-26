@@ -176,6 +176,53 @@ Five results fall out of the wider sweep:
   metalanguage; the register distinction that organises this study collapses. BOP is
   therefore not a counter-example but a **positive control** — see §5b.
 
+## 3b. The methodological payoff: register is metalanguage-relative
+
+The Adams tag (§2) is a property of *Latin*: it asks whether a word was obscene in Rome.
+But whether a Latin word *functions as a veil* in a dictionary depends on the dictionary's
+**metalanguage** — and the cross-dictionary counts make the two tiers behave in opposite
+directions:
+
+| Field (Latin) | tier | German | English | Latin (BOP) |
+|---|---|---:|---:|---:|
+| *futuere* | **obscene** | 19 | 6 | 0 |
+| *cunnus* | **obscene** | 9 | 0 | 0 |
+| *paedicare* | **obscene** | 1 | 0 | 0 |
+| *mingere* | **obscene** | 3 | 1 | 4 |
+| *stercus / faeces* | scato. | 47 | 39 | 12 |
+| *coitus* | clinical | 461 | 355 | 14 |
+| *vulva* | clinical | 165 | 123 | 3 |
+| *penis* | clinical | 135 | **241** | 3 |
+| *pudenda* | clinical | 20 | **133** | 0 |
+| *semen* | clinical | 12 | **142** | 5 |
+| *testiculi* | clinical | 9 | **100** | 3 |
+| *clitoris* | clinical | 6 | **21** | 0 |
+
+Two opposite signatures:
+
+- **The obscene core is a German speciality.** *futuere/cunnus/paedicare* run 29 in German,
+  6 in English (and those six are confined to MW and Cappeller, §3a), and **0** in Bopp —
+  Bopp does not even reach for *futuere* on the sex act. These are words used *only* to
+  screen; their distribution is the distribution of the screen.
+- **The clinical tier inverts — English uses it *more*.** *penis* (241 vs 135), *pudenda*
+  (133 vs 20), *semen* (142 vs 12), *testiculi* (100 vs 9), *clitoris* (21 vs 6): for every
+  one of these the English dictionaries out-use the German. The reason is not prudery but
+  vocabulary — **English scientific prose is natively Latinate**: *semen, penis, testicle,
+  pudenda* are simply the ordinary English words, requiring no insertion, whereas German has
+  Germanic equivalents (*Same, Glied, Hoden, Scham*) and so a Latin form there is a *marked*
+  choice. A high "clinical-Latin" count in English therefore measures the **English lexicon**,
+  not concealment; the identical count in German measures a **decision**.
+
+Hence the veil-test cannot be the same string-match in both metalanguages. In German, both
+tiers screen (the clinical Latin stands in for an available Germanic word — confirmed in
+§5b, where it stands *alone*, not beside German, 94–98 % of the time). In English, only the
+**obscene core** (*futuere, cunnus, mentula, stercus, paedicare, mingere*) — words no
+anglophone author writes except to avoid the vernacular — is a veil; the naturalised
+clinical Latinate is not. Applying *that* test (and only that test) to the English shelf
+isolates the result of §3a: Monier-Williams and Cappeller screen, the Aptes and Wilson do
+not. Counting raw Latin strings would have buried this under 800-odd naturalised English
+*semen*/*penis* tokens.
+
 ## 4. The vulgar veil — full list (79 senses, 52 headwords)
 
 This is the set in the strong sense of the question: words rendered in obscene Latin
@@ -368,6 +415,53 @@ relief.
 
 The screen, in other words, is not a blanket policy on "indecent meanings"; it is a precise
 patch over the words the editors' own language could not print.
+
+### Screen, not doublet
+
+One might object that the German *coitus* is merely a learned synonym printed *beside* a
+German gloss — a doublet ("Beischlaf, coitus"), not a screen. The entries refute this. For
+each clinical Latin term we counted PWG+PW entries where it stands **alone** versus where a
+German near-synonym co-occurs:
+
+| Latin term | German near-synonym sought | stands **alone** | doublet | screen rate |
+|---|---|---:|---:|---:|
+| *coitus* | Beischlaf / Begattung / Umarmung | 194 | 4 | 98 % |
+| *penis* | Glied / Ruthe / männliches Glied | 89 | 3 | 97 % |
+| *vulva* | Scham / Scheide / Schoß | 71 | 4 | 95 % |
+| *futuere* | beschlafen / begatten | 30 | 2 | 94 % |
+| *stercus / faeces* | Kot / Excremente / Mist | 37 | 10 | 79 % |
+
+For the sexual field the Latin word almost never appears next to a German one — it *replaces*
+it. The few doublets are telling exceptions: the *penis* doublets are the Vedic words
+*kapṛth* and *śephas*, where the philological commentary forced the German out; the *futuere*
+doublets are both *ram* "to take pleasure", glossed in German with the Latin only for the
+crude sense.
+
+### A taboo gradient, not a switch
+
+Combining the doublet rates with the BOP control reveals that the screen has **three
+intensities**, tracking how taboo the concept was in 19th-century bourgeois German and
+whether a printable German word existed:
+
+1. **Sexual act + genitalia — near-absolute screen (94–98 % Latin-alone).** German had no
+   printable word (*ficken, Fotze, Schwanz*), so *futuere / coitus / penis / vulva* stand
+   alone almost without exception.
+2. **Excretion — partial screen (79 %).** Here German *did* have semi-printable words, and
+   the dictionaries use them: PWG glosses √*had* with the blunt German *scheissen*, √*mih*
+   with the doublet *mingere* / *seichen*, and *avaskara, gūtha, uccāra* with German *die
+   Excremente*. Latin *stercus/faeces* is chosen for some roots, German *Kot/scheissen* for
+   others — register habit, not an absolute rule (so SCH, the politest, simply omits the
+   field).
+3. **Prostitution + sexual violence — no screen at all.** German had fully respectable words,
+   so *meretrix* and *stuprum* never appear: *gaṇikā, paṇyastrī, puṃścalī* → *Hure*; √*duṣ* →
+   *verderben, schänden*. Bopp must write *meretrix / stuprare* because Latin is all he has;
+   the German editors, who had *Hure* and *schänden*, never reach for Latin here.
+
+The Latin screen is thus **inversely proportional to the printability of the German word and
+proportional to the taboo-load of the concept** — densest on sex, partial on the body's
+waste, absent on the morally-but-not-verbally charged (the whore, the rape). Bopp's
+all-Latin glossary, by flattening every field to Latin, is exactly the baseline that makes
+this German gradient legible.
 
 ## 6. Why it matters
 
