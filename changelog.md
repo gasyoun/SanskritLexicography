@@ -9,6 +9,42 @@ then **cut a new version every time the changelog is updated** (promote
 
 ## [Unreleased]
 
+## [0.0.13] - 2026-06-26
+
+### Added — `HeadwordLists/Catalan-Pujol/` dataset + full coverage analysis
+- **The dataset.** An external Sanskrit headword spine and its CDSL/corpus coverage
+  analysis: the **61,266-lemma list** of the *Diccionari Sànscrit–Català* (Òscar Pujol,
+  Enciclopèdia Catalana, 2005 — the first Sanskrit→Catalan dictionary), mirrored from
+  `sanskrit-lexicon/CORRECTIONS`. In accented IAST with `√`-roots, Vedic udātta, and
+  Pujol's compound-segmenting hyphens; UTF-8 **with BOM**.
+- **Dictionary axis** — the list is essentially a Monier-Williams subset: **MW alone
+  covers 88.5 %**, all 15 compared CDSL dicts together 91.0 %; the ~4,680 lemmas no CDSL
+  dictionary covers are bucketed (simple / compound / root / prefixed-root / suspect-char)
+  under `Catalan-uncovered/`. Two transcoding traps documented (display-added line
+  numbers; `ś`=s+U+0301 accent collision; match rate 78 %→89 % after the fix).
+- **Corpus axis (vs DCS)** — only **46.4 %** of the list is attested in the DCS-2021
+  corpus though 91 % sits in a dictionary; **44.9 % is dictionary-listed but
+  corpus-unattested** ("lexicographic dark matter"). The 0.3 % (177) corpus-attested with
+  no CDSL entry is **triaged**: ~55 lemmatisation/morphology convention (41 prefixed/
+  denominative verb roots, 9 productive `-tā/-tva/-tara/-tama/-vat`, 5 bīja), 29
+  unheadworded compounds, ~93 simple/feminine — within which a genuine residue of
+  corpus-attested **rare lexemes absent from all 43 CDSL dictionaries** (plant/animal
+  names: `alasāndra-` cowpea, `kustumburī-` coriander, `kaṅkolī-`, `udumbarī-`, …) are
+  real candidate additions.
+- **Pujol's 11 headword conventions documented** (§6): `√`-roots, preverb+root
+  segmentation with `√` on the final root, sandhi-resolution parens, Vedic udātta,
+  compound hyphens, stem/feminine/productive-suffix forms, homograph numbering, bīja
+  syllables, BOM + precomposed-`ś` encoding, and export artifacts.
+- **Scripts** (repo-portable, IAST→SLP1 via `sanskrit-util`): `coverage_by_dict.py`,
+  `match_rate.py`, `make_uncovered_lists.py`, and `coverage_vs_dcs.py` (dictionary ×
+  corpus cross-tab against `VisualDCS/dcs_lemma_summary.json`). Full write-up in
+  `HeadwordLists/Catalan-Pujol/Sanskrit-Catalan-Wordlist-vs-Cologne.md`; indexed in
+  `HeadwordLists/README.md`.
+
+> Provenance note: the dataset files were first committed in `56564a0` (initially via an
+> accidental `git add -A`), then adopted and refactored repo-portable by a parallel
+> session (`75b917d`); kept by decision. This entry consolidates all Pujol work.
+
 ## [0.0.12] - 2026-06-26
 
 ### Changed
