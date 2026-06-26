@@ -141,6 +141,32 @@ python build_corpus_lexicon.py status                # записей + разл
 `build_src.py` по умолчанию читает `web/corpus_builder/jsonl/` соседнего
 репозитория SamudraManthanam; `build_indic.py` — `../research/external/`.
 
+## Реноовская разметка: язык-состояние (I–V) + регистр
+
+Отдельная подсистема в этом же `src/` — диахроническая разметка каждого
+словарного значения по **пяти состояниям санскрита Луи Рену** (I ведийское ·
+II паниниевское · III эпическое · IV классическое · V буддийско-джайнское) и по
+ортогональной оси **регистра** (подразделы Рену: épigraphique, bhāṣya, kāvya …).
+Полное описание — [../RENOU.md](../RENOU.md); план оси регистра —
+[../RENOU_SUBSECTIONS_PLAN.md](../RENOU_SUBSECTIONS_PLAN.md); структура книги-
+источника — [VisualDCS/docs/Renou_1956_structure.md](https://github.com/gasyoun/VisualDCS/blob/main/docs/Renou_1956_structure.md).
+
+| Файл | Роль |
+|------|------|
+| [renou.py](renou.py) | резолвер состояний + политика min-support (`filter_dcs_states/_registers`) |
+| [renou_sigla.py](renou_sigla.py) | сигла Apte/Benfey/BHS → состояние + `SIGLUM_REGISTER` |
+| [renou_register.py](renou_register.py) | ось регистра: канон `REGISTERS` + `<ls>`-маршруты (вкл. dedicated `epig`) |
+| [build_dcs_renou.py](build_dcs_renou.py) | скан корпуса DCS → лемма-индекс (`state_support` + `register_support`) |
+| [tag_dict_from_source.py](tag_dict_from_source.py), [tag_mw_from_source.py](tag_mw_from_source.py) | теггер: оба поля `renou_*` и `renou_register*` |
+| [renou_pipeline.py](renou_pipeline.py) | драйвер (`--all` → `{code}.renou.jsonl`) |
+| [renou_portrait.py](renou_portrait.py) | редакторский ярлык: состояние + регистр + флаги малоинформативности |
+| [renou_audit.py](renou_audit.py) | межсигнальный аудит (состояние + режим регистра) |
+| [renou_glossary.py](renou_glossary.py) | глоссарии по регистру/состоянию → [../glossaries/](../glossaries/README.md) |
+
+Выходы (`dcs_lemma_renou.json`, `{code}.renou.jsonl`) — **в `.gitignore`**,
+регенерируются. Глоссарии (épig 709 · bhāṣya 14 498 · jaina 286) **закоммичены**
+как готовые артефакты в [../glossaries/](../glossaries/README.md).
+
 ## Git и авторские права
 
 `*.jsonl` здесь — **в `.gitignore`**, данные не коммитятся: современные словари
