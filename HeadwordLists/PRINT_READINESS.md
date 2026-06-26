@@ -69,6 +69,11 @@ b~v / ś~ṣ variant pairs, and the multi-`<k2>` alternate groups — for the ed
 rule on. The *policy* (a/b/c, and merge-vs-list) is human. For the **MW/PWG spine**
 this is small (MW key2 is one clean form per entry); it bites mainly for a union (E).
 
+**Done — candidate lists generated** ([ALTERNATE_HEADWORDS.md](ALTERNATE_HEADWORDS.md),
+data in [`f_candidates/`](f_candidates/)): MW has **5,036 feminine↔masculine pairs**,
+22,298 orphan feminines, **1,217 variant-spelling pairs**, 0 multi-`<k2>` groups.
+The editor's actionable worklist for the spine = the 5,036 pairs + 1,217 variants.
+
 ## Bottom line
 
 - **MW or PWG alone → near-print-ready now**: stable spine + clean SLP1 key1/key2 in

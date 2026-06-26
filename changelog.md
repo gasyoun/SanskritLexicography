@@ -9,6 +9,19 @@ then **cut a new version every time the changelog is updated** (promote
 
 ## [Unreleased]
 
+## [0.0.19] - 2026-06-26
+
+### Added — item-F candidate lists (`alternate_headwords.py` + `f_candidates/`)
+- Generated the editor worklists for PRINT_READINESS item **F**:
+  [`alternate_headwords.py`](HeadwordLists/alternate_headwords.py) emits, from the 2026
+  key1 sets, feminine↔masculine pairs, orphan feminines, variant-spelling pairs
+  (b~v / ś~ṣ / geminate), and multi-`<k2>` alternate groups (SLP1 + IAST) into
+  [`f_candidates/`](HeadwordLists/f_candidates/), summarised in
+  [`ALTERNATE_HEADWORDS.md`](HeadwordLists/ALTERNATE_HEADWORDS.md). **MW: 5,036
+  feminine↔masculine pairs, 22,298 orphan feminines, 1,217 variant pairs, 0 multi-`<k2>`**
+  (alternate comma-lists negligible). SKD generated as a union-case sample. These are
+  candidates to filter (morphological-shape pairing includes semantic non-pairs); the
+  fold/keep/merge policy stays human.
 ## [0.0.18] - 2026-06-26
 
 ### Changed — PRINT_READINESS: add alternate/feminine headword gate (F)
