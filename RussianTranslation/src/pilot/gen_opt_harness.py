@@ -20,7 +20,15 @@ schema = open(base + r'\schemas\pwg_ru_final_card.schema.json', encoding='utf-8'
 
 root = sys.argv[1] if len(sys.argv) > 1 else 'tyaj'
 mode = sys.argv[2] if len(sys.argv) > 2 else 'body'   # 'body' = single-turn inlined; 'headtest' = 1 head, multi-turn, no-abridge
-rm = json.load(open(f'{IN}\\{root}.rootmap.json', encoding='utf-8'))
+# The splitter writes rootmaps under the reversible safe-name stem (e.g. sTA -> s_t_a),
+# while sub-card subkeys inside are already safe stems. Resolve the rootmap by safe
+# name; fall back to the raw name so ASCII roots (tyaj, gam) keep working unchanged.
+sys.path.insert(0, base + r'\src')
+from safe_filename import safe_name
+_rootmap = f'{IN}\\{safe_name(root)}.rootmap.json'
+if not os.path.exists(_rootmap):
+    _rootmap = f'{IN}\\{root}.rootmap.json'
+rm = json.load(open(_rootmap, encoding='utf-8'))
 keys = [s['subkey'] for s in rm['sub_cards']]
 if mode == 'headtest':
     # keep only the densest head (homonym-0 head part)
