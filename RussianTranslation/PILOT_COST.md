@@ -182,6 +182,26 @@ so the model cannot drift the prefix — and/or `audit_sense_dupes.py` should na
 the part's structural `<div n=>` nesting depth, not just the LAYER header. Until then,
 re-queue `pwg01`/`pwg09` with the explicit-tag directive.
 
+**Finding 10 — RESOLVED (2026-06-27, same session).** Implemented the Python fix in
+[`_pilot_gen_merged.py`](src/_pilot_gen_merged.py): new `_marker_tags()` threads the running
+top-level sense number through the head, so a lettered sub-sense is tagged
+`<enclosing number><letter>`, and `head_sense_parts()` injects an explicit *"render EXACTLY
+these sense(s), tag verbatim, invent nothing"* directive per head-part. Re-split of `sTA`
+yields collision-free canonical tags (`pwg00→1, pwg01→2, pwg07→9a, pwg08→9b, pwg09→9c,9d,
+pwg16→19a/b/c, pwg17→19d/e/f`) — the two `<div n="2">` letter-blocks are now sub-senses of 9
+and 19, never colliding. Added a `--keys=` re-queue filter to
+[`gen_opt_harness.py`](src/pilot/gen_opt_harness.py) and re-ran the 11 affected cards
+(369,877 tok, 5 min, 0 dropouts). **sense-dupes gate → PASS**; `pwg01` no longer fabricates
+sub-letters; `pratyupa` coverage also recovered. The directive adds no run-time cost.
+
+**Residual after the fix (separate issue classes, NOT Finding 10):** fidelity still flags
+`pwg00` (sense 1 alone = 125 `<ls>` in ONE sense — the **Finding 5 dense-head tail**; a single
+over-budget sense can't be sense-split and the no-abridge lane still abridges it → needs a
+*citation-batching sub-splitter for one over-budget sense*, a real tooling change) and `pw07`
+(tiny, 4/6 distinct `{#}`); coverage flags `ud` (21/33) and `ni` (3/5) — COVERAGE-LOW dropped
+senses on prefix cards, present in the first run too. These are the genuine re-queue / tooling
+backlog; Finding 10 itself is closed.
+
 ## 7. API-cost reference for the scale-up queue (2026-06-24) — *comparison only; we run on Max*
 
 > **NOTE 2026-06-26:** the "*alternative* — `--judge-model sonnet`" config in the table below is
