@@ -67,7 +67,7 @@
         "tag": { "type": "string", "minLength": 1 },
         "german": {
           "type": "string",
-          "description": "The PWG German for this sense, trimmed with sigla kept."
+          "description": "The PWG German for this sense, with the source's {#…#} Sanskrit delimiters and <ls>/<ab>/<lex>/<is> markup kept VERBATIM — not stripped to plain text, not transliterated to bare IAST."
         },
         "russian": {
           "type": "string",
