@@ -128,6 +128,60 @@ the high-value core lands first; or move the **bulk to the DeepSeek API** (paral
 weekly cap, ≈ **$1.5–4 k** for the whole dict) and reserve Max/Opus for hard/flagged
 cards. The a-section stays the Max-validated gold reference either way.
 
+### 6.1 First REAL freq-queue window — `sTA` (measured 2026-06-27)
+
+The first production root off the freq queue (`sTA, BU, gam, yuj, as, i, vid, han`),
+run via the locked optimized in-chat harness (`run_pilot_wf.opt.js`, translate-only,
+single-turn inlined, 1 retry). Token metrics from the 106 agent transcripts
+(`subagents/workflows/wf_020ef17d-bbc/agent-*.jsonl`):
+
+| metric | `sTA` (106 cards) | tyaj-opt (14 cards) | per-card `sTA` vs tyaj |
+|---|---|---|---|
+| agents | 106 | 14 | — |
+| assistant turns | 300 | 47 | 2.8 vs 3.4 /card |
+| Read calls | 90 | 19 | 0.85 vs 1.36 /card |
+| uncached input | 640 | — | trivial (caching on) |
+| **cache_read** (the quota driver) | **6,288,668** | 847,540 | **59.3 k vs 60.5 k** |
+| cache_create | 3,697,049 | 717,690 | 34.9 k vs 51.3 k |
+| output | 358,884 | 25,151 | 3.39 k vs 1.80 k |
+| subagent_tokens (harness metric) | 3,605,851 | 482,398 | 34.0 k vs 34.5 k |
+| wall-clock | **19.0 min** | 2.5 min | — |
+| transient failures | **0** (all 106 returned) | 0 | — |
+
+**Finding 9 — the optimization holds at 7.6× scale.** Per-card `cache_read` is **flat**
+(59.3 k vs tyaj's 60.5 k) and `subagent_tokens` is flat (34.0 k vs 34.5 k). The
+single-turn architecture did **not** degrade going from a 14-card to a 106-card root.
+Reads/card actually *improved* (0.85 vs 1.36). One giant root ≈ **6.3 M cache_read /
+10.3 M total tokens / ~19 min**, 0 dropouts.
+
+**Item 1 still OPEN.** The Max weekly cap did **not** fire this window (one root is well
+under it), so we still have only the *relative* number, not the absolute divisor. Sizing
+`weeks = total ÷ measured_quota` needs a **run-to-cap** window (the scope option deferred
+on M.G.'s "conservative first" call). What we now know: at ~10.3 M total/giant-root and
+~166 giant/oversize cards in the top-500, the dense head alone is low-single-B; the long
+tail is tiny (§6). The cap number converts that to a wall-clock-weeks figure.
+
+**Gate outcome (per handoff — flagged = re-queue, not accept):** NWS owner-map **PASS**
+(0 F12); fidelity **104/106** (`pwg00` dense head sense-1 shed citations ls 77/124 san
+36/50 — Finding 5 recurs on the single densest sense; `pw07` tiny 4/6 borderline);
+coverage **103/106** (`ud`, `pratyupa`, `ni`); sense-dupes **FAIL ×4** — see Finding 10.
+~7/106 re-queue ⇒ **~93 % first-pass clean**, in line with the tyaj A/B.
+
+**Finding 10 — two `a/b/c/d` letter-series in one head defeat the dup guard's
+namespacing.** `sTA`'s homonym-0 head has the finite-verb series (`2, 2a, 2b, 2c…`,
+parts 2–10) AND a second participial/adjective series that *restarts* lettering
+(`a, b, c, d…`, parts 16–18). The parts carry **byte-identical LAYER headers**, so
+`audit_sense_dupes.py` (which namespaces secondary sections off the raw LAYER header,
+Finding 8) cannot separate them. The actual defect is **tag-prefix drift**: `pwg01`
+(raw sense `2`) rendered `2a,2b`; `pwg09` (raw `2c`/`2d`) **dropped the `2` prefix** →
+bare `c,d`, colliding with the second series' `c,d` (`pwg16`/`pwg17`, which are correct).
+`tyaj` lacked a second series so this never surfaced. **Fix direction (Python, not LLM,
+per the head-lane doctrine):** the sense-chunker should pass each head-part its
+**canonical sense tag(s)** as an explicit instruction ("render exactly sense(s) 2c, 2d")
+so the model cannot drift the prefix — and/or `audit_sense_dupes.py` should namespace by
+the part's structural `<div n=>` nesting depth, not just the LAYER header. Until then,
+re-queue `pwg01`/`pwg09` with the explicit-tag directive.
+
 ## 7. API-cost reference for the scale-up queue (2026-06-24) — *comparison only; we run on Max*
 
 > **NOTE 2026-06-26:** the "*alternative* — `--judge-model sonnet`" config in the table below is
