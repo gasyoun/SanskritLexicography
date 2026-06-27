@@ -46,6 +46,7 @@ MIN_SPLIT = int(os.environ.get('ROOT_SPLIT_MIN', '8'))
 # unit, and the NWS owner map batched NWS_BATCH entries at a time. (The 820-line bhū head
 # overflowed a single 32k-token translation pass; these parts are single-pass-sized.)
 HEAD_BUDGET = int(os.environ.get('HEAD_SPLIT_BUDGET', '100'))
+HEAD_CIT_BUDGET = int(os.environ.get('HEAD_CIT_BUDGET', '18'))   # max <ls> per head sense-part
 NWS_BATCH = int(os.environ.get('NWS_OWNER_BATCH', '25'))
 SENSE_BOUND = re.compile(r'^<div n="\d+"> *\d+\)')
 
@@ -188,11 +189,47 @@ def chunk_records(records, budget):
     return groups
 
 
+def sense_chunks(head_lines, cit_budget):
+    """Split a PWG head at <div n=…> SENSE boundaries (NOT line count) and group consecutive
+    senses until their combined <ls> citation count exceeds cit_budget — so every part is
+    citation-LIGHT and renders single-pass without the model abridging the apparatus. A single
+    sense heavier than the budget stays its own part (it cannot be split further). The grammar
+    intro (lines before the first <div n=) rides with the first sense block. Falls back to the
+    line chunker when the head has no <div n=> structure. (TOKEN_OPTIMIZATION_2026-06-27.md
+    Finding 5: heads fail by citation DENSITY, not line length.)"""
+    blocks, intro, cur = [], [], None
+    for ln in head_lines:
+        if ln.lstrip().startswith('<div n='):
+            if cur is not None:
+                blocks.append(cur)
+            cur = [ln]
+        elif cur is None:
+            intro.append(ln)
+        else:
+            cur.append(ln)
+    if cur is not None:
+        blocks.append(cur)
+    if not blocks:                                   # no sense divs → old line chunker
+        return chunk_lines(head_lines, HEAD_BUDGET)
+    if intro:
+        blocks[0] = intro + blocks[0]
+    chunks, g, gc = [], [], 0
+    for b in blocks:
+        bc = '\n'.join(b).count('<ls')
+        if g and gc + bc > cit_budget:               # close the group before it overflows
+            chunks.append(g); g, gc = [], 0
+        g += b; gc += bc
+    if g:
+        chunks.append(g)
+    return chunks
+
+
 def head_sense_parts(key, head_lines, hom, n_hom):
-    """The PWG simple-verb head, chunked to single-pass size. hom = homonym index (0-based);
-    when a headword has >1 homonym the label says so. -> [(section_label, blob), ...]."""
+    """The PWG simple-verb head, split at sense boundaries to citation-light single-pass parts.
+    hom = homonym index (0-based); when a headword has >1 homonym the label says so.
+    -> [(section_label, blob), ...]."""
     parts = []
-    chunks = chunk_lines(head_lines, HEAD_BUDGET)
+    chunks = sense_chunks(head_lines, HEAD_CIT_BUDGET)
     htag = (' homonym %d' % (hom + 1)) if n_hom > 1 else ''
     for i, ch in enumerate(chunks):
         ptag = (' part %d/%d' % (i + 1, len(chunks))) if len(chunks) > 1 else ''

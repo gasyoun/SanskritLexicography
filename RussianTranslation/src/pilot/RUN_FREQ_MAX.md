@@ -6,13 +6,22 @@ post-judge path: the 38-unit freq test is complete, 37/38 were publishable, and
 the lone sev-3 belongs to the NWS owner-row slip class that the deterministic
 audit gate catches.
 
-**Judge policy (implemented 2026-06-26, [`../../research/JUDGE_POLICY.md`](../../research/JUDGE_POLICY.md)):**
-translate = **Sonnet**; **Sonnet judges every card**; **Opus re-judges ONLY the
-rejects** (`ok=false || severity>=3`) and its verdict is final. Publishable cards
-(sev 1–2) spend no Opus tokens — the weekly-quota headroom that makes the run
-feasible. Per batch also run the periodic ~5 % Opus audit of clean-passed cards
-(`judge_disagreements.py`) until it is wired into the loop. The earlier
-"Opus-judged" framing was the validation phase, not the bulk policy.
+**QA policy — BALANCED, token-optimized (2026-06-27, [`../../TOKEN_OPTIMIZATION_2026-06-27.md`](../../TOKEN_OPTIMIZATION_2026-06-27.md)):**
+the bulk pass is **translate (Sonnet, single-turn inlined) + three FREE Python gates on 100 %
+of cards**; the LLM judge is no longer per-card. The measured driver is `cache_read ≈ context ×
+turns`, so the run is reshaped to "Python at max, LLM at minimum" — the A/B cut cache_read 3.2×
+and eliminated the transient dropouts.
+
+- **Free gates (0 tokens, every card):** `audit_translation.py` (markup fidelity), the NEW
+  [`../audit_coverage.py`](../audit_coverage.py) (dropped/fabricated senses), and `nws_split.py`
+  via `run_real_test.py audit` (NWS owner-map). Any flag → re-queue.
+- **LLM judge (the only QA spend):** runs ONLY on Python-gate-flagged cards + a ~5–10 % random
+  mistranslation sample. **Sonnet judges; Opus adjudicates ONLY its rejects** (`ok=false ||
+  severity>=3`), Opus verdict final — see [`../../research/JUDGE_POLICY.md`](../../research/JUDGE_POLICY.md).
+  Publishable cards spend no Opus tokens.
+
+The earlier "Opus-judged-every-card" framing was the validation phase; "Sonnet-bulk/Opus-on-reject"
+was the 2026-06-26 escalation policy; the per-card LLM judge itself is now dropped from the bulk path.
 
 ## Current preflight
 
@@ -86,22 +95,33 @@ const OFFSET = 0
 const LIMIT = 50
 ```
 
-Run `run_pilot_wf.js` in the interactive Max workflow harness and save the JSON
-result as `wf_output.json`. The in-chat Workflow tool is not sufficient because
-the harness reads local files with `node:fs`.
+Run the **optimized** harness `run_pilot_wf.opt.js` (dual-lane, translate-only — generated
+per root from the committed `run_pilot_wf.js`, prompts byte-identical) in the interactive Max
+workflow harness and save the JSON result as `wf_output.json`. The in-chat Workflow tool is not
+sufficient because the harness reads local files with `node:fs`. Lanes:
 
-Audit the window — run **both** gates:
+- **sparse** card (≤30 `<ls>`): single-turn, inputs inlined, **no tools** — the cheap path for
+  the ~43 k normal sub-cards.
+- **dense** card (>30 `<ls>`, e.g. a lone over-budget head sense): multi-turn, reads its own
+  files, no-abridge directive. Heads are pre-split into citation-light parts by `sense_chunks()`
+  (`_pilot_gen_merged.py`, budget `HEAD_CIT_BUDGET=18`), so this lane is a rare fallback.
+- 1 automatic retry per stage; `judge:null` (the free Python gates own bulk QA).
+
+Audit the window — run **all three** free gates (zero tokens):
 
 ```powershell
 # 1) NWS owner-map gate (quarantines misattribution → *.merged.REJECTED.md)
 python src\pilot\run_real_test.py audit wf_output.json
-# 2) Fidelity gate (sigla ≥90% kept, Sanskrit ≥85% kept, Russian present where German gloss was)
+# 2) Markup-fidelity gate (sigla ≥90% kept, Sanskrit ≥85% kept, Russian present where German gloss was)
 python src\audit_translation.py
+# 3) Sense-coverage gate (no silently dropped/fabricated senses)
+python src\audit_coverage.py wf_output.json
 ```
 
-Any NWS owner mismatch is quarantined as `*.merged.REJECTED.md`; the next prep
-cycle should re-queue rejects instead of accepting them. A fidelity-gate failure
-(lost sigla/Sanskrit or an empty card) is likewise a re-queue, not an accept.
+Any NWS owner mismatch is quarantined as `*.merged.REJECTED.md`; a markup-fidelity failure
+(lost sigla/Sanskrit or an empty card) or a coverage flag (COVERAGE-LOW/OVER) is likewise a
+re-queue, not an accept. Only the re-queued (Python-flagged) cards plus a ~5–10 % sample go to
+the LLM judge.
 
 ## Instrumentation
 

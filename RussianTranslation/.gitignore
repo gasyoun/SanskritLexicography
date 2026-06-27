@@ -2,3 +2,7 @@
 # Generated per-root pwg_ru harnesses (derived from run_pilot_wf.js; inlined inputs)
 src/pilot/run_pilot_wf.opt.js
 src/pilot/run_pilot_wf.run.js
+src/pilot/run_pilot_wf.headtest.js
+
+# Max workflow run output (A/B transcript artifact, not a deliverable)
+wf_output.json
