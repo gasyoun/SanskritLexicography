@@ -8,6 +8,44 @@ See also: [METHODOLOGY_REVIEW.md](METHODOLOGY_REVIEW.md) (where we want to go),
 [failures/FAILURE_GALLERY.md](failures/FAILURE_GALLERY.md) (what went wrong and
 how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
+## 2026-06-27
+
+### Token optimization for the Max bulk run — "weeks not days" (BALANCED tier)
+- New [TOKEN_OPTIMIZATION_2026-06-27.md](TOKEN_OPTIMIZATION_2026-06-27.md): measured the real
+  quota driver and re-architected the bulk run so a single Max seat sustains weeks of work
+  instead of burning out in 3–4 days. **Finding 1** — the cost is `cache_read ≈ context × turns`,
+  not prompt size; **Finding 2** — the multiplier is *assistant turns*, driven by agents
+  re-`Read`ing `raw.txt`/`portrait.json` 4–12× per card. One giant root at the old config ≈
+  **9–10 M tokens**.
+- **A/B measured (tyaj baseline vs optimized):** agents 28→14, turns 138→47, Read calls 60→19
+  (**3.2×**), `cache_read` 2.74 M→0.85 M (**3.2×**), wall-clock 6.6→2.5 min, transient failures
+  3→**0**. Net ~2× on the headline metric, ~3.2× on the real driver.
+- **QA reshape — "Python at max, LLM at minimum."** The LLM judge's only irreplaceable job is
+  catching *mistranslation*; everything mechanical is now free and 100%-coverage in Python. New
+  gate [src/audit_coverage.py](src/audit_coverage.py) catches silently dropped/fabricated senses
+  (COVERAGE-LOW <80% / COVERAGE-OVER >150%, NWS/supplement cards n/a). Per-card LLM judge dropped
+  → free gates (`audit_translation.py` markup + `audit_coverage.py` senses + `nws_split.py` owner
+  map) on every card, LLM judge only on Python-gate flags + a ~5–10% mistranslation sample.
+- **Gate false-positive guard.** Both free gates got an absolute-difference floor so a ±1
+  span/sense gap on a 1–4-span card no longer false-flags, while the giant-head citation dump
+  (e.g. 7/125) still trips: [src/audit_translation.py](src/audit_translation.py) needs ≥2 absolute
+  `<ls>`/`{#}` loss in addition to the 90/85% ratio; `audit_coverage.py` uses `(raw−card)≥2` /
+  `(card−raw)≥3`.
+- **Head lane — sense-aware Python split (Finding 5).** Giant HEAD cards (`*_pwg00`, ~1 per root)
+  overflow a single pass and shed their citation apparatus. New `sense_chunks()` in
+  [src/_pilot_gen_merged.py](src/_pilot_gen_merged.py) splits the head at `<div n=…>` SENSE
+  boundaries (not line count), grouping senses until their combined `<ls>` count exceeds
+  `HEAD_CIT_BUDGET` (=18) so each part is citation-light and flows through the cheap single-turn
+  lane. tyaj head: 1 dense 146-`<ls>` blob → 8 sense-parts; whole root 19 sub-cards (15 single-turn
+  / 4 multi-turn). The multi-turn no-abridge lane survives only as the rare fallback for a lone
+  over-budget sense.
+- **Reliability.** Optimized harness adds 1 automatic retry per stage + a post-run missing-key
+  re-queue (Finding 4: ~10–20% transient `Connection closed mid-response` rate across gam/tyaj).
+- **Decision (M.G.):** BALANCED tier adopted — single-turn inlined inputs + free Python gates +
+  sampled judge. Open headroom: restrict the Read tool to force true single-turn (residual 19
+  reads → 0). [src/pilot/RUN_FREQ_MAX.md](src/pilot/RUN_FREQ_MAX.md) updated with the optimized
+  run loop and the three-gate QA stack.
+
 ## 2026-06-26
 
 ### Stale-doc cleanup — align planning/runbook docs with the current pipeline

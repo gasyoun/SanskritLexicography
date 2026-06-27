@@ -168,3 +168,82 @@ cards. Remaining headroom: (i) restrict Read tool → true single-turn (push the
 residual 19 reads → 0); (ii) head-splitter for `*_pwg00`; (iii) optional
 Aggressive batching of tiny sub-cards. The sampled-judge pass (step 3) is built
 into the plan but not yet run.
+
+## Head lane — FINAL: Python sense-aware split (more Python, less LLM)
+
+M.G. (2026-06-27): "the proper head lane is a sense-aware split — more Python,
+less LLM, so we speed up the WHOLE dictionary, not just one entry." Adopted.
+
+The multi-turn + no-abridge directive (below) *works* but uses the EXPENSIVE
+multi-turn LLM lane (the dual-lane tyaj run was ~11 min — slower than baseline —
+because dense cards re-read across turns). The better fix does the work in
+**Python, for free**:
+
+- `_pilot_gen_merged.py` new `sense_chunks()` splits the head at `<div n=…>`
+  SENSE boundaries, grouping senses until their combined `<ls>` count exceeds
+  `HEAD_CIT_BUDGET` (=18). Each head part is then citation-LIGHT and flows
+  through the **cheap single-turn lane**. A lone over-budget sense stays its own
+  part (can't split further) and falls back to the dense lane.
+- tyaj head: **1 dense 146-`<ls>` blob → 8 sense-parts**, 6 sparse + 2 marginal
+  (33–34). Whole root: 19 sub-cards, **15 single-turn / 4 multi-turn** (was the
+  entire head on the expensive lane). Tunable via `HEAD_CIT_BUDGET`.
+
+The multi-turn dense lane stays ONLY as a rare fallback for a single sense still
+over the citation threshold after splitting. This is the "Python at max" head
+solution; the directive lane below is the safety net, not the primary path.
+
+### Gate tuning (kill tiny-card false positives)
+Both free gates got an absolute-difference guard so a ±1 span/sense gap on a
+1–4-span card (sub-sense split, collapsed compound) no longer false-flags, while
+the giant-head citation dump (7/125) still trips: `audit_coverage.py` needs
+`(raw−card)≥2` / `(card−raw)≥3`; `audit_translation.py` needs `≥2` absolute
+`<ls>`/`{#}` loss in addition to the 90/85 % ratio.
+
+## Head lane (superseded primary → now fallback) — multi-turn + no-abridge
+
+The giant head fails NOT from input size (tyaj head = 14 lines) but because it
+packs **146 `<ls>` across 12 senses on a few very long lines** — line-based
+`head_sense_parts` can't split it, and a single-turn agent *abridges* the
+citation lists. **Fix that works (tested):** route citation-dense cards to a
+**multi-turn + explicit no-abridge directive** lane. The agent then reproduces
+**every** citation in the `german` field (the source-of-truth column) while the
+`russian` stays sensibly abridged to representative citations.
+
+- tyaj head, multi-turn + no-abridge: fidelity gate **PASS** (ls 146/145, san
+  112/103), coverage **12/12**, **38.9 k tokens, 3 tool calls** — cheap.
+- No new splitter tooling needed. Routing rule: raw `<ls>` count **> 30 ⇒ dense
+  lane**, else sparse single-turn-inlined lane.
+
+## QA RESHAPE (M.G. 2026-06-27) — Python at the MAX, LLM at the minimum
+
+> "Python is zero cost — more Python, less LLM where LLM is not actually critical."
+
+The LLM judge's ONLY irreplaceable job is catching **mistranslation** (wrong
+Russian meaning). Everything else is deterministic and free. New QA stack:
+
+| Check | Tool | Cost | Coverage |
+|---|---|---|---|
+| markup fidelity (`<ls>`/`{#}` ≥ 90/85 %) | `audit_translation.py` | 0 | 100 % |
+| **sense coverage (drop/fabricate)** | **`audit_coverage.py` (NEW)** | 0 | 100 % |
+| NWS owner-map (F12 misattribution) | `nws_split.py` via `run_real_test.py audit` | 0 | 100 % |
+| Russian-present where German gloss | `audit_translation.py` | 0 | 100 % |
+| mistranslation / register / discrimination | LLM judge | tokens | **Python-flagged cards + ~5 % sample only** |
+| final semantic sign-off | human editor | — | per project's HYBRID model |
+
+So the bulk run is **translate (LLM) + 3 free Python gates (100 %)**. The LLM
+judge is no longer per-card — it runs ONLY on cards a Python gate flags (must be
+adjudicated) plus a small random mistranslation spot-check. This removes ~half
+the LLM agents on top of the single-turn win.
+
+`audit_coverage.py`: counts raw sense markers (`〉` U+3009 / `<div n=`) vs card
+senses; flags COVERAGE-LOW (<80 %, dropped) / COVERAGE-OVER (>150 %, fabricated);
+NWS/supplement cards (0 markers) are n/a, never failed. Verified 12/12 on the
+tyaj head.
+
+## Production harness — `run_pilot_wf.opt.js` (dual-lane, translate-only)
+
+Generated per root from the committed `run_pilot_wf.js` (prompts byte-identical):
+- **sparse** card (≤30 `<ls>`): single-turn, inputs inlined, no tools.
+- **dense** card (>30 `<ls>`): multi-turn, reads own files, no-abridge directive.
+- 1 automatic retry; `judge:null` (Python gates own QA); glue via
+  `root_glue_translated.py`. NO per-card LLM judge.

@@ -45,10 +45,14 @@ def audit_unit(stem):
     sls, ols = len(LS.findall(rb)), len(LS.findall(out))
     ssan, osan = len(set(SAN.findall(rb))), len(set(SAN.findall(out)))
     cyr = bool(CYR.search(out))
+    # absolute-difference guard: losing a single <ls>/{#} span on a tiny card (where the model
+    # collapsed a compound or merged a duplicate) is below the ratio but not a real apparatus
+    # loss — require >=2 absolute missing too. The giant-head citation dump (e.g. 7/125) still
+    # trips it; a 3/4 tiny card no longer false-flags.
     flags = []
-    if sls > 0 and ols < sls * LS_KEEP:
+    if sls > 0 and ols < sls * LS_KEEP and (sls - ols) >= 2:
         flags.append('LS-LOSS(%d/%d)' % (ols, sls))
-    if ssan > 0 and osan < ssan * SAN_KEEP:
+    if ssan > 0 and osan < ssan * SAN_KEEP and (ssan - osan) >= 2:
         flags.append('SAN-LOSS(%d/%d)' % (osan, ssan))
     if GER.search(rb) and not cyr:
         flags.append('NO-RUSSIAN')
