@@ -46,6 +46,32 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
   reads → 0). [src/pilot/RUN_FREQ_MAX.md](src/pilot/RUN_FREQ_MAX.md) updated with the optimized
   run loop and the three-gate QA stack.
 
+### Head lane LOCKED — two structural bugs fixed, deterministic dup guard added
+- **Finding 7 — dense-lane over-production.** The first head lane let "dense" cards read their
+  sibling part-files (multi-turn), so `pwg00` rendered the WHOLE head (13 senses) and `pari`
+  173 `<ls>` vs its 86 — duplicating senses other parts also produce. Fix in
+  [src/pilot/gen_opt_harness.py](src/pilot/gen_opt_harness.py): BOTH lanes inline their own part
+  only (single-turn) + an anti-roaming/anti-memory guard; dense cards got cheaper too. The
+  production generator is now committed + portable (regenerates the harness per root).
+- **Finding 8 — causative tail mis-tag.** A secondary-conjugation section (caus./pass./desid.)
+  RESTARTS numbering at 1 and its `<ab>caus.</ab>` marker rides at the END of the previous
+  sense's line; the split orphaned caus.1/2/3 → the model tagged them bare 1/2/3, colliding with
+  simple-verb senses. Fix in [src/_pilot_gen_merged.py](src/_pilot_gen_merged.py) `sense_chunks`:
+  detect the numbering reset, merge the whole secondary tail into one chunk, relocate the trailing
+  `<ab>caus.</ab>` marker to its head, and label the part `(CAUSATIVE … tag each "caus. N")`.
+  Model now tags `caus. 1/2/3`.
+- **New deterministic gate (free) — [src/audit_sense_dupes.py](src/audit_sense_dupes.py).** Flags
+  any numbered sense rendered by >1 head-part of the same homonym; namespaces secondary-section
+  senses via the raw LAYER header so a legitimate caus-renumber passes while genuine
+  over-production fails. Validated: FAILs the Finding-7 output (8 dups), PASSes the fixed output.
+- **Final tyaj A/B (locked harness):** 19 cards, 640 k tok, 3.4 min, **0 failures**; dup guard
+  PASS, NWS PASS, fidelity 18/19 (the 1 miss = homonym-3 head dropped 2 paradigm spans → normal
+  re-queue). `pwg07` tagged `caus. 1/2/3`; glue → `tyaj.NESTED.md`, no duplicated senses.
+- **The Workflow-tool harness runs from-chat.** Because the optimized harness inlines its inputs
+  (no `node:fs`), the freq-queue run no longer "needs a human-driven Max session" — it drives
+  from the in-chat Workflow tool. Next: the first real freq window (sthā/bhū/gam), run-to-cap for
+  the absolute weekly-quota number. See [HANDOFF_2026-06-27_freq_run.md](HANDOFF_2026-06-27_freq_run.md).
+
 ## 2026-06-26
 
 ### Stale-doc cleanup — align planning/runbook docs with the current pipeline
