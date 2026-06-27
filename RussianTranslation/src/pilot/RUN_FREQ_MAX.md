@@ -106,6 +106,8 @@ sufficient because the harness reads local files with `node:fs`. Lanes:
   files, no-abridge directive. Heads are pre-split into citation-light parts by `sense_chunks()`
   (`_pilot_gen_merged.py`, budget `HEAD_CIT_BUDGET=18`), so this lane is a rare fallback.
 - 1 automatic retry per stage; `judge:null` (the free Python gates own bulk QA).
+- The optimized translate agents explicitly run with `tools: []`; any `Read`
+  use in a Max run means an outdated harness file is being used.
 
 Audit the window — run **all three** free gates (zero tokens):
 
@@ -144,4 +146,3 @@ The frequency queue milestone is done when:
 - zero `*.merged.REJECTED.md` files remain for that window;
 - rootmap-backed giant roots have matching `*.NESTED.md` outputs;
 - the cost/quota table has enough windows to estimate the run duration.
-
