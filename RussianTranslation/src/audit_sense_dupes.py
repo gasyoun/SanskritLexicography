@@ -18,6 +18,24 @@ INP = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'pilot', 'input')
 _SEC_HDR = re.compile(r'\((caus|pass|desid|intens|partic|inf)[a-z]* SECONDARY-CONJUGATION', re.I)
 
 
+def rootmap_meta():
+    """subkey -> rootmap entry. Citation-batch allowance is declared here, never inferred."""
+    meta = {}
+    if not os.path.isdir(INP):
+        return meta
+    for fn in os.listdir(INP):
+        if not fn.endswith('.rootmap.json'):
+            continue
+        try:
+            rm = json.load(open(os.path.join(INP, fn), encoding='utf-8'))
+        except (OSError, json.JSONDecodeError):
+            continue
+        for s in rm.get('sub_cards', []):
+            if s.get('subkey'):
+                meta[s['subkey']] = s
+    return meta
+
+
 def section_of(key):
     """Deterministic: read the part's raw LAYER header. A secondary-conjugation part (caus./
     pass./…) RESTARTS sense numbering, so its 1/2/3 are a DIFFERENT space from the simple verb's.
@@ -59,9 +77,19 @@ def homonym(key):
     return m.group(1) if m else 'h?'
 
 
+def allowed_batch_duplicate(tag, keys, meta):
+    """A duplicate sense tag is legal only when every emitting sub-card is a declared
+    citation batch for exactly that canonical sense within the rootmap."""
+    if len(keys) <= 1:
+        return True
+    batch_of = {norm((meta.get(k) or {}).get('batch_of')) for k in keys}
+    return batch_of == {tag}
+
+
 def main():
     wf = sys.argv[1] if len(sys.argv) > 1 else 'wf_output.json'
     results = find_results(json.load(open(wf, encoding='utf-8'))) or []
+    meta = rootmap_meta()
     # (homonym, normalized tag) -> set of subkeys that rendered it
     seen = collections.defaultdict(set)
     for r in results:
@@ -80,7 +108,8 @@ def main():
                     t = sec + ':' + t
                 seen[(homonym(key), t)].add(key)
 
-    dupes = {k: v for k, v in seen.items() if len(v) > 1}
+    dupes = {k: v for k, v in seen.items()
+             if len(v) > 1 and not allowed_batch_duplicate(k[1], v, meta)}
     if not dupes:
         print('SENSE-DUPE GATE: PASS — no numbered sense rendered by >1 head-part per homonym')
         return 0
