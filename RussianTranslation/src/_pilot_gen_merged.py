@@ -47,6 +47,7 @@ MIN_SPLIT = int(os.environ.get('ROOT_SPLIT_MIN', '8'))
 # overflowed a single 32k-token translation pass; these parts are single-pass-sized.)
 HEAD_BUDGET = int(os.environ.get('HEAD_SPLIT_BUDGET', '100'))
 HEAD_CIT_BUDGET = int(os.environ.get('HEAD_CIT_BUDGET', '18'))   # max <ls> per head sense-part
+HEAD_CIT_BATCH_BUDGET = int(os.environ.get('HEAD_CIT_BATCH_BUDGET', str(HEAD_CIT_BUDGET)))
 NWS_BATCH = int(os.environ.get('NWS_OWNER_BATCH', '25'))
 SENSE_BOUND = re.compile(r'^<div n="\d+"> *\d+\)')
 
@@ -214,6 +215,7 @@ def _sense_no(block):
 
 # Any <div n=> sense marker — a top-level NUMBER (1, 2, …) or a lettered SUB-sense (a, b, …).
 _SENSE_MARK = re.compile(r'<div n="[^"]*">\s*[—\-]?\s*([0-9]+|[a-z])\s*[〉)]')
+_LS_CITE = re.compile(r'<ls\b.*?</ls>')
 
 
 def _marker_tags(lines, top):
@@ -238,6 +240,66 @@ def _marker_tags(lines, top):
     return tags, top
 
 
+def _split_text_by_cites(text, budget, first_budget=None):
+    """Split `text` after <ls> citations so each piece has <= budget citations.
+    Non-citation text rides with the nearest preceding citation; a final citation-free
+    tail rides with the last piece."""
+    if budget <= 0:
+        return [text]
+    first_budget = budget if first_budget is None else max(1, first_budget)
+    pieces, start, count = [], 0, 0
+    for m in _LS_CITE.finditer(text):
+        count += 1
+        limit = first_budget if not pieces else budget
+        if count >= limit:
+            pieces.append(text[start:m.end()])
+            start, count = m.end(), 0
+    if start < len(text):
+        if count == 0 and pieces:
+            pieces[-1] += text[start:]
+        else:
+            pieces.append(text[start:])
+    return [p for p in pieces if p.strip()]
+
+
+def _citation_batches(block, tag, budget):
+    """Split one over-budget sense block into citation batches.
+
+    The original <div> marker is repeated on every batch so each translated sub-card
+    remains self-contained and the per-card coverage gate still sees one expected sense.
+    Introductory grammar/paradigm lines before the first <div> ride only with batch 1."""
+    if not tag or '\n'.join(block).count('<ls') <= budget:
+        return [block]
+    div_i = None
+    div_m = None
+    for i, ln in enumerate(block):
+        div_m = _SENSE_MARK.search(ln)
+        if div_m:
+            div_i = i
+            break
+    if div_i is None:
+        return [block]
+    intro = block[:div_i]
+    marker = block[div_i][:div_m.end()]
+    intro_cites = '\n'.join(intro).count('<ls')
+    body = block[div_i][div_m.end():]
+    if div_i + 1 < len(block):
+        body += '\n' + '\n'.join(block[div_i + 1:])
+    pieces = _split_text_by_cites(body, budget, budget - intro_cites)
+    if len(pieces) <= 1:
+        return [block]
+    batches = []
+    for i, piece in enumerate(pieces):
+        lines = []
+        if i == 0:
+            lines.extend(intro)
+        plines = piece.split('\n')
+        lines.append(marker + plines[0])
+        lines.extend(plines[1:])
+        batches.append(lines)
+    return batches
+
+
 def sense_chunks(head_lines, cit_budget):
     """Split a PWG head at <div n=…> SENSE boundaries (NOT line count) and group consecutive
     senses until their combined <ls> citation count exceeds cit_budget — so every part is
@@ -259,7 +321,7 @@ def sense_chunks(head_lines, cit_budget):
     if cur is not None:
         blocks.append(cur)
     if not blocks:                                   # no sense divs → old line chunker
-        return chunk_lines(head_lines, HEAD_BUDGET)
+        return [{'lines': ch, 'batch_of': None} for ch in chunk_lines(head_lines, HEAD_BUDGET)]
     if intro:
         blocks[0] = intro + blocks[0]
     # A secondary-conjugation section (caus./pass./desid./intens.) RESTARTS sense
@@ -286,13 +348,21 @@ def sense_chunks(head_lines, cit_budget):
                 tail = [m.group(1).strip()] + tail
         blocks = blocks[:reset] + [tail]
     chunks, g, gc = [], [], 0
+    top = 0
     for b in blocks:
         bc = '\n'.join(b).count('<ls')
+        btags, top = _marker_tags(b, top)
+        if bc > cit_budget and len(btags) == 1:
+            for batch in _citation_batches(b, btags[0], HEAD_CIT_BATCH_BUDGET):
+                if g:
+                    chunks.append({'lines': g, 'batch_of': None}); g, gc = [], 0
+                chunks.append({'lines': batch, 'batch_of': btags[0]})
+            continue
         if g and gc + bc > cit_budget:               # close the group before it overflows
-            chunks.append(g); g, gc = [], 0
+            chunks.append({'lines': g, 'batch_of': None}); g, gc = [], 0
         g += b; gc += bc
     if g:
-        chunks.append(g)
+        chunks.append({'lines': g, 'batch_of': None})
     return chunks
 
 
@@ -302,12 +372,28 @@ def head_sense_parts(key, head_lines, hom, n_hom):
     -> [(section_label, blob), ...]."""
     parts = []
     chunks = sense_chunks(head_lines, HEAD_CIT_BUDGET)
+    batch_counts = {}
+    for ch in chunks:
+        if ch.get('batch_of'):
+            batch_counts[ch['batch_of']] = batch_counts.get(ch['batch_of'], 0) + 1
+    batch_seen = {}
     htag = (' homonym %d' % (hom + 1)) if n_hom > 1 else ''
     top = 0                                           # running top-level sense number across chunks
-    for i, ch in enumerate(chunks):
+    for i, chunk in enumerate(chunks):
+        ch = chunk['lines']
         ptag = (' part %d/%d' % (i + 1, len(chunks))) if len(chunks) > 1 else ''
         kind = _sec_kind(ch)                          # caus/pass/desid/intens tail, or None
         ctags, top = _marker_tags(ch, top)            # canonical tags for this chunk's senses
+        meta = {}
+        label = 'pwg%02d' % i
+        if chunk.get('batch_of'):
+            bo = chunk['batch_of']
+            bi = batch_seen.get(bo, 0)
+            batch_seen[bo] = bi + 1
+            bc = batch_counts[bo]
+            label = 'pwg%02db%02d' % (i - bi, bi)
+            meta = {'batch_of': bo, 'batch_index': bi, 'batch_count': bc}
+            ptag += ' citation batch %d/%d for sense %s' % (bi + 1, bc, bo)
         if kind:
             tag = ('PWG-ROOT HEAD%s%s — root=%s (%s SECONDARY-CONJUGATION senses; PWG restarts '
                    'numbering at 1 here, so tag EACH sense "%s. N" (%s. 1, %s. 2 …), NEVER bare '
@@ -319,15 +405,23 @@ def head_sense_parts(key, head_lines, hom, n_hom):
             # <div n="2"> letter-blocks a head can carry (Finding 10).
             directive = ''
             if ctags:
-                directive = (' — render EXACTLY these %d sense(s), tag each VERBATIM as listed, '
-                             'add no others and split none: [%s]. A lettered sub-sense is tagged '
-                             '<enclosing sense number><letter> (e.g. under sense 9, "c" -> "9c"); '
-                             'never tag it bare, never use the <div n=> attribute as the number, '
-                             'never invent a sub-letter not listed'
-                             % (len(ctags), ', '.join(ctags)))
+                if meta:
+                    directive = (' — CITATION BATCH %d/%d for canonical sense %s: render ONLY '
+                                 'sense %s, tag it VERBATIM as "%s", preserve EVERY literary-source '
+                                 'tag and EVERY Sanskrit brace span present in this batch, add no '
+                                 'other senses, and do not summarize the citation apparatus'
+                                 % (meta['batch_index'] + 1, meta['batch_count'], meta['batch_of'],
+                                    meta['batch_of'], meta['batch_of']))
+                else:
+                    directive = (' — render EXACTLY these %d sense(s), tag each VERBATIM as listed, '
+                                 'add no others and split none: [%s]. A lettered sub-sense is tagged '
+                                 '<enclosing sense number><letter> (e.g. under sense 9, "c" -> "9c"); '
+                                 'never tag it bare, never use the <div n=> attribute as the number, '
+                                 'never invent a sub-letter not listed'
+                                 % (len(ctags), ', '.join(ctags)))
             tag = ('PWG-ROOT HEAD%s%s — root=%s (simple verb + senses; same root_key)%s'
                    % (htag, ptag, key, directive))
-        parts.append(('pwg%02d' % i, '=== LAYER: %s ===\n\n%s' % (tag, '\n'.join(ch))))
+        parts.append((label, '=== LAYER: %s ===\n\n%s' % (tag, '\n'.join(ch)), meta))
     return parts
 
 
@@ -418,11 +512,13 @@ def gen_root_split(key, pwg_idx, verbose=True):
         if npfx >= MIN_SPLIT:                       # giant homonym -> head parts + prefix sub-cards
             npfx_total += npfx
             head_pf = subcard_portrait(key, '')   # simple-verb head -> root corpus evidence
-            for part, (label, blob) in enumerate(head_sense_parts(key, cards[0]['lines'], hom, n_hom)):
+            for part, (label, blob, meta) in enumerate(head_sense_parts(key, cards[0]['lines'], hom, n_hom)):
                 sub = '%s~~h%d_00_%s' % (root, hom, label)
                 write(sub, blob, head_pf)
-                submap.append({'subkey': sub, 'hom': hom, 'seg_index': 0, 'part': part,
-                               'kind': 'head', 'section': label, 'upasarga': '', 'root_key': key})
+                entry = {'subkey': sub, 'hom': hom, 'seg_index': 0, 'part': part,
+                         'kind': 'head', 'section': label, 'upasarga': '', 'root_key': key}
+                entry.update(meta)
+                submap.append(entry)
             for seg, c in enumerate(cards[1:], start=1):
                 # c['kind'] is 'prefix' (<div n="p">) or 'secondary' (<div n="m"> caus/desid/
                 # intens) — preserve it so root_glue nests secondary stems with the simple verb,
@@ -449,11 +545,13 @@ def gen_root_split(key, pwg_idx, verbose=True):
                                    'label': label, 'root_key': key})
         else:                                       # small homonym -> keep whole (chunked if long)
             small_pf = subcard_portrait(key, '')
-            for part, (label, blob) in enumerate(head_sense_parts(key, dl, hom, n_hom)):
+            for part, (label, blob, meta) in enumerate(head_sense_parts(key, dl, hom, n_hom)):
                 sub = '%s~~h%d_00_%s' % (root, hom, label)
                 write(sub, blob, small_pf)
-                submap.append({'subkey': sub, 'hom': hom, 'seg_index': 0, 'part': part,
-                               'kind': 'head', 'section': label, 'upasarga': '', 'root_key': key})
+                entry = {'subkey': sub, 'hom': hom, 'seg_index': 0, 'part': part,
+                         'kind': 'head', 'section': label, 'upasarga': '', 'root_key': key}
+                entry.update(meta)
+                submap.append(entry)
     head_parts = [s for s in submap if s['kind'] == 'head']   # for the verbose line
     # headword-level supplements: attach once, tagged to homonym 0
     for part, (label, blob) in enumerate(supplement_parts(key)):

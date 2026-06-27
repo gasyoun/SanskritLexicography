@@ -55,7 +55,12 @@ def glue(root, outdir):
             parts.append('')
         if s['kind'] in ('head', 'supplement'):
             if sec.startswith('pwg'):
-                head = '## Простой глагол (корень {#%s#}) — значения, часть %d' % (root, s.get('part', 0) + 1)
+                if s.get('batch_of') is not None:
+                    head = ('## Простой глагол (корень {#%s#}) — значение %s, цитатный пакет %d/%d'
+                            % (root, s.get('batch_of'), s.get('batch_index', 0) + 1,
+                               s.get('batch_count', 1)))
+                else:
+                    head = '## Простой глагол (корень {#%s#}) — значения, часть %d' % (root, s.get('part', 0) + 1)
             elif sec.startswith('pwkvn'):
                 head = '## PWKVN'
             elif sec.startswith('pw'):
