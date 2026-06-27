@@ -19,7 +19,14 @@ src = open(base + r'\src\pilot\run_pilot_wf.js', encoding='utf-8').read()
 schema = open(base + r'\schemas\pwg_ru_final_card.schema.json', encoding='utf-8').read().rstrip()
 
 root = sys.argv[1] if len(sys.argv) > 1 else 'tyaj'
-mode = sys.argv[2] if len(sys.argv) > 2 else 'body'   # 'body' = single-turn inlined; 'headtest' = 1 head, multi-turn, no-abridge
+# positional mode is 'body' (default) or 'headtest'; flags (--keys=) are parsed separately.
+mode = sys.argv[2] if len(sys.argv) > 2 and not sys.argv[2].startswith('--') else 'body'
+# --keys=k1,k2,… re-queues ONLY those sub-cards (full subkey or its ~~suffix). Used to re-run a
+# handful of gate-flagged cards without re-running the whole root.
+_keyfilter = None
+for _a in sys.argv[2:]:
+    if _a.startswith('--keys='):
+        _keyfilter = set(filter(None, _a.split('=', 1)[1].split(',')))
 # The splitter writes rootmaps under the reversible safe-name stem (e.g. sTA -> s_t_a),
 # while sub-card subkeys inside are already safe stems. Resolve the rootmap by safe
 # name; fall back to the raw name so ASCII roots (tyaj, gam) keep working unchanged.
@@ -34,6 +41,9 @@ if mode == 'headtest':
     # keep only the densest head (homonym-0 head part)
     heads = [k for k in keys if k.endswith('_pwg00') and '~~h0_' in k]
     keys = heads[:1] or keys[:1]
+if _keyfilter:
+    keys = [k for k in keys if k in _keyfilter or k.split('~~')[-1] in _keyfilter]
+    assert keys, 'no sub-cards matched --keys=%s' % sorted(_keyfilter)
 
 # inline each card's two source files; classify by citation density
 DENSE_LS = 30   # >30 <ls> in raw → citation-dense → multi-turn + no-abridge lane

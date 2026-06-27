@@ -212,6 +212,32 @@ def _sense_no(block):
     return int(m.group(1)) if m else None
 
 
+# Any <div n=> sense marker — a top-level NUMBER (1, 2, …) or a lettered SUB-sense (a, b, …).
+_SENSE_MARK = re.compile(r'<div n="[^"]*">\s*[—\-]?\s*([0-9]+|[a-z])\s*[〉)]')
+
+
+def _marker_tags(lines, top):
+    """Canonical sense tags for the <div n=> markers in `lines`, threading the running
+    top-level sense number `top` in from the preceding chunks. A NUMBER marker is a new
+    top-level sense (tag = the number, and it becomes the new `top`); a LETTER marker is a
+    SUB-sense of the current top-level sense (tag = "<top><letter>", e.g. under sense 9 the
+    marker `c〉` → "9c"). This disambiguates the two separate <div n="2"> letter-blocks a PWG
+    head can carry (sub-senses of different numbered senses), which collide under bare-letter
+    or n-attribute tagging (TOKEN_OPTIMIZATION_2026-06-27.md Finding 10). Returns (tags, top)."""
+    tags = []
+    for ln in lines:
+        m = _SENSE_MARK.search(ln)
+        if not m:
+            continue
+        lab = m.group(1)
+        if lab.isdigit():
+            top = int(lab)
+            tags.append(str(top))
+        else:
+            tags.append('%d%s' % (top, lab) if top else lab)
+    return tags, top
+
+
 def sense_chunks(head_lines, cit_budget):
     """Split a PWG head at <div n=…> SENSE boundaries (NOT line count) and group consecutive
     senses until their combined <ls> citation count exceeds cit_budget — so every part is
@@ -277,17 +303,30 @@ def head_sense_parts(key, head_lines, hom, n_hom):
     parts = []
     chunks = sense_chunks(head_lines, HEAD_CIT_BUDGET)
     htag = (' homonym %d' % (hom + 1)) if n_hom > 1 else ''
+    top = 0                                           # running top-level sense number across chunks
     for i, ch in enumerate(chunks):
         ptag = (' part %d/%d' % (i + 1, len(chunks))) if len(chunks) > 1 else ''
         kind = _sec_kind(ch)                          # caus/pass/desid/intens tail, or None
+        ctags, top = _marker_tags(ch, top)            # canonical tags for this chunk's senses
         if kind:
             tag = ('PWG-ROOT HEAD%s%s — root=%s (%s SECONDARY-CONJUGATION senses; PWG restarts '
                    'numbering at 1 here, so tag EACH sense "%s. N" (%s. 1, %s. 2 …), NEVER bare '
                    '1/2/3, and keep the <ab>%s.</ab> marker in the German)'
                    % (htag, ptag, key, _SEC_LABEL.get(kind, kind.upper()), kind, kind, kind, kind))
         else:
-            tag = ('PWG-ROOT HEAD%s%s — root=%s (simple verb + senses; same root_key)'
-                   % (htag, ptag, key))
+            # Explicit canonical sense tag(s) for this part — render EXACTLY these, no more, no
+            # fewer, tag each verbatim. Stops prefix-drift / fabricated sub-letters across the two
+            # <div n="2"> letter-blocks a head can carry (Finding 10).
+            directive = ''
+            if ctags:
+                directive = (' — render EXACTLY these %d sense(s), tag each VERBATIM as listed, '
+                             'add no others and split none: [%s]. A lettered sub-sense is tagged '
+                             '<enclosing sense number><letter> (e.g. under sense 9, "c" -> "9c"); '
+                             'never tag it bare, never use the <div n=> attribute as the number, '
+                             'never invent a sub-letter not listed'
+                             % (len(ctags), ', '.join(ctags)))
+            tag = ('PWG-ROOT HEAD%s%s — root=%s (simple verb + senses; same root_key)%s'
+                   % (htag, ptag, key, directive))
         parts.append(('pwg%02d' % i, '=== LAYER: %s ===\n\n%s' % (tag, '\n'.join(ch))))
     return parts
 
