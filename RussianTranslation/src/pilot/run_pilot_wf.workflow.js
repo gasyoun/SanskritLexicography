@@ -1,6 +1,7 @@
-import { readFileSync } from 'node:fs'
-import { fileURLToPath } from 'node:url'
-import { dirname, join } from 'node:path'
+// AUTO-DERIVED from src/pilot/run_pilot_wf.js for the in-chat Workflow tool.
+// Only file-delivery changed: no node:fs; schema + card list inlined; each agent
+// reads its own input/<key>.raw.txt + .portrait.json via the Read tool, exactly as
+// the committed prompts already instruct. Prompts/models/stages are byte-identical.
 
 export const meta = {
   name: 'pwgru-pilot-a-section',
@@ -13,8 +14,168 @@ export const meta = {
 }
 
 const IN = 'C:\\\\Users\\\\user\\\\Documents\\\\GitHub\\\\SanskritLexicography\\\\RussianTranslation\\\\src\\\\pilot\\\\input'
-const HERE = dirname(fileURLToPath(import.meta.url))
-const FINAL_CARD_SCHEMA = JSON.parse(readFileSync(join(HERE, '..', '..', 'schemas', 'pwg_ru_final_card.schema.json'), 'utf-8'))
+const FINAL_CARD_SCHEMA = {
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "pwg_ru.final_card.schema.v1",
+  "title": "PWG Russian final translated card with QA verdict",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["card", "judge"],
+  "properties": {
+    "key": {
+      "type": "string",
+      "description": "Workflow batch key; when present it must match card.key1."
+    },
+    "card": { "$ref": "#/$defs/card" },
+    "judge": { "$ref": "#/$defs/judge" }
+  },
+  "$defs": {
+    "card": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["key1", "iast", "records", "notes"],
+      "properties": {
+        "key1": { "type": "string", "minLength": 1 },
+        "iast": { "type": "string" },
+        "records": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/record" }
+        },
+        "notes": { "type": "string" }
+      }
+    },
+    "record": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["h", "grammar", "senses"],
+      "properties": {
+        "h": { "type": "string" },
+        "grammar": {
+          "type": "string",
+          "description": "POS/gender as PWG, verbatim where applicable."
+        },
+        "senses": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/sense" }
+        },
+        "renou_oldest_sense": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Index into senses[] of the sense whose oldest <ls> citation is earliest in this record (the meaning attested first). Omitted when no sense carries a dated citation. Added by annotate_renou.py."
+        }
+      }
+    },
+    "sense": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "tag",
+        "german",
+        "russian",
+        "equivalence_type",
+        "source_type",
+        "stratum",
+        "differentia"
+      ],
+      "properties": {
+        "tag": { "type": "string", "minLength": 1 },
+        "german": {
+          "type": "string",
+          "description": "The PWG German for this sense, with the source's {#…#} Sanskrit delimiters and <ls>/<ab>/<lex>/<is> markup kept VERBATIM — not stripped to plain text, not transliterated to bare IAST."
+        },
+        "russian": {
+          "type": "string",
+          "description": "The Russian rendering in scholarly register."
+        },
+        "equivalence_type": { "enum": ["equivalent", "explanatory"] },
+        "source_type": { "enum": ["attested", "lexicographic", "mixed"] },
+        "stratum": {
+          "type": "string",
+          "description": "Stratum used, such as Vedic, Epic / early-Classical, Classical, Medieval, or empty."
+        },
+        "differentia": {
+          "type": "string",
+          "description": "Apresjan near-synonym discrimination note, or empty when no discrimination was needed."
+        },
+        "government": {
+          "type": "string",
+          "description": "OPTIONAL. The rekcija / government pattern of this sense rendered in the Kochergina idiom — the case(s)/preposition frame the word takes, e.g. '+ Acc. (ради, для)', 'с Instr.', 'Abl. (по причине)'. Derived from PWG/PW case-<ab> tokens + the Koch model. Empty/absent when the sense governs nothing. Grounds: apparatus study Dimension 1."
+        },
+        "labels": {
+          "type": "array",
+          "items": { "type": "string" },
+          "uniqueItems": true,
+          "description": "OPTIONAL. Diasystem / domain labels in the Kochergina Russian abbreviation set (e.g. грам., миф., бот., мед., астр., филос., юр., воен., поэт., nom. pr.). Maps PWG <ab>/AP90 bracketed domain markers onto Koch's vocabulary. Chronology is NOT carried here — that is the separate Renou stratum/renou fields. Empty/absent when no domain applies. Grounds: apparatus study Dimension 2."
+        },
+        "renou": {
+          "type": "array",
+          "items": { "enum": ["I", "II", "III", "IV", "V"] },
+          "uniqueItems": true,
+          "description": "Renou language-state(s) of Sanskrit this sense is attested in, derived deterministically from its <ls> citations (I Vedic, II Pāṇinian, III Epic, IV Classical, V Buddhist/Jaina). Multi-label, ordered I→V. Empty/absent when the sense carries no recognised quotation. Added by annotate_renou.py."
+        },
+        "renou_oldest": {
+          "enum": ["I", "II", "III", "IV", "V", ""],
+          "description": "The Renou state of this sense's earliest-dated <ls> citation, or empty when no dated citation is present."
+        }
+      }
+    },
+    "judge": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "key1",
+        "ok",
+        "severity",
+        "register_ok",
+        "sigla_kept",
+        "coverage_ok",
+        "corpus_used",
+        "discrimination_quality",
+        "issues",
+        "note"
+      ],
+      "properties": {
+        "key1": { "type": "string", "minLength": 1 },
+        "ok": { "type": "boolean" },
+        "severity": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 5,
+          "description": "1 is best, 5 is worst."
+        },
+        "register_ok": { "type": "boolean" },
+        "sigla_kept": {
+          "type": "boolean",
+          "description": "Source sigla and grammar abbreviations remain verbatim."
+        },
+        "coverage_ok": {
+          "type": "boolean",
+          "description": "Every PWG sense was rendered."
+        },
+        "corpus_used": { "type": "boolean" },
+        "discrimination_quality": {
+          "enum": ["strong", "adequate", "weak", "missing"]
+        },
+        "issues": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/judge_issue" }
+        },
+        "note": { "type": "string" }
+      }
+    },
+    "judge_issue": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["severity", "detail"],
+      "properties": {
+        "severity": { "type": "integer", "minimum": 1, "maximum": 5 },
+        "detail": { "type": "string" }
+      }
+    }
+  }
+}
 // Reversible Windows-safe filename stem — MUST match src/safe_filename.py.
 // Keeps the legacy uppercase encoding for compatibility, and escapes forbidden
 // filename chars such as "|" as ~hhhh.
@@ -28,20 +189,8 @@ const safeName = k => [...k].map(c => {
 // slice. Edit SECTION/OFFSET/LIMIT to run successive batches (0–29, 30–59, …) over
 // the full a-section's 12,155 inputs. Falls back to the original 15-key pilot list
 // if the manifest can't be read (e.g. scale_route hasn't run, or no fs access).
-const SECTION = 'a'
-const OFFSET = 0
-const LIMIT = 50
-const FALLBACK = ['arTa', 'agni', 'amfta', 'anna', 'aNga', 'akzara', 'anta', 'antarikza',
-                  'ap', 'anya', 'apara', 'arjuna', 'anaGa', 'antar', 'api']
-let CARDS
-try {
-  const manifest = JSON.parse(readFileSync(join(HERE, 'output', `scale_manifest.${SECTION}.json`), 'utf-8'))
-  CARDS = manifest.map(e => e.key1).slice(OFFSET, OFFSET + LIMIT)
-  console.error(`manifest ${SECTION}: ${manifest.length} keys; batch [${OFFSET}, ${OFFSET + LIMIT}) → ${CARDS.length} cards`)
-} catch (e) {
-  CARDS = FALLBACK
-  console.error(`manifest read failed (${e.message}); using ${FALLBACK.length}-key fallback`)
-}
+// SMOKE TEST: first 3 sub-cards of the giant root gam (no glue; mechanism proof).
+const CARDS = ['gam~~h0_00_pwg00', 'gam~~h0_00_pwg01', 'gam~~h0_00_pwg02']
 
 const CONV = `pwg_ru CONVENTIONS (from Böhtlingk-Roth's own prefaces + project decisions — follow EXACTLY):
 - REGISTER: scholarly-philological. Faithful to PWG's density and precision; this is a printed scholarly dictionary.
