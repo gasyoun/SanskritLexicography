@@ -169,6 +169,50 @@ residual 19 reads → 0); (ii) head-splitter for `*_pwg00`; (iii) optional
 Aggressive batching of tiny sub-cards. The sampled-judge pass (step 3) is built
 into the plan but not yet run.
 
+## Harness lock — head lane correctness (2026-06-27, continued)
+
+Locking the head lane surfaced two structural bugs the per-card gates could not
+see, both now fixed deterministically (Python), plus a new free guard.
+
+**Finding 6 — sense-aware head split (`sense_chunks`).** Heads fail by citation
+DENSITY, not length. Split the head at `<div n=>` sense boundaries, grouping
+until `<ls>` count > `HEAD_CIT_BUDGET=18`. tyaj head 125-cite single card → 8–10
+parts ≤34 each → renders single-pass without abridging.
+
+**Finding 7 — dense-lane over-production.** The first head lane let "dense" cards
+read their sibling part-files (multi-turn), so `pwg00` rendered the WHOLE head
+(13 senses) and `pari` 173 `<ls>` vs its 86 — duplicating senses other parts
+also produce. Fix: BOTH lanes inline their own part only (single-turn) + an
+anti-roaming/anti-memory guard ("translate EXACTLY the senses below, do not read
+other files or recall from memory"). Bonus: dense cards got cheaper too.
+
+**Finding 8 — causative tail mis-tag.** A secondary-conjugation section
+(caus./pass./desid.) RESTARTS numbering at 1 and its `<ab>caus.</ab>` marker
+rides at the END of the previous sense's line. The split orphaned caus.1/2/3
+from the marker → the model tagged them bare 1/2/3, colliding with simple-verb
+senses. Fix in `_pilot_gen_merged.py`: detect the numbering reset, merge the
+whole secondary tail into one chunk, RELOCATE the trailing `<ab>caus.</ab>`
+marker to its head, and LABEL the part `(CAUSATIVE … tag each "caus. N")`. Model
+now tags `caus. 1/2/3` correctly.
+
+**New guard — `audit_sense_dupes.py` (free Python QA).** Deterministically flags
+any numbered sense rendered by >1 head-part of the same homonym. Namespaces
+secondary-section senses by reading the part's raw LAYER header, so a legitimate
+caus-renumber passes while genuine over-production fails. Validated: FAILs the
+Finding-7 output (8 dups), PASSes the fixed output.
+
+### Final tyaj A/B (locked harness)
+- 19 cards, **640 k tokens, 3.4 min, 0 failures** (single-turn body + inlined
+  dense, no judge).
+- **dup guard PASS · NWS PASS · fidelity 18/19** (the 1 miss = h2 homonym-3 head
+  dropped 2 paradigm `{#…#}` spans → normal re-queue, not structural).
+- `pwg07` tagged `caus. 1/2/3`; glue → `tyaj.NESTED.md`, no duplicated senses.
+
+**Status: head lane LOCKED.** Production generator promoted to
+[`src/pilot/gen_opt_harness.py`](src/pilot/gen_opt_harness.py) (portable path).
+Next: wire `audit_sense_dupes.py` into the run loop, then the real frequency-
+queue run with run-to-cap instrumentation.
+
 ## Head lane — FINAL: Python sense-aware split (more Python, less LLM)
 
 M.G. (2026-06-27): "the proper head lane is a sense-aware split — more Python,

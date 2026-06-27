@@ -190,6 +190,20 @@ def chunk_records(records, budget):
 
 
 _SENSE_NUM = re.compile(r'<div n="[^"]*">\s*[—\-]?\s*(\d+)[〉)]')
+# A secondary-conjugation section header (— <ab>caus.</ab> …) trailing the previous sense line.
+_SEC_TAIL = re.compile(r'(\s*[—\-]\s*<ab>(?:caus|pass|desid|intens|partic|inf)\.?</ab>.*)$', re.I)
+_SEC_HEAD = re.compile(r'^\s*[—\-]?\s*<ab>(caus|pass|desid|intens|partic|inf)\.?</ab>', re.I)
+_SEC_LABEL = {'caus': 'CAUSATIVE', 'pass': 'PASSIVE', 'desid': 'DESIDERATIVE',
+              'intens': 'INTENSIVE', 'partic': 'PARTICIPIAL', 'inf': 'INFINITIVE'}
+
+
+def _sec_kind(chunk):
+    """If a head chunk opens with a relocated secondary-conjugation marker, return its kind."""
+    for ln in chunk:
+        if ln.strip():
+            m = _SEC_HEAD.match(ln)
+            return m.group(1).lower() if m else None
+    return None
 
 
 def _sense_no(block):
@@ -235,7 +249,16 @@ def sense_chunks(head_lines, cit_budget):
                 break
             prev = n
     if reset is not None:
-        blocks = blocks[:reset] + [[ln for b in blocks[reset:] for ln in b]]
+        tail = [ln for b in blocks[reset:] for ln in b]
+        # The section marker (— <ab>caus.</ab> etc.) often rides at the END of the block just
+        # before the reset (here on sense 9's line). Relocate it to the head of the merged tail
+        # so the sub-senses keep their caus/pass/desid label and are not mis-tagged as 1/2/3.
+        if reset > 0 and blocks[reset - 1]:
+            m = _SEC_TAIL.search(blocks[reset - 1][-1])
+            if m:
+                blocks[reset - 1][-1] = blocks[reset - 1][-1][:m.start()].rstrip()
+                tail = [m.group(1).strip()] + tail
+        blocks = blocks[:reset] + [tail]
     chunks, g, gc = [], [], 0
     for b in blocks:
         bc = '\n'.join(b).count('<ls')
@@ -256,8 +279,15 @@ def head_sense_parts(key, head_lines, hom, n_hom):
     htag = (' homonym %d' % (hom + 1)) if n_hom > 1 else ''
     for i, ch in enumerate(chunks):
         ptag = (' part %d/%d' % (i + 1, len(chunks))) if len(chunks) > 1 else ''
-        tag = ('PWG-ROOT HEAD%s%s — root=%s (simple verb + senses; same root_key)'
-               % (htag, ptag, key))
+        kind = _sec_kind(ch)                          # caus/pass/desid/intens tail, or None
+        if kind:
+            tag = ('PWG-ROOT HEAD%s%s — root=%s (%s SECONDARY-CONJUGATION senses; PWG restarts '
+                   'numbering at 1 here, so tag EACH sense "%s. N" (%s. 1, %s. 2 …), NEVER bare '
+                   '1/2/3, and keep the <ab>%s.</ab> marker in the German)'
+                   % (htag, ptag, key, _SEC_LABEL.get(kind, kind.upper()), kind, kind, kind, kind))
+        else:
+            tag = ('PWG-ROOT HEAD%s%s — root=%s (simple verb + senses; same root_key)'
+                   % (htag, ptag, key))
         parts.append(('pwg%02d' % i, '=== LAYER: %s ===\n\n%s' % (tag, '\n'.join(ch))))
     return parts
 
