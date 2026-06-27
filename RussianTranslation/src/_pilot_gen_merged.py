@@ -189,6 +189,15 @@ def chunk_records(records, budget):
     return groups
 
 
+_SENSE_NUM = re.compile(r'<div n="[^"]*">\s*[—\-]?\s*(\d+)[〉)]')
+
+
+def _sense_no(block):
+    """The leading top-level sense number of a <div> block (the N in `N〉` / `N)`), or None."""
+    m = _SENSE_NUM.search(block[0]) if block else None
+    return int(m.group(1)) if m else None
+
+
 def sense_chunks(head_lines, cit_budget):
     """Split a PWG head at <div n=…> SENSE boundaries (NOT line count) and group consecutive
     senses until their combined <ls> citation count exceeds cit_budget — so every part is
@@ -213,6 +222,20 @@ def sense_chunks(head_lines, cit_budget):
         return chunk_lines(head_lines, HEAD_BUDGET)
     if intro:
         blocks[0] = intro + blocks[0]
+    # A secondary-conjugation section (caus./pass./desid./intens.) RESTARTS sense
+    # numbering at 1, and its <ab>caus.</ab> marker sits ONLY on its first sub-sense.
+    # If a later chunk boundary falls inside that section, the orphaned sub-senses lose
+    # the marker and the model mis-tags them as simple-verb senses (tyaj caus.2/3 → "2"/"3").
+    # So merge everything from the first numbering reset into one trailing block.
+    nums, prev, reset = [_sense_no(b) for b in blocks], 0, None
+    for i, n in enumerate(nums):
+        if n is not None:
+            if prev >= 1 and n <= prev:              # numbering went backwards → secondary section
+                reset = i
+                break
+            prev = n
+    if reset is not None:
+        blocks = blocks[:reset] + [[ln for b in blocks[reset:] for ln in b]]
     chunks, g, gc = [], [], 0
     for b in blocks:
         bc = '\n'.join(b).count('<ls')
