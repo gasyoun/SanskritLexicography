@@ -10,6 +10,7 @@ but the validator is committed so G4 can be reproduced before a print cut.
 
   python validate_assembled_export.py [--min-cards N] [--cards PATH] [--quarantine PATH]
 """
+import argparse
 import json, os, sys
 sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
@@ -133,23 +134,25 @@ def load_jsonl(path):
     return rows
 
 
+def parse_args():
+    ap = argparse.ArgumentParser(
+        description='Validate the deterministic assembled-card export.')
+    ap.add_argument('--min-cards', type=int,
+                    help='minimum card count for bounded/fixture validation')
+    ap.add_argument('--cards', default=OUT,
+                    help='assembled cards JSONL path')
+    ap.add_argument('--quarantine', default=QUARANTINE,
+                    help='assembled-card quarantine JSONL path')
+    args = ap.parse_args()
+    if args.min_cards is not None and args.min_cards < 1:
+        ap.error('--min-cards must be a positive integer')
+    return args
+
+
 def main():
-    min_cards = None
-    out, quarantine_path = OUT, QUARANTINE
-    args = sys.argv[1:]
-    i = 0
-    while i < len(args):
-        if args[i] == '--min-cards':
-            min_cards = int(args[i + 1])
-            i += 2
-        elif args[i] == '--cards':
-            out = args[i + 1]
-            i += 2
-        elif args[i] == '--quarantine':
-            quarantine_path = args[i + 1]
-            i += 2
-        else:
-            fail('usage: python validate_assembled_export.py [--min-cards N] [--cards PATH] [--quarantine PATH]')
+    args = parse_args()
+    min_cards = args.min_cards
+    out, quarantine_path = args.cards, args.quarantine
     if not os.path.exists(out):
         fail('missing %s; run python assemble.py build first' % os.path.basename(out))
     if not os.path.exists(quarantine_path):

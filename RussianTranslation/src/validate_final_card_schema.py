@@ -8,6 +8,7 @@ schemas/pwg_ru_final_card.schema.json. It validates workflow results shaped as
   python validate_final_card_schema.py [workflow-output.json ...]
   python validate_final_card_schema.py --selftest
 """
+import argparse
 import copy, json, os, sys
 sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
@@ -268,14 +269,25 @@ def cmd_selftest():
     print('final-card schema selftest OK: %d negative case(s)' % len(cases))
 
 
+def parse_args():
+    ap = argparse.ArgumentParser(
+        description='Validate canonical pwg_ru final translated cards.')
+    ap.add_argument('paths', nargs='*',
+                    help='workflow output JSON file(s); defaults to fixture')
+    ap.add_argument('--selftest', action='store_true',
+                    help='run negative validation selftests')
+    return ap.parse_args()
+
+
 def main():
-    if len(sys.argv) > 1 and sys.argv[1] == '--selftest':
+    args = parse_args()
+    if args.selftest:
         cmd_selftest()
         return
     schema = json.load(open(SCHEMA, encoding='utf-8'))
     if schema.get('$id') != SCHEMA_ID:
         fail('unexpected schema id')
-    paths = sys.argv[1:] or [DEFAULT_FIXTURE]
+    paths = args.paths or [DEFAULT_FIXTURE]
     total = 0
     for path in paths:
         total += validate_file(path)
