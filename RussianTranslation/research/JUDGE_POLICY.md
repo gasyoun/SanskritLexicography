@@ -11,10 +11,10 @@ default (`--judge-model opus`) stays until the gate passes, then flips.
 > Sonnet** and escalates to **Opus only on a reject** (`isHard` = `ok=false || severity>=3`);
 > the Opus verdict is final (becomes `judge`; Sonnet's original kept as `judge_sonnet`,
 > `escalated:true`). Publishable cards (sev 1–2) spend **no Opus tokens** — the weekly-quota
-> headroom that makes the bulk run feasible on one Max seat. Still TODO for full defence-in-depth:
-> the **periodic ~5 % Opus audit of clean-passed cards** (rollout step 3) is not yet wired into
-> the window loop — run it manually per batch with [`../src/judge_disagreements.py`](../src/judge_disagreements.py)
-> until automated.
+> headroom that makes the bulk run feasible on one Max seat. For defence-in-depth, the current
+> window loop writes a deterministic semantic review queue, `judge_sample.keys.txt`: all Python
+> gate failures plus a default clean-card sample. Send only that queue to sampled semantic judging
+> after mechanical gates pass.
 
 Grounds: the four-run A/B in [`JUDGE_AB.md`](JUDGE_AB.md). Summary:
 
@@ -44,10 +44,11 @@ kept?).
 1. **Sonnet judges every card** in the bulk run (translate stage stays Sonnet; judge → Sonnet).
 2. **Opus re-judges every reject.** Any card Sonnet flags BAD goes to an Opus re-pass before
    re-translation — cheap (rejects are a minority) and it backstops the rare Sonnet over-flag.
-3. **Periodic Opus audit of clean-passed cards.** Random ~5% of Sonnet-approved cards re-judged
-   by Opus each batch, scored with [`../src/judge_ab_score.py`](../src/judge_ab_score.py); if the
-   false-clear rate ever exceeds ~1% or κ drops below 0.7, halt and re-evaluate. This catches
-   distribution drift the static A/B can't.
+3. **Sampled semantic audit of clean-passed cards.** `audit_window.py` writes
+   `judge_sample.keys.txt` after each window: all Python-gate failures plus a deterministic
+   clean-card sample (currently 10% by default, minimum 5 where available). If sampled judging
+   finds semantic drift, halt and re-evaluate before advancing roots. This catches distribution
+   drift the static A/B can't without spending Opus tokens on every clean card.
 4. **Two-judge panel.** Production planned two judges (Opus + YandexGPT). Options under this
    policy: **Sonnet + YandexGPT** (cheapest), or **Sonnet + Opus-on-disagreement** (Opus only
    adjudicates where the first judge is uncertain). Decide when wiring the production panel.
@@ -78,17 +79,15 @@ isolation** — deciding it needs the whole entry *and* the Sanskrit sense in th
 cases that *are* decidable from inspection are the rude ones Sonnet already catches. So a planted
 "subtle defect" has a contestable ground truth and tests nothing real.
 
-**The gate instead: mine real Opus-vs-Sonnet disagreements during production.** Both judges score
-every card; the human adjudicates **only the cards where they disagree**, each shown with the
-complete German + Russian entry (real context, the editor is ground truth). Tooled by
-[`../src/judge_disagreements.py`](../src/judge_disagreements.py) (emits a full-context
-adjudication queue). Adopt Sonnet-bulk fully if the disagreement rate stays low **and** the editor
-sides with Sonnet about as often as with Opus on the few conflicts.
+**The gate instead: sample real production cards with full context.** The current window loop
+does not run both judges over every clean card; it writes `judge_sample.keys.txt` for the semantic
+review spend queue after deterministic Python gates. For historical Opus-vs-Sonnet comparison
+runs, [`../src/judge_disagreements.py`](../src/judge_disagreements.py) still emits a full-context
+adjudication queue from paired verdict files.
 
 **Already near-conclusive on real data:** across the ~400 cards judged so far,
 `judge_disagreements.py` finds **0 disagreements in run 3 (191 real a-section cards)** and **2 in
 run 4 (209 cards)** — a ~0.5 % conflict rate, i.e. the adjudication queue is essentially empty.
 The two models almost never disagree, so there is barely anything left to test. The gate is
-therefore mostly a **standing production check**, not a blocker: run the rollout above, let
-`judge_disagreements.py` surface the rare conflicts each batch for the editor, and revisit only if
-the conflict rate climbs.
+therefore mostly a **standing production check**, not a blocker: review the sampled semantic
+queue each mechanically clean window and revisit only if the sampled defect rate climbs.

@@ -174,8 +174,11 @@ If the weekly Max cap fires, add `--weekly-cap-fired --weekly-cap-cumulative-tok
 
 The audit first compares workflow provenance against the current rootmap and raw/portrait
 inputs. Stale output (missing `meta`, key mismatch, rootmap hash mismatch, or input hash
-mismatch) stops before collect/gates/glue and records state `stale_artifact`; regenerate the
-harness and rerun the Max workflow. Use `--allow-stale` only for forensic inspection.
+mismatch) stops before collect/gates/glue and records state `stale_artifact`. Check
+`root_window_status.py`: if the optimized harness already matches the current rootmap, rerun
+that harness in Max and save a fresh `wf_output.json`; regenerate only when the status command
+says the harness is missing, invalid, or scoped to the wrong keys. Use `--allow-stale` only for
+forensic inspection.
 If stale output is refused, `--write-requeue` does **not** overwrite the existing
 `requeue.keys.txt`; stale artifacts cannot produce a trustworthy mechanical requeue list.
 

@@ -40,8 +40,12 @@ python src\pilot\audit_window.py wf_output.json --root <root> --write-requeue
 ```
 
 Expected outcome: state `stale_artifact`. The audit refuses collect/gates/glue
-and preserves the existing `requeue.keys.txt`. Regenerate the harness and rerun
-Max; use `--allow-stale` only for forensic inspection.
+and preserves the existing `requeue.keys.txt`. Run
+`python src\pilot\root_window_status.py <root>` next: if the optimized harness
+matches the current rootmap, rerun that harness in Max and save a fresh
+`wf_output.json`; regenerate only if the status command says the harness is
+missing, invalid, or scoped to the wrong keys. Use `--allow-stale` only for
+forensic inspection.
 
 ## 4. Rerun Only Mechanical Failures
 
