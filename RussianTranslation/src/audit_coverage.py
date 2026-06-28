@@ -70,7 +70,11 @@ def main():
         if not c:
             print('%-28s %-8s %-8s %s' % (k, '-', '0', 'NO-CARD')); fails.append(k); continue
         if not rm:
-            print('%-28s %-8s %-8d %s' % (k, 'n/a', cs, 'ok (not sense-divided)')); continue
+            flag = 'NO-RAW' if rm is None else 'ok (not sense-divided)'
+            print('%-28s %-8s %-8d %s' % (k, 'n/a', cs, flag))
+            if rm is None:
+                fails.append(k)
+            continue
         # absolute-difference guard: a ±1 sense gap on a tiny card is sub-sense splitting /
         # merging, not a real drop/fabrication — require a meaningful absolute gap too.
         flag = ''

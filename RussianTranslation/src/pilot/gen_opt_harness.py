@@ -1,142 +1,206 @@
-"""Generate the BALANCED-tier optimized pwg_ru harness (TOKEN_OPTIMIZATION_2026-06-27.md).
+#!/usr/bin/env python
+"""Generate the BALANCED-tier optimized pwg_ru harness.
 
 Derives from the committed run_pilot_wf.js but rebuilds it as:
-  - translate-ONLY (no per-card LLM judge; the free Python gates + a separate
-    sampled judge cover QA),
-  - SINGLE-TURN: each sub-card's raw.txt + portrait.json are inlined into the
-    prompt and the agent is told to call NO tools -> kills the 11-22 turn /
-    4-12 Read cache_read explosion (Finding 1/2),
-  - 1 automatic RETRY per card on transient API failure (Finding 4).
+  - translate-only (Python gates + sampled semantic judge cover QA),
+  - single-turn sparse cards with raw.txt + portrait.json inlined,
+  - 1 automatic retry per card on transient API failure.
 
-Usage:  python make_workflow_opt.py <root>      # e.g. tyaj
-Writes: src/pilot/run_pilot_wf.opt.js
+Usage:  python src/pilot/gen_opt_harness.py <root> [body|headtest] [--keys=k1,k2]
+Writes: src/pilot/run_pilot_wf.opt.js, or run_pilot_wf.headtest.js for headtest.
 """
-import re, sys, json, os
+import datetime
+import json
+import os
+import re
+import sys
+
 sys.stdout.reconfigure(encoding='utf-8')
-base = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))  # repo root
-IN = base + r'\src\pilot\input'
-src = open(base + r'\src\pilot\run_pilot_wf.js', encoding='utf-8').read()
-schema = open(base + r'\schemas\pwg_ru_final_card.schema.json', encoding='utf-8').read().rstrip()
+sys.stderr.reconfigure(encoding='utf-8')
 
-root = sys.argv[1] if len(sys.argv) > 1 else 'tyaj'
-# positional mode is 'body' (default) or 'headtest'; flags (--keys=) are parsed separately.
-mode = sys.argv[2] if len(sys.argv) > 2 and not sys.argv[2].startswith('--') else 'body'
-# --keys=k1,k2,… re-queues ONLY those sub-cards (full subkey or its ~~suffix). Used to re-run a
-# handful of gate-flagged cards without re-running the whole root.
-_keyfilter = None
-for _a in sys.argv[2:]:
-    if _a.startswith('--keys='):
-        _keyfilter = set(filter(None, _a.split('=', 1)[1].split(',')))
-# The splitter writes rootmaps under the reversible safe-name stem (e.g. sTA -> s_t_a),
-# while sub-card subkeys inside are already safe stems. Resolve the rootmap by safe
-# name; fall back to the raw name so ASCII roots (tyaj, gam) keep working unchanged.
-sys.path.insert(0, base + r'\src')
+from window_common import INP, REPO, SRC, input_paths, load_json, read_text, rootmap_path, sha256_file, write_text
+
+sys.path.insert(0, SRC)
 from safe_filename import safe_name
-_rootmap = f'{IN}\\{safe_name(root)}.rootmap.json'
-if not os.path.exists(_rootmap):
-    _rootmap = f'{IN}\\{root}.rootmap.json'
-rm = json.load(open(_rootmap, encoding='utf-8'))
-keys = [s['subkey'] for s in rm['sub_cards']]
-if mode == 'headtest':
-    # keep only the densest head (homonym-0 head part)
-    heads = [k for k in keys if k.endswith('_pwg00') and '~~h0_' in k]
-    keys = heads[:1] or keys[:1]
-if _keyfilter:
-    keys = [k for k in keys if k in _keyfilter or k.split('~~')[-1] in _keyfilter]
-    assert keys, 'no sub-cards matched --keys=%s' % sorted(_keyfilter)
 
-# inline each card's two source files; classify by citation density
-DENSE_LS = 30   # >30 <ls> in raw → citation-dense → multi-turn + no-abridge lane
-INPUTS, DENSE = {}, []
-for k in keys:
-    raw = open(f'{IN}\\{k}.raw.txt', encoding='utf-8').read()
-    por = open(f'{IN}\\{k}.portrait.json', encoding='utf-8').read()
-    INPUTS[k] = {'raw': raw, 'portrait': por}
-    if raw.count('<ls') > DENSE_LS:
-        DENSE.append(k)
+GENERATOR_VERSION = 'gen_opt_harness.v2.provenance-no-tools'
+DENSE_LS = 30
 
-# 1) strip node imports
-src = re.sub(r"^import .*\n", "", src, count=3, flags=re.M)
 
-# 2) inline schema (drop HERE + readFileSync)
-src, n = re.subn(
-    r"const HERE = dirname\(fileURLToPath\(import\.meta\.url\)\)\n"
-    r"const FINAL_CARD_SCHEMA = JSON\.parse\(readFileSync\(join\(HERE, '\.\.', '\.\.', 'schemas', 'pwg_ru_final_card\.schema\.json'\), 'utf-8'\)\)\n",
-    (lambda _m: "const FINAL_CARD_SCHEMA = " + schema + "\n"), src)
-assert n == 1, f"schema block ({n})"
+def die(message):
+    sys.exit('FAIL: %s' % message)
 
-# 3) CARDS + inlined INPUTS, in place of the SECTION/manifest block
-cards_block = (f"// OPTIMIZED (balanced): all {len(keys)} sub-cards of giant root {root}, "
-               f"single-turn inlined inputs, translate-only.\n"
-               "const CARDS = " + json.dumps(keys) + "\n"
-               "const INPUTS = " + json.dumps(INPUTS, ensure_ascii=True) + "\n")
-src, n = re.subn(r"const SECTION = 'a'.*?\n\}\n", (lambda _m: cards_block), src, flags=re.DOTALL)
-assert n == 1, f"CARDS block ({n})"
 
-# head no-abridge directive (appended to the translate prompt for head cards)
-HEAD_DIR = ('\n\n=== THIS IS A CITATION-DENSE ROOT-HEAD CARD ===\n'
-            'It packs many <ls> source citations per sense. You MUST reproduce EVERY '
-            '<ls>...</ls> and EVERY {#...#} Sanskrit span VERBATIM — do NOT abridge, '
-            'sample, or summarize the citation lists ("u.s.w." is only allowed where the '
-            'SOURCE itself prints it). Losing citations fails the card.')
+def check(condition, message):
+    if not condition:
+        die(message)
 
-if mode == 'headtest':
-    # multi-turn (agent reads its own files) + no-abridge directive, translate-only, 1 retry
-    tail = """phase('Translate')
+
+def parse_args(argv):
+    root = argv[0] if argv else 'tyaj'
+    mode = argv[1] if len(argv) > 1 and not argv[1].startswith('--') else 'body'
+    check(mode in ('body', 'headtest'), 'mode must be body or headtest, got %r' % mode)
+    keyfilter = None
+    for arg in argv[1:]:
+        if arg.startswith('--keys='):
+            keyfilter = set(filter(None, arg.split('=', 1)[1].split(',')))
+    return root, mode, keyfilter
+
+
+def selected_keys(root, mode, keyfilter):
+    path, _stem = rootmap_path(root)
+    check(path, 'no rootmap for %r under %s' % (root, INP))
+    rm = load_json(path)
+    subs = rm.get('sub_cards') or []
+    keys = [s['subkey'] for s in subs]
+    if mode == 'headtest':
+        heads = [s['subkey'] for s in subs
+                 if s.get('hom') == 0 and s.get('kind') == 'head'
+                 and (s.get('section') == 'pwg00'
+                      or str(s.get('section', '')).startswith('pwg00b'))]
+        if not heads:
+            heads = [s['subkey'] for s in subs
+                     if s.get('hom') == 0 and s.get('kind') == 'head']
+        keys = heads[:1] or keys[:1]
+    if keyfilter:
+        keys = [k for k in keys if k in keyfilter or k.split('~~')[-1] in keyfilter]
+        check(keys, 'no sub-cards matched --keys=%s' % sorted(keyfilter))
+    return path, keys
+
+
+def inline_inputs(keys):
+    inputs, dense, input_hashes = {}, [], {}
+    for key in keys:
+        raw_path, portrait_path = input_paths(key)
+        check(os.path.exists(raw_path), 'missing raw input %s' % raw_path)
+        check(os.path.exists(portrait_path), 'missing portrait input %s' % portrait_path)
+        raw = read_text(raw_path)
+        portrait = read_text(portrait_path)
+        inputs[key] = {'raw': raw, 'portrait': portrait}
+        input_hashes[key] = {
+            'raw_sha256': sha256_file(raw_path),
+            'portrait_sha256': sha256_file(portrait_path),
+        }
+        if raw.count('<ls') > DENSE_LS:
+            dense.append(key)
+    return inputs, dense, input_hashes
+
+
+def replace_once(src, pattern, repl, label, flags=0):
+    updated, count = re.subn(pattern, repl, src, flags=flags)
+    check(count == 1, '%s replacement count was %d, expected 1' % (label, count))
+    return updated
+
+
+def build_harness(root, mode, keys, rootmap, inputs, dense, input_hashes):
+    src = read_text(os.path.join(REPO, 'src', 'pilot', 'run_pilot_wf.js'))
+    schema = read_text(os.path.join(REPO, 'schemas', 'pwg_ru_final_card.schema.json')).rstrip()
+    meta = {
+        'schema_version': 'pwg_ru.workflow_meta.v1',
+        'generator': GENERATOR_VERSION,
+        'generated_at': datetime.datetime.now(datetime.timezone.utc).isoformat(
+            timespec='seconds').replace('+00:00', 'Z'),
+        'root': root,
+        'safe_root': safe_name(root),
+        'mode': mode,
+        'selected_keys': keys,
+        'rootmap_sha256': sha256_file(rootmap),
+        'input_hashes': input_hashes,
+    }
+
+    src = re.sub(r"^import .*\n", "", src, count=3, flags=re.M)
+    src = replace_once(
+        src,
+        r"const HERE = dirname\(fileURLToPath\(import\.meta\.url\)\)\n"
+        r"const FINAL_CARD_SCHEMA = JSON\.parse\(readFileSync\(join\(HERE, '\.\.', '\.\.', 'schemas', 'pwg_ru_final_card\.schema\.json'\), 'utf-8'\)\)\n",
+        lambda _m: "const FINAL_CARD_SCHEMA = " + schema + "\n",
+        'schema block')
+
+    cards_block = (f"// OPTIMIZED (balanced): all {len(keys)} sub-cards of giant root {root}, "
+                   f"single-turn inlined inputs, translate-only.\n"
+                   "const CARDS = " + json.dumps(keys) + "\n"
+                   "const INPUTS = " + json.dumps(inputs, ensure_ascii=True) + "\n"
+                   "const META = " + json.dumps(meta, ensure_ascii=True) + "\n")
+    src = replace_once(src, r"const SECTION = 'a'.*?\n\}\n", lambda _m: cards_block,
+                       'CARDS block', flags=re.DOTALL)
+
+    head_dir = ('\n\n=== THIS IS A CITATION-DENSE ROOT-HEAD CARD ===\n'
+                'It packs many <ls> source citations per sense. You MUST reproduce EVERY '
+                '<ls>...</ls> and EVERY {#...#} Sanskrit span VERBATIM - do NOT abridge, '
+                'sample, or summarize the citation lists ("u.s.w." is only allowed where the '
+                'SOURCE itself prints it). Losing citations fails the card.')
+
+    if mode == 'headtest':
+        tail = """phase('Translate')
+const HEAD_DIR = HEAD_DIR_CONST
+const fileBlock = k => '\\n\\n=== SOURCE (inlined - this is the COMPLETE and ONLY input for this card. Do NOT call any tools, do NOT read other files, do NOT add senses, sub-senses, or citations from memory or from sibling head-parts. Translate EXACTLY the senses that appear below, nothing more, nothing less) ===\\n--- ' + fileOf(k) + '.raw.txt ---\\n' + INPUTS[k].raw + '\\n--- ' + fileOf(k) + '.portrait.json ---\\n' + INPUTS[k].portrait
 async function translateOne(k) {
-  const prompt = TR.replace(/KEYFILE/g, fileOf(k)).replace(/KEY/g, k) + HEAD_DIR_CONST
+  const prompt = TR.replace(/KEYFILE/g, fileOf(k)).replace(/KEY/g, k) + fileBlock(k) + HEAD_DIR
   for (let attempt = 0; attempt < 2; attempt++) {
-    const card = await agent(prompt, { label: 'tr-head:' + k + (attempt ? '(retry)' : ''), phase: 'Translate', schema: CARD, model: 'sonnet' })
+    const card = await agent(prompt, { label: 'tr-head:' + k + (attempt ? '(retry)' : ''), phase: 'Translate', schema: CARD, model: 'sonnet', tools: [] })
     if (card) return { key: k, card, judge: null, judge_sonnet: null, escalated: false }
   }
   return { key: k, card: null, judge: null, judge_sonnet: null, escalated: false }
 }
 const out = await parallel(CARDS.map(k => () => translateOne(k)))
-return { results: out }
-""".replace('HEAD_DIR_CONST', json.dumps(HEAD_DIR))
-else:
-    # PRODUCTION dual-lane, translate-only, 1 retry, NO routine LLM judge.
-    #  - sparse cards  -> single-turn, inputs inlined, no tools  (cheap)
-    #  - dense cards   -> multi-turn, read own files, no-abridge directive (heads etc.)
-    tail = ("""phase('Translate')
+return { meta: META, results: out }
+""".replace('HEAD_DIR_CONST', json.dumps(head_dir))
+    else:
+        tail = ("""phase('Translate')
 const DENSE = new Set(DENSE_CONST)
 const HEAD_DIR = HEAD_DIR_CONST
-const fileBlock = k => '\\n\\n=== SOURCE (inlined — this is the COMPLETE and ONLY input for this card. Do NOT call any tools, do NOT read other files, do NOT add senses, sub-senses, or citations from memory or from sibling head-parts. Translate EXACTLY the senses that appear below, nothing more, nothing less) ===\\n--- ' + fileOf(k) + '.raw.txt ---\\n' + INPUTS[k].raw + '\\n--- ' + fileOf(k) + '.portrait.json ---\\n' + INPUTS[k].portrait
+const fileBlock = k => '\\n\\n=== SOURCE (inlined - this is the COMPLETE and ONLY input for this card. Do NOT call any tools, do NOT read other files, do NOT add senses, sub-senses, or citations from memory or from sibling head-parts. Translate EXACTLY the senses that appear below, nothing more, nothing less) ===\\n--- ' + fileOf(k) + '.raw.txt ---\\n' + INPUTS[k].raw + '\\n--- ' + fileOf(k) + '.portrait.json ---\\n' + INPUTS[k].portrait
 async function translateOne(k) {
   const dense = DENSE.has(k)
   const base = TR.replace(/KEYFILE/g, fileOf(k)).replace(/KEY/g, k)
-  // BOTH lanes inline (single-turn, no file roaming -> no sense over-production).
-  // dense cards additionally get the no-abridge directive to keep every citation.
   const prompt = dense ? (base + fileBlock(k) + HEAD_DIR) : (base + fileBlock(k))
   for (let attempt = 0; attempt < 2; attempt++) {
-    const card = await agent(prompt, { label: (dense ? 'tr-dense:' : 'tr:') + k + (attempt ? '(retry)' : ''), phase: 'Translate', schema: CARD, model: 'sonnet' })
+    const card = await agent(prompt, { label: (dense ? 'tr-dense:' : 'tr:') + k + (attempt ? '(retry)' : ''), phase: 'Translate', schema: CARD, model: 'sonnet', tools: [] })
     if (card) return { key: k, card, judge: null, judge_sonnet: null, escalated: false }
   }
   return { key: k, card: null, judge: null, judge_sonnet: null, escalated: false }
 }
 const out = await parallel(CARDS.map(k => () => translateOne(k)))
-return { results: out }
-""".replace('DENSE_CONST', json.dumps(DENSE))
-   .replace('HEAD_DIR_CONST', json.dumps(HEAD_DIR)))
-src, n = re.subn(r"phase\('Translate'\)\n.*$", (lambda _m: tail), src, flags=re.DOTALL)
-assert n == 1, f"pipeline tail ({n})"
+return { meta: META, results: out }
+""".replace('DENSE_CONST', json.dumps(dense))
+           .replace('HEAD_DIR_CONST', json.dumps(head_dir)))
 
-# soften the TR "(read both)" cue: sparse cards have inputs inlined; dense cards open the files.
-if mode != 'headtest':
-    src = src.replace('INPUTS for headword KEY (read both):',
-                      'INPUTS for headword KEY (reproduced INLINE below as the COMPLETE input — do NOT open files, do NOT call any tools, do NOT supply senses from memory):')
+    src = replace_once(src, r"phase\('Translate'\)\n.*$", lambda _m: tail,
+                       'pipeline tail', flags=re.DOTALL)
 
-# meta: mark optimized
-src = src.replace("name: 'pwgru-pilot-a-section',", f"name: 'pwgru-opt-{root}',")
+    if mode != 'headtest':
+        src = src.replace(
+            'INPUTS for headword KEY (read both):',
+            'INPUTS for headword KEY (reproduced INLINE below as the COMPLETE input - do NOT open files, do NOT call any tools, do NOT supply senses from memory):')
 
-for bad in ["readFileSync", "fileURLToPath", "import.meta", "console.error", "dirname("]:
-    assert bad not in src, f"residual node-ism: {bad}"
+    src = src.replace("name: 'pwgru-pilot-a-section',", f"name: 'pwgru-opt-{root}',")
+    for bad in ["readFileSync", "fileURLToPath", "import.meta", "console.error", "dirname("]:
+        check(bad not in src, "residual node-ism: %s" % bad)
+    agent_calls = len(re.findall(r'\bagent\(prompt,\s*\{', src))
+    tool_guards = src.count('tools: []')
+    check(agent_calls == tool_guards,
+          'translate agent tools guard mismatch: %d agent calls, %d tools guards' %
+          (agent_calls, tool_guards))
+    check('const META = ' in src and 'return { meta: META, results: out }' in src,
+          'workflow provenance meta missing')
 
-src = (f"// AUTO-DERIVED (optimized/balanced) from src/pilot/run_pilot_wf.js — root={root}.\n"
-       "// Translate-only, single-turn inlined inputs, 1 retry. Judge = free Python gates\n"
-       "// (run_real_test.py audit + audit_translation.py) on 100%, LLM-judge a 10% sample\n"
-       "// separately. See TOKEN_OPTIMIZATION_2026-06-27.md.\n" + src)
+    return (f"// AUTO-DERIVED (optimized/balanced) from src/pilot/run_pilot_wf.js - root={root}.\n"
+            "// Translate-only, single-turn inlined inputs, 1 retry. Judge = free Python gates\n"
+            "// (audit_window.py) on 100%, LLM-judge a 10% sample separately.\n"
+            "// See TOKEN_OPTIMIZATION_2026-06-27.md.\n" + src)
 
-out = base + (r'\src\pilot\run_pilot_wf.headtest.js' if mode == 'headtest' else r'\src\pilot\run_pilot_wf.opt.js')
-open(out, 'w', encoding='utf-8').write(src)
-print("wrote", out, len(src), "bytes |", len(keys), "cards | mode", mode)
+
+def main(argv=None):
+    root, mode, keyfilter = parse_args(list(sys.argv[1:] if argv is None else argv))
+    rootmap, keys = selected_keys(root, mode, keyfilter)
+    inputs, dense, input_hashes = inline_inputs(keys)
+    src = build_harness(root, mode, keys, rootmap, inputs, dense, input_hashes)
+    out = os.path.join(REPO, 'src', 'pilot',
+                       'run_pilot_wf.headtest.js' if mode == 'headtest'
+                       else 'run_pilot_wf.opt.js')
+    write_text(out, src)
+    print("wrote", out, len(src), "bytes |", len(keys), "cards | mode", mode)
+
+
+if __name__ == '__main__':
+    main()

@@ -503,10 +503,19 @@ def gen_root_split(key, pwg_idx, verbose=True):
     submap = []
     npfx_total = 0
 
+    def clean_old_subcards():
+        """Remove stale generated sub-card inputs for this root before rewriting them."""
+        prefix = root + '~~'
+        for fn in os.listdir(OUT):
+            if fn.startswith(prefix) and (fn.endswith('.raw.txt') or fn.endswith('.portrait.json')):
+                os.remove(os.path.join(OUT, fn))
+
     def write(sub, text, portrait=None):
         open(os.path.join(OUT, sub + '.raw.txt'), 'w', encoding='utf-8').write(text)
         json.dump(portrait or [], open(os.path.join(OUT, sub + '.portrait.json'), 'w', encoding='utf-8'),
                   ensure_ascii=False)
+
+    clean_old_subcards()
 
     for hom, (dl, cards, npfx) in enumerate(segmented):
         if npfx >= MIN_SPLIT:                       # giant homonym -> head parts + prefix sub-cards

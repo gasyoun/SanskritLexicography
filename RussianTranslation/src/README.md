@@ -138,6 +138,13 @@ python build_corpus_lexicon.py build <textfile> [N]  # пословный лек
 python build_corpus_lexicon.py status                # записей + различных ключей
 ```
 
+`build_corpus_lexicon.py` рассчитан на плохой интернет/API: вызовы идут с
+настраиваемыми повторами (`DEEPSEEK_RETRIES`, `DEEPSEEK_CONNECT_TIMEOUT`,
+`DEEPSEEK_READ_TIMEOUT`, `DEEPSEEK_BACKOFF_BASE`), готовые группы пропускаются,
+а полностью сорванные API-батчи пишутся в `corpus_lexicon.failures.jsonl`.
+Их можно добрать позже той же командой с `--retry-failed`; основной JSONL при
+этом остаётся append-only и не переписывается.
+
 `build_src.py` по умолчанию читает `web/corpus_builder/jsonl/` соседнего
 репозитория SamudraManthanam; `build_indic.py` — `../research/external/`.
 

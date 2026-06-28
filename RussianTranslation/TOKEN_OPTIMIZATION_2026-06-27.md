@@ -73,7 +73,9 @@ run will bracket this.
   `ReferenceError` on line 1 of the body. Must run via the Workflow tool.
 - **Workflow tool has no `node:fs`.** The committed harness's `readFileSync` of
   the schema + manifest fails in-sandbox. Fix: inline both as literals; agents
-  read their own inputs. → [`src/pilot/run_pilot_wf.workflow.js`](src/pilot/run_pilot_wf.workflow.js).
+  read their own inputs. The temporary derived script is archived at
+  [`src/pilot/archive/legacy_max_2026-06-27/run_pilot_wf.workflow.js`](src/pilot/archive/legacy_max_2026-06-27/run_pilot_wf.workflow.js);
+  current production uses `gen_opt_harness.py`.
 - **Markup-stripping fidelity fail.** First smoke: Sonnet rendered `german` as
   clean prose, dropping `{#}`/`<ls>` → `audit_translation.py` 0/3 (LS-LOSS
   0/150). Root cause: HARD RULE 3 enforced sigla fidelity only at content level;

@@ -14,6 +14,7 @@ every <stem>.merged.md vs its <stem>.raw.txt source it checks the HARD invariant
 Reports per-unit s/o counts and flags; exits non-zero if any unit fails (CI-usable).
 
   python audit_translation.py [manifest.json]   # default: scale_manifest.freqtest.json
+  python audit_translation.py --wf wf_output.json
 """
 import json, os, re, sys
 
@@ -38,6 +39,8 @@ def body(t):
 
 def audit_unit(stem):
     rawp, outp = os.path.join(IN, stem + '.raw.txt'), os.path.join(OUT, stem + '.merged.md')
+    if not os.path.exists(rawp):
+        return stem, None, ['NO-RAW']
     if not os.path.exists(outp):
         return stem, None, ['NO-OUTPUT']
     rb = body(open(rawp, encoding='utf-8').read())
@@ -59,9 +62,40 @@ def audit_unit(stem):
     return stem, (sls, ols, ssan, osan, cyr), flags
 
 
+def find_results(o):
+    if isinstance(o, dict):
+        if isinstance(o.get('results'), list):
+            return o['results']
+        for v in o.values():
+            r = find_results(v)
+            if r is not None:
+                return r
+    if isinstance(o, list):
+        for v in o:
+            r = find_results(v)
+            if r is not None:
+                return r
+    return None
+
+
+def stems_from_wf(path):
+    results = find_results(json.load(open(path, encoding='utf-8'))) or []
+    return [r.get('key') for r in results if r.get('key')]
+
+
+def stems_from_manifest(path):
+    return [e['key1'] for e in json.load(open(path, encoding='utf-8'))]
+
+
 def main():
-    mpath = sys.argv[1] if len(sys.argv) > 1 else os.path.join(OUT, 'scale_manifest.freqtest.json')
-    stems = [e['key1'] for e in json.load(open(mpath, encoding='utf-8'))]
+    args = sys.argv[1:]
+    if args[:1] == ['--wf']:
+        if len(args) < 2:
+            sys.exit('usage: python audit_translation.py --wf <wf_output.json>')
+        stems = stems_from_wf(args[1])
+    else:
+        mpath = args[0] if args else os.path.join(OUT, 'scale_manifest.freqtest.json')
+        stems = stems_from_manifest(mpath)
     print('=== translation fidelity audit (%d units) ===' % len(stems))
     print('%-24s %-10s %-10s %-5s %s' % ('unit', 'ls s/o', 'san s/o', 'ru', 'flags'))
     fails = []

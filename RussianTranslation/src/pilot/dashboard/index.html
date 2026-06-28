@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RussianTranslation Dashboard</title>
+  <link rel="stylesheet" href="/dashboard.css">
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <h1>RussianTranslation Dashboard</h1>
+      <div class="subtle" id="rootPath">Loading...</div>
+    </div>
+    <div class="refresh">
+      <span id="healthChip" class="chip neutral">loading</span>
+      <span>Last refresh <b id="lastRefresh">--</b></span>
+      <span>Data age <b id="dataAge">--</b></span>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <div class="section-head">
+        <h2>Run Status</h2>
+        <span id="runChip" class="chip neutral">not available yet</span>
+      </div>
+      <div class="metrics" id="runMetrics"></div>
+      <div class="next-action" id="nextAction"></div>
+      <div class="two-col">
+        <div>
+          <h3>Gates</h3>
+          <div id="gateTable"></div>
+        </div>
+        <div>
+          <h3>Queues</h3>
+          <div id="queueSummary"></div>
+        </div>
+      </div>
+      <div class="two-col">
+        <div>
+          <h3>Production Metrics</h3>
+          <div id="productionMetrics"></div>
+        </div>
+        <div>
+          <h3>Latest Stale Errors</h3>
+          <div id="staleErrors" class="note"></div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-head">
+        <h2>Print Gates</h2>
+        <span id="printChip" class="chip neutral">not available yet</span>
+      </div>
+      <div class="print-grid" id="printGates"></div>
+    </section>
+
+    <section>
+      <div class="section-head">
+        <h2>Recent Events</h2>
+        <span class="subtle" id="eventCount"></span>
+      </div>
+      <div id="events"></div>
+    </section>
+
+    <section>
+      <div class="section-head">
+        <h2>Window Ledger</h2>
+        <span class="subtle" id="ledgerCount"></span>
+      </div>
+      <div id="ledger"></div>
+    </section>
+
+    <section>
+      <div class="section-head">
+        <h2>File Freshness</h2>
+      </div>
+      <div id="freshness"></div>
+    </section>
+  </main>
+
+  <script src="/dashboard.js"></script>
+</body>
+</html>

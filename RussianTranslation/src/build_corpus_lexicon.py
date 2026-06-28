@@ -13,7 +13,7 @@ are gitignored. Append-only + resumable (skips verse groups already processed).
   python build_corpus_lexicon.py build <textfile> [N]  align N pairs → lexicon
   python build_corpus_lexicon.py status                 entries + distinct keys
 """
-import json, os, re, sys, time
+import json, os, random, re, sys, time
 from concurrent.futures import ThreadPoolExecutor, as_completed
 import requests
 sys.stdout.reconfigure(encoding='utf-8')
@@ -26,8 +26,13 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 SM = os.path.normpath(os.path.join(HERE, '..', '..', '..', 'SamudraManthanam',
                                    'web', 'corpus_builder', 'jsonl'))
 OUT = os.path.join(HERE, 'corpus_lexicon.jsonl')
+FAIL = os.path.join(HERE, 'corpus_lexicon.failures.jsonl')
 ENV = os.path.join(HERE, '.env')
 API = 'https://api.deepseek.com/chat/completions'
+CONNECT_TIMEOUT = float(os.environ.get('DEEPSEEK_CONNECT_TIMEOUT', '10'))
+READ_TIMEOUT = float(os.environ.get('DEEPSEEK_READ_TIMEOUT', '90'))
+RETRIES = int(os.environ.get('DEEPSEEK_RETRIES', '6'))
+BACKOFF_BASE = float(os.environ.get('DEEPSEEK_BACKOFF_BASE', '2'))
 
 
 def _key():
@@ -61,8 +66,22 @@ SYS = ('You align a Sanskrit verse to its Russian translation at the WORD level.
        'counterpart. Use the dictionary/citation form of the Sanskrit word.')
 
 
-def deepseek(user, retries=3, system=None):
+def transient_http(status):
+    return status == 408 or status == 409 or status == 429 or status >= 500
+
+
+def backoff(attempt, retry_after=None):
+    if retry_after:
+        try:
+            return max(1.0, float(retry_after))
+        except ValueError:
+            pass
+    return min(120.0, BACKOFF_BASE * (2 ** attempt)) + random.uniform(0, 1.5)
+
+
+def deepseek(user, retries=None, system=None):
     global KEY
+    retries = RETRIES if retries is None else retries
     if KEY is None:
         KEY = _key()
     for a in range(retries):
@@ -72,14 +91,21 @@ def deepseek(user, retries=3, system=None):
                                     'response_format': {'type': 'json_object'},
                                     'messages': [{'role': 'system', 'content': system or SYS},
                                                  {'role': 'user', 'content': user}]},
-                              timeout=(10, 60))   # (connect, read) — fail fast, never hang a worker
+                              timeout=(CONNECT_TIMEOUT, READ_TIMEOUT))
+            if r.status_code >= 400 and transient_http(r.status_code):
+                raise requests.HTTPError('transient HTTP %s: %s' %
+                                         (r.status_code, r.text[:200]), response=r)
             r.raise_for_status()
             return r.json()['choices'][0]['message']['content']
         except Exception as ex:
             if a == retries - 1:
                 sys.stderr.write('deepseek fail: %s\n' % ex)
                 return None
-            time.sleep(2 * (a + 1))
+            retry_after = getattr(getattr(ex, 'response', None), 'headers', {}).get('Retry-After')
+            wait = backoff(a, retry_after=retry_after)
+            sys.stderr.write('deepseek retry %d/%d after %.1fs: %s\n' %
+                             (a + 1, retries, wait, ex))
+            time.sleep(wait)
 
 
 def align(sa_text, ru_text):
@@ -170,6 +196,25 @@ def done_groups():
     return s
 
 
+def failed_groups():
+    s = set()
+    if os.path.exists(FAIL):
+        for line in open(FAIL, encoding='utf-8'):
+            try:
+                s.add(json.loads(line)['group'])
+            except Exception:
+                pass
+    return s
+
+
+def write_failure_rows(rows):
+    if not rows:
+        return
+    with open(FAIL, 'a', encoding='utf-8') as f:
+        for row in rows:
+            f.write(json.dumps(row, ensure_ascii=False) + '\n')
+
+
 def cmd_test(args):
     tf = args[0] if args else 'bhagavadgita-sementsov.jsonl'
     for g, work, passage, sa, targets in pairs_of(tf):
@@ -185,14 +230,25 @@ def cmd_test(args):
         break
 
 
+def build_args(args):
+    retry_failed = '--retry-failed' in args
+    vals = [a for a in args if a != '--retry-failed']
+    if not vals:
+        sys.exit('usage: python build_corpus_lexicon.py build <textfile> [N] [workers] [--retry-failed]')
+    tf = vals[0]
+    n = int(vals[1]) if len(vals) > 1 else 10**9
+    workers = int(vals[2]) if len(vals) > 2 else 12
+    return tf, n, workers, retry_failed
+
+
 def cmd_build(args):
-    tf = args[0]
-    n = int(args[1]) if len(args) > 1 else 10**9
-    workers = int(args[2]) if len(args) > 2 else 12
+    tf, n, workers, retry_failed = build_args(args)
     done = done_groups()
+    retry_only = failed_groups() if retry_failed else None
     work = tf.replace('.jsonl', '')
     st = STRATA.get(work, {})
-    groups = [(g, passage, sa, targets) for g, _, passage, sa, targets in pairs_of(tf) if g not in done][:n]
+    groups = [(g, passage, sa, targets) for g, _, passage, sa, targets in pairs_of(tf)
+              if g not in done and (retry_only is None or g in retry_only)][:n]
 
     # batch consecutive groups until ~BATCH align-units per DeepSeek call; never
     # split a group across batches → group-level resumability holds.
@@ -211,7 +267,9 @@ def cmd_build(args):
             for text, kind in targets:
                 meta.append((g, passage, kind)); units.append((sa, text, kind))
         rows, seen = [], set()
-        for (g, passage, kind), pairs in zip(meta, align_batch(units)):
+        aligned = align_batch(units)
+        failed_units = [meta[i] for i, pairs in enumerate(aligned) if not pairs]
+        for (g, passage, kind), pairs in zip(meta, aligned):
             for p in pairs:
                 sa_w = (p.get('sa') or '').strip()
                 ru_w = (p.get('ru') or '').strip()
@@ -228,26 +286,44 @@ def cmd_build(args):
                              'sa': sa_w, 'ru': ru_w, 'kind': kind,
                              'genre': st.get('genre'), 'period': st.get('period'),
                              'date': st.get('date_median')})
-        return rows
+        failed_batch = []
+        if failed_units and not rows:
+            failed_batch = [{'ts': time.strftime('%Y-%m-%dT%H:%M:%SZ', time.gmtime()),
+                             'textfile': tf, 'work': work, 'group': g,
+                             'passage': passage, 'kind': kind,
+                             'reason': 'api-or-json-failure'}
+                            for g, passage, kind in failed_units]
+        return rows, failed_batch
 
-    wrote = doneb = 0
+    wrote = doneb = failed = 0
     with open(OUT, 'a', encoding='utf-8', newline='') as out, ThreadPoolExecutor(workers) as ex:
         futs = [ex.submit(proc, b) for b in batches]
         for fut in as_completed(futs):
-            for r in fut.result():
+            rows, failures = fut.result()
+            for r in rows:
                 out.write(json.dumps(r, ensure_ascii=False) + '\n')
                 wrote += 1
+            if failures:
+                write_failure_rows(failures)
+                failed += len({f['group'] for f in failures})
             out.flush()
             doneb += 1
             if doneb % 20 == 0:
-                print('  %s: %d/%d batches, %d alignments' % (work, doneb, len(batches), wrote))
-    print('%s [%s · ~%s]: %d groups in %d batches → %d alignments (x%d) → %s'
-          % (work, st.get('genre'), st.get('date_median'), len(groups), len(batches), wrote, workers, os.path.basename(OUT)))
+                print('  %s: %d/%d batches, %d alignments, %d failed groups logged' %
+                      (work, doneb, len(batches), wrote, failed))
+    print('%s [%s · ~%s]: %d groups in %d batches → %d alignments, %d failed groups logged (x%d) → %s'
+          % (work, st.get('genre'), st.get('date_median'), len(groups), len(batches), wrote, failed, workers, os.path.basename(OUT)))
+    if failed:
+        print('retry later: python build_corpus_lexicon.py build %s %d %d --retry-failed'
+              % (tf, n, workers))
 
 
 def cmd_status(args):
     if not os.path.exists(OUT):
-        print('lexicon empty'); return
+        print('lexicon empty')
+        if os.path.exists(FAIL):
+            print('failures logged: %d' % sum(1 for line in open(FAIL, encoding='utf-8') if line.strip()))
+        return
     keys, works, n = set(), set(), 0
     for line in open(OUT, encoding='utf-8'):
         r = json.loads(line)
@@ -256,6 +332,9 @@ def cmd_status(args):
         works.add(r['work'])
     print('corpus_lexicon: %d alignments, %d distinct SLP1 keys, %d works'
           % (n, len(keys), len(works)))
+    if os.path.exists(FAIL):
+        print('failures logged: %d (retry with build <textfile> [N] [workers] --retry-failed)'
+              % sum(1 for line in open(FAIL, encoding='utf-8') if line.strip()))
 
 
 def cmd_buildall(args):

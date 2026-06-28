@@ -96,7 +96,7 @@ the server fix.
 | Purpose | Path / command |
 |---|---|
 | Max window loop | [`src/pilot/RUN_FREQ_MAX.md`](src/pilot/RUN_FREQ_MAX.md) |
-| Older a-section loop | [`src/pilot/RUN_ASECTION_MAX.md`](src/pilot/RUN_ASECTION_MAX.md) |
+| Older a-section loop | archived: [`src/pilot/archive/legacy_max_2026-06-27/RUN_ASECTION_MAX.md`](src/pilot/archive/legacy_max_2026-06-27/RUN_ASECTION_MAX.md) |
 | 38-unit freq test runbook | [`src/pilot/FREQ_TEST_RUNBOOK.md`](src/pilot/FREQ_TEST_RUNBOOK.md) |
 | Workflow harness (has fs; Max only) | [`src/pilot/run_pilot_wf.js`](src/pilot/run_pilot_wf.js) |
 | Freq order + giant-root split | `src/freq_route.py`, `_pilot_gen_merged.py --manifest freq --root-split` |

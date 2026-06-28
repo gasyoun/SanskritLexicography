@@ -139,7 +139,7 @@ frequency-0 lexicographic-only words are deferred until that checkpoint).
 SLP1 via the existing `build_dcs_renou` join), score richness, emit
 `pilot/output/scale_manifest.freq.json` (ranked). The rest of the chain is unchanged:
 `_pilot_gen_merged.py --manifest freq` → owner-map → gated translate→audit
-([RUN_ASECTION_MAX.md](src/pilot/RUN_ASECTION_MAX.md) loop, just pointed at the freq
+([archived RUN_ASECTION_MAX.md](src/pilot/archive/legacy_max_2026-06-27/RUN_ASECTION_MAX.md) loop, just pointed at the freq
 manifest). **Only the order changes; the pipeline is the same.**
 
 **Why frequency-first wins:** the most-cited words also have the richest corpus evidence
