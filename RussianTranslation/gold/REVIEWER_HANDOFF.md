@@ -56,6 +56,7 @@ already present.
 ```powershell
 python src/run_batch.py validate_review
 python src/gold_status.py gold/_human_gold_review.csv
+python src/gold_validate.py gold/_human_gold_review.csv
 python src/gold_packet_verify.py gold/_human_gold_review.csv gold/reviewer_packets
 python src/gold_double_review_verify.py gold/_double_review_queue.csv --sample-size 80
 python src/preflight_remaining_gates.py
