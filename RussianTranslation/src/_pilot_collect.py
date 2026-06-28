@@ -62,15 +62,22 @@ def main():
     combined = []
     for res in results:
         k = res.get('key')
+        card = res.get('card')
         j = res.get('judge') or {}
         ok = j.get('ok')
         npass += 1 if (ok and (j.get('severity') or 5) <= 2) else 0
-        nsense = sum(len(r.get('senses', [])) for r in (res.get('card') or {}).get('records', []))
+        nsense = sum(len(r.get('senses', [])) for r in (card or {}).get('records', []))
         print('%-12s %-4s %-4s %-7s %-6s %-6s %-13s %s' % (
             k, 'Y' if ok else 'n', j.get('severity', '?'),
             'Y' if j.get('register_ok') else 'n', 'Y' if j.get('sigla_kept') else 'n',
             'Y' if j.get('coverage_ok') else 'n', j.get('discrimination_quality', '?'),
             '; '.join('s%s:%s' % (i.get('severity'), i.get('detail', '')[:50]) for i in j.get('issues', [])[:2])))
+        if not card:
+            md = '# %s\n\nUNCOLLECTED: workflow returned no card; queued for re-run.\n' % k
+            print('  %s null card — no merged file written' % k)
+            combined.append(md)
+            combined.append('\n---\n')
+            continue
         md = render(res)
         # root-split sub-card keys (e.g. man~~h0_00_pwg00) are ALREADY safe stems — keep them
         # verbatim so root_glue_translated finds <subkey>.merged.md; only headword keys get safe_name.
