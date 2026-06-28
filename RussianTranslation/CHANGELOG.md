@@ -8,7 +8,52 @@ See also: [METHODOLOGY_REVIEW.md](METHODOLOGY_REVIEW.md) (where we want to go),
 [failures/FAILURE_GALLERY.md](failures/FAILURE_GALLERY.md) (what went wrong and
 how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
+## 2026-06-28
+
+### Cleanup — legacy workflow archive and flaky-network resilience
+- Archived the superseded a-section runbook and old Workflow-derived harness under
+  [src/pilot/archive/legacy_max_2026-06-27/](src/pilot/archive/legacy_max_2026-06-27/).
+  The active operator path is now only the frequency-window loop documented in
+  [src/pilot/RUN_FREQ_MAX.md](src/pilot/RUN_FREQ_MAX.md).
+- Generated dashboard/status snapshots are ignored and treated as local runtime artifacts:
+  `release/gate_status_snapshot.{json,md}` and `src/pilot/output/*status/report/queue*`.
+- `build_corpus_lexicon.py` now treats flaky DeepSeek/OpenRouter calls as retry debt:
+  configurable retries/timeouts/backoff, visible failure logging to
+  `src/corpus_lexicon.failures.jsonl`, and `--retry-failed` for later catch-up.
+
 ## 2026-06-27
+
+### Live operations dashboard
+- **Local browser dashboard for Max-run + print-gate status.** New
+  [src/pilot/dashboard_server.py](src/pilot/dashboard_server.py) serves
+  `http://127.0.0.1:8765/` with `/api/status`, reading the latest window status,
+  audit report, ledger, event log, requeue list, print-gate snapshot, and file
+  freshness. The page refreshes every 5 seconds and degrades missing optional
+  files to "not available yet".
+- **Append-only operational event log.** New
+  [src/pilot/dashboard_events.py](src/pilot/dashboard_events.py) writes
+  `src/pilot/output/dashboard_events.jsonl`; [src/pilot/audit_window.py](src/pilot/audit_window.py)
+  records stale refusals, audit starts/ends, gate summaries, requeue counts,
+  glue results, and crash states. [src/preflight_remaining_gates.py](src/preflight_remaining_gates.py)
+  records print-gate snapshot events after writing G5/G6/G7/G10 summaries.
+
+### Production hardening — provenance, stale guards, and print-gate dashboard
+- **Optimized Max workflows are now provenance-bearing and tool-locked.**
+  [src/pilot/gen_opt_harness.py](src/pilot/gen_opt_harness.py) emits top-level workflow
+  `meta` (root, mode, selected keys, rootmap SHA-256, raw/portrait SHA-256 values, generator
+  version, timestamp) and asserts every translate `agent(...)` call has `tools: []`.
+- **Stale workflow outputs now fail before mutation.** [src/pilot/audit_window.py](src/pilot/audit_window.py)
+  compares workflow provenance against the current rootmap and inputs before collect/gates/glue;
+  missing meta, key drift, rootmap drift, or input-hash drift records `stale_artifact`. The old
+  106-card `sTA` `wf_output.json` correctly refuses to audit against the regenerated 123-card
+  rootmap; `--allow-stale` is reserved for forensic inspection.
+- **Window state is ledgered.** `audit_window.py` writes latest status plus append-only
+  `window_ledger.jsonl`; [src/pilot/root_window_status.py](src/pilot/root_window_status.py)
+  now reports rootmap/input hashes before Max spend. A one-card matching fixture exercised the
+  normal collect + free-gate + glue path without model tokens.
+- **Print-gate dashboard.** [src/preflight_remaining_gates.py](src/preflight_remaining_gates.py)
+  now writes `release/gate_status_snapshot.json` and `.md` with G5/G6/G7/G10 counts while
+  leaving all human labels and review decisions untouched.
 
 ### Token optimization for the Max bulk run — "weeks not days" (BALANCED tier)
 - New [TOKEN_OPTIMIZATION_2026-06-27.md](TOKEN_OPTIMIZATION_2026-06-27.md): measured the real
@@ -71,6 +116,53 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
   (no `node:fs`), the freq-queue run no longer "needs a human-driven Max session" — it drives
   from the in-chat Workflow tool. Next: the first real freq window (sthā/bhū/gam), run-to-cap for
   the absolute weekly-quota number. See [HANDOFF_2026-06-27_freq_run.md](HANDOFF_2026-06-27_freq_run.md).
+
+### Finding 5 tail — dense single-sense citation batching
+- **Single over-budget senses now split deterministically.** The first `sTA` run exposed the
+  remaining Finding-5 tail: `pwg00` sense 1 packed 125 `<ls>` citations inside one `<div>`, so
+  whole-sense splitting could not prevent citation loss. [src/_pilot_gen_merged.py](src/_pilot_gen_merged.py)
+  now citation-batches any single over-budget head sense with `HEAD_CIT_BATCH_BUDGET` (defaulting
+  to `HEAD_CIT_BUDGET=18`) and records `batch_of` / `batch_index` / `batch_count` in the rootmap.
+- **Batch-aware gates and glue.** [src/audit_sense_dupes.py](src/audit_sense_dupes.py) permits a
+  repeated sense tag only when every duplicate is a rootmap-declared citation batch for that exact
+  canonical sense; ordinary cross-part duplicates still fail. [src/root_glue_translated.py](src/root_glue_translated.py)
+  labels these packages as citation batches in the nested article.
+- **sTA regeneration result.** Re-splitting `sTA` yields 123 sub-cards with 26 declared
+  citation-batch entries; each batch has ≤18 raw `<ls>` tags and lettered batches keep canonical
+  tags such as `9a` / `9b` (no bare-letter drift). Verified locally with `py_compile`,
+  `verify_root_glue.py`, `audit_sense_dupes.py`, and positive/negative duplicate-batch smoke tests.
+  The remaining acceptance step is a Claude/Max translation re-run of the generated batch cards,
+  not a Codex-shell requirement.
+- **Review follow-up — stale inputs + headtest.** Root-split regeneration now removes old
+  `root~~*.raw.txt` / `.portrait.json` generated inputs before rewriting a rootmap, so stale
+  unbatched cards cannot leak into glob-driven tools. `gen_opt_harness.py headtest` now selects
+  the first homonym-0 `pwg00` / `pwg00b*` section from rootmap metadata; for `sTA` it correctly
+  picks `s_t_a~~h0_00_pwg00b00`. Verification: stale raw/portrait count 0 after `sTA` regen,
+  `verify_root_glue.py` PASS, `git diff --check` clean.
+
+### Audit workflow orchestrator — one deterministic window report
+- Added [src/pilot/audit_window.py](src/pilot/audit_window.py), a single command for the free
+  deterministic gates:
+  `python src/pilot/audit_window.py wf_output.json --root sTA --write-requeue`. It runs
+  collection/NWS attribution, markup fidelity, sense coverage, and sense-duplicate checks against
+  the same workflow key set, optionally glues the root, preserves each gate's stdout in JSON, and
+  prints a compact final table.
+- Machine-readable artifacts now land in `src/pilot/output/`: `audit_window.report.json`,
+  `audit_window.report.md`, and `requeue.keys.txt`. The command exits non-zero when any card must
+  be requeued or a gate crashes.
+- `audit_translation.py` gained `--wf wf_output.json` so it audits workflow keys instead of the
+  default manifest while preserving the manifest compatibility path. `audit_coverage.py` now marks
+  missing/stale raw inputs as `NO-RAW`, so rootmap reshapes cannot silently pass coverage.
+- On the stale pre-batch `sTA` workflow output, the orchestrator writes 20 requeue keys: obsolete
+  unbatched `pwg00*` labels plus the known residual `ud`, `ni`, and `pw07`.
+- **Speed pass.** `audit_window.py` now bypasses the legacy `run_real_test.py audit` subprocess
+  loop: it collects once, calls `nws_split.check_result()` in-process, delays any quarantine until
+  read-only gates finish, and runs the free gates concurrently. Current `sTA` window timing:
+  ~1.26 s vs ~8.62 s for the legacy audit path.
+- **Production-line pass.** The frequency runbook now documents `audit_window.py` as the single
+  audit path. `audit_window.py` also writes `window_status.json` / `.md`; new helpers
+  `root_window_status.py` and `requeue_from_audit.py` preflight root splits and generate exact
+  rerun harnesses from `requeue.keys.txt`, respectively.
 
 ## 2026-06-26
 
@@ -525,7 +617,8 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
   owner-map feed. First coverage-first batch of 6 (`as`/`A`/`anu`/`akṣa`/`arjuna` clean,
   `as` with 60 NWS owners CLEAN) = **5/6 first-pass clean**; `Ap` quarantined + re-queued.
 - **Full a-section staged for the Max workflow:** regenerated **4,264 NWS a-cards** with
-  owner maps (`--manifest a`); runbook [src/pilot/RUN_ASECTION_MAX.md](src/pilot/RUN_ASECTION_MAX.md)
+  owner maps (`--manifest a`); runbook archived at
+  [src/pilot/archive/legacy_max_2026-06-27/RUN_ASECTION_MAX.md](src/pilot/archive/legacy_max_2026-06-27/RUN_ASECTION_MAX.md)
   (per-window prep → run `run_pilot_wf.js` on Max → `run_real_test.py audit`; rejects
   auto-re-queue). Window 1 (`[0,50)`, 37 fresh) prepped.
 - **Failure gallery:** F10 (Windows case-insensitive filename collision — would lose

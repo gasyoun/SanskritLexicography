@@ -6,3 +6,18 @@ src/pilot/run_pilot_wf.headtest.js
 
 # Max workflow run output (A/B transcript artifact, not a deliverable)
 wf_output.json
+
+# Generated status/dashboard snapshots
+release/gate_status_snapshot.json
+release/gate_status_snapshot.md
+src/pilot/output/audit_window.report.json
+src/pilot/output/audit_window.report.md
+src/pilot/output/window_status.json
+src/pilot/output/window_status.md
+src/pilot/output/window_ledger.jsonl
+src/pilot/output/dashboard_events.jsonl
+src/pilot/output/requeue.keys.txt
+src/pilot/output/judge_sample.keys.txt
+
+# Local API retry ledger
+src/corpus_lexicon.failures.jsonl

@@ -193,39 +193,49 @@ def located_in(cand, row):
                for c in cand)
 
 
-def check(key):
+def check_result(key):
     frag = nws_fragment(key)
     if not frag:
-        print('  no NWS fragment for %s' % key); return 1
+        return {'key': key, 'verdict': 'NO-NWS', 'returncode': 1,
+                'lines': ['  no NWS fragment for %s' % key], 'rejected': False}
     entries = split(frag)
     rows = card_rows(key)
     if rows is None:
-        print('  no merged card output/%s.merged.md — split only:' % key)
+        lines = ['  no merged card output/%s.merged.md — split only:' % key]
         for e in entries:
-            print('   %-26s | %s' % (' / '.join(e['owners']), e['gloss'][:70]))
-        return 0
+            lines.append('   %-26s | %s' % (' / '.join(e['owners']), e['gloss'][:70]))
+        return {'key': key, 'verdict': 'NO-CARD/OTHER', 'returncode': 0,
+                'lines': lines, 'rejected': False}
     bad, miss = 0, 0
     locs = locators(entries)
-    print('  %s: %d NWS entries vs %d card NWS rows' % (key, len(entries), len(rows)))
+    lines = ['  %s: %d NWS entries vs %d card NWS rows' % (key, len(entries), len(rows))]
     for e, cand in zip(entries, locs):
         exp = [owner_surname(o) for o in e['owners']]
         # rows located by ANY of this entry's fragment-unique tokens
         hit = [r for r in rows if located_in(cand, r)]
         if not hit:
             miss += 1
-            print('   ?  no unique locator for owner %s — verify by hand (gloss: %s)'
-                  % ('/'.join(exp), e['gloss'][:50]))
+            lines.append('   ?  no unique locator for owner %s — verify by hand (gloss: %s)'
+                         % ('/'.join(exp), e['gloss'][:50]))
             continue
         # PASS if ANY located row is correctly attributed
         if not any(any(s and s in row_owner(r) for s in exp) for r in hit):
             bad += 1
-            print('   ✗  «%s» card owner=[%s]  expected=[%s]'
-                  % (cand[0], row_owner(hit[0]), '/'.join(exp)))
+            lines.append('   ✗  «%s» card owner=[%s]  expected=[%s]'
+                         % (cand[0], row_owner(hit[0]), '/'.join(exp)))
     verdict = 'CLEAN' if not bad else 'MISATTRIBUTION'
-    print('  → %s (%d mismatch%s%s)' % (
+    lines.append('  → %s (%d mismatch%s%s)' % (
         verdict, bad, '' if bad == 1 else 'es',
         ', %d unlocated' % miss if miss else ''))
-    return 1 if bad else 0
+    return {'key': key, 'verdict': verdict, 'returncode': 1 if bad else 0,
+            'lines': lines, 'rejected': False}
+
+
+def check(key):
+    res = check_result(key)
+    for line in res['lines']:
+        print(line)
+    return res['returncode']
 
 
 # aMSa ground truth (hand-derived, _aMSa_nws_correct_parse.md) for selftest

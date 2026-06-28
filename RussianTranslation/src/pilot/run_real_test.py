@@ -1,5 +1,11 @@
 #!/usr/bin/env python
-"""June-22 real-conditions pilot test driver — run on YOUR machine when the Max
+"""LEGACY manual-test-only driver.
+
+Production frequency windows now use:
+  root_window_status.py -> gen_opt_harness.py -> Max Workflow ->
+  audit_window.py --write-requeue.
+
+June-22 real-conditions pilot test driver — run on YOUR machine when the Max
 subscription quota resets. Two phases, one command each:
 
   python run_real_test.py prep [N] [OFFSET]   # default N=10, OFFSET=0

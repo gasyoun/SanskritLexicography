@@ -7,21 +7,49 @@ the lone sev-3 belongs to the NWS owner-row slip class that the deterministic
 audit gate catches.
 
 **QA policy — BALANCED, token-optimized (2026-06-27, [`../../TOKEN_OPTIMIZATION_2026-06-27.md`](../../TOKEN_OPTIMIZATION_2026-06-27.md)):**
-the bulk pass is **translate (Sonnet, single-turn inlined) + three FREE Python gates on 100 %
+the bulk pass is **translate (Sonnet, single-turn inlined) + four FREE Python gates on 100 %
 of cards**; the LLM judge is no longer per-card. The measured driver is `cache_read ≈ context ×
 turns`, so the run is reshaped to "Python at max, LLM at minimum" — the A/B cut cache_read 3.2×
 and eliminated the transient dropouts.
 
-- **Free gates (0 tokens, every card):** `audit_translation.py` (markup fidelity), the NEW
-  [`../audit_coverage.py`](../audit_coverage.py) (dropped/fabricated senses), and `nws_split.py`
-  via `run_real_test.py audit` (NWS owner-map). Any flag → re-queue.
-- **LLM judge (the only QA spend):** runs ONLY on Python-gate-flagged cards + a ~5–10 % random
-  mistranslation sample. **Sonnet judges; Opus adjudicates ONLY its rejects** (`ok=false ||
+- **Free gates (0 tokens, every card):** the canonical command is
+  [`audit_window.py`](audit_window.py). It renders workflow output once, runs NWS owner-map,
+  markup fidelity, sense coverage, and sense-duplicate gates against the same key set, writes
+  a report/status ledger, and emits the exact re-queue list.
+- **Live dashboard:** start it locally with
+  `python src/pilot/dashboard_server.py --port 8765` from the `RussianTranslation`
+  repo root, then open `http://127.0.0.1:8765/`. It refreshes every 5 seconds and
+  shows Max-run status, next action, requeue/sample queues, token/time metrics,
+  recent audit events, file freshness, and the G5/G6/G7/G10 print-gate snapshot
+  without inventing any human review labels.
+- **LLM judge (the only QA spend):** runs ONLY on Python-gate-flagged cards + a deterministic
+  ~10 % mistranslation sample written by `audit_window.py` to `judge_sample.keys.txt`.
+  **Sonnet judges; Opus adjudicates ONLY its rejects** (`ok=false ||
   severity>=3`), Opus verdict final — see [`../../research/JUDGE_POLICY.md`](../../research/JUDGE_POLICY.md).
   Publishable cards spend no Opus tokens.
 
+## Current operating truth
+
+- The optimized **translate-only** Max harness is live and is generated per root by
+  [`gen_opt_harness.py`](gen_opt_harness.py). It inlines raw/portrait inputs, disables
+  translate-agent tools, and returns provenance metadata used by the audit stale guard.
+- Superseded a-section/manual harness notes are archived under
+  [`archive/legacy_max_2026-06-27/`](archive/legacy_max_2026-06-27/). Do not use those
+  files for current production windows.
+- The corpus word-alignment lexicon exists; bulk throughput is no longer blocked on that asset.
+- Deterministic gates are canonical for bulk acceptance: NWS owner-map, markup fidelity,
+  sense coverage, and sense-duplicate checks all run through [`audit_window.py`](audit_window.py).
+- Print readiness is a separate downstream gate: G5 review, G6 human gold, G7 double review,
+  and G10 edition cut remain blocked until human review/gold work is done.
+  `preflight_remaining_gates.py` and `release_readiness.py` are report-only by default; add
+  `--fail-on-blocked` when using them as CI/go-no-go gates.
+- Canonical next roots: finish the `sTA` re-batch cleanup, then run
+  `BU`, `gam`, `yuj`, `as`, `i`, `vid`, `han`.
+
 The earlier "Opus-judged-every-card" framing was the validation phase; "Sonnet-bulk/Opus-on-reject"
 was the 2026-06-26 escalation policy; the per-card LLM judge itself is now dropped from the bulk path.
+The older human-driven Max-session wording is obsolete here: the in-chat Workflow route is the
+supported production path for optimized harnesses.
 
 ## Current preflight
 
@@ -72,8 +100,8 @@ manner/position forcing) as soft-judged guidance (judge check 7). Source tables:
 
 ## Window loop
 
-Pick a small first window, e.g. **25–50 root/headword entries**, because the top
-of the queue is giant-root-heavy. The manifest is ordered by production priority.
+The loop is fixed: **preflight → generate optimized harness → Max Workflow → deterministic
+audit → requeue or sampled semantic judging**. Do not skip or reorder these steps.
 
 ```powershell
 cd RussianTranslation\src
@@ -85,20 +113,35 @@ python freq_route.py 20
 python _pilot_gen_merged.py --manifest freq --root-split --limit 50
 ```
 
-Then set the Max workflow harness to the frequency manifest. **The committed
-file ships as `SECTION = 'a'`** — you MUST edit these three lines before the run
-(no guard catches a SECTION/manifest mismatch):
+Preflight the root before spending Claude/Max tokens:
 
-```js
-const SECTION = 'freq'
-const OFFSET = 0
-const LIMIT = 50
+```powershell
+python src\pilot\root_window_status.py sTA
 ```
 
-Run the **optimized** harness `run_pilot_wf.opt.js` (dual-lane, translate-only — generated
-per root from the committed `run_pilot_wf.js`, prompts byte-identical) in the interactive Max
-workflow harness and save the JSON result as `wf_output.json`. The in-chat Workflow tool is not
-sufficient because the harness reads local files with `node:fs`. Lanes:
+This command prints the structural state plus one `next action` and one
+`next command`; if it disagrees with stale notes elsewhere, trust the command
+output and `src\pilot\output\window_status.json`.
+
+Generate the **optimized** harness for the root:
+
+```powershell
+python src\pilot\gen_opt_harness.py sTA
+```
+
+After this succeeds, a stale `window_status.json` from the previous audit is no longer the next
+operator step. `root_window_status.py` should now tell you to run the generated harness in Max,
+then audit the fresh `wf_output.json`.
+
+Run the generated `src\pilot\run_pilot_wf.opt.js` in the Claude/Max Workflow surface and save
+the JSON result as `wf_output.json`. This optimized harness is self-contained: it inlines raw
+and portrait inputs, strips `node:fs`, disables translate-agent tools with `tools: []`, and
+returns top-level workflow provenance (`meta`: root, mode, selected keys, rootmap SHA-256,
+and raw/portrait SHA-256 values). It is the supported route for the in-chat Workflow tool.
+Do not run the committed `run_pilot_wf.js` directly for production windows; it is the template
+used by `gen_opt_harness.py`.
+
+Lanes:
 
 - **sparse** card (≤30 `<ls>`): single-turn, inputs inlined, **no tools** — the cheap path for
   the ~43 k normal sub-cards.
@@ -109,21 +152,68 @@ sufficient because the harness reads local files with `node:fs`. Lanes:
 - The optimized translate agents explicitly run with `tools: []`; any `Read`
   use in a Max run means an outdated harness file is being used.
 
-Audit the window — run **all three** free gates (zero tokens):
+Audit the window with the single deterministic command:
 
 ```powershell
-# 1) NWS owner-map gate (quarantines misattribution → *.merged.REJECTED.md)
-python src\pilot\run_real_test.py audit wf_output.json
-# 2) Markup-fidelity gate (sigla ≥90% kept, Sanskrit ≥85% kept, Russian present where German gloss was)
-python src\audit_translation.py
-# 3) Sense-coverage gate (no silently dropped/fabricated senses)
-python src\audit_coverage.py wf_output.json
+python src\pilot\audit_window.py wf_output.json --root sTA --write-requeue
 ```
 
-Any NWS owner mismatch is quarantined as `*.merged.REJECTED.md`; a markup-fidelity failure
-(lost sigla/Sanskrit or an empty card) or a coverage flag (COVERAGE-LOW/OVER) is likewise a
-re-queue, not an accept. Only the re-queued (Python-flagged) cards plus a ~5–10 % sample go to
-the LLM judge.
+If Max shows token/time numbers, record them on the same audit command so the ledger captures
+the production economics:
+
+```powershell
+python src\pilot\audit_window.py wf_output.json --root sTA --write-requeue `
+  --wall-clock-minutes 19 `
+  --max-cache-read-tokens 6288668 `
+  --max-cache-create-tokens 3697049 `
+  --max-output-tokens 358884 `
+  --max-total-tokens 10300000
+```
+
+If the weekly Max cap fires, add `--weekly-cap-fired --weekly-cap-cumulative-tokens N`.
+
+The audit first compares workflow provenance against the current rootmap and raw/portrait
+inputs. Stale output (missing `meta`, key mismatch, rootmap hash mismatch, or input hash
+mismatch) stops before collect/gates/glue and records state `stale_artifact`; regenerate the
+harness and rerun the Max workflow. Use `--allow-stale` only for forensic inspection.
+If stale output is refused, `--write-requeue` does **not** overwrite the existing
+`requeue.keys.txt`; stale artifacts cannot produce a trustworthy mechanical requeue list.
+
+The audit writes `audit_window.report.json`, `audit_window.report.md`, `window_status.json`,
+`window_status.md`, `window_ledger.jsonl`, `requeue.keys.txt`, and
+`judge_sample.keys.txt` under `src\pilot\output`.
+Any NWS owner mismatch is quarantined as `*.merged.REJECTED.md`; markup-fidelity, coverage,
+sense-duplicate, missing-card, or stale-input failures are re-queues, not accepts.
+`judge_sample.keys.txt` is the semantic review spend queue: all Python-gate failures plus a
+deterministic 10 % sample of clean translated keys. It is NOT the mechanical requeue list.
+
+## Flaky API / Internet Policy
+
+- There is no Claude API client in this repo for production PWG translation. Claude work runs
+  through the Max Workflow surface, so the local scripts must make interruptions resumable
+  instead of trying to hide network loss.
+- The generated optimized harness retries each card once. A still-null card is recorded by
+  `audit_window.py` and lands in `requeue.keys.txt`; rerun only those cards with
+  `requeue_from_audit.py`.
+- The stale-provenance check is mandatory after any interrupted run. It prevents old
+  `wf_output.json` files from being audited against newly regenerated rootmaps or inputs.
+- DeepSeek corpus-lexicon API calls are append-only/resumable in `build_corpus_lexicon.py`.
+  Use `DEEPSEEK_RETRIES`, `DEEPSEEK_CONNECT_TIMEOUT`, `DEEPSEEK_READ_TIMEOUT`, and
+  `DEEPSEEK_BACKOFF_BASE` to tune retry behavior; failed API batches are logged locally and
+  can be retried later with `--retry-failed`.
+
+If `requeue.keys.txt` is non-empty, generate the rerun harness directly from it:
+
+```powershell
+python src\pilot\requeue_from_audit.py sTA
+```
+
+Run the regenerated `run_pilot_wf.opt.js`, save its JSON as the next `wf_output.json`, and rerun
+`audit_window.py`.
+
+If `requeue.keys.txt` is empty and `judge_sample.keys.txt` is non-empty, send only those keys to
+the sampled semantic judge outside Python. Do not block mechanical acceptance on unrelated
+documentation cleanup or print-readiness gates.
 
 ## Instrumentation
 
@@ -134,7 +224,9 @@ For each Max window, record:
 - Max-reported input/output/cache tokens if available;
 - whether the weekly cap fired, and cumulative tokens at that moment.
 
-Append the measurements to `PILOT_COST.md` §6. The point is to answer the
+`audit_window.py` records the operational state, next action, sample counts, and any token/time
+measurements in `window_status.json` and `window_ledger.jsonl`. Append milestone summaries to
+`PILOT_COST.md` §6 when a root or run-to-cap tranche is complete. The point is to answer the
 feasibility question: one Max seat over roughly two months vs a paid API bulk run.
 
 ## Done criterion

@@ -73,10 +73,14 @@ corpus senses and cross-card consistency — they are provisional, not final.
 
 ## 3. State & next step
 
+> **2026-06-28 status note.** This section is historical. The corpus word-alignment
+> lexicon now exists, and the active bulk path is the optimized frequency-window
+> loop in [src/pilot/RUN_FREQ_MAX.md](src/pilot/RUN_FREQ_MAX.md).
+
 - Pipeline proven; ~216 provisional `a–` cards (95% first-pass publishable).
   Store is gitignored append-only (`src/pwg_ru_translated.jsonl`).
-- Loop **paused** (session limit + corpus-first redirect).
-- **Next:** provide `DEEPSEEK_API_KEY` + `OPENROUTER_API_KEY` in a gitignored
+- **Historical state:** loop was paused at this point for session limit + corpus-first redirect.
+- **Historical next:** provide `DEEPSEEK_API_KEY` + `OPENROUTER_API_KEY` in a gitignored
   `src/.env`; then P1 (corpus lexicon) → re-harvest → translate corpus-first.
 
 See also [IMPLEMENTATION_PLAN.md](IMPLEMENTATION_PLAN.md),
