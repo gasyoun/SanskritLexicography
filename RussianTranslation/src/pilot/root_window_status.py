@@ -81,15 +81,26 @@ def queue_lines(path):
     return [line for line in result['lines'] if line.strip()], result.get('error')
 
 
-def harness_matches(root, rootmap_sha):
+def merged_exists(key):
+    return os.path.exists(os.path.join(OUT, key + '.merged.md'))
+
+
+def harness_matches(root, rootmap_sha, expected_keys=None):
     meta = harness_meta(os.path.join(HERE, 'run_pilot_wf.opt.js'))
     if not meta.get('ok'):
         return False, meta
-    return (meta.get('root') == root
-            and meta.get('rootmap_sha256') == rootmap_sha), meta
+    ok = (meta.get('root') == root and meta.get('rootmap_sha256') == rootmap_sha)
+    if ok and expected_keys is not None:
+        selected = meta.get('selected_keys') or []
+        if selected != list(expected_keys):
+            meta['scope_error'] = 'selected keys mismatch: harness=%d expected=%d' % (
+                len(selected), len(expected_keys))
+            meta['expected_key_count'] = len(expected_keys)
+            ok = False
+    return ok, meta
 
 
-def next_action(root, failures, rootmap_sha=None):
+def next_action(root, failures, rootmap_sha=None, all_keys=None, pending_keys=None):
     if failures:
         return {
             'action': 'Fix root-split input issues before generating a harness.',
@@ -97,7 +108,9 @@ def next_action(root, failures, rootmap_sha=None):
         }
     status = latest_status(OUT)
     harness = os.path.join(HERE, 'run_pilot_wf.opt.js')
-    matches, meta = harness_matches(root, rootmap_sha)
+    all_keys = list(all_keys or [])
+    pending_keys = list(pending_keys or [])
+    matches, meta = harness_matches(root, rootmap_sha, all_keys)
     run_max = {
         'action': 'Run the generated optimized harness in Max Workflow and save fresh wf_output.json.',
         'command': 'python src\\pilot\\audit_window.py wf_output.json --root %s --write-requeue' % root,
@@ -110,7 +123,8 @@ def next_action(root, failures, rootmap_sha=None):
         return {
             'action': 'Generate the optimized harness for %s, then run Max Workflow.' % root,
             'command': 'python src\\pilot\\gen_opt_harness.py %s' % root,
-            'note': meta.get('error') if isinstance(meta, dict) and status and status.get('_error') else '',
+            'note': meta.get('scope_error') or (
+                meta.get('error') if isinstance(meta, dict) and status and status.get('_error') else ''),
         }
     state = status.get('state') or 'unknown'
     requeue, requeue_error = queue_lines(os.path.join(OUT, 'requeue.keys.txt'))
@@ -127,7 +141,7 @@ def next_action(root, failures, rootmap_sha=None):
         return {
             'action': 'Regenerate optimized harness for %s and rerun Max Workflow.' % root,
             'command': 'python src\\pilot\\gen_opt_harness.py %s' % root,
-            'note': meta.get('error') if isinstance(meta, dict) else '',
+            'note': meta.get('scope_error') or (meta.get('error') if isinstance(meta, dict) else ''),
         }
     if requeue or state == 'needs_requeue':
         return {
@@ -135,16 +149,17 @@ def next_action(root, failures, rootmap_sha=None):
             'command': 'python src\\pilot\\requeue_from_audit.py %s' % root,
         }
     if state == 'partial':
-        if matches:
+        partial_matches, partial_meta = harness_matches(root, rootmap_sha, pending_keys)
+        if partial_matches:
             return {
                 'action': 'Run the optimized Max Workflow for pending sub-cards, then audit again.',
                 'command': 'After Max: python src\\pilot\\audit_window.py wf_output.json --root %s --write-requeue' % root,
-                'harness': meta,
+                'harness': partial_meta,
             }
         return {
             'action': 'Regenerate optimized harness for %s before continuing the partial window.' % root,
             'command': 'python src\\pilot\\gen_opt_harness.py %s' % root,
-            'note': meta.get('error') if isinstance(meta, dict) else '',
+            'note': partial_meta.get('scope_error') or (partial_meta.get('error') if isinstance(partial_meta, dict) else ''),
         }
     if judge_sample or int(status.get('judge_sample_count') or 0) > 0:
         return {
@@ -174,6 +189,8 @@ def main():
         sys.exit('FAIL: no rootmap for %r under %s' % (root, INP))
     rm = json.load(open(rp, encoding='utf-8'))
     subs = rm.get('sub_cards') or []
+    all_keys = [s['subkey'] for s in subs]
+    pending_keys = [k for k in all_keys if not merged_exists(k)]
     rootmap_sha = sha256_file(rp)
     digest, digest_missing = input_digest(subs)
     declared = {s['subkey'] for s in subs}
@@ -283,13 +300,15 @@ def main():
             print('  ' + e)
     if failures:
         print('FAIL:', '; '.join(failures))
-        nxt = next_action(root, failures, rootmap_sha=rootmap_sha)
+        nxt = next_action(root, failures, rootmap_sha=rootmap_sha,
+                          all_keys=all_keys, pending_keys=pending_keys)
         print('next action       : %s' % nxt['action'])
         print('next command      : %s' % nxt['command'])
         if nxt.get('note'):
             print('next note         : %s' % nxt['note'])
         sys.exit(1)
-    nxt = next_action(root, failures, rootmap_sha=rootmap_sha)
+    nxt = next_action(root, failures, rootmap_sha=rootmap_sha,
+                      all_keys=all_keys, pending_keys=pending_keys)
     print('next action       : %s' % nxt['action'])
     print('next command      : %s' % nxt['command'])
     if nxt.get('note'):

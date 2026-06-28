@@ -178,27 +178,40 @@ def collect_cards(wf, protected):
 def run_nws_gate(keys, protected):
     t0 = time.perf_counter()
     lines = ['=== 2. NWS attribution audit (nws_split) ===']
-    clean = misattr = noidx = 0
-    bad_cards = []
+    clean = misattr = no_nws = missing_raw = missing_card = other = 0
+    bad_cards, bad_misattribution = [], []
     for k in keys:
         if k in protected:
             lines.append('  %-12s protected — keeping hand-authored card' % k)
         res = nws_split.check_result(k)
         lines.extend(res['lines'])
-        if res['verdict'] == 'CLEAN':
+        verdict = res['verdict']
+        if verdict == 'CLEAN':
             clean += 1
-        elif res['verdict'] == 'MISATTRIBUTION':
+        elif verdict == 'NO-NWS':
+            no_nws += 1
+        elif verdict == 'NO-RAW':
+            missing_raw += 1
+            bad_cards.append(k)
+        elif verdict == 'NO-CARD':
+            missing_card += 1
+            bad_cards.append(k)
+        elif verdict == 'MISATTRIBUTION':
             misattr += 1
             bad_cards.append(k)
+            bad_misattribution.append(k)
         else:
-            noidx += 1
+            other += 1
 
     lines += ['', '=== REPORT ===']
     lines.append('  cards audited      : %d' % len(keys))
     lines.append('  NWS audit CLEAN    : %d' % clean)
     lines.append('  F12 misattribution : %d %s' % (
-        misattr, ('→ ' + ' '.join(bad_cards)) if bad_cards else ''))
-    lines.append('  no-NWS / other     : %d' % noidx)
+        misattr, ('→ ' + ' '.join(bad_misattribution)) if bad_misattribution else ''))
+    lines.append('  no NWS fragment    : %d' % no_nws)
+    lines.append('  missing raw input  : %d' % missing_raw)
+    lines.append('  missing card output: %d' % missing_card)
+    lines.append('  other verdicts     : %d' % other)
     lines.append('  judge pass rate    : see "publishable" line in collect section above')
 
     gate_fail = [k for k in bad_cards if k not in protected]
@@ -212,6 +225,7 @@ def run_nws_gate(keys, protected):
 
     return {'argv': ['in-process', 'nws_split.check_result'], 'returncode': 1 if gate_fail else 0,
             'stdout': '\n'.join(lines) + '\n', 'stderr': '', 'requeue': sorted(gate_fail),
+            'misattribution': sorted(k for k in bad_misattribution if k not in protected),
             'rejected': [], 'seconds': round(time.perf_counter() - t0, 3)}
 
 
@@ -791,8 +805,8 @@ def main():
             data={'gate': name, 'returncode': res['returncode'],
                   'requeue': res.get('requeue') or [], 'seconds': res.get('seconds')})
 
-    if gates['nws'].get('requeue'):
-        rejected = [k for k in gates['nws']['requeue'] if quarantine(k)]
+    if gates['nws'].get('misattribution'):
+        rejected = [k for k in gates['nws']['misattribution'] if quarantine(k)]
         gates['nws']['rejected'] = rejected
         if rejected:
             gates['nws']['stdout'] += '  quarantined        : %s\n' % ' '.join(rejected)
