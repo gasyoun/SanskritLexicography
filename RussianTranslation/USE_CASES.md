@@ -94,6 +94,14 @@ The print-readiness scripts are report-only by default. Add `--fail-on-blocked`
 when using them as a CI/go-no-go gate. Current G5/G6/G7/G10 blockers require
 human review/gold work.
 
+`release/` is the staging directory for generated interop artifacts. The
+immutable-edition validator expects an edition subdirectory created by
+`make_edition_cut.py`, for example:
+
+```powershell
+python src\validate_release.py release\edition_v1
+```
+
 ## 8. Resume Corpus Lexicon API Work
 
 Use when DeepSeek/OpenRouter calls fail during corpus-lexicon construction.

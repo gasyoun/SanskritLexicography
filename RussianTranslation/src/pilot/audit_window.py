@@ -31,6 +31,7 @@ sys.path.insert(0, SRC)
 import nws_split
 from safe_filename import safe_name
 from dashboard_events import append_event
+from window_common import harness_meta
 
 COLLECT = os.path.join(SRC, '_pilot_collect.py')
 BATCH_FILE = os.path.join(OUT, '_realtest_batch.json')
@@ -292,7 +293,7 @@ def stale_check(root, wf_meta, wf_keys):
     if not wf_meta:
         check['ok'] = False
         check['stale'] = True
-        check['errors'].append('workflow meta missing; regenerate the optimized harness')
+        check['errors'].append('workflow meta missing from wf_output; fresh Max output is required')
         selected_keys = None
     else:
         selected_keys = wf_meta.get('selected_keys') or None
@@ -421,10 +422,33 @@ def build_production_metrics(args):
     return {k: v for k, v in fields.items() if v not in (None, '')}
 
 
+def harness_matches_current_root(report):
+    root = report.get('root')
+    stale = report.get('stale_check') or {}
+    current = stale.get('current') or {}
+    expected = current.get('selected_keys') or []
+    meta = harness_meta(os.path.join(HERE, 'run_pilot_wf.opt.js'))
+    if not root or not current.get('rootmap_sha256') or not expected:
+        return False, meta
+    if not meta.get('ok'):
+        return False, meta
+    ok = (
+        meta.get('root') == root and
+        meta.get('rootmap_sha256') == current.get('rootmap_sha256') and
+        (meta.get('selected_keys') or []) == expected
+    )
+    if not ok:
+        meta['scope_error'] = 'harness scope does not match current rootmap selection'
+    return ok, meta
+
+
 def next_action_for(state, report, pending):
     root = report.get('root') or '<root>'
     sample = report.get('judge_sample') or {}
     if state == 'stale_artifact':
+        matches, _meta = harness_matches_current_root(report)
+        if matches:
+            return 'Run the generated optimized harness in Max Workflow and save fresh wf_output.json.'
         return 'Regenerate optimized harness for %s and rerun Max Workflow.' % root
     if report.get('crashed'):
         return 'Inspect crashed gates: %s.' % ', '.join(report['crashed'])
@@ -717,7 +741,7 @@ def main():
         print('\n=== stale artifact check ===')
         for err in stale.get('errors') or []:
             print('  ' + err)
-        print('  refusing collect/gates/glue; regenerate the optimized harness or rerun with --allow-stale for inspection')
+        print('  refusing collect/gates/glue; refresh wf_output.json or rerun with --allow-stale for inspection')
         report = {'workflow': wf, 'root': args.root, 'state': 'stale_artifact',
                   'workflow_meta': wf_meta, 'stale_check': stale,
                   'keys': keys, 'null_cards': null_cards,

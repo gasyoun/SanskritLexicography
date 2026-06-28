@@ -6,7 +6,9 @@ schemas/pwg_ru_lexicographic_portrait.schema.json. It validates live
 microstructure.portrait() output for representative PWG records.
 
   python validate_portrait_schema.py [N]
+  python validate_portrait_schema.py --limit N
 """
+import argparse
 import json, os, sys
 sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
@@ -78,8 +80,24 @@ def validate_portrait(p):
             fail('%s.strata must be an object' % where)
 
 
+def parse_args():
+    ap = argparse.ArgumentParser(
+        description='Validate live PWG lexicographic portrait schema output.')
+    ap.add_argument('n', nargs='?', type=int,
+                    help='number of live PWG portraits to validate')
+    ap.add_argument('--limit', type=int,
+                    help='number of live PWG portraits to validate')
+    args = ap.parse_args()
+    if args.n is not None and args.limit is not None:
+        ap.error('use either positional N or --limit, not both')
+    n = args.limit if args.limit is not None else (args.n if args.n is not None else 25)
+    if n < 1:
+        ap.error('limit must be a positive integer')
+    return n
+
+
 def main():
-    n = int(sys.argv[1]) if len(sys.argv) > 1 else 25
+    n = parse_args()
     schema = json.load(open(SCHEMA, encoding='utf-8'))
     if schema.get('$id') != 'pwg_ru.lexicographic_portrait.schema.v1':
         fail('unexpected schema id')
