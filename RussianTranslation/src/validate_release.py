@@ -93,7 +93,16 @@ def main():
     args = ap.parse_args()
     manifest_path = os.path.join(args.edition_dir, 'release_manifest.json')
     if not os.path.exists(manifest_path):
-        fail('missing release_manifest.json')
+        editions = []
+        if os.path.isdir(args.edition_dir):
+            editions = sorted(name for name in os.listdir(args.edition_dir)
+                              if name.startswith('edition_')
+                              and os.path.isdir(os.path.join(args.edition_dir, name)))
+        hint = ('; validate an edition subdirectory created by make_edition_cut.py, '
+                'for example release/edition_v1')
+        if editions:
+            hint += '; found edition candidate(s): %s' % ', '.join(editions)
+        fail('missing release_manifest.json%s' % hint)
     manifest = json.load(open(manifest_path, encoding='utf-8'))
     validate_gate_statuses(args.edition_dir, manifest)
     files = manifest.get('files') or {}
