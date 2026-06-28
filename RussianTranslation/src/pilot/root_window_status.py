@@ -2,7 +2,9 @@
 """Preflight a root-split window before spending Claude/Max tokens.
 
   python src/pilot/root_window_status.py sTA
+  python src/pilot/root_window_status.py BU --prune-stale
 """
+import argparse
 import json
 import hashlib
 import os
@@ -133,9 +135,16 @@ def next_action(root, failures, rootmap_sha=None):
             'command': 'python src\\pilot\\requeue_from_audit.py %s' % root,
         }
     if state == 'partial':
+        if matches:
+            return {
+                'action': 'Run the optimized Max Workflow for pending sub-cards, then audit again.',
+                'command': 'After Max: python src\\pilot\\audit_window.py wf_output.json --root %s --write-requeue' % root,
+                'harness': meta,
+            }
         return {
-            'action': 'Run the optimized Max Workflow for pending sub-cards, then audit again.',
-            'command': 'After Max: python src\\pilot\\audit_window.py wf_output.json --root %s --write-requeue' % root,
+            'action': 'Regenerate optimized harness for %s before continuing the partial window.' % root,
+            'command': 'python src\\pilot\\gen_opt_harness.py %s' % root,
+            'note': meta.get('error') if isinstance(meta, dict) else '',
         }
     if judge_sample or int(status.get('judge_sample_count') or 0) > 0:
         return {
@@ -154,9 +163,12 @@ def next_action(root, failures, rootmap_sha=None):
 
 
 def main():
-    root = sys.argv[1] if len(sys.argv) > 1 else ''
-    if not root:
-        sys.exit('usage: python src/pilot/root_window_status.py <root>')
+    ap = argparse.ArgumentParser()
+    ap.add_argument('root')
+    ap.add_argument('--prune-stale', action='store_true',
+                    help='delete generated raw/portrait inputs for this root prefix that are not declared in the current rootmap')
+    args = ap.parse_args()
+    root = args.root
     rp, stem = rootmap_path(root)
     if not rp:
         sys.exit('FAIL: no rootmap for %r under %s' % (root, INP))
@@ -175,6 +187,34 @@ def main():
     missing_portrait = sorted(declared - portrait_files)
     stale_raw = sorted(raw_files - declared)
     stale_portrait = sorted(portrait_files - declared)
+    if args.prune_stale:
+        pruned = []
+        for key in stale_raw:
+            path = os.path.join(INP, key + '.raw.txt')
+            if os.path.exists(path):
+                os.remove(path)
+                pruned.append(os.path.basename(path))
+        for key in stale_portrait:
+            path = os.path.join(INP, key + '.portrait.json')
+            if os.path.exists(path):
+                os.remove(path)
+                pruned.append(os.path.basename(path))
+        if pruned:
+            print('pruned stale generated input files: %d' % len(pruned))
+            for name in pruned[:20]:
+                print('  ' + name)
+            if len(pruned) > 20:
+                print('  ... %d more' % (len(pruned) - 20))
+        else:
+            print('pruned stale generated input files: 0')
+        raw_files = {fn[:-len('.raw.txt')] for fn in os.listdir(INP)
+                     if fn.startswith(prefix) and fn.endswith('.raw.txt')}
+        portrait_files = {fn[:-len('.portrait.json')] for fn in os.listdir(INP)
+                          if fn.startswith(prefix) and fn.endswith('.portrait.json')}
+        missing_raw = sorted(declared - raw_files)
+        missing_portrait = sorted(declared - portrait_files)
+        stale_raw = sorted(raw_files - declared)
+        stale_portrait = sorted(portrait_files - declared)
 
     budget = int(os.environ.get('HEAD_CIT_BATCH_BUDGET')
                  or os.environ.get('HEAD_CIT_BUDGET') or 18)
