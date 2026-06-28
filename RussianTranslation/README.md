@@ -19,6 +19,23 @@ The generated optimized harness inlines inputs, disables tools for translation
 agents, carries provenance metadata, and is audited by deterministic Python gates
 before any mechanical acceptance.
 
+For task-oriented operator flows, see [USE_CASES.md](USE_CASES.md). It covers
+preflight, fresh Max windows, stale-output recovery, targeted requeue, sampled
+semantic judging, dashboard monitoring, release readiness checks, and corpus API
+retry work.
+
+## Guardrails
+
+- `root_window_status.py` is the pre-spend truth source for each root. It checks
+  rootmap/input structure and verifies that the optimized harness matches the
+  intended selected-key scope.
+- `audit_window.py` refuses stale workflow artifacts before collect/gates/glue,
+  preserves existing requeue files on stale refusal, and writes status/ledger
+  artifacts for the dashboard.
+- `nws_split.py` audits NWS owner attribution with root-split sub-card filename
+  handling; missing raw/card files requeue, while cards with no NWS layer remain
+  neutral.
+
 ## Flaky Network Policy
 
 Claude production translation is not a Python Claude API loop. It runs through

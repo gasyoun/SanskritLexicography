@@ -10,6 +10,22 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## 2026-06-28
 
+### Audit guardrails and operator use cases
+- **NWS filename resolution hardened for root-split windows.** [src/nws_split.py](src/nws_split.py)
+  now resolves `~~` sub-card stems literally before safe-name fallbacks, so root-window NWS
+  checks can read the same files the optimized harness translates. It also distinguishes
+  `NO-RAW`, `NO-CARD`, and neutral `NO-NWS` states.
+- **Audit requeue policy made explicit.** [src/pilot/audit_window.py](src/pilot/audit_window.py)
+  requeues missing raw/card outputs, leaves cards without an NWS layer neutral, and quarantines
+  only true NWS owner misattribution.
+- **Harness scope is now part of root preflight.** [src/pilot/root_window_status.py](src/pilot/root_window_status.py)
+  requires the optimized harness selected-key list to match the intended full or pending root
+  scope before recommending a Max run.
+- **Operator docs refreshed.** [README.md](README.md) now lists the active guardrails, and new
+  [USE_CASES.md](USE_CASES.md) maps common production tasks to their command paths: preflight,
+  fresh Max runs, stale-output recovery, requeue, sampled judging, dashboard monitoring, release
+  checks, and corpus API retry.
+
 ### Cleanup — legacy workflow archive and flaky-network resilience
 - Archived the superseded a-section runbook and old Workflow-derived harness under
   [src/pilot/archive/legacy_max_2026-06-27/](src/pilot/archive/legacy_max_2026-06-27/).
