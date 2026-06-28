@@ -1,5 +1,11 @@
 #!/usr/bin/env python
-"""Validate an immutable edition directory and manifest hashes."""
+"""Validate an immutable edition directory and manifest hashes.
+
+  python validate_release.py release/edition_v1
+
+The argument is an edition subdirectory created by make_edition_cut.py, not the
+staging release/ directory that holds generated interop artifacts.
+"""
 import argparse
 import json
 import os
