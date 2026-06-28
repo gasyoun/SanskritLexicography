@@ -159,6 +159,7 @@ def harness_meta(path=None):
             'root': meta.get('root'),
             'safe_root': meta.get('safe_root'),
             'mode': meta.get('mode'),
+            'selected_keys': meta.get('selected_keys') or [],
             'selected_key_count': len(meta.get('selected_keys') or []),
             'rootmap_sha256': meta.get('rootmap_sha256'),
             'generated_at': meta.get('generated_at'),

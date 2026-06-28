@@ -21,10 +21,10 @@ without needing to know the tag vocabulary.
   python nws_split.py check  <key>       diff splitter owners vs the merged card
   python nws_split.py selftest           validate parser on aMSa ground truth
 """
-import os, re, sys, json
+import os, re, sys, json, tempfile
 sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
-from safe_filename import safe_name
+from safe_filename import candidate_names
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 INP = os.path.join(HERE, 'pilot', 'input')
@@ -50,6 +50,28 @@ DIASET = {'Gen', 'Ved', 'Tan', 'Buddh', 'Śā', 'Jin', 'Epigr', 'Kāv', 'Reg',
           'Ling', 'Phil'}
 
 
+def path_stems(key):
+    stems = []
+    if '~~' in (key or ''):
+        stems.append(key)          # root-split sub-card keys are already safe stems
+    stems.extend(candidate_names(key))
+    stems.append(key)              # legacy whole-card merged outputs used literal keys
+    out, seen = [], set()
+    for stem in stems:
+        if stem and stem not in seen:
+            out.append(stem)
+            seen.add(stem)
+    return out
+
+
+def resolve_key_path(directory, key, suffix):
+    for stem in path_stems(key):
+        path = os.path.join(directory, stem + suffix)
+        if os.path.exists(path):
+            return path
+    return None
+
+
 def nws_fragment(key):
     """The raw NWS string from <key>.raw.txt (the net-new NWS addendum layer).
 
@@ -57,9 +79,9 @@ def nws_fragment(key):
     `NWS — PRE-PARSED OWNER MAP` layer (which _pilot_gen_merged.py writes after
     the addendum); over-capturing it would make split()/check() re-parse the
     map as if it were source content."""
-    p = os.path.join(INP, safe_name(key) + '.raw.txt')
-    if not os.path.exists(p):
-        return ''
+    p = resolve_key_path(INP, key, '.raw.txt')
+    if not p:
+        return None
     txt = open(p, encoding='utf-8').read()
     m = re.search(r'=== LAYER: NWS(?! — PRE-PARSED)[^\n]*===\s*\n(.*?)(?=\n+=== LAYER:|\Z)',
                   txt, re.S)
@@ -151,15 +173,8 @@ def locators(entries):
 
 
 def card_rows(key):
-    p = os.path.join(OUTP, safe_name(key) + '.merged.md')
-    if not os.path.exists(p):
-        legacy = key + '.merged.md'
-        try:
-            has_legacy = legacy in set(os.listdir(OUTP))
-        except OSError:
-            has_legacy = False
-        p = os.path.join(OUTP, legacy) if has_legacy else p   # legacy pilot output name
-    if not os.path.exists(p):
+    p = resolve_key_path(OUTP, key, '.merged.md')
+    if not p:
         return None
     rows = []
     for ln in open(p, encoding='utf-8'):
@@ -195,6 +210,9 @@ def located_in(cand, row):
 
 def check_result(key):
     frag = nws_fragment(key)
+    if frag is None:
+        return {'key': key, 'verdict': 'NO-RAW', 'returncode': 1,
+                'lines': ['  no raw input for %s' % key], 'rejected': False}
     if not frag:
         return {'key': key, 'verdict': 'NO-NWS', 'returncode': 1,
                 'lines': ['  no NWS fragment for %s' % key], 'rejected': False}
@@ -204,7 +222,7 @@ def check_result(key):
         lines = ['  no merged card output/%s.merged.md — split only:' % key]
         for e in entries:
             lines.append('   %-26s | %s' % (' / '.join(e['owners']), e['gloss'][:70]))
-        return {'key': key, 'verdict': 'NO-CARD/OTHER', 'returncode': 0,
+        return {'key': key, 'verdict': 'NO-CARD', 'returncode': 1,
                 'lines': lines, 'rejected': False}
     bad, miss = 0, 0
     locs = locators(entries)
@@ -257,6 +275,26 @@ def selftest():
     if len(got) != len(AMSA_OWNERS):
         print('  ✗ entry count %d != %d' % (len(got), len(AMSA_OWNERS)))
         ok = False
+    old_inp, old_outp = INP, OUTP
+    try:
+        with tempfile.TemporaryDirectory() as tmp:
+            globals()['INP'] = os.path.join(tmp, 'input')
+            globals()['OUTP'] = os.path.join(tmp, 'output')
+            os.makedirs(INP, exist_ok=True)
+            os.makedirs(OUTP, exist_ok=True)
+            key = 'foo~~h0_00_pwg00'
+            open(os.path.join(INP, key + '.raw.txt'), 'w', encoding='utf-8').write(
+                '=== LAYER: NWS ===\nfoo Gen > uniquegloss MW : 1\n')
+            open(os.path.join(OUTP, key + '.merged.md'), 'w', encoding='utf-8').write(
+                '| tag | russian | src |\n| NWS | uniquegloss | [NWS: MW] |\n')
+            res = check_result(key)
+            lit_ok = res['verdict'] == 'CLEAN'
+            print('  root-split literal stem resolver %s' %
+                  ('ok' if lit_ok else '✗ got %s' % res['verdict']))
+            ok = ok and lit_ok
+    finally:
+        globals()['INP'] = old_inp
+        globals()['OUTP'] = old_outp
     print('SELFTEST', 'PASS' if ok else 'FAIL')
     return 0 if ok else 1
 
