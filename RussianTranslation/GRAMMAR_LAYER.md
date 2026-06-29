@@ -83,12 +83,24 @@ Derivation ref `§§1136–1245` and compound ref `§§1246–1316` always appen
 `['devaH']`). Full per-headword paradigm display is deferred — not needed for the core
 annotation; add `--paradigm` flag to `nominal_grammar.py` when the nominal window runs.
 
-**A/B test deferred** until the first nominal translation window — same discipline as
-`AB_TEST_LEAN_TR.md` (sequential cost runs, non-inferiority). The harness injection
-function (`nominal_grammar_text()`) is ready; wire it into the nominal window harness
-when building that run.
+**A/B test RUN 2026-06-29 → translation injection REJECTED** (full writeup
+[`NOMINAL_GRAMMAR_AB.md`](NOMINAL_GRAMMAR_AB.md)). Wired per-card injection into the harness
+(`gen_opt_harness2.py --nominal [--no-grammar]`) and ran arm B (grammar ON) vs arm A (OFF) on
+8 stratified PWG headwords + blind Opus judge. Result: **A wins 5, ties 2, B wins 1** (grammar
+ON does NOT improve DE→RU translation; even `grammar_notes` went 4-1 to A). Why: PWG's German
+already carries the grammatical cues, and the one compound's segmentation was already printed in
+the source (`abadDa + muKa`), so the MW-join was redundant. Both arms: 0 nulls, 100% markup
+fidelity. **Decision: nominal windows run grammar OFF by default.** The layer is NOT retired —
+its value is **structured grammatical data** (stem-class index, paradigm, compound segmentation,
+exception §§) for the grammatical apparatus / declension display / FAIR export (Scope B/C),
+independent of translation. Build that consumer, not a translation injection.
 
-**Open follow-up:** fold exception citations from `WhitneyRoots/src/grammar_refs.json`
-into the nominal irregularities list (the `grammar_ref_builder.py` pattern). Low
-priority — covers only the ~935 roots already in the crosswalk, most of which are
-already handled by the root layer.
+**Exception fold DONE 2026-06-29:** `WhitneyRoots/src/grammar_refs.json` exception §§ are folded
+into the ROOT layer (`whitney_grammar.json`, 289 records, joined by whitney_no) — see
+`whitney_grammar.py`. (This enriched the root layer, the genuinely useful target; the nominal §§
+were always static-concordance, not per-word exceptions.)
+
+**vidyut paradigm display DONE 2026-06-29:** `nominal_grammar.py --paradigm <SLP1> <lex>` emits
+the real subanta declension (feminine ā/ī/ū stems use vidyut's `nyap` pratipadika; verified
+senā/nadī/agni). `nominal_grammar_for(..., paradigm=True)` attaches it. This is the structured-data
+asset the A/B says to build on (not the translation block).
