@@ -157,3 +157,18 @@ Ran the **full `gam` root** (127 cards → 18 batches) through opt2, then `audit
 now names `gen_opt_harness2.py` the default generator (legacy `gen_opt_harness.py` still
 supported). Open: re-measure the full root with the partial-retry fix; tune `--budget` for
 dense roots.
+
+## Cost decomposition (2026-06-29) — where the money actually is
+
+After the lean-TR A/B (`AB_TEST_LEAN_TR.md`) showed TR-trimming saves nothing, parsed the
+transcript directly. Per agent (batch): **our prompt (PREAMBLE+GRAMMAR+TR+schema+cards+
+portraits) is only ~5k tokens, but `cache_creation` is ~35k** — so **~30k (86%) is the
+workflow subagent's OWN framework system prompt** (agent instructions + tool infra), a FIXED
+cost per agent (not in the transcript; inferred as cache_creation − our prompt). Consequences:
+
+- TR (2.5k) / schema (1.2k) / masking / content trimming all chase the 5k slice → negligible.
+- The **−72% batching win was entirely fewer agents** (127→18 amortizes the 30k), NOT masking.
+- The 30k is a per-agent framework constant we can only **amortize, not remove** (barring a
+  leaner `agentType`). So **the ONE cost lever is agent count = batch size**: more cards per
+  agent → fewer 30k payments. (`--budget` controls packing; 24 cards → 5 batches at 9000,
+  2 at 20000, 1 at 40000.) Bounded by model reliability + output limits with many/dense cards.
