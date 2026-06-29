@@ -31,11 +31,16 @@ a probe), never a hunch. When a finding is later refuted or superseded, strike i
   (stem-class, accent-position)→case-accent table, join with `key2` `/`, validate vs accented RV),
   NOT a data-acquisition blocker. Vedic-only (Classical entries have no `/`). Earlier claim that
   "Whitney might supply it but our data can't" was an overstatement — both halves are on disk.
-  **Validation set = VedaWeb** ([vedaweb.uni-koeln.de](https://vedaweb.uni-koeln.de),
-  GitHub [VedaWebProject/vedaweb](https://github.com/VedaWebProject/vedaweb)): accented Rigveda +
-  per-word UZH morphology, accent-sensitive API (`rigveda/api/search`, ~10,522 stanzas), **CC BY 4.0**,
-  already CDSL-linked via the C-SALT APIs. Gives per attested RV form its case/number + accent with a
-  lemma to join to PWG — closes the validation loop. So the accent axis is *unblocked*, not just spec'd.
+  **Validation set = VedaWeb 2.0, PROBED + CONFIRMED 2026-06-29.** API live at
+  `vedaweb.uni-koeln.de/api` (FastAPI, OpenAPI at `/api/openapi.json`).
+  `POST /api/search {"type":"quick","q":"agni"}` → 3,840 hits; e.g. RV 6.59.3 highlight from the
+  **Casaretto et al. (2025) annotation resource** `66695e4a14f6d337f7788740` is the udātta-marked
+  word-split `… índrā; nú; agnī́; ávasā; ihá; vajríṇā; vayám; devā́` — accented per-word forms,
+  position-aligned, with lemmatization (`679b7da2…`) + accented text (`66695c4b…`, Scarlata–Widmer/
+  Lubotsky) at the same locations, and bulk `GET /api/resources/{id}/export`. So per lemma you can
+  collect attested inflected+accented forms, bucket by morphology, and validate a generated paradigm.
+  **CC BY 4.0**, in-ecosystem (C-SALT/CDSL). The accent axis is *unblocked and de-risked* — only the
+  Whitney-rule encoding + the join remain. (The legacy `/rigveda/api/search` is superseded by 2.0.)
   **Source:** [`ZALIZNYAK_INDEX.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/ZALIZNYAK_INDEX.md)
   §"Vedic accent mobility" + `WhitneyRoots/src/whitney_sections.json` §§315–319 — RussianTranslation · 2026-06-29
 
