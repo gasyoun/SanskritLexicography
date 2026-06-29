@@ -133,6 +133,27 @@ subkey), so the harness maps cards **positionally** (requires `cards.length === 
 else retry) and runs a **post-restore fidelity guard** — if a card's restored `<ls>`/`{#..#}`
 counts don't match its source, it is nulled → deterministic requeue, never emitted garbled.
 
-**Status:** validated, canonical, −90 % cost, quality-parity. Open before full rollout: tune
-batch budget for dense roots (depth vs cost); run a full mixed root end-to-end through
-`audit_window.py`; wire `gen_opt_harness2.py` into `RUN_FREQ_MAX.md` as the default generator.
+**Status:** validated, canonical, −90 % cost (small batch), quality-parity.
+
+## Full-root rollout (measured end-to-end)
+
+Ran the **full `gam` root** (127 cards → 18 batches) through opt2, then `audit_window.py`:
+
+| | original per-card | opt2 batched+masked | Δ |
+|---|---:|---:|---:|
+| full-`gam` $ cost | **$16.14** | **$4.45** | **−72 %** |
+| agent calls | 127 | 18 (33 with retries) | |
+
+- `audit_window.py` **consumed the canonical output unchanged** — 127 cards, clean 107,
+  requeue 20; nws + sense_dupes gates ran normally.
+- The fidelity guard **nulled 3 cards** (restored markup ≠ source) → requeue, never garbled;
+  124/124 surviving cards markup-faithful, **0 leftover `{Tn}`**.
+- −72 % (vs −90 % on the small clean batch) because the dense `pw` cards are 1-per-batch and
+  **~15 retries** (33 calls / 18 batches) ate savings. Fixed: a batch now retries **only its
+  still-unresolved cards**, not the whole batch (one missing card no longer re-bills the rest)
+  — expected to recover much of the gap on the next run.
+
+**Wired in:** [`RUN_FREQ_MAX.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/RUN_FREQ_MAX.md)
+now names `gen_opt_harness2.py` the default generator (legacy `gen_opt_harness.py` still
+supported). Open: re-measure the full root with the partial-retry fix; tune `--budget` for
+dense roots.

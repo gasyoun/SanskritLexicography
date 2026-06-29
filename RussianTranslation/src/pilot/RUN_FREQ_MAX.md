@@ -45,6 +45,11 @@ and eliminated the transient dropouts.
   `--fail-on-blocked` when using them as CI/go-no-go gates.
 - Canonical next roots: finish the `sTA` re-batch cleanup, then run
   `BU`, `gam`, `yuj`, `as`, `i`, `vid`, `han`.
+- Do **not** run 10 big roots in one broad Max push yet. The current staged plan
+  is: fresh `sTA` only; then clean-ready roots `BU`, `as`, and `i`; then prune
+  and recheck stale roots `gam`, `yuj`, `vid`, and `han` before any Max spend.
+  This produces enough audit/cost data without mixing clean roots with avoidable
+  stale generated inputs.
 
 The earlier "Opus-judged-every-card" framing was the validation phase; "Sonnet-bulk/Opus-on-reject"
 was the 2026-06-26 escalation policy; the per-card LLM judge itself is now dropped from the bulk path.
@@ -71,6 +76,10 @@ Observed state:
   machine has the required rootmaps/sub-cards for `sTA`, `BU`, and `gam`.
 - `verify_root_glue.py`: **ALL GATES PASS**; lossless round-trip, 0 secondary
   conjugation blocks still merged, 60 rootmaps with unique keyed subkeys.
+- 2026-06-29 root status refresh: `sTA` is structurally ready but stale-output
+  blocked; `BU` (59 sub-cards), `as` (98), and `i` (204) are clean-ready after
+  harness generation; `gam`, `yuj`, `vid`, and `han` have stale generated
+  raw/portrait inputs and must be pruned/rechecked before harness generation.
 
 The preflight writes only gitignored pilot artifacts except when code/docs are
 changed intentionally.
@@ -103,6 +112,14 @@ manner/position forcing) as soft-judged guidance (judge check 7). Source tables:
 The loop is fixed: **preflight → generate optimized harness → Max Workflow → deterministic
 audit → requeue or sampled semantic judging**. Do not skip or reorder these steps.
 
+For enough data to estimate speed and quality, use staged roots:
+
+1. **Stage A:** run fresh `sTA` only and audit/requeue until mechanically clean.
+2. **Stage B:** run `BU`, `as`, and `i` one root at a time after `sTA` clears.
+3. **Stage C:** before `gam`, `yuj`, `vid`, or `han`, run
+   `root_window_status.py <root> --prune-stale`, recheck, then generate harnesses
+   only for roots that are structurally clean.
+
 ```powershell
 cd RussianTranslation\src
 
@@ -123,23 +140,59 @@ This command prints the structural state plus one `next action` and one
 `next command`; if it disagrees with stale notes elsewhere, trust the command
 output and `src\pilot\output\window_status.json`.
 
-Generate the **optimized** harness for the root:
+Generate the harness for the root. **Default: the batched + masked v2 harness**
+([`gen_opt_harness2.py`](gen_opt_harness2.py)) — masks each card (pwg_mask), packs
+several per agent call, and restores `{Tn}` to source markup in-JS so the result is a
+canonical `wf_output.json` (audit consumes it unchanged, no extra step). Measured
+**−72 % cost on a full mixed root** (gam: original per-card **\$16.14 → \$4.45**; a clean
+small batch is −90 %). See [`../../TLONLY_PROTOTYPE.md`](../../TLONLY_PROTOTYPE.md).
 
 ```powershell
-python src\pilot\gen_opt_harness.py sTA
+python src\pilot\gen_opt_harness2.py sTA            # default (batched+masked, -72%)
+# -> writes src\pilot\run_pilot_wf.opt2.js  (run THIS in Max, save result as wf_output.json)
+# --budget=N tunes batch packing (chars of skeleton+portrait per batch; default 9000).
+# A batch retries only its still-unresolved cards; a card whose restored <ls>/{#..#}
+# counts don't match source is nulled -> requeue (never emitted garbled).
+```
+
+Legacy per-card harness (still supported; no masking/batching):
+
+```powershell
+python src\pilot\gen_opt_harness.py sTA             # -> run_pilot_wf.opt.js
+```
+
+Confirm the committed prompt template and generated harness still carry the
+manual-derived semantic rules before Max spend:
+
+```powershell
+python src\pilot\prompt_rule_audit.py --fail-on-missing
 ```
 
 After this succeeds, a stale `window_status.json` from the previous audit is no longer the next
 operator step. `root_window_status.py` should now tell you to run the generated harness in Max,
 then audit the fresh `wf_output.json`.
 
-Run the generated `src\pilot\run_pilot_wf.opt.js` in the Claude/Max Workflow surface and save
-the JSON result as `wf_output.json`. This optimized harness is self-contained: it inlines raw
-and portrait inputs, strips `node:fs`, disables translate-agent tools with `tools: []`, and
-returns top-level workflow provenance (`meta`: root, mode, selected keys, rootmap SHA-256,
-and raw/portrait SHA-256 values). It is the supported route for the in-chat Workflow tool.
+Run the generated harness (default `src\pilot\run_pilot_wf.opt2.js`, or the legacy
+`run_pilot_wf.opt.js`) in the Claude/Max Workflow surface and save the JSON result as
+`wf_output.json`. Both are self-contained: they inline inputs, disable translate-agent tools
+with `tools: []`, and return top-level workflow provenance (`meta`: root, mode, selected keys,
+rootmap SHA-256, per-input SHA-256). The v2 harness additionally batches, masks, and restores
+`{Tn}` in-JS — its output is already canonical, so the audit step is unchanged. It is the
+supported route for the in-chat Workflow tool.
 Do not run the committed `run_pilot_wf.js` directly for production windows; it is the template
 used by `gen_opt_harness.py`.
+
+Before the mechanical window audit, run the cheap translated-card semantic triage:
+
+```powershell
+python src\pilot\prompt_rule_audit.py --cards wf_output.json --review-limit 25
+```
+
+This writes the same ignored `prompt_rule_audit.{json,md}` report family with a
+separate `card_risks` section and ranked `review_queue`. It is advisory by default;
+start human/LLM semantic review from the `review_queue`, while mechanical reruns
+still come only from `audit_window.py`. Add `--fail-on-risk` or `--fail-on-high-risk`
+only for fixture/CI smoke checks, not for routine operator flow.
 
 Lanes:
 
@@ -172,6 +225,10 @@ python src\pilot\audit_window.py wf_output.json --root sTA --write-requeue `
 
 If the weekly Max cap fires, add `--weekly-cap-fired --weekly-cap-cumulative-tokens N`.
 
+For Stage B and later roots, change only `--root` and the generated harness root
+name. Do not combine multiple roots into one `wf_output.json`; audit economics
+and requeue keys must remain root-scoped.
+
 The audit first compares workflow provenance against the current rootmap and raw/portrait
 inputs. Stale output (missing `meta`, key mismatch, rootmap hash mismatch, or input hash
 mismatch) stops before collect/gates/glue and records state `stale_artifact`. Check
@@ -187,6 +244,12 @@ The audit writes `audit_window.report.json`, `audit_window.report.md`, `window_s
 `judge_sample.keys.txt` under `src\pilot\output`.
 Any NWS owner mismatch is quarantined as `*.merged.REJECTED.md`; markup-fidelity, coverage,
 sense-duplicate, missing-card, or stale-input failures are re-queues, not accepts.
+`prompt_rule_audit.py` is the no-token semantic wiring and translated-card triage check: before
+Max it catches missing manual-derived prompt rules; after Max it flags cheap semantic-risk
+patterns such as German residue, collapsed synonym strings, circular glosses, missing metadata,
+markup/sigla leakage, formula drift, sense-compression signals, and suspicious source-type
+evidence. Its ranked `review_queue` is the fastest human-first reading order; it does not
+rewrite prompts, requeue cards, or replace human judgment.
 `judge_sample.keys.txt` is the semantic review spend queue: all Python-gate failures plus a
 deterministic 10 % sample of clean translated keys. It is NOT the mechanical requeue list.
 
