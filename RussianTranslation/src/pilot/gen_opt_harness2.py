@@ -164,22 +164,34 @@ _GENDER_PRIORITY = ('m.', 'f.', 'n.', 'm.n.', 'm.f.', 'f.n.', 'm.f.n.',
                     'adj.', 'adv.', 'indecl.', 'ind.', 'interj.')
 
 
-def _lex_for_key(k):
-    """Read the <lex>/pos tag for a nominal headword from its portrait JSON."""
+def _slp1_lex_for_key(k):
+    """Read (SLP1 key1, lex tag) from a card's portrait JSON.
+
+    The card key `k` is a safe-name FILE stem (input files are stored under
+    safe_name(SLP1); input_paths uses the literal stem). The true SLP1 — needed
+    for the compound join and the grammar display — is the portrait's `key1`
+    field, NOT the mangled stem. Returns ('', '') if the portrait is unreadable.
+    """
     _, pp = input_paths(k)
     try:
         port = load_json(pp)
     except Exception:
-        return ''
+        return '', ''
     e = port[0] if isinstance(port, list) and port else port
+    slp1 = e.get('key1') or e.get('slp1') or ''
     val = e.get('lex') or e.get('pos') or e.get('gender') or ''
     if isinstance(val, (list, tuple)):
         tags = [str(t).strip() for t in val if str(t).strip()]
-        for g in _GENDER_PRIORITY:
-            if g in tags:
-                return g
-        return tags[0] if tags else ''
-    return str(val).strip()
+        lex = next((g for g in _GENDER_PRIORITY if g in tags), tags[0] if tags else '')
+    else:
+        lex = str(val).strip()
+    return slp1, lex
+
+
+def _card_grammar_text(k):
+    """Per-card nominal grammar block, keyed by the portrait's true SLP1 (key1)."""
+    slp1, lex = _slp1_lex_for_key(k)
+    return nominal_grammar_text(slp1, lex)
 
 
 def extract_conv_tr():
@@ -280,7 +292,7 @@ def build(root, keys, rootmap, budget, lean=False, nws_gate=False,
     # PER CARD via GRAMMARS and leave the shared block empty. --no-grammar = arm A.
     if nominal:
         single_grammar = ''
-        grammars = {k: nominal_grammar_text(k, _lex_for_key(k)) for k in keys} if grammar_on else {}
+        grammars = {k: _card_grammar_text(k) for k in keys} if grammar_on else {}
     else:
         single_grammar = grammar_text(root) if grammar_on else ''
         grammars = {}
