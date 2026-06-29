@@ -4,6 +4,30 @@ One block per Max run. **Record the model tier on every step** (Sonnet / Opus /
 Haiku / none), not just runtime and tokens. Failures are logged, not hidden.
 History of how the harness got here: [`EVOLUTION_TIMELINE.md`](EVOLUTION_TIMELINE.md).
 
+## Stage A+B summary (2026-06-29) — all **Sonnet**, no Opus
+
+| root | cards | Max tokens | clean | clean % | gates: nws / sense_dupes |
+|---|---:|---:|---:|---:|---|
+| sTA (2 rounds) | 123 (+33 rq) | 5,310,934 | 96/123 | 78% | PASS / PASS |
+| BU | 59 | 2,022,803 | 45/59 | 76% | PASS / PASS |
+| as | 98 | 3,353,816 | 81/98 | 83% | PASS / PASS |
+| i (2 chunks) | 204 | 6,768,657 | 179/204 | 88% | PASS / PASS |
+| **total** | **484** | **~17.46 M** | **401/484** | **83%** | all PASS |
+
+- **Tier:** every translate agent = **Sonnet**; every audit gate = **no LLM**
+  (free Python). **Zero Opus** spent across the whole staged run. The optional
+  Opus LLM-judge of the per-root judge samples is still a separate, not-run step.
+- **Throughput / quota:** ~17.5 M Max tokens for 484 sub-cards (~36 k/card);
+  no weekly cap fired. Wall-clock ~65 min of translate across the roots (less
+  with the concurrent `i` chunks).
+- **Dominant residual is a documented false positive,** not a quality problem:
+  `suspicious_attested_without_text_signal` is 60–70% of every root's risks
+  because `has_text_signal()` ignores NWS owner citations — see F-gate-nws-fp.
+  The NWS attribution gate itself PASSES on all four roots (the owner-map feed
+  works); sense-dupe gate PASSES on all four.
+- **Real, fixable residual** (Sonnet ceiling): `untranslated_braced_german_gloss`
+  on citation-dense cards — the legitimate candidates for an Opus retranslate.
+
 ---
 
 ## 2026-06-29 — Stage B: BU
@@ -45,12 +69,23 @@ over the Workflow 512 KB `scriptPath` cap. Split into two 102-card sub-windows v
 two **Sonnet** Workflows, to be reassembled into one root-scoped `wf_output.json`
 for a single `i` audit.
 
-| chunk | model | cards | task | status |
-|---|---|---:|---|---|
-| 1 | Sonnet | 102 | `w2mv6pwyl` | running |
-| 2 | Sonnet | 102 | `wc37hznuc` | running |
+| chunk | model | cards | tokens | wall-clock | task |
+|---|---|---:|---:|---:|---|
+| 1 | Sonnet | 102 | 3,371,012 | ~11.4 min | `w2mv6pwyl` |
+| 2 | Sonnet | 102 | 3,397,645 | ~10.7 min | `wc37hznuc` |
+| **total** | Sonnet | **204** | **6,768,657** | ~11.4 min (concurrent) | — |
 
-> Numbers + combined audit to be appended on completion. No Opus.
+Both chunk outputs reassembled into one root-scoped 204-card `wf_output.json`
+(union of `results` **and** `meta.input_hashes` — the first merge attempt failed
+the stale-check because only chunk-1 hashes were carried; fixed by merging both
+hash maps), then a single `audit_window.py --root i`:
+
+- **clean 179/204** (88% — best ratio of the run) · requeue 25 · judge sample 43
+- Gates: coverage=1 (7), prompt_semantic=1 (16), translation=1 (3), nws=**0 PASS**, sense_dupes=**0 PASS**
+- Risk mix: `suspicious_attested_without_text_signal`=263 (**F-gate-nws-fp**, ~70%),
+  `collapsed_synonym_string`=40, `possible_sense_compression`=38,
+  `untranslated_braced_german_gloss`=22, others ~26.
+- **Decision: ACCEPT** at 179/204 (same documented-FP pattern). No Opus spent.
 
 ---
 
