@@ -35,16 +35,31 @@ re-translation). Verify with `python src/pilot/window_selftest.py`.
 `gen_opt_harness2.py` so all roots are uniformly 3-layer. (Skip if the user decides 2-layer
 is acceptable for these.) Same per-root loop as Step 2.
 
-## Step 2 — the per-root loop (remaining ~52 roots / ~2,255 cards ≈ $130, ~5 h sequential)
+## Step 2 — the per-root loop (THIS chat = SLICE A, 26 roots ≈ $65, ~2.5 h)
 
-For each root R (freq order; see `freq_route.py` / `src/pilot/output/scale_manifest.freq.json`):
+**Parallelization:** the 52 remaining roots are split into two disjoint slices so a second
+chat (`HANDOFF_2026-06-29_scope_c_freq_queue.md`) can run concurrently. **This chat owns
+SLICE A only** (don't touch Slice C):
+
+```
+dA,jYA,vac,car,diS,vA,hA,viS,muc,Sru,mA,vas,Ap,vah,laB,As,siD,ji,tap,dah,ram,Baj,kzip,aS,SaMs,tyaj
+```
+
+Use a per-chat **TAG = `sa`** for unique filenames so the two chats never clobber each other's
+`run_pilot_wf.opt2.js` / `wf_output.json`. For each root R:
 
 ```powershell
 python src\pilot\root_window_status.py R          # expect PASS, 0 stale; --prune-stale if needed
 python src\pilot\gen_opt_harness2.py R             # writes run_pilot_wf.opt2.js (3-layer)
-# run src/pilot/run_pilot_wf.opt2.js via the Workflow tool; save its result as wf_output.json
-python src\pilot\audit_window.py wf_output.json --root R --write-requeue
+copy src\pilot\run_pilot_wf.opt2.js src\pilot\run_pilot_wf.sa.js   # unique per chat
+# run src/pilot/run_pilot_wf.sa.js via the Workflow tool; save its result as wf_output.sa.json
+python src\pilot\audit_window.py wf_output.sa.json --root R --write-requeue
 ```
+
+**Read the audit's STDOUT** for the accept/requeue decision (clean/requeue counts are printed
+inline) — do NOT rely on the shared `src/pilot/output/requeue.keys.txt` persisting (the other
+chat overwrites it). **Defer actual requeue re-runs** (`requeue_from_audit.py`) to a single
+coordinating pass after both slices finish — running it inline races on `requeue.keys.txt`.
 
 Verify each `wf_output.json`: 0 null beyond the guard, 0 leftover `{Tn}`, markup-fidelity =
 non-null count (the harness already guards this — nulled cards = requeue, never garbled).
