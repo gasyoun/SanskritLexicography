@@ -130,6 +130,18 @@ headword in `cards`, with `key1` matching its '=== CARD <key> ===' header. Omit 
 def build(root, keys, rootmap, budget):
     conv = conv_text()
     tr = extract_conv_tr().replace('${CONV}', conv)
+    # CRITICAL: the production TR tells the model "INPUTS for headword KEY (read both):
+    # KEYFILE.raw.txt / .portrait.json" — i.e. to READ files. In the masked-inline regime
+    # that makes the model call file tools and list the input dir (the yuj retry/cost blowup,
+    # 2026-06-29). Strip it so the only inputs are the inlined masked cards.
+    tr, n = re.subn(
+        r'INPUTS for headword KEY \(read both\):.*?\.portrait\.json[^\n]*',
+        'INPUTS for each headword are INLINED below per card (its masked German skeleton + '
+        'portrait). Do NOT open files, do NOT call any tools, do NOT list directories, do NOT '
+        'supply senses from memory — translate EXACTLY what is inlined, nothing else.',
+        tr, count=1, flags=re.S)
+    if n != 1:
+        die('could not neutralize the TR file-reading block (expected 1 match, got %d)' % n)
     schema = load_json(os.path.join(REPO, 'schemas', 'pwg_ru_final_card.schema.json'))
     defs = schema['$defs']
     card_ref = {'$ref': '#/$defs/card'}
