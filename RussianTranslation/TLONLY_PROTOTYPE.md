@@ -172,3 +172,14 @@ cost per agent (not in the transcript; inferred as cache_creation − our prompt
   leaner `agentType`). So **the ONE cost lever is agent count = batch size**: more cards per
   agent → fewer 30k payments. (`--budget` controls packing; 24 cards → 5 batches at 9000,
   2 at 20000, 1 at 40000.) Bounded by model reliability + output limits with many/dense cards.
+
+**Budget test (cold, 24-card sample):** budget 9000 = 5 batches, **$1.58**, 0 null vs budget
+20000 = 2 batches, **$1.22 (−23%)**, 1 null. The −23% is the 30k amortization (cache_create
+210k→146k ≈ 2 fewer agents × 30k). Costs: ~1 extra requeue (re-translated, not a quality loss)
+and **much slower** (455s vs 180s — big batches grind). budget 40000 (1 batch of 24 incl the
+3 `pw`/`sch` monsters) is risky — output-limit/retry territory; not run.
+**Recommendation:** a *moderate* default budget bump (~15–18k) captures most of the win at low
+risk; the extreme single-batch is not worth the reliability cost. We're near the practical floor
+— the 30k subagent system prompt is a framework constant; deeper cuts need a leaner `agentType`
+(framework-level, untested). Net: agent-count IS the lever, confirmed and quantified; the big
+win (−72%) was already captured by batching, and further gains are modest + risk-bounded.
