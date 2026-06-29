@@ -32,6 +32,7 @@ translate-only `run_pilot_wf.opt.js` body — that body is **Sonnet-only**.
 | F-stale-output | stale `wf_output.json` used as evidence | "done" claimed from a previous run's JSON | reused artifact across runs | handoff non-negotiable: never use stale `wf_output.json`; root-scoped output only (2026-06-28/29) |
 | F-token-blowup | ~10M tokens for ONE root | quota burned in 3–4 days | per-card Opus judging + full multi-turn | BALANCED translate-only harness (Sonnet, single-turn, inlined inputs, 1 retry); free Python gates replace per-card LLM judge (`ce7a1dd`, 2026-06-27) |
 | F-nonascii-root | `gen_opt_harness` rootmap lookup failed for non-ASCII roots | harness couldn't generate for some roots | ASCII-only key assumption | rootmap lookup fix (`f450d10`, 2026-06-27) |
+| **F-harness-size-limit** | 204-card root harness too big to launch | `i` harness = 567 KB > Workflow 512 KB `scriptPath` cap | inlined raw+portrait inputs scale with card count | split root into 2 sub-windows via `gen_opt_harness.py i body --keys=...`, run each (~280–316 KB), reassemble into one root-scoped `wf_output.json` for a single `i` audit (2026-06-29) |
 | **F-gate-nws-fp** | requeue loop chases a gate false positive | `suspicious_attested_without_text_signal` = 66% of risks, never clears, NWS `pw01` got *worse* on rerun (810→1430) | `has_text_signal()` counts only literary sigla (`<ls`/ṚV/MBH) + stratum, NOT NWS owner citations (MW/Graßmann/Geldner) | OPEN (2026-06-29) — see [`RUN_LOG.md`](RUN_LOG.md); fix gate or escalate real failers to Opus, don't re-loop Sonnet |
 
 ---
