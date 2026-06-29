@@ -70,14 +70,37 @@ def die(msg):
 
 def parse_args(argv):
     if not argv:
-        die('usage: gen_opt_harness2.py <root> [--keys=..] [--budget=N]')
-    root, keyfilter, budget = argv[0], None, 9000
+        die('usage: gen_opt_harness2.py <root> [--keys=..] [--budget=N] [--lean]')
+    root, keyfilter, budget, lean = argv[0], None, 9000, False
     for a in argv[1:]:
         if a.startswith('--keys='):
             keyfilter = set(filter(None, a.split('=', 1)[1].split(',')))
         elif a.startswith('--budget='):
             budget = int(a.split('=', 1)[1])
-    return root, keyfilter, budget
+        elif a == '--lean':
+            lean = True
+    return root, keyfilter, budget, lean
+
+
+def make_lean(tr):
+    """TR_lean (masked-regime): compress HARD RULE 3 (markup-verbatim → {Tn} verbatim) and
+    EXTRACT HARD RULE 5 (NWS owner-map) so the JS can inject it only into NWS-bearing batches.
+    Returns (tr_without_nws, nws_block)."""
+    nws_m = re.search(r'5\. NWS LAYER.*?(?=\n\nRENDERING GUIDANCE)', tr, re.S)
+    if not nws_m:
+        die('lean: could not locate HARD RULE 5 (NWS) block')
+    nws_block = nws_m.group(0)
+    tr2 = tr.replace(nws_block, '5. NWS LAYER — present only for NWS sub-source cards; '
+                     'when an NWS owner-map block appears in a card, follow its rule shown there.')
+    tr2, n = re.subn(
+        r'3\. SIGLA UNTOUCHED.*?(?=\n4\. ALL RECORDS)',
+        '3. KEEP {Tn} VERBATIM — every untranslatable span (Sanskrit, sigla, abbreviations) is '
+        'masked as a {Tn} placeholder; keep every {Tn} unchanged and in its original order, and '
+        'never type any Sanskrit, siglum, or markup yourself (Python restores them).\n',
+        tr2, count=1, flags=re.S)
+    if n != 1:
+        die('lean: could not compress HARD RULE 3 (markup-verbatim) block')
+    return tr2, nws_block
 
 
 def selected_keys(root, keyfilter):
@@ -127,7 +150,7 @@ headword in `cards`, with `key1` matching its '=== CARD <key> ===' header. Omit 
 """
 
 
-def build(root, keys, rootmap, budget):
+def build(root, keys, rootmap, budget, lean=False):
     conv = conv_text()
     tr = extract_conv_tr().replace('${CONV}', conv)
     # CRITICAL: the production TR tells the model "INPUTS for headword KEY (read both):
@@ -142,6 +165,10 @@ def build(root, keys, rootmap, budget):
         tr, count=1, flags=re.S)
     if n != 1:
         die('could not neutralize the TR file-reading block (expected 1 match, got %d)' % n)
+    # --lean (A/B): compress rule 3 + pull rule 5 (NWS) out so it is injected per-batch only.
+    nws_block = ''
+    if lean:
+        tr, nws_block = make_lean(tr)
     schema = load_json(os.path.join(REPO, 'schemas', 'pwg_ru_final_card.schema.json'))
     defs = schema['$defs']
     card_ref = {'$ref': '#/$defs/card'}
@@ -161,7 +188,8 @@ def build(root, keys, rootmap, budget):
         if pwg_mask.restore(skel, ph) != raw:
             die('mask round-trip not lossless for %s' % k)
         inputs[k] = {'skeleton': skel, 'portrait': read_text(pp),
-                     'ls': raw.count('<ls'), 'sk': raw.count('{#')}
+                     'ls': raw.count('<ls'), 'sk': raw.count('{#'),
+                     'nws': 1 if 'NWS' in raw else 0}
         phmaps[k] = ph
         input_hashes[k] = {'raw_sha256': sha256_file(rp), 'portrait_sha256': sha256_file(pp)}
 
@@ -195,6 +223,7 @@ export const meta = {
 const CONV_TR = %(tr)s
 const PREAMBLE = %(preamble)s
 const GRAMMAR = %(grammar)s
+const NWS_RULE = %(nws)s
 const CARDS_SCHEMA = %(schema)s
 const BATCHES = %(batches)s
 const INPUTS = %(inputs)s
@@ -229,7 +258,10 @@ async function translateBatch(batch, bi) {
   const resolved = {}
   let pending = batch.slice()
   for (let attempt = 0; attempt < 2 && pending.length; attempt++) {
-    const prompt = PREAMBLE + GRAMMAR + CONV_TR + pending.map(cardBlock).join('')
+    // lean mode: NWS_RULE is non-empty and injected only when the batch has an NWS card
+    // (full mode: NWS_RULE is '' and the NWS rule already lives inside CONV_TR).
+    const nws = (NWS_RULE && pending.some(k => INPUTS[k].nws)) ? ('\\n\\n' + NWS_RULE + '\\n') : ''
+    const prompt = PREAMBLE + GRAMMAR + CONV_TR + nws + pending.map(cardBlock).join('')
     const res = await agent(prompt, { label: 'b' + bi + '[' + pending.length + ']' + (attempt ? '(retry)' : ''), phase: 'Translate', schema: CARDS_SCHEMA, model: 'sonnet', tools: [] })
     if (res && Array.isArray(res.cards)) {
       pending.forEach((k, i) => { const c = accept(res.cards[i], k); if (c) resolved[k] = c })
@@ -245,6 +277,7 @@ return { meta: META, results: out }
         'root': root, 'tr': json.dumps(tr, ensure_ascii=True),
         'preamble': json.dumps(MASK_PREAMBLE, ensure_ascii=True),
         'grammar': json.dumps(grammar_text(root), ensure_ascii=True),
+        'nws': json.dumps(nws_block, ensure_ascii=True),
         'schema': json.dumps(batch_schema, ensure_ascii=True),
         'batches': json.dumps(batches), 'inputs': json.dumps(inputs, ensure_ascii=True),
         'phmaps': json.dumps(phmaps, ensure_ascii=True), 'meta': json.dumps(meta, ensure_ascii=True),
@@ -256,13 +289,13 @@ return { meta: META, results: out }
 
 
 def main():
-    root, keyfilter, budget = parse_args(sys.argv[1:])
+    root, keyfilter, budget, lean = parse_args(sys.argv[1:])
     rootmap, keys = selected_keys(root, keyfilter)
-    js, batches = build(root, keys, rootmap, budget)
+    js, batches = build(root, keys, rootmap, budget, lean)
     out = os.path.join(REPO, 'src', 'pilot', 'run_pilot_wf.opt2.js')
     write_text(out, js)
     print('wrote', out, len(js), 'bytes |', len(keys), 'cards in', len(batches), 'batches',
-          '(sizes', [len(b) for b in batches], ')')
+          '(sizes', [len(b) for b in batches], ') | mode', 'LEAN' if lean else 'full')
 
 
 if __name__ == '__main__':
