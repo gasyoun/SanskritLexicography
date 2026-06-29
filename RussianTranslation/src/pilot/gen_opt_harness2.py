@@ -14,8 +14,9 @@ Quality parity: reuses the FULL production CONV+TR prompt (all HARD RULES, NWS o
 map, Nachträge, microstructure) with a MASKED/BATCHED preamble that overrides only the
 input-format + markup-verbatim specifics ("keep {Tn} verbatim" instead of "{#..#}/<ls>").
 
-Usage:  python src/pilot/gen_opt_harness2.py <root> [--keys=k1,k2] [--budget=9000]
-Writes: src/pilot/run_pilot_wf.opt2.js
+Usage:  python src/pilot/gen_opt_harness2.py <root> [--keys=k1,k2] [--budget=9000] [--out=PATH]
+Writes: src/pilot/run_pilot_wf.opt2.js  (or --out=PATH — use a per-root/per-chat path to
+        avoid the gen->copy race when several chats generate harnesses concurrently)
 """
 import datetime
 import json
@@ -104,12 +105,15 @@ def parse_args(argv):
     root, keyfilter, budget, lean, nws_gate = argv[0], None, 9000, False, False
     nominal, grammar_on = False, True
     keylist = None                     # ordered keys (nominal mode preserves order)
-    for a in argv[1:]:
+    out_path = None                    # --out=PATH overrides the default opt2.js (avoids the
+    for a in argv[1:]:                 # gen->copy race when several chats generate at once)
         if a.startswith('--keys='):
             keylist = [k for k in a.split('=', 1)[1].split(',') if k]
             keyfilter = set(keylist)
         elif a.startswith('--budget='):
             budget = int(a.split('=', 1)[1])
+        elif a.startswith('--out='):
+            out_path = a.split('=', 1)[1]
         elif a == '--lean':
             lean = True
         elif a == '--nws-gate':
@@ -118,7 +122,7 @@ def parse_args(argv):
             nominal = True
         elif a == '--no-grammar':
             grammar_on = False
-    return root, keyfilter, keylist, budget, lean, nws_gate, nominal, grammar_on
+    return root, keyfilter, keylist, budget, lean, nws_gate, nominal, grammar_on, out_path
 
 
 def extract_nws(tr):
@@ -391,7 +395,7 @@ return { meta: META, results: out }
 
 
 def main():
-    root, keyfilter, keylist, budget, lean, nws_gate, nominal, grammar_on = parse_args(sys.argv[1:])
+    root, keyfilter, keylist, budget, lean, nws_gate, nominal, grammar_on, out_path = parse_args(sys.argv[1:])
     if nominal:
         # No rootmap: the headword keys ARE the cards, in the order given.
         if not keylist:
@@ -402,7 +406,7 @@ def main():
         if keylist:
             keys = [k for k in keylist if k in set(keys)]
     js, batches = build(root, keys, rootmap, budget, lean, nws_gate, nominal, grammar_on)
-    out = os.path.join(REPO, 'src', 'pilot', 'run_pilot_wf.opt2.js')
+    out = os.path.abspath(out_path) if out_path else os.path.join(REPO, 'src', 'pilot', 'run_pilot_wf.opt2.js')
     write_text(out, js)
     mode = ('NOMINAL%s' % ('' if grammar_on else '/no-grammar')) if nominal else (
         'LEAN(rejected)' if lean else 'NWS-GATE' if nws_gate else 'full')

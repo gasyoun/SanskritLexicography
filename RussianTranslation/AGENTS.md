@@ -47,10 +47,14 @@ Canonical loop from the repo root:
 
 ```powershell
 python src\pilot\root_window_status.py <root>
-python src\pilot\gen_opt_harness.py <root>
-# run src\pilot\run_pilot_wf.opt.js in Claude/Max Workflow and save wf_output.json
+python src\pilot\gen_opt_harness2.py <root>          # batched+masked, canonical (-72..-90% cost)
+# run src\pilot\run_pilot_wf.opt2.js in Claude/Max Workflow and save wf_output.json
+# (use --out=run_pilot_wf.<tag>_<root>.js when several chats generate at once)
 python src\pilot\audit_window.py wf_output.json --root <root> --write-requeue
 ```
+
+> The legacy per-card `gen_opt_harness.py` / `run_pilot_wf.opt.js` is deprecated;
+> use `gen_opt_harness2.py` / `run_pilot_wf.opt2.js` for all production windows.
 
 Current queue: finish `sTA` re-batch cleanup, then `BU`, `gam`, `yuj`, `as`,
 `i`, `vid`, `han`.
@@ -106,7 +110,7 @@ If the weekly Max cap fires, also pass:
 Generated/local runtime files are ignored and should not be treated as
 deliverables:
 
-- `src/pilot/run_pilot_wf.opt.js`
+- `src/pilot/run_pilot_wf.opt.js` (legacy) and `src/pilot/run_pilot_wf.opt2.js` (canonical)
 - `src/pilot/run_pilot_wf.run.js`
 - `src/pilot/run_pilot_wf.headtest.js`
 - `wf_output.json`
@@ -167,8 +171,9 @@ For code changes, run the narrowest relevant checks. Common checks include:
 
 ```powershell
 python -m py_compile <changed-python-files>
+python src\pilot\window_selftest.py
 python src\pilot\root_window_status.py <root>
-python src\pilot\gen_opt_harness.py <root>
+python src\pilot\gen_opt_harness2.py <root>
 python src\pilot\audit_window.py wf_output.json --root <root> --write-requeue
 python src\verify_root_glue.py
 node --check src\pilot\run_pilot_wf.js

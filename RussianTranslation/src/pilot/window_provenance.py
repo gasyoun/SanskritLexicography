@@ -117,7 +117,7 @@ def harness_matches_current_root(report):
     stale = report.get('stale_check') or {}
     current = stale.get('current') or {}
     expected = current.get('selected_keys') or []
-    meta = harness_meta(os.path.join(HERE, 'run_pilot_wf.opt.js'))
+    meta = harness_meta()
     if not root or not current.get('rootmap_sha256') or not expected:
         return False, meta
     if not meta.get('ok'):

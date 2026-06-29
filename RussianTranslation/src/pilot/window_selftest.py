@@ -127,7 +127,7 @@ def test_workflow_payload_nested():
 
 
 def test_harness_scope_and_tools():
-    meta = harness_meta(os.path.join(HERE, 'run_pilot_wf.opt.js'))
+    meta = harness_meta()  # canonical opt2 harness (window_common.OPT_HARNESS)
     if not meta.get('ok'):
         fail('optimized harness missing or invalid: %s' % meta.get('error'))
     current = current_root_provenance(meta.get('root'), meta.get('selected_keys'))
@@ -606,9 +606,27 @@ def test_release_manifest_hash_validation():
         run([sys.executable, os.path.join(SRC, 'validate_release.py'), edition], expect=1)
 
 
+def test_sense_dupe_batch_override():
+    """The cross-part sense-duplicate exemption must be reproducible from the committed
+    rootmap_overrides.json, NOT from a gitignored hand-edited rootmap (PROCESS_AUDIT rec 15)."""
+    from audit_sense_dupes import allowed_batch_duplicate, rootmap_meta
+    keys = ['x~~h0_00_pwg00', 'x~~h0_00_pwg01']
+    declared = {k: {'batch_of': '1c'} for k in keys}
+    if not allowed_batch_duplicate('1c', keys, declared):
+        fail('a declared citation-split duplicate must be permitted')
+    if allowed_batch_duplicate('1c', keys, {}):
+        fail('an undeclared cross-part duplicate must NOT be permitted')
+    # The committed override file must actually reach rootmap_meta() (jan 1c), independent
+    # of whatever the gitignored jan.rootmap.json currently holds.
+    entry = rootmap_meta().get('jan~~h0_00_pwg00') or {}
+    if entry.get('batch_of') != '1c':
+        fail('committed rootmap_overrides.json (jan 1c) not merged into rootmap_meta')
+
+
 def main():
     tests = [
         test_workflow_payload_nested,
+        test_sense_dupe_batch_override,
         test_harness_scope_and_tools,
         test_prompt_rule_audit_template,
         test_prompt_rule_audit_missing_blocks,
