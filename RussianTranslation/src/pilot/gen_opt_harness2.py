@@ -71,7 +71,7 @@ def die(msg):
 def parse_args(argv):
     if not argv:
         die('usage: gen_opt_harness2.py <root> [--keys=..] [--budget=N] [--lean]')
-    root, keyfilter, budget, lean = argv[0], None, 9000, False
+    root, keyfilter, budget, lean, nws_gate = argv[0], None, 9000, False, False
     for a in argv[1:]:
         if a.startswith('--keys='):
             keyfilter = set(filter(None, a.split('=', 1)[1].split(',')))
@@ -79,28 +79,35 @@ def parse_args(argv):
             budget = int(a.split('=', 1)[1])
         elif a == '--lean':
             lean = True
-    return root, keyfilter, budget, lean
+        elif a == '--nws-gate':
+            nws_gate = True
+    return root, keyfilter, budget, lean, nws_gate
 
 
-def make_lean(tr):
-    """TR_lean (masked-regime): compress HARD RULE 3 (markup-verbatim → {Tn} verbatim) and
-    EXTRACT HARD RULE 5 (NWS owner-map) so the JS can inject it only into NWS-bearing batches.
-    Returns (tr_without_nws, nws_block)."""
+def extract_nws(tr):
+    """Pull HARD RULE 5 (the long NWS owner-map block) out of TR so the JS injects it only
+    into NWS-bearing batches. SAFE — does not touch the markup-fidelity rule. (rule3 intact)"""
     nws_m = re.search(r'5\. NWS LAYER.*?(?=\n\nRENDERING GUIDANCE)', tr, re.S)
     if not nws_m:
-        die('lean: could not locate HARD RULE 5 (NWS) block')
+        die('could not locate HARD RULE 5 (NWS) block')
     nws_block = nws_m.group(0)
     tr2 = tr.replace(nws_block, '5. NWS LAYER — present only for NWS sub-source cards; '
                      'when an NWS owner-map block appears in a card, follow its rule shown there.')
+    return tr2, nws_block
+
+
+def compress_rule3(tr):
+    """Compress HARD RULE 3 (markup-verbatim) to a {Tn}-verbatim line. REJECTED by the A/B
+    (regressed markup fidelity — AB_TEST_LEAN_TR.md); kept only behind --lean for the record."""
     tr2, n = re.subn(
         r'3\. SIGLA UNTOUCHED.*?(?=\n4\. ALL RECORDS)',
         '3. KEEP {Tn} VERBATIM — every untranslatable span (Sanskrit, sigla, abbreviations) is '
         'masked as a {Tn} placeholder; keep every {Tn} unchanged and in its original order, and '
         'never type any Sanskrit, siglum, or markup yourself (Python restores them).\n',
-        tr2, count=1, flags=re.S)
+        tr, count=1, flags=re.S)
     if n != 1:
-        die('lean: could not compress HARD RULE 3 (markup-verbatim) block')
-    return tr2, nws_block
+        die('could not compress HARD RULE 3 (markup-verbatim) block')
+    return tr2
 
 
 def selected_keys(root, keyfilter):
@@ -150,7 +157,7 @@ headword in `cards`, with `key1` matching its '=== CARD <key> ===' header. Omit 
 """
 
 
-def build(root, keys, rootmap, budget, lean=False):
+def build(root, keys, rootmap, budget, lean=False, nws_gate=False):
     conv = conv_text()
     tr = extract_conv_tr().replace('${CONV}', conv)
     # CRITICAL: the production TR tells the model "INPUTS for headword KEY (read both):
@@ -165,10 +172,14 @@ def build(root, keys, rootmap, budget, lean=False):
         tr, count=1, flags=re.S)
     if n != 1:
         die('could not neutralize the TR file-reading block (expected 1 match, got %d)' % n)
-    # --lean (A/B): compress rule 3 + pull rule 5 (NWS) out so it is injected per-batch only.
+    # A/B variants. --nws-gate: safe (rule 3 kept, only NWS gated). --lean: also compresses
+    # rule 3 (REJECTED — regressed fidelity; kept for the record only).
     nws_block = ''
     if lean:
-        tr, nws_block = make_lean(tr)
+        tr = compress_rule3(tr)
+        tr, nws_block = extract_nws(tr)
+    elif nws_gate:
+        tr, nws_block = extract_nws(tr)
     schema = load_json(os.path.join(REPO, 'schemas', 'pwg_ru_final_card.schema.json'))
     defs = schema['$defs']
     card_ref = {'$ref': '#/$defs/card'}
@@ -289,13 +300,14 @@ return { meta: META, results: out }
 
 
 def main():
-    root, keyfilter, budget, lean = parse_args(sys.argv[1:])
+    root, keyfilter, budget, lean, nws_gate = parse_args(sys.argv[1:])
     rootmap, keys = selected_keys(root, keyfilter)
-    js, batches = build(root, keys, rootmap, budget, lean)
+    js, batches = build(root, keys, rootmap, budget, lean, nws_gate)
     out = os.path.join(REPO, 'src', 'pilot', 'run_pilot_wf.opt2.js')
     write_text(out, js)
+    mode = 'LEAN(rejected)' if lean else 'NWS-GATE' if nws_gate else 'full'
     print('wrote', out, len(js), 'bytes |', len(keys), 'cards in', len(batches), 'batches',
-          '(sizes', [len(b) for b in batches], ') | mode', 'LEAN' if lean else 'full')
+          '(sizes', [len(b) for b in batches], ') | mode', mode)
 
 
 if __name__ == '__main__':
