@@ -42,56 +42,53 @@ Derived flags surface the grammar exceptions worth annotating:
   roots (as, i, vid carry 2 Whitney homonyms) need PWG-homonym↔Whitney-homonym alignment
   first (the same hand-curated step the crosswalk solved for MW/Apte). Flagged, not guessed.
 
-## Non-root headwords — the full Whitney grammar (designed, not yet built)
+## Non-root headwords — the nominal grammar layer (built 2026-06-29)
 
-Most PWG entries are **nouns / adjectives / compounds / indeclinables**, not verb roots,
-so they need the *full* Whitney grammar (Declension ch V–VI, Derivation, Compounds
-ch XVI–XVII) — a distinct layer from the root crosswalk. **Build it on the real tools, not
-ending-heuristics** (a hand-rolled SLP1-suffix classifier was prototyped and discarded —
-wrong approach). The building blocks already exist in the org:
+**BUILT 2026-06-29.** Modules shipped:
 
-- **Morphology engine — `vidyut` (0.4.0, installed).** `vidyut-prakriya` declines a nominal
-  stem by gender (subanta) → the actual paradigm + stem class, instead of guessing from the
-  ending. WhitneyRoots already drives it for verbs in
-  [`scripts/vidyut_paradigms.py`](https://github.com/gasyoun/WhitneyRoots/blob/main/scripts/vidyut_paradigms.py)
-  and `scripts/sanskrit_util.py` — reuse that integration, don't re-bind vidyut.
-- **Whitney §§ for nominals.** The crosswalk ingested only the *verb* §§ (ch IX–XV); the
-  nominal/compound chapters (I–VIII, XVI–XVIII) are the **deferred ingest** — extend
-  [`scripts/wikisource/fetch_whitney.py`](https://github.com/gasyoun/WhitneyRoots/blob/main/scripts/wikisource/fetch_whitney.py),
-  then build a hand-verified **stem-class → § concordance** (the analog of the verb
-  form→§ concordance).
-- **Exception detection already exists** — [`scripts/dcs/grammar_ref_builder.py`](https://github.com/gasyoun/WhitneyRoots/blob/main/scripts/dcs/grammar_ref_builder.py)
-  → `src/grammar_refs.json` (935 roots) classifies each §-citation **generic / specific /
-  exception** by parsing Whitney's "except / irregular / anomalous" wording. Apply the same
-  idiom to the nominal §§, and **fold its root exception citations into the root layer** to
-  enrich `whitney_grammar.json`'s derived `irregularities` with Whitney's actual exception
-  paragraphs.
-- **Compound (samāsa) segmentation — reuse Jim's MW analysis, don't re-segment.** The MW
-  (MWS) already carries member boundaries: the `<k2>` headword key marks compound boundaries
-  with em-dashes (`aMSakaraRa` → `aMSa—karaRa`) — **182,023 compound entries (63.5%)**, plus
-  `<e>3` compound sub-entries and `hwifc` (in-fine-compositi forms). Source:
-  [`csl-orig/v02/mw/mw.txt`](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/mw/mw.txt)
-  `<k1>`/`<k2>`. So: join a PWG compound headword → MW by `k1` (SLP1) → take the `<k2>`
-  em-dash split = the vigraha skeleton (member boundaries) for free. MW gives the SEGMENTATION;
-  the compound TYPE (tatpuruṣa / bahuvrīhi / dvandva…) and right-headed rendering still need
-  analysis (vidyut per member + the prompt's existing samāsa rule: head = 2nd member), but
-  segmentation is the hard first step and Jim's MW already solved it at scale.
-- **Headword morph input:** PWG gender/POS tags + DCS morphology (CoNLL-U) feed the classifier.
+| Module | What it does |
+|---|---|
+| [`src/mw_compounds.py`](src/mw_compounds.py) + [`src/mw_compounds.json`](src/mw_compounds.json) | Streams `csl-orig/v02/mw/mw.txt` (read-only); extracts `<k2>` em-dash compound boundaries → 106,603-entry lookup `{k1_slp1: [member1, member2, …]}`; Vedic accent marks stripped. `compound_for(k1)` → members or `None`. |
+| [`src/nominal_grammar.py`](src/nominal_grammar.py) | `nominal_grammar_for(slp1, lex)` → `{stem_class, declension_sections, paradigm_section, compound_members, irregularities, …}`. Stem class from SLP1 final phoneme (the canonical Whitney criterion); Whitney §§ from a static hand-verified concordance built from `whitney_sections.json` ch. IV–V, XVI–XVIII (already fully fetched — all 1316 §§ present). |
+| [`src/pilot/enrich_portrait_nominal_grammar.py`](src/pilot/enrich_portrait_nominal_grammar.py) | Portrait-level attachment: adds `nominal_grammar` block to portrait JSONs. Parallel to `enrich_portrait_grammar.py`. |
+| `nominal_grammar_text()` in [`src/pilot/gen_opt_harness2.py`](src/pilot/gen_opt_harness2.py) | Harness-level injection function (parallel to `grammar_text()` for roots). Ready for use when nominal translation windows start. |
 
-This is a proper next phase (a vidyut-based nominal grammar layer), not a quick add — the
-current dhātu queue is all roots, so it does not block translation now, but it is the layer
-to build before the pipeline reaches noun headwords, so PWG translation is enriched once.
+**Whitney §§ data source** — `whitney_sections.json` already had ALL chapters I–XVIII (no
+fetch extension needed). The nominal concordance is baked as a static table into
+`nominal_grammar.py` (`_STEM_SECTIONS`), hand-verified against the fetched section texts.
 
-## Open: wiring into the harness (for `yuj`, before it is translated)
+**Compound segmentation** — 106,603 MW k1 entries with em-dash boundaries extracted
+(vs. the GRAMMAR_LAYER design estimate of 182k — that figure included `<e>3` sub-entry
+lines that share the same k1; only unique k1 is kept per lookup entry). Accent marks
+(`/^'`) stripped from member strings. `mw_compounds.json` is committed (3.4 MB); rebuild
+with `python src/mw_compounds.py --build` if csl-orig updates.
 
-Two ways to make the translator *use* the grammar during the DE→RU pass (so the data is
-enriched once, not redone later):
-1. **Portrait block** (this prototype) — `--apply` to the root's portraits; the harness
-   inlines portraits, so the model sees it. Cost: the block repeats per sub-card.
-2. **Root-level harness injection** (token-smart) — inject the single root grammar block
-   once into the `gen_opt_harness2.py` preamble (the grammar is identical across a root's
-   sub-cards), plus one prompt line directing its use. Avoids per-card duplication.
+**Stem-class concordance** (verified, not guessed):
 
-Recommended: (2) for production efficiency. Either way, add a prompt line: "Grammar
-(Whitney) — the root's class/PPP/§§ and irregularities; use to inform grammatical notes
-and flag irregular/defective forms; never override a corpus- or German-attested sense."
+| Stem class | Whitney §§ | Paradigm | Notes |
+|---|---|---|---|
+| a-stem | §§326–334 | §330 | majority class; m/n |
+| ā-stem | §§362–368 | §364 | derivative long-vowel; senā f. model |
+| i-stem | §§335–345 | §339 | agni m., gati f., vāri n. |
+| ī-stem | §§350–362 | §356 | nadī f. (polysyl.); dhī f. (monosyl. §351) |
+| u-stem | §§335–345 | §341 | śatru m., dhenu f., madhu n. |
+| ū-stem | §§350–362 | §351 | bhū f. (monosyl.) |
+| ṛ-stem | §§369–376 | §373 | agent-nouns in tṛ/tā |
+| consonant-stem | §§377–474 | §391 | vāc f., manas n., rājan m. |
+| indeclinable | §§1096–1135 | — | adv./particle/indecl. |
+
+Derivation ref `§§1136–1245` and compound ref `§§1246–1316` always appended when applicable.
+
+**vidyut subanta confirmed working** (`vidyut.Pratipadika.basic('deva')` + `Subanta` →
+`['devaH']`). Full per-headword paradigm display is deferred — not needed for the core
+annotation; add `--paradigm` flag to `nominal_grammar.py` when the nominal window runs.
+
+**A/B test deferred** until the first nominal translation window — same discipline as
+`AB_TEST_LEAN_TR.md` (sequential cost runs, non-inferiority). The harness injection
+function (`nominal_grammar_text()`) is ready; wire it into the nominal window harness
+when building that run.
+
+**Open follow-up:** fold exception citations from `WhitneyRoots/src/grammar_refs.json`
+into the nominal irregularities list (the `grammar_ref_builder.py` pattern). Low
+priority — covers only the ~935 roots already in the crosswalk, most of which are
+already handled by the root layer.
