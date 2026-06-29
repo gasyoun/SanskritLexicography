@@ -35,6 +35,15 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
   accent rules are already ingested (§§315–319/350/372/390/423/446), PWG `key2` gives per-word
   accent, and **VedaWeb** ([reference](https://vedaweb.uni-koeln.de), CC BY 4.0, C-SALT-linked)
   is the validation set. Logged in [../FINDINGS.md](../FINDINGS.md).
+- **Released v0.0.32** (GitHub release; published after an api.github.com TLS-timeout window).
+- **VedaWeb accent-axis probe CONFIRMED**: VedaWeb 2.0 API live (`vedaweb.uni-koeln.de/api`,
+  FastAPI); `POST /api/search {type:quick,q:agni}` returns the udātta word-split from the Casaretto
+  et al. (2025) annotation resource (RV 6.59.3: `…agnī́; ávasā; …devā́`), position-aligned with
+  lemma+morphology layers + a bulk `export` endpoint. The accent axis is de-risked — only the
+  Whitney-rule encoding + join remain. Turnkey API path + resource IDs in [ZALIZNYAK_INDEX.md](ZALIZNYAK_INDEX.md).
+- **FAIR data package** [`src/datapackage.json`](src/datapackage.json) (Frictionless, CC-BY-SA-4.0)
+  over the five grammar resources with field schemas, sources (PWG/MW/Whitney/WhitneyRoots/vidyut),
+  and deterministic-rebuild provenance; archivable on its own DOI track ([DOI_PLAN.md](DOI_PLAN.md)).
 
 ### Fast print/DH acceleration review
 - Added [PRINT_DH_ACCELERATION_REVIEW.md](PRINT_DH_ACCELERATION_REVIEW.md), a compact
