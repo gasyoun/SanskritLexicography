@@ -66,6 +66,16 @@ wrong approach). The building blocks already exist in the org:
   idiom to the nominal §§, and **fold its root exception citations into the root layer** to
   enrich `whitney_grammar.json`'s derived `irregularities` with Whitney's actual exception
   paragraphs.
+- **Compound (samāsa) segmentation — reuse Jim's MW analysis, don't re-segment.** The MW
+  (MWS) already carries member boundaries: the `<k2>` headword key marks compound boundaries
+  with em-dashes (`aMSakaraRa` → `aMSa—karaRa`) — **182,023 compound entries (63.5%)**, plus
+  `<e>3` compound sub-entries and `hwifc` (in-fine-compositi forms). Source:
+  [`csl-orig/v02/mw/mw.txt`](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/mw/mw.txt)
+  `<k1>`/`<k2>`. So: join a PWG compound headword → MW by `k1` (SLP1) → take the `<k2>`
+  em-dash split = the vigraha skeleton (member boundaries) for free. MW gives the SEGMENTATION;
+  the compound TYPE (tatpuruṣa / bahuvrīhi / dvandva…) and right-headed rendering still need
+  analysis (vidyut per member + the prompt's existing samāsa rule: head = 2nd member), but
+  segmentation is the hard first step and Jim's MW already solved it at scale.
 - **Headword morph input:** PWG gender/POS tags + DCS morphology (CoNLL-U) feed the classifier.
 
 This is a proper next phase (a vidyut-based nominal grammar layer), not a quick add — the
