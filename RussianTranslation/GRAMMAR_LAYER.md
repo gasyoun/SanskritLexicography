@@ -104,3 +104,12 @@ were always static-concordance, not per-word exceptions.)
 the real subanta declension (feminine ā/ī/ū stems use vidyut's `nyap` pratipadika; verified
 senā/nadī/agni). `nominal_grammar_for(..., paradigm=True)` attaches it. This is the structured-data
 asset the A/B says to build on (not the translation block).
+
+**Zaliznyak-style inflection index DONE 2026-06-29** ([`ZALIZNYAK_INDEX.md`](ZALIZNYAK_INDEX.md)).
+`zaliznyak_index(slp1, lex, accented=)` → a compact join token `G·T S F` (gender · declension
+type 0–8 · Vedic stress a/b · flags `*°+N`), modelled on Zaliznyak's `ж 3*a`. E.g. agni `m·3b`,
+rājan `m·8n*`, manas `n·8s`, abaddhamukha `mfn·1°+2`, aciram `ind·0`. Attached as
+`zaliznyak_index` on the grammar block and materialized by the portrait enrich (accent read from
+`key2`'s udātta `/`). This is the structured-data join key the A/B endorsed — sortable, citable,
+the lexicon↔grammar link as one token. CLI `--index <SLP1> <lex> [accented]`; locked by `--selftest`.
+Future axis: true Vedic accent *mobility* (Zaliznyak c–f) needs a per-case Vedic paradigm source.

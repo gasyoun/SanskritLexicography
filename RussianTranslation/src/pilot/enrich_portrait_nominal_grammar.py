@@ -63,11 +63,12 @@ def _portrait_path(slp1):
     return None
 
 
-def _grammar_block(slp1, lex):
-    rec = nominal_grammar_for(slp1, lex)
+def _grammar_block(slp1, lex, accented=None):
+    rec = nominal_grammar_for(slp1, lex, accented=accented)
     return {
         'stem_class': rec['stem_class'],
         'gender': rec['gender'],
+        'zaliznyak_index': rec['zaliznyak_index'],
         'declension_sections': rec['declension_sections'],
         'paradigm_section': rec.get('paradigm_section'),
         'compound_members': rec['compound_members'],
@@ -79,8 +80,11 @@ def _grammar_block(slp1, lex):
 
 def enrich_path(p, slp1, lex, apply=False):
     """Enrich a single portrait FILE in place; returns the loaded port (for sampling)."""
-    grammar = _grammar_block(slp1, lex)
     port = json.load(open(p, encoding='utf-8'))
+    # accented citation form (key2 carries the udātta '/') feeds the index stress slot
+    e0 = port[0] if isinstance(port, list) and port else port
+    accented = e0.get('key2') if isinstance(e0, dict) else None
+    grammar = _grammar_block(slp1, lex, accented=accented)
     for entry in (port if isinstance(port, list) else [port]):
         entry['nominal_grammar'] = grammar
     if apply:
