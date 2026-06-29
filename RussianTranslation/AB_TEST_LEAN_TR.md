@@ -97,3 +97,34 @@ grep -c "fidelity gate counts" run_pilot_wf.opt2.js   # expect 1 (full) / 0 (lea
 **Test budget:** 4 × 24-card translate runs (~$0.06/card → ~$1.4/run ≈ **$6**) + one Opus
 judge pass over 24 pairs (small). Cheap relative to the per-root saving if lean wins (a 30%
 prompt cut on every future root).
+
+---
+
+## RESULTS (2026-06-29) — lean REJECTED
+
+**Quality (cache-independent, decisive):**
+
+| arm | guard-nulls / 24 | risks/card |
+|---|---:|---:|
+| full run 1 / run 2 | **0 / 0** | 6.21 / 5.62 |
+| lean run 1 / run 2 | **4 / 1** | 7.30 / 5.91 |
+
+Lean regressed markup fidelity (5 guard-nulls vs 0; reproducibly nulled `h0_17_a_bi` in both
+lean runs, all **non-NWS** cards). The only lean change touching those cards is the **rule-3
+compression** (the detailed "keep `{#..#}`/`<ls>` verbatim, fidelity gate counts" instruction
+→ one line). Removing it made the model lose `{Tn}` tokens → markup-count failures. **Fails
+deterministic non-inferiority** (decision rule §4.2).
+
+**Cost: INCONCLUSIVE — execution flaw.** The four arms were run **in parallel**, so same-prompt
+runs **shared the prompt cache**: full run 2 rode full run 1's cache (cache_create 19.8k vs
+308k); the lean pair partially shared too. Per-run cost is therefore confounded — only one
+clean cold number exists (full cold **$2.65**/24 cards). Cannot claim lean cheaper.
+
+**Methodology lesson:** a cost A/B must run **sequentially with cache cooldown** (or compare
+only cold cache-creating runs), never parallel same-prompt — the 5-min cache makes the second
+run artificially cheap.
+
+**Decision:** **reject the lean TR as specified** (quality regression + unproven cost). The
+**NWS-gating** edit is safe by mechanism (it cannot cause markup nulls; the NWS cards
+translated fine) and remains a candidate, but its cost win was not isolated/measured here. To
+pursue it: a clean **sequential** A/B of *NWS-gating-only* (full rule 3 kept) vs full.
