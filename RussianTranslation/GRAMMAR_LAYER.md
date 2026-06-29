@@ -112,4 +112,8 @@ rājan `m·8n*`, manas `n·8s`, abaddhamukha `mfn·1°+2`, aciram `ind·0`. Atta
 `zaliznyak_index` on the grammar block and materialized by the portrait enrich (accent read from
 `key2`'s udātta `/`). This is the structured-data join key the A/B endorsed — sortable, citable,
 the lexicon↔grammar link as one token. CLI `--index <SLP1> <lex> [accented]`; locked by `--selftest`.
-Future axis: true Vedic accent *mobility* (Zaliznyak c–f) needs a per-case Vedic paradigm source.
+Future axis: true Vedic accent *mobility* (Zaliznyak a–f). The data is NOT missing — Whitney's
+per-case accent rules are already ingested (`whitney_sections.json` §§315–319, 350, 372, 390,
+423, 446) and the per-word accent position is in PWG `key2`'s udātta `/`; it is an encoding task
+(hand-build a stem-class→case-accent table, join, validate vs accented RV). Spec in
+[`ZALIZNYAK_INDEX.md`](ZALIZNYAK_INDEX.md) §"Vedic accent mobility".

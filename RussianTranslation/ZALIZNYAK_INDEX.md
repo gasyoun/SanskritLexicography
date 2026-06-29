@@ -59,9 +59,43 @@ read from the udātta mark (`/` after the accented vowel in the accented key, e.
   weak cases). E.g. agní, senā́, devá.
 - `—` = accent unrecorded (Classical headword, no Vedic accent). The common case.
 
-This is **not** Zaliszniak's full a–f mobility — it is a citation-accent flag. Extending to true
-mobility (the `c`/`f` mobile schemes) requires a Vedic paradigm source (Whitney §§ per case),
-a future axis.
+This is **not yet** Zaliznyak's full a–f mobility — it is a citation-accent flag (where the
+accent sits on the lemma), not how it moves across cases.
+
+### Vedic accent mobility (a–f) — the data IS in Whitney; this is an extraction task, not a missing source
+
+Correcting an earlier overstatement: it is **not** that "Whitney might supply it but our data
+can't." Both halves of the data already exist here:
+
+1. **The mobility RULES — in Whitney, already ingested** (`whitney_sections.json`, declension
+   ch. IV–V). The accent-in-declension rules are concrete and per-(stem-class, accent-position):
+   - **§§315–317** — change of accent affects monosyllables and final-accented stems; *"the
+     accent falls upon the ending in all the weak cases"* (`nāvā́, vācí, vākṣú`). The mobile scheme.
+   - **§318** — polysyllabic consonant stems shift only in the *weakest* cases; present participles
+     in -ánt: `tudatā́` but `tudátsu`.
+   - **§319** — polysyllabic stems in an accented short vowel *retain* the accent: `agnínā, agnáye`
+     (agní stays — a *fixed*, not mobile, scheme).
+   - Per-class accent paragraphs: **§350** (ī/ū monosyllables), **§372** (ṛ-stems), **§390**
+     (consonant monosyllables), **§423** (an-stems lose suffix á → tone to ending), **§446**
+     (final-accented in-stems shift in the weakest cases), **§314** (vocative → first syllable).
+2. **The per-word accent POSITION — in PWG, already in hand.** The udātta `/` in `key2`
+   (`agni/` = agní, `se/nA` = sénā) gives each lemma's lexical accent. Whitney's rules are
+   *conditioned* on exactly this (oxytone stems shift; barytone/retaining stems do not), so the
+   two compose.
+
+**So the gap is encoding, not sourcing.** Build steps for the full a–f axis:
+- Hand-encode the ~10 Whitney accent rules above into a table keyed by (stem-class,
+  accent-position) → per-case accent pattern (strong / middle / weakest), i.e. the Zaliznyak
+  a–f scheme. This is the accent analog of the existing stem-class→§ concordance.
+- Join each word's accent position (`key2` `/`) with its stem-class rule → assign `a`–`f`.
+- Validate the generated accent paradigm against accented Vedic text (RV/AV — vidyut or the DCS
+  accented layer can supply attested accented forms to check against).
+
+**Honest limits** (why it is staged, not blocked): (a) the axis is **Vedic-only** — Classical
+headwords carry no recorded accent (`key2` has no `/`), so `—` stays the common value; (b) it is
+genuine philological encoding work (~10 rules + exception §§ like §350/§423), not a parse; (c) it
+needs the accented-RV validation set to trust the output. The current `a`/`b`/`—` citation flag
+is the honest interim; full a–f is the next concrete axis, with the source already on disk.
 
 ## Flags (F)
 
