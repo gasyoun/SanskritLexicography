@@ -623,10 +623,27 @@ def test_sense_dupe_batch_override():
         fail('committed rootmap_overrides.json (jan 1c) not merged into rootmap_meta')
 
 
+def test_requeue_transient_vs_defect_state():
+    """Null cards (transient) must classify transient_only; a gate defect -> needs_requeue;
+    a pre-split report (no requeue_defect key) must stay needs_requeue (PROCESS_AUDIT rec 3/10)."""
+    from window_reports import audit_state
+    base = {'root': 'zztest', 'keys': ['k1'], 'crashed': [], 'glue': {}}
+    transient = dict(base, requeue=['k1'], requeue_transient=['k1'], requeue_defect=[])
+    if audit_state(transient) != 'transient_only':
+        fail('all-null requeue must classify as transient_only')
+    defect = dict(base, requeue=['k1', 'k2'], requeue_transient=['k1'], requeue_defect=['k2'])
+    if audit_state(defect) != 'needs_requeue':
+        fail('a gate-defect requeue must classify as needs_requeue')
+    legacy = dict(base, requeue=['k1'])  # pre-split report: no requeue_defect key
+    if audit_state(legacy) != 'needs_requeue':
+        fail('pre-split reports must remain needs_requeue (no silent transient downgrade)')
+
+
 def main():
     tests = [
         test_workflow_payload_nested,
         test_sense_dupe_batch_override,
+        test_requeue_transient_vs_defect_state,
         test_harness_scope_and_tools,
         test_prompt_rule_audit_template,
         test_prompt_rule_audit_missing_blocks,
