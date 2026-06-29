@@ -167,25 +167,30 @@ function restoreCard(card, k) {
 }
 const cardBlock = k => '\\n\\n=== CARD ' + k + ' ===\\n--- masked German (translatable only; {Tn}=masked span) ---\\n' + INPUTS[k].skeleton + '\\n--- portrait (evidence) ---\\n' + INPUTS[k].portrait
 
+const accept = (c, k) => {
+  if (!c) return null
+  c = restoreCard(c, k)
+  // Fidelity guard: restored <ls>/{#..#} counts MUST match the source — a mismatch
+  // means misalignment / dropped {Tn}. Reject -> deterministic requeue, never emit garbled.
+  if (countOf(c, /<ls\\b/g) !== INPUTS[k].ls || countOf(c, /\\{#/g) !== INPUTS[k].sk) return null
+  return c
+}
+
 phase('Translate')
 async function translateBatch(batch, bi) {
-  const prompt = PREAMBLE + CONV_TR + batch.map(cardBlock).join('')
-  for (let attempt = 0; attempt < 2; attempt++) {
-    const res = await agent(prompt, { label: 'b' + bi + '[' + batch.length + ']' + (attempt ? '(retry)' : ''), phase: 'Translate', schema: CARDS_SCHEMA, model: 'sonnet', tools: [] })
-    // Require exactly one card per batch slot so positional alignment (the only
-    // reliable mapping — model key1 is inconsistent) holds; else retry the batch.
-    if (res && Array.isArray(res.cards) && res.cards.length === batch.length) {
-      return batch.map((k, i) => {
-        let c = res.cards[i] ? restoreCard(res.cards[i], k) : null
-        // Fidelity guard: restored <ls>/{#..#} counts MUST match the source — a
-        // mismatch means misalignment / dropped {Tn}. Null it -> deterministic requeue,
-        // never emit silently-garbled markup.
-        if (c && (countOf(c, /<ls\\b/g) !== INPUTS[k].ls || countOf(c, /\\{#/g) !== INPUTS[k].sk)) c = null
-        return { key: k, card: c, judge: null, judge_sonnet: null, escalated: false }
-      })
+  // Retry ONLY the cards still unresolved (positional within the shrinking pending
+  // set), not the whole batch — one missing/garbled card must not re-bill the rest.
+  const resolved = {}
+  let pending = batch.slice()
+  for (let attempt = 0; attempt < 2 && pending.length; attempt++) {
+    const prompt = PREAMBLE + CONV_TR + pending.map(cardBlock).join('')
+    const res = await agent(prompt, { label: 'b' + bi + '[' + pending.length + ']' + (attempt ? '(retry)' : ''), phase: 'Translate', schema: CARDS_SCHEMA, model: 'sonnet', tools: [] })
+    if (res && Array.isArray(res.cards)) {
+      pending.forEach((k, i) => { const c = accept(res.cards[i], k); if (c) resolved[k] = c })
     }
+    pending = pending.filter(k => !resolved[k])
   }
-  return batch.map(k => ({ key: k, card: null, judge: null, judge_sonnet: null, escalated: false }))
+  return batch.map(k => ({ key: k, card: resolved[k] || null, judge: null, judge_sonnet: null, escalated: false }))
 }
 const grouped = await parallel(BATCHES.map((b, i) => () => translateBatch(b, i)))
 const out = grouped.flat()
