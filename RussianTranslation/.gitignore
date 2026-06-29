@@ -9,10 +9,30 @@ src/pilot/run_pilot_wf.sc_da_b.js
 src/pilot/run_pilot_wf.tlonly.js
 src/pilot/run_pilot_wf.run.js
 src/pilot/run_pilot_wf.headtest.js
+src/pilot/run_pilot_wf.sa.js
+src/pilot/run_pilot_wf.sa_*.js
+src/pilot/run_pilot_wf.nominal_*.js
+src/pilot/run_pilot_wf.sc_B*.js
+src/pilot/run_pilot_wf.sc_C*.js
+src/pilot/run_pilot_wf.sc_S*.js
+src/pilot/run_pilot_wf.sc_b*.js
+src/pilot/run_pilot_wf.sc_g*.js
+src/pilot/run_pilot_wf.sc_h*.js
+src/pilot/run_pilot_wf.sc_i*.js
+src/pilot/run_pilot_wf.sc_j*.js
+src/pilot/run_pilot_wf.sc_m*.js
+src/pilot/run_pilot_wf.sc_n*.js
+src/pilot/run_pilot_wf.sc_p*.js
+src/pilot/run_pilot_wf.sc_r*.js
+src/pilot/run_pilot_wf.sc_s*.js
+src/pilot/run_pilot_wf.sc_v*.js
+src/pilot/run_pilot_wf.sc_y*.js
 
 # Max workflow run output and A/B transcript artifacts (not deliverables)
 wf_output.json
 wf_output.*.json
+wf_output_*.json
+wf_sa*.json
 wf_after*.json
 wf_before*.json
 wf_opt*.json
@@ -21,6 +41,12 @@ wf_prod*.json
 # Operator-generated key list files (local requeue/split artifacts)
 da_keys_a.txt
 da_keys_b.txt
+sta_keys_a.txt
+sta_keys_b.txt
+i_keys_a.txt
+i_keys_b.txt
+i_keys_c.txt
+*_keys_*.txt
 
 # Generated status/dashboard snapshots
 release/gate_status_snapshot.json
