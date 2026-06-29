@@ -9,6 +9,21 @@ then **cut a new version every time the changelog is updated** (promote
 
 ## [Unreleased]
 
+## [0.0.33] - 2026-06-29
+
+### Added — grammar-layer FAIR package + VedaWeb accent-axis probe (follow-up to 0.0.32)
+- **Declension display** shipped (`nominal_grammar.py --table`, `reverse_index.py --show`) — vidyut
+  paradigm table per headword / per paradigm token. Per-word grammar dataset materialized into
+  `headword_index.tsv` (98,639 rows; kept out of translation — portraits untouched).
+- **FAIR data package** `RussianTranslation/src/datapackage.json` (Frictionless, CC-BY-SA-4.0) over
+  the five grammar resources with field schemas, sources, and deterministic-rebuild provenance;
+  archivable on its own DOI track.
+- **VedaWeb accent-axis probe CONFIRMED**: VedaWeb 2.0 API live (`vedaweb.uni-koeln.de/api`); the
+  Casaretto et al. (2025) annotation layer returns udātta-marked, position-aligned per-word forms
+  (RV 6.59.3: `…agnī́; ávasā; …devā́`) with co-located lemma+morphology and a bulk export — the
+  accent a–f axis is de-risked (only the Whitney-rule encoding + join remain). Turnkey API path +
+  resource IDs recorded in `ZALIZNYAK_INDEX.md` and `FINDINGS.md`.
+
 ## [0.0.32] - 2026-06-29
 
 ### Added — pwg_ru structured grammar layer (nominal grammar, Zaliznyak index, reverse dictionary)
