@@ -63,5 +63,41 @@ straight through:
 **Verdict:** the redesign is validated and worth doing, but masking alone yields
 ~−20 % tokens (plus large reliability/latency/correctness wins). To get a big
 headline-token cut, combine masking with **batching** + a **gloss-only schema**.
-Next measurement to make it a $-number: capture the cache-read/create split
-(totalTokens over-weights cheap cache-read).
+
+## Batching A/B — the dominant lever (measured, with real $)
+
+Built [`src/pilot/gen_batched_harness.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/gen_batched_harness.py)
+(masked cards, N per agent call) and a real cost parser
+[`src/pilot/parse_workflow_cost.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/parse_workflow_cost.py)
+that reads the per-agent transcript JSONL (`input` / `cache_create` / `cache_read`
+/ `output`) and prices it (Sonnet $3 / $15 / $3.75 / $0.30 per MTok). A/B on **14
+small gam prefix cards** (~200 chars raw each), production 1-agent-per-card vs
+batched (2 calls, bin-packed at 7 k chars):
+
+| run | calls | cache-create | cache-read | output | total tok | **$ cost** |
+|---|---:|---:|---:|---:|---:|---:|
+| production (1/card) | 14 (+5 retries) | 381,949 | 453,974 | 5,102 | 841,085 | **$1.645** |
+| batched (2 calls) | 2 | 45,020 | 13,465 | 530 | 59,021 | **$0.181** |
+
+**−93 % tokens, −89 % cost** for identical output. The cost is dominated by
+`cache_create`: each per-card agent re-creates ~27 k tokens of system prompt +
+schema; batching pays it ~2× instead of 14×. This is the single biggest lever —
+far bigger than masking (−20 %) or gloss-only (~−600 tokens).
+
+**Caveats (honest):** (a) these are *small* cards — batching's win is largest when
+per-card overhead dominates; dense cards (anu) batch fewer per call, so a blended
+real-root average is smaller but still large. (b) Big batches showed slightly
+thinner per-card metadata (`notes`/`differentia`) — batch size needs tuning for a
+depth/cost trade-off. (c) one failed batch re-does all its cards (vs one card).
+
+## Final priority order (measured)
+
+1. **Batch N cards per agent call** — −89 % cost on small cards. *The lever.*
+2. **Masking** (lossless, removes corruption class, fixes the pwg_mask bug, −74 %
+   wall-clock, no retries) — adopt; composes with batching.
+3. **Gloss-only structured output** — tiny token win, but worth it for deterministic
+   assembly / correctness.
+
+Recommended next step before scaling Stage-C roots: fold batching + masking into the
+production `gen_opt_harness.py` (size-budgeted batches, keep the per-card schema rich
+enough), and re-measure $/card on a full mixed root.
