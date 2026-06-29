@@ -124,3 +124,27 @@ The token is sortable, diff-able, and a stable join key — exactly Zaliznyak's 
 **structured-data field** on the grammar block, not injected into translation (the A/B rejected
 that). Consumers: declension display, a reverse "index → all headwords of this paradigm" view,
 and FAIR export.
+
+## Reverse index (the Zaliznyak reverse-dictionary, over all of PWG)
+
+[`src/reverse_index.py`](src/reverse_index.py) applies the index to the whole dictionary:
+streams `csl-orig/v02/pwg/pwg.txt` (read-only), computes the token per headword (`<k1>` +
+first `<lex>` + `<k2>` accent), and inverts it.
+
+  python src/reverse_index.py --build               materialize the index + stats
+  python src/reverse_index.py --query "m·8n*"        list every headword in that paradigm
+  python src/reverse_index.py --stats 30             paradigm distribution
+
+**Coverage (2026-06-29 build):** 123,366 PWG entries → **98,639 indexed** (have a `<lex>`
+gender/POS; 24,727 cross-refs/bare forms skipped) → **335 distinct paradigm tokens**. Flag
+sanity: `+N` compound 47.3% (≈ MW's 44.5% compound rate), `*` gradation 3.6%, `°` genuine
+deviation 0.04% (monosyllabic long-vowel stems — the only nominal anomaly currently detected).
+Top paradigms: `m·1+2` 12,681 · `m·1` 11,496 · `mfn·1` 8,346 · `n·1+2` 6,116 · `f·2+2` 3,811.
+
+**FAIR outputs** (committed, materialized — rebuild with `--build`):
+- `src/reverse_paradigm_index.json` — `{token: [headword#hom, …]}` (1.1 MB)
+- `src/headword_index.tsv` — `k1 · hom · lex · index_token` per headword (2.1 MB, 98,639 rows)
+- `src/paradigm_stats.tsv` — `index_token · count`, descending (335 rows)
+
+This is the foundation for declension display ("show the paradigm of every `m·8n*` noun") and a
+grammatical FAIR export — the Scope B/C deliverable the nominal A/B pointed to.
