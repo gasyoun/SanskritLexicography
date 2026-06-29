@@ -149,9 +149,18 @@ deviation 0.04% (monosyllabic long-vowel stems — the only nominal anomaly curr
 Top paradigms: `m·1+2` 12,681 · `m·1` 11,496 · `mfn·1` 8,346 · `n·1+2` 6,116 · `f·2+2` 3,811.
 
 **FAIR outputs** (committed, materialized — rebuild with `--build`):
+- `src/headword_index.tsv` — **the per-word structured-grammar dataset** (5.8 MB, 98,639 rows):
+  `k1 · hom · lex · accented · index_token · stem_class · compound_members · irregularities`.
+  The declension §§ / paradigm § are omitted (fully derivable from `stem_class` via
+  `nominal_grammar._STEM_SECTIONS`) to keep it compact.
 - `src/reverse_paradigm_index.json` — `{token: [headword#hom, …]}` (1.1 MB)
-- `src/headword_index.tsv` — `k1 · hom · lex · index_token` per headword (2.1 MB, 98,639 rows)
 - `src/paradigm_stats.tsv` — `index_token · count`, descending (335 rows)
+
+**This grammar data is recorded per word as a standalone asset and is DELIBERATELY kept out of
+translation.** The nominal-grammar A/B ([`NOMINAL_GRAMMAR_AB.md`](NOMINAL_GRAMMAR_AB.md)) showed
+grammar-ON does not improve DE→RU and sometimes mildly hurts it, so the portraits (which the
+harness inlines) are left untouched and nominal windows run grammar OFF. The data lives here, in
+the structured-grammar layer, for declension display / FAIR export — not in the translator's prompt.
 
 This is the foundation for declension display ("show the paradigm of every `m·8n*` noun") and a
 grammatical FAIR export — the Scope B/C deliverable the nominal A/B pointed to.

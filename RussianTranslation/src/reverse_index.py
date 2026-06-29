@@ -19,7 +19,13 @@ forms) are skipped and counted.
 Outputs (src/):
   reverse_paradigm_index.json   {token: [headword#hom, ...]}  (sorted)
   paradigm_stats.tsv            token<TAB>count                (desc)
-  headword_index.tsv            k1<TAB>hom<TAB>lex<TAB>token   (per headword, FAIR)
+  headword_index.tsv            the per-word structured-grammar dataset (FAIR TSV):
+                                k1·hom·lex·accented·index_token·stem_class·compound_members·irregularities
+
+This grammar data is recorded PER WORD as a standalone structured-data asset. It is
+DELIBERATELY NOT injected into translation: the nominal-grammar A/B (NOMINAL_GRAMMAR_AB.md)
+showed grammar-ON does not improve DE→RU and sometimes mildly hurts it, so the portraits
+(which the translation harness inlines) are left untouched and nominal windows run grammar OFF.
 """
 import json
 import os
@@ -31,7 +37,8 @@ sys.stderr.reconfigure(encoding='utf-8')
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
-from nominal_grammar import zaliznyak_index, _GENDER_POMETA, paradigm_for, render_paradigm
+from nominal_grammar import (zaliznyak_index, nominal_grammar_for, _GENDER_POMETA,
+                             paradigm_for, render_paradigm)
 
 PWG = os.path.normpath(os.path.join(HERE, '..', '..', '..', 'csl-orig', 'v02', 'pwg', 'pwg.txt'))
 IDX_JSON = os.path.join(HERE, 'reverse_paradigm_index.json')
@@ -83,10 +90,17 @@ def build():
         if lex not in _GENDER_POMETA:
             n_unknown_gender += 1
             continue
-        token = zaliznyak_index(k1, lex, accented=k2)
+        # full grammar block once per word (the structured-data record; NOT injected
+        # into translation — the A/B rejected that. Portraits are deliberately left alone).
+        # §§/paradigm_section are omitted from the row (fully derivable from stem_class via
+        # nominal_grammar._STEM_SECTIONS) to keep the per-word table compact.
+        g = nominal_grammar_for(k1, lex, accented=k2)
+        token = g['zaliznyak_index']
         key = '%s#%s' % (k1, hom) if hom else k1
         index.setdefault(token, []).append(key)
-        rows.append((k1, hom, lex, token))
+        rows.append((k1, hom, lex, k2 or '', token, g['stem_class'],
+                     '+'.join(g['compound_members']) if g['compound_members'] else '',
+                     ';'.join(g['irregularities'])))
         n_indexed += 1
 
     for t in index:
@@ -100,17 +114,18 @@ def build():
         for c, t in stats:
             f.write('%s\t%d\n' % (t, c))
 
+    # The per-word structured-grammar dataset (compact FAIR TSV; §§ derivable from stem_class).
     with open(HW_TSV, 'w', encoding='utf-8') as f:
-        f.write('k1\thom\tlex\tindex_token\n')
-        for k1, hom, lex, t in rows:
-            f.write('%s\t%s\t%s\t%s\n' % (k1, hom, lex, t))
+        f.write('k1\thom\tlex\taccented\tindex_token\tstem_class\tcompound_members\tirregularities\n')
+        for r in rows:
+            f.write('\t'.join(r) + '\n')
 
     print('PWG entries scanned: %d' % n_total)
     print('  indexed (have <lex>): %d' % n_indexed)
     print('  skipped no <lex>: %d ; unknown gender tag: %d' % (n_nolex, n_unknown_gender))
     print('  distinct paradigm tokens: %d' % len(index))
-    print('wrote %s, %s, %s' % (os.path.basename(IDX_JSON),
-                                os.path.basename(STATS_TSV), os.path.basename(HW_TSV)))
+    print('wrote %s, %s, %s' % (os.path.basename(IDX_JSON), os.path.basename(STATS_TSV),
+                                os.path.basename(HW_TSV)))
     print('\nTop 15 paradigms:')
     for c, t in stats[:15]:
         print('  %-10s %6d' % (t, c))
