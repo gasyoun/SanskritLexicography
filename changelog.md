@@ -9,6 +9,24 @@ then **cut a new version every time the changelog is updated** (promote
 
 ## [Unreleased]
 
+## [0.0.32] - 2026-06-29
+
+### Added — pwg_ru structured grammar layer (nominal grammar, Zaliznyak index, reverse dictionary)
+- **Nominal grammar layer**: `RussianTranslation/src/nominal_grammar.py` (stem class, Whitney §§,
+  vidyut subanta paradigm with the `nyap` fix for feminine ā/ī/ū stems) + `src/mw_compounds.py`
+  (106,603 MW `<k2>` compound segmentations). Whitney exception §§ folded into the root layer
+  (`whitney_grammar.json`, 289 records). Docs: `GRAMMAR_LAYER.md` (hub).
+- **A/B test → grammar-in-translation REJECTED** (`NOMINAL_GRAMMAR_AB.md` +
+  `NOMINAL_GRAMMAR_AB_DETAIL.md`): blind Opus judge over 8 stratified headwords, arm A (grammar
+  OFF) 5 / tie 2 / arm B (ON) 1; both arms 0 nulls, 100% markup fidelity. Nominal windows run
+  grammar **OFF**; the layer is kept as structured data only (portraits left untouched).
+- **Zaliznyak inflection index** (`ZALIZNYAK_INDEX.md`): compact per-word token `G·T S F`
+  (e.g. `m·8n*`); **reverse dictionary** over all 123,366 PWG entries → 98,639 indexed → 335
+  paradigm tokens; per-word FAIR dataset `headword_index.tsv` + `reverse_paradigm_index.json` +
+  `paradigm_stats.tsv`; **declension display** via vidyut (`--show` / `--table`).
+- **Accent a–f axis** spec'd + unblocked: Whitney's per-case accent §§ already ingested + PWG
+  `key2` accents + **VedaWeb** (CC BY 4.0) as the validation set; logged in `FINDINGS.md`.
+
 ## [0.0.31] - 2026-06-26
 
 ### Fixed — stale-doc cleanup across the pwg_ru planning/runbook set

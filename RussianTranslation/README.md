@@ -24,6 +24,36 @@ preflight, fresh Max windows, stale-output recovery, targeted requeue, sampled
 semantic judging, dashboard monitoring, release readiness checks, and corpus API
 retry work.
 
+## Structured grammar layer (the 3rd axis)
+
+Alongside translation, pwg_ru carries a **structured grammatical layer** per headword —
+verb-root and nominal. It is **recorded as data, not injected into translation** (the
+[A/B test](NOMINAL_GRAMMAR_AB.md) showed grammar-in-the-prompt does not improve DE→RU and
+sometimes hurts it). Hub: [`GRAMMAR_LAYER.md`](GRAMMAR_LAYER.md).
+
+| Piece | What | File(s) |
+|---|---|---|
+| Root grammar | PWG root → Whitney class/PPP/§§/exceptions (crosswalk join) | [`src/whitney_grammar.py`](src/whitney_grammar.py) |
+| Nominal grammar | stem class · Whitney §§ · vidyut paradigm · MW compound segmentation | [`src/nominal_grammar.py`](src/nominal_grammar.py), [`src/mw_compounds.py`](src/mw_compounds.py) |
+| Inflection index | compact Zaliznyak-style token `G·T S F` (e.g. `m·8n*`) | [`ZALIZNYAK_INDEX.md`](ZALIZNYAK_INDEX.md), `zaliznyak_index()` |
+| Reverse dictionary | index token → every headword in that paradigm; per-word FAIR dataset | [`src/reverse_index.py`](src/reverse_index.py) |
+| Declension display | render the vidyut paradigm table for a headword / token | `nominal_grammar.py --table`, `reverse_index.py --show` |
+| A/B verdict | grammar-in-prompt rejected; evidence appendix | [`NOMINAL_GRAMMAR_AB.md`](NOMINAL_GRAMMAR_AB.md), [`NOMINAL_GRAMMAR_AB_DETAIL.md`](NOMINAL_GRAMMAR_AB_DETAIL.md) |
+
+```powershell
+python src\reverse_index.py --build              # materialize index + per-word grammar TSV
+python src\reverse_index.py --show "m·8n*"       # paradigm template + members
+python src\nominal_grammar.py --table agni m.    # one headword's declension
+```
+
+FAIR outputs (committed): `src/headword_index.tsv` (98,639 headwords ·
+`k1·hom·lex·accented·index·stem_class·compound·irregularities`),
+`src/reverse_paradigm_index.json`, `src/paradigm_stats.tsv`. The **portraits are
+deliberately left untouched** so the translation harness never inlines this; nominal
+windows run grammar **OFF** by default. Open extension (unblocked, not built): the full
+Vedic accent a–f axis, validated against [VedaWeb](https://vedaweb.uni-koeln.de) — see
+[`ZALIZNYAK_INDEX.md`](ZALIZNYAK_INDEX.md) §"Vedic accent mobility".
+
 ## Guardrails
 
 - `root_window_status.py` is the pre-spend truth source for each root. It checks

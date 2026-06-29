@@ -10,6 +10,32 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## 2026-06-29
 
+### Structured grammar layer — nominal grammar, Zaliznyak index, reverse dictionary
+- **Nominal grammar layer** ([GRAMMAR_LAYER.md](GRAMMAR_LAYER.md)): `nominal_grammar.py`
+  (`nominal_grammar_for` — stem class from the SLP1 final, Whitney §§ from a hand-verified
+  concordance, vidyut subanta paradigm with the `nyap` fix for feminine ā/ī/ū stems) +
+  `mw_compounds.py` (106,603 MW `<k2>` em-dash compound segmentations, accent-stripped).
+- **Whitney exception §§** folded into the root layer (`whitney_grammar.json`, 289 records by
+  whitney_no, capped against high-frequency over-match).
+- **A/B test → grammar-in-translation REJECTED** ([NOMINAL_GRAMMAR_AB.md](NOMINAL_GRAMMAR_AB.md),
+  per-card evidence in [NOMINAL_GRAMMAR_AB_DETAIL.md](NOMINAL_GRAMMAR_AB_DETAIL.md)): wired
+  per-card injection (`gen_opt_harness2.py --nominal [--no-grammar]`), ran arm B (grammar ON) vs
+  arm A (OFF) on 8 stratified headwords + blind Opus judge → **A 5 / tie 2 / B 1**; 0 nulls,
+  100% markup fidelity both arms. Decision: nominal windows run grammar **OFF**; portraits left
+  untouched so the harness never inlines grammar.
+- **Zaliznyak inflection index** ([ZALIZNYAK_INDEX.md](ZALIZNYAK_INDEX.md)): `zaliznyak_index()` →
+  compact token `G·T S F` (gender · Whitney type 0–8 · Vedic stress a/b/— · flags `*°+N`),
+  e.g. agni `m·3b`, rājan `m·8n*`, abaddhamukha `mfn·1+2`.
+- **Reverse dictionary + per-word dataset** (`reverse_index.py`): over all 123,366 PWG entries →
+  98,639 indexed → 335 paradigm tokens. FAIR outputs: `headword_index.tsv` (per-word grammar:
+  `k1·hom·lex·accented·index·stem_class·compound·irregularities`), `reverse_paradigm_index.json`,
+  `paradigm_stats.tsv`. **Declension display**: `--show <token>` / `--table <SLP1> <lex>` render
+  the vidyut paradigm.
+- **Accent a–f axis** documented as an encoding task (not a missing source): Whitney's per-case
+  accent rules are already ingested (§§315–319/350/372/390/423/446), PWG `key2` gives per-word
+  accent, and **VedaWeb** ([reference](https://vedaweb.uni-koeln.de), CC BY 4.0, C-SALT-linked)
+  is the validation set. Logged in [../FINDINGS.md](../FINDINGS.md).
+
 ### Fast print/DH acceleration review
 - Added [PRINT_DH_ACCELERATION_REVIEW.md](PRINT_DH_ACCELERATION_REVIEW.md), a compact
   next-review queue for speed, Digital Humanities/FAIR readiness, and print
