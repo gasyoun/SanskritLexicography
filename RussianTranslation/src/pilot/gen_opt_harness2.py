@@ -31,6 +31,7 @@ import pwg_mask
 sys.path.insert(0, SRC)
 from safe_filename import safe_name
 from whitney_grammar import grammar_for
+from nominal_grammar import nominal_grammar_for
 
 
 def grammar_text(root):
@@ -61,6 +62,34 @@ def grammar_text(root):
     if amb:
         lines.append('(NOTE: %d Whitney homonyms — pick the one matching the sense; '
                      'do not conflate.)' % len(recs))
+    return '\n'.join(lines) + '\n\n'
+
+
+def nominal_grammar_text(slp1, lex):
+    """Compact nominal grammar block for a non-root headword, injected once per batch.
+
+    Parallel to grammar_text() for verb roots. Returns an empty string if lex is
+    unknown/missing. For compounds, includes MW member segmentation.
+    """
+    if not slp1 or not lex:
+        return ''
+    try:
+        rec = nominal_grammar_for(slp1, lex)
+    except Exception:
+        return ''
+    lines = ['=== GRAMMAR (Whitney nominal) — the headword\'s declension class and §§; '
+             'use to inform grammatical notes and flag irregular forms; '
+             'NEVER let grammar override a corpus- or German-attested sense ===']
+    lines.append('headword %s [%s]: %s, Whitney %s (paradigm %s)'
+                 % (slp1, lex, rec['stem_class'],
+                    rec['declension_sections'], rec.get('paradigm_section') or '—'))
+    if rec.get('compound_members'):
+        lines.append('  compound members (MW k2): %s → %s'
+                     % (slp1, ' + '.join(rec['compound_members'])))
+        lines.append('  compound formation: %s' % rec['compound_sections'])
+    if rec.get('irregularities'):
+        lines.append('  flags: %s' % '; '.join(rec['irregularities']))
+    lines.append('  derivation ref: %s' % rec['derivation_sections'])
     return '\n'.join(lines) + '\n\n'
 
 
