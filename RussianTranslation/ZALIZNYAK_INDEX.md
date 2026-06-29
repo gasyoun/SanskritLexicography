@@ -148,3 +148,16 @@ Top paradigms: `m·1+2` 12,681 · `m·1` 11,496 · `mfn·1` 8,346 · `n·1+2` 6,
 
 This is the foundation for declension display ("show the paradigm of every `m·8n*` noun") and a
 grammatical FAIR export — the Scope B/C deliverable the nominal A/B pointed to.
+
+## Declension display (the «Грамматические сведения» template)
+
+The index → paradigm payoff is wired via vidyut:
+
+  python src/reverse_index.py --show "m·8n*"     # paradigm template + member count + examples
+  python src/nominal_grammar.py --table agni m.  # one headword's full declension table
+
+`--show <token>` picks a representative member and renders the **shared** declension template
+(every headword in that token declines alike — Zaliznyak's principle). `render_paradigm()` in
+`nominal_grammar.py` formats any `paradigm_for()` result as an aligned 8-case × 3-number table.
+The an-stem template (`m·8n*`, repr. atidhanvan) visibly shows the strong/weak gradation the `*`
+flag encodes: `atidhanvā` (nom sg) → `atidhanvānam` (strong) → `atidhanvanā` (weak).
