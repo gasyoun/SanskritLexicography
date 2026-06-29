@@ -25,9 +25,11 @@ sys.stderr.reconfigure(encoding='utf-8')
 HERE = os.path.dirname(os.path.abspath(__file__))
 PWG = os.path.normpath(os.path.join(HERE, '..', '..', '..', 'csl-orig', 'v02', 'pwg', 'pwg.txt'))
 
-# untranslatable PAIRED spans (tag + content both go) — order matters
-PAIRED = [r'<ls>.*?</ls>', r'<ab>.*?</ab>', r'<is>.*?</is>', r'<lex>.*?</lex>',
-          r'<lang\b[^>]*>.*?</lang>', r'\{#.*?#\}']
+# untranslatable PAIRED spans (tag + content both go) — order matters.
+# Opening tags use \b[^>]*> so ATTRIBUTED tags (<ls n="ṚV.">…</ls>) are masked
+# whole; a bare-<ls> pattern would mask only the tags and leak the citation text.
+PAIRED = [r'<ls\b[^>]*>.*?</ls>', r'<ab\b[^>]*>.*?</ab>', r'<is\b[^>]*>.*?</is>',
+          r'<lex\b[^>]*>.*?</lex>', r'<lang\b[^>]*>.*?</lang>', r'\{#.*?#\}']
 PAIRED_RE = re.compile('|'.join(PAIRED), re.S)
 TAG_RE = re.compile(r'<[^>]+>')          # remaining structural/standalone tags
 PCT_RE = re.compile(r'\{%(.*?)%\}', re.S)
