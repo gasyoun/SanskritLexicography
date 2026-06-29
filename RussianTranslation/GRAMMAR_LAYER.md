@@ -42,6 +42,36 @@ Derived flags surface the grammar exceptions worth annotating:
   roots (as, i, vid carry 2 Whitney homonyms) need PWG-homonym↔Whitney-homonym alignment
   first (the same hand-curated step the crosswalk solved for MW/Apte). Flagged, not guessed.
 
+## Non-root headwords — the full Whitney grammar (designed, not yet built)
+
+Most PWG entries are **nouns / adjectives / compounds / indeclinables**, not verb roots,
+so they need the *full* Whitney grammar (Declension ch V–VI, Derivation, Compounds
+ch XVI–XVII) — a distinct layer from the root crosswalk. **Build it on the real tools, not
+ending-heuristics** (a hand-rolled SLP1-suffix classifier was prototyped and discarded —
+wrong approach). The building blocks already exist in the org:
+
+- **Morphology engine — `vidyut` (0.4.0, installed).** `vidyut-prakriya` declines a nominal
+  stem by gender (subanta) → the actual paradigm + stem class, instead of guessing from the
+  ending. WhitneyRoots already drives it for verbs in
+  [`scripts/vidyut_paradigms.py`](https://github.com/gasyoun/WhitneyRoots/blob/main/scripts/vidyut_paradigms.py)
+  and `scripts/sanskrit_util.py` — reuse that integration, don't re-bind vidyut.
+- **Whitney §§ for nominals.** The crosswalk ingested only the *verb* §§ (ch IX–XV); the
+  nominal/compound chapters (I–VIII, XVI–XVIII) are the **deferred ingest** — extend
+  [`scripts/wikisource/fetch_whitney.py`](https://github.com/gasyoun/WhitneyRoots/blob/main/scripts/wikisource/fetch_whitney.py),
+  then build a hand-verified **stem-class → § concordance** (the analog of the verb
+  form→§ concordance).
+- **Exception detection already exists** — [`scripts/dcs/grammar_ref_builder.py`](https://github.com/gasyoun/WhitneyRoots/blob/main/scripts/dcs/grammar_ref_builder.py)
+  → `src/grammar_refs.json` (935 roots) classifies each §-citation **generic / specific /
+  exception** by parsing Whitney's "except / irregular / anomalous" wording. Apply the same
+  idiom to the nominal §§, and **fold its root exception citations into the root layer** to
+  enrich `whitney_grammar.json`'s derived `irregularities` with Whitney's actual exception
+  paragraphs.
+- **Headword morph input:** PWG gender/POS tags + DCS morphology (CoNLL-U) feed the classifier.
+
+This is a proper next phase (a vidyut-based nominal grammar layer), not a quick add — the
+current dhātu queue is all roots, so it does not block translation now, but it is the layer
+to build before the pipeline reaches noun headwords, so PWG translation is enriched once.
+
 ## Open: wiring into the harness (for `yuj`, before it is translated)
 
 Two ways to make the translator *use* the grammar during the DE→RU pass (so the data is
