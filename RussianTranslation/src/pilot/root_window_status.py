@@ -86,7 +86,7 @@ def merged_exists(key):
 
 
 def harness_matches(root, rootmap_sha, expected_keys=None):
-    meta = harness_meta(os.path.join(HERE, 'run_pilot_wf.opt.js'))
+    meta = harness_meta()
     if not meta.get('ok'):
         return False, meta
     ok = (meta.get('root') == root and meta.get('rootmap_sha256') == rootmap_sha)
@@ -107,7 +107,7 @@ def next_action(root, failures, rootmap_sha=None, all_keys=None, pending_keys=No
             'command': 'python src\\pilot\\root_window_status.py %s' % root,
         }
     status = latest_status(OUT)
-    harness = os.path.join(HERE, 'run_pilot_wf.opt.js')
+    harness = os.path.join(HERE, 'run_pilot_wf.opt2.js')
     all_keys = list(all_keys or [])
     pending_keys = list(pending_keys or [])
     matches, meta = harness_matches(root, rootmap_sha, all_keys)

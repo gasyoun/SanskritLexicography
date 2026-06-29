@@ -12,6 +12,9 @@ SRC = os.path.dirname(HERE)
 REPO = os.path.dirname(SRC)
 INP = os.path.join(HERE, 'input')
 OUT = os.path.join(HERE, 'output')
+# Canonical live production harness (batched + masked, gen_opt_harness2.py).
+# The legacy per-card run_pilot_wf.opt.js is deprecated; consumers point here.
+OPT_HARNESS = os.path.join(HERE, 'run_pilot_wf.opt2.js')
 
 if SRC not in sys.path:
     sys.path.insert(0, SRC)
@@ -143,7 +146,7 @@ def latest_audit_report(out_dir=OUT):
 
 
 def harness_meta(path=None):
-    path = path or os.path.join(HERE, 'run_pilot_wf.opt.js')
+    path = path or OPT_HARNESS
     if not os.path.exists(path):
         return {'ok': False, 'path': path, 'error': 'missing harness'}
     try:

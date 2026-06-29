@@ -25,7 +25,7 @@ ROOT = os.path.dirname(SRC)
 OUT = os.path.join(HERE, 'output')
 
 DEFAULT_TEMPLATE = os.path.join(HERE, 'run_pilot_wf.js')
-DEFAULT_HARNESS = os.path.join(HERE, 'run_pilot_wf.opt.js')
+DEFAULT_HARNESS = os.path.join(HERE, 'run_pilot_wf.opt2.js')
 
 if HERE not in sys.path:
     sys.path.insert(0, HERE)

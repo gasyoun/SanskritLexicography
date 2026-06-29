@@ -15,6 +15,9 @@ sys.stderr.reconfigure(encoding='utf-8')
 
 SKIP = {'gramm-forms', 'header', 'gramm-header', 'grammar', 'paradigm', 'vgl.', 'vgl'}
 INP = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'pilot', 'input')
+# Committed, reproducible batch_of exemptions. The rootmaps under INP are gitignored and
+# regenerated, so a hand-edit there is lost on clone/regen; this tracked file restores it.
+OVERRIDES = os.path.join(os.path.dirname(INP), 'rootmap_overrides.json')
 _SEC_HDR = re.compile(r'\((caus|pass|desid|intens|partic|inf)[a-z]* SECONDARY-CONJUGATION', re.I)
 
 
@@ -33,6 +36,15 @@ def rootmap_meta():
         for s in rm.get('sub_cards', []):
             if s.get('subkey'):
                 meta[s['subkey']] = s
+    # Merge committed overrides last so the exemption survives a clean clone / rootmap regen.
+    try:
+        overrides = json.load(open(OVERRIDES, encoding='utf-8'))
+    except (OSError, json.JSONDecodeError):
+        overrides = {}
+    for subkey, fields in overrides.items():
+        if subkey.startswith('_') or not isinstance(fields, dict):
+            continue                                  # skip the _comment key
+        meta.setdefault(subkey, {}).update(fields)
     return meta
 
 

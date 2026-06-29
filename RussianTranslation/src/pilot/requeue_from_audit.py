@@ -62,7 +62,7 @@ def main():
             print('  ' + k)
         sys.exit(1)
 
-    cmd = [sys.executable, os.path.join(HERE, 'gen_opt_harness.py'),
+    cmd = [sys.executable, os.path.join(HERE, 'gen_opt_harness2.py'),
            root, '--keys=' + ','.join(resolved)]
     p = subprocess.run(cmd, cwd=os.path.dirname(os.path.dirname(HERE)),
                        text=True, encoding='utf-8', capture_output=True)
@@ -73,7 +73,7 @@ def main():
     if p.returncode:
         sys.exit(p.returncode)
 
-    harness = os.path.join(HERE, 'run_pilot_wf.opt.js')
+    harness = os.path.join(HERE, 'run_pilot_wf.opt2.js')
     print('requeue root      : %s' % root)
     print('requeue keys      : %d' % len(resolved))
     print('generated harness : %s' % harness)
