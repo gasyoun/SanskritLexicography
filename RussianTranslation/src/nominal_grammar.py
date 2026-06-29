@@ -190,6 +190,32 @@ def paradigm_for(slp1, lex, scheme='iast'):
     return {'gender': lex, 'linga': linga_name, 'scheme': scheme, 'cases': table}
 
 
+_CASE_LABELS = [('nom', 'Nom'), ('acc', 'Acc'), ('ins', 'Ins'), ('dat', 'Dat'),
+                ('abl', 'Abl'), ('gen', 'Gen'), ('loc', 'Loc'), ('voc', 'Voc')]
+
+
+def render_paradigm(paradigm, title=None):
+    """Format a paradigm_for() result as an aligned text declension table."""
+    if paradigm is None:
+        return '(no paradigm — indeclinable or unsupported gender)'
+    cases = paradigm['cases']
+    cols = ['sg', 'du', 'pl']
+    # column widths
+    w = {c: max(len('Singular Dual Plural'.split()[i]),
+                max((len(cases[cl][c]) for cl, _ in _CASE_LABELS), default=0))
+         for i, c in enumerate(cols)}
+    head = '       ' + '  '.join('%-*s' % (w[c], lbl)
+                                 for c, lbl in zip(cols, ['Singular', 'Dual', 'Plural']))
+    lines = []
+    if title:
+        lines.append(title)
+    lines.append(head)
+    for cl, lbl in _CASE_LABELS:
+        row = '  '.join('%-*s' % (w[c], cases[cl][c]) for c in cols)
+        lines.append('%-5s  %s' % (lbl, row))
+    return '\n'.join(lines)
+
+
 def _stem_class(slp1, lex):
     """Detect stem class from SLP1 final phoneme and lex tag."""
     if lex in _INDECL_POS:
@@ -415,6 +441,19 @@ def main():
         selftest()
         return
     want_paradigm = '--paradigm' in args
+    if '--table' in args:
+        idx = args.index('--table')
+        rest = [a for a in args[idx + 1:] if not a.startswith('--')]
+        if len(rest) < 1:
+            print('Usage: --table <SLP1> <lex_tag>')
+            return
+        slp1 = rest[0]
+        lex = rest[1] if len(rest) > 1 else 'm.'
+        rec = nominal_grammar_for(slp1, lex)
+        title = '%s [%s]  %s  (%s, %s)' % (slp1, lex, rec['zaliznyak_index'],
+                                           rec['stem_class'], rec['declension_sections'])
+        print(render_paradigm(paradigm_for(slp1, lex), title=title))
+        return
     if '--index' in args:
         idx = args.index('--index')
         rest = [a for a in args[idx + 1:] if not a.startswith('--')]

@@ -9,6 +9,7 @@ view, and FAIR grammar export.
 
   python src/reverse_index.py --build              materialize the index + stats
   python src/reverse_index.py --query m·8n*         list headwords with that index
+  python src/reverse_index.py --show m·8n*          render the paradigm template (vidyut)
   python src/reverse_index.py --stats [N]           top-N paradigm tokens by frequency
 
 Inputs per entry: <k1> (SLP1 headword), <k2> (accented form → stress slot), first
@@ -30,7 +31,7 @@ sys.stderr.reconfigure(encoding='utf-8')
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
-from nominal_grammar import zaliznyak_index, _GENDER_POMETA
+from nominal_grammar import zaliznyak_index, _GENDER_POMETA, paradigm_for, render_paradigm
 
 PWG = os.path.normpath(os.path.join(HERE, '..', '..', '..', 'csl-orig', 'v02', 'pwg', 'pwg.txt'))
 IDX_JSON = os.path.join(HERE, 'reverse_paradigm_index.json')
@@ -130,6 +131,32 @@ def query(token):
         print('  ... (%d more)' % (len(hits) - 200))
 
 
+def _representative(token):
+    """First (k1, lex) headword carrying `token`, from headword_index.tsv (built on demand)."""
+    if not os.path.exists(HW_TSV):
+        build()
+    for line in open(HW_TSV, encoding='utf-8'):
+        parts = line.rstrip('\n').split('\t')
+        if len(parts) == 4 and parts[3] == token:
+            return parts[0], parts[2]            # k1, lex
+    return None, None
+
+
+def show(token):
+    """Render the shared declension TEMPLATE for a paradigm token (Zaliznyak's
+    «Грамматические сведения»): a representative member's vidyut paradigm + the
+    member count and a few example headwords."""
+    members = _load().get(token, [])
+    if not members:
+        print('no headwords with index %s' % token)
+        return
+    k1, lex = _representative(token)
+    print('=== paradigm %s — %d headwords ===' % (token, len(members)))
+    print('representative: %s [%s]\n' % (k1, lex))
+    print(render_paradigm(paradigm_for(k1, lex)))
+    print('\nexamples:', ', '.join(members[:12]) + (' …' if len(members) > 12 else ''))
+
+
 def stats(n=30):
     idx = _load()
     rows = sorted(((len(v), t) for t, v in idx.items()), reverse=True)
@@ -149,6 +176,12 @@ def main():
             query(args[i + 1])
         else:
             print('Usage: --query <index_token>')
+    elif '--show' in args:
+        i = args.index('--show')
+        if i + 1 < len(args):
+            show(args[i + 1])
+        else:
+            print('Usage: --show <index_token>   (renders the paradigm template)')
     elif '--stats' in args:
         i = args.index('--stats')
         n = int(args[i + 1]) if i + 1 < len(args) and args[i + 1].isdigit() else 30
