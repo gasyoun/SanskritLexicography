@@ -37,6 +37,41 @@ Proceeded to root `as`. No Opus spent.
 
 ---
 
+## 2026-06-29 — Stage B: i (split into 2 sub-windows)
+
+`i` (204 sub-cards) hit **F-harness-size-limit**: the full harness is 567 KB,
+over the Workflow 512 KB `scriptPath` cap. Split into two 102-card sub-windows via
+`gen_opt_harness.py i body --keys=...` (316 KB + 274 KB), run **concurrently** as
+two **Sonnet** Workflows, to be reassembled into one root-scoped `wf_output.json`
+for a single `i` audit.
+
+| chunk | model | cards | task | status |
+|---|---|---:|---|---|
+| 1 | Sonnet | 102 | `w2mv6pwyl` | running |
+| 2 | Sonnet | 102 | `wc37hznuc` | running |
+
+> Numbers + combined audit to be appended on completion. No Opus.
+
+---
+
+## 2026-06-29 — Stage B: as
+
+| step | tool / model | result |
+|---|---|---|
+| pre-check + gen | `root_window_status.py as` / `gen_opt_harness.py as` — **no LLM** | ready, 98/98; harness 98 cards |
+| translate | Workflow, **98 × Sonnet** agents, 1 retry, tools:[] | 98/98 translated; no Opus spent |
+| audit | `audit_window.py` — **no LLM** | needs_requeue |
+
+- Max wall-clock: **~10.8 min** (648,635 ms) · tokens: **3,353,816** · cap fired: **no**
+- **clean 81/98** · requeue 17 · judge sample 26
+- Gates: prompt_semantic=1 (10), coverage=1 (7), translation=1 (1), nws=**0 PASS**, sense_dupes=**0 PASS**
+- Risk mix: `suspicious_attested_without_text_signal`=92 (**F-gate-nws-fp** again),
+  `untranslated_braced_german_gloss`=21, `possible_sense_compression`=17,
+  `collapsed_synonym_string`=16, others ~13.
+- **Decision: ACCEPT** at 81/98 (same documented-FP pattern); advanced to `i`. No Opus spent.
+
+---
+
 ## 2026-06-29 — Stage A: sTA
 
 Operator: Claude Code Max. Handoff: [`../../HANDOFF_2026-06-29_claude_code_max.md`](../../HANDOFF_2026-06-29_claude_code_max.md).
