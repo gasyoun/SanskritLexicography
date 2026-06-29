@@ -39,6 +39,7 @@ from prompt_rule_audit import (
     braced_gloss_risks,
     semantic_risks,
 )
+from fix_german_connectives import fix_text as fix_german_text
 
 
 def fail(message):
@@ -346,6 +347,19 @@ def test_german_residue_keeps_retained_markup():
         fail('residue audit missed genuine untranslated German connectives')
 
 
+def test_german_connective_fix():
+    # safe lone connectives / fixed phrase in free text are substituted
+    assert fix_german_text('{#X#} und {#Y#} mit {#Z#}')[0] == '{#X#} и {#Y#} с {#Z#}'
+    assert fix_german_text('(<ab>s.</ab> auch d.)')[0] == '(<ab>s.</ab> также d.)'
+    assert fix_german_text('fehlerhaft für {#aDijagAma#}')[0] == 'ошибочно вместо {#aDijagAma#}'
+    # protected spans are NEVER touched: retained {%..%} markup and «..» German quotes
+    if fix_german_text('{%und%}')[1] or fix_german_text('«Von Sternen und Mond»')[1]:
+        fail('connective fix touched a protected span ({%..%} or «..»)')
+    # ambiguous multi-word German phrase is left for review (no lone-connective match)
+    if fix_german_text('aber nur in der Saṃhitā')[1]:
+        fail('connective fix wrongly altered an ambiguous German phrase')
+
+
 def test_semantic_review_prioritizer():
     high = {
         'key': 'high',
@@ -541,6 +555,7 @@ def main():
         test_semantic_risk_checker,
         test_braced_gloss_audit,
         test_german_residue_keeps_retained_markup,
+        test_german_connective_fix,
         test_semantic_review_prioritizer,
         test_noisy_source_type_not_requeue,
         test_stale_refusal_preserves_requeue,
