@@ -99,18 +99,26 @@ def die(msg):
 
 def parse_args(argv):
     if not argv:
-        die('usage: gen_opt_harness2.py <root> [--keys=..] [--budget=N] [--lean]')
+        die('usage: gen_opt_harness2.py <root> [--keys=..] [--budget=N] [--lean] '
+            '[--nominal] [--no-grammar]')
     root, keyfilter, budget, lean, nws_gate = argv[0], None, 9000, False, False
+    nominal, grammar_on = False, True
+    keylist = None                     # ordered keys (nominal mode preserves order)
     for a in argv[1:]:
         if a.startswith('--keys='):
-            keyfilter = set(filter(None, a.split('=', 1)[1].split(',')))
+            keylist = [k for k in a.split('=', 1)[1].split(',') if k]
+            keyfilter = set(keylist)
         elif a.startswith('--budget='):
             budget = int(a.split('=', 1)[1])
         elif a == '--lean':
             lean = True
         elif a == '--nws-gate':
             nws_gate = True
-    return root, keyfilter, budget, lean, nws_gate
+        elif a == '--nominal':
+            nominal = True
+        elif a == '--no-grammar':
+            grammar_on = False
+    return root, keyfilter, keylist, budget, lean, nws_gate, nominal, grammar_on
 
 
 def extract_nws(tr):
@@ -151,6 +159,29 @@ def selected_keys(root, keyfilter):
     return path, keys
 
 
+# POS priority shared with enrich_portrait_nominal_grammar (prefer concrete gender).
+_GENDER_PRIORITY = ('m.', 'f.', 'n.', 'm.n.', 'm.f.', 'f.n.', 'm.f.n.',
+                    'adj.', 'adv.', 'indecl.', 'ind.', 'interj.')
+
+
+def _lex_for_key(k):
+    """Read the <lex>/pos tag for a nominal headword from its portrait JSON."""
+    _, pp = input_paths(k)
+    try:
+        port = load_json(pp)
+    except Exception:
+        return ''
+    e = port[0] if isinstance(port, list) and port else port
+    val = e.get('lex') or e.get('pos') or e.get('gender') or ''
+    if isinstance(val, (list, tuple)):
+        tags = [str(t).strip() for t in val if str(t).strip()]
+        for g in _GENDER_PRIORITY:
+            if g in tags:
+                return g
+        return tags[0] if tags else ''
+    return str(val).strip()
+
+
 def extract_conv_tr():
     src = read_text(os.path.join(REPO, 'src', 'pilot', 'run_pilot_wf.js'))
     m = re.search(r'const TR = `(.*?)`\n', src, re.S)
@@ -186,7 +217,8 @@ headword in `cards`, with `key1` matching its '=== CARD <key> ===' header. Omit 
 """
 
 
-def build(root, keys, rootmap, budget, lean=False, nws_gate=False):
+def build(root, keys, rootmap, budget, lean=False, nws_gate=False,
+          nominal=False, grammar_on=True):
     conv = conv_text()
     tr = extract_conv_tr().replace('${CONV}', conv)
     # CRITICAL: the production TR tells the model "INPUTS for headword KEY (read both):
@@ -242,13 +274,27 @@ def build(root, keys, rootmap, budget, lean=False, nws_gate=False):
     if cur:
         batches.append(cur)
 
+    # Grammar injection. Root mode: one shared GRAMMAR block (the root conjugation,
+    # identical across sub-cards) before CONV_TR; GRAMMARS empty. Nominal mode: each
+    # headword has its OWN block (distinct stem class / compound members), so inject
+    # PER CARD via GRAMMARS and leave the shared block empty. --no-grammar = arm A.
+    if nominal:
+        single_grammar = ''
+        grammars = {k: nominal_grammar_text(k, _lex_for_key(k)) for k in keys} if grammar_on else {}
+    else:
+        single_grammar = grammar_text(root) if grammar_on else ''
+        grammars = {}
+
     meta = {
         'schema_version': 'pwg_ru.workflow_meta.v1', 'generator': 'gen_opt_harness2.batched-masked',
         'generated_at': datetime.datetime.now(datetime.timezone.utc).isoformat(
             timespec='seconds').replace('+00:00', 'Z'),
-        'root': root, 'safe_root': safe_name(root), 'mode': 'batched_masked',
+        'root': root, 'safe_root': safe_name(root),
+        'mode': 'nominal_masked' if nominal else 'batched_masked',
+        'grammar_layer': ('nominal' if nominal else 'root') if grammar_on else 'none',
         'selected_keys': keys, 'batches': batches, 'batch_count': len(batches),
-        'rootmap_sha256': sha256_file(rootmap), 'input_hashes': input_hashes,
+        'rootmap_sha256': sha256_file(rootmap) if rootmap else None,
+        'input_hashes': input_hashes,
     }
 
     js = """// AUTO-DERIVED v2 (batched + masked, canonical output) from run_pilot_wf.js - root=%(root)s.
@@ -263,6 +309,7 @@ export const meta = {
 const CONV_TR = %(tr)s
 const PREAMBLE = %(preamble)s
 const GRAMMAR = %(grammar)s
+const GRAMMARS = %(grammars)s
 const NWS_RULE = %(nws)s
 const CARDS_SCHEMA = %(schema)s
 const BATCHES = %(batches)s
@@ -280,7 +327,9 @@ function restoreCard(card, k) {
   }
   return card
 }
-const cardBlock = k => '\\n\\n=== CARD ' + k + ' ===\\n--- masked German (translatable only; {Tn}=masked span) ---\\n' + INPUTS[k].skeleton + '\\n--- portrait (evidence) ---\\n' + INPUTS[k].portrait
+// Per-card grammar (nominal mode): each headword carries its own block. Empty in root
+// mode (the shared GRAMMAR is injected once before CONV_TR) and in the --no-grammar arm.
+const cardBlock = k => (GRAMMARS[k] || '') + '\\n\\n=== CARD ' + k + ' ===\\n--- masked German (translatable only; {Tn}=masked span) ---\\n' + INPUTS[k].skeleton + '\\n--- portrait (evidence) ---\\n' + INPUTS[k].portrait
 
 const accept = (c, k) => {
   if (!c) return null
@@ -316,7 +365,8 @@ return { meta: META, results: out }
 """ % {
         'root': root, 'tr': json.dumps(tr, ensure_ascii=True),
         'preamble': json.dumps(MASK_PREAMBLE, ensure_ascii=True),
-        'grammar': json.dumps(grammar_text(root), ensure_ascii=True),
+        'grammar': json.dumps(single_grammar, ensure_ascii=True),
+        'grammars': json.dumps(grammars, ensure_ascii=True),
         'nws': json.dumps(nws_block, ensure_ascii=True),
         'schema': json.dumps(batch_schema, ensure_ascii=True),
         'batches': json.dumps(batches), 'inputs': json.dumps(inputs, ensure_ascii=True),
@@ -329,12 +379,21 @@ return { meta: META, results: out }
 
 
 def main():
-    root, keyfilter, budget, lean, nws_gate = parse_args(sys.argv[1:])
-    rootmap, keys = selected_keys(root, keyfilter)
-    js, batches = build(root, keys, rootmap, budget, lean, nws_gate)
+    root, keyfilter, keylist, budget, lean, nws_gate, nominal, grammar_on = parse_args(sys.argv[1:])
+    if nominal:
+        # No rootmap: the headword keys ARE the cards, in the order given.
+        if not keylist:
+            die('--nominal requires an explicit --keys=k1,k2,... list')
+        rootmap, keys = None, keylist
+    else:
+        rootmap, keys = selected_keys(root, keyfilter)
+        if keylist:
+            keys = [k for k in keylist if k in set(keys)]
+    js, batches = build(root, keys, rootmap, budget, lean, nws_gate, nominal, grammar_on)
     out = os.path.join(REPO, 'src', 'pilot', 'run_pilot_wf.opt2.js')
     write_text(out, js)
-    mode = 'LEAN(rejected)' if lean else 'NWS-GATE' if nws_gate else 'full'
+    mode = ('NOMINAL%s' % ('' if grammar_on else '/no-grammar')) if nominal else (
+        'LEAN(rejected)' if lean else 'NWS-GATE' if nws_gate else 'full')
     print('wrote', out, len(js), 'bytes |', len(keys), 'cards in', len(batches), 'batches',
           '(sizes', [len(b) for b in batches], ') | mode', mode)
 
