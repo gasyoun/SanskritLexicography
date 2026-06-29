@@ -6,6 +6,37 @@ History of how the harness got here: [`EVOLUTION_TIMELINE.md`](EVOLUTION_TIMELIN
 
 ---
 
+## 2026-06-29 — Stage B: BU
+
+### Round 1 — full window (59 cards)
+
+| step | tool / model | result |
+|---|---|---|
+| pre-check | `root_window_status.py BU` — **no LLM** | ready, 59/59 raw+portrait (PASS) |
+| harness gen | `gen_opt_harness.py BU` — **no LLM** | 59 cards, mode body |
+| translate | Workflow `run_pilot_wf.opt.js`, **59 × Sonnet** agents, 1 retry, tools:[] | 59/59 translated; no Opus spent |
+| audit | `audit_window.py` — **no LLM** | **FAIL → needs_requeue** |
+
+- Max wall-clock: **~11.4 min** (681,259 ms) · Max total tokens: **2,022,803** · cap fired: **no**
+- Coverage: **57/59** (2 flagged: `h2_00_pwg00`, `zz_pwkvn`) · clean **45/59** · requeue **14** · judge sample **19**
+- Gate exits: coverage=1 (2), prompt_semantic=1 (11), nws=**0 PASS**, sense_dupes=**0 PASS**, translation=1 (1)
+- Risk mix (151 risks / 33 keys / 23 high-confidence): **same pattern as sTA** —
+
+| rule | count | nature |
+|---|---:|---|
+| `suspicious_attested_without_text_signal` | 91 (60%) | **F-gate-nws-fp** (same documented false positive) |
+| `collapsed_synonym_string` | 18 | quality flag (soft) |
+| `untranslated_braced_german_gloss` | 12 | real defect |
+| `untranslated_german_residue` | 9 | mixed |
+| `likely_circular_gloss` / `suspicious_lexicographic_with_text_signal` / other | ~21 | mixed, low volume |
+
+**Decision: ACCEPT BU** at 45/59 clean — residual dominated by the documented
+F-gate-nws-fp, same as sTA, so the operator's accept-and-advance strategy applies.
+No Sonnet re-loop (would chase the 91 FPs). NWS gate PASSED (owner-map feed works).
+Proceeded to root `as`. No Opus spent.
+
+---
+
 ## 2026-06-29 — Stage A: sTA
 
 Operator: Claude Code Max. Handoff: [`../../HANDOFF_2026-06-29_claude_code_max.md`](../../HANDOFF_2026-06-29_claude_code_max.md).
@@ -77,3 +108,11 @@ repeat Sonnet pass.
 
 No Opus has been spent on sTA in either round; the Opus LLM-judge of the judge
 sample is still a separate, not-yet-run step.
+
+### Decision (operator, 2026-06-29): ACCEPT sTA → proceed to Stage B `BU`
+
+sTA accepted at **96/123 clean** with the residual dominated by the documented
+F-gate-nws-fp false positive. This satisfies the handoff's "fresh sTA is
+mechanically clean **or has a targeted rerun plan**" gate for advancing to Stage B.
+Open follow-ups left for later (not blocking BU): fix `has_text_signal()` to count
+NWS owner citations; optional Opus retranslate of the ~6 real braced-gloss failers.
