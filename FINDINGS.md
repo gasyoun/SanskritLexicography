@@ -31,6 +31,11 @@ a probe), never a hunch. When a finding is later refuted or superseded, strike i
   (stem-class, accent-position)→case-accent table, join with `key2` `/`, validate vs accented RV),
   NOT a data-acquisition blocker. Vedic-only (Classical entries have no `/`). Earlier claim that
   "Whitney might supply it but our data can't" was an overstatement — both halves are on disk.
+  **Validation set = VedaWeb** ([vedaweb.uni-koeln.de](https://vedaweb.uni-koeln.de),
+  GitHub [VedaWebProject/vedaweb](https://github.com/VedaWebProject/vedaweb)): accented Rigveda +
+  per-word UZH morphology, accent-sensitive API (`rigveda/api/search`, ~10,522 stanzas), **CC BY 4.0**,
+  already CDSL-linked via the C-SALT APIs. Gives per attested RV form its case/number + accent with a
+  lemma to join to PWG — closes the validation loop. So the accent axis is *unblocked*, not just spec'd.
   **Source:** [`ZALIZNYAK_INDEX.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/ZALIZNYAK_INDEX.md)
   §"Vedic accent mobility" + `WhitneyRoots/src/whitney_sections.json` §§315–319 — RussianTranslation · 2026-06-29
 
