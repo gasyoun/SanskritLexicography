@@ -8,7 +8,88 @@ See also: [METHODOLOGY_REVIEW.md](METHODOLOGY_REVIEW.md) (where we want to go),
 [failures/FAILURE_GALLERY.md](failures/FAILURE_GALLERY.md) (what went wrong and
 how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
+## 2026-06-29
+
+### Fast print/DH acceleration review
+- Added [PRINT_DH_ACCELERATION_REVIEW.md](PRINT_DH_ACCELERATION_REVIEW.md), a compact
+  next-review queue for speed, Digital Humanities/FAIR readiness, and print
+  feasibility. It preserves the current verdict: bulk translation can continue
+  after fresh `sTA`, while print publication remains blocked by G5/G6/G7/G10.
+- Added [roadmap/print_dh_acceleration_review.json](roadmap/print_dh_acceleration_review.json)
+  with P0/P1/P2 items for fresh `sTA`, deterministic audit, semantic queueing,
+  traceability, G5/G6/G7, renderer decisions, reproducibility, front matter, and
+  DOI/citation finalization.
+- Added [NEXT_REVIEW_PACKET.md](NEXT_REVIEW_PACKET.md), the executable narrow
+  checklist for the actual next move: fresh `sTA` audit, mechanical stop/go,
+  minimal semantic review, `BU` hold/advance decision, and print renderer
+  feasibility from `agni`, `akzara`, and `ap`.
+- Locked the Max batch-size decision into [NEXT_REVIEW_PACKET.md](NEXT_REVIEW_PACKET.md)
+  and [src/pilot/RUN_FREQ_MAX.md](src/pilot/RUN_FREQ_MAX.md): do not translate
+  10 big dhātus at once yet. Run staged evidence instead: fresh `sTA`, then
+  clean-ready `BU`/`as`/`i`, then prune/recheck `gam`/`yuj`/`vid`/`han`.
+- Added [HANDOFF_2026-06-29_claude_code_max.md](HANDOFF_2026-06-29_claude_code_max.md),
+  a current Claude Code Max handoff with Stage A/B/C commands, root status,
+  audit return artifacts, token/time fields to preserve, and print-feasibility
+  side checks.
+
+### F-gate-nws-fp fix — `has_text_signal()` now counts NWS owner citations
+- Fixed false-positive flood in `suspicious_attested_without_text_signal` for `*_zz_pw*`
+  cards and NWS cards. Root cause: `citation_blob()` skips `equivalence_type` (where
+  `[NWS: OWNER]` tokens land), and PW cards have `<ls>` citations only in the `head` sense —
+  so 70+ numbered verb senses per card each fired the flag independently.
+  Fix: (1) `has_text_signal()` now scans all sense field values (not just `citation_blob()`)
+  for `[NWS:\s` patterns; (2) `semantic_risks()` computes a card-level
+  `card_has_text_signal` (restricted to `source_type='attested'` senses) and suppresses
+  per-sense FPs when the card as a whole already has a text signal.
+  Added `test_nws_fp_suppressed()` to
+  [`src/pilot/window_selftest.py`](src/pilot/window_selftest.py) covering both the PW
+  card case (head `<ls>` suppresses numbered senses) and the NWS card case
+  (`[NWS: Graßmann…]` in `equivalence_type`). All 13 selftests pass.
+
 ## 2026-06-28
+
+### Print, DH, and speed readiness review
+- Added [PRINT_DH_SPEED_REVIEW.md](PRINT_DH_SPEED_REVIEW.md), a ranked review pack for
+  scaling speed, Digital Humanities/FAIR readiness, print readiness, and lexicographic QA.
+  It distinguishes five readiness levels: continuing bulk translation, reviewed core tranche,
+  immutable digital edition, printed bilingual dictionary, and full PWG tail.
+- Added [roadmap/print_dh_speed_review.json](roadmap/print_dh_speed_review.json), a
+  machine-readable companion with `P0 blocks scale/print`, `P1 slows production`, and
+  `P2 improves scholarly polish` items. The P0s are explicit: fresh `sTA` Max output,
+  human G5/G6/G7 gates, zero print-ready rows, and stale semantic-risk evidence.
+- Re-ran the status/release checks used as evidence: `root_window_status.py sTA`,
+  `prompt_rule_audit.py --cards wf_output.json --review-limit 25`,
+  `preflight_remaining_gates.py`, `release_readiness.py`, and `window_selftest.py`.
+- Added [HUMAN_REVIEW_MINIMIZATION.md](HUMAN_REVIEW_MINIMIZATION.md) and
+  [PRINT_ENTRY_SPEC.md](PRINT_ENTRY_SPEC.md) as the next practical layer: exact G5/G6/G7
+  reviewer files, editable columns, validation commands, and the target printed bilingual
+  entry shape. [roadmap/print_review_minimum.json](roadmap/print_review_minimum.json)
+  records the same minimum human-review queue in machine-readable form.
+- Added [PRINT_ENTRY_EXAMPLES.md](PRINT_ENTRY_EXAMPLES.md) and
+  [roadmap/print_entry_examples_review.json](roadmap/print_entry_examples_review.json),
+  using real local `agni`, `akzara`, and `ap` merged cards to test the printed-entry spec
+  while labeling them as non-print-ready layout/QA prototypes.
+
+### Fast low-human audit hardening
+- **Manual-rule drift is now part of the canonical window audit.**
+  [src/pilot/audit_window.py](src/pilot/audit_window.py) runs the new `prompt_semantic`
+  gate on every non-stale workflow audit. The gate reuses
+  [src/pilot/prompt_rule_audit.py](src/pilot/prompt_rule_audit.py) to verify that both the
+  committed template and generated optimized harness still carry the live manual-derived
+  rules. Missing required prompt/manual wiring is a blocking audit failure.
+- **Semantic triage stays cheap and mostly non-blocking.** The same gate writes a ranked
+  semantic-risk queue for low-interaction review, while only high-confidence mechanical
+  defects feed requeue: empty Russian glosses, broken markup, unbalanced Sanskrit delimiters,
+  translated sigla/grammar abbreviations, German residue, and conservative `{%...%}` gloss
+  leaks. Noisy evidence heuristics such as suspicious `source_type` signals remain review
+  hints, not automatic reruns.
+- **Focused PWG `{%...%}` gloss audit added.** German braced glosses are checked for leakage
+  into Russian, while Latin/English/binomial literal glosses are checked for accidental
+  alteration when a target braced literal is present.
+- **Reports now show theory coverage.** `audit_window.report.*` and `window_status.*` surface
+  the live harness coverage: Apresjan, Hartmann, Gonda/Vogel, Tubb, Baalbaki,
+  Apte/Gillon/Inglese-Geupel, and Mitrenina/Zaliznyak-Paducheva/Ruppel. Riemer and Klosa are
+  explicitly reported as methodology/design inputs unless later promoted to hard live rules.
 
 ### Audit guardrails and operator use cases
 - **NWS filename resolution hardened for root-split windows.** [src/nws_split.py](src/nws_split.py)

@@ -1,0 +1,122 @@
+[
+  {
+    "id": "P0_EXECUTABLE_NEXT_REVIEW_PACKET",
+    "priority": "P0 blocks scale/print",
+    "area": "speed",
+    "finding": "The next review must be a narrow executable packet, not another broad readiness pass.",
+    "evidence": "NEXT_REVIEW_PACKET.md names the fresh sTA audit inputs, commands, stop/go gates, semantic review order, BU hold/advance condition, and print-feasibility checklist.",
+    "recommended_fix": "Use NEXT_REVIEW_PACKET.md as the operator entrypoint until fresh sTA is audited and BU is cleared or held.",
+    "owner_type": "codex",
+    "status": "open"
+  },
+  {
+    "id": "P0_FRESH_STA_BEFORE_BU",
+    "priority": "P0 blocks scale/print",
+    "area": "speed",
+    "finding": "The next production review is fresh sTA output, not broad manual reading or BU.",
+    "evidence": "root_window_status.py sTA reports stale_artifact while the root window is structurally ready with 123 sub-cards.",
+    "recommended_fix": "Run the generated optimized Max harness for sTA, save fresh wf_output.json, then run python src\\pilot\\audit_window.py wf_output.json --root sTA --write-requeue.",
+    "owner_type": "max_workflow",
+    "status": "open"
+  },
+  {
+    "id": "P0_DETERMINISTIC_AUDIT_FIRST",
+    "priority": "P0 blocks scale/print",
+    "area": "speed",
+    "finding": "Mechanical Python gates must be reviewed before semantic or print review.",
+    "evidence": "audit_window.py is the canonical stale/provenance, NWS, markup, coverage, sense-duplicate, and prompt-rule audit path.",
+    "recommended_fix": "Read audit_window.report.md and requeue.keys.txt after fresh sTA; regenerate requeue harness only for named failing keys.",
+    "owner_type": "codex",
+    "status": "open"
+  },
+  {
+    "id": "P0_HUMAN_GATES_BLOCK_PRINT",
+    "priority": "P0 blocks scale/print",
+    "area": "print",
+    "finding": "Print publication and immutable edition remain blocked by missing human review evidence.",
+    "evidence": "preflight_remaining_gates.py and release_readiness.py report G5, G6, G7, and G10 blocked.",
+    "recommended_fix": "Complete G5 src/_review_queue.csv, G6 gold/_human_gold_review.csv, and G7 gold/_double_review_queue.csv with their validation commands before edition cut.",
+    "owner_type": "human_editor",
+    "status": "open"
+  },
+  {
+    "id": "P0_TRACEABILITY_REQUIRES_FRESH_PROVENANCE",
+    "priority": "P0 blocks scale/print",
+    "area": "digital_humanities",
+    "finding": "Accepted cards must be traceable to source input, rootmap/input hashes, workflow metadata, audit report, review status, and edition manifest.",
+    "evidence": "Current stale wf_output.json cannot be used as publication evidence; audit_window.py refuses stale artifacts.",
+    "recommended_fix": "Accept only fresh audited workflow output, then carry review status into any later immutable edition manifest.",
+    "owner_type": "max_workflow",
+    "status": "open"
+  },
+  {
+    "id": "P1_SEMANTIC_QUEUE_NOT_AD_HOC_READING",
+    "priority": "P1 slows production",
+    "area": "speed",
+    "finding": "Human semantic review should start from ranked deterministic queues, not whole-window browsing.",
+    "evidence": "prompt_semantic and judge_sample.keys.txt separate high-confidence risks from clean-card sampling.",
+    "recommended_fix": "After mechanical gates pass, review prompt_semantic high-confidence risks first and judge_sample.keys.txt second.",
+    "owner_type": "human_editor",
+    "status": "open"
+  },
+  {
+    "id": "P1_THREE_WINDOW_COST_EVIDENCE",
+    "priority": "P1 slows production",
+    "area": "speed",
+    "finding": "Full PWG throughput cannot be priced from stale recovery alone.",
+    "evidence": "Current status provides sTA structure and stale-output recovery, but not enough clean-window data.",
+    "recommended_fix": "Record wall-clock and token fields for sTA, BU, and gam before deciding Max-seat versus paid API strategy.",
+    "owner_type": "codex",
+    "status": "open"
+  },
+  {
+    "id": "P1_STAGED_MAX_ROOTS_NOT_TEN_BLAST",
+    "priority": "P1 slows production",
+    "area": "speed",
+    "finding": "A 10-root Max push would mix clean-ready roots with roots that still have stale generated inputs.",
+    "evidence": "root_window_status.py shows sTA structurally ready but stale-output blocked; BU/as/i clean-ready after harness generation; gam/yuj/vid/han need prune and recheck.",
+    "recommended_fix": "Run staged roots: fresh sTA first, then BU/as/i one root at a time, then prune/recheck gam/yuj/vid/han before any Max spend.",
+    "owner_type": "max_workflow",
+    "status": "open"
+  },
+  {
+    "id": "P1_PRINT_RENDERER_DECISIONS_FROM_EXAMPLES",
+    "priority": "P1 slows production",
+    "area": "print",
+    "finding": "Renderer work needs locked rules for citation compaction, nested labels, homonym blocks, NWS badges, Nachtraege, and source-token display.",
+    "evidence": "PRINT_ENTRY_EXAMPLES.md exposes these issues in agni, akzara, and ap.",
+    "recommended_fix": "Use PRINT_ENTRY_SPEC.md and PRINT_ENTRY_EXAMPLES.md to lock display policy before implementing PDF, LaTeX, or HTML rendering.",
+    "owner_type": "renderer",
+    "status": "open"
+  },
+  {
+    "id": "P1_REPRODUCIBILITY_RECIPE",
+    "priority": "P1 slows production",
+    "area": "digital_humanities",
+    "finding": "Outside-scholar reproduction exists as components but not yet as a single recipe.",
+    "evidence": "Source XML, rootmap/input hashes, audit reports, review status, release readiness, and manifests are documented in separate places.",
+    "recommended_fix": "Before immutable release, add a recipe from source XML through audited workflow output and review status to edition manifest.",
+    "owner_type": "future_release",
+    "status": "open"
+  },
+  {
+    "id": "P2_FRONT_MATTER_ASSEMBLY",
+    "priority": "P2 improves scholarly polish",
+    "area": "print",
+    "finding": "Print front matter is not yet assembled as one edition object.",
+    "evidence": "Method, license, DOI plan, source policy, examples, and QA gates exist as separate docs.",
+    "recommended_fix": "Create front matter after the reviewed core tranche: editorial principles, abbreviation/sigla list, source table, QA method, limitations, license, and DOI statement.",
+    "owner_type": "future_release",
+    "status": "open"
+  },
+  {
+    "id": "P2_CITATION_DOI_FINALIZATION",
+    "priority": "P2 improves scholarly polish",
+    "area": "digital_humanities",
+    "finding": "Citation and DOI metadata are provisional until an edition cut exists.",
+    "evidence": "CITATION.cff and DOI_PLAN.md describe pre-release status and DOI path.",
+    "recommended_fix": "At edition cut, update citation version, DOI, release date, manifest checksums, and rights statement.",
+    "owner_type": "future_release",
+    "status": "open"
+  }
+]

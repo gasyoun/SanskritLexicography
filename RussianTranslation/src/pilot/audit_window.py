@@ -8,10 +8,7 @@ machine-readable report plus a requeue list, and optionally glues a root article
 """
 import argparse
 import concurrent.futures
-import datetime
-import hashlib
 import json
-import math
 import os
 import re
 import subprocess
@@ -24,30 +21,29 @@ sys.stderr.reconfigure(encoding='utf-8')
 HERE = os.path.dirname(os.path.abspath(__file__))          # .../src/pilot
 SRC = os.path.dirname(HERE)                                # .../src
 OUT = os.path.join(HERE, 'output')
-LEDGER = os.path.join(OUT, 'window_ledger.jsonl')
-JUDGE_SAMPLE_FILE = os.path.join(OUT, 'judge_sample.keys.txt')
 
 sys.path.insert(0, SRC)
 import nws_split
 from safe_filename import safe_name
 from dashboard_events import append_event
-from window_common import harness_meta
+from prompt_rule_audit import (
+    DEFAULT_HARNESS,
+    DEFAULT_TEMPLATE,
+    audit_cards as audit_semantic_cards,
+    build_report as build_prompt_rule_report,
+)
+from workflow_payload import workflow_payload
+from window_provenance import stale_check
+from window_reports import (
+    audit_state,
+    build_judge_sample,
+    build_production_metrics,
+    write_reports,
+)
 
 COLLECT = os.path.join(SRC, '_pilot_collect.py')
 BATCH_FILE = os.path.join(OUT, '_realtest_batch.json')
 PROTECTED = {'aMSa', 'anna', 'ap'}
-
-
-def sha256_file(path):
-    h = hashlib.sha256()
-    with open(path, 'rb') as f:
-        for chunk in iter(lambda: f.read(1024 * 1024), b''):
-            h.update(chunk)
-    return h.hexdigest()
-
-
-def load_json(path):
-    return json.load(open(path, encoding='utf-8'))
 
 
 def run_py(args, env=None):
@@ -57,52 +53,6 @@ def run_py(args, env=None):
     return {'argv': [sys.executable] + args, 'returncode': p.returncode,
             'stdout': p.stdout, 'stderr': p.stderr,
             'seconds': round(time.perf_counter() - t0, 3)}
-
-
-def find_results_container(o):
-    if isinstance(o, dict):
-        if isinstance(o.get('results'), list):
-            return o
-        for v in o.values():
-            r = find_results_container(v)
-            if r is not None:
-                return r
-    if isinstance(o, list):
-        for v in o:
-            r = find_results_container(v)
-            if r is not None:
-                return r
-    return None
-
-
-def find_results(o):
-    container = find_results_container(o)
-    return container.get('results') if container else None
-
-
-def workflow_payload(path):
-    payload = load_json(path)
-    container = find_results_container(payload) or {}
-    results = container.get('results') or []
-    if isinstance(container.get('meta'), dict):
-        meta = container['meta']
-    elif isinstance(payload, dict) and isinstance(payload.get('meta'), dict):
-        meta = payload['meta']
-    else:
-        meta = {}
-    keys, nulls = [], []
-    for r in results:
-        k = r.get('key')
-        if not k:
-            continue
-        keys.append(k)
-        if not r.get('card'):
-            nulls.append(k)
-    return payload, meta, results, keys, nulls
-
-
-def workflow_keys(path):
-    return workflow_payload(path)[3:5]
 
 
 def parse_flagged(stdout):
@@ -230,465 +180,62 @@ def run_nws_gate(keys, protected):
             'rejected': [], 'seconds': round(time.perf_counter() - t0, 3)}
 
 
-def merged_exists(key):
-    return (exact_file_exists(OUT, safe_name(key) + '.merged.md')
-            or exact_file_exists(OUT, key + '.merged.md'))
-
-
-def rootmap_for(root):
-    if not root:
-        return None
-    for stem in (safe_name(root), root):
-        p = os.path.join(HERE, 'input', stem + '.rootmap.json')
-        if os.path.exists(p):
-            return p
-    return None
-
-
-def input_paths(key):
-    return (os.path.join(HERE, 'input', key + '.raw.txt'),
-            os.path.join(HERE, 'input', key + '.portrait.json'))
-
-
-def current_root_provenance(root, selected_keys=None):
-    rp = rootmap_for(root)
-    if not rp:
-        return {'ok': False, 'rootmap_path': None, 'error': 'no rootmap for %r' % root}
-    rm = load_json(rp)
-    root_keys = [s['subkey'] for s in rm.get('sub_cards', [])]
-    keys = selected_keys or root_keys
-    input_hashes = {}
-    missing = []
-    for k in keys:
-        rawp, portraitp = input_paths(k)
-        rec = {}
-        if os.path.exists(rawp):
-            rec['raw_sha256'] = sha256_file(rawp)
-        else:
-            missing.append(k + '.raw.txt')
-        if os.path.exists(portraitp):
-            rec['portrait_sha256'] = sha256_file(portraitp)
-        else:
-            missing.append(k + '.portrait.json')
-        input_hashes[k] = rec
-    return {
-        'ok': True,
-        'root': root,
-        'safe_root': safe_name(root),
-        'rootmap_path': rp,
-        'rootmap_sha256': sha256_file(rp),
-        'root_keys': root_keys,
-        'selected_keys': keys,
-        'input_hashes': input_hashes,
-        'missing_inputs': missing,
-    }
-
-
-def stale_check(root, wf_meta, wf_keys):
-    check = {'ok': True, 'stale': False, 'warnings': [], 'errors': [],
-             'workflow_meta': wf_meta or {}, 'current': None}
-    if not root:
-        check['warnings'].append('no --root supplied; rootmap/input staleness was not checked')
-        return check
-    if not wf_meta:
-        check['ok'] = False
-        check['stale'] = True
-        check['errors'].append('workflow meta missing from wf_output; fresh Max output is required')
-        selected_keys = None
-    else:
-        selected_keys = wf_meta.get('selected_keys') or None
-    current = current_root_provenance(root, selected_keys)
-    check['current'] = current
-    if not current.get('ok'):
-        check['ok'] = False
-        check['stale'] = True
-        check['errors'].append(current.get('error') or 'root provenance unavailable')
-        return check
-
-    root_keys = current['root_keys']
-    expected_keys = current['selected_keys']
-    if selected_keys:
-        invalid = sorted(set(selected_keys) - set(root_keys))
-        if invalid:
-            check['errors'].append('workflow selected keys not in current rootmap: %s' %
-                                   ', '.join(invalid[:12]))
-    if wf_keys != expected_keys:
-        missing = sorted(set(expected_keys) - set(wf_keys))
-        unexpected = sorted(set(wf_keys) - set(expected_keys))
-        check['errors'].append('workflow keys do not match current selected rootmap keys '
-                               '(workflow=%d expected=%d missing=%d unexpected=%d)' %
-                               (len(wf_keys), len(expected_keys), len(missing), len(unexpected)))
-        check['missing_keys'] = missing
-        check['unexpected_keys'] = unexpected
-    if current['missing_inputs']:
-        check['errors'].append('current raw/portrait inputs missing: %s' %
-                               ', '.join(current['missing_inputs'][:12]))
-
-    if wf_meta:
-        if wf_meta.get('root') and wf_meta.get('root') != root:
-            check['errors'].append('workflow root %r != requested root %r' %
-                                   (wf_meta.get('root'), root))
-        if wf_meta.get('safe_root') and wf_meta.get('safe_root') != safe_name(root):
-            check['errors'].append('workflow safe_root %r != current safe_root %r' %
-                                   (wf_meta.get('safe_root'), safe_name(root)))
-        if wf_meta.get('rootmap_sha256') != current['rootmap_sha256']:
-            check['errors'].append('rootmap hash mismatch')
-        wf_hashes = wf_meta.get('input_hashes') or {}
-        for k in expected_keys:
-            got = wf_hashes.get(k)
-            cur = current['input_hashes'].get(k) or {}
-            if not got:
-                check['errors'].append('missing workflow input hash for %s' % k)
-                continue
-            if got.get('raw_sha256') != cur.get('raw_sha256'):
-                check['errors'].append('raw hash mismatch for %s' % k)
-            if got.get('portrait_sha256') != cur.get('portrait_sha256'):
-                check['errors'].append('portrait hash mismatch for %s' % k)
-
-    if check['errors']:
-        check['ok'] = False
-        check['stale'] = True
-    return check
-
-
-def glue_counts(summary):
-    m = re.search(r':\s*(\d+)\s+sub-cards\s+\((\d+)\s+translated,\s+(\d+)\s+pending\)', summary or '')
-    if not m:
-        return None
-    return {'subcards': int(m.group(1)), 'translated': int(m.group(2)), 'pending': int(m.group(3))}
-
-
-def default_judge_sample_seed(report, rate, minimum):
-    meta = report.get('workflow_meta') or {}
-    stale = report.get('stale_check') or {}
-    current = stale.get('current') or {}
-    parts = [
-        'pwg_ru_judge_sample_v1',
-        report.get('root') or '',
-        meta.get('rootmap_sha256') or current.get('rootmap_sha256') or '',
-        ','.join(report.get('keys') or []),
-        'rate=%.6f' % rate,
-        'min=%d' % minimum,
-    ]
-    return hashlib.sha256('\n'.join(parts).encode('utf-8')).hexdigest()[:16]
-
-
-def build_judge_sample(report, rate, minimum, seed=None):
-    rate = max(0.0, min(1.0, float(rate)))
-    minimum = max(0, int(minimum))
-    requeue = sorted(set(report.get('requeue') or []))
-    all_keys = list(report.get('keys') or [])
-    clean = [k for k in all_keys if k not in set(requeue) and k not in set(report.get('null_cards') or [])]
-    clean = [k for k in clean if merged_exists(k)]
-    sample_seed = seed or default_judge_sample_seed(report, rate, minimum)
-    if report.get('state') == 'stale_artifact':
-        clean = []
-        clean_sample = []
-    elif clean:
-        target = int(math.ceil(len(clean) * rate))
-        target = max(minimum, target)
-        target = min(len(clean), target)
-        ranked = sorted(clean, key=lambda k: hashlib.sha256((sample_seed + '\0' + k).encode('utf-8')).hexdigest())
-        clean_sample = sorted(ranked[:target])
-    else:
-        clean_sample = []
-    keys = sorted(set(requeue) | set(clean_sample))
-    return {
-        'rate': rate,
-        'minimum': minimum,
-        'seed': sample_seed,
-        'clean_key_count': len(clean),
-        'clean_sample_count': len(clean_sample),
-        'python_gate_failure_count': len(requeue),
-        'sample_count': len(keys),
-        'clean_sample_keys': clean_sample,
-        'python_gate_failure_keys': requeue,
-        'keys': keys,
-    }
-
-
-def build_production_metrics(args):
-    fields = {
-        'wall_clock_minutes': args.wall_clock_minutes,
-        'max_input_tokens': args.max_input_tokens,
-        'max_output_tokens': args.max_output_tokens,
-        'max_cache_read_tokens': args.max_cache_read_tokens,
-        'max_cache_create_tokens': args.max_cache_create_tokens,
-        'max_total_tokens': args.max_total_tokens,
-        'weekly_cap_fired': args.weekly_cap_fired,
-        'weekly_cap_cumulative_tokens': args.weekly_cap_cumulative_tokens,
-        'notes': args.metrics_note,
-    }
-    return {k: v for k, v in fields.items() if v not in (None, '')}
-
-
-def harness_matches_current_root(report):
-    root = report.get('root')
-    stale = report.get('stale_check') or {}
-    current = stale.get('current') or {}
-    expected = current.get('selected_keys') or []
-    meta = harness_meta(os.path.join(HERE, 'run_pilot_wf.opt.js'))
-    if not root or not current.get('rootmap_sha256') or not expected:
-        return False, meta
-    if not meta.get('ok'):
-        return False, meta
-    ok = (
-        meta.get('root') == root and
-        meta.get('rootmap_sha256') == current.get('rootmap_sha256') and
-        (meta.get('selected_keys') or []) == expected
-    )
-    if not ok:
-        meta['scope_error'] = 'harness scope does not match current rootmap selection'
-    return ok, meta
-
-
-def next_action_for(state, report, pending):
-    root = report.get('root') or '<root>'
-    sample = report.get('judge_sample') or {}
-    if state == 'stale_artifact':
-        matches, _meta = harness_matches_current_root(report)
-        if matches:
-            return 'Run the generated optimized harness in Max Workflow and save fresh wf_output.json.'
-        return 'Regenerate optimized harness for %s and rerun Max Workflow.' % root
-    if report.get('crashed'):
-        return 'Inspect crashed gates: %s.' % ', '.join(report['crashed'])
-    if report.get('requeue'):
-        return 'Run python src\\pilot\\requeue_from_audit.py %s, rerun Max Workflow, then rerun audit_window.py.' % root
-    if pending:
-        return 'Translate pending sub-cards for %s, then rerun audit_window.py.' % root
-    if sample.get('sample_count'):
-        return 'Send judge_sample.keys.txt to sampled semantic judging outside Python.'
-    return 'Window is mechanically clean; advance to the next frequency root.'
-
-
-def write_window_status(report):
-    root = report.get('root')
-    rootmap = rootmap_for(root)
-    subkeys = []
-    if rootmap:
-        rm = load_json(rootmap)
-        subkeys = [s['subkey'] for s in rm.get('sub_cards', [])]
-    translated = sum(1 for k in (subkeys or report['keys']) if merged_exists(k))
-    total = len(subkeys or report['keys'])
-    glue = report.get('glue') or {}
-    counts = glue_counts(glue.get('summary')) or {}
-    pending = counts.get('pending', max(0, total - translated))
-    if report.get('state'):
-        state = report['state']
-    elif report['crashed']:
-        state = 'blocked'
-    elif report['requeue']:
-        state = 'needs_requeue'
-    elif pending:
-        state = 'partial'
-    else:
-        state = 'clean'
-    stale = report.get('stale_check') or {}
-    current = stale.get('current') or {}
-    judge_sample = report.get('judge_sample') or {}
-    production_metrics = report.get('production_metrics') or {}
-    next_action = next_action_for(state, report, pending)
-    status = {
-        'root': root,
-        'workflow': report['workflow'],
-        'state': state,
-        'recorded_at': datetime.datetime.now(datetime.timezone.utc).isoformat(timespec='seconds').replace('+00:00', 'Z'),
-        'workflow_meta': report.get('workflow_meta') or {},
-        'stale_check': stale,
-        'rootmap_sha256': current.get('rootmap_sha256'),
-        'selected_key_count': len((report.get('workflow_meta') or {}).get('selected_keys') or report['keys']),
-        'workflow_keys': len(report['keys']),
-        'root_subcards': total,
-        'translated': counts.get('translated', translated),
-        'pending': pending,
-        'requeue_count': len(report['requeue']),
-        'requeue_keys': report['requeue'],
-        'judge_sample': judge_sample,
-        'judge_sample_count': judge_sample.get('sample_count', 0),
-        'judge_sample_seed': judge_sample.get('seed'),
-        'clean_key_count': judge_sample.get('clean_key_count', 0),
-        'next_action': next_action,
-        'production_metrics': production_metrics,
-        'crashed': report['crashed'],
-        'gates': {name: {'returncode': g['returncode'],
-                         'requeue_count': len(g.get('requeue') or []),
-                         'seconds': g.get('seconds')}
-                  for name, g in report['gates'].items()},
-        'collect_seconds': (report.get('collect') or {}).get('seconds'),
-        'glue': {'returncode': glue.get('returncode'),
-                 'summary': glue.get('summary'),
-                 'nested_exists': glue.get('nested_exists'),
-                 'seconds': glue.get('seconds')},
-    }
-    jp = os.path.join(OUT, 'window_status.json')
-    mp = os.path.join(OUT, 'window_status.md')
-    json.dump(status, open(jp, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
+def run_prompt_semantic_audit(wf, protected, review_limit=25):
+    t0 = time.perf_counter()
+    paths = [os.path.abspath(DEFAULT_TEMPLATE)]
+    harness = os.path.abspath(DEFAULT_HARNESS)
+    if os.path.exists(harness):
+        paths.append(harness)
+    prompt_rules = build_prompt_rule_report(paths)
+    card_risks = audit_semantic_cards(wf, review_limit=review_limit)
+    requeue = sorted(
+        key for key in (card_risks.get('requeue_keys') or [])
+        if key not in set(protected))
+    missing_rule_count = prompt_rules.get('missing_rule_count', 0)
     lines = [
-        '# Window Status',
-        '',
-        '| field | value |',
-        '|---|---:|',
-        '| root | %s |' % (root or ''),
-        '| state | %s |' % state,
-        '| workflow keys | %d |' % len(report['keys']),
-        '| root subcards | %d |' % total,
-        '| translated | %d |' % status['translated'],
-        '| pending | %d |' % pending,
-        '| requeue | %d |' % len(report['requeue']),
-        '| clean keys | %d |' % judge_sample.get('clean_key_count', 0),
-        '| judge sample | %d |' % judge_sample.get('sample_count', 0),
-        '| judge sample seed | %s |' % (judge_sample.get('seed') or ''),
-        '| next action | %s |' % next_action,
-        '| rootmap sha256 | %s |' % ((current.get('rootmap_sha256') or '')[:16]),
-        '',
+        'Prompt/manual rules: %s (%d missing required rule%s)' % (
+            'FAIL' if missing_rule_count else 'PASS',
+            missing_rule_count,
+            '' if missing_rule_count == 1 else 's'),
+        'Live manual coverage: %s' % ', '.join(
+            prompt_rules.get('live_manual_coverage') or []),
+        'Methodology/design only: %s' % ', '.join(
+            prompt_rules.get('methodology_only_manuals') or []),
+        'Semantic risks: %d risk(s) across %d key(s); high-confidence=%d key(s)' % (
+            card_risks.get('risk_count', 0),
+            card_risks.get('risky_key_count', 0),
+            len(card_risks.get('high_confidence_keys') or [])),
+        'High-confidence requeue candidates: %s' % (
+            ', '.join(requeue) if requeue else '(none)'),
     ]
-    if production_metrics:
-        lines += ['## Production Metrics', '']
-        lines += ['| metric | value |', '|---|---:|']
-        for key in sorted(production_metrics):
-            lines.append('| %s | %s |' % (key, production_metrics[key]))
-        lines.append('')
-    if stale.get('errors'):
-        lines += ['## Stale Check', '']
-        lines += ['- ' + e for e in stale['errors'][:20]]
-        if len(stale['errors']) > 20:
-            lines.append('- ... %d more' % (len(stale['errors']) - 20))
-        lines.append('')
-    lines += [
-        '## Gates',
-        '',
-        '| gate | exit | requeue | seconds |',
-        '|---|---:|---:|---:|',
-    ]
-    for name, gate in status['gates'].items():
-        lines.append('| %s | %s | %d | %s |' % (
-            name, gate['returncode'], gate['requeue_count'],
-            '' if gate['seconds'] is None else gate['seconds']))
-    lines += ['', '## Requeue Keys', '']
-    lines += report['requeue'] or ['(none)']
-    lines += ['', '## Judge Sample Keys', '']
-    lines += (judge_sample.get('keys') or ['(none)'])
-    open(mp, 'w', encoding='utf-8').write('\n'.join(lines) + '\n')
-    append_ledger(status)
-    return jp, mp
-
-
-def audit_state(report):
-    glue = report.get('glue') or {}
-    root = report.get('root')
-    rootmap = rootmap_for(root)
-    subkeys = []
-    if rootmap:
-        rm = load_json(rootmap)
-        subkeys = [s['subkey'] for s in rm.get('sub_cards', [])]
-    total = len(subkeys or report.get('keys') or [])
-    counts = glue_counts(glue.get('summary')) or {}
-    translated = counts.get('translated')
-    pending = counts.get('pending')
-    if pending is None and total:
-        translated = sum(1 for k in (subkeys or report.get('keys') or []) if merged_exists(k))
-        pending = max(0, total - translated)
-    if report.get('state'):
-        return report['state']
-    if report.get('crashed'):
-        return 'blocked'
-    if report.get('requeue'):
-        return 'needs_requeue'
-    if pending:
-        return 'partial'
-    return 'clean'
+    queue = (card_risks.get('review_queue') or {}).get('items') or []
+    if queue:
+        lines.append('Review queue:')
+        for item in queue[:10]:
+            lines.append('  %-34s score=%d high_confidence=%d risks=%s' % (
+                item['key'], item['risk_score'],
+                item.get('high_confidence_count', 0),
+                ', '.join(item.get('top_risks') or [])))
+    for target in prompt_rules.get('targets') or []:
+        for rule in target.get('missing') or []:
+            lines.append('  missing %s in %s: %s' % (
+                rule['id'], os.path.relpath(target['path'], SRC),
+                ', '.join(rule.get('missing_phrases') or [])))
+    return {
+        'argv': ['in-process', 'prompt_rule_audit'],
+        'returncode': 2 if missing_rule_count else (1 if requeue else 0),
+        'stdout': '\n'.join(lines) + '\n',
+        'stderr': '',
+        'requeue': requeue,
+        'prompt_rules': prompt_rules,
+        'card_risks': card_risks,
+        'seconds': round(time.perf_counter() - t0, 3),
+    }
 
 
 def emit_audit_event(event_type, level='info', root=None, state=None, summary='', data=None):
     append_event('audit_window', event_type, level=level, root=root,
                  state=state, summary=summary, data=data or {})
-
-
-def append_ledger(status):
-    os.makedirs(OUT, exist_ok=True)
-    compact = {
-        'recorded_at': status.get('recorded_at'),
-        'root': status.get('root'),
-        'workflow': status.get('workflow'),
-        'state': status.get('state'),
-        'workflow_keys': status.get('workflow_keys'),
-        'root_subcards': status.get('root_subcards'),
-        'translated': status.get('translated'),
-        'pending': status.get('pending'),
-        'requeue_count': status.get('requeue_count'),
-        'judge_sample_count': status.get('judge_sample_count'),
-        'judge_sample_seed': status.get('judge_sample_seed'),
-        'clean_key_count': status.get('clean_key_count'),
-        'next_action': status.get('next_action'),
-        'production_metrics': status.get('production_metrics'),
-        'crashed': status.get('crashed'),
-        'rootmap_sha256': status.get('rootmap_sha256'),
-    }
-    with open(LEDGER, 'a', encoding='utf-8') as f:
-        f.write(json.dumps(compact, ensure_ascii=False) + '\n')
-
-
-def write_reports(report, write_requeue, write_requeue_file=True):
-    os.makedirs(OUT, exist_ok=True)
-    if 'judge_sample' not in report:
-        report['judge_sample'] = build_judge_sample(
-            report,
-            report.get('judge_sample_rate', 0.10),
-            report.get('judge_sample_min', 5),
-            report.get('judge_sample_seed'))
-    json_path = os.path.join(OUT, 'audit_window.report.json')
-    md_path = os.path.join(OUT, 'audit_window.report.md')
-    rq_path = os.path.join(OUT, 'requeue.keys.txt')
-    js_path = JUDGE_SAMPLE_FILE
-    requeue_written = bool(write_requeue and write_requeue_file)
-    report['requeue_file_written'] = requeue_written
-    report.setdefault('requeue_file_preserved', bool(write_requeue and not write_requeue_file))
-    json.dump(report, open(json_path, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
-
-    lines = ['# Audit Window Report', '', 'State: `%s`' % (report.get('state') or 'audited'), '']
-    sample = report.get('judge_sample') or {}
-    metrics = report.get('production_metrics') or {}
-    lines += [
-        '| metric | value |',
-        '|---|---:|',
-        '| workflow keys | %d |' % len(report.get('keys') or []),
-        '| clean keys | %d |' % sample.get('clean_key_count', 0),
-        '| requeue keys | %d |' % len(report.get('requeue') or []),
-        '| judge sample keys | %d |' % sample.get('sample_count', 0),
-        '| judge sample seed | %s |' % (sample.get('seed') or ''),
-        '',
-    ]
-    if metrics:
-        lines += ['## Production Metrics', '']
-        lines += ['| metric | value |', '|---|---:|']
-        for key in sorted(metrics):
-            lines.append('| %s | %s |' % (key, metrics[key]))
-        lines.append('')
-    lines.append('| gate | exit | requeue |')
-    lines.append('|---|---:|---:|')
-    for name, gate in report['gates'].items():
-        lines.append('| %s | %s | %d |' % (name, gate['returncode'], len(gate.get('requeue') or [])))
-    stale = report.get('stale_check') or {}
-    if stale.get('errors'):
-        lines += ['', '## Stale Check', '']
-        lines += ['- ' + e for e in stale['errors'][:30]]
-        if len(stale['errors']) > 30:
-            lines.append('- ... %d more' % (len(stale['errors']) - 30))
-    lines += ['', '## Requeue Keys', '']
-    if report.get('state') == 'stale_artifact':
-        lines.append('(not generated: stale artifact refused before gates; existing requeue.keys.txt was preserved)')
-    else:
-        lines += report['requeue'] or ['(none)']
-    lines += ['', '## Judge Sample Keys', '']
-    lines += sample.get('keys') or ['(none)']
-    if report.get('glue'):
-        lines += ['', '## Glue', '', report['glue']['summary']]
-    open(md_path, 'w', encoding='utf-8').write('\n'.join(lines) + '\n')
-    open(js_path, 'w', encoding='utf-8').write('\n'.join(sample.get('keys') or []) + ('\n' if sample.get('keys') else ''))
-    if requeue_written:
-        open(rq_path, 'w', encoding='utf-8').write('\n'.join(report['requeue']) + ('\n' if report['requeue'] else ''))
-    status_json, status_md = write_window_status(report)
-    return json_path, md_path, rq_path if write_requeue and write_requeue_file else None, js_path, status_json, status_md
 
 
 def main():
@@ -803,6 +350,7 @@ def main():
     futures = {}
     with concurrent.futures.ThreadPoolExecutor(max_workers=4) as ex:
         futures[ex.submit(run_nws_gate, keys, protected)] = ('nws', None)
+        futures[ex.submit(run_prompt_semantic_audit, wf, protected)] = ('prompt_semantic', None)
         for name, cmd, parser in commands:
             futures[ex.submit(run_py, cmd)] = (name, parser)
         for fut in concurrent.futures.as_completed(futures):
@@ -812,7 +360,7 @@ def main():
                 res['requeue'] = parser(res['stdout'])
             gates[name] = res
 
-    for name in ['nws', 'translation', 'coverage', 'sense_dupes']:
+    for name in ['nws', 'translation', 'coverage', 'sense_dupes', 'prompt_semantic']:
         res = gates[name]
         print('\n=== %s ===' % name)
         print(res['stdout'].rstrip())
@@ -874,6 +422,8 @@ def main():
               'workflow_meta': wf_meta, 'stale_check': stale,
               'collect': collect,
               'gates': gates, 'glue': glue, 'requeue': sorted(requeue), 'crashed': crashed}
+    report['prompt_rules'] = gates.get('prompt_semantic', {}).get('prompt_rules')
+    report['semantic_risks'] = gates.get('prompt_semantic', {}).get('card_risks')
     report['judge_sample_rate'] = args.judge_sample_rate
     report['judge_sample_min'] = args.judge_sample_min
     report['judge_sample_seed'] = args.judge_sample_seed
@@ -928,3 +478,5 @@ def main():
 
 if __name__ == '__main__':
     main()
+
+

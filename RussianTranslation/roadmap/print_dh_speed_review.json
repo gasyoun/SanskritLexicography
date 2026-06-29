@@ -1,0 +1,102 @@
+[
+  {
+    "id": "P0_SPEED_FRESH_STA",
+    "priority": "P0 blocks scale/print",
+    "area": "speed",
+    "finding": "Fresh sTA Max output is required before advancing to any next root.",
+    "evidence": "root_window_status.py sTA reports stale_artifact; current rootmap has 123 sub-cards and the old workflow output has 106 keys.",
+    "recommended_fix": "Run the generated src/pilot/run_pilot_wf.opt.js in Max, save fresh wf_output.json, then run python src\\pilot\\audit_window.py wf_output.json --root sTA --write-requeue.",
+    "owner_type": "max_workflow",
+    "status": "open"
+  },
+  {
+    "id": "P0_DH_HUMAN_GATES",
+    "priority": "P0 blocks scale/print",
+    "area": "digital_humanities",
+    "finding": "Immutable edition cut is blocked by human gates.",
+    "evidence": "release_readiness.py reports blockers G5_translation_store_review_gate, G6_human_gold_set, G7_double_review_agreement, and G10_immutable_edition_cut.",
+    "recommended_fix": "Complete review decisions, human gold labels, double-review agreement, then run make_edition_cut.py and validate_release.py on release/edition_vN.",
+    "owner_type": "human_editor",
+    "status": "open"
+  },
+  {
+    "id": "P0_PRINT_ZERO_READY_ROWS",
+    "priority": "P0 blocks scale/print",
+    "area": "print",
+    "finding": "There are currently zero print-ready reviewed rows.",
+    "evidence": "preflight_remaining_gates.py reports G5 review decisions 0/217 and print-ready rows 0.",
+    "recommended_fix": "Fill reviewer CSV decisions and apply them through the existing run_batch.py validation/apply-review path.",
+    "owner_type": "human_editor",
+    "status": "open"
+  },
+  {
+    "id": "P0_QUALITY_STALE_SEMANTIC_REPORT",
+    "priority": "P0 blocks scale/print",
+    "area": "lexicographic_quality",
+    "finding": "The current semantic-risk report is useful for shape only, not final acceptance, because it reads stale wf_output.json.",
+    "evidence": "root_window_status.py marks wf_output.json stale; prompt_rule_audit.py reports risks over old sTA keys.",
+    "recommended_fix": "Rerun Max for fresh sTA and use the prompt_semantic section inside the new audit_window.report.md.",
+    "owner_type": "max_workflow",
+    "status": "open"
+  },
+  {
+    "id": "P1_SPEED_REVIEW_QUEUE",
+    "priority": "P1 slows production",
+    "area": "speed",
+    "finding": "Manual semantic review should start from ranked queues, not ad hoc card browsing.",
+    "evidence": "prompt_rule_audit.py --cards wf_output.json --review-limit 25 produces a ranked review_queue; audit_window.py writes judge_sample.keys.txt.",
+    "recommended_fix": "After each fresh window, review prompt_rule_audit.md and judge_sample.keys.txt first.",
+    "owner_type": "human_editor",
+    "status": "open"
+  },
+  {
+    "id": "P1_DH_CITATION_METADATA",
+    "priority": "P1 slows production",
+    "area": "digital_humanities",
+    "finding": "Citation metadata exists but remains provisional.",
+    "evidence": "CITATION.cff has version unreleased and a generic repository-code URL; DOI_PLAN.md says DOI follows edition_vN.",
+    "recommended_fix": "At edition cut, update CITATION.cff with final repository URL, DOI, version, and release date.",
+    "owner_type": "future_release",
+    "status": "open"
+  },
+  {
+    "id": "P1_PRINT_LAYOUT_POLICY",
+    "priority": "P1 slows production",
+    "area": "print",
+    "finding": "No validated bilingual print layout path is present yet.",
+    "evidence": "release readiness validates TEI, OntoLex, and reverse index; it does not report PDF, LaTeX, or print stylesheet output.",
+    "recommended_fix": "Define a print view from final-card fields and then add a typesetting/export path after core-tranche review.",
+    "owner_type": "future_release",
+    "status": "open"
+  },
+  {
+    "id": "P1_QUALITY_NOISY_HEURISTICS",
+    "priority": "P1 slows production",
+    "area": "lexicographic_quality",
+    "finding": "Some semantic-risk findings are review hints, not deterministic failures.",
+    "evidence": "prompt_rule_audit.py separates high-confidence mechanical risks from suspicious source-type and compression hints.",
+    "recommended_fix": "Keep noisy heuristics non-blocking and route them to ranked human review.",
+    "owner_type": "human_editor",
+    "status": "open"
+  },
+  {
+    "id": "P2_DH_INTEROP_READY",
+    "priority": "P2 improves scholarly polish",
+    "area": "digital_humanities",
+    "finding": "Interop export is a strength and should be preserved as a DH deliverable.",
+    "evidence": "release_readiness.py reports G9 ready: TEI entries 120173, OntoLex entries 120173, reverse rows 209319.",
+    "recommended_fix": "Keep TEI/OntoLex/reverse index validation in release readiness; do not substitute it for print layout.",
+    "owner_type": "future_release",
+    "status": "open"
+  },
+  {
+    "id": "P2_PRINT_FRONT_MATTER",
+    "priority": "P2 improves scholarly polish",
+    "area": "print",
+    "finding": "Front matter should be assembled after core-tranche review.",
+    "evidence": "Methodology, license, DOI plan, manuals, failures, and runbook docs exist, but no single validated print-front-matter artifact exists.",
+    "recommended_fix": "Create print front matter with editorial principles, abbreviation/sigla table, source table, QA method, license, and limitations.",
+    "owner_type": "future_release",
+    "status": "open"
+  }
+]

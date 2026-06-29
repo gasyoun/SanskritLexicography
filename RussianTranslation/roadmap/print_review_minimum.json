@@ -1,0 +1,62 @@
+[
+  {
+    "id": "P0_G5_TRANSLATION_REVIEW",
+    "priority": "P0 blocks scale/print",
+    "gate": "G5_translation_store_review_gate",
+    "human_minutes_estimate": "217 rows; estimate 2-5 minutes per row depending on edits",
+    "input_file": "src/_review_queue.csv",
+    "allowed_columns": ["reviewer_id", "decision", "edit", "notes"],
+    "validation_command": "python src\\run_batch.py validate_review && python src\\run_batch.py review_report && python src\\preflight_remaining_gates.py",
+    "done_when": "Review decisions are present for the release slice and print-ready rows are nonzero."
+  },
+  {
+    "id": "P0_G6_HUMAN_GOLD",
+    "priority": "P0 blocks scale/print",
+    "gate": "G6_human_gold_set",
+    "human_minutes_estimate": "320 rows; estimate 1-3 minutes per row for labeling",
+    "input_file": "gold/_human_gold_review.csv",
+    "allowed_columns": ["human_label", "reviewer_id", "confidence", "needs_adjudication", "human_note"],
+    "validation_command": "python src\\gold_status.py gold\\_human_gold_review.csv && python src\\gold_validate.py gold\\_human_gold_review.csv && python src\\gold_packet_verify.py gold\\_human_gold_review.csv gold\\reviewer_packets",
+    "done_when": "gold_status.py reports 320/320 complete and gold_validate.py passes."
+  },
+  {
+    "id": "P0_G7_DOUBLE_REVIEW",
+    "priority": "P0 blocks scale/print",
+    "gate": "G7_double_review_agreement",
+    "human_minutes_estimate": "80 rows; estimate 1-3 minutes per row for independent second review",
+    "input_file": "gold/_double_review_queue.csv",
+    "allowed_columns": ["second_reviewer_id", "second_human_label", "second_confidence", "second_needs_adjudication", "second_human_note"],
+    "validation_command": "python src\\gold_double_review_verify.py gold\\_double_review_queue.csv --sample-size 80 && python src\\gold_ingest_double_review.py gold\\_double_review_queue.csv gold\\double_review_labels.jsonl && python src\\gold_agreement.py",
+    "done_when": "The 80-row queue validates, labels are ingested, and an agreement report exists."
+  },
+  {
+    "id": "P0_STA_FRESH_OUTPUT_FIRST",
+    "priority": "P0 blocks scale/print",
+    "gate": "production_window_sTA",
+    "human_minutes_estimate": "Max Workflow run time plus audit; human action is save fresh wf_output.json",
+    "input_file": "src/pilot/run_pilot_wf.opt.js",
+    "allowed_columns": [],
+    "validation_command": "python src\\pilot\\root_window_status.py sTA && python src\\pilot\\audit_window.py wf_output.json --root sTA --write-requeue",
+    "done_when": "Fresh sTA output is audited; requeue.keys.txt is empty or has been rerun; judge_sample.keys.txt is handled."
+  },
+  {
+    "id": "P1_REVIEW_ORDER",
+    "priority": "P1 slows production",
+    "gate": "review_routing",
+    "human_minutes_estimate": "Saves broad manual browsing by using ranked queues first",
+    "input_file": "src/pilot/output/prompt_rule_audit.md; src/pilot/output/judge_sample.keys.txt",
+    "allowed_columns": [],
+    "validation_command": "python src\\pilot\\prompt_rule_audit.py --cards wf_output.json --review-limit 25",
+    "done_when": "Human semantic review starts from high-confidence risks and judge samples, not whole-window browsing."
+  },
+  {
+    "id": "P1_PRINT_ENTRY_SPEC",
+    "priority": "P1 slows production",
+    "gate": "print_layout_policy",
+    "human_minutes_estimate": "One editorial pass over PRINT_ENTRY_SPEC.md",
+    "input_file": "PRINT_ENTRY_SPEC.md",
+    "allowed_columns": [],
+    "validation_command": "Manual editorial sign-off; no code validation yet",
+    "done_when": "Entry shape, abbreviation display, NWS rows, Nachträge display, and provenance policy are accepted before renderer work begins."
+  }
+]

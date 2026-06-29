@@ -508,6 +508,66 @@ def test_noisy_source_type_not_requeue():
         os.remove(path)
 
 
+def test_nws_fp_suppressed():
+    """Card-level text signal (head sense has <ls>) suppresses per-sense FP.
+    Also: [NWS: OWNER] in equivalence_type counts as text signal."""
+    # Case A: _zz_pw*-style card — head has <ls>, simple senses do not.
+    pw_card = {
+        'key': 'han~~h0_zz_pw00',
+        'card': {
+            'key1': 'han~~h0_zz_pw00',
+            'iast': 'han',
+            'records': [{
+                'h': '1',
+                'grammar': 'verb',
+                'senses': [
+                    {'tag': 'head', 'german': '<ls>R. ed. Bomb. 4,24,33</ls>',
+                     'russian': 'введение', 'equivalence_type': 'explanatory',
+                     'source_type': 'attested', 'stratum': '', 'differentia': ''},
+                    {'tag': '1', 'german': '{%schlagen%}',
+                     'russian': 'бить', 'equivalence_type': 'equivalent',
+                     'source_type': 'attested', 'stratum': '', 'differentia': ''},
+                    {'tag': '2', 'german': '{%abschlagen%}',
+                     'russian': 'отбивать', 'equivalence_type': 'equivalent',
+                     'source_type': 'attested', 'stratum': '', 'differentia': ''},
+                ],
+            }],
+        },
+    }
+    # Case B: NWS sense — [NWS: OWNER] in equivalence_type only.
+    nws_card = {
+        'key': 'a~~h0_zz_nws00',
+        'card': {
+            'key1': 'a~~h0_zz_nws00',
+            'iast': 'a',
+            'records': [{
+                'h': '1',
+                'grammar': '',
+                'senses': [{
+                    'tag': 'NWS',
+                    'german': '{#a#} [Gen , unsp] ohne Band',
+                    'russian': 'без оков',
+                    'equivalence_type': '[NWS: Graßmann 1873 (1996) : 81]',
+                    'source_type': 'attested',
+                    'stratum': '',
+                    'differentia': '',
+                }],
+            }],
+        },
+    }
+    with tempfile.NamedTemporaryFile('w', encoding='utf-8', suffix='.json', delete=False) as f:
+        path = f.name
+        json.dump({'results': [pw_card, nws_card]}, f, ensure_ascii=False)
+    try:
+        report = audit_cards(path, review_limit=5)
+        ids = {risk['id'] for card in report['cards'] for risk in card['risks']}
+        if 'suspicious_attested_without_text_signal' in ids:
+            fail('F-gate-nws-fp: suspicious_attested_without_text_signal fired on '
+                 'a card with card-level text signal or NWS owner citation')
+    finally:
+        os.remove(path)
+
+
 def test_stale_refusal_preserves_requeue():
     os.makedirs(OUT, exist_ok=True)
     requeue_path = os.path.join(OUT, 'requeue.keys.txt')
@@ -558,6 +618,7 @@ def main():
         test_german_connective_fix,
         test_semantic_review_prioritizer,
         test_noisy_source_type_not_requeue,
+        test_nws_fp_suppressed,
         test_stale_refusal_preserves_requeue,
         test_release_manifest_hash_validation,
     ]

@@ -126,6 +126,70 @@ _LEX_ADJ = {'adj.', 'm.f.n.', 'm.f.', 'f.n.'}
 _LEX_MN = {'m.n.'}
 
 
+# ---------------------------------------------------------------------------
+# vidyut subanta paradigm (display only — lazy import so the core annotation
+# path has no hard vidyut dependency). Reuses the WhitneyRoots design: vidyut is
+# the morphology engine, rendered SLP1→IAST via vidyut.lipi (no new dependency).
+# ---------------------------------------------------------------------------
+# lex tag → vidyut Linga (representative gender for the paradigm)
+_LEX_LINGA = {
+    'm.': 'Pum', 'mm.': 'Pum',
+    'f.': 'Stri', 'fem.': 'Stri', 'femin.': 'Stri', 'ff.': 'Stri',
+    'n.': 'Napumsaka', 'neutr.': 'Napumsaka',
+    'm.n.': 'Pum', 'm.f.': 'Pum', 'f.n.': 'Stri', 'm.f.n.': 'Pum',
+    'adj.': 'Pum',                      # adjectives decline in all genders; show masc.
+}
+# (vibhakti label, vidyut Vibhakti name)
+_VIBHAKTI = [
+    ('nom', 'Prathama'), ('acc', 'Dvitiya'), ('ins', 'Trtiya'),
+    ('dat', 'Caturthi'), ('abl', 'Panchami'), ('gen', 'Sasthi'),
+    ('loc', 'Saptami'), ('voc', 'Sambodhana'),
+]
+_VACANA = [('sg', 'Eka'), ('du', 'Dvi'), ('pl', 'Bahu')]
+
+
+def paradigm_for(slp1, lex, scheme='iast'):
+    """Generate the subanta declension for an SLP1 stem via vidyut-prakriya.
+
+    Returns {vibhakti: {sg, du, pl}} with forms rendered in `scheme` ('iast' or
+    'slp1'), or None if the gender is unsupported or vidyut is unavailable. The
+    gender is representative (adjectives shown in the masculine).
+    """
+    linga_name = _LEX_LINGA.get((lex or '').strip())
+    if not slp1 or linga_name is None:
+        return None
+    try:
+        from vidyut import prakriya as P
+        from vidyut import lipi
+    except Exception:
+        return None
+
+    def render(forms):
+        if scheme == 'slp1':
+            return forms
+        return [lipi.transliterate(f, lipi.Scheme.Slp1, lipi.Scheme.Iast) for f in forms]
+
+    v = P.Vyakarana()
+    linga = getattr(P.Linga, linga_name)
+    # Feminine long-vowel stems (ā/ī/ū, the nyāp class) decline via vidyut's
+    # nyap pratipadika; basic() wrongly adds a visarga (senā → *senāḥ). All other
+    # stems (a/i/u masc-neut, consonant) use basic(). Verified senā/nadī/vadhū.
+    if linga_name == 'Stri' and slp1[-1:] in ('A', 'I', 'U'):
+        pp = P.Pratipadika.nyap(slp1)
+    else:
+        pp = P.Pratipadika.basic(slp1)
+    table = {}
+    for vlabel, vname in _VIBHAKTI:
+        cells = {}
+        for nlabel, nname in _VACANA:
+            pada = P.Pada.Subanta(pp, linga,
+                                  getattr(P.Vibhakti, vname), getattr(P.Vacana, nname))
+            forms = sorted({x.text for x in v.derive(pada)})
+            cells[nlabel] = ' / '.join(render(forms)) if forms else ''
+        table[vlabel] = cells
+    return {'gender': lex, 'linga': linga_name, 'scheme': scheme, 'cases': table}
+
+
 def _stem_class(slp1, lex):
     """Detect stem class from SLP1 final phoneme and lex tag."""
     if lex in _INDECL_POS:
@@ -156,13 +220,14 @@ def _irregularities(slp1, lex, stem_class, compound_members):
     return flags
 
 
-def nominal_grammar_for(slp1, lex, pos=None):
+def nominal_grammar_for(slp1, lex, pos=None, paradigm=False):
     """Return the nominal grammar block for an SLP1 headword.
 
     Args:
         slp1: SLP1-encoded headword key (k1 from PWG).
         lex:  <lex> tag from PWG, e.g. 'm.', 'f.', 'n.', 'adj.', 'adv.', ...
         pos:  optional override POS string (unused, reserved for DCS CoNLL-U input).
+        paradigm: if True, attach a vidyut-generated subanta declension table.
 
     Returns dict with keys:
         slp1, gender, stem_class, declension_sections, paradigm_section,
@@ -195,20 +260,65 @@ def nominal_grammar_for(slp1, lex, pos=None):
             '+ MW k2 compound segmentation (csl-orig/mw.txt, read-only)'
         ),
     }
+    if paradigm:
+        result['paradigm'] = paradigm_for(slp1, lex)
     return result
+
+
+def selftest():
+    """Lock the stem-class detector, compound join, and vidyut paradigm rule."""
+    # stem class from SLP1 final
+    cases = [
+        ('agni', 'm.', 'i-stem'), ('senA', 'f.', 'ā-stem'),
+        ('deva', 'm.', 'a-stem'), ('nadI', 'f.', 'ī-stem'),
+        ('manas', 'n.', 'consonant-stem'), ('pitf', 'm.', 'ṛ-stem'),
+        ('ca', 'adv.', 'indeclinable'),
+    ]
+    for slp1, lex, want in cases:
+        got = nominal_grammar_for(slp1, lex)['stem_class']
+        assert got == want, 'stem_class(%s,%s)=%s want %s' % (slp1, lex, got, want)
+    # compound join
+    rec = nominal_grammar_for('aMSakaraRa', 'm.')
+    assert rec['compound_members'] == ['aMSa', 'karaRa'], rec['compound_members']
+    # vidyut paradigm — feminine long-vowel must use nyap (senā not *senāḥ)
+    p = paradigm_for('senA', 'f.')
+    if p is not None:                       # skip if vidyut unavailable
+        assert p['cases']['nom']['sg'] == 'senā', p['cases']['nom']
+        assert paradigm_for('agni', 'm.')['cases']['nom']['sg'] == 'agniḥ'
+        assert paradigm_for('ca', 'adv.') is None
+    print('selftest OK')
 
 
 def main():
     args = sys.argv[1:]
+    if '--selftest' in args:
+        selftest()
+        return
+    want_paradigm = '--paradigm' in args
     if '--show' in args:
         idx = args.index('--show')
-        if idx + 2 > len(args):
-            print('Usage: --show <SLP1> <lex_tag>')
+        rest = [a for a in args[idx + 1:] if not a.startswith('--')]
+        if len(rest) < 1:
+            print('Usage: --show <SLP1> <lex_tag> [--paradigm]')
             return
-        slp1 = args[idx + 1]
-        lex = args[idx + 2] if idx + 2 < len(args) else 'm.'
-        rec = nominal_grammar_for(slp1, lex)
+        slp1 = rest[0]
+        lex = rest[1] if len(rest) > 1 else 'm.'
+        rec = nominal_grammar_for(slp1, lex, paradigm=want_paradigm)
         print(json.dumps(rec, ensure_ascii=False, indent=2))
+        return
+    if '--paradigm' in args:
+        idx = args.index('--paradigm')
+        rest = [a for a in args[idx + 1:] if not a.startswith('--')]
+        if len(rest) < 1:
+            print('Usage: --paradigm <SLP1> <lex_tag>')
+            return
+        slp1 = rest[0]
+        lex = rest[1] if len(rest) > 1 else 'm.'
+        tab = paradigm_for(slp1, lex)
+        if tab is None:
+            print('no paradigm (unsupported gender %r or vidyut unavailable)' % lex)
+            return
+        print(json.dumps(tab, ensure_ascii=False, indent=2))
         return
     print(__doc__)
 
