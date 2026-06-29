@@ -101,3 +101,38 @@ depth/cost trade-off. (c) one failed batch re-does all its cards (vs one card).
 Recommended next step before scaling Stage-C roots: fold batching + masking into the
 production `gen_opt_harness.py` (size-budgeted batches, keep the per-card schema rich
 enough), and re-measure $/card on a full mixed root.
+
+## Integration — `gen_opt_harness2.py` (batched + masked, canonical output)
+
+Built [`src/pilot/gen_opt_harness2.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/gen_opt_harness2.py):
+reuses the FULL production `CONV`+`TR` prompt (all HARD RULES) + the rich
+`FINAL_CARD_SCHEMA`, masks each card (pwg_mask), bin-packs cards into batches, and
+**restores `{Tn}` to source markup inside the JS** so the returned object is already a
+canonical `wf_output.json` — `audit_window.py` consumes it unchanged, no new operator step.
+
+A/B on **8 mixed gam cards** (1 dense `anu` + 7 small), production 1-agent/card vs opt2 1 batch:
+
+| run | input | cache-create | cache-read | output (est) | **$ cost** |
+|---|---:|---:|---:|---:|---:|
+| production (8×1) | 45 | 370,139 | 409,910 | 14,075 | **$1.722** |
+| opt2 (1 batch) | 3 | 34,847 | 0 | 2,855 | **$0.173** |
+
+**−90 % cost.** Verified: **0 leftover `{Tn}`, markup fidelity 8/8** (restored `<ls>`/`{#..#}`
+counts match source), quality at parity (semantic-risk counts identical except +1 on each of
+the 2 dense cards; Russian reads clean).
+
+**Measurement caveat (important):** the transcript's `usage.output_tokens` *under-reports*
+structured-output runs — the generated card JSON rides in a `StructuredOutput` tool-call whose
+args aren't counted as output (opt2 logged `output_tokens=40` for ~2.8 k real tokens).
+[`parse_workflow_cost.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/parse_workflow_cost.py)
+now estimates true output from the tool-call char size (÷4). The dominant cost is `cache_create`
+of the repeated prompt, which IS logged reliably — that's where the −90 % is real and robust.
+
+**Production hardening shipped:** model `key1` is inconsistent (sometimes the headword, not the
+subkey), so the harness maps cards **positionally** (requires `cards.length === batch.length`,
+else retry) and runs a **post-restore fidelity guard** — if a card's restored `<ls>`/`{#..#}`
+counts don't match its source, it is nulled → deterministic requeue, never emitted garbled.
+
+**Status:** validated, canonical, −90 % cost, quality-parity. Open before full rollout: tune
+batch budget for dense roots (depth vs cost); run a full mixed root end-to-end through
+`audit_window.py`; wire `gen_opt_harness2.py` into `RUN_FREQ_MAX.md` as the default generator.
