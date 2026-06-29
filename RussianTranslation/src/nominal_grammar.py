@@ -241,6 +241,17 @@ _GENDER_POMETA = {
 # udātta-bearing strong/weak gradation consonant subtypes
 _GRADATION_SUBTYPES = {'8n', '8t', '8c'}
 
+# Irregularity flags that are NORMAL class membership, not a deviation → never set °.
+_NORMAL_CLASS_FLAGS = ('tri_gender_adj', 'm_n_common', 'ā_stem_f')
+
+
+def _is_deviation(flag):
+    """True only for a GENUINE paradigm deviation (defective/anomalous/exception),
+    not normal-class markers or the compound flag (which +N already encodes)."""
+    if flag.startswith('compound:'):
+        return False
+    return not any(flag.startswith(n) for n in _NORMAL_CLASS_FLAGS)
+
 
 def _consonant_subtype(slp1):
     """Letter subtype for a consonant stem, by SLP1 final cluster (8n/8i/8s/8t/8c/8√)."""
@@ -300,8 +311,11 @@ def zaliznyak_index(slp1, lex, accented=None, stem_class=None,
     flags = ''
     if tnum in _GRADATION_SUBTYPES:
         flags += '*'                                   # strong/weak gradation
-    if irregularities:
-        flags += '°'                                   # deviation / irregular
+    # ° = GENUINE deviation only. Normal-class markers (tri_gender_adj, ā_stem_f,
+    # m_n_common) and the compound flag are NOT deviations — they are already encoded
+    # by the gender помета / +N, so they must not light up ° (else ° is near-universal).
+    if any(_is_deviation(f) for f in (irregularities or ())):
+        flags += '°'
     if compound_members:
         flags += '+%d' % len(compound_members)         # N-member compound
 
@@ -383,7 +397,8 @@ def selftest():
         ('deva', 'm.', 'deva/', 'm·1b'),      # oxytone a-stem (devá)
         ('aMSa', 'm.', 'a/MSa', 'm·1a'),      # barytone a-stem (áṃśa)
         ('agni', 'm.', 'agni/', 'm·3b'),      # oxytone i-stem (agní)
-        ('senA', 'f.', 'senA/', 'f·2b°'),     # ā-stem f (°: ā_stem_f flag)
+        ('senA', 'f.', 'senA/', 'f·2b'),      # ā-stem f — NORMAL class, no ° (ā_stem_f is not a deviation)
+        ('BU', 'f.', None, 'f·6°'),           # monosyllabic ū-stem → genuine deviation °
         ('rAjan', 'm.', None, 'm·8n*'),       # an-stem, gradation
         ('manas', 'n.', None, 'n·8s'),        # as-stem
         ('ca', 'adv.', None, 'ind·0'),        # indeclinable
