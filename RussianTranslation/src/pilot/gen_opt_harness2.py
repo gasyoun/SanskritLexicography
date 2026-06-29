@@ -26,9 +26,42 @@ import sys
 sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
 
-from window_common import INP, REPO, input_paths, load_json, read_text, rootmap_path, sha256_file, write_text
+from window_common import INP, REPO, SRC, input_paths, load_json, read_text, rootmap_path, sha256_file, write_text
 import pwg_mask
+sys.path.insert(0, SRC)
 from safe_filename import safe_name
+from whitney_grammar import grammar_for
+
+
+def grammar_text(root):
+    """Compact, token-light grammar block for the root (Whitney), injected ONCE per run.
+    The whole root's sub-cards share its conjugation, so this is far cheaper than a
+    per-portrait block. Empty string if the root has no Whitney record (e.g. non-roots)."""
+    recs = grammar_for(root)
+    if not recs:
+        return ''
+    lines = ['=== GRAMMAR (Whitney) — the root\'s conjugation; use to inform grammatical '
+             'notes and FLAG irregular/defective forms; NEVER let grammar override a corpus- '
+             'or German-attested sense ===']
+    amb = len(recs) > 1
+    for r in recs:
+        hom = ('/%s' % r['homonym']) if r['homonym'] else ''
+        forms = ', '.join('%s' % f['form'] for f in r['attested_forms'][:6])
+        secs = ', '.join('%s §%s' % (k, v) for k, v in list(r['section_refs'].items())[:8])
+        lines.append('root %s%s (Whitney no.%s): class %s%s, PPP %s, periods %s'
+                     % (r['root_iast'], hom, r['whitney_no'], r['class'],
+                        ' [class uncertain]' if r['class_uncertain'] else '', r['ppp'],
+                        '/'.join(r['period_tags'])))
+        if r['irregularities']:
+            lines.append('  irregularities: %s' % '; '.join(r['irregularities']))
+        if forms:
+            lines.append('  corpus-attested forms: %s' % forms)
+        if secs:
+            lines.append('  Whitney §§ per form-category: %s' % secs)
+    if amb:
+        lines.append('(NOTE: %d Whitney homonyms — pick the one matching the sense; '
+                     'do not conflate.)' % len(recs))
+    return '\n'.join(lines) + '\n\n'
 
 
 def die(msg):
@@ -149,6 +182,7 @@ export const meta = {
 
 const CONV_TR = %(tr)s
 const PREAMBLE = %(preamble)s
+const GRAMMAR = %(grammar)s
 const CARDS_SCHEMA = %(schema)s
 const BATCHES = %(batches)s
 const INPUTS = %(inputs)s
@@ -183,7 +217,7 @@ async function translateBatch(batch, bi) {
   const resolved = {}
   let pending = batch.slice()
   for (let attempt = 0; attempt < 2 && pending.length; attempt++) {
-    const prompt = PREAMBLE + CONV_TR + pending.map(cardBlock).join('')
+    const prompt = PREAMBLE + GRAMMAR + CONV_TR + pending.map(cardBlock).join('')
     const res = await agent(prompt, { label: 'b' + bi + '[' + pending.length + ']' + (attempt ? '(retry)' : ''), phase: 'Translate', schema: CARDS_SCHEMA, model: 'sonnet', tools: [] })
     if (res && Array.isArray(res.cards)) {
       pending.forEach((k, i) => { const c = accept(res.cards[i], k); if (c) resolved[k] = c })
@@ -198,6 +232,7 @@ return { meta: META, results: out }
 """ % {
         'root': root, 'tr': json.dumps(tr, ensure_ascii=True),
         'preamble': json.dumps(MASK_PREAMBLE, ensure_ascii=True),
+        'grammar': json.dumps(grammar_text(root), ensure_ascii=True),
         'schema': json.dumps(batch_schema, ensure_ascii=True),
         'batches': json.dumps(batches), 'inputs': json.dumps(inputs, ensure_ascii=True),
         'phmaps': json.dumps(phmaps, ensure_ascii=True), 'meta': json.dumps(meta, ensure_ascii=True),
