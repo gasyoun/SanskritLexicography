@@ -65,3 +65,24 @@ from the lexicon.
 **Open improvement:** carry the top loci (`work:passage`) into the portrait's
 `corpus_synonyms` so each card can cite its corpus source inline — then step 2 becomes
 unnecessary. Tracked as a follow-up.
+
+## Renou register layer (attestation-level)
+
+The corpus stores no Renou register tag, but its `genre` resolves onto the canonical
+20-register lattice (`renou_register.REGISTERS`). [`src/renou_corpus_map.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/renou_corpus_map.py)
+bridges them — it **reuses** `renou_register._genre_register` and adds only a work-slug
+override (RV vs AV Saṃhitā, Buddhist kāvya) and a supplement for corpus-only genres
+(Upaniṣad, commentary, darśana, tantra, kāma). Every attestation thus gets an
+*attestation-level* register (distinct from the *headword-level* `*.renou.jsonl`).
+
+- Per-meaning register: `python src/corpus_provenance.py <form> --renou` tags each rendering
+  with its register(s) and prints a register profile for the query. E.g. `gamemahi` →
+  «соединимся» [`atharva`] (AV 1.4), «повстречаться» [`rgveda`] (RV 81.2).
+- Corpus-wide register count stats: `python src/renou_corpus_map.py`. Over all 1,091,528
+  aligned pairs: **epic 61.0 %, rgveda 14.4 %, atharva 5.6 %, kavya 3.9 %, smrti 3.6 %,
+  upanisad 3.5 %, karika 2.6 %, katha 2.0 %, tantra 1.2 %, bhasya 1.2 %, bauddha 1.1 %**
+  (full coverage — no unmapped genres).
+
+This makes "which register does this Russian meaning belong to?" answerable per sense,
+grounded in real parallel-corpus usage rather than the dictionary's `<ls>` sigla — a layer
+to build register-distribution / register×period analyses on.

@@ -13,14 +13,21 @@ editor can see WHY a given Russian gloss is there before changing it.
   python src/corpus_provenance.py --root gam          all SLP1 forms containing 'gam'
   python src/corpus_provenance.py --ru соединимся      reverse: which forms/texts gave it
   python src/corpus_provenance.py <form> --limit 8     cap attestations shown per rendering
+  python src/corpus_provenance.py <form> --renou        also tag each rendering's Renou register(s)
+                                                        + a register profile for the whole query
+
+Corpus-wide register count stats: python src/renou_corpus_map.py
 """
 import json
 import os
 import sys
-from collections import defaultdict
+from collections import defaultdict, Counter
 
 sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from renou_corpus_map import to_register
 
 LEX = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'corpus_lexicon.jsonl')
 
@@ -47,6 +54,9 @@ def main():
     limit = 6
     if '--limit' in args:
         i = args.index('--limit'); limit = int(args[i + 1]); del args[i:i + 2]
+    show_renou = '--renou' in args
+    if show_renou:
+        args.remove('--renou')
 
     if args[0] == '--root':
         needle = args[1]
@@ -80,10 +90,24 @@ def main():
         a, b = key
         print('%-22s -> %-26s  (n=%d)' % (a, b, len(recs)))
         print('    period(s): %s' % '; '.join(periods))
+        if show_renou:
+            regs = Counter(to_register(x.get('genre'), x.get('work')) for x in recs)
+            print('    renou register(s): %s' % ', '.join(
+                '%s×%d' % (r, c) for r, c in regs.most_common()))
         shown = works[:limit]
         print('    source(s): %s%s' % (', '.join(shown),
               '  …+%d more' % (len(works) - limit) if len(works) > limit else ''))
         print()
+
+    if show_renou:
+        allregs = Counter()
+        for recs in groups.values():
+            for x in recs:
+                allregs[to_register(x.get('genre'), x.get('work'))] += 1
+        tot = sum(allregs.values())
+        print('--- Renou register profile (all %d attestations in this query) ---' % tot)
+        for r, c in allregs.most_common():
+            print('  %-10s %5d  %4.1f%%' % (r, c, 100 * c / tot))
 
 
 if __name__ == '__main__':
