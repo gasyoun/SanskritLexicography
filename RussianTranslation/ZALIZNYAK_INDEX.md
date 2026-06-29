@@ -88,8 +88,18 @@ can't." Both halves of the data already exist here:
   accent-position) → per-case accent pattern (strong / middle / weakest), i.e. the Zaliznyak
   a–f scheme. This is the accent analog of the existing stem-class→§ concordance.
 - Join each word's accent position (`key2` `/`) with its stem-class rule → assign `a`–`f`.
-- Validate the generated accent paradigm against accented Vedic text. **Validation set identified
-  (2026-06-29): VedaWeb** ([vedaweb.uni-koeln.de](https://vedaweb.uni-koeln.de), GitHub
+- Validate the generated accent paradigm against accented Vedic text. **Validation set PROBED +
+  CONFIRMED (2026-06-29): VedaWeb 2.0** — API live at `vedaweb.uni-koeln.de/api` (FastAPI, OpenAPI
+  at `/api/openapi.json`). `POST /api/search {"type":"quick","q":"<lemma>"}` returns hits with
+  per-resource highlights; the **accented word-split** comes from the Casaretto et al. (2025)
+  annotation resource `66695e4a14f6d337f7788740` (e.g. searching `agni` → RV 6.59.3 highlight
+  `… índrā; nú; agnī́; ávasā; ihá; vajríṇā; vayám; devā́` — udātta-marked, position-aligned).
+  Companion layers at the same locations: lemmatization `679b7da2d5b833a67f64b3f7`, Scarlata–Widmer
+  accented text `66695c4b14f6d337f778873f`, Lubotsky padapatha `668ba4460b5942c9849a8684`. Bulk:
+  `GET /api/resources/{id}/export`. So per lemma, collect all attested inflected+accented forms,
+  bucket by the Casaretto morphology (case/number), and compare to the generated paradigm — turnkey.
+  (Build note: the older legacy `/rigveda/api/search` is superseded by this 2.0 platform.)
+- _(superseded validation note retained for context): VedaWeb_ ([vedaweb.uni-koeln.de](https://vedaweb.uni-koeln.de), GitHub
   [VedaWebProject/vedaweb](https://github.com/VedaWebProject/vedaweb)) — the accented Rigveda with
   per-word UZH morphology (lemma/case/number/gender) and accent-sensitive search
   (`rigveda/api/search`, `accents` param; ~10,522 stanzas), **CC BY 4.0**, and already linked to
