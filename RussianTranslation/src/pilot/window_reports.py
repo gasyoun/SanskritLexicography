@@ -110,6 +110,9 @@ def next_action_for(state, report, pending):
         return 'Regenerate optimized harness for %s and rerun Max Workflow.' % root
     if report.get('crashed'):
         return 'Inspect crashed gates: %s.' % ', '.join(report['crashed'])
+    if state == 'transient_only':
+        return ('All requeue keys are transient nulls (rate-limit dropouts), no content defect. '
+                'Re-run ONLY requeue.transient.keys.txt at low concurrency (<=3-wide), then rerun audit_window.py.')
     if report.get('requeue'):
         return 'Run python src\\pilot\\requeue_from_audit.py %s, rerun Max Workflow, then rerun audit_window.py.' % root
     if pending:
@@ -131,6 +134,8 @@ def append_ledger(status):
         'translated': status.get('translated'),
         'pending': status.get('pending'),
         'requeue_count': status.get('requeue_count'),
+        'requeue_transient_count': status.get('requeue_transient_count'),
+        'requeue_defect_count': status.get('requeue_defect_count'),
         'judge_sample_count': status.get('judge_sample_count'),
         'judge_sample_seed': status.get('judge_sample_seed'),
         'clean_key_count': status.get('clean_key_count'),
@@ -160,7 +165,10 @@ def write_window_status(report):
     elif report['crashed']:
         state = 'blocked'
     elif report['requeue']:
-        state = 'needs_requeue'
+        # All-transient (only null cards, no gate defect) is a cheap re-run, not rework.
+        # Guard on key presence so pre-split reports stay 'needs_requeue'.
+        state = ('transient_only' if 'requeue_defect' in report and not report['requeue_defect']
+                 else 'needs_requeue')
     elif pending:
         state = 'partial'
     else:
@@ -186,6 +194,8 @@ def write_window_status(report):
         'pending': pending,
         'requeue_count': len(report['requeue']),
         'requeue_keys': report['requeue'],
+        'requeue_transient_count': len(report.get('requeue_transient') or []),
+        'requeue_defect_count': len(report.get('requeue_defect') or []),
         'judge_sample': judge_sample,
         'judge_sample_count': judge_sample.get('sample_count', 0),
         'judge_sample_seed': judge_sample.get('seed'),
@@ -302,6 +312,8 @@ def audit_state(report):
     if report.get('crashed'):
         return 'blocked'
     if report.get('requeue'):
+        if 'requeue_defect' in report and not report['requeue_defect']:
+            return 'transient_only'
         return 'needs_requeue'
     if pending:
         return 'partial'
@@ -407,6 +419,13 @@ def write_reports(report, write_requeue, write_requeue_file=True):
     if requeue_written:
         with open(requeue_path, 'w', encoding='utf-8') as f:
             f.write('\n'.join(report['requeue']) + ('\n' if report['requeue'] else ''))
+        # Split files so a cheap transient re-run never triggers expensive defect rework.
+        for fname, keys_ in (('requeue.transient.keys.txt', report.get('requeue_transient')),
+                             ('requeue.defect.keys.txt', report.get('requeue_defect'))):
+            if keys_ is None:
+                continue
+            with open(os.path.join(OUT, fname), 'w', encoding='utf-8') as f:
+                f.write('\n'.join(keys_) + ('\n' if keys_ else ''))
     status_json, status_md = write_window_status(report)
     return (json_path, md_path,
             requeue_path if write_requeue and write_requeue_file else None,

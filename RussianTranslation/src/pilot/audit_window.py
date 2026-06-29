@@ -405,11 +405,13 @@ def main():
                   'seconds': res.get('seconds')})
 
     requeue = set(null_cards)
+    gate_requeue = set()
     crashed = []
     for name, gate in gates.items():
-        requeue.update(gate.get('requeue') or [])
+        gate_requeue.update(gate.get('requeue') or [])
         if gate['returncode'] not in (0, 1):
             crashed.append(name)
+    requeue.update(gate_requeue)
     if glue and glue['returncode'] != 0:
         crashed.append('glue')
     if glue and not glue.get('nested_exists'):
@@ -422,6 +424,12 @@ def main():
               'workflow_meta': wf_meta, 'stale_check': stale,
               'collect': collect,
               'gates': gates, 'glue': glue, 'requeue': sorted(requeue), 'crashed': crashed}
+    # Split the requeue: transient = card came back null (rate-limit/dropout -> cheap re-run
+    # at low concurrency); defect = a gate flagged real content on a card that DID translate
+    # (needs rework). A null key fails coverage etc. only because it is absent, so it is
+    # transient, never a defect. PROCESS_AUDIT_2026-06-29.md rec 3/10.
+    report['requeue_transient'] = sorted(set(null_cards))
+    report['requeue_defect'] = sorted(gate_requeue - set(null_cards))
     report['prompt_rules'] = gates.get('prompt_semantic', {}).get('prompt_rules')
     report['semantic_risks'] = gates.get('prompt_semantic', {}).get('card_risks')
     report['judge_sample_rate'] = args.judge_sample_rate
@@ -462,6 +470,8 @@ def main():
     print('cards        : %d' % len(keys))
     print('requeue      : %d%s' % (len(report['requeue']),
           '' if not report['requeue'] else ' (' + ', '.join(report['requeue'][:12]) + (', ...' if len(report['requeue']) > 12 else '') + ')'))
+    print('  transient  : %d (null cards — cheap re-run at low concurrency)' % len(report.get('requeue_transient') or []))
+    print('  defect     : %d (real content failures — needs rework)' % len(report.get('requeue_defect') or []))
     print('clean keys   : %d' % report['judge_sample']['clean_key_count'])
     print('judge sample : %d (seed %s)' % (report['judge_sample']['sample_count'], report['judge_sample']['seed']))
     print('report json  : %s' % os.path.relpath(json_path, SRC))
