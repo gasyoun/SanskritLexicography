@@ -128,3 +128,24 @@ run artificially cheap.
 **NWS-gating** edit is safe by mechanism (it cannot cause markup nulls; the NWS cards
 translated fine) and remains a candidate, but its cost win was not isolated/measured here. To
 pursue it: a clean **sequential** A/B of *NWS-gating-only* (full rule 3 kept) vs full.
+
+## ROUND 2 — NWS-gating-only, SEQUENTIAL (2026-06-29) — also not worth it
+
+Ran full (cold) then nws-gate (cold) one-at-a-time (no parallel cache sharing):
+
+| arm (cold) | cache_create | nulls/24 | risks/card | $ cost |
+|---|---:|---:|---:|---:|
+| full | 210,662 | 0 | 6.50 | **$1.58** |
+| nws-gate (rule 3 kept) | 180,688 | 0 | 6.00 | **$1.67** |
+
+**nws-gate is SAFE** (0 nulls, equal quality — confirms the round-1 nulls were the rule-3
+compression, not the NWS-gating) **but gives no net cost benefit** (slightly higher $, swung by
+2 random retries; the ~461-tok × 3-batch NWS saving is below the noise floor). Decision rule
+(≥15% cheaper) not met.
+
+**Root finding: the TR is not the cost lever.** Per-batch `cache_create` ≈ 42k tokens is
+dominated by the **inlined card content** (masked skeletons + portraits, esp. the dense `pw`
+cards). TR (2,554) + schema (1,200) + NWS block (461) are a small slice — trimming them is
+lost in run-to-run noise. **Keep the full TR.** If more cost reduction is wanted, the lever is
+the **card content** (dense-card handling / portrait inlining / schema), not the prompt — a
+separate optimization, separately tested.
