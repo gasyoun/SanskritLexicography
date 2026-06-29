@@ -5,6 +5,20 @@ candidates) and **corpus** (parallel verse + Renou register). This adds the **gr
 reusing the existing [WhitneyRoots](https://github.com/gasyoun/WhitneyRoots) crosswalk
 (Grammar × Corpus × MW/Apte, 24k FAIR triples) — **not** a fresh Whitney/Wiki scrape.
 
+> **This file is the hub for the structured grammar layer.** Map of the parts (all built,
+> all committed; the layer is **structured data, NOT a translation injection** — see the A/B
+> verdict below):
+>
+> | Concern | Where |
+> |---|---|
+> | Root grammar (class/PPP/§§/exceptions) | [`src/whitney_grammar.py`](src/whitney_grammar.py) → §"The root layer" below |
+> | Nominal grammar (stem class, §§, paradigm, compounds) | [`src/nominal_grammar.py`](src/nominal_grammar.py), [`src/mw_compounds.py`](src/mw_compounds.py) → §"Non-root headwords" |
+> | Compact inflection index `G·T S F` | [`ZALIZNYAK_INDEX.md`](ZALIZNYAK_INDEX.md) |
+> | Reverse dictionary + per-word FAIR dataset | [`src/reverse_index.py`](src/reverse_index.py), `headword_index.tsv` |
+> | Declension display (vidyut table) | `nominal_grammar.py --table`, `reverse_index.py --show` |
+> | Should grammar go INTO translation? **No.** | [`NOMINAL_GRAMMAR_AB.md`](NOMINAL_GRAMMAR_AB.md) + [`NOMINAL_GRAMMAR_AB_DETAIL.md`](NOMINAL_GRAMMAR_AB_DETAIL.md) |
+> | Accent a–f axis (unblocked, not built) | `ZALIZNYAK_INDEX.md` §"Vedic accent mobility" + [VedaWeb](https://vedaweb.uni-koeln.de) |
+
 ## What it is
 
 - [`src/whitney_grammar.py`](src/whitney_grammar.py) consumes WhitneyRoots'
