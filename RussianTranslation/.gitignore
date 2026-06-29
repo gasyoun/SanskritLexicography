@@ -1,11 +1,26 @@
 
-# Generated per-root pwg_ru harnesses (derived from run_pilot_wf.js; inlined inputs)
+# Generated per-root pwg_ru harnesses (derived from gen_opt_harness2.py et al.; inlined inputs)
 src/pilot/run_pilot_wf.opt.js
+src/pilot/run_pilot_wf.opt2.js
+src/pilot/run_pilot_wf.batched.js
+src/pilot/run_pilot_wf.sc.js
+src/pilot/run_pilot_wf.sc_da_a.js
+src/pilot/run_pilot_wf.sc_da_b.js
+src/pilot/run_pilot_wf.tlonly.js
 src/pilot/run_pilot_wf.run.js
 src/pilot/run_pilot_wf.headtest.js
 
-# Max workflow run output (A/B transcript artifact, not a deliverable)
+# Max workflow run output and A/B transcript artifacts (not deliverables)
 wf_output.json
+wf_output.*.json
+wf_after*.json
+wf_before*.json
+wf_opt*.json
+wf_prod*.json
+
+# Operator-generated key list files (local requeue/split artifacts)
+da_keys_a.txt
+da_keys_b.txt
 
 # Generated status/dashboard snapshots
 release/gate_status_snapshot.json
@@ -18,6 +33,8 @@ src/pilot/output/window_ledger.jsonl
 src/pilot/output/dashboard_events.jsonl
 src/pilot/output/requeue.keys.txt
 src/pilot/output/judge_sample.keys.txt
+src/pilot/output/prompt_rule_audit.json
+src/pilot/output/prompt_rule_audit.md
 
 # Local API retry ledger
 src/corpus_lexicon.failures.jsonl

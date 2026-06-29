@@ -14,6 +14,50 @@
 
 ---
 
+## Current production architecture (2026-06-28)
+
+The historical component notes below describe the design path. The live
+operator path is now the frequency-window Max workflow:
+
+```powershell
+python src\pilot\root_window_status.py <root>
+python src\pilot\gen_opt_harness.py <root>
+# run src\pilot\run_pilot_wf.opt.js in Claude/Max Workflow and save wf_output.json
+python src\pilot\audit_window.py wf_output.json --root <root> --write-requeue
+```
+
+Current source of truth:
+
+- `src/pilot/gen_opt_harness.py` derives the production harness from
+  `src/pilot/run_pilot_wf.js`, inlines raw/portrait inputs, disables tools for
+  translate agents, and embeds rootmap/input hashes.
+- `src/pilot/audit_window.py` is the canonical local acceptance gate. It now
+  delegates workflow parsing, staleness/provenance checks, report/queue writing,
+  and window-status writing to small helper modules under `src/pilot/`.
+- `src/pilot/window_selftest.py` smoke-tests the critical architecture
+  guardrails: nested workflow payload parsing, optimized-harness scope/tool
+  guards, prompt-rule coverage, stale-artifact refusal preserving
+  `requeue.keys.txt`, and release manifest hash validation.
+- `src/pilot/prompt_rule_audit.py` is the no-token semantic wiring audit. It
+  checks the committed template and generated optimized harness for the
+  manual-derived rules harvested from Apresjan, Hartmann, Gonda/Vogel, Tubb,
+  Baalbaki, Apte/Gillon/Inglese-Geupel, and Mitrenina/Zaliznyak-Paducheva/
+  Ruppel. With `--cards`, it also scans translated workflow/card JSON for
+  cheap semantic-risk patterns before human review. Both modes write ignored
+  `prompt_rule_audit.{json,md}` reports with separate prompt-rule and card-risk
+  sections; the card-risk section includes a ranked `review_queue` so humans
+  can read the riskiest semantic cases first.
+- The committed `src/pilot/run_pilot_wf.js` is a template. Do not run it
+  directly for production windows; run the generated `run_pilot_wf.opt.js`.
+- Semantics is deterministic-first locally: cheap semantic-risk patterns are
+  flagged before human review, while LLM semantic judging remains only the
+  later `judge_sample.keys.txt` spend queue.
+- The corpus word-alignment lexicon exists; bulk throughput is no longer
+  blocked on that asset. Print readiness remains downstream of human/gold
+  gates G5/G6/G7/G10.
+
+---
+
 ## 1. One engine, two pipelines
 
 There is a single translation engine, parameterized by **source language**. It

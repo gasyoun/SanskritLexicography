@@ -30,6 +30,37 @@ History of how the harness got here: [`EVOLUTION_TIMELINE.md`](EVOLUTION_TIMELIN
 
 ---
 
+## 2026-06-29 — Stage C preflight: stale generated inputs pruned
+
+No LLM / no Max spend. Ran the required handoff preflight:
+
+```powershell
+python src\pilot\root_window_status.py gam --prune-stale
+python src\pilot\root_window_status.py yuj --prune-stale
+python src\pilot\root_window_status.py vid --prune-stale
+python src\pilot\root_window_status.py han --prune-stale
+```
+
+Results:
+
+| root | stale generated files pruned | status after recheck | sub-cards | next command |
+|---|---:|---|---:|---|
+| `gam` | 206 | PASS, 127/127 raw + 127/127 portrait, 0 stale | 127 | `python src\pilot\gen_opt_harness.py gam` |
+| `yuj` | 90 | PASS, 60/60 raw + 60/60 portrait, 0 stale | 60 | `python src\pilot\gen_opt_harness.py yuj` |
+| `vid` | 70 | PASS, 55/55 raw + 55/55 portrait, 0 stale | 55 | `python src\pilot\gen_opt_harness.py vid` |
+| `han` | 128 | PASS, 78/78 raw + 78/78 portrait, 0 stale | 78 | `python src\pilot\gen_opt_harness.py han` |
+
+Decision: the Stage C stale-input hold is cleared structurally. Continue
+one root at a time, starting with `gam`; generate the optimized harness, run
+Max Workflow, save `wf_output.json`, and audit with `audit_window.py --root gam
+--write-requeue`.
+
+Open follow-ups remain non-blocking for Stage C: fix F-gate-nws-fp in
+`has_text_signal()`, and optionally escalate the handful of real
+`untranslated_braced_german_gloss` cards to Opus.
+
+---
+
 ## 2026-06-29 — Stage B: BU
 
 ### Round 1 — full window (59 cards)

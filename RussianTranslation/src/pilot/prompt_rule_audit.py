@@ -66,6 +66,10 @@ TEXT_CITATION = re.compile(
     r'(?:<ls\b|ṚV|RV|Atharv|AV\.|MBH|Mahābh|Rām|R\.|M\.|BhP|ŚBr|TS\.|VS\.|'
     r'Kāty|Pañcat|Hit\.|Suśr|Car\.|Manu|Yājñ)',
     re.I)
+# NWS (Nachtragswörterbuch) owner citation: [NWS: OWNER] pattern produced by the
+# NWS layer cards. These citations appear in equivalence_type (a field skipped by
+# citation_blob), so we scan all sense values for them separately in has_text_signal.
+NWS_OWNER_CITATION = re.compile(r'\[NWS:\s')
 LEXICOGRAPHIC_CITATION = re.compile(
     r'(?:Amarakośa|Amara|AK\b|Hemacandra|H\.\b|Pāṇini|P\.\b|Medinī|Med\.|'
     r'kośa|lexicographic)',
@@ -343,7 +347,12 @@ def citation_blob(sense):
 
 def has_text_signal(sense):
     blob = citation_blob(sense)
-    return bool(TEXT_CITATION.search(blob) or (sense.get('stratum') or '').strip())
+    if TEXT_CITATION.search(blob) or (sense.get('stratum') or '').strip():
+        return True
+    # NWS owner citations (e.g. [NWS: Graßmann 1873 (1996) : 168]) land in
+    # equivalence_type which citation_blob skips.  Scan all string values.
+    all_vals = ' '.join(v for v in sense.values() if isinstance(v, str))
+    return bool(NWS_OWNER_CITATION.search(all_vals))
 
 
 def has_lexicographic_signal(sense):
@@ -490,6 +499,17 @@ def semantic_risks(card_like):
     multi_candidate = corpus_candidate_count(card_like) > 1
     has_differentia = False
     russian_values = []
+    # Card-level text-signal: if any ATTESTED sense in the card has a text
+    # citation or NWS owner citation, individual PW senses that list a verb
+    # meaning without an inline <ls> are false positives for
+    # suspicious_attested_without_text_signal (e.g. _zz_pw* cards where the
+    # head sense proves attestation but numbered senses carry no inline cite).
+    all_card_senses = [s for rec in (card.get('records') or [])
+                       for s in (rec.get('senses') or []) if isinstance(s, dict)]
+    card_has_text_signal = any(
+        s.get('source_type') == 'attested' and has_text_signal(s)
+        for s in all_card_senses
+    )
     for record in card.get('records') or []:
         grammar = record.get('grammar') or ''
         rec_senses = [sense for sense in record.get('senses') or [] if isinstance(sense, dict)]
@@ -540,7 +560,7 @@ def semantic_risks(card_like):
                          'fixed śāstric formula appears without expected Russian rendering',
                          tag=tag)
             source_type = sense.get('source_type')
-            if source_type == 'attested' and not has_text_signal(sense):
+            if source_type == 'attested' and not has_text_signal(sense) and not card_has_text_signal:
                 add_risk(risks, 'suspicious_attested_without_text_signal',
                          'source_type=attested but no text citation or stratum signal found',
                          tag=tag)

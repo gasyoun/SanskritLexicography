@@ -1,0 +1,62 @@
+[
+  {
+    "id": "P0_EXAMPLES_NOT_PRINT_READY",
+    "entry": "agni; akzara; ap",
+    "source_file": "src/pilot/output/*.merged.md",
+    "priority": "P0 blocks scale/print",
+    "finding": "The examples are real local merged cards but do not constitute print-ready publication text.",
+    "recommended_fix": "Keep PRINT_ENTRY_EXAMPLES.md labeled as prototype evidence until G5/G6/G7/G10 pass.",
+    "owner_type": "human_editor",
+    "status": "open"
+  },
+  {
+    "id": "P1_AGNI_CITATION_DENSITY",
+    "entry": "agni",
+    "source_file": "src/pilot/output/agni.merged.md",
+    "priority": "P1 slows production",
+    "finding": "The agni entry has long citation-rich senses and multiple layers; a naive print renderer will produce unreadable wide tables.",
+    "recommended_fix": "Define citation compaction and apparatus rules before implementing PDF/LaTeX/HTML rendering.",
+    "owner_type": "renderer",
+    "status": "open"
+  },
+  {
+    "id": "P1_AKZARA_NESTED_LABELS",
+    "entry": "akzara",
+    "source_file": "src/pilot/output/akzara.merged.md",
+    "priority": "P1 slows production",
+    "finding": "The akzara entry requires homonym/gender blocks and nested labels such as 4b-alpha/beta/gamma.",
+    "recommended_fix": "Renderer must support nested sense labels and visible gender/homonym grouping.",
+    "owner_type": "renderer",
+    "status": "open"
+  },
+  {
+    "id": "P1_AP_NWS_OWNER_ROWS",
+    "entry": "ap",
+    "source_file": "src/pilot/output/ap.merged.md",
+    "priority": "P1 slows production",
+    "finding": "The ap entry shows that NWS rows need compact owner badges and one-owner-one-row preservation.",
+    "recommended_fix": "Use compact NWS owner badges in print while preserving one row per owner in the data.",
+    "owner_type": "renderer",
+    "status": "open"
+  },
+  {
+    "id": "P1_AP_BRACED_GLOSS_POLICY",
+    "entry": "ap",
+    "source_file": "src/pilot/output/ap.merged.md",
+    "priority": "P1 slows production",
+    "finding": "The ap entry contains German braced glosses and literal foreign glosses; the renderer must not treat all {%...%} content the same way.",
+    "recommended_fix": "Keep German braced glosses as source evidence and preserve literal Latin/English/binomial forms when present in Russian output.",
+    "owner_type": "renderer",
+    "status": "open"
+  },
+  {
+    "id": "P2_DIFFERENTIA_APPARATUS",
+    "entry": "agni; ap",
+    "source_file": "src/pilot/output/agni.merged.md; src/pilot/output/ap.merged.md",
+    "priority": "P2 improves scholarly polish",
+    "finding": "Differentia notes explain Russian word choice but may be too technical for the main printed body.",
+    "recommended_fix": "Keep differentia in digital apparatus by default; expose only if the editor chooses an explicit note style.",
+    "owner_type": "human_editor",
+    "status": "open"
+  }
+]

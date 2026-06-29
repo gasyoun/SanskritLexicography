@@ -2,6 +2,10 @@ import { readFileSync } from 'node:fs'
 import { fileURLToPath } from 'node:url'
 import { dirname, join } from 'node:path'
 
+// TEMPLATE ONLY. Current production windows must be generated with
+// `python src/pilot/gen_opt_harness.py <root>` and run via
+// `src/pilot/run_pilot_wf.opt.js`; this committed file is the source template.
+
 export const meta = {
   name: 'pwgru-pilot-a-section',
   description: 'corpus-first per-sense Russian translation + Apresjan discrimination + Sanskrit-microstructure rules (samasa/correlative/sastric) of a-section cards (coverage-first manifest); Sonnet bulk-judged, Opus adjudicates ONLY the rejects',
@@ -77,6 +81,7 @@ RENDERING GUIDANCE — Sanskrit microstructure (from the lexicography-manual har
 - SYNONYM CARDINALITY: render a German synonym-string (Glanz, Schimmer, Pracht) as a Russian synonym-string of EQUAL cardinality — never collapse n near-synonyms to one word; pick by register, default to the neutral dominant (Apresjan, Baalbaki).
 - PUNCTUATION carries sense-grouping: comma = interchangeable synonyms WITHIN one sense; semicolon = a boundary between non-interchangeable senses. Preserve PWG's comma/semicolon exactly in the Russian (Hartmann & James).
 - MANNER/POSITION: where Russian grammatically forces a manner/position verb (идти/ползти/лететь; стоять/лежать/висеть) that the German leaves open, choose from the cited context; a wrong neutral default (e.g. «находиться», «лежать» for something that hangs) is grammatical-but-false (Apresjan).
+- NON-CIRCULAR GLOSSES: a Russian gloss must be clearer than the Sanskrit/PWG headword. Avoid circular or cryptographic paraphrases, bare transliterated Sanskrit, or a rarer Russian term where a plain explanatory gloss is needed (Apresjan).
 
 Return ONLY the structured object.`
 
@@ -88,7 +93,7 @@ const JUDGE = { ...FINAL_CARD_SCHEMA.$defs.judge, $defs: FINAL_CARD_SCHEMA.$defs
 const fileOf = k => (k.includes('~~') ? k : safeName(k))
 
 // QA-judge prompt, model-neutral (Sonnet judges every card; Opus re-judges only rejects).
-const CHECKS = `Check: (1) Russian correctness vs the German; (2) scholarly-philological register; (3) sigla + grammar abbreviations kept VERBATIM (not translated/transliterated) — fail sigla_kept if any ṚV./MBH./m./f. was rendered into Russian; (4) per-sense near-synonym discrimination quality (real Apresjan differentiae, not a flat list); (5) corpus evidence actually used; (6) coverage — every PWG sense rendered; (7) Sanskrit-microstructure rendering (soft) — compounds right-headed (head = 2nd member, bahuvrīhi exocentric, -ādi = hypernym «и тому подобное»), correlatives preposed (кто…тот), śāstric formulas fixed-and-flat, synonym-string cardinality preserved, comma/semicolon sense-grouping kept; flag drift but do not fail an otherwise-correct card on (7) alone. severity 1=publishable … 5=broken; set ok=false when severity>=3.`
+const CHECKS = `Check: (1) Russian correctness vs the German; (2) scholarly-philological register; (3) sigla + grammar abbreviations kept VERBATIM (not translated/transliterated) — fail sigla_kept if any ṚV./MBH./m./f. was rendered into Russian; (4) per-sense near-synonym discrimination quality (real Apresjan differentiae, not a flat list); (5) non-circular glosses — reject cryptographic/circular definitions or bare transliterated Sanskrit as the Russian gloss; (6) corpus evidence actually used; (7) coverage — every PWG sense rendered; (8) Sanskrit-microstructure rendering (soft) — compounds right-headed (head = 2nd member, bahuvrīhi exocentric, -ādi = hypernym «и тому подобное»), correlatives preposed (кто…тот), śāstric formulas fixed-and-flat, synonym-string cardinality preserved, comma/semicolon sense-grouping kept; flag drift but do not fail an otherwise-correct card on (8) alone. severity 1=publishable … 5=broken; set ok=false when severity>=3.`
 
 const judgePrompt = (card, k, role) => `${role}
 
