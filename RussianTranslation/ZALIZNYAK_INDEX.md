@@ -88,8 +88,15 @@ can't." Both halves of the data already exist here:
   accent-position) → per-case accent pattern (strong / middle / weakest), i.e. the Zaliznyak
   a–f scheme. This is the accent analog of the existing stem-class→§ concordance.
 - Join each word's accent position (`key2` `/`) with its stem-class rule → assign `a`–`f`.
-- Validate the generated accent paradigm against accented Vedic text (RV/AV — vidyut or the DCS
-  accented layer can supply attested accented forms to check against).
+- Validate the generated accent paradigm against accented Vedic text. **Validation set identified
+  (2026-06-29): VedaWeb** ([vedaweb.uni-koeln.de](https://vedaweb.uni-koeln.de), GitHub
+  [VedaWebProject/vedaweb](https://github.com/VedaWebProject/vedaweb)) — the accented Rigveda with
+  per-word UZH morphology (lemma/case/number/gender) and accent-sensitive search
+  (`rigveda/api/search`, `accents` param; ~10,522 stanzas), **CC BY 4.0**, and already linked to
+  CDSL via the **C-SALT APIs** (same integration as the org's Salt/Kosh work). It gives, per
+  attested RV word-form, the real case/number **and accent**, with a lemma to join back to PWG —
+  so a generated accent paradigm (e.g. predicted ins.sg `agnínā`) can be checked against the
+  attested form. This is in-ecosystem and redistributable; it removes the last blocker named above.
 
 **Honest limits** (why it is staged, not blocked): (a) the axis is **Vedic-only** — Classical
 headwords carry no recorded accent (`key2` has no `/`), so `—` stays the common value; (b) it is
