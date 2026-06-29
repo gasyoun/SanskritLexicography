@@ -220,7 +220,96 @@ def _irregularities(slp1, lex, stem_class, compound_members):
     return flags
 
 
-def nominal_grammar_for(slp1, lex, pos=None, paradigm=False):
+# ---------------------------------------------------------------------------
+# Zaliznyak-style compact inflection index (see ZALIZNYAK_INDEX.md).
+# Token = G·T S F : gender · declension-type · stress · flags.
+# A structured-data join key (declension display / reverse index / FAIR export),
+# NOT a translation injection (the A/B rejected that — NOMINAL_GRAMMAR_AB.md).
+# ---------------------------------------------------------------------------
+_STEM_TYPE_NUM = {
+    'a-stem': '1', 'ā-stem': '2', 'i-stem': '3', 'ī-stem': '4',
+    'u-stem': '5', 'ū-stem': '6', 'ṛ-stem': '7',
+    'consonant-stem': '8', 'indeclinable': '0',
+}
+# gender помета from lex tag
+_GENDER_POMETA = {
+    'm.': 'm', 'mm.': 'm', 'f.': 'f', 'fem.': 'f', 'femin.': 'f', 'ff.': 'f',
+    'n.': 'n', 'neutr.': 'n', 'm.n.': 'mn', 'm.f.': 'mf', 'f.n.': 'fn',
+    'm.f.n.': 'mfn', 'adj.': 'mfn',
+    'adv.': 'ind', 'indecl.': 'ind', 'ind.': 'ind', 'interj.': 'ind',
+}
+# udātta-bearing strong/weak gradation consonant subtypes
+_GRADATION_SUBTYPES = {'8n', '8t', '8c'}
+
+
+def _consonant_subtype(slp1):
+    """Letter subtype for a consonant stem, by SLP1 final cluster (8n/8i/8s/8t/8c/8√)."""
+    s = slp1 or ''
+    if s.endswith(('an', 'man', 'van')):
+        return '8n'
+    if s.endswith('in'):
+        return '8i'
+    if s.endswith(('as', 'is', 'us')):
+        return '8s'
+    if s.endswith(('ant', 'mant', 'vant')) or s.endswith('at'):
+        return '8t'
+    if s.endswith('aYc') or s.endswith('Yc'):
+        return '8c'
+    return '8√'
+
+
+def _accent_scheme(accented, slp1):
+    """Coarse Vedic citation accent from the udātta mark '/' (barytone 'a' / oxytone 'b' /
+    unknown '—'). '/' follows the accented vowel (a/MSa = áṃśa 'a'; agni/ = agní 'b')."""
+    if not accented or '/' not in accented:
+        return '—'
+    # position of the (first) udātta mark; the char before it is the accented vowel
+    i = accented.index('/')
+    # oxytone if the accent mark sits at/after the last vowel of the form
+    vowels = 'aAiIuUfFeEoO'
+    last_vowel_pos = max((j for j, c in enumerate(accented) if c in vowels), default=-1)
+    # the accented vowel is at i-1; if that is the final vowel → oxytone
+    return 'b' if (i - 1) >= last_vowel_pos else 'a'
+
+
+def zaliznyak_index(slp1, lex, accented=None, stem_class=None,
+                    compound_members=None, irregularities=None):
+    """Compact Zaliznyak-style inflection index, e.g. 'm·3b', 'f·2b', 'm·8n*', 'mfn·1+2'.
+
+    accented: optional accent-bearing form (e.g. PWG key2 with '/') for the stress slot.
+    The other args are reused if already computed; otherwise derived here.
+    """
+    lex = (lex or '').strip()
+    if stem_class is None:
+        stem_class = _stem_class(slp1, lex)
+    if compound_members is None:
+        try:
+            from mw_compounds import compound_for
+            compound_members = compound_for(slp1)
+        except Exception:
+            compound_members = None
+    if irregularities is None:
+        irregularities = _irregularities(slp1, lex, stem_class, compound_members)
+
+    gender = _GENDER_POMETA.get(lex, '?')
+    tnum = _STEM_TYPE_NUM.get(stem_class, '8')
+    if tnum == '8':
+        tnum = _consonant_subtype(slp1)
+    stress = _accent_scheme(accented, slp1) if stem_class != 'indeclinable' else '—'
+
+    flags = ''
+    if tnum in _GRADATION_SUBTYPES:
+        flags += '*'                                   # strong/weak gradation
+    if irregularities:
+        flags += '°'                                   # deviation / irregular
+    if compound_members:
+        flags += '+%d' % len(compound_members)         # N-member compound
+
+    core = '%s·%s' % (gender, tnum)
+    return core + (stress if stress != '—' else '') + flags
+
+
+def nominal_grammar_for(slp1, lex, pos=None, paradigm=False, accented=None):
     """Return the nominal grammar block for an SLP1 headword.
 
     Args:
@@ -260,6 +349,9 @@ def nominal_grammar_for(slp1, lex, pos=None, paradigm=False):
             '+ MW k2 compound segmentation (csl-orig/mw.txt, read-only)'
         ),
     }
+    result['zaliznyak_index'] = zaliznyak_index(
+        slp1, lex, accented=accented, stem_class=stem_class,
+        compound_members=compound_members, irregularities=result['irregularities'])
     if paradigm:
         result['paradigm'] = paradigm_for(slp1, lex)
     return result
@@ -286,6 +378,19 @@ def selftest():
         assert p['cases']['nom']['sg'] == 'senā', p['cases']['nom']
         assert paradigm_for('agni', 'm.')['cases']['nom']['sg'] == 'agniḥ'
         assert paradigm_for('ca', 'adv.') is None
+    # Zaliznyak index token
+    idx_cases = [
+        ('deva', 'm.', 'deva/', 'm·1b'),      # oxytone a-stem (devá)
+        ('aMSa', 'm.', 'a/MSa', 'm·1a'),      # barytone a-stem (áṃśa)
+        ('agni', 'm.', 'agni/', 'm·3b'),      # oxytone i-stem (agní)
+        ('senA', 'f.', 'senA/', 'f·2b°'),     # ā-stem f (°: ā_stem_f flag)
+        ('rAjan', 'm.', None, 'm·8n*'),       # an-stem, gradation
+        ('manas', 'n.', None, 'n·8s'),        # as-stem
+        ('ca', 'adv.', None, 'ind·0'),        # indeclinable
+    ]
+    for slp1, lex, acc, want in idx_cases:
+        got = zaliznyak_index(slp1, lex, accented=acc)
+        assert got == want, 'index(%s,%s)=%s want %s' % (slp1, lex, got, want)
     print('selftest OK')
 
 
@@ -295,6 +400,17 @@ def main():
         selftest()
         return
     want_paradigm = '--paradigm' in args
+    if '--index' in args:
+        idx = args.index('--index')
+        rest = [a for a in args[idx + 1:] if not a.startswith('--')]
+        if len(rest) < 1:
+            print('Usage: --index <SLP1> <lex_tag> [accented_form]')
+            return
+        slp1 = rest[0]
+        lex = rest[1] if len(rest) > 1 else 'm.'
+        acc = rest[2] if len(rest) > 2 else None
+        print(zaliznyak_index(slp1, lex, accented=acc))
+        return
     if '--show' in args:
         idx = args.index('--show')
         rest = [a for a in args[idx + 1:] if not a.startswith('--')]
