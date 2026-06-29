@@ -165,6 +165,9 @@ Top paradigms: `m·1+2` 12,681 · `m·1` 11,496 · `mfn·1` 8,346 · `n·1+2` 6,
   `nominal_grammar._STEM_SECTIONS`) to keep it compact.
 - `src/reverse_paradigm_index.json` — `{token: [headword#hom, …]}` (1.1 MB)
 - `src/paradigm_stats.tsv` — `index_token · count`, descending (335 rows)
+- `src/datapackage.json` — **Frictionless Data Package** descriptor (field schemas, CC-BY-SA-4.0,
+  sources PWG/MW/Whitney/WhitneyRoots/vidyut, provenance) over the five grammar resources above
+  (incl. `mw_compounds.json`, `whitney_grammar.json`). Makes the layer a citable, archivable dataset.
 
 **This grammar data is recorded per word as a standalone asset and is DELIBERATELY kept out of
 translation.** The nominal-grammar A/B ([`NOMINAL_GRAMMAR_AB.md`](NOMINAL_GRAMMAR_AB.md)) showed
