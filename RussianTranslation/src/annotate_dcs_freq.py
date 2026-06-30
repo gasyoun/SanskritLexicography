@@ -39,6 +39,7 @@ from build_dcs_freq import norm_lemma            # one canonical normalizer
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 FREQ = os.path.join(HERE, 'dcs_freq.json')
+DIMS = os.path.join(HERE, 'dcs_freq_dims.json')   # genre + POS dimensions (optional)
 STORE = os.path.join(HERE, 'pwg_ru_translated.jsonl')
 
 _SPLIT = re.compile(r'[+\-\s]+')
@@ -74,6 +75,21 @@ def freq_block(iast, by_lemma):
             'matched': kind, 'matched_key': mkey}
 
 
+def dims_block(iast, by_lemma):
+    """Attach POS distribution + genre/era counts (build_dcs_freq_dims). {} if absent."""
+    rec, kind, mkey = lookup(iast, by_lemma)
+    if not rec:
+        return {}
+    out = {'matched': kind, 'matched_key': mkey}
+    if 'pos' in rec:
+        out['pos'] = rec['pos']
+    if 'genre' in rec:
+        out['genre'] = rec['genre']
+    if 'era' in rec:
+        out['era'] = rec['era']
+    return out
+
+
 def selftest():
     by = {'anuvad': {'count': 5, 'band': 2, 'hapax': False, 'core80': False},
           'vad': {'count': 3918, 'band': 5, 'hapax': False, 'core80': True},
@@ -96,6 +112,7 @@ def selftest():
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('--freq', default=FREQ)
+    ap.add_argument('--dims', default=DIMS)
     ap.add_argument('--store', default=STORE)
     ap.add_argument('--dry-run', action='store_true')
     ap.add_argument('--no-backup', action='store_true')
@@ -105,11 +122,14 @@ def main():
         return selftest()
 
     by_lemma = json.load(open(args.freq, encoding='utf-8'))['by_lemma']
+    dims = {}
+    if os.path.exists(args.dims):
+        dims = json.load(open(args.dims, encoding='utf-8'))['by_lemma']
     rows = [json.loads(l) for l in open(args.store, encoding='utf-8') if l.strip()]
 
     kinds = {'compound': 0, 'root_fallback': 0, 'none': 0}
     bands = {0: 0, 1: 0, 2: 0, 3: 0, 4: 0, 5: 0}
-    hapax = core = 0
+    hapax = core = pos_n = genre_n = 0
     for r in rows:
         blk = freq_block(r.get('iast'), by_lemma)
         r['dcs_freq'] = blk
@@ -117,6 +137,14 @@ def main():
         bands[blk['band']] += 1
         hapax += blk['hapax']
         core += blk['core80']
+        if dims:
+            db = dims_block(r.get('iast'), dims)
+            if db:
+                r['dcs_freq']['pos'] = db.get('pos')
+                r['dcs_freq']['genre'] = db.get('genre')
+                r['dcs_freq']['era'] = db.get('era')
+                pos_n += 1 if db.get('pos') else 0
+                genre_n += 1 if db.get('genre') else 0
 
     n = len(rows)
     print('=== DCS FREQUENCY ANNOTATION ===')
@@ -127,6 +155,9 @@ def main():
     print('band distribution    : ' + ', '.join('%d:%d' % (b, bands[b]) for b in range(5, -1, -1)))
     print('hapax rows           : %d' % hapax)
     print('core80 rows          : %d' % core)
+    if dims:
+        print('rows with POS dist   : %d (%.1f%%)' % (pos_n, 100 * pos_n / max(1, n)))
+        print('rows with genre dist : %d (%.1f%%)' % (genre_n, 100 * genre_n / max(1, n)))
 
     if args.dry_run:
         print('\n(dry run — store not written)')
