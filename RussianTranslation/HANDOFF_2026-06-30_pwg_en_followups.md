@@ -95,14 +95,14 @@ store carrying `de` + `ru` + `en` per sense (+ the `dcs_freq` block already adde
 
 ## Pointers
 
-- EN harness: [`src/pilot/gen_opt_harness2.py`](src/pilot/gen_opt_harness2.py) (`--lang en`) ·
-  prompt [`src/pilot/tr_en.txt`](src/pilot/tr_en.txt)
-- MW TM: [`src/mw_en_tm.py`](src/mw_en_tm.py) → `src/mw_en_tm.json` (gitignored)
-- save/merge: [`save_and_audit.py`](save_and_audit.py) (`en` tag, `--no-audit`, `--merge`)
-- RU bridge to extend: [`src/promote_final_cards.py`](src/promote_final_cards.py)
-- freq annotation: [`src/annotate_dcs_freq.py`](src/annotate_dcs_freq.py) (+ `build_dcs_freq.py`,
+- EN harness: [`src/pilot/gen_opt_harness2.py`](https://github.com/gasyoun/SanskritLexicography/blob/recover/slicec-top3-pat-ga-vad/RussianTranslation/src/pilot/gen_opt_harness2.py) (`--lang en`) ·
+  prompt [`src/pilot/tr_en.txt`](https://github.com/gasyoun/SanskritLexicography/blob/recover/slicec-top3-pat-ga-vad/RussianTranslation/src/pilot/tr_en.txt)
+- MW TM: [`src/mw_en_tm.py`](https://github.com/gasyoun/SanskritLexicography/blob/recover/slicec-top3-pat-ga-vad/RussianTranslation/src/mw_en_tm.py) → `src/mw_en_tm.json` (gitignored)
+- save/merge: [`save_and_audit.py`](https://github.com/gasyoun/SanskritLexicography/blob/recover/slicec-top3-pat-ga-vad/RussianTranslation/save_and_audit.py) (`en` tag, `--no-audit`, `--merge`)
+- RU bridge to extend: [`src/promote_final_cards.py`](https://github.com/gasyoun/SanskritLexicography/blob/recover/slicec-top3-pat-ga-vad/RussianTranslation/src/promote_final_cards.py)
+- freq annotation: [`src/annotate_dcs_freq.py`](https://github.com/gasyoun/SanskritLexicography/blob/recover/slicec-top3-pat-ga-vad/RussianTranslation/src/annotate_dcs_freq.py) (+ `build_dcs_freq.py`,
   `build_dcs_freq_dims.py`)
-- tri-lingual: [`src/pilot/trilingual_sample.py`](src/pilot/trilingual_sample.py) ·
-  sample [`PWG_EN_PILOT_2026-06-30.md`](PWG_EN_PILOT_2026-06-30.md)
-- loop/concurrency doctrine: [`src/pilot/RUN_FREQ_MAX.md`](src/pilot/RUN_FREQ_MAX.md)
-- prior Slice-C recovery handoff: [`HANDOFF_2026-06-30_slicec_recovery.md`](HANDOFF_2026-06-30_slicec_recovery.md)
+- tri-lingual: [`src/pilot/trilingual_sample.py`](https://github.com/gasyoun/SanskritLexicography/blob/recover/slicec-top3-pat-ga-vad/RussianTranslation/src/pilot/trilingual_sample.py) ·
+  sample [`PWG_EN_PILOT_2026-06-30.md`](https://github.com/gasyoun/SanskritLexicography/blob/recover/slicec-top3-pat-ga-vad/RussianTranslation/PWG_EN_PILOT_2026-06-30.md)
+- loop/concurrency doctrine: [`src/pilot/RUN_FREQ_MAX.md`](https://github.com/gasyoun/SanskritLexicography/blob/recover/slicec-top3-pat-ga-vad/RussianTranslation/src/pilot/RUN_FREQ_MAX.md)
+- prior Slice-C recovery handoff: [`HANDOFF_2026-06-30_slicec_recovery.md`](https://github.com/gasyoun/SanskritLexicography/blob/recover/slicec-top3-pat-ga-vad/RussianTranslation/HANDOFF_2026-06-30_slicec_recovery.md)
