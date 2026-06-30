@@ -10,12 +10,19 @@
 > - **`jan`/`han` salvaged** to stable names `wf_output.sc.jan_full.json` / `wf_output.sc.han.json`.
 > - **The §Guardrail fix is already implemented** in [`save_and_audit.py`](save_and_audit.py)
 >   (overwrite-refusal + `--merge`). Do not re-add it.
-> - **DONE this session (Max re-run, ≤3-wide): `pat` (73), `gA` (65), `vad` (47).** Saved as
->   full per-root files; bridge coverage 1431→1603 non-null cards / 7218 sense rows; pat/gA/vad
->   off the thin-warning list. Residual requeues left for an optional quality pass:
->   transient nulls pat 5 / gA 2; defect (semantic-risk, G5 territory) pat 14 / gA 6 / vad 8.
-> - **STILL TO DO (12 roots, ~390 cards):** Sam(36), vraj(34), Buj(33), Bid(32), pA(32),
->   Cid(27), yat(25), naS(25), yaj(25), rakz(23), hi(19), mad(17) — same loop as below.
+> - **DONE — ALL 15 roots re-run this session (Max, ≤3-wide).** First wave: `pat`(73),
+>   `gA`(65), `vad`(47). Remaining 12: `Sam`(38), `Buj`(39), `vraj`(34), `Bid`(35), `pA`(34),
+>   `Cid`(32), `yat`(28), `naS`(26), `yaj`(25), `rakz`(23), `hi`(20), `mad`(21). All saved as
+>   full per-root files. **Final bridge: 1920 non-null cards / 8015 sense rows / 46 headwords;
+>   no root left on the thin-warning list.** Slice-C recovery COMPLETE.
+> - **Residual quality pass (optional, NOT done):** transient nulls (cheap low-concurrency
+>   re-run) ~15 across pat/gA/vraj/Buj/Bid/Sam/naS/yaj/yat; defect requeues (semantic-risk,
+>   G5 territory) ~90 across all roots. Coverage is restored; these are quality, not coverage.
+> - **NEW — DCS frequency banding** (per MG, 2026-06-30): `src/build_dcs_freq.py` +
+>   `src/annotate_dcs_freq.py` add a `dcs_freq{band 1-5, count, hapax, attested, core80}`
+>   block to every store row (per preverb-compound, root fallback; 96.3% matched). core80 =
+>   the 2,551 lemmas (2.8% of types) covering 80% of the 5.69M-token DCS corpus. Known gap:
+>   vowel-sandhi compounds (pra+āp→prāp) fall back to root count; sandhi-aware join = follow-up.
 
 **For:** a fresh agent session (or the autonomous account). **Goal:** restore the ~630
 Slice-C cards missing from local files so the print bridge ([`src/promote_final_cards.py`](src/promote_final_cards.py))
