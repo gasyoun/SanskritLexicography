@@ -623,6 +623,21 @@ def test_sense_dupe_batch_override():
         fail('committed rootmap_overrides.json (jan 1c) not merged into rootmap_meta')
 
 
+def test_sense_dupe_cross_level_exempt():
+    """A flagged cross-part duplicate is legitimate when the root declares the (homonym, tag) as
+    known cross-LEVEL sense-number reuse (verb vs derived-noun vs prefix-participle). siD h1 is
+    the committed case (SIDH_DUPE_INVESTIGATION.md)."""
+    from audit_sense_dupes import is_dupe_exempt, dupe_exempt_map
+    exempt = dupe_exempt_map()
+    keys = {'si_d~~h1_00_pwg00', 'si_d~~h1_00_pwg02'}
+    if not is_dupe_exempt('h1', '3', keys, exempt):
+        fail('declared siD cross-level reuse (h1 sense 3) must be exempt')
+    if is_dupe_exempt('h1', '5', keys, exempt):
+        fail('an undeclared tag must NOT be exempt')
+    if is_dupe_exempt('h1', '3', {'si_d~~h1_00_pwg00', 'jan~~h1_00_pwg00'}, exempt):
+        fail('a cross-root collision must never be exempt')
+
+
 def test_requeue_transient_vs_defect_state():
     """Null cards (transient) must classify transient_only; a gate defect -> needs_requeue;
     a pre-split report (no requeue_defect key) must stay needs_requeue (PROCESS_AUDIT rec 3/10)."""
@@ -643,6 +658,7 @@ def main():
     tests = [
         test_workflow_payload_nested,
         test_sense_dupe_batch_override,
+        test_sense_dupe_cross_level_exempt,
         test_requeue_transient_vs_defect_state,
         test_harness_scope_and_tools,
         test_prompt_rule_audit_template,
