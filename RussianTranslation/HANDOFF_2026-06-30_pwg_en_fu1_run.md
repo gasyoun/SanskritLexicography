@@ -3,7 +3,7 @@
 **For:** a fresh agent session with **Max/Workflow access** (or the autonomous account).
 **Goal:** translate the 30 already-RU'd PWG roots that still lack English, to citable-DH
 standard, then merge + judge + validate. **All design decisions are MG-locked** — see
-[`FU1_PLAN.md`](FU1_PLAN.md) for the rationale; this doc is the *execution* runbook.
+[`FU1_PLAN.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/FU1_PLAN.md) for the rationale; this doc is the *execution* runbook.
 Everything lives in `SanskritLexicography/RussianTranslation/`.
 
 ## Status (2026-06-30)
@@ -45,9 +45,9 @@ tool is an EN adaptation:
 
 | FU1 tool | Adapt from | EN change |
 |---|---|---|
-| **Opus EN judge** | [`src/fidelity_sample.py`](src/fidelity_sample.py) + [`src/pilot/gen_fidelity_judge.py`](src/pilot/gen_fidelity_judge.py) + `src/pilot/fidelity_aggregate.py` | sample `(de, en)` not `(de, ru)`; rubric = **does `english` faithfully render the German sense** (markup/sigla + PWG sense order = hard sub-checks; MW divergence = soft). Keep the verdict schema `{key, ok, severity, issues, note}` and the `judge_ab_score` BAD rule (`ok=false || severity>=3`) so aggregation/Wilson-CI reuse unchanged. |
-| **Provenance-aware merge** | [`src/promote_en.py`](src/promote_en.py) | alongside `en`, attach `en_provenance = {model:'sonnet', judge:{model:'opus', verdict, score}, generated_at, harness_sha256, mw_used:bool}`. Keep `en` a plain string so `export_interop.py` is unaffected. `review_status` stays `ai_translated`. |
-| **Human gold sample + κ** | [`src/gold_sample.py`](src/gold_sample.py), [`src/gold_packet.py`](src/gold_packet.py), [`src/gold_validate.py`](src/gold_validate.py), [`src/gold_ingest.py`](src/gold_ingest.py), [`src/gold_agreement.py`](src/gold_agreement.py) | stratify the EN store by **DCS freq band × source_type × stratum**, fixed seed, n≈300; reviewer sheet shows **de + en + headword, MW HIDDEN** (no anchoring); labels judge faithful-to-German; second annotator → `gold_agreement.py` already computes precision + double-review agreement (κ). Emit a short METHODS note. |
+| **Opus EN judge** | [`src/fidelity_sample.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/fidelity_sample.py) + [`src/pilot/gen_fidelity_judge.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/gen_fidelity_judge.py) + `src/pilot/fidelity_aggregate.py` | sample `(de, en)` not `(de, ru)`; rubric = **does `english` faithfully render the German sense** (markup/sigla + PWG sense order = hard sub-checks; MW divergence = soft). Keep the verdict schema `{key, ok, severity, issues, note}` and the `judge_ab_score` BAD rule (`ok=false || severity>=3`) so aggregation/Wilson-CI reuse unchanged. |
+| **Provenance-aware merge** | [`src/promote_en.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/promote_en.py) | alongside `en`, attach `en_provenance = {model:'sonnet', judge:{model:'opus', verdict, score}, generated_at, harness_sha256, mw_used:bool}`. Keep `en` a plain string so `export_interop.py` is unaffected. `review_status` stays `ai_translated`. |
+| **Human gold sample + κ** | [`src/gold_sample.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/gold_sample.py), [`src/gold_packet.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/gold_packet.py), [`src/gold_validate.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/gold_validate.py), [`src/gold_ingest.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/gold_ingest.py), [`src/gold_agreement.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/gold_agreement.py) | stratify the EN store by **DCS freq band × source_type × stratum**, fixed seed, n≈300; reviewer sheet shows **de + en + headword, MW HIDDEN** (no anchoring); labels judge faithful-to-German; second annotator → `gold_agreement.py` already computes precision + double-review agreement (κ). Emit a short METHODS note. |
 
 Acceptance for Phase 0: each new script has a `--selftest`/`--dry-run`, `python -c "import ast…"`
 parses, and a dry-run over the 16 existing EN roots produces a sane sample/judge harness.
@@ -94,11 +94,11 @@ python src/annotate_dcs_freq.py     # re-attach dcs_freq (language-agnostic, ide
 
 ## Pointers
 
-- Plan + decisions: [`FU1_PLAN.md`](FU1_PLAN.md) · parent handoff:
-  [`HANDOFF_2026-06-30_pwg_en_followups.md`](HANDOFF_2026-06-30_pwg_en_followups.md)
-- EN harness: [`src/pilot/gen_opt_harness2.py`](src/pilot/gen_opt_harness2.py) (`--lang en`) ·
-  prompt [`src/pilot/tr_en.txt`](src/pilot/tr_en.txt) · MW TM [`src/mw_en_tm.py`](src/mw_en_tm.py)
-- EN audit gate: [`src/pilot/audit_window_en.py`](src/pilot/audit_window_en.py) ·
-  merge: [`src/promote_en.py`](src/promote_en.py) · save: [`save_and_audit.py`](save_and_audit.py)
-- concurrency doctrine: [`src/pilot/RUN_FREQ_MAX.md`](src/pilot/RUN_FREQ_MAX.md) ·
-  journal: [`.ai_state.md`](.ai_state.md)
+- Plan + decisions: [`FU1_PLAN.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/FU1_PLAN.md) · parent handoff:
+  [`HANDOFF_2026-06-30_pwg_en_followups.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/HANDOFF_2026-06-30_pwg_en_followups.md)
+- EN harness: [`src/pilot/gen_opt_harness2.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/gen_opt_harness2.py) (`--lang en`) ·
+  prompt [`src/pilot/tr_en.txt`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/tr_en.txt) · MW TM [`src/mw_en_tm.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/mw_en_tm.py)
+- EN audit gate: [`src/pilot/audit_window_en.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/audit_window_en.py) ·
+  merge: [`src/promote_en.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/promote_en.py) · save: [`save_and_audit.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/save_and_audit.py)
+- concurrency doctrine: [`src/pilot/RUN_FREQ_MAX.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/RUN_FREQ_MAX.md) ·
+  journal: [`.ai_state.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/.ai_state.md)

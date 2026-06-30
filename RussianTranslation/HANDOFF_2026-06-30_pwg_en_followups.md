@@ -7,14 +7,14 @@ resume point for the three remaining follow-ups. Everything below lives in
 ([PR #25](https://github.com/gasyoun/SanskritLexicography/pull/25)).
 
 > **Status (2026-06-30):** ✅ **FU2 SHIPPED** —
-> [`src/pilot/audit_window_en.py`](https://github.com/gasyoun/SanskritLexicography/blob/recover/slicec-top3-pat-ga-vad/RussianTranslation/src/pilot/audit_window_en.py)
+> [`src/pilot/audit_window_en.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/audit_window_en.py)
 > (report-only; 0 hard flags over all 16 pilot roots), wired into `save_and_audit.py` (tag `en`).
 > ✅ **FU3 SHIPPED** —
-> [`src/promote_en.py`](https://github.com/gasyoun/SanskritLexicography/blob/recover/slicec-top3-pat-ga-vad/RussianTranslation/src/promote_en.py)
+> [`src/promote_en.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/promote_en.py)
 > (German-text fuzzy join; 2417 store rows now carry `en`, `dcs_freq` re-annotated).
 > ⏳ **FU1 PLANNED, not yet run** — all six design decisions MG-locked 2026-06-30; full spec +
 > 30-root worklist (1,260 subcards, ~$42 Sonnet) in
-> [`FU1_PLAN.md`](https://github.com/gasyoun/SanskritLexicography/blob/recover/slicec-top3-pat-ga-vad/RussianTranslation/FU1_PLAN.md).
+> [`FU1_PLAN.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/FU1_PLAN.md).
 > Summary: EN-only on the already-RU'd roots + merge (bilingual single-pass reserved for future
 > roots); Sonnet generate + Opus judge; scope = match RU coverage; validation = audit + judge +
 > human gold sample (ground truth = faithful to the PWG German); full per-sense provenance. Build
@@ -109,14 +109,14 @@ store carrying `de` + `ru` + `en` per sense (+ the `dcs_freq` block already adde
 
 ## Pointers
 
-- EN harness: [`src/pilot/gen_opt_harness2.py`](https://github.com/gasyoun/SanskritLexicography/blob/recover/slicec-top3-pat-ga-vad/RussianTranslation/src/pilot/gen_opt_harness2.py) (`--lang en`) ·
-  prompt [`src/pilot/tr_en.txt`](https://github.com/gasyoun/SanskritLexicography/blob/recover/slicec-top3-pat-ga-vad/RussianTranslation/src/pilot/tr_en.txt)
-- MW TM: [`src/mw_en_tm.py`](https://github.com/gasyoun/SanskritLexicography/blob/recover/slicec-top3-pat-ga-vad/RussianTranslation/src/mw_en_tm.py) → `src/mw_en_tm.json` (gitignored)
-- save/merge: [`save_and_audit.py`](https://github.com/gasyoun/SanskritLexicography/blob/recover/slicec-top3-pat-ga-vad/RussianTranslation/save_and_audit.py) (`en` tag, `--no-audit`, `--merge`)
-- RU bridge to extend: [`src/promote_final_cards.py`](https://github.com/gasyoun/SanskritLexicography/blob/recover/slicec-top3-pat-ga-vad/RussianTranslation/src/promote_final_cards.py)
-- freq annotation: [`src/annotate_dcs_freq.py`](https://github.com/gasyoun/SanskritLexicography/blob/recover/slicec-top3-pat-ga-vad/RussianTranslation/src/annotate_dcs_freq.py) (+ `build_dcs_freq.py`,
+- EN harness: [`src/pilot/gen_opt_harness2.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/gen_opt_harness2.py) (`--lang en`) ·
+  prompt [`src/pilot/tr_en.txt`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/tr_en.txt)
+- MW TM: [`src/mw_en_tm.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/mw_en_tm.py) → `src/mw_en_tm.json` (gitignored)
+- save/merge: [`save_and_audit.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/save_and_audit.py) (`en` tag, `--no-audit`, `--merge`)
+- RU bridge to extend: [`src/promote_final_cards.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/promote_final_cards.py)
+- freq annotation: [`src/annotate_dcs_freq.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/annotate_dcs_freq.py) (+ `build_dcs_freq.py`,
   `build_dcs_freq_dims.py`)
-- tri-lingual: [`src/pilot/trilingual_sample.py`](https://github.com/gasyoun/SanskritLexicography/blob/recover/slicec-top3-pat-ga-vad/RussianTranslation/src/pilot/trilingual_sample.py) ·
-  sample [`PWG_EN_PILOT_2026-06-30.md`](https://github.com/gasyoun/SanskritLexicography/blob/recover/slicec-top3-pat-ga-vad/RussianTranslation/PWG_EN_PILOT_2026-06-30.md)
-- loop/concurrency doctrine: [`src/pilot/RUN_FREQ_MAX.md`](https://github.com/gasyoun/SanskritLexicography/blob/recover/slicec-top3-pat-ga-vad/RussianTranslation/src/pilot/RUN_FREQ_MAX.md)
-- prior Slice-C recovery handoff: [`HANDOFF_2026-06-30_slicec_recovery.md`](https://github.com/gasyoun/SanskritLexicography/blob/recover/slicec-top3-pat-ga-vad/RussianTranslation/HANDOFF_2026-06-30_slicec_recovery.md)
+- tri-lingual: [`src/pilot/trilingual_sample.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/trilingual_sample.py) ·
+  sample [`PWG_EN_PILOT_2026-06-30.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/PWG_EN_PILOT_2026-06-30.md)
+- loop/concurrency doctrine: [`src/pilot/RUN_FREQ_MAX.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/RUN_FREQ_MAX.md)
+- prior Slice-C recovery handoff: [`HANDOFF_2026-06-30_slicec_recovery.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/HANDOFF_2026-06-30_slicec_recovery.md)
