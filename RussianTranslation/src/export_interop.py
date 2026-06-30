@@ -7,6 +7,7 @@
   python export_interop.py all --limit 100 --out-dir release/fixture
 """
 import argparse
+import collections
 import json
 import os
 import re
@@ -76,7 +77,14 @@ def statuses(args):
     return {s.strip() for s in raw.split(',') if s.strip()}
 
 
-def card_glosses(card, translations):
+def store_homonym(row):
+    """The store row's homonym ordinal (h0/h1/..) from its sub-card key — the CLEAN homonym
+    label. The assembled side has no homonym key, so attribution is sourced from the store."""
+    sub = row.get('subcard') or ''
+    return sub.split('~~')[1].split('_')[0] if '~~' in sub else 'h?'
+
+
+def card_glosses(card, translations, emitted=None):
     rows = []
     for d in card.get('attested_senses', {}).get('dict') or []:
         if d.get('gloss'):
@@ -87,8 +95,17 @@ def card_glosses(card, translations):
         for r in st.get('renderings') or []:
             if r.get('lemma'):
                 rows.append(('corpus_lexicon', st.get('period') or 'corpus', r.get('lemma')))
-    for i, r in enumerate(translations.get(card.get('key1'), []), 1):
-        rows.append(('approved_translation', 'review-%d' % i, r.get('ru')))
+    # Translations attach ONCE per key1 (homograph fix): the assembled side has no homonym
+    # discriminator and its same-key1 entries are redundant, so attaching translations[key1]
+    # to every entry multiplied them. The store separates homonyms cleanly — each translation
+    # sense is labelled with its store homonym (h0/h1/..). `emitted` (a per-export set) makes
+    # the dedup explicit; pass None for the legacy (multiplying) behaviour.
+    key1 = card.get('key1')
+    if emitted is None or key1 not in emitted:
+        if isinstance(emitted, set):
+            emitted.add(key1)
+        for i, r in enumerate(translations.get(key1, []), 1):
+            rows.append(('approved_translation', '%s-review-%d' % (store_homonym(r), i), r.get('ru')))
     return rows
 
 
@@ -103,12 +120,15 @@ def export_tei(args):
         f.write('<publicationStmt><p>Project release artifact.</p></publicationStmt>')
         f.write('<sourceDesc><p>Generated from assembled_cards.jsonl.</p></sourceDesc></fileDesc></teiHeader>\n')
         f.write('  <text><body>\n')
+        emitted, idn = set(), collections.Counter()
         for card in iter_cards(args.cards, args.limit):
-            cid = 'pwg-%s' % safe_id(card.get('key1'))
+            key1 = card.get('key1')
+            idn[key1] += 1                      # unique xml:id across same-key1 homograph entries
+            cid = 'pwg-%s' % safe_id(key1) + ('' if idn[key1] == 1 else '-%d' % idn[key1])
             f.write('    <entry xml:id="%s">\n' % q(cid))
             f.write('      <form><orth>%s</orth><pron notation="iast">%s</pron></form>\n'
                     % (q(card.get('key1')), q(card.get('iast'))))
-            for source, ref, text in card_glosses(card, translations):
+            for source, ref, text in card_glosses(card, translations, emitted):
                 f.write('      <sense source="%s" n="%s"><def>%s</def></sense>\n'
                         % (q(source), q(ref), q(text)))
             f.write('    </entry>\n')
@@ -124,11 +144,14 @@ def export_ontolex(args):
         f.write('@prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .\n')
         f.write('@prefix lexinfo: <http://www.lexinfo.net/ontology/3.0/lexinfo#> .\n')
         f.write('@prefix pwg: <https://example.org/pwg/ru/> .\n\n')
+        emitted, idn = set(), collections.Counter()
         for card in iter_cards(args.cards, args.limit):
-            sid = safe_id(card.get('key1'))
+            key1 = card.get('key1')
+            idn[key1] += 1
+            sid = safe_id(key1) + ('' if idn[key1] == 1 else '_%d' % idn[key1])
             f.write('pwg:%s a ontolex:LexicalEntry ;\n' % sid)
             f.write('  ontolex:canonicalForm [ ontolex:writtenRep "%s"@sa-Latn ] ;\n' % ttl(card.get('key1')))
-            senses = card_glosses(card, translations)
+            senses = card_glosses(card, translations, emitted)
             if senses:
                 refs = ', '.join('pwg:%s_sense_%d' % (sid, i + 1) for i in range(len(senses)))
                 f.write('  ontolex:sense %s .\n' % refs)
@@ -150,9 +173,10 @@ def export_reverse_index(args):
     out = os.path.join(args.out_dir, 'reverse_index.jsonl')
     count = 0
     with open(out, 'w', encoding='utf-8', newline='') as f:
+        emitted = set()
         for card in iter_cards(args.cards, args.limit):
             seen = set()
-            for source, ref, text in card_glosses(card, translations):
+            for source, ref, text in card_glosses(card, translations, emitted):
                 for m in CYR.findall(text or ''):
                     lemma = m.lower().strip('-')
                     if len(lemma) < 2:
