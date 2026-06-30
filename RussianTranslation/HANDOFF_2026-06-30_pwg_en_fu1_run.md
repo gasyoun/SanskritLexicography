@@ -21,10 +21,12 @@ Everything lives in `SanskritLexicography/RussianTranslation/`.
   + [`src/gold_agreement.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/gold_agreement.py) reused);
   [`src/promote_en.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/promote_en.py) extended with `en_provenance` + `--judge`. All selftested.
 - **Phase 1 IN PROGRESS — cost-check.** `nI` done & **clean**: 97 cards / 447 senses, **0 null,
-  0 hard flags** (1 soft DE-residue), sense-dupe PASS → `wf_output.en.nI.json`. Gen tier =
-  **Sonnet** (pinned `model:'sonnet'`); ~431 k subagent tokens / 97 cards ≈ **4.4 k tok/card**,
-  ~380 s, 11 agents (exact $ needs the Max token report — confirm vs the ~$0.033/card estimate).
+  0 hard flags** (1 soft DE-residue), sense-dupe PASS → `wf_output.en.nI.json`. Gen model =
+  **Sonnet 4.6** (`claude-sonnet-4-6`) — the harness pins alias `model:'sonnet'`, which resolved
+  to Sonnet 4.6 on this run; ~431 k subagent tokens / 97 cards ≈ **4.4 k tok/card**, ~380 s, 11
+  agents (exact $ needs the Max token report — confirm vs the ~$0.033/card estimate).
   `yA` harness generated & staged (`run_pilot_wf.en_yA.js`, 90 cards), **not yet run**.
+  (Always record tier **+ version**, resolving the alias to its version — models change.)
 
 ## ▶ RESUME HERE (new chat, Phase 1)
 
@@ -60,14 +62,17 @@ and confirm `git rev-parse --abbrev-ref HEAD` ≠ `master` before any commit.
   single/low-width = 0 nulls. Run roots sequentially or ≤3 at a time.
 - **Outputs are gitignored regenerable artifacts** (`wf_output*.json`, the stores, `*.json`
   freq tables) — commit only **code/docs**.
-- **Report the model tier at every step** (Sonnet for generation, Opus for the judge) — grep
-  the actual `model:` in the harness/judge, don't trust the harness description.
+- **Report the model tier AND version at every step** — generation = Sonnet 4.6
+  (`claude-sonnet-4-6`); judge = Opus 4.8 (`claude-opus-4-8`). Grep the actual `model:` alias in
+  the harness/judge (don't trust the description) and resolve it to the version from the run
+  environment — a bare "Sonnet"/"Opus" is a defect; models change, so the version must be recorded.
 
 ## Locked decisions (do not re-litigate — full rationale in `FU1_PLAN.md`)
 
 1. **EN-only + merge** for this tranche (all in scope already have RU). Bilingual single-pass is
    the standing policy for *future* freq roots beyond current RU coverage, **not** this run.
-2. **Sonnet generate + Opus judge.**
+2. **Sonnet generate + Opus judge** — versions: generation = Sonnet 4.6 (`claude-sonnet-4-6`),
+   judge = Opus 4.8 (`claude-opus-4-8`). Record tier + version every step.
 3. **Scope = match current RU coverage** (the worklist below).
 4. **Validation = FU2 audit + Opus judge + human gold sample** (Cohen κ + error rate).
 5. **Full per-sense provenance** (`en_provenance`).
