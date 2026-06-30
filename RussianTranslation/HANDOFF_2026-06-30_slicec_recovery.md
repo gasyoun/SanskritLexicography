@@ -1,5 +1,22 @@
 # Handoff — recover the full Slice-C translated output
 
+> **UPDATE 2026-06-30 (recovery session, branch `recover/slicec-top3-pat-ga-vad`):**
+> Two material corrections to the plan below, plus progress:
+> - **DA needs NO re-run.** The full dhā output survives on disk in
+>   [`wf_output_da_a.json`](wf_output_da_a.json) + [`wf_output_da_b.json`](wf_output_da_b.json)
+>   (72+73=145 cards; the bridge globs `wf_output*.json` and promoted **138/145**). The
+>   table's "DA 0/145 — biggest loss" is stale. Only ~7 DA cards are marginal.
+> - **True remaining deficit ≈ 514 cards / 15 roots** (not 630/16), because DA drops out.
+> - **`jan`/`han` salvaged** to stable names `wf_output.sc.jan_full.json` / `wf_output.sc.han.json`.
+> - **The §Guardrail fix is already implemented** in [`save_and_audit.py`](save_and_audit.py)
+>   (overwrite-refusal + `--merge`). Do not re-add it.
+> - **DONE this session (Max re-run, ≤3-wide): `pat` (73), `gA` (65), `vad` (47).** Saved as
+>   full per-root files; bridge coverage 1431→1603 non-null cards / 7218 sense rows; pat/gA/vad
+>   off the thin-warning list. Residual requeues left for an optional quality pass:
+>   transient nulls pat 5 / gA 2; defect (semantic-risk, G5 territory) pat 14 / gA 6 / vad 8.
+> - **STILL TO DO (12 roots, ~390 cards):** Sam(36), vraj(34), Buj(33), Bid(32), pA(32),
+>   Cid(27), yat(25), naS(25), yaj(25), rakz(23), hi(19), mad(17) — same loop as below.
+
 **For:** a fresh agent session (or the autonomous account). **Goal:** restore the ~630
 Slice-C cards missing from local files so the print bridge ([`src/promote_final_cards.py`](src/promote_final_cards.py))
 promotes the **full** Slice C, not a partial set. This is a **Max re-run** task (the originals
