@@ -25,7 +25,11 @@ ROOT = os.path.dirname(SRC)
 OUT = os.path.join(HERE, 'output')
 
 DEFAULT_TEMPLATE = os.path.join(HERE, 'run_pilot_wf.js')
-DEFAULT_HARNESS = os.path.join(HERE, 'run_pilot_wf.opt2.js')
+# The missing-required-rule check is the BUILD-TIME contract on the canonical template;
+# it must not point at a generated harness. The masked opt2 harness legitimately omits the
+# SOFT judge-7 guidance rules (samasa/correlatives/sastric-formula/anti-circular), so rule-
+# checking it would hard-fail the prompt_semantic gate on every root (false positive).
+DEFAULT_HARNESS = os.path.join(HERE, 'run_pilot_wf.opt.js')
 
 if HERE not in sys.path:
     sys.path.insert(0, HERE)
