@@ -6,6 +6,14 @@ resume point for the three remaining follow-ups. Everything below lives in
 `SanskritLexicography/RussianTranslation/`, branch `recover/slicec-top3-pat-ga-vad`
 ([PR #25](https://github.com/gasyoun/SanskritLexicography/pull/25)).
 
+> **Status (2026-06-30):** ✅ **FU2 SHIPPED** —
+> [`src/pilot/audit_window_en.py`](https://github.com/gasyoun/SanskritLexicography/blob/recover/slicec-top3-pat-ga-vad/RussianTranslation/src/pilot/audit_window_en.py)
+> (report-only; 0 hard flags over all 16 pilot roots), wired into `save_and_audit.py` (tag `en`).
+> ✅ **FU3 SHIPPED** —
+> [`src/promote_en.py`](https://github.com/gasyoun/SanskritLexicography/blob/recover/slicec-top3-pat-ga-vad/RussianTranslation/src/promote_en.py)
+> (German-text fuzzy join; 2417 store rows now carry `en`, `dcs_freq` re-annotated).
+> ⏳ **FU1 OPEN** — the freq-ordered bulk EN run is real Max-quota spend; coordinate scope with MG first.
+
 ## ⚠️ Read first — environment + coordination
 
 - **Check your branch before committing:** `git rev-parse --abbrev-ref HEAD` must be
