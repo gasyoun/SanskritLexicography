@@ -10,12 +10,51 @@
 > - **`jan`/`han` salvaged** to stable names `wf_output.sc.jan_full.json` / `wf_output.sc.han.json`.
 > - **The §Guardrail fix is already implemented** in [`save_and_audit.py`](save_and_audit.py)
 >   (overwrite-refusal + `--merge`). Do not re-add it.
-> - **DONE this session (Max re-run, ≤3-wide): `pat` (73), `gA` (65), `vad` (47).** Saved as
->   full per-root files; bridge coverage 1431→1603 non-null cards / 7218 sense rows; pat/gA/vad
->   off the thin-warning list. Residual requeues left for an optional quality pass:
->   transient nulls pat 5 / gA 2; defect (semantic-risk, G5 territory) pat 14 / gA 6 / vad 8.
-> - **STILL TO DO (12 roots, ~390 cards):** Sam(36), vraj(34), Buj(33), Bid(32), pA(32),
->   Cid(27), yat(25), naS(25), yaj(25), rakz(23), hi(19), mad(17) — same loop as below.
+> - **DONE — ALL 15 roots re-run this session (Max, ≤3-wide).** First wave: `pat`(73),
+>   `gA`(65), `vad`(47). Remaining 12: `Sam`(38), `Buj`(39), `vraj`(34), `Bid`(35), `pA`(34),
+>   `Cid`(32), `yat`(28), `naS`(26), `yaj`(25), `rakz`(23), `hi`(20), `mad`(21). All saved as
+>   full per-root files. **Final bridge: 1920 non-null cards / 8015 sense rows / 46 headwords;
+>   no root left on the thin-warning list.** Slice-C recovery COMPLETE.
+> - **Quality pass DONE — all 15 roots requeued (transient nulls + defect rework).** Each
+>   root's requeue keys re-translated via `requeue_from_audit`-style harnesses
+>   (`run_pilot_wf.sc_rq_<root>.js`, ≤3-wide) and `--merge`d back (new non-null replaces the
+>   defect card; nulls keep prior). Final bridge: **1934 non-null cards / 8592 sense rows /
+>   46 headwords.** Residual: ~3 stubborn null head-cards (Sam/Buj/naS) the fidelity guard
+>   keeps rejecting — bridge skips them, acceptable. (CRLF gotcha: `requeue.keys.txt` is
+>   CRLF; strip `\r` before comma-joining into `--keys`, or only the last key matches.)
+> - **NEW — DCS frequency, THREE dimensions** (per MG, 2026-06-30), all on `dcs_freq` per row:
+>   1. **General band** — `build_dcs_freq.py`: `{band 1-5, count, hapax, attested, core80}`,
+>      per preverb-compound w/ root fallback (96.5% matched). core80 = 2,551 lemmas (2.8% of
+>      types) covering 80% of the 5.69M-token corpus. Gap: vowel-sandhi compounds
+>      (pra+āp→prāp) fall back to root count; sandhi-aware join = follow-up.
+>   2. **POS frequency** — `build_dcs_freq_dims.py`: `dcs_freq.pos` = full upos distribution
+>      (counts + shares + dominant + recalibrated 1-5 band per POS).
+>   3. **Genre frequency** — `dcs_freq.genre` (16 fine genres, recalibrated band per genre)
+>      + `dcs_freq.era` (5-era Renou rollup). Counts are **TOKEN frequency** per register:
+>      each text is resolved to its Renou register(s) via `build_dcs_renou`'s genre+name
+>      logic, then tokens are counted per register (token→sentence→chapter→text join).
+>      76% of corpus tokens land in a register; the rest (medical / rasaśāstra / nighaṇṭu /
+>      classical śāstra prose) genuinely has no Renou register and contributes to none.
+>   Bands are RECALIBRATED per dimension (quintile edges within each genre/POS), vs the
+>   general band's fixed log10 edges. Both builders carry `--selftest`; tables gitignored.
+> - **Both earlier caveats tightened (2026-06-30):** (a) genre is now token-frequency, not
+>   document-frequency (above); (b) `sandhi_key` (build_dcs_freq.py) applies vowel sandhi at
+>   the preverb–root junction so `pra+āp`→`prāp`, `vi+āp`→`vyāp`, `anu+ā`→`anvā` match their
+>   exact compound lemma (match kind `compound_sandhi`) instead of falling back to the root
+>   count — e.g. prāp now 6022 (its own), was the root āp's 2328.
+> - **Genre recovery after re-reading Renou (2026-06-30):** the earlier "24% of tokens have
+>   no Renou register" over-claimed. Renou files technical śāstra / kośa / classical prose in
+>   **state IV (Classical)** — they have a *state*, just no dedicated register *chapter*. So
+>   `build_dcs_freq_dims.py` adds a LOCAL recovery layer (`extra_registers`): two extension
+>   codes `sastra` (technical/scientific prose: āyurveda, jyotiṣa, rasa, arthaśāstra) and
+>   `kosa` (lexica; the Vedic Nighaṇṭu is Vedāṅga but DCS carries only classical nighaṇṭus),
+>   both rolled into the **Classical** era (faithful to their Renou state); the fine axis
+>   marks them `extension_codes` (NOT Renou register chapters). Also fixed name-match misses
+>   that dropped real registers (Atharvaveda(Śaunaka)→atharva, Kāṭhakasaṃhitā→yajus,
+>   Kauśikasūtra→sutra, Tantrāloka→tantra, Rasārṇava→sastra). **Token coverage 76%→94%**;
+>   store genre-dist 96.0%→96.5%; 19 genre codes. The shared Renou lattice
+>   (`renou_register.py`, `dcs_lemma_renou.json`) is untouched — recovery is local to the
+>   freq-dims builder.
 
 **For:** a fresh agent session (or the autonomous account). **Goal:** restore the ~630
 Slice-C cards missing from local files so the print bridge ([`src/promote_final_cards.py`](src/promote_final_cards.py))
