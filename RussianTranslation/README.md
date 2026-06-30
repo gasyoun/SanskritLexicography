@@ -48,11 +48,16 @@ python src\nominal_grammar.py --table agni m.    # one headword's declension
 
 FAIR outputs (committed): `src/headword_index.tsv` (98,639 headwords ·
 `k1·hom·lex·accented·index·stem_class·compound·irregularities`),
-`src/reverse_paradigm_index.json`, `src/paradigm_stats.tsv`. The **portraits are
-deliberately left untouched** so the translation harness never inlines this; nominal
-windows run grammar **OFF** by default. Open extension (unblocked, not built): the full
-Vedic accent a–f axis, validated against [VedaWeb](https://vedaweb.uni-koeln.de) — see
+`src/reverse_paradigm_index.json`, `src/paradigm_stats.tsv`, described by a Frictionless
+[`src/datapackage.json`](src/datapackage.json) (CC-BY-SA-4.0, archivable on its own DOI track).
+The **portraits are deliberately left untouched** so the translation harness never inlines
+this; nominal windows run grammar **OFF** by default. Open extension (unblocked + probed): the
+full Vedic accent a–f axis, validated against [VedaWeb 2.0](https://vedaweb.uni-koeln.de) — see
 [`ZALIZNYAK_INDEX.md`](ZALIZNYAK_INDEX.md) §"Vedic accent mobility".
+
+Task-oriented command flows for all of the above are in [USE_CASES.md](USE_CASES.md) §§9–13
+(look up a headword's grammar/index · render a declension · list a paradigm's headwords ·
+rebuild the dataset · pull accented RV forms from VedaWeb).
 
 ## Guardrails
 
