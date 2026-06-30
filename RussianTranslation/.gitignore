@@ -1,5 +1,6 @@
 
 # Generated per-root pwg_ru harnesses (derived from gen_opt_harness2.py et al.; inlined inputs)
+src/pilot/run_fidelity_judge.js
 src/pilot/run_pilot_wf.opt.js
 src/pilot/run_pilot_wf.opt2.js
 src/pilot/run_pilot_wf.batched.js
