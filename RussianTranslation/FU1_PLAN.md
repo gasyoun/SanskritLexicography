@@ -3,7 +3,9 @@
 Resume spec for the PWG→English **bulk** follow-up (FU1) after FU2 (audit gate) and FU3
 (tri-lingual merge) shipped. **Real Max-quota spend** — run in a Max/Workflow session at
 **≤3-wide concurrency**. All six design decisions below are MG-locked (2026-06-30); do not
-re-litigate. Parent: [`HANDOFF_2026-06-30_pwg_en_followups.md`](HANDOFF_2026-06-30_pwg_en_followups.md).
+re-litigate. This file is the *decision/rationale* record; the step-by-step **execution runbook**
+is [`HANDOFF_2026-06-30_pwg_en_fu1_run.md`](HANDOFF_2026-06-30_pwg_en_fu1_run.md). Parent:
+[`HANDOFF_2026-06-30_pwg_en_followups.md`](HANDOFF_2026-06-30_pwg_en_followups.md).
 
 ## Locked decisions
 
