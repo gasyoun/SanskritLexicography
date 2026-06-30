@@ -42,8 +42,10 @@ def rootmap_meta():
     except (OSError, json.JSONDecodeError):
         overrides = {}
     for subkey, fields in overrides.items():
-        if subkey.startswith('_') or not isinstance(fields, dict):
-            continue                                  # skip the _comment key
+        # Real sub-card keys always contain '~~' (incl. _-prefixed safe-roots like _ap~~..);
+        # this skips the _comment / _dupe_exempt meta-keys without dropping such overrides.
+        if '~~' not in subkey or not isinstance(fields, dict):
+            continue
         meta.setdefault(subkey, {}).update(fields)
     return meta
 
@@ -98,10 +100,34 @@ def allowed_batch_duplicate(tag, keys, meta):
     return batch_of == {tag}
 
 
+def dupe_exempt_map():
+    """root (safe_root prefix) -> homonym -> {normalized exempt tags}. For roots whose PWG entry
+    legitimately RE-USES a sense number across distinct structural levels (verb vs derived noun
+    vs prefix-participle) that the flat tag namespace cannot separate — verified faithful, not
+    model over-production. Declared in the committed rootmap_overrides.json `_dupe_exempt`."""
+    try:
+        ov = json.load(open(OVERRIDES, encoding='utf-8'))
+    except (OSError, json.JSONDecodeError):
+        return {}
+    out = {}
+    for root, homs in (ov.get('_dupe_exempt') or {}).items():
+        if isinstance(homs, dict):
+            out[root] = {hom: {norm(t) for t in tags} for hom, tags in homs.items()}
+    return out
+
+
+def is_dupe_exempt(hom, tag, keys, exempt):
+    roots = {k.split('~~')[0] for k in keys}
+    if len(roots) != 1:                           # a cross-root collision is never exempt
+        return False
+    return tag in exempt.get(next(iter(roots)), {}).get(hom, set())
+
+
 def main():
     wf = sys.argv[1] if len(sys.argv) > 1 else 'wf_output.json'
     results = find_results(json.load(open(wf, encoding='utf-8'))) or []
     meta = rootmap_meta()
+    exempt = dupe_exempt_map()
     # (homonym, normalized tag) -> set of subkeys that rendered it
     seen = collections.defaultdict(set)
     for r in results:
@@ -121,7 +147,8 @@ def main():
                 seen[(homonym(key), t)].add(key)
 
     dupes = {k: v for k, v in seen.items()
-             if len(v) > 1 and not allowed_batch_duplicate(k[1], v, meta)}
+             if len(v) > 1 and not allowed_batch_duplicate(k[1], v, meta)
+             and not is_dupe_exempt(k[0], k[1], v, exempt)}
     if not dupes:
         print('SENSE-DUPE GATE: PASS — no numbered sense rendered by >1 head-part per homonym')
         return 0
