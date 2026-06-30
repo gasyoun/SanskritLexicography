@@ -15,14 +15,26 @@
 >   `Cid`(32), `yat`(28), `naS`(26), `yaj`(25), `rakz`(23), `hi`(20), `mad`(21). All saved as
 >   full per-root files. **Final bridge: 1920 non-null cards / 8015 sense rows / 46 headwords;
 >   no root left on the thin-warning list.** Slice-C recovery COMPLETE.
-> - **Residual quality pass (optional, NOT done):** transient nulls (cheap low-concurrency
->   re-run) ~15 across pat/gA/vraj/Buj/Bid/Sam/naS/yaj/yat; defect requeues (semantic-risk,
->   G5 territory) ~90 across all roots. Coverage is restored; these are quality, not coverage.
-> - **NEW — DCS frequency banding** (per MG, 2026-06-30): `src/build_dcs_freq.py` +
->   `src/annotate_dcs_freq.py` add a `dcs_freq{band 1-5, count, hapax, attested, core80}`
->   block to every store row (per preverb-compound, root fallback; 96.3% matched). core80 =
->   the 2,551 lemmas (2.8% of types) covering 80% of the 5.69M-token DCS corpus. Known gap:
->   vowel-sandhi compounds (pra+āp→prāp) fall back to root count; sandhi-aware join = follow-up.
+> - **Quality pass DONE — all 15 roots requeued (transient nulls + defect rework).** Each
+>   root's requeue keys re-translated via `requeue_from_audit`-style harnesses
+>   (`run_pilot_wf.sc_rq_<root>.js`, ≤3-wide) and `--merge`d back (new non-null replaces the
+>   defect card; nulls keep prior). Final bridge: **1934 non-null cards / 8592 sense rows /
+>   46 headwords.** Residual: ~3 stubborn null head-cards (Sam/Buj/naS) the fidelity guard
+>   keeps rejecting — bridge skips them, acceptable. (CRLF gotcha: `requeue.keys.txt` is
+>   CRLF; strip `\r` before comma-joining into `--keys`, or only the last key matches.)
+> - **NEW — DCS frequency, THREE dimensions** (per MG, 2026-06-30), all on `dcs_freq` per row:
+>   1. **General band** — `build_dcs_freq.py`: `{band 1-5, count, hapax, attested, core80}`,
+>      per preverb-compound w/ root fallback (96.5% matched). core80 = 2,551 lemmas (2.8% of
+>      types) covering 80% of the 5.69M-token corpus. Gap: vowel-sandhi compounds
+>      (pra+āp→prāp) fall back to root count; sandhi-aware join = follow-up.
+>   2. **POS frequency** — `build_dcs_freq_dims.py`: `dcs_freq.pos` = full upos distribution
+>      (counts + shares + dominant + recalibrated 1-5 band per POS).
+>   3. **Genre frequency** — `dcs_freq.genre` (16 fine DCS genres, raw doc-counts from the
+>      Renou register_support layer, recalibrated band per genre) + `dcs_freq.era` (5-era
+>      Renou rollup). Genre count = document frequency (n texts of that genre), not tokens —
+>      the DCS `text` table carries no genre column, so token-per-genre isn't derivable.
+>   Bands are RECALIBRATED per dimension (quintile edges within each genre/POS), vs the
+>   general band's fixed log10 edges. Both builders carry `--selftest`; tables gitignored.
 
 **For:** a fresh agent session (or the autonomous account). **Goal:** restore the ~630
 Slice-C cards missing from local files so the print bridge ([`src/promote_final_cards.py`](src/promote_final_cards.py))
