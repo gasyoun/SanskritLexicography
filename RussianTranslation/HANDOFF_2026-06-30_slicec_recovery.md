@@ -29,12 +29,19 @@
 >      (pra+āp→prāp) fall back to root count; sandhi-aware join = follow-up.
 >   2. **POS frequency** — `build_dcs_freq_dims.py`: `dcs_freq.pos` = full upos distribution
 >      (counts + shares + dominant + recalibrated 1-5 band per POS).
->   3. **Genre frequency** — `dcs_freq.genre` (16 fine DCS genres, raw doc-counts from the
->      Renou register_support layer, recalibrated band per genre) + `dcs_freq.era` (5-era
->      Renou rollup). Genre count = document frequency (n texts of that genre), not tokens —
->      the DCS `text` table carries no genre column, so token-per-genre isn't derivable.
+>   3. **Genre frequency** — `dcs_freq.genre` (16 fine genres, recalibrated band per genre)
+>      + `dcs_freq.era` (5-era Renou rollup). Counts are **TOKEN frequency** per register:
+>      each text is resolved to its Renou register(s) via `build_dcs_renou`'s genre+name
+>      logic, then tokens are counted per register (token→sentence→chapter→text join).
+>      76% of corpus tokens land in a register; the rest (medical / rasaśāstra / nighaṇṭu /
+>      classical śāstra prose) genuinely has no Renou register and contributes to none.
 >   Bands are RECALIBRATED per dimension (quintile edges within each genre/POS), vs the
 >   general band's fixed log10 edges. Both builders carry `--selftest`; tables gitignored.
+> - **Both earlier caveats tightened (2026-06-30):** (a) genre is now token-frequency, not
+>   document-frequency (above); (b) `sandhi_key` (build_dcs_freq.py) applies vowel sandhi at
+>   the preverb–root junction so `pra+āp`→`prāp`, `vi+āp`→`vyāp`, `anu+ā`→`anvā` match their
+>   exact compound lemma (match kind `compound_sandhi`) instead of falling back to the root
+>   count — e.g. prāp now 6022 (its own), was the root āp's 2328.
 
 **For:** a fresh agent session (or the autonomous account). **Goal:** restore the ~630
 Slice-C cards missing from local files so the print bridge ([`src/promote_final_cards.py`](src/promote_final_cards.py))

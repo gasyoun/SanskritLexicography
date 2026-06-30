@@ -64,6 +64,53 @@ _SLP1_LEAK = {'B': 'bh', 'K': 'kh', 'G': 'gh', 'C': 'ch', 'J': 'jh', 'D': 'dh',
               'x': 'ḷ', 'f': 'ṛ'}
 
 
+_VSET = set('aāiīuūṛṝḷeo')
+
+
+def _vowel_combine(L, R):
+    """External vowel sandhi for one junction: last vowel L + first vowel R -> joined.
+    Covers the preverb+root cases that plain concatenation misses (pra+āp -> prāp,
+    vi+āp -> vyāp, anu+ā -> anvā, upa+i -> upe). Returns the replacement for 'L'+'R'."""
+    if L in 'aā':
+        return {'a': 'ā', 'ā': 'ā', 'i': 'e', 'ī': 'e', 'u': 'o', 'ū': 'o',
+                'ṛ': 'ar', 'ṝ': 'ar', 'ḷ': 'al', 'e': 'ai', 'o': 'au'}.get(R, 'ā' + R)
+    if L in 'iī':
+        return 'ī' + R if R in 'iī' else 'y' + R
+    if L in 'uū':
+        return 'ū' + R if R in 'uū' else 'v' + R
+    if L in 'ṛṝ':
+        return 'ṝ' + R if R in 'ṛṝ' else 'r' + R
+    return L + R                                    # e/o: leave (rare in preverbs)
+
+
+def sandhi_join(parts):
+    """Fold ['pra','āp'] -> 'prāp' applying vowel sandhi at each junction; a
+    consonant-initial right part (pra+vad) or consonant-final left just concatenates."""
+    parts = [p for p in parts if p]
+    if not parts:
+        return ''
+    out = parts[0]
+    for nxt in parts[1:]:
+        if out and nxt and out[-1] in _VSET and nxt[0] in _VSET:
+            out = out[:-1] + _vowel_combine(out[-1], nxt[0]) + nxt[1:]
+        else:
+            out += nxt
+    return out
+
+
+def sandhi_key(iast):
+    """Normalized DCS-comparable key for a compound 'iast' via sandhi (not plain concat).
+    'pra+āp' -> 'prāp'; 'dhā (vyā+dhā)' -> drops the parenthetical first."""
+    if not iast:
+        return ''
+    head = re.sub(r'\s*\([^)]*\)', '', iast).strip()
+    head = ''.join(_SLP1_LEAK.get(c, c) for c in head)      # repair leak before sandhi
+    parts = [p for p in re.split(r'[+\-\s]+', head) if p]
+    if len(parts) < 2:
+        return ''
+    return norm_lemma(sandhi_join(parts))
+
+
 def norm_lemma(s):
     """Normalize an IAST lemma / store 'iast' form to a DCS-comparable key.
 
@@ -136,6 +183,13 @@ def selftest():
     assert norm_lemma('prā-yā') == 'prāyā'
     assert norm_lemma('dhā (vyā+dhā)') == 'dhā'
     assert norm_lemma('aBisam+vas') == 'abhisamvas', norm_lemma('aBisam+vas')
+    # sandhi join: vowel-initial roots that plain concat misses
+    assert sandhi_join(['pra', 'āp']) == 'prāp', sandhi_join(['pra', 'āp'])
+    assert sandhi_join(['vi', 'āp']) == 'vyāp'
+    assert sandhi_join(['anu', 'ā']) == 'anvā'
+    assert sandhi_join(['upa', 'i']) == 'upe'
+    assert sandhi_join(['pra', 'vad']) == 'pravad'          # consonant-initial: concat
+    assert sandhi_key('pra+āp') == 'prāp' and sandhi_key('vad') == ''
     # banding + pareto on a tiny synthetic corpus
     c = collections.Counter({'a': 1000, 'b': 50, 'c': 5, 'd': 1})
     t = finalize(c)

@@ -35,7 +35,7 @@ import sys
 sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
 
-from build_dcs_freq import norm_lemma            # one canonical normalizer
+from build_dcs_freq import norm_lemma, sandhi_key   # canonical normalizer + sandhi joiner
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 FREQ = os.path.join(HERE, 'dcs_freq.json')
@@ -55,10 +55,14 @@ def root_tail(iast):
 
 
 def lookup(iast, by_lemma):
-    """-> (record_or_None, match_kind, matched_key)."""
+    """-> (record_or_None, match_kind, matched_key). Tries, in order:
+    plain-concat compound -> sandhi-joined compound -> bare-root fallback."""
     key = norm_lemma(iast)
     if key in by_lemma:
         return by_lemma[key], 'compound', key
+    sk = sandhi_key(iast)
+    if sk and sk in by_lemma:
+        return by_lemma[sk], 'compound_sandhi', sk
     tail = norm_lemma(root_tail(iast))
     if tail and tail in by_lemma:
         return by_lemma[tail], 'root_fallback', tail
@@ -93,10 +97,14 @@ def dims_block(iast, by_lemma):
 def selftest():
     by = {'anuvad': {'count': 5, 'band': 2, 'hapax': False, 'core80': False},
           'vad': {'count': 3918, 'band': 5, 'hapax': False, 'core80': True},
+          'prāp': {'count': 2328, 'band': 5, 'hapax': False, 'core80': True},
           'kvip': {'count': 1, 'band': 1, 'hapax': True, 'core80': False}}
     # compound hit
     b = freq_block('anu+vad', by)
     assert b['matched'] == 'compound' and b['band'] == 2 and b['attested']
+    # vowel-sandhi compound: pra+āp -> prāp (was a root_fallback before)
+    b = freq_block('pra+āp', by)
+    assert b['matched'] == 'compound_sandhi' and b['matched_key'] == 'prāp' and b['band'] == 5
     # compound miss -> root fallback to rightmost element
     b = freq_block('pratyabhi+vad', by)
     assert b['matched'] == 'root_fallback' and b['matched_key'] == 'vad' and b['band'] == 5
@@ -127,7 +135,7 @@ def main():
         dims = json.load(open(args.dims, encoding='utf-8'))['by_lemma']
     rows = [json.loads(l) for l in open(args.store, encoding='utf-8') if l.strip()]
 
-    kinds = {'compound': 0, 'root_fallback': 0, 'none': 0}
+    kinds = {'compound': 0, 'compound_sandhi': 0, 'root_fallback': 0, 'none': 0}
     bands = {0: 0, 1: 0, 2: 0, 3: 0, 4: 0, 5: 0}
     hapax = core = pos_n = genre_n = 0
     for r in rows:
@@ -150,6 +158,7 @@ def main():
     print('=== DCS FREQUENCY ANNOTATION ===')
     print('store rows           : %d' % n)
     print('matched compound     : %d (%.1f%%)' % (kinds['compound'], 100 * kinds['compound'] / max(1, n)))
+    print('matched sandhi-compound: %d (%.1f%%)' % (kinds['compound_sandhi'], 100 * kinds['compound_sandhi'] / max(1, n)))
     print('matched root-fallback: %d (%.1f%%)' % (kinds['root_fallback'], 100 * kinds['root_fallback'] / max(1, n)))
     print('absent from DCS      : %d (%.1f%%)' % (kinds['none'], 100 * kinds['none'] / max(1, n)))
     print('band distribution    : ' + ', '.join('%d:%d' % (b, bands[b]) for b in range(5, -1, -1)))

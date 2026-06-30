@@ -39,18 +39,15 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 RENOU = os.path.join(HERE, 'dcs_lemma_renou.json')
 OUT = os.path.join(HERE, 'dcs_freq_dims.json')
 
-# 16 fine DCS register genres -> 5 Renou eras (chronological/register rollup).
-# rgveda+yajus = Saṃhitā Vedic; brahmana+upanisad = Brāhmaṇa–Āraṇyaka–Upaniṣad;
-# sutra+vyakarana+karika+bhasya = Sūtra & learned śāstra; epic+purana+smrti = Epic–Purāṇa–Smṛti;
-# kavya+katha+natya+tantra+bauddha = Classical belles-lettres / sectarian. Tune here.
+# Renou register codes (renou_register.REGISTERS) -> 5 Renou eras (chronological rollup).
 ERA_MAP = {
-    'rgveda': 'Vedic', 'yajus': 'Vedic',
+    'rgveda': 'Vedic', 'atharva': 'Vedic', 'yajus': 'Vedic',
     'brahmana': 'Brahmana-Upanisad', 'upanisad': 'Brahmana-Upanisad',
     'sutra': 'Sutra-Sastra', 'vyakarana': 'Sutra-Sastra', 'karika': 'Sutra-Sastra',
     'bhasya': 'Sutra-Sastra',
-    'epic': 'Epic-Purana', 'purana': 'Epic-Purana', 'smrti': 'Epic-Purana',
-    'kavya': 'Classical', 'katha': 'Classical', 'natya': 'Classical',
-    'tantra': 'Classical', 'bauddha': 'Classical',
+    'epic': 'Epic-Purana', 'epig': 'Epic-Purana', 'purana': 'Epic-Purana', 'smrti': 'Epic-Purana',
+    'kavya': 'Classical', 'katha': 'Classical', 'natya': 'Classical', 'tantra': 'Classical',
+    'bauddha': 'Classical', 'jaina': 'Classical', 'hors_inde': 'Classical',
 }
 ERAS = ['Vedic', 'Brahmana-Upanisad', 'Sutra-Sastra', 'Epic-Purana', 'Classical']
 
@@ -91,21 +88,50 @@ def build_pos(sqlite_path):
     return pos
 
 
-def build_genre(renou_path):
-    """norm_lemma -> {genre -> doc_count} from register_support (merge homonyms by max)."""
-    raw = json.load(open(renou_path, encoding='utf-8'))
+def text_registers(sqlite_path):
+    """text_id -> set(register codes), resolved with build_dcs_renou's genre+name logic
+    (genre route from dcs_texts_clean.json when the title matches; name-substring route
+    always). Returns (id->registers, coverage stats)."""
+    import build_dcs_renou as b
+    exact, norm = b.load_clean()
+    con = sqlite3.connect(sqlite_path)
+    cur = con.cursor()
+    id2regs, resolved = {}, 0
+    for tid, name in cur.execute('select text_id, name from text'):
+        rec = exact.get(name) or norm.get(b._norm(name))
+        genre = rec.get('genre') if rec else None
+        date = rec.get('date') if rec else None
+        regs = set(b.registers_for_text(genre, date, name.lower(), b._CONF_RANK['high']))
+        id2regs[tid] = regs
+        resolved += 1 if regs else 0
+    con.close()
+    return id2regs, resolved
+
+
+def build_genre(sqlite_path):
+    """norm_lemma -> {register -> TOKEN count}. Tokens are counted per register of the
+    text they occur in (a text in N registers contributes to each — union semantics, as
+    in the Renou register layer). Texts with no Renou register (medical/śāstra prose,
+    nighaṇṭu, …) contribute to nothing — that ~24% of tokens is genuinely register-less."""
+    id2regs, _resolved = text_registers(sqlite_path)
+    con = sqlite3.connect(sqlite_path)
+    cur = con.cursor()
     genre = collections.defaultdict(collections.Counter)
-    for lemma, rec in raw.items():
-        if lemma.startswith('__') or not isinstance(rec, dict):
+    q = ('select l.lemma, c.text_id, count(*) n from token t '
+         'join lemma l on t.lemma_id = l.lemma_id '
+         'join sentence s on t.sentence_id = s.id '
+         'join chapter c on s.chapter_id = c.chapter_id '
+         'group by l.lemma_id, c.text_id')
+    for lemma, tid, n in cur.execute(q):
+        regs = id2regs.get(tid)
+        if not regs:
             continue
-        rs = rec.get('register_support') or {}
         key = norm_lemma(lemma)
         if not key:
             continue
-        for g, info in rs.items():
-            n = (info or {}).get('n') or 0
-            if n:
-                genre[key][g] = max(genre[key][g], n)   # homonyms collapse to the max
+        for r in regs:
+            genre[key][r] += n
+    con.close()
     return genre
 
 
@@ -165,7 +191,7 @@ def finalize(pos, genre):
             'pos_quintile_edges': pos_edges,
             'genre_quintile_edges': genre_edges,
             'era_quintile_edges': era_edges,
-            'genre_count_semantics': 'document frequency (n texts of that genre attesting the lemma)',
+            'genre_count_semantics': 'token frequency (tokens of the lemma occurring in texts of that register; texts with no Renou register contribute nothing, ~24% of corpus tokens)',
             'generator': 'build_dcs_freq_dims.py',
             'lemmas_with_pos': len(pos),
             'lemmas_with_genre': len(genre),
@@ -204,11 +230,10 @@ def main():
     args = ap.parse_args()
     if args.selftest:
         return selftest()
-    for p in (args.sqlite, args.renou):
-        if not os.path.exists(p):
-            sys.exit('missing input: %s' % p)
+    if not os.path.exists(args.sqlite):
+        sys.exit('missing DCS sqlite: %s' % args.sqlite)
     pos = build_pos(args.sqlite)
-    genre = build_genre(args.renou)
+    genre = build_genre(args.sqlite)
     table = finalize(pos, genre)
     with open(args.out, 'w', encoding='utf-8') as f:
         json.dump(table, f, ensure_ascii=False)
