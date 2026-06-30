@@ -48,7 +48,14 @@ def iter_cards(path, limit=None):
                 break
 
 
-def approved_store(path):
+APPROVED_STATUSES = {'approved', 'human_reviewed'}
+
+
+def approved_store(path, statuses=APPROVED_STATUSES):
+    """key1 -> [rows] from the translated store, keeping only rows whose review_status is in
+    `statuses` (default the G5-approved set, so unreviewed ai_translated rows stay OUT of the
+    citable edition). Pass a wider set (e.g. via --review-status ai_translated) only to preview
+    the bridge — never for a published release."""
     out = {}
     if not path or not os.path.exists(path):
         return out
@@ -57,9 +64,16 @@ def approved_store(path):
             if not line.strip():
                 continue
             r = json.loads(line)
-            if r.get('review_status') in {'approved', 'human_reviewed'} and r.get('ru'):
+            if r.get('review_status') in statuses and r.get('ru'):
                 out.setdefault(r.get('key1'), []).append(r)
     return out
+
+
+def statuses(args):
+    raw = getattr(args, 'review_status', None)
+    if not raw:
+        return APPROVED_STATUSES
+    return {s.strip() for s in raw.split(',') if s.strip()}
 
 
 def card_glosses(card, translations):
@@ -80,7 +94,7 @@ def card_glosses(card, translations):
 
 def export_tei(args):
     os.makedirs(args.out_dir, exist_ok=True)
-    translations = approved_store(args.store)
+    translations = approved_store(args.store, statuses(args))
     out = os.path.join(args.out_dir, 'tei_lex0.xml')
     with open(out, 'w', encoding='utf-8', newline='') as f:
         f.write('<?xml version="1.0" encoding="UTF-8"?>\n')
@@ -104,7 +118,7 @@ def export_tei(args):
 
 def export_ontolex(args):
     os.makedirs(args.out_dir, exist_ok=True)
-    translations = approved_store(args.store)
+    translations = approved_store(args.store, statuses(args))
     out = os.path.join(args.out_dir, 'ontolex.ttl')
     with open(out, 'w', encoding='utf-8', newline='') as f:
         f.write('@prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .\n')
@@ -132,7 +146,7 @@ def export_ontolex(args):
 
 def export_reverse_index(args):
     os.makedirs(args.out_dir, exist_ok=True)
-    translations = approved_store(args.store)
+    translations = approved_store(args.store, statuses(args))
     out = os.path.join(args.out_dir, 'reverse_index.jsonl')
     count = 0
     with open(out, 'w', encoding='utf-8', newline='') as f:
@@ -161,6 +175,8 @@ def main():
     ap.add_argument('--store', default=DEFAULT_STORE)
     ap.add_argument('--out-dir', default=DEFAULT_RELEASE)
     ap.add_argument('--limit', type=int, default=None)
+    ap.add_argument('--review-status', default=None,
+                    help='comma list of review_status values to include; default = approved,human_reviewed (G5 gate). Use ai_translated only to PREVIEW the bridge.')
     args = ap.parse_args()
     if args.mode in ('tei', 'all'):
         export_tei(args)
