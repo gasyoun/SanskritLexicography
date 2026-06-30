@@ -14,7 +14,7 @@ Quality parity: reuses the FULL production CONV+TR prompt (all HARD RULES, NWS o
 map, Nachträge, microstructure) with a MASKED/BATCHED preamble that overrides only the
 input-format + markup-verbatim specifics ("keep {Tn} verbatim" instead of "{#..#}/<ls>").
 
-Usage:  python src/pilot/gen_opt_harness2.py <root> [--keys=k1,k2] [--budget=9000] [--out=PATH]
+Usage:  python src/pilot/gen_opt_harness2.py <root> [--keys=k1,k2] [--budget=12000] [--out=PATH]
 Writes: src/pilot/run_pilot_wf.opt2.js  (or --out=PATH — use a per-root/per-chat path to
         avoid the gen->copy race when several chats generate harnesses concurrently)
 """
@@ -102,7 +102,13 @@ def parse_args(argv):
     if not argv:
         die('usage: gen_opt_harness2.py <root> [--keys=..] [--budget=N] [--lean] '
             '[--nominal] [--no-grammar]')
-    root, keyfilter, budget, lean, nws_gate = argv[0], None, 9000, False, False
+    # budget = bytes (skeleton+portrait) packed per agent call. Higher = fewer agent calls =
+    # fewer ~30k-token fixed-framework payments per root (the dominant cost). 12000 measured
+    # ~-25% agent calls vs the old 9000 while keeping batches within the tested 13-14-card range;
+    # the post-restore fidelity guard nulls any degraded card -> requeue, so it can't silently
+    # corrupt. Further bumps (16-18k) are available but should be retry-rate-validated on a Max
+    # run first. See TOKEN_LEVER_FINDING_2026-06-30.md (portrait-slim was a non-lever).
+    root, keyfilter, budget, lean, nws_gate = argv[0], None, 12000, False, False
     nominal, grammar_on = False, True
     keylist = None                     # ordered keys (nominal mode preserves order)
     out_path = None                    # --out=PATH overrides the default opt2.js (avoids the
