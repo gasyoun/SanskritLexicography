@@ -42,6 +42,19 @@
 >   the preverb–root junction so `pra+āp`→`prāp`, `vi+āp`→`vyāp`, `anu+ā`→`anvā` match their
 >   exact compound lemma (match kind `compound_sandhi`) instead of falling back to the root
 >   count — e.g. prāp now 6022 (its own), was the root āp's 2328.
+> - **Genre recovery after re-reading Renou (2026-06-30):** the earlier "24% of tokens have
+>   no Renou register" over-claimed. Renou files technical śāstra / kośa / classical prose in
+>   **state IV (Classical)** — they have a *state*, just no dedicated register *chapter*. So
+>   `build_dcs_freq_dims.py` adds a LOCAL recovery layer (`extra_registers`): two extension
+>   codes `sastra` (technical/scientific prose: āyurveda, jyotiṣa, rasa, arthaśāstra) and
+>   `kosa` (lexica; the Vedic Nighaṇṭu is Vedāṅga but DCS carries only classical nighaṇṭus),
+>   both rolled into the **Classical** era (faithful to their Renou state); the fine axis
+>   marks them `extension_codes` (NOT Renou register chapters). Also fixed name-match misses
+>   that dropped real registers (Atharvaveda(Śaunaka)→atharva, Kāṭhakasaṃhitā→yajus,
+>   Kauśikasūtra→sutra, Tantrāloka→tantra, Rasārṇava→sastra). **Token coverage 76%→94%**;
+>   store genre-dist 96.0%→96.5%; 19 genre codes. The shared Renou lattice
+>   (`renou_register.py`, `dcs_lemma_renou.json`) is untouched — recovery is local to the
+>   freq-dims builder.
 
 **For:** a fresh agent session (or the autonomous account). **Goal:** restore the ~630
 Slice-C cards missing from local files so the print bridge ([`src/promote_final_cards.py`](src/promote_final_cards.py))

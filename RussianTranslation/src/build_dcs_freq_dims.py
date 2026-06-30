@@ -39,7 +39,12 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 RENOU = os.path.join(HERE, 'dcs_lemma_renou.json')
 OUT = os.path.join(HERE, 'dcs_freq_dims.json')
 
-# Renou register codes (renou_register.REGISTERS) -> 5 Renou eras (chronological rollup).
+# Renou register codes (+ two LOCAL extension codes, see below) -> 5 Renou eras.
+# `sastra`/`kosa` are NOT in renou_register.REGISTERS — Renou treats technical/scientific
+# prose and lexica as a stylistic variety WITHIN the classical state (IV), not as their own
+# register chapter. We add them on the fine axis so the ~24% śāstra/kośa tokens aren't lost,
+# while the era rollup keeps them faithfully in Classical (their Renou state). See
+# RENOU_SUBSECTIONS_PLAN.md §72 and the 2026-06-30 genre-recovery note.
 ERA_MAP = {
     'rgveda': 'Vedic', 'atharva': 'Vedic', 'yajus': 'Vedic',
     'brahmana': 'Brahmana-Upanisad', 'upanisad': 'Brahmana-Upanisad',
@@ -48,8 +53,45 @@ ERA_MAP = {
     'epic': 'Epic-Purana', 'epig': 'Epic-Purana', 'purana': 'Epic-Purana', 'smrti': 'Epic-Purana',
     'kavya': 'Classical', 'katha': 'Classical', 'natya': 'Classical', 'tantra': 'Classical',
     'bauddha': 'Classical', 'jaina': 'Classical', 'hors_inde': 'Classical',
+    'sastra': 'Classical', 'kosa': 'Classical',          # local extensions (state IV)
 }
 ERAS = ['Vedic', 'Brahmana-Upanisad', 'Sutra-Sastra', 'Epic-Purana', 'Classical']
+EXTENSION_CODES = ('sastra', 'kosa')                     # beyond Renou's literal subsections
+
+# DCS genre -> local extension register (the genres renou_register leaves as None).
+GENRE_EXTRA = {'Medical': 'sastra', 'Arthaśāstra': 'sastra', 'Philosophy': 'sastra',
+               'Kośa/Lexicon': 'kosa'}
+# Name-substring routes that recover registers build_dcs_renou misses. Ordered: a śāstra
+# hint wins over a stray Vedic-looking stem (e.g. 'Ṛgvedavedāṅgajyotiṣa' is jyotiṣa=sastra,
+# not Ṛgveda). Vedic name routes fix titles whose genre lookup fails (atharva/rgveda/yajus
+# are reachable in build_dcs_renou ONLY via the genre route, so a name-only text is dropped).
+NAME_EXTRA = [
+    ('sastra', ('jyotiṣa', 'gaṇita', 'siddhānta', 'āyurveda', 'rasa', 'rasā', 'nighaṇṭu',
+                'suśruta', 'caraka', 'aṣṭāṅgahṛdaya', 'aṣṭāṅgasaṃgraha', 'arthaśāstra')),
+    ('kosa', ('kośa', 'koṣa', 'abhidhāna', 'amarakośa', 'nighaṇṭu')),  # nighaṇṭu = lexical too
+    ('tantra', ('tantrāloka', 'tantrasāra', 'āgama', 'ānandakanda')),
+    ('vyakarana', ('mugdhabodha', 'mugdhāvabodhinī')),
+    ('atharva', ('atharvaveda',)),
+    ('rgveda', ('ṛgveda-saṃhitā', 'r̥gveda')),
+    ('yajus', ('yajurveda', 'kāṭhakasaṃhitā', 'maitrāyaṇīsaṃhitā')),
+    ('sutra', ('kauśikasūtra', 'kauśika-sūtra')),       # Atharva ritual sūtra (Vedic)
+]
+
+
+def extra_registers(name, genre):
+    """Local recovery layer: register(s) for genres/names build_dcs_renou leaves bare.
+    Returns a set (possibly empty). `sastra`/`kosa` are extension codes (state IV)."""
+    out = set()
+    if genre in GENRE_EXTRA:
+        out.add(GENRE_EXTRA[genre])
+    low = name.lower()
+    for code, subs in NAME_EXTRA:
+        if any(s in low for s in subs):
+            out.add(code)
+    # 'pañcatantra' must NOT become tantra (it is katha); guard the bare-stem risk.
+    if 'pañcatantra' in low:
+        out.discard('tantra')
+    return out
 
 
 def quintile_edges(values):
@@ -102,6 +144,7 @@ def text_registers(sqlite_path):
         genre = rec.get('genre') if rec else None
         date = rec.get('date') if rec else None
         regs = set(b.registers_for_text(genre, date, name.lower(), b._CONF_RANK['high']))
+        regs |= extra_registers(name, genre)            # local śāstra/kośa + Vedic/tantra recovery
         id2regs[tid] = regs
         resolved += 1 if regs else 0
     con.close()
@@ -191,7 +234,9 @@ def finalize(pos, genre):
             'pos_quintile_edges': pos_edges,
             'genre_quintile_edges': genre_edges,
             'era_quintile_edges': era_edges,
-            'genre_count_semantics': 'token frequency (tokens of the lemma occurring in texts of that register; texts with no Renou register contribute nothing, ~24% of corpus tokens)',
+            'genre_count_semantics': 'token frequency (tokens of the lemma in texts of that register)',
+            'extension_codes': list(EXTENSION_CODES),
+            'extension_note': 'sastra/kosa are NOT Renou register chapters; added to capture technical-śāstra and lexical tokens (Renou state IV). Era rollup files them in Classical, faithful to their state.',
             'generator': 'build_dcs_freq_dims.py',
             'lemmas_with_pos': len(pos),
             'lemmas_with_genre': len(genre),
@@ -218,6 +263,14 @@ def selftest():
     # era rollup: rgveda->Vedic(2), sutra->Sutra-Sastra(27), epic->Epic-Purana(4)
     assert r['era']['counts']['Vedic'] == 2 and r['era']['counts']['Sutra-Sastra'] == 27
     assert r['era']['counts']['Epic-Purana'] == 4
+    # local recovery layer
+    assert extra_registers('Suśrutasaṃhitā', 'Medical') == {'sastra'}
+    assert extra_registers('Rājanighaṇṭu', None) == {'sastra', 'kosa'}   # nighaṇṭu = both
+    assert extra_registers('Amarakośa', 'Kośa/Lexicon') == {'kosa'}
+    assert extra_registers('Atharvaveda (Śaunaka)', None) == {'atharva'}
+    assert extra_registers('Tantrāloka', None) == {'tantra'}
+    assert extra_registers('Pañcatantra', 'Narrative Prose') == set()    # not tantra
+    assert ERA_MAP['sastra'] == 'Classical' and ERA_MAP['kosa'] == 'Classical'
     print('build_dcs_freq_dims selftest OK')
 
 
