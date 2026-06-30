@@ -150,7 +150,9 @@ small batch is −90 %). See [`../../TLONLY_PROTOTYPE.md`](../../TLONLY_PROTOTYP
 ```powershell
 python src\pilot\gen_opt_harness2.py sTA            # default (batched+masked, -72%)
 # -> writes src\pilot\run_pilot_wf.opt2.js  (run THIS in Max, save result as wf_output.json)
-# --budget=N tunes batch packing (chars of skeleton+portrait per batch; default 9000).
+# --budget=N tunes batch packing (chars of skeleton+portrait per batch; default 12000 —
+#   higher = fewer agent calls = less ~30k/agent fixed overhead; the post-restore fidelity
+#   guard nulls any degraded big-batch card -> requeue. See TOKEN_LEVER_FINDING_2026-06-30.md).
 # A batch retries only its still-unresolved cards; a card whose restored <ls>/{#..#}
 # counts don't match source is nulled -> requeue (never emitted garbled).
 ```
