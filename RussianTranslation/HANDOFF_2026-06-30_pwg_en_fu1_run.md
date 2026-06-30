@@ -8,11 +8,42 @@ Everything lives in `SanskritLexicography/RussianTranslation/`.
 
 ## Status (2026-06-30)
 
-- FU2 (`src/pilot/audit_window_en.py`, EN audit gate) + FU3 (`src/promote_en.py`, tri-lingual
-  merge) are **merged to `master`** (PR #25, squash). The in-process sense-dupe perf fix +
-  this plan are in **PR #26** (`docs/pwg-en-fu1-plan`).
-- FU1 is **not started**. Branch off **`master`** (the old `recover/slicec-top3-pat-ga-vad`
-  branch was deleted on the #25 squash-merge).
+- FU2 (`src/pilot/audit_window_en.py`) + FU3 (`src/promote_en.py`) merged via PR #25; the FU1
+  plan + runbook + in-process sense-dupe perf fix merged via **PR #26 (squash) → in `master`**.
+- **Phase 0 SHIPPED** — PR #27 ([`feat/pwg-en-fu1-phase0`](https://github.com/gasyoun/SanskritLexicography/pull/27)), MERGEABLE, CI green:
+  `fidelity_sample_en.py` + `gen_fidelity_judge_en.py` (Opus DE→EN faithful-to-German judge,
+  `model:'opus'`) reusing `fidelity_aggregate.py` unchanged; `gold_sample_en.py` (EN gold
+  sampler, MW hidden, `period`/`kind` aliases → `gold_packet.py`+`gold_agreement.py` reused);
+  `promote_en.py` extended with `en_provenance` + `--judge`. All selftested.
+- **Phase 1 IN PROGRESS — cost-check.** `nI` done & **clean**: 97 cards / 447 senses, **0 null,
+  0 hard flags** (1 soft DE-residue), sense-dupe PASS → `wf_output.en.nI.json`. Gen tier =
+  **Sonnet** (pinned `model:'sonnet'`); ~431 k subagent tokens / 97 cards ≈ **4.4 k tok/card**,
+  ~380 s, 11 agents (exact $ needs the Max token report — confirm vs the ~$0.033/card estimate).
+  `yA` harness generated & staged (`run_pilot_wf.en_yA.js`, 90 cards), **not yet run**.
+
+## ▶ RESUME HERE (new chat, Phase 1)
+
+Branch = **`feat/pwg-en-fu1-phase0`** (the FU1 branch; off `master` post-#26). `git checkout` it
+and confirm `git rev-parse --abbrev-ref HEAD` ≠ `master` before any commit.
+
+1. **Finish the cost-check:** run the staged `yA` harness via the Workflow tool (1 root, the safe
+   0-null mode), then `python save_and_audit.py yA <task-output-file> en`. Confirm 0 hard flags +
+   live $/card. That closes the "first 2–3 roots" gate → get MG go/no-go for the remaining 27.
+2. **Then the rest of the worklist** (28 left after nI; yA in flight): `dA han car viS jYA vas hA
+   vA diS mA vah iz muc su Ap jan banD man Sru siD vac ji paS brU laB jIv As gam`. Per-root loop
+   below. Run roots **sequentially** (or ≤3-wide max).
+3. **⚠️ `dA` is stale-blocked** — 39 stale split inputs (126 present / 87 declared). Before
+   generating its harness: `python src/pilot/root_window_status.py dA --prune-stale`, recheck PASS.
+4. **Phase 2** once a slice is done: `promote_en.py` → `annotate_dcs_freq.py` → Opus judge
+   (`fidelity_sample_en.py` → `gen_fidelity_judge_en.py` → run via Workflow → `fidelity_aggregate.py`
+   `--sample src/pilot/output/fidelity_sample_en.jsonl`) → fold verdicts with `promote_en.py --judge`
+   → human gold (`gold_sample_en.py` → `gold_packet.py` → 2 annotators → `gold_agreement.py`).
+
+**Gotchas learned this session (do not relearn):**
+- Harness gen needs **`--lang=en`** (with `=`); the space form `--lang en` is silently ignored →
+  RU harness. Verify every harness: `grep -c '"english"'` = 1, `'"russian"'` = 0.
+- Outputs (`wf_output.en.*.json`, generated `.js`, samples) are **gitignored** — commit only code/docs.
+- A second (autonomous) account also commits here — announce, **PR-only**, don't double-run a root.
 
 ## ⚠️ Read first — guardrails
 
