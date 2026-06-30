@@ -65,3 +65,10 @@ src/pilot/output/prompt_rule_audit.md
 
 # Local API retry ledger
 src/corpus_lexicon.failures.jsonl
+
+# regenerable DCS frequency table (build_dcs_freq.py)
+src/dcs_freq.json
+src/pwg_ru_translated.jsonl.prefreq.bak
+src/dcs_freq_dims.json
+src/mw_en_tm.json
+src/pilot/run_pilot_wf.en_*.js

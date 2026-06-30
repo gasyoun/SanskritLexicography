@@ -74,12 +74,18 @@ def main():
 
     if "--no-audit" in flags:
         return
-    audit = os.path.join(HERE, "src", "pilot", "audit_window.py")
+    # The RU gate (audit_window.py) is .merged.md/RU-specific; the EN track has its own
+    # report-only sibling that audits the wf_output.en.*.json per-sense english fields.
+    if tag == "en":
+        audit = os.path.join(HERE, "src", "pilot", "audit_window_en.py")
+        cmd = [sys.executable, audit, out_path]
+    else:
+        audit = os.path.join(HERE, "src", "pilot", "audit_window.py")
+        cmd = [sys.executable, audit, out_path, "--root", root]
     if not os.path.exists(audit):
-        print("(audit_window.py not found — saved only)")
+        print(f"({os.path.basename(audit)} not found — saved only)")
         return
-    p = subprocess.run([sys.executable, audit, out_path, "--root", root],
-                       text=True, encoding="utf-8")
+    p = subprocess.run(cmd, text=True, encoding="utf-8")
     sys.exit(p.returncode)
 
 
