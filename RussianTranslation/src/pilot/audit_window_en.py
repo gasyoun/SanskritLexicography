@@ -33,11 +33,12 @@ Report-only by default (exit 0). `--strict` exits non-zero if any HARD gate
   python src/pilot/audit_window_en.py wf_output.en.pat.json --no-mw   # skip MW cross-check
 """
 import argparse
+import contextlib
 import glob
+import io
 import json
 import os
 import re
-import subprocess
 import sys
 
 sys.stdout.reconfigure(encoding='utf-8')
@@ -73,7 +74,6 @@ STOP = frozenset('the a an of to and or in on at for with from by as is be are w
 # Structural sense tags (preverb / secondary-conjugation headers) that legitimately carry
 # trivial repeated prose ("With ..."); the same SKIP set the RU sense-dupe gate uses.
 HEADERLIKE = ('header', 'gramm-forms', 'grammar', 'paradigm')
-SENSE_DUPES = os.path.join(SRC, 'audit_sense_dupes.py')
 
 
 def prose(text):
@@ -188,6 +188,41 @@ def audit_card(result, tm, do_mw):
     return {'key': key, 'null': False, 'flags': flags}
 
 
+def load_sense_dupes():
+    """Import the language-agnostic RU sense-dupe gate once (it keys on tags, not gloss
+    language). In-process call avoids a Python-interpreter spawn per file — the per-spawn
+    startup was the audit's dominant cost at scale."""
+    if SRC not in sys.path:
+        sys.path.insert(0, SRC)
+    try:
+        import audit_sense_dupes
+        return audit_sense_dupes
+    except Exception as e:                       # pragma: no cover - import guard
+        print('(audit_sense_dupes import failed: %s)' % e, file=sys.stderr)
+        return None
+
+
+def run_sense_dupes(mod, path):
+    """Call audit_sense_dupes.main() in-process for `path`, capturing its GATE line + rc."""
+    if mod is None:
+        return {'returncode': None, 'summary': '(audit_sense_dupes unavailable)'}
+    saved_argv = sys.argv
+    buf = io.StringIO()
+    try:
+        sys.argv = ['audit_sense_dupes', path]
+        with contextlib.redirect_stdout(buf):
+            rc = mod.main()
+    except SystemExit as e:
+        rc = e.code if isinstance(e.code, int) else 1
+    except Exception as e:                       # pragma: no cover - defensive
+        return {'returncode': None, 'summary': '(sense-dupe error: %s)' % e}
+    finally:
+        sys.argv = saved_argv
+    out = buf.getvalue()
+    line = next((l for l in out.splitlines() if 'GATE' in l), out.strip())
+    return {'returncode': rc, 'summary': line.strip()}
+
+
 HARD = ('MISSING-EN', 'LS-LOSS', 'SAN-LOSS', 'AB-LOSS', 'SENSE-DUPE')
 
 
@@ -221,6 +256,7 @@ def main():
                   file=sys.stderr)
             do_mw = False
 
+    sense_dupes_mod = load_sense_dupes()
     totals = {'files': 0, 'cards': 0, 'null': 0, 'senses': 0}
     flag_counts = {}
     per_file = []
@@ -248,15 +284,11 @@ def main():
             totals['senses'] += sum(len(r.get('senses') or [])
                                     for r in (res.get('card') or {}).get('records') or [])
         # Canonical cross-card sense-dupe gate — language-agnostic (keys on tags, not gloss
-        # language), so the existing RU tool runs unchanged on the EN wf_output.
-        sd = {'returncode': None, 'summary': '(audit_sense_dupes.py not found)'}
-        if os.path.exists(SENSE_DUPES):
-            p = subprocess.run([sys.executable, SENSE_DUPES, path],
-                               capture_output=True, text=True, encoding='utf-8')
-            line = next((l for l in p.stdout.splitlines() if 'GATE' in l), p.stdout.strip())
-            sd = {'returncode': p.returncode, 'summary': line.strip()}
-            if p.returncode:
-                flag_counts['SENSE-DUPE'] = flag_counts.get('SENSE-DUPE', 0) + 1
+        # language), so the existing RU tool runs unchanged on the EN wf_output. Called
+        # in-process (see run_sense_dupes) to avoid a subprocess spawn per file.
+        sd = run_sense_dupes(sense_dupes_mod, path)
+        if sd['returncode']:
+            flag_counts['SENSE-DUPE'] = flag_counts.get('SENSE-DUPE', 0) + 1
 
         per_file.append({'file': os.path.basename(path), 'flags': file_flags, 'sense_dupe': sd})
         print('\n=== %s ===' % os.path.basename(path))

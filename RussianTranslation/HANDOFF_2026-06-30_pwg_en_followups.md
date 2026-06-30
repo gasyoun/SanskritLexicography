@@ -12,7 +12,13 @@ resume point for the three remaining follow-ups. Everything below lives in
 > ✅ **FU3 SHIPPED** —
 > [`src/promote_en.py`](https://github.com/gasyoun/SanskritLexicography/blob/recover/slicec-top3-pat-ga-vad/RussianTranslation/src/promote_en.py)
 > (German-text fuzzy join; 2417 store rows now carry `en`, `dcs_freq` re-annotated).
-> ⏳ **FU1 OPEN** — the freq-ordered bulk EN run is real Max-quota spend; coordinate scope with MG first.
+> ⏳ **FU1 PLANNED, not yet run** — all six design decisions MG-locked 2026-06-30; full spec +
+> 30-root worklist (1,260 subcards, ~$42 Sonnet) in
+> [`FU1_PLAN.md`](https://github.com/gasyoun/SanskritLexicography/blob/recover/slicec-top3-pat-ga-vad/RussianTranslation/FU1_PLAN.md).
+> Summary: EN-only on the already-RU'd roots + merge (bilingual single-pass reserved for future
+> roots); Sonnet generate + Opus judge; scope = match RU coverage; validation = audit + judge +
+> human gold sample (ground truth = faithful to the PWG German); full per-sense provenance. Build
+> the Opus EN judge + provenance-aware merge + gold sampler (no quota) before the Max run.
 
 ## ⚠️ Read first — environment + coordination
 
