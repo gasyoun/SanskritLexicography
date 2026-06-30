@@ -253,14 +253,25 @@ rewrite prompts, requeue cards, or replace human judgment.
 `judge_sample.keys.txt` is the semantic review spend queue: all Python-gate failures plus a
 deterministic 10 % sample of clean translated keys. It is NOT the mechanical requeue list.
 
+## Concurrency — run a throttled driver, not N parallel chats
+
+**Do not launch more than ~3 root harnesses as separate Workflows at once.** Each generated
+harness internally fans out to ~8–14 agents, so N concurrent root-harnesses peak at N×~12
+Sonnet agents on a single Max session. Slice D launched 18 at once → ~140–250 peak agents →
+~80+ `Server is temporarily limiting requests` 429s → 117 transient null cards; single-root
+runs measured **zero** transient failures. Run roots sequentially or ≤3-wide from one driver;
+a clean sequential sweep is faster end-to-end than a collapsed wide run plus its recovery pass.
+
 ## Flaky API / Internet Policy
 
 - There is no Claude API client in this repo for production PWG translation. Claude work runs
   through the Max Workflow surface, so the local scripts must make interruptions resumable
   instead of trying to hide network loss.
 - The generated optimized harness retries each card once. A still-null card is recorded by
-  `audit_window.py` and lands in `requeue.keys.txt`; rerun only those cards with
-  `requeue_from_audit.py`.
+  `audit_window.py`. The requeue list is **split** so a cheap re-run never triggers expensive
+  rework: `requeue.transient.keys.txt` (null cards = rate-limit/dropout) vs
+  `requeue.defect.keys.txt` (a gate flagged real content). A window whose only requeue is
+  transient nulls reports state `transient_only` — re-run just those at low concurrency.
 - The stale-provenance check is mandatory after any interrupted run. It prevents old
   `wf_output.json` files from being audited against newly regenerated rootmaps or inputs.
 - DeepSeek corpus-lexicon API calls are append-only/resumable in `build_corpus_lexicon.py`.
@@ -268,13 +279,15 @@ deterministic 10 % sample of clean translated keys. It is NOT the mechanical req
   `DEEPSEEK_BACKOFF_BASE` to tune retry behavior; failed API batches are logged locally and
   can be retried later with `--retry-failed`.
 
-If `requeue.keys.txt` is non-empty, generate the rerun harness directly from it:
+If `requeue.keys.txt` is non-empty, generate the rerun harness directly from it (pass
+`--transient` for the cheap null-only re-run, `--defect` for the rework-only set):
 
 ```powershell
-python src\pilot\requeue_from_audit.py sTA
+python src\pilot\requeue_from_audit.py sTA --transient   # null cards only (state transient_only)
+python src\pilot\requeue_from_audit.py sTA               # all requeue keys
 ```
 
-Run the regenerated `run_pilot_wf.opt.js`, save its JSON as the next `wf_output.json`, and rerun
+Run the regenerated `run_pilot_wf.opt2.js`, save its JSON as the next `wf_output.json`, and rerun
 `audit_window.py`.
 
 If `requeue.keys.txt` is empty and `judge_sample.keys.txt` is non-empty, send only those keys to

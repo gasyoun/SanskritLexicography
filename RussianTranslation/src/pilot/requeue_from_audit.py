@@ -1,7 +1,9 @@
 #!/usr/bin/env python
-"""Build an optimized rerun harness from the latest audit_window requeue file.
+"""Build an optimized (gen_opt_harness2) rerun harness from the latest audit_window requeue.
 
-  python src/pilot/requeue_from_audit.py sTA
+  python src/pilot/requeue_from_audit.py sTA               # all requeue keys (requeue.keys.txt)
+  python src/pilot/requeue_from_audit.py sTA --transient   # only null cards (cheap re-run)
+  python src/pilot/requeue_from_audit.py sTA --defect      # only real content failures (rework)
 """
 import json
 import os
@@ -29,26 +31,37 @@ def rootmap_path(root):
     return None
 
 
-def read_requeue():
-    if not os.path.exists(REQUEUE):
-        sys.exit('no %s — run audit_window.py --write-requeue first' % REQUEUE)
-    keys = [ln.strip() for ln in open(REQUEUE, encoding='utf-8') if ln.strip()]
+def requeue_file(which):
+    return os.path.join(OUT, {
+        'transient': 'requeue.transient.keys.txt',   # null cards only — cheap re-run
+        'defect': 'requeue.defect.keys.txt',         # real content failures — rework
+    }.get(which, 'requeue.keys.txt'))
+
+
+def read_requeue(path):
+    if not os.path.exists(path):
+        sys.exit('no %s — run audit_window.py --write-requeue first' % path)
+    keys = [ln.strip() for ln in open(path, encoding='utf-8') if ln.strip()]
     if not keys:
-        sys.exit('empty requeue file: %s' % REQUEUE)
+        sys.exit('empty requeue file: %s' % path)
     return keys
 
 
 def main():
-    root = sys.argv[1] if len(sys.argv) > 1 else ''
+    argv = sys.argv[1:]
+    which = ('transient' if '--transient' in argv else
+             'defect' if '--defect' in argv else 'all')
+    positional = [a for a in argv if not a.startswith('--')]
+    root = positional[0] if positional else ''
     if not root:
-        sys.exit('usage: python src/pilot/requeue_from_audit.py <root>')
+        sys.exit('usage: python src/pilot/requeue_from_audit.py <root> [--transient|--defect]')
     rp = rootmap_path(root)
     if not rp:
         sys.exit('no rootmap for %r under %s' % (root, INP))
     rm = json.load(open(rp, encoding='utf-8'))
     declared = {s['subkey'] for s in rm.get('sub_cards', [])}
     suffixes = {k.split('~~')[-1]: k for k in declared}
-    keys = read_requeue()
+    keys = read_requeue(requeue_file(which))
     resolved, invalid = [], []
     for k in keys:
         full = k if k in declared else suffixes.get(k)
@@ -75,6 +88,7 @@ def main():
 
     harness = os.path.join(HERE, 'run_pilot_wf.opt2.js')
     print('requeue root      : %s' % root)
+    print('requeue source    : %s' % which)
     print('requeue keys      : %d' % len(resolved))
     print('generated harness : %s' % harness)
     print('keys:')
