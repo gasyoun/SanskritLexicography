@@ -112,6 +112,7 @@ def parse_args(argv):
     nominal, grammar_on = False, True
     keylist = None                     # ordered keys (nominal mode preserves order)
     out_path = None                    # --out=PATH overrides the default opt2.js (avoids the
+    lang, mw_tm = 'ru', None           # --lang en + --mw-tm=PATH: PWG->English pilot (MG 2026-06-30)
     for a in argv[1:]:                 # gen->copy race when several chats generate at once)
         if a.startswith('--keys='):
             keylist = [k for k in a.split('=', 1)[1].split(',') if k]
@@ -120,6 +121,10 @@ def parse_args(argv):
             budget = int(a.split('=', 1)[1])
         elif a.startswith('--out='):
             out_path = a.split('=', 1)[1]
+        elif a.startswith('--lang='):
+            lang = a.split('=', 1)[1].strip().lower()
+        elif a.startswith('--mw-tm='):
+            mw_tm = a.split('=', 1)[1]
         elif a == '--lean':
             lean = True
         elif a == '--nws-gate':
@@ -128,7 +133,11 @@ def parse_args(argv):
             nominal = True
         elif a == '--no-grammar':
             grammar_on = False
-    return root, keyfilter, keylist, budget, lean, nws_gate, nominal, grammar_on, out_path
+    if lang not in ('ru', 'en'):
+        die('unknown --lang %r (ru|en)' % lang)
+    if lang == 'en' and mw_tm is None:
+        mw_tm = os.path.join(SRC, 'mw_en_tm.json')      # default MW translation-memory feed
+    return root, keyfilter, keylist, budget, lean, nws_gate, nominal, grammar_on, out_path, lang, mw_tm
 
 
 def extract_nws(tr):
@@ -239,31 +248,75 @@ headword in `cards`, with `key1` matching its '=== CARD <key> ===' header. Omit 
 """
 
 
+def _rename_sense_field(schema, old, new):
+    """Deep-copy the card schema with the per-sense translation field renamed (russian->
+    english) wherever it appears in `properties` / `required`. Used for the --lang en path."""
+    import copy
+    s = copy.deepcopy(schema)
+
+    def walk(d):
+        if isinstance(d, dict):
+            props = d.get('properties')
+            if isinstance(props, dict) and old in props:
+                props[new] = props.pop(old)
+            req = d.get('required')
+            if isinstance(req, list) and old in req:
+                d['required'] = [new if x == old else x for x in req]
+            for v in d.values():
+                walk(v)
+        elif isinstance(d, list):
+            for x in d:
+                walk(x)
+    walk(s)
+    return s
+
+
+def mw_tm_block(root, mw_tm_path):
+    """The MW English translation-memory block injected once per root (en pilot). '' if none."""
+    if not mw_tm_path or not os.path.exists(mw_tm_path):
+        return ''
+    tm = load_json(mw_tm_path).get(root)
+    if not tm:
+        return ''
+    return ('=== MW REFERENCE (English translation memory — Monier-Williams\' own glosses for '
+            'this root; candidate vocabulary, ADJUDICATE against the German + corpus, follow '
+            'PWG\'s sense order, do not copy blindly) ===\n%s\n\n' % tm)
+
+
 def build(root, keys, rootmap, budget, lean=False, nws_gate=False,
-          nominal=False, grammar_on=True):
-    conv = conv_text()
-    tr = extract_conv_tr().replace('${CONV}', conv)
-    # CRITICAL: the production TR tells the model "INPUTS for headword KEY (read both):
-    # KEYFILE.raw.txt / .portrait.json" — i.e. to READ files. In the masked-inline regime
-    # that makes the model call file tools and list the input dir (the yuj retry/cost blowup,
-    # 2026-06-29). Strip it so the only inputs are the inlined masked cards.
-    tr, n = re.subn(
-        r'INPUTS for headword KEY \(read both\):.*?\.portrait\.json[^\n]*',
-        'INPUTS for each headword are INLINED below per card (its masked German skeleton + '
-        'portrait). Do NOT open files, do NOT call any tools, do NOT list directories, do NOT '
-        'supply senses from memory — translate EXACTLY what is inlined, nothing else.',
-        tr, count=1, flags=re.S)
-    if n != 1:
-        die('could not neutralize the TR file-reading block (expected 1 match, got %d)' % n)
-    # A/B variants. --nws-gate: safe (rule 3 kept, only NWS gated). --lean: also compresses
-    # rule 3 (REJECTED — regressed fidelity; kept for the record only).
+          nominal=False, grammar_on=True, lang='ru', mw_tm_path=None):
+    field = 'english' if lang == 'en' else 'russian'   # the per-sense translation field
     nws_block = ''
-    if lean:
-        tr = compress_rule3(tr)
-        tr, nws_block = extract_nws(tr)
-    elif nws_gate:
-        tr, nws_block = extract_nws(tr)
+    if lang == 'en':
+        # PWG->English pilot: a self-contained EN prompt (tr_en.txt). The masked-inline
+        # regime + field mechanics are carried by MASK_PREAMBLE (no file-reading block to
+        # neutralize, no lean/nws variants — full mode only).
+        tr = read_text(os.path.join(REPO, 'src', 'pilot', 'tr_en.txt'))
+    else:
+        conv = conv_text()
+        tr = extract_conv_tr().replace('${CONV}', conv)
+        # CRITICAL: the production TR tells the model "INPUTS for headword KEY (read both):
+        # KEYFILE.raw.txt / .portrait.json" — i.e. to READ files. In the masked-inline regime
+        # that makes the model call file tools and list the input dir (the yuj retry/cost blowup,
+        # 2026-06-29). Strip it so the only inputs are the inlined masked cards.
+        tr, n = re.subn(
+            r'INPUTS for headword KEY \(read both\):.*?\.portrait\.json[^\n]*',
+            'INPUTS for each headword are INLINED below per card (its masked German skeleton + '
+            'portrait). Do NOT open files, do NOT call any tools, do NOT list directories, do NOT '
+            'supply senses from memory — translate EXACTLY what is inlined, nothing else.',
+            tr, count=1, flags=re.S)
+        if n != 1:
+            die('could not neutralize the TR file-reading block (expected 1 match, got %d)' % n)
+        # A/B variants. --nws-gate: safe (rule 3 kept, only NWS gated). --lean: also compresses
+        # rule 3 (REJECTED — regressed fidelity; kept for the record only).
+        if lean:
+            tr = compress_rule3(tr)
+            tr, nws_block = extract_nws(tr)
+        elif nws_gate:
+            tr, nws_block = extract_nws(tr)
     schema = load_json(os.path.join(REPO, 'schemas', 'pwg_ru_final_card.schema.json'))
+    if field != 'russian':
+        schema = _rename_sense_field(schema, 'russian', field)
     defs = schema['$defs']
     card_ref = {'$ref': '#/$defs/card'}
     batch_schema = {
@@ -306,12 +359,14 @@ def build(root, keys, rootmap, budget, lean=False, nws_gate=False,
     else:
         single_grammar = grammar_text(root) if grammar_on else ''
         grammars = {}
+    if lang == 'en':                                    # inject MW TM once per root (root mode)
+        single_grammar = mw_tm_block(root, mw_tm_path) + single_grammar
 
     meta = {
         'schema_version': 'pwg_ru.workflow_meta.v1', 'generator': 'gen_opt_harness2.batched-masked',
         'generated_at': datetime.datetime.now(datetime.timezone.utc).isoformat(
             timespec='seconds').replace('+00:00', 'Z'),
-        'root': root, 'safe_root': safe_name(root),
+        'root': root, 'safe_root': safe_name(root), 'lang': lang,
         'mode': 'nominal_masked' if nominal else 'batched_masked',
         'grammar_layer': ('nominal' if nominal else 'root') if grammar_on else 'none',
         'selected_keys': keys, 'batches': batches, 'batch_count': len(batches),
@@ -345,7 +400,7 @@ function restoreCard(card, k) {
   const ph = PH[k] || []
   for (const rec of (card.records || [])) for (const s of (rec.senses || [])) {
     if (s.german !== undefined) s.german = restore(s.german, ph)
-    if (s.russian !== undefined) s.russian = restore(s.russian, ph)
+    if (s.%(field)s !== undefined) s.%(field)s = restore(s.%(field)s, ph)
   }
   return card
 }
@@ -385,8 +440,8 @@ const grouped = await parallel(BATCHES.map((b, i) => () => translateBatch(b, i))
 const out = grouped.flat()
 return { meta: META, results: out }
 """ % {
-        'root': root, 'tr': json.dumps(tr, ensure_ascii=True),
-        'preamble': json.dumps(MASK_PREAMBLE, ensure_ascii=True),
+        'root': root, 'field': field, 'tr': json.dumps(tr, ensure_ascii=True),
+        'preamble': json.dumps(MASK_PREAMBLE.replace('`russian`', '`%s`' % field), ensure_ascii=True),
         'grammar': json.dumps(single_grammar, ensure_ascii=True),
         'grammars': json.dumps(grammars, ensure_ascii=True),
         'nws': json.dumps(nws_block, ensure_ascii=True),
@@ -401,7 +456,7 @@ return { meta: META, results: out }
 
 
 def main():
-    root, keyfilter, keylist, budget, lean, nws_gate, nominal, grammar_on, out_path = parse_args(sys.argv[1:])
+    root, keyfilter, keylist, budget, lean, nws_gate, nominal, grammar_on, out_path, lang, mw_tm = parse_args(sys.argv[1:])
     if nominal:
         # No rootmap: the headword keys ARE the cards, in the order given.
         if not keylist:
@@ -411,7 +466,7 @@ def main():
         rootmap, keys = selected_keys(root, keyfilter)
         if keylist:
             keys = [k for k in keylist if k in set(keys)]
-    js, batches = build(root, keys, rootmap, budget, lean, nws_gate, nominal, grammar_on)
+    js, batches = build(root, keys, rootmap, budget, lean, nws_gate, nominal, grammar_on, lang, mw_tm)
     out = os.path.abspath(out_path) if out_path else os.path.join(REPO, 'src', 'pilot', 'run_pilot_wf.opt2.js')
     write_text(out, js)
     mode = ('NOMINAL%s' % ('' if grammar_on else '/no-grammar')) if nominal else (

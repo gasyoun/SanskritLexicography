@@ -70,3 +70,4 @@ src/corpus_lexicon.failures.jsonl
 src/dcs_freq.json
 src/pwg_ru_translated.jsonl.prefreq.bak
 src/dcs_freq_dims.json
+src/mw_en_tm.json
