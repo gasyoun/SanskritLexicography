@@ -12,7 +12,7 @@ is [`HANDOFF_2026-06-30_pwg_en_fu1_run.md`](HANDOFF_2026-06-30_pwg_en_fu1_run.md
 | # | Decision | Choice | Consequence |
 |---|---|---|---|
 | 1 | Architecture | **Bilingual for new roots, EN-only for already-RU'd** | FU1's scope is exactly the already-RU'd roots → **this tranche is EN-only + `promote_en.py` merge**. The bilingual single-pass (RU+EN in one workflow call, identical segmentation, one metadata set) is the standing policy for *future* freq roots beyond current RU coverage — adopt it the moment RU and EN extend together. |
-| 2 | Model tier | **Sonnet generate + Opus judge** | Generate with `gen_opt_harness2.py --lang en` (pins `model:'sonnet'`); add an Opus judge pass. Report the tier at every step (per [[feedback_state_model_tier]]). |
+| 2 | Model tier | **Sonnet generate + Opus judge** | Generate with `gen_opt_harness2.py --lang=en` (pins `model:'sonnet'`); add an Opus judge pass. Report the tier at every step (per [[feedback_state_model_tier]]). |
 | 3 | Scope | **Match current RU coverage** | EN for the roots already in the store, no new RU work. Worklist below. |
 | 4 | Validation | **Audit + Opus judge + human gold sample** | FU2 deterministic gate on all + Opus judge on all + a human-validated stratified gold sample with documented inter-annotator agreement (Cohen κ) and error rate. The citable-resource bar. |
 | 5 | Provenance | **Full per-sense** | Each EN sense records model tier, Opus judge verdict + score, `generated_at`, harness SHA, and whether an MW reference was used. |
@@ -54,7 +54,7 @@ the same FAIL until the RU-side h1 dedup lands.
 ```sh
 git rev-parse --abbrev-ref HEAD          # MUST be recover/slicec-top3-pat-ga-vad, not master
 python src/pilot/root_window_status.py <root>            # confirm rootmap + masked inputs exist
-python src/pilot/gen_opt_harness2.py <root> --lang en --out=src/pilot/run_pilot_wf.en_<root>.js
+python src/pilot/gen_opt_harness2.py <root> --lang=en --out=src/pilot/run_pilot_wf.en_<root>.js  # NB: --lang=en (with '='); space form silently falls back to RU
 # → run via in-chat Workflow tool, ≤3-wide
 python save_and_audit.py <root> <task-output-file> en    # runs audit_window_en.py (FU2), no --no-audit
 ```

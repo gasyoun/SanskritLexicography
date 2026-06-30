@@ -65,7 +65,9 @@ Per root (no deviation):
 git rev-parse --abbrev-ref HEAD                          # your FU1 branch, NOT master
 python src/pilot/root_window_status.py <root>            # rootmap + masked inputs must exist;
                                                          # if missing: python src/_pilot_gen_merged.py --manifest freq --root-split --limit N
-python src/pilot/gen_opt_harness2.py <root> --lang en --out=src/pilot/run_pilot_wf.en_<root>.js
+python src/pilot/gen_opt_harness2.py <root> --lang=en --out=src/pilot/run_pilot_wf.en_<root>.js
+# NB: the parser needs --lang=en (with '='); the space form `--lang en` is silently ignored
+# and falls back to RU. Confirm the harness: grep -c '"english"' must be 1, '"russian"' 0.
 # → run run_pilot_wf.en_<root>.js via the in-chat Workflow tool, ≤3-wide
 python save_and_audit.py <root> <task-output-file> en    # runs audit_window_en.py (FU2); fix HARD flags, re-run nulls
 ```
@@ -96,7 +98,7 @@ python src/annotate_dcs_freq.py     # re-attach dcs_freq (language-agnostic, ide
 
 - Plan + decisions: [`FU1_PLAN.md`](FU1_PLAN.md) · parent handoff:
   [`HANDOFF_2026-06-30_pwg_en_followups.md`](HANDOFF_2026-06-30_pwg_en_followups.md)
-- EN harness: [`src/pilot/gen_opt_harness2.py`](src/pilot/gen_opt_harness2.py) (`--lang en`) ·
+- EN harness: [`src/pilot/gen_opt_harness2.py`](src/pilot/gen_opt_harness2.py) (`--lang=en`) ·
   prompt [`src/pilot/tr_en.txt`](src/pilot/tr_en.txt) · MW TM [`src/mw_en_tm.py`](src/mw_en_tm.py)
 - EN audit gate: [`src/pilot/audit_window_en.py`](src/pilot/audit_window_en.py) ·
   merge: [`src/promote_en.py`](src/promote_en.py) · save: [`save_and_audit.py`](save_and_audit.py)
