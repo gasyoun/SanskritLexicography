@@ -654,11 +654,30 @@ def test_requeue_transient_vs_defect_state():
         fail('pre-split reports must remain needs_requeue (no silent transient downgrade)')
 
 
+def test_export_translation_dedup():
+    """Homograph fix: translations attach ONCE per key1, labelled by store homonym; a second
+    same-key1 (homograph) entry must NOT repeat them (was the preview multiplication)."""
+    from export_interop import card_glosses
+    translations = {'dA': [{'ru': 'давать', 'subcard': 'dA~~h0_00_pwg00'},
+                           {'ru': 'резать', 'subcard': 'dA~~h3_00_pwg00'}]}
+    card = {'key1': 'dA', 'attested_senses': {}, 'records': []}
+    emitted = set()
+    t1 = [r for r in card_glosses(card, translations, emitted) if r[0] == 'approved_translation']
+    t2 = [r for r in card_glosses(card, translations, emitted) if r[0] == 'approved_translation']
+    if len(t1) != 2:
+        fail('first homograph entry must carry both translations')
+    if t2:
+        fail('a second same-key1 entry must NOT repeat translations (homograph dedup)')
+    if not (t1[0][1].startswith('h0-') and t1[1][1].startswith('h3-')):
+        fail('each translation sense must be labelled by its store homonym')
+
+
 def main():
     tests = [
         test_workflow_payload_nested,
         test_sense_dupe_batch_override,
         test_sense_dupe_cross_level_exempt,
+        test_export_translation_dedup,
         test_requeue_transient_vs_defect_state,
         test_harness_scope_and_tools,
         test_prompt_rule_audit_template,
