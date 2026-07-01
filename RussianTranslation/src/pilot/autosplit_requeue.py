@@ -80,7 +80,12 @@ def plan(raw, ls_budget=LS_BUDGET):
     citation batches within an oversized (sub)sense. Header attaches to (0,0) only."""
     b = _blocks(raw)
     if not b:
-        return [(0, 0, raw)]                              # tier 0: whole-card retry
+        # <2 detectable (sub)senses. If it is nonetheless citation-dense, it is a SINGLE giant
+        # sense (e.g. hi/banD heads, 160-205 <ls>) — tier 2 still applies: split its citations
+        # into batches (one sense_ord, many part_ord). Otherwise tier 0 = whole-card retry.
+        if raw.count('<ls') > ls_budget:
+            return [(0, pi, p) for pi, p in enumerate(_cit_parts(raw, ls_budget))]
+        return [(0, 0, raw)]
     header, blocks = b
     out = []
     for si, blk in enumerate(blocks):
