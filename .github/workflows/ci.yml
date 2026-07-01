@@ -26,7 +26,7 @@ jobs:
       - name: Install markdownlint-cli2
         run: npm install -g markdownlint-cli2
       - name: Lint markdown (warnings only)
-        run: markdownlint-cli2 "**/*.md" "#node_modules" || echo "::warning::Markdown lint issues found"
+        run: markdownlint-cli2 "**/*.md" "#node_modules" "#RussianTranslation/glossary/md" || echo "::warning::Markdown lint issues found"
 
   link-check:
     name: Markdown link check
