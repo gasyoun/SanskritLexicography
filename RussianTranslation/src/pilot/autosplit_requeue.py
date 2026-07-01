@@ -77,7 +77,11 @@ def _cit_parts(block, ls_budget):
 
 def plan(raw, ls_budget=LS_BUDGET):
     """[(sense_ord, part_ord, text)]. Tier 0 = whole; tier 1 = per (sub)sense; tier 2 =
-    citation batches within an oversized (sub)sense. Header attaches to (0,0) only."""
+    citation batches within an oversized (sub)sense. Header attaches to (0,0) only —
+    but the header ITSELF is budgeted together with that first block, not glued on
+    unconditionally (a verb's conjugation-table header can carry all of a card's citation
+    density with almost no glossable text of its own, e.g. brU pwg00's header alone had 28
+    <ls>/26 {#..#} vs 0 <ls> in the actual first sense — see PROCESS_AUDIT dev note #7)."""
     b = _blocks(raw)
     if not b:
         # <2 detectable (sub)senses. If it is nonetheless citation-dense, it is a SINGLE giant
@@ -89,10 +93,13 @@ def plan(raw, ls_budget=LS_BUDGET):
     header, blocks = b
     out = []
     for si, blk in enumerate(blocks):
-        parts = _cit_parts(blk, ls_budget) if blk.count('<ls') > ls_budget else [blk]
+        if si == 0 and header:
+            combined = header + '\n' + blk
+            parts = _cit_parts(combined, ls_budget) if combined.count('<ls') > ls_budget else [combined]
+        else:
+            parts = _cit_parts(blk, ls_budget) if blk.count('<ls') > ls_budget else [blk]
         for pi, p in enumerate(parts):
-            t = (header + '\n' + p) if (si == 0 and pi == 0 and header) else p
-            out.append((si, pi, t))
+            out.append((si, pi, p))
     return out
 
 
