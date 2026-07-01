@@ -2,6 +2,9 @@
 
 <p align="right"><sub>Created: 01-07-2026 · Last updated: 01-07-2026</sub></p>
 
+**🔎 Live searchable glossary:** <https://gasyoun.github.io/SanskritLexicography/RussianTranslation/glossary/>
+— type an SLP1 root/word (`gam`, `BU`) or a Russian word and browse the ranked translations.
+
 A full inventory of **how every Sanskrit word is rendered into Russian** in the aligned
 corpus, at three granularities:
 
@@ -29,7 +32,10 @@ The four `gamemahi` lines you started from are one surface entry inside this rol
 
 ## Files
 
-Regenerable data (git-ignored, like `corpus_lexicon.jsonl`); the scripts + this README are tracked.
+Published (tracked + served on GitHub Pages) and regenerable via the scripts. The one
+exception is the 140 MB raw `surface_glossary.jsonl`, which exceeds GitHub's 100 MB file
+limit and ships as `surface_glossary.jsonl.gz` instead. [`index.html`](index.html) is the
+searchable front-end over `root_glossary.tsv` / `lemma_glossary.tsv`.
 
 | File | What |
 |---|---|
