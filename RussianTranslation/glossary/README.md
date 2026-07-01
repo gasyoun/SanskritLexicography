@@ -2,8 +2,12 @@
 
 <p align="right"><sub>Created: 01-07-2026 · Last updated: 01-07-2026</sub></p>
 
-**🔎 Live searchable glossary:** <https://gasyoun.github.io/SanskritLexicography/RussianTranslation/glossary/>
-— type an SLP1 root/word (`gam`, `BU`) or a Russian word and browse the ranked translations.
+**🔎 Live searchable glossary + data home:** **[gasyoun/sanskrit-russian-glossary](https://github.com/gasyoun/sanskrit-russian-glossary)**
+→ <https://gasyoun.github.io/sanskrit-russian-glossary/> — type an SLP1 root/word (`gam`, `BU`)
+or a Russian word and browse the ranked translations. The glossary got its own repo because
+this repo's GitHub Pages slot serves the PWG article dashboard (`gh-pages` branch). **This
+directory holds the generation pipeline** (`../src/build_*.py`); the live site + a mirror of the
+data live in that repo.
 
 A full inventory of **how every Sanskrit word is rendered into Russian** in the aligned
 corpus, at three granularities:
