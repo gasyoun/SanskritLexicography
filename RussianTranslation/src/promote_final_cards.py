@@ -167,6 +167,8 @@ def main():
     ap.add_argument('--review-status', default='ai_translated')
     ap.add_argument('--dry-run', action='store_true')
     ap.add_argument('--no-backup', action='store_true')
+    ap.add_argument('--force', action='store_true',
+                    help='bypass the >50%%-shrink overwrite guard (only for a deliberate full rebuild)')
     ap.add_argument('--merge', action='store_true',
                     help='MERGE into the existing store by SUB-CARD: replace only the sub-cards '
                          'present in THIS run, keep every other row (including a root\'s already-'
@@ -232,6 +234,21 @@ def main():
     if args.dry_run:
         print('\n(dry run — no store written)')
         return
+
+    # OVERWRITE GUARD: refuse to shrink the store to a small fraction of its current size.
+    # A default (non-merge) run rebuilds the store from whatever wf_output files are on disk;
+    # if most are gone (or only a subset is present) this silently WIPES the store — a
+    # 10,122-row store was once overwritten to 472. Require --force to shrink >50%.
+    if os.path.exists(args.store) and not args.force:
+        try:
+            with open(args.store, encoding='utf-8') as f:
+                existing = sum(1 for line in f if line.strip())
+        except OSError:
+            existing = 0
+        if existing and len(rows) < existing * 0.5:
+            sys.exit('REFUSED: would shrink store %d -> %d rows (>50%% loss). Use --merge for a '
+                     'per-root catch-up, or --force if a full rebuild is truly intended.'
+                     % (existing, len(rows)))
 
     if os.path.exists(args.store) and not args.no_backup:
         bak = args.store + ('.premerge.bak' if args.merge else '.legacy.bak')
