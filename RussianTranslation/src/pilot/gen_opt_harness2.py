@@ -15,6 +15,7 @@ map, Nachträge, microstructure) with a MASKED/BATCHED preamble that overrides o
 input-format + markup-verbatim specifics ("keep {Tn} verbatim" instead of "{#..#}/<ls>").
 
 Usage:  python src/pilot/gen_opt_harness2.py <root> [--keys=k1,k2] [--budget=12000] [--out=PATH]
+        [--selfheal [--selfheal-budget=12]]   # budget = citation-weighted units (1+<ls>) per heal call
 Writes: src/pilot/run_pilot_wf.opt2.js  (or --out=PATH — use a per-root/per-chat path to
         avoid the gen->copy race when several chats generate harnesses concurrently)
 """
@@ -29,10 +30,25 @@ sys.stderr.reconfigure(encoding='utf-8')
 
 from window_common import INP, REPO, SRC, input_paths, load_json, read_text, rootmap_path, sha256_file, write_text
 import pwg_mask
+from autosplit_requeue import plan as split_plan     # deterministic per-card sense/citation split
 sys.path.insert(0, SRC)
 from safe_filename import safe_name
 from whitney_grammar import grammar_for
 from nominal_grammar import nominal_grammar_for
+
+SELFHEAL = False   # --selfheal: on a card the batch can't translate, auto-split it in-harness
+                   #  (deterministic split precomputed here) and translate the fragments, then
+                   #  stitch back — no manual requeue. Default OFF so existing runs are unchanged.
+SELFHEAL_GROUP_BUDGET = 12   # --selfheal-budget=N: fragments are grouped (in document order) into
+                   #  this many "citation-weighted units" (1 + <ls> count) per heal agent() call —
+                   #  citation count, NOT byte size, drives StructuredOutput complexity, and masking
+                   #  already shrinks fragment bytes far below what predicts failure (a dense card's
+                   #  own fragments can total <4KB and still be the exact complexity that failed as
+                   #  a whole card). A single fragment at/above the budget (e.g. a tier-2 citation
+                   #  chunk near autosplit_requeue.LS_BUDGET=18) still gets its own call; several
+                   #  light (low-<ls>) fragments share one call, cutting a 13-fragment card to a
+                   #  handful of calls instead of 13, without recombining the dense units that
+                   #  caused the original failure.
 
 
 def grammar_text(root):
@@ -133,6 +149,10 @@ def parse_args(argv):
             nominal = True
         elif a == '--no-grammar':
             grammar_on = False
+        elif a == '--selfheal':
+            globals()['SELFHEAL'] = True     # gated: default OFF -> existing runs unchanged
+        elif a.startswith('--selfheal-budget='):
+            globals()['SELFHEAL_GROUP_BUDGET'] = int(a.split('=', 1)[1])
     if lang not in ('ru', 'en'):
         die('unknown --lang %r (ru|en)' % lang)
     if lang == 'en' and mw_tm is None:
@@ -164,6 +184,20 @@ def compress_rule3(tr):
     if n != 1:
         die('could not compress HARD RULE 3 (markup-verbatim) block')
     return tr2
+
+
+def _group_by_budget(items, sizer, budget):
+    """Greedily group `items` (kept in order) into batches whose summed sizer() stays
+    <= budget; a single oversize item still gets its own group (never dropped)."""
+    groups, cur, sz = [], [], 0
+    for it in items:
+        isz = sizer(it)
+        if cur and sz + isz > budget:
+            groups.append(cur); cur, sz = [], 0
+        cur.append(it); sz += isz
+    if cur:
+        groups.append(cur)
+    return groups
 
 
 def selected_keys(root, keyfilter):
@@ -317,6 +351,17 @@ def build(root, keys, rootmap, budget, lean=False, nws_gate=False,
     schema = load_json(os.path.join(REPO, 'schemas', 'pwg_ru_final_card.schema.json'))
     if field != 'russian':
         schema = _rename_sense_field(schema, 'russian', field)
+    # BOTH EN and RU paths: keep only the essential per-sense fields required (tag +
+    # source german + the translation). The 4 annotator fields (equivalence_type,
+    # source_type, stratum, differentia) become optional. On the citation-dense
+    # main-head pwg cards, requiring all 7 fields (2 of them enums) per sense —
+    # dozens of senses per card — is a huge structured-output surface where one
+    # truncated/mismatched field invalidates the whole card and burns the
+    # StructuredOutput retry cap (this recovered many dense heads on the EN run).
+    # The annotator fields stay best-effort (the model still fills them on most
+    # cards; they are re-derivable downstream). validate_final_card_schema.py was
+    # relaxed to match, so RU cards with a missing annotator field still validate.
+    schema['$defs']['sense']['required'] = ['tag', 'german', field]
     defs = schema['$defs']
     card_ref = {'$ref': '#/$defs/card'}
     batch_schema = {
@@ -339,6 +384,34 @@ def build(root, keys, rootmap, budget, lean=False, nws_gate=False,
                      'nws': 1 if 'NWS' in raw else 0}
         phmaps[k] = ph
         input_hashes[k] = {'raw_sha256': sha256_file(rp), 'portrait_sha256': sha256_file(pp)}
+
+    # --selfheal: precompute a per-card fragment fallback (deterministic sense/citation split).
+    # The JS uses it only for cards the batch could not translate; each fragment is masked here
+    # so the in-harness path reuses the same {Tn} restore. Only cards that actually split (>=2
+    # fragments) get a fallback; unsplittable cards fall through (the batch retry already tried).
+    # Fragments are then GROUPED (by masked-skeleton bytes, document order preserved) into
+    # SELFHEAL_GROUP_BUDGET-sized batches, so the JS heal issues one agent() call per GROUP
+    # instead of per fragment (a 13-fragment card was costing 13 calls / ~2.2M tok; grouping
+    # amortizes the ~30k fixed system-prompt overhead across several fragments per call).
+    frags, phf = {}, {}
+    if SELFHEAL:
+        for k in keys:
+            pl = split_plan(read_text(input_paths(k)[0]))
+            if len(pl) < 2:
+                continue
+            fl = []
+            for _si, _pi, t in pl:
+                fsk, fph, _ = pwg_mask.mask(t)
+                if pwg_mask.restore(fsk, fph) != t:
+                    fl = []
+                    break                        # give up the fallback if any fragment is lossy
+                fl.append({'skeleton': fsk, 'ls': t.count('<ls'), 'sk': t.count('{#'), 'ph': fph})
+            if not fl:
+                continue
+            groups = _group_by_budget(fl, lambda it: 1 + it['ls'], SELFHEAL_GROUP_BUDGET)
+            frags[k] = [[{'skeleton': it['skeleton'], 'ls': it['ls'], 'sk': it['sk']} for it in g]
+                        for g in groups]
+            phf[k] = [[it['ph'] for it in g] for g in groups]
 
     batches, cur, sz = [], [], 0
     for k in keys:
@@ -372,15 +445,17 @@ def build(root, keys, rootmap, budget, lean=False, nws_gate=False,
         'selected_keys': keys, 'batches': batches, 'batch_count': len(batches),
         'rootmap_sha256': sha256_file(rootmap) if rootmap else None,
         'input_hashes': input_hashes,
+        'selfheal': SELFHEAL, 'selfheal_group_budget': SELFHEAL_GROUP_BUDGET if SELFHEAL else None,
+        'selfheal_cards': {k: len(v) for k, v in frags.items()} if SELFHEAL else {},
     }
 
     js = """// AUTO-DERIVED v2 (batched + masked, canonical output) from run_pilot_wf.js - root=%(root)s.
 // Several masked cards per agent call; {Tn} restored to source markup in-JS so the
 // returned result is a canonical wf_output.json. See TLONLY_PROTOTYPE.md.
 export const meta = {
-  name: 'pwgru-opt2-%(root)s',
-  description: 'batched+masked translation-only PWG->Russian; amortized per-call overhead + masked I/O, {Tn} restored in-JS to canonical cards',
-  phases: [{ title: 'Translate', detail: 'Sonnet: N masked cards per call -> rich cards; {Tn} restored to markup' }],
+  name: '%(name_prefix)s-opt2-%(root)s',
+  description: 'batched+masked translation-only PWG->%(tgt_lang)s; amortized per-call overhead + masked I/O, {Tn} restored in-JS to canonical cards',
+  phases: [{ title: 'Translate', detail: '%(gen_label)s: N masked cards per call -> rich cards; {Tn} restored to markup' }],
 }
 
 const CONV_TR = %(tr)s
@@ -392,6 +467,8 @@ const CARDS_SCHEMA = %(schema)s
 const BATCHES = %(batches)s
 const INPUTS = %(inputs)s
 const PH = %(phmaps)s
+const FRAGS = %(frags)s
+const PHF = %(phf)s
 const META = %(meta)s
 
 const restore = (t, ph) => (t || '').replace(/\\{T(\\d+)\\}/g, (m, n) => (ph[+n - 1] !== undefined ? ph[+n - 1] : m))
@@ -417,30 +494,89 @@ const accept = (c, k) => {
   return c
 }
 
+// --selfheal fallback: a card the batch could not translate is split (deterministically,
+// precomputed in FRAGS) into fragments, GROUPED into budget-sized batches (fragment-grouping
+// tier), then each group is translated in ONE agent() call (several fragments per call, same
+// multi-card-per-prompt pattern as translateBatch) and the fragments' senses are stitched into
+// one card. Returns the stitched card ONLY if every fragment came back and the whole-card
+// <ls>/{#..#} fidelity holds — never a lossy partial.
+async function selfHeal(k) {
+  const groups = FRAGS[k]; if (!groups || !groups.length) return null
+  const senses = []
+  for (let gi = 0; gi < groups.length; gi++) {
+    const grp = groups[gi]
+    const gph = (PHF[k] || [])[gi] || []
+    const resolved = {}
+    let pending = grp.map((_, i) => i)
+    // Retry only the fragments in this group still unresolved — one flaky fragment must not
+    // re-bill the rest of the group (mirrors translateBatch's shrinking-pending pattern; also
+    // fixes the brU/man live-test miss where 1 of 13/11 fragments failed under all-or-nothing).
+    for (let att = 0; att < 3 && pending.length; att++) {
+      const blocks = pending.map(i => '\\n\\n=== CARD ' + k + '_f' + i + ' (fragment ' + (i + 1) + '/' + grp.length + ' of group ' + (gi + 1) + '/' + groups.length + ') ===\\n--- masked German (translatable only; {Tn}=masked span) ---\\n' + grp[i].skeleton).join('')
+      const prompt = PREAMBLE + GRAMMAR + CONV_TR + blocks
+      const res = await agent(prompt, { label: 'heal:' + k + '#g' + (gi + 1) + '[' + pending.length + ']' + (att ? '(r' + att + ')' : ''), phase: 'Translate', schema: CARDS_SCHEMA, model: '%(model)s', tools: [] })
+      if (res && Array.isArray(res.cards)) {
+        pending.forEach((fi, idx) => { const c = res.cards[idx]; if (c) resolved[fi] = c })
+      }
+      pending = pending.filter(fi => !resolved[fi])
+    }
+    if (pending.length) return null   // a fragment never resolved -> abandon the heal, never a lossy partial
+    for (let i = 0; i < grp.length; i++) {
+      const card = resolved[i]
+      const ph = gph[i] || []
+      for (const rec of (card.records || [])) for (const s of (rec.senses || [])) {
+        if (s.german !== undefined) s.german = restore(s.german, ph)
+        if (s.%(field)s !== undefined) s.%(field)s = restore(s.%(field)s, ph)
+        senses.push(s)
+      }
+    }
+  }
+  const stitched = { key1: k, records: [{ senses }] }
+  if (countOf(stitched, /<ls\\b/g) !== INPUTS[k].ls || countOf(stitched, /\\{#/g) !== INPUTS[k].sk) return null
+  return stitched
+}
+
 phase('Translate')
 async function translateBatch(batch, bi) {
   // Retry ONLY the cards still unresolved (positional within the shrinking pending
   // set), not the whole batch — one missing/garbled card must not re-bill the rest.
-  const resolved = {}
+  const resolved = {}, healed = {}
   let pending = batch.slice()
   for (let attempt = 0; attempt < 2 && pending.length; attempt++) {
     // lean mode: NWS_RULE is non-empty and injected only when the batch has an NWS card
     // (full mode: NWS_RULE is '' and the NWS rule already lives inside CONV_TR).
     const nws = (NWS_RULE && pending.some(k => INPUTS[k].nws)) ? ('\\n\\n' + NWS_RULE + '\\n') : ''
     const prompt = PREAMBLE + GRAMMAR + CONV_TR + nws + pending.map(cardBlock).join('')
-    const res = await agent(prompt, { label: 'b' + bi + '[' + pending.length + ']' + (attempt ? '(retry)' : ''), phase: 'Translate', schema: CARDS_SCHEMA, model: 'sonnet', tools: [] })
+    const res = await agent(prompt, { label: 'b' + bi + '[' + pending.length + ']' + (attempt ? '(retry)' : ''), phase: 'Translate', schema: CARDS_SCHEMA, model: '%(model)s', tools: [] })
     if (res && Array.isArray(res.cards)) {
       pending.forEach((k, i) => { const c = accept(res.cards[i], k); if (c) resolved[k] = c })
     }
     pending = pending.filter(k => !resolved[k])
   }
-  return batch.map(k => ({ key: k, card: resolved[k] || null, judge: null, judge_sonnet: null, escalated: false }))
+  // self-healing tier: split-translate-stitch the cards the batch gave up on (no-op unless
+  // --selfheal populated FRAGS). Runs only for the few still-failing cards.
+  for (const k of pending) { const c = await selfHeal(k); if (c) { resolved[k] = c; healed[k] = 1 } }
+  return batch.map(k => ({ key: k, card: resolved[k] || null, judge: null, judge_sonnet: null, escalated: !!healed[k] }))
 }
 const grouped = await parallel(BATCHES.map((b, i) => () => translateBatch(b, i)))
 const out = grouped.flat()
-return { meta: META, results: out }
+// Compact summary first so the orchestrator can read counts (ok/null/healed + the exact
+// null keys to requeue) WITHOUT parsing the full results blob. results are still carried
+// for save_and_audit/promote (the workflow runtime can't write files -> must be returned).
+const _ok = out.filter(r => r.card).length
+const summary = { root: META.root, lang: META.lang, cards: out.length, ok: _ok,
+                  null: out.length - _ok, healed: out.filter(r => r.escalated).length,
+                  null_keys: out.filter(r => !r.card).map(r => r.key) }
+return { meta: META, summary, results: out }
 """ % {
         'root': root, 'field': field, 'tr': json.dumps(tr, ensure_ascii=True),
+        # Language-aware meta + model pin. EN path pins Sonnet 5 explicitly
+        # (the bare 'sonnet' alias resolved to 4.6 on a prior run); RU path
+        # keeps the 'sonnet' alias unchanged so the autonomous RU runs are untouched.
+        'name_prefix': 'pwgen' if lang == 'en' else 'pwgru',
+        'tgt_lang': 'English' if lang == 'en' else 'Russian',
+        'gen_label': 'Sonnet 5' if lang == 'en' else 'Sonnet',
+        'model': 'claude-sonnet-5' if lang == 'en' else 'sonnet',
         'preamble': json.dumps(MASK_PREAMBLE.replace('`russian`', '`%s`' % field), ensure_ascii=True),
         'grammar': json.dumps(single_grammar, ensure_ascii=True),
         'grammars': json.dumps(grammars, ensure_ascii=True),
@@ -448,6 +584,7 @@ return { meta: META, results: out }
         'schema': json.dumps(batch_schema, ensure_ascii=True),
         'batches': json.dumps(batches), 'inputs': json.dumps(inputs, ensure_ascii=True),
         'phmaps': json.dumps(phmaps, ensure_ascii=True), 'meta': json.dumps(meta, ensure_ascii=True),
+        'frags': json.dumps(frags, ensure_ascii=True), 'phf': json.dumps(phf, ensure_ascii=True),
     }
     for bad in ['readFileSync', 'fileURLToPath', 'import.meta']:
         if bad in js:
@@ -468,7 +605,10 @@ def main():
             keys = [k for k in keylist if k in set(keys)]
     js, batches = build(root, keys, rootmap, budget, lean, nws_gate, nominal, grammar_on, lang, mw_tm)
     out = os.path.abspath(out_path) if out_path else os.path.join(REPO, 'src', 'pilot', 'run_pilot_wf.opt2.js')
-    write_text(out, js)
+    # Write LF (not CRLF): the Workflow-tool approval rejects scripts containing
+    # raw \r control chars, so a CRLF harness cannot be launched on Windows.
+    with open(out, 'w', encoding='utf-8', newline='\n') as f:
+        f.write(js)
     mode = ('NOMINAL%s' % ('' if grammar_on else '/no-grammar')) if nominal else (
         'LEAN(rejected)' if lean else 'NWS-GATE' if nws_gate else 'full')
     print('wrote', out, len(js), 'bytes |', len(keys), 'cards in', len(batches), 'batches',

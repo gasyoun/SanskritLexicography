@@ -167,6 +167,14 @@ def main():
     ap.add_argument('--review-status', default='ai_translated')
     ap.add_argument('--dry-run', action='store_true')
     ap.add_argument('--no-backup', action='store_true')
+    ap.add_argument('--force', action='store_true',
+                    help='bypass the >50%%-shrink overwrite guard (only for a deliberate full rebuild)')
+    ap.add_argument('--merge', action='store_true',
+                    help='MERGE into the existing store by SUB-CARD: replace only the sub-cards '
+                         'present in THIS run, keep every other row (including a root\'s already-'
+                         'translated sub-cards not in this run). Use for a per-root catch-up — the '
+                         'default full overwrite WIPES any root whose wf_output file is no longer '
+                         'on disk (the gam-RU loss mode).')
     args = ap.parse_args()
 
     paths = sorted(glob.glob(os.path.join(ROOT, args.glob)))
@@ -200,12 +208,50 @@ def main():
         print('  output was overwritten; re-run that root and re-run this script to complete it):')
         print('  ' + ', '.join('%s(%d)' % (r, per_root[r]['cards']) for r in thin))
 
+    # --merge: replace only the SUB-CARDS present in this run, keep every other row.
+    # Sub-card granularity (not root) is deliberate: a per-root CATCH-UP promotes only the
+    # missing sub-cards, which are disjoint from the ones already in the store — a root-level
+    # replace would delete the existing sub-cards (the exact gam-RU loss we are fixing).
+    # Guards against the full-overwrite wipe when only a subset of wf_output files is on disk.
+    kept = 0
+    if args.merge and os.path.exists(args.store):
+        promoted_subs = {r['subcard'] for r in rows}
+        touched_roots = {r['key1'] for r in rows}
+        keep_rows = []
+        with open(args.store, encoding='utf-8') as f:
+            for line in f:
+                line = line.strip()
+                if not line:
+                    continue
+                e = json.loads(line)
+                if e.get('subcard') not in promoted_subs:
+                    keep_rows.append(e)
+        kept = len(keep_rows)
+        print('\nMERGE: replacing %d sub-card(s) across root(s) %s; keeping %d existing row(s)'
+              % (len(promoted_subs), sorted(touched_roots), kept))
+        rows = keep_rows + rows
+
     if args.dry_run:
         print('\n(dry run — no store written)')
         return
 
+    # OVERWRITE GUARD: refuse to shrink the store to a small fraction of its current size.
+    # A default (non-merge) run rebuilds the store from whatever wf_output files are on disk;
+    # if most are gone (or only a subset is present) this silently WIPES the store — a
+    # 10,122-row store was once overwritten to 472. Require --force to shrink >50%.
+    if os.path.exists(args.store) and not args.force:
+        try:
+            with open(args.store, encoding='utf-8') as f:
+                existing = sum(1 for line in f if line.strip())
+        except OSError:
+            existing = 0
+        if existing and len(rows) < existing * 0.5:
+            sys.exit('REFUSED: would shrink store %d -> %d rows (>50%% loss). Use --merge for a '
+                     'per-root catch-up, or --force if a full rebuild is truly intended.'
+                     % (existing, len(rows)))
+
     if os.path.exists(args.store) and not args.no_backup:
-        bak = args.store + '.legacy.bak'
+        bak = args.store + ('.premerge.bak' if args.merge else '.legacy.bak')
         os.replace(args.store, bak)
         print('\nbacked up prior store -> %s' % os.path.basename(bak))
     with open(args.store, 'w', encoding='utf-8') as f:

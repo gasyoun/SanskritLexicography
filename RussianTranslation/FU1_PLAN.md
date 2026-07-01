@@ -4,15 +4,15 @@ Resume spec for the PWG→English **bulk** follow-up (FU1) after FU2 (audit gate
 (tri-lingual merge) shipped. **Real Max-quota spend** — run in a Max/Workflow session at
 **≤3-wide concurrency**. All six design decisions below are MG-locked (2026-06-30); do not
 re-litigate. This file is the *decision/rationale* record; the step-by-step **execution runbook**
-is [`HANDOFF_2026-06-30_pwg_en_fu1_run.md`](HANDOFF_2026-06-30_pwg_en_fu1_run.md). Parent:
-[`HANDOFF_2026-06-30_pwg_en_followups.md`](HANDOFF_2026-06-30_pwg_en_followups.md).
+is [`HANDOFF_2026-06-30_pwg_en_fu1_run.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/HANDOFF_2026-06-30_pwg_en_fu1_run.md). Parent:
+[`HANDOFF_2026-06-30_pwg_en_followups.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/HANDOFF_2026-06-30_pwg_en_followups.md).
 
 ## Locked decisions
 
 | # | Decision | Choice | Consequence |
 |---|---|---|---|
 | 1 | Architecture | **Bilingual for new roots, EN-only for already-RU'd** | FU1's scope is exactly the already-RU'd roots → **this tranche is EN-only + `promote_en.py` merge**. The bilingual single-pass (RU+EN in one workflow call, identical segmentation, one metadata set) is the standing policy for *future* freq roots beyond current RU coverage — adopt it the moment RU and EN extend together. |
-| 2 | Model tier | **Sonnet generate + Opus judge** | Generate with `gen_opt_harness2.py --lang=en` (pins `model:'sonnet'`); add an Opus judge pass. Report the tier at every step (per [[feedback_state_model_tier]]). |
+| 2 | Model tier + version | **Sonnet 4.6 (`claude-sonnet-4-6`) generate + Opus 4.8 (`claude-opus-4-8`) judge** | Generate with `gen_opt_harness2.py --lang=en` (pins alias `model:'sonnet'` → resolved Sonnet 4.6); add an Opus 4.8 judge pass. Report tier **AND version** at every step, resolving the alias to its version (models change). Per [[feedback_state_model_tier]]. |
 | 3 | Scope | **Match current RU coverage** | EN for the roots already in the store, no new RU work. Worklist below. |
 | 4 | Validation | **Audit + Opus judge + human gold sample** | FU2 deterministic gate on all + Opus judge on all + a human-validated stratified gold sample with documented inter-annotator agreement (Cohen κ) and error rate. The citable-resource bar. |
 | 5 | Provenance | **Full per-sense** | Each EN sense records model tier, Opus judge verdict + score, `generated_at`, harness SHA, and whether an MW reference was used. |

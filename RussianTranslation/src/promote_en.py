@@ -10,11 +10,15 @@ de + ru + en per sense.
 
 en_provenance (FU1 locked decision 5 — full per-sense provenance) records, alongside the plain-
 string `en`:
-  {model:'sonnet',                         # generation tier (gen_opt_harness2 pins model:'sonnet')
-   judge: {model:'opus', ok, severity, verdict, note} | null,   # filled by --judge, else null
+  {model:'sonnet',                         # generation tier ALIAS (gen_opt_harness2 pins it)
+   model_version:'claude-sonnet-4-6',      # the VERSION the alias resolved to — record it, models change
+   judge: {model:'opus', model_version:'claude-opus-4-8', ok, severity, verdict, note} | null,  # via --judge
    generated_at, rootmap_sha256,           # from the EN wf_output meta (reproducibility anchors)
    input_sha256,                           # the sub-card's masked-input raw_sha256 (meta.input_hashes)
    mw_used: null}                          # MW-TM usage is not recorded per-sense in wf_output
+The wf_output meta does NOT carry the resolved model version, so it is set here (defaults =
+GEN_MODEL_VERSION / JUDGE_MODEL_VERSION); override per run with --gen-model-version /
+--judge-model-version if the alias mapping changed.
 `en` stays a plain string so export_interop.py is unaffected; en_provenance is a sibling field.
 
 Join key — why not (subkey, sense_tag) or position:
@@ -53,6 +57,14 @@ DEFAULT_STORE = os.path.join(HERE, 'pwg_ru_translated.jsonl')
 DEFAULT_GLOB = 'wf_output.en.*.json'
 _KEEP = re.compile(r'[^0-9A-Za-z{}#%]')
 
+# Tier + VERSION must both be recorded (models change — a bare 'sonnet'/'opus' is ambiguous later).
+# The harness pins the ALIAS model:'sonnet'/'opus'; the wf_output meta does NOT capture the resolved
+# version, so we record it here. These defaults are the versions the aliases resolved to for the
+# FU1 run (2026-06-30); override per run with --gen-model-version / --judge-model-version if the
+# alias mapping has changed since.
+GEN_MODEL_VERSION = 'claude-sonnet-4-6'      # alias 'sonnet' -> Sonnet 4.6
+JUDGE_MODEL_VERSION = 'claude-opus-4-8'      # alias 'opus'   -> Opus 4.8
+
 
 def norm_de(g):
     """Whitespace/punctuation-insensitive key for the German source skeleton. Keeps alnum and
@@ -74,11 +86,13 @@ def load_wf(path):
     return result
 
 
-def en_index(paths):
+def en_index(paths, gen_model_version=GEN_MODEL_VERSION):
     """Returns (idx, prov):
       idx[sub]  = list of (norm_de, english) for every non-empty EN sense, in card order.
-      prov[sub] = base provenance dict for that sub-card (model, generated_at, rootmap_sha256,
-                  input_sha256, mw_used) — judge is folded in later by attach()."""
+      prov[sub] = base provenance dict for that sub-card (model tier + model_version,
+                  generated_at, rootmap_sha256, input_sha256, mw_used) — judge folded in by
+                  attach(). model = the alias the harness pinned; model_version = what it resolved
+                  to (recorded explicitly because the wf_output meta does not carry it)."""
     idx = defaultdict(list)
     prov = {}
     for path in paths:
@@ -103,7 +117,8 @@ def en_index(paths):
             if sub in idx and sub not in prov:
                 ih = input_hashes.get(sub) or {}
                 prov[sub] = {
-                    'model': 'sonnet',
+                    'model': 'sonnet',                 # alias the harness pinned
+                    'model_version': gen_model_version,  # what it resolved to (e.g. claude-sonnet-4-6)
                     'judge': None,
                     'generated_at': generated_at,
                     'rootmap_sha256': rootmap_sha256,
@@ -113,8 +128,9 @@ def en_index(paths):
     return idx, prov
 
 
-def load_judge(path):
-    """Opus judge verdicts (JSON {verdicts:[...]}/array/JSONL) -> sub-card key -> judge block."""
+def load_judge(path, judge_model_version=JUDGE_MODEL_VERSION):
+    """Opus judge verdicts (JSON {verdicts:[...]}/array/JSONL) -> sub-card key -> judge block.
+    Records both the alias ('opus') and the resolved model_version (e.g. claude-opus-4-8)."""
     txt = open(path, encoding='utf-8').read().strip()
     try:
         obj = json.loads(txt)
@@ -129,7 +145,8 @@ def load_judge(path):
             continue
         ok = v.get('ok', True)
         sev = int(v.get('severity', 0))
-        out[key] = {'model': 'opus', 'ok': ok, 'severity': sev,
+        out[key] = {'model': 'opus', 'model_version': judge_model_version,
+                    'ok': ok, 'severity': sev,
                     'verdict': 'ok' if (ok and sev < 3) else 'bad',
                     'note': v.get('note', '')}
     return out
@@ -193,9 +210,11 @@ def selftest():
         (norm_de('trinken'), 'to drink'),
         (norm_de('<ab>Caus.</ab> schützen'), 'to protect'),
     ]}
-    prov = {'p_a~~h0': {'model': 'sonnet', 'judge': None, 'generated_at': '2026-06-30T00:00:00Z',
-                        'rootmap_sha256': 'deadbeef', 'input_sha256': 'cafe', 'mw_used': None}}
-    judge = {'p_a~~h0': {'model': 'opus', 'ok': True, 'severity': 1, 'verdict': 'ok', 'note': 'fine'}}
+    prov = {'p_a~~h0': {'model': 'sonnet', 'model_version': 'claude-sonnet-4-6', 'judge': None,
+                        'generated_at': '2026-06-30T00:00:00Z', 'rootmap_sha256': 'deadbeef',
+                        'input_sha256': 'cafe', 'mw_used': None}}
+    judge = {'p_a~~h0': {'model': 'opus', 'model_version': 'claude-opus-4-8', 'ok': True,
+                         'severity': 1, 'verdict': 'ok', 'note': 'fine'}}
     stats = attach(rows, idx, 0.92, prov=prov, judge=judge)
     assert rows[0].get('en') == 'to drink', 'exact German match'
     assert rows[1].get('en') == 'to protect', 'fuzzy German match across comma diff'
@@ -207,7 +226,9 @@ def selftest():
     assert isinstance(rows[0].get('en'), str), 'en stays a plain string (export_interop unaffected)'
     p0 = rows[0].get('en_provenance')
     assert p0 and p0['model'] == 'sonnet' and p0['input_sha256'] == 'cafe', 'en_provenance attached'
+    assert p0['model_version'] == 'claude-sonnet-4-6', 'gen model VERSION recorded (not just tier)'
     assert p0['judge'] and p0['judge']['model'] == 'opus' and p0['judge']['verdict'] == 'ok', 'judge folded'
+    assert p0['judge']['model_version'] == 'claude-opus-4-8', 'judge model VERSION recorded'
     assert 'en_provenance' not in rows[2], 'no provenance on unmatched rows'
     # idempotent re-run without judge clears the stale judge block
     attach(rows, idx, 0.92, prov=prov)
@@ -225,6 +246,12 @@ def main():
                     help='minimum difflib ratio for a fuzzy German match (default 0.92)')
     ap.add_argument('--judge', default=None,
                     help='Opus EN-judge verdicts (JSON/JSONL) to fold into en_provenance.judge')
+    ap.add_argument('--gen-model-version', default=GEN_MODEL_VERSION,
+                    help='resolved generation model version recorded in en_provenance.model_version '
+                         '(default %(default)s — the alias the harness pinned resolved to)')
+    ap.add_argument('--judge-model-version', default=JUDGE_MODEL_VERSION,
+                    help='resolved judge model version recorded in en_provenance.judge.model_version '
+                         '(default %(default)s)')
     ap.add_argument('--dry-run', action='store_true')
     ap.add_argument('--no-backup', action='store_true')
     args = ap.parse_args()
@@ -238,10 +265,12 @@ def main():
     print('ingesting %d EN wf_output file(s)' % len(paths))
 
     rows = [json.loads(l) for l in open(args.store, encoding='utf-8') if l.strip()]
-    idx, prov = en_index(paths)
-    judge = load_judge(args.judge) if args.judge else None
+    idx, prov = en_index(paths, gen_model_version=args.gen_model_version)
+    print('gen model: sonnet (%s)' % args.gen_model_version)
+    judge = load_judge(args.judge, judge_model_version=args.judge_model_version) if args.judge else None
     if args.judge:
-        print('judge verdicts: %d (from %s)' % (len(judge), os.path.basename(args.judge)))
+        print('judge verdicts: %d (from %s); judge model: opus (%s)'
+              % (len(judge), os.path.basename(args.judge), args.judge_model_version))
     en_senses = sum(len(v) for v in idx.values())
     stats = attach(rows, idx, args.threshold, prov=prov, judge=judge)
 
