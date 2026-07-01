@@ -61,6 +61,20 @@ function applyLang(){
 function trBlock(cls,label,txt){
  return '<div class="tr '+cls+'"><span class="lbl">'+label+'</span>'+(txt?txt:'<span class="na">— нет / n/a —</span>')+'</div>';
 }
+function renderBody(r){
+ var subs=(window.ROOT||{})[r.root]||[]; var h='';
+ subs.forEach(function(sub){
+  h+='<div class="sub"><h3 class="iast">'+esc(sub.iast||sub.h||sub.key)+'</h3><div class="k">'+esc(sub.key)+'</div></div>';
+  sub.senses.forEach(function(s){
+   var b='';if(s.dcs!=null)b+='<span class="badge">DCS '+s.dcs+'</span>';if(s.src)b+='<span class="badge">'+s.src+'</span>';
+   h+='<div class="sense">'
+    +'<div class="de"><span class="tag">'+esc(s.tag)+')</span><span class="lbl">DE</span>'+esc(s.de_html)+'</div>'
+    +trBlock('ru','RU',s.ru_html)+trBlock('en','EN',s.en_html)
+    +(b?'<div class="badges">'+b+'</div>':'')+'</div>';
+  });
+ });
+ artbody.innerHTML=h||'<p class="na">нет данных</p>'; applyLang();
+}
 function renderRoot(r){
  cur=r.root;
  arthead.innerHTML='<h2 class="root iast">'+r.iast+'</h2>'
@@ -71,21 +85,13 @@ function renderRoot(r){
   +'<button class="tab" data-lang="de">Deutsch (оригинал)</button>'
   +'<button class="tab" data-lang="ru">Русский</button>'
   +'<button class="tab" data-lang="en">English</button></div>';
- var h='';
- r.subcards.forEach(function(sub){
-  h+='<div class="sub"><h3 class="iast">'+esc(sub.iast||sub.h||sub.key)+'</h3><div class="k">'+esc(sub.key)+'</div></div>';
-  sub.senses.forEach(function(s){
-   var b='';if(s.dcs!=null)b+='<span class="badge">DCS '+s.dcs+'</span>';if(s.src)b+='<span class="badge">'+s.src+'</span>';
-   h+='<div class="sense">'
-    +'<div class="de"><span class="tag">'+esc(s.tag)+')</span><span class="lbl">DE</span>'+esc(s.de_html)+'</div>'
-    +trBlock('ru','RU',s.ru_html)
-    +trBlock('en','EN',s.en_html)
-    +(b?'<div class="badges">'+b+'</div>':'')
-   +'</div>';
-  });
- });
- artbody.innerHTML=h||'<p class="na">нет данных</p>';
- applyLang();
+ // lazy-load this root's data (window.ROOT[root]) via <script src> — works from file:// too
+ if((window.ROOT||{})[r.root]){renderBody(r);return;}
+ artbody.innerHTML='<p class="na">Загрузка…</p>';
+ var sc=document.createElement('script'); sc.src='roots/'+r.safe+'.js';
+ sc.onload=function(){ if(cur===r.root) renderBody(r); };
+ sc.onerror=function(){ if(cur===r.root) artbody.innerHTML='<p class="na">ошибка загрузки</p>'; };
+ document.head.appendChild(sc);
 }
 // delegated tab handler (survives per-root re-render)
 document.getElementById('main').addEventListener('click',function(e){
