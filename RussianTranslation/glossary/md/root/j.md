@@ -1,4 +1,4 @@
-# Root glossary (Sa→Ru) — `j`
+# Root glossary (Sa→Ru) — `J`
 
 65 entries.
 

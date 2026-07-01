@@ -1,4 +1,4 @@
-# Surface glossary — SLP1 `f`
+# Surface glossary — SLP1 `F`
 
 701 forms. Format: `form` (sa) — total n → ru (n) · registers.
 

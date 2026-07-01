@@ -1,6 +1,1890 @@
-# Surface glossary — SLP1 `u`
+# Surface glossary — SLP1 `U`
 
-5301 forms. Format: `form` (sa) — total n → ru (n) · registers.
+5636 forms. Format: `form` (sa) — total n → ru (n) · registers.
+
+### `U` — ū  (n=16)
+
+- хорошенько  · n=3  · rigveda, rigveda, atharvaveda
+- вот  · n=2  · rigveda, rigveda
+- же  · n=2  · rigveda, rigveda
+- а  · n=2  · rigveda, atharvaveda
+- и  · n=1  · rigveda
+- Торопливые  · n=1  · rigveda
+- Прекрасно  · n=1  · rigveda
+- Он  · n=1  · rigveda
+- так  · n=1  · rigveda
+- сейчас  · n=1  · rigveda
+- также  · n=1  · rigveda
+
+### `UDa` — ūdha  (n=3)
+
+- вымя  · n=2  · rigveda, atharvaveda
+- выменем  · n=1  · atharvaveda
+
+### `UDaBiH` — ūdhabhiḥ  (n=2)
+
+- выменем  · n=2  · rigveda, rigveda
+
+### `UDaH` — ūdhaḥ  (n=21)
+
+- вымя  · n=9  · rigveda, rigveda, rigveda, rigveda, atharvaveda
+- вымени  · n=5  · rigveda, rigveda, atharvaveda
+- Вымя  · n=2  · rigveda
+- из вымени  · n=2  · rigveda
+- грудь  · n=2  · rigveda
+- в той стране  · n=1  · mahabharata-adiparva
+
+### `UDan` — ūdhan  (n=14)
+
+- вымени  · n=13  · rigveda, rigveda, rigveda, rigveda, rigveda, atharvaveda
+- у вымени  · n=1  · rigveda
+
+### `UDani` — ūdhani  (n=10)
+
+- вымени  · n=4  · rigveda
+- выменем  · n=2  · rigveda
+- в вымени  · n=1  · rigveda
+- к вымени  · n=1  · rigveda
+- ночью  · n=1  · rigveda
+- у вымени  · n=1  · rigveda
+
+### `UDar` — ūdhar  (n=16)
+
+- вымя  · n=11  · rigveda, rigveda, rigveda, rigveda, rigveda, rigveda
+- вымени  · n=3  · rigveda, rigveda
+- выменем  · n=2  · rigveda
+
+### `UDas` — ūdhas  (n=14)
+
+- вымя  · n=8  · rigveda, atharvaveda, rigveda, rigveda
+- вымени  · n=4  · rigveda, ramayana-balakanda, rigveda
+- выменем  · n=2  · rigveda
+
+### `UDasi` — ūdhasi  (n=1)
+
+- молока  · n=1  · raghuvamsha
+
+### `UDassu` — ūdhassu  (n=1)
+
+- в выменах  · n=1  · rigveda
+
+### `UDnaH` — ūdhnaḥ  (n=2)
+
+- из вымени  · n=2  · rigveda
+
+### `UNK` — ūṅkh  (n=1)
+
+- рецитировать  · n=1  · rigveda
+
+### `UNKayante` — ūṅkhayante  (n=2)
+
+- урчат  · n=2  · rigveda
+
+### `UQA` — ūḍhā  (n=2)
+
+- увезённая  · n=1  · mahabharata-adiparva
+- взял  · n=1  · mahabharata-udyogaparva
+
+### `UQAm` — ūḍhām  (n=1)
+
+- увезённую  · n=1  · mahabharata-adiparva
+
+### `UQAyA` — ūḍhāyā  (n=2)
+
+- отдав замуж  · n=2  · kama-sutra
+
+### `UQa` — ūḍha  (n=6)
+
+- увезённую  · n=1  · mahabharata-adiparva
+- увезена  · n=1  · mahabharata-adiparva
+- унесен  · n=1  · manavadharmashastra
+- принес  · n=1  · mahabharata-aranyakaparva
+- нес  · n=1  · mahabharata-dronaparva
+- замужества  · n=1  · mahabharata-udyogaparva
+
+### `UQayA` — ūḍhayā  (n=1)
+
+- восседать  · n=1  · kumarasambhava
+
+### `UbaDya` — ūbadhya  (n=2)
+
+- скрытое заклинание  · n=1  · atharvaveda
+- содержимое его кишок  · n=1  · atharvaveda
+
+### `UbaDyam` — ūbadhyam  (n=2)
+
+- содержимое живота  · n=1  · atharvaveda
+- Содержимое его кишок  · n=1  · atharvaveda
+
+### `UcatuH` — ūcatuḥ  (n=14)
+
+- Сказали  · n=3  · ramayana-balakanda
+- сказали  · n=3  · mahabharata-udyogaparva, ramayana-balakanda
+- обратились  · n=2  · mahabharata-aranyakaparva, mahabharata-udyogaparva
+- спросили  · n=1  · ramayana-balakanda
+- дали  · n=1  · mahabharata-adiparva
+- возглашали  · n=1  · mahabharata-bhishmaparva
+- молвили  · n=1  · mahabharata-karnaparva
+- говорили  · n=1  · br-up
+- отвечали  · n=1  · raghuvamsha
+
+### `UcatuS` — ūcatuś  (n=1)
+
+- говорили  · n=1  · mahabharata-aranyakaparva
+
+### `Ucatur` — ūcatur  (n=1)
+
+- сказали  · n=1  · buddhacharita
+
+### `Uce` — ūce  (n=1)
+
+- сказала  · n=1  · gitagovinda
+
+### `UcivAMsa` — ūcivāṃsa  (n=1)
+
+- выдвинул  · n=1  · buddhacharita
+
+### `UcivAn` — ūcivān  (n=3)
+
+- сказал  · n=1  · ramayana-sundarakanda
+- говорил  · n=1  · mahabharata-adiparva
+- сказав  · n=1  · raghuvamsha
+
+### `Ucize` — ūciṣe  (n=1)
+
+- обращаешься  · n=1  · rigveda
+
+### `Ucu` — ūcu  (n=16)
+
+- сказали  · n=11  · mahabharata-adiparva, mahabharata-shalyaparva, ramayana-balakanda, mahabharata-aranyakaparva, mahabharata-udyogaparva
+- отвечали  · n=2  · mahabharata-adiparva, mahabharata-ashramavasikaparva
+- говорили  · n=1  · ramayana-aranyakanda
+- восклицали  · n=1  · mahabharata-adiparva
+- спросили  · n=1  · jabala-up
+
+### `UcuH` — ūcuḥ  (n=109)
+
+- сказали  · n=63  · mahabharata-udyogaparva, mahabharata-adiparva, ramayana-ayodhyakanda, mahabharata-shalyaparva, ramayana-balakanda, mahabharata-aranyakaparva, br-up, mahabharata-virataparva, ramayana-sundarakanda, ch-up, mahabharata-sabhaparva, manavadharmashastra, ramayana-aranyakanda, mahabharata-dronaparva, buddhacharita, mahabharata-karnaparva, mahabharata-ashvamedhikaparva, raghuvamsha, shukasaptati, mai-up
+- обратились  · n=5  · mahabharata-aranyakaparva, mahabharata-udyogaparva
+- Сказали  · n=4  · ramayana-ayodhyakanda, ramayana-aranyakanda, ramayana-balakanda
+- говорили  · n=4  · mahabharata-sabhaparva, mahabharata-aranyakaparva, mahabharata-mahaprasthanikaparva
+- поведали  · n=4  · devi-gita, mahabharata-ashvamedhikaparva, mahabharata-ashramavasikaparva
+- молвили  · n=3  · mahabharata-adiparva, mahabharata-udyogaparva, mahabharata-sabhaparva
+- промолвили  · n=3  · mahabharata-shalyaparva
+- Говорили  · n=2  · ramayana-ayodhyakanda, ramayana-aranyakanda
+- рассказали  · n=2  · ramayana-balakanda, mahabharata-aranyakaparva
+- ответили  · n=2  · ramayana-balakanda, mahabharata-shalyaparva
+- восклицали  · n=2  · mahabharata-sauptikaparva
+- кричали  · n=1  · ramayana-ayodhyakanda
+- Отвечали  · n=1  · ramayana-ayodhyakanda
+- повели речь  · n=1  · mahabharata-aranyakaparva
+- стали высказывать  · n=1  · mahabharata-aranyakaparva
+- изрекли  · n=1  · mahabharata-aranyakaparva
+- молчали  · n=1  · mahabharata-aranyakaparva
+- произнесли  · n=1  · mahabharata-aranyakaparva
+- закричали  · n=1  · mahabharata-dronaparva
+- воскликнули  · n=1  · mahabharata-dronaparva
+- говорят  · n=1  · rigveda
+- огласили  · n=1  · mahabharata-karnaparva
+- беседовали  · n=1  · mahabharata-karnaparva
+- отвечали  · n=1  · raghuvamsha
+- обращалась  · n=1  · raghuvamsha
+- звучали  · n=1  · mahabharata-mausalaparva
+
+### `UcuS` — ūcuś  (n=1)
+
+- отвечали  · n=1  · mahabharata-karnaparva
+
+### `Ucur` — ūcur  (n=5)
+
+- сказали  · n=3  · br-up
+- кричали  · n=1  · ramayana-ayodhyakanda
+- обратились  · n=1  · mahabharata-aranyakaparva
+
+### `Ucus` — ūcus  (n=2)
+
+- восклицали  · n=1  · mahabharata-adiparva
+- сказали  · n=1  · mahabharata-adiparva
+
+### `Ucuze` — ūcuṣe  (n=3)
+
+- нравится  · n=2  · rigveda
+- для радующегося  · n=1  · rigveda
+
+### `Udddyotakara` — Udddyotakara  (n=1)
+
+- Уддйотакара  · n=1  · nyaya-bhashya
+
+### `Udima` — ūdima  (n=1)
+
+- говорили  · n=1  · rigveda
+
+### `UhApoha` — ūhāpoha  (n=2)
+
+- доводов и возражений  · n=2  · gitarthasamgraha-abhinavagupta
+
+### `Uha` — ūha  (n=7)
+
+- рассуждение  · n=3  · nyaya-bhashya
+- Подними  · n=1  · atharvaveda
+- размышление  · n=1  · sankhya-karika
+- Размышление  · n=1  · sankhya-karika
+- способность суждения  · n=1  · yoga-sutry_vyasa-bhashya
+
+### `UhaTuH` — ūhathuḥ  (n=17)
+
+- вывезли  · n=5  · rigveda, rigveda, rigveda
+- привели  · n=3  · rigveda, rigveda
+- возите  · n=2  · rigveda
+- Присоединили  · n=2  · rigveda
+- принесли  · n=1  · rigveda
+- Вы вывезли  · n=1  · rigveda
+- вы вывезли  · n=1  · rigveda
+- Вывезли  · n=1  · rigveda
+- приехали  · n=1  · rigveda
+
+### `UhaTur` — ūhathur  (n=6)
+
+- вывозили  · n=1  · rigveda
+- вывезли  · n=1  · rigveda
+- Вы вывезли  · n=1  · rigveda
+- везли  · n=1  · rigveda
+- ездите  · n=1  · rigveda
+- Вывезли  · n=1  · rigveda
+
+### `Uham` — ūham  (n=1)
+
+- заменой [слов]  · n=1  · kama-sutra
+
+### `Uhasi` — ūhasi  (n=1)
+
+- сплачиваешь  · n=1  · rigveda
+
+### `Uhati` — ūhati  (n=1)
+
+- отстраняет  · n=1  · rigveda
+
+### `UhatuH` — ūhatuḥ  (n=2)
+
+- доставили  · n=1  · mahabharata-aranyakaparva
+- Везли  · n=1  · atharvaveda
+
+### `Uhavat` — ūhavat  (n=1)
+
+- владеет наукой доказательств  · n=1  · mahabharata-udyogaparva
+
+### `Uhe` — ūhe  (n=2)
+
+- принимает  · n=1  · rigveda
+- считается  · n=1  · rigveda
+
+### `Uhire` — ūhire  (n=1)
+
+- увезли  · n=1  · rigveda
+
+### `Uhu` — ūhu  (n=2)
+
+- везли  · n=2  · mahabharata-dronaparva
+
+### `UhuH` — ūhuḥ  (n=10)
+
+- унесли  · n=2  · rigveda
+- стали  · n=1  · ramayana-balakanda
+- помчали  · n=1  · mahabharata-dronaparva
+- умчали  · n=1  · mahabharata-dronaparva
+- повезли  · n=1  · mahabharata-dronaparva
+- везли  · n=1  · mahabharata-dronaparva
+- привезли  · n=1  · mahabharata-karnaparva
+- несли  · n=1  · mahabharata-sabhaparva
+- мчались  · n=1  · mahabharata-virataparva
+
+### `Uhur` — ūhur  (n=1)
+
+- унесли  · n=1  · mahabharata-karnaparva
+
+### `UhyATe` — ūhyāthe  (n=2)
+
+- соблюдаете  · n=2  · rigveda
+
+### `UkAraH` — ūkāraḥ  (n=2)
+
+- звук "у"  · n=1  · ch-up
+- «У»  · n=1  · ch-up
+
+### `UmA` — ūmā  (n=7)
+
+- помощники  · n=6  · rigveda, rigveda, rigveda
+- помощниками  · n=1  · rigveda
+
+### `UmAH` — ūmāḥ  (n=9)
+
+- помощники  · n=7  · rigveda, atharvaveda, rigveda
+- покровители  · n=1  · rigveda
+- помощниками  · n=1  · atharvaveda
+
+### `UmAso` — ūmāso  (n=1)
+
+- помощники  · n=1  · rigveda
+
+### `Uma` — ūma  (n=1)
+
+- помощниками  · n=1  · rigveda
+
+### `Umair` — ūmair  (n=1)
+
+- отрядами  · n=1  · rigveda
+
+### `UmeByaH` — ūmebhyaḥ  (n=2)
+
+- помощникам  · n=2  · rigveda
+
+### `Una` — ūna  (n=9)
+
+- остаток  · n=3  · vedanga_jyotisha
+- нет  · n=2  · ramayana-aranyakanda
+- меньше  · n=1  · kama-sutra
+- не зная главного  · n=1  · gitarthasamgraha-abhinavagupta
+- без малого  · n=1  · mahabharata-shalyaparva
+- уменьшенный  · n=1  · vedanga_jyotisha
+
+### `UnaM` — ūnaṃ  (n=1)
+
+- недостает  · n=1  · atharvaveda
+
+### `UnadvivArzika` — ūnadvivārṣika  (n=1)
+
+- не достигшего двух лет  · n=1  · manavadharmashastra
+
+### `UnasTAna` — ūnasthāna  (n=1)
+
+- остаток  · n=1  · vedanga_jyotisha
+
+### `UnasTAne` — ūnasthāne  (n=1)
+
+- в случае остатка  · n=1  · vedanga_jyotisha
+
+### `UnasamBave` — ūnasambhave  (n=1)
+
+- в случае недостачи  · n=1  · vedanga_jyotisha
+
+### `Unasammita` — ūnasammita  (n=1)
+
+- соответствующие остатку  · n=1  · vedanga_jyotisha
+
+### `UnayIH` — ūnayīḥ  (n=1)
+
+- оставь неисполненным  · n=1  · rigveda
+
+### `UnazoqaSavarza` — ūnaṣoḍaśavarṣa  (n=1)
+
+- Не исполнилось и шестнадцати лет  · n=1  · ramayana-balakanda
+
+### `Unena` — ūnena  (n=2)
+
+- недостаточным  · n=2  · atharvaveda
+
+### `UpaTuH` — ūpathuḥ  (n=1)
+
+- Вытащили  · n=1  · rigveda
+
+### `UpacitaM` — ūpacitaṃ  (n=1)
+
+- составленное  · n=1  · sankhya-karika
+
+### `Upapadyate` — ūpapadyate  (n=1)
+
+- поднес  · n=1  · ramayana-ayodhyakanda
+
+### `UrDaja` — ūrdhaja  (n=1)
+
+- волосами  · n=1  · mahabharata-dronaparva
+
+### `UrDvA` — ūrdhvā  (n=23)
+
+- прямо  · n=5  · rigveda, rigveda, rigveda
+- устремленная вверх  · n=2  · rigveda, rigveda
+- поднимаются  · n=2  · rigveda
+- направленной вверх  · n=2  · atharvaveda, atharvaveda
+- обращенной кверху  · n=2  · atharvaveda
+- Высоко  · n=1  · rigveda
+- распрямившаяся  · n=1  · rigveda
+- вверх  · n=1  · rigveda
+- ввысь поднялось  · n=1  · rigveda
+- Распрямились  · n=1  · rigveda
+- вздымаются  · n=1  · rigveda
+- верхняя  · n=1  · br-up
+- зенит  · n=1  · br-up
+- Направленная вверх  · n=1  · atharvaveda
+- обращенную вверх  · n=1  · atharvaveda
+
+### `UrDvABiScatiraScIBiSca` — ūrdhvābhiś ca tiraścībhiś ca  (n=1)
+
+- сверкающими сверху и поперек  · n=1  · ch-up
+
+### `UrDvAH` — ūrdhvāḥ  (n=3)
+
+- поднялись  · n=2  · rigveda
+- прямо  · n=1  · rigveda
+
+### `UrDvAM` — ūrdhvāṃ  (n=1)
+
+- устремленное вверх  · n=1  · rigveda
+
+### `UrDvANguli` — ūrdhvāṅguli  (n=1)
+
+- поднятым кверху пальцем  · n=1  · mahabharata-adiparva
+
+### `UrDvAYcitaSirogrIva` — ūrdhvāñcitaśirogrīva  (n=1)
+
+- подняв вверх голову и вытянув шею  · n=1  · mahabharata-adiparva
+
+### `UrDvAkuYcana` — ūrdhvākuñcana  (n=2)
+
+- восходящие сокращения  · n=1  · hatha-yoga-pradipika
+- втягивая ее обратно  · n=1  · hatha-yoga-pradipika
+
+### `UrDvAm` — ūrdhvām  (n=4)
+
+- обращенную вверх  · n=2  · rigveda
+- вверх  · n=2  · mai-up
+
+### `UrDvAn` — ūrdhvān  (n=3)
+
+- распрямившись  · n=2  · rigveda
+- прямо  · n=1  · rigveda
+
+### `UrDvAsa` — ūrdhvāsa  (n=1)
+
+- распрямившись  · n=1  · rigveda
+
+### `UrDvAsas` — ūrdhvāsas  (n=2)
+
+- Вздымающиеся вверх  · n=2  · rigveda
+
+### `UrDvAyA` — ūrdhvāyā  (n=4)
+
+- направленной вверх  · n=4  · atharvaveda, atharvaveda
+
+### `UrDvAyAM` — ūrdhvāyāṃ  (n=1)
+
+- направленной вверх  · n=1  · atharvaveda
+
+### `UrDvAyAm` — ūrdhvāyām  (n=2)
+
+- направленной вверх  · n=2  · atharvaveda
+
+### `UrDva` — ūrdhva  (n=147)
+
+- вверх  · n=29  · ch-up, br-up, mahabharata-adiparva, hatha-yoga-pradipika, rigveda, rigveda, mahabharata-ashvamedhikaparva, rigveda, atharvaveda, atharvaveda, atharvaveda, shukasaptati, atharvaveda, yotat-up, mnar-up, mai-up
+- прямо  · n=13  · rigveda, rigveda, rigveda, kama-sutra, rigveda, rigveda, atharvaveda
+- после  · n=8  · ramayana-sundarakanda, manavadharmashastra, ch-up, nyaya-bhashya, mahabharata-ashvamedhikaparva, hatha-yoga-pradipika
+- наверху  · n=7  · ch-up, hatha-yoga-pradipika, atharvaveda, mai-up
+- ввысь  · n=5  · mahabharata-dronaparva, rigveda, rigveda, atharvaveda
+- устремленное вверх  · n=4  · atharvaveda, atharvaveda
+- направленной вверх  · n=4  · atharvaveda, atharvaveda
+- сверху  · n=4  · shv-up, mnar-up
+- выше  · n=2  · mahabharata-adiparva, manavadharmashastra
+- далее  · n=2  · manavadharmashastra
+- Прямо  · n=2  · rigveda, rigveda
+- Прямой  · n=2  · rigveda
+- направленный вверх  · n=2  · rigveda, atharvaveda
+- стоящий прямо  · n=2  · rigveda
+- устремленный вверх  · n=2  · atharvaveda, atharvaveda
+- Вверху  · n=2  · sankhya-karika
+- направленную вверх  · n=2  · atharvaveda
+- затем  · n=1  · mahabharata-adiparva
+- поднятыми  · n=1  · ramayana-ayodhyakanda
+- впредь  · n=1  · ramayana-sundarakanda
+- теперь  · n=1  · manavadharmashastra
+- по [прошествии]  · n=1  · manavadharmashastra
+- выслушайте  · n=1  · manavadharmashastra
+- надо мной  · n=1  · mahabharata-aranyakaparva
+- пройдут  · n=1  · mahabharata-aranyakaparva
+- по истечении  · n=1  · mahabharata-aranyakaparva
+- Высоко поднят  · n=1  · rigveda
+- поднялся  · n=1  · rigveda
+- Высоко вверх (поднят)  · n=1  · rigveda
+- Поднятые вверх  · n=1  · rigveda
+- направлен вверх  · n=1  · rigveda
+- Ввысь  · n=1  · rigveda
+- поднимает  · n=1  · kama-sutra
+- подняв  · n=1  · kama-sutra
+- сверх  · n=1  · mahabharata-bhishmaparva
+- высоту  · n=1  · mahabharata-bhishmaparva
+- до  · n=1  · mahabharata-dronaparva
+- устремленным вверх  · n=1  · rigveda
+- высоко поднятый  · n=1  · rigveda
+- Прямо поднялся  · n=1  · rigveda
+- исходит  · n=1  · gitarthasamgraha-abhinavagupta
+- распрямился  · n=1  · rigveda
+- Поднявшись  · n=1  · rigveda
+- со временем  · n=1  · bhagavadgita-sementsov
+- возвышенной  · n=1  · bhagavadgita-1909
+- восходящем  · n=1  · ch-up
+- направленным вверх  · n=1  · rigveda
+- направлены вверх  · n=1  · rigveda
+- Распрямись  · n=1  · rigveda
+- Выпрямись  · n=1  · rigveda
+- на небо  · n=1  · mahabharata-shalyaparva
+- после разрушения последнего  · n=1  · nyaya-bhashya
+- верхние  · n=1  · br-up
+- Поднялся  · n=1  · rigveda
+- небеса  · n=1  · raghuvamsha
+- устойчивым  · n=1  · hatha-yoga-pradipika
+- выпячивание  · n=1  · hatha-yoga-pradipika
+- выпячивая  · n=1  · hatha-yoga-pradipika
+- над  · n=1  · hatha-yoga-pradipika
+- верхняя  · n=1  · hatha-yoga-pradipika
+- верхний  · n=1  · hatha-yoga-pradipika
+- положение тела  · n=1  · hatha-yoga-pradipika
+- Ваджроли  · n=1  · hatha-yoga-pradipika
+- кверху  · n=1  · mahabharata-virataparva
+- Вверх  · n=1  · atharvaveda
+- в высоте  · n=1  · atharvaveda
+- обращенной вверх  · n=1  · atharvaveda
+- прямые  · n=1  · atharvaveda
+- возвышение  · n=1  · sankhya-karika
+- высокие  · n=1  · atharvaveda
+- истечение  · n=1  · vedanga_jyotisha
+- верхнюю  · n=1  · pr-up
+
+### `UrDva-mUla` — ūrdhva-mūla  (n=5)
+
+- с корнями вверх  · n=2  · bhagavadgity
+- корень — верху  · n=1  · bhagavadgita-burba
+- С корнями вверх  · n=1  · bhagavadgita-1914
+- коренья вверхъ  · n=1  · bhagavadgita-1909
+
+### `UrDva-mUlaH` — ūrdhva-mūlaḥ  (n=1)
+
+- с корнями вверх  · n=1  · bhagavadgita-radha
+
+### `UrDva-mUlam` — ūrdhva-mūlam  (n=2)
+
+- корень поднятъ вверьхъ  · n=1  · bhagavadgita-1788
+- с корнями вверх  · n=1  · bhagavadgita-radha
+
+### `UrDvaBAj` — ūrdhvabhāj  (n=2)
+
+- Урдхвабхаджем  · n=1  · mahabharata-aranyakaparva
+- Урдхвабхадж  · n=1  · mahabharata-aranyakaparva
+
+### `UrDvaBAk` — ūrdhvabhāk  (n=1)
+
+- получает удел наверху  · n=1  · mai-up
+
+### `UrDvaBuja` — ūrdhvabhuja  (n=1)
+
+- с поднятыми вверх руками  · n=1  · mahabharata-dronaparva
+
+### `UrDvaH` — ūrdhvaḥ  (n=7)
+
+- прямой  · n=2  · rigveda
+- Направленный вверх  · n=1  · rigveda
+- Выпрямился  · n=1  · rigveda
+- устремленный ввысь  · n=1  · rigveda
+- Высоко  · n=1  · atharvaveda
+- высоко  · n=1  · atharvaveda
+
+### `UrDvaM` — ūrdhvaṃ  (n=20)
+
+- над  · n=5  · br-up
+- Высоко  · n=2  · rigveda
+- ввысь  · n=2  · mahabharata-dronaparva, mahabharata-udyogaparva
+- вверх  · n=2  · mahabharata-ashvamedhikaparva
+- после  · n=1  · mahabharata-aranyakaparva
+- что  · n=1  · mahabharata-adiparva
+- в этом нет сомнений  · n=1  · bhagavadgita-sharma
+- пространство  · n=1  · nyaya-bhashya
+- в голове  · n=1  · hatha-yoga-pradipika
+- высоко  · n=1  · atharvaveda
+- поднимается  · n=1  · yotat-up
+- Поднимается  · n=1  · yotat-up
+- и  · n=1  · megha-duta
+
+### `UrDvaMdehAt` — ūrdhvaṃ dehāt  (n=1)
+
+- после гибели (тела)  · n=1  · mahabharata-ashvamedhikaparva
+
+### `UrDvaMkfRvantu` — ūrdhvaṃ kṛṇvantu  (n=2)
+
+- да водрузят  · n=2  · rigveda
+
+### `UrDvaSfNga` — ūrdhvaśṛṅga  (n=1)
+
+- с высокой вершиной  · n=1  · ramayana-sundarakanda
+
+### `UrDvaSocizam` — ūrdhvaśociṣam  (n=1)
+
+- с высоким пламенем  · n=1  · rigveda
+
+### `UrDvaTA` — ūrdhvathā  (n=1)
+
+- выпрямился  · n=1  · rigveda
+
+### `UrDvabAhoH` — ūrdhvabāhoḥ  (n=1)
+
+- воздев кверху руки  · n=1  · mahabharata-udyogaparva
+
+### `UrDvabAhu` — ūrdhvabāhu  (n=14)
+
+- с высоко поднятыми руками  · n=2  · ramayana-balakanda, mahabharata-shalyaparva
+- воздев руки к небу  · n=2  · mahabharata-aranyakaparva
+- с поднятыми вверх руками  · n=2  · mahabharata-aranyakaparva, mahabharata-adiparva
+- воздев руки  · n=2  · shukasaptati, mai-up
+- воздев к небу руки  · n=1  · mahabharata-aranyakaparva
+- поднятыми вверх руками  · n=1  · mahabharata-dronaparva
+- с поднятыми руками  · n=1  · mahabharata-shalyaparva
+- подъята  · n=1  · raghuvamsha
+- воздел руки  · n=1  · mahabharata-ashramavasikaparva
+- воздев кверху руки  · n=1  · mahabharata-svargarohanikaparva
+
+### `UrDvabAhuBiH` — ūrdhvabāhubhiḥ  (n=1)
+
+- воздевающих руки  · n=1  · mahabharata-striparva
+
+### `UrDvabAhuH` — ūrdhvabāhuḥ  (n=1)
+
+- не опуская воздетые руки  · n=1  · ramayana-balakanda
+
+### `UrDvabAhuM` — ūrdhvabāhuṃ  (n=1)
+
+- воздев руки  · n=1  · mahabharata-sauptikaparva
+
+### `UrDvabAhum` — ūrdhvabāhum  (n=2)
+
+- с поднятыми вверх руками  · n=2  · ramayana-sundarakanda, mahabharata-aranyakaparva
+
+### `UrDvabuDna` — ūrdhvabudhna  (n=3)
+
+- дном наверху  · n=2  · br-up
+- с дном наверху  · n=1  · atharvaveda
+
+### `UrDvacakzuzAm` — ūrdhvacakṣuṣām  (n=1)
+
+- смиренно взирающих  · n=1  · ramayana-ayodhyakanda
+
+### `UrDvadaihika` — ūrdhvadaihika  (n=1)
+
+- должное погребение  · n=1  · raghuvamsha
+
+### `UrDvadehika` — ūrdhvadehika  (n=2)
+
+- поминального обряда  · n=1  · mahabharata-ashramavasikaparva
+- поминальное жертвоприношение  · n=1  · mahabharata-mausalaparva
+
+### `UrDvadfzwayaH` — ūrdhvadṛṣṭayaḥ  (n=1)
+
+- с такими мыслями  · n=1  · mahabharata-dronaparva
+
+### `UrDvadfzwi` — ūrdhvadṛṣṭi  (n=2)
+
+- воздев очи  · n=1  · mahabharata-aranyakaparva
+- устремляя ввысь взор  · n=1  · mahabharata-aranyakaparva
+
+### `UrDvagA` — ūrdhvagā  (n=2)
+
+- завернутым вверх  · n=1  · hatha-yoga-pradipika
+- Идущая вверх  · n=1  · mai-up
+
+### `UrDvaga` — ūrdhvaga  (n=6)
+
+- поднимается вверх  · n=2  · hatha-yoga-pradipika
+- высоко летящие  · n=1  · mahabharata-aranyakaparva
+- уходит ввысь  · n=1  · mahabharata-aranyakaparva
+- вверх  · n=1  · mahabharata-ashvamedhikaparva
+- к подъему вверх  · n=1  · hatha-yoga-pradipika
+
+### `UrDvagaH` — ūrdhvagaḥ  (n=1)
+
+- вверх  · n=1  · mahabharata-ashvamedhikaparva
+
+### `UrDvagam` — ūrdhvagam  (n=1)
+
+- истомившись  · n=1  · kumarasambhava
+
+### `UrDvagrAvARaH` — ūrdhvagrāvāṇaḥ  (n=1)
+
+- направив вверх давильные камни  · n=1  · rigveda
+
+### `UrDvagrAvARo` — ūrdhvagrāvāṇo  (n=1)
+
+- направив вверх давильные камни  · n=1  · rigveda
+
+### `UrDvajihva` — ūrdhvajihva  (n=2)
+
+- с языком, направленным вверх  · n=1  · hatha-yoga-pradipika
+- язык  · n=1  · hatha-yoga-pradipika
+
+### `UrDvakeSa` — ūrdhvakeśa  (n=1)
+
+- со всклокоченными волосами  · n=1  · mahabharata-adiparva
+
+### `UrDvakfSanam` — ūrdhvakṛśanam  (n=2)
+
+- (поднимающее) вверх жемчужины  · n=2  · rigveda
+
+### `UrDvaliNginA` — ūrdhvaliṅginā  (n=2)
+
+- с поднятым лингамом  · n=2  · shukasaptati
+
+### `UrDvam` — ūrdhvam  (n=118)
+
+- вверх  · n=47  · hatha-yoga-pradipika, mai-up, ramayana-sundarakanda, mahabharata-adiparva, bhagavadgita-burba, ramanuja_gitabhashya, bhagavadgita-1914, bhagavadgita-smirnov, bhagavadgita-sharma, bhagavadgita-prabhupada, bhagavadgita-radha, ch-up, kat-up, mahabharata-aranyakaparva, kama-sutra, mahabharata-bhishmaparva, mahabharata-dronaparva, rigveda, bhagavadgita-erman, bhagavadgita-sementsov, mahabharata-ashvamedhikaparva, mahabharata-virataparva, atharvaveda, mnar-up, mun-up, ait-up
+- после  · n=8  · manavadharmashastra, mahabharata-adiparva, bhagavadgity, bhagavadgita-erman, bhagavadgita-smirnov, ch-up
+- ввысь  · n=8  · mahabharata-adiparva, mahabharata-bhishmaparva, mahabharata-aranyakaparva, mahabharata-dronaparva, raghuvamsha, mahabharata-mahaprasthanikaparva
+- выше  · n=5  · ramayana-sundarakanda, manavadharmashastra, mahabharata-aranyakaparva, bhagavadgita-smirnov
+- прямо  · n=4  · rigveda, manavadharmashastra
+- сверху  · n=3  · devi-gita, hatha-yoga-pradipika, shv-up
+- далее  · n=2  · mahabharata-adiparva
+- после этого  · n=2  · manavadharmashastra, bhagavadgita-radha
+- по прошествии  · n=2  · mahabharata-aranyakaparva, kama-sutra
+- наверх  · n=2  · mahabharata-aranyakaparva, mahabharata-ashvamedhikaparva
+- вверху  · n=2  · devi-gita, vedartha-samgraha_ramanuja
+- Здесь  · n=1  · mahabharata-adiparva
+- Далее  · n=1  · mahabharata-adiparva
+- затем  · n=1  · mahabharata-adiparva
+- После этого  · n=1  · mahabharata-adiparva
+- поднимал  · n=1  · ramayana-ayodhyakanda
+- позже  · n=1  · ramayana-ayodhyakanda
+- Поднимись  · n=1  · ramayana-sundarakanda
+- по смерти  · n=1  · manavadharmashastra
+- поднимать  · n=1  · ramayana-aranyakanda
+- в верхних  · n=1  · ramayana-balakanda
+- верхних  · n=1  · ramayana-balakanda
+- пройдет  · n=1  · mahabharata-aranyakaparva
+- После  · n=1  · mahabharata-adiparva
+- с этой поры  · n=1  · mahabharata-bhishmaparva
+- учащенно бьется  · n=1  · mahabharata-udyogaparva
+- над  · n=1  · mahabharata-udyogaparva
+- в продольном  · n=1  · mahabharata-udyogaparva
+- Вверх  · n=1  · gitarthasamgraha-abhinavagupta
+- на высоту  · n=1  · bhagavadgity
+- верх  · n=1  · bhagavadgita-smirnov
+- вверьхъ  · n=1  · bhagavadgita-1788
+- горе  · n=1  · bhagavadgita-sementsov
+- на небѣ  · n=1  · bhagavadgita-1909
+- вверхъ  · n=1  · bhagavadgita-1909
+- сверх этого  · n=1  · ch-up
+- возводили очи к небесам  · n=1  · mahabharata-karnaparva
+- кверху  · n=1  · rigveda
+- высоко  · n=1  · rigveda
+- Со временем  · n=1  · mahabharata-ashvamedhikaparva
+- поднималась  · n=1  · hatha-yoga-pradipika
+- обратно  · n=1  · hatha-yoga-pradipika
+- Над  · n=1  · atharvaveda
+- жъ  · n=1  · megha-duta
+
+### `UrDvamAcakrame` — ūrdhvamācakrame  (n=1)
+
+- взмыл ввысь  · n=1  · mahabharata-aranyakaparva
+
+### `UrDvamAyAnti` — ūrdhvamāyānti  (n=1)
+
+- поднимаются  · n=1  · mahabharata-ashvamedhikaparva
+
+### `UrDvamAyu` — ūrdhvamāyu  (n=1)
+
+- поднимая рёв  · n=1  · atharvaveda
+
+### `UrDvamUla` — ūrdhvamūla  (n=9)
+
+- С корнями вверх  · n=2  · mahabharata-bhishmaparva
+- с корнями вверх  · n=2  · bhagavadgita-erman
+- Наверху корень  · n=2  · mai-up
+- корни вверх  · n=1  · ramanuja_gitabhashya
+- корни кверху  · n=1  · bhagavadgita-sementsov
+- корень  · n=1  · kat-up
+
+### `UrDvamUlam` — ūrdhvamūlam  (n=4)
+
+- с корнями вверх  · n=2  · bhagavadgita-smirnov, bhagavadgita-sharma
+- корни которого устремлены вверх  · n=1  · bhagavadgita-prabhupada
+- корни растут вверх  · n=1  · bhagavadgita-prabhupada
+
+### `UrDvamuKa` — ūrdhvamukha  (n=2)
+
+- обращенный вверх  · n=2  · kumarasambhava
+
+### `UrDvamuKaiS` — ūrdhvamukhaiś  (n=1)
+
+- вверх  · n=1  · raghuvamsha
+
+### `UrDvan` — ūrdhvan  (n=1)
+
+- на голову  · n=1  · mahabharata-dronaparva
+
+### `UrDvanAla` — ūrdhvanāla  (n=1)
+
+- стеблем вверх  · n=1  · yotat-up
+
+### `UrDvapAda` — ūrdhvapāda  (n=3)
+
+- ногами вверх  · n=1  · hatha-yoga-pradipika
+- вверх  · n=1  · hatha-yoga-pradipika
+- вверх ногами  · n=1  · yotat-up
+
+### `UrDvapAdaH` — ūrdhvapādaḥ  (n=1)
+
+- вверх ногами  · n=1  · mahabharata-striparva
+
+### `UrDvapAdo` — ūrdhvapādo  (n=1)
+
+- вверх ногами  · n=1  · mahabharata-striparva
+
+### `UrDvapaTa` — ūrdhvapatha  (n=1)
+
+- в небо  · n=1  · ramayana-balakanda
+
+### `UrDvapavitra` — ūrdhvapavitra  (n=1)
+
+- Высокий, чистый  · n=1  · tai-up
+
+### `UrDvapraRihitekzaRa` — ūrdhvapraṇihitekṣaṇa  (n=1)
+
+- устремивший взгляд вверх  · n=1  · ramayana-sundarakanda
+
+### `UrDvaraSmi` — ūrdhvaraśmi  (n=3)
+
+- отбрасывающий свет кверху  · n=1  · mahabharata-bhishmaparva
+- с лучами вверх  · n=1  · mahabharata-dronaparva
+- с (единственным) устремленным ввысь лучом  · n=1  · mahabharata-karnaparva
+
+### `UrDvareKatalau` — ūrdhvarekhatalau  (n=1)
+
+- продольные линии  · n=1  · mahabharata-udyogaparva
+
+### `UrDvaretA` — ūrdhvaretā  (n=3)
+
+- девственен  · n=1  · mahabharata-adiparva
+- удерживавший семя  · n=1  · mahabharata-striparva
+- удерживал свое семя  · n=1  · mahabharata-striparva
+
+### `UrDvaretAH` — ūrdhvaretāḥ  (n=1)
+
+- удерживая свое семя  · n=1  · mahabharata-adiparva
+
+### `UrDvaretas` — ūrdhvaretas  (n=14)
+
+- удерживал свое семя  · n=1  · mahabharata-adiparva
+- с семенем, обращенным вверх  · n=1  · mahabharata-adiparva
+- сдерживающий семя  · n=1  · mahabharata-adiparva
+- соблюдающий обет целомудрия  · n=1  · ramayana-balakanda
+- Урдхваретас  · n=1  · mahabharata-aranyakaparva
+- удерживая свое семя  · n=1  · mahabharata-adiparva
+- удерживавших свое семя  · n=1  · mahabharata-adiparva
+- целомудрие  · n=1  · mahabharata-bhishmaparva
+- с обращенным вверх семенем  · n=1  · mahabharata-udyogaparva
+- Поднимая вверх семя  · n=1  · mahabharata-ashvamedhikaparva
+- удержавших свое семя  · n=1  · mahabharata-sabhaparva
+- проводивших воздержанную жизнь и не оставивших потомства  · n=1  · mahabharata-sabhaparva
+- целомудренны  · n=1  · mai-up
+- Целомудренный  · n=1  · mai-up
+
+### `UrDvaretasAm` — ūrdhvaretasām  (n=2)
+
+- безбрачия  · n=2  · mahabharata-sabhaparva
+
+### `UrDvaretasamAtmAnaMcakAra` — ūrdhvaretasamātmānaṃ cakāra  (n=1)
+
+- к целомудрию себя принудил  · n=1  · mahabharata-bhishmaparva
+
+### `UrDvaroman` — ūrdhvaroman  (n=1)
+
+- Волоски у него на теле всегда были подняты  · n=1  · mahabharata-dronaparva
+
+### `UrDvas` — ūrdhvas  (n=4)
+
+- прямо  · n=3  · rigveda, rigveda, rigveda
+- высоко поднимаешься  · n=1  · rigveda
+
+### `UrDvasAnaH` — ūrdhvasānaḥ  (n=1)
+
+- распрямляясь  · n=1  · rigveda
+
+### `UrDvasAnuH` — ūrdhvasānuḥ  (n=1)
+
+- спиною кверху  · n=1  · rigveda
+
+### `UrDvasTita` — ūrdhvasthita  (n=1)
+
+- встает  · n=1  · chaurapanchashika
+
+### `UrDvasasya` — ūrdhvasasya  (n=1)
+
+- высоко плодородный  · n=1  · mahabharata-adiparva
+
+### `UrDvasrotas` — ūrdhvasrotas  (n=1)
+
+- имеющие течение вверх  · n=1  · sankhya-karika
+
+### `UrDvasrotogataM` — ūrdhvasrotogataṃ  (n=1)
+
+- восходящим потоком  · n=1  · mahabharata-ashvamedhikaparva
+
+### `UrDvastizWan` — ūrdhvas tiṣṭhan  (n=1)
+
+- стоя прямо  · n=1  · atharvaveda
+
+### `UrDvasvapna` — ūrdhvasvapna  (n=1)
+
+- спящие стоя  · n=1  · atharvaveda
+
+### `UrDvataH` — ūrdhvataḥ  (n=3)
+
+- верхняя  · n=2  · hatha-yoga-pradipika
+- вверх  · n=1  · hatha-yoga-pradipika
+
+### `UrDvau` — ūrdhvau  (n=1)
+
+- подняты вверх  · n=1  · kama-sutra
+
+### `UrDvavAha` — ūrdhvavāha  (n=1)
+
+- текущих по горам  · n=1  · ramayana-ayodhyakanda
+
+### `UrDvaveRIDarA` — ūrdhvaveṇīdharā  (n=1)
+
+- Урдхвавенидхара  · n=1  · mahabharata-shalyaparva
+
+### `UrDvaveRIDarAH` — ūrdhvaveṇīdharāḥ  (n=1)
+
+- носили косы, завязанные наверху  · n=1  · mahabharata-shalyaparva
+
+### `UrDvavimAna` — ūrdhvavimāna  (n=1)
+
+- небесных средств передвижения  · n=1  · yoga-sutry_vyasa-bhashya
+
+### `UrDvayA` — ūrdhvayā  (n=1)
+
+- устремленным ввысь  · n=1  · rigveda
+
+### `UrDveva` — ūrdhveva  (n=1)
+
+- будто стоя  · n=1  · rigveda
+
+### `UrDvezu` — ūrdhveṣu  (n=2)
+
+- в восходящем порядке  · n=1  · ch-up
+- восходящем  · n=1  · ch-up
+
+### `UrDvo` — ūrdhvo  (n=1)
+
+- ввысь  · n=1  · atharvaveda
+
+### `UrDvocCvAsI` — ūrdhvocchvāsī  (n=1)
+
+- испускает дух  · n=1  · br-up
+
+### `UrDvocCvAsin` — ūrdhvocchvāsin  (n=1)
+
+- испускает дух  · n=1  · br-up
+
+### `UrDvonmuKa` — ūrdhvonmukha  (n=1)
+
+- запрокинув голову  · n=1  · buddhacharita
+
+### `UrRA` — ūrṇā  (n=2)
+
+- паутиной  · n=1  · mahabharata-dronaparva
+- в шерсть  · n=1  · rigveda
+
+### `UrRAm` — ūrṇām  (n=1)
+
+- в шерсть  · n=1  · rigveda
+
+### `UrRAvantam` — ūrṇāvantam  (n=1)
+
+- из шерсти  · n=1  · rigveda
+
+### `UrRAvatI` — ūrṇāvatī  (n=2)
+
+- богата шерстью  · n=2  · rigveda
+
+### `UrRAvatInAm` — ūrṇāvatīnām  (n=1)
+
+- шерстистых (овец)  · n=1  · rigveda
+
+### `UrRa` — ūrṇa  (n=3)
+
+- шерсть  · n=2  · kama-sutra
+- скорее  · n=1  · mahabharata-adiparva
+
+### `UrRamradA` — ūrṇamradā  (n=2)
+
+- Мягкая, как шерсть  · n=2  · rigveda
+
+### `UrRamrada` — ūrṇamrada  (n=2)
+
+- нежная, как шерсть  · n=1  · rigveda
+- Нежная, как шерсть  · n=1  · atharvaveda
+
+### `UrRanABa` — ūrṇanābha  (n=1)
+
+- Урнунабха  · n=1  · mahabharata-adiparva
+
+### `UrRanABi` — ūrṇanābhi  (n=2)
+
+- паук  · n=2  · mahabharata-dronaparva, mai-up
+
+### `UrRoti` — ūrṇoti  (n=2)
+
+- раскрывает  · n=1  · rigveda
+- одевает  · n=1  · rigveda
+
+### `UrRotu` — ūrṇotu  (n=2)
+
+- покроет  · n=2  · atharvaveda
+
+### `UrRu` — ūrṇu  (n=1)
+
+- укрой  · n=1  · rigveda
+
+### `UrRuTaH` — ūrṇuthaḥ  (n=1)
+
+- открываете  · n=1  · rigveda
+
+### `UrRuhi` — ūrṇuhi  (n=6)
+
+- открой  · n=2  · rigveda, rigveda
+- укрой  · n=2  · atharvaveda
+- Укрой  · n=2  · atharvaveda
+
+### `UrTva-vAsin` — ūrthva-vāsin  (n=1)
+
+- живущие на ветвях деревьев  · n=1  · ramayana-aranyakanda
+
+### `UrU` — ūrū  (n=21)
+
+- бедра  · n=17  · kama-sutra, rigveda, mahabharata-aranyakaparva, mahabharata-shalyaparva, ramayana-sundarakanda, ramayana-aranyakanda, mahabharata-dronaparva, br-up, atharvaveda, atharvaveda
+- две лядвеи  · n=1  · atharvaveda
+- бедрами  · n=1  · atharvaveda
+- по бедрам  · n=1  · atharvaveda
+- бедер  · n=1  · atharvaveda
+
+### `UrUmUlasaMvAhane` — ūrūmūlasaṃvāhane  (n=1)
+
+- массировать основания бедер  · n=1  · kama-sutra
+
+### `UrUn` — ūrūn  (n=1)
+
+- ноги  · n=1  · ramayana-aranyakanda
+
+### `UrUpari` — ūrūpari  (n=1)
+
+- на бедро  · n=1  · yotat-up
+
+### `Urasenaja` — ūrasenaja  (n=1)
+
+- шурасенов  · n=1  · manavadharmashastra
+
+### `Urau` — ūrau  (n=2)
+
+- в чреве  · n=2  · mahabharata-aranyakaparva
+
+### `UrdDvagamanAdi` — ūrddhvagamanādi  (n=1)
+
+- восхождение и т.д.  · n=1  · sankhya-karika
+
+### `UrdDvam` — ūrddhvam  (n=1)
+
+- возвышение  · n=1  · sankhya-karika
+
+### `UrdDvasattva` — ūrddhvasattva  (n=1)
+
+- верх саттвы  · n=1  · sankhya-karika
+
+### `UrdDvasrotas` — ūrddhvasrotas  (n=2)
+
+- аскетов  · n=1  · sankhya-karika
+- аскета  · n=1  · sankhya-karika
+
+### `Urdara` — ūrdara  (n=1)
+
+- амбар  · n=1  · rigveda
+
+### `Urj` — ūrj  (n=72)
+
+- питательную силу  · n=21  · rigveda, rigveda, atharvaveda, rigveda, atharvaveda, atharvaveda, rigveda, atharvaveda, atharvaveda, atharvaveda, atharvaveda
+- питательной силой  · n=12  · rigveda, rigveda, devi-gita, rigveda, atharvaveda, atharvaveda, atharvaveda
+- подкрепляющую силу  · n=5  · atharvaveda, rigveda
+- силой  · n=5  · atharvaveda, rigveda, br-up
+- питательная сила  · n=5  · rigveda, atharvaveda, atharvaveda, atharvaveda, atharvaveda
+- силу  · n=4  · rigveda, atharvaveda, atharvaveda, atharvaveda
+- Питательную силу  · n=3  · rigveda, atharvaveda, atharvaveda
+- питательной силы  · n=2  · rigveda
+- сил  · n=2  · rigveda
+- подкрепления  · n=2  · rigveda, atharvaveda
+- силы  · n=2  · rigveda, atharvaveda
+- пищу  · n=1  · rigveda
+- подкрепление  · n=1  · rigveda
+- подкрепляющей силой  · n=1  · rigveda
+- подкрепляют  · n=1  · rigveda
+- благодаря  · n=1  · rigveda
+- набирающийся сил  · n=1  · rigveda
+- питанием  · n=1  · atharvaveda
+- питательные силы  · n=1  · atharvaveda
+- подкрепляющая  · n=1  · atharvaveda
+
+### `UrjA` — ūrjā  (n=3)
+
+- Питательной силой  · n=2  · rigveda, rigveda
+- питательной силой  · n=1  · rigveda
+
+### `UrjAdaH` — ūrjādaḥ  (n=2)
+
+- поедающие пищу  · n=2  · rigveda
+
+### `UrjAhuti` — ūrjāhuti  (n=1)
+
+- неся с собой питательные жертвы  · n=1  · rigveda
+
+### `UrjAm` — ūrjām  (n=7)
+
+- подкреплений  · n=2  · rigveda, rigveda
+- сил  · n=2  · rigveda
+- питательных подкреплений  · n=1  · rigveda
+- Питательной силой  · n=1  · rigveda
+- питательных сил  · n=1  · rigveda
+
+### `UrjAmpate` — ūrjām pate  (n=1)
+
+- господин питательных сил  · n=1  · rigveda
+
+### `UrjAnI` — ūrjānī  (n=2)
+
+- Питательная сила  · n=2  · rigveda
+
+### `Urja` — ūrja  (n=9)
+
+- мощи  · n=2  · rigveda
+- энергию  · n=1  · manavadharmashastra
+- питательной силы  · n=1  · rigveda
+- питательную силу  · n=1  · rigveda
+- подкрепляющей силы  · n=1  · atharvaveda
+- подкрепление  · n=1  · atharvaveda
+- доля подкрепления  · n=1  · atharvaveda
+- О питательная сила  · n=1  · atharvaveda
+
+### `UrjaH` — ūrjaḥ  (n=6)
+
+- питательной силы  · n=2  · rigveda, rigveda
+- мощи  · n=2  · rigveda
+- силы  · n=1  · rigveda
+- питательные силы  · n=1  · rigveda
+
+### `UrjaM` — ūrjaṃ  (n=6)
+
+- питательную силу  · n=3  · rigveda, rigveda, rigveda
+- подкрепление  · n=2  · rigveda, atharvaveda
+- питательной силой  · n=1  · rigveda
+
+### `Urjam` — ūrjam  (n=13)
+
+- питательную силу  · n=3  · rigveda, rigveda, atharvaveda
+- силу  · n=2  · rigveda, atharvaveda
+- физическую силу  · n=2  · atharvaveda
+- сила  · n=1  · rigveda
+- силой  · n=1  · rigveda
+- питательной силой  · n=1  · rigveda
+- питательной силы  · n=1  · rigveda
+- усиление  · n=1  · rigveda
+- подкрепление  · n=1  · atharvaveda
+
+### `Urjas` — ūrjas  (n=3)
+
+- питательной силы  · n=2  · rigveda
+- силы  · n=1  · rigveda
+
+### `Urjasana` — ūrjasana  (n=1)
+
+- наделяющий питательной силой  · n=1  · rigveda
+
+### `Urjaskara` — ūrjaskara  (n=1)
+
+- Урджаскара  · n=1  · mahabharata-aranyakaparva
+
+### `Urjasvala` — ūrjasvala  (n=1)
+
+- исполненное сил  · n=1  · raghuvamsha
+
+### `Urjasvant` — ūrjasvant  (n=1)
+
+- полон могущества  · n=1  · mai-up
+
+### `UrjasvantaH` — ūrjasvantaḥ  (n=1)
+
+- богатые подкреплением  · n=1  · atharvaveda
+
+### `Urjasvat` — ūrjasvat  (n=2)
+
+- Богатая питательной силой  · n=1  · atharvaveda
+- богатые питательной силой  · n=1  · atharvaveda
+
+### `UrjasvatI` — ūrjasvatī  (n=1)
+
+- богатая питанием  · n=1  · atharvaveda
+
+### `UrjasvatIr` — ūrjasvatīr  (n=1)
+
+- питательных  · n=1  · rigveda
+
+### `Urjavya` — ūrjavya-  (n=1)
+
+- Урджавья  · n=1  · rigveda
+
+### `Urjavyasya` — ūrjavyasya  (n=1)
+
+- Урджавьи  · n=1  · rigveda
+
+### `UrjayA` — ūrjayā  (n=2)
+
+- питательной силой  · n=1  · atharvaveda
+- с подкрепляющей силой  · n=1  · atharvaveda
+
+### `UrjayamAnam` — ūrjayamānam  (n=1)
+
+- подкрепляющимися  · n=1  · rigveda
+
+### `Urjayant` — ūrjayant  (n=1)
+
+- приносящей силу  · n=1  · rigveda
+
+### `UrjayantI` — ūrjayantī  (n=2)
+
+- подкрепляющее  · n=1  · rigveda
+- укрепляя  · n=1  · rigveda
+
+### `UrjayantIH` — ūrjayantīḥ  (n=1)
+
+- полными питательной силы  · n=1  · rigveda
+
+### `UrjayantyAH` — ūrjayantyāḥ  (n=2)
+
+- Урджаянти  · n=2  · rigveda
+
+### `Urje` — ūrje  (n=3)
+
+- в подкрепляющую силу  · n=1  · atharvaveda
+- подкрепляющей силы  · n=1  · rigveda
+- жизненной силе  · n=1  · atharvaveda
+
+### `Urjita` — ūrjita  (n=15)
+
+- могущественно  · n=2  · bhagavadgita-1914
+- величественное  · n=2  · bhagavadgita-prabhupada
+- высокий  · n=1  · ramayana-sundarakanda
+- могучего  · n=1  · mahabharata-aranyakaparva
+- блистают  · n=1  · mahabharata-udyogaparva
+- прекрасное  · n=1  · gitarthasamgraha-abhinavagupta
+- произведеніе  · n=1  · bhagavadgity
+- крепко  · n=1  · bhagavadgita-smirnov
+- преимущества  · n=1  · bhagavadgita-1788
+- необорной мощи  · n=1  · bhagavadgita-sementsov
+- вещахъ  · n=1  · bhagavadgita-1909
+- величия  · n=1  · bhagavadgita-sharma
+- огромных  · n=1  · shatakatrayam
+
+### `UrjitaH` — ūrjitaḥ  (n=1)
+
+- прекрасное  · n=1  · ramayana-ayodhyakanda
+
+### `UrjitaM` — ūrjitaṃ  (n=2)
+
+- высокое  · n=1  · mahabharata-udyogaparva
+- мощь  · n=1  · raghuvamsha
+
+### `Urjitai` — ūrjitai  (n=1)
+
+- могучими  · n=1  · mahabharata-karnaparva
+
+### `UrjitakarmaRaH` — ūrjitakarmaṇaḥ  (n=1)
+
+- вершителя славных деяний  · n=1  · mahabharata-dronaparva
+
+### `Urjitam` — ūrjitam  (n=9)
+
+- могучее  · n=2  · mahabharata-bhishmaparva, bhagavadgita-erman
+- могучие  · n=1  · mahabharata-adiparva
+- полные силы  · n=1  · buddhacharita
+- могучего  · n=1  · mahabharata-udyogaparva
+- сильное  · n=1  · bhagavadgita-burba
+- обладающий большой силой  · n=1  · bhagavadgita-radha
+- мощную  · n=1  · mahabharata-karnaparva
+- беспредельно  · n=1  · shatakatrayam-serebryakov
+
+### `UrjitavIryAByAm` — ūrjitavīryābhyām  (n=1)
+
+- превосходнейшими в мощи  · n=1  · mahabharata-dronaparva
+
+### `Urjo` — ūrjo  (n=3)
+
+- силы  · n=2  · rigveda, rigveda
+- питательной силы  · n=1  · rigveda
+
+### `UrjonapAt` — ūrjo napāt  (n=1)
+
+- отпрыск силы  · n=1  · rigveda
+
+### `UrjonapAta` — ūrjo napāta  (n=1)
+
+- Отпрыска подкрепления  · n=1  · rigveda
+
+### `UrjonapAtam` — ūrjo napātam  (n=1)
+
+- Отпрыска питательной силы  · n=1  · rigveda
+
+### `UrmA` — ūrmā  (n=1)
+
+- на волне  · n=1  · rigveda
+
+### `UrmIn` — ūrmīn  (n=1)
+
+- волны  · n=1  · rigveda
+
+### `UrmItaraNgaiH` — ūrmītaraṅgaiḥ  (n=1)
+
+- волны  · n=1  · mahabharata-aranyakaparva
+
+### `Urmau` — ūrmau  (n=1)
+
+- волне  · n=1  · rigveda
+
+### `UrmayaH` — ūrmayaḥ  (n=7)
+
+- волны  · n=6  · rigveda, rigveda, rigveda, rigveda, rigveda
+- поток  · n=1  · ramayana-aranyakanda
+
+### `Urmayas` — ūrmayas  (n=1)
+
+- волны  · n=1  · rigveda
+
+### `Urmer` — ūrmer  (n=1)
+
+- волны  · n=1  · rigveda
+
+### `Urmi` — ūrmi  (n=76)
+
+- волну  · n=18  · rigveda, rigveda, rigveda, rigveda, rigveda, rigveda
+- волна  · n=14  · rigveda, ramayana-ayodhyakanda, rigveda, mahabharata-adiparva, rigveda, rigveda, mahabharata-ashvamedhikaparva, atharvaveda, atharvaveda
+- волны  · n=13  · mahabharata-aranyakaparva, ramayana-aranyakanda, rigveda, ramayana-ayodhyakanda, rigveda, rigveda, mahabharata-dronaparva, atharvaveda, shv-up
+- волне  · n=9  · rigveda, rigveda, ramayana-sundarakanda, rigveda
+- волнами  · n=7  · mahabharata-adiparva, rigveda, mahabharata-bhishmaparva, mahabharata-dronaparva, megha-duta
+- волной  · n=3  · rigveda, rigveda
+- волн  · n=2  · ramayana-ayodhyakanda, ramayana-aranyakanda
+- Волны  · n=2  · rigveda
+- на волне  · n=2  · rigveda
+- волною  · n=2  · rigveda
+- волнам  · n=2  · buddhacharita, mai-up
+- воды  · n=1  · ramayana-aranyakanda
+- В волне  · n=1  · rigveda
+
+### `UrmiBiH` — ūrmibhiḥ  (n=4)
+
+- волнами  · n=3  · rigveda, rigveda, rigveda
+- с волнами  · n=1  · rigveda
+
+### `UrmiH` — ūrmiḥ  (n=6)
+
+- волна  · n=6  · rigveda, rigveda, rigveda, rigveda
+
+### `UrmiM` — ūrmiṃ  (n=1)
+
+- волне  · n=1  · rigveda
+
+### `UrmiRA` — ūrmiṇā  (n=4)
+
+- волною  · n=2  · rigveda
+- с волною  · n=1  · rigveda
+- волной  · n=1  · rigveda
+
+### `UrmiRam` — ūrmiṇam  (n=1)
+
+- волнообразный  · n=1  · rigveda
+
+### `UrmijAla` — ūrmijāla  (n=1)
+
+- гребни волн  · n=1  · ramayana-sundarakanda
+
+### `UrmilA` — ūrmilā  (n=5)
+
+- Урмилу  · n=4  · ramayana-balakanda, ramayana-ayodhyakanda
+- дочерей  · n=1  · ramayana-balakanda
+
+### `UrmilAtanayA` — ūrmilātanayā  (n=1)
+
+- дочь Урмилы  · n=1  · ramayana-balakanda
+
+### `Urmim` — ūrmim  (n=3)
+
+- волну  · n=2  · rigveda, rigveda
+- волны  · n=1  · rigveda
+
+### `UrmimAlin` — ūrmimālin  (n=1)
+
+- океан  · n=1  · ramayana-ayodhyakanda
+
+### `UrmimAlinIm` — ūrmimālinīm  (n=1)
+
+- увенчанную волнами  · n=1  · ramayana-ayodhyakanda
+
+### `Urmimat` — ūrmimat  (n=1)
+
+- волнующийся  · n=1  · mahabharata-karnaparva
+
+### `Urmin` — ūrmin  (n=1)
+
+- волной  · n=1  · rigveda
+
+### `UrmyA` — ūrmyā  (n=4)
+
+- ночи  · n=3  · rigveda, rigveda
+- волною  · n=1  · rigveda
+
+### `UrmyAsu` — ūrmyāsu  (n=1)
+
+- в волнующихся  · n=1  · rigveda
+
+### `UrmyAyA` — ūrmyāyā  (n=1)
+
+- ночи  · n=1  · rigveda
+
+### `UrmyAyAH` — ūrmyāyāḥ  (n=1)
+
+- ночную  · n=1  · rigveda
+
+### `Urmye` — ūrmye  (n=3)
+
+- о Ночь  · n=1  · rigveda
+- о волнообразная  · n=1  · rigveda
+- Ночь  · n=1  · rigveda
+
+### `Uru` — ūru  (n=95)
+
+- бедра  · n=25  · kama-sutra, ramayana-sundarakanda, mahabharata-dronaparva, mahabharata-shalyaparva, shatakatrayam-serebryakov, ramayana-aranyakanda, mahabharata-aranyakaparva, rigveda, mahabharata-adiparva, mahabharata-karnaparva, kumarasambhava, mahabharata-sabhaparva, hatha-yoga-pradipika, mahabharata-virataparva, atharvaveda, gitagovinda, mnar-up, mahabharata-sauptikaparva
+- бедро  · n=22  · kama-sutra, mahabharata-adiparva, mahabharata-shantiparva, hatha-yoga-pradipika, shatakatrayam-serebryakov, mahabharata-striparva, ramayana-sundarakanda, buddhacharita, mahabharata-udyogaparva, mahabharata-sabhaparva, shatakatrayam, megha-duta
+- бедер  · n=14  · kama-sutra, manavadharmashastra, ramayana-ayodhyakanda, ramayana-sundarakanda, ramayana-aranyakanda, buddhacharita, mahabharata-dronaparva, atharvaveda, sub-up
+- бедрами  · n=9  · ramayana-sundarakanda, kama-sutra, devi-gita, bhagavadgita-erman, bhagavadgita-sharma, mahabharata-shalyaparva
+- бёдра  · n=3  · devi-gita
+- нога  · n=2  · ramayana-aranyakanda, mahabharata-bhishmaparva
+- бедром  · n=2  · mahabharata-adiparva, hatha-yoga-pradipika
+- бедре  · n=2  · mahabharata-adiparva
+- бедру  · n=2  · mahabharata-udyogaparva, mahabharata-shalyaparva
+- бёдрами  · n=2  · bhagavadgity, bhagavadgita-smirnov
+- ноги  · n=2  · bhagavadgita-sementsov, mahabharata-karnaparva
+- бёдер  · n=2  · devi-gita
+- ляжка  · n=1  · rigveda
+- из бедра  · n=1  · buddhacharita
+- ногами  · n=1  · bhagavadgita-1788
+- чреслами  · n=1  · bhagavadgita-prabhupada
+- ног  · n=1  · mahabharata-karnaparva
+- внутренние стороны  · n=1  · hatha-yoga-pradipika
+- Бедра  · n=1  · atharvaveda
+- ляжки  · n=1  · atma-up
+
+### `Uru-dvayam` — ūru-dvayam  (n=1)
+
+- бедер  · n=1  · gitagovinda
+
+### `UruByAM` — ūrubhyāṃ  (n=1)
+
+- бедра  · n=1  · kama-sutra
+
+### `UruByAm` — ūrubhyām  (n=4)
+
+- из бедер  · n=1  · mahabharata-karnaparva
+- бедра  · n=1  · mahabharata-shalyaparva
+- бедрами  · n=1  · atharvaveda
+- в качестве бедер  · n=1  · atharvaveda
+
+### `UruH` — ūruḥ  (n=1)
+
+- бедро  · n=1  · rigveda
+
+### `UrucCinna` — ūrucchinna  (n=1)
+
+- лишенный ног  · n=1  · kau-up
+
+### `Urucumbana` — ūrucumbana  (n=1)
+
+- целует бедро  · n=1  · kama-sutra
+
+### `UrudeSa` — ūrudeśa  (n=1)
+
+- бедро  · n=1  · kama-sutra
+
+### `Urudvaya` — ūrudvaya  (n=1)
+
+- оба бедра  · n=1  · kama-sutra
+
+### `UrudvayaM` — ūrudvayaṃ  (n=1)
+
+- бедра  · n=1  · amaru-shataka
+
+### `UrugrAhagfhIta` — ūrugrāhagṛhīta  (n=2)
+
+- в оцепенении  · n=1  · mahabharata-bhishmaparva
+- скованных от нанесенных ударов  · n=1  · mahabharata-udyogaparva
+
+### `Uruja` — ūruja  (n=2)
+
+- рожденный из бедра  · n=1  · mahabharata-adiparva
+- родившемуся из бедра  · n=1  · mahabharata-adiparva
+
+### `Urum` — ūrum  (n=1)
+
+- на бедро  · n=1  · atharvaveda
+
+### `UrumUla` — ūrumūla  (n=2)
+
+- основания бедер  · n=1  · kama-sutra
+- основание бедер  · n=1  · kama-sutra
+
+### `UrumUlasaMvAhana` — ūrumūlasaṃvāhana  (n=1)
+
+- растирает основание бедер  · n=1  · kama-sutra
+
+### `UrupAdam` — ūrupādam  (n=1)
+
+- многоногий  · n=1  · ramanuja_gitabhashya
+
+### `UrusTa` — ūrustha  (n=1)
+
+- в бедре  · n=1  · mahabharata-adiparva
+
+### `UrustamBa` — ūrustambha  (n=2)
+
+- оцепенели  · n=1  · mahabharata-bhishmaparva
+- бедра  · n=1  · mahabharata-udyogaparva
+
+### `UrustamBaH` — ūrustambhaḥ  (n=1)
+
+- онемели бедра  · n=1  · mahabharata-virataparva
+
+### `UrustamBagfhIta` — ūrustambhagṛhīta  (n=1)
+
+- Со скованными неподвижностью бедрами  · n=1  · mahabharata-sauptikaparva
+
+### `Uruvega` — ūruvega  (n=3)
+
+- силой бедер  · n=1  · ramayana-sundarakanda
+- от стремительности бедер  · n=1  · ramayana-sundarakanda
+- толчком бедра  · n=1  · mahabharata-bhishmaparva
+
+### `UruvegasamIritam` — ūruvegasamīritam  (n=1)
+
+- стремясь вперед грудью  · n=1  · mahabharata-adiparva
+
+### `Uruvegena` — ūruvegena  (n=2)
+
+- силой бедер  · n=1  · ramayana-sundarakanda
+- от стремительного движения бедер  · n=1  · mahabharata-virataparva
+
+### `UruvegonmaTitAH` — ūruvegonmathitāḥ  (n=1)
+
+- Захваченные силой его бедер  · n=1  · ramayana-sundarakanda
+
+### `UruvegottaTAH` — ūruvegottathāḥ  (n=1)
+
+- Поднятые силой его бедер  · n=1  · ramayana-sundarakanda
+
+### `UrvAd` — ūrvād  (n=2)
+
+- От заключения  · n=2  · rigveda
+
+### `UrvAn` — ūrvān  (n=2)
+
+- моря  · n=2  · rigveda
+
+### `UrvAt` — ūrvāt  (n=1)
+
+- укрытия  · n=1  · rigveda
+
+### `Urva` — ūrva  (n=11)
+
+- пещеру  · n=3  · rigveda, rigveda
+- вместилище  · n=2  · rigveda
+- загона  · n=1  · rigveda
+- загоны  · n=1  · rigveda
+- пещера  · n=1  · rigveda
+- укрытие  · n=1  · rigveda
+- загон  · n=1  · rigveda
+- стадо  · n=1  · rigveda
+
+### `UrvaH` — ūrvaḥ  (n=1)
+
+- море  · n=1  · rigveda
+
+### `UrvaSI` — ūrvaśī  (n=3)
+
+- Урваши  · n=3  · ramayana-aranyakanda, vajs-up
+
+### `Urvam` — ūrvam  (n=7)
+
+- загон  · n=4  · rigveda, rigveda
+- пещеру  · n=2  · rigveda
+- Загон  · n=1  · rigveda
+
+### `UrvarA` — ūrvarā  (n=1)
+
+- пашни  · n=1  · rigveda
+
+### `UrvarAsu` — ūrvarāsu  (n=1)
+
+- пашнях  · n=1  · rigveda
+
+### `Urve` — ūrve  (n=4)
+
+- загона  · n=2  · rigveda
+- в пещере  · n=1  · rigveda
+- океане  · n=1  · rigveda
+
+### `UrvoH` — ūrvoḥ  (n=2)
+
+- бедра  · n=1  · ramayana-aranyakanda
+- бёдра  · n=1  · devi-gita
+
+### `Urvor` — ūrvor  (n=2)
+
+- бедра  · n=1  · kama-sutra
+- бедер  · n=1  · kama-sutra
+
+### `UtI` — ūtī  (n=50)
+
+- в помощь  · n=11  · rigveda
+- поддержками  · n=10  · rigveda, rigveda, rigveda, rigveda
+- поддержкой  · n=6  · rigveda, rigveda, rigveda, rigveda
+- помощью  · n=6  · rigveda, rigveda, rigveda, rigveda, rigveda, rigveda
+- помощи  · n=3  · rigveda, rigveda
+- с поддержками  · n=2  · rigveda, rigveda
+- поддержки  · n=2  · rigveda, rigveda
+- на помощь  · n=2  · rigveda, rigveda
+- На помощь  · n=1  · rigveda
+- поддержка  · n=1  · rigveda
+- поддержкам  · n=1  · rigveda
+- благодаря поддержке  · n=1  · rigveda
+- с поддержкой  · n=1  · rigveda
+- со (своими) поддержками  · n=1  · rigveda
+- за поддержками  · n=1  · rigveda
+- поддержке  · n=1  · rigveda
+
+### `UtIH` — ūtīḥ  (n=4)
+
+- помощь  · n=2  · rigveda
+- поддержки  · n=2  · rigveda
+
+### `UtTApya` — ūtthāpya  (n=1)
+
+- поднимая  · n=1  · hatha-yoga-pradipika
+
+### `Utaya` — ūtaya  (n=6)
+
+- поддержки  · n=2  · rigveda
+- на помощь  · n=2  · rigveda, rigveda
+- Ради помощи  · n=1  · rigveda
+- подкрепления  · n=1  · rigveda
+
+### `UtayaH` — ūtayaḥ  (n=25)
+
+- поддержки  · n=12  · rigveda, rigveda, rigveda
+- подкрепления  · n=8  · rigveda, rigveda
+- Поддержки  · n=2  · rigveda
+- милости  · n=1  · rigveda
+- Помощники  · n=1  · rigveda
+- поддержек  · n=1  · rigveda
+
+### `Utaye` — ūtaye  (n=71)
+
+- на помощь  · n=32  · rigveda, rigveda, rigveda, rigveda, rigveda, rigveda, atharvaveda, atharvaveda
+- для поддержки  · n=20  · rigveda, rigveda, rigveda, rigveda, rigveda
+- чтобы помочь  · n=3  · rigveda, rigveda, rigveda
+- для помощи  · n=3  · rigveda, rigveda, rigveda
+- в поддержку  · n=2  · rigveda, rigveda
+- помочь  · n=2  · rigveda, rigveda
+- помощь  · n=2  · rigveda, rigveda
+- за помощью  · n=1  · rigveda
+- Ради помощи  · n=1  · rigveda
+- Для помощи  · n=1  · rigveda
+- помощи  · n=1  · rigveda
+- чтобы он помог  · n=1  · rigveda
+- Помощь  · n=1  · rigveda
+- поддержать  · n=1  · rigveda
+
+### `Utayo` — ūtayo  (n=2)
+
+- милости  · n=1  · rigveda
+- поддержки  · n=1  · rigveda
+
+### `Uti` — ūti  (n=120)
+
+- поддержками  · n=31  · rigveda, rigveda, rigveda, rigveda, rigveda, rigveda, rigveda, atharvaveda
+- поддержки  · n=19  · rigveda, rigveda, rigveda, rigveda, rigveda
+- помощь  · n=8  · rigveda, rigveda, rigveda, atharvaveda
+- помощью  · n=8  · rigveda, rigveda, rigveda, atharvaveda
+- на помощь  · n=7  · rigveda, rigveda, rigveda, rigveda, atharvaveda, atharvaveda
+- помощи  · n=6  · rigveda, rigveda, rigveda, rigveda
+- поддержка  · n=6  · rigveda, rigveda, rigveda
+- подкрепления  · n=4  · rigveda, rigveda
+- в помощь  · n=4  · rigveda
+- поддержкой  · n=4  · rigveda, rigveda
+- для помощи  · n=3  · rigveda, rigveda, rigveda
+- для поддержки  · n=3  · rigveda, rigveda
+- поддержку  · n=3  · rigveda, rigveda, rigveda
+- помочь  · n=3  · rigveda, atharvaveda
+- услуги  · n=2  · rigveda
+- услугами  · n=2  · rigveda
+- Поддержку  · n=1  · rigveda
+- подкреплениями  · n=1  · rigveda
+- На помощь  · n=1  · rigveda
+- с поддержкой  · n=1  · rigveda
+- поддержкам  · n=1  · rigveda
+- подкрепление  · n=1  · rigveda
+- Поддержками  · n=1  · atharvaveda
+
+### `UtiBi` — ūtibhi  (n=6)
+
+- поддержками  · n=6  · rigveda, rigveda, rigveda
+
+### `UtiBiH` — ūtibhiḥ  (n=44)
+
+- поддержками  · n=31  · rigveda, rigveda, rigveda, rigveda, rigveda, rigveda
+- подкреплениями  · n=4  · rigveda, rigveda, rigveda
+- поддержек  · n=4  · rigveda, rigveda
+- поддержкам  · n=2  · rigveda, rigveda
+- (поддержками)  · n=1  · rigveda
+- со (своими) помощниками  · n=1  · rigveda
+- к поддержкам  · n=1  · rigveda
+
+### `UtiBir` — ūtibhir  (n=6)
+
+- поддержками  · n=6  · rigveda
+
+### `UtiBis` — ūtibhis  (n=1)
+
+- поддержками  · n=1  · rigveda
+
+### `UtiH` — ūtiḥ  (n=1)
+
+- помощь  · n=1  · rigveda
+
+### `UtiM` — ūtiṃ  (n=1)
+
+- помощь  · n=1  · rigveda
+
+### `Utim` — ūtim  (n=1)
+
+- помощи  · n=1  · rigveda
+
+### `Uty` — ūty  (n=1)
+
+- с помощью  · n=1  · rigveda
+
+### `UtyA` — ūtyā  (n=1)
+
+- помощи  · n=1  · rigveda
+
+### `UvaDya` — ūvadhya  (n=2)
+
+- пища в желудке  · n=2  · br-up
+
+### `UvaDyam` — ūvadhyam  (n=1)
+
+- оставшаяся пища  · n=1  · rigveda
+
+### `UvuH` — ūvuḥ  (n=1)
+
+- соткали  · n=1  · rigveda
+
+### `UxhAH` — ūḷhāḥ  (n=2)
+
+- уведенные  · n=2  · rigveda
+
+### `Uza` — ūṣa  (n=1)
+
+- воссветили  · n=1  · rigveda
+
+### `UzaiH` — ūṣaiḥ  (n=1)
+
+- землей солонцов  · n=1  · manavadharmashastra
+
+### `Uzara` — ūṣara  (n=2)
+
+- бесплодную почву  · n=1  · manavadharmashastra
+- соленой почве  · n=1  · ramayana-aranyakanda
+
+### `Uzare` — ūṣare  (n=1)
+
+- в соленую почву  · n=1  · ramayana-ayodhyakanda
+
+### `Uzatu` — ūṣatu  (n=2)
+
+- жили  · n=2  · ch-up
+
+### `UzatuH` — ūṣatuḥ  (n=4)
+
+- Провели  · n=1  · ramayana-balakanda
+- провели  · n=1  · mahabharata-aranyakaparva
+- жили  · n=1  · mahabharata-aranyakaparva
+- расположились  · n=1  · mahabharata-ashvamedhikaparva
+
+### `Uzima` — ūṣima  (n=2)
+
+- жили мы  · n=2  · atharvaveda
+
+### `UzitasainikASvam` — ūṣitasainikāśvam  (n=1)
+
+- конницу водил  · n=1  · raghuvamsha
+
+### `UzmARa` — ūṣmāṇa  (n=1)
+
+- гнев  · n=1  · mahabharata-aranyakaparva
+
+### `UzmaRa` — ūṣmaṇa  (n=1)
+
+- жара  · n=1  · mahabharata-aranyakaparva
+
+### `UzmaRyApiDAnA` — ūṣmaṇyāpidhānā  (n=1)
+
+- дымящиеся крышки  · n=1  · rigveda
+
+### `Uzman` — ūṣman  (n=11)
+
+- свистящие  · n=4  · ch-up
+- природный жар  · n=2  · mahabharata-ashvamedhikaparva
+- теплота  · n=1  · manavadharmashastra
+- жар  · n=1  · mahabharata-aranyakaparva
+- Ушман  · n=1  · mahabharata-aranyakaparva
+- жарким  · n=1  · mahabharata-dronaparva
+- горячий пар  · n=1  · atharvaveda
+
+### `UzmapAH` — ūṣmapāḥ  (n=1)
+
+- предки  · n=1  · ramanuja_gitabhashya
+
+### `Uzmapa` — ūṣmapa  (n=3)
+
+- Ушмапа  · n=2  · mahabharata-sabhaparva
+- пьющие пар  · n=1  · bhagavadgita-burba
+
+### `Uzu` — ūṣu  (n=3)
+
+- воссветили  · n=2  · rigveda
+- провели  · n=1  · ramayana-balakanda
+
+### `UzuH` — ūṣuḥ  (n=15)
+
+- жили  · n=6  · mahabharata-adiparva, mahabharata-aranyakaparva, mahabharata-udyogaparva, br-up
+- провели  · n=3  · mahabharata-aranyakaparva
+- расположились  · n=1  · mahabharata-aranyakaparva
+- Живя  · n=1  · mahabharata-aranyakaparva
+- остались  · n=1  · mahabharata-aranyakaparva
+- прожили  · n=1  · mahabharata-aranyakaparva
+- воссветили  · n=1  · rigveda
+- не могли оставаться  · n=1  · mahabharata-ashramavasikaparva
+
+### `Uzus` — ūṣus  (n=1)
+
+- провели  · n=1  · ramayana-balakanda
 
 ### `u` — u  (n=124)
 

@@ -1,6 +1,15846 @@
-# Surface glossary — SLP1 `d`
+# Surface glossary — SLP1 `D`
 
-8372 forms. Format: `form` (sa) — total n → ru (n) · registers.
+10990 forms. Format: `form` (sa) — total n → ru (n) · registers.
+
+### `DA` — dhā  (n=111)
+
+- вложите  · n=9  · atharvaveda
+- дай  · n=8  · rigveda, rigveda, rigveda, rigveda, atharvaveda, atharvaveda, atharvaveda
+- Дай  · n=4  · rigveda, rigveda, rigveda, rigveda
+- Наделите  · n=3  · rigveda, atharvaveda
+- Надели  · n=3  · rigveda, rigveda, rigveda
+- даруй  · n=2  · mahabharata-adiparva, rigveda
+- вложена  · n=2  · rigveda
+- хотите поместить  · n=2  · rigveda
+- сделали  · n=2  · rigveda
+- взяли себе  · n=2  · rigveda
+- Принимая  · n=2  · rigveda
+- Дайте  · n=2  · rigveda, atharvaveda
+- надели  · n=2  · rigveda, rigveda
+- сделайте  · n=2  · rigveda
+- устрой  · n=2  · rigveda, atharvaveda
+- помести  · n=2  · rigveda
+- учинил  · n=2  · rigveda
+- поставили  · n=2  · rigveda
+- создает  · n=2  · rigveda
+- вложит  · n=2  · atharvaveda
+- отстранили  · n=2  · atharvaveda
+- подложила  · n=2  · atharvaveda
+- установили  · n=1  · rigveda
+- Протягивая  · n=1  · rigveda
+- на  · n=1  · rigveda
+- содействуй  · n=1  · rigveda
+- вложил  · n=1  · rigveda
+- вкладывает  · n=1  · rigveda
+- окружили  · n=1  · rigveda
+- Большим почетом окружили его люди  · n=1  · rigveda
+- Даруй  · n=1  · rigveda
+- берет  · n=1  · rigveda
+- приобрели  · n=1  · rigveda
+- Обосновался  · n=1  · rigveda
+- положат  · n=1  · rigveda
+- даешь  · n=1  · rigveda
+- влагаешь  · n=1  · rigveda
+- утверждаю  · n=1  · rigveda
+- прогонять  · n=1  · rigveda
+- вложен  · n=1  · rigveda
+- сжигает  · n=1  · mahabharata-bhishmaparva
+- Даруя  · n=1  · rigveda
+- вложили  · n=1  · rigveda
+- наделяет  · n=1  · rigveda
+- помоги  · n=1  · rigveda
+- взял  · n=1  · rigveda
+- прими  · n=1  · rigveda
+- Посади  · n=1  · rigveda
+- даря  · n=1  · rigveda
+- наделят  · n=1  · rigveda
+- поместит  · n=1  · rigveda
+- вложи  · n=1  · rigveda
+- создал  · n=1  · rigveda
+- Придай  · n=1  · rigveda
+- положи  · n=1  · rigveda
+- устроен  · n=1  · rigveda
+- исполнишь  · n=1  · rigveda
+- отнят  · n=1  · rigveda
+- дадут  · n=1  · rigveda
+- поместили  · n=1  · rigveda
+- Вложи  · n=1  · atharvaveda
+- суставов  · n=1  · atharvaveda
+- Сложи  · n=1  · atharvaveda
+- сложится  · n=1  · atharvaveda
+- выставляю  · n=1  · atharvaveda
+- помещаю  · n=1  · atharvaveda
+- дайте  · n=1  · atharvaveda
+- поможет  · n=1  · atharvaveda
+- вложат  · n=1  · atharvaveda
+- обложила  · n=1  · atharvaveda
+- даст  · n=1  · atharvaveda
+- устанавливаю  · n=1  · atharvaveda
+
+### `DAH` — dhāḥ  (n=18)
+
+- дай  · n=4  · rigveda, rigveda, rigveda
+- положи  · n=3  · rigveda, rigveda
+- Даруй  · n=2  · rigveda, rigveda
+- надели  · n=2  · rigveda, rigveda
+- Вложи  · n=1  · rigveda
+- дал  · n=1  · rigveda
+- приобщи  · n=1  · rigveda
+- устроил  · n=1  · rigveda
+- Устрой  · n=1  · rigveda
+- устрой  · n=1  · rigveda
+- Дай  · n=1  · rigveda
+
+### `DASaraTir` — dhāśarathir  (n=1)
+
+- сын Дашаратхи  · n=1  · ramayana-ayodhyakanda
+
+### `DAd` — dhād  (n=2)
+
+- пусть понравятся  · n=1  · rigveda
+- предназначила  · n=1  · rigveda
+
+### `DAk` — dhāk  (n=1)
+
+- сожгут  · n=1  · rigveda
+
+### `DAkzIt` — dhākṣīt  (n=1)
+
+- опалив  · n=1  · mahabharata-aranyakaparva
+
+### `DAmA` — dhāmā  (n=2)
+
+- стоянками  · n=1  · atharvaveda
+- шагов  · n=1  · atharvaveda
+
+### `DAmAH` — dhāmāḥ  (n=2)
+
+- Дхамы  · n=2  · mahabharata-shalyaparva
+
+### `DAmAni` — dhāmāni  (n=12)
+
+- формы  · n=7  · rigveda, rigveda, rigveda
+- видов  · n=2  · rigveda
+- установления  · n=2  · rigveda
+- свойства  · n=1  · rigveda
+
+### `DAmAny` — dhāmāny  (n=1)
+
+- свойства  · n=1  · rigveda
+
+### `DAma` — dhāma  (n=69)
+
+- обитель  · n=10  · bhagavadgita-prabhupada, bhagavadgita-burba, atharvaveda, ramanuja_gitabhashya, bhagavadgity, bhagavadgita-1909
+- установление  · n=6  · rigveda, rigveda, rigveda, atharvaveda
+- родиной  · n=5  · atharvaveda
+- установления  · n=4  · rigveda, rigveda
+- форму  · n=3  · rigveda, rigveda
+- Обитель  · n=3  · bhagavadgita-1914, bhagavadgita-smirnov, bhagavadgita-sharma
+- местопребывание  · n=2  · atharvaveda, atharvaveda
+- дхамы  · n=2  · mahabharata-aranyakaparva
+- природа  · n=2  · rigveda
+- установлений  · n=2  · rigveda
+- формой  · n=2  · rigveda
+- формы  · n=2  · rigveda
+- место/порядок/великолепие  · n=2  · bhagavadgita-burba
+- свет  · n=2  · ramanuja_gitabhashya
+- жилищемъ  · n=2  · bhagavadgity, bhagavadgita-1788
+- жилище  · n=2  · bhagavadgity, bhagavadgita-1788
+- образ  · n=2  · bhagavadgita-radha
+- дом  · n=2  · shatakatrayam
+- владение  · n=2  · atharvaveda
+- установлению  · n=1  · rigveda
+- место установления  · n=1  · rigveda
+- деятельности  · n=1  · rigveda
+- закона  · n=1  · rigveda
+- Царство Бога  · n=1  · bhagavadgita-burba
+- обитаніе  · n=1  · bhagavadgita-1788
+- образъ  · n=1  · bhagavadgita-1909
+- цель  · n=1  · bhagavadgita-sharma
+- сияние  · n=1  · bhagavadgita-radha
+- обычаю  · n=1  · rigveda
+- переселил  · n=1  · kumarasambhava
+- могущество  · n=1  · raghuvamsha
+
+### `DAmaBiH` — dhāmabhiḥ  (n=7)
+
+- местностей  · n=2  · rigveda
+- существ  · n=2  · rigveda
+- по установлениям  · n=1  · rigveda
+- установлениям  · n=1  · rigveda
+- установлениями  · n=1  · rigveda
+
+### `DAmaBir` — dhāmabhir  (n=1)
+
+- формами  · n=1  · rigveda
+
+### `DAmaDA` — dhāmadhā  (n=1)
+
+- основатель установлений  · n=1  · rigveda
+
+### `DAmaSa` — dhāmaśa  (n=2)
+
+- по порядку  · n=2  · rigveda, atharvaveda
+
+### `DAmahe` — dhāmahe  (n=3)
+
+- установим  · n=1  · rigveda
+- получаем  · n=1  · rigveda
+- добьемся  · n=1  · rigveda
+
+### `DAman` — dhāman  (n=175)
+
+- обитель  · n=17  · mahabharata-bhishmaparva, gitarthasamgraha-abhinavagupta, bhagavadgita-burba, bhagavadgita-erman, bhagavadgita-1909, mahabharata-udyogaparva, bhagavadgita-1914, bhagavadgita-smirnov
+- установления  · n=15  · rigveda, rigveda, rigveda, rigveda, rigveda, rigveda
+- формы  · n=9  · rigveda, rigveda, rigveda
+- закона  · n=8  · atharvaveda
+- состояния  · n=5  · rigveda
+- обители  · n=5  · mahabharata-bhishmaparva, bhagavadgita-erman, atharvaveda, megha-duta, kau-up
+- формами  · n=5  · rigveda
+- родиной  · n=5  · atharvaveda
+- суть  · n=4  · rigveda, rigveda
+- Обитель  · n=4  · gitarthasamgraha-abhinavagupta, bhagavadgita-1914, bhagavadgity, bhagavadgita-smirnov
+- местопребывание  · n=3  · rigveda, atharvaveda
+- места  · n=3  · rigveda, atharvaveda
+- жилище  · n=2  · ramayana-ayodhyakanda, bhagavadgita-1788
+- родины  · n=2  · rigveda
+- жилища  · n=2  · rigveda
+- деятельность  · n=2  · rigveda
+- мест  · n=2  · rigveda
+- формах  · n=2  · rigveda
+- область  · n=2  · rigveda
+- поселениям  · n=2  · rigveda
+- форма  · n=2  · rigveda
+- форму проявления  · n=2  · rigveda
+- излюбленное место  · n=2  · rigveda
+- сияние  · n=2  · buddhacharita, shatakatrayam
+- Дхамы  · n=2  · mahabharata-udyogaparva
+- месте  · n=2  · rigveda
+- силы  · n=2  · rigveda
+- свет  · n=2  · bhagavadgita-sementsov
+- проявлений  · n=2  · rigveda
+- установлениям  · n=2  · rigveda
+- места установления  · n=2  · rigveda
+- на основу  · n=2  · rigveda
+- место  · n=2  · rigveda, atharvaveda
+- способность  · n=2  · atharvaveda
+- дом  · n=2  · shatakatrayam-serebryakov
+- покоях  · n=2  · atharvaveda
+- привязей  · n=2  · atharvaveda
+- обиталище  · n=2  · atharvaveda
+- прибежище  · n=2  · mai-up
+- пристанище  · n=2  · mun-up
+- обычаям  · n=1  · rigveda
+- толпу  · n=1  · rigveda
+- форму  · n=1  · rigveda
+- установление  · n=1  · rigveda
+- способностью  · n=1  · rigveda
+- стоянками  · n=1  · rigveda
+- шагов  · n=1  · rigveda
+- формы проявления  · n=1  · rigveda
+- привычек  · n=1  · rigveda
+- привычки  · n=1  · rigveda
+- поступки  · n=1  · rigveda
+- мира  · n=1  · mahabharata-adiparva
+- вместилище  · n=1  · mahabharata-adiparva
+- слава  · n=1  · mahabharata-bhishmaparva
+- состояние  · n=1  · rigveda
+- пределах  · n=1  · rigveda
+- обычаю  · n=1  · rigveda
+- силою  · n=1  · buddhacharita
+- установлениями  · n=1  · rigveda
+- Светом  · n=1  · gitarthasamgraha-abhinavagupta
+- Обитель горняя  · n=1  · bhagavadgita-1914
+- Вместилище мира  · n=1  · bhagavadgita-sementsov
+- приют  · n=1  · bhagavadgita-sementsov
+- Обителью  · n=1  · bhagavadgita-sharma
+- Предназначение  · n=1  · bhagavadgita-sharma
+- образ  · n=1  · bhagavadgita-radha
+- свойства  · n=1  · rigveda
+- к Брахме  · n=1  · kumarasambhava
+- краях  · n=1  · atharvaveda
+- Дхаман  · n=1  · mahabharata-sabhaparva
+- обиталищ  · n=1  · atharvaveda
+- блеск  · n=1  · amaru-shataka
+- обителей  · n=1  · shv-up
+- состоянии  · n=1  · paramarthasara-abhinavagupta
+- местопребывания  · n=1  · paramarthasara-abhinavagupta
+- состояниях  · n=1  · kai-up
+
+### `DAmanI` — dhāmanī  (n=2)
+
+- форм  · n=2  · rigveda
+
+### `DAmani` — dhāmani  (n=1)
+
+- месте  · n=1  · rigveda
+
+### `DAmaniDAmani` — dhāmanidhāmani  (n=1)
+
+- Каждого в ... место для жилья  · n=1  · atharvaveda
+
+### `DAmann` — dhāmann  (n=2)
+
+- месте  · n=2  · rigveda
+
+### `DAmasAc` — dhāmasāc  (n=2)
+
+- Следующему установлениям  · n=2  · rigveda
+
+### `DAmasu` — dhāmasu  (n=4)
+
+- форм  · n=2  · rigveda
+- созданий  · n=2  · rigveda
+
+### `DAmnA` — dhāmnā  (n=5)
+
+- обычаю  · n=2  · rigveda
+- владением  · n=2  · atharvaveda
+- величии  · n=1  · raghuvamsha
+
+### `DAmna` — dhāmna  (n=1)
+
+- Обычай  · n=1  · rigveda
+
+### `DAmnas` — dhāmnas  (n=2)
+
+- собрании  · n=2  · rigveda
+
+### `DAmne` — dhāmne  (n=5)
+
+- сути  · n=2  · rigveda
+- сонма  · n=2  · rigveda
+- Обычай  · n=1  · rigveda
+
+### `DAnA` — dhānā  (n=18)
+
+- зерна  · n=6  · atharvaveda, rigveda, rigveda
+- жареные зерна  · n=5  · rigveda, rigveda
+- зерен  · n=2  · rigveda, rigveda
+- зерно  · n=1  · manavadharmashastra
+- ячменным зернам  · n=1  · rigveda
+- семена  · n=1  · ch-up
+- семечки  · n=1  · nyaya-bhashya
+- Зерна  · n=1  · atharvaveda
+
+### `DAnAH` — dhānāḥ  (n=3)
+
+- зерна  · n=2  · rigveda
+- ячменные зерна  · n=1  · rigveda
+
+### `DAnAgauqAsava` — dhānāgauḍāsava  (n=1)
+
+- крепкие напитки из зерна и патоки  · n=1  · mahabharata-karnaparva
+
+### `DAnApUpa` — dhānāpūpa  (n=2)
+
+- лепешки из ячменя  · n=2  · mahabharata-aranyakaparva
+
+### `DAnAruha` — dhānāruha  (n=2)
+
+- поднявшееся от зерна  · n=1  · br-up
+- Поднявшееся от зерна  · n=1  · br-up
+
+### `DAnAvad` — dhānāvad  (n=1)
+
+- с жареными ячменными зернами  · n=1  · rigveda
+
+### `DAnAvanta` — dhānāvanta  (n=1)
+
+- С зернами  · n=1  · rigveda
+
+### `DAnAvantam` — dhānāvantam  (n=1)
+
+- с жареными зернами  · n=1  · rigveda
+
+### `DAnAvat` — dhānāvat  (n=1)
+
+- с жареными ячменными зернами  · n=1  · rigveda
+
+### `DAnI` — dhānī  (n=4)
+
+- города  · n=2  · shatakatrayam-serebryakov
+- столица  · n=1  · ramayana-ayodhyakanda
+- городе  · n=1  · ramayana-ayodhyakanda
+
+### `DAnIm` — dhānīm  (n=1)
+
+- Айодхьи  · n=1  · ramayana-ayodhyakanda
+
+### `DAnam` — dhānam  (n=2)
+
+- ночи  · n=2  · rigveda
+
+### `DAnavat` — dhānavat  (n=1)
+
+- веды  · n=1  · ramayana-ayodhyakanda
+
+### `DAnizWA` — dhāniṣṭhā  (n=2)
+
+- Дхаништха  · n=2  · mahabharata-udyogaparva
+
+### `DAntu` — dhāntu  (n=2)
+
+- Пусть дадут  · n=1  · rigveda
+- наделят  · n=1  · rigveda
+
+### `DAntvadriyAntaHkaraRa` — dhāntvadriyāntaḥkaraṇa  (n=1)
+
+- дхату (основные составляющие тела), чувства и ум  · n=1  · hatha-yoga-pradipika
+
+### `DAnuzka` — dhānuṣka  (n=2)
+
+- лучников  · n=2  · mahabharata-bhishmaparva
+
+### `DAnuzkatA` — dhānuṣkatā  (n=2)
+
+- умение пользоваться луком  · n=2  · shatakatrayam-serebryakov
+
+### `DAnuzkata` — dhānuṣkata  (n=1)
+
+- лучницы дар  · n=1  · shatakatrayam
+
+### `DAnuzke` — dhānuṣke  (n=2)
+
+- лучнике  · n=1  · mahabharata-bhishmaparva
+- при лучнике  · n=1  · mahabharata-bhishmaparva
+
+### `DAnyAkfta` — dhānyākṛta  (n=1)
+
+- выращивающие урожай  · n=1  · rigveda
+
+### `DAnyAnAm` — dhānyānām  (n=2)
+
+- зерна  · n=1  · manavadharmashastra
+- зерном  · n=1  · mahabharata-aranyakaparva
+
+### `DAnyArTin` — dhānyārthin  (n=1)
+
+- ищущий зерна  · n=1  · brb-up
+
+### `DAnyAya` — dhānyāya  (n=1)
+
+- для зерна  · n=1  · atharvaveda
+
+### `DAnya` — dhānya  (n=43)
+
+- зерно  · n=14  · manavadharmashastra, mahabharata-udyogaparva, ramayana-ayodhyakanda, ramayana-balakanda, atharvaveda, atharvaveda, atharvaveda
+- зерна  · n=10  · manavadharmashastra, kama-sutra, ramayana-ayodhyakanda, ramayana-aranyakanda, mahabharata-shalyaparva, atharvaveda
+- зерном  · n=7  · manavadharmashastra, ramayana-balakanda, ramayana-ayodhyakanda, mahabharata-adiparva, mahabharata-sabhaparva
+- урожай  · n=2  · rigveda
+- плодоносной землей  · n=1  · ramayana-ayodhyakanda
+- Низкорожденная женщина  · n=1  · manavadharmashastra
+- хлеб  · n=1  · manavadharmashastra
+- в зерне  · n=1  · manavadharmashastra
+- Дханъя  · n=1  · ramayana-balakanda
+- колосьев  · n=1  · mahabharata-bhishmaparva
+- состояние  · n=1  · mahabharata-udyogaparva
+- имущество  · n=1  · rigveda
+- злаков  · n=1  · br-up
+- зерне  · n=1  · atharvaveda
+
+### `DAnyaDana` — dhānyadhana  (n=1)
+
+- богатства зерном  · n=1  · manavadharmashastra
+
+### `DAnyaDanopetAn` — dhānyadhanopetān  (n=1)
+
+- Обильную зерном и золотом  · n=1  · ramayana-ayodhyakanda
+
+### `DAnyaM` — dhānyaṃ  (n=2)
+
+- Зерна  · n=2  · atharvaveda
+
+### `DAnyabIjAni` — dhānyabījāni  (n=2)
+
+- семена злаковых  · n=1  · mahabharata-aranyakaparva
+- посев  · n=1  · gitarthasamgraha-abhinavagupta
+
+### `DAnyacaura` — dhānyacaura  (n=2)
+
+- крадущий зерно  · n=2  · manavadharmashastra
+
+### `DAnyada` — dhānyada  (n=1)
+
+- дающий зерно  · n=1  · manavadharmashastra
+
+### `DAnyadroRa` — dhānyadroṇa  (n=1)
+
+- дрона зерна  · n=1  · manavadharmashastra
+
+### `DAnyakoSaH` — dhānya kośaḥ  (n=1)
+
+- зерно  · n=1  · ramayana-ayodhyakanda
+
+### `DAnyakupyapaSusteya` — dhānyakupyapaśusteya  (n=1)
+
+- кража зерна, металлов или скота  · n=1  · manavadharmashastra
+
+### `DAnyam` — dhānyam  (n=5)
+
+- зерно  · n=3  · ramayana-ayodhyakanda, manavadharmashastra, atharvaveda
+- хлеб  · n=1  · ramayana-ayodhyakanda
+- зерне  · n=1  · atharvaveda
+
+### `DAnyamAlinI` — dhānyamālinī  (n=1)
+
+- Дханьямалини  · n=1  · ramayana-sundarakanda
+
+### `DAnyasya` — dhānyasya  (n=1)
+
+- зерна  · n=1  · atharvaveda
+
+### `DAnyavAsasAm` — dhānyavāsasām  (n=1)
+
+- зерна и одежд  · n=1  · manavadharmashastra
+
+### `DAnyavat` — dhānyavat  (n=1)
+
+- как для зерна  · n=1  · manavadharmashastra
+
+### `DAnyavatIm` — dhānyavatīm  (n=1)
+
+- обильную зерном  · n=1  · ramayana-ayodhyakanda
+
+### `DApayATaH` — dhāpayāthaḥ  (n=1)
+
+- Заверните  · n=1  · atharvaveda
+
+### `DApaya` — dhāpaya  (n=2)
+
+- сделай  · n=2  · rigveda
+
+### `DApayante` — dhāpayante  (n=1)
+
+- дают пососать  · n=1  · rigveda
+
+### `DApayete` — dhāpayete  (n=3)
+
+- кормят  · n=2  · rigveda
+- дают подоить себя  · n=1  · rigveda
+
+### `DArA` — dhārā  (n=114)
+
+- потоки  · n=28  · rigveda, atharvaveda, rigveda, rigveda, rigveda, rigveda, ramayana-aranyakanda, rigveda, mahabharata-shalyaparva, atharvaveda, atharvaveda, atharvaveda
+- потоком  · n=18  · rigveda
+- поток  · n=13  · rigveda, mahabharata-aranyakaparva, rigveda, rigveda, hatha-yoga-pradipika, gitagovinda
+- потоков  · n=7  · rigveda, mahabharata-aranyakaparva, rigveda, atharvaveda, atharvaveda
+- потоками  · n=5  · rigveda, mahabharata-adiparva, mahabharata-dronaparva, mahabharata-bhishmaparva
+- ливень  · n=4  · mahabharata-dronaparva, ramayana-aranyakanda, mahabharata-aranyakaparva
+- лезвие  · n=4  · rigveda, br-up, kat-up
+- Поток  · n=3  · rigveda
+- Потоком  · n=3  · rigveda
+- дождь  · n=2  · ramayana-aranyakanda
+- струи  · n=2  · mahabharata-aranyakaparva, mahabharata-udyogaparva
+- Потоки  · n=2  · rigveda
+- струя  · n=2  · rigveda, mahabharata-karnaparva
+- лезвия  · n=1  · mahabharata-adiparva
+- ударами  · n=1  · ramayana-ayodhyakanda
+- ручьи  · n=1  · ramayana-aranyakanda
+- Дхара  · n=1  · mahabharata-aranyakaparva
+- потоки (воды)  · n=1  · mahabharata-aranyakaparva
+- потоки воды  · n=1  · mahabharata-aranyakaparva
+- источник  · n=1  · mahabharata-bhishmaparva
+- дождевой поток  · n=1  · mahabharata-dronaparva
+- струя сомы  · n=1  · rigveda
+- струею  · n=1  · rigveda
+- струями  · n=1  · rigveda
+- теченье  · n=1  · buddhacharita
+- клинок  · n=1  · rigveda
+- струей  · n=1  · rigveda
+- потоками воды  · n=1  · mahabharata-karnaparva
+- ливнями  · n=1  · mahabharata-shalyaparva
+- ливни дождя  · n=1  · mahabharata-shalyaparva
+- возлиянием  · n=1  · br-up
+- струй  · n=1  · shatakatrayam
+- капля  · n=1  · shatakatrayam-serebryakov
+- достигает  · n=1  · paramarthasara-abhinavagupta
+
+### `DArABi` — dhārābhi  (n=1)
+
+- ливнями  · n=1  · mahabharata-dronaparva
+
+### `DArABiGAta` — dhārābhighāta  (n=1)
+
+- встречные удары потоков  · n=1  · mahabharata-dronaparva
+
+### `DArABiH` — dhārābhiḥ  (n=9)
+
+- потоками  · n=4  · rigveda, mahabharata-dronaparva, rigveda
+- дождь  · n=2  · ramayana-aranyakanda
+- ливнем  · n=1  · mahabharata-adiparva
+- ливнями  · n=1  · mahabharata-dronaparva
+- Потоками  · n=1  · rigveda
+
+### `DArADara` — dhārādhara  (n=1)
+
+- дождевую тучу  · n=1  · mahabharata-virataparva
+
+### `DArAH` — dhārāḥ  (n=10)
+
+- потоки  · n=7  · rigveda, rigveda, rigveda, atharvaveda
+- ливни  · n=1  · mahabharata-adiparva
+- источники  · n=1  · rigveda
+- Потоки  · n=1  · rigveda
+
+### `DArAM` — dhārāṃ  (n=1)
+
+- лезвие  · n=1  · raghuvamsha
+
+### `DArARAMnipAta` — dhārāṇāṃ nipāta  (n=1)
+
+- шум падающей воды  · n=1  · mahabharata-aranyakaparva
+
+### `DArARAm` — dhārāṇām  (n=1)
+
+- воды  · n=1  · ramayana-aranyakanda
+
+### `DArAS` — dhārāś  (n=1)
+
+- потоки  · n=1  · rigveda
+
+### `DArAgfha` — dhārāgṛha  (n=2)
+
+- купанья  · n=1  · shatakatrayam
+- политые водой покои  · n=1  · shatakatrayam-serebryakov
+
+### `DArAhata` — dhārāhata  (n=1)
+
+- освеженных потоками дождей  · n=1  · raghuvamsha
+
+### `DArAm` — dhārām  (n=4)
+
+- потока  · n=1  · rigveda
+- на месте  · n=1  · rigveda
+- лезвие  · n=1  · rigveda
+- поток  · n=1  · atharvaveda
+
+### `DArAmaya` — dhārāmaya  (n=1)
+
+- поток  · n=1  · hatha-yoga-pradipika
+
+### `DArApAtaiH` — dhārāpātaiḥ  (n=1)
+
+- струями  · n=1  · megha-duta
+
+### `DArAsvanodgAridarImuKo` — dhārāsvanodgāridarīmukho  (n=1)
+
+- рев водопадов отдается эхом в ее ущельях  · n=1  · raghuvamsha
+
+### `DArAvara` — dhārāvara  (n=2)
+
+- любящие потоки  · n=2  · rigveda
+
+### `DArAyantra` — dhārāyantra  (n=1)
+
+- водою  · n=1  · amaru-shataka
+
+### `DAra` — dhāra  (n=4)
+
+- лезвие  · n=1  · mahabharata-adiparva
+- держащий  · n=1  · buddhacharita
+- струя  · n=1  · shatakatrayam-serebryakov
+- несут  · n=1  · gitagovinda
+
+### `DAraRA` — dhāraṇā  (n=39)
+
+- дхарана  · n=7  · yoga-sutry_sharma, gitarthasamgraha-abhinavagupta, bhagavadgita-smirnov, yoga-sutry_zagumennov, yotat-up
+- установленное правило  · n=4  · manavadharmashastra
+- правило  · n=3  · manavadharmashastra
+- Дхарана  · n=3  · yoga-sutry, yoga-sutry_zagumennov
+- удержании  · n=2  · bhagavadgita-erman
+- удержанием  · n=2  · devi-gita
+- концентрации  · n=2  · yoga-sutry_vyasa-bhashya
+- концентрация  · n=2  · yoga-sutry_vyasa-bhashya
+- сосредоточенность  · n=2  · mai-up
+- сосредоточенностью  · n=1  · manavadharmashastra
+- вывод  · n=1  · mahabharata-aranyakaparva
+- опыт  · n=1  · gitarthasamgraha-abhinavagupta
+- удержание  · n=1  · nyaya-bhashya
+- удержание созерцаемого в сознании  · n=1  · nyaya-bhashya
+- Достоверно известно  · n=1  · mahabharata-ashvamedhikaparva
+- сосредоточение  · n=1  · yoga-sutry_vyasa-bhashya
+- дхаране  · n=1  · yoga-sutry
+- дыхания  · n=1  · yotat-up
+- удерживающее  · n=1  · yotat-up
+- Удержание  · n=1  · yotat-up
+- удержаний  · n=1  · yotat-up
+
+### `DAraRADyAnasamADitraya` — dhāraṇādhyānasamādhitraya  (n=1)
+
+- концентрация, созерцание и сосредоточение  · n=1  · yoga-sutry_vyasa-bhashya
+
+### `DAraRAKya` — dhāraṇākhya  (n=3)
+
+- удержание  · n=2  · devi-gita
+- удержании  · n=1  · devi-gita
+
+### `DAraRASAstra` — dhāraṇāśāstra  (n=2)
+
+- науке держания ума  · n=2  · nyaya-bhashya
+
+### `DAraRAkarzaRa` — dhāraṇākarṣaṇa  (n=2)
+
+- держание и притягивание  · n=1  · nyaya-bhashya
+- держания и притягивания  · n=1  · nyaya-bhashya
+
+### `DAraRAkarzaRopapatti` — dhāraṇākarṣaṇopapatti  (n=1)
+
+- держания и притягивания  · n=1  · nyaya-bhashya
+
+### `DAraRAm` — dhāraṇām  (n=2)
+
+- до земли  · n=2  · ramayana-ayodhyakanda
+
+### `DAraRAsu` — dhāraṇāsu  (n=1)
+
+- к дхаране  · n=1  · yoga-sutry_zagumennov
+
+### `DAraRAt` — dhāraṇāt  (n=3)
+
+- дхаране  · n=2  · mahabharata-ashramavasikaparva
+- соблюдения  · n=1  · manavadharmashastra
+
+### `DAraRa` — dhāraṇa  (n=30)
+
+- поддержание  · n=4  · mahabharata-adiparva, ramayana-ayodhyakanda, mahabharata-aranyakaparva, sankhya-karika
+- удержание  · n=4  · sankhya-karika, nyaya-bhashya
+- опора  · n=3  · mahabharata-karnaparva, mahabharata-adiparva
+- удерживать  · n=2  · mahabharata-aranyakaparva, hatha-yoga-pradipika
+- сохранение  · n=2  · nyaya-bhashya, hatha-yoga-pradipika
+- содержание  · n=1  · mahabharata-adiparva
+- дает отражение  · n=1  · mahabharata-adiparva
+- состояния  · n=1  · mahabharata-adiparva
+- знания Веды  · n=1  · manavadharmashastra
+- сдержать  · n=1  · mahabharata-aranyakaparva
+- сдержав  · n=1  · mahabharata-aranyakaparva
+- хранит  · n=1  · kama-sutra
+- Дхарана  · n=1  · mahabharata-udyogaparva
+- обладать  · n=1  · ramanuja_gitabhashya
+- близостью  · n=1  · nyaya-bhashya
+- держание  · n=1  · nyaya-bhashya
+- поддержания  · n=1  · nyaya-bhashya
+- фиксация  · n=1  · nyaya-bhashya
+- удержание в памяти  · n=1  · yoga-sutry_vyasa-bhashya
+- память  · n=1  · mnar-up
+
+### `DAraRaH` — dhāraṇaḥ  (n=3)
+
+- обладателем  · n=2  · tai-up
+- Дхарана  · n=1  · mahabharata-udyogaparva
+
+### `DAraRam` — dhāraṇam  (n=4)
+
+- удержание  · n=2  · devi-gita
+- удерживается  · n=2  · hatha-yoga-pradipika
+
+### `DAraRasaMyukta` — dhāraṇasaṃyukta  (n=1)
+
+- связано с поддержанием  · n=1  · mahabharata-karnaparva
+
+### `DAraRe` — dhāraṇe  (n=2)
+
+- вынести  · n=1  · ramayana-balakanda
+- носит  · n=1  · kama-sutra
+
+### `DAraka` — dhāraka  (n=4)
+
+- удерживающее  · n=1  · nyaya-bhashya
+- поддержанию  · n=1  · nyaya-bhashya
+- удерживаемого  · n=1  · nyaya-bhashya
+- удерживающим  · n=1  · nyaya-bhashya
+
+### `DAram` — dhāram  (n=1)
+
+- основа  · n=1  · kai-up
+
+### `DArapUtAH` — dhārapūtāḥ  (n=1)
+
+- очищенные, как потоки (сомы)  · n=1  · rigveda
+
+### `DArapUta` — dhārapūta  (n=1)
+
+- очищенные, как потоки  · n=1  · rigveda
+
+### `DAravAkezu` — dhāravākeṣu  (n=1)
+
+- в потоках речи  · n=1  · rigveda
+
+### `DAray` — dhāray  (n=21)
+
+- возвратишь  · n=2  · ramayana-balakanda
+- удерживает  · n=2  · yotat-up
+- отвечу  · n=1  · ramayana-ayodhyakanda
+- сладить  · n=1  · ramayana-ayodhyakanda
+- Сохранить  · n=1  · ramayana-ayodhyakanda
+- поддержат  · n=1  · ramayana-ayodhyakanda
+- исполнять  · n=1  · manavadharmashastra
+- носить  · n=1  · manavadharmashastra
+- досталась  · n=1  · ramayana-balakanda
+- стала  · n=1  · ramayana-balakanda
+- укрепляя  · n=1  · rigveda
+- вложил  · n=1  · rigveda
+- держишь  · n=1  · mahabharata-adiparva
+- понимает  · n=1  · mahabharata-bhishmaparva
+- остановить  · n=1  · mahabharata-karnaparva
+- взяли  · n=1  · rigveda
+- таково  · n=1  · hatha-yoga-pradipika
+- установил  · n=1  · atharvaveda
+- пусть удерживает  · n=1  · yotat-up
+
+### `DArayA` — dhārayā  (n=43)
+
+- потоком  · n=32  · rigveda, rigveda
+- Потоком  · n=4  · rigveda
+- поток  · n=3  · atharvaveda, rigveda
+- Поддержи  · n=1  · rigveda
+- С потоком (слов)  · n=1  · rigveda
+- струей  · n=1  · rigveda
+- поднесением  · n=1  · devi-gita
+
+### `DArayAmA` — dhārayāmā  (n=1)
+
+- удержать  · n=1  · rigveda
+
+### `DArayAmAsa` — dhārayāmāsa  (n=18)
+
+- поддерживал  · n=2  · mahabharata-shantiparva, mahabharata-shalyaparva
+- держал  · n=1  · mahabharata-shantiparva
+- Держатся  · n=1  · ramayana-balakanda
+- хранил  · n=1  · mahabharata-aranyakaparva
+- смирил  · n=1  · mahabharata-aranyakaparva
+- перенося  · n=1  · mahabharata-aranyakaparva
+- уберегла  · n=1  · mahabharata-aranyakaparva
+- носила  · n=1  · mahabharata-adiparva
+- перенес  · n=1  · mahabharata-adiparva
+- держит  · n=1  · mahabharata-bhishmaparva
+- удерживал  · n=1  · mahabharata-bhishmaparva
+- владел  · n=1  · mahabharata-udyogaparva
+- стал обладателем  · n=1  · mahabharata-udyogaparva
+- стал носить  · n=1  · mahabharata-udyogaparva
+- нес  · n=1  · mahabharata-karnaparva
+- оставил  · n=1  · shukasaptati
+- продолжал править  · n=1  · mahabharata-ashramavasikaparva
+
+### `DArayAmAsatuH` — dhārayāmāsatuḥ  (n=1)
+
+- дожидались  · n=1  · mahabharata-virataparva
+
+### `DArayAmaH` — dhārayāmaḥ  (n=1)
+
+- сосредоточиваем  · n=1  · atharvaveda
+
+### `DArayAmi` — dhārayāmi  (n=18)
+
+- поддерживаю  · n=11  · mahabharata-bhishmaparva, gitarthasamgraha-abhinavagupta, bhagavadgita-burba, ramanuja_gitabhashya, bhagavadgita-1914, bhagavadgity, bhagavadgita-erman, bhagavadgita-smirnov, bhagavadgita-sharma, bhagavadgita-prabhupada, bhagavadgita-radha
+- питаю  · n=1  · mahabharata-aranyakaparva
+- храню  · n=1  · bhagavadgita-1788
+- несу  · n=1  · bhagavadgita-sementsov
+- оживляю  · n=1  · bhagavadgita-1909
+- держатся  · n=1  · bhagavadgita-prabhupada
+- удерживаю  · n=1  · atharvaveda
+- держу  · n=1  · atharvaveda
+
+### `DArayAmo` — dhārayāmo  (n=1)
+
+- удерживаем  · n=1  · atharvaveda
+
+### `DArayAtA` — dhārayātā  (n=1)
+
+- будет поддерживать  · n=1  · atharvaveda
+
+### `DArayAte` — dhārayāte  (n=1)
+
+- должно удержаться  · n=1  · rigveda
+
+### `DArayIta` — dhārayīta  (n=1)
+
+- носит  · n=1  · mahabharata-ashvamedhikaparva
+
+### `DAraya` — dhāraya  (n=25)
+
+- удержи  · n=2  · ramayana-balakanda, rigveda
+- Сдержи  · n=2  · ramayana-balakanda
+- сохрани  · n=2  · rigveda, atharvaveda
+- задержите  · n=2  · rigveda
+- Выноси  · n=1  · ramayana-balakanda
+- оставь  · n=1  · rigveda
+- держат  · n=1  · rigveda
+- удержите  · n=1  · rigveda
+- Поддержи  · n=1  · rigveda
+- Обеспечь  · n=1  · rigveda
+- поддержи  · n=1  · mahabharata-dronaparva
+- надели  · n=1  · rigveda
+- Удержи  · n=1  · rigveda
+- даруй  · n=1  · rigveda
+- Сохрани  · n=1  · rigveda
+- установи  · n=1  · atharvaveda
+- покрой  · n=1  · atharvaveda
+- принеси  · n=1  · atharvaveda
+- Возьми себя в руки  · n=1  · mahabharata-striparva
+- подпирать  · n=1  · mahabharata-striparva
+- неси  · n=1  · mahabharata-striparva
+
+### `DArayaH` — dhārayaḥ  (n=3)
+
+- Держи  · n=2  · rigveda
+- Забрал  · n=1  · rigveda
+
+### `DArayaTA` — dhārayathā  (n=1)
+
+- держал  · n=1  · rigveda
+
+### `DArayaTo` — dhārayatho  (n=1)
+
+- поддерживаете  · n=1  · rigveda
+
+### `DArayae` — dhārayae  (n=1)
+
+- Согласился  · n=1  · ramayana-ayodhyakanda
+
+### `DArayam` — dhārayam  (n=6)
+
+- поддержал  · n=3  · rigveda
+- укрепил  · n=1  · rigveda
+- удерживаю  · n=1  · rigveda
+- сохраняю  · n=1  · rigveda
+
+### `DArayamARasya` — dhārayamāṇasya  (n=1)
+
+- обременен  · n=1  · mahabharata-udyogaparva
+
+### `DArayan` — dhārayan  (n=63)
+
+- держа  · n=12  · mahabharata-dronaparva, ramanuja_gitabhashya, mahabharata-bhishmaparva, bhagavadgita-1914, bhagavadgity, bhagavadgita-erman, bhagavadgita-smirnov, bhagavadgita-1788, bhagavadgita-radha, mahabharata-virataparva
+- поддерживают  · n=7  · rigveda
+- поддерживая  · n=2  · rigveda, atharvaveda
+- Держа  · n=2  · gitarthasamgraha-abhinavagupta, bhagavadgita-sementsov
+- держащий  · n=2  · bhagavadgita-burba, bhagavadgita-prabhupada
+- утверждает  · n=2  · bhagavadgity, bhagavadgita-smirnov
+- поддерживает  · n=2  · mahabharata-ashvamedhikaparva
+- подавив  · n=1  · ramayana-ayodhyakanda
+- затаив  · n=1  · ramayana-ayodhyakanda
+- исполненный  · n=1  · ramayana-ayodhyakanda
+- мешало  · n=1  · ramayana-ayodhyakanda
+- Приняв  · n=1  · ramayana-sundarakanda
+- обдумывая  · n=1  · ramayana-sundarakanda
+- удерживающий в памяти  · n=1  · manavadharmashastra
+- приняв  · n=1  · ramayana-aranyakanda
+- обладая  · n=1  · ramayana-aranyakanda
+- считает  · n=1  · mahabharata-aranyakaparva
+- сдерживая  · n=1  · mahabharata-aranyakaparva
+- носил  · n=1  · mahabharata-dronaparva
+- принимает  · n=1  · mahabharata-udyogaparva
+- ношу  · n=1  · mahabharata-udyogaparva
+- утверждать  · n=1  · gitarthasamgraha-abhinavagupta
+- зафиксировать  · n=1  · gitarthasamgraha-abhinavagupta
+- побуждающий держать  · n=1  · bhagavadgita-burba
+- полагая  · n=1  · ramanuja_gitabhashya
+- должен сознавать  · n=1  · bhagavadgita-1914
+- понимает  · n=1  · bhagavadgita-erman
+- думаетъ  · n=1  · bhagavadgita-1788
+- видит  · n=1  · bhagavadgita-sementsov
+- узнаетъ  · n=1  · bhagavadgita-1909
+- держать  · n=1  · bhagavadgita-1909
+- осознает  · n=1  · bhagavadgita-sharma
+- удерживая  · n=1  · bhagavadgita-sharma
+- считающий  · n=1  · bhagavadgita-prabhupada
+- сознает  · n=1  · bhagavadgita-prabhupada
+- считая  · n=1  · bhagavadgita-radha
+- со стрелами  · n=1  · mahabharata-karnaparva
+- помня  · n=1  · mahabharata-ashvamedhikaparva
+- захватив  · n=1  · mahabharata-sabhaparva
+- несут  · n=1  · rigveda
+- с  · n=1  · mahabharata-sauptikaparva
+
+### `DArayant` — dhārayant  (n=1)
+
+- поддерживающего  · n=1  · atharvaveda
+
+### `DArayantI` — dhārayantī  (n=2)
+
+- способная менять свой облик  · n=1  · ramayana-balakanda
+- Ложится  · n=1  · megha-duta
+
+### `DArayanta` — dhārayanta  (n=13)
+
+- поддерживают  · n=5  · rigveda, rigveda, atharvaveda
+- установили  · n=2  · rigveda
+- облачились  · n=1  · mahabharata-adiparva
+- держа  · n=1  · mahabharata-adiparva
+- держали  · n=1  · mahabharata-aranyakaparva
+- определили  · n=1  · rigveda
+- основали  · n=1  · rigveda
+- охраняют  · n=1  · rigveda
+
+### `DArayantaM` — dhārayantaṃ  (n=1)
+
+- Держащего  · n=1  · ramayana-balakanda
+
+### `DArayantam` — dhārayantam  (n=5)
+
+- Поддерживающего  · n=1  · ramayana-balakanda
+- на себе  · n=1  · ramayana-balakanda
+- держащего на себе  · n=1  · ramayana-balakanda
+- властвующего  · n=1  · rigveda
+- использующего  · n=1  · atharvaveda
+
+### `DArayante` — dhārayante  (n=3)
+
+- придерживаются  · n=2  · rigveda, atharvaveda
+- поддерживают  · n=1  · rigveda
+
+### `DArayanti` — dhārayanti  (n=12)
+
+- обладают  · n=2  · ramayana-aranyakanda, mahabharata-udyogaparva
+- поддерживают  · n=2  · mahabharata-dronaparva, atharvaveda
+- Владеют  · n=1  · ramayana-aranyakanda
+- воплощают  · n=1  · ramayana-aranyakanda
+- могут  · n=1  · mahabharata-aranyakaparva
+- суть столпы  · n=1  · mahabharata-aranyakaparva
+- держится  · n=1  · mahabharata-aranyakaparva
+- носят  · n=1  · mahabharata-udyogaparva
+- держат  · n=1  · atharvaveda
+- удерживают  · n=1  · sankhya-karika
+
+### `DArayantu` — dhārayantu  (n=2)
+
+- поддерживают  · n=1  · atharvaveda
+- да удержат  · n=1  · atharvaveda
+
+### `DArayantyaH` — dhārayantyaḥ  (n=1)
+
+- поддерживают  · n=1  · mahabharata-udyogaparva
+
+### `DArayase` — dhārayase  (n=1)
+
+- держишь  · n=1  · mahabharata-adiparva
+
+### `DArayasi` — dhārayasi  (n=3)
+
+- поддерживаешь  · n=2  · mahabharata-adiparva
+- удержишь  · n=1  · mahabharata-udyogaparva
+
+### `DArayasva` — dhārayasva  (n=2)
+
+- носи  · n=1  · mahabharata-udyogaparva
+- приготовься  · n=1  · br-up
+
+### `DArayat` — dhārayat  (n=13)
+
+- Сберегая  · n=2  · rigveda
+- сосредоточен  · n=2  · yoga-sutry_vyasa-bhashya
+- держа  · n=1  · mahabharata-adiparva
+- принявшего  · n=1  · ramayana-sundarakanda
+- укрепил  · n=1  · rigveda
+- сдержал  · n=1  · mahabharata-adiparva
+- удержит  · n=1  · rigveda
+- удержал  · n=1  · rigveda
+- блюдя  · n=1  · raghuvamsha
+- поддерживая  · n=1  · vedartha-samgraha_ramanuja
+- поддерживающего  · n=1  · pratyabhijna-hridaya_kshemaraja
+
+### `DArayatA` — dhārayatā  (n=1)
+
+- будешь держать  · n=1  · mahabharata-adiparva
+
+### `DArayatAm` — dhārayatām  (n=2)
+
+- Укрепят  · n=2  · rigveda, atharvaveda
+
+### `DArayatAt` — dhārayatāt  (n=1)
+
+- поддерживай  · n=1  · atharvaveda
+
+### `DArayatIM` — dhārayatīṃ  (n=1)
+
+- влачит  · n=1  · mahabharata-aranyakaparva
+
+### `DArayata` — dhārayata  (n=2)
+
+- Водрузите  · n=1  · ramayana-ayodhyakanda
+- наложите  · n=1  · mahabharata-adiparva
+
+### `DArayatam` — dhārayatam  (n=2)
+
+- держите  · n=1  · rigveda
+- Поддержите  · n=1  · atharvaveda
+
+### `DArayate` — dhārayate  (n=32)
+
+- поддерживает  · n=4  · manavadharmashastra, mahabharata-adiparva, bhagavadgita-sharma, bhagavadgita-radha
+- сдерживает  · n=3  · bhagavadgita-burba, bhagavadgita-smirnov, mahabharata-karnaparva
+- позволяет управлять  · n=2  · mahabharata-bhishmaparva, bhagavadgita-erman
+- утверждается  · n=2  · ramanuja_gitabhashya
+- обуздываетъ  · n=2  · bhagavadgity, bhagavadgita-1788
+- исполняетъ  · n=2  · bhagavadgity, bhagavadgita-1788
+- есть  · n=1  · manavadharmashastra
+- соблюдает  · n=1  · mahabharata-bhishmaparva
+- обладает  · n=1  · buddhacharita
+- приобретает  · n=1  · mahabharata-udyogaparva
+- способствует существованию  · n=1  · mahabharata-udyogaparva
+- придерживается  · n=1  · bhagavadgita-burba
+- сдерживается  · n=1  · bhagavadgita-1914
+- держится  · n=1  · bhagavadgita-1914
+- выполняется  · n=1  · bhagavadgita-smirnov
+- укрепляются  · n=1  · bhagavadgita-sementsov
+- обуздавшая  · n=1  · bhagavadgita-1909
+- ищетъ  · n=1  · bhagavadgita-1909
+- следует  · n=1  · bhagavadgita-sharma
+- управляет  · n=1  · bhagavadgita-radha
+- принимает  · n=1  · mahabharata-shalyaparva
+- носит  · n=1  · mahabharata-virataparva
+- терпит  · n=1  · mahabharata-ashramavasikaparva
+
+### `DArayati` — dhārayati  (n=14)
+
+- поддерживает  · n=3  · mahabharata-udyogaparva, mahabharata-karnaparva
+- сохраняет  · n=2  · ramayana-sundarakanda
+- носит  · n=2  · kama-sutra, mahabharata-virataparva
+- Сохраняет  · n=1  · ramayana-sundarakanda
+- хранит  · n=1  · ramayana-balakanda
+- воплощает  · n=1  · mahabharata-dronaparva
+- держит в порядке  · n=1  · rigveda
+- держит  · n=1  · nyaya-bhashya
+- воплощая  · n=1  · mahabharata-virataparva
+- выглядит  · n=1  · gitagovinda
+
+### `DArayatkavI` — dhārayatkavī  (n=2)
+
+- несущие поэта  · n=2  · rigveda
+
+### `DArayatkziti` — dhārayatkṣiti  (n=2)
+
+- содержащую (людские) поселения  · n=1  · rigveda
+- поддерживателей народов  · n=1  · rigveda
+
+### `DArayaty` — dhārayaty  (n=1)
+
+- заботиться  · n=1  · mahabharata-aranyakaparva
+
+### `DAraye` — dhāraye  (n=3)
+
+- удерживай  · n=1  · rigveda
+- несу  · n=1  · mahabharata-udyogaparva
+- испытываю  · n=1  · mahabharata-sabhaparva
+
+### `DArayeH` — dhārayeḥ  (n=1)
+
+- поддерживай  · n=1  · rigveda
+
+### `DArayeTAH` — dhārayethāḥ  (n=1)
+
+- спасаешь  · n=1  · megha-duta
+
+### `DArayeTAm` — dhārayethām  (n=1)
+
+- сохраняйте  · n=1  · rigveda
+
+### `DArayeTe` — dhārayethe  (n=1)
+
+- удерживаете  · n=1  · rigveda
+
+### `DArayed` — dhārayed  (n=2)
+
+- располагая  · n=1  · hatha-yoga-pradipika
+- удерживать  · n=1  · hatha-yoga-pradipika
+
+### `DArayet` — dhārayet  (n=28)
+
+- носить  · n=2  · manavadharmashastra, kama-sutra
+- удерживает  · n=2  · kama-sutra, yotat-up
+- удерживай  · n=2  · hatha-yoga-pradipika
+- пусть удерживает  · n=2  · yotat-up
+- держит при себе  · n=1  · manavadharmashastra
+- накладывать  · n=1  · manavadharmashastra
+- поднимает  · n=1  · kama-sutra
+- носит  · n=1  · kama-sutra
+- носят  · n=1  · kama-sutra
+- обратить  · n=1  · mahabharata-ashvamedhikaparva
+- Пусть удерживает  · n=1  · devi-gita
+- вдыхающий  · n=1  · hatha-yoga-pradipika
+- перекрой  · n=1  · hatha-yoga-pradipika
+- ухватись  · n=1  · hatha-yoga-pradipika
+- сожми  · n=1  · hatha-yoga-pradipika
+- прижми  · n=1  · hatha-yoga-pradipika
+- утвердившись  · n=1  · hatha-yoga-pradipika
+- отстаивает  · n=1  · mahabharata-virataparva
+- возложишь  · n=1  · shatakatrayam
+- возложить  · n=1  · shatakatrayam-serebryakov
+- поддерживать  · n=1  · mahabharata-ashramavasikaparva
+- следует поместить  · n=1  · yotat-up
+- следует крепко обхватить  · n=1  · yotat-up
+- заключит  · n=1  · mai-up
+
+### `DArayeta` — dhārayeta  (n=1)
+
+- правит  · n=1  · shv-up
+
+### `DArayeya` — dhārayeya  (n=1)
+
+- сдержу  · n=1  · mahabharata-dronaparva
+
+### `DArayeyu` — dhārayeyu  (n=1)
+
+- смогут выдержать  · n=1  · mahabharata-udyogaparva
+
+### `DArayeyuH` — dhārayeyuḥ  (n=2)
+
+- Могли наложить  · n=1  · ramayana-balakanda
+- отважились бы  · n=1  · mahabharata-sabhaparva
+
+### `DArayitAsmi` — dhārayitāsmi  (n=1)
+
+- буду держать  · n=1  · mahabharata-adiparva
+
+### `DArayitf` — dhārayitṛ  (n=1)
+
+- держащий  · n=1  · mnar-up
+
+### `DArayituM` — dhārayituṃ  (n=5)
+
+- запоминать  · n=1  · mahabharata-adiparva
+- удерживаться  · n=1  · mahabharata-aranyakaparva
+- сдержать  · n=1  · mahabharata-aranyakaparva
+- удержать  · n=1  · mahabharata-adiparva
+- отразить  · n=1  · mahabharata-karnaparva
+
+### `DArayitum` — dhārayitum  (n=11)
+
+- сдержать  · n=3  · ramayana-ayodhyakanda, mahabharata-aranyakaparva, mahabharata-virataparva
+- терпеть  · n=1  · ramayana-ayodhyakanda
+- стерпеть  · n=1  · ramayana-aranyakanda
+- вынести  · n=1  · ramayana-aranyakanda
+- прожить  · n=1  · ramayana-aranyakanda
+- выдержит  · n=1  · ramayana-balakanda
+- удержать  · n=1  · ramayana-balakanda
+- удерживать  · n=1  · mahabharata-adiparva
+- поддерживать  · n=1  · mahabharata-adiparva
+
+### `DArayitvA` — dhārayitvā  (n=6)
+
+- удерживать  · n=1  · hatha-yoga-pradipika
+- закрой  · n=1  · hatha-yoga-pradipika
+- Удерживай  · n=1  · hatha-yoga-pradipika
+- удерживая  · n=1  · yotat-up
+- следует удерживать  · n=1  · yotat-up
+- при мне были  · n=1  · mahabharata-sauptikaparva
+
+### `DArayizyAmi` — dhārayiṣyāmi  (n=10)
+
+- осталось  · n=2  · ramayana-sundarakanda
+- склоню  · n=1  · ramayana-ayodhyakanda
+- есть  · n=1  · ramayana-sundarakanda
+- удержать  · n=1  · ramayana-balakanda
+- приму  · n=1  · ramayana-balakanda
+- буду удерживать  · n=1  · mahabharata-bhishmaparva
+- буду носить  · n=1  · mahabharata-udyogaparva
+- продержусь  · n=1  · mahabharata-ashvamedhikaparva
+- удержу  · n=1  · mahabharata-striparva
+
+### `DArayizyaTa` — dhārayiṣyatha  (n=1)
+
+- примете  · n=1  · mahabharata-aranyakaparva
+
+### `DArayizyanti` — dhārayiṣyanti  (n=5)
+
+- вынесут  · n=2  · ramayana-balakanda
+- хранить  · n=1  · mahabharata-shantiparva
+- сохранят  · n=1  · mahabharata-shantiparva
+- будут хранить  · n=1  · mahabharata-shantiparva
+
+### `DArayizyasi` — dhārayiṣyasi  (n=1)
+
+- сдержишь  · n=1  · mahabharata-dronaparva
+
+### `DArayizyati` — dhārayiṣyati  (n=6)
+
+- должен поддерживать  · n=2  · rigveda
+- будет жив  · n=1  · ramayana-ayodhyakanda
+- сможет удержать  · n=1  · ramayana-balakanda
+- примет  · n=1  · ramayana-balakanda
+- поддержит  · n=1  · mahabharata-aranyakaparva
+
+### `DArayizye` — dhārayiṣye  (n=2)
+
+- сдержу  · n=1  · mahabharata-aranyakaparva
+- буду удерживать  · n=1  · mahabharata-bhishmaparva
+
+### `DArayu` — dhārayu  (n=2)
+
+- поддерживатель  · n=2  · rigveda
+
+### `DArdura` — dhārdura  (n=1)
+
+- хищных волков  · n=1  · ramayana-ayodhyakanda
+
+### `DAreRa` — dhāreṇa  (n=2)
+
+- лезвием  · n=1  · ramayana-ayodhyakanda
+- стрелой  · n=1  · ramayana-aranyakanda
+
+### `DAri` — dhāri  (n=1)
+
+- наделенную  · n=1  · gitagovinda
+
+### `DAriRA` — dhāriṇā  (n=1)
+
+- одеваться  · n=1  · ramayana-ayodhyakanda
+
+### `DAriRI` — dhāriṇī  (n=6)
+
+- вооруженных  · n=2  · ramayana-sundarakanda, mahabharata-aranyakaparva
+- способна произвести  · n=1  · mahabharata-udyogaparva
+- носящих  · n=1  · mahabharata-sabhaparva
+- опора  · n=1  · mun-up
+- основа  · n=1  · kai-up
+
+### `DAriRaH` — dhāriṇaḥ  (n=5)
+
+- распустят  · n=1  · ramayana-ayodhyakanda
+- льющие  · n=1  · ramayana-aranyakanda
+- цветущих  · n=1  · ramayana-aranyakanda
+- носящих  · n=1  · mahabharata-karnaparva
+- облачены  · n=1  · mahabharata-shalyaparva
+
+### `DAriRam` — dhāriṇam  (n=6)
+
+- носившего  · n=3  · ramayana-aranyakanda
+- в позе  · n=2  · ramayana-aranyakanda
+- в руках  · n=1  · ramayana-ayodhyakanda
+
+### `DAriRau` — dhāriṇau  (n=3)
+
+- приняли  · n=2  · ramayana-balakanda
+- с  · n=1  · ramayana-aranyakanda
+
+### `DAriRi` — dhāriṇi  (n=1)
+
+- на голове  · n=1  · ramayana-ayodhyakanda
+
+### `DArin` — dhārin  (n=16)
+
+- с  · n=2  · ramayana-aranyakanda
+- украшенный  · n=2  · mahabharata-aranyakaparva, mahabharata-shalyaparva
+- С  · n=1  · ramayana-ayodhyakanda
+- вооруженные  · n=1  · ramayana-ayodhyakanda
+- на голове  · n=1  · ramayana-ayodhyakanda
+- принимающий  · n=1  · ramayana-sundarakanda
+- помнящие  · n=1  · manavadharmashastra
+- помнящих  · n=1  · manavadharmashastra
+- заплетенной  · n=1  · ramayana-aranyakanda
+- цветущими  · n=1  · ramayana-aranyakanda
+- покрытый  · n=1  · mahabharata-aranyakaparva
+- подъявшего  · n=1  · mahabharata-bhishmaparva
+- держащий  · n=1  · mahabharata-karnaparva
+- заостренными  · n=1  · mahabharata-virataparva
+
+### `DAritAsavaH` — dhāritāsavaḥ  (n=1)
+
+- существование  · n=1  · buddhacharita
+
+### `DArita` — dhārita  (n=5)
+
+- поддерживал  · n=1  · mahabharata-aranyakaparva
+- Поддержали  · n=1  · buddhacharita
+- удерживал  · n=1  · mahabharata-udyogaparva
+- поддерживалась  · n=1  · mahabharata-shalyaparva
+- выношен  · n=1  · mahabharata-shalyaparva
+
+### `DAritaH` — dhāritaḥ  (n=1)
+
+- выношенный  · n=1  · mahabharata-aranyakaparva
+
+### `DAritam` — dhāritam  (n=1)
+
+- поддерживаю  · n=1  · mahabharata-ashramavasikaparva
+
+### `DAritum` — dhāritum  (n=1)
+
+- проживешь  · n=1  · ramayana-aranyakanda
+
+### `DArmI` — dhārmī  (n=1)
+
+- справедливого  · n=1  · mahabharata-adiparva
+
+### `DArmeRa` — dhārmeṇa  (n=1)
+
+- праведным  · n=1  · ramayana-ayodhyakanda
+
+### `DArmikAH` — dhārmikāḥ  (n=4)
+
+- добродетельными  · n=1  · mahabharata-adiparva
+- благочестивые  · n=1  · mahabharata-bhishmaparva
+- добродетельные  · n=1  · mahabharata-bhishmaparva
+- праведные  · n=1  · mahabharata-bhishmaparva
+
+### `DArmikAn` — dhārmikān  (n=1)
+
+- добродетельных  · n=1  · manavadharmashastra
+
+### `DArmikI` — dhārmikī  (n=1)
+
+- просветлен  · n=1  · ramayana-balakanda
+
+### `DArmika` — dhārmika  (n=66)
+
+- справедлив  · n=6  · mahabharata-udyogaparva, manavadharmashastra, mahabharata-adiparva, mahabharata-shalyaparva, mahabharata-virataparva
+- праведный  · n=5  · ramayana-ayodhyakanda, mahabharata-adiparva
+- добродетельный  · n=5  · ramayana-ayodhyakanda, manavadharmashastra, ramayana-balakanda, mahabharata-aranyakaparva
+- благочестивый  · n=5  · manavadharmashastra, ramayana-aranyakanda, mahabharata-adiparva, mahabharata-ashvamedhikaparva, mahabharata-striparva
+- справедливый  · n=5  · manavadharmashastra, mahabharata-sabhaparva
+- добродетельного  · n=4  · ramayana-ayodhyakanda, manavadharmashastra, mahabharata-adiparva, mahabharata-dronaparva
+- праведным  · n=3  · ramayana-ayodhyakanda, mahabharata-aranyakaparva, yoga-sutry_vyasa-bhashya
+- добродетельных  · n=3  · manavadharmashastra, ramayana-balakanda, mahabharata-udyogaparva
+- справедливых  · n=3  · mahabharata-dronaparva, manavadharmashastra
+- Раму  · n=2  · ramayana-ayodhyakanda
+- справедливому  · n=2  · manavadharmashastra, mahabharata-adiparva
+- добродетельным  · n=2  · ramayana-balakanda, mahabharata-dronaparva
+- Благочестие  · n=2  · vajs-up
+- отличавшийся справедливостью  · n=1  · mahabharata-adiparva
+- добродетельная  · n=1  · ramayana-ayodhyakanda
+- великого духом  · n=1  · ramayana-ayodhyakanda
+- Добродетельный  · n=1  · ramayana-ayodhyakanda
+- дхарме  · n=1  · ramayana-sundarakanda
+- добродетельному  · n=1  · manavadharmashastra
+- Справедливому  · n=1  · manavadharmashastra
+- потомок Рагху  · n=1  · ramayana-balakanda
+- благой  · n=1  · ramayana-balakanda
+- благочестия  · n=1  · ramayana-balakanda
+- Мудрый  · n=1  · ramayana-balakanda
+- благочестивых  · n=1  · mahabharata-aranyakaparva
+- справедливым  · n=1  · mahabharata-adiparva
+- сведущ в нравственном законе  · n=1  · mahabharata-dronaparva
+- склонны следовать добродетели  · n=1  · mahabharata-udyogaparva
+- праведен  · n=1  · mahabharata-udyogaparva
+- преданный своему долгу  · n=1  · mahabharata-udyogaparva
+- справедливого  · n=1  · mahabharata-sabhaparva
+- добродетели  · n=1  · hatha-yoga-pradipika
+
+### `DArmikaH` — dhārmikaḥ  (n=10)
+
+- добродетельный  · n=4  · ramayana-ayodhyakanda, ramayana-balakanda
+- Добродетельный  · n=1  · ramayana-ayodhyakanda
+- благочестивый  · n=1  · mahabharata-aranyakaparva
+- справедливых  · n=1  · mahabharata-dronaparva
+- преданный долгу  · n=1  · mahabharata-udyogaparva
+- приверженец дхармы  · n=1  · mahabharata-karnaparva
+- добропорядочный  · n=1  · shukasaptati
+
+### `DArmikaM` — dhārmikaṃ  (n=1)
+
+- справедливого  · n=1  · mahabharata-sabhaparva
+
+### `DArmikaSca` — dhārmikaśca  (n=1)
+
+- и справедливый  · n=1  · mahabharata-virataparva
+
+### `DArmikam` — dhārmikam  (n=4)
+
+- сына  · n=2  · ramayana-ayodhyakanda, ramayana-balakanda
+- Добродетельного  · n=1  · ramayana-ayodhyakanda
+- добродетельному  · n=1  · ramayana-ayodhyakanda
+
+### `DArmikasya` — dhārmikasya  (n=1)
+
+- добродетельного  · n=1  · ramayana-ayodhyakanda
+
+### `DArmikatva` — dhārmikatva  (n=1)
+
+- добродетели  · n=1  · ramayana-ayodhyakanda
+
+### `DArmikeRa` — dhārmikeṇa  (n=1)
+
+- Добродетельным  · n=1  · ramayana-aranyakanda
+
+### `DAroktA` — dhāroktā  (n=1)
+
+- подчеркивается  · n=1  · gitarthasamgraha-abhinavagupta
+
+### `DArormi` — dhārormi  (n=2)
+
+- волн от потоков  · n=1  · mahabharata-adiparva
+- струями дождя  · n=1  · mahabharata-adiparva
+
+### `DArtarAzwrA` — dhārtarāṣṭrā  (n=2)
+
+- сыны Дхритараштры  · n=1  · bhagavadgita-sementsov
+- сыновья Дхритараштры  · n=1  · mahabharata-sabhaparva
+
+### `DArtarAzwrAH` — dhārtarāṣṭrāḥ  (n=32)
+
+- сыновья Дхритараштры  · n=8  · bhagavadgita-prabhupada, mahabharata-aranyakaparva, mahabharata-dronaparva, mahabharata-udyogaparva, mahabharata-karnaparva
+- сыны Дхритараштры  · n=8  · mahabharata-bhishmaparva, bhagavadgita-erman, gitarthasamgraha-abhinavagupta, ramanuja_gitabhashya, bhagavadgita-1914, mahabharata-karnaparva
+- сторонники Дхритараштры  · n=3  · bhagavadgita-radha
+- сынов Дхритараштры  · n=2  · bhagavadgita-smirnov
+- дети Дхритараштры  · n=1  · mahabharata-aranyakaparva
+- детей Дхритараштры  · n=1  · mahabharata-aranyakaparva
+- Сыновья же Дхритараштры  · n=1  · mahabharata-aranyakaparva
+- сыновей Дхритраштры  · n=1  · gitarthasamgraha-abhinavagupta
+- Дхритараштровичи  · n=1  · bhagavadgita-burba
+- Дхритараштрины  · n=1  · ramanuja_gitabhashya
+- СЫНОВЬЯ ДХРИТАРАШТРЫ  · n=1  · ramanuja_gitabhashya
+- сыны и поколѣніе Дритараштры  · n=1  · bhagavadgita-1788
+- Дхритараштры  · n=1  · bhagavadgita-1909
+- воины сына Дхритараштры  · n=1  · mahabharata-shalyaparva
+- из сторонников Дхритараштры  · n=1  · mahabharata-sauptikaparva
+
+### `DArtarAzwrAMScadurvfttAnfDyataHprekzyasarvaSaH` — dhārtarāṣṭrāṃśca durvṛttānṛdhyataḥ prekṣya sarvaśaḥ  (n=1)
+
+- а сыновья Дхритараштры, злодеи, благоденствуют  · n=1  · mahabharata-aranyakaparva
+
+### `DArtarAzwrARAM` — dhārtarāṣṭrāṇāṃ  (n=4)
+
+- сынами Дхритараштры  · n=1  · mahabharata-udyogaparva
+- сыновей Дхритараштры  · n=1  · mahabharata-karnaparva
+- сынов Дхритараштры  · n=1  · mahabharata-karnaparva
+- сыновьями Дхритараштры  · n=1  · mahabharata-adiparva
+
+### `DArtarAzwrARAm` — dhārtarāṣṭrāṇām  (n=9)
+
+- сыновей Дхритараштры  · n=4  · mahabharata-dronaparva, mahabharata-karnaparva
+- сынов Дхритараштры  · n=2  · mahabharata-bhishmaparva
+- сыновьям Дхритараштры  · n=1  · mahabharata-aranyakaparva
+- Дхритараштры  · n=1  · mahabharata-udyogaparva
+- Дхритараштры сыновей  · n=1  · ramanuja_gitabhashya
+
+### `DArtarAzwrASca` — dhārtarāṣṭrāśca  (n=3)
+
+- сыновья Дхритараштры  · n=3  · mahabharata-bhishmaparva, mahabharata-ashvamedhikaparva
+
+### `DArtarAzwrAY` — dhārtarāṣṭrāñ  (n=1)
+
+- на сыновей Дхритараштры  · n=1  · mahabharata-bhishmaparva
+
+### `DArtarAzwrAn` — dhārtarāṣṭrān  (n=35)
+
+- сыновей Дхритараштры  · n=12  · mahabharata-aranyakaparva, gitarthasamgraha-abhinavagupta, mahabharata-shalyaparva, mahabharata-adiparva, ramanuja_gitabhashya, bhagavadgita-sharma, bhagavadgita-prabhupada, mahabharata-karnaparva, mahabharata-sabhaparva
+- сынов Дхритараштры  · n=11  · bhagavadgity, bhagavadgita-erman, bhagavadgita-smirnov, bhagavadgita-sementsov, mahabharata-bhishmaparva, mahabharata-udyogaparva, bhagavadgita-sharma
+- сыновья Дхритараштры  · n=2  · mahabharata-adiparva, mahabharata-shalyaparva
+- Дхритараштровичей  · n=2  · bhagavadgita-burba
+- к Дхритараштре и его сыновьям  · n=1  · mahabharata-adiparva
+- к Дхритараштре  · n=1  · mahabharata-adiparva
+- сынами Дхритараштры  · n=1  · mahabharata-bhishmaparva
+- Дхритараштры сынов  · n=1  · ramanuja_gitabhashya
+- тех  · n=1  · bhagavadgita-1909
+- противник  · n=1  · bhagavadgita-1909
+- сыны Дхритараштры  · n=1  · mahabharata-karnaparva
+- сыновьями Дхритараштры  · n=1  · mahabharata-sabhaparva
+
+### `DArtarAzwrAnvizAdayan` — dhārtarāṣṭrānviṣādayan  (n=1)
+
+- опечалив сынов Дхритараштры  · n=1  · mahabharata-bhishmaparva
+
+### `DArtarAzwrArTaM` — dhārtarāṣṭrārthaṃ  (n=2)
+
+- относительно сына Дхритараштры  · n=2  · mahabharata-udyogaparva
+
+### `DArtarAzwrAs` — dhārtarāṣṭrās  (n=1)
+
+- Дхритараштровичи  · n=1  · bhagavadgita-burba
+
+### `DArtarAzwrAstataHsarve` — dhārtarāṣṭrāstataḥ sarve  (n=1)
+
+- воины сына Дхритараштры  · n=1  · mahabharata-shalyaparva
+
+### `DArtarAzwrAya` — dhārtarāṣṭrāya  (n=1)
+
+- сыну Дхритараштры  · n=1  · mahabharata-dronaparva
+
+### `DArtarAzwrI` — dhārtarāṣṭrī  (n=5)
+
+- сынов Дхритараштры  · n=3  · mahabharata-karnaparva, mahabharata-aranyakaparva
+- сына Дхритараштры  · n=1  · mahabharata-dronaparva
+- сыновей Дхритараштры  · n=1  · mahabharata-karnaparva
+
+### `DArtarAzwrIM` — dhārtarāṣṭrīṃ  (n=1)
+
+- сынов Дхритараштры  · n=1  · mahabharata-karnaparva
+
+### `DArtarAzwra` — dhārtarāṣṭra  (n=330)
+
+- сын Дхритараштры  · n=66  · mahabharata-udyogaparva, mahabharata-shalyaparva, mahabharata-aranyakaparva, mahabharata-dronaparva, mahabharata-bhishmaparva, mahabharata-karnaparva, mahabharata-sabhaparva, mahabharata-virataparva, mahabharata-ashvamedhikaparva, mahabharata-striparva
+- сынов Дхритараштры  · n=46  · mahabharata-bhishmaparva, mahabharata-karnaparva, mahabharata-udyogaparva, bhagavadgita-1914, mahabharata-dronaparva, bhagavadgita-smirnov, ramanuja_gitabhashya, bhagavadgita-erman, bhagavadgita-sharma, mahabharata-aranyakaparva, bhagavadgity, mahabharata-shalyaparva
+- сына Дхритараштры  · n=37  · mahabharata-udyogaparva, mahabharata-dronaparva, mahabharata-aranyakaparva, mahabharata-shalyaparva, bhagavadgita-1914, mahabharata-sabhaparva, mahabharata-bhishmaparva, bhagavadgity, bhagavadgita-smirnov, mahabharata-karnaparva
+- сыновья Дхритараштры  · n=30  · mahabharata-udyogaparva, mahabharata-aranyakaparva, mahabharata-dronaparva, mahabharata-karnaparva, mahabharata-shantiparva, mahabharata-adiparva, mahabharata-sabhaparva, bhagavadgita-sharma, mahabharata-shalyaparva, mahabharata-ashramavasikaparva, mahabharata-sauptikaparva, mahabharata-svargarohanikaparva
+- сыновей Дхритараштры  · n=29  · mahabharata-udyogaparva, mahabharata-dronaparva, mahabharata-adiparva, mahabharata-sabhaparva, mahabharata-aranyakaparva, gitarthasamgraha-abhinavagupta, bhagavadgita-sementsov, bhagavadgita-prabhupada, mahabharata-karnaparva, bhagavadgity, bhagavadgita-sharma, bhagavadgita-radha, mahabharata-virataparva
+- сыны Дхритараштры  · n=19  · mahabharata-bhishmaparva, mahabharata-udyogaparva, bhagavadgity, mahabharata-striparva, mahabharata-aranyakaparva, bhagavadgita-1914, bhagavadgita-smirnov, bhagavadgita-sementsov, mahabharata-shalyaparva, mahabharata-ashvamedhikaparva
+- сыну Дхритараштры  · n=18  · mahabharata-udyogaparva, mahabharata-aranyakaparva, mahabharata-bhishmaparva, bhagavadgita-erman, bhagavadgita-sharma, mahabharata-karnaparva, mahabharata-shalyaparva
+- Дхритараштры  · n=12  · mahabharata-udyogaparva, mahabharata-shantiparva, mahabharata-dronaparva, mahabharata-adiparva, mahabharata-bhishmaparva, gitarthasamgraha-abhinavagupta
+- сыновьями Дхритараштры  · n=8  · mahabharata-udyogaparva, mahabharata-dronaparva, mahabharata-adiparva, mahabharata-sabhaparva, mahabharata-virataparva
+- сыном Дхритараштры  · n=6  · mahabharata-udyogaparva, mahabharata-shalyaparva, mahabharata-aranyakaparva, mahabharata-virataparva
+- Дурьйодхана  · n=6  · mahabharata-udyogaparva, mahabharata-dronaparva, mahabharata-shalyaparva, mahabharata-sabhaparva
+- Дхритараштра  · n=4  · mahabharata-dronaparva, mahabharata-adiparva, mahabharata-sabhaparva
+- Сыновья Дхритараштры  · n=3  · mahabharata-udyogaparva, mahabharata-adiparva
+- сыновьях Дхритараштры  · n=3  · mahabharata-udyogaparva, mahabharata-karnaparva, mahabharata-sabhaparva
+- Кауравов  · n=2  · mahabharata-shantiparva, bhagavadgita-sementsov
+- сынами Дхритараштры  · n=2  · mahabharata-bhishmaparva
+- Дурьйодханы  · n=2  · mahabharata-udyogaparva, mahabharata-sabhaparva
+- Сын Дхритараштры  · n=2  · mahabharata-udyogaparva, bhagavadgita-smirnov
+- сынам Дхритараштры  · n=2  · mahabharata-udyogaparva, mahabharata-virataparva
+- Дхритараштровичей  · n=2  · bhagavadgita-burba
+- сыновъ Дритараштры  · n=2  · bhagavadgita-1788
+- сторонников Дхритараштры  · n=2  · bhagavadgita-radha
+- Дхритараштре  · n=1  · mahabharata-adiparva
+- Дхаритараштрам  · n=1  · mahabharata-adiparva
+- Дурьодхана  · n=1  · mahabharata-aranyakaparva
+- кауравов  · n=1  · mahabharata-aranyakaparva
+- стана Дхритараштры  · n=1  · mahabharata-bhishmaparva
+- Дурьодханы  · n=1  · mahabharata-dronaparva
+- Дхритараштровыми  · n=1  · mahabharata-dronaparva
+- Сынов Дхритараштры  · n=1  · mahabharata-bhishmaparva
+- к сыну Дхритараштры  · n=1  · mahabharata-udyogaparva
+- сыновья  · n=1  · mahabharata-udyogaparva
+- Твои сыновья  · n=1  · mahabharata-udyogaparva
+- сынами Дхри  · n=1  · mahabharata-udyogaparva
+- Сыну Дхритараштры  · n=1  · mahabharata-udyogaparva
+- родственниковъ  · n=1  · bhagavadgita-1788
+- Курусовъ  · n=1  · bhagavadgita-1788
+- сыну Дритараштры  · n=1  · bhagavadgita-1788
+- сыны Дритараштры  · n=1  · bhagavadgita-1788
+- курусовъ  · n=1  · bhagavadgita-1909
+- сыновей Панду  · n=1  · bhagavadgita-1909
+- Сыновья Дритараштры  · n=1  · bhagavadgita-1909
+- вражеское  · n=1  · bhagavadgita-1909
+- противникъ  · n=1  · bhagavadgita-1909
+- Обладающий непоколебимой мудростью  · n=1  · bhagavadgita-sharma
+- сына царя Дхритараштры  · n=1  · bhagavadgita-prabhupada
+- сына  · n=1  · mahabharata-shalyaparva
+- Царственный сын Дхритараштры  · n=1  · mahabharata-ashvamedhikaparva
+- Дурьйодхане  · n=1  · mahabharata-sabhaparva
+
+### `DArtarAzwraBayAt` — dhārtarāṣṭrabhayāt  (n=1)
+
+- из страха перед сыновьями Дхритараштры  · n=1  · mahabharata-adiparva
+
+### `DArtarAzwraH` — dhārtarāṣṭraḥ  (n=12)
+
+- сын Дхритараштры  · n=10  · mahabharata-shalyaparva, mahabharata-udyogaparva, mahabharata-karnaparva, mahabharata-adiparva
+- сына Дхритараштры  · n=2  · mahabharata-aranyakaparva, mahabharata-udyogaparva
+
+### `DArtarAzwraM` — dhārtarāṣṭraṃ  (n=1)
+
+- войско Дхритараштры  · n=1  · mahabharata-dronaparva
+
+### `DArtarAzwrabala` — dhārtarāṣṭrabala  (n=2)
+
+- войском сына Дхритараштры  · n=1  · mahabharata-dronaparva
+- войску сына Дхритараштры  · n=1  · mahabharata-udyogaparva
+
+### `DArtarAzwrabalaM` — dhārtarāṣṭrabalaṃ  (n=1)
+
+- войско сына Дхритараштры  · n=1  · mahabharata-dronaparva
+
+### `DArtarAzwrabalam` — dhārtarāṣṭrabalam  (n=2)
+
+- войско сыновей Дхритараштры  · n=1  · mahabharata-karnaparva
+- войско Дхритараштры  · n=1  · mahabharata-shalyaparva
+
+### `DArtarAzwracamUM` — dhārtarāṣṭracamūṃ  (n=1)
+
+- войска сынов Дхритараштры  · n=1  · mahabharata-bhishmaparva
+
+### `DArtarAzwrahita` — dhārtarāṣṭrahita  (n=1)
+
+- благе сыновей Дхритараштры  · n=1  · mahabharata-karnaparva
+
+### `DArtarAzwraiH` — dhārtarāṣṭraiḥ  (n=10)
+
+- сыновьями Дхритараштры  · n=3  · mahabharata-adiparva, mahabharata-shantiparva
+- сынами Дхритараштры  · n=3  · mahabharata-bhishmaparva, mahabharata-dronaparva, mahabharata-udyogaparva
+- Дхритараштрами  · n=1  · mahabharata-shantiparva
+- сыновья Дхритараштры  · n=1  · mahabharata-aranyakaparva
+- сыны Дхритараштры  · n=1  · mahabharata-aranyakaparva
+- сыновей Дхритараштры  · n=1  · mahabharata-aranyakaparva
+
+### `DArtarAzwrajAn` — dhārtarāṣṭrajān  (n=1)
+
+- с сынками Дхритараштры  · n=1  · mahabharata-bhishmaparva
+
+### `DArtarAzwrakfta` — dhārtarāṣṭrakṛta  (n=1)
+
+- причиненные сыном Дхритараштры  · n=1  · mahabharata-udyogaparva
+
+### `DArtarAzwram` — dhārtarāṣṭram  (n=10)
+
+- сына Дхритараштры  · n=3  · mahabharata-shantiparva, mahabharata-udyogaparva, mahabharata-sauptikaparva
+- сыну Дхритараштры  · n=3  · mahabharata-udyogaparva, mahabharata-shalyaparva
+- Дхритараштру  · n=1  · mahabharata-shantiparva
+- Дхритараштры  · n=1  · mahabharata-shantiparva
+- сыном Дхритараштры  · n=1  · mahabharata-udyogaparva
+- Дурьйодхане  · n=1  · mahabharata-shalyaparva
+
+### `DArtarAzwramate` — dhārtarāṣṭramate  (n=1)
+
+- послушен воле сынов Дхритараштры  · n=1  · mahabharata-karnaparva
+
+### `DArtarAzwrapadAnugAn` — dhārtarāṣṭrapadānugān  (n=1)
+
+- сынами Дхритараштры и их последователями  · n=1  · mahabharata-shalyaparva
+
+### `DArtarAzwrapriyaiziRA` — dhārtarāṣṭrapriyaiṣiṇā  (n=1)
+
+- желающим сделать приятное сынам Дхритараштры  · n=1  · mahabharata-dronaparva
+
+### `DArtarAzwrapriyaizin` — dhārtarāṣṭrapriyaiṣin  (n=2)
+
+- желающий блага Дурьодхане  · n=1  · mahabharata-adiparva
+- стремящийся угодить Дхритараштре  · n=1  · mahabharata-adiparva
+
+### `DArtarAzwrapriyakara` — dhārtarāṣṭrapriyakara  (n=1)
+
+- исполняющий то, что приятно сынам Дхритараштры  · n=1  · mahabharata-dronaparva
+
+### `DArtarAzwraputrAn` — dhārtarāṣṭraputrān  (n=1)
+
+- сыновей Дхритараштры  · n=1  · mahabharata-aranyakaparva
+
+### `DArtarAzwrasya` — dhārtarāṣṭrasya  (n=33)
+
+- сына Дхритараштры  · n=19  · mahabharata-udyogaparva, mahabharata-shalyaparva, mahabharata-aranyakaparva, mahabharata-bhishmaparva, mahabharata-dronaparva, mahabharata-adiparva, gitarthasamgraha-abhinavagupta, mahabharata-karnaparva, mahabharata-ashvamedhikaparva, mahabharata-virataparva
+- сыну Дхритараштры  · n=4  · mahabharata-bhishmaparva, bhagavadgita-radha, mahabharata-virataparva
+- Дхритараштры  · n=3  · mahabharata-adiparva, ramanuja_gitabhashya
+- Дритараштры  · n=2  · bhagavadgita-1909
+- Дхритараштрой  · n=1  · mahabharata-adiparva
+- сынов Дхритараштры  · n=1  · mahabharata-bhishmaparva
+- Дхритараштровичу  · n=1  · bhagavadgita-burba
+- сын Дхритараштры  · n=1  · bhagavadgita-burba
+- Дритараштрѣ  · n=1  · bhagavadgita-1909
+
+### `DArtarAzwrasyakAraRAt` — dhārtarāṣṭrasya kāraṇāt  (n=1)
+
+- ради сына Дхритараштры  · n=1  · mahabharata-dronaparva
+
+### `DArtarAzwravaDa` — dhārtarāṣṭravadha  (n=1)
+
+- сын Дхритараштры будет повергнут  · n=1  · mahabharata-aranyakaparva
+
+### `DArtarAzwre` — dhārtarāṣṭre  (n=3)
+
+- на сына Дхритараштры  · n=1  · mahabharata-dronaparva
+- сына Дхритараштры  · n=1  · mahabharata-shalyaparva
+- сын Дхритараштры  · n=1  · mahabharata-virataparva
+
+### `DArtarAzwreRa` — dhārtarāṣṭreṇa  (n=10)
+
+- сыном Дхритараштры  · n=5  · mahabharata-udyogaparva, mahabharata-shalyaparva
+- с сыном Дхритараштры  · n=2  · mahabharata-aranyakaparva, mahabharata-udyogaparva
+- сына Дхритараштры  · n=2  · mahabharata-udyogaparva, mahabharata-sabhaparva
+- Дурьйодханы  · n=1  · mahabharata-sabhaparva
+
+### `DArtarAzwrezu` — dhārtarāṣṭreṣu  (n=5)
+
+- к сыновьям Дхритараштры  · n=2  · mahabharata-dronaparva, mahabharata-sabhaparva
+- Дхритараштры  · n=1  · mahabharata-sabhaparva
+- сыновья Дхритараштры  · n=1  · mahabharata-virataparva
+- на сыновей Дхритараштры  · n=1  · mahabharata-virataparva
+
+### `DArtarAzwro'nupAyavit` — dhārtarāṣṭro'nupāyavit  (n=1)
+
+- сын Дхритараштры, несведущий в применении средств  · n=1  · mahabharata-dronaparva
+
+### `DArtarAzwropajIvinAm` — dhārtarāṣṭropajīvinām  (n=1)
+
+- тем, кто живет в зависимости от сыновей Дхритараштры  · n=1  · mahabharata-udyogaparva
+
+### `DAru` — dhāru  (n=1)
+
+- сосунок  · n=1  · atharvaveda
+
+### `DAruRa` — dhāruṇa  (n=1)
+
+- жестокий  · n=1  · ramayana-ayodhyakanda
+
+### `DAryA` — dhāryā  (n=2)
+
+- нести  · n=1  · mahabharata-udyogaparva
+- должен  · n=1  · mahabharata-udyogaparva
+
+### `DArya` — dhārya  (n=4)
+
+- вынашиваются  · n=1  · mahabharata-adiparva
+- наложено  · n=1  · mahabharata-udyogaparva
+- пусть не покидает  · n=1  · mahabharata-ashvamedhikaparva
+- удержание  · n=1  · sankhya-karika
+
+### `DAryamARAH` — dhāryamāṇāḥ  (n=1)
+
+- Из-за собственной кармы  · n=1  · buddhacharita
+
+### `DAryamARa` — dhāryamāṇa  (n=1)
+
+- сосредоточивает  · n=1  · nyaya-bhashya
+
+### `DAryante` — dhāryante  (n=4)
+
+- поддерживает  · n=1  · manavadharmashastra
+- существуют  · n=1  · mahabharata-aranyakaparva
+- основываются  · n=1  · mahabharata-aranyakaparva
+- поддерживаются  · n=1  · mahabharata-udyogaparva
+
+### `DAryatA` — dhāryatā  (n=1)
+
+- поддерживаемым  · n=1  · mahabharata-dronaparva
+
+### `DAryatAm` — dhāryatām  (n=3)
+
+- носи  · n=1  · mahabharata-adiparva
+- пусть будет сохранен  · n=1  · mahabharata-adiparva
+- прими к разумению  · n=1  · mahabharata-aranyakaparva
+
+### `DAryate` — dhāryate  (n=28)
+
+- держится  · n=7  · bhagavadgita-smirnov, mahabharata-aranyakaparva, ramanuja_gitabhashya, bhagavadgita-1914, bhagavadgita-1788, shatakatrayam
+- поддерживается  · n=6  · mahabharata-aranyakaparva, mahabharata-bhishmaparva, gitarthasamgraha-abhinavagupta, bhagavadgita-burba, bhagavadgita-erman, bhagavadgita-radha
+- берутся  · n=2  · ramayana-aranyakanda
+- держит  · n=2  · bhagavadgita-sementsov, shatakatrayam-serebryakov
+- хранится  · n=1  · mahabharata-adiparva
+- сохранила  · n=1  · ramayana-ayodhyakanda
+- поддерживают  · n=1  · buddhacharita
+- поддерживает  · n=1  · mahabharata-udyogaparva
+- держатся  · n=1  · bhagavadgita-1909
+- используется  · n=1  · bhagavadgita-prabhupada
+- живет и действует  · n=1  · bhagavadgita-prabhupada
+- следует обращаться  · n=1  · mahabharata-ashvamedhikaparva
+- размеренных  · n=1  · shatakatrayam
+- покоится  · n=1  · shatakatrayam-serebryakov
+- сила  · n=1  · shatakatrayam-serebryakov
+
+### `DAryau` — dhāryau  (n=1)
+
+- должны быть выношены  · n=1  · mahabharata-adiparva
+
+### `DArzwya` — dhārṣṭya  (n=1)
+
+- самообладание  · n=1  · kama-sutra
+
+### `DAs` — dhās  (n=5)
+
+- кушаньем  · n=1  · rigveda
+- областью  · n=1  · rigveda
+- приобщи  · n=1  · rigveda
+- места  · n=1  · rigveda
+- источника  · n=1  · rigveda
+
+### `DAsaTA` — dhāsathā  (n=1)
+
+- даруйте  · n=1  · rigveda
+
+### `DAsaTaH` — dhāsathaḥ  (n=1)
+
+- пусть дадут  · n=1  · rigveda
+
+### `DAser` — dhāser  (n=1)
+
+- поток  · n=1  · rigveda
+
+### `DAsi` — dhāsi  (n=8)
+
+- расплавленную массу (жира)  · n=2  · rigveda
+- подкрепление  · n=2  · rigveda
+- источник  · n=2  · rigveda
+- пищей  · n=1  · rigveda
+- поток бессмертия  · n=1  · rigveda
+
+### `DAsiM` — dhāsiṃ  (n=1)
+
+- питание  · n=1  · rigveda
+
+### `DAsim` — dhāsim  (n=5)
+
+- пищу  · n=2  · rigveda
+- питательной струей  · n=2  · rigveda
+- источник  · n=1  · rigveda
+
+### `DAsinA` — dhāsinā  (n=3)
+
+- потоком  · n=2  · rigveda
+- струи  · n=1  · rigveda
+
+### `DAstinapure` — dhāstinapure  (n=1)
+
+- в Хастинапуре  · n=1  · mahabharata-mahaprasthanikaparva
+
+### `DAsuH` — dhāsuḥ  (n=2)
+
+- вложили  · n=2  · rigveda
+
+### `DAsyAmi` — dhāsyāmi  (n=2)
+
+- одарю  · n=1  · mahabharata-aranyakaparva
+- накажу  · n=1  · mahabharata-aranyakaparva
+
+### `DAsyU` — dhāsyū  (n=2)
+
+- Жаждущий  · n=2  · atharvaveda
+
+### `DAsyanti` — dhāsyanti  (n=1)
+
+- будут ставить  · n=1  · mahabharata-udyogaparva
+
+### `DAsyasi` — dhāsyasi  (n=1)
+
+- доставишь  · n=1  · kau-up
+
+### `DAsyati` — dhāsyati  (n=4)
+
+- будет сосать  · n=2  · mahabharata-aranyakaparva
+- заключит  · n=1  · mahabharata-dronaparva
+- приносит  · n=1  · mahabharata-sabhaparva
+
+### `DAsyave` — dhāsyave  (n=1)
+
+- жаждущего (приношения)  · n=1  · atharvaveda
+
+### `DAsyur` — dhāsyur  (n=2)
+
+- жадный до пищи (?)  · n=2  · atharvaveda
+
+### `DAt` — dhāt  (n=21)
+
+- пусть даст  · n=4  · rigveda, rigveda, atharvaveda
+- пусть  · n=2  · rigveda
+- Он поверг  · n=1  · rigveda
+- вложил  · n=1  · rigveda
+- удовлетворит  · n=1  · rigveda
+- даст  · n=1  · rigveda
+- дает  · n=1  · rigveda
+- распределил  · n=1  · rigveda
+- придаст  · n=1  · rigveda
+- нашлет  · n=1  · rigveda
+- да не поместит  · n=1  · rigveda
+- поставила  · n=1  · rigveda
+- наделяет  · n=1  · rigveda
+- создаст  · n=1  · rigveda
+- дарует  · n=1  · atharvaveda
+- окружил  · n=1  · atharvaveda
+- поместит  · n=1  · atharvaveda
+
+### `DAtA` — dhātā  (n=38)
+
+- Дхатар  · n=18  · atharvaveda, rigveda, atharvaveda, br-up, atharvaveda, atharvaveda, atharvaveda, atharvaveda
+- Дхатри  · n=2  · mahabharata-adiparva
+- Вседержитель  · n=2  · mahabharata-udyogaparva
+- создатель  · n=2  · bhagavadgita-burba
+- Творец  · n=2  · ramanuja_gitabhashya, vedartha-samgraha_ramanuja
+- устанавливает  · n=1  · mahabharata-aranyakaparva
+- Установитель  · n=1  · mahabharata-aranyakaparva
+- установитель  · n=1  · rigveda
+- Даруйте  · n=1  · rigveda
+- Создатель/Хранитель  · n=1  · bhagavadgita-burba
+- устроитель  · n=1  · bhagavadgita-erman
+- творецъ  · n=1  · bhagavadgita-1788
+- хранитель  · n=1  · bhagavadgita-prabhupada
+- творец  · n=1  · bhagavadgita-prabhupada
+- Наделите  · n=1  · rigveda
+- Основатель  · n=1  · atharvaveda
+- дхатар  · n=1  · atharvaveda
+
+### `DAtAra` — dhātāra  (n=2)
+
+- Наделяя  · n=1  · rigveda
+- хранителя  · n=1  · bhagavadgita-1788
+
+### `DAtAram` — dhātāram  (n=1)
+
+- устроитель  · n=1  · ramanuja_gitabhashya
+
+### `DAtFRAm` — dhātṝṇām  (n=1)
+
+- установителей  · n=1  · rigveda
+
+### `DAtUn` — dhātūn  (n=1)
+
+- металл  · n=1  · mahabharata-udyogaparva
+
+### `DAta` — dhāta  (n=4)
+
+- кладет  · n=1  · rigveda
+- Даруйте  · n=1  · rigveda
+- даруйте  · n=1  · rigveda
+- дайте  · n=1  · rigveda
+
+### `DAtaH` — dhātaḥ  (n=1)
+
+- Дхатар  · n=1  · atharvaveda
+
+### `DAtam` — dhātam  (n=4)
+
+- устроили  · n=2  · rigveda
+- выдайте  · n=1  · rigveda
+- вложите  · n=1  · rigveda
+
+### `DAtanA` — dhātanā  (n=1)
+
+- создайте  · n=1  · rigveda
+
+### `DAtar` — dhātar  (n=11)
+
+- Создатель  · n=2  · manavadharmashastra, rigveda
+- Дхатар  · n=2  · atharvaveda, atharvaveda
+- Устроитель  · n=1  · rigveda
+- устроитель  · n=1  · rigveda
+- творца  · n=1  · bhagavadgita-smirnov
+- Дхатара  · n=1  · atharvaveda
+- о Дхатар  · n=1  · atharvaveda
+- Дхатар-владыка  · n=1  · atharvaveda
+- вседержитель  · n=1  · tai-up
+
+### `DAtavaH` — dhātavaḥ  (n=3)
+
+- Минералы  · n=1  · ramayana-aranyakanda
+- элементов  · n=1  · buddhacharita
+- жилы  · n=1  · mahabharata-ashvamedhikaparva
+
+### `DAtavas` — dhātavas  (n=1)
+
+- основы  · n=1  · jabala-up
+
+### `DAtave` — dhātave  (n=7)
+
+- прильнуть  · n=2  · rigveda, atharvaveda
+- сосания  · n=1  · rigveda
+- пососать  · n=1  · rigveda
+- чтобы сосали  · n=1  · rigveda
+- поместить  · n=1  · atharvaveda
+- сосать  · n=1  · br-up
+
+### `DAtf` — dhātṛ  (n=118)
+
+- Дхатри  · n=20  · mahabharata-adiparva, mahabharata-virataparva, mahabharata-aranyakaparva, mahabharata-dronaparva, mahabharata-udyogaparva, mahabharata-shalyaparva
+- Дхатар  · n=19  · atharvaveda, atharvaveda, atharvaveda, ramayana-ayodhyakanda, atharvaveda, atharvaveda, atharvaveda, atharvaveda, atharvaveda
+- Творец  · n=8  · mahabharata-aranyakaparva, mahabharata-adiparva, gitarthasamgraha-abhinavagupta, bhagavadgita-smirnov, mahabharata-virataparva
+- Установитель  · n=7  · mahabharata-aranyakaparva, rigveda, mahabharata-striparva
+- Создатель  · n=7  · mahabharata-bhishmaparva, bhagavadgita-burba, bhagavadgita-erman, mahabharata-sabhaparva
+- создатель  · n=4  · manavadharmashastra, mahabharata-udyogaparva, atharvaveda, mai-up
+- устроителями  · n=4  · rigveda, rigveda
+- Дхата  · n=4  · mahabharata-ashvamedhikaparva, vedanga_jyotisha
+- Дхатара  · n=3  · ramayana-ayodhyakanda, ramayana-aranyakanda, mahabharata-bhishmaparva
+- Установителя  · n=3  · mahabharata-aranyakaparva
+- учредитель  · n=2  · rigveda
+- родитель  · n=2  · mahabharata-adiparva
+- Опора  · n=2  · bhagavadgita-1914, bhagavadgity
+- вседержителе  · n=2  · bhagavadgita-erman
+- Устроитель  · n=2  · bhagavadgita-sementsov
+- хранитель  · n=2  · bhagavadgita-prabhupada
+- творец  · n=2  · bhagavadgita-prabhupada, mai-up
+- Хранитель мира  · n=1  · ramayana-balakanda
+- Владыки  · n=1  · mahabharata-aranyakaparva
+- затевает  · n=1  · rigveda
+- дхатар  · n=1  · rigveda
+- устроитель  · n=1  · mahabharata-bhishmaparva
+- творение  · n=1  · mahabharata-dronaparva
+- устанавливает  · n=1  · mahabharata-udyogaparva
+- творцу  · n=1  · mahabharata-udyogaparva
+- Поддержатель  · n=1  · gitarthasamgraha-abhinavagupta
+- Вседержителя  · n=1  · gitarthasamgraha-abhinavagupta
+- Держателя  · n=1  · ramanuja_gitabhashya
+- держатель  · n=1  · ramanuja_gitabhashya
+- опоре  · n=1  · bhagavadgita-1914
+- опора  · n=1  · bhagavadgita-sementsov
+- Хранитель  · n=1  · bhagavadgita-1909
+- вмещающее  · n=1  · bhagavadgita-sharma
+- покровитель  · n=1  · bhagavadgita-sharma
+- Брахма  · n=1  · bhagavadgita-prabhupada
+- кормилец  · n=1  · bhagavadgita-radha
+- творец [Брахма]  · n=1  · bhagavadgita-radha
+- Всевидящий  · n=1  · kumarasambhava
+- творцом  · n=1  · mahabharata-sabhaparva
+- Создателя  · n=1  · raghuvamsha
+- Дхатару  · n=1  · atharvaveda
+- Дхата (Уттара Пхалгуни)  · n=1  · vedanga_jyotisha
+
+### `DAtfBiH` — dhātṛbhiḥ  (n=1)
+
+- устроителями  · n=1  · rigveda
+
+### `DAtfvihita` — dhātṛvihita  (n=1)
+
+- установлено Установителем  · n=1  · mahabharata-aranyakaparva
+
+### `DAti` — dhāti  (n=2)
+
+- определяет  · n=1  · rigveda
+- одаряет  · n=1  · rigveda
+
+### `DAtoHsTAnaivAdeSaM` — dhātoḥ sthāna ivādeśaṃ  (n=1)
+
+- как будто заменил корень в слове  · n=1  · raghuvamsha
+
+### `DAtr` — dhātr  (n=20)
+
+- Установитель  · n=3  · mahabharata-aranyakaparva, mahabharata-striparva
+- творец  · n=3  · bhagavadgita-smirnov, mahabharata-sabhaparva, shatakatrayam-serebryakov
+- Творцом  · n=2  · ramayana-sundarakanda, mahabharata-shalyaparva
+- Творец  · n=2  · gitarthasamgraha-abhinavagupta, bhagavadgita-sharma
+- хранитель  · n=2  · bhagavadgity, bhagavadgita-1788
+- Сверканием года  · n=2  · atharvaveda
+- Установителя  · n=1  · mahabharata-aranyakaparva
+- творцом  · n=1  · mahabharata-aranyakaparva
+- Покровитель  · n=1  · bhagavadgita-1914
+- Создателем  · n=1  · mahabharata-shalyaparva
+- Брахма  · n=1  · raghuvamsha
+- Дхатара  · n=1  · atharvaveda
+
+### `DAtrA` — dhātrā  (n=19)
+
+- творцом  · n=4  · mahabharata-udyogaparva, manavadharmashastra
+- Творцом  · n=2  · ramayana-sundarakanda, mahabharata-aranyakaparva
+- Брахмой  · n=2  · ramayana-balakanda
+- Творец  · n=2  · mahabharata-bhishmaparva, shatakatrayam
+- создателем  · n=2  · mahabharata-dronaparva, mahabharata-udyogaparva
+- Дхатри  · n=2  · mahabharata-ashvamedhikaparva
+- Установителя  · n=1  · mahabharata-aranyakaparva
+- Установитель  · n=1  · mahabharata-aranyakaparva
+- исполнителем (обряда)  · n=1  · rigveda
+- Создателем  · n=1  · mahabharata-shalyaparva
+- Создатель  · n=1  · raghuvamsha
+
+### `DAtrI` — dhātrī  (n=17)
+
+- няньки  · n=2  · ramayana-balakanda, mahabharata-sabhaparva
+- нянек  · n=2  · mahabharata-aranyakaparva, mahabharata-udyogaparva
+- кормилице  · n=2  · mahabharata-aranyakaparva, buddhacharita
+- кормилица  · n=2  · mahabharata-adiparva, mahabharata-shalyaparva
+- творец  · n=2  · raghuvamsha, shatakatrayam-serebryakov
+- мир  · n=2  · shatakatrayam
+- нянька  · n=1  · ramayana-ayodhyakanda
+- кормилицей  · n=1  · mahabharata-aranyakaparva
+- матерью  · n=1  · mahabharata-adiparva
+- кормилицы  · n=1  · buddhacharita
+- Кормилица  · n=1  · mahabharata-striparva
+
+### `DAtrIRAM` — dhātrīṇāṃ  (n=2)
+
+- нянькам  · n=2  · mahabharata-udyogaparva
+
+### `DAtrIkaRWam` — dhātrīkaṇṭham  (n=1)
+
+- с юных лет  · n=1  · amaru-shataka
+
+### `DAtrIkarAByAM` — dhātrīkarābhyāṃ  (n=1)
+
+- руками няньки  · n=1  · raghuvamsha
+
+### `DAtrIm` — dhātrīm  (n=2)
+
+- няньку  · n=2  · ramayana-ayodhyakanda
+
+### `DAtrIvarzaDarAnvitA` — dhātrīvarṣadharānvitā  (n=3)
+
+- в сопровождении евнуха и кормилицы  · n=1  · mahabharata-shantiparva
+- сопровождаемая кормилицей и Варшадхарой  · n=1  · mahabharata-shantiparva
+- с кормилицей и Варшадхарой  · n=1  · mahabharata-shantiparva
+
+### `DAtrIvarzaDarAnvita` — dhātrīvarṣadharānvita  (n=1)
+
+- сопровождаемая кормилицей и Варшадхарой  · n=1  · mahabharata-shantiparva
+
+### `DAtrapatya` — dhātrapatya  (n=1)
+
+- сын кормилицы  · n=1  · kama-sutra
+
+### `DAtre` — dhātre  (n=1)
+
+- дхатара  · n=1  · atharvaveda
+
+### `DAtreyikA` — dhātreyikā  (n=13)
+
+- молочную сестру  · n=4  · kama-sutra, mahabharata-adiparva
+- молочная сестра  · n=3  · kama-sutra
+- молочной сестрой  · n=2  · kama-sutra
+- молочной сестры  · n=1  · kama-sutra
+- В § 24—26 описываются браки пайшаиа  · n=1  · kama-sutra
+- нянька  · n=1  · kama-sutra
+- молочные сестры  · n=1  · kama-sutra
+
+### `DAtreyikAm` — dhātreyikām  (n=2)
+
+- кормилицы  · n=1  · mahabharata-aranyakaparva
+- молочную сестру  · n=1  · kama-sutra
+
+### `DAtreyikAparigraha` — dhātreyikāparigraha  (n=1)
+
+- завладевший молочной сестрой  · n=1  · kama-sutra
+
+### `DAtristanyapAyinaH` — dhātristanyapāyinaḥ  (n=1)
+
+- вспоенные кормилицами  · n=1  · raghuvamsha
+
+### `DAtryA` — dhātryā  (n=5)
+
+- кормилицы  · n=2  · mahabharata-aranyakaparva, mahabharata-udyogaparva
+- кормилицей  · n=2  · mahabharata-aranyakaparva, mahabharata-udyogaparva
+- нянька  · n=1  · raghuvamsha
+
+### `DAtryAH` — dhātryāḥ  (n=1)
+
+- няньки  · n=1  · ramayana-ayodhyakanda
+
+### `DAtryAm` — dhātryām  (n=1)
+
+- когда  · n=1  · shatakatrayam-serebryakov
+
+### `DAtu` — dhātu  (n=54)
+
+- минералами  · n=4  · ramayana-sundarakanda, ramayana-ayodhyakanda, ramayana-aranyakanda
+- руд  · n=3  · manavadharmashastra
+- часть  · n=3  · ch-up
+- поместит  · n=2  · rigveda, atharvaveda
+- корень  · n=2  · mahabharata-udyogaparva, nyaya-bhashya
+- пусть даст  · n=2  · rigveda, rigveda
+- элементов  · n=2  · nyaya-bhashya
+- Основа  · n=2  · mahabharata-ashvamedhikaparva
+- дхату  · n=2  · hatha-yoga-pradipika
+- минералы  · n=1  · ramayana-ayodhyakanda
+- горных пород  · n=1  · ramayana-ayodhyakanda
+- металлы  · n=1  · ramayana-sundarakanda
+- творца  · n=1  · ramayana-sundarakanda
+- жилами руд  · n=1  · ramayana-sundarakanda
+- жилами  · n=1  · ramayana-aranyakanda
+- камень  · n=1  · ramayana-aranyakanda
+- минерал  · n=1  · ramayana-aranyakanda
+- рудами  · n=1  · ramayana-balakanda
+- элементом  · n=1  · mahabharata-aranyakaparva
+- элементы тела  · n=1  · mahabharata-aranyakaparva
+- Пусть ниспошлет  · n=1  · rigveda
+- семя  · n=1  · kama-sutra
+- семени  · n=1  · kama-sutra
+- периоды  · n=1  · mahabharata-udyogaparva
+- субстанции  · n=1  · gitarthasamgraha-abhinavagupta
+- основа  · n=1  · rigveda
+- элемент  · n=1  · rigveda
+- минералов  · n=1  · nyaya-bhashya
+- корня  · n=1  · nyaya-bhashya
+- рок  · n=1  · mahabharata-sabhaparva
+- творец  · n=1  · mahabharata-sabhaparva
+- глагол  · n=1  · raghuvamsha
+- пыль  · n=1  · raghuvamsha
+- корню  · n=1  · raghuvamsha
+- руду  · n=1  · shatakatrayam
+- руды  · n=1  · shatakatrayam-serebryakov
+- субстанций  · n=1  · yoga-sutry_vyasa-bhashya
+- первоэлементы  · n=1  · vedartha-samgraha_ramanuja
+- Составляющие  · n=1  · yotat-up
+- Брахмы  · n=1  · megha-duta
+- чувств  · n=1  · mnar-up
+
+### `DAtuBedAruRayAnanemiH` — dhātubhedāruṇayānanemiḥ  (n=1)
+
+- покраснели колеса от размолотых минералов  · n=1  · raghuvamsha
+
+### `DAtuBiH` — dhātubhiḥ  (n=1)
+
+- минералами  · n=1  · ramayana-sundarakanda
+
+### `DAtuH` — dhātuḥ  (n=6)
+
+- Дхатри  · n=2  · mahabharata-aranyakaparva
+- Творца  · n=2  · devi-gita
+- Дхатара  · n=1  · rigveda
+- Творцом  · n=1  · mahabharata-virataparva
+
+### `DAtubadDa` — dhātubaddha  (n=1)
+
+- сплетённое из составляющих  · n=1  · yotat-up
+
+### `DAtudrumamfgARqaja` — dhātudrumamṛgāṇḍaja  (n=1)
+
+- рудами, деревьями, зверями и птицами  · n=1  · mahabharata-aranyakaparva
+
+### `DAtukAma` — dhātukāma  (n=2)
+
+- в поисках минералов  · n=2  · mai-up
+
+### `DAtukzaya` — dhātukṣaya  (n=1)
+
+- истощения семени  · n=1  · kama-sutra
+
+### `DAtukzayanimittA` — dhātukṣayanimittā  (n=1)
+
+- по причине истощения семени  · n=1  · kama-sutra
+
+### `DAtukzayapraSAntAtman` — dhātukṣayapraśāntātman  (n=1)
+
+- кто к моменту разрушения телесных элементов достиг ясности духа  · n=1  · mahabharata-ashvamedhikaparva
+
+### `DAtum` — dhātum  (n=2)
+
+- держать  · n=1  · ramayana-aranyakanda
+- карать  · n=1  · mahabharata-aranyakaparva
+
+### `DAtumaDye` — dhātumadhye  (n=1)
+
+- между металлов  · n=1  · buddhacharita
+
+### `DAtumaRqita` — dhātumaṇḍita  (n=1)
+
+- одетые минералами  · n=1  · mahabharata-karnaparva
+
+### `DAtumaRqitam` — dhātumaṇḍitam  (n=1)
+
+- обильной рудами  · n=1  · ramayana-balakanda
+
+### `DAtumat` — dhātumat  (n=3)
+
+- самоцветами  · n=1  · ramayana-ayodhyakanda
+- изобилующий ценной рудою  · n=1  · mahabharata-aranyakaparva
+- огненный хмель  · n=1  · kumarasambhava
+
+### `DAtumaya` — dhātumaya  (n=1)
+
+- залежи руды  · n=1  · raghuvamsha
+
+### `DAtuprakopa` — dhātuprakopa  (n=1)
+
+- возмущения первоначал  · n=1  · buddhacharita
+
+### `DAtuprapozaRam` — dhātuprapoṣaṇam  (n=1)
+
+- питать дхату (основные составляющие тела)  · n=1  · hatha-yoga-pradipika
+
+### `DAtuprasAda` — dhātuprasāda  (n=4)
+
+- умиротворенности чувств  · n=1  · kat-up
+- Умиротворенности чувств  · n=1  · kat-up
+- умиротворение чувств  · n=1  · shv-up
+- Меньше…  · n=1  · shv-up
+
+### `DAtuprasyandin` — dhātuprasyandin  (n=1)
+
+- потокам жидкой красной глины  · n=1  · mahabharata-dronaparva
+
+### `DAtur` — dhātur  (n=2)
+
+- Дхатара  · n=2  · rigveda
+
+### `DAturAgaiH` — dhāturāgaiḥ  (n=1)
+
+- камнемъ  · n=1  · megha-duta
+
+### `DAturasakaraRavaizamyam` — dhāturasakaraṇavaiṣamyam  (n=1)
+
+- нарушение равновесия гуморов телесных секреций или внутренних органов  · n=1  · yoga-sutry_vyasa-bhashya
+
+### `DAturasena` — dhāturasena  (n=1)
+
+- крапинках  · n=1  · kumarasambhava
+
+### `DAturaso` — dhāturaso  (n=1)
+
+- Вкус соотносится с элементом  · n=1  · mahabharata-ashvamedhikaparva
+
+### `DAtureRuBiH` — dhātureṇubhiḥ  (n=1)
+
+- каменной пыли  · n=1  · raghuvamsha
+
+### `DAtusAmya` — dhātusāmya  (n=2)
+
+- о добром здравии  · n=1  · buddhacharita
+- здоровье  · n=1  · buddhacharita
+
+### `DAtustrIlaulyakAdi` — dhātustrīlaulyakādi  (n=1)
+
+- доброй мыслью узнавший (об этом)  · n=1  · yotat-up
+
+### `DAtuvAda` — dhātuvāda  (n=1)
+
+- металлургия  · n=1  · kama-sutra
+
+### `DAtuvicCeda` — dhātuviccheda  (n=1)
+
+- прожилки металлов  · n=1  · mahabharata-aranyakaparva
+
+### `DAtvarTa` — dhātvartha  (n=1)
+
+- значение глагольного корня  · n=1  · yoga-sutry_vyasa-bhashya
+
+### `DAv` — dhāv  (n=21)
+
+- бежит  · n=6  · rigveda, atharvaveda
+- омою  · n=2  · mahabharata-karnaparva
+- бежишь  · n=1  · ramayana-aranyakanda
+- убегаешь  · n=1  · ramayana-aranyakanda
+- сияющих  · n=1  · mahabharata-adiparva
+- течешь  · n=1  · rigveda
+- беге  · n=1  · rigveda
+- бежать  · n=1  · rigveda
+- Бежит  · n=1  · rigveda
+- подливайте  · n=1  · atharvaveda
+- убежишь  · n=1  · atharvaveda
+- обратятся в бегство  · n=1  · atharvaveda
+- бегут  · n=1  · atharvaveda
+- устремляешься  · n=1  · gitagovinda
+- подкрадываться  · n=1  · shukasaptati
+
+### `DAvAt` — dhāvāt  (n=1)
+
+- пробежит  · n=1  · atharvaveda
+
+### `DAva` — dhāva  (n=3)
+
+- Теки  · n=1  · rigveda
+- Беги  · n=1  · rigveda
+- оближи  · n=1  · shukasaptati
+
+### `DAvaTa` — dhāvatha  (n=1)
+
+- бежите  · n=1  · atharvaveda
+
+### `DAvad` — dhāvad  (n=2)
+
+- помог  · n=2  · rigveda
+
+### `DAvadBiH` — dhāvadbhiḥ  (n=1)
+
+- мчащимися  · n=1  · mahabharata-shalyaparva
+
+### `DAvamAnA` — dhāvamānā  (n=1)
+
+- убегающие  · n=1  · mahabharata-dronaparva
+
+### `DAvamAnAH` — dhāvamānāḥ  (n=1)
+
+- мечутся  · n=1  · mahabharata-karnaparva
+
+### `DAvamAnAn` — dhāvamānān  (n=5)
+
+- обрушивающихся  · n=2  · mahabharata-dronaparva
+- бегущих  · n=1  · mahabharata-dronaparva
+- разбегаются  · n=1  · mahabharata-dronaparva
+- бегут  · n=1  · mahabharata-karnaparva
+
+### `DAvamAna` — dhāvamāna  (n=9)
+
+- мчались прочь  · n=1  · mahabharata-aranyakaparva
+- в пути  · n=1  · mahabharata-aranyakaparva
+- мечущихся  · n=1  · mahabharata-bhishmaparva
+- убегая  · n=1  · mahabharata-dronaparva
+- бегут  · n=1  · mahabharata-karnaparva
+- слетались  · n=1  · mahabharata-karnaparva
+- бежавших  · n=1  · mahabharata-shalyaparva
+- мечутся  · n=1  · mahabharata-ashvamedhikaparva
+- спешащему  · n=1  · atharvaveda
+
+### `DAvamAnam` — dhāvamānam  (n=2)
+
+- скользящего  · n=2  · rigveda
+
+### `DAvamAnasya` — dhāvamānasya  (n=1)
+
+- бегущего  · n=1  · mahabharata-dronaparva
+
+### `DAvamAnezu` — dhāvamāneṣu  (n=1)
+
+- быстро проносились  · n=1  · mahabharata-shalyaparva
+
+### `DAvan` — dhāvan  (n=2)
+
+- налили  · n=2  · rigveda
+
+### `DAvana` — dhāvana  (n=2)
+
+- чистка  · n=2  · ramayana-ayodhyakanda
+
+### `DAvant` — dhāvant  (n=2)
+
+- мечутся  · n=1  · mahabharata-karnaparva
+- спасающегося бегством  · n=1  · mahabharata-sauptikaparva
+
+### `DAvantI` — dhāvantī  (n=1)
+
+- когда бежит  · n=1  · atharvaveda
+
+### `DAvantUraH` — dhāvantūraḥ  (n=1)
+
+- удирают  · n=1  · atharvaveda
+
+### `DAvanta` — dhāvanta  (n=3)
+
+- разбежались  · n=1  · mahabharata-aranyakaparva
+- бегущими  · n=1  · mahabharata-bhishmaparva
+- бегущим  · n=1  · mahabharata-striparva
+
+### `DAvantaH` — dhāvantaḥ  (n=3)
+
+- разбегаться  · n=1  · mahabharata-dronaparva
+- бегущими  · n=1  · mahabharata-shalyaparva
+- носились  · n=1  · mahabharata-sauptikaparva
+
+### `DAvantam` — dhāvantam  (n=5)
+
+- убегающим  · n=1  · ramayana-aranyakanda
+- беглеца  · n=1  · mahabharata-aranyakaparva
+- убегающий  · n=1  · mahabharata-virataparva
+- бегущего  · n=1  · mahabharata-virataparva
+- вьется  · n=1  · chaurapanchashika
+
+### `DAvanti` — dhāvanti  (n=10)
+
+- бегут  · n=5  · rigveda, mahabharata-karnaparva, br-up, atharvaveda, kau-up
+- мечутся  · n=1  · ramayana-aranyakanda
+- устремляясь  · n=1  · mahabharata-bhishmaparva
+- Бегут  · n=1  · rigveda
+- устремляются  · n=1  · mahabharata-udyogaparva
+- мчатся  · n=1  · shatakatrayam-serebryakov
+
+### `DAvantyudyaminastaTaiva` — dhāvantyudyaminastathaiva  (n=1)
+
+- снуем беспрерывно  · n=1  · shatakatrayam
+
+### `DAvasi` — dhāvasi  (n=4)
+
+- летишь  · n=1  · ramayana-aranyakanda
+- пробегаешь  · n=1  · rigveda
+- бежишь  · n=1  · rigveda
+- устремляешься  · n=1  · mahabharata-ashvamedhikaparva
+
+### `DAvat` — dhāvat  (n=6)
+
+- бегущие  · n=2  · rigveda, mahabharata-dronaparva
+- бегущему  · n=1  · manavadharmashastra
+- мчащихся  · n=1  · mahabharata-bhishmaparva
+- несущимися  · n=1  · mahabharata-striparva
+- бегущих  · n=1  · isha-up
+
+### `DAvatA` — dhāvatā  (n=2)
+
+- бегите  · n=1  · rigveda
+- растворите  · n=1  · rigveda
+
+### `DAvatAm` — dhāvatām  (n=2)
+
+- убегавших  · n=1  · mahabharata-dronaparva
+- бегите  · n=1  · atharvaveda
+
+### `DAvata` — dhāvata  (n=6)
+
+- Бегите  · n=2  · mahabharata-dronaparva, atharvaveda
+- Полощите  · n=1  · rigveda
+- размешивайте  · n=1  · rigveda
+- бегите  · n=1  · mahabharata-bhishmaparva
+- гонитесь  · n=1  · atharvaveda
+
+### `DAvataH` — dhāvataḥ  (n=3)
+
+- метались  · n=1  · mahabharata-aranyakaparva
+- убегали  · n=1  · mahabharata-dronaparva
+- бегущих  · n=1  · mahabharata-shalyaparva
+
+### `DAvataM` — dhāvataṃ  (n=1)
+
+- поспешите  · n=1  · rigveda
+
+### `DAvatam` — dhāvatam  (n=2)
+
+- Разбавьте  · n=2  · rigveda
+
+### `DAvate` — dhāvate  (n=6)
+
+- мчится  · n=4  · rigveda, atharvaveda
+- бросается  · n=1  · rigveda
+- устремляется  · n=1  · rigveda
+
+### `DAvati` — dhāvati  (n=19)
+
+- мчится  · n=5  · rigveda
+- бежит  · n=3  · rigveda
+- Бежит  · n=3  · rigveda
+- Мчится  · n=2  · rigveda
+- бегут  · n=2  · kat-up, tai-up
+- металась  · n=1  · mahabharata-aranyakaparva
+- пробегает  · n=1  · rigveda
+- течет  · n=1  · rigveda
+- разводит  · n=1  · rigveda
+
+### `DAvatu` — dhāvatu  (n=5)
+
+- побежит  · n=1  · rigveda
+- растечется  · n=1  · rigveda
+- поспешит  · n=1  · rigveda
+- примчится  · n=1  · atharvaveda
+- пусть бежит  · n=1  · atharvaveda
+
+### `DAvayan` — dhāvayan  (n=3)
+
+- выезжает  · n=2  · rigveda
+- мчащийся  · n=1  · kau-up
+
+### `DAvayet` — dhāvayet  (n=1)
+
+- моет  · n=1  · manavadharmashastra
+
+### `DAvetyuktvA` — dhāvetyuktvā  (n=1)
+
+- облизывай, сказав  · n=1  · shukasaptati
+
+### `DAvitAra` — dhāvitāra  (n=2)
+
+- скакуна  · n=2  · mahabharata-striparva
+
+### `DAvita` — dhāvita  (n=1)
+
+- прибежали  · n=1  · shukasaptati
+
+### `DAyIH` — dhāyīḥ  (n=1)
+
+- не подставь  · n=1  · rigveda
+
+### `DAyasA` — dhāyasā  (n=1)
+
+- питательным  · n=1  · rigveda
+
+### `DAyasa` — dhāyasa  (n=1)
+
+- для удовлетворения  · n=1  · rigveda
+
+### `DAyase` — dhāyase  (n=17)
+
+- для удовлетворения  · n=3  · rigveda, rigveda
+- для кормления  · n=2  · rigveda
+- удовлетворения  · n=2  · rigveda, rigveda
+- обеспечить  · n=1  · rigveda
+- наслаждения  · n=1  · rigveda
+- чтобы были удовлетворены  · n=1  · rigveda
+- подкрепляться  · n=1  · rigveda
+- насыщения  · n=1  · rigveda
+- чтобы ты насыщался  · n=1  · rigveda
+- подкреплялся  · n=1  · rigveda
+- чтобы вкусить  · n=1  · rigveda
+- для  · n=1  · rigveda
+- ради установления первенства  · n=1  · rigveda
+
+### `DAyi` — dhāyi  (n=25)
+
+- устроен  · n=3  · rigveda, rigveda
+- установился  · n=2  · rigveda
+- сложена  · n=2  · rigveda
+- сделали  · n=2  · rigveda
+- установлен  · n=2  · rigveda
+- принято  · n=2  · rigveda
+- помещен  · n=2  · rigveda, rigveda
+- положено  · n=2  · rigveda
+- Оказался  · n=1  · rigveda
+- оказался  · n=1  · rigveda
+- устроено  · n=1  · rigveda
+- отнят  · n=1  · rigveda
+- была уступлена  · n=1  · rigveda
+- вложена  · n=1  · rigveda
+- поставить  · n=1  · rigveda
+- пусть покоится  · n=1  · atharvaveda
+
+### `DAyoBiH` — dhāyobhiḥ  (n=1)
+
+- жертвенными кушаньями  · n=1  · rigveda
+
+### `DAyu` — dhāyu  (n=4)
+
+- крепких  · n=2  · rigveda
+- удовлетворение пищей  · n=2  · rigveda
+
+### `DAyy` — dhāyy  (n=1)
+
+- покоится  · n=1  · rigveda
+
+### `DI` — dhī  (n=100)
+
+- молитвы  · n=13  · rigveda, rigveda, rigveda, rigveda, rigveda, rigveda, rigveda, rigveda
+- молитвой  · n=5  · rigveda, rigveda, rigveda, atharvaveda, atharvaveda
+- мысли  · n=5  · paramarthasara-abhinavagupta, rigveda, mai-up
+- поэтическая мысль  · n=4  · rigveda, rigveda
+- поэтическими мыслями  · n=4  · rigveda
+- молитва  · n=4  · rigveda, rigveda, rigveda
+- молитвами  · n=3  · rigveda, rigveda, atharvaveda
+- молитву  · n=3  · rigveda, rigveda
+- поэтической мысли  · n=3  · rigveda, rigveda
+- молитвах  · n=2  · rigveda, rigveda
+- поэтическим мыслям  · n=2  · rigveda
+- помыслы  · n=2  · rigveda
+- поэтических мыслей  · n=2  · rigveda, rigveda
+- способностями видения  · n=2  · rigveda
+- произведение  · n=2  · rigveda
+- мысль  · n=2  · rigveda, yotat-up
+- молитв  · n=2  · rigveda
+- Дхи  · n=2  · rigveda
+- заботили  · n=1  · ramayana-ayodhyakanda
+- постижимый  · n=1  · manavadharmashastra
+- умом  · n=1  · mahabharata-aranyakaparva
+- видение  · n=1  · rigveda
+- поэтические произведения  · n=1  · rigveda
+- сочинить  · n=1  · rigveda
+- силу видения  · n=1  · rigveda
+- поэтическим видениям  · n=1  · rigveda
+- силой прозрения  · n=1  · rigveda
+- произведениями (И) озарениями  · n=1  · rigveda
+- замыслам  · n=1  · rigveda
+- произведении  · n=1  · rigveda
+- поэтические мысли  · n=1  · rigveda
+- намерением  · n=1  · rigveda
+- молитвам  · n=1  · rigveda
+- уму  · n=1  · mahabharata-dronaparva
+- произведениями  · n=1  · rigveda
+- помыслам  · n=1  · rigveda
+- замысел  · n=1  · rigveda
+- Молитвами  · n=1  · rigveda
+- поэтическими произведениями  · n=1  · rigveda
+- молитве  · n=1  · rigveda
+- для (победы) в поэтическом искусстве  · n=1  · rigveda
+- ум  · n=1  · gitarthasamgraha-abhinavagupta
+- мыслями  · n=1  · rigveda
+- хотим получить  · n=1  · rigveda
+- Рассматривая  · n=1  · rigveda
+- поэтических прозрений  · n=1  · rigveda
+- силе видения  · n=1  · atharvaveda
+- размышление  · n=1  · br-up
+- поэтическая речь  · n=1  · rigveda
+- поэтическую мысль  · n=1  · rigveda
+- состоянии ума  · n=1  · hatha-yoga-pradipika
+- состояние ума  · n=1  · hatha-yoga-pradipika
+- умением  · n=1  · atharvaveda
+- умыслы  · n=1  · atharvaveda
+- поэтическому озарению  · n=1  · atharvaveda
+- медитации  · n=1  · gitartha-samgraha_yamunacharya
+
+### `DI-matAm` — dhī-matām  (n=1)
+
+- мудрых  · n=1  · bhagavadgita-radha
+
+### `DIBi` — dhībhi  (n=4)
+
+- с поэтическими мыслями  · n=2  · rigveda
+- помыслами  · n=1  · rigveda
+- с помощью молитв  · n=1  · rigveda
+
+### `DIBiH` — dhībhiḥ  (n=20)
+
+- молитвами  · n=4  · rigveda, rigveda, rigveda
+- молитвы  · n=3  · rigveda, rigveda
+- силы прозрения  · n=2  · rigveda, rigveda
+- поэтические мысли  · n=2  · rigveda
+- силами прозрения  · n=1  · rigveda
+- силами поэтического видения  · n=1  · rigveda
+- в ответ на молитвы  · n=1  · rigveda
+- (Своими) молитвами  · n=1  · rigveda
+- поэтическими мыслями  · n=1  · rigveda
+- помыслами  · n=1  · rigveda
+- произведения  · n=1  · rigveda
+- молитв  · n=1  · rigveda
+- знаниям  · n=1  · atharvaveda
+
+### `DIBir` — dhībhir  (n=3)
+
+- видениями  · n=2  · rigveda
+- поэтическими произведениями  · n=1  · rigveda
+
+### `DIH` — dhīḥ  (n=12)
+
+- молитва  · n=4  · rigveda, rigveda, atharvaveda
+- поэтическая мысль  · n=4  · rigveda, rigveda, rigveda
+- благоразумие  · n=1  · manavadharmashastra
+- вдохновение  · n=1  · rigveda
+- разум  · n=1  · gitarthasamgraha-abhinavagupta
+- считает  · n=1  · gitarthasamgraha-abhinavagupta
+
+### `DIjavaH` — dhījavaḥ  (n=1)
+
+- поторапливаемые молитвой  · n=1  · rigveda
+
+### `DIjavana` — dhījavana  (n=2)
+
+- возбуждающие силу прозрения  · n=1  · rigveda
+- возбуждаешь поэтическую мысль  · n=1  · rigveda
+
+### `DIjavanaM` — dhījavanaṃ  (n=2)
+
+- вдохновляющему поэтическую мысль  · n=1  · rigveda
+- вдохновляющему  · n=1  · rigveda
+
+### `DIjuvaH` — dhījuvaḥ  (n=1)
+
+- вдохновленные молитвой  · n=1  · rigveda
+
+### `DIm` — dhīm  (n=1)
+
+- мудрый  · n=1  · mahabharata-ashramavasikaparva
+
+### `DImAn` — dhīmān  (n=61)
+
+- мудрый  · n=45  · mahabharata-aranyakaparva, mahabharata-adiparva, ramayana-sundarakanda, mahabharata-dronaparva, mahabharata-shantiparva, mahabharata-bhishmaparva, mahabharata-udyogaparva, mahabharata-shalyaparva, mahabharata-ashvamedhikaparva, mahabharata-sabhaparva, raghuvamsha, mahabharata-ashramavasikaparva
+- Мудрый  · n=5  · mahabharata-aranyakaparva, ramayana-ayodhyakanda
+- сиятельный  · n=1  · ramayana-aranyakanda
+- мудр  · n=1  · mahabharata-aranyakaparva
+- мудрец  · n=1  · mahabharata-aranyakaparva
+- Дхиман  · n=1  · mahabharata-adiparva
+- славный  · n=1  · mahabharata-adiparva
+- разумный  · n=1  · mahabharata-dronaparva
+- одаренный большим умом  · n=1  · mahabharata-dronaparva
+- умный  · n=1  · mahabharata-shalyaparva
+- мудрому  · n=1  · mahabharata-ashvamedhikaparva
+- Завоевателю богатств  · n=1  · mahabharata-ashvamedhikaparva
+- мудрого  · n=1  · mahabharata-ashramavasikaparva
+
+### `DImahe` — dhīmahe  (n=1)
+
+- приобретем  · n=1  · rigveda
+
+### `DImahi` — dhīmahi  (n=28)
+
+- размышляем  · n=4  · br-up, ch-up, mai-up
+- хотим  · n=2  · rigveda, atharvaveda
+- хотим окружить  · n=2  · rigveda, atharvaveda
+- оказаться  · n=2  · rigveda
+- хотим встретить  · n=2  · rigveda
+- Мы помещаем  · n=1  · rigveda
+- овладеть  · n=1  · rigveda
+- хотим поставить  · n=1  · rigveda
+- Хотим принять  · n=1  · rigveda
+- хотим прогнать  · n=1  · rigveda
+- создать  · n=1  · rigveda
+- получить  · n=1  · rigveda
+- мы хотели б воспользоваться  · n=1  · rigveda
+- хотели бы получить  · n=1  · rigveda
+- хотим получить  · n=1  · rigveda
+- устраиваем  · n=1  · rigveda
+- Да получим  · n=1  · rigveda
+- да получим мы  · n=1  · rigveda
+- созерцаем  · n=1  · devi-gita
+- хотим сложить  · n=1  · rigveda
+- получим  · n=1  · atharvaveda
+
+### `DIman` — dhīman  (n=37)
+
+- мудрый  · n=26  · mahabharata-ashramavasikaparva, ramayana-sundarakanda, mahabharata-aranyakaparva, mahabharata-adiparva, mahabharata-dronaparva, mahabharata-sabhaparva, mahabharata-shantiparva, manavadharmashastra, mahabharata-shalyaparva, mahabharata-ashvamedhikaparva, mahabharata-virataparva, mahabharata-striparva, mahabharata-mausalaparva, mahabharata-svargarohanikaparva, mahabharata-mahaprasthanikaparva
+- премудрый  · n=3  · mahabharata-aranyakaparva, mahabharata-adiparva, mahabharata-mahaprasthanikaparva
+- Мудрый  · n=2  · ramayana-aranyakanda, mahabharata-ashramavasikaparva
+- мудрец  · n=2  · buddhacharita, mahabharata-ashvamedhikaparva
+- о мудрый  · n=1  · buddhacharita
+- наделенный мудростью  · n=1  · mahabharata-ashramavasikaparva
+- Многомудрый  · n=1  · mahabharata-ashramavasikaparva
+- искусный воин  · n=1  · mahabharata-sauptikaparva
+
+### `DImant` — dhīmant  (n=31)
+
+- мудрый  · n=18  · mahabharata-adiparva, mahabharata-ashvamedhikaparva, mahabharata-sabhaparva, mahabharata-udyogaparva, mahabharata-shantiparva, ramayana-sundarakanda, mahabharata-aranyakaparva
+- мудрого  · n=4  · ramayana-sundarakanda, mahabharata-aranyakaparva, mahabharata-udyogaparva, mahabharata-ashramavasikaparva
+- одаренный мудростью  · n=2  · mahabharata-shalyaparva
+- мудрой  · n=1  · ramayana-sundarakanda
+- с Рамой  · n=1  · ramayana-balakanda
+- Славному  · n=1  · ramayana-balakanda
+- мудрец  · n=1  · mahabharata-aranyakaparva
+- премудрого  · n=1  · mahabharata-dronaparva
+- мудрому  · n=1  · mahabharata-karnaparva
+- великий  · n=1  · mahabharata-shalyaparva
+
+### `DImat` — dhīmat  (n=219)
+
+- мудрый  · n=61  · mahabharata-adiparva, mahabharata-aranyakaparva, mahabharata-ashvamedhikaparva, ramayana-ayodhyakanda, mahabharata-udyogaparva, mahabharata-karnaparva, mahabharata-shalyaparva, mahabharata-shantiparva, ramayana-balakanda, mahabharata-bhishmaparva, ramayana-sundarakanda, mahabharata-dronaparva, gitarthasamgraha-abhinavagupta, mahabharata-ashramavasikaparva, bhagavadgita-1914, bhagavadgity, mahabharata-sauptikaparva, mahabharata-mausalaparva
+- мудрого  · n=52  · mahabharata-adiparva, mahabharata-sabhaparva, ramayana-balakanda, mahabharata-aranyakaparva, ramayana-sundarakanda, mahabharata-ashvamedhikaparva, mahabharata-ashramavasikaparva, mahabharata-bhishmaparva, mahabharata-dronaparva, mahabharata-shalyaparva, ramayana-aranyakanda, mahabharata-udyogaparva, mahabharata-karnaparva, mahabharata-mausalaparva, mahabharata-svargarohanikaparva
+- мудрым  · n=14  · mahabharata-udyogaparva, mahabharata-shalyaparva, mahabharata-ashvamedhikaparva, mahabharata-shantiparva, ramayana-balakanda, mahabharata-aranyakaparva, mahabharata-adiparva, mahabharata-bhishmaparva, bhagavadgita-prabhupada, mahabharata-virataparva
+- мудрому  · n=7  · mahabharata-adiparva, mahabharata-bhishmaparva, mahabharata-virataparva, ramayana-sundarakanda
+- мудреца  · n=6  · ramayana-balakanda, ramayana-ayodhyakanda, mahabharata-aranyakaparva, mahabharata-adiparva, hatha-yoga-pradipika
+- мудрых  · n=6  · mahabharata-aranyakaparva, mahabharata-adiparva, mahabharata-udyogaparva, bhagavadgity, bhagavadgita-smirnov, bhagavadgita-sharma
+- премудрый  · n=5  · mahabharata-aranyakaparva, mahabharata-ashramavasikaparva
+- Мудрый  · n=4  · mahabharata-aranyakaparva, ramayana-ayodhyakanda, buddhacharita
+- мудрец  · n=4  · mahabharata-aranyakaparva, ramayana-balakanda, mahabharata-ashvamedhikaparva
+- разумным  · n=4  · mahabharata-bhishmaparva, bhagavadgita-erman, bhagavadgita-sharma, bhagavadgita-radha
+- мудрая  · n=2  · ramayana-ayodhyakanda, ramayana-sundarakanda
+- Магхаваном  · n=2  · ramayana-aranyakanda
+- мудрые  · n=2  · mahabharata-aranyakaparva
+- многомудрого  · n=2  · mahabharata-aranyakaparva, mahabharata-ashvamedhikaparva
+- премудрым  · n=2  · mahabharata-aranyakaparva
+- наделенных мудростью  · n=2  · mahabharata-bhishmaparva, bhagavadgita-erman
+- искусным  · n=2  · ramanuja_gitabhashya, mahabharata-ashvamedhikaparva
+- понятливый  · n=2  · bhagavadgita-smirnov
+- многомудрый  · n=2  · mahabharata-karnaparva, mahabharata-ashvamedhikaparva
+- мудрецов  · n=1  · mahabharata-adiparva
+- Мудростью  · n=1  · ramayana-ayodhyakanda
+- Рама  · n=1  · ramayana-ayodhyakanda
+- поблекшим  · n=1  · ramayana-ayodhyakanda
+- Сиятельного  · n=1  · ramayana-ayodhyakanda
+- Мудрого  · n=1  · ramayana-aranyakanda
+- великого  · n=1  · ramayana-balakanda
+- великий мудрец  · n=1  · ramayana-balakanda
+- Лучшему из мудрецов  · n=1  · ramayana-balakanda
+- Великого мудреца  · n=1  · ramayana-balakanda
+- Пущенных  · n=1  · ramayana-balakanda
+- хитроумный  · n=1  · ramayana-balakanda
+- высоких духом  · n=1  · ramayana-balakanda
+- мудреце  · n=1  · mahabharata-aranyakaparva
+- вещим  · n=1  · mahabharata-bhishmaparva
+- наделенный мудростью  · n=1  · mahabharata-dronaparva
+- премудрого  · n=1  · mahabharata-dronaparva
+- мудрецу  · n=1  · buddhacharita
+- мудростью  · n=1  · mahabharata-udyogaparva
+- славном  · n=1  · gitarthasamgraha-abhinavagupta
+- умным  · n=1  · bhagavadgita-burba
+- умных  · n=1  · bhagavadgita-burba
+- богатых прозреньем  · n=1  · ramanuja_gitabhashya
+- БОГАТЫХ ПРОЗРЕНЬЕМ  · n=1  · ramanuja_gitabhashya
+- искуснымъ  · n=1  · bhagavadgita-1788
+- ученаго  · n=1  · bhagavadgita-1788
+- искусно  · n=1  · bhagavadgita-sementsov
+- обильных знаньем  · n=1  · bhagavadgita-sementsov
+- искусный  · n=1  · bhagavadgita-1909
+- тех, кто наделен великой мудростью  · n=1  · bhagavadgita-prabhupada
+- глубоко постигших духовную науку  · n=1  · bhagavadgita-prabhupada
+- одаренных умом  · n=1  · mahabharata-shalyaparva
+- одаренный изобретательным умом  · n=1  · mahabharata-shalyaparva
+- одаренный мудростью  · n=1  · mahabharata-shalyaparva
+- одаренному умом  · n=1  · mahabharata-shalyaparva
+- одаренным большим умом  · n=1  · mahabharata-shalyaparva
+- мудрое  · n=1  · mai-up
+- мудром  · n=1  · mahabharata-mahaprasthanikaparva
+
+### `DImatA` — dhīmatā  (n=30)
+
+- мудрым  · n=12  · mahabharata-udyogaparva, ramayana-sundarakanda, mahabharata-dronaparva, mahabharata-shalyaparva, ramayana-ayodhyakanda, mahabharata-bhishmaparva, mahabharata-karnaparva
+- мудрый  · n=9  · mahabharata-aranyakaparva, ramayana-ayodhyakanda, mahabharata-bhishmaparva, ramayana-balakanda, mahabharata-udyogaparva
+- мудрого  · n=3  · mahabharata-aranyakaparva, mahabharata-sabhaparva
+- Мудрого  · n=1  · ramayana-ayodhyakanda
+- умным  · n=1  · manavadharmashastra
+- премудрый  · n=1  · mahabharata-aranyakaparva
+- вещим  · n=1  · mahabharata-bhishmaparva
+- одаренным мудростью  · n=1  · mahabharata-dronaparva
+- многомудрый  · n=1  · mahabharata-ashvamedhikaparva
+
+### `DImatAMvara` — dhīmatāṃ vara  (n=2)
+
+- лучший из мудрых  · n=2  · mahabharata-adiparva
+
+### `DImatAm` — dhīmatām  (n=2)
+
+- мудрых  · n=1  · bhagavadgita-1914
+- мудреца  · n=1  · bhagavadgita-1909
+
+### `DImata` — dhīmata  (n=15)
+
+- мудрого  · n=11  · mahabharata-dronaparva, mahabharata-ashvamedhikaparva, mahabharata-adiparva, mahabharata-udyogaparva, mahabharata-karnaparva, mahabharata-sabhaparva
+- мудрый  · n=1  · mahabharata-adiparva
+- мудрому  · n=1  · ramayana-ayodhyakanda
+- моего  · n=1  · ramayana-ayodhyakanda
+- царь  · n=1  · ramayana-ayodhyakanda
+
+### `DImataH` — dhīmataḥ  (n=41)
+
+- мудрого  · n=21  · mahabharata-adiparva, mahabharata-aranyakaparva, ramayana-ayodhyakanda, mahabharata-sabhaparva, ramayana-sundarakanda, mahabharata-dronaparva, mahabharata-udyogaparva, mahabharata-karnaparva, mahabharata-ashvamedhikaparva, mahabharata-virataparva, mahabharata-ashramavasikaparva
+- мудрый  · n=5  · mahabharata-adiparva, ramayana-sundarakanda, mahabharata-aranyakaparva, mahabharata-dronaparva, mahabharata-udyogaparva
+- мудреца  · n=4  · mahabharata-aranyakaparva, mahabharata-adiparva
+- мудрым  · n=2  · mahabharata-adiparva, ramayana-balakanda
+- мудр  · n=2  · ramayana-ayodhyakanda, mahabharata-udyogaparva
+- (пропущено)  · n=1  · mahabharata-adiparva
+- послушный  · n=1  · ramayana-ayodhyakanda
+- стрелу  · n=1  · ramayana-aranyakanda
+- Мудрого  · n=1  · ramayana-balakanda
+- наделенной разумом  · n=1  · mahabharata-aranyakaparva
+- многомудрого  · n=1  · mahabharata-karnaparva
+- мудрому  · n=1  · mahabharata-sabhaparva
+
+### `DImate` — dhīmate  (n=8)
+
+- мудрому  · n=5  · mahabharata-sabhaparva, ramayana-balakanda, mahabharata-udyogaparva, mahabharata-shalyaparva
+- премудрого  · n=2  · buddhacharita
+- одаренному мудростью  · n=1  · mahabharata-dronaparva
+
+### `DInAm` — dhīnām  (n=6)
+
+- молитв  · n=3  · rigveda, rigveda
+- мыслей  · n=2  · rigveda
+- поэтических мыслей  · n=1  · rigveda
+
+### `DInaH` — dhīnaḥ  (n=1)
+
+- над  · n=1  · ramayana-ayodhyakanda
+
+### `DIrA` — dhīrā  (n=8)
+
+- Мудрые  · n=4  · rigveda, rigveda, kat-up
+- мудрые  · n=3  · rigveda, rigveda, atharvaveda
+- Смиренно  · n=1  · ramayana-ayodhyakanda
+
+### `DIrAH` — dhīrāḥ  (n=22)
+
+- мудрые  · n=9  · rigveda, kena-up, rigveda, mahabharata-adiparva, rigveda, mahabharata-ashvamedhikaparva, mahabharata-sabhaparva
+- Мудрые  · n=5  · rigveda, rigveda, atharvaveda, mun-up
+- мудрецы  · n=2  · rigveda
+- стойкие  · n=2  · shatakatrayam-serebryakov
+- мастера  · n=1  · rigveda
+- стойкий  · n=1  · mahabharata-udyogaparva
+- добродетельные  · n=1  · shatakatrayam-serebryakov
+- мужественные люди  · n=1  · shatakatrayam-serebryakov
+
+### `DIrARi` — dhīrāṇi  (n=1)
+
+- Уверенной  · n=1  · buddhacharita
+
+### `DIrARãM` — dhīrāṇãṃ  (n=1)
+
+- терпеливыми  · n=1  · hatha-yoga-pradipika
+
+### `DIrAsa` — dhīrāsa  (n=1)
+
+- мудрые  · n=1  · rigveda
+
+### `DIrAsaH` — dhīrāsaḥ  (n=1)
+
+- мудрые  · n=1  · rigveda
+
+### `DIrAtmA` — dhīrātmā  (n=1)
+
+- стойкий душою  · n=1  · mahabharata-shalyaparva
+
+### `DIrAtman` — dhīrātman  (n=1)
+
+- верный долгу  · n=1  · ramayana-ayodhyakanda
+
+### `DIrItarA` — dhīrītarā  (n=1)
+
+- искусно  · n=1  · atharvaveda
+
+### `DIra` — dhīra  (n=190)
+
+- мудрый  · n=35  · rigveda, kat-up, rigveda, mahabharata-udyogaparva, ramanuja_gitabhashya, mahabharata-aranyakaparva, mahabharata-bhishmaparva, bhagavadgita-erman, ramayana-aranyakanda, rigveda, mahabharata-adiparva, mahabharata-dronaparva, rigveda, gitarthasamgraha-abhinavagupta, rigveda, bhagavadgita-1788, mahabharata-sabhaparva, raghuvamsha, atharvaveda, atharvaveda
+- стойкий  · n=16  · ramayana-sundarakanda, buddhacharita, gitarthasamgraha-abhinavagupta, bhagavadgity, bhagavadgita-smirnov, shatakatrayam, mahabharata-udyogaparva, bhagavadgita-burba, bhagavadgita-radha, br-up
+- мудрые  · n=13  · mahabharata-ashvamedhikaparva, rigveda, rigveda, rigveda, rigveda, gitarthasamgraha-abhinavagupta, atharvaveda, mun-up
+- Мудрые  · n=9  · rigveda, rigveda, rigveda, ramayana-balakanda, rigveda, mahabharata-ashvamedhikaparva
+- разумный  · n=6  · mahabharata-bhishmaparva, bhagavadgita-erman, mahabharata-aranyakaparva, kat-up
+- мудрых  · n=5  · rigveda, isha-up, mahabharata-udyogaparva
+- мудрецам  · n=5  · kat-up, shv-up
+- стойкие  · n=4  · mahabharata-aranyakaparva, mahabharata-ashvamedhikaparva, devi-gita, shatakatrayam
+- Мудрый  · n=4  · mahabharata-ashvamedhikaparva, rigveda, atharvaveda
+- мудр  · n=4  · mahabharata-udyogaparva, rigveda, atharvaveda
+- мудрецы  · n=4  · mun-up, mahabharata-ashvamedhikaparva, br-up
+- разумными  · n=4  · mun-up, kat-up, mai-up
+- искусный  · n=3  · rigveda, rigveda
+- мудрец  · n=3  · rigveda, gitarthasamgraha-abhinavagupta, kat-up
+- решительный  · n=2  · ramayana-aranyakanda, buddhacharita
+- твердый  · n=2  · mahabharata-aranyakaparva, bhagavadgita-1914
+- умный  · n=2  · rigveda, rigveda
+- разумного  · n=2  · mahabharata-bhishmaparva, bhagavadgita-erman
+- стойкая  · n=2  · buddhacharita, gitagovinda
+- невозмутимый  · n=2  · buddhacharita, kumarasambhava
+- стоек  · n=2  · buddhacharita, shatakatrayam-serebryakov
+- самообуздан  · n=2  · mahabharata-udyogaparva
+- мудры  · n=2  · rigveda
+- стойкого  · n=2  · bhagavadgita-burba, mahabharata-ashvamedhikaparva
+- постоянен  · n=2  · bhagavadgita-1914, bhagavadgity
+- спокоен  · n=2  · shatakatrayam
+- мудрая  · n=1  · mahabharata-adiparva
+- собравшись с силами  · n=1  · ramayana-ayodhyakanda
+- мужественный  · n=1  · ramayana-ayodhyakanda
+- добрые  · n=1  · ramayana-ayodhyakanda
+- стойкий разумом  · n=1  · ramayana-aranyakanda
+- твердого духом  · n=1  · ramayana-balakanda
+- мудрого  · n=1  · ramayana-balakanda
+- Мудрец  · n=1  · ramayana-balakanda
+- сильный духом  · n=1  · mahabharata-aranyakaparva
+- стойкому духом  · n=1  · mahabharata-aranyakaparva
+- владеющие  · n=1  · mahabharata-aranyakaparva
+- знатока  · n=1  · rigveda
+- упорствующей  · n=1  · kama-sutra
+- рассудителен  · n=1  · mahabharata-adiparva
+- храбреца  · n=1  · mahabharata-bhishmaparva
+- смысла  · n=1  · buddhacharita
+- стоек духом  · n=1  · buddhacharita
+- видимо  · n=1  · buddhacharita
+- твердость  · n=1  · buddhacharita
+- серьезность  · n=1  · buddhacharita
+- решительно  · n=1  · buddhacharita
+- стойкий духом  · n=1  · buddhacharita
+- тебе  · n=1  · buddhacharita
+- покоя  · n=1  · buddhacharita
+- стойкий человек  · n=1  · mahabharata-udyogaparva
+- самообладанием  · n=1  · mahabharata-udyogaparva
+- мудрый человек  · n=1  · mahabharata-udyogaparva
+- премудрые  · n=1  · mahabharata-udyogaparva
+- над  · n=1  · mahabharata-udyogaparva
+- сильный  · n=1  · bhagavadgita-1914
+- Стойкий  · n=1  · bhagavadgita-smirnov
+- безсмертнымъ  · n=1  · bhagavadgita-1909
+- твердо вѣритъ  · n=1  · bhagavadgita-1909
+- не смущаетъ  · n=1  · bhagavadgita-1909
+- терпеливого  · n=1  · bhagavadgita-prabhupada
+- непоколебим  · n=1  · bhagavadgita-prabhupada
+- разумный человек  · n=1  · bhagavadgita-radha
+- рассудительный  · n=1  · bhagavadgita-radha
+- умелые  · n=1  · rigveda
+- Твердый  · n=1  · mahabharata-shalyaparva
+- твердо  · n=1  · mahabharata-shalyaparva
+- мудрейший  · n=1  · mahabharata-ashvamedhikaparva
+- мудрый, неколебимый  · n=1  · mahabharata-sabhaparva
+- смиренная  · n=1  · raghuvamsha
+- мудрое  · n=1  · atharvaveda
+- отважные  · n=1  · shatakatrayam
+- величественно  · n=1  · shatakatrayam-serebryakov
+- разбирается  · n=1  · atharvaveda
+- крупные  · n=1  · amaru-shataka
+- тяжелые  · n=1  · amaru-shataka
+- тихимъ  · n=1  · megha-duta
+
+### `DIra-samIra` — dhīra-samīra  (n=3)
+
+- тихим ветром  · n=3  · gitagovinda
+
+### `DIraH` — dhīraḥ  (n=28)
+
+- мудрый  · n=7  · ramayana-aranyakanda, mahabharata-bhishmaparva, mahabharata-udyogaparva, rigveda, bhagavadgita-sementsov, rigveda, raghuvamsha
+- стойкий  · n=3  · bhagavadgita-smirnov, bhagavadgita-prabhupada, shatakatrayam-serebryakov
+- храбрый  · n=2  · bhagavadgita-sharma, raghuvamsha
+- умелый  · n=2  · rigveda
+- твердо  · n=1  · ramayana-aranyakanda
+- решителен  · n=1  · mahabharata-aranyakaparva
+- внимательный  · n=1  · rigveda
+- мастер  · n=1  · rigveda
+- стойкость  · n=1  · buddhacharita
+- искусно  · n=1  · rigveda
+- Кто твердо сему веритъ  · n=1  · bhagavadgita-1788
+- твердъ  · n=1  · bhagavadgita-1788
+- мудреца  · n=1  · bhagavadgita-sementsov
+- Мудрые  · n=1  · bhagavadgita-sharma
+- трезвомыслящий человек  · n=1  · bhagavadgita-prabhupada
+- благородные души  · n=1  · bhagavadgita-prabhupada
+- искусный  · n=1  · atharvaveda
+- великий мудрец  · n=1  · kat-up
+
+### `DIraM` — dhīraṃ  (n=2)
+
+- на шаг  · n=1  · buddhacharita
+- смело  · n=1  · mahabharata-shalyaparva
+
+### `DIraRAsaH` — dhīraṇāsaḥ  (n=1)
+
+- кому поэтическая мысль — наслаждение  · n=1  · rigveda
+
+### `DIram` — dhīram  (n=4)
+
+- разумного  · n=1  · rigveda
+- мудрому  · n=1  · rigveda
+- мудрец  · n=1  · bhagavadgita-sementsov
+- непоколебимым  · n=1  · bhagavadgita-sharma
+
+### `DIranizWitakarmANga` — dhīraniṣṭhitakarmāṅga  (n=1)
+
+- которые были обретены стойким подвижничеством  · n=1  · ramayana-sundarakanda
+
+### `DIraparAkrama` — dhīraparākrama  (n=1)
+
+- наделенной стойкой доблестью  · n=1  · ramayana-sundarakanda
+
+### `DIras` — dhīras  (n=1)
+
+- Стойкий  · n=1  · bhagavadgita-burba
+
+### `DIrasya` — dhīrasya  (n=3)
+
+- мудрому  · n=1  · rigveda
+- мудрого  · n=1  · rigveda
+- стойкого  · n=1  · mahabharata-udyogaparva
+
+### `DIratara` — dhīratara  (n=4)
+
+- более искушенные  · n=2  · atharvaveda
+- стоек  · n=1  · ramayana-aranyakanda
+- более мудрый  · n=1  · atharvaveda
+
+### `DIrataram` — dhīrataram  (n=1)
+
+- мудрым  · n=1  · ramayana-aranyakanda
+
+### `DIreRa` — dhīreṇa  (n=2)
+
+- громовым  · n=1  · raghuvamsha
+- мудрый  · n=1  · mahabharata-virataparva
+
+### `DIro` — dhīro  (n=1)
+
+- стойкий  · n=1  · mahabharata-udyogaparva
+
+### `DIryA` — dhīryā  (n=1)
+
+- в мудрости  · n=1  · rigveda
+
+### `DItA` — dhītā  (n=1)
+
+- следит за мыслями  · n=1  · rigveda
+
+### `DItAni` — dhītāni  (n=1)
+
+- заветных целей  · n=1  · rigveda
+
+### `DItI` — dhītī  (n=2)
+
+- видение  · n=2  · rigveda
+
+### `DIta` — dhīta  (n=1)
+
+- высосано  · n=1  · atharvaveda
+
+### `DItam` — dhītam  (n=2)
+
+- мечтали  · n=1  · rigveda
+- видение  · n=1  · rigveda
+
+### `DItaya` — dhītaya  (n=7)
+
+- мысли  · n=2  · rigveda
+- молитв  · n=2  · rigveda
+- молитвы  · n=1  · rigveda
+- поэтические мысли  · n=1  · rigveda
+- стихи  · n=1  · rigveda
+
+### `DItayaH` — dhītayaḥ  (n=17)
+
+- молитвы  · n=7  · rigveda, rigveda, rigveda
+- поэтические мысли  · n=3  · rigveda, rigveda
+- Поэтические мысли  · n=2  · rigveda
+- молитв  · n=2  · rigveda
+- произведения  · n=1  · rigveda
+- мысли  · n=1  · rigveda
+- Мысли  · n=1  · rigveda
+
+### `DItaye` — dhītaye  (n=2)
+
+- для молитвы  · n=2  · rigveda
+
+### `DItayo` — dhītayo  (n=1)
+
+- молитвы  · n=1  · rigveda
+
+### `DIti` — dhīti  (n=30)
+
+- молитвами  · n=4  · rigveda, rigveda, rigveda, atharvaveda
+- Молитвы  · n=2  · rigveda
+- произведения  · n=2  · rigveda, rigveda
+- мысль  · n=2  · rigveda
+- поэтическая мысль  · n=2  · rigveda
+- цели  · n=2  · rigveda
+- озарение  · n=2  · atharvaveda
+- мудрость  · n=1  · rigveda
+- сила видения  · n=1  · rigveda
+- поэзия  · n=1  · rigveda
+- стихотворение  · n=1  · rigveda
+- поэтическое вдохновение  · n=1  · rigveda
+- озарению  · n=1  · rigveda
+- произведение  · n=1  · rigveda
+- поэтическими мыслями  · n=1  · rigveda
+- Восприятие  · n=1  · rigveda
+- поэтические мысли  · n=1  · rigveda
+- вдохновение  · n=1  · rigveda
+- произведении  · n=1  · rigveda
+- намерениями  · n=1  · rigveda
+- познание  · n=1  · rigveda
+
+### `DItiBi` — dhītibhi  (n=2)
+
+- молитвами  · n=1  · rigveda
+- со молитвами  · n=1  · rigveda
+
+### `DItiBiH` — dhītibhiḥ  (n=21)
+
+- молитвами  · n=8  · rigveda, rigveda, rigveda, rigveda, rigveda
+- силами прозрения  · n=3  · rigveda, rigveda
+- силой поэтических творений  · n=2  · rigveda
+- помыслами  · n=1  · rigveda
+- по заботам  · n=1  · rigveda
+- поэтическими произведениями  · n=1  · rigveda
+- мыслями  · n=1  · rigveda
+- с произведениями  · n=1  · rigveda
+- с помощью молитв  · n=1  · rigveda
+- произведениям  · n=1  · rigveda
+- поэтические мысли  · n=1  · rigveda
+
+### `DItiBis` — dhītibhis  (n=2)
+
+- Поэтическими мыслями  · n=2  · rigveda
+
+### `DItiH` — dhītiḥ  (n=2)
+
+- Поэтическая мысль  · n=1  · rigveda
+- озарение  · n=1  · rigveda
+
+### `DItiM` — dhītiṃ  (n=1)
+
+- произведение  · n=1  · rigveda
+
+### `DItim` — dhītim  (n=2)
+
+- силу прозрения  · n=1  · rigveda
+- произведение  · n=1  · rigveda
+
+### `DItir` — dhītir  (n=2)
+
+- сила видения  · n=1  · rigveda
+- намерение  · n=1  · atharvaveda
+
+### `DIty` — dhīty  (n=1)
+
+- духом  · n=1  · rigveda
+
+### `DIvAna` — dhīvāna  (n=1)
+
+- вдохновенные  · n=1  · atharvaveda
+
+### `DIvaSa` — dhīvaśa  (n=1)
+
+- сознание возвышается  · n=1  · shiva-sutry_sharma
+
+### `DIvantaH` — dhīvantaḥ  (n=1)
+
+- наделенные поэтическим даром  · n=1  · rigveda
+
+### `DIvantam` — dhīvantam  (n=1)
+
+- наделенного видением  · n=1  · rigveda
+
+### `DIvara` — dhīvara  (n=2)
+
+- рыбак  · n=2  · shatakatrayam, shatakatrayam-serebryakov
+
+### `DIvataH` — dhīvataḥ  (n=1)
+
+- поэта  · n=1  · rigveda
+
+### `DIvato-DIvataH` — dhīvato-dhīvataḥ  (n=1)
+
+- каждого наделенного поэтическим даром  · n=1  · rigveda
+
+### `DIyatAm` — dhīyatām  (n=1)
+
+- да проявится  · n=1  · mahabharata-ashvamedhikaparva
+
+### `DIyate` — dhīyate  (n=14)
+
+- наделяется  · n=2  · rigveda
+- направляется  · n=2  · mahabharata-adiparva
+- охоч  · n=1  · mahabharata-aranyakaparva
+- ожидают  · n=1  · rigveda
+- появляться  · n=1  · mahabharata-dronaparva
+- устраивается  · n=1  · rigveda
+- зиждется  · n=1  · mahabharata-udyogaparva
+- склоняется  · n=1  · mahabharata-udyogaparva
+- принял  · n=1  · mahabharata-udyogaparva
+- обращается  · n=1  · mahabharata-udyogaparva
+- помещают  · n=1  · rigveda
+- представить  · n=1  · mahabharata-virataparva
+
+### `DIzu` — dhīṣu  (n=3)
+
+- для сил прозрения  · n=2  · rigveda
+- молитвы  · n=1  · rigveda
+
+### `DU` — dhū  (n=3)
+
+- вздыбил  · n=1  · ramayana-sundarakanda
+- сотрясаете  · n=1  · rigveda
+- отряхивая  · n=1  · ch-up
+
+### `DUH` — dhūḥ  (n=3)
+
+- дышло  · n=3  · rigveda
+
+### `DUli` — dhūli  (n=1)
+
+- пыль  · n=1  · shukasaptati
+
+### `DUliDUsara` — dhūlidhūsara  (n=1)
+
+- выпачкала пылью  · n=1  · shukasaptati
+
+### `DUliH` — dhūliḥ  (n=1)
+
+- пыли  · n=1  · shukasaptati
+
+### `DUlim` — dhūlim  (n=1)
+
+- сор  · n=1  · shukasaptati
+
+### `DUmABitAmrAkza` — dhūmābhitāmrākṣa  (n=1)
+
+- с глазами, покрасневшими от дыма  · n=1  · raghuvamsha
+
+### `DUmAH` — dhūmāḥ  (n=1)
+
+- дым  · n=1  · mai-up
+
+### `DUmAd` — dhūmād  (n=1)
+
+- дымом  · n=1  · raghuvamsha
+
+### `DUmAkulArci` — dhūmākulārci  (n=1)
+
+- Яркие языки пламени, Окутанные облаком дыма  · n=1  · ramayana-balakanda
+
+### `DUmAkzI` — dhūmākṣī  (n=2)
+
+- дымноглазая  · n=2  · atharvaveda
+
+### `DUmAruRasamapraBA` — dhūmāruṇasamaprabhā  (n=1)
+
+- блеск утренней зари, подернутой дымкой  · n=1  · mahabharata-adiparva
+
+### `DUmAvali` — dhūmāvali  (n=1)
+
+- струйка дыма  · n=1  · amaru-shataka
+
+### `DUmAvatI` — dhūmāvatī  (n=1)
+
+- Дхумавати  · n=1  · mahabharata-aranyakaparva
+
+### `DUmAya` — dhūmāya  (n=1)
+
+- тлей с коптящим  · n=1  · mahabharata-udyogaparva
+
+### `DUmAyante` — dhūmāyante  (n=4)
+
+- дымятся  · n=2  · mahabharata-bhishmaparva, mahabharata-udyogaparva
+- чадят дымом  · n=1  · mahabharata-udyogaparva
+- задымились  · n=1  · mahabharata-udyogaparva
+
+### `DUmAyayandiSa` — dhūmāyayandiśa  (n=1)
+
+- дымятся стороны света  · n=1  · mahabharata-aranyakaparva
+
+### `DUma` — dhūma  (n=112)
+
+- дым  · n=61  · br-up, ch-up, ramayana-ayodhyakanda, nyaya-bhashya, bhagavadgita-burba, bhagavadgita-1914, bhagavadgita-erman, bhagavadgita-smirnov, mahabharata-ashvamedhikaparva, atharvaveda, atharvaveda, ramayana-sundarakanda, ramayana-balakanda, mahabharata-aranyakaparva, rigveda, kama-sutra, mahabharata-bhishmaparva, buddhacharita, rigveda, rigveda, bhagavadgity, bhagavadgita-sementsov, bhagavadgita-1909, bhagavadgita-radha, rigveda, atharvaveda, atharvaveda, atharvaveda, atharvaveda, shv-up
+- дымом  · n=23  · bhagavadgita-prabhupada, ramayana-aranyakanda, bhagavadgita-sharma, mahabharata-bhishmaparva, ramanuja_gitabhashya, bhagavadgita-sementsov, ramayana-sundarakanda, gitarthasamgraha-abhinavagupta, bhagavadgity, bhagavadgita-erman, bhagavadgita-smirnov, nyaya-bhashya, vedartha-samgraha_ramanuja
+- дыма  · n=13  · ramayana-ayodhyakanda, sankhya-karika, ramayana-sundarakanda, ramayana-aranyakanda, rigveda, ch-up, nyaya-bhashya, mahabharata-ashvamedhikaparva, br-up, raghuvamsha, vedartha-samgraha_ramanuja
+- Дым  · n=4  · mahabharata-bhishmaparva, gitarthasamgraha-abhinavagupta, rigveda, ramanuja_gitabhashya
+- дымомъ  · n=3  · bhagavadgita-1788, bhagavadgity
+- тепла  · n=1  · ramayana-ayodhyakanda
+- дымящейся  · n=1  · ramayana-aranyakanda
+- запах  · n=1  · ramayana-balakanda
+- Дым/пар  · n=1  · bhagavadgita-burba
+- дыму  · n=1  · bhagavadgita-1914
+- Дымом  · n=1  · bhagavadgita-smirnov
+- струйками дыма  · n=1  · atharvaveda
+- пеплом  · n=1  · shatakatrayam
+
+### `DUma-ketu` — dhūma-ketu  (n=1)
+
+- метеору  · n=1  · gitagovinda
+
+### `DUmaDUmra` — dhūmadhūmra  (n=1)
+
+- Серый, как дым  · n=1  · raghuvamsha
+
+### `DUmaDUmropakaRWa` — dhūmadhūmropakaṇṭha  (n=2)
+
+- закопчены дымом  · n=1  · shatakatrayam-serebryakov
+- закопчены дымом от жертвенных огней  · n=1  · shatakatrayam-serebryakov
+
+### `DUmaH` — dhūmaḥ  (n=6)
+
+- дым  · n=4  · bhagavadgita-prabhupada, ramayana-ayodhyakanda, raghuvamsha
+- столб дыма  · n=1  · ramayana-ayodhyakanda
+- мрачную  · n=1  · bhagavadgita-1788
+
+### `DUmaM` — dhūmaṃ  (n=2)
+
+- дым  · n=2  · rigveda
+
+### `DUmaSeza` — dhūmaśeṣa  (n=1)
+
+- дымом заволакивает  · n=1  · raghuvamsha
+
+### `DUmaSiKA` — dhūmaśikhā  (n=2)
+
+- верхи из дыма  · n=2  · atharvaveda
+
+### `DUmaganDa` — dhūmagandha  (n=1)
+
+- запах курений  · n=1  · kau-up
+
+### `DUmaganDi` — dhūmagandhi  (n=1)
+
+- пахнущий дымом  · n=1  · rigveda
+
+### `DUmaiH` — dhūmaiḥ  (n=1)
+
+- клубы дыма  · n=1  · raghuvamsha
+
+### `DUmajAla` — dhūmajāla  (n=2)
+
+- клубы дыма  · n=1  · ramayana-sundarakanda
+- завесой дыма  · n=1  · mahabharata-aranyakaparva
+
+### `DUmajyotiHsalilamarutAM` — dhūmajyotiḥsalilamarutāṃ  (n=1)
+
+- созданье свѣта, воздуха, воды и пара  · n=1  · megha-duta
+
+### `DUmaketana` — dhūmaketana  (n=1)
+
+- гаснущий огонь  · n=1  · raghuvamsha
+
+### `DUmaketu` — dhūmaketu  (n=21)
+
+- Дхумакету  · n=4  · mahabharata-adiparva, ramayana-sundarakanda, mahabharata-ashvamedhikaparva
+- Дымознаменный  · n=3  · mahabharata-ashvamedhikaparva
+- отмеченная дымом  · n=2  · atharvaveda
+- Чье знамя — дым  · n=1  · rigveda
+- дымом-знаменем  · n=1  · rigveda
+- со знаменем-дымом  · n=1  · rigveda
+- с дымом-знамением  · n=1  · rigveda
+- Чье знамя дым  · n=1  · rigveda
+- огонь  · n=1  · mahabharata-adiparva
+- осеняемый дымом вместо знамени  · n=1  · mahabharata-adiparva
+- комета  · n=1  · mahabharata-bhishmaparva
+- кометой  · n=1  · mahabharata-bhishmaparva
+- в пылающий огонь  · n=1  · mahabharata-dronaparva
+- огнем  · n=1  · mahabharata-dronaparva
+- с дымом-знаменем  · n=1  · atharvaveda
+
+### `DUmaketuH` — dhūmaketuḥ  (n=7)
+
+- комета  · n=2  · mahabharata-bhishmaparva, kumarasambhava
+- С дымом-знаменем  · n=1  · rigveda
+- с дымом-знаменем  · n=1  · rigveda
+- пожар  · n=1  · mahabharata-bhishmaparva
+- огонь  · n=1  · mahabharata-dronaparva
+- Дымознаменный  · n=1  · mahabharata-ashvamedhikaparva
+
+### `DUmaketum` — dhūmaketum  (n=2)
+
+- знамя дыма  · n=2  · mahabharata-bhishmaparva
+
+### `DUmaketuriva` — dhūmaketuriva  (n=1)
+
+- точно огонь  · n=1  · mahabharata-dronaparva
+
+### `DUmam` — dhūmam  (n=11)
+
+- дым  · n=8  · rigveda, ramayana-ayodhyakanda, mahabharata-aranyakaparva, mahabharata-udyogaparva, rigveda, ch-up
+- столб дыма  · n=2  · ramayana-ayodhyakanda
+- запах дыма  · n=1  · mahabharata-udyogaparva
+
+### `DUmamayIm` — dhūmamayīm  (n=1)
+
+- дымную  · n=1  · mahabharata-udyogaparva
+
+### `DUmapa` — dhūmapa  (n=1)
+
+- человек, вдыхающий дым  · n=1  · raghuvamsha
+
+### `DUmapraBAmeGapraBAKye` — dhūmaprabhāmeghaprabhākhye  (n=1)
+
+- Дхумапрабха и Мегхапрабха  · n=1  · shukasaptati
+
+### `DUmarAjIH` — dhūmarājīḥ  (n=1)
+
+- столбы дыма  · n=1  · ramayana-sundarakanda
+
+### `DUmaraktanayana` — dhūmaraktanayana  (n=1)
+
+- глазами, красными от дыма  · n=1  · mahabharata-ashvamedhikaparva
+
+### `DUmarudDa` — dhūmaruddha  (n=1)
+
+- окутанных дымом  · n=1  · mahabharata-ashvamedhikaparva
+
+### `DUmas` — dhūmas  (n=1)
+
+- дым  · n=1  · ramayana-ayodhyakanda
+
+### `DUmasaMraktalocana` — dhūmasaṃraktalocana  (n=1)
+
+- с глазами, покрасневшими от дыма  · n=1  · mahabharata-adiparva
+
+### `DUmasaNGAH` — dhūmasaṅghāḥ  (n=1)
+
+- облака дыма  · n=1  · mahabharata-adiparva
+
+### `DUmasaNGa` — dhūmasaṅgha  (n=2)
+
+- массы дыма  · n=1  · mahabharata-adiparva
+- облака дыма  · n=1  · mahabharata-adiparva
+
+### `DUmavadgati` — dhūmavadgati  (n=1)
+
+- подобно дыму  · n=1  · mahabharata-udyogaparva
+
+### `DUmavidyutsamAkulam` — dhūmavidyutsamākulam  (n=1)
+
+- полный дыма и молний  · n=1  · mahabharata-adiparva
+
+### `DUmena` — dhūmena  (n=6)
+
+- дымом  · n=4  · bhagavadgita-radha, rigveda, bhagavadgita-burba
+- дыма  · n=1  · ramayana-balakanda
+- дымомъ  · n=1  · bhagavadgita-1909
+
+### `DUminaH` — dhūminaḥ  (n=1)
+
+- дымные  · n=1  · rigveda
+
+### `DUmo` — dhūmo  (n=1)
+
+- дымом  · n=1  · ch-up
+
+### `DUmodgAra` — dhūmodgāra  (n=1)
+
+- дыму  · n=1  · megha-duta
+
+### `DUmopamAH` — dhūmopamāḥ  (n=1)
+
+- на столбы дыма  · n=1  · ramayana-balakanda
+
+### `DUmorRA` — dhūmorṇā  (n=2)
+
+- Дхуморною  · n=1  · mahabharata-udyogaparva
+- Дхуморна  · n=1  · mahabharata-udyogaparva
+
+### `DUmozmajalanIhAraparamARavaH` — dhūmoṣmajalanīhāraparamāṇavaḥ  (n=2)
+
+- атомы дыма, жара или тумана  · n=1  · sankhya-karika
+- атомы дыма, жара, воды, тумана  · n=1  · sankhya-karika
+
+### `DUmrA` — dhūmrā  (n=1)
+
+- Дхумра  · n=1  · mahabharata-adiparva
+
+### `DUmrAH` — dhūmrāḥ  (n=1)
+
+- подобны дыму  · n=1  · mahabharata-shalyaparva
+
+### `DUmrASva` — dhūmrāśva  (n=1)
+
+- Дхумрашвы  · n=1  · ramayana-balakanda
+
+### `DUmrAkza` — dhūmrākṣa  (n=2)
+
+- Дхумракши  · n=1  · ramayana-sundarakanda
+- Дхумракша  · n=1  · mahabharata-aranyakaparva
+
+### `DUmrAruRam` — dhūmrāruṇam  (n=1)
+
+- багровому дыму подобная  · n=1  · mahabharata-bhishmaparva
+
+### `DUmra` — dhūmra  (n=8)
+
+- окутанный дымом  · n=2  · ramayana-sundarakanda
+- дхумры  · n=1  · ramayana-aranyakanda
+- Дхумры  · n=1  · ramayana-aranyakanda
+- дыму  · n=1  · mahabharata-dronaparva
+- Дхумра  · n=1  · mahabharata-shalyaparva
+- серым  · n=1  · shatakatrayam
+- дымчатый  · n=1  · yotat-up
+
+### `DUmraH` — dhūmraḥ  (n=1)
+
+- багрово-дымный  · n=1  · mahabharata-karnaparva
+
+### `DUmrakeSin` — dhūmrakeśin  (n=1)
+
+- с волосами цвета дыма  · n=1  · ramayana-sundarakanda
+
+### `DUmravarRa` — dhūmravarṇa  (n=1)
+
+- дымчатого цвета  · n=1  · devi-gita
+
+### `DUnav` — dhūnav  (n=1)
+
+- потрясет  · n=1  · rigveda
+
+### `DUnayAmAsa` — dhūnayāmāsa  (n=1)
+
+- начал трясти  · n=1  · mahabharata-aranyakaparva
+
+### `DUnoti` — dhūnoti  (n=2)
+
+- трясет  · n=1  · rigveda
+- колышет  · n=1  · atharvaveda
+
+### `DUnuTa` — dhūnutha  (n=1)
+
+- сотрясаете  · n=1  · rigveda
+
+### `DUnuhi` — dhūnuhi  (n=4)
+
+- сдуй  · n=1  · rigveda
+- стряхни  · n=1  · rigveda
+- Стряхни  · n=1  · rigveda
+- потряси  · n=1  · atharvaveda
+
+### `DUnute` — dhūnute  (n=3)
+
+- сотрясает  · n=3  · rigveda, atharvaveda
+
+### `DUnuze` — dhūnuṣe  (n=2)
+
+- стряхиваешь  · n=2  · rigveda
+
+### `DUp` — dhūp  (n=1)
+
+- затмила  · n=1  · ramayana-sundarakanda
+
+### `DUpASyAnakeSAntaM` — dhūpāśyānakeśāntaṃ  (n=1)
+
+- волосы его, подсушенные благовонными воскурениями  · n=1  · raghuvamsha
+
+### `DUpAnAM` — dhūpānāṃ  (n=1)
+
+- воскурений  · n=1  · ramayana-sundarakanda
+
+### `DUpa` — dhūpa  (n=7)
+
+- благовониями  · n=2  · ramayana-ayodhyakanda, ramayana-sundarakanda
+- ароматами  · n=2  · kama-sutra
+- дымом  · n=1  · ramayana-ayodhyakanda
+- куренья  · n=1  · kama-sutra
+- благоухающие  · n=1  · buddhacharita
+
+### `DUpaganDADivAsita` — dhūpagandhādhivāsita  (n=1)
+
+- возжигали благовония  · n=1  · ramayana-ayodhyakanda
+
+### `DUpaiH` — dhūpaiḥ  (n=1)
+
+- фимиамом  · n=1  · ramayana-balakanda
+
+### `DUpaiScUrRaiSca` — dhūpaiścūrṇaiśca  (n=1)
+
+- ароматами душистых порошков и воскурений  · n=1  · mahabharata-sauptikaparva
+
+### `DUpakAH` — dhūpakāḥ  (n=1)
+
+- продавцы благовоний  · n=1  · ramayana-ayodhyakanda
+
+### `DUpana` — dhūpana  (n=2)
+
+- благовониями  · n=1  · manavadharmashastra
+- воскурений  · n=1  · mahabharata-udyogaparva
+
+### `DUpapAtra` — dhūpapātra  (n=1)
+
+- Фиалами с благовониями  · n=1  · ramayana-balakanda
+
+### `DUpasammUrcitaH` — dhūpasammūrcitaḥ  (n=1)
+
+- Пропитанный благовониями  · n=1  · ramayana-ayodhyakanda
+
+### `DUpasammedana` — dhūpasammedana  (n=1)
+
+- Нет запаха благовоний  · n=1  · ramayana-ayodhyakanda
+
+### `DUpe` — dhūpe  (n=1)
+
+- воскурения  · n=1  · raghuvamsha
+
+### `DUpita` — dhūpita  (n=6)
+
+- окурено  · n=1  · mahabharata-adiparva
+- сандала  · n=1  · ramayana-ayodhyakanda
+- окуренное  · n=1  · ramayana-sundarakanda
+- пропитан благовониями  · n=1  · ramayana-balakanda
+- дымелось  · n=1  · mahabharata-udyogaparva
+- окуриваемую  · n=1  · yotat-up
+
+### `DUr` — dhūr  (n=7)
+
+- бремя  · n=3  · raghuvamsha, mahabharata-udyogaparva
+- дышло  · n=2  · rigveda, rigveda
+- дышла  · n=1  · rigveda
+- бразды правления  · n=1  · mahabharata-ashramavasikaparva
+
+### `DUrgata` — dhūrgata  (n=1)
+
+- находящихся на дышлах  · n=1  · mahabharata-dronaparva
+
+### `DUriya` — dhūriya  (n=2)
+
+- вернуть  · n=2  · mahabharata-udyogaparva
+
+### `DUrjawi` — dhūrjaṭi  (n=1)
+
+- Дхурджати  · n=1  · mahabharata-dronaparva
+
+### `DUrtA` — dhūrtā  (n=1)
+
+- обманщица  · n=1  · shukasaptati
+
+### `DUrtAn` — dhūrtān  (n=1)
+
+- игрокам  · n=1  · ramayana-sundarakanda
+
+### `DUrtAnAm` — dhūrtānām  (n=1)
+
+- искусных  · n=1  · gitagovinda
+
+### `DUrtAya` — dhūrtāya  (n=1)
+
+- мошеннику  · n=1  · devi-gita
+
+### `DUrta` — dhūrta  (n=9)
+
+- хитрец  · n=3  · amaru-shataka, shukasaptati
+- игрокам  · n=1  · ramayana-sundarakanda
+- ловкие  · n=1  · mahabharata-virataparva
+- недостойного  · n=1  · mahabharata-virataparva
+- ловко скрывающийся  · n=1  · mahabharata-virataparva
+- он  · n=1  · amaru-shataka
+- хитрый  · n=1  · amaru-shataka
+
+### `DUrtaH` — dhūrtaḥ  (n=2)
+
+- плут  · n=2  · shukasaptati
+
+### `DUrtagozwI` — dhūrtagoṣṭī  (n=1)
+
+- дурное общество  · n=1  · yotat-up
+
+### `DUrtai` — dhūrtai  (n=1)
+
+- игроками  · n=1  · mahabharata-udyogaparva
+
+### `DUrtaiH` — dhūrtaiḥ  (n=1)
+
+- алчных  · n=1  · shatakatrayam
+
+### `DUrtaka` — dhūrtaka  (n=2)
+
+- Дхуртака  · n=1  · mahabharata-adiparva
+- обманщику  · n=1  · mahabharata-udyogaparva
+
+### `DUrtamAyA` — dhūrtamāyā  (n=3)
+
+- Дхуртамаю  · n=2  · shukasaptati
+- Дхуртамая  · n=1  · shukasaptati
+
+### `DUrtarAjena` — dhūrtarājena  (n=1)
+
+- мошенником  · n=1  · shukasaptati
+
+### `DUrtasya` — dhūrtasya  (n=1)
+
+- хитрецу  · n=1  · shukasaptati
+
+### `DUrtatA` — dhūrtatā  (n=1)
+
+- хитрость  · n=1  · amaru-shataka
+
+### `DUrtatara` — dhūrtatara  (n=1)
+
+- более ловкие  · n=1  · mahabharata-virataparva
+
+### `DUrtayaH` — dhūrtayaḥ  (n=2)
+
+- обманы  · n=2  · rigveda
+
+### `DUrteH` — dhūrteḥ  (n=2)
+
+- от обмана  · n=1  · rigveda
+- обмана  · n=1  · rigveda
+
+### `DUrtena` — dhūrtena  (n=3)
+
+- плут  · n=1  · shukasaptati
+- хитрый  · n=1  · shukasaptati
+- хитрец  · n=1  · amaru-shataka
+
+### `DUrti` — dhūrti  (n=5)
+
+- злобности  · n=2  · rigveda
+- обман  · n=2  · rigveda
+- зло  · n=1  · rigveda
+
+### `DUrtiH` — dhūrtiḥ  (n=2)
+
+- коварство  · n=1  · rigveda
+- злоба  · n=1  · rigveda
+
+### `DUrtikA` — dhūrtikā  (n=1)
+
+- плутовка  · n=1  · shukasaptati
+
+### `DUrtike` — dhūrtike  (n=1)
+
+- Обманщица  · n=1  · shukasaptati
+
+### `DUrto` — dhūrto  (n=1)
+
+- обманщик  · n=1  · shukasaptati
+
+### `DUrv` — dhūrv  (n=2)
+
+- поразят  · n=1  · atharvaveda
+- пусть повредят  · n=1  · atharvaveda
+
+### `DUrvaRe` — dhūrvaṇe  (n=1)
+
+- чтобы сражать  · n=1  · rigveda
+
+### `DUrvantam` — dhūrvantam  (n=2)
+
+- вредящего  · n=2  · rigveda, atharvaveda
+
+### `DUrvanti` — dhūrvanti  (n=2)
+
+- повредят  · n=2  · rigveda
+
+### `DUrvantu` — dhūrvantu  (n=1)
+
+- порешат  · n=1  · rigveda
+
+### `DUrya-vat` — dhūrya-vat  (n=1)
+
+- как привычный к тяжести (могучий бык)  · n=1  · mahabharata-aranyakaparva
+
+### `DUrzad` — dhūrṣad  (n=1)
+
+- сидят на дышле (колесницы)  · n=1  · rigveda
+
+### `DUrzada` — dhūrṣada  (n=2)
+
+- сидящего у дышла  · n=2  · rigveda
+
+### `DUrzadam` — dhūrṣadam  (n=3)
+
+- сидящего у дышла  · n=2  · rigveda
+- сидящему на дышле  · n=1  · rigveda
+
+### `DUrzu` — dhūrṣu  (n=10)
+
+- в оглобли  · n=3  · rigveda, rigveda
+- дышла  · n=2  · rigveda
+- В дышлах  · n=2  · rigveda
+- в упряжи  · n=1  · rigveda
+- дышлам  · n=1  · rigveda
+- к дышлам  · n=1  · rigveda
+
+### `DUsara` — dhūsara  (n=1)
+
+- побледневшая  · n=1  · shatakatrayam-serebryakov
+
+### `DUta` — dhūta  (n=4)
+
+- прополосканный  · n=2  · rigveda
+- Очистив  · n=1  · ramayana-ayodhyakanda
+- встряхнули  · n=1  · rigveda
+
+### `DUtaH` — dhūtaḥ  (n=1)
+
+- выполосканный  · n=1  · rigveda
+
+### `DUtakalmazAm` — dhūtakalmaṣām  (n=1)
+
+- безгрешную  · n=1  · ramayana-balakanda
+
+### `DUtakalmaza` — dhūtakalmaṣa  (n=1)
+
+- не знающий греха  · n=1  · ramayana-balakanda
+
+### `DUtakalmazaH` — dhūtakalmaṣaḥ  (n=1)
+
+- безгрешную  · n=1  · ramayana-balakanda
+
+### `DUtapApA` — dhūtapāpā  (n=1)
+
+- Дхутапапы  · n=1  · mahabharata-bhishmaparva
+
+### `DUtapApa` — dhūtapāpa  (n=1)
+
+- Избавлялись  · n=1  · ramayana-balakanda
+
+### `DUtapApaH` — dhūtapāpaḥ  (n=1)
+
+- очищу себя от зла  · n=1  · ramayana-ayodhyakanda
+
+### `DUtapApmA` — dhūtapāpmā  (n=1)
+
+- очистится от грехов  · n=1  · mahabharata-svargarohanikaparva
+
+### `DUtapApmAnaH` — dhūtapāpmānaḥ  (n=1)
+
+- смывшие свои грехи  · n=1  · mahabharata-sabhaparva
+
+### `DUtapApmaBiH` — dhūtapāpmabhiḥ  (n=1)
+
+- избавившихся от грехов  · n=1  · mahabharata-aranyakaparva
+
+### `DUtapApman` — dhūtapāpman  (n=7)
+
+- освободившись от грехов  · n=2  · mahabharata-adiparva, mahabharata-udyogaparva
+- очистившись от греха  · n=2  · mahabharata-ashvamedhikaparva
+- избавимся от грехов  · n=1  · mahabharata-aranyakaparva
+- очищаясь от греха  · n=1  · mahabharata-aranyakaparva
+- избавлен от прегрешений  · n=1  · mahabharata-aranyakaparva
+
+### `DUtasya` — dhūtasya  (n=1)
+
+- выполосканного  · n=1  · rigveda
+
+### `DUtaya` — dhūtaya  (n=4)
+
+- Сотрясатели  · n=2  · rigveda
+- сотрясатели  · n=2  · rigveda, rigveda
+
+### `DUtayaH` — dhūtayaḥ  (n=3)
+
+- сотрясатели  · n=3  · rigveda, rigveda
+
+### `DUti` — dhūti  (n=4)
+
+- сотрясатели  · n=4  · rigveda, rigveda, rigveda
+
+### `DUtodyAna` — dhūtodyāna  (n=1)
+
+- сады  · n=1  · megha-duta
+
+### `DUtvADUtvA` — dhūtvā dhūtvā  (n=2)
+
+- ищет  · n=1  · amaru-shataka
+- задуть пыталась  · n=1  · amaru-shataka
+
+### `DUyamAnAnAM` — dhūyamānānāṃ  (n=1)
+
+- развеваемые  · n=1  · mahabharata-bhishmaparva
+
+### `DUyamAna` — dhūyamāna  (n=3)
+
+- Овевали  · n=1  · ramayana-aranyakanda
+- раздувает  · n=1  · mahabharata-aranyakaparva
+- сотрясающего  · n=1  · mahabharata-karnaparva
+
+### `DUyamAnam` — dhūyamānam  (n=1)
+
+- сотрясался  · n=1  · mahabharata-shalyaparva
+
+### `Da` — dha  (n=9)
+
+- же  · n=4  · rigveda, rigveda, rigveda
+- Приобрел  · n=2  · rigveda
+- ведь  · n=1  · rigveda
+- сказал  · n=1  · mahabharata-udyogaparva
+- вот  · n=1  · rigveda
+
+### `DaN` — dhaṅ  (n=1)
+
+- потерпит ущерба  · n=1  · rigveda
+
+### `Dag` — dhag  (n=1)
+
+- минует  · n=1  · rigveda
+
+### `DaiTe` — dhaithe  (n=1)
+
+- взять  · n=1  · rigveda
+
+### `DairyArjitAni` — dhairyārjitāni  (n=1)
+
+- придающие стойкость  · n=1  · ramayana-sundarakanda
+
+### `DairyAt` — dhairyāt  (n=8)
+
+- мужества  · n=1  · ramayana-aranyakanda
+- стойкости  · n=1  · mahabharata-aranyakaparva
+- в стойкости  · n=1  · mahabharata-adiparva
+- неколебимо  · n=1  · mahabharata-dronaparva
+- в мужественности  · n=1  · mahabharata-dronaparva
+- в твердости  · n=1  · mahabharata-udyogaparva
+- силой духа  · n=1  · mahabharata-karnaparva
+- сурово  · n=1  · megha-duta
+
+### `DairyAvftendriya` — dhairyāvṛtendriya  (n=1)
+
+- в своих чувствах стойкий  · n=1  · buddhacharita
+
+### `Dairya` — dhairya  (n=52)
+
+- стойкость  · n=15  · ramayana-sundarakanda, buddhacharita, shatakatrayam-serebryakov, mahabharata-shantiparva, ramayana-ayodhyakanda, mahabharata-aranyakaparva, mahabharata-adiparva, mahabharata-udyogaparva, shatakatrayam, amaru-shataka
+- стойкостью  · n=3  · buddhacharita, mahabharata-shantiparva
+- стойкости  · n=3  · mahabharata-aranyakaparva, mahabharata-udyogaparva, shatakatrayam-serebryakov
+- мужество  · n=2  · mahabharata-shantiparva, ramayana-ayodhyakanda
+- стойко  · n=2  · mahabharata-bhishmaparva, mahabharata-ashramavasikaparva
+- самообладание  · n=2  · mahabharata-bhishmaparva, mahabharata-udyogaparva
+- твердость  · n=2  · buddhacharita, mahabharata-striparva
+- Стойко  · n=1  · mahabharata-shantiparva
+- с силами  · n=1  · ramayana-ayodhyakanda
+- чувства  · n=1  · ramayana-ayodhyakanda
+- Твердостью  · n=1  · ramayana-balakanda
+- равновесие  · n=1  · mahabharata-aranyakaparva
+- исполнен достоинства  · n=1  · mahabharata-aranyakaparva
+- в стойкости  · n=1  · mahabharata-bhishmaparva
+- твердость духа  · n=1  · mahabharata-bhishmaparva
+- твердости  · n=1  · mahabharata-dronaparva
+- мужества  · n=1  · mahabharata-dronaparva
+- твердо  · n=1  · mahabharata-dronaparva
+- величия  · n=1  · buddhacharita
+- упорство  · n=1  · mahabharata-udyogaparva
+- по стойкости  · n=1  · mahabharata-udyogaparva
+- мудрости  · n=1  · gitarthasamgraha-abhinavagupta
+- скрепившись  · n=1  · mahabharata-bhishmaparva
+- взволнован  · n=1  · kumarasambhava
+- зрение  · n=1  · devi-gita
+- себя  · n=1  · devi-gita
+- смело  · n=1  · mahabharata-virataparva
+- покой  · n=1  · shatakatrayam
+- достоинство  · n=1  · shatakatrayam-serebryakov
+- власть над собой  · n=1  · mahabharata-striparva
+
+### `DairyaDvaMsaM` — dhairyadhvaṃsaṃ  (n=1)
+
+- стойкость гибнет  · n=1  · shatakatrayam
+
+### `DairyaM` — dhairyaṃ  (n=2)
+
+- стойкость  · n=2  · mahabharata-aranyakaparva, mahabharata-udyogaparva
+
+### `DairyacyutiM` — dhairyacyutiṃ  (n=1)
+
+- посрамил бы  · n=1  · kumarasambhava
+
+### `DairyadrumaDvaMsinI` — dhairyadrumadhvaṃsinī  (n=2)
+
+- кружат  · n=1  · shatakatrayam
+- подмывает корни дерева мужества  · n=1  · shatakatrayam-serebryakov
+
+### `DairyaguRa` — dhairyaguṇa  (n=1)
+
+- стойкость  · n=1  · shatakatrayam
+
+### `DairyaguRam` — dhairyaguṇam  (n=1)
+
+- добродетель стойкости  · n=1  · shatakatrayam-serebryakov
+
+### `Dairyam` — dhairyam  (n=7)
+
+- мужество  · n=3  · mahabharata-shantiparva, mahabharata-aranyakaparva, mahabharata-adiparva
+- стойкость  · n=3  · mahabharata-shantiparva, buddhacharita, mahabharata-udyogaparva
+- упорство  · n=1  · mahabharata-dronaparva
+
+### `DairyasamanvitaH` — dhairyasamanvitaḥ  (n=1)
+
+- набравшись стойкости  · n=1  · mahabharata-karnaparva
+
+### `Dairyasya` — dhairyasya  (n=2)
+
+- решимость  · n=1  · ramayana-aranyakanda
+- серьезность  · n=1  · mahabharata-dronaparva
+
+### `Dairyavat` — dhairyavat  (n=1)
+
+- стойкий  · n=1  · ramayana-sundarakanda
+
+### `DairyavftteH` — dhairyavṛtteḥ  (n=1)
+
+- добродетель стойкости  · n=1  · shatakatrayam-serebryakov
+
+### `Dairyavftti` — dhairyavṛtti  (n=1)
+
+- стойкость  · n=1  · shatakatrayam
+
+### `DairyeRa` — dhairyeṇa  (n=7)
+
+- мужества  · n=1  · ramayana-ayodhyakanda
+- вытащил  · n=1  · ramayana-ayodhyakanda
+- в спокойствии  · n=1  · mahabharata-adiparva
+- твердостью  · n=1  · mahabharata-udyogaparva
+- стойкостью  · n=1  · mahabharata-ashramavasikaparva
+- твердо  · n=1  · mahabharata-ashramavasikaparva
+- с твердостью  · n=1  · kat-up
+
+### `Daja` — dhaja  (n=1)
+
+- знамя  · n=1  · mahabharata-dronaparva
+
+### `Dak` — dhak  (n=4)
+
+- лишай  · n=2  · rigveda, rigveda
+- да  · n=1  · rigveda
+- доля  · n=1  · rigveda
+
+### `Dakzat` — dhakṣat  (n=2)
+
+- сжигая  · n=2  · rigveda
+
+### `DakzataH` — dhakṣataḥ  (n=1)
+
+- испепеляющего  · n=1  · rigveda
+
+### `Dakzi` — dhakṣi  (n=2)
+
+- сожги  · n=1  · rigveda
+- Спали  · n=1  · rigveda
+
+### `Dakzor` — dhakṣor  (n=2)
+
+- порыв  · n=2  · rigveda
+
+### `DakzyAmaH` — dhakṣyāmaḥ  (n=1)
+
+- сожжем  · n=1  · ramayana-aranyakanda
+
+### `DakzyAmi` — dhakṣyāmi  (n=5)
+
+- сожгу  · n=2  · ramayana-aranyakanda, mahabharata-adiparva
+- сожжет  · n=1  · mahabharata-adiparva
+- испепелю  · n=1  · mahabharata-udyogaparva
+- обращу в пепел  · n=1  · mahabharata-ashramavasikaparva
+
+### `DakzyamARau` — dhakṣyamāṇau  (n=1)
+
+- намереваясь спалить  · n=1  · mahabharata-dronaparva
+
+### `Dakzyante` — dhakṣyante  (n=1)
+
+- будут сожжены  · n=1  · mahabharata-udyogaparva
+
+### `Dakzyanti` — dhakṣyanti  (n=4)
+
+- сожжет  · n=1  · mahabharata-adiparva
+- сожгут  · n=1  · mahabharata-adiparva
+- испепелят  · n=1  · mahabharata-bhishmaparva
+- преданы огню  · n=1  · mahabharata-striparva
+
+### `Dakzyate` — dhakṣyate  (n=2)
+
+- сожжешь  · n=1  · ramayana-aranyakanda
+- должен быть сожжен  · n=1  · mahabharata-adiparva
+
+### `Dakzyati` — dhakṣyati  (n=5)
+
+- сожжет  · n=4  · mahabharata-adiparva, mahabharata-dronaparva
+- испепелит  · n=1  · mahabharata-dronaparva
+
+### `Dakzye` — dhakṣye  (n=1)
+
+- испепелю  · n=1  · mahabharata-ashvamedhikaparva
+
+### `Dam` — dham  (n=10)
+
+- затрубили  · n=3  · gitarthasamgraha-abhinavagupta, bhagavadgita-erman, bhagavadgita-radha
+- дующие  · n=2  · rigveda
+- дуя  · n=1  · rigveda
+- Сдувая  · n=1  · rigveda
+- сплавляет  · n=1  · rigveda
+- затрубил  · n=1  · bhagavadgita-erman
+- задули  · n=1  · bhagavadgita-smirnov
+
+### `Dama` — dhama  (n=4)
+
+- обитель  · n=3  · bhagavadgita-prabhupada, bhagavadgita-erman
+- Сдуй  · n=1  · rigveda
+
+### `DamaDamA` — dhamadhamā  (n=1)
+
+- Дхамадхама  · n=1  · mahabharata-shalyaparva
+
+### `DamaTo` — dhamatho  (n=1)
+
+- сдуваете  · n=1  · rigveda
+
+### `Daman` — dhaman  (n=5)
+
+- обитель  · n=3  · bhagavadgita-prabhupada, mahabharata-bhishmaparva
+- Кров  · n=2  · bhagavadgita-smirnov
+
+### `DamanI` — dhamanī  (n=2)
+
+- вены  · n=1  · mahabharata-adiparva
+- сосуды  · n=1  · ch-up
+
+### `DamanInAm` — dhamanīnām  (n=2)
+
+- сосудов  · n=1  · atharvaveda
+- вен  · n=1  · atharvaveda
+
+### `DamanayaH` — dhamanayaḥ  (n=1)
+
+- сосудов  · n=1  · atharvaveda
+
+### `Damani` — dhamani  (n=9)
+
+- свист  · n=2  · rigveda
+- сосудов  · n=2  · atharvaveda
+- сосуд  · n=1  · atharvaveda
+- внутренние каналы тела  · n=1  · mahabharata-aranyakaparva
+- вены  · n=1  · mahabharata-aranyakaparva
+- кровеносных сосудов  · n=1  · atharvaveda
+- артерии  · n=1  · atma-up
+
+### `Damanisantata` — dhamanisantata  (n=5)
+
+- проступили наружу все внутренние каналы тела  · n=1  · mahabharata-aranyakaparva
+- стали видны вены  · n=1  · mahabharata-dronaparva
+- с жилами, выступившими наружу  · n=1  · mahabharata-udyogaparva
+- под кожей видны все жилы  · n=1  · mahabharata-ashramavasikaparva
+- видны были под кожей все каналы тела  · n=1  · mahabharata-ashramavasikaparva
+
+### `DamanisantataH` — dhamanisantataḥ  (n=1)
+
+- кожа да кости  · n=1  · mahabharata-aranyakaparva
+
+### `Damanisantatam` — dhamanisantatam  (n=1)
+
+- вены проступили  · n=1  · mahabharata-aranyakaparva
+
+### `Damant` — dhamant  (n=2)
+
+- раздувая  · n=2  · rigveda
+
+### `DamantIH` — dhamantīḥ  (n=1)
+
+- трубящие  · n=1  · rigveda
+
+### `Damanta` — dhamanta  (n=2)
+
+- дул  · n=1  · mahabharata-karnaparva
+- Дхаманта  · n=1  · mahabharata-shalyaparva
+
+### `DamantaH` — dhamantaḥ  (n=1)
+
+- Выковывающие  · n=1  · atharvaveda
+
+### `Damantam` — dhamantam  (n=1)
+
+- дующему  · n=1  · rigveda
+
+### `Damanti` — dhamanti  (n=5)
+
+- трубят  · n=2  · mahabharata-dronaparva, mahabharata-karnaparva
+- обдувают  · n=1  · rigveda
+- надувают  · n=1  · rigveda
+- дули  · n=1  · mahabharata-sauptikaparva
+
+### `Damantu` — dhamantu  (n=1)
+
+- пусть дуют  · n=1  · atharvaveda
+
+### `Damasva` — dhamasva  (n=1)
+
+- подуй  · n=1  · mahabharata-adiparva
+
+### `Damat` — dhamat  (n=1)
+
+- дуть  · n=1  · mahabharata-adiparva
+
+### `DamataH` — dhamataḥ  (n=2)
+
+- набухшей  · n=2  · rigveda
+
+### `Damati` — dhamati  (n=4)
+
+- раздувает  · n=2  · rigveda
+- выковывает  · n=2  · shv-up
+
+### `DamatuH` — dhamatuḥ  (n=1)
+
+- затрубили  · n=1  · mahabharata-karnaparva
+
+### `Damita` — dhamita  (n=2)
+
+- разожженный  · n=2  · rigveda
+
+### `Damizyanti` — dhamiṣyanti  (n=1)
+
+- будет теплиться  · n=1  · mahabharata-shalyaparva
+
+### `Dammilla` — dhammilla  (n=2)
+
+- волосы  · n=1  · gitagovinda
+- косу  · n=1  · amaru-shataka
+
+### `DammillaM` — dhammillaṃ  (n=1)
+
+- прическу  · n=1  · amaru-shataka
+
+### `DammillanirjitamayUrakalApaBArAm` — dhammillanirjitamayūrakalāpabhārām  (n=1)
+
+- очарование кос, с которыми не сравнится павлина хвост  · n=1  · chaurapanchashika
+
+### `DamyamAna` — dhamyamāna  (n=4)
+
+- дул  · n=1  · mahabharata-adiparva
+- раздувает  · n=1  · mahabharata-aranyakaparva
+- вздыхающий  · n=1  · mahabharata-bhishmaparva
+- истаяло  · n=1  · mahabharata-karnaparva
+
+### `Damyate` — dhamyate  (n=1)
+
+- дуют  · n=1  · rigveda
+
+### `Dan` — dhan  (n=2)
+
+- богатство  · n=1  · mahabharata-adiparva
+- поубивал  · n=1  · rigveda
+
+### `DanA` — dhanā  (n=15)
+
+- богатства  · n=6  · rigveda, rigveda, atharvaveda
+- награды  · n=4  · rigveda, rigveda, rigveda, rigveda
+- ставки  · n=2  · rigveda
+- имущества  · n=1  · manavadharmashastra
+- богатств  · n=1  · rigveda
+- Богатства  · n=1  · rigveda
+
+### `DanABijanavfdDa` — dhanābhijanavṛddha  (n=1)
+
+- выделяется по богатству и происхождению  · n=1  · mahabharata-udyogaparva
+
+### `DanADigoptA` — dhanādhigoptā  (n=1)
+
+- покровитель сокровищ  · n=1  · mahabharata-udyogaparva
+
+### `DanADipa` — dhanādhipa  (n=1)
+
+- Владыка богатств  · n=1  · mahabharata-aranyakaparva
+
+### `DanADipaH` — dhanādhipaḥ  (n=1)
+
+- Властитель сокровищ  · n=1  · mahabharata-aranyakaparva
+
+### `DanADipam` — dhanādhipam  (n=1)
+
+- Владыку богатств  · n=1  · mahabharata-aranyakaparva
+
+### `DanADipati` — dhanādhipati  (n=2)
+
+- владыка богатств  · n=1  · mahabharata-shalyaparva
+- Владыка богатств  · n=1  · mahabharata-shalyaparva
+
+### `DanADipatiSAsana` — dhanādhipatiśāsana  (n=1)
+
+- по приказу Владыки богатств  · n=1  · mahabharata-aranyakaparva
+
+### `DanADipativAjin` — dhanādhipativājin  (n=1)
+
+- Скакуны Властителя сокровищ  · n=1  · mahabharata-aranyakaparva
+
+### `DanADipatya` — dhanādhipatya  (n=1)
+
+- владычество над всеми сокровищами  · n=1  · mahabharata-shalyaparva
+
+### `DanADyakza` — dhanādhyakṣa  (n=7)
+
+- Владыка богатств  · n=2  · mahabharata-ashvamedhikaparva, mahabharata-sauptikaparva
+- стражи сокровищницы  · n=1  · ramayana-balakanda
+- блюститель сокровищ  · n=1  · mahabharata-aranyakaparva
+- Властитель сокровищ  · n=1  · mahabharata-aranyakaparva
+- Владыки богатств  · n=1  · mahabharata-aranyakaparva
+- Владыку богатств  · n=1  · mahabharata-ashvamedhikaparva
+
+### `DanADyakzopamam` — dhanādhyakṣopamam  (n=1)
+
+- подобным Владыке богатств  · n=1  · mahabharata-sauptikaparva
+
+### `DanASayA` — dhanāśayā  (n=1)
+
+- на заработки  · n=1  · shukasaptati
+
+### `DanAd` — dhanād  (n=1)
+
+- выигрыши  · n=1  · rigveda
+
+### `DanAdAna` — dhanādāna  (n=1)
+
+- принятие имущества  · n=1  · manavadharmashastra
+
+### `DanAdyanityatAM` — dhanādyanityatāṃ  (n=1)
+
+- что богатство недолговечно  · n=1  · shukasaptati
+
+### `DanAgama` — dhanāgama  (n=1)
+
+- притока богатств  · n=1  · mahabharata-sabhaparva
+
+### `DanAgamam` — dhanāgamam  (n=1)
+
+- присвоения имущества  · n=1  · manavadharmashastra
+
+### `DanAnAm` — dhanānām  (n=21)
+
+- награды  · n=9  · rigveda, rigveda
+- богатств  · n=3  · rigveda, rigveda, rigveda
+- наград  · n=2  · rigveda, rigveda
+- богатства  · n=2  · rigveda, mahabharata-sabhaparva
+- среди богатств  · n=2  · atharvaveda
+- ставок  · n=1  · rigveda
+- сокровищ  · n=1  · rigveda
+- за добычу  · n=1  · atharvaveda
+
+### `DanAnAmISvara` — dhanānāmīśvara  (n=1)
+
+- Властитель сокровищ  · n=1  · mahabharata-aranyakaparva
+
+### `DanAnDAH` — dhanāndhāḥ  (n=1)
+
+- обладающие горами золота  · n=1  · shatakatrayam-serebryakov
+
+### `DanAnDa` — dhanāndha  (n=1)
+
+- богачи  · n=1  · shatakatrayam
+
+### `DanAni` — dhanāni  (n=35)
+
+- богатства  · n=17  · rigveda, mahabharata-aranyakaparva, shatakatrayam-serebryakov, ramayana-ayodhyakanda, rigveda, mahabharata-adiparva, gitarthasamgraha-abhinavagupta, bhagavadgity, bhagavadgita-erman, bhagavadgita-sementsov, bhagavadgita-prabhupada, rigveda, mahabharata-sabhaparva
+- богатство  · n=4  · mahabharata-adiparva, ramayana-aranyakanda, mahabharata-aranyakaparva, atharvaveda
+- богатств  · n=3  · mahabharata-aranyakaparva, rigveda, bhagavadgita-sharma
+- ставки  · n=3  · rigveda, rigveda
+- награды  · n=2  · rigveda
+- средства  · n=1  · manavadharmashastra
+- имущество  · n=1  · mahabharata-aranyakaparva
+- добыча  · n=1  · rigveda
+- добычу  · n=1  · rigveda
+- щастіе  · n=1  · bhagavadgita-1788
+- богатствам  · n=1  · shatakatrayam-serebryakov
+
+### `DanApahaH` — dhanāpahaḥ  (n=1)
+
+- грабитель  · n=1  · bhagavadgita-radha
+
+### `DanArTa` — dhanārtha  (n=5)
+
+- богатство  · n=1  · mahabharata-aranyakaparva
+- Ради богатства  · n=1  · mahabharata-aranyakaparva
+- богатства  · n=1  · buddhacharita
+- ради богатства  · n=1  · mahabharata-shalyaparva
+- в поисках денег  · n=1  · shukasaptati
+
+### `DanArTin` — dhanārthin  (n=6)
+
+- ради добычи  · n=1  · manavadharmashastra
+- неравнодушная к богатству  · n=1  · mahabharata-aranyakaparva
+- мечтая скопить богатство  · n=1  · mahabharata-aranyakaparva
+- Домогаясь богатства  · n=1  · mahabharata-adiparva
+- жаждавшие богатства  · n=1  · mahabharata-adiparva
+- хочу достигнуть богатства  · n=1  · shukasaptati
+
+### `DanArTinaH` — dhanārthinaḥ  (n=1)
+
+- домогающиеся богатств  · n=1  · mahabharata-shalyaparva
+
+### `DanArjakAH` — dhanārjakāḥ  (n=1)
+
+- наживают богатства  · n=1  · mahabharata-aranyakaparva
+
+### `DanArjana` — dhanārjana  (n=1)
+
+- приобретает богатство  · n=1  · mahabharata-udyogaparva
+
+### `DanAya` — dhanāya  (n=6)
+
+- для приобретения мудрости  · n=2  · rigveda
+- богатства  · n=2  · rigveda
+- для добычи  · n=1  · rigveda
+- добычу  · n=1  · rigveda
+
+### `DanAyate` — dhanāyate  (n=1)
+
+- дорожа  · n=1  · mahabharata-udyogaparva
+
+### `DanUH` — dhanūḥ  (n=2)
+
+- берег  · n=1  · atharvaveda
+- равнина  · n=1  · atharvaveda
+
+### `DanUMzi` — dhanūṃṣi  (n=19)
+
+- луки  · n=13  · mahabharata-dronaparva, mahabharata-virataparva, mahabharata-shantiparva, ramayana-aranyakanda, mahabharata-aranyakaparva, mahabharata-adiparva, mahabharata-bhishmaparva, mahabharata-karnaparva
+- луков  · n=3  · mahabharata-dronaparva, mahabharata-bhishmaparva
+- Луки  · n=1  · ramayana-aranyakanda
+- лука  · n=1  · mahabharata-udyogaparva
+- луками  · n=1  · mahabharata-sauptikaparva
+
+### `DanUratna` — dhanūratna  (n=1)
+
+- лук-сокровище  · n=1  · ramayana-balakanda
+
+### `Dana` — dhana  (n=301)
+
+- богатство  · n=92  · mahabharata-sabhaparva, mahabharata-udyogaparva, mahabharata-virataparva, mahabharata-aranyakaparva, mahabharata-adiparva, shatakatrayam-serebryakov, manavadharmashastra, ramayana-ayodhyakanda, ramayana-balakanda, rigveda, mahabharata-dronaparva, buddhacharita, mahabharata-shalyaparva, shatakatrayam, mahabharata-ashramavasikaparva, atharvaveda, ramayana-aranyakanda, mahabharata-bhishmaparva, gitarthasamgraha-abhinavagupta, bhagavadgita-burba, ramanuja_gitabhashya, bhagavadgita-1914, bhagavadgita-smirnov, bhagavadgita-1909, bhagavadgita-radha, mahabharata-karnaparva, mahabharata-ashvamedhikaparva, atharvaveda, rigveda, atharvaveda
+- богатства  · n=36  · mahabharata-udyogaparva, mahabharata-adiparva, mahabharata-shalyaparva, mahabharata-sabhaparva, ramayana-ayodhyakanda, shatakatrayam, shatakatrayam-serebryakov, ramayana-sundarakanda, manavadharmashastra, mahabharata-aranyakaparva, rigveda, mahabharata-bhishmaparva, bhagavadgita-1914, bhagavadgita-smirnov, bhagavadgita-1909, ch-up, mahabharata-virataparva, atharvaveda, shukasaptati
+- имущество  · n=20  · manavadharmashastra, mahabharata-bhishmaparva, atharvaveda
+- богатством  · n=18  · mahabharata-aranyakaparva, mahabharata-udyogaparva, bhagavadgita-prabhupada, mahabharata-ashvamedhikaparva, ramayana-sundarakanda, manavadharmashastra, mahabharata-dronaparva, bhagavadgita-sharma, ch-up, atharvaveda, atharvaveda, atharvaveda, atharvaveda, kai-up
+- богатств  · n=11  · shatakatrayam, mahabharata-sabhaparva, ramayana-ayodhyakanda, rigveda, buddhacharita, rigveda, rigveda
+- имущества  · n=9  · manavadharmashastra, ramayana-ayodhyakanda
+- богатствами  · n=8  · ramayana-ayodhyakanda, ramayana-sundarakanda, mahabharata-adiparva, ramayana-balakanda, mahabharata-aranyakaparva
+- деньги  · n=7  · shukasaptati, manavadharmashastra, ramayana-ayodhyakanda, mahabharata-aranyakaparva
+- ставка  · n=7  · rigveda, rigveda, rigveda, rigveda
+- деньгами  · n=5  · manavadharmashastra, ramayana-ayodhyakanda, mahabharata-sabhaparva, shukasaptati
+- дары  · n=5  · ramayana-ayodhyakanda, ramayana-balakanda, mahabharata-aranyakaparva, buddhacharita
+- добро  · n=5  · mahabharata-adiparva, manavadharmashastra
+- награды  · n=5  · rigveda, rigveda
+- денег  · n=5  · shukasaptati, kama-sutra, ch-up
+- ставки  · n=4  · rigveda, rigveda
+- золотом  · n=3  · ramayana-balakanda, ramayana-ayodhyakanda
+- достояние  · n=3  · manavadharmashastra, mahabharata-karnaparva, mahabharata-sabhaparva
+- ставку  · n=3  · rigveda, rigveda
+- средства  · n=2  · manavadharmashastra
+- вещь  · n=2  · manavadharmashastra
+- золото  · n=2  · ramayana-balakanda, mahabharata-aranyakaparva
+- Дхана  · n=2  · ramayana-balakanda, mahabharata-udyogaparva
+- богатству  · n=2  · mahabharata-aranyakaparva, mahabharata-udyogaparva
+- ценность  · n=2  · mahabharata-aranyakaparva
+- сокровища  · n=2  · rigveda, mahabharata-udyogaparva
+- богатстве  · n=2  · mahabharata-adiparva, mahabharata-ashvamedhikaparva
+- сокровище  · n=2  · bhagavadgita-1788, mahabharata-ashvamedhikaparva
+- даров  · n=1  · ramayana-ayodhyakanda
+- дарами  · n=1  · ramayana-ayodhyakanda
+- Денег  · n=1  · ramayana-ayodhyakanda
+- ценными дарами  · n=1  · manavadharmashastra
+- Деньги  · n=1  · manavadharmashastra
+- долг  · n=1  · manavadharmashastra
+- выгоды  · n=1  · manavadharmashastra
+- имуществом  · n=1  · manavadharmashastra
+- Имущество  · n=1  · manavadharmashastra
+- имуществе  · n=1  · manavadharmashastra
+- денежное  · n=1  · manavadharmashastra
+- в предмете  · n=1  · manavadharmashastra
+- силой  · n=1  · ramayana-aranyakanda
+- богатые  · n=1  · ramayana-aranyakanda
+- Все  · n=1  · ramayana-aranyakanda
+- богатствам  · n=1  · mahabharata-aranyakaparva
+- артхе  · n=1  · mahabharata-aranyakaparva
+- добычу  · n=1  · rigveda
+- состязании  · n=1  · rigveda
+- Награды  · n=1  · rigveda
+- наград  · n=1  · rigveda
+- ставке  · n=1  · rigveda
+- выигрыша  · n=1  · rigveda
+- на сокровища  · n=1  · buddhacharita
+- добыча  · n=1  · rigveda
+- корысти  · n=1  · bhagavadgity
+- счастье  · n=1  · bhagavadgita-1909
+- с богатствами  · n=1  · bhagavadgita-radha
+- вознаграждение  · n=1  · ch-up
+- достояния  · n=1  · mahabharata-karnaparva
+- награду  · n=1  · rigveda
+- Богатство  · n=1  · mahabharata-sabhaparva
+- клада  · n=1  · shatakatrayam
+- мошна  · n=1  · shatakatrayam
+- от богатства  · n=1  · atharvaveda
+- деньгам  · n=1  · shatakatrayam-serebryakov
+- дар  · n=1  · tai-up
+
+### `Dana-aDyakzam` — dhana-adhyakṣam  (n=2)
+
+- хранителю сокровищницы  · n=2  · ramayana-ayodhyakanda
+
+### `Dana-da` — dhana-da  (n=2)
+
+- Кубера  · n=1  · ramayana-ayodhyakanda
+- Податель даров  · n=1  · ramayana-ayodhyakanda
+
+### `Dana-mAna-madAnvitAH` — dhana-māna-madānvitāḥ  (n=2)
+
+- опьяненные богатством и гордыней  · n=1  · bhagavadgita-burba
+- алчности  · n=1  · bhagavadgita-1909
+
+### `Dana-mAna-madAnvita` — dhana-māna-madānvita  (n=1)
+
+- гоняясь за богатствомъ и гордостію  · n=1  · bhagavadgita-1788
+
+### `Dana-mAna-mada` — dhana-māna-mada  (n=1)
+
+- исполненные гордости и опьяненные богатством  · n=1  · bhagavadgita-1914
+
+### `Dana-mAna-mada-anvita` — dhana-māna-mada-anvita  (n=1)
+
+- гордящиеся богатством и репутацией  · n=1  · bhagavadgita-radha
+
+### `DanaBakzezu` — dhanabhakṣeṣu  (n=1)
+
+- в делах получения награды  · n=1  · rigveda
+
+### `DanaBoga` — dhanabhoga  (n=1)
+
+- наслаждение богатством  · n=1  · mahabharata-udyogaparva
+
+### `DanaDAnya` — dhanadhānya  (n=1)
+
+- зерно и деньги  · n=1  · ramayana-ayodhyakanda
+
+### `DanaDAnyaiH` — dhanadhānyaiḥ  (n=1)
+
+- деньги, хлеб  · n=1  · mahabharata-aranyakaparva
+
+### `DanaDAnyapUrRAm` — dhanadhānyapūrṇām  (n=1)
+
+- полной богатств и зерна  · n=1  · mahabharata-udyogaparva
+
+### `DanaDAnyau` — dhanadhānyau  (n=1)
+
+- Дхану и Дханью  · n=1  · ramayana-balakanda
+
+### `DanaDAnyavat` — dhanadhānyavat  (n=1)
+
+- изобилует зерном и богатством  · n=1  · mahabharata-adiparva
+
+### `DanaM` — dhanaṃ  (n=15)
+
+- богатства  · n=6  · mahabharata-shalyaparva, mahabharata-adiparva, mahabharata-sabhaparva, shatakatrayam
+- богатство  · n=3  · rigveda, mahabharata-sabhaparva
+- подарки  · n=1  · ramayana-ayodhyakanda
+- богатством  · n=1  · mahabharata-aranyakaparva
+- ставку  · n=1  · rigveda
+- плату  · n=1  · mahabharata-virataparva
+- воплощения  · n=1  · shatakatrayam
+- деньги  · n=1  · shukasaptati
+
+### `DanaM-Danam` — dhanaṃ-dhanam  (n=2)
+
+- одну ставку за другой  · n=1  · rigveda
+- награду за наградой  · n=1  · rigveda
+
+### `DanaMjaya` — dhanaṃjaya  (n=39)
+
+- Дхананджая  · n=13  · bhagavadgita-burba, bhagavadgita-1914
+- о Дхананджая  · n=6  · bhagavadgita-burba, bhagavadgita-1914
+- Арджуна  · n=5  · bhagavadgita-1909, bhagavadgita-1914
+- Аржунъ-Дананжай  · n=2  · bhagavadgity, bhagavadgita-1788
+- принцъ  · n=2  · bhagavadgity, bhagavadgita-1909
+- о Арджуна  · n=2  · bhagavadgita-1788
+- Победитель в сражениях  · n=1  · bhagavadgita-1914
+- Аржунова  · n=1  · bhagavadgita-1788
+- о Аржунъ  · n=1  · bhagavadgita-1788
+- Онъ  · n=1  · bhagavadgita-1788
+- Арджуны  · n=1  · bhagavadgita-1909
+- твоего  · n=1  · bhagavadgita-1909
+- Патанджали  · n=1  · bhagavadgita-1909
+- Знай  · n=1  · bhagavadgita-1909
+- завоевывает добычу  · n=1  · atharvaveda
+
+### `DanaMjayaH` — dhanaṃjayaḥ  (n=2)
+
+- Дхананджая  · n=1  · bhagavadgity
+- Арджуна  · n=1  · bhagavadgity
+
+### `DanaMjayas` — dhanaṃjayas  (n=2)
+
+- Дхананджая  · n=2  · bhagavadgita-burba
+
+### `DanaMjayo` — dhanaṃjayo  (n=1)
+
+- завоевывающий богатство  · n=1  · atharvaveda
+
+### `DanaSrI` — dhanaśrī  (n=1)
+
+- Дханашри  · n=1  · shukasaptati
+
+### `DanaSrornAma` — dhanaśrornāma  (n=1)
+
+- Дханашри  · n=1  · shukasaptati
+
+### `DanaYjayAgni` — dhanañjayāgni  (n=1)
+
+- огонь Дхананджайи  · n=1  · mahabharata-dronaparva
+
+### `DanaYjayAgraja` — dhanañjayāgraja  (n=2)
+
+- старший брат Дхананджаи  · n=1  · mahabharata-shalyaparva
+- Бхимасена  · n=1  · mahabharata-shalyaparva
+
+### `DanaYjayAnAmfzaBaHsusAmA` — dhanañjayānām ṛṣabhaḥ susāmā  (n=1)
+
+- Сусаман, бык в роду Дхананджайи  · n=1  · mahabharata-sabhaparva
+
+### `DanaYjayAstram` — dhanañjayāstram  (n=1)
+
+- оружие Завоевателя богатств  · n=1  · mahabharata-karnaparva
+
+### `DanaYjayAt` — dhanañjayāt  (n=2)
+
+- Дхананджаи  · n=1  · mahabharata-dronaparva
+- Дхананджайи  · n=1  · mahabharata-virataparva
+
+### `DanaYjaya` — dhanañjaya  (n=524)
+
+- Дхананджая  · n=196  · mahabharata-dronaparva, mahabharata-udyogaparva, mahabharata-virataparva, mahabharata-adiparva, mahabharata-shalyaparva, bhagavadgita-smirnov, mahabharata-sabhaparva, gitarthasamgraha-abhinavagupta, bhagavadgita-sharma, bhagavadgity, ramanuja_gitabhashya, bhagavadgita-sementsov, mahabharata-shantiparva, mahabharata-aranyakaparva, bhagavadgita-prabhupada, mahabharata-ashvamedhikaparva
+- Завоеватель богатств  · n=121  · mahabharata-karnaparva, mahabharata-bhishmaparva, mahabharata-aranyakaparva, mahabharata-ashvamedhikaparva, bhagavadgita-erman, mahabharata-mausalaparva, mahabharata-shantiparva, mahabharata-sauptikaparva, gitarthasamgraha-abhinavagupta, mahabharata-ashramavasikaparva, mahabharata-striparva, mahabharata-mahaprasthanikaparva
+- Завоевателя богатств  · n=39  · mahabharata-karnaparva, mahabharata-bhishmaparva, mahabharata-ashvamedhikaparva, mahabharata-aranyakaparva, mahabharata-ashramavasikaparva, mahabharata-mausalaparva
+- Дхананджаю  · n=33  · mahabharata-dronaparva, mahabharata-udyogaparva, mahabharata-virataparva, mahabharata-adiparva, mahabharata-shantiparva, mahabharata-sabhaparva, mahabharata-striparva
+- Дхананджайи  · n=27  · mahabharata-dronaparva, mahabharata-udyogaparva, mahabharata-sabhaparva, mahabharata-virataparva, mahabharata-adiparva
+- Дхананджае  · n=17  · mahabharata-dronaparva, mahabharata-udyogaparva, mahabharata-adiparva
+- Завоевателю богатств  · n=16  · mahabharata-karnaparva, mahabharata-bhishmaparva, mahabharata-aranyakaparva, mahabharata-striparva, mahabharata-mausalaparva, mahabharata-mahaprasthanikaparva
+- о завоеватель богатств  · n=13  · bhagavadgita-prabhupada, bhagavadgita-radha, mahabharata-bhishmaparva
+- Завоевателем богатств  · n=9  · mahabharata-karnaparva, mahabharata-aranyakaparva, mahabharata-bhishmaparva, mahabharata-mausalaparva
+- Арджуна  · n=8  · bhagavadgita-sementsov, mahabharata-sabhaparva, mahabharata-dronaparva, mahabharata-udyogaparva, mahabharata-virataparva
+- о Завоеватель богатств  · n=7  · mahabharata-bhishmaparva, bhagavadgita-erman, gitarthasamgraha-abhinavagupta, mahabharata-ashvamedhikaparva
+- Дхананджайя  · n=4  · mahabharata-udyogaparva, mahabharata-sabhaparva
+- Дхананджаей  · n=3  · mahabharata-dronaparva, mahabharata-adiparva
+- завоеватель богатств  · n=3  · mahabharata-aranyakaparva, bhagavadgita-erman, bhagavadgita-radha
+- Арджуны  · n=3  · mahabharata-udyogaparva, mahabharata-karnaparva
+- Завоевателе богатств  · n=2  · mahabharata-aranyakaparva
+- Дхананджайе  · n=2  · mahabharata-adiparva, mahabharata-virataparva
+- Дхананджаи  · n=2  · mahabharata-dronaparva
+- Дханаджая  · n=2  · gitarthasamgraha-abhinavagupta
+- о завоеватель богатств [Арджуна]  · n=2  · bhagavadgita-radha
+- завоевателя добычи  · n=1  · rigveda
+- неодолимый  · n=1  · mahabharata-adiparva
+- Джананджайи  · n=1  · mahabharata-dronaparva
+- захватчик ставки  · n=1  · rigveda
+- завоевывая богатства  · n=1  · rigveda
+- Джананджая  · n=1  · mahabharata-udyogaparva
+- Завоевывающего добычу  · n=1  · rigveda
+- дхананджая  · n=1  · bhagavadgita-1914
+- о Дхананджая  · n=1  · bhagavadgita-prabhupada
+- о Арджуна, завоеватель богатств  · n=1  · bhagavadgita-prabhupada
+- Арджуне  · n=1  · bhagavadgita-prabhupada
+- о покоритель врагов  · n=1  · bhagavadgita-radha
+- завоевателя наград  · n=1  · rigveda
+- Дханаджайе  · n=1  · mahabharata-sabhaparva
+- Джая  · n=1  · mahabharata-mausalaparva
+
+### `DanaYjayaBayAt` — dhanañjayabhayāt  (n=1)
+
+- от страха перед Дхананджаей  · n=1  · mahabharata-dronaparva
+
+### `DanaYjayaH` — dhanañjayaḥ  (n=72)
+
+- Дхананджая  · n=38  · mahabharata-dronaparva, mahabharata-adiparva, mahabharata-udyogaparva, mahabharata-shalyaparva, mahabharata-virataparva, mahabharata-sabhaparva, bhagavadgita-radha, bhagavadgita-sharma, bhagavadgita-prabhupada
+- Завоеватель богатств  · n=26  · mahabharata-aranyakaparva, mahabharata-ashvamedhikaparva, mahabharata-karnaparva, mahabharata-bhishmaparva, mahabharata-mausalaparva, mahabharata-sauptikaparva
+- Арджуна  · n=5  · bhagavadgita-prabhupada, ramanuja_gitabhashya
+- Завоевателя богатств  · n=2  · mahabharata-aranyakaparva
+- Завоевывающий награду  · n=1  · rigveda
+
+### `DanaYjayaM` — dhanañjayaṃ  (n=1)
+
+- Завоевателя богатств  · n=1  · mahabharata-bhishmaparva
+
+### `DanaYjayaSarAByastaiH` — dhanañjayaśarābhyastaiḥ  (n=1)
+
+- разбитых стрелами Завоевателя богатств  · n=1  · mahabharata-karnaparva
+
+### `DanaYjayaSarAhatA` — dhanañjayaśarāhatā  (n=1)
+
+- истребляемое стрелами Завоевателя богатств  · n=1  · mahabharata-karnaparva
+
+### `DanaYjayaSarAhata` — dhanañjayaśarāhata  (n=2)
+
+- теснимый стрелами Дхананджайи  · n=1  · mahabharata-dronaparva
+- сраженный стрелою Завоевателя богатств  · n=1  · mahabharata-ashvamedhikaparva
+
+### `DanaYjayaSarArdita` — dhanañjayaśarārdita  (n=1)
+
+- мучимого стрелами Дхананджайи  · n=1  · mahabharata-dronaparva
+
+### `DanaYjayaSarArditaH` — dhanañjayaśarārditaḥ  (n=1)
+
+- мучимый стрелами Дхананджайи  · n=1  · mahabharata-dronaparva
+
+### `DanaYjayaSaraiH` — dhanañjayaśaraiḥ  (n=1)
+
+- стрелами Дхананджайи  · n=1  · mahabharata-dronaparva
+
+### `DanaYjayaSarairhatam` — dhanañjayaśarairhatam  (n=1)
+
+- убитого стрелами Дхананджайи  · n=1  · mahabharata-dronaparva
+
+### `DanaYjayaSaravyAptaM` — dhanañjayaśaravyāptaṃ  (n=1)
+
+- пронзенного стрелами Дхананджаи  · n=1  · mahabharata-dronaparva
+
+### `DanaYjayadidfkzayA` — dhanañjayadidṛkṣayā  (n=1)
+
+- в ожидании Завоевателя богатств  · n=1  · mahabharata-aranyakaparva
+
+### `DanaYjayahitaiziRam` — dhanañjayahitaiṣiṇam  (n=1)
+
+- желая успеха Дхананджае  · n=1  · mahabharata-dronaparva
+
+### `DanaYjayahite` — dhanañjayahite  (n=1)
+
+- благу Дхананджайи  · n=1  · mahabharata-dronaparva
+
+### `DanaYjayakaTA` — dhanañjayakathā  (n=2)
+
+- истории о Завоевателе богатств  · n=2  · mahabharata-ashvamedhikaparva
+
+### `DanaYjayakftAt` — dhanañjayakṛtāt  (n=1)
+
+- из-за Дхананджаи  · n=1  · mahabharata-virataparva
+
+### `DanaYjayam` — dhanañjayam  (n=41)
+
+- Завоевателя богатств  · n=10  · mahabharata-aranyakaparva, mahabharata-karnaparva, mahabharata-ashvamedhikaparva, mahabharata-bhishmaparva
+- Дхананджаю  · n=9  · mahabharata-dronaparva, mahabharata-udyogaparva, mahabharata-adiparva, mahabharata-shalyaparva, mahabharata-virataparva
+- Дхананджае  · n=6  · mahabharata-dronaparva, mahabharata-shalyaparva, mahabharata-udyogaparva
+- Дхананджайи  · n=3  · mahabharata-dronaparva, mahabharata-udyogaparva
+- Завоевателю богатств  · n=2  · mahabharata-bhishmaparva, mahabharata-sauptikaparva
+- Дхананджая  · n=2  · mahabharata-dronaparva, mahabharata-virataparva
+- Завоеватель богатств  · n=2  · mahabharata-karnaparva
+- Завоевателем богатств  · n=1  · mahabharata-aranyakaparva
+- против Дхананджайи  · n=1  · mahabharata-dronaparva
+- Дхананджаей  · n=1  · mahabharata-dronaparva
+- к Дхананджае  · n=1  · mahabharata-dronaparva
+- Арджуна  · n=1  · mahabharata-udyogaparva
+- к Завоевателю богатств  · n=1  · mahabharata-ashvamedhikaparva
+- Дхананджайей  · n=1  · mahabharata-virataparva
+
+### `DanaYjayamahAbAho` — dhanañjaya mahābāho  (n=1)
+
+- О Завоеватель богатств, о мощнорукий  · n=1  · mahabharata-bhishmaparva
+
+### `DanaYjayaprezya` — dhanañjayapreṣya  (n=1)
+
+- служить Дхананджае  · n=1  · mahabharata-dronaparva
+
+### `DanaYjayaraTam` — dhanañjayaratham  (n=1)
+
+- к колеснице Завоевателя богатств  · n=1  · mahabharata-karnaparva
+
+### `DanaYjayas` — dhanañjayas  (n=2)
+
+- Дхананджая  · n=2  · mahabharata-dronaparva
+
+### `DanaYjayasArin` — dhanañjayasārin  (n=1)
+
+- сопровождали Завоевателя богатств  · n=1  · mahabharata-ashvamedhikaparva
+
+### `DanaYjayasaKa` — dhanañjayasakha  (n=1)
+
+- друг Дхананджайи  · n=1  · mahabharata-sabhaparva
+
+### `DanaYjayasahAyavAn` — dhanañjayasahāyavān  (n=1)
+
+- как и Завоеватель богатств  · n=1  · mahabharata-ashvamedhikaparva
+
+### `DanaYjayasamIrita` — dhanañjayasamīrita  (n=1)
+
+- исторгаемый Дхананджаей  · n=1  · mahabharata-dronaparva
+
+### `DanaYjayasama` — dhanañjayasama  (n=1)
+
+- равен Дхананджае  · n=1  · mahabharata-dronaparva
+
+### `DanaYjayastataH` — dhanañjayastataḥ  (n=1)
+
+- Дхананджая тогда  · n=1  · mahabharata-dronaparva
+
+### `DanaYjayasutaH` — dhanañjayasutaḥ  (n=1)
+
+- сын Завоевателя богатств  · n=1  · mahabharata-ashvamedhikaparva
+
+### `DanaYjayasyADiraTeS` — dhanañjayasyādhiratheś  (n=1)
+
+- Завоеватель богатств и Сын суты  · n=1  · mahabharata-karnaparva
+
+### `DanaYjayasya` — dhanañjayasya  (n=1)
+
+- Дхананджайи  · n=1  · mahabharata-udyogaparva
+
+### `DanaYjayau` — dhanañjayau  (n=1)
+
+- Дхананджае  · n=1  · mahabharata-dronaparva
+
+### `DanaYjayavaDaiziRaH` — dhanañjayavadhaiṣiṇaḥ  (n=1)
+
+- стремясь погубить Завоевателя богатств  · n=1  · mahabharata-ashvamedhikaparva
+
+### `DanaYjaye` — dhanañjaye  (n=7)
+
+- Завоеватель богатств  · n=2  · mahabharata-bhishmaparva, mahabharata-karnaparva
+- Дхананджайи  · n=2  · mahabharata-dronaparva
+- Дхананджае  · n=1  · mahabharata-dronaparva
+- к Дхананджае  · n=1  · mahabharata-dronaparva
+- в Завоевателя богатств  · n=1  · mahabharata-ashvamedhikaparva
+
+### `DanaYjayena` — dhanañjayena  (n=11)
+
+- Завоеватель богатств  · n=5  · mahabharata-aranyakaparva, mahabharata-bhishmaparva, mahabharata-karnaparva, mahabharata-striparva
+- Завоевателем богатств  · n=3  · mahabharata-aranyakaparva, mahabharata-bhishmaparva, mahabharata-karnaparva
+- Дхананджаей  · n=2  · mahabharata-udyogaparva
+- Дхананджайей  · n=1  · mahabharata-adiparva
+
+### `DanaYjayotsuka` — dhanañjayotsuka  (n=1)
+
+- тоскуя о Завоевателе богатств  · n=1  · mahabharata-aranyakaparva
+
+### `Danacyuta` — dhanacyuta  (n=1)
+
+- лишенными богатства  · n=1  · mahabharata-adiparva
+
+### `DanadA` — dhanadā  (n=4)
+
+- даритель богатства  · n=2  · rigveda, atharvaveda
+- дарителем богатства  · n=1  · rigveda
+- Джанада  · n=1  · mahabharata-shalyaparva
+
+### `DanadADyuzitAM` — dhanadādhyuṣitāṃ  (n=2)
+
+- где правит Податель богатств  · n=1  · raghuvamsha
+- Податель богатств  · n=1  · raghuvamsha
+
+### `DanadAH` — dhanadāḥ  (n=1)
+
+- даритель сокровищ  · n=1  · rigveda
+
+### `DanadAlaya` — dhanadālaya  (n=1)
+
+- в жилище Подателя богатств  · n=1  · mahabharata-shalyaparva
+
+### `DanadAna` — dhanadāna  (n=1)
+
+- плату  · n=1  · mahabharata-adiparva
+
+### `DanadAnujaH` — dhanadānujaḥ  (n=2)
+
+- младший брат Куберы  · n=1  · ramayana-aranyakanda
+- Равана  · n=1  · raghuvamsha
+
+### `Danada` — dhanada  (n=24)
+
+- податель богатств  · n=4  · mahabharata-udyogaparva, ramayana-ayodhyakanda
+- Кубера  · n=2  · ramayana-sundarakanda, mahabharata-sabhaparva
+- Куберы  · n=2  · ramayana-aranyakanda, ramayana-balakanda
+- Дарителя богатств  · n=2  · mahabharata-aranyakaparva
+- дарителя богатства  · n=2  · rigveda
+- Куберой  · n=1  · ramayana-sundarakanda
+- Дашагрива  · n=1  · ramayana-aranyakanda
+- Кубере  · n=1  · ramayana-balakanda
+- дарителю богатств  · n=1  · rigveda
+- дают богатство  · n=1  · rigveda
+- Дарителем богатств  · n=1  · mahabharata-udyogaparva
+- Податель богатств  · n=1  · mahabharata-shalyaparva
+- Дарителю богатств  · n=1  · mahabharata-sabhaparva
+- Дханака  · n=1  · mahabharata-sabhaparva
+- Даритель богатств  · n=1  · mahabharata-sabhaparva
+- бога богатств  · n=1  · raghuvamsha
+- дающим богатства  · n=1  · atharvaveda
+
+### `DanadaBrAtr` — dhanadabhrātr  (n=1)
+
+- брат Куберы  · n=1  · ramayana-sundarakanda
+
+### `DanadaH` — dhanadaḥ  (n=1)
+
+- Даритель богатств  · n=1  · mahabharata-aranyakaparva
+
+### `DanadaM` — dhanadaṃ  (n=1)
+
+- Дарителя богатств  · n=1  · mahabharata-aranyakaparva
+
+### `DanadaRqa` — dhanadaṇḍa  (n=1)
+
+- штраф  · n=1  · manavadharmashastra
+
+### `Danadam` — dhanadam  (n=1)
+
+- Дарителю богатств  · n=1  · mahabharata-aranyakaparva
+
+### `DanadapAlitA` — dhanadapālitā  (n=1)
+
+- охраняемую подателем богатства  · n=1  · mahabharata-sabhaparva
+
+### `DanadapAlitAm` — dhanadapālitām  (n=1)
+
+- охраняемую подателем богатства  · n=1  · mahabharata-sabhaparva
+
+### `Danadapuram` — dhanadapuram  (n=1)
+
+- Обитель Куберы – Богатств Дарителя  · n=1  · buddhacharita
+
+### `Danadarakzita` — dhanadarakṣita  (n=1)
+
+- охраняемую подателем богатства  · n=1  · mahabharata-sabhaparva
+
+### `Danadendrakalpa` — dhanadendrakalpa  (n=1)
+
+- равные Индре и Дарителю богатств  · n=1  · mahabharata-karnaparva
+
+### `DanadopamAH` — dhanadopamāḥ  (n=1)
+
+- Подателю богатств  · n=1  · mahabharata-shalyaparva
+
+### `DanahIna` — dhanahīna  (n=2)
+
+- лишенный богатств  · n=1  · kama-sutra
+- бедная  · n=1  · kama-sutra
+
+### `DanahetavaH` — dhanahetavaḥ  (n=1)
+
+- за дарами  · n=1  · mahabharata-aranyakaparva
+
+### `DanaiH` — dhanaiḥ  (n=14)
+
+- богатствами  · n=3  · mahabharata-shantiparva, manavadharmashastra
+- богатством  · n=3  · mahabharata-shantiparva, mahabharata-aranyakaparva, mahabharata-udyogaparva
+- богатства  · n=2  · ramayana-ayodhyakanda, mahabharata-ashvamedhikaparva
+- беден  · n=1  · ramayana-ayodhyakanda
+- средств  · n=1  · manavadharmashastra
+- посредством богатства  · n=1  · manavadharmashastra
+- участью  · n=1  · ramayana-balakanda
+- богатство  · n=1  · mahabharata-udyogaparva
+- с богатствами  · n=1  · atharvaveda
+
+### `DanaiSvarya` — dhanaiśvarya  (n=1)
+
+- владыки богатств  · n=1  · manavadharmashastra
+
+### `DanajAta` — dhanajāta  (n=1)
+
+- вещей  · n=1  · manavadharmashastra
+
+### `Danajid` — dhanajid  (n=1)
+
+- завоевывает богатство  · n=1  · atharvaveda
+
+### `Danajit` — dhanajit  (n=2)
+
+- завоевывающий богатство  · n=1  · rigveda
+- завоевывающему добычу  · n=1  · rigveda
+
+### `DanakAma` — dhanakāma  (n=1)
+
+- жаждущий богатства  · n=1  · atharvaveda
+
+### `DanakAmyA` — dhanakāmyā  (n=1)
+
+- из жажды богатства  · n=1  · atharvaveda
+
+### `DanakaRAn` — dhanakaṇān  (n=1)
+
+- гроша  · n=1  · shatakatrayam-serebryakov
+
+### `DanakoSaH` — dhana kośaḥ  (n=1)
+
+- сокровища  · n=1  · ramayana-ayodhyakanda
+
+### `DanakzayakAraRa` — dhanakṣayakāraṇa  (n=1)
+
+- куда девались деньги  · n=1  · shukasaptati
+
+### `DanalABa` — dhanalābha  (n=1)
+
+- приобретения богатства  · n=1  · mahabharata-udyogaparva
+
+### `DanalipsA` — dhanalipsā  (n=1)
+
+- жаждой богатства  · n=1  · mahabharata-dronaparva
+
+### `DanaloBa` — dhanalobha  (n=1)
+
+- жадности к богатству  · n=1  · mahabharata-dronaparva
+
+### `DanaloBena` — dhanalobhena  (n=1)
+
+- из стремления к богатству  · n=1  · kama-sutra
+
+### `DanalubDa` — dhanalubdha  (n=1)
+
+- стяжанье богатств  · n=1  · shatakatrayam
+
+### `DanalubDasaNkulaDiyaH` — dhanalubdhasaṅkuladhiyaḥ  (n=1)
+
+- умом своим погряз в ненасытной алчности к богатству  · n=1  · shatakatrayam-serebryakov
+
+### `Danam` — dhanam  (n=74)
+
+- богатство  · n=30  · mahabharata-sabhaparva, mahabharata-udyogaparva, ramayana-ayodhyakanda, bhagavadgita-prabhupada, mahabharata-virataparva, atharvaveda, manavadharmashastra, kama-sutra, mahabharata-adiparva, bhagavadgita-burba, bhagavadgity, bhagavadgita-sharma, bhagavadgita-radha, mahabharata-shalyaparva, mahabharata-ashvamedhikaparva, rigveda, atharvaveda, atharvaveda, atharvaveda, atharvaveda, atharvaveda, mahabharata-sauptikaparva
+- богатства  · n=12  · ramayana-ayodhyakanda, mahabharata-adiparva, atharvaveda, ramayana-aranyakanda, ramanuja_gitabhashya, bhagavadgita-sementsov, mahabharata-ashvamedhikaparva
+- имущество  · n=4  · manavadharmashastra, bhagavadgita-erman
+- ставку  · n=4  · rigveda, rigveda, atharvaveda
+- ставка  · n=3  · rigveda, mahabharata-sabhaparva
+- сокровище  · n=2  · ramayana-ayodhyakanda, ramayana-aranyakanda
+- имущества  · n=2  · ramayana-ayodhyakanda, atharvaveda
+- добычу  · n=2  · rigveda, atharvaveda
+- дары  · n=1  · ramayana-ayodhyakanda
+- дарами  · n=1  · ramayana-ayodhyakanda
+- деньги  · n=1  · ramayana-ayodhyakanda
+- добро  · n=1  · manavadharmashastra
+- подвижнику  · n=1  · ramayana-aranyakanda
+- казны  · n=1  · mahabharata-aranyakaparva
+- денег  · n=1  · rigveda
+- ставки  · n=1  · rigveda
+- Ставку  · n=1  · rigveda
+- достояние  · n=1  · mahabharata-udyogaparva
+- награды  · n=1  · rigveda
+- сокровища  · n=1  · mahabharata-sabhaparva
+- имение  · n=1  · raghuvamsha
+- Добычу  · n=1  · atharvaveda
+- добру  · n=1  · isha-up
+
+### `Danam-Danam` — dhanam-dhanam  (n=1)
+
+- ставку за ставкой  · n=1  · rigveda
+
+### `DanamAdAya` — dhanamādāya  (n=1)
+
+- захватив богатство  · n=1  · mahabharata-virataparva
+
+### `DanamAnamadAnvitAH` — dhanamānamadānvitāḥ  (n=5)
+
+- безумно гордые своим богатством  · n=2  · bhagavadgita-erman
+- надуваясь богатства гордыней  · n=1  · ramanuja_gitabhashya
+- преисполненные корысти, гордости и безумия  · n=1  · bhagavadgita-smirnov
+- гордыни богатством  · n=1  · bhagavadgita-sementsov
+
+### `DanamAnamadAnvita` — dhanamānamadānvita  (n=3)
+
+- безумно гордые своим богатством  · n=2  · mahabharata-bhishmaparva
+- богатством и гордостью опьяненные  · n=1  · gitarthasamgraha-abhinavagupta
+
+### `DanamAnapariBava` — dhanamānaparibhava  (n=1)
+
+- Лишившись состояния и чести  · n=1  · shukasaptati
+
+### `DanamUlamidaM` — dhanamūlamidaṃ  (n=1)
+
+- богатство — мира нашего основа  · n=1  · shatakatrayam
+
+### `Danamada` — dhanamada  (n=1)
+
+- гордость от богатства  · n=1  · mahabharata-udyogaparva
+
+### `Danamarjaya` — dhanamarjaya  (n=1)
+
+- Богатства собирай  · n=1  · shatakatrayam
+
+### `Danamitra` — dhanamitra  (n=1)
+
+- друзья денег  · n=1  · shukasaptati
+
+### `Danamjaya` — dhanamjaya  (n=1)
+
+- о Дхананджая  · n=1  · bhagavadgita-radha
+
+### `Danamucyate` — dhanamucyate  (n=1)
+
+- слывет достоянием  · n=1  · mahabharata-aranyakaparva
+
+### `Danamuttamam` — dhanamuttamam  (n=1)
+
+- огромные богатства  · n=1  · mahabharata-adiparva
+
+### `DananASaH` — dhananāśaḥ  (n=1)
+
+- потеря богатств  · n=1  · mahabharata-ashvamedhikaparva
+
+### `Dananicaya` — dhananicaya  (n=1)
+
+- накопленные сокровища  · n=1  · ramayana-sundarakanda
+
+### `Dananjaya` — dhananjaya  (n=2)
+
+- Арджуна  · n=1  · mahabharata-adiparva
+- Завоеватель богатств  · n=1  · mahabharata-ashvamedhikaparva
+
+### `Dananjayah` — dhananjayah  (n=2)
+
+- Завоеватель богатств  · n=2  · mahabharata-ashvamedhikaparva
+
+### `Dananta` — dhananta  (n=1)
+
+- сталкиваются  · n=1  · rigveda
+
+### `DanapAla` — dhanapāla  (n=1)
+
+- хранитель богатств  · n=1  · atharvaveda
+
+### `DanaparAyaRa` — dhanaparāyaṇa  (n=1)
+
+- алчбою одержимый  · n=1  · shatakatrayam
+
+### `Danaparijanavarjita` — dhanaparijanavarjita  (n=1)
+
+- без слуг и без денег  · n=1  · shukasaptati
+
+### `Danapati` — dhanapati  (n=14)
+
+- Куверы  · n=3  · megha-duta
+- владыки богатства  · n=2  · mahabharata-sabhaparva
+- повелитель богатств  · n=2  · atharvaveda, atharvaveda
+- повелитель богатства  · n=2  · atharvaveda
+- владыке богатства  · n=1  · mahabharata-adiparva
+- владыки богатств  · n=1  · mahabharata-udyogaparva
+- Владыка сокровищ  · n=1  · mahabharata-karnaparva
+- богатых  · n=1  · shatakatrayam
+- властелина  · n=1  · megha-duta
+
+### `DanapatiH` — dhanapatiḥ  (n=3)
+
+- господином богатств  · n=2  · atharvaveda
+- Владыка сокровищ  · n=1  · mahabharata-aranyakaparva
+
+### `DanapatipuraH` — dhanapatipuraḥ  (n=1)
+
+- к богатым  · n=1  · shatakatrayam-serebryakov
+
+### `DanaratnAdi` — dhanaratnādi  (n=1)
+
+- хлебом, сокровищами и прочим добром  · n=1  · mahabharata-adiparva
+
+### `DanaratnAni` — dhanaratnāni  (n=1)
+
+- богатства и драгоценных камней  · n=1  · mahabharata-shalyaparva
+
+### `DanaratnamadAByAMca` — dhanaratnamadābhyāṃ ca  (n=1)
+
+- богатством и драгоценными камнями  · n=1  · mahabharata-adiparva
+
+### `DanaratnauGa` — dhanaratnaugha  (n=1)
+
+- потоками богатства и драгоценностей  · n=1  · mahabharata-ashvamedhikaparva
+
+### `Danarcam` — dhanarcam  (n=2)
+
+- чей гимн дает выигрыш  · n=2  · rigveda
+
+### `Danas` — dhanas  (n=3)
+
+- награду  · n=1  · rigveda
+- богатство  · n=1  · rigveda
+- зерна  · n=1  · nyaya-bhashya
+
+### `DanasA` — dhanasā  (n=3)
+
+- добывающие богатство  · n=1  · rigveda
+- стремящийся добыть богатство  · n=1  · rigveda
+- добытчик богатства  · n=1  · atharvaveda
+
+### `DanasAM` — dhanasāṃ  (n=1)
+
+- завоевателем богатства  · n=1  · rigveda
+
+### `DanasAm` — dhanasām  (n=1)
+
+- добывающему богатства  · n=1  · rigveda
+
+### `DanasAtAu` — dhanasātāu  (n=1)
+
+- ставку  · n=1  · rigveda
+
+### `DanasAtaye` — dhanasātaye  (n=1)
+
+- чтобы выиграть ставку  · n=1  · rigveda
+
+### `DanasAti` — dhanasāti  (n=1)
+
+- добычи богатства  · n=1  · atharvaveda
+
+### `DanasaMyukta` — dhanasaṃyukta  (n=1)
+
+- соединенное с богатством  · n=1  · manavadharmashastra
+
+### `DanasaYcaya` — dhanasañcaya  (n=3)
+
+- добро  · n=1  · manavadharmashastra
+- накапливать богатств  · n=1  · manavadharmashastra
+- скоплении богатств  · n=1  · mahabharata-sabhaparva
+
+### `Danasanaya` — dhanasanaya  (n=1)
+
+- получают богатство  · n=1  · ch-up
+
+### `Danasani` — dhanasani  (n=1)
+
+- покоряя богатства  · n=1  · atharvaveda
+
+### `Danasenasuto` — dhanasenasuto  (n=1)
+
+- сын Дханасены  · n=1  · shukasaptati
+
+### `Danaspft` — dhanaspṛt  (n=3)
+
+- Захватывающей богатство  · n=1  · rigveda
+- захватившему награду  · n=1  · rigveda
+- захватывающий награды  · n=1  · rigveda
+
+### `Danaspfta` — dhanaspṛta  (n=1)
+
+- Захватывающий богатство  · n=1  · rigveda
+
+### `Danaspftam` — dhanaspṛtam  (n=5)
+
+- добивающегося добычи  · n=1  · rigveda
+- Срывающее ставки  · n=1  · rigveda
+- захватывающего богатства  · n=1  · rigveda
+- выигрывающего ставку  · n=1  · rigveda
+- захватывающего награду  · n=1  · rigveda
+
+### `Danasya` — dhanasya  (n=4)
+
+- богатства  · n=2  · rigveda, rigveda
+- Богатства  · n=1  · buddhacharita
+- богатстве  · n=1  · mahabharata-virataparva
+
+### `DanasyapUrRAM` — dhanasya pūrṇāṃ  (n=1)
+
+- полную богатства  · n=1  · ch-up
+
+### `DanatfzRA` — dhanatṛṣṇā  (n=1)
+
+- жажду богатств  · n=1  · mahabharata-ashvamedhikaparva
+
+### `Danatva` — dhanatva  (n=1)
+
+- плотности  · n=1  · nyaya-bhashya
+
+### `DanauGa` — dhanaugha  (n=2)
+
+- груды богатств  · n=1  · mahabharata-ashvamedhikaparva
+- поток богатств  · n=1  · mahabharata-sabhaparva
+
+### `Danauzman` — dhanauṣman  (n=1)
+
+- жаром богатства  · n=1  · manavadharmashastra
+
+### `DanavAla` — dhanavāla  (n=1)
+
+- Дханапала  · n=1  · shukasaptati
+
+### `Danavant` — dhanavant  (n=3)
+
+- богатые  · n=1  · manavadharmashastra
+- богатый  · n=1  · manavadharmashastra
+- богатого  · n=1  · mahabharata-udyogaparva
+
+### `Danavarza` — dhanavarṣa  (n=1)
+
+- ливнем богатств  · n=1  · mahabharata-sabhaparva
+
+### `Danavat` — dhanavat  (n=3)
+
+- богатые  · n=1  · ramayana-ayodhyakanda
+- богатым  · n=1  · kama-sutra
+- богатых  · n=1  · mahabharata-udyogaparva
+
+### `Danavati` — dhanavati  (n=1)
+
+- богатой  · n=1  · kama-sutra
+
+### `DanavfdDa` — dhanavṛddha  (n=1)
+
+- возвысившихся через богатство  · n=1  · mahabharata-udyogaparva
+
+### `DanavfdDi` — dhanavṛddhi  (n=1)
+
+- рост богатства  · n=1  · mahabharata-udyogaparva
+
+### `Danayann` — dhanayann  (n=1)
+
+- привели в действие  · n=1  · rigveda
+
+### `Danayanta` — dhanayanta  (n=1)
+
+- Бегут  · n=1  · rigveda
+
+### `Danayante` — dhanayante  (n=1)
+
+- приводят в движение  · n=1  · rigveda
+
+### `DandAnujaH` — dhandānujaḥ  (n=2)
+
+- младший брат бога богатств  · n=2  · raghuvamsha
+
+### `Dane` — dhane  (n=12)
+
+- ставка  · n=3  · rigveda, rigveda, rigveda
+- богатства  · n=2  · mahabharata-aranyakaparva, rigveda
+- за богатство  · n=2  · rigveda, mahabharata-ashvamedhikaparva
+- ставке  · n=2  · rigveda, rigveda
+- награде  · n=1  · rigveda
+- состязании  · n=1  · rigveda
+- богатство  · n=1  · mahabharata-sabhaparva
+
+### `Dane-Dane` — dhane-dhane  (n=1)
+
+- ради любой награды  · n=1  · rigveda
+
+### `DaneSa` — dhaneśa  (n=5)
+
+- Владыка богатств  · n=3  · ramayana-ayodhyakanda, mahabharata-aranyakaparva, mahabharata-dronaparva
+- Кубера  · n=1  · ramayana-ayodhyakanda
+- Владыки богатств  · n=1  · mahabharata-svargarohanikaparva
+
+### `DaneSam` — dhaneśam  (n=1)
+
+- Владыке сокровищ  · n=1  · mahabharata-aranyakaparva
+
+### `DaneSvarAH` — dhaneśvarāḥ  (n=1)
+
+- Владыкою сокровищ  · n=1  · mahabharata-aranyakaparva
+
+### `DaneSvarAkrIqagatA` — dhaneśvarākrīḍagatā  (n=1)
+
+- посещая места игрищ Владыки богатств  · n=1  · mahabharata-aranyakaparva
+
+### `DaneSvara` — dhaneśvara  (n=15)
+
+- Владыка богатств  · n=5  · mahabharata-aranyakaparva, mahabharata-dronaparva, mahabharata-virataparva
+- Владыка сокровищ  · n=2  · mahabharata-udyogaparva
+- сокровищами владеешь  · n=1  · mahabharata-aranyakaparva
+- Владыке богатств  · n=1  · mahabharata-aranyakaparva
+- Владыки богатств  · n=1  · mahabharata-aranyakaparva
+- Кубера  · n=1  · mahabharata-adiparva
+- владыка богатства (Кубера)  · n=1  · mahabharata-adiparva
+- владыки богатства  · n=1  · mahabharata-dronaparva
+- владыка богатств  · n=1  · mahabharata-udyogaparva
+- владыка богатства  · n=1  · mahabharata-udyogaparva
+
+### `DaneSvaraH` — dhaneśvaraḥ  (n=1)
+
+- Владыка богатств  · n=1  · mahabharata-aranyakaparva
+
+### `DaneSvaragfhasTAnAM` — dhaneśvaragṛhasthānāṃ  (n=1)
+
+- пребывавшими в покоях Владыки богатств  · n=1  · mahabharata-aranyakaparva
+
+### `DaneSvaram` — dhaneśvaram  (n=3)
+
+- Владыку богатств  · n=1  · mahabharata-aranyakaparva
+- Властителя богатств  · n=1  · mahabharata-aranyakaparva
+- владыкою богатства  · n=1  · mahabharata-adiparva
+
+### `DaneSvarapuraHsarAH` — dhaneśvarapuraḥsarāḥ  (n=1)
+
+- предводительствуемые Владыкой богатств  · n=1  · mahabharata-aranyakaparva
+
+### `DaneSvarasutopama` — dhaneśvarasutopama  (n=1)
+
+- подобного сыну владыки богатств  · n=1  · mahabharata-dronaparva
+
+### `DaneSvarasya` — dhaneśvarasya  (n=1)
+
+- Властителя богатств  · n=1  · mahabharata-aranyakaparva
+
+### `Danena` — dhanena  (n=20)
+
+- богатством  · n=9  · mahabharata-udyogaparva, atharvaveda, atharvaveda, mahabharata-adiparva, atharvaveda
+- богатство  · n=5  · mahabharata-aranyakaparva, mahabharata-udyogaparva, mahabharata-sabhaparva, gitagovinda, mahabharata-striparva
+- богатстве  · n=1  · ramayana-ayodhyakanda
+- богатств  · n=1  · mahabharata-aranyakaparva
+- богатства  · n=1  · rigveda
+- за плату  · n=1  · mahabharata-adiparva
+- богатствами  · n=1  · mahabharata-adiparva
+- богатству  · n=1  · atharvaveda
+
+### `Daneva` — dhaneva  (n=1)
+
+- богатства  · n=1  · atharvaveda
+
+### `Danezin` — dhaneṣin  (n=2)
+
+- истцом  · n=2  · manavadharmashastra
+
+### `Danezu` — dhaneṣu  (n=6)
+
+- казной  · n=1  · ramayana-ayodhyakanda
+- богатства  · n=1  · mahabharata-aranyakaparva
+- блага  · n=1  · mahabharata-aranyakaparva
+- ставки  · n=1  · rigveda
+- Со ставками  · n=1  · rigveda
+- богатство  · n=1  · mahabharata-sabhaparva
+
+### `Danika` — dhanika  (n=4)
+
+- кредитора  · n=3  · manavadharmashastra
+- кредитору  · n=1  · manavadharmashastra
+
+### `Danin` — dhanin  (n=17)
+
+- богатых  · n=5  · shatakatrayam-serebryakov, kama-sutra, shatakatrayam, mahabharata-ashramavasikaparva
+- богатого  · n=3  · rigveda, kama-sutra
+- кредиторами  · n=2  · manavadharmashastra
+- богатому  · n=2  · manavadharmashastra
+- собственник  · n=1  · manavadharmashastra
+- богатыми  · n=1  · kama-sutra
+- богатые  · n=1  · mahabharata-udyogaparva
+- богач  · n=1  · shatakatrayam
+- богатый  · n=1  · shukasaptati
+
+### `DaninAM` — dhanināṃ  (n=1)
+
+- богачей  · n=1  · shatakatrayam-serebryakov
+
+### `DaninAm` — dhaninām  (n=1)
+
+- богачей  · n=1  · mahabharata-karnaparva
+
+### `DaninaH` — dhaninaḥ  (n=2)
+
+- богатые  · n=2  · mahabharata-bhishmaparva
+
+### `Daninam` — dhaninam  (n=1)
+
+- полную сокровищ  · n=1  · rigveda
+
+### `DanisTA` — dhanisthā  (n=1)
+
+- Дхаништха  · n=1  · vedanga_jyotisha
+
+### `DanizWA` — dhaniṣṭhā  (n=4)
+
+- Дхаништха  · n=2  · mahabharata-aranyakaparva
+- лучшая бегунья  · n=1  · rigveda
+- бегунья  · n=1  · rigveda
+
+### `DanoH` — dhanoḥ  (n=2)
+
+- из укрытия  · n=1  · rigveda
+- укрытие  · n=1  · rigveda
+
+### `Danodreka` — dhanodreka  (n=1)
+
+- большое богатство  · n=1  · mahabharata-aranyakaparva
+
+### `Danotsargam` — dhanotsargam  (n=1)
+
+- раздавала дары  · n=1  · mahabharata-aranyakaparva
+
+### `Danu` — dhanu  (n=32)
+
+- лук  · n=24  · mahabharata-dronaparva, mahabharata-bhishmaparva, ramayana-balakanda, mahabharata-adiparva, mahabharata-udyogaparva, mahabharata-karnaparva, ramayana-aranyakanda, rigveda, mahabharata-shalyaparva, mahabharata-ashvamedhikaparva, mahabharata-virataparva, vedartha-samgraha_ramanuja
+- укрытия  · n=2  · rigveda
+- луки  · n=2  · mahabharata-bhishmaparva, mahabharata-sauptikaparva
+- луков  · n=1  · ramayana-ayodhyakanda
+- берега  · n=1  · rigveda
+- лука  · n=1  · mahabharata-adiparva
+- луком  · n=1  · mahabharata-dronaparva
+
+### `DanuByaH` — dhanubhyaḥ  (n=1)
+
+- берегов  · n=1  · rigveda
+
+### `DanuByo` — dhanubhyo  (n=1)
+
+- берегов  · n=1  · rigveda
+
+### `DanuH` — dhanuḥ  (n=154)
+
+- лук  · n=134  · mahabharata-dronaparva, mahabharata-karnaparva, ramayana-aranyakanda, mahabharata-aranyakaparva, ramayana-balakanda, mahabharata-shalyaparva, mahabharata-bhishmaparva, mahabharata-virataparva, mahabharata-udyogaparva, raghuvamsha, mahabharata-adiparva, mahabharata-ashvamedhikaparva, ramayana-ayodhyakanda, mahabharata-sauptikaparva, mahabharata-mausalaparva, rigveda, buddhacharita, rigveda, ramanuja_gitabhashya, atharvaveda, atharvaveda, mun-up
+- луком  · n=8  · ramayana-aranyakanda, mahabharata-aranyakaparva, ramayana-balakanda, mahabharata-karnaparva, nr-up
+- лука  · n=4  · ramayana-balakanda, mahabharata-udyogaparva, mahabharata-aranyakaparva, mahabharata-virataparva
+- луки  · n=3  · mahabharata-aranyakaparva, mahabharata-bhishmaparva, mahabharata-shalyaparva
+- с луком  · n=1  · ramayana-ayodhyakanda
+- луку  · n=1  · ramayana-balakanda
+- луков  · n=1  · mahabharata-bhishmaparva
+- Лук  · n=1  · mahabharata-sabhaparva
+- на свой лук  · n=1  · mahabharata-virataparva
+
+### `DanuH-SrezWa` — dhanuḥ-śreṣṭha  (n=1)
+
+- превосходнейшим луком  · n=1  · mahabharata-dronaparva
+
+### `DanuHKaRqam` — dhanuḥkhaṇḍam  (n=2)
+
+- радуга  · n=1  · megha-duta
+- Лукъ Индры  · n=1  · megha-duta
+
+### `DanuHSabda` — dhanuḥśabda  (n=5)
+
+- звуки тетивы  · n=1  · mahabharata-adiparva
+- звоном лука  · n=1  · mahabharata-bhishmaparva
+- звук от лука  · n=1  · mahabharata-dronaparva
+- лук грозно звучать  · n=1  · mahabharata-shalyaparva
+- гулкий звон лука  · n=1  · mahabharata-shalyaparva
+
+### `DanuHSabdaMmahatkftvA` — dhanuḥśabdaṃ mahatkṛtvā  (n=1)
+
+- производя громкий шум от луков  · n=1  · mahabharata-shalyaparva
+
+### `DanuHSabdaiH` — dhanuḥśabdaiḥ  (n=1)
+
+- звоном натягиваемых луков  · n=1  · mahabharata-dronaparva
+
+### `DanuHSabdena` — dhanuḥśabdena  (n=1)
+
+- скрипучего звука лука  · n=1  · mahabharata-dronaparva
+
+### `DanuHSata` — dhanuḥśata  (n=1)
+
+- сто дханус  · n=1  · manavadharmashastra
+
+### `DanuHSravaRa` — dhanuḥśravaṇa  (n=1)
+
+- слухи о луке  · n=1  · raghuvamsha
+
+### `DanuHSrezWAt` — dhanuḥśreṣṭhāt  (n=1)
+
+- отменного лука  · n=1  · mahabharata-aranyakaparva
+
+### `DanuHSrezWa` — dhanuḥśreṣṭha  (n=13)
+
+- превосходнейший лук  · n=4  · mahabharata-shalyaparva, mahabharata-aranyakaparva, mahabharata-sabhaparva
+- превосходнейший из луков  · n=2  · mahabharata-udyogaparva, mahabharata-virataparva
+- лук  · n=1  · ramayana-balakanda
+- лучший из луков  · n=1  · mahabharata-aranyakaparva
+- лук, лучший из всех  · n=1  · mahabharata-adiparva
+- лук лучший  · n=1  · mahabharata-bhishmaparva
+- превосходнейшим луком  · n=1  · mahabharata-dronaparva
+- отличный старинный лук  · n=1  · mahabharata-karnaparva
+- первейший из луков  · n=1  · mahabharata-virataparva
+
+### `DanuHSrezWaM` — dhanuḥśreṣṭhaṃ  (n=2)
+
+- превосходнейший лук  · n=2  · mahabharata-aranyakaparva, mahabharata-shalyaparva
+
+### `DanuHSrezWam` — dhanuḥśreṣṭham  (n=4)
+
+- превосходнейший лук  · n=3  · mahabharata-dronaparva, mahabharata-udyogaparva, mahabharata-virataparva
+- наилучший из луков  · n=1  · mahabharata-sabhaparva
+
+### `DanuHSrezWamapAsya` — dhanuḥ śreṣṭhamapāsya  (n=1)
+
+- отбросив свой превосходнейший лук  · n=1  · mahabharata-shalyaparva
+
+### `DanuHSrezWe` — dhanuḥśreṣṭhe  (n=1)
+
+- превосходнейшими луками  · n=1  · mahabharata-dronaparva
+
+### `DanuHjyAmaRqalAntare` — dhanuḥjyāmaṇḍalāntare  (n=1)
+
+- внутри круга, образованного (натянутой) тетивой лука  · n=1  · mahabharata-dronaparva
+
+### `DanuHpramARa` — dhanuḥpramāṇa  (n=1)
+
+- размером подобным длине лука  · n=1  · hatha-yoga-pradipika
+
+### `DanuHpravarapARinau` — dhanuḥpravarapāṇinau  (n=1)
+
+- вооруженные превосходными луками  · n=1  · ramayana-sundarakanda
+
+### `DanuHsaMsTa` — dhanuḥsaṃstha  (n=2)
+
+- форму лука имеют  · n=2  · mahabharata-bhishmaparva
+
+### `DanuHsrotA` — dhanuḥsrotā  (n=1)
+
+- луки как течение  · n=1  · mahabharata-dronaparva
+
+### `DanuHsruveRa` — dhanuḥsruveṇa  (n=1)
+
+- жертвенным ковшом будет служить мой лук  · n=1  · mahabharata-udyogaparva
+
+### `DanuS` — dhanuś  (n=2)
+
+- лук  · n=2  · mahabharata-dronaparva, raghuvamsha
+
+### `DanuSA` — dhanuśā  (n=1)
+
+- луком  · n=1  · ramayana-ayodhyakanda
+
+### `DanuSCinnam` — dhanuśchinnam  (n=1)
+
+- рассечен лук  · n=1  · mahabharata-dronaparva
+
+### `DanuSCittvA` — dhanuśchittvā  (n=2)
+
+- рассекши лук  · n=1  · mahabharata-dronaparva
+- разрубив лук  · n=1  · mahabharata-dronaparva
+
+### `DanuScAsyAparaiSCittvA` — dhanuścāsyāparaiśchittvā  (n=1)
+
+- рассекши другими стрелами также и его лук  · n=1  · mahabharata-dronaparva
+
+### `DanuSca` — dhanuśca  (n=1)
+
+- и лук  · n=1  · mahabharata-dronaparva
+
+### `DanuScicCeda` — dhanuściccheda  (n=2)
+
+- рассек лук  · n=2  · mahabharata-shalyaparva
+
+### `DanuScicCedasaMyuge` — dhanuściccheda saṃyuge  (n=1)
+
+- рассек его лук в пылу сражения  · n=1  · mahabharata-shalyaparva
+
+### `DanuScitra` — dhanuścitra  (n=2)
+
+- прекрасный лук  · n=1  · mahabharata-bhishmaparva
+- чудесный грозный лук  · n=1  · mahabharata-virataparva
+
+### `DanuScyutAnAm` — dhanuścyutānām  (n=1)
+
+- выпущенных из лука  · n=1  · mahabharata-dronaparva
+
+### `DanuScyuta` — dhanuścyuta  (n=1)
+
+- выпущенная из лука  · n=1  · mahabharata-dronaparva
+
+### `DanuScyutai` — dhanuścyutai  (n=1)
+
+- выпущенным из твоего лука  · n=1  · mahabharata-virataparva
+
+### `Danum` — dhanum  (n=3)
+
+- возвышенность  · n=2  · rigveda
+- лук  · n=1  · ramayana-aranyakanda
+
+### `DanumAn` — dhanumān  (n=1)
+
+- Хануман  · n=1  · ramayana-sundarakanda
+
+### `Danur` — dhanur  (n=13)
+
+- лук  · n=9  · ramayana-aranyakanda, ramayana-balakanda, mahabharata-aranyakaparva, mahabharata-shalyaparva, br-up, raghuvamsha, atharvaveda, mun-up
+- луком  · n=1  · ramayana-ayodhyakanda
+- лучников  · n=1  · ramayana-ayodhyakanda
+- Ремесленников и лучников (śilpi-dhanurdharaiḥ)  · n=1  · ramayana-ayodhyakanda
+- луками  · n=1  · ramayana-aranyakanda
+
+### `Danur-Dara` — dhanur-dhara  (n=6)
+
+- держащий лук  · n=1  · bhagavadgita-burba
+- Пандава  · n=1  · bhagavadgita-burba
+- воин  · n=1  · bhagavadgita-1914
+- лучник  · n=1  · bhagavadgity
+- стрѣлецъ  · n=1  · bhagavadgita-1788
+- носитель лука  · n=1  · bhagavadgita-radha
+
+### `Danur-DaraH` — dhanur-dharaḥ  (n=1)
+
+- лучник  · n=1  · bhagavadgita-1909
+
+### `Danur-mArga` — dhanur-mārga  (n=1)
+
+- приемы луками  · n=1  · mahabharata-dronaparva
+
+### `DanurAdAya` — dhanurādāya  (n=1)
+
+- взял лук  · n=1  · mahabharata-aranyakaparva
+
+### `DanurAdada` — dhanurādada  (n=1)
+
+- владеющих луком  · n=1  · mahabharata-karnaparva
+
+### `DanurAkarzaRa` — dhanurākarṣaṇa  (n=1)
+
+- натягивая тетиву лука  · n=1  · hatha-yoga-pradipika
+
+### `DanurAsana` — dhanurāsana  (n=2)
+
+- Дханурасана  · n=2  · hatha-yoga-pradipika
+
+### `DanurAyamya` — dhanurāyamya  (n=2)
+
+- Натянув лук  · n=1  · ramayana-aranyakanda
+- натянув свой лук  · n=1  · mahabharata-shalyaparva
+
+### `DanurAyantu` — dhanurāyantu  (n=1)
+
+- натягивать лук  · n=1  · mahabharata-adiparva
+
+### `DanurBft` — dhanurbhṛt  (n=6)
+
+- лучник  · n=2  · mahabharata-dronaparva
+- воинов  · n=1  · mahabharata-aranyakaparva
+- воители  · n=1  · mahabharata-udyogaparva
+- лучников  · n=1  · mahabharata-karnaparva
+- искусство владения луком  · n=1  · mahabharata-karnaparva
+
+### `DanurBftAm` — dhanurbhṛtām  (n=1)
+
+- лучников  · n=1  · raghuvamsha
+
+### `DanurBftaH` — dhanurbhṛtaḥ  (n=1)
+
+- владеющие оружием  · n=1  · raghuvamsha
+
+### `DanurBfte` — dhanurbhṛte  (n=1)
+
+- стрелку из лука  · n=1  · mahabharata-shalyaparva
+
+### `DanurBfto` — dhanurbhṛto  (n=1)
+
+- грозного лучника  · n=1  · raghuvamsha
+
+### `DanurDarA` — dhanurdharā  (n=1)
+
+- с луками наготове  · n=1  · mahabharata-aranyakaparva
+
+### `DanurDarAH` — dhanurdharāḥ  (n=3)
+
+- стрелки из лука  · n=1  · mahabharata-aranyakaparva
+- лучники  · n=1  · mahabharata-dronaparva
+- держащие луки  · n=1  · mahabharata-dronaparva
+
+### `DanurDarAgrya` — dhanurdharāgrya  (n=1)
+
+- первейший из лучников  · n=1  · mahabharata-virataparva
+
+### `DanurDara` — dhanurdhara  (n=42)
+
+- лучник  · n=8  · mahabharata-udyogaparva, raghuvamsha, mahabharata-adiparva, mahabharata-dronaparva, bhagavadgita-smirnov, mahabharata-karnaparva
+- держателя лука  · n=3  · mahabharata-adiparva, mahabharata-karnaparva
+- лучники  · n=3  · mahabharata-dronaparva, mahabharata-udyogaparva, mai-up
+- вооруженный луком  · n=2  · ramayana-sundarakanda, mahabharata-udyogaparva
+- лук  · n=2  · ramayana-aranyakanda, mahabharata-aranyakaparva
+- луки  · n=2  · ramayana-balakanda, mahabharata-aranyakaparva
+- лука держатель  · n=2  · mahabharata-bhishmaparva, bhagavadgita-erman
+- лучников  · n=2  · mahabharata-dronaparva
+- стрелок из лука  · n=2  · mahabharata-udyogaparva, mahabharata-karnaparva
+- с луком  · n=1  · ramayana-ayodhyakanda
+- стрелок  · n=1  · manavadharmashastra
+- носитель лука  · n=1  · mahabharata-adiparva
+- луком вооруженного  · n=1  · mahabharata-bhishmaparva
+- носящих лук  · n=1  · mahabharata-bhishmaparva
+- лучника  · n=1  · mahabharata-dronaparva
+- обладателем лука  · n=1  · mahabharata-udyogaparva
+- владея своим луком  · n=1  · mahabharata-udyogaparva
+- владея луком  · n=1  · mahabharata-udyogaparva
+- вооруженным  · n=1  · mahabharata-udyogaparva
+- держатель лука  · n=1  · gitarthasamgraha-abhinavagupta
+- Лучник  · n=1  · bhagavadgita-sementsov
+- Дханурдхара  · n=1  · mahabharata-karnaparva
+- вооруженные луками  · n=1  · mahabharata-karnaparva
+- держа в руках лук  · n=1  · mahabharata-karnaparva
+- с луком в руке  · n=1  · mahabharata-virataparva
+
+### `DanurDaraH` — dhanurdharaḥ  (n=10)
+
+- лучник  · n=3  · mahabharata-dronaparva, mahabharata-sabhaparva
+- с луком  · n=1  · ramayana-ayodhyakanda
+- владел бы луком  · n=1  · mahabharata-aranyakaparva
+- воин  · n=1  · mahabharata-udyogaparva
+- Лучник  · n=1  · ramanuja_gitabhashya
+- великий лучник  · n=1  · bhagavadgita-sharma
+- носящий лук и стрелы  · n=1  · bhagavadgita-prabhupada
+- колесничим  · n=1  · bhagavadgita-prabhupada
+
+### `DanurDaraM` — dhanurdharaṃ  (n=1)
+
+- лучника  · n=1  · mahabharata-dronaparva
+
+### `DanurDaram` — dhanurdharam  (n=3)
+
+- лучника  · n=3  · mahabharata-dronaparva, raghuvamsha
+
+### `DanurDarau` — dhanurdharau  (n=1)
+
+- лучника  · n=1  · mahabharata-dronaparva
+
+### `DanurDaravarAH` — dhanurdharavarāḥ  (n=1)
+
+- искусные во владении луком  · n=1  · mahabharata-bhishmaparva
+
+### `DanurDaravara` — dhanurdharavara  (n=2)
+
+- отменнейшими лучниками  · n=1  · mahabharata-aranyakaparva
+- лучший среди лучников  · n=1  · mahabharata-adiparva
+
+### `DanurDvajAgra` — dhanurdhvajāgra  (n=1)
+
+- под знаменем с изображением лука  · n=1  · mahabharata-virataparva
+
+### `DanurDvaja` — dhanurdhvaja  (n=1)
+
+- луки, знамена  · n=1  · mahabharata-dronaparva
+
+### `DanurDvajaM` — dhanurdhvajaṃ  (n=1)
+
+- лук и знамя  · n=1  · mahabharata-dronaparva
+
+### `DanurDvajaMcaCatraMca` — dhanurdhvajaṃ ca chatraṃ ca  (n=1)
+
+- лук, знамя и зонт  · n=1  · mahabharata-dronaparva
+
+### `DanurGoza` — dhanurghoṣa  (n=1)
+
+- звон лука  · n=1  · mahabharata-dronaparva
+
+### `DanurGozeRa` — dhanurghoṣeṇa  (n=2)
+
+- звоном лука  · n=1  · mahabharata-dronaparva
+- звоном своего лука  · n=1  · mahabharata-shalyaparva
+
+### `DanuraSvAMSca` — dhanuraśvāṃśca  (n=1)
+
+- лук и коней  · n=1  · mahabharata-dronaparva
+
+### `DanurbARa` — dhanurbāṇa  (n=2)
+
+- лук и стрела  · n=1  · mahabharata-dronaparva
+- лук, стрелу  · n=1  · mahabharata-karnaparva
+
+### `DanurbARaDar` — dhanurbāṇadhar  (n=1)
+
+- с луком и стрелами в руках  · n=1  · mahabharata-karnaparva
+
+### `DanurbARaDara` — dhanurbāṇadhara  (n=1)
+
+- носившего лук и стрелы  · n=1  · mahabharata-adiparva
+
+### `DanurbARocitena` — dhanurbāṇocitena  (n=1)
+
+- привычной к луку и стрелам  · n=1  · mahabharata-udyogaparva
+
+### `DanurdfQam` — dhanurdṛḍham  (n=1)
+
+- тугого лука  · n=1  · mahabharata-dronaparva
+
+### `Danurdivya` — dhanurdivya  (n=2)
+
+- дивный лук  · n=1  · mahabharata-sauptikaparva
+- волшебный свой лук  · n=1  · mahabharata-mahaprasthanikaparva
+
+### `DanurdivyaM` — dhanurdivyaṃ  (n=1)
+
+- небесный лук  · n=1  · mahabharata-dronaparva
+
+### `DanurgfhItvA` — dhanurgṛhītvā  (n=1)
+
+- взялся за лук  · n=1  · mahabharata-aranyakaparva
+
+### `Danurgfhya` — dhanurgṛhya  (n=3)
+
+- взял свой лук  · n=1  · mahabharata-dronaparva
+- взяв другой лук  · n=1  · mahabharata-dronaparva
+- взяв лук  · n=1  · mahabharata-karnaparva
+
+### `DanurgrAhAn` — dhanurgrāhān  (n=2)
+
+- лучников  · n=2  · mahabharata-aranyakaparva, mahabharata-mahaprasthanikaparva
+
+### `DanurgrAhaH` — dhanurgrāhaḥ  (n=1)
+
+- Дханурграха  · n=1  · mahabharata-karnaparva
+
+### `DanurgrahaRa` — dhanurgrahaṇa  (n=1)
+
+- взял лук  · n=1  · raghuvamsha
+
+### `DanurgrahavaraH` — dhanurgrahavaraḥ  (n=1)
+
+- лучший из лучников  · n=1  · ramayana-ayodhyakanda
+
+### `DanurhastAH` — dhanurhastāḥ  (n=1)
+
+- взялись за луки  · n=1  · mahabharata-sauptikaparva
+
+### `Danurhasta` — dhanurhasta  (n=1)
+
+- с луком в руке  · n=1  · mahabharata-dronaparva
+
+### `DanurhrAdamahASabda` — dhanurhrādamahāśabda  (n=1)
+
+- громкий треск лука  · n=1  · mahabharata-bhishmaparva
+
+### `DanurjyA` — dhanurjyā  (n=5)
+
+- тетиву лука  · n=3  · mahabharata-bhishmaparva, mahabharata-dronaparva, mahabharata-karnaparva
+- тетивы  · n=1  · mahabharata-karnaparva
+- тетива лука  · n=1  · mahabharata-shalyaparva
+
+### `DanurjyAm` — dhanurjyām  (n=1)
+
+- тетиву своего лука  · n=1  · mahabharata-dronaparva
+
+### `DanurjyAtalaSabdaH` — dhanurjyātalaśabdaḥ  (n=1)
+
+- звуки от тетивы их луков и шлепков ладоней  · n=1  · mahabharata-dronaparva
+
+### `DanurjyAtalaneminisvana` — dhanurjyātalaneminisvana  (n=1)
+
+- грохотом колес и звуком тетивы  · n=1  · mahabharata-karnaparva
+
+### `DanurjyAtalanisvana` — dhanurjyātalanisvana  (n=2)
+
+- громкие звуки тетивы и шлепков ладоней  · n=1  · mahabharata-dronaparva
+- Громкий гул от их луков, тетив и шлепков ладоней  · n=1  · mahabharata-shalyaparva
+
+### `DanurmaDyagata` — dhanurmadhyagata  (n=1)
+
+- возложив на середину лука  · n=1  · mahabharata-dronaparva
+
+### `DanurmaRqala` — dhanurmaṇḍala  (n=3)
+
+- диском  · n=2  · mahabharata-karnaparva
+- круг от натягиваемого им лука  · n=1  · mahabharata-dronaparva
+
+### `Danurmuktena` — dhanurmuktena  (n=1)
+
+- выпущенных из лука  · n=1  · mahabharata-dronaparva
+
+### `Danurmuzwi` — dhanurmuṣṭi  (n=1)
+
+- лук  · n=1  · mahabharata-striparva
+
+### `Danurudyamya` — dhanurudyamya  (n=2)
+
+- подъяв свой лук  · n=1  · bhagavadgita-erman
+- подняв лук  · n=1  · bhagavadgita-sementsov
+
+### `Danurutsfjya` — dhanurutsṛjya  (n=1)
+
+- бросив лук  · n=1  · mahabharata-dronaparva
+
+### `DanurvIRAM` — dhanurvīṇāṃ  (n=1)
+
+- лук-вина  · n=1  · mahabharata-virataparva
+
+### `Danurvaktra` — dhanurvaktra  (n=1)
+
+- Дханурвактра  · n=1  · mahabharata-shalyaparva
+
+### `Danurvara` — dhanurvara  (n=1)
+
+- превосходнейший лук  · n=1  · mahabharata-karnaparva
+
+### `DanurvaraM` — dhanurvaraṃ  (n=2)
+
+- лучший из луков  · n=2  · ramayana-balakanda
+
+### `Danurvaram` — dhanurvaram  (n=1)
+
+- превосходный лук  · n=1  · mahabharata-aranyakaparva
+
+### `DanurvedAntaga` — dhanurvedāntaga  (n=1)
+
+- искушенного в военной науке  · n=1  · mahabharata-adiparva
+
+### `Danurveda` — dhanurveda  (n=49)
+
+- военной наукой  · n=4  · mahabharata-adiparva
+- военная наука  · n=3  · mahabharata-aranyakaparva, mahabharata-dronaparva
+- военную науку  · n=3  · mahabharata-adiparva, mahabharata-udyogaparva, mahabharata-sabhaparva
+- наука о луке  · n=2  · mahabharata-shantiparva
+- наука стрельбы из лука  · n=2  · mahabharata-shantiparva
+- искусстве стрельбы из лука  · n=2  · ramayana-sundarakanda, mahabharata-aranyakaparva
+- воинского искусства  · n=2  · ramayana-sundarakanda, ramayana-balakanda
+- военной науки  · n=2  · mahabharata-adiparva
+- наука владения оружием  · n=2  · mahabharata-dronaparva
+- науку владения оружием  · n=2  · mahabharata-dronaparva
+- Дханурведе  · n=1  · mahabharata-shantiparva
+- Дханурведу  · n=1  · mahabharata-shantiparva
+- науке стрельбы из лука  · n=1  · mahabharata-shantiparva
+- в науке стрельбы из лука  · n=1  · mahabharata-shantiparva
+- науку о луке  · n=1  · mahabharata-shantiparva
+- в науке о луке  · n=1  · mahabharata-shantiparva
+- Дханурведа  · n=1  · mahabharata-shantiparva
+- в военном искусстве  · n=1  · mahabharata-shantiparva
+- воинское искусство  · n=1  · ramayana-balakanda
+- виды оружия  · n=1  · ramayana-balakanda
+- Знанию оружия  · n=1  · ramayana-balakanda
+- знание оружия  · n=1  · ramayana-balakanda
+- стрельба из лука  · n=1  · mahabharata-aranyakaparva
+- стрелять из лука  · n=1  · mahabharata-aranyakaparva
+- искусство стрельбы из лука  · n=1  · kama-sutra
+- военной науке  · n=1  · mahabharata-adiparva
+- искусство владеть луком  · n=1  · mahabharata-adiparva
+- науке владеть луком  · n=1  · mahabharata-adiparva
+- воплощение военной науки  · n=1  · mahabharata-adiparva
+- науке владения оружием и луком  · n=1  · mahabharata-dronaparva
+- науке оружия  · n=1  · mahabharata-dronaparva
+- таинства стрельбы из лука  · n=1  · mahabharata-karnaparva
+- знание военной науки  · n=1  · mahabharata-karnaparva
+- Военная наука  · n=1  · mahabharata-shalyaparva
+- науку владения луком  · n=1  · mahabharata-adiparva
+
+### `DanurvedaH` — dhanurvedaḥ  (n=1)
+
+- наука военного искусства  · n=1  · mahabharata-virataparva
+
+### `Danurvedam` — dhanurvedam  (n=3)
+
+- искусством стрельбы из лука  · n=1  · mahabharata-aranyakaparva
+- военную науку  · n=1  · mahabharata-udyogaparva
+- „знание лука"  · n=1  · mahabharata-karnaparva
+
+### `DanurvedaparAyaRa` — dhanurvedaparāyaṇa  (n=2)
+
+- искусный в стрельбе из лука  · n=1  · mahabharata-aranyakaparva
+- искусными в военной науке  · n=1  · mahabharata-adiparva
+
+### `Danurvedapara` — dhanurvedapara  (n=1)
+
+- совершенствующийся в военной науке  · n=1  · mahabharata-aranyakaparva
+
+### `Danurvedasya` — dhanurvedasya  (n=1)
+
+- военной науки  · n=1  · mahabharata-dronaparva
+
+### `Danurvedavid` — dhanurvedavid  (n=1)
+
+- в науке стрельбы из лука искушенные  · n=1  · mahabharata-bhishmaparva
+
+### `DanurvedavidAm` — dhanurvedavidām  (n=1)
+
+- знаток воинского искусства  · n=1  · ramayana-ayodhyakanda
+
+### `Danurvede` — dhanurvede  (n=1)
+
+- искусство стрельбы из лука  · n=1  · mahabharata-aranyakaparva
+
+### `DanurvinAmya` — dhanurvināmya  (n=2)
+
+- опустив лук  · n=2  · mahabharata-karnaparva
+
+### `Danus` — dhanus  (n=366)
+
+- лук  · n=260  · mahabharata-dronaparva, mahabharata-karnaparva, mahabharata-bhishmaparva, mahabharata-adiparva, ramayana-balakanda, mahabharata-aranyakaparva, ramayana-aranyakanda, ramayana-ayodhyakanda, mahabharata-shalyaparva, mahabharata-virataparva, mahabharata-udyogaparva, mahabharata-ashvamedhikaparva, mai-up, ramayana-sundarakanda, rigveda, rigveda, devi-gita, rigveda, buddhacharita, gitarthasamgraha-abhinavagupta, bhagavadgita-burba, bhagavadgita-1914, bhagavadgity, bhagavadgita-smirnov, bhagavadgita-sharma, bhagavadgita-prabhupada, bhagavadgita-radha, kumarasambhava, atharvaveda, mahabharata-sabhaparva, raghuvamsha, atharvaveda, atharvaveda, gitagovinda, atharvaveda, shukasaptati, atharvaveda, mahabharata-sauptikaparva
+- лука  · n=33  · mahabharata-karnaparva, ramayana-aranyakanda, mahabharata-dronaparva, ramayana-sundarakanda, mahabharata-aranyakaparva, ramayana-balakanda, mahabharata-adiparva, mahabharata-bhishmaparva, ch-up, mahabharata-ashvamedhikaparva, raghuvamsha, mahabharata-virataparva
+- луки  · n=28  · mahabharata-dronaparva, mahabharata-karnaparva, mahabharata-bhishmaparva, mahabharata-aranyakaparva, mahabharata-udyogaparva, mahabharata-virataparva, mahabharata-shantiparva, mahabharata-shalyaparva, raghuvamsha, mahabharata-adiparva
+- луком  · n=15  · mahabharata-dronaparva, mahabharata-adiparva, mahabharata-bhishmaparva, mahabharata-karnaparva, ramayana-ayodhyakanda, mahabharata-udyogaparva, mahabharata-ashvamedhikaparva, raghuvamsha, gitagovinda
+- луков  · n=8  · mahabharata-bhishmaparva, ramayana-balakanda, mahabharata-adiparva, mahabharata-udyogaparva, mahabharata-karnaparva, mahabharata-shalyaparva, atharvaveda
+- луке  · n=4  · ramayana-balakanda, mahabharata-karnaparva
+- луками  · n=4  · mahabharata-dronaparva, mahabharata-bhishmaparva, mahabharata-virataparva
+- Лук  · n=2  · ramayana-aranyakanda, mahabharata-sabhaparva
+- лукъ  · n=2  · bhagavadgita-1788, bhagavadgita-1909
+- пруды  · n=1  · ramayana-ayodhyakanda
+- Дханус  · n=1  · manavadharmashastra
+- оружия  · n=1  · ramayana-balakanda
+- города  · n=1  · ramayana-balakanda
+- стрельбе из лука  · n=1  · mahabharata-adiparva
+- военной науке  · n=1  · mahabharata-adiparva
+- руки  · n=1  · mahabharata-karnaparva
+- тетива лука  · n=1  · mahabharata-karnaparva
+- тетиву  · n=1  · raghuvamsha
+- радугой  · n=1  · megha-duta
+
+### `DanusSarARAMkartA` — dhanusśarāṇāṃ kartā  (n=1)
+
+- того, кто делает луки и стрелы  · n=1  · manavadharmashastra
+
+### `DanutarA` — dhanutarā  (n=1)
+
+- быстрых  · n=1  · rigveda
+
+### `DanutrIH` — dhanutrīḥ  (n=3)
+
+- помогающие стекать  · n=2  · rigveda
+- приводят в движение  · n=1  · rigveda
+
+### `Danuz` — dhanuṣ  (n=8)
+
+- лука  · n=2  · mahabharata-aranyakaparva, mahabharata-karnaparva
+- луком  · n=1  · ramayana-ayodhyakanda
+- оружия  · n=1  · ramayana-sundarakanda
+- С луком  · n=1  · ramayana-aranyakanda
+- лес  · n=1  · ramayana-aranyakanda
+- луков  · n=1  · mahabharata-dronaparva
+- лук  · n=1  · mahabharata-dronaparva
+
+### `DanuzA` — dhanuṣā  (n=20)
+
+- луком  · n=10  · mahabharata-dronaparva, ramayana-ayodhyakanda, mahabharata-bhishmaparva, mahabharata-karnaparva, raghuvamsha, mahabharata-virataparva
+- лук  · n=3  · ramayana-aranyakanda, mahabharata-aranyakaparva
+- к луку  · n=1  · ramayana-aranyakanda
+- мечом  · n=1  · ramayana-aranyakanda
+- из лука  · n=1  · mahabharata-aranyakaparva
+- стрельбы из лука  · n=1  · mahabharata-aranyakaparva
+- в стрельбе из лука  · n=1  · mahabharata-udyogaparva
+- луку  · n=1  · mahabharata-karnaparva
+- своим луком  · n=1  · mahabharata-ashvamedhikaparva
+
+### `DanuzAM` — dhanuṣāṃ  (n=2)
+
+- луков  · n=2  · mahabharata-dronaparva, mahabharata-udyogaparva
+
+### `DanuzAkza` — dhanuṣākṣa  (n=3)
+
+- Дханушакша  · n=2  · mahabharata-aranyakaparva
+- Дханушакшу  · n=1  · mahabharata-aranyakaparva
+
+### `DanuzAm` — dhanuṣām  (n=3)
+
+- луков  · n=3  · mahabharata-bhishmaparva, mahabharata-dronaparva
+
+### `DanuzI` — dhanuṣī  (n=5)
+
+- лука  · n=3  · ramayana-ayodhyakanda, ramayana-aranyakanda
+- луки  · n=2  · mahabharata-dronaparva
+
+### `DanuzaH` — dhanuṣaḥ  (n=18)
+
+- лука  · n=14  · mahabharata-dronaparva, ramayana-balakanda, mahabharata-karnaparva, mahabharata-virataparva, mahabharata-bhishmaparva, mahabharata-udyogaparva, mahabharata-sauptikaparva
+- лук  · n=2  · raghuvamsha, mahabharata-virataparva
+- луке  · n=1  · ramayana-balakanda
+- из лука  · n=1  · mahabharata-karnaparva
+
+### `DanuzaS` — dhanuṣaś  (n=1)
+
+- лука  · n=1  · ramayana-balakanda
+
+### `DanuzaSCedana` — dhanuṣaśchedana  (n=1)
+
+- того, что лук его рассечен  · n=1  · mahabharata-shalyaparva
+
+### `DanuzaScaSarARAMcatadapaSyAmakevalam` — dhanuṣaśca śarāṇāṃ ca tadapaśyāma kevalam  (n=2)
+
+- на луке и стрелах его мы и могли видеть  · n=2  · mahabharata-dronaparva
+
+### `Danuzaikena` — dhanuṣaikena  (n=1)
+
+- с помощью лишь одного только лука  · n=1  · mahabharata-dronaparva
+
+### `Danuzi` — dhanuṣi  (n=12)
+
+- лук  · n=3  · ramayana-aranyakanda, raghuvamsha, mahabharata-virataparva
+- лука  · n=2  · ramayana-aranyakanda, mahabharata-dronaparva
+- в искусстве владения луком  · n=2  · mahabharata-dronaparva
+- в стрельбе из лука  · n=2  · mahabharata-karnaparva, amaru-shataka
+- на луке  · n=1  · ramayana-aranyakanda
+- в искусстве владеть луком  · n=1  · mahabharata-adiparva
+- в (стрельбе) из лука  · n=1  · mahabharata-dronaparva
+
+### `DanuzivikrAnta` — dhanuṣi vikrānta  (n=1)
+
+- великолепных лучников  · n=1  · mahabharata-ashvamedhikaparva
+
+### `DanuzkarzaRamUQahastam` — dhanuṣkarṣaṇamūḍhahastam  (n=1)
+
+- руки их не в силах были натянуть тетиву  · n=1  · raghuvamsha
+
+### `Danuzkowi` — dhanuṣkoṭi  (n=2)
+
+- концом лука  · n=2  · mahabharata-adiparva
+
+### `DanuzkowiM` — dhanuṣkoṭiṃ  (n=1)
+
+- конец лука  · n=1  · mahabharata-sauptikaparva
+
+### `DanuzkowyA` — dhanuṣkoṭyā  (n=6)
+
+- концом лука  · n=1  · mahabharata-adiparva
+- острием лука  · n=1  · mahabharata-adiparva
+- остриём лука  · n=1  · mahabharata-adiparva
+- древком лука  · n=1  · mahabharata-aranyakaparva
+- Концом лука  · n=1  · mahabharata-sauptikaparva
+- концом своего лука  · n=1  · mahabharata-mausalaparva
+
+### `DanuzmAn` — dhanuṣmān  (n=4)
+
+- с луком  · n=2  · mahabharata-aranyakaparva, raghuvamsha
+- взяв лук  · n=1  · ramayana-ayodhyakanda
+- вооружившись луком  · n=1  · ramayana-aranyakanda
+
+### `DanuzmadBiH` — dhanuṣmadbhiḥ  (n=1)
+
+- лучниками  · n=1  · ramayana-sundarakanda
+
+### `Danuzmant` — dhanuṣmant  (n=4)
+
+- вооруженные луками  · n=1  · ramayana-sundarakanda
+- в которой тот держал лук  · n=1  · mahabharata-aranyakaparva
+- луком вооруженного  · n=1  · mahabharata-bhishmaparva
+- вооруженный луком  · n=1  · mahabharata-udyogaparva
+
+### `Danuzmat` — dhanuṣmat  (n=15)
+
+- лучников  · n=2  · ramayana-aranyakanda, mahabharata-dronaparva
+- владении луком  · n=2  · mahabharata-udyogaparva
+- попадает в цель по звуку  · n=1  · ramayana-ayodhyakanda
+- Вооруженного луком  · n=1  · ramayana-sundarakanda
+- имеющий лук  · n=1  · mahabharata-aranyakaparva
+- стрелка из лука  · n=1  · mahabharata-aranyakaparva
+- искусный стрелок из лука  · n=1  · mahabharata-aranyakaparva
+- вооружен луком  · n=1  · mahabharata-adiparva
+- вооруженный луком  · n=1  · mahabharata-bhishmaparva
+- искусству владения луком  · n=1  · mahabharata-dronaparva
+- лучником  · n=1  · mahabharata-udyogaparva
+- стрелков из лука  · n=1  · mahabharata-karnaparva
+- стрелок из лука  · n=1  · mahabharata-ashvamedhikaparva
+
+### `DanuzmatAm` — dhanuṣmatām  (n=3)
+
+- лучника  · n=1  · mahabharata-aranyakaparva
+- среди лучников  · n=1  · mahabharata-aranyakaparva
+- лучников  · n=1  · mahabharata-dronaparva
+
+### `Danuzo'greRa` — dhanuṣo'greṇa  (n=1)
+
+- концом лука  · n=1  · mahabharata-dronaparva
+
+### `Danuzo'sya` — dhanuṣo'sya  (n=1)
+
+- лука  · n=1  · ramayana-balakanda
+
+### `DanuzpARi` — dhanuṣpāṇi  (n=15)
+
+- с луком в руке  · n=6  · mahabharata-dronaparva, mahabharata-udyogaparva, mahabharata-adiparva
+- с луком в руках  · n=4  · ramayana-sundarakanda, mahabharata-adiparva, mahabharata-ashvamedhikaparva, mahabharata-sauptikaparva
+- хватался за лук  · n=1  · ramayana-aranyakanda
+- держа лук в руках  · n=1  · ramayana-aranyakanda
+- вооружившись луком  · n=1  · ramayana-balakanda
+- с луками  · n=1  · ramayana-balakanda
+- с грозными луками  · n=1  · ramayana-balakanda
+
+### `DanuzpARiH` — dhanuṣpāṇiḥ  (n=3)
+
+- с луком в руках  · n=2  · ramayana-aranyakanda, mahabharata-sauptikaparva
+- держишь в руках лук  · n=1  · ramayana-aranyakanda
+
+### `DanuzpARim` — dhanuṣpāṇim  (n=3)
+
+- с луком в руке  · n=2  · ramayana-sundarakanda, mahabharata-udyogaparva
+- с луком в руках  · n=1  · mahabharata-shalyaparva
+
+### `Danuzy` — dhanuṣy  (n=1)
+
+- на лук  · n=1  · raghuvamsha
+
+### `Danuzyanavara` — dhanuṣyanavara  (n=2)
+
+- необыкновенный в искусстве владения луком  · n=1  · mahabharata-dronaparva
+- непревзойденным в искусстве владения луком  · n=1  · mahabharata-virataparva
+
+### `Danv` — dhanv  (n=6)
+
+- послал бежать  · n=2  · rigveda
+- дадут  · n=1  · rigveda
+- бежать  · n=1  · rigveda
+- Мчись  · n=1  · rigveda
+- беги  · n=1  · atharvaveda
+
+### `DanvA` — dhanvā  (n=4)
+
+- пустыни  · n=2  · rigveda, atharvaveda
+- беги  · n=1  · rigveda
+- пустыню  · n=1  · rigveda
+
+### `DanvAcArya` — dhanvācārya  (n=1)
+
+- наставник в искусстве владения луком  · n=1  · mahabharata-dronaparva
+
+### `DanvAkzitam` — dhanvākṣitam  (n=2)
+
+- пустыню (и) заселенную землю  · n=2  · rigveda
+
+### `DanvAnam` — dhanvānam  (n=1)
+
+- лучника  · n=1  · ramayana-aranyakanda
+
+### `DanvAnau` — dhanvānau  (n=1)
+
+- луки  · n=1  · ramayana-aranyakanda
+
+### `DanvAni` — dhanvāni  (n=5)
+
+- пустыни  · n=3  · rigveda, rigveda, rigveda
+- Засушливые земли  · n=1  · rigveda
+- луки  · n=1  · rigveda
+
+### `DanvAsahA` — dhanvāsahā  (n=1)
+
+- с побеждающим из лука  · n=1  · rigveda
+
+### `DanvAti` — dhanvāti  (n=1)
+
+- помчится  · n=1  · rigveda
+
+### `DanvI` — dhanvī  (n=7)
+
+- с луком  · n=3  · ramayana-aranyakanda, mahabharata-ashvamedhikaparva
+- луком  · n=2  · mahabharata-dronaparva, mahabharata-udyogaparva
+- стрелок из лука  · n=1  · mahabharata-aranyakaparva
+- лучник  · n=1  · raghuvamsha
+
+### `Danva` — dhanva  (n=16)
+
+- беги  · n=5  · rigveda
+- Беги  · n=3  · rigveda
+- равнину  · n=2  · rigveda
+- пустыню  · n=2  · rigveda
+- в пустынях  · n=1  · rigveda
+- пустыня  · n=1  · rigveda
+- мчись  · n=1  · rigveda
+- лук  · n=1  · rigveda
+
+### `DanvacaraH` — dhanvacaraḥ  (n=1)
+
+- бродящий по пустыне  · n=1  · rigveda
+
+### `Danvacyuta` — dhanvacyuta  (n=1)
+
+- сотрясающие твердую землю  · n=1  · rigveda
+
+### `Danvadurga` — dhanvadurga  (n=1)
+
+- крепость, окруженную на расстояние выстрела из лука пустым пространством  · n=1  · manavadharmashastra
+
+### `Danvan` — dhanvan  (n=29)
+
+- луком  · n=3  · ramayana-aranyakanda, mahabharata-bhishmaparva, rigveda
+- лука  · n=3  · atharvaveda, atharvaveda, atharvaveda
+- берег  · n=2  · rigveda
+- пустыне  · n=2  · rigveda, rigveda
+- пустыня  · n=2  · rigveda
+- с луком  · n=2  · rigveda
+- пустыни  · n=2  · rigveda, atharvaveda
+- лук  · n=1  · ramayana-aranyakanda
+- сухой земле  · n=1  · rigveda
+- равнине  · n=1  · rigveda
+- лучник  · n=1  · mahabharata-dronaparva
+- в луке  · n=1  · rigveda
+- на сухой почве  · n=1  · rigveda
+- луки  · n=1  · rigveda
+- на сухих землях  · n=1  · rigveda
+- луке  · n=1  · atharvaveda
+- по сухим землям  · n=1  · rigveda
+- в пустыне  · n=1  · atharvaveda
+- луков  · n=1  · atharvaveda
+- пустыню  · n=1  · atharvaveda
+
+### `DanvanA` — dhanvanā  (n=4)
+
+- Дханвана  · n=2  · ramayana-aranyakanda
+- по пустыне  · n=2  · rigveda
+
+### `Danvana` — dhanvana  (n=3)
+
+- Дханвана  · n=1  · ramayana-ayodhyakanda
+- дханвана  · n=1  · ramayana-ayodhyakanda
+- пустынных  · n=1  · mahabharata-aranyakaparva
+
+### `DanvanaH` — dhanvanaḥ  (n=2)
+
+- из лука  · n=1  · atharvaveda
+- луки  · n=1  · rigveda
+
+### `Danvaned` — dhanvaned  (n=2)
+
+- в пустыне  · n=2  · rigveda
+
+### `Danvani` — dhanvani  (n=2)
+
+- в сухую землю  · n=1  · atharvaveda
+- на луке  · n=1  · atharvaveda
+
+### `DanvantarARi` — dhanvantarāṇi  (n=2)
+
+- дханвантар  · n=1  · mahabharata-karnaparva
+- дханвантара  · n=1  · mahabharata-karnaparva
+
+### `Danvantara` — dhanvantara  (n=1)
+
+- сам - тетива и лук и также стрела  · n=1  · mahabharata-dronaparva
+
+### `Danvantari` — dhanvantari  (n=5)
+
+- Дханвантари  · n=5  · mahabharata-adiparva, manavadharmashastra, ramayana-balakanda
+
+### `Danvanti` — dhanvanti  (n=1)
+
+- бегут  · n=1  · rigveda
+
+### `Danvantu` — dhanvantu  (n=4)
+
+- пусть мчатся  · n=2  · rigveda
+- пусть текут  · n=1  · rigveda
+- Пусть потекут  · n=1  · rigveda
+
+### `DanvanyAH` — dhanvanyāḥ  (n=2)
+
+- пустынь  · n=1  · atharvaveda
+- пустыни  · n=1  · atharvaveda
+
+### `DanvarRasa` — dhanvarṇasa  (n=2)
+
+- с несущимися потоками  · n=2  · rigveda
+
+### `Danvasi` — dhanvasi  (n=2)
+
+- бежишь  · n=1  · rigveda
+- мчишься  · n=1  · rigveda
+
+### `Danvasu` — dhanvasu  (n=7)
+
+- луках  · n=6  · rigveda
+- луками  · n=1  · rigveda
+
+### `DanviBiH` — dhanvibhiḥ  (n=1)
+
+- воинами-лучниками  · n=1  · ramayana-ayodhyakanda
+
+### `Danvin` — dhanvin  (n=58)
+
+- лучников  · n=14  · mahabharata-dronaparva, ramayana-sundarakanda, ramayana-ayodhyakanda, ramayana-aranyakanda, mahabharata-aranyakaparva, mahabharata-adiparva, mahabharata-bhishmaparva, mahabharata-udyogaparva, mahabharata-karnaparva, mahabharata-sauptikaparva
+- лучник  · n=10  · mahabharata-dronaparva, mahabharata-shalyaparva, mahabharata-bhishmaparva
+- лучником  · n=6  · mahabharata-dronaparva, mahabharata-karnaparva, mahabharata-shalyaparva
+- вооруженный луком  · n=5  · mahabharata-dronaparva, mahabharata-karnaparva, mahabharata-adiparva
+- лучники  · n=3  · mahabharata-aranyakaparva, mahabharata-bhishmaparva, mahabharata-shalyaparva
+- лучника  · n=3  · mahabharata-dronaparva, mahabharata-virataparva
+- лучниками  · n=2  · ramayana-ayodhyakanda, mahabharata-dronaparva
+- с луком в руках  · n=2  · ramayana-balakanda, mahabharata-aranyakaparva
+- стрелки из лука  · n=2  · mahabharata-udyogaparva, mahabharata-virataparva
+- луком  · n=1  · ramayana-ayodhyakanda
+- лука  · n=1  · mahabharata-aranyakaparva
+- стрелок  · n=1  · mahabharata-bhishmaparva
+- стрелка из лука  · n=1  · mahabharata-dronaparva
+- вооруженного луком  · n=1  · mahabharata-dronaparva
+- с луком в руке  · n=1  · mahabharata-dronaparva
+- стрелкам  · n=1  · mahabharata-karnaparva
+- лучнику  · n=1  · mahabharata-karnaparva
+- стрелок из лука  · n=1  · mahabharata-karnaparva
+- меткий стрелок из лука  · n=1  · mahabharata-shalyaparva
+- стрелков из лука  · n=1  · mahabharata-sabhaparva
+
+### `DanvinA` — dhanvinā  (n=8)
+
+- лучником  · n=4  · mahabharata-dronaparva, mahabharata-karnaparva
+- вооруженным луком  · n=3  · mahabharata-dronaparva, mahabharata-shalyaparva
+- луком вооруженным  · n=1  · mahabharata-bhishmaparva
+
+### `DanvinAm` — dhanvinām  (n=4)
+
+- стрелок из лука  · n=2  · mahabharata-aranyakaparva
+- лучники  · n=1  · mahabharata-shalyaparva
+- луков  · n=1  · mahabharata-virataparva
+
+### `DanvinaH` — dhanvinaḥ  (n=8)
+
+- лучника  · n=3  · mahabharata-bhishmaparva, mahabharata-dronaparva, raghuvamsha
+- рыбаки  · n=1  · ramayana-ayodhyakanda
+- Вооружившись луком  · n=1  · ramayana-aranyakanda
+- стрелки из лука  · n=1  · mahabharata-aranyakaparva
+- вооруженного луком  · n=1  · mahabharata-dronaparva
+- лучник  · n=1  · kumarasambhava
+
+### `Danvinau` — dhanvinau  (n=9)
+
+- героя с луками  · n=2  · ramayana-ayodhyakanda
+- лучников  · n=2  · ramayana-sundarakanda, mahabharata-sauptikaparva
+- лучники  · n=2  · mahabharata-dronaparva, raghuvamsha
+- луки  · n=1  · ramayana-ayodhyakanda
+- лучниками  · n=1  · mahabharata-shalyaparva
+- вооруженные луками  · n=1  · raghuvamsha
+
+### `Danvine` — dhanvine  (n=2)
+
+- вооруженному луком  · n=1  · mahabharata-karnaparva
+- лучнику  · n=1  · mahabharata-ashvamedhikaparva
+
+### `DanyA` — dhanyā  (n=7)
+
+- благословенны  · n=1  · ramayana-ayodhyakanda
+- Счастлива  · n=1  · mahabharata-aranyakaparva
+- щедростью  · n=1  · mahabharata-udyogaparva
+- обогащающая  · n=1  · rigveda
+- богатым  · n=1  · rigveda
+- счастливые дары  · n=1  · rigveda
+- счастлива  · n=1  · mahabharata-sabhaparva
+
+### `DanyAH` — dhanyāḥ  (n=4)
+
+- счастливы  · n=2  · ramayana-ayodhyakanda, ramayana-sundarakanda
+- счастлив  · n=1  · mahabharata-aranyakaparva
+- Счастливы  · n=1  · mahabharata-aranyakaparva
+
+### `DanyAnAM` — dhanyānāṃ  (n=1)
+
+- благословенных мужей  · n=1  · shatakatrayam-serebryakov
+
+### `DanyAni` — dhanyāni  (n=1)
+
+- сулят благополучие  · n=1  · mahabharata-udyogaparva
+
+### `DanyAya` — dhanyāya  (n=1)
+
+- приносящей богатство  · n=1  · rigveda
+
+### `Danya` — dhanya  (n=45)
+
+- счастлив  · n=7  · ramayana-balakanda, devi-gita, mahabharata-sabhaparva, shatakatrayam
+- счастливы  · n=5  · ramayana-sundarakanda, ramayana-ayodhyakanda, shatakatrayam-serebryakov, shukasaptati
+- богатство  · n=5  · manavadharmashastra, mahabharata-aranyakaparva, mahabharata-adiparva, mahabharata-dronaparva
+- счастливец  · n=5  · shatakatrayam-serebryakov, shatakatrayam, gitagovinda
+- Благо  · n=1  · ramayana-ayodhyakanda
+- завидую  · n=1  · ramayana-ayodhyakanda
+- Счастливы  · n=1  · ramayana-sundarakanda
+- довольство  · n=1  · ramayana-balakanda
+- благословенном  · n=1  · ramayana-balakanda
+- Обретет  · n=1  · ramayana-balakanda
+- счастье  · n=1  · mahabharata-aranyakaparva
+- сокровище  · n=1  · mahabharata-aranyakaparva
+- благодатно  · n=1  · mahabharata-adiparva
+- богатом  · n=1  · mahabharata-adiparva
+- доволен  · n=1  · mahabharata-adiparva
+- благословен  · n=1  · mahabharata-dronaparva
+- благоприятные  · n=1  · mahabharata-dronaparva
+- рад  · n=1  · buddhacharita
+- счастлива  · n=1  · buddhacharita
+- счастливым  · n=1  · devi-gita
+- счастливцам  · n=1  · shatakatrayam
+- благие  · n=1  · shatakatrayam
+- мудрец  · n=1  · shatakatrayam
+- подвижник  · n=1  · shatakatrayam
+- обладающие подлинным знанием  · n=1  · shatakatrayam-serebryakov
+- счастливцы  · n=1  · shatakatrayam-serebryakov
+- счастливый  · n=1  · gitagovinda
+
+### `DanyaH` — dhanyaḥ  (n=8)
+
+- счастлив  · n=4  · ramayana-aranyakanda, ramayana-balakanda, devi-gita, mahabharata-ashramavasikaparva
+- благородны  · n=1  · ramayana-ayodhyakanda
+- Счастлив  · n=1  · mahabharata-aranyakaparva
+- счастливец  · n=1  · shatakatrayam
+- Достойно  · n=1  · mahabharata-sauptikaparva
+
+### `DanyatA` — dhanyatā  (n=2)
+
+- счастье  · n=1  · mahabharata-aranyakaparva
+- богатство  · n=1  · kama-sutra
+
+### `Danyatara` — dhanyatara  (n=3)
+
+- счастливей  · n=3  · ramayana-balakanda, mahabharata-aranyakaparva
+
+### `Dar` — dhar  (n=2)
+
+- владыка мира  · n=1  · mahabharata-ashvamedhikaparva
+- держать  · n=1  · atharvaveda
+
+### `DarA` — dharā  (n=24)
+
+- земля  · n=11  · mahabharata-karnaparva, devi-gita, manavadharmashastra, mahabharata-aranyakaparva, mahabharata-adiparva, mahabharata-dronaparva, buddhacharita, mahabharata-ashvamedhikaparva, mahabharata-striparva
+- Земля  · n=3  · ramayana-balakanda, mahabharata-adiparva, shatakatrayam
+- заплетя  · n=2  · ramayana-ayodhyakanda
+- землю  · n=2  · ramayana-balakanda, mahabharata-dronaparva
+- с парусами  · n=1  · ramayana-ayodhyakanda
+- земле  · n=1  · ramayana-sundarakanda
+- земли  · n=1  · ramayana-balakanda
+- поле  · n=1  · mahabharata-bhishmaparva
+- Землю  · n=1  · mahabharata-dronaparva
+- твердь земная  · n=1  · shatakatrayam-serebryakov
+
+### `DarA-pfzWe` — dharā-pṛṣṭhe  (n=1)
+
+- землю  · n=1  · raghuvamsha
+
+### `DarABUmi` — dharābhūmi  (n=1)
+
+- на берег  · n=1  · shukasaptati
+
+### `DarABft` — dharābhṛt  (n=1)
+
+- гор  · n=1  · mahabharata-bhishmaparva
+
+### `DarADarADISa` — dharādharādhīśa  (n=1)
+
+- царя гор  · n=1  · devi-gita
+
+### `DarADara` — dharādhara  (n=5)
+
+- горами  · n=1  · ramayana-sundarakanda
+- гора  · n=1  · ramayana-sundarakanda
+- горе  · n=1  · ramayana-aranyakanda
+- гору  · n=1  · mahabharata-dronaparva
+- горы  · n=1  · buddhacharita
+
+### `DarADare` — dharādhare  (n=1)
+
+- горе  · n=1  · mahabharata-adiparva
+
+### `DarAH` — dharāḥ  (n=10)
+
+- носящие  · n=2  · ramayana-ayodhyakanda
+- имеющие  · n=2  · mahabharata-shalyaparva
+- набухшим  · n=1  · ramayana-ayodhyakanda
+- носили  · n=1  · mahabharata-shalyaparva
+- носившие  · n=1  · mahabharata-shalyaparva
+- украшены  · n=1  · mahabharata-shalyaparva
+- облачены  · n=1  · mahabharata-shalyaparva
+- обладая  · n=1  · mahabharata-shalyaparva
+
+### `DarAM` — dharāṃ  (n=1)
+
+- землю  · n=1  · mahabharata-adiparva
+
+### `DarASaya` — dharāśaya  (n=1)
+
+- имея ложем землю  · n=1  · manavadharmashastra
+
+### `DarAdayaH` — dharādayaḥ  (n=1)
+
+- Дхара и другие  · n=1  · mahabharata-adiparva
+
+### `DarAharaRadurganDa` — dharāharaṇadurgandha  (n=1)
+
+- зловоние  · n=1  · mahabharata-ashvamedhikaparva
+
+### `DarAm` — dharām  (n=2)
+
+- плечи  · n=1  · ramayana-ayodhyakanda
+- землю  · n=1  · mahabharata-karnaparva
+
+### `DarAmavazwaBya` — dharāmavaṣṭabhya  (n=1)
+
+- Поставь на землю  · n=1  · hatha-yoga-pradipika
+
+### `DarAntara` — dharāntara  (n=1)
+
+- внутрь земли  · n=1  · ramayana-sundarakanda
+
+### `DarAntaragata` — dharāntaragata  (n=1)
+
+- летала по земле  · n=1  · ramayana-sundarakanda
+
+### `DarApati` — dharāpati  (n=1)
+
+- царя  · n=1  · ramayana-sundarakanda
+
+### `DarApfzWa` — dharāpṛṣṭha  (n=1)
+
+- земле  · n=1  · shukasaptati
+
+### `DarAsama` — dharāsama  (n=1)
+
+- подобен Земле  · n=1  · mahabharata-adiparva
+
+### `DarAtala` — dharātala  (n=5)
+
+- земля  · n=2  · mahabharata-dronaparva, mahabharata-shalyaparva
+- земле  · n=2  · ramanuja_gitabhashya, devi-gita
+- землю  · n=1  · mahabharata-bhishmaparva
+
+### `DarAviyaddyosalilezu` — dharāviyaddyosalileṣu  (n=1)
+
+- на земле, на небе, в поднебесье и в водах  · n=1  · mahabharata-karnaparva
+
+### `DarAyAm` — dharāyām  (n=1)
+
+- земли  · n=1  · gitarthasamgraha-abhinavagupta
+
+### `DarI` — dharī  (n=4)
+
+- двоих буланых коней  · n=1  · rigveda
+- пару буланых  · n=1  · rigveda
+- пару буланых коней  · n=1  · rigveda
+- буланых коней  · n=1  · rigveda
+
+### `DarImaRi` — dharīmaṇi  (n=4)
+
+- поддерживал  · n=2  · rigveda
+- чтобы (их) удержали  · n=2  · rigveda
+
+### `DarRasi` — dharṇasi  (n=7)
+
+- основа  · n=2  · rigveda
+- поддержка  · n=1  · rigveda
+- прочным  · n=1  · rigveda
+- Крепкого  · n=1  · rigveda
+- крепкий  · n=1  · rigveda
+- выносливому  · n=1  · rigveda
+
+### `DarRasiH` — dharṇasiḥ  (n=5)
+
+- крепкий  · n=3  · rigveda
+- Прочно  · n=2  · rigveda
+
+### `DarRasiM` — dharṇasiṃ  (n=1)
+
+- Крепкой  · n=1  · rigveda
+
+### `DarRasim` — dharṇasim  (n=4)
+
+- крепкого  · n=2  · rigveda
+- стойкого  · n=2  · rigveda
+
+### `DarRi` — dharṇi  (n=1)
+
+- хранит  · n=1  · rigveda
+
+### `Dara` — dhara  (n=45)
+
+- несущий  · n=5  · mahabharata-dronaparva, ramayana-ayodhyakanda, mahabharata-aranyakaparva, mahabharata-bhishmaparva
+- с  · n=5  · ramayana-balakanda, ramayana-aranyakanda
+- держащий  · n=2  · ramayana-ayodhyakanda, mahabharata-mausalaparva
+- покрытом  · n=2  · ramayana-ayodhyakanda
+- держащие  · n=2  · ramayana-sundarakanda, mahabharata-karnaparva
+- одетого  · n=2  · ramayana-aranyakanda
+- носящего  · n=2  · mahabharata-adiparva, ramanuja_gitabhashya
+- Дхара  · n=2  · mahabharata-adiparva
+- облаченный  · n=2  · mahabharata-bhishmaparva, bhagavadgita-smirnov
+- Покрытый  · n=1  · ramayana-ayodhyakanda
+- одежда  · n=1  · ramayana-ayodhyakanda
+- заплетя  · n=1  · ramayana-ayodhyakanda
+- с колчанами  · n=1  · ramayana-ayodhyakanda
+- деревьев  · n=1  · ramayana-ayodhyakanda
+- покрытый  · n=1  · ramayana-sundarakanda
+- обезьяны  · n=1  · ramayana-sundarakanda
+- головы  · n=1  · ramayana-aranyakanda
+- С  · n=1  · ramayana-aranyakanda
+- были при нем  · n=1  · mahabharata-aranyakaparva
+- землю  · n=1  · mahabharata-aranyakaparva
+- держатель  · n=1  · mahabharata-dronaparva
+- под  · n=1  · mahabharata-udyogaparva
+- Носящий  · n=1  · gitarthasamgraha-abhinavagupta
+- украшенный  · n=1  · bhagavadgita-1788
+- носивший  · n=1  · bhagavadgita-sementsov
+- одѣтый  · n=1  · bhagavadgita-1909
+- держал  · n=1  · mahabharata-shalyaparva
+- не отваживайтесь  · n=1  · gitagovinda
+- в  · n=1  · mahabharata-ashramavasikaparva
+- на плече  · n=1  · mahabharata-adiparva
+
+### `DaraH` — dharaḥ  (n=9)
+
+- носящий  · n=2  · ramayana-ayodhyakanda
+- Дхара  · n=2  · mahabharata-dronaparva
+- Заплетя  · n=1  · ramayana-ayodhyakanda
+- в платье  · n=1  · ramayana-ayodhyakanda
+- заплету  · n=1  · ramayana-ayodhyakanda
+- надену  · n=1  · ramayana-ayodhyakanda
+- одетый  · n=1  · ramayana-aranyakanda
+
+### `DaraRI` — dharaṇī  (n=44)
+
+- землю  · n=18  · ramayana-aranyakanda, mahabharata-dronaparva, ramayana-ayodhyakanda, mahabharata-karnaparva
+- земля  · n=6  · ramayana-aranyakanda, mahabharata-dronaparva, mahabharata-udyogaparva, mahabharata-karnaparva, gitagovinda, mahabharata-ashramavasikaparva
+- земле  · n=5  · mahabharata-dronaparva, ramayana-aranyakanda, ramayana-balakanda, mahabharata-ashramavasikaparva
+- земли  · n=3  · ramayana-ayodhyakanda, ramayana-balakanda, mahabharata-bhishmaparva
+- на землю  · n=3  · ramayana-aranyakanda, mahabharata-shalyaparva
+- в землю  · n=3  · mahabharata-dronaparva, mahabharata-karnaparva
+- в земле  · n=1  · mahabharata-adiparva
+- земные глуби  · n=1  · ramayana-balakanda
+- Земля  · n=1  · mahabharata-dronaparva
+- Землю  · n=1  · mahabharata-dronaparva
+- о землю  · n=1  · mahabharata-shalyaparva
+- Несущая на себе  · n=1  · mahabharata-ashvamedhikaparva
+
+### `DaraRI-DaraRa` — dharaṇī-dharaṇa  (n=1)
+
+- ношения земли  · n=1  · gitagovinda
+
+### `DaraRIDarABa` — dharaṇīdharābha  (n=2)
+
+- подобный горе  · n=1  · mahabharata-shalyaparva
+- напоминавший скалу  · n=1  · mahabharata-shalyaparva
+
+### `DaraRIDara` — dharaṇīdhara  (n=8)
+
+- горы  · n=2  · ramayana-sundarakanda
+- гора  · n=1  · ramayana-sundarakanda
+- держат землю  · n=1  · ramayana-aranyakanda
+- поддерживают землю  · n=1  · ramayana-aranyakanda
+- держатель земли  · n=1  · devi-gita
+- гор  · n=1  · shatakatrayam
+- горами  · n=1  · shatakatrayam-serebryakov
+
+### `DaraRIm` — dharaṇīm  (n=7)
+
+- в землю  · n=3  · mahabharata-bhishmaparva, mahabharata-dronaparva, mahabharata-karnaparva
+- земле  · n=1  · ramayana-balakanda
+- землю  · n=1  · ramayana-balakanda
+- на землю  · n=1  · mahabharata-dronaparva
+- до земли  · n=1  · mahabharata-karnaparva
+
+### `DaraRIpati` — dharaṇīpati  (n=1)
+
+- владыки земли  · n=1  · mahabharata-aranyakaparva
+
+### `DaraRIpfzWa` — dharaṇīpṛṣṭha  (n=1)
+
+- землю  · n=1  · mahabharata-bhishmaparva
+
+### `DaraRIsTa` — dharaṇīstha  (n=1)
+
+- стоит на земле  · n=1  · mahabharata-dronaparva
+
+### `DaraRIsaMSritAn` — dharaṇīsaṃśritān  (n=1)
+
+- обитающих на земле  · n=1  · mahabharata-aranyakaparva
+
+### `DaraRItala` — dharaṇītala  (n=21)
+
+- землю  · n=10  · mahabharata-dronaparva, mahabharata-bhishmaparva, mahabharata-adiparva, ramayana-aranyakanda, ramayana-balakanda, mahabharata-sauptikaparva
+- на земле  · n=4  · mahabharata-adiparva, mahabharata-dronaparva, shukasaptati
+- земля  · n=2  · mahabharata-karnaparva, mahabharata-shalyaparva
+- земная поверхность  · n=1  · mahabharata-adiparva
+- наземь  · n=1  · mahabharata-aranyakaparva
+- на землю  · n=1  · mahabharata-bhishmaparva
+- земли  · n=1  · mahabharata-dronaparva
+- земле  · n=1  · mahabharata-sauptikaparva
+
+### `DaraRItale` — dharaṇītale  (n=9)
+
+- на земле  · n=3  · ramayana-ayodhyakanda, ramayana-sundarakanda, mahabharata-dronaparva
+- на землю  · n=3  · ramayana-ayodhyakanda, mahabharata-adiparva, mahabharata-dronaparva
+- на голой земле  · n=1  · mahabharata-aranyakaparva
+- на твердь земную  · n=1  · mahabharata-dronaparva
+- на поле битвы  · n=1  · mahabharata-dronaparva
+
+### `DaraRa` — dharaṇa  (n=5)
+
+- изучил  · n=1  · mahabharata-adiparva
+- дхарана  · n=1  · manavadharmashastra
+- дхаране  · n=1  · manavadharmashastra
+- дхарану  · n=1  · manavadharmashastra
+- дхаран  · n=1  · manavadharmashastra
+
+### `DaraRi-Sayane` — dharaṇi-śayane  (n=1)
+
+- на земле, что служит ему ложем  · n=1  · gitagovinda
+
+### `DaraRiDaraRa` — dharaṇidharaṇa  (n=1)
+
+- ношения земли  · n=1  · gitagovinda
+
+### `DaraRim` — dharaṇim  (n=1)
+
+- на землю  · n=1  · ramayana-balakanda
+
+### `DaraRyA` — dharaṇyā  (n=1)
+
+- земли  · n=1  · ramayana-sundarakanda
+
+### `DaraRyAm` — dharaṇyām  (n=7)
+
+- на землю  · n=2  · ramayana-ayodhyakanda, mahabharata-adiparva
+- над землей  · n=1  · ramayana-ayodhyakanda
+- вверх  · n=1  · ramayana-ayodhyakanda
+- земля  · n=1  · ramayana-ayodhyakanda
+- землю  · n=1  · ramayana-sundarakanda
+- на земле  · n=1  · mahabharata-adiparva
+
+### `DaraiH` — dharaiḥ  (n=3)
+
+- лучников  · n=1  · ramayana-ayodhyakanda
+- Ремесленников и лучников (śilpi-dhanurdharaiḥ)  · n=1  · ramayana-ayodhyakanda
+- тучах  · n=1  · ramayana-ayodhyakanda
+
+### `DarajaNGA` — dharajaṅghā  (n=1)
+
+- живот  · n=1  · mnar-up
+
+### `Daram` — dharam  (n=1)
+
+- держащий  · n=1  · ramayana-aranyakanda
+
+### `Daranti` — dharanti  (n=3)
+
+- здравствуют  · n=2  · mahabharata-adiparva
+- держится  · n=1  · ramayana-sundarakanda
+
+### `Darasya` — dharasya  (n=1)
+
+- Держателя  · n=1  · ramayana-aranyakanda
+
+### `Darau` — dharau  (n=1)
+
+- с  · n=1  · ramayana-aranyakanda
+
+### `Darayatu` — dharayatu  (n=1)
+
+- пусть удержит  · n=1  · atharvaveda
+
+### `Dare` — dhare  (n=2)
+
+- одетый  · n=1  · ramayana-ayodhyakanda
+- несущим  · n=1  · gitagovinda
+
+### `Dareta` — dhareta  (n=1)
+
+- спасется  · n=1  · mahabharata-aranyakaparva
+
+### `DarimBara` — dharimbhara  (n=1)
+
+- носитель золотистой  · n=1  · rigveda
+
+### `DarimameyAnAm` — dharimameyānām  (n=1)
+
+- измеряемого по весу  · n=1  · manavadharmashastra
+
+### `Darita` — dharita  (n=1)
+
+- зеленая  · n=1  · rigveda
+
+### `DaritoH` — dharitoḥ  (n=1)
+
+- золотистых  · n=1  · rigveda
+
+### `DaritrI` — dharitrī  (n=4)
+
+- земля  · n=2  · shatakatrayam-serebryakov
+- землю  · n=1  · raghuvamsha
+- мир  · n=1  · shatakatrayam
+
+### `DaritrIDaraRa` — dharitrīdharaṇa  (n=1)
+
+- земля  · n=1  · kumarasambhava
+
+### `DaritrIm` — dharitrīm  (n=1)
+
+- в пыли  · n=1  · amaru-shataka
+
+### `DarizyAmi` — dhariṣyāmi  (n=1)
+
+- сохраню  · n=1  · ramayana-sundarakanda
+
+### `Darizyanti` — dhariṣyanti  (n=1)
+
+- длятся  · n=1  · ramayana-balakanda
+
+### `Darizyati` — dhariṣyati  (n=4)
+
+- стоит  · n=2  · mahabharata-aranyakaparva, mahabharata-karnaparva
+- отпущен  · n=1  · ramayana-sundarakanda
+- будет держаться  · n=1  · mahabharata-dronaparva
+
+### `Darizyete` — dhariṣyete  (n=1)
+
+- сохранят  · n=1  · ramayana-sundarakanda
+
+### `DarmA` — dharmā  (n=3)
+
+- дхармы  · n=1  · manavadharmashastra
+- установлениям  · n=1  · rigveda
+- свойства  · n=1  · vedartha-samgraha_ramanuja
+
+### `DarmABAsaH` — dharmābhāsaḥ  (n=1)
+
+- сиянием дхармы  · n=1  · devi-gita
+
+### `DarmABAvaM` — dharmābhāvaṃ  (n=1)
+
+- отрицается характеристика  · n=1  · nyaya-bhashya
+
+### `DarmABilAza` — dharmābhilāṣa  (n=2)
+
+- желая следовать дхарме  · n=2  · buddhacharita
+
+### `DarmABimanasya` — dharmābhimanasya  (n=1)
+
+- устремлен к добродетели  · n=1  · ramayana-ayodhyakanda
+
+### `DarmAByAm` — dharmābhyām  (n=2)
+
+- добродетель  · n=2  · ramayana-ayodhyakanda
+
+### `DarmADarmASritAn` — dharmādharmāśritān  (n=1)
+
+- тех, кто проявляет соответственно приверженность дхарме либо адхарме  · n=1  · mahabharata-karnaparva
+
+### `DarmADarmArgalAbadDa` — dharmādharmārgalābaddha  (n=1)
+
+- закованы в колодки должного и недолжного  · n=1  · paramarthasara-abhinavagupta
+
+### `DarmADarma` — dharmādharma  (n=4)
+
+- дхарму и адхарму  · n=2  · manavadharmashastra
+- справедливость и ее противоположность  · n=1  · mahabharata-aranyakaparva
+- дхарма и не-дхарма  · n=1  · nyaya-bhashya
+
+### `DarmADarmajanitasaMskArakzayAt` — dharmādharmajanitasaṃskārakṣayāt  (n=1)
+
+- в результате исчерпания санскар, порожденных добродетелью и не-добродетелью  · n=1  · sankhya-karika
+
+### `DarmADarmalakzaRa` — dharmādharmalakṣaṇa  (n=1)
+
+- характеризуемая признаками дхармы и не-дхармы  · n=1  · nyaya-bhashya
+
+### `DarmADarmarUpa` — dharmādharmarūpa  (n=1)
+
+- в виде дхармы и адхармы  · n=1  · yoga-sutry_vyasa-bhashya
+
+### `DarmADarmasaMcaya` — dharmādharmasaṃcaya  (n=2)
+
+- балансы кармических накоплений  · n=2  · nyaya-bhashya
+
+### `DarmADarmau` — dharmādharmau  (n=2)
+
+- дхарму и адхарму  · n=1  · gitarthasamgraha-abhinavagupta
+- дхарма и а-дхарма  · n=1  · gitarthasamgraha-abhinavagupta
+
+### `DarmADarmaviniScaya` — dharmādharmaviniścaya  (n=1)
+
+- тайны добра и зла  · n=1  · mahabharata-aranyakaparva
+
+### `DarmADikaraRasTa` — dharmādhikaraṇastha  (n=1)
+
+- судьи  · n=1  · kama-sutra
+
+### `DarmAH` — dharmāḥ  (n=3)
+
+- дхармы  · n=1  · manavadharmashastra
+- качественно-определенные состояния  · n=1  · yoga-sutry_vyasa-bhashya
+- состояния  · n=1  · yoga-sutry_vyasa-bhashya
+
+### `DarmAKyAna` — dharmākhyāna  (n=2)
+
+- повесть о дхарме  · n=1  · mahabharata-aranyakaparva
+- повествование об этом моем благодеянии  · n=1  · mahabharata-adiparva
+
+### `DarmARAM` — dharmāṇāṃ  (n=1)
+
+- законов  · n=1  · mahabharata-sabhaparva
+
+### `DarmARAm` — dharmāṇām  (n=3)
+
+- дхарм  · n=2  · mahabharata-ashvamedhikaparva, yoga-sutry
+- дхармы  · n=1  · gitarthasamgraha-abhinavagupta
+
+### `DarmARa` — dharmāṇa  (n=1)
+
+- Поддерживательницу  · n=1  · rigveda
+
+### `DarmARam` — dharmāṇam  (n=1)
+
+- поддерживает  · n=1  · rigveda
+
+### `DarmARi` — dharmāṇi  (n=6)
+
+- законы  · n=2  · rigveda, atharvaveda
+- обычаи  · n=2  · rigveda, atharvaveda
+- свойства  · n=2  · rigveda
+
+### `DarmASrita` — dharmāśrita  (n=1)
+
+- склоняется к справедливости  · n=1  · mahabharata-udyogaparva
+
+### `DarmAcArAH` — dharmācārāḥ  (n=1)
+
+- добродетель  · n=1  · mahabharata-aranyakaparva
+
+### `DarmAcAraparAyaRAH` — dharmācāraparāyaṇāḥ  (n=1)
+
+- одушевлены дхармой и благонравием  · n=1  · mahabharata-aranyakaparva
+
+### `DarmAd` — dharmād  (n=1)
+
+- от дхармы  · n=1  · buddhacharita
+
+### `DarmAdahInaM` — dharmādahīnaṃ  (n=1)
+
+- не в отрыве от справедливости  · n=1  · mahabharata-udyogaparva
+
+### `DarmAdapeta` — dharmādapeta  (n=1)
+
+- несообразное закону  · n=1  · mahabharata-adiparva
+
+### `DarmAdi` — dharmādi  (n=1)
+
+- добродетель и т.д.  · n=1  · sankhya-karika
+
+### `DarmAdiguRopetaH` — dharmādiguṇopetaḥ  (n=1)
+
+- отличавшийся справедливостью  · n=1  · shukasaptati
+
+### `DarmAdinimittam` — dharmādinimittam  (n=1)
+
+- праведность и прочее  · n=1  · yoga-sutry_vyasa-bhashya
+
+### `DarmAdizu` — dharmādiṣu  (n=1)
+
+- в добродетели и прочем  · n=1  · sankhya-karika
+
+### `DarmAdyA` — dharmādyā  (n=1)
+
+- триада целей  · n=1  · mahabharata-ashvamedhikaparva
+
+### `DarmAgata` — dharmāgata  (n=1)
+
+- законным путем  · n=1  · mahabharata-adiparva
+
+### `DarmAm` — dharmām  (n=1)
+
+- добродетели  · n=1  · ramayana-ayodhyakanda
+
+### `DarmAn` — dharmān  (n=12)
+
+- дхармы  · n=3  · kama-sutra, mahabharata-aranyakaparva
+- дхармам  · n=2  · mahabharata-aranyakaparva, mahabharata-karnaparva
+- дхарму  · n=1  · manavadharmashastra
+- дхарм  · n=1  · manavadharmashastra
+- дхарма  · n=1  · mahabharata-aranyakaparva
+- установлениях  · n=1  · mahabharata-adiparva
+- обязанностей  · n=1  · mahabharata-udyogaparva
+- долг  · n=1  · mahabharata-udyogaparva
+- законы  · n=1  · mahabharata-sabhaparva
+
+### `DarmAnAm` — dharmānām  (n=1)
+
+- долгов  · n=1  · ramayana-ayodhyakanda
+
+### `DarmAnilendrapraBavAn` — dharmānilendraprabhavān  (n=2)
+
+- сына Дхармы, сына Ветра и сына Индры  · n=2  · mahabharata-aranyakaparva
+
+### `DarmAntara` — dharmāntara  (n=1)
+
+- другие дхармы  · n=1  · yoga-sutry_vyasa-bhashya
+
+### `DarmAntaravikalpAt` — dharmāntaravikalpāt  (n=1)
+
+- из-за альтернативы другой характеристики  · n=1  · nyaya-bhashya
+
+### `DarmAntarotpatti` — dharmāntarotpatti  (n=2)
+
+- появление новых свойств  · n=2  · nyaya-bhashya
+
+### `DarmAnuSAsanam` — dharmānuśāsanam  (n=1)
+
+- предписания закона  · n=1  · mahabharata-udyogaparva
+
+### `DarmAnudarSin` — dharmānudarśin  (n=1)
+
+- напутствующих в законе  · n=1  · mahabharata-sabhaparva
+
+### `DarmAnugatayA` — dharmānugatayā  (n=1)
+
+- подчинен дхарме  · n=1  · mahabharata-aranyakaparva
+
+### `DarmAnupUrvIM` — dharmānupūrvīṃ  (n=1)
+
+- почтение по установленным правилам  · n=1  · mahabharata-udyogaparva
+
+### `DarmAnurakta` — dharmānurakta  (n=1)
+
+- преданный дхарме  · n=1  · mahabharata-karnaparva
+
+### `DarmApacAyin` — dharmāpacāyin  (n=1)
+
+- ненавидящего добродетель  · n=1  · mahabharata-aranyakaparva
+
+### `DarmApacAyinaH` — dharmāpacāyinaḥ  (n=1)
+
+- совершаю прегрешения  · n=1  · mahabharata-dronaparva
+
+### `DarmApekza` — dharmāpekṣa  (n=1)
+
+- справедливый  · n=1  · mahabharata-dronaparva
+
+### `DarmArAma` — dharmārāma  (n=3)
+
+- преданная закону  · n=1  · mahabharata-adiparva
+- Находящий удовольствие в справедливости  · n=1  · mahabharata-udyogaparva
+- проникнуты чувством справедливости  · n=1  · mahabharata-udyogaparva
+
+### `DarmArAmo` — dharmārāmo  (n=1)
+
+- предан справедливости  · n=1  · mahabharata-udyogaparva
+
+### `DarmArTAByAm` — dharmārthābhyām  (n=1)
+
+- дхармы и имущества  · n=1  · manavadharmashastra
+
+### `DarmArTIyaH` — dharmārthīyaḥ  (n=1)
+
+- касательно нравственного долга и мирской пользы  · n=1  · mahabharata-adiparva
+
+### `DarmArTa` — dharmārtha  (n=7)
+
+- от деяния, [имеющего] целью [достижение] дхармы  · n=1  · manavadharmashastra
+- в соответствии с дхармой  · n=1  · manavadharmashastra
+- Ради религиозных заслуг  · n=1  · mahabharata-adiparva
+- от того, что задумал  · n=1  · buddhacharita
+- закон и польза  · n=1  · mahabharata-udyogaparva
+- закона и пользы  · n=1  · mahabharata-udyogaparva
+- Дхарма и артха  · n=1  · mahabharata-ashvamedhikaparva
+
+### `DarmArTadarSin` — dharmārthadarśin  (n=4)
+
+- Сведущими в добродетели и пользе  · n=1  · ramayana-ayodhyakanda
+- сведущими в добродетели и пользе  · n=1  · ramayana-ayodhyakanda
+- знатоку дхармы и артхи  · n=1  · mahabharata-aranyakaparva
+- провидением (сущности) дхармы и артхи  · n=1  · mahabharata-aranyakaparva
+
+### `DarmArTadarSinI` — dharmārthadarśinī  (n=1)
+
+- прозревшая суть закона и пользы  · n=1  · mahabharata-ashramavasikaparva
+
+### `DarmArTadarSinaH` — dharmārthadarśinaḥ  (n=1)
+
+- провидят и дхарму, и артху  · n=1  · mahabharata-ashramavasikaparva
+
+### `DarmArTadarSivAn` — dharmārthadarśivān  (n=2)
+
+- прозревший (суть) дхармы и артхи  · n=1  · mahabharata-aranyakaparva
+- понимающий закон и пользу  · n=1  · mahabharata-adiparva
+
+### `DarmArTaguRayukta` — dharmārthaguṇayukta  (n=1)
+
+- преисполнен долга и выгоды  · n=1  · mahabharata-udyogaparva
+
+### `DarmArTakAmAnAM` — dharmārthakāmānāṃ  (n=1)
+
+- артхе, дхарме и каме  · n=1  · kama-sutra
+
+### `DarmArTakAma` — dharmārthakāma  (n=1)
+
+- добрые дела, приятности и полезное  · n=1  · mahabharata-adiparva
+
+### `DarmArTakAmakArya` — dharmārthakāmakārya  (n=1)
+
+- касающиеся закона, пользы и любви  · n=1  · mahabharata-sabhaparva
+
+### `DarmArTakAmakuSalaH` — dharmārthakāmakuśalaḥ  (n=1)
+
+- Искушенный в вопросах закона, пользы и любви  · n=1  · mahabharata-dronaparva
+
+### `DarmArTakAmasaMyukta` — dharmārthakāmasaṃyukta  (n=1)
+
+- дхарма, артха и кама совместно  · n=1  · mahabharata-karnaparva
+
+### `DarmArTakAmasahita` — dharmārthakāmasahita  (n=1)
+
+- исполненную дхармы, артхи и камы  · n=1  · ramayana-sundarakanda
+
+### `DarmArTakAmayukta` — dharmārthakāmayukta  (n=1)
+
+- сообразные с законом, пользой и любовью  · n=1  · mahabharata-udyogaparva
+
+### `DarmArTakAmezu` — dharmārthakāmeṣu  (n=1)
+
+- в дхарме, пользе и наслаждении  · n=1  · buddhacharita
+
+### `DarmArTakAraRAt` — dharmārthakāraṇāt  (n=1)
+
+- обусловлены законом и выгодой  · n=1  · mahabharata-udyogaparva
+
+### `DarmArTakovidAH` — dharmārthakovidāḥ  (n=2)
+
+- сведущих в законе и пользе  · n=2  · mahabharata-aranyakaparva
+
+### `DarmArTakovida` — dharmārthakovida  (n=3)
+
+- знатоки закона и мирской пользы  · n=1  · mahabharata-adiparva
+- знатоки добродетели и пользы  · n=1  · mahabharata-bhishmaparva
+- знают смысл закона  · n=1  · mahabharata-virataparva
+
+### `DarmArTakuSalA` — dharmārthakuśalā  (n=1)
+
+- сведуща в законе и мирской пользе  · n=1  · mahabharata-sabhaparva
+
+### `DarmArTakuSala` — dharmārthakuśala  (n=8)
+
+- искушен в вопросах закона и мирской пользы  · n=2  · mahabharata-udyogaparva
+- сведущих в дхарме и артхе  · n=2  · mahabharata-ashramavasikaparva
+- опытных в законе и мирской пользе  · n=1  · mahabharata-adiparva
+- сведущ в законе и мирской пользе  · n=1  · mahabharata-udyogaparva
+- искушенные в законе и мирской пользе  · n=1  · mahabharata-shalyaparva
+- искушенный в дхарме и артхе  · n=1  · mahabharata-ashvamedhikaparva
+
+### `DarmArTakuSalaH` — dharmārthakuśalaḥ  (n=1)
+
+- опытный в вопросах закона и мирской пользы  · n=1  · mahabharata-adiparva
+
+### `DarmArTalakzaRa` — dharmārthalakṣaṇa  (n=1)
+
+- посвященные мирским делам и вопросам религии  · n=1  · mahabharata-ashramavasikaparva
+
+### `DarmArTalopin` — dharmārthalopin  (n=1)
+
+- попирая закон и мирскую пользу  · n=1  · mahabharata-udyogaparva
+
+### `DarmArTam` — dharmārtham  (n=3)
+
+- для [исполнения] дхармы  · n=1  · manavadharmashastra
+- для закона  · n=1  · mahabharata-adiparva
+- ради исполнения дхармы  · n=1  · buddhacharita
+
+### `DarmArTanaipuRa` — dharmārthanaipuṇa  (n=1)
+
+- Знатоками пользы и добродетели  · n=1  · ramayana-ayodhyakanda
+
+### `DarmArTaniScaya` — dharmārthaniścaya  (n=1)
+
+- смысл долга и пользы  · n=1  · mahabharata-sauptikaparva
+
+### `DarmArTaniScitAH` — dharmārthaniścitāḥ  (n=1)
+
+- приверженные закону и пользе  · n=1  · mahabharata-bhishmaparva
+
+### `DarmArTasaMhita` — dharmārthasaṃhita  (n=1)
+
+- отвечающее закону и мирской пользе  · n=1  · mahabharata-udyogaparva
+
+### `DarmArTasaMhitam` — dharmārthasaṃhitam  (n=2)
+
+- следуя закону и выгоде  · n=1  · mahabharata-adiparva
+- о том, что сообразно закону и пользе  · n=1  · mahabharata-udyogaparva
+
+### `DarmArTasaMyukta` — dharmārthasaṃyukta  (n=2)
+
+- богат, добродетелен  · n=1  · mahabharata-aranyakaparva
+- проникнутый смыслом закона  · n=1  · mahabharata-sabhaparva
+
+### `DarmArTasahitAm` — dharmārthasahitām  (n=1)
+
+- согласного с законом и пользой  · n=1  · mahabharata-sabhaparva
+
+### `DarmArTasahita` — dharmārthasahita  (n=12)
+
+- согласные с законом и мирской пользой  · n=3  · mahabharata-udyogaparva, mahabharata-sabhaparva, mahabharata-shalyaparva
+- Согласное с долгом и пользой  · n=2  · ramayana-balakanda
+- соединенные с дхармой и пользой  · n=1  · ramayana-sundarakanda
+- в согласии с долгом и пользой  · n=1  · ramayana-balakanda
+- согласные с законом и мирскою пользой  · n=1  · mahabharata-udyogaparva
+- согласную с законом и пользой  · n=1  · mahabharata-udyogaparva
+- согласное с законом и пользой  · n=1  · mahabharata-udyogaparva
+- отвечающий закону и пользе  · n=1  · mahabharata-udyogaparva
+- сообразные с законом и пользой  · n=1  · mahabharata-udyogaparva
+
+### `DarmArTasahitam` — dharmārthasahitam  (n=3)
+
+- согласуется с законом и пользой  · n=2  · mahabharata-virataparva
+- согласное с долгом и пользой  · n=1  · ramayana-balakanda
+
+### `DarmArTasuKanASinIm` — dharmārthasukhanāśinīm  (n=1)
+
+- несет ущерб твоей добродетели, здравому смыслу и благоденствию  · n=1  · mahabharata-aranyakaparva
+
+### `DarmArTatattvajYa` — dharmārthatattvajña  (n=1)
+
+- сведущий в сути закона нравственности и мирской пользы  · n=1  · mahabharata-dronaparva
+
+### `DarmArTatattvavit` — dharmārthatattvavit  (n=1)
+
+- ведающий суть закона и пользы  · n=1  · mahabharata-udyogaparva
+
+### `DarmArTau` — dharmārthau  (n=7)
+
+- дхарма и артха  · n=2  · mahabharata-aranyakaparva, mahabharata-ashvamedhikaparva
+- дхарму и артху  · n=1  · kama-sutra
+- закона и пользы  · n=1  · mahabharata-dronaparva
+- закон и мирскую пользу  · n=1  · mahabharata-udyogaparva
+- закон и выгоду  · n=1  · mahabharata-udyogaparva
+- закону, мирской пользе  · n=1  · mahabharata-adiparva
+
+### `DarmArTavat` — dharmārthavat  (n=1)
+
+- полное святого закона и мирской пользы  · n=1  · mahabharata-adiparva
+
+### `DarmArTavfdDAH` — dharmārthavṛddhāḥ  (n=1)
+
+- искушенные в вопросах закона и мирской пользы  · n=1  · mahabharata-udyogaparva
+
+### `DarmArTavid` — dharmārthavid  (n=3)
+
+- сведущим в дхарме и артхе  · n=1  · mahabharata-aranyakaparva
+- знающему свой долг и пользу  · n=1  · mahabharata-aranyakaparva
+- знаток закона и мирской пользы  · n=1  · mahabharata-adiparva
+
+### `DarmArTaviduzaH` — dharmārthaviduṣaḥ  (n=1)
+
+- знатоки добродетели  · n=1  · ramayana-ayodhyakanda
+
+### `DarmArTavinItabudDiH` — dharmārthavinītabuddhiḥ  (n=1)
+
+- чей ум познал дхарму и артху  · n=1  · ramayana-sundarakanda
+
+### `DarmArTavit` — dharmārthavit  (n=1)
+
+- знающий закон и мирскую пользу  · n=1  · mahabharata-virataparva
+
+### `DarmArTayoH` — dharmārthayoḥ  (n=4)
+
+- дхарме и артхе  · n=2  · kama-sutra
+- по соблюдению закона и приобретению богатств  · n=1  · mahabharata-udyogaparva
+- в законе и пользе  · n=1  · mahabharata-udyogaparva
+
+### `DarmArTayorApadisampraRetA` — dharmārthayorāpadi sampraṇetā  (n=1)
+
+- умеющий различать, что  · n=1  · mahabharata-udyogaparva
+
+### `DarmArTayorgraTitayorbiBarti` — dharmārthayorgrathitayorbibharti  (n=1)
+
+- способен вникать в суть закона и пользы, всегда связанных вместе  · n=1  · mahabharata-udyogaparva
+
+### `DarmArTayukta` — dharmārthayukta  (n=6)
+
+- справедливо и полезно  · n=1  · mahabharata-udyogaparva
+- исполненную справедливости и глубокого смысла  · n=1  · mahabharata-udyogaparva
+- отвечающего закону и пользе  · n=1  · mahabharata-udyogaparva
+- сообразный с законом и пользой  · n=1  · mahabharata-udyogaparva
+- связанный с законом и пользой  · n=1  · mahabharata-udyogaparva
+- согласные с законом и мирской пользой  · n=1  · mahabharata-udyogaparva
+
+### `DarmArTayuktaM` — dharmārthayuktaṃ  (n=1)
+
+- согласные с законом и пользой  · n=1  · mahabharata-udyogaparva
+
+### `DarmArTayuktam` — dharmārthayuktam  (n=1)
+
+- соединенные с праведностью и пользой  · n=1  · ramayana-sundarakanda
+
+### `DarmArTiBiH` — dharmārthibhiḥ  (n=1)
+
+- чудесные существа  · n=1  · buddhacharita
+
+### `DarmArTinaH` — dharmārthinaḥ  (n=1)
+
+- мудрый  · n=1  · shatakatrayam
+
+### `DarmArTino` — dharmārthino  (n=1)
+
+- помогут  · n=1  · shatakatrayam-serebryakov
+
+### `DarmArTopahita` — dharmārthopahita  (n=1)
+
+- исполненные дхармы и артхи  · n=1  · ramayana-sundarakanda
+
+### `DarmAraRya` — dharmāraṇya  (n=5)
+
+- Дхармаранья  · n=1  · ramayana-balakanda
+- рощей Дхармы  · n=1  · mahabharata-aranyakaparva
+- Рощей Дхармы  · n=1  · mahabharata-aranyakaparva
+- лес дхармы  · n=1  · mahabharata-aranyakaparva
+- леса дхармы  · n=1  · mahabharata-ashvamedhikaparva
+
+### `DarmAraRyam` — dharmāraṇyam  (n=1)
+
+- роща дхармы  · n=1  · mahabharata-aranyakaparva
+
+### `DarmAsanamaDizWAya` — dharmāsanamadhiṣṭhāya  (n=1)
+
+- заняв место в суде  · n=1  · manavadharmashastra
+
+### `DarmAt` — dharmāt  (n=14)
+
+- от дхармы  · n=4  · manavadharmashastra, mahabharata-aranyakaparva, mahabharata-dronaparva, mahabharata-striparva
+- дхармы  · n=2  · manavadharmashastra, mahabharata-udyogaparva
+- добродетель  · n=1  · ramayana-ayodhyakanda
+- долг и добродетель  · n=1  · ramayana-balakanda
+- верностью ей  · n=1  · mahabharata-aranyakaparva
+- исполнением дхармы  · n=1  · mahabharata-aranyakaparva
+- карма  · n=1  · bhagavadgity
+- от добродетели  · n=1  · mahabharata-shalyaparva
+- Из дхармы  · n=1  · devi-gita
+- от закона  · n=1  · mahabharata-sabhaparva
+
+### `DarmAtiSaNkin` — dharmātiśaṅkin  (n=3)
+
+- усомнившийся в дхарме  · n=2  · mahabharata-aranyakaparva
+- усомнившемуся в дхарме  · n=1  · mahabharata-aranyakaparva
+
+### `DarmAtmA` — dharmātmā  (n=78)
+
+- добродетельный  · n=11  · ramayana-balakanda, ramayana-ayodhyakanda, ramayana-aranyakanda, mahabharata-aranyakaparva, mahabharata-adiparva
+- благочестивый  · n=10  · mahabharata-aranyakaparva, ramayana-sundarakanda, mahabharata-adiparva
+- справедливый душою  · n=6  · mahabharata-shalyaparva, mahabharata-adiparva, mahabharata-udyogaparva, mahabharata-sabhaparva
+- справедливый  · n=6  · mahabharata-adiparva, mahabharata-shalyaparva
+- верный дхарме  · n=5  · mahabharata-ashvamedhikaparva, mahabharata-svargarohanikaparva, mahabharata-mahaprasthanikaparva
+- праведный  · n=3  · ramayana-ayodhyakanda, manavadharmashastra, mahabharata-virataparva
+- Добродетельный  · n=3  · ramayana-aranyakanda
+- праведный душой  · n=2  · mahabharata-shantiparva, mahabharata-striparva
+- благородный  · n=2  · ramayana-ayodhyakanda, mahabharata-sabhaparva
+- исполненный добродетели  · n=2  · ramayana-aranyakanda
+- Благороден  · n=1  · ramayana-ayodhyakanda
+- Благородный  · n=1  · ramayana-ayodhyakanda
+- Рама  · n=1  · ramayana-aranyakanda
+- Бык среди мудрецов  · n=1  · ramayana-balakanda
+- добродетельный царь  · n=1  · ramayana-balakanda
+- Благочестивый  · n=1  · mahabharata-aranyakaparva
+- благочестив  · n=1  · mahabharata-aranyakaparva
+- Справедливым  · n=1  · mahabharata-adiparva
+- блюдет закон  · n=1  · mahabharata-adiparva
+- справедливым и благородным  · n=1  · mahabharata-adiparva
+- справедливой  · n=1  · mahabharata-adiparva
+- праведный душою  · n=1  · mahabharata-bhishmaparva
+- обладает душою справедливой  · n=1  · mahabharata-udyogaparva
+- со справедливою душою  · n=1  · mahabharata-udyogaparva
+- праведной душою  · n=1  · gitarthasamgraha-abhinavagupta
+- исполнителем долга  · n=1  · bhagavadgita-1914
+- праведником  · n=1  · bhagavadgity
+- добродѣтельный духъ  · n=1  · bhagavadgita-1788
+- душою он в дхарме  · n=1  · bhagavadgita-sementsov
+- праведник  · n=1  · bhagavadgita-prabhupada
+- Исполненный благочестия  · n=1  · mahabharata-ashvamedhikaparva
+- исполненный благочестия  · n=1  · mahabharata-ashvamedhikaparva
+- верен дхарме  · n=1  · mahabharata-ashvamedhikaparva
+- справедливый душой  · n=1  · mahabharata-sabhaparva
+- справедливый в душе  · n=1  · mahabharata-sabhaparva
+- исполненный праведности  · n=1  · mahabharata-ashramavasikaparva
+- Верный душою дхарме  · n=1  · mahabharata-mausalaparva
+- верный душою дхарме  · n=1  · mahabharata-svargarohanikaparva
+
+### `DarmAtmAna` — dharmātmāna  (n=1)
+
+- благочестивому  · n=1  · mahabharata-udyogaparva
+
+### `DarmAtmAnaH` — dharmātmānaḥ  (n=4)
+
+- добронравные  · n=1  · ramayana-balakanda
+- добродетельные  · n=1  · mahabharata-aranyakaparva
+- справедливы душою  · n=1  · mahabharata-udyogaparva
+- праведные душою  · n=1  · mahabharata-shalyaparva
+
+### `DarmAtmAnaM` — dharmātmānaṃ  (n=1)
+
+- благочестивого  · n=1  · mahabharata-karnaparva
+
+### `DarmAtmAnam` — dharmātmānam  (n=4)
+
+- справедливому  · n=2  · mahabharata-sabhaparva, mahabharata-virataparva
+- праведным  · n=1  · mahabharata-ashvamedhikaparva
+- исполненного праведности  · n=1  · mahabharata-ashramavasikaparva
+
+### `DarmAtmAnau` — dharmātmānau  (n=1)
+
+- благочестивых  · n=1  · ramayana-sundarakanda
+
+### `DarmAtmaja` — dharmātmaja  (n=4)
+
+- сын Дхармы  · n=3  · mahabharata-ashvamedhikaparva, mahabharata-ashramavasikaparva
+- сыну Дхармы  · n=1  · mahabharata-dronaparva
+
+### `DarmAtmajaH` — dharmātmajaḥ  (n=3)
+
+- сын Дхармы  · n=3  · mahabharata-ashramavasikaparva, mahabharata-sabhaparva
+
+### `DarmAtman` — dharmātman  (n=247)
+
+- добродетельный  · n=39  · ramayana-aranyakanda, ramayana-balakanda, ramayana-ayodhyakanda, mahabharata-aranyakaparva, mahabharata-adiparva, mahabharata-udyogaparva, mahabharata-dronaparva, mahabharata-ashramavasikaparva
+- справедливый душою  · n=31  · mahabharata-shalyaparva, mahabharata-dronaparva, mahabharata-udyogaparva, mahabharata-adiparva, mahabharata-sabhaparva, mahabharata-virataparva
+- благочестивый  · n=19  · mahabharata-aranyakaparva, mahabharata-adiparva, ramayana-sundarakanda, mahabharata-bhishmaparva, mahabharata-udyogaparva, mahabharata-ashvamedhikaparva, mahabharata-striparva
+- верный дхарме  · n=14  · mahabharata-ashvamedhikaparva, mahabharata-mahaprasthanikaparva, mahabharata-shantiparva, mahabharata-ashramavasikaparva, mahabharata-svargarohanikaparva
+- праведный  · n=12  · mahabharata-adiparva, mahabharata-shantiparva, ramayana-ayodhyakanda, manavadharmashastra, ramayana-balakanda, ramayana-aranyakanda, mahabharata-bhishmaparva, mahabharata-udyogaparva, mahabharata-striparva
+- Добродетельный  · n=12  · ramayana-balakanda, ramayana-aranyakanda
+- справедливый  · n=10  · mahabharata-sabhaparva, mahabharata-adiparva, mahabharata-udyogaparva, ramayana-balakanda, mahabharata-aranyakaparva, mahabharata-dronaparva
+- преданный дхарме  · n=6  · mahabharata-aranyakaparva, mahabharata-ashvamedhikaparva, mahabharata-karnaparva, mahabharata-striparva
+- справедлив душою  · n=5  · mahabharata-udyogaparva, mahabharata-adiparva, mahabharata-sabhaparva, mahabharata-virataparva
+- праведный душой  · n=4  · mahabharata-adiparva, mahabharata-shantiparva
+- Праведный  · n=3  · mahabharata-aranyakaparva, ramayana-balakanda
+- мудрый  · n=2  · ramayana-ayodhyakanda
+- добродетельный царь  · n=2  · ramayana-ayodhyakanda
+- благочестивого  · n=2  · ramayana-sundarakanda
+- благородный  · n=2  · ramayana-balakanda, mahabharata-udyogaparva
+- праведник  · n=2  · mahabharata-aranyakaparva, mahabharata-ashvamedhikaparva
+- достойный  · n=2  · mahabharata-aranyakaparva, mahabharata-sauptikaparva
+- справедливый душой  · n=2  · mahabharata-adiparva, mahabharata-udyogaparva
+- справедлив  · n=2  · mahabharata-adiparva, mahabharata-udyogaparva
+- добродетельным  · n=2  · mahabharata-adiparva, mahabharata-sabhaparva
+- праведен душою  · n=2  · mahabharata-bhishmaparva, bhagavadgita-erman
+- праведный душою  · n=2  · mahabharata-bhishmaparva, mahabharata-striparva
+- Справедливый душою  · n=2  · mahabharata-dronaparva, mahabharata-udyogaparva
+- справедливого душою  · n=2  · mahabharata-shalyaparva
+- верный душою дхарме  · n=2  · mahabharata-ashvamedhikaparva, mahabharata-mahaprasthanikaparva
+- Верный дхарме  · n=2  · mahabharata-ashramavasikaparva
+- добродетельные  · n=1  · mahabharata-adiparva
+- праведных  · n=1  · mahabharata-adiparva
+- праведные  · n=1  · mahabharata-adiparva
+- великодушный  · n=1  · mahabharata-adiparva
+- добродетелен  · n=1  · ramayana-ayodhyakanda
+- сиятельный  · n=1  · ramayana-ayodhyakanda
+- благочестивый духом  · n=1  · ramayana-sundarakanda
+- Обладающий благочестивой душой  · n=1  · ramayana-sundarakanda
+- добродетельному  · n=1  · ramayana-aranyakanda
+- Рама  · n=1  · ramayana-aranyakanda
+- Добродетельного  · n=1  · ramayana-aranyakanda
+- доблестный  · n=1  · ramayana-aranyakanda
+- мудрец  · n=1  · ramayana-aranyakanda
+- Вишвамитры  · n=1  · ramayana-aranyakanda
+- прославлен  · n=1  · ramayana-aranyakanda
+- доброго  · n=1  · ramayana-balakanda
+- добродетельного  · n=1  · ramayana-balakanda
+- добродетели  · n=1  · ramayana-balakanda
+- благое  · n=1  · ramayana-balakanda
+- многомудрый  · n=1  · ramayana-balakanda
+- великий духом  · n=1  · ramayana-balakanda
+- благой  · n=1  · ramayana-balakanda
+- благочестием  · n=1  · ramayana-balakanda
+- Верного своему долгу  · n=1  · ramayana-balakanda
+- блюститель закона  · n=1  · ramayana-balakanda
+- Средоточие добродетели  · n=1  · ramayana-balakanda
+- Сведущего в законе и долге  · n=1  · ramayana-balakanda
+- преданный духом дхарме  · n=1  · mahabharata-aranyakaparva
+- Благочестивый  · n=1  · mahabharata-aranyakaparva
+- преданному духом дхарме  · n=1  · mahabharata-aranyakaparva
+- Преданный дхарме  · n=1  · mahabharata-aranyakaparva
+- наиблагочестивейшим  · n=1  · mahabharata-aranyakaparva
+- добродетельнейший  · n=1  · mahabharata-aranyakaparva
+- Добродетельные  · n=1  · mahabharata-aranyakaparva
+- справедливый владыка  · n=1  · mahabharata-adiparva
+- справедливым  · n=1  · mahabharata-adiparva
+- благочестивые  · n=1  · mahabharata-adiparva
+- о справедливый  · n=1  · mahabharata-adiparva
+- справедливыми  · n=1  · mahabharata-adiparva
+- благородного  · n=1  · mahabharata-adiparva
+- с душою, преданной долгу  · n=1  · mahabharata-dronaparva
+- справедливые  · n=1  · mahabharata-dronaparva
+- добродетельный и справедливый душою  · n=1  · mahabharata-dronaparva
+- праведники  · n=1  · buddhacharita
+- преданных дхарме  · n=1  · buddhacharita
+- справедливый в душе  · n=1  · mahabharata-udyogaparva
+- со справедливой душою  · n=1  · mahabharata-udyogaparva
+- высоконравственной душою  · n=1  · mahabharata-udyogaparva
+- тем, чей атман — в дхарме  · n=1  · bhagavadgita-burba
+- праведником  · n=1  · bhagavadgita-smirnov
+- праведным  · n=1  · bhagavadgita-1909
+- справедливому душою  · n=1  · mahabharata-shalyaparva
+- праведный духом  · n=1  · mahabharata-ashvamedhikaparva
+- Царь Праведности  · n=1  · mahabharata-ashvamedhikaparva
+- праведной душою  · n=1  · mahabharata-ashvamedhikaparva
+- верному дхарме  · n=1  · mahabharata-ashvamedhikaparva
+- с душою справедливой  · n=1  · mahabharata-sabhaparva
+- справедливого душой  · n=1  · mahabharata-virataparva
+- исполненный благочестия  · n=1  · mahabharata-ashramavasikaparva
+- Преисполненный благочестия  · n=1  · mahabharata-ashramavasikaparva
+- преданный душой дхарме  · n=1  · mahabharata-sauptikaparva
+- верному душой дхарме  · n=1  · mahabharata-shantiparva
+
+### `DarmAtmanA` — dharmātmanā  (n=1)
+
+- справедливым душою  · n=1  · mahabharata-shalyaparva
+
+### `DarmAtmanAm` — dharmātmanām  (n=1)
+
+- праведных  · n=1  · mahabharata-adiparva
+
+### `DarmAtmanas` — dharmātmanas  (n=1)
+
+- благочестивого духом  · n=1  · ramayana-sundarakanda
+
+### `DarmAtmani` — dharmātmani  (n=2)
+
+- справедливый  · n=1  · mahabharata-adiparva
+- верному дхарме  · n=1  · mahabharata-karnaparva
+
+### `DarmAtmano` — dharmātmano  (n=1)
+
+- добродетельный  · n=1  · ramayana-ayodhyakanda
+
+### `DarmAtmatA` — dharmātmatā  (n=1)
+
+- благородство  · n=1  · mahabharata-udyogaparva
+
+### `DarmAtmavat` — dharmātmavat  (n=1)
+
+- наделенных благочестием  · n=1  · mahabharata-aranyakaparva
+
+### `DarmAvApteH` — dharmāvāpteḥ  (n=1)
+
+- добродетелей  · n=1  · mahabharata-udyogaparva
+
+### `DarmAvaham` — dharmāvaham  (n=2)
+
+- несущего добродетель  · n=2  · shv-up
+
+### `DarmAvirudDa` — dharmāviruddha  (n=6)
+
+- не противоречащее закону  · n=2  · bhagavadgita-burba, bhagavadgity
+- не противоречившим закону  · n=1  · mahabharata-adiparva
+- не противоречащее дхарме  · n=1  · bhagavadgita-burba
+- не противное дхарме  · n=1  · ramanuja_gitabhashya
+- чистѣйшая  · n=1  · bhagavadgita-1909
+
+### `DarmAvirudDaH` — dharmāviruddhaḥ  (n=3)
+
+- не противное добродетели  · n=2  · mahabharata-bhishmaparva, bhagavadgita-erman
+- нравственною приличностію въ правильность приводимое  · n=1  · bhagavadgita-1788
+
+### `DarmAya` — dharmāya  (n=6)
+
+- Дхарме  · n=3  · manavadharmashastra, mahabharata-adiparva, mahabharata-udyogaparva
+- ради дхармы  · n=1  · buddhacharita
+- ради благочестия  · n=1  · mahabharata-udyogaparva
+- ради закона  · n=1  · mahabharata-udyogaparva
+
+### `DarmI` — dharmī  (n=2)
+
+- субъект  · n=1  · nyaya-bhashya
+- объект  · n=1  · yoga-sutry
+
+### `Darma` — dharma  (n=1432)
+
+- дхарма  · n=213  · manavadharmashastra, mahabharata-aranyakaparva, buddhacharita, mahabharata-ashvamedhikaparva, kama-sutra, mahabharata-adiparva, yoga-sutry_vyasa-bhashya, mahabharata-karnaparva, gitarthasamgraha-abhinavagupta, br-up, mahabharata-ashramavasikaparva, ramayana-ayodhyakanda, mahabharata-udyogaparva, bhagavadgita-burba, bhagavadgita-smirnov, mahabharata-shantiparva, nyaya-bhashya, shatakatrayam-serebryakov, mahabharata-svargarohanikaparva, mahabharata-bhishmaparva, mahabharata-dronaparva, ramanuja_gitabhashya, shatakatrayam, yoga-sutry_zagumennov, mahabharata-striparva, mnar-up, mahabharata-sauptikaparva
+- дхармы  · n=120  · manavadharmashastra, mahabharata-aranyakaparva, buddhacharita, nyaya-bhashya, mahabharata-ashvamedhikaparva, kama-sutra, bhagavadgita-sementsov, gitarthasamgraha-abhinavagupta, bhagavadgity, bhagavadgita-burba, ramanuja_gitabhashya, bhagavadgita-smirnov, yoga-sutry_zagumennov, ramayana-ayodhyakanda, ramayana-sundarakanda, ramayana-balakanda, mahabharata-karnaparva, devi-gita, br-up, sankhya-karika, yoga-sutry_vyasa-bhashya, kat-up, mahabharata-svargarohanikaparva
+- закон  · n=97  · mahabharata-adiparva, mahabharata-udyogaparva, mahabharata-sabhaparva, mahabharata-dronaparva, ramayana-aranyakanda, mahabharata-virataparva, bhagavadgita-burba, bhagavadgita-smirnov, ramayana-ayodhyakanda, mahabharata-aranyakaparva, buddhacharita, ramanuja_gitabhashya, ramayana-sundarakanda, manavadharmashastra, ramayana-balakanda, mahabharata-bhishmaparva, bhagavadgita-erman, bhagavadgita-sementsov, bhagavadgita-sharma, mahabharata-shalyaparva, devi-gita, atharvaveda, shukasaptati
+- добродетель  · n=73  · ramayana-ayodhyakanda, mahabharata-udyogaparva, sankhya-karika, ramayana-aranyakanda, ramayana-balakanda, mahabharata-adiparva, mahabharata-aranyakaparva, kama-sutra, mahabharata-dronaparva, mahabharata-sabhaparva
+- дхарме  · n=71  · mahabharata-aranyakaparva, buddhacharita, manavadharmashastra, mahabharata-adiparva, bhagavadgita-sementsov, kama-sutra, mahabharata-karnaparva, mahabharata-ashvamedhikaparva, shatakatrayam-serebryakov, ramayana-sundarakanda, bhagavadgita-sharma, nyaya-bhashya, devi-gita, mai-up, mahabharata-shantiparva
+- дхарму  · n=69  · manavadharmashastra, mahabharata-aranyakaparva, kama-sutra, buddhacharita, mahabharata-ashvamedhikaparva, ramayana-sundarakanda, gitarthasamgraha-abhinavagupta, bhagavadgita-sharma, mahabharata-karnaparva, ramayana-ayodhyakanda, bhagavadgita-smirnov, bhagavadgita-sementsov, br-up, shukasaptati, mahabharata-ashramavasikaparva
+- добродетели  · n=64  · ramayana-ayodhyakanda, ramayana-aranyakanda, mahabharata-udyogaparva, ramayana-balakanda, mahabharata-aranyakaparva, mahabharata-adiparva, mahabharata-dronaparva, bhagavadgita-radha, nyaya-bhashya, devi-gita, mahabharata-sabhaparva, sankhya-karika, mai-up, tai-up, rampt-up, vajs-up
+- Дхарма  · n=62  · mahabharata-adiparva, mahabharata-udyogaparva, mahabharata-aranyakaparva, mahabharata-ashvamedhikaparva, manavadharmashastra, mahabharata-dronaparva, bhagavadgita-1914, mahabharata-virataparva, mnar-up, mahabharata-svargarohanikaparva, kama-sutra, gitarthasamgraha-abhinavagupta, mahabharata-shalyaparva, nyaya-bhashya, mahabharata-sabhaparva, mahabharata-ashramavasikaparva, mahabharata-sauptikaparva, mahabharata-mahaprasthanikaparva
+- долг  · n=44  · ramayana-ayodhyakanda, ramayana-balakanda, mahabharata-aranyakaparva, mahabharata-bhishmaparva, mahabharata-shalyaparva, atharvaveda, bhagavadgita-erman, mahabharata-ashvamedhikaparva, raghuvamsha, atharvaveda, mahabharata-sauptikaparva, mahabharata-mausalaparva
+- справедливость  · n=29  · mahabharata-udyogaparva, mahabharata-adiparva, mahabharata-shalyaparva, mahabharata-dronaparva, bhagavadgity, bhagavadgita-1788, ch-up, mahabharata-sabhaparva, mahabharata-aranyakaparva
+- закону  · n=26  · mahabharata-adiparva, mahabharata-udyogaparva, mahabharata-sabhaparva, manavadharmashastra, ramayana-balakanda, mahabharata-bhishmaparva, ramanuja_gitabhashya, mahabharata-ashramavasikaparva
+- дхармой  · n=26  · manavadharmashastra, mahabharata-aranyakaparva, br-up, mahabharata-ashramavasikaparva, kama-sutra, bhagavadgita-sharma, mahabharata-ashvamedhikaparva, mahabharata-striparva, mahabharata-sauptikaparva, gitartha-samgraha_yamunacharya, mahabharata-shantiparva
+- долгу  · n=24  · ramayana-ayodhyakanda, ramayana-aranyakanda, ramayana-balakanda, mahabharata-aranyakaparva
+- закона  · n=22  · mahabharata-udyogaparva, mahabharata-sabhaparva, mahabharata-adiparva, mahabharata-bhishmaparva, bhagavadgita-burba, mahabharata-shalyaparva
+- долга  · n=21  · mahabharata-bhishmaparva, ramayana-ayodhyakanda, ramayana-balakanda, mahabharata-adiparva, mahabharata-dronaparva, bhagavadgita-erman, ramayana-aranyakanda, mahabharata-aranyakaparva, bhagavadgita-1914, bhagavadgita-1909, bhagavadgita-radha, mahabharata-virataparva
+- Дхармы  · n=19  · mahabharata-adiparva, mahabharata-aranyakaparva, mahabharata-udyogaparva, ramayana-sundarakanda, ramayana-aranyakanda, mahabharata-dronaparva, buddhacharita, gitarthasamgraha-abhinavagupta, bhagavadgita-1914
+- добродетельный  · n=17  · ramayana-ayodhyakanda, ramayana-aranyakanda
+- справедливости  · n=16  · mahabharata-udyogaparva, mahabharata-adiparva, mahabharata-virataparva, ch-up
+- свойство  · n=16  · nyaya-bhashya, yoga-sutry_vyasa-bhashya, yoga-sutry_sharma, vedartha-samgraha_ramanuja
+- характеристика  · n=13  · nyaya-bhashya
+- добродетелью  · n=11  · ramayana-ayodhyakanda, ramayana-aranyakanda, mahabharata-aranyakaparva, mahabharata-udyogaparva
+- Закон  · n=11  · mahabharata-bhishmaparva, mahabharata-udyogaparva, raghuvamsha, mahabharata-sabhaparva
+- праведность  · n=10  · mahabharata-bhishmaparva, bhagavadgita-erman, bhagavadgita-radha, mahabharata-aranyakaparva, buddhacharita, yoga-sutry_vyasa-bhashya
+- Дхарму  · n=9  · mahabharata-adiparva, mahabharata-dronaparva, mahabharata-karnaparva, mahabharata-ashvamedhikaparva, mahabharata-svargarohanikaparva
+- законом  · n=8  · mahabharata-adiparva, mahabharata-udyogaparva, ramayana-balakanda, ramanuja_gitabhashya, devi-gita, mahabharata-sabhaparva
+- Добродетель  · n=8  · ramayana-ayodhyakanda, sankhya-karika, kumarasambhava, raghuvamsha
+- Дхармой  · n=8  · rigveda, mahabharata-svargarohanikaparva, manavadharmashastra, mahabharata-adiparva, mahabharata-virataparva, mnar-up
+- законе  · n=8  · mahabharata-sabhaparva, mahabharata-virataparva, mahabharata-adiparva, mahabharata-udyogaparva, mahabharata-striparva
+- религии  · n=8  · bhagavadgita-prabhupada
+- свойства  · n=8  · nyaya-bhashya, yoga-sutry_vyasa-bhashya, vedartha-samgraha_ramanuja
+- законы  · n=6  · mahabharata-adiparva, atharvaveda, mahabharata-sabhaparva
+- праведности  · n=6  · mahabharata-bhishmaparva, yoga-sutry_vyasa-bhashya, bhagavadgita-erman, bhagavadgita-radha
+- характеристики  · n=6  · nyaya-bhashya
+- атрибут  · n=6  · nyaya-bhashya, devi-gita
+- качество  · n=6  · nyaya-bhashya, devi-gita
+- свойств  · n=6  · nyaya-bhashya, yoga-sutry_sharma, yoga-sutry, vedartha-samgraha_ramanuja
+- справедливо  · n=5  · ramayana-ayodhyakanda, mahabharata-adiparva, mahabharata-udyogaparva, mahabharata-shalyaparva, mahabharata-sabhaparva
+- Долг  · n=5  · ramayana-ayodhyakanda, mahabharata-bhishmaparva, bhagavadgita-erman
+- Добродетельный  · n=4  · ramayana-ayodhyakanda
+- праведный  · n=4  · ramayana-ayodhyakanda
+- долге  · n=4  · ramayana-ayodhyakanda, ramanuja_gitabhashya
+- дхарм  · n=4  · mahabharata-aranyakaparva, mahabharata-karnaparva, mahabharata-ashvamedhikaparva, yoga-sutry_zagumennov
+- благочестие  · n=4  · mahabharata-aranyakaparva, mahabharata-ashvamedhikaparva
+- законно  · n=4  · mahabharata-adiparva, mahabharata-udyogaparva, mahabharata-ashramavasikaparva
+- правда  · n=4  · mahabharata-bhishmaparva, bhagavadgita-1909
+- праведное  · n=4  · mahabharata-bhishmaparva, bhagavadgita-erman
+- качества  · n=4  · nyaya-bhashya, ch-up, yoga-sutry_vyasa-bhashya
+- правила  · n=3  · mahabharata-adiparva, mahabharata-bhishmaparva, mahabharata-sabhaparva
+- должное  · n=3  · ramayana-ayodhyakanda, paramarthasara-abhinavagupta, gitartha-samgraha_yamunacharya
+- добродетелен  · n=3  · ramayana-ayodhyakanda, ramayana-aranyakanda, kama-sutra
+- Дхарме  · n=3  · ramayana-balakanda, mahabharata-aranyakaparva, mahabharata-adiparva
+- законов  · n=3  · mahabharata-adiparva, mahabharata-sabhaparva
+- Закона  · n=3  · mahabharata-bhishmaparva, bhagavadgity, bhagavadgita-erman
+- учения  · n=3  · buddhacharita
+- нравственного закона  · n=3  · mahabharata-udyogaparva, mahabharata-shalyaparva, mahabharata-sabhaparva
+- добродѣтели  · n=3  · bhagavadgity, bhagavadgita-1788
+- качеств  · n=3  · nyaya-bhashya, yoga-sutry, yoga-sutry_zagumennov
+- добродетельного  · n=2  · ramayana-ayodhyakanda, ramayana-aranyakanda
+- Добродетели  · n=2  · ramayana-ayodhyakanda
+- правило  · n=2  · manavadharmashastra, mahabharata-sabhaparva
+- дело  · n=2  · manavadharmashastra, mahabharata-adiparva
+- обычаю  · n=2  · ramayana-aranyakanda, mahabharata-dronaparva
+- истины  · n=2  · ramayana-aranyakanda, ramayana-balakanda
+- долгом  · n=2  · ramayana-aranyakanda, mahabharata-aranyakaparva
+- наставлениям  · n=2  · ramayana-aranyakanda
+- благочестию  · n=2  · mahabharata-aranyakaparva
+- благочестием  · n=2  · mahabharata-aranyakaparva
+- судьба  · n=2  · mahabharata-aranyakaparva, buddhacharita
+- благочестия  · n=2  · mahabharata-aranyakaparva, mahabharata-dronaparva
+- Справедливость  · n=2  · mahabharata-aranyakaparva, mahabharata-shalyaparva
+- дхармах  · n=2  · mahabharata-aranyakaparva
+- законам  · n=2  · mahabharata-adiparva, rigveda
+- обязанности  · n=2  · mahabharata-adiparva, mahabharata-udyogaparva
+- вера  · n=2  · mahabharata-bhishmaparva
+- праведностью  · n=2  · mahabharata-bhishmaparva, bhagavadgita-erman
+- учение  · n=2  · buddhacharita
+- религия  · n=2  · bhagavadgita-prabhupada
+- религиозная деятельность  · n=2  · bhagavadgita-prabhupada
+- характеристик  · n=2  · nyaya-bhashya
+- атрибутов  · n=2  · nyaya-bhashya
+- обычай  · n=2  · mahabharata-virataparva, kau-up
+- признаки  · n=2  · sankhya-karika
+- по дхарме  · n=2  · mahabharata-striparva
+- свойствах  · n=2  · kat-up
+- должного  · n=2  · paramarthasara-abhinavagupta
+- установления  · n=1  · mahabharata-adiparva
+- похвальное  · n=1  · mahabharata-adiparva
+- Благородное  · n=1  · ramayana-ayodhyakanda
+- Ради  · n=1  · ramayana-ayodhyakanda
+- Дхармараджи  · n=1  · ramayana-ayodhyakanda
+- власти  · n=1  · ramayana-ayodhyakanda
+- Добродетельную  · n=1  · ramayana-ayodhyakanda
+- добродетельным  · n=1  · ramayana-ayodhyakanda
+- долг кшатрия  · n=1  · ramayana-ayodhyakanda
+- Праведного  · n=1  · ramayana-ayodhyakanda
+- праведного  · n=1  · ramayana-ayodhyakanda
+- добродетельные  · n=1  · ramayana-ayodhyakanda
+- Праведный  · n=1  · ramayana-ayodhyakanda
+- добродетельная  · n=1  · ramayana-ayodhyakanda
+- должного поведения  · n=1  · ramayana-sundarakanda
+- праведно  · n=1  · ramayana-sundarakanda
+- мудрость  · n=1  · manavadharmashastra
+- правильно  · n=1  · manavadharmashastra
+- добродетельных  · n=1  · ramayana-aranyakanda
+- посвятившие себя  · n=1  · ramayana-aranyakanda
+- долг добродетели  · n=1  · ramayana-aranyakanda
+- обет  · n=1  · ramayana-aranyakanda
+- верная  · n=1  · ramayana-aranyakanda
+- опустошил  · n=1  · ramayana-aranyakanda
+- добродетель и долг  · n=1  · ramayana-aranyakanda
+- Достоинство  · n=1  · ramayana-aranyakanda
+- супругу  · n=1  · ramayana-aranyakanda
+- добро  · n=1  · ramayana-aranyakanda
+- деяний  · n=1  · ramayana-aranyakanda
+- верного  · n=1  · ramayana-aranyakanda
+- верной  · n=1  · ramayana-aranyakanda
+- в созерцание  · n=1  · ramayana-balakanda
+- обещание  · n=1  · ramayana-balakanda
+- в летний зной  · n=1  · ramayana-balakanda
+- Праведность  · n=1  · mahabharata-aranyakaparva
+- святость  · n=1  · mahabharata-aranyakaparva
+- дхармами  · n=1  · mahabharata-aranyakaparva
+- назначение  · n=1  · mahabharata-aranyakaparva
+- блаженство  · n=1  · mahabharata-aranyakaparva
+- верность дхарме  · n=1  · mahabharata-aranyakaparva
+- благом  · n=1  · mahabharata-aranyakaparva
+- благочестивый  · n=1  · kama-sutra
+- доброе дело  · n=1  · mahabharata-adiparva
+- обязанностях  · n=1  · mahabharata-adiparva
+- установлениях закона  · n=1  · mahabharata-adiparva
+- благочестивая  · n=1  · mahabharata-adiparva
+- сходства  · n=1  · mahabharata-adiparva
+- законный  · n=1  · mahabharata-adiparva
+- предписания  · n=1  · mahabharata-bhishmaparva
+- приличествует  · n=1  · mahabharata-bhishmaparva
+- Законе  · n=1  · mahabharata-bhishmaparva
+- нравственном законе  · n=1  · mahabharata-dronaparva
+- добродетелями  · n=1  · mahabharata-dronaparva
+- установлений  · n=1  · mahabharata-dronaparva
+- закон нравственности  · n=1  · mahabharata-dronaparva
+- справедливый поступок  · n=1  · mahabharata-dronaparva
+- справедливый  · n=1  · mahabharata-dronaparva
+- подверженный  · n=1  · buddhacharita
+- стремление  · n=1  · buddhacharita
+- следовать дхарме  · n=1  · buddhacharita
+- на дхарму  · n=1  · buddhacharita
+- доставляют  · n=1  · buddhacharita
+- религиозные  · n=1  · mahabharata-udyogaparva
+- дела  · n=1  · mahabharata-udyogaparva
+- чувства справедливости  · n=1  · mahabharata-udyogaparva
+- чувством справедливости  · n=1  · mahabharata-udyogaparva
+- путь добродетели  · n=1  · mahabharata-udyogaparva
+- добродетелям  · n=1  · mahabharata-udyogaparva
+- нравственные устои  · n=1  · mahabharata-udyogaparva
+- политика  · n=1  · mahabharata-udyogaparva
+- справедливая политика  · n=1  · mahabharata-udyogaparva
+- ценностей  · n=1  · mahabharata-udyogaparva
+- установление  · n=1  · mahabharata-udyogaparva
+- добродетельную заслугу  · n=1  · mahabharata-udyogaparva
+- связи  · n=1  · gitarthasamgraha-abhinavagupta
+- качествами  · n=1  · gitarthasamgraha-abhinavagupta
+- закон духа  · n=1  · bhagavadgita-1914
+- Добро  · n=1  · bhagavadgita-1914
+- добром  · n=1  · bhagavadgita-1914
+- вѣрѣ  · n=1  · bhagavadgity
+- должности званія  · n=1  · bhagavadgity
+- должности  · n=1  · bhagavadgita-1788
+- религія  · n=1  · bhagavadgita-1788
+- должности званія своего  · n=1  · bhagavadgita-1788
+- вѣра  · n=1  · bhagavadgita-1909
+- ученью  · n=1  · bhagavadgita-1909
+- правды  · n=1  · bhagavadgita-1909
+- истину  · n=1  · bhagavadgita-1909
+- истиной  · n=1  · bhagavadgita-1909
+- йога  · n=1  · bhagavadgita-sharma
+- деятельность  · n=1  · bhagavadgita-prabhupada
+- деятельность в сознании Кришны  · n=1  · bhagavadgita-prabhupada
+- законов религии  · n=1  · bhagavadgita-prabhupada
+- религиозную деятельность  · n=1  · bhagavadgita-prabhupada
+- принципы религии  · n=1  · bhagavadgita-prabhupada
+- религию  · n=1  · bhagavadgita-prabhupada
+- дхаму  · n=1  · bhagavadgita-radha
+- знанье  · n=1  · kumarasambhava
+- дхарме (добродетели)  · n=1  · kumarasambhava
+- заслуга  · n=1  · mahabharata-shalyaparva
+- добродетельные заслуги  · n=1  · mahabharata-shalyaparva
+- нравственный долг  · n=1  · mahabharata-shalyaparva
+- Нравственный закон  · n=1  · mahabharata-shalyaparva
+- справедливостью  · n=1  · mahabharata-shalyaparva
+- признак  · n=1  · nyaya-bhashya
+- предикат  · n=1  · nyaya-bhashya
+- различия  · n=1  · nyaya-bhashya
+- характеристиках  · n=1  · nyaya-bhashya
+- «дхармичность»  · n=1  · nyaya-bhashya
+- обязанностей  · n=1  · mahabharata-ashvamedhikaparva
+- справедливым путем  · n=1  · mahabharata-sabhaparva
+- нравственный закон  · n=1  · mahabharata-sabhaparva
+- веру  · n=1  · raghuvamsha
+- Законом  · n=1  · raghuvamsha
+- от (бога) Дхармы  · n=1  · mahabharata-virataparva
+- бог Дхарма  · n=1  · mahabharata-virataparva
+- нравственном долге  · n=1  · mahabharata-virataparva
+- добропорядочность  · n=1  · mahabharata-virataparva
+- законах  · n=1  · shukasaptati
+- заслугу  · n=1  · yoga-sutry_vyasa-bhashya
+- тяготеющая  · n=1  · yoga-sutry_vyasa-bhashya
+- качественная определенность  · n=1  · yoga-sutry_vyasa-bhashya
+- качественно-определенное состояние  · n=1  · yoga-sutry_vyasa-bhashya
+- свойствами  · n=1  · yoga-sutry
+- элементов  · n=1  · yoga-sutry_sharma
+- закон праведности  · n=1  · mahabharata-ashramavasikaparva
+- обязательства  · n=1  · vedartha-samgraha_ramanuja
+- атрибуты  · n=1  · vedartha-samgraha_ramanuja
+- очевидность  · n=1  · vedartha-samgraha_ramanuja
+- сущность  · n=1  · vedartha-samgraha_ramanuja
+- справедливого  · n=1  · kat-up
+- неподлинных  · n=1  · paramarthasara-abhinavagupta
+- праведной  · n=1  · yoga-sutry_vyasa-bhashya
+
+### `Darma-AtmA` — dharma-ātmā  (n=1)
+
+- праведником  · n=1  · bhagavadgita-radha
+
+### `Darma-Atman` — dharma-ātman  (n=3)
+
+- верный долгу  · n=1  · ramayana-ayodhyakanda
+- душою в дхарме  · n=1  · ramanuja_gitabhashya
+- праведником  · n=1  · bhagavadgita-sharma
+
+### `Darma-SAstram` — dharma-śāstram  (n=1)
+
+- наука о законе  · n=1  · bhagavadgita-radha
+
+### `Darma-amftam` — dharma-amṛtam  (n=2)
+
+- бессмертный нектар качеств  · n=1  · bhagavadgita-radha
+- нектар наставлений  · n=1  · bhagavadgita-radha
+
+### `Darma-apekzA` — dharma-apekṣā  (n=1)
+
+- забота о добродетели  · n=1  · kama-sutra
+
+### `Darma-avirudDa` — dharma-aviruddha  (n=3)
+
+- не противное долгу  · n=2  · bhagavadgita-1914
+- не противоречащее дхарме  · n=1  · bhagavadgita-radha
+
+### `Darma-ha` — dharma-ha  (n=1)
+
+- губитель дхармы  · n=1  · bhagavadgita-radha
+
+### `Darma-kAma-arTAn` — dharma-kāma-arthān  (n=1)
+
+- праведность, желания и богатство  · n=1  · bhagavadgita-radha
+
+### `Darma-kriyA` — dharma-kriyā  (n=1)
+
+- дхарма  · n=1  · mahabharata-aranyakaparva
+
+### `Darma-kzetra` — dharma-kṣetra  (n=6)
+
+- поле дхармы  · n=3  · bhagavadgita-burba, bhagavadgity, bhagavadgita-radha
+- поле Дхармы  · n=1  · bhagavadgita-1914
+- Курукшетрѣ  · n=1  · bhagavadgita-1788
+- священномъ полѣ  · n=1  · bhagavadgita-1909
+
+### `Darma-pASa-anubadDa` — dharma-pāśa-anubaddha  (n=1)
+
+- связанный узами закона  · n=1  · mahabharata-sabhaparva
+
+### `Darma-sTiti` — dharma-sthiti  (n=1)
+
+- стойкостью, добродетелью  · n=1  · kama-sutra
+
+### `Darma-saMmUQa-cetAH` — dharma-saṃmūḍha-cetāḥ  (n=3)
+
+- с сознанием, в долге запутавшимся  · n=1  · bhagavadgita-burba
+- с помутившимся разумом  · n=1  · bhagavadgita-1914
+- не знаю должности  · n=1  · bhagavadgita-1788
+
+### `Darma-saMmUQa-cetas` — dharma-saṃmūḍha-cetas  (n=1)
+
+- два чувства борются  · n=1  · bhagavadgita-1909
+
+### `Darma-saMsTApana` — dharma-saṃsthāpana  (n=1)
+
+- возрожденья правды  · n=1  · bhagavadgita-1909
+
+### `Darma-samhita` — dharma-samhita  (n=1)
+
+- праведный  · n=1  · ramayana-ayodhyakanda
+
+### `Darma-vatsala` — dharma-vatsala  (n=1)
+
+- преданный долгу  · n=1  · ramayana-ayodhyakanda
+
+### `DarmaAtmA` — dharmaātmā  (n=3)
+
+- добродетельный  · n=1  · ramayana-ayodhyakanda
+- Добродетельный  · n=1  · ramayana-ayodhyakanda
+- Рама  · n=1  · ramayana-ayodhyakanda
+
+### `DarmaAtman` — dharma ātman  (n=1)
+
+- добродетельный  · n=1  · ramayana-ayodhyakanda
+
+### `DarmaBIrutvAt` — dharmabhīrutvāt  (n=1)
+
+- из боязни (нарушить) дхарму  · n=1  · mahabharata-karnaparva
+
+### `DarmaBUtas` — dharmabhūtas  (n=1)
+
+- сущностным свойством  · n=1  · vedartha-samgraha_ramanuja
+
+### `DarmaBayopaDASudDa` — dharmabhayopadhāśuddha  (n=1)
+
+- свободны от побуждений добродетели и страха  · n=1  · kama-sutra
+
+### `DarmaBedAt` — dharmabhedāt  (n=2)
+
+- из-за различия характеристик  · n=2  · nyaya-bhashya
+
+### `DarmaBeda` — dharmabheda  (n=2)
+
+- различие в характеристике  · n=1  · nyaya-bhashya
+- характеристики  · n=1  · nyaya-bhashya
+
+### `DarmaBfcCrezWe` — dharmabhṛcchreṣṭhe  (n=1)
+
+- чудо добродетели  · n=1  · mahabharata-aranyakaparva
+
+### `DarmaBft` — dharmabhṛt  (n=48)
+
+- блюстителей закона  · n=10  · mahabharata-adiparva, mahabharata-udyogaparva, mahabharata-aranyakaparva, mahabharata-virataparva
+- блюстителей дхармы  · n=8  · mahabharata-aranyakaparva
+- блюститель дхармы  · n=7  · mahabharata-karnaparva, mahabharata-ashvamedhikaparva, mahabharata-shantiparva, mahabharata-aranyakaparva
+- вершителей дхармы  · n=4  · mahabharata-ashramavasikaparva, mahabharata-aranyakaparva, mahabharata-ashvamedhikaparva
+- блюститель закона  · n=4  · mahabharata-adiparva, mahabharata-udyogaparva
+- добродетельных  · n=2  · ramayana-ayodhyakanda, ramayana-aranyakanda
+- ревнитель дхармы  · n=2  · mahabharata-aranyakaparva
+- праведник  · n=1  · mahabharata-adiparva
+- благочестивый  · n=1  · mahabharata-shantiparva
+- хранитель дхармы  · n=1  · mahabharata-shantiparva
+- защитник добродетели  · n=1  · ramayana-ayodhyakanda
+- тем, кто стоит на стезе добродетели  · n=1  · ramayana-ayodhyakanda
+- Дхармабхрит  · n=1  · ramayana-aranyakanda
+- праведных  · n=1  · buddhacharita
+- носители дхармы  · n=1  · buddhacharita
+- носителей дхармы  · n=1  · buddhacharita
+- блюстителей справедливости  · n=1  · mahabharata-udyogaparva
+- страж дхармы  · n=1  · mahabharata-karnaparva
+
+### `DarmaBftAM` — dharmabhṛtāṃ  (n=7)
+
+- знатоков добродетели  · n=1  · ramayana-ayodhyakanda
+- благочестивых  · n=1  · ramayana-sundarakanda
+- хранителей дхармы  · n=1  · mahabharata-aranyakaparva
+- защитников дхармы  · n=1  · mahabharata-aranyakaparva
+- блюстителей закона  · n=1  · mahabharata-aranyakaparva
+- блюстителей дхармы  · n=1  · mahabharata-ashvamedhikaparva
+- вершителей дхармы  · n=1  · mahabharata-ashramavasikaparva
+
+### `DarmaBftAMSrezWa` — dharmabhṛtāṃ śreṣṭha  (n=2)
+
+- лучший из блюстителей закона  · n=1  · mahabharata-adiparva
+- лучший из исполнителей закона  · n=1  · mahabharata-adiparva
+
+### `DarmaBftAMvarA` — dharmabhṛtāṃ varā  (n=1)
+
+- лучшая из вершителей дхармы  · n=1  · mahabharata-ashvamedhikaparva
+
+### `DarmaBftAMvara` — dharmabhṛtāṃ vara  (n=5)
+
+- лучший из блюстителей закона  · n=2  · mahabharata-adiparva, mahabharata-dronaparva
+- лучший из вершителей дхармы  · n=1  · mahabharata-shantiparva
+- лучший из блюстителей дхармы  · n=1  · mahabharata-shantiparva
+- лучшего из блюстителей закона  · n=1  · mahabharata-udyogaparva
+
+### `DarmaBftAMvaraH` — dharmabhṛtāṃ varaḥ  (n=1)
+
+- лучший из блюстителей закона  · n=1  · mahabharata-udyogaparva
+
+### `DarmaBftAm` — dharmabhṛtām  (n=11)
+
+- блюстителей дхармы  · n=4  · mahabharata-aranyakaparva, mahabharata-karnaparva
+- добродетели  · n=2  · ramayana-ayodhyakanda
+- блюстителей закона  · n=2  · mahabharata-udyogaparva, mahabharata-virataparva
+- праведников  · n=1  · mahabharata-adiparva
+- добродетельных  · n=1  · ramayana-ayodhyakanda
+- вершителей дхармы  · n=1  · mahabharata-ashramavasikaparva
+
+### `DarmaBiH` — dharmabhiḥ  (n=5)
+
+- законам  · n=2  · rigveda
+- установлениями  · n=2  · rigveda
+- природе  · n=1  · rigveda
+
+### `DarmaBikzuka` — dharmabhikṣuka  (n=1)
+
+- нищенствующими ради [исполнения] дхармы  · n=1  · manavadharmashastra
+
+### `DarmaDarmin` — dharmadharmin  (n=1)
+
+- атрибутов и их субстратов  · n=1  · nyaya-bhashya
+
+### `DarmaDft` — dharmadhṛt  (n=2)
+
+- поддерживающие закон  · n=1  · atharvaveda
+- хранители закона  · n=1  · atharvaveda
+
+### `DarmaDuraM` — dharmadhuraṃ  (n=1)
+
+- долга  · n=1  · ramayana-ayodhyakanda
+
+### `DarmaDvajI` — dharmadhvajī  (n=1)
+
+- Держащий знамя добродетели  · n=1  · manavadharmashastra
+
+### `DarmaDvaja` — dharmadhvaja  (n=1)
+
+- Знамя дхармы  · n=1  · mahabharata-aranyakaparva
+
+### `DarmaDvajavatA` — dharmadhvajavatā  (n=2)
+
+- прикрывающимся знаменем справедливости  · n=1  · mahabharata-dronaparva
+- Прикрывающийся знаменем справедливости  · n=1  · mahabharata-dronaparva
+
+### `DarmaGAtizu` — dharmaghātiṣu  (n=1)
+
+- попирающие дхарму  · n=1  · mahabharata-aranyakaparva
+
+### `DarmaH` — dharmaḥ  (n=101)
+
+- дхарма  · n=26  · manavadharmashastra, mahabharata-aranyakaparva, buddhacharita, mahabharata-ashvamedhikaparva, devi-gita, mahabharata-udyogaparva, gitarthasamgraha-abhinavagupta, mahabharata-karnaparva, mahabharata-ashramavasikaparva
+- закон  · n=17  · mahabharata-adiparva, mahabharata-udyogaparva, ramayana-ayodhyakanda, ramayana-sundarakanda, mahabharata-bhishmaparva, mahabharata-dronaparva, mahabharata-karnaparva, mahabharata-sabhaparva
+- добродетель  · n=10  · ramayana-ayodhyakanda, mahabharata-aranyakaparva, mahabharata-udyogaparva, mahabharata-ashvamedhikaparva, mahabharata-adiparva
+- Дхарма  · n=7  · mahabharata-adiparva, mahabharata-ashramavasikaparva, mahabharata-aranyakaparva, mahabharata-sabhaparva
+- долг  · n=7  · ramayana-ayodhyakanda, mahabharata-aranyakaparva, mahabharata-bhishmaparva, mahabharata-udyogaparva, mahabharata-shalyaparva
+- справедливость  · n=5  · mahabharata-dronaparva, mahabharata-udyogaparva, mahabharata-shalyaparva, mahabharata-adiparva
+- дхармы  · n=2  · mahabharata-aranyakaparva
+- дхармой  · n=2  · mahabharata-aranyakaparva, mahabharata-ashvamedhikaparva
+- обычай  · n=2  · mahabharata-adiparva, kau-up
+- характеристика  · n=2  · nyaya-bhashya
+- Дхарму  · n=2  · mahabharata-ashramavasikaparva, mahabharata-striparva
+- долга  · n=1  · ramayana-ayodhyakanda
+- добродетелен  · n=1  · ramayana-aranyakanda
+- Добродетели  · n=1  · ramayana-aranyakanda
+- добродетели  · n=1  · ramayana-aranyakanda
+- Долг  · n=1  · mahabharata-aranyakaparva
+- Добродетель  · n=1  · mahabharata-aranyakaparva
+- Дхармы  · n=1  · mahabharata-adiparva
+- справедливо  · n=1  · mahabharata-adiparva
+- добродетелью  · n=1  · mahabharata-adiparva
+- воплощает закон  · n=1  · mahabharata-udyogaparva
+- добродетелей  · n=1  · mahabharata-udyogaparva
+- закон превратный  · n=1  · mahabharata-udyogaparva
+- карма  · n=1  · bhagavadgity
+- законом  · n=1  · mahabharata-shalyaparva
+- законе  · n=1  · mahabharata-ashvamedhikaparva
+- дхарме  · n=1  · mahabharata-ashvamedhikaparva
+- свойство  · n=1  · yoga-sutry_vyasa-bhashya
+- качество  · n=1  · yoga-sutry_vyasa-bhashya
+- рассуждение  · n=1  · kat-up
+
+### `DarmaM` — dharmaṃ  (n=26)
+
+- дхарму  · n=6  · mahabharata-aranyakaparva, manavadharmashastra, mahabharata-karnaparva, mahabharata-shalyaparva, mahabharata-ashvamedhikaparva
+- закон  · n=5  · mahabharata-adiparva, mahabharata-udyogaparva
+- дхарме  · n=4  · devi-gita, mahabharata-aranyakaparva, mahabharata-karnaparva
+- дхармы  · n=3  · manavadharmashastra, mahabharata-aranyakaparva, mahabharata-ashvamedhikaparva
+- дхарма  · n=3  · mahabharata-aranyakaparva, mahabharata-karnaparva
+- о дхарме  · n=1  · mahabharata-aranyakaparva
+- закону  · n=1  · mahabharata-adiparva
+- обязанностях  · n=1  · mahabharata-udyogaparva
+- Закону  · n=1  · devi-gita
+- закона нравственности  · n=1  · mahabharata-sabhaparva
+
+### `DarmaMjyAyastaraMviduH` — dharmaṃ jyāyastaraṃ viduḥ  (n=1)
+
+- называют наивысочайшей из добродетелей  · n=1  · mahabharata-dronaparva
+
+### `DarmaPalAnvezin` — dharmaphalānveṣin  (n=2)
+
+- с надеждой быть вознагражденным за благочестие  · n=1  · mahabharata-aranyakaparva
+- с надеждой быть вознагражденным  · n=1  · mahabharata-aranyakaparva
+
+### `DarmaPala` — dharmaphala  (n=8)
+
+- плод дхармы  · n=2  · mahabharata-shantiparva
+- плодами добродетели  · n=1  · mahabharata-adiparva
+- плод праведности  · n=1  · mahabharata-shantiparva
+- плод благочестия  · n=1  · mahabharata-aranyakaparva
+- плод своего благочестия  · n=1  · mahabharata-aranyakaparva
+- религиозная заслуга  · n=1  · mahabharata-adiparva
+- наивысшая из всех обязанностей  · n=1  · mahabharata-udyogaparva
+
+### `DarmaPalaM` — dharmaphalaṃ  (n=1)
+
+- плод благочестия  · n=1  · ramayana-sundarakanda
+
+### `DarmaPalakAraRa` — dharmaphalakāraṇa  (n=1)
+
+- ради плода благочестия  · n=1  · mahabharata-aranyakaparva
+
+### `DarmaPalam` — dharmaphalam  (n=1)
+
+- плод дхармы  · n=1  · mahabharata-shantiparva
+
+### `DarmaPalodaya` — dharmaphalodaya  (n=1)
+
+- возмездие (за нарушение) закона  · n=1  · mahabharata-adiparva
+
+### `DarmaR` — dharmaṇ  (n=1)
+
+- поддерживать  · n=1  · rigveda
+
+### `DarmaRA` — dharmaṇā  (n=14)
+
+- как положено  · n=3  · rigveda, rigveda
+- по расположению  · n=2  · rigveda
+- по обычаю  · n=2  · rigveda
+- по закону  · n=2  · rigveda, atharvaveda
+- установлению  · n=2  · rigveda
+- Благодаря установлению  · n=1  · rigveda
+- порядком  · n=1  · rigveda
+- (священным) законом  · n=1  · atharvaveda
+
+### `DarmaRAm` — dharmaṇām  (n=2)
+
+- за обычаями  · n=2  · rigveda
+
+### `DarmaRaH` — dharmaṇaḥ  (n=1)
+
+- По закону  · n=1  · rigveda
+
+### `DarmaRas` — dharmaṇas  (n=1)
+
+- по закону  · n=1  · rigveda
+
+### `DarmaRe` — dharmaṇe  (n=2)
+
+- установлению  · n=1  · rigveda
+- закону  · n=1  · rigveda
+
+### `DarmaRi` — dharmaṇi  (n=5)
+
+- долгу  · n=1  · ramayana-ayodhyakanda
+- При поддержании  · n=1  · rigveda
+- по порядку  · n=1  · rigveda
+- По установлению  · n=1  · rigveda
+- по закону  · n=1  · atharvaveda
+
+### `DarmaS` — dharmaś  (n=2)
+
+- дхарма  · n=1  · ramayana-sundarakanda
+- добродетельные заслуги  · n=1  · mahabharata-udyogaparva
+
+### `DarmaSAstrAH` — dharmaśāstrāḥ  (n=1)
+
+- дхармашастра  · n=1  · ramayana-ayodhyakanda
+
+### `DarmaSAstra` — dharmaśāstra  (n=16)
+
+- дхармашастры  · n=4  · manavadharmashastra, vedartha-samgraha_ramanuja, sub-up, atma-up
+- дхармашастрах  · n=2  · mahabharata-aranyakaparva, nyaya-bhashya
+- дхарма-шастры  · n=1  · mahabharata-adiparva
+- Дхармашастра  · n=1  · mahabharata-adiparva
+- шастры, содержащие предписания дхармы  · n=1  · manavadharmashastra
+- Дхармашастрой  · n=1  · mahabharata-adiparva
+- предписания законов  · n=1  · mahabharata-udyogaparva
+- книг законов  · n=1  · mahabharata-udyogaparva
+- законов  · n=1  · mahabharata-udyogaparva
+- Дхармашастры  · n=1  · sankhya-karika
+- дхармашастрами  · n=1  · vedartha-samgraha_ramanuja
+- законодательство  · n=1  · sub-up
+
+### `DarmaSAstre` — dharmaśāstre  (n=1)
+
+- дхармашастры  · n=1  · mahabharata-aranyakaparva
+
+### `DarmaSIlA` — dharmaśīlā  (n=2)
+
+- праведников  · n=1  · mahabharata-aranyakaparva
+- Дхармашила  · n=1  · shukasaptati
+
+### `DarmaSIlAH` — dharmaśīlāḥ  (n=3)
+
+- добродетельны  · n=2  · mahabharata-aranyakaparva
+- добродетельные  · n=1  · ramayana-balakanda
+
+### `DarmaSIlAm` — dharmaśīlām  (n=1)
+
+- добродетельного нрава  · n=1  · mahabharata-udyogaparva
+
+### `DarmaSIlAnAm` — dharmaśīlānām  (n=1)
+
+- доблестен  · n=1  · ramayana-ayodhyakanda
+
+### `DarmaSIla` — dharmaśīla  (n=17)
+
+- благочестивый  · n=3  · mahabharata-ashramavasikaparva, mahabharata-aranyakaparva
+- справедлив  · n=2  · mahabharata-aranyakaparva, mahabharata-virataparva
+- праведный  · n=1  · ramayana-ayodhyakanda
+- праведного  · n=1  · ramayana-sundarakanda
+- преданный долгу  · n=1  · ramayana-aranyakanda
+- твердо следующий дхарме  · n=1  · mahabharata-aranyakaparva
+- набожны  · n=1  · mahabharata-adiparva
+- опытный в законе  · n=1  · mahabharata-adiparva
+- добродетельны  · n=1  · mahabharata-dronaparva
+- справедлив в своих поступках  · n=1  · mahabharata-udyogaparva
+- твердый последователь дхармы  · n=1  · mahabharata-karnaparva
+- добродетельного  · n=1  · mahabharata-karnaparva
+- праведником  · n=1  · mahabharata-ashvamedhikaparva
+- справедливый  · n=1  · mahabharata-shalyaparva
+
+### `DarmaSIlaH` — dharmaśīlaḥ  (n=1)
+
+- справедливым и добродетельным  · n=1  · mahabharata-udyogaparva
+
+### `DarmaSIlasya` — dharmaśīlasya  (n=1)
+
+- благочестивого  · n=1  · mahabharata-adiparva
+
+### `DarmaSIlatA` — dharmaśīlatā  (n=3)
+
+- благочестии  · n=1  · mahabharata-adiparva
+- благочестие  · n=1  · mahabharata-adiparva
+- приверженность дхарме  · n=1  · mahabharata-adiparva
+
+### `DarmaSIlena` — dharmaśīlena  (n=2)
+
+- добродетельный  · n=1  · ramayana-ayodhyakanda
+- добродетельным  · n=1  · mahabharata-udyogaparva
+
+### `DarmaSIlinaH` — dharmaśīlinaḥ  (n=1)
+
+- придерживающиеся праведного поведения  · n=1  · mahabharata-bhishmaparva
+
+### `DarmaSudDi` — dharmaśuddhi  (n=1)
+
+- правильного понимания дхармы  · n=1  · manavadharmashastra
+
+### `DarmabAhya` — dharmabāhya  (n=1)
+
+- стоящих вне дхармы  · n=1  · mahabharata-karnaparva
+
+### `Darmabala` — dharmabala  (n=1)
+
+- силой праведности  · n=1  · ramayana-ayodhyakanda
+
+### `Darmabrahmottara` — dharmabrahmottara  (n=1)
+
+- справедливость и благочестие  · n=1  · mahabharata-adiparva
+
+### `DarmabudDi` — dharmabuddhi  (n=4)
+
+- Дхармабуддхи  · n=2  · shukasaptati
+- наделены умом справедливости  · n=1  · mahabharata-adiparva
+- благочестивые  · n=1  · mahabharata-adiparva
+
+### `DarmabudDiH` — dharmabuddhiḥ  (n=1)
+
+- обладает подлинным разумом  · n=1  · mahabharata-adiparva
+
+### `DarmacArI` — dharmacārī  (n=4)
+
+- стоящий на стезе добродетели  · n=1  · ramayana-aranyakanda
+- Верный долгу  · n=1  · ramayana-aranyakanda
+- справедливый  · n=1  · mahabharata-adiparva
+- благочестивый  · n=1  · mahabharata-udyogaparva
+
+### `DarmacAriBiH` — dharmacāribhiḥ  (n=1)
+
+- благочестивыми  · n=1  · mahabharata-udyogaparva
+
+### `DarmacAriRAm` — dharmacāriṇām  (n=1)
+
+- благочестивых  · n=1  · raghuvamsha
+
+### `DarmacAriRI` — dharmacāriṇī  (n=13)
+
+- добродетельная  · n=2  · ramayana-sundarakanda, mahabharata-aranyakaparva
+- благочестивая  · n=2  · mahabharata-adiparva, mahabharata-sabhaparva
+- праведной отшельнице  · n=1  · ramayana-balakanda
+- блюдущую дхарму  · n=1  · mahabharata-aranyakaparva
+- благочестивой  · n=1  · mahabharata-adiparva
+- соблюдающая закон  · n=1  · mahabharata-sabhaparva
+- благочестивую  · n=1  · mahabharata-sabhaparva
+- законная супруга  · n=1  · mahabharata-virataparva
+- блюдущая свою дхарму  · n=1  · mahabharata-ashramavasikaparva
+- блюдущая дхарму  · n=1  · mahabharata-svargarohanikaparva
+- дхарму блюдущую  · n=1  · mahabharata-svargarohanikaparva
+
+### `DarmacAriRIm` — dharmacāriṇīm  (n=4)
+
+- добродетельную  · n=2  · mahabharata-adiparva, mahabharata-ashramavasikaparva
+- праведную  · n=1  · ramayana-ayodhyakanda
+- праведной  · n=1  · ramayana-ayodhyakanda
+
+### `DarmacAriRa` — dharmacāriṇa  (n=1)
+
+- благочестивые  · n=1  · mahabharata-sabhaparva
+
+### `DarmacAriRaH` — dharmacāriṇaḥ  (n=4)
+
+- добродетельны  · n=2  · mahabharata-adiparva
+- стоящие на стезе добродетели  · n=1  · ramayana-ayodhyakanda
+- Стоящие на стезе добродетели  · n=1  · ramayana-aranyakanda
+
+### `DarmacAriRam` — dharmacāriṇam  (n=3)
+
+- благочестивых  · n=1  · ramayana-ayodhyakanda
+- твердые в обетах  · n=1  · ramayana-aranyakanda
+- блюститель дхармы  · n=1  · mahabharata-aranyakaparva
+
+### `DarmacAriRi` — dharmacāriṇi  (n=1)
+
+- благочестивая  · n=1  · mahabharata-ashramavasikaparva
+
+### `DarmacAriRyAm` — dharmacāriṇyām  (n=1)
+
+- добродетельная  · n=1  · mahabharata-aranyakaparva
+
+### `DarmacArin` — dharmacārin  (n=12)
+
+- благочестивый  · n=2  · ramayana-aranyakanda, mahabharata-udyogaparva
+- сведуща в добродетели  · n=1  · ramayana-ayodhyakanda
+- благочестивых  · n=1  · ramayana-aranyakanda
+- благочестивые  · n=1  · mahabharata-aranyakaparva
+- блюстители дхармы  · n=1  · mahabharata-aranyakaparva
+- ревнители благочестия  · n=1  · mahabharata-aranyakaparva
+- добродетельными  · n=1  · mahabharata-adiparva
+- праведные  · n=1  · mahabharata-dronaparva
+- добродетельного  · n=1  · mahabharata-udyogaparva
+- праведных  · n=1  · mahabharata-udyogaparva
+- соблюдаем закон  · n=1  · mahabharata-sabhaparva
+
+### `DarmacArizu` — dharmacāriṣu  (n=1)
+
+- соблюдают закон  · n=1  · mahabharata-udyogaparva
+
+### `DarmacCala` — dharmacchala  (n=1)
+
+- противные закону  · n=1  · mahabharata-shalyaparva
+
+### `Darmacakra` — dharmacakra  (n=2)
+
+- Дхармачакра  · n=1  · ramayana-balakanda
+- Диск Дхармы  · n=1  · ramayana-balakanda
+
+### `DarmacaryA` — dharmacaryā  (n=2)
+
+- служение дхарме  · n=1  · buddhacharita
+- соблюдение долга  · n=1  · mahabharata-udyogaparva
+
+### `Darmacetas` — dharmacetas  (n=1)
+
+- чьи помыслы обращены к дхарме  · n=1  · mahabharata-aranyakaparva
+
+### `DarmacikIrzA` — dharmacikīrṣā  (n=1)
+
+- желание поступить справедливо  · n=1  · mahabharata-shalyaparva
+
+### `DarmacintA` — dharmacintā  (n=1)
+
+- помыслы о дхарме  · n=1  · amaru-shataka
+
+### `Darmacintaka` — dharmacintaka  (n=1)
+
+- искушенные в законе  · n=1  · mahabharata-adiparva
+
+### `Darmacyuta` — dharmacyuta  (n=1)
+
+- отступившийся от закона  · n=1  · mahabharata-sabhaparva
+
+### `DarmadArAn` — dharmadārān  (n=2)
+
+- Иметь детей  · n=2  · ramayana-ayodhyakanda
+
+### `DarmadAyAdAH` — dharmadāyādāḥ  (n=1)
+
+- наследуют дхарму  · n=1  · buddhacharita
+
+### `DarmadUzaRa` — dharmadūṣaṇa  (n=3)
+
+- губительная для добродетельных заслуг  · n=2  · mahabharata-udyogaparva
+- пагубное для дхармы  · n=1  · mahabharata-udyogaparva
+
+### `DarmadarSane` — dharmadarśane  (n=1)
+
+- в учении закона  · n=1  · mahabharata-adiparva
+
+### `DarmadarSin` — dharmadarśin  (n=3)
+
+- верная долгу  · n=1  · ramayana-ayodhyakanda
+- прозревающая дхарму  · n=1  · mahabharata-karnaparva
+- знающий законы нравственности  · n=1  · mahabharata-sabhaparva
+
+### `DarmadarSinI` — dharmadarśinī  (n=3)
+
+- зрящая дхарму  · n=2  · mahabharata-striparva
+- показавшей путь к закону  · n=1  · mahabharata-sabhaparva
+
+### `Darmadatto` — dharmadatto  (n=1)
+
+- Дхармадатта  · n=1  · shukasaptati
+
+### `Darmadeva` — dharmadeva  (n=1)
+
+- бог Дхарма  · n=1  · mahabharata-adiparva
+
+### `Darmadfzwa` — dharmadṛṣṭa  (n=1)
+
+- прозреваются путем дхармы  · n=1  · mahabharata-ashvamedhikaparva
+
+### `Darmadurbalam` — dharmadurbalam  (n=1)
+
+- нет у него сил для его осуществления  · n=1  · mahabharata-aranyakaparva
+
+### `DarmadvAra` — dharmadvāra  (n=2)
+
+- врата закона  · n=2  · mahabharata-udyogaparva
+
+### `Darmagahana` — dharmagahana  (n=1)
+
+- чащобе сансары  · n=1  · mahabharata-striparva
+
+### `Darmagata` — dharmagata  (n=2)
+
+- следуя уготованным ему путем  · n=1  · mahabharata-aranyakaparva
+- следуя своей дхарме  · n=1  · mahabharata-aranyakaparva
+
+### `Darmagauravam` — dharmagauravam  (n=1)
+
+- высокой нравственности  · n=1  · mahabharata-sabhaparva
+
+### `DarmaguRaiH` — dharma guṇaiḥ  (n=1)
+
+- достоинств и добродетелей  · n=1  · ramayana-aranyakanda
+
+### `DarmaguptyA` — dharmaguptyā  (n=1)
+
+- справедливостью  · n=1  · mahabharata-udyogaparva
+
+### `Darmah` — dharmah  (n=1)
+
+- добродетель  · n=1  · mahabharata-udyogaparva
+
+### `DarmahInA` — dharmahīnā  (n=1)
+
+- забыв о дхарме  · n=1  · mahabharata-aranyakaparva
+
+### `DarmahIna` — dharmahīna  (n=1)
+
+- несовместимым со справедливостью  · n=1  · mahabharata-udyogaparva
+
+### `DarmahantrI` — dharmahantrī  (n=1)
+
+- губителем добродетели  · n=1  · mahabharata-adiparva
+
+### `Darmahetu` — dharmahetu  (n=1)
+
+- ради добродетельных заслуг  · n=1  · mahabharata-udyogaparva
+
+### `DarmaiH` — dharmaiḥ  (n=1)
+
+- предназначенными  · n=1  · gitarthasamgraha-abhinavagupta
+
+### `DarmaikarakzARAm` — dharmaikarakṣāṇām  (n=1)
+
+- опора — добродетель  · n=1  · ramayana-ayodhyakanda
+
+### `Darmaipsu` — dharmaipsu  (n=1)
+
+- желающие исполнять дхарму  · n=1  · manavadharmashastra
+
+### `DarmajA` — dharmajā  (n=1)
+
+- дочь Дхармы  · n=1  · mahabharata-aranyakaparva
+
+### `DarmajIvana` — dharmajīvana  (n=2)
+
+- Живущий дхармой  · n=1  · manavadharmashastra
+- живущий дхармой  · n=1  · manavadharmashastra
+
+### `DarmajYA` — dharmajñā  (n=10)
+
+- знающая дхарму  · n=3  · mahabharata-aranyakaparva, mahabharata-ashvamedhikaparva, mahabharata-sabhaparva
+- Анасуя  · n=1  · ramayana-ayodhyakanda
+- в добродетели  · n=1  · ramayana-aranyakanda
+- знающие законы  · n=1  · mahabharata-adiparva
+- знаешь свою дхарму  · n=1  · mahabharata-ashvamedhikaparva
+- знающая свою дхарму  · n=1  · mahabharata-ashramavasikaparva
+- познавшая дхарму  · n=1  · mahabharata-striparva
+- постигшая дхарму  · n=1  · mahabharata-striparva
+
+### `DarmajYAH` — dharmajñāḥ  (n=2)
+
+- знатоки дхармы  · n=2  · mahabharata-karnaparva, mahabharata-ashramavasikaparva
+
+### `DarmajYAm` — dharmajñām  (n=1)
+
+- благочестивую  · n=1  · mahabharata-udyogaparva
+
+### `DarmajYAnAm` — dharmajñānām  (n=1)
+
+- знатоков Священного закона  · n=1  · mahabharata-ashramavasikaparva
+
+### `DarmajYAna` — dharmajñāna  (n=1)
+
+- Знание дхармы  · n=1  · manavadharmashastra
+
+### `DarmajYAnavat` — dharmajñānavat  (n=1)
+
+- наделенный знанием дхармы  · n=1  · mahabharata-svargarohanikaparva
+
+### `DarmajYa` — dharmajña  (n=185)
+
+- знаток дхармы  · n=48  · mahabharata-aranyakaparva, mahabharata-ashvamedhikaparva, mahabharata-karnaparva, mahabharata-striparva, mahabharata-mausalaparva
+- знаток закона  · n=14  · mahabharata-adiparva, mahabharata-sabhaparva, mahabharata-udyogaparva, ramayana-balakanda, mahabharata-ashvamedhikaparva, mahabharata-ashramavasikaparva
+- знающий закон  · n=8  · mahabharata-adiparva, mahabharata-udyogaparva, mahabharata-sabhaparva
+- знаток добродетели  · n=7  · ramayana-ayodhyakanda, ramayana-balakanda, ramayana-aranyakanda
+- знающие закон  · n=6  · mahabharata-virataparva, mahabharata-adiparva, mahabharata-dronaparva, mahabharata-udyogaparva, mahabharata-ashvamedhikaparva
+- знающий дхарму  · n=5  · mahabharata-aranyakaparva, mahabharata-adiparva, ramayana-sundarakanda, manavadharmashastra
+- знатоки дхармы  · n=5  · mahabharata-aranyakaparva, mahabharata-ashvamedhikaparva, mahabharata-striparva
+- сведущий в долге  · n=4  · ramayana-ayodhyakanda, ramayana-aranyakanda, mahabharata-dronaparva
+- добродетельного  · n=3  · ramayana-balakanda, ramayana-ayodhyakanda
+- Добродетельная  · n=3  · ramayana-ayodhyakanda
+- добродетельный  · n=3  · ramayana-ayodhyakanda
+- знающие дхарму  · n=3  · manavadharmashastra, ramayana-ayodhyakanda
+- о знаток дхармы  · n=3  · mahabharata-aranyakaparva
+- знающего закон  · n=3  · mahabharata-adiparva, mahabharata-sabhaparva
+- сведущий в законе  · n=3  · mahabharata-adiparva, mahabharata-udyogaparva, mahabharata-shalyaparva
+- Знаток добродетели  · n=2  · ramayana-ayodhyakanda, ramayana-aranyakanda
+- Сведущ в законе  · n=2  · ramayana-balakanda
+- знатока добродетели  · n=2  · ramayana-balakanda
+- знатока дхармы  · n=2  · mahabharata-aranyakaparva, mahabharata-karnaparva
+- знатоком дхармы  · n=2  · mahabharata-aranyakaparva, mahabharata-striparva
+- справедливым  · n=2  · mahabharata-adiparva, mahabharata-dronaparva
+- знал закон  · n=1  · mahabharata-adiparva
+- Добродетельный  · n=1  · ramayana-ayodhyakanda
+- сведуща в добродетели  · n=1  · ramayana-ayodhyakanda
+- знающий долг  · n=1  · ramayana-ayodhyakanda
+- верный долгу  · n=1  · ramayana-ayodhyakanda
+- постигшая долг  · n=1  · ramayana-ayodhyakanda
+- добродетельная  · n=1  · ramayana-ayodhyakanda
+- добродетельной  · n=1  · ramayana-ayodhyakanda
+- Бхарадваджа  · n=1  · ramayana-ayodhyakanda
+- искушен в добродетели  · n=1  · ramayana-ayodhyakanda
+- Знатоку добродетели  · n=1  · ramayana-ayodhyakanda
+- Благочестивого  · n=1  · ramayana-sundarakanda
+- сведущего в законе и обычаях  · n=1  · ramayana-sundarakanda
+- знает дхарму  · n=1  · ramayana-sundarakanda
+- благочестив  · n=1  · ramayana-sundarakanda
+- знающих дхарму  · n=1  · manavadharmashastra
+- знающему дхарму  · n=1  · manavadharmashastra
+- знаток долга  · n=1  · ramayana-aranyakanda
+- Сведущий в добродетели  · n=1  · ramayana-aranyakanda
+- Знатока долга  · n=1  · ramayana-aranyakanda
+- Преданный долгу  · n=1  · ramayana-balakanda
+- Добродетельны  · n=1  · ramayana-balakanda
+- знатоки закона  · n=1  · ramayana-balakanda
+- мудрец  · n=1  · ramayana-balakanda
+- знания  · n=1  · ramayana-balakanda
+- Знатоки закона  · n=1  · ramayana-balakanda
+- Добродетельного  · n=1  · ramayana-balakanda
+- постиг дхарму  · n=1  · mahabharata-aranyakaparva
+- искушенные в дхармах  · n=1  · mahabharata-aranyakaparva
+- знатоку дхармы  · n=1  · mahabharata-aranyakaparva
+- преданный дхарме  · n=1  · mahabharata-aranyakaparva
+- знающую дхарму  · n=1  · mahabharata-aranyakaparva
+- знатоками дхармы  · n=1  · kama-sutra
+- зная святой закон  · n=1  · mahabharata-adiparva
+- знающие законы  · n=1  · mahabharata-adiparva
+- знатоком закона  · n=1  · mahabharata-adiparva
+- ведающая закон  · n=1  · mahabharata-adiparva
+- о знаток закона  · n=1  · mahabharata-adiparva
+- знатоку закона  · n=1  · mahabharata-adiparva
+- знатоков закона  · n=1  · mahabharata-adiparva
+- знаток Закона  · n=1  · mahabharata-bhishmaparva
+- о знаток Закона  · n=1  · mahabharata-bhishmaparva
+- сведущ в предписаниях закона  · n=1  · mahabharata-dronaparva
+- Знатоки нравственного долга  · n=1  · mahabharata-udyogaparva
+- справедливых  · n=1  · mahabharata-udyogaparva
+- знает закон  · n=1  · mahabharata-udyogaparva
+- сведущ в нравственном законе  · n=1  · mahabharata-udyogaparva
+- сведущ в законе  · n=1  · mahabharata-udyogaparva
+- о ведающий закон  · n=1  · mahabharata-bhishmaparva
+- справедливый  · n=1  · mahabharata-shalyaparva
+- знатоке дхармы  · n=1  · mahabharata-ashvamedhikaparva
+- познавший дхарму  · n=1  · mahabharata-ashvamedhikaparva
+- сведущая в дхарме  · n=1  · mahabharata-ashramavasikaparva
+- знаток благого закона  · n=1  · mahabharata-ashramavasikaparva
+- сведущие в дхарме  · n=1  · mahabharata-striparva
+
+### `DarmajYaH` — dharmajñaḥ  (n=20)
+
+- знаток дхармы  · n=4  · mahabharata-aranyakaparva, mahabharata-karnaparva, mahabharata-ashramavasikaparva
+- Добродетельный  · n=2  · ramayana-ayodhyakanda
+- знающий закон  · n=2  · mahabharata-adiparva, mahabharata-udyogaparva
+- знаток закона  · n=2  · mahabharata-adiparva
+- Знаток закона  · n=1  · ramayana-ayodhyakanda
+- праведен  · n=1  · ramayana-ayodhyakanda
+- добродетельный  · n=1  · ramayana-ayodhyakanda
+- зная свой долг  · n=1  · ramayana-ayodhyakanda
+- преданный благу  · n=1  · ramayana-ayodhyakanda
+- искушенного в дхарме  · n=1  · mahabharata-aranyakaparva
+- зрящий суть дхармы  · n=1  · mahabharata-aranyakaparva
+- знающий дхарму  · n=1  · mahabharata-aranyakaparva
+- искушенный в дхарме  · n=1  · mahabharata-aranyakaparva
+- знаешь законы нравственности  · n=1  · mahabharata-udyogaparva
+
+### `DarmajYaM` — dharmajñaṃ  (n=1)
+
+- добродетельных  · n=1  · ramayana-ayodhyakanda
+
+### `DarmajYaScAsi` — dharmajñaścāsi  (n=1)
+
+- известны (установления) дхармы  · n=1  · mahabharata-aranyakaparva
+
+### `DarmajYaiH` — dharmajñaiḥ  (n=3)
+
+- знатокам дхармы  · n=1  · mahabharata-aranyakaparva
+- сведущих в дхарме  · n=1  · mahabharata-aranyakaparva
+- искушенные в нравственном законе  · n=1  · mahabharata-dronaparva
+
+### `DarmajYam` — dharmajñam  (n=5)
+
+- славному  · n=1  · ramayana-ayodhyakanda
+- благородного  · n=1  · ramayana-ayodhyakanda
+- добродетельного  · n=1  · ramayana-ayodhyakanda
+- добродетели  · n=1  · ramayana-aranyakanda
+- Верному закону  · n=1  · ramayana-aranyakanda
+
+### `DarmajYamAninau` — dharmajñamāninau  (n=1)
+
+- кичась своим знанием дхармы  · n=1  · mahabharata-sauptikaparva
+
+### `DarmajYasya` — dharmajñasya  (n=1)
+
+- знаток закона  · n=1  · ramayana-balakanda
+
+### `DarmajYatA` — dharmajñatā  (n=2)
+
+- добродетельность  · n=1  · mahabharata-adiparva
+- знание дхармы  · n=1  · mahabharata-striparva
+
+### `DarmajYatayA` — dharmajñatayā  (n=1)
+
+- знанием закона  · n=1  · mahabharata-udyogaparva
+
+### `DarmajYau` — dharmajñau  (n=2)
+
+- знающие долг  · n=1  · ramayana-ayodhyakanda
+- знающие закон  · n=1  · mahabharata-adiparva
+
+### `DarmajYe` — dharmajñe  (n=3)
+
+- добродетельная  · n=1  · ramayana-aranyakanda
+- справедливая  · n=1  · mahabharata-shalyaparva
+- знатоку закона  · n=1  · mahabharata-virataparva
+
+### `DarmajYena` — dharmajñena  (n=2)
+
+- знающий закон  · n=1  · ramayana-ayodhyakanda
+- знаток дхармы  · n=1  · mahabharata-ashramavasikaparva
+
+### `Darmaja` — dharmaja  (n=10)
+
+- сын Дхармы  · n=5  · mahabharata-ashvamedhikaparva, mahabharata-dronaparva, mahabharata-ashramavasikaparva, mahabharata-svargarohanikaparva
+- от Дхармы рожденный  · n=2  · mahabharata-ashramavasikaparva
+- рожден во исполнение дхармы  · n=1  · manavadharmashastra
+- взращенный дхармой  · n=1  · mahabharata-aranyakaparva
+- сыном Дхармы  · n=1  · mahabharata-ashramavasikaparva
+
+### `Darmajam` — dharmajam  (n=1)
+
+- сына Дхармы  · n=1  · mahabharata-karnaparva
+
+### `Darmajaya` — dharmajaya  (n=1)
+
+- победа по справедливости  · n=1  · mahabharata-udyogaparva
+
+### `DarmajnA` — dharmajnā  (n=1)
+
+- добродетельная  · n=1  · ramayana-ayodhyakanda
+
+### `DarmajnAm` — dharmajnām  (n=2)
+
+- Исполненной добродетели  · n=1  · ramayana-ayodhyakanda
+- преданной добродетели  · n=1  · ramayana-ayodhyakanda
+
+### `Darmajna` — dharmajna  (n=7)
+
+- сведущий в добродетели  · n=2  · ramayana-ayodhyakanda
+- сведущ в добродетели  · n=2  · ramayana-ayodhyakanda
+- знаток дхармы  · n=1  · ramayana-ayodhyakanda
+- знаток долга  · n=1  · ramayana-ayodhyakanda
+- знаток гимнов  · n=1  · ramayana-ayodhyakanda
+
+### `DarmajyezWaH` — dharmajyeṣṭhaḥ  (n=1)
+
+- старший  · n=1  · ramayana-ayodhyakanda
+
+### `DarmakANkzin` — dharmakāṅkṣin  (n=1)
+
+- исполняя  · n=1  · ramayana-aranyakanda
+
+### `DarmakAla` — dharmakāla  (n=1)
+
+- время дхармы  · n=1  · buddhacharita
+
+### `DarmakAmAH` — dharmakāmāḥ  (n=2)
+
+- любящие добродетель  · n=2  · tai-up
+
+### `DarmakAmASca` — dharmakāmāśca  (n=1)
+
+- стремятся жить по дхарме  · n=1  · mahabharata-ashvamedhikaparva
+
+### `DarmakAmArTa` — dharmakāmārtha  (n=3)
+
+- в угоду закону  · n=1  · mahabharata-adiparva
+- добрым делам, приятностям и полезному  · n=1  · mahabharata-adiparva
+- закона, любви и пользы  · n=1  · mahabharata-sabhaparva
+
+### `DarmakAmArTaSAstra` — dharmakāmārthaśāstra  (n=3)
+
+- трактаты, посвященные закону, любви и пользе  · n=1  · mahabharata-adiparva
+- шастры о дхарме, каме и артхе  · n=1  · mahabharata-adiparva
+- науки о дхарме, артхе и каме  · n=1  · mahabharata-adiparva
+
+### `DarmakAmArTahInAnAm` — dharmakāmārthahīnānām  (n=1)
+
+- отрешившись от (трех целей жизни): дхармы, камы и артхи  · n=1  · mahabharata-aranyakaparva
+
+### `DarmakAmArTakovidam` — dharmakāmārthakovidam  (n=1)
+
+- знающего [значение] дхармы, [а также] удовольствия (kāma) и богатства (artha)  · n=1  · manavadharmashastra
+
+### `DarmakAmArTaniScayam` — dharmakāmārthaniścayam  (n=1)
+
+- закон, наслаждение и пользу (как мирские цели)  · n=1  · mahabharata-ashvamedhikaparva
+
+### `DarmakAmArTasaMhitA` — dharmakāmārthasaṃhitā  (n=1)
+
+- добродетели, любви и пользе  · n=1  · ramayana-ayodhyakanda
+
+### `DarmakAmArTasaMhita` — dharmakāmārthasaṃhita  (n=1)
+
+- согласно долгу, любви и пользе  · n=1  · mahabharata-aranyakaparva
+
+### `DarmakAmArTasaMyuktam` — dharmakāmārthasaṃyuktam  (n=1)
+
+- о божественном законе, любви и мирской пользе  · n=1  · mahabharata-sabhaparva
+
+### `DarmakAmArTatattvajYa` — dharmakāmārthatattvajña  (n=2)
+
+- Знаток добродетели, любви, пользы  · n=2  · ramayana-ayodhyakanda
+
+### `DarmakAmArTavid` — dharmakāmārthavid  (n=1)
+
+- знаток дхармы, артхи и камы  · n=1  · mahabharata-aranyakaparva
+
+### `DarmakAma` — dharmakāma  (n=5)
+
+- любящему дхарму  · n=1  · ramayana-sundarakanda
+- полные благих устремлений  · n=1  · mahabharata-aranyakaparva
+- любящий дхарму  · n=1  · buddhacharita
+- возлюбившие дхарму  · n=1  · buddhacharita
+- преданный закону  · n=1  · mahabharata-udyogaparva
+
+### `DarmakAmaH` — dharmakāmaḥ  (n=2)
+
+- возлюбивший дхарму  · n=1  · buddhacharita
+- стремящийся к дхарме  · n=1  · mahabharata-ashvamedhikaparva
+
+### `DarmakAmasya` — dharmakāmasya  (n=1)
+
+- возлюбивший дхарму  · n=1  · buddhacharita
+
+### `DarmakAmayoH` — dharmakāmayoḥ  (n=1)
+
+- дхармы и камы  · n=1  · mahabharata-aranyakaparva
+
+### `DarmakAme` — dharmakāme  (n=1)
+
+- дхарме и каме  · n=1  · mahabharata-aranyakaparva
+
+### `DarmakAmya` — dharmakāmya  (n=1)
+
+- желая [более успешного исполнения] дхармы  · n=1  · manavadharmashastra
+
+### `DarmakAmyayA` — dharmakāmyayā  (n=4)
+
+- Стремясь соблюсти свой долг  · n=2  · ramayana-balakanda
+- из желания (соблюсти) свою дхарму  · n=2  · mahabharata-mahaprasthanikaparva
+
+### `DarmakAraRAt` — dharmakāraṇāt  (n=1)
+
+- из-за справедливости  · n=1  · mahabharata-udyogaparva
+
+### `DarmakAraRa` — dharmakāraṇa  (n=1)
+
+- доказательство [исполнения] дхармы  · n=1  · manavadharmashastra
+
+### `DarmakAryARi` — dharmakāryāṇi  (n=1)
+
+- священные обряды  · n=1  · manavadharmashastra
+
+### `DarmakArya` — dharmakārya  (n=3)
+
+- исполнения дхармы  · n=1  · manavadharmashastra
+- священные обряды  · n=1  · manavadharmashastra
+- добродетельный поступок  · n=1  · mahabharata-udyogaparva
+
+### `DarmakIrti` — dharmakīrti  (n=1)
+
+- закон и славу  · n=1  · mahabharata-adiparva
+
+### `Darmaka` — dharmaka  (n=3)
+
+- качества  · n=1  · nyaya-bhashya
+- характеристики  · n=1  · nyaya-bhashya
+- характеризуется  · n=1  · nyaya-bhashya
+
+### `DarmakaTAH` — dharmakathāḥ  (n=1)
+
+- о дхарме  · n=1  · mahabharata-karnaparva
+
+### `DarmakaYcuka` — dharmakañcuka  (n=1)
+
+- внешний наряд добродетели  · n=1  · mahabharata-dronaparva
+
+### `DarmakaYcukam` — dharmakañcukam  (n=1)
+
+- тогу справедливых  · n=1  · mahabharata-dronaparva
+
+### `Darmakartf` — dharmakartṛ  (n=2)
+
+- законодателями  · n=2  · mahabharata-dronaparva
+
+### `DarmakfcCra` — dharmakṛcchra  (n=1)
+
+- трудности (в понимании) этого закона  · n=1  · mahabharata-sabhaparva
+
+### `Darmakfte` — dharmakṛte  (n=1)
+
+- Творцу закона  · n=1  · rigveda
+
+### `DarmakoSa` — dharmakośa  (n=1)
+
+- сокровищницы дхармы  · n=1  · manavadharmashastra
+
+### `Darmakovida` — dharmakovida  (n=1)
+
+- сведущий в добродетели  · n=1  · ramayana-aranyakanda
+
+### `DarmakriyA` — dharmakriyā  (n=1)
+
+- исполнение дхармы  · n=1  · manavadharmashastra
+
+### `Darmakzetra` — dharmakṣetra  (n=11)
+
+- поле дхармы  · n=8  · mahabharata-bhishmaparva, bhagavadgita-erman, bhagavadgita-smirnov, ramanuja_gitabhashya, bhagavadgita-sementsov
+- священная земля  · n=1  · bhagavadgita-sharma
+- место паломничества  · n=1  · bhagavadgita-prabhupada
+- Поле дхармы  · n=1  · mahabharata-ashvamedhikaparva
+
+### `DarmalABa` — dharmalābha  (n=1)
+
+- исполнить долг  · n=1  · ramayana-balakanda
+
+### `DarmalabDa` — dharmalabdha  (n=1)
+
+- подадут в силу обычая  · n=1  · mahabharata-ashvamedhikaparva
+
+### `DarmalakzaRAH` — dharmalakṣaṇāḥ  (n=1)
+
+- носители дхармы  · n=1  · mahabharata-ashvamedhikaparva
+
+### `DarmalakzaRAvasTApariRAma` — dharmalakṣaṇāvasthāpariṇāma  (n=1)
+
+- изменения качественной определенности, отличительных признаков и состояний  · n=1  · yoga-sutry_vyasa-bhashya
+
+### `DarmalakzaRa` — dharmalakṣaṇa  (n=2)
+
+- дхарма  · n=1  · mahabharata-aranyakaparva
+- добродетелью отмеченная  · n=1  · mahabharata-ashvamedhikaparva
+
+### `DarmalakzaRam` — dharmalakṣaṇam  (n=2)
+
+- дхарму, обладающую десятью признаками  · n=1  · manavadharmashastra
+- характерных признаках дхарм  · n=1  · mahabharata-ashvamedhikaparva
+
+### `DarmalakzaRasaMyuktam` — dharmalakṣaṇasaṃyuktam  (n=1)
+
+- характеристикам дхарм  · n=1  · mahabharata-ashvamedhikaparva
+
+### `DarmaleSapraticCannaH` — dharmaleśapraticchannaḥ  (n=2)
+
+- связавши себя (обещанием соблюсти) малую крупицу дхармы  · n=2  · mahabharata-aranyakaparva
+
+### `DarmalipsayA` — dharmalipsayā  (n=1)
+
+- желает достичь справедливости  · n=1  · mahabharata-virataparva
+
+### `DarmaloBa` — dharmalobha  (n=1)
+
+- приверженностью дхарме  · n=1  · mahabharata-aranyakaparva
+
+### `DarmalopAt` — dharmalopāt  (n=1)
+
+- нарушения закона  · n=1  · mahabharata-adiparva
+
+### `Darmalopa` — dharmalopa  (n=3)
+
+- нарушением дхармы  · n=1  · ramayana-sundarakanda
+- ущерб дхарме  · n=1  · mahabharata-aranyakaparva
+- закон не нарушен  · n=1  · mahabharata-adiparva
+
+### `DarmalopaBayAt` — dharmalopabhayāt  (n=1)
+
+- из страха пренебречь своим долгом  · n=1  · raghuvamsha
+
+### `DarmalopaH` — dharmalopaḥ  (n=2)
+
+- нарушение закона  · n=1  · mahabharata-adiparva
+- нарушения закона  · n=1  · mahabharata-adiparva
+
+### `Darmam` — dharmam  (n=91)
+
+- дхарму  · n=13  · mahabharata-aranyakaparva, ramayana-sundarakanda, manavadharmashastra, mahabharata-adiparva, mahabharata-karnaparva, mahabharata-ashvamedhikaparva
+- закон  · n=11  · mahabharata-adiparva, mahabharata-udyogaparva, mahabharata-sabhaparva, mahabharata-ashvamedhikaparva
+- дхарме  · n=6  · manavadharmashastra, mahabharata-aranyakaparva, mahabharata-karnaparva, mahabharata-ashvamedhikaparva
+- добродетель  · n=5  · ramayana-ayodhyakanda
+- добродетели  · n=5  · ramayana-ayodhyakanda, ramayana-aranyakanda
+- дхармы  · n=5  · mahabharata-aranyakaparva, manavadharmashastra
+- долгу  · n=4  · ramayana-ayodhyakanda
+- долг  · n=4  · ramayana-ayodhyakanda, mahabharata-dronaparva
+- закону  · n=4  · mahabharata-adiparva, mahabharata-sabhaparva
+- заслуг  · n=2  · ramayana-aranyakanda
+- правде  · n=2  · ramayana-aranyakanda
+- справедливость  · n=2  · mahabharata-adiparva, mahabharata-dronaparva
+- закона  · n=2  · mahabharata-adiparva, mahabharata-sabhaparva
+- добрых дел  · n=2  · mahabharata-udyogaparva
+- Дхармой  · n=2  · mahabharata-ashramavasikaparva
+- долгом (дхармой)  · n=1  · ramayana-ayodhyakanda
+- доблестен  · n=1  · ramayana-ayodhyakanda
+- добродетельных  · n=1  · ramayana-ayodhyakanda
+- справедливым  · n=1  · ramayana-ayodhyakanda
+- примеру  · n=1  · ramayana-ayodhyakanda
+- добродетельные  · n=1  · ramayana-aranyakanda
+- дхармой  · n=1  · mahabharata-aranyakaparva
+- благочестию  · n=1  · mahabharata-aranyakaparva
+- о дхарме  · n=1  · mahabharata-aranyakaparva
+- дхарма  · n=1  · mahabharata-aranyakaparva
+- добродетельно  · n=1  · kama-sutra
+- на законе  · n=1  · mahabharata-adiparva
+- праведный путь  · n=1  · mahabharata-bhishmaparva
+- о правилах честного боя  · n=1  · mahabharata-dronaparva
+- о нравственном законе  · n=1  · mahabharata-dronaparva
+- законом  · n=1  · mahabharata-udyogaparva
+- к справедливости  · n=1  · mahabharata-udyogaparva
+- по установленным правилам  · n=1  · mahabharata-shalyaparva
+- свойство  · n=1  · nyaya-bhashya
+- ученье  · n=1  · mahabharata-ashvamedhikaparva
+- Дхарма  · n=1  · mahabharata-ashvamedhikaparva
+- справедливостью  · n=1  · mahabharata-virataparva
+
+### `DarmamArgaH` — dharmamārgaḥ  (n=1)
+
+- неправедность  · n=1  · devi-gita
+
+### `DarmamArutaSakrARAmASvinoH` — dharmamārutaśakrāṇāmāśvinoḥ  (n=1)
+
+- сыновья Драупади, те могучие воины на колесницах  · n=1  · mahabharata-dronaparva
+
+### `DarmamAtra` — dharmamātra  (n=1)
+
+- лишь дхармы  · n=1  · yoga-sutry_vyasa-bhashya
+
+### `DarmamUla` — dharmamūla  (n=5)
+
+- долг — всему основа  · n=1  · ramayana-ayodhyakanda
+- корень дхармы  · n=1  · manavadharmashastra
+- основанием дхармы  · n=1  · manavadharmashastra
+- корень  · n=1  · mahabharata-aranyakaparva
+- основана на справедливости  · n=1  · mahabharata-shalyaparva
+
+### `DarmamatiH` — dharmamatiḥ  (n=1)
+
+- помышляющий о дхарме  · n=1  · mahabharata-aranyakaparva
+
+### `DarmamatsaraH` — dharmamatsaraḥ  (n=1)
+
+- думает только о дхарме  · n=1  · buddhacharita
+
+### `Darmamaya` — dharmamaya  (n=5)
+
+- выросшее из закона  · n=1  · mahabharata-adiparva
+- дхарма  · n=1  · mahabharata-adiparva
+- воплощение дхармы  · n=1  · mahabharata-adiparva
+- закона (и справедливости)  · n=1  · mahabharata-udyogaparva
+- из дхармы  · n=1  · br-up
+
+### `DarmameGa` — dharmamegha  (n=5)
+
+- Облака дхармы  · n=1  · yoga-sutry_vyasa-bhashya
+- дхармамегха  · n=1  · yoga-sutry_vyasa-bhashya
+- Облаком Добродетели  · n=1  · yoga-sutry
+- Дхармамегха  · n=1  · yoga-sutry_sharma
+- облаком добродетели  · n=1  · pai-up
+
+### `DarmameGaH` — dharmameghaḥ  (n=1)
+
+- Облако дхармы  · n=1  · yoga-sutry_vyasa-bhashya
+
+### `DarmameGasya` — dharmameghasya  (n=1)
+
+- Облака дхармы  · n=1  · yoga-sutry_vyasa-bhashya
+
+### `Darman` — dharman  (n=70)
+
+- установлению  · n=7  · rigveda, rigveda
+- как положено  · n=5  · rigveda, atharvaveda, rigveda
+- законом  · n=5  · atharvaveda
+- обычаи  · n=3  · rigveda, rigveda, atharvaveda
+- закону  · n=3  · rigveda, atharvaveda
+- дхарму  · n=2  · manavadharmashastra, nyaya-bhashya
+- хранители закона  · n=2  · rigveda
+- природе  · n=2  · rigveda
+- устройстве  · n=2  · rigveda
+- установлениям  · n=2  · rigveda
+- особенностям  · n=2  · rigveda
+- безопасности  · n=1  · ramayana-ayodhyakanda
+- по долгу  · n=1  · ramayana-balakanda
+- дхарме  · n=1  · mahabharata-aranyakaparva
+- свойствами  · n=1  · rigveda
+- по своей природе  · n=1  · rigveda
+- по закону  · n=1  · rigveda
+- по законам  · n=1  · rigveda
+- формы  · n=1  · rigveda
+- установленный  · n=1  · rigveda
+- обычаях  · n=1  · rigveda
+- поведениях  · n=1  · rigveda
+- обычая  · n=1  · rigveda
+- поддерживателем  · n=1  · rigveda
+- свойственно  · n=1  · rigveda
+- обусловлено  · n=1  · buddhacharita
+- религиозные обряды  · n=1  · mahabharata-udyogaparva
+- предписаниях закона  · n=1  · mahabharata-udyogaparva
+- справедливость  · n=1  · mahabharata-udyogaparva
+- богом Дхармой  · n=1  · mahabharata-udyogaparva
+- нравственному закону  · n=1  · mahabharata-udyogaparva
+- законы  · n=1  · rigveda
+- основе  · n=1  · rigveda
+- установлений  · n=1  · rigveda
+- характеристикам  · n=1  · nyaya-bhashya
+- свойства  · n=1  · nyaya-bhashya
+- характеристиками  · n=1  · nyaya-bhashya
+- дефектов  · n=1  · nyaya-bhashya
+- характеристики  · n=1  · nyaya-bhashya
+- свойство  · n=1  · nyaya-bhashya
+- закона  · n=1  · atharvaveda
+- установлениях  · n=1  · atharvaveda
+- свойств  · n=1  · yoga-sutry_vyasa-bhashya
+- подвержено  · n=1  · yoga-sutry_vyasa-bhashya
+- качественные определенности  · n=1  · yoga-sutry_vyasa-bhashya
+- дхармы  · n=1  · yoga-sutry_vyasa-bhashya
+
+### `DarmanASaka` — dharmanāśaka  (n=1)
+
+- беззакония  · n=1  · shukasaptati
+
+### `DarmanadI` — dharmanadī  (n=1)
+
+- реку учения  · n=1  · buddhacharita
+
+### `DarmanaipuRa` — dharmanaipuṇa  (n=1)
+
+- полного соблюдения дхармы  · n=1  · manavadharmashastra
+
+### `DarmanaipuRyadarSin` — dharmanaipuṇyadarśin  (n=1)
+
+- провидят тонкости дхармы  · n=1  · mahabharata-ashvamedhikaparva
+
+### `DarmanaipuRyakAma` — dharmanai puṇyakāma  (n=1)
+
+- желающих совершенства в дхарме  · n=1  · manavadharmashastra
+
+### `Darmanavagraha` — dharmanavagraha  (n=1)
+
+- дхармой уловленного  · n=1  · buddhacharita
+
+### `DarmaniScaya` — dharmaniścaya  (n=4)
+
+- судебном разбирательстве  · n=1  · manavadharmashastra
+- обет  · n=1  · buddhacharita
+- определение нравственного долга  · n=1  · mahabharata-udyogaparva
+- определение закона  · n=1  · mahabharata-sabhaparva
+
+### `DarmaniScayakArakam` — dharmaniścayakārakam  (n=1)
+
+- определяющая обязанности  · n=1  · mahabharata-adiparva
+
+### `DarmaniScaye` — dharmaniścaye  (n=1)
+
+- в установлениях закона  · n=1  · mahabharata-adiparva
+
+### `DarmanibadDamArga` — dharmanibaddhamārga  (n=1)
+
+- удерживаемый твердостью в законе  · n=1  · mahabharata-sabhaparva
+
+### `Darmanimitta` — dharmanimitta  (n=1)
+
+- для исполнения дхармы  · n=1  · buddhacharita
+
+### `DarmanipuRa` — dharmanipuṇa  (n=1)
+
+- Сведущей в исполнении долга  · n=1  · ramayana-balakanda
+
+### `DarmaniroDana` — dharmanirodhana  (n=1)
+
+- несовместимо с добродетелью  · n=1  · ramayana-ayodhyakanda
+
+### `DarmanityA` — dharmanityā  (n=1)
+
+- всегда справедливы в своих поступках  · n=1  · mahabharata-dronaparva
+
+### `DarmanityAnAm` — dharmanityānām  (n=2)
+
+- в добродетели  · n=1  · ramayana-ayodhyakanda
+- стойких в добродетели  · n=1  · ramayana-ayodhyakanda
+
+### `Darmanitya` — dharmanitya  (n=12)
+
+- верна долгу  · n=1  · ramayana-ayodhyakanda
+- верный дхарме  · n=1  · mahabharata-aranyakaparva
+- постоянством в законе  · n=1  · mahabharata-adiparva
+- постоянного в законе  · n=1  · mahabharata-adiparva
+- тверд в законе  · n=1  · mahabharata-adiparva
+- вечно пребывающий в дхарме  · n=1  · mahabharata-udyogaparva
+- предан исполнению долга  · n=1  · mahabharata-shalyaparva
+- неизменный в нравственном долге  · n=1  · mahabharata-shalyaparva
+- преданного дхарме  · n=1  · mahabharata-ashvamedhikaparva
+- стоек в дхарме  · n=1  · mahabharata-ashvamedhikaparva
+- преданном справедливости  · n=1  · mahabharata-sabhaparva
+- неизменный в законе  · n=1  · mahabharata-virataparva
+
+### `DarmanityaH` — dharmanityaḥ  (n=2)
+
+- праведный  · n=1  · ramayana-ayodhyakanda
+- всегда преданный справедливости  · n=1  · mahabharata-dronaparva
+
+### `Darmanityam` — dharmanityam  (n=1)
+
+- неизменно предан долгу  · n=1  · mahabharata-aranyakaparva
+
+### `Darmanityasya` — dharmanityasya  (n=1)
+
+- постоянен в законе  · n=1  · mahabharata-udyogaparva
+
+### `DarmanityatA` — dharmanityatā  (n=2)
+
+- верность дхарме  · n=1  · mahabharata-aranyakaparva
+- верность закону  · n=1  · mahabharata-udyogaparva
+
+### `Darmanityena` — dharmanityena  (n=1)
+
+- постоянный в законе  · n=1  · mahabharata-adiparva
+
+### `Darmaniyama` — dharmaniyama  (n=1)
+
+- спецификация характеристик  · n=1  · nyaya-bhashya
+
+### `Darmann` — dharmann  (n=2)
+
+- закона  · n=2  · rigveda
+
+### `Darmanuvrata` — dharmanuvrata  (n=1)
+
+- верен дхарме  · n=1  · mahabharata-aranyakaparva
+
+### `DarmapASa` — dharmapāśa  (n=2)
+
+- Дхармапаша  · n=1  · ramayana-balakanda
+- узами закона  · n=1  · mahabharata-virataparva
+
+### `DarmapASanibadDena` — dharmapāśanibaddhena  (n=2)
+
+- связанный нравственным долгом  · n=1  · mahabharata-virataparva
+- связанный долгом  · n=1  · mahabharata-virataparva
+
+### `DarmapASasTita` — dharmapāśasthita  (n=1)
+
+- связанные узами закона  · n=1  · mahabharata-sabhaparva
+
+### `DarmapASasitA` — dharmapāśasitā  (n=1)
+
+- связаны узами закона  · n=1  · mahabharata-udyogaparva
+
+### `DarmapASena` — dharmapāśena  (n=1)
+
+- оковами дхармы  · n=1  · mahabharata-aranyakaparva
+
+### `DarmapAWaka` — dharmapāṭhaka  (n=1)
+
+- толкователь дхармы  · n=1  · manavadharmashastra
+
+### `DarmapAlaH` — dharmapālaḥ  (n=2)
+
+- Дхармапала  · n=2  · ramayana-balakanda
+
+### `DarmapAlo` — dharmapālo  (n=1)
+
+- Охранителя людей и закона  · n=1  · ramayana-aranyakanda
+
+### `DarmapIqA` — dharmapīḍā  (n=2)
+
+- ущерба добродетели  · n=1  · kama-sutra
+- нарушение дхармы  · n=1  · buddhacharita
+
+### `DarmapaTa` — dharmapatha  (n=3)
+
+- путь добродетели  · n=1  · ramayana-ayodhyakanda
+- путь закона  · n=1  · mahabharata-adiparva
+- пути закона  · n=1  · mahabharata-adiparva
+
+### `DarmapaTaH` — dharmapathaḥ  (n=1)
+
+- стезя дхармы  · n=1  · mahabharata-aranyakaparva
+
+### `DarmaparA` — dharmaparā  (n=2)
+
+- преданных долгу  · n=1  · ramayana-sundarakanda
+- благочестивую  · n=1  · ramayana-sundarakanda
+
+### `DarmaparAyaRAH` — dharmaparāyaṇāḥ  (n=2)
+
+- высшая цель — добродетель  · n=1  · ramayana-balakanda
+- преданы дхарме  · n=1  · mahabharata-aranyakaparva
+
+### `DarmaparAyaRa` — dharmaparāyaṇa  (n=5)
+
+- преданы закону  · n=2  · mahabharata-adiparva
+- преданный дхарме  · n=1  · mahabharata-aranyakaparva
+- устремлены к дхарме  · n=1  · mahabharata-aranyakaparva
+- преданный справедливости  · n=1  · mahabharata-shalyaparva
+
+### `DarmaparAyaRaH` — dharmaparāyaṇaḥ  (n=2)
+
+- преданный дхарме  · n=1  · mahabharata-aranyakaparva
+- преданы вечному закону  · n=1  · mahabharata-virataparva
+
+### `DarmaparIpsA` — dharmaparīpsā  (n=1)
+
+- желая достичь религиозных заслуг  · n=1  · mahabharata-adiparva
+
+### `Darmapara` — dharmapara  (n=10)
+
+- предан дхарме  · n=2  · mahabharata-aranyakaparva
+- добродетельный  · n=1  · ramayana-balakanda
+- добродетельные  · n=1  · ramayana-balakanda
+- Посвятив себя добродетели  · n=1  · ramayana-balakanda
+- преданного дхарме  · n=1  · mahabharata-aranyakaparva
+- благочестивым  · n=1  · mahabharata-adiparva
+- преданный закону  · n=1  · mahabharata-dronaparva
+- преданные дхарме  · n=1  · buddhacharita
+- преданный справедливости  · n=1  · mahabharata-shalyaparva
+
+### `DarmaparaH` — dharmaparaḥ  (n=3)
+
+- Праведностью  · n=1  · ramayana-balakanda
+- преданный дхарме  · n=1  · mahabharata-aranyakaparva
+- предан закону  · n=1  · mahabharata-virataparva
+
+### `DarmaparamA` — dharmaparamā  (n=1)
+
+- преданная справедливости  · n=1  · mahabharata-sabhaparva
+
+### `DarmapariRAma` — dharmapariṇāma  (n=1)
+
+- изменение качественной определенности  · n=1  · yoga-sutry_vyasa-bhashya
+
+### `DarmapariRAmakrama` — dharmapariṇāmakrama  (n=1)
+
+- последовательность изменения качественно-определенного состояния  · n=1  · yoga-sutry_vyasa-bhashya
+
+### `Darmaparigraha` — dharmaparigraha  (n=1)
+
+- благочестии  · n=1  · ramayana-sundarakanda
+
+### `DarmaparigrahaH` — dharmaparigrahaḥ  (n=1)
+
+- богатство дхармы  · n=1  · ramayana-sundarakanda
+
+### `DarmapatnI` — dharmapatnī  (n=14)
+
+- законная жена  · n=2  · mahabharata-adiparva, manavadharmashastra
+- законная супруга  · n=2  · mahabharata-adiparva
+- законной супругой  · n=2  · mahabharata-adiparva, mahabharata-sabhaparva
+- законной супруги  · n=1  · mahabharata-adiparva
+- добродетельным супругам  · n=1  · mahabharata-adiparva
+- законным женам  · n=1  · mahabharata-adiparva
+- добродетельной  · n=1  · mahabharata-aranyakaparva
+- обретенную согласно дхарме супругу  · n=1  · mahabharata-aranyakaparva
+- супруга Дхармы  · n=1  · mahabharata-adiparva
+- законными женами  · n=1  · mahabharata-adiparva
+- благочестивая супруга  · n=1  · mahabharata-adiparva
+
+### `DarmapatnIm` — dharmapatnīm  (n=4)
+
+- законной супруге  · n=2  · mahabharata-adiparva
+- законную супругу  · n=1  · mahabharata-aranyakaparva
+- благочестивую супругу  · n=1  · mahabharata-aranyakaparva
+
+### `DarmapatnIsahitaH` — dharmapatnīsahitaḥ  (n=1)
+
+- с благоверной супругой  · n=1  · raghuvamsha
+
+### `DarmapatnyA` — dharmapatnyā  (n=1)
+
+- верной супругой  · n=1  · mahabharata-ashramavasikaparva
+
+### `DarmapatnyAm` — dharmapatnyām  (n=1)
+
+- законной супруги  · n=1  · mahabharata-adiparva
+
+### `DarmapfzWa` — dharmapṛṣṭha  (n=2)
+
+- Дхармаприштху  · n=1  · mahabharata-aranyakaparva
+- Дхармаприштха  · n=1  · mahabharata-aranyakaparva
+
+### `Darmaplava` — dharmaplava  (n=1)
+
+- приверженные к религии  · n=1  · mahabharata-adiparva
+
+### `DarmapraBava` — dharmaprabhava  (n=1)
+
+- сын  · n=1  · mahabharata-aranyakaparva
+
+### `DarmapraDAnAtman` — dharmapradhānātman  (n=1)
+
+- преданный закону  · n=1  · mahabharata-adiparva
+
+### `DarmapraDAna` — dharmapradhāna  (n=3)
+
+- первый в добродетели  · n=1  · ramayana-balakanda
+- превосходят всех благочестием  · n=1  · mahabharata-aranyakaparva
+- поборников  · n=1  · mahabharata-karnaparva
+
+### `DarmapraDAnaH` — dharmapradhānaḥ  (n=1)
+
+- где главным выступает закон  · n=1  · mahabharata-dronaparva
+
+### `DarmapraDAnasya` — dharmapradhānasya  (n=1)
+
+- преданный дхарме  · n=1  · mahabharata-karnaparva
+
+### `DarmapraRayane` — dharmapraṇayane  (n=1)
+
+- справедливое отношение  · n=1  · mahabharata-adiparva
+
+### `DarmapraSna` — dharmapraśna  (n=2)
+
+- вопрос о дхарме  · n=1  · mahabharata-aranyakaparva
+- вопрос о законных правах  · n=1  · mahabharata-sabhaparva
+
+### `DarmapradarSaka` — dharmapradarśaka  (n=1)
+
+- толковать дхарму  · n=1  · mahabharata-aranyakaparva
+
+### `DarmapratirUpakaH` — dharmapratirūpakaḥ  (n=2)
+
+- справедливым  · n=1  · manavadharmashastra
+- соблюдающий подобие дхармы  · n=1  · manavadharmashastra
+
+### `DarmapravaktA` — dharmapravaktā  (n=1)
+
+- толкователем дхармы  · n=1  · manavadharmashastra
+
+### `Darmapravftta` — dharmapravṛtta  (n=3)
+
+- склонен идти стезею добродетели  · n=1  · mahabharata-dronaparva
+- следовал дхарме  · n=1  · mahabharata-ashvamedhikaparva
+- придерживаясь закона  · n=1  · mahabharata-sabhaparva
+
+### `DarmapravfttaH` — dharmapravṛttaḥ  (n=1)
+
+- справедливо был занят  · n=1  · mahabharata-dronaparva
+
+### `Darmapravrtta` — dharmapravrtta  (n=1)
+
+- по соображениям справедливости  · n=1  · mahabharata-sabhaparva
+
+### `Darmapriya` — dharmapriya  (n=1)
+
+- возлюбивший дхарму  · n=1  · buddhacharita
+
+### `Darmapuraskfta` — dharmapuraskṛta  (n=3)
+
+- Верный долгу и добродетели  · n=1  · ramayana-balakanda
+- преданные закону  · n=1  · mahabharata-adiparva
+- ставя во главу угла дхарму  · n=1  · mahabharata-ashramavasikaparva
+
+### `DarmaputrAya` — dharmaputrāya  (n=1)
+
+- сыну Дхармы  · n=1  · mahabharata-bhishmaparva
+
+### `Darmaputra` — dharmaputra  (n=70)
+
+- сын Дхармы  · n=32  · mahabharata-dronaparva, mahabharata-karnaparva, mahabharata-adiparva, mahabharata-shalyaparva, mahabharata-ashvamedhikaparva, mahabharata-sabhaparva, mahabharata-virataparva, mahabharata-ashramavasikaparva, mahabharata-aranyakaparva, mahabharata-bhishmaparva, mahabharata-udyogaparva, mahabharata-svargarohanikaparva
+- сына Дхармы  · n=13  · mahabharata-dronaparva, mahabharata-shalyaparva, mahabharata-aranyakaparva, mahabharata-karnaparva, mahabharata-bhishmaparva, mahabharata-ashvamedhikaparva
+- сыну Дхармы  · n=5  · mahabharata-dronaparva, mahabharata-bhishmaparva, mahabharata-karnaparva, mahabharata-sabhaparva
+- Сын Дхармы  · n=5  · mahabharata-dronaparva, mahabharata-udyogaparva, mahabharata-shalyaparva, mahabharata-virataparva, mahabharata-striparva
+- сыном Дхармы  · n=3  · mahabharata-dronaparva, mahabharata-ashramavasikaparva, mahabharata-svargarohanikaparva
+- Юдхиштхира, сын Дхармы  · n=2  · mahabharata-bhishmaparva, mahabharata-dronaparva
+- Юдхиштхира  · n=2  · mahabharata-dronaparva, mahabharata-striparva
+- сын Дхармы (Юдхиштхира)  · n=1  · mahabharata-adiparva
+- Юдхиштхиру  · n=1  · mahabharata-dronaparva
+- царь справедливости  · n=1  · mahabharata-dronaparva
+- Юдхиштхирой  · n=1  · mahabharata-udyogaparva
+- Сыне Дхармы  · n=1  · mahabharata-ashvamedhikaparva
+- Сына Дхармы  · n=1  · mahabharata-ashvamedhikaparva
+- Юдхиштхиры  · n=1  · mahabharata-sabhaparva
+- сын (бога) Дхармы  · n=1  · mahabharata-virataparva
+
+### `DarmaputraH` — dharmaputraḥ  (n=12)
+
+- сын Дхармы  · n=12  · mahabharata-dronaparva, mahabharata-aranyakaparva, mahabharata-bhishmaparva, mahabharata-adiparva, mahabharata-udyogaparva, mahabharata-shalyaparva, mahabharata-ashramavasikaparva, mahabharata-svargarohanikaparva
+
+### `DarmaputraM` — dharmaputraṃ  (n=3)
+
+- сын Дхармы  · n=2  · mahabharata-shalyaparva
+- сыну Дхармы  · n=1  · mahabharata-udyogaparva
+
+### `DarmaputrajayaiziRaH` — dharmaputrajayaiṣiṇaḥ  (n=1)
+
+- желая победы сыну Дхармы  · n=1  · mahabharata-dronaparva
+
+### `Darmaputram` — dharmaputram  (n=3)
+
+- Дхармараджу  · n=1  · mahabharata-dronaparva
+- сына Дхармы  · n=1  · mahabharata-udyogaparva
+- сыну Дхармы  · n=1  · mahabharata-ashramavasikaparva
+
+### `Darmaputrasya` — dharmaputrasya  (n=6)
+
+- сына Дхармы  · n=5  · mahabharata-dronaparva, mahabharata-adiparva, mahabharata-bhishmaparva, mahabharata-udyogaparva
+- сыном Дхармы  · n=1  · mahabharata-adiparva
+
+### `DarmaputreRa` — dharmaputreṇa  (n=4)
+
+- с сыном Дхармы  · n=2  · mahabharata-shantiparva
+- сыном Дхармы  · n=2  · mahabharata-dronaparva, mahabharata-ashvamedhikaparva
+
+### `DarmarAj` — dharmarāj  (n=5)
+
+- Царя справедливости  · n=2  · mahabharata-aranyakaparva
+- царь дхармы  · n=1  · manavadharmashastra
+- царь закона  · n=1  · mahabharata-adiparva
+- Царь дхармы  · n=1  · mahabharata-sauptikaparva
+
+### `DarmarAjAnam` — dharmarājānam  (n=3)
+
+- царю справедливости  · n=1  · mahabharata-bhishmaparva
+- Царю Справедливости  · n=1  · mahabharata-ashvamedhikaparva
+- Царю дхармы  · n=1  · mahabharata-ashramavasikaparva
+
+### `DarmarAjAya` — dharmarājāya  (n=3)
+
+- Царю справедливости  · n=1  · mahabharata-aranyakaparva
+- царю справедливости  · n=1  · mahabharata-shalyaparva
+- Царю дхармы  · n=1  · mahabharata-sauptikaparva
+
+### `DarmarAjYA` — dharmarājñā  (n=3)
+
+- царем Дхармы  · n=1  · mahabharata-bhishmaparva
+- Царь дхармы  · n=1  · mahabharata-ashvamedhikaparva
+- Царя праведности  · n=1  · mahabharata-ashramavasikaparva
+
+### `DarmarAjYaH` — dharmarājñaḥ  (n=2)
+
+- Царя дхармы  · n=1  · mahabharata-ashvamedhikaparva
+- царя справедливости  · n=1  · mahabharata-sabhaparva
+
+### `DarmarAja` — dharmarāja  (n=306)
+
+- царь справедливости  · n=77  · mahabharata-dronaparva, mahabharata-shalyaparva, mahabharata-sabhaparva, mahabharata-adiparva, mahabharata-udyogaparva, mahabharata-virataparva, mahabharata-aranyakaparva, mahabharata-shantiparva
+- Царь справедливости  · n=49  · mahabharata-aranyakaparva, mahabharata-karnaparva, mahabharata-bhishmaparva, mahabharata-shalyaparva, mahabharata-adiparva, mahabharata-dronaparva, mahabharata-virataparva
+- царя справедливости  · n=40  · mahabharata-dronaparva, mahabharata-sabhaparva, mahabharata-udyogaparva, mahabharata-shalyaparva, mahabharata-adiparva, mahabharata-virataparva
+- царю справедливости  · n=20  · mahabharata-sabhaparva, mahabharata-udyogaparva, mahabharata-shalyaparva, mahabharata-virataparva, mahabharata-adiparva, mahabharata-dronaparva
+- Царь дхармы  · n=20  · mahabharata-ashvamedhikaparva, mahabharata-ashramavasikaparva, mahabharata-svargarohanikaparva, mahabharata-shantiparva, mahabharata-mahaprasthanikaparva, mahabharata-sauptikaparva
+- Царя справедливости  · n=16  · mahabharata-aranyakaparva, mahabharata-karnaparva, mahabharata-bhishmaparva
+- Царю справедливости  · n=11  · mahabharata-aranyakaparva, mahabharata-karnaparva, mahabharata-bhishmaparva, mahabharata-sabhaparva
+- царем справедливости  · n=10  · mahabharata-dronaparva, mahabharata-shalyaparva, mahabharata-sabhaparva, mahabharata-adiparva
+- Царя дхармы  · n=7  · mahabharata-ashvamedhikaparva, mahabharata-ashramavasikaparva, mahabharata-mahaprasthanikaparva
+- Юдхиштхира  · n=5  · mahabharata-sabhaparva, mahabharata-adiparva, mahabharata-aranyakaparva, mahabharata-shalyaparva
+- царь Дхармы  · n=4  · mahabharata-adiparva
+- Дхармараджа  · n=4  · mahabharata-adiparva, mahabharata-shalyaparva
+- Юдхиштхиры  · n=3  · mahabharata-adiparva, mahabharata-shantiparva, mahabharata-shalyaparva
+- Царь Праведности  · n=3  · mahabharata-ashvamedhikaparva, mahabharata-ashramavasikaparva
+- Царь праведности  · n=3  · mahabharata-ashramavasikaparva
+- Царь Справедливости  · n=3  · mahabharata-striparva
+- Дхармараджей  · n=2  · mahabharata-adiparva, mahabharata-udyogaparva
+- царь дхармы  · n=2  · mahabharata-adiparva, mahabharata-shantiparva
+- Царь правосудия  · n=2  · mahabharata-aranyakaparva
+- Царю дхармы  · n=2  · mahabharata-ashramavasikaparva, mahabharata-mahaprasthanikaparva
+- Царя Справедливости  · n=2  · mahabharata-striparva
+- царь Дхармы (Юдхиштхира)  · n=1  · mahabharata-adiparva
+- Бхишма  · n=1  · mahabharata-adiparva
+- царя дхармы  · n=1  · mahabharata-adiparva
+- праведный государь  · n=1  · ramayana-ayodhyakanda
+- царю Дхарме  · n=1  · mahabharata-aranyakaparva
+- царь Дхарма  · n=1  · mahabharata-aranyakaparva
+- Дхарма радже  · n=1  · mahabharata-adiparva
+- царь закона  · n=1  · mahabharata-adiparva
+- царя закона  · n=1  · mahabharata-adiparva
+- Царь закона  · n=1  · mahabharata-adiparva
+- Юдхиштхиру  · n=1  · mahabharata-dronaparva
+- владыка дхармы  · n=1  · buddhacharita
+- Царем справедливости  · n=1  · mahabharata-karnaparva
+- Юдхиштхирой  · n=1  · mahabharata-shalyaparva
+- Праведный царь  · n=1  · mahabharata-ashvamedhikaparva
+- Царь Дхармы  · n=1  · mahabharata-ashvamedhikaparva
+- сын Дхармы  · n=1  · mahabharata-ashvamedhikaparva
+- Юдхиштхире  · n=1  · mahabharata-virataparva
+- Царем Справедливости  · n=1  · mahabharata-striparva
+- Царю Праведности  · n=1  · mahabharata-striparva
+- Дхритараштры  · n=1  · mahabharata-striparva
+
+### `DarmarAjaBujacyuta` — dharmarājabhujacyuta  (n=1)
+
+- пущенную из рук царя справедливости  · n=1  · mahabharata-dronaparva
+
+### `DarmarAjaH` — dharmarājaḥ  (n=27)
+
+- царь справедливости  · n=12  · mahabharata-sabhaparva, mahabharata-adiparva, mahabharata-dronaparva, mahabharata-udyogaparva, mahabharata-shalyaparva
+- Царь справедливости  · n=8  · mahabharata-aranyakaparva, mahabharata-karnaparva, mahabharata-bhishmaparva
+- Царь дхармы  · n=3  · mahabharata-ashvamedhikaparva, mahabharata-ashramavasikaparva, mahabharata-mahaprasthanikaparva
+- Царем справедливости  · n=2  · mahabharata-aranyakaparva
+- Царь правосудия  · n=1  · mahabharata-aranyakaparva
+- Царю Справедливости  · n=1  · mahabharata-striparva
+
+### `DarmarAjaM` — dharmarājaṃ  (n=4)
+
+- царе справедливости  · n=1  · mahabharata-dronaparva
+- царя справедливости  · n=1  · mahabharata-dronaparva
+- Царя праведности  · n=1  · mahabharata-ashramavasikaparva
+- Царя Справедливости  · n=1  · mahabharata-striparva
+
+### `DarmarAjacikIrzita` — dharmarājacikīrṣita  (n=1)
+
+- намерении Царя дхармы  · n=1  · mahabharata-svargarohanikaparva
+
+### `DarmarAjajayaiziRaH` — dharmarājajayaiṣiṇaḥ  (n=1)
+
+- желающие победы царю справедливости  · n=1  · mahabharata-dronaparva
+
+### `DarmarAjam` — dharmarājam  (n=13)
+
+- Царя справедливости  · n=3  · mahabharata-aranyakaparva, mahabharata-karnaparva
+- царя справедливости  · n=2  · mahabharata-shalyaparva
+- царя справедливости (Юдхиштхиру)  · n=1  · mahabharata-adiparva
+- Царю справедливости  · n=1  · mahabharata-aranyakaparva
+- Царю правосудия  · n=1  · mahabharata-aranyakaparva
+- царю справедливости  · n=1  · mahabharata-dronaparva
+- с царем справедливости  · n=1  · mahabharata-shalyaparva
+- царем справедливости  · n=1  · mahabharata-sabhaparva
+- Царя дхармы  · n=1  · mahabharata-sauptikaparva
+- Царю дхармы  · n=1  · mahabharata-mahaprasthanikaparva
+
+### `DarmarAjan` — dharmarājan  (n=11)
+
+- Царь справедливости  · n=3  · mahabharata-aranyakaparva, mahabharata-sabhaparva
+- Царем справедливости  · n=2  · mahabharata-aranyakaparva, mahabharata-karnaparva
+- Царя справедливости  · n=2  · mahabharata-aranyakaparva, mahabharata-karnaparva
+- царе справедливости  · n=1  · mahabharata-adiparva
+- царя справедливости  · n=1  · mahabharata-adiparva
+- Царь дхармы  · n=1  · mahabharata-ashvamedhikaparva
+- царю справедливости  · n=1  · mahabharata-sabhaparva
+
+### `DarmarAjapriyArTa` — dharmarājapriyārtha  (n=1)
+
+- расположению к царю справедливости  · n=1  · mahabharata-dronaparva
+
+### `DarmarAjapurogAH` — dharmarājapurogāḥ  (n=1)
+
+- предводительствуемые царем справедливости  · n=1  · mahabharata-shalyaparva
+
+### `DarmarAjapurogamAH` — dharmarājapurogamāḥ  (n=1)
+
+- предводительствуемые царем справедливости  · n=1  · mahabharata-shalyaparva
+
+### `DarmarAjapurogamAn` — dharmarājapurogamān  (n=1)
+
+- глава которых – Царь справедливости  · n=1  · mahabharata-aranyakaparva
+
+### `DarmarAjasama` — dharmarājasama  (n=1)
+
+- как царь справедливости  · n=1  · mahabharata-dronaparva
+
+### `DarmarAjasya` — dharmarājasya  (n=25)
+
+- царя справедливости  · n=13  · mahabharata-udyogaparva, mahabharata-sabhaparva, mahabharata-dronaparva, mahabharata-adiparva, mahabharata-shalyaparva
+- Царя справедливости  · n=5  · mahabharata-aranyakaparva, mahabharata-bhishmaparva, mahabharata-karnaparva
+- царю справедливости  · n=2  · mahabharata-dronaparva, mahabharata-shalyaparva
+- Царя дхармы  · n=2  · mahabharata-ashvamedhikaparva
+- (пропущено)  · n=1  · mahabharata-adiparva
+- Юдхиштхиру  · n=1  · mahabharata-dronaparva
+- Юдхиштхиры  · n=1  · mahabharata-svargarohanikaparva
+
+### `DarmarAjatA` — dharmarājatā  (n=1)
+
+- Царю правосудия  · n=1  · mahabharata-aranyakaparva
+
+### `DarmarAje` — dharmarāje  (n=4)
+
+- Царь справедливости  · n=1  · mahabharata-aranyakaparva
+- к царю справедливости  · n=1  · mahabharata-dronaparva
+- Царь дхармы  · n=1  · mahabharata-ashvamedhikaparva
+- царю справедливости  · n=1  · mahabharata-sabhaparva
+
+### `DarmarAjena` — dharmarājena  (n=11)
+
+- царем справедливости  · n=5  · mahabharata-adiparva, mahabharata-sabhaparva, mahabharata-udyogaparva
+- Царь справедливости  · n=2  · mahabharata-aranyakaparva, mahabharata-bhishmaparva
+- Дхармараджей  · n=1  · mahabharata-adiparva
+- Царем справедливости  · n=1  · mahabharata-karnaparva
+- Царем дхармы  · n=1  · mahabharata-ashvamedhikaparva
+- Царь Справедливости  · n=1  · mahabharata-striparva
+
+### `DarmarAjo` — dharmarājo  (n=5)
+
+- Царь справедливости  · n=2  · mahabharata-aranyakaparva, mahabharata-karnaparva
+- Дхармараджа  · n=2  · mahabharata-adiparva
+- царь справедливости  · n=1  · mahabharata-dronaparva
+
+### `DarmarAw` — dharmarāṭ  (n=8)
+
+- царь справедливости  · n=4  · mahabharata-virataparva, mahabharata-udyogaparva, mahabharata-sabhaparva
+- Царь справедливости  · n=2  · mahabharata-aranyakaparva
+- царь закона  · n=1  · mahabharata-adiparva
+- Царь дхармы  · n=1  · mahabharata-ashramavasikaparva
+
+### `DarmarUpa` — dharmarūpa  (n=3)
+
+- формы добродетели  · n=1  · mahabharata-udyogaparva
+- подлинную форму  · n=1  · mahabharata-udyogaparva
+- форму добродетели  · n=1  · mahabharata-udyogaparva
+
+### `Darmarahasyam` — dharmarahasyam  (n=1)
+
+- сокровенную суть дхармы  · n=1  · mahabharata-karnaparva
+
+### `DarmaratAn` — dharmaratān  (n=1)
+
+- радеют о дхарме  · n=1  · mahabharata-aranyakaparva
+
+### `Darmarata` — dharmarata  (n=4)
+
+- преданный долгу  · n=1  · ramayana-ayodhyakanda
+- преданный  · n=1  · ramayana-ayodhyakanda
+- находя радость в законе  · n=1  · mahabharata-adiparva
+- преданный справедливости  · n=1  · mahabharata-shalyaparva
+
+### `DarmarataH` — dharmarataḥ  (n=1)
+
+- предан справедливости  · n=1  · mahabharata-dronaparva
+
+### `Darmaratau` — dharmaratau  (n=1)
+
+- добродетельный  · n=1  · buddhacharita
+
+### `Darmarati` — dharmarati  (n=1)
+
+- предан справедливости  · n=1  · mahabharata-udyogaparva
+
+### `DarmasADanam` — dharmasādhanam  (n=1)
+
+- добродетель напрасна  · n=1  · kumarasambhava
+
+### `DarmasADvasaSaNkita` — dharmasādhvasaśaṅkita  (n=1)
+
+- отмеченное страхом за дхарму  · n=1  · ramayana-sundarakanda
+
+### `DarmasAra` — dharmasāra  (n=2)
+
+- воплощение добродетели  · n=1  · ramayana-ayodhyakanda
+- основа мира  · n=1  · ramayana-aranyakanda
+
+### `DarmasTa` — dharmastha  (n=2)
+
+- судья  · n=1  · manavadharmashastra
+- суде  · n=1  · kama-sutra
+
+### `DarmasTasaKaH` — dharmasthasakhaḥ  (n=1)
+
+- Друг добродетельных  · n=1  · raghuvamsha
+
+### `DarmasTezu` — dharmastheṣu  (n=2)
+
+- судьям  · n=2  · kama-sutra
+
+### `DarmasUnU` — dharmasūnū  (n=1)
+
+- сыном Дхармы  · n=1  · mahabharata-bhishmaparva
+
+### `DarmasUnunA` — dharmasūnunā  (n=2)
+
+- отпрыском Дхармы  · n=1  · mahabharata-shalyaparva
+- от сына Дхармы  · n=1  · mahabharata-shalyaparva
+
+### `DarmasaMSaya` — dharmasaṃśaya  (n=1)
+
+- сомнение насчет необходимости  · n=1  · mahabharata-aranyakaparva
+
+### `DarmasaMSayamokza` — dharmasaṃśayamokṣa  (n=1)
+
+- исчезли сомнения относительно дхармы  · n=1  · mahabharata-aranyakaparva
+
+### `DarmasaMSraya` — dharmasaṃśraya  (n=1)
+
+- обратиться к служению дхарме  · n=1  · buddhacharita
+
+### `DarmasaMSraye` — dharmasaṃśraye  (n=1)
+
+- Дхармы путем  · n=1  · buddhacharita
+
+### `DarmasaMSritAm` — dharmasaṃśritām  (n=1)
+
+- согласную с законом  · n=1  · mahabharata-virataparva
+
+### `DarmasaMSrita` — dharmasaṃśrita  (n=2)
+
+- содержащие предписания о нравственном долге  · n=1  · mahabharata-adiparva
+- основанные на дхарме  · n=1  · mahabharata-adiparva
+
+### `DarmasaMbanDa` — dharmasaṃbandha  (n=1)
+
+- добродетели  · n=1  · ramayana-balakanda
+
+### `DarmasaMhitA` — dharmasaṃhitā  (n=1)
+
+- основанную на законе  · n=1  · mahabharata-adiparva
+
+### `DarmasaMhita` — dharmasaṃhita  (n=11)
+
+- исполненное добродетели  · n=2  · ramayana-ayodhyakanda, ramayana-balakanda
+- хранителям закона  · n=1  · ramayana-balakanda
+- блюстители закона  · n=1  · ramayana-balakanda
+- в согласии с дхармой  · n=1  · mahabharata-aranyakaparva
+- законного  · n=1  · mahabharata-adiparva
+- согласуется с законом  · n=1  · mahabharata-adiparva
+- справедливостью  · n=1  · mahabharata-dronaparva
+- истины нравственного закона  · n=1  · mahabharata-dronaparva
+- отвечать справедливости  · n=1  · mahabharata-udyogaparva
+- согласные с законом  · n=1  · mahabharata-virataparva
+
+### `DarmasaMhitam` — dharmasaṃhitam  (n=2)
+
+- соединенном с [верностью] долгу  · n=1  · ramayana-sundarakanda
+- верного дхарме  · n=1  · mahabharata-karnaparva
+
+### `DarmasaMjYA` — dharmasaṃjñā  (n=1)
+
+- Знак Дхармы  · n=1  · buddhacharita
+
+### `DarmasaMmUQacetA` — dharmasaṃmūḍhacetā  (n=1)
+
+- с умом смущенным  · n=1  · gitarthasamgraha-abhinavagupta
+
+### `DarmasaMrakzaRArTAya` — dharmasaṃrakṣaṇārthāya  (n=1)
+
+- защиты дхармы  · n=1  · mahabharata-ashvamedhikaparva
+
+### `DarmasaMrakzaRAya` — dharmasaṃrakṣaṇāya  (n=1)
+
+- ради защиты священного закона  · n=1  · raghuvamsha
+
+### `DarmasaMsTApanArTAya` — dharmasaṃsthāpanārthāya  (n=3)
+
+- ради установления дхармы  · n=1  · bhagavadgita-burba
+- чтоб утвердить дхарму  · n=1  · ramanuja_gitabhashya
+- для возстановленія добродѣтели  · n=1  · bhagavadgita-1788
+
+### `DarmasaMsTApanArTa` — dharmasaṃsthāpanārtha  (n=2)
+
+- ради утверждения справедливости  · n=1  · mahabharata-dronaparva
+- ради установления дхармы  · n=1  · bhagavadgita-burba
+
+### `DarmasaMsTApanAya` — dharmasaṃsthāpanāya  (n=1)
+
+- утверждения дхармы  · n=1  · mahabharata-ashvamedhikaparva
+
+### `DarmasaMsTApana` — dharmasaṃsthāpana  (n=6)
+
+- утверждения дхармы  · n=1  · gitarthasamgraha-abhinavagupta
+- восстановления дхармы  · n=1  · bhagavadgita-1914
+- утверждения праведности  · n=1  · bhagavadgita-erman
+- восставить погибшую дхарму  · n=1  · bhagavadgita-sementsov
+- восстанавливать порядок  · n=1  · bhagavadgita-sharma
+- утвердить в мире дхарму  · n=1  · mahabharata-karnaparva
+
+### `DarmasaMyukta` — dharmasaṃyukta  (n=3)
+
+- в соответствии с дхармой  · n=1  · mahabharata-aranyakaparva
+- о дхарме  · n=1  · mahabharata-aranyakaparva
+- благочестивый  · n=1  · mahabharata-aranyakaparva
+
+### `DarmasaMyuta` — dharmasaṃyuta  (n=2)
+
+- верен своей дхарме  · n=1  · mahabharata-aranyakaparva
+- ради достижения добродетельных заслуг  · n=1  · mahabharata-virataparva
+
+### `DarmasaNga` — dharmasaṅga  (n=1)
+
+- сознание долга  · n=1  · mahabharata-sabhaparva
+
+### `DarmasaNgrahe` — dharmasaṅgrahe  (n=1)
+
+- благой  · n=1  · mahabharata-udyogaparva
+
+### `DarmasaNkara` — dharmasaṅkara  (n=1)
+
+- нарушения закона  · n=1  · mahabharata-adiparva
+
+### `DarmasaNkarakArita` — dharmasaṅkarakārita  (n=1)
+
+- осквернение веры  · n=1  · mahabharata-bhishmaparva
+
+### `DarmasaNkawe` — dharmasaṅkaṭe  (n=1)
+
+- для праведности утесненье  · n=1  · mahabharata-striparva
+
+### `DarmasaYjYA` — dharmasañjñā  (n=1)
+
+- сознание долга  · n=1  · mahabharata-aranyakaparva
+
+### `DarmasamADiPala` — dharmasamādhiphala  (n=1)
+
+- результатами сосредоточенности и «дхармичности»  · n=1  · nyaya-bhashya
+
+### `Darmasamaya` — dharmasamaya  (n=1)
+
+- соглашение, связанное с исполнением дхармы  · n=1  · manavadharmashastra
+
+### `DarmasammUQacetas` — dharmasammūḍhacetas  (n=1)
+
+- не понимаю, в чем мой долг  · n=1  · bhagavadgita-sharma
+
+### `Darmasamuccaya` — dharmasamuccaya  (n=1)
+
+- соединение свойств  · n=1  · nyaya-bhashya
+
+### `Darmasamyuktam` — dharmasamyuktam  (n=2)
+
+- достойное  · n=1  · ramayana-ayodhyakanda
+- согласное с законом  · n=1  · mahabharata-adiparva
+
+### `Darmasandeha` — dharmasandeha  (n=1)
+
+- сомнительным для нравственности  · n=1  · mahabharata-adiparva
+
+### `DarmasaukzmyAt` — dharmasaukṣmyāt  (n=1)
+
+- ввиду тонкости закона  · n=1  · mahabharata-sabhaparva
+
+### `DarmasetavaH` — dharmasetavaḥ  (n=2)
+
+- служащие мостами к дхарме  · n=1  · mahabharata-ashvamedhikaparva
+- Использующие дхарму как мост (к спасению)  · n=1  · mahabharata-ashvamedhikaparva
+
+### `Darmasetu` — dharmasetu  (n=1)
+
+- оградами дхармы  · n=1  · mahabharata-aranyakaparva
+
+### `DarmasetupravartakAn` — dharmasetupravartakān  (n=1)
+
+- пролагающих мосты дхармы  · n=1  · mahabharata-ashvamedhikaparva
+
+### `DarmasetusamAkIrRAM` — dharmasetusamākīrṇāṃ  (n=1)
+
+- изобиловавшую «оградами дхармы»  · n=1  · mahabharata-aranyakaparva
+
+### `DarmaskanDa` — dharmaskandha  (n=2)
+
+- ветви долга  · n=2  · ch-up
+
+### `Darmasuta` — dharmasuta  (n=21)
+
+- сын Дхармы  · n=11  · mahabharata-shalyaparva, mahabharata-dronaparva, mahabharata-aranyakaparva, mahabharata-udyogaparva, mahabharata-ashvamedhikaparva, mahabharata-sabhaparva, mahabharata-svargarohanikaparva, mahabharata-mahaprasthanikaparva
+- сына Дхармы  · n=4  · mahabharata-adiparva, mahabharata-aranyakaparva, mahabharata-udyogaparva, mahabharata-sabhaparva
+- Сын Дхармы  · n=2  · mahabharata-aranyakaparva, mahabharata-ashvamedhikaparva
+- Юдхиштхира  · n=1  · mahabharata-dronaparva
+- царственный сын Дхармы  · n=1  · mahabharata-shalyaparva
+- Сыну Дхармы  · n=1  · mahabharata-ashvamedhikaparva
+- Сына Дхармы  · n=1  · mahabharata-ashvamedhikaparva
+
+### `DarmasutaH` — dharmasutaḥ  (n=5)
+
+- сын Дхармы  · n=5  · mahabharata-bhishmaparva, mahabharata-dronaparva, mahabharata-ashvamedhikaparva, mahabharata-sabhaparva, mahabharata-ashramavasikaparva
+
+### `Darmasutam` — dharmasutam  (n=2)
+
+- сына Дхармы  · n=1  · mahabharata-adiparva
+- сыну Дхармы  · n=1  · mahabharata-aranyakaparva
+
+### `Darmasutasya` — dharmasutasya  (n=1)
+
+- сыну Дхармы  · n=1  · mahabharata-aranyakaparva
+
+### `Darmasute` — dharmasute  (n=1)
+
+- сына Дхармы  · n=1  · mahabharata-udyogaparva
+
+### `Darmasuto` — dharmasuto  (n=1)
+
+- сын Дхармы  · n=1  · mahabharata-dronaparva
+
+### `DarmasvarUpin` — dharmasvarūpin  (n=2)
+
+- властелин Дхарма  · n=1  · mahabharata-mahaprasthanikaparva
+- принял свой собственный облик  · n=1  · mahabharata-mahaprasthanikaparva
+
+### `DarmasyAtikrama` — dharmasyātikrama  (n=1)
+
+- нарушением справедливости  · n=1  · mahabharata-udyogaparva
+
+### `Darmasya` — dharmasya  (n=59)
+
+- Дхармы  · n=10  · mahabharata-adiparva, mahabharata-ashramavasikaparva, mahabharata-aranyakaparva, buddhacharita, mahabharata-udyogaparva, bhagavadgita-smirnov
+- дхармы  · n=9  · mahabharata-aranyakaparva, ramayana-sundarakanda, buddhacharita, ramanuja_gitabhashya, bhagavadgita-smirnov, mahabharata-ashvamedhikaparva, shatakatrayam-serebryakov
+- закона  · n=7  · mahabharata-udyogaparva, mahabharata-adiparva
+- дхарму  · n=4  · gitarthasamgraha-abhinavagupta, manavadharmashastra, mahabharata-ashvamedhikaparva
+- добродетели  · n=2  · ramayana-balakanda
+- праведности  · n=2  · bhagavadgita-1914, bhagavadgity
+- религии  · n=2  · bhagavadgita-prabhupada
+- Закона  · n=2  · devi-gita
+- от Дхармы  · n=1  · mahabharata-adiparva
+- добродетель  · n=1  · mahabharata-aranyakaparva
+- справедливость  · n=1  · mahabharata-aranyakaparva
+- закон  · n=1  · mahabharata-bhishmaparva
+- для дхармы  · n=1  · buddhacharita
+- справедливые  · n=1  · mahabharata-udyogaparva
+- добродетельные  · n=1  · mahabharata-udyogaparva
+- законом  · n=1  · mahabharata-udyogaparva
+- праведность  · n=1  · bhagavadgita-1914
+- знание  · n=1  · bhagavadgita-1914
+- Закона (Дхарма)  · n=1  · bhagavadgita-smirnov
+- добродѣтель  · n=1  · bhagavadgita-1788
+- вѣрѣ  · n=1  · bhagavadgita-1788
+- правосудія  · n=1  · bhagavadgita-1788
+- в эту дхарму  · n=1  · bhagavadgita-sharma
+- Закон  · n=1  · bhagavadgita-sharma
+- изначального положения  · n=1  · bhagavadgita-prabhupada
+- положение  · n=1  · bhagavadgita-prabhupada
+- в этой dharme [этой преданности]  · n=1  · bhagavadgita-radha
+- долга  · n=1  · bhagavadgita-radha
+- свойства  · n=1  · nyaya-bhashya
+
+### `DarmasyaloptA` — dharmasya loptā  (n=1)
+
+- нарушителем закона  · n=1  · mahabharata-dronaparva
+
+### `DarmasyaloptAra` — dharmasya loptāra  (n=1)
+
+- нарушители справедливости  · n=1  · mahabharata-dronaparva
+
+### `DarmatIrTa` — dharmatīrtha  (n=2)
+
+- тиртхе Дхармы  · n=2  · mahabharata-aranyakaparva
+
+### `Darmata` — dharmata  (n=3)
+
+- Согласно дхарме  · n=1  · manavadharmashastra
+- согласно дхарме  · n=1  · manavadharmashastra
+- правилами нравственности  · n=1  · mahabharata-shalyaparva
+
+### `DarmataH` — dharmataḥ  (n=28)
+
+- по закону  · n=9  · mahabharata-adiparva, mahabharata-udyogaparva, mahabharata-shalyaparva
+- согласно дхарме  · n=2  · ramayana-sundarakanda, mahabharata-ashramavasikaparva
+- в соответствии с законом  · n=2  · mahabharata-adiparva
+- в добродетели  · n=1  · ramayana-ayodhyakanda
+- по отношению  · n=1  · manavadharmashastra
+- в соответствии с дхармой  · n=1  · manavadharmashastra
+- по праву  · n=1  · ramayana-balakanda
+- по обычаю  · n=1  · ramayana-balakanda
+- как велел ей долг  · n=1  · mahabharata-aranyakaparva
+- способствует дхарме  · n=1  · kama-sutra
+- согласно обычаю  · n=1  · mahabharata-adiparva
+- законной  · n=1  · mahabharata-adiparva
+- По закону  · n=1  · mahabharata-dronaparva
+- согласно предписаниям закона  · n=1  · mahabharata-dronaparva
+- по нравственному закону  · n=1  · mahabharata-udyogaparva
+- по справедливости  · n=1  · mahabharata-udyogaparva
+- справедливым путем  · n=1  · mahabharata-shalyaparva
+- согласно закону  · n=1  · mahabharata-virataparva
+
+### `Darmatanaya` — dharmatanaya  (n=1)
+
+- сына Дхармы  · n=1  · mahabharata-dronaparva
+
+### `Darmatantra` — dharmatantra  (n=2)
+
+- добру  · n=1  · mahabharata-aranyakaparva
+- установление закона  · n=1  · mahabharata-adiparva
+
+### `Darmatas` — dharmatas  (n=33)
+
+- согласно дхарме  · n=8  · manavadharmashastra
+- по закону  · n=5  · mahabharata-adiparva, mahabharata-udyogaparva, mahabharata-shalyaparva
+- в соответствии с дхармой  · n=5  · manavadharmashastra
+- согласно закону  · n=4  · mahabharata-sabhaparva, manavadharmashastra, mahabharata-adiparva
+- по справедливости  · n=3  · mahabharata-udyogaparva
+- справедливо  · n=1  · mahabharata-adiparva
+- верного обетам  · n=1  · ramayana-ayodhyakanda
+- по праву  · n=1  · manavadharmashastra
+- ради дхармы  · n=1  · manavadharmashastra
+- из благочестивого побуждения  · n=1  · manavadharmashastra
+- по дхарме  · n=1  · manavadharmashastra
+- на дхарме  · n=1  · manavadharmashastra
+- из сознания справедливости  · n=1  · mahabharata-adiparva
+
+### `DarmatattvArTadarSin` — dharmatattvārthadarśin  (n=1)
+
+- прозревшие суть и смысл дхармы  · n=1  · mahabharata-karnaparva
+
+### `DarmatattvajYa` — dharmatattvajña  (n=1)
+
+- знающая закон и правду  · n=1  · mahabharata-adiparva
+
+### `Darmatattvavat` — dharmatattvavat  (n=1)
+
+- чувство справедливости  · n=1  · mahabharata-dronaparva
+
+### `Darmatma` — dharmatma  (n=1)
+
+- праведный душой  · n=1  · ramayana-ayodhyakanda
+
+### `Darmatman` — dharmatman  (n=1)
+
+- справедливый  · n=1  · mahabharata-sabhaparva
+
+### `Darmatmatva` — dharmatmatva  (n=1)
+
+- справедливость  · n=1  · mahabharata-sabhaparva
+
+### `Darmato` — dharmato  (n=1)
+
+- справедливо  · n=1  · mahabharata-adiparva
+
+### `DarmatrARaM` — dharmatrāṇaṃ  (n=1)
+
+- добродетель  · n=1  · mahabharata-udyogaparva
+
+### `Darmatva` — dharmatva  (n=1)
+
+- качественная определенность  · n=1  · yoga-sutry_vyasa-bhashya
+
+### `Darmau` — dharmau  (n=1)
+
+- глаза  · n=1  · ramayana-aranyakanda
+
+### `DarmaupadeSa` — dharmaupadeśa  (n=2)
+
+- поучающего их дхарме  · n=1  · manavadharmashastra
+- наставления в дхарме  · n=1  · manavadharmashastra
+
+### `DarmavAdI` — dharmavādī  (n=1)
+
+- толкуя о добродетели  · n=1  · ramayana-ayodhyakanda
+
+### `DarmavAda` — dharmavāda  (n=1)
+
+- изъяснении дхармы  · n=1  · ramayana-sundarakanda
+
+### `DarmavAdaiH` — dharmavādaiḥ  (n=1)
+
+- словами справедливости  · n=1  · mahabharata-dronaparva
+
+### `DarmavAdin` — dharmavādin  (n=1)
+
+- рассуждавшие справедливо  · n=1  · mahabharata-sabhaparva
+
+### `DarmavAk` — dharmavāk  (n=1)
+
+- Рассуждая о законе  · n=1  · mahabharata-sabhaparva
+
+### `DarmavAktva` — dharmavāktva  (n=1)
+
+- рассуждаешь о законе  · n=1  · mahabharata-sabhaparva
+
+### `DarmavAn` — dharmavān  (n=1)
+
+- отличается справедливостью  · n=1  · mahabharata-udyogaparva
+
+### `DarmavIrya` — dharmavīrya  (n=1)
+
+- духовной силой прозрения  · n=1  · ramayana-balakanda
+
+### `DarmavaitaMsika` — dharmavaitaṃsika  (n=2)
+
+- торговать дхармой  · n=1  · mahabharata-aranyakaparva
+- ловит дхарму  · n=1  · mahabharata-ashvamedhikaparva
+
+### `DarmavallaBaH` — dharmavallabhaḥ  (n=1)
+
+- влекущийся к дхарме  · n=1  · buddhacharita
+
+### `DarmavarDana` — dharmavardhana  (n=1)
+
+- Дхармавардхана  · n=1  · ramayana-ayodhyakanda
+
+### `DarmavarDanam` — dharmavardhanam  (n=1)
+
+- Дхармавардхане  · n=1  · ramayana-ayodhyakanda
+
+### `Darmavarjitau` — dharmavarjitau  (n=1)
+
+- несогласны с дхармой  · n=1  · manavadharmashastra
+
+### `Darmavartman` — dharmavartman  (n=2)
+
+- пути справедливости  · n=1  · mahabharata-dronaparva
+- путях праведности  · n=1  · mahabharata-ashvamedhikaparva
+
+### `Darmavat` — dharmavat  (n=4)
+
+- добродетели  · n=1  · ramayana-ayodhyakanda
+- благочестным  · n=1  · buddhacharita
+- справедливую  · n=1  · mahabharata-udyogaparva
+- согласное с законом  · n=1  · mahabharata-udyogaparva
+
+### `DarmavatI` — dharmavatī  (n=1)
+
+- справедливую  · n=1  · mahabharata-adiparva
+
+### `Darmavatsala` — dharmavatsala  (n=10)
+
+- преданный дхарме  · n=2  · mahabharata-aranyakaparva, mahabharata-ashramavasikaparva
+- привержен дхарме  · n=2  · mahabharata-ashramavasikaparva
+- Верный долгу  · n=1  · ramayana-ayodhyakanda
+- преданный добродетели  · n=1  · ramayana-ayodhyakanda
+- преданные добродетели  · n=1  · ramayana-balakanda
+- возлюбивший дхарму  · n=1  · mahabharata-aranyakaparva
+- преданного справедливости  · n=1  · mahabharata-shalyaparva
+- преданный справедливости  · n=1  · mahabharata-shalyaparva
+
+### `DarmavatsalaH` — dharmavatsalaḥ  (n=1)
+
+- Рама  · n=1  · ramayana-ayodhyakanda
+
+### `Darmavatsalam` — dharmavatsalam  (n=1)
+
+- Верный долгу  · n=1  · ramayana-balakanda
+
+### `Darmavatsalau` — dharmavatsalau  (n=1)
+
+- верные добродетели  · n=1  · ramayana-ayodhyakanda
+
+### `Darmavattva` — dharmavattva  (n=1)
+
+- характеристики  · n=1  · nyaya-bhashya
+
+### `DarmavelA` — dharmavelā  (n=1)
+
+- нарушения закона  · n=1  · mahabharata-sabhaparva
+
+### `DarmavfdDam` — dharmavṛddham  (n=1)
+
+- выдающегося праведностью  · n=1  · mahabharata-udyogaparva
+
+### `DarmavfdDezu` — dharmavṛddheṣu  (n=1)
+
+- мудрость  · n=1  · kumarasambhava
+
+### `DarmavfdDi` — dharmavṛddhi  (n=1)
+
+- возрастание дхармы  · n=1  · mahabharata-aranyakaparva
+
+### `Darmavftti` — dharmavṛtti  (n=1)
+
+- ведут себя в согласии с дхармой  · n=1  · mahabharata-aranyakaparva
+
+### `DarmaviBAgajYaH` — dharmavibhāgajñaḥ  (n=1)
+
+- знающий тонкости дхармы  · n=1  · mahabharata-karnaparva
+
+### `DarmaviDau` — dharmavidhau  (n=1)
+
+- следовать дхарме  · n=1  · buddhacharita
+
+### `DarmaviDi` — dharmavidhi  (n=4)
+
+- правило дхармы  · n=1  · manavadharmashastra
+- Дхармы пути  · n=1  · buddhacharita
+- правила дхармы  · n=1  · buddhacharita
+- для дхармы  · n=1  · buddhacharita
+
+### `DarmaviSizwaH` — dharmaviśiṣṭaḥ  (n=1)
+
+- субъект, который характеризуется  · n=1  · nyaya-bhashya
+
+### `Darmavid` — dharmavid  (n=21)
+
+- знатоки закона  · n=4  · mahabharata-adiparva, mahabharata-udyogaparva, mahabharata-shalyaparva, mahabharata-virataparva
+- знатоками нравственного закона  · n=2  · mahabharata-dronaparva, mahabharata-virataparva
+- знатоком закона  · n=1  · mahabharata-adiparva
+- знатоки добродетели  · n=1  · ramayana-ayodhyakanda
+- мудрецов  · n=1  · mahabharata-aranyakaparva
+- Знающие дхарму  · n=1  · mahabharata-aranyakaparva
+- знал дхарму  · n=1  · mahabharata-aranyakaparva
+- знатоков дхармы  · n=1  · mahabharata-aranyakaparva
+- знает дхарму  · n=1  · mahabharata-aranyakaparva
+- справедливый  · n=1  · mahabharata-adiparva
+- сведущий в законе  · n=1  · mahabharata-adiparva
+- Закона знаток  · n=1  · mahabharata-bhishmaparva
+- сведущи в законе  · n=1  · mahabharata-udyogaparva
+- сведущий в долге  · n=1  · mahabharata-udyogaparva
+- Знатоки дхармы  · n=1  · mahabharata-karnaparva
+- постигшему дхарму  · n=1  · mahabharata-ashvamedhikaparva
+- знающие закон  · n=1  · mahabharata-sabhaparva
+
+### `DarmavidA` — dharmavidā  (n=1)
+
+- сведущим в вопросах справедливости  · n=1  · mahabharata-dronaparva
+
+### `DarmavidBiH` — dharmavidbhiḥ  (n=2)
+
+- знатоками законов  · n=1  · mahabharata-adiparva
+- знающими закон  · n=1  · mahabharata-adiparva
+
+### `DarmavidaH` — dharmavidaḥ  (n=1)
+
+- знатоки дхармы  · n=1  · mahabharata-aranyakaparva
+
+### `Darmavido` — dharmavido  (n=1)
+
+- знатоки закона  · n=1  · mahabharata-adiparva
+
+### `DarmavidrAjA` — dharmavidrājā  (n=1)
+
+- царь, знающий закон  · n=1  · mahabharata-adiparva
+
+### `DarmavidvezaRa` — dharmavidveṣaṇa  (n=1)
+
+- ненависть к законному  · n=1  · mahabharata-udyogaparva
+
+### `DarmavihIna` — dharmavihīna  (n=1)
+
+- лишен добродетелей  · n=1  · mahabharata-adiparva
+
+### `DarmavijayI` — dharmavijayī  (n=1)
+
+- праведный царь-победитель  · n=1  · raghuvamsha
+
+### `Darmavijayin` — dharmavijayin  (n=1)
+
+- побеждающий дхармой  · n=1  · mahabharata-aranyakaparva
+
+### `DarmavikalpAt` — dharmavikalpāt  (n=4)
+
+- через изменение его характеристики  · n=2  · nyaya-bhashya
+- из-за различия характеристик  · n=2  · nyaya-bhashya
+
+### `Darmavikalpa` — dharmavikalpa  (n=4)
+
+- различие в качествах  · n=2  · nyaya-bhashya
+- альтернативное качество  · n=1  · nyaya-bhashya
+- отличны по качествам  · n=1  · nyaya-bhashya
+
+### `DarmavikalpanirdeSa` — dharmavikalpanirdeśa  (n=1)
+
+- указание на альтернативное качество  · n=1  · nyaya-bhashya
+
+### `Darmavikramau` — dharmavikramau  (n=1)
+
+- добродетельные и могучие  · n=1  · ramayana-ayodhyakanda
+
+### `DarmaviniScayam` — dharmaviniścayam  (n=1)
+
+- об определении обязанностей  · n=1  · mahabharata-adiparva
+
+### `Darmaviparyaya` — dharmaviparyaya  (n=1)
+
+- обещание  · n=1  · raghuvamsha
+
+### `DarmavirudDa` — dharmaviruddha  (n=3)
+
+- Расходящимся с дхармой  · n=1  · ramayana-sundarakanda
+- неправедно  · n=1  · ramayana-sundarakanda
+- противоречит своей дхарме  · n=1  · mahabharata-aranyakaparva
+
+### `Darmavit` — dharmavit  (n=53)
+
+- знаток дхармы  · n=11  · mahabharata-aranyakaparva, mahabharata-karnaparva, mahabharata-ashvamedhikaparva, mahabharata-ashramavasikaparva
+- знающий дхарму  · n=9  · manavadharmashastra
+- добродетельный  · n=5  · ramayana-ayodhyakanda, ramayana-balakanda
+- знающий закон  · n=5  · mahabharata-adiparva, mahabharata-udyogaparva
+- Добродетельный  · n=2  · ramayana-ayodhyakanda, ramayana-balakanda
+- знаток закона  · n=2  · mahabharata-adiparva, mahabharata-sabhaparva
+- сведущий в нравственном законе  · n=2  · mahabharata-dronaparva, mahabharata-shalyaparva
+- добродетельный царь  · n=1  · ramayana-ayodhyakanda
+- радуясь  · n=1  · ramayana-ayodhyakanda
+- сведущий в долге  · n=1  · ramayana-ayodhyakanda
+- верный долгу  · n=1  · ramayana-ayodhyakanda
+- знаток долга  · n=1  · ramayana-ayodhyakanda
+- добродетели  · n=1  · ramayana-ayodhyakanda
+- Рама  · n=1  · ramayana-ayodhyakanda
+- Знающий дхарму  · n=1  · manavadharmashastra
+- сведущ в дхарме  · n=1  · mahabharata-aranyakaparva
+- понимает свою дхарму  · n=1  · mahabharata-aranyakaparva
+- постигший дхарму  · n=1  · mahabharata-aranyakaparva
+- знаток Закона  · n=1  · mahabharata-bhishmaparva
+- знающий справедливость  · n=1  · mahabharata-udyogaparva
+- чувством справедливости  · n=1  · mahabharata-udyogaparva
+- знатоком дхармы  · n=1  · mahabharata-karnaparva
+- познавший дхарму  · n=1  · mahabharata-ashvamedhikaparva
+- Сознавая свой долг  · n=1  · mahabharata-ashvamedhikaparva
+
+### `Darmavitta` — dharmavitta  (n=1)
+
+- знающий дхарму  · n=1  · mahabharata-karnaparva
+
+### `Darmavittama` — dharmavittama  (n=1)
+
+- лучшему из знатоков дхармы  · n=1  · mahabharata-striparva
+
+### `DarmavittamaH` — dharmavittamaḥ  (n=1)
+
+- достойнейший из знатоков дхармы  · n=1  · mahabharata-ashvamedhikaparva
+
+### `Darmavivecanam` — dharmavivecanam  (n=1)
+
+- определение дхармы  · n=1  · manavadharmashastra
+
+### `Darmavrata` — dharmavrata  (n=1)
+
+- обет благочестия  · n=1  · mahabharata-ashvamedhikaparva
+
+### `DarmavratopetA` — dharmavratopetā  (n=1)
+
+- соблюдая обет дхармы  · n=1  · mahabharata-ashvamedhikaparva
+
+### `DarmavyADa` — dharmavyādha  (n=9)
+
+- Дхармавьядха  · n=7  · mahabharata-aranyakaparva
+- Дхармавьядхи  · n=2  · mahabharata-aranyakaparva
+
+### `DarmavyADaH` — dharmavyādhaḥ  (n=2)
+
+- Дхармавьядха  · n=2  · mahabharata-aranyakaparva
+
+### `DarmavyADam` — dharmavyādham  (n=1)
+
+- о Дхармавьядхе  · n=1  · mahabharata-aranyakaparva
+
+### `DarmavyaktinidarSana` — dharmavyaktinidarśana  (n=1)
+
+- желая показать свою добродетель  · n=1  · mahabharata-aranyakaparva
+
+### `DarmayaSaHpradIpta` — dharmayaśaḥpradīpta  (n=1)
+
+- сиявшие славою дхармы  · n=1  · buddhacharita
+
+### `DarmayaSoniDiH` — dharmayaśonidhiḥ  (n=1)
+
+- Вместилище справедливости и славы  · n=1  · mahabharata-shalyaparva
+
+### `DarmayoH` — dharmayoḥ  (n=1)
+
+- свойств  · n=1  · nyaya-bhashya
+
+### `Darmayoga` — dharmayoga  (n=1)
+
+- качества связаны  · n=1  · nyaya-bhashya
+
+### `DarmayudDa` — dharmayuddha  (n=2)
+
+- в битве справедливым способом  · n=1  · mahabharata-dronaparva
+- битва во имя дхармы  · n=1  · mahabharata-sauptikaparva
+
+### `DarmayudDe` — dharmayuddhe  (n=1)
+
+- в битве во имя дхармы  · n=1  · mahabharata-sauptikaparva
+
+### `Darmayukta` — dharmayukta  (n=15)
+
+- связанному чувством долга  · n=2  · mahabharata-sabhaparva
+- исполненное добродетели  · n=1  · ramayana-ayodhyakanda
+- праведные  · n=1  · ramayana-sundarakanda
+- праведно  · n=1  · mahabharata-aranyakaparva
+- добродетель  · n=1  · mahabharata-aranyakaparva
+- добродетелен  · n=1  · mahabharata-aranyakaparva
+- Наделенный добродетелями  · n=1  · mahabharata-adiparva
+- согласуется с законом  · n=1  · mahabharata-adiparva
+- преданного закону  · n=1  · mahabharata-adiparva
+- справедливостью  · n=1  · mahabharata-udyogaparva
+- справедливыми  · n=1  · mahabharata-udyogaparva
+- справедливую по сути  · n=1  · mahabharata-udyogaparva
+- справедливым  · n=1  · mahabharata-shalyaparva
+- благочестивых  · n=1  · mahabharata-sabhaparva
+
+### `DarmayuktaM` — dharmayuktaṃ  (n=2)
+
+- чтобы дхарме служить  · n=1  · buddhacharita
+- праведному  · n=1  · mahabharata-striparva
+
+### `Darmayuktam` — dharmayuktam  (n=1)
+
+- поучительное  · n=1  · ramayana-balakanda
+
+### `DarmazaqBAga` — dharmaṣaḍbhāga  (n=1)
+
+- шестая часть дхармы  · n=1  · manavadharmashastra
+
+### `Darme` — dharme  (n=53)
+
+- добродетели  · n=9  · ramayana-ayodhyakanda, ramayana-aranyakanda, mahabharata-aranyakaparva, ramayana-balakanda
+- в законе  · n=5  · mahabharata-adiparva, mahabharata-udyogaparva, bhagavadgita-burba
+- в дхарме  · n=5  · ramayana-ayodhyakanda, mahabharata-aranyakaparva, mahabharata-adiparva, mahabharata-karnaparva, mahabharata-ashramavasikaparva
+- дхарму  · n=4  · mahabharata-aranyakaparva, mahabharata-ashvamedhikaparva
+- закон  · n=3  · mahabharata-adiparva, bhagavadgita-sementsov, bhagavadgita-radha
+- закона  · n=3  · mahabharata-udyogaparva, bhagavadgita-erman, mahabharata-virataparva
+- на добродетели  · n=2  · ramayana-ayodhyakanda
+- дхарме  · n=2  · mahabharata-aranyakaparva
+- на добродетель  · n=1  · mahabharata-adiparva
+- достославный  · n=1  · ramayana-ayodhyakanda
+- долгу  · n=1  · ramayana-ayodhyakanda
+- долга  · n=1  · ramayana-ayodhyakanda
+- в добродетели  · n=1  · ramayana-aranyakanda
+- дхармой  · n=1  · mahabharata-aranyakaparva
+- на дхарму  · n=1  · mahabharata-aranyakaparva
+- по закону  · n=1  · mahabharata-adiparva
+- к справедливости  · n=1  · mahabharata-dronaparva
+- с разрушением дхармы  · n=1  · bhagavadgita-1914
+- с гибелью законов  · n=1  · bhagavadgita-smirnov
+- законы  · n=1  · bhagavadgita-smirnov
+- благочестие  · n=1  · bhagavadgita-1909
+- дхарма  · n=1  · bhagavadgita-sharma
+- когда религия  · n=1  · bhagavadgita-prabhupada
+- характеристика  · n=1  · nyaya-bhashya
+- законе  · n=1  · mahabharata-sabhaparva
+- выполнением своего нравственного закона  · n=1  · mahabharata-sabhaparva
+- в знании дхармы  · n=1  · mahabharata-striparva
+- согласно дхарме  · n=1  · mahabharata-sauptikaparva
+
+### `DarmeRa` — dharmeṇa  (n=87)
+
+- по закону  · n=10  · mahabharata-adiparva, mahabharata-sabhaparva, ramayana-ayodhyakanda, mahabharata-aranyakaparva, mahabharata-udyogaparva, mahabharata-striparva
+- в согласии с дхармой  · n=5  · mahabharata-aranyakaparva, mahabharata-ashvamedhikaparva, mahabharata-ashramavasikaparva, mahabharata-sauptikaparva
+- законом  · n=5  · mahabharata-adiparva, mahabharata-udyogaparva, mahabharata-virataparva, mahabharata-ashramavasikaparva
+- справедливо  · n=5  · mahabharata-adiparva, mahabharata-udyogaparva, mahabharata-dronaparva
+- согласно дхарме  · n=4  · manavadharmashastra, mahabharata-aranyakaparva
+- справедливостью  · n=3  · mahabharata-adiparva, mahabharata-dronaparva, mahabharata-udyogaparva
+- по праву  · n=3  · ramayana-ayodhyakanda
+- согласно закону  · n=3  · mahabharata-aranyakaparva, mahabharata-adiparva, mahabharata-udyogaparva
+- дхармой  · n=3  · mahabharata-aranyakaparva, bhagavadgita-radha
+- Дхармой  · n=3  · mahabharata-adiparva, mahabharata-ashvamedhikaparva
+- добродетелью  · n=2  · ramayana-ayodhyakanda, mahabharata-ashvamedhikaparva
+- долг  · n=2  · ramayana-ayodhyakanda
+- долгу  · n=2  · ramayana-ayodhyakanda, ramayana-balakanda
+- по справедливости  · n=2  · ramayana-aranyakanda
+- дхарме  · n=2  · mahabharata-aranyakaparva
+- закона  · n=2  · mahabharata-udyogaparva, mahabharata-sabhaparva
+- выгоде  · n=1  · ramayana-ayodhyakanda
+- справедливый  · n=1  · ramayana-ayodhyakanda
+- по долгу  · n=1  · ramayana-ayodhyakanda
+- вследствие добродетели  · n=1  · manavadharmashastra
+- с дхармой  · n=1  · manavadharmashastra
+- по дхарме  · n=1  · manavadharmashastra
+- закону  · n=1  · ramayana-aranyakanda
+- силой закона  · n=1  · ramayana-balakanda
+- добродетель  · n=1  · ramayana-balakanda
+- честностью  · n=1  · mahabharata-aranyakaparva
+- благочестием  · n=1  · mahabharata-aranyakaparva
+- своей дхармой  · n=1  · mahabharata-aranyakaparva
+- добродетельно  · n=1  · mahabharata-aranyakaparva
+- дхарма  · n=1  · mahabharata-aranyakaparva
+- блюдет дхарму  · n=1  · mahabharata-aranyakaparva
+- верностью дхарме  · n=1  · mahabharata-aranyakaparva
+- добродетелей  · n=1  · mahabharata-adiparva
+- достоинствам  · n=1  · mahabharata-adiparva
+- в соответствии с законом  · n=1  · mahabharata-adiparva
+- исполнением дхармы  · n=1  · buddhacharita
+- с законом  · n=1  · mahabharata-udyogaparva
+- к добродетели  · n=1  · mahabharata-udyogaparva
+- праведными  · n=1  · mahabharata-bhishmaparva
+- из дхарм  · n=1  · mahabharata-karnaparva
+- характеристики  · n=1  · nyaya-bhashya
+- характеристику  · n=1  · nyaya-bhashya
+- В согласии с дхармой  · n=1  · mahabharata-ashvamedhikaparva
+- связанное с дхармой  · n=1  · devi-gita
+- с помощью дхармы  · n=1  · br-up
+- свойства  · n=1  · vedartha-samgraha_ramanuja
+- честном  · n=1  · mahabharata-striparva
+
+### `DarmeSvara` — dharmeśvara  (n=1)
+
+- владыка добродетельных заслуг  · n=1  · mahabharata-udyogaparva
+
+### `Darmena` — dharmena  (n=1)
+
+- Как (небесная) опора  · n=1  · rigveda
+
+### `DarmepsayA` — dharmepsayā  (n=1)
+
+- желая исполнить свою дхарму  · n=1  · mahabharata-aranyakaparva
+
+### `Darmepu` — dharmepu  (n=1)
+
+- Дхармепу  · n=1  · mahabharata-adiparva
+
+### `Darmerata` — dharme rata  (n=1)
+
+- преданный дхарме  · n=1  · mahabharata-aranyakaparva
+
+### `Darmezu` — dharmeṣu  (n=6)
+
+- в предписаниях закона  · n=2  · mahabharata-udyogaparva
+- в делах благочестия  · n=1  · mahabharata-aranyakaparva
+- законах  · n=1  · mahabharata-aranyakaparva
+- в обязанностях  · n=1  · mahabharata-aranyakaparva
+- по законам  · n=1  · mahabharata-adiparva
+
+### `Darmi` — dharmi  (n=1)
+
+- добродетельного  · n=1  · raghuvamsha
+
+### `DarmiRA` — dharmiṇā  (n=1)
+
+- наделенной свойством  · n=1  · yoga-sutry_vyasa-bhashya
+
+### `DarmiRAm` — dharmiṇām  (n=1)
+
+- добродетельных  · n=1  · mahabharata-udyogaparva
+
+### `DarmiRaH` — dharmiṇaḥ  (n=1)
+
+- носителя качеств  · n=1  · nyaya-bhashya
+
+### `DarmikI` — dharmikī  (n=1)
+
+- Во благо  · n=1  · ramayana-balakanda
+
+### `Darmika` — dharmika  (n=1)
+
+- добродетельных  · n=1  · ch-up
+
+### `Darmike` — dharmike  (n=1)
+
+- Раме  · n=1  · ramayana-aranyakanda
+
+### `Darmin` — dharmin  (n=29)
+
+- носитель  · n=6  · nyaya-bhashya, yoga-sutry_vyasa-bhashya
+- добродетельных  · n=2  · ramayana-balakanda, mahabharata-dronaparva
+- предмет  · n=2  · nyaya-bhashya
+- субстрат  · n=2  · nyaya-bhashya, yoga-sutry_vyasa-bhashya
+- носитель свойства  · n=2  · nyaya-bhashya
+- существах  · n=1  · mahabharata-aranyakaparva
+- истинной дхарме  · n=1  · buddhacharita
+- добродетельные  · n=1  · mahabharata-udyogaparva
+- вещь, предмет  · n=1  · nyaya-bhashya
+- субъект  · n=1  · nyaya-bhashya
+- субстраты  · n=1  · nyaya-bhashya
+- благочестивых  · n=1  · mahabharata-sabhaparva
+- закон  · n=1  · mahabharata-sabhaparva
+- носителя  · n=1  · yoga-sutry_vyasa-bhashya
+- субстанции  · n=1  · yoga-sutry_vyasa-bhashya
+- субстрат-носитель  · n=1  · yoga-sutry_vyasa-bhashya
+- субстанция  · n=1  · yoga-sutry_vyasa-bhashya
+- Господь  · n=1  · yoga-sutry_sharma
+- носитель дхарм  · n=1  · yoga-sutry_zagumennov
+- носитель качеств  · n=1  · yoga-sutry_vyasa-bhashya
+
+### `DarmisvarUpa` — dharmisvarūpa  (n=1)
+
+- сущность носителя  · n=1  · yoga-sutry_vyasa-bhashya
+
+### `DarmiviSizwaH` — dharmiviśiṣṭaḥ  (n=1)
+
+- предикат, особая характеристика  · n=1  · nyaya-bhashya
+
+### `DarmizWA` — dharmiṣṭhā  (n=2)
+
+- добродетельная  · n=1  · ramayana-balakanda
+- Добродетельная  · n=1  · ramayana-balakanda
+
+### `DarmizWa` — dharmiṣṭha  (n=22)
+
+- справедливейший  · n=2  · mahabharata-dronaparva
+- весьма благочестивый  · n=1  · mahabharata-adiparva
+- справедливый  · n=1  · mahabharata-adiparva
+- праведная  · n=1  · mahabharata-adiparva
+- праведный  · n=1  · mahabharata-adiparva
+- наиболее праведный  · n=1  · mahabharata-adiparva
+- праведное  · n=1  · mahabharata-adiparva
+- лучший из добродетельных  · n=1  · ramayana-ayodhyakanda
+- благочестивый  · n=1  · ramayana-sundarakanda
+- наиправеднейшие  · n=1  · manavadharmashastra
+- благочестивое  · n=1  · ramayana-balakanda
+- верным долгу  · n=1  · ramayana-balakanda
+- добродетельных  · n=1  · ramayana-balakanda
+- Праведный  · n=1  · ramayana-balakanda
+- добродетельные  · n=1  · mahabharata-aranyakaparva
+- праведники  · n=1  · mahabharata-aranyakaparva
+- поучительнейший  · n=1  · mahabharata-aranyakaparva
+- достойнейший  · n=1  · mahabharata-aranyakaparva
+- добродетельнейшем  · n=1  · mahabharata-aranyakaparva
+- правдивейшее  · n=1  · mahabharata-adiparva
+- выше всех в дхарме  · n=1  · mnar-up
+
+### `DarmizWaM` — dharmiṣṭhaṃ  (n=2)
+
+- исполненное добродетели  · n=1  · mahabharata-adiparva
+- наиболее праведная  · n=1  · mahabharata-adiparva
+
+### `DarmizWaiH` — dharmiṣṭhaiḥ  (n=1)
+
+- добродетельными  · n=1  · ramayana-aranyakanda
+
+### `DarmizWam` — dharmiṣṭham  (n=4)
+
+- благое  · n=1  · ramayana-ayodhyakanda
+- благочестивую  · n=1  · ramayana-aranyakanda
+- законного  · n=1  · mahabharata-udyogaparva
+- справедливейшего  · n=1  · mahabharata-udyogaparva
+
+### `DarmizWatA` — dharmiṣṭhatā  (n=1)
+
+- высоко добродетельны  · n=1  · mahabharata-adiparva
+
+### `DarmizWe` — dharmiṣṭhe  (n=2)
+
+- добродетели  · n=1  · ramayana-ayodhyakanda
+- праведный  · n=1  · ramayana-ayodhyakanda
+
+### `Darmizu` — dharmiṣu  (n=1)
+
+- сущностях  · n=1  · yoga-sutry_vyasa-bhashya
+
+### `DarmizwaH` — dharmiṣṭaḥ  (n=1)
+
+- преисполнен чувства чести  · n=1  · ramayana-aranyakanda
+
+### `Darmo` — dharmo  (n=6)
+
+- Дхармой  · n=1  · mahabharata-aranyakaparva
+- дхарму  · n=1  · kama-sutra
+- закон  · n=1  · mahabharata-adiparva
+- закона нравственности  · n=1  · mahabharata-dronaparva
+- нравственному долгу  · n=1  · mahabharata-dronaparva
+- дхармы  · n=1  · mahabharata-ashvamedhikaparva
+
+### `Darmo'yaM` — dharmo'yaṃ  (n=1)
+
+- этот закон  · n=1  · mahabharata-adiparva
+
+### `DarmopaGAta` — dharmopaghāta  (n=1)
+
+- ущемления нравственности  · n=1  · mahabharata-sabhaparva
+
+### `DarmopaGAtaka` — dharmopaghātaka  (n=3)
+
+- не нарушает закона  · n=1  · mahabharata-adiparva
+- губителем дхармы  · n=1  · mahabharata-ashvamedhikaparva
+- для дхармы пагубно  · n=1  · mahabharata-ashvamedhikaparva
+
+### `DarmopalabDi` — dharmopalabdhi  (n=1)
+
+- наблюдение качеств  · n=1  · nyaya-bhashya
+
+### `Darmopanizada` — dharmopaniṣada  (n=3)
+
+- о тайнах дхармы  · n=1  · mahabharata-adiparva
+- тайны закона  · n=1  · mahabharata-adiparva
+- о дхарме  · n=1  · mahabharata-adiparva
+
+### `Darmopanizadam` — dharmopaniṣadam  (n=2)
+
+- тайных предписаний закона  · n=1  · mahabharata-adiparva
+- учение о дхарме  · n=1  · mahabharata-adiparva
+
+### `DarmopasaMhAram` — dharmopasaṃhāram  (n=1)
+
+- собрание дхармы  · n=1  · ramayana-sundarakanda
+
+### `Darmopeta` — dharmopeta  (n=1)
+
+- преданные правде  · n=1  · mahabharata-bhishmaparva
+
+### `Darmottara` — dharmottara  (n=2)
+
+- высочайшая справедливость  · n=1  · mahabharata-adiparva
+- Добродетельнейший  · n=1  · raghuvamsha
+
+### `DarmyA` — dharmyā  (n=3)
+
+- благосклонно  · n=1  · ramayana-ayodhyakanda
+- благочестивую  · n=1  · mahabharata-udyogaparva
+- сообразному с дхармой  · n=1  · mahabharata-ashvamedhikaparva
+
+### `DarmyAH` — dharmyāḥ  (n=2)
+
+- законными  · n=1  · mahabharata-adiparva
+- духовную  · n=1  · mahabharata-ashramavasikaparva
+
+### `DarmyAM` — dharmyāṃ  (n=1)
+
+- полагающееся по дхарме  · n=1  · manavadharmashastra
+
+### `DarmyARi` — dharmyāṇi  (n=1)
+
+- связанные с исполнением дхармы  · n=1  · manavadharmashastra
+
+### `DarmyAm` — dharmyām  (n=4)
+
+- дхармическую  · n=1  · mahabharata-adiparva
+- праведную  · n=1  · mahabharata-adiparva
+- долга  · n=1  · mahabharata-aranyakaparva
+- святое  · n=1  · mahabharata-adiparva
+
+### `DarmyAmfta` — dharmyāmṛta  (n=7)
+
+- святую амриту  · n=3  · mahabharata-bhishmaparva, bhagavadgita-erman
+- бессмертную Дхарму  · n=1  · gitarthasamgraha-abhinavagupta
+- нектар дхармы  · n=1  · ramanuja_gitabhashya
+- святую амриту эту  · n=1  · bhagavadgita-erman
+- жизненную влагу, амриту  · n=1  · bhagavadgita-1909
+
+### `DarmyAmftam` — dharmyāmṛtam  (n=5)
+
+- амриту дхармичности  · n=1  · bhagavadgita-burba
+- бессмертную дхарму  · n=1  · bhagavadgita-smirnov
+- Амриты религіи  · n=1  · bhagavadgita-1788
+- Амрита  · n=1  · bhagavadgita-1788
+- бессмертной мудрости дхармы  · n=1  · bhagavadgita-sharma
+
+### `DarmyAn` — dharmyān  (n=1)
+
+- законными  · n=1  · mahabharata-adiparva
+
+### `DarmyAt` — dharmyāt  (n=6)
+
+- праведной  · n=3  · ramanuja_gitabhashya, bhagavadgita-1914, bhagavadgita-radha
+- от велений  · n=1  · mahabharata-aranyakaparva
+- во имя дхармы  · n=1  · gitarthasamgraha-abhinavagupta
+- от праведного  · n=1  · bhagavadgita-radha
+
+### `Darmya` — dharmya  (n=93)
+
+- праведная  · n=6  · mahabharata-bhishmaparva, bhagavadgita-erman, ramanuja_gitabhashya, bhagavadgity
+- законный  · n=3  · manavadharmashastra
+- справедливо  · n=3  · mahabharata-udyogaparva
+- праведный  · n=3  · bhagavadgita-burba, bhagavadgity, bhagavadgita-smirnov
+- праведное  · n=2  · mahabharata-adiparva, bhagavadgita-burba
+- дхармы  · n=2  · ramayana-sundarakanda, bhagavadgita-sementsov
+- соответствуют дхарме  · n=2  · manavadharmashastra
+- согласное с дхармой  · n=2  · manavadharmashastra
+- сопутствует дхарме  · n=2  · mahabharata-aranyakaparva
+- закону  · n=2  · mahabharata-adiparva, mahabharata-udyogaparva
+- с законом согласно  · n=2  · mahabharata-bhishmaparva, bhagavadgita-erman
+- благочестивое  · n=2  · mahabharata-bhishmaparva, gitarthasamgraha-abhinavagupta
+- справедливые  · n=2  · mahabharata-udyogaparva, mahabharata-sabhaparva
+- благую  · n=2  · gitarthasamgraha-abhinavagupta, mahabharata-ashramavasikaparva
+- священное  · n=1  · mahabharata-adiparva
+- Праведного  · n=1  · ramayana-ayodhyakanda
+- доброго  · n=1  · ramayana-ayodhyakanda
+- благочестивые  · n=1  · ramayana-sundarakanda
+- соответствует дхарме  · n=1  · manavadharmashastra
+- соответствующими дхарме  · n=1  · manavadharmashastra
+- благочестивого  · n=1  · manavadharmashastra
+- согласно дхарме  · n=1  · manavadharmashastra
+- законен  · n=1  · manavadharmashastra
+- законное  · n=1  · manavadharmashastra
+- законных  · n=1  · manavadharmashastra
+- справедливое  · n=1  · manavadharmashastra
+- Наставляющую добродетели  · n=1  · ramayana-balakanda
+- свято  · n=1  · mahabharata-aranyakaparva
+- благим  · n=1  · mahabharata-aranyakaparva
+- дозволенным  · n=1  · mahabharata-adiparva
+- согласованное с законом  · n=1  · mahabharata-adiparva
+- священный  · n=1  · mahabharata-adiparva
+- исполненное справедливости  · n=1  · mahabharata-adiparva
+- увлекающее сердце  · n=1  · mahabharata-adiparva
+- справедливость  · n=1  · mahabharata-udyogaparva
+- обычаям  · n=1  · mahabharata-udyogaparva
+- высоконравственные  · n=1  · mahabharata-udyogaparva
+- сообразно с законами нравственности  · n=1  · mahabharata-udyogaparva
+- естественная  · n=1  · mahabharata-udyogaparva
+- сообразно с законом  · n=1  · mahabharata-udyogaparva
+- согласно с законом  · n=1  · mahabharata-udyogaparva
+- соответствующее закону / добродетельное  · n=1  · bhagavadgita-burba
+- дающий мудрость  · n=1  · bhagavadgita-1914
+- исполненное силы  · n=1  · bhagavadgity
+- священныя  · n=1  · bhagavadgity
+- праведной  · n=1  · bhagavadgita-smirnov
+- закономерная  · n=1  · bhagavadgita-smirnov
+- должности  · n=1  · bhagavadgita-1788
+- званія  · n=1  · bhagavadgita-1788
+- долге  · n=1  · bhagavadgita-sementsov
+- славную  · n=1  · bhagavadgita-sementsov
+- дхармично  · n=1  · bhagavadgita-sementsov
+- доблестно  · n=1  · bhagavadgita-1909
+- за правду  · n=1  · bhagavadgita-1909
+- истины  · n=1  · bhagavadgita-1909
+- священную  · n=1  · bhagavadgita-1909
+- святого  · n=1  · bhagavadgita-sharma
+- священным  · n=1  · bhagavadgita-sharma
+- во имя законов религии  · n=1  · bhagavadgita-prabhupada
+- религиозный  · n=1  · bhagavadgita-prabhupada
+- являющееся религиозным долгом  · n=1  · bhagavadgita-prabhupada
+- религиозный долг  · n=1  · bhagavadgita-prabhupada
+- являющееся законом религии  · n=1  · bhagavadgita-prabhupada
+- не отклоняющееся от дхармы  · n=1  · bhagavadgita-radha
+- справедливого  · n=1  · mahabharata-sabhaparva
+- справедливости  · n=1  · mahabharata-sabhaparva
+- замужних  · n=1  · mahabharata-sabhaparva
+- справедливого, законного  · n=1  · mahabharata-sabhaparva
+- праведность  · n=1  · raghuvamsha
+- сущность  · n=1  · kat-up
+- Сущность  · n=1  · kat-up
+- праведного  · n=1  · mahabharata-sauptikaparva
+
+### `Darmya-amfta` — dharmya-amṛta  (n=1)
+
+- бессмертную Дхарму  · n=1  · bhagavadgity
+
+### `DarmyaM` — dharmyaṃ  (n=13)
+
+- законное  · n=2  · mahabharata-adiparva, mahabharata-sabhaparva
+- праведной  · n=2  · mahabharata-bhishmaparva, bhagavadgita-erman
+- добродетель  · n=2  · mahabharata-adiparva
+- правдиво  · n=1  · mahabharata-adiparva
+- справедливому  · n=1  · mahabharata-udyogaparva
+- дхармическую  · n=1  · bhagavadgita-burba
+- учение  · n=1  · bhagavadgita-burba
+- священную  · n=1  · bhagavadgita-erman
+- о дхарме  · n=1  · bhagavadgita-sementsov
+- духовную  · n=1  · bhagavadgita-sharma
+
+### `DarmyaiSca` — dharmyaiśca  (n=1)
+
+- достойной  · n=1  · mahabharata-aranyakaparva
+
+### `Darmyam` — dharmyam  (n=21)
+
+- священную  · n=3  · mahabharata-bhishmaparva, bhagavadgita-1914, bhagavadgita-prabhupada
+- праведное  · n=2  · ramayana-ayodhyakanda, ramanuja_gitabhashya
+- благое  · n=2  · ramayana-ayodhyakanda
+- праведный  · n=2  · mahabharata-bhishmaparva, bhagavadgita-1914
+- по закону  · n=1  · mahabharata-adiparva
+- законным  · n=1  · mahabharata-adiparva
+- отвечающее требованиям нравственного долга  · n=1  · mahabharata-udyogaparva
+- справедливый  · n=1  · gitarthasamgraha-abhinavagupta
+- о дхарме  · n=1  · ramanuja_gitabhashya
+- праведности  · n=1  · bhagavadgita-1914
+- святую  · n=1  · bhagavadgita-smirnov
+- исполненное силы  · n=1  · bhagavadgita-1788
+- священныя  · n=1  · bhagavadgita-1788
+- исполнено добродетели  · n=1  · bhagavadgita-sharma
+- праведной  · n=1  · bhagavadgita-radha
+- праведную  · n=1  · bhagavadgita-radha
+
+### `DarmyayA` — dharmyayā  (n=1)
+
+- благой  · n=1  · mahabharata-aranyakaparva
+
+### `Darmye` — dharmye  (n=2)
+
+- священном  · n=1  · mahabharata-adiparva
+- справедливом  · n=1  · mahabharata-shalyaparva
+
+### `Daro` — dharo  (n=1)
+
+- носящий  · n=1  · ramayana-aranyakanda
+
+### `DartA` — dhartā  (n=8)
+
+- Дхартар  · n=2  · atharvaveda
+- поддерживатель  · n=2  · atharvaveda
+- поддерживающий  · n=1  · rigveda
+- носитель  · n=1  · rigveda
+- Поддерживатель  · n=1  · rigveda
+- Удерживатель  · n=1  · rigveda
+
+### `DartAr` — dhartār  (n=2)
+
+- поддерживатели  · n=1  · rigveda
+- хранителя  · n=1  · atharvaveda
+
+### `DartArA` — dhartārā  (n=2)
+
+- поддерживатели  · n=1  · rigveda
+- поддерживают  · n=1  · rigveda
+
+### `DartAra` — dhartāra  (n=4)
+
+- поддерживающий  · n=2  · rigveda
+- Поддерживатели  · n=1  · rigveda
+- поддерживатели  · n=1  · atharvaveda
+
+### `DartAraH` — dhartāraḥ  (n=1)
+
+- поддерживатели  · n=1  · rigveda
+
+### `DartAram` — dhartāram  (n=1)
+
+- поддерживателя  · n=1  · rigveda
+
+### `Dartar` — dhartar  (n=1)
+
+- о держатель  · n=1  · rigveda
+
+### `Dartari` — dhartari  (n=3)
+
+- при поддержании  · n=2  · rigveda
+- чтобы нести  · n=1  · rigveda
+
+### `Dartf` — dhartṛ  (n=17)
+
+- поддерживатель  · n=5  · rigveda, rigveda, rigveda, atharvaveda
+- Поддерживатель  · n=5  · rigveda, rigveda, rigveda, rigveda
+- поддерживателя  · n=2  · rigveda
+- Носитель  · n=1  · rigveda
+- установитель  · n=1  · atharvaveda
+- Дхартар-поддерживатель  · n=1  · atharvaveda
+- Дхартар  · n=1  · atharvaveda
+- устроитель  · n=1  · atharvaveda
+
+### `Dartfdiva` — dhartṛ diva  (n=1)
+
+- поддерживатель неба  · n=1  · rigveda
+
+### `DaruRAya` — dharuṇāya  (n=2)
+
+- чтобы нести  · n=1  · rigveda
+- для поддержки  · n=1  · atharvaveda
+
+### `DaruRI` — dharuṇī  (n=2)
+
+- амбар  · n=2  · atharvaveda
+
+### `DaruRa` — dharuṇa  (n=30)
+
+- основа  · n=4  · rigveda, rigveda, rigveda
+- основу  · n=4  · rigveda, rigveda
+- опора  · n=3  · rigveda
+- хранитель  · n=2  · rigveda, atharvaveda
+- основание  · n=2  · rigveda
+- основой  · n=2  · rigveda
+- поддерживатель  · n=2  · rigveda, atharvaveda
+- оснований  · n=2  · rigveda
+- подкрепляющую  · n=2  · atharvaveda
+- основах  · n=1  · rigveda
+- опорой  · n=1  · rigveda
+- опорах  · n=1  · rigveda
+- держалось  · n=1  · rigveda
+- опору  · n=1  · rigveda
+- основы  · n=1  · rigveda
+- поддержка  · n=1  · atharvaveda
+
+### `DaruRaH` — dharuṇaḥ  (n=1)
+
+- опора  · n=1  · rigveda
+
+### `DaruRaM` — dharuṇaṃ  (n=1)
+
+- Опору  · n=1  · rigveda
+
+### `DaruRahvara` — dharuṇahvara  (n=2)
+
+- мешающий основе  · n=2  · rigveda
+
+### `DaruRam` — dharuṇam  (n=14)
+
+- основу  · n=6  · rigveda, rigveda
+- опору  · n=2  · rigveda
+- опоре  · n=2  · rigveda
+- со дна  · n=1  · rigveda
+- основание  · n=1  · rigveda
+- оплот  · n=1  · rigveda
+- устойчивой  · n=1  · atharvaveda
+
+### `DaruRe` — dharuṇe  (n=4)
+
+- основании  · n=1  · rigveda
+- установленный  · n=1  · rigveda
+- в основании  · n=1  · rigveda
+- за основание  · n=1  · atharvaveda
+
+### `DaruRezu` — dharuṇeṣu  (n=3)
+
+- основах  · n=2  · rigveda
+- на основе  · n=1  · atharvaveda
+
+### `DaruRo` — dharuṇo  (n=1)
+
+- столп  · n=1  · rigveda
+
+### `DaryaSva` — dharyaśva  (n=1)
+
+- обладатель буланых коней  · n=1  · rigveda
+
+### `DaryoH` — dharyoḥ  (n=1)
+
+- буланых коней  · n=1  · rigveda
+
+### `Darz` — dharṣ  (n=5)
+
+- дерзнет  · n=2  · atharvaveda
+- оскорбил  · n=1  · mahabharata-adiparva
+- набросился  · n=1  · mahabharata-adiparva
+- напал  · n=1  · mahabharata-adiparva
+
+### `DarzaRA` — dharṣaṇā  (n=3)
+
+- упреки  · n=1  · ramayana-ayodhyakanda
+- позоре  · n=1  · mahabharata-adiparva
+- пренебрежения  · n=1  · mahabharata-adiparva
+
+### `DarzaRAM` — dharṣaṇāṃ  (n=1)
+
+- притесняли  · n=1  · ramayana-sundarakanda
+
+### `DarzaRAm` — dharṣaṇām  (n=1)
+
+- оскорбил и унизил  · n=1  · mahabharata-aranyakaparva
+
+### `DarzaRa` — dharṣaṇa  (n=2)
+
+- Нападения  · n=1  · ramayana-aranyakanda
+- притеснений  · n=1  · mahabharata-aranyakaparva
+
+### `DarzayAmAsa` — dharṣayāmāsa  (n=1)
+
+- осквернил  · n=1  · mahabharata-ashvamedhikaparva
+
+### `Darzayanti` — dharṣayanti  (n=2)
+
+- Нападают  · n=1  · ramayana-aranyakanda
+- преследуют  · n=1  · mahabharata-udyogaparva
+
+### `Darzayata` — dharṣayata  (n=1)
+
+- оскорбляющий  · n=1  · mahabharata-adiparva
+
+### `DarzayataH` — dharṣayataḥ  (n=3)
+
+- оскорбляли  · n=1  · mahabharata-adiparva
+- оскорбляющий  · n=1  · mahabharata-adiparva
+- оскорбляющего  · n=1  · mahabharata-adiparva
+
+### `Darzayati` — dharṣayati  (n=1)
+
+- оскорбляет  · n=1  · mahabharata-adiparva
+
+### `DarzayeyuH` — dharṣayeyuḥ  (n=1)
+
+- разорять  · n=1  · ramayana-sundarakanda
+
+### `DarzayituM` — dharṣayituṃ  (n=1)
+
+- захватить  · n=1  · ramayana-sundarakanda
+
+### `Darzayitum` — dharṣayitum  (n=6)
+
+- похитить  · n=2  · ramayana-aranyakanda
+- одолеть  · n=1  · mahabharata-adiparva
+- обидеть  · n=1  · mahabharata-adiparva
+- оскорблять  · n=1  · ramayana-sundarakanda
+- напасть  · n=1  · ramayana-aranyakanda
+
+### `DarzayitvA` — dharṣayitvā  (n=1)
+
+- похитив  · n=1  · ramayana-aranyakanda
+
+### `Darzayizyanti` — dharṣayiṣyanti  (n=1)
+
+- властны  · n=1  · ramayana-balakanda
+
+### `Darzayizyasi` — dharṣayiṣyasi  (n=1)
+
+- завладеешь  · n=1  · ramayana-aranyakanda
+
+### `Darzayizyati` — dharṣayiṣyati  (n=2)
+
+- не сможет погубить  · n=1  · mahabharata-adiparva
+- причинить вред  · n=1  · mahabharata-dronaparva
+
+### `DarzitA` — dharṣitā  (n=3)
+
+- похитить  · n=1  · ramayana-aranyakanda
+- истязали  · n=1  · mahabharata-adiparva
+- обесчещена  · n=1  · mahabharata-udyogaparva
+
+### `DarzitAnAm` — dharṣitānām  (n=1)
+
+- нападений  · n=1  · ramayana-aranyakanda
+
+### `Darzita` — dharṣita  (n=7)
+
+- Разорен  · n=1  · ramayana-sundarakanda
+- Дурное  · n=1  · ramayana-sundarakanda
+- покоренные  · n=1  · mahabharata-aranyakaparva
+- оскорблен  · n=1  · mahabharata-adiparva
+- сжигаемый  · n=1  · mahabharata-udyogaparva
+- охваченные  · n=1  · mahabharata-udyogaparva
+- побуждаемый  · n=1  · mahabharata-sabhaparva
+
+### `DarzitaH` — dharṣitaḥ  (n=1)
+
+- посмел напасть  · n=1  · ramayana-aranyakanda
+
+### `Darzitam` — dharṣitam  (n=1)
+
+- Подверг насилию  · n=1  · ramayana-aranyakanda
+
+### `DarzitavAn` — dharṣitavān  (n=1)
+
+- напал  · n=1  · shukasaptati
+
+### `Dasan` — dhasan  (n=1)
+
+- смеясь  · n=1  · mahabharata-ashvamedhikaparva
+
+### `Dasati` — dhasati  (n=1)
+
+- смеется  · n=1  · ch-up
+
+### `DastAlu` — dhastālu  (n=2)
+
+- небом вниз  · n=1  · hatha-yoga-pradipika
+- положение тела  · n=1  · hatha-yoga-pradipika
+
+### `DastacezwA` — dhastaceṣṭā  (n=2)
+
+- жест руки  · n=1  · vedartha-samgraha_ramanuja
+- жест  · n=1  · vedartha-samgraha_ramanuja
+
+### `Dastivarcas` — dhastivarcas  (n=1)
+
+- блеска слона  · n=1  · atharvaveda
+
+### `DatA` — dhatā  (n=1)
+
+- Пусть будут перебиты  · n=1  · rigveda
+
+### `DatTa` — dhattha  (n=4)
+
+- даете  · n=3  · rigveda, rigveda, rigveda
+- влагаете  · n=1  · rigveda
+
+### `DatTaH` — dhatthaḥ  (n=2)
+
+- придали  · n=1  · rigveda
+- даете  · n=1  · rigveda
+
+### `DataM` — dhataṃ  (n=1)
+
+- убейте  · n=1  · rigveda
+
+### `Datse` — dhatse  (n=2)
+
+- берешь  · n=1  · rigveda
+- сводишь с ума  · n=1  · amaru-shataka
+
+### `Datsva` — dhatsva  (n=4)
+
+- даруй  · n=1  · mahabharata-dronaparva
+- закутайся  · n=1  · atharvaveda
+- держи  · n=1  · amaru-shataka
+- Клади  · n=1  · atharvaveda
+
+### `DattAd` — dhattād  (n=1)
+
+- дай  · n=1  · rigveda
+
+### `DattAm` — dhattām  (n=5)
+
+- даруют  · n=2  · rigveda, atharvaveda
+- Вложат  · n=1  · atharvaveda
+- Пусть взнуздает  · n=1  · atharvaveda
+- пусть  · n=1  · atharvaveda
+
+### `DattUra` — dhattūra  (n=1)
+
+- дхаттури  · n=1  · kama-sutra
+
+### `DattUraPala` — dhattūraphala  (n=1)
+
+- плодами дхаттуры  · n=1  · kama-sutra
+
+### `DattUraka` — dhattūraka  (n=1)
+
+- дхаттура  · n=1  · kama-sutra
+
+### `DattUrakamaricapippalIcUrRaiH` — dhattūrakamaricapippalīcūrṇaiḥ  (n=1)
+
+- порошком из дхаттуры, черного перца и длинного перца  · n=1  · kama-sutra
+
+### `Datta` — dhatta  (n=24)
+
+- Дайте  · n=3  · rigveda, rigveda, rigveda
+- дайте  · n=3  · rigveda, rigveda, atharvaveda
+- берет  · n=2  · rigveda
+- вынашивает  · n=2  · mahabharata-striparva
+- Наделите  · n=1  · rigveda
+- оставьте  · n=1  · rigveda
+- даруйте  · n=1  · rigveda
+- держит  · n=1  · rigveda
+- получает  · n=1  · rigveda
+- верьте  · n=1  · rigveda
+- установите  · n=1  · atharvaveda
+- закутайте  · n=1  · atharvaveda
+- оберните  · n=1  · atharvaveda
+- Даруйте  · n=1  · atharvaveda
+- поместите  · n=1  · atharvaveda
+- Оберните  · n=1  · atharvaveda
+- одарите  · n=1  · atharvaveda
+- Создайте  · n=1  · atharvaveda
+
+### `DattaH` — dhattaḥ  (n=2)
+
+- разделяют  · n=2  · hatha-yoga-pradipika
+
+### `DattaM` — dhattaṃ  (n=10)
+
+- дайте  · n=5  · rigveda, rigveda
+- Даруйте  · n=3  · rigveda, rigveda
+- наделите  · n=1  · rigveda
+- опустите  · n=1  · atharvaveda
+
+### `Dattam` — dhattam  (n=29)
+
+- наделите  · n=10  · rigveda, rigveda, rigveda
+- даруйте  · n=5  · rigveda, rigveda, rigveda, rigveda, atharvaveda
+- Дайте  · n=4  · rigveda, rigveda, rigveda
+- дайте  · n=3  · rigveda, atharvaveda
+- Даруйте  · n=2  · rigveda, rigveda
+- давайте  · n=2  · rigveda
+- Вложите  · n=1  · atharvaveda
+- вложите  · n=1  · atharvaveda
+- положите  · n=1  · atharvaveda
+
+### `Dattana` — dhattana  (n=7)
+
+- закутайте  · n=2  · atharvaveda
+- дайте  · n=1  · rigveda
+- Наделите  · n=1  · rigveda
+- поверьте  · n=1  · rigveda
+- устраивайте  · n=1  · rigveda
+- Закутайте  · n=1  · atharvaveda
+
+### `Datte` — dhatte  (n=19)
+
+- приобретает  · n=3  · rigveda, rigveda, mahabharata-sabhaparva
+- получает  · n=3  · rigveda, rigveda, rigveda
+- поглощает  · n=1  · rigveda
+- нес  · n=1  · mahabharata-udyogaparva
+- поддерживает  · n=1  · mahabharata-udyogaparva
+- ставит  · n=1  · mahabharata-karnaparva
+- дарует  · n=1  · hatha-yoga-pradipika
+- познает  · n=1  · hatha-yoga-pradipika
+- принимает  · n=1  · atharvaveda
+- мог бы  · n=1  · shatakatrayam
+- мог бы укротить  · n=1  · shatakatrayam-serebryakov
+- делает  · n=1  · amaru-shataka
+- обретает  · n=1  · paramarthasara-abhinavagupta
+- содержит  · n=1  · mai-up
+- влагает  · n=1  · mai-up
+
+### `Datu` — dhatu  (n=1)
+
+- веществ  · n=1  · mahabharata-aranyakaparva
+
+### `DaumyASrama` — dhaumyāśrama  (n=1)
+
+- обитель Дхаумьи  · n=1  · mahabharata-adiparva
+
+### `Daumya` — dhaumya  (n=49)
+
+- Дхаумья  · n=34  · mahabharata-aranyakaparva, mahabharata-adiparva, mahabharata-sabhaparva, mahabharata-ashramavasikaparva, mahabharata-udyogaparva, mahabharata-virataparva, mahabharata-dronaparva
+- Дхаумьи  · n=6  · mahabharata-aranyakaparva, mahabharata-dronaparva
+- Дхаумьей  · n=5  · mahabharata-aranyakaparva, mahabharata-sabhaparva, mahabharata-striparva
+- Дхаумье  · n=2  · mahabharata-aranyakaparva, mahabharata-striparva
+- Дхаумью  · n=2  · mahabharata-aranyakaparva, mahabharata-adiparva
+
+### `DaumyaH` — dhaumyaḥ  (n=9)
+
+- Дхаумья  · n=8  · mahabharata-aranyakaparva, mahabharata-sabhaparva
+- домашний жрец и наставник  · n=1  · mahabharata-sabhaparva
+
+### `DaumyaM` — dhaumyaṃ  (n=2)
+
+- Дхаумью  · n=2  · mahabharata-aranyakaparva
+
+### `Daumyam` — dhaumyam  (n=4)
+
+- Дхаумью  · n=2  · mahabharata-aranyakaparva, mahabharata-sabhaparva
+- Дхаумье  · n=1  · mahabharata-aranyakaparva
+- Дхаумья  · n=1  · mahabharata-sabhaparva
+
+### `DaumyapraBftayaH` — dhaumyaprabhṛtayaḥ  (n=1)
+
+- во главе с Дхаумьей  · n=1  · mahabharata-aranyakaparva
+
+### `DaumyapuraHsarAH` — dhaumyapuraḥsarāḥ  (n=1)
+
+- руководству одного Дхаумьи  · n=1  · mahabharata-aranyakaparva
+
+### `DaumyapuraskftAm` — dhaumyapuraskṛtām  (n=1)
+
+- стоящего перед ней Дхаумью  · n=1  · mahabharata-aranyakaparva
+
+### `Daumyasya` — dhaumyasya  (n=3)
+
+- Дхаумьи  · n=3  · mahabharata-aranyakaparva
+
+### `Daumyena` — dhaumyena  (n=3)
+
+- Дхаумьей  · n=2  · mahabharata-aranyakaparva
+- Дхаумья  · n=1  · mahabharata-aranyakaparva
+
+### `DaumyoktAn` — dhaumyoktān  (n=1)
+
+- указанное Дхаумьей  · n=1  · mahabharata-sabhaparva
+
+### `DaunDumAra` — dhaundhumāra  (n=1)
+
+- о Дхундхумаре  · n=1  · mahabharata-aranyakaparva
+
+### `DautApANgaM` — dhautāpāṅgaṃ  (n=1)
+
+- глазахъ  · n=1  · megha-duta
+
+### `DautInAm` — dhautīnām  (n=1)
+
+- реки  · n=1  · rigveda
+
+### `Dauta` — dhauta  (n=9)
+
+- омываемых  · n=2  · shatakatrayam-serebryakov
+- вымытой  · n=1  · ramayana-ayodhyakanda
+- вымытые  · n=1  · kama-sutra
+- брызжут  · n=1  · shatakatrayam
+- золотом  · n=1  · gitagovinda
+- омытый  · n=1  · gitagovinda
+- омыты  · n=1  · amaru-shataka
+- сверкаютъ  · n=1  · megha-duta
+
+### `Dautadanta` — dhautadanta  (n=1)
+
+- белые зубы  · n=1  · mahabharata-adiparva
+
+### `DautaiH` — dhautaiḥ  (n=1)
+
+- сверкающим  · n=1  · mahabharata-dronaparva
+
+### `DautamUlakaH` — dhautamūlakaḥ  (n=1)
+
+- Дхаутамулака  · n=1  · mahabharata-udyogaparva
+
+### `DautarAgaparipAwalADara` — dhautarāgaparipāṭalādhara  (n=1)
+
+- розовую помаду с губ  · n=1  · raghuvamsha
+
+### `Dauti` — dhauti  (n=1)
+
+- Дхаути  · n=1  · hatha-yoga-pradipika
+
+### `Dautikarma` — dhautikarma  (n=2)
+
+- Дхаути  · n=2  · hatha-yoga-pradipika
+
+### `DautikarmapraBAva` — dhautikarmaprabhāva  (n=1)
+
+- результате практики Дхаути  · n=1  · hatha-yoga-pradipika
+
+### `DavA` — dhavā  (n=1)
+
+- дхава  · n=1  · mahabharata-aranyakaparva
+
+### `DavAmahe` — dhavāmahe  (n=2)
+
+- призываем  · n=1  · rigveda
+- мы призываем  · n=1  · rigveda
+
+### `DavAt` — dhavāt  (n=1)
+
+- дхава  · n=1  · atharvaveda
+
+### `DavImaBiH` — dhavīmabhiḥ  (n=1)
+
+- призывами  · n=1  · rigveda
+
+### `DavIyAn` — dhavīyān  (n=1)
+
+- быстрее  · n=1  · rigveda
+
+### `Dava` — dhava  (n=9)
+
+- дхава  · n=4  · ramayana-balakanda, ramayana-ayodhyakanda, ramayana-aranyakanda
+- Дхава  · n=3  · ramayana-aranyakanda, mahabharata-adiparva, atharvaveda
+- увитые  · n=1  · ramayana-aranyakanda
+- зов  · n=1  · atharvaveda
+
+### `DavaDve` — dhavadhve  (n=1)
+
+- сбегаетесь  · n=1  · rigveda
+
+### `DavalAmbaraH` — dhavalāmbaraḥ  (n=1)
+
+- одетый в белые облака  · n=1  · ramayana-sundarakanda
+
+### `DavalAyatalocana` — dhavalāyatalocana  (n=1)
+
+- девушек с лукавыми взглядами глаз газельих  · n=1  · shatakatrayam
+
+### `Davala` — dhavala  (n=5)
+
+- белый  · n=2  · shatakatrayam, amaru-shataka
+- лукавы  · n=1  · shatakatrayam-serebryakov
+- поблекла  · n=1  · shatakatrayam-serebryakov
+- Дхавала  · n=1  · shukasaptati
+
+### `DavalaH` — dhavalaḥ  (n=1)
+
+- Дхавала  · n=1  · shukasaptati
+
+### `Davalam` — dhavalam  (n=3)
+
+- белую  · n=1  · hatha-yoga-pradipika
+- белой  · n=1  · hatha-yoga-pradipika
+- белым  · n=1  · shatakatrayam-serebryakov
+
+### `Davalita` — dhavalita  (n=2)
+
+- посеребренных  · n=1  · shatakatrayam
+- напоенных  · n=1  · shatakatrayam-serebryakov
+
+### `Davam` — dhavam  (n=3)
+
+- зов  · n=3  · rigveda, rigveda, rigveda
+
+### `Davante` — dhavante  (n=1)
+
+- Сбегают  · n=1  · rigveda
+
+### `Davati` — dhavati  (n=1)
+
+- спешит  · n=1  · br-up
+
+### `DavjatarupramATinaH` — dhavjatarupramāthinaḥ  (n=1)
+
+- ломая деревья  · n=1  · raghuvamsha
+
+### `DavyA` — dhavyā  (n=1)
+
+- жертвенными дарами  · n=1  · rigveda
+
+### `Davya` — dhavya  (n=2)
+
+- должен звать  · n=2  · rigveda
+
+### `DavyavAhanaH` — dhavyavāhanaḥ  (n=1)
+
+- огонь  · n=1  · ramayana-sundarakanda
+
+### `DayantIM` — dhayantīṃ  (n=1)
+
+- пьющей  · n=1  · manavadharmashastra
+
+### `Dayase` — dhayase  (n=1)
+
+- установления  · n=1  · rigveda
+
+### `Dayati` — dhayati  (n=6)
+
+- сосет  · n=3  · rigveda, rigveda
+- Сосет  · n=2  · rigveda
+- пить  · n=1  · gitagovinda
+
+### `DeTe` — dhethe  (n=1)
+
+- устроятся  · n=1  · rigveda
+
+### `Dehi` — dhehi  (n=102)
+
+- дай  · n=13  · rigveda, rigveda, rigveda, rigveda, rigveda, br-up, rigveda, atharvaveda
+- надели  · n=11  · rigveda, rigveda, rigveda, rigveda, atharvaveda, atharvaveda, atharvaveda
+- Помести  · n=11  · atharvaveda, rigveda, atharvaveda
+- помести  · n=10  · atharvaveda, rigveda, rigveda, rigveda, atharvaveda, atharvaveda
+- Дай  · n=7  · rigveda, rigveda, rigveda, atharvaveda, atharvaveda, atharvaveda, atharvaveda
+- вложи  · n=7  · rigveda, rigveda, atharvaveda, atharvaveda, atharvaveda, atharvaveda, atharvaveda
+- Надели  · n=6  · rigveda, rigveda, rigveda, atharvaveda, atharvaveda
+- даруй  · n=4  · atharvaveda, atharvaveda
+- Даруй  · n=3  · atharvaveda, rigveda
+- Вложи  · n=3  · rigveda, atharvaveda, atharvaveda
+- доставь  · n=3  · mai-up, kau-up
+- держи  · n=2  · rigveda
+- принеси  · n=2  · rigveda, rigveda
+- награждай  · n=2  · atharvaveda
+- положи  · n=2  · atharvaveda
+- распредели  · n=2  · atharvaveda
+- Воздвигни  · n=1  · rigveda
+- посвяти  · n=1  · rigveda
+- наделяй  · n=1  · rigveda
+- Сделай  · n=1  · rigveda
+- Придай  · n=1  · rigveda
+- подари  · n=1  · atharvaveda
+- Доставь  · n=1  · atharvaveda
+- сложи  · n=1  · atharvaveda
+- Выдай  · n=1  · rigveda
+- Отпусти  · n=1  · atharvaveda
+- Награди  · n=1  · atharvaveda
+- обложи  · n=1  · atharvaveda
+- Направь  · n=1  · atharvaveda
+- Даруйте  · n=1  · atharvaveda
+
+### `DenA` — dhenā  (n=18)
+
+- потоки  · n=4  · rigveda, rigveda
+- Голос  · n=2  · rigveda
+- челюсти  · n=2  · rigveda
+- женские груди  · n=2  · rigveda
+- молочные струи  · n=2  · rigveda
+- поток  · n=1  · rigveda
+- потокам  · n=1  · rigveda
+- К потокам  · n=1  · rigveda
+- поток речи  · n=1  · rigveda
+- потоки речи  · n=1  · rigveda
+- потоки (речи)  · n=1  · rigveda
+
+### `DenABir` — dhenābhir  (n=1)
+
+- потоками речи  · n=1  · rigveda
+
+### `DenAH` — dhenāḥ  (n=5)
+
+- потоки  · n=2  · rigveda
+- звуки  · n=2  · rigveda
+- потоки (речи)  · n=1  · rigveda
+
+### `DenU` — dhenū  (n=10)
+
+- две дойные коровы  · n=4  · rigveda, rigveda, atharvaveda
+- коровами  · n=2  · rigveda
+- корова  · n=1  · ramayana-ayodhyakanda
+- Две дойные коровы  · n=1  · rigveda
+- Дойная корова  · n=1  · rigveda
+- дойные коровы  · n=1  · rigveda
+
+### `DenUH` — dhenūḥ  (n=4)
+
+- дойных коров  · n=2  · rigveda
+- коров  · n=1  · rigveda
+- коровы  · n=1  · mahabharata-shalyaparva
+
+### `DenUnAM` — dhenūnāṃ  (n=1)
+
+- Дойных коров  · n=1  · rigveda
+
+### `DenUnAm` — dhenūnām  (n=9)
+
+- коров  · n=2  · rigveda, ramanuja_gitabhashya
+- среди коров  · n=2  · bhagavadgita-sharma, bhagavadgita-prabhupada
+- от дойных коров  · n=1  · rigveda
+- между скотомъ  · n=1  · bhagavadgita-1788
+- средь коров  · n=1  · bhagavadgita-sementsov
+- из коров  · n=1  · bhagavadgita-radha
+- дойным коровам  · n=1  · atharvaveda
+
+### `Denava` — dhenava  (n=10)
+
+- дойные коровы  · n=6  · rigveda, rigveda, rigveda, rigveda
+- коров  · n=1  · mahabharata-adiparva
+- дойные  · n=1  · rigveda
+- дойных коров  · n=1  · rigveda
+- коровы  · n=1  · rigveda
+
+### `DenavaH` — dhenavaḥ  (n=38)
+
+- дойные коровы  · n=25  · rigveda, rigveda, rigveda, rigveda, rigveda, rigveda, rigveda, rigveda, rigveda
+- дойные  · n=5  · rigveda, rigveda, rigveda
+- коров  · n=3  · mahabharata-adiparva, ramayana-ayodhyakanda, mahabharata-aranyakaparva
+- коровы  · n=3  · rigveda, rigveda, rigveda
+- стадо  · n=1  · mahabharata-aranyakaparva
+- дойных коров  · n=1  · atharvaveda
+
+### `Denavas` — dhenavas  (n=2)
+
+- Коровье  · n=1  · rigveda
+- коровы  · n=1  · rigveda
+
+### `Denavo` — dhenavo  (n=7)
+
+- коровы  · n=4  · rigveda, rigveda
+- дойные коровы  · n=2  · rigveda, rigveda
+- Дойные коровы  · n=1  · rigveda
+
+### `DenoH` — dhenoḥ  (n=2)
+
+- дойной коровы  · n=2  · rigveda, rigveda
+
+### `Denor` — dhenor  (n=3)
+
+- коровы  · n=2  · rigveda
+- коровой  · n=1  · raghuvamsha
+
+### `Denos` — dhenos  (n=2)
+
+- дойной коровы  · n=2  · rigveda
+
+### `Denu` — dhenu  (n=106)
+
+- корова  · n=17  · rigveda, rigveda, manavadharmashastra, mahabharata-bhishmaparva, bhagavadgita-burba, bhagavadgita-1914, rigveda, mahabharata-shalyaparva, rigveda, raghuvamsha, atharvaveda, atharvaveda
+- дойная корова  · n=16  · atharvaveda, rigveda, rigveda, devi-gita, atharvaveda, rigveda, atharvaveda, atharvaveda, atharvaveda
+- коровы  · n=15  · rigveda, ramayana-ayodhyakanda, rigveda, mahabharata-udyogaparva, rigveda, rigveda, rigveda, atharvaveda, atharvaveda, atharvaveda
+- дойные коровы  · n=9  · rigveda, rigveda, rigveda, rigveda, atharvaveda
+- дойную корову  · n=9  · rigveda, rigveda, rigveda, atharvaveda, atharvaveda, atharvaveda
+- корову  · n=8  · rigveda, manavadharmashastra, mahabharata-aranyakaparva, rigveda, raghuvamsha, atharvaveda
+- коров  · n=8  · mahabharata-shalyaparva, mahabharata-bhishmaparva, rigveda, gitarthasamgraha-abhinavagupta, bhagavadgity, bhagavadgita-erman, bhagavadgita-smirnov
+- дойной коровой  · n=4  · atharvaveda, atharvaveda, atharvaveda
+- дойной коровы  · n=3  · rigveda, rigveda
+- корове  · n=3  · rigveda, rigveda
+- коровами  · n=3  · atharvaveda, rigveda
+- дойными коровами  · n=2  · rigveda, rigveda
+- дойные  · n=2  · rigveda, rigveda
+- молочная корова  · n=2  · br-up
+- коровой  · n=2  · rigveda, atharvaveda
+- дойных коров  · n=1  · rigveda
+- коровьим молоком  · n=1  · rigveda
+- скота  · n=1  · bhagavadgita-1909
+
+### `DenuBI` — dhenubhī  (n=2)
+
+- дойными коровами  · n=2  · rigveda
+
+### `DenuByas` — dhenubhyas  (n=1)
+
+- дойным коровам  · n=1  · atharvaveda
+
+### `DenuH` — dhenuḥ  (n=20)
+
+- корова  · n=11  · raghuvamsha, mahabharata-shantiparva, ramayana-ayodhyakanda, rigveda, ramayana-sundarakanda, rigveda
+- дойная корова  · n=8  · rigveda, rigveda, rigveda, rigveda, atharvaveda, atharvaveda
+- Корова  · n=1  · rigveda
+
+### `DenuM` — dhenuṃ  (n=5)
+
+- дойную корову  · n=2  · rigveda, rigveda
+- Дойную корову  · n=1  · rigveda
+- корова  · n=1  · rigveda
+- корове  · n=1  · raghuvamsha
+
+### `DenukA` — dhenukā  (n=4)
+
+- Дхенуке  · n=1  · mahabharata-aranyakaparva
+- Дхенука  · n=1  · mahabharata-aranyakaparva
+- буренушку  · n=1  · mahabharata-dronaparva
+- дойной коровой  · n=1  · atharvaveda
+
+### `DenukAH` — dhenukāḥ  (n=1)
+
+- коров  · n=1  · ramayana-ayodhyakanda
+
+### `Denuka` — dhenuka  (n=4)
+
+- коровье  · n=2  · kama-sutra
+- Дхенука  · n=2  · mahabharata-udyogaparva
+
+### `Denum` — dhenum  (n=25)
+
+- дойную корову  · n=11  · rigveda, rigveda, rigveda, rigveda, rigveda, atharvaveda, atharvaveda
+- корову  · n=10  · rigveda, rigveda, atharvaveda, rigveda, rigveda, raghuvamsha
+- Дойную корову  · n=2  · rigveda
+- Корову  · n=2  · rigveda
+
+### `Denumant` — dhenumant  (n=2)
+
+- связанного с коровами  · n=2  · rigveda
+
+### `Denumat` — dhenumat  (n=1)
+
+- богаты дойными коровами  · n=1  · rigveda
+
+### `DenumatI` — dhenumatī  (n=1)
+
+- Богатая дойными коровами  · n=1  · rigveda
+
+### `Denur` — dhenur  (n=2)
+
+- дойная корова  · n=2  · rigveda, rigveda
+
+### `DenvA` — dhenvā  (n=2)
+
+- корова  · n=2  · raghuvamsha
+
+### `DenávaH` — dhenávaḥ  (n=2)
+
+- дойные коровы  · n=2  · rigveda
+
+### `Detana` — dhetana  (n=1)
+
+- переложите  · n=1  · rigveda
+
+### `DeyAm` — dheyām  (n=3)
+
+- хочу положить  · n=2  · rigveda
+- хочу вложить  · n=1  · rigveda
+
+### `Deya` — dheya  (n=2)
+
+- данное  · n=2  · jabala-up
+
+### `Deyur` — dheyur  (n=1)
+
+- пусть доставят  · n=1  · rigveda
+
+### `DezWA` — dheṣṭhā  (n=1)
+
+- дают  · n=1  · rigveda
+
+### `DezWa` — dheṣṭha  (n=1)
+
+- наделяют  · n=1  · rigveda
+
+### `Df` — dhṛ  (n=17)
+
+- поддержал  · n=3  · rigveda, atharvaveda, atharvaveda
+- держись  · n=2  · atharvaveda
+- Наложенное  · n=1  · manavadharmashastra
+- получить  · n=1  · manavadharmashastra
+- буду  · n=1  · ramayana-balakanda
+- удержать  · n=1  · ramayana-balakanda
+- основал  · n=1  · rigveda
+- вынашивал  · n=1  · rigveda
+- буду придерживаться  · n=1  · atharvaveda
+- поддерживаемая  · n=1  · shatakatrayam-serebryakov
+- захватили  · n=1  · shukasaptati
+- настигают  · n=1  · shukasaptati
+- придержала  · n=1  · shukasaptati
+- возглавлявшиеся Дхриштадьюмной  · n=1  · mahabharata-striparva
+
+### `DfQa` — dhṛḍha  (n=3)
+
+- крепким  · n=1  · ramayana-aranyakanda
+- твердое  · n=1  · ramayana-aranyakanda
+- твердый  · n=1  · ramayana-aranyakanda
+
+### `DfQavikrama` — dhṛḍhavikrama  (n=1)
+
+- решительные  · n=1  · ramayana-balakanda
+
+### `Dfdi` — dhṛdi  (n=1)
+
+- на сердце  · n=1  · atharvaveda
+
+### `Dfita` — dhṛita  (n=1)
+
+- Преданный  · n=1  · ramayana-aranyakanda
+
+### `Dfk` — dhṛk  (n=3)
+
+- держащий  · n=1  · ramayana-aranyakanda
+- носящий  · n=1  · ramayana-aranyakanda
+- носивший  · n=1  · ramayana-aranyakanda
+
+### `DftA` — dhṛtā  (n=7)
+
+- удерживал  · n=1  · ramayana-sundarakanda
+- отпустил себе  · n=1  · mahabharata-udyogaparva
+- поддерживается  · n=1  · mahabharata-sabhaparva
+- поддержана  · n=1  · atharvaveda
+- поддержанной  · n=1  · atharvaveda
+- схваченная  · n=1  · shukasaptati
+- присосал  · n=1  · shukasaptati
+
+### `DftAH` — dhṛtāḥ  (n=1)
+
+- полны решимости  · n=1  · mahabharata-udyogaparva
+
+### `DftAm` — dhṛtām  (n=2)
+
+- нес  · n=1  · raghuvamsha
+- поддержанной  · n=1  · atharvaveda
+
+### `DftAni` — dhṛtāni  (n=1)
+
+- содержащий  · n=1  · vedanga_jyotisha
+
+### `DftAsi` — dhṛtāsi  (n=1)
+
+- была пригрета  · n=1  · ramayana-ayodhyakanda
+
+### `DftAtapatro` — dhṛtātapatro  (n=1)
+
+- держал зонт  · n=1  · raghuvamsha
+
+### `DftAtapattra` — dhṛtātapattra  (n=1)
+
+- держащего зонт владыки  · n=1  · buddhacharita
+
+### `DftAtmA` — dhṛtātmā  (n=1)
+
+- задумав  · n=1  · mahabharata-aranyakaparva
+
+### `DftAtman` — dhṛtātman  (n=7)
+
+- стойких духом  · n=1  · mahabharata-aranyakaparva
+- смирив свою душу  · n=1  · mahabharata-aranyakaparva
+- твердо решившего  · n=1  · mahabharata-adiparva
+- обуздавших страсти  · n=1  · mahabharata-adiparva
+- сдерживаемый  · n=1  · mahabharata-udyogaparva
+- обузданной  · n=1  · mahabharata-shalyaparva
+- стойких  · n=1  · mahabharata-virataparva
+
+### `DftAtmanAm` — dhṛtātmanām  (n=1)
+
+- смиренных душою  · n=1  · mahabharata-virataparva
+
+### `DftAtmanaH` — dhṛtātmanaḥ  (n=1)
+
+- будет жить  · n=1  · ramayana-ayodhyakanda
+
+### `Dfta` — dhṛta  (n=57)
+
+- наделенный  · n=11  · gitagovinda
+- получил  · n=2  · ramayana-ayodhyakanda, mahabharata-udyogaparva
+- носила  · n=2  · ramayana-sundarakanda, mahabharata-udyogaparva
+- равный  · n=2  · mahabharata-aranyakaparva
+- наличным  · n=2  · sankhya-karika
+- Привержен  · n=1  · ramayana-ayodhyakanda
+- Твердых  · n=1  · ramayana-ayodhyakanda
+- жили  · n=1  · ramayana-ayodhyakanda
+- Твердо  · n=1  · ramayana-ayodhyakanda
+- носимы  · n=1  · manavadharmashastra
+- вооружились  · n=1  · ramayana-aranyakanda
+- Вооруженный  · n=1  · ramayana-aranyakanda
+- утверждено  · n=1  · mahabharata-aranyakaparva
+- потеряно  · n=1  · mahabharata-aranyakaparva
+- взвешенное  · n=1  · mahabharata-aranyakaparva
+- верные  · n=1  · mahabharata-aranyakaparva
+- поддерживаемая  · n=1  · mahabharata-adiparva
+- взял  · n=1  · mahabharata-adiparva
+- держала  · n=1  · mahabharata-adiparva
+- взят  · n=1  · buddhacharita
+- держится  · n=1  · mahabharata-udyogaparva
+- держащий  · n=1  · mahabharata-udyogaparva
+- внимательно  · n=1  · mahabharata-udyogaparva
+- готовый  · n=1  · mahabharata-udyogaparva
+- твердо уверенный  · n=1  · mahabharata-udyogaparva
+- поддерживали  · n=1  · mahabharata-udyogaparva
+- Одетая  · n=1  · kumarasambhava
+- поддерживал  · n=1  · mahabharata-shalyaparva
+- пребывающих  · n=1  · mahabharata-sabhaparva
+- мечась  · n=1  · raghuvamsha
+- держат  · n=1  · shatakatrayam
+- считался принадлежащим  · n=1  · atharvaveda
+- носящий  · n=1  · gitagovinda
+- масла  · n=1  · shukasaptati
+- задержала  · n=1  · shukasaptati
+- остался  · n=1  · shukasaptati
+- схватил  · n=1  · shukasaptati
+- пойман  · n=1  · shukasaptati
+- хранили  · n=1  · amaru-shataka
+- держал  · n=1  · amaru-shataka
+- владеешь  · n=1  · mahabharata-sauptikaparva
+- радея  · n=1  · mahabharata-sauptikaparva
+- решившись  · n=1  · mahabharata-shalyaparva
+
+### `Dfta-mandara` — dhṛta-mandara  (n=1)
+
+- поддерживающий Мандару  · n=1  · gitagovinda
+
+### `Dfta-vrata` — dhṛta-vrata  (n=1)
+
+- твердый в обетах  · n=1  · ramayana-ayodhyakanda
+
+### `DftaBUmiBAgaH` — dhṛtabhūmibhāgaḥ  (n=2)
+
+- держал землю  · n=1  · kumarasambhava
+- держащий землю  · n=1  · kumarasambhava
+
+### `DftaDarmapuRyayA` — dhṛtadharmapuṇyayā  (n=1)
+
+- прославилась верностью дхарме  · n=1  · mahabharata-aranyakaparva
+
+### `DftaH` — dhṛtaḥ  (n=5)
+
+- готовый  · n=1  · mahabharata-bhishmaparva
+- носила  · n=1  · buddhacharita
+- стоит  · n=1  · mahabharata-udyogaparva
+- задержал  · n=1  · shukasaptati
+- схвачен  · n=1  · shukasaptati
+
+### `DftabAlendumaulin` — dhṛtabālendumaulin  (n=1)
+
+- несущем венец – ранний месяц  · n=1  · yotat-up
+
+### `DftadaRqa` — dhṛtadaṇḍa  (n=1)
+
+- налагает наказания  · n=1  · mahabharata-udyogaparva
+
+### `Dftadakza` — dhṛtadakṣa  (n=2)
+
+- с твердой силой действия  · n=1  · rigveda
+- действующие твердо  · n=1  · rigveda
+
+### `Dftam` — dhṛtam  (n=2)
+
+- держится  · n=1  · mahabharata-aranyakaparva
+- хранили  · n=1  · buddhacharita
+
+### `DftamanAH` — dhṛtamanāḥ  (n=1)
+
+- склонился душою  · n=1  · mahabharata-svargarohanikaparva
+
+### `Dftamanas` — dhṛtamanas  (n=3)
+
+- приняв решение  · n=1  · mahabharata-adiparva
+- сосредоточенные  · n=1  · mahabharata-adiparva
+- твердое решение  · n=1  · mahabharata-sabhaparva
+
+### `DftaniScayAm` — dhṛtaniścayām  (n=1)
+
+- твердо решилась  · n=1  · mahabharata-udyogaparva
+
+### `DftaniScaya` — dhṛtaniścaya  (n=2)
+
+- твердый в обетов  · n=1  · mahabharata-aranyakaparva
+- упорных  · n=1  · mahabharata-aranyakaparva
+
+### `Dftapraja` — dhṛtapraja  (n=1)
+
+- Опора подданных своих  · n=1  · raghuvamsha
+
+### `DftarAzwrAByanujYAtAH` — dhṛtarāṣṭrābhyanujñātāḥ  (n=1)
+
+- С дозволения Дхритараштры  · n=1  · mahabharata-adiparva
+
+### `DftarAzwrAByanujYAta` — dhṛtarāṣṭrābhyanujñāta  (n=1)
+
+- следуя воле Дхритараштры  · n=1  · mahabharata-ashramavasikaparva
+
+### `DftarAzwrAByanujYAtaH` — dhṛtarāṣṭrābhyanujñātaḥ  (n=2)
+
+- С дозволения Дхритараштры  · n=1  · mahabharata-adiparva
+- соизволения Дхритараштры  · n=1  · mahabharata-ashramavasikaparva
+
+### `DftarAzwrAByanujYayA` — dhṛtarāṣṭrābhyanujñayā  (n=1)
+
+- получив от Дхритараштры напутствие  · n=1  · mahabharata-ashramavasikaparva
+
+### `DftarAzwrASramapada` — dhṛtarāṣṭrāśramapada  (n=1)
+
+- в обитель Дхритараштры  · n=1  · mahabharata-adiparva
+
+### `DftarAzwrAtmaja` — dhṛtarāṣṭrātmaja  (n=5)
+
+- сыновья Дхритараштры  · n=2  · mahabharata-adiparva, mahabharata-svargarohanikaparva
+- сын Дхритараштры  · n=2  · mahabharata-udyogaparva
+- сына Дхритараштры  · n=1  · mahabharata-virataparva
+
+### `DftarAzwrAtmajaH` — dhṛtarāṣṭrātmajaḥ  (n=1)
+
+- сын Дхритараштры  · n=1  · mahabharata-aranyakaparva
+
+### `DftarAzwrAtmajaM` — dhṛtarāṣṭrātmajaṃ  (n=1)
+
+- сына Дхритараштры  · n=1  · mahabharata-shalyaparva
+
+### `DftarAzwrAya` — dhṛtarāṣṭrāya  (n=5)
+
+- Дхритараштре  · n=3  · mahabharata-udyogaparva, ramanuja_gitabhashya
+- за Дхритараштру  · n=1  · mahabharata-adiparva
+- за Дхритараштрой  · n=1  · mahabharata-sabhaparva
+
+### `DftarAzwrI` — dhṛtarāṣṭrī  (n=2)
+
+- Дхритараштри  · n=2  · ramayana-aranyakanda, mahabharata-adiparva
+
+### `DftarAzwrIm` — dhṛtarāṣṭrīm  (n=1)
+
+- Дхритараштри  · n=1  · ramayana-aranyakanda
+
+### `DftarAzwra` — dhṛtarāṣṭra  (n=369)
+
+- Дхритараштра  · n=205  · mahabharata-udyogaparva, mahabharata-ashramavasikaparva, mahabharata-adiparva, mahabharata-aranyakaparva, mahabharata-shalyaparva, mahabharata-sabhaparva, mahabharata-striparva, mahabharata-ashvamedhikaparva, mahabharata-dronaparva, mahabharata-karnaparva, mahabharata-shantiparva, mahabharata-virataparva, mahabharata-svargarohanikaparva, mahabharata-bhishmaparva, bhagavadgita-burba, bhagavadgita-1914, bhagavadgita-sharma, atharvaveda, shukasaptati, ramanuja_gitabhashya, bhagavadgity, bhagavadgita-radha, mahabharata-sauptikaparva, mahabharata-mausalaparva
+- Дхритараштры  · n=79  · mahabharata-adiparva, mahabharata-udyogaparva, mahabharata-sabhaparva, mahabharata-ashramavasikaparva, mahabharata-shalyaparva, mahabharata-ashvamedhikaparva, mahabharata-striparva, mahabharata-aranyakaparva, mahabharata-bhishmaparva, bhagavadgita-prabhupada, mahabharata-dronaparva, gitarthasamgraha-abhinavagupta, bhagavadgita-erman, bhagavadgita-smirnov, bhagavadgita-sementsov, bhagavadgita-radha, mahabharata-karnaparva, mahabharata-svargarohanikaparva
+- Дхритараштре  · n=34  · mahabharata-udyogaparva, mahabharata-sabhaparva, mahabharata-ashramavasikaparva, mahabharata-adiparva, mahabharata-bhishmaparva, mahabharata-shalyaparva, mahabharata-aranyakaparva, bhagavadgita-burba, mahabharata-karnaparva
+- Дхритараштру  · n=24  · mahabharata-udyogaparva, mahabharata-adiparva, mahabharata-ashramavasikaparva, mahabharata-shalyaparva, mahabharata-sabhaparva, mahabharata-bhishmaparva, mahabharata-karnaparva, mahabharata-striparva
+- Дхритараштрой  · n=15  · mahabharata-ashvamedhikaparva, mahabharata-ashramavasikaparva, mahabharata-adiparva, mahabharata-sabhaparva, mahabharata-dronaparva, mahabharata-udyogaparva, mahabharata-striparva
+- Дритараштра  · n=3  · bhagavadgita-1909, bhagavadgita-1788
+- Дритараштры  · n=2  · bhagavadgity, bhagavadgita-1788
+- к Дхритараштре  · n=2  · mahabharata-sabhaparva, mahabharata-ashramavasikaparva
+- Старый Полководецъ  · n=1  · bhagavadgita-1788
+- царь Дхритараштра  · n=1  · bhagavadgita-prabhupada
+- царя Дхритараштру  · n=1  · mahabharata-shalyaparva
+- о Дхритараштре  · n=1  · mahabharata-sabhaparva
+- Дхритаращтра  · n=1  · mahabharata-ashramavasikaparva
+
+### `DftarAzwraH` — dhṛtarāṣṭraḥ  (n=41)
+
+- Дхритараштра  · n=39  · mahabharata-udyogaparva, mahabharata-adiparva, mahabharata-aranyakaparva, mahabharata-ashramavasikaparva, mahabharata-bhishmaparva, mahabharata-karnaparva, mahabharata-shalyaparva, mahabharata-sabhaparva, mahabharata-ashvamedhikaparva, mahabharata-striparva
+- Дхритараштре  · n=1  · mahabharata-aranyakaparva
+- царь Дхритараштра  · n=1  · mahabharata-dronaparva
+
+### `DftarAzwraM` — dhṛtarāṣṭraṃ  (n=8)
+
+- Дхритараштре  · n=4  · mahabharata-udyogaparva, mahabharata-sabhaparva
+- Дхритараштру  · n=2  · mahabharata-ashvamedhikaparva, mahabharata-sabhaparva
+- Дхритараштрой  · n=1  · mahabharata-sabhaparva
+- Дхритараштра  · n=1  · mahabharata-ashramavasikaparva
+
+### `DftarAzwraS` — dhṛtarāṣṭraś  (n=1)
+
+- Дхритараштра  · n=1  · mahabharata-sabhaparva
+
+### `DftarAzwradayAmbuDi` — dhṛtarāṣṭradayāmbudhi  (n=1)
+
+- океаном дарений Дхритараштры  · n=1  · mahabharata-ashramavasikaparva
+
+### `DftarAzwragfha` — dhṛtarāṣṭragṛha  (n=1)
+
+- дворец Дхритараштры  · n=1  · mahabharata-sabhaparva
+
+### `DftarAzwrahitaiH` — dhṛtarāṣṭrahitaiḥ  (n=1)
+
+- друзья Дхритараштры  · n=1  · mahabharata-adiparva
+
+### `DftarAzwrajA` — dhṛtarāṣṭrajā  (n=1)
+
+- дочь Дхритараштры  · n=1  · mahabharata-ashvamedhikaparva
+
+### `DftarAzwrajAn` — dhṛtarāṣṭrajān  (n=3)
+
+- сыновей Дхритараштры  · n=2  · mahabharata-aranyakaparva
+- сыновья Дхритараштры  · n=1  · mahabharata-adiparva
+
+### `DftarAzwraja` — dhṛtarāṣṭraja  (n=16)
+
+- сын Дхритараштры  · n=11  · mahabharata-udyogaparva, mahabharata-ashvamedhikaparva, mahabharata-adiparva, mahabharata-sabhaparva, mahabharata-virataparva
+- Сын Дхритараштры  · n=1  · mahabharata-adiparva
+- Дурьйодхана  · n=1  · mahabharata-udyogaparva
+- Дхритараштра  · n=1  · mahabharata-udyogaparva
+- отпрыск Дхритараштры  · n=1  · mahabharata-udyogaparva
+- сына Дхритараштры  · n=1  · mahabharata-virataparva
+
+### `DftarAzwrajaH` — dhṛtarāṣṭrajaḥ  (n=3)
+
+- сын Дхритараштры  · n=3  · mahabharata-udyogaparva, mahabharata-shalyaparva, mahabharata-sabhaparva
+
+### `DftarAzwrajaiH` — dhṛtarāṣṭrajaiḥ  (n=2)
+
+- сыновьях Дхритараштры  · n=1  · mahabharata-aranyakaparva
+- сыновей Дхритараштры  · n=1  · mahabharata-sabhaparva
+
+### `DftarAzwrajam` — dhṛtarāṣṭrajam  (n=2)
+
+- сына Дхритараштры  · n=2  · mahabharata-aranyakaparva, mahabharata-sabhaparva
+
+### `DftarAzwraje` — dhṛtarāṣṭraje  (n=1)
+
+- сын Дхритараштры  · n=1  · mahabharata-dronaparva
+
+### `DftarAzwrajena` — dhṛtarāṣṭrajena  (n=2)
+
+- сын Дхритараштры  · n=1  · mahabharata-sabhaparva
+- Дхритараштры  · n=1  · mahabharata-sabhaparva
+
+### `DftarAzwrakula` — dhṛtarāṣṭrakula  (n=1)
+
+- рода Дхритараштры  · n=1  · mahabharata-udyogaparva
+
+### `DftarAzwram` — dhṛtarāṣṭram  (n=19)
+
+- Дхритараштру  · n=6  · mahabharata-adiparva, mahabharata-ashvamedhikaparva, mahabharata-udyogaparva, mahabharata-ashramavasikaparva
+- Дхритараштре  · n=6  · mahabharata-adiparva, mahabharata-udyogaparva, mahabharata-ashvamedhikaparva, mahabharata-ashramavasikaparva
+- к Дхритараштре  · n=2  · mahabharata-aranyakaparva, mahabharata-sabhaparva
+- перед Дхритараштрой  · n=1  · mahabharata-aranyakaparva
+- Дхритараштра  · n=1  · mahabharata-adiparva
+- царю Дхритараштре  · n=1  · mahabharata-udyogaparva
+- Дхритараштры  · n=1  · mahabharata-ashramavasikaparva
+- к царю Дхритараштре  · n=1  · mahabharata-ashramavasikaparva
+
+### `DftarAzwramuKa` — dhṛtarāṣṭramukha  (n=2)
+
+- во главе с Дхритараштрой  · n=2  · mahabharata-udyogaparva, mahabharata-karnaparva
+
+### `DftarAzwramupAgamat` — dhṛtarāṣṭramupāgamat  (n=1)
+
+- пришел к Дхритараштре  · n=1  · mahabharata-adiparva
+
+### `DftarAzwramupAsInaM` — dhṛtarāṣṭramupāsīnaṃ  (n=1)
+
+- сидевшего подле Дхритараштры  · n=1  · mahabharata-ashvamedhikaparva
+
+### `DftarAzwraniveSana` — dhṛtarāṣṭraniveśana  (n=2)
+
+- чертоги Дхритараштры  · n=1  · mahabharata-udyogaparva
+- покои Дхритараштры  · n=1  · mahabharata-shalyaparva
+
+### `DftarAzwraniveSanam` — dhṛtarāṣṭraniveśanam  (n=1)
+
+- во дворец Дхритараштры  · n=1  · mahabharata-sabhaparva
+
+### `DftarAzwrapravAsajam` — dhṛtarāṣṭrapravāsajam  (n=1)
+
+- от разлуки с Дхритараштрой  · n=1  · mahabharata-ashramavasikaparva
+
+### `DftarAzwraputrAH` — dhṛtarāṣṭraputrāḥ  (n=3)
+
+- сыны Дхритараштры  · n=2  · mahabharata-udyogaparva
+- сыновья Дхритараштры  · n=1  · mahabharata-udyogaparva
+
+### `DftarAzwraputra` — dhṛtarāṣṭraputra  (n=4)
+
+- сынов Дхритараштры  · n=1  · mahabharata-bhishmaparva
+- сыновья Дхритараштры  · n=1  · mahabharata-udyogaparva
+- сын Дхритараштры  · n=1  · mahabharata-udyogaparva
+- сыну Дхритараштры  · n=1  · mahabharata-udyogaparva
+
+### `DftarAzwrasUnu` — dhṛtarāṣṭrasūnu  (n=1)
+
+- сына Дхритараштры  · n=1  · mahabharata-karnaparva
+
+### `DftarAzwrastu` — dhṛtarāṣṭrastu  (n=1)
+
+- Дхритараштра  · n=1  · mahabharata-sabhaparva
+
+### `DftarAzwrasutAH` — dhṛtarāṣṭrasutāḥ  (n=1)
+
+- сыновья Дхритараштры  · n=1  · mahabharata-shalyaparva
+
+### `DftarAzwrasutAn` — dhṛtarāṣṭrasutān  (n=1)
+
+- сыновей Дхритараштры  · n=1  · mahabharata-aranyakaparva
+
+### `DftarAzwrasuta` — dhṛtarāṣṭrasuta  (n=6)
+
+- сын Дхритараштры  · n=4  · mahabharata-karnaparva, mahabharata-adiparva, mahabharata-udyogaparva
+- сыновьями Дхритараштры  · n=1  · mahabharata-shalyaparva
+- сыновья Дхритараштры  · n=1  · mahabharata-ashramavasikaparva
+
+### `DftarAzwrasutaScApi` — dhṛtarāṣṭrasutaścāpi  (n=1)
+
+- и сын Дхритараштры  · n=1  · mahabharata-udyogaparva
+
+### `DftarAzwrasya` — dhṛtarāṣṭrasya  (n=31)
+
+- Дхритараштры  · n=22  · mahabharata-udyogaparva, mahabharata-adiparva, mahabharata-aranyakaparva, mahabharata-shalyaparva, mahabharata-dronaparva, bhagavadgita-burba, bhagavadgita-1914, mahabharata-ashvamedhikaparva, mahabharata-ashramavasikaparva
+- Дхритараштре  · n=6  · mahabharata-aranyakaparva, mahabharata-adiparva, mahabharata-udyogaparva, mahabharata-ashramavasikaparva
+- у Дхритараштры  · n=1  · mahabharata-adiparva
+- Дхритараштру  · n=1  · mahabharata-adiparva
+- Дхритараштра  · n=1  · mahabharata-dronaparva
+
+### `DftarAzwrasyaputrAH` — dhṛtarāṣṭrasya putrāḥ  (n=3)
+
+- сыновья Дхритараштры  · n=2  · ramanuja_gitabhashya, bhagavadgita-1909
+- сыны Дхритараштры  · n=1  · bhagavadgita-sharma
+
+### `DftarAzwrasyaputraH` — dhṛtarāṣṭrasya putraḥ  (n=3)
+
+- сын Дхритараштры  · n=3  · mahabharata-sabhaparva, mahabharata-virataparva
+
+### `DftarAzwrasyaveSma` — dhṛtarāṣṭrasya veśma  (n=1)
+
+- во дворец Дхритараштры  · n=1  · mahabharata-sabhaparva
+
+### `DftarAzwre` — dhṛtarāṣṭre  (n=2)
+
+- Дхритараштре  · n=1  · mahabharata-aranyakaparva
+- Дхритараштра  · n=1  · mahabharata-ashramavasikaparva
+
+### `DftarAzwreRa` — dhṛtarāṣṭreṇa  (n=8)
+
+- Дхритараштрой  · n=6  · mahabharata-udyogaparva, mahabharata-aranyakaparva, mahabharata-bhishmaparva, mahabharata-shalyaparva
+- Дхритараштры  · n=1  · mahabharata-aranyakaparva
+- с Дхритараштрой  · n=1  · mahabharata-ashvamedhikaparva
+
+### `DftarAzwro` — dhṛtarāṣṭro  (n=1)
+
+- Дхритараштра  · n=1  · mahabharata-adiparva
+
+### `DftarAzwro'tyayaM` — dhṛtarāṣṭro'tyayaṃ  (n=1)
+
+- Дхритараштра  · n=1  · mahabharata-dronaparva
+
+### `DftasaNkalpAH` — dhṛtasaṅkalpāḥ  (n=2)
+
+- обратили мысли  · n=1  · mahabharata-udyogaparva
+- твердо решившие  · n=1  · mahabharata-shalyaparva
+
+### `Dftasena` — dhṛtasena  (n=2)
+
+- Дхритасена  · n=2  · mahabharata-shalyaparva
+
+### `DftavAn` — dhṛtavān  (n=3)
+
+- сдержал  · n=1  · mahabharata-adiparva
+- сдерживал  · n=1  · mahabharata-adiparva
+- поддерживал  · n=1  · gitagovinda
+
+### `DftavAnasi` — dhṛtavānasi  (n=1)
+
+- ты поддерживал  · n=1  · gitagovinda
+
+### `DftavarmA` — dhṛtavarmā  (n=2)
+
+- Дхритаварман  · n=2  · mahabharata-ashvamedhikaparva
+
+### `DftavarmARam` — dhṛtavarmāṇam  (n=1)
+
+- Дхритаварману  · n=1  · mahabharata-ashvamedhikaparva
+
+### `DftavarmaRaH` — dhṛtavarmaṇaḥ  (n=2)
+
+- Дхритавармана  · n=2  · mahabharata-ashvamedhikaparva
+
+### `DftavatI` — dhṛtavatī  (n=1)
+
+- выносила  · n=1  · mahabharata-shalyaparva
+
+### `DftavratA` — dhṛtavratā  (n=5)
+
+- чей завет прочен  · n=1  · rigveda
+- чей завет крепок  · n=1  · rigveda
+- исполняла строгий обет  · n=1  · mahabharata-shalyaparva
+- принявшая суровый обет  · n=1  · mahabharata-shalyaparva
+- поддерживающие обеты  · n=1  · rigveda
+
+### `DftavratAH` — dhṛtavratāḥ  (n=1)
+
+- владыки, чей обет крепок  · n=1  · rigveda
+
+### `DftavratAya` — dhṛtavratāya  (n=2)
+
+- чьи обеты крепки  · n=1  · rigveda
+- чей завет крепок  · n=1  · rigveda
+
+### `Dftavrata` — dhṛtavrata  (n=23)
+
+- твердый в обетах  · n=4  · mahabharata-adiparva
+- Твердый в обетах  · n=2  · ramayana-ayodhyakanda, ramayana-sundarakanda
+- чей завет крепок  · n=2  · rigveda, rigveda
+- чьей завет крепок  · n=2  · rigveda, atharvaveda
+- твердый в обете  · n=2  · mahabharata-adiparva
+- верные обетам  · n=1  · mahabharata-aranyakaparva
+- тверды в обете  · n=1  · mahabharata-aranyakaparva
+- Стойкий в обете  · n=1  · mahabharata-aranyakaparva
+- чьи заветы крепки  · n=1  · rigveda
+- чей обет крепок  · n=1  · rigveda
+- чей завет прочен  · n=1  · rigveda
+- страстно  · n=1  · mahabharata-adiparva
+- Обету верный  · n=1  · mahabharata-bhishmaparva
+- соблюдении обета  · n=1  · mahabharata-udyogaparva
+- Твердо придерживаясь обета  · n=1  · rigveda
+- твердо придерживающимся обета  · n=1  · rigveda
+
+### `DftavrataH` — dhṛtavrataḥ  (n=3)
+
+- соблюдал твердый обет  · n=1  · mahabharata-adiparva
+- чей обет крепок  · n=1  · rigveda
+- твёрдый в обетах  · n=1  · mahabharata-ashvamedhikaparva
+
+### `Dftavratas` — dhṛtavratas  (n=1)
+
+- чей обет крепок  · n=1  · rigveda
+
+### `Dftavratau` — dhṛtavratau  (n=1)
+
+- чьи завет крепок  · n=1  · atharvaveda
+
+### `Dftavrato` — dhṛtavrato  (n=3)
+
+- чей завет крепок  · n=1  · rigveda
+- завет крепок  · n=1  · rigveda
+- Твердый в обете  · n=1  · rigveda
+
+### `DfteS` — dhṛteś  (n=1)
+
+- мудрый  · n=1  · raghuvamsha
+
+### `Dfti` — dhṛti  (n=217)
+
+- стойкость  · n=59  · bhagavadgita-erman, mahabharata-bhishmaparva, gitarthasamgraha-abhinavagupta, bhagavadgita-burba, bhagavadgita-smirnov, mahabharata-dronaparva, bhagavadgita-sementsov, ramayana-sundarakanda, mahabharata-aranyakaparva, bhagavadgita-1914, bhagavadgita-prabhupada, devi-gita, mahabharata-adiparva, ramayana-aranyakanda, buddhacharita, mahabharata-udyogaparva, bhagavadgity, bhagavadgita-1909, bhagavadgita-sharma, mahabharata-ashvamedhikaparva, raghuvamsha, amaru-shataka, ait-up
+- твердость  · n=23  · bhagavadgita-1909, bhagavadgita-1914, bhagavadgity, mahabharata-dronaparva, bhagavadgita-1788, mahabharata-adiparva, mahabharata-udyogaparva, ramanuja_gitabhashya, bhagavadgita-sementsov, bhagavadgita-prabhupada, mahabharata-ashvamedhikaparva, mahabharata-sabhaparva, br-up, amaru-shataka
+- постоянство  · n=10  · bhagavadgita-sementsov, ramanuja_gitabhashya, mahabharata-aranyakaparva, mahabharata-bhishmaparva, bhagavadgita-erman
+- решимость  · n=10  · bhagavadgita-prabhupada, bhagavadgita-sharma, bhagavadgita-radha, mahabharata-karnaparva
+- стойкостью  · n=8  · gitarthasamgraha-abhinavagupta, ramayana-sundarakanda, mahabharata-bhishmaparva, bhagavadgity, bhagavadgita-erman, bhagavadgita-smirnov, mahabharata-karnaparva
+- Стойкость  · n=8  · gitarthasamgraha-abhinavagupta, mahabharata-bhishmaparva, bhagavadgita-erman, bhagavadgita-smirnov, mahabharata-ashvamedhikaparva
+- твердости  · n=7  · mahabharata-bhishmaparva, mahabharata-dronaparva, bhagavadgita-1914, bhagavadgity, bhagavadgita-erman, bhagavadgita-1788, bhagavadgita-1909
+- стойкости  · n=6  · gitarthasamgraha-abhinavagupta, mahabharata-bhishmaparva, mahabharata-dronaparva, buddhacharita, bhagavadgita-burba
+- мужество  · n=6  · bhagavadgita-1788, mahabharata-aranyakaparva, bhagavadgity, bhagavadgita-1909
+- решимости  · n=6  · bhagavadgita-prabhupada, bhagavadgity, bhagavadgita-smirnov, bhagavadgita-sharma, bhagavadgita-radha
+- упорство  · n=5  · bhagavadgita-burba
+- терпение  · n=4  · bhagavadgita-radha, mahabharata-adiparva
+- Дхрити  · n=4  · mahabharata-adiparva, ramayana-ayodhyakanda
+- устойчивость  · n=4  · bhagavadgita-1914, gitarthasamgraha-abhinavagupta, bhagavadgity
+- решимостью  · n=3  · bhagavadgita-sharma, bhagavadgita-prabhupada, bhagavadgita-radha
+- твердостью  · n=2  · mahabharata-bhishmaparva, bhagavadgita-1909
+- самообладание  · n=2  · mahabharata-dronaparva, bhagavadgita-sharma
+- смекалка  · n=2  · ramanuja_gitabhashya, bhagavadgita-sementsov
+- твердо  · n=2  · ramanuja_gitabhashya, bhagavadgita-sementsov
+- Решимость  · n=2  · bhagavadgita-sharma
+- постоянстве  · n=1  · mahabharata-adiparva
+- мужеством  · n=1  · mahabharata-adiparva
+- Тверд  · n=1  · ramayana-ayodhyakanda
+- смрити  · n=1  · ramayana-ayodhyakanda
+- любовью  · n=1  · ramayana-ayodhyakanda
+- довольство малым  · n=1  · manavadharmashastra
+- силы и разум  · n=1  · ramayana-aranyakanda
+- радует  · n=1  · mahabharata-aranyakaparva
+- Стойкостью  · n=1  · mahabharata-aranyakaparva
+- сила духа  · n=1  · mahabharata-dronaparva
+- Стойко  · n=1  · buddhacharita
+- твердости духа  · n=1  · buddhacharita
+- стойкости духа  · n=1  · buddhacharita
+- Твердо  · n=1  · buddhacharita
+- высокое  · n=1  · mahabharata-udyogaparva
+- решение  · n=1  · mahabharata-udyogaparva
+- Устойчивость  · n=1  · gitarthasamgraha-abhinavagupta
+- стойкость/верность  · n=1  · bhagavadgita-burba
+- верность  · n=1  · bhagavadgita-burba
+- постоянством  · n=1  · ramanuja_gitabhashya
+- сила  · n=1  · bhagavadgita-1914
+- крепость  · n=1  · bhagavadgita-1914
+- рѣшимость  · n=1  · bhagavadgita-1788
+- Дрити  · n=1  · bhagavadgita-1788
+- мужествомъ  · n=1  · bhagavadgita-1788
+- рѣшимостію  · n=1  · bhagavadgita-1788
+- великодушие  · n=1  · bhagavadgita-1909
+- мужественный  · n=1  · bhagavadgita-1909
+- смелость  · n=1  · bhagavadgita-sharma
+- дхрити  · n=1  · bhagavadgita-sharma
+- Мужество  · n=1  · bhagavadgita-sharma
+- энтузиазмом  · n=1  · bhagavadgita-prabhupada
+- с решимостью  · n=1  · bhagavadgita-prabhupada
+- владеть  · n=1  · bhagavadgita-prabhupada
+- силы духа  · n=1  · bhagavadgita-radha
+- с помощью решимости  · n=1  · bhagavadgita-radha
+- граница  · n=1  · ch-up
+- чувством удовлетворения  · n=1  · mahabharata-shalyaparva
+- Смелость  · n=1  · mahabharata-shalyaparva
+- решительно  · n=1  · mahabharata-ashvamedhikaparva
+- Настойчивость  · n=1  · mahabharata-sabhaparva
+- гордость  · n=1  · amaru-shataka
+- выдержкой  · n=1  · mahabharata-ashramavasikaparva
+- стойко  · n=1  · kat-up
+
+### `Dfti-gfhIta` — dhṛti-gṛhīta  (n=2)
+
+- твердо схваченным  · n=1  · bhagavadgita-burba
+- непоколебимою  · n=1  · bhagavadgita-1788
+
+### `Dfti-gfhItayA` — dhṛti-gṛhītayā  (n=3)
+
+- в стойкости пребывающим  · n=1  · bhagavadgita-1914
+- непоколебимою  · n=1  · bhagavadgity
+- истинномъ покоѣ  · n=1  · bhagavadgita-1909
+
+### `DftiH` — dhṛtiḥ  (n=27)
+
+- стойкость  · n=10  · gitarthasamgraha-abhinavagupta, mai-up, mahabharata-aranyakaparva, mahabharata-adiparva, ramanuja_gitabhashya, bhagavadgity, bhagavadgita-radha, mahabharata-ashvamedhikaparva
+- решимость  · n=4  · bhagavadgita-prabhupada, bhagavadgita-radha
+- самообладание  · n=2  · mahabharata-udyogaparva
+- твердость  · n=2  · bhagavadgita-1914, bhagavadgita-1788
+- целеустремленность  · n=2  · bhagavadgita-prabhupada
+- стойкий  · n=1  · ramayana-ayodhyakanda
+- преданный  · n=1  · ramayana-ayodhyakanda
+- Постоянство  · n=1  · manavadharmashastra
+- нерешительный  · n=1  · mahabharata-adiparva
+- крепость  · n=1  · bhagavadgita-smirnov
+- упрямство  · n=1  · bhagavadgita-1909
+- Дхрити  · n=1  · bhagavadgita-radha
+
+### `DftidaRqa` — dhṛtidaṇḍa  (n=1)
+
+- изгиб — стойкость  · n=1  · mai-up
+
+### `DftigfhIta` — dhṛtigṛhīta  (n=4)
+
+- твердой  · n=1  · ramanuja_gitabhashya
+- твердостью обузданным  · n=1  · bhagavadgita-erman
+- стойко обузданным  · n=1  · bhagavadgita-smirnov
+- стойкой  · n=1  · bhagavadgita-sementsov
+
+### `DftigfhItayA` — dhṛtigṛhītayā  (n=3)
+
+- веря в собственные силы  · n=1  · bhagavadgita-sharma
+- опирающимся на убежденность  · n=1  · bhagavadgita-prabhupada
+- твердой убежденностью  · n=1  · bhagavadgita-prabhupada
+
+### `Dftiharo` — dhṛtiharo  (n=1)
+
+- сокрушившим  · n=1  · amaru-shataka
+
+### `DftikUlA` — dhṛtikūlā  (n=1)
+
+- самообладание — ее берега  · n=1  · mahabharata-udyogaparva
+
+### `Dftim` — dhṛtim  (n=5)
+
+- твердость  · n=1  · mahabharata-aranyakaparva
+- устоять  · n=1  · mahabharata-dronaparva
+- стремление  · n=1  · mahabharata-dronaparva
+- терпение  · n=1  · mahabharata-udyogaparva
+- опоры  · n=1  · ramanuja_gitabhashya
+
+### `DftimAlin` — dhṛtimālin  (n=2)
+
+- Дхритималина  · n=1  · ramayana-balakanda
+- Дхритималин  · n=1  · ramayana-balakanda
+
+### `DftimAn` — dhṛtimān  (n=8)
+
+- стойкий  · n=3  · mahabharata-aranyakaparva, mahabharata-sabhaparva
+- Мудрый  · n=1  · ramayana-balakanda
+- Дхритиман  · n=1  · mahabharata-aranyakaparva
+- одарен мудростью  · n=1  · mahabharata-dronaparva
+- отличавшийся стойкостью  · n=1  · mahabharata-udyogaparva
+- стоек  · n=1  · mahabharata-karnaparva
+
+### `Dftimant` — dhṛtimant  (n=7)
+
+- стойкий  · n=1  · ramayana-sundarakanda
+- твердого  · n=1  · manavadharmashastra
+- стойкости  · n=1  · mahabharata-aranyakaparva
+- терпелив  · n=1  · mahabharata-aranyakaparva
+- стойкой  · n=1  · buddhacharita
+- стоек  · n=1  · mahabharata-sabhaparva
+- стойкие  · n=1  · mahabharata-ashramavasikaparva
+
+### `DftimantaH` — dhṛtimantaḥ  (n=1)
+
+- стойкими  · n=1  · mahabharata-aranyakaparva
+
+### `Dftimat` — dhṛtimat  (n=19)
+
+- Решительный  · n=3  · ramayana-balakanda
+- тверд  · n=2  · mahabharata-adiparva, mahabharata-udyogaparva
+- непоколебимый  · n=2  · mahabharata-dronaparva
+- мудрых  · n=1  · ramayana-ayodhyakanda
+- решительного  · n=1  · ramayana-ayodhyakanda
+- Твердый  · n=1  · ramayana-aranyakanda
+- стойкие  · n=1  · mahabharata-aranyakaparva
+- твердого  · n=1  · mahabharata-adiparva
+- стойкий  · n=1  · mahabharata-adiparva
+- стоек  · n=1  · buddhacharita
+- обладающий стойкостью  · n=1  · mahabharata-udyogaparva
+- упорством  · n=1  · mahabharata-udyogaparva
+- стойким  · n=1  · mahabharata-udyogaparva
+- разумный  · n=1  · mahabharata-ashvamedhikaparva
+- стойкостью  · n=1  · mahabharata-ashramavasikaparva
+
+### `DftimatI` — dhṛtimatī  (n=2)
+
+- воспитанность  · n=1  · buddhacharita
+- счастливую  · n=1  · raghuvamsha
+
+### `DftimataH` — dhṛtimataḥ  (n=1)
+
+- стойкого  · n=1  · mahabharata-sauptikaparva
+
+### `DftimayI` — dhṛtimayī  (n=1)
+
+- стойкостью  · n=1  · mahabharata-aranyakaparva
+
+### `DftimayIm` — dhṛtimayīm  (n=1)
+
+- самообуздание  · n=1  · mahabharata-udyogaparva
+
+### `Dftimuz` — dhṛtimuṣ  (n=2)
+
+- вонзят  · n=1  · shatakatrayam
+- неотразимые  · n=1  · shatakatrayam-serebryakov
+
+### `DftirastIti` — dhṛtirastīti  (n=1)
+
+- удовлетворенность имеется  · n=1  · gitarthasamgraha-abhinavagupta
+
+### `DftvA` — dhṛtvā  (n=4)
+
+- скрестив  · n=1  · hatha-yoga-pradipika
+- утвердившийся  · n=1  · hatha-yoga-pradipika
+- схватив  · n=1  · shukasaptati
+- взяв  · n=1  · shukasaptati
+
+### `DftyA` — dhṛtyā  (n=12)
+
+- твердость  · n=3  · bhagavadgita-1909
+- терпением  · n=2  · mahabharata-udyogaparva, mahabharata-ashvamedhikaparva
+- стойкостью  · n=1  · mahabharata-adiparva
+- стойкость  · n=1  · mahabharata-bhishmaparva
+- стойкостью духа  · n=1  · buddhacharita
+- решимостью  · n=1  · buddhacharita
+- самообладанием  · n=1  · mahabharata-udyogaparva
+- решимости  · n=1  · bhagavadgita-radha
+- умом  · n=1  · mahabharata-sauptikaparva
+
+### `DftyAdi` — dhṛtyādi  (n=1)
+
+- стойкость и т.д.  · n=1  · gitarthasamgraha-abhinavagupta
+
+### `DftyutsAha-samanvita` — dhṛtyutsāha-samanvita  (n=2)
+
+- снабженный стойкостью и усердием  · n=1  · bhagavadgita-burba
+- имущій мужество и рѣшимость  · n=1  · bhagavadgity
+
+### `DftyutsAha-samanvitaH` — dhṛtyutsāha-samanvitaḥ  (n=1)
+
+- исполненный твердости и доверия  · n=1  · bhagavadgita-1914
+
+### `DftyutsAhasamanvita` — dhṛtyutsāhasamanvita  (n=6)
+
+- исполненный решимости и целеустремленности  · n=1  · mahabharata-bhishmaparva
+- наделенный твердостью и решимостью  · n=1  · gitarthasamgraha-abhinavagupta
+- полный твердости, одушевленья  · n=1  · ramanuja_gitabhashya
+- преисполненный твёрдости и решительности  · n=1  · bhagavadgita-smirnov
+- в делах твердый, решимости полный  · n=1  · bhagavadgita-sementsov
+- полон решимости и воодушевления  · n=1  · bhagavadgita-sharma
+
+### `DftyutsAhasamanvitaH` — dhṛtyutsāhasamanvitaḥ  (n=1)
+
+- исполненный решимости и целеустремленности  · n=1  · bhagavadgita-erman
+
+### `Dfz` — dhṛṣ  (n=2)
+
+- храбро  · n=1  · rigveda
+- дерзает  · n=1  · rigveda
+
+### `DfzARo` — dhṛṣāṇo  (n=2)
+
+- дерзнули  · n=2  · atharvaveda
+
+### `DfzRU` — dhṛṣṇū  (n=1)
+
+- неустрашимых  · n=1  · rigveda
+
+### `DfzRav` — dhṛṣṇav  (n=2)
+
+- о отважный  · n=1  · rigveda
+- отважный  · n=1  · rigveda
+
+### `DfzRave` — dhṛṣṇave  (n=4)
+
+- отважного  · n=2  · rigveda, atharvaveda
+- дерзкому  · n=2  · rigveda
+
+### `DfzRo` — dhṛṣṇo  (n=10)
+
+- дерзкий  · n=4  · rigveda, rigveda, rigveda
+- отважный  · n=3  · rigveda, rigveda, rigveda
+- о храбрый  · n=1  · rigveda
+- смело  · n=1  · rigveda
+- о дерзкий  · n=1  · rigveda
+
+### `DfzRu` — dhṛṣṇu  (n=39)
+
+- дерзкий  · n=9  · rigveda, rigveda, rigveda, rigveda, mahabharata-sabhaparva, atharvaveda
+- отважный  · n=9  · rigveda, rigveda, mahabharata-ashvamedhikaparva, rigveda, rigveda
+- храбрый  · n=3  · rigveda, atharvaveda
+- дерзкой  · n=2  · rigveda, rigveda
+- отважного  · n=2  · rigveda, rigveda
+- храброго  · n=2  · atharvaveda, atharvaveda
+- дерзкого  · n=1  · rigveda
+- храбрые  · n=1  · rigveda
+- отважную  · n=1  · rigveda
+- дерзко  · n=1  · rigveda
+- отважно  · n=1  · rigveda
+- Громко  · n=1  · rigveda
+- смелый  · n=1  · rigveda
+- Дерзкой  · n=1  · rigveda
+- смело  · n=1  · rigveda
+- отважное  · n=1  · rigveda
+- отважные  · n=1  · rigveda
+- мощной  · n=1  · atharvaveda
+
+### `DfzRuS` — dhṛṣṇuś  (n=1)
+
+- отважный  · n=1  · rigveda
+
+### `DfzRuhi` — dhṛṣṇuhi  (n=2)
+
+- Дерзай  · n=2  · rigveda
+
+### `DfzRum` — dhṛṣṇum  (n=4)
+
+- наглую  · n=2  · atharvaveda
+- дерзкую  · n=1  · atharvaveda
+- смелую  · n=1  · atharvaveda
+
+### `DfzRumaH` — dhṛṣṇumaḥ  (n=1)
+
+- осмеливаемся  · n=1  · mahabharata-adiparva
+
+### `DfzRunA` — dhṛṣṇunā  (n=3)
+
+- с отважной  · n=1  · rigveda
+- полной решимости  · n=1  · rigveda
+- отважным  · n=1  · rigveda
+
+### `DfzRuojas` — dhṛṣṇuojas  (n=2)
+
+- с отважной силой  · n=1  · rigveda
+- обладающие дерзкой силой  · n=1  · rigveda
+
+### `DfzRuyA` — dhṛṣṇuyā  (n=14)
+
+- Смело  · n=3  · rigveda, rigveda, rigveda
+- дерзко  · n=3  · rigveda, rigveda, rigveda
+- отважно  · n=3  · rigveda
+- Отважно  · n=2  · rigveda, rigveda
+- Мощно  · n=1  · rigveda
+- храбро  · n=1  · rigveda
+- решительно  · n=1  · rigveda
+
+### `DfzRuzeRA` — dhṛṣṇuṣeṇā  (n=1)
+
+- отважную рать  · n=1  · rigveda
+
+### `DfzRuzeRa` — dhṛṣṇuṣeṇa  (n=2)
+
+- с отважным войском  · n=2  · rigveda
+
+### `DfzadvarRa` — dhṛṣadvarṇa  (n=2)
+
+- дерзко сверкающий  · n=2  · rigveda
+
+### `DfzadvarRam` — dhṛṣadvarṇam  (n=2)
+
+- с дерзким цветом  · n=2  · atharvaveda, atharvaveda
+
+### `Dfzadvinas` — dhṛṣadvinas  (n=2)
+
+- отважные  · n=2  · rigveda
+
+### `Dfzaj` — dhṛṣaj  (n=2)
+
+- храбрые  · n=2  · rigveda
+
+### `DfzamARaH` — dhṛṣamāṇaḥ  (n=1)
+
+- дерзая  · n=1  · rigveda
+
+### `Dfzan` — dhṛṣan  (n=3)
+
+- отважным  · n=2  · rigveda
+- дерзкий  · n=1  · rigveda
+
+### `DfzanmanaH` — dhṛṣanmanaḥ  (n=1)
+
+- дерзкий мыслью  · n=1  · rigveda
+
+### `Dfzanmanas` — dhṛṣanmanas  (n=1)
+
+- отважный мыслью  · n=1  · rigveda
+
+### `Dfzant` — dhṛṣant  (n=1)
+
+- отважного  · n=1  · rigveda
+
+### `Dfzat` — dhṛṣat  (n=13)
+
+- Смело  · n=3  · rigveda, rigveda
+- смело  · n=2  · rigveda, atharvaveda
+- отважный  · n=1  · rigveda
+- храбро  · n=1  · rigveda
+- Дерзновенно  · n=1  · rigveda
+- дерзко  · n=1  · rigveda
+- Отважно  · n=1  · rigveda
+- от всего сердца  · n=1  · rigveda
+- с охотой  · n=1  · rigveda
+- решительно  · n=1  · rigveda
+
+### `DfzatA` — dhṛṣatā  (n=17)
+
+- дерзко  · n=6  · rigveda, rigveda, rigveda
+- смело  · n=3  · rigveda, rigveda
+- Дерзко  · n=2  · rigveda
+- с дерзким (помыслом)  · n=2  · rigveda
+- решительно  · n=1  · rigveda
+- отважно  · n=1  · rigveda
+- Смело  · n=1  · rigveda
+- храбро  · n=1  · rigveda
+
+### `DfzatI` — dhṛṣatī  (n=1)
+
+- отважная  · n=1  · rigveda
+
+### `DfzataH` — dhṛṣataḥ  (n=2)
+
+- отважного  · n=2  · rigveda
+
+### `DfzitA` — dhṛṣitā  (n=2)
+
+- дерзкие  · n=1  · rigveda
+- дерзко  · n=1  · rigveda
+
+### `Dfzita` — dhṛṣita  (n=3)
+
+- отважный  · n=2  · rigveda
+- Дерзкий  · n=1  · rigveda
+
+### `DfzitaH` — dhṛṣitaḥ  (n=4)
+
+- дерзок  · n=1  · rigveda
+- Дерзко  · n=1  · rigveda
+- дерзающей  · n=1  · atharvaveda
+- дерзнули  · n=1  · atharvaveda
+
+### `Dfzitezu` — dhṛṣiteṣu  (n=1)
+
+- отважных  · n=1  · rigveda
+
+### `Dfzwa` — dhṛṣṭa  (n=11)
+
+- наглый  · n=1  · ramayana-ayodhyakanda
+- радостно  · n=1  · ramayana-sundarakanda
+- Дхришту  · n=1  · ramayana-balakanda
+- Дхришта  · n=1  · ramayana-balakanda
+- доблестен  · n=1  · mahabharata-karnaparva
+- дерзко  · n=1  · mahabharata-ashvamedhikaparva
+- дерзкий  · n=1  · mahabharata-sabhaparva
+- смелые  · n=1  · mahabharata-sabhaparva
+- нагл  · n=1  · shatakatrayam
+- наглец  · n=1  · shatakatrayam-serebryakov
+- нахальных  · n=1  · amaru-shataka
+
+### `DfzwaBAva` — dhṛṣṭabhāva  (n=1)
+
+- дерзко и грубо  · n=1  · chaurapanchashika
+
+### `DfzwadyumnABirakzitam` — dhṛṣṭadyumnābhirakṣitam  (n=1)
+
+- предводительствуемое Дхриштадьюмной  · n=1  · mahabharata-karnaparva
+
+### `Dfzwadyumna` — dhṛṣṭadyumna  (n=270)
+
+- Дхриштадьюмна  · n=159  · mahabharata-dronaparva, mahabharata-bhishmaparva, mahabharata-udyogaparva, mahabharata-karnaparva, mahabharata-shalyaparva, mahabharata-adiparva, mahabharata-sauptikaparva, mahabharata-sabhaparva, mahabharata-ashramavasikaparva, mahabharata-aranyakaparva, bhagavadgita-smirnov, mahabharata-ashvamedhikaparva, mahabharata-virataparva, mahabharata-mausalaparva, mahabharata-svargarohanikaparva, gitarthasamgraha-abhinavagupta, bhagavadgita-burba, bhagavadgita-1914, bhagavadgity, bhagavadgita-erman, bhagavadgita-sementsov, bhagavadgita-prabhupada, bhagavadgita-radha
+- Дхриштадьюмну  · n=36  · mahabharata-dronaparva, mahabharata-karnaparva, mahabharata-bhishmaparva, mahabharata-shalyaparva, mahabharata-udyogaparva, mahabharata-sauptikaparva, mahabharata-adiparva, mahabharata-sabhaparva, mahabharata-svargarohanikaparva
+- Дхриштадьюмной  · n=28  · mahabharata-dronaparva, mahabharata-karnaparva, mahabharata-shalyaparva, mahabharata-aranyakaparva, mahabharata-bhishmaparva, mahabharata-udyogaparva, mahabharata-sauptikaparva, bhagavadgita-burba, bhagavadgita-sharma
+- Дхриштадьюмны  · n=25  · mahabharata-dronaparva, mahabharata-bhishmaparva, mahabharata-udyogaparva, mahabharata-karnaparva, mahabharata-ashramavasikaparva, mahabharata-aranyakaparva, mahabharata-adiparva, mahabharata-shalyaparva, mahabharata-svargarohanikaparva
+- Дхриштадьюмне  · n=16  · mahabharata-dronaparva, mahabharata-karnaparva, mahabharata-udyogaparva, mahabharata-bhishmaparva, bhagavadgita-burba, mahabharata-ashvamedhikaparva
+- Дхрииггадьюмна  · n=4  · mahabharata-bhishmaparva
+- Дриштатгумна  · n=1  · bhagavadgita-1788
+- Дхрштадьюмна  · n=1  · mahabharata-karnaparva
+
+### `DfzwadyumnaH` — dhṛṣṭadyumnaḥ  (n=31)
+
+- Дхриштадьюмна  · n=31  · mahabharata-dronaparva, mahabharata-shalyaparva, mahabharata-karnaparva, mahabharata-bhishmaparva, mahabharata-adiparva, mahabharata-udyogaparva, ramanuja_gitabhashya, bhagavadgita-sharma, mahabharata-svargarohanikaparva
+
+### `DfzwadyumnaHpratApavAn` — dhṛṣṭadyumnaḥ pratāpavān  (n=1)
+
+- доблестный Дхриштадьюмна  · n=1  · mahabharata-dronaparva
+
+### `DfzwadyumnaM` — dhṛṣṭadyumnaṃ  (n=3)
+
+- Дхриштадьюмну  · n=2  · mahabharata-dronaparva, mahabharata-shalyaparva
+- Дхриштадьюмне  · n=1  · mahabharata-karnaparva
+
+### `DfzwadyumnaMcasamarehantAhaMpApakAriRam` — dhṛṣṭadyumnaṃ ca samare hantāhaṃ pāpakāriṇam  (n=1)
+
+- Я непременно убью в сражении Дхриштадьюмну, вершителя греховных дел  · n=1  · mahabharata-dronaparva
+
+### `DfzwadyumnaMraRekarRovivyADadaSaBiHSaraiH` — dhṛṣṭadyumnaṃ raṇe karṇo vivyādha daśabhiḥ śaraiḥ  (n=1)
+
+- Карна пронзил в пылу битвы самого Дхриштадьюмну десятью стрелами  · n=1  · mahabharata-dronaparva
+
+### `DfzwadyumnaMtadAyAntaM` — dhṛṣṭadyumnaṃ tadāyāntaṃ  (n=1)
+
+- Дхриштадьюмну, выступившего  · n=1  · mahabharata-dronaparva
+
+### `DfzwadyumnaSca` — dhṛṣṭadyumnaśca  (n=1)
+
+- Дхриштадьюмна  · n=1  · mahabharata-udyogaparva
+
+### `DfzwadyumnabalAhaka` — dhṛṣṭadyumnabalāhaka  (n=1)
+
+- облако Дхриштадьюмны  · n=1  · mahabharata-dronaparva
+
+### `Dfzwadyumnabalam` — dhṛṣṭadyumnabalam  (n=1)
+
+- отряды войск Дхриштадьюмны  · n=1  · mahabharata-dronaparva
+
+### `Dfzwadyumnam` — dhṛṣṭadyumnam  (n=19)
+
+- Дхриштадьюмну  · n=11  · mahabharata-dronaparva, mahabharata-shalyaparva, mahabharata-bhishmaparva, mahabharata-sauptikaparva
+- Дхриштадьюмне  · n=2  · mahabharata-adiparva, mahabharata-dronaparva
+- с Дхриштадьюмной  · n=2  · mahabharata-dronaparva, mahabharata-shalyaparva
+- Дхриштадьюмна  · n=2  · mahabharata-sauptikaparva
+- при виде Дхриштадьюмны  · n=1  · mahabharata-dronaparva
+- Дхриштадьюмной  · n=1  · mahabharata-dronaparva
+
+### `DfzwadyumnamuKAn` — dhṛṣṭadyumnamukhān  (n=3)
+
+- возглавляемых Дхриштадьюмной  · n=1  · mahabharata-udyogaparva
+- во главе с Дхриштадьюмной  · n=1  · mahabharata-udyogaparva
+- возглавляемыми Дхриштадьюмной  · n=1  · mahabharata-karnaparva
+
+### `DfzwadyumnamuKa` — dhṛṣṭadyumnamukha  (n=1)
+
+- во главе с Дхриштадьюмной  · n=1  · mahabharata-udyogaparva
+
+### `DfzwadyumnamuKair` — dhṛṣṭadyumnamukhair  (n=1)
+
+- во главе с Дхриштадьюмной  · n=1  · mahabharata-aranyakaparva
+
+### `DfzwadyumnapurogamAH` — dhṛṣṭadyumnapurogamāḥ  (n=2)
+
+- предводительствуемые Дхриштадьюмной  · n=1  · mahabharata-dronaparva
+- возглавляемые Дхриштадьюмной  · n=1  · mahabharata-karnaparva
+
+### `DfzwadyumnapurogamAn` — dhṛṣṭadyumnapurogamān  (n=2)
+
+- с Дхриштадьюмной во главе  · n=1  · mahabharata-adiparva
+- во главе с Дхриштадьюмной  · n=1  · mahabharata-adiparva
+
+### `Dfzwadyumnapurogama` — dhṛṣṭadyumnapurogama  (n=2)
+
+- предводительствуемых Дхриштадьюмной  · n=1  · mahabharata-dronaparva
+- предводительствуемые Дхриштадьюмной  · n=1  · mahabharata-shalyaparva
+
+### `DfzwadyumnaraTa` — dhṛṣṭadyumnaratha  (n=1)
+
+- колесница Дхриштадьюмны  · n=1  · mahabharata-karnaparva
+
+### `DfzwadyumnaraTam` — dhṛṣṭadyumnaratham  (n=1)
+
+- колесницу Дхриштадьюмны  · n=1  · mahabharata-dronaparva
+
+### `DfzwadyumnaraTasya` — dhṛṣṭadyumnarathasya  (n=1)
+
+- колесницы Дхриштадьюмны  · n=1  · mahabharata-dronaparva
+
+### `DfzwadyumnasamIrita` — dhṛṣṭadyumnasamīrita  (n=1)
+
+- посланную Дхриштадьюмной  · n=1  · mahabharata-karnaparva
+
+### `Dfzwadyumnasuta` — dhṛṣṭadyumnasuta  (n=1)
+
+- сын Дхриштадьюмны  · n=1  · mahabharata-dronaparva
+
+### `Dfzwadyumnasya` — dhṛṣṭadyumnasya  (n=12)
+
+- Дхриштадьюмны  · n=9  · mahabharata-dronaparva, mahabharata-karnaparva, mahabharata-adiparva, mahabharata-udyogaparva, mahabharata-sauptikaparva
+- Дхриштадьюмне  · n=1  · mahabharata-aranyakaparva
+- Дхриштадьюмну  · n=1  · mahabharata-shalyaparva
+- Дхриштадьюмна  · n=1  · mahabharata-sauptikaparva
+
+### `DfzwadyumnatanUja` — dhṛṣṭadyumnatanūja  (n=1)
+
+- сыновей Дхриштадьюмны  · n=1  · mahabharata-karnaparva
+
+### `DfzwadyumnavaDe` — dhṛṣṭadyumnavadhe  (n=1)
+
+- уничтожить Дхриштадьюмну  · n=1  · mahabharata-karnaparva
+
+### `DfzwadyumnavaSa` — dhṛṣṭadyumnavaśa  (n=2)
+
+- под власть Дхриштадьюмны  · n=1  · mahabharata-dronaparva
+- во власть к Дхриштадьюмне  · n=1  · mahabharata-ashvamedhikaparva
+
+### `DfzwadyumnavacaH` — dhṛṣṭadyumnavacaḥ  (n=1)
+
+- слова Дхриштадьюмны  · n=1  · mahabharata-shalyaparva
+
+### `Dfzwadyumne` — dhṛṣṭadyumne  (n=1)
+
+- Дхриштадьюмне  · n=1  · mahabharata-adiparva
+
+### `Dfzwadyumnena` — dhṛṣṭadyumnena  (n=4)
+
+- Дхриштадьюмной  · n=3  · mahabharata-adiparva, mahabharata-dronaparva, mahabharata-karnaparva
+- Дхриштадьюмною  · n=1  · mahabharata-bhishmaparva
+
+### `Dfzwadyumno` — dhṛṣṭadyumno  (n=1)
+
+- Дхриштадьюмна  · n=1  · mahabharata-dronaparva
+
+### `DfzwaketoH` — dhṛṣṭaketoḥ  (n=3)
+
+- Дхриштакету  · n=3  · mahabharata-ashramavasikaparva, mahabharata-bhishmaparva
+
+### `DfzwaketoSca` — dhṛṣṭaketośca  (n=2)
+
+- и Дхриштакету  · n=1  · mahabharata-udyogaparva
+- Дхриштакету  · n=1  · mahabharata-udyogaparva
+
+### `Dfzwaketu` — dhṛṣṭaketu  (n=58)
+
+- Дхриштакету  · n=52  · mahabharata-dronaparva, mahabharata-udyogaparva, mahabharata-bhishmaparva, mahabharata-svargarohanikaparva, mahabharata-aranyakaparva, bhagavadgita-burba, ramayana-balakanda, gitarthasamgraha-abhinavagupta, ramanuja_gitabhashya, bhagavadgita-1914, bhagavadgity, bhagavadgita-erman, bhagavadgita-smirnov, bhagavadgita-sementsov, bhagavadgita-sharma, bhagavadgita-prabhupada, bhagavadgita-radha, mahabharata-karnaparva, mahabharata-ashramavasikaparva, mahabharata-striparva
+- Дхрипггакету  · n=1  · mahabharata-bhishmaparva
+- Дриштакету  · n=1  · mahabharata-dronaparva
+- Чекитана  · n=1  · bhagavadgita-1788
+- Тришакту  · n=1  · bhagavadgita-1909
+- Юдистиръ  · n=1  · bhagavadgita-1909
+- Владыка чувств  · n=1  · bhagavadgita-sharma
+
+### `DfzwaketuH` — dhṛṣṭaketuḥ  (n=7)
+
+- Дхриштакету  · n=7  · mahabharata-bhishmaparva, mahabharata-dronaparva, mahabharata-adiparva
+
+### `DfzwaketuSca` — dhṛṣṭaketuśca  (n=1)
+
+- Дхриштакету  · n=1  · mahabharata-udyogaparva
+
+### `Dfzwaketum` — dhṛṣṭaketum  (n=3)
+
+- Дхриштакету  · n=3  · mahabharata-bhishmaparva, mahabharata-udyogaparva
+
+### `Dfzwam` — dhṛṣṭam  (n=5)
+
+- дерзким  · n=1  · ramayana-ayodhyakanda
+- смело  · n=1  · ramayana-ayodhyakanda
+- бесстрашно  · n=1  · ramayana-sundarakanda
+- Бесстрашно  · n=1  · ramayana-sundarakanda
+- резко  · n=1  · mahabharata-udyogaparva
+
+### `DfzwatA` — dhṛṣṭatā  (n=2)
+
+- тверд  · n=1  · shatakatrayam
+- смелы  · n=1  · shatakatrayam-serebryakov
+
+### `Dfzwatva` — dhṛṣṭatva  (n=1)
+
+- смелости  · n=1  · mahabharata-adiparva
+
+### `Dfzwavant` — dhṛṣṭavant  (n=1)
+
+- отважный  · n=1  · mahabharata-udyogaparva
+
+### `DfzwiH` — dhṛṣṭiḥ  (n=2)
+
+- Дхришти  · n=2  · ramayana-balakanda
+
+### `Dhfzwaketu` — Dhṛṣṭaketu  (n=1)
+
+- Дхриштакету  · n=1  · bhagavadgita-smirnov
+
+### `Di` — dhi  (n=41)
+
+- поэтические мысли  · n=5  · rigveda, rigveda, rigveda
+- ум  · n=5  · shatakatrayam, mahabharata-adiparva, shatakatrayam-serebryakov
+- поэтическую мысль  · n=3  · rigveda, rigveda
+- разум  · n=3  · shatakatrayam, kau-up
+- ведь  · n=2  · rigveda
+- молитвы  · n=2  · rigveda, rigveda
+- соображение  · n=2  · rigveda
+- поэтического озарения  · n=2  · rigveda
+- поэтической мысли  · n=2  · rigveda
+- видением  · n=2  · atharvaveda
+- мысль  · n=2  · shv-up
+- разумом  · n=1  · mahabharata-aranyakaparva
+- сделай  · n=1  · rigveda
+- молитву  · n=1  · rigveda
+- те, кто  · n=1  · gitarthasamgraha-abhinavagupta
+- поэтическим искусством  · n=1  · rigveda
+- от злата  · n=1  · shatakatrayam
+- ума  · n=1  · shatakatrayam-serebryakov
+- помыслами  · n=1  · shatakatrayam-serebryakov
+- вот  · n=1  · mahabharata-striparva
+- же  · n=1  · megha-duta
+- мыслью  · n=1  · shv-up
+
+### `DiN` — dhiṅ  (n=4)
+
+- стыдно  · n=1  · ramayana-ayodhyakanda
+- Стыдно  · n=1  · ramayana-ayodhyakanda
+- Проклятье  · n=1  · ramayana-sundarakanda
+- какая жалость  · n=1  · mahabharata-shalyaparva
+
+### `DiNmAm` — dhiṅmām  (n=1)
+
+- позор мне  · n=1  · mahabharata-ashramavasikaparva
+
+### `DiNmamAstrARidivyAniDigbAhUDikparAkramam` — dhiṅmamāstrāṇi divyāni dhigbāhū dhikparākramam  (n=1)
+
+- Позор моему дивному оружию! Позор рукам моим! Позор доблести моей!  · n=1  · mahabharata-dronaparva
+
+### `DigDigityeva` — dhigdhigityeva  (n=1)
+
+- позор, позор  · n=1  · mahabharata-sabhaparva
+
+### `Digaho` — dhigaho  (n=1)
+
+- О позор  · n=1  · mahabharata-dronaparva
+
+### `Digastu` — dhigastu  (n=2)
+
+- будь он проклят  · n=1  · mahabharata-bhishmaparva
+- Стыдно  · n=1  · mahabharata-karnaparva
+
+### `DigdaRqa` — dhigdaṇḍa  (n=1)
+
+- выговор  · n=1  · manavadharmashastra
+
+### `DiggataH` — dhiggataḥ  (n=1)
+
+- позор  · n=1  · mahabharata-dronaparva
+
+### `Digjayasya` — dhigjayasya  (n=1)
+
+- позорная победа  · n=1  · mahabharata-sauptikaparva
+
+### `DigvAgdaRqAH` — dhigvāgdaṇḍāḥ  (n=1)
+
+- не испепелили  · n=1  · ramayana-ayodhyakanda
+
+### `DigvaRa` — dhigvaṇa  (n=2)
+
+- дхигвана  · n=1  · manavadharmashastra
+- дхигван  · n=1  · manavadharmashastra
+
+### `Dik` — dhik  (n=74)
+
+- позор  · n=30  · mahabharata-adiparva, mahabharata-dronaparva, mahabharata-aranyakaparva, mahabharata-udyogaparva, ramayana-sundarakanda, mahabharata-shalyaparva, mahabharata-sabhaparva, shatakatrayam, mahabharata-shantiparva, ramayana-ayodhyakanda, ch-up, mahabharata-virataparva, mahabharata-sauptikaparva
+- Позор  · n=16  · mahabharata-dronaparva, mahabharata-aranyakaparva, mahabharata-bhishmaparva, mahabharata-udyogaparva, ramayana-ayodhyakanda, ramayana-sundarakanda, ramayana-aranyakanda, mahabharata-sabhaparva, mahabharata-ashramavasikaparva, mahabharata-striparva, mahabharata-sauptikaparva
+- горе  · n=4  · ramayana-ayodhyakanda, ramayana-aranyakanda
+- тьфу  · n=3  · shatakatrayam-serebryakov, mahabharata-sauptikaparva
+- Горе  · n=2  · ramayana-ayodhyakanda, ramayana-aranyakanda
+- Позором  · n=2  · mahabharata-udyogaparva
+- ужас  · n=2  · mahabharata-ashvamedhikaparva, mahabharata-striparva
+- Тьфу  · n=2  · shatakatrayam, shatakatrayam-serebryakov
+- стыд и горе  · n=1  · ramayana-ayodhyakanda
+- презренно  · n=1  · ramayana-sundarakanda
+- Так  · n=1  · ramayana-aranyakanda
+- ничтожна  · n=1  · ramayana-balakanda
+- беда  · n=1  · mahabharata-aranyakaparva
+- Будь прокляты  · n=1  · mahabharata-bhishmaparva
+- не нужно  · n=1  · buddhacharita
+- Увы  · n=1  · mahabharata-udyogaparva
+- бесплодны  · n=1  · mahabharata-karnaparva
+- увы  · n=1  · mahabharata-karnaparva
+- стыд и позор  · n=1  · mahabharata-karnaparva
+- сетуя  · n=1  · raghuvamsha
+- Напрасно  · n=1  · amaru-shataka
+
+### `DikDik` — dhik dhik  (n=1)
+
+- Позор, позор  · n=1  · mahabharata-udyogaparva
+
+### `DikSabdastu` — dhikśabdastu  (n=1)
+
+- слова позор  · n=1  · mahabharata-sabhaparva
+
+### `Dikkarizyanti` — dhikkariṣyanti  (n=1)
+
+- получил наказание  · n=1  · ramayana-ayodhyakanda
+
+### `DikkftAH` — dhikkṛtāḥ  (n=1)
+
+- дурно отзываются  · n=1  · mahabharata-udyogaparva
+
+### `Dikkfta` — dhikkṛta  (n=2)
+
+- встреченный возгласами «позор»  · n=1  · mahabharata-dronaparva
+- порицаемый  · n=1  · mahabharata-dronaparva
+
+### `DikkftaH` — dhikkṛtaḥ  (n=1)
+
+- наказан презрением  · n=1  · mahabharata-udyogaparva
+
+### `Dikkftam` — dhikkṛtam  (n=1)
+
+- презираем  · n=1  · ramayana-ayodhyakanda
+
+### `Dikkftasya` — dhikkṛtasya  (n=1)
+
+- опозоренному  · n=1  · mahabharata-karnaparva
+
+### `Dikkftya` — dhikkṛtya  (n=1)
+
+- выругал  · n=1  · shukasaptati
+
+### `DikkurvantaH` — dhikkurvantaḥ  (n=1)
+
+- предали позору  · n=1  · mahabharata-adiparva
+
+### `Diktam` — dhiktam  (n=1)
+
+- Позор  · n=1  · mahabharata-ashvamedhikaparva
+
+### `Diktvam` — dhiktvam  (n=1)
+
+- Позор тебе  · n=1  · mahabharata-ashvamedhikaparva
+
+### `Dimat` — dhimat  (n=2)
+
+- мудрый  · n=1  · mahabharata-aranyakaparva
+- мудрому  · n=1  · mahabharata-bhishmaparva
+
+### `DimatA` — dhimatā  (n=1)
+
+- Рамой  · n=1  · ramayana-ayodhyakanda
+
+### `DinvAna` — dhinvāna  (n=1)
+
+- торопя  · n=1  · rigveda
+
+### `Dir` — dhir  (n=1)
+
+- раскинули  · n=1  · rigveda
+
+### `Dira` — dhira  (n=1)
+
+- твердый  · n=1  · mahabharata-udyogaparva
+
+### `DiraRinaH` — dhiraṇinaḥ  (n=1)
+
+- украшенных золотом  · n=1  · rigveda
+
+### `DiraRyada` — dhiraṇyada  (n=1)
+
+- платящего золотом  · n=1  · kama-sutra
+
+### `DiraRyajit` — dhiraṇyajit  (n=1)
+
+- завоевывая золото  · n=1  · rigveda
+
+### `DiraRyarUpam` — dhiraṇyarūpam  (n=1)
+
+- цвета золота  · n=1  · rigveda
+
+### `Dirah` — dhirah  (n=2)
+
+- Мудрые  · n=1  · mahabharata-udyogaparva
+- мудрые  · n=1  · mahabharata-udyogaparva
+
+### `DitAvAna` — dhitāvāna  (n=2)
+
+- в которую вложено (возлияние)  · n=1  · rigveda
+- Той, в которую вложено (возлияние)  · n=1  · rigveda
+
+### `DitAvAnam` — dhitāvānam  (n=2)
+
+- (того,) в ком сложены (дары)  · n=1  · rigveda
+- в ком сложены (дары)  · n=1  · rigveda
+
+### `DitvA` — dhitvā  (n=1)
+
+- поместив  · n=1  · br-up
+
+### `DiyA` — dhiyā  (n=90)
+
+- молитвой  · n=19  · rigveda, rigveda, rigveda, rigveda, rigveda, rigveda, rigveda
+- молитве  · n=7  · rigveda, rigveda, rigveda, rigveda, rigveda, rigveda
+- молитвы  · n=6  · rigveda, rigveda, rigveda
+- мыслью  · n=5  · rigveda, rigveda, rigveda, rigveda
+- поэтической мысли  · n=4  · rigveda
+- с помощью молитвы  · n=3  · rigveda, rigveda
+- намерением  · n=2  · rigveda, rigveda
+- Дхи  · n=2  · rigveda
+- силой поэтической мысли  · n=2  · rigveda
+- поэтической мыслью  · n=2  · rigveda
+- умом  · n=2  · buddhacharita, mahabharata-sabhaparva
+- Благодаря поэтической мысли  · n=2  · rigveda
+- поэтическая мысль  · n=2  · rigveda
+- буддхи  · n=2  · devi-gita
+- разумом  · n=2  · mahabharata-sabhaparva, mahabharata-virataparva
+- над  · n=1  · mahabharata-aranyakaparva
+- с желанием  · n=1  · rigveda
+- пониманием  · n=1  · rigveda
+- С молитвой  · n=1  · rigveda
+- Молитвой  · n=1  · rigveda
+- под воздействием истинной молитвы  · n=1  · rigveda
+- с vision-poеtique  · n=1  · rigveda
+- чудесными силами  · n=1  · rigveda
+- поэтическое озарение  · n=1  · rigveda
+- искусства  · n=1  · rigveda
+- силой внутреннего видения  · n=1  · rigveda
+- искусством  · n=1  · rigveda
+- под молитву  · n=1  · rigveda
+- с пониманием  · n=1  · rigveda
+- с помощью поэтической мысли  · n=1  · rigveda
+- молитву  · n=1  · rigveda
+- с искусством  · n=1  · rigveda
+- с (большим) искусством  · n=1  · rigveda
+- мудростью  · n=1  · buddhacharita
+- за (нашу) молитву  · n=1  · rigveda
+- силой поэтического дара  · n=1  · rigveda
+- поэтическим произведением  · n=1  · rigveda
+- с поэтическим видением  · n=1  · rigveda
+- размышления  · n=1  · gitarthasamgraha-abhinavagupta
+- с молитвой  · n=1  · rigveda
+- рассудком  · n=1  · mahabharata-sabhaparva
+- внимательность  · n=1  · hatha-yoga-pradipika
+- с умением  · n=1  · atharvaveda
+
+### `DiyAjura` — dhiyājura  (n=2)
+
+- состарившиеся в молитве  · n=2  · rigveda
+
+### `DiyAm` — dhiyām  (n=1)
+
+- поэтических мыслей  · n=1  · rigveda
+
+### `DiyAna` — dhiyāna  (n=1)
+
+- погоняемый  · n=1  · rigveda
+
+### `DiyAvasu` — dhiyāvasu  (n=7)
+
+- богатый даром видения  · n=4  · rigveda
+- мыслью добывающая богатство  · n=1  · rigveda
+- богатый мыслью  · n=1  · rigveda
+- одетый поэтической мыслью  · n=1  · rigveda
+
+### `DiyAvasuH` — dhiyāvasuḥ  (n=2)
+
+- богатый даром видения  · n=2  · rigveda
+
+### `DiyAvasur` — dhiyāvasur  (n=2)
+
+- молитвой добывает блага  · n=1  · rigveda
+- богатый даром видения  · n=1  · rigveda
+
+### `DiyAyate` — dhiyāyate  (n=2)
+
+- настроенному  · n=1  · rigveda
+- обдумывает  · n=1  · rigveda
+
+### `DiyAyu` — dhiyāyu  (n=2)
+
+- наделенные силой видения  · n=2  · rigveda
+
+### `Diya` — dhiya  (n=19)
+
+- молитвы  · n=5  · rigveda, rigveda
+- поэтические мысли  · n=4  · rigveda, rigveda, rigveda
+- молитвам  · n=2  · rigveda
+- мысли  · n=2  · rigveda, mai-up
+- произведение  · n=2  · rigveda
+- Поэтические мысли  · n=1  · rigveda
+- молитвами  · n=1  · rigveda
+- мыслей  · n=1  · rigveda
+- способности постижения  · n=1  · mai-up
+
+### `DiyaDyai` — dhiyadhyai  (n=2)
+
+- для заложения  · n=2  · rigveda
+
+### `DiyaH` — dhiyaḥ  (n=41)
+
+- поэтические мысли  · n=14  · rigveda, rigveda, rigveda, rigveda, rigveda, rigveda, rigveda
+- молитвы  · n=9  · rigveda, rigveda, rigveda, rigveda, rigveda
+- мысли  · n=6  · rigveda, rigveda, br-up, kau-up
+- Поэтические мысли  · n=2  · rigveda, rigveda
+- произведения  · n=2  · rigveda, rigveda
+- мыслям  · n=1  · rigveda
+- Молитвы  · n=1  · rigveda
+- Поэтические произведения  · n=1  · rigveda
+- молитвами  · n=1  · rigveda
+- поэтической мысли  · n=1  · rigveda
+- произведениям  · n=1  · rigveda
+- молитвенные песнопения  · n=1  · br-up
+- разумения  · n=1  · raghuvamsha
+
+### `DiyaM` — dhiyaṃ  (n=6)
+
+- мысль  · n=2  · rigveda
+- молитву  · n=2  · rigveda, rigveda
+- вдохновение  · n=1  · rigveda
+- поэтический дар  · n=1  · rigveda
+
+### `DiyaM-DiyaM` — dhiyaṃ-dhiyaṃ  (n=3)
+
+- каждую мысль  · n=2  · rigveda
+- каждую молитву  · n=1  · rigveda
+
+### `DiyaYjinv` — dhiyañjinv  (n=1)
+
+- Вдохновляющего мысль  · n=1  · rigveda
+
+### `DiyaYjinvA` — dhiyañjinvā  (n=2)
+
+- оживляющие мысль  · n=1  · rigveda
+- возбуждающие мысль  · n=1  · rigveda
+
+### `DiyaYjinva` — dhiyañjinva  (n=1)
+
+- возбуждает мысль  · n=1  · rigveda
+
+### `Diyam` — dhiyam  (n=25)
+
+- молитву  · n=8  · rigveda, rigveda, rigveda, rigveda, rigveda, atharvaveda
+- поэтическую мысль  · n=6  · rigveda, rigveda, rigveda, rigveda, atharvaveda
+- произведение  · n=5  · rigveda, rigveda, rigveda
+- поэтическое творение  · n=2  · rigveda
+- поэтический дар  · n=1  · rigveda
+- Молитву  · n=1  · rigveda
+- мысль  · n=1  · rigveda
+- молитвой  · n=1  · rigveda
+
+### `DiyanDA` — dhiyandhā  (n=3)
+
+- направляющий силу видения  · n=2  · rigveda
+- Хранитель поэтического вдохновения  · n=1  · rigveda
+
+### `DiyanDAH` — dhiyandhāḥ  (n=3)
+
+- одаренные силой видения  · n=1  · rigveda
+- пуская в ход силу видения  · n=1  · rigveda
+- дающие вдохновение  · n=1  · rigveda
+
+### `DiyanDe` — dhiyandhe  (n=1)
+
+- дает поэтическое видение  · n=1  · rigveda
+
+### `Diyas` — dhiyas  (n=1)
+
+- молитвы  · n=1  · rigveda
+
+### `DiyasAna` — dhiyasāna  (n=2)
+
+- внимательного  · n=2  · rigveda
+
+### `DiyasAno` — dhiyasāno  (n=1)
+
+- став внимательным  · n=1  · rigveda
+
+### `Diye` — dhiye  (n=5)
+
+- для молитвы  · n=2  · rigveda
+- к вдохновению  · n=1  · rigveda
+- на поэтическое творчество  · n=1  · rigveda
+- поэтическую мысль  · n=1  · rigveda
+
+### `Diyehi` — dhiyehi  (n=1)
+
+- Приди  · n=1  · atharvaveda
+
+### `DiyezitA` — dhiyeṣitā  (n=1)
+
+- возбужденные поэтическим искусством  · n=1  · rigveda
+
+### `DiyezitAH` — dhiyeṣitāḥ  (n=1)
+
+- возбужденные поэтическим видением  · n=1  · rigveda
+
+### `Diyezita` — dhiyeṣita  (n=2)
+
+- поощренный мыслью  · n=1  · rigveda
+- Приведенный в движение поэтической мыслью  · n=1  · rigveda
+
+### `Diyo` — dhiyo  (n=5)
+
+- поэтические мысли  · n=4  · rigveda, rigveda, rigveda
+- молитвы  · n=1  · rigveda
+
+### `DizA` — dhiṣā  (n=3)
+
+- по вдохновению  · n=2  · rigveda
+- Из жажды действия  · n=1  · rigveda
+
+### `DizRyA` — dhiṣṇyā  (n=9)
+
+- о ...  · n=2  · rigveda
+- вызывающие вдохновение  · n=2  · rigveda
+- предназначенной для почитания  · n=2  · rigveda
+- возбуждающие вдохновение  · n=2  · rigveda, rigveda
+- о возбуждающие вдохновение  · n=1  · rigveda
+
+### `DizRyAnIva` — dhiṣṇyānīva  (n=1)
+
+- как места  · n=1  · mahabharata-adiparva
+
+### `DizRyAsu` — dhiṣṇyāsu  (n=1)
+
+- очагах  · n=1  · rigveda
+
+### `DizRyAv` — dhiṣṇyāv  (n=2)
+
+- возбуждающие вдохновение  · n=2  · rigveda
+
+### `DizRya` — dhiṣṇya  (n=21)
+
+- возбуждающие вдохновение  · n=4  · rigveda, rigveda
+- небесный дом  · n=2  · mahabharata-aranyakaparva
+- возбуждают вдохновение  · n=2  · rigveda
+- предназначенные для жертвы  · n=2  · atharvaveda
+- благоговейные  · n=1  · rigveda
+- достойным восхваления  · n=1  · mahabharata-adiparva
+- поле  · n=1  · mahabharata-bhishmaparva
+- дворец  · n=1  · buddhacharita
+- дому  · n=1  · mahabharata-udyogaparva
+- место  · n=1  · mahabharata-ashvamedhikaparva
+- жертвенники  · n=1  · br-up
+- обители  · n=1  · raghuvamsha
+- алтарные  · n=1  · atharvaveda
+- алтарь  · n=1  · atharvaveda
+- места  · n=1  · mahabharata-mahaprasthanikaparva
+
+### `DizRyam` — dhiṣṇyam  (n=1)
+
+- метеор  · n=1  · mahabharata-udyogaparva
+
+### `DizRye` — dhiṣṇye  (n=1)
+
+- возбуждающие вдохновение  · n=1  · rigveda
+
+### `DizRyezu` — dhiṣṇyeṣu  (n=3)
+
+- месте  · n=1  · mahabharata-aranyakaparva
+- на жертвенном алтаре  · n=1  · mahabharata-udyogaparva
+- алтарях  · n=1  · mahabharata-virataparva
+
+### `DizWita` — dhiṣṭhita  (n=6)
+
+- готовых упасть  · n=1  · mahabharata-adiparva
+- участием  · n=1  · mahabharata-dronaparva
+- пребывающий  · n=1  · bhagavadgita-radha
+- остановился  · n=1  · mahabharata-karnaparva
+- пребывают  · n=1  · mahabharata-shalyaparva
+- возложен  · n=1  · mahabharata-sabhaparva
+
+### `DizWitaH` — dhiṣṭhitaḥ  (n=1)
+
+- стоящий  · n=1  · mahabharata-adiparva
+
+### `DizWitaM` — dhiṣṭhitaṃ  (n=1)
+
+- стоящего  · n=1  · mahabharata-dronaparva
+
+### `Diza` — dhiṣa  (n=1)
+
+- укрепил  · n=1  · rigveda
+
+### `DizaRA` — dhiṣaṇā  (n=29)
+
+- Дхишана  · n=20  · rigveda, rigveda, rigveda, rigveda, rigveda, mahabharata-shalyaparva, rigveda, rigveda, rigveda
+- Дхишану  · n=2  · rigveda, rigveda
+- вдохновение  · n=2  · rigveda
+- две половины вселенной  · n=2  · rigveda
+- разум  · n=1  · rigveda
+- для вдохновений  · n=1  · rigveda
+- два мира  · n=1  · rigveda
+
+### `DizaRABya` — dhiṣaṇābhya  (n=1)
+
+- для вдохновений  · n=1  · rigveda
+
+### `DizaRAByas` — dhiṣaṇābhyas  (n=2)
+
+- из творений (жрецов)  · n=2  · rigveda
+
+### `DizaRAm` — dhiṣaṇām  (n=2)
+
+- поэтическое подношение  · n=2  · rigveda
+
+### `DizaRAnAM` — dhiṣaṇānāṃ  (n=1)
+
+- мирах  · n=1  · rigveda
+
+### `DizaRAyA` — dhiṣaṇāyā  (n=1)
+
+- Дхишаны  · n=1  · rigveda
+
+### `DizaRAyAs` — dhiṣaṇāyās  (n=1)
+
+- Дхишаны  · n=1  · rigveda
+
+### `DizaRa` — dhiṣaṇa  (n=2)
+
+- чаши  · n=2  · rigveda
+
+### `DizaRam` — dhiṣaṇam  (n=2)
+
+- Дхишану  · n=1  · atharvaveda
+- осмотрительный, умный; nom. pr.  · n=1  · atharvaveda
+
+### `DizaRe` — dhiṣaṇe  (n=8)
+
+- чашами мироздания  · n=2  · rigveda
+- Дхишана  · n=2  · rigveda, rigveda
+- источники вдохновения  · n=2  · rigveda
+- две чаши мироздания  · n=2  · rigveda
+
+### `DizaRyantaH` — dhiṣaṇyantaḥ  (n=1)
+
+- жаждая действия  · n=1  · rigveda
+
+### `Dize` — dhiṣe  (n=3)
+
+- принимаешь  · n=2  · rigveda
+- ты берешь  · n=1  · rigveda
+
+### `Dizva` — dhiṣva  (n=5)
+
+- добудь  · n=1  · rigveda
+- возьми  · n=1  · rigveda
+- вложи  · n=1  · rigveda
+- привяжи  · n=1  · rigveda
+- Наберись  · n=1  · rigveda
+
+### `DmA` — √dhmā  (n=2)
+
+- подули  · n=1  · bhagavadgita-burba
+- трубил  · n=1  · bhagavadgita-burba
+
+### `DmAsyAmi` — dhmāsyāmi  (n=2)
+
+- затрублю  · n=2  · mahabharata-dronaparva, mahabharata-virataparva
+
+### `DmAta` — dhmāta  (n=4)
+
+- трубит  · n=1  · mahabharata-dronaparva
+- Раздувшийся  · n=1  · rigveda
+- добывал  · n=1  · shatakatrayam
+- обследованы  · n=1  · shatakatrayam-serebryakov
+
+### `DmAtarI` — dhmātarī  (n=2)
+
+- при выдувании  · n=2  · rigveda
+
+### `DmAteva` — dhmāteva  (n=2)
+
+- словно раздуватель  · n=1  · rigveda
+- раздуватель  · n=1  · rigveda
+
+### `DmAyamAna` — dhmāyamāna  (n=4)
+
+- трубят  · n=2  · br-up
+- расплавленных  · n=1  · manavadharmashastra
+- дуть  · n=1  · mahabharata-ashvamedhikaparva
+
+### `DmAyatsu` — dhmāyatsu  (n=1)
+
+- под звуки трубящих  · n=1  · mahabharata-bhishmaparva
+
+### `DokzA` — dhokṣā  (n=1)
+
+- бык  · n=1  · rigveda
+
+### `DotA` — dhotā  (n=2)
+
+- хотар  · n=1  · rigveda
+- Хотар  · n=1  · rigveda
+
+### `DotAraM` — dhotāraṃ  (n=1)
+
+- хотаром  · n=1  · rigveda
+
+### `Dotf` — dhotṛ  (n=2)
+
+- хотар  · n=1  · kat-up
+- Хотар  · n=1  · kat-up
+
+### `DotrAt` — dhotrāt  (n=1)
+
+- из кубка хотара  · n=1  · rigveda
+
+### `DotrayA` — dhotrayā  (n=1)
+
+- жертвенным возлиянием  · n=1  · rigveda
+
+### `DoyI` — dhoyī  (n=1)
+
+- Дхойи  · n=1  · gitagovinda
+
+### `DrAduniM` — dhrāduniṃ  (n=2)
+
+- град  · n=2  · rigveda
+
+### `DrAj` — dhrāj  (n=3)
+
+- мчащихся  · n=1  · rigveda
+- порывом  · n=1  · atharvaveda
+- Порывом  · n=1  · atharvaveda
+
+### `DrAji` — dhrāji  (n=3)
+
+- порыву  · n=1  · rigveda
+- приступ  · n=1  · atharvaveda
+- порыв  · n=1  · atharvaveda
+
+### `DrAjiH` — dhrājiḥ  (n=2)
+
+- порыв  · n=2  · rigveda
+
+### `DrAjyA` — dhrājyā  (n=1)
+
+- с порывом  · n=1  · rigveda
+
+### `DrIyamAna` — dhrīyamāna  (n=1)
+
+- возносящуюся  · n=1  · ramayana-sundarakanda
+
+### `DrIyeta` — dhrīyeta  (n=1)
+
+- можно удержать  · n=1  · mahabharata-shalyaparva
+
+### `DrUmra` — dhrūmra  (n=1)
+
+- Серые  · n=1  · buddhacharita
+
+### `Draj` — dhraj  (n=1)
+
+- шквалы  · n=1  · rigveda
+
+### `DrajImAn` — dhrajīmān  (n=2)
+
+- гудящий  · n=1  · rigveda
+- скользит  · n=1  · rigveda
+
+### `Drajantam` — dhrajantam  (n=3)
+
+- Спешащего  · n=2  · rigveda
+- мчащегося  · n=1  · rigveda
+
+### `DrajasA` — dhrajasā  (n=1)
+
+- в порыве  · n=1  · rigveda
+
+### `Drajat` — dhrajat  (n=1)
+
+- мчась  · n=1  · rigveda
+
+### `Draka` — dhraka  (n=1)
+
+- дхраков  · n=1  · mahabharata-karnaparva
+
+### `Dratma` — dhratma  (n=1)
+
+- верный дхарме  · n=1  · mahabharata-ashvamedhikaparva
+
+### `Dri` — dhri  (n=3)
+
+- оказывается  · n=2  · rigveda
+- поддерживаются  · n=1  · mahabharata-aranyakaparva
+
+### `DriyamARa` — dhriyamāṇa  (n=13)
+
+- несли  · n=2  · ramayana-sundarakanda, mahabharata-ashvamedhikaparva
+- оказалась  · n=1  · mahabharata-adiparva
+- жив  · n=1  · manavadharmashastra
+- стало ясно  · n=1  · mahabharata-aranyakaparva
+- держали  · n=1  · mahabharata-aranyakaparva
+- над головой  · n=1  · mahabharata-bhishmaparva
+- будет жив  · n=1  · mahabharata-dronaparva
+- держащийся  · n=1  · mahabharata-karnaparva
+- поддерживаемым  · n=1  · mahabharata-shalyaparva
+- водружен  · n=1  · mahabharata-ashvamedhikaparva
+- поддерживаемому  · n=1  · mahabharata-virataparva
+- державшимся  · n=1  · mahabharata-ashramavasikaparva
+
+### `DriyamARam` — dhriyamāṇam  (n=1)
+
+- держа  · n=1  · mahabharata-udyogaparva
+
+### `DriyamARe` — dhriyamāṇe  (n=2)
+
+- пока я жив  · n=1  · mahabharata-aranyakaparva
+- пока жив  · n=1  · mahabharata-udyogaparva
+
+### `DriyamARena` — dhriyamāṇena  (n=4)
+
+- несомого  · n=2  · mahabharata-aranyakaparva
+- державшимся  · n=1  · mahabharata-udyogaparva
+- поддерживаемым  · n=1  · mahabharata-shalyaparva
+
+### `DriyamARezu` — dhriyamāṇeṣu  (n=3)
+
+- здравствуете  · n=2  · mahabharata-virataparva
+- живы  · n=1  · mahabharata-aranyakaparva
+
+### `Driyante` — dhriyante  (n=1)
+
+- живут  · n=1  · mahabharata-udyogaparva
+
+### `Driyase` — dhriyase  (n=1)
+
+- выжил  · n=1  · mahabharata-aranyakaparva
+
+### `Driyasva` — dhriyasva  (n=2)
+
+- держись  · n=2  · atharvaveda
+
+### `DriyatAm` — dhriyatām  (n=11)
+
+- удерживается  · n=5  · atharvaveda
+- пусть будет сохранен  · n=3  · atharvaveda
+- сохранен  · n=2  · atharvaveda
+- стоит твердо  · n=1  · atharvaveda
+
+### `Driyate` — dhriyate  (n=6)
+
+- нет в живых  · n=1  · ramayana-sundarakanda
+- жив  · n=1  · mahabharata-aranyakaparva
+- есть  · n=1  · mahabharata-aranyakaparva
+- существует  · n=1  · mahabharata-udyogaparva
+- держалась  · n=1  · mahabharata-shalyaparva
+- направляется  · n=1  · br-up
+
+### `DriyetAM` — dhriyetāṃ  (n=1)
+
+- останутся живы  · n=1  · mahabharata-aranyakaparva
+
+### `Driyeta` — dhriyeta  (n=1)
+
+- спасена  · n=1  · mahabharata-adiparva
+
+### `DrmajYAH` — dhrmajñāḥ  (n=1)
+
+- Знатоки добродетели  · n=1  · ramayana-aranyakanda
+
+### `DroRa` — Droṇa  (n=1)
+
+- Дроны  · n=1  · mahabharata-aranyakaparva
+
+### `Drtarastram` — dhrtarastram  (n=1)
+
+- Дхритараштре  · n=1  · mahabharata-ashvamedhikaparva
+
+### `DrupadI` — Drupadī  (n=1)
+
+- Друпади  · n=1  · bhagavadgita-1909
+
+### `Drupada` — Drupada  (n=1)
+
+- Друпада  · n=1  · bhagavadgita-smirnov
+
+### `DrutiH` — dhrutiḥ  (n=1)
+
+- соблазн  · n=1  · rigveda
+
+### `DruvA` — dhruvā  (n=35)
+
+- прочной  · n=5  · atharvaveda, atharvaveda
+- тверда  · n=2  · rigveda, atharvaveda
+- непреложная  · n=2  · bhagavadgita-erman
+- непоколебимая  · n=2  · bhagavadgita-1909, bhagavadgita-sharma
+- крепка  · n=2  · ch-up
+- прочная  · n=2  · atharvaveda
+- надежно  · n=2  · atharvaveda
+- мой  · n=1  · mahabharata-aranyakaparva
+- твердо  · n=1  · rigveda
+- надежный  · n=1  · mahabharata-adiparva
+- прочно  · n=1  · rigveda
+- прочные  · n=1  · rigveda
+- прочное/постоянное  · n=1  · bhagavadgita-burba
+- праведность  · n=1  · ramanuja_gitabhashya
+- постоянная  · n=1  · bhagavadgity
+- твердая  · n=1  · bhagavadgita-prabhupada
+- постоянное  · n=1  · bhagavadgita-radha
+- неизменно  · n=1  · mahabharata-ashvamedhikaparva
+- Твердо  · n=1  · atharvaveda
+- твердые  · n=1  · rigveda
+- устойчивой  · n=1  · atharvaveda
+- верная  · n=1  · atharvaveda
+- Жертвенный ковш  · n=1  · atharvaveda
+- Устойчивая  · n=1  · atharvaveda
+- прочную  · n=1  · atharvaveda
+
+### `DruvADruva` — dhruvādhruva  (n=1)
+
+- зыблемо и незыблемо  · n=1  · mahabharata-adiparva
+
+### `DruvAM` — dhruvāṃ  (n=2)
+
+- неизбежен  · n=1  · mahabharata-udyogaparva
+- к смерти  · n=1  · mahabharata-udyogaparva
+
+### `DruvARi` — dhruvāṇi  (n=5)
+
+- свойственны  · n=1  · ramayana-ayodhyakanda
+- на своем месте  · n=1  · ramayana-balakanda
+- твердыни  · n=1  · rigveda
+- Твердых  · n=1  · rigveda
+- прочных  · n=1  · rigveda
+
+### `DruvAm` — dhruvām  (n=3)
+
+- верную  · n=1  · mahabharata-aranyakaparva
+- Устойчивой  · n=1  · atharvaveda
+- прочную  · n=1  · atharvaveda
+
+### `DruvAn` — dhruvān  (n=1)
+
+- постоянных  · n=1  · ch-up
+
+### `DruvAnuja` — dhruvānuja  (n=1)
+
+- младшие братья Дхрувы  · n=1  · buddhacharita
+
+### `DruvAsaH` — dhruvāsaḥ  (n=4)
+
+- Прочно  · n=1  · rigveda
+- тверды  · n=1  · rigveda
+- твердые  · n=1  · rigveda
+- Тверды  · n=1  · atharvaveda
+
+### `DruvAso` — dhruvāso  (n=2)
+
+- прочно  · n=2  · rigveda
+
+### `DruvAsu` — dhruvāsu  (n=1)
+
+- прочных  · n=1  · rigveda
+
+### `DruvAyA` — dhruvāyā  (n=2)
+
+- прочной  · n=2  · atharvaveda
+
+### `DruvAyAM` — dhruvāyāṃ  (n=2)
+
+- зените  · n=1  · br-up
+- установленной  · n=1  · atharvaveda
+
+### `DruvAyAm` — dhruvāyām  (n=2)
+
+- устойчивой  · n=2  · atharvaveda
+
+### `DruvAya` — dhruvāya  (n=1)
+
+- твердому  · n=1  · atharvaveda
+
+### `DruvAyai` — dhruvāyai  (n=1)
+
+- Устойчивой  · n=1  · atharvaveda
+
+### `Druva` — dhruva  (n=211)
+
+- несомненно  · n=19  · mahabharata-udyogaparva, mahabharata-adiparva, mahabharata-dronaparva, ramayana-ayodhyakanda, ramayana-sundarakanda, buddhacharita, mahabharata-shalyaparva, mahabharata-striparva, brb-up
+- Дхрува  · n=8  · mahabharata-adiparva, mahabharata-bhishmaparva, mahabharata-ashvamedhikaparva, kama-sutra, mahabharata-dronaparva
+- непременно  · n=7  · mahabharata-udyogaparva, mahabharata-aranyakaparva, mahabharata-dronaparva, bhagavadgita-sharma, mahabharata-karnaparva, mahabharata-striparva
+- твердо  · n=6  · rigveda, mahabharata-dronaparva, mahabharata-udyogaparva, rigveda, atharvaveda, mai-up
+- стойкое  · n=5  · mahabharata-ashvamedhikaparva, mahabharata-bhishmaparva, bhagavadgita-erman, mai-up
+- несомненна  · n=5  · mahabharata-dronaparva, mahabharata-udyogaparva, mahabharata-sabhaparva
+- неизбежно  · n=4  · mahabharata-aranyakaparva, bhagavadgita-sementsov, bhagavadgita-sharma, mahabharata-ashvamedhikaparva
+- прочно  · n=4  · rigveda, mahabharata-udyogaparva, rigveda, atharvaveda
+- обеспечена  · n=4  · mahabharata-virataparva, mahabharata-bhishmaparva, mahabharata-karnaparva
+- конечно  · n=4  · mahabharata-bhishmaparva, mahabharata-udyogaparva, mahabharata-karnaparva, mahabharata-virataparva
+- постоянно  · n=3  · mahabharata-adiparva, mahabharata-shantiparva, mahabharata-karnaparva
+- Несомненно  · n=3  · ramayana-sundarakanda, mahabharata-virataparva
+- вечного  · n=3  · mahabharata-aranyakaparva, kat-up
+- Твердо  · n=3  · atharvaveda, rigveda
+- постоянный  · n=3  · ch-up, mahabharata-ashvamedhikaparva
+- крепкое  · n=2  · manavadharmashastra
+- вечным  · n=2  · ramayana-aranyakanda
+- неизменный  · n=2  · mahabharata-aranyakaparva, paramarthasara-abhinavagupta
+- верная  · n=2  · mahabharata-aranyakaparva, mahabharata-bhishmaparva
+- незыблема  · n=2  · mahabharata-aranyakaparva, kumarasambhava
+- твердостоящего  · n=2  · rigveda
+- крепкий  · n=2  · rigveda, atharvaveda
+- Дхруву  · n=2  · kama-sutra, mahabharata-dronaparva
+- недвижные  · n=2  · mahabharata-bhishmaparva
+- определена  · n=2  · mahabharata-bhishmaparva, bhagavadgita-erman
+- определено  · n=2  · mahabharata-bhishmaparva, bhagavadgita-erman
+- непреложная  · n=2  · mahabharata-bhishmaparva
+- прочное  · n=2  · rigveda, rigveda
+- постоянным  · n=2  · buddhacharita, mahabharata-karnaparva
+- очевидна  · n=2  · mahabharata-udyogaparva, bhagavadgita-prabhupada
+- неизбежна  · n=2  · gitarthasamgraha-abhinavagupta, mahabharata-karnaparva
+- твердое  · n=2  · gitarthasamgraha-abhinavagupta
+- Прочное  · n=2  · bhagavadgita-burba, bhagavadgita-smirnov
+- предрешена  · n=2  · mahabharata-karnaparva, mahabharata-ashvamedhikaparva
+- твердой  · n=2  · rigveda, atharvaveda
+- присуща  · n=2  · devi-gita
+- безусловно  · n=2  · mahabharata-sabhaparva
+- постоянного  · n=2  · br-up, shv-up
+- постоянен  · n=2  · br-up, kat-up
+- крепкие  · n=2  · atharvaveda, atharvaveda
+- прочной  · n=2  · atharvaveda, atharvaveda
+- твердый  · n=2  · atharvaveda
+- полярный круг  · n=1  · mahabharata-adiparva
+- пребудет  · n=1  · mahabharata-shantiparva
+- благоприятный  · n=1  · ramayana-ayodhyakanda
+- неотвратима  · n=1  · ramayana-ayodhyakanda
+- неизменному  · n=1  · ramayana-ayodhyakanda
+- без сомнения  · n=1  · ramayana-sundarakanda
+- уверенно  · n=1  · manavadharmashastra
+- верную  · n=1  · manavadharmashastra
+- верного  · n=1  · manavadharmashastra
+- воистину  · n=1  · ramayana-aranyakanda
+- Решительный  · n=1  · ramayana-aranyakanda
+- незыблемо утверждены  · n=1  · mahabharata-aranyakaparva
+- уверенный  · n=1  · mahabharata-aranyakaparva
+- предвечной  · n=1  · mahabharata-aranyakaparva
+- непреходящее  · n=1  · mahabharata-aranyakaparva
+- верно  · n=1  · mahabharata-aranyakaparva
+- верные  · n=1  · rigveda
+- прочных  · n=1  · rigveda
+- урочное  · n=1  · rigveda
+- неподвижно  · n=1  · rigveda
+- неподвижны  · n=1  · rigveda
+- Твердой  · n=1  · rigveda
+- Твердого  · n=1  · rigveda
+- стойкий  · n=1  · kama-sutra
+- нераздельна  · n=1  · mahabharata-adiparva
+- непреложен  · n=1  · mahabharata-adiparva
+- постоянно лелеялось  · n=1  · mahabharata-adiparva
+- верной  · n=1  · mahabharata-bhishmaparva
+- незыблемым  · n=1  · mahabharata-dronaparva
+- несомненной  · n=1  · mahabharata-dronaparva
+- неподвижный  · n=1  · rigveda
+- Не оскудеет  · n=1  · buddhacharita
+- Природный закон  · n=1  · buddhacharita
+- Конечно  · n=1  · mahabharata-udyogaparva
+- Извечные  · n=1  · mahabharata-udyogaparva
+- вечными  · n=1  · mahabharata-udyogaparva
+- явно  · n=1  · mahabharata-udyogaparva
+- определенная  · n=1  · bhagavadgita-burba
+- определенное  · n=1  · bhagavadgita-burba
+- Поистине  · n=1  · mahabharata-bhishmaparva
+- прочную  · n=1  · ramanuja_gitabhashya
+- назначена  · n=1  · bhagavadgita-1914
+- обеспечены  · n=1  · bhagavadgita-1914
+- постоянная  · n=1  · bhagavadgita-smirnov
+- опредѣлена  · n=1  · bhagavadgita-1788
+- недвижимо  · n=1  · bhagavadgita-1788
+- безъ сомнѣнія  · n=1  · bhagavadgita-1788
+- вечна  · n=1  · bhagavadgita-sementsov
+- праведность  · n=1  · bhagavadgita-sementsov
+- долженъ  · n=1  · bhagavadgita-1909
+- Владыкѣ  · n=1  · bhagavadgita-1909
+- Вечно Непоколебимому  · n=1  · bhagavadgita-sharma
+- безупречно  · n=1  · kumarasambhava
+- прочные  · n=1  · rigveda
+- Твердый  · n=1  · atharvaveda
+- Неизменное  · n=1  · mahabharata-sabhaparva
+- утвердившегося  · n=1  · mahabharata-sabhaparva
+- Непреложное установление  · n=1  · mahabharata-sabhaparva
+- неизменна  · n=1  · br-up
+- наверное  · n=1  · mahabharata-virataparva
+- дхрувы  · n=1  · shatakatrayam
+- устойчивой  · n=1  · atharvaveda
+- жертвенный ковш  · n=1  · atharvaveda
+- Крепкие  · n=1  · atharvaveda
+- прочный  · n=1  · atharvaveda
+- непреходяща  · n=1  · yoga-sutry_vyasa-bhashya
+- Полярной звезде  · n=1  · yoga-sutry_vyasa-bhashya
+- Полярная звезда  · n=1  · yoga-sutry
+- покой  · n=1  · yoga-sutry_sharma
+- полярной звездой  · n=1  · yoga-sutry_zagumennov
+- вечный  · n=1  · vedartha-samgraha_ramanuja
+- твёрдым  · n=1  · yotat-up
+- поистине  · n=1  · mahabharata-striparva
+- тотчас  · n=1  · mahabharata-sauptikaparva
+- полярная звезда  · n=1  · mai-up
+- стойкого  · n=1  · mai-up
+
+### `DruvaH` — dhruvaḥ  (n=24)
+
+- неизбежна  · n=6  · bhagavadgita-radha, mahabharata-adiparva, ramanuja_gitabhashya, bhagavadgity, bhagavadgita-smirnov
+- несомненно  · n=3  · mahabharata-dronaparva, mahabharata-udyogaparva, mahabharata-shalyaparva
+- непременно  · n=2  · ramayana-aranyakanda, mahabharata-karnaparva
+- Дхрува  · n=2  · mahabharata-dronaparva
+- прочным  · n=2  · rigveda
+- непременный  · n=1  · ramayana-ayodhyakanda
+- тверд  · n=1  · rigveda
+- несомненна  · n=1  · mahabharata-dronaparva
+- неизбежно  · n=1  · buddhacharita
+- прочно  · n=1  · rigveda
+- вечный  · n=1  · mahabharata-karnaparva
+- Тверд  · n=1  · atharvaveda
+- неизменное  · n=1  · raghuvamsha
+- постоянно  · n=1  · mahabharata-adiparva
+
+### `DruvaM` — dhruvaṃ  (n=11)
+
+- непременно  · n=2  · mahabharata-dronaparva, mahabharata-udyogaparva
+- ясно  · n=2  · mahabharata-udyogaparva
+- не минуете  · n=1  · mahabharata-aranyakaparva
+- тотчас  · n=1  · mahabharata-aranyakaparva
+- несомненно  · n=1  · mahabharata-dronaparva
+- разумеется  · n=1  · mahabharata-udyogaparva
+- в самом деле  · n=1  · mahabharata-udyogaparva
+- неизбежно  · n=1  · ramanuja_gitabhashya
+- тут же  · n=1  · mahabharata-sauptikaparva
+
+### `DruvaMprApsyAmacavayaMrAjyamapyavaSejane` — dhruvaṃ prāpsyāma ca vayaṃ rājyamapyavaśe jane  (n=1)
+
+- то мы несомненно получили бы царство, даже  · n=1  · mahabharata-adiparva
+
+### `DruvaMprAptastasyatasyeticAparaH` — dhruvaṃ prāptastasya tasyeti cāparaḥ  (n=1)
+
+- несомненно, после него получит (царство) его сын, затем сын последнего, а потом и сыновья каждого из последующих  · n=1  · mahabharata-adiparva
+
+### `DruvacyutaH` — dhruvacyutaḥ  (n=1)
+
+- сотрясатели твердого  · n=1  · rigveda
+
+### `DruvajaNgama` — dhruvajaṅgama  (n=1)
+
+- движущихся и неподвижных  · n=1  · mahabharata-udyogaparva
+
+### `Druvaka` — dhruvaka  (n=1)
+
+- Дхрувака  · n=1  · mahabharata-shalyaparva
+
+### `DruvakzemA` — dhruvakṣemā  (n=3)
+
+- прочный мир  · n=2  · rigveda
+- с прочной обителью  · n=1  · rigveda
+
+### `DruvakzemAsaH` — dhruvakṣemāsaḥ  (n=1)
+
+- с твердой основой  · n=1  · rigveda
+
+### `Druvam` — dhruvam  (n=137)
+
+- несомненно  · n=33  · mahabharata-udyogaparva, mahabharata-dronaparva, ramayana-sundarakanda, mahabharata-shalyaparva, mahabharata-sabhaparva, mahabharata-shantiparva, ramayana-ayodhyakanda, mahabharata-aranyakaparva, mahabharata-adiparva, hatha-yoga-pradipika, mahabharata-striparva
+- непременно  · n=10  · mahabharata-aranyakaparva, mahabharata-udyogaparva, ramayana-ayodhyakanda, ramayana-balakanda, mahabharata-dronaparva, mahabharata-shalyaparva, mahabharata-ashvamedhikaparva, yotat-up
+- конечно  · n=6  · raghuvamsha, ramayana-ayodhyakanda, mahabharata-karnaparva, mahabharata-sabhaparva, mahabharata-virataparva
+- неизбежно  · n=6  · mahabharata-aranyakaparva, bhagavadgity, bhagavadgita-smirnov, bhagavadgita-radha, mahabharata-karnaparva
+- без сомнения  · n=4  · mahabharata-aranyakaparva, mahabharata-dronaparva, buddhacharita, mahabharata-udyogaparva
+- твердо  · n=4  · rigveda, bhagavadgity, mahabharata-ashvamedhikaparva, atharvaveda
+- постоянно  · n=3  · mahabharata-shantiparva, mahabharata-udyogaparva, mahabharata-ashvamedhikaparva
+- верно  · n=3  · mahabharata-aranyakaparva, buddhacharita, mahabharata-karnaparva
+- неизменный  · n=2  · mahabharata-adiparva
+- все равно  · n=2  · mahabharata-shantiparva, mahabharata-aranyakaparva
+- прочно  · n=2  · manavadharmashastra, rigveda
+- видно  · n=2  · mahabharata-aranyakaparva
+- Несомненно  · n=2  · mahabharata-dronaparva
+- постоянному  · n=2  · bhagavadgita-prabhupada
+- основательно  · n=2  · rigveda, atharvaveda
+- Поистине  · n=2  · mahabharata-ashvamedhikaparva, mahabharata-striparva
+- Твердо  · n=2  · atharvaveda
+- неизменное  · n=1  · mahabharata-adiparva
+- Крепко  · n=1  · mahabharata-shantiparva
+- здесь нет сомнений  · n=1  · ramayana-ayodhyakanda
+- словно  · n=1  · ramayana-ayodhyakanda
+- Скоро  · n=1  · ramayana-ayodhyakanda
+- Верно  · n=1  · ramayana-ayodhyakanda
+- Не сомневаюсь  · n=1  · ramayana-ayodhyakanda
+- поистине  · n=1  · ramayana-ayodhyakanda
+- Увы  · n=1  · ramayana-ayodhyakanda
+- я думаю  · n=1  · ramayana-ayodhyakanda
+- Конечно  · n=1  · ramayana-ayodhyakanda
+- перестанет  · n=1  · ramayana-ayodhyakanda
+- быть может  · n=1  · ramayana-ayodhyakanda
+- наверное  · n=1  · ramayana-ayodhyakanda
+- Сомнений нет  · n=1  · ramayana-aranyakanda
+- не приобретает  · n=1  · ramayana-aranyakanda
+- неминуема  · n=1  · mahabharata-aranyakaparva
+- наверно  · n=1  · mahabharata-aranyakaparva
+- готов  · n=1  · mahabharata-aranyakaparva
+- немедленно  · n=1  · mahabharata-aranyakaparva
+- твердой  · n=1  · rigveda
+- тверд  · n=1  · rigveda
+- несомненным  · n=1  · mahabharata-adiparva
+- что  · n=1  · mahabharata-adiparva
+- конечно же  · n=1  · mahabharata-bhishmaparva
+- наверняка  · n=1  · mahabharata-bhishmaparva
+- вне всякого сомнения  · n=1  · mahabharata-dronaparva
+- прочное  · n=1  · rigveda
+- неизменно  · n=1  · mahabharata-udyogaparva
+- прочную  · n=1  · rigveda
+- Прочный  · n=1  · rigveda
+- крепкий  · n=1  · rigveda
+- назначено  · n=1  · bhagavadgita-1914
+- Вечному  · n=1  · bhagavadgita-1914
+- очевидно  · n=1  · bhagavadgita-prabhupada
+- вечному  · n=1  · bhagavadgita-radha
+- нет сомнения  · n=1  · mahabharata-karnaparva
+- Святой  · n=1  · kumarasambhava
+- тогда  · n=1  · mahabharata-shalyaparva
+- Неподвижное  · n=1  · mahabharata-ashvamedhikaparva
+- надежно  · n=1  · mahabharata-ashvamedhikaparva
+- Тверд  · n=1  · atharvaveda
+- неизбежна  · n=1  · mahabharata-sabhaparva
+- Полярную звезду  · n=1  · raghuvamsha
+- легко  · n=1  · hatha-yoga-pradipika
+- второго  · n=1  · hatha-yoga-pradipika
+- воистину  · n=1  · yotat-up
+- твёрдо  · n=1  · yotat-up
+- постоянного  · n=1  · kat-up
+- неуклонно  · n=1  · mahabharata-mausalaparva
+
+### `DruvamasmatsahAyAsteBavizyantipraDAnataH` — dhruvamasmatsahāyāste bhaviṣyanti pradhānataḥ  (n=1)
+
+- тогда они несомненно будут нашими союзниками в силу нашего преимущества  · n=1  · mahabharata-adiparva
+
+### `DruvaraTa` — dhruvaratha  (n=1)
+
+- колеснице Дхрувы  · n=1  · mahabharata-dronaparva
+
+### `DruvaratnA` — dhruvaratnā  (n=1)
+
+- Дхруваратна  · n=1  · mahabharata-shalyaparva
+
+### `Druvas` — dhruvas  (n=2)
+
+- твердо  · n=2  · rigveda
+
+### `DruvasaMDiH` — dhruvasaṃdhiḥ  (n=1)
+
+- Дхрувасандхи  · n=1  · raghuvamsha
+
+### `DruvasanDi` — dhruvasandhi  (n=4)
+
+- Дхрувасандхи  · n=4  · ramayana-ayodhyakanda, ramayana-balakanda
+
+### `Druvase` — dhruvase  (n=1)
+
+- чтобы остаться  · n=1  · rigveda
+
+### `Druvastasya` — dhruvastasya  (n=1)
+
+- непременно  · n=1  · mahabharata-bhishmaparva
+
+### `Druvasya` — dhruvasya  (n=2)
+
+- Дхрувы  · n=2  · shatakatrayam-serebryakov
+
+### `Druvau` — dhruvau  (n=3)
+
+- несомненны  · n=1  · mahabharata-dronaparva
+- несомненно  · n=1  · mahabharata-dronaparva
+- неминуемо  · n=1  · mahabharata-karnaparva
+
+### `Druvaya` — dhruvaya  (n=1)
+
+- крепкие  · n=1  · rigveda
+
+### `Druve` — dhruve  (n=4)
+
+- прочном  · n=2  · rigveda
+- неподвижном  · n=1  · mahabharata-adiparva
+- твердом  · n=1  · rigveda
+
+### `DruveRa` — dhruveṇa  (n=2)
+
+- твердой  · n=2  · rigveda, atharvaveda
+
+### `Druvo` — dhruvo  (n=1)
+
+- прочно  · n=1  · rigveda
+
+### `DruvopameyaH` — dhruvopameyaḥ  (n=1)
+
+- подобный Дхруве  · n=1  · raghuvamsha
+
+### `Drz` — dhrṣ  (n=2)
+
+- осмелились  · n=1  · br-up
+- начал  · n=1  · br-up
+
+### `DuH` — dhuḥ  (n=7)
+
+- пусть даруют  · n=2  · rigveda
+- пусть дадут  · n=1  · rigveda
+- поместили  · n=1  · rigveda
+- поместили в божественное состояние  · n=1  · rigveda
+- вложили  · n=1  · rigveda
+- насажать  · n=1  · rigveda
+
+### `Dukz` — dhukṣ  (n=2)
+
+- уступаешь  · n=2  · atharvaveda
+
+### `Dukzan` — dhukṣan  (n=2)
+
+- выдаивают  · n=2  · rigveda
+
+### `Dukzanta` — dhukṣanta  (n=2)
+
+- доят  · n=2  · rigveda
+
+### `Dukzasva` — dhukṣasva  (n=3)
+
+- доись  · n=1  · rigveda
+- дай надоить  · n=1  · rigveda
+- Доись  · n=1  · rigveda
+
+### `Dukzata` — dhukṣata  (n=4)
+
+- дает подоить  · n=2  · rigveda
+- Дает надоить  · n=1  · rigveda
+- доится  · n=1  · rigveda
+
+### `Dukzva` — dhukṣva  (n=2)
+
+- позволяй надоить  · n=1  · atharvaveda
+- надои  · n=1  · atharvaveda
+
+### `Dumaketum` — dhumaketum  (n=1)
+
+- метеору  · n=1  · gitagovinda
+
+### `DunDu` — dhundhu  (n=4)
+
+- Дхундху  · n=4  · mahabharata-aranyakaparva
+
+### `DunDuH` — dhundhuḥ  (n=1)
+
+- Дхундху  · n=1  · mahabharata-aranyakaparva
+
+### `DunDumAra` — dhundhumāra  (n=13)
+
+- Дхундхумара  · n=5  · mahabharata-aranyakaparva, mahabharata-dronaparva, ramayana-balakanda
+- Дандхумара  · n=2  · ramayana-ayodhyakanda
+- приносит жертвы  · n=1  · ramayana-ayodhyakanda
+- Дхундхумары  · n=1  · ramayana-balakanda
+- Губителем Дхундху  · n=1  · mahabharata-aranyakaparva
+- Губитель Дхундху  · n=1  · mahabharata-aranyakaparva
+- принесет Дхундху смерть  · n=1  · mahabharata-aranyakaparva
+- Дхундхумарой  · n=1  · mahabharata-aranyakaparva
+
+### `DunI` — dhunī  (n=3)
+
+- Дхуни  · n=2  · rigveda
+- храпящих  · n=1  · rigveda
+
+### `DunInAm` — dhunīnām  (n=2)
+
+- шумных  · n=1  · rigveda
+- сотрясателей  · n=1  · rigveda
+
+### `Dunaya` — dhunaya  (n=2)
+
+- шумящие  · n=1  · rigveda
+- шумные  · n=1  · rigveda
+
+### `DunayaH` — dhunayaḥ  (n=5)
+
+- шумные  · n=1  · rigveda
+- бушуют  · n=1  · rigveda
+- сотрясатели  · n=1  · rigveda
+- звонкие  · n=1  · rigveda
+- буйные  · n=1  · rigveda
+
+### `DunayantAm` — dhunayantām  (n=1)
+
+- примчатся с шумом  · n=1  · rigveda
+
+### `Dunayanta` — dhunayanta  (n=1)
+
+- журчат  · n=1  · rigveda
+
+### `Dunetaya` — dhunetaya  (n=2)
+
+- с гулкой поступью  · n=2  · rigveda
+
+### `Duni` — dhuni  (n=17)
+
+- Дхуни  · n=8  · rigveda, rigveda, rigveda, rigveda
+- возмутитель  · n=2  · rigveda, rigveda
+- бушующий  · n=2  · rigveda
+- буйный  · n=1  · rigveda
+- разбушевавшееся  · n=1  · rigveda
+- сотрясатель  · n=1  · rigveda
+- Сотрясатель  · n=1  · rigveda
+- шумящие  · n=1  · rigveda
+
+### `DuniH` — dhuniḥ  (n=1)
+
+- метнувшийся  · n=1  · rigveda
+
+### `Dunim` — dhunim  (n=1)
+
+- бурлящую  · n=1  · rigveda
+
+### `DunimatI` — dhunimatī  (n=2)
+
+- возмущенные  · n=2  · rigveda, rigveda
+
+### `DunivratAya` — dhunivratāya  (n=1)
+
+- Громко бунтующей  · n=1  · rigveda
+
+### `Dunivratam` — dhunivratam  (n=2)
+
+- буйного нрава  · n=2  · rigveda
+
+### `Dunute` — dhunute  (n=2)
+
+- сметает  · n=1  · mahabharata-udyogaparva
+- отрясает  · n=1  · kau-up
+
+### `DunvAnAH` — dhunvānāḥ  (n=2)
+
+- размахивая  · n=1  · mahabharata-shalyaparva
+- потрясая  · n=1  · mahabharata-shalyaparva
+
+### `DunvAna` — dhunvāna  (n=2)
+
+- меча  · n=1  · mahabharata-dronaparva
+- натягивая  · n=1  · mahabharata-karnaparva
+
+### `Dunvan` — dhunvan  (n=5)
+
+- Потрясая  · n=1  · ramayana-aranyakanda
+- встряхнув  · n=1  · mahabharata-adiparva
+- размахивал  · n=1  · mahabharata-karnaparva
+- размахивая  · n=1  · mahabharata-shalyaparva
+- встряхивая  · n=1  · mahabharata-shalyaparva
+
+### `DunvantaH` — dhunvantaḥ  (n=2)
+
+- потрясали  · n=1  · mahabharata-bhishmaparva
+- потрясая  · n=1  · mahabharata-shalyaparva
+
+### `DunvataH` — dhunvataḥ  (n=1)
+
+- потрясает  · n=1  · mahabharata-dronaparva
+
+### `Dur` — dhur  (n=16)
+
+- дышла  · n=3  · rigveda
+- бремя  · n=2  · ramayana-balakanda, mahabharata-adiparva
+- причислили  · n=2  · rigveda
+- дышло  · n=2  · rigveda
+- тяжелых нош  · n=1  · mahabharata-adiparva
+- ношей  · n=1  · ramayana-ayodhyakanda
+- Дышло  · n=1  · rigveda
+- создали  · n=1  · rigveda
+- дышел  · n=1  · rigveda
+- установили  · n=1  · rigveda
+- дышлу  · n=1  · atharvaveda
+
+### `DurA` — dhurā  (n=1)
+
+- дышло  · n=1  · rigveda
+
+### `DurAm` — dhurām  (n=1)
+
+- бремя  · n=1  · raghuvamsha
+
+### `DurIvAt` — dhurīvāt  (n=1)
+
+- к дышлу прикреплено  · n=1  · rigveda
+
+### `Dura` — dhura  (n=10)
+
+- бремя  · n=6  · mahabharata-udyogaparva, mahabharata-aranyakaparva, mahabharata-dronaparva, mahabharata-ashvamedhikaparva, raghuvamsha
+- дышло  · n=3  · rigveda, rigveda
+- дышлу  · n=1  · mahabharata-virataparva
+
+### `DuraH` — dhuraḥ  (n=3)
+
+- ярмо  · n=1  · rigveda
+- дышел  · n=1  · rigveda
+- над дышлом  · n=1  · rigveda
+
+### `Duram` — dhuram  (n=10)
+
+- дышлом  · n=2  · rigveda
+- грузом  · n=2  · rigveda
+- бремя  · n=2  · raghuvamsha, mahabharata-virataparva
+- ярмо  · n=1  · mahabharata-aranyakaparva
+- бремя власти  · n=1  · raghuvamsha
+- дышла  · n=1  · atharvaveda
+- коренные  · n=1  · mahabharata-sauptikaparva
+
+### `DuranDara` — dhurandhara  (n=4)
+
+- несомненно  · n=1  · mahabharata-udyogaparva
+- предводители  · n=1  · mahabharata-udyogaparva
+- несущий бремя  · n=1  · mahabharata-ashramavasikaparva
+- несущий бремя власти  · n=1  · mahabharata-ashramavasikaparva
+
+### `DuranDaraH` — dhurandharaḥ  (n=1)
+
+- выдающийся  · n=1  · mahabharata-udyogaparva
+
+### `Duri` — dhuri  (n=23)
+
+- у дышла  · n=4  · rigveda, rigveda, rigveda
+- в ярмо  · n=4  · rigveda, atharvaveda
+- дышла  · n=2  · rigveda
+- в дышло  · n=2  · rigveda, atharvaveda
+- к дышлу  · n=2  · rigveda, atharvaveda
+- во главе  · n=2  · raghuvamsha
+- бременем  · n=1  · ramayana-ayodhyakanda
+- ношу  · n=1  · ramayana-sundarakanda
+- дышло  · n=1  · rigveda
+- за дышло  · n=1  · rigveda
+- за ярмо  · n=1  · mahabharata-karnaparva
+- ярмо  · n=1  · mahabharata-karnaparva
+- превыше  · n=1  · raghuvamsha
+
+### `DurisTita` — dhuri sthita  (n=1)
+
+- первая  · n=1  · raghuvamsha
+
+### `Duro` — dhuro  (n=3)
+
+- обманы  · n=1  · rigveda
+- преследуй  · n=1  · rigveda
+- отдых  · n=1  · raghuvamsha
+
+### `Dury` — dhury  (n=2)
+
+- дышлу  · n=1  · rigveda
+- в дышло  · n=1  · rigveda
+
+### `DuryAH` — dhuryāḥ  (n=2)
+
+- подобно волам  · n=1  · buddhacharita
+- кони  · n=1  · mahabharata-virataparva
+
+### `DuryARAm` — dhuryāṇām  (n=1)
+
+- вьючных животных  · n=1  · raghuvamsha
+
+### `DuryAn` — dhuryān  (n=3)
+
+- упряжных животных  · n=1  · mahabharata-dronaparva
+- мощных коней  · n=1  · mahabharata-karnaparva
+- коней  · n=1  · raghuvamsha
+
+### `DuryAsana` — dhuryāsana  (n=1)
+
+- почетному месту  · n=1  · mahabharata-aranyakaparva
+
+### `Durya` — dhurya  (n=11)
+
+- тяглового быка  · n=2  · atharvaveda
+- вол  · n=1  · ramayana-ayodhyakanda
+- царское  · n=1  · ramayana-ayodhyakanda
+- лошадей  · n=1  · mahabharata-bhishmaparva
+- выдающихся героя  · n=1  · mahabharata-dronaparva
+- волов  · n=1  · buddhacharita
+- кони  · n=1  · mahabharata-udyogaparva
+- дышлу  · n=1  · mahabharata-udyogaparva
+- предводителя  · n=1  · mahabharata-udyogaparva
+- бычок  · n=1  · raghuvamsha
+
+### `DuryaM` — dhuryaṃ  (n=1)
+
+- могучих  · n=1  · mahabharata-karnaparva
+
+### `DuryaiH` — dhuryaiḥ  (n=1)
+
+- животных  · n=1  · manavadharmashastra
+
+### `Duryanaqu` — dhuryanaḍu  (n=1)
+
+- бык  · n=1  · mahabharata-udyogaparva
+
+### `DuryatarAn` — dhuryatarān  (n=2)
+
+- запряженных в колесницы  · n=1  · mahabharata-karnaparva
+- способных везти огромный груз  · n=1  · mahabharata-karnaparva
+
+### `Duryavara` — dhuryavara  (n=1)
+
+- лучший из всех  · n=1  · mahabharata-virataparva
+
+### `Duta` — dhuta  (n=2)
+
+- задрожали  · n=1  · raghuvamsha
+- возлито  · n=1  · atharvaveda
+
+### `DvANkzAH` — dhvāṅkṣāḥ  (n=1)
+
+- Вороны  · n=1  · atharvaveda
+
+### `DvANkza` — dhvāṅkṣa  (n=4)
+
+- вороны  · n=2  · mahabharata-adiparva
+- ворона  · n=2  · mahabharata-adiparva, atharvaveda
+
+### `DvANkzagfDravaqaiH` — dhvāṅkṣagṛdhravaḍaiḥ  (n=1)
+
+- от ворон, стервятников и воронов  · n=1  · mahabharata-dronaparva
+
+### `DvAna` — dhvāna  (n=1)
+
+- звук  · n=1  · amaru-shataka
+
+### `DvAntAt` — dhvāntāt  (n=2)
+
+- из мрака  · n=2  · rigveda
+
+### `DvAnta` — dhvānta  (n=3)
+
+- тьму  · n=1  · rigveda
+- Густой  · n=1  · rigveda
+- мрак  · n=1  · vedartha-samgraha_ramanuja
+
+### `DvAntaM` — dhvāntaṃ  (n=1)
+
+- темнота  · n=1  · gitagovinda
+
+### `DvAnte` — dhvānte  (n=1)
+
+- тьмой  · n=1  · amaru-shataka
+
+### `DvaMsa` — dhvaṃsa  (n=3)
+
+- низвергнись стремглав  · n=1  · mahabharata-udyogaparva
+- потери  · n=1  · bhagavadgita-radha
+- рушится  · n=1  · shatakatrayam-serebryakov
+
+### `DvaMsaH` — dhvaṃsaḥ  (n=1)
+
+- разрушение  · n=1  · bhagavadgita-radha
+
+### `DvaMsana` — dhvaṃsana  (n=1)
+
+- сокрушать  · n=1  · mahabharata-udyogaparva
+
+### `DvaMsatAm` — dhvaṃsatām  (n=1)
+
+- исчезнет  · n=1  · ramayana-ayodhyakanda
+
+### `DvaMsayAmAsa` — dhvaṃsayāmāsa  (n=1)
+
+- раздробил  · n=1  · mahabharata-bhishmaparva
+
+### `DvaMsayitvA` — dhvaṃsayitvā  (n=2)
+
+- Прервав  · n=2  · ramayana-ayodhyakanda
+
+### `DvaMsayizyati` — dhvaṃsayiṣyati  (n=1)
+
+- сокрушит  · n=1  · mahabharata-udyogaparva
+
+### `DvaMsin` — dhvaṃsin  (n=2)
+
+- гибнет  · n=1  · shatakatrayam
+- прерваться  · n=1  · shatakatrayam-serebryakov
+
+### `DvaMsinaH` — dhvaṃsinaḥ  (n=1)
+
+- смерть  · n=1  · megha-duta
+
+### `DvajAH` — dhvajāḥ  (n=5)
+
+- знамена  · n=4  · mahabharata-bhishmaparva, mahabharata-virataparva
+- знамен  · n=1  · mahabharata-udyogaparva
+
+### `DvajANkuSapatAkANka` — dhvajāṅkuśapatākāṅka  (n=1)
+
+- отмеченную изображениями стрекала и знамени  · n=1  · mahabharata-udyogaparva
+
+### `DvajAcCidriRImayI` — dhvajācchidriṇīmayī  (n=1)
+
+- украшенного жемчугом, золотом и алмазами  · n=1  · shukasaptati
+
+### `DvajAgra` — dhvajāgra  (n=8)
+
+- верхушки знамен  · n=2  · mahabharata-bhishmaparva
+- верхушку знамени  · n=2  · mahabharata-dronaparva, mahabharata-virataparva
+- вершине знамени  · n=1  · mahabharata-dronaparva
+- верхушке знамени  · n=1  · mahabharata-dronaparva
+- вершину знамени  · n=1  · mahabharata-karnaparva
+- верхушка знамени  · n=1  · mahabharata-virataparva
+
+### `DvajAgram` — dhvajāgram  (n=1)
+
+- верхушку знамени  · n=1  · mahabharata-shalyaparva
+
+### `DvajAgramAtreRa` — dhvajāgramātreṇa  (n=1)
+
+- только верхушка стяга  · n=1  · raghuvamsha
+
+### `DvajAgranilaya` — dhvajāgranilaya  (n=1)
+
+- существа, сидевшие на верхушке древка знамени  · n=1  · mahabharata-virataparva
+
+### `DvajAgre` — dhvajāgre  (n=2)
+
+- на знамени  · n=1  · mahabharata-virataparva
+- на верхушке знамени  · n=1  · mahabharata-virataparva
+
+### `DvajAgrezu` — dhvajāgreṣu  (n=1)
+
+- на верхушки знамен  · n=1  · mahabharata-bhishmaparva
+
+### `DvajAgrya` — dhvajāgrya  (n=1)
+
+- Великолепный стяг  · n=1  · mahabharata-aranyakaparva
+
+### `DvajAhfta` — dhvajāhṛta  (n=1)
+
+- захваченный под знаменем  · n=1  · manavadharmashastra
+
+### `DvajAlaya` — dhvajālaya  (n=2)
+
+- на знамени  · n=1  · mahabharata-dronaparva
+- усевшимися на древке знамени  · n=1  · mahabharata-sabhaparva
+
+### `DvajAn` — dhvajān  (n=4)
+
+- знамена  · n=3  · mahabharata-karnaparva, mahabharata-udyogaparva
+- древки знамен  · n=1  · mahabharata-dronaparva
+
+### `DvajAnAM` — dhvajānāṃ  (n=1)
+
+- стяги  · n=1  · mahabharata-bhishmaparva
+
+### `DvajAnAm` — dhvajānām  (n=1)
+
+- знамена  · n=1  · mahabharata-bhishmaparva
+
+### `DvajAvarta` — dhvajāvarta  (n=2)
+
+- знамена и водовороты  · n=1  · mahabharata-dronaparva
+- знамена - водовороты  · n=1  · mahabharata-dronaparva
+
+### `Dvaja` — dhvaja  (n=203)
+
+- знамя  · n=93  · mahabharata-dronaparva, mahabharata-karnaparva, mahabharata-bhishmaparva, ramayana-aranyakanda, mahabharata-udyogaparva, mahabharata-shalyaparva, mahabharata-virataparva, ramayana-ayodhyakanda, mahabharata-aranyakaparva, mahabharata-ashvamedhikaparva, buddhacharita, mahabharata-sabhaparva
+- знаменами  · n=19  · mahabharata-dronaparva, ramayana-aranyakanda, ramayana-ayodhyakanda, mahabharata-udyogaparva, ramayana-sundarakanda, mahabharata-aranyakaparva, mahabharata-bhishmaparva, mahabharata-ashvamedhikaparva, raghuvamsha
+- знамена  · n=19  · mahabharata-dronaparva, mahabharata-karnaparva, mahabharata-bhishmaparva, mahabharata-udyogaparva, mahabharata-shalyaparva, mahabharata-sabhaparva, mahabharata-virataparva, atharvaveda, mahabharata-mausalaparva
+- знамени  · n=11  · mahabharata-dronaparva, mahabharata-virataparva, mahabharata-adiparva, ramayana-ayodhyakanda, ramayana-aranyakanda, mahabharata-bhishmaparva
+- стяг  · n=9  · mahabharata-bhishmaparva, mahabharata-karnaparva, mahabharata-ashvamedhikaparva
+- знаменем  · n=7  · mahabharata-dronaparva, mahabharata-adiparva, manavadharmashastra, mahabharata-udyogaparva
+- древко знамени  · n=6  · mahabharata-dronaparva, mahabharata-sabhaparva, ramayana-aranyakanda, mahabharata-karnaparva
+- знамен  · n=6  · mahabharata-dronaparva, mahabharata-karnaparva, mahabharata-virataparva
+- флаги  · n=4  · ramayana-ayodhyakanda, ramayana-aranyakanda
+- стягами  · n=4  · mahabharata-bhishmaparva, mahabharata-dronaparva, mahabharata-karnaparva
+- стяги  · n=4  · mahabharata-karnaparva, mahabharata-dronaparva, raghuvamsha
+- дхваджи  · n=2  · ramayana-ayodhyakanda
+- штандарт  · n=2  · ramayana-ayodhyakanda
+- кабак  · n=2  · manavadharmashastra
+- стягов  · n=2  · mahabharata-bhishmaparva
+- риши  · n=1  · ramayana-ayodhyakanda
+- отличительным знаком  · n=1  · manavadharmashastra
+- Под знаменем  · n=1  · ramayana-aranyakanda
+- колесница  · n=1  · ramayana-aranyakanda
+- Стяги  · n=1  · mahabharata-bhishmaparva
+- праздничный шест со знаменем Индры  · n=1  · mahabharata-dronaparva
+- Шест со знаменем Индры  · n=1  · mahabharata-dronaparva
+- древках знамен  · n=1  · mahabharata-dronaparva
+- древку знамени  · n=1  · mahabharata-dronaparva
+- знаменам  · n=1  · buddhacharita
+- цвет  · n=1  · buddhacharita
+- флажки  · n=1  · mahabharata-karnaparva
+- стягу  · n=1  · gitagovinda
+
+### `Dvaja-sTa` — dhvaja-stha  (n=1)
+
+- Пребывая на знамени  · n=1  · mahabharata-aranyakaparva
+
+### `DvajaH` — dhvajaḥ  (n=5)
+
+- знамя  · n=3  · mahabharata-karnaparva, ramayana-ayodhyakanda
+- знак  · n=1  · ramayana-ayodhyakanda
+- знамени  · n=1  · mahabharata-shalyaparva
+
+### `DvajaM` — dhvajaṃ  (n=9)
+
+- знамя  · n=6  · mahabharata-dronaparva, mahabharata-bhishmaparva, mahabharata-karnaparva, mahabharata-sabhaparva
+- стяг  · n=2  · mahabharata-bhishmaparva, mahabharata-karnaparva
+- знамени  · n=1  · mahabharata-karnaparva
+
+### `Dvajadruma` — dhvajadruma  (n=1)
+
+- знамена (колесниц) служили для нее деревьями  · n=1  · mahabharata-dronaparva
+
+### `DvajadrumaiH` — dhvajadrumaiḥ  (n=1)
+
+- знаменами  · n=1  · mahabharata-ashramavasikaparva
+
+### `DvajagrIva` — dhvajagrīva  (n=2)
+
+- Дхваджагривы  · n=2  · ramayana-sundarakanda
+
+### `DvajaiH` — dhvajaiḥ  (n=3)
+
+- знаменами  · n=2  · mahabharata-dronaparva
+- стягами  · n=1  · mahabharata-bhishmaparva
+
+### `Dvajam` — dhvajam  (n=18)
+
+- знамя  · n=14  · mahabharata-dronaparva, mahabharata-karnaparva, mahabharata-shalyaparva, ramayana-ayodhyakanda, mahabharata-virataparva
+- древко знамени  · n=2  · mahabharata-dronaparva, mahabharata-virataparva
+- лук  · n=1  · mahabharata-dronaparva
+- знамени  · n=1  · mahabharata-dronaparva
+
+### `DvajamAlin` — dhvajamālin  (n=2)
+
+- украшенная знаменем и гирляндами  · n=1  · mahabharata-dronaparva
+- украшена высоким стягом и гирляндами  · n=1  · mahabharata-dronaparva
+
+### `DvajamindIvara` — dhvajamindīvara  (n=1)
+
+- флаг, как цветок лотоса  · n=1  · mahabharata-aranyakaparva
+
+### `DvajapatAkinaH` — dhvajapatākinaḥ  (n=1)
+
+- снабженные знаменами и флажками  · n=1  · mahabharata-virataparva
+
+### `DvajapattigaRAnugra` — dhvajapattigaṇānugra  (n=1)
+
+- знаменами и отрядами пеших воинов  · n=1  · mahabharata-karnaparva
+
+### `DvajasTAnagataH` — dhvajasthānagataḥ  (n=1)
+
+- занимая место у знамени  · n=1  · mahabharata-udyogaparva
+
+### `DvajastamBanizaRRadeham` — dhvajastambhaniṣaṇṇadeham  (n=1)
+
+- тела, опершиеся на древки стягов  · n=1  · raghuvamsha
+
+### `Dvajasya` — dhvajasya  (n=2)
+
+- знамени  · n=2  · mahabharata-dronaparva, mahabharata-virataparva
+
+### `Dvajau` — dhvajau  (n=2)
+
+- знамена  · n=2  · mahabharata-karnaparva
+
+### `DvajavAsin` — dhvajavāsin  (n=2)
+
+- сидящего на древке знамени  · n=1  · mahabharata-udyogaparva
+- сидящих на знамени  · n=1  · mahabharata-virataparva
+
+### `DvajavAsinAm` — dhvajavāsinām  (n=1)
+
+- сидящих на знамени  · n=1  · mahabharata-virataparva
+
+### `DvajavantaH` — dhvajavantaḥ  (n=1)
+
+- со знаменами  · n=1  · mahabharata-shalyaparva
+
+### `Dvajavara` — dhvajavara  (n=1)
+
+- древко знамени  · n=1  · mahabharata-sabhaparva
+
+### `DvajavaraH` — dhvajavaraḥ  (n=1)
+
+- лучшее из знамен  · n=1  · mahabharata-virataparva
+
+### `DvajavarmAyuDAni` — dhvajavarmāyudhāni  (n=1)
+
+- знамена, доспехи и снаряжение  · n=1  · mahabharata-dronaparva
+
+### `Dvajavat` — dhvajavat  (n=1)
+
+- с флагами  · n=1  · ramayana-sundarakanda
+
+### `DvajavatI` — dhvajavatī  (n=1)
+
+- Дхваджавати  · n=1  · mahabharata-udyogaparva
+
+### `Dvajavfkza` — dhvajavṛkṣa  (n=1)
+
+- где вместо деревьев возвышаются знамена  · n=1  · mahabharata-virataparva
+
+### `DvajavizkamBa` — dhvajaviṣkambha  (n=1)
+
+- Дхваджавишкамбха  · n=1  · mahabharata-udyogaparva
+
+### `Dvajayazwi` — dhvajayaṣṭi  (n=2)
+
+- знамен на древках  · n=1  · ramayana-sundarakanda
+- флаг, шест  · n=1  · manavadharmashastra
+
+### `DvajayazwiH` — dhvajayaṣṭiḥ  (n=1)
+
+- древко его знамени  · n=1  · mahabharata-sauptikaparva
+
+### `Dvajayazwim` — dhvajayaṣṭim  (n=1)
+
+- древко своего знамени  · n=1  · mahabharata-karnaparva
+
+### `Dvaje` — dhvaje  (n=2)
+
+- знамени  · n=1  · mahabharata-udyogaparva
+- на знамени  · n=1  · mahabharata-virataparva
+
+### `Dvajena` — dhvajena  (n=5)
+
+- знаменем  · n=4  · mahabharata-bhishmaparva, mahabharata-dronaparva, mahabharata-udyogaparva, mahabharata-virataparva
+- стягом  · n=1  · mahabharata-dronaparva
+
+### `Dvajezu` — dhvajeṣu  (n=4)
+
+- среди знамен  · n=2  · rigveda
+- знамена  · n=1  · rigveda
+- на знамена  · n=1  · mahabharata-virataparva
+
+### `Dvajin` — dhvajin  (n=9)
+
+- несущих знамена  · n=1  · ramayana-sundarakanda
+- имея знак  · n=1  · manavadharmashastra
+- со знаменем  · n=1  · mahabharata-adiparva
+- имеющие знамя  · n=1  · mahabharata-adiparva
+- со стягами  · n=1  · mahabharata-bhishmaparva
+- знамена  · n=1  · mahabharata-dronaparva
+- со знаменами  · n=1  · mahabharata-udyogaparva
+- подняли знамена  · n=1  · mahabharata-udyogaparva
+- Дхваджин  · n=1  · mahabharata-sabhaparva
+
+### `DvajinAm` — dhvajinām  (n=1)
+
+- воинов со знаменами  · n=1  · mahabharata-virataparva
+
+### `DvajinI` — dhvajinī  (n=16)
+
+- войско  · n=9  · mahabharata-shalyaparva, ramayana-ayodhyakanda, mahabharata-dronaparva, ramayana-sundarakanda, mahabharata-aranyakaparva
+- флагах  · n=1  · ramayana-balakanda
+- знамена  · n=1  · mahabharata-bhishmaparva
+- рать  · n=1  · mahabharata-bhishmaparva
+- воины знаменосной рати  · n=1  · mahabharata-bhishmaparva
+- вражеское войско  · n=1  · mahabharata-dronaparva
+- войска  · n=1  · buddhacharita
+- дхваджини  · n=1  · mahabharata-udyogaparva
+
+### `DvajinIm` — dhvajinīm  (n=3)
+
+- с развернутыми боевыми знаменами  · n=1  · ramayana-ayodhyakanda
+- рать  · n=1  · mahabharata-bhishmaparva
+- воинство  · n=1  · mahabharata-karnaparva
+
+### `DvajinImuKAt` — dhvajinīmukhāt  (n=1)
+
+- с головного участка битвы  · n=1  · mahabharata-dronaparva
+
+### `DvajinImuKezu` — dhvajinīmukheṣu  (n=1)
+
+- во главе полков  · n=1  · mahabharata-bhishmaparva
+
+### `DvajinIpati` — dhvajinīpati  (n=2)
+
+- полководец  · n=1  · ramayana-sundarakanda
+- предводитель знаменосного воинства  · n=1  · mahabharata-bhishmaparva
+
+### `DvajinaH` — dhvajinaḥ  (n=1)
+
+- со знаменами  · n=1  · mahabharata-aranyakaparva
+
+### `DvajinyA` — dhvajinyā  (n=2)
+
+- под реющими знаменами  · n=1  · ramayana-ayodhyakanda
+- при помощи войска  · n=1  · mahabharata-sabhaparva
+
+### `DvajinyAm` — dhvajinyām  (n=1)
+
+- над войском  · n=1  · mahabharata-dronaparva
+
+### `DvajinyaH` — dhvajinyaḥ  (n=1)
+
+- войска  · n=1  · mahabharata-dronaparva
+
+### `Dvan` — dhvan  (n=1)
+
+- звучание  · n=1  · nyaya-bhashya
+
+### `Dvana` — dhvana  (n=1)
+
+- дробь  · n=1  · atharvaveda
+
+### `Dvanati` — dhvanati  (n=1)
+
+- жужжит  · n=1  · gitagovinda
+
+### `Dvanau` — dhvanau  (n=1)
+
+- звуках  · n=1  · hatha-yoga-pradipika
+
+### `DvanayIt` — dhvanayīt  (n=1)
+
+- закоптит  · n=1  · rigveda
+
+### `DvanerantargataM` — dhvanerantargataṃ  (n=1)
+
+- сущность  · n=1  · hatha-yoga-pradipika
+
+### `Dvani` — dhvani  (n=28)
+
+- звуки  · n=6  · hatha-yoga-pradipika, ramayana-sundarakanda, mahabharata-aranyakaparva, mahabharata-dronaparva, gitagovinda
+- шум  · n=4  · ramayana-balakanda, mahabharata-dronaparva, mahabharata-karnaparva, raghuvamsha
+- звуком  · n=2  · yoga-sutry_vyasa-bhashya
+- звоном  · n=1  · ramayana-ayodhyakanda
+- заклинание  · n=1  · mahabharata-aranyakaparva
+- звуков  · n=1  · mahabharata-dronaparva
+- голоса  · n=1  · mahabharata-dronaparva
+- Песня  · n=1  · buddhacharita
+- цокот копыт  · n=1  · buddhacharita
+- звучно  · n=1  · buddhacharita
+- песнопений  · n=1  · mahabharata-udyogaparva
+- звук  · n=1  · raghuvamsha
+- безмолвии  · n=1  · shatakatrayam
+- грохот  · n=1  · shatakatrayam-serebryakov
+- звенящих  · n=1  · shatakatrayam-serebryakov
+- стук  · n=1  · amaru-shataka
+- всхлипы  · n=1  · amaru-shataka
+- эхо  · n=1  · amaru-shataka
+- громомъ  · n=1  · megha-duta
+
+### `DvaniH` — dhvaniḥ  (n=6)
+
+- Дхвани  · n=2  · devi-gita
+- щебечут  · n=1  · ramayana-ayodhyakanda
+- звук  · n=1  · manavadharmashastra
+- гул  · n=1  · mahabharata-dronaparva
+- громомъ  · n=1  · megha-duta
+
+### `Dvanim` — dhvanim  (n=2)
+
+- звук  · n=1  · hatha-yoga-pradipika
+- звука  · n=1  · hatha-yoga-pradipika
+
+### `DvanimAtra` — dhvanimātra  (n=3)
+
+- звучании  · n=1  · nyaya-bhashya
+- только звучание  · n=1  · nyaya-bhashya
+- простой  · n=1  · nyaya-bhashya
+
+### `DvanipariRAmamAtravizaya` — dhvanipariṇāmamātraviṣaya  (n=1)
+
+- объект — лишь трансформировавшееся в артикулируемые звуки движение воздуха  · n=1  · yoga-sutry_vyasa-bhashya
+
+### `DvaniprAjYaMmanye` — dhvaniprājñaṃmanye  (n=1)
+
+- рокочет громко гром  · n=1  · shatakatrayam
+
+### `Dvanirya` — dhvanirya  (n=1)
+
+- звук  · n=1  · hatha-yoga-pradipika
+
+### `DvanisparSa` — dhvanisparśa  (n=1)
+
+- звуки и прикосновения  · n=1  · nyaya-bhashya
+
+### `DvanitA` — dhvanitā  (n=1)
+
+- намек  · n=1  · mahabharata-shalyaparva
+
+### `Dvanyasya` — dhvanyasya  (n=2)
+
+- Дхваньей  · n=1  · rigveda
+- Дхванья  · n=1  · rigveda
+
+### `Dvarasa` — dhvarasa  (n=1)
+
+- несущий гибель  · n=1  · rigveda
+
+### `DvarasaH` — dhvarasaḥ  (n=1)
+
+- плетущих козни  · n=1  · rigveda
+
+### `DvasanAv` — dhvasanāv  (n=2)
+
+- на мечущий искры  · n=1  · rigveda
+- мечущий искры  · n=1  · atharvaveda
+
+### `Dvasantim` — dhvasantim  (n=2)
+
+- Дхвасанти  · n=2  · rigveda
+
+### `Dvasayant` — dhvasayant  (n=1)
+
+- поднимающему дым  · n=1  · rigveda
+
+### `DvasayantaH` — dhvasayantaḥ  (n=1)
+
+- дымящие  · n=1  · rigveda
+
+### `Dvasayo` — dhvasayo  (n=1)
+
+- забрызгал (пеной)  · n=1  · rigveda
+
+### `DvasirA` — dhvasirā  (n=2)
+
+- затемненными  · n=2  · rigveda
+
+### `DvasmAnaH` — dhvasmānaḥ  (n=2)
+
+- Маратели  · n=2  · rigveda
+
+### `Dvasman` — dhvasman  (n=2)
+
+- помрачение  · n=2  · rigveda
+
+### `Dvasmanvad` — dhvasmanvad  (n=1)
+
+- застилающий дым  · n=1  · rigveda
+
+### `Dvasmanvat` — dhvasmanvat  (n=2)
+
+- застилающий дым  · n=2  · rigveda
+
+### `DvasrA` — dhvasrā  (n=2)
+
+- в тени  · n=2  · rigveda
+
+### `DvasrAH` — dhvasrāḥ  (n=1)
+
+- исчезающих  · n=1  · rigveda
+
+### `Dvasra` — dhvasra  (n=2)
+
+- Дхвасры  · n=2  · rigveda
+
+### `DvastA` — dhvastā  (n=1)
+
+- покрывая  · n=1  · ramayana-ayodhyakanda
+
+### `DvastAH` — dhvastāḥ  (n=1)
+
+- повержены  · n=1  · mahabharata-karnaparva
+
+### `DvastAjYAnAnAm` — dhvastājñānānām  (n=1)
+
+- их незнание уничтожается  · n=1  · gitarthasamgraha-abhinavagupta
+
+### `DvastAkAram` — dhvastākāram  (n=1)
+
+- в полнейшей растерянности  · n=1  · mahabharata-dronaparva
+
+### `Dvasta` — dhvasta  (n=13)
+
+- покрыто  · n=1  · ramayana-ayodhyakanda
+- покрытому  · n=1  · ramayana-ayodhyakanda
+- покрытое  · n=1  · ramayana-sundarakanda
+- покрытая  · n=1  · ramayana-sundarakanda
+- Покрытыми  · n=1  · ramayana-aranyakanda
+- подернуты  · n=1  · ramayana-aranyakanda
+- разрушенные  · n=1  · ramayana-aranyakanda
+- опали  · n=1  · ramayana-aranyakanda
+- осыпались  · n=1  · ramayana-aranyakanda
+- вырву  · n=1  · ramayana-aranyakanda
+- гибель  · n=1  · ramayana-aranyakanda
+- окутаны  · n=1  · mahabharata-dronaparva
+- поверженный  · n=1  · mahabharata-striparva
+
+### `DvastakeSAntam` — dhvastakeśāntam  (n=1)
+
+- волосы пропитаны  · n=1  · mahabharata-sauptikaparva
+
+### `DvastakeSI` — dhvastakeśī  (n=1)
+
+- с растрепанными волосами  · n=1  · ramayana-sundarakanda
+
+### `Dvastam` — dhvastam  (n=1)
+
+- очищала  · n=1  · ramayana-ayodhyakanda
+
+### `DvastamUrDajaH` — dhvastamūrdhajaḥ  (n=1)
+
+- Со спутанными волосами  · n=1  · ramayana-balakanda
+
+### `DvastapremRi` — dhvastapremṇi  (n=1)
+
+- разлюбившем  · n=1  · amaru-shataka
+
+### `DvayeTAm` — dhvayethām  (n=1)
+
+- призовите  · n=1  · atharvaveda
+
+### `DyA` — dhyā  (n=9)
+
+- мыслящие  · n=3  · ch-up
+- размышляя  · n=2  · mahabharata-adiparva, manavadharmashastra
+- созерцает  · n=2  · devi-gita
+- думая  · n=1  · ramayana-sundarakanda
+- размышлять  · n=1  · ch-up
+
+### `DyAhi` — dhyāhi  (n=2)
+
+- пожелай  · n=1  · mahabharata-dronaparva
+- думай  · n=1  · mahabharata-shalyaparva
+
+### `DyAmi` — dhyāmi  (n=1)
+
+- думаю  · n=1  · mahabharata-udyogaparva
+
+### `DyAnAkAra` — dhyānākāra  (n=4)
+
+- форма самой дхьяны  · n=4  · yoga-sutry_vyasa-bhashya
+
+### `DyAnAnukUla` — dhyānānukūla  (n=1)
+
+- приятно для созерцания  · n=1  · buddhacharita
+
+### `DyAnApAdAMSAH` — dhyānāpādāṃśāḥ  (n=2)
+
+- причастны [плодам] созерцания  · n=2  · ch-up
+
+### `DyAnAspada` — dhyānāspada  (n=1)
+
+- Невозмутимому  · n=1  · kumarasambhava
+
+### `DyAnAt` — dhyānāt  (n=5)
+
+- дхьяне  · n=2  · mahabharata-ashramavasikaparva
+- чем внимание  · n=1  · ramanuja_gitabhashya
+- медитации  · n=1  · bhagavadgita-1914
+- созерцания  · n=1  · bhagavadgita-sharma
+
+### `DyAna` — dhyāna  (n=143)
+
+- созерцание  · n=28  · ch-up, devi-gita, yoga-sutry_vyasa-bhashya, mahabharata-bhishmaparva, bhagavadgita-erman, nyaya-bhashya, gitarthasamgraha-abhinavagupta, bhagavadgita-burba, bhagavadgita-sementsov, vedartha-samgraha_ramanuja, yotat-up, mnar-up, jabala-up
+- медитация  · n=16  · bhagavadgita-burba, bhagavadgita-prabhupada, yoga-sutry, yoga-sutry_sharma, paramarthasara-abhinavagupta, bhagavadgita-1914, bhagavadgita-radha, yoga-sutry_vyasa-bhashya, yoga-sutry_zagumennov, vedartha-samgraha_ramanuja
+- дхьяна  · n=9  · yoga-sutry_sharma, gitarthasamgraha-abhinavagupta, bhagavadgity, bhagavadgita-radha, yoga-sutry_vyasa-bhashya, yoga-sutry, yoga-sutry_zagumennov, yotat-up
+- размышления  · n=5  · ramayana-sundarakanda, bhagavadgita-smirnov, devi-gita, shatakatrayam, shv-up
+- размышление  · n=4  · mai-up, ramayana-balakanda, bhagavadgity
+- Созерцание  · n=4  · buddhacharita, gitarthasamgraha-abhinavagupta, yotat-up, mnar-up
+- созерцанием  · n=4  · devi-gita, gitarthasamgraha-abhinavagupta, yotat-up
+- созерцания  · n=4  · yoga-sutry_vyasa-bhashya, ch-up, kai-up
+- мысли  · n=3  · kau-up, ramayana-ayodhyakanda
+- созерцания-дхьяны  · n=3  · buddhacharita
+- медитации  · n=3  · bhagavadgita-1914, yoga-sutry, gitartha-samgraha_yamunacharya
+- созерцанье  · n=3  · bhagavadgita-sementsov, shatakatrayam, buddhacharita
+- созерцанию  · n=3  · devi-gita, yoga-sutry_vyasa-bhashya, jabala-up
+- раздумье  · n=2  · ramayana-ayodhyakanda, mahabharata-bhishmaparva
+- думы  · n=2  · ramayana-sundarakanda
+- размышлением  · n=2  · manavadharmashastra, rampt-up
+- самоуглубление  · n=2  · bhagavadgita-erman
+- с помощью медитации  · n=2  · bhagavadgita-radha
+- йогического созерцания  · n=2  · mahabharata-ashvamedhikaparva, yoga-sutry_vyasa-bhashya
+- дхьяну  · n=2  · yoga-sutry_vyasa-bhashya
+- созерцании  · n=2  · vedartha-samgraha_ramanuja, yotat-up
+- мыслями  · n=2  · kau-up
+- в раздумье  · n=1  · ramayana-ayodhyakanda
+- пребывать в раздумьях  · n=1  · ramayana-sundarakanda
+- мысль  · n=1  · manavadharmashastra
+- размышлению  · n=1  · mahabharata-bhishmaparva
+- самоуглубления  · n=1  · mahabharata-bhishmaparva
+- Самоуглубление  · n=1  · mahabharata-bhishmaparva
+- Размышлением  · n=1  · mahabharata-bhishmaparva
+- размышляя  · n=1  · mahabharata-dronaparva
+- сосредоточения  · n=1  · buddhacharita
+- дума  · n=1  · buddhacharita
+- созерцание-дхьяну  · n=1  · buddhacharita
+- созерцание-дхьяна  · n=1  · buddhacharita
+- ступень созерцания  · n=1  · buddhacharita
+- ступени  · n=1  · buddhacharita
+- размышление об истине  · n=1  · mahabharata-udyogaparva
+- созерцая  · n=1  · gitarthasamgraha-abhinavagupta
+- Медитацией  · n=1  · bhagavadgita-burba
+- вниманьем  · n=1  · ramanuja_gitabhashya
+- внимание  · n=1  · ramanuja_gitabhashya
+- напряженным вниманьем  · n=1  · ramanuja_gitabhashya
+- сосредоточением  · n=1  · bhagavadgity
+- размышленье  · n=1  · bhagavadgita-smirnov
+- размышленіе  · n=1  · bhagavadgita-1788
+- любовь  · n=1  · bhagavadgita-1909
+- погружаясь  · n=1  · bhagavadgita-1909
+- глубокое размышление  · n=1  · mahabharata-sabhaparva
+- грезить  · n=1  · shatakatrayam
+- размышлений  · n=1  · shatakatrayam-serebryakov
+- воображения  · n=1  · gitagovinda
+- из состояния самоуглубления  · n=1  · shukasaptati
+- Дхьяна  · n=1  · yoga-sutry
+- дхьяны  · n=1  · yoga-sutry_sharma
+- медитацией  · n=1  · yoga-sutry_zagumennov
+- отрешенному  · n=1  · mahabharata-striparva
+- Размышление  · n=1  · mai-up
+- мыслей  · n=1  · kau-up
+
+### `DyAna-lagnA` — dhyāna-lagnā  (n=1)
+
+- предавшись созерцанию  · n=1  · gitagovinda
+
+### `DyAna-layena` — dhyāna-layena  (n=1)
+
+- отдавшись созерцанию  · n=1  · gitagovinda
+
+### `DyAna-yoga` — dhyāna-yoga  (n=2)
+
+- набожность размышленія  · n=1  · bhagavadgita-1788
+- в медитацию на Господа  · n=1  · bhagavadgita-radha
+
+### `DyAna-yoga-para` — dhyāna-yoga-para  (n=7)
+
+- имеющий высшей целью йогу медитации  · n=1  · bhagavadgita-burba
+- приверженный медитативной йоге  · n=1  · bhagavadgita-burba
+- постоянно сосредоточенный в размышлении и йоге  · n=1  · bhagavadgita-1914
+- созерцаетъ  · n=1  · bhagavadgita-1909
+- преданный медитации и йоге  · n=1  · bhagavadgita-1909
+- погруженный в транс  · n=1  · bhagavadgita-prabhupada
+- пребывает в состоянии транса  · n=1  · bhagavadgita-prabhupada
+
+### `DyAnaM` — dhyānaṃ  (n=2)
+
+- созерцание  · n=1  · bhagavadgita-sharma
+- размышление  · n=1  · shatakatrayam-serebryakov
+
+### `DyAnaSokaparAyaRaH` — dhyānaśokaparāyaṇaḥ  (n=1)
+
+- погруженный в раздумье и печаль  · n=1  · mahabharata-dronaparva
+
+### `DyAnaSokaparItAtmA` — dhyānaśokaparītātmā  (n=1)
+
+- чья душа была охвачена размышлениями и скорбью  · n=1  · ramayana-sundarakanda
+
+### `DyAnacCede` — dhyānacchede  (n=1)
+
+- когда прерываю размышления  · n=1  · shatakatrayam-serebryakov
+
+### `DyAnaglAna` — dhyānaglāna  (n=1)
+
+- изнуренный мыслями  · n=1  · mahabharata-sabhaparva
+
+### `DyAnaheyAH` — dhyānaheyāḥ  (n=1)
+
+- устраняет  · n=1  · yoga-sutry_zagumennov
+
+### `DyAnaja` — dhyānaja  (n=1)
+
+- порождено йогическим сосредоточением  · n=1  · yoga-sutry_vyasa-bhashya
+
+### `DyAnajuzAm` — dhyānajuṣām  (n=1)
+
+- предаются созерцанию  · n=1  · raghuvamsha
+
+### `DyAnam` — dhyānam  (n=9)
+
+- йогическое созерцание  · n=2  · mahabharata-ashvamedhikaparva
+- медитация  · n=2  · vedartha-samgraha_ramanuja
+- память  · n=1  · ramayana-balakanda
+- в размышление  · n=1  · mahabharata-bhishmaparva
+- раздумье  · n=1  · mahabharata-bhishmaparva
+- в раздумье  · n=1  · mahabharata-dronaparva
+- Дхьяна  · n=1  · yoga-sutry_zagumennov
+
+### `DyAnamAsTitam` — dhyānamāsthitam  (n=1)
+
+- погруженному в мысли  · n=1  · mahabharata-adiparva
+
+### `DyAnamUkaM` — dhyānamūkaṃ  (n=1)
+
+- пребывающему в безмолвном размышлении  · n=1  · mahabharata-karnaparva
+
+### `DyAnanitya` — dhyānanitya  (n=1)
+
+- постоянно погружен в размышления  · n=1  · mahabharata-aranyakaparva
+
+### `DyAnaparA` — dhyānaparā  (n=1)
+
+- предавалась мысленному созерцанию  · n=1  · mahabharata-aranyakaparva
+
+### `DyAnapara` — dhyānapara  (n=4)
+
+- пребывающий в думах  · n=1  · ramayana-sundarakanda
+- поглощенный своими мыслями  · n=1  · mahabharata-aranyakaparva
+- погрузился в задумчивость  · n=1  · mahabharata-aranyakaparva
+- погружен в мысли  · n=1  · mahabharata-adiparva
+
+### `DyAnasamvignahfdaya` — dhyānasamvignahṛdaya  (n=1)
+
+- Сердца их полны смятения  · n=1  · ramayana-ayodhyakanda
+
+### `DyAnastimitalocanaH` — dhyānastimitalocanaḥ  (n=1)
+
+- погруженный, сомкнувший вежды  · n=1  · raghuvamsha
+
+### `DyAnasuKa` — dhyānasukha  (n=1)
+
+- радость созерцания-дхьяны  · n=1  · buddhacharita
+
+### `DyAnatatparAm` — dhyānatatparām  (n=1)
+
+- погруженную в свои думы  · n=1  · mahabharata-aranyakaparva
+
+### `DyAnaviDi` — dhyānavidhi  (n=1)
+
+- способов созерцания  · n=1  · buddhacharita
+
+### `DyAnayogAn` — dhyānayogān  (n=1)
+
+- созерцанию и йоге  · n=1  · mahabharata-ashvamedhikaparva
+
+### `DyAnayogAnugatA` — dhyānayogānugatā  (n=1)
+
+- размышлению и йоге  · n=1  · shv-up
+
+### `DyAnayoga` — dhyānayoga  (n=6)
+
+- Путем размышления  · n=1  · manavadharmashastra
+- путем размышления  · n=1  · manavadharmashastra
+- йога размышления  · n=1  · mahabharata-aranyakaparva
+- йога  · n=1  · shv-up
+- йоги размышления  · n=1  · pai-up
+- Йоги размышления  · n=1  · pai-up
+
+### `DyAnayogabalAnvitAH` — dhyānayogabalānvitāḥ  (n=2)
+
+- обладая силой созерцания и йоги  · n=1  · mahabharata-adiparva
+- обладающие силой медитации и йоги  · n=1  · mahabharata-adiparva
+
+### `DyAnayogaparAyaRA` — dhyānayogaparāyaṇā  (n=1)
+
+- погруженная в глубокие раздумья  · n=1  · mahabharata-aranyakaparva
+
+### `DyAnayogapara` — dhyānayogapara  (n=7)
+
+- постоянно преданный созерцанию и сопряжению  · n=2  · mahabharata-bhishmaparva, bhagavadgita-erman
+- в созерцании сосредоточен  · n=2  · ramanuja_gitabhashya, bhagavadgita-sementsov
+- созерцанием и йогой  · n=1  · gitarthasamgraha-abhinavagupta
+- преданный дхьяна-йоге  · n=1  · bhagavadgita-smirnov
+- погруженный в самосозерцание  · n=1  · bhagavadgita-sharma
+
+### `DyAndvadfidna` — dhyāndvadfidna  (n=1)
+
+- силой воображения  · n=1  · gitagovinda
+
+### `DyAnena` — dhyānena  (n=8)
+
+- созерцанием  · n=2  · devi-gita
+- посредством сосредоточенья  · n=1  · bhagavadgita-smirnov
+- размышляя  · n=1  · bhagavadgita-1788
+- созерцаньем  · n=1  · bhagavadgita-sementsov
+- дхьяны  · n=1  · bhagavadgita-sharma
+- медитацией  · n=1  · bhagavadgita-prabhupada
+- медитацию  · n=1  · bhagavadgita-prabhupada
+
+### `DyAnika` — dhyānika  (n=1)
+
+- на размышлении  · n=1  · manavadharmashastra
+
+### `DyAnin` — dhyānin  (n=1)
+
+- погружены в созерцание  · n=1  · mahabharata-ashvamedhikaparva
+
+### `DyAtA` — dhyātā  (n=1)
+
+- вызванная в памяти  · n=1  · mahabharata-shalyaparva
+
+### `DyAta` — dhyāta  (n=12)
+
+- мысленно произнесли  · n=1  · mahabharata-aranyakaparva
+- подумаете  · n=1  · mahabharata-adiparva
+- затаил  · n=1  · mahabharata-udyogaparva
+- допущена  · n=1  · mahabharata-udyogaparva
+- мысленно воззвал  · n=1  · mahabharata-karnaparva
+- замысел  · n=1  · mahabharata-karnaparva
+- подумали  · n=1  · mahabharata-shalyaparva
+- подумал  · n=1  · mahabharata-shalyaparva
+- радели  · n=1  · shatakatrayam
+- предавались размышлению  · n=1  · shatakatrayam-serebryakov
+- размышлению  · n=1  · shatakatrayam-serebryakov
+- размышляют  · n=1  · ait-up
+
+### `DyAtaM` — dhyātaṃ  (n=1)
+
+- созерцание  · n=1  · shatakatrayam
+
+### `DyAtam` — dhyātam  (n=1)
+
+- помышляли  · n=1  · shatakatrayam-serebryakov
+
+### `DyAtamAtra` — dhyātamātra  (n=1)
+
+- едва помыслил  · n=1  · mahabharata-aranyakaparva
+
+### `DyAtf` — dhyātṛ  (n=2)
+
+- созерцатель  · n=1  · kumarasambhava
+- созерцающий  · n=1  · mnar-up
+
+### `DyAtfDyAna` — dhyātṛdhyāna  (n=1)
+
+- различие между размышляющим и размышлением  · n=1  · pai-up
+
+### `DyAtuM` — dhyātuṃ  (n=1)
+
+- понять  · n=1  · buddhacharita
+
+### `DyAtvA` — dhyātvā  (n=40)
+
+- поразмыслив  · n=8  · mahabharata-shalyaparva, ramayana-sundarakanda, mahabharata-bhishmaparva, buddhacharita, mahabharata-ashramavasikaparva, mai-up
+- подумав  · n=6  · mahabharata-dronaparva, ramayana-sundarakanda, ramayana-aranyakanda, mahabharata-udyogaparva, amaru-shataka
+- подумала  · n=3  · mahabharata-aranyakaparva, ramayana-aranyakanda
+- задумавшись  · n=2  · mahabharata-aranyakaparva, mahabharata-sauptikaparva
+- задумался  · n=2  · mahabharata-ashvamedhikaparva, mahabharata-striparva
+- размышляя  · n=2  · mai-up, ait-up
+- Вспомнив  · n=1  · ramayana-ayodhyakanda
+- подумал  · n=1  · ramayana-sundarakanda
+- знала  · n=1  · ramayana-aranyakanda
+- погрузился в раздумья  · n=1  · ramayana-balakanda
+- предался размышлениям  · n=1  · mahabharata-aranyakaparva
+- размыслив  · n=1  · mahabharata-aranyakaparva
+- предавалась размышлениям  · n=1  · mahabharata-aranyakaparva
+- призадумавшись  · n=1  · mahabharata-aranyakaparva
+- припомнив  · n=1  · mahabharata-adiparva
+- помыслив  · n=1  · mahabharata-bhishmaparva
+- размышлял  · n=1  · mahabharata-bhishmaparva
+- почитая  · n=1  · mahabharata-bhishmaparva
+- созерцая  · n=1  · gitarthasamgraha-abhinavagupta
+- пребывал в раздумье  · n=1  · mahabharata-karnaparva
+- погружался в размышления  · n=1  · mahabharata-karnaparva
+- После такого созерцания  · n=1  · devi-gita
+- Размышляя  · n=1  · kai-up
+
+### `DyAtvaivaM` — dhyātvaivaṃ  (n=1)
+
+- Созерцая таким образом  · n=1  · devi-gita
+
+### `DyAy` — dhyāy  (n=1)
+
+- чьи думы направлены  · n=1  · mahabharata-bhishmaparva
+
+### `DyAyAmi` — dhyāyāmi  (n=2)
+
+- во мне не меркнут воспоминания  · n=1  · chaurapanchashika
+- помню  · n=1  · chaurapanchashika
+
+### `DyAyIta` — dhyāyīta  (n=1)
+
+- должен стать предметом медитации  · n=1  · vedartha-samgraha_ramanuja
+
+### `DyAyItavya` — dhyāyītavya  (n=1)
+
+- следует медитировать  · n=1  · vedartha-samgraha_ramanuja
+
+### `DyAya` — dhyāya  (n=1)
+
+- медитировать  · n=1  · vedartha-samgraha_ramanuja
+
+### `DyAyaM` — dhyāyaṃ  (n=1)
+
+- диктуется  · n=1  · mahabharata-ashvamedhikaparva
+
+### `DyAyaTa` — dhyāyatha  (n=2)
+
+- созерцайте  · n=1  · devi-gita
+- размышляйте  · n=1  · mun-up
+
+### `DyAyamAnA` — dhyāyamānā  (n=2)
+
+- Молилась  · n=1  · ramayana-ayodhyakanda
+- медитировала  · n=1  · ramayana-ayodhyakanda
+
+### `DyAyamAna` — dhyāyamāna  (n=6)
+
+- размышляющий  · n=2  · mun-up
+- обдумывая  · n=1  · mahabharata-adiparva
+- размышляли  · n=1  · mahabharata-shalyaparva
+- погрузился в созерцание  · n=1  · mahabharata-ashvamedhikaparva
+- погрузившись в глубокое раздумье  · n=1  · mahabharata-striparva
+
+### `DyAyan` — dhyāyan  (n=16)
+
+- размышляя  · n=2  · mahabharata-dronaparva, ch-up
+- Созерцая  · n=2  · devi-gita
+- Обратился с молитвой  · n=1  · ramayana-ayodhyakanda
+- за одну такую мысль  · n=1  · mahabharata-aranyakaparva
+- погруженный в раздумья  · n=1  · mahabharata-aranyakaparva
+- Погруженный в мысли  · n=1  · mahabharata-adiparva
+- погрузился в раздумье  · n=1  · mahabharata-bhishmaparva
+- замышляя  · n=1  · mahabharata-udyogaparva
+- в размышлении  · n=1  · mahabharata-sabhaparva
+- сконцентрировав ум  · n=1  · hatha-yoga-pradipika
+- помышляя  · n=1  · gitagovinda
+- глядит  · n=1  · amaru-shataka
+- созерцая  · n=1  · yotat-up
+- обратив помыслы  · n=1  · mahabharata-sauptikaparva
+
+### `DyAyant` — dhyāyant  (n=2)
+
+- предающуюся созерцанию  · n=1  · ramayana-sundarakanda
+- размышляющему  · n=1  · mahabharata-bhishmaparva
+
+### `DyAyantI` — dhyāyantī  (n=3)
+
+- Опустившей  · n=1  · ramayana-aranyakanda
+- Погруженную в раздумья  · n=1  · ramayana-balakanda
+- помышляя  · n=1  · gitagovinda
+
+### `DyAyanta` — dhyāyanta  (n=15)
+
+- размышляя  · n=3  · mahabharata-udyogaparva, bhagavadgita-smirnov, bhagavadgita-sharma
+- предается созерцанию  · n=1  · mahabharata-aranyakaparva
+- погруженный в созерцание  · n=1  · mahabharata-aranyakaparva
+- погруженный в думы  · n=1  · mahabharata-aranyakaparva
+- постигая  · n=1  · mahabharata-bhishmaparva
+- погрузившиеся в думы  · n=1  · mahabharata-bhishmaparva
+- погруженному в мысли  · n=1  · mahabharata-dronaparva
+- созерцанием  · n=1  · gitarthasamgraha-abhinavagupta
+- медитирующие  · n=1  · bhagavadgita-burba
+- активным вниманьем  · n=1  · ramanuja_gitabhashya
+- созерцаютъ  · n=1  · bhagavadgita-1788
+- созерцаньем  · n=1  · bhagavadgita-sementsov
+- жертвуя  · n=1  · bhagavadgita-1909
+
+### `DyAyantaH` — dhyāyantaḥ  (n=9)
+
+- понурые  · n=1  · mahabharata-bhishmaparva
+- думали  · n=1  · mahabharata-dronaparva
+- думать  · n=1  · mahabharata-udyogaparva
+- сосредоточиваются  · n=1  · bhagavadgita-1914
+- созерцаютъ  · n=1  · bhagavadgity
+- постигая  · n=1  · bhagavadgita-erman
+- медитирующие  · n=1  · bhagavadgita-prabhupada
+- сосредоточить  · n=1  · bhagavadgita-prabhupada
+- размышляя  · n=1  · bhagavadgita-radha
+
+### `DyAyantam` — dhyāyantam  (n=1)
+
+- мыслей  · n=1  · ramayana-ayodhyakanda
+
+### `DyAyanti` — dhyāyanti  (n=3)
+
+- созерцают  · n=2  · ch-up
+- затуманили  · n=1  · ramayana-aranyakanda
+
+### `DyAyasi` — dhyāyasi  (n=1)
+
+- страдаешь  · n=1  · mahabharata-adiparva
+
+### `DyAyasva` — dhyāyasva  (n=1)
+
+- созерцай  · n=1  · devi-gita
+
+### `DyAyat` — dhyāyat  (n=4)
+
+- погруженному в раздумье  · n=1  · mahabharata-bhishmaparva
+- чьи думы направлены  · n=1  · bhagavadgita-erman
+- провидят  · n=1  · shatakatrayam
+- вспомнил  · n=1  · amaru-shataka
+
+### `DyAyatA` — dhyāyatā  (n=1)
+
+- изойдя  · n=1  · amaru-shataka
+
+### `DyAyatAm` — dhyāyatām  (n=1)
+
+- размышляющих  · n=1  · shatakatrayam-serebryakov
+
+### `DyAyatIva` — dhyāyatīva  (n=2)
+
+- словно думая  · n=2  · br-up
+
+### `DyAyata` — dhyāyata  (n=3)
+
+- созерцающего  · n=1  · gitarthasamgraha-abhinavagupta
+- помышляющий  · n=1  · bhagavadgita-smirnov
+- размышляют  · n=1  · mai-up
+
+### `DyAyataH` — dhyāyataḥ  (n=9)
+
+- Погрузился в глубокую  · n=1  · ramayana-ayodhyakanda
+- помышляющего  · n=1  · ramanuja_gitabhashya
+- Устремление мысли  · n=1  · bhagavadgita-1914
+- вращает  · n=1  · bhagavadgita-sementsov
+- мысль направлена  · n=1  · bhagavadgita-1909
+- потворствующий воспоминаниям  · n=1  · bhagavadgita-sharma
+- созерцающего  · n=1  · bhagavadgita-prabhupada
+- созерцает  · n=1  · bhagavadgita-prabhupada
+- медитировать  · n=1  · paramarthasara-abhinavagupta
+
+### `DyAyate` — dhyāyate  (n=1)
+
+- мыслит  · n=1  · mai-up
+
+### `DyAyati` — dhyāyati  (n=9)
+
+- думает  · n=3  · manavadharmashastra, mahabharata-adiparva
+- созерцает  · n=3  · ch-up, gitagovinda
+- погружается в созерцание  · n=2  · gitagovinda
+- мыслят  · n=1  · kau-up
+
+### `DyAyato` — dhyāyato  (n=4)
+
+- мысленно созерцающего  · n=1  · bhagavadgita-burba
+- помышляет  · n=1  · bhagavadgity
+- слѣдующій  · n=1  · bhagavadgita-1788
+- у думающего  · n=1  · bhagavadgita-radha
+
+### `DyAyet` — dhyāyet  (n=8)
+
+- пусть созерцает  · n=2  · devi-gita
+- пусть предаётся внутреннему созерцанию  · n=1  · mahabharata-ashvamedhikaparva
+- пусть он созерцает  · n=1  · devi-gita
+- созерцать  · n=1  · devi-gita
+- следует созерцать  · n=1  · yoga-sutry_vyasa-bhashya
+- следует размышлять  · n=1  · yotat-up
+- размышляет  · n=1  · brb-up
+
+### `DyAyin` — dhyāyin  (n=3)
+
+- созерцающий  · n=1  · hatha-yoga-pradipika
+- созерцатели  · n=1  · yoga-sutry_vyasa-bhashya
+- сосредоточившись  · n=1  · mai-up
+
+### `Dyai` — dhyai  (n=2)
+
+- размышления  · n=1  · mahabharata-adiparva
+- задумался  · n=1  · mahabharata-shalyaparva
+
+### `DyeyAdi` — dhyeyādi  (n=1)
+
+- объекты созерцания  · n=1  · gitarthasamgraha-abhinavagupta
+
+### `DyeyAkAra` — dhyeyākāra  (n=4)
+
+- форма объекта созерцания  · n=3  · yoga-sutry_vyasa-bhashya
+- форма созерцаемого объекта  · n=1  · yoga-sutry_vyasa-bhashya
+
+### `DyeyAlambanasya` — dhyeyālambanasya  (n=1)
+
+- на созерцаемом объекте  · n=1  · yoga-sutry_vyasa-bhashya
+
+### `Dyeya` — dhyeya  (n=7)
+
+- Созерцаемого  · n=1  · gitarthasamgraha-abhinavagupta
+- зрелище  · n=1  · kumarasambhava
+- помышлять  · n=1  · shatakatrayam
+- созерцанье  · n=1  · shatakatrayam
+- думать  · n=1  · shatakatrayam-serebryakov
+- созерцаемого  · n=1  · yoga-sutry_vyasa-bhashya
+- следует медитировать  · n=1  · vedartha-samgraha_ramanuja
+
+### `DyeyaH` — dhyeyaḥ  (n=2)
+
+- должно медитировать  · n=1  · vedartha-samgraha_ramanuja
+- следует медитировать  · n=1  · vedartha-samgraha_ramanuja
+
+### `Dyeyaikagocara` — dhyeyaikagocara  (n=1)
+
+- занятая одним лишь предметом размышления  · n=1  · pai-up
+
+### `Dyeyam` — dhyeyam  (n=1)
+
+- следует медитировать  · n=1  · vedartha-samgraha_ramanuja
+
+### `DyeyatA` — dhyeyatā  (n=1)
+
+- необходимости медитировать  · n=1  · vedartha-samgraha_ramanuja
+
+### `Dyeyatvena` — dhyeyatvena  (n=1)
+
+- медитацию  · n=1  · vedartha-samgraha_ramanuja
+
+### `Dyeye` — dhyeye  (n=1)
+
+- достойное размышление  · n=1  · shatakatrayam-serebryakov
+
+### `DyuzitASvam` — dhyuṣitāśvam  (n=2)
+
+- Вьюшиташва  · n=2  · raghuvamsha
 
 ### `d` — d  (n=1)
 

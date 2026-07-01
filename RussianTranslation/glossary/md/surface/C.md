@@ -1,6 +1,2179 @@
-# Surface glossary — SLP1 `c`
+# Surface glossary — SLP1 `C`
 
-3176 forms. Format: `form` (sa) — total n → ru (n) · registers.
+3583 forms. Format: `form` (sa) — total n → ru (n) · registers.
+
+### `CAdana` — chādana  (n=1)
+
+- скрыть  · n=1  · shatakatrayam-serebryakov
+
+### `CAdanam` — chādanam  (n=1)
+
+- завесу  · n=1  · shatakatrayam
+
+### `CAday` — chāday  (n=2)
+
+- окутал  · n=1  · mahabharata-dronaparva
+- окутали  · n=1  · mahabharata-karnaparva
+
+### `CAdayAMcakre` — chādayāṃ cakre  (n=1)
+
+- окутал  · n=1  · mahabharata-bhishmaparva
+
+### `CAdayAMcakrire` — chādayāṃ cakrire  (n=1)
+
+- окутали  · n=1  · mahabharata-bhishmaparva
+
+### `CAdayAYcakrire` — chādayāñcakrire  (n=1)
+
+- окутали  · n=1  · mahabharata-bhishmaparva
+
+### `CAdayAmAsa` — chādayāmāsa  (n=44)
+
+- покрыл  · n=19  · mahabharata-dronaparva, mahabharata-bhishmaparva, mahabharata-karnaparva, mahabharata-shalyaparva
+- окутал  · n=8  · mahabharata-bhishmaparva, mahabharata-karnaparva, mahabharata-dronaparva
+- осыпал  · n=5  · mahabharata-bhishmaparva, mahabharata-dronaparva, mahabharata-karnaparva
+- обволок  · n=3  · mahabharata-bhishmaparva
+- покрывал  · n=2  · mahabharata-adiparva, mahabharata-dronaparva
+- покрыли  · n=1  · mahabharata-aranyakaparva
+- затмил  · n=1  · mahabharata-bhishmaparva
+- обрушил  · n=1  · mahabharata-bhishmaparva
+- покрывать  · n=1  · mahabharata-dronaparva
+- окатил  · n=1  · mahabharata-udyogaparva
+- скрывал  · n=1  · mahabharata-udyogaparva
+- накрыл  · n=1  · mahabharata-karnaparva
+
+### `CAdayAmAsatuH` — chādayāmāsatuḥ  (n=4)
+
+- заволокли  · n=1  · mahabharata-bhishmaparva
+- окутать  · n=1  · mahabharata-bhishmaparva
+- покрывая  · n=1  · mahabharata-dronaparva
+- покрывали  · n=1  · mahabharata-dronaparva
+
+### `CAdayAmAsuH` — chādayāmāsuḥ  (n=4)
+
+- обволокли  · n=1  · mahabharata-bhishmaparva
+- покрыли  · n=1  · mahabharata-dronaparva
+- затмили  · n=1  · mahabharata-karnaparva
+- окутали  · n=1  · mahabharata-karnaparva
+
+### `CAdayAmi` — chādayāmi  (n=2)
+
+- прикрываю  · n=2  · rigveda, atharvaveda
+
+### `CAdayAna` — chādayāna  (n=2)
+
+- затмевая  · n=1  · mahabharata-bhishmaparva
+- покрывал  · n=1  · mahabharata-dronaparva
+
+### `CAdayAnaH` — chādayānaḥ  (n=1)
+
+- затмевая  · n=1  · mahabharata-bhishmaparva
+
+### `CAdayAnaM` — chādayānaṃ  (n=1)
+
+- обрушивающего  · n=1  · mahabharata-bhishmaparva
+
+### `CAdayAnau` — chādayānau  (n=1)
+
+- окутывая  · n=1  · mahabharata-karnaparva
+
+### `CAdayaYSaravfzwiBiH` — chādayañśaravṛṣṭibhiḥ  (n=1)
+
+- покрыли ливнями стрел  · n=1  · mahabharata-shalyaparva
+
+### `CAdayan` — chādayan  (n=8)
+
+- покрывая  · n=3  · mahabharata-dronaparva, mahabharata-bhishmaparva
+- покрыл  · n=2  · mahabharata-bhishmaparva, mahabharata-dronaparva
+- Простираясь  · n=1  · mahabharata-aranyakaparva
+- окутал  · n=1  · mahabharata-dronaparva
+- покрывает  · n=1  · mahabharata-dronaparva
+
+### `CAdayanniva` — chādayanniva  (n=1)
+
+- заливает  · n=1  · mahabharata-virataparva
+
+### `CAdayant` — chādayant  (n=1)
+
+- заволокли  · n=1  · mahabharata-aranyakaparva
+
+### `CAdayantIM` — chādayantīṃ  (n=1)
+
+- хочетъ Прикрыть  · n=1  · megha-duta
+
+### `CAdayanta` — chādayanta  (n=3)
+
+- покрывая  · n=2  · mahabharata-dronaparva
+- покрыли  · n=1  · mahabharata-bhishmaparva
+
+### `CAdayantaH` — chādayantaḥ  (n=4)
+
+- застилали  · n=1  · ramayana-sundarakanda
+- застилая  · n=1  · mahabharata-bhishmaparva
+- окутали  · n=1  · mahabharata-dronaparva
+- покрывая  · n=1  · mahabharata-dronaparva
+
+### `CAdayantau` — chādayantau  (n=3)
+
+- продолжали покрывать  · n=1  · mahabharata-dronaparva
+- окутали  · n=1  · mahabharata-karnaparva
+- покрыли  · n=1  · mahabharata-karnaparva
+
+### `CAdayantu` — chādayantu  (n=1)
+
+- покроют  · n=1  · mahabharata-virataparva
+
+### `CAdayasi` — chādayasi  (n=1)
+
+- прикрываешь  · n=1  · atharvaveda
+
+### `CAdayat` — chādayat  (n=3)
+
+- застилала  · n=2  · mahabharata-bhishmaparva
+- покрывал  · n=1  · mahabharata-dronaparva
+
+### `CAdayati` — chādayati  (n=2)
+
+- затмевает  · n=1  · mahabharata-bhishmaparva
+- осыпает  · n=1  · mahabharata-karnaparva
+
+### `CAdayetAm` — chādayetām  (n=2)
+
+- окутали  · n=1  · mahabharata-bhishmaparva
+- продолжали покрывать  · n=1  · mahabharata-dronaparva
+
+### `CAdayitvA` — chādayitvā  (n=3)
+
+- окутав  · n=1  · mahabharata-dronaparva
+- осыпав  · n=1  · mahabharata-karnaparva
+- покрыв  · n=1  · mahabharata-karnaparva
+
+### `CAdayizyAmi` — chādayiṣyāmi  (n=2)
+
+- покрою  · n=1  · mahabharata-dronaparva
+- буду скрываться  · n=1  · mahabharata-virataparva
+
+### `CAdayizye` — chādayiṣye  (n=1)
+
+- осыпать  · n=1  · mahabharata-karnaparva
+
+### `CAdita` — chādita  (n=3)
+
+- окутан  · n=1  · mahabharata-dronaparva
+- накрыл  · n=1  · mahabharata-karnaparva
+- сокрытая  · n=1  · vedartha-samgraha_ramanuja
+
+### `CAditam` — chāditam  (n=1)
+
+- сокрыто  · n=1  · mahabharata-karnaparva
+
+### `CAditavatI` — chāditavatī  (n=1)
+
+- сокрыла  · n=1  · mahabharata-striparva
+
+### `CAdmika` — chādmika  (n=1)
+
+- лицемерный  · n=1  · manavadharmashastra
+
+### `CAdya` — chādya  (n=1)
+
+- Прикрыв  · n=1  · ramayana-sundarakanda
+
+### `CAdyamAna` — chādyamāna  (n=15)
+
+- покрываемый  · n=3  · mahabharata-dronaparva
+- покрываемого  · n=3  · mahabharata-dronaparva
+- окутанные  · n=1  · mahabharata-bhishmaparva
+- окутанному  · n=1  · mahabharata-bhishmaparva
+- окутанный  · n=1  · mahabharata-bhishmaparva
+- покрывали  · n=1  · mahabharata-dronaparva
+- окутывали  · n=1  · mahabharata-dronaparva
+- окутываемый  · n=1  · mahabharata-dronaparva
+- покрытый  · n=1  · mahabharata-karnaparva
+- покрываемые  · n=1  · mahabharata-shalyaparva
+- застланные  · n=1  · mahabharata-bhishmaparva
+
+### `CAdyamAnaH` — chādyamānaḥ  (n=2)
+
+- завалили  · n=1  · mahabharata-aranyakaparva
+- окутанный  · n=1  · mahabharata-karnaparva
+
+### `CAdyamAnau` — chādyamānau  (n=1)
+
+- затмеваются  · n=1  · mahabharata-karnaparva
+
+### `CAgAn` — chāgān  (n=1)
+
+- козлов  · n=1  · ramayana-sundarakanda
+
+### `CAga` — chāga  (n=5)
+
+- козел  · n=2  · mahabharata-ashvamedhikaparva
+- козла  · n=1  · mahabharata-aranyakaparva
+- коза  · n=1  · kama-sutra
+- козёл  · n=1  · mahabharata-ashvamedhikaparva
+
+### `CAgalam` — chāgalam  (n=2)
+
+- козий  · n=1  · kama-sutra
+- козьем  · n=1  · kama-sutra
+
+### `CAgamAMsa` — chāgamāṃsa  (n=1)
+
+- мясом козла  · n=1  · manavadharmashastra
+
+### `CAgamayam` — chāgamayam  (n=1)
+
+- козлиный  · n=1  · mahabharata-aranyakaparva
+
+### `CAgamuKa` — chāgamukha  (n=1)
+
+- Козлоликого  · n=1  · mahabharata-aranyakaparva
+
+### `CAgavaktreRa` — chāgavaktreṇa  (n=1)
+
+- с Козлоликим  · n=1  · mahabharata-aranyakaparva
+
+### `CAndasatva` — chāndasatva  (n=1)
+
+- чхандасах  · n=1  · gitarthasamgraha-abhinavagupta
+
+### `CAsan` — chāsan  (n=1)
+
+- направляют  · n=1  · rigveda
+
+### `CAtra` — chātra  (n=1)
+
+- учеников  · n=1  · amaru-shataka
+
+### `CAveya` — chāveya  (n=1)
+
+- как тень  · n=1  · raghuvamsha
+
+### `CAyA` — chāyā  (n=43)
+
+- тень  · n=25  · ramayana-aranyakanda, ramayana-sundarakanda, mahabharata-aranyakaparva, raghuvamsha, sankhya-karika, atharvaveda, manavadharmashastra, rigveda, mahabharata-adiparva, nyaya-bhashya, mahabharata-virataparva, shatakatrayam, shatakatrayam-serebryakov, pr-up, kau-up
+- тени  · n=5  · manavadharmashastra, mahabharata-sabhaparva, pr-up
+- отражение  · n=3  · rigveda, raghuvamsha
+- тенью  · n=2  · ramayana-sundarakanda, manavadharmashastra
+- Тень  · n=2  · ramayana-sundarakanda
+- отраженье  · n=2  · atharvaveda
+- лица  · n=1  · mahabharata-dronaparva
+- незнание  · n=1  · br-up
+- укрытие  · n=1  · raghuvamsha
+- выглядитъ  · n=1  · megha-duta
+
+### `CAyABUtAya` — chāyābhūtāya  (n=1)
+
+- подобному тени (учителя)  · n=1  · mahabharata-ashvamedhikaparva
+
+### `CAyABUta` — chāyābhūta  (n=1)
+
+- тенью  · n=1  · mahabharata-virataparva
+
+### `CAyAH` — chāyāḥ  (n=1)
+
+- теней  · n=1  · mahabharata-shalyaparva
+
+### `CAyAcumbanam` — chāyācumbanam  (n=1)
+
+- целует отражение  · n=1  · kama-sutra
+
+### `CAyAdAna` — chāyādāna  (n=1)
+
+- тѣнью  · n=1  · megha-duta
+
+### `CAyAdvitIya` — chāyādvitīya  (n=1)
+
+- удваиваясь тенью  · n=1  · mahabharata-aranyakaparva
+
+### `CAyAgrAha` — chāyāgrāha  (n=1)
+
+- Ловящей добычу по тени  · n=1  · ramayana-balakanda
+
+### `CAyAgrAhin` — chāyāgrāhin  (n=1)
+
+- хвататель теней  · n=1  · ramayana-sundarakanda
+
+### `CAyAm` — chāyām  (n=4)
+
+- тень  · n=2  · atharvaveda, atharvaveda
+- тени  · n=1  · raghuvamsha
+- образ  · n=1  · raghuvamsha
+
+### `CAyAmaRqalalakzyena` — chāyāmaṇḍalalakṣyena  (n=1)
+
+- чудный ореол  · n=1  · raghuvamsha
+
+### `CAyAmaya` — chāyāmaya  (n=3)
+
+- состоит из тени  · n=2  · br-up
+- Из тени  · n=1  · br-up
+
+### `CAyApaTa` — chāyāpatha  (n=1)
+
+- Млечный Путь  · n=1  · raghuvamsha
+
+### `CAyAsu` — chāyāsu  (n=3)
+
+- в тени  · n=1  · raghuvamsha
+- по парку  · n=1  · shatakatrayam
+- под сенью  · n=1  · shatakatrayam-serebryakov
+
+### `CAyAtapa` — chāyātapa  (n=2)
+
+- тени и жару  · n=1  · nyaya-bhashya
+- тени и зноя  · n=1  · mahabharata-ashvamedhikaparva
+
+### `CAyAtapau` — chāyātapau  (n=3)
+
+- тьма и свет  · n=2  · devi-gita
+- Тень и свет  · n=1  · kat-up
+
+### `CAyAtapayor` — chāyātapayor  (n=1)
+
+- в тени и свете  · n=1  · kat-up
+
+### `CAyAtmA` — chāyātmā  (n=1)
+
+- обликомъ  · n=1  · megha-duta
+
+### `CAyAvaiguRyamAtraM` — chāyāvaiguṇyamātraṃ  (n=1)
+
+- поблекла ее красота  · n=1  · ramayana-sundarakanda
+
+### `CAyAvfkzam` — chāyāvṛkṣam  (n=1)
+
+- тенистого дерева  · n=1  · raghuvamsha
+
+### `CAyAvilInaiH` — chāyāvilīnaiḥ  (n=1)
+
+- растворенными в тени  · n=1  · raghuvamsha
+
+### `CAyAvinItADvapariSramezu` — chāyāvinītādhvapariśrameṣu  (n=1)
+
+- дающие прохладную тень, в которой путник избавляется от усталости  · n=1  · raghuvamsha
+
+### `CAyAyAm` — chāyāyām  (n=1)
+
+- в тени  · n=1  · kau-up
+
+### `CAya` — chāya  (n=1)
+
+- тенистые  · n=1  · mahabharata-aranyakaparva
+
+### `CAyaka` — chāyaka  (n=2)
+
+- похожего на тень (?)  · n=2  · atharvaveda
+
+### `CAyayA` — chāyayā  (n=8)
+
+- отражением  · n=2  · atharvaveda
+- уложи  · n=2  · atharvaveda
+- По отражению  · n=1  · rigveda
+- отражению  · n=1  · rigveda
+- в зеркале  · n=1  · raghuvamsha
+- тѣнь  · n=1  · megha-duta
+
+### `CIBam` — chībham  (n=1)
+
+- быстро  · n=1  · atharvaveda
+
+### `CUra` — chūra  (n=1)
+
+- герой  · n=1  · atharvaveda
+
+### `CaPau` — chaphau  (n=1)
+
+- копыта  · n=1  · rigveda
+
+### `CaSADi` — chaśādhi  (n=1)
+
+- Укажи путь  · n=1  · rigveda
+
+### `CaSramARo` — chaśramāṇo  (n=1)
+
+- изнуряя себя  · n=1  · rigveda
+
+### `Cad` — chad  (n=2)
+
+- понравились  · n=1  · rigveda
+- показалась  · n=1  · rigveda
+
+### `CadayaTaH` — chadayathaḥ  (n=1)
+
+- кажетесь равными  · n=1  · rigveda
+
+### `Cadayanti` — chadayanti  (n=1)
+
+- кажутся годными  · n=1  · rigveda
+
+### `Cadayat` — chadayat  (n=1)
+
+- покажется  · n=1  · rigveda
+
+### `Cadayati` — chadayati  (n=1)
+
+- поражает  · n=1  · rigveda
+
+### `Cadi` — chadi  (n=1)
+
+- навесом  · n=1  · atharvaveda
+
+### `CadiH` — chadiḥ  (n=2)
+
+- крышу  · n=2  · atharvaveda
+
+### `Cadma` — chadma  (n=1)
+
+- обманом  · n=1  · mahabharata-aranyakaparva
+
+### `CadmaBiH` — chadmabhiḥ  (n=1)
+
+- переодетыми  · n=1  · mahabharata-adiparva
+
+### `CadmacAritva` — chadmacāritva  (n=1)
+
+- лицемерие  · n=1  · gitarthasamgraha-abhinavagupta
+
+### `CadmadyUta` — chadmadyūta  (n=2)
+
+- нечестную игру в кости  · n=1  · mahabharata-adiparva
+- обманная игра в кости  · n=1  · mahabharata-adiparva
+
+### `CadmagUQa` — chadmagūḍha  (n=1)
+
+- сокрывшись в обличье  · n=1  · mahabharata-aranyakaparva
+
+### `CadmaliNgapravizwAnAm` — chadmaliṅgapraviṣṭānām  (n=1)
+
+- под чужой внешностью  · n=1  · mahabharata-virataparva
+
+### `Cadman` — chadman  (n=10)
+
+- обманом  · n=2  · ramayana-sundarakanda, mahabharata-aranyakaparva
+- под видом  · n=1  · mahabharata-adiparva
+- ложным предлогом  · n=1  · manavadharmashastra
+- изменив облик  · n=1  · mahabharata-adiparva
+- вероломно  · n=1  · mahabharata-dronaparva
+- скрыто  · n=1  · mahabharata-udyogaparva
+- облачении  · n=1  · mahabharata-sabhaparva
+- прикосновеньемъ  · n=1  · megha-duta
+- хитростью  · n=1  · mahabharata-sauptikaparva
+
+### `CadmanA` — chadmanā  (n=2)
+
+- обманом  · n=1  · manavadharmashastra
+- обмана  · n=1  · mahabharata-dronaparva
+
+### `CagDi` — chagdhi  (n=1)
+
+- помоги  · n=1  · atharvaveda
+
+### `CagalaRqaka` — chagalaṇḍaka  (n=2)
+
+- Чхагаландаке  · n=2  · devi-gita
+
+### `CaitsIt` — chaitsīt  (n=2)
+
+- буду покинут  · n=1  · br-up
+- будет покинут  · n=1  · br-up
+
+### `CaityaM` — chaityaṃ  (n=1)
+
+- прохлада  · n=1  · raghuvamsha
+
+### `Cakma` — chakma  (n=1)
+
+- дело  · n=1  · rigveda
+
+### `CakraH` — chakraḥ  (n=1)
+
+- могучий  · n=1  · atharvaveda
+
+### `Cakti` — chakti  (n=1)
+
+- Сил  · n=1  · pratyabhijna-hridaya_kshemaraja
+
+### `Cal` — chal  (n=2)
+
+- обман  · n=1  · mahabharata-dronaparva
+- плутовать  · n=1  · bhagavadgita-1914
+
+### `CalAkA` — chalākā  (n=1)
+
+- длинной стрелою  · n=1  · mahabharata-dronaparva
+
+### `CalAnveza` — chalānveṣa  (n=1)
+
+- коварный  · n=1  · shukasaptati
+
+### `CalAtman` — chalātman  (n=1)
+
+- коварными  · n=1  · shukasaptati
+
+### `Cala` — chala  (n=7)
+
+- хитростью  · n=1  · manavadharmashastra
+- искажает  · n=1  · kama-sutra
+- обманом  · n=1  · mahabharata-udyogaparva
+- ухищрения  · n=1  · nyaya-bhashya
+- словесные ухищрения  · n=1  · nyaya-bhashya
+- ухищрение  · n=1  · nyaya-bhashya
+- хитрость  · n=1  · amaru-shataka
+
+### `CalaM` — chalaṃ  (n=2)
+
+- придирки  · n=2  · nyaya-bhashya
+
+### `CaladyUta` — chaladyūta  (n=1)
+
+- обманом в игре в кости  · n=1  · mahabharata-bhishmaparva
+
+### `Calam` — chalam  (n=1)
+
+- словесные ухищрения  · n=1  · nyaya-bhashya
+
+### `Calana` — chalana  (n=1)
+
+- коварства  · n=1  · mahabharata-bhishmaparva
+
+### `CalavAdI` — chalavādī  (n=1)
+
+- тот, кто хочет придраться  · n=1  · nyaya-bhashya
+
+### `Calay` — chalay  (n=2)
+
+- плутующих  · n=2  · mahabharata-bhishmaparva, bhagavadgita-erman
+
+### `Calayanti` — chalayanti  (n=1)
+
+- обманывают  · n=1  · raghuvamsha
+
+### `Calayasi` — chalayasi  (n=1)
+
+- обманываешь  · n=1  · gitagovinda
+
+### `Calayat` — chalayat  (n=6)
+
+- хитростями  · n=2  · bhagavadgity, bhagavadgita-1788
+- обманывающих  · n=1  · bhagavadgita-smirnov
+- хитрецов  · n=1  · bhagavadgita-sementsov
+- хитростей  · n=1  · bhagavadgita-1909
+- мошенничество  · n=1  · bhagavadgita-sharma
+
+### `CalayatAm` — chalayatām  (n=5)
+
+- обманывающих  · n=1  · bhagavadgita-burba
+- лукавых  · n=1  · ramanuja_gitabhashya
+- из мошенничеств  · n=1  · bhagavadgita-prabhupada
+- мошенничества  · n=1  · bhagavadgita-prabhupada
+- обманщиков  · n=1  · bhagavadgita-radha
+
+### `CalayatAmasmi` — chalayatāmasmi  (n=2)
+
+- Среди искушений Я  · n=2  · gitarthasamgraha-abhinavagupta
+
+### `Calayate` — chalayate  (n=1)
+
+- обманывающему  · n=1  · gitagovinda
+
+### `Calayizyan` — chalayiṣyan  (n=1)
+
+- обмануть  · n=1  · mahabharata-shalyaparva
+
+### `Calena` — chalena  (n=7)
+
+- обмана  · n=2  · mahabharata-karnaparva, mahabharata-shalyaparva
+- под предлогом  · n=1  · kama-sutra
+- с помощью обмана  · n=1  · mahabharata-karnaparva
+- нечестным способом  · n=1  · mahabharata-shalyaparva
+- как бы  · n=1  · raghuvamsha
+- мол  · n=1  · amaru-shataka
+
+### `CalitA` — chalitā  (n=1)
+
+- затуманила  · n=1  · ramayana-ayodhyakanda
+
+### `Calita` — chalita  (n=2)
+
+- не сознавал  · n=1  · mahabharata-karnaparva
+- обманута  · n=1  · amaru-shataka
+
+### `CalunAn` — chalunān  (n=1)
+
+- шалуна  · n=1  · atharvaveda
+
+### `Camala` — chamala  (n=1)
+
+- Загрязнение  · n=1  · atharvaveda
+
+### `CambIva` — chambīva  (n=1)
+
+- Как искусный перевозчик  · n=1  · atharvaveda
+
+### `CandAMsi` — chandāṃsi  (n=21)
+
+- размеры  · n=4  · rigveda, atharvaveda, atharvaveda
+- гимны  · n=4  · bhagavadgity, bhagavadgita-1914, bhagavadgita-smirnov
+- ведические гимны  · n=3  · bhagavadgita-prabhupada, bhagavadgita-radha
+- священные гимны  · n=2  · mahabharata-aranyakaparva
+- Стихотворные размеры  · n=2  · rigveda
+- Метрические речи  · n=2  · atharvaveda
+- размеров  · n=2  · atharvaveda
+- Веды  · n=1  · bhagavadgita-1788
+- Знание  · n=1  · bhagavadgita-sharma
+
+### `CandAnuvartinaH` — chandānuvartinaḥ  (n=1)
+
+- покорными прихоти  · n=1  · mahabharata-aranyakaparva
+
+### `Canda` — chanda  (n=5)
+
+- соблазнитель  · n=2  · rigveda
+- Чханда  · n=2  · buddhacharita
+- Чханду  · n=1  · buddhacharita
+
+### `CandaH` — chandaḥ  (n=2)
+
+- поэтическим размером  · n=1  · rigveda
+- размером  · n=1  · atharvaveda
+
+### `CandaHpakza` — chandaḥpakṣa  (n=1)
+
+- окрыленные поэзией  · n=1  · atharvaveda
+
+### `Candaka` — chandaka  (n=3)
+
+- Чхандака  · n=2  · buddhacharita
+- чхандаку  · n=1  · buddhacharita
+
+### `CandakaM` — chandakaṃ  (n=1)
+
+- Чхандаке  · n=1  · buddhacharita
+
+### `Candakahasta` — chandakahasta  (n=1)
+
+- у Чхандаки  · n=1  · buddhacharita
+
+### `Candakam` — chandakam  (n=2)
+
+- Чхандаку  · n=1  · buddhacharita
+- Чхандакой  · n=1  · buddhacharita
+
+### `Candam` — chandam  (n=1)
+
+- Чханду  · n=1  · buddhacharita
+
+### `Candas` — chandas  (n=78)
+
+- гимнах  · n=5  · mahabharata-bhishmaparva, bhagavadgita-1914, bhagavadgity, bhagavadgita-erman, bhagavadgita-smirnov
+- чхандасы  · n=4  · manavadharmashastra
+- стихотворных размеров  · n=4  · mahabharata-aranyakaparva, mahabharata-bhishmaparva, bhagavadgita-erman, mahabharata-ashvamedhikaparva
+- стихотворные размеры  · n=3  · rigveda
+- гимны  · n=3  · mahabharata-udyogaparva, bhagavadgita-burba, bhagavadgita-sementsov
+- стихотворный размер  · n=2  · mahabharata-adiparva, bhagavadgita-sharma
+- чхандас  · n=2  · manavadharmashastra, ch-up
+- Метрическая речь  · n=2  · rigveda, atharvaveda
+- стихами  · n=2  · rigveda, bhagavadgita-sharma
+- стихи  · n=2  · mahabharata-bhishmaparva, bhagavadgita-erman
+- размеров  · n=2  · bhagavadgity, bhagavadgita-smirnov
+- метры  · n=2  · ch-up
+- заклинания  · n=2  · br-up
+- поэтические размера  · n=2  · atharvaveda
+- священные стихи  · n=2  · shv-up
+- метрики  · n=2  · mun-up
+- размерами  · n=1  · mahabharata-adiparva
+- хочешь  · n=1  · ramayana-ayodhyakanda
+- ведийские гимны  · n=1  · manavadharmashastra
+- Чхандасы  · n=1  · manavadharmashastra
+- воля  · n=1  · mahabharata-aranyakaparva
+- как  · n=1  · rigveda
+- соблазнитель  · n=1  · rigveda
+- Чханда  · n=1  · buddhacharita
+- Веды  · n=1  · mahabharata-udyogaparva
+- Священные гимны  · n=1  · mahabharata-udyogaparva
+- священные гимны  · n=1  · mahabharata-udyogaparva
+- песнь  · n=1  · rigveda
+- чхандасов  · n=1  · gitarthasamgraha-abhinavagupta
+- чхандасами  · n=1  · gitarthasamgraha-abhinavagupta
+- гимнами  · n=1  · bhagavadgita-burba
+- ведийские метры  · n=1  · ramanuja_gitabhashya
+- поэтических размеров  · n=1  · bhagavadgita-1914
+- Упанишады  · n=1  · bhagavadgita-smirnov
+- гармоническими мѣрами  · n=1  · bhagavadgita-1788
+- мѣрахъ  · n=1  · bhagavadgita-1788
+- метров стиха  · n=1  · bhagavadgita-sementsov
+- гимны Вед  · n=1  · bhagavadgita-sementsov
+- молитвахъ  · n=1  · bhagavadgita-1909
+- пѣснопѣньяхъ  · n=1  · bhagavadgita-1909
+- в гимнах вед  · n=1  · bhagavadgita-radha
+- метр  · n=1  · ch-up
+- произвол  · n=1  · nyaya-bhashya
+- заклинаниями  · n=1  · atharvaveda
+- слов, слагающих священную речь  · n=1  · raghuvamsha
+- ведийского текста  · n=1  · raghuvamsha
+- размеры  · n=1  · atharvaveda
+- (стихотворным) размером  · n=1  · atharvaveda
+- Стихотворные размеры  · n=1  · atharvaveda
+- поэтический размер  · n=1  · atharvaveda
+- Чхандас  · n=1  · sankhya-karika
+- вволю  · n=1  · kat-up
+- метрике  · n=1  · sub-up
+
+### `CandasAm` — chandasām  (n=7)
+
+- песнопений  · n=2  · tai-up
+- стихотворных размеров  · n=1  · bhagavadgita-burba
+- размеров  · n=1  · ramanuja_gitabhashya
+- из стихов  · n=1  · bhagavadgita-prabhupada
+- из стихотворных форм  · n=1  · bhagavadgita-prabhupada
+- из стихотворных размеров  · n=1  · bhagavadgita-radha
+
+### `Candaskfta` — chandaskṛta  (n=1)
+
+- мантры  · n=1  · manavadharmashastra
+
+### `CandastuB` — chandastubh  (n=1)
+
+- Прославляя стихами  · n=1  · rigveda
+
+### `Candastva` — chandastva  (n=2)
+
+- чхандас  · n=2  · ch-up
+
+### `CandasyAm` — chandasyām  (n=1)
+
+- метрическую  · n=1  · rigveda
+
+### `Candasya` — chandasya  (n=1)
+
+- Чхандаку  · n=1  · buddhacharita
+
+### `CandataH` — chandataḥ  (n=2)
+
+- По собственной воле  · n=1  · ramayana-sundarakanda
+- по своему желанию  · n=1  · mahabharata-sabhaparva
+
+### `CandayAmAsa` — chandayāmāsa  (n=3)
+
+- вознаградить  · n=1  · mahabharata-adiparva
+- соблаговолил испросить  · n=1  · mahabharata-dronaparva
+- вознаградил  · n=1  · mahabharata-sabhaparva
+
+### `CandayAte` — chandayāte  (n=1)
+
+- будет радоваться  · n=1  · rigveda
+
+### `Candayase` — chandayase  (n=1)
+
+- нравится  · n=1  · rigveda
+
+### `Candena` — chandena  (n=5)
+
+- по произволу  · n=2  · manavadharmashastra
+- по воле его  · n=1  · mahabharata-aranyakaparva
+- по воле  · n=1  · mahabharata-aranyakaparva
+- по своему усмотрению  · n=1  · mahabharata-adiparva
+
+### `Candita` — chandita  (n=1)
+
+- предложил  · n=1  · mahabharata-adiparva
+
+### `Cando` — chando  (n=1)
+
+- песнь  · n=1  · rigveda
+
+### `CandoBiH` — chandobhiḥ  (n=3)
+
+- в гимнах  · n=1  · ramanuja_gitabhashya
+- ведическими гимнами  · n=1  · bhagavadgita-prabhupada
+- писанием  · n=1  · bhagavadgita-prabhupada
+
+### `CandoByaH` — chandobhyaḥ  (n=2)
+
+- из песнопений  · n=2  · tai-up
+
+### `Candogam` — chandogam  (n=1)
+
+- чхандогу  · n=1  · manavadharmashastra
+
+### `Candovid` — chandovid  (n=1)
+
+- знатоки гимнов  · n=1  · mahabharata-udyogaparva
+
+### `Candu` — chandu  (n=2)
+
+- приятным  · n=2  · rigveda
+
+### `Candya` — chandya  (n=1)
+
+- нравящуюся  · n=1  · rigveda
+
+### `CandyamAnA` — chandyamānā  (n=1)
+
+- получив соизволение испросить  · n=1  · mahabharata-udyogaparva
+
+### `CandyamAna` — chandyamāna  (n=1)
+
+- предлагал  · n=1  · mahabharata-adiparva
+
+### `CandyatAm` — chandyatām  (n=1)
+
+- следует отговорить  · n=1  · mahabharata-shalyaparva
+
+### `CannA` — channā  (n=3)
+
+- покрыта  · n=1  · mahabharata-dronaparva
+- покрыто  · n=1  · mahabharata-dronaparva
+- покрылась  · n=1  · mahabharata-shalyaparva
+
+### `CannAH` — channāḥ  (n=2)
+
+- окутанные  · n=1  · mahabharata-adiparva
+- покрываемые  · n=1  · mahabharata-shalyaparva
+
+### `CannAgnikalpayA` — channāgnikalpayā  (n=1)
+
+- похожая на огонь, присыпанный сверху золою  · n=1  · ramayana-ayodhyakanda
+
+### `Canna` — channa  (n=24)
+
+- скрываясь  · n=3  · mahabharata-virataparva, mahabharata-aranyakaparva
+- тайно  · n=3  · mahabharata-aranyakaparva, mahabharata-adiparva
+- тайная  · n=2  · manavadharmashastra, mahabharata-adiparva
+- необнаруженный  · n=2  · mahabharata-aranyakaparva
+- скрытые  · n=1  · mahabharata-adiparva
+- тайную  · n=1  · manavadharmashastra
+- сокрыть  · n=1  · mahabharata-aranyakaparva
+- усеяно  · n=1  · mahabharata-aranyakaparva
+- в чужом обличье  · n=1  · mahabharata-aranyakaparva
+- покрытый  · n=1  · mahabharata-bhishmaparva
+- покрыты  · n=1  · mahabharata-dronaparva
+- скрытую  · n=1  · mahabharata-udyogaparva
+- покрытое  · n=1  · mahabharata-shalyaparva
+- втайне  · n=1  · mahabharata-sabhaparva
+- покрыто  · n=1  · br-up
+- скрываясь под чужой внешностью  · n=1  · mahabharata-virataparva
+- укрытый  · n=1  · megha-duta
+- сокрытый  · n=1  · pratyabhijna-hridaya_kshemaraja
+
+### `CannaH` — channaḥ  (n=1)
+
+- скрываясь  · n=1  · mahabharata-virataparva
+
+### `CannaM` — channaṃ  (n=1)
+
+- скрытого  · n=1  · mahabharata-virataparva
+
+### `CannaiH` — channaiḥ  (n=1)
+
+- тайно  · n=1  · mahabharata-adiparva
+
+### `Cannam` — channam  (n=5)
+
+- покрытое  · n=2  · mahabharata-bhishmaparva
+- скрытой  · n=1  · ramayana-sundarakanda
+- покрыто  · n=1  · mahabharata-virataparva
+- скрывая  · n=1  · mahabharata-virataparva
+
+### `CannarUpAH` — channarūpāḥ  (n=1)
+
+- скрывающие свой настоящий облик  · n=1  · mahabharata-virataparva
+
+### `CannaraTaH` — channarathaḥ  (n=1)
+
+- скрытая колесница  · n=1  · raghuvamsha
+
+### `CannavAsin` — channavāsin  (n=1)
+
+- живущих под чужими именами  · n=1  · mahabharata-virataparva
+
+### `CannayA` — channayā  (n=1)
+
+- присыпанный сверху  · n=1  · ramayana-ayodhyakanda
+
+### `Cannezu` — channeṣu  (n=2)
+
+- скрывая свои имена  · n=2  · mahabharata-virataparva
+
+### `CannopAntaH` — channopāntaḥ  (n=1)
+
+- покроешь  · n=1  · megha-duta
+
+### `CannopaDa` — channopadha  (n=1)
+
+- скрывать свою хитрость  · n=1  · mahabharata-udyogaparva
+
+### `Cantsad` — chantsad  (n=2)
+
+- кажется  · n=2  · rigveda
+
+### `Cantsat` — chantsat  (n=1)
+
+- покажется  · n=1  · rigveda
+
+### `Cantsi` — chantsi  (n=1)
+
+- кажешься  · n=1  · rigveda
+
+### `CapaTAm` — chapathām  (n=2)
+
+- проклятия  · n=2  · atharvaveda, atharvaveda
+
+### `CapaTayopanI` — chapathayopanī  (n=1)
+
+- стирающее проклятия  · n=1  · atharvaveda
+
+### `CarDAMsi` — chardhāṃsi  (n=1)
+
+- отряды  · n=1  · rigveda
+
+### `CarDa` — chardha  (n=2)
+
+- толпу  · n=2  · rigveda
+
+### `CarDantam` — chardhantam  (n=1)
+
+- заносчивого  · n=1  · rigveda
+
+### `CarDat` — chardhat  (n=1)
+
+- заносчивого  · n=1  · rigveda
+
+### `CaraiH` — charaiḥ  (n=1)
+
+- стрелы  · n=1  · ramayana-sundarakanda
+
+### `Cardayan` — chardayan  (n=1)
+
+- призывая  · n=1  · mahabharata-bhishmaparva
+
+### `Cardayanti` — chardayanti  (n=1)
+
+- блюют  · n=1  · mahabharata-udyogaparva
+
+### `CardiH` — chardiḥ  (n=1)
+
+- защиту  · n=1  · rigveda
+
+### `Cardir` — chardir  (n=3)
+
+- защиту  · n=2  · rigveda, rigveda
+- щит  · n=1  · rigveda
+
+### `Cardis` — chardis  (n=11)
+
+- защиту  · n=5  · rigveda, rigveda, rigveda
+- Защиту  · n=2  · rigveda, rigveda
+- щит  · n=2  · rigveda
+- даруй  · n=1  · rigveda
+- заслон  · n=1  · rigveda
+
+### `Cardiz` — chardiṣ  (n=1)
+
+- покровом  · n=1  · rigveda
+
+### `CardizpA` — chardiṣpā  (n=2)
+
+- защитники (нашего) жилища  · n=2  · rigveda
+
+### `Castra` — chastra  (n=2)
+
+- возглашений  · n=2  · kau-up
+
+### `Castrasya` — chastrasya  (n=1)
+
+- меча  · n=1  · ramayana-sundarakanda
+
+### `CatA` — chatā  (n=3)
+
+- Пусть выбьет  · n=1  · rigveda
+- сотни  · n=1  · rigveda
+- сотен  · n=1  · rigveda
+
+### `CatASri` — chatāśri  (n=1)
+
+- с сотней граней  · n=1  · rigveda
+
+### `CataSo` — chataśo  (n=1)
+
+- сотни  · n=1  · raghuvamsha
+
+### `Catadurasya` — chatadurasya  (n=1)
+
+- стовратного  · n=1  · rigveda
+
+### `CatrARAM` — chatrāṇāṃ  (n=1)
+
+- зонтов  · n=1  · mahabharata-dronaparva
+
+### `CatrARi` — chatrāṇi  (n=2)
+
+- зонты  · n=2  · mahabharata-dronaparva, mahabharata-karnaparva
+
+### `CatrAka` — chatrāka  (n=1)
+
+- гриб  · n=1  · manavadharmashastra
+
+### `CatrAt` — chatrāt  (n=1)
+
+- зонта  · n=1  · mahabharata-udyogaparva
+
+### `CatrAvftAnanam` — chatrāvṛtānanam  (n=1)
+
+- под белым царским зонтом  · n=1  · ramayana-ayodhyakanda
+
+### `CatrUn` — chatrūn  (n=1)
+
+- неприятелей  · n=1  · atharvaveda
+
+### `CatrUyatI` — chatrūyatī  (n=1)
+
+- Враждующую  · n=1  · atharvaveda
+
+### `CatrUyata` — chatrūyata  (n=1)
+
+- Враждующих  · n=1  · atharvaveda
+
+### `Catra` — chatra  (n=40)
+
+- зонт  · n=22  · mahabharata-dronaparva, mahabharata-karnaparva, ramayana-aranyakanda, mahabharata-aranyakaparva, mahabharata-shalyaparva, ramayana-ayodhyakanda, ramayana-sundarakanda, mahabharata-bhishmaparva, mahabharata-udyogaparva, mahabharata-sabhaparva, mahabharata-striparva
+- зонты  · n=6  · mahabharata-dronaparva, mahabharata-karnaparva, mahabharata-shalyaparva, mahabharata-mausalaparva
+- зонтом  · n=4  · ramayana-aranyakanda, mahabharata-dronaparva, mahabharata-udyogaparva, mahabharata-shalyaparva
+- зонтик  · n=2  · manavadharmashastra
+- зонтов  · n=2  · mahabharata-dronaparva, mahabharata-karnaparva
+- зонта  · n=1  · ramayana-ayodhyakanda
+- зонтами  · n=1  · ramayana-sundarakanda
+- Зонты  · n=1  · mahabharata-dronaparva
+- Зонт  · n=1  · mahabharata-karnaparva
+
+### `CatraDAraRa` — chatradhāraṇa  (n=1)
+
+- зонтика  · n=1  · manavadharmashastra
+
+### `CatraM` — chatraṃ  (n=2)
+
+- зонт  · n=2  · ramayana-sundarakanda, mahabharata-virataparva
+
+### `CatraMDvajaMDanuScAsyaCittvA` — chatraṃ dhvajaṃ dhanuścāsya chittvā  (n=1)
+
+- Рассекши затем его зонт, знамя и лук  · n=1  · mahabharata-shalyaparva
+
+### `CatracAmara` — chatracāmara  (n=1)
+
+- зонтами и опахалами  · n=1  · mahabharata-shalyaparva
+
+### `CatracCAyA` — chatracchāyā  (n=1)
+
+- тени зонта  · n=1  · mahabharata-dronaparva
+
+### `Catragfha` — chatragṛha  (n=1)
+
+- хранилище для зонтов  · n=1  · mahabharata-udyogaparva
+
+### `CatrahaMsA` — chatrahaṃsā  (n=1)
+
+- зонты вместо лебедей  · n=1  · mahabharata-dronaparva
+
+### `CatrahaMsAvalIjuzwa` — chatrahaṃsāvalījuṣṭa  (n=1)
+
+- зонты составляли вереницы лебедей  · n=1  · mahabharata-dronaparva
+
+### `CatraiH` — chatraiḥ  (n=3)
+
+- зонтами  · n=2  · mahabharata-bhishmaparva, mahabharata-dronaparva
+- царскими зонтами  · n=1  · mahabharata-bhishmaparva
+
+### `Catram` — chatram  (n=3)
+
+- зонт  · n=3  · mahabharata-dronaparva, mahabharata-karnaparva
+
+### `CatravatI` — chatravatī  (n=2)
+
+- Чхатравати  · n=2  · mahabharata-adiparva
+
+### `CatreRa` — chatreṇa  (n=1)
+
+- зонтом  · n=1  · mahabharata-shalyaparva
+
+### `CatreRaDriyamARena` — chatreṇa dhriyamāṇena  (n=1)
+
+- осеняемый зонтом  · n=1  · mahabharata-shalyaparva
+
+### `CatruH` — chatruḥ  (n=1)
+
+- враг  · n=1  · atharvaveda
+
+### `CatruhaH` — chatruhaḥ  (n=1)
+
+- убийца врагов  · n=1  · atharvaveda
+
+### `CatrukarSanaH` — chatrukarśanaḥ  (n=1)
+
+- сокрушитель врагов  · n=1  · mahabharata-udyogaparva
+
+### `Cattra` — chattra  (n=5)
+
+- зонт  · n=2  · mahabharata-aranyakaparva, shatakatrayam
+- балдахин  · n=2  · raghuvamsha
+- зонтом  · n=1  · ramayana-aranyakanda
+
+### `CattraM` — chattraṃ  (n=1)
+
+- зонт  · n=1  · raghuvamsha
+
+### `CattraSUnyezu` — chattraśūnyeṣu  (n=1)
+
+- лишившихся царственного крова  · n=1  · raghuvamsha
+
+### `CavasA` — chavasā  (n=1)
+
+- с силой  · n=1  · rigveda
+
+### `Cavaso` — chavaso  (n=1)
+
+- силы  · n=1  · rigveda
+
+### `Cavi` — chavi  (n=1)
+
+- темная  · n=1  · raghuvamsha
+
+### `Caye` — chaye  (n=3)
+
+- покоится  · n=3  · atharvaveda, rigveda
+
+### `Cayum` — chayum  (n=1)
+
+- лежащего  · n=1  · rigveda
+
+### `Ceda` — cheda  (n=10)
+
+- отрезания  · n=3  · manavadharmashastra
+- загубивший  · n=2  · shatakatrayam-serebryakov
+- рассечения  · n=1  · mahabharata-bhishmaparva
+- срублено  · n=1  · raghuvamsha
+- разделить  · n=1  · vedartha-samgraha_ramanuja
+- лепестками  · n=1  · megha-duta
+- разрыв сочленений  · n=1  · paramarthasara-abhinavagupta
+
+### `Cedana` — chedana  (n=11)
+
+- для уничтожения  · n=1  · mahabharata-adiparva
+- отсекающий  · n=1  · mahabharata-adiparva
+- оборвутся  · n=1  · manavadharmashastra
+- порубки  · n=1  · manavadharmashastra
+- рассечения  · n=1  · manavadharmashastra
+- разрешать  · n=1  · mahabharata-aranyakaparva
+- обрезание  · n=1  · kama-sutra
+- исчезновение  · n=1  · kama-sutra
+- разрушение  · n=1  · nyaya-bhashya
+- подрезая  · n=1  · hatha-yoga-pradipika
+- подрезание  · n=1  · hatha-yoga-pradipika
+
+### `Cedanam` — chedanam  (n=1)
+
+- рассечение  · n=1  · mahabharata-dronaparva
+
+### `CedapAta` — chedapāta  (n=1)
+
+- рубит, ломает  · n=1  · kumarasambhava
+
+### `Cedayet` — chedayet  (n=4)
+
+- отрезать  · n=2  · manavadharmashastra
+- вырезать  · n=1  · manavadharmashastra
+- разрезать  · n=1  · manavadharmashastra
+
+### `Cedi` — chedi  (n=1)
+
+- порвется  · n=1  · rigveda
+
+### `Cedma` — chedma  (n=2)
+
+- порвали  · n=2  · rigveda
+
+### `Cedya` — chedya  (n=4)
+
+- укус  · n=1  · kama-sutra
+- ласки  · n=1  · kama-sutra
+- знаки  · n=1  · kama-sutra
+- нанесение царапин  · n=1  · kama-sutra
+
+### `CekitAna` — Cekitāna  (n=1)
+
+- Чекитана  · n=1  · bhagavadgita-smirnov
+
+### `Cet` — chet  (n=1)
+
+- устраню  · n=1  · mahabharata-udyogaparva
+
+### `CetsyAmi` — chetsyāmi  (n=3)
+
+- отрежу  · n=1  · mahabharata-dronaparva
+- рассею  · n=1  · mahabharata-udyogaparva
+- вырублю  · n=1  · mahabharata-virataparva
+
+### `Cetsyate` — chetsyate  (n=2)
+
+- отсекут  · n=1  · ramayana-aranyakanda
+- будет перерезан  · n=1  · mahabharata-adiparva
+
+### `Cetsyati` — chetsyati  (n=3)
+
+- разрубит  · n=1  · ramayana-sundarakanda
+- отсечет  · n=1  · mahabharata-dronaparva
+- хочет срывать и срезывать  · n=1  · mahabharata-shalyaparva
+
+### `CettA` — chettā  (n=6)
+
+- рассеиватель  · n=1  · bhagavadgita-1914
+- рассеять  · n=1  · bhagavadgity
+- способенъ къ рѣшенію  · n=1  · bhagavadgita-1788
+- Разсѣять  · n=1  · bhagavadgita-1909
+- способного рассеять  · n=1  · bhagavadgita-radha
+- устранитель  · n=1  · shukasaptati
+
+### `Cettavya` — chettavya  (n=1)
+
+- должен быть отрезан  · n=1  · manavadharmashastra
+
+### `Cettf` — chettṛ  (n=10)
+
+- разрешить  · n=3  · gitarthasamgraha-abhinavagupta, bhagavadgita-smirnov, bhagavadgita-sementsov
+- развею  · n=2  · mahabharata-bhishmaparva, mahabharata-ashvamedhikaparva
+- кто бы разрешить  · n=2  · mahabharata-bhishmaparva, bhagavadgita-erman
+- избавитель  · n=2  · bhagavadgita-prabhupada
+- отсекатель  · n=1  · bhagavadgita-burba
+
+### `Cettu` — chettu  (n=4)
+
+- отсечь  · n=1  · mahabharata-aranyakaparva
+- разрешить  · n=1  · bhagavadgita-erman
+- прогони  · n=1  · bhagavadgita-sementsov
+- развеять  · n=1  · bhagavadgita-sharma
+
+### `CettuM` — chettuṃ  (n=3)
+
+- рассечь  · n=2  · mahabharata-dronaparva
+- разрешить  · n=1  · sankhya-karika
+
+### `Cettum` — chettum  (n=14)
+
+- рассеять  · n=4  · mahabharata-adiparva, bhagavadgita-smirnov, bhagavadgita-prabhupada, bhagavadgita-radha
+- разрешить  · n=2  · mahabharata-udyogaparva, bhagavadgity
+- отсечь  · n=1  · bhagavadgita-burba
+- рассей  · n=1  · bhagavadgita-1914
+- рѣшишь  · n=1  · bhagavadgita-1788
+- Разсѣять  · n=1  · bhagavadgita-1909
+- рассеивающий  · n=1  · bhagavadgita-prabhupada
+- пусть  · n=1  · kumarasambhava
+- рассечь  · n=1  · shatakatrayam
+- просверлить  · n=1  · shatakatrayam-serebryakov
+
+### `CfRIhi` — chṛṇīhi  (n=1)
+
+- Разбей  · n=1  · atharvaveda
+
+### `ChAgaleya` — Chāgaleya  (n=1)
+
+- Чхагалея  · n=1  · chag-up
+
+### `ChAndogyaBrAhmaRa` — Chāndogya Brāhmaṇa  (n=1)
+
+- Чхандогья-брахмана  · n=1  · nyaya-bhashya
+
+### `ChAndogyaUpanizad` — Chāndogya Upaniṣad  (n=1)
+
+- Чхандогья-упанишада  · n=1  · nyaya-bhashya
+
+### `ChAyA` — chhāyā  (n=1)
+
+- тени  · n=1  · ramayana-aranyakanda
+
+### `ChandaH` — chhandaḥ  (n=1)
+
+- желание  · n=1  · ramayana-aranyakanda
+
+### `Chatra` — chhatra  (n=1)
+
+- зонт  · n=1  · ramayana-aranyakanda
+
+### `ChidyamAnAH` — chhidyamānāḥ  (n=1)
+
+- Пронзенные  · n=1  · ramayana-aranyakanda
+
+### `Chinna` — chhinna  (n=2)
+
+- подрубленные  · n=1  · ramayana-aranyakanda
+- расщепленными  · n=1  · ramayana-aranyakanda
+
+### `CiDyamAnAni` — chidhyamānāni  (n=1)
+
+- рассеченные  · n=1  · mahabharata-bhishmaparva
+
+### `CiMSapAvfkzAt` — chiṃśapāvṛkṣāt  (n=1)
+
+- от дерева шимшапы  · n=1  · ramayana-sundarakanda
+
+### `CiSriye` — chiśriye  (n=1)
+
+- смешано  · n=1  · rigveda
+
+### `Cid` — chid  (n=29)
+
+- срубив  · n=3  · mahabharata-bhishmaparva, bhagavadgita-erman, bhagavadgita-prabhupada
+- срезать  · n=2  · ramayana-aranyakanda
+- рассеять  · n=2  · mahabharata-aranyakaparva, gitarthasamgraha-abhinavagupta
+- рассекал  · n=2  · mahabharata-karnaparva, mahabharata-ashvamedhikaparva
+- Рассек  · n=1  · ramayana-sundarakanda
+- обрезать  · n=1  · manavadharmashastra
+- обрывать  · n=1  · manavadharmashastra
+- Разрежут  · n=1  · ramayana-aranyakanda
+- отрезав  · n=1  · mahabharata-aranyakaparva
+- разрешить  · n=1  · mahabharata-bhishmaparva
+- отруби  · n=1  · mahabharata-udyogaparva
+- разреши  · n=1  · ramanuja_gitabhashya
+- рассечь  · n=1  · ramanuja_gitabhashya
+- отсеки  · n=1  · bhagavadgita-erman
+- срубитъ  · n=1  · bhagavadgita-1788
+- срубит  · n=1  · bhagavadgita-sementsov
+- срубить  · n=1  · bhagavadgita-prabhupada
+- срезал  · n=1  · mahabharata-karnaparva
+- рассек  · n=1  · mahabharata-karnaparva
+- отсекал  · n=1  · mahabharata-karnaparva
+- разрыв  · n=1  · mahabharata-ashvamedhikaparva
+- отделяются  · n=1  · br-up
+- развеять  · n=1  · shatakatrayam-serebryakov
+- порывай  · n=1  · atharvaveda
+
+### `CidrA` — chidrā  (n=1)
+
+- неверно поврежденные  · n=1  · rigveda
+
+### `CidrAnusArin` — chidrānusārin  (n=1)
+
+- выслеживать слабости  · n=1  · manavadharmashastra
+
+### `CidrAnvezaRatatparau` — chidrānveṣaṇatatparau  (n=1)
+
+- старательно высматривали слабые места  · n=1  · mahabharata-shalyaparva
+
+### `Cidra` — chidra  (n=26)
+
+- дыра  · n=3  · mahabharata-aranyakaparva, mahabharata-udyogaparva
+- отверстие  · n=2  · manavadharmashastra, mahabharata-adiparva
+- слабую сторону  · n=2  · mahabharata-dronaparva
+- промежутках  · n=2  · yoga-sutry_vyasa-bhashya, yoga-sutry
+- малую ошибку  · n=1  · ramayana-balakanda
+- ошибка  · n=1  · ramayana-balakanda
+- незаконченная  · n=1  · ramayana-balakanda
+- прорехи  · n=1  · mahabharata-aranyakaparva
+- дыру  · n=1  · mahabharata-adiparva
+- удобный случай  · n=1  · mahabharata-dronaparva
+- слабое его место  · n=1  · mahabharata-dronaparva
+- дырявый  · n=1  · mahabharata-udyogaparva
+- лазейки  · n=1  · gitarthasamgraha-abhinavagupta
+- окнами  · n=1  · gitarthasamgraha-abhinavagupta
+- момент  · n=1  · mahabharata-ashvamedhikaparva
+- упущений  · n=1  · mahabharata-ashvamedhikaparva
+- изъяны  · n=1  · mahabharata-sabhaparva
+- недостаток  · n=1  · atharvaveda
+- полость  · n=1  · yoga-sutry_vyasa-bhashya
+- оплошности  · n=1  · yoga-sutry_sharma
+- интервал  · n=1  · yoga-sutry_zagumennov
+
+### `CidradarSinaH` — chidradarśinaḥ  (n=1)
+
+- видящие уязвимое место  · n=1  · mahabharata-dronaparva
+
+### `Cidram` — chidram  (n=5)
+
+- слабость  · n=1  · manavadharmashastra
+- уязвимые места  · n=1  · mahabharata-aranyakaparva
+- слабости  · n=1  · mahabharata-aranyakaparva
+- промежутка  · n=1  · mahabharata-adiparva
+- щель или нору  · n=1  · mahabharata-striparva
+
+### `CidraprekzI` — chidraprekṣī  (n=1)
+
+- найдет лазейку  · n=1  · gitarthasamgraha-abhinavagupta
+
+### `Cidre` — chidre  (n=2)
+
+- воспользовавшись несчастьем  · n=1  · mahabharata-aranyakaparva
+- в выбоину  · n=1  · mahabharata-dronaparva
+
+### `Cidura` — chidura  (n=1)
+
+- рвущийся  · n=1  · raghuvamsha
+
+### `CidyamAnAH` — chidyamānāḥ  (n=1)
+
+- изрубленные  · n=1  · mahabharata-striparva
+
+### `CidyamAnAnAM` — chidyamānānāṃ  (n=1)
+
+- расчлененным  · n=1  · mahabharata-virataparva
+
+### `CidyamAnAnAm` — chidyamānānām  (n=2)
+
+- рубили  · n=1  · mahabharata-karnaparva
+- отсекаемых  · n=1  · mahabharata-shalyaparva
+
+### `CidyamAna` — chidyamāna  (n=6)
+
+- разрываемый  · n=1  · ramayana-ayodhyakanda
+- рассекаем  · n=1  · mahabharata-dronaparva
+- под ударами топора  · n=1  · buddhacharita
+- рассекаемых  · n=1  · mahabharata-karnaparva
+- истощалось  · n=1  · mahabharata-shalyaparva
+- рассекают  · n=1  · sub-up
+
+### `CidyamAnasya` — chidyamānasya  (n=1)
+
+- рубили  · n=1  · mahabharata-sauptikaparva
+
+### `CidyamAnezu` — chidyamāneṣu  (n=1)
+
+- наносилось поражение  · n=1  · mahabharata-shalyaparva
+
+### `CidyamAnezumarmasu` — chidyamāneṣu marmasu  (n=1)
+
+- при разрыве жизненных центров  · n=1  · mahabharata-ashvamedhikaparva
+
+### `Cidyante` — chidyante  (n=4)
+
+- рассеиваются  · n=3  · mun-up, devi-gita
+- рассекает  · n=1  · mahabharata-bhishmaparva
+
+### `Cidyate` — chidyate  (n=4)
+
+- срубить  · n=1  · mahabharata-udyogaparva
+- пресекается  · n=1  · mahabharata-udyogaparva
+- ломается  · n=1  · atharvaveda
+- пытаются отклевать  · n=1  · mahabharata-striparva
+
+### `CikzAn` — chikṣān  (n=1)
+
+- смогут  · n=1  · atharvaveda
+
+### `Cin` — chin  (n=1)
+
+- изгонять  · n=1  · manavadharmashastra
+
+### `CinDi` — chindhi  (n=15)
+
+- руби  · n=2  · mahabharata-udyogaparva
+- Срежь  · n=2  · atharvaveda, atharvaveda
+- Размозжи  · n=1  · rigveda
+- отсеки  · n=1  · mahabharata-dronaparva
+- снеси  · n=1  · mahabharata-karnaparva
+- Отруби  · n=1  · mahabharata-aranyakaparva
+- разреши  · n=1  · mahabharata-ashvamedhikaparva
+- коли  · n=1  · mahabharata-ashvamedhikaparva
+- уничтожь  · n=1  · shatakatrayam
+- Рви  · n=1  · atharvaveda
+- рви  · n=1  · atharvaveda
+- Уничтожь  · n=1  · shatakatrayam-serebryakov
+- Реши  · n=1  · shukasaptati
+
+### `Cinad` — chinad  (n=1)
+
+- отрубит  · n=1  · atharvaveda
+
+### `Cinadmi` — chinadmi  (n=2)
+
+- отрезаю  · n=1  · atharvaveda
+- срезаю  · n=1  · atharvaveda
+
+### `Cinantu` — chinantu  (n=1)
+
+- свяжут  · n=1  · atharvaveda
+
+### `Cinatti` — chinatti  (n=6)
+
+- отрезает  · n=2  · atharvaveda
+- не затрагивают  · n=1  · gitarthasamgraha-abhinavagupta
+- подрезает  · n=1  · mahabharata-sabhaparva
+- отрубает  · n=1  · atharvaveda
+- рассекает  · n=1  · shv-up
+
+### `Cinattu` — chinattu  (n=1)
+
+- решен  · n=1  · shukasaptati
+
+### `CindDi` — chinddhi  (n=2)
+
+- отсеки  · n=1  · mahabharata-karnaparva
+- Расщепи  · n=1  · atharvaveda
+
+### `Cindan` — chindan  (n=1)
+
+- рассекая  · n=1  · mahabharata-bhishmaparva
+
+### `Cindanti` — chindanti  (n=16)
+
+- рассекают  · n=5  · bhagavadgita-burba, ramanuja_gitabhashya, bhagavadgita-smirnov, bhagavadgita-sementsov, bhagavadgita-prabhupada
+- рассекает  · n=4  · gitarthasamgraha-abhinavagupta, bhagavadgita-1914, bhagavadgity, bhagavadgita-sharma
+- сечет  · n=2  · mahabharata-bhishmaparva, bhagavadgita-erman
+- разсѣкаетъ  · n=2  · bhagavadgita-1788, bhagavadgita-1909
+- рубят  · n=1  · mahabharata-aranyakaparva
+- рассечь  · n=1  · bhagavadgita-prabhupada
+- поражает  · n=1  · bhagavadgita-radha
+
+### `CindyAm` — chindyām  (n=3)
+
+- отсеку  · n=1  · mahabharata-dronaparva
+- разрушил бы  · n=1  · mahabharata-udyogaparva
+- сокрушу  · n=1  · mahabharata-udyogaparva
+
+### `CindyAt` — chindyāt  (n=2)
+
+- сокрушают  · n=1  · mahabharata-aranyakaparva
+- следует пресекать  · n=1  · mahabharata-udyogaparva
+
+### `CinnA` — chinnā  (n=9)
+
+- Разрезанная  · n=1  · ramayana-sundarakanda
+- рассечен  · n=1  · mahabharata-bhishmaparva
+- рассеченный  · n=1  · mahabharata-dronaparva
+- угасла  · n=1  · mahabharata-udyogaparva
+- срезанный  · n=1  · mahabharata-udyogaparva
+- рассеченное  · n=1  · mahabharata-karnaparva
+- сокрушенное  · n=1  · mahabharata-karnaparva
+- отрезанная  · n=1  · atharvaveda
+- отделенная  · n=1  · atharvaveda
+
+### `CinnABrARi` — chinnābhrāṇi  (n=1)
+
+- разорванные облака  · n=1  · mahabharata-dronaparva
+
+### `CinnABra` — chinnābhra  (n=4)
+
+- разорванное облако  · n=2  · bhagavadgita-burba
+- разорванному облаку  · n=1  · bhagavadgita-1788
+- облачко  · n=1  · bhagavadgita-sementsov
+
+### `CinnABraSiKaropama` — chinnābhraśikharopama  (n=2)
+
+- подобен горе, у которой отсечены (крылья)-облака  · n=2  · mahabharata-aranyakaparva
+
+### `CinnABre` — chinnābhre  (n=1)
+
+- развеянные ветром облака  · n=1  · mahabharata-karnaparva
+
+### `CinnAH` — chinnāḥ  (n=2)
+
+- рассеченные  · n=1  · mahabharata-udyogaparva
+- поразил  · n=1  · mahabharata-karnaparva
+
+### `CinnAni` — chinnāni  (n=1)
+
+- растерзанные  · n=1  · mahabharata-virataparva
+
+### `CinnAyAm` — chinnāyām  (n=1)
+
+- рассечено  · n=1  · mahabharata-udyogaparva
+
+### `Cinna` — chinna  (n=90)
+
+- отсеченные  · n=6  · mahabharata-karnaparva, mahabharata-adiparva, mahabharata-dronaparva, mahabharata-shalyaparva
+- рассеченный  · n=5  · mahabharata-dronaparva, mahabharata-karnaparva, mahabharata-shalyaparva
+- развеянное  · n=4  · bhagavadgita-erman, mahabharata-bhishmaparva, bhagavadgita-sharma
+- разорванной  · n=3  · gitarthasamgraha-abhinavagupta, bhagavadgity, bhagavadgita-smirnov
+- разорванное  · n=3  · bhagavadgita-prabhupada, mahabharata-virataparva
+- отрезал  · n=2  · ramayana-aranyakanda, shukasaptati
+- отрубленными  · n=2  · ramayana-aranyakanda, mahabharata-bhishmaparva
+- сломанный  · n=2  · mahabharata-bhishmaparva
+- отрубленных  · n=2  · mahabharata-dronaparva, mahabharata-shalyaparva
+- перерубленный  · n=2  · mahabharata-dronaparva, mahabharata-karnaparva
+- срубленный  · n=2  · mahabharata-karnaparva, mahabharata-striparva
+- разбитый  · n=2  · mahabharata-karnaparva
+- отсекаются  · n=2  · nyaya-bhashya
+- сломанной  · n=2  · atharvaveda
+- срезал  · n=1  · mahabharata-adiparva
+- Срезанные  · n=1  · mahabharata-adiparva
+- отсечена  · n=1  · mahabharata-adiparva
+- подрубленное  · n=1  · ramayana-ayodhyakanda
+- не имеет  · n=1  · ramayana-ayodhyakanda
+- отломившейся  · n=1  · ramayana-sundarakanda
+- отрубили  · n=1  · ramayana-sundarakanda
+- разорвется  · n=1  · manavadharmashastra
+- Со срезанными  · n=1  · ramayana-aranyakanda
+- С разбитыми  · n=1  · ramayana-aranyakanda
+- Разорванных  · n=1  · ramayana-aranyakanda
+- сквозь  · n=1  · ramayana-aranyakanda
+- изрубленное  · n=1  · mahabharata-bhishmaparva
+- разрубленный  · n=1  · mahabharata-bhishmaparva
+- поломанный  · n=1  · mahabharata-bhishmaparva
+- отрубленный  · n=1  · mahabharata-bhishmaparva
+- разорванный  · n=1  · mahabharata-bhishmaparva
+- сломанным  · n=1  · mahabharata-bhishmaparva
+- разорванными  · n=1  · mahabharata-dronaparva
+- срубались  · n=1  · mahabharata-dronaparva
+- отрубленные  · n=1  · mahabharata-dronaparva
+- отсеченная  · n=1  · mahabharata-dronaparva
+- срубленные  · n=1  · mahabharata-dronaparva
+- разбитых  · n=1  · mahabharata-dronaparva
+- рассеченная  · n=1  · mahabharata-dronaparva
+- рассеченное  · n=1  · mahabharata-dronaparva
+- отрубленной  · n=1  · mahabharata-dronaparva
+- клок  · n=1  · ramanuja_gitabhashya
+- КЛОК  · n=1  · ramanuja_gitabhashya
+- расторгнув  · n=1  · bhagavadgity
+- отсечены  · n=1  · bhagavadgita-prabhupada
+- Отсеченные  · n=1  · mahabharata-karnaparva
+- подрубленные  · n=1  · mahabharata-karnaparva
+- расщепленный  · n=1  · mahabharata-karnaparva
+- пробитых  · n=1  · mahabharata-karnaparva
+- разбитую  · n=1  · mahabharata-karnaparva
+- разорванным  · n=1  · mahabharata-shalyaparva
+- рассеченной  · n=1  · mahabharata-shalyaparva
+- рассеченные  · n=1  · mahabharata-shalyaparva
+- отсек  · n=1  · mahabharata-shalyaparva
+- изрубленные  · n=1  · mahabharata-shalyaparva
+- отрубленным  · n=1  · mahabharata-shalyaparva
+- отсеченной  · n=1  · mahabharata-shalyaparva
+- уничтожил  · n=1  · mahabharata-ashvamedhikaparva
+- расколоты  · n=1  · mahabharata-ashvamedhikaparva
+- потеряв  · n=1  · mahabharata-virataparva
+- сломано  · n=1  · atharvaveda
+- обрубят  · n=1  · shatakatrayam
+- при отделении от круга  · n=1  · mahabharata-striparva
+- разорванныхъ  · n=1  · megha-duta
+- поваленный  · n=1  · mahabharata-shalyaparva
+
+### `Cinna-Danvan` — chinna-dhanvan  (n=1)
+
+- с рассеченным луком  · n=1  · mahabharata-dronaparva
+
+### `Cinna-aBra` — chinna-abhra  (n=3)
+
+- разорванному облаку  · n=1  · bhagavadgita-1914
+- тучѣ  · n=1  · bhagavadgita-1909
+- оторванному облаку  · n=1  · bhagavadgita-radha
+
+### `Cinna-dvaiDA` — chinna-dvaidhā  (n=1)
+
+- свободившіеся отъ сомнѣнія  · n=1  · bhagavadgita-1788
+
+### `Cinna-dvaiDAH` — chinna-dvaidhāḥ  (n=1)
+
+- избавившиеся от сомнений  · n=1  · bhagavadgita-radha
+
+### `Cinna-dvaiDa` — chinna-dvaidha  (n=3)
+
+- те, у кого отсечена двойственность/сомнение  · n=1  · bhagavadgita-burba
+- освободились от двойственности  · n=1  · bhagavadgita-1914
+- познавшіе свой духъ  · n=1  · bhagavadgita-1909
+
+### `Cinna-saMSaya` — chinna-saṃśaya  (n=6)
+
+- отсекший сомнения  · n=2  · bhagavadgita-burba
+- свободный от сомнений  · n=2  · bhagavadgita-1914, bhagavadgity
+- свободенъ отъ всякаго сомнѣнія  · n=1  · bhagavadgita-1788
+- свободенъ Отъ всѣхъ желаній личныхъ и сомнѣній  · n=1  · bhagavadgita-1909
+
+### `Cinna-saMSayaH` — chinna-saṃśayaḥ  (n=2)
+
+- чьи сомнения развеяны  · n=2  · bhagavadgita-radha
+
+### `CinnaBinnaviparyastaiH` — chinnabhinnaviparyastaiḥ  (n=1)
+
+- пробиты, изломаны, изувечены  · n=1  · mahabharata-karnaparva
+
+### `CinnaBujA` — chinnabhujā  (n=1)
+
+- потеряв руки  · n=1  · ramayana-balakanda
+
+### `CinnaBuja` — chinnabhuja  (n=1)
+
+- с отрубленными руками  · n=1  · mahabharata-shalyaparva
+
+### `CinnaDanuH` — chinnadhanuḥ  (n=1)
+
+- все луки его были рассечены  · n=1  · mahabharata-virataparva
+
+### `CinnaDanvA` — chinnadhanvā  (n=7)
+
+- лишенный лука  · n=2  · mahabharata-dronaparva, mahabharata-shalyaparva
+- имея лук рассеченным  · n=1  · mahabharata-dronaparva
+- С рассеченным луком  · n=1  · mahabharata-dronaparva
+- с рассеченным луком  · n=1  · mahabharata-dronaparva
+- луком рассеченным  · n=1  · mahabharata-dronaparva
+- чей лук был рассечен  · n=1  · mahabharata-virataparva
+
+### `CinnaDanvAnaM` — chinnadhanvānaṃ  (n=1)
+
+- лишился своего лука  · n=1  · mahabharata-dronaparva
+
+### `CinnaDanvAnam` — chinnadhanvānam  (n=6)
+
+- чей лук был рассечен  · n=2  · mahabharata-dronaparva, mahabharata-karnaparva
+- лишившегося лука  · n=1  · mahabharata-karnaparva
+- оставшегося без лука  · n=1  · mahabharata-karnaparva
+- когда лук его был разбит  · n=1  · mahabharata-karnaparva
+- лишенного своего лука  · n=1  · mahabharata-shalyaparva
+
+### `CinnaDanvan` — chinnadhanvan  (n=21)
+
+- чей лук был рассечен  · n=3  · mahabharata-dronaparva
+- С луком рассеченным  · n=3  · mahabharata-dronaparva
+- лишенного лука  · n=2  · mahabharata-bhishmaparva, mahabharata-dronaparva
+- со сломанным луком  · n=1  · mahabharata-bhishmaparva
+- у которого сломан был лук  · n=1  · mahabharata-bhishmaparva
+- лишившегося лука  · n=1  · mahabharata-dronaparva
+- рассекши лук  · n=1  · mahabharata-dronaparva
+- Лишенный своего лука  · n=1  · mahabharata-dronaparva
+- лишившись лука  · n=1  · mahabharata-dronaparva
+- сломан  · n=1  · mahabharata-karnaparva
+- чей лук срублен  · n=1  · mahabharata-karnaparva
+- чей лук был разрублен  · n=1  · mahabharata-karnaparva
+- Когда лук его был разбит  · n=1  · mahabharata-karnaparva
+- лук которого был расколот  · n=1  · mahabharata-karnaparva
+- лишенный своего лука  · n=1  · mahabharata-shalyaparva
+- лишенного своего лука  · n=1  · mahabharata-shalyaparva
+
+### `CinnaDvajaDanuSCatraHsahadevenasaubalaH` — chinnadhvajadhanuśchatraḥ sahadevena saubalaḥ  (n=1)
+
+- Со знаменем, луком и зонтом, рассеченными Сахадевой, сын Субалы  · n=1  · mahabharata-shalyaparva
+
+### `CinnaDvajapatAkiBiH` — chinnadhvajapatākibhiḥ  (n=1)
+
+- с срублены флаги и знамена  · n=1  · mahabharata-karnaparva
+
+### `CinnaDvajaraTavrAta` — chinnadhvajarathavrāta  (n=1)
+
+- скопления колесниц со срезанными древками знамен  · n=1  · mahabharata-dronaparva
+
+### `CinnaDvajena` — chinnadhvajena  (n=1)
+
+- со срубленным знаменем  · n=1  · mahabharata-karnaparva
+
+### `CinnaH` — chinnaḥ  (n=1)
+
+- отрублю  · n=1  · mahabharata-aranyakaparva
+
+### `CinnaM` — chinnaṃ  (n=1)
+
+- срубленного  · n=1  · mahabharata-virataparva
+
+### `CinnaSAKa` — chinnaśākha  (n=1)
+
+- с обрубленными ветвями  · n=1  · mahabharata-striparva
+
+### `CinnaSIrzAH` — chinnaśīrṣāḥ  (n=1)
+
+- отсеченных голов  · n=1  · mahabharata-aranyakaparva
+
+### `CinnabAhUrupARiBiH` — chinnabāhūrupāṇibhiḥ  (n=1)
+
+- с отсеченными руками, бедрами и кистями  · n=1  · mahabharata-svargarohanikaparva
+
+### `CinnabAhave` — chinnabāhave  (n=1)
+
+- с рукою отсеченной  · n=1  · mahabharata-dronaparva
+
+### `CinnabAhu` — chinnabāhu  (n=2)
+
+- отрублена рука  · n=1  · mahabharata-dronaparva
+- отсек руку  · n=1  · mahabharata-striparva
+
+### `CinnabAhuH` — chinnabāhuḥ  (n=1)
+
+- с отсеченной рукой  · n=1  · mahabharata-mausalaparva
+
+### `CinnacCatramahAhaMsAm` — chinnacchatramahāhaṃsām  (n=1)
+
+- Разорванные зонты заменяли больших ее лебедей  · n=1  · mahabharata-dronaparva
+
+### `CinnacakrAn` — chinnacakrān  (n=1)
+
+- разбиты колеса  · n=1  · mahabharata-karnaparva
+
+### `CinnadvaiDA` — chinnadvaidhā  (n=1)
+
+- без двойственных качеств  · n=1  · bhagavadgita-sementsov
+
+### `CinnadvaiDAH` — chinnadvaidhāḥ  (n=2)
+
+- расторгшие двойственность  · n=1  · bhagavadgita-smirnov
+- освободившийся от всех противоречий  · n=1  · bhagavadgita-sharma
+
+### `CinnadvaiDa` — chinnadvaidha  (n=7)
+
+- рассекшие двойственность  · n=2  · mahabharata-bhishmaparva, bhagavadgita-erman
+- преодолевшие двойственность  · n=2  · gitarthasamgraha-abhinavagupta
+- раздвоенье покинув  · n=1  · ramanuja_gitabhashya
+- те, кем двойственность отсечена  · n=1  · bhagavadgita-prabhupada
+- нисколько не сомневается в верховном положении Господа  · n=1  · bhagavadgita-prabhupada
+
+### `CinnagAtra` — chinnagātra  (n=3)
+
+- с иссеченными телами  · n=1  · mahabharata-dronaparva
+- искалечены  · n=1  · mahabharata-udyogaparva
+- с разрубленным телом  · n=1  · mahabharata-karnaparva
+
+### `CinnagAtraSiroDara` — chinnagātraśirodhara  (n=1)
+
+- с перерубленными конечностями и шеями  · n=1  · mahabharata-karnaparva
+
+### `CinnagAtraiH` — chinnagātraiḥ  (n=1)
+
+- с отсеченными членами  · n=1  · mahabharata-karnaparva
+
+### `CinnahastAH` — chinnahastāḥ  (n=2)
+
+- с отсеченными хоботами  · n=1  · mahabharata-bhishmaparva
+- с отрубленными хоботами  · n=1  · mahabharata-karnaparva
+
+### `Cinnahasta` — chinnahasta  (n=1)
+
+- с отсеченным хоботом  · n=1  · mahabharata-bhishmaparva
+
+### `Cinnahastam` — chinnahastam  (n=1)
+
+- с отрубленным хоботом  · n=1  · mahabharata-dronaparva
+
+### `Cinnahastasya` — chinnahastasya  (n=1)
+
+- потеряв руки  · n=1  · ramayana-aranyakanda
+
+### `CinnaiH` — chinnaiḥ  (n=5)
+
+- отрубленными  · n=2  · mahabharata-dronaparva
+- срубленными  · n=1  · mahabharata-bhishmaparva
+- рассеченными  · n=1  · mahabharata-dronaparva
+- поверженными  · n=1  · mahabharata-shalyaparva
+
+### `CinnakArmuka` — chinnakārmuka  (n=3)
+
+- со сломанными луками  · n=2  · mahabharata-bhishmaparva
+- лук расколот  · n=1  · mahabharata-karnaparva
+
+### `Cinnam` — chinnam  (n=12)
+
+- разбитый  · n=2  · mahabharata-karnaparva
+- отсеченная  · n=2  · mahabharata-karnaparva, mahabharata-shalyaparva
+- Расщепленное  · n=1  · ramayana-aranyakanda
+- Рассеченное  · n=1  · mahabharata-bhishmaparva
+- рассеченный  · n=1  · mahabharata-dronaparva
+- сломан  · n=1  · mahabharata-karnaparva
+- сломанный  · n=1  · mahabharata-karnaparva
+- сбито  · n=1  · mahabharata-karnaparva
+- срубленное  · n=1  · mahabharata-shalyaparva
+- отрубленные  · n=1  · mahabharata-virataparva
+
+### `CinnamUla` — chinnamūla  (n=1)
+
+- с подрубленными корнями  · n=1  · mahabharata-udyogaparva
+
+### `CinnamUlaH` — chinnamūlaḥ  (n=2)
+
+- с подрубленными корнями  · n=2  · mahabharata-aranyakaparva, mahabharata-virataparva
+
+### `CinnameKalam` — chinnamekhalam  (n=1)
+
+- порвавшиеся пояса  · n=1  · raghuvamsha
+
+### `CinnamuzwyAyuDANgadAH` — chinnamuṣṭyāyudhāṅgadāḥ  (n=1)
+
+- с перерубленными кистями, изломанным оружием и браслетами  · n=1  · mahabharata-karnaparva
+
+### `CinnapAdAH` — chinnapādāḥ  (n=1)
+
+- с рассеченными ногами  · n=1  · mahabharata-bhishmaparva
+
+### `CinnapakSa` — chinnapakśa  (n=1)
+
+- бескрылой  · n=1  · hatha-yoga-pradipika
+
+### `CinnapakzAH` — chinnapakṣāḥ  (n=1)
+
+- не имеют сторонников  · n=1  · mahabharata-udyogaparva
+
+### `Cinnapakza` — chinnapakṣa  (n=3)
+
+- без крыльев  · n=1  · mahabharata-aranyakaparva
+- с отсечёнными крыльями  · n=1  · mahabharata-bhishmaparva
+- лишенные крыльев  · n=1  · mahabharata-shalyaparva
+
+### `CinnapfzWa` — chinnapṛṣṭha  (n=1)
+
+- со спинами рассеченными  · n=1  · mahabharata-dronaparva
+
+### `CinnasaMSaya` — chinnasaṃśaya  (n=5)
+
+- чьи развеяны сомнения  · n=1  · mahabharata-bhishmaparva
+- расторгший сомненья  · n=1  · bhagavadgita-smirnov
+- лишенный сомнений  · n=1  · bhagavadgita-sementsov
+- свободный от сомнений  · n=1  · bhagavadgita-sharma
+- избавившийся от всех сомнений  · n=1  · mahabharata-ashvamedhikaparva
+
+### `CinnasaMSayaH` — chinnasaṃśayaḥ  (n=2)
+
+- отсекший сомнения  · n=1  · gitarthasamgraha-abhinavagupta
+- чьи развеяны сомнения  · n=1  · bhagavadgita-erman
+
+### `CinnasarvaparicCadaH` — chinnasarvaparicchadaḥ  (n=1)
+
+- все облачение  · n=1  · mahabharata-karnaparva
+
+### `CinnaskanDa` — chinnaskandha  (n=1)
+
+- с разрубленной шеей  · n=1  · mahabharata-bhishmaparva
+
+### `Cinnasneharasa` — chinnasneharasa  (n=1)
+
+- угасает любовь  · n=1  · amaru-shataka
+
+### `CinnatanucCadam` — chinnatanucchadam  (n=2)
+
+- иссечены ратные доспехи  · n=1  · mahabharata-dronaparva
+- в пробитых доспехах  · n=1  · mahabharata-karnaparva
+
+### `CinnatanucCadau` — chinnatanucchadau  (n=1)
+
+- В доспехах, иссеченных  · n=1  · mahabharata-dronaparva
+
+### `CinnatriveRucakrAkzAn` — chinnatriveṇucakrākṣān  (n=1)
+
+- у которых колеса, дышла и оси были изломаны  · n=1  · mahabharata-karnaparva
+
+### `CinnatriveRujaNGezAn` — chinnatriveṇujaṅgheṣān  (n=1)
+
+- разрубил тривену, задки и дышла  · n=1  · mahabharata-karnaparva
+
+### `Cinnau` — chinnau  (n=2)
+
+- разбиты  · n=1  · mahabharata-aranyakaparva
+- отсек  · n=1  · mahabharata-karnaparva
+
+### `CinnavAlAH` — chinnavālāḥ  (n=1)
+
+- с отрубленными хвостами  · n=1  · mahabharata-karnaparva
+
+### `CinnavarmA` — chinnavarmā  (n=1)
+
+- доспехи которого были пробиты  · n=1  · mahabharata-karnaparva
+
+### `Cinnavarman` — chinnavarman  (n=1)
+
+- с панцирями разбитыми  · n=1  · mahabharata-dronaparva
+
+### `CinnavarmarzwiSakti` — chinnavarmarṣṭiśakti  (n=1)
+
+- со щитами, копьями и дротиками, рассеченными (на части)  · n=1  · mahabharata-dronaparva
+
+### `CinnavicikitsaH` — chinnavicikitsaḥ  (n=1)
+
+- разрешив свои собственные сомнения  · n=1  · mahabharata-udyogaparva
+
+### `Cinnayazwi` — chinnayaṣṭi  (n=1)
+
+- С древком срубленным  · n=1  · mahabharata-dronaparva
+
+### `CinnayazwiH` — chinnayaṣṭiḥ  (n=1)
+
+- древко коего было разрублено  · n=1  · mahabharata-karnaparva
+
+### `Cinne` — chinne  (n=3)
+
+- при виде рассеченного  · n=1  · mahabharata-dronaparva
+- отсеченной  · n=1  · mahabharata-dronaparva
+- рассечен  · n=1  · mahabharata-virataparva
+
+### `CinneDanuzi` — chinne dhanuṣi  (n=1)
+
+- когда лук его был рассечен  · n=1  · mahabharata-shalyaparva
+
+### `CinnezAyugabanDurAn` — chinneṣāyugabandhurān  (n=1)
+
+- сокрушены передки, перебиты оглобли и ярма  · n=1  · mahabharata-karnaparva
+
+### `CinnottamANgasya` — chinnottamāṅgasya  (n=1)
+
+- обезглавленное  · n=1  · mahabharata-shalyaparva
+
+### `Cinta` — chinta  (n=1)
+
+- Проломите  · n=1  · atharvaveda
+
+### `CiraH` — chiraḥ  (n=1)
+
+- голова  · n=1  · rigveda
+
+### `CitTA` — chitthā  (n=1)
+
+- пресекай  · n=1  · kau-up
+
+### `Cita` — chita  (n=1)
+
+- острыми  · n=1  · mahabharata-dronaparva
+
+### `CitairbARaiH` — chitairbāṇaiḥ  (n=1)
+
+- острыми стрелами  · n=1  · mahabharata-dronaparva
+
+### `CittvA` — chittvā  (n=116)
+
+- рассекши  · n=32  · mahabharata-dronaparva, mahabharata-shalyaparva, mahabharata-karnaparva
+- срезав  · n=8  · mahabharata-dronaparva, mahabharata-bhishmaparva, bhagavadgity, bhagavadgita-smirnov, mahabharata-karnaparva
+- срубив  · n=6  · mahabharata-dronaparva, bhagavadgita-sharma, bhagavadgita-radha
+- рассек  · n=5  · mahabharata-karnaparva, mahabharata-bhishmaparva, mahabharata-udyogaparva, mahabharata-ashvamedhikaparva
+- разрубив  · n=4  · mahabharata-dronaparva, ramanuja_gitabhashya, bhagavadgita-prabhupada, bhagavadgita-radha
+- Рассекши  · n=4  · mahabharata-dronaparva, mahabharata-karnaparva
+- расщепив  · n=4  · mahabharata-karnaparva
+- разорвав  · n=3  · ramayana-sundarakanda, mahabharata-adiparva
+- отсек  · n=3  · ramayana-aranyakanda, mahabharata-aranyakaparva, mahabharata-dronaparva
+- разбив  · n=3  · mahabharata-aranyakaparva, mahabharata-karnaparva, mahabharata-ashvamedhikaparva
+- отсеки  · n=3  · mahabharata-bhishmaparva, bhagavadgita-sementsov, bhagavadgita-sharma
+- рассекая  · n=3  · bhagavadgita-1914, bhagavadgity, bhagavadgita-smirnov
+- перерубил  · n=3  · mahabharata-karnaparva
+- отрезав  · n=2  · mahabharata-aranyakaparva, mahabharata-adiparva
+- разрезав  · n=2  · mahabharata-dronaparva
+- расщепил  · n=2  · mahabharata-karnaparva
+- перерубив  · n=2  · mahabharata-karnaparva
+- рубит  · n=2  · shatakatrayam, shatakatrayam-serebryakov
+- ранениями  · n=1  · manavadharmashastra
+- сделав  · n=1  · manavadharmashastra
+- отрубив  · n=1  · manavadharmashastra
+- Поражен  · n=1  · ramayana-aranyakanda
+- отрубит  · n=1  · ramayana-aranyakanda
+- отделив  · n=1  · mahabharata-aranyakaparva
+- снеся  · n=1  · mahabharata-bhishmaparva
+- рассекли  · n=1  · mahabharata-bhishmaparva
+- отсекши  · n=1  · mahabharata-dronaparva
+- сломав  · n=1  · mahabharata-bhishmaparva
+- разнеся  · n=1  · mahabharata-dronaparva
+- И стали рассказывать  · n=1  · buddhacharita
+- разрубил  · n=1  · buddhacharita
+- Разорвав  · n=1  · buddhacharita
+- отсекая  · n=1  · bhagavadgita-burba
+- срубается  · n=1  · bhagavadgita-1914
+- разсѣчь  · n=1  · bhagavadgita-1788
+- Разсѣчь  · n=1  · bhagavadgita-1909
+- разбивая  · n=1  · mahabharata-karnaparva
+- Сокрушив  · n=1  · mahabharata-karnaparva
+- раздробил  · n=1  · mahabharata-karnaparva
+- разбил  · n=1  · mahabharata-karnaparva
+- Расщепив  · n=1  · mahabharata-karnaparva
+- Срубив  · n=1  · mahabharata-ashvamedhikaparva
+- устранив  · n=1  · mahabharata-ashramavasikaparva
+
+### `CittvAtusamarebARaM` — chittvā tu samare bāṇaṃ  (n=1)
+
+- рассекши в сражении ту стрелу  · n=1  · mahabharata-dronaparva
+
+### `Cittva` — chittva  (n=1)
+
+- срубил  · n=1  · mahabharata-dronaparva
+
+### `CitvA` — chitvā  (n=3)
+
+- срубив  · n=1  · ramayana-ayodhyakanda
+- срезал  · n=1  · ramayana-ayodhyakanda
+- рассекая  · n=1  · mai-up
+
+### `Citva` — chitva  (n=1)
+
+- Рассекая  · n=1  · gitarthasamgraha-abhinavagupta
+
+### `CivatamAm` — chivatamām  (n=1)
+
+- самую милую  · n=1  · atharvaveda
+
+### `ClaTaM` — chlathaṃ  (n=1)
+
+- увядшие  · n=1  · raghuvamsha
+
+### `Cloka` — chloka  (n=4)
+
+- шум  · n=2  · rigveda
+- Грохот  · n=1  · atharvaveda
+- грохот  · n=1  · atharvaveda
+
+### `CnaTihi` — chnathihi  (n=1)
+
+- раздроби  · n=1  · rigveda
+
+### `CoDaka` — chodhaka  (n=1)
+
+- пояснительные  · n=1  · vedartha-samgraha_ramanuja
+
+### `CowayitvA` — choṭayitvā  (n=1)
+
+- открыв  · n=1  · shukasaptati
+
+### `CraTAya` — chrathāya  (n=1)
+
+- словно пояс  · n=1  · rigveda
+
+### `Cravat` — chravat  (n=1)
+
+- пусть слушает  · n=1  · rigveda
+
+### `CrayAtai` — chrayātai  (n=1)
+
+- будет покоиться  · n=1  · atharvaveda
+
+### `Craye` — chraye  (n=3)
+
+- опираюсь  · n=3  · atharvaveda
+
+### `Criyam` — chriyam  (n=2)
+
+- великолепие  · n=2  · atharvaveda
+
+### `CrutaM` — chrutaṃ  (n=2)
+
+- услышанное  · n=1  · bhagavadgita-burba
+- слушал  · n=1  · bhagavadgita-burba
+
+### `CuSrUzA` — chuśrūṣā  (n=1)
+
+- служил  · n=1  · mahabharata-ashramavasikaparva
+
+### `CuSucAnasya` — chuśucānasya  (n=1)
+
+- сверкающего  · n=1  · rigveda
+
+### `CubukAt` — chubukāt  (n=2)
+
+- из подбородка  · n=2  · rigveda, atharvaveda
+
+### `CucCundari` — chucchundari  (n=1)
+
+- мускусной крысой  · n=1  · manavadharmashastra
+
+### `Cucir` — chucir  (n=2)
+
+- Чистая  · n=2  · rigveda
+
+### `CurikA` — churikā  (n=1)
+
+- прокалывании ноздрей  · n=1  · manavadharmashastra
+
+### `CuruDaH` — churudhaḥ  (n=1)
+
+- подкрепления  · n=1  · rigveda
+
+### `CutudrI` — chutudrī  (n=2)
+
+- Шутудри  · n=2  · rigveda
+
+### `CuzmI` — chuṣmī  (n=1)
+
+- отважный  · n=1  · rigveda
+
+### `CyAvadant` — chyāvadant  (n=1)
+
+- с черными зубами  · n=1  · atharvaveda
+
+### `CyoQa` — chyoḍha  (n=1)
+
+- лишайте  · n=1  · mnar-up
 
 ### `c` — c  (n=1)
 

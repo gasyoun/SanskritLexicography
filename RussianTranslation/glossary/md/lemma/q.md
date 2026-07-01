@@ -1,4 +1,4 @@
-# Lemma glossary (Sa→Ru) — `q`
+# Lemma glossary (Sa→Ru) — `Q`
 
 7 entries.
 
