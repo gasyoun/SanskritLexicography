@@ -29,10 +29,15 @@ sys.stderr.reconfigure(encoding='utf-8')
 
 from window_common import INP, REPO, SRC, input_paths, load_json, read_text, rootmap_path, sha256_file, write_text
 import pwg_mask
+from autosplit_requeue import plan as split_plan     # deterministic per-card sense/citation split
 sys.path.insert(0, SRC)
 from safe_filename import safe_name
 from whitney_grammar import grammar_for
 from nominal_grammar import nominal_grammar_for
+
+SELFHEAL = False   # --selfheal: on a card the batch can't translate, auto-split it in-harness
+                   #  (deterministic split precomputed here) and translate the fragments, then
+                   #  stitch back — no manual requeue. Default OFF so existing runs are unchanged.
 
 
 def grammar_text(root):
@@ -133,6 +138,8 @@ def parse_args(argv):
             nominal = True
         elif a == '--no-grammar':
             grammar_on = False
+        elif a == '--selfheal':
+            globals()['SELFHEAL'] = True     # gated: default OFF -> existing runs unchanged
     if lang not in ('ru', 'en'):
         die('unknown --lang %r (ru|en)' % lang)
     if lang == 'en' and mw_tm is None:
@@ -351,6 +358,28 @@ def build(root, keys, rootmap, budget, lean=False, nws_gate=False,
         phmaps[k] = ph
         input_hashes[k] = {'raw_sha256': sha256_file(rp), 'portrait_sha256': sha256_file(pp)}
 
+    # --selfheal: precompute a per-card fragment fallback (deterministic sense/citation split).
+    # The JS uses it only for cards the batch could not translate; each fragment is masked here
+    # so the in-harness path reuses the same {Tn} restore. Only cards that actually split (>=2
+    # fragments) get a fallback; unsplittable cards fall through (the batch retry already tried).
+    frags, phf = {}, {}
+    if SELFHEAL:
+        for k in keys:
+            pl = split_plan(read_text(input_paths(k)[0]))
+            if len(pl) < 2:
+                continue
+            fl, pfl = [], []
+            for _si, _pi, t in pl:
+                fsk, fph, _ = pwg_mask.mask(t)
+                if pwg_mask.restore(fsk, fph) != t:
+                    fl = []
+                    break                        # give up the fallback if any fragment is lossy
+                fl.append({'skeleton': fsk, 'ls': t.count('<ls'), 'sk': t.count('{#')})
+                pfl.append(fph)
+            if fl:
+                frags[k] = fl
+                phf[k] = pfl
+
     batches, cur, sz = [], [], 0
     for k in keys:
         ksz = len(inputs[k]['skeleton']) + len(inputs[k]['portrait'])
@@ -403,6 +432,8 @@ const CARDS_SCHEMA = %(schema)s
 const BATCHES = %(batches)s
 const INPUTS = %(inputs)s
 const PH = %(phmaps)s
+const FRAGS = %(frags)s
+const PHF = %(phf)s
 const META = %(meta)s
 
 const restore = (t, ph) => (t || '').replace(/\\{T(\\d+)\\}/g, (m, n) => (ph[+n - 1] !== undefined ? ph[+n - 1] : m))
@@ -428,11 +459,35 @@ const accept = (c, k) => {
   return c
 }
 
+// --selfheal fallback: a card the batch could not translate is split (deterministically,
+// precomputed in FRAGS) into fragments; each tiny fragment is translated on its own, then the
+// fragments' senses are stitched into one card. Returns the stitched card ONLY if every
+// fragment came back and the whole-card <ls>/{#..#} fidelity holds — never a lossy partial.
+async function selfHeal(k) {
+  const frs = FRAGS[k]; if (!frs || !frs.length) return null
+  const senses = []
+  for (let i = 0; i < frs.length; i++) {
+    const prompt = PREAMBLE + GRAMMAR + CONV_TR + '\\n\\n=== CARD ' + k + ' (fragment ' + (i + 1) + '/' + frs.length + ') ===\\n--- masked German (translatable only; {Tn}=masked span) ---\\n' + frs[i].skeleton
+    const res = await agent(prompt, { label: 'heal:' + k + '#' + (i + 1), phase: 'Translate', schema: CARDS_SCHEMA, model: '%(model)s', tools: [] })
+    const card = res && Array.isArray(res.cards) && res.cards[0]
+    if (!card) return null
+    const ph = (PHF[k] || [])[i] || []
+    for (const rec of (card.records || [])) for (const s of (rec.senses || [])) {
+      if (s.german !== undefined) s.german = restore(s.german, ph)
+      if (s.%(field)s !== undefined) s.%(field)s = restore(s.%(field)s, ph)
+      senses.push(s)
+    }
+  }
+  const stitched = { key1: k, records: [{ senses }] }
+  if (countOf(stitched, /<ls\\b/g) !== INPUTS[k].ls || countOf(stitched, /\\{#/g) !== INPUTS[k].sk) return null
+  return stitched
+}
+
 phase('Translate')
 async function translateBatch(batch, bi) {
   // Retry ONLY the cards still unresolved (positional within the shrinking pending
   // set), not the whole batch — one missing/garbled card must not re-bill the rest.
-  const resolved = {}
+  const resolved = {}, healed = {}
   let pending = batch.slice()
   for (let attempt = 0; attempt < 2 && pending.length; attempt++) {
     // lean mode: NWS_RULE is non-empty and injected only when the batch has an NWS card
@@ -445,7 +500,10 @@ async function translateBatch(batch, bi) {
     }
     pending = pending.filter(k => !resolved[k])
   }
-  return batch.map(k => ({ key: k, card: resolved[k] || null, judge: null, judge_sonnet: null, escalated: false }))
+  // self-healing tier: split-translate-stitch the cards the batch gave up on (no-op unless
+  // --selfheal populated FRAGS). Runs only for the few still-failing cards.
+  for (const k of pending) { const c = await selfHeal(k); if (c) { resolved[k] = c; healed[k] = 1 } }
+  return batch.map(k => ({ key: k, card: resolved[k] || null, judge: null, judge_sonnet: null, escalated: !!healed[k] }))
 }
 const grouped = await parallel(BATCHES.map((b, i) => () => translateBatch(b, i)))
 const out = grouped.flat()
@@ -466,6 +524,7 @@ return { meta: META, results: out }
         'schema': json.dumps(batch_schema, ensure_ascii=True),
         'batches': json.dumps(batches), 'inputs': json.dumps(inputs, ensure_ascii=True),
         'phmaps': json.dumps(phmaps, ensure_ascii=True), 'meta': json.dumps(meta, ensure_ascii=True),
+        'frags': json.dumps(frags, ensure_ascii=True), 'phf': json.dumps(phf, ensure_ascii=True),
     }
     for bad in ['readFileSync', 'fileURLToPath', 'import.meta']:
         if bad in js:
