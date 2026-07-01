@@ -259,48 +259,79 @@ INDEX_HTML = r"""<!doctype html><html lang="ru"><head><meta charset="utf-8">
 .iast{font-style:italic}
 h2.root{font-size:26px;margin:0 0 2px}.meta{color:var(--mut);font-size:13px;margin-bottom:14px}
 .tabs{display:inline-flex;border:1px solid var(--line);border-radius:8px;overflow:hidden;margin-bottom:16px}
-.tabs button{border:0;background:var(--bg);color:var(--fg);padding:6px 16px;cursor:pointer;font-size:14px}
-.tabs button.on{background:var(--accent);color:#fff}
+.tabs .tab{border:0;border-right:1px solid var(--line);background:var(--bg);color:var(--fg);padding:6px 16px;cursor:pointer;font-size:14px}
+.tabs .tab:last-child{border-right:0}
+.tabs .tab.on{background:var(--accent);color:#fff}
 .sub{margin:18px 0;padding-bottom:6px;border-bottom:1px solid var(--line)}
 .sub h3{margin:0 0 2px;font-size:19px}.sub .k{color:var(--mut);font-size:12px;font-family:ui-monospace,monospace}
 .sense{margin:12px 0;padding:10px 12px;background:var(--card);border-radius:8px}
 .tag{font-weight:700;color:var(--accent);margin-right:4px}
-.de{margin-bottom:6px}.tr{padding-top:6px;border-top:1px dashed var(--line)}
-.lbl{font-size:11px;letter-spacing:.05em;color:var(--mut);text-transform:uppercase;margin-right:6px}
+.de{margin-bottom:6px}.tr{padding-top:6px;margin-top:6px;border-top:1px dashed var(--line)}
+.lbl{font-size:10px;letter-spacing:.05em;color:#fff;background:var(--mut);border-radius:3px;padding:0 5px;text-transform:uppercase;margin-right:6px;vertical-align:1px}
 i.sa{font-style:italic;color:var(--sa)}
 .ls{color:var(--mut);font-size:.92em}.ab{font-style:italic;color:var(--mut)}.lex{font-variant:small-caps;color:var(--mut)}
 .badges{margin-top:6px}.badge{display:inline-block;font-size:11px;color:var(--mut);border:1px solid var(--line);border-radius:10px;padding:0 7px;margin-right:5px}
 .na{color:var(--mut);font-style:italic}
+/* language switch: show German always as reference in ru/en; German-only in de mode */
+#artbody.lang-ru .tr.en{display:none}
+#artbody.lang-en .tr.ru{display:none}
+#artbody.lang-de .tr{display:none}
+#artbody.lang-de .de{font-size:16px}
+#artbody:not(.lang-de) .de{color:var(--mut)}   /* dim the source when a translation is primary */
+#artbody:not(.lang-de) .de i.sa{color:var(--sa)}
 </style></head><body><div id="wrap">
 <nav id="side"><h1>PWG статьи</h1><input id="q" placeholder="фильтр корней…"><div id="list"></div></nav>
-<main id="main"><p class="na">Загрузка…</p></main></div>
+<main id="main"><div id="arthead"></div><div id="artbody" class="lang-ru"><p class="na">Загрузка…</p></div></main></div>
 <script src="articles.js"></script>
 <script>
 var A=window.ARTICLES||{roots:[]}, lang='ru', cur=null;
-var list=document.getElementById('list'), main=document.getElementById('main'), q=document.getElementById('q');
+var list=document.getElementById('list'), q=document.getElementById('q');
+var arthead=document.getElementById('arthead'), artbody=document.getElementById('artbody');
+function esc(x){return x==null?'':(''+x);}
 function renderList(f){list.innerHTML='';A.roots.filter(function(r){return !f||r.iast.toLowerCase().indexOf(f)>=0||r.root.toLowerCase().indexOf(f)>=0;}).forEach(function(r){
  var d=document.createElement('div');d.className='rlink'+(cur===r.root?' active':'');
  d.innerHTML='<span class="iast">'+r.iast+'</span><span class="en">'+r.n_senses+(r.en_available?' ·en':'')+'</span>';
  d.onclick=function(){cur=r.root;renderList(q.value.toLowerCase());renderRoot(r);};list.appendChild(d);});}
-function transBlock(s){
- if(lang==='ru') return s.ru_html?'<div class="tr"><span class="lbl">RU</span>'+s.ru_html+'</div>':'';
- return s.en_html?'<div class="tr"><span class="lbl">EN</span>'+s.en_html+'</div>':'<div class="tr na">— EN перевод недоступен —</div>';}
+// Language is a CSS class on #artbody (lang-de|lang-ru|lang-en). All three blocks
+// are always in the DOM; the class shows/hides them, so switching cannot silently no-op.
+function applyLang(){
+ artbody.className='lang-'+lang;
+ var t=document.querySelectorAll('.tab');for(var i=0;i<t.length;i++){t[i].classList.toggle('on',t[i].getAttribute('data-lang')===lang);}
+}
+function trBlock(cls,label,txt){
+ return '<div class="tr '+cls+'"><span class="lbl">'+label+'</span>'+(txt?txt:'<span class="na">— нет / n/a —</span>')+'</div>';
+}
 function renderRoot(r){
- var h='<h2 class="root iast">'+r.iast+'</h2><div class="meta">PWG-статья · '+r.n_subcards+' под-карт., '+r.n_senses+' знач.'+(r.en_available?' · EN: '+r.n_en_senses+' знач.':' · EN нет')+'</div>';
- h+='<div class="tabs"><button id="tru" class="'+(lang==='ru'?'on':'')+'">Русский</button><button id="ten" class="'+(lang==='en'?'on':'')+'">English</button></div>';
+ cur=r.root;
+ arthead.innerHTML='<h2 class="root iast">'+r.iast+'</h2>'
+  +'<div class="meta">PWG-статья · '+r.n_subcards+' под-карт., '+r.n_senses+' знач.'
+  +(r.en_available?' · EN: '+r.n_en_senses+' знач.':' · EN нет')+'</div>'
+  +'<div class="tabs">'
+  +'<button class="tab" data-lang="de">Deutsch (оригинал)</button>'
+  +'<button class="tab" data-lang="ru">Русский</button>'
+  +'<button class="tab" data-lang="en">English</button></div>';
+ var h='';
  r.subcards.forEach(function(sub){
-  h+='<div class="sub"><h3 class="iast">'+(sub.iast||sub.h||sub.key)+'</h3><div class="k">'+sub.key+'</div></div>';
+  h+='<div class="sub"><h3 class="iast">'+esc(sub.iast||sub.h||sub.key)+'</h3><div class="k">'+esc(sub.key)+'</div></div>';
   sub.senses.forEach(function(s){
    var b='';if(s.dcs!=null)b+='<span class="badge">DCS '+s.dcs+'</span>';if(s.src)b+='<span class="badge">'+s.src+'</span>';
-   h+='<div class="sense"><div class="de"><span class="tag">'+s.tag+')</span>'+s.de_html+'</div>'+transBlock(s)+(b?'<div class="badges">'+b+'</div>':'')+'</div>';
+   h+='<div class="sense">'
+    +'<div class="de"><span class="tag">'+esc(s.tag)+')</span><span class="lbl">DE</span>'+esc(s.de_html)+'</div>'
+    +trBlock('ru','RU',s.ru_html)
+    +trBlock('en','EN',s.en_html)
+    +(b?'<div class="badges">'+b+'</div>':'')
+   +'</div>';
   });
  });
- main.innerHTML=h;
- document.getElementById('tru').onclick=function(){lang='ru';renderRoot(r);};
- document.getElementById('ten').onclick=function(){lang='en';renderRoot(r);};
+ artbody.innerHTML=h||'<p class="na">нет данных</p>';
+ applyLang();
 }
+// delegated tab handler (survives per-root re-render)
+document.getElementById('main').addEventListener('click',function(e){
+ var b=e.target.closest?e.target.closest('.tab'):null;if(!b)return;lang=b.getAttribute('data-lang');applyLang();
+});
 q.oninput=function(){renderList(q.value.toLowerCase());};
-renderList('');if(A.roots.length){cur=A.roots[0].root;renderList('');renderRoot(A.roots[0]);}
+renderList('');if(A.roots.length){renderList('');renderRoot(A.roots[0]);}
 </script></body></html>
 """
 
