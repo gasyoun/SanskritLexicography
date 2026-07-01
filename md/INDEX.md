@@ -10,7 +10,7 @@
 - [dhā](DA.md) — 877 senses, EN 773
 - [diś](diS.md) — 375 senses, EN 308
 - [dā](dA.md) — 957 senses, EN 612
-- [gam](gam.md) — 760 senses, EN 621
+- [gam](gam.md) — 763 senses, EN 621
 - [gā](gA.md) — 413 senses, EN 297
 - [han](han.md) — 749 senses, EN 629
 - [hi](hi.md) — 110 senses, EN 61
