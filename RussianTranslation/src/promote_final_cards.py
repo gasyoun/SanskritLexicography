@@ -167,6 +167,11 @@ def main():
     ap.add_argument('--review-status', default='ai_translated')
     ap.add_argument('--dry-run', action='store_true')
     ap.add_argument('--no-backup', action='store_true')
+    ap.add_argument('--merge', action='store_true',
+                    help='MERGE into the existing store by headword (key1): replace only the '
+                         'roots present in THIS run, keep every other root. Use for a per-root '
+                         'catch-up — the default full overwrite WIPES any root whose wf_output '
+                         'file is no longer on disk (the gam-RU loss mode).')
     args = ap.parse_args()
 
     paths = sorted(glob.glob(os.path.join(ROOT, args.glob)))
@@ -200,12 +205,31 @@ def main():
         print('  output was overwritten; re-run that root and re-run this script to complete it):')
         print('  ' + ', '.join('%s(%d)' % (r, per_root[r]['cards']) for r in thin))
 
+    # --merge: keep every root NOT in this run; replace only the promoted roots. Guards
+    # against the full-overwrite wipe when only a subset of wf_output files is on disk.
+    kept = 0
+    if args.merge and os.path.exists(args.store):
+        promoted_roots = {r['key1'] for r in rows}
+        keep_rows = []
+        with open(args.store, encoding='utf-8') as f:
+            for line in f:
+                line = line.strip()
+                if not line:
+                    continue
+                e = json.loads(line)
+                if e.get('key1') not in promoted_roots:
+                    keep_rows.append(e)
+        kept = len(keep_rows)
+        print('\nMERGE: replacing %d root(s) %s; keeping %d row(s) from other roots'
+              % (len(promoted_roots), sorted(promoted_roots), kept))
+        rows = keep_rows + rows
+
     if args.dry_run:
         print('\n(dry run — no store written)')
         return
 
     if os.path.exists(args.store) and not args.no_backup:
-        bak = args.store + '.legacy.bak'
+        bak = args.store + ('.premerge.bak' if args.merge else '.legacy.bak')
         os.replace(args.store, bak)
         print('\nbacked up prior store -> %s' % os.path.basename(bak))
     with open(args.store, 'w', encoding='utf-8') as f:
