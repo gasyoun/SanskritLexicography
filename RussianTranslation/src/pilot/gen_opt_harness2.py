@@ -613,21 +613,27 @@ async function resolveGroup(pending, label) {
 }
 async function translateBatch(batch, bi) {
   // A hard agent() failure (e.g. StructuredOutput retry cap exceeded, not just a malformed
-  // response our own retry/heal loops already catch) throws instead of returning — left
-  // unguarded, that rejects this whole batch's promise; parallel() then swaps the entire
-  // batch's slot for `null`, and the summary's `out.filter(r => r.card)` crashes on it
-  // (observed live: one flaky fragment call took down an otherwise-healthy 14-fragment run).
-  // Treat it exactly like an unresolved card — requeue-able, not fatal.
+  // response our own retry/heal loops already catch) throws instead of returning. Guard
+  // resolveGroup AND selfHeal INDEPENDENTLY — a caller that wraps both in one try/catch
+  // (as an earlier version of this fix did) swallows a whole-batch failure before --selfheal
+  // ever runs, which defeats the fallback for exactly the cards that need it most (observed
+  // live: a huge single-card nominal batch hard-failed the main attempt and the heal path,
+  // with its precomputed fragment groups, never even got a chance to run). Both paths degrade
+  // to "unresolved" on a hard failure — requeue-able, not fatal, and selfHeal still gets tried.
+  let resolved = {}, pending = batch.slice()
   try {
-    const { resolved, pending } = await resolveGroup(batch, 'b' + bi)
-    // self-healing tier: split-translate-stitch the cards the batch gave up on (no-op unless
-    // --selfheal populated FRAGS). Runs only for the few still-failing cards.
-    const healed = {}
-    for (const k of pending) { const c = await selfHeal(k); if (c) { resolved[k] = c; healed[k] = 1 } }
-    return batch.map(k => ({ key: k, card: resolved[k] || null, judge: null, judge_sonnet: null, escalated: !!healed[k] }))
-  } catch (e) {
-    return batch.map(k => ({ key: k, card: null, judge: null, judge_sonnet: null, escalated: false, error: String(e && e.message || e) }))
+    const r = await resolveGroup(batch, 'b' + bi)
+    resolved = r.resolved; pending = r.pending
+  } catch (e) { /* fall through to --selfheal below with the full batch still pending */ }
+  // self-healing tier: split-translate-stitch the cards the batch gave up on (no-op unless
+  // --selfheal populated FRAGS). Runs only for the few still-failing cards.
+  const healed = {}
+  for (const k of pending) {
+    let c = null
+    try { c = await selfHeal(k) } catch (e) { c = null }
+    if (c) { resolved[k] = c; healed[k] = 1 }
   }
+  return batch.map(k => ({ key: k, card: resolved[k] || null, judge: null, judge_sonnet: null, escalated: !!healed[k] }))
 }
 const grouped = await parallel(BATCHES.map((b, i) => () => translateBatch(b, i)))
 const out = grouped.flat()
