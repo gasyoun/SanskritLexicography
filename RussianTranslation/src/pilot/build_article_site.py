@@ -361,6 +361,20 @@ function applyLang(){
 function trBlock(cls,label,txt){
  return '<div class="tr '+cls+'"><span class="lbl">'+label+'</span>'+(txt?txt:'<span class="na">— нет / n/a —</span>')+'</div>';
 }
+function renderBody(r){
+ var subs=(window.ROOT||{})[r.root]||[]; var h='';
+ subs.forEach(function(sub){
+  h+='<div class="sub"><h3 class="iast">'+esc(sub.iast||sub.h||sub.key)+'</h3><div class="k">'+esc(sub.key)+'</div></div>';
+  sub.senses.forEach(function(s){
+   var b='';if(s.dcs!=null)b+='<span class="badge">DCS '+s.dcs+'</span>';if(s.src)b+='<span class="badge">'+s.src+'</span>';
+   h+='<div class="sense">'
+    +'<div class="de"><span class="tag">'+esc(s.tag)+')</span><span class="lbl">DE</span>'+esc(s.de_html)+'</div>'
+    +trBlock('ru','RU',s.ru_html)+trBlock('en','EN',s.en_html)
+    +(b?'<div class="badges">'+b+'</div>':'')+'</div>';
+  });
+ });
+ artbody.innerHTML=h||'<p class="na">нет данных</p>'; applyLang();
+}
 function renderRoot(r){
  cur=r.root;
  arthead.innerHTML='<h2 class="root iast">'+r.iast+'</h2>'
@@ -371,21 +385,13 @@ function renderRoot(r){
   +'<button class="tab" data-lang="de">Deutsch (оригинал)</button>'
   +'<button class="tab" data-lang="ru">Русский</button>'
   +'<button class="tab" data-lang="en">English</button></div>';
- var h='';
- r.subcards.forEach(function(sub){
-  h+='<div class="sub"><h3 class="iast">'+esc(sub.iast||sub.h||sub.key)+'</h3><div class="k">'+esc(sub.key)+'</div></div>';
-  sub.senses.forEach(function(s){
-   var b='';if(s.dcs!=null)b+='<span class="badge">DCS '+s.dcs+'</span>';if(s.src)b+='<span class="badge">'+s.src+'</span>';
-   h+='<div class="sense">'
-    +'<div class="de"><span class="tag">'+esc(s.tag)+')</span><span class="lbl">DE</span>'+esc(s.de_html)+'</div>'
-    +trBlock('ru','RU',s.ru_html)
-    +trBlock('en','EN',s.en_html)
-    +(b?'<div class="badges">'+b+'</div>':'')
-   +'</div>';
-  });
- });
- artbody.innerHTML=h||'<p class="na">нет данных</p>';
- applyLang();
+ // lazy-load this root's data (window.ROOT[root]) via <script src> — works from file:// too
+ if((window.ROOT||{})[r.root]){renderBody(r);return;}
+ artbody.innerHTML='<p class="na">Загрузка…</p>';
+ var sc=document.createElement('script'); sc.src='roots/'+r.safe+'.js';
+ sc.onload=function(){ if(cur===r.root) renderBody(r); };
+ sc.onerror=function(){ if(cur===r.root) artbody.innerHTML='<p class="na">ошибка загрузки</p>'; };
+ document.head.appendChild(sc);
 }
 // delegated tab handler (survives per-root re-render)
 document.getElementById('main').addEventListener('click',function(e){
@@ -416,19 +422,29 @@ def emit(model):
             f.write('- [%s](%s.md) — %d senses%s\n' % (
                 r['iast'], r['root'], r['n_senses'],
                 ', EN %d' % r['n_en_senses'] if r['en_available'] else ''))
-    # data js (drop the _md fields from the embedded blob to keep it lean)
-    slim = {'roots': [{
-        'root': r['root'], 'iast': r['iast'], 'en_available': r['en_available'],
-        'n_subcards': r['n_subcards'], 'n_senses': r['n_senses'],
-        'n_ru_senses': r['n_ru_senses'], 'n_en_senses': r['n_en_senses'],
-        'subcards': [{'key': s['key'], 'h': s['h'], 'iast': s['iast'], 'senses': [
+    # LAZY-LOAD: articles.js carries only a tiny per-root INDEX (no senses); each root's
+    # heavy pre-rendered HTML goes to roots/<safe>.js as window.ROOT["<root>"] = [...]. The
+    # page loads the index (KB) up front and injects one root file on click via <script src>
+    # (works from file:// too, unlike fetch). First paint drops from ~13 MB to a few KB + 1 root.
+    os.makedirs(os.path.join(OUT_DIR, 'roots'), exist_ok=True)
+    index = {'roots': []}
+    for r in model:
+        safe = re.sub(r'[^A-Za-z0-9_.~-]', '_', r['root'])
+        index['roots'].append({
+            'root': r['root'], 'safe': safe, 'iast': r['iast'], 'en_available': r['en_available'],
+            'n_subcards': r['n_subcards'], 'n_senses': r['n_senses'],
+            'n_ru_senses': r['n_ru_senses'], 'n_en_senses': r['n_en_senses']})
+        subs = [{'key': s['key'], 'h': s['h'], 'iast': s['iast'], 'senses': [
             {'tag': x['tag'], 'de_html': x['de_html'], 'ru_html': x['ru_html'],
              'en_html': x['en_html'], 'dcs': x['dcs'], 'src': x['src']}
-            for x in s['senses']]} for s in r['subcards']]}
-        for r in model]}
+            for x in s['senses']]} for s in r['subcards']]
+        with open(os.path.join(OUT_DIR, 'roots', '%s.js' % safe), 'w', encoding='utf-8', newline='\n') as f:
+            f.write('window.ROOT=window.ROOT||{};window.ROOT[%s]=' % json.dumps(r['root'], ensure_ascii=False))
+            json.dump(subs, f, ensure_ascii=False)
+            f.write(';\n')
     with open(os.path.join(OUT_DIR, 'articles.js'), 'w', encoding='utf-8', newline='\n') as f:
         f.write('window.ARTICLES=')
-        json.dump(slim, f, ensure_ascii=False)
+        json.dump(index, f, ensure_ascii=False)
         f.write(';\n')
     with open(os.path.join(OUT_DIR, 'index.html'), 'w', encoding='utf-8', newline='\n') as f:
         f.write(INDEX_HTML)
