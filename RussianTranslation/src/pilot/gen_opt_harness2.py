@@ -317,16 +317,17 @@ def build(root, keys, rootmap, budget, lean=False, nws_gate=False,
     schema = load_json(os.path.join(REPO, 'schemas', 'pwg_ru_final_card.schema.json'))
     if field != 'russian':
         schema = _rename_sense_field(schema, 'russian', field)
-        # EN path: keep only the essential per-sense fields required (tag + source
-        # german + the translation). The 4 annotator fields (equivalence_type,
-        # source_type, stratum, differentia) become optional. On the citation-dense
-        # main-head pwg cards, requiring all 7 fields (2 of them enums) per sense —
-        # dozens of senses per card — is a huge structured-output surface where one
-        # truncated/mismatched field invalidates the whole card and burns the
-        # StructuredOutput retry cap. Trimming `required` lets those dense heads
-        # validate; the metadata stays best-effort and is re-derivable downstream.
-        sense = schema['$defs']['sense']
-        sense['required'] = ['tag', 'german', field]
+    # BOTH EN and RU paths: keep only the essential per-sense fields required (tag +
+    # source german + the translation). The 4 annotator fields (equivalence_type,
+    # source_type, stratum, differentia) become optional. On the citation-dense
+    # main-head pwg cards, requiring all 7 fields (2 of them enums) per sense —
+    # dozens of senses per card — is a huge structured-output surface where one
+    # truncated/mismatched field invalidates the whole card and burns the
+    # StructuredOutput retry cap (this recovered many dense heads on the EN run).
+    # The annotator fields stay best-effort (the model still fills them on most
+    # cards; they are re-derivable downstream). validate_final_card_schema.py was
+    # relaxed to match, so RU cards with a missing annotator field still validate.
+    schema['$defs']['sense']['required'] = ['tag', 'german', field]
     defs = schema['$defs']
     card_ref = {'$ref': '#/$defs/card'}
     batch_schema = {
