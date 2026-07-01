@@ -218,6 +218,26 @@ flat headword list can't. Join any `{code}.renou.jsonl` to the Russian cards by 
   pick, cite not just "this is a kāvya word" but the specific attested register of the
   Russian rendering used, traceable to `work:passage`.
 
+**Archive-discourse layer — *where do Renou categories surface in scholarly discussion?***
+- **Mailing-list subject finding aid** — the INDOLOGY-L Archive Atlas applies the same
+  state/register vocabulary to public mailing-list **subject lines**, not dictionary
+  headwords. This is a new downstream use of Renou: it asks where discussions explicitly
+  signal Vedic, Pāṇinian, Epic/Purāṇic/Tantric, Classical, Buddhist/Jaina, or register-
+  specific topics. Live outputs:
+  [`dashboard`](https://gasyoun.github.io/IndologyScholars/IndologyArchive/dashboard/index.html),
+  [`renou_messages.csv`](https://gasyoun.github.io/IndologyScholars/IndologyArchive/data/processed/renou_messages.csv),
+  [`renou_message_matches.csv`](https://gasyoun.github.io/IndologyScholars/IndologyArchive/data/processed/renou_message_matches.csv),
+  [`renou_thread_matches.csv`](https://gasyoun.github.io/IndologyScholars/IndologyArchive/data/processed/renou_thread_matches.csv),
+  [`renou_coverage.csv`](https://gasyoun.github.io/IndologyScholars/IndologyArchive/data/processed/renou_coverage.csv), and
+  editable [`renou_subject_rules.csv`](https://gasyoun.github.io/IndologyScholars/IndologyArchive/data/curation/renou_subject_rules.csv).
+- **Sparse by design.** The atlas currently classifies 6,217 / 62,112 messages (10.01 %)
+  and 3,309 / 24,033 threads (13.77 %) by subject-line evidence. A blank Renou field means
+  "not classified by this layer," not "not relevant to Renou."
+- **Different unit of evidence.** Dictionary Renou tags are per-entry/per-sense and
+  provenance-graded from `<ls>`, DCS, BHS, and wisdomlib. The archive layer is a discourse
+  index: its evidence is the matched subject term, confidence label, archive URL, and thread
+  context. It should be used for finding discussions to read, not for lexical attestation.
+
 The two axes compose: `(state, register, provenance)` is an evidence-graded coordinate per
 sense — e.g. *akṣobhya* = `III·V` / `purana·tantra·bauddha` / all-four-signals = "an Epic-
 and-Buddhist word, used in Purāṇa/Tantra/Buddhist registers, maximally corroborated." Six

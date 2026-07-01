@@ -1,0 +1,7 @@
+{
+  "ignorePatterns": [
+    { "pattern": "^https://gasyoun\\.github\\.io/" },
+    { "pattern": "^https://github\\.com/gasyoun/SanskritLexicography/(blob|tree)/" }
+  ],
+  "aliveStatusCodes": [200, 206, 429]
+}
