@@ -22,7 +22,8 @@
 - [jīv](jIv.md) — 103 senses, EN 84
 - [labh](laB.md) — 174 senses, EN 169
 - [mad](mad.md) — 144 senses, EN 102
-- [man](man.md) — 208 senses, EN 166
+- [man](man.md) — 209 senses, EN 169
+- [man_heal](man_heal.md) — 0 senses, EN 0
 - [muc](muc.md) — 313 senses, EN 290
 - [mā](mA.md) — 406 senses, EN 267
 - [naś](naS.md) — 163 senses, EN 120
