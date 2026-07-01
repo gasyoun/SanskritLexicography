@@ -15,6 +15,7 @@ map, Nachträge, microstructure) with a MASKED/BATCHED preamble that overrides o
 input-format + markup-verbatim specifics ("keep {Tn} verbatim" instead of "{#..#}/<ls>").
 
 Usage:  python src/pilot/gen_opt_harness2.py <root> [--keys=k1,k2] [--budget=12000] [--out=PATH]
+        [--selfheal [--selfheal-budget=12]]   # budget = citation-weighted units (1+<ls>) per heal call
 Writes: src/pilot/run_pilot_wf.opt2.js  (or --out=PATH — use a per-root/per-chat path to
         avoid the gen->copy race when several chats generate harnesses concurrently)
 """
@@ -38,6 +39,16 @@ from nominal_grammar import nominal_grammar_for
 SELFHEAL = False   # --selfheal: on a card the batch can't translate, auto-split it in-harness
                    #  (deterministic split precomputed here) and translate the fragments, then
                    #  stitch back — no manual requeue. Default OFF so existing runs are unchanged.
+SELFHEAL_GROUP_BUDGET = 12   # --selfheal-budget=N: fragments are grouped (in document order) into
+                   #  this many "citation-weighted units" (1 + <ls> count) per heal agent() call —
+                   #  citation count, NOT byte size, drives StructuredOutput complexity, and masking
+                   #  already shrinks fragment bytes far below what predicts failure (a dense card's
+                   #  own fragments can total <4KB and still be the exact complexity that failed as
+                   #  a whole card). A single fragment at/above the budget (e.g. a tier-2 citation
+                   #  chunk near autosplit_requeue.LS_BUDGET=18) still gets its own call; several
+                   #  light (low-<ls>) fragments share one call, cutting a 13-fragment card to a
+                   #  handful of calls instead of 13, without recombining the dense units that
+                   #  caused the original failure.
 
 
 def grammar_text(root):
@@ -140,6 +151,8 @@ def parse_args(argv):
             grammar_on = False
         elif a == '--selfheal':
             globals()['SELFHEAL'] = True     # gated: default OFF -> existing runs unchanged
+        elif a.startswith('--selfheal-budget='):
+            globals()['SELFHEAL_GROUP_BUDGET'] = int(a.split('=', 1)[1])
     if lang not in ('ru', 'en'):
         die('unknown --lang %r (ru|en)' % lang)
     if lang == 'en' and mw_tm is None:
@@ -171,6 +184,20 @@ def compress_rule3(tr):
     if n != 1:
         die('could not compress HARD RULE 3 (markup-verbatim) block')
     return tr2
+
+
+def _group_by_budget(items, sizer, budget):
+    """Greedily group `items` (kept in order) into batches whose summed sizer() stays
+    <= budget; a single oversize item still gets its own group (never dropped)."""
+    groups, cur, sz = [], [], 0
+    for it in items:
+        isz = sizer(it)
+        if cur and sz + isz > budget:
+            groups.append(cur); cur, sz = [], 0
+        cur.append(it); sz += isz
+    if cur:
+        groups.append(cur)
+    return groups
 
 
 def selected_keys(root, keyfilter):
@@ -362,23 +389,29 @@ def build(root, keys, rootmap, budget, lean=False, nws_gate=False,
     # The JS uses it only for cards the batch could not translate; each fragment is masked here
     # so the in-harness path reuses the same {Tn} restore. Only cards that actually split (>=2
     # fragments) get a fallback; unsplittable cards fall through (the batch retry already tried).
+    # Fragments are then GROUPED (by masked-skeleton bytes, document order preserved) into
+    # SELFHEAL_GROUP_BUDGET-sized batches, so the JS heal issues one agent() call per GROUP
+    # instead of per fragment (a 13-fragment card was costing 13 calls / ~2.2M tok; grouping
+    # amortizes the ~30k fixed system-prompt overhead across several fragments per call).
     frags, phf = {}, {}
     if SELFHEAL:
         for k in keys:
             pl = split_plan(read_text(input_paths(k)[0]))
             if len(pl) < 2:
                 continue
-            fl, pfl = [], []
+            fl = []
             for _si, _pi, t in pl:
                 fsk, fph, _ = pwg_mask.mask(t)
                 if pwg_mask.restore(fsk, fph) != t:
                     fl = []
                     break                        # give up the fallback if any fragment is lossy
-                fl.append({'skeleton': fsk, 'ls': t.count('<ls'), 'sk': t.count('{#')})
-                pfl.append(fph)
-            if fl:
-                frags[k] = fl
-                phf[k] = pfl
+                fl.append({'skeleton': fsk, 'ls': t.count('<ls'), 'sk': t.count('{#'), 'ph': fph})
+            if not fl:
+                continue
+            groups = _group_by_budget(fl, lambda it: 1 + it['ls'], SELFHEAL_GROUP_BUDGET)
+            frags[k] = [[{'skeleton': it['skeleton'], 'ls': it['ls'], 'sk': it['sk']} for it in g]
+                        for g in groups]
+            phf[k] = [[it['ph'] for it in g] for g in groups]
 
     batches, cur, sz = [], [], 0
     for k in keys:
@@ -412,6 +445,8 @@ def build(root, keys, rootmap, budget, lean=False, nws_gate=False,
         'selected_keys': keys, 'batches': batches, 'batch_count': len(batches),
         'rootmap_sha256': sha256_file(rootmap) if rootmap else None,
         'input_hashes': input_hashes,
+        'selfheal': SELFHEAL, 'selfheal_group_budget': SELFHEAL_GROUP_BUDGET if SELFHEAL else None,
+        'selfheal_cards': {k: len(v) for k, v in frags.items()} if SELFHEAL else {},
     }
 
     js = """// AUTO-DERIVED v2 (batched + masked, canonical output) from run_pilot_wf.js - root=%(root)s.
@@ -460,28 +495,40 @@ const accept = (c, k) => {
 }
 
 // --selfheal fallback: a card the batch could not translate is split (deterministically,
-// precomputed in FRAGS) into fragments; each tiny fragment is translated on its own, then the
-// fragments' senses are stitched into one card. Returns the stitched card ONLY if every
-// fragment came back and the whole-card <ls>/{#..#} fidelity holds — never a lossy partial.
+// precomputed in FRAGS) into fragments, GROUPED into budget-sized batches (fragment-grouping
+// tier), then each group is translated in ONE agent() call (several fragments per call, same
+// multi-card-per-prompt pattern as translateBatch) and the fragments' senses are stitched into
+// one card. Returns the stitched card ONLY if every fragment came back and the whole-card
+// <ls>/{#..#} fidelity holds — never a lossy partial.
 async function selfHeal(k) {
-  const frs = FRAGS[k]; if (!frs || !frs.length) return null
+  const groups = FRAGS[k]; if (!groups || !groups.length) return null
   const senses = []
-  for (let i = 0; i < frs.length; i++) {
-    const prompt = PREAMBLE + GRAMMAR + CONV_TR + '\\n\\n=== CARD ' + k + ' (fragment ' + (i + 1) + '/' + frs.length + ') ===\\n--- masked German (translatable only; {Tn}=masked span) ---\\n' + frs[i].skeleton
-    // Per-fragment retry: a fragment is tiny, so retry it a few times before giving up on
-    // the whole card. Without this, one flaky fragment sinks a multi-fragment heal (the
-    // brU/man misses in the live test — 1 of 13/11 fragments failed under all-or-nothing).
-    let card = null
-    for (let att = 0; att < 3 && !card; att++) {
-      const res = await agent(prompt, { label: 'heal:' + k + '#' + (i + 1) + (att ? '(r' + att + ')' : ''), phase: 'Translate', schema: CARDS_SCHEMA, model: '%(model)s', tools: [] })
-      card = (res && Array.isArray(res.cards) && res.cards[0]) || null
+  for (let gi = 0; gi < groups.length; gi++) {
+    const grp = groups[gi]
+    const gph = (PHF[k] || [])[gi] || []
+    const resolved = {}
+    let pending = grp.map((_, i) => i)
+    // Retry only the fragments in this group still unresolved — one flaky fragment must not
+    // re-bill the rest of the group (mirrors translateBatch's shrinking-pending pattern; also
+    // fixes the brU/man live-test miss where 1 of 13/11 fragments failed under all-or-nothing).
+    for (let att = 0; att < 3 && pending.length; att++) {
+      const blocks = pending.map(i => '\\n\\n=== CARD ' + k + '_f' + i + ' (fragment ' + (i + 1) + '/' + grp.length + ' of group ' + (gi + 1) + '/' + groups.length + ') ===\\n--- masked German (translatable only; {Tn}=masked span) ---\\n' + grp[i].skeleton).join('')
+      const prompt = PREAMBLE + GRAMMAR + CONV_TR + blocks
+      const res = await agent(prompt, { label: 'heal:' + k + '#g' + (gi + 1) + '[' + pending.length + ']' + (att ? '(r' + att + ')' : ''), phase: 'Translate', schema: CARDS_SCHEMA, model: '%(model)s', tools: [] })
+      if (res && Array.isArray(res.cards)) {
+        pending.forEach((fi, idx) => { const c = res.cards[idx]; if (c) resolved[fi] = c })
+      }
+      pending = pending.filter(fi => !resolved[fi])
     }
-    if (!card) return null
-    const ph = (PHF[k] || [])[i] || []
-    for (const rec of (card.records || [])) for (const s of (rec.senses || [])) {
-      if (s.german !== undefined) s.german = restore(s.german, ph)
-      if (s.%(field)s !== undefined) s.%(field)s = restore(s.%(field)s, ph)
-      senses.push(s)
+    if (pending.length) return null   // a fragment never resolved -> abandon the heal, never a lossy partial
+    for (let i = 0; i < grp.length; i++) {
+      const card = resolved[i]
+      const ph = gph[i] || []
+      for (const rec of (card.records || [])) for (const s of (rec.senses || [])) {
+        if (s.german !== undefined) s.german = restore(s.german, ph)
+        if (s.%(field)s !== undefined) s.%(field)s = restore(s.%(field)s, ph)
+        senses.push(s)
+      }
     }
   }
   const stitched = { key1: k, records: [{ senses }] }
