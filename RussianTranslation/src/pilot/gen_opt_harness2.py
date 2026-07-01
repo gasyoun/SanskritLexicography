@@ -378,9 +378,9 @@ def build(root, keys, rootmap, budget, lean=False, nws_gate=False,
 // Several masked cards per agent call; {Tn} restored to source markup in-JS so the
 // returned result is a canonical wf_output.json. See TLONLY_PROTOTYPE.md.
 export const meta = {
-  name: 'pwgru-opt2-%(root)s',
-  description: 'batched+masked translation-only PWG->Russian; amortized per-call overhead + masked I/O, {Tn} restored in-JS to canonical cards',
-  phases: [{ title: 'Translate', detail: 'Sonnet: N masked cards per call -> rich cards; {Tn} restored to markup' }],
+  name: '%(name_prefix)s-opt2-%(root)s',
+  description: 'batched+masked translation-only PWG->%(tgt_lang)s; amortized per-call overhead + masked I/O, {Tn} restored in-JS to canonical cards',
+  phases: [{ title: 'Translate', detail: '%(gen_label)s: N masked cards per call -> rich cards; {Tn} restored to markup' }],
 }
 
 const CONV_TR = %(tr)s
@@ -428,7 +428,7 @@ async function translateBatch(batch, bi) {
     // (full mode: NWS_RULE is '' and the NWS rule already lives inside CONV_TR).
     const nws = (NWS_RULE && pending.some(k => INPUTS[k].nws)) ? ('\\n\\n' + NWS_RULE + '\\n') : ''
     const prompt = PREAMBLE + GRAMMAR + CONV_TR + nws + pending.map(cardBlock).join('')
-    const res = await agent(prompt, { label: 'b' + bi + '[' + pending.length + ']' + (attempt ? '(retry)' : ''), phase: 'Translate', schema: CARDS_SCHEMA, model: 'sonnet', tools: [] })
+    const res = await agent(prompt, { label: 'b' + bi + '[' + pending.length + ']' + (attempt ? '(retry)' : ''), phase: 'Translate', schema: CARDS_SCHEMA, model: '%(model)s', tools: [] })
     if (res && Array.isArray(res.cards)) {
       pending.forEach((k, i) => { const c = accept(res.cards[i], k); if (c) resolved[k] = c })
     }
@@ -441,6 +441,13 @@ const out = grouped.flat()
 return { meta: META, results: out }
 """ % {
         'root': root, 'field': field, 'tr': json.dumps(tr, ensure_ascii=True),
+        # Language-aware meta + model pin. EN path pins Sonnet 5 explicitly
+        # (the bare 'sonnet' alias resolved to 4.6 on a prior run); RU path
+        # keeps the 'sonnet' alias unchanged so the autonomous RU runs are untouched.
+        'name_prefix': 'pwgen' if lang == 'en' else 'pwgru',
+        'tgt_lang': 'English' if lang == 'en' else 'Russian',
+        'gen_label': 'Sonnet 5' if lang == 'en' else 'Sonnet',
+        'model': 'claude-sonnet-5' if lang == 'en' else 'sonnet',
         'preamble': json.dumps(MASK_PREAMBLE.replace('`russian`', '`%s`' % field), ensure_ascii=True),
         'grammar': json.dumps(single_grammar, ensure_ascii=True),
         'grammars': json.dumps(grammars, ensure_ascii=True),
@@ -468,7 +475,10 @@ def main():
             keys = [k for k in keylist if k in set(keys)]
     js, batches = build(root, keys, rootmap, budget, lean, nws_gate, nominal, grammar_on, lang, mw_tm)
     out = os.path.abspath(out_path) if out_path else os.path.join(REPO, 'src', 'pilot', 'run_pilot_wf.opt2.js')
-    write_text(out, js)
+    # Write LF (not CRLF): the Workflow-tool approval rejects scripts containing
+    # raw \r control chars, so a CRLF harness cannot be launched on Windows.
+    with open(out, 'w', encoding='utf-8', newline='\n') as f:
+        f.write(js)
     mode = ('NOMINAL%s' % ('' if grammar_on else '/no-grammar')) if nominal else (
         'LEAN(rejected)' if lean else 'NWS-GATE' if nws_gate else 'full')
     print('wrote', out, len(js), 'bytes |', len(keys), 'cards in', len(batches), 'batches',
