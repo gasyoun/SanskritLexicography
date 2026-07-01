@@ -1,4 +1,4 @@
-# Root glossary (Sa→Ru) — `q`
+# Root glossary (Sa→Ru) — `Q`
 
 2 entries.
 

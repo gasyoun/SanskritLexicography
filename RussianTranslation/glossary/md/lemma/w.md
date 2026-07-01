@@ -1,4 +1,4 @@
-# Lemma glossary (Sa→Ru) — `w`
+# Lemma glossary (Sa→Ru) — `W`
 
 4 entries.
 

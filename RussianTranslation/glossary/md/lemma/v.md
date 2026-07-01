@@ -1,4 +1,4 @@
-# Lemma glossary (Sa→Ru) — `v`
+# Lemma glossary (Sa→Ru) — `V`
 
 3626 entries.
 

@@ -1,6 +1,1473 @@
-# Surface glossary — SLP1 `p`
+# Surface glossary — SLP1 `P`
 
-21023 forms. Format: `form` (sa) — total n → ru (n) · registers.
+21301 forms. Format: `form` (sa) — total n → ru (n) · registers.
+
+### `P` — ph  (n=1)
+
+- муж-бык Пхальгуна  · n=1  · mahabharata-ashvamedhikaparva
+
+### `PARita` — phāṇita  (n=1)
+
+- сироп  · n=1  · paramarthasara-abhinavagupta
+
+### `PARqu` — Pāṇḍu  (n=1)
+
+- Панду  · n=1  · bhagavadgita-1909
+
+### `PAlA` — phālā  (n=1)
+
+- лемехи  · n=1  · rigveda
+
+### `PAlAj` — phālāj  (n=1)
+
+- из лемеха  · n=1  · atharvaveda
+
+### `PAla` — phāla  (n=7)
+
+- Лемех (плуга)  · n=4  · atharvaveda
+- плуг  · n=1  · ramayana-ayodhyakanda
+- лемех  · n=1  · rigveda
+- от плуга  · n=1  · atharvaveda
+
+### `PAlaH` — phālaḥ  (n=1)
+
+- лемех (плуга)  · n=1  · atharvaveda
+
+### `PAlakfzwa` — phālakṛṣṭa  (n=2)
+
+- вспаханную землю  · n=1  · manavadharmashastra
+- выращенные на пашне  · n=1  · manavadharmashastra
+
+### `PAlakuddAlalANgalI` — phālakuddālalāṅgalī  (n=1)
+
+- мотыгой, лопатой и плугом  · n=1  · ramayana-ayodhyakanda
+
+### `PAlam` — phālam  (n=1)
+
+- лемех  · n=1  · atharvaveda
+
+### `PAlapiwaka` — phālapiṭaka  (n=1)
+
+- мотыгой и корзиной  · n=1  · ramayana-ayodhyakanda
+
+### `PAlguRi` — phālguṇi  (n=2)
+
+- Сын Пхальгуны  · n=2  · mahabharata-dronaparva
+
+### `PAlguna` — phālguna  (n=5)
+
+- Пхалгуна  · n=1  · mahabharata-adiparva
+- пхальгуна  · n=1  · manavadharmashastra
+- Пхальгуне  · n=1  · mahabharata-aranyakaparva
+- сына Пхальгуны  · n=1  · mahabharata-bhishmaparva
+- Пхальгуна  · n=1  · mahabharata-dronaparva
+
+### `PAlgunaH` — phālgunaḥ  (n=2)
+
+- Арджуна  · n=1  · mahabharata-adiparva
+- Пхалгуна  · n=1  · mahabharata-adiparva
+
+### `PAlguneH` — phālguneḥ  (n=1)
+
+- сына Пхальгуны  · n=1  · mahabharata-dronaparva
+
+### `PAlguni` — phālguni  (n=8)
+
+- сын Пхальгуны  · n=5  · mahabharata-bhishmaparva, mahabharata-dronaparva
+- сына Пхальгуны  · n=2  · mahabharata-bhishmaparva
+- Сын Пхальгуны  · n=1  · mahabharata-dronaparva
+
+### `PAlguniH` — phālguniḥ  (n=1)
+
+- сын Пхальгуны  · n=1  · mahabharata-dronaparva
+
+### `PUtkAra` — phūtkāra  (n=2)
+
+- втягивая  · n=1  · hatha-yoga-pradipika
+- втягивать воздух  · n=1  · hatha-yoga-pradipika
+
+### `PUtkArakampitaSiKAtaralapradIpam` — phūtkārakampitaśikhātaralapradīpam  (n=1)
+
+- мерцающий огонек светильника  · n=1  · chaurapanchashika
+
+### `PUtkfta` — phūtkṛta  (n=5)
+
+- звук «пхут»  · n=2  · kama-sutra
+- звук „пхут“  · n=1  · kama-sutra
+- крик  · n=1  · shukasaptati
+- закричала  · n=1  · shukasaptati
+
+### `PUtkftaM` — phūtkṛtaṃ  (n=1)
+
+- стал кричать  · n=1  · shukasaptati
+
+### `PUtkftam` — phūtkṛtam  (n=2)
+
+- стал кричать  · n=2  · shukasaptati
+
+### `PUtkftavAn` — phūtkṛtavān  (n=1)
+
+- поднял шум  · n=1  · shukasaptati
+
+### `PUtkftya` — phūtkṛtya  (n=2)
+
+- произнося звук «пхут»  · n=1  · kama-sutra
+- издав звук "фу"  · n=1  · amaru-shataka
+
+### `PUtkurvan` — phūtkurvan  (n=1)
+
+- поднял шум  · n=1  · shukasaptati
+
+### `PaRA` — phaṇā  (n=1)
+
+- капюшоне  · n=1  · gitagovinda
+
+### `PaRABft` — phaṇābhṛt  (n=1)
+
+- капюшон  · n=1  · shatakatrayam
+
+### `PaRAPalaka` — phaṇāphalaka  (n=1)
+
+- капюшоне  · n=1  · shatakatrayam
+
+### `PaRAPalakasTitAm` — phaṇāphalakasthitām  (n=2)
+
+- на множестве своих голов  · n=1  · shatakatrayam-serebryakov
+- на капюшонах  · n=1  · shatakatrayam-serebryakov
+
+### `PaRAgraiH` — phaṇāgraiḥ  (n=1)
+
+- с великой натугой  · n=1  · kumarasambhava
+
+### `PaRAvatI` — phaṇāvatī  (n=1)
+
+- Кундалини  · n=1  · hatha-yoga-pradipika
+
+### `PaRin` — phaṇin  (n=1)
+
+- удав исполинский  · n=1  · kumarasambhava
+
+### `PaRipati` — phaṇipati  (n=2)
+
+- Повелитель змей  · n=1  · shatakatrayam-serebryakov
+- Царь змей  · n=1  · shukasaptati
+
+### `PaRipatimuKa` — phaṇipatimukha  (n=1)
+
+- пасть зубастую змее  · n=1  · shatakatrayam
+
+### `PaRipatimuKe` — phaṇipatimukhe  (n=1)
+
+- в пасть змеи  · n=1  · shatakatrayam-serebryakov
+
+### `Pal` — phal  (n=3)
+
+- приносить  · n=2  · shatakatrayam-serebryakov
+- приносят плоды  · n=1  · shatakatrayam-serebryakov
+
+### `PalA` — phalā  (n=2)
+
+- плодами  · n=1  · ramayana-aranyakanda
+- результат  · n=1  · yoga-sutry
+
+### `PalABAva` — phalābhāva  (n=1)
+
+- плодов нет  · n=1  · nyaya-bhashya
+
+### `PalABAvaH` — phalābhāvaḥ  (n=1)
+
+- не бывает плода  · n=1  · buddhacharita
+
+### `PalABilAza` — phalābhilāṣa  (n=1)
+
+- желание результатов  · n=1  · gitarthasamgraha-abhinavagupta
+
+### `PalABisanDAnena` — phalābhisandhānena  (n=1)
+
+- ради обретения плодов  · n=1  · gitarthasamgraha-abhinavagupta
+
+### `PalABisanDipUrvakakarmAramBa` — phalābhisandhipūrvakakarmārambha  (n=1)
+
+- действий, предпринятых [в прошлом рождении] и всякий раз связанных [со стремлением] к плоду  · n=1  · ramanuja_gitabhashya
+
+### `PalABisanDirahita` — phalābhisandhirahita  (n=2)
+
+- лишенный привязанности к плоду  · n=1  · ramanuja_gitabhashya
+- не привязанных к плоду  · n=1  · ramanuja_gitabhashya
+
+### `PalAMSa` — phalāṃśa  (n=1)
+
+- За  · n=1  · gitarthasamgraha-abhinavagupta
+
+### `PalAPalavat` — phalāphalavat  (n=1)
+
+- плодоносная и бесплодна  · n=1  · mahabharata-udyogaparva
+
+### `PalASAH` — phalāśāḥ  (n=1)
+
+- вкушают  · n=1  · mahabharata-ashvamedhikaparva
+
+### `PalASI` — phalāśī  (n=1)
+
+- вкушая плод  · n=1  · shatakatrayam-serebryakov
+
+### `PalASana` — phalāśana  (n=1)
+
+- плоды вкушал  · n=1  · mahabharata-aranyakaparva
+
+### `PalASin` — phalāśin  (n=1)
+
+- плоды и коренья вкушая  · n=1  · shatakatrayam
+
+### `PalAdisAkANkza` — phalādisākāṅkṣa  (n=1)
+
+- из желания плодов  · n=1  · gitarthasamgraha-abhinavagupta
+
+### `PalAdisvaBAvam` — phalādisvabhāvam  (n=1)
+
+- производящей результат  · n=1  · gitarthasamgraha-abhinavagupta
+
+### `PalAgama` — phalāgama  (n=1)
+
+- приносит плоды  · n=1  · mahabharata-ashramavasikaparva
+
+### `PalAhAra` — phalāhāra  (n=4)
+
+- за плодами  · n=2  · mahabharata-aranyakaparva, mahabharata-adiparva
+- набрать плодов  · n=1  · mahabharata-aranyakaparva
+- питался плодами  · n=1  · mahabharata-aranyakaparva
+
+### `PalAkANkzI` — phalākāṅkṣī  (n=1)
+
+- ищетъ  · n=1  · bhagavadgita-1909
+
+### `PalAkANkzin` — phalākāṅkṣin  (n=8)
+
+- жаждущий плода  · n=2  · mahabharata-bhishmaparva, bhagavadgita-erman
+- желающего плодов  · n=1  · gitarthasamgraha-abhinavagupta
+- желающий плода  · n=1  · bhagavadgita-burba
+- жадное к плоду  · n=1  · ramanuja_gitabhashya
+- из желания плодов  · n=1  · bhagavadgita-1914
+- желающим плодов  · n=1  · bhagavadgita-smirnov
+- о результате  · n=1  · bhagavadgita-sementsov
+
+### `PalAnAM` — phalānāṃ  (n=2)
+
+- плоды  · n=2  · kama-sutra
+
+### `PalAnAm` — phalānām  (n=3)
+
+- плодов  · n=1  · ramayana-ayodhyakanda
+- плодами  · n=1  · ramayana-aranyakanda
+- цели  · n=1  · kumarasambhava
+
+### `PalAnam` — phalānam  (n=1)
+
+- плодов  · n=1  · ramayana-ayodhyakanda
+
+### `PalAni` — phalāni  (n=34)
+
+- плоды  · n=20  · mahabharata-aranyakaparva, ramayana-ayodhyakanda, ramayana-sundarakanda, mahabharata-adiparva, bhagavadgita-burba, mahabharata-ashvamedhikaparva, ramayana-aranyakanda, bhagavadgity, bhagavadgita-radha, mahabharata-shalyaparva, br-up
+- плодов  · n=6  · ramayana-aranyakanda, ramayana-balakanda, mahabharata-adiparva, bhagavadgita-1914, bhagavadgita-erman, mahabharata-ashvamedhikaparva
+- плодами  · n=3  · ramayana-ayodhyakanda, mahabharata-adiparva
+- предназначение  · n=1  · ramayana-ayodhyakanda
+- Плоды  · n=1  · ramayana-ayodhyakanda
+- за плодами  · n=1  · ramayana-ayodhyakanda
+- Плодов  · n=1  · ramayana-aranyakanda
+- с плодами  · n=1  · mahabharata-adiparva
+
+### `PalAnizpatti` — phalāniṣpatti  (n=2)
+
+- нет «плодоношения»  · n=2  · nyaya-bhashya
+
+### `PalAnumeya` — phalānumeya  (n=1)
+
+- в плодах становились явны  · n=1  · raghuvamsha
+
+### `PalArTa` — phalārtha  (n=2)
+
+- ради плодов  · n=1  · mahabharata-adiparva
+- связанный содеянным  · n=1  · mahabharata-aranyakaparva
+
+### `PalArTam` — phalārtham  (n=2)
+
+- ради плодов  · n=1  · mahabharata-adiparva
+- ради плода  · n=1  · mahabharata-adiparva
+
+### `PalArTin` — phalārthin  (n=3)
+
+- жаждет земных благ  · n=1  · mahabharata-adiparva
+- ожидающие плодов  · n=1  · mahabharata-karnaparva
+- желающий плодов  · n=1  · nyaya-bhashya
+
+### `PalArTitva` — phalārthitva  (n=1)
+
+- искательство плодов  · n=1  · nyaya-bhashya
+
+### `PalAsava` — phalāsava  (n=1)
+
+- плодов  · n=1  · ramayana-sundarakanda
+
+### `PalAt` — phalāt  (n=1)
+
+- от плодов  · n=1  · mahabharata-udyogaparva
+
+### `PalAvApti` — phalāvāpti  (n=1)
+
+- плодов  · n=1  · mahabharata-sabhaparva
+
+### `PalAvarjitapUgamAla` — phalāvarjitapūgamāla  (n=1)
+
+- рощи бетелей клонятся, обремененные плодами  · n=1  · raghuvamsha
+
+### `PalAya` — phalāya  (n=1)
+
+- помогают  · n=1  · raghuvamsha
+
+### `PalI` — phalī  (n=1)
+
+- дерево  · n=1  · mahabharata-ashvamedhikaparva
+
+### `PalIkaraRa` — phalīkaraṇa  (n=1)
+
+- шелуха  · n=1  · atharvaveda
+
+### `PalInIM` — phalīnīṃ  (n=1)
+
+- немой  · n=1  · kama-sutra
+
+### `Pala` — phala  (n=638)
+
+- плод  · n=184  · mahabharata-aranyakaparva, manavadharmashastra, bhagavadgita-burba, nyaya-bhashya, mahabharata-bhishmaparva, ramanuja_gitabhashya, buddhacharita, bhagavadgita-prabhupada, mahabharata-adiparva, mahabharata-udyogaparva, mahabharata-ashvamedhikaparva, shatakatrayam, ramayana-ayodhyakanda, mahabharata-dronaparva, gitarthasamgraha-abhinavagupta, bhagavadgity, bhagavadgita-radha, ramayana-sundarakanda, kama-sutra, bhagavadgita-1914, bhagavadgita-erman, bhagavadgita-smirnov, bhagavadgita-sementsov, devi-gita, mahabharata-striparva, ramayana-aranyakanda, ramayana-balakanda, bhagavadgita-sharma, mahabharata-karnaparva, rigveda, kumarasambhava, mahabharata-shalyaparva, atharvaveda, mahabharata-sabhaparva, shatakatrayam-serebryakov, shukasaptati, amaru-shataka, vedartha-samgraha_ramanuja, paramarthasara-abhinavagupta, mahabharata-sauptikaparva, mai-up, jabala-up, mahabharata-svargarohanikaparva
+- плоды  · n=104  · ramayana-ayodhyakanda, mahabharata-aranyakaparva, manavadharmashastra, mahabharata-udyogaparva, mahabharata-adiparva, ramayana-aranyakanda, mahabharata-bhishmaparva, bhagavadgita-sharma, nyaya-bhashya, ramayana-sundarakanda, bhagavadgita-smirnov, mahabharata-ashvamedhikaparva, mahabharata-sabhaparva, mahabharata-dronaparva, bhagavadgita-1909, mahabharata-shalyaparva, shatakatrayam, yoga-sutry, ramayana-balakanda, kama-sutra, buddhacharita, gitarthasamgraha-abhinavagupta, bhagavadgita-burba, bhagavadgity, bhagavadgita-sementsov, bhagavadgita-prabhupada, mahabharata-karnaparva, kumarasambhava, br-up, mahabharata-virataparva, atharvaveda, shukasaptati, mahabharata-sauptikaparva, mahabharata-mahaprasthanikaparva, pai-up
+- плодами  · n=52  · ramayana-ayodhyakanda, ramayana-aranyakanda, mahabharata-aranyakaparva, manavadharmashastra, nyaya-bhashya, mahabharata-adiparva, kama-sutra, mahabharata-dronaparva, ramayana-sundarakanda, ramayana-balakanda, kumarasambhava, mahabharata-ashvamedhikaparva, mahabharata-sabhaparva, shatakatrayam, shatakatrayam-serebryakov, shukasaptati, yoga-sutry_vyasa-bhashya, mahabharata-sauptikaparva, kau-up
+- плодов  · n=47  · mahabharata-aranyakaparva, ramayana-ayodhyakanda, bhagavadgita-1914, bhagavadgita-sementsov, manavadharmashastra, bhagavadgita-sharma, ramayana-aranyakanda, mahabharata-adiparva, mahabharata-udyogaparva, nyaya-bhashya, shatakatrayam, kama-sutra, mahabharata-bhishmaparva, bhagavadgita-smirnov, bhagavadgita-prabhupada, bhagavadgita-radha, mahabharata-shalyaparva, mahabharata-ashramavasikaparva, mahabharata-sauptikaparva
+- плода  · n=29  · manavadharmashastra, mahabharata-aranyakaparva, mahabharata-bhishmaparva, bhagavadgita-burba, bhagavadgita-erman, bhagavadgita-1788, kama-sutra, buddhacharita, mahabharata-udyogaparva, gitarthasamgraha-abhinavagupta, ramanuja_gitabhashya, bhagavadgity, bhagavadgita-sementsov, bhagavadgita-radha, nyaya-bhashya, mahabharata-ashvamedhikaparva, devi-gita, paramarthasara-abhinavagupta
+- результат  · n=27  · gitarthasamgraha-abhinavagupta, bhagavadgita-prabhupada, nyaya-bhashya, mahabharata-udyogaparva, yoga-sutry_vyasa-bhashya, mahabharata-aranyakaparva, kama-sutra, buddhacharita, sankhya-karika, yoga-sutry_zagumennov, vedartha-samgraha_ramanuja
+- награда  · n=12  · bhagavadgita-1909, shatakatrayam-serebryakov, manavadharmashastra, ramayana-balakanda, mahabharata-adiparva, bhagavadgita-1788, shukasaptati
+- плоду  · n=10  · gitarthasamgraha-abhinavagupta, mahabharata-bhishmaparva, bhagavadgita-burba, ramanuja_gitabhashya, bhagavadgity, bhagavadgita-erman, bhagavadgita-smirnov, bhagavadgita-1788, raghuvamsha
+- плодъ  · n=8  · bhagavadgita-1909, bhagavadgity, bhagavadgita-1788
+- плодам  · n=7  · ramayana-aranyakanda, buddhacharita, gitarthasamgraha-abhinavagupta, bhagavadgity, bhagavadgita-erman, bhagavadgita-smirnov, bhagavadgita-sharma
+- результатом  · n=7  · nyaya-bhashya, gitarthasamgraha-abhinavagupta, yoga-sutry_vyasa-bhashya, yoga-sutry_zagumennov
+- награды  · n=6  · manavadharmashastra, mahabharata-adiparva, buddhacharita, bhagavadgita-1909, shatakatrayam, shatakatrayam-serebryakov
+- результата  · n=4  · gitarthasamgraha-abhinavagupta, manavadharmashastra, bhagavadgita-sharma
+- плоде  · n=4  · ramanuja_gitabhashya, mahabharata-bhishmaparva, bhagavadgita-erman
+- результаты  · n=4  · gitarthasamgraha-abhinavagupta, nyaya-bhashya
+- наградѣ  · n=4  · bhagavadgita-1909, bhagavadgity, bhagavadgita-1788
+- пользы  · n=3  · ramayana-ayodhyakanda, mahabharata-adiparva
+- плодах  · n=3  · ramayana-ayodhyakanda, buddhacharita, bhagavadgita-radha
+- награду  · n=3  · ramayana-balakanda, mahabharata-adiparva, shatakatrayam-serebryakov
+- расплата  · n=3  · mahabharata-aranyakaparva
+- результатам  · n=3  · gitarthasamgraha-abhinavagupta, bhagavadgita-smirnov
+- Плодъ  · n=3  · bhagavadgita-1788, bhagavadgity
+- следствие  · n=3  · bhagavadgita-prabhupada, yoga-sutry
+- последствия  · n=2  · ramayana-ayodhyakanda, yoga-sutry_sharma
+- фрукты  · n=2  · ramayana-ayodhyakanda, ramayana-balakanda
+- Плодами  · n=2  · ramayana-aranyakanda
+- наград  · n=2  · mahabharata-adiparva, shatakatrayam
+- на его плоды  · n=2  · mahabharata-bhishmaparva, bhagavadgita-erman
+- приобретение  · n=2  · mahabharata-bhishmaparva, bhagavadgita-erman
+- радости жизни  · n=2  · mahabharata-udyogaparva
+- о плодах  · n=2  · gitarthasamgraha-abhinavagupta, bhagavadgita-smirnov
+- награде  · n=2  · bhagavadgita-1914
+- о награде  · n=2  · bhagavadgita-1914, bhagavadgita-sharma
+- плодомъ  · n=2  · bhagavadgita-1909
+- последствий  · n=2  · bhagavadgita-prabhupada
+- результатами  · n=2  · nyaya-bhashya, yoga-sutry_zagumennov
+- плодом  · n=2  · shatakatrayam, yoga-sutry_vyasa-bhashya
+- следствия  · n=2  · yoga-sutry_zagumennov, sankhya-karika
+- плодоносное  · n=1  · ramayana-ayodhyakanda
+- участь  · n=1  · ramayana-ayodhyakanda
+- Последствий  · n=1  · ramayana-ayodhyakanda
+- успех  · n=1  · ramayana-ayodhyakanda
+- фруктами  · n=1  · ramayana-ayodhyakanda
+- аришта  · n=1  · ramayana-ayodhyakanda
+- фруктов  · n=1  · ramayana-ayodhyakanda
+- вознаграждение  · n=1  · ramayana-ayodhyakanda
+- плодовыми  · n=1  · ramayana-ayodhyakanda
+- желанного  · n=1  · ramayana-ayodhyakanda
+- кувшины  · n=1  · ramayana-ayodhyakanda
+- плодовые  · n=1  · ramayana-sundarakanda
+- наградой  · n=1  · manavadharmashastra
+- цветы  · n=1  · ramayana-aranyakanda
+- корысть  · n=1  · ramayana-aranyakanda
+- сладостей  · n=1  · ramayana-balakanda
+- бесплодна  · n=1  · ramayana-balakanda
+- мужскую силу  · n=1  · ramayana-balakanda
+- ради  · n=1  · ramayana-balakanda
+- значит  · n=1  · ramayana-balakanda
+- расплачиваюсь  · n=1  · mahabharata-aranyakaparva
+- воздаяние  · n=1  · mahabharata-aranyakaparva
+- получим  · n=1  · mahabharata-aranyakaparva
+- исход  · n=1  · mahabharata-aranyakaparva
+- содеянное  · n=1  · mahabharata-aranyakaparva
+- возмездие  · n=1  · mahabharata-adiparva
+- воздаянии  · n=1  · mahabharata-bhishmaparva
+- наказание  · n=1  · buddhacharita
+- рождает  · n=1  · buddhacharita
+- то, что имею  · n=1  · buddhacharita
+- Награду  · n=1  · buddhacharita
+- цель  · n=1  · mahabharata-udyogaparva
+- урожая  · n=1  · mahabharata-udyogaparva
+- роли  · n=1  · mahabharata-udyogaparva
+- Плод  · n=1  · gitarthasamgraha-abhinavagupta
+- в результате  · n=1  · ramanuja_gitabhashya
+- прибытокъ  · n=1  · bhagavadgity
+- концу  · n=1  · bhagavadgita-1788
+- послѣдствія  · n=1  · bhagavadgita-1788
+- награжденія  · n=1  · bhagavadgita-1788
+- к плодам  · n=1  · bhagavadgita-sementsov
+- выгоды  · n=1  · bhagavadgita-1909
+- пищи  · n=1  · bhagavadgita-1909
+- міра  · n=1  · bhagavadgita-1909
+- свойствъ  · n=1  · bhagavadgita-1909
+- выгода  · n=1  · bhagavadgita-sharma
+- наживы  · n=1  · bhagavadgita-sharma
+- прибыль  · n=1  · bhagavadgita-sharma
+- результату  · n=1  · bhagavadgita-sharma
+- результатов  · n=1  · bhagavadgita-prabhupada
+- от плодов  · n=1  · bhagavadgita-prabhupada
+- на плоды  · n=1  · bhagavadgita-radha
+- религиозные заслуги  · n=1  · mahabharata-shalyaparva
+- добродетельные заслуги  · n=1  · mahabharata-shalyaparva
+- исходе  · n=1  · mahabharata-shalyaparva
+- дарами  · n=1  · mahabharata-shalyaparva
+- досталось  · n=1  · mahabharata-shalyaparva
+- результативность  · n=1  · nyaya-bhashya
+- Плоды  · n=1  · nyaya-bhashya
+- пользу  · n=1  · mahabharata-sabhaparva
+- полезным  · n=1  · mahabharata-sabhaparva
+- плодовитой  · n=1  · mahabharata-sabhaparva
+- преимущество  · n=1  · mahabharata-sabhaparva
+- с нанесенными очками  · n=1  · mahabharata-virataparva
+- толк  · n=1  · mahabharata-virataparva
+- к чему  · n=1  · shatakatrayam
+- плодовой  · n=1  · shatakatrayam
+- Дары  · n=1  · shatakatrayam
+- польза  · n=1  · shatakatrayam-serebryakov
+- последствие  · n=1  · yoga-sutry_sharma
+- из-за них  · n=1  · yoga-sutry_sharma
+- цели  · n=1  · yoga-sutry_sharma
+- радости  · n=1  · amaru-shataka
+- завершающееся  · n=1  · vedartha-samgraha_ramanuja
+- раскатомъ  · n=1  · megha-duta
+- желанье  · n=1  · megha-duta
+- урожаю  · n=1  · mahabharata-sauptikaparva
+- мотив  · n=1  · yoga-sutry_vyasa-bhashya
+
+### `Pala-AkANkzI` — phala-ākāṅkṣī  (n=1)
+
+- стремящийся к плодам  · n=1  · bhagavadgita-radha
+
+### `Pala-AkANkzin` — phala-ākāṅkṣin  (n=1)
+
+- Корыстная  · n=1  · bhagavadgita-1788
+
+### `Pala-hetava` — phala-hetava  (n=1)
+
+- заботились о слѣдствіи  · n=1  · bhagavadgita-1788
+
+### `Pala-hetavaH` — phala-hetavaḥ  (n=2)
+
+- действующие ради плодов  · n=1  · bhagavadgita-1914
+- те, кто стремится к плодам [своей деятельности]  · n=1  · bhagavadgita-radha
+
+### `Pala-hetu` — phala-hetu  (n=4)
+
+- побуждение — плод  · n=1  · bhagavadgita-burba
+- побуждаемые плодами  · n=1  · bhagavadgity
+- награды  · n=1  · bhagavadgita-1909
+- слѣдствіе  · n=1  · bhagavadgita-1909
+
+### `Pala-saNga-rahita` — phala-saṅga-rahita  (n=1)
+
+- лишенные привязанности к плоду  · n=1  · ramanuja_gitabhashya
+
+### `Pala-tyAgam` — phala-tyāgam  (n=1)
+
+- отречение от плодов  · n=1  · bhagavadgita-radha
+
+### `Pala-vat` — phala-vat  (n=1)
+
+- приносящая плод  · n=1  · mahabharata-aranyakaparva
+
+### `PalaBAginaH` — phalabhāginaḥ  (n=1)
+
+- вкушающими плоды  · n=1  · manavadharmashastra
+
+### `PalaBArAvanAmitAn` — phalabhārāvanāmitān  (n=1)
+
+- сгибаясь под тяжестью плодов  · n=1  · mahabharata-aranyakaparva
+
+### `PalaBArAvanAmitaiH` — phalabhārāvanāmitaiḥ  (n=1)
+
+- сгибались под тяжестью плодов  · n=1  · mahabharata-aranyakaparva
+
+### `PalaBAranata` — phalabhāranata  (n=1)
+
+- гнущееся под тяжестью плодов  · n=1  · mahabharata-bhishmaparva
+
+### `PalaBArasamanvita` — phalabhārasamanvita  (n=1)
+
+- отягощенное плодами  · n=1  · mahabharata-ashvamedhikaparva
+
+### `PalaBUta` — phalabhūta  (n=1)
+
+- являются плодами  · n=1  · kama-sutra
+
+### `PalaBakza` — phalabhakṣa  (n=1)
+
+- Пхалабхакша  · n=1  · mahabharata-sabhaparva
+
+### `PalaDarman` — phaladharman  (n=1)
+
+- как плод  · n=1  · mahabharata-aranyakaparva
+
+### `PalaM` — phalaṃ  (n=26)
+
+- плод  · n=7  · mahabharata-aranyakaparva, mahabharata-dronaparva, gitarthasamgraha-abhinavagupta, bhagavadgita-erman, bhagavadgita-smirnov, mahabharata-ashramavasikaparva, yotat-up
+- плоды  · n=5  · mahabharata-dronaparva, ramayana-aranyakanda, mahabharata-udyogaparva, raghuvamsha
+- плодов  · n=2  · gitarthasamgraha-abhinavagupta, shatakatrayam-serebryakov
+- расплата  · n=1  · mahabharata-aranyakaparva
+- впечатление  · n=1  · mahabharata-udyogaparva
+- результат  · n=1  · mahabharata-udyogaparva
+- заслуг  · n=1  · mahabharata-udyogaparva
+- результата  · n=1  · gitarthasamgraha-abhinavagupta
+- результаты  · n=1  · gitarthasamgraha-abhinavagupta
+- плодом  · n=1  · bhagavadgita-sementsov
+- подвиги  · n=1  · kumarasambhava
+- плодоносят  · n=1  · kumarasambhava
+- признанных достоинствах  · n=1  · mahabharata-shalyaparva
+- плодами  · n=1  · mahabharata-shalyaparva
+- богатство  · n=1  · mahabharata-sabhaparva
+
+### `PalaSAlin` — phalaśālin  (n=1)
+
+- изобилующие плодами  · n=1  · ramayana-sundarakanda
+
+### `PalaSravaRa` — phalaśravaṇa  (n=2)
+
+- информацией о результате  · n=2  · nyaya-bhashya
+
+### `PalaSruti` — phalaśruti  (n=1)
+
+- пхалашрути  · n=1  · mahabharata-ashramavasikaparva
+
+### `PalabanDivfkzam` — phalabandhivṛkṣam  (n=1)
+
+- деревья рождают плоды  · n=1  · raghuvamsha
+
+### `PaladAhaka` — phaladāhaka  (n=2)
+
+- сжигающим плоды  · n=2  · gitarthasamgraha-abhinavagupta
+
+### `PaladAna` — phaladāna  (n=1)
+
+- результатом  · n=1  · gitarthasamgraha-abhinavagupta
+
+### `Palada` — phalada  (n=3)
+
+- плодовых  · n=1  · manavadharmashastra
+- приносящий плод  · n=1  · mahabharata-aranyakaparva
+- Плод  · n=1  · devi-gita
+
+### `PaladarSanAt` — phaladarśanāt  (n=1)
+
+- приносят плоды  · n=1  · kama-sutra
+
+### `PaladarSana` — phaladarśana  (n=1)
+
+- плод тебе незрим  · n=1  · mahabharata-aranyakaparva
+
+### `Paladvayam` — phaladvayam  (n=1)
+
+- двойной плод  · n=1  · mahabharata-adiparva
+
+### `PalagfdDinA` — phalagṛddhinā  (n=1)
+
+- жаждущий плода  · n=1  · mahabharata-striparva
+
+### `Palahetu` — phalahetu  (n=9)
+
+- стремящиеся к плодам деяний  · n=2  · mahabharata-bhishmaparva, bhagavadgita-erman
+- стремящиеся к плодам  · n=1  · gitarthasamgraha-abhinavagupta
+- побуждаемые плодом  · n=1  · ramanuja_gitabhashya
+- побуждаемые плодами  · n=1  · bhagavadgita-smirnov
+- кто к плодам устремляется  · n=1  · bhagavadgita-sementsov
+- жаждет награды  · n=1  · bhagavadgita-sharma
+- стремятся к плодам своего труда  · n=1  · bhagavadgita-prabhupada
+- желают наслаждаться плодами своего труда  · n=1  · bhagavadgita-prabhupada
+
+### `Palahetuka` — phalahetuka  (n=1)
+
+- взыскующий плода  · n=1  · mahabharata-shantiparva
+
+### `PalaiH` — phalaiḥ  (n=14)
+
+- плоды  · n=5  · ramayana-ayodhyakanda, ramayana-aranyakanda, mahabharata-aranyakaparva
+- плодами  · n=4  · mahabharata-adiparva, ramayana-aranyakanda, mahabharata-aranyakaparva, mahabharata-dronaparva
+- плодов  · n=2  · ramayana-aranyakanda, shatakatrayam-serebryakov
+- жизненных благ  · n=1  · mahabharata-udyogaparva
+- богатством  · n=1  · raghuvamsha
+- плодам  · n=1  · raghuvamsha
+
+### `Palair` — phalair  (n=1)
+
+- плодов  · n=1  · ramayana-aranyakanda
+
+### `PalakAle` — phalakāle  (n=1)
+
+- в час, когда (ты готов уже был) принести свои плоды  · n=1  · mahabharata-dronaparva
+
+### `PalakIvana` — phalakīvana  (n=2)
+
+- лесу Пхалаки  · n=2  · mahabharata-aranyakaparva
+
+### `Palaka` — phalaka  (n=6)
+
+- деревянная скамья  · n=1  · manavadharmashastra
+- кусок деревянной доски  · n=1  · mahabharata-udyogaparva
+- коры  · n=1  · mahabharata-shalyaparva
+- поверхность  · n=1  · amaru-shataka
+- площадка  · n=1  · megha-duta
+- лоб  · n=1  · mahabharata-sauptikaparva
+
+### `PalakaiH` — phalakaiḥ  (n=1)
+
+- листвой  · n=1  · ramayana-ayodhyakanda
+
+### `Palakaparyanta` — phalakaparyanta  (n=1)
+
+- крепостным валом  · n=1  · ramayana-balakanda
+
+### `PalakarmakartA` — phalakarmakartā  (n=1)
+
+- совершает действия, [несущие] плоды  · n=1  · shv-up
+
+### `Palam` — phalam  (n=87)
+
+- плод  · n=35  · mahabharata-aranyakaparva, ramayana-aranyakanda, bhagavadgita-burba, ramayana-sundarakanda, mahabharata-adiparva, buddhacharita, gitarthasamgraha-abhinavagupta, bhagavadgita-erman, bhagavadgita-sementsov, bhagavadgita-radha, mahabharata-shantiparva, ramayana-ayodhyakanda, kama-sutra, mahabharata-dronaparva, bhagavadgita-1914, bhagavadgity, bhagavadgita-smirnov, bhagavadgita-prabhupada, mahabharata-ashvamedhikaparva, amaru-shataka
+- плоды  · n=10  · mahabharata-aranyakaparva, mahabharata-shantiparva, ramayana-ayodhyakanda, mahabharata-adiparva, buddhacharita, mahabharata-udyogaparva, gitarthasamgraha-abhinavagupta, bhagavadgita-1788, mahabharata-shalyaparva
+- результат  · n=9  · bhagavadgita-prabhupada, ramayana-aranyakanda, mahabharata-aranyakaparva, mahabharata-dronaparva, mahabharata-udyogaparva
+- плода  · n=6  · manavadharmashastra, gitarthasamgraha-abhinavagupta, ramanuja_gitabhashya, bhagavadgita-sementsov, bhagavadgita-radha, mahabharata-sauptikaparva
+- плодами  · n=2  · ramayana-balakanda, shatakatrayam-serebryakov
+- плодом  · n=2  · mahabharata-aranyakaparva, buddhacharita
+- добродетельные заслуги  · n=2  · mahabharata-udyogaparva
+- к плодам  · n=2  · gitarthasamgraha-abhinavagupta, bhagavadgita-radha
+- плодов  · n=2  · bhagavadgity, bhagavadgita-smirnov
+- силу  · n=1  · mahabharata-adiparva
+- награда  · n=1  · ramayana-ayodhyakanda
+- результатом  · n=1  · manavadharmashastra
+- Плод  · n=1  · ramayana-aranyakanda
+- награду  · n=1  · ramayana-balakanda
+- расплата  · n=1  · mahabharata-bhishmaparva
+- судьба  · n=1  · buddhacharita
+- воздаяние  · n=1  · mahabharata-udyogaparva
+- толк  · n=1  · mahabharata-udyogaparva
+- на плод  · n=1  · bhagavadgita-burba
+- плодахъ  · n=1  · bhagavadgita-1788
+- материальные блага  · n=1  · bhagavadgita-prabhupada
+- результатам  · n=1  · bhagavadgita-prabhupada
+- результатами  · n=1  · bhagavadgita-prabhupada
+- последствия  · n=1  · mahabharata-shalyaparva
+- богатства плодов  · n=1  · raghuvamsha
+- поплатишься  · n=1  · raghuvamsha
+
+### `PalamAlinI` — phalamālinī  (n=1)
+
+- плодородная  · n=1  · mahabharata-bhishmaparva
+
+### `PalamUlASI` — phalamūlāśī  (n=1)
+
+- питаясь плодами и кореньями  · n=1  · mahabharata-adiparva
+
+### `PalamUlASanAm` — phalamūlāśanām  (n=1)
+
+- питаюсь плодами и кореньями  · n=1  · mahabharata-aranyakaparva
+
+### `PalamUlASana` — phalamūlāśana  (n=10)
+
+- питаясь плодами и кореньями  · n=4  · ramayana-aranyakanda, mahabharata-adiparva
+- кушаний из плодов и кореньев  · n=1  · manavadharmashastra
+- происшедшее из воды  · n=1  · manavadharmashastra
+- ел лишь плоды и коренья  · n=1  · ramayana-balakanda
+- питавшихся плодами и кореньями  · n=1  · mahabharata-aranyakaparva
+- питаясь лишь плодами и кореньями  · n=1  · mahabharata-aranyakaparva
+- поедать плоды и коренья  · n=1  · mahabharata-dronaparva
+
+### `PalamUlASanaiH` — phalamūlāśanaiḥ  (n=1)
+
+- питающимися кореньями и плодами  · n=1  · mahabharata-aranyakaparva
+
+### `PalamUlASanairdAntair` — phalamūlāśanairdāntair  (n=1)
+
+- питающиеся плодами и кореньями, смирившие чувства  · n=1  · ramayana-balakanda
+
+### `PalamUlASin` — phalamūlāśin  (n=1)
+
+- питающийся плодами и кореньями  · n=1  · mahabharata-ashvamedhikaparva
+
+### `PalamUlAdi` — phalamūlādi  (n=2)
+
+- плодами, кореньями и другой пищей  · n=1  · mahabharata-adiparva
+- плоды, коренья и прочее  · n=1  · mahabharata-aranyakaparva
+
+### `PalamUlAdinA` — phalamūlādinā  (n=1)
+
+- плодами и кореньями  · n=1  · mahabharata-adiparva
+
+### `PalamUlAmizAhArAH` — phalamūlāmiṣāhārāḥ  (n=1)
+
+- питаясь плодами, кореньями, дичью  · n=1  · mahabharata-aranyakaparva
+
+### `PalamUlAni` — phalamūlāni  (n=1)
+
+- плоды и коренья  · n=1  · mahabharata-shalyaparva
+
+### `PalamUlAnilASana` — phalamūlānilāśana  (n=1)
+
+- питающиеся плодами, кореньями и воздухом  · n=1  · manavadharmashastra
+
+### `PalamUla` — phalamūla  (n=10)
+
+- плодами и кореньями  · n=3  · ramayana-sundarakanda, ramayana-balakanda, buddhacharita
+- плодов и кореньев  · n=2  · mahabharata-aranyakaparva, mahabharata-shalyaparva
+- плоды и коренья  · n=1  · mahabharata-adiparva
+- плоды или цветы  · n=1  · manavadharmashastra
+- Плоды и съедобные коренья  · n=1  · ramayana-aranyakanda
+- плодов  · n=1  · ramayana-balakanda
+- лесные плоды и коренья  · n=1  · mahabharata-adiparva
+
+### `PalamUlaSanA` — phalamūlaśanā  (n=1)
+
+- питающаяся плодами и кореньями  · n=1  · ramayana-ayodhyakanda
+
+### `PalamUlaiH` — phalamūlaiḥ  (n=1)
+
+- плодами и кореньями  · n=1  · ramayana-ayodhyakanda
+
+### `PalamUlajalASana` — phalamūlajalāśana  (n=1)
+
+- угощаясь плодами, кореньями и водой  · n=1  · mahabharata-ashramavasikaparva
+
+### `PalamUlakftASanA` — phalamūlakṛtāśanā  (n=1)
+
+- питаясь кореньями и плодами  · n=1  · mahabharata-aranyakaparva
+
+### `PalamUlam` — phalamūlam  (n=1)
+
+- плодов и кореньев  · n=1  · ramayana-balakanda
+
+### `PalamUlamfgAn` — phalamūlamṛgān  (n=1)
+
+- плоды, коренья и дичь  · n=1  · mahabharata-aranyakaparva
+
+### `PalamUlasamudvAha` — phalamūlasamudvāha  (n=1)
+
+- груды плодов и кореньев  · n=1  · mahabharata-ashramavasikaparva
+
+### `PalamUle` — phalamūle  (n=1)
+
+- плодов, кореньев  · n=1  · manavadharmashastra
+
+### `PalamadyaprapadyasvakarmaRastasyadurmate` — phalamadya prapadyasva karmaṇastasya durmate  (n=1)
+
+- Теперь вкуси плод того деяния, о злоумный!  · n=1  · mahabharata-shalyaparva
+
+### `PalaniHspfhaH` — phalaniḥspṛhaḥ  (n=1)
+
+- без помышления о награде  · n=1  · raghuvamsha
+
+### `PalaniScaya` — phalaniścaya  (n=1)
+
+- устремленности к результатам  · n=1  · gitarthasamgraha-abhinavagupta
+
+### `Palanirvftti` — phalanirvṛtti  (n=6)
+
+- конечный результат  · n=1  · manavadharmashastra
+- возмездие  · n=1  · mahabharata-adiparva
+- ощутимые плоды  · n=1  · mahabharata-dronaparva
+- благие последствия  · n=1  · mahabharata-udyogaparva
+- преуспеяние  · n=1  · mahabharata-udyogaparva
+- неизбежный плод  · n=1  · mahabharata-udyogaparva
+
+### `PalaniryUha` — phala niryūha  (n=1)
+
+- из фруктов  · n=1  · ramayana-ayodhyakanda
+
+### `Palanizpatti` — phalaniṣpatti  (n=2)
+
+- «плодоношение»  · n=1  · nyaya-bhashya
+- реализуются  · n=1  · nyaya-bhashya
+
+### `Palanti` — phalanti  (n=3)
+
+- распределяются  · n=1  · manavadharmashastra
+- порождают  · n=1  · buddhacharita
+- одаряют  · n=1  · shatakatrayam
+
+### `PalapAkAnta` — phalapākānta  (n=1)
+
+- погибающие после созревания плода  · n=1  · manavadharmashastra
+
+### `PalapAtana` — phalapātana  (n=1)
+
+- вызывает падение плода  · n=1  · manavadharmashastra
+
+### `PalapAte` — phalapāte  (n=2)
+
+- когда роняет плод  · n=1  · kama-sutra
+- роняет плод  · n=1  · kama-sutra
+
+### `PalapatrAvaramUla` — phalapatrāvaramūla  (n=1)
+
+- опавшими плодами и листьями, кореньями  · n=1  · mahabharata-ashvamedhikaparva
+
+### `Palapatrodaka` — phalapatrodaka  (n=2)
+
+- с плодами, листьями и водой  · n=1  · mahabharata-adiparva
+- плоды, листья и воду  · n=1  · mahabharata-adiparva
+
+### `PalaprASana` — phalaprāśana  (n=1)
+
+- съедения плода  · n=1  · mahabharata-sabhaparva
+
+### `PalaprasavaBedAnumita` — phalaprasavabhedānumita  (n=1)
+
+- выводимое логически из различных производимых ею следствий  · n=1  · yoga-sutry_vyasa-bhashya
+
+### `PalapravfttAv` — phalapravṛttāv  (n=1)
+
+- срок рождения дитяти  · n=1  · raghuvamsha
+
+### `Palapuzpaprada` — phalapuṣpaprada  (n=1)
+
+- приносящими цветы и плоды  · n=1  · mahabharata-sabhaparva
+
+### `PalapuzpasamfdDiBiH` — phalapuṣpasamṛddhibhiḥ  (n=1)
+
+- усеянными цветами и плодами  · n=1  · mahabharata-adiparva
+
+### `PalapuzpaudBava` — phalapuṣpaudbhava  (n=1)
+
+- происшедших из плодов или цветов  · n=1  · manavadharmashastra
+
+### `PalapuzpopaSoBitAH` — phalapuṣpopaśobhitāḥ  (n=1)
+
+- в убранстве цветов и плодов  · n=1  · mahabharata-aranyakaparva
+
+### `Palarasa` — phalarasa  (n=2)
+
+- сок плодов  · n=1  · mahabharata-bhishmaparva
+- сок этих плодов  · n=1  · mahabharata-bhishmaparva
+
+### `PalareRavaH` — phalareṇavaḥ  (n=1)
+
+- пыльца  · n=1  · raghuvamsha
+
+### `PalasADanakarmasaNgikulajanma` — phalasādhanakarmasaṅgikulajanma  (n=1)
+
+- рождение в семье [людей], привязанных к действию как средству достижения [того или иного] плода  · n=1  · ramanuja_gitabhashya
+
+### `PalasADanatvAvagati` — phalasādhanatvāvagati  (n=1)
+
+- понимание плода как результата  · n=1  · vedartha-samgraha_ramanuja
+
+### `PalasADanatvaprakAra` — phalasādhanatvaprakāra  (n=1)
+
+- образ средств достижения плода  · n=1  · vedartha-samgraha_ramanuja
+
+### `PalasTa` — phalastha  (n=1)
+
+- полезен  · n=1  · buddhacharita
+
+### `PalasaMBavAn` — phalasaṃbhavān  (n=1)
+
+- имеющие происхождение от плодов  · n=1  · manavadharmashastra
+
+### `PalasaMBava` — phalasaṃbhava  (n=1)
+
+- происхождение плода  · n=1  · vedartha-samgraha_ramanuja
+
+### `PalasaMnyAsa` — phalasaṃnyāsa  (n=1)
+
+- отверг плоды  · n=1  · yoga-sutry_vyasa-bhashya
+
+### `PalasaMpade` — phalasaṃpade  (n=1)
+
+- появления плодов  · n=1  · gitarthasamgraha-abhinavagupta
+
+### `PalasaNgam` — phalasaṅgam  (n=1)
+
+- связи с плодами  · n=1  · ramanuja_gitabhashya
+
+### `PalasaNgarahita` — phalasaṅgarahita  (n=1)
+
+- отрешившийся от связи с плодом  · n=1  · ramanuja_gitabhashya
+
+### `PalasidDyanupapatti` — phalasiddhyanupapatti  (n=1)
+
+- невозможность достижения плода  · n=1  · vedartha-samgraha_ramanuja
+
+### `Palasya` — phalasya  (n=3)
+
+- плода  · n=1  · rigveda
+- плодом  · n=1  · buddhacharita
+- плод  · n=1  · nyaya-bhashya
+
+### `PalatA` — phalatā  (n=2)
+
+- результат  · n=1  · gitarthasamgraha-abhinavagupta
+- бесплодною  · n=1  · shatakatrayam
+
+### `PalatIva` — phalatīva  (n=1)
+
+- словно бы стало раскалываться  · n=1  · ramayana-sundarakanda
+
+### `PalataH` — phalataḥ  (n=2)
+
+- относящихся к тканям  · n=2  · mahabharata-sabhaparva
+
+### `Palatas` — phalatas  (n=1)
+
+- по плодам  · n=1  · mahabharata-udyogaparva
+
+### `Palati` — phalati  (n=7)
+
+- разбилось  · n=1  · ramayana-ayodhyakanda
+- дает плод  · n=1  · manavadharmashastra
+- предопределяют  · n=1  · mahabharata-aranyakaparva
+- дает плода  · n=1  · mahabharata-adiparva
+- раскололось  · n=1  · buddhacharita
+- приносит плоды  · n=1  · shatakatrayam
+- даруют  · n=1  · shatakatrayam
+
+### `PalatvAt` — phalatvāt  (n=1)
+
+- от плодов  · n=1  · gitarthasamgraha-abhinavagupta
+
+### `PalatyAgastyAgaH` — phalatyāgastyāgaḥ  (n=2)
+
+- отречение от плодов есть отрешенность  · n=2  · gitarthasamgraha-abhinavagupta
+
+### `Palaudaya` — phalaudaya  (n=3)
+
+- результат  · n=2  · manavadharmashastra
+- последствия  · n=1  · manavadharmashastra
+
+### `PalavAda` — phalavāda  (n=2)
+
+- похвала, указующая на плоды  · n=2  · nyaya-bhashya
+
+### `PalavAn` — phalavān  (n=1)
+
+- изобилуют плодами  · n=1  · mahabharata-udyogaparva
+
+### `PalavAsanA` — phalavāsanā  (n=1)
+
+- результаты предыдущих действий  · n=1  · gitarthasamgraha-abhinavagupta
+
+### `PalavadBiH` — phalavadbhiḥ  (n=1)
+
+- покрытые плодами  · n=1  · mahabharata-aranyakaparva
+
+### `Palavat` — phalavat  (n=10)
+
+- с обильными плодами  · n=1  · ramayana-sundarakanda
+- дающие плод  · n=1  · manavadharmashastra
+- усеянной плодами  · n=1  · mahabharata-aranyakaparva
+- плодами  · n=1  · mahabharata-aranyakaparva
+- плодоносное  · n=1  · kama-sutra
+- обильными  · n=1  · mahabharata-adiparva
+- обильный  · n=1  · mahabharata-adiparva
+- обильно  · n=1  · buddhacharita
+- обладающих плодами  · n=1  · mahabharata-shalyaparva
+- успешным  · n=1  · mahabharata-virataparva
+
+### `PalavatI` — phalavatī  (n=1)
+
+- плодами  · n=1  · atharvaveda
+
+### `PalavatIm` — phalavatīm  (n=1)
+
+- приносящая результат  · n=1  · atharvaveda
+
+### `PalavatpUgamAlinA` — phalavatpūgamālinā  (n=1)
+
+- поросшему плодоносными бетелевыми лесами  · n=1  · raghuvamsha
+
+### `Palavattva` — phalavattva  (n=1)
+
+- плоды  · n=1  · kama-sutra
+
+### `Palavaty` — phalavaty  (n=1)
+
+- давала обильные урожаи  · n=1  · raghuvamsha
+
+### `PalaviSeza` — phalaviśeṣa  (n=4)
+
+- результат действия  · n=1  · gitarthasamgraha-abhinavagupta
+- Пхала вишеша  · n=1  · gitarthasamgraha-abhinavagupta
+- плод  · n=1  · vedartha-samgraha_ramanuja
+- особый результат  · n=1  · vedartha-samgraha_ramanuja
+
+### `PalayogAH` — phalayogāḥ  (n=1)
+
+- средства к (достижению) результатов  · n=1  · mahabharata-adiparva
+
+### `Pale` — phale  (n=10)
+
+- к плоду  · n=2  · ramanuja_gitabhashya, bhagavadgita-radha
+- плоды  · n=1  · ramayana-ayodhyakanda
+- плодами  · n=1  · ramayana-aranyakanda
+- плод  · n=1  · mahabharata-adiparva
+- успеха  · n=1  · mahabharata-udyogaparva
+- плодам  · n=1  · bhagavadgita-1914
+- дѣламъ  · n=1  · bhagavadgita-1909
+- к результату  · n=1  · bhagavadgita-prabhupada
+- к плодам своего труда  · n=1  · bhagavadgita-prabhupada
+
+### `PaleByo` — phalebhyo  (n=1)
+
+- заслуга  · n=1  · buddhacharita
+
+### `PaleDaHkusumasteya` — phaledhaḥkusumasteya  (n=1)
+
+- кража плодов, топлива, цветов  · n=1  · manavadharmashastra
+
+### `Paled` — phaled  (n=1)
+
+- разорвется  · n=1  · mahabharata-aranyakaparva
+
+### `Palena` — phalena  (n=5)
+
+- плодом  · n=2  · manavadharmashastra, kumarasambhava
+- результата  · n=1  · gitarthasamgraha-abhinavagupta
+- плод  · n=1  · raghuvamsha
+- плодами  · n=1  · raghuvamsha
+
+### `PalepsA` — phalepsā  (n=1)
+
+- обретенья желанного плода  · n=1  · buddhacharita
+
+### `Palet` — phalet  (n=2)
+
+- Раскололась  · n=1  · ramayana-ayodhyakanda
+- Раскалывается  · n=1  · ramayana-ayodhyakanda
+
+### `Palezu` — phaleṣu  (n=12)
+
+- в плодах  · n=3  · mahabharata-aranyakaparva, bhagavadgita-burba, bhagavadgita-prabhupada
+- фрукты  · n=1  · ramayana-ayodhyakanda
+- плодам  · n=1  · gitarthasamgraha-abhinavagupta
+- результаты  · n=1  · gitarthasamgraha-abhinavagupta
+- плодов  · n=1  · gitarthasamgraha-abhinavagupta
+- плоды  · n=1  · bhagavadgita-1914
+- въ слѣдствіи онаго  · n=1  · bhagavadgita-1788
+- на плоды  · n=1  · bhagavadgita-sementsov
+- награду  · n=1  · bhagavadgita-1909
+- к результатам  · n=1  · bhagavadgita-prabhupada
+
+### `Palgu` — phalgu  (n=7)
+
+- Пхальгу  · n=2  · mahabharata-aranyakaparva
+- тщеславие  · n=2  · mahabharata-udyogaparva
+- низшую  · n=2  · mahabharata-udyogaparva
+- с Пхальгуной  · n=1  · mahabharata-karnaparva
+
+### `PalguRa` — phalguṇa  (n=1)
+
+- Пхальгуна  · n=1  · mahabharata-bhishmaparva
+
+### `PalguSeza` — phalguśeṣa  (n=1)
+
+- уцелели только слабейшие  · n=1  · mahabharata-karnaparva
+
+### `PalgunAmA` — phalgunāmā  (n=1)
+
+- Пхальгу  · n=1  · mahabharata-aranyakaparva
+
+### `PalgunAnAM` — phalgunānāṃ  (n=1)
+
+- Пхальгун  · n=1  · mahabharata-udyogaparva
+
+### `PalgunAnAm` — phalgunānām  (n=1)
+
+- Пхальгун  · n=1  · mahabharata-karnaparva
+
+### `PalgunArTa` — phalgunārtha  (n=1)
+
+- ради Пхальгуны  · n=1  · mahabharata-dronaparva
+
+### `PalgunAt` — phalgunāt  (n=5)
+
+- Пхальгуны  · n=3  · mahabharata-aranyakaparva, mahabharata-karnaparva, mahabharata-virataparva
+- от Пхальгуны  · n=1  · mahabharata-dronaparva
+- перед Пхальгуной  · n=1  · mahabharata-dronaparva
+
+### `PalgunI` — phalgunī  (n=5)
+
+- Пхалгуни  · n=2  · atharvaveda
+- пхалгуни  · n=2  · atharvaveda
+- Пхальгуни  · n=1  · mahabharata-virataparva
+
+### `PalgunIByAm` — phalgunībhyām  (n=3)
+
+- Пхалгуни  · n=2  · ramayana-balakanda
+- Пхальгуни  · n=1  · mahabharata-virataparva
+
+### `Palguna` — phalguna  (n=137)
+
+- Пхальгуна  · n=66  · mahabharata-dronaparva, mahabharata-bhishmaparva, mahabharata-karnaparva, mahabharata-aranyakaparva, mahabharata-udyogaparva, mahabharata-virataparva, mahabharata-ashramavasikaparva, mahabharata-mausalaparva, mahabharata-svargarohanikaparva, mahabharata-shantiparva, mahabharata-ashvamedhikaparva, mahabharata-sabhaparva, mahabharata-mahaprasthanikaparva
+- Пхальгуны  · n=21  · mahabharata-dronaparva, mahabharata-aranyakaparva, mahabharata-bhishmaparva, mahabharata-karnaparva, mahabharata-shantiparva, mahabharata-udyogaparva, mahabharata-ashvamedhikaparva, mahabharata-sabhaparva, mahabharata-virataparva, mahabharata-svargarohanikaparva
+- Пхальгуну  · n=15  · mahabharata-dronaparva, mahabharata-aranyakaparva, mahabharata-bhishmaparva, mahabharata-karnaparva, mahabharata-ashvamedhikaparva, mahabharata-virataparva
+- Пхалгуна  · n=8  · mahabharata-adiparva, mahabharata-shantiparva, mahabharata-udyogaparva
+- Пхальгуной  · n=8  · mahabharata-dronaparva, mahabharata-udyogaparva, mahabharata-karnaparva, mahabharata-shalyaparva
+- Пхальгуне  · n=6  · mahabharata-dronaparva, mahabharata-aranyakaparva, mahabharata-bhishmaparva, mahabharata-ashvamedhikaparva
+- Арджуна  · n=2  · mahabharata-shantiparva, mahabharata-dronaparva
+- Арджуне  · n=2  · mahabharata-shantiparva, mahabharata-dronaparva
+- Фальгуна  · n=2  · mahabharata-aranyakaparva, mahabharata-udyogaparva
+- Партха  · n=2  · mahabharata-bhishmaparva, mahabharata-dronaparva
+- Пхалгуны  · n=1  · mahabharata-shantiparva
+- Тот, что рожден под созвездием Пхальгуни  · n=1  · mahabharata-aranyakaparva
+- Рожденный под созвездием Пхальгуни  · n=1  · mahabharata-aranyakaparva
+- с Пхальгуной  · n=1  · mahabharata-dronaparva
+- о Пхальгуна  · n=1  · mahabharata-ashvamedhikaparva
+
+### `PalgunaH` — phalgunaḥ  (n=23)
+
+- Пхальгуна  · n=21  · mahabharata-aranyakaparva, mahabharata-dronaparva, mahabharata-karnaparva, mahabharata-shalyaparva, mahabharata-bhishmaparva, mahabharata-udyogaparva, mahabharata-ashvamedhikaparva, mahabharata-virataparva
+- Арджуна  · n=2  · mahabharata-mahaprasthanikaparva
+
+### `PalgunaM` — phalgunaṃ  (n=7)
+
+- Пхальгуне  · n=3  · mahabharata-aranyakaparva, mahabharata-bhishmaparva, mahabharata-ashvamedhikaparva
+- Пхальгуну  · n=1  · mahabharata-bhishmaparva
+- Фальгуне  · n=1  · mahabharata-dronaparva
+- Пандаву  · n=1  · mahabharata-ashvamedhikaparva
+- Арджуны  · n=1  · mahabharata-ashvamedhikaparva
+
+### `PalgunabARAnAm` — phalgunabāṇānām  (n=2)
+
+- стрелам Пхальгуны  · n=1  · mahabharata-dronaparva
+- стрел Пхальгуны  · n=1  · mahabharata-dronaparva
+
+### `Palgunah` — phalgunah  (n=1)
+
+- Пхальгуна  · n=1  · mahabharata-ashvamedhikaparva
+
+### `Palgunam` — phalgunam  (n=17)
+
+- Пхальгуну  · n=7  · mahabharata-aranyakaparva, mahabharata-dronaparva
+- с Пхальгуной  · n=3  · mahabharata-shantiparva, mahabharata-bhishmaparva
+- с Арджуной  · n=1  · mahabharata-shantiparva
+- с Пхалгуной  · n=1  · mahabharata-shantiparva
+- Пхальгуна  · n=1  · mahabharata-aranyakaparva
+- Пхальгуной  · n=1  · mahabharata-aranyakaparva
+- Пхалгуну  · n=1  · mahabharata-adiparva
+- на Пхальгуну  · n=1  · mahabharata-bhishmaparva
+- Пхальгуны  · n=1  · mahabharata-karnaparva
+
+### `PalgunanArAcAH` — phalgunanārācāḥ  (n=1)
+
+- длинные стрелы Пхальгуны  · n=1  · mahabharata-dronaparva
+
+### `Palgunasya` — phalgunasya  (n=20)
+
+- Пхальгуны  · n=16  · mahabharata-dronaparva, mahabharata-bhishmaparva, mahabharata-karnaparva, mahabharata-virataparva, mahabharata-aranyakaparva, mahabharata-udyogaparva, mahabharata-shalyaparva
+- Рожденного под созвездием Пхальгуни  · n=1  · mahabharata-aranyakaparva
+- Пхалгуна  · n=1  · mahabharata-adiparva
+- Пхальгуне  · n=1  · mahabharata-bhishmaparva
+- Пхалгуны  · n=1  · mahabharata-udyogaparva
+
+### `Palgunau` — phalgunau  (n=2)
+
+- Тот, кто рожден при созвездии Пхальгуни  · n=1  · mahabharata-aranyakaparva
+- Пхальгуна  · n=1  · mahabharata-ashvamedhikaparva
+
+### `Palgunena` — phalgunena  (n=6)
+
+- Пхальгуна  · n=3  · mahabharata-bhishmaparva, mahabharata-udyogaparva, mahabharata-sabhaparva
+- Фальгуной  · n=1  · mahabharata-dronaparva
+- Пхальгуной  · n=1  · mahabharata-dronaparva
+- с Пхальгуной  · n=1  · mahabharata-karnaparva
+
+### `PalgunyAmuttare` — phalgunyāmuttare  (n=2)
+
+- созвездии Уттара Пхалгуни  · n=1  · ramayana-balakanda
+- Уттара Пхалгуни  · n=1  · ramayana-balakanda
+
+### `PalgutA` — phalgutā  (n=1)
+
+- ничтожестве  · n=1  · shatakatrayam
+
+### `Palgvena` — phalgvena  (n=1)
+
+- ничтожной  · n=1  · rigveda
+
+### `Paliga` — phaliga  (n=4)
+
+- вместилище  · n=2  · rigveda
+- замыкателя вод  · n=2  · rigveda
+
+### `Paligam` — phaligam  (n=4)
+
+- вместилище влаги  · n=2  · rigveda
+- скалу  · n=2  · rigveda
+
+### `Palin` — phalin  (n=1)
+
+- приносящие плоды  · n=1  · manavadharmashastra
+
+### `PalinI` — phalinī  (n=1)
+
+- с плодами  · n=1  · atharvaveda
+
+### `PalinIr` — phalinīr  (n=1)
+
+- приносят плоды  · n=1  · rigveda
+
+### `Palinam` — phalinam  (n=1)
+
+- с прибылью  · n=1  · atharvaveda
+
+### `PalitA` — phalitā  (n=1)
+
+- в пору урожая  · n=1  · raghuvamsha
+
+### `PalitAH` — phalitāḥ  (n=1)
+
+- плодоносит  · n=1  · gitarthasamgraha-abhinavagupta
+
+### `PalitAn` — phalitān  (n=1)
+
+- плодами  · n=1  · mahabharata-adiparva
+
+### `PalitAs` — phalitās  (n=1)
+
+- исполнились  · n=1  · raghuvamsha
+
+### `Palita` — phalita  (n=3)
+
+- цветущая  · n=2  · mahabharata-aranyakaparva
+- плодоносить  · n=1  · mahabharata-aranyakaparva
+
+### `Palito` — phalito  (n=1)
+
+- покрытый плодами  · n=1  · raghuvamsha
+
+### `Palizyati` — phaliṣyati  (n=5)
+
+- разлетится  · n=2  · mahabharata-ashvamedhikaparva
+- принесет плода  · n=1  · mahabharata-adiparva
+- будет давать плод  · n=1  · mahabharata-adiparva
+- лопнет  · n=1  · mahabharata-dronaparva
+
+### `Palo` — phalo  (n=1)
+
+- плодовыми  · n=1  · ramayana-aranyakanda
+
+### `Paloda` — phaloda  (n=1)
+
+- Пхалодака  · n=1  · mahabharata-sabhaparva
+
+### `Palodaya` — phalodaya  (n=2)
+
+- успех  · n=1  · ramayana-sundarakanda
+- успеха  · n=1  · mahabharata-udyogaparva
+
+### `Palodayam` — phalodayam  (n=1)
+
+- плоды последствий  · n=1  · mahabharata-dronaparva
+
+### `PalotTam` — phalottham  (n=1)
+
+- плод своих прежних поступков  · n=1  · buddhacharita
+
+### `Parvarezu` — pharvareṣu  (n=2)
+
+- на постромки  · n=2  · rigveda
+
+### `PataYjali` — Patañjali  (n=1)
+
+- Патанджали  · n=1  · nyaya-bhashya
+
+### `Paw` — phaṭ  (n=1)
+
+- с громким треском  · n=1  · atharvaveda
+
+### `PenAhAra` — phenāhāra  (n=1)
+
+- питающиеся только пеной  · n=1  · mahabharata-udyogaparva
+
+### `PenAyamAnAH` — phenāyamānāḥ  (n=1)
+
+- пенящиеся  · n=1  · mahabharata-bhishmaparva
+
+### `Pena` — phena  (n=19)
+
+- пеной  · n=7  · mahabharata-udyogaparva, ramayana-ayodhyakanda, buddhacharita, atharvaveda, raghuvamsha, gitagovinda
+- пены  · n=4  · mahabharata-adiparva, rigveda
+- пена  · n=2  · ramayana-ayodhyakanda, buddhacharita
+- пене  · n=2  · ramayana-sundarakanda, ramayana-aranyakanda
+- пену  · n=2  · rigveda, atharvaveda
+- морская пена  · n=1  · ramayana-aranyakanda
+- пенящаяся  · n=1  · mahabharata-bhishmaparva
+
+### `PenaDarman` — phenadharman  (n=1)
+
+- как морская пена  · n=1  · mahabharata-aranyakaparva
+
+### `PenacAmaramAlin` — phenacāmaramālin  (n=1)
+
+- вместо пены ее окаймляли буйволовые хвосты  · n=1  · mahabharata-dronaparva
+
+### `PenaiH` — phenaiḥ  (n=1)
+
+- пенясь  · n=1  · megha-duta
+
+### `Penaka` — phenaka  (n=3)
+
+- мылящими  · n=2  · kama-sutra
+- мылящие принадлежности  · n=1  · kama-sutra
+
+### `Penam` — phenam  (n=6)
+
+- пену  · n=6  · mahabharata-adiparva, ramayana-aranyakanda, rigveda, mahabharata-udyogaparva, rigveda
+
+### `PenapA` — phenapā  (n=1)
+
+- пхенапы  · n=1  · mahabharata-udyogaparva
+
+### `PenapIta` — phenapīta  (n=1)
+
+- для пьющего пену [губ]  · n=1  · manavadharmashastra
+
+### `PenapItasya` — phenapītasya  (n=1)
+
+- целующего  · n=1  · manavadharmashastra
+
+### `Penapa` — phenapa  (n=2)
+
+- Пхенапа  · n=2  · mahabharata-sabhaparva
+
+### `PenapuYjAkulajalA` — phenapuñjākulajalā  (n=1)
+
+- на волнах грудились хлопья пены  · n=1  · mahabharata-aranyakaparva
+
+### `PenauGa` — phenaugha  (n=1)
+
+- потоки пены  · n=1  · mahabharata-aranyakaparva
+
+### `Penavat` — phenavat  (n=2)
+
+- Пенились  · n=1  · mahabharata-aranyakaparva
+- подобно пене  · n=1  · mahabharata-adiparva
+
+### `Penena` — phenena  (n=1)
+
+- пеною  · n=1  · mahabharata-shalyaparva
+
+### `Penila` — phenila  (n=2)
+
+- пенистой  · n=1  · mahabharata-adiparva
+- пенящийся  · n=1  · raghuvamsha
+
+### `Penilam` — phenilam  (n=1)
+
+- Пенящимися  · n=1  · ramayana-aranyakanda
+
+### `Peqau` — pheḍau  (n=1)
+
+- прекращаю  · n=1  · shukasaptati
+
+### `PrAcInayogya` — Prācīnayogya  (n=1)
+
+- Прачинайогья  · n=1  · tai-up
+
+### `PrajApati` — Prajāpati  (n=1)
+
+- Праджапати  · n=1  · ch-up
+
+### `PullA` — phullā  (n=1)
+
+- цветущим  · n=1  · ramayana-sundarakanda
+
+### `PullASokaniBa` — phullāśokanibha  (n=1)
+
+- цветущей ашоке подобный  · n=1  · mahabharata-bhishmaparva
+
+### `PullASokavanam` — phullāśokavanam  (n=2)
+
+- заросли цветущей ашоки  · n=2  · mahabharata-karnaparva
+
+### `PullASokotkarABAsaM` — phullāśokotkarābhāsaṃ  (n=1)
+
+- Блеском (внешностью) подобную массе цветущей ашоки  · n=1  · ramayana-sundarakanda
+
+### `PullAn` — phullān  (n=1)
+
+- цветущие  · n=1  · mahabharata-aranyakaparva
+
+### `PullAravindavadanAm` — phullāravindavadanām  (n=1)
+
+- лицо  · n=1  · chaurapanchashika
+
+### `PullAsanAgraviwapAn` — phullāsanāgraviṭapān  (n=2)
+
+- с распустившимися верхушками ветвей  · n=2  · raghuvamsha
+
+### `Pulla` — phulla  (n=12)
+
+- цветущими  · n=3  · ramayana-aranyakanda, mahabharata-striparva
+- в цвету  · n=2  · mahabharata-aranyakaparva
+- цветущие  · n=1  · ramayana-ayodhyakanda
+- распустившегося  · n=1  · ramayana-ayodhyakanda
+- раскрывшиеся  · n=1  · ramayana-sundarakanda
+- раскрытому  · n=1  · ramayana-sundarakanda
+- цветут  · n=1  · ramayana-aranyakanda
+- голубых  · n=1  · ramayana-aranyakanda
+- цветущую  · n=1  · buddhacharita
+
+### `PullaM` — phullaṃ  (n=1)
+
+- растущее  · n=1  · mahabharata-virataparva
+
+### `PullaiH` — phullaiḥ  (n=1)
+
+- Цветущими  · n=1  · mahabharata-aranyakaparva
+
+### `PullakanakAmbujasaMniBena` — phullakanakāmbujasaṃnibhena  (n=1)
+
+- золотисто-смуглое, как будто лотоса цвет  · n=1  · chaurapanchashika
+
+### `PullapaNkajA` — phullapaṅkajā  (n=1)
+
+- с распустившимися цветами  · n=1  · mahabharata-dronaparva
+
+### `PullapadmapalASAkzyAH` — phullapadmapalāśākṣyāḥ  (n=1)
+
+- с глазами, подобными лепесткам раскрывшегося лотоса  · n=1  · mahabharata-sauptikaparva
+
+### `PullatApaNkajena` — phullatā paṅkajena  (n=1)
+
+- распустившемуся лотосу  · n=1  · mahabharata-dronaparva
+
+### `PullotpalacCannAm` — phullotpalacchannām  (n=1)
+
+- сияли лотосы  · n=1  · ramayana-ayodhyakanda
+
+### `Puruzottama` — Puruṣottama  (n=1)
+
+- Пурушоттаме  · n=1  · bhagavadgita-burba
+
+### `Putkaroti` — phutkaroti  (n=1)
+
+- кричал  · n=1  · shukasaptati
+
+### `Puzpodgama` — phuṣpodgama  (n=1)
+
+- цветы  · n=1  · raghuvamsha
 
 ### `p` — p  (n=3)
 

@@ -1,6 +1,18 @@
-# Surface glossary — SLP1 `m`
+# Surface glossary — SLP1 `M`
 
-9452 forms. Format: `form` (sa) — total n → ru (n) · registers.
+9455 forms. Format: `form` (sa) — total n → ru (n) · registers.
+
+### `MahABAzya` — Mahābhāṣya  (n=1)
+
+- Махабхашья  · n=1  · nyaya-bhashya
+
+### `MahAnArAyaRaUpanizad` — Mahānārāyaṇa Upaniṣad  (n=1)
+
+- Маханараяна-упанишада  · n=1  · nyaya-bhashya
+
+### `MaudgalyAyana` — Maudgalyāyana  (n=1)
+
+- Маудгальяяна  · n=1  · nyaya-bhashya
 
 ### `mA` — mā  (n=1082)
 

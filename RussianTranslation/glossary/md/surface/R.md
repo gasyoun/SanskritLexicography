@@ -1,6 +1,92 @@
-# Surface glossary — SLP1 `r`
+# Surface glossary — SLP1 `R`
 
-4703 forms. Format: `form` (sa) — total n → ru (n) · registers.
+4721 forms. Format: `form` (sa) — total n → ru (n) · registers.
+
+### `RAma` — Rāma  (n=1)
+
+- Рама  · n=1  · mahabharata-aranyakaparva
+
+### `RIyate` — ṇīyate  (n=3)
+
+- ведут  · n=2  · rigveda
+- Обводится  · n=1  · rigveda
+
+### `Ra` — ṇa  (n=12)
+
+- нас  · n=5  · rigveda, rigveda, rigveda, atharvaveda
+- словно  · n=4  · rigveda, rigveda, rigveda
+- наслаждался  · n=1  · rigveda
+- нам  · n=1  · rigveda
+- вечный покой  · n=1  · mahabharata-udyogaparva
+
+### `RaH` — ṇaḥ  (n=22)
+
+- нам  · n=10  · rigveda, rigveda, rigveda, atharvaveda
+- нас  · n=9  · rigveda, rigveda, rigveda, rigveda, rigveda, rigveda, atharvaveda
+- нашу  · n=1  · rigveda
+- наша  · n=1  · rigveda
+- нашей  · n=1  · rigveda
+
+### `Rayanti` — ṇayanti  (n=3)
+
+- водят  · n=2  · rigveda
+- ведут  · n=1  · rigveda
+
+### `RayatA` — ṇayatā  (n=1)
+
+- Ведите  · n=1  · rigveda
+
+### `Rezi` — ṇeṣi  (n=1)
+
+- Привези  · n=1  · rigveda
+
+### `RininA` — ṇininā  (n=2)
+
+- Суффикс «ин»  · n=1  · gitarthasamgraha-abhinavagupta
+- суффикс ин  · n=1  · gitarthasamgraha-abhinavagupta
+
+### `Ro` — ṇo  (n=1)
+
+- нас  · n=1  · rigveda
+
+### `Ronuma` — ṇonuma  (n=1)
+
+- Мы ликуем  · n=1  · rigveda
+
+### `RonumaH` — ṇonumaḥ  (n=5)
+
+- ликуем  · n=4  · rigveda
+- приветствуем  · n=1  · rigveda
+
+### `Ronumas` — ṇonumas  (n=1)
+
+- приветствуем  · n=1  · rigveda
+
+### `Ru` — ṇu  (n=1)
+
+- разить  · n=1  · mahabharata-ashvamedhikaparva
+
+### `RudA` — ṇudā  (n=2)
+
+- оттолкни  · n=1  · atharvaveda
+- мощно гони вперед  · n=1  · atharvaveda
+
+### `Ruda` — ṇuda  (n=1)
+
+- оттолкни  · n=1  · atharvaveda
+
+### `Rudasva` — ṇudasva  (n=4)
+
+- оттолкни  · n=4  · atharvaveda, rigveda
+
+### `Ruru` — Ruru  (n=1)
+
+- Руру  · n=1  · mahabharata-adiparva
+
+### `Rya` — ṇya  (n=3)
+
+- Нья  · n=2  · ch-up
+- нья  · n=1  · ch-up
 
 ### `rA` — rā  (n=11)
 

@@ -1,6 +1,26 @@
-# Surface glossary — SLP1 `n`
+# Surface glossary — SLP1 `N`
 
-9363 forms. Format: `form` (sa) — total n → ru (n) · registers.
+9367 forms. Format: `form` (sa) — total n → ru (n) · registers.
+
+### `NAgArjuna` — Nāgārjuna  (n=5)
+
+- Нагарджуны  · n=3  · nyaya-bhashya
+- Нагарджуна  · n=1  · nyaya-bhashya
+- Нагарджуной  · n=1  · nyaya-bhashya
+
+### `NArAyana` — Nārāyana  (n=1)
+
+- Нараяна  · n=1  · gitagovinda
+
+### `Nakula` — Nakula  (n=1)
+
+- Накула  · n=1  · mahabharata-virataparva
+
+### `NyAya-BAzya` — Nyāya-bhāṣya  (n=3)
+
+- Ньяя-бхашье  · n=1  · nyaya-bhashya
+- Ньяя-бхашья  · n=1  · nyaya-bhashya
+- Ньяя-бхашьи  · n=1  · nyaya-bhashya
 
 ### `n'Asrasat` — n'āsrasat  (n=1)
 

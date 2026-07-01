@@ -1,4 +1,4 @@
-# Root glossary (Sa→Ru) — `z`
+# Root glossary (Sa→Ru) — `Z`
 
 1 entries.
 

@@ -1,4 +1,4 @@
-# Root glossary (Sa→Ru) — `v`
+# Root glossary (Sa→Ru) — `V`
 
 177 entries.
 

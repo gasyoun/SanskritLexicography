@@ -1,6 +1,148 @@
-# Surface glossary — SLP1 `j`
+# Surface glossary — SLP1 `J`
 
-3970 forms. Format: `form` (sa) — total n → ru (n) · registers.
+3999 forms. Format: `form` (sa) — total n → ru (n) · registers.
+
+### `JAmbuka` — Jāmbuka  (n=1)
+
+- Джамбука  · n=1  · vajs-up
+
+### `JaNkAra` — jhaṅkāra  (n=1)
+
+- позваниванием  · n=1  · shatakatrayam-serebryakov
+
+### `JaNkAranUpuraparAjitarAjahaMsya` — jhaṅkāranūpuraparājitarājahaṃsya  (n=1)
+
+- чаруют сильнее гусиного клёкота  · n=1  · shatakatrayam
+
+### `JaRaJaRIBUtam` — jhaṇajhaṇībhūtam  (n=1)
+
+- звенящим шелестом  · n=1  · mahabharata-bhishmaparva
+
+### `Jagiti` — jhagiti  (n=1)
+
+- появляются  · n=1  · gitarthasamgraha-abhinavagupta
+
+### `JallAH` — jhallāḥ  (n=1)
+
+- фехтовальщики  · n=1  · mahabharata-ashvamedhikaparva
+
+### `JallI` — jhallī  (n=1)
+
+- Джхаллин  · n=1  · mahabharata-dronaparva
+
+### `Jalla` — jhalla  (n=3)
+
+- джхалла  · n=1  · manavadharmashastra
+- Фехтовальщики  · n=1  · manavadharmashastra
+- борцы  · n=1  · mahabharata-sabhaparva
+
+### `Jamadagni` — Jamadagni  (n=1)
+
+- Джамадагни  · n=1  · mahabharata-aranyakaparva
+
+### `JampA` — jhampā  (n=1)
+
+- бросайся  · n=1  · shukasaptati
+
+### `JarJarAH` — jharjharāḥ  (n=2)
+
+- джарджары  · n=1  · mahabharata-dronaparva
+- Джхарджара  · n=1  · mahabharata-dronaparva
+
+### `JarJarAnakagomuKAn` — jharjharānakagomukhān  (n=1)
+
+- джхарджхара, анака и гомукха  · n=1  · mahabharata-sauptikaparva
+
+### `JarJara` — jharjhara  (n=3)
+
+- малые  · n=1  · mahabharata-dronaparva
+- цимбалах  · n=1  · mahabharata-shalyaparva
+- джхарджхара  · n=1  · hatha-yoga-pradipika
+
+### `Jawiti` — jhaṭiti  (n=7)
+
+- в тот же миг  · n=1  · shatakatrayam
+- ждать не станем  · n=1  · shatakatrayam
+- вдруг  · n=1  · shatakatrayam
+- вмиг  · n=1  · shatakatrayam-serebryakov
+- Как только  · n=1  · shatakatrayam-serebryakov
+- внезапно  · n=1  · paramarthasara-abhinavagupta
+- то и дело  · n=1  · chaurapanchashika
+
+### `JazARAm` — jhaṣāṇām  (n=6)
+
+- Среди рыб  · n=1  · gitarthasamgraha-abhinavagupta
+- рыб  · n=1  · bhagavadgita-burba
+- сильных и бодрых  · n=1  · ramanuja_gitabhashya
+- средь подвижных  · n=1  · bhagavadgita-sementsov
+- среди рыб  · n=1  · bhagavadgita-sharma
+- из рыб  · n=1  · bhagavadgita-radha
+
+### `JazAkula` — jhaṣākula  (n=1)
+
+- кишащие исполинскими рыбами  · n=1  · mahabharata-aranyakaparva
+
+### `JazAkza` — jhaṣākṣa  (n=1)
+
+- Джхашакша  · n=1  · mahabharata-shalyaparva
+
+### `JazAlaya` — jhaṣālaya  (n=2)
+
+- где обитают рыбы  · n=1  · mahabharata-adiparva
+- обиталище рыб  · n=1  · mahabharata-adiparva
+
+### `JazAlayaH` — jhaṣālayaḥ  (n=2)
+
+- обиталище рыб  · n=1  · mahabharata-adiparva
+- обитель рыб  · n=1  · mahabharata-adiparva
+
+### `JazAyuta` — jhaṣāyuta  (n=1)
+
+- полный морских чудищ  · n=1  · mahabharata-karnaparva
+
+### `Jaza` — jhaṣa  (n=21)
+
+- рыб  · n=5  · mahabharata-adiparva, bhagavadgita-prabhupada, bhagavadgita-smirnov
+- рыбы  · n=4  · mahabharata-adiparva, ramayana-sundarakanda, mahabharata-dronaparva, mahabharata-udyogaparva
+- рыба  · n=3  · mahabharata-dronaparva, mahabharata-udyogaparva, bhagavadgita-1914
+- рыбин  · n=2  · mahabharata-bhishmaparva, bhagavadgita-erman
+- рыбина  · n=2  · mahabharata-bhishmaparva, bhagavadgita-erman
+- рыбами  · n=2  · bhagavadgity, bhagavadgita-1788
+- крокодилы  · n=1  · ramayana-ayodhyakanda
+- рыба поменьше  · n=1  · mahabharata-udyogaparva
+- рыбъ  · n=1  · bhagavadgita-1909
+
+### `JazaHkrudDaiva` — jhaṣaḥ kruddha iva  (n=1)
+
+- словно разъяренная рыба  · n=1  · mahabharata-dronaparva
+
+### `Jazavat` — jhaṣavat  (n=1)
+
+- как рыба  · n=1  · ramayana-aranyakanda
+
+### `JiRwAni` — jhiṇṭāni  (n=1)
+
+- ветки  · n=1  · shukasaptati
+
+### `JiRwahastaH` — jhiṇṭahastaḥ  (n=1)
+
+- с прутьями в руках  · n=1  · shukasaptati
+
+### `JillI` — jhillī  (n=2)
+
+- Джхиллин  · n=2  · mahabharata-adiparva
+
+### `JillikA` — jhillikā  (n=1)
+
+- сверчков  · n=1  · ramayana-aranyakanda
+
+### `JillikAgaRanAditam` — jhillikāgaṇanāditam  (n=1)
+
+- оглашаемой звоном множества цикад  · n=1  · mahabharata-aranyakaparva
+
+### `JillikAgaRasaMyuta` — jhillikāgaṇasaṃyuta  (n=1)
+
+- где повсюду трещат сверчки  · n=1  · ramayana-balakanda
 
 ### `jA` — jā  (n=30)
 

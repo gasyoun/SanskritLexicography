@@ -11,7 +11,9 @@ kept (a `kinds` field records the split so downstream can filter).
 
 Outputs (in ../glossary/):
   surface_glossary.jsonl   nested: one record per form, translations[] sorted by n desc
+                           (140 MB > GitHub's 100 MB limit -> not committed; see split below)
   surface_glossary.tsv     flat:   one row per (form, ru) pair — queryable master
+  surface/<X>.jsonl        the JSONL split per initial SLP1 letter (max ~17 MB, committable)
   md/surface/<X>.md        human-readable, one file per initial SLP1 letter
 
 Per (form, ru) we keep a work-count map and a capped sample of `work:passage` sources
@@ -26,7 +28,11 @@ sys.stderr.reconfigure(encoding='utf-8')
 HERE = os.path.dirname(os.path.abspath(__file__))
 OUT_DIR = os.path.normpath(os.path.join(HERE, '..', 'glossary'))
 MD_DIR = os.path.join(OUT_DIR, 'md', 'surface')
+# per-initial-letter JSONL split: the whole surface_glossary.jsonl is 140 MB (> GitHub's
+# 100 MB file limit); the per-letter parts (max ~17 MB) are the committable raw form.
+JSONL_DIR = os.path.join(OUT_DIR, 'surface')
 os.makedirs(MD_DIR, exist_ok=True)
+os.makedirs(JSONL_DIR, exist_ok=True)
 
 SRC_CAP = 25                      # sample sources kept per (form, ru)
 _reg = re.compile(r'^\d+_')
@@ -34,11 +40,14 @@ def register(work):
     return _reg.sub('', work or '')
 
 def letter_bucket(slp1):
-    """First SLP1 char, folded to a filesystem-safe bucket name."""
+    """First SLP1 char as a filesystem-safe bucket name. Case-FOLDED to upper: SLP1 is
+    case-significant (a≠A, s≠S) but Windows' filesystem is case-insensitive, so distinct
+    files 'a'/'A' collide and truncate each other — fold them into one shard (a+A -> 'A').
+    The phonemic distinction is preserved in the data's `slp1` field, not the shard name."""
     if not slp1:
         return '_'
     ch = slp1[0]
-    return ch if re.match(r'[A-Za-z]', ch) else '_other'
+    return ch.upper() if re.match(r'[A-Za-z]', ch) else '_other'
 
 def main():
     corpus = sys.argv[1] if len(sys.argv) > 1 else os.path.join(HERE, 'corpus_lexicon.jsonl')
@@ -114,7 +123,7 @@ def main():
             buckets[letter_bucket(slp1)].append((slp1, rec))
     print(f'[A] wrote {jpath} and {tpath}', file=sys.stderr)
 
-    # ---- per-letter Markdown ----
+    # ---- per-letter Markdown + per-letter JSONL split ----
     for letter, items in sorted(buckets.items()):
         mp = os.path.join(MD_DIR, f'{letter}.md')
         with open(mp, 'w', encoding='utf-8', newline='\n') as mf:
@@ -127,7 +136,12 @@ def main():
                     regs = ', '.join(register(w) for w in t['works'])
                     mf.write(f"- {t['ru']}  · n={t['n']}  · {regs}\n")
                 mf.write('\n')
+        jp = os.path.join(JSONL_DIR, f'{letter}.jsonl')
+        with open(jp, 'w', encoding='utf-8', newline='\n') as jlf:
+            for _slp1, rec in items:
+                jlf.write(json.dumps(rec, ensure_ascii=False) + '\n')
     print(f'[A] wrote {len(buckets)} Markdown letter files -> {MD_DIR}', file=sys.stderr)
+    print(f'[A] wrote {len(buckets)} JSONL letter parts -> {JSONL_DIR}', file=sys.stderr)
 
 if __name__ == '__main__':
     main()

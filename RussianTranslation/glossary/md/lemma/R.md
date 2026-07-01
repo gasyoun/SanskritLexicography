@@ -1,6 +1,11 @@
-# Lemma glossary (Sa→Ru) — `r`
+# Lemma glossary (Sa→Ru) — `R`
 
-853 entries.
+854 entries.
+
+### `Rya`  (n=3, 1 forms)  ·  NOUN
+
+- Нья  · n=2
+- нья  · n=1
 
 ### `r`  (n=3, 1 forms)  ·  NOUN
 

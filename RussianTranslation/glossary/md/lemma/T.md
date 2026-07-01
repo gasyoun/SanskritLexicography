@@ -1,6 +1,10 @@
-# Lemma glossary (Sa→Ru) — `t`
+# Lemma glossary (Sa→Ru) — `T`
 
-1157 entries.
+1158 entries.
+
+### `Ta`  (n=4, 1 forms)  ·  NOUN
+
+- тха  · n=4
 
 ### `t`  (n=3, 2 forms)  ·  NOUN
 

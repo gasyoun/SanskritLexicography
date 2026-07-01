@@ -1,6 +1,2407 @@
-# Surface glossary — SLP1 `k`
+# Surface glossary — SLP1 `K`
 
-10582 forms. Format: `form` (sa) — total n → ru (n) · registers.
+11047 forms. Format: `form` (sa) — total n → ru (n) · registers.
+
+### `KAMjya` — khāṃjya  (n=1)
+
+- хромота  · n=1  · sankhya-karika
+
+### `KARqa` — khāṇḍa  (n=1)
+
+- Кхандаве  · n=1  · mahabharata-adiparva
+
+### `KARqavAlayAH` — khāṇḍavālayāḥ  (n=2)
+
+- обитатели Кхандавы  · n=1  · mahabharata-adiparva
+- имевшие жительство в Кхандаве  · n=1  · mahabharata-adiparva
+
+### `KARqavAlayAn` — khāṇḍavālayān  (n=1)
+
+- обитавшие в Кхандаве  · n=1  · mahabharata-adiparva
+
+### `KARqavAyana` — khāṇḍavāyana  (n=2)
+
+- кхандаваяны  · n=2  · mahabharata-aranyakaparva
+
+### `KARqava` — khāṇḍava  (n=25)
+
+- Кхандава  · n=10  · mahabharata-adiparva, mahabharata-karnaparva, mahabharata-dronaparva, mahabharata-udyogaparva, mahabharata-virataparva, mahabharata-mahaprasthanikaparva
+- Кхандаве  · n=4  · mahabharata-adiparva
+- лес Кхандаву  · n=4  · mahabharata-adiparva, mahabharata-shalyaparva, mahabharata-virataparva
+- Кхандаву  · n=3  · mahabharata-adiparva, mahabharata-virataparva
+- Кхандавы  · n=1  · mahabharata-adiparva
+- в лесу Кхандава  · n=1  · mahabharata-adiparva
+- сластей  · n=1  · ramayana-balakanda
+- леса Кхандава  · n=1  · mahabharata-mahaprasthanikaparva
+
+### `KARqavaM` — khāṇḍavaṃ  (n=2)
+
+- леса Кхандава  · n=2  · mahabharata-udyogaparva
+
+### `KARqavadAhAKya` — khāṇḍavadāhākhya  (n=1)
+
+- сожжение Кхандавы  · n=1  · mahabharata-adiparva
+
+### `KARqavadAhAKyam` — khāṇḍavadāhākhyam  (n=1)
+
+- сожжение Кхандавы  · n=1  · mahabharata-adiparva
+
+### `KARqavadAha` — khāṇḍavadāha  (n=2)
+
+- Сожжение леса Кхандавы  · n=1  · mahabharata-adiparva
+- сожжение Кхандавы  · n=1  · mahabharata-adiparva
+
+### `KARqavam` — khāṇḍavam  (n=2)
+
+- в Кхандаве  · n=1  · mahabharata-adiparva
+- Кхандаву  · n=1  · mahabharata-adiparva
+
+### `KARqavaprasTa` — khāṇḍavaprastha  (n=9)
+
+- Кхандавапрастху  · n=3  · mahabharata-adiparva
+- Кхандавапрастха  · n=2  · mahabharata-udyogaparva, mahabharata-virataparva
+- Кхандавапрастхе  · n=2  · mahabharata-sabhaparva, mahabharata-virataparva
+- Кхандавапрастхи  · n=1  · mahabharata-sabhaparva
+- Индрапрастху  · n=1  · mahabharata-sabhaparva
+
+### `KARqavaprasTagatAH` — khāṇḍavaprasthagatāḥ  (n=2)
+
+- удалились в Кхандавапрастху  · n=1  · mahabharata-aranyakaparva
+- в Кхандавапрастху  · n=1  · mahabharata-aranyakaparva
+
+### `KARqavaprasTam` — khāṇḍavaprastham  (n=2)
+
+- Кхандавапрастху  · n=1  · mahabharata-adiparva
+- в Кхандавапрастху  · n=1  · mahabharata-adiparva
+
+### `KARqavaprasTavAsinaH` — khāṇḍavaprasthavāsinaḥ  (n=1)
+
+- обитателями Кхандавапрастхи  · n=1  · mahabharata-adiparva
+
+### `KARqavaprasTe` — khāṇḍavaprasthe  (n=3)
+
+- в Кхандавапрастхе  · n=2  · mahabharata-udyogaparva, mahabharata-sabhaparva
+- Кхандавапрастха  · n=1  · mahabharata-sabhaparva
+
+### `KARqavasya` — khāṇḍavasya  (n=2)
+
+- Кхандавы  · n=2  · mahabharata-adiparva
+
+### `KARqavasyasamIpataH` — khāṇḍavasya samīpataḥ  (n=1)
+
+- вблизи Кхандавы  · n=1  · mahabharata-adiparva
+
+### `KARqave` — khāṇḍave  (n=26)
+
+- в Кхандаве  · n=5  · mahabharata-aranyakaparva, mahabharata-bhishmaparva, mahabharata-adiparva
+- в (лесу) Кхандава  · n=5  · mahabharata-karnaparva, mahabharata-aranyakaparva
+- в лесу Кхандава  · n=4  · mahabharata-adiparva, mahabharata-dronaparva, mahabharata-udyogaparva, mahabharata-virataparva
+- Кхандава  · n=3  · mahabharata-aranyakaparva, mahabharata-shalyaparva
+- в (лесу) Кхандаве  · n=1  · mahabharata-adiparva
+- в Кхандава  · n=1  · mahabharata-aranyakaparva
+- Кхандаве  · n=1  · mahabharata-adiparva
+- лес Кхандава  · n=1  · mahabharata-adiparva
+- В лесу Кхандава  · n=1  · mahabharata-dronaparva
+- леса Кхандава  · n=1  · mahabharata-dronaparva
+- при сожжении леса Кхандава  · n=1  · mahabharata-udyogaparva
+- на лес Кхандаву  · n=1  · mahabharata-shalyaparva
+- в лесу Кхандаве  · n=1  · mahabharata-virataparva
+
+### `KAd` — khād  (n=6)
+
+- съешь  · n=1  · mahabharata-adiparva
+- ешь  · n=1  · mahabharata-adiparva
+- Съеште  · n=1  · ramayana-sundarakanda
+- ешьте  · n=1  · ramayana-sundarakanda
+- съешьте  · n=1  · ramayana-sundarakanda
+- пожирающий  · n=1  · mahabharata-sauptikaparva
+
+### `KAdAma` — khādāma  (n=1)
+
+- съедим  · n=1  · mahabharata-aranyakaparva
+
+### `KAdAmi` — khādāmi  (n=1)
+
+- сожри  · n=1  · atharvaveda
+
+### `KAda` — khāda  (n=2)
+
+- кольцо  · n=2  · rigveda
+
+### `KAdaNgAravarza` — khādaṅgāravarṣa  (n=1)
+
+- Обрушил углей великий ливень  · n=1  · buddhacharita
+
+### `KAdaTa` — khādatha  (n=1)
+
+- вы вырываете  · n=1  · rigveda
+
+### `KAdaka` — khādaka  (n=1)
+
+- вкушающий  · n=1  · manavadharmashastra
+
+### `KAdan` — khādan  (n=4)
+
+- ест  · n=1  · manavadharmashastra
+- Глодая  · n=1  · shatakatrayam
+- жрет  · n=1  · shatakatrayam
+- грызет  · n=1  · shatakatrayam-serebryakov
+
+### `KAdana` — khādana  (n=2)
+
+- корма  · n=1  · ramayana-ayodhyakanda
+- корм  · n=1  · ramayana-ayodhyakanda
+
+### `KAdanam` — khādanam  (n=1)
+
+- корм  · n=1  · ramayana-ayodhyakanda
+
+### `KAdanta` — khādanta  (n=2)
+
+- пожрут  · n=1  · mahabharata-aranyakaparva
+- жуя  · n=1  · atharvaveda
+
+### `KAdantaH` — khādantaḥ  (n=1)
+
+- вкушают  · n=1  · mahabharata-karnaparva
+
+### `KAdantam` — khādantam  (n=1)
+
+- евшего  · n=1  · ch-up
+
+### `KAdante` — khādante  (n=1)
+
+- пожирают  · n=1  · mahabharata-karnaparva
+
+### `KAdanti` — khādanti  (n=4)
+
+- едят  · n=3  · mahabharata-karnaparva, mahabharata-aranyakaparva
+- загрызают  · n=1  · atharvaveda
+
+### `KAdantyaH` — khādantyaḥ  (n=1)
+
+- лакомясь  · n=1  · mahabharata-adiparva
+
+### `KAdat` — khādat  (n=2)
+
+- вкушающий  · n=1  · manavadharmashastra
+- съедены  · n=1  · mahabharata-adiparva
+
+### `KAdatAM` — khādatāṃ  (n=1)
+
+- царапая  · n=1  · mahabharata-aranyakaparva
+
+### `KAdata` — khādata  (n=2)
+
+- съешьте  · n=2  · ramayana-sundarakanda
+
+### `KAdataH` — khādataḥ  (n=3)
+
+- пожирают  · n=2  · atharvaveda
+- когда он ест  · n=1  · mahabharata-sabhaparva
+
+### `KAdati` — khādati  (n=2)
+
+- грызет  · n=2  · rigveda
+
+### `KAdato` — khādato  (n=1)
+
+- поешь  · n=1  · ramayana-aranyakanda
+
+### `KAdayaH` — khādayaḥ  (n=1)
+
+- браслеты  · n=1  · rigveda
+
+### `KAdayanti` — khādayanti  (n=1)
+
+- скармливают  · n=1  · manavadharmashastra
+
+### `KAdayet` — khādayet  (n=1)
+
+- затравить  · n=1  · manavadharmashastra
+
+### `KAde` — khāde  (n=1)
+
+- ешь  · n=1  · mahabharata-adiparva
+
+### `KAdet` — khādet  (n=1)
+
+- ест  · n=1  · manavadharmashastra
+
+### `KAdeyaM` — khādeyaṃ  (n=1)
+
+- буду есть  · n=1  · ramayana-sundarakanda
+
+### `KAdeyam` — khādeyam  (n=1)
+
+- съесть  · n=1  · ramayana-sundarakanda
+
+### `KAdi` — khādi  (n=2)
+
+- кольца  · n=1  · rigveda
+- Кольца  · n=1  · rigveda
+
+### `KAdiH` — khādiḥ  (n=2)
+
+- пряжка  · n=2  · rigveda
+
+### `KAdihastaM` — khādihastaṃ  (n=1)
+
+- с кольцами на руках  · n=1  · rigveda
+
+### `KAdin` — khādin  (n=3)
+
+- носители колец  · n=2  · rigveda
+- браслет  · n=1  · rigveda
+
+### `KAdira` — khādira  (n=7)
+
+- кхадира  · n=2  · manavadharmashastra, mahabharata-ashvamedhikaparva
+- кхадиры  · n=2  · mahabharata-aranyakaparva, mahabharata-ashvamedhikaparva
+- из кхадиры  · n=1  · ramayana-ayodhyakanda
+- из дерева кхадира  · n=1  · manavadharmashastra
+- из дерева кхадиры  · n=1  · ramayana-balakanda
+
+### `KAditaiH` — khāditaiḥ  (n=1)
+
+- съедены  · n=1  · mahabharata-adiparva
+
+### `KAdituM` — khādituṃ  (n=1)
+
+- поедать  · n=1  · mahabharata-adiparva
+
+### `KAditum` — khāditum  (n=1)
+
+- есть  · n=1  · ramayana-ayodhyakanda
+
+### `KAditvA` — khāditvā  (n=2)
+
+- поев  · n=2  · ch-up
+
+### `KAdizu` — khādiṣu  (n=3)
+
+- украшенных кольцами  · n=1  · rigveda
+- украшенных кольцами (бойцов)  · n=1  · rigveda
+- Кольцами  · n=1  · rigveda
+
+### `KAdoarRA` — khādoarṇā  (n=2)
+
+- смывают берега  · n=2  · rigveda
+
+### `KAlatya` — khālatya  (n=1)
+
+- облысение  · n=1  · atharvaveda
+
+### `KAm` — khām  (n=2)
+
+- небо  · n=1  · ramayana-ayodhyakanda
+- источник  · n=1  · rigveda
+
+### `KAnayAmAsa` — khānayāmāsa  (n=1)
+
+- повелел раскопать  · n=1  · mahabharata-ashvamedhikaparva
+
+### `KAnayAmAsuH` — khānayāmāsuḥ  (n=1)
+
+- выкапывали  · n=1  · ramayana-ayodhyakanda
+
+### `KAnayet` — khānayet  (n=1)
+
+- Пусть позаботится, чтобы вырыли  · n=1  · kama-sutra
+
+### `KAni` — khāni  (n=13)
+
+- отверстия  · n=4  · rigveda, rigveda, atharvaveda, kat-up
+- впадины  · n=3  · manavadharmashastra
+- русла  · n=2  · rigveda, rigveda
+- отверстия (в теле)  · n=1  · mahabharata-adiparva
+- впадины на теле  · n=1  · manavadharmashastra
+- Пустые пространства  · n=1  · buddhacharita
+- отверстий  · n=1  · atharvaveda
+
+### `KAnita` — khānita  (n=1)
+
+- вырыли  · n=1  · ramayana-balakanda
+
+### `KAnya` — khānya  (n=1)
+
+- впадины тела  · n=1  · manavadharmashastra
+
+### `KArya` — khārya  (n=2)
+
+- ведер  · n=2  · rigveda
+
+### `KAt` — khāt  (n=2)
+
+- С небес  · n=1  · buddhacharita
+- с небес  · n=1  · mahabharata-karnaparva
+
+### `KAta` — khāta  (n=4)
+
+- зарытые  · n=2  · rigveda
+- проложенному  · n=1  · ramayana-balakanda
+- закопано  · n=1  · atharvaveda
+
+### `KIlAH` — khīlāḥ  (n=1)
+
+- колышков  · n=1  · atharvaveda
+
+### `Ka` — kha  (n=88)
+
+- пространство  · n=11  · mahabharata-bhishmaparva, mai-up, ramanuja_gitabhashya, bhagavadgita-erman, bhagavadgita-sementsov, bhagavadgita-sharma, shv-up, mnar-up, pr-up
+- небо  · n=10  · mahabharata-dronaparva, mahabharata-adiparva, ramayana-sundarakanda, ramayana-ayodhyakanda, mahabharata-aranyakaparva
+- эфир  · n=8  · bhagavadgita-prabhupada, mahabharata-aranyakaparva, mahabharata-udyogaparva, bhagavadgita-burba, bhagavadgita-1914, bhagavadgita-smirnov, bhagavadgita-radha
+- небосвод  · n=7  · mahabharata-dronaparva, mahabharata-aranyakaparva, mahabharata-shalyaparva
+- воздух  · n=4  · mahabharata-dronaparva, mahabharata-adiparva, manavadharmashastra
+- небу  · n=3  · ramayana-ayodhyakanda, ramayana-sundarakanda
+- неба  · n=3  · ramayana-aranyakanda, mahabharata-bhishmaparva, mahabharata-udyogaparva
+- поднебесье  · n=3  · mahabharata-aranyakaparva, mahabharata-ashvamedhikaparva
+- небес  · n=3  · mahabharata-aranyakaparva, mahabharata-dronaparva
+- небеса  · n=3  · mahabharata-karnaparva, mahabharata-bhishmaparva
+- эфире  · n=3  · gitarthasamgraha-abhinavagupta, bhagavadgita-sementsov
+- небе  · n=2  · ramayana-aranyakanda, ramayana-balakanda
+- воздухе  · n=2  · mahabharata-adiparva, mahabharata-ashvamedhikaparva
+- первоэлементов  · n=2  · mahabharata-bhishmaparva, bhagavadgita-erman
+- с неба  · n=2  · mahabharata-dronaparva, buddhacharita
+- канал  · n=2  · rigveda
+- внутри  · n=2  · mai-up
+- птица  · n=1  · mahabharata-adiparva
+- птиц  · n=1  · mahabharata-adiparva
+- Небо  · n=1  · mahabharata-aranyakaparva
+- воздуху  · n=1  · mahabharata-adiparva
+- в небе  · n=1  · mahabharata-adiparva
+- воздушным пространством  · n=1  · mahabharata-bhishmaparva
+- небесное пространство  · n=1  · mahabharata-dronaparva
+- воздушное пространство  · n=1  · mahabharata-dronaparva
+- в небо  · n=1  · mahabharata-dronaparva
+- Воздушное пространство  · n=1  · mahabharata-dronaparva
+- небесах  · n=1  · buddhacharita
+- Еѳиръ (Канъ)  · n=1  · bhagavadgita-1788
+- пространстве  · n=1  · bhagavadgita-sharma
+- пространством  · n=1  · ch-up
+- ветра  · n=1  · kumarasambhava
+- отверстие  · n=1  · br-up
+- Пустота  · n=1  · hatha-yoga-pradipika
+- пространства  · n=1  · shv-up
+
+### `KaM` — khaṃ  (n=5)
+
+- пространство  · n=2  · ch-up
+- небо  · n=2  · mahabharata-karnaparva, megha-duta
+- пространстве  · n=1  · ch-up
+
+### `KaMtamovftamAsIcca` — khaṃ tamovṛtamāsīcca  (n=1)
+
+- небо окуталось тьмою  · n=1  · mahabharata-bhishmaparva
+
+### `KaNgalohAmiza` — khaṅgalohāmiṣa  (n=1)
+
+- мясо носорога и рыжего козла  · n=1  · manavadharmashastra
+
+### `KaRqABraka` — khaṇḍābhraka  (n=1)
+
+- разорванное облако  · n=1  · kama-sutra
+
+### `KaRqa` — khaṇḍa  (n=12)
+
+- брешь  · n=2  · mahabharata-dronaparva
+- распадется  · n=1  · ramayana-ayodhyakanda
+- пруды  · n=1  · ramayana-aranyakanda
+- из  · n=1  · ramayana-aranyakanda
+- разорванный  · n=1  · kama-sutra
+- Кханда  · n=1  · hatha-yoga-pradipika
+- коричневый сахар  · n=1  · hatha-yoga-pradipika
+- сахаром  · n=1  · shukasaptati
+- корова с поломанными рогами  · n=1  · vedartha-samgraha_ramanuja
+- уголокъ  · n=1  · megha-duta
+- пиленый сахар  · n=1  · paramarthasara-abhinavagupta
+
+### `KaRqaKAdyakam` — khaṇḍakhādyakam  (n=1)
+
+- сладости  · n=1  · kama-sutra
+
+### `KaRqaKaRqA` — khaṇḍakhaṇḍā  (n=1)
+
+- Кхандакханда  · n=1  · mahabharata-shalyaparva
+
+### `KaRqaSaH` — khaṇḍaśaḥ  (n=5)
+
+- на кусочки  · n=2  · ramayana-sundarakanda, kama-sutra
+- на части  · n=2  · mahabharata-aranyakaparva
+- по частям  · n=1  · kama-sutra
+
+### `KaRqamate` — khaṇḍamate  (n=2)
+
+- Амароли  · n=1  · hatha-yoga-pradipika
+- череп  · n=1  · hatha-yoga-pradipika
+
+### `KaRqanA` — khaṇḍanā  (n=1)
+
+- уклонение  · n=1  · gitarthasamgraha-abhinavagupta
+
+### `KaRqana` — khaṇḍana  (n=2)
+
+- частей  · n=1  · gitarthasamgraha-abhinavagupta
+- отрицающее  · n=1  · gitarthasamgraha-abhinavagupta
+
+### `KaRqane` — khaṇḍane  (n=1)
+
+- уничтожают  · n=1  · gitagovinda
+
+### `KaRqaparaSu` — khaṇḍaparaśu  (n=3)
+
+- лишенный боевой секиры  · n=1  · mahabharata-dronaparva
+- лишен боевой секиры  · n=1  · mahabharata-dronaparva
+- Кхандапарашу  · n=1  · sub-up
+
+### `KaRqava` — khaṇḍava  (n=2)
+
+- Кхандаве  · n=1  · mahabharata-karnaparva
+- Кхандава  · n=1  · mahabharata-ashramavasikaparva
+
+### `KaRqayanta` — khaṇḍayanta  (n=1)
+
+- отвергают  · n=1  · gitarthasamgraha-abhinavagupta
+
+### `KaRqayitum` — khaṇḍayitum  (n=2)
+
+- разрушить  · n=1  · ramayana-aranyakanda
+- разрушим  · n=1  · ramayana-aranyakanda
+
+### `KaRqayitvA` — khaṇḍayitvā  (n=1)
+
+- преодолеть  · n=1  · hatha-yoga-pradipika
+
+### `KaRqitA` — khaṇḍitā  (n=1)
+
+- оскорбленной неверным возлюбленным  · n=1  · gitagovinda
+
+### `KaRqitAnAm` — khaṇḍitānām  (n=1)
+
+- разгнѣваннымъ  · n=1  · megha-duta
+
+### `KaRqitAvarRana` — khaṇḍitāvarṇana  (n=1)
+
+- описании  · n=1  · gitagovinda
+
+### `KaRqita` — khaṇḍita  (n=4)
+
+- разрушать  · n=1  · gitarthasamgraha-abhinavagupta
+- испытавшей неверность  · n=1  · gitagovinda
+- неверность  · n=1  · gitagovinda
+- разоряли  · n=1  · shukasaptati
+
+### `KaRqite` — khaṇḍite  (n=2)
+
+- обеднел  · n=1  · shatakatrayam
+- растрачиваются  · n=1  · shatakatrayam-serebryakov
+
+### `KaRqiteva` — khaṇḍiteva  (n=1)
+
+- ревнивая  · n=1  · raghuvamsha
+
+### `KaRqyamAne` — khaṇḍyamāne  (n=1)
+
+- искусанные  · n=1  · chaurapanchashika
+
+### `KaRvaKA` — khaṇvakhā  (n=2)
+
+- кханвакха  · n=2  · atharvaveda
+
+### `KaSA` — khaśā  (n=1)
+
+- кхаши  · n=1  · mahabharata-sabhaparva
+
+### `KaSAH` — khaśāḥ  (n=1)
+
+- кхаши  · n=1  · mahabharata-dronaparva
+
+### `KaSa` — khaśa  (n=3)
+
+- Кхаши  · n=2  · mahabharata-udyogaparva, mahabharata-sabhaparva
+- кхашей  · n=1  · mahabharata-karnaparva
+
+### `KaSaiH` — khaśaiḥ  (n=1)
+
+- кхаши  · n=1  · mahabharata-dronaparva
+
+### `KaSarIrin` — khaśarīrin  (n=1)
+
+- имеющего тело из эфира  · n=1  · manavadharmashastra
+
+### `KaSayA` — khaśayā  (n=1)
+
+- Кхасая  · n=1  · mahabharata-shalyaparva
+
+### `KaYja` — khañja  (n=4)
+
+- хромой  · n=2  · shatakatrayam, shukasaptati
+- Хромого  · n=1  · manavadharmashastra
+- хромым  · n=1  · manavadharmashastra
+
+### `KaYjaH` — khañjaḥ  (n=1)
+
+- хромой  · n=1  · shatakatrayam-serebryakov
+
+### `KaYjana` — khañjana  (n=2)
+
+- трясогузок  · n=2  · gitagovinda
+
+### `KaYjarIwaka` — khañjarīṭaka  (n=1)
+
+- трясогузка  · n=1  · manavadharmashastra
+
+### `KacarAH` — khacarāḥ  (n=1)
+
+- Небожители  · n=1  · mahabharata-aranyakaparva
+
+### `KacarAn` — khacarān  (n=1)
+
+- несущихся по небу  · n=1  · mahabharata-dronaparva
+
+### `Kacara` — khacara  (n=4)
+
+- передвигаться по небу  · n=1  · mahabharata-aranyakaparva
+- плывущему по воздуху  · n=1  · mahabharata-aranyakaparva
+- проносящиеся по небу  · n=1  · mahabharata-dronaparva
+- несущихся по небу  · n=1  · mahabharata-dronaparva
+
+### `KacaraH` — khacaraḥ  (n=2)
+
+- парит  · n=1  · mahabharata-bhishmaparva
+- птица  · n=1  · mai-up
+
+### `KacaraiH` — khacaraiḥ  (n=1)
+
+- стрелами  · n=1  · mahabharata-aranyakaparva
+
+### `Kacaranagarakalpam` — khacaranagarakalpam  (n=1)
+
+- напоминающей город, движущийся по небу  · n=1  · mahabharata-dronaparva
+
+### `Kacarau` — khacarau  (n=2)
+
+- небесных странника  · n=1  · mahabharata-udyogaparva
+- птиц  · n=1  · mahabharata-udyogaparva
+
+### `Kacita` — khacita  (n=1)
+
+- украшенного  · n=1  · shukasaptati
+
+### `KadIra` — khadīra  (n=1)
+
+- Кхадира  · n=1  · ramayana-balakanda
+
+### `KadirAt` — khadirāt  (n=1)
+
+- кхадира  · n=1  · atharvaveda
+
+### `Kadira` — khadira  (n=17)
+
+- кхадира  · n=10  · atharvaveda, atharvaveda, mahabharata-aranyakaparva, kama-sutra, nyaya-bhashya, atharvaveda
+- Кхадира  · n=4  · ramayana-aranyakanda, mahabharata-adiparva, rigveda, atharvaveda
+- кхадиры  · n=2  · kama-sutra, atharvaveda
+- И окруженные  · n=1  · ramayana-aranyakanda
+
+### `KadiraH` — khadiraḥ  (n=1)
+
+- кхадира  · n=1  · atharvaveda
+
+### `Kadirasya` — khadirasya  (n=2)
+
+- кхадира  · n=2  · rigveda
+
+### `KadyotAnAm` — khadyotānām  (n=2)
+
+- светляков  · n=1  · mahabharata-dronaparva
+- светлячков  · n=1  · mahabharata-karnaparva
+
+### `Kadyota` — khadyota  (n=9)
+
+- светлячками  · n=3  · mahabharata-dronaparva
+- светляками  · n=1  · ramayana-sundarakanda
+- светлячок  · n=1  · mahabharata-dronaparva
+- огоньки светлячков  · n=1  · mahabharata-ashvamedhikaparva
+- светлячкам  · n=1  · mahabharata-virataparva
+- свѣтлячковъ  · n=1  · megha-duta
+- светлячки  · n=1  · shv-up
+
+### `KadyotaH` — khadyotaḥ  (n=1)
+
+- светлячок  · n=1  · yoga-sutry_vyasa-bhashya
+
+### `KadyotaiH` — khadyotaiḥ  (n=1)
+
+- светлячками  · n=1  · mahabharata-virataparva
+
+### `Kadyotairiva` — khadyotairiva  (n=1)
+
+- светлячками  · n=1  · mahabharata-virataparva
+
+### `KadyotairvftA` — khadyotairvṛtā  (n=1)
+
+- усеянные светлячками  · n=1  · mahabharata-dronaparva
+
+### `KadyotamAtra` — khadyotamātra  (n=2)
+
+- величиной со светлячка  · n=2  · ch-up
+
+### `Kadyotana` — khadyotana  (n=1)
+
+- светлячков  · n=1  · ramayana-aranyakanda
+
+### `KadyotasaNGa` — khadyotasaṅgha  (n=2)
+
+- роями светлячков  · n=1  · mahabharata-shalyaparva
+- вспышкам огня  · n=1  · mahabharata-shalyaparva
+
+### `Kaeva` — kha eva  (n=1)
+
+- у самого небосвода  · n=1  · mahabharata-aranyakaparva
+
+### `KagADipa` — khagādhipa  (n=3)
+
+- пернатый владыка птиц  · n=1  · mahabharata-adiparva
+- царь птиц  · n=1  · mahabharata-adiparva
+- властелин птиц  · n=1  · mahabharata-aranyakaparva
+
+### `KagADipam` — khagādhipam  (n=1)
+
+- царя птиц  · n=1  · ramayana-balakanda
+
+### `KagAH` — khagāḥ  (n=2)
+
+- птицы  · n=2  · ramayana-aranyakanda, mahabharata-shalyaparva
+
+### `KagAnAM` — khagānāṃ  (n=1)
+
+- лебедей  · n=1  · raghuvamsha
+
+### `Kaga` — khaga  (n=31)
+
+- птицы  · n=6  · mahabharata-adiparva, buddhacharita, ramayana-sundarakanda
+- птица  · n=5  · mahabharata-adiparva
+- странник небес  · n=3  · mahabharata-udyogaparva
+- пернатый  · n=2  · mahabharata-adiparva
+- владыка птиц  · n=1  · mahabharata-adiparva
+- чайкой  · n=1  · manavadharmashastra
+- птиц  · n=1  · ramayana-aranyakanda
+- небесных странников  · n=1  · mahabharata-aranyakaparva
+- их  · n=1  · mahabharata-aranyakaparva
+- пернатые  · n=1  · mahabharata-aranyakaparva
+- летающий в поднебесье  · n=1  · mahabharata-aranyakaparva
+- движущийся по небу  · n=1  · mahabharata-aranyakaparva
+- птичьи  · n=1  · mahabharata-bhishmaparva
+- птицам  · n=1  · buddhacharita
+- Кхага  · n=1  · mahabharata-udyogaparva
+- летающий по небу  · n=1  · mahabharata-udyogaparva
+- странник неба  · n=1  · mahabharata-udyogaparva
+- летящие по воздуху  · n=1  · mahabharata-karnaparva
+- птице  · n=1  · hatha-yoga-pradipika
+
+### `KagaH` — khagaḥ  (n=1)
+
+- парщий в небе  · n=1  · mahabharata-dronaparva
+
+### `KagaSrezWa` — khagaśreṣṭha  (n=2)
+
+- лучшему из пернатых  · n=1  · mahabharata-adiparva
+- лучший из птиц  · n=1  · mahabharata-adiparva
+
+### `KagaSrezWam` — khagaśreṣṭham  (n=1)
+
+- лучшему из птиц  · n=1  · mahabharata-adiparva
+
+### `KagaiH` — khagaiḥ  (n=2)
+
+- птицами  · n=1  · mahabharata-adiparva
+- птицей  · n=1  · ramayana-aranyakanda
+
+### `Kagam` — khagam  (n=1)
+
+- птицу  · n=1  · mahabharata-adiparva
+
+### `KagamAH` — khagamāḥ  (n=1)
+
+- небожители  · n=1  · mahabharata-aranyakaparva
+
+### `KagamAn` — khagamān  (n=1)
+
+- пущенными  · n=1  · mahabharata-aranyakaparva
+
+### `Kagama` — khagama  (n=3)
+
+- Кхагама  · n=1  · mahabharata-adiparva
+- стрелами  · n=1  · mahabharata-adiparva
+- летящими  · n=1  · mahabharata-ashvamedhikaparva
+
+### `KagamaiH` — khagamaiḥ  (n=1)
+
+- летучими стрелами  · n=1  · mahabharata-adiparva
+
+### `KagamuKeritAn` — khagamukheritān  (n=1)
+
+- льющиеся из птичьих горл  · n=1  · mahabharata-aranyakaparva
+
+### `Kagapatra` — khagapatra  (n=1)
+
+- птичьими перьями  · n=1  · mahabharata-karnaparva
+
+### `KagarAw` — khagarāṭ  (n=2)
+
+- царь птиц  · n=2  · mahabharata-shalyaparva
+
+### `Kagasya` — khagasya  (n=1)
+
+- птицы  · n=1  · mahabharata-udyogaparva
+
+### `KagatAn` — khagatān  (n=1)
+
+- поднимавшиеся в воздух  · n=1  · mahabharata-adiparva
+
+### `KagatAnAm` — khagatānām  (n=1)
+
+- обитающих в небе  · n=1  · ramayana-sundarakanda
+
+### `Kagata` — khagata  (n=1)
+
+- летящие в воздухе  · n=1  · mahabharata-bhishmaparva
+
+### `Kagau` — khagau  (n=1)
+
+- птицы  · n=1  · mahabharata-adiparva
+
+### `Kagavadgate` — khagavadgate  (n=1)
+
+- подобно птице взмыл  · n=1  · buddhacharita
+
+### `Kagavat` — khagavat  (n=2)
+
+- птице подобно  · n=1  · shatakatrayam
+- подобно птице  · n=1  · shatakatrayam-serebryakov
+
+### `KageSvara` — khageśvara  (n=1)
+
+- владыка птиц  · n=1  · mahabharata-adiparva
+
+### `Kago` — khago  (n=1)
+
+- летящую по небу  · n=1  · ramayana-aranyakanda
+
+### `Kagottama` — khagottama  (n=8)
+
+- лучшая из птиц  · n=6  · mahabharata-adiparva, ramayana-aranyakanda
+- лучший среди птиц  · n=1  · mahabharata-adiparva
+- о лучшая из птиц  · n=1  · mahabharata-adiparva
+
+### `KagottamaH` — khagottamaḥ  (n=1)
+
+- лучший из птиц  · n=1  · mahabharata-adiparva
+
+### `KaimaKA` — khaimakhā  (n=2)
+
+- кхаймакха  · n=2  · atharvaveda
+
+### `Kairya` — khairya  (n=1)
+
+- мужество  · n=1  · ramayana-ayodhyakanda
+
+### `KaivalyaUpanizad` — Kaivalya Upaniṣad  (n=1)
+
+- Кайвалья-упанишада  · n=1  · nyaya-bhashya
+
+### `KajAgniyoga` — khajāgniyoga  (n=1)
+
+- огнем-мутовкой  · n=1  · mai-up
+
+### `KajAkA` — khajākā  (n=1)
+
+- стрелою-ложкой  · n=1  · mahabharata-karnaparva
+
+### `Kaja` — khaja  (n=1)
+
+- ковш  · n=1  · mahabharata-virataparva
+
+### `KajaNkaraH` — khajaṅkaraḥ  (n=1)
+
+- вызывая круговерть  · n=1  · rigveda
+
+### `Kajakft` — khajakṛt  (n=4)
+
+- вызывающий столкновения  · n=2  · rigveda
+- вызывающий пыл битвы  · n=1  · rigveda
+- создающий вихрь сражения  · n=1  · rigveda
+
+### `Kal` — khal  (n=1)
+
+- негодяй  · n=1  · shatakatrayam-serebryakov
+
+### `KalA` — khalā  (n=1)
+
+- пусть  · n=1  · amaru-shataka
+
+### `KalAn` — khalān  (n=3)
+
+- злодея  · n=1  · shatakatrayam
+- подлеца  · n=1  · shatakatrayam
+- глупцов  · n=1  · shatakatrayam-serebryakov
+
+### `KalAnAM` — khalānāṃ  (n=1)
+
+- негодяев  · n=1  · shatakatrayam-serebryakov
+
+### `KalAyAH` — khalāyāḥ  (n=1)
+
+- груди  · n=1  · amaru-shataka
+
+### `KalIna` — khalīna  (n=2)
+
+- узда  · n=1  · buddhacharita
+- уздечкой  · n=1  · buddhacharita
+
+### `KalInaiH` — khalīnaiḥ  (n=1)
+
+- удила  · n=1  · mahabharata-karnaparva
+
+### `Kala` — khala  (n=22)
+
+- негодяев  · n=2  · shatakatrayam
+- злодей  · n=2  · shatakatrayam-serebryakov
+- негодница  · n=2  · shatakatrayam-serebryakov
+- зернохранилища  · n=1  · manavadharmashastra
+- гумне  · n=1  · manavadharmashastra
+- выполнение обета  · n=1  · manavadharmashastra
+- низкими  · n=1  · kama-sutra
+- амбар  · n=1  · atharvaveda
+- негодяй  · n=1  · shatakatrayam
+- царя  · n=1  · shatakatrayam
+- негодяя  · n=1  · shatakatrayam
+- зле  · n=1  · shatakatrayam
+- насмешек  · n=1  · shatakatrayam
+- злодеями  · n=1  · shatakatrayam-serebryakov
+- со злодеями  · n=1  · shatakatrayam-serebryakov
+- глупцы  · n=1  · shatakatrayam-serebryakov
+- подлецом  · n=1  · shatakatrayam-serebryakov
+- коварный  · n=1  · gitagovinda
+- гумно  · n=1  · shukasaptati
+
+### `KalaH` — khalaḥ  (n=1)
+
+- гончар искусный  · n=1  · shatakatrayam
+
+### `Kalair` — khalair  (n=1)
+
+- низкими людьми  · n=1  · kama-sutra
+
+### `Kalaja` — khalaja  (n=1)
+
+- рожден в сарае  · n=1  · atharvaveda
+
+### `Kalakula` — khalakula  (n=2)
+
+- вика  · n=2  · br-up
+
+### `Kalaratam` — khalaratam  (n=3)
+
+- низменное наслаждение  · n=2  · kama-sutra
+- низменное  · n=1  · kama-sutra
+
+### `Kalavasau` — khalavasau  (n=1)
+
+- этот  · n=1  · nyaya-bhashya
+
+### `Kale` — khale  (n=1)
+
+- на гумне  · n=1  · rigveda
+
+### `Kali` — khali  (n=1)
+
+- жмых  · n=1  · shukasaptati
+
+### `KalopAsana` — khalopāsana  (n=2)
+
+- подлеца  · n=1  · shatakatrayam
+- общения с негодными людьми  · n=1  · shatakatrayam-serebryakov
+
+### `KalopahAram` — khalopahāram  (n=1)
+
+- выкуп  · n=1  · mahabharata-karnaparva
+
+### `Kalu` — khalu  (n=63)
+
+- же  · n=7  · mahabharata-adiparva, ramayana-ayodhyakanda, mahabharata-udyogaparva, ch-up, amaru-shataka, mai-up
+- поистине  · n=6  · ramayana-ayodhyakanda, ch-up, mahabharata-ashramavasikaparva, mai-up
+- ведь  · n=6  · ramayana-aranyakanda, mahabharata-udyogaparva, mahabharata-shalyaparva, mahabharata-ashvamedhikaparva, mahabharata-sabhaparva, amaru-shataka
+- именно  · n=6  · gitarthasamgraha-abhinavagupta, hatha-yoga-pradipika, mahabharata-karnaparva, shatakatrayam-serebryakov
+- воистину  · n=5  · ramayana-sundarakanda, ramayana-aranyakanda
+- действительно  · n=4  · raghuvamsha, ramayana-aranyakanda, mahabharata-dronaparva
+- Воистину  · n=3  · ramayana-sundarakanda, buddhacharita
+- лишь  · n=3  · ramayana-sundarakanda, kama-sutra, shatakatrayam
+- прошу  · n=2  · ramayana-ayodhyakanda
+- право же  · n=2  · mahabharata-dronaparva
+- на деле  · n=2  · nyaya-bhashya
+- Поистине  · n=1  · ramayana-ayodhyakanda
+- впрочем  · n=1  · ramayana-ayodhyakanda
+- Я  · n=1  · ramayana-ayodhyakanda
+- не гибнет  · n=1  · ramayana-ayodhyakanda
+- Почему  · n=1  · ramayana-aranyakanda
+- теперь  · n=1  · mahabharata-udyogaparva
+- точно  · n=1  · ch-up
+- днесь  · n=1  · kumarasambhava
+- поверь  · n=1  · kumarasambhava
+- так  · n=1  · nyaya-bhashya
+- безусловно  · n=1  · mahabharata-virataparva
+- пусть  · n=1  · mahabharata-virataparva
+- навеки  · n=1  · shatakatrayam
+- хоть  · n=1  · shatakatrayam-serebryakov
+- Ведь  · n=1  · shatakatrayam-serebryakov
+- в самом деле  · n=1  · vedartha-samgraha_ramanuja
+- вѣдь  · n=1  · megha-duta
+
+### `Kalv` — khalv  (n=15)
+
+- поистине  · n=4  · mai-up, ramayana-ayodhyakanda
+- же  · n=4  · mai-up, nyaya-bhashya
+- ведь  · n=3  · ch-up, ramayana-ayodhyakanda
+- Поистине  · n=2  · buddhacharita, mai-up
+- ли  · n=1  · mahabharata-aranyakaparva
+- Воистину  · n=1  · buddhacharita
+
+### `KalvAH` — khalvāḥ  (n=1)
+
+- кхалва  · n=1  · atharvaveda
+
+### `KalvAn` — khalvān  (n=2)
+
+- зерна кхалвы  · n=1  · atharvaveda
+- зерна кхалва  · n=1  · atharvaveda
+
+### `KalvAwo` — khalvāṭo  (n=2)
+
+- плешивец  · n=1  · shatakatrayam
+- Лысый  · n=1  · shatakatrayam-serebryakov
+
+### `Kalva` — khalva  (n=3)
+
+- горох  · n=2  · br-up
+- кхалва  · n=1  · atharvaveda
+
+### `KalvaTorDvaretas` — khalvathordhvaretas  (n=1)
+
+- целомудренные  · n=1  · mai-up
+
+### `Kalvala` — khalvala  (n=1)
+
+- беда  · n=1  · mahabharata-udyogaparva
+
+### `Kalvanyo'para` — khalvanyo'para  (n=1)
+
+- другой, отличный  · n=1  · mai-up
+
+### `Kalviha` — khalviha  (n=1)
+
+- в этом мире  · n=1  · mahabharata-aranyakaparva
+
+### `Kam` — kham  (n=52)
+
+- небо  · n=22  · ramayana-sundarakanda, mahabharata-dronaparva, mahabharata-karnaparva, mahabharata-virataparva, ramayana-ayodhyakanda, ramayana-aranyakanda, mahabharata-aranyakaparva, mahabharata-adiparva, mahabharata-udyogaparva, raghuvamsha
+- пространство  · n=5  · br-up, mahabharata-bhishmaparva, gitarthasamgraha-abhinavagupta, ch-up
+- в небо  · n=3  · ramayana-sundarakanda, mahabharata-bhishmaparva
+- небосвод  · n=2  · mahabharata-aranyakaparva
+- втулку  · n=2  · rigveda
+- эфир  · n=2  · bhagavadgity, vedartha-samgraha_ramanuja
+- Пространство  · n=2  · mun-up, kai-up
+- воздух  · n=1  · mahabharata-adiparva
+- по небу  · n=1  · ramayana-sundarakanda
+- в пещеру  · n=1  · ramayana-aranyakanda
+- пещера  · n=1  · ramayana-aranyakanda
+- небу  · n=1  · ramayana-aranyakanda
+- ввысь  · n=1  · mahabharata-aranyakaparva
+- небесный свод  · n=1  · mahabharata-dronaparva
+- воздушное пространство  · n=1  · mahabharata-dronaparva
+- в воздух  · n=1  · mahabharata-udyogaparva
+- колодец  · n=1  · rigveda
+- эфирѣ  · n=1  · bhagavadgita-1909
+- неба  · n=1  · amaru-shataka
+- лети  · n=1  · megha-duta
+- поднебесье  · n=1  · mahabharata-sauptikaparva
+
+### `KamUrtimAn` — khamūrtimān  (n=1)
+
+- превратившись в эфир  · n=1  · manavadharmashastra
+
+### `Kamaya` — khamaya  (n=1)
+
+- Пустота  · n=1  · hatha-yoga-pradipika
+
+### `KamulliKadBiH` — khamullikhadbhiḥ  (n=1)
+
+- скребут небосвод  · n=1  · mahabharata-aranyakaparva
+
+### `KamupAcakrame` — khamupācakrame  (n=1)
+
+- взмыл в небо  · n=1  · mahabharata-aranyakaparva
+
+### `Kamutpatya` — khamutpatya  (n=1)
+
+- взмыл в небо  · n=1  · mahabharata-aranyakaparva
+
+### `Kan` — khan  (n=3)
+
+- разройте  · n=1  · ramayana-balakanda
+- копаю  · n=1  · atharvaveda
+- выкопал  · n=1  · atharvaveda
+
+### `KanAmas` — khanāmas  (n=1)
+
+- откапываем  · n=1  · atharvaveda
+
+### `KanAmasi` — khanāmasi  (n=2)
+
+- выкапываем  · n=1  · atharvaveda
+- откапываем  · n=1  · atharvaveda
+
+### `KanAmi` — khanāmi  (n=3)
+
+- копаю  · n=3  · rigveda, atharvaveda
+
+### `KanI` — khanī  (n=1)
+
+- драгоценными камнями  · n=1  · ramayana-ayodhyakanda
+
+### `KanInetra` — khanīnetra  (n=2)
+
+- Кханинетра  · n=2  · mahabharata-ashvamedhikaparva
+
+### `Kana` — khana  (n=1)
+
+- зарытый  · n=1  · atharvaveda
+
+### `Kanaka` — khanaka  (n=4)
+
+- землекопы  · n=2  · ramayana-ayodhyakanda, ramayana-balakanda
+- землекопов  · n=1  · ramayana-balakanda
+- землекоп  · n=1  · mahabharata-adiparva
+
+### `KanakaH` — khanakaḥ  (n=1)
+
+- землекоп  · n=1  · mahabharata-adiparva
+
+### `KanakasattamAt` — khanakasattamāt  (n=1)
+
+- лучшего из землекопов  · n=1  · mahabharata-adiparva
+
+### `Kanakena` — khanakena  (n=1)
+
+- землекоп  · n=1  · mahabharata-adiparva
+
+### `KanamAna` — khanamāna  (n=3)
+
+- рыли  · n=1  · mahabharata-aranyakaparva
+- копавший  · n=1  · rigveda
+- роющие  · n=1  · atharvaveda
+
+### `Kanan` — khanan  (n=2)
+
+- копающий  · n=2  · manavadharmashastra, buddhacharita
+
+### `Kanana` — khanana  (n=2)
+
+- рытье  · n=1  · shatakatrayam
+- копать  · n=1  · shatakatrayam-serebryakov
+
+### `KanantaH` — khanantaḥ  (n=2)
+
+- рыть землю  · n=1  · ramayana-balakanda
+- принялись копать  · n=1  · mahabharata-aranyakaparva
+
+### `Kananti` — khananti  (n=1)
+
+- закапывают  · n=1  · atharvaveda
+
+### `Kananto` — khananto  (n=1)
+
+- Раскопали  · n=1  · ramayana-balakanda
+
+### `Kanat` — khanat  (n=2)
+
+- разрыли  · n=1  · ramayana-ayodhyakanda
+- рыл  · n=1  · mahabharata-adiparva
+
+### `KanatAm` — khanatām  (n=1)
+
+- копали  · n=1  · mahabharata-aranyakaparva
+
+### `Kanata` — khanata  (n=1)
+
+- ройте  · n=1  · ramayana-balakanda
+
+### `Kanati` — khanati  (n=1)
+
+- выкапывает  · n=1  · atharvaveda
+
+### `KaniByaH` — khanibhyaḥ  (n=1)
+
+- сокровищ  · n=1  · raghuvamsha
+
+### `Kanim` — khanim  (n=1)
+
+- зарытого  · n=1  · atharvaveda
+
+### `KanitA` — khanitā  (n=1)
+
+- копающий  · n=1  · rigveda
+
+### `KanitAra` — khanitāra  (n=1)
+
+- копает  · n=1  · atharvaveda
+
+### `KanitrI` — khanitrī  (n=1)
+
+- землекоп  · n=1  · mahabharata-adiparva
+
+### `Kanitra` — khanitra  (n=6)
+
+- заступ  · n=1  · ramayana-ayodhyakanda
+- мотыга  · n=1  · ramayana-ayodhyakanda
+- мотыгу  · n=1  · ramayana-ayodhyakanda
+- заступом  · n=1  · manavadharmashastra
+- лопату  · n=1  · ramayana-aranyakanda
+- заступами  · n=1  · rigveda
+
+### `KanitralANgalaDara` — khanitralāṅgaladhara  (n=1)
+
+- Вооружившись лопатами, топорами  · n=1  · ramayana-balakanda
+
+### `KanitrimA` — khanitrimā  (n=2)
+
+- выступившие, где копают  · n=1  · atharvaveda
+- выкопанные  · n=1  · atharvaveda
+
+### `Kanitrima` — khanitrima  (n=3)
+
+- Прорытые  · n=2  · rigveda
+- возникшие от копания  · n=1  · atharvaveda
+
+### `KanyamAnaH` — khanyamānaḥ  (n=1)
+
+- вскапываемая  · n=1  · mahabharata-aranyakaparva
+
+### `KanyamAne` — khanyamāne  (n=1)
+
+- раскопав  · n=1  · ramayana-balakanda
+
+### `KanyatAm` — khanyatām  (n=5)
+
+- Вырой  · n=3  · ramayana-aranyakanda
+- должны закопать  · n=1  · ramayana-aranyakanda
+- пусть выроют  · n=1  · mahabharata-bhishmaparva
+
+### `Kanyate` — khanyate  (n=1)
+
+- Перекопана  · n=1  · ramayana-balakanda
+
+### `KaqUra` — khaḍūra  (n=2)
+
+- кхадура  · n=1  · atharvaveda
+- кхадуру  · n=1  · atharvaveda
+
+### `Kaqaga` — khaḍaga  (n=1)
+
+- меч  · n=1  · ramayana-aranyakanda
+
+### `KaqgAByAm` — khaḍgābhyām  (n=1)
+
+- мечами  · n=1  · ramayana-aranyakanda
+
+### `KaqgAH` — khaḍgāḥ  (n=2)
+
+- сабли  · n=1  · mahabharata-adiparva
+- мечи  · n=1  · mahabharata-bhishmaparva
+
+### `KaqgAM` — khaḍgāṃ  (n=1)
+
+- копья  · n=1  · ramayana-aranyakanda
+
+### `KaqgAdi` — khaḍgādi  (n=1)
+
+- меч и т.п.  · n=1  · gitarthasamgraha-abhinavagupta
+
+### `KaqgAgraiH` — khaḍgāgraiḥ  (n=1)
+
+- острым мечом  · n=1  · shatakatrayam
+
+### `KaqgAkula` — khaḍgākula  (n=1)
+
+- мелькали мечи  · n=1  · mahabharata-karnaparva
+
+### `KaqgAn` — khaḍgān  (n=3)
+
+- носорогов  · n=2  · raghuvamsha
+- мечи  · n=1  · ramayana-ayodhyakanda
+
+### `KaqgAnAm` — khaḍgānām  (n=1)
+
+- мечей  · n=1  · mahabharata-dronaparva
+
+### `KaqgAyuDagadADara` — khaḍgāyudhagadādhara  (n=1)
+
+- держать палицу, меч или другое оружие  · n=1  · mahabharata-aranyakaparva
+
+### `KaqgI` — khaḍgī  (n=7)
+
+- вооруженный мечом  · n=2  · mahabharata-shantiparva, mahabharata-udyogaparva
+- с мечом  · n=2  · mahabharata-shantiparva, mahabharata-adiparva
+- меченосец  · n=1  · mahabharata-shantiparva
+- мечом  · n=1  · mahabharata-dronaparva
+- Вооруженный мечом  · n=1  · mahabharata-karnaparva
+
+### `Kaqga` — khaḍga  (n=92)
+
+- меч  · n=36  · mahabharata-karnaparva, mahabharata-dronaparva, mahabharata-aranyakaparva, ramayana-aranyakanda, ramayana-balakanda, mahabharata-udyogaparva, mahabharata-virataparva, mahabharata-shalyaparva, mahabharata-sabhaparva, mahabharata-sauptikaparva, mahabharata-bhishmaparva
+- мечи  · n=18  · mahabharata-dronaparva, mahabharata-karnaparva, ramayana-sundarakanda, mahabharata-aranyakaparva, mahabharata-bhishmaparva, ramayana-aranyakanda, ramayana-balakanda, mahabharata-adiparva
+- мечом  · n=13  · ramayana-aranyakanda, mahabharata-bhishmaparva, mahabharata-aranyakaparva, mahabharata-karnaparva, mahabharata-adiparva, mahabharata-dronaparva, mahabharata-udyogaparva
+- мечами  · n=9  · ramayana-aranyakanda, mahabharata-bhishmaparva, mahabharata-aranyakaparva, mahabharata-dronaparva
+- меча  · n=2  · ramayana-ayodhyakanda
+- с мечом  · n=1  · ramayana-aranyakanda
+- дротики  · n=1  · mahabharata-aranyakaparva
+- клинком  · n=1  · mahabharata-bhishmaparva
+- саблю  · n=1  · mahabharata-dronaparva
+- саблей  · n=1  · mahabharata-dronaparva
+- сабля  · n=1  · mahabharata-dronaparva
+- кинжалов  · n=1  · mahabharata-udyogaparva
+- бивни слонов  · n=1  · mahabharata-karnaparva
+- носорог  · n=1  · mahabharata-karnaparva
+- Кхадга  · n=1  · mahabharata-shalyaparva
+- бегемотов  · n=1  · mahabharata-shalyaparva
+- саблями  · n=1  · mahabharata-virataparva
+- мечей  · n=1  · shatakatrayam-serebryakov
+- оружие  · n=1  · mahabharata-striparva
+
+### `KaqgaBft` — khaḍgabhṛt  (n=1)
+
+- воитель  · n=1  · mahabharata-dronaparva
+
+### `KaqgaDanuzpARiH` — khaḍgadhanuṣpāṇiḥ  (n=2)
+
+- держа в руках лук и меч  · n=1  · mahabharata-shantiparva
+- с мечом и луком в руках  · n=1  · mahabharata-shantiparva
+
+### `KaqgaDara` — khaḍgadhara  (n=2)
+
+- с мечом  · n=1  · ramayana-sundarakanda
+- вооруженные мечами  · n=1  · mahabharata-aranyakaparva
+
+### `KaqgaH` — khaḍgaḥ  (n=1)
+
+- меч  · n=1  · mahabharata-karnaparva
+
+### `KaqgaM` — khaḍgaṃ  (n=5)
+
+- меч  · n=4  · mahabharata-dronaparva, mahabharata-shalyaparva
+- рукоять меча  · n=1  · mahabharata-dronaparva
+
+### `KaqgaSaktiDara` — khaḍgaśaktidhara  (n=1)
+
+- вооруженных мечами и дротиками  · n=1  · mahabharata-adiparva
+
+### `KaqgacApaDarAH` — khaḍgacāpadharāḥ  (n=1)
+
+- с мечами и луками в руках  · n=1  · ramayana-ayodhyakanda
+
+### `Kaqgacarma` — khaḍgacarma  (n=1)
+
+- меч и щит  · n=1  · mahabharata-dronaparva
+
+### `KaqgacarmaDara` — khaḍgacarmadhara  (n=1)
+
+- носящий меч и щит  · n=1  · mahabharata-dronaparva
+
+### `KaqgacarmaDaraH` — khaḍgacarmadharaḥ  (n=1)
+
+- держа меч и щит  · n=1  · mahabharata-dronaparva
+
+### `KaqgacarmaDft` — khaḍgacarmadhṛt  (n=1)
+
+- держа меч и щит  · n=1  · mahabharata-dronaparva
+
+### `KaqgacarmaRI` — khaḍgacarmaṇī  (n=1)
+
+- меч и щит  · n=1  · mahabharata-shalyaparva
+
+### `KaqgahastAH` — khaḍgahastāḥ  (n=1)
+
+- с мечами в руках  · n=1  · mahabharata-sauptikaparva
+
+### `Kaqgahasta` — khaḍgahasta  (n=1)
+
+- с мечами в руках  · n=1  · mahabharata-sabhaparva
+
+### `KaqgaiH` — khaḍgaiḥ  (n=5)
+
+- мечами  · n=4  · mahabharata-dronaparva, mahabharata-karnaparva
+- булавы  · n=1  · ramayana-aranyakanda
+
+### `KaqgaiSca` — khaḍgaiśca  (n=1)
+
+- мечей  · n=1  · mahabharata-bhishmaparva
+
+### `Kaqgajihvasya` — khaḍgajihvasya  (n=1)
+
+- язык — это меч  · n=1  · mahabharata-sauptikaparva
+
+### `KaqgakArmukaDAriRAm` — khaḍgakārmukadhāriṇām  (n=1)
+
+- держа мечи и луки  · n=1  · mahabharata-dronaparva
+
+### `KaqgakUrma` — khaḍgakūrma  (n=1)
+
+- носорог  · n=1  · manavadharmashastra
+
+### `Kaqgam` — khaḍgam  (n=19)
+
+- меч  · n=17  · mahabharata-dronaparva, mahabharata-karnaparva, ramayana-aranyakanda, mahabharata-shalyaparva, mahabharata-aranyakaparva, mahabharata-sauptikaparva
+- с мечом  · n=1  · shukasaptati
+- огонь  · n=1  · shukasaptati
+
+### `Kaqgamatsyam` — khaḍgamatsyam  (n=1)
+
+- с мечами вместо рыб  · n=1  · mahabharata-dronaparva
+
+### `Kaqgamuttamam` — khaḍgamuttamam  (n=1)
+
+- великолепнейший меч  · n=1  · mahabharata-aranyakaparva
+
+### `KaqgapARayaH` — khaḍga pāṇayaḥ  (n=1)
+
+- с мечами  · n=1  · ramayana-aranyakanda
+
+### `KaqgapARiH` — khaḍgapāṇiḥ  (n=1)
+
+- взял в руки меч  · n=1  · mahabharata-aranyakaparva
+
+### `KaqgapraharaRa` — khaḍgapraharaṇa  (n=1)
+
+- владение мечом  · n=1  · mahabharata-dronaparva
+
+### `KaqgatURIDanurDara` — khaḍgatūṇīdhanurdhara  (n=1)
+
+- с мечом, луком и стрелами  · n=1  · ramayana-balakanda
+
+### `Kaqgau` — khaḍgau  (n=5)
+
+- меча  · n=3  · ramayana-aranyakanda, ramayana-ayodhyakanda
+- мечами  · n=2  · ramayana-ayodhyakanda, ramayana-aranyakanda
+
+### `Kaqgavant` — khaḍgavant  (n=1)
+
+- опоясанные мечами  · n=1  · ramayana-balakanda
+
+### `Kaqgavara` — khaḍgavara  (n=1)
+
+- прекрасный меч  · n=1  · mahabharata-sauptikaparva
+
+### `Kaqgena` — khaḍgena  (n=6)
+
+- мечом  · n=5  · mahabharata-dronaparva, mahabharata-udyogaparva, mahabharata-aranyakaparva, mahabharata-mausalaparva
+- с мечом  · n=1  · mahabharata-dronaparva
+
+### `Kaqgin` — khaḍgin  (n=12)
+
+- вооруженный мечом  · n=5  · mahabharata-dronaparva, mahabharata-karnaparva
+- с мечом  · n=3  · mahabharata-aranyakaparva, mahabharata-adiparva, mahabharata-udyogaparva
+- меченосец  · n=1  · mahabharata-shantiparva
+- меченосцев  · n=1  · ramayana-sundarakanda
+- с братом Лакшманой  · n=1  · ramayana-aranyakanda
+- опоясанный мечом  · n=1  · mahabharata-adiparva
+
+### `Kaqginau` — khaḍginau  (n=1)
+
+- мечи  · n=1  · ramayana-aranyakanda
+
+### `KarAH` — kharāḥ  (n=2)
+
+- ослята  · n=2  · mahabharata-mausalaparva
+
+### `KarASvauzwramfgaiBAnAmajAvikavaDa` — kharāśvauṣṭramṛgaibhānāmajāvikavadha  (n=1)
+
+- Убиение осла, лошади, верблюда, оленя, слона, козы и овцы  · n=1  · manavadharmashastra
+
+### `KarAdIn` — kharādīn  (n=1)
+
+- Кхару и других  · n=1  · raghuvamsha
+
+### `KarAdiByas` — kharādibhyas  (n=2)
+
+- Кхаре и другим  · n=1  · raghuvamsha
+- Кхара  · n=1  · raghuvamsha
+
+### `KarAmaH` — kharāmaḥ  (n=1)
+
+- Мулов  · n=1  · ramayana-ayodhyakanda
+
+### `KarI` — kharī  (n=2)
+
+- ослицы  · n=1  · mahabharata-udyogaparva
+- Кхари  · n=1  · mahabharata-shalyaparva
+
+### `KarImfduH` — kharīmṛduḥ  (n=1)
+
+- подобно ослице мягкого  · n=1  · mahabharata-udyogaparva
+
+### `Kara` — khara  (n=118)
+
+- Кхара  · n=36  · ramayana-aranyakanda, ramayana-sundarakanda, ramayana-ayodhyakanda, mahabharata-aranyakaparva, mahabharata-dronaparva
+- Кхары  · n=19  · ramayana-aranyakanda, ramayana-balakanda
+- Кхару  · n=10  · ramayana-aranyakanda, mahabharata-aranyakaparva, mahabharata-dronaparva
+- мулами  · n=6  · ramayana-ayodhyakanda, ramayana-aranyakanda, ramayana-balakanda
+- ослов  · n=6  · mahabharata-shalyaparva, ramayana-ayodhyakanda, manavadharmashastra, buddhacharita
+- Кхарой  · n=6  · ramayana-aranyakanda, mahabharata-aranyakaparva
+- мулов  · n=3  · ramayana-ayodhyakanda, ramayana-aranyakanda, mahabharata-shalyaparva
+- ослами  · n=3  · ramayana-sundarakanda, mahabharata-aranyakaparva
+- осел  · n=3  · manavadharmashastra
+- Кхаре  · n=3  · ramayana-aranyakanda
+- осла  · n=2  · manavadharmashastra
+- ослы  · n=2  · mahabharata-bhishmaparva, mahabharata-dronaparva
+- могучие мужи  · n=1  · ramayana-ayodhyakanda
+- пруды  · n=1  · ramayana-ayodhyakanda
+- копыта  · n=1  · ramayana-ayodhyakanda
+- копытами  · n=1  · ramayana-ayodhyakanda
+- копыт  · n=1  · ramayana-ayodhyakanda
+- Мул  · n=1  · ramayana-ayodhyakanda
+- осёл  · n=1  · manavadharmashastra
+- осле  · n=1  · manavadharmashastra
+- брату  · n=1  · ramayana-aranyakanda
+- хищные  · n=1  · ramayana-aranyakanda
+- кичась силой  · n=1  · ramayana-aranyakanda
+- зловеще  · n=1  · ramayana-aranyakanda
+- хорошо запряженной  · n=1  · ramayana-aranyakanda
+- мулы  · n=1  · ramayana-aranyakanda
+- полны страсти  · n=1  · kama-sutra
+- жесткой  · n=1  · buddhacharita
+- острыми  · n=1  · gitagovinda
+- зной  · n=1  · amaru-shataka
+- верблюдами  · n=1  · mahabharata-mausalaparva
+
+### `Kara-naKara-Sara-GAtam` — khara-nakhara-śara-ghātam  (n=1)
+
+- удары стрелами острых ногтей  · n=1  · gitagovinda
+
+### `KaraAlayam` — khara ālayam  (n=1)
+
+- Кхара  · n=1  · ramayana-aranyakanda
+
+### `KaraH` — kharaḥ  (n=18)
+
+- Кхара  · n=14  · ramayana-aranyakanda
+- Кхару  · n=2  · ramayana-aranyakanda
+- Кхарой  · n=1  · ramayana-aranyakanda
+- Кхаре  · n=1  · ramayana-aranyakanda
+
+### `KaraM` — kharaṃ  (n=1)
+
+- Кхара  · n=1  · ramayana-balakanda
+
+### `KarabanDurayAnaga` — kharabandhurayānaga  (n=2)
+
+- ехавший на колеснице, которую влекли ослы  · n=1  · mahabharata-karnaparva
+- которую влекли ослы  · n=1  · mahabharata-karnaparva
+
+### `KaraiH` — kharaiḥ  (n=1)
+
+- мулами  · n=1  · ramayana-aranyakanda
+
+### `Karaih` — kharaih  (n=1)
+
+- ослами  · n=1  · mahabharata-dronaparva
+
+### `KaraiqakagavA` — kharaiḍakagavā  (n=1)
+
+- ослов, баранов и коров  · n=1  · mahabharata-shalyaparva
+
+### `KarajaNGA` — kharajaṅghā  (n=1)
+
+- Кхараджангха  · n=1  · mahabharata-shalyaparva
+
+### `KarakaRqUyitam` — kharakaṇḍūyitam  (n=1)
+
+- скрести острым  · n=1  · mahabharata-aranyakaparva
+
+### `KarakarRI` — kharakarṇī  (n=2)
+
+- с ослиными ушами  · n=1  · ramayana-sundarakanda
+- Кхаракарни  · n=1  · mahabharata-shalyaparva
+
+### `Karam` — kharam  (n=8)
+
+- Кхаре  · n=4  · ramayana-aranyakanda
+- на осле  · n=1  · manavadharmashastra
+- Кхарой  · n=1  · ramayana-aranyakanda
+- Кхару  · n=1  · ramayana-aranyakanda
+- Кхара  · n=1  · ramayana-aranyakanda
+
+### `Karas` — kharas  (n=1)
+
+- Кхара  · n=1  · ramayana-ayodhyakanda
+
+### `KarasvanA` — kharasvanā  (n=1)
+
+- с ослиными голосами  · n=1  · mahabharata-aranyakaparva
+
+### `Karasvana` — kharasvana  (n=1)
+
+- с голосами, как у ослов  · n=1  · mahabharata-dronaparva
+
+### `KarasvanaH` — kharasvanaḥ  (n=1)
+
+- Грозно гремящая  · n=1  · ramayana-aranyakanda
+
+### `Karasya` — kharasya  (n=5)
+
+- Кхары  · n=2  · ramayana-aranyakanda
+- Кхаре  · n=1  · ramayana-aranyakanda
+- Кхара  · n=1  · ramayana-aranyakanda
+- Кхару  · n=1  · ramayana-aranyakanda
+
+### `Karatara` — kharatara  (n=1)
+
+- угрожающим  · n=1  · ramayana-aranyakanda
+
+### `Karataram` — kharataram  (n=2)
+
+- пылким  · n=2  · ramayana-aranyakanda
+
+### `KaratiSirasau` — kharatiśirasau  (n=1)
+
+- Кхару с Триширасом  · n=1  · raghuvamsha
+
+### `KarauzwraH` — khara uṣṭraḥ  (n=1)
+
+- мулы, буйволы  · n=1  · ramayana-ayodhyakanda
+
+### `KaravAdin` — kharavādin  (n=1)
+
+- говорящей грубо  · n=1  · ramayana-ayodhyakanda
+
+### `KarayAnaM` — kharayānaṃ  (n=1)
+
+- ослом  · n=1  · manavadharmashastra
+
+### `KarayuktaH` — kharayuktaḥ  (n=1)
+
+- запряженная ослами  · n=1  · ramayana-aranyakanda
+
+### `KareRa` — khareṇa  (n=1)
+
+- Кхарой  · n=1  · ramayana-aranyakanda
+
+### `Karezu` — khareṣu  (n=1)
+
+- среди ослов  · n=1  · mahabharata-adiparva
+
+### `Kargaleva` — khargaleva  (n=2)
+
+- как сова  · n=2  · rigveda, atharvaveda
+
+### `KarjUrAn` — kharjūrān  (n=1)
+
+- финиковые пальмы  · n=1  · mahabharata-aranyakaparva
+
+### `KarjUrI` — kharjūrī  (n=1)
+
+- смоковница  · n=1  · raghuvamsha
+
+### `KarjUra` — kharjūra  (n=5)
+
+- Кхарджура  · n=2  · ramayana-aranyakanda
+- финиковые пальмы  · n=1  · ramayana-sundarakanda
+- кхарджуры  · n=1  · ramayana-aranyakanda
+- кхарджура  · n=1  · mahabharata-aranyakaparva
+
+### `Karo` — kharo  (n=2)
+
+- Кхара  · n=1  · ramayana-aranyakanda
+- суров  · n=1  · raghuvamsha
+
+### `KarozwrASvataraiH` — kharoṣṭrāśvataraiḥ  (n=1)
+
+- ослов, верблюдов и мулов  · n=1  · mahabharata-karnaparva
+
+### `KarozwramahizAn` — kharoṣṭramahiṣān  (n=1)
+
+- верблюдов и буйволов  · n=1  · mahabharata-adiparva
+
+### `KarozwraninadopamaiH` — kharoṣṭraninadopamaiḥ  (n=1)
+
+- подобными реву ослов и верблюдов  · n=1  · mahabharata-karnaparva
+
+### `Karva` — kharva  (n=2)
+
+- Кхарва  · n=1  · mahabharata-sabhaparva
+- десять миллионов  · n=1  · mahabharata-sabhaparva
+
+### `KarvavAsinI` — kharvavāsinī  (n=1)
+
+- одетую в изуродованное  · n=1  · atharvaveda
+
+### `Karvawa` — kharvaṭa  (n=3)
+
+- маленький город  · n=2  · kama-sutra
+- маленьком  · n=1  · kama-sutra
+
+### `KarvikA` — kharvikā  (n=1)
+
+- Изуродованную  · n=1  · atharvaveda
+
+### `Karvita` — kharvita  (n=2)
+
+- убывает  · n=2  · mahabharata-bhishmaparva
+
+### `KasTAH` — khasthāḥ  (n=1)
+
+- небожители  · n=1  · buddhacharita
+
+### `KasTAn` — khasthān  (n=1)
+
+- на небесах  · n=1  · mahabharata-aranyakaparva
+
+### `KasTAnAm` — khasthānām  (n=1)
+
+- привольных  · n=1  · mahabharata-virataparva
+
+### `KasTa` — khastha  (n=2)
+
+- пребывавший в воздухе  · n=1  · mahabharata-udyogaparva
+- заняли свои места  · n=1  · mahabharata-karnaparva
+
+### `KasTaiH` — khasthaiḥ  (n=1)
+
+- небожителей  · n=1  · buddhacharita
+
+### `Kasa` — khasa  (n=1)
+
+- кхаса  · n=1  · manavadharmashastra
+
+### `KauSika` — Kauśika  (n=1)
+
+- Каушика  · n=1  · vajs-up
+
+### `Kavaza` — Kavaṣa  (n=1)
+
+- Каваша  · n=1  · chag-up
+
+### `KawAKaweti` — khaṭākhaṭeti  (n=1)
+
+- хриплые крики  · n=1  · mahabharata-bhishmaparva
+
+### `Kawaka` — khaṭaka  (n=1)
+
+- нежной  · n=1  · amaru-shataka
+
+### `KawikA` — khaṭikā  (n=1)
+
+- мел  · n=1  · shukasaptati
+
+### `KawikAhasta` — khaṭikāhasta  (n=1)
+
+- несшего в руке кусок мела  · n=1  · shukasaptati
+
+### `KawvA` — khaṭvā  (n=5)
+
+- кровать  · n=2  · kama-sutra
+- постели больного  · n=2  · mahabharata-udyogaparva
+- ложе  · n=1  · manavadharmashastra
+
+### `KawvANgI` — khaṭvāṅgī  (n=1)
+
+- нося ножку кровати  · n=1  · manavadharmashastra
+
+### `KawvANga` — khaṭvāṅga  (n=1)
+
+- Кхватванга  · n=1  · mahabharata-adiparva
+
+### `KawvANgaDArin` — khaṭvāṅgadhārin  (n=1)
+
+- держателю палицы с черепом на конце  · n=1  · mahabharata-sauptikaparva
+
+### `KawvANgahasta` — khaṭvāṅgahasta  (n=1)
+
+- Вооруженные палицами, увенчанные черепами  · n=1  · buddhacharita
+
+### `KawvAcaraRa` — khaṭvācaraṇa  (n=2)
+
+- ножка от кровати  · n=1  · shukasaptati
+- ножку кровати  · n=1  · shukasaptati
+
+### `KawvAyAm` — khaṭvāyām  (n=1)
+
+- на ложе  · n=1  · shukasaptati
+
+### `KawvocCIrzake` — khaṭvocchīrṣake  (n=1)
+
+- на подушку  · n=1  · shukasaptati
+
+### `Ke` — khe  (n=39)
+
+- в эфире  · n=5  · bhagavadgita-prabhupada, ramanuja_gitabhashya, bhagavadgita-1914, bhagavadgity
+- в отверстии  · n=4  · rigveda, atharvaveda
+- в пространстве  · n=4  · mahabharata-bhishmaparva, bhagavadgita-erman, bhagavadgita-smirnov, bhagavadgita-radha
+- в небе  · n=3  · ramayana-aranyakanda, mahabharata-karnaparva
+- небе  · n=3  · mahabharata-bhishmaparva
+- эфир  · n=2  · bhagavadgita-burba, bhagavadgita-radha
+- по небу  · n=1  · ramayana-sundarakanda
+- в поднебесье  · n=1  · mahabharata-aranyakaparva
+- на воздух  · n=1  · mahabharata-aranyakaparva
+- во втулку  · n=1  · rigveda
+- В отверстии  · n=1  · rigveda
+- на небе  · n=1  · mahabharata-adiparva
+- в небесном пространстве  · n=1  · mahabharata-dronaparva
+- воздушном пространстве  · n=1  · mahabharata-udyogaparva
+- с неба  · n=1  · mahabharata-udyogaparva
+- эфире  · n=1  · bhagavadgita-burba
+- тверди  · n=1  · bhagavadgita-1788
+- небесныхъ  · n=1  · bhagavadgita-1909
+- небесному своду  · n=1  · mahabharata-sabhaparva
+- вверх  · n=1  · hatha-yoga-pradipika
+- Пустоту  · n=1  · hatha-yoga-pradipika
+- пустоту  · n=1  · hatha-yoga-pradipika
+- по воздуху  · n=1  · mahabharata-virataparva
+- въ пространство  · n=1  · megha-duta
+
+### `KeSI` — Keśī  (n=1)
+
+- Кеши  · n=1  · bhagavadgita-smirnov
+
+### `KecarAH` — khecarāḥ  (n=1)
+
+- небожители  · n=1  · mahabharata-aranyakaparva
+
+### `KecarARAm` — khecarāṇām  (n=1)
+
+- носящихся в поднебесье  · n=1  · mahabharata-adiparva
+
+### `KecarARi` — khecarāṇi  (n=2)
+
+- небесные  · n=1  · mahabharata-adiparva
+- обитатели небес  · n=1  · mahabharata-karnaparva
+
+### `KecarAn` — khecarān  (n=1)
+
+- носящихся в воздухе  · n=1  · mahabharata-adiparva
+
+### `KecarI` — khecarī  (n=28)
+
+- Кхечари  · n=20  · hatha-yoga-pradipika
+- полубогинь, парящих в воздухе  · n=1  · mahabharata-sabhaparva
+- кхе-чари  · n=1  · hatha-yoga-pradipika
+- кхечари  · n=1  · yotat-up
+- кчехари  · n=1  · yotat-up
+- Небесной странницы  · n=1  · yotat-up
+- Небесная странница  · n=1  · yotat-up
+- безопорном состоянии  · n=1  · shiva-sutry_sharma
+- безопорность  · n=1  · shiva-sutry_sharma
+
+### `KecarIcakra` — khecarīcakra  (n=1)
+
+- колесо кхечари  · n=1  · pratyabhijna-hridaya_kshemaraja
+
+### `KecarIm` — khecarīm  (n=1)
+
+- Кхечари  · n=1  · hatha-yoga-pradipika
+
+### `KecarImudrA` — khecarī mudrā  (n=2)
+
+- Кхечари Мудры  · n=1  · hatha-yoga-pradipika
+- Кхечари Мудра  · n=1  · hatha-yoga-pradipika
+
+### `KecarIsidDi` — khecarīsiddhi  (n=2)
+
+- Кхечари совершенна  · n=1  · hatha-yoga-pradipika
+- Кхечари Мудры  · n=1  · hatha-yoga-pradipika
+
+### `Kecara` — khecara  (n=24)
+
+- птица  · n=8  · mahabharata-adiparva
+- небожитель  · n=2  · mahabharata-adiparva
+- странник небес  · n=1  · mahabharata-adiparva
+- небесных странников  · n=1  · mahabharata-adiparva
+- движешься по воздуху  · n=1  · mahabharata-adiparva
+- летающий в небесах  · n=1  · mahabharata-adiparva
+- Гаруда  · n=1  · mahabharata-adiparva
+- птице  · n=1  · mahabharata-adiparva
+- небожителю  · n=1  · mahabharata-adiparva
+- летающего по небу  · n=1  · ramayana-sundarakanda
+- небожителями  · n=1  · mahabharata-aranyakaparva
+- витающий в небе  · n=1  · mahabharata-adiparva
+- небесный странник  · n=1  · mahabharata-dronaparva
+- скиталец неба  · n=1  · mahabharata-udyogaparva
+- птицу  · n=1  · mahabharata-karnaparva
+- летающие по небу  · n=1  · mahabharata-ashvamedhikaparva
+
+### `KecaraH` — khecaraḥ  (n=3)
+
+- небесный странник  · n=1  · mahabharata-adiparva
+- Гаруда  · n=1  · mahabharata-adiparva
+- птица  · n=1  · mahabharata-aranyakaparva
+
+### `KecaraM` — khecaraṃ  (n=1)
+
+- в воздухе  · n=1  · mahabharata-virataparva
+
+### `KecaratA` — khecaratā  (n=1)
+
+- Пустоту  · n=1  · hatha-yoga-pradipika
+
+### `Kecaratva` — khecaratva  (n=1)
+
+- странствовать  · n=1  · yotat-up
+
+### `KecareRa` — khecareṇa  (n=1)
+
+- небесную  · n=1  · mahabharata-aranyakaparva
+
+### `Kecarottama` — khecarottama  (n=1)
+
+- лучший из странствующих по небу  · n=1  · mahabharata-aranyakaparva
+
+### `KecaryA` — khecaryā  (n=2)
+
+- Кхечари  · n=2  · hatha-yoga-pradipika
+
+### `KedAm` — khedām  (n=2)
+
+- тяжелый груз (?)  · n=2  · rigveda
+
+### `KedAt` — khedāt  (n=2)
+
+- от усталости  · n=1  · ramayana-balakanda
+- безсильно  · n=1  · megha-duta
+
+### `Keda` — kheda  (n=17)
+
+- усталость  · n=3  · mahabharata-adiparva, buddhacharita, raghuvamsha
+- беспокойство  · n=1  · kama-sutra
+- суровые  · n=1  · buddhacharita
+- страдают  · n=1  · buddhacharita
+- труд  · n=1  · buddhacharita
+- подавленность  · n=1  · mahabharata-karnaparva
+- возделывать  · n=1  · mahabharata-shalyaparva
+- грусть  · n=1  · raghuvamsha
+- труда  · n=1  · raghuvamsha
+- изнеможении  · n=1  · gitagovinda
+- горе  · n=1  · gitagovinda
+- боль  · n=1  · gitagovinda
+- страдание  · n=1  · gitagovinda
+- больно  · n=1  · amaru-shataka
+- огорчаешь  · n=1  · amaru-shataka
+
+### `KedaH` — khedaḥ  (n=3)
+
+- усталость  · n=1  · ramayana-aranyakanda
+- муки  · n=1  · ramayana-aranyakanda
+- обида  · n=1  · amaru-shataka
+
+### `KedaiH` — khedaiḥ  (n=1)
+
+- беды  · n=1  · ramayana-aranyakanda
+
+### `KedayA` — khedayā  (n=2)
+
+- рывком  · n=1  · rigveda
+- Молотом  · n=1  · rigveda
+
+### `Kedito` — khedito  (n=1)
+
+- теснимый  · n=1  · mahabharata-ashvamedhikaparva
+
+### `Kegati` — khe gati  (n=1)
+
+- в пространстве путешествовать  · n=1  · yotat-up
+
+### `KelA` — khelā  (n=1)
+
+- идут  · n=1  · buddhacharita
+
+### `Kela` — khela  (n=2)
+
+- поступь  · n=1  · mahabharata-shantiparva
+- Кхела  · n=1  · rigveda
+
+### `Kelam` — khelam  (n=1)
+
+- ходит  · n=1  · ramayana-ayodhyakanda
+
+### `Kelana` — khelana  (n=1)
+
+- движениями  · n=1  · gitagovinda
+
+### `Kelasya` — khelasya  (n=1)
+
+- Кхелы  · n=1  · rigveda
+
+### `Kelat` — khelat  (n=1)
+
+- игры  · n=1  · gitagovinda
+
+### `Kelita` — khelita  (n=1)
+
+- играет  · n=1  · gitagovinda
+
+### `Kfgala` — khṛgala  (n=4)
+
+- панциря  · n=2  · rigveda
+- амулет  · n=2  · atharvaveda
+
+### `KfzRa` — Kṛṣṇa  (n=6)
+
+- Кришна  · n=6  · bhagavadgita-1909
+
+### `KhaRqaparaSu` — Khaṇḍaparaśu  (n=1)
+
+- Кхандапарашу  · n=1  · sub-up
+
+### `Kid` — khid  (n=1)
+
+- вдавил  · n=1  · rigveda
+
+### `KidAmi` — khidāmi  (n=1)
+
+- подтягиваю  · n=1  · atharvaveda
+
+### `Kidati` — khidati  (n=1)
+
+- вырывает  · n=1  · rigveda
+
+### `Kidra` — khidra  (n=1)
+
+- Тяжесть  · n=1  · rigveda
+
+### `KidvaH` — khidvaḥ  (n=1)
+
+- угнетатель  · n=1  · rigveda
+
+### `Kidyate` — khidyate  (n=1)
+
+- страдает  · n=1  · amaru-shataka
+
+### `KilIBUta` — khilībhūta  (n=1)
+
+- не смеют  · n=1  · kumarasambhava
+
+### `KilIkfta` — khilīkṛta  (n=2)
+
+- обращенным в пустыню  · n=1  · raghuvamsha
+- не будет пути  · n=1  · raghuvamsha
+
+### `KilIkriyate` — khilīkriyate  (n=1)
+
+- перекрывается  · n=1  · yoga-sutry_vyasa-bhashya
+
+### `Kila` — khila  (n=4)
+
+- дополнительная  · n=1  · mahabharata-adiparva
+- дополнение  · n=1  · mahabharata-adiparva
+- добавления [к Ведам]  · n=1  · manavadharmashastra
+- всеблагой  · n=1  · rampt-up
+
+### `Kile` — khile  (n=2)
+
+- пустыре  · n=2  · atharvaveda
+
+### `Kilezu` — khileṣu  (n=1)
+
+- в приложениях  · n=1  · mahabharata-adiparva
+
+### `KilyA` — khilyā  (n=1)
+
+- пустыри  · n=1  · rigveda
+
+### `Kilya` — khilya  (n=2)
+
+- поле  · n=2  · rigveda
+
+### `Kilye` — khilye  (n=2)
+
+- чистом поле  · n=2  · atharvaveda
+
+### `KinnA` — khinnā  (n=1)
+
+- безысходность  · n=1  · mahabharata-aranyakaparva
+
+### `KinnAvaKinnAviva` — khinnāvakhinnāviva  (n=1)
+
+- утомленные, но усталости будто не чувствуя  · n=1  · buddhacharita
+
+### `Kinna` — khinna  (n=11)
+
+- устав  · n=1  · manavadharmashastra
+- страдальчески  · n=1  · ramayana-aranyakanda
+- опечалившись  · n=1  · mahabharata-adiparva
+- утомленный  · n=1  · mahabharata-dronaparva
+- удрученном состоянии  · n=1  · mahabharata-shalyaparva
+- повержены  · n=1  · mahabharata-ashvamedhikaparva
+- утомясь  · n=1  · shatakatrayam
+- уставший  · n=1  · shatakatrayam-serebryakov
+- Терзаемый  · n=1  · gitagovinda
+- изнемогшей  · n=1  · gitagovinda
+- изнеможение  · n=1  · gitagovinda
+
+### `KinnaH` — khinnaḥ  (n=1)
+
+- устал  · n=1  · mahabharata-adiparva
+
+### `KinnaHKinnaH` — khinnaḥ khinnaḥ  (n=1)
+
+- устанешь, утомленный  · n=1  · megha-duta
+
+### `Kinnam` — khinnam  (n=1)
+
+- терзается  · n=1  · gitagovinda
+
+### `KinnamAnasa` — khinnamānasa  (n=1)
+
+- с душой, подавленной  · n=1  · buddhacharita
+
+### `KinnavidyutkalatraH` — khinnavidyutkalatraḥ  (n=1)
+
+- съ супругои-молньей, уставшей  · n=1  · megha-duta
+
+### `Kinnena` — khinnena  (n=1)
+
+- путнику  · n=1  · ramayana-ayodhyakanda
+
+### `Kodit` — khodit  (n=1)
+
+- ходит  · n=1  · chag-up
+
+### `KorasamaBiDAnaH` — khorasamabhidhānaḥ  (n=1)
+
+- Кхорасама  · n=1  · shukasaptati
+
+### `KramaSas` — khramaśas  (n=1)
+
+- одна за другой  · n=1  · raghuvamsha
+
+### `Kudata` — khudata  (n=1)
+
+- вталкивайте  · n=1  · rigveda
+
+### `KurABiGAtAc` — khurābhighātāc  (n=1)
+
+- удары конских копыт  · n=1  · raghuvamsha
+
+### `KurAgraiH` — khurāgraiḥ  (n=2)
+
+- краями копыт  · n=1  · mahabharata-dronaparva
+- копытом  · n=1  · kumarasambhava
+
+### `KurAn` — khurān  (n=1)
+
+- подковы  · n=1  · buddhacharita
+
+### `Kura` — khura  (n=11)
+
+- копытами  · n=3  · mahabharata-dronaparva, buddhacharita, mahabharata-shalyaparva
+- пятки  · n=2  · mahabharata-aranyakaparva
+- конями  · n=2  · kumarasambhava
+- копыто  · n=1  · ramayana-aranyakanda
+- копытам  · n=1  · ramayana-aranyakanda
+- копыт  · n=1  · mahabharata-dronaparva
+- по земле  · n=1  · buddhacharita
+
+### `KuraSabda` — khuraśabda  (n=2)
+
+- стука копыт  · n=2  · mahabharata-dronaparva, mahabharata-shalyaparva
+
+### `KuraSabdaninAdaiH` — khuraśabdaninādaiḥ  (n=1)
+
+- топотом копыт  · n=1  · mahabharata-bhishmaparva
+
+### `KuraSabdanipAtaiH` — khuraśabdanipātaiḥ  (n=1)
+
+- от стука копыт  · n=1  · mahabharata-dronaparva
+
+### `KuraiH` — khuraiḥ  (n=1)
+
+- копыт  · n=1  · ramayana-ayodhyakanda
+
+### `KuranemiprapIqitA` — khuranemiprapīḍitā  (n=1)
+
+- мучимая копытами и ободами  · n=1  · mahabharata-dronaparva
+
+### `Kuranemisvana` — khuranemisvana  (n=2)
+
+- стуком копыт и ободов колес  · n=1  · mahabharata-dronaparva
+- Топот копыт и стук колесных ободов  · n=1  · mahabharata-ashvamedhikaparva
+
+### `KuranemisvanaiH` — khuranemisvanaiḥ  (n=1)
+
+- звуком копыт и колес  · n=1  · mahabharata-dronaparva
+
+### `KuranyAsapavitrapAMsum` — khuranyāsapavitrapāṃsum  (n=1)
+
+- на которой пыль освящена была ее копытами  · n=1  · raghuvamsha
+
+### `KurodDUtaiH` — khuroddhūtaiḥ  (n=1)
+
+- летящие из-под ее копыт  · n=1  · raghuvamsha
+
+### `Kuru` — Kuru  (n=1)
+
+- Курусы  · n=1  · bhagavadgita-1909
+
+### `Kurukzetra` — Kurukṣetra  (n=1)
+
+- Курукшетра  · n=1  · bhagavadgita-1909
+
+### `KyA` — khyā  (n=6)
+
+- слывет  · n=1  · mahabharata-aranyakaparva
+- известная  · n=1  · mahabharata-aranyakaparva
+- взирать  · n=1  · rigveda
+- взгляните  · n=1  · rigveda
+- известно  · n=1  · mahabharata-adiparva
+- считать  · n=1  · mahabharata-virataparva
+
+### `KyApanArTa` — khyāpanārtha  (n=1)
+
+- объявить  · n=1  · mahabharata-udyogaparva
+
+### `KyApanIyo` — khyāpanīyo  (n=1)
+
+- уточнение  · n=1  · nyaya-bhashya
+
+### `KyApanena` — khyāpanena  (n=1)
+
+- признанием  · n=1  · manavadharmashastra
+
+### `KyApay` — khyāpay  (n=1)
+
+- славящие  · n=1  · shatakatrayam-serebryakov
+
+### `KyApayAmAsa` — khyāpayāmāsa  (n=1)
+
+- объявила  · n=1  · mahabharata-udyogaparva
+
+### `KyApayAmo` — khyāpayāmo  (n=1)
+
+- объявим  · n=1  · mahabharata-shalyaparva
+
+### `KyApayan` — khyāpayan  (n=1)
+
+- признавшись  · n=1  · manavadharmashastra
+
+### `KyApayanta` — khyāpayanta  (n=1)
+
+- славны  · n=1  · shatakatrayam
+
+### `KyApayantaH` — khyāpayantaḥ  (n=1)
+
+- являя  · n=1  · mahabharata-karnaparva
+
+### `KyApayase` — khyāpayase  (n=1)
+
+- приписываешь  · n=1  · mahabharata-adiparva
+
+### `KyApayet` — khyāpayet  (n=6)
+
+- объявляет  · n=2  · kama-sutra
+- объявить  · n=1  · manavadharmashastra
+- объясняет  · n=1  · kama-sutra
+- представится  · n=1  · kama-sutra
+- сообщает  · n=1  · kama-sutra
+
+### `KyApita` — khyāpita  (n=3)
+
+- уготовил  · n=1  · mahabharata-aranyakaparva
+- сказал  · n=1  · mahabharata-udyogaparva
+- не объявила  · n=1  · mahabharata-ashramavasikaparva
+
+### `KyApyamAna` — khyāpyamāna  (n=1)
+
+- определены  · n=1  · mahabharata-dronaparva
+
+### `KyApyate` — khyāpyate  (n=1)
+
+- расцениваются  · n=1  · manavadharmashastra
+
+### `KyAtA` — khyātā  (n=4)
+
+- славная  · n=1  · mahabharata-aranyakaparva
+- известен  · n=1  · mahabharata-aranyakaparva
+- прославятся  · n=1  · mahabharata-aranyakaparva
+- Кхьята  · n=1  · mahabharata-shalyaparva
+
+### `KyAtAH` — khyātāḥ  (n=1)
+
+- славные  · n=1  · buddhacharita
+
+### `KyAtAm` — khyātām  (n=1)
+
+- известную  · n=1  · mahabharata-adiparva
+
+### `KyAtAni` — khyātāni  (n=2)
+
+- великих  · n=1  · buddhacharita
+- славных  · n=1  · buddhacharita
+
+### `KyAta` — khyāta  (n=73)
+
+- известный  · n=16  · mahabharata-adiparva, ramayana-ayodhyakanda, mahabharata-aranyakaparva, mahabharata-bhishmaparva, mahabharata-udyogaparva, mahabharata-shalyaparva, mahabharata-sabhaparva, raghuvamsha, mahabharata-virataparva
+- известен  · n=6  · mahabharata-adiparva, mahabharata-shalyaparva, mahabharata-dronaparva, shatakatrayam-serebryakov
+- по имени  · n=5  · ramayana-balakanda, mahabharata-adiparva
+- прозываемый  · n=2  · mahabharata-adiparva
+- зовется  · n=2  · ramayana-ayodhyakanda, mahabharata-ashvamedhikaparva
+- называют  · n=2  · ramayana-balakanda
+- известная  · n=2  · mahabharata-aranyakaparva
+- славная  · n=2  · mahabharata-aranyakaparva
+- славных  · n=2  · mahabharata-aranyakaparva, mahabharata-adiparva
+- известно  · n=2  · mahabharata-adiparva, rampt-up
+- славный  · n=2  · mahabharata-adiparva
+- известных  · n=2  · mahabharata-adiparva
+- зовут  · n=2  · mahabharata-karnaparva, mahabharata-striparva
+- расположена  · n=1  · ramayana-aranyakanda
+- говорят  · n=1  · ramayana-aranyakanda
+- звали  · n=1  · ramayana-balakanda
+- прославлен  · n=1  · ramayana-balakanda
+- именуется  · n=1  · mahabharata-aranyakaparva
+- славится  · n=1  · mahabharata-aranyakaparva
+- прозванный  · n=1  · mahabharata-aranyakaparva
+- прославлено  · n=1  · mahabharata-aranyakaparva
+- явится  · n=1  · mahabharata-aranyakaparva
+- славившийся  · n=1  · mahabharata-aranyakaparva
+- называть  · n=1  · mahabharata-aranyakaparva
+- называются  · n=1  · mahabharata-adiparva
+- известные  · n=1  · mahabharata-adiparva
+- славными  · n=1  · mahabharata-adiparva
+- названы  · n=1  · mahabharata-adiparva
+- известным  · n=1  · mahabharata-adiparva
+- приобрели славу  · n=1  · mahabharata-adiparva
+- слывут  · n=1  · mahabharata-dronaparva
+- известны  · n=1  · mahabharata-udyogaparva
+- называемый  · n=1  · mahabharata-udyogaparva
+- прославленный  · n=1  · mahabharata-udyogaparva
+- звучные  · n=1  · mahabharata-karnaparva
+- известное  · n=1  · mahabharata-shalyaparva
+- славишься  · n=1  · shatakatrayam
+- проникла  · n=1  · shukasaptati
+- представленным  · n=1  · jabala-up
+
+### `KyAtaH` — khyātaḥ  (n=18)
+
+- известный  · n=6  · mahabharata-adiparva, mahabharata-dronaparva
+- зовется  · n=2  · ramayana-balakanda
+- Прославленный  · n=1  · ramayana-sundarakanda
+- назовут  · n=1  · ramayana-balakanda
+- называемый  · n=1  · ramayana-balakanda
+- славная  · n=1  · mahabharata-aranyakaparva
+- прославленная  · n=1  · mahabharata-aranyakaparva
+- по имени  · n=1  · mahabharata-aranyakaparva
+- известен  · n=1  · mahabharata-aranyakaparva
+- прославившись  · n=1  · mahabharata-adiparva
+- прозывавшийся  · n=1  · mahabharata-adiparva
+- стал называться  · n=1  · mahabharata-shalyaparva
+
+### `KyAtaM` — khyātaṃ  (n=4)
+
+- названным  · n=2  · ramayana-balakanda
+- прославленный  · n=1  · mahabharata-aranyakaparva
+- славного  · n=1  · mahabharata-aranyakaparva
+
+### `KyAtakarman` — khyātakarman  (n=1)
+
+- известные своими подвигами  · n=1  · mahabharata-virataparva
+
+### `KyAtam` — khyātam  (n=6)
+
+- известны  · n=2  · ramayana-balakanda
+- По имени  · n=1  · ramayana-ayodhyakanda
+- знаменитую  · n=1  · mahabharata-adiparva
+- прославленного  · n=1  · mahabharata-shalyaparva
+- прославленному  · n=1  · mahabharata-shalyaparva
+
+### `KyAtamadyApi` — khyātamadyāpi  (n=1)
+
+- с тех пор  · n=1  · mahabharata-aranyakaparva
+
+### `KyAtau` — khyātau  (n=1)
+
+- называют  · n=1  · mahabharata-svargarohanikaparva
+
+### `KyAtavikramaiH` — khyātavikramaiḥ  (n=1)
+
+- чьи доблесть прославлена  · n=1  · ramayana-sundarakanda
+
+### `KyAtavikramapauruza` — khyātavikramapauruṣa  (n=1)
+
+- известный своей отвагой и дерзостью  · n=1  · mahabharata-ashramavasikaparva
+
+### `KyAti` — khyāti  (n=26)
+
+- знание  · n=4  · yoga-sutry_vyasa-bhashya, yoga-sutry, yoga-sutry_zagumennov
+- известность  · n=3  · mahabharata-aranyakaparva, mahabharata-adiparva, mahabharata-shalyaparva
+- славы  · n=2  · manavadharmashastra, mahabharata-adiparva
+- постижение  · n=2  · yoga-sutry_vyasa-bhashya, yoga-sutry
+- известны  · n=1  · ramayana-balakanda
+- прославишься  · n=1  · mahabharata-aranyakaparva
+- Слава  · n=1  · mahabharata-ashvamedhikaparva
+- Знание  · n=1  · sankhya-karika
+- различающее постижение  · n=1  · yoga-sutry_vyasa-bhashya
+- знанием  · n=1  · yoga-sutry_vyasa-bhashya
+- до  · n=1  · yoga-sutry
+- понимание  · n=1  · yoga-sutry
+- мудрость  · n=1  · yoga-sutry
+- принимать  · n=1  · yoga-sutry_sharma
+- сияющей  · n=1  · yoga-sutry_sharma
+- принимание  · n=1  · yoga-sutry_zagumennov
+- различающего знания  · n=1  · yoga-sutry_zagumennov
+- знания  · n=1  · yoga-sutry_zagumennov
+- постигшего  · n=1  · yoga-sutry_zagumennov
+
+### `KyAtiM` — khyātiṃ  (n=1)
+
+- славу  · n=1  · ramayana-balakanda
+
+### `KyAtim` — khyātim  (n=1)
+
+- слава  · n=1  · mahabharata-adiparva
+
+### `KyAto` — khyāto  (n=1)
+
+- прославленный  · n=1  · mahabharata-shalyaparva
+
+### `KyAyate` — khyāyate  (n=3)
+
+- известно  · n=1  · mahabharata-aranyakaparva
+- зовется  · n=1  · mahabharata-aranyakaparva
+- называется  · n=1  · mahabharata-udyogaparva
+
+### `Kya` — khya  (n=3)
+
+- наблюдай  · n=2  · rigveda
+- прогляди  · n=1  · rigveda
+
+### `Kyad` — khyad  (n=1)
+
+- проглядит  · n=1  · rigveda
+
+### `Kyan` — khyan  (n=5)
+
+- смотрят  · n=2  · rigveda, atharvaveda
+- обнаружили  · n=2  · rigveda
+- прозревает  · n=1  · rigveda
+
+### `Kyat` — khyat  (n=1)
+
+- разглядит  · n=1  · rigveda
+
+### `Kyatam` — khyatam  (n=1)
+
+- проглядите  · n=1  · rigveda
+
+### `Kyo` — khyo  (n=1)
+
+- внимание  · n=1  · rigveda
 
 ### `k` — k  (n=2)
 

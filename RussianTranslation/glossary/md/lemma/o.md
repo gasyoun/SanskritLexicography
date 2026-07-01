@@ -1,6 +1,10 @@
-# Lemma glossary (Sa→Ru) — `o`
+# Lemma glossary (Sa→Ru) — `O`
 
-45 entries.
+46 entries.
+
+### `O`  (n=1, 1 forms)  ·  noun
+
+- жил  · n=1
 
 ### `o`  (n=4, 1 forms)  ·  ADV
 

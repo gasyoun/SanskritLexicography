@@ -1,6 +1,27741 @@
-# Surface glossary — SLP1 `b`
+# Surface glossary — SLP1 `B`
 
-3389 forms. Format: `form` (sa) — total n → ru (n) · registers.
+7797 forms. Format: `form` (sa) — total n → ru (n) · registers.
+
+### `BA` — bhā  (n=55)
+
+- свет  · n=13  · rigveda, mahabharata-adiparva, ramayana-ayodhyakanda, mahabharata-aranyakaparva, mahabharata-bhishmaparva, gitarthasamgraha-abhinavagupta, ramanuja_gitabhashya, bhagavadgita-sementsov, bhagavadgita-sharma, ch-up, atharvaveda
+- сияет  · n=8  · ch-up, mun-up
+- светом  · n=3  · mahabharata-adiparva, rigveda, bhagavadgita-smirnov
+- Блистает  · n=2  · rigveda
+- сияния  · n=2  · paramarthasara-abhinavagupta
+- быть похожим  · n=1  · ramayana-ayodhyakanda
+- были  · n=1  · ramayana-sundarakanda
+- сверкало  · n=1  · ramayana-aranyakanda
+- Сиянием  · n=1  · mahabharata-aranyakaparva
+- блеском  · n=1  · mahabharata-aranyakaparva
+- сиял  · n=1  · mahabharata-aranyakaparva
+- заблистал  · n=1  · mahabharata-aranyakaparva
+- свети  · n=1  · rigveda
+- блистает  · n=1  · rigveda
+- блистал  · n=1  · mahabharata-adiparva
+- сиянию  · n=1  · mahabharata-bhishmaparva
+- сияло  · n=1  · mahabharata-dronaparva
+- был подобен  · n=1  · buddhacharita
+- сияние  · n=1  · bhagavadgita-1914
+- светы  · n=1  · bhagavadgita-smirnov
+- сіяніемъ  · n=1  · bhagavadgita-1788
+- светозарного  · n=1  · bhagavadgita-sementsov
+- свѣтъ  · n=1  · bhagavadgita-1909
+- прекрасен  · n=1  · mahabharata-karnaparva
+- сверкаешь  · n=1  · rigveda
+- воссвети  · n=1  · rigveda
+- сияют  · n=1  · mahabharata-sabhaparva
+- сияешь  · n=1  · atharvaveda
+- сверкать  · n=1  · mahabharata-striparva
+- светит  · n=1  · shv-up
+- светят  · n=1  · shv-up
+- лучей  · n=1  · mai-up
+
+### `BABI` — bhābhī  (n=1)
+
+- блеском  · n=1  · mahabharata-adiparva
+
+### `BABiH` — bhābhiḥ  (n=1)
+
+- лучами  · n=1  · mahabharata-karnaparva
+
+### `BAH` — bhāḥ  (n=16)
+
+- свет  · n=8  · rigveda, bhagavadgita-prabhupada, rigveda, mahabharata-dronaparva, mahabharata-udyogaparva, bhagavadgita-erman
+- сияние  · n=4  · bhagavadgita-burba, bhagavadgity, bhagavadgita-radha, mahabharata-sauptikaparva
+- блеска  · n=1  · mahabharata-aranyakaparva
+- принес  · n=1  · rigveda
+- блеском  · n=1  · rigveda
+- блеск  · n=1  · rigveda
+
+### `BAHsatya` — bhāḥsatya  (n=2)
+
+- сущность которого – свет  · n=2  · br-up
+
+### `BAMSAzwakasTAna` — bhāṃśāṣṭakasthāna  (n=1)
+
+- восемь частей накшатр  · n=1  · vedanga_jyotisha
+
+### `BAMSAzwakasTAne` — bhāṃśāṣṭakasthāne  (n=1)
+
+- на каждые восемь частей накшатр  · n=1  · vedanga_jyotisha
+
+### `BAMSa` — bhāṃśa  (n=2)
+
+- части накшатр  · n=2  · vedanga_jyotisha
+
+### `BANgasvari` — bhāṅgasvari  (n=4)
+
+- Бхангасвари  · n=2  · mahabharata-aranyakaparva
+- Бхангасвары  · n=1  · mahabharata-aranyakaparva
+- сыном Бхангасвары  · n=1  · mahabharata-aranyakaparva
+
+### `BANgasvariH` — bhāṅgasvariḥ  (n=2)
+
+- Бхангасвари  · n=2  · mahabharata-aranyakaparva
+
+### `BANgasvariM` — bhāṅgasvariṃ  (n=1)
+
+- Бхангасвари  · n=1  · mahabharata-aranyakaparva
+
+### `BANgasvarirnfpaH` — bhāṅgasvarirnṛpaḥ  (n=1)
+
+- царь Бхангасвари  · n=1  · mahabharata-aranyakaparva
+
+### `BANkzIH` — bhāṅkṣīḥ  (n=1)
+
+- обольщайся  · n=1  · mahabharata-aranyakaparva
+
+### `BAR` — bhāṇ  (n=2)
+
+- бхан  · n=1  · br-up
+- Бхан  · n=1  · br-up
+
+### `BARqAn` — bhāṇḍān  (n=2)
+
+- жертвенники  · n=1  · ramayana-ayodhyakanda
+- инструментарий  · n=1  · ramayana-ayodhyakanda
+
+### `BARqAnAM` — bhāṇḍānāṃ  (n=1)
+
+- сосудов  · n=1  · manavadharmashastra
+
+### `BARqAni` — bhāṇḍāni  (n=1)
+
+- сосудов  · n=1  · mahabharata-ashvamedhikaparva
+
+### `BARqAvakASada` — bhāṇḍāvakāśada  (n=1)
+
+- дают место для укрытия их снаряжения  · n=1  · manavadharmashastra
+
+### `BARqIpuzpa` — bhāṇḍīpuṣpa  (n=1)
+
+- бханди  · n=1  · mahabharata-bhishmaparva
+
+### `BARqIpuzpanikASa` — bhāṇḍīpuṣpanikāśa  (n=1)
+
+- сходный с цветами бханди  · n=1  · mahabharata-bhishmaparva
+
+### `BARqIra-BUmI-ruh` — bhāṇḍīra-bhūmī-ruh  (n=1)
+
+- дерево бхандиры  · n=1  · gitagovinda
+
+### `BARqa` — bhāṇḍa  (n=33)
+
+- сосуды  · n=3  · mahabharata-adiparva, mahabharata-shalyaparva, mahabharata-sabhaparva
+- утварь  · n=3  · ramayana-ayodhyakanda, kama-sutra
+- сосуд  · n=3  · kama-sutra, mahabharata-sabhaparva
+- украшения  · n=2  · ramayana-ayodhyakanda
+- изделий  · n=2  · manavadharmashastra
+- утварью  · n=2  · ramayana-aranyakanda, kama-sutra
+- сосудов  · n=2  · kama-sutra, mahabharata-striparva
+- Место  · n=1  · ramayana-ayodhyakanda
+- товаров  · n=1  · ramayana-ayodhyakanda
+- товары  · n=1  · manavadharmashastra
+- утвари  · n=1  · manavadharmashastra
+- снаряжения  · n=1  · manavadharmashastra
+- жертвенным сосудом  · n=1  · ramayana-aranyakanda
+- посуде  · n=1  · mahabharata-aranyakaparva
+- необходимое  · n=1  · mahabharata-aranyakaparva
+- приправы  · n=1  · kama-sutra
+- покупка  · n=1  · kama-sutra
+- попонами  · n=1  · mahabharata-dronaparva
+- сбруя  · n=1  · buddhacharita
+- предмет обихода  · n=1  · mahabharata-shalyaparva
+- предметы  · n=1  · mahabharata-shalyaparva
+- кувшин  · n=1  · mahabharata-ashvamedhikaparva
+- украшенных  · n=1  · mahabharata-sabhaparva
+
+### `BARqaBft` — bhāṇḍabhṛt  (n=1)
+
+- сбруя  · n=1  · buddhacharita
+
+### `BARqaM` — bhāṇḍaṃ  (n=1)
+
+- боевым снаряжением  · n=1  · mahabharata-udyogaparva
+
+### `BARqaSAlika` — bhāṇḍaśālika  (n=1)
+
+- лавочник  · n=1  · shukasaptati
+
+### `BARqaSAlikasya` — bhāṇḍaśālikasya  (n=1)
+
+- лавочника  · n=1  · shukasaptati
+
+### `BARqaiH` — bhāṇḍaiḥ  (n=1)
+
+- сосудами  · n=1  · mahabharata-dronaparva
+
+### `BARqam` — bhāṇḍam  (n=1)
+
+- сосуд  · n=1  · manavadharmashastra
+
+### `BARqamanA` — bhāṇḍamanā  (n=1)
+
+- обратить все помыслы  · n=1  · mahabharata-ashvamedhikaparva
+
+### `BARqapUrRAni` — bhāṇḍapūrṇāni  (n=1)
+
+- полных товаров  · n=1  · manavadharmashastra
+
+### `BARqavAdana` — bhāṇḍavādana  (n=1)
+
+- игра на музыкальных инструментах  · n=1  · manavadharmashastra
+
+### `BARqopaskara` — bhāṇḍopaskara  (n=1)
+
+- домашней утвари  · n=1  · kama-sutra
+
+### `BAS` — bhāś  (n=2)
+
+- сияние  · n=2  · rigveda
+
+### `BAYj` — bhāñj  (n=1)
+
+- терпит  · n=1  · mahabharata-aranyakaparva
+
+### `BAbravIt` — bhābravīt  (n=1)
+
+- сказала  · n=1  · ramayana-ayodhyakanda
+
+### `BAdAna` — bhādāna  (n=3)
+
+- будет  · n=2  · vedanga_jyotisha
+- начало  · n=1  · vedanga_jyotisha
+
+### `BAfjIka` — bhāṛjīka  (n=5)
+
+- чей свет — украшение  · n=2  · rigveda
+- пламенеющий блеском  · n=1  · rigveda
+- Пламенеющим блеском  · n=1  · rigveda
+- излучающий свет  · n=1  · atharvaveda
+
+### `BAfjIkaH` — bhāṛjīkaḥ  (n=1)
+
+- излучающий свет  · n=1  · rigveda
+
+### `BAg` — bhāg  (n=2)
+
+- ввергай  · n=1  · rigveda
+- исключай  · n=1  · rigveda
+
+### `BAgAH` — bhāgāḥ  (n=1)
+
+- четверти  · n=1  · mahabharata-aranyakaparva
+
+### `BAgAMs` — bhāgāṃs  (n=1)
+
+- части  · n=1  · ramayana-ayodhyakanda
+
+### `BAgAm` — bhāgām  (n=2)
+
+- участью  · n=2  · ramayana-ayodhyakanda
+
+### `BAgAn` — bhāgān  (n=1)
+
+- долю  · n=1  · mahabharata-adiparva
+
+### `BAgAni` — bhāgāni  (n=1)
+
+- По  · n=1  · ramayana-aranyakanda
+
+### `BAgAnuBAgena` — bhāgānubhāgena  (n=1)
+
+- в соответствии со своим назначением  · n=1  · mahabharata-aranyakaparva
+
+### `BAgArDena` — bhāgārdhena  (n=1)
+
+- половиною своего тела  · n=1  · mahabharata-udyogaparva
+
+### `BAgArTa` — bhāgārtha  (n=2)
+
+- долю  · n=1  · mahabharata-aranyakaparva
+- жертву  · n=1  · mahabharata-udyogaparva
+
+### `BAgArTam` — bhāgārtham  (n=2)
+
+- дабы каждый получил свою долю  · n=1  · ramayana-balakanda
+- за получением доли  · n=1  · ramayana-balakanda
+
+### `BAgArTin` — bhāgārthin  (n=2)
+
+- желал своей доли  · n=1  · ramayana-balakanda
+- желающие получить долю  · n=1  · mahabharata-shalyaparva
+
+### `BAgArTinaH` — bhāgārthinaḥ  (n=1)
+
+- за своею долей  · n=1  · ramayana-balakanda
+
+### `BAgArhAH` — bhāgārhāḥ  (n=2)
+
+- удостоенные жертвенной доли  · n=2  · mahabharata-sauptikaparva
+
+### `BAgIraTI` — bhāgīrathī  (n=26)
+
+- Бхагиратхи  · n=21  · mahabharata-adiparva, mahabharata-aranyakaparva, ramayana-ayodhyakanda, mahabharata-sabhaparva, mahabharata-ashvamedhikaparva, ramayana-balakanda, mahabharata-bhishmaparva, mahabharata-udyogaparva, shukasaptati, mahabharata-shantiparva
+- дочери Бхагиратхи  · n=1  · mahabharata-adiparva
+- дочь Бхагирахти  · n=1  · mahabharata-adiparva
+- дочь Бхагиратхи  · n=1  · mahabharata-bhishmaparva
+- Ганга  · n=1  · kumarasambhava
+- Бхагиратха  · n=1  · mahabharata-ashramavasikaparva
+
+### `BAgIraTIM` — bhāgīrathīṃ  (n=1)
+
+- к Бхагиратхи  · n=1  · mahabharata-udyogaparva
+
+### `BAgIraTIjala` — bhāgīrathījala  (n=1)
+
+- воды Ганги  · n=1  · mahabharata-ashramavasikaparva
+
+### `BAgIraTIkacCa` — bhāgīrathīkaccha  (n=1)
+
+- берега Бхагиратхи  · n=1  · mahabharata-adiparva
+
+### `BAgIraTIkacCam` — bhāgīrathīkaccham  (n=2)
+
+- к берегу Бхагиратхи  · n=1  · mahabharata-sauptikaparva
+- Бхагиратхи  · n=1  · mahabharata-sauptikaparva
+
+### `BAgIraTIm` — bhāgīrathīm  (n=3)
+
+- дочерью Бхагиратхи  · n=2  · mahabharata-aranyakaparva
+- Бхагиратхи  · n=1  · ramayana-ayodhyakanda
+
+### `BAgIraTIputrAt` — bhāgīrathīputrāt  (n=1)
+
+- сыном Бхагиратхи  · n=1  · mahabharata-adiparva
+
+### `BAgIraTIputram` — bhāgīrathīputram  (n=1)
+
+- сына Бхагиратхи  · n=1  · mahabharata-bhishmaparva
+
+### `BAgIraTIsuta` — bhāgīrathīsuta  (n=1)
+
+- чьей матерью была Бхагиратхи  · n=1  · mahabharata-ashvamedhikaparva
+
+### `BAgIraTItIrAt` — bhāgīrathītīrāt  (n=1)
+
+- с берега Бхагиратхи  · n=1  · mahabharata-ashramavasikaparva
+
+### `BAgIraTItIra` — bhāgīrathītīra  (n=4)
+
+- на берегу Бхагиратхи  · n=1  · mahabharata-aranyakaparva
+- к берегам Бхагиратхи  · n=1  · shukasaptati
+- берега Бхагиратхи  · n=1  · mahabharata-ashramavasikaparva
+- берегу Бхагиратхи  · n=1  · mahabharata-shantiparva
+
+### `BAgIraTItIratapovana` — bhāgīrathītīratapovana  (n=1)
+
+- рощи обителей на берегах Ганги  · n=1  · raghuvamsha
+
+### `BAgIraTItIre` — bhāgīrathītīre  (n=2)
+
+- на берегу Бхагиратхи  · n=2  · mahabharata-ashramavasikaparva
+
+### `BAgIraTa` — bhāgīratha  (n=1)
+
+- Бхагиратха  · n=1  · mahabharata-adiparva
+
+### `BAgIraTyAH` — bhāgīrathyāḥ  (n=2)
+
+- Бхагиратхи  · n=2  · ramayana-ayodhyakanda
+
+### `BAgIraTyAm` — bhāgīrathyām  (n=5)
+
+- в Ганге  · n=1  · mahabharata-adiparva
+- на Ганге  · n=1  · mahabharata-adiparva
+- Бхагиратхи  · n=1  · mahabharata-aranyakaparva
+- в Бхагиратхи  · n=1  · mahabharata-aranyakaparva
+- у реки Бхагиратхи  · n=1  · mahabharata-adiparva
+
+### `BAgIya` — bhāgīya  (n=1)
+
+- ведущий  · n=1  · yoga-sutry_vyasa-bhashya
+
+### `BAga` — bhāga  (n=132)
+
+- доля  · n=46  · atharvaveda, rigveda, rigveda, atharvaveda, atharvaveda, mahabharata-karnaparva, mahabharata-shalyaparva, rigveda, atharvaveda, atharvaveda, atharvaveda, manavadharmashastra, rigveda, mahabharata-udyogaparva, rigveda, mahabharata-ashvamedhikaparva, atharvaveda, atharvaveda, atharvaveda
+- долю  · n=33  · rigveda, rigveda, rigveda, mahabharata-udyogaparva, atharvaveda, ramayana-ayodhyakanda, ramayana-balakanda, mahabharata-aranyakaparva, rigveda, atharvaveda, atharvaveda, atharvaveda
+- доли  · n=13  · mahabharata-shalyaparva, rigveda, mahabharata-karnaparva, manavadharmashastra, ramayana-balakanda, mahabharata-udyogaparva, rigveda, mahabharata-ashvamedhikaparva, atharvaveda
+- часть  · n=7  · manavadharmashastra, mahabharata-adiparva, shv-up, mahabharata-sauptikaparva
+- доле  · n=5  · rigveda, manavadharmashastra, rigveda, atharvaveda
+- участью  · n=3  · ramayana-ayodhyakanda
+- долей  · n=3  · rigveda, rigveda, mahabharata-dronaparva
+- части  · n=3  · nyaya-bhashya, yoga-sutry_vyasa-bhashya, vedanga_jyotisha
+- судьбе  · n=2  · rigveda
+- жертву  · n=1  · ramayana-ayodhyakanda
+- вниз  · n=1  · ramayana-sundarakanda
+- подстилке  · n=1  · ramayana-balakanda
+- подстилка  · n=1  · ramayana-balakanda
+- дар  · n=1  · mahabharata-aranyakaparva
+- права  · n=1  · rigveda
+- сторону  · n=1  · rigveda
+- сторона  · n=1  · rigveda
+- отчасти  · n=1  · kama-sutra
+- частица  · n=1  · mahabharata-adiparva
+- предназначен  · n=1  · mahabharata-udyogaparva
+- парой  · n=1  · mahabharata-udyogaparva
+- партия  · n=1  · mahabharata-udyogaparva
+- противостоящей партией  · n=1  · mahabharata-udyogaparva
+- половина  · n=1  · devi-gita
+- к промежности  · n=1  · hatha-yoga-pradipika
+- нажимая  · n=1  · yotat-up
+
+### `BAgaBAj` — bhāgabhāj  (n=1)
+
+- пользоваться долею  · n=1  · mahabharata-adiparva
+
+### `BAgaBakti` — bhāgabhakti  (n=1)
+
+- деление на части  · n=1  · nyaya-bhashya
+
+### `BAgaDeyAni` — bhāgadheyāni  (n=2)
+
+- доли  · n=2  · rigveda
+
+### `BAgaDeya` — bhāgadheya  (n=22)
+
+- долю  · n=5  · rigveda, rigveda, rigveda, atharvaveda, br-up
+- судьбы  · n=5  · mahabharata-dronaparva, mahabharata-adiparva, mahabharata-shalyaparva, atharvaveda
+- доля  · n=4  · manavadharmashastra, mahabharata-udyogaparva, atharvaveda, atharvaveda
+- судьба  · n=2  · mahabharata-shalyaparva, mahabharata-sabhaparva
+- долей  · n=1  · manavadharmashastra
+- удачу  · n=1  · mahabharata-aranyakaparva
+- проявления судьбы  · n=1  · mahabharata-dronaparva
+- выделение доли  · n=1  · atharvaveda
+- принадлежность  · n=1  · atharvaveda
+- части  · n=1  · vedartha-samgraha_ramanuja
+
+### `BAgaDeyaM` — bhāgadheyaṃ  (n=1)
+
+- доля  · n=1  · atharvaveda
+
+### `BAgaDeyam` — bhāgadheyam  (n=2)
+
+- наделение долей  · n=2  · rigveda
+
+### `BAgaDeyapuraskfta` — bhāgadheyapuraskṛta  (n=2)
+
+- самый достойный  · n=1  · mahabharata-udyogaparva
+- благоприятствовала судьба  · n=1  · mahabharata-sabhaparva
+
+### `BAgaDeyasamAyukta` — bhāgadheyasamāyukta  (n=1)
+
+- подвластный судьбе  · n=1  · mahabharata-shalyaparva
+
+### `BAgaDeyataH` — bhāgadheyataḥ  (n=2)
+
+- как не рок  · n=1  · mahabharata-bhishmaparva
+- судьбы  · n=1  · mahabharata-shalyaparva
+
+### `BAgaDeyatas` — bhāgadheyatas  (n=1)
+
+- судьбы  · n=1  · mahabharata-bhishmaparva
+
+### `BAgaH` — bhāgaḥ  (n=6)
+
+- доля  · n=4  · mahabharata-aranyakaparva, rigveda, rigveda, mahabharata-shalyaparva
+- часть  · n=2  · ramayana-aranyakanda
+
+### `BAgaM` — bhāgaṃ  (n=2)
+
+- долю  · n=2  · rigveda
+
+### `BAgaSaH` — bhāgaśaḥ  (n=28)
+
+- по частям  · n=3  · mahabharata-adiparva, mahabharata-aranyakaparva, mahabharata-dronaparva
+- на части  · n=3  · mahabharata-virataparva, mahabharata-sauptikaparva
+- порциями  · n=2  · ramayana-sundarakanda
+- разделив  · n=2  · mahabharata-aranyakaparva
+- по отдельности  · n=2  · mahabharata-bhishmaparva, mahabharata-karnaparva
+- попеременно  · n=2  · mahabharata-dronaparva
+- по отдельным подразделениям  · n=2  · mahabharata-dronaparva
+- последовательно  · n=1  · mahabharata-adiparva
+- в надлежащей пропорции  · n=1  · manavadharmashastra
+- одна за другою  · n=1  · mahabharata-bhishmaparva
+- на мелкие кусочки  · n=1  · mahabharata-dronaparva
+- в соответствии с долей участия  · n=1  · mahabharata-udyogaparva
+- на должном расстоянии  · n=1  · mahabharata-udyogaparva
+- постепенно  · n=1  · mahabharata-karnaparva
+- одну за другой  · n=1  · mahabharata-ashvamedhikaparva
+- частями  · n=1  · mahabharata-ashvamedhikaparva
+- на должных расстояниях  · n=1  · mahabharata-sabhaparva
+- по своему назначению  · n=1  · mahabharata-virataparva
+- одно за другим  · n=1  · mahabharata-virataparva
+
+### `BAgaSas` — bhāgaśas  (n=1)
+
+- разделяясь  · n=1  · gitarthasamgraha-abhinavagupta
+
+### `BAgaiH` — bhāgaiḥ  (n=1)
+
+- частями  · n=1  · mahabharata-adiparva
+
+### `BAgam` — bhāgam  (n=39)
+
+- долю  · n=27  · rigveda, rigveda, ramayana-ayodhyakanda, ramayana-aranyakanda, rigveda, rigveda, atharvaveda, atharvaveda, mahabharata-aranyakaparva, rigveda, rigveda, mahabharata-shalyaparva, atharvaveda, atharvaveda, atharvaveda, mahabharata-sauptikaparva
+- доле  · n=3  · atharvaveda, rigveda
+- доля  · n=2  · atharvaveda
+- доли  · n=2  · atharvaveda, mahabharata-sauptikaparva
+- с учениками  · n=1  · ramayana-ayodhyakanda
+- период  · n=1  · manavadharmashastra
+- часть  · n=1  · manavadharmashastra
+- долей  · n=1  · rigveda
+- другим  · n=1  · mahabharata-sabhaparva
+
+### `BAgapratigraha` — bhāgapratigraha  (n=1)
+
+- получить свою долю  · n=1  · ramayana-balakanda
+
+### `BAgata` — bhāgata  (n=2)
+
+- противостоящую пару  · n=1  · mahabharata-udyogaparva
+- на долю  · n=1  · mahabharata-udyogaparva
+
+### `BAgau` — bhāgau  (n=1)
+
+- доли  · n=1  · mahabharata-karnaparva
+
+### `BAgavitti` — bhāgavitti  (n=3)
+
+- Бхагавитти  · n=3  · br-up
+
+### `BAge` — bhāge  (n=3)
+
+- долю  · n=1  · rigveda
+- части  · n=1  · mahabharata-bhishmaparva
+- доля  · n=1  · mahabharata-sauptikaparva
+
+### `BAgeByaH` — bhāgebhyaḥ  (n=1)
+
+- долями  · n=1  · mahabharata-aranyakaparva
+
+### `BAgena` — bhāgena  (n=3)
+
+- участью  · n=1  · ramayana-ayodhyakanda
+- партией  · n=1  · mahabharata-udyogaparva
+- долю  · n=1  · mahabharata-udyogaparva
+
+### `BAgin` — bhāgin  (n=14)
+
+- пожинают  · n=2  · ramayana-ayodhyakanda
+- наделяется  · n=2  · mahabharata-aranyakaparva
+- рожденный для  · n=1  · ramayana-ayodhyakanda
+- имеющими право  · n=1  · manavadharmashastra
+- делят  · n=1  · manavadharmashastra
+- участвуют в дележе  · n=1  · manavadharmashastra
+- единоутробные сестры  · n=1  · manavadharmashastra
+- горюющий  · n=1  · ramayana-aranyakanda
+- их  · n=1  · mahabharata-aranyakaparva
+- погубленный  · n=1  · buddhacharita
+- ждут  · n=1  · buddhacharita
+- испытывает  · n=1  · gitarthasamgraha-abhinavagupta
+
+### `BAgineyAH` — bhāgineyāḥ  (n=1)
+
+- сыновья сестер  · n=1  · mahabharata-udyogaparva
+
+### `BAgineyAn` — bhāgineyān  (n=1)
+
+- сыновей сестер  · n=1  · mahabharata-dronaparva
+
+### `BAgineyAnnijAMstyaktvA` — bhāgineyānnijāṃstyaktvā  (n=1)
+
+- Оставив сыновей родной сестры  · n=1  · mahabharata-udyogaparva
+
+### `BAgineya` — bhāgineya  (n=11)
+
+- сыновей родной сестры  · n=2  · mahabharata-shalyaparva
+- сыну своей сестры  · n=1  · mahabharata-adiparva
+- внук  · n=1  · mahabharata-adiparva
+- сын своей сестры  · n=1  · mahabharata-adiparva
+- о сын сестры  · n=1  · mahabharata-bhishmaparva
+- племянникам  · n=1  · mahabharata-bhishmaparva
+- племянник  · n=1  · mahabharata-bhishmaparva
+- дочерних сынов  · n=1  · mahabharata-shalyaparva
+- племянником  · n=1  · mahabharata-striparva
+- племянником, сыном сестры  · n=1  · mahabharata-striparva
+
+### `BAgineyakfte` — bhāgineyakṛte  (n=2)
+
+- ради сынов сестры  · n=1  · mahabharata-udyogaparva
+- ради пандавов  · n=1  · mahabharata-udyogaparva
+
+### `BAginyau` — bhāginyau  (n=1)
+
+- соучастниками  · n=1  · ait-up
+
+### `BAgyAKya` — bhāgyākhya  (n=2)
+
+- именуемая счастье  · n=2  · sankhya-karika
+
+### `BAgyAni` — bhāgyāni  (n=1)
+
+- заслуги  · n=1  · shatakatrayam
+
+### `BAgyAparADena` — bhāgyāparādhena  (n=1)
+
+- по воле судьбы  · n=1  · buddhacharita
+
+### `BAgya` — bhāgya  (n=14)
+
+- счастье  · n=4  · sankhya-karika
+- судьбы  · n=3  · ramayana-aranyakanda, mahabharata-dronaparva, buddhacharita
+- Бхагья  · n=2  · mahabharata-bhishmaparva
+- благая участь  · n=1  · ramayana-sundarakanda
+- счастливая доля  · n=1  · mahabharata-shalyaparva
+- награды  · n=1  · shatakatrayam-serebryakov
+- доли  · n=1  · mahabharata-striparva
+- суждено  · n=1  · mahabharata-svargarohanikaparva
+
+### `BAgyaSeza` — bhāgyaśeṣa  (n=1)
+
+- от благой доли  · n=1  · ramayana-sundarakanda
+
+### `BAgyahIna` — bhāgyahīna  (n=2)
+
+- обездоленного  · n=1  · mahabharata-dronaparva
+- Покинула удача  · n=1  · devi-gita
+
+### `BAgyaiH` — bhāgyaiḥ  (n=1)
+
+- счастью  · n=1  · mahabharata-sabhaparva
+
+### `BAgyam` — bhāgyam  (n=3)
+
+- не подобает  · n=1  · ramayana-ayodhyakanda
+- судьбу  · n=1  · ramayana-ayodhyakanda
+- счастье  · n=1  · raghuvamsha
+
+### `BAgyarahita` — bhāgyarahita  (n=1)
+
+- злосчастный  · n=1  · ramayana-sundarakanda
+
+### `BAgyasamAyukta` — bhāgyasamāyukta  (n=1)
+
+- наделенный счастьем  · n=1  · mahabharata-shalyaparva
+
+### `BAgyavAn` — bhāgyavān  (n=2)
+
+- удачлив  · n=1  · devi-gita
+- счастлив  · n=1  · shukasaptati
+
+### `BAgyavanASrita` — bhāgyavanāśrita  (n=1)
+
+- укрыться пытаются в лесу судьбы  · n=1  · buddhacharita
+
+### `BAgyavantaH` — bhāgyavantaḥ  (n=2)
+
+- счастливец  · n=1  · shatakatrayam
+- счастливцы  · n=1  · shatakatrayam-serebryakov
+
+### `BAgyavat` — bhāgyavat  (n=1)
+
+- удачлив  · n=1  · devi-gita
+
+### `BAgyaviplava` — bhāgyaviplava  (n=2)
+
+- злая судьба  · n=2  · raghuvamsha
+
+### `BAgyayoga` — bhāgyayoga  (n=1)
+
+- вмешательству судьбы  · n=1  · mahabharata-shalyaparva
+
+### `BAgyena` — bhāgyena  (n=1)
+
+- счастливой  · n=1  · ramayana-aranyakanda
+
+### `BAhi` — bhāhi  (n=6)
+
+- сияй  · n=2  · rigveda
+- свети  · n=2  · rigveda, tai-up
+- воссияй  · n=1  · rigveda
+- сверкай  · n=1  · atharvaveda
+
+### `BAj` — bhāj  (n=6)
+
+- жаждут  · n=1  · ramayana-ayodhyakanda
+- наделил  · n=1  · rigveda
+- чертоге  · n=1  · raghuvamsha
+- чей  · n=1  · shatakatrayam
+- страдал  · n=1  · shatakatrayam
+- изгибающие  · n=1  · shatakatrayam-serebryakov
+
+### `BAjAm` — bhājām  (n=1)
+
+- пребывающего  · n=1  · hatha-yoga-pradipika
+
+### `BAjamAna` — bhājamāna  (n=1)
+
+- сияющего  · n=1  · ramayana-sundarakanda
+
+### `BAjanAnAM` — bhājanānāṃ  (n=2)
+
+- сосуды  · n=2  · kama-sutra
+
+### `BAjanAni` — bhājanāni  (n=3)
+
+- сосудов  · n=1  · mahabharata-adiparva
+- емкостей  · n=1  · mahabharata-ashvamedhikaparva
+- кубки  · n=1  · mahabharata-ashramavasikaparva
+
+### `BAjana` — bhājana  (n=19)
+
+- кувшин  · n=3  · ramayana-ayodhyakanda, mahabharata-aranyakaparva
+- блюда  · n=2  · ramayana-sundarakanda, mahabharata-mausalaparva
+- чаши  · n=2  · ramayana-sundarakanda
+- сосуды  · n=2  · mahabharata-aranyakaparva, mahabharata-ashvamedhikaparva
+- сосуд  · n=2  · mahabharata-adiparva, buddhacharita
+- блюдами  · n=1  · ramayana-sundarakanda
+- сосудов  · n=1  · manavadharmashastra
+- изготовленных  · n=1  · ramayana-balakanda
+- достигает  · n=1  · mahabharata-udyogaparva
+- утварь  · n=1  · mahabharata-udyogaparva
+- прибежище  · n=1  · mahabharata-shalyaparva
+- людей  · n=1  · shatakatrayam
+- способные  · n=1  · shatakatrayam-serebryakov
+
+### `BAjanaM` — bhājanaṃ  (n=1)
+
+- миску  · n=1  · mahabharata-adiparva
+
+### `BAjanam` — bhājanam  (n=2)
+
+- посуды  · n=1  · ramayana-ayodhyakanda
+- сосуд  · n=1  · mahabharata-ashvamedhikaparva
+
+### `BAjanasTa` — bhājanastha  (n=3)
+
+- в сосудах  · n=3  · ramayana-ayodhyakanda
+
+### `BAjane` — bhājane  (n=1)
+
+- сосуде  · n=1  · manavadharmashastra
+
+### `BAjanezu` — bhājaneṣu  (n=1)
+
+- блюдах  · n=1  · ramayana-sundarakanda
+
+### `BAjayaTa` — bhājayatha  (n=1)
+
+- наделите  · n=1  · rigveda
+
+### `BAjayate` — bhājayate  (n=1)
+
+- Наделите  · n=1  · atharvaveda
+
+### `BAjayuH` — bhājayuḥ  (n=1)
+
+- наделяющий  · n=1  · rigveda
+
+### `BAk` — bhāk  (n=2)
+
+- будет жить  · n=1  · mahabharata-aranyakaparva
+- исключай  · n=1  · rigveda
+
+### `BAkta` — bhākta  (n=6)
+
+- фигуральный  · n=2  · nyaya-bhashya
+- вторичный  · n=1  · nyaya-bhashya
+- иллюзия  · n=1  · nyaya-bhashya
+- ложное  · n=1  · nyaya-bhashya
+- вторичный смысл  · n=1  · nyaya-bhashya
+
+### `BAktva` — bhāktva  (n=2)
+
+- принадлежность  · n=2  · gitarthasamgraha-abhinavagupta
+
+### `BAllaveya` — bhāllaveya  (n=3)
+
+- Бхаллавея  · n=2  · ch-up
+- Бхаллавее  · n=1  · ch-up
+
+### `BAlukIputra` — bhālukīputra  (n=1)
+
+- сына Бхалуки  · n=1  · br-up
+
+### `BAluki` — bhāluki  (n=2)
+
+- Бхалуки  · n=2  · mahabharata-aranyakaparva, mahabharata-sabhaparva
+
+### `BAlukiH` — bhālukiḥ  (n=1)
+
+- Бхалуки  · n=1  · mahabharata-sabhaparva
+
+### `BAmAsa` — bhāmāsa  (n=4)
+
+- лучи  · n=3  · rigveda
+- вспышки света  · n=1  · rigveda
+
+### `BAmAsaH` — bhāmāsaḥ  (n=1)
+
+- лучи  · n=1  · rigveda
+
+### `BAmAya` — bhāmāya  (n=1)
+
+- ярости  · n=1  · atharvaveda
+
+### `BAma` — bhāma  (n=9)
+
+- вспышка ярости  · n=2  · rigveda
+- вспышки ярости  · n=2  · rigveda
+- вспышка (ярости)  · n=2  · atharvaveda
+- сияние  · n=1  · rigveda
+- сердце  · n=1  · gitagovinda
+- ярости  · n=1  · atharvaveda
+
+### `BAmaM` — bhāmaṃ  (n=2)
+
+- Ярость  · n=2  · rigveda
+
+### `BAmanIH` — bhāmanīḥ  (n=2)
+
+- несущий сияние  · n=1  · ch-up
+- Несущий сияние  · n=1  · ch-up
+
+### `BAmi` — bhāmi  (n=2)
+
+- являюсь  · n=2  · devi-gita
+
+### `BAminI` — bhāminī  (n=87)
+
+- красавица  · n=27  · mahabharata-aranyakaparva, mahabharata-adiparva, ramayana-sundarakanda, mahabharata-ashvamedhikaparva, mahabharata-virataparva, mahabharata-udyogaparva, mahabharata-shalyaparva, mahabharata-striparva
+- прекрасная  · n=18  · mahabharata-aranyakaparva, mahabharata-virataparva, ramayana-ayodhyakanda, ramayana-sundarakanda, ramayana-aranyakanda, mahabharata-ashvamedhikaparva, mahabharata-ashramavasikaparva
+- прелестная  · n=6  · mahabharata-virataparva, mahabharata-adiparva, mahabharata-udyogaparva
+- любимая  · n=4  · ramayana-ayodhyakanda
+- Сита  · n=3  · ramayana-ayodhyakanda, ramayana-aranyakanda
+- о прекрасная  · n=2  · ramayana-ayodhyakanda, ramayana-sundarakanda
+- женщина  · n=2  · ramayana-sundarakanda, mahabharata-aranyakaparva
+- прекрасная женщина  · n=2  · ramayana-sundarakanda, mahabharata-shalyaparva
+- прелестная дева  · n=2  · mahabharata-adiparva, mahabharata-shalyaparva
+- молодую жену  · n=1  · mahabharata-adiparva
+- о  · n=1  · ramayana-ayodhyakanda
+- в гневе  · n=1  · ramayana-ayodhyakanda
+- Кайкейи  · n=1  · ramayana-ayodhyakanda
+- Каусалья  · n=1  · ramayana-ayodhyakanda
+- прекрасных  · n=1  · ramayana-ayodhyakanda
+- словно  · n=1  · ramayana-sundarakanda
+- прекрасную женщину  · n=1  · ramayana-sundarakanda
+- о ты, чья прекрасна улыбка  · n=1  · ramayana-sundarakanda
+- прекрасная молодая женщина  · n=1  · ramayana-sundarakanda
+- она  · n=1  · ramayana-aranyakanda
+- Разгневанную  · n=1  · ramayana-aranyakanda
+- красавицы  · n=1  · mahabharata-aranyakaparva
+- прекрасная дева  · n=1  · mahabharata-aranyakaparva
+- прелестной деве  · n=1  · mahabharata-adiparva
+- женщин  · n=1  · mahabharata-udyogaparva
+- супруга  · n=1  · raghuvamsha
+- Прелестная  · n=1  · mahabharata-virataparva
+- Милая  · n=1  · shukasaptati
+- госпожа  · n=1  · shukasaptati
+- Бхамини  · n=1  · mahabharata-shalyaparva
+
+### `BAminIm` — bhāminīm  (n=3)
+
+- красавице  · n=1  · mahabharata-udyogaparva
+- прекрасную  · n=1  · mahabharata-ashvamedhikaparva
+- красавицу  · n=1  · mahabharata-sabhaparva
+
+### `BAminaH` — bhāminaḥ  (n=1)
+
+- гневных  · n=1  · atharvaveda
+
+### `BAmine` — bhāmine  (n=1)
+
+- сверкающего  · n=1  · rigveda
+
+### `BAmini` — bhāmini  (n=26)
+
+- красавица  · n=13  · mahabharata-udyogaparva, mahabharata-aranyakaparva, mahabharata-adiparva, mahabharata-virataparva
+- прекрасная  · n=6  · mahabharata-aranyakaparva, ramayana-ayodhyakanda, ramayana-sundarakanda, mahabharata-virataparva
+- о красавица  · n=2  · mahabharata-adiparva
+- прелестная  · n=2  · mahabharata-adiparva, gitagovinda
+- о прекрасная  · n=1  · ramayana-sundarakanda
+- любимая  · n=1  · mahabharata-aranyakaparva
+- о гневная  · n=1  · mahabharata-sabhaparva
+
+### `BAmino` — bhāmino  (n=1)
+
+- гневных  · n=1  · rigveda
+
+### `BAmita` — bhāmita  (n=2)
+
+- в гневе  · n=2  · shv-up
+
+### `BAmitaH` — bhāmitaḥ  (n=1)
+
+- рассвирепев  · n=1  · rigveda
+
+### `BAna` — bhāna  (n=1)
+
+- проявление  · n=1  · sankhya-karika
+
+### `BAnau` — bhānau  (n=1)
+
+- солнце  · n=1  · mahabharata-udyogaparva
+
+### `BAnavIyASca` — bhānavīyāśca  (n=2)
+
+- солнечными  · n=2  · mai-up
+
+### `BAnava` — bhānava  (n=1)
+
+- лучи  · n=1  · rigveda
+
+### `BAnavaH` — bhānavaḥ  (n=5)
+
+- Лучи  · n=2  · rigveda, rigveda
+- светлые дорожки  · n=2  · atharvaveda
+- лучи  · n=1  · mahabharata-adiparva
+
+### `BAnavas` — bhānavas  (n=1)
+
+- лучи  · n=1  · rigveda
+
+### `BAnave` — bhānave  (n=2)
+
+- блеску  · n=2  · rigveda
+
+### `BAnavo` — bhānavo  (n=1)
+
+- лучи  · n=1  · rigveda
+
+### `BAno` — bhāno  (n=1)
+
+- солнца  · n=1  · mahabharata-aranyakaparva
+
+### `BAnoH` — bhānoḥ  (n=2)
+
+- солнца  · n=2  · mahabharata-aranyakaparva, megha-duta
+
+### `BAnta` — bhānta  (n=2)
+
+- светящим  · n=1  · shv-up
+- сияющее  · n=1  · mai-up
+
+### `BAntam` — bhāntam  (n=5)
+
+- светящим  · n=3  · kat-up, mun-up
+- сияющим  · n=1  · devi-gita
+- сияющий  · n=1  · pratyabhijna-hridaya_kshemaraja
+
+### `BAnti` — bhānti  (n=21)
+
+- сияют  · n=6  · ramayana-aranyakanda, mahabharata-adiparva, ramayana-sundarakanda, rigveda, paramarthasara-abhinavagupta
+- светят  · n=4  · kat-up, mun-up
+- похожи  · n=2  · ramayana-ayodhyakanda, mahabharata-karnaparva
+- блистали  · n=1  · mahabharata-adiparva
+- Растеряли свою красоту  · n=1  · ramayana-ayodhyakanda
+- прекрасные  · n=1  · ramayana-ayodhyakanda
+- светились  · n=1  · mahabharata-aranyakaparva
+- выглядели великолепно  · n=1  · mahabharata-dronaparva
+- благоденствуют  · n=1  · mahabharata-udyogaparva
+- впряжены  · n=1  · mahabharata-udyogaparva
+- блистают  · n=1  · devi-gita
+- как бы  · n=1  · pratyabhijna-hridaya_kshemaraja
+
+### `BAnu` — bhānu  (n=78)
+
+- солнце  · n=15  · mahabharata-karnaparva, mahabharata-aranyakaparva, hatha-yoga-pradipika, rigveda, mahabharata-adiparva, gitarthasamgraha-abhinavagupta, megha-duta
+- Бхану  · n=13  · mahabharata-aranyakaparva, mahabharata-adiparva, mahabharata-shantiparva, mahabharata-svargarohanikaparva
+- луч  · n=13  · rigveda, rigveda, rigveda, rigveda, rigveda, rigveda, atharvaveda
+- лучом  · n=5  · rigveda, rigveda, rigveda, rigveda
+- солнца  · n=4  · mahabharata-dronaparva, mahabharata-adiparva, manavadharmashastra
+- Солнце  · n=4  · mahabharata-shantiparva, mahabharata-aranyakaparva, mahabharata-udyogaparva, shatakatrayam-serebryakov
+- лучи  · n=3  · rigveda
+- лучами  · n=3  · rigveda, rigveda, rigveda
+- светом  · n=3  · rigveda, rigveda
+- Пламени  · n=2  · rigveda
+- Солнца  · n=1  · mahabharata-adiparva
+- Сурья  · n=1  · mahabharata-aranyakaparva
+- свет  · n=1  · rigveda
+- сиянием  · n=1  · rigveda
+- блеском  · n=1  · rigveda
+- блеск  · n=1  · rigveda
+- светило  · n=1  · mahabharata-bhishmaparva
+- солнцем  · n=1  · mahabharata-udyogaparva
+- солнечный диск  · n=1  · mahabharata-udyogaparva
+- положение тела  · n=1  · hatha-yoga-pradipika
+- Луч  · n=1  · atharvaveda
+- луч света  · n=1  · atharvaveda
+- света  · n=1  · mai-up
+
+### `BAnuBiH` — bhānubhiḥ  (n=2)
+
+- огнями  · n=1  · rigveda
+- лучами  · n=1  · rigveda
+
+### `BAnuBir` — bhānubhir  (n=3)
+
+- пламенем  · n=2  · rigveda
+- пламя  · n=1  · rigveda
+
+### `BAnuH` — bhānuḥ  (n=6)
+
+- солнце  · n=2  · mahabharata-bhishmaparva, shatakatrayam
+- Бог Солнца  · n=1  · mahabharata-aranyakaparva
+- Солнца  · n=1  · mahabharata-aranyakaparva
+- Солнце  · n=1  · mahabharata-dronaparva
+- луч  · n=1  · rigveda
+
+### `BAnuM` — bhānuṃ  (n=1)
+
+- луч  · n=1  · rigveda
+
+### `BAnudatta` — bhānudatta  (n=1)
+
+- Бханудатта  · n=1  · mahabharata-dronaparva
+
+### `BAnudeva` — bhānudeva  (n=1)
+
+- Бханудеву  · n=1  · mahabharata-karnaparva
+
+### `BAnukI` — bhānukī  (n=1)
+
+- Бхануки  · n=1  · hatha-yoga-pradipika
+
+### `BAnum` — bhānum  (n=9)
+
+- свет  · n=3  · rigveda, rigveda
+- сияние  · n=3  · rigveda, rigveda
+- луч  · n=2  · rigveda, rigveda
+- блеск  · n=1  · rigveda
+
+### `BAnumAn` — bhānumān  (n=4)
+
+- солнце  · n=1  · mahabharata-adiparva
+- блистающее  · n=1  · mahabharata-bhishmaparva
+- Солнце  · n=1  · mahabharata-karnaparva
+- Сиятельный  · n=1  · mahabharata-ashramavasikaparva
+
+### `BAnumadBiH` — bhānumadbhiḥ  (n=1)
+
+- сверкающими  · n=1  · rigveda
+
+### `BAnumant` — bhānumant  (n=14)
+
+- солнце  · n=2  · ramayana-sundarakanda, mahabharata-udyogaparva
+- Солнце  · n=2  · mahabharata-dronaparva, mahabharata-ashvamedhikaparva
+- блистая  · n=1  · mahabharata-adiparva
+- сияющие  · n=1  · mahabharata-adiparva
+- озаряющую  · n=1  · ramayana-sundarakanda
+- Сиятельного  · n=1  · ramayana-balakanda
+- Бханумана  · n=1  · mahabharata-bhishmaparva
+- Бхануман  · n=1  · mahabharata-bhishmaparva
+- лучистое  · n=1  · mahabharata-udyogaparva
+- сверкающий  · n=1  · rigveda
+- солнцу  · n=1  · mahabharata-karnaparva
+- блистательные  · n=1  · mahabharata-sabhaparva
+
+### `BAnumantam` — bhānumantam  (n=3)
+
+- солнце  · n=1  · mahabharata-aranyakaparva
+- сверкающего  · n=1  · mahabharata-aranyakaparva
+- сияющего  · n=1  · mahabharata-aranyakaparva
+
+### `BAnumanti` — bhānumanti  (n=3)
+
+- сияющих  · n=1  · mahabharata-aranyakaparva
+- блестящие  · n=1  · mahabharata-adiparva
+- сверкающее  · n=1  · mahabharata-virataparva
+
+### `BAnumat` — bhānumat  (n=15)
+
+- сверкающий  · n=4  · mahabharata-aranyakaparva, mahabharata-dronaparva, mahabharata-karnaparva, mahabharata-ashvamedhikaparva
+- сверкающим  · n=1  · mahabharata-adiparva
+- Прекрасного  · n=1  · ramayana-aranyakanda
+- нарядные  · n=1  · mahabharata-aranyakaparva
+- сверкающее  · n=1  · mahabharata-aranyakaparva
+- солнце  · n=1  · mahabharata-bhishmaparva
+- сверкающих  · n=1  · mahabharata-dronaparva
+- солнца  · n=1  · mahabharata-dronaparva
+- светозарное  · n=1  · mahabharata-dronaparva
+- голова  · n=1  · mahabharata-karnaparva
+- солнечных  · n=1  · kumarasambhava
+- сияющий  · n=1  · mahabharata-shalyaparva
+
+### `BAnumatI` — bhānumatī  (n=2)
+
+- Бханумати  · n=2  · mahabharata-aranyakaparva
+
+### `BAnumatIva` — bhānumatīva  (n=1)
+
+- как ночная лилия не расцветает под лучами палящего солнца  · n=1  · raghuvamsha
+
+### `BAnumatyaH` — bhānumatyaḥ  (n=1)
+
+- Светозарны  · n=1  · mahabharata-ashvamedhikaparva
+
+### `BAnumaya` — bhānumaya  (n=1)
+
+- из Солнца  · n=1  · mahabharata-aranyakaparva
+
+### `BAnunA` — bhānunā  (n=16)
+
+- лучом  · n=6  · rigveda, rigveda, rigveda, rigveda
+- сиянием  · n=3  · rigveda
+- светом  · n=3  · rigveda, rigveda
+- блеском  · n=2  · rigveda
+- Солнцем  · n=1  · mahabharata-bhishmaparva
+- вспышке  · n=1  · rigveda
+
+### `BAnus` — bhānus  (n=1)
+
+- Луч  · n=1  · rigveda
+
+### `BAnutaH` — bhānutaḥ  (n=1)
+
+- от Бхану  · n=1  · mahabharata-aranyakaparva
+
+### `BAr` — bhār  (n=2)
+
+- бремя  · n=1  · mahabharata-aranyakaparva
+- груз  · n=1  · mahabharata-dronaparva
+
+### `BArA` — bhārā  (n=2)
+
+- нош  · n=2  · rigveda
+
+### `BArABiBUtAtman` — bhārābhibhūtātman  (n=1)
+
+- обессилевший от ноши  · n=1  · mahabharata-ashvamedhikaparva
+
+### `BArABitaptANgaH` — bhārābhitaptāṅgaḥ  (n=1)
+
+- тот, чье тело отягощено бременем забот  · n=1  · mahabharata-udyogaparva
+
+### `BArArtA` — bhārārtā  (n=1)
+
+- страдая от бремени  · n=1  · mahabharata-adiparva
+
+### `BArArtaH` — bhārārtaḥ  (n=2)
+
+- в изнеможении от тяжелой ноши  · n=1  · mahabharata-udyogaparva
+- обессиленный тяжестью  · n=1  · mahabharata-udyogaparva
+
+### `BArAvataraRa` — bhārāvataraṇa  (n=3)
+
+- ноша земли  · n=2  · mahabharata-mausalaparva
+- облегчить ношу  · n=1  · mahabharata-aranyakaparva
+
+### `BArDa` — bhārdha  (n=2)
+
+- половина года  · n=1  · vedanga_jyotisha
+- половина  · n=1  · vedanga_jyotisha
+
+### `BArUpa` — bhārūpa  (n=4)
+
+- образом света  · n=2  · mai-up
+- образ света  · n=1  · mai-up
+- образ — свет  · n=1  · mai-up
+
+### `BArUpaH` — bhārūpaḥ  (n=2)
+
+- чей образ – свет  · n=1  · ch-up
+- Чей образ — свет  · n=1  · ch-up
+
+### `BAra` — bhāra  (n=56)
+
+- бремя  · n=17  · mahabharata-dronaparva, ramayana-ayodhyakanda, mahabharata-udyogaparva, mahabharata-adiparva, ramayana-aranyakanda, ramayana-balakanda, mahabharata-aranyakaparva, mahabharata-sabhaparva, atharvaveda, gitagovinda, mahabharata-striparva
+- тяжесть  · n=5  · mahabharata-udyogaparva, shatakatrayam-serebryakov, gitagovinda
+- ношу  · n=4  · ramayana-ayodhyakanda, mahabharata-aranyakaparva, mahabharata-adiparva
+- груз  · n=4  · ramayana-sundarakanda, rigveda, mahabharata-karnaparva, rigveda
+- тяжестью  · n=4  · ramayana-aranyakanda, kama-sutra, gitagovinda
+- ноша  · n=4  · mahabharata-aranyakaparva, mahabharata-striparva
+- грузом  · n=1  · ramayana-ayodhyakanda
+- под  · n=1  · ramayana-aranyakanda
+- уставших  · n=1  · ramayana-aranyakanda
+- попечении  · n=1  · ramayana-balakanda
+- бремя (власти)  · n=1  · mahabharata-aranyakaparva
+- бхаров  · n=1  · mahabharata-aranyakaparva
+- поручение  · n=1  · mahabharata-adiparva
+- трудно  · n=1  · mahabharata-adiparva
+- труднейшую задачу  · n=1  · mahabharata-dronaparva
+- бремени  · n=1  · mahabharata-bhishmaparva
+- независимо  · n=1  · mahabharata-udyogaparva
+- переноске тяжестей  · n=1  · mahabharata-udyogaparva
+- забота  · n=1  · mahabharata-udyogaparva
+- значение  · n=1  · mahabharata-virataparva
+- страдания  · n=1  · shatakatrayam
+- сулящими дожди  · n=1  · shatakatrayam-serebryakov
+- обилие  · n=1  · gitagovinda
+- тяжелыхъ  · n=1  · megha-duta
+
+### `BAraBUti` — bhārabhūti  (n=2)
+
+- Бхарабхути  · n=1  · devi-gita
+- В Бхарабхути  · n=1  · devi-gita
+
+### `BAraBft` — bhārabhṛt  (n=1)
+
+- несущий груз  · n=1  · rigveda
+
+### `BAraGna` — bhāraghna  (n=4)
+
+- мощный  · n=1  · mahabharata-dronaparva
+- более выносливый  · n=1  · mahabharata-dronaparva
+- губительную для скопищ  · n=1  · mahabharata-dronaparva
+- способным поражать со страшною силой  · n=1  · mahabharata-shalyaparva
+
+### `BAraH` — bhāraḥ  (n=6)
+
+- бремя  · n=2  · ramayana-aranyakanda, mahabharata-dronaparva
+- носить  · n=1  · ramayana-ayodhyakanda
+- ношу  · n=1  · ramayana-aranyakanda
+- тяжесть  · n=1  · mahabharata-udyogaparva
+- груз  · n=1  · atharvaveda
+
+### `BAraM` — bhāraṃ  (n=2)
+
+- бремя  · n=1  · mahabharata-dronaparva
+- зарок  · n=1  · mahabharata-udyogaparva
+
+### `BAradvAjAnilodDUta` — bhāradvājāniloddhūta  (n=1)
+
+- подгоняемое мощным ветром сына Бхарадваджи  · n=1  · mahabharata-dronaparva
+
+### `BAradvAjAtmaja` — bhāradvājātmaja  (n=2)
+
+- внук Бхарадваджи  · n=1  · mahabharata-bhishmaparva
+- отпрыск Бхарадваджи  · n=1  · mahabharata-udyogaparva
+
+### `BAradvAjIputra` — bhāradvājīputra  (n=2)
+
+- сына Бхарадваджи  · n=2  · br-up
+
+### `BAradvAja` — bhāradvāja  (n=126)
+
+- сын Бхарадваджи  · n=47  · mahabharata-dronaparva, mahabharata-adiparva, mahabharata-bhishmaparva, mahabharata-udyogaparva, mahabharata-shalyaparva, mahabharata-karnaparva, mahabharata-sabhaparva, mahabharata-virataparva
+- сына Бхарадваджи  · n=35  · mahabharata-dronaparva, mahabharata-bhishmaparva, mahabharata-adiparva, mahabharata-virataparva, mahabharata-karnaparva, mahabharata-shalyaparva
+- Бхарадваджа  · n=11  · mahabharata-udyogaparva, br-up, mun-up, mahabharata-adiparva, mahabharata-sauptikaparva, pr-up
+- Бхарадваджи  · n=8  · mahabharata-adiparva, mahabharata-dronaparva, br-up, mahabharata-bhishmaparva, mahabharata-shalyaparva
+- сыном Бхарадваджи  · n=6  · mahabharata-dronaparva, mahabharata-bhishmaparva
+- сыну Бхарадваджи  · n=4  · mahabharata-bhishmaparva, mahabharata-adiparva, mahabharata-dronaparva
+- потомка Бхарадваджи  · n=2  · mahabharata-adiparva, mahabharata-virataparva
+- Бхарадвадже  · n=2  · mahabharata-adiparva, mun-up
+- Сын Бхарадваджи  · n=2  · mahabharata-bhishmaparva, mahabharata-dronaparva
+- потомок Бхарадваджи  · n=2  · mahabharata-dronaparva, mahabharata-karnaparva
+- Дрона  · n=1  · mahabharata-bhishmaparva
+- Сына Бхарадваджи  · n=1  · mahabharata-dronaparva
+- из рода Бхарадваджей  · n=1  · rigveda
+- внук Бхарадваджи  · n=1  · mahabharata-karnaparva
+- отпрыск сына Бхарадваджи  · n=1  · mahabharata-shalyaparva
+- Дроны  · n=1  · mahabharata-virataparva
+- сын, или потомок Бхарадваджи, Дрона  · n=1  · mahabharata-virataparva
+
+### `BAradvAjaH` — bhāradvājaḥ  (n=19)
+
+- сын Бхарадваджи  · n=13  · mahabharata-dronaparva, mahabharata-virataparva, mahabharata-adiparva, mahabharata-bhishmaparva
+- Бхарадваджа  · n=5  · pr-up, mahabharata-dronaparva, mahabharata-shalyaparva, mahabharata-sauptikaparva
+- Дрона  · n=1  · mahabharata-bhishmaparva
+
+### `BAradvAjaM` — bhāradvājaṃ  (n=1)
+
+- на сына Бхарадваджи  · n=1  · mahabharata-dronaparva
+
+### `BAradvAjacikIrzita` — bhāradvājacikīrṣita  (n=1)
+
+- намерение сына Бхарадваджи  · n=1  · mahabharata-dronaparva
+
+### `BAradvAjakfta` — bhāradvājakṛta  (n=1)
+
+- построенные сыном Бхарадваджи  · n=1  · mahabharata-dronaparva
+
+### `BAradvAjakirIwin` — bhāradvājakirīṭin  (n=1)
+
+- сыном Бхарадваджи и Носящим диадему  · n=1  · mahabharata-virataparva
+
+### `BAradvAjam` — bhāradvājam  (n=5)
+
+- сына Бхарадваджи  · n=3  · mahabharata-adiparva, mahabharata-bhishmaparva, mahabharata-dronaparva
+- сыну Бхарадваджи  · n=1  · mahabharata-bhishmaparva
+- Бхарадваджу  · n=1  · mahabharata-sauptikaparva
+
+### `BAradvAjamuKa` — bhāradvājamukha  (n=1)
+
+- во главе с сыном Бхарадваджи  · n=1  · mahabharata-bhishmaparva
+
+### `BAradvAjapurogama` — bhāradvājapurogama  (n=1)
+
+- предводительствуемые сыном Бхарадваджи  · n=1  · mahabharata-udyogaparva
+
+### `BAradvAjaraTa` — bhāradvājaratha  (n=1)
+
+- колесница сына Бхарадваджи  · n=1  · mahabharata-dronaparva
+
+### `BAradvAjasya` — bhāradvājasya  (n=12)
+
+- сына Бхарадваджи  · n=8  · mahabharata-dronaparva, mahabharata-shalyaparva
+- сыну Бхарадваджи  · n=1  · mahabharata-dronaparva
+- потомка Бхарадваджи  · n=1  · mahabharata-karnaparva
+- Дроны  · n=1  · mahabharata-shalyaparva
+- Бхарадваджи  · n=1  · mahabharata-shalyaparva
+
+### `BAradvAje` — bhāradvāje  (n=1)
+
+- сын Бхарадваджи  · n=1  · mahabharata-dronaparva
+
+### `BAradvAjena` — bhāradvājena  (n=14)
+
+- сыном Бхарадваджи  · n=8  · mahabharata-dronaparva, mahabharata-adiparva, mahabharata-bhishmaparva
+- Дроной  · n=1  · mahabharata-adiparva
+- сыном Бхарадваджи (Дроной)  · n=1  · mahabharata-adiparva
+- Бхарадваджей  · n=1  · mahabharata-adiparva
+- Бхарадваджей (Дроной)  · n=1  · mahabharata-adiparva
+- сыну Бхарадваджи  · n=1  · mahabharata-aranyakaparva
+- с сыном Бхарадваджи  · n=1  · mahabharata-dronaparva
+
+### `BAradvAjo` — bhāradvājo  (n=2)
+
+- сын Бхарадваджи  · n=1  · mahabharata-dronaparva
+- Сын Бхарадваджи  · n=1  · mahabharata-dronaparva
+
+### `BAradvAjo'pi` — bhāradvājo'pi  (n=1)
+
+- сын Бхарадваджи  · n=1  · mahabharata-sabhaparva
+
+### `BAram` — bhāram  (n=17)
+
+- бремя  · n=7  · mahabharata-dronaparva, rigveda, mahabharata-adiparva
+- косицу  · n=2  · ramayana-aranyakanda
+- тяжесть  · n=2  · mahabharata-aranyakaparva, mahabharata-udyogaparva
+- ноша  · n=1  · ramayana-ayodhyakanda
+- украшенное  · n=1  · ramayana-aranyakanda
+- ношу  · n=1  · mahabharata-aranyakaparva
+- тяжестью  · n=1  · mahabharata-udyogaparva
+- вес  · n=1  · mahabharata-virataparva
+- тяжелые  · n=1  · gitagovinda
+
+### `BArapIqita` — bhārapīḍita  (n=1)
+
+- отягченная бременем  · n=1  · mahabharata-dronaparva
+
+### `BArapratyavara` — bhārapratyavara  (n=1)
+
+- худшие бременем  · n=1  · mahabharata-udyogaparva
+
+### `BArasADanAH` — bhārasādhanāḥ  (n=1)
+
+- способны нести бремя  · n=1  · mahabharata-udyogaparva
+
+### `BArasADana` — bhārasādhana  (n=10)
+
+- могучие  · n=1  · ramayana-ayodhyakanda
+- высшее напряжение выдерживающий  · n=1  · mahabharata-bhishmaparva
+- большое напряжение выдерживающий  · n=1  · mahabharata-bhishmaparva
+- тяжелыми  · n=1  · mahabharata-dronaparva
+- способный метать самые тяжелые стрелы  · n=1  · mahabharata-karnaparva
+- мощный  · n=1  · mahabharata-shalyaparva
+- способный выдерживать тяжкие удары  · n=1  · mahabharata-virataparva
+- способными выдержать большое напряжение  · n=1  · mahabharata-virataparva
+- способный выдерживать большое напряжение  · n=1  · mahabharata-virataparva
+- всесокрушающими  · n=1  · mahabharata-virataparva
+
+### `BArasADanam` — bhārasādhanam  (n=2)
+
+- способную метать тяжелые стрелы  · n=1  · mahabharata-karnaparva
+- выдерживать большое напряжение  · n=1  · mahabharata-shalyaparva
+
+### `BArasAham` — bhārasāham  (n=1)
+
+- способный вынести натяжение  · n=1  · mahabharata-karnaparva
+
+### `BArasah` — bhārasah  (n=1)
+
+- тяжкими  · n=1  · mahabharata-karnaparva
+
+### `BArasahAH` — bhārasahāḥ  (n=1)
+
+- способные выдерживать тяжесть  · n=1  · mahabharata-udyogaparva
+
+### `BArasahAn` — bhārasahān  (n=1)
+
+- способных нести тяжкую ношу  · n=1  · ramayana-sundarakanda
+
+### `BArasaha` — bhārasaha  (n=4)
+
+- способный выдерживать большое напряжение  · n=2  · mahabharata-dronaparva
+- способная выдерживать любые тяжести  · n=1  · mahabharata-sabhaparva
+- большое напряжение выдерживающий  · n=1  · mahabharata-bhishmaparva
+
+### `BArasahaH` — bhārasahaḥ  (n=1)
+
+- способный нести такое бремя  · n=1  · mahabharata-udyogaparva
+
+### `BArasaham` — bhārasaham  (n=1)
+
+- крепкий  · n=1  · mahabharata-karnaparva
+
+### `BArasya` — bhārasya  (n=1)
+
+- ношу  · n=1  · mahabharata-adiparva
+
+### `BAratA` — bhāratā  (n=2)
+
+- потомков Бхараты  · n=1  · mahabharata-udyogaparva
+- Бхараты  · n=1  · rigveda
+
+### `BAratADyayanAt` — bhāratādhyayanāt  (n=3)
+
+- Чтение Махабхараты  · n=1  · mahabharata-adiparva
+- изучения Бхараты  · n=1  · mahabharata-adiparva
+- чтения Бхараты  · n=1  · mahabharata-adiparva
+
+### `BAratADyayana` — bhāratādhyayana  (n=1)
+
+- познания Бхараты  · n=1  · mahabharata-svargarohanikaparva
+
+### `BAratAH` — bhāratāḥ  (n=5)
+
+- потомки Бхараты  · n=4  · mahabharata-adiparva, mahabharata-dronaparva, mahabharata-udyogaparva, mahabharata-sabhaparva
+- Бхаратами  · n=1  · mahabharata-adiparva
+
+### `BAratAKyAnam` — bhāratākhyānam  (n=2)
+
+- Махабхараты  · n=1  · mahabharata-adiparva
+- повествование о Бхаратах  · n=1  · mahabharata-adiparva
+
+### `BAratAKyAnavistaram` — bhāratākhyānavistaram  (n=2)
+
+- Махабхарата  · n=1  · mahabharata-adiparva
+- подробное повествование о Бхарате  · n=1  · mahabharata-adiparva
+
+### `BAratAcArya` — bhāratācārya  (n=2)
+
+- наставника потомков Бхараты  · n=1  · mahabharata-virataparva
+- Дроны  · n=1  · mahabharata-virataparva
+
+### `BAratAcAryaH` — bhāratācāryaḥ  (n=1)
+
+- наставник бхаратов  · n=1  · mahabharata-sauptikaparva
+
+### `BAratAgrya` — bhāratāgrya  (n=2)
+
+- первейшие потомки Бхараты  · n=1  · mahabharata-udyogaparva
+- о первейший из рода Бхараты  · n=1  · mahabharata-udyogaparva
+
+### `BAratAn` — bhāratān  (n=1)
+
+- потомкам Бхараты  · n=1  · mahabharata-virataparva
+
+### `BAratAnAM` — bhāratānāṃ  (n=5)
+
+- бхаратов  · n=3  · mahabharata-adiparva, mahabharata-karnaparva, mahabharata-sabhaparva
+- потомков Бхараты  · n=1  · mahabharata-adiparva
+- воины из рода Бхараты  · n=1  · mahabharata-dronaparva
+
+### `BAratAnAMcamU` — bhāratānāṃ camū  (n=1)
+
+- войско потомков Бхараты  · n=1  · mahabharata-bhishmaparva
+
+### `BAratAnAm` — bhāratānām  (n=7)
+
+- потомков Бхараты  · n=4  · mahabharata-bhishmaparva, mahabharata-udyogaparva
+- Бхаратов  · n=2  · mahabharata-adiparva, mahabharata-sabhaparva
+- воинов из рода Бхараты  · n=1  · mahabharata-dronaparva
+
+### `BAratApasadasya` — bhāratāpasadasya  (n=1)
+
+- подлейшего из потомков Бхараты  · n=1  · mahabharata-sabhaparva
+
+### `BAratI` — bhāratī  (n=42)
+
+- Бхарати  · n=14  · rigveda, rigveda, rigveda, atharvaveda, rigveda, rigveda, rigveda
+- бхаратийское  · n=8  · mahabharata-dronaparva
+- бхаратов  · n=6  · mahabharata-dronaparva, mahabharata-bhishmaparva, mahabharata-udyogaparva, mahabharata-shalyaparva, mahabharata-virataparva
+- войско бхаратов  · n=3  · mahabharata-karnaparva, mahabharata-udyogaparva
+- речь  · n=2  · mahabharata-udyogaparva, raghuvamsha
+- бхаратское  · n=1  · mahabharata-aranyakaparva
+- о потомках Бхараты  · n=1  · mahabharata-adiparva
+- бхаратийская  · n=1  · mahabharata-adiparva
+- слово  · n=1  · mahabharata-bhishmaparva
+- войско бхаратийское  · n=1  · mahabharata-dronaparva
+- Бхараты  · n=1  · mahabharata-udyogaparva
+- голос  · n=1  · mahabharata-udyogaparva
+- дар речи  · n=1  · mahabharata-udyogaparva
+- Речь  · n=1  · mahabharata-ashvamedhikaparva
+
+### `BAratIBiH` — bhāratībhiḥ  (n=2)
+
+- с женами, происходящими от Бхараты  · n=2  · rigveda
+
+### `BAratIM` — bhāratīṃ  (n=2)
+
+- слово  · n=1  · mahabharata-aranyakaparva
+- бхаратийское  · n=1  · mahabharata-dronaparva
+
+### `BAratIMsenAM` — bhāratīṃ senāṃ  (n=1)
+
+- войско бхаратов  · n=1  · mahabharata-dronaparva
+
+### `BAratIm` — bhāratīm  (n=6)
+
+- бхаратийского  · n=1  · mahabharata-dronaparva
+- в войско бхаратов  · n=1  · mahabharata-dronaparva
+- в бхаратийское войско  · n=1  · mahabharata-dronaparva
+- бхаратийское войско  · n=1  · mahabharata-dronaparva
+- войско бхаратов  · n=1  · mahabharata-shalyaparva
+- речь  · n=1  · mahabharata-virataparva
+
+### `BAratImaDyam` — bhāratīmadhyam  (n=1)
+
+- середину бхаратийского войска  · n=1  · mahabharata-dronaparva
+
+### `BArata` — bhārata  (n=1224)
+
+- потомок Бхараты  · n=308  · mahabharata-udyogaparva, mahabharata-dronaparva, mahabharata-shalyaparva, mahabharata-sabhaparva, mahabharata-adiparva, mahabharata-virataparva, mahabharata-bhishmaparva, ramanuja_gitabhashya, bhagavadgita-prabhupada, rigveda, rigveda
+- Бхарата  · n=269  · mahabharata-bhishmaparva, mahabharata-adiparva, bhagavadgity, bhagavadgita-smirnov, bhagavadgita-sharma, gitarthasamgraha-abhinavagupta, bhagavadgita-erman, mahabharata-udyogaparva, bhagavadgita-1914, mahabharata-dronaparva, bhagavadgita-1909, mahabharata-shantiparva, mahabharata-aranyakaparva, mahabharata-striparva, bhagavadgita-burba, ramanuja_gitabhashya, mahabharata-karnaparva, mahabharata-shalyaparva, mahabharata-ashvamedhikaparva, mahabharata-ashramavasikaparva, mahabharata-sabhaparva, shukasaptati, mahabharata-sauptikaparva, mahabharata-svargarohanikaparva
+- бхарата  · n=247  · mahabharata-aranyakaparva, mahabharata-karnaparva, mahabharata-ashvamedhikaparva, mahabharata-ashramavasikaparva, mahabharata-striparva, mahabharata-sauptikaparva, mahabharata-mausalaparva, mahabharata-svargarohanikaparva, mahabharata-shantiparva, mahabharata-mahaprasthanikaparva
+- о потомок Бхараты  · n=129  · mahabharata-dronaparva, bhagavadgita-prabhupada, mahabharata-udyogaparva, bhagavadgita-radha, mahabharata-shalyaparva, mahabharata-sabhaparva, mahabharata-virataparva, mahabharata-adiparva, mahabharata-ashramavasikaparva
+- о бхарата  · n=68  · mahabharata-aranyakaparva, mahabharata-karnaparva, mahabharata-striparva, mahabharata-sauptikaparva, mahabharata-ashramavasikaparva, mahabharata-mausalaparva, mahabharata-ashvamedhikaparva, mahabharata-shantiparva
+- о Бхарата  · n=66  · mahabharata-bhishmaparva, mahabharata-adiparva, mahabharata-dronaparva, bhagavadgita-erman, mahabharata-shalyaparva, mahabharata-udyogaparva, gitarthasamgraha-abhinavagupta, bhagavadgita-1914, bhagavadgita-smirnov, bhagavadgita-1909, bhagavadgita-radha, mahabharata-shantiparva, mahabharata-aranyakaparva, bhagavadgita-sharma, mahabharata-sabhaparva, mahabharata-striparva
+- Бхараты  · n=38  · mahabharata-bhishmaparva, mahabharata-adiparva, mahabharata-udyogaparva, mahabharata-dronaparva, bhagavadgita-prabhupada, mahabharata-shalyaparva, mahabharata-virataparva, ramayana-ayodhyakanda, bhagavadgita-burba, mahabharata-sabhaparva, mahabharata-svargarohanikaparva
+- о Бхаратович  · n=13  · bhagavadgita-burba
+- Бхаратович  · n=9  · bhagavadgita-burba
+- сын Бхараты  · n=6  · ramanuja_gitabhashya, bhagavadgita-sementsov
+- бхаратов  · n=5  · mahabharata-karnaparva, mahabharata-aranyakaparva, mahabharata-udyogaparva, mahabharata-sabhaparva
+- потомков Бхараты  · n=5  · mahabharata-adiparva, mahabharata-udyogaparva, mahabharata-bhishmaparva
+- Арджуна  · n=5  · ramanuja_gitabhashya, bhagavadgita-1909, bhagavadgita-prabhupada
+- о потомок Бхараты [Арджуна]  · n=5  · bhagavadgita-radha
+- Махабхарату  · n=3  · mahabharata-adiparva
+- Махабхарата  · n=3  · mahabharata-adiparva
+- потомки Бхараты  · n=3  · mahabharata-adiparva, mahabharata-udyogaparva, mahabharata-sabhaparva
+- потомка Бхараты  · n=3  · mahabharata-bhishmaparva, mahabharata-virataparva
+- Махабхарате  · n=3  · shukasaptati
+- о потомках Бхараты  · n=2  · mahabharata-adiparva
+- потомку Бхараты  · n=2  · mahabharata-udyogaparva, rigveda
+- о  · n=2  · bhagavadgita-1788
+- Махабхараты  · n=1  · mahabharata-adiparva
+- потомках Бхараты  · n=1  · mahabharata-adiparva
+- отпрыск Бхараты  · n=1  · mahabharata-adiparva
+- Бхаратаварша  · n=1  · mahabharata-bhishmaparva
+- бхаратийский  · n=1  · mahabharata-dronaparva
+- потемок Бхараты  · n=1  · mahabharata-dronaparva
+- потомку Бхаратов  · n=1  · rigveda
+- из рода Бхаратов  · n=1  · rigveda
+- О сын Бхараты  · n=1  · ramanuja_gitabhashya
+- сын Кунти  · n=1  · ramanuja_gitabhashya
+- Аржуновымъ  · n=1  · bhagavadgita-1788
+- смертных  · n=1  · bhagavadgita-sementsov
+- о сын Кунти  · n=1  · bhagavadgita-sementsov
+- могучерукий  · n=1  · bhagavadgita-sementsov
+- Партха  · n=1  · bhagavadgita-sementsov
+- о Арджуна  · n=1  · bhagavadgita-1909
+- Арджунѣ  · n=1  · bhagavadgita-1909
+- мудрый  · n=1  · bhagavadgita-1909
+- о храбрый сынъ Бхарата  · n=1  · bhagavadgita-1909
+- о Дхритараштра, потомок Бхараты  · n=1  · bhagavadgita-prabhupada
+- лучший из Бхарат  · n=1  · bhagavadgita-prabhupada
+- живое существо  · n=1  · bhagavadgita-prabhupada
+- о безгрешный потомок Бхараты  · n=1  · bhagavadgita-radha
+- Вриша  · n=1  · mahabharata-karnaparva
+- Бхаратов  · n=1  · rigveda
+- царю Джанамеджайе  · n=1  · mahabharata-sabhaparva
+- потомкам Бхараты  · n=1  · mahabharata-sabhaparva
+- потомок Бхаратов  · n=1  · rigveda
+- Бхарату  · n=1  · mahabharata-svargarohanikaparva
+- из рода Бхараты  · n=1  · mahabharata-bhishmaparva
+
+### `BArataH` — bhārataḥ  (n=1)
+
+- бхарата  · n=1  · mahabharata-sauptikaparva
+
+### `BArataM` — bhārataṃ  (n=1)
+
+- Махабхарату  · n=1  · mahabharata-adiparva
+
+### `BArataPala` — bhārataphala  (n=1)
+
+- плод, (что положен за чтение) Бхараты  · n=1  · mahabharata-svargarohanikaparva
+
+### `BAratacintakaiH` — bhāratacintakaiḥ  (n=2)
+
+- сведущими в истории Бхаратов  · n=1  · mahabharata-adiparva
+- знатоками Бхараты  · n=1  · mahabharata-adiparva
+
+### `BAratagoptAram` — bhāratagoptāram  (n=1)
+
+- защитнику рода Бхараты  · n=1  · mahabharata-adiparva
+
+### `BArataiH` — bhārataiḥ  (n=4)
+
+- с потомками Бхараты  · n=2  · mahabharata-udyogaparva
+- воинами из рода Бхараты  · n=1  · mahabharata-dronaparva
+- потомками Бхараты  · n=1  · mahabharata-udyogaparva
+
+### `BAratam` — bhāratam  (n=9)
+
+- Бхарата  · n=2  · mahabharata-adiparva
+- Махабхарата  · n=2  · mahabharata-adiparva
+- сказание о потомках Бхараты  · n=1  · mahabharata-adiparva
+- Махабхарату  · n=1  · mahabharata-adiparva
+- Бхарату  · n=1  · mahabharata-adiparva
+- бхаратийский  · n=1  · mahabharata-adiparva
+- отпрыска из рода Бхараты  · n=1  · mahabharata-dronaparva
+
+### `BAratamuKya` — bhāratamukhya  (n=1)
+
+- выдающийся из рода Бхараты  · n=1  · mahabharata-adiparva
+
+### `BArataraTaSrezWaH` — bhāratarathaśreṣṭhaḥ  (n=1)
+
+- превосходнейший из воинов бхаратийских, сражающихся на колесницах  · n=1  · mahabharata-dronaparva
+
+### `BAratasAvitrI` — bhāratasāvitrī  (n=2)
+
+- Бхарату как (гимн) Савитри  · n=2  · mahabharata-svargarohanikaparva
+
+### `BAratasaMhitA` — bhāratasaṃhitā  (n=2)
+
+- Сказание о потомках Бхараты  · n=1  · mahabharata-adiparva
+- Бхарата-самхита  · n=1  · mahabharata-adiparva
+
+### `BAratasaMhitAm` — bhāratasaṃhitām  (n=1)
+
+- Бхарата-самхиту  · n=1  · mahabharata-adiparva
+
+### `BAratasainya` — bhāratasainya  (n=1)
+
+- войска бхаратов  · n=1  · mahabharata-dronaparva
+
+### `BAratasya` — bhāratasya  (n=8)
+
+- Махабхараты  · n=3  · mahabharata-adiparva
+- Бхараты  · n=2  · mahabharata-adiparva
+- потомка Бхараты  · n=2  · mahabharata-adiparva, mahabharata-udyogaparva
+- из рода Бхараты  · n=1  · mahabharata-adiparva
+
+### `BAratasyetihAsasya` — bhāratasyetihāsasya  (n=1)
+
+- области Синдху  · n=1  · mahabharata-adiparva
+
+### `BAratavAhinI` — bhāratavāhinī  (n=1)
+
+- бхаратийское войско  · n=1  · mahabharata-dronaparva
+
+### `BAratavarza` — bhāratavarṣa  (n=1)
+
+- Бхаратаварша  · n=1  · mahabharata-udyogaparva
+
+### `BArate` — bhārate  (n=4)
+
+- бхаратов  · n=2  · mahabharata-mausalaparva
+- Махабхараты  · n=1  · mahabharata-adiparva
+- в роду Бхараты  · n=1  · mahabharata-sabhaparva
+
+### `BAratena` — bhāratena  (n=1)
+
+- потомок Бхараты  · n=1  · mahabharata-udyogaparva
+
+### `BAratetihAsa` — bhāratetihāsa  (n=1)
+
+- сказание о потомках Бхараты  · n=1  · mahabharata-adiparva
+
+### `BArati` — bhārati  (n=1)
+
+- Величествен вид  · n=1  · mahabharata-karnaparva
+
+### `BAravattva` — bhāravattva  (n=1)
+
+- важности  · n=1  · mahabharata-adiparva
+
+### `BAreRa` — bhāreṇa  (n=3)
+
+- тяжко  · n=1  · ramayana-ayodhyakanda
+- бременем  · n=1  · ramayana-aranyakanda
+- под тяжестью  · n=1  · mahabharata-udyogaparva
+
+### `BArgavADizRya` — bhārgavādhiṣṇya  (n=1)
+
+- жилищу Бхаргавы  · n=1  · buddhacharita
+
+### `BArgavARAm` — bhārgavāṇām  (n=1)
+
+- Бхаргавов  · n=1  · mahabharata-karnaparva
+
+### `BArgavAccyavanAtmajAt` — bhārgavāccyavanātmajāt  (n=1)
+
+- у сына Чьяваны, потомка Бхригу  · n=1  · mahabharata-adiparva
+
+### `BArgavAstra` — bhārgavāstra  (n=5)
+
+- оружие Бхаргавы  · n=3  · mahabharata-karnaparva
+- Оружие Бхаргавы  · n=1  · mahabharata-karnaparva
+- оружия Бхаргавы  · n=1  · mahabharata-karnaparva
+
+### `BArgavAya` — bhārgavāya  (n=3)
+
+- Бхаргаве  · n=2  · mahabharata-karnaparva, raghuvamsha
+- Бхаргава  · n=1  · raghuvamsha
+
+### `BArgavI` — bhārgavī  (n=3)
+
+- дочь Бхаргавы  · n=2  · mahabharata-adiparva
+- Бхригу  · n=1  · tai-up
+
+### `BArgava` — bhārgava  (n=105)
+
+- Бхаргава  · n=48  · mahabharata-aranyakaparva, mahabharata-adiparva, mahabharata-shantiparva, mahabharata-udyogaparva, mahabharata-karnaparva, mahabharata-ashvamedhikaparva, mahabharata-dronaparva, raghuvamsha, mahabharata-striparva, pr-up
+- потомок Бхригу  · n=12  · mahabharata-adiparva, ramayana-balakanda, mahabharata-shantiparva, mahabharata-dronaparva, mahabharata-udyogaparva
+- Бхаргавы  · n=12  · raghuvamsha, mahabharata-shantiparva, mahabharata-aranyakaparva, mahabharata-adiparva, mahabharata-udyogaparva, mahabharata-karnaparva
+- Бхаргавой  · n=4  · mahabharata-aranyakaparva, buddhacharita, mahabharata-karnaparva
+- Бхаргаву  · n=4  · mahabharata-udyogaparva, mahabharata-karnaparva, mahabharata-ashvamedhikaparva
+- Бхригу  · n=2  · mahabharata-adiparva, ramayana-balakanda
+- бхригуид  · n=2  · mahabharata-adiparva
+- сын Бхригу  · n=2  · mahabharata-adiparva, ramayana-balakanda
+- Бхаргаве  · n=2  · mahabharata-shantiparva, mahabharata-ashvamedhikaparva
+- брахман  · n=2  · ramayana-balakanda
+- потомком Бхригу  · n=2  · mahabharata-adiparva
+- из рода Бхригу  · n=2  · mahabharata-udyogaparva, mahabharata-shalyaparva
+- о потомок Бхригу  · n=1  · mahabharata-adiparva
+- сына Бхригу  · n=1  · ramayana-balakanda
+- потомку Бхригу  · n=1  · ramayana-balakanda
+- Джамадагньи  · n=1  · ramayana-balakanda
+- отпрыску Бхригу  · n=1  · mahabharata-aranyakaparva
+- бхаргавы  · n=1  · mahabharata-adiparva
+- горшечник  · n=1  · mahabharata-adiparva
+- потомка Бхригу  · n=1  · mahabharata-bhishmaparva
+- о отпрыск рода Бхригу  · n=1  · mahabharata-udyogaparva
+- Бхаргавов  · n=1  · mahabharata-ashvamedhikaparva
+- Парашурама  · n=1  · raghuvamsha
+
+### `BArgavaH` — bhārgavaḥ  (n=12)
+
+- Бхаргава  · n=8  · mahabharata-karnaparva, mahabharata-udyogaparva, pr-up
+- потомок Бхригу  · n=3  · ramayana-ayodhyakanda, mahabharata-udyogaparva, mahabharata-ashvamedhikaparva
+- потомок рода Бхригу  · n=1  · mahabharata-udyogaparva
+
+### `BArgavaM` — bhārgavaṃ  (n=4)
+
+- Бхаргаву  · n=2  · raghuvamsha
+- потомков Бхригу  · n=1  · mahabharata-adiparva
+- Бхаргава  · n=1  · mahabharata-adiparva
+
+### `BArgavaSrezWam` — bhārgavaśreṣṭham  (n=1)
+
+- наилучшему из потомков рода Бхригу  · n=1  · mahabharata-udyogaparva
+
+### `BArgavakarmaSAlA` — bhārgavakarmaśālā  (n=2)
+
+- дом горшечника  · n=2  · mahabharata-adiparva
+
+### `BArgavam` — bhārgavam  (n=4)
+
+- потомка Бхригу  · n=1  · ramayana-balakanda
+- Потомку Бхригу  · n=1  · ramayana-balakanda
+- Бхаргаву  · n=1  · mahabharata-adiparva
+- Чьяваной  · n=1  · mahabharata-virataparva
+
+### `BArgavanandana` — bhārgavanandana  (n=4)
+
+- сын Бхаргавы  · n=1  · mahabharata-shantiparva
+- радость Бхаргавов  · n=1  · mahabharata-aranyakaparva
+- Сын Бхаргавы  · n=1  · mahabharata-aranyakaparva
+- из рода Бхаргавов  · n=1  · mahabharata-aranyakaparva
+
+### `BArgavapriyakAmyayA` — bhārgavapriyakāmyayā  (n=1)
+
+- из желания сделать приятное отпрыску Бхригу  · n=1  · mahabharata-aranyakaparva
+
+### `BArgavasattama` — bhārgavasattama  (n=2)
+
+- лучший в роду Бхригу  · n=1  · mahabharata-aranyakaparva
+- наилучшим из рода Бхригу  · n=1  · mahabharata-adiparva
+
+### `BArgavasya` — bhārgavasya  (n=5)
+
+- Бхаргавы  · n=3  · mahabharata-aranyakaparva, buddhacharita
+- сыну Бхригу  · n=1  · mahabharata-adiparva
+- Бхаргава  · n=1  · buddhacharita
+
+### `BArgave` — bhārgave  (n=3)
+
+- у потомка Бхригу  · n=1  · mahabharata-shantiparva
+- Потомку Бхригу  · n=1  · ramayana-balakanda
+- Бхаргаве  · n=1  · mahabharata-udyogaparva
+
+### `BArgaveRa` — bhārgaveṇa  (n=6)
+
+- Бхаргава  · n=2  · raghuvamsha
+- Джамадагни  · n=1  · ramayana-balakanda
+- с потомком Бхригу  · n=1  · ramayana-balakanda
+- отпрыск Бхригу  · n=1  · buddhacharita
+- Парашурама  · n=1  · buddhacharita
+
+### `BAri` — bhāri  (n=1)
+
+- был принесен  · n=1  · rigveda
+
+### `BArin` — bhārin  (n=1)
+
+- несущий тяжесть  · n=1  · manavadharmashastra
+
+### `BArman` — bhārman  (n=1)
+
+- приношении  · n=1  · rigveda
+
+### `BAruRqa` — bhāruṇḍa  (n=2)
+
+- Бхарунду  · n=1  · ramayana-ayodhyakanda
+- Бхарунда  · n=1  · ramayana-ayodhyakanda
+
+### `BAruci` — bhāruci  (n=2)
+
+- Бхаручи  · n=2  · vedartha-samgraha_ramanuja
+
+### `BArvarasya` — bhārvarasya  (n=2)
+
+- Бхарвары  · n=1  · rigveda
+- Бхарвара  · n=1  · rigveda
+
+### `BAryA` — bhāryā  (n=332)
+
+- жена  · n=90  · shukasaptati, manavadharmashastra, ramayana-sundarakanda, mahabharata-adiparva, ramayana-ayodhyakanda, mahabharata-aranyakaparva, ramayana-aranyakanda, kama-sutra, ramayana-balakanda, mahabharata-virataparva, shatakatrayam, mahabharata-shantiparva, buddhacharita, mahabharata-ashvamedhikaparva, br-up, shatakatrayam-serebryakov, yoga-sutry_vyasa-bhashya, mahabharata-ashramavasikaparva
+- супруга  · n=60  · mahabharata-adiparva, mahabharata-aranyakaparva, mahabharata-virataparva, mahabharata-ashramavasikaparva, ramayana-balakanda, mahabharata-striparva, mahabharata-udyogaparva, mahabharata-ashvamedhikaparva, mahabharata-sabhaparva, ramayana-ayodhyakanda, ramayana-aranyakanda, mahabharata-dronaparva, yotat-up
+- жену  · n=28  · ramayana-aranyakanda, manavadharmashastra, kama-sutra, mahabharata-adiparva, mahabharata-udyogaparva, shukasaptati, mahabharata-shantiparva, ramayana-ayodhyakanda, ramayana-sundarakanda, buddhacharita
+- жены  · n=25  · ramayana-ayodhyakanda, ramayana-sundarakanda, mahabharata-striparva, manavadharmashastra, mahabharata-aranyakaparva, mahabharata-udyogaparva, mahabharata-adiparva, ramayana-aranyakanda, ramayana-balakanda, kama-sutra, buddhacharita, mahabharata-ashvamedhikaparva
+- женой  · n=20  · ramayana-aranyakanda, ramayana-sundarakanda, shukasaptati, ramayana-ayodhyakanda, mahabharata-adiparva
+- супругу  · n=17  · mahabharata-adiparva, mahabharata-aranyakaparva, mahabharata-shantiparva, ramayana-aranyakanda, mahabharata-karnaparva, mahabharata-sabhaparva, mahabharata-virataparva
+- супругой  · n=13  · ramayana-aranyakanda, mahabharata-aranyakaparva, ramayana-sundarakanda, mahabharata-adiparva, buddhacharita, mahabharata-udyogaparva, shukasaptati
+- супругою  · n=9  · mahabharata-adiparva, mahabharata-aranyakaparva, mahabharata-udyogaparva
+- жене  · n=7  · ramayana-sundarakanda, ramayana-ayodhyakanda, mahabharata-aranyakaparva, shukasaptati
+- супруге  · n=7  · mahabharata-aranyakaparva, mahabharata-adiparva, ramayana-ayodhyakanda, mahabharata-udyogaparva
+- супруги  · n=7  · mahabharata-aranyakaparva, mahabharata-adiparva, ramayana-aranyakanda, mahabharata-virataparva, mahabharata-striparva
+- в жены  · n=6  · mahabharata-aranyakaparva, ramayana-ayodhyakanda, ramayana-balakanda
+- женою  · n=6  · ramayana-sundarakanda, ramayana-balakanda, mahabharata-adiparva
+- женами  · n=3  · mahabharata-adiparva, ramayana-balakanda, mahabharata-shalyaparva
+- Жена  · n=3  · ramayana-ayodhyakanda, manavadharmashastra, ramayana-balakanda
+- женам  · n=3  · ramayana-balakanda, mahabharata-aranyakaparva, mahabharata-adiparva
+- жен  · n=3  · mahabharata-adiparva, mahabharata-udyogaparva, ch-up
+- невеста  · n=2  · mahabharata-adiparva
+- с женой  · n=2  · manavadharmashastra
+- Женой  · n=2  · ramayana-aranyakanda
+- Шантой  · n=2  · ramayana-balakanda
+- супругами  · n=2  · ramayana-balakanda, mahabharata-aranyakaparva
+- Жены  · n=1  · ramayana-ayodhyakanda
+- Сите  · n=1  · ramayana-ayodhyakanda
+- Мандодари  · n=1  · ramayana-sundarakanda
+- в качестве жены  · n=1  · manavadharmashastra
+- Жену  · n=1  · ramayana-aranyakanda
+- Супругу  · n=1  · ramayana-aranyakanda
+- Ситу  · n=1  · ramayana-balakanda
+- самка  · n=1  · ramayana-balakanda
+- супруг  · n=1  · mahabharata-aranyakaparva
+- женах  · n=1  · mahabharata-aranyakaparva
+- царица  · n=1  · mahabharata-aranyakaparva
+- замужних женщин  · n=1  · kama-sutra
+- Пусть  · n=1  · kama-sutra
+- от супруги  · n=1  · kama-sutra
+- подруга  · n=1  · shatakatrayam
+
+### `BAryABI` — bhāryābhī  (n=1)
+
+- жены  · n=1  · ramayana-ayodhyakanda
+
+### `BAryABihartA` — bhāryābhihartā  (n=1)
+
+- похищает жену  · n=1  · mahabharata-aranyakaparva
+
+### `BAryADikArika` — bhāryādhikārika  (n=2)
+
+- Относительно замужних женщин  · n=2  · kama-sutra
+
+### `BAryAH` — bhāryāḥ  (n=3)
+
+- жены  · n=2  · ramayana-ayodhyakanda, mahabharata-adiparva
+- супругами  · n=1  · ramayana-balakanda
+
+### `BAryAM` — bhāryāṃ  (n=6)
+
+- жену  · n=3  · manavadharmashastra, mahabharata-aranyakaparva, shukasaptati
+- супруга  · n=1  · mahabharata-aranyakaparva
+- жене  · n=1  · mahabharata-adiparva
+- супругу  · n=1  · mahabharata-sabhaparva
+
+### `BAryARAm` — bhāryāṇām  (n=2)
+
+- женщин  · n=1  · ramayana-ayodhyakanda
+- между женами  · n=1  · ramayana-balakanda
+
+### `BAryASata` — bhāryāśata  (n=2)
+
+- сто жен  · n=1  · mahabharata-aranyakaparva
+- сотня жен  · n=1  · mahabharata-aranyakaparva
+
+### `BAryAdUtI` — bhāryādūtī  (n=1)
+
+- жена-посредница  · n=1  · kama-sutra
+
+### `BAryAdvayasya` — bhāryādvayasya  (n=1)
+
+- обеих женщин  · n=1  · shukasaptati
+
+### `BAryAm` — bhāryām  (n=43)
+
+- супругу  · n=13  · mahabharata-aranyakaparva, ramayana-aranyakanda, mahabharata-adiparva, mahabharata-udyogaparva, mahabharata-virataparva, ramayana-sundarakanda, mahabharata-sabhaparva
+- жену  · n=10  · ramayana-aranyakanda, mahabharata-aranyakaparva, mahabharata-shantiparva, ramayana-ayodhyakanda, ramayana-sundarakanda
+- супруге  · n=4  · ramayana-ayodhyakanda, mahabharata-adiparva, mahabharata-udyogaparva, mahabharata-ashvamedhikaparva
+- женой  · n=3  · ramayana-ayodhyakanda, manavadharmashastra
+- жене  · n=3  · ramayana-sundarakanda, ramayana-aranyakanda, kama-sutra
+- в жены  · n=2  · mahabharata-adiparva, mahabharata-aranyakaparva
+- супруга  · n=2  · mahabharata-aranyakaparva, mahabharata-sauptikaparva
+- Жену  · n=1  · ramayana-sundarakanda
+- спутницу  · n=1  · mahabharata-aranyakaparva
+- супругою  · n=1  · mahabharata-aranyakaparva
+- своей супруге  · n=1  · mahabharata-adiparva
+- супруги  · n=1  · mahabharata-adiparva
+- супругой  · n=1  · mahabharata-virataparva
+
+### `BAryAmanuvratAm` — bhāryāmanuvratām  (n=1)
+
+- верную супругу  · n=1  · mahabharata-aranyakaparva
+
+### `BAryAmutsfjya` — bhāryāmutsṛjya  (n=1)
+
+- оставив жену  · n=1  · mahabharata-aranyakaparva
+
+### `BAryAnuroDato` — bhāryānurodhato  (n=1)
+
+- по желанию своей жены  · n=1  · shukasaptati
+
+### `BAryApatI` — bhāryāpatī  (n=2)
+
+- муж и жена  · n=1  · mahabharata-aranyakaparva
+- Муж и жена  · n=1  · mahabharata-aranyakaparva
+
+### `BAryApati` — bhāryāpati  (n=2)
+
+- супругами  · n=2  · mahabharata-udyogaparva
+
+### `BAryArAmaRIyakatve` — bhāryārāmaṇīyakatve  (n=1)
+
+- чья жена лучше  · n=1  · shukasaptati
+
+### `BAryArTI` — bhāryārthī  (n=1)
+
+- желаю взять в жены  · n=1  · mahabharata-udyogaparva
+
+### `BAryArTa` — bhāryārtha  (n=6)
+
+- в жены  · n=3  · mahabharata-udyogaparva, mahabharata-bhishmaparva
+- в супруги  · n=1  · mahabharata-adiparva
+- в пользу его супруги  · n=1  · mahabharata-adiparva
+- к супружеству  · n=1  · ramayana-sundarakanda
+
+### `BAryArTam` — bhāryārtham  (n=1)
+
+- найти ей супругу  · n=1  · mahabharata-udyogaparva
+
+### `BAryArTe` — bhāryārthe  (n=1)
+
+- в жены  · n=1  · mahabharata-adiparva
+
+### `BAryAsahAya` — bhāryāsahāya  (n=1)
+
+- с помощью супруги  · n=1  · mahabharata-aranyakaparva
+
+### `BAryAsahAyaH` — bhāryāsahāyaḥ  (n=2)
+
+- с супругой  · n=1  · mahabharata-aranyakaparva
+- вместе с супругою  · n=1  · mahabharata-adiparva
+
+### `BAryAsahitAByAm` — bhāryāsahitābhyām  (n=1)
+
+- с женами  · n=1  · shukasaptati
+
+### `BAryAsamam` — bhāryāsamam  (n=2)
+
+- жена  · n=2  · mahabharata-aranyakaparva
+
+### `BAryAsu` — bhāryāsu  (n=1)
+
+- женами  · n=1  · mahabharata-shalyaparva
+
+### `BAryAtva` — bhāryātva  (n=4)
+
+- супружество  · n=2  · ramayana-sundarakanda
+- стать женою  · n=1  · ramayana-sundarakanda
+- женами  · n=1  · manavadharmashastra
+
+### `BAryAtvaM` — bhāryātvaṃ  (n=1)
+
+- супружества  · n=1  · ramayana-sundarakanda
+
+### `BAryAvat` — bhāryāvat  (n=1)
+
+- как супруга  · n=1  · ramayana-ayodhyakanda
+
+### `BAryAviyoga` — bhāryāviyoga  (n=1)
+
+- в разлуке со своею супругой  · n=1  · mahabharata-aranyakaparva
+
+### `BAryAyAm` — bhāryāyām  (n=1)
+
+- жену  · n=1  · mahabharata-aranyakaparva
+
+### `BAryAyai` — bhāryāyai  (n=2)
+
+- жены  · n=1  · manavadharmashastra
+- для жены  · n=1  · kau-up
+
+### `BArya` — bhārya  (n=3)
+
+- Жене  · n=1  · ramayana-aranyakanda
+- женой  · n=1  · ramayana-aranyakanda
+- подчиненных  · n=1  · br-up
+
+### `BAryaH` — bhāryaḥ  (n=2)
+
+- женой  · n=1  · ramayana-aranyakanda
+- с женой  · n=1  · ramayana-aranyakanda
+
+### `BAryasya` — bhāryasya  (n=2)
+
+- с женой  · n=1  · ramayana-ayodhyakanda
+- ситы  · n=1  · ramayana-aranyakanda
+
+### `BAryatAm` — bhāryatām  (n=1)
+
+- супругою  · n=1  · mahabharata-shalyaparva
+
+### `BAryatve` — bhāryatve  (n=1)
+
+- женой  · n=1  · ramayana-aranyakanda
+
+### `BAryayA` — bhāryayā  (n=24)
+
+- супругой  · n=5  · mahabharata-aranyakaparva, ramayana-aranyakanda
+- супругою  · n=5  · mahabharata-adiparva, mahabharata-aranyakaparva, mahabharata-udyogaparva, mahabharata-virataparva
+- женой  · n=4  · manavadharmashastra, ramayana-ayodhyakanda, ramayana-balakanda
+- с супругой  · n=3  · mahabharata-aranyakaparva, mahabharata-adiparva
+- супругу  · n=1  · ramayana-ayodhyakanda
+- жены  · n=1  · ramayana-aranyakanda
+- жена  · n=1  · mahabharata-aranyakaparva
+- с женой  · n=1  · mahabharata-aranyakaparva
+- с женою  · n=1  · mahabharata-adiparva
+- с супругою  · n=1  · mahabharata-adiparva
+- на супругу  · n=1  · mahabharata-sabhaparva
+
+### `BArye` — bhārye  (n=8)
+
+- жены  · n=3  · mahabharata-adiparva, br-up, shukasaptati
+- женам  · n=2  · mahabharata-adiparva
+- две жены  · n=1  · mahabharata-adiparva
+- женою  · n=1  · ramayana-ayodhyakanda
+- супруги  · n=1  · ramayana-ayodhyakanda
+
+### `BAs` — bhās  (n=20)
+
+- лучи  · n=4  · mahabharata-udyogaparva, bhagavadgity, bhagavadgita-1788, bhagavadgita-sementsov
+- светом  · n=3  · gitarthasamgraha-abhinavagupta, rigveda, shv-up
+- свет  · n=3  · ch-up
+- блистание  · n=2  · mahabharata-bhishmaparva, bhagavadgita-erman
+- блеском  · n=1  · rigveda
+- сиянию  · n=1  · mahabharata-bhishmaparva
+- освещают  · n=1  · mahabharata-bhishmaparva
+- сияние  · n=1  · gitarthasamgraha-abhinavagupta
+- свету  · n=1  · ramanuja_gitabhashya
+- слава  · n=1  · bhagavadgita-1914
+- сіяніе  · n=1  · bhagavadgita-1788
+- сиять  · n=1  · br-up
+
+### `BAsA` — bhāsā  (n=13)
+
+- светом  · n=9  · rigveda, rigveda, kat-up, devi-gita, mahabharata-striparva, mun-up
+- сиянием  · n=2  · rigveda, rigveda
+- сверканием  · n=1  · rigveda
+- блеском  · n=1  · mahabharata-bhishmaparva
+
+### `BAsAM` — bhāsāṃ  (n=1)
+
+- Бхаса  · n=1  · mahabharata-adiparva
+
+### `BAsAMsi` — bhāsāṃsi  (n=1)
+
+- в лучи света  · n=1  · rigveda
+
+### `BAsAketum` — bhāsāketum  (n=1)
+
+- Чье знамя - свет  · n=1  · rigveda
+
+### `BAsAn` — bhāsān  (n=1)
+
+- коршунов  · n=1  · ramayana-aranyakanda
+
+### `BAsI` — bhāsī  (n=3)
+
+- Бхаси  · n=3  · mahabharata-adiparva, ramayana-aranyakanda
+
+### `BAsIm` — bhāsīm  (n=1)
+
+- Бхаси  · n=1  · ramayana-aranyakanda
+
+### `BAsa` — bhāsa  (n=11)
+
+- ястреба  · n=3  · mahabharata-adiparva
+- стервятника  · n=2  · kama-sutra
+- Бхаса  · n=2  · mahabharata-ashvamedhikaparva
+- коршуна  · n=1  · manavadharmashastra
+- кур  · n=1  · mahabharata-adiparva
+- сиянием  · n=1  · bhagavadgita-sharma
+- в ястреба  · n=1  · mahabharata-adiparva
+
+### `BAsaH` — bhāsaḥ  (n=11)
+
+- сияния  · n=2  · bhagavadgita-prabhupada
+- блещут  · n=1  · mahabharata-bhishmaparva
+- Твой  · n=1  · gitarthasamgraha-abhinavagupta
+- лучей  · n=1  · bhagavadgita-1914
+- сиянию  · n=1  · bhagavadgita-erman
+- жар  · n=1  · bhagavadgita-smirnov
+- свѣтъ  · n=1  · bhagavadgita-1909
+- свечение  · n=1  · bhagavadgita-sharma
+- лучи  · n=1  · bhagavadgita-prabhupada
+- сияние  · n=1  · bhagavadgita-radha
+
+### `BAsada` — bhāsada  (n=3)
+
+- зад  · n=1  · rigveda
+- Ягодичную  · n=1  · atharvaveda
+- ягодичную  · n=1  · atharvaveda
+
+### `BAsakam` — bhāsakam  (n=1)
+
+- освещающему  · n=1  · devi-gita
+
+### `BAsakarRa` — bhāsakarṇa  (n=3)
+
+- Бхасакарна  · n=2  · ramayana-sundarakanda
+- Бхасакарну  · n=1  · ramayana-sundarakanda
+
+### `BAsam` — bhāsam  (n=1)
+
+- сиянья  · n=1  · mahabharata-ashvamedhikaparva
+
+### `BAsamAna` — bhāsamāna  (n=1)
+
+- проявляющегося  · n=1  · vajs-up
+
+### `BAsana` — bhāsana  (n=1)
+
+- проявляется  · n=1  · gitarthasamgraha-abhinavagupta
+
+### `BAsante` — bhāsante  (n=2)
+
+- лишены красоты и блеска  · n=1  · mahabharata-ashvamedhikaparva
+- блещут  · n=1  · mahabharata-virataparva
+
+### `BAsanti` — bhāsanti  (n=2)
+
+- меркнуть  · n=1  · mahabharata-aranyakaparva
+- сверкают  · n=1  · mahabharata-virataparva
+
+### `BAsas` — bhāsas  (n=6)
+
+- с сиянием  · n=1  · bhagavadgita-burba
+- сияния  · n=1  · bhagavadgita-burba
+- им. падеж множественного числа от bhās  · n=1  · bhagavadgita-burba
+- светы  · n=1  · ramanuja_gitabhashya
+- славу  · n=1  · bhagavadgity
+- сияние  · n=1  · bhagavadgita-radha
+
+### `BAsase` — bhāsase  (n=1)
+
+- Словно  · n=1  · ramayana-ayodhyakanda
+
+### `BAsatA` — bhāsatā  (n=1)
+
+- коршун  · n=1  · manavadharmashastra
+
+### `BAsataH` — bhāsataḥ  (n=1)
+
+- будут сиять  · n=1  · mahabharata-adiparva
+
+### `BAsate` — bhāsate  (n=3)
+
+- явится  · n=2  · devi-gita
+- являлся  · n=1  · gitarthasamgraha-abhinavagupta
+
+### `BAsati` — bhāsati  (n=1)
+
+- сверкает  · n=1  · atharvaveda
+
+### `BAsay` — bhāsay  (n=1)
+
+- достигнет  · n=1  · bhagavadgita-sementsov
+
+### `BAsayAmAsatatsainyaM` — bhāsayāmāsa tatsainyaṃ  (n=1)
+
+- осветила все войско  · n=1  · mahabharata-dronaparva
+
+### `BAsayant` — bhāsayant  (n=1)
+
+- озаряя  · n=1  · mahabharata-aranyakaparva
+
+### `BAsayantI` — bhāsayantī  (n=1)
+
+- озаряя  · n=1  · mahabharata-sabhaparva
+
+### `BAsayantImahApraBA` — bhāsayantī mahāprabhā  (n=1)
+
+- озарил ярким блеском  · n=1  · mahabharata-dronaparva
+
+### `BAsayantau` — bhāsayantau  (n=1)
+
+- озаряющие  · n=1  · mahabharata-udyogaparva
+
+### `BAsayanti` — bhāsayanti  (n=1)
+
+- озаряют  · n=1  · mahabharata-striparva
+
+### `BAsayat` — bhāsayat  (n=2)
+
+- освещая  · n=2  · devi-gita
+
+### `BAsayate` — bhāsayate  (n=26)
+
+- озаряет  · n=6  · mahabharata-bhishmaparva, bhagavadgita-1914, bhagavadgity, bhagavadgita-erman, bhagavadgita-radha, mahabharata-shalyaparva
+- освещает  · n=5  · bhagavadgita-burba, ramanuja_gitabhashya, bhagavadgita-prabhupada, bhagavadgita-radha
+- светят  · n=2  · gitarthasamgraha-abhinavagupta, bhagavadgita-1914
+- освещая  · n=2  · ramanuja_gitabhashya, bhagavadgita-sementsov
+- сияет  · n=2  · bhagavadgity, bhagavadgita-smirnov
+- освѣщаютъ  · n=2  · bhagavadgita-1788, bhagavadgita-1909
+- освещающий  · n=1  · gitarthasamgraha-abhinavagupta
+- освещают  · n=1  · bhagavadgita-erman
+- озаряя  · n=1  · bhagavadgita-smirnov
+- освѣщающій  · n=1  · bhagavadgita-1788
+- освѣщаетъ  · n=1  · bhagavadgita-1909
+- освещающее  · n=1  · bhagavadgita-sharma
+- способны осветить  · n=1  · bhagavadgita-sharma
+
+### `BAsayati` — bhāsayati  (n=4)
+
+- освещает  · n=3  · mai-up, pratyabhijna-hridaya_kshemaraja
+- проявляет  · n=1  · paramarthasara-abhinavagupta
+
+### `BAsayed` — bhāsayed  (n=1)
+
+- проявляет  · n=1  · pratyabhijna-hridaya_kshemaraja
+
+### `BAsi` — bhāsi  (n=6)
+
+- блистаешь  · n=1  · mahabharata-aranyakaparva
+- даруешь  · n=1  · rigveda
+- сияешь  · n=1  · ch-up
+- великолепен  · n=1  · mahabharata-karnaparva
+- светишь  · n=1  · rigveda
+- разгораешься  · n=1  · rigveda
+
+### `BAsita` — bhāsita  (n=2)
+
+- озаряемая  · n=1  · mahabharata-dronaparva
+- озаряется  · n=1  · mahabharata-sabhaparva
+
+### `BAskarAkArAH` — bhāskarākārāḥ  (n=1)
+
+- видом подобны солнцу  · n=1  · mahabharata-virataparva
+
+### `BAskarAkAra` — bhāskarākāra  (n=1)
+
+- подобен солнцу  · n=1  · mahabharata-shalyaparva
+
+### `BAskarAya` — bhāskarāya  (n=1)
+
+- Светочу  · n=1  · mahabharata-ashvamedhikaparva
+
+### `BAskara` — bhāskara  (n=101)
+
+- солнце  · n=43  · mahabharata-dronaparva, mahabharata-karnaparva, mahabharata-adiparva, ramayana-ayodhyakanda, mahabharata-bhishmaparva, ramayana-aranyakanda, devi-gita, ramayana-sundarakanda, manavadharmashastra, ramayana-balakanda, mahabharata-udyogaparva, mahabharata-sabhaparva, raghuvamsha
+- Солнце  · n=10  · mahabharata-aranyakaparva, mahabharata-adiparva, mahabharata-dronaparva, mahabharata-shantiparva, buddhacharita, mahabharata-shalyaparva
+- солнца  · n=8  · ramayana-aranyakanda, mahabharata-bhishmaparva, ramayana-sundarakanda, ramayana-balakanda, yoga-sutry_vyasa-bhashya
+- солнцу  · n=7  · mahabharata-shalyaparva, mahabharata-sabhaparva, ramayana-sundarakanda, ramayana-aranyakanda, mahabharata-dronaparva
+- Бхаскара  · n=6  · mahabharata-shantiparva, mahabharata-aranyakaparva, mahabharata-karnaparva, mahabharata-shalyaparva
+- Бхаскару  · n=3  · mahabharata-aranyakaparva
+- Солнца  · n=3  · mahabharata-aranyakaparva, mahabharata-udyogaparva, mahabharata-shalyaparva
+- солнцем  · n=2  · ramayana-sundarakanda, mahabharata-aranyakaparva
+- творец света  · n=2  · mahabharata-udyogaparva, mai-up
+- свет даруют  · n=2  · shatakatrayam
+- Солнце и Месяц  · n=2  · shatakatrayam-serebryakov
+- Бхаскара (Солнце)  · n=1  · mahabharata-shantiparva
+- сияющем  · n=1  · ramayana-sundarakanda
+- Светило  · n=1  · mahabharata-aranyakaparva
+- свет творящее  · n=1  · mahabharata-bhishmaparva
+- Солнцу  · n=1  · mahabharata-bhishmaparva
+- солнц  · n=1  · mahabharata-dronaparva
+- творит свет  · n=1  · mahabharata-dronaparva
+- Вивасвана  · n=1  · mahabharata-udyogaparva
+- Солнцам  · n=1  · mahabharata-karnaparva
+- излучающий яркий блеск  · n=1  · mahabharata-shalyaparva
+- светило дня  · n=1  · mahabharata-sabhaparva
+- светила  · n=1  · raghuvamsha
+- Творца света  · n=1  · mahabharata-striparva
+
+### `BAskaraH` — bhāskaraḥ  (n=8)
+
+- солнце  · n=6  · ramayana-balakanda, mahabharata-aranyakaparva, mahabharata-adiparva, mahabharata-bhishmaparva, mahabharata-dronaparva, mahabharata-karnaparva
+- солнечного зноя  · n=1  · mahabharata-ashvamedhikaparva
+- солнцу  · n=1  · raghuvamsha
+
+### `BAskaraM` — bhāskaraṃ  (n=1)
+
+- с солнцем  · n=1  · mahabharata-adiparva
+
+### `BAskaradyuti` — bhāskaradyuti  (n=3)
+
+- блеском подобный солнцу  · n=1  · mahabharata-aranyakaparva
+- Сверкающий солнечным блеском  · n=1  · mahabharata-aranyakaparva
+- лучезарный как солнце  · n=1  · mahabharata-adiparva
+
+### `BAskaram` — bhāskaram  (n=8)
+
+- солнца  · n=2  · ramayana-ayodhyakanda
+- Солнце  · n=2  · mahabharata-dronaparva
+- солнце  · n=1  · mahabharata-karnaparva
+- Бхаскару  · n=1  · mahabharata-karnaparva
+- солнцу  · n=1  · mahabharata-shalyaparva
+- Солнцу  · n=1  · mahabharata-ashvamedhikaparva
+
+### `BAskarapratimaiH` — bhāskarapratimaiḥ  (n=1)
+
+- солнцу подобными  · n=1  · mahabharata-bhishmaparva
+
+### `BAskararaSmi` — bhāskararaśmi  (n=1)
+
+- лучами солнца  · n=1  · ramayana-sundarakanda
+
+### `BAskararaSmisanniBa` — bhāskararaśmisannibha  (n=1)
+
+- сверкавший как солнечный луч  · n=1  · mahabharata-karnaparva
+
+### `BAskarasya` — bhāskarasya  (n=9)
+
+- солнца  · n=6  · mahabharata-dronaparva, ramayana-aranyakanda, mahabharata-adiparva, raghuvamsha
+- Солнца  · n=3  · ramayana-aranyakanda, mahabharata-adiparva
+
+### `BAskarau` — bhāskarau  (n=1)
+
+- два солнца  · n=1  · mahabharata-dronaparva
+
+### `BAskaravarRABA` — bhāskaravarṇābhā  (n=1)
+
+- блеском подобное Солнцу  · n=1  · mahabharata-karnaparva
+
+### `BAskaravat` — bhāskaravat  (n=1)
+
+- как будто солнце  · n=1  · buddhacharita
+
+### `BAskare` — bhāskare  (n=3)
+
+- солнце  · n=1  · mahabharata-bhishmaparva
+- солнца  · n=1  · mahabharata-dronaparva
+- Лучезарное око мира  · n=1  · buddhacharita
+
+### `BAskarodaya` — bhāskarodaya  (n=1)
+
+- на восходе солнца  · n=1  · ramayana-ayodhyakanda
+
+### `BAskarodayana` — bhāskarodayana  (n=1)
+
+- восход солнца  · n=1  · mahabharata-shalyaparva
+
+### `BAskaropama` — bhāskaropama  (n=2)
+
+- подобен Солнцу  · n=1  · mahabharata-adiparva
+- подобный Солнцу  · n=1  · mahabharata-udyogaparva
+
+### `BAskaropamatejas` — bhāskaropamatejas  (n=1)
+
+- блеском подобный солнцу  · n=1  · mahabharata-shalyaparva
+
+### `BAso` — bhāso  (n=3)
+
+- навоз  · n=2  · rigveda
+- вспышкам  · n=1  · rigveda
+
+### `BAsuraM` — bhāsuraṃ  (n=1)
+
+- Сияющее  · n=1  · buddhacharita
+
+### `BAsurahemarASim` — bhāsurahemarāśim  (n=1)
+
+- груду чистого золота  · n=1  · raghuvamsha
+
+### `BAsuram` — bhāsuram  (n=1)
+
+- блистательный  · n=1  · yotat-up
+
+### `BAsvAn` — bhāsvān  (n=1)
+
+- солнце  · n=1  · raghuvamsha
+
+### `BAsvant` — bhāsvant  (n=5)
+
+- сияющие  · n=1  · mahabharata-aranyakaparva
+- Сверкающего  · n=1  · rigveda
+- сверкающих  · n=1  · mahabharata-dronaparva
+- блистающих  · n=1  · ch-up
+- светоносных  · n=1  · kumarasambhava
+
+### `BAsvarA` — bhāsvarā  (n=2)
+
+- сверкающий  · n=2  · mahabharata-sabhaparva
+
+### `BAsvarAH` — bhāsvarāḥ  (n=1)
+
+- Блистая  · n=1  · ramayana-aranyakanda
+
+### `BAsvarAm` — bhāsvarām  (n=1)
+
+- сверкающий  · n=1  · mahabharata-sabhaparva
+
+### `BAsvarAn` — bhāsvarān  (n=1)
+
+- Блистательные  · n=1  · ramayana-balakanda
+
+### `BAsvarUpa` — bhāsvarūpa  (n=3)
+
+- сияние  · n=1  · paramarthasara-abhinavagupta
+- сияющая сущность  · n=1  · paramarthasara-abhinavagupta
+- сущность света  · n=1  · paramarthasara-abhinavagupta
+
+### `BAsvara` — bhāsvara  (n=28)
+
+- сверкающий  · n=7  · mahabharata-dronaparva, shatakatrayam-serebryakov
+- сияющие  · n=2  · mahabharata-shantiparva, mahabharata-striparva
+- сияющий  · n=2  · shatakatrayam, mai-up
+- блестели  · n=1  · mahabharata-shantiparva
+- сверкающие  · n=1  · mahabharata-shantiparva
+- сияющей  · n=1  · ramayana-sundarakanda
+- Сверкающей  · n=1  · ramayana-aranyakanda
+- блеском  · n=1  · ramayana-balakanda
+- сияющая  · n=1  · mahabharata-aranyakaparva
+- лучезарный  · n=1  · mahabharata-dronaparva
+- сверкающей  · n=1  · mahabharata-dronaparva
+- сверкающее  · n=1  · mahabharata-dronaparva
+- сверкающую  · n=1  · mahabharata-dronaparva
+- сияющее  · n=1  · buddhacharita
+- сияющими  · n=1  · mahabharata-sabhaparva
+- яркое сияние  · n=1  · yoga-sutry_vyasa-bhashya
+- блистательный  · n=1  · yotat-up
+- светящиеся  · n=1  · mahabharata-striparva
+- Сверкающее  · n=1  · mnar-up
+- сияя  · n=1  · mahabharata-svargarohanikaparva
+
+### `BAsvaraM` — bhāsvaraṃ  (n=1)
+
+- блистательное  · n=1  · mahabharata-adiparva
+
+### `BAsvaradeha` — bhāsvaradeha  (n=1)
+
+- сияющий вид  · n=1  · mahabharata-shalyaparva
+
+### `BAsvaraiH` — bhāsvaraiḥ  (n=2)
+
+- сияющими  · n=1  · ramayana-sundarakanda
+- сверкали  · n=1  · mahabharata-aranyakaparva
+
+### `BAsvaram` — bhāsvaram  (n=8)
+
+- сверкающий  · n=2  · mahabharata-dronaparva
+- Ослепляющую своим блеском  · n=1  · ramayana-aranyakanda
+- дугою  · n=1  · ramayana-balakanda
+- блистающую  · n=1  · mahabharata-bhishmaparva
+- блестящий  · n=1  · mahabharata-dronaparva
+- сверкающую  · n=1  · mahabharata-dronaparva
+- сиявшую  · n=1  · buddhacharita
+
+### `BAsvaramUrtayaH` — bhāsvaramūrtayaḥ  (n=1)
+
+- с блистательной внешностью  · n=1  · mahabharata-sabhaparva
+
+### `BAsvaramUrti` — bhāsvaramūrti  (n=1)
+
+- с лучезарными телами  · n=1  · mahabharata-udyogaparva
+
+### `BAsvaravarRABA` — bhāsvaravarṇābhā  (n=1)
+
+- отливали солнечным блеском  · n=1  · mahabharata-aranyakaparva
+
+### `BAsvaravarRa` — bhāsvaravarṇa  (n=2)
+
+- покрытый сиянием  · n=2  · br-up
+
+### `BAsvat` — bhāsvat  (n=14)
+
+- пестрой  · n=1  · ramayana-ayodhyakanda
+- золоченой  · n=1  · ramayana-ayodhyakanda
+- лучезарный  · n=1  · manavadharmashastra
+- светозарного  · n=1  · manavadharmashastra
+- сияющей словно солнце  · n=1  · ramayana-balakanda
+- блестящей  · n=1  · mahabharata-aranyakaparva
+- сверкающая  · n=1  · rigveda
+- сверкающие  · n=1  · mahabharata-dronaparva
+- светом  · n=1  · bhagavadgita-sementsov
+- сияющего  · n=1  · bhagavadgita-sharma
+- сверкающих  · n=1  · mahabharata-karnaparva
+- сверкающей  · n=1  · mahabharata-karnaparva
+- сверкающий  · n=1  · mahabharata-striparva
+- сияния  · n=1  · mai-up
+
+### `BAsvatA` — bhāsvatā  (n=16)
+
+- сияющим  · n=5  · bhagavadgita-1914, bhagavadgita-smirnov, bhagavadgita-1909, bhagavadgita-radha
+- свѣтомъ  · n=2  · bhagavadgity, bhagavadgita-1788
+- сверкающей  · n=1  · ramayana-aranyakanda
+- сияющей  · n=1  · mahabharata-aranyakaparva
+- лучезарным  · n=1  · gitarthasamgraha-abhinavagupta
+- светящимся  · n=1  · bhagavadgita-burba
+- ярким  · n=1  · bhagavadgita-prabhupada
+- сияющий  · n=1  · bhagavadgita-prabhupada
+- затмевает солнце  · n=1  · shatakatrayam
+- сверкает, словно Солнце  · n=1  · shatakatrayam-serebryakov
+- Солнце  · n=1  · shatakatrayam-serebryakov
+
+### `BAsvatI` — bhāsvatī  (n=3)
+
+- Сверкающая  · n=1  · rigveda
+- сверкающая  · n=1  · mahabharata-dronaparva
+- сияющее  · n=1  · mnar-up
+
+### `BAsvati` — bhāsvati  (n=1)
+
+- солнце  · n=1  · raghuvamsha
+
+### `BAsvatkalanUpurARAM` — bhāsvatkalanūpurāṇāṃ  (n=1)
+
+- звеня блестящими браслетами  · n=1  · raghuvamsha
+
+### `BAti` — bhāti  (n=68)
+
+- сияет  · n=12  · paramarthasara-abhinavagupta, rigveda, mahabharata-dronaparva, mahabharata-udyogaparva, rigveda, rigveda, ch-up, mahabharata-shalyaparva, br-up, mahabharata-striparva, mai-up
+- светит  · n=12  · kat-up, rigveda, mun-up, rigveda, devi-gita, mahabharata-virataparva, atharvaveda
+- сверкает  · n=6  · rigveda, ramayana-ayodhyakanda, rigveda, rigveda, atharvaveda
+- освещает  · n=5  · rigveda, rigveda, rigveda
+- кажется  · n=5  · mahabharata-dronaparva, mahabharata-udyogaparva, mahabharata-sabhaparva, raghuvamsha, mahabharata-striparva
+- казалось  · n=3  · mahabharata-bhishmaparva, ramayana-ayodhyakanda
+- является  · n=2  · devi-gita
+- славится  · n=1  · ramayana-ayodhyakanda
+- была подобна  · n=1  · ramayana-sundarakanda
+- в  · n=1  · ramayana-aranyakanda
+- блещет  · n=1  · mahabharata-aranyakaparva
+- сиял  · n=1  · mahabharata-aranyakaparva
+- засияло  · n=1  · mahabharata-aranyakaparva
+- блистали  · n=1  · mahabharata-aranyakaparva
+- блистал  · n=1  · mahabharata-aranyakaparva
+- казалась  · n=1  · mahabharata-bhishmaparva
+- сияла  · n=1  · mahabharata-dronaparva
+- украшалась  · n=1  · mahabharata-karnaparva
+- Сияет  · n=1  · mahabharata-karnaparva
+- выглядело  · n=1  · mahabharata-shalyaparva
+- озаряет  · n=1  · rigveda
+- блистает  · n=1  · raghuvamsha
+- светило  · n=1  · mahabharata-virataparva
+- являла зрелище  · n=1  · mahabharata-virataparva
+- отблеск  · n=1  · shatakatrayam
+- изведывают  · n=1  · shatakatrayam-serebryakov
+- подобна  · n=1  · gitagovinda
+- кажутся  · n=1  · paramarthasara-abhinavagupta
+- надлежащим образом  · n=1  · paramarthasara-abhinavagupta
+- начинает сиять  · n=1  · paramarthasara-abhinavagupta
+
+### `BAtvakzas` — bhātvakṣas  (n=1)
+
+- сильные блеском  · n=1  · rigveda
+
+### `BAvA` — bhāvā  (n=1)
+
+- становятся  · n=1  · gitarthasamgraha-abhinavagupta
+
+### `BAvABAva` — bhāvābhāva  (n=6)
+
+- присутствие и отсутствие  · n=2  · nyaya-bhashya
+- жизнь и смерть  · n=1  · mahabharata-bhishmaparva
+- преуспеяние и невзгоды  · n=1  · mahabharata-udyogaparva
+- наличие и отсутствие  · n=1  · nyaya-bhashya
+- благополучие или бедствие  · n=1  · mahabharata-virataparva
+
+### `BAvABAvakara` — bhāvābhāvakara  (n=1)
+
+- творящего бытие и небытие  · n=1  · shv-up
+
+### `BAvABAvau` — bhāvābhāvau  (n=1)
+
+- Бытие и небытие  · n=1  · mahabharata-adiparva
+
+### `BAvAH` — bhāvāḥ  (n=11)
+
+- состояния  · n=3  · gitarthasamgraha-abhinavagupta, bhagavadgita-erman, bhagavadgita-smirnov
+- качества  · n=2  · bhagavadgity, bhagavadgita-1788
+- явления  · n=1  · mahabharata-adiparva
+- природы  · n=1  · gitarthasamgraha-abhinavagupta
+- состоянья  · n=1  · ramanuja_gitabhashya
+- натурахъ  · n=1  · bhagavadgita-1788
+- Истина  · n=1  · bhagavadgita-1788
+- проявления  · n=1  · bhagavadgita-sharma
+
+### `BAvAd` — bhāvād  (n=1)
+
+- ставший  · n=1  · raghuvamsha
+
+### `BAvAkUta` — bhāvākūta  (n=2)
+
+- чувство  · n=1  · amaru-shataka
+- нежными  · n=1  · amaru-shataka
+
+### `BAvAm` — bhāvām  (n=1)
+
+- любви  · n=1  · ramayana-ayodhyakanda
+
+### `BAvAn` — bhāvān  (n=4)
+
+- существа  · n=2  · shv-up
+- чувства и мысли  · n=1  · mahabharata-adiparva
+- тварей  · n=1  · mahabharata-aranyakaparva
+
+### `BAvAnAm` — bhāvānām  (n=3)
+
+- дел  · n=1  · mahabharata-udyogaparva
+- существ  · n=1  · gitarthasamgraha-abhinavagupta
+- состояний  · n=1  · mahabharata-ashvamedhikaparva
+
+### `BAvAntara` — bhāvāntara  (n=1)
+
+- другому  · n=1  · gitarthasamgraha-abhinavagupta
+
+### `BAvAt` — bhāvāt  (n=2)
+
+- есть  · n=1  · nyaya-bhashya
+- возникает  · n=1  · yoga-sutry_vyasa-bhashya
+
+### `BAvAvaboDakaluzA` — bhāvāvabodhakaluṣā  (n=1)
+
+- подобный робкой возлюбленной  · n=1  · raghuvamsha
+
+### `BAvAya` — bhāvāya  (n=1)
+
+- ради блага  · n=1  · raghuvamsha
+
+### `BAvI` — bhāvī  (n=4)
+
+- предстоит  · n=1  · mahabharata-udyogaparva
+- станет  · n=1  · mahabharata-udyogaparva
+- смотрел  · n=1  · raghuvamsha
+- насладится  · n=1  · megha-duta
+
+### `BAva` — bhāva  (n=425)
+
+- бытие  · n=38  · nyaya-bhashya, gitarthasamgraha-abhinavagupta, mahabharata-bhishmaparva, bhagavadgita-burba, bhagavadgita-erman, ramanuja_gitabhashya, bhagavadgity, bhagavadgita-smirnov, bhagavadgita-prabhupada, bhagavadgita-1914, bhagavadgita-sementsov, brb-up
+- желание  · n=15  · kama-sutra, mahabharata-karnaparva, buddhacharita
+- наличие  · n=13  · nyaya-bhashya
+- вещь  · n=12  · nyaya-bhashya, bhagavadgita-1909
+- состояния  · n=11  · bhagavadgita-smirnov, mahabharata-bhishmaparva, bhagavadgita-erman, mahabharata-ashvamedhikaparva, gitarthasamgraha-abhinavagupta, bhagavadgity
+- сущность  · n=11  · ramanuja_gitabhashya, bhagavadgita-smirnov, bhagavadgita-sementsov, mahabharata-bhishmaparva, bhagavadgita-1909, pratyabhijna-hridaya_kshemaraja
+- чувство  · n=7  · ramayana-aranyakanda, mahabharata-aranyakaparva, kama-sutra, mahabharata-dronaparva, buddhacharita, gitagovinda
+- состояние  · n=7  · gitarthasamgraha-abhinavagupta, mahabharata-aranyakaparva, bhagavadgita-burba, shatakatrayam-serebryakov, yoga-sutry_vyasa-bhashya, pratyabhijna-hridaya_kshemaraja
+- вещи  · n=7  · nyaya-bhashya, mahabharata-aranyakaparva, buddhacharita, yoga-sutry
+- природу  · n=6  · gitarthasamgraha-abhinavagupta, bhagavadgita-prabhupada, bhagavadgita-smirnov, mai-up
+- природы  · n=5  · bhagavadgita-1914, mahabharata-bhishmaparva, bhagavadgita-1909, bhagavadgita-radha
+- природа  · n=5  · mahabharata-bhishmaparva, gitarthasamgraha-abhinavagupta, bhagavadgita-erman, bhagavadgita-prabhupada, bhagavadgita-radha
+- состояния бытия  · n=5  · bhagavadgita-burba, bhagavadgita-radha, bhagavadgita-prabhupada
+- любовь  · n=4  · buddhacharita, ramayana-sundarakanda, bhagavadgita-smirnov
+- сердце  · n=4  · buddhacharita, mahabharata-adiparva, shatakatrayam
+- состоянье  · n=4  · bhagavadgita-sementsov, buddhacharita, ramanuja_gitabhashya
+- состояний  · n=4  · mnar-up, gitarthasamgraha-abhinavagupta, bhagavadgita-sementsov
+- бытия  · n=4  · gitarthasamgraha-abhinavagupta, ramanuja_gitabhashya, bhagavadgita-erman, yoga-sutry
+- отношение  · n=4  · vedartha-samgraha_ramanuja, mahabharata-virataparva
+- существа  · n=3  · mahabharata-adiparva, buddhacharita, mun-up
+- чувства  · n=3  · ramayana-ayodhyakanda, kama-sutra, raghuvamsha
+- вещей  · n=3  · nyaya-bhashya, ramayana-ayodhyakanda
+- природе  · n=3  · ramayana-sundarakanda, kama-sutra, bhagavadgita-1914
+- существо  · n=3  · manavadharmashastra, bhagavadgita-1914, bhagavadgita-1788
+- желании  · n=3  · kama-sutra
+- гуны  · n=3  · bhagavadgita-prabhupada, bhagavadgita-sharma
+- наличия  · n=3  · sankhya-karika
+- диспозиции  · n=3  · sankhya-karika
+- желает  · n=2  · manavadharmashastra, kama-sutra
+- состоянию  · n=2  · manavadharmashastra, mahabharata-dronaparva
+- настроение  · n=2  · manavadharmashastra, mahabharata-udyogaparva
+- естество  · n=2  · ramayana-balakanda, mahabharata-svargarohanikaparva
+- сознание  · n=2  · mahabharata-aranyakaparva, yoga-sutry_sharma
+- душа  · n=2  · mahabharata-aranyakaparva, bhagavadgita-prabhupada
+- свойственно  · n=2  · mahabharata-aranyakaparva
+- желания  · n=2  · kama-sutra
+- природой  · n=2  · kama-sutra, bhagavadgita-sharma
+- предан  · n=2  · kama-sutra, shatakatrayam-serebryakov
+- мысли  · n=2  · mahabharata-adiparva, buddhacharita
+- бытии  · n=2  · mahabharata-bhishmaparva, bhagavadgita-erman
+- сущности  · n=2  · mahabharata-bhishmaparva, ramanuja_gitabhashya
+- кручину  · n=2  · buddhacharita
+- помыслы  · n=2  · buddhacharita, mahabharata-udyogaparva
+- жестами  · n=2  · mahabharata-udyogaparva, shatakatrayam
+- объект  · n=2  · gitarthasamgraha-abhinavagupta, bhagavadgita-radha
+- Бытия  · n=2  · gitarthasamgraha-abhinavagupta
+- состояниями бытия  · n=2  · bhagavadgita-burba, bhagavadgita-prabhupada
+- состояние бытия  · n=2  · bhagavadgita-burba, bhagavadgita-prabhupada
+- натуры  · n=2  · bhagavadgita-1914, bhagavadgita-1788
+- свойствами  · n=2  · bhagavadgita-1914, paramarthasara-abhinavagupta
+- значение  · n=2  · bhagavadgita-erman, nyaya-bhashya
+- начала  · n=2  · bhagavadgita-1788, bhagavadgita-1909
+- то, что  · n=2  · bhagavadgita-sementsov
+- качества  · n=2  · bhagavadgita-1909, bhagavadgita-prabhupada
+- Присутствие  · n=2  · bhagavadgita-sharma
+- существовать  · n=2  · bhagavadgita-prabhupada, vedartha-samgraha_ramanuja
+- душевное состояние  · n=2  · mahabharata-shalyaparva, mahabharata-striparva
+- наличии  · n=2  · nyaya-bhashya
+- быть  · n=2  · nyaya-bhashya
+- сущее  · n=2  · nyaya-bhashya
+- присутствие  · n=2  · nyaya-bhashya
+- диспозиции сознания  · n=2  · sankhya-karika
+- форма существования  · n=2  · yoga-sutry_vyasa-bhashya
+- существование  · n=2  · vedartha-samgraha_ramanuja, paramarthasara-abhinavagupta
+- с дурным умыслом  · n=1  · mahabharata-adiparva
+- поведение  · n=1  · ramayana-ayodhyakanda
+- владея  · n=1  · ramayana-ayodhyakanda
+- хочет  · n=1  · ramayana-ayodhyakanda
+- рассудок  · n=1  · ramayana-ayodhyakanda
+- порядка  · n=1  · ramayana-ayodhyakanda
+- воодушевленным  · n=1  · manavadharmashastra
+- состоянии  · n=1  · manavadharmashastra
+- благородная  · n=1  · ramayana-aranyakanda
+- страсть  · n=1  · ramayana-aranyakanda
+- тело  · n=1  · ramayana-balakanda
+- благополучие  · n=1  · mahabharata-aranyakaparva
+- воззрения  · n=1  · mahabharata-aranyakaparva
+- условий  · n=1  · mahabharata-aranyakaparva
+- нравах  · n=1  · mahabharata-aranyakaparva
+- существам  · n=1  · mahabharata-aranyakaparva
+- прок  · n=1  · mahabharata-aranyakaparva
+- расположения  · n=1  · mahabharata-aranyakaparva
+- преданно  · n=1  · mahabharata-aranyakaparva
+- существами  · n=1  · mahabharata-aranyakaparva
+- бедствие  · n=1  · mahabharata-aranyakaparva
+- они  · n=1  · mahabharata-aranyakaparva
+- подвержены  · n=1  · mahabharata-aranyakaparva
+- природными свойствами  · n=1  · kama-sutra
+- желаний  · n=1  · kama-sutra
+- желаниях  · n=1  · kama-sutra
+- чувств  · n=1  · kama-sutra
+- желаниям  · n=1  · kama-sutra
+- поведением  · n=1  · mahabharata-adiparva
+- идеи  · n=1  · mahabharata-adiparva
+- воле  · n=1  · mahabharata-adiparva
+- состояниями  · n=1  · mahabharata-bhishmaparva
+- бытию  · n=1  · mahabharata-bhishmaparva
+- дух  · n=1  · mahabharata-bhishmaparva
+- утверждать  · n=1  · mahabharata-dronaparva
+- естестве  · n=1  · mahabharata-dronaparva
+- явлений  · n=1  · mahabharata-dronaparva
+- предметов  · n=1  · mahabharata-dronaparva
+- положения  · n=1  · mahabharata-dronaparva
+- лаской  · n=1  · buddhacharita
+- зависти  · n=1  · buddhacharita
+- родился  · n=1  · buddhacharita
+- решенье  · n=1  · buddhacharita
+- образуют  · n=1  · buddhacharita
+- на сердце  · n=1  · buddhacharita
+- то  · n=1  · buddhacharita
+- лицами  · n=1  · mahabharata-udyogaparva
+- решение  · n=1  · mahabharata-udyogaparva
+- мирским делам  · n=1  · mahabharata-udyogaparva
+- соединение  · n=1  · mahabharata-udyogaparva
+- увлечение  · n=1  · mahabharata-udyogaparva
+- владения  · n=1  · mahabharata-udyogaparva
+- убеждение  · n=1  · mahabharata-udyogaparva
+- Творения  · n=1  · gitarthasamgraha-abhinavagupta
+- рождениям  · n=1  · gitarthasamgraha-abhinavagupta
+- состоянию бытия  · n=1  · bhagavadgita-burba
+- состояньями  · n=1  · ramanuja_gitabhashya
+- сознанье  · n=1  · ramanuja_gitabhashya
+- Вселенная  · n=1  · bhagavadgita-1914
+- Непроявленное  · n=1  · bhagavadgita-1914
+- признаки  · n=1  · bhagavadgita-1914
+- представлений  · n=1  · bhagavadgita-1914
+- Существо  · n=1  · bhagavadgita-1914
+- быванье  · n=1  · bhagavadgity
+- случаях  · n=1  · bhagavadgity
+- значении сущего  · n=1  · bhagavadgita-erman
+- значении  · n=1  · bhagavadgita-erman
+- буквального  · n=1  · bhagavadgita-erman
+- Бытие  · n=1  · bhagavadgita-smirnov
+- Сущность  · n=1  · bhagavadgita-smirnov
+- натура  · n=1  · bhagavadgita-1788
+- натуру  · n=1  · bhagavadgita-1788
+- расположеніи (нравъ)  · n=1  · bhagavadgita-1788
+- начало  · n=1  · bhagavadgita-1788
+- уподобившись  · n=1  · bhagavadgita-sementsov
+- ком  · n=1  · bhagavadgita-sementsov
+- естества  · n=1  · bhagavadgita-sementsov
+- принципахъ  · n=1  · bhagavadgita-1909
+- формахъ  · n=1  · bhagavadgita-1909
+- бытье  · n=1  · bhagavadgita-1909
+- плоти  · n=1  · bhagavadgita-1909
+- Природе  · n=1  · bhagavadgita-sharma
+- Духом  · n=1  · bhagavadgita-sharma
+- состоянии бытия  · n=1  · bhagavadgita-sharma
+- проявлением  · n=1  · bhagavadgita-sharma
+- свободен  · n=1  · bhagavadgita-sharma
+- умение  · n=1  · bhagavadgita-sharma
+- неизменность  · n=1  · bhagavadgita-prabhupada
+- своей природы  · n=1  · bhagavadgita-prabhupada
+- бытия [неизменности]  · n=1  · bhagavadgita-radha
+- тела  · n=1  · bhagavadgita-radha
+- объекте  · n=1  · bhagavadgita-radha
+- покой  · n=1  · kumarasambhava
+- смущенье  · n=1  · kumarasambhava
+- возвышения  · n=1  · mahabharata-shalyaparva
+- присутствуют  · n=1  · nyaya-bhashya
+- существующих  · n=1  · nyaya-bhashya
+- субстратом  · n=1  · nyaya-bhashya
+- способные  · n=1  · nyaya-bhashya
+- случае  · n=1  · nyaya-bhashya
+- имеет место  · n=1  · nyaya-bhashya
+- осуществляется  · n=1  · nyaya-bhashya
+- относящихся  · n=1  · nyaya-bhashya
+- значения  · n=1  · nyaya-bhashya
+- имеют  · n=1  · nyaya-bhashya
+- фактор  · n=1  · nyaya-bhashya
+- соотношение  · n=1  · nyaya-bhashya
+- Существующее  · n=1  · nyaya-bhashya
+- существующее  · n=1  · nyaya-bhashya
+- ввиду  · n=1  · nyaya-bhashya
+- существует  · n=1  · nyaya-bhashya
+- отсутствует  · n=1  · nyaya-bhashya
+- сущего  · n=1  · nyaya-bhashya
+- возникают  · n=1  · nyaya-bhashya
+- применима  · n=1  · nyaya-bhashya
+- отношения  · n=1  · nyaya-bhashya
+- предрасположенности  · n=1  · mahabharata-ashvamedhikaparva
+- Предрасположенности  · n=1  · mahabharata-ashvamedhikaparva
+- предрасположенность  · n=1  · mahabharata-ashvamedhikaparva
+- наклонность  · n=1  · mahabharata-ashvamedhikaparva
+- ранга  · n=1  · mahabharata-ashvamedhikaparva
+- рангу  · n=1  · mahabharata-ashvamedhikaparva
+- явления  · n=1  · mahabharata-ashvamedhikaparva
+- природная суть  · n=1  · mahabharata-ashvamedhikaparva
+- сохраняя  · n=1  · devi-gita
+- преданность  · n=1  · raghuvamsha
+- частью  · n=1  · shatakatrayam
+- движением  · n=1  · shatakatrayam-serebryakov
+- настроениями  · n=1  · shatakatrayam-serebryakov
+- страстью  · n=1  · gitagovinda
+- страсти  · n=1  · gitagovinda
+- противопоставление  · n=1  · sankhya-karika
+- диспозициями сознания  · n=1  · sankhya-karika
+- диспозициями  · n=1  · sankhya-karika
+- превращаясь  · n=1  · sankhya-karika
+- эмоции  · n=1  · sankhya-karika
+- трансформируясь  · n=1  · sankhya-karika
+- в  · n=1  · sankhya-karika
+- опыт  · n=1  · yoga-sutry_vyasa-bhashya
+- форм существования  · n=1  · yoga-sutry_vyasa-bhashya
+- свобода  · n=1  · yoga-sutry
+- восприятие  · n=1  · yoga-sutry_zagumennov
+- фазами существования  · n=1  · yoga-sutry_zagumennov
+- равнодушна  · n=1  · amaru-shataka
+- качестве  · n=1  · vedartha-samgraha_ramanuja
+- примере  · n=1  · vedartha-samgraha_ramanuja
+- субстанция  · n=1  · vedartha-samgraha_ramanuja
+- связи  · n=1  · vedartha-samgraha_ramanuja
+- подобно  · n=1  · yotat-up
+- пребыванием  · n=1  · shv-up
+- сущностях  · n=1  · paramarthasara-abhinavagupta
+- Сущности  · n=1  · paramarthasara-abhinavagupta
+- существах  · n=1  · paramarthasara-abhinavagupta
+- тяготеет  · n=1  · mahabharata-sauptikaparva
+- положение  · n=1  · jabala-up
+- тех, кто  · n=1  · gitartha-samgraha_yamunacharya
+- предметах  · n=1  · pratyabhijna-hridaya_kshemaraja
+- способен  · n=1  · pratyabhijna-hridaya_kshemaraja
+- замысле  · n=1  · mahabharata-shalyaparva
+- обусловлен  · n=1  · yoga-sutry_vyasa-bhashya
+
+### `BAva-lakzaRam` — bhāva-lakṣaṇam  (n=1)
+
+- признаки желания  · n=1  · kama-sutra
+
+### `BAva-saMSudDi` — bhāva-saṃśuddhi  (n=5)
+
+- природная чистота  · n=2  · bhagavadgita-1914, bhagavadgity
+- очищенность существования  · n=1  · bhagavadgita-burba
+- чистота души  · n=1  · bhagavadgita-1788
+- чистота помыслов [честность в поведении]  · n=1  · bhagavadgita-radha
+
+### `BAva-saMSudDiH` — bhāva-saṃśuddhiḥ  (n=1)
+
+- ревностью ума  · n=1  · bhagavadgita-1909
+
+### `BAva-samanvitAH` — bhāva-samanvitāḥ  (n=1)
+
+- духовную  · n=1  · bhagavadgita-1788
+
+### `BAva-samanvita` — bhāva-samanvita  (n=4)
+
+- снабженные/одаренные любовью/верой  · n=1  · bhagavadgita-burba
+- в глубоком восторге  · n=1  · bhagavadgita-1914
+- преданные  · n=1  · bhagavadgita-1909
+- обладающие любовью  · n=1  · bhagavadgita-radha
+
+### `BAvaH` — bhāvaḥ  (n=31)
+
+- природа  · n=5  · gitarthasamgraha-abhinavagupta, bhagavadgita-prabhupada, bhagavadgita-radha
+- бытие  · n=4  · bhagavadgita-burba, ramanuja_gitabhashya, bhagavadgity, bhagavadgita-radha
+- состояние  · n=3  · bhagavadgita-burba, mahabharata-ashvamedhikaparva
+- наличие  · n=2  · nyaya-bhashya
+- Муж и жена  · n=1  · ramayana-ayodhyakanda
+- человека  · n=1  · ramayana-aranyakanda
+- чувство  · n=1  · ramayana-aranyakanda
+- сердце  · n=1  · mahabharata-dronaparva
+- душа  · n=1  · mahabharata-dronaparva
+- мысли  · n=1  · mahabharata-udyogaparva
+- небытие  · n=1  · gitarthasamgraha-abhinavagupta
+- природы  · n=1  · bhagavadgita-1914
+- расположеніи  · n=1  · bhagavadgity
+- благородство  · n=1  · bhagavadgity
+- быванье  · n=1  · bhagavadgita-smirnov
+- натура  · n=1  · bhagavadgita-1788
+- возникнет  · n=1  · bhagavadgita-sementsov
+- существование  · n=1  · bhagavadgita-sharma
+- объект  · n=1  · bhagavadgita-radha
+- настроение  · n=1  · mahabharata-aranyakaparva
+- состояния  · n=1  · mahabharata-ashvamedhikaparva
+
+### `BAvaM` — bhāvaṃ  (n=4)
+
+- сущность  · n=2  · bhagavadgity, gitagovinda
+- желание  · n=1  · kama-sutra
+- существе  · n=1  · ramanuja_gitabhashya
+
+### `BAvaSabda` — bhāvaśabda  (n=4)
+
+- слова  · n=2  · nyaya-bhashya
+- слово, обозначающее вещь  · n=2  · nyaya-bhashya
+
+### `BAvaSakti` — bhāvaśakti  (n=1)
+
+- силы сущего  · n=1  · vedartha-samgraha_ramanuja
+
+### `BAvabanDana` — bhāvabandhana  (n=1)
+
+- связь сердец  · n=1  · raghuvamsha
+
+### `BAvadoza` — bhāvadoṣa  (n=1)
+
+- злым умыслом  · n=1  · mahabharata-adiparva
+
+### `BAvagamyaM` — bhāvagamyaṃ  (n=1)
+
+- на память  · n=1  · megha-duta
+
+### `BAvagata` — bhāvagata  (n=1)
+
+- погруженным в созерцание  · n=1  · devi-gita
+
+### `BAvagatena` — bhāvagatena  (n=1)
+
+- мыслью о владыке  · n=1  · mun-up
+
+### `BAvagrAhA` — bhāvagrāhā  (n=1)
+
+- любовные жесты – крокодилам  · n=1  · ramayana-sundarakanda
+
+### `BAvagrAhya` — bhāvagrāhya  (n=2)
+
+- постигаемого сердцем  · n=1  · shv-up
+- Постигаемого сердцем  · n=1  · shv-up
+
+### `BAvagrahaRapaRqita` — bhāvagrahaṇapaṇḍita  (n=1)
+
+- Сердца мужчин пленять научились  · n=1  · buddhacharita
+
+### `BAvaiH` — bhāvaiḥ  (n=7)
+
+- состояниями  · n=3  · bhagavadgity, bhagavadgita-erman, bhagavadgita-radha
+- исполнением  · n=1  · kama-sutra
+- гунами  · n=1  · gitarthasamgraha-abhinavagupta
+- вліяніемъ  · n=1  · bhagavadgita-1788
+- покровомъ  · n=1  · bhagavadgita-1909
+
+### `BAvaikarasa` — bhāvaikarasa  (n=1)
+
+- сердцем  · n=1  · kumarasambhava
+
+### `BAvajAnAM` — bhāvajānāṃ  (n=1)
+
+- природе  · n=1  · kama-sutra
+
+### `BAvajAta` — bhāvajāta  (n=3)
+
+- множество вещей  · n=2  · nyaya-bhashya
+- любовь  · n=1  · buddhacharita
+
+### `BAvajYAna` — bhāvajñāna  (n=1)
+
+- Знанием души человеческой  · n=1  · buddhacharita
+
+### `BAvajYa` — bhāvajña  (n=4)
+
+- Знатока сердца  · n=2  · ramayana-aranyakanda
+- разбирающийся в поведении  · n=1  · kama-sutra
+- знающий суть естества  · n=1  · mahabharata-dronaparva
+
+### `BAvajijYAsArTinI` — bhāvajijñāsārthinī  (n=1)
+
+- стремясь испытать чувства  · n=1  · kama-sutra
+
+### `BAvam` — bhāvam  (n=51)
+
+- природу  · n=7  · bhagavadgita-prabhupada, gitarthasamgraha-abhinavagupta, bhagavadgity
+- бытия  · n=6  · bhagavadgita-burba, bhagavadgita-smirnov, mahabharata-bhishmaparva
+- природы  · n=3  · gitarthasamgraha-abhinavagupta, bhagavadgita-erman, bhagavadgita-radha
+- преуспеяния  · n=2  · mahabharata-udyogaparva
+- природе  · n=2  · gitarthasamgraha-abhinavagupta, bhagavadgita-radha
+- сути  · n=2  · bhagavadgity, bhagavadgita-sementsov
+- сущность  · n=2  · bhagavadgita-erman, bhagavadgita-sementsov
+- состояние бытия  · n=2  · bhagavadgita-prabhupada
+- намерении  · n=1  · ramayana-ayodhyakanda
+- чувства  · n=1  · ramayana-ayodhyakanda
+- любить  · n=1  · ramayana-aranyakanda
+- близости  · n=1  · ramayana-aranyakanda
+- суть  · n=1  · ramayana-balakanda
+- мыслей  · n=1  · mahabharata-aranyakaparva
+- желание  · n=1  · mahabharata-adiparva
+- мнения  · n=1  · mahabharata-adiparva
+- склонность  · n=1  · mahabharata-udyogaparva
+- природа  · n=1  · gitarthasamgraha-abhinavagupta
+- положение  · n=1  · bhagavadgita-burba
+- Бытия  · n=1  · bhagavadgity
+- начало  · n=1  · bhagavadgity
+- бытию  · n=1  · bhagavadgita-erman
+- бытие  · n=1  · bhagavadgita-erman
+- Сути  · n=1  · bhagavadgita-smirnov
+- начала  · n=1  · bhagavadgita-1788
+- натуры  · n=1  · bhagavadgita-1788
+- служащіе  · n=1  · bhagavadgita-1909
+- Присутствия  · n=1  · bhagavadgita-sharma
+- природе [то есть об образе, явлении, деяниях, играх и так далее]  · n=1  · bhagavadgita-radha
+- сущность [душу]  · n=1  · bhagavadgita-radha
+- душа  · n=1  · bhagavadgita-radha
+- состоянию сознания  · n=1  · mahabharata-ashvamedhikaparva
+- сердце  · n=1  · raghuvamsha
+
+### `BAvamAtsaryatfzRASAmoha` — bhāvamātsaryatṛṣṇāśāmoha  (n=1)
+
+- зависти, жажды, надежды, ослепления  · n=1  · vajs-up
+
+### `BAvanA` — bhāvanā  (n=34)
+
+- осознания  · n=4  · mahabharata-bhishmaparva, bhagavadgita-erman
+- созерцания  · n=3  · bhagavadgita-1914, bhagavadgita-sementsov, yoga-sutry
+- медитации  · n=2  · ramanuja_gitabhashya, nyaya-bhashya
+- творческой мысли  · n=2  · bhagavadgity, bhagavadgita-smirnov
+- [мистическому] предвосхищению  · n=2  · paramarthasara-abhinavagupta
+- предвосхищение  · n=2  · paramarthasara-abhinavagupta
+- доставить  · n=1  · kama-sutra
+- созерцание  · n=1  · gitarthasamgraha-abhinavagupta
+- Бытие  · n=1  · gitarthasamgraha-abhinavagupta
+- как сказано  · n=1  · gitarthasamgraha-abhinavagupta
+- воображения / медитации / непосредственного восприятия  · n=1  · bhagavadgita-burba
+- силы созерцанія  · n=1  · bhagavadgita-1788
+- созерцанья  · n=1  · bhagavadgita-1909
+- чувств  · n=1  · bhagavadgita-sharma
+- сосредоточение ума  · n=1  · bhagavadgita-prabhupada
+- медитировать  · n=1  · bhagavadgita-radha
+- концентрированное размышление  · n=1  · nyaya-bhashya
+- окультуривания психики  · n=1  · yoga-sutry_vyasa-bhashya
+- чувства  · n=1  · yoga-sutry_vyasa-bhashya
+- практика  · n=1  · yoga-sutry
+- размышлением  · n=1  · yoga-sutry_sharma
+- творящий дух  · n=1  · yoga-sutry_sharma
+- проявления  · n=1  · yoga-sutry_zagumennov
+- Представление  · n=1  · yotat-up
+- устремленная в будущее сила мистического пред-восхищения  · n=1  · pratyabhijna-hridaya_kshemaraja
+
+### `BAvanAH` — bhāvanāḥ  (n=1)
+
+- размышляющие  · n=1  · mahabharata-ashvamedhikaparva
+
+### `BAvanAtaH` — bhāvanātaḥ  (n=1)
+
+- культивированием  · n=1  · yoga-sutry_vyasa-bhashya
+
+### `BAvanAtraya` — bhāvanātraya  (n=1)
+
+- три акта творения  · n=1  · vedartha-samgraha_ramanuja
+
+### `BAvana` — bhāvana  (n=16)
+
+- созерцание  · n=3  · yoga-sutry_zagumennov
+- проявление  · n=1  · mahabharata-aranyakaparva
+- основа благоденствия  · n=1  · mahabharata-aranyakaparva
+- продолжить  · n=1  · mahabharata-udyogaparva
+- развивать  · n=1  · yoga-sutry_vyasa-bhashya
+- развитие  · n=1  · yoga-sutry
+- размышление  · n=1  · yoga-sutry
+- пребывание  · n=1  · yoga-sutry_sharma
+- чувствовать основание  · n=1  · yoga-sutry_sharma
+- мысли  · n=1  · yoga-sutry_sharma
+- мысль  · n=1  · yoga-sutry_sharma
+- реализации  · n=1  · yoga-sutry_zagumennov
+- Бхаване  · n=1  · mahabharata-sauptikaparva
+- Бхавана — Творец, Созидатель  · n=1  · mahabharata-sauptikaparva
+
+### `BAvana-SIlA` — bhāvana-śīlā  (n=1)
+
+- склонна воображать  · n=1  · gitagovinda
+
+### `BAvanaH` — bhāvanaḥ  (n=1)
+
+- благодетель  · n=1  · ramayana-balakanda
+
+### `BAvanaM` — bhāvanaṃ  (n=1)
+
+- размышление  · n=1  · gitarthasamgraha-abhinavagupta
+
+### `BAvanam` — bhāvanam  (n=3)
+
+- сосредоточение  · n=1  · yoga-sutry_vyasa-bhashya
+- размышление  · n=1  · yoga-sutry
+- культивировать  · n=1  · yoga-sutry
+
+### `BAvanayA` — bhāvanayā  (n=7)
+
+- погрузилась мыслями  · n=7  · gitagovinda
+
+### `BAvanirdvandva` — bhāvanirdvandva  (n=1)
+
+- не зная тревог  · n=1  · mahabharata-aranyakaparva
+
+### `BAvanirvftti` — bhāvanirvṛtti  (n=1)
+
+- функционирование диспозиций сознания  · n=1  · sankhya-karika
+
+### `BAvaprApti` — bhāvaprāpti  (n=2)
+
+- исполнения желания  · n=1  · kama-sutra
+- истечения семени  · n=1  · kama-sutra
+
+### `BAvapratidUzite` — bhāvapratidūṣite  (n=1)
+
+- вызывающего сомнения  · n=1  · manavadharmashastra
+
+### `BAvasTa` — bhāvastha  (n=1)
+
+- привела  · n=1  · ramayana-ayodhyakanda
+
+### `BAvasTam` — bhāvastham  (n=1)
+
+- любви  · n=1  · kumarasambhava
+
+### `BAvasaMSudDi` — bhāvasaṃśuddhi  (n=7)
+
+- душевную чистоту  · n=2  · mahabharata-bhishmaparva, bhagavadgita-erman
+- очищенье душевной природы  · n=2  · bhagavadgita-sementsov
+- чистота бхавы  · n=1  · gitarthasamgraha-abhinavagupta
+- чистота жизни  · n=1  · bhagavadgita-smirnov
+- чистоту мысли  · n=1  · bhagavadgita-sharma
+
+### `BAvasaMSudDiH` — bhāvasaṃśuddhiḥ  (n=1)
+
+- очищение сущности внутренней  · n=1  · ramanuja_gitabhashya
+
+### `BAvasaNkalpa` — bhāvasaṅkalpa  (n=1)
+
+- старательно исполняемых  · n=1  · mahabharata-aranyakaparva
+
+### `BAvasamAhita` — bhāvasamāhita  (n=1)
+
+- сосредоточенный в мыслях  · n=1  · manavadharmashastra
+
+### `BAvasamanvitAH` — bhāvasamanvitāḥ  (n=3)
+
+- наделенные любовью  · n=1  · gitarthasamgraha-abhinavagupta
+- Имѣющіе  · n=1  · bhagavadgity
+- преисполненные любовью  · n=1  · bhagavadgita-smirnov
+
+### `BAvasamanvita` — bhāvasamanvita  (n=4)
+
+- устремившись  · n=1  · bhagavadgita-sementsov
+- преданный  · n=1  · bhagavadgita-sharma
+- очень сосредоточенные  · n=1  · bhagavadgita-prabhupada
+- беспрерывно  · n=1  · bhagavadgita-prabhupada
+
+### `BAvasarga` — bhāvasarga  (n=1)
+
+- состояния сознания  · n=1  · sankhya-karika
+
+### `BAvasya` — bhāvasya  (n=1)
+
+- суть  · n=1  · ramayana-aranyakanda
+
+### `BAvataH` — bhāvataḥ  (n=1)
+
+- свойствам  · n=1  · mahabharata-ashvamedhikaparva
+
+### `BAvato` — bhāvato  (n=1)
+
+- согласно природе  · n=1  · kama-sutra
+
+### `BAvay` — bhāvay  (n=15)
+
+- Погруженные в размышление  · n=1  · ramayana-ayodhyakanda
+- созерцающий  · n=1  · ramayana-ayodhyakanda
+- вызываешь к жизни  · n=1  · mahabharata-adiparva
+- укреплять  · n=1  · bhagavadgity
+- поддерживайте  · n=1  · bhagavadgita-erman
+- поддерживая  · n=1  · bhagavadgita-erman
+- питают  · n=1  · bhagavadgita-sementsov
+- питайте  · n=1  · bhagavadgita-sementsov
+- помогая  · n=1  · bhagavadgita-sementsov
+- вспомнили  · n=1  · bhagavadgita-1909
+- вспоминайте  · n=1  · bhagavadgita-1909
+- быть  · n=1  · nyaya-bhashya
+- культивировать  · n=1  · yoga-sutry_vyasa-bhashya
+- думать  · n=1  · yoga-sutry_vyasa-bhashya
+- постигать  · n=1  · vajs-up
+
+### `BAvayA` — bhāvayā  (n=2)
+
+- женщины  · n=1  · ramayana-ayodhyakanda
+- нрава  · n=1  · ramayana-ayodhyakanda
+
+### `BAvaya` — bhāvaya  (n=2)
+
+- оживи  · n=1  · mahabharata-adiparva
+- знай  · n=1  · gitagovinda
+
+### `BAvayan` — bhāvayan  (n=4)
+
+- возвращая к жизни  · n=1  · mahabharata-aranyakaparva
+- оживляя  · n=1  · mahabharata-aranyakaparva
+- возвращает к жизни  · n=1  · mahabharata-aranyakaparva
+- переживающий  · n=1  · gitarthasamgraha-abhinavagupta
+
+### `BAvayantI` — bhāvayantī  (n=2)
+
+- течет  · n=1  · ramayana-balakanda
+- выказывая  · n=1  · mahabharata-virataparva
+
+### `BAvayanta` — bhāvayanta  (n=4)
+
+- умилостивляя  · n=1  · gitarthasamgraha-abhinavagupta
+- поощряющие  · n=1  · bhagavadgita-burba
+- насыщая  · n=1  · bhagavadgita-burba
+- радея  · n=1  · bhagavadgita-sharma
+
+### `BAvayantaH` — bhāvayantaḥ  (n=7)
+
+- укрепляя  · n=2  · ramanuja_gitabhashya, bhagavadgita-smirnov
+- довольные  · n=2  · bhagavadgita-prabhupada
+- поддерживая  · n=1  · mahabharata-bhishmaparva
+- Воспоминайте  · n=1  · bhagavadgita-1788
+- удовлетворяя  · n=1  · bhagavadgita-radha
+
+### `BAvayanti` — bhāvayanti  (n=1)
+
+- поддерживают  · n=1  · mahabharata-aranyakaparva
+
+### `BAvayantu` — bhāvayantu  (n=12)
+
+- пусть дадут благословение  · n=2  · bhagavadgita-prabhupada
+- поддерживают  · n=1  · mahabharata-bhishmaparva
+- умилостивят  · n=1  · gitarthasamgraha-abhinavagupta
+- наделят  · n=1  · gitarthasamgraha-abhinavagupta
+- да поощрят  · n=1  · bhagavadgita-burba
+- да насытят  · n=1  · bhagavadgita-burba
+- пусть укрепляют  · n=1  · ramanuja_gitabhashya
+- да укрепят  · n=1  · bhagavadgita-smirnov
+- воспоминали  · n=1  · bhagavadgita-1788
+- заботятся  · n=1  · bhagavadgita-sharma
+- пусть удовлетворяют  · n=1  · bhagavadgita-radha
+
+### `BAvayatA` — bhāvayatā  (n=4)
+
+- удовлетворяющим  · n=2  · bhagavadgita-prabhupada
+- умилостивленные  · n=1  · gitarthasamgraha-abhinavagupta
+- укрепляйте  · n=1  · bhagavadgita-smirnov
+
+### `BAvayatAnena` — bhāvayatānena  (n=1)
+
+- воспоминайте  · n=1  · bhagavadgita-1788
+
+### `BAvayata` — bhāvayata  (n=6)
+
+- поддерживайте  · n=1  · mahabharata-bhishmaparva
+- поощрите  · n=1  · bhagavadgita-burba
+- насыщайте  · n=1  · bhagavadgita-burba
+- укрепляйте  · n=1  · ramanuja_gitabhashya
+- процветают  · n=1  · bhagavadgita-sharma
+- удовлетворяйте  · n=1  · bhagavadgita-radha
+
+### `BAvayataH` — bhāvayataḥ  (n=3)
+
+- медитирующего  · n=1  · nyaya-bhashya
+- сосредоточенного  · n=1  · yoga-sutry_vyasa-bhashya
+- кто взращивает  · n=1  · yoga-sutry_vyasa-bhashya
+
+### `BAvayate` — bhāvayate  (n=1)
+
+- лаская  · n=1  · mahabharata-aranyakaparva
+
+### `BAvayati` — bhāvayati  (n=8)
+
+- питает  · n=2  · ait-up
+- питайте  · n=1  · bhagavadgita-1914
+- питают  · n=1  · bhagavadgita-1914
+- Питая  · n=1  · bhagavadgita-1914
+- развивает  · n=1  · yoga-sutry_vyasa-bhashya
+- Питает  · n=1  · ait-up
+- питая  · n=1  · ait-up
+
+### `BAvayet` — bhāvayet  (n=12)
+
+- распознает  · n=3  · yotat-up
+- созерцать  · n=2  · gitarthasamgraha-abhinavagupta, devi-gita
+- пребывает  · n=2  · brb-up
+- постигнет  · n=1  · devi-gita
+- созерцает  · n=1  · devi-gita
+- пусть он созерцает  · n=1  · devi-gita
+- пусть размышляет  · n=1  · devi-gita
+- пусть культивирует  · n=1  · yoga-sutry_vyasa-bhashya
+
+### `BAvayitavyA` — bhāvayitavyā  (n=1)
+
+- следует питать  · n=1  · ait-up
+
+### `BAvayitavya` — bhāvayitavya  (n=2)
+
+- медитировать  · n=1  · nyaya-bhashya
+- медитации  · n=1  · nyaya-bhashya
+
+### `BAvayitf` — bhāvayitṛ  (n=1)
+
+- защита  · n=1  · mahabharata-aranyakaparva
+
+### `BAvayitrI` — bhāvayitrī  (n=1)
+
+- питающую  · n=1  · ait-up
+
+### `BAvayituM` — bhāvayituṃ  (n=1)
+
+- Установили  · n=1  · ramayana-sundarakanda
+
+### `BAvayitvA` — bhāvayitvā  (n=2)
+
+- размышляя  · n=1  · devi-gita
+- пусть проникнет  · n=1  · yotat-up
+
+### `BAvayoga` — bhāvayoga  (n=1)
+
+- чувствуя желания  · n=1  · kama-sutra
+
+### `BAvayu` — bhāvayu  (n=2)
+
+- освежает  · n=2  · rigveda
+
+### `BAvayukta` — bhāvayukta  (n=1)
+
+- связанном с желанием  · n=1  · kama-sutra
+
+### `BAve` — bhāve  (n=3)
+
+- в  · n=2  · ramayana-ayodhyakanda
+- природе  · n=1  · bhagavadgita-prabhupada
+
+### `BAvena` — bhāvena  (n=7)
+
+- замысел  · n=1  · ramayana-ayodhyakanda
+- сердцем  · n=1  · ramayana-ayodhyakanda
+- всей душою  · n=1  · ramayana-sundarakanda
+- с ...  · n=1  · manavadharmashastra
+- в печали  · n=1  · buddhacharita
+- своим  · n=1  · buddhacharita
+- преданностью  · n=1  · devi-gita
+
+### `BAvezu` — bhāveṣu  (n=16)
+
+- образах  · n=3  · gitarthasamgraha-abhinavagupta, bhagavadgity, bhagavadgita-smirnov
+- состояниях  · n=2  · mahabharata-bhishmaparva, bhagavadgita-erman
+- состояньях  · n=2  · ramanuja_gitabhashya, bhagavadgita-sementsov
+- существам  · n=1  · mahabharata-udyogaparva
+- состояниях бытия  · n=1  · bhagavadgita-burba
+- аспекте  · n=1  · bhagavadgita-1914
+- натурахъ  · n=1  · bhagavadgita-1788
+- существованьяхъ  · n=1  · bhagavadgita-1909
+- в проявлениях  · n=1  · bhagavadgita-prabhupada
+- проявлениях  · n=1  · bhagavadgita-prabhupada
+- объектах  · n=1  · bhagavadgita-radha
+- предметы  · n=1  · raghuvamsha
+
+### `BAvi` — bhāvi  (n=10)
+
+- будет  · n=3  · mahabharata-dronaparva, mahabharata-ashvamedhikaparva, shukasaptati
+- будущее  · n=2  · raghuvamsha
+- может быть  · n=1  · mahabharata-udyogaparva
+- будущем  · n=1  · mahabharata-sabhaparva
+- предстояло  · n=1  · raghuvamsha
+- сможешь  · n=1  · megha-duta
+- сбудутся  · n=1  · mahabharata-sauptikaparva
+
+### `BAvimaraRotsAha` — bhāvimaraṇotsāha  (n=1)
+
+- без тебя мне и жизни нет  · n=1  · amaru-shataka
+
+### `BAvin` — bhāvin  (n=15)
+
+- будущее  · n=2  · buddhacharita
+- будет  · n=1  · mahabharata-aranyakaparva
+- должен быть  · n=1  · mahabharata-aranyakaparva
+- должно быть  · n=1  · mahabharata-adiparva
+- грядущей  · n=1  · mahabharata-adiparva
+- грядущий  · n=1  · mahabharata-bhishmaparva
+- будущим  · n=1  · buddhacharita
+- станешь  · n=1  · buddhacharita
+- неизбежный  · n=1  · buddhacharita
+- будущем  · n=1  · mahabharata-udyogaparva
+- осуществима  · n=1  · mahabharata-udyogaparva
+- станет  · n=1  · mahabharata-udyogaparva
+- достигают  · n=1  · mahabharata-karnaparva
+- должно случиться  · n=1  · mahabharata-sabhaparva
+
+### `BAvinI` — bhāvinī  (n=1)
+
+- Тебя  · n=1  · kumarasambhava
+
+### `BAvinaH` — bhāvinaḥ  (n=1)
+
+- станут  · n=1  · mahabharata-aranyakaparva
+
+### `BAvinam` — bhāvinam  (n=1)
+
+- придет  · n=1  · mahabharata-udyogaparva
+
+### `BAvitAnINgitAni` — bhāvitānīṅgitāni  (n=1)
+
+- проявленное намерение  · n=1  · mahabharata-adiparva
+
+### `BAvitAtmA` — bhāvitātmā  (n=2)
+
+- с душою, очищенной созерцанием  · n=1  · mahabharata-adiparva
+- возвысившийся душою  · n=1  · raghuvamsha
+
+### `BAvitAtmaBiH` — bhāvitātmabhiḥ  (n=2)
+
+- познавшие Атман  · n=1  · mahabharata-aranyakaparva
+- смирили свои души  · n=1  · mahabharata-aranyakaparva
+
+### `BAvitAtman` — bhāvitātman  (n=21)
+
+- чьей душа очищена созерцанием  · n=2  · ramayana-balakanda
+- очищенным душою  · n=2  · mahabharata-shalyaparva
+- чистый душой  · n=1  · mahabharata-adiparva
+- добродетельным  · n=1  · ramayana-ayodhyakanda
+- чистых душою  · n=1  · ramayana-sundarakanda
+- помыслами  · n=1  · ramayana-aranyakanda
+- углубившегося в размышление  · n=1  · ramayana-balakanda
+- мудрых  · n=1  · ramayana-balakanda
+- Чье сердце очищено молитвой  · n=1  · ramayana-balakanda
+- смиривших свои души  · n=1  · mahabharata-aranyakaparva
+- святые  · n=1  · mahabharata-adiparva
+- очистивших душу  · n=1  · mahabharata-bhishmaparva
+- обрел чистоту души  · n=1  · buddhacharita
+- к духу мыслью устремленные  · n=1  · mahabharata-bhishmaparva
+- очищенные душою  · n=1  · mahabharata-shalyaparva
+- очищенного душою  · n=1  · mahabharata-shalyaparva
+- выявившим в себе Атман  · n=1  · mahabharata-ashvamedhikaparva
+- смирившие души  · n=1  · mahabharata-ashvamedhikaparva
+- смиривший душу  · n=1  · mahabharata-svargarohanikaparva
+
+### `BAvitAtmanA` — bhāvitātmanā  (n=1)
+
+- вдохновенным  · n=1  · mahabharata-adiparva
+
+### `BAvitAtmanAm` — bhāvitātmanām  (n=7)
+
+- погруженные в созерцание  · n=1  · ramayana-balakanda
+- проявивших свое истинное Я  · n=1  · mahabharata-aranyakaparva
+- выявившими свое (истинное) «Я»  · n=1  · mahabharata-aranyakaparva
+- познавшим Атман  · n=1  · mahabharata-aranyakaparva
+- чьи мысли были погружены в размышление  · n=1  · mahabharata-adiparva
+- обузданным душою  · n=1  · mahabharata-udyogaparva
+- очищенным душою  · n=1  · mahabharata-shalyaparva
+
+### `BAvitAtmanaH` — bhāvitātmanaḥ  (n=6)
+
+- созерцательного  · n=1  · mahabharata-adiparva
+- чистого душой  · n=1  · mahabharata-adiparva
+- мудреца  · n=1  · ramayana-aranyakanda
+- просветленного  · n=1  · ramayana-balakanda
+- познавшего Атман  · n=1  · mahabharata-aranyakaparva
+- обретшего знание Атмана  · n=1  · mahabharata-aranyakaparva
+
+### `BAvita` — bhāvita  (n=22)
+
+- предававшихся созерцанию  · n=3  · ramayana-aranyakanda
+- предававшегося  · n=1  · ramayana-aranyakanda
+- сосредоточенного  · n=1  · ramayana-aranyakanda
+- отдавшихся  · n=1  · ramayana-aranyakanda
+- Очищенные  · n=1  · ramayana-aranyakanda
+- очистив свой дух  · n=1  · mahabharata-aranyakaparva
+- поддержкой  · n=1  · mahabharata-aranyakaparva
+- помышляющие  · n=1  · mahabharata-aranyakaparva
+- помышляет  · n=1  · kama-sutra
+- омочить  · n=1  · kama-sutra
+- омоченный  · n=1  · kama-sutra
+- омоченного  · n=1  · kama-sutra
+- смешанные  · n=1  · kama-sutra
+- воодушевлен  · n=1  · mahabharata-adiparva
+- призванный к жизни  · n=1  · mahabharata-adiparva
+- гордится  · n=1  · mahabharata-udyogaparva
+- созерцает  · n=1  · gitarthasamgraha-abhinavagupta
+- питаемые  · n=1  · bhagavadgita-1914
+- укреплённые  · n=1  · bhagavadgity
+- стало объектом [непрерывного] культивирования  · n=1  · yoga-sutry_vyasa-bhashya
+
+### `BAvitaAtmanaH` — bhāvita ātmanaḥ  (n=1)
+
+- многомудрого  · n=1  · ramayana-aranyakanda
+
+### `BAvitaH` — bhāvitaḥ  (n=2)
+
+- отягощенный  · n=1  · mahabharata-aranyakaparva
+- помнящий  · n=1  · bhagavadgita-prabhupada
+
+### `BAvitaM` — bhāvitaṃ  (n=2)
+
+- решение  · n=1  · mahabharata-adiparva
+- оживленная  · n=1  · mahabharata-adiparva
+
+### `BAvitabudDi` — bhāvitabuddhi  (n=1)
+
+- гордились  · n=1  · mahabharata-sabhaparva
+
+### `BAvitasmartavyA` — bhāvitasmartavyā  (n=1)
+
+- припоминаемое воображаемо  · n=1  · yoga-sutry_vyasa-bhashya
+
+### `BAvitatvAt` — bhāvitatvāt  (n=1)
+
+- есть  · n=1  · vedartha-samgraha_ramanuja
+
+### `BAvitatva` — bhāvitatva  (n=1)
+
+- созерцания  · n=1  · gitarthasamgraha-abhinavagupta
+
+### `BAvitayA` — bhāvitayā  (n=1)
+
+- охваченной  · n=1  · gitagovinda
+
+### `BAvitena` — bhāvitena  (n=1)
+
+- смешанного  · n=1  · kama-sutra
+
+### `BAvitvAt` — bhāvitvāt  (n=2)
+
+- назначенное  · n=1  · mahabharata-aranyakaparva
+- вследствие неизбежности судьбы  · n=1  · mahabharata-dronaparva
+
+### `BAvitva` — bhāvitva  (n=1)
+
+- сила неизбежной логики  · n=1  · mahabharata-sabhaparva
+
+### `BAvo` — bhāvo  (n=2)
+
+- природа  · n=2  · bhagavadgita-sementsov
+
+### `BAvuka` — bhāvuka  (n=1)
+
+- милый  · n=1  · shukasaptati
+
+### `BAvya` — bhāvya  (n=11)
+
+- должен быть изобличен  · n=2  · manavadharmashastra
+- должно случиться  · n=2  · shatakatrayam-serebryakov
+- Должно  · n=1  · ramayana-sundarakanda
+- Бхавья  · n=1  · rigveda
+- возникнуть  · n=1  · gitarthasamgraha-abhinavagupta
+- быть  · n=1  · gitarthasamgraha-abhinavagupta
+- возможное  · n=1  · shatakatrayam
+- грядущем  · n=1  · shatakatrayam
+- будет  · n=1  · atharvaveda
+
+### `BAvya-saNkalpayan` — bhāvya-saṅkalpayan  (n=1)
+
+- задумываясь над будущим  · n=1  · shatakatrayam-serebryakov
+
+### `BAvyaM` — bhāvyaṃ  (n=3)
+
+- надо быть  · n=1  · manavadharmashastra
+- будь  · n=1  · mahabharata-aranyakaparva
+- Следует  · n=1  · mahabharata-aranyakaparva
+
+### `BAvyam` — bhāvyam  (n=6)
+
+- будь  · n=2  · shukasaptati
+- Оставайся  · n=1  · ramayana-aranyakanda
+- быть  · n=1  · mahabharata-aranyakaparva
+- возможно  · n=1  · mahabharata-udyogaparva
+- будет  · n=1  · atharvaveda
+
+### `BAvyasya` — bhāvyasya  (n=1)
+
+- Бхавье  · n=1  · rigveda
+
+### `BAvyatAm` — bhāvyatām  (n=2)
+
+- следует  · n=2  · devi-gita
+
+### `BAvyate` — bhāvyate  (n=1)
+
+- мысли  · n=1  · devi-gita
+
+### `BAyai` — bhāyai  (n=1)
+
+- для жены  · n=1  · kau-up
+
+### `BAyayes` — bhāyayes  (n=1)
+
+- напугай  · n=1  · megha-duta
+
+### `BAz` — bhāṣ  (n=20)
+
+- говоришь  · n=5  · mahabharata-adiparva, bhagavadgita-burba, bhagavadgity, br-up, mahabharata-virataparva
+- сказал  · n=3  · mahabharata-adiparva, kumarasambhava, mahabharata-sabhaparva
+- говорить  · n=2  · mahabharata-adiparva, kau-up
+- обратилась  · n=2  · mahabharata-aranyakaparva, mahabharata-ashvamedhikaparva
+- сказанные  · n=2  · mahabharata-aranyakaparva
+- изрекла  · n=1  · mahabharata-aranyakaparva
+- объявил  · n=1  · mahabharata-adiparva
+- промолвил  · n=1  · buddhacharita
+- приказал  · n=1  · buddhacharita
+- сказали  · n=1  · mahabharata-ashvamedhikaparva
+- говорит  · n=1  · kau-up
+
+### `BAzA` — bhāṣā  (n=16)
+
+- речь  · n=2  · gitarthasamgraha-abhinavagupta, ramanuja_gitabhashya
+- язык  · n=2  · bhagavadgita-prabhupada
+- Соглашение  · n=1  · manavadharmashastra
+- языки  · n=1  · manavadharmashastra
+- описание  · n=1  · bhagavadgita-burba
+- признак  · n=1  · bhagavadgity
+- описать  · n=1  · bhagavadgita-erman
+- определение  · n=1  · bhagavadgita-smirnov
+- отличительный знакъ  · n=1  · bhagavadgita-1788
+- каков он  · n=1  · bhagavadgita-sementsov
+- говоритъ  · n=1  · bhagavadgita-1909
+- черты  · n=1  · bhagavadgita-sharma
+- характеристика  · n=1  · bhagavadgita-radha
+- языком  · n=1  · mahabharata-sabhaparva
+
+### `BAzAH` — bhāṣāḥ  (n=1)
+
+- языках  · n=1  · mahabharata-shalyaparva
+
+### `BAzAM` — bhāṣāṃ  (n=1)
+
+- речью  · n=1  · mahabharata-virataparva
+
+### `BAzAsu` — bhāṣāsu  (n=1)
+
+- языках  · n=1  · mahabharata-shalyaparva
+
+### `BAza` — bhāṣa  (n=1)
+
+- бхаша  · n=1  · nyaya-bhashya
+
+### `BAzaRa` — bhāṣaṇa  (n=4)
+
+- произношение  · n=1  · manavadharmashastra
+- беседе  · n=1  · ramayana-balakanda
+- речь  · n=1  · kama-sutra
+- слова  · n=1  · mahabharata-udyogaparva
+
+### `BAzaRam` — bhāṣaṇam  (n=2)
+
+- ведет разговор  · n=1  · kama-sutra
+- выражения  · n=1  · mahabharata-udyogaparva
+
+### `BAzamARA` — bhāṣamāṇā  (n=1)
+
+- говорящая  · n=1  · mahabharata-shalyaparva
+
+### `BAzamARAH` — bhāṣamāṇāḥ  (n=1)
+
+- возглашая  · n=1  · mahabharata-karnaparva
+
+### `BAzamARAm` — bhāṣamāṇām  (n=1)
+
+- говорившую  · n=1  · mahabharata-udyogaparva
+
+### `BAzamARa` — bhāṣamāṇa  (n=7)
+
+- говорящий  · n=2  · mahabharata-dronaparva
+- беседует  · n=1  · manavadharmashastra
+- возглашая  · n=1  · mahabharata-aranyakaparva
+- говорил  · n=1  · mahabharata-udyogaparva
+- сказал  · n=1  · mahabharata-shalyaparva
+- обращался  · n=1  · mahabharata-sabhaparva
+
+### `BAzamARaH` — bhāṣamāṇaḥ  (n=1)
+
+- сказать  · n=1  · mahabharata-adiparva
+
+### `BAzamARam` — bhāṣamāṇam  (n=2)
+
+- сказал  · n=1  · ramayana-balakanda
+- говорил  · n=1  · mahabharata-adiparva
+
+### `BAzamARasya` — bhāṣamāṇasya  (n=1)
+
+- пожелавшим  · n=1  · ramayana-ayodhyakanda
+
+### `BAzamARau` — bhāṣamāṇau  (n=1)
+
+- спросившим  · n=1  · mahabharata-adiparva
+
+### `BAzanta` — bhāṣanta  (n=1)
+
+- выкрикивая  · n=1  · mahabharata-karnaparva
+
+### `BAzante` — bhāṣante  (n=1)
+
+- говорят  · n=1  · mahabharata-dronaparva
+
+### `BAzase` — bhāṣase  (n=39)
+
+- говоришь  · n=24  · mahabharata-udyogaparva, mahabharata-virataparva, ramayana-ayodhyakanda, mahabharata-aranyakaparva, mahabharata-adiparva, bhagavadgita-smirnov, ramanuja_gitabhashya, bhagavadgita-1914, bhagavadgita-sementsov, bhagavadgita-1909, bhagavadgita-prabhupada, bhagavadgita-radha
+- ведешь  · n=3  · mahabharata-bhishmaparva, bhagavadgita-erman, bhagavadgita-sharma
+- ведёшь  · n=2  · mahabharata-bhishmaparva, bhagavadgita-erman
+- отречешься  · n=1  · ramayana-ayodhyakanda
+- ты говоришь  · n=1  · ramayana-ayodhyakanda
+- рассказывать  · n=1  · ramayana-ayodhyakanda
+- рассказываешь  · n=1  · mahabharata-aranyakaparva
+- возглашаешь  · n=1  · mahabharata-dronaparva
+- суть  · n=1  · bhagavadgita-1788
+- Курукшетра  · n=1  · bhagavadgita-1909
+- произносишь  · n=1  · bhagavadgita-prabhupada
+- плетешь  · n=1  · mahabharata-karnaparva
+- сказал  · n=1  · mahabharata-striparva
+
+### `BAzasi` — bhāṣasi  (n=1)
+
+- говоришь  · n=1  · mahabharata-aranyakaparva
+
+### `BAzatAm` — bhāṣatām  (n=2)
+
+- беседовали  · n=1  · mahabharata-adiparva
+- возгласами  · n=1  · mahabharata-dronaparva
+
+### `BAzata` — bhāṣata  (n=1)
+
+- говорил  · n=1  · mahabharata-virataparva
+
+### `BAzataH` — bhāṣataḥ  (n=1)
+
+- хочу сказать  · n=1  · ramayana-aranyakanda
+
+### `BAzate` — bhāṣate  (n=10)
+
+- говорит  · n=5  · mahabharata-adiparva, manavadharmashastra, mahabharata-udyogaparva
+- говорил  · n=3  · mahabharata-udyogaparva, ramayana-ayodhyakanda
+- говорят  · n=1  · ramayana-ayodhyakanda
+- объясняется  · n=1  · kama-sutra
+
+### `BAzato` — bhāṣato  (n=1)
+
+- болтовню  · n=1  · mahabharata-karnaparva
+
+### `BAzayeta` — bhāṣayeta  (n=1)
+
+- говорить  · n=1  · mahabharata-udyogaparva
+
+### `BAzeTA` — bhāṣethā  (n=1)
+
+- говорить  · n=1  · mahabharata-udyogaparva
+
+### `BAzeTAH` — bhāṣethāḥ  (n=2)
+
+- сказать  · n=1  · mahabharata-udyogaparva
+- надлежит сказать  · n=1  · mahabharata-udyogaparva
+
+### `BAzeta` — bhāṣeta  (n=1)
+
+- говорит  · n=1  · kama-sutra
+
+### `BAzeya` — bhāṣeya  (n=1)
+
+- говорить  · n=1  · mahabharata-ashvamedhikaparva
+
+### `BAziRI` — bhāṣiṇī  (n=2)
+
+- слова  · n=1  · ramayana-ayodhyakanda
+- Говорившую  · n=1  · ramayana-aranyakanda
+
+### `BAziRi` — bhāṣiṇi  (n=3)
+
+- красноречивая  · n=1  · ramayana-ayodhyakanda
+- приветливая  · n=1  · ramayana-aranyakanda
+- говорящая  · n=1  · ramayana-aranyakanda
+
+### `BAzin` — bhāṣin  (n=1)
+
+- говорившую  · n=1  · ramayana-aranyakanda
+
+### `BAzitA` — bhāṣitā  (n=1)
+
+- говорящий  · n=1  · br-up
+
+### `BAzitAm` — bhāṣitām  (n=1)
+
+- сказанные  · n=1  · mahabharata-virataparva
+
+### `BAzita` — bhāṣita  (n=48)
+
+- сказанное  · n=5  · mahabharata-udyogaparva, mahabharata-adiparva, ramayana-ayodhyakanda, mahabharata-sabhaparva
+- речи  · n=5  · manavadharmashastra, ramayana-sundarakanda, mahabharata-bhishmaparva, mahabharata-dronaparva
+- слова  · n=4  · ramayana-ayodhyakanda, ramayana-sundarakanda, mahabharata-udyogaparva
+- сказано  · n=4  · ramayana-sundarakanda, mahabharata-adiparva, mahabharata-udyogaparva, mahabharata-virataparva
+- сказал  · n=4  · mahabharata-udyogaparva, mahabharata-adiparva, mahabharata-karnaparva
+- сказанные  · n=4  · mahabharata-dronaparva, mahabharata-udyogaparva, mahabharata-karnaparva, mahabharata-shalyaparva
+- слово  · n=3  · ramayana-balakanda, ramayana-aranyakanda
+- сказаны  · n=3  · ramayana-aranyakanda, mahabharata-aranyakaparva, mahabharata-adiparva
+- сказала  · n=2  · ramayana-sundarakanda, mahabharata-adiparva
+- условлено  · n=1  · manavadharmashastra
+- говорили  · n=1  · ramayana-balakanda
+- превозносит  · n=1  · mahabharata-aranyakaparva
+- просил  · n=1  · mahabharata-adiparva
+- рассказано  · n=1  · mahabharata-adiparva
+- говорил  · n=1  · mahabharata-adiparva
+- произнесенная  · n=1  · mahabharata-bhishmaparva
+- то, что ты говоришь  · n=1  · mahabharata-bhishmaparva
+- говорить  · n=1  · mahabharata-udyogaparva
+- что говорить  · n=1  · mahabharata-udyogaparva
+- данные  · n=1  · mahabharata-udyogaparva
+- речений  · n=1  · gitarthasamgraha-abhinavagupta
+- Обмолвился  · n=1  · kumarasambhava
+- речь  · n=1  · vedartha-samgraha_ramanuja
+
+### `BAzitaH` — bhāṣitaḥ  (n=1)
+
+- говорил  · n=1  · mahabharata-udyogaparva
+
+### `BAzitaM` — bhāṣitaṃ  (n=1)
+
+- сказал  · n=1  · mahabharata-udyogaparva
+
+### `BAzitaiH` — bhāṣitaiḥ  (n=1)
+
+- речами  · n=1  · mahabharata-adiparva
+
+### `BAzitam` — bhāṣitam  (n=23)
+
+- сказано  · n=5  · mahabharata-virataparva, ramayana-sundarakanda, mahabharata-udyogaparva
+- сказанное  · n=3  · ramayana-sundarakanda, mahabharata-adiparva, mahabharata-svargarohanikaparva
+- сказанные  · n=3  · mahabharata-udyogaparva
+- слова  · n=2  · ramayana-ayodhyakanda, buddhacharita
+- слово  · n=1  · ramayana-ayodhyakanda
+- сказала  · n=1  · ramayana-ayodhyakanda
+- рассказ  · n=1  · ramayana-ayodhyakanda
+- просьбу  · n=1  · ramayana-aranyakanda
+- сказал  · n=1  · ramayana-aranyakanda
+- говорят  · n=1  · mahabharata-aranyakaparva
+- реченное  · n=1  · mahabharata-bhishmaparva
+- речь  · n=1  · mahabharata-dronaparva
+- просьбы  · n=1  · mahabharata-udyogaparva
+- преподадут  · n=1  · mahabharata-ashvamedhikaparva
+
+### `BAzitayA` — bhāṣitayā  (n=1)
+
+- внимающей  · n=1  · gitagovinda
+
+### `BAzite` — bhāṣite  (n=1)
+
+- сказав  · n=1  · ramayana-ayodhyakanda
+
+### `BAzitu` — bhāṣitu  (n=1)
+
+- рассказчик  · n=1  · mahabharata-aranyakaparva
+
+### `BAzituM` — bhāṣituṃ  (n=1)
+
+- объясни  · n=1  · buddhacharita
+
+### `BAzitum` — bhāṣitum  (n=8)
+
+- говорить  · n=3  · ramayana-ayodhyakanda, mahabharata-udyogaparva
+- отвечавший  · n=1  · ramayana-ayodhyakanda
+- повествовать  · n=1  · mahabharata-dronaparva
+- принести  · n=1  · mahabharata-ashvamedhikaparva
+- рассказывать  · n=1  · mahabharata-ashvamedhikaparva
+- сказать  · n=1  · mahabharata-mahaprasthanikaparva
+
+### `BAzpavfzwiM` — bhāṣpavṛṣṭiṃ  (n=1)
+
+- слезы  · n=1  · raghuvamsha
+
+### `BAzya` — bhāṣya  (n=7)
+
+- комментарий  · n=4  · nyaya-bhashya, sankhya-karika
+- толковании  · n=1  · nyaya-bhashya
+- бхашья  · n=1  · nyaya-bhashya
+- бхашье  · n=1  · nyaya-bhashya
+
+### `BAzyajAta` — bhāṣyajāta  (n=2)
+
+- нормативное толкование  · n=1  · nyaya-bhashya
+- множество истолкований  · n=1  · nyaya-bhashya
+
+### `BAzyakAra` — bhāṣyakāra  (n=1)
+
+- Составитель бхашьи  · n=1  · vedartha-samgraha_ramanuja
+
+### `BAzyamARa` — bhāṣyamāṇa  (n=2)
+
+- повторенные  · n=1  · mahabharata-aranyakaparva
+- говорит  · n=1  · mahabharata-udyogaparva
+
+### `BAzyate` — bhāṣyate  (n=2)
+
+- заключено  · n=1  · manavadharmashastra
+- обозначается  · n=1  · gitarthasamgraha-abhinavagupta
+
+### `BI` — bhī  (n=28)
+
+- страх  · n=9  · rigveda, rigveda, mahabharata-dronaparva, mahabharata-udyogaparva, bhagavadgity, bhagavadgita-sementsov, mahabharata-karnaparva, atharvaveda, br-up
+- страха  · n=3  · ramayana-sundarakanda, mahabharata-dronaparva, buddhacharita
+- испытывает страха  · n=2  · devi-gita, tai-up
+- боится  · n=2  · atharvaveda, mahabharata-virataparva
+- боятся  · n=1  · ramayana-sundarakanda
+- бояться  · n=1  · mahabharata-adiparva
+- боюсь  · n=1  · mahabharata-udyogaparva
+- устрашившись  · n=1  · ch-up
+- ужас  · n=1  · mahabharata-karnaparva
+- испугай  · n=1  · atharvaveda
+- испуганные  · n=1  · atharvaveda
+- перепуганные  · n=1  · atharvaveda
+- хитростью  · n=1  · shatakatrayam-serebryakov
+- перепуганы  · n=1  · atharvaveda
+- испугался  · n=1  · shukasaptati
+- страхом  · n=1  · tai-up
+
+### `BIBatsA` — bhībhatsā  (n=1)
+
+- мерзко выглядящую  · n=1  · ramayana-aranyakanda
+
+### `BIH` — bhīḥ  (n=8)
+
+- страх  · n=5  · mahabharata-dronaparva, mahabharata-udyogaparva, mahabharata-shalyaparva
+- бойся  · n=1  · ramayana-sundarakanda
+- страха  · n=1  · mahabharata-aranyakaparva
+- ужас  · n=1  · mahabharata-aranyakaparva
+
+### `BIgta` — bhīgta  (n=1)
+
+- побоявшись  · n=1  · raghuvamsha
+
+### `BIm` — bhīm  (n=1)
+
+- Бхимы  · n=1  · mahabharata-striparva
+
+### `BImA` — bhīmā  (n=13)
+
+- ужасная  · n=2  · ramayana-sundarakanda
+- Страшны  · n=2  · atharvaveda
+- ужасные  · n=1  · ramayana-sundarakanda
+- грозные  · n=1  · mahabharata-aranyakaparva
+- страшная  · n=1  · mahabharata-dronaparva
+- страшные видом  · n=1  · mahabharata-dronaparva
+- страшен  · n=1  · rigveda
+- страшной  · n=1  · rigveda
+- страшные  · n=1  · mahabharata-shalyaparva
+- Страшна  · n=1  · atharvaveda
+- страшно  · n=1  · atharvaveda
+
+### `BImABirakzita` — bhīmābhirakṣita  (n=12)
+
+- ограждаемая Бхимой  · n=1  · mahabharata-bhishmaparva
+- Бхимой хранимая  · n=1  · bhagavadgita-burba
+- во главе со знающим Бхимой  · n=1  · ramanuja_gitabhashya
+- ХРАНИМУЮ БХИМОЙ  · n=1  · ramanuja_gitabhashya
+- состоит она под предводительством Бхимы  · n=1  · bhagavadgita-1914
+- водимая Бхимой  · n=1  · bhagavadgita-smirnov
+- у них — ужасающий Бхима  · n=1  · bhagavadgita-sementsov
+- хранимая Бхимой  · n=1  · bhagavadgita-sementsov
+- защищаемые Бхимой  · n=1  · bhagavadgita-sharma
+- хорошо защищенная Бхимой  · n=1  · bhagavadgita-prabhupada
+- защищены Бхимой  · n=1  · bhagavadgita-prabhupada
+- управляемая Бхимой  · n=1  · bhagavadgita-radha
+
+### `BImABirakzitam` — bhīmābhirakṣitam  (n=4)
+
+- ограждаемая Бхимой  · n=2  · bhagavadgita-erman
+- под предводительством Бхимы  · n=1  · gitarthasamgraha-abhinavagupta
+- водимая Бхимой  · n=1  · bhagavadgity
+
+### `BImAH` — bhīmāḥ  (n=3)
+
+- страшные  · n=1  · mahabharata-shalyaparva
+- страшных  · n=1  · mahabharata-virataparva
+- страшные видом  · n=1  · mahabharata-virataparva
+
+### `BImAdavaraja` — bhīmādavaraja  (n=1)
+
+- брата моего, рожденного после Бхимы  · n=1  · mahabharata-aranyakaparva
+
+### `BImAdavarajaH` — bhīmādavarajaḥ  (n=1)
+
+- младший брат Бхимы  · n=1  · mahabharata-virataparva
+
+### `BImAdevI` — bhīmādevī  (n=2)
+
+- Бхимадеви  · n=2  · devi-gita
+
+### `BImAgra` — bhīmāgra  (n=1)
+
+- возглавляемых Бхимой  · n=1  · mahabharata-shalyaparva
+
+### `BImAhata` — bhīmāhata  (n=1)
+
+- истребляемый Бхимой  · n=1  · mahabharata-karnaparva
+
+### `BImAkzam` — bhīmākṣam  (n=1)
+
+- Устрашающему всех взглядом  · n=1  · ramayana-aranyakanda
+
+### `BImAm` — bhīmām  (n=4)
+
+- страшную  · n=3  · ramayana-ayodhyakanda, atharvaveda
+- грозное  · n=1  · mahabharata-udyogaparva
+
+### `BImAn` — bhīmān  (n=1)
+
+- грозных  · n=1  · mahabharata-aranyakaparva
+
+### `BImAntika` — bhīmāntika  (n=1)
+
+- к Бхиме  · n=1  · mahabharata-dronaparva
+
+### `BImAnuga` — bhīmānuga  (n=1)
+
+- следовавших за Бхимой  · n=1  · mahabharata-dronaparva
+
+### `BImAnuja` — bhīmānuja  (n=1)
+
+- младшего брата  · n=1  · mahabharata-virataparva
+
+### `BImArjunAByAm` — bhīmārjunābhyām  (n=2)
+
+- с Бхимой и Арджуной  · n=1  · mahabharata-udyogaparva
+- Бхимой и Арджуной  · n=1  · mahabharata-sabhaparva
+
+### `BImArjunAdayaH` — bhīmārjunādayaḥ  (n=1)
+
+- Бхима, Арджуна и другие  · n=1  · mahabharata-ashramavasikaparva
+
+### `BImArjuna` — bhīmārjuna  (n=5)
+
+- Арджуну и Бхиму  · n=1  · mahabharata-aranyakaparva
+- Бхимы, Арджуны  · n=1  · mahabharata-aranyakaparva
+- Бхимой и Арджуной  · n=1  · mahabharata-bhishmaparva
+- Бхиму и Арджуну  · n=1  · mahabharata-udyogaparva
+- Бхимы и Арджуны  · n=1  · mahabharata-mahaprasthanikaparva
+
+### `BImArjuna-sama` — bhīmārjuna-sama  (n=3)
+
+- Бхиме, Арджуне равные  · n=1  · bhagavadgita-burba
+- Бхиме и Арджуне равные  · n=1  · bhagavadgita-1914
+- равные Бхиме и Арджуне  · n=1  · bhagavadgita-radha
+
+### `BImArjunabala` — bhīmārjunabala  (n=2)
+
+- могущества Бхимы и Арджуны  · n=1  · mahabharata-udyogaparva
+- от силы Бхимы и Арджуны  · n=1  · mahabharata-sabhaparva
+
+### `BImArjunabalopeta` — bhīmārjunabalopeta  (n=1)
+
+- сопровожден могуществом Бхимы и Арджуны  · n=1  · mahabharata-sabhaparva
+
+### `BImArjunasamA` — bhīmārjunasamā  (n=1)
+
+- равные Бхиме и Арджуне  · n=1  · gitarthasamgraha-abhinavagupta
+
+### `BImArjunasama` — bhīmārjunasama  (n=8)
+
+- Бхиме и Арджуне равные  · n=2  · mahabharata-bhishmaparva, bhagavadgita-erman
+- равны Бхиме, Арджуне  · n=2  · bhagavadgita-smirnov
+- равные в битве Бхиме, Арджуне  · n=1  · ramanuja_gitabhashya
+- не уступят Арджуне с Бхимой  · n=1  · bhagavadgita-sementsov
+- подобные Бхиме и Арджуне  · n=1  · bhagavadgita-sharma
+- равные Бхиме и Арджуне  · n=1  · bhagavadgita-prabhupada
+
+### `BImArjunau` — bhīmārjunau  (n=7)
+
+- Бхима и Арджуна  · n=5  · mahabharata-udyogaparva, mahabharata-aranyakaparva
+- Бхиме и Арджуне  · n=1  · mahabharata-aranyakaparva
+- Бхиму и Арджуну  · n=1  · mahabharata-sabhaparva
+
+### `BImArjunavaSAnuga` — bhīmārjunavaśānuga  (n=1)
+
+- под большим влиянием Бхимы и Арджуны  · n=1  · mahabharata-udyogaparva
+
+### `BImArjunayamAH` — bhīmārjunayamāḥ  (n=2)
+
+- Бхима, Арджуна и Близнецы  · n=2  · mahabharata-ashramavasikaparva
+
+### `BImArjunayamAn` — bhīmārjunayamān  (n=1)
+
+- Бхиму, Арджуну и близнецов  · n=1  · mahabharata-aranyakaparva
+
+### `BImArjunayamaiH` — bhīmārjunayamaiḥ  (n=2)
+
+- Бхимой, Арджуной и близнецами  · n=2  · mahabharata-udyogaparva
+
+### `BImAsa` — bhīmāsa  (n=1)
+
+- Страшные  · n=1  · rigveda
+
+### `BImAsas` — bhīmāsas  (n=1)
+
+- страшные  · n=1  · rigveda
+
+### `BImAsuraSoRitocitaH` — bhīmāsuraśoṇitocitaḥ  (n=1)
+
+- привыкшая к крови страшных асуров  · n=1  · raghuvamsha
+
+### `BImAt` — bhīmāt  (n=4)
+
+- Бхимы  · n=2  · mahabharata-dronaparva, mahabharata-virataparva
+- от Бхимы  · n=2  · mahabharata-dronaparva
+
+### `BImAtmajAtmaja` — bhīmātmajātmaja  (n=1)
+
+- сын отпрыска Бхимы  · n=1  · mahabharata-dronaparva
+
+### `BImAtmaja` — bhīmātmaja  (n=1)
+
+- сыном Бхимы  · n=1  · mahabharata-dronaparva
+
+### `BImAyAH` — bhīmāyāḥ  (n=2)
+
+- Грозной  · n=2  · mahabharata-aranyakaparva
+
+### `BImAya` — bhīmāya  (n=4)
+
+- Бхиме  · n=2  · mahabharata-aranyakaparva, mahabharata-bhishmaparva
+- страшному  · n=1  · rigveda
+- для Бхимы  · n=1  · mahabharata-virataparva
+
+### `BImAyuDam` — bhīmāyudham  (n=1)
+
+- вооруженного страшным оружием  · n=1  · mahabharata-dronaparva
+
+### `BIma` — bhīma  (n=608)
+
+- Бхима  · n=282  · mahabharata-dronaparva, mahabharata-aranyakaparva, mahabharata-shalyaparva, mahabharata-bhishmaparva, mahabharata-karnaparva, mahabharata-adiparva, mahabharata-ashramavasikaparva, mahabharata-udyogaparva, mahabharata-virataparva, mahabharata-ashvamedhikaparva, mahabharata-sabhaparva, mahabharata-striparva, mahabharata-mahaprasthanikaparva, devi-gita, mahabharata-sauptikaparva, mahabharata-shantiparva, bhagavadgita-burba, bhagavadgita-1914, mahabharata-svargarohanikaparva
+- Бхиму  · n=63  · mahabharata-dronaparva, mahabharata-karnaparva, mahabharata-bhishmaparva, mahabharata-adiparva, mahabharata-ashvamedhikaparva, mahabharata-striparva, mahabharata-aranyakaparva, mahabharata-udyogaparva, mahabharata-shalyaparva, mahabharata-virataparva, mahabharata-svargarohanikaparva, mahabharata-sabhaparva, mahabharata-ashramavasikaparva
+- Бхимы  · n=55  · mahabharata-dronaparva, mahabharata-aranyakaparva, mahabharata-sabhaparva, mahabharata-bhishmaparva, mahabharata-adiparva, mahabharata-udyogaparva, mahabharata-karnaparva, mahabharata-shalyaparva, mahabharata-striparva, mahabharata-sauptikaparva, mahabharata-shantiparva, ramayana-sundarakanda, mahabharata-ashvamedhikaparva, mahabharata-virataparva, mahabharata-ashramavasikaparva
+- Бхиме  · n=34  · mahabharata-dronaparva, mahabharata-aranyakaparva, mahabharata-karnaparva, mahabharata-sabhaparva, mahabharata-bhishmaparva, mahabharata-udyogaparva, mahabharata-adiparva, mahabharata-ashvamedhikaparva, mahabharata-ashramavasikaparva
+- Бхимой  · n=33  · mahabharata-dronaparva, mahabharata-adiparva, mahabharata-bhishmaparva, mahabharata-udyogaparva, mahabharata-ashvamedhikaparva, mahabharata-aranyakaparva, mahabharata-karnaparva, mahabharata-shalyaparva, mahabharata-sabhaparva, mahabharata-ashramavasikaparva, mahabharata-sauptikaparva
+- страшный  · n=13  · rigveda, mahabharata-dronaparva, rigveda, mahabharata-aranyakaparva, mahabharata-adiparva, mahabharata-udyogaparva, rigveda, mahabharata-virataparva, atharvaveda, atharvaveda
+- Страшный  · n=7  · rigveda, rigveda, rigveda, rigveda
+- ужасный  · n=6  · mahabharata-adiparva, ramayana-sundarakanda, mahabharata-bhishmaparva, shatakatrayam-serebryakov
+- о Бхима  · n=6  · mahabharata-udyogaparva, mahabharata-virataparva, mahabharata-shalyaparva, mahabharata-sabhaparva
+- ужасные  · n=5  · ramayana-aranyakanda, ramayana-sundarakanda, mahabharata-dronaparva
+- грозной  · n=5  · ramayana-sundarakanda, ramayana-aranyakanda, mahabharata-bhishmaparva, mahabharata-karnaparva
+- страшные  · n=5  · mahabharata-adiparva, mahabharata-dronaparva, rigveda
+- грозное  · n=4  · ramayana-sundarakanda, mahabharata-udyogaparva, mahabharata-karnaparva
+- грозный  · n=4  · ramayana-sundarakanda, mahabharata-karnaparva
+- грозными  · n=3  · ramayana-sundarakanda
+- страшная  · n=3  · ramayana-sundarakanda, rigveda, atharvaveda
+- ужасную  · n=3  · ramayana-sundarakanda, mahabharata-bhishmaparva
+- ужасная  · n=3  · ramayana-sundarakanda, ramayana-aranyakanda
+- страшного  · n=3  · rigveda, rigveda, atharvaveda
+- страшна  · n=3  · rigveda, mahabharata-dronaparva, atharvaveda
+- Бхимою  · n=3  · mahabharata-bhishmaparva, mahabharata-shalyaparva, mahabharata-sabhaparva
+- страшное  · n=3  · mahabharata-shalyaparva, mahabharata-udyogaparva
+- страшен  · n=3  · rigveda, mahabharata-sabhaparva, atharvaveda
+- страшных  · n=2  · mahabharata-adiparva, ramayana-aranyakanda
+- ужасными  · n=2  · ramayana-sundarakanda
+- ужасным  · n=2  · ramayana-sundarakanda
+- грозные  · n=2  · ramayana-sundarakanda, mahabharata-aranyakaparva
+- Грозных  · n=2  · ramayana-aranyakanda
+- Ужасных  · n=2  · ramayana-aranyakanda
+- грозного  · n=2  · mahabharata-aranyakaparva, mahabharata-bhishmaparva
+- страшной  · n=2  · mahabharata-adiparva, mahabharata-dronaparva
+- Бхишмой  · n=2  · mahabharata-bhishmaparva, mahabharata-udyogaparva
+- грозная  · n=2  · mahabharata-dronaparva, mahabharata-karnaparva
+- Бима  · n=2  · bhagavadgita-1909
+- ужасен  · n=1  · mahabharata-adiparva
+- хищных  · n=1  · ramayana-ayodhyakanda
+- внушающий ужас  · n=1  · ramayana-ayodhyakanda
+- подобными  · n=1  · ramayana-sundarakanda
+- Ужасные  · n=1  · ramayana-aranyakanda
+- Устрашающей  · n=1  · ramayana-aranyakanda
+- могучий  · n=1  · ramayana-aranyakanda
+- в отчаянной  · n=1  · ramayana-aranyakanda
+- Грозного  · n=1  · ramayana-aranyakanda
+- грозных  · n=1  · ramayana-aranyakanda
+- храбрых  · n=1  · ramayana-aranyakanda
+- наводящих страх  · n=1  · ramayana-aranyakanda
+- ужасного  · n=1  · ramayana-aranyakanda
+- ужасных  · n=1  · ramayana-aranyakanda
+- хищными  · n=1  · ramayana-aranyakanda
+- устрашающий  · n=1  · mahabharata-aranyakaparva
+- странный  · n=1  · rigveda
+- грозным  · n=1  · mahabharata-bhishmaparva
+- в сторону Бхимы  · n=1  · mahabharata-bhishmaparva
+- в Бхиму  · n=1  · mahabharata-bhishmaparva
+- к Бхиме  · n=1  · mahabharata-bhishmaparva
+- неистовый  · n=1  · mahabharata-dronaparva
+- Страшное  · n=1  · rigveda
+- наводящего страх  · n=1  · mahabharata-udyogaparva
+- грозном  · n=1  · mahabharata-udyogaparva
+- Бемъ  · n=1  · bhagavadgita-1788
+- чудовищной  · n=1  · mahabharata-karnaparva
+- жестокая  · n=1  · mahabharata-karnaparva
+- устрашающа  · n=1  · mahabharata-karnaparva
+- страшным  · n=1  · mahabharata-shalyaparva
+- Бхимасена  · n=1  · mahabharata-shalyaparva
+- на Бхиму  · n=1  · mahabharata-shalyaparva
+- Бхимасены  · n=1  · mahabharata-sabhaparva
+- страшны  · n=1  · atharvaveda
+- страшному  · n=1  · atharvaveda
+- дремучая  · n=1  · shatakatrayam
+- жуткий  · n=1  · atharvaveda
+
+### `BIma-SAsana` — bhīma-śāsana  (n=2)
+
+- воли Бхимы  · n=2  · mahabharata-aranyakaparva
+
+### `BIma-arjuna-sama` — bhīma-arjuna-sama  (n=2)
+
+- равные Бхиме, Арджуне  · n=1  · bhagavadgity
+- каковы суть Бемъ и Аржунъ  · n=1  · bhagavadgita-1788
+
+### `BIma-darSana` — bhīma-darśana  (n=2)
+
+- страшного вида  · n=1  · ramayana-aranyakanda
+- грозными  · n=1  · ramayana-aranyakanda
+
+### `BIma-karmA` — bhīma-karmā  (n=2)
+
+- страшный в делах  · n=1  · bhagavadgita-burba
+- свершитель грозных подвигов  · n=1  · bhagavadgita-radha
+
+### `BIma-karman` — bhīma-karman  (n=4)
+
+- страшный в подвигах  · n=1  · bhagavadgita-1914
+- совершитель страшныхъ подвиговъ  · n=1  · bhagavadgita-1788
+- Свершитель подвиговъ безстрашныхъ  · n=1  · bhagavadgita-1909
+- совершающий богатырские подвиги  · n=1  · bhagavadgita-prabhupada
+
+### `BIma-vega` — bhīma-vega  (n=1)
+
+- с которыми трудно совладать  · n=1  · ramayana-aranyakanda
+
+### `BImaBaya` — bhīmabhaya  (n=1)
+
+- страх перед Бхимой  · n=1  · mahabharata-udyogaparva
+
+### `BImaBujanirmuktA` — bhīmabhujanirmuktā  (n=1)
+
+- выпущенный из рук Бхимы  · n=1  · mahabharata-dronaparva
+
+### `BImaBujanirmukta` — bhīmabhujanirmukta  (n=1)
+
+- пущенное рукою Бхимы  · n=1  · mahabharata-karnaparva
+
+### `BImaDanaYjayau` — bhīmadhanañjayau  (n=1)
+
+- Бхима и Завоеватель богатств  · n=1  · mahabharata-aranyakaparva
+
+### `BImaDanuzaH` — bhīmadhanuṣaḥ  (n=1)
+
+- вооруженный грозным луком  · n=1  · mahabharata-dronaparva
+
+### `BImaDanvAnam` — bhīmadhanvānam  (n=2)
+
+- грозного стрелка из лука  · n=1  · mahabharata-virataparva
+- грозного лучника  · n=1  · mahabharata-sauptikaparva
+
+### `BImaDanvAyanI` — bhīmadhanvāyanī  (n=2)
+
+- с шествующими грозными лучниками  · n=2  · mahabharata-udyogaparva
+
+### `BImaDanvan` — bhīmadhanvan  (n=6)
+
+- обладателя грозного лука  · n=2  · mahabharata-udyogaparva, mahabharata-virataparva
+- грозного стрелка из лука  · n=1  · mahabharata-aranyakaparva
+- грозный лучник  · n=1  · mahabharata-bhishmaparva
+- обладатель грозного лука  · n=1  · mahabharata-virataparva
+- обладателю страшного лука  · n=1  · mahabharata-virataparva
+
+### `BImaGoza` — bhīmaghoṣa  (n=1)
+
+- страшным шумом  · n=1  · mahabharata-virataparva
+
+### `BImaGozaiH` — bhīmaghoṣaiḥ  (n=1)
+
+- грозно жужжащими  · n=1  · mahabharata-bhishmaparva
+
+### `BImaH` — bhīmaḥ  (n=91)
+
+- Бхима  · n=76  · mahabharata-dronaparva, mahabharata-aranyakaparva, mahabharata-shalyaparva, mahabharata-adiparva, mahabharata-karnaparva, mahabharata-virataparva, mahabharata-sabhaparva, mahabharata-bhishmaparva, mahabharata-shantiparva, mahabharata-sauptikaparva, mahabharata-mahaprasthanikaparva
+- Страшный  · n=4  · atharvaveda, rigveda, rigveda
+- страшный  · n=3  · rigveda, rigveda
+- устрашающий  · n=1  · ramayana-sundarakanda
+- Бхимы  · n=1  · mahabharata-aranyakaparva
+- Бхиму  · n=1  · mahabharata-aranyakaparva
+- Бхиме  · n=1  · mahabharata-aranyakaparva
+- яростный  · n=1  · mahabharata-bhishmaparva
+- о  · n=1  · mahabharata-dronaparva
+- ужасная  · n=1  · raghuvamsha
+- Бхимасена  · n=1  · mahabharata-virataparva
+
+### `BImaM` — bhīmaṃ  (n=17)
+
+- Бхиму  · n=9  · mahabharata-dronaparva, mahabharata-udyogaparva, mahabharata-bhishmaparva, mahabharata-karnaparva, mahabharata-ashramavasikaparva
+- Бхиме  · n=3  · mahabharata-ashvamedhikaparva, mahabharata-sabhaparva, mahabharata-adiparva
+- страшного  · n=1  · rigveda
+- Бхимы  · n=1  · mahabharata-bhishmaparva
+- на Бхиму  · n=1  · mahabharata-bhishmaparva
+- к страшному (властителю)  · n=1  · mahabharata-sabhaparva
+- к Бхиме  · n=1  · mahabharata-virataparva
+
+### `BImaMpratyaSuBaM` — bhīmaṃ pratyaśubhaṃ  (n=1)
+
+- злой умысел в отношении Бхимы  · n=1  · mahabharata-striparva
+
+### `BImaSAKA` — bhīmaśākhā  (n=1)
+
+- раскинувшее гигантские ветви  · n=1  · mahabharata-virataparva
+
+### `BImaSAsana` — bhīmaśāsana  (n=1)
+
+- по зову Бхимы  · n=1  · mahabharata-aranyakaparva
+
+### `BImaSarIrarUpa` — bhīmaśarīrarūpa  (n=1)
+
+- грозного вида  · n=1  · ramayana-balakanda
+
+### `BImaSara` — bhīmaśara  (n=1)
+
+- стрелы Бхимы  · n=1  · mahabharata-karnaparva
+
+### `BImaSca` — bhīmaśca  (n=1)
+
+- Бхима и  · n=1  · mahabharata-shalyaparva
+
+### `BImabARaiH` — bhīmabāṇaiḥ  (n=1)
+
+- стрелами Бхимы  · n=1  · mahabharata-dronaparva
+
+### `BImabAhubala` — bhīmabāhubala  (n=1)
+
+- мощью рук Бхимы  · n=1  · mahabharata-aranyakaparva
+
+### `BImabalABiBUta` — bhīmabalābhibhūta  (n=1)
+
+- мощи Бхимы уступающий  · n=1  · mahabharata-bhishmaparva
+
+### `BImabala` — bhīmabala  (n=12)
+
+- ужасной силой  · n=1  · ramayana-sundarakanda
+- мощью Бхимы  · n=1  · mahabharata-aranyakaparva
+- Бхимабала  · n=1  · mahabharata-adiparva
+- наделенный могучей силой  · n=1  · mahabharata-dronaparva
+- наводящим страх  · n=1  · mahabharata-udyogaparva
+- силой Бхимы  · n=1  · mahabharata-udyogaparva
+- грозный своею мощью  · n=1  · mahabharata-karnaparva
+- Грозный своею мощью  · n=1  · mahabharata-karnaparva
+- преисполненный страшной силы  · n=1  · mahabharata-shalyaparva
+- преисполненному страшной силой  · n=1  · mahabharata-shalyaparva
+- обладающий страшною силой  · n=1  · mahabharata-virataparva
+- Бхимасена  · n=1  · mahabharata-virataparva
+
+### `BImabalaH` — bhīmabalaḥ  (n=2)
+
+- наделенный страшной силой  · n=1  · mahabharata-dronaparva
+- одаренный страшною силой  · n=1  · mahabharata-shalyaparva
+
+### `BImabalena` — bhīmabalena  (n=1)
+
+- наделенным страшною силой  · n=1  · mahabharata-shalyaparva
+
+### `BImacApa` — bhīmacāpa  (n=1)
+
+- лук Бхимы  · n=1  · mahabharata-dronaparva
+
+### `BImacApacyuta` — bhīmacāpacyuta  (n=1)
+
+- выпускаемыми из лука Бхимы  · n=1  · mahabharata-dronaparva
+
+### `BImacApacyutaiH` — bhīmacāpacyutaiḥ  (n=1)
+
+- выпущенными из лука Бхимы  · n=1  · mahabharata-dronaparva
+
+### `BImacoditA` — bhīmacoditā  (n=1)
+
+- посланная Бхимой  · n=1  · mahabharata-shalyaparva
+
+### `BImadarSanA` — bhīmadarśanā  (n=2)
+
+- ужасная обликом  · n=1  · ramayana-sundarakanda
+- жуткое зрелище  · n=1  · mahabharata-sauptikaparva
+
+### `BImadarSanAH` — bhīmadarśanāḥ  (n=1)
+
+- презрительные  · n=1  · ramayana-ayodhyakanda
+
+### `BImadarSanAn` — bhīmadarśanān  (n=1)
+
+- ужасных видом  · n=1  · mahabharata-dronaparva
+
+### `BImadarSana` — bhīmadarśana  (n=10)
+
+- страшные обликом  · n=1  · ramayana-sundarakanda
+- подобному Шиве  · n=1  · ramayana-balakanda
+- страшный  · n=1  · mahabharata-aranyakaparva
+- Страшные  · n=1  · mahabharata-aranyakaparva
+- Страшно было смотреть  · n=1  · mahabharata-aranyakaparva
+- грозный обличьем  · n=1  · mahabharata-bhishmaparva
+- обликом грозный  · n=1  · mahabharata-bhishmaparva
+- устрашающего облика  · n=1  · mahabharata-bhishmaparva
+- угрожающий  · n=1  · mahabharata-karnaparva
+- грозный обликом  · n=1  · raghuvamsha
+
+### `BImadarSanaH` — bhīmadarśanaḥ  (n=1)
+
+- грозный обликом  · n=1  · mahabharata-aranyakaparva
+
+### `BImadarSanam` — bhīmadarśanam  (n=2)
+
+- ужасающему взор  · n=1  · mahabharata-aranyakaparva
+- грозный обличьем  · n=1  · mahabharata-aranyakaparva
+
+### `BImadarSane` — bhīmadarśane  (n=1)
+
+- грозном  · n=1  · mahabharata-dronaparva
+
+### `BImaduryoDanodBava` — bhīmaduryodhanodbhava  (n=1)
+
+- вызываемый борьбой Бхимы и Дурьйодханы  · n=1  · mahabharata-adiparva
+
+### `BImagadAvega` — bhīmagadāvega  (n=2)
+
+- стремительными ударами палицы Бхимы  · n=1  · mahabharata-dronaparva
+- с порывистой силой палицы Бхимы  · n=1  · mahabharata-shalyaparva
+
+### `BImagrAhavatI` — bhīmagrāhavatī  (n=1)
+
+- с ужасными крокодилами  · n=1  · mahabharata-udyogaparva
+
+### `BImahata` — bhīmahata  (n=1)
+
+- сокрушительные удары Бхимы  · n=1  · mahabharata-udyogaparva
+
+### `BImakAnta` — bhīmakānta  (n=1)
+
+- грозными и прекрасными  · n=1  · raghuvamsha
+
+### `BImakArmuka` — bhīmakārmuka  (n=1)
+
+- грозных лучников  · n=1  · mahabharata-virataparva
+
+### `BImakarRasamAgama` — bhīmakarṇasamāgama  (n=1)
+
+- столкновения между Бхимой и Карной  · n=1  · mahabharata-dronaparva
+
+### `BImakarmA` — bhīmakarmā  (n=6)
+
+- грозный в деяниях  · n=1  · ramayana-sundarakanda
+- вершитель страшных подвигов  · n=1  · mahabharata-dronaparva
+- страх наводящий  · n=1  · gitarthasamgraha-abhinavagupta
+- в делах ужасный  · n=1  · ramanuja_gitabhashya
+- страшный в подвигах  · n=1  · bhagavadgity
+- ужасный в деяниях  · n=1  · bhagavadgita-sharma
+
+### `BImakarmARam` — bhīmakarmāṇam  (n=3)
+
+- вершителем страшных дел  · n=1  · mahabharata-dronaparva
+- вершителя страшных подвигов  · n=1  · mahabharata-dronaparva
+- вершителя грозных деяний  · n=1  · mahabharata-karnaparva
+
+### `BImakarmaBiH` — bhīmakarmabhiḥ  (n=1)
+
+- с героями, вершителями страшных подвигов  · n=1  · mahabharata-sabhaparva
+
+### `BImakarmaRA` — bhīmakarmaṇā  (n=3)
+
+- вершителем страшных подвигов  · n=2  · mahabharata-dronaparva
+- Бхимой, страшным своими подвигами  · n=1  · mahabharata-shalyaparva
+
+### `BImakarmaRAm` — bhīmakarmaṇām  (n=3)
+
+- грозных в деяниях  · n=1  · ramayana-sundarakanda
+- черные дела  · n=1  · mahabharata-aranyakaparva
+- злобных  · n=1  · mahabharata-aranyakaparva
+
+### `BImakarman` — bhīmakarman  (n=22)
+
+- вершитель грозных деяний  · n=3  · mahabharata-bhishmaparva, bhagavadgita-erman, mahabharata-karnaparva
+- грозным в своих деяниях  · n=1  · ramayana-sundarakanda
+- ужасных в деяниях  · n=1  · ramayana-aranyakanda
+- страшных в своих деяниях  · n=1  · mahabharata-aranyakaparva
+- Бхимакарман  · n=1  · mahabharata-adiparva
+- вершителю страшных дел  · n=1  · mahabharata-adiparva
+- совершивший грозные деяния  · n=1  · mahabharata-bhishmaparva
+- грозный деяниями  · n=1  · mahabharata-bhishmaparva
+- страшные деяния творящего  · n=1  · mahabharata-bhishmaparva
+- страшные в своих деяниях  · n=1  · mahabharata-dronaparva
+- страшному в деяниях  · n=1  · mahabharata-dronaparva
+- вершителем страшных подвигов  · n=1  · mahabharata-dronaparva
+- вершитель страшных подвигов  · n=1  · mahabharata-dronaparva
+- страшный в деяниях  · n=1  · mahabharata-udyogaparva
+- страшный в своих деяниях  · n=1  · mahabharata-udyogaparva
+- страх наводящий  · n=1  · bhagavadgita-smirnov
+- убийца свирепый  · n=1  · bhagavadgita-sementsov
+- грозно нападавший  · n=1  · mahabharata-karnaparva
+- ужасные дела  · n=1  · mahabharata-shalyaparva
+- вершителю страшных подвигов  · n=1  · mahabharata-sabhaparva
+
+### `BImam` — bhīmam  (n=64)
+
+- Бхиму  · n=25  · mahabharata-dronaparva, mahabharata-karnaparva, mahabharata-shalyaparva, mahabharata-aranyakaparva, mahabharata-adiparva, mahabharata-bhishmaparva, mahabharata-ashvamedhikaparva, mahabharata-virataparva, mahabharata-striparva
+- Бхиме  · n=8  · mahabharata-aranyakaparva, mahabharata-adiparva, mahabharata-udyogaparva
+- Бхима  · n=5  · mahabharata-adiparva, mahabharata-aranyakaparva, mahabharata-karnaparva
+- страшный  · n=3  · ramayana-aranyakanda, mahabharata-dronaparva
+- Бхимы  · n=3  · mahabharata-dronaparva, mahabharata-shalyaparva
+- грозную  · n=2  · ramayana-aranyakanda
+- к Бхиме  · n=2  · mahabharata-dronaparva, mahabharata-virataparva
+- на Бхиму  · n=2  · mahabharata-dronaparva, mahabharata-shalyaparva
+- страшные  · n=2  · mahabharata-dronaparva
+- страшную  · n=2  · rigveda, rigveda
+- ужасное  · n=1  · ramayana-sundarakanda
+- вызывающей ужас  · n=1  · ramayana-sundarakanda
+- Громкие  · n=1  · ramayana-aranyakanda
+- страшным  · n=1  · ramayana-aranyakanda
+- тяжко  · n=1  · mahabharata-aranyakaparva
+- против Бхимы  · n=1  · mahabharata-dronaparva
+- ужасный  · n=1  · mahabharata-dronaparva
+- Бхимасену  · n=1  · mahabharata-karnaparva
+- на Бхимасену  · n=1  · mahabharata-karnaparva
+- страшная  · n=1  · mahabharata-sabhaparva
+
+### `BImamAmantrya` — bhīmamāmantrya  (n=1)
+
+- распрощался с Бхимой  · n=1  · mahabharata-aranyakaparva
+
+### `BImamArtasvara` — bhīmamārtasvara  (n=1)
+
+- громкими и скорбными голосами  · n=1  · mahabharata-adiparva
+
+### `BImamAyasam` — bhīmamāyasam  (n=3)
+
+- Бхиму из металла  · n=1  · mahabharata-striparva
+- статуя  · n=1  · mahabharata-striparva
+- изображение Бхимы  · n=1  · mahabharata-striparva
+
+### `BImamuKasamprAptaH` — bhīmamukhasamprāptaḥ  (n=1)
+
+- попавший в пасть Бхимы  · n=1  · mahabharata-dronaparva
+
+### `BImanAmA` — bhīmanāmā  (n=1)
+
+- по имени Бхима  · n=1  · shukasaptati
+
+### `BImanAmANkitAH` — bhīmanāmāṅkitāḥ  (n=1)
+
+- Обозначенные именем Бхимы  · n=1  · mahabharata-dronaparva
+
+### `BImanandana` — bhīmanandana  (n=1)
+
+- отпрыск Бхимы  · n=1  · mahabharata-dronaparva
+
+### `BImanandinIm` — bhīmanandinīm  (n=1)
+
+- дочь Бхимы  · n=1  · mahabharata-aranyakaparva
+
+### `BImanetrA` — bhīmanetrā  (n=1)
+
+- ведомые Бхимой  · n=1  · mahabharata-bhishmaparva
+
+### `BImaninAdaketu` — bhīmaninādaketu  (n=1)
+
+- грозно ревущим знаменем  · n=1  · mahabharata-karnaparva
+
+### `BImanirGAtanisvana` — bhīmanirghātanisvana  (n=1)
+
+- грозный рев бури  · n=1  · mahabharata-bhishmaparva
+
+### `BImanirGozAm` — bhīmanirghoṣām  (n=1)
+
+- с жутким шумом  · n=1  · mahabharata-dronaparva
+
+### `BImanirhrAda` — bhīmanirhrāda  (n=2)
+
+- грозно ревущий  · n=1  · ramayana-sundarakanda
+- устрашающий рык  · n=1  · ramayana-sundarakanda
+
+### `BImanisvanAH` — bhīmanisvanāḥ  (n=1)
+
+- грозно ревущие  · n=1  · mahabharata-aranyakaparva
+
+### `BImanisvana` — bhīmanisvana  (n=4)
+
+- издающая устрашающий грохот  · n=1  · mahabharata-aranyakaparva
+- грозно ревел  · n=1  · mahabharata-aranyakaparva
+- страшный звон  · n=1  · mahabharata-dronaparva
+- грозно грохочущую  · n=1  · mahabharata-sauptikaparva
+
+### `BImanisvanaH` — bhīmanisvanaḥ  (n=1)
+
+- страшный звук  · n=1  · mahabharata-udyogaparva
+
+### `BImanunna` — bhīmanunna  (n=1)
+
+- гонимое Бхимой  · n=1  · mahabharata-karnaparva
+
+### `BImapArTa` — bhīmapārtha  (n=1)
+
+- Бхиму и Партху  · n=1  · mahabharata-sabhaparva
+
+### `BImapArTau` — bhīmapārthau  (n=1)
+
+- Бхима и Партха  · n=1  · mahabharata-dronaparva
+
+### `BImapUrvaja` — bhīmapūrvaja  (n=1)
+
+- старший брат Бхимы  · n=1  · mahabharata-udyogaparva
+
+### `BImaparAkramAn` — bhīmaparākramān  (n=1)
+
+- страшащих своею мощью  · n=1  · mahabharata-aranyakaparva
+
+### `BImaparAkrama` — bhīmaparākrama  (n=28)
+
+- страшный в своем могуществе  · n=2  · mahabharata-udyogaparva, mahabharata-sabhaparva
+- обладающий страшною силой  · n=1  · mahabharata-adiparva
+- могучем  · n=1  · ramayana-balakanda
+- чудовищною силой  · n=1  · mahabharata-aranyakaparva
+- наводящий ужас своею мощью  · n=1  · mahabharata-aranyakaparva
+- грозному своею мощью  · n=1  · mahabharata-aranyakaparva
+- грозный своею мощью  · n=1  · mahabharata-aranyakaparva
+- грозные в могуществе  · n=1  · mahabharata-aranyakaparva
+- грозный в могуществе  · n=1  · mahabharata-aranyakaparva
+- грозный в своей отваге  · n=1  · mahabharata-aranyakaparva
+- обладающий страшной силой  · n=1  · mahabharata-adiparva
+- наделенного страшною силой  · n=1  · mahabharata-adiparva
+- одаренный страшной силой  · n=1  · mahabharata-adiparva
+- обладатель страшной силы  · n=1  · mahabharata-adiparva
+- наделенного грозной мощью  · n=1  · mahabharata-bhishmaparva
+- грозного и доблестного  · n=1  · mahabharata-bhishmaparva
+- исполненный грозной отваги  · n=1  · mahabharata-bhishmaparva
+- грозный мощью  · n=1  · mahabharata-bhishmaparva
+- наделенный могуществом, внушающим страх  · n=1  · mahabharata-dronaparva
+- наделенный страшным могуществом  · n=1  · mahabharata-dronaparva
+- грозноотважному  · n=1  · mahabharata-karnaparva
+- преисполненные страшной отваги  · n=1  · mahabharata-shalyaparva
+- страшный в отваге  · n=1  · mahabharata-shalyaparva
+- грозноотважного  · n=1  · mahabharata-ashvamedhikaparva
+- обладающий страшным могуществом  · n=1  · mahabharata-sabhaparva
+- полный страшного могущества  · n=1  · mahabharata-sabhaparva
+- грозный  · n=1  · mahabharata-virataparva
+
+### `BImaparAkramaH` — bhīmaparākramaḥ  (n=11)
+
+- преисполненный отваги, внушающей страх  · n=2  · mahabharata-dronaparva
+- ужасный в своей доблести  · n=1  · mahabharata-adiparva
+- ужасной отваги  · n=1  · mahabharata-adiparva
+- ужасный в своей отваге  · n=1  · mahabharata-adiparva
+- грозный своею мощью  · n=1  · mahabharata-aranyakaparva
+- грозною мощью наделенный  · n=1  · mahabharata-aranyakaparva
+- грозный в своей отваге  · n=1  · mahabharata-aranyakaparva
+- грозный в своем могуществе  · n=1  · mahabharata-aranyakaparva
+- грозный своею доблестью  · n=1  · mahabharata-karnaparva
+- страшный в своей отваге  · n=1  · mahabharata-shalyaparva
+
+### `BImaparAkramam` — bhīmaparākramam  (n=3)
+
+- грозного своею доблестью  · n=1  · mahabharata-karnaparva
+- одаренному страшным могуществом  · n=1  · mahabharata-sabhaparva
+- обладающему страшным могуществом  · n=1  · mahabharata-sabhaparva
+
+### `BImaparAkramau` — bhīmaparākramau  (n=1)
+
+- страшною силой  · n=1  · mahabharata-adiparva
+
+### `BImapraBfti` — bhīmaprabhṛti  (n=1)
+
+- во главе с Бхимой  · n=1  · mahabharata-karnaparva
+
+### `BImapramukta` — bhīmapramukta  (n=1)
+
+- пущенный Бхимой  · n=1  · mahabharata-karnaparva
+
+### `BImapriyahitaizin` — bhīmapriyahitaiṣin  (n=1)
+
+- всегда желавший того, что было благоприятно и полезно Бхиме  · n=1  · mahabharata-shalyaparva
+
+### `BImapurogama` — bhīmapurogama  (n=1)
+
+- с Бхимой, шествующим впереди  · n=1  · mahabharata-sabhaparva
+
+### `BImarUpAH` — bhīmarūpāḥ  (n=3)
+
+- ужасные обликом  · n=1  · ramayana-sundarakanda
+- свирепые видом  · n=1  · mahabharata-dronaparva
+- ужасного вида  · n=1  · mahabharata-virataparva
+
+### `BImarUpARAm` — bhīmarūpāṇām  (n=1)
+
+- ужасных видом  · n=1  · mahabharata-dronaparva
+
+### `BImarUpAn` — bhīmarūpān  (n=1)
+
+- чудовищных  · n=1  · mahabharata-aranyakaparva
+
+### `BImarUpa` — bhīmarūpa  (n=13)
+
+- ужасным обликом  · n=1  · ramayana-sundarakanda
+- ужасный облик  · n=1  · ramayana-sundarakanda
+- грозный обликом  · n=1  · mahabharata-aranyakaparva
+- ужасной  · n=1  · mahabharata-aranyakaparva
+- со страшным  · n=1  · mahabharata-adiparva
+- страшными видом  · n=1  · mahabharata-dronaparva
+- ужасный видом  · n=1  · mahabharata-dronaparva
+- страшного видом  · n=1  · mahabharata-dronaparva
+- облик Бхимы  · n=1  · mahabharata-dronaparva
+- страшные видом  · n=1  · mahabharata-udyogaparva
+- грозная  · n=1  · mahabharata-karnaparva
+- страшен  · n=1  · kumarasambhava
+- страшных видом  · n=1  · mahabharata-shalyaparva
+
+### `BImarUpaDarau` — bhīmarūpadharau  (n=1)
+
+- грозны обликом  · n=1  · mahabharata-karnaparva
+
+### `BImarUpe` — bhīmarūpe  (n=1)
+
+- грозный вид  · n=1  · mahabharata-bhishmaparva
+
+### `BImarUpiRa` — bhīmarūpiṇa  (n=1)
+
+- страшные видом  · n=1  · mahabharata-dronaparva
+
+### `BImaraTI` — bhīmarathī  (n=2)
+
+- Бхимаратхи  · n=2  · mahabharata-aranyakaparva
+
+### `BImaraTa` — bhīmaratha  (n=5)
+
+- Бхимаратха  · n=3  · mahabharata-dronaparva, mahabharata-sabhaparva
+- колесницу Бхимы  · n=2  · mahabharata-bhishmaparva, mahabharata-dronaparva
+
+### `BImarakzas` — bhīmarakṣas  (n=1)
+
+- ракшасой и Врикодарой  · n=1  · mahabharata-aranyakaparva
+
+### `BImaravaM` — bhīmaravaṃ  (n=1)
+
+- страшный рев  · n=1  · mahabharata-virataparva
+
+### `BImaravai` — bhīmaravai  (n=1)
+
+- испускавших страшный рев  · n=1  · mahabharata-dronaparva
+
+### `BImasAtyakI` — bhīmasātyakī  (n=1)
+
+- Бхиму и Сатьяки  · n=1  · mahabharata-dronaparva
+
+### `BImasAtyaka` — bhīmasātyaka  (n=1)
+
+- Бхима с Сатьяки  · n=1  · mahabharata-bhishmaparva
+
+### `BImasUnu` — bhīmasūnu  (n=1)
+
+- сын Бхимы  · n=1  · mahabharata-dronaparva
+
+### `BImasUti` — bhīmasūti  (n=1)
+
+- сыном Бхимасены  · n=1  · mahabharata-dronaparva
+
+### `BImasaMdfSaH` — bhīmasaṃdṛśaḥ  (n=1)
+
+- страшных на вид  · n=1  · rigveda
+
+### `BImasaMsparSaH` — bhīmasaṃsparśaḥ  (n=1)
+
+- страшный при столкновениях  · n=1  · mahabharata-adiparva
+
+### `BImasaNkASA` — bhīmasaṅkāśā  (n=1)
+
+- ужасного вида  · n=1  · ramayana-balakanda
+
+### `BImasaNkASAm` — bhīmasaṅkāśām  (n=1)
+
+- грозную  · n=1  · ramayana-balakanda
+
+### `BImasaNkASa` — bhīmasaṅkāśa  (n=2)
+
+- ужасный видом  · n=1  · mahabharata-virataparva
+- Ужасный видом  · n=1  · mahabharata-virataparva
+
+### `BImasaNkASam` — bhīmasaṅkāśam  (n=3)
+
+- подобного Бхиме  · n=3  · ramayana-balakanda
+
+### `BImasahAya` — bhīmasahāya  (n=3)
+
+- имевшего соперником своим Бхиму  · n=2  · mahabharata-dronaparva
+- вместе с Бхимасеной  · n=1  · mahabharata-mausalaparva
+
+### `BImasenABihatas` — bhīmasenābhihatas  (n=1)
+
+- оглушенный ударом Бхимасены  · n=1  · mahabharata-shalyaparva
+
+### `BImasenABihato` — bhīmasenābhihato  (n=1)
+
+- пораженный Бхимасеной  · n=1  · mahabharata-karnaparva
+
+### `BImasenABirakzitAn` — bhīmasenābhirakṣitān  (n=1)
+
+- хранимыми Бхимасеной  · n=1  · mahabharata-karnaparva
+
+### `BImasenAdavaraja` — bhīmasenādavaraja  (n=2)
+
+- младший брат Бхимасены  · n=1  · mahabharata-aranyakaparva
+- рожденный следом за Бхимасеной  · n=1  · mahabharata-ashvamedhikaparva
+
+### `BImasenAdaya` — bhīmasenādaya  (n=1)
+
+- Бхимасена и другие  · n=1  · mahabharata-dronaparva
+
+### `BImasenAdayaH` — bhīmasenādayaḥ  (n=2)
+
+- Бхимасена и другие  · n=2  · mahabharata-ashramavasikaparva
+
+### `BImasenAdi` — bhīmasenādi  (n=1)
+
+- во главе с Бхимасеной  · n=1  · mahabharata-ashramavasikaparva
+
+### `BImasenAnuja` — bhīmasenānuja  (n=2)
+
+- младшего брата твоего  · n=1  · mahabharata-dronaparva
+- младшим братом Бхимы  · n=1  · mahabharata-udyogaparva
+
+### `BImasenAnuyAta` — bhīmasenānuyāta  (n=2)
+
+- преследуемый Бхимасеной  · n=2  · mahabharata-adiparva
+
+### `BImasenAnuyAtena` — bhīmasenānuyātena  (n=2)
+
+- преследуемым Бхимасеной  · n=1  · mahabharata-adiparva
+- преследуемый Бхимасеной  · n=1  · mahabharata-adiparva
+
+### `BImasenArTa` — bhīmasenārtha  (n=2)
+
+- в Бхимасену  · n=1  · mahabharata-ashvamedhikaparva
+- Бхимасеной  · n=1  · mahabharata-ashvamedhikaparva
+
+### `BImasenArjunAdiBiH` — bhīmasenārjunādibhiḥ  (n=1)
+
+- Бхимасеной, Арджуной и другими  · n=1  · mahabharata-aranyakaparva
+
+### `BImasenArjuna` — bhīmasenārjuna  (n=1)
+
+- Бхимасену и Арджуну  · n=1  · mahabharata-sabhaparva
+
+### `BImasenArjunabalAt` — bhīmasenārjunabalāt  (n=1)
+
+- силою Бхимасены и Арджуны  · n=1  · mahabharata-adiparva
+
+### `BImasenArjunau` — bhīmasenārjunau  (n=1)
+
+- Бхимасене и Арджуне  · n=1  · mahabharata-adiparva
+
+### `BImasenAt` — bhīmasenāt  (n=4)
+
+- от Бхимасены  · n=2  · mahabharata-dronaparva, mahabharata-udyogaparva
+- Бхимасена  · n=1  · mahabharata-udyogaparva
+- Бхимасены  · n=1  · mahabharata-ashramavasikaparva
+
+### `BImasenAtmaja` — bhīmasenātmaja  (n=1)
+
+- сыном Бхимасены  · n=1  · mahabharata-dronaparva
+
+### `BImasenAya` — bhīmasenāya  (n=4)
+
+- Бхимасене  · n=3  · mahabharata-shalyaparva, mahabharata-aranyakaparva
+- в Бхимасену  · n=1  · mahabharata-adiparva
+
+### `BImasena` — bhīmasena  (n=552)
+
+- Бхимасена  · n=323  · mahabharata-dronaparva, mahabharata-bhishmaparva, mahabharata-shalyaparva, mahabharata-aranyakaparva, mahabharata-karnaparva, mahabharata-udyogaparva, mahabharata-adiparva, mahabharata-sabhaparva, mahabharata-ashvamedhikaparva, mahabharata-virataparva, mahabharata-ashramavasikaparva, mahabharata-striparva, mahabharata-mahaprasthanikaparva, mahabharata-shantiparva, mahabharata-sauptikaparva, mahabharata-mausalaparva
+- Бхимасену  · n=79  · mahabharata-dronaparva, mahabharata-karnaparva, mahabharata-bhishmaparva, mahabharata-adiparva, mahabharata-shalyaparva, mahabharata-udyogaparva, mahabharata-aranyakaparva, mahabharata-svargarohanikaparva, mahabharata-ashvamedhikaparva, mahabharata-sabhaparva, mahabharata-striparva
+- Бхимасены  · n=58  · mahabharata-dronaparva, mahabharata-udyogaparva, mahabharata-bhishmaparva, mahabharata-karnaparva, mahabharata-shalyaparva, mahabharata-shantiparva, mahabharata-aranyakaparva, mahabharata-ashvamedhikaparva, mahabharata-sabhaparva, mahabharata-ashramavasikaparva, mahabharata-adiparva, mahabharata-mahaprasthanikaparva
+- Бхимасеной  · n=48  · mahabharata-dronaparva, mahabharata-shalyaparva, mahabharata-bhishmaparva, mahabharata-udyogaparva, mahabharata-karnaparva, mahabharata-adiparva, mahabharata-sabhaparva, mahabharata-virataparva, mahabharata-striparva, mahabharata-sauptikaparva, mahabharata-aranyakaparva, mahabharata-ashvamedhikaparva
+- Бхимасене  · n=27  · mahabharata-dronaparva, mahabharata-aranyakaparva, mahabharata-adiparva, mahabharata-bhishmaparva, mahabharata-udyogaparva, mahabharata-karnaparva, mahabharata-shalyaparva, mahabharata-virataparva, mahabharata-sabhaparva
+- на Бхимасену  · n=6  · mahabharata-bhishmaparva, mahabharata-dronaparva, mahabharata-ashramavasikaparva
+- Бхима  · n=2  · mahabharata-aranyakaparva, mahabharata-udyogaparva
+- с Бхимасеной  · n=2  · mahabharata-bhishmaparva, mahabharata-sabhaparva
+- о Бхимасена  · n=2  · mahabharata-udyogaparva, mahabharata-virataparva
+- о…сыне Дхритараштры…  · n=1  · mahabharata-aranyakaparva
+- Бхиму  · n=1  · mahabharata-bhishmaparva
+- Бхимой  · n=1  · mahabharata-udyogaparva
+- Бхимы  · n=1  · mahabharata-karnaparva
+- его  · n=1  · mahabharata-karnaparva
+
+### `BImasenaBayAgADe` — bhīmasenabhayāgādhe  (n=1)
+
+- опасность, коей подверг его Бхимасена  · n=1  · mahabharata-karnaparva
+
+### `BImasenaBayArditAH` — bhīmasenabhayārditāḥ  (n=1)
+
+- подавленные страхом перед Бхимасеной  · n=1  · mahabharata-aranyakaparva
+
+### `BImasenaBayArditAn` — bhīmasenabhayārditān  (n=1)
+
+- в мучительном страхе перед Бхимасеной  · n=1  · mahabharata-shalyaparva
+
+### `BImasenaBayArdita` — bhīmasenabhayārdita  (n=2)
+
+- мучимые страхом перед Бхимасеной  · n=2  · mahabharata-dronaparva, mahabharata-shalyaparva
+
+### `BImasenaBayAt` — bhīmasenabhayāt  (n=4)
+
+- из страха перед Бхимасеной  · n=2  · mahabharata-adiparva
+- от страха перед Бхимасеной  · n=1  · mahabharata-bhishmaparva
+- в ужасе перед Бхимасеной  · n=1  · mahabharata-sauptikaparva
+
+### `BImasenaBayodvignam` — bhīmasenabhayodvignam  (n=1)
+
+- охваченные страхом перед Бхимасеной  · n=1  · mahabharata-bhishmaparva
+
+### `BImasenaBujAhatam` — bhīmasenabhujāhatam  (n=1)
+
+- от удара руки Бхимасены  · n=1  · mahabharata-aranyakaparva
+
+### `BImasenaDanaYjayau` — bhīmasenadhanañjayau  (n=1)
+
+- Бхимасена и Дхананджая  · n=1  · mahabharata-sabhaparva
+
+### `BImasenaGawotkacau` — bhīmasenaghaṭotkacau  (n=1)
+
+- Бхимасену и Гхатоткачу  · n=1  · mahabharata-bhishmaparva
+
+### `BImasenaH` — bhīmasenaḥ  (n=71)
+
+- Бхимасена  · n=70  · mahabharata-dronaparva, mahabharata-aranyakaparva, mahabharata-bhishmaparva, mahabharata-shalyaparva, mahabharata-adiparva, mahabharata-sabhaparva, mahabharata-udyogaparva, mahabharata-karnaparva, mahabharata-virataparva, mahabharata-sauptikaparva, mahabharata-svargarohanikaparva
+- Бхимасене  · n=1  · mahabharata-aranyakaparva
+
+### `BImasenaM` — bhīmasenaṃ  (n=13)
+
+- Бхимасену  · n=8  · mahabharata-bhishmaparva, mahabharata-aranyakaparva, mahabharata-dronaparva, mahabharata-udyogaparva, mahabharata-shalyaparva, mahabharata-ashvamedhikaparva, mahabharata-virataparva
+- Бхимасене  · n=3  · mahabharata-aranyakaparva, mahabharata-karnaparva
+- Бхимасены  · n=2  · mahabharata-dronaparva, mahabharata-udyogaparva
+
+### `BImasenaSca` — bhīmasenaśca  (n=1)
+
+- с Бхимасеной  · n=1  · mahabharata-karnaparva
+
+### `BImasenabalArdita` — bhīmasenabalārdita  (n=1)
+
+- Теснимые силой Бхимасены  · n=1  · mahabharata-udyogaparva
+
+### `BImasenabalena` — bhīmasenabalena  (n=1)
+
+- мощь Бхимасены  · n=1  · mahabharata-aranyakaparva
+
+### `BImasenadava` — bhīmasenadava  (n=1)
+
+- Бхимасена  · n=1  · mahabharata-dronaparva
+
+### `BImasenajiGAMsavaH` — bhīmasenajighāṃsavaḥ  (n=1)
+
+- желанием убить Бхимасену  · n=1  · mahabharata-karnaparva
+
+### `BImasenajiGAMsayA` — bhīmasenajighāṃsayā  (n=2)
+
+- исполненные желания убить Бхимасену  · n=1  · mahabharata-bhishmaparva
+- желая убить Бхимасену  · n=1  · mahabharata-shalyaparva
+
+### `BImasenaka` — bhīmasenaka  (n=3)
+
+- Бхимасенка  · n=2  · mahabharata-udyogaparva
+- Бхимасене  · n=1  · mahabharata-udyogaparva
+
+### `BImasenakftAM` — bhīmasenakṛtāṃ  (n=1)
+
+- данного Бхимасеной  · n=1  · mahabharata-dronaparva
+
+### `BImasenakfta` — bhīmasenakṛta  (n=1)
+
+- вызваны Бхимасеной  · n=1  · mahabharata-adiparva
+
+### `BImasenam` — bhīmasenam  (n=48)
+
+- Бхимасену  · n=20  · mahabharata-dronaparva, mahabharata-shalyaparva, mahabharata-adiparva, mahabharata-aranyakaparva, mahabharata-karnaparva, mahabharata-sabhaparva, mahabharata-virataparva, mahabharata-striparva
+- Бхимасене  · n=7  · mahabharata-aranyakaparva, mahabharata-adiparva, mahabharata-bhishmaparva, mahabharata-udyogaparva, mahabharata-sauptikaparva
+- на Бхимасену  · n=7  · mahabharata-dronaparva, mahabharata-shalyaparva, mahabharata-bhishmaparva, mahabharata-karnaparva
+- с Бхимасеной  · n=2  · mahabharata-dronaparva
+- Бхиму  · n=2  · mahabharata-dronaparva, mahabharata-shalyaparva
+- против Бхимасены  · n=2  · mahabharata-dronaparva, mahabharata-shalyaparva
+- Бхимасены  · n=2  · mahabharata-dronaparva, mahabharata-karnaparva
+- Бхимасена  · n=2  · mahabharata-karnaparva
+- его  · n=1  · mahabharata-shalyaparva
+- к Бхимасене  · n=1  · mahabharata-virataparva
+- него  · n=1  · mahabharata-virataparva
+- Бхимасеной  · n=1  · mahabharata-sauptikaparva
+
+### `BImasenamaya` — bhīmasenamaya  (n=1)
+
+- созданный Бхимасеной  · n=1  · mahabharata-udyogaparva
+
+### `BImasenamayaM` — bhīmasenamayaṃ  (n=1)
+
+- Бхимасену  · n=1  · mahabharata-striparva
+
+### `BImasenamuKAH` — bhīmasenamukhāḥ  (n=3)
+
+- во главе с Бхимасеной  · n=2  · mahabharata-dronaparva, mahabharata-shalyaparva
+- возглавляемые Бхимасеной  · n=1  · mahabharata-karnaparva
+
+### `BImasenamuKa` — bhīmasenamukha  (n=2)
+
+- позади Бхимасены  · n=1  · mahabharata-udyogaparva
+- возглавляемых Бхимасеной  · n=1  · mahabharata-shalyaparva
+
+### `BImasenamuKaiH` — bhīmasenamukhaiḥ  (n=1)
+
+- во главе с Бхимасеной  · n=1  · mahabharata-karnaparva
+
+### `BImasenaparAjitam` — bhīmasenaparājitam  (n=1)
+
+- побежденного Бхимасеной  · n=1  · mahabharata-dronaparva
+
+### `BImasenaparAkramam` — bhīmasenaparākramam  (n=1)
+
+- о доблести Бхимасены  · n=1  · mahabharata-aranyakaparva
+
+### `BImasenapramuktayA` — bhīmasenapramuktayā  (n=1)
+
+- запущенной Бхимасеной  · n=1  · mahabharata-shalyaparva
+
+### `BImasenapurogAH` — bhīmasenapurogāḥ  (n=3)
+
+- возглавляемые Бхимасеной  · n=2  · mahabharata-dronaparva
+- предводительствуемые Бхимасеной  · n=1  · mahabharata-dronaparva
+
+### `BImasenapuroga` — bhīmasenapuroga  (n=1)
+
+- во главе с Бхимасеной  · n=1  · mahabharata-ashramavasikaparva
+
+### `BImasenapurogamAH` — bhīmasenapurogamāḥ  (n=1)
+
+- во главе с Бхимасеной  · n=1  · mahabharata-aranyakaparva
+
+### `BImasenapurogamAn` — bhīmasenapurogamān  (n=1)
+
+- предводительствуемых Бхимасеной  · n=1  · mahabharata-dronaparva
+
+### `BImasenapurogama` — bhīmasenapurogama  (n=3)
+
+- предводительствуемые Бхимасеной  · n=2  · mahabharata-bhishmaparva, mahabharata-dronaparva
+- предводимые Бхимасеной  · n=1  · mahabharata-bhishmaparva
+
+### `BImasenapurogamaiH` — bhīmasenapurogamaiḥ  (n=1)
+
+- во главе с Бхимасеной  · n=1  · mahabharata-bhishmaparva
+
+### `BImasenaraTa` — bhīmasenaratha  (n=2)
+
+- колеснице Бхимасены  · n=1  · mahabharata-dronaparva
+- колесница Бхимасены  · n=1  · mahabharata-karnaparva
+
+### `BImasenaraTaM` — bhīmasenarathaṃ  (n=1)
+
+- колесницу Бхимасены  · n=1  · mahabharata-karnaparva
+
+### `BImasenaraTam` — bhīmasenaratham  (n=3)
+
+- на колесницу Бхимасены  · n=2  · mahabharata-aranyakaparva, mahabharata-bhishmaparva
+- колеснице Бхимасены  · n=1  · mahabharata-karnaparva
+
+### `BImasenarava` — bhīmasenarava  (n=3)
+
+- клич Бхимасены  · n=2  · mahabharata-aranyakaparva, mahabharata-dronaparva
+- рык Бхимасены  · n=1  · mahabharata-dronaparva
+
+### `BImasenasamIpagAn` — bhīmasenasamīpagān  (n=1)
+
+- подступающих к Бхимасене  · n=1  · mahabharata-dronaparva
+
+### `BImasenasuta` — bhīmasenasuta  (n=2)
+
+- сына Бхимасены  · n=1  · mahabharata-dronaparva
+- сын Бхимасены  · n=1  · mahabharata-bhishmaparva
+
+### `BImasenasya` — bhīmasenasya  (n=24)
+
+- Бхимасены  · n=18  · mahabharata-dronaparva, mahabharata-shalyaparva, mahabharata-aranyakaparva, mahabharata-adiparva, mahabharata-udyogaparva, mahabharata-karnaparva, mahabharata-sabhaparva, mahabharata-virataparva
+- Бхимасена  · n=2  · mahabharata-aranyakaparva, mahabharata-karnaparva
+- Бхимасене  · n=2  · mahabharata-virataparva
+- на Бхимасену  · n=1  · mahabharata-aranyakaparva
+- Бхимы  · n=1  · mahabharata-shalyaparva
+
+### `BImasenata` — bhīmasenata  (n=1)
+
+- Бхимасене  · n=1  · mahabharata-adiparva
+
+### `BImasenavaDArTam` — bhīmasenavadhārtham  (n=1)
+
+- чтобы уничтожить Бхимасену  · n=1  · mahabharata-aranyakaparva
+
+### `BImasenavaDArdita` — bhīmasenavadhārdita  (n=1)
+
+- страдает из-за убийства Бхимы  · n=1  · mahabharata-striparva
+
+### `BImasenavaDa` — bhīmasenavadha  (n=1)
+
+- сокрушения Бхимы  · n=1  · mahabharata-dronaparva
+
+### `BImasenavacaH` — bhīmasenavacaḥ  (n=2)
+
+- слова Бхимасены  · n=2  · mahabharata-dronaparva
+
+### `BImasenavyapASrayAt` — bhīmasenavyapāśrayāt  (n=1)
+
+- поддерживаемые Бхимасеной  · n=1  · mahabharata-karnaparva
+
+### `BImasene` — bhīmasene  (n=3)
+
+- Бхимасена  · n=2  · mahabharata-dronaparva
+- на Бхимасену  · n=1  · mahabharata-aranyakaparva
+
+### `BImasenena` — bhīmasenena  (n=32)
+
+- Бхимасеной  · n=18  · mahabharata-dronaparva, mahabharata-shalyaparva, mahabharata-bhishmaparva, mahabharata-aranyakaparva, mahabharata-virataparva, mahabharata-sauptikaparva
+- Бхимасена  · n=8  · mahabharata-karnaparva, mahabharata-sauptikaparva, mahabharata-aranyakaparva, mahabharata-udyogaparva, mahabharata-striparva
+- с Бхимасеной  · n=2  · mahabharata-bhishmaparva, mahabharata-sabhaparva
+- Бхимасены  · n=2  · mahabharata-shalyaparva, mahabharata-striparva
+- Бхимасену  · n=1  · mahabharata-sabhaparva
+- Бхимой  · n=1  · mahabharata-striparva
+
+### `BImaseno` — bhīmaseno  (n=2)
+
+- Бхимасена  · n=2  · mahabharata-dronaparva, mahabharata-mahaprasthanikaparva
+
+### `BImastu` — bhīmastu  (n=1)
+
+- Бхима  · n=1  · mahabharata-sabhaparva
+
+### `BImasutA` — bhīmasutā  (n=4)
+
+- дочь Бхимы  · n=4  · mahabharata-aranyakaparva
+
+### `BImasuta` — bhīmasuta  (n=2)
+
+- дочерью Бхимы  · n=1  · mahabharata-aranyakaparva
+- дочь Бхимы  · n=1  · mahabharata-aranyakaparva
+
+### `BImasyApoTayatketuM` — bhīmasyāpothayatketuṃ  (n=1)
+
+- рассек знамя Бхимасены  · n=1  · mahabharata-dronaparva
+
+### `BImasya` — bhīmasya  (n=28)
+
+- Бхимы  · n=21  · mahabharata-aranyakaparva, mahabharata-dronaparva, mahabharata-karnaparva, mahabharata-shalyaparva, mahabharata-virataparva, mahabharata-adiparva, mahabharata-udyogaparva, mahabharata-ashvamedhikaparva, mahabharata-sabhaparva, mahabharata-striparva
+- Бхимасены  · n=3  · mahabharata-aranyakaparva, mahabharata-adiparva, mahabharata-shalyaparva
+- Бхиме  · n=3  · mahabharata-virataparva, mahabharata-bhishmaparva
+- Бхиму  · n=1  · mahabharata-bhishmaparva
+
+### `BImasyadayitaHsaKA` — bhīmasya dayitaḥ sakhā  (n=1)
+
+- закадычный друг Бхимы  · n=1  · mahabharata-bhishmaparva
+
+### `BImatama` — bhīmatama  (n=1)
+
+- самая страшная  · n=1  · atharvaveda
+
+### `BImatejasAm` — bhīmatejasām  (n=2)
+
+- грозным могуществом  · n=1  · mahabharata-aranyakaparva
+- грозно блистающих  · n=1  · mahabharata-karnaparva
+
+### `BImau` — bhīmau  (n=2)
+
+- Бхима  · n=2  · mahabharata-bhishmaparva, mahabharata-dronaparva
+
+### `BImavAnaraketu` — bhīmavānaraketu  (n=1)
+
+- с грозной обезьяной на стяге  · n=1  · mahabharata-bhishmaparva
+
+### `BImavIryAH` — bhīmavīryāḥ  (n=1)
+
+- страшно сильны  · n=1  · mahabharata-adiparva
+
+### `BImavIryabalopeta` — bhīmavīryabalopeta  (n=1)
+
+- одаренного страшною мощью и силой  · n=1  · mahabharata-dronaparva
+
+### `BImavIryaparAkrama` — bhīmavīryaparākrama  (n=1)
+
+- одарены страшною мощью и доблестью  · n=1  · mahabharata-dronaparva
+
+### `BImavacana` — bhīmavacana  (n=1)
+
+- с позволения Бхимы  · n=1  · mahabharata-aranyakaparva
+
+### `BImavacas` — bhīmavacas  (n=2)
+
+- речах Бхимы  · n=2  · mahabharata-bhishmaparva
+
+### `BImavapuH` — bhīmavapuḥ  (n=1)
+
+- ужасная телом  · n=1  · ramayana-sundarakanda
+
+### `BImavapus` — bhīmavapus  (n=1)
+
+- грозные телесной мощью  · n=1  · mahabharata-karnaparva
+
+### `BImavegAH` — bhīmavegāḥ  (n=2)
+
+- Наделенные ужасной силой  · n=1  · ramayana-balakanda
+- грозно стремящиеся  · n=1  · mahabharata-bhishmaparva
+
+### `BImavega` — bhīmavega  (n=8)
+
+- Бхимавега  · n=2  · mahabharata-adiparva
+- со страшной быстротой  · n=1  · mahabharata-adiparva
+- неистово-стремительный  · n=1  · mahabharata-aranyakaparva
+- со страшной стремительностью  · n=1  · mahabharata-dronaparva
+- жестоким  · n=1  · mahabharata-karnaparva
+- грозностремительных  · n=1  · mahabharata-karnaparva
+- страшной быстротою  · n=1  · mahabharata-shalyaparva
+
+### `BImavegaDara` — bhīmavegadhara  (n=1)
+
+- Бхимавегадхара  · n=1  · mahabharata-adiparva
+
+### `BImavegaH` — bhīmavegaḥ  (n=1)
+
+- Бхимавега  · n=1  · mahabharata-adiparva
+
+### `BImavegaparAkramaH` — bhīmavegaparākramaḥ  (n=2)
+
+- наделенный страшною силой и быстротой  · n=1  · mahabharata-adiparva
+- страшный в своей стремительности и силе  · n=1  · mahabharata-virataparva
+
+### `BImavegayA` — bhīmavegayā  (n=1)
+
+- обладающей страшною силой  · n=1  · mahabharata-shalyaparva
+
+### `BImavikrAnta` — bhīmavikrānta  (n=2)
+
+- грозноотважного  · n=2  · mahabharata-svargarohanikaparva
+
+### `BImavikramAH` — bhīmavikramāḥ  (n=1)
+
+- чьи дела ужасны  · n=1  · ramayana-sundarakanda
+
+### `BImavikrama` — bhīmavikrama  (n=8)
+
+- наделенный грозной мощью  · n=2  · ramayana-sundarakanda
+- грозно-доблестный  · n=1  · ramayana-sundarakanda
+- наделенные свирепой мощью  · n=1  · ramayana-sundarakanda
+- грозный в своей отваге  · n=1  · mahabharata-dronaparva
+- страшного по своей мощи  · n=1  · mahabharata-dronaparva
+- отвага Бхимы  · n=1  · mahabharata-karnaparva
+- страшными в своей доблести  · n=1  · mahabharata-shalyaparva
+
+### `BImavikramaH` — bhīmavikramaḥ  (n=2)
+
+- грозный своей доблестью  · n=1  · ramayana-sundarakanda
+- наделенный грозной мощью  · n=1  · ramayana-sundarakanda
+
+### `BImavikramaiH` — bhīmavikramaiḥ  (n=1)
+
+- наделенными грозной мощью  · n=1  · ramayana-sundarakanda
+
+### `BImavikramam` — bhīmavikramam  (n=1)
+
+- исполненное страшной отваги  · n=1  · mahabharata-sabhaparva
+
+### `BImavikramau` — bhīmavikramau  (n=1)
+
+- суровые в своих деяниях  · n=1  · mahabharata-aranyakaparva
+
+### `BImavirya` — bhīmavirya  (n=1)
+
+- грозным мужеством  · n=1  · ramayana-sundarakanda
+
+### `BImaviza` — bhīmaviṣa  (n=1)
+
+- ужасного яда  · n=1  · shatakatrayam
+
+### `BImavizeRa` — bhīmaviṣeṇa  (n=2)
+
+- ужасного яда  · n=2  · shatakatrayam-serebryakov
+
+### `BImayu` — bhīmayu  (n=1)
+
+- страшный  · n=1  · rigveda
+
+### `BIme` — bhīme  (n=4)
+
+- Бхима  · n=2  · mahabharata-aranyakaparva
+- на Бхиму  · n=1  · mahabharata-dronaparva
+- к Бхиме  · n=1  · mahabharata-dronaparva
+
+### `BImeSvarI` — bhīmeśvarī  (n=2)
+
+- Бхимешвари  · n=2  · devi-gita
+
+### `BImena` — bhīmena  (n=35)
+
+- Бхимой  · n=22  · mahabharata-dronaparva, mahabharata-karnaparva, mahabharata-shalyaparva, mahabharata-adiparva, mahabharata-bhishmaparva, mahabharata-sabhaparva, mahabharata-striparva
+- Бхимою  · n=4  · mahabharata-adiparva, mahabharata-dronaparva, mahabharata-karnaparva
+- Бхима  · n=4  · mahabharata-karnaparva, mahabharata-adiparva, mahabharata-ashvamedhikaparva
+- Бхимы  · n=2  · mahabharata-bhishmaparva, mahabharata-shalyaparva
+- Бхимасены  · n=1  · mahabharata-shalyaparva
+- на Бхиму  · n=1  · mahabharata-sabhaparva
+- стремительным  · n=1  · mahabharata-virataparva
+
+### `BImo` — bhīmo  (n=5)
+
+- Бхима  · n=4  · mahabharata-dronaparva, mahabharata-aranyakaparva, mahabharata-adiparva
+- страшный  · n=1  · rigveda
+
+### `BImoBallaistriBiHpunaH` — bhīmo bhallaistribhiḥ punaḥ  (n=1)
+
+- Бхима тремя стрелами снова  · n=1  · mahabharata-dronaparva
+
+### `BImodagraiH` — bhīmodagraiḥ  (n=1)
+
+- гневных  · n=1  · mahabharata-karnaparva
+
+### `BImograpariGAlAtaSUlapawwiSapARayaH` — bhīmograparighālātaśūlapaṭṭiśapāṇayaḥ  (n=1)
+
+- держали они в руках страшные грозные брусы из железа, пылающие головни, пики и копья  · n=1  · mahabharata-sauptikaparva
+
+### `BInameGa` — bhīnamegha  (n=1)
+
+- облако Бхимы  · n=1  · mahabharata-dronaparva
+
+### `BIrU` — bhīrū  (n=2)
+
+- робких  · n=1  · mahabharata-dronaparva
+- робким  · n=1  · mahabharata-dronaparva
+
+### `BIrURAM` — bhīrūṇāṃ  (n=1)
+
+- робких  · n=1  · mahabharata-dronaparva
+
+### `BIrURAm` — bhīrūṇām  (n=6)
+
+- у робких  · n=2  · mahabharata-dronaparva
+- у боязливых  · n=1  · mahabharata-dronaparva
+- для робких  · n=1  · mahabharata-dronaparva
+- трусливых  · n=1  · mahabharata-dronaparva
+- робких  · n=1  · mahabharata-shalyaparva
+
+### `BIrava` — bhīrava  (n=1)
+
+- бесстрашный  · n=1  · mahabharata-dronaparva
+
+### `BIrave` — bhīrave  (n=2)
+
+- чтобы испугать  · n=2  · rigveda
+
+### `BIrme` — bhīrme  (n=1)
+
+- тревога  · n=1  · mahabharata-bhishmaparva
+
+### `BIru` — bhīru  (n=82)
+
+- робкая  · n=42  · mahabharata-adiparva, ramayana-sundarakanda, mahabharata-aranyakaparva, mahabharata-virataparva, ramayana-ayodhyakanda, ramayana-aranyakanda, mahabharata-udyogaparva, raghuvamsha, mahabharata-dronaparva, mahabharata-ashvamedhikaparva
+- робких  · n=7  · mahabharata-shalyaparva, mahabharata-dronaparva, manavadharmashastra, mahabharata-bhishmaparva
+- о робкая  · n=5  · mahabharata-adiparva, ramayana-sundarakanda, ramayana-aranyakanda
+- трус  · n=3  · shatakatrayam, shatakatrayam-serebryakov, shukasaptati
+- человек  · n=2  · shv-up
+- пугливая  · n=1  · ramayana-ayodhyakanda
+- робкой  · n=1  · ramayana-ayodhyakanda
+- боязливые  · n=1  · manavadharmashastra
+- злодейски  · n=1  · ramayana-aranyakanda
+- трусов  · n=1  · ramayana-balakanda
+- трепетная  · n=1  · mahabharata-aranyakaparva
+- трусы  · n=1  · rigveda
+- в страхе  · n=1  · mahabharata-adiparva
+- прекрасная  · n=1  · mahabharata-adiparva
+- робкий  · n=1  · mahabharata-dronaparva
+- боязливых  · n=1  · mahabharata-dronaparva
+- страшно  · n=1  · buddhacharita
+- убоявшийся  · n=1  · buddhacharita
+- страшась  · n=1  · buddhacharita
+- робкая дева  · n=1  · mahabharata-udyogaparva
+- пугливый  · n=1  · mahabharata-udyogaparva
+- робкому  · n=1  · mahabharata-udyogaparva
+- робким  · n=1  · mahabharata-udyogaparva
+- трусам  · n=1  · mahabharata-karnaparva
+- робкие  · n=1  · mahabharata-karnaparva
+- трусливо  · n=1  · mahabharata-sabhaparva
+- страх  · n=1  · gitagovinda
+- Робкая  · n=1  · shukasaptati
+
+### `BIruBIruH` — bhīrubhīruḥ  (n=1)
+
+- весьма робкой  · n=1  · ramayana-sundarakanda
+
+### `BIruBIzaRI` — bhīrubhīṣaṇī  (n=1)
+
+- приводящая в трепет  · n=1  · mahabharata-karnaparva
+
+### `BIruBayAvaha` — bhīrubhayāvaha  (n=1)
+
+- внушающая ужас робким  · n=1  · mahabharata-shalyaparva
+
+### `BIruBayAvaham` — bhīrubhayāvaham  (n=1)
+
+- ужас вселяющем в робких  · n=1  · mahabharata-bhishmaparva
+
+### `BIruH` — bhīruḥ  (n=5)
+
+- робкая  · n=2  · ramayana-aranyakanda
+- боязливая  · n=1  · ramayana-sundarakanda
+- Майтхили  · n=1  · ramayana-aranyakanda
+- в ужасе  · n=1  · mahabharata-ashvamedhikaparva
+
+### `BIruRA` — bhīruṇā  (n=2)
+
+- трусливый  · n=1  · ramayana-aranyakanda
+- испугавшись  · n=1  · shukasaptati
+
+### `BIrucinha` — bhīrucinha  (n=1)
+
+- примета робкого  · n=1  · buddhacharita
+
+### `BIrudustarAm` — bhīrudustarām  (n=1)
+
+- непроходима для робких  · n=1  · mahabharata-dronaparva
+
+### `BIrudustara` — bhīrudustara  (n=1)
+
+- непроходимый для робких  · n=1  · mahabharata-dronaparva
+
+### `BIrum` — bhīrum  (n=2)
+
+- трусов  · n=1  · mahabharata-shalyaparva
+- труса  · n=1  · mahabharata-striparva
+
+### `BIrusantrAsakaraM` — bhīrusantrāsakaraṃ  (n=1)
+
+- внушающая страх  · n=1  · mahabharata-karnaparva
+
+### `BIrutva` — bhīrutva  (n=1)
+
+- робости  · n=1  · kama-sutra
+
+### `BIruviBIzaRa` — bhīruvibhīṣaṇa  (n=1)
+
+- способную привести в ужас робких  · n=1  · mahabharata-dronaparva
+
+### `BIrya` — bhīrya  (n=1)
+
+- литавры  · n=1  · gitarthasamgraha-abhinavagupta
+
+### `BItA` — bhītā  (n=21)
+
+- в страхе  · n=6  · ramayana-aranyakanda, mahabharata-virataparva, mahabharata-aranyakaparva, bhagavadgita-1914
+- от страха  · n=2  · mahabharata-aranyakaparva
+- боясь  · n=2  · mahabharata-aranyakaparva, mahabharata-adiparva
+- Испуганная  · n=1  · ramayana-ayodhyakanda
+- испугана  · n=1  · ramayana-sundarakanda
+- испуганно  · n=1  · mahabharata-aranyakaparva
+- робко  · n=1  · mahabharata-aranyakaparva
+- боюсь  · n=1  · mahabharata-aranyakaparva
+- испугалась  · n=1  · mahabharata-adiparva
+- испуганные  · n=1  · mahabharata-dronaparva
+- страх  · n=1  · buddhacharita
+- перепуганная  · n=1  · mahabharata-shalyaparva
+- страшась  · n=1  · mahabharata-shalyaparva
+- опасаясь  · n=1  · mahabharata-shalyaparva
+
+### `BItAH` — bhītāḥ  (n=15)
+
+- устрашенные  · n=4  · mahabharata-bhishmaparva, ramayana-ayodhyakanda, bhagavadgita-erman
+- испуганные  · n=2  · mahabharata-adiparva, mahabharata-dronaparva
+- перепуганные  · n=2  · mahabharata-aranyakaparva, mahabharata-dronaparva
+- в страхе  · n=2  · mahabharata-karnaparva
+- перепугались  · n=1  · mahabharata-adiparva
+- ИСПУГАННЫЕ  · n=1  · ramanuja_gitabhashya
+- трепеща  · n=1  · bhagavadgita-smirnov
+- со страхомъ  · n=1  · bhagavadgita-1909
+- напуганные  · n=1  · bhagavadgita-prabhupada
+
+### `BItAM` — bhītāṃ  (n=1)
+
+- перепуганной  · n=1  · raghuvamsha
+
+### `BItAhamasmi` — bhītāhamasmi  (n=1)
+
+- мне страшно  · n=1  · mahabharata-aranyakaparva
+
+### `BItAn` — bhītān  (n=3)
+
+- напуганных  · n=1  · mahabharata-adiparva
+- испуганных  · n=1  · mahabharata-dronaparva
+- перепуганы  · n=1  · mahabharata-virataparva
+
+### `BItAnAM` — bhītānāṃ  (n=1)
+
+- в страхе  · n=1  · mahabharata-udyogaparva
+
+### `BItAni` — bhītāni  (n=7)
+
+- испуганные  · n=3  · bhagavadgita-prabhupada, bhagavadgita-burba
+- ужасаются  · n=2  · bhagavadgity, bhagavadgita-1788
+- в испуге  · n=1  · ramanuja_gitabhashya
+- трепеща  · n=1  · bhagavadgita-sharma
+
+### `BItAsmi` — bhītāsmi  (n=2)
+
+- мне страшно  · n=1  · mahabharata-aranyakaparva
+- боюсь  · n=1  · mahabharata-virataparva
+
+### `BIta` — bhīta  (n=145)
+
+- в страхе  · n=14  · mahabharata-aranyakaparva, mahabharata-karnaparva, mahabharata-adiparva, mahabharata-dronaparva, bhagavadgita-smirnov, bhagavadgita-sharma, mahabharata-sauptikaparva
+- испуганный  · n=9  · mahabharata-aranyakaparva, rigveda, mahabharata-udyogaparva, mahabharata-adiparva, bhagavadgita-radha, amaru-shataka
+- перепуганные  · n=5  · mahabharata-dronaparva, mahabharata-udyogaparva, mahabharata-adiparva
+- испугавшись  · n=4  · ramayana-sundarakanda, mahabharata-dronaparva, mahabharata-udyogaparva, mahabharata-sabhaparva
+- устрашенный  · n=4  · manavadharmashastra, mahabharata-bhishmaparva
+- перепуганного  · n=4  · mahabharata-udyogaparva, ramanuja_gitabhashya, bhagavadgita-sementsov, mahabharata-sauptikaparva
+- испуганного  · n=4  · bhagavadgita-prabhupada, rigveda, bhagavadgita-burba
+- боится  · n=3  · ramayana-ayodhyakanda, mahabharata-dronaparva, mahabharata-udyogaparva
+- боимся  · n=3  · ramayana-balakanda, ramayana-ayodhyakanda
+- перепуганный  · n=3  · ramayana-aranyakanda, mahabharata-shalyaparva, mahabharata-virataparva
+- боясь  · n=3  · ramayana-balakanda, mahabharata-aranyakaparva, mahabharata-sabhaparva
+- страх  · n=3  · mahabharata-aranyakaparva, mahabharata-karnaparva, mahabharata-virataparva
+- трепеща  · n=3  · gitarthasamgraha-abhinavagupta, bhagavadgity
+- испуганные  · n=2  · mahabharata-adiparva, bhagavadgita-radha
+- напуган  · n=2  · ramayana-ayodhyakanda, mahabharata-dronaparva
+- страшась  · n=2  · ramayana-aranyakanda, buddhacharita
+- страха  · n=2  · mahabharata-aranyakaparva, mahabharata-karnaparva
+- угрожает  · n=2  · mahabharata-aranyakaparva
+- напуганные  · n=2  · mahabharata-aranyakaparva, bhagavadgita-burba
+- робких  · n=2  · mahabharata-aranyakaparva, mahabharata-dronaparva
+- страхе  · n=2  · mahabharata-adiparva, mahabharata-bhishmaparva
+- устрашенного  · n=2  · mahabharata-bhishmaparva, bhagavadgita-erman
+- охваченные страхом  · n=2  · mahabharata-dronaparva, mahabharata-shalyaparva
+- испугался  · n=2  · mahabharata-dronaparva, mahabharata-karnaparva
+- потрясенного  · n=2  · bhagavadgita-1914, bhagavadgity
+- устрашенные  · n=2  · bhagavadgita-erman, bhagavadgita-radha
+- опасаясь  · n=2  · mahabharata-shalyaparva, mahabharata-sauptikaparva
+- испуган  · n=2  · shukasaptati, yoga-sutry_vyasa-bhashya
+- Боюсь  · n=1  · mahabharata-adiparva
+- перепуганных  · n=1  · mahabharata-adiparva
+- испуганно  · n=1  · mahabharata-adiparva
+- Страшится  · n=1  · ramayana-ayodhyakanda
+- испугались  · n=1  · ramayana-sundarakanda
+- испуганы  · n=1  · ramayana-sundarakanda
+- боявшиеся  · n=1  · manavadharmashastra
+- Опасаясь  · n=1  · ramayana-balakanda
+- Перепуганные  · n=1  · ramayana-balakanda
+- объятые  · n=1  · ramayana-balakanda
+- трепещущую  · n=1  · ramayana-balakanda
+- испуганной  · n=1  · ramayana-balakanda
+- томимых страхом  · n=1  · mahabharata-aranyakaparva
+- страшившиеся  · n=1  · mahabharata-aranyakaparva
+- напуганная  · n=1  · mahabharata-aranyakaparva
+- трусливо  · n=1  · mahabharata-aranyakaparva
+- боязлива  · n=1  · kama-sutra
+- Перепуганный  · n=1  · mahabharata-adiparva
+- устрашившись  · n=1  · mahabharata-bhishmaparva
+- Устрашенные  · n=1  · mahabharata-bhishmaparva
+- устрашены  · n=1  · mahabharata-bhishmaparva
+- устрашенным  · n=1  · mahabharata-bhishmaparva
+- перепуган  · n=1  · mahabharata-dronaparva
+- несмело  · n=1  · buddhacharita
+- Страшусь  · n=1  · buddhacharita
+- страшатся  · n=1  · buddhacharita
+- испытываю страх  · n=1  · mahabharata-udyogaparva
+- из опасения  · n=1  · mahabharata-udyogaparva
+- ужасаясь  · n=1  · bhagavadgita-1914
+- со страхомъ  · n=1  · bhagavadgita-1788
+- устрашеннаго  · n=1  · bhagavadgita-1788
+- исступленно  · n=1  · bhagavadgita-sementsov
+- в испуге  · n=1  · bhagavadgita-sementsov
+- бѣгутъ  · n=1  · bhagavadgita-1909
+- смущеніе  · n=1  · bhagavadgita-1909
+- сраженного страхом  · n=1  · bhagavadgita-sharma
+- ужасе  · n=1  · mahabharata-karnaparva
+- устрашимы  · n=1  · mahabharata-karnaparva
+- ужас  · n=1  · mahabharata-karnaparva
+- в ужасе  · n=1  · mahabharata-karnaparva
+- бесприютной  · n=1  · kumarasambhava
+- Боясь  · n=1  · mahabharata-shalyaparva
+- испуганная  · n=1  · mahabharata-ashvamedhikaparva
+- испуганными  · n=1  · devi-gita
+- боящийся  · n=1  · mahabharata-sabhaparva
+- внушило тревогу  · n=1  · raghuvamsha
+- из страха  · n=1  · raghuvamsha
+- перепуганная  · n=1  · atharvaveda
+- опасающийся  · n=1  · mahabharata-virataparva
+- охваченных страхом  · n=1  · yoga-sutry_vyasa-bhashya
+- Боязливый  · n=1  · atharvaveda
+- Страх обуял их  · n=1  · mahabharata-sauptikaparva
+- от ужаса  · n=1  · mahabharata-sauptikaparva
+
+### `BIta-BIta` — bhīta-bhīta  (n=5)
+
+- напуганный-напуганный  · n=1  · bhagavadgita-burba
+- от страха  · n=1  · bhagavadgita-1914
+- съ трепетомъ  · n=1  · bhagavadgita-1788
+- трепетомъ  · n=1  · bhagavadgita-1909
+- очень испуганный  · n=1  · bhagavadgita-radha
+
+### `BIta-BItaH` — bhīta-bhītaḥ  (n=1)
+
+- с трепетом  · n=1  · bhagavadgity
+
+### `BItaBIta` — bhītabhīta  (n=6)
+
+- в великом страхе  · n=2  · mahabharata-bhishmaparva, bhagavadgita-erman
+- ужасаясь  · n=1  · gitarthasamgraha-abhinavagupta
+- перепуганный  · n=1  · ramanuja_gitabhashya
+- трепеща, ужасаясь  · n=1  · bhagavadgita-smirnov
+- с дрожью и робостью  · n=1  · bhagavadgita-sementsov
+
+### `BItaBItaH` — bhītabhītaḥ  (n=2)
+
+- в страхе  · n=1  · bhagavadgita-sharma
+- напуганный  · n=1  · bhagavadgita-prabhupada
+
+### `BItaH` — bhītaḥ  (n=20)
+
+- в страхе  · n=3  · mahabharata-shantiparva, mahabharata-dronaparva, mahabharata-karnaparva
+- боюсь  · n=3  · ramayana-ayodhyakanda, mahabharata-udyogaparva
+- испуганный  · n=2  · mahabharata-shantiparva
+- испытывая страх  · n=2  · mahabharata-dronaparva, mahabharata-shalyaparva
+- устрашился  · n=1  · mahabharata-shantiparva
+- боится  · n=1  · ramayana-ayodhyakanda
+- испытываешь страх  · n=1  · mahabharata-dronaparva
+- испугался  · n=1  · mahabharata-dronaparva
+- напуганный  · n=1  · mahabharata-dronaparva
+- боясь  · n=1  · mahabharata-udyogaparva
+- боишься  · n=1  · mahabharata-udyogaparva
+- испугавшись  · n=1  · mahabharata-karnaparva
+- напуган  · n=1  · mahabharata-shalyaparva
+- побоявшись  · n=1  · mahabharata-ashvamedhikaparva
+
+### `BItaM` — bhītaṃ  (n=3)
+
+- устрашившись  · n=1  · mahabharata-aranyakaparva
+- в страхе  · n=1  · mahabharata-dronaparva
+- пугаешься  · n=1  · mahabharata-udyogaparva
+
+### `BItaiH` — bhītaiḥ  (n=1)
+
+- перепуганные  · n=1  · mahabharata-karnaparva
+
+### `BItaiva` — bhītaiva  (n=1)
+
+- напуган  · n=1  · ramayana-ayodhyakanda
+
+### `BItam` — bhītam  (n=8)
+
+- страх  · n=2  · gitarthasamgraha-abhinavagupta, bhagavadgita-smirnov
+- испугался  · n=1  · mahabharata-aranyakaparva
+- перепуганного  · n=1  · mahabharata-aranyakaparva
+- перепуган  · n=1  · mahabharata-dronaparva
+- перепуганный  · n=1  · mahabharata-virataparva
+- в испуге  · n=1  · mahabharata-virataparva
+- устрашенному  · n=1  · mahabharata-striparva
+
+### `BItamalpasattvasya` — bhītamalpasattvasya  (n=1)
+
+- трепещет малодушного  · n=1  · mahabharata-bhishmaparva
+
+### `BItaprasannam` — bhītaprasannam  (n=1)
+
+- охваченный страхом  · n=1  · buddhacharita
+
+### `BItasvanaM` — bhītasvanaṃ  (n=1)
+
+- испуганный крик  · n=1  · mahabharata-adiparva
+
+### `BItasya` — bhītasya  (n=1)
+
+- страх  · n=1  · kama-sutra
+
+### `BItatara` — bhītatara  (n=1)
+
+- больше боюсь  · n=1  · mahabharata-udyogaparva
+
+### `BItavat` — bhītavat  (n=1)
+
+- испуганный  · n=1  · mahabharata-striparva
+
+### `BItayA` — bhītayā  (n=1)
+
+- испуганная  · n=1  · ramayana-sundarakanda
+
+### `BIte` — bhīte  (n=5)
+
+- испуганные  · n=3  · rigveda
+- испугался  · n=2  · mahabharata-bhishmaparva, mahabharata-dronaparva
+
+### `BItena` — bhītena  (n=1)
+
+- обеспокоенный  · n=1  · mahabharata-udyogaparva
+
+### `BIti` — bhīti  (n=5)
+
+- страха  · n=2  · buddhacharita, shatakatrayam
+- видимо  · n=1  · buddhacharita
+- страх  · n=1  · shatakatrayam
+- страхе  · n=1  · gitagovinda
+
+### `BIticCidaM` — bhīticchidaṃ  (n=1)
+
+- свобода от страха  · n=1  · shatakatrayam-serebryakov
+
+### `BItim` — bhītim  (n=1)
+
+- не испугались  · n=1  · shatakatrayam-serebryakov
+
+### `BItivivarjita` — bhītivivarjita  (n=1)
+
+- рассеяны страхи  · n=1  · devi-gita
+
+### `BIto` — bhīto  (n=1)
+
+- в страхе  · n=1  · shukasaptati
+
+### `BIto'Byeti` — bhīto'bhyeti  (n=1)
+
+- приходит устрашенный  · n=1  · mahabharata-bhishmaparva
+
+### `BItodvigna` — bhītodvigna  (n=1)
+
+- испуганного и смутившегося  · n=1  · mahabharata-sabhaparva
+
+### `BIzA` — bhīṣā  (n=5)
+
+- от страха  · n=2  · rigveda, rigveda
+- Из страха  · n=2  · tai-up
+- страха  · n=1  · rigveda
+
+### `BIzaRAM` — bhīṣaṇāṃ  (n=1)
+
+- демоницы  · n=1  · raghuvamsha
+
+### `BIzaRa` — bhīṣaṇa  (n=7)
+
+- страшный  · n=2  · mahabharata-adiparva, mahabharata-ashvamedhikaparva
+- устрашающее имя  · n=1  · manavadharmashastra
+- страхе  · n=1  · kama-sutra
+- ужасный и страшный  · n=1  · mahabharata-adiparva
+- ужасный  · n=1  · mahabharata-dronaparva
+- ужас  · n=1  · mahabharata-ashramavasikaparva
+
+### `BIzaRakair` — bhīṣaṇakair  (n=1)
+
+- угрожающие  · n=1  · ramayana-ayodhyakanda
+
+### `BIzaRam` — bhīṣaṇam  (n=1)
+
+- престрашный  · n=1  · mahabharata-aranyakaparva
+
+### `BIzaRe` — bhīṣaṇe  (n=1)
+
+- страшные  · n=1  · shukasaptati
+
+### `BIzay` — bhīṣay  (n=1)
+
+- запугивая  · n=1  · mahabharata-sabhaparva
+
+### `BIzayA` — bhīṣayā  (n=1)
+
+- посредством запугивания  · n=1  · manavadharmashastra
+
+### `BIzayARa` — bhīṣayāṇa  (n=1)
+
+- пугая  · n=1  · mahabharata-dronaparva
+
+### `BIzayARaH` — bhīṣayāṇaḥ  (n=1)
+
+- устрашая  · n=1  · mahabharata-dronaparva
+
+### `BIzayan` — bhīṣayan  (n=6)
+
+- устрашая  · n=3  · mahabharata-dronaparva, mahabharata-adiparva
+- чтобы устрашить  · n=1  · mahabharata-dronaparva
+- пугая  · n=1  · mahabharata-dronaparva
+- устрашающими  · n=1  · mahabharata-karnaparva
+
+### `BIzayannasi` — bhīṣayannasi  (n=1)
+
+- внушаешь страх  · n=1  · mahabharata-karnaparva
+
+### `BIzayanta` — bhīṣayanta  (n=1)
+
+- приводя в ужас  · n=1  · mahabharata-dronaparva
+
+### `BIzayeH` — bhīṣayeḥ  (n=1)
+
+- угрожать  · n=1  · mahabharata-udyogaparva
+
+### `BIzayet` — bhīṣayet  (n=1)
+
+- запугивает  · n=1  · kama-sutra
+
+### `BIzayitu` — bhīṣayitu  (n=2)
+
+- испугать  · n=1  · mahabharata-karnaparva
+- внушить боязнь  · n=1  · mahabharata-karnaparva
+
+### `BIzayituM` — bhīṣayituṃ  (n=1)
+
+- запугать  · n=1  · mahabharata-karnaparva
+
+### `BIzayitum` — bhīṣayitum  (n=1)
+
+- устрашить  · n=1  · mahabharata-karnaparva
+
+### `BIzayitvA` — bhīṣayitvā  (n=1)
+
+- запугивая  · n=1  · mahabharata-udyogaparva
+
+### `BIzitAH` — bhīṣitāḥ  (n=3)
+
+- перепуганы  · n=1  · mahabharata-adiparva
+- Перепуганные  · n=1  · mahabharata-dronaparva
+- испуганные  · n=1  · mahabharata-dronaparva
+
+### `BIzita` — bhīṣita  (n=2)
+
+- перепуганный  · n=1  · mahabharata-adiparva
+- устрашенные  · n=1  · mahabharata-bhishmaparva
+
+### `BIzitaH` — bhīṣitaḥ  (n=1)
+
+- содрогнулся  · n=1  · mahabharata-virataparva
+
+### `BIzmABirakzita` — bhīṣmābhirakṣita  (n=14)
+
+- ограждаемая Бхишмой  · n=3  · mahabharata-bhishmaparva
+- Бхишмой хранимая  · n=1  · bhagavadgita-burba
+- предводительствуемая Бхишмой  · n=1  · ramanuja_gitabhashya
+- ХРАНИМУЮ БХИШМОЙ  · n=1  · ramanuja_gitabhashya
+- предводительствует ею Бхишма  · n=1  · bhagavadgita-1914
+- водимая Бхишмой  · n=1  · bhagavadgita-smirnov
+- у нас во главе — старый Бхишма  · n=1  · bhagavadgita-sementsov
+- хранимая Бхишмой  · n=1  · bhagavadgita-sementsov
+- защищенные Бхишмой  · n=1  · bhagavadgita-sharma
+- надежно защищенная Бхишмой  · n=1  · bhagavadgita-prabhupada
+- надежно защищает Бхишма  · n=1  · bhagavadgita-prabhupada
+- управляемая Бхишмой  · n=1  · bhagavadgita-radha
+
+### `BIzmABirakzitam` — bhīṣmābhirakṣitam  (n=4)
+
+- ограждаемая Бхишмой  · n=2  · bhagavadgita-erman
+- под предводительством Бхишмы  · n=1  · gitarthasamgraha-abhinavagupta
+- водимая Бхишмой  · n=1  · bhagavadgity
+
+### `BIzmABizecana` — bhīṣmābhiṣecana  (n=3)
+
+- назначении Бхишмы  · n=1  · mahabharata-adiparva
+- посвящение Бхишмы  · n=1  · mahabharata-adiparva
+- Бхишмабхишека  · n=1  · mahabharata-adiparva
+
+### `BIzmARAm` — bhīṣmāṇām  (n=1)
+
+- Бхишмы  · n=1  · mahabharata-bhishmaparva
+
+### `BIzmAdInAm` — bhīṣmādīnām  (n=1)
+
+- о Бхишме и остальных  · n=1  · mahabharata-ashramavasikaparva
+
+### `BIzmAdIna` — bhīṣmādīna  (n=1)
+
+- начиная с Бхишмы  · n=1  · mahabharata-ashramavasikaparva
+
+### `BIzmAdayaH` — bhīṣmādayaḥ  (n=1)
+
+- Бхишма и другие  · n=1  · mahabharata-udyogaparva
+
+### `BIzmAntikam` — bhīṣmāntikam  (n=1)
+
+- к Бхишме  · n=1  · mahabharata-bhishmaparva
+
+### `BIzmArjunasamAgama` — bhīṣmārjunasamāgama  (n=1)
+
+- встретились Бхишма и Арджуна  · n=1  · mahabharata-bhishmaparva
+
+### `BIzmArjunasamAgame` — bhīṣmārjunasamāgame  (n=1)
+
+- при встрече Бхишмы и Арджуны  · n=1  · mahabharata-virataparva
+
+### `BIzmAstra` — bhīṣmāstra  (n=1)
+
+- оружием Бхишмы  · n=1  · mahabharata-bhishmaparva
+
+### `BIzmAt` — bhīṣmāt  (n=6)
+
+- Бхишмы  · n=2  · mahabharata-bhishmaparva, mahabharata-udyogaparva
+- Бхишмой  · n=1  · mahabharata-adiparva
+- перед Бхишмой  · n=1  · mahabharata-aranyakaparva
+- помимо Бхишмы  · n=1  · mahabharata-bhishmaparva
+- от Бхишмы  · n=1  · mahabharata-karnaparva
+
+### `BIzmAya` — bhīṣmāya  (n=5)
+
+- Бхишме  · n=2  · mahabharata-adiparva, mahabharata-udyogaparva
+- за Бхишмой  · n=2  · mahabharata-dronaparva, mahabharata-sabhaparva
+- Бхишмы  · n=1  · mahabharata-dronaparva
+
+### `BIzmAyodyant` — bhīṣmāyodyant  (n=1)
+
+- подступает к Бхишме  · n=1  · mahabharata-bhishmaparva
+
+### `BIzma` — bhīṣma  (n=603)
+
+- Бхишма  · n=313  · mahabharata-bhishmaparva, mahabharata-udyogaparva, mahabharata-adiparva, mahabharata-aranyakaparva, mahabharata-sabhaparva, mahabharata-dronaparva, mahabharata-karnaparva, mahabharata-virataparva, mahabharata-shalyaparva, bhagavadgita-prabhupada, mahabharata-ashramavasikaparva, mahabharata-striparva, gitarthasamgraha-abhinavagupta, bhagavadgita-burba, bhagavadgita-1914, bhagavadgita-smirnov, bhagavadgita-sementsov, bhagavadgita-sharma, bhagavadgita-radha, mahabharata-ashvamedhikaparva, mahabharata-svargarohanikaparva, mahabharata-shantiparva, ramanuja_gitabhashya, bhagavadgity, bhagavadgita-erman, bhagavadgita-1909, shukasaptati, mahabharata-sauptikaparva
+- Бхишму  · n=108  · mahabharata-bhishmaparva, mahabharata-udyogaparva, mahabharata-adiparva, gitarthasamgraha-abhinavagupta, bhagavadgita-1914, bhagavadgita-sementsov, mahabharata-karnaparva, mahabharata-aranyakaparva, mahabharata-dronaparva, bhagavadgita-burba, ramanuja_gitabhashya, bhagavadgita-erman, bhagavadgita-smirnov, bhagavadgita-radha, mahabharata-shantiparva, bhagavadgita-sharma, mahabharata-sabhaparva, mahabharata-virataparva, mahabharata-ashramavasikaparva
+- Бхишмы  · n=67  · mahabharata-bhishmaparva, mahabharata-udyogaparva, mahabharata-karnaparva, mahabharata-adiparva, mahabharata-shalyaparva, mahabharata-sabhaparva, mahabharata-dronaparva, mahabharata-virataparva, mahabharata-aranyakaparva, buddhacharita, bhagavadgity, bhagavadgita-smirnov, bhagavadgita-sementsov, bhagavadgita-radha, mahabharata-ashvamedhikaparva, mahabharata-ashramavasikaparva, mahabharata-striparva, mahabharata-sauptikaparva
+- Бхишме  · n=47  · mahabharata-bhishmaparva, mahabharata-udyogaparva, mahabharata-adiparva, mahabharata-sabhaparva, mahabharata-karnaparva, mahabharata-virataparva, mahabharata-aranyakaparva, mahabharata-dronaparva, bhagavadgita-burba, mahabharata-shalyaparva, mahabharata-ashramavasikaparva
+- Бхишмой  · n=45  · mahabharata-bhishmaparva, mahabharata-udyogaparva, mahabharata-adiparva, mahabharata-virataparva, mahabharata-ashvamedhikaparva, mahabharata-aranyakaparva, mahabharata-sabhaparva, bhagavadgita-sementsov, bhagavadgita-sharma, bhagavadgita-radha, mahabharata-ashramavasikaparva
+- Бхишмою  · n=5  · mahabharata-bhishmaparva, mahabharata-udyogaparva
+- Бешма  · n=4  · bhagavadgita-1788
+- Бишма  · n=3  · bhagavadgita-1909
+- на Бхишму  · n=2  · mahabharata-bhishmaparva
+- Бешмою  · n=2  · bhagavadgity, bhagavadgita-1788
+- о Бхишма  · n=1  · mahabharata-udyogaparva
+- Бешмѣ  · n=1  · bhagavadgita-1788
+- Бешму  · n=1  · bhagavadgita-1788
+- полководцу  · n=1  · bhagavadgita-1909
+- Бишму  · n=1  · bhagavadgita-1909
+- деда Бхишмы  · n=1  · bhagavadgita-prabhupada
+- Бхишмадева  · n=1  · bhagavadgita-prabhupada
+
+### `BIzma-droRa-pramuKataH` — bhīṣma-droṇa-pramukhataḥ  (n=2)
+
+- представились  · n=1  · bhagavadgita-1909
+- Сомадати  · n=1  · bhagavadgita-1909
+
+### `BIzma-droRa-pramuKatas` — bhīṣma-droṇa-pramukhatas  (n=1)
+
+- напротив Бхишмы и Дроны  · n=1  · bhagavadgita-burba
+
+### `BIzmaBImasamAgama` — bhīṣmabhīmasamāgama  (n=1)
+
+- схватке Бхишмы с Бхимой  · n=1  · mahabharata-bhishmaparva
+
+### `BIzmaH` — bhīṣmaḥ  (n=63)
+
+- Бхишма  · n=62  · mahabharata-bhishmaparva, mahabharata-udyogaparva, mahabharata-adiparva, mahabharata-virataparva, mahabharata-dronaparva, mahabharata-aranyakaparva, mahabharata-karnaparva, mahabharata-sabhaparva, ramanuja_gitabhashya, mahabharata-shalyaparva, bhagavadgita-burba, bhagavadgita-1914
+- Бхишме  · n=1  · mahabharata-shalyaparva
+
+### `BIzmaM` — bhīṣmaṃ  (n=20)
+
+- Бхишму  · n=12  · mahabharata-bhishmaparva, mahabharata-udyogaparva, mahabharata-dronaparva
+- Бхишме  · n=3  · mahabharata-bhishmaparva, mahabharata-udyogaparva
+- к Бхишме  · n=2  · mahabharata-bhishmaparva
+- Бхишмы  · n=2  · mahabharata-bhishmaparva, mahabharata-udyogaparva
+- на Бхишму  · n=1  · mahabharata-bhishmaparva
+
+### `BIzmaS` — bhīṣmaś  (n=2)
+
+- Бхишма  · n=2  · mahabharata-udyogaparva, mahabharata-sabhaparva
+
+### `BIzmaSarAn` — bhīṣmaśarān  (n=1)
+
+- стрелам Бхишмы  · n=1  · mahabharata-bhishmaparva
+
+### `BIzmaSca` — bhīṣmaśca  (n=2)
+
+- Бхишма  · n=1  · mahabharata-adiparva
+- и Бхишма  · n=1  · bhagavadgita-erman
+
+### `BIzmaSoBita` — bhīṣmaśobhita  (n=1)
+
+- Бхишмы озаренное  · n=1  · mahabharata-bhishmaparva
+
+### `BIzmabARaprapIqita` — bhīṣmabāṇaprapīḍita  (n=1)
+
+- уязвлены стрелами Бхишмы  · n=1  · mahabharata-bhishmaparva
+
+### `BIzmabAhubalerita` — bhīṣmabāhubalerita  (n=1)
+
+- рукою Бхишмы пущенный  · n=1  · mahabharata-bhishmaparva
+
+### `BIzmabAhuvyapASrayaH` — bhīṣmabāhuvyapāśrayaḥ  (n=1)
+
+- на длань Бхишмы полагаясь  · n=1  · mahabharata-bhishmaparva
+
+### `BIzmacApacyuta` — bhīṣmacāpacyuta  (n=1)
+
+- слетавшие с лука Бхишмы  · n=1  · mahabharata-bhishmaparva
+
+### `BIzmacApavimukta` — bhīṣmacāpavimukta  (n=1)
+
+- с лука Бхишмы пущенные  · n=1  · mahabharata-bhishmaparva
+
+### `BIzmadroRArRava` — bhīṣmadroṇārṇava  (n=1)
+
+- океан сражений Бхишмы и Дроны  · n=1  · mahabharata-dronaparva
+
+### `BIzmadroRArRavam` — bhīṣmadroṇārṇavam  (n=1)
+
+- океан Бхишмы и Дроны  · n=1  · mahabharata-shalyaparva
+
+### `BIzmadroRa` — bhīṣmadroṇa  (n=2)
+
+- Бхишма и Дрона  · n=1  · mahabharata-dronaparva
+- Бхишмы и Дроны  · n=1  · mahabharata-karnaparva
+
+### `BIzmadroRakfpAdIn` — bhīṣmadroṇakṛpādīn  (n=1)
+
+- Бхишму, Дрону, Крипу и других  · n=1  · mahabharata-aranyakaparva
+
+### `BIzmadroRakfpAdInAM` — bhīṣmadroṇakṛpādīnāṃ  (n=1)
+
+- у Бхишмы, Дроны, Крипы и других  · n=1  · mahabharata-sabhaparva
+
+### `BIzmadroRakfpAdiBiH` — bhīṣmadroṇakṛpādibhiḥ  (n=1)
+
+- Бхишма, Дрона, Крипа и другие  · n=1  · mahabharata-udyogaparva
+
+### `BIzmadroRamuKAH` — bhīṣmadroṇamukhāḥ  (n=1)
+
+- с Бхишмой и Дроной во главе  · n=1  · mahabharata-virataparva
+
+### `BIzmadroRamuKa` — bhīṣmadroṇamukha  (n=3)
+
+- во главе с Бхишмой и Дроной  · n=2  · mahabharata-karnaparva, mahabharata-virataparva
+- возглавляемые Бхишмой и Дроной  · n=1  · mahabharata-bhishmaparva
+
+### `BIzmadroRamuKaiH` — bhīṣmadroṇamukhaiḥ  (n=1)
+
+- с помощью могучих воинов на колесницах во главе с Бхишмой и Дроной  · n=1  · mahabharata-dronaparva
+
+### `BIzmadroRapramuKataH` — bhīṣmadroṇapramukhataḥ  (n=3)
+
+- перед лицом Бхишмы и Дроны  · n=1  · gitarthasamgraha-abhinavagupta
+- во главе с мощным Бхишмой и Дроной  · n=1  · ramanuja_gitabhashya
+- Перед Бхишмой, Дроной  · n=1  · bhagavadgita-erman
+
+### `BIzmadroRapuraHsara` — bhīṣmadroṇapuraḥsara  (n=2)
+
+- под предводительством Бхишмы и Дроны  · n=1  · mahabharata-bhishmaparva
+- бывшие под предводительством Бхишмы и Дроны  · n=1  · mahabharata-shalyaparva
+
+### `BIzmadroRapurogama` — bhīṣmadroṇapurogama  (n=1)
+
+- во главе с Бхишмой и Дроной  · n=1  · mahabharata-bhishmaparva
+
+### `BIzmadroRasama` — bhīṣmadroṇasama  (n=1)
+
+- равные в битве Бхишме и Дроне  · n=1  · mahabharata-udyogaparva
+
+### `BIzmadroRau` — bhīṣmadroṇau  (n=12)
+
+- Бхишму и Дрону  · n=3  · mahabharata-dronaparva, mahabharata-shantiparva
+- на Бхишму и Дрону  · n=2  · mahabharata-shantiparva
+- Бхишме и Дроне  · n=2  · mahabharata-bhishmaparva, mahabharata-sabhaparva
+- Бхишма и Дрона  · n=2  · mahabharata-udyogaparva, mahabharata-shalyaparva
+- Бхишмы, Дроны  · n=1  · mahabharata-aranyakaparva
+- Бхишма с Дроной  · n=1  · mahabharata-bhishmaparva
+- Бхишма, и Дрона  · n=1  · mahabharata-sabhaparva
+
+### `BIzmadroRavaDa` — bhīṣmadroṇavadha  (n=1)
+
+- гибель Бхишмы и Дроны  · n=1  · mahabharata-dronaparva
+
+### `BIzmahantf` — bhīṣmahantṛ  (n=1)
+
+- погубитель Бхишмы  · n=1  · mahabharata-karnaparva
+
+### `BIzmahetoH` — bhīṣmahetoḥ  (n=1)
+
+- из-за Бхишмы  · n=1  · mahabharata-bhishmaparva
+
+### `BIzmahetu` — bhīṣmahetu  (n=1)
+
+- из-за Бхишмы  · n=1  · mahabharata-bhishmaparva
+
+### `BIzmajaya` — bhīṣmajaya  (n=1)
+
+- победа Бхишмы  · n=1  · mahabharata-bhishmaparva
+
+### `BIzmakAtmajA` — bhīṣmakātmajā  (n=1)
+
+- дочерью Бхишмаки  · n=1  · mahabharata-aranyakaparva
+
+### `BIzmakAya` — bhīṣmakāya  (n=1)
+
+- Бхишмаке  · n=1  · mahabharata-sabhaparva
+
+### `BIzmaka` — bhīṣmaka  (n=5)
+
+- Бхишмака  · n=4  · mahabharata-shantiparva, mahabharata-udyogaparva, mahabharata-sabhaparva
+- Бхишмаки  · n=1  · mahabharata-udyogaparva
+
+### `BIzmakarRABimanyuBiH` — bhīṣmakarṇābhimanyubhiḥ  (n=1)
+
+- Бхишмой, Карной и Абхиманью  · n=1  · mahabharata-striparva
+
+### `BIzmakarRapurogARAm` — bhīṣmakarṇapurogāṇām  (n=1)
+
+- начиная с Бхишмы и Карны  · n=1  · mahabharata-ashvamedhikaparva
+
+### `BIzmakasuta` — bhīṣmakasuta  (n=1)
+
+- сын Бхишмаки  · n=1  · mahabharata-udyogaparva
+
+### `BIzmakft` — bhīṣmakṛt  (n=1)
+
+- наводивший ужас  · n=1  · mahabharata-striparva
+
+### `BIzmam` — bhīṣmam  (n=54)
+
+- Бхишму  · n=31  · mahabharata-bhishmaparva, mahabharata-adiparva, mahabharata-udyogaparva, mahabharata-dronaparva, bhagavadgita-burba, bhagavadgity, ramanuja_gitabhashya, bhagavadgita-1914, bhagavadgita-erman, bhagavadgita-smirnov, bhagavadgita-1909, bhagavadgita-sharma, bhagavadgita-prabhupada, mahabharata-shalyaparva, mahabharata-sabhaparva, mahabharata-virataparva
+- Бхишме  · n=10  · mahabharata-bhishmaparva, mahabharata-udyogaparva, mahabharata-sabhaparva
+- на Бхишму  · n=4  · mahabharata-bhishmaparva
+- к Бхишме  · n=3  · mahabharata-bhishmaparva
+- Бхишма  · n=2  · mahabharata-bhishmaparva, bhagavadgita-prabhupada
+- Бхишмой  · n=1  · mahabharata-adiparva
+- против Бхишмы  · n=1  · mahabharata-bhishmaparva
+- Бешму  · n=1  · bhagavadgity
+- Бешмою  · n=1  · bhagavadgita-1788
+
+### `BIzmamIyurnarADipAH` — bhīṣmamīyurnarādhipāḥ  (n=1)
+
+- властители мужей направились к Бхишме  · n=1  · mahabharata-bhishmaparva
+
+### `BIzmamantikAt` — bhīṣmamantikāt  (n=1)
+
+- к Бхишме  · n=1  · mahabharata-bhishmaparva
+
+### `BIzmamftyum` — bhīṣmamṛtyum  (n=2)
+
+- Погубителю Бхишмы  · n=1  · mahabharata-karnaparva
+- Погубитель Бхишмы  · n=1  · mahabharata-karnaparva
+
+### `BIzmamuKa` — bhīṣmamukha  (n=2)
+
+- по стопам Бхишмы  · n=1  · mahabharata-karnaparva
+- во главе с Бхишмой  · n=1  · mahabharata-shalyaparva
+
+### `BIzmamuKyAH` — bhīṣmamukhyāḥ  (n=1)
+
+- во главе с Бхишмой  · n=1  · mahabharata-udyogaparva
+
+### `BIzmamuktAni` — bhīṣmamuktāni  (n=1)
+
+- пущенного Бхишмой  · n=1  · mahabharata-bhishmaparva
+
+### `BIzmanetrAH` — bhīṣmanetrāḥ  (n=1)
+
+- ведомые Бхишмой  · n=1  · mahabharata-bhishmaparva
+
+### `BIzmanihantf` — bhīṣmanihantṛ  (n=2)
+
+- Погубитель Бхишмы  · n=2  · mahabharata-sauptikaparva
+
+### `BIzmapARqavayoH` — bhīṣmapāṇḍavayoḥ  (n=1)
+
+- между Бхишмой и пандавой  · n=1  · mahabharata-virataparva
+
+### `BIzmapaTA` — bhīṣmapathā  (n=1)
+
+- путем Бхишмы  · n=1  · mahabharata-dronaparva
+
+### `BIzmaparAjayaH` — bhīṣmaparājayaḥ  (n=1)
+
+- поражение Бхишмы  · n=1  · mahabharata-udyogaparva
+
+### `BIzmaparigrahaH` — bhīṣmaparigrahaḥ  (n=1)
+
+- добыча Бхишмы  · n=1  · mahabharata-udyogaparva
+
+### `BIzmaparva` — bhīṣmaparva  (n=1)
+
+- Книга о Бхишме  · n=1  · mahabharata-adiparva
+
+### `BIzmaparvaRi` — bhīṣmaparvaṇi  (n=1)
+
+- в книге о Бхишме  · n=1  · mahabharata-adiparva
+
+### `BIzmapramuKAH` — bhīṣmapramukhāḥ  (n=1)
+
+- во главе с Бхишмой  · n=1  · mahabharata-karnaparva
+
+### `BIzmapramuKa` — bhīṣmapramukha  (n=1)
+
+- под началом Бхишмы  · n=1  · mahabharata-karnaparva
+
+### `BIzmaprasUtaM` — bhīṣmaprasūtaṃ  (n=1)
+
+- исходит от Бхишмы  · n=1  · mahabharata-udyogaparva
+
+### `BIzmapratApa` — bhīṣmapratāpa  (n=1)
+
+- доблести Бхишмы  · n=1  · mahabharata-udyogaparva
+
+### `BIzmaraTa` — bhīṣmaratha  (n=5)
+
+- колесницы Бхишмы  · n=2  · mahabharata-bhishmaparva, mahabharata-udyogaparva
+- колеснице Бхишмы  · n=2  · mahabharata-bhishmaparva
+- колесница Бхишмы  · n=1  · mahabharata-bhishmaparva
+
+### `BIzmarakziRaH` — bhīṣmarakṣiṇaḥ  (n=1)
+
+- для защиты Бхишмы  · n=1  · mahabharata-bhishmaparva
+
+### `BIzmarakzin` — bhīṣmarakṣin  (n=2)
+
+- для охраны Бхишмы  · n=1  · mahabharata-bhishmaparva
+- ограждавших Бхишму  · n=1  · mahabharata-bhishmaparva
+
+### `BIzmas` — bhīṣmas  (n=3)
+
+- Бхишма  · n=3  · mahabharata-udyogaparva
+
+### `BIzmasAyaka` — bhīṣmasāyaka  (n=1)
+
+- стрелами Бхишмы  · n=1  · mahabharata-bhishmaparva
+
+### `BIzmasAyakaiH` — bhīṣmasāyakaiḥ  (n=1)
+
+- стрелами Бхишмы  · n=1  · mahabharata-bhishmaparva
+
+### `BIzmasya` — bhīṣmasya  (n=42)
+
+- Бхишмы  · n=28  · mahabharata-bhishmaparva, mahabharata-adiparva, mahabharata-dronaparva, mahabharata-ashvamedhikaparva, mahabharata-striparva, mahabharata-udyogaparva, mahabharata-karnaparva, mahabharata-sabhaparva, mahabharata-virataparva
+- Бхишма  · n=3  · mahabharata-aranyakaparva, mahabharata-bhishmaparva, mahabharata-striparva
+- Бхишму  · n=3  · mahabharata-bhishmaparva, mahabharata-udyogaparva
+- Бхишме  · n=2  · mahabharata-aranyakaparva, mahabharata-bhishmaparva
+- (пропущено)  · n=1  · mahabharata-adiparva
+- Бхишмою  · n=1  · mahabharata-adiparva
+- Бхимы  · n=1  · mahabharata-adiparva
+- к Бхишме  · n=1  · mahabharata-bhishmaparva
+- грозного  · n=1  · mahabharata-bhishmaparva
+- от Бхишмы  · n=1  · mahabharata-sabhaparva
+
+### `BIzmavAkya` — bhīṣmavākya  (n=1)
+
+- слова Бхишмы  · n=1  · mahabharata-virataparva
+
+### `BIzmavIryopagUQena` — bhīṣmavīryopagūḍhena  (n=1)
+
+- опиравшийся на мощь Бхишмы  · n=1  · mahabharata-ashramavasikaparva
+
+### `BIzmavaDAkANkzin` — bhīṣmavadhākāṅkṣin  (n=1)
+
+- жаждущий убиения Бхишмы  · n=1  · mahabharata-bhishmaparva
+
+### `BIzmavaDAya` — bhīṣmavadhāya  (n=1)
+
+- ради сокрушения Бхишмы  · n=1  · mahabharata-udyogaparva
+
+### `BIzmavaDa` — bhīṣmavadha  (n=5)
+
+- Убийство Бхишмы  · n=1  · mahabharata-adiparva
+- убийство Бхишмы  · n=1  · mahabharata-adiparva
+- Бхишма  · n=1  · mahabharata-adiparva
+- убиению Бхишмы  · n=1  · mahabharata-bhishmaparva
+- пали Бхишма  · n=1  · mahabharata-karnaparva
+
+### `BIzmavinASAya` — bhīṣmavināśāya  (n=2)
+
+- ради убиения Бхишмы  · n=1  · mahabharata-udyogaparva
+- ради сокрушения Бхишмы  · n=1  · mahabharata-udyogaparva
+
+### `BIzmavinASa` — bhīṣmavināśa  (n=1)
+
+- погубить Бхишму  · n=1  · mahabharata-bhishmaparva
+
+### `BIzmavinirmukta` — bhīṣmavinirmukta  (n=1)
+
+- пущенные Бхишмой  · n=1  · mahabharata-bhishmaparva
+
+### `BIzmavyasana` — bhīṣmavyasana  (n=2)
+
+- бедствии, причиненном (смертью) Бхишмы  · n=1  · mahabharata-dronaparva
+- гибели Бхишмы  · n=1  · mahabharata-karnaparva
+
+### `BIzme` — bhīṣme  (n=18)
+
+- Бхишма  · n=11  · mahabharata-bhishmaparva, mahabharata-dronaparva, mahabharata-udyogaparva, mahabharata-shalyaparva, mahabharata-adiparva, mahabharata-ashramavasikaparva
+- Бхишмы  · n=2  · mahabharata-aranyakaparva, mahabharata-shalyaparva
+- Бхишме  · n=2  · mahabharata-udyogaparva
+- Бхишму  · n=1  · mahabharata-bhishmaparva
+- о Бхишма  · n=1  · mahabharata-dronaparva
+- у Бхишмы  · n=1  · mahabharata-dronaparva
+
+### `BIzmeRAmitatejasA` — bhīṣmeṇāmitatejasā  (n=1)
+
+- Бхишмой, неизмеримым по своей мощи  · n=1  · mahabharata-udyogaparva
+
+### `BIzmeRa` — bhīṣmeṇa  (n=39)
+
+- Бхишмой  · n=20  · mahabharata-udyogaparva, mahabharata-bhishmaparva, mahabharata-dronaparva, mahabharata-sabhaparva, mahabharata-virataparva, mahabharata-adiparva, mahabharata-karnaparva, mahabharata-shalyaparva
+- Бхишма  · n=10  · mahabharata-bhishmaparva, mahabharata-ashramavasikaparva, buddhacharita, mahabharata-udyogaparva
+- с Бхишмой  · n=5  · mahabharata-udyogaparva, mahabharata-adiparva, mahabharata-bhishmaparva, mahabharata-ashvamedhikaparva
+- Бхишмы  · n=2  · mahabharata-bhishmaparva, mahabharata-udyogaparva
+- из-за Бхишмы  · n=1  · mahabharata-bhishmaparva
+- с Бхишмою  · n=1  · mahabharata-bhishmaparva
+
+### `BIzmeSAntanavehate` — bhīṣme śāntanave hate  (n=1)
+
+- когда сражен был Бхишма, сын Шантану  · n=1  · mahabharata-bhishmaparva
+
+### `BIzmo` — bhīṣmo  (n=6)
+
+- Бхишма  · n=6  · mahabharata-udyogaparva, mahabharata-bhishmaparva
+
+### `BIzmo'grataH` — bhīṣmo'grataḥ  (n=1)
+
+- впереди  · n=1  · mahabharata-bhishmaparva
+
+### `BU` — bhū  (n=289)
+
+- будет  · n=31  · rigveda, atharvaveda, mahabharata-aranyakaparva, ramayana-ayodhyakanda, rigveda, yotat-up, mahabharata-udyogaparva, rigveda, rigveda, rigveda, rigveda, atharvaveda, kau-up
+- будь  · n=28  · rigveda, rigveda, ramayana-sundarakanda, rigveda, bhagavadgita-burba, bhagavadgita-radha, rigveda, rigveda, gitarthasamgraha-abhinavagupta, bhagavadgita-erman, bhagavadgita-1788, mahabharata-karnaparva, atharvaveda, mahabharata-sabhaparva, br-up, atharvaveda, shatakatrayam, shatakatrayam-serebryakov, atharvaveda
+- земля  · n=27  · mahabharata-aranyakaparva, ramayana-ayodhyakanda, manavadharmashastra, rigveda, shatakatrayam, mahabharata-karnaparva, raghuvamsha, mahabharata-shantiparva, ramayana-sundarakanda, ramayana-balakanda, gitarthasamgraha-abhinavagupta, mahabharata-ashvamedhikaparva, shatakatrayam-serebryakov, mai-up
+- быть  · n=16  · atharvaveda, ramayana-ayodhyakanda, nyaya-bhashya, manavadharmashastra, ramayana-aranyakanda, rigveda, rigveda, bhagavadgita-smirnov, bhagavadgita-sharma, kumarasambhava
+- был  · n=15  · mahabharata-aranyakaparva, atharvaveda, mahabharata-adiparva, ramayana-ayodhyakanda, rigveda, mahabharata-dronaparva, rigveda, rigveda, bhagavadgita-burba, nyaya-bhashya, br-up, rigveda, shukasaptati
+- стал  · n=12  · rigveda, mahabharata-aranyakaparva, mahabharata-udyogaparva, rigveda, mahabharata-adiparva, rigveda, rigveda, atharvaveda
+- становится  · n=9  · atharvaveda, mahabharata-adiparva, rigveda, rigveda
+- земле  · n=6  · ramayana-ayodhyakanda, ramayana-aranyakanda, mahabharata-karnaparva, mahabharata-virataparva, sankhya-karika, mahabharata-striparva
+- бывает  · n=5  · rigveda, rigveda, rigveda, ch-up, kat-up
+- будьте  · n=4  · rigveda, atharvaveda, rigveda
+- будут  · n=3  · atharvaveda, mahabharata-aranyakaparva, rigveda
+- став  · n=3  · ramayana-sundarakanda, mahabharata-adiparva, atharvaveda
+- земли  · n=3  · manavadharmashastra, mahabharata-shalyaparva, raghuvamsha
+- стали  · n=3  · rigveda, rigveda, shukasaptati
+- Будь  · n=3  · rigveda, mahabharata-adiparva, rigveda
+- станет  · n=3  · rigveda, atharvaveda, atharvaveda
+- возникнув  · n=3  · devi-gita, bhagavadgita-burba
+- была  · n=2  · ramayana-ayodhyakanda, atharvaveda
+- пол  · n=2  · ramayana-sundarakanda
+- землю  · n=2  · ramayana-aranyakanda, buddhacharita
+- было  · n=2  · ramayana-balakanda, br-up
+- случилось  · n=2  · ramayana-balakanda, mahabharata-karnaparva
+- стать  · n=2  · mahabharata-aranyakaparva
+- превратись  · n=2  · rigveda
+- будем  · n=2  · rigveda
+- Земля  · n=2  · mahabharata-dronaparva, mahabharata-shalyaparva
+- Стала  · n=2  · buddhacharita, atharvaveda
+- бываете  · n=2  · rigveda
+- бхус  · n=2  · ch-up, br-up
+- тот  · n=2  · ch-up
+- Станет  · n=2  · atharvaveda
+- происходит  · n=1  · mahabharata-adiparva
+- превратившись  · n=1  · mahabharata-adiparva
+- сделавшись  · n=1  · mahabharata-adiparva
+- произошло  · n=1  · mahabharata-adiparva
+- не исполнилось  · n=1  · mahabharata-adiparva
+- проливать  · n=1  · ramayana-ayodhyakanda
+- нужно  · n=1  · ramayana-ayodhyakanda
+- прильнув  · n=1  · ramayana-ayodhyakanda
+- Землю  · n=1  · mahabharata-aranyakaparva
+- может явить  · n=1  · mahabharata-aranyakaparva
+- родится  · n=1  · mahabharata-aranyakaparva
+- Будет  · n=1  · mahabharata-aranyakaparva
+- останешься  · n=1  · mahabharata-aranyakaparva
+- Стань  · n=1  · rigveda
+- стань  · n=1  · rigveda
+- возвращаясь  · n=1  · rigveda
+- Он  · n=1  · rigveda
+- устремись  · n=1  · rigveda
+- хотим быть  · n=1  · rigveda
+- Будьте  · n=1  · rigveda
+- Станете  · n=1  · rigveda
+- Превзошел  · n=1  · rigveda
+- бывают  · n=1  · kama-sutra
+- мира  · n=1  · mahabharata-adiparva
+- будучи  · n=1  · mahabharata-adiparva
+- обратился  · n=1  · mahabharata-adiparva
+- находясь  · n=1  · mahabharata-adiparva
+- Обратившись  · n=1  · mahabharata-adiparva
+- обернувшись  · n=1  · mahabharata-adiparva
+- были одержимы  · n=1  · mahabharata-dronaparva
+- произошла  · n=1  · mahabharata-dronaparva
+- пришло  · n=1  · mahabharata-dronaparva
+- возникающие  · n=1  · rigveda
+- наслаждается  · n=1  · rigveda
+- были  · n=1  · buddhacharita
+- буду  · n=1  · mahabharata-udyogaparva
+- ты превзошел  · n=1  · rigveda
+- попадем  · n=1  · rigveda
+- Явилась  · n=1  · rigveda
+- развернешься  · n=1  · rigveda
+- Выделились  · n=1  · rigveda
+- да будут  · n=1  · rigveda
+- возникнет  · n=1  · bhagavadgita-burba
+- возник  · n=1  · bhagavadgita-burba
+- появляются  · n=1  · bhagavadgita-burba
+- получив бытие  · n=1  · bhagavadgita-1914
+- умолк  · n=1  · bhagavadgity
+- возникли  · n=1  · bhagavadgity
+- существа  · n=1  · bhagavadgity
+- действовать  · n=1  · bhagavadgita-sharma
+- Бхус  · n=1  · ch-up
+- стал бы  · n=1  · ch-up
+- приобретает  · n=1  · rigveda
+- пусть будет  · n=1  · rigveda
+- считается  · n=1  · rigveda
+- принадлежали  · n=1  · rigveda
+- проявляется  · n=1  · bhagavadgita-radha
+- осуществляется  · n=1  · nyaya-bhashya
+- овладело  · n=1  · mahabharata-ashvamedhikaparva
+- будет рождена  · n=1  · devi-gita
+- есть  · n=1  · atharvaveda
+- становлюсь  · n=1  · atharvaveda
+- землею  · n=1  · raghuvamsha
+- Земли  · n=1  · raghuvamsha
+- объединяются  · n=1  · hatha-yoga-pradipika
+- слияния  · n=1  · hatha-yoga-pradipika
+- пусть будут  · n=1  · atharvaveda
+- советник дурной  · n=1  · shatakatrayam
+- Соединитесь  · n=1  · atharvaveda
+- будешь  · n=1  · atharvaveda
+- мире  · n=1  · shatakatrayam-serebryakov
+- не заигрывай  · n=1  · shatakatrayam-serebryakov
+- влекущемся  · n=1  · gitagovinda
+- стала  · n=1  · atharvaveda
+- приходится быть  · n=1  · atharvaveda
+- прорвался  · n=1  · shukasaptati
+- пошел  · n=1  · shukasaptati
+- жил  · n=1  · shukasaptati
+- наступило  · n=1  · atharvaveda
+- землей  · n=1  · mahabharata-striparva
+- умолкла  · n=1  · mahabharata-striparva
+- изменится  · n=1  · paramarthasara-abhinavagupta
+- желает быть  · n=1  · kau-up
+- станешь  · n=1  · mahabharata-svargarohanikaparva
+- бытие  · n=1  · pratyabhijna-hridaya_kshemaraja
+- уровень  · n=1  · pratyabhijna-hridaya_kshemaraja
+- Став  · n=1  · sub-up
+
+### `BUBAra` — bhūbhāra  (n=1)
+
+- поддержания мира  · n=1  · vedartha-samgraha_ramanuja
+
+### `BUBft` — bhūbhṛt  (n=1)
+
+- царей  · n=1  · raghuvamsha
+
+### `BUBuj` — bhūbhuj  (n=2)
+
+- владык  · n=1  · shatakatrayam
+- царь  · n=1  · shatakatrayam-serebryakov
+
+### `BUDarARAm` — bhūdharāṇām  (n=3)
+
+- гор  · n=2  · kumarasambhava, shatakatrayam-serebryakov
+- горным пещерам  · n=1  · shatakatrayam
+
+### `BUDara` — bhūdhara  (n=10)
+
+- о держатель земли  · n=4  · devi-gita
+- Бхудхара  · n=3  · shukasaptati
+- [человек]  · n=1  · devi-gita
+- держатель земли  · n=1  · devi-gita
+- Гора  · n=1  · pratyabhijna-hridaya_kshemaraja
+
+### `BUDaram` — bhūdharam  (n=1)
+
+- на гору  · n=1  · mahabharata-virataparva
+
+### `BUDararAjapatnI` — bhūdhararājapatnī  (n=1)
+
+- царица гор  · n=1  · kumarasambhava
+
+### `BUDaratA` — bhūdharatā  (n=1)
+
+- Миродержателю  · n=1  · kumarasambhava
+
+### `BUH` — bhūḥ  (n=37)
+
+- земля  · n=8  · mahabharata-bhishmaparva, mahabharata-aranyakaparva, rigveda, mahabharata-adiparva, mahabharata-dronaparva, mahabharata-shalyaparva, mahabharata-sauptikaparva
+- будь  · n=6  · megha-duta, rigveda, rigveda, bhagavadgita-sementsov, br-up
+- бхус  · n=5  · ch-up, br-up, tai-up
+- Бхус  · n=4  · ch-up, br-up
+- Земле  · n=4  · br-up
+- Земля  · n=2  · buddhacharita, shatakatrayam-serebryakov
+- должен  · n=1  · ramayana-ayodhyakanda
+- стал  · n=1  · rigveda
+- ты был  · n=1  · rigveda
+- был  · n=1  · rigveda
+- земли  · n=1  · mahabharata-karnaparva
+- Будь  · n=1  · rigveda
+- будет  · n=1  · mahabharata-ashvamedhikaparva
+- превосходишь  · n=1  · atharvaveda
+
+### `BUSayyA` — bhūśayyā  (n=1)
+
+- ложе на земле  · n=1  · shatakatrayam
+
+### `BUSayyAM` — bhūśayyāṃ  (n=1)
+
+- ложе на земле  · n=1  · shatakatrayam-serebryakov
+
+### `BUScacAla` — bhūścacāla  (n=1)
+
+- земля содрогнулась  · n=1  · mahabharata-bhishmaparva
+
+### `BUc` — bhūc  (n=2)
+
+- будет  · n=1  · rigveda
+- было  · n=1  · rigveda
+
+### `BUcarARAm` — bhūcarāṇām  (n=1)
+
+- бродящие по земле  · n=1  · yotat-up
+
+### `BUcarIcakra` — bhūcarīcakra  (n=1)
+
+- колесо бхучари  · n=1  · pratyabhijna-hridaya_kshemaraja
+
+### `BUcara` — bhūcara  (n=1)
+
+- бродящий по земле  · n=1  · yotat-up
+
+### `BUd` — bhūd  (n=9)
+
+- пусть будет  · n=2  · rigveda, rigveda
+- стал  · n=2  · rigveda
+- поднялось  · n=1  · rigveda
+- будет  · n=1  · rigveda
+- могло  · n=1  · rigveda
+- была  · n=1  · rigveda
+- да не будет  · n=1  · atharvaveda
+
+### `BUdozavarjite` — bhūdoṣavarjite  (n=2)
+
+- свободна от земных грехов  · n=1  · mahabharata-adiparva
+- лишенном недостатков земли  · n=1  · mahabharata-adiparva
+
+### `BUgata` — bhūgata  (n=1)
+
+- пребывавшее в земле  · n=1  · mahabharata-aranyakaparva
+
+### `BUgola` — bhūgola  (n=1)
+
+- шар земли  · n=1  · gitagovinda
+
+### `BUliNgaSakuni` — bhūliṅgaśakuni  (n=2)
+
+- птице бхулинга  · n=1  · mahabharata-sabhaparva
+- Птица бхулинга  · n=1  · mahabharata-sabhaparva
+
+### `BUliNgaSakuniH` — bhūliṅgaśakuniḥ  (n=1)
+
+- птица бхулинга  · n=1  · mahabharata-sabhaparva
+
+### `BUloka` — bhūloka  (n=1)
+
+- земного  · n=1  · jabala-up
+
+### `BUmA` — bhūmā  (n=15)
+
+- на земле  · n=5  · rigveda, bhagavadgita-smirnov, gitarthasamgraha-abhinavagupta
+- земли  · n=3  · rigveda, bhagavadgita-1909
+- земля  · n=2  · rigveda, rigveda
+- к земле  · n=2  · rigveda
+- Землю  · n=2  · rigveda
+- землю  · n=1  · rigveda
+
+### `BUmAna` — bhūmāna  (n=2)
+
+- многочисленные  · n=2  · ch-up
+
+### `BUmAnam` — bhūmānam  (n=2)
+
+- массу  · n=2  · rigveda, atharvaveda
+
+### `BUmAu` — bhūmāu  (n=2)
+
+- на земле  · n=1  · ramayana-ayodhyakanda
+- на землю  · n=1  · ramayana-ayodhyakanda
+
+### `BUmAvanATavat` — bhūmāvanāthavat  (n=1)
+
+- на земле, словно нет у нее защитника  · n=1  · mahabharata-aranyakaparva
+
+### `BUmAvasapatnam` — bhūmāvasapatnam  (n=3)
+
+- Противно  · n=2  · bhagavadgita-1788
+- царство всея земли безъ совмѣстника  · n=1  · bhagavadgita-1788
+
+### `BUmAveva` — bhūmāveva  (n=1)
+
+- земным поклоном  · n=1  · mahabharata-ashvamedhikaparva
+
+### `BUmIH` — bhūmīḥ  (n=2)
+
+- земли  · n=2  · rigveda
+
+### `BUmIgfha` — bhūmīgṛha  (n=1)
+
+- Подвалы  · n=1  · ramayana-sundarakanda
+
+### `BUma` — bhūma  (n=32)
+
+- землю  · n=10  · rigveda, rigveda, rigveda, rigveda, rigveda
+- земля  · n=4  · atharvaveda, rigveda
+- Землю  · n=3  · rigveda, rigveda
+- окажемся  · n=3  · atharvaveda, rigveda
+- земле  · n=2  · rigveda, bhagavadgita-sementsov
+- почву  · n=2  · rigveda, rigveda
+- земель  · n=2  · rigveda
+- мы  · n=1  · rigveda
+- будем  · n=1  · rigveda
+- мир  · n=1  · rigveda
+- вызовем  · n=1  · rigveda
+- царство  · n=1  · bhagavadgita-sharma
+- землей  · n=1  · rigveda
+
+### `BUman` — bhūman  (n=25)
+
+- бесконечное  · n=5  · ch-up
+- земли  · n=3  · rigveda, rigveda, atharvaveda
+- землю  · n=3  · rigveda, rigveda, rigveda
+- мир  · n=2  · rigveda
+- множество  · n=2  · atharvaveda
+- земле  · n=1  · mahabharata-aranyakaparva
+- существа  · n=1  · rigveda
+- долгих  · n=1  · rigveda
+- землею  · n=1  · rigveda
+- многообразием  · n=1  · rigveda
+- мироздания  · n=1  · rigveda
+- чтоб их было много  · n=1  · atharvaveda
+- мирами  · n=1  · rigveda
+- масса  · n=1  · atharvaveda
+- земля  · n=1  · atharvaveda
+
+### `BUmanA` — bhūmanā  (n=1)
+
+- земле  · n=1  · rigveda
+
+### `BUmau` — bhūmau  (n=128)
+
+- на землю  · n=46  · ramayana-aranyakanda, mahabharata-dronaparva, mahabharata-shalyaparva, ramayana-ayodhyakanda, mahabharata-aranyakaparva, mahabharata-udyogaparva, mahabharata-virataparva, mahabharata-karnaparva, mahabharata-adiparva, mahabharata-shantiparva, ramayana-sundarakanda, shukasaptati, mahabharata-ashramavasikaparva, mahabharata-sauptikaparva
+- на земле  · n=42  · mahabharata-dronaparva, ramayana-ayodhyakanda, ramayana-aranyakanda, mahabharata-shalyaparva, mahabharata-aranyakaparva, mahabharata-striparva, mahabharata-udyogaparva, mahabharata-sauptikaparva, ramayana-sundarakanda, mahabharata-adiparva, bhagavadgita-burba, bhagavadgita-1914, mahabharata-ashvamedhikaparva, hatha-yoga-pradipika, shatakatrayam, atharvaveda, shatakatrayam-serebryakov, atharvaveda
+- наземь  · n=6  · mahabharata-ashvamedhikaparva, mahabharata-shantiparva, mahabharata-bhishmaparva, mahabharata-karnaparva, raghuvamsha
+- землю  · n=6  · ramayana-ayodhyakanda, mahabharata-dronaparva, mahabharata-udyogaparva
+- по земле  · n=5  · mahabharata-aranyakaparva, mahabharata-adiparva, mahabharata-udyogaparva, mahabharata-karnaparva, mahabharata-virataparva
+- земле  · n=4  · ramayana-ayodhyakanda, mahabharata-adiparva, nyaya-bhashya
+- земли  · n=3  · ramayana-aranyakanda, ramayana-ayodhyakanda
+- на Земле  · n=3  · bhagavadgita-prabhupada, bhagavadgita-radha
+- мире  · n=1  · ramayana-ayodhyakanda
+- перед  · n=1  · ramayana-ayodhyakanda
+- пол  · n=1  · ramayana-sundarakanda
+- до земли  · n=1  · ramayana-aranyakanda
+- на поле брани  · n=1  · mahabharata-dronaparva
+- оземь  · n=1  · mahabharata-dronaparva
+- в земле  · n=1  · mahabharata-karnaparva
+- земля  · n=1  · mahabharata-shalyaparva
+- к земле  · n=1  · mahabharata-ashvamedhikaparva
+- ладонями  · n=1  · hatha-yoga-pradipika
+- ступени  · n=1  · yoga-sutry_vyasa-bhashya
+- на земное  · n=1  · mahabharata-ashramavasikaparva
+- в землю  · n=1  · mahabharata-sauptikaparva
+
+### `BUmaunipetatuH` — bhūmau nipetatuḥ  (n=1)
+
+- падали на землю  · n=1  · mahabharata-aranyakaparva
+
+### `BUmayaH` — bhūmayaḥ  (n=1)
+
+- земли  · n=1  · rigveda
+
+### `BUme` — bhūme  (n=4)
+
+- Земля  · n=2  · atharvaveda
+- Мать-Земля  · n=1  · atharvaveda
+- земля  · n=1  · atharvaveda
+
+### `BUmeH` — bhūmeḥ  (n=8)
+
+- земли  · n=3  · raghuvamsha, mahabharata-adiparva
+- землю  · n=2  · mahabharata-aranyakaparva
+- Землю  · n=1  · ramayana-aranyakanda
+- на земле  · n=1  · mahabharata-adiparva
+- Земли  · n=1  · mahabharata-shalyaparva
+
+### `BUmer` — bhūmer  (n=2)
+
+- землею  · n=1  · raghuvamsha
+- ступень  · n=1  · yoga-sutry_vyasa-bhashya
+
+### `BUmi` — bhūmi  (n=470)
+
+- земля  · n=133  · mahabharata-aranyakaparva, mahabharata-bhishmaparva, mahabharata-adiparva, mahabharata-udyogaparva, mahabharata-dronaparva, mahabharata-karnaparva, ramayana-sundarakanda, manavadharmashastra, mahabharata-sabhaparva, atharvaveda, ramayana-aranyakanda, mahabharata-shalyaparva, raghuvamsha, mahabharata-ashvamedhikaparva, atharvaveda, atharvaveda, shatakatrayam-serebryakov, atharvaveda, ramayana-ayodhyakanda, ramayana-balakanda, rigveda, atharvaveda, hatha-yoga-pradipika, atharvaveda, mahabharata-striparva, rigveda, rigveda, bhagavadgita-erman, bhagavadgita-sharma, bhagavadgita-prabhupada, bhagavadgita-radha, rigveda, rigveda, mahabharata-virataparva, atharvaveda, atharvaveda, shatakatrayam, atharvaveda, atharvaveda, atharvaveda, yoga-sutry_vyasa-bhashya, atharvaveda, vedartha-samgraha_ramanuja, atharvaveda, mahabharata-sauptikaparva, mai-up, sub-up
+- землю  · n=106  · mahabharata-aranyakaparva, mahabharata-karnaparva, mahabharata-dronaparva, ramayana-sundarakanda, mahabharata-adiparva, manavadharmashastra, mahabharata-bhishmaparva, ramayana-ayodhyakanda, ramayana-aranyakanda, rigveda, mahabharata-shalyaparva, atharvaveda, rigveda, mahabharata-virataparva, atharvaveda, atharvaveda, atharvaveda, mahabharata-ashramavasikaparva, mahabharata-striparva, ramayana-balakanda, rigveda, kama-sutra, buddhacharita, rigveda, bhagavadgita-1788, bhagavadgita-prabhupada, rigveda, kumarasambhava, mahabharata-ashvamedhikaparva, atharvaveda, shatakatrayam, shatakatrayam-serebryakov, atharvaveda, atharvaveda, atharvaveda, atharvaveda, mahabharata-mausalaparva
+- земле  · n=62  · ramayana-ayodhyakanda, mahabharata-dronaparva, mahabharata-aranyakaparva, ramayana-aranyakanda, mahabharata-karnaparva, mahabharata-adiparva, kama-sutra, mahabharata-bhishmaparva, mahabharata-udyogaparva, mahabharata-shalyaparva, devi-gita, atharvaveda, atharvaveda, atharvaveda, kat-up, ramayana-sundarakanda, manavadharmashastra, rigveda, ramanuja_gitabhashya, bhagavadgity, bhagavadgita-erman, atharvaveda, mahabharata-virataparva, shatakatrayam, atharvaveda
+- Земля  · n=47  · atharvaveda, ramayana-ayodhyakanda, mahabharata-aranyakaparva, rigveda, mahabharata-bhishmaparva, bhagavadgita-smirnov, br-up, atharvaveda, mahabharata-dronaparva, gitarthasamgraha-abhinavagupta, bhagavadgita-burba, ramanuja_gitabhashya, bhagavadgita-1914, bhagavadgita-sementsov, mahabharata-karnaparva, mahabharata-ashvamedhikaparva, atharvaveda, atharvaveda, yotat-up
+- земли  · n=39  · manavadharmashastra, mahabharata-aranyakaparva, mahabharata-adiparva, ramayana-ayodhyakanda, mahabharata-bhishmaparva, mahabharata-udyogaparva, mahabharata-ashvamedhikaparva, mahabharata-virataparva, atharvaveda, shatakatrayam, pratyabhijna-hridaya_kshemaraja, ramayana-balakanda, rigveda, rigveda, kama-sutra, mahabharata-dronaparva, buddhacharita, rigveda, mahabharata-shalyaparva, mahabharata-sabhaparva, atharvaveda, atharvaveda, mai-up, kai-up
+- на землю  · n=10  · ramayana-aranyakanda, mahabharata-adiparva, mahabharata-dronaparva, ramayana-ayodhyakanda, ramayana-sundarakanda, shukasaptati
+- на земле  · n=8  · ramayana-aranyakanda, mahabharata-virataparva, mahabharata-adiparva, mahabharata-bhishmaparva, atharvaveda
+- землей  · n=7  · mahabharata-aranyakaparva, rigveda, mahabharata-adiparva, ramayana-balakanda, mahabharata-udyogaparva
+- почву  · n=5  · ramayana-ayodhyakanda, rigveda, buddhacharita
+- место  · n=3  · manavadharmashastra, mahabharata-aranyakaparva, buddhacharita
+- земель  · n=3  · atharvaveda, rigveda
+- Земле  · n=3  · atharvaveda, atharvaveda
+- по земле  · n=3  · shukasaptati, amaru-shataka, mnar-up
+- землемеры  · n=2  · ramayana-ayodhyakanda
+- места  · n=2  · ramayana-ayodhyakanda, kumarasambhava
+- поле  · n=2  · manavadharmashastra, ramayana-aranyakanda
+- землями  · n=2  · rigveda
+- первоэлементов  · n=2  · mahabharata-bhishmaparva, bhagavadgita-erman
+- поле битвы  · n=2  · mahabharata-dronaparva
+- ступень  · n=2  · yoga-sutry_vyasa-bhashya
+- царство  · n=1  · ramayana-ayodhyakanda
+- мир  · n=1  · ramayana-ayodhyakanda
+- место занятий  · n=1  · manavadharmashastra
+- практика  · n=1  · manavadharmashastra
+- страну  · n=1  · manavadharmashastra
+- комнатам  · n=1  · ramayana-aranyakanda
+- дорогу  · n=1  · ramayana-aranyakanda
+- Землю  · n=1  · mahabharata-aranyakaparva
+- пол  · n=1  · kama-sutra
+- комнату  · n=1  · kama-sutra
+- поле брани  · n=1  · mahabharata-dronaparva
+- Земли  · n=1  · mahabharata-dronaparva
+- покоях  · n=1  · buddhacharita
+- земные области  · n=1  · mahabharata-udyogaparva
+- бхума  · n=1  · gitarthasamgraha-abhinavagupta
+- пешим  · n=1  · mahabharata-karnaparva
+- Земля-мать  · n=1  · atharvaveda
+- сражений  · n=1  · mahabharata-virataparva
+- наземь  · n=1  · shukasaptati
+- состояний  · n=1  · yoga-sutry_vyasa-bhashya
+- ступени  · n=1  · yoga-sutry_vyasa-bhashya
+- стадиям  · n=1  · yoga-sutry
+- шаг за шагом  · n=1  · yoga-sutry_sharma
+- уровни  · n=1  · yoga-sutry_zagumennov
+- землёй  · n=1  · yotat-up
+- состояние  · n=1  · pratyabhijna-hridaya_kshemaraja
+- функции  · n=1  · pratyabhijna-hridaya_kshemaraja
+
+### `BUmiBAga` — bhūmibhāga  (n=4)
+
+- участки земли  · n=2  · ramayana-sundarakanda
+- место  · n=1  · mahabharata-aranyakaparva
+- месте  · n=1  · mahabharata-adiparva
+
+### `BUmiBft` — bhūmibhṛt  (n=1)
+
+- властитель  · n=1  · mahabharata-sabhaparva
+
+### `BUmiDara` — bhūmidhara  (n=2)
+
+- горы  · n=1  · mahabharata-adiparva
+- гора  · n=1  · ramayana-sundarakanda
+
+### `BUmiH` — bhūmiḥ  (n=31)
+
+- земля  · n=24  · mahabharata-adiparva, mahabharata-dronaparva, atharvaveda, mahabharata-shantiparva, ramayana-ayodhyakanda, manavadharmashastra, mahabharata-aranyakaparva, rigveda, rigveda, mahabharata-bhishmaparva, bhagavadgity, mahabharata-karnaparva, mahabharata-shalyaparva, mahabharata-ashvamedhikaparva, mahabharata-virataparva, atharvaveda
+- Земля  · n=3  · rigveda, mahabharata-karnaparva, mahabharata-sabhaparva
+- поле брани  · n=1  · mahabharata-dronaparva
+- земляной пол  · n=1  · mahabharata-udyogaparva
+- землѣ  · n=1  · bhagavadgita-1909
+- землей  · n=1  · atharvaveda
+
+### `BUmiM` — bhūmiṃ  (n=8)
+
+- землю  · n=4  · rigveda, mahabharata-udyogaparva, rigveda, amaru-shataka
+- в края  · n=1  · mahabharata-aranyakaparva
+- Землю  · n=1  · mahabharata-udyogaparva
+- царством  · n=1  · mahabharata-udyogaparva
+- землей  · n=1  · atharvaveda
+
+### `BUmiMkurvannuttaraSoRitAm` — bhūmiṃ kurvannuttaraśoṇitām  (n=1)
+
+- затопляя землю кровью  · n=1  · mahabharata-dronaparva
+
+### `BUmiS` — bhūmiś  (n=2)
+
+- земля  · n=1  · atharvaveda
+- (не переведено)  · n=1  · atharvaveda
+
+### `BUmiSayAn` — bhūmiśayān  (n=1)
+
+- обитающих в ней  · n=1  · mahabharata-aranyakaparva
+
+### `BUmiSaya` — bhūmiśaya  (n=2)
+
+- [существа], живущие в земле  · n=1  · manavadharmashastra
+- земные существа  · n=1  · mahabharata-dronaparva
+
+### `BUmiSayyA` — bhūmiśayyā  (n=1)
+
+- Лежащая на земле  · n=1  · ramayana-sundarakanda
+
+### `BUmiYjaya` — bhūmiñjaya  (n=3)
+
+- Бхуминджая  · n=3  · mahabharata-virataparva, mahabharata-dronaparva
+
+### `BUmibuDna` — bhūmibudhna  (n=1)
+
+- дно – земля  · n=1  · ch-up
+
+### `BUmicAle` — bhūmicāle  (n=1)
+
+- при землетрясении  · n=1  · mahabharata-karnaparva
+
+### `BUmicArin` — bhūmicārin  (n=1)
+
+- на земле обитающий  · n=1  · mahabharata-aranyakaparva
+
+### `BUmicalana` — bhūmicalana  (n=1)
+
+- землетрясения  · n=1  · manavadharmashastra
+
+### `BUmidAna` — bhūmidāna  (n=1)
+
+- дарения земли  · n=1  · mahabharata-adiparva
+
+### `BUmida` — bhūmida  (n=2)
+
+- дарит земли  · n=1  · ramayana-ayodhyakanda
+- дающий землю  · n=1  · manavadharmashastra
+
+### `BUmideva` — bhūmideva  (n=2)
+
+- богов земли  · n=2  · manavadharmashastra
+
+### `BUmidfMha` — bhūmidṛṃha  (n=1)
+
+- Устойчивый на земле  · n=1  · atharvaveda
+
+### `BUmidfMhaH` — bhūmidṛṃhaḥ  (n=1)
+
+- укрепляющая землю  · n=1  · atharvaveda
+
+### `BUmigata` — bhūmigata  (n=4)
+
+- упавший на землю  · n=1  · manavadharmashastra
+- текущая по земле  · n=1  · manavadharmashastra
+- явившийся на землю  · n=1  · mahabharata-aranyakaparva
+- оказавшемуся на земле  · n=1  · mahabharata-ashvamedhikaparva
+
+### `BUmigataH` — bhūmigataḥ  (n=1)
+
+- на земле  · n=1  · raghuvamsha
+
+### `BUmigocara` — bhūmigocara  (n=1)
+
+- живем на земле  · n=1  · mahabharata-udyogaparva
+
+### `BUmiguRADikyAt` — bhūmiguṇādhikyāt  (n=1)
+
+- над качеством земли  · n=1  · gitarthasamgraha-abhinavagupta
+
+### `BUmiguRa` — bhūmiguṇa  (n=1)
+
+- земными благами  · n=1  · mahabharata-adiparva
+
+### `BUmijAta` — bhūmijāta  (n=1)
+
+- производимые ею  · n=1  · mahabharata-adiparva
+
+### `BUmikA` — bhūmikā  (n=2)
+
+- проявление  · n=1  · pratyabhijna-hridaya_kshemaraja
+- роль  · n=1  · pratyabhijna-hridaya_kshemaraja
+
+### `BUmikAH` — bhūmikāḥ  (n=1)
+
+- роли  · n=1  · pratyabhijna-hridaya_kshemaraja
+
+### `BUmikAma` — bhūmikāma  (n=1)
+
+- желающий земли  · n=1  · bhagavadgita-radha
+
+### `BUmikampa` — bhūmikampa  (n=2)
+
+- землетрясении  · n=1  · ramayana-ayodhyakanda
+- земля  · n=1  · ramayana-balakanda
+
+### `BUmikampas` — bhūmikampas  (n=1)
+
+- землетрясение  · n=1  · ramayana-balakanda
+
+### `BUmikampe` — bhūmikampe  (n=1)
+
+- при землетрясении  · n=1  · mahabharata-bhishmaparva
+
+### `BUmikampena` — bhūmikampena  (n=1)
+
+- землетрясение  · n=1  · ramayana-sundarakanda
+
+### `BUmikatva` — bhūmikatva  (n=2)
+
+- концентрации  · n=1  · yoga-sutry
+- духовного состояния  · n=1  · yoga-sutry_sharma
+
+### `BUmim` — bhūmim  (n=42)
+
+- землю  · n=18  · rigveda, atharvaveda, manavadharmashastra, rigveda, mahabharata-adiparva, rigveda, mahabharata-dronaparva, mahabharata-udyogaparva, mahabharata-virataparva, atharvaveda, shv-up, mahabharata-mahaprasthanikaparva
+- земли  · n=5  · mahabharata-virataparva, ramayana-sundarakanda, mahabharata-sabhaparva, raghuvamsha
+- на землю  · n=4  · mahabharata-adiparva, mahabharata-dronaparva, mahabharata-udyogaparva, atharvaveda
+- земле  · n=2  · mahabharata-aranyakaparva, rigveda
+- путь  · n=2  · mahabharata-dronaparva
+- почву  · n=2  · rigveda
+- земля  · n=1  · ramayana-ayodhyakanda
+- земель  · n=1  · ramayana-ayodhyakanda
+- залу  · n=1  · ramayana-ayodhyakanda
+- по земле  · n=1  · mahabharata-aranyakaparva
+- землей  · n=1  · mahabharata-aranyakaparva
+- свету  · n=1  · mahabharata-adiparva
+- к земле  · n=1  · mahabharata-dronaparva
+- Земле  · n=1  · atharvaveda
+- на земле  · n=1  · amaru-shataka
+
+### `BUmimaRqala` — bhūmimaṇḍala  (n=1)
+
+- на этой земле  · n=1  · hatha-yoga-pradipika
+
+### `BUmimapatanmahezvAsasya` — bhūmimapatanmaheṣvāsasya  (n=1)
+
+- пало на землю, сокрушенное стрелами того искусного лучника  · n=1  · mahabharata-karnaparva
+
+### `BUminihitaikakowi` — bhūminihitaikakoṭi  (n=1)
+
+- поставив лук нижним концом на землю  · n=1  · raghuvamsha
+
+### `BUmipAH` — bhūmipāḥ  (n=4)
+
+- цари  · n=2  · mahabharata-adiparva, mahabharata-sabhaparva
+- владыки  · n=1  · ramayana-ayodhyakanda
+- хранители земли  · n=1  · mahabharata-dronaparva
+
+### `BUmipAlAH` — bhūmipālāḥ  (n=5)
+
+- хранители земли  · n=2  · mahabharata-udyogaparva, mahabharata-virataparva
+- Цари  · n=1  · buddhacharita
+- правители земные  · n=1  · mahabharata-udyogaparva
+- властители земли  · n=1  · raghuvamsha
+
+### `BUmipAlAn` — bhūmipālān  (n=1)
+
+- хранителей земли  · n=1  · mahabharata-dronaparva
+
+### `BUmipAlAnAM` — bhūmipālānāṃ  (n=1)
+
+- царей  · n=1  · mahabharata-adiparva
+
+### `BUmipAlAnAm` — bhūmipālānām  (n=1)
+
+- царей  · n=1  · mahabharata-udyogaparva
+
+### `BUmipAlAsanezu` — bhūmipālāsaneṣu  (n=1)
+
+- царских тронах  · n=1  · mahabharata-virataparva
+
+### `BUmipAla` — bhūmipāla  (n=16)
+
+- царей  · n=5  · mahabharata-adiparva, mahabharata-udyogaparva, mahabharata-mausalaparva
+- властителей земли  · n=2  · mahabharata-bhishmaparva
+- государя  · n=1  · ramayana-ayodhyakanda
+- царя  · n=1  · ramayana-sundarakanda
+- Бхумипала  · n=1  · mahabharata-adiparva
+- властителям земли  · n=1  · mahabharata-bhishmaparva
+- владыка  · n=1  · buddhacharita
+- царями  · n=1  · mahabharata-udyogaparva
+- правители  · n=1  · mahabharata-sabhaparva
+- царей хранителей земли  · n=1  · mahabharata-sauptikaparva
+- хранителей земли  · n=1  · mahabharata-sauptikaparva
+
+### `BUmipAlaH` — bhūmipālaḥ  (n=1)
+
+- царь  · n=1  · mahabharata-aranyakaparva
+
+### `BUmipAlaSata` — bhūmipālaśata  (n=1)
+
+- сотни властителей земли  · n=1  · mahabharata-bhishmaparva
+
+### `BUmipAlaiH` — bhūmipālaiḥ  (n=1)
+
+- хранителями земли  · n=1  · mahabharata-sabhaparva
+
+### `BUmipAlasahasrARAm` — bhūmipālasahasrāṇām  (n=1)
+
+- тысяч властителей земли  · n=1  · mahabharata-bhishmaparva
+
+### `BUmipAleSam` — bhūmipāleśam  (n=1)
+
+- владыку людей  · n=1  · mahabharata-adiparva
+
+### `BUmipa` — bhūmipa  (n=22)
+
+- царь  · n=8  · mahabharata-adiparva, manavadharmashastra, mahabharata-aranyakaparva, buddhacharita
+- хранитель земли  · n=4  · ramayana-balakanda, mahabharata-sauptikaparva, mahabharata-shalyaparva
+- Владыка земли  · n=2  · ramayana-ayodhyakanda
+- кшатрий  · n=2  · manavadharmashastra
+- владыка земли  · n=1  · ramayana-ayodhyakanda
+- владыке земли  · n=1  · ramayana-ayodhyakanda
+- царь земли  · n=1  · mahabharata-aranyakaparva
+- владыку земли  · n=1  · mahabharata-karnaparva
+- повелитель земной  · n=1  · mahabharata-shalyaparva
+- правитель земли  · n=1  · mahabharata-sabhaparva
+
+### `BUmipaH` — bhūmipaḥ  (n=3)
+
+- Владыка земли  · n=1  · ramayana-ayodhyakanda
+- царь  · n=1  · ramayana-ayodhyakanda
+- хранитель земли  · n=1  · mahabharata-ashramavasikaparva
+
+### `BUmipam` — bhūmipam  (n=3)
+
+- царя  · n=2  · ramayana-ayodhyakanda
+- владыки земли  · n=1  · ramayana-ayodhyakanda
+
+### `BUmipanya` — bhūmipanya  (n=1)
+
+- Владыка земли  · n=1  · ramayana-ayodhyakanda
+
+### `BUmiparva` — bhūmiparva  (n=4)
+
+- раздел о земле  · n=1  · mahabharata-adiparva
+- книга о земле  · n=1  · mahabharata-adiparva
+- Земля  · n=1  · mahabharata-adiparva
+- раздел о Земле  · n=1  · mahabharata-bhishmaparva
+
+### `BUmiparzaBa` — bhūmiparṣabha  (n=1)
+
+- бык среди властителей земли  · n=1  · mahabharata-bhishmaparva
+
+### `BUmipasya` — bhūmipasya  (n=1)
+
+- хранителя земли  · n=1  · mahabharata-udyogaparva
+
+### `BUmipate` — bhūmipate  (n=3)
+
+- владыка земли  · n=3  · mahabharata-udyogaparva, mahabharata-aranyakaparva
+
+### `BUmipati` — bhūmipati  (n=9)
+
+- владыка земли  · n=2  · mahabharata-adiparva
+- государь  · n=2  · buddhacharita
+- царем  · n=1  · mahabharata-adiparva
+- владыка  · n=1  · buddhacharita
+- царь  · n=1  · buddhacharita
+- Владыка  · n=1  · buddhacharita
+- земли повелитель  · n=1  · buddhacharita
+
+### `BUmipatiM` — bhūmipatiṃ  (n=1)
+
+- владыку земли  · n=1  · raghuvamsha
+
+### `BUmipatim` — bhūmipatim  (n=1)
+
+- царю  · n=1  · mahabharata-adiparva
+
+### `BUmipatitva` — bhūmipatitva  (n=1)
+
+- владыкой земли  · n=1  · ramayana-balakanda
+
+### `BUmipradAyin` — bhūmipradāyin  (n=3)
+
+- дарующие  · n=1  · ramayana-aranyakanda
+- цари  · n=1  · ramayana-aranyakanda
+- землю  · n=1  · ramayana-aranyakanda
+
+### `BUmir` — bhūmir  (n=4)
+
+- земля  · n=2  · rigveda, atharvaveda
+- владения  · n=1  · mahabharata-sabhaparva
+- ступенью  · n=1  · yoga-sutry_vyasa-bhashya
+
+### `BUmirapi` — bhūmirapi  (n=1)
+
+- и земля  · n=1  · shukasaptati
+
+### `BUmirdyaurgrahairiva` — bhūmirdyaurgrahairiva  (n=1)
+
+- поле битвы, как небо со звездами  · n=1  · mahabharata-dronaparva
+
+### `BUmireRUrmimAlinIm` — bhūmireṇūrmimālinīm  (n=1)
+
+- пыль от земли - волны  · n=1  · mahabharata-dronaparva
+
+### `BUmis` — bhūmis  (n=1)
+
+- ступень  · n=1  · yoga-sutry_vyasa-bhashya
+
+### `BUmisaMsparSanAt` — bhūmisaṃsparśanāt  (n=1)
+
+- стопы твои касаются земли  · n=1  · ramayana-sundarakanda
+
+### `BUmitaH` — bhūmitaḥ  (n=2)
+
+- добытых из недр земли  · n=2  · mahabharata-sabhaparva
+
+### `BUmitala` — bhūmitala  (n=5)
+
+- землю  · n=2  · mahabharata-adiparva, buddhacharita
+- на землю  · n=1  · ramayana-sundarakanda
+- на потрясенную землю  · n=1  · ramayana-balakanda
+- пол  · n=1  · kama-sutra
+
+### `BUmitale` — bhūmitale  (n=1)
+
+- на земле  · n=1  · mahabharata-karnaparva
+
+### `BUmitva` — bhūmitva  (n=1)
+
+- природу земли  · n=1  · mai-up
+
+### `BUmityAga` — bhūmityāga  (n=1)
+
+- отделяется от земли  · n=1  · yotat-up
+
+### `BUmityAgaH` — bhūmityāgaḥ  (n=2)
+
+- поднимается над землёй  · n=2  · devi-gita
+
+### `BUmivarDana` — bhūmivardhana  (n=1)
+
+- обременяющий землю  · n=1  · mahabharata-aranyakaparva
+
+### `BUmizWa` — bhūmiṣṭha  (n=7)
+
+- стоя на земле  · n=2  · mahabharata-ashvamedhikaparva
+- стоял прямо на земле  · n=1  · mahabharata-aranyakaparva
+- на земле  · n=1  · mahabharata-aranyakaparva
+- на земле стоя  · n=1  · mahabharata-bhishmaparva
+- стоящим на земле  · n=1  · mahabharata-udyogaparva
+- пешему  · n=1  · mahabharata-ashvamedhikaparva
+
+### `BUmizWaH` — bhūmiṣṭhaḥ  (n=1)
+
+- пеший  · n=1  · mahabharata-karnaparva
+
+### `BUmizWam` — bhūmiṣṭham  (n=1)
+
+- стоящего на земле  · n=1  · mahabharata-aranyakaparva
+
+### `BUmizWasya` — bhūmiṣṭhasya  (n=1)
+
+- стоявшего на земле  · n=1  · mahabharata-dronaparva
+
+### `BUmizu` — bhūmiṣu  (n=2)
+
+- постадийно  · n=1  · yoga-sutry_vyasa-bhashya
+- ступень за ступенью  · n=1  · yoga-sutry_zagumennov
+
+### `BUmy` — bhūmy  (n=2)
+
+- на земле  · n=2  · rigveda
+
+### `BUmyA` — bhūmyā  (n=17)
+
+- земли  · n=10  · rigveda, rigveda, rigveda, atharvaveda, rigveda, atharvaveda, atharvaveda
+- по земле  · n=2  · rigveda
+- земле  · n=1  · rigveda
+- землей  · n=1  · rigveda
+- с полом  · n=1  · mahabharata-adiparva
+- Землею  · n=1  · mahabharata-shalyaparva
+- с земли  · n=1  · atharvaveda
+
+### `BUmyAH` — bhūmyāḥ  (n=7)
+
+- земли  · n=5  · atharvaveda, rigveda, rigveda, atharvaveda
+- с земли  · n=1  · atharvaveda
+- из земли  · n=1  · atharvaveda
+
+### `BUmyAHpfzWe` — bhūmyāḥ pṛṣṭhe  (n=1)
+
+- на спине земли  · n=1  · atharvaveda
+
+### `BUmyAdi` — bhūmyādi  (n=1)
+
+- земля и т.д.  · n=1  · gitarthasamgraha-abhinavagupta
+
+### `BUmyAm` — bhūmyām  (n=13)
+
+- на земле  · n=4  · atharvaveda, atharvaveda, atharvaveda
+- землю  · n=3  · ramayana-balakanda, atharvaveda, atharvaveda
+- на Земле  · n=2  · atharvaveda
+- к земле  · n=1  · rigveda
+- в Земле  · n=1  · atharvaveda
+- На Земле  · n=1  · atharvaveda
+- на землю  · n=1  · nr-up
+
+### `BUmyAmaDi` — bhūmyām adhi  (n=1)
+
+- на земле  · n=1  · atharvaveda
+
+### `BUmyai` — bhūmyai  (n=1)
+
+- Земле  · n=1  · atharvaveda
+
+### `BUmyantarikzAdijalASaya` — bhūmyantarikṣādijalāśaya  (n=1)
+
+- земля, воздушное пространство, водоемы  · n=1  · mahabharata-shalyaparva
+
+### `BUmyarTa` — bhūmyartha  (n=1)
+
+- ради земли  · n=1  · mahabharata-udyogaparva
+
+### `BUmyasya` — bhūmyasya  (n=2)
+
+- земного  · n=2  · rigveda
+
+### `BUmyavakASa` — bhūmyavakāśa  (n=1)
+
+- земное пространство  · n=1  · mahabharata-bhishmaparva
+
+### `BUn` — bhūn  (n=1)
+
+- будет  · n=1  · rigveda
+
+### `BUnA` — bhūnā  (n=1)
+
+- в большом количестве  · n=1  · rigveda
+
+### `BUpAla` — bhūpāla  (n=3)
+
+- цари  · n=1  · raghuvamsha
+- царь  · n=1  · shatakatrayam-serebryakov
+- властители  · n=1  · shukasaptati
+
+### `BUpAlaBrukuwIkuwIviharaRavyApArapaRyANganA` — bhūpālabhrukuṭīkuṭīviharaṇavyāpārapaṇyāṅganā  (n=1)
+
+- куртизанка  · n=1  · shatakatrayam
+
+### `BUpatI` — bhūpatī  (n=1)
+
+- государя  · n=1  · raghuvamsha
+
+### `BUpate` — bhūpate  (n=1)
+
+- владыка земли  · n=1  · mahabharata-aranyakaparva
+
+### `BUpateH` — bhūpateḥ  (n=4)
+
+- владыки земли  · n=2  · ramayana-aranyakanda
+- царя  · n=2  · raghuvamsha
+
+### `BUpati` — bhūpati  (n=11)
+
+- царь  · n=5  · raghuvamsha, mahabharata-udyogaparva, shatakatrayam
+- властитель земли  · n=2  · mahabharata-aranyakaparva, raghuvamsha
+- царствует  · n=1  · ramayana-ayodhyakanda
+- царю  · n=1  · ramayana-balakanda
+- царя  · n=1  · mahabharata-shalyaparva
+- царям  · n=1  · raghuvamsha
+
+### `BUpatiH` — bhūpatiḥ  (n=3)
+
+- царь  · n=2  · ramayana-ayodhyakanda, raghuvamsha
+- правителя  · n=1  · shukasaptati
+
+### `BUpezu` — bhūpeṣu  (n=1)
+
+- царей  · n=1  · buddhacharita
+
+### `BUpracAra` — bhūpracāra  (n=1)
+
+- земли не касался  · n=1  · buddhacharita
+
+### `BUr` — bhūr  (n=11)
+
+- будь  · n=2  · rigveda
+- будешь  · n=2  · rigveda, atharvaveda
+- мощно побеждающего  · n=2  · rigveda
+- бхух  · n=1  · manavadharmashastra
+- стань  · n=1  · rigveda
+- будетъ  · n=1  · bhagavadgita-1909
+- Землю  · n=1  · br-up
+- земля  · n=1  · mai-up
+
+### `BUrBuva` — bhūrbhuva  (n=1)
+
+- земли и воздушного пространства  · n=1  · mahabharata-dronaparva
+
+### `BUrBuvaHsvar` — bhūrbhuvaḥsvar  (n=1)
+
+- бхур бхувах свар  · n=1  · mai-up
+
+### `BUrBuvaHsvastraya` — bhūrbhuvaḥ svastraya  (n=1)
+
+- три мира: землю, воздух и небо  · n=1  · gitarthasamgraha-abhinavagupta
+
+### `BUrI` — bhūrī  (n=1)
+
+- многие  · n=1  · rigveda
+
+### `BUrIRi` — bhūrīṇi  (n=7)
+
+- множество  · n=3  · rigveda, mahabharata-sabhaparva
+- многое  · n=2  · rigveda
+- Бесчисленные  · n=1  · mahabharata-dronaparva
+- многочисленные  · n=1  · mahabharata-sabhaparva
+
+### `BUrId` — bhūrīd  (n=1)
+
+- большое  · n=1  · rigveda
+
+### `BUrRaya` — bhūrṇaya  (n=1)
+
+- Бурные  · n=1  · rigveda
+
+### `BUrRayaH` — bhūrṇayaḥ  (n=5)
+
+- ревностные  · n=2  · rigveda, rigveda
+- неистовые  · n=1  · rigveda
+- старательные  · n=1  · rigveda
+- усердные  · n=1  · rigveda
+
+### `BUrRaye` — bhūrṇaye  (n=1)
+
+- яростному  · n=1  · rigveda
+
+### `BUrRi` — bhūrṇi  (n=7)
+
+- свирепый  · n=1  · rigveda
+- горячего  · n=1  · rigveda
+- возбужденные  · n=1  · rigveda
+- буйного  · n=1  · rigveda
+- яростный  · n=1  · rigveda
+- Неистового  · n=1  · rigveda
+- ревностные  · n=1  · atharvaveda
+
+### `BUrRim` — bhūrṇim  (n=1)
+
+- раздражать  · n=1  · rigveda
+
+### `BUrayaH` — bhūrayaḥ  (n=1)
+
+- богатые  · n=1  · rigveda
+
+### `BUreH` — bhūreḥ  (n=11)
+
+- обильного  · n=2  · rigveda, rigveda
+- обширного  · n=2  · rigveda
+- много  · n=2  · rigveda
+- над многим  · n=1  · rigveda
+- большой  · n=1  · rigveda
+- обильным  · n=1  · rigveda
+- обширным  · n=1  · rigveda
+- огромного  · n=1  · rigveda
+
+### `BUreRurUzitaiH` — bhūreṇurūṣitaiḥ  (n=1)
+
+- покрытыми пылью  · n=1  · mahabharata-dronaparva
+
+### `BUrer` — bhūrer  (n=3)
+
+- многим  · n=1  · rigveda
+- о многом  · n=1  · rigveda
+- большой  · n=1  · rigveda
+
+### `BUri` — bhūri  (n=104)
+
+- много  · n=29  · rigveda, rigveda, rigveda, rigveda, rigveda, rigveda, atharvaveda, rigveda, atharvaveda, rigveda, mahabharata-udyogaparva, atharvaveda, shatakatrayam, atharvaveda
+- Бхури  · n=7  · mahabharata-dronaparva, mahabharata-sabhaparva
+- множество  · n=6  · rigveda, mahabharata-aranyakaparva, rigveda, mahabharata-sabhaparva, atharvaveda
+- многие  · n=5  · rigveda, rigveda, atharvaveda
+- Много  · n=4  · rigveda, rigveda, rigveda, rigveda
+- многое  · n=4  · tai-up, rigveda, atharvaveda
+- многих  · n=3  · rigveda, rigveda
+- многочисленные  · n=3  · rigveda, rigveda, rigveda
+- обильного  · n=3  · rigveda, rigveda
+- большое  · n=2  · rigveda, rigveda
+- велико  · n=2  · rigveda, rigveda
+- большую  · n=2  · rigveda, rigveda
+- очень  · n=2  · rigveda, rigveda
+- богатое  · n=2  · rigveda, rigveda
+- мощно  · n=2  · rigveda, rigveda
+- обильно  · n=2  · mahabharata-dronaparva
+- обильным  · n=2  · rigveda, mahabharata-ashvamedhikaparva
+- обильную  · n=2  · rigveda, rigveda
+- земля  · n=1  · mahabharata-aranyakaparva
+- потоками  · n=1  · mahabharata-aranyakaparva
+- сильно  · n=1  · rigveda
+- Большим  · n=1  · rigveda
+- Большим почетом окружили его люди  · n=1  · rigveda
+- полный  · n=1  · rigveda
+- Обильного  · n=1  · rigveda
+- многому  · n=1  · rigveda
+- Обильна  · n=1  · rigveda
+- во много раз  · n=1  · rigveda
+- изобилующем  · n=1  · mahabharata-dronaparva
+- Многие  · n=1  · rigveda
+- в обилии  · n=1  · mahabharata-karnaparva
+- Много раз  · n=1  · rigveda
+- часто  · n=1  · rigveda
+- большой  · n=1  · rigveda
+- обильный  · n=1  · rigveda
+- богатую  · n=1  · rigveda
+- огромный  · n=1  · rigveda
+- мощный  · n=1  · mahabharata-ashvamedhikaparva
+- бесчисленные  · n=1  · mahabharata-ashvamedhikaparva
+- дальше  · n=1  · atharvaveda
+
+### `BUriBAra` — bhūribhāra  (n=2)
+
+- большой груз  · n=2  · rigveda, atharvaveda
+
+### `BUriBUti` — bhūribhūti  (n=1)
+
+- густой слой пепла  · n=1  · pratyabhijna-hridaya_kshemaraja
+
+### `BUriBi` — bhūribhi  (n=1)
+
+- Многими  · n=1  · rigveda
+
+### `BUriBiH` — bhūribhiḥ  (n=3)
+
+- с многими (дарами)  · n=1  · rigveda
+- многие  · n=1  · rigveda
+- со многими (дарами)  · n=1  · atharvaveda
+
+### `BUriDAra` — bhūridhāra  (n=1)
+
+- со многими потоками  · n=1  · atharvaveda
+
+### `BUriDAre` — bhūridhāre  (n=1)
+
+- обильно струящиеся  · n=1  · rigveda
+
+### `BUriDAyas` — bhūridhāyas  (n=3)
+
+- обильно насыщающего  · n=1  · atharvaveda
+- кормящего многих  · n=1  · rigveda
+- многонасыщающему  · n=1  · atharvaveda
+
+### `BUriDAyasam` — bhūridhāyasam  (n=1)
+
+- обильный дождями  · n=1  · atharvaveda
+
+### `BUriDanAH` — bhūridhanāḥ  (n=1)
+
+- обильных добром  · n=1  · atharvaveda
+
+### `BUriH` — bhūriḥ  (n=1)
+
+- Бхури  · n=1  · mahabharata-dronaparva
+
+### `BUriRA` — bhūriṇā  (n=1)
+
+- обильно текущей  · n=1  · mahabharata-aranyakaparva
+
+### `BUriSa` — bhūriśa  (n=1)
+
+- много  · n=1  · mahabharata-udyogaparva
+
+### `BUriSas` — bhūriśas  (n=1)
+
+- многообразно  · n=1  · mahabharata-bhishmaparva
+
+### `BUriSfNgAH` — bhūriśṛṅgāḥ  (n=2)
+
+- многорогие  · n=2  · rigveda
+
+### `BUriSravA` — bhūriśravā  (n=5)
+
+- Бхуришравас  · n=5  · mahabharata-dronaparva, mahabharata-shalyaparva
+
+### `BUriSravAH` — bhūriśravāḥ  (n=19)
+
+- Бхуришравас  · n=19  · mahabharata-dronaparva, mahabharata-bhishmaparva, mahabharata-udyogaparva, mahabharata-mausalaparva
+
+### `BUriSravas` — bhūriśravas  (n=65)
+
+- Бхуришравас  · n=52  · mahabharata-dronaparva, mahabharata-bhishmaparva, mahabharata-udyogaparva, mahabharata-shalyaparva, mahabharata-sabhaparva, mahabharata-karnaparva, mahabharata-ashramavasikaparva, mahabharata-sauptikaparva, mahabharata-aranyakaparva, mahabharata-striparva
+- Бхуришраваса  · n=10  · mahabharata-dronaparva, mahabharata-striparva, mahabharata-udyogaparva, mahabharata-shalyaparva
+- Бхуришравасу  · n=2  · mahabharata-bhishmaparva, mahabharata-ashramavasikaparva
+- Бхуришравасом  · n=1  · mahabharata-dronaparva
+
+### `BUriSravasA` — bhūriśravasā  (n=3)
+
+- Бхуришравасом  · n=2  · mahabharata-bhishmaparva, mahabharata-dronaparva
+- с Бхуришравасом  · n=1  · mahabharata-bhishmaparva
+
+### `BUriSravasa` — bhūriśravasa  (n=2)
+
+- Бхуришраваса  · n=2  · mahabharata-ashvamedhikaparva
+
+### `BUriSravasam` — bhūriśravasam  (n=5)
+
+- Бхуришраваса  · n=3  · mahabharata-dronaparva, mahabharata-sauptikaparva
+- Бхуришравасу  · n=1  · mahabharata-udyogaparva
+- Бхуришравас  · n=1  · mahabharata-sauptikaparva
+
+### `BUriSravasi` — bhūriśravasi  (n=5)
+
+- Бхуришравас  · n=4  · mahabharata-dronaparva, mahabharata-shalyaparva
+- Бхуришраваса  · n=1  · mahabharata-dronaparva
+
+### `BUribalaH` — bhūribalaḥ  (n=1)
+
+- Бхуришравас  · n=1  · mahabharata-shalyaparva
+
+### `BUribalam` — bhūribalam  (n=1)
+
+- Бхурибалу  · n=1  · mahabharata-shalyaparva
+
+### `BUricakzas` — bhūricakṣas  (n=1)
+
+- глядящего на многих  · n=1  · rigveda
+
+### `BUridA` — bhūridā  (n=3)
+
+- много даешь  · n=1  · rigveda
+- дающий много  · n=1  · rigveda
+- дающим много  · n=1  · rigveda
+
+### `BUridAByaH` — bhūridābhyaḥ  (n=2)
+
+- дающих много  · n=2  · rigveda
+
+### `BUridAtraH` — bhūridātraḥ  (n=1)
+
+- дающий много  · n=1  · rigveda
+
+### `BUridAvA` — bhūridāvā  (n=1)
+
+- много дающий  · n=1  · rigveda
+
+### `BUridAvarIM` — bhūridāvarīṃ  (n=1)
+
+- Влекущую за собой обильное дарение  · n=1  · rigveda
+
+### `BUridAvattarA` — bhūridāvattarā  (n=1)
+
+- даете еще больше  · n=1  · rigveda
+
+### `BUridAvattara` — bhūridāvattara  (n=1)
+
+- дающим больше  · n=1  · rigveda
+
+### `BUridAvna` — bhūridāvna  (n=3)
+
+- щедром  · n=2  · rigveda
+- много дающем  · n=1  · rigveda
+
+### `BUridakziRAH` — bhūridakṣiṇāḥ  (n=1)
+
+- сопровождаемых богатыми дарами  · n=1  · mahabharata-virataparva
+
+### `BUridakziRa` — bhūridakṣiṇa  (n=18)
+
+- щедрый даритель  · n=2  · mahabharata-aranyakaparva, mahabharata-karnaparva
+- с обильными дарами  · n=2  · mahabharata-ashvamedhikaparva, mahabharata-virataparva
+- с дакшиной обильною  · n=2  · mahabharata-svargarohanikaparva
+- с раздачей даров  · n=1  · ramayana-ayodhyakanda
+- сопровождавшиеся обильной раздачей даров  · n=1  · mahabharata-aranyakaparva
+- с богатыми дарами  · n=1  · mahabharata-aranyakaparva
+- щедро одаривающий брахманов  · n=1  · mahabharata-aranyakaparva
+- щедрыми  · n=1  · mahabharata-aranyakaparva
+- расточающие дары  · n=1  · mahabharata-adiparva
+- щедрый к жрецам  · n=1  · mahabharata-bhishmaparva
+- раздав при этом богатые дары  · n=1  · mahabharata-udyogaparva
+- со щедрыми дарами  · n=1  · mahabharata-sabhaparva
+- богатых жертвенных даров  · n=1  · mahabharata-sabhaparva
+- обильным дарениям брахманам  · n=1  · mahabharata-ashramavasikaparva
+- обильно дарующий брахманам  · n=1  · mahabharata-ashramavasikaparva
+
+### `BUridakziRaH` — bhūridakṣiṇaḥ  (n=2)
+
+- щедро одаряющий брахманов  · n=1  · mahabharata-aranyakaparva
+- щедрый податель жертвенных даров  · n=1  · mahabharata-dronaparva
+
+### `BUridakziRaiH` — bhūridakṣiṇaiḥ  (n=7)
+
+- с богатыми дарами  · n=3  · mahabharata-adiparva, mahabharata-dronaparva, mahabharata-udyogaparva
+- с обильными дарениями  · n=1  · mahabharata-aranyakaparva
+- с обильными дарами  · n=1  · mahabharata-aranyakaparva
+- щедрыми в жертвенных дарах  · n=1  · mahabharata-udyogaparva
+- богатые дары  · n=1  · mahabharata-udyogaparva
+
+### `BUridakziRam` — bhūridakṣiṇam  (n=5)
+
+- сопровождавшихся богатыми дарами  · n=1  · mahabharata-adiparva
+- щедрым подателем жертвенных даров  · n=1  · mahabharata-dronaparva
+- подателя щедрых жертвенных даров  · n=1  · mahabharata-dronaparva
+- щедрого подателя жертвенных даров  · n=1  · mahabharata-dronaparva
+- обильный дарами  · n=1  · mahabharata-sabhaparva
+
+### `BUridraviRatejas` — bhūridraviṇatejas  (n=1)
+
+- одаренный великой доблестью и силой  · n=1  · mahabharata-adiparva
+
+### `BUridraviRatejasAm` — bhūridraviṇatejasām  (n=1)
+
+- великих богатством и сиянием  · n=1  · mahabharata-aranyakaparva
+
+### `BUridruma` — bhūridruma  (n=1)
+
+- изобилующий деревьями  · n=1  · mahabharata-shalyaparva
+
+### `BUridrumalatAgulma` — bhūridrumalatāgulma  (n=1)
+
+- полный деревьев, лиан и зарослей кустарников  · n=1  · mahabharata-dronaparva
+
+### `BUridyumna` — bhūridyumna  (n=2)
+
+- Бхуридьюмна  · n=2  · mahabharata-udyogaparva, mai-up
+
+### `BUrigo` — bhūrigo  (n=1)
+
+- хозяин многих коров  · n=1  · rigveda
+
+### `BUrijanman` — bhūrijanman  (n=2)
+
+- С многими рождениями  · n=1  · rigveda
+- с многими рождениями  · n=1  · rigveda
+
+### `BUrikarmaRe` — bhūrikarmaṇe  (n=1)
+
+- совершившего многие деяния  · n=1  · rigveda
+
+### `BUrimUla` — bhūrimūla  (n=1)
+
+- много корней  · n=1  · atharvaveda
+
+### `BUripARi` — bhūripāṇi  (n=1)
+
+- многорукий  · n=1  · atharvaveda
+
+### `BUripASAu` — bhūripāśāu  (n=2)
+
+- имеющие много петель  · n=2  · rigveda
+
+### `BUripoziRo` — bhūripoṣiṇo  (n=1)
+
+- обильно кормящего  · n=1  · rigveda
+
+### `BUriratna` — bhūriratna  (n=1)
+
+- богатую сокровищами  · n=1  · mahabharata-aranyakaparva
+
+### `BUriretas` — bhūriretas  (n=1)
+
+- обильные семенем  · n=1  · atharvaveda
+
+### `BUriretasA` — bhūriretasā  (n=3)
+
+- с обильным семенем  · n=1  · rigveda
+- обильные семенем  · n=1  · rigveda
+- Обильных семенем  · n=1  · rigveda
+
+### `BUrisTAtrA` — bhūristhātrā  (n=2)
+
+- имеющую много приетанищ  · n=1  · rigveda
+- имеющую много пристанищ  · n=1  · atharvaveda
+
+### `BUrisahasrada` — bhūrisahasrada  (n=3)
+
+- щедро раздававшего тысячи  · n=1  · mahabharata-dronaparva
+- даритель многих тысяч  · n=1  · mahabharata-udyogaparva
+- раздававшего тысячами жертвенные дары  · n=1  · mahabharata-striparva
+
+### `BUritejas` — bhūritejas  (n=12)
+
+- одаренного могучей силой  · n=1  · mahabharata-adiparva
+- могучий  · n=1  · mahabharata-adiparva
+- великой силы  · n=1  · mahabharata-adiparva
+- преисполненных блеска  · n=1  · manavadharmashastra
+- наделенного великой силой  · n=1  · mahabharata-adiparva
+- Бхуритеджас  · n=1  · mahabharata-adiparva
+- блистательный  · n=1  · mahabharata-bhishmaparva
+- великой мощи  · n=1  · mahabharata-udyogaparva
+- в изобилии наделенный ратным пылом  · n=1  · mahabharata-karnaparva
+- в избытке наделенный ратным пылом  · n=1  · mahabharata-karnaparva
+- наделенного великим блеском  · n=1  · mahabharata-shalyaparva
+- преисполненная пыла  · n=1  · mahabharata-ashvamedhikaparva
+
+### `BUritejasaH` — bhūritejasaḥ  (n=3)
+
+- обладающего великой силой  · n=1  · mahabharata-adiparva
+- великой силы  · n=1  · mahabharata-adiparva
+- обладающие большим блеском  · n=1  · manavadharmashastra
+
+### `BUritrasta` — bhūritrasta  (n=2)
+
+- испуганных  · n=1  · shatakatrayam
+- трепещущими от страха  · n=1  · shatakatrayam-serebryakov
+
+### `BUrivArA` — bhūrivārā  (n=1)
+
+- многие избранные дары  · n=1  · rigveda
+
+### `BUrivAram` — bhūrivāram  (n=2)
+
+- многожеланное  · n=1  · rigveda
+- многожеланную  · n=1  · rigveda
+
+### `BUrivIryaparAkramam` — bhūrivīryaparākramam  (n=1)
+
+- наделенным огромной мощью и отвагой  · n=1  · mahabharata-shalyaparva
+
+### `BUrivarDana` — bhūrivardhana  (n=1)
+
+- произошло  · n=1  · mahabharata-dronaparva
+
+### `BUrivarDanaH` — bhūrivardhanaḥ  (n=1)
+
+- безмерно истребительная  · n=1  · mahabharata-dronaparva
+
+### `BUrivarcas` — bhūrivarcas  (n=4)
+
+- с царицей  · n=1  · ramayana-ayodhyakanda
+- наделенного великим блеском  · n=1  · mahabharata-adiparva
+- наделенного неотразимым блеском  · n=1  · mahabharata-shalyaparva
+- источали яркое сияние  · n=1  · mahabharata-ashvamedhikaparva
+
+### `BUrivarcasam` — bhūrivarcasam  (n=1)
+
+- излучающему сияние  · n=1  · mahabharata-aranyakaparva
+
+### `BUrivarpas` — bhūrivarpas  (n=1)
+
+- обильную обликами  · n=1  · atharvaveda
+
+### `BUrivarpasA` — bhūrivarpasā  (n=1)
+
+- многообразных  · n=1  · rigveda
+
+### `BUrivarpasaH` — bhūrivarpasaḥ  (n=1)
+
+- Многообразные  · n=1  · rigveda
+
+### `BUrivarpasam` — bhūrivarpasam  (n=1)
+
+- обильная пищей  · n=1  · atharvaveda
+
+### `BUrivarza` — bhūrivarṣa  (n=1)
+
+- обильно проливающему дождь  · n=1  · mahabharata-dronaparva
+
+### `BUrivikrama` — bhūrivikrama  (n=1)
+
+- могучий  · n=1  · ramayana-balakanda
+
+### `BUrivikramam` — bhūrivikramam  (n=1)
+
+- исполненного великой отваги  · n=1  · mahabharata-udyogaparva
+
+### `BUrivizayAH` — bhūriviṣayāḥ  (n=1)
+
+- жажда наслаждений  · n=1  · shatakatrayam-serebryakov
+
+### `BUrivraRaparisrava` — bhūrivraṇaparisrava  (n=1)
+
+- обливаясь кровью, обильно текущей из раны  · n=1  · mahabharata-dronaparva
+
+### `BUriyam` — bhūriyam  (n=1)
+
+- эта земля  · n=1  · mahabharata-adiparva
+
+### `BUrja` — bhūrja  (n=1)
+
+- Бхурджа  · n=1  · ramayana-ayodhyakanda
+
+### `BUrja_patra` — bhūrja_patra  (n=1)
+
+- бхурджи  · n=1  · ramayana-ayodhyakanda
+
+### `BUrjatvac` — bhūrjatvac  (n=1)
+
+- береста  · n=1  · kumarasambhava
+
+### `BUrjatvacaH` — bhūrjatvacaḥ  (n=1)
+
+- Берестяные  · n=1  · kumarasambhava
+
+### `BUrjaya` — bhūrjaya  (n=1)
+
+- бхурджи  · n=1  · atharvaveda
+
+### `BUrjezu` — bhūrjeṣu  (n=1)
+
+- в сухой листве берез  · n=1  · raghuvamsha
+
+### `BUrji` — bhūrji  (n=1)
+
+- бхурджи  · n=1  · atharvaveda
+
+### `BUrloka` — bhūrloka  (n=1)
+
+- мир Земли  · n=1  · yoga-sutry_vyasa-bhashya
+
+### `BUruha` — bhūruha  (n=1)
+
+- дерево  · n=1  · shukasaptati
+
+### `BUry` — bhūry  (n=1)
+
+- Долго  · n=1  · rigveda
+
+### `BUryAsuti` — bhūryāsuti  (n=1)
+
+- подкрепляющий многих  · n=1  · rigveda
+
+### `BUryAveSayanta` — bhūryāveśayanta  (n=2)
+
+- дающие многого достигнуть  · n=2  · atharvaveda
+
+### `BUryakza` — bhūryakṣa  (n=1)
+
+- с множеством глаз  · n=1  · rigveda
+
+### `BUryojA` — bhūryojā  (n=1)
+
+- обладатель большой силы  · n=1  · rigveda
+
+### `BUryojAH` — bhūryojāḥ  (n=1)
+
+- обладатель большой силы  · n=1  · atharvaveda
+
+### `BUryojAs` — bhūryojās  (n=1)
+
+- обладатель большой силы  · n=1  · atharvaveda
+
+### `BUs` — bhūs  (n=9)
+
+- бхус  · n=3  · tai-up
+- Бхус  · n=2  · tai-up
+- стал  · n=1  · rigveda
+- бываешь  · n=1  · rigveda
+- землю  · n=1  · br-up
+- Земля  · n=1  · jabala-up
+
+### `BUstfRam` — bhūstṛṇam  (n=1)
+
+- бхустрины  · n=1  · manavadharmashastra
+
+### `BUstvaM` — bhūstvaṃ  (n=1)
+
+- будь  · n=1  · mahabharata-adiparva
+
+### `BUt` — bhūt  (n=48)
+
+- будет  · n=20  · mahabharata-aranyakaparva, ramayana-ayodhyakanda, ramayana-sundarakanda, ramayana-balakanda, mahabharata-udyogaparva, rigveda, rigveda, rigveda, rigveda, rigveda, mahabharata-ashvamedhikaparva, raghuvamsha, amaru-shataka
+- будь  · n=4  · mahabharata-aranyakaparva, buddhacharita, mahabharata-karnaparva, megha-duta
+- стал  · n=4  · rigveda, rigveda, rigveda
+- был  · n=3  · rigveda, rigveda
+- Да будет  · n=2  · rigveda, rigveda
+- быть  · n=1  · rigveda
+- бывает  · n=1  · rigveda
+- появляется  · n=1  · rigveda
+- он стал  · n=1  · rigveda
+- овладел  · n=1  · rigveda
+- приходит в движение  · n=1  · rigveda
+- можно было  · n=1  · rigveda
+- есть  · n=1  · rigveda
+- Будет  · n=1  · rigveda
+- Вышел  · n=1  · rigveda
+- должен быть  · n=1  · rigveda
+- поторопят  · n=1  · rigveda
+- он  · n=1  · rigveda
+- была  · n=1  · shukasaptati
+- пусть  · n=1  · mahabharata-ashramavasikaparva
+
+### `BUtA` — bhūtā  (n=5)
+
+- кажется  · n=1  · ramayana-ayodhyakanda
+- и  · n=1  · ramayana-ayodhyakanda
+- совершившееся  · n=1  · nyaya-bhashya
+- существа  · n=1  · atharvaveda
+- существ  · n=1  · atharvaveda
+
+### `BUtADipati` — bhūtādhipati  (n=5)
+
+- властвуют над бхутами  · n=2  · mahabharata-ashvamedhikaparva
+- повелитель существ  · n=2  · br-up, mai-up
+- Владыке всего сущего  · n=1  · mahabharata-ashramavasikaparva
+
+### `BUtAH` — bhūtāḥ  (n=4)
+
+- будучи  · n=2  · kama-sutra
+- стали  · n=1  · mahabharata-adiparva
+- Ставшие  · n=1  · buddhacharita
+
+### `BUtAMSa` — bhūtāṃśa  (n=2)
+
+- Бхутанша  · n=2  · rigveda
+
+### `BUtASraya` — bhūtāśraya  (n=1)
+
+- Прибежище тварей  · n=1  · mahabharata-aranyakaparva
+
+### `BUtAdeH` — bhūtādeḥ  (n=1)
+
+- от первоначала существ  · n=1  · sub-up
+
+### `BUtAdi` — bhūtādi  (n=14)
+
+- Начало первоэлементов  · n=2  · mahabharata-ashvamedhikaparva
+- Источник первоэлементов  · n=2  · mahabharata-ashvamedhikaparva
+- первоначало существ  · n=2  · sub-up
+- ВЕЧНЫЙ ИСТОЧНИК СУЩЕСТВ  · n=1  · ramanuja_gitabhashya
+- начало существ  · n=1  · bhagavadgita-erman
+- началом первоэлементов  · n=1  · mahabharata-ashvamedhikaparva
+- Первый из элементов  · n=1  · sankhya-karika
+- природы первоэлементов  · n=1  · vedartha-samgraha_ramanuja
+- бхутади  · n=1  · vedartha-samgraha_ramanuja
+- Первоначало существ  · n=1  · sub-up
+- в первоначале существ  · n=1  · sub-up
+
+### `BUtAdim` — bhūtādim  (n=3)
+
+- Начало Сущего  · n=1  · gitarthasamgraha-abhinavagupta
+- начало существ  · n=1  · bhagavadgita-burba
+- Начало существ  · n=1  · bhagavadgita-smirnov
+
+### `BUtAkASa` — bhūtākāśa  (n=1)
+
+- бхутам типа акаши  · n=1  · vedartha-samgraha_ramanuja
+
+### `BUtAm` — bhūtām  (n=1)
+
+- славы  · n=1  · ramayana-ayodhyakanda
+
+### `BUtAn` — bhūtān  (n=1)
+
+- обращены  · n=1  · mahabharata-aranyakaparva
+
+### `BUtAnA` — bhūtānā  (n=3)
+
+- существ  · n=2  · mahabharata-adiparva
+- из живущих  · n=1  · mahabharata-aranyakaparva
+
+### `BUtAnAM` — bhūtānāṃ  (n=14)
+
+- существ  · n=6  · bhagavadgity, bhagavadgita-smirnov, kumarasambhava, mahabharata-virataparva, mahabharata-striparva, kau-up
+- в каждом живом существе  · n=2  · ramayana-balakanda
+- из живых существ  · n=1  · ramayana-sundarakanda
+- живых существ  · n=1  · mahabharata-aranyakaparva
+- созданий  · n=1  · mahabharata-bhishmaparva
+- для всех существ  · n=1  · mahabharata-dronaparva
+- мира  · n=1  · kumarasambhava
+- из существ  · n=1  · atharvaveda
+
+### `BUtAnAMpataye` — bhūtānāṃ pataye  (n=1)
+
+- Владыке существ  · n=1  · mahabharata-ashvamedhikaparva
+
+### `BUtAnAm` — bhūtānām  (n=95)
+
+- существ  · n=45  · bhagavadgita-burba, ramanuja_gitabhashya, br-up, gitarthasamgraha-abhinavagupta, bhagavadgita-radha, mahabharata-adiparva, ramayana-ayodhyakanda, ramayana-aranyakanda, bhagavadgity, mahabharata-ashvamedhikaparva, atharvaveda, mahabharata-bhishmaparva, mahabharata-dronaparva, mahabharata-udyogaparva, bhagavadgita-erman, bhagavadgita-smirnov, bhagavadgita-prabhupada, atharvaveda, atharvaveda
+- живых существ  · n=17  · bhagavadgita-prabhupada, mahabharata-ashvamedhikaparva, bhagavadgita-1914, manavadharmashastra, mahabharata-udyogaparva, ramayana-aranyakanda, bhagavadgita-sharma
+- всех существ  · n=3  · bhagavadgita-1914, mahabharata-udyogaparva
+- существами  · n=2  · ramayana-ayodhyakanda, mahabharata-karnaparva
+- существъ  · n=2  · bhagavadgity, bhagavadgita-1788
+- существам  · n=2  · mahabharata-karnaparva, mahabharata-striparva
+- живое  · n=1  · ramayana-ayodhyakanda
+- людьми  · n=1  · ramayana-ayodhyakanda
+- ко всем существам  · n=1  · ramayana-ayodhyakanda
+- людей  · n=1  · ramayana-ayodhyakanda
+- живущих  · n=1  · mahabharata-aranyakaparva
+- живого  · n=1  · mahabharata-adiparva
+- среди творений  · n=1  · mahabharata-udyogaparva
+- всех живущих  · n=1  · mahabharata-udyogaparva
+- элементы  · n=1  · gitarthasamgraha-abhinavagupta
+- является  · n=1  · gitarthasamgraha-abhinavagupta
+- всего сущего  · n=1  · bhagavadgita-1914
+- существа  · n=1  · bhagavadgity
+- Всѣхъ сотворенныхъ существъ  · n=1  · bhagavadgita-1788
+- всѣхъ существъ  · n=1  · bhagavadgita-1788
+- всея натуры  · n=1  · bhagavadgita-1788
+- вселенной  · n=1  · bhagavadgita-1909
+- тех, кто рождается  · n=1  · bhagavadgita-prabhupada
+- всех живых существ  · n=1  · bhagavadgita-prabhupada
+- каждого живого существа  · n=1  · bhagavadgita-prabhupada
+- в существах  · n=1  · bhagavadgita-radha
+- всего живого  · n=1  · mahabharata-ashvamedhikaparva
+- стихий  · n=1  · raghuvamsha
+- элементов  · n=1  · mahabharata-striparva
+- из существ  · n=1  · sub-up
+
+### `BUtAnAmISvare` — bhūtānāmīśvare  (n=1)
+
+- владыка всех существ  · n=1  · mahabharata-shalyaparva
+
+### `BUtAnIha` — bhūtānīha  (n=1)
+
+- формы жизни  · n=1  · mahabharata-aranyakaparva
+
+### `BUtAna` — bhūtāna  (n=1)
+
+- для всех  · n=1  · mahabharata-adiparva
+
+### `BUtAni` — bhūtāni  (n=198)
+
+- существа  · n=112  · bhagavadgita-smirnov, bhagavadgita-burba, bhagavadgita-radha, ch-up, mahabharata-dronaparva, ramanuja_gitabhashya, mahabharata-adiparva, mahabharata-bhishmaparva, gitarthasamgraha-abhinavagupta, bhagavadgity, bhagavadgita-erman, ramayana-aranyakanda, bhagavadgita-1788, br-up, mahabharata-udyogaparva, mahabharata-aranyakaparva, rigveda, bhagavadgita-sharma, bhagavadgita-prabhupada, atharvaveda, mai-up, mahabharata-mahaprasthanikaparva, atharvaveda, ramayana-ayodhyakanda, ramayana-sundarakanda, manavadharmashastra, buddhacharita, bhagavadgita-sementsov, bhagavadgita-1909, mahabharata-karnaparva, mahabharata-ashvamedhikaparva, mahabharata-sabhaparva, atharvaveda, vedartha-samgraha_ramanuja, mahabharata-sauptikaparva, kau-up
+- живые существа  · n=8  · bhagavadgita-prabhupada, ramayana-sundarakanda, mahabharata-adiparva, mahabharata-bhishmaparva, mahabharata-virataparva
+- существ  · n=8  · bhagavadgita-burba, gitarthasamgraha-abhinavagupta, bhagavadgity, bhagavadgita-smirnov, bhagavadgita-sementsov, bhagavadgita-radha, sub-up
+- к духам  · n=6  · gitarthasamgraha-abhinavagupta, bhagavadgita-burba, ramanuja_gitabhashya, bhagavadgita-erman, bhagavadgita-smirnov, bhagavadgita-radha
+- Бхуты  · n=4  · ramayana-aranyakanda, ramayana-ayodhyakanda, mahabharata-ashvamedhikaparva
+- существах  · n=4  · ramayana-aranyakanda, bhagavadgita-burba, bhagavadgita-smirnov, bhagavadgita-radha
+- люди  · n=4  · bhagavadgita-prabhupada, ramanuja_gitabhashya, bhagavadgita-radha
+- бхуты  · n=3  · mahabharata-aranyakaparva, bhagavadgita-1909, mahabharata-ashvamedhikaparva
+- твари  · n=3  · mahabharata-adiparva, bhagavadgita-sementsov, shukasaptati
+- все  · n=3  · gitarthasamgraha-abhinavagupta, bhagavadgita-1788
+- людская молва  · n=2  · mahabharata-bhishmaparva, bhagavadgita-erman
+- живое  · n=2  · ramanuja_gitabhashya, mahabharata-karnaparva
+- всех существ  · n=2  · bhagavadgita-1914
+- сущее  · n=2  · bhagavadgita-1914
+- элементы  · n=2  · shv-up
+- все на земле  · n=1  · ramayana-ayodhyakanda
+- небожители  · n=1  · ramayana-aranyakanda
+- живых существ  · n=1  · ramayana-aranyakanda
+- мир  · n=1  · mahabharata-aranyakaparva
+- людей  · n=1  · mahabharata-aranyakaparva
+- существам  · n=1  · mahabharata-dronaparva
+- было  · n=1  · buddhacharita
+- все существа  · n=1  · mahabharata-udyogaparva
+- является  · n=1  · gitarthasamgraha-abhinavagupta
+- живых существах  · n=1  · gitarthasamgraha-abhinavagupta
+- с существами  · n=1  · gitarthasamgraha-abhinavagupta
+- существ начало  · n=1  · ramanuja_gitabhashya
+- Существа  · n=1  · ramanuja_gitabhashya
+- сущего  · n=1  · bhagavadgita-1914
+- духи природы  · n=1  · bhagavadgita-1914
+- к духам природы  · n=1  · bhagavadgity
+- натуры  · n=1  · bhagavadgita-1788
+- натура  · n=1  · bhagavadgita-1788
+- Ботовъ  · n=1  · bhagavadgita-1788
+- твореній  · n=1  · bhagavadgita-1909
+- Природу  · n=1  · bhagavadgita-1909
+- бхутами  · n=1  · bhagavadgita-1909
+- сотворенное  · n=1  · bhagavadgita-sharma
+- создания  · n=1  · bhagavadgita-sharma
+- сотворенные  · n=1  · bhagavadgita-prabhupada
+- материальный мир  · n=1  · bhagavadgita-prabhupada
+- всё сущее  · n=1  · bhagavadgita-prabhupada
+- к привидениям и духам  · n=1  · bhagavadgita-prabhupada
+- к привидениям  · n=1  · bhagavadgita-prabhupada
+- все живое  · n=1  · mahabharata-karnaparva
+- живыми существами  · n=1  · mahabharata-ashvamedhikaparva
+- злым духам  · n=1  · mahabharata-virataparva
+- Злые духи  · n=1  · mahabharata-virataparva
+
+### `BUtAnisarvARyevAByapUjayan` — bhūtāni sarvāṇyevābhyapūjayan  (n=1)
+
+- все существа одобрили  · n=1  · mahabharata-dronaparva
+
+### `BUtAntaka` — bhūtāntaka  (n=2)
+
+- уничтожающий все живое  · n=1  · mahabharata-adiparva
+- Сокрушитель всех существ  · n=1  · mahabharata-dronaparva
+
+### `BUtAntakam` — bhūtāntakam  (n=1)
+
+- Сокрушителя всех существ  · n=1  · mahabharata-dronaparva
+
+### `BUtAntakaraRa` — bhūtāntakaraṇa  (n=2)
+
+- приведшая к смерти  · n=1  · mahabharata-adiparva
+- погубившая все живущее  · n=1  · mahabharata-adiparva
+
+### `BUtAntararUpakfta` — bhūtāntararūpakṛta  (n=1)
+
+- обусловлена другими материальными элементами  · n=1  · nyaya-bhashya
+
+### `BUtAntarasaMbanDAt` — bhūtāntarasaṃbandhāt  (n=1)
+
+- от примеси других элементов  · n=1  · gitarthasamgraha-abhinavagupta
+
+### `BUtAnugraha` — bhūtānugraha  (n=1)
+
+- приносить пользу живым существам  · n=1  · yoga-sutry_vyasa-bhashya
+
+### `BUtAnukampA` — bhūtānukampā  (n=3)
+
+- сочувствие всему живому  · n=1  · ramayana-ayodhyakanda
+- сострадание к живым существам  · n=1  · mahabharata-udyogaparva
+- сострадателен  · n=1  · raghuvamsha
+
+### `BUtAny` — bhūtāny  (n=1)
+
+- существа  · n=1  · ramanuja_gitabhashya
+
+### `BUtAnyaSezeRa` — bhūtānyaśeṣeṇa  (n=1)
+
+- все существа без исключения  · n=1  · bhagavadgity
+
+### `BUtArTa` — bhūtārtha  (n=4)
+
+- истинного смысла  · n=1  · gitarthasamgraha-abhinavagupta
+- сущую правду  · n=1  · mahabharata-shalyaparva
+- в действительности  · n=1  · yoga-sutry_vyasa-bhashya
+- вещей такими, какими они существуют в действительности  · n=1  · yoga-sutry_vyasa-bhashya
+
+### `BUtArTavyAhfti` — bhūtārthavyāhṛti  (n=1)
+
+- изречение истины  · n=1  · raghuvamsha
+
+### `BUtAt` — bhūtāt  (n=2)
+
+- бытия  · n=1  · atharvaveda
+- Из того, что было  · n=1  · atharvaveda
+
+### `BUtAtmA` — bhūtātmā  (n=9)
+
+- Бхутатман  · n=3  · mai-up
+- душа  · n=1  · manavadharmashastra
+- Душа всего сущего  · n=1  · mahabharata-aranyakaparva
+- душа существ  · n=1  · mahabharata-bhishmaparva
+- душа всех существ  · n=1  · mahabharata-udyogaparva
+- Бхутатманом  · n=1  · mai-up
+- Атман существ  · n=1  · brb-up
+
+### `BUtAtmAnam` — bhūtātmānam  (n=2)
+
+- к Бхутатману  · n=1  · mahabharata-ashvamedhikaparva
+- Бхутатман  · n=1  · mahabharata-ashvamedhikaparva
+
+### `BUtAtman` — bhūtātman  (n=14)
+
+- Бхутатмана  · n=3  · mai-up, mahabharata-ashvamedhikaparva
+- Бхутатман  · n=3  · mai-up, mahabharata-ashvamedhikaparva
+- бхутатман  · n=1  · manavadharmashastra
+- тело  · n=1  · manavadharmashastra
+- души сущего  · n=1  · mahabharata-aranyakaparva
+- воплощенный Атман  · n=1  · mahabharata-aranyakaparva
+- индивидуальная душа  · n=1  · mahabharata-aranyakaparva
+- существ душа  · n=1  · mahabharata-bhishmaparva
+- Атмана (всех) существ  · n=1  · mahabharata-ashvamedhikaparva
+- Атман элементов  · n=1  · mahabharata-ashvamedhikaparva
+
+### `BUtAvAsa` — bhūtāvāsa  (n=1)
+
+- тело  · n=1  · manavadharmashastra
+
+### `BUtAyaSipra` — bhūtāyaśipra  (n=1)
+
+- Железные забрала  · n=1  · rigveda
+
+### `BUta` — bhūta  (n=992)
+
+- существа  · n=197  · br-up, mahabharata-bhishmaparva, mahabharata-adiparva, gitarthasamgraha-abhinavagupta, mahabharata-dronaparva, tai-up, ch-up, mahabharata-ashvamedhikaparva, mahabharata-udyogaparva, bhagavadgita-burba, bhagavadgita-erman, bhagavadgity, ramanuja_gitabhashya, bhagavadgita-1914, bhagavadgita-smirnov, bhagavadgita-sharma, mai-up, ramayana-sundarakanda, bhagavadgita-sementsov, bhagavadgita-radha, ramayana-aranyakanda, mahabharata-aranyakaparva, rigveda, bhagavadgita-prabhupada, mahabharata-striparva, mnar-up, manavadharmashastra, ramayana-balakanda, bhagavadgita-1788, mahabharata-shalyaparva, atharvaveda, mahabharata-sabhaparva, mahabharata-virataparva, atharvaveda, kau-up, bhagavadgita-1909, atharvaveda, atharvaveda, atharvaveda, ait-up, sub-up
+- существ  · n=147  · bhagavadgita-sementsov, mahabharata-bhishmaparva, mahabharata-dronaparva, bhagavadgita-erman, bhagavadgita-smirnov, br-up, gitarthasamgraha-abhinavagupta, bhagavadgita-sharma, bhagavadgita-radha, bhagavadgita-1914, mahabharata-ashvamedhikaparva, ramayana-aranyakanda, mahabharata-aranyakaparva, mahabharata-udyogaparva, bhagavadgita-burba, bhagavadgity, sankhya-karika, mahabharata-adiparva, manavadharmashastra, jabala-up, ramayana-ayodhyakanda, ramayana-sundarakanda, ramayana-balakanda, ramanuja_gitabhashya, mahabharata-sabhaparva, mnar-up, mai-up, tai-up, atharvaveda, ch-up, mahabharata-karnaparva, rigveda, mahabharata-shalyaparva, atharvaveda, atharvaveda, yoga-sutry_vyasa-bhashya, vedartha-samgraha_ramanuja, shv-up, mahabharata-sauptikaparva, isha-up, man-up
+- существо  · n=40  · br-up, mahabharata-dronaparva, mahabharata-ashvamedhikaparva, mahabharata-adiparva, mahabharata-sauptikaparva, mahabharata-aranyakaparva, gitarthasamgraha-abhinavagupta, bhagavadgita-erman, ramayana-aranyakanda, bhagavadgity, bhagavadgita-prabhupada, ch-up, mahabharata-karnaparva, mahabharata-sabhaparva, vedartha-samgraha_ramanuja
+- элементов  · n=30  · sankhya-karika, nyaya-bhashya, manavadharmashastra, mahabharata-ashvamedhikaparva, mahabharata-aranyakaparva, mahabharata-udyogaparva, br-up, buddhacharita, yoga-sutry_vyasa-bhashya, yoga-sutry, yoga-sutry_sharma, yoga-sutry_zagumennov, paramarthasara-abhinavagupta, shiva-sutry_sharma
+- существах  · n=30  · bhagavadgita-burba, bhagavadgita-1914, bhagavadgita-smirnov, mahabharata-aranyakaparva, bhagavadgita-sementsov, bhagavadgita-sharma, ch-up, mahabharata-ashvamedhikaparva, mahabharata-bhishmaparva, gitarthasamgraha-abhinavagupta, ramanuja_gitabhashya, bhagavadgity, bhagavadgita-erman, br-up, brb-up
+- живые существа  · n=29  · bhagavadgita-prabhupada, manavadharmashastra, ramayana-sundarakanda, mahabharata-aranyakaparva, mahabharata-dronaparva, bhagavadgita-erman, nyaya-bhashya, mahabharata-ashvamedhikaparva, mahabharata-ashramavasikaparva
+- живых существ  · n=21  · bhagavadgita-prabhupada, manavadharmashastra, ramayana-sundarakanda, mahabharata-aranyakaparva, mahabharata-striparva, mahabharata-bhishmaparva, mahabharata-dronaparva, bhagavadgita-burba, bhagavadgita-sharma
+- существам  · n=18  · mahabharata-aranyakaparva, manavadharmashastra, mahabharata-bhishmaparva, bhagavadgita-erman, bhagavadgita-smirnov, ramayana-ayodhyakanda, ramayana-balakanda, mahabharata-udyogaparva, bhagavadgita-burba, bhagavadgity, bhagavadgita-sementsov, bhagavadgita-radha
+- существами  · n=15  · mahabharata-dronaparva, br-up, ramayana-sundarakanda, ramayana-aranyakanda, rigveda, mahabharata-adiparva, mahabharata-bhishmaparva, bhagavadgita-1914, bhagavadgita-erman, mahabharata-sabhaparva, yoga-sutry_zagumennov, mai-up, isha-up
+- живое  · n=15  · mahabharata-aranyakaparva, bhagavadgita-sementsov, ramayana-aranyakanda, buddhacharita, mahabharata-karnaparva, mahabharata-ashvamedhikaparva, mahabharata-striparva, mahabharata-sauptikaparva
+- было  · n=14  · atharvaveda, ramayana-ayodhyakanda, mahabharata-aranyakaparva, rigveda, mahabharata-dronaparva, mahabharata-virataparva, atharvaveda, atharvaveda, atharvaveda, atharvaveda, vedartha-samgraha_ramanuja, kai-up
+- живым существам  · n=13  · manavadharmashastra, mahabharata-aranyakaparva, mahabharata-udyogaparva, mahabharata-ashvamedhikaparva, mahabharata-virataparva, yoga-sutry_vyasa-bhashya
+- материальных элементов  · n=13  · nyaya-bhashya, sankhya-karika
+- сущего  · n=12  · mahabharata-aranyakaparva, atharvaveda, atharvaveda, mahabharata-sauptikaparva, bhagavadgita-1914, atharvaveda
+- элементы  · n=10  · manavadharmashastra, yoga-sutry_vyasa-bhashya, br-up, hatha-yoga-pradipika, sankhya-karika, yoga-sutry, vedartha-samgraha_ramanuja, mai-up
+- элементами  · n=10  · manavadharmashastra, mun-up, mahabharata-ashvamedhikaparva, yoga-sutry_sharma, yoga-sutry_zagumennov
+- сущее  · n=10  · mahabharata-aranyakaparva, manavadharmashastra, mahabharata-adiparva, bhagavadgita-1914, bhagavadgita-sharma, bhagavadgita-prabhupada, mahabharata-karnaparva, mahabharata-ashvamedhikaparva, mahabharata-sauptikaparva
+- существъ  · n=9  · bhagavadgita-1788, bhagavadgity, bhagavadgita-1909
+- материальный элемент  · n=9  · nyaya-bhashya, sankhya-karika
+- ставший  · n=7  · gitarthasamgraha-abhinavagupta, vedartha-samgraha_ramanuja, ramayana-aranyakanda, buddhacharita, mahabharata-udyogaparva
+- твари  · n=7  · bhagavadgita-sementsov, bhagavadgita-1914, ramayana-aranyakanda, mahabharata-aranyakaparva
+- прошлое  · n=7  · mahabharata-bhishmaparva, atharvaveda, mahabharata-aranyakaparva, mahabharata-adiparva, atharvaveda
+- живущих  · n=7  · mahabharata-aranyakaparva, gitarthasamgraha-abhinavagupta, bhagavadgita-sementsov, bhagavadgita-sharma, mahabharata-karnaparva, mahabharata-striparva
+- творения  · n=7  · bhagavadgita-1914, bhagavadgita-prabhupada, bhagavadgita-sharma, atharvaveda, shiva-sutry_sharma
+- материальные элементы  · n=7  · nyaya-bhashya
+- бхутов  · n=6  · ramayana-ayodhyakanda, ramayana-aranyakanda, mahabharata-aranyakaparva, mahabharata-dronaparva, mahabharata-udyogaparva, mahabharata-sauptikaparva
+- бхуты  · n=6  · mahabharata-aranyakaparva, mai-up, ramayana-sundarakanda, bhagavadgita-sementsov
+- существе  · n=6  · devi-gita, mahabharata-bhishmaparva, bhagavadgity, bhagavadgita-erman, brb-up
+- элемент  · n=5  · mahabharata-ashvamedhikaparva, mahabharata-adiparva, nyaya-bhashya, yoga-sutry_sharma
+- Бхуты  · n=5  · ramayana-ayodhyakanda, ramayana-aranyakanda, mahabharata-dronaparva, mahabharata-udyogaparva, mahabharata-shalyaparva
+- духов  · n=5  · manavadharmashastra, mahabharata-bhishmaparva, bhagavadgita-sharma, bhagavadgita-radha, mahabharata-sabhaparva
+- Будьте  · n=5  · rigveda, rigveda, rigveda
+- существует  · n=5  · mahabharata-udyogaparva, nyaya-bhashya, atharvaveda, mahabharata-sabhaparva, atharvaveda
+- люди  · n=4  · ramayana-ayodhyakanda, bhagavadgity, bhagavadgita-sementsov, mahabharata-karnaparva
+- духи  · n=4  · mahabharata-bhishmaparva, manavadharmashastra, mahabharata-sabhaparva
+- прошедшее  · n=4  · manavadharmashastra, mahabharata-dronaparva, mai-up, man-up
+- живущие  · n=4  · mahabharata-aranyakaparva, bhagavadgita-1914
+- есть  · n=4  · atharvaveda, mahabharata-aranyakaparva
+- тварей  · n=4  · bhagavadgita-sementsov, mahabharata-adiparva
+- бхут  · n=4  · shukasaptati
+- людей  · n=3  · bhagavadgita-1909, ramayana-ayodhyakanda
+- бхутами  · n=3  · ramayana-aranyakanda, mahabharata-ashvamedhikaparva
+- бхута  · n=3  · mahabharata-aranyakaparva, mahabharata-bhishmaparva, bhagavadgita-smirnov
+- будьте  · n=3  · rigveda, rigveda
+- создания  · n=3  · bhagavadgita-sharma, mahabharata-ashvamedhikaparva
+- материальными элементами  · n=3  · sankhya-karika, nyaya-bhashya
+- сущностей  · n=3  · mahabharata-ashvamedhikaparva, vedartha-samgraha_ramanuja
+- то, что было  · n=3  · atharvaveda, atharvaveda
+- что было  · n=3  · atharvaveda, atharvaveda, atharvaveda
+- существующее  · n=2  · mahabharata-adiparva, ch-up
+- людьми  · n=2  · ramayana-ayodhyakanda
+- живыми существами  · n=2  · ramayana-sundarakanda, mahabharata-aranyakaparva
+- живое существо  · n=2  · manavadharmashastra, yoga-sutry_sharma
+- дух  · n=2  · manavadharmashastra, mahabharata-bhishmaparva
+- живого существа  · n=2  · manavadharmashastra, bhagavadgita-prabhupada
+- живые  · n=2  · mahabharata-aranyakaparva
+- прошлого  · n=2  · mahabharata-aranyakaparva, mahabharata-dronaparva
+- человек  · n=2  · mahabharata-aranyakaparva, bhagavadgita-prabhupada
+- мироздание  · n=2  · rigveda, atharvaveda
+- превратившись  · n=2  · rigveda
+- в существах  · n=2  · bhagavadgita-burba, bhagavadgita-radha
+- все  · n=2  · bhagavadgita-smirnov, bhagavadgita-1909
+- они  · n=2  · bhagavadgita-sementsov, mahabharata-ashvamedhikaparva
+- вещахъ  · n=2  · bhagavadgita-1909
+- всего сущего  · n=2  · bhagavadgita-prabhupada
+- в стороне  · n=2  · rigveda
+- был  · n=2  · nyaya-bhashya, shukasaptati
+- будучи  · n=2  · nyaya-bhashya, shukasaptati
+- являющееся  · n=2  · nyaya-bhashya, vedartha-samgraha_ramanuja
+- сутей  · n=2  · devi-gita
+- является  · n=2  · devi-gita, vedartha-samgraha_ramanuja
+- прошлому  · n=2  · atharvaveda
+- Существа  · n=2  · br-up
+- элемент мироздания  · n=2  · raghuvamsha
+- существования  · n=2  · atharvaveda
+- Бывший  · n=2  · atharvaveda
+- побывав  · n=2  · atharvaveda
+- существованию  · n=2  · atharvaveda
+- являющаяся  · n=2  · sankhya-karika, vedartha-samgraha_ramanuja
+- являющийся  · n=2  · vedartha-samgraha_ramanuja
+- являющиеся  · n=2  · vedartha-samgraha_ramanuja
+- бывшее  · n=2  · shv-up, mnar-up
+- мироздания  · n=1  · atharvaveda
+- составных частей  · n=1  · mahabharata-adiparva
+- стихий  · n=1  · mahabharata-adiparva
+- двадцать четыре  · n=1  · mahabharata-adiparva
+- происходит  · n=1  · mahabharata-adiparva
+- птиц  · n=1  · ramayana-ayodhyakanda
+- по своей природе  · n=1  · ramayana-ayodhyakanda
+- рисом  · n=1  · ramayana-ayodhyakanda
+- злой дух  · n=1  · ramayana-ayodhyakanda
+- стенали  · n=1  · ramayana-ayodhyakanda
+- станет  · n=1  · ramayana-ayodhyakanda
+- смертных  · n=1  · ramayana-ayodhyakanda
+- подданных  · n=1  · ramayana-ayodhyakanda
+- покинешь  · n=1  · ramayana-ayodhyakanda
+- людям  · n=1  · ramayana-ayodhyakanda
+- великим существам  · n=1  · ramayana-sundarakanda
+- хорошо задуманный  · n=1  · ramayana-sundarakanda
+- хорошо задуманные  · n=1  · ramayana-sundarakanda
+- ученики  · n=1  · manavadharmashastra
+- с живыми существами  · n=1  · manavadharmashastra
+- Земля  · n=1  · manavadharmashastra
+- миру  · n=1  · ramayana-aranyakanda
+- всему живому  · n=1  · ramayana-aranyakanda
+- почитая  · n=1  · ramayana-aranyakanda
+- создание  · n=1  · ramayana-aranyakanda
+- мира  · n=1  · ramayana-aranyakanda
+- жертву  · n=1  · ramayana-aranyakanda
+- жертвенное  · n=1  · ramayana-aranyakanda
+- мужа  · n=1  · ramayana-balakanda
+- муж  · n=1  · ramayana-balakanda
+- великаны  · n=1  · mahabharata-aranyakaparva
+- всему сущему  · n=1  · mahabharata-aranyakaparva
+- обращается  · n=1  · mahabharata-aranyakaparva
+- существу  · n=1  · mahabharata-aranyakaparva
+- живущему  · n=1  · mahabharata-aranyakaparva
+- у всех  · n=1  · mahabharata-aranyakaparva
+- имело место  · n=1  · kama-sutra
+- действительные  · n=1  · kama-sutra
+- подобными  · n=1  · mahabharata-adiparva
+- от всех живых существ  · n=1  · mahabharata-adiparva
+- чудесного  · n=1  · mahabharata-adiparva
+- обитателей  · n=1  · mahabharata-bhishmaparva
+- духами  · n=1  · mahabharata-bhishmaparva
+- духам  · n=1  · mahabharata-bhishmaparva
+- Прошлое  · n=1  · mahabharata-bhishmaparva
+- сплошной  · n=1  · mahabharata-dronaparva
+- происходило  · n=1  · mahabharata-dronaparva
+- созданий  · n=1  · mahabharata-dronaparva
+- звери  · n=1  · buddhacharita
+- признаков  · n=1  · buddhacharita
+- выстроились  · n=1  · buddhacharita
+- первоначала  · n=1  · buddhacharita
+- демон  · n=1  · buddhacharita
+- всех  · n=1  · bhagavadgita-1914
+- благу  · n=1  · bhagavadgity
+- натура  · n=1  · bhagavadgity
+- животной  · n=1  · bhagavadgity
+- для существ  · n=1  · bhagavadgita-smirnov
+- смертныхъ  · n=1  · bhagavadgita-1788
+- родъ человѣческой  · n=1  · bhagavadgita-1788
+- натуру  · n=1  · bhagavadgita-1788
+- животными  · n=1  · bhagavadgita-1788
+- существахъ  · n=1  · bhagavadgita-1788
+- натурѣ  · n=1  · bhagavadgita-1788
+- том, что дышит  · n=1  · bhagavadgita-sementsov
+- к духам  · n=1  · bhagavadgita-sementsov
+- в этом мире  · n=1  · bhagavadgita-sementsov
+- вещи  · n=1  · bhagavadgita-1909
+- существуетъ  · n=1  · bhagavadgita-1909
+- Изъ устъ въ уста  · n=1  · bhagavadgita-1909
+- безумнымъ  · n=1  · bhagavadgita-1909
+- живетъ  · n=1  · bhagavadgita-1909
+- Существъ  · n=1  · bhagavadgita-1909
+- всѣхъ  · n=1  · bhagavadgita-1909
+- Ихъ  · n=1  · bhagavadgita-1909
+- Міры  · n=1  · bhagavadgita-1909
+- твореньямъ  · n=1  · bhagavadgita-1909
+- вещей  · n=1  · bhagavadgita-1909
+- тѣла  · n=1  · bhagavadgita-1909
+- природѣ  · n=1  · bhagavadgita-1909
+- Твореній  · n=1  · bhagavadgita-1909
+- животною природой  · n=1  · bhagavadgita-1909
+- матерія природы  · n=1  · bhagavadgita-1909
+- воплощенных  · n=1  · bhagavadgita-sharma
+- Все  · n=1  · bhagavadgita-sharma
+- созданиям  · n=1  · bhagavadgita-sharma
+- сотворены  · n=1  · bhagavadgita-prabhupada
+- живые существа (которые появились на свет)  · n=1  · bhagavadgita-prabhupada
+- материальные тела  · n=1  · bhagavadgita-prabhupada
+- в живых существах  · n=1  · bhagavadgita-prabhupada
+- привидениям и духам  · n=1  · bhagavadgita-prabhupada
+- привидений  · n=1  · bhagavadgita-prabhupada
+- живых существах  · n=1  · bhagavadgita-prabhupada
+- следующее  · n=1  · ch-up
+- станьте  · n=1  · rigveda
+- природа  · n=1  · nyaya-bhashya
+- находящиеся  · n=1  · nyaya-bhashya
+- материальных элементах  · n=1  · nyaya-bhashya
+- материальные вещи  · n=1  · nyaya-bhashya
+- стихия  · n=1  · nyaya-bhashya
+- материальный компонент  · n=1  · nyaya-bhashya
+- кому бы то ни было  · n=1  · mahabharata-ashvamedhikaparva
+- сущность  · n=1  · mahabharata-ashvamedhikaparva
+- природных стихий  · n=1  · mahabharata-ashvamedhikaparva
+- суть  · n=1  · mahabharata-ashvamedhikaparva
+- первоэлементов  · n=1  · mahabharata-ashvamedhikaparva
+- сути  · n=1  · devi-gita
+- того, что было  · n=1  · atharvaveda
+- Прошедшему  · n=1  · br-up
+- причастие bhūta-  · n=1  · atharvaveda
+- существование  · n=1  · atharvaveda
+- вкушаемыми  · n=1  · shatakatrayam-serebryakov
+- случилось  · n=1  · gitagovinda
+- ведь  · n=1  · atharvaveda
+- материальных  · n=1  · sankhya-karika
+- бывшие  · n=1  · sankhya-karika
+- материи  · n=1  · yoga-sutry
+- элементах  · n=1  · yoga-sutry_zagumennov
+- что есть  · n=1  · atharvaveda
+- прошлом  · n=1  · vedartha-samgraha_ramanuja
+- инструментальная  · n=1  · vedartha-samgraha_ramanuja
+- бытующими  · n=1  · vedartha-samgraha_ramanuja
+- состоявшегося  · n=1  · vedartha-samgraha_ramanuja
+- являющейся  · n=1  · vedartha-samgraha_ramanuja
+- первоэлемент  · n=1  · vedartha-samgraha_ramanuja
+- являющихся  · n=1  · vedartha-samgraha_ramanuja
+- реальный  · n=1  · vedartha-samgraha_ramanuja
+- первоэлементы  · n=1  · vedartha-samgraha_ramanuja
+- произошел  · n=1  · vedartha-samgraha_ramanuja
+- бытия  · n=1  · vedartha-samgraha_ramanuja
+- существуют  · n=1  · vedartha-samgraha_ramanuja
+- пребывающий  · n=1  · vedartha-samgraha_ramanuja
+- ставшей  · n=1  · vedartha-samgraha_ramanuja
+- качества  · n=1  · vedartha-samgraha_ramanuja
+- творении  · n=1  · atharvaveda
+- бывшего  · n=1  · kat-up
+- возникнув  · n=1  · mnar-up
+- Возникнув  · n=1  · mnar-up
+- живущим  · n=1  · mahabharata-sauptikaparva
+- сотворено  · n=1  · shiva-sutry_sharma
+- божества  · n=1  · kau-up
+- тем, что есть  · n=1  · atharvaveda
+- на  · n=1  · mahabharata-adiparva
+- элементам  · n=1  · yoga-sutry_vyasa-bhashya
+
+### `BUta-Adi` — bhūta-ādi  (n=1)
+
+- всего превыше  · n=1  · bhagavadgita-1909
+
+### `BUta-Adim` — bhūta-ādim  (n=4)
+
+- Источник всего сущего  · n=1  · bhagavadgita-1914
+- Начало существ  · n=1  · bhagavadgity
+- превыше всѣхъ существъ  · n=1  · bhagavadgita-1788
+- источник [всего] сущего  · n=1  · bhagavadgita-radha
+
+### `BUta-BAva-udBava-karaH` — bhūta-bhāva-udbhava-karaḥ  (n=1)
+
+- то, при котором создаются материальные тела живых существ  · n=1  · bhagavadgita-prabhupada
+
+### `BUta-BAvana` — bhūta-bhāvana  (n=9)
+
+- Источник всех творений  · n=2  · bhagavadgita-1914, bhagavadgity
+- Творящій  · n=2  · bhagavadgity, bhagavadgita-1909
+- существ становление  · n=1  · bhagavadgita-burba
+- Исток всего  · n=1  · bhagavadgita-burba
+- произведшій всю натуру  · n=1  · bhagavadgita-1788
+- Создатель всѣхъ міровъ  · n=1  · bhagavadgita-1909
+- Творец всего сущего  · n=1  · bhagavadgita-radha
+
+### `BUta-BAvanaH` — bhūta-bhāvanaḥ  (n=4)
+
+- производящую Причину  · n=2  · bhagavadgita-1914
+- Творящій  · n=1  · bhagavadgita-1788
+- хранитель всех существ  · n=1  · bhagavadgita-radha
+
+### `BUta-BAvodBava-kara` — bhūta-bhāvodbhava-kara  (n=3)
+
+- причина возникновения и исчезновения существ  · n=1  · bhagavadgity
+- отъ котораго происходитъ родъ натуральныхъ существъ  · n=1  · bhagavadgita-1788
+- Причина всѣхъ существованій  · n=1  · bhagavadgita-1909
+
+### `BUta-BAvodBava-karaH` — bhūta-bhāvodbhava-karaḥ  (n=2)
+
+- производящая появление [состояний] бытия существ  · n=1  · bhagavadgita-burba
+- которая производит рождение существ  · n=1  · bhagavadgita-1914
+
+### `BUta-Bartf` — bhūta-bhartṛ  (n=8)
+
+- хранитель  · n=2  · bhagavadgita-1909, bhagavadgita-radha
+- творец живых существ  · n=1  · ramayana-ayodhyakanda
+- носитель существ  · n=1  · bhagavadgita-burba
+- хранитель существ  · n=1  · bhagavadgita-burba
+- опора всего сущего  · n=1  · bhagavadgita-1914
+- правитель всѣхъ существъ  · n=1  · bhagavadgity
+- правитель  · n=1  · bhagavadgita-1788
+
+### `BUta-Bft` — bhūta-bhṛt  (n=7)
+
+- Поддерживая все существа  · n=2  · bhagavadgita-1914
+- носящий/содержащий существ  · n=1  · bhagavadgita-burba
+- Творящій духъ мой содержитъ  · n=1  · bhagavadgity
+- содержитъ  · n=1  · bhagavadgita-1788
+- Творящій духъ мой  · n=1  · bhagavadgita-1909
+- Тот, кто подерживает существа  · n=1  · bhagavadgita-radha
+
+### `BUta-gaRAn` — bhūta-gaṇān  (n=5)
+
+- толпы духов  · n=1  · bhagavadgita-burba
+- сонму духов природы  · n=1  · bhagavadgita-1914
+- духи природы  · n=1  · bhagavadgita-1914
+- поколѣніе Ботовъ  · n=1  · bhagavadgita-1788
+- духам  · n=1  · bhagavadgita-radha
+
+### `BUta-gaRa` — bhūta-gaṇa  (n=1)
+
+- бхутамъ  · n=1  · bhagavadgita-1909
+
+### `BUta-grAma` — bhūta-grāma  (n=13)
+
+- множество существ  · n=3  · bhagavadgita-1914, bhagavadgita-burba
+- собраніе существъ  · n=2  · bhagavadgity, bhagavadgita-1788
+- духъ  · n=2  · bhagavadgity, bhagavadgita-1909
+- существ толпа  · n=1  · bhagavadgita-burba
+- формы и явленья  · n=1  · bhagavadgita-1909
+- творенья  · n=1  · bhagavadgita-1909
+- міры  · n=1  · bhagavadgita-1909
+- совокупность материальных элементов  · n=1  · bhagavadgita-prabhupada
+- материальных элементов  · n=1  · bhagavadgita-prabhupada
+
+### `BUta-grAmaH` — bhūta-grāmaḥ  (n=2)
+
+- вселенная  · n=1  · bhagavadgita-1788
+- сонм существ  · n=1  · bhagavadgita-radha
+
+### `BUta-grAmam` — bhūta-grāmam  (n=6)
+
+- элементы  · n=2  · bhagavadgita-1914, bhagavadgita-radha
+- существ толпу  · n=1  · bhagavadgita-burba
+- элементов/ существ толпу  · n=1  · bhagavadgita-burba
+- духъ  · n=1  · bhagavadgita-1788
+- сонм существ  · n=1  · bhagavadgita-radha
+
+### `BUta-maheSvara` — bhūta-maheśvara  (n=2)
+
+- великого Властителя всего сущего  · n=1  · bhagavadgita-1914
+- божественную сущность  · n=1  · bhagavadgita-1909
+
+### `BUta-maheSvaram` — bhūta-maheśvaram  (n=4)
+
+- Великого Владыку существ  · n=1  · bhagavadgita-burba
+- великого Владыки существ  · n=1  · bhagavadgity
+- обладателя всѣхъ существъ  · n=1  · bhagavadgita-1788
+- верховного владыки Брахмана  · n=1  · bhagavadgita-radha
+
+### `BUta-pfTag-BAva` — bhūta-pṛthag-bhāva  (n=1)
+
+- множество въ природѣ  · n=1  · bhagavadgita-1909
+
+### `BUta-pfTag-BAvam` — bhūta-pṛthag-bhāvam  (n=2)
+
+- отдельное бытие существ  · n=1  · bhagavadgita-burba
+- различные виды  · n=1  · bhagavadgita-1788
+
+### `BUta-prakfti` — bhūta-prakṛti  (n=1)
+
+- животной (скотской) натуры  · n=1  · bhagavadgita-1788
+
+### `BUta-sTa` — bhūta-stha  (n=3)
+
+- находящийся в существах  · n=1  · bhagavadgita-burba
+- независимъ  · n=1  · bhagavadgity
+- содержитъ  · n=1  · bhagavadgita-1909
+
+### `BUta-sTaH` — bhūta-sthaḥ  (n=4)
+
+- имея корня в них  · n=2  · bhagavadgita-1914
+- независимъ  · n=1  · bhagavadgita-1788
+- находящийся в существах  · n=1  · bhagavadgita-radha
+
+### `BUta-sarga` — bhūta-sarga  (n=4)
+
+- сотворенных существ  · n=2  · bhagavadgita-radha
+- творческое проявление  · n=1  · bhagavadgita-1914
+- рода судьбы  · n=1  · bhagavadgita-1788
+
+### `BUta-sargau` — bhūta-sargau  (n=3)
+
+- характера существ  · n=1  · bhagavadgita-burba
+- рода существ  · n=1  · bhagavadgity
+- влиянья  · n=1  · bhagavadgita-1909
+
+### `BUta-viSeza-saMGAn` — bhūta-viśeṣa-saṃghān  (n=1)
+
+- виды существ и каждый с отличием своим  · n=1  · bhagavadgity
+
+### `BUta-viSeza-saMGa` — bhūta-viśeṣa-saṃgha  (n=4)
+
+- множества видов существ  · n=1  · bhagavadgita-burba
+- виды существ и каждый с отличием своим  · n=1  · bhagavadgita-1914
+- особенные роды существъ  · n=1  · bhagavadgita-1788
+- живымъ всѣмъ существамъ  · n=1  · bhagavadgita-1909
+
+### `BUta-viSeza-saNGa` — bhūta-viśeṣa-saṅgha  (n=1)
+
+- сонмы различных существ  · n=1  · bhagavadgita-radha
+
+### `BUtaBAva` — bhūtabhāva  (n=1)
+
+- сущность элементов  · n=1  · yoga-sutry_vyasa-bhashya
+
+### `BUtaBAvana` — bhūtabhāvana  (n=19)
+
+- Осуществление существ  · n=2  · mahabharata-bhishmaparva, bhagavadgita-erman
+- начало существ  · n=2  · bhagavadgita-erman, bhagavadgita-smirnov
+- источник всего сущего  · n=2  · bhagavadgita-prabhupada
+- производителю тварей  · n=1  · mahabharata-adiparva
+- создатель существ  · n=1  · mahabharata-adiparva
+- податель благополучия  · n=1  · mahabharata-adiparva
+- творец блага существ  · n=1  · mahabharata-bhishmaparva
+- основа Бытия  · n=1  · gitarthasamgraha-abhinavagupta
+- Начало существ  · n=1  · gitarthasamgraha-abhinavagupta
+- осуществляет существа  · n=1  · ramanuja_gitabhashya
+- осуществленье существ  · n=1  · ramanuja_gitabhashya
+- производитель существ  · n=1  · bhagavadgita-smirnov
+- к жизни вызывает  · n=1  · bhagavadgita-sementsov
+- существ осуществленье  · n=1  · bhagavadgita-sementsov
+- Источник всего сущего  · n=1  · bhagavadgita-sharma
+- о источник всего сущего  · n=1  · bhagavadgita-prabhupada
+
+### `BUtaBAvanaH` — bhūtabhāvanaḥ  (n=3)
+
+- начало существ  · n=1  · mahabharata-bhishmaparva
+- источник существ  · n=1  · mahabharata-bhishmaparva
+- Творцом всех созданий  · n=1  · bhagavadgita-sharma
+
+### `BUtaBAvanam` — bhūtabhāvanam  (n=2)
+
+- создатель существ  · n=1  · mahabharata-adiparva
+- дарующего благо всему сущему  · n=1  · mahabharata-aranyakaparva
+
+### `BUtaBAvasya` — bhūtabhāvasya  (n=1)
+
+- Существование  · n=1  · gitarthasamgraha-abhinavagupta
+
+### `BUtaBAvinI` — bhūtabhāvinī  (n=1)
+
+- сущего и будущего  · n=1  · vedartha-samgraha_ramanuja
+
+### `BUtaBAvodBavakara` — bhūtabhāvodbhavakara  (n=3)
+
+- порожденье, источник существ бывания  · n=1  · ramanuja_gitabhashya
+- творение, вводящее существа в бытие  · n=1  · bhagavadgita-erman
+- всех существ бытия источник  · n=1  · bhagavadgita-sementsov
+
+### `BUtaBAvodBavakaraH` — bhūtabhāvodbhavakaraḥ  (n=4)
+
+- творение, вводящее существа в бытие  · n=1  · mahabharata-bhishmaparva
+- Творящее бытие и уничтожение сотворенного  · n=1  · gitarthasamgraha-abhinavagupta
+- причина возникновения и исчезновения существ  · n=1  · bhagavadgita-smirnov
+- отречение от главной причины существования  · n=1  · bhagavadgita-sharma
+
+### `BUtaBartf` — bhūtabhartṛ  (n=10)
+
+- поддерживающего существа  · n=4  · mahabharata-bhishmaparva, bhagavadgita-erman
+- Поддержатель существ  · n=1  · gitarthasamgraha-abhinavagupta
+- опора  · n=1  · ramanuja_gitabhashya
+- носителя всех существ  · n=1  · bhagavadgita-smirnov
+- опора всех живых существ  · n=1  · bhagavadgita-sharma
+- хранитель всех живых существ  · n=1  · bhagavadgita-prabhupada
+- хранитель всего живого  · n=1  · bhagavadgita-prabhupada
+
+### `BUtaBautikAnAm` — bhūtabhautikānām  (n=1)
+
+- материальных первоэлементов и того, что от них  · n=1  · sankhya-karika
+
+### `BUtaBavya` — bhūtabhavya  (n=6)
+
+- бывшего и будущего  · n=3  · kat-up, br-up
+- прошедшего и будущего  · n=2  · mahabharata-shalyaparva, kat-up
+- что было-и-что будет  · n=1  · atharvaveda
+
+### `BUtaBavyaBavannATa` — bhūtabhavyabhavannātha  (n=2)
+
+- властвующий над прошлым, будущим и настоящим  · n=1  · mahabharata-bhishmaparva
+- владыка прошедшего, будущего и настоящего  · n=1  · mahabharata-sabhaparva
+
+### `BUtaBavyaBavatpraBu` — bhūtabhavyabhavatprabhu  (n=2)
+
+- властелин прошедшего, настоящего и будущего  · n=1  · mahabharata-udyogaparva
+- властвуешь над прошлым, настоящим и будущим  · n=1  · mahabharata-karnaparva
+
+### `BUtaBavyaBavizyARAm` — bhūtabhavyabhaviṣyāṇām  (n=1)
+
+- прошлых, нынешних и будущих  · n=1  · mahabharata-ashvamedhikaparva
+
+### `BUtaBavyaBavizyAdi` — bhūtabhavyabhaviṣyādi  (n=1)
+
+- прошлое, настоящее, будущее и прочее  · n=1  · mahabharata-ashvamedhikaparva
+
+### `BUtaBavyaBavizyavit` — bhūtabhavyabhaviṣyavit  (n=1)
+
+- ведающий прошлое, настоящее и будущее  · n=1  · mahabharata-bhishmaparva
+
+### `BUtaBavyasya` — bhūtabhavyasya  (n=1)
+
+- прошлого и будущего  · n=1  · mahabharata-aranyakaparva
+
+### `BUtaBavyeSa` — bhūtabhavyeśa  (n=2)
+
+- владыка прошедшего и будущего  · n=1  · mahabharata-karnaparva
+- властитель будущего и прошлого  · n=1  · mahabharata-mahaprasthanikaparva
+
+### `BUtaBeda` — bhūtabheda  (n=1)
+
+- раскола  · n=1  · mahabharata-aranyakaparva
+
+### `BUtaBft` — bhūtabhṛt  (n=9)
+
+- поддерживает существа  · n=2  · mahabharata-bhishmaparva, bhagavadgita-erman
+- поддерживает  · n=1  · mahabharata-bhishmaparva
+- Поддержатель сущего  · n=1  · gitarthasamgraha-abhinavagupta
+- несет существа  · n=1  · ramanuja_gitabhashya
+- носитель существ  · n=1  · bhagavadgita-smirnov
+- несет  · n=1  · bhagavadgita-sementsov
+- Покровителем всего сущего  · n=1  · bhagavadgita-sharma
+- хранитель всех живых существ  · n=1  · bhagavadgita-prabhupada
+
+### `BUtaDarA` — bhūtadharā  (n=1)
+
+- несущая на себе все живое  · n=1  · mahabharata-karnaparva
+
+### `BUtaM` — bhūtaṃ  (n=19)
+
+- прошедшее  · n=4  · br-up
+- существо  · n=2  · mahabharata-aranyakaparva, mahabharata-adiparva
+- прошлое  · n=2  · mahabharata-dronaparva, mahabharata-virataparva
+- Прошлое  · n=2  · mahabharata-ashvamedhikaparva
+- то, что было  · n=2  · atharvaveda
+- прошлом  · n=1  · ramayana-balakanda
+- Будьте  · n=1  · rigveda
+- вы  · n=1  · rigveda
+- иллюзорна  · n=1  · mahabharata-ashvamedhikaparva
+- из Истины  · n=1  · mahabharata-ashvamedhikaparva
+- бхута  · n=1  · shukasaptati
+- была  · n=1  · amaru-shataka
+
+### `BUtaSabdena` — bhūtaśabdena  (n=1)
+
+- словом бхута  · n=1  · mai-up
+
+### `BUtaSudDi` — bhūtaśuddhi  (n=1)
+
+- бхуташуддхи  · n=1  · devi-gita
+
+### `BUtaYcaBavizyacca` — bhūtañ ca bhaviṣyac ca  (n=1)
+
+- прошедшее и будущее  · n=1  · kau-up
+
+### `BUtacaitanika` — bhūtacaitanika  (n=2)
+
+- Материалист  · n=1  · nyaya-bhashya
+- материалист  · n=1  · nyaya-bhashya
+
+### `BUtacamU` — bhūtacamū  (n=1)
+
+- воинам  · n=1  · buddhacharita
+
+### `BUtacintaka` — bhūtacintaka  (n=1)
+
+- последователи учения об элементах  · n=1  · mahabharata-ashvamedhikaparva
+
+### `BUtadayA` — bhūtadayā  (n=2)
+
+- сострадании  · n=1  · nyaya-bhashya
+- сострадание к живым существам  · n=1  · nyaya-bhashya
+
+### `BUtadeha` — bhūtadeha  (n=1)
+
+- тел живущих  · n=1  · mahabharata-aranyakaparva
+
+### `BUtagaRA` — bhūtagaṇā  (n=1)
+
+- бхутов  · n=1  · ramayana-sundarakanda
+
+### `BUtagaRAn` — bhūtagaṇān  (n=8)
+
+- множеству бхутов  · n=2  · bhagavadgity, bhagavadgita-smirnov
+- привидениям  · n=2  · bhagavadgita-prabhupada
+- сонмам духов  · n=1  · mahabharata-bhishmaparva
+- полчища упырей  · n=1  · ramanuja_gitabhashya
+- множество бхутов  · n=1  · bhagavadgita-smirnov
+- призраков  · n=1  · bhagavadgita-sharma
+
+### `BUtagaRa` — bhūtagaṇa  (n=11)
+
+- толпы бхутов  · n=1  · mahabharata-aranyakaparva
+- толпы существ  · n=1  · mahabharata-dronaparva
+- демонов  · n=1  · buddhacharita
+- стаи демонов  · n=1  · buddhacharita
+- сонмам духов  · n=1  · bhagavadgita-erman
+- привидений  · n=1  · bhagavadgita-sementsov
+- сонмища бхутов  · n=1  · mahabharata-karnaparva
+- сонмы живых существ  · n=1  · mahabharata-karnaparva
+- сонмы существ  · n=1  · mahabharata-karnaparva
+- бхутов  · n=1  · mahabharata-ashvamedhikaparva
+- духов  · n=1  · mai-up
+
+### `BUtagaRaiH` — bhūtagaṇaiḥ  (n=1)
+
+- существа  · n=1  · buddhacharita
+
+### `BUtagrAma` — bhūtagrāma  (n=19)
+
+- множество существ  · n=6  · bhagavadgita-smirnov, gitarthasamgraha-abhinavagupta, bhagavadgita-sharma, mahabharata-ashvamedhikaparva
+- сонм существ  · n=3  · bhagavadgita-erman, mahabharata-bhishmaparva
+- строй частей  · n=2  · bhagavadgita-erman
+- совокупности существ  · n=2  · mahabharata-ashvamedhikaparva
+- совокупность существ  · n=1  · gitarthasamgraha-abhinavagupta
+- скопище существ  · n=1  · ramanuja_gitabhashya
+- существ несметные толпы  · n=1  · bhagavadgita-sementsov
+- существ неисчетные толпы  · n=1  · bhagavadgita-sementsov
+- толпу элементов  · n=1  · bhagavadgita-sementsov
+- толпа элементов телесных  · n=1  · bhagavadgita-sementsov
+
+### `BUtagrAmaH` — bhūtagrāmaḥ  (n=2)
+
+- толпа существ  · n=1  · ramanuja_gitabhashya
+- множество существ  · n=1  · bhagavadgity
+
+### `BUtagrAmam` — bhūtagrāmam  (n=11)
+
+- сонм существ  · n=2  · mahabharata-bhishmaparva
+- строй частей  · n=2  · mahabharata-bhishmaparva
+- элементов скопление  · n=1  · gitarthasamgraha-abhinavagupta
+- толпу элементов  · n=1  · ramanuja_gitabhashya
+- стихии  · n=1  · bhagavadgita-smirnov
+- всех созданий  · n=1  · bhagavadgita-sharma
+- материальные элементы  · n=1  · bhagavadgita-sharma
+- мироздание  · n=1  · bhagavadgita-prabhupada
+- все сущее  · n=1  · bhagavadgita-prabhupada
+
+### `BUtagrAmasya` — bhūtagrāmasya  (n=1)
+
+- сущего  · n=1  · mahabharata-ashvamedhikaparva
+
+### `BUtagrAme` — bhūtagrāme  (n=1)
+
+- число живых существ  · n=1  · mahabharata-sauptikaparva
+
+### `BUtagurave` — bhūtagurave  (n=2)
+
+- наставнику всех существ  · n=1  · mahabharata-sabhaparva
+- Наставник всех существ  · n=1  · mahabharata-sabhaparva
+
+### `BUtahita` — bhūtahita  (n=1)
+
+- благе сущего  · n=1  · mahabharata-aranyakaparva
+
+### `BUtahitam` — bhūtahitam  (n=1)
+
+- служит благу сущего  · n=1  · mahabharata-aranyakaparva
+
+### `BUtahite` — bhūtahite  (n=1)
+
+- об их благе  · n=1  · mahabharata-aranyakaparva
+
+### `BUtahiterataH` — bhūtahite rataḥ  (n=1)
+
+- печется о благе всего живого  · n=1  · mahabharata-karnaparva
+
+### `BUtaiH` — bhūtaiḥ  (n=6)
+
+- боги  · n=2  · ramayana-ayodhyakanda
+- рыбы  · n=1  · ramayana-aranyakanda
+- бхутов  · n=1  · mahabharata-aranyakaparva
+- все сущее  · n=1  · mahabharata-aranyakaparva
+- бхутами  · n=1  · mahabharata-striparva
+
+### `BUtajAtayaH` — bhūtajātayaḥ  (n=1)
+
+- породы существ  · n=1  · mahabharata-adiparva
+
+### `BUtajAti` — bhūtajāti  (n=1)
+
+- бхутов  · n=1  · mahabharata-udyogaparva
+
+### `BUtajaya` — bhūtajaya  (n=1)
+
+- познание каждого элемента по отдельности  · n=1  · shiva-sutry_sharma
+
+### `BUtakaivalya` — bhūtakaivalya  (n=1)
+
+- единства со временем  · n=1  · shiva-sutry_sharma
+
+### `BUtakarman` — bhūtakarman  (n=2)
+
+- Бхутакарман  · n=2  · mahabharata-dronaparva
+
+### `BUtakft` — bhūtakṛt  (n=17)
+
+- творец существ  · n=3  · mahabharata-adiparva, mahabharata-sabhaparva, atharvaveda
+- создатели существования  · n=3  · atharvaveda, atharvaveda
+- Творец существующего  · n=1  · mahabharata-aranyakaparva
+- создатели всего сущего  · n=1  · mahabharata-dronaparva
+- Создатели всего сущего  · n=1  · mahabharata-dronaparva
+- Создатель  · n=1  · mahabharata-ashvamedhikaparva
+- Создатель первоэлементов  · n=1  · mahabharata-ashvamedhikaparva
+- первоэлемент  · n=1  · mahabharata-ashvamedhikaparva
+- создавшие существа  · n=1  · atharvaveda
+- творцы существования  · n=1  · atharvaveda
+- Создатели существования  · n=1  · atharvaveda
+- Творцы существ  · n=1  · atharvaveda
+- творцы существ  · n=1  · atharvaveda
+
+### `BUtakftAM` — bhūtakṛtāṃ  (n=1)
+
+- создателей существования  · n=1  · atharvaveda
+
+### `BUtakfta` — bhūtakṛta  (n=1)
+
+- от элементов производные свойства  · n=1  · mahabharata-ashvamedhikaparva
+
+### `BUtakftaH` — bhūtakṛtaḥ  (n=1)
+
+- создатели существ  · n=1  · atharvaveda
+
+### `BUtalAt` — bhūtalāt  (n=1)
+
+- с земли  · n=1  · mahabharata-adiparva
+
+### `BUtala` — bhūtala  (n=18)
+
+- земле  · n=3  · mahabharata-aranyakaparva, mahabharata-dronaparva, yotat-up
+- на землю  · n=2  · mahabharata-shantiparva, mahabharata-karnaparva
+- землю  · n=2  · ramayana-sundarakanda, mahabharata-dronaparva
+- наземь  · n=2  · mahabharata-aranyakaparva, mahabharata-bhishmaparva
+- земли  · n=2  · mahabharata-aranyakaparva, mahabharata-udyogaparva
+- земля  · n=2  · mahabharata-dronaparva
+- на земле  · n=1  · mahabharata-adiparva
+- борозды  · n=1  · ramayana-balakanda
+- из борозды  · n=1  · ramayana-balakanda
+- поверхности земли  · n=1  · ramayana-balakanda
+- на сырой земле  · n=1  · mahabharata-shalyaparva
+
+### `BUtalakzaRa` — bhūtalakṣaṇa  (n=1)
+
+- признаков материальных элементов  · n=1  · nyaya-bhashya
+
+### `BUtalam` — bhūtalam  (n=2)
+
+- на землю  · n=1  · mahabharata-udyogaparva
+- землю  · n=1  · raghuvamsha
+
+### `BUtale` — bhūtale  (n=12)
+
+- на землю  · n=7  · mahabharata-shantiparva, mahabharata-dronaparva, mahabharata-karnaparva, mahabharata-shalyaparva, mahabharata-ashvamedhikaparva, mahabharata-virataparva
+- на земле  · n=2  · mahabharata-dronaparva, mahabharata-sabhaparva
+- с земли  · n=1  · mahabharata-aranyakaparva
+- земле  · n=1  · mahabharata-bhishmaparva
+- в прах  · n=1  · mahabharata-udyogaparva
+
+### `BUtalonmaTana` — bhūtalonmathana  (n=1)
+
+- Бхуталонматхана  · n=1  · mahabharata-shalyaparva
+
+### `BUtam` — bhūtam  (n=43)
+
+- существо  · n=5  · atharvaveda, mahabharata-adiparva, mahabharata-aranyakaparva, bhagavadgita-burba
+- было  · n=4  · rigveda, mahabharata-dronaparva, atharvaveda, shv-up
+- будьте  · n=4  · rigveda, rigveda
+- чудище  · n=2  · mahabharata-aranyakaparva
+- существа  · n=2  · mahabharata-bhishmaparva, bhagavadgita-erman
+- Вступитесь  · n=2  · rigveda
+- прошлое  · n=2  · atharvaveda
+- то, что было  · n=2  · atharvaveda
+- обернулось  · n=1  · ramayana-ayodhyakanda
+- был  · n=1  · ramayana-aranyakanda
+- сын  · n=1  · ramayana-balakanda
+- стал  · n=1  · mahabharata-aranyakaparva
+- чудовище  · n=1  · mahabharata-aranyakaparva
+- у вас  · n=1  · rigveda
+- Помогайте  · n=1  · rigveda
+- помогайте  · n=1  · rigveda
+- была  · n=1  · rigveda
+- Прибудьте  · n=1  · rigveda
+- ракшас  · n=1  · mahabharata-adiparva
+- создание  · n=1  · mahabharata-adiparva
+- живое существо  · n=1  · mahabharata-adiparva
+- будете  · n=1  · rigveda
+- были  · n=1  · rigveda
+- сущее  · n=1  · bhagavadgita-radha
+- существование  · n=1  · atharvaveda
+- что было  · n=1  · atharvaveda
+- бхут  · n=1  · shukasaptati
+- бхута  · n=1  · mahabharata-sauptikaparva
+
+### `BUtamAtrA` — bhūtamātrā  (n=4)
+
+- элементах  · n=1  · manavadharmashastra
+- элементы существ  · n=1  · kau-up
+- элемент существа  · n=1  · kau-up
+- Элемент существа  · n=1  · kau-up
+
+### `BUtamAtra` — bhūtamātra  (n=4)
+
+- только материальные элементы  · n=2  · nyaya-bhashya
+- материальные вещи как таковые  · n=1  · nyaya-bhashya
+- только из материальных элементов  · n=1  · nyaya-bhashya
+
+### `BUtamaRi` — bhūtamaṇi  (n=1)
+
+- чудеснейший камень мира  · n=1  · mahabharata-sabhaparva
+
+### `BUtamaheSvara` — bhūtamaheśvara  (n=4)
+
+- великого владыку существ  · n=2  · ramanuja_gitabhashya
+- великий владыка существ  · n=1  · ramanuja_gitabhashya
+- великого владыки существ  · n=1  · bhagavadgita-erman
+
+### `BUtamaheSvaram` — bhūtamaheśvaram  (n=1)
+
+- Великого Владыки существ  · n=1  · bhagavadgita-smirnov
+
+### `BUtana` — bhūtana  (n=2)
+
+- будьте  · n=2  · rigveda, rigveda
+
+### `BUtapAla` — bhūtapāla  (n=2)
+
+- хранитель существ  · n=2  · br-up, mai-up
+
+### `BUtapUrvAm` — bhūtapūrvām  (n=1)
+
+- бывало раньше  · n=1  · mahabharata-bhishmaparva
+
+### `BUtapUrva` — bhūtapūrva  (n=6)
+
+- случалось  · n=1  · mahabharata-aranyakaparva
+- бывший раньше  · n=1  · kama-sutra
+- было  · n=1  · mahabharata-adiparva
+- раньше  · n=1  · mahabharata-dronaparva
+- прежде  · n=1  · mahabharata-udyogaparva
+- ранее  · n=1  · mahabharata-udyogaparva
+
+### `BUtapUrvaH` — bhūtapūrvaḥ  (n=1)
+
+- прежде  · n=1  · mahabharata-udyogaparva
+
+### `BUtapUrvam` — bhūtapūrvam  (n=3)
+
+- прежде царствовал  · n=1  · ramayana-aranyakanda
+- никогда раньше  · n=1  · mahabharata-dronaparva
+- было  · n=1  · mahabharata-udyogaparva
+
+### `BUtapUrvasuBagA` — bhūtapūrvasubhagā  (n=1)
+
+- прежней любимицей  · n=1  · kama-sutra
+
+### `BUtaparyyantam` — bhūtaparyyantam  (n=2)
+
+- вплоть до материальных элементов  · n=2  · sankhya-karika
+
+### `BUtapati` — bhūtapati  (n=14)
+
+- владыка существ  · n=2  · mahabharata-sabhaparva
+- Повелитель существ  · n=2  · atharvaveda
+- владыка всех существ  · n=1  · mahabharata-adiparva
+- владыки земли  · n=1  · ramayana-sundarakanda
+- Владыка тварей  · n=1  · mahabharata-aranyakaparva
+- Владыка духов  · n=1  · mahabharata-bhishmaparva
+- Повелитель духов  · n=1  · mahabharata-bhishmaparva
+- владыка созданий  · n=1  · mahabharata-udyogaparva
+- Невозмутимому  · n=1  · kumarasambhava
+- Владыка  · n=1  · kumarasambhava
+- повелители существ  · n=1  · atharvaveda
+- господину существования  · n=1  · atharvaveda
+
+### `BUtapatiprakASa` — bhūtapatiprakāśa  (n=1)
+
+- подобен Повелителю бхутов  · n=1  · mahabharata-aranyakaparva
+
+### `BUtapatir` — bhūtapatir  (n=2)
+
+- Владыки бхутов  · n=2  · mahabharata-aranyakaparva
+
+### `BUtapfTagBAva` — bhūtapṛthagbhāva  (n=1)
+
+- раздельное бытие существ  · n=1  · mahabharata-bhishmaparva
+
+### `BUtapfTagBAvam` — bhūtapṛthagbhāvam  (n=4)
+
+- существ разделенное бытие  · n=1  · gitarthasamgraha-abhinavagupta
+- существ бытия раздельность  · n=1  · ramanuja_gitabhashya
+- раздельное бытие существ  · n=1  · bhagavadgita-erman
+- разделенным  · n=1  · bhagavadgita-sharma
+
+### `BUtapfTaktva` — bhūtapṛthaktva  (n=1)
+
+- познание каждого элемента по отдельности  · n=1  · shiva-sutry_sharma
+
+### `BUtaprakfti` — bhūtaprakṛti  (n=3)
+
+- тварной природе  · n=2  · gitarthasamgraha-abhinavagupta
+- пракрити и элементов  · n=1  · gitarthasamgraha-abhinavagupta
+
+### `BUtaprakftimokza` — bhūtaprakṛtimokṣa  (n=3)
+
+- освобождение существ от природы  · n=2  · mahabharata-bhishmaparva, bhagavadgita-burba
+- свободу существ от природы  · n=1  · ramanuja_gitabhashya
+
+### `BUtaprakftimokzam` — bhūtaprakṛtimokṣam  (n=2)
+
+- освобождение существ от природы  · n=1  · bhagavadgita-erman
+- путем, ведущим к Высшей Цели из оков существования  · n=1  · bhagavadgita-sharma
+
+### `BUtapretapiSAcAMSca` — bhūtapretapiśācāṃśca  (n=1)
+
+- Бхутам, претам, пишачам  · n=1  · gitarthasamgraha-abhinavagupta
+
+### `BUtasAkzI` — bhūtasākṣī  (n=1)
+
+- очевидец  · n=1  · mahabharata-aranyakaparva
+
+### `BUtasTAna` — bhūtasthāna  (n=2)
+
+- обиталища  · n=1  · mahabharata-adiparva
+- места существ  · n=1  · mahabharata-adiparva
+
+### `BUtasTa` — bhūtastha  (n=5)
+
+- пребывающий в сущем  · n=1  · gitarthasamgraha-abhinavagupta
+- в существах пребывает  · n=1  · ramanuja_gitabhashya
+- пребывающий в существах  · n=1  · bhagavadgita-smirnov
+- в них  · n=1  · bhagavadgita-sementsov
+- находящийся в мироздании  · n=1  · bhagavadgita-prabhupada
+
+### `BUtasTaH` — bhūtasthaḥ  (n=3)
+
+- пребывает в существах  · n=2  · mahabharata-bhishmaparva
+- пребываю в них  · n=1  · bhagavadgita-sharma
+
+### `BUtasUkzma` — bhūtasūkṣma  (n=1)
+
+- тонкий элемент  · n=1  · yoga-sutry_vyasa-bhashya
+
+### `BUtasUkzmasamApanna` — bhūtasūkṣmasamāpanna  (n=1)
+
+- ассимилируется им  · n=1  · yoga-sutry_vyasa-bhashya
+
+### `BUtasUkzmasvarUpa` — bhūtasūkṣmasvarūpa  (n=1)
+
+- собственная форма тонкого элемента  · n=1  · yoga-sutry_vyasa-bhashya
+
+### `BUtasaMhArakAraka` — bhūtasaṃhārakāraka  (n=1)
+
+- причиняет разрушение всему существующему  · n=1  · mahabharata-adiparva
+
+### `BUtasaMsAra` — bhūtasaṃsāra  (n=1)
+
+- круговороте душ  · n=1  · manavadharmashastra
+
+### `BUtasaMyoga` — bhūtasaṃyoga  (n=1)
+
+- соединение элементов  · n=1  · nyaya-bhashya
+
+### `BUtasaNGa` — bhūtasaṅgha  (n=7)
+
+- сонмы существ  · n=1  · mahabharata-dronaparva
+- существа  · n=1  · mahabharata-dronaparva
+- сонмами злых духов  · n=1  · mahabharata-dronaparva
+- скопищами бхутов  · n=1  · mahabharata-shalyaparva
+- бхутов  · n=1  · mahabharata-shalyaparva
+- скопищ всех существ  · n=1  · mahabharata-shalyaparva
+- сонмища бхутов  · n=1  · mahabharata-sauptikaparva
+
+### `BUtasamAgamaH` — bhūtasamāgamaḥ  (n=1)
+
+- существ живых соединение  · n=1  · buddhacharita
+
+### `BUtasammohana` — bhūtasammohana  (n=1)
+
+- ввергающей в смятение все живое  · n=1  · mahabharata-karnaparva
+
+### `BUtasammohane` — bhūtasammohane  (n=1)
+
+- обольщающей все твари  · n=1  · mahabharata-adiparva
+
+### `BUtasamucCraya` — bhūtasamucchraya  (n=1)
+
+- иерархия сутей  · n=1  · mahabharata-ashvamedhikaparva
+
+### `BUtasanplava` — bhūtasanplava  (n=1)
+
+- растворением  · n=1  · sankhya-karika
+
+### `BUtasarga` — bhūtasarga  (n=10)
+
+- Существ творения  · n=2  · mahabharata-bhishmaparva, bhagavadgita-erman
+- твари  · n=1  · mahabharata-adiparva
+- творения существ  · n=1  · mahabharata-adiparva
+- природы существ  · n=1  · gitarthasamgraha-abhinavagupta
+- рожденья существ  · n=1  · ramanuja_gitabhashya
+- рода существ  · n=1  · bhagavadgita-smirnov
+- вида воплощений  · n=1  · bhagavadgita-sharma
+- миросозидание  · n=1  · nyaya-bhashya
+- миропроявление материальных элементов  · n=1  · sankhya-karika
+
+### `BUtasargau` — bhūtasargau  (n=2)
+
+- природы существ  · n=1  · bhagavadgita-sementsov
+- (вида) сотворенных живых существ  · n=1  · bhagavadgita-prabhupada
+
+### `BUtasattamaH` — bhūtasattamaḥ  (n=1)
+
+- лучший  · n=1  · ramayana-ayodhyakanda
+
+### `BUtasenAgaRa` — bhūtasenāgaṇa  (n=1)
+
+- полчища существ  · n=1  · mahabharata-shalyaparva
+
+### `BUtasfzwi` — bhūtasṛṣṭi  (n=2)
+
+- время их создания  · n=1  · nyaya-bhashya
+- миросозидания  · n=1  · nyaya-bhashya
+
+### `BUtasya` — bhūtasya  (n=14)
+
+- существа  · n=4  · mahabharata-aranyakaparva, atharvaveda, mai-up
+- вселенной  · n=2  · atharvaveda
+- этого бытия  · n=1  · atharvaveda
+- мировоззрения  · n=1  · atharvaveda
+- своему  · n=1  · ramayana-ayodhyakanda
+- прошлое  · n=1  · mahabharata-aranyakaparva
+- страшилищем  · n=1  · mahabharata-aranyakaparva
+- творения  · n=1  · rigveda
+- из существ  · n=1  · mahabharata-adiparva
+- бытия  · n=1  · atharvaveda
+
+### `BUtasyaBUtasya` — bhūtasya bhūtasya  (n=1)
+
+- каждого существа  · n=1  · kau-up
+
+### `BUtatriguRam` — bhūtatriguṇam  (n=1)
+
+- множество существ  · n=1  · mai-up
+
+### `BUtavAsa` — bhūtavāsa  (n=1)
+
+- обиталище бхутов  · n=1  · shukasaptati
+
+### `BUtavAsam` — bhūtavāsam  (n=1)
+
+- Бхутаваса  · n=1  · shukasaptati
+
+### `BUtavarman` — bhūtavarman  (n=1)
+
+- Бхутаварман  · n=1  · mahabharata-dronaparva
+
+### `BUtaviBAvana` — bhūtavibhāvana  (n=1)
+
+- являющий [миру] существа  · n=1  · mahabharata-bhishmaparva
+
+### `BUtaviSezasaNGAn` — bhūtaviśeṣasaṅghān  (n=3)
+
+- существ собрания  · n=1  · gitarthasamgraha-abhinavagupta
+- множество разных существ  · n=1  · bhagavadgita-smirnov
+- живых существ  · n=1  · bhagavadgita-prabhupada
+
+### `BUtaviSezasaNGa` — bhūtaviśeṣasaṅgha  (n=4)
+
+- сонмы различных существ  · n=2  · mahabharata-bhishmaparva, bhagavadgita-erman
+- существ разновидные толпы  · n=1  · bhagavadgita-sementsov
+- множество различных существ  · n=1  · bhagavadgita-sharma
+
+### `BUtaviSezasaNga` — bhūtaviśeṣasaṅga  (n=1)
+
+- существ разновидные толпы  · n=1  · ramanuja_gitabhashya
+
+### `BUtavidyA` — bhūtavidyā  (n=4)
+
+- военную науку  · n=2  · ch-up
+- военная наука  · n=1  · ch-up
+- военной науки  · n=1  · ch-up
+
+### `BUtavidyAm` — bhūtavidyām  (n=2)
+
+- науку о демонах  · n=1  · ch-up
+- наука о демонах  · n=1  · ch-up
+
+### `BUtayajYaM` — bhūtayajñaṃ  (n=1)
+
+- духам  · n=1  · manavadharmashastra
+
+### `BUtayakzagaRAkula` — bhūtayakṣagaṇākula  (n=1)
+
+- кишела сонмами злых духов вместо якшей  · n=1  · mahabharata-dronaparva
+
+### `BUtayakzavihaNga` — bhūtayakṣavihaṅga  (n=1)
+
+- бхутов, якшей и птиц  · n=1  · mahabharata-shalyaparva
+
+### `BUtaye` — bhūtaye  (n=4)
+
+- для процветания  · n=1  · mahabharata-adiparva
+- благополучия  · n=1  · mahabharata-adiparva
+- для блага  · n=1  · mahabharata-udyogaparva
+- ради блага  · n=1  · mahabharata-udyogaparva
+
+### `BUtayoni` — bhūtayoni  (n=2)
+
+- источник существ  · n=1  · mun-up
+- источника существ  · n=1  · kai-up
+
+### `BUtayuktam` — bhūtayuktam  (n=1)
+
+- запряженная духами  · n=1  · mahabharata-bhishmaparva
+
+### `BUte` — bhūte  (n=6)
+
+- О мощная  · n=2  · atharvaveda
+- том, что было  · n=2  · atharvaveda
+- в то время как  · n=1  · mahabharata-adiparva
+- в существе  · n=1  · brb-up
+
+### `BUteBi` — bhūtebhi  (n=3)
+
+- с помощью существ  · n=2  · kat-up
+- с существами  · n=1  · kat-up
+
+### `BUteByaH` — bhūtebhyaḥ  (n=1)
+
+- от других существ  · n=1  · mahabharata-adiparva
+
+### `BUteSa` — bhūteśa  (n=16)
+
+- Владыка существ  · n=5  · mahabharata-bhishmaparva, bhagavadgita-burba, ramanuja_gitabhashya, bhagavadgita-erman, bhagavadgita-radha
+- Господь всех существ  · n=2  · gitarthasamgraha-abhinavagupta, bhagavadgita-sharma
+- Господь всего сущего  · n=2  · bhagavadgita-1914, bhagavadgity
+- владыка существ  · n=1  · mahabharata-udyogaparva
+- господь всех существ  · n=1  · bhagavadgita-smirnov
+- правитель всѣхъ существъ  · n=1  · bhagavadgita-1788
+- существ царь  · n=1  · bhagavadgita-sementsov
+- Великій Богъ  · n=1  · bhagavadgita-1909
+- о властитель всего  · n=1  · bhagavadgita-prabhupada
+- властитель всех живых существ  · n=1  · bhagavadgita-prabhupada
+
+### `BUteSaM` — bhūteśaṃ  (n=1)
+
+- Властелина бхутов  · n=1  · mahabharata-aranyakaparva
+
+### `BUteSvarapArSvavartI` — bhūteśvarapārśvavartī  (n=1)
+
+- спутник Владыки существ  · n=1  · raghuvamsha
+
+### `BUtejyA` — bhūtejyā  (n=5)
+
+- жертвующие духам  · n=1  · gitarthasamgraha-abhinavagupta
+- те, у кого жертвование духам  · n=1  · bhagavadgita-burba
+- те, которые поклоняются силам природы  · n=1  · bhagavadgita-1914
+- поклоняющиеся силам природы  · n=1  · bhagavadgity
+- приносящие жертвы духам  · n=1  · bhagavadgita-erman
+
+### `BUtejyAH` — bhūtejyāḥ  (n=2)
+
+- жертвующие духам  · n=1  · bhagavadgita-smirnov
+- служители Ботовъ  · n=1  · bhagavadgita-1788
+
+### `BUtejya` — bhūtejya  (n=4)
+
+- приносящие жертвы духам  · n=1  · mahabharata-bhishmaparva
+- почитатели духов  · n=1  · ramanuja_gitabhashya
+- духов чтущие  · n=1  · bhagavadgita-sementsov
+- почитающие духов  · n=1  · bhagavadgita-sharma
+
+### `BUtena` — bhūtena  (n=3)
+
+- существо  · n=1  · mahabharata-bhishmaparva
+- никто  · n=1  · mahabharata-ashvamedhikaparva
+- Бхут  · n=1  · shukasaptati
+
+### `BUtendriyAtmaka` — bhūtendriyātmaka  (n=1)
+
+- по своей сути – элементы и органы чувств  · n=1  · yoga-sutry_vyasa-bhashya
+
+### `BUtezu` — bhūteṣu  (n=62)
+
+- существах  · n=11  · bhagavadgita-radha, gitarthasamgraha-abhinavagupta, ramayana-ayodhyakanda, bhagavadgita-burba, ramanuja_gitabhashya, bhagavadgity, bhagavadgita-erman, kena-up
+- существам  · n=6  · bhagavadgita-burba, ramayana-ayodhyakanda, mahabharata-adiparva, gitarthasamgraha-abhinavagupta, bhagavadgita-sharma
+- существ  · n=6  · ramayana-aranyakanda, mahabharata-udyogaparva, ramanuja_gitabhashya, bhagavadgity, mahabharata-ashvamedhikaparva
+- живых существах  · n=4  · bhagavadgita-prabhupada, manavadharmashastra
+- в существах  · n=4  · mahabharata-bhishmaparva, ramanuja_gitabhashya, bhagavadgity, bhagavadgita-erman
+- существа  · n=3  · ramayana-ayodhyakanda, bhagavadgita-prabhupada, bhagavadgita-radha
+- в существа  · n=3  · atharvaveda, mai-up
+- ко всем существам  · n=2  · mahabharata-dronaparva, mahabharata-ashvamedhikaparva
+- к существам  · n=2  · gitarthasamgraha-abhinavagupta, bhagavadgita-1909
+- элементах  · n=2  · ramanuja_gitabhashya, mahabharata-ashvamedhikaparva
+- во всех живых существах  · n=2  · bhagavadgita-prabhupada, bhagavadgita-radha
+- в мире  · n=1  · ramayana-ayodhyakanda
+- существо  · n=1  · ramayana-aranyakanda
+- к живым существам  · n=1  · mahabharata-aranyakaparva
+- живые существа  · n=1  · mahabharata-aranyakaparva
+- в теле каждого существа  · n=1  · mahabharata-aranyakaparva
+- среди существ  · n=1  · mahabharata-adiparva
+- зверей  · n=1  · mahabharata-adiparva
+- существованиях  · n=1  · bhagavadgita-1914
+- животныхъ  · n=1  · bhagavadgita-1788
+- существъ  · n=1  · bhagavadgita-1788
+- существахъ  · n=1  · bhagavadgita-1788
+- вселенной  · n=1  · bhagavadgita-1909
+- созданиях  · n=1  · bhagavadgita-sharma
+- в живых существах  · n=1  · bhagavadgita-prabhupada
+- в сердце каждого живого существа  · n=1  · bhagavadgita-prabhupada
+- для существ  · n=1  · mahabharata-ashvamedhikaparva
+- существами  · n=1  · mahabharata-ashvamedhikaparva
+
+### `BUti` — bhūti  (n=55)
+
+- успех  · n=9  · atharvaveda
+- процветание  · n=5  · atharvaveda, mahabharata-bhishmaparva, bhagavadgita-erman, bhagavadgita-radha
+- благополучие  · n=4  · mahabharata-udyogaparva, mahabharata-shantiparva, mahabharata-aranyakaparva
+- удача  · n=4  · gitarthasamgraha-abhinavagupta, bhagavadgity, bhagavadgita-smirnov, bhagavadgita-sementsov
+- благоденствие  · n=3  · mahabharata-adiparva, mahabharata-shantiparva, mahabharata-udyogaparva
+- успеха  · n=3  · atharvaveda
+- ради блага  · n=2  · mahabharata-adiparva, mahabharata-udyogaparva
+- преуспеяние  · n=2  · mahabharata-udyogaparva, atharvaveda
+- счастье  · n=2  · bhagavadgita-burba, bhagavadgita-1914
+- богатство  · n=2  · bhagavadgita-1788, kumarasambhava
+- блага  · n=2  · mahabharata-ashvamedhikaparva, raghuvamsha
+- Бхути  · n=2  · devi-gita
+- благополучием  · n=2  · atharvaveda
+- землю  · n=1  · ramayana-ayodhyakanda
+- для благополучия  · n=1  · manavadharmashastra
+- милости  · n=1  · ramayana-aranyakanda
+- благосостояния  · n=1  · mahabharata-udyogaparva
+- благополучия  · n=1  · mahabharata-udyogaparva
+- славу  · n=1  · mahabharata-udyogaparva
+- сила/успех/счастье  · n=1  · bhagavadgita-burba
+- мощь  · n=1  · atharvaveda
+- Благополучие  · n=1  · atharvaveda
+- благополучию  · n=1  · vedartha-samgraha_ramanuja
+- полноценное бытие  · n=1  · atharvaveda
+- величием  · n=1  · tai-up
+- преуспеяния  · n=1  · mahabharata-svargarohanikaparva
+
+### `BUtiH` — bhūtiḥ  (n=8)
+
+- Бхути  · n=2  · ramayana-aranyakanda
+- удача  · n=1  · ramanuja_gitabhashya
+- богатство  · n=1  · bhagavadgita-1909
+- несомненная  · n=1  · bhagavadgita-sharma
+- исключительная сила  · n=1  · bhagavadgita-prabhupada
+- совершенств  · n=1  · bhagavadgita-prabhupada
+- пепел  · n=1  · raghuvamsha
+
+### `BUtikAma` — bhūtikāma  (n=3)
+
+- желающий блага  · n=2  · mun-up
+- желающий благополучия  · n=1  · vedartha-samgraha_ramanuja
+
+### `BUtikAmaiH` — bhūtikāmaiḥ  (n=1)
+
+- желающими благополучия  · n=1  · manavadharmashastra
+
+### `BUtikaram` — bhūtikaram  (n=1)
+
+- возвеличивает  · n=1  · ramayana-balakanda
+
+### `BUtikarman` — bhūtikarman  (n=1)
+
+- дела, которые ведут к благополучию  · n=1  · mahabharata-udyogaparva
+
+### `BUtikarmasu` — bhūtikarmasu  (n=1)
+
+- в делах, приносящих благо  · n=1  · mahabharata-udyogaparva
+
+### `BUtikftya` — bhūtikṛtya  (n=1)
+
+- счастливых торжественных обрядах  · n=1  · manavadharmashastra
+
+### `BUtilaya` — bhūtilaya  (n=3)
+
+- Бхутилае  · n=2  · mahabharata-karnaparva
+- Бхутилая  · n=1  · mahabharata-aranyakaparva
+
+### `BUtim` — bhūtim  (n=10)
+
+- благополучие  · n=4  · rigveda, mahabharata-udyogaparva, atharvaveda
+- достатка  · n=1  · mahabharata-aranyakaparva
+- пригодности  · n=1  · rigveda
+- благополучия  · n=1  · mahabharata-adiparva
+- преуспеяния  · n=1  · mahabharata-udyogaparva
+- узоромъ  · n=1  · megha-duta
+- успеха  · n=1  · mahabharata-mahaprasthanikaparva
+
+### `BUtimicCatA` — bhūtimicchatā  (n=3)
+
+- стремясь к благу  · n=1  · mahabharata-shantiparva
+- желающий процветания  · n=1  · mahabharata-shantiparva
+- желающий преуспеяния  · n=1  · mahabharata-udyogaparva
+
+### `BUtipaTa` — bhūtipatha  (n=1)
+
+- путь благополучия  · n=1  · mahabharata-udyogaparva
+
+### `BUtirAja` — bhūtirāja  (n=1)
+
+- Бхутираджа  · n=1  · gitarthasamgraha-abhinavagupta
+
+### `BUtitIrTA` — bhūtitīrthā  (n=1)
+
+- Бхутитиртха  · n=1  · mahabharata-shalyaparva
+
+### `BUtivarDanI` — bhūtivardhanī  (n=1)
+
+- увеличивая его благосостояние  · n=1  · mahabharata-udyogaparva
+
+### `BUto` — bhūto  (n=2)
+
+- возник  · n=2  · rigveda
+
+### `BUtocCeda` — bhūtoccheda  (n=2)
+
+- разрушение  · n=2  · nyaya-bhashya
+
+### `BUtopahatacitta` — bhūtopahatacitta  (n=2)
+
+- одержимая злым духом  · n=2  · ramayana-ayodhyakanda
+
+### `BUtopasfzwa` — bhūtopasṛṣṭa  (n=1)
+
+- терзал ее злой дух  · n=1  · ramayana-ayodhyakanda
+
+### `BUtotiBir` — bhūtotibhir  (n=1)
+
+- поддержками  · n=1  · rigveda
+
+### `BUtu` — bhūtu  (n=9)
+
+- пусть будет  · n=3  · rigveda, rigveda
+- будет  · n=3  · rigveda
+- да охватит  · n=1  · rigveda
+- да будет  · n=1  · rigveda
+- да окружит  · n=1  · atharvaveda
+
+### `BUtv` — bhūtv  (n=5)
+
+- да будет  · n=3  · rigveda
+- будь  · n=1  · rigveda
+- станет  · n=1  · rigveda
+
+### `BUtvA` — bhūtvā  (n=359)
+
+- став  · n=99  · mahabharata-adiparva, br-up, mahabharata-bhishmaparva, ramayana-balakanda, mahabharata-aranyakaparva, mahabharata-dronaparva, mahabharata-udyogaparva, mahabharata-shalyaparva, ramayana-sundarakanda, gitarthasamgraha-abhinavagupta, bhagavadgita-burba, bhagavadgita-prabhupada, ramayana-ayodhyakanda, ramanuja_gitabhashya, bhagavadgity, bhagavadgita-erman, bhagavadgita-sementsov, bhagavadgita-radha, mahabharata-ashvamedhikaparva, atharvaveda, atharvaveda, mahabharata-shantiparva, manavadharmashastra, ramayana-aranyakanda, bhagavadgita-1914, bhagavadgita-smirnov, bhagavadgita-sharma, ch-up, mahabharata-karnaparva, mahabharata-sabhaparva, atharvaveda, mahabharata-virataparva, atharvaveda, atharvaveda, atharvaveda, shukasaptati, atharvaveda, yotat-up, atharvaveda, paramarthasara-abhinavagupta, kau-up, ait-up, sub-up
+- будучи  · n=61  · mahabharata-shalyaparva, mahabharata-adiparva, mahabharata-dronaparva, mahabharata-udyogaparva, bhagavadgita-radha, ramayana-balakanda, mahabharata-aranyakaparva, mahabharata-bhishmaparva, bhagavadgita-burba, mahabharata-karnaparva, mahabharata-sabhaparva, mahabharata-shantiparva, ramayana-ayodhyakanda, ramanuja_gitabhashya, bhagavadgita-1914, bhagavadgita-erman, bhagavadgita-smirnov, bhagavadgita-sementsov, ch-up, mahabharata-ashvamedhikaparva, devi-gita, atharvaveda, vedartha-samgraha_ramanuja, mahabharata-mausalaparva, jabala-up
+- возникнув  · n=14  · atharvaveda, gitarthasamgraha-abhinavagupta, ramanuja_gitabhashya, bhagavadgity, bhagavadgita-prabhupada
+- обратившись  · n=9  · mahabharata-adiparva, mahabharata-dronaparva, mahabharata-bhishmaparva, mahabharata-udyogaparva, mahabharata-virataparva
+- будь  · n=8  · mahabharata-bhishmaparva, mahabharata-dronaparva, mahabharata-adiparva, mahabharata-karnaparva, mahabharata-virataparva, shukasaptati
+- Став  · n=7  · atharvaveda, mahabharata-adiparva, atharvaveda, atharvaveda, atharvaveda, atharvaveda, atharvaveda
+- был  · n=6  · ramayana-aranyakanda, buddhacharita, bhagavadgita-burba, mahabharata-karnaparva, mahabharata-ashramavasikaparva, mahabharata-mausalaparva
+- становится  · n=6  · ch-up
+- быв  · n=5  · nyaya-bhashya, mahabharata-aranyakaparva, mahabharata-dronaparva, buddhacharita
+- родившись  · n=5  · mahabharata-udyogaparva, bhagavadgita-sementsov
+- превратившись  · n=4  · ramayana-aranyakanda, mahabharata-aranyakaparva, mahabharata-ashvamedhikaparva, atharvaveda
+- обернувшись  · n=4  · mahabharata-aranyakaparva, mahabharata-sauptikaparva, mahabharata-svargarohanikaparva
+- становясь  · n=4  · mahabharata-bhishmaparva, gitarthasamgraha-abhinavagupta, bhagavadgita-erman, bhagavadgita-sharma
+- сложив  · n=3  · mahabharata-aranyakaparva, ramayana-ayodhyakanda
+- приняв вид  · n=3  · mahabharata-adiparva
+- приняв  · n=2  · mahabharata-adiparva, ramayana-balakanda
+- Увеличившись  · n=2  · ramayana-sundarakanda
+- сложив ладони  · n=2  · ramayana-balakanda
+- явившись  · n=2  · mahabharata-aranyakaparva, bhagavadgity
+- Обернувшись  · n=2  · mahabharata-aranyakaparva
+- падешь  · n=2  · mahabharata-bhishmaparva, bhagavadgita-erman
+- оставаясь  · n=2  · mahabharata-dronaparva, bhagavadgita-1914
+- находясь  · n=2  · mahabharata-udyogaparva, br-up
+- бывши  · n=2  · bhagavadgity, mahabharata-karnaparva
+- явился  · n=2  · mahabharata-virataparva, mahabharata-striparva
+- промчалось  · n=2  · shatakatrayam-serebryakov
+- заговорила  · n=1  · ramayana-ayodhyakanda
+- сказал  · n=1  · ramayana-ayodhyakanda
+- так  · n=1  · ramayana-ayodhyakanda
+- придя  · n=1  · ramayana-ayodhyakanda
+- который  · n=1  · ramayana-ayodhyakanda
+- расцветая  · n=1  · ramayana-ayodhyakanda
+- рушится  · n=1  · ramayana-ayodhyakanda
+- вздымавшаяся  · n=1  · ramayana-ayodhyakanda
+- состоя  · n=1  · manavadharmashastra
+- усилившись  · n=1  · manavadharmashastra
+- похожие  · n=1  · ramayana-aranyakanda
+- превратись  · n=1  · ramayana-aranyakanda
+- стать  · n=1  · ramayana-aranyakanda
+- быть  · n=1  · ramayana-aranyakanda
+- сказали  · n=1  · ramayana-balakanda
+- в облике  · n=1  · ramayana-balakanda
+- соверши  · n=1  · mahabharata-aranyakaparva
+- исполню  · n=1  · mahabharata-aranyakaparva
+- подвергся  · n=1  · mahabharata-aranyakaparva
+- поклонившись  · n=1  · mahabharata-aranyakaparva
+- сложил  · n=1  · mahabharata-aranyakaparva
+- стоял  · n=1  · mahabharata-aranyakaparva
+- сверкая  · n=1  · mahabharata-aranyakaparva
+- обратил  · n=1  · mahabharata-aranyakaparva
+- обратился  · n=1  · mahabharata-aranyakaparva
+- превратилась  · n=1  · mahabharata-aranyakaparva
+- обернись  · n=1  · mahabharata-aranyakaparva
+- обернулся  · n=1  · mahabharata-aranyakaparva
+- будет  · n=1  · rigveda
+- прикинувшись  · n=1  · rigveda
+- делая вид  · n=1  · kama-sutra
+- получив  · n=1  · mahabharata-adiparva
+- принявший вид  · n=1  · mahabharata-adiparva
+- образует  · n=1  · mahabharata-bhishmaparva
+- пребывал  · n=1  · mahabharata-bhishmaparva
+- предавшись  · n=1  · mahabharata-bhishmaparva
+- начав  · n=1  · mahabharata-dronaparva
+- превращаясь  · n=1  · mahabharata-dronaparva
+- принимая  · n=1  · mahabharata-dronaparva
+- стал  · n=1  · buddhacharita
+- принявшая облик  · n=1  · mahabharata-udyogaparva
+- обретя  · n=1  · mahabharata-udyogaparva
+- последуем  · n=1  · mahabharata-udyogaparva
+- приняв облик  · n=1  · mahabharata-udyogaparva
+- будучи достигнуты  · n=1  · mahabharata-udyogaparva
+- рождающихся  · n=1  · bhagavadgita-burba
+- Превратившись  · n=1  · ramanuja_gitabhashya
+- появляющихся  · n=1  · bhagavadgita-1914
+- принял  · n=1  · bhagavadgita-1914
+- отказавшись  · n=1  · bhagavadgity
+- возникая  · n=1  · bhagavadgita-smirnov
+- бывая  · n=1  · bhagavadgita-smirnov
+- явясь  · n=1  · bhagavadgita-smirnov
+- было  · n=1  · bhagavadgita-1788
+- пріобыкъ  · n=1  · bhagavadgita-1788
+- будетъ  · n=1  · bhagavadgita-1788
+- существовавши  · n=1  · bhagavadgita-1788
+- прежде  · n=1  · bhagavadgita-sementsov
+- Становясь  · n=1  · bhagavadgita-sementsov
+- былую  · n=1  · bhagavadgita-1909
+- есть  · n=1  · bhagavadgita-1909
+- дѣлаясь  · n=1  · bhagavadgita-1909
+- не было  · n=1  · bhagavadgita-1909
+- освободись  · n=1  · bhagavadgita-1909
+- возникло  · n=1  · bhagavadgita-1909
+- существуютъ  · n=1  · bhagavadgita-1909
+- ставъ  · n=1  · bhagavadgita-1909
+- нет ни начала, ни середины, ни конца  · n=1  · bhagavadgita-sharma
+- оставив  · n=1  · bhagavadgita-sharma
+- принимаю форму  · n=1  · bhagavadgita-sharma
+- пожертвовать  · n=1  · bhagavadgita-prabhupada
+- начиная существовать [родившись]  · n=1  · bhagavadgita-radha
+- припал  · n=1  · mahabharata-karnaparva
+- Ступай  · n=1  · mahabharata-karnaparva
+- уподобившись  · n=1  · mahabharata-shalyaparva
+- набравшись  · n=1  · mahabharata-shalyaparva
+- разделившись  · n=1  · mahabharata-shalyaparva
+- представ  · n=1  · mahabharata-shalyaparva
+- от  · n=1  · mahabharata-shalyaparva
+- давай  · n=1  · mahabharata-shalyaparva
+- схватил  · n=1  · mahabharata-ashvamedhikaparva
+- оказавшись  · n=1  · mahabharata-sabhaparva
+- сделавшись  · n=1  · br-up
+- обретают  · n=1  · br-up
+- стала  · n=1  · raghuvamsha
+- стану  · n=1  · raghuvamsha
+- пьет  · n=1  · hatha-yoga-pradipika
+- демонстрирует  · n=1  · hatha-yoga-pradipika
+- выдавая себя  · n=1  · mahabharata-virataparva
+- бывшие  · n=1  · mahabharata-virataparva
+- размышлял  · n=1  · mahabharata-virataparva
+- лишь миг  · n=1  · shatakatrayam
+- лег  · n=1  · shukasaptati
+- в прошлом  · n=1  · vedartha-samgraha_ramanuja
+- приобретя  · n=1  · atharvaveda
+- являясь  · n=1  · mahabharata-sauptikaparva
+- достигнув  · n=1  · kau-up
+- обретший  · n=1  · mahabharata-svargarohanikaparva
+- побывав  · n=1  · jab-up
+
+### `BUtvABUtvA` — bhūtvā bhūtvā  (n=8)
+
+- рождаясь снова и снова  · n=2  · mahabharata-bhishmaparva, bhagavadgita-erman
+- появляясь и появляясь  · n=1  · gitarthasamgraha-abhinavagupta
+- побыв  · n=1  · ramanuja_gitabhashya
+- повторно возникая  · n=1  · bhagavadgity
+- пробуждаются к существованью  · n=1  · bhagavadgita-sementsov
+- перерождаясь вновь и вновь  · n=1  · bhagavadgita-sharma
+- снова и снова рождаясь  · n=1  · bhagavadgita-radha
+
+### `BUtvAnaBavati` — bhūtvā na bhavati  (n=2)
+
+- прекращает существование после существования  · n=2  · nyaya-bhashya
+
+### `BUtvApare` — bhūtvāpare  (n=1)
+
+- Иные демоны обернулись  · n=1  · buddhacharita
+
+### `BUtvI` — bhūtvī  (n=1)
+
+- превратившись  · n=1  · rigveda
+
+### `BUtvyA` — bhūtvyā  (n=1)
+
+- вставши на ноги  · n=1  · rigveda
+
+### `BUtyAH` — bhūtyāḥ  (n=1)
+
+- успеха  · n=1  · atharvaveda
+
+### `BUtyAm` — bhūtyām  (n=1)
+
+- в благополучие  · n=1  · atharvaveda
+
+### `BUvAcaka` — bhūvācaka  (n=1)
+
+- выражающее землю  · n=1  · mahabharata-udyogaparva
+
+### `BUvam` — bhūvam  (n=3)
+
+- лишусь  · n=2  · ramayana-ayodhyakanda
+- перестану я быть  · n=1  · yoga-sutry_vyasa-bhashya
+
+### `BUvan` — bhūvan  (n=3)
+
+- станут  · n=1  · rigveda
+- будут  · n=1  · rigveda
+- Появились  · n=1  · rigveda
+
+### `BUvaneSAnI` — bhūvaneśānī  (n=1)
+
+- Бхуванешани  · n=1  · devi-gita
+
+### `BUyA` — bhūyā  (n=4)
+
+- будет  · n=2  · rigveda, rigveda
+- Пусть будет  · n=1  · rigveda
+- да будет  · n=1  · rigveda
+
+### `BUyAH` — bhūyāḥ  (n=6)
+
+- будешь  · n=2  · rigveda, atharvaveda
+- будь  · n=2  · rigveda, yoga-sutry_vyasa-bhashya
+- станешь  · n=1  · atharvaveda
+- Стань  · n=1  · atharvaveda
+
+### `BUyAMs` — bhūyāṃs  (n=4)
+
+- превзошел  · n=1  · mahabharata-bhishmaparva
+- более  · n=1  · mahabharata-udyogaparva
+- сильно  · n=1  · mahabharata-udyogaparva
+- большее  · n=1  · ch-up
+
+### `BUyAMsa` — bhūyāṃsa  (n=6)
+
+- согласно тому, что  · n=1  · mahabharata-aranyakaparva
+- сильные  · n=1  · mahabharata-udyogaparva
+- великого  · n=1  · mahabharata-sabhaparva
+- превосходим  · n=1  · mahabharata-sabhaparva
+- больше  · n=1  · mahabharata-virataparva
+- многие  · n=1  · mnar-up
+
+### `BUyAMsaH` — bhūyāṃsaḥ  (n=3)
+
+- многочисленные  · n=1  · mahabharata-virataparva
+- множество  · n=1  · mahabharata-virataparva
+- богаче  · n=1  · atharvaveda
+
+### `BUyAMsi` — bhūyāṃsi  (n=2)
+
+- большинство  · n=1  · manavadharmashastra
+- много  · n=1  · mahabharata-dronaparva
+
+### `BUyAd` — bhūyād  (n=1)
+
+- молилась  · n=1  · raghuvamsha
+
+### `BUyAma` — bhūyāma  (n=2)
+
+- хотели бы приобщаться  · n=1  · rigveda
+- да будем мы  · n=1  · rigveda
+
+### `BUyAmo` — bhūyāmo  (n=1)
+
+- хотим стать  · n=1  · rigveda
+
+### `BUyAn` — bhūyān  (n=8)
+
+- больше  · n=3  · atharvaveda, mahabharata-shalyaparva
+- более  · n=1  · manavadharmashastra
+- владеет  · n=1  · mahabharata-udyogaparva
+- большего объема  · n=1  · nyaya-bhashya
+- большим  · n=1  · br-up
+- большая  · n=1  · mahabharata-adiparva
+
+### `BUyAsa` — bhūyāsa  (n=5)
+
+- Да буду  · n=5  · atharvaveda
+
+### `BUyAsam` — bhūyāsam  (n=15)
+
+- да стану  · n=3  · tai-up, br-up
+- стану  · n=3  · atharvaveda, atharvaveda, mnar-up
+- буду  · n=3  · atharvaveda, atharvaveda, atharvaveda
+- Да буду  · n=2  · atharvaveda
+- да буду я  · n=2  · atharvaveda, yoga-sutry_vyasa-bhashya
+- Пусть буду  · n=1  · atharvaveda
+- хочу стать  · n=1  · rigveda
+
+### `BUyAsma` — bhūyāsma  (n=2)
+
+- будем  · n=2  · atharvaveda, atharvaveda
+
+### `BUyAsta` — bhūyāsta  (n=1)
+
+- будете  · n=1  · atharvaveda
+
+### `BUyAt` — bhūyāt  (n=8)
+
+- будет  · n=5  · ramayana-ayodhyakanda, mahabharata-adiparva, gitarthasamgraha-abhinavagupta, devi-gita, mahabharata-sauptikaparva
+- был  · n=1  · manavadharmashastra
+- тот  · n=1  · ramayana-balakanda
+- смогут  · n=1  · mahabharata-aranyakaparva
+
+### `BUya` — bhūya  (n=127)
+
+- снова  · n=30  · ramayana-sundarakanda, mahabharata-dronaparva, mahabharata-udyogaparva, mahabharata-adiparva, bhagavadgita-1914, bhagavadgita-smirnov, mahabharata-sabhaparva, ramayana-ayodhyakanda, mahabharata-aranyakaparva, mahabharata-bhishmaparva, buddhacharita, gitarthasamgraha-abhinavagupta, bhagavadgita-erman, bhagavadgita-sementsov, bhagavadgita-1909, bhagavadgita-radha, mahabharata-virataparva, amaru-shataka, mahabharata-striparva, mai-up
+- дальше  · n=16  · ch-up, ramayana-sundarakanda, ramayana-balakanda, bhagavadgita-sementsov
+- еще  · n=13  · mahabharata-aranyakaparva, ramayana-ayodhyakanda, mahabharata-bhishmaparva, mahabharata-udyogaparva, bhagavadgita-1788, bhagavadgita-radha, mahabharata-karnaparva, mahabharata-shalyaparva, br-up, kat-up
+- вновь  · n=13  · mahabharata-aranyakaparva, gitarthasamgraha-abhinavagupta, bhagavadgita-sementsov, mahabharata-shalyaparva, mahabharata-striparva, ramayana-balakanda, mahabharata-adiparva, mahabharata-dronaparva
+- большее  · n=7  · ch-up
+- больше  · n=6  · mahabharata-udyogaparva, ramayana-ayodhyakanda, rigveda, bhagavadgita-radha, ch-up
+- более  · n=3  · mahabharata-adiparva, mahabharata-udyogaparva, bhagavadgita-1914
+- еще раз  · n=3  · mahabharata-dronaparva, mahabharata-udyogaparva
+- опять  · n=2  · mahabharata-adiparva, mahabharata-shalyaparva
+- теперь  · n=2  · mahabharata-aranyakaparva, bhagavadgita-1788
+- еще более  · n=2  · mahabharata-aranyakaparva, mahabharata-sabhaparva
+- и еще  · n=2  · mahabharata-bhishmaparva, bhagavadgita-erman
+- Снова  · n=2  · gitarthasamgraha-abhinavagupta, bhagavadgita-1914
+- большую  · n=2  · isha-up
+- кроме того  · n=1  · ramayana-ayodhyakanda
+- еще сильнее  · n=1  · ramayana-ayodhyakanda
+- Долго  · n=1  · ramayana-ayodhyakanda
+- в будущем  · n=1  · ramayana-ayodhyakanda
+- миновав  · n=1  · ramayana-ayodhyakanda
+- продолжала  · n=1  · ramayana-sundarakanda
+- еще большее  · n=1  · ramayana-sundarakanda
+- Продолжил  · n=1  · ramayana-balakanda
+- более подробно и полно  · n=1  · mahabharata-aranyakaparva
+- Пусть  · n=1  · mahabharata-aranyakaparva
+- подробнее  · n=1  · mahabharata-adiparva
+- затем  · n=1  · mahabharata-adiparva
+- пусть  · n=1  · mahabharata-adiparva
+- разрушив  · n=1  · buddhacharita
+- Вновь  · n=1  · ramanuja_gitabhashya
+- паки  · n=1  · bhagavadgity
+- болѣе  · n=1  · bhagavadgita-1909
+- внимай  · n=1  · bhagavadgita-sharma
+- в будущем [подвергается росту]  · n=1  · bhagavadgita-radha
+- дороже  · n=1  · ch-up
+- подобным  · n=1  · ch-up
+- становится подобным  · n=1  · ch-up
+- ещё  · n=1  · devi-gita
+- потомъ  · n=1  · megha-duta
+
+### `BUyaH` — bhūyaḥ  (n=274)
+
+- снова  · n=63  · mahabharata-dronaparva, mahabharata-adiparva, mahabharata-aranyakaparva, mahabharata-shalyaparva, bhagavadgity, bhagavadgita-prabhupada, ramayana-ayodhyakanda, ramayana-balakanda, mahabharata-udyogaparva, bhagavadgita-1914, bhagavadgita-smirnov, bhagavadgita-radha, mahabharata-karnaparva, mahabharata-ashvamedhikaparva, mahabharata-sabhaparva, mahabharata-virataparva, mahabharata-striparva, mahabharata-shantiparva, ramayana-sundarakanda, bhagavadgita-burba, bhagavadgita-1909, shatakatrayam-serebryakov, pratyabhijna-hridaya_kshemaraja
+- вновь  · n=52  · bhagavadgita-prabhupada, bhagavadgita-sharma, mahabharata-karnaparva, mahabharata-aranyakaparva, mahabharata-adiparva, mahabharata-udyogaparva, ramanuja_gitabhashya, mahabharata-bhishmaparva, mahabharata-dronaparva, buddhacharita, mahabharata-shalyaparva, ramayana-ayodhyakanda, gitarthasamgraha-abhinavagupta, bhagavadgita-erman, bhagavadgita-smirnov, bhagavadgita-sementsov, bhagavadgita-radha, raghuvamsha, amaru-shataka, shv-up, mahabharata-sauptikaparva
+- еще  · n=40  · mahabharata-bhishmaparva, mahabharata-dronaparva, ramayana-ayodhyakanda, mahabharata-shalyaparva, mahabharata-aranyakaparva, mahabharata-udyogaparva, bhagavadgita-erman, mahabharata-striparva, mahabharata-adiparva, ramayana-sundarakanda, ramayana-aranyakanda, ramanuja_gitabhashya, mahabharata-karnaparva, mahabharata-ashvamedhikaparva, devi-gita, mahabharata-sabhaparva
+- опять  · n=14  · mahabharata-adiparva, mahabharata-dronaparva, raghuvamsha, bhagavadgita-burba, bhagavadgita-1909, mahabharata-karnaparva
+- больше  · n=12  · mahabharata-dronaparva, mahabharata-adiparva, ramayana-sundarakanda, mahabharata-aranyakaparva, mahabharata-udyogaparva, bhagavadgity, bhagavadgita-smirnov, mahabharata-ashvamedhikaparva, rigveda, shatakatrayam, atharvaveda
+- дальше  · n=8  · mahabharata-dronaparva, bhagavadgita-radha, mahabharata-aranyakaparva, mahabharata-udyogaparva, mahabharata-virataparva, atharvaveda
+- Снова  · n=5  · ramayana-ayodhyakanda, ramayana-sundarakanda, bhagavadgita-burba, bhagavadgita-1914, bhagavadgita-smirnov
+- еще более  · n=3  · bhagavadgita-prabhupada, mahabharata-adiparva
+- затем  · n=3  · ramayana-ayodhyakanda, mahabharata-dronaparva, mahabharata-shalyaparva
+- более  · n=3  · bhagavadgita-sharma, mahabharata-aranyakaparva
+- очень  · n=3  · mahabharata-aranyakaparva, mahabharata-dronaparva, mahabharata-udyogaparva
+- еще больше  · n=3  · mahabharata-aranyakaparva, mahabharata-adiparva, mahabharata-sabhaparva
+- паки  · n=3  · bhagavadgita-1788, bhagavadgity
+- еще большее  · n=2  · ramayana-ayodhyakanda, mahabharata-sauptikaparva
+- сильнее  · n=2  · ramayana-ayodhyakanda, ramayana-sundarakanda
+- совсем  · n=2  · mahabharata-aranyakaparva, mahabharata-udyogaparva
+- потом  · n=2  · mahabharata-adiparva, mahabharata-ashvamedhikaparva
+- впредь  · n=2  · mahabharata-bhishmaparva, bhagavadgita-erman
+- Ныне  · n=2  · ramanuja_gitabhashya, bhagavadgita-sementsov
+- далее  · n=2  · bhagavadgita-smirnov, mahabharata-shalyaparva
+- ещё  · n=1  · mahabharata-adiparva
+- соединяясь при падении  · n=1  · mahabharata-adiparva
+- словно бы  · n=1  · mahabharata-shantiparva
+- сильным  · n=1  · ramayana-ayodhyakanda
+- едва не  · n=1  · ramayana-ayodhyakanda
+- вечной  · n=1  · ramayana-ayodhyakanda
+- громко  · n=1  · ramayana-ayodhyakanda
+- усилило  · n=1  · ramayana-ayodhyakanda
+- неоднократно  · n=1  · manavadharmashastra
+- Охваченный  · n=1  · ramayana-aranyakanda
+- жили  · n=1  · ramayana-balakanda
+- к тому же  · n=1  · ramayana-balakanda
+- продолжил  · n=1  · ramayana-balakanda
+- новую  · n=1  · mahabharata-aranyakaparva
+- для тебя  · n=1  · mahabharata-aranyakaparva
+- снова и снова  · n=1  · mahabharata-aranyakaparva
+- И впредь  · n=1  · mahabharata-aranyakaparva
+- Крепко  · n=1  · mahabharata-aranyakaparva
+- большую часть  · n=1  · mahabharata-aranyakaparva
+- обратно  · n=1  · mahabharata-adiparva
+- точно  · n=1  · mahabharata-adiparva
+- новые  · n=1  · mahabharata-bhishmaparva
+- сильно  · n=1  · mahabharata-dronaparva
+- еще раз  · n=1  · mahabharata-dronaparva
+- большая  · n=1  · mahabharata-dronaparva
+- никогда  · n=1  · buddhacharita
+- лишь  · n=1  · buddhacharita
+- иная  · n=1  · buddhacharita
+- кроме того  · n=1  · mahabharata-udyogaparva
+- Вновь  · n=1  · gitarthasamgraha-abhinavagupta
+- дальше/опять  · n=1  · bhagavadgita-burba
+- с большим усердьем  · n=1  · ramanuja_gitabhashya
+- уже не  · n=1  · bhagavadgita-erman
+- вторично  · n=1  · bhagavadgita-1788
+- уж больше  · n=1  · bhagavadgita-sementsov
+- А теперь  · n=1  · bhagavadgita-sementsov
+- в сансару  · n=1  · bhagavadgita-sementsov
+- достойныхъ  · n=1  · bhagavadgita-1909
+- повѣдай  · n=1  · bhagavadgita-1909
+- Теперь  · n=1  · bhagavadgita-1909
+- никому  · n=1  · bhagavadgita-1909
+- повторяю  · n=1  · mahabharata-sabhaparva
+- на мгновенье  · n=1  · raghuvamsha
+- горячо  · n=1  · mahabharata-virataparva
+- вслед за тем  · n=1  · mahabharata-virataparva
+- повсюду  · n=1  · gitagovinda
+- Еще  · n=1  · megha-duta
+- теперь  · n=1  · mahabharata-sauptikaparva
+
+### `BUyaH-BUyaH` — bhūyaḥ-bhūyaḥ  (n=1)
+
+- все больше и больше  · n=1  · rigveda
+
+### `BUyaHBUyaH` — bhūyaḥ bhūyaḥ  (n=2)
+
+- снова и снова  · n=2  · mahabharata-ashramavasikaparva, mahabharata-striparva
+
+### `BUyaS` — bhūyaś  (n=6)
+
+- А тут еще  · n=1  · mahabharata-aranyakaparva
+- дальше  · n=1  · kama-sutra
+- еще  · n=1  · mahabharata-dronaparva
+- гораздо больше  · n=1  · mahabharata-udyogaparva
+- другие  · n=1  · mahabharata-karnaparva
+- дальнейшем  · n=1  · mahabharata-ashramavasikaparva
+
+### `BUyaScAtoyaccate'gremano'BUt` — bhūyaścāto yacca te'gre mano'bhūt  (n=1)
+
+- Смысл данной строки подлинника не совсем ясен  · n=1  · mahabharata-udyogaparva
+
+### `BUyaSca` — bhūyaśca  (n=3)
+
+- продолжал  · n=1  · mahabharata-bhishmaparva
+- тем более  · n=1  · mahabharata-udyogaparva
+- и даже еще большей  · n=1  · mahabharata-shalyaparva
+
+### `BUyaScaiva` — bhūyaścaiva  (n=1)
+
+- собрался с силами  · n=1  · mahabharata-aranyakaparva
+
+### `BUyaeva` — bhūya eva  (n=3)
+
+- дальше  · n=2  · ch-up
+- продолжил  · n=1  · mahabharata-aranyakaparva
+
+### `BUyah` — bhūyah  (n=1)
+
+- снова  · n=1  · mahabharata-dronaparva
+
+### `BUyas` — bhūyas  (n=125)
+
+- снова  · n=20  · mahabharata-adiparva, mahabharata-aranyakaparva, ramayana-sundarakanda, ramayana-ayodhyakanda, mahabharata-bhishmaparva, mahabharata-dronaparva, buddhacharita, gitarthasamgraha-abhinavagupta, bhagavadgity, br-up, mahabharata-ashramavasikaparva, shv-up, vedanga_jyotisha, mahabharata-shalyaparva
+- большее  · n=20  · ch-up
+- еще  · n=15  · mahabharata-adiparva, mahabharata-udyogaparva, atharvaveda, ramayana-ayodhyakanda, ramayana-sundarakanda, bhagavadgita-erman, mahabharata-shalyaparva, mahabharata-ashvamedhikaparva
+- больше  · n=10  · ramayana-ayodhyakanda, bhagavadgita-burba, ramayana-balakanda, buddhacharita, mahabharata-udyogaparva, vedartha-samgraha_ramanuja, kat-up
+- опять  · n=10  · bhagavadgita-burba, mahabharata-bhishmaparva, mahabharata-adiparva, bhagavadgita-erman, mahabharata-shalyaparva, mahabharata-ashvamedhikaparva
+- вновь  · n=7  · mahabharata-aranyakaparva, ramayana-sundarakanda, mahabharata-dronaparva, gitarthasamgraha-abhinavagupta, bhagavadgita-burba, gitagovinda
+- еще больше  · n=3  · manavadharmashastra, mahabharata-udyogaparva, mahabharata-sabhaparva
+- затем  · n=2  · mahabharata-adiparva, buddhacharita
+- дальше  · n=2  · rigveda, ch-up
+- больше/дальше/опять  · n=2  · bhagavadgita-burba
+- еще раз  · n=2  · mahabharata-shalyaparva
+- ещё  · n=1  · mahabharata-adiparva
+- Лучше  · n=1  · ramayana-sundarakanda
+- обратно  · n=1  · ramayana-balakanda
+- Еще  · n=1  · ramayana-balakanda
+- велики  · n=1  · mahabharata-aranyakaparva
+- по-прежнему  · n=1  · mahabharata-aranyakaparva
+- все более  · n=1  · mahabharata-aranyakaparva
+- заново  · n=1  · mahabharata-adiparva
+- еще большим  · n=1  · buddhacharita
+- Но  · n=1  · buddhacharita
+- непроглядная  · n=1  · buddhacharita
+- еще более  · n=1  · mahabharata-udyogaparva
+- хорошо  · n=1  · mahabharata-udyogaparva
+- более того  · n=1  · gitarthasamgraha-abhinavagupta
+- Больше  · n=1  · bhagavadgita-burba
+- Теперь  · n=1  · bhagavadgity
+- здесь  · n=1  · bhagavadgity
+- боле  · n=1  · bhagavadgita-erman
+- возвещу  · n=1  · bhagavadgita-smirnov
+- потом  · n=1  · bhagavadgita-smirnov
+- паки  · n=1  · bhagavadgita-1788
+- теперь  · n=1  · bhagavadgita-1788
+- с большим усердьем  · n=1  · bhagavadgita-sementsov
+- въ концѣ  · n=1  · bhagavadgita-1909
+- более  · n=1  · bhagavadgita-prabhupada
+- уже  · n=1  · mahabharata-ashvamedhikaparva
+- выше  · n=1  · mahabharata-ashvamedhikaparva
+- громаден  · n=1  · mahabharata-sabhaparva
+- еще большую  · n=1  · br-up
+- большего  · n=1  · br-up
+- после этого  · n=1  · raghuvamsha
+- не стал  · n=1  · raghuvamsha
+
+### `BUyasA` — bhūyasā  (n=6)
+
+- За большее  · n=2  · rigveda
+- окажи  · n=1  · mahabharata-udyogaparva
+- множество  · n=1  · gitarthasamgraha-abhinavagupta
+- еще большим  · n=1  · rigveda
+- слишком  · n=1  · raghuvamsha
+
+### `BUyasI` — bhūyasī  (n=8)
+
+- большая  · n=2  · mahabharata-dronaparva, mahabharata-udyogaparva
+- великий  · n=1  · ramayana-ayodhyakanda
+- кого еще больше  · n=1  · rigveda
+- твердо  · n=1  · mahabharata-dronaparva
+- Велико  · n=1  · mahabharata-udyogaparva
+- большее  · n=1  · ch-up
+- обширная  · n=1  · mahabharata-shalyaparva
+
+### `BUyasIH` — bhūyasīḥ  (n=1)
+
+- больше  · n=1  · rigveda
+
+### `BUyasIM` — bhūyasīṃ  (n=1)
+
+- совершенного  · n=1  · raghuvamsha
+
+### `BUyasIm` — bhūyasīm  (n=4)
+
+- еще большую  · n=2  · atharvaveda
+- великом  · n=1  · ramayana-ayodhyakanda
+- большого  · n=1  · mahabharata-udyogaparva
+
+### `BUyasIr` — bhūyasīr  (n=1)
+
+- много  · n=1  · rigveda
+
+### `BUyasa` — bhūyasa  (n=1)
+
+- больше  · n=1  · rigveda
+
+### `BUyasaH` — bhūyasaḥ  (n=6)
+
+- превосходящих  · n=2  · rigveda, rigveda
+- более многочисленных  · n=1  · rigveda
+- многочисленных  · n=1  · mahabharata-udyogaparva
+- превосходя число  · n=1  · mahabharata-karnaparva
+- огромного  · n=1  · rigveda
+
+### `BUyastaram` — bhūyastaram  (n=1)
+
+- больше  · n=1  · ramayana-ayodhyakanda
+
+### `BUyastva` — bhūyastva  (n=2)
+
+- преимущества  · n=1  · nyaya-bhashya
+- преимущество  · n=1  · nyaya-bhashya
+
+### `BUyastvaM` — bhūyastvaṃ  (n=1)
+
+- ты  · n=1  · mahabharata-aranyakaparva
+
+### `BUyastvaSabda` — bhūyastvaśabda  (n=1)
+
+- слово преимущество  · n=1  · nyaya-bhashya
+
+### `BUyizWAm` — bhūyiṣṭhām  (n=1)
+
+- величайшую  · n=1  · isha-up
+
+### `BUyizWAn` — bhūyiṣṭhān  (n=2)
+
+- большую часть  · n=1  · mahabharata-shantiparva
+- большинство  · n=1  · mahabharata-shantiparva
+
+### `BUyizWa` — bhūyiṣṭha  (n=30)
+
+- большинство  · n=4  · mahabharata-udyogaparva, mahabharata-shantiparva, mahabharata-sabhaparva
+- большую часть  · n=3  · mahabharata-dronaparva, mahabharata-ashvamedhikaparva
+- большая часть  · n=2  · mahabharata-bhishmaparva, mahabharata-dronaparva
+- почти все  · n=2  · mahabharata-ashvamedhikaparva, mahabharata-striparva
+- многие  · n=1  · ramayana-ayodhyakanda
+- Много раз  · n=1  · ramayana-sundarakanda
+- наивысшая  · n=1  · mahabharata-aranyakaparva
+- одно за другим  · n=1  · mahabharata-aranyakaparva
+- самая главная  · n=1  · rigveda
+- самый главный  · n=1  · rigveda
+- самого большого  · n=1  · rigveda
+- величайшая  · n=1  · rigveda
+- величайших  · n=1  · kama-sutra
+- в избытке  · n=1  · mahabharata-dronaparva
+- сильный  · n=1  · mahabharata-dronaparva
+- время  · n=1  · mahabharata-bhishmaparva
+- обильная  · n=1  · ch-up
+- в большинстве своем  · n=1  · mahabharata-shalyaparva
+- изобилующий  · n=1  · mahabharata-shalyaparva
+- главным образом  · n=1  · mahabharata-ashvamedhikaparva
+- величайшую  · n=1  · br-up
+- великое множество  · n=1  · mnar-up
+- преимущественно  · n=1  · mahabharata-svargarohanikaparva
+
+### `BUyizWaH` — bhūyiṣṭhaḥ  (n=1)
+
+- множества  · n=1  · ramayana-aranyakanda
+
+### `BUyizWaM` — bhūyiṣṭhaṃ  (n=2)
+
+- большая часть  · n=1  · mahabharata-dronaparva
+- большею частью  · n=1  · mahabharata-shalyaparva
+
+### `BUyizWaSas` — bhūyiṣṭhaśas  (n=1)
+
+- многие  · n=1  · mahabharata-aranyakaparva
+
+### `BUyizWam` — bhūyiṣṭham  (n=14)
+
+- Богатыми  · n=1  · ramayana-ayodhyakanda
+- чуть ли не всех  · n=1  · ramayana-aranyakanda
+- много  · n=1  · ramayana-aranyakanda
+- Большая часть  · n=1  · mahabharata-aranyakaparva
+- усиленно  · n=1  · kama-sutra
+- главным образом  · n=1  · kama-sutra
+- очень хорошо  · n=1  · kama-sutra
+- неуклонно  · n=1  · mahabharata-bhishmaparva
+- изобильными  · n=1  · mahabharata-udyogaparva
+- множество  · n=1  · mahabharata-udyogaparva
+- больше всего  · n=1  · rigveda
+- большую часть  · n=1  · mahabharata-shalyaparva
+- обширнейшее  · n=1  · mahabharata-sabhaparva
+- подобным  · n=1  · raghuvamsha
+
+### `BUyizWasaMBAvyaPalezv` — bhūyiṣṭhasaṃbhāvyaphaleṣv  (n=1)
+
+- славятся своими плодами  · n=1  · raghuvamsha
+
+### `BUyizWena` — bhūyiṣṭhena  (n=1)
+
+- в изобилии  · n=1  · mahabharata-udyogaparva
+
+### `BUyo` — bhūyo  (n=13)
+
+- еще  · n=5  · mahabharata-karnaparva
+- больше  · n=2  · mahabharata-udyogaparva, rigveda
+- снова  · n=2  · mahabharata-udyogaparva, gitagovinda
+- дальше  · n=1  · kama-sutra
+- не  · n=1  · devi-gita
+- опять  · n=1  · raghuvamsha
+- возвращения  · n=1  · mahabharata-virataparva
+
+### `BUyoBUyaH` — bhūyobhūyaḥ  (n=19)
+
+- больше и больше  · n=7  · atharvaveda
+- Больше и больше  · n=6  · atharvaveda
+- снова  · n=2  · mahabharata-dronaparva, megha-duta
+- опять и опять  · n=1  · mahabharata-shalyaparva
+- Вновь и вновь  · n=1  · devi-gita
+- Все больше и больше  · n=1  · atharvaveda
+- только порой  · n=1  · amaru-shataka
+
+### `BUyoBUyo` — bhūyo bhūyo  (n=1)
+
+- снова и снова  · n=1  · mahabharata-udyogaparva
+
+### `BUz` — bhūṣ  (n=4)
+
+- Одетым  · n=1  · ramayana-balakanda
+- украшений  · n=1  · mahabharata-aranyakaparva
+- готовишь  · n=1  · rigveda
+- Украшают  · n=1  · shatakatrayam-serebryakov
+
+### `BUzABiH` — bhūṣābhiḥ  (n=1)
+
+- украшениями  · n=1  · ramayana-ayodhyakanda
+
+### `BUzAdi` — bhūṣādi  (n=1)
+
+- [подношением] украшений и прочего  · n=1  · devi-gita
+
+### `BUzAt` — bhūṣāt  (n=1)
+
+- был готов  · n=1  · rigveda
+
+### `BUzRu` — bhūṣṇu  (n=1)
+
+- Желающий благоденствия  · n=1  · manavadharmashastra
+
+### `BUza` — bhūṣa  (n=2)
+
+- Охвати  · n=1  · rigveda
+- Постарайся  · n=1  · rigveda
+
+### `BUzaRAH` — bhūṣaṇāḥ  (n=2)
+
+- украшенные  · n=2  · ramayana-aranyakanda
+
+### `BUzaRAcCAdanASanaiH` — bhūṣaṇācchādanāśanaiḥ  (n=1)
+
+- [дарением] украшений, одеждами и пищей  · n=1  · manavadharmashastra
+
+### `BUzaRAd` — bhūṣaṇād  (n=1)
+
+- прочих украшений  · n=1  · ramayana-sundarakanda
+
+### `BUzaRAnAm` — bhūṣaṇānām  (n=3)
+
+- украшений  · n=3  · ramayana-sundarakanda, ramayana-aranyakanda, mahabharata-adiparva
+
+### `BUzaRAnIva` — bhūṣaṇānīva  (n=1)
+
+- подобны украшениям  · n=1  · ramayana-sundarakanda
+
+### `BUzaRAni` — bhūṣaṇāni  (n=5)
+
+- украшения  · n=4  · ramayana-ayodhyakanda, ramayana-sundarakanda, mahabharata-adiparva, mahabharata-udyogaparva
+- браслеты  · n=1  · ramayana-aranyakanda
+
+### `BUzaRAnvita` — bhūṣaṇānvita  (n=1)
+
+- в дорогих браслетах  · n=1  · mahabharata-striparva
+
+### `BUzaRAya` — bhūṣaṇāya  (n=1)
+
+- украшения  · n=1  · ramayana-ayodhyakanda
+
+### `BUzaRa` — bhūṣaṇa  (n=78)
+
+- украшения  · n=26  · ramayana-ayodhyakanda, mahabharata-karnaparva, ramayana-aranyakanda, mahabharata-adiparva, mahabharata-dronaparva, buddhacharita, shatakatrayam-serebryakov, mahabharata-striparva, ramayana-sundarakanda, mahabharata-aranyakaparva, kama-sutra, mahabharata-shalyaparva, mahabharata-virataparva, shatakatrayam
+- украшений  · n=10  · ramayana-sundarakanda, kama-sutra, mahabharata-adiparva, ramayana-aranyakanda, mahabharata-dronaparva, devi-gita, gitagovinda
+- украшение  · n=7  · shatakatrayam-serebryakov, ramayana-ayodhyakanda, ramayana-sundarakanda, buddhacharita, shatakatrayam, vajs-up
+- украшениями  · n=7  · ramayana-sundarakanda, ramayana-aranyakanda, mahabharata-adiparva, mahabharata-bhishmaparva, mahabharata-dronaparva, buddhacharita, mahabharata-sabhaparva
+- украшениях  · n=6  · ramayana-aranyakanda, ramayana-sundarakanda, mahabharata-aranyakaparva, mahabharata-dronaparva, buddhacharita
+- украшенья  · n=3  · shatakatrayam, amaru-shataka, megha-duta
+- браслетов  · n=1  · ramayana-ayodhyakanda
+- Украшающий  · n=1  · ramayana-ayodhyakanda
+- браслеты, Кольца, серьги и ожерелья  · n=1  · ramayana-ayodhyakanda
+- драгоценные камни  · n=1  · ramayana-ayodhyakanda
+- покрытые  · n=1  · ramayana-ayodhyakanda
+- Украшения  · n=1  · ramayana-ayodhyakanda
+- драгоценностями  · n=1  · ramayana-sundarakanda
+- украшениям  · n=1  · manavadharmashastra
+- украшенные  · n=1  · ramayana-aranyakanda
+- каменьями  · n=1  · ramayana-aranyakanda
+- браслеты  · n=1  · ramayana-aranyakanda
+- наряды  · n=1  · kama-sutra
+- нарядами  · n=1  · mahabharata-adiparva
+- драгоценность  · n=1  · buddhacharita
+- убранство  · n=1  · mahabharata-ashvamedhikaparva
+- бессмертны  · n=1  · shatakatrayam
+- украшенье  · n=1  · shatakatrayam
+- украшают  · n=1  · gitagovinda
+- нарядах  · n=1  · gitagovinda
+
+### `BUzaRaBUzyaBAva` — bhūṣaṇabhūṣyabhāva  (n=1)
+
+- украшение и украшаемое  · n=1  · kumarasambhava
+
+### `BUzaRaH` — bhūṣaṇaḥ  (n=1)
+
+- украшениями  · n=1  · ramayana-aranyakanda
+
+### `BUzaRaM` — bhūṣaṇaṃ  (n=2)
+
+- украшением  · n=1  · mahabharata-aranyakaparva
+- украшение  · n=1  · gitagovinda
+
+### `BUzaRaiH` — bhūṣaṇaiḥ  (n=9)
+
+- украшениями  · n=3  · mahabharata-aranyakaparva, mahabharata-bhishmaparva, mahabharata-dronaparva
+- украшения  · n=2  · ramayana-sundarakanda, mahabharata-karnaparva
+- драгоценности  · n=1  · ramayana-ayodhyakanda
+- драгоценного убранства  · n=1  · mahabharata-aranyakaparva
+- украшений  · n=1  · mahabharata-dronaparva
+- сбруя  · n=1  · buddhacharita
+
+### `BUzaRair` — bhūṣaṇair  (n=1)
+
+- украшений  · n=1  · mahabharata-aranyakaparva
+
+### `BUzaRam` — bhūṣaṇam  (n=5)
+
+- украшение  · n=2  · ramayana-sundarakanda, shatakatrayam-serebryakov
+- Украшенную  · n=1  · ramayana-aranyakanda
+- Украшенных  · n=1  · ramayana-aranyakanda
+- украшения  · n=1  · mahabharata-adiparva
+
+### `BUzaRarAjayaH` — bhūṣaṇarājayaḥ  (n=1)
+
+- отметины  · n=1  · ramayana-sundarakanda
+
+### `BUzaRayojana` — bhūṣaṇayojana  (n=1)
+
+- употребление украшений  · n=1  · kama-sutra
+
+### `BUzaRezu` — bhūṣaṇeṣu  (n=1)
+
+- в украшениях  · n=1  · mahabharata-dronaparva
+
+### `BUzaRottamaBUzita` — bhūṣaṇottamabhūṣita  (n=1)
+
+- украшенного лучшими украшениями  · n=1  · ramayana-sundarakanda
+
+### `BUzaRottamaiH` — bhūṣaṇottamaiḥ  (n=1)
+
+- лучшие украшения  · n=1  · ramayana-ayodhyakanda
+
+### `BUzaTaH` — bhūṣathaḥ  (n=3)
+
+- окружаете  · n=3  · rigveda
+
+### `BUzaTo` — bhūṣatho  (n=1)
+
+- заботитесь  · n=1  · rigveda
+
+### `BUzan` — bhūṣan  (n=7)
+
+- готов  · n=2  · rigveda, rigveda
+- радея  · n=2  · rigveda
+- празднуют  · n=1  · rigveda
+- Обеспечивая  · n=1  · rigveda
+- готовясь  · n=1  · rigveda
+
+### `BUzasi` — bhūṣasi  (n=1)
+
+- украшаешь  · n=1  · rigveda
+
+### `BUzatA` — bhūṣatā  (n=1)
+
+- готовьтесь  · n=1  · rigveda
+
+### `BUzata` — bhūṣata  (n=1)
+
+- служите  · n=1  · rigveda
+
+### `BUzatam` — bhūṣatam  (n=1)
+
+- Создайте  · n=1  · rigveda
+
+### `BUzati` — bhūṣati  (n=9)
+
+- продлевает  · n=2  · rigveda, atharvaveda
+- почтит  · n=2  · rigveda
+- считается  · n=2  · rigveda
+- восхваляет  · n=1  · rigveda
+- объезжает  · n=1  · rigveda
+- украшает  · n=1  · rigveda
+
+### `BUzatu` — bhūṣatu  (n=1)
+
+- будет готов  · n=1  · rigveda
+
+### `BUzayAmAsa` — bhūṣayām āsa  (n=1)
+
+- украсила  · n=1  · ramayana-ayodhyakanda
+
+### `BUzayant` — bhūṣayant  (n=1)
+
+- озаряют  · n=1  · ramayana-balakanda
+
+### `BUzayantau` — bhūṣayantau  (n=1)
+
+- озаряют  · n=1  · ramayana-balakanda
+
+### `BUzayanti` — bhūṣayanti  (n=1)
+
+- красят  · n=1  · shatakatrayam
+
+### `BUzayitavyAH` — bhūṣayitavyāḥ  (n=1)
+
+- украшаемы  · n=1  · manavadharmashastra
+
+### `BUzayitvA` — bhūṣayitvā  (n=2)
+
+- нарядив  · n=1  · mahabharata-adiparva
+- наряженного  · n=1  · mahabharata-mausalaparva
+
+### `BUzitA` — bhūṣitā  (n=3)
+
+- убранном  · n=1  · ramayana-aranyakanda
+- украшен  · n=1  · ramayana-aranyakanda
+- иметь на себе  · n=1  · mahabharata-aranyakaparva
+
+### `BUzitABiH` — bhūṣitābhiḥ  (n=1)
+
+- украсившие себя  · n=1  · ramayana-ayodhyakanda
+
+### `BUzitAH` — bhūṣitāḥ  (n=1)
+
+- украшенные  · n=1  · ramayana-ayodhyakanda
+
+### `BUzitAm` — bhūṣitām  (n=2)
+
+- надела  · n=1  · ramayana-ayodhyakanda
+- украшенный  · n=1  · ramayana-sundarakanda
+
+### `BUzitAn` — bhūṣitān  (n=3)
+
+- носящих  · n=1  · ramayana-aranyakanda
+- украшенных  · n=1  · mahabharata-dronaparva
+- умащенные  · n=1  · mahabharata-karnaparva
+
+### `BUzita` — bhūṣita  (n=41)
+
+- украшенные  · n=7  · mahabharata-adiparva, ramayana-ayodhyakanda, ramayana-aranyakanda, ramayana-balakanda, mahabharata-sabhaparva
+- украшенный  · n=4  · ramayana-ayodhyakanda, ramayana-sundarakanda, mahabharata-dronaparva, raghuvamsha
+- украшенную  · n=4  · ramayana-ayodhyakanda, ramayana-sundarakanda, ramayana-balakanda
+- украшены  · n=3  · ramayana-sundarakanda, mahabharata-aranyakaparva, mahabharata-sabhaparva
+- украшен  · n=2  · ramayana-sundarakanda, mahabharata-dronaparva
+- украшенных  · n=2  · ramayana-sundarakanda, gitagovinda
+- украшенной  · n=2  · ramayana-aranyakanda
+- проникнутое  · n=1  · mahabharata-adiparva
+- украшенное  · n=1  · mahabharata-adiparva
+- богатых  · n=1  · ramayana-ayodhyakanda
+- реяли  · n=1  · ramayana-ayodhyakanda
+- в богатых одеждах  · n=1  · ramayana-ayodhyakanda
+- Украшенное  · n=1  · ramayana-ayodhyakanda
+- разукрашенная  · n=1  · ramayana-ayodhyakanda
+- расшитые  · n=1  · ramayana-ayodhyakanda
+- золотые  · n=1  · ramayana-ayodhyakanda
+- украшенными  · n=1  · ramayana-sundarakanda
+- украшенного  · n=1  · ramayana-sundarakanda
+- украшенному  · n=1  · manavadharmashastra
+- украшениями  · n=1  · mahabharata-aranyakaparva
+- убран  · n=1  · buddhacharita
+- украшениях  · n=1  · mahabharata-sabhaparva
+- увешаны  · n=1  · mahabharata-sabhaparva
+- в  · n=1  · mahabharata-ashramavasikaparva
+
+### `BUzitaH` — bhūṣitaḥ  (n=3)
+
+- украшен  · n=1  · ramayana-ayodhyakanda
+- блистает  · n=1  · shatakatrayam
+- слово  · n=1  · shatakatrayam
+
+### `BUzitaM` — bhūṣitaṃ  (n=1)
+
+- украшенного  · n=1  · mahabharata-virataparva
+
+### `BUzitaiH` — bhūṣitaiḥ  (n=2)
+
+- украшенными  · n=2  · ramayana-aranyakanda
+
+### `BUzitam` — bhūṣitam  (n=4)
+
+- украшенное  · n=1  · ramayana-ayodhyakanda
+- Украшенную  · n=1  · ramayana-aranyakanda
+- украшенной  · n=1  · ramayana-aranyakanda
+- украшенный  · n=1  · ramayana-aranyakanda
+
+### `BUzitasya` — bhūṣitasya  (n=1)
+
+- украшенного  · n=1  · mahabharata-adiparva
+
+### `BUzite` — bhūṣite  (n=2)
+
+- золотого  · n=1  · ramayana-ayodhyakanda
+- расшитые  · n=1  · ramayana-ayodhyakanda
+
+### `Ba` — bha  (n=3)
+
+- был  · n=1  · mahabharata-karnaparva
+- бха  · n=1  · mai-up
+- пищу  · n=1  · kau-up
+
+### `BaBUva` — bhabhūva  (n=1)
+
+- был  · n=1  · raghuvamsha
+
+### `BaMsas` — bhaṃsas  (n=4)
+
+- промежность  · n=2  · rigveda
+- зада  · n=2  · atharvaveda
+
+### `BaMsasa` — bhaṃsasa  (n=1)
+
+- зада  · n=1  · atharvaveda
+
+### `BaMsasaH` — bhaṃsasaḥ  (n=1)
+
+- промежности  · n=1  · atharvaveda
+
+### `BaNgAsvari` — bhaṅgāsvari  (n=1)
+
+- Бхангасвари  · n=1  · mahabharata-sabhaparva
+
+### `BaNgDi` — bhaṅgdhi  (n=3)
+
+- заломи  · n=2  · atharvaveda
+- сломи  · n=1  · atharvaveda
+
+### `BaNgIBaktyA` — bhaṅgībhaktyā  (n=1)
+
+- извивами  · n=1  · megha-duta
+
+### `BaNgImataH` — bhaṅgīmataḥ  (n=1)
+
+- вьющиеся  · n=1  · mahabharata-virataparva
+
+### `BaNga` — bhaṅga  (n=11)
+
+- треска  · n=1  · ramayana-sundarakanda
+- проламывающему (препятствия)  · n=1  · rigveda
+- ломкой  · n=1  · nyaya-bhashya
+- конопля  · n=1  · atharvaveda
+- корчах  · n=1  · shatakatrayam
+- подобны  · n=1  · shatakatrayam
+- разбиваются  · n=1  · shatakatrayam-serebryakov
+- разбитой  · n=1  · gitagovinda
+- смятое  · n=1  · amaru-shataka
+- вѣтки  · n=1  · megha-duta
+- хмуря  · n=1  · megha-duta
+
+### `BaNgadA` — bhaṅgadā  (n=1)
+
+- Бхангада  · n=1  · mahabharata-shalyaparva
+
+### `BaNgakAra` — bhaṅgakāra  (n=1)
+
+- Бхангакара  · n=1  · mahabharata-adiparva
+
+### `BaNgam` — bhaṅgam  (n=3)
+
+- Разбитые  · n=1  · ramayana-aranyakanda
+- нарушения  · n=1  · mahabharata-adiparva
+- поражение  · n=1  · raghuvamsha
+
+### `BaNgi` — bhaṅgi  (n=1)
+
+- изгиб  · n=1  · raghuvamsha
+
+### `BaNgiracitasPawikena` — bhaṅgiracitasphaṭikena  (n=1)
+
+- мраморной  · n=1  · raghuvamsha
+
+### `BaNgurAm` — bhaṅgurām  (n=1)
+
+- неверной  · n=1  · shatakatrayam-serebryakov
+
+### `BaNgurAvat` — bhaṅgurāvat  (n=3)
+
+- обманщик  · n=3  · rigveda
+
+### `BaNgurAvata` — bhaṅgurāvata  (n=1)
+
+- коварных  · n=1  · rigveda
+
+### `BaNgurAvataH` — bhaṅgurāvataḥ  (n=6)
+
+- коварных  · n=2  · rigveda, atharvaveda
+- обманщика  · n=2  · atharvaveda
+- обманщиков  · n=1  · atharvaveda
+- на обманщиков  · n=1  · atharvaveda
+
+### `BaNgura` — bhaṅgura  (n=6)
+
+- эфемерных  · n=1  · shatakatrayam
+- преходящи  · n=1  · shatakatrayam
+- быстротечна  · n=1  · shatakatrayam
+- мираж  · n=1  · shatakatrayam
+- зыбка  · n=1  · shatakatrayam-serebryakov
+- изогнутая  · n=1  · gitagovinda
+
+### `BaNguram` — bhaṅguram  (n=1)
+
+- колеблемое  · n=1  · raghuvamsha
+
+### `BaNguravfttayaH` — bhaṅguravṛttayaḥ  (n=1)
+
+- нестойки  · n=1  · shatakatrayam-serebryakov
+
+### `BaNktAraM` — bhaṅktāraṃ  (n=1)
+
+- ломающего  · n=1  · manavadharmashastra
+
+### `BaNktAsmi` — bhaṅktāsmi  (n=1)
+
+- раздроблю  · n=1  · mahabharata-shalyaparva
+
+### `BaNktvA` — bhaṅktvā  (n=7)
+
+- уничтожив (изломав)  · n=2  · ramayana-sundarakanda
+- уничтожив  · n=1  · ramayana-sundarakanda
+- переломил  · n=1  · mahabharata-adiparva
+- свободный от влияния  · n=1  · gitarthasamgraha-abhinavagupta
+- крушит  · n=1  · mahabharata-karnaparva
+- сбив  · n=1  · mahabharata-shalyaparva
+
+### `BaR` — bhaṇ  (n=1)
+
+- сказала  · n=1  · shukasaptati
+
+### `BaRa` — bhaṇa  (n=1)
+
+- Повели  · n=1  · gitagovinda
+
+### `BaRana` — bhaṇana  (n=1)
+
+- повествование  · n=1  · gitagovinda
+
+### `BaRati` — bhaṇati  (n=3)
+
+- ведет речь  · n=3  · gitagovinda
+
+### `BaRita` — bhaṇita  (n=10)
+
+- изреченного  · n=2  · gitagovinda
+- изреченный  · n=2  · gitagovinda
+- воспетые  · n=2  · gitagovinda
+- воспетый  · n=1  · gitagovinda
+- изреченным  · n=1  · gitagovinda
+- слово  · n=1  · gitagovinda
+- изреченной  · n=1  · gitagovinda
+
+### `BaRitaH` — bhaṇitaḥ  (n=1)
+
+- сказано  · n=1  · shukasaptati
+
+### `BaRitam` — bhaṇitam  (n=1)
+
+- изреченный  · n=1  · gitagovinda
+
+### `BaRitimaDurA` — bhaṇitimadhurā  (n=1)
+
+- сладкозвучье слов  · n=1  · shatakatrayam
+
+### `BaRitimaDurAH` — bhaṇitimadhurāḥ  (n=1)
+
+- изобилующий ласковыми словами  · n=1  · shatakatrayam-serebryakov
+
+### `BaRqIra` — bhaṇḍīra  (n=2)
+
+- бхандира  · n=2  · ramayana-aranyakanda
+
+### `BaRyate` — bhaṇyate  (n=1)
+
+- именуется  · n=1  · gitarthasamgraha-abhinavagupta
+
+### `BaSeza` — bhaśeṣa  (n=2)
+
+- остаток накшатр  · n=2  · vedanga_jyotisha
+
+### `BaYj` — bhañj  (n=4)
+
+- сломала  · n=1  · mahabharata-adiparva
+- сломает  · n=1  · mahabharata-adiparva
+- сломал  · n=1  · mahabharata-adiparva
+- сломался  · n=1  · ramayana-balakanda
+
+### `BaYjamAnaH` — bhañjamānaḥ  (n=1)
+
+- ломая  · n=1  · mahabharata-adiparva
+
+### `BaYjan` — bhañjan  (n=3)
+
+- ломая  · n=2  · mahabharata-dronaparva, mahabharata-adiparva
+- Разбивая  · n=1  · atharvaveda
+
+### `BaYjanAya` — bhañjanāya  (n=1)
+
+- прогоняет  · n=1  · gitagovinda
+
+### `BaYjatI` — bhañjatī  (n=1)
+
+- ломая  · n=1  · atharvaveda
+
+### `BaYjeya` — bhañjeya  (n=1)
+
+- поломать  · n=1  · mahabharata-dronaparva
+
+### `BaYjyAt` — bhañjyāt  (n=2)
+
+- сломает  · n=1  · mahabharata-adiparva
+- разрушить  · n=1  · mahabharata-dronaparva
+
+### `BadrA` — bhadrā  (n=67)
+
+- Бхадра  · n=10  · mahabharata-adiparva, mahabharata-ashvamedhikaparva, devi-gita, mahabharata-mausalaparva
+- несут счастье  · n=9  · rigveda
+- благая  · n=7  · rigveda, atharvaveda
+- приносящие счастье  · n=4  · rigveda, rigveda, atharvaveda
+- счастливые  · n=3  · rigveda, rigveda
+- несущие счастье  · n=3  · rigveda, rigveda
+- дающая счастье  · n=2  · rigveda, atharvaveda
+- благодатны  · n=2  · rigveda, rigveda
+- счастливая  · n=2  · rigveda
+- красавица  · n=2  · rigveda
+- несущая счастье  · n=2  · rigveda, rigveda
+- прекрасные  · n=2  · rigveda, rigveda
+- прекрасная  · n=2  · rigveda, atharvaveda
+- хорошие  · n=1  · atharvaveda
+- превосходные  · n=1  · atharvaveda
+- благословенна  · n=1  · rigveda
+- счастье  · n=1  · rigveda
+- Приносящие счастье  · n=1  · rigveda
+- счастливой  · n=1  · rigveda
+- Приносящее счастье  · n=1  · rigveda
+- Благодатен  · n=1  · rigveda
+- Благосклонен  · n=1  · rigveda
+- Прекрасен  · n=1  · rigveda
+- Бхадру  · n=1  · mahabharata-adiparva
+- великолепное  · n=1  · mahabharata-udyogaparva
+- Благожелательность  · n=1  · rigveda
+- Приносит счастье  · n=1  · rigveda
+- Благословенны  · n=1  · rigveda
+- удачным  · n=1  · atharvaveda
+- 22a-c. = РВ X, 18, 3a-c (с вариантами).  · n=1  · atharvaveda
+
+### `BadrAH` — bhadrāḥ  (n=9)
+
+- несут счастье  · n=3  · rigveda
+- благодатные  · n=3  · rigveda, atharvaveda
+- счастливые  · n=1  · rigveda
+- Благосклонны  · n=1  · rigveda
+- благочестивые  · n=1  · atharvaveda
+
+### `BadrARi` — bhadrāṇi  (n=3)
+
+- блага  · n=2  · manavadharmashastra, mahabharata-aranyakaparva
+- благополучие  · n=1  · mahabharata-sabhaparva
+
+### `BadrASva` — bhadrāśva  (n=3)
+
+- Бхадрашва  · n=3  · mahabharata-bhishmaparva
+
+### `BadrAha` — bhadrāha  (n=2)
+
+- счастливый день  · n=2  · atharvaveda
+
+### `BadrAham` — bhadrāham  (n=4)
+
+- счастливый день  · n=2  · atharvaveda
+- Счастливый день  · n=1  · atharvaveda
+- счастливым днем  · n=1  · atharvaveda
+
+### `BadrAm` — bhadrām  (n=6)
+
+- Бхадру  · n=3  · mahabharata-karnaparva, mahabharata-sabhaparva
+- счастливым  · n=1  · rigveda
+- милой  · n=1  · mahabharata-sabhaparva
+- достижений  · n=1  · hatha-yoga-pradipika
+
+### `BadrAn` — bhadrān  (n=2)
+
+- смирных  · n=1  · mahabharata-adiparva
+- удачными  · n=1  · rigveda
+
+### `BadrAsana` — bhadrāsana  (n=6)
+
+- Поза благости  · n=2  · devi-gita
+- Бхадрасана  · n=2  · hatha-yoga-pradipika
+- золотыми сидениями  · n=1  · ramayana-sundarakanda
+- поза героя  · n=1  · yoga-sutry_vyasa-bhashya
+
+### `BadrAsane` — bhadrāsane  (n=1)
+
+- на великолепном сидении  · n=1  · mahabharata-dronaparva
+
+### `BadrAt` — bhadrāt  (n=1)
+
+- прекрасного  · n=1  · atharvaveda
+
+### `BadrAyAm` — bhadrāyām  (n=2)
+
+- благосклонным  · n=1  · rigveda
+- приносящей счастье  · n=1  · rigveda
+
+### `BadrAya` — bhadrāya  (n=2)
+
+- приносящей счастье  · n=1  · rigveda
+- хороший  · n=1  · atharvaveda
+
+### `BadrAyai` — bhadrāyai  (n=1)
+
+- Благой  · n=1  · devi-gita
+
+### `Badra` — bhadra  (n=243)
+
+- благо  · n=81  · ramayana-balakanda, mahabharata-aranyakaparva, mahabharata-udyogaparva, mahabharata-adiparva, ramayana-sundarakanda, mahabharata-dronaparva, mahabharata-virataparva, ramayana-ayodhyakanda, ramayana-aranyakanda, mahabharata-bhishmaparva, mahabharata-ashvamedhikaparva, mahabharata-sabhaparva, rigveda, mahabharata-shantiparva, rigveda, rigveda, rigveda, mahabharata-shalyaparva, raghuvamsha, atharvaveda, atharvaveda, atharvaveda, mahabharata-ashramavasikaparva
+- Благо  · n=26  · ramayana-balakanda, mahabharata-aranyakaparva, ramayana-aranyakanda, mahabharata-adiparva, mahabharata-karnaparva, mahabharata-shantiparva, ramayana-ayodhyakanda
+- милая  · n=10  · mahabharata-adiparva, shukasaptati, mahabharata-sabhaparva
+- счастье  · n=7  · rigveda, rigveda, rigveda, rigveda
+- прекрасное  · n=5  · atharvaveda, atharvaveda, atharvaveda, atharvaveda
+- прекрасный  · n=4  · ramayana-ayodhyakanda, ramayana-balakanda, rigveda, atharvaveda
+- удача  · n=4  · ramayana-balakanda, ramayana-ayodhyakanda, mahabharata-aranyakaparva
+- прекрасная  · n=3  · mahabharata-aranyakaparva, rigveda, atharvaveda
+- достойная  · n=3  · mahabharata-aranyakaparva
+- благая  · n=3  · rigveda, rigveda, rigveda
+- прекрасные  · n=3  · rigveda, atharvaveda
+- приносит счастье  · n=3  · rigveda, rigveda, atharvaveda
+- благодатное  · n=3  · rigveda, rigveda
+- добром  · n=3  · rigveda, atharvaveda
+- благополучие  · n=3  · mahabharata-adiparva, atharvaveda
+- Добро  · n=3  · mahabharata-udyogaparva, mahabharata-sabhaparva, mahabharata-virataparva
+- прекрасны  · n=3  · atharvaveda, atharvaveda
+- хорошо  · n=2  · manavadharmashastra, atharvaveda
+- огромных  · n=2  · ramayana-balakanda
+- успеха  · n=2  · mahabharata-aranyakaparva, kama-sutra
+- добро  · n=2  · rigveda, atharvaveda
+- благодатного  · n=2  · rigveda
+- Благой  · n=2  · rigveda
+- добрый  · n=2  · rigveda
+- приносящий счастье  · n=2  · rigveda
+- хороший  · n=2  · rigveda
+- хорошего  · n=2  · rigveda, atharvaveda
+- счастливая  · n=2  · mahabharata-udyogaparva, mahabharata-ashvamedhikaparva
+- блага  · n=2  · mahabharata-udyogaparva, rigveda
+- благой  · n=2  · rigveda, atharvaveda
+- счастья  · n=2  · atharvaveda, atharvaveda
+- Бодрая  · n=2  · yotat-up
+- красавица  · n=1  · ramayana-ayodhyakanda
+- Кайкейи  · n=1  · ramayana-ayodhyakanda
+- прекраснобедрая  · n=1  · ramayana-ayodhyakanda
+- трон  · n=1  · ramayana-ayodhyakanda
+- царским  · n=1  · ramayana-ayodhyakanda
+- супруга  · n=1  · ramayana-ayodhyakanda
+- Прекрасный  · n=1  · ramayana-ayodhyakanda
+- Хорошо  · n=1  · manavadharmashastra
+- добрый человек  · n=1  · manavadharmashastra
+- лжесвятыми  · n=1  · manavadharmashastra
+- счастлив  · n=1  · ramayana-balakanda
+- милая дева  · n=1  · mahabharata-aranyakaparva
+- дева  · n=1  · mahabharata-aranyakaparva
+- благочестивый  · n=1  · mahabharata-aranyakaparva
+- благими  · n=1  · rigveda
+- благотворные  · n=1  · rigveda
+- Благодатные  · n=1  · rigveda
+- несущие счастье  · n=1  · rigveda
+- несущих счастье  · n=1  · rigveda
+- несущий счастье  · n=1  · rigveda
+- удачным  · n=1  · rigveda
+- добрые  · n=1  · rigveda
+- счастливо  · n=1  · rigveda
+- благодатной  · n=1  · rigveda
+- Благосклонен  · n=1  · rigveda
+- хорошее  · n=1  · rigveda
+- благословенный  · n=1  · buddhacharita
+- достойные  · n=1  · mahabharata-udyogaparva
+- достойный человек  · n=1  · mahabharata-udyogaparva
+- благословенным  · n=1  · rigveda
+- Благотворной  · n=1  · rigveda
+- счастливые  · n=1  · rigveda
+- счастливом  · n=1  · rigveda
+- благого  · n=1  · rigveda
+- в добром  · n=1  · rigveda
+- приносящие счастье  · n=1  · rigveda
+- благости  · n=1  · devi-gita
+- поза благости  · n=1  · devi-gita
+- невредимы  · n=1  · mahabharata-sabhaparva
+- опытен  · n=1  · mahabharata-virataparva
+- о прекрасная  · n=1  · atharvaveda
+- благополучно  · n=1  · atharvaveda
+- замечательные  · n=1  · atharvaveda
+- благое  · n=1  · atharvaveda
+- по-доброму  · n=1  · atharvaveda
+- достойный  · n=1  · mahabharata-svargarohanikaparva
+
+### `Badra-Asana` — bhadra-āsana  (n=1)
+
+- прекрасный трон  · n=1  · ramayana-ayodhyakanda
+
+### `BadraBAziRI` — bhadrabhāṣiṇī  (n=2)
+
+- сладкоречивую  · n=1  · mahabharata-adiparva
+- благая  · n=1  · mahabharata-ashramavasikaparva
+
+### `BadraBAziRIm` — bhadrabhāṣiṇīm  (n=1)
+
+- приятноречивой  · n=1  · mahabharata-sabhaparva
+
+### `BadraH` — bhadraḥ  (n=3)
+
+- дающий счастье  · n=1  · rigveda
+- Благосклонен  · n=1  · rigveda
+- благосклонен  · n=1  · rigveda
+
+### `BadraM` — bhadraṃ  (n=31)
+
+- благо  · n=16  · ramayana-balakanda, mahabharata-udyogaparva, mahabharata-aranyakaparva, mahabharata-virataparva, mahabharata-shantiparva, ramayana-sundarakanda, mahabharata-dronaparva, mahabharata-ashvamedhikaparva, mahabharata-sabhaparva, mahabharata-ashramavasikaparva
+- Благо  · n=7  · ramayana-balakanda, mahabharata-aranyakaparva, mahabharata-udyogaparva
+- благо тебе  · n=1  · ramayana-balakanda
+- счастливое  · n=1  · rigveda
+- добро  · n=1  · mahabharata-adiparva
+- Добро  · n=1  · mahabharata-adiparva
+- с благословением  · n=1  · mahabharata-karnaparva
+- Бхадру  · n=1  · raghuvamsha
+- Бхадрасана  · n=1  · hatha-yoga-pradipika
+- хорошее  · n=1  · atharvaveda
+
+### `BadraMte` — bhadraṃ te  (n=15)
+
+- благо тебе  · n=12  · ramayana-balakanda, mahabharata-dronaparva, mahabharata-aranyakaparva, mahabharata-bhishmaparva, mahabharata-shalyaparva, mahabharata-virataparva, mahabharata-striparva
+- да будет тебе благо  · n=1  · mahabharata-adiparva
+- благополучие и счастье да будут с тобою  · n=1  · mahabharata-dronaparva
+- Да будет тебе благо  · n=1  · mahabharata-virataparva
+
+### `BadraSAKa` — bhadraśākha  (n=1)
+
+- Бхадрашакхой  · n=1  · mahabharata-aranyakaparva
+
+### `BadraSAKaH` — bhadraśākhaḥ  (n=1)
+
+- Бхадрашакха  · n=1  · mahabharata-aranyakaparva
+
+### `BadraSoce` — bhadraśoce  (n=2)
+
+- благодатнопламенный  · n=1  · rigveda
+- с блеском, приносящим счастье  · n=1  · rigveda
+
+### `BadraSocis` — bhadraśocis  (n=2)
+
+- с благодатным пламенем  · n=1  · rigveda
+- с пламенем, несущим благо  · n=1  · rigveda
+
+### `BadraSruta` — bhadraśruta  (n=1)
+
+- с прекрасным слухом  · n=1  · atharvaveda
+
+### `BadradarSanAn` — bhadradarśanān  (n=1)
+
+- приятных на вид  · n=1  · kama-sutra
+
+### `BadrahastA` — bhadrahastā  (n=1)
+
+- с руками, приносящими счастье  · n=1  · rigveda
+
+### `BadrajAnaya` — bhadrajānaya  (n=2)
+
+- с прекрасной женой  · n=2  · rigveda
+
+### `BadrakAH` — bhadrakāḥ  (n=1)
+
+- красивоголовые кони  · n=1  · mahabharata-dronaparva
+
+### `BadrakAlI` — bhadrakālī  (n=2)
+
+- Бхадракали  · n=2  · manavadharmashastra, mahabharata-shalyaparva
+
+### `BadrakAli` — bhadrakāli  (n=1)
+
+- Бхадракали  · n=1  · manavadharmashastra
+
+### `BadrakArAH` — bhadrakārāḥ  (n=2)
+
+- бхадракары  · n=1  · mahabharata-sabhaparva
+- Бхадракары  · n=1  · mahabharata-sabhaparva
+
+### `BadrakAra` — bhadrakāra  (n=2)
+
+- Бхадракара  · n=1  · mahabharata-adiparva
+- способные на славные подвиги  · n=1  · mahabharata-dronaparva
+
+### `Badraka` — bhadraka  (n=2)
+
+- буйволов  · n=1  · ramayana-ayodhyakanda
+- благо  · n=1  · ramayana-sundarakanda
+
+### `BadrakarRI` — bhadrakarṇī  (n=2)
+
+- Бхадракарни  · n=2  · devi-gita
+
+### `BadrakarRaka` — bhadrakarṇaka  (n=2)
+
+- Бхадракарнаке  · n=2  · devi-gita
+
+### `BadrakarReSvara` — bhadrakarṇeśvara  (n=1)
+
+- Бхадракарнешвару  · n=1  · mahabharata-aranyakaparva
+
+### `Badrakft` — bhadrakṛt  (n=1)
+
+- благодетель  · n=1  · rigveda
+
+### `Badram` — bhadram  (n=81)
+
+- благо  · n=32  · mahabharata-aranyakaparva, ramayana-balakanda, ramayana-ayodhyakanda, ramayana-aranyakanda, mahabharata-udyogaparva, ramayana-sundarakanda, mahabharata-adiparva, mahabharata-shantiparva, mahabharata-bhishmaparva, mahabharata-dronaparva, rigveda, mahabharata-karnaparva, rigveda, mahabharata-shalyaparva, rigveda, atharvaveda, mahabharata-sauptikaparva
+- Благо  · n=7  · mahabharata-aranyakaparva, ramayana-ayodhyakanda, ramayana-aranyakanda
+- счастье  · n=7  · rigveda, rigveda, mahabharata-adiparva, rigveda, rigveda
+- добро  · n=5  · mahabharata-udyogaparva, mahabharata-virataparva, atharvaveda
+- удача  · n=3  · ramayana-balakanda, ramayana-ayodhyakanda
+- благую  · n=3  · rigveda, rigveda
+- счастливую  · n=2  · rigveda
+- благое  · n=2  · rigveda, atharvaveda
+- благополучна  · n=1  · ramayana-sundarakanda
+- прекрасная  · n=1  · ramayana-aranyakanda
+- слона Бхадру  · n=1  · ramayana-balakanda
+- Бхадру  · n=1  · ramayana-balakanda
+- счастливы  · n=1  · ramayana-balakanda
+- Прекрасное  · n=1  · rigveda
+- Благое  · n=1  · rigveda
+- прекрасное  · n=1  · rigveda
+- Счастливую  · n=1  · rigveda
+- радующую  · n=1  · rigveda
+- Благосклонной  · n=1  · rigveda
+- на благо  · n=1  · mahabharata-adiparva
+- благополучие  · n=1  · mahabharata-adiparva
+- хорошо  · n=1  · rigveda
+- счастливое  · n=1  · rigveda
+- благостный  · n=1  · rigveda
+- Настрой  · n=1  · rigveda
+- пожаловал  · n=1  · rigveda
+- благословен  · n=1  · mahabharata-virataparva
+- благословенным  · n=1  · atharvaveda
+
+### `Badram-Badram` — bhadram-bhadram  (n=1)
+
+- благо за благом  · n=1  · rigveda
+
+### `BadramadA` — bhadramadā  (n=1)
+
+- Бхадрамада  · n=1  · ramayana-aranyakanda
+
+### `BadramadAm` — bhadramadām  (n=1)
+
+- Бхадрамада  · n=1  · ramayana-aranyakanda
+
+### `BadramanA` — bhadramanā  (n=1)
+
+- Бхадрамана  · n=1  · mahabharata-adiparva
+
+### `Badramandra` — bhadramandra  (n=2)
+
+- огромных и низкорослых  · n=2  · ramayana-balakanda
+
+### `Badramfga` — bhadramṛga  (n=2)
+
+- с короткими и длинными бивнями  · n=2  · ramayana-balakanda
+
+### `Badramte` — bhadram te  (n=1)
+
+- благо тебе  · n=1  · mahabharata-ashvamedhikaparva
+
+### `BadrapApAs` — bhadrapāpās  (n=1)
+
+- Хорошие и плохие  · n=1  · atharvaveda
+
+### `BadrapApasya` — bhadrapāpasya  (n=1)
+
+- хорошего-и-плохого  · n=1  · atharvaveda
+
+### `BadrapIWa` — bhadrapīṭha  (n=1)
+
+- масло  · n=1  · ramayana-ayodhyakanda
+
+### `BadrapIWopaveSita` — bhadrapīṭhopaveśita  (n=1)
+
+- воссел на троне  · n=1  · raghuvamsha
+
+### `BadrasAlavana` — bhadrasālavana  (n=1)
+
+- лес Бхадрасала  · n=1  · mahabharata-bhishmaparva
+
+### `BadrasenaH` — bhadrasenaḥ  (n=2)
+
+- Бхадрасена  · n=2  · mahabharata-dronaparva
+
+### `Badrasya` — bhadrasya  (n=3)
+
+- приносящего счастье  · n=1  · rigveda
+- благой  · n=1  · rigveda
+- счастья  · n=1  · rigveda
+
+### `Badrata` — bhadrata  (n=1)
+
+- благополучно  · n=1  · atharvaveda
+
+### `BadravAca` — bhadravāca  (n=2)
+
+- с благословенным голосом  · n=2  · rigveda, atharvaveda
+
+### `BadravAdI` — bhadravādī  (n=2)
+
+- глаголя счастье  · n=2  · rigveda
+
+### `BadravatI` — bhadravatī  (n=1)
+
+- сулящим благо  · n=1  · mahabharata-virataparva
+
+### `Badravawa` — bhadravaṭa  (n=3)
+
+- Бхадравата  · n=2  · mahabharata-aranyakaparva
+- в Бхадравату  · n=1  · mahabharata-aranyakaparva
+
+### `BadravrAta` — bhadravrāta  (n=1)
+
+- Образующую блистательный отряд  · n=1  · rigveda
+
+### `BadrayA` — bhadrayā  (n=9)
+
+- благою  · n=2  · rigveda
+- на радость  · n=2  · atharvaveda, atharvaveda
+- Доброжелательно  · n=1  · atharvaveda
+- радостно  · n=1  · atharvaveda
+- прекрасно  · n=1  · atharvaveda
+- с Бхадрой  · n=1  · mahabharata-ashramavasikaparva
+- Бхадра  · n=1  · mahabharata-ashramavasikaparva
+
+### `BadrayajYAyajYIye` — bhadrayajñāyajñīye  (n=1)
+
+- бхадра и яджняяджния  · n=1  · kau-up
+
+### `Badre` — bhadre  (n=75)
+
+- милая  · n=25  · mahabharata-adiparva, mahabharata-aranyakaparva, mahabharata-udyogaparva, mahabharata-virataparva, ramayana-ayodhyakanda, mahabharata-dronaparva, mahabharata-shalyaparva, mahabharata-sabhaparva, shukasaptati
+- достойная  · n=8  · mahabharata-udyogaparva, mahabharata-aranyakaparva, mahabharata-ashvamedhikaparva
+- прелестная  · n=6  · mahabharata-udyogaparva, mahabharata-virataparva
+- о милая  · n=5  · mahabharata-adiparva
+- благая  · n=4  · mahabharata-aranyakaparva, ramayana-aranyakanda, mahabharata-ashramavasikaparva
+- добром  · n=4  · rigveda, rigveda, atharvaveda, atharvaveda
+- прекрасная  · n=3  · ramayana-sundarakanda, ramayana-aranyakanda, mahabharata-aranyakaparva
+- красавица  · n=3  · ramayana-aranyakanda
+- о достойная  · n=2  · mahabharata-aranyakaparva
+- о  · n=2  · mahabharata-adiparva
+- благо тебе  · n=2  · mahabharata-ashramavasikaparva, mahabharata-sauptikaparva
+- о царица  · n=1  · ramayana-ayodhyakanda
+- госпожа  · n=1  · ramayana-sundarakanda
+- о прекрасная  · n=1  · ramayana-sundarakanda
+- Милая  · n=1  · mahabharata-aranyakaparva
+- в довольстве  · n=1  · mahabharata-aranyakaparva
+- достойная женщина  · n=1  · mahabharata-aranyakaparva
+- счастливые  · n=1  · rigveda
+- Бхадра  · n=1  · mahabharata-adiparva
+- о почтенная  · n=1  · mahabharata-virataparva
+- робкая  · n=1  · mahabharata-virataparva
+- счастливом  · n=1  · atharvaveda
+
+### `BadreRa` — bhadreṇa  (n=5)
+
+- Прекрасного  · n=1  · ramayana-balakanda
+- прекрасного  · n=1  · ramayana-balakanda
+- благою  · n=1  · rigveda
+- с миром  · n=1  · mahabharata-karnaparva
+- со счастьем  · n=1  · atharvaveda
+
+### `Badrika` — bhadrika  (n=1)
+
+- добродетельный  · n=1  · manavadharmashastra
+
+### `Badro` — bhadro  (n=1)
+
+- счастливый  · n=1  · rigveda
+
+### `Badrá` — bhadrá  (n=1)
+
+- счастливая  · n=1  · rigveda
+
+### `BagAkftiM` — bhagākṛtiṁ  (n=1)
+
+- форму йони  · n=1  · shukasaptati
+
+### `BagAsaH` — bhagāsaḥ  (n=2)
+
+- судьбы  · n=2  · atharvaveda
+
+### `BagAya` — bhagāya  (n=8)
+
+- Бхаге  · n=3  · rigveda, rigveda
+- на счастье  · n=2  · atharvaveda
+- для Бхаги  · n=1  · rigveda
+- для бхаги  · n=1  · rigveda
+- Бхаги  · n=1  · rigveda
+
+### `BagIraTAt` — bhagīrathāt  (n=1)
+
+- Бхагиратхи  · n=1  · mahabharata-aranyakaparva
+
+### `BagIraTa` — bhagīratha  (n=33)
+
+- Бхагиратха  · n=28  · ramayana-balakanda, mahabharata-sabhaparva, mahabharata-aranyakaparva, mahabharata-dronaparva, mahabharata-karnaparva, mahabharata-svargarohanikaparva, mahabharata-adiparva, ramayana-ayodhyakanda, mahabharata-bhishmaparva
+- Бхагиратхе  · n=3  · mahabharata-aranyakaparva, ramayana-balakanda
+- Бхагиратхи  · n=2  · ramayana-ayodhyakanda, mahabharata-aranyakaparva
+
+### `BagIraTaH` — bhagīrathaḥ  (n=8)
+
+- Бхагиратха  · n=7  · ramayana-balakanda, mahabharata-aranyakaparva, raghuvamsha
+- Бхагиратхи  · n=1  · ramayana-balakanda
+
+### `BagIraTam` — bhagīratham  (n=2)
+
+- Бхагиратха  · n=1  · mahabharata-adiparva
+- Бхагиратху  · n=1  · ramayana-balakanda
+
+### `BagIraTapariSramAt` — bhagīrathapariśramāt  (n=1)
+
+- усердием Бхагиратхи  · n=1  · mahabharata-aranyakaparva
+
+### `BagIraTaraTAnugA` — bhagīratharathānugā  (n=1)
+
+- За колесницей Бхагиратхи  · n=1  · ramayana-balakanda
+
+### `BagIraTaraTAnugAH` — bhagīratharathānugāḥ  (n=1)
+
+- За колесницей Бхагиратхи  · n=1  · ramayana-balakanda
+
+### `BagIraTaraTam` — bhagīratharatham  (n=1)
+
+- колесницей Бхагиратхи  · n=1  · ramayana-balakanda
+
+### `BagIraTasutA` — bhagīrathasutā  (n=1)
+
+- дочь Бхагиратхи  · n=1  · mahabharata-udyogaparva
+
+### `BagIraTena` — bhagīrathena  (n=1)
+
+- Бхагиратхой  · n=1  · raghuvamsha
+
+### `BagIraTo` — bhagīratho  (n=1)
+
+- Бхагиратха  · n=1  · mahabharata-aranyakaparva
+
+### `Baga` — bhaga  (n=157)
+
+- Бхага  · n=74  · rigveda, rigveda, rigveda, atharvaveda, atharvaveda, rigveda, rigveda, atharvaveda, mahabharata-adiparva, rigveda, mahabharata-sabhaparva, atharvaveda, rigveda, rigveda, mahabharata-shalyaparva, rigveda, vedanga_jyotisha, ramayana-ayodhyakanda, mahabharata-aranyakaparva, rigveda, mahabharata-dronaparva, atharvaveda, atharvaveda, atharvaveda, mahabharata-sauptikaparva
+- Бхаги  · n=18  · atharvaveda, ramayana-balakanda, atharvaveda, rigveda, ramayana-aranyakanda, rigveda, rigveda, ch-up, rigveda, atharvaveda
+- Бхагу  · n=11  · rigveda, rigveda, rigveda, rigveda, rigveda, rigveda, rigveda, rigveda
+- доля  · n=7  · rigveda, atharvaveda, rigveda, atharvaveda
+- Бхаге  · n=5  · atharvaveda, rigveda, rigveda, atharvaveda
+- счастье  · n=5  · rigveda, atharvaveda, rigveda
+- счастливую долю  · n=4  · atharvaveda
+- удачу  · n=3  · rigveda, atharvaveda, atharvaveda
+- господин  · n=3  · atharvaveda, br-up
+- счастливая доля  · n=2  · rigveda, rigveda
+- счастьем  · n=2  · rigveda, atharvaveda
+- милостивый покровитель  · n=2  · rigveda
+- о Бхага  · n=2  · rigveda, rigveda
+- удачей  · n=2  · atharvaveda, atharvaveda
+- влагалище  · n=2  · yotat-up
+- женский орган  · n=1  · manavadharmashastra
+- Счастливая доля  · n=1  · rigveda
+- богатый господин  · n=1  · rigveda
+- счастья  · n=1  · rigveda
+- Благой  · n=1  · rigveda
+- счастливой доли  · n=1  · rigveda
+- Доля  · n=1  · atharvaveda
+- Господин  · n=1  · br-up
+- благоденствие  · n=1  · br-up
+- благо  · n=1  · rigveda
+- привлекательность  · n=1  · atharvaveda
+- удача  · n=1  · atharvaveda
+- долю  · n=1  · atharvaveda
+- владыка  · n=1  · tai-up
+- Владыка  · n=1  · tai-up
+
+### `BagaBakta` — bhagabhakta  (n=1)
+
+- наделенного Счастливой долей  · n=1  · rigveda
+
+### `BagaGna` — bhagaghna  (n=3)
+
+- сокрушил (глаза) Бхаги  · n=2  · mahabharata-dronaparva
+- убивающий Бхагу  · n=1  · mahabharata-dronaparva
+
+### `BagaH` — bhagaḥ  (n=30)
+
+- Бхага  · n=22  · rigveda, rigveda, atharvaveda, rigveda, rigveda, atharvaveda, rigveda, rigveda, rigveda, rigveda, atharvaveda, atharvaveda
+- доля  · n=3  · rigveda, rigveda
+- богатый господин  · n=1  · rigveda
+- благосклонность  · n=1  · rigveda
+- счастьем  · n=1  · rigveda
+- бхага  · n=1  · rigveda
+- Доля  · n=1  · mahabharata-ashvamedhikaparva
+
+### `BagaM` — bhagaṃ  (n=1)
+
+- долю  · n=1  · rigveda
+
+### `Bagadaivata` — bhagadaivata  (n=3)
+
+- Бхага-Дайвата  · n=2  · mahabharata-adiparva
+- божество счастья  · n=1  · mahabharata-adiparva
+
+### `BagadattAtmaja` — bhagadattātmaja  (n=3)
+
+- сын Бхагадатты  · n=2  · mahabharata-ashvamedhikaparva
+- сына Бхагадатты  · n=1  · mahabharata-ashvamedhikaparva
+
+### `BagadattAya` — bhagadattāya  (n=2)
+
+- к Бхагадатте  · n=1  · mahabharata-udyogaparva
+- Бхагадатта  · n=1  · mahabharata-udyogaparva
+
+### `Bagadatta` — bhagadatta  (n=53)
+
+- Бхагадатта  · n=38  · mahabharata-bhishmaparva, mahabharata-dronaparva, mahabharata-sabhaparva, mahabharata-ashramavasikaparva, mahabharata-adiparva, mahabharata-udyogaparva, mahabharata-karnaparva, mahabharata-shalyaparva, mahabharata-ashvamedhikaparva, mahabharata-striparva
+- Бхагадаттой  · n=5  · mahabharata-dronaparva, mahabharata-shalyaparva
+- Бхагадатту  · n=4  · mahabharata-dronaparva, mahabharata-bhishmaparva
+- Бхагадатты  · n=4  · mahabharata-karnaparva, mahabharata-dronaparva, mahabharata-shalyaparva
+- Бхагадатте  · n=2  · mahabharata-dronaparva
+
+### `BagadattaDanaYjayau` — bhagadattadhanañjayau  (n=1)
+
+- Бхагадатта и Дхананджая  · n=1  · mahabharata-dronaparva
+
+### `BagadattaH` — bhagadattaḥ  (n=8)
+
+- Бхагадатта  · n=8  · mahabharata-dronaparva, mahabharata-bhishmaparva, mahabharata-adiparva
+
+### `Bagadattaja` — bhagadattaja  (n=1)
+
+- сын Бхагадатты  · n=1  · mahabharata-ashvamedhikaparva
+
+### `Bagadattam` — bhagadattam  (n=4)
+
+- Бхагадатту  · n=2  · mahabharata-bhishmaparva, mahabharata-dronaparva
+- на Бхагадатту  · n=1  · mahabharata-bhishmaparva
+- царю Бхагадатте  · n=1  · mahabharata-udyogaparva
+
+### `Bagadattasuta` — bhagadattasuta  (n=3)
+
+- сын Бхагадатты  · n=3  · mahabharata-karnaparva, mahabharata-ashvamedhikaparva
+
+### `Bagadattasya` — bhagadattasya  (n=3)
+
+- Бхагадатта  · n=1  · mahabharata-bhishmaparva
+- Бхагадатты  · n=1  · mahabharata-dronaparva
+- Бхагадатте  · n=1  · mahabharata-dronaparva
+
+### `Bagadatte` — bhagadatte  (n=1)
+
+- Бхагадатта  · n=1  · mahabharata-shalyaparva
+
+### `Bagadattena` — bhagadattena  (n=4)
+
+- Бхагадаттой  · n=4  · mahabharata-bhishmaparva, mahabharata-dronaparva
+
+### `BagadevAnuyAtAnAm` — bhagadevānuyātānām  (n=1)
+
+- боготворящих  · n=1  · mahabharata-ashvamedhikaparva
+
+### `Bagam` — bhagam  (n=30)
+
+- Бхагу  · n=13  · rigveda, atharvaveda, rigveda, rigveda, atharvaveda
+- лоно  · n=3  · rigveda, atharvaveda
+- Бхаге  · n=3  · atharvaveda, rigveda
+- к счастью  · n=2  · rigveda
+- счастливую долю  · n=2  · rigveda, rigveda
+- на удачу  · n=1  · rigveda
+- бхагу  · n=1  · rigveda
+- любовного счастья  · n=1  · rigveda
+- Бхаги  · n=1  · rigveda
+- к бхаге  · n=1  · rigveda
+- долю  · n=1  · rigveda
+- о счастье  · n=1  · rigveda
+
+### `BaganandA` — bhaganandā  (n=1)
+
+- Бхагананда  · n=1  · mahabharata-shalyaparva
+
+### `Baganetrahan` — bhaganetrahan  (n=1)
+
+- Ослепитель Бхаги  · n=1  · mahabharata-aranyakaparva
+
+### `Baganetrahara` — bhaganetrahara  (n=1)
+
+- похитителя очей Бхаги  · n=1  · mahabharata-adiparva
+
+### `BaganetranipAtana` — bhaganetranipātana  (n=2)
+
+- Ослепитель Бхаги  · n=1  · mahabharata-aranyakaparva
+- Сокрушитель глаз Бхаги  · n=1  · mahabharata-dronaparva
+
+### `BaganetranipAtanaH` — bhaganetranipātanaḥ  (n=1)
+
+- сокрушитель глаз Бхаги  · n=1  · mahabharata-dronaparva
+
+### `Bagasya` — bhagasya  (n=7)
+
+- Бхаги  · n=4  · rigveda, mahabharata-aranyakaparva
+- Бхаге  · n=2  · mahabharata-sauptikaparva
+- у бхаги  · n=1  · atharvaveda
+
+### `Bagatti` — bhagatti  (n=1)
+
+- Дар счастливой доли  · n=1  · rigveda
+
+### `Bagav` — bhagav  (n=3)
+
+- Почтенный  · n=2  · ch-up
+- почтенный  · n=1  · ch-up
+
+### `BagavAn` — bhagavān  (n=222)
+
+- владыка  · n=29  · mahabharata-aranyakaparva, mahabharata-karnaparva, mahabharata-adiparva, mahabharata-udyogaparva, mahabharata-sabhaparva, mahabharata-ashramavasikaparva, shv-up, mahabharata-svargarohanikaparva, ramayana-sundarakanda, mahabharata-striparva, mahabharata-sauptikaparva
+- божественный  · n=24  · mahabharata-shalyaparva, mahabharata-udyogaparva, mahabharata-adiparva, mahabharata-dronaparva, mahabharata-aranyakaparva, mahabharata-sabhaparva
+- великий  · n=15  · mahabharata-adiparva, mahabharata-sabhaparva, mahabharata-aranyakaparva, mahabharata-udyogaparva
+- благословенный  · n=12  · ramayana-balakanda, mahabharata-bhishmaparva, mahabharata-adiparva, ramayana-ayodhyakanda, ramayana-aranyakanda
+- Бхагаван  · n=10  · mahabharata-adiparva, mahabharata-aranyakaparva, mahabharata-sauptikaparva, gitarthasamgraha-abhinavagupta, bhagavadgita-prabhupada, mahabharata-ashvamedhikaparva, mahabharata-mausalaparva
+- Господь  · n=10  · mahabharata-bhishmaparva, paramarthasara-abhinavagupta, mahabharata-adiparva, ramayana-sundarakanda, gitarthasamgraha-abhinavagupta, ramanuja_gitabhashya, vedartha-samgraha_ramanuja
+- блаженный  · n=10  · mahabharata-adiparva, mahabharata-sabhaparva
+- почтенный  · n=9  · mahabharata-aranyakaparva, ch-up, mai-up, br-up
+- господин  · n=8  · mahabharata-adiparva, ramayana-sundarakanda, ch-up, br-up, vedartha-samgraha_ramanuja
+- величественный  · n=8  · mahabharata-adiparva, mahabharata-shalyaparva
+- Владыка  · n=7  · mahabharata-aranyakaparva, mahabharata-karnaparva, mahabharata-sauptikaparva
+- благой  · n=6  · ramayana-balakanda, ramayana-ayodhyakanda
+- прославленный  · n=6  · mahabharata-shalyaparva, mahabharata-udyogaparva
+- достославный  · n=4  · mahabharata-udyogaparva, ramayana-ayodhyakanda, mahabharata-ashramavasikaparva
+- могучий  · n=4  · mahabharata-aranyakaparva, ramayana-balakanda
+- властелин  · n=4  · mahabharata-aranyakaparva, mahabharata-bhishmaparva
+- святой  · n=4  · mahabharata-adiparva, mahabharata-udyogaparva, mahabharata-shalyaparva
+- господь  · n=3  · mahabharata-adiparva, pratyabhijna-hridaya_kshemaraja
+- достойный  · n=3  · mahabharata-aranyakaparva, mahabharata-ashvamedhikaparva
+- благодатный  · n=2  · ramayana-aranyakanda
+- бог  · n=2  · ramayana-balakanda, mahabharata-aranyakaparva
+- славный  · n=2  · mahabharata-aranyakaparva
+- отмеченный божественными признаками  · n=2  · mahabharata-udyogaparva
+- всевышний  · n=2  · mahabharata-udyogaparva
+- Благой Господь  · n=2  · ramanuja_gitabhashya
+- носителем счастья  · n=2  · atharvaveda
+- знаток  · n=1  · ramayana-ayodhyakanda
+- солнце  · n=1  · ramayana-ayodhyakanda
+- он  · n=1  · ramayana-balakanda
+- меня  · n=1  · ramayana-balakanda
+- Бог  · n=1  · mahabharata-aranyakaparva
+- почтенного  · n=1  · mahabharata-aranyakaparva
+- Лучезарный  · n=1  · mahabharata-aranyakaparva
+- могучего  · n=1  · mahabharata-aranyakaparva
+- великого  · n=1  · mahabharata-aranyakaparva
+- властитель  · n=1  · mahabharata-aranyakaparva
+- Властитель  · n=1  · mahabharata-aranyakaparva
+- ты  · n=1  · mahabharata-aranyakaparva
+- сверкающий  · n=1  · mahabharata-aranyakaparva
+- счастливая  · n=1  · rigveda
+- мудрец  · n=1  · mahabharata-adiparva
+- божественного  · n=1  · mahabharata-dronaparva
+- божественный владыка  · n=1  · mahabharata-dronaparva
+- тебе  · n=1  · buddhacharita
+- благородный  · n=1  · mahabharata-udyogaparva
+- великий владыка  · n=1  · mahabharata-udyogaparva
+- досточтимый  · n=1  · mahabharata-udyogaparva
+- величественный Бог  · n=1  · mahabharata-udyogaparva
+- Будь благословен  · n=1  · bhagavadgita-1914
+- предводитель богов  · n=1  · bhagavadgita-1914
+- Кришна  · n=1  · bhagavadgita-1788
+- Верховный Господь  · n=1  · bhagavadgita-prabhupada
+- Всеблагой [Господь]  · n=1  · bhagavadgita-radha
+- Владыку  · n=1  · mahabharata-karnaparva
+- прославленный бог  · n=1  · mahabharata-shalyaparva
+- Владетель  · n=1  · mahabharata-ashvamedhikaparva
+- чтимый  · n=1  · shv-up
+- Высший  · n=1  · pratyabhijna-hridaya_kshemaraja
+
+### `BagavAnparamarzi` — bhagavān paramarṣi  (n=1)
+
+- благословенный великий риши  · n=1  · yoga-sutry_vyasa-bhashya
+
+### `BagavAnsavaraMdadau` — bhagavānsa varaṃ dadau  (n=1)
+
+- божественный владыка предложил ему выбрать дар  · n=1  · mahabharata-dronaparva
+
+### `Bagava` — bhagava  (n=1)
+
+- почтенный  · n=1  · ch-up
+
+### `BagavaH` — bhagavaḥ  (n=10)
+
+- почтенный  · n=10  · ch-up
+
+### `BagavacCAktiH` — bhagavacchāktiḥ  (n=1)
+
+- Шакти Господа  · n=1  · gitarthasamgraha-abhinavagupta
+
+### `BagavacCabda` — bhagavacchabda  (n=1)
+
+- твой голос  · n=1  · mahabharata-adiparva
+
+### `BagavacCakti` — bhagavacchakti  (n=1)
+
+- Шакти Господа  · n=1  · gitarthasamgraha-abhinavagupta
+
+### `BagavacCezataikarasatA` — bhagavaccheṣataikarasatā  (n=1)
+
+- единственный объект поклонения  · n=1  · vedartha-samgraha_ramanuja
+
+### `BagavacCezataikarasatayA` — bhagavaccheṣataikarasatayā  (n=1)
+
+- принадлежность только Богу  · n=1  · vedartha-samgraha_ramanuja
+
+### `Bagavad-DyAna-yoga` — bhagavad-dhyāna-yoga  (n=1)
+
+- Йога медитации на Господе  · n=1  · gitartha-samgraha_yamunacharya
+
+### `Bagavad-darSana` — bhagavad-darśana  (n=1)
+
+- тем, что увидел  · n=1  · ramayana-balakanda
+
+### `BagavadArADanarUpa` — bhagavadārādhanarūpa  (n=1)
+
+- почитания Меня  · n=1  · ramanuja_gitabhashya
+
+### `BagavadAtmakatAm` — bhagavadātmakatām  (n=1)
+
+- Бог — одушевляющее начало  · n=1  · vedartha-samgraha_ramanuja
+
+### `BagavadBAvena` — bhagavadbhāvena  (n=1)
+
+- Богосознанием  · n=1  · gitarthasamgraha-abhinavagupta
+
+### `BagavadBaktAH` — bhagavadbhaktāḥ  (n=1)
+
+- преданными божеству  · n=1  · mahabharata-adiparva
+
+### `BagavadBaktiveDavidrutAntaHkaraRatayA` — bhagavadbhaktivedhavidrutāntaḥkaraṇatayā  (n=1)
+
+- с умом, расплавленным преданностью, и сердцем, разбитым чувством несравненной преданности  · n=1  · gitarthasamgraha-abhinavagupta
+
+### `BagavadByAm` — bhagavadbhyām  (n=1)
+
+- двумя владыками  · n=1  · mahabharata-karnaparva
+
+### `BagavadaMSasparSi` — bhagavadaṃśasparśi  (n=1)
+
+- в чьих умах Господь занимает [наиважнейшее] место  · n=1  · gitarthasamgraha-abhinavagupta
+
+### `BagavadbudDi` — bhagavadbuddhi  (n=1)
+
+- твоя мудрость  · n=1  · mahabharata-ashvamedhikaparva
+
+### `BagavaddarSanAt` — bhagavaddarśanāt  (n=1)
+
+- встретив тебя  · n=1  · ramayana-balakanda
+
+### `BagavaddfSeBya` — bhagavaddṛśebhya  (n=1)
+
+- подобных почтенному  · n=1  · ch-up
+
+### `BagavaddfSeByaH` — bhagavaddṛśebhyaḥ  (n=1)
+
+- от подобных тебе  · n=1  · ch-up
+
+### `BagavadgItA` — bhagavadgītā  (n=4)
+
+- Бхагавад-Гита  · n=1  · mahabharata-adiparva
+- Бхагавадгита  · n=1  · mahabharata-adiparva
+- «Бхагавад гита»  · n=1  · gitarthasamgraha-abhinavagupta
+- «Бхагавад гите»  · n=1  · gitarthasamgraha-abhinavagupta
+
+### `BagavadgItArTasaNgraha` — bhagavadgītārthasaṅgraha  (n=1)
+
+- Бхагаватгитартхасанграху  · n=1  · gitarthasamgraha-abhinavagupta
+
+### `BagavadraSmiKacitam` — bhagavadraśmikhacitam  (n=1)
+
+- в лучах Сияния Господа  · n=1  · gitarthasamgraha-abhinavagupta
+
+### `Bagavadrahas` — bhagavadrahas  (n=1)
+
+- тайна Господа  · n=1  · gitarthasamgraha-abhinavagupta
+
+### `BagavadunmuKI` — bhagavadunmukhī  (n=1)
+
+- перед блаженным  · n=1  · mahabharata-adiparva
+
+### `BagavadvAsudevatattva` — bhagavadvāsudevatattva  (n=1)
+
+- сущность Господа Васудевы  · n=1  · gitarthasamgraha-abhinavagupta
+
+### `BagavadyAna` — bhagavadyāna  (n=4)
+
+- Колесница господа  · n=1  · mahabharata-adiparva
+- Бхагавад-яна  · n=1  · mahabharata-adiparva
+- уход Господа  · n=1  · mahabharata-adiparva
+- отъезд Господа  · n=1  · mahabharata-adiparva
+
+### `Bagavan` — bhagavan  (n=148)
+
+- владыка  · n=19  · mahabharata-aranyakaparva, mahabharata-ashvamedhikaparva, mahabharata-adiparva, mahabharata-bhishmaparva, bhagavadgita-smirnov, mahabharata-ashramavasikaparva, mahabharata-sauptikaparva
+- благословенный  · n=9  · ramayana-ayodhyakanda, ramayana-balakanda, mahabharata-udyogaparva
+- Почтенный  · n=9  · tai-up, mai-up, pr-up
+- почтенный  · n=8  · br-up, mai-up, jabala-up, mahabharata-aranyakaparva, pr-up
+- о владыка  · n=8  · mahabharata-aranyakaparva, mahabharata-karnaparva, mahabharata-dronaparva, mahabharata-ashramavasikaparva, mahabharata-mausalaparva
+- блаженный  · n=6  · mahabharata-udyogaparva, mahabharata-adiparva, mahabharata-sabhaparva, raghuvamsha
+- Господи  · n=6  · mahabharata-bhishmaparva, bhagavadgita-erman, bhagavadgita-1788, bhagavadgita-1909
+- господин  · n=5  · mahabharata-adiparva, ramayana-balakanda
+- благодатный  · n=5  · mahabharata-shalyaparva, mahabharata-dronaparva
+- Владыка  · n=4  · mahabharata-aranyakaparva, gitarthasamgraha-abhinavagupta, bhagavadgity, mahabharata-ashramavasikaparva
+- Господь  · n=4  · bhagavadgita-burba, bhagavadgity, bhagavadgita-sharma, bhagavadgita-prabhupada
+- Господин  · n=4  · ramanuja_gitabhashya, bhagavadgita-sementsov
+- о Господь  · n=3  · bhagavadgita-burba, bhagavadgita-1914, bhagavadgita-sharma
+- о господин  · n=2  · mahabharata-adiparva, mahabharata-shantiparva
+- благой  · n=2  · ramayana-ayodhyakanda, ramayana-aranyakanda
+- Благословенный  · n=2  · ramayana-balakanda, bhagavadgita-1914
+- властелин  · n=2  · mahabharata-aranyakaparva
+- божественный  · n=2  · mahabharata-dronaparva, mahabharata-shalyaparva
+- величавый  · n=2  · mahabharata-udyogaparva
+- святитель  · n=2  · mahabharata-udyogaparva
+- Бхагаван  · n=2  · gitarthasamgraha-abhinavagupta, kumarasambhava
+- о благодатный  · n=2  · mahabharata-shalyaparva
+- о достойный  · n=1  · mahabharata-shantiparva
+- достойнейший  · n=1  · mahabharata-shantiparva
+- о блаженный  · n=1  · mahabharata-shantiparva
+- о почтенный  · n=1  · mahabharata-shantiparva
+- благой мудрец  · n=1  · ramayana-ayodhyakanda
+- Прошу тебя  · n=1  · ramayana-ayodhyakanda
+- благочестивый  · n=1  · ramayana-balakanda
+- Благой  · n=1  · ramayana-balakanda
+- Ведь  · n=1  · ramayana-balakanda
+- о благословенный  · n=1  · ramayana-balakanda
+- великая  · n=1  · mahabharata-aranyakaparva
+- великий  · n=1  · mahabharata-aranyakaparva
+- достойный  · n=1  · mahabharata-aranyakaparva
+- повелитель  · n=1  · mahabharata-aranyakaparva
+- открыться  · n=1  · mahabharata-aranyakaparva
+- всевышний  · n=1  · mahabharata-adiparva
+- святой  · n=1  · mahabharata-adiparva
+- о благородный  · n=1  · mahabharata-adiparva
+- великий Бхава  · n=1  · mahabharata-adiparva
+- величественный  · n=1  · mahabharata-adiparva
+- о прославленный владыка  · n=1  · mahabharata-dronaparva
+- прославленный мудрец  · n=1  · mahabharata-udyogaparva
+- величавый владыка  · n=1  · mahabharata-udyogaparva
+- святый владыка  · n=1  · mahabharata-udyogaparva
+- святейший  · n=1  · mahabharata-udyogaparva
+- о великий владыка  · n=1  · mahabharata-udyogaparva
+- о досточтимый  · n=1  · mahabharata-udyogaparva
+- Бхагаване  · n=1  · bhagavadgita-burba
+- благословенный Господь  · n=1  · bhagavadgita-1914
+- тебя  · n=1  · bhagavadgita-1788
+- величьи  · n=1  · bhagavadgita-1909
+- о Личность Бога  · n=1  · bhagavadgita-prabhupada
+- Верховного Господа  · n=1  · bhagavadgita-prabhupada
+- о Всевышний  · n=1  · bhagavadgita-prabhupada
+- о Всеблагой  · n=1  · bhagavadgita-radha
+- Всеблагой  · n=1  · bhagavadgita-radha
+- о божественный  · n=1  · mahabharata-shalyaparva
+- владыка — щедрый податель  · n=1  · mahabharata-ashvamedhikaparva
+- благостный  · n=1  · mahabharata-sabhaparva
+- Блаженный  · n=1  · raghuvamsha
+
+### `BagavanmArga` — bhagavanmārga  (n=1)
+
+- путем, указанным Господом  · n=1  · gitarthasamgraha-abhinavagupta
+
+### `BagavanmayI` — bhagavanmayī  (n=1)
+
+- наполненное [осознанием] Бога  · n=1  · gitarthasamgraha-abhinavagupta
+
+### `Bagavanmaya` — bhagavanmaya  (n=2)
+
+- Господу  · n=1  · gitarthasamgraha-abhinavagupta
+- отождествление с Господом  · n=1  · gitarthasamgraha-abhinavagupta
+
+### `BagavanmayaH` — bhagavanmayaḥ  (n=1)
+
+- наполнено Господом  · n=1  · gitarthasamgraha-abhinavagupta
+
+### `Bagavann` — bhagavann  (n=4)
+
+- Почтенный  · n=2  · ch-up
+- господин  · n=1  · mahabharata-adiparva
+- о блаженный  · n=1  · raghuvamsha
+
+### `BagavannAmasaMprAptimAtra` — bhagavannāmasaṃprāptimātra  (n=1)
+
+- благодаря обретению Имени Господа  · n=1  · gitarthasamgraha-abhinavagupta
+
+### `Bagavant` — bhagavant  (n=108)
+
+- почтенный  · n=17  · ch-up, br-up, mnar-up, jabala-up
+- владыка  · n=11  · mahabharata-aranyakaparva, mahabharata-ashvamedhikaparva, mahabharata-karnaparva
+- божественный  · n=6  · mahabharata-shalyaparva, mahabharata-adiparva, mahabharata-dronaparva, mahabharata-udyogaparva
+- Бхагаван  · n=6  · mahabharata-udyogaparva, vedartha-samgraha_ramanuja, mahabharata-svargarohanikaparva
+- Владыка  · n=5  · mahabharata-aranyakaparva, bhagavadgita-smirnov, vedartha-samgraha_ramanuja
+- господин  · n=4  · mahabharata-ashvamedhikaparva, mahabharata-adiparva, ramayana-balakanda
+- благой  · n=3  · ramayana-ayodhyakanda, ramayana-aranyakanda, ramayana-balakanda
+- Благой  · n=3  · ramayana-balakanda
+- божественное  · n=3  · mahabharata-udyogaparva
+- Почтенные  · n=3  · br-up
+- блаженный  · n=2  · mahabharata-adiparva, mahabharata-shalyaparva
+- великий  · n=2  · ramayana-balakanda, mahabharata-aranyakaparva
+- властитель  · n=2  · mahabharata-aranyakaparva
+- величественный  · n=2  · mahabharata-adiparva, mahabharata-sabhaparva
+- божественных  · n=2  · mahabharata-dronaparva
+- почтенные  · n=2  · ch-up
+- почтенному  · n=2  · paramarthasara-abhinavagupta, kai-up
+- Почтенный  · n=2  · pr-up
+- святой  · n=1  · mahabharata-adiparva
+- благословенный  · n=1  · mahabharata-adiparva
+- благого  · n=1  · ramayana-ayodhyakanda
+- благодатная  · n=1  · ramayana-sundarakanda
+- благословенного  · n=1  · ramayana-aranyakanda
+- Благому  · n=1  · ramayana-balakanda
+- Великий Отец  · n=1  · ramayana-balakanda
+- твоем  · n=1  · ramayana-balakanda
+- Великий бог  · n=1  · mahabharata-aranyakaparva
+- Почтеннейший  · n=1  · mahabharata-aranyakaparva
+- святой муж  · n=1  · mahabharata-aranyakaparva
+- достойный  · n=1  · mahabharata-aranyakaparva
+- славного  · n=1  · mahabharata-aranyakaparva
+- властителя  · n=1  · mahabharata-aranyakaparva
+- Ты  · n=1  · mahabharata-aranyakaparva
+- прославленный  · n=1  · mahabharata-dronaparva
+- величественный бог  · n=1  · mahabharata-dronaparva
+- величавый  · n=1  · mahabharata-dronaparva
+- блаженные  · n=1  · mahabharata-udyogaparva
+- великие своей участью  · n=1  · mahabharata-udyogaparva
+- величавых  · n=1  · mahabharata-udyogaparva
+- великий творец  · n=1  · mahabharata-udyogaparva
+- прославленный владыка  · n=1  · mahabharata-udyogaparva
+- Бхагаваном  · n=1  · mahabharata-udyogaparva
+- счастливыми  · n=1  · rigveda
+- носителем счастья  · n=1  · rigveda
+- счастливый, благодатный, божественный  · n=1  · bhagavadgita-burba
+- почтенным  · n=1  · ch-up
+- благодатный  · n=1  · mahabharata-shalyaparva
+- счастливы  · n=1  · atharvaveda
+- почтенного  · n=1  · paramarthasara-abhinavagupta
+
+### `BagavantaH` — bhagavantaḥ  (n=6)
+
+- счастливы  · n=4  · atharvaveda, rigveda, atharvaveda
+- прославленные  · n=1  · mahabharata-udyogaparva
+- счастливыми  · n=1  · rigveda
+
+### `BagavantaM` — bhagavantaṃ  (n=1)
+
+- могучего  · n=1  · mahabharata-aranyakaparva
+
+### `Bagavantam` — bhagavantam  (n=12)
+
+- почтенному  · n=2  · mahabharata-aranyakaparva, pr-up
+- о Господе  · n=2  · gitarthasamgraha-abhinavagupta
+- тебя  · n=1  · mahabharata-adiparva
+- божественному  · n=1  · mahabharata-aranyakaparva
+- Великого бога  · n=1  · mahabharata-aranyakaparva
+- к почтенному  · n=1  · ch-up
+- владыку  · n=1  · mahabharata-karnaparva
+- Бога  · n=1  · mahabharata-karnaparva
+- владыка  · n=1  · mahabharata-ashramavasikaparva
+- великого  · n=1  · mai-up
+
+### `Bagavantau` — bhagavantau  (n=1)
+
+- почтенные  · n=1  · ch-up
+
+### `Bagavat` — bhagavat  (n=373)
+
+- владыка  · n=33  · mahabharata-aranyakaparva, mahabharata-adiparva, mahabharata-ashvamedhikaparva, mahabharata-ashramavasikaparva, ramayana-aranyakanda, mahabharata-bhishmaparva, mahabharata-striparva
+- почтенный  · n=30  · ch-up, jabala-up, mahabharata-aranyakaparva, buddhacharita, br-up, mai-up, mun-up
+- великий  · n=25  · mahabharata-adiparva, mahabharata-aranyakaparva, mahabharata-udyogaparva, mahabharata-sabhaparva
+- божественный  · n=22  · mahabharata-shalyaparva, mahabharata-adiparva, manavadharmashastra, ramayana-balakanda, mahabharata-dronaparva, mahabharata-shantiparva, mahabharata-sabhaparva
+- благой  · n=16  · ramayana-balakanda, ramayana-ayodhyakanda, mahabharata-adiparva, ramayana-aranyakanda
+- блаженный  · n=15  · mahabharata-adiparva, br-up, ramayana-balakanda, mahabharata-udyogaparva, mahabharata-shalyaparva
+- достойный  · n=11  · mahabharata-aranyakaparva, mahabharata-ashvamedhikaparva, mahabharata-shantiparva, mahabharata-karnaparva
+- благословенный  · n=11  · ramayana-ayodhyakanda, ramayana-balakanda, mahabharata-bhishmaparva, ramayana-sundarakanda, ramayana-aranyakanda
+- величественный  · n=9  · mahabharata-adiparva, mahabharata-sabhaparva, mahabharata-shalyaparva
+- славный  · n=9  · mahabharata-aranyakaparva, mahabharata-adiparva, vedartha-samgraha_ramanuja
+- господин  · n=8  · mahabharata-adiparva, ramayana-balakanda, br-up, ch-up
+- Господь  · n=8  · vedartha-samgraha_ramanuja, mahabharata-adiparva, mahabharata-bhishmaparva, gitarthasamgraha-abhinavagupta, pratyabhijna-hridaya_kshemaraja
+- Благословенный  · n=8  · ramayana-balakanda, bhagavadgita-1914, ramayana-ayodhyakanda, buddhacharita
+- Бхагаван  · n=7  · mahabharata-adiparva, gitarthasamgraha-abhinavagupta, mahabharata-karnaparva, vedartha-samgraha_ramanuja, mahabharata-sauptikaparva
+- Владыка  · n=6  · mahabharata-aranyakaparva, mahabharata-ashvamedhikaparva
+- Великий  · n=6  · mahabharata-adiparva, mahabharata-karnaparva
+- прославленный  · n=6  · mahabharata-shalyaparva, mahabharata-dronaparva, mahabharata-udyogaparva, mahabharata-sabhaparva
+- ты  · n=5  · mahabharata-aranyakaparva, mahabharata-adiparva, mahabharata-dronaparva
+- достославный  · n=5  · mahabharata-bhishmaparva, mahabharata-shantiparva, ramayana-balakanda, mahabharata-udyogaparva
+- Почтенный  · n=5  · tai-up, mai-up, jab-up
+- о владыка  · n=4  · mahabharata-aranyakaparva, mahabharata-adiparva
+- Благой  · n=4  · ramayana-balakanda, ramayana-ayodhyakanda
+- господь  · n=4  · mahabharata-bhishmaparva, raghuvamsha
+- Величественный  · n=3  · mahabharata-adiparva, mahabharata-shalyaparva
+- благословенного  · n=3  · ramayana-aranyakanda, ramayana-ayodhyakanda
+- досточтимый  · n=3  · manavadharmashastra, mahabharata-karnaparva, mahabharata-ashramavasikaparva
+- святой  · n=3  · mahabharata-aranyakaparva
+- Господа  · n=3  · gitarthasamgraha-abhinavagupta
+- величавый  · n=3  · mahabharata-shalyaparva
+- благодатный  · n=3  · mahabharata-shalyaparva
+- Владетель  · n=3  · mahabharata-ashvamedhikaparva
+- Блаженный  · n=3  · br-up
+- Господом  · n=3  · vedartha-samgraha_ramanuja
+- преславный  · n=2  · mahabharata-adiparva
+- о мудрец  · n=2  · ramayana-balakanda
+- великий владыка  · n=2  · mahabharata-aranyakaparva, mahabharata-virataparva
+- Властитель  · n=2  · mahabharata-aranyakaparva
+- знаменитого  · n=2  · mahabharata-adiparva
+- сам  · n=2  · mahabharata-adiparva
+- божественный владыка  · n=2  · mahabharata-dronaparva, mahabharata-shalyaparva
+- блаженного  · n=2  · mahabharata-udyogaparva, mai-up
+- бог  · n=2  · mahabharata-udyogaparva
+- бхагаван  · n=2  · gitarthasamgraha-abhinavagupta
+- Бхагавана  · n=2  · bhagavadgita-burba, mahabharata-sauptikaparva
+- Благой Господь  · n=2  · ramanuja_gitabhashya
+- Кришна  · n=2  · bhagavadgita-1788
+- божественнаго  · n=2  · bhagavadgita-1909
+- Бога  · n=2  · mahabharata-karnaparva, gitartha-samgraha_yamunacharya
+- божество  · n=2  · mahabharata-sabhaparva, shatakatrayam
+- великое божество  · n=1  · mahabharata-adiparva
+- владыку  · n=1  · mahabharata-adiparva
+- о почтенный  · n=1  · mahabharata-shantiparva
+- Он  · n=1  · ramayana-ayodhyakanda
+- священная  · n=1  · manavadharmashastra
+- Агастьи  · n=1  · ramayana-aranyakanda
+- тобой  · n=1  · ramayana-aranyakanda
+- Благой мудрец  · n=1  · ramayana-aranyakanda
+- святой подвижник  · n=1  · ramayana-balakanda
+- Брахма  · n=1  · ramayana-balakanda
+- риши  · n=1  · ramayana-balakanda
+- Почтительно  · n=1  · ramayana-balakanda
+- в твоей  · n=1  · ramayana-balakanda
+- гуру  · n=1  · ramayana-balakanda
+- муж  · n=1  · ramayana-balakanda
+- святого  · n=1  · ramayana-balakanda
+- к тебе  · n=1  · mahabharata-aranyakaparva
+- славного  · n=1  · mahabharata-aranyakaparva
+- Достойный  · n=1  · mahabharata-aranyakaparva
+- властитель  · n=1  · mahabharata-aranyakaparva
+- О владыка  · n=1  · mahabharata-aranyakaparva
+- великого  · n=1  · mahabharata-aranyakaparva
+- Могучий  · n=1  · mahabharata-aranyakaparva
+- могучим  · n=1  · mahabharata-aranyakaparva
+- Быкознаменный  · n=1  · mahabharata-aranyakaparva
+- могучий  · n=1  · mahabharata-aranyakaparva
+- достойного  · n=1  · mahabharata-aranyakaparva
+- бог-владыка  · n=1  · mahabharata-aranyakaparva
+- высокочтимый  · n=1  · mahabharata-adiparva
+- он  · n=1  · mahabharata-adiparva
+- божественным  · n=1  · mahabharata-dronaparva
+- божественное  · n=1  · mahabharata-udyogaparva
+- святый владыка  · n=1  · mahabharata-udyogaparva
+- святитель  · n=1  · mahabharata-udyogaparva
+- Господу  · n=1  · gitarthasamgraha-abhinavagupta
+- Я  · n=1  · bhagavadgita-1909
+- почтенного  · n=1  · ch-up
+- блистательный  · n=1  · mahabharata-shalyaparva
+- Божественный  · n=1  · mahabharata-shalyaparva
+- почтеннейший  · n=1  · nyaya-bhashya
+- Владыке сокровищ  · n=1  · mahabharata-ashvamedhikaparva
+- замечательная  · n=1  · mahabharata-sabhaparva
+- Божество  · n=1  · mahabharata-sabhaparva
+- счастливый  · n=1  · atharvaveda
+- счастливая  · n=1  · atharvaveda
+- богу  · n=1  · shatakatrayam-serebryakov
+- Господин  · n=1  · sankhya-karika
+- досточтимого  · n=1  · yoga-sutry_vyasa-bhashya
+- возлюбленный  · n=1  · amaru-shataka
+- Почтенный владыка  · n=1  · mahabharata-ashramavasikaparva
+- владыки  · n=1  · mahabharata-striparva
+- Господе  · n=1  · gitartha-samgraha_yamunacharya
+- властелин  · n=1  · mahabharata-mahaprasthanikaparva
+- о великий  · n=1  · mahabharata-adiparva
+
+### `Bagavat-tattva` — bhagavat-tattva  (n=1)
+
+- истинной природы и сущности Бога  · n=1  · gitartha-samgraha_yamunacharya
+
+### `BagavatA` — bhagavatā  (n=19)
+
+- Владыка  · n=4  · mahabharata-ashvamedhikaparva, mahabharata-karnaparva
+- Бхагаваном  · n=3  · gitarthasamgraha-abhinavagupta
+- святой  · n=2  · raghuvamsha
+- господом  · n=1  · mahabharata-adiparva
+- божественный  · n=1  · mahabharata-adiparva
+- Господом  · n=1  · mahabharata-adiparva
+- властителем  · n=1  · mahabharata-aranyakaparva
+- владыка  · n=1  · mahabharata-aranyakaparva
+- Ты  · n=1  · mahabharata-aranyakaparva
+- святитель  · n=1  · mahabharata-udyogaparva
+- супругом  · n=1  · mahabharata-ashvamedhikaparva
+- Бхагаван  · n=1  · mahabharata-sauptikaparva
+- почтенным  · n=1  · mai-up
+
+### `BagavatAm` — bhagavatām  (n=3)
+
+- почтенные  · n=1  · mahabharata-aranyakaparva
+- ваш  · n=1  · mahabharata-aranyakaparva
+- ваша  · n=1  · mahabharata-udyogaparva
+
+### `BagavatI` — bhagavatī  (n=22)
+
+- счастлива  · n=4  · atharvaveda, rigveda, atharvaveda
+- Бхагавати  · n=4  · devi-gita, mahabharata-sabhaparva, hatha-yoga-pradipika
+- счастливые  · n=2  · atharvaveda, atharvaveda
+- богиня  · n=2  · shatakatrayam-serebryakov
+- благословенная  · n=1  · ramayana-ayodhyakanda
+- Благая  · n=1  · ramayana-ayodhyakanda
+- Благословенна  · n=1  · ramayana-balakanda
+- величественна  · n=1  · mahabharata-aranyakaparva
+- по твоей милости  · n=1  · mahabharata-adiparva
+- блаженной  · n=1  · mahabharata-udyogaparva
+- благую  · n=1  · shatakatrayam
+- само сознание как таковое  · n=1  · pratyabhijna-hridaya_kshemaraja
+- госпожа  · n=1  · pratyabhijna-hridaya_kshemaraja
+- божественная  · n=1  · pratyabhijna-hridaya_kshemaraja
+
+### `Bagavata` — bhagavata  (n=2)
+
+- Господу  · n=1  · gitarthasamgraha-abhinavagupta
+- досточтимого  · n=1  · yoga-sutry_vyasa-bhashya
+
+### `BagavataH` — bhagavataḥ  (n=4)
+
+- благословенного  · n=2  · ramayana-ayodhyakanda
+- досточтимого  · n=1  · yoga-sutry_vyasa-bhashya
+- Божество  · n=1  · pratyabhijna-hridaya_kshemaraja
+
+### `BagavatbudDa` — bhagavat buddha  (n=1)
+
+- Бхагавана Будды  · n=1  · yoga-sutry_vyasa-bhashya
+
+### `Bagavate` — bhagavate  (n=3)
+
+- Владетелю  · n=1  · mahabharata-ashvamedhikaparva
+- почтенный  · n=1  · br-up
+- почтенному  · n=1  · br-up
+
+### `Bagavati` — bhagavati  (n=4)
+
+- благословенная  · n=1  · ramayana-ayodhyakanda
+- святому  · n=1  · mahabharata-udyogaparva
+- на Господе  · n=1  · ramanuja_gitabhashya
+- у тебя, почтенный  · n=1  · ch-up
+
+### `Bagavatkarma` — bhagavatkarma  (n=1)
+
+- обряды для Господа  · n=1  · gitarthasamgraha-abhinavagupta
+
+### `Bagavatpada` — bhagavatpada  (n=1)
+
+- обители Господа  · n=1  · gitarthasamgraha-abhinavagupta
+
+### `BagavatprAptigarBA` — bhagavatprāptigarbhā  (n=1)
+
+- содержит достижение Господа  · n=1  · vedartha-samgraha_ramanuja
+
+### `BagavatprAptigarBa` — bhagavatprāptigarbha  (n=1)
+
+- входит в плод достижения Господа  · n=1  · vedartha-samgraha_ramanuja
+
+### `BagavatprAptigarBatvAt` — bhagavatprāptigarbhatvāt  (n=1)
+
+- как содержащие достижение Господа  · n=1  · vedartha-samgraha_ramanuja
+
+### `Bagavatprapattim` — bhagavatprapattim  (n=2)
+
+- поклонения Богу  · n=1  · vedartha-samgraha_ramanuja
+- поклонением Богу  · n=1  · vedartha-samgraha_ramanuja
+
+### `BagavatpratijYAtatva` — bhagavatpratijñātatva  (n=1)
+
+- заверению Господа  · n=1  · gitarthasamgraha-abhinavagupta
+
+### `Bagavatsmfti` — bhagavatsmṛti  (n=1)
+
+- памятовании Господа  · n=1  · gitarthasamgraha-abhinavagupta
+
+### `BagavatsvarUpa` — bhagavatsvarūpa  (n=2)
+
+- изначальной форме Господа  · n=1  · gitarthasamgraha-abhinavagupta
+- собственная природа Господа  · n=1  · vedartha-samgraha_ramanuja
+
+### `BagavatsvarUpam` — bhagavatsvarūpam  (n=1)
+
+- истинная сущность Бога  · n=1  · vedartha-samgraha_ramanuja
+
+### `BagavattamaH` — bhagavattamaḥ  (n=1)
+
+- счастливейшим  · n=1  · atharvaveda
+
+### `Bagavattara` — bhagavattara  (n=2)
+
+- еще счастливее  · n=2  · rigveda, atharvaveda
+
+### `Bagavattattva` — bhagavattattva  (n=5)
+
+- Господь  · n=2  · gitarthasamgraha-abhinavagupta
+- Сущность Господа  · n=2  · gitarthasamgraha-abhinavagupta
+- Сущности Господа  · n=1  · gitarthasamgraha-abhinavagupta
+
+### `Bagavattattvam` — bhagavattattvam  (n=1)
+
+- Сущность Господа  · n=1  · gitarthasamgraha-abhinavagupta
+
+### `BagavattatvaM` — bhagavattatvaṃ  (n=1)
+
+- таттвы Господа  · n=1  · gitarthasamgraha-abhinavagupta
+
+### `Bagavedana` — bhagavedana  (n=1)
+
+- средство  · n=1  · mahabharata-aranyakaparva
+
+### `Bagavo` — bhagavo  (n=2)
+
+- джангида  · n=2  · atharvaveda
+
+### `BageSam` — bhageśam  (n=1)
+
+- владыку процветания  · n=1  · shv-up
+
+### `Bagena` — bhagena  (n=5)
+
+- долей  · n=2  · atharvaveda
+- с любовным томлением  · n=2  · atharvaveda
+- с Бхагой  · n=1  · atharvaveda
+
+### `Bagin` — bhagin  (n=3)
+
+- наделенным долей  · n=3  · atharvaveda
+
+### `BaginI` — bhaginī  (n=59)
+
+- сестра  · n=32  · mahabharata-adiparva, mahabharata-ashramavasikaparva, ramayana-aranyakanda, manavadharmashastra, mahabharata-udyogaparva, ramayana-ayodhyakanda, ramayana-balakanda, mahabharata-aranyakaparva, mahabharata-virataparva, yoga-sutry_vyasa-bhashya
+- сестры  · n=12  · mahabharata-adiparva, mahabharata-aranyakaparva, manavadharmashastra, ramayana-aranyakanda, mahabharata-sabhaparva, mahabharata-virataparva
+- сестру  · n=7  · mahabharata-adiparva, ramayana-aranyakanda, mahabharata-aranyakaparva, mahabharata-dronaparva, mahabharata-udyogaparva
+- сестре  · n=3  · mahabharata-adiparva, mahabharata-virataparva
+- Сестра  · n=2  · ramayana-balakanda, mahabharata-aranyakaparva
+- она  · n=1  · ramayana-aranyakanda
+- реке  · n=1  · ramayana-balakanda
+- сестрою  · n=1  · mahabharata-aranyakaparva
+
+### `BaginIByAm` — bhaginībhyām  (n=1)
+
+- с сестрами  · n=1  · mahabharata-udyogaparva
+
+### `BaginIM` — bhaginīṃ  (n=1)
+
+- сестру  · n=1  · mahabharata-dronaparva
+
+### `BaginIm` — bhaginīm  (n=7)
+
+- сестру  · n=5  · mahabharata-adiparva, ramayana-aranyakanda, mahabharata-sabhaparva
+- сестре  · n=1  · mahabharata-adiparva
+- к сестре  · n=1  · mahabharata-ashvamedhikaparva
+
+### `BaginIvat` — bhaginīvat  (n=2)
+
+- как сестра  · n=1  · ramayana-ayodhyakanda
+- как с сестрой  · n=1  · kama-sutra
+
+### `BaginaM` — bhaginaṃ  (n=1)
+
+- удачливым  · n=1  · atharvaveda
+
+### `BaginyAH` — bhaginyāḥ  (n=1)
+
+- сестры  · n=1  · mahabharata-adiparva
+
+### `BaginyaH` — bhaginyaḥ  (n=2)
+
+- сестры  · n=2  · mahabharata-adiparva, mahabharata-udyogaparva
+
+### `Baginyau` — bhaginyau  (n=5)
+
+- сестры  · n=3  · mahabharata-adiparva
+- сёстры  · n=1  · mahabharata-adiparva
+- сестер  · n=1  · mahabharata-udyogaparva
+
+### `BagnA` — bhagnā  (n=6)
+
+- сломанную  · n=1  · mahabharata-adiparva
+- разбиты  · n=1  · ramayana-sundarakanda
+- Обезображенные  · n=1  · ramayana-balakanda
+- обезображенными  · n=1  · ramayana-balakanda
+- поверженное  · n=1  · mahabharata-aranyakaparva
+- разбитые  · n=1  · mahabharata-virataparva
+
+### `BagnAH` — bhagnāḥ  (n=6)
+
+- побеждены  · n=1  · ramayana-balakanda
+- разлетелись в куски  · n=1  · mahabharata-dronaparva
+- сломанным  · n=1  · mahabharata-dronaparva
+- потерпели полное поражение  · n=1  · mahabharata-dronaparva
+- разбиты  · n=1  · mahabharata-udyogaparva
+- рассеялись  · n=1  · mahabharata-udyogaparva
+
+### `BagnASa` — bhagnāśa  (n=1)
+
+- надежду утратив  · n=1  · shatakatrayam
+
+### `BagnASasya` — bhagnāśasya  (n=1)
+
+- потеряв надежду  · n=1  · shatakatrayam-serebryakov
+
+### `BagnAkza` — bhagnākṣa  (n=1)
+
+- с поломанными осями  · n=1  · ramayana-sundarakanda
+
+### `BagnAkzaiH` — bhagnākṣaiḥ  (n=1)
+
+- рассечены оси  · n=1  · mahabharata-karnaparva
+
+### `BagnAkzakUbarAn` — bhagnākṣakūbarān  (n=1)
+
+- сломаны дышла и оси  · n=1  · mahabharata-karnaparva
+
+### `BagnAkzakUbara` — bhagnākṣakūbara  (n=1)
+
+- ось и дышло поломаны  · n=1  · ramayana-sundarakanda
+
+### `BagnAkzayugacakreza` — bhagnākṣayugacakreṣa  (n=1)
+
+- разбиты оси, ярма, колеса или дышла  · n=1  · mahabharata-shalyaparva
+
+### `BagnAm` — bhagnām  (n=2)
+
+- сломанную  · n=1  · mahabharata-adiparva
+- разрушенный  · n=1  · ramayana-ayodhyakanda
+
+### `BagnArDavaktra` — bhagnārdhavaktra  (n=1)
+
+- Половиноликие  · n=1  · buddhacharita
+
+### `BagnAsu` — bhagnāsu  (n=1)
+
+- палых  · n=1  · ramayana-ayodhyakanda
+
+### `Bagna` — bhagna  (n=78)
+
+- разбиты  · n=5  · mahabharata-adiparva, mahabharata-dronaparva, mahabharata-virataparva
+- разбитый  · n=5  · mahabharata-dronaparva, mahabharata-adiparva, ramayana-aranyakanda, mahabharata-bhishmaparva
+- разбитых  · n=5  · mahabharata-adiparva, ramayana-ayodhyakanda, mahabharata-bhishmaparva, mahabharata-dronaparva, mahabharata-shalyaparva
+- разбитыми  · n=5  · mahabharata-dronaparva, ramayana-sundarakanda
+- сломанными  · n=3  · ramayana-aranyakanda, mahabharata-aranyakaparva, mahabharata-dronaparva
+- сломан  · n=3  · ramayana-balakanda, mahabharata-dronaparva
+- сломанный  · n=2  · ramayana-ayodhyakanda, ramayana-aranyakanda
+- сломанных  · n=2  · ramayana-aranyakanda, mahabharata-dronaparva
+- сокрушенных  · n=2  · mahabharata-bhishmaparva, mahabharata-dronaparva
+- разбито  · n=2  · mahabharata-dronaparva, mahabharata-shalyaparva
+- разбитые  · n=2  · mahabharata-dronaparva, mahabharata-shalyaparva
+- разорил  · n=1  · ramayana-sundarakanda
+- поваленные  · n=1  · ramayana-sundarakanda
+- разгромлен  · n=1  · ramayana-sundarakanda
+- потеряна  · n=1  · manavadharmashastra
+- оштрафован  · n=1  · manavadharmashastra
+- разорванными  · n=1  · ramayana-aranyakanda
+- обратившиеся в бегство  · n=1  · ramayana-aranyakanda
+- сломанную  · n=1  · ramayana-aranyakanda
+- опустошил  · n=1  · ramayana-aranyakanda
+- сломаны  · n=1  · ramayana-aranyakanda
+- разбита  · n=1  · ramayana-aranyakanda
+- утратившего  · n=1  · ramayana-aranyakanda
+- сломана  · n=1  · ramayana-aranyakanda
+- Пораженный  · n=1  · ramayana-aranyakanda
+- наломанные  · n=1  · ramayana-aranyakanda
+- перебитыми  · n=1  · ramayana-aranyakanda
+- дрогнули  · n=1  · mahabharata-aranyakaparva
+- побежденных  · n=1  · mahabharata-aranyakaparva
+- сломавшуюся  · n=1  · mahabharata-aranyakaparva
+- сломили дух  · n=1  · mahabharata-aranyakaparva
+- разгромленное  · n=1  · mahabharata-bhishmaparva
+- поломанными  · n=1  · mahabharata-bhishmaparva
+- разбитое  · n=1  · mahabharata-dronaparva
+- сломлены  · n=1  · mahabharata-dronaparva
+- поломанная  · n=1  · mahabharata-dronaparva
+- поваленный  · n=1  · mahabharata-dronaparva
+- сокрушенные  · n=1  · mahabharata-dronaparva
+- потерпели полное поражение  · n=1  · mahabharata-dronaparva
+- поразило  · n=1  · buddhacharita
+- приходили в смятение  · n=1  · buddhacharita
+- изломанные  · n=1  · mahabharata-karnaparva
+- изломанный  · n=1  · mahabharata-karnaparva
+- дрогнув  · n=1  · mahabharata-karnaparva
+- крушат  · n=1  · mahabharata-karnaparva
+- выбил  · n=1  · mahabharata-karnaparva
+- повержены  · n=1  · mahabharata-karnaparva
+- разгромил  · n=1  · mahabharata-karnaparva
+- сломанной  · n=1  · kumarasambhava
+- разбитым  · n=1  · mahabharata-shalyaparva
+- поверженным  · n=1  · mahabharata-shalyaparva
+- побежден  · n=1  · shatakatrayam
+- испаряются  · n=1  · amaru-shataka
+
+### `BagnaH` — bhagnaḥ  (n=5)
+
+- побежден  · n=2  · shatakatrayam-serebryakov
+- разбита  · n=1  · ramayana-aranyakanda
+- сломались  · n=1  · mahabharata-udyogaparva
+- рушится  · n=1  · amaru-shataka
+
+### `BagnaKaqgau` — bhagnakhaḍgau  (n=1)
+
+- сломаны мечи  · n=1  · mahabharata-shantiparva
+
+### `BagnaM` — bhagnaṃ  (n=3)
+
+- разбитым  · n=1  · mahabharata-shalyaparva
+- раскроил  · n=1  · shatakatrayam
+- разбивается  · n=1  · shatakatrayam-serebryakov
+
+### `BagnaSastrAyuDaM` — bhagnaśastrāyudhaṃ  (n=1)
+
+- сломавшего оружие  · n=1  · mahabharata-aranyakaparva
+
+### `BagnaSfNgAH` — bhagnaśṛṅgāḥ  (n=1)
+
+- лишенные рогов  · n=1  · mahabharata-shalyaparva
+
+### `BagnaSfNgam` — bhagnaśṛṅgam  (n=1)
+
+- с обломанными рогами  · n=1  · mahabharata-karnaparva
+
+### `BagnabAhUrukawIpayoDara` — bhagnabāhūrukaṭīpayodhara  (n=1)
+
+- со сломанными руками, бедрами и грудью  · n=1  · ramayana-sundarakanda
+
+### `BagnabAhUrumuKa` — bhagnabāhūrumukha  (n=1)
+
+- со сломанными руками и бедрами, с разбитым лицом  · n=1  · ramayana-sundarakanda
+
+### `BagnacakrAkzakUbaraiH` — bhagnacakrākṣakūbaraiḥ  (n=1)
+
+- с разбитыми колесами, осями и дышлами  · n=1  · mahabharata-dronaparva
+
+### `BagnacakrAn` — bhagnacakrān  (n=1)
+
+- с поломанными колесами  · n=1  · mahabharata-shalyaparva
+
+### `BagnacakraiH` — bhagnacakraiḥ  (n=1)
+
+- с поломаны колеса  · n=1  · mahabharata-karnaparva
+
+### `BagnacakrairaTaiScApi` — bhagnacakrai rathaiścāpi  (n=1)
+
+- сломанными колесами и колесницами  · n=1  · mahabharata-dronaparva
+
+### `BagnadaMzwrA` — bhagnadaṃṣṭrā  (n=2)
+
+- зубы вырваны  · n=1  · mahabharata-dronaparva
+- лишенным зубов  · n=1  · mahabharata-karnaparva
+
+### `BagnadaMzwra` — bhagnadaṃṣṭra  (n=3)
+
+- с вырванными зубами  · n=1  · ramayana-balakanda
+- лишенного бивней  · n=1  · mahabharata-dronaparva
+- сломаны зубы  · n=1  · mahabharata-udyogaparva
+
+### `BagnadaRqa` — bhagnadaṇḍa  (n=1)
+
+- со сломанной ручкой  · n=1  · ramayana-aranyakanda
+
+### `Bagnadanta` — bhagnadanta  (n=1)
+
+- с отбитыми бивнями  · n=1  · mahabharata-bhishmaparva
+
+### `BagnadarpAn` — bhagnadarpān  (n=1)
+
+- с разбитой гордостью  · n=1  · mahabharata-adiparva
+
+### `Bagnadarpa` — bhagnadarpa  (n=5)
+
+- с оскорбленной гордостью  · n=1  · mahabharata-adiparva
+- сломленный гордостью  · n=1  · mahabharata-adiparva
+- сломленная гордость  · n=1  · mahabharata-adiparva
+- гордость сломлена  · n=1  · mahabharata-aranyakaparva
+- лишившемуся спеси  · n=1  · mahabharata-adiparva
+
+### `BagnadarpaM` — bhagnadarpaṃ  (n=1)
+
+- сломленной гордостью  · n=1  · mahabharata-adiparva
+
+### `BagnagopuratoraRA` — bhagnagopuratoraṇā  (n=1)
+
+- обрушились ее городские ворота и арки  · n=1  · ramayana-sundarakanda
+
+### `BagnaiH` — bhagnaiḥ  (n=4)
+
+- разбитыми  · n=2  · mahabharata-bhishmaparva, mahabharata-shalyaparva
+- разбитыми на куски  · n=1  · mahabharata-dronaparva
+- сломленные  · n=1  · raghuvamsha
+
+### `Bagnakawa` — bhagnakaṭa  (n=1)
+
+- пробитыми висками  · n=1  · mahabharata-bhishmaparva
+
+### `BagnakumBa` — bhagnakumbha  (n=1)
+
+- разбитыми лбами  · n=1  · mahabharata-bhishmaparva
+
+### `Bagnam` — bhagnam  (n=6)
+
+- сломлено  · n=1  · ramayana-ayodhyakanda
+- уничтоженную  · n=1  · ramayana-sundarakanda
+- уничтожен  · n=1  · ramayana-sundarakanda
+- разбито  · n=1  · mahabharata-bhishmaparva
+- разбитое  · n=1  · mahabharata-dronaparva
+- сломанный  · n=1  · raghuvamsha
+
+### `BagnamAnasA` — bhagnamānasā  (n=1)
+
+- разбитой душою  · n=1  · ramayana-sundarakanda
+
+### `BagnamAnasAH` — bhagnamānasāḥ  (n=3)
+
+- чей дух был сломлен  · n=1  · mahabharata-shantiparva
+- с сокрушенным духом  · n=1  · mahabharata-shantiparva
+- сломленные духом  · n=1  · mahabharata-shantiparva
+
+### `BagnamAnasa` — bhagnamānasa  (n=1)
+
+- с сокрушенным духом  · n=1  · mahabharata-shantiparva
+
+### `BagnamanasaH` — bhagnamanasaḥ  (n=1)
+
+- дух которых был сломлен  · n=1  · mahabharata-ashvamedhikaparva
+
+### `BagnamanoraTA` — bhagnamanorathā  (n=1)
+
+- погибель заветной надежды  · n=1  · kumarasambhava
+
+### `BagnamanoraTa` — bhagnamanoratha  (n=1)
+
+- чьи желания не исполнились  · n=1  · buddhacharita
+
+### `BagnanIqa` — bhagnanīḍa  (n=3)
+
+- сиденье в колеснице было разбито  · n=1  · ramayana-sundarakanda
+- разбитыми сидениями  · n=1  · mahabharata-dronaparva
+- с конями изнуренными  · n=1  · mahabharata-dronaparva
+
+### `BagnapfzWa` — bhagnapṛṣṭha  (n=1)
+
+- перебитыми хребтами  · n=1  · mahabharata-bhishmaparva
+
+### `BagnapratijYa` — bhagnapratijña  (n=1)
+
+- нарушить обет  · n=1  · buddhacharita
+
+### `Bagnapuzkara` — bhagnapuṣkara  (n=1)
+
+- пробитых барабанов  · n=1  · mahabharata-udyogaparva
+
+### `BagnasaMvigna` — bhagnasaṃvigna  (n=1)
+
+- устрашенных  · n=1  · mahabharata-bhishmaparva
+
+### `BagnasaNkalpA` — bhagnasaṅkalpā  (n=1)
+
+- угасла (былая) решимость  · n=1  · mahabharata-aranyakaparva
+
+### `BagnasaNkalpAH` — bhagnasaṅkalpāḥ  (n=1)
+
+- чьи попытки разбивались  · n=1  · mahabharata-adiparva
+
+### `BagnasahakAram` — bhagnasahakāram  (n=1)
+
+- с брошенными кусочками манговых веточек  · n=1  · raghuvamsha
+
+### `Bagnasainya` — bhagnasainya  (n=1)
+
+- разбитое войско  · n=1  · mahabharata-shalyaparva
+
+### `BagnasakTa` — bhagnasaktha  (n=6)
+
+- с раздробленными бедрами  · n=2  · mahabharata-shalyaparva
+- С раздробленным бедром  · n=1  · mahabharata-shalyaparva
+- с раздробленными  · n=1  · mahabharata-shalyaparva
+- с перебитым бедром  · n=1  · mahabharata-sauptikaparva
+- услышал  · n=1  · mahabharata-sauptikaparva
+
+### `BagnasakTam` — bhagnasaktham  (n=2)
+
+- с перебитыми бедрами  · n=2  · mahabharata-sauptikaparva
+
+### `BagnasakTi` — bhagnasakthi  (n=2)
+
+- со сломанными бедрами  · n=1  · mahabharata-bhishmaparva
+- перебитыми ногами  · n=1  · mahabharata-bhishmaparva
+
+### `Bagnavega` — bhagnavega  (n=1)
+
+- сбитый в своем натиске  · n=1  · mahabharata-dronaparva
+
+### `BagnavimAnAni` — bhagnavimānāni  (n=1)
+
+- разрушенные здания  · n=1  · ramayana-sundarakanda
+
+### `BagnavrataH` — bhagnavrataḥ  (n=1)
+
+- нарушал  · n=1  · raghuvamsha
+
+### `Bagnayuga` — bhagnayuga  (n=1)
+
+- сломается ярмо  · n=1  · manavadharmashastra
+
+### `Bagne` — bhagne  (n=3)
+
+- уничтожения  · n=1  · ramayana-sundarakanda
+- терпело поражение  · n=1  · mahabharata-dronaparva
+- разбито  · n=1  · raghuvamsha
+
+### `Bagnezu` — bhagneṣu  (n=2)
+
+- сломлены  · n=1  · mahabharata-karnaparva
+- были разбиты  · n=1  · mahabharata-shalyaparva
+
+### `BagnonmaTitavega` — bhagnonmathitavega  (n=1)
+
+- выведенные из строя  · n=1  · mahabharata-aranyakaparva
+
+### `BagnopakaraRa` — bhagnopakaraṇa  (n=1)
+
+- с поврежденными частями  · n=1  · mahabharata-dronaparva
+
+### `Bagnoru` — bhagnoru  (n=2)
+
+- у которого раздроблено бедро  · n=1  · mahabharata-adiparva
+- с раздробленными бедрами  · n=1  · mahabharata-adiparva
+
+### `Bagnorur` — bhagnorur  (n=1)
+
+- с бедрами, сокрушенными  · n=1  · mahabharata-shalyaparva
+
+### `BagnotsAha` — bhagnotsāha  (n=1)
+
+- утративших стойкость  · n=1  · ramayana-sundarakanda
+
+### `Bago` — bhago  (n=6)
+
+- Бхага  · n=3  · rigveda, rigveda, atharvaveda
+- Бхагу  · n=2  · rigveda
+- доля  · n=1  · rigveda
+
+### `Bai` — bhai  (n=1)
+
+- бойся  · n=1  · ramayana-aranyakanda
+
+### `BaiH` — bhaiḥ  (n=8)
+
+- бойся  · n=8  · mahabharata-adiparva, mahabharata-dronaparva, mahabharata-udyogaparva, mahabharata-aranyakaparva, mahabharata-virataparva
+
+### `BaikzASyA` — bhaikṣāśyā  (n=1)
+
+- питаясь милостыней  · n=1  · manavadharmashastra
+
+### `BaikzAhAra` — bhaikṣāhāra  (n=1)
+
+- питаясь милостыней  · n=1  · manavadharmashastra
+
+### `BaikzAka` — bhaikṣāka  (n=2)
+
+- подаянию  · n=1  · buddhacharita
+- монашеские знаки  · n=1  · buddhacharita
+
+### `BaikzAkama` — bhaikṣākama  (n=1)
+
+- путем взыскующих подаяния  · n=1  · buddhacharita
+
+### `BaikzAya` — bhaikṣāya  (n=2)
+
+- за милостыней  · n=2  · mahabharata-aranyakaparva, mahabharata-adiparva
+
+### `Baikza` — bhaikṣa  (n=35)
+
+- подаяние  · n=6  · mahabharata-adiparva, mahabharata-shantiparva, buddhacharita, shatakatrayam, jabala-up
+- милостыню  · n=6  · manavadharmashastra, mahabharata-adiparva, bhagavadgita-sharma
+- милостыни  · n=5  · mahabharata-adiparva, manavadharmashastra, shatakatrayam-serebryakov
+- милостыня  · n=4  · manavadharmashastra, mahabharata-adiparva
+- подаянием  · n=3  · mahabharata-shantiparva, ramayana-ayodhyakanda, mahabharata-udyogaparva
+- пищу  · n=2  · manavadharmashastra, mahabharata-adiparva
+- милостыней  · n=2  · manavadharmashastra
+- подаянье  · n=2  · bhagavadgita-sementsov, shatakatrayam
+- Нищенством  · n=1  · mahabharata-adiparva
+- обет нищенства  · n=1  · mahabharata-udyogaparva
+- милостынью  · n=1  · ramanuja_gitabhashya
+- милостынею  · n=1  · bhagavadgita-erman
+- подаяньем  · n=1  · shatakatrayam
+
+### `BaikzaBuj` — bhaikṣabhuj  (n=2)
+
+- питаясь милостыней  · n=2  · manavadharmashastra
+
+### `BaikzaM` — bhaikṣaṃ  (n=3)
+
+- Нищенство  · n=1  · mahabharata-karnaparva
+- для сбора подаяния  · n=1  · mahabharata-adiparva
+- милостыню  · n=1  · mahabharata-adiparva
+
+### `BaikzacaraRa` — bhaikṣacaraṇa  (n=1)
+
+- сбора милостыни  · n=1  · manavadharmashastra
+
+### `BaikzacaryA` — bhaikṣacaryā  (n=1)
+
+- хождение за милостыней  · n=1  · manavadharmashastra
+
+### `Baikzacarya` — bhaikṣacarya  (n=6)
+
+- жизнь нищенствующих монахов  · n=2  · mun-up
+- собирает милостыню  · n=1  · manavadharmashastra
+- подаянием  · n=1  · mahabharata-aranyakaparva
+- нищенствующего странника  · n=1  · mahabharata-aranyakaparva
+- собирая милостыню  · n=1  · mahabharata-udyogaparva
+
+### `BaikzakANkzin` — bhaikṣakāṅkṣin  (n=1)
+
+- в ожидании милостыни  · n=1  · mahabharata-aranyakaparva
+
+### `BaikzakAla` — bhaikṣakāla  (n=2)
+
+- время для сбора милостыни  · n=1  · mahabharata-adiparva
+- чтобы испросить милостыню  · n=1  · mahabharata-shalyaparva
+
+### `Baikzam` — bhaikṣam  (n=11)
+
+- милостыню  · n=3  · mahabharata-adiparva, manavadharmashastra
+- подаяние  · n=2  · mahabharata-adiparva, mahabharata-shantiparva
+- нищим  · n=2  · gitarthasamgraha-abhinavagupta
+- милостыни  · n=1  · mahabharata-adiparva
+- с милостыней  · n=1  · mahabharata-adiparva
+- милостынею  · n=1  · mahabharata-bhishmaparva
+- нищенством  · n=1  · bhagavadgita-smirnov
+
+### `BaikzamARa` — bhaikṣamāṇa  (n=1)
+
+- собирает подаяние  · n=1  · jabala-up
+
+### `Baikzasya` — bhaikṣasya  (n=1)
+
+- милостыни  · n=1  · mahabharata-adiparva
+
+### `Baikzavat` — bhaikṣavat  (n=4)
+
+- в виде милостыни  · n=3  · mahabharata-adiparva
+- как милостыня  · n=1  · mahabharata-adiparva
+
+### `BaikzavattAm` — bhaikṣavattām  (n=1)
+
+- в виде милостыни  · n=1  · mahabharata-adiparva
+
+### `BaikzeRa` — bhaikṣeṇa  (n=1)
+
+- милостыней  · n=1  · shatakatrayam-serebryakov
+
+### `BaikzopaBogin` — bhaikṣopabhogin  (n=1)
+
+- живущий подаянием  · n=1  · buddhacharita
+
+### `Baikzya` — bhaikṣya  (n=4)
+
+- милостыня  · n=1  · manavadharmashastra
+- подаяние  · n=1  · bhagavadgita-1909
+- милостыней  · n=1  · bhagavadgita-radha
+- полученное в милостыню  · n=1  · mahabharata-ashvamedhikaparva
+
+### `Baikzyam` — bhaikṣyam  (n=5)
+
+- нищенство  · n=1  · bhagavadgita-burba
+- подаянием  · n=1  · bhagavadgita-1914
+- нищенством  · n=1  · bhagavadgity
+- пропитанія  · n=1  · bhagavadgita-1788
+- прошением милостыни  · n=1  · bhagavadgita-prabhupada
+
+### `BaimI` — bhaimī  (n=22)
+
+- дочь Бхимы  · n=18  · mahabharata-aranyakaparva, ramayana-sundarakanda
+- дочери Бхимы  · n=2  · mahabharata-aranyakaparva
+- дочерью Бхимы  · n=1  · mahabharata-aranyakaparva
+- Бхимы  · n=1  · mahabharata-aranyakaparva
+
+### `BaimIM` — bhaimīṃ  (n=1)
+
+- дочери Бхимы  · n=1  · mahabharata-aranyakaparva
+
+### `BaimIm` — bhaimīm  (n=4)
+
+- дочь Бхимы  · n=2  · mahabharata-aranyakaparva
+- дочери Бхимы  · n=2  · mahabharata-aranyakaparva
+
+### `Baimasena` — bhaimasena  (n=1)
+
+- грозными войсками  · n=1  · mahabharata-sabhaparva
+
+### `Baimaseni` — bhaimaseni  (n=25)
+
+- сын Бхимасены  · n=17  · mahabharata-dronaparva, mahabharata-bhishmaparva, mahabharata-udyogaparva
+- сына Бхимасены  · n=5  · mahabharata-dronaparva, mahabharata-bhishmaparva
+- Сына Бхимасены  · n=1  · mahabharata-dronaparva
+- сына Хидимбы  · n=1  · mahabharata-dronaparva
+- отпрыск Бхимасены  · n=1  · mahabharata-udyogaparva
+
+### `BaimaseniH` — bhaimaseniḥ  (n=9)
+
+- сын Бхимасены  · n=9  · mahabharata-dronaparva, mahabharata-bhishmaparva
+
+### `BaimaseninA` — bhaimaseninā  (n=1)
+
+- сыном Бхимасены  · n=1  · mahabharata-dronaparva
+
+### `Baimi` — bhaimi  (n=1)
+
+- дочь Бхимы  · n=1  · mahabharata-aranyakaparva
+
+### `BaimyA` — bhaimyā  (n=1)
+
+- с дочерью Бхимы  · n=1  · mahabharata-aranyakaparva
+
+### `Baimya` — bhaimya  (n=1)
+
+- сыном Бхимы  · n=1  · mahabharata-dronaparva
+
+### `Bair` — bhair  (n=2)
+
+- бойся  · n=2  · mahabharata-aranyakaparva, mahabharata-udyogaparva
+
+### `BairavAKya` — bhairavākhya  (n=1)
+
+- Бхайрава  · n=1  · devi-gita
+
+### `BairavAMSca` — bhairavāṃśca  (n=1)
+
+- страшный  · n=1  · mahabharata-dronaparva
+
+### `BairavAgama` — bhairavāgama  (n=2)
+
+- бхайрава-агамы  · n=2  · devi-gita
+
+### `BairavAkAra` — bhairavākāra  (n=1)
+
+- наводящий ужас  · n=1  · ramayana-balakanda
+
+### `BairavAn` — bhairavān  (n=1)
+
+- ужасный  · n=1  · mahabharata-adiparva
+
+### `BairavAnnAdAn` — bhairavānnādān  (n=1)
+
+- громкие крики  · n=1  · mahabharata-dronaparva
+
+### `BairavAnravAn` — bhairavānravān  (n=1)
+
+- страшные вопли  · n=1  · mahabharata-virataparva
+
+### `BairavAstraH` — bhairavāstraḥ  (n=1)
+
+- страшным оружием владеющий  · n=1  · mahabharata-bhishmaparva
+
+### `BairavI` — bhairavī  (n=3)
+
+- Бхайрави  · n=3  · devi-gita, gitagovinda
+
+### `Bairava` — bhairava  (n=44)
+
+- страшный  · n=9  · mahabharata-dronaparva, ramayana-aranyakanda, mahabharata-adiparva, mahabharata-karnaparva, mahabharata-sabhaparva
+- ужасный  · n=4  · mahabharata-dronaparva, mahabharata-adiparva
+- устрашающий  · n=4  · mahabharata-bhishmaparva, ramayana-aranyakanda, mahabharata-dronaparva
+- громкие  · n=2  · ramayana-aranyakanda
+- жуткие  · n=2  · mahabharata-bhishmaparva
+- ужас  · n=2  · mahabharata-dronaparva, mahabharata-karnaparva
+- страшные  · n=2  · mahabharata-dronaparva
+- Бхайрава  · n=2  · hatha-yoga-pradipika, paramarthasara-abhinavagupta
+- хриплая  · n=1  · ramayana-aranyakanda
+- дикие  · n=1  · ramayana-balakanda
+- ужасным  · n=1  · ramayana-balakanda
+- свирепый  · n=1  · ramayana-balakanda
+- страшное  · n=1  · mahabharata-adiparva
+- ужасающие  · n=1  · mahabharata-bhishmaparva
+- зловещим  · n=1  · mahabharata-bhishmaparva
+- устрашающем  · n=1  · mahabharata-bhishmaparva
+- устрашающие  · n=1  · mahabharata-bhishmaparva
+- страшно громкий  · n=1  · mahabharata-dronaparva
+- страшно  · n=1  · mahabharata-dronaparva
+- страшным  · n=1  · mahabharata-udyogaparva
+- грозный клич  · n=1  · mahabharata-karnaparva
+- Бхайравы  · n=1  · paramarthasara-abhinavagupta
+- грозные  · n=1  · mahabharata-sauptikaparva
+- Ужасающая  · n=1  · shiva-sutry_sharma
+- ужасна  · n=1  · shiva-sutry_sharma
+
+### `BairavaH` — bhairavaḥ  (n=1)
+
+- ужасные  · n=1  · mahabharata-dronaparva
+
+### `BairavaM` — bhairavaṃ  (n=1)
+
+- страшные  · n=1  · mahabharata-virataparva
+
+### `Bairavam` — bhairavam  (n=8)
+
+- устрашающий  · n=2  · mahabharata-bhishmaparva
+- боевой  · n=1  · ramayana-aranyakanda
+- страшный  · n=1  · ramayana-aranyakanda
+- страшное  · n=1  · mahabharata-adiparva
+- страшный рев  · n=1  · mahabharata-adiparva
+- грозно  · n=1  · mahabharata-dronaparva
+- грозный  · n=1  · mahabharata-dronaparva
+
+### `BairavanisvanAm` — bhairavanisvanām  (n=1)
+
+- шумела оглушительно  · n=1  · ramayana-ayodhyakanda
+
+### `Bairavanisvanam` — bhairavanisvanam  (n=4)
+
+- издавал ужасный шум  · n=1  · mahabharata-adiparva
+- издающий ужасный звук  · n=1  · mahabharata-adiparva
+- с устрашающим звуком  · n=1  · mahabharata-adiparva
+- устрашающий рёв  · n=1  · mahabharata-adiparva
+
+### `Bairavasvana` — bhairavasvana  (n=4)
+
+- клекотом  · n=1  · ramayana-balakanda
+- устрашающим  · n=1  · mahabharata-bhishmaparva
+- ужасно неистовый  · n=1  · mahabharata-dronaparva
+- грозно вопящий  · n=1  · mahabharata-sauptikaparva
+
+### `BairavasvanaH` — bhairavasvanaḥ  (n=1)
+
+- устрашающим отзвуком  · n=1  · mahabharata-bhishmaparva
+
+### `Bairave` — bhairave  (n=2)
+
+- страшные  · n=1  · mahabharata-dronaparva
+- страшная  · n=1  · mahabharata-dronaparva
+
+### `BaistvaMpratisaMstaBa` — bhaistvaṃ pratisaṃstabha  (n=1)
+
+- превозмоги  · n=1  · mahabharata-udyogaparva
+
+### `Baiz` — bhaiṣ  (n=2)
+
+- испугались  · n=1  · rigveda
+- бойся  · n=1  · mahabharata-udyogaparva
+
+### `BaizIH` — bhaiṣīḥ  (n=2)
+
+- бойся  · n=2  · atharvaveda
+
+### `Baizajya` — bhaiṣajya  (n=5)
+
+- спасение  · n=2  · mahabharata-aranyakaparva
+- лекарство  · n=2  · nyaya-bhashya, mahabharata-striparva
+- лекарством  · n=1  · shatakatrayam
+
+### `Baizajyavizayo` — bhaiṣajyaviṣayo  (n=1)
+
+- лечится снадобьями  · n=1  · shatakatrayam-serebryakov
+
+### `Baizwa` — bhaiṣṭa  (n=2)
+
+- бойтесь  · n=2  · mahabharata-dronaparva, mahabharata-udyogaparva
+
+### `Baizwam` — bhaiṣṭam  (n=1)
+
+- бойтесь  · n=1  · mahabharata-aranyakaparva
+
+### `Baj` — bhaj  (n=70)
+
+- отлучаем  · n=14  · atharvaveda
+- почитает  · n=9  · mahabharata-bhishmaparva, bhagavadgita-erman, gitarthasamgraha-abhinavagupta, bhagavadgita-burba, bhagavadgita-sementsov
+- поклоняется  · n=5  · bhagavadgita-burba, bhagavadgita-smirnov, bhagavadgita-sharma
+- чтит  · n=3  · ramayana-ayodhyakanda, mahabharata-bhishmaparva, bhagavadgity
+- поклоняются  · n=3  · bhagavadgita-burba, bhagavadgita-smirnov
+- почитают  · n=2  · bhagavadgita-burba, bhagavadgita-sementsov
+- служитъ  · n=2  · bhagavadgita-1788
+- спрячь  · n=1  · ramayana-ayodhyakanda
+- Приближаются  · n=1  · ramayana-ayodhyakanda
+- выполняет  · n=1  · manavadharmashastra
+- дать часть  · n=1  · manavadharmashastra
+- получать  · n=1  · manavadharmashastra
+- терпят бедствие  · n=1  · ramayana-aranyakanda
+- становится  · n=1  · mahabharata-aranyakaparva
+- встретится  · n=1  · mahabharata-aranyakaparva
+- относятся с нежностью  · n=1  · mahabharata-aranyakaparva
+- попробуем  · n=1  · rigveda
+- наделите  · n=1  · rigveda
+- получить долю  · n=1  · rigveda
+- обнаруживает  · n=1  · kama-sutra
+- любит  · n=1  · mahabharata-adiparva
+- входит  · n=1  · mahabharata-adiparva
+- связывает  · n=1  · mahabharata-adiparva
+- достиг  · n=1  · mahabharata-dronaparva
+- Укрощал  · n=1  · buddhacharita
+- озарил  · n=1  · buddhacharita
+- постичь  · n=1  · mahabharata-udyogaparva
+- выделяет  · n=1  · rigveda
+- получили в удел  · n=1  · rigveda
+- наделяет своей любовью  · n=1  · mahabharata-dronaparva
+- получаютъ  · n=1  · bhagavadgita-1788
+- преданъ  · n=1  · bhagavadgita-1909
+- занимается трансцендентным любовным служением  · n=1  · bhagavadgita-prabhupada
+- служить  · n=1  · bhagavadgita-prabhupada
+- поклоняться  · n=1  · bhagavadgita-prabhupada
+- преданно служат  · n=1  · bhagavadgita-prabhupada
+- преданного служения  · n=1  · bhagavadgita-prabhupada
+- выбери  · n=1  · mahabharata-sabhaparva
+- отлучить  · n=1  · atharvaveda
+
+### `BajA` — bhajā  (n=3)
+
+- одели  · n=1  · rigveda
+- Выдели  · n=1  · rigveda
+- Надели  · n=1  · rigveda
+
+### `BajAma` — bhajāma  (n=1)
+
+- выделим  · n=1  · rigveda
+
+### `BajAmaH` — bhajāmaḥ  (n=1)
+
+- отлучаем  · n=1  · atharvaveda
+
+### `BajAmahe` — bhajāmahe  (n=1)
+
+- вкусить  · n=1  · rigveda
+
+### `BajAmi` — bhajāmi  (n=17)
+
+- вознаграждаю  · n=3  · ramanuja_gitabhashya, bhagavadgita-sementsov, bhagavadgita-prabhupada
+- приемлю  · n=2  · mahabharata-bhishmaparva, bhagavadgita-erman
+- вспомоществую  · n=2  · bhagavadgity, bhagavadgita-1788
+- принимаю  · n=2  · bhagavadgita-smirnov, bhagavadgita-sharma
+- разделю  · n=1  · ramayana-ayodhyakanda
+- награждаю  · n=1  · gitarthasamgraha-abhinavagupta
+- воздаю  · n=1  · bhagavadgita-burba
+- приветствую  · n=1  · bhagavadgita-1914
+- возвышаю  · n=1  · bhagavadgita-1909
+- вознаграждает  · n=1  · bhagavadgita-prabhupada
+- отвечаю  · n=1  · bhagavadgita-radha
+- почитаю  · n=1  · bhagavadgita-radha
+
+### `BajAsi` — bhajāsi  (n=1)
+
+- получишь долю  · n=1  · atharvaveda
+
+### `BajAti` — bhajāti  (n=2)
+
+- разделит  · n=2  · rigveda
+
+### `Baja` — bhaja  (n=22)
+
+- Надели  · n=4  · rigveda, atharvaveda
+- Полюби  · n=2  · ramayana-sundarakanda
+- дай долю  · n=2  · rigveda, rigveda
+- обладай  · n=2  · mahabharata-adiparva, mahabharata-udyogaparva
+- наслаждайся  · n=1  · ramayana-sundarakanda
+- Выходи за  · n=1  · ramayana-aranyakanda
+- Выдели  · n=1  · rigveda
+- долю  · n=1  · rigveda
+- Обдели  · n=1  · atharvaveda
+- взрасти  · n=1  · shatakatrayam
+- предавайся  · n=1  · shatakatrayam
+- взращивай  · n=1  · shatakatrayam-serebryakov
+- терзай  · n=1  · shatakatrayam-serebryakov
+- прими  · n=1  · shukasaptati
+- приходи  · n=1  · shukasaptati
+- Одели  · n=1  · atharvaveda
+
+### `BajaDvam` — bhajadhvam  (n=1)
+
+- вкусите  · n=1  · atharvaveda
+
+### `BajamAnA` — bhajamānā  (n=4)
+
+- любящую  · n=2  · mahabharata-aranyakaparva, mahabharata-adiparva
+- отдалась  · n=1  · mahabharata-adiparva
+- любящей  · n=1  · mahabharata-adiparva
+
+### `BajamAna` — bhajamāna  (n=5)
+
+- любящий  · n=1  · mahabharata-adiparva
+- уделяющим внимание  · n=1  · mahabharata-adiparva
+- почитаем  · n=1  · mahabharata-bhishmaparva
+- обрекая себя  · n=1  · mahabharata-dronaparva
+- почитающему  · n=1  · mahabharata-ashvamedhikaparva
+
+### `BajamAnaM` — bhajamānaṃ  (n=2)
+
+- влюбленного  · n=1  · mahabharata-adiparva
+- благоговейно почитает  · n=1  · mahabharata-dronaparva
+
+### `Bajan` — bhajan  (n=1)
+
+- исполняя  · n=1  · manavadharmashastra
+
+### `BajantAm` — bhajantām  (n=3)
+
+- треснут  · n=2  · atharvaveda
+- изъявят преданность  · n=1  · mahabharata-aranyakaparva
+
+### `BajantI` — bhajantī  (n=2)
+
+- сошедшуюся  · n=1  · manavadharmashastra
+- находившиеся  · n=1  · gitagovinda
+
+### `BajantIM` — bhajantīṃ  (n=1)
+
+- любящую  · n=1  · mahabharata-adiparva
+
+### `Bajanta` — bhajanta  (n=7)
+
+- вкушают  · n=2  · rigveda, atharvaveda
+- приобщились  · n=1  · rigveda
+- приобщает  · n=1  · rigveda
+- одарили  · n=1  · rigveda
+- наделяют  · n=1  · rigveda
+- наслаждаются  · n=1  · kat-up
+
+### `Bajante` — bhajante  (n=49)
+
+- почитают  · n=18  · mahabharata-bhishmaparva, ramanuja_gitabhashya, bhagavadgita-erman, bhagavadgita-smirnov, gitarthasamgraha-abhinavagupta, mahabharata-udyogaparva, bhagavadgita-burba, bhagavadgity, bhagavadgita-sementsov
+- поклоняются  · n=7  · bhagavadgita-1914, bhagavadgita-sharma, bhagavadgita-radha, bhagavadgita-prabhupada
+- облагораживают  · n=2  · mahabharata-udyogaparva
+- служат  · n=2  · gitarthasamgraha-abhinavagupta, bhagavadgita-prabhupada
+- чтят  · n=2  · ramanuja_gitabhashya, bhagavadgita-sementsov
+- поклоняющихся  · n=2  · bhagavadgita-1914, bhagavadgity
+- чтутъ  · n=2  · bhagavadgity, bhagavadgita-1788
+- поклоняется  · n=2  · bhagavadgita-sharma, bhagavadgita-radha
+- впадают  · n=1  · mahabharata-aranyakaparva
+- окружат заботой  · n=1  · mahabharata-aranyakaparva
+- Покорны  · n=1  · mahabharata-aranyakaparva
+- вкушают  · n=1  · rigveda
+- ублажают  · n=1  · mahabharata-udyogaparva
+- отдают предпочтение  · n=1  · mahabharata-udyogaparva
+- ПОЧИТАЮТ  · n=1  · ramanuja_gitabhashya
+- служатъ  · n=1  · bhagavadgita-1788
+- служитъ  · n=1  · bhagavadgita-1909
+- покланяется  · n=1  · bhagavadgita-1909
+- обращаются  · n=1  · bhagavadgita-prabhupada
+- служит  · n=1  · bhagavadgita-prabhupada
+
+### `Bajanti` — bhajanti  (n=27)
+
+- почитают  · n=8  · ramanuja_gitabhashya, mahabharata-aranyakaparva, gitarthasamgraha-abhinavagupta, bhagavadgita-burba, bhagavadgity, bhagavadgita-smirnov, bhagavadgita-sementsov
+- поклоняются  · n=5  · bhagavadgita-1914, gitarthasamgraha-abhinavagupta, bhagavadgity, bhagavadgita-radha
+- служат  · n=3  · bhagavadgita-prabhupada
+- чтут  · n=2  · mahabharata-bhishmaparva, bhagavadgita-erman
+- служитъ  · n=2  · bhagavadgita-1788, bhagavadgita-1909
+- поклоняется  · n=2  · bhagavadgita-sharma, bhagavadgita-radha
+- служатъ  · n=1  · bhagavadgita-1788
+- чтят  · n=1  · bhagavadgita-sementsov
+- почитая  · n=1  · bhagavadgita-1909
+- устремляются  · n=1  · bhagavadgita-sharma
+- занимаются трансцендентным служением  · n=1  · bhagavadgita-prabhupada
+
+### `Bajantu` — bhajantu  (n=1)
+
+- наградят  · n=1  · atharvaveda
+
+### `Bajase` — bhajase  (n=2)
+
+- оберегать  · n=1  · mahabharata-aranyakaparva
+- обнаружил  · n=1  · mahabharata-dronaparva
+
+### `Bajasva` — bhajasva  (n=45)
+
+- поклоняйся  · n=6  · gitarthasamgraha-abhinavagupta, bhagavadgita-burba, bhagavadgita-1914, bhagavadgita-smirnov, bhagavadgita-sharma, bhagavadgita-radha
+- служи  · n=4  · bhagavadgity, bhagavadgita-1788, bhagavadgita-1909, mahabharata-karnaparva
+- Возьми  · n=2  · mahabharata-adiparva, mahabharata-udyogaparva
+- обладай  · n=2  · mahabharata-adiparva
+- полюби  · n=2  · mahabharata-adiparva
+- будь предан  · n=2  · mahabharata-bhishmaparva, bhagavadgita-erman
+- одари милостью  · n=2  · mahabharata-dronaparva
+- Выбери  · n=1  · ramayana-aranyakanda
+- полюбишь  · n=1  · ramayana-aranyakanda
+- Сжалься  · n=1  · ramayana-aranyakanda
+- выбери  · n=1  · ramayana-aranyakanda
+- вернись  · n=1  · ramayana-aranyakanda
+- сохрани  · n=1  · ramayana-aranyakanda
+- давай  · n=1  · rigveda
+- удели внимание  · n=1  · mahabharata-adiparva
+- почти  · n=1  · mahabharata-bhishmaparva
+- наслаждайся  · n=1  · buddhacharita
+- Посвяти себя  · n=1  · buddhacharita
+- возьми  · n=1  · mahabharata-udyogaparva
+- почитай  · n=1  · ramanuja_gitabhashya
+- чти  · n=1  · bhagavadgita-sementsov
+- посвяти себя любовному служению  · n=1  · bhagavadgita-prabhupada
+- споспешествуй  · n=1  · mahabharata-karnaparva
+- Дай долю  · n=1  · rigveda
+- окажи предпочтение  · n=1  · mahabharata-ashvamedhikaparva
+- угождай  · n=1  · mahabharata-sabhaparva
+- ублажай  · n=1  · mahabharata-sabhaparva
+- избери  · n=1  · raghuvamsha
+- найми  · n=1  · mahabharata-virataparva
+- раздавай  · n=1  · atharvaveda
+- молю  · n=1  · shatakatrayam
+- Соблазни  · n=1  · shatakatrayam-serebryakov
+
+### `BajatA` — bhajatā  (n=1)
+
+- Наделите  · n=1  · atharvaveda
+
+### `BajatAm` — bhajatām  (n=13)
+
+- поклоняющихся  · n=2  · bhagavadgita-1914, bhagavadgita-1909
+- моимъ служеніемъ  · n=2  · bhagavadgity, bhagavadgita-1788
+- пусть... будет помазан  · n=1  · ramayana-ayodhyakanda
+- почитающим  · n=1  · gitarthasamgraha-abhinavagupta
+- поклоняющимся  · n=1  · bhagavadgita-1914
+- преклоняющимся  · n=1  · bhagavadgita-smirnov
+- бхактов  · n=1  · bhagavadgita-sementsov
+- поклоняется  · n=1  · bhagavadgita-sharma
+- преданным служением  · n=1  · bhagavadgita-prabhupada
+- преданно служа  · n=1  · bhagavadgita-prabhupada
+- кто поклоняется  · n=1  · bhagavadgita-radha
+
+### `Bajata` — bhajata  (n=1)
+
+- поклоняющихся  · n=1  · bhagavadgita-burba
+
+### `BajataH` — bhajataḥ  (n=1)
+
+- питаем  · n=1  · mahabharata-sabhaparva
+
+### `Bajatam` — bhajatam  (n=3)
+
+- почитающим  · n=3  · mahabharata-bhishmaparva, ramanuja_gitabhashya, bhagavadgita-erman
+
+### `BajatanA` — bhajatanā  (n=1)
+
+- Дайте долю  · n=1  · rigveda
+
+### `Bajate` — bhajate  (n=39)
+
+- почитает  · n=8  · gitarthasamgraha-abhinavagupta, ramanuja_gitabhashya, bhagavadgity, bhagavadgita-smirnov, bhagavadgita-sementsov, bhagavadgita-sharma, vedartha-samgraha_ramanuja
+- поклоняется  · n=6  · bhagavadgita-1914, bhagavadgita-radha, bhagavadgity, bhagavadgita-sharma
+- получает  · n=2  · manavadharmashastra, rigveda
+- чтит  · n=2  · ramanuja_gitabhashya, bhagavadgita-sementsov
+- Обретает  · n=1  · ramayana-sundarakanda
+- сочетается  · n=1  · manavadharmashastra
+- посетила  · n=1  · mahabharata-aranyakaparva
+- направляется  · n=1  · mahabharata-aranyakaparva
+- одолевают  · n=1  · mahabharata-aranyakaparva
+- появляются  · n=1  · mahabharata-aranyakaparva
+- владели  · n=1  · mahabharata-aranyakaparva
+- владеет  · n=1  · rigveda
+- нападать  · n=1  · mahabharata-dronaparva
+- добивается  · n=1  · mahabharata-udyogaparva
+- прислуживает  · n=1  · mahabharata-udyogaparva
+- входит в состав  · n=1  · rigveda
+- служить  · n=1  · bhagavadgita-1788
+- служит  · n=1  · bhagavadgita-1909
+- предастся  · n=1  · bhagavadgita-1909
+- с преданностью служит  · n=1  · bhagavadgita-prabhupada
+- получает долю  · n=1  · rigveda
+- отдает предпочтение  · n=1  · mahabharata-shalyaparva
+- получили распространение  · n=1  · mahabharata-sabhaparva
+- чтят  · n=1  · mahabharata-sabhaparva
+- очищается  · n=1  · paramarthasara-abhinavagupta
+
+### `Bajati` — bhajati  (n=30)
+
+- почитает  · n=10  · bhagavadgita-burba, ramanuja_gitabhashya, mahabharata-bhishmaparva, gitarthasamgraha-abhinavagupta, bhagavadgity, bhagavadgita-erman, bhagavadgita-smirnov, bhagavadgita-sementsov
+- поклоняется  · n=4  · bhagavadgita-1914, bhagavadgita-radha
+- служит  · n=3  · bhagavadgita-prabhupada, bhagavadgita-1909
+- чтит  · n=2  · bhagavadgita-erman, bhagavadgita-smirnov
+- угождает  · n=1  · mahabharata-udyogaparva
+- дает долю  · n=1  · rigveda
+- Поклоняется  · n=1  · bhagavadgita-burba
+- чтущій  · n=1  · bhagavadgita-1788
+- познаетъ  · n=1  · bhagavadgita-1909
+- находит прибежище  · n=1  · bhagavadgita-sharma
+- служит с любовью и преданностью  · n=1  · bhagavadgita-prabhupada
+- преданно служит  · n=1  · bhagavadgita-prabhupada
+- раздает  · n=1  · rigveda
+- расположен  · n=1  · mahabharata-sabhaparva
+- наслаждается  · n=1  · amaru-shataka
+
+### `Baje` — bhaje  (n=2)
+
+- обнимая  · n=1  · mahabharata-aranyakaparva
+- почитаю  · n=1  · yotat-up
+
+### `BajeTAH` — bhajethāḥ  (n=2)
+
+- люби  · n=1  · mahabharata-adiparva
+- можешь  · n=1  · megha-duta
+
+### `Bajemahi` — bhajemahi  (n=1)
+
+- хотим разделить  · n=1  · rigveda
+
+### `BajeraTa` — bhajeratha  (n=2)
+
+- Бхаджератхи  · n=1  · rigveda
+- Бхаджератха  · n=1  · rigveda
+
+### `Bajeran` — bhajeran  (n=6)
+
+- пользоваться  · n=1  · manavadharmashastra
+- могут разделить  · n=1  · manavadharmashastra
+- делить  · n=1  · manavadharmashastra
+- пусть разделят  · n=1  · manavadharmashastra
+- делить нельзя  · n=1  · manavadharmashastra
+- вернуть привязанность  · n=1  · mahabharata-aranyakaparva
+
+### `Bajet` — bhajet  (n=2)
+
+- путешествовать  · n=1  · manavadharmashastra
+- пусть пользуется  · n=1  · manavadharmashastra
+
+### `BajetAm` — bhajetām  (n=3)
+
+- следует приближаться  · n=1  · manavadharmashastra
+- Станут  · n=1  · ramayana-balakanda
+- видоизменять  · n=1  · mahabharata-udyogaparva
+
+### `Bajeta` — bhajeta  (n=2)
+
+- предаться  · n=1  · buddhacharita
+- вкусить  · n=1  · mahabharata-ashvamedhikaparva
+
+### `Bajitumarhasi` — bhajitumarhasi  (n=1)
+
+- должен полюбить  · n=1  · mahabharata-adiparva
+
+### `BajitvA` — bhajitvā  (n=1)
+
+- совершив  · n=1  · mahabharata-shalyaparva
+
+### `BajizyAmi` — bhajiṣyāmi  (n=1)
+
+- отдам свою любовь  · n=1  · mahabharata-adiparva
+
+### `Bajizyanti` — bhajiṣyanti  (n=2)
+
+- обретут  · n=1  · mahabharata-udyogaparva
+- распадутся  · n=1  · mahabharata-udyogaparva
+
+### `Bajizyati` — bhajiṣyati  (n=1)
+
+- полюбит  · n=1  · ramayana-aranyakanda
+
+### `Bajizye` — bhajiṣye  (n=1)
+
+- стану  · n=1  · ramayana-ayodhyakanda
+
+### `BajyamAnA` — bhajyamānā  (n=1)
+
+- подрубленная  · n=1  · mahabharata-aranyakaparva
+
+### `BajyamAna` — bhajyamāna  (n=5)
+
+- громили  · n=1  · mahabharata-aranyakaparva
+- терпели поражение  · n=1  · mahabharata-dronaparva
+- сокрушенное  · n=1  · mahabharata-dronaparva
+- крушится  · n=1  · mahabharata-bhishmaparva
+- подвергается разрушению  · n=1  · mahabharata-shalyaparva
+
+### `BajyamAnam` — bhajyamānam  (n=1)
+
+- сломался  · n=1  · raghuvamsha
+
+### `BajyatAM` — bhajyatāṃ  (n=1)
+
+- сокрушаемых  · n=1  · mahabharata-dronaparva
+
+### `Bajyata` — bhajyata  (n=1)
+
+- подверглось поражению  · n=1  · mahabharata-dronaparva
+
+### `BajyatastrastAnkauravAn` — bhajyatastrastānkauravān  (n=1)
+
+- перепуганные кауравы  · n=1  · mahabharata-shalyaparva
+
+### `Bajyeran` — bhajyeran  (n=1)
+
+- будут разбиты  · n=1  · mahabharata-dronaparva
+
+### `Bajyeta` — bhajyeta  (n=6)
+
+- сломится  · n=3  · mahabharata-udyogaparva, mahabharata-shalyaparva
+- сломиться  · n=1  · mahabharata-udyogaparva
+- уступит  · n=1  · mahabharata-udyogaparva
+- расколото  · n=1  · mahabharata-virataparva
+
+### `BakSayet` — bhakśayet  (n=1)
+
+- ест  · n=1  · hatha-yoga-pradipika
+
+### `Baksya` — bhaksya  (n=1)
+
+- пожирают  · n=1  · mahabharata-aranyakaparva
+
+### `Bakt` — bhakt  (n=1)
+
+- предан  · n=1  · bhagavadgita-1914
+
+### `BaktA` — bhaktā  (n=3)
+
+- преданной  · n=1  · mahabharata-adiparva
+- преданные  · n=1  · mahabharata-bhishmaparva
+- преданы  · n=1  · bhagavadgita-erman
+
+### `BaktAH` — bhaktāḥ  (n=19)
+
+- преданные  · n=7  · bhagavadgita-prabhupada, bhagavadgita-sharma
+- бхакты  · n=4  · bhagavadgita-radha, bhagavadgita-burba, bhagavadgita-sementsov
+- преданы  · n=1  · mahabharata-bhishmaparva
+- служителей  · n=1  · bhagavadgity
+- поклоняясь  · n=1  · bhagavadgita-smirnov
+- благоговейные  · n=1  · bhagavadgita-smirnov
+- служители  · n=1  · bhagavadgita-1788
+- друзья  · n=1  · bhagavadgita-1788
+- поклоняется  · n=1  · bhagavadgita-prabhupada
+- преданных  · n=1  · bhagavadgita-radha
+
+### `BaktAm` — bhaktām  (n=3)
+
+- любящую  · n=1  · ramayana-ayodhyakanda
+- обладаемой  · n=1  · mahabharata-adiparva
+- преданную  · n=1  · mahabharata-udyogaparva
+
+### `BaktAn` — bhaktān  (n=1)
+
+- преданно любящих  · n=1  · mahabharata-aranyakaparva
+
+### `BaktAnAm` — bhaktānām  (n=1)
+
+- преданных  · n=1  · mahabharata-udyogaparva
+
+### `BaktAnukampin` — bhaktānukampin  (n=4)
+
+- сострадательный к преданным почитателям  · n=2  · mahabharata-karnaparva
+- сострадательный к своим преданным поклонникам  · n=1  · mahabharata-dronaparva
+- милостивый к преданным  · n=1  · mahabharata-dronaparva
+
+### `BaktAnukampinA` — bhaktānukampinā  (n=1)
+
+- милостивый к своим почитателям  · n=1  · raghuvamsha
+
+### `BaktAnukampinam` — bhaktānukampinam  (n=1)
+
+- благорасположенного к преданным  · n=1  · mahabharata-dronaparva
+
+### `BaktAnuraktAH` — bhaktānuraktāḥ  (n=1)
+
+- верные и преданные  · n=1  · mahabharata-aranyakaparva
+
+### `BaktArtikAtarA` — bhaktārtikātarā  (n=1)
+
+- огорчаемую бедами своих почитателей  · n=1  · devi-gita
+
+### `BaktAyAH` — bhaktāyāḥ  (n=1)
+
+- предана  · n=1  · mahabharata-udyogaparva
+
+### `BaktI` — bhaktī  (n=2)
+
+- вида преданности  · n=2  · devi-gita
+
+### `BaktI-yoga` — bhaktī-yoga  (n=1)
+
+- Бхакти-йога  · n=1  · bhagavadgita-burba
+
+### `Bakta` — bhakta  (n=125)
+
+- преданные  · n=11  · bhagavadgita-erman, mahabharata-bhishmaparva, gitarthasamgraha-abhinavagupta, bhagavadgita-sharma, mahabharata-dronaparva, bhagavadgita-1914
+- преданный  · n=10  · gitarthasamgraha-abhinavagupta, bhagavadgita-sharma, mahabharata-aranyakaparva, mahabharata-bhishmaparva, mahabharata-udyogaparva, bhagavadgity, bhagavadgita-erman, bhagavadgita-radha
+- предан  · n=7  · mahabharata-udyogaparva, mahabharata-aranyakaparva, mahabharata-dronaparva, bhagavadgita-1914, bhagavadgita-erman, devi-gita
+- бхакт  · n=7  · bhagavadgita-burba, ramanuja_gitabhashya, bhagavadgita-sementsov, mahabharata-mahaprasthanikaparva
+- преданных  · n=4  · mahabharata-bhishmaparva, gitarthasamgraha-abhinavagupta, mahabharata-karnaparva, jabala-up
+- бхакты  · n=4  · bhagavadgita-burba, ramanuja_gitabhashya
+- бхактов  · n=4  · ramanuja_gitabhashya, bhagavadgita-sementsov, gitartha-samgraha_yamunacharya
+- пища  · n=3  · ch-up, manavadharmashastra
+- пищу  · n=3  · kama-sutra, mahabharata-adiparva, shukasaptati
+- преданный почитатель  · n=3  · bhagavadgita-erman, mahabharata-bhishmaparva
+- бхакта  · n=3  · gitarthasamgraha-abhinavagupta, bhagavadgita-radha, mahabharata-karnaparva
+- преданно  · n=2  · mahabharata-aranyakaparva, bhagavadgita-sharma
+- еду  · n=2  · kama-sutra, shukasaptati
+- благоговеющих  · n=2  · mahabharata-bhishmaparva, bhagavadgita-erman
+- преданному  · n=2  · gitarthasamgraha-abhinavagupta, devi-gita
+- служители  · n=2  · bhagavadgity, bhagavadgita-1909
+- благоговейные  · n=2  · bhagavadgity, bhagavadgita-smirnov
+- почитателей  · n=2  · devi-gita
+- верна  · n=2  · mahabharata-mahaprasthanikaparva
+- содержание  · n=1  · ramayana-ayodhyakanda
+- довольствия  · n=1  · ramayana-ayodhyakanda
+- еды  · n=1  · ramayana-sundarakanda
+- срок приема пищи  · n=1  · manavadharmashastra
+- спутник  · n=1  · ramayana-aranyakanda
+- преданны  · n=1  · ramayana-aranyakanda
+- чтит  · n=1  · ramayana-balakanda
+- Верную  · n=1  · ramayana-balakanda
+- возлюбившие  · n=1  · mahabharata-aranyakaparva
+- последователей  · n=1  · mahabharata-aranyakaparva
+- почитаешь  · n=1  · mahabharata-aranyakaparva
+- почитаю  · n=1  · mahabharata-aranyakaparva
+- почитателям  · n=1  · mahabharata-aranyakaparva
+- любящего  · n=1  · mahabharata-adiparva
+- любящую  · n=1  · mahabharata-adiparva
+- преданную  · n=1  · mahabharata-adiparva
+- преданы  · n=1  · mahabharata-dronaparva
+- с преданностью  · n=1  · mahabharata-dronaparva
+- поклонникам  · n=1  · mahabharata-dronaparva
+- с преданностью почитающие  · n=1  · mahabharata-dronaparva
+- долей  · n=1  · rigveda
+- бхакты/преданные  · n=1  · bhagavadgita-burba
+- благоговейных  · n=1  · ramanuja_gitabhashya
+- возлюбивший Меня  · n=1  · ramanuja_gitabhashya
+- кто поклоняется  · n=1  · bhagavadgita-1914
+- поклоняющиеся  · n=1  · bhagavadgita-1914
+- поклоняются  · n=1  · bhagavadgita-1914
+- молящийся  · n=1  · bhagavadgity
+- поклоняясь  · n=1  · bhagavadgity
+- преданный ученик  · n=1  · bhagavadgity
+- преданности  · n=1  · bhagavadgita-erman
+- поклоняющийся  · n=1  · bhagavadgita-smirnov
+- благочестивые  · n=1  · bhagavadgita-smirnov
+- поклонники  · n=1  · bhagavadgita-smirnov
+- молящійся  · n=1  · bhagavadgita-1788
+- служителей  · n=1  · bhagavadgita-1788
+- исполнены веры  · n=1  · bhagavadgita-sementsov
+- бхактах  · n=1  · bhagavadgita-sementsov
+- люди  · n=1  · bhagavadgita-1909
+- предастся  · n=1  · bhagavadgita-1909
+- служителямъ  · n=1  · bhagavadgita-1909
+- друзья  · n=1  · bhagavadgita-1909
+- почитатели  · n=1  · bhagavadgita-radha
+- почитатель  · n=1  · devi-gita
+- поклонников  · n=1  · devi-gita
+- слуги  · n=1  · mahabharata-sabhaparva
+- пропитании  · n=1  · mahabharata-sabhaparva
+- Вкусив  · n=1  · atharvaveda
+- еда  · n=1  · shukasaptati
+- бхактом  · n=1  · mahabharata-mahaprasthanikaparva
+
+### `Bakta-kAma-kalpa-drumA` — bhakta-kāma-kalpa-drumā  (n=1)
+
+- Древом желаний для почитателей своих  · n=1  · devi-gita
+
+### `BaktaH` — bhaktaḥ  (n=26)
+
+- преданный  · n=7  · bhagavadgita-prabhupada, ramayana-aranyakanda, gitarthasamgraha-abhinavagupta, bhagavadgity
+- служитель  · n=3  · bhagavadgita-1788, bhagavadgita-1909
+- поклоняющихся  · n=2  · mahabharata-bhishmaparva, bhagavadgita-erman
+- бхакт  · n=2  · ramanuja_gitabhashya, bhagavadgita-sementsov
+- бхакта  · n=2  · bhagavadgita-smirnov, bhagavadgita-radha
+- служит  · n=1  · ramayana-ayodhyakanda
+- преданный почитатель  · n=1  · mahabharata-bhishmaparva
+- с любовью поклоняющийся Мне  · n=1  · bhagavadgita-1914
+- поклоняющийся  · n=1  · bhagavadgity
+- поклонник  · n=1  · bhagavadgita-smirnov
+- бхактов  · n=1  · bhagavadgita-sementsov
+- предан  · n=1  · bhagavadgita-sharma
+- преданным  · n=1  · bhagavadgita-prabhupada
+- человек, преданный Мне  · n=1  · bhagavadgita-radha
+- почитатель  · n=1  · bhagavadgita-radha
+
+### `BaktaM` — bhaktaṃ  (n=1)
+
+- предан  · n=1  · mahabharata-dronaparva
+
+### `BaktadA` — bhaktadā  (n=1)
+
+- пищу  · n=1  · manavadharmashastra
+
+### `BaktadAsa` — bhaktadāsa  (n=1)
+
+- раб за содержание  · n=1  · manavadharmashastra
+
+### `BaktadAyaka` — bhaktadāyaka  (n=1)
+
+- дают пищу  · n=1  · manavadharmashastra
+
+### `BaktahAriRI` — bhaktahāriṇī  (n=1)
+
+- неся съестное  · n=1  · shukasaptati
+
+### `Baktajana` — bhaktajana  (n=2)
+
+- того, кто мне верен  · n=2  · mahabharata-mahaprasthanikaparva
+
+### `BaktakAmakalpadrumaH` — bhaktakāmakalpadrumaḥ  (n=1)
+
+- Древом желаний для почитателей  · n=1  · devi-gita
+
+### `Baktam` — bhaktam  (n=6)
+
+- преданных  · n=1  · ramayana-ayodhyakanda
+- преданного  · n=1  · ramayana-ayodhyakanda
+- продовольствия  · n=1  · manavadharmashastra
+- предложенной  · n=1  · rigveda
+- любящего  · n=1  · mahabharata-adiparva
+- пищу  · n=1  · mahabharata-udyogaparva
+
+### `BaktamanutpAwayitvA` — bhaktamanutpāṭayitvā  (n=1)
+
+- не вынув  · n=1  · shukasaptati
+
+### `Baktas` — bhaktas  (n=2)
+
+- бхакт  · n=2  · bhagavadgita-burba
+
+### `BaktatyAga` — bhaktatyāga  (n=4)
+
+- отречься от того, кто (тебе) предан  · n=2  · mahabharata-mahaprasthanikaparva
+- отречению от того, кто тебе предан  · n=2  · mahabharata-mahaprasthanikaparva
+
+### `BaktavAtsalya` — bhaktavātsalya  (n=2)
+
+- из родительской любви к почитателям  · n=2  · devi-gita
+
+### `BaktavarAH` — bhaktavarāḥ  (n=1)
+
+- лучшими среди почитателей  · n=1  · devi-gita
+
+### `Baktavatsala` — bhaktavatsala  (n=1)
+
+- сострадательный к преданным  · n=1  · mahabharata-dronaparva
+
+### `Baktavatsalam` — bhaktavatsalam  (n=1)
+
+- доброго к своим подданным  · n=1  · mahabharata-adiparva
+
+### `Baktaye` — bhaktaye  (n=1)
+
+- ради вкушения  · n=1  · rigveda
+
+### `Baktezu` — bhakteṣu  (n=2)
+
+- с почтением  · n=1  · ramayana-ayodhyakanda
+- к тем, кто преданно почитает  · n=1  · mahabharata-aranyakaparva
+
+### `Bakti` — bhakti  (n=189)
+
+- преданность  · n=52  · devi-gita, mahabharata-bhishmaparva, bhagavadgita-erman, gitarthasamgraha-abhinavagupta, ramayana-ayodhyakanda, ramayana-sundarakanda, bhagavadgita-burba, kama-sutra, mahabharata-dronaparva, bhagavadgita-1914, shatakatrayam-serebryakov, mahabharata-aranyakaparva, mahabharata-adiparva, bhagavadgity, bhagavadgita-1909, bhagavadgita-sharma, raghuvamsha
+- преданностью  · n=32  · gitarthasamgraha-abhinavagupta, devi-gita, bhagavadgita-burba, bhagavadgita-sharma, mahabharata-dronaparva, bhagavadgita-radha, ramayana-ayodhyakanda, ramayana-aranyakanda, mahabharata-bhishmaparva, bhagavadgita-1914, bhagavadgity, bhagavadgita-erman, bhagavadgita-1909, bhagavadgita-prabhupada, mahabharata-shalyaparva, kai-up, pratyabhijna-hridaya_kshemaraja
+- бхакти  · n=21  · vedartha-samgraha_ramanuja, gitartha-samgraha_yamunacharya, mahabharata-bhishmaparva, ramanuja_gitabhashya, bhagavadgita-sementsov, bhagavadgity, bhagavadgita-smirnov, bhagavadgita-radha, ch-up
+- преданности  · n=16  · devi-gita, bhagavadgita-erman, ramayana-sundarakanda, mahabharata-bhishmaparva, mahabharata-dronaparva, bhagavadgita-1914, bhagavadgita-1909, bhagavadgita-radha, mahabharata-karnaparva, mahabharata-shalyaparva, mai-up, kai-up, sub-up
+- любовь  · n=4  · mahabharata-aranyakaparva, ramanuja_gitabhashya, vedartha-samgraha_ramanuja
+- с преданностью  · n=4  · bhagavadgita-burba, bhagavadgita-prabhupada
+- благоговейно  · n=3  · bhagavadgita-sementsov, ramanuja_gitabhashya
+- любви  · n=2  · ramayana-aranyakanda, bhagavadgita-1914
+- почитанье  · n=2  · gitarthasamgraha-abhinavagupta, bhagavadgita-sementsov
+- благоговенье  · n=2  · ramanuja_gitabhashya, bhagavadgita-sementsov
+- богопочитаніе  · n=2  · bhagavadgity, bhagavadgita-1788
+- служеніе  · n=2  · bhagavadgity, bhagavadgita-1909
+- благоговением  · n=2  · bhagavadgita-smirnov
+- поклонение  · n=2  · bhagavadgita-smirnov, bhagavadgita-sharma
+- любовью  · n=2  · bhagavadgita-sementsov, bhagavadgita-sharma
+- любовь и преданность  · n=2  · bhagavadgita-prabhupada
+- поспешил  · n=1  · ramayana-ayodhyakanda
+- линиями  · n=1  · ramayana-sundarakanda
+- предана  · n=1  · ramayana-sundarakanda
+- попонах  · n=1  · ramayana-aranyakanda
+- нежность души  · n=1  · mahabharata-aranyakaparva
+- почести  · n=1  · mahabharata-aranyakaparva
+- расположение  · n=1  · mahabharata-aranyakaparva
+- чувство  · n=1  · mahabharata-aranyakaparva
+- пестро  · n=1  · kama-sutra
+- преданно  · n=1  · buddhacharita
+- линию  · n=1  · buddhacharita
+- стремишься  · n=1  · buddhacharita
+- бхакта  · n=1  · gitarthasamgraha-abhinavagupta
+- любовь/преданность  · n=1  · bhagavadgita-burba
+- по любви  · n=1  · bhagavadgita-burba
+- с любовью  · n=1  · ramanuja_gitabhashya
+- Преданностью  · n=1  · bhagavadgita-1914
+- благоговения  · n=1  · bhagavadgity
+- Благоговением  · n=1  · bhagavadgity
+- почитанием  · n=1  · bhagavadgita-smirnov
+- благоговение  · n=1  · bhagavadgita-smirnov
+- бхакты  · n=1  · bhagavadgita-smirnov
+- служенію  · n=1  · bhagavadgita-1788
+- богопочитанія  · n=1  · bhagavadgita-1788
+- помощію  · n=1  · bhagavadgita-1788
+- вѣра  · n=1  · bhagavadgita-1909
+- вѣрою  · n=1  · bhagavadgita-1909
+- вѣрой и любовью  · n=1  · bhagavadgita-1909
+- верой  · n=1  · bhagavadgita-sharma
+- чистым преданным служением  · n=1  · bhagavadgita-prabhupada
+- преданным служением  · n=1  · bhagavadgita-prabhupada
+- фигуральное  · n=1  · nyaya-bhashya
+- метафорическое употребление  · n=1  · nyaya-bhashya
+- фигуральность  · n=1  · nyaya-bhashya
+- преданы  · n=1  · devi-gita
+- Преданность  · n=1  · devi-gita
+- почитание  · n=1  · raghuvamsha
+- предан  · n=1  · shatakatrayam
+- преданный  · n=1  · shatakatrayam
+
+### `Bakti-SraizWya` — bhakti-śraiṣṭhya  (n=2)
+
+- быстрой действенности бхакти  · n=1  · gitartha-samgraha_yamunacharya
+- превосходство бхакти  · n=1  · gitartha-samgraha_yamunacharya
+
+### `Bakti-eka-upAyatA` — bhakti-eka-upāyatā  (n=1)
+
+- единственным средством — бхакти  · n=1  · gitartha-samgraha_yamunacharya
+
+### `Bakti-miSra-jYAna` — bhakti-miśra-jñāna  (n=1)
+
+- бхакти-мишра-гьяна  · n=1  · bhagavadgita-radha
+
+### `Bakti-rUpa` — bhakti-rūpa  (n=1)
+
+- форме бхакти  · n=1  · gitartha-samgraha_yamunacharya
+
+### `Bakti-upahfta` — bhakti-upahṛta  (n=5)
+
+- приношение любви  · n=1  · ramanuja_gitabhashya
+- радостно  · n=1  · bhagavadgita-1909
+- подношение  · n=1  · bhagavadgita-sharma
+- предложенное с любовью и преданностью  · n=1  · bhagavadgita-prabhupada
+- подарок, сделанный с преданностью  · n=1  · bhagavadgita-radha
+
+### `Bakti-utpatti-vivfDi-arTa` — bhakti-utpatti-vivṛdhi-artha  (n=1)
+
+- причинах возникновения и развития бхакти  · n=1  · gitartha-samgraha_yamunacharya
+
+### `Bakti-yoga` — bhakti-yoga  (n=7)
+
+- бхакти-йога  · n=2  · gitartha-samgraha_yamunacharya
+- йогой религиозной преданности  · n=1  · bhagavadgita-burba
+- бхакти-йогой  · n=1  · bhagavadgita-burba
+- служитъ  · n=1  · bhagavadgita-1909
+- преданное служение  · n=1  · bhagavadgita-radha
+- Бхакти-йога  · n=1  · gitartha-samgraha_yamunacharya
+
+### `Bakti-yogena` — bhakti-yogena  (n=5)
+
+- преданным служением  · n=2  · bhagavadgita-radha
+- Йогой преданности  · n=1  · bhagavadgita-1914
+- преданностью  · n=1  · bhagavadgity
+- преданности  · n=1  · bhagavadgita-radha
+
+### `BaktiBAj` — bhaktibhāj  (n=1)
+
+- благочестивые  · n=1  · pratyabhijna-hridaya_kshemaraja
+
+### `BaktiBArAvanamitamanobudDyaBimAnapadadvayakaradvayaSiras` — bhaktibhārāvanamitamanobuddhyabhimānapadadvayakaradvayaśiras  (n=1)
+
+- под тяжестью любви сгибаясь сердцем и мыслью, они ее изобразить стремятся руками, ногами, головою  · n=1  · ramanuja_gitabhashya
+
+### `BaktiH` — bhaktiḥ  (n=9)
+
+- преданность  · n=4  · bhagavadgita-prabhupada, devi-gita, mahabharata-sabhaparva
+- преданности  · n=2  · mahabharata-udyogaparva, shv-up
+- любил  · n=1  · mahabharata-aranyakaparva
+- почитание  · n=1  · bhagavadgita-smirnov
+- молитву  · n=1  · bhagavadgita-1909
+
+### `BaktiSAlinAm` — bhaktiśālinām  (n=1)
+
+- светящихся преданностью  · n=1  · devi-gita
+
+### `BakticCedair` — bhakticchedair  (n=1)
+
+- морщинки  · n=1  · megha-duta
+
+### `BaktijYAnena` — bhaktijñānena  (n=2)
+
+- знанием, связанным с преданностью  · n=2  · devi-gita
+
+### `Baktim` — bhaktim  (n=8)
+
+- преданное служение  · n=2  · bhagavadgita-prabhupada
+- почтение  · n=1  · ramayana-ayodhyakanda
+- благоговейную преданность  · n=1  · mahabharata-dronaparva
+- любви  · n=1  · buddhacharita
+- любовью  · n=1  · ramanuja_gitabhashya
+- служеніе  · n=1  · bhagavadgita-1788
+- преданность  · n=1  · bhagavadgita-radha
+
+### `BaktimAn` — bhaktimān  (n=21)
+
+- преданный  · n=4  · bhagavadgita-prabhupada, bhagavadgita-sharma
+- исполненный преданности  · n=2  · mahabharata-bhishmaparva, bhagavadgita-1914
+- наделенный преданностью  · n=2  · bhagavadgita-burba
+- благоговейный  · n=2  · bhagavadgita-smirnov
+- привязанность  · n=1  · kama-sutra
+- исполнен преданности  · n=1  · mahabharata-bhishmaparva
+- бхакти  · n=1  · bhagavadgita-smirnov
+- служителемъ  · n=1  · bhagavadgita-1788
+- служитель  · n=1  · bhagavadgita-1788
+- полон бхакти  · n=1  · bhagavadgita-sementsov
+- полный бхакти  · n=1  · bhagavadgita-sementsov
+- посвятивший себя Мне  · n=1  · bhagavadgita-sharma
+- посвятивший себя преданному служению  · n=1  · bhagavadgita-prabhupada
+- бхакта  · n=1  · bhagavadgita-radha
+- обладающий преданностью  · n=1  · bhagavadgita-radha
+
+### `Baktimant` — bhaktimant  (n=4)
+
+- предан  · n=2  · mahabharata-aranyakaparva, mahabharata-karnaparva
+- исполнен преданности  · n=1  · bhagavadgita-erman
+- исполненный преданности  · n=1  · bhagavadgita-erman
+
+### `Baktimanti` — bhaktimanti  (n=1)
+
+- почитает  · n=1  · ramayana-ayodhyakanda
+
+### `Baktimat` — bhaktimat  (n=16)
+
+- исполненный преданности  · n=2  · mahabharata-dronaparva, bhagavadgity
+- преданный  · n=2  · gitarthasamgraha-abhinavagupta
+- преданности  · n=1  · ramayana-ayodhyakanda
+- верные  · n=1  · ramayana-ayodhyakanda
+- преданные  · n=1  · buddhacharita
+- почтительны  · n=1  · mahabharata-udyogaparva
+- полон бхакти  · n=1  · ramanuja_gitabhashya
+- полный бхакти  · n=1  · ramanuja_gitabhashya
+- полный преданности  · n=1  · bhagavadgita-1914
+- благоговейный  · n=1  · bhagavadgity
+- служа  · n=1  · bhagavadgita-1909
+- служитель  · n=1  · bhagavadgita-1909
+- расположен  · n=1  · mahabharata-sabhaparva
+- подвесками  · n=1  · raghuvamsha
+
+### `BaktimatI` — bhaktimatī  (n=1)
+
+- преданная  · n=1  · raghuvamsha
+
+### `BaktimataH` — bhaktimataḥ  (n=1)
+
+- преданным  · n=1  · buddhacharita
+
+### `BaktinamraH` — bhaktinamraḥ  (n=1)
+
+- съ вѣрой  · n=1  · megha-duta
+
+### `Baktir` — bhaktir  (n=1)
+
+- поверхность  · n=1  · raghuvamsha
+
+### `Baktirna` — bhaktirna  (n=1)
+
+- преданность  · n=1  · mahabharata-shalyaparva
+
+### `Baktisahita` — bhaktisahita  (n=1)
+
+- в сочетании с преданностью  · n=1  · devi-gita
+
+### `BaktitaH` — bhaktitaḥ  (n=2)
+
+- из преданности  · n=1  · buddhacharita
+- бхакти  · n=1  · vedartha-samgraha_ramanuja
+
+### `BaktivAMs` — bhaktivāṃs  (n=1)
+
+- получим долю  · n=1  · atharvaveda
+
+### `BaktivAda` — bhaktivāda  (n=1)
+
+- дружескими уверениями  · n=1  · mahabharata-udyogaparva
+
+### `BaktivaSena` — bhaktivaśena  (n=1)
+
+- от любви к господину  · n=1  · buddhacharita
+
+### `BaktiviSeza` — bhaktiviśeṣa  (n=3)
+
+- особой формы бхакти  · n=1  · yoga-sutry_vyasa-bhashya
+- бхакти в его специфической форме  · n=1  · yoga-sutry_vyasa-bhashya
+- специфическая форма бхакти  · n=1  · yoga-sutry_vyasa-bhashya
+
+### `Baktiyoga` — bhaktiyoga  (n=6)
+
+- сопряжением преданности  · n=1  · mahabharata-bhishmaparva
+- Сопряжение преданности  · n=1  · mahabharata-bhishmaparva
+- йогой бхакти  · n=1  · ramanuja_gitabhashya
+- сопряжение преданности  · n=1  · bhagavadgita-erman
+- йога преданности  · n=1  · devi-gita
+- бхакти  · n=1  · vedartha-samgraha_ramanuja
+
+### `Baktiyogena` — bhaktiyogena  (n=7)
+
+- преданностью  · n=2  · gitarthasamgraha-abhinavagupta, bhagavadgita-sharma
+- сопряжением преданности  · n=1  · bhagavadgita-erman
+- преданностью благоговения (бхакти-йога)  · n=1  · bhagavadgita-smirnov
+- йогой бхакти  · n=1  · bhagavadgita-sementsov
+- преданным служением  · n=1  · bhagavadgita-prabhupada
+- бхакти-йогой  · n=1  · bhagavadgita-prabhupada
+
+### `Baktiyukta` — bhaktiyukta  (n=1)
+
+- наделённому преданностью  · n=1  · devi-gita
+
+### `Bakto` — bhakto  (n=1)
+
+- верный  · n=1  · shukasaptati
+
+### `BaktvA` — bhaktvā  (n=1)
+
+- вкусив  · n=1  · rigveda
+
+### `BaktyA` — bhaktyā  (n=65)
+
+- с преданностью  · n=15  · devi-gita, mahabharata-bhishmaparva, bhagavadgita-burba, bhagavadgita-erman, gitarthasamgraha-abhinavagupta, bhagavadgita-sharma, bhagavadgita-prabhupada, bhagavadgita-radha, mahabharata-sabhaparva
+- преданностью  · n=9  · gitarthasamgraha-abhinavagupta, mahabharata-udyogaparva, ramayana-ayodhyakanda, mahabharata-dronaparva, bhagavadgita-prabhupada, raghuvamsha
+- с любовью  · n=7  · bhagavadgita-1914, bhagavadgity, ramayana-aranyakanda, mahabharata-aranyakaparva
+- преданность  · n=3  · ramayana-balakanda, bhagavadgita-sharma, mahabharata-karnaparva
+- преданности  · n=3  · mahabharata-dronaparva, bhagavadgita-prabhupada, mahabharata-shalyaparva
+- преданным служением  · n=3  · bhagavadgita-prabhupada
+- с помощью бхакти  · n=3  · bhagavadgita-radha
+- бхакти  · n=2  · ramanuja_gitabhashya, bhagavadgita-sementsov
+- благоговейно  · n=2  · bhagavadgity, bhagavadgita-smirnov
+- с помощью преданности  · n=2  · bhagavadgita-radha
+- любовью  · n=2  · mahabharata-karnaparva, mahabharata-sauptikaparva
+- пристрастен  · n=1  · ramayana-ayodhyakanda
+- преисполнены любви  · n=1  · mahabharata-aranyakaparva
+- обрядами  · n=1  · mahabharata-adiparva
+- послушно  · n=1  · buddhacharita
+- Преданностью  · n=1  · bhagavadgita-burba
+- с благоговением  · n=1  · bhagavadgita-smirnov
+- служатъ  · n=1  · bhagavadgita-1788
+- смиренно  · n=1  · bhagavadgita-1788
+- въ богослуженіи  · n=1  · bhagavadgita-1788
+- съ поклоненіемъ  · n=1  · bhagavadgita-1788
+- сердцемъ  · n=1  · bhagavadgita-1909
+- с почтением  · n=1  · devi-gita
+- из преданности  · n=1  · devi-gita
+- нежностью  · n=1  · shukasaptati
+
+### `BaktyAparamayA` — bhaktyā paramayā  (n=1)
+
+- безграничная любовь  · n=1  · mahabharata-aranyakaparva
+
+### `BaktyArTinAm` — bhaktyārthinām  (n=1)
+
+- стремящихся к благочестию  · n=1  · gitagovinda
+
+### `BaktyAyuktaH` — bhaktyā yuktaḥ  (n=1)
+
+- приобщённый благоговению  · n=1  · bhagavadgity
+
+### `Baktyopapannezu` — bhaktyopapanneṣu  (n=1)
+
+- к почитателям  · n=1  · raghuvamsha
+
+### `Baktyupahfta` — bhaktyupahṛta  (n=4)
+
+- преданность  · n=2  · gitarthasamgraha-abhinavagupta
+- преданности приношение  · n=1  · mahabharata-bhishmaparva
+- любви приношенье  · n=1  · bhagavadgita-sementsov
+
+### `Baktyupahftam` — bhaktyupahṛtam  (n=6)
+
+- поднесенное с преданностью  · n=1  · bhagavadgita-burba
+- как дар любви  · n=1  · bhagavadgita-1914
+- дар любви  · n=1  · bhagavadgity
+- преданности приношение  · n=1  · bhagavadgita-erman
+- принесённое с благоговением  · n=1  · bhagavadgita-smirnov
+- приношенія  · n=1  · bhagavadgita-1788
+
+### `Bakz` — bhakṣ  (n=12)
+
+- пожрут  · n=2  · mahabharata-aranyakaparva
+- есть  · n=1  · ramayana-ayodhyakanda
+- Питаясь  · n=1  · ramayana-ayodhyakanda
+- съедена  · n=1  · ramayana-sundarakanda
+- есть не будете  · n=1  · ramayana-sundarakanda
+- пей  · n=1  · ramayana-sundarakanda
+- пожрал  · n=1  · manavadharmashastra
+- пожирают  · n=1  · ramayana-aranyakanda
+- ем  · n=1  · mahabharata-aranyakaparva
+- приобщиться  · n=1  · rigveda
+- съедены  · n=1  · mahabharata-adiparva
+
+### `BakzArTa` — bhakṣārtha  (n=2)
+
+- из-за куска мяса  · n=2  · mahabharata-shalyaparva
+
+### `BakzArTin` — bhakṣārthin  (n=1)
+
+- жаждущая еды  · n=1  · ramayana-sundarakanda
+
+### `BakzImahi` — bhakṣīmahi  (n=4)
+
+- хотим вкусить  · n=1  · rigveda
+- хотели бы прильнуть  · n=1  · rigveda
+- насладимся  · n=1  · rigveda
+- будем радоваться  · n=1  · atharvaveda
+
+### `BakzIti` — bhakṣīti  (n=2)
+
+- буду я причастен к Бхаге  · n=1  · rigveda
+- буду причастен  · n=1  · atharvaveda
+
+### `BakzIya` — bhakṣīya  (n=3)
+
+- Да получу я долю  · n=1  · rigveda
+- да вкушу я  · n=1  · rigveda
+- хочу приобщиться  · n=1  · rigveda
+
+### `Bakza` — bhakṣa  (n=23)
+
+- пища  · n=3  · mahabharata-adiparva, mahabharata-aranyakaparva
+- съесть  · n=2  · ramayana-aranyakanda, ramayana-balakanda
+- поедая  · n=2  · ramayana-aranyakanda
+- глоток  · n=2  · rigveda, atharvaveda
+- отведывают  · n=1  · atharvaveda
+- пищу  · n=1  · ramayana-ayodhyakanda
+- Пища  · n=1  · ramayana-sundarakanda
+- добычей  · n=1  · ramayana-aranyakanda
+- питался  · n=1  · mahabharata-aranyakaparva
+- яства  · n=1  · mahabharata-aranyakaparva
+- еда  · n=1  · mahabharata-aranyakaparva
+- вкусили  · n=1  · rigveda
+- яствам  · n=1  · rigveda
+- Напиток  · n=1  · rigveda
+- поесть  · n=1  · mahabharata-ashvamedhikaparva
+- вкушении  · n=1  · atharvaveda
+- вкушение  · n=1  · atharvaveda
+- вкушать  · n=1  · atharvaveda
+
+### `BakzaM` — bhakṣaṃ  (n=1)
+
+- угощение  · n=1  · atharvaveda
+
+### `BakzaRAya` — bhakṣaṇāya  (n=1)
+
+- на съедение  · n=1  · ramayana-aranyakanda
+
+### `BakzaRIya` — bhakṣaṇīya  (n=1)
+
+- съедобным  · n=1  · kama-sutra
+
+### `BakzaRa` — bhakṣaṇa  (n=13)
+
+- поедание  · n=1  · mahabharata-adiparva
+- питаться  · n=1  · ramayana-ayodhyakanda
+- сожрать  · n=1  · ramayana-sundarakanda
+- выпили  · n=1  · ramayana-sundarakanda
+- употребления в пищу  · n=1  · manavadharmashastra
+- пожирание  · n=1  · manavadharmashastra
+- посягнут  · n=1  · ramayana-aranyakanda
+- в пищу  · n=1  · mahabharata-aranyakaparva
+- еды  · n=1  · mahabharata-aranyakaparva
+- пищи  · n=1  · mahabharata-aranyakaparva
+- пища  · n=1  · mahabharata-aranyakaparva
+- быть съеденными  · n=1  · mahabharata-adiparva
+- съесть  · n=1  · shukasaptati
+
+### `BakzaRam` — bhakṣaṇam  (n=3)
+
+- для питья  · n=2  · rigveda
+- сожженный  · n=1  · mahabharata-adiparva
+
+### `BakzaRavarjana` — bhakṣaṇavarjana  (n=1)
+
+- воздержания  · n=1  · manavadharmashastra
+
+### `BakzaRe` — bhakṣaṇe  (n=1)
+
+- отведать  · n=1  · ramayana-ayodhyakanda
+
+### `BakzairBojyaiScapuzkalaiH` — bhakṣairbhojyaiśca puṣkalaiḥ  (n=1)
+
+- в разнообразных напитках и в прочих приятных и бесчисленных видах удовольствий  · n=1  · mahabharata-adiparva
+
+### `Bakzam` — bhakṣam  (n=3)
+
+- вкушение  · n=1  · atharvaveda
+- вкушения  · n=1  · rigveda
+- питье  · n=1  · atharvaveda
+
+### `Bakzat` — bhakṣat  (n=3)
+
+- наделит  · n=3  · rigveda
+
+### `Bakzata` — bhakṣata  (n=1)
+
+- используют  · n=1  · rigveda
+
+### `Bakzay` — bhakṣay  (n=7)
+
+- съели  · n=2  · mahabharata-adiparva, mahabharata-sabhaparva
+- пожирая  · n=1  · ramayana-aranyakanda
+- покусывать  · n=1  · ramayana-aranyakanda
+- пожирали  · n=1  · mahabharata-aranyakaparva
+- пожирало  · n=1  · mahabharata-dronaparva
+- вкушают  · n=1  · br-up
+
+### `BakzayAmAsa` — bhakṣayāmāsa  (n=6)
+
+- съел  · n=4  · mahabharata-adiparva
+- сожрал  · n=1  · mahabharata-adiparva
+- поедал  · n=1  · mahabharata-sabhaparva
+
+### `BakzayAmi` — bhakṣayāmi  (n=2)
+
+- пожирать  · n=1  · ramayana-aranyakanda
+- ем  · n=1  · mahabharata-aranyakaparva
+
+### `Bakzaya` — bhakṣaya  (n=4)
+
+- ешь  · n=2  · mahabharata-adiparva, shukasaptati
+- съешь  · n=1  · mahabharata-adiparva
+- поешь  · n=1  · mahabharata-shalyaparva
+
+### `Bakzayan` — bhakṣayan  (n=6)
+
+- Пожирая  · n=2  · ramayana-ayodhyakanda, ramayana-aranyakanda
+- ел  · n=1  · ramayana-aranyakanda
+- питаясь  · n=1  · mahabharata-aranyakaparva
+- пожирает  · n=1  · mahabharata-adiparva
+- вкушая  · n=1  · br-up
+
+### `BakzayantI` — bhakṣayantī  (n=3)
+
+- ест  · n=1  · manavadharmashastra
+- не освобождает  · n=1  · manavadharmashastra
+- пожирающую  · n=1  · ramayana-aranyakanda
+
+### `Bakzayanta` — bhakṣayanta  (n=1)
+
+- вкушая  · n=1  · atharvaveda
+
+### `BakzayantaH` — bhakṣayantaḥ  (n=1)
+
+- пожирающие  · n=1  · mahabharata-dronaparva
+
+### `Bakzayanti` — bhakṣayanti  (n=13)
+
+- вкушают  · n=4  · ch-up, mahabharata-ashvamedhikaparva, atharvaveda
+- Пожирают  · n=1  · ramayana-ayodhyakanda
+- пили  · n=1  · ramayana-sundarakanda
+- ели  · n=1  · ramayana-sundarakanda
+- пожирали  · n=1  · ramayana-aranyakanda
+- пожирают  · n=1  · mahabharata-aranyakaparva
+- съедают  · n=1  · mahabharata-aranyakaparva
+- угощают  · n=1  · atharvaveda
+- собрались на свой пир  · n=1  · mahabharata-striparva
+- пируют  · n=1  · mahabharata-striparva
+
+### `Bakzayanto` — bhakṣayanto  (n=1)
+
+- пожирающие  · n=1  · mahabharata-karnaparva
+
+### `Bakzayantu` — bhakṣayantu  (n=1)
+
+- отведайте  · n=1  · mahabharata-adiparva
+
+### `Bakzayasva` — bhakṣayasva  (n=3)
+
+- съешь  · n=3  · mahabharata-adiparva, ramayana-balakanda
+
+### `Bakzayat` — bhakṣayat  (n=1)
+
+- пожирал  · n=1  · ramayana-aranyakanda
+
+### `Bakzayata` — bhakṣayata  (n=1)
+
+- питался  · n=1  · mahabharata-aranyakaparva
+
+### `Bakzayati` — bhakṣayati  (n=10)
+
+- вкушает  · n=7  · atharvaveda, manavadharmashastra
+- трогал  · n=1  · ramayana-aranyakanda
+- пожирает  · n=1  · mahabharata-adiparva
+- наслаждаться  · n=1  · gitarthasamgraha-abhinavagupta
+
+### `Bakzayet` — bhakṣayet  (n=11)
+
+- есть  · n=3  · manavadharmashastra, ramayana-aranyakanda
+- следует есть  · n=2  · manavadharmashastra
+- питаясь  · n=2  · mahabharata-aranyakaparva
+- будет питаться  · n=1  · ramayana-aranyakanda
+- питался  · n=1  · mahabharata-aranyakaparva
+- съела  · n=1  · mahabharata-adiparva
+- сжечь  · n=1  · pratyabhijna-hridaya_kshemaraja
+
+### `Bakzayeyam` — bhakṣayeyam  (n=2)
+
+- выпить  · n=1  · ramayana-ayodhyakanda
+- могу я съесть  · n=1  · mahabharata-aranyakaparva
+
+### `BakzayitA` — bhakṣayitā  (n=2)
+
+- да пожирает  · n=1  · manavadharmashastra
+- тот, кто вкушает  · n=1  · mahabharata-ashvamedhikaparva
+
+### `Bakzayitf` — bhakṣayitṛ  (n=1)
+
+- вкушающий  · n=1  · mahabharata-ashvamedhikaparva
+
+### `Bakzayitum` — bhakṣayitum  (n=1)
+
+- сожрать  · n=1  · ramayana-aranyakanda
+
+### `BakzayitvA` — bhakṣayitvā  (n=10)
+
+- поев  · n=2  · mahabharata-adiparva
+- съел  · n=2  · mahabharata-adiparva, ramayana-aranyakanda
+- съев  · n=2  · mahabharata-adiparva
+- опустошил  · n=2  · ramayana-aranyakanda
+- покушай  · n=1  · mahabharata-adiparva
+- нарвать  · n=1  · ramayana-aranyakanda
+
+### `BakzayizyAma` — bhakṣayiṣyāma  (n=1)
+
+- наедимся  · n=1  · mahabharata-udyogaparva
+
+### `BakzayizyAmahe` — bhakṣayiṣyāmahe  (n=1)
+
+- пожрем  · n=1  · ramayana-sundarakanda
+
+### `BakzayizyAmi` — bhakṣayiṣyāmi  (n=6)
+
+- съем  · n=3  · ramayana-sundarakanda
+- буду есть  · n=1  · ramayana-aranyakanda
+- сожру  · n=1  · ramayana-aranyakanda
+- приму  · n=1  · mahabharata-sabhaparva
+
+### `BakzayizyAvaH` — bhakṣayiṣyāvaḥ  (n=1)
+
+- съедим  · n=1  · mahabharata-aranyakaparva
+
+### `Bakzayizya` — bhakṣayiṣya  (n=1)
+
+- съем  · n=1  · mahabharata-udyogaparva
+
+### `BakzayizyaTaH` — bhakṣayiṣyathaḥ  (n=1)
+
+- на пропитание  · n=1  · ramayana-aranyakanda
+
+### `BakzayizyadBiH` — bhakṣayiṣyadbhiḥ  (n=1)
+
+- готовых сожрать  · n=1  · mahabharata-sauptikaparva
+
+### `Bakzayizyan` — bhakṣayiṣyan  (n=1)
+
+- намереваясь поглотить  · n=1  · mahabharata-aranyakaparva
+
+### `Bakzayizyant` — bhakṣayiṣyant  (n=1)
+
+- собираясь поглотить  · n=1  · mahabharata-dronaparva
+
+### `Bakzayizyanta` — bhakṣayiṣyanta  (n=1)
+
+- намереваясь сожрать  · n=1  · mahabharata-dronaparva
+
+### `Bakzayizyantam` — bhakṣayiṣyantam  (n=1)
+
+- намереваясь поглотить  · n=1  · mahabharata-aranyakaparva
+
+### `Bakzayizyanti` — bhakṣayiṣyanti  (n=5)
+
+- пожирать  · n=2  · mahabharata-bhishmaparva, mahabharata-dronaparva
+- съедят  · n=1  · ramayana-sundarakanda
+- наедятся  · n=1  · ramayana-sundarakanda
+- склюют  · n=1  · ramayana-aranyakanda
+
+### `Bakzayizyati` — bhakṣayiṣyati  (n=1)
+
+- будет пожирать  · n=1  · shukasaptati
+
+### `Bakzayizye` — bhakṣayiṣye  (n=1)
+
+- съем  · n=1  · mahabharata-aranyakaparva
+
+### `Bakzi` — bhakṣi  (n=2)
+
+- буду я причастен  · n=1  · rigveda
+- буду причастен  · n=1  · atharvaveda
+
+### `Bakzin` — bhakṣin  (n=1)
+
+- съевшего  · n=1  · kama-sutra
+
+### `BakzitA` — bhakṣitā  (n=11)
+
+- съедена  · n=4  · ramayana-aranyakanda
+- съели  · n=1  · ramayana-aranyakanda
+- сожрали  · n=1  · ramayana-aranyakanda
+- съедение  · n=1  · ramayana-aranyakanda
+- растерзана  · n=1  · ramayana-aranyakanda
+- съел  · n=1  · ramayana-aranyakanda
+- поглотили  · n=1  · mahabharata-aranyakaparva
+- стал есть  · n=1  · shukasaptati
+
+### `BakzitAH` — bhakṣitāḥ  (n=1)
+
+- сожранными  · n=1  · ramayana-aranyakanda
+
+### `BakzitAm` — bhakṣitām  (n=1)
+
+- съедена  · n=1  · ramayana-aranyakanda
+
+### `BakzitAyAm` — bhakṣitāyām  (n=1)
+
+- съедена  · n=1  · ramayana-aranyakanda
+
+### `Bakzita` — bhakṣita  (n=25)
+
+- съел  · n=4  · mahabharata-adiparva, ramayana-aranyakanda
+- съедено  · n=3  · mahabharata-adiparva, ramayana-aranyakanda, mahabharata-aranyakaparva
+- съеден  · n=3  · mahabharata-adiparva, mahabharata-udyogaparva
+- съедена  · n=3  · ramayana-sundarakanda, ramayana-aranyakanda, mahabharata-adiparva
+- пожирал  · n=2  · mahabharata-aranyakaparva
+- съедены  · n=2  · mahabharata-aranyakaparva, mahabharata-virataparva
+- съеденный  · n=1  · mahabharata-adiparva
+- выпит  · n=1  · ramayana-sundarakanda
+- пожрали  · n=1  · mahabharata-aranyakaparva
+- пожрал  · n=1  · mahabharata-adiparva
+- ел  · n=1  · shukasaptati
+- съела  · n=1  · shukasaptati
+- съели  · n=1  · shukasaptati
+- съеденное  · n=1  · sankhya-karika
+
+### `BakzitaH` — bhakṣitaḥ  (n=3)
+
+- съел  · n=2  · ramayana-aranyakanda
+- сожрут  · n=1  · shukasaptati
+
+### `BakzitaiH` — bhakṣitaiḥ  (n=1)
+
+- съеденными  · n=1  · mahabharata-adiparva
+
+### `Bakzitam` — bhakṣitam  (n=3)
+
+- съеден  · n=1  · mahabharata-adiparva
+- выпивший  · n=1  · ramayana-ayodhyakanda
+- съел  · n=1  · mahabharata-udyogaparva
+
+### `Bakzitau` — bhakṣitau  (n=1)
+
+- съедены  · n=1  · ramayana-aranyakanda
+
+### `BakzitavAn` — bhakṣitavān  (n=2)
+
+- отведает  · n=2  · kama-sutra
+
+### `BakzitavatI` — bhakṣitavatī  (n=1)
+
+- съела  · n=1  · shukasaptati
+
+### `Bakzitezu` — bhakṣiteṣu  (n=1)
+
+- проглочено  · n=1  · mahabharata-aranyakaparva
+
+### `Bakzo` — bhakṣo  (n=1)
+
+- глоток  · n=1  · rigveda
+
+### `BakzyABakzya` — bhakṣyābhakṣya  (n=2)
+
+- пища, дозволенная и недозволенная  · n=1  · manavadharmashastra
+- пище, разрешенной или запрещенной  · n=1  · manavadharmashastra
+
+### `BakzyAMS` — bhakṣyāṃś  (n=1)
+
+- яства  · n=1  · ramayana-sundarakanda
+
+### `BakzyARi` — bhakṣyāṇi  (n=2)
+
+- яства  · n=2  · ramayana-ayodhyakanda, mahabharata-virataparva
+
+### `BakzyAn` — bhakṣyān  (n=2)
+
+- пищей  · n=1  · mahabharata-adiparva
+- яства  · n=1  · mahabharata-shalyaparva
+
+### `Bakzya` — bhakṣya  (n=37)
+
+- пища  · n=4  · ramayana-sundarakanda, manavadharmashastra, mahabharata-adiparva, mahabharata-shalyaparva
+- едой  · n=3  · ramayana-aranyakanda, ramayana-balakanda
+- яствами  · n=3  · mahabharata-sabhaparva, mahabharata-ashvamedhikaparva
+- пищей  · n=2  · mahabharata-adiparva, ramayana-ayodhyakanda
+- вкусной  · n=2  · ramayana-ayodhyakanda, mahabharata-aranyakaparva
+- блюда  · n=2  · ramayana-sundarakanda, mahabharata-mausalaparva
+- пищу  · n=2  · mahabharata-shalyaparva, mahabharata-sabhaparva
+- поесть  · n=1  · mahabharata-adiparva
+- блюдами со сластями  · n=1  · ramayana-ayodhyakanda
+- ешь  · n=1  · ramayana-ayodhyakanda
+- еда  · n=1  · ramayana-sundarakanda
+- пища, требующая разжевывания  · n=1  · manavadharmashastra
+- дозволенный к употреблению в пищу  · n=1  · manavadharmashastra
+- пригодна для еды  · n=1  · manavadharmashastra
+- дозволенных для употребления в пищу  · n=1  · manavadharmashastra
+- съедобную  · n=1  · manavadharmashastra
+- корма  · n=1  · manavadharmashastra
+- угощение  · n=1  · manavadharmashastra
+- съестных продуктов  · n=1  · manavadharmashastra
+- сластями  · n=1  · ramayana-balakanda
+- кушанья  · n=1  · ramayana-balakanda
+- пищи  · n=1  · mahabharata-aranyakaparva
+- изысканные яства  · n=1  · kama-sutra
+- яства  · n=1  · mahabharata-bhishmaparva
+- еды  · n=1  · mahabharata-dronaparva
+- съедобной пищей  · n=1  · mahabharata-udyogaparva
+
+### `BakzyaBUtAH` — bhakṣyabhūtāḥ  (n=1)
+
+- обрекши себя на съедение  · n=1  · mahabharata-aranyakaparva
+
+### `BakzyaBojyADikArezu` — bhakṣyabhojyādhikāreṣu  (n=1)
+
+- наблюдать за съестным и (другими) приятными вещами  · n=1  · mahabharata-sabhaparva
+
+### `BakzyaBojya` — bhakṣyabhojya  (n=6)
+
+- яства, угощения  · n=1  · mahabharata-aranyakaparva
+- пропитание и корм  · n=1  · mahabharata-bhishmaparva
+- вкушаемого и поглощаемого  · n=1  · mahabharata-ashvamedhikaparva
+- яства и лакомства  · n=1  · mahabharata-sabhaparva
+- яства  · n=1  · mahabharata-ashramavasikaparva
+- яства и припасы  · n=1  · mahabharata-ashramavasikaparva
+
+### `BakzyaBojyam` — bhakṣyabhojyam  (n=1)
+
+- пища и яства  · n=1  · mahabharata-udyogaparva
+
+### `BakzyaBojyapratiSrayai` — bhakṣyabhojyapratiśrayai  (n=1)
+
+- яства, питье и постель  · n=1  · mahabharata-aranyakaparva
+
+### `BakzyaBojyopapanna` — bhakṣyabhojyopapanna  (n=1)
+
+- снабжены всевозможной едой и яствами  · n=1  · mahabharata-udyogaparva
+
+### `BakzyaH` — bhakṣyaḥ  (n=1)
+
+- съесть  · n=1  · ramayana-aranyakanda
+
+### `BakzyagfdDena` — bhakṣyagṛddhena  (n=1)
+
+- жаждущая еды  · n=1  · ramayana-sundarakanda
+
+### `BakzyairBojyaiScapeyaiSca` — bhakṣyairbhojyaiśca peyaiśca  (n=1)
+
+- вкусные и дорогие яства и питье  · n=1  · mahabharata-adiparva
+
+### `Bakzyam` — bhakṣyam  (n=1)
+
+- еда  · n=1  · ramayana-ayodhyakanda
+
+### `BakzyamARAH` — bhakṣyamāṇāḥ  (n=1)
+
+- пожирают  · n=1  · ramayana-aranyakanda
+
+### `BakzyamARAn` — bhakṣyamāṇān  (n=1)
+
+- терзали  · n=1  · mahabharata-striparva
+
+### `BakzyamARa` — bhakṣyamāṇa  (n=3)
+
+- наслаждаться  · n=1  · mahabharata-aranyakaparva
+- пожирать  · n=1  · mahabharata-aranyakaparva
+- терзают  · n=1  · mahabharata-striparva
+
+### `BakzyamARaH` — bhakṣyamāṇaḥ  (n=1)
+
+- готовых его поглотить  · n=1  · mahabharata-sauptikaparva
+
+### `BakzyamARasya` — bhakṣyamāṇasya  (n=1)
+
+- терзают  · n=1  · mahabharata-striparva
+
+### `BakzyamAlyApaRAnAm` — bhakṣyamālyāpaṇānām  (n=1)
+
+- торговых лавок со снедью и гирляндами  · n=1  · mahabharata-sabhaparva
+
+### `BakzyantAm` — bhakṣyantām  (n=1)
+
+- ест  · n=1  · ramayana-ayodhyakanda
+
+### `BakzyantaH` — bhakṣyantaḥ  (n=1)
+
+- поедая  · n=1  · ramayana-sundarakanda
+
+### `Bakzyante` — bhakṣyante  (n=1)
+
+- пожирают  · n=1  · buddhacharita
+
+### `Bakzyanti` — bhakṣyanti  (n=2)
+
+- едят  · n=1  · ramayana-sundarakanda
+- продолжали есть  · n=1  · ramayana-sundarakanda
+
+### `Bakzyapeyasya` — bhakṣyapeyasya  (n=1)
+
+- пищи и воды  · n=1  · mahabharata-shalyaparva
+
+### `BakzyatAm` — bhakṣyatām  (n=2)
+
+- съесть  · n=1  · ramayana-sundarakanda
+- кушайте  · n=1  · mahabharata-adiparva
+
+### `Bakzyate` — bhakṣyate  (n=2)
+
+- разоряют  · n=1  · ramayana-sundarakanda
+- клюют  · n=1  · mahabharata-striparva
+
+### `BakzyavikArAn` — bhakṣyavikārān  (n=1)
+
+- перемены блюд  · n=1  · mahabharata-ashramavasikaparva
+
+### `BakzyottamapraticCanna` — bhakṣyottamapraticchanna  (n=1)
+
+- скрытый в отличнейшей приманке  · n=1  · mahabharata-udyogaparva
+
+### `BalAna` — bhalāna  (n=1)
+
+- бхалана  · n=1  · rigveda
+
+### `BalAnasa` — bhalānasa  (n=1)
+
+- бхалана  · n=1  · rigveda
+
+### `Bala` — bhala  (n=1)
+
+- наконец  · n=1  · atharvaveda
+
+### `BallA` — bhallā  (n=4)
+
+- стрелами бхалла  · n=1  · mahabharata-bhishmaparva
+- стрела с серповидным острием  · n=1  · mahabharata-dronaparva
+- бхаллами  · n=1  · mahabharata-karnaparva
+- стрела с наконечником-лезвием  · n=1  · raghuvamsha
+
+### `BallAByAm` — bhallābhyām  (n=8)
+
+- двумя стрелами с серповидным острием  · n=4  · mahabharata-dronaparva
+- двумя стрелами бхалла  · n=1  · mahabharata-bhishmaparva
+- двумя стрелами с серповидным наконечником  · n=1  · mahabharata-dronaparva
+- двумя широко заостренными стрелами  · n=1  · mahabharata-dronaparva
+- широколезвийных стрел  · n=1  · mahabharata-karnaparva
+
+### `BallAH` — bhallāḥ  (n=1)
+
+- такими же стрелами  · n=1  · mahabharata-virataparva
+
+### `BallAkza` — bhallākṣa  (n=2)
+
+- Добрый глаз  · n=2  · ch-up
+
+### `BallAn` — bhallān  (n=6)
+
+- стрел бхалла  · n=3  · mahabharata-bhishmaparva
+- стрелы бхалла  · n=1  · mahabharata-bhishmaparva
+- стрелы с серповидным острием  · n=1  · mahabharata-dronaparva
+- бхаллами  · n=1  · mahabharata-karnaparva
+
+### `BallAtakAn` — bhallātakān  (n=1)
+
+- ореховые деревья  · n=1  · mahabharata-aranyakaparva
+
+### `BallAtaka` — bhallātaka  (n=5)
+
+- бхаллатака  · n=2  · mahabharata-aranyakaparva, kama-sutra
+- бхаллатаку  · n=1  · ramayana-ayodhyakanda
+- Бхаллатака  · n=1  · ramayana-ayodhyakanda
+- бхаллатаки  · n=1  · kama-sutra
+
+### `Balla` — bhalla  (n=46)
+
+- стрелою бхалла  · n=6  · mahabharata-bhishmaparva
+- бхаллами  · n=5  · mahabharata-karnaparva, mahabharata-aranyakaparva, mahabharata-dronaparva, mahabharata-ashvamedhikaparva
+- стрелою с серповидным острием  · n=4  · mahabharata-dronaparva, mahabharata-udyogaparva
+- стрелами с серповидным острием  · n=3  · mahabharata-dronaparva
+- бхалла  · n=2  · mahabharata-bhishmaparva
+- стрела с серповидным наконечником  · n=2  · mahabharata-dronaparva
+- стрела с серповидным острием  · n=2  · mahabharata-dronaparva, mahabharata-shalyaparva
+- с серповидным острием  · n=2  · mahabharata-dronaparva
+- стрела бхалла  · n=2  · mahabharata-bhishmaparva, mahabharata-karnaparva
+- стрелами  · n=2  · mahabharata-karnaparva
+- бхаллой  · n=2  · mahabharata-karnaparva
+- стрелы  · n=1  · mahabharata-aranyakaparva
+- стрелами бхалла  · n=1  · mahabharata-bhishmaparva
+- стрелами с серповидным наконечником  · n=1  · mahabharata-dronaparva
+- стрелу с серповидным острием  · n=1  · mahabharata-dronaparva
+- стрелой с серповидным острием  · n=1  · mahabharata-dronaparva
+- серповидными  · n=1  · mahabharata-karnaparva
+- широколезвийными  · n=1  · mahabharata-karnaparva
+- широколезвийная стрела  · n=1  · mahabharata-karnaparva
+- широколезвийной стрелой  · n=1  · mahabharata-karnaparva
+- бхалл  · n=1  · mahabharata-karnaparva
+- широколезвийными стрелами  · n=1  · mahabharata-karnaparva
+- стрела с широким наконечником  · n=1  · mahabharata-shalyaparva
+- стрелы, заостренные в виде полумесяца  · n=1  · mahabharata-virataparva
+- стрел  · n=1  · mahabharata-virataparva
+
+### `Ballai` — bhallai  (n=2)
+
+- широколезвийными  · n=1  · mahabharata-karnaparva
+- стрелами с широкими наконечниками  · n=1  · mahabharata-shalyaparva
+
+### `BallaiH` — bhallaiḥ  (n=42)
+
+- стрелами с серповидным острием  · n=9  · mahabharata-dronaparva
+- широколезвийными стрелами  · n=8  · mahabharata-karnaparva
+- стрелами  · n=5  · mahabharata-aranyakaparva, mahabharata-udyogaparva, mahabharata-karnaparva, mahabharata-ashvamedhikaparva
+- бхаллами  · n=5  · mahabharata-karnaparva, mahabharata-aranyakaparva
+- стрелами бхалла  · n=4  · mahabharata-bhishmaparva
+- стрелами с серповидными остриями  · n=2  · mahabharata-dronaparva
+- широко заостренными стрелами  · n=1  · mahabharata-dronaparva
+- стрелами с серповидными наконечниками  · n=1  · mahabharata-dronaparva
+- прямыми стрелами с серповидным острием  · n=1  · mahabharata-dronaparva
+- стрелами с серпообразным острием  · n=1  · mahabharata-dronaparva
+- Бхаллами  · n=1  · mahabharata-karnaparva
+- бхалл  · n=1  · mahabharata-karnaparva
+- стрелами с широким острием  · n=1  · mahabharata-shalyaparva
+- стрелой с широким острием  · n=1  · mahabharata-shalyaparva
+- стрелами с серпообразными остриями  · n=1  · mahabharata-virataparva
+
+### `BallaiHsusaMyataiH` — bhallaiḥ susaṃyataiḥ  (n=1)
+
+- хорошо пущенными стрелами с широкими остриями  · n=1  · mahabharata-shalyaparva
+
+### `BallaistriBiryugapatsaYcakarta` — bhallaistribhiryugapatsañcakarta  (n=1)
+
+- тремя стрелами с серповидным острием одновременно рассек  · n=1  · mahabharata-shalyaparva
+
+### `Ballaistu` — bhallaistu  (n=1)
+
+- стрелами в виде полумесяца  · n=1  · mahabharata-virataparva
+
+### `Ballam` — bhallam  (n=2)
+
+- стрелу с серповидным острием  · n=1  · mahabharata-dronaparva
+- стрелу с наконечником в виде полумесяца  · n=1  · mahabharata-udyogaparva
+
+### `BallanikfttakaRWaiH` — bhallanikṛttakaṇṭhaiḥ  (n=2)
+
+- отсеченные крестообразными стрелами  · n=2  · raghuvamsha
+
+### `BallenA` — bhallenā  (n=1)
+
+- стрелою с широким наконечником  · n=1  · mahabharata-shalyaparva
+
+### `BallenApAharacCiraH` — bhallenāpāharacchiraḥ  (n=1)
+
+- снес стрелою с серповидным острием голову  · n=1  · mahabharata-shalyaparva
+
+### `Ballena` — bhallena  (n=66)
+
+- стрелою с серповидным острием  · n=20  · mahabharata-dronaparva, mahabharata-shalyaparva
+- стрелой с серповидным острием  · n=10  · mahabharata-dronaparva
+- стрелою с широким острием  · n=5  · mahabharata-shalyaparva
+- стрелою бхалла  · n=4  · mahabharata-bhishmaparva
+- широколезвийной стрелою  · n=4  · mahabharata-karnaparva, mahabharata-striparva
+- широколезвийной стрелой  · n=4  · mahabharata-karnaparva
+- стрелой  · n=3  · mahabharata-virataparva, mahabharata-adiparva
+- стрелою с серповидным наконечником  · n=2  · mahabharata-dronaparva
+- бхаллой  · n=2  · mahabharata-karnaparva
+- бхаллою  · n=2  · mahabharata-karnaparva
+- стрелою с широким наконечником  · n=1  · mahabharata-dronaparva
+- с серповидным острием  · n=1  · mahabharata-dronaparva
+- стрелою бхаллой  · n=1  · mahabharata-bhishmaparva
+- стрелою с острым серповидным наконечником  · n=1  · mahabharata-dronaparva
+- бхалла  · n=1  · mahabharata-karnaparva
+- Широколезвийной стрелой  · n=1  · mahabharata-karnaparva
+- стрелой с широким наконечником  · n=1  · mahabharata-shalyaparva
+- серповидным дротиком  · n=1  · mahabharata-virataparva
+- стрелой в виде полумесяца  · n=1  · mahabharata-virataparva
+- стрелою с серпообразным острием  · n=1  · mahabharata-virataparva
+
+### `BallenasarvAvaraRAtigena` — bhallena sarvāvaraṇātigena  (n=1)
+
+- способной пробивать любые доспехи  · n=1  · mahabharata-shalyaparva
+
+### `Bam` — bham  (n=2)
+
+- созвездие  · n=1  · buddhacharita
+- Махападма  · n=1  · buddhacharita
+
+### `BaminI` — bhaminī  (n=1)
+
+- прекрасная  · n=1  · ramayana-sundarakanda
+
+### `BanDa` — bhandha  (n=1)
+
+- западню  · n=1  · raghuvamsha
+
+### `Banakti` — bhanakti  (n=2)
+
+- разбивает  · n=1  · rigveda
+- ломает  · n=1  · atharvaveda
+
+### `Bananti` — bhananti  (n=2)
+
+- говорят  · n=1  · rigveda
+- Говорят  · n=1  · rigveda
+
+### `Banati` — bhanati  (n=1)
+
+- исполняет  · n=1  · rigveda
+
+### `Bandadizwaye` — bhandadiṣṭaye  (n=1)
+
+- вызывающей хвалу  · n=1  · rigveda
+
+### `Bandadizwi` — bhandadiṣṭi-  (n=1)
+
+- вызывающей хвалу  · n=1  · rigveda
+
+### `BandamAna` — bhandamāna  (n=2)
+
+- Радостно прославляемые  · n=1  · rigveda
+- приветствуемый  · n=1  · rigveda
+
+### `BandamAne` — bhandamāne  (n=1)
+
+- Восхваляемые  · n=1  · rigveda
+
+### `BandanA` — bhandanā  (n=3)
+
+- славным свершениям  · n=2  · rigveda
+- что приносит счастье  · n=1  · rigveda
+
+### `BandanAyata` — bhandanāyata  (n=2)
+
+- ликующих  · n=2  · rigveda
+
+### `Bandate` — bhandate  (n=1)
+
+- восхваляется  · n=1  · rigveda
+
+### `BandizWa` — bhandiṣṭha  (n=5)
+
+- больше всех радующегося  · n=2  · rigveda
+- самый ликующий  · n=2  · atharvaveda
+- самый знаменитый  · n=1  · rigveda
+
+### `Bar` — bhar  (n=22)
+
+- принеси  · n=3  · rigveda, rigveda
+- Принесите  · n=2  · rigveda, rigveda
+- принесет  · n=2  · rigveda, rigveda
+- Неся  · n=2  · rigveda
+- в битве  · n=2  · rigveda, rigveda
+- принес  · n=2  · rigveda
+- создали  · n=1  · rigveda
+- Несите  · n=1  · rigveda
+- несущие  · n=1  · rigveda
+- вскормила  · n=1  · mahabharata-adiparva
+- несет  · n=1  · rigveda
+- приносит  · n=1  · rigveda
+- носит  · n=1  · atharvaveda
+- носят  · n=1  · atharvaveda
+- приношу  · n=1  · atharvaveda
+
+### `BarA` — bharā  (n=19)
+
+- принеси  · n=11  · rigveda, rigveda, rigveda, rigveda, rigveda
+- Принеси  · n=4  · rigveda, rigveda, rigveda, rigveda
+- приношу  · n=2  · rigveda
+- приноси  · n=1  · rigveda
+- Поднеси  · n=1  · rigveda
+
+### `BarARAm` — bharāṇām  (n=1)
+
+- сражений  · n=1  · rigveda
+
+### `BarAma` — bharāma  (n=1)
+
+- будем приносить  · n=1  · rigveda
+
+### `BarAmahe` — bharāmahe  (n=5)
+
+- приносим  · n=2  · rigveda, rigveda
+- возносим  · n=1  · rigveda
+- сохраняем  · n=1  · rigveda
+- проносим  · n=1  · rigveda
+
+### `BarAmasi` — bharāmasi  (n=2)
+
+- приносим  · n=1  · rigveda
+- несем  · n=1  · atharvaveda
+
+### `BarAmi` — bharāmi  (n=6)
+
+- проношу  · n=2  · atharvaveda, atharvaveda
+- поднимаю  · n=2  · atharvaveda
+- Я приношу  · n=1  · rigveda
+- возношу  · n=1  · rigveda
+
+### `BarAmoda` — bharāmoda  (n=1)
+
+- аромат  · n=1  · shatakatrayam-serebryakov
+
+### `BarAsaH` — bharāsaḥ  (n=2)
+
+- наградам  · n=2  · rigveda
+
+### `BarAt` — bharāt  (n=1)
+
+- приносит  · n=1  · rigveda
+
+### `BarAti` — bharāti  (n=2)
+
+- приведет  · n=1  · rigveda
+- хочет наслать  · n=1  · rigveda
+
+### `BarAya` — bharāya  (n=14)
+
+- для приношения  · n=4  · rigveda, rigveda
+- для добычи  · n=2  · rigveda, rigveda
+- для нас  · n=1  · rigveda
+- ставку (в игре)  · n=1  · rigveda
+- ставки  · n=1  · rigveda
+- для борьбы  · n=1  · rigveda
+- получения награды  · n=1  · rigveda
+- сражения  · n=1  · rigveda
+- для захвата  · n=1  · rigveda
+- чтобы ты несла  · n=1  · atharvaveda
+
+### `BarImaBiH` — bharīmabhiḥ  (n=2)
+
+- поддержками  · n=2  · rigveda
+
+### `BarIman` — bharīman  (n=1)
+
+- питанием  · n=1  · rigveda
+
+### `BarUji` — bharūji  (n=2)
+
+- Бхаруджи  · n=2  · atharvaveda
+
+### `Bara` — bhara  (n=99)
+
+- принеси  · n=39  · rigveda, rigveda, rigveda, rigveda, rigveda, rigveda, rigveda, rigveda, rigveda, rigveda, atharvaveda, atharvaveda, atharvaveda
+- Принеси  · n=22  · rigveda, rigveda, rigveda, atharvaveda, atharvaveda
+- тяжесть  · n=3  · shatakatrayam, shatakatrayam-serebryakov, gitagovinda
+- успех  · n=2  · rigveda
+- принесите  · n=2  · rigveda
+- захват  · n=2  · rigveda
+- поддержишь  · n=1  · ramayana-ayodhyakanda
+- возьми  · n=1  · mahabharata-aranyakaparva
+- Подай  · n=1  · rigveda
+- даруй  · n=1  · rigveda
+- Вынь  · n=1  · rigveda
+- приноси  · n=1  · rigveda
+- добычи  · n=1  · rigveda
+- принесли  · n=1  · rigveda
+- поднеси  · n=1  · rigveda
+- Поднеси  · n=1  · rigveda
+- захвате добычи  · n=1  · rigveda
+- не вкладывает значение  · n=1  · gitarthasamgraha-abhinavagupta
+- привези  · n=1  · rigveda
+- битве  · n=1  · rigveda
+- Несите  · n=1  · rigveda
+- несите  · n=1  · rigveda
+- тяжелыми  · n=1  · shatakatrayam
+- тяжести  · n=1  · shatakatrayam-serebryakov
+- тяжестью  · n=1  · gitagovinda
+- бременем  · n=1  · gitagovinda
+- покрыто  · n=1  · gitagovinda
+- несущая  · n=1  · gitagovinda
+- плотным  · n=1  · gitagovinda
+- бремени  · n=1  · gitagovinda
+- великой  · n=1  · gitagovinda
+- ношу  · n=1  · gitagovinda
+- пронеси  · n=1  · atharvaveda
+- тяжких  · n=1  · amaru-shataka
+- избытка  · n=1  · paramarthasara-abhinavagupta
+
+### `BaraDvam` — bharadhvam  (n=10)
+
+- Принесите  · n=6  · rigveda, rigveda, rigveda
+- принесите  · n=3  · rigveda, rigveda, rigveda
+- исполните  · n=1  · rigveda
+
+### `BaraDve` — bharadhve  (n=1)
+
+- несетесь  · n=1  · rigveda
+
+### `BaraDyai` — bharadhyai  (n=2)
+
+- для вынашивания  · n=1  · rigveda
+- носить  · n=1  · rigveda
+
+### `BaraH` — bharaḥ  (n=2)
+
+- отделил  · n=2  · rigveda
+
+### `BaraRI` — bharaṇī  (n=2)
+
+- Бхарани  · n=2  · atharvaveda
+
+### `BaraRIya` — bharaṇīya  (n=1)
+
+- заслуживают помощи  · n=1  · mahabharata-udyogaparva
+
+### `BaraRIye` — bharaṇīye  (n=1)
+
+- обладаемы  · n=1  · mahabharata-adiparva
+
+### `BaraRa` — bharaṇa  (n=9)
+
+- заботиться  · n=1  · ramayana-ayodhyakanda
+- защитят  · n=1  · ramayana-ayodhyakanda
+- содержанием  · n=1  · ramayana-ayodhyakanda
+- прокормить  · n=1  · mahabharata-aranyakaparva
+- питать  · n=1  · mahabharata-aranyakaparva
+- пропитание  · n=1  · kama-sutra
+- содержание  · n=1  · mahabharata-virataparva
+- нанося  · n=1  · gitagovinda
+- поддержки  · n=1  · gitartha-samgraha_yamunacharya
+
+### `BaraRam` — bharaṇam  (n=1)
+
+- Предоставляешь  · n=1  · ramayana-ayodhyakanda
+
+### `BaraRe` — bharaṇe  (n=2)
+
+- вынашиванием  · n=2  · rigveda
+
+### `BaraTa` — bharatha  (n=1)
+
+- поднимаете  · n=1  · rigveda
+
+### `BaraTaH` — bharathaḥ  (n=2)
+
+- вы приносите  · n=1  · rigveda
+- приносите  · n=1  · rigveda
+
+### `BaraTo` — bharatho  (n=1)
+
+- приносите  · n=1  · rigveda
+
+### `Barac` — bharac  (n=4)
+
+- Унес  · n=2  · rigveda
+- борьба за колесо  · n=1  · rigveda
+- унес  · n=1  · rigveda
+
+### `Barad` — bharad  (n=3)
+
+- принес  · n=1  · rigveda
+- приносит  · n=1  · rigveda
+- отсек  · n=1  · rigveda
+
+### `BaradvAjA` — bharadvājā  (n=1)
+
+- Бхарадваджа  · n=1  · rigveda
+
+### `BaradvAjABigamana` — bharadvājābhigamana  (n=1)
+
+- встрече Рамы в Праяге С мудрецом Бхарадваджей  · n=1  · ramayana-ayodhyakanda
+
+### `BaradvAjASrama` — bharadvājāśrama  (n=3)
+
+- обители Бхарадваджи  · n=3  · ramayana-ayodhyakanda, ramayana-balakanda
+
+### `BaradvAjAtmaja` — bharadvājātmaja  (n=1)
+
+- сын Бхарадваджи  · n=1  · mahabharata-bhishmaparva
+
+### `BaradvAjAtmajaH` — bharadvājātmajaḥ  (n=1)
+
+- сын Бхарадваджи  · n=1  · mahabharata-bhishmaparva
+
+### `BaradvAjAya` — bharadvājāya  (n=7)
+
+- Бхарадвадже  · n=2  · rigveda
+- Бхарадваджа  · n=2  · rigveda
+- Бхарадваджи  · n=2  · rigveda
+- на Бхарадваджу  · n=1  · rigveda
+
+### `BaradvAja` — bharadvāja  (n=66)
+
+- Бхарадваджа  · n=29  · ramayana-ayodhyakanda, mahabharata-aranyakaparva, mahabharata-adiparva, ramayana-balakanda, mahabharata-virataparva, manavadharmashastra, rigveda, rigveda, atharvaveda, atharvaveda, atharvaveda
+- Бхарадваджи  · n=20  · ramayana-ayodhyakanda, mahabharata-adiparva, ramayana-balakanda, mahabharata-aranyakaparva, rigveda, mahabharata-udyogaparva, rigveda, mahabharata-shalyaparva
+- Бхарадваджей  · n=6  · ramayana-ayodhyakanda, ramayana-balakanda, rigveda
+- бхарадваджа  · n=2  · ramayana-ayodhyakanda
+- Бхарадвадже  · n=2  · ramayana-ayodhyakanda, rigveda
+- Бхарадваджу  · n=2  · buddhacharita, atharvaveda
+- обители  · n=1  · ramayana-ayodhyakanda
+- мудрец  · n=1  · ramayana-ayodhyakanda
+- мудреца  · n=1  · ramayana-ayodhyakanda
+- сыном Бхарадваджи  · n=1  · mahabharata-dronaparva
+- Бхарадваи  · n=1  · bhagavadgita-1914
+
+### `BaradvAjaH` — bharadvājaḥ  (n=13)
+
+- Бхарадваджа  · n=13  · ramayana-ayodhyakanda, mahabharata-aranyakaparva, mahabharata-bhishmaparva, br-up, mahabharata-adiparva
+
+### `BaradvAjam` — bharadvājam  (n=8)
+
+- Бхарадваджу  · n=4  · ramayana-ayodhyakanda, rigveda
+- Бхарадваджа  · n=2  · rigveda, rigveda
+- Бхарадваджей  · n=1  · ramayana-ayodhyakanda
+- Бхарадвадже  · n=1  · rigveda
+
+### `BaradvAjasya` — bharadvājasya  (n=3)
+
+- Бхарадваджи  · n=2  · ramayana-ayodhyakanda, mahabharata-aranyakaparva
+- У Бхарадваджи  · n=1  · mahabharata-adiparva
+
+### `BaradvAjau` — bharadvājau  (n=1)
+
+- Бхарадваджа  · n=1  · mahabharata-ashvamedhikaparva
+
+### `BaradvAjavat` — bharadvājavat  (n=1)
+
+- подобно Бхарадвадже  · n=1  · rigveda
+
+### `BaradvAje` — bharadvāje  (n=3)
+
+- у Бхарадваджи  · n=2  · rigveda
+- Бхарадваджа  · n=1  · rigveda
+
+### `BaradvAjezu` — bharadvājeṣu  (n=6)
+
+- у людей из рода Бхарадваджа  · n=2  · rigveda
+- Бхарадваджи  · n=1  · rigveda
+- У Бхарадваджей  · n=1  · rigveda
+- у Бхарадваджей  · n=1  · rigveda
+- среди Бхарадваджей  · n=1  · rigveda
+
+### `BaradvAjo` — bharadvājo  (n=1)
+
+- Бхарадваджа  · n=1  · rigveda
+
+### `Baradvasu` — bharadvasu  (n=1)
+
+- принося добро  · n=1  · rigveda
+
+### `Baragatva` — bharagatva  (n=1)
+
+- бха-ра-га  · n=1  · mai-up
+
+### `BarahUtau` — bharahūtau  (n=1)
+
+- при шуме битвы  · n=1  · rigveda
+
+### `BarahUtaye` — bharahūtaye  (n=2)
+
+- для зова на бой  · n=1  · rigveda
+- на воинственный клич  · n=1  · rigveda
+
+### `Baram` — bharam  (n=4)
+
+- изобилию  · n=2  · rigveda
+- добычу  · n=2  · rigveda
+
+### `BaramARA` — bharamāṇā  (n=2)
+
+- Приносимые  · n=2  · rigveda
+
+### `BaramARAH` — bharamāṇāḥ  (n=1)
+
+- неся  · n=1  · atharvaveda
+
+### `BaramARa` — bharamāṇa  (n=5)
+
+- несущий  · n=2  · rigveda
+- приносящего  · n=1  · rigveda
+- приобретая  · n=1  · rigveda
+- принося (дары)  · n=1  · rigveda
+
+### `Baran` — bharan  (n=2)
+
+- Понес  · n=1  · rigveda
+- вывезли  · n=1  · atharvaveda
+
+### `Barant` — bharant  (n=1)
+
+- несущие  · n=1  · rigveda
+
+### `BarantAm` — bharantām  (n=1)
+
+- пусть унесут  · n=1  · atharvaveda
+
+### `BarantI` — bharantī  (n=4)
+
+- несущая  · n=2  · rigveda, atharvaveda
+- неся  · n=1  · rigveda
+- Неся  · n=1  · rigveda
+
+### `BarantIH` — bharantīḥ  (n=2)
+
+- неся  · n=1  · rigveda
+- Неся  · n=1  · rigveda
+
+### `Baranta` — bharanta  (n=3)
+
+- несут  · n=1  · rigveda
+- Приносят  · n=1  · rigveda
+- преподносятся  · n=1  · rigveda
+
+### `Barantam` — bharantam  (n=2)
+
+- носящего  · n=2  · atharvaveda
+
+### `Barante` — bharante  (n=5)
+
+- распределяют  · n=2  · rigveda
+- несут  · n=1  · rigveda
+- исполняют  · n=1  · rigveda
+- приносят  · n=1  · rigveda
+
+### `Baranti` — bharanti  (n=9)
+
+- приносят  · n=4  · rigveda, rigveda, atharvaveda
+- несут  · n=2  · rigveda
+- Несут  · n=1  · rigveda
+- Приносят  · n=1  · rigveda
+- подносят  · n=1  · rigveda
+
+### `Barantu` — bharantu  (n=1)
+
+- поднимут  · n=1  · atharvaveda
+
+### `Baranty` — bharanty  (n=2)
+
+- несущая  · n=2  · rigveda
+
+### `BarapariKinna` — bharaparikhinna  (n=1)
+
+- изнемогающей под тяжестью  · n=1  · shatakatrayam-serebryakov
+
+### `Baras` — bharas  (n=5)
+
+- сияние  · n=3  · mai-up
+- поддерживаешь  · n=1  · mahabharata-adiparva
+- поддерживанием  · n=1  · atharvaveda
+
+### `Barasaha` — bharasaha  (n=1)
+
+- вместить  · n=1  · shatakatrayam
+
+### `Barasaham` — bharasaham  (n=1)
+
+- могуче  · n=1  · shatakatrayam-serebryakov
+
+### `Barase` — bharase  (n=1)
+
+- заботишься  · n=1  · rigveda
+
+### `Barasva` — bharasva  (n=4)
+
+- принеси  · n=2  · rigveda, atharvaveda
+- Вознеси  · n=1  · rigveda
+- воспитай  · n=1  · mahabharata-adiparva
+
+### `Barasya` — bharasya  (n=1)
+
+- принесенного в жертву  · n=1  · mahabharata-aranyakaparva
+
+### `Barat` — bharat  (n=6)
+
+- сохраняет  · n=2  · rigveda
+- держит  · n=1  · rigveda
+- носит  · n=1  · rigveda
+- нес  · n=1  · rigveda
+- принес  · n=1  · rigveda
+
+### `BaratA` — bharatā  (n=5)
+
+- Бхараты  · n=2  · rigveda, rigveda
+- бхараты  · n=1  · rigveda
+- принесите  · n=1  · rigveda
+- бхаратов  · n=1  · mahabharata-shalyaparva
+
+### `BaratAH` — bharatāḥ  (n=6)
+
+- Бхараты  · n=3  · mahabharata-dronaparva, mahabharata-udyogaparva, mahabharata-sabhaparva
+- бхараты  · n=2  · mahabharata-karnaparva, mahabharata-udyogaparva
+- род бхаратов  · n=1  · mahabharata-udyogaparva
+
+### `BaratAM` — bharatāṃ  (n=1)
+
+- бхаратами  · n=1  · mahabharata-sabhaparva
+
+### `BaratAdBUya` — bharatādbhūya  (n=1)
+
+- больше, чем Бхарата  · n=1  · ramayana-ayodhyakanda
+
+### `BaratAdInAM` — bharatādīnāṃ  (n=1)
+
+- начиная с Бхараты  · n=1  · ramayana-sundarakanda
+
+### `BaratAgamana` — bharatāgamana  (n=1)
+
+- нового посещения Бхараты  · n=1  · raghuvamsha
+
+### `BaratAgraja` — bharatāgraja  (n=10)
+
+- старший брат Бхараты  · n=6  · ramayana-ayodhyakanda, ramayana-sundarakanda, ramayana-balakanda
+- Старший брат Бхараты  · n=2  · ramayana-ayodhyakanda, ramayana-balakanda
+- старшего брата  · n=1  · raghuvamsha
+- старшего брата Бхараты  · n=1  · raghuvamsha
+
+### `BaratAgrajaH` — bharatāgrajaḥ  (n=1)
+
+- старший брат Бхараты  · n=1  · raghuvamsha
+
+### `BaratAm` — bharatām  (n=4)
+
+- пусть унесут  · n=2  · rigveda
+- пусть принесут  · n=1  · rigveda
+- принесут  · n=1  · atharvaveda
+
+### `BaratAn` — bharatān  (n=2)
+
+- с бхаратами  · n=1  · mahabharata-aranyakaparva
+- бхаратов  · n=1  · mahabharata-karnaparva
+
+### `BaratAnAM` — bharatānāṃ  (n=5)
+
+- бхаратов  · n=4  · mahabharata-bhishmaparva, mahabharata-ashvamedhikaparva
+- потомков Бхараты  · n=1  · mahabharata-adiparva
+
+### `BaratAnAMpitAmaha` — bharatānāṃ pitāmaha  (n=2)
+
+- прародителя бхаратов  · n=2  · mahabharata-bhishmaparva
+
+### `BaratAnAm` — bharatānām  (n=5)
+
+- бхаратов  · n=5  · mahabharata-virataparva, mahabharata-aranyakaparva, mahabharata-bhishmaparva, mahabharata-dronaparva
+
+### `BaratAnAmamaDyamam` — bharatānāmamadhyamam  (n=1)
+
+- незаурядного среди Бхаратов  · n=1  · mahabharata-dronaparva
+
+### `BaratAnuga` — bharatānuga  (n=1)
+
+- последовавшего за Бхаратой  · n=1  · raghuvamsha
+
+### `BaratAnuja` — bharatānuja  (n=2)
+
+- младший брат Бхараты  · n=2  · ramayana-ayodhyakanda
+
+### `BaratAt` — bharatāt  (n=1)
+
+- от Бхараты  · n=1  · mahabharata-adiparva
+
+### `BaratAya` — bharatāya  (n=8)
+
+- Бхарате  · n=7  · ramayana-ayodhyakanda, mahabharata-aranyakaparva
+- Бхарату  · n=1  · ramayana-ayodhyakanda
+
+### `BaratI` — bharatī  (n=1)
+
+- Бхарати  · n=1  · mahabharata-aranyakaparva
+
+### `Barata` — bharata  (n=317)
+
+- Бхарата  · n=161  · ramayana-ayodhyakanda, mahabharata-adiparva, mahabharata-aranyakaparva, ramayana-balakanda, raghuvamsha, ramayana-sundarakanda, ramayana-aranyakanda, mahabharata-ashvamedhikaparva, mahabharata-sabhaparva, rigveda, mahabharata-svargarohanikaparva, mahabharata-dronaparva, mahabharata-udyogaparva, rigveda, mahabharata-shalyaparva, mahabharata-virataparva, mai-up
+- Бхараты  · n=46  · ramayana-ayodhyakanda, mahabharata-adiparva, ramayana-balakanda, ramayana-aranyakanda, mahabharata-ashramavasikaparva, mahabharata-aranyakaparva, mahabharata-dronaparva, mahabharata-udyogaparva, rigveda, mahabharata-shalyaparva, mahabharata-ashvamedhikaparva, raghuvamsha, mahabharata-virataparva, mahabharata-shantiparva
+- Бхарату  · n=32  · ramayana-ayodhyakanda, ramayana-aranyakanda, ramayana-balakanda, mahabharata-aranyakaparva, raghuvamsha
+- Бхарате  · n=25  · ramayana-ayodhyakanda, ramayana-balakanda, ramayana-aranyakanda, mahabharata-udyogaparva, rigveda, raghuvamsha
+- Бхаратой  · n=14  · ramayana-ayodhyakanda, ramayana-balakanda, mahabharata-aranyakaparva, ramayana-aranyakanda
+- бхаратов  · n=9  · mahabharata-bhishmaparva, mahabharata-aranyakaparva, mahabharata-dronaparva, mahabharata-udyogaparva, mahabharata-sabhaparva
+- бхарата  · n=3  · ramayana-ayodhyakanda, mahabharata-striparva
+- принесите  · n=3  · rigveda, rigveda, rigveda
+- бхараты  · n=3  · mahabharata-dronaparva, mahabharata-karnaparva, mahabharata-sabhaparva
+- передала  · n=2  · rigveda
+- вознесите  · n=2  · rigveda
+- бхаратам  · n=2  · mahabharata-udyogaparva, mahabharata-sabhaparva
+- внука  · n=1  · ramayana-ayodhyakanda
+- братья  · n=1  · ramayana-ayodhyakanda
+- брата Рамы  · n=1  · ramayana-ayodhyakanda
+- царевичу  · n=1  · ramayana-ayodhyakanda
+- ты  · n=1  · ramayana-ayodhyakanda
+- податель даров  · n=1  · ramayana-ayodhyakanda
+- бык среди бхаратов  · n=1  · mahabharata-aranyakaparva
+- издавайте  · n=1  · rigveda
+- взмахивает  · n=1  · rigveda
+- потомков Бхараты  · n=1  · mahabharata-adiparva
+- предложите  · n=1  · rigveda
+- Бхаратъ  · n=1  · bhagavadgita-1909
+- бхаратовъ  · n=1  · bhagavadgita-1909
+- Принесите  · n=1  · rigveda
+- Поднесите  · n=1  · rigveda
+
+### `Barata-SrezWa` — bharata-śreṣṭha  (n=3)
+
+- лучший из Бхарат  · n=1  · bhagavadgita-1914
+- Бхарата  · n=1  · bhagavadgita-1909
+- о лучший из потомков Бхараты  · n=1  · bhagavadgita-radha
+
+### `Barata-agraja` — bharata-agraja  (n=1)
+
+- старший брат Бхараты  · n=1  · ramayana-ayodhyakanda
+
+### `Barata-fzaBa` — bharata-ṛṣabha  (n=4)
+
+- о лучший из потомков Бхараты  · n=2  · bhagavadgita-radha
+- предводитель рода Бхараты  · n=1  · bhagavadgita-prabhupada
+- человек  · n=1  · bhagavadgita-prabhupada
+
+### `Barata-sat-tama` — bharata-sat-tama  (n=1)
+
+- о лучший из Бхарат  · n=1  · bhagavadgita-radha
+
+### `Barata-sattama` — bharata-sattama  (n=3)
+
+- лучший из Бхаратов  · n=2  · bhagavadgita-1914, bhagavadgity
+- о налучший из потомков Бхараты  · n=1  · bhagavadgita-burba
+
+### `BarataH` — bharataḥ  (n=91)
+
+- Бхарата  · n=78  · ramayana-ayodhyakanda, mahabharata-aranyakaparva, rigveda, ramayana-aranyakanda, ramayana-balakanda, mahabharata-adiparva
+- Бхарате  · n=6  · ramayana-ayodhyakanda
+- Бхараты  · n=4  · ramayana-ayodhyakanda
+- Бхарату  · n=2  · ramayana-ayodhyakanda
+- он  · n=1  · ramayana-ayodhyakanda
+
+### `BarataM` — bharataṃ  (n=4)
+
+- Бхарату  · n=3  · ramayana-ayodhyakanda, ramayana-balakanda, mahabharata-aranyakaparva
+- Бхарате  · n=1  · ramayana-balakanda
+
+### `BarataSArdUla` — bharataśārdūla  (n=8)
+
+- тигр из рода Бхараты  · n=4  · mahabharata-adiparva, mahabharata-dronaparva, mahabharata-shalyaparva, mahabharata-sabhaparva
+- тигр среди бхаратов  · n=2  · mahabharata-aranyakaparva, mahabharata-bhishmaparva
+- тигр-бхарата  · n=1  · mahabharata-aranyakaparva
+- о тигр из рода Бхараты  · n=1  · mahabharata-udyogaparva
+
+### `BarataSatruGnau` — bharataśatrughnau  (n=3)
+
+- Бхарату и Шатругхну  · n=1  · ramayana-ayodhyakanda
+- Бхарата с Шатругхной  · n=1  · mahabharata-aranyakaparva
+- Бхарата и Шатругхна  · n=1  · raghuvamsha
+
+### `BarataSrezWAH` — bharataśreṣṭhāḥ  (n=2)
+
+- лучшие из бхаратов  · n=1  · mahabharata-aranyakaparva
+- первейшие из бхаратов  · n=1  · mahabharata-dronaparva
+
+### `BarataSrezWa` — bharataśreṣṭha  (n=125)
+
+- лучший из бхаратов  · n=34  · mahabharata-bhishmaparva, mahabharata-aranyakaparva, mahabharata-karnaparva, mahabharata-ashvamedhikaparva, mahabharata-udyogaparva, bhagavadgita-erman, mahabharata-mahaprasthanikaparva
+- лучший из рода Бхараты  · n=27  · mahabharata-dronaparva, mahabharata-udyogaparva, mahabharata-shalyaparva, mahabharata-adiparva, mahabharata-sabhaparva
+- первейший из рода Бхараты  · n=9  · mahabharata-dronaparva, mahabharata-udyogaparva, mahabharata-shalyaparva
+- о лучший из бхаратов  · n=8  · mahabharata-bhishmaparva, mahabharata-aranyakaparva, mahabharata-adiparva, mahabharata-udyogaparva, mahabharata-virataparva
+- достойнейший бхарата  · n=6  · mahabharata-aranyakaparva, mahabharata-karnaparva
+- о лучший из рода Бхараты  · n=6  · mahabharata-shalyaparva, mahabharata-dronaparva, mahabharata-udyogaparva
+- наилучший из рода Бхараты  · n=6  · mahabharata-shalyaparva, mahabharata-dronaparva, mahabharata-udyogaparva
+- достойнейший из бхаратов  · n=4  · mahabharata-aranyakaparva, mahabharata-karnaparva, mahabharata-ashramavasikaparva
+- превосходнейший из рода Бхараты  · n=4  · mahabharata-dronaparva, mahabharata-udyogaparva, mahabharata-shalyaparva
+- первейший из бхаратов  · n=3  · mahabharata-shalyaparva, mahabharata-udyogaparva
+- о краса бхаратов  · n=2  · mahabharata-aranyakaparva
+- лучший из потомков Бхараты  · n=2  · mahabharata-dronaparva, mahabharata-sabhaparva
+- краса бхаратов  · n=1  · mahabharata-aranyakaparva
+- достойнейшие из бхаратов  · n=1  · mahabharata-aranyakaparva
+- лучшие из бхаратов  · n=1  · mahabharata-aranyakaparva
+- первый из бхаратов  · n=1  · mahabharata-aranyakaparva
+- лучшего из бхаратов  · n=1  · mahabharata-bhishmaparva
+- о наилучший из рода Бхараты  · n=1  · mahabharata-dronaparva
+- о лучший из Бхаратов  · n=1  · mahabharata-dronaparva
+- лучший из Бхаратов  · n=1  · mahabharata-udyogaparva
+- о превосходнейший из рода Бхараты  · n=1  · mahabharata-udyogaparva
+- О лучший из Бхарат  · n=1  · bhagavadgita-sharma
+- о лучший из Бхарат  · n=1  · bhagavadgita-prabhupada
+- бхарата  · n=1  · mahabharata-karnaparva
+- величайший из бхаратов  · n=1  · mahabharata-ashramavasikaparva
+- превосходнейшие из бхаратов  · n=1  · mahabharata-ashramavasikaparva
+
+### `BarataSrezWaH` — bharataśreṣṭhaḥ  (n=5)
+
+- превосходнейший из рода Бхараты  · n=2  · mahabharata-shalyaparva
+- лучший из бхаратов  · n=1  · mahabharata-bhishmaparva
+- Достойнейший бхарата  · n=1  · mahabharata-karnaparva
+- старейший из бхаратов  · n=1  · mahabharata-shalyaparva
+
+### `BarataSrezWam` — bharataśreṣṭham  (n=3)
+
+- первейшего из рода Бхараты  · n=1  · mahabharata-dronaparva
+- первого среди бхаратов  · n=1  · mahabharata-karnaparva
+- первому среди бхаратов  · n=1  · mahabharata-ashvamedhikaparva
+
+### `BarataSrezWe` — bharataśreṣṭhe  (n=1)
+
+- первейший из бхаратов  · n=1  · mahabharata-dronaparva
+
+### `Baratakzaya` — bharatakṣaya  (n=3)
+
+- истребление рода бхаратов  · n=1  · mahabharata-karnaparva
+- гибели всего рода Бхараты  · n=1  · mahabharata-shalyaparva
+- гибели бхаратов  · n=1  · mahabharata-striparva
+
+### `Baratakzaye` — bharatakṣaye  (n=1)
+
+- при впавшем в немилость Бхарате  · n=1  · ramayana-ayodhyakanda
+
+### `Baratam` — bharatam  (n=47)
+
+- Бхарату  · n=18  · ramayana-ayodhyakanda, rigveda
+- Бхарате  · n=11  · ramayana-ayodhyakanda, ramayana-balakanda
+- Бхарата  · n=7  · ramayana-ayodhyakanda, mahabharata-adiparva, rigveda
+- Бхаратой  · n=3  · ramayana-ayodhyakanda, mahabharata-adiparva
+- Бхараты  · n=3  · ramayana-ayodhyakanda
+- за Бхаратой  · n=2  · ramayana-ayodhyakanda
+- к Бхарате  · n=1  · ramayana-ayodhyakanda
+- за царевичем Бхаратой  · n=1  · ramayana-ayodhyakanda
+- его  · n=1  · ramayana-ayodhyakanda
+
+### `BaratamAtulaH` — bharatamātulaḥ  (n=1)
+
+- дядя по матери Бхараты  · n=1  · ramayana-balakanda
+
+### `Barataprabarha` — bharataprabarha  (n=1)
+
+- превосходнейшему из бхаратов  · n=1  · mahabharata-aranyakaparva
+
+### `BaratapravIra` — bharatapravīra  (n=1)
+
+- отважных потомков Куру  · n=1  · mahabharata-aranyakaparva
+
+### `BaratarzaBAH` — bharatarṣabhāḥ  (n=9)
+
+- быки из рода Бхараты  · n=5  · mahabharata-adiparva, mahabharata-udyogaparva
+- быки среди бхаратов  · n=2  · mahabharata-aranyakaparva
+- быки-бхараты  · n=1  · mahabharata-ashvamedhikaparva
+- Быки-бхараты  · n=1  · mahabharata-ashvamedhikaparva
+
+### `BaratarzaBAn` — bharatarṣabhān  (n=3)
+
+- быкам среди бхаратов  · n=1  · mahabharata-aranyakaparva
+- лучших из рода Бхараты  · n=1  · mahabharata-adiparva
+- быков-бхаратов  · n=1  · mahabharata-striparva
+
+### `BaratarzaBa` — bharatarṣabha  (n=503)
+
+- бык из рода Бхараты  · n=171  · mahabharata-udyogaparva, mahabharata-sabhaparva, mahabharata-shalyaparva, mahabharata-dronaparva, mahabharata-adiparva, mahabharata-virataparva, mahabharata-shantiparva, mahabharata-bhishmaparva
+- бык-бхарата  · n=79  · mahabharata-aranyakaparva, mahabharata-karnaparva, mahabharata-ashvamedhikaparva, mahabharata-ashramavasikaparva, mahabharata-sauptikaparva, mahabharata-striparva, mahabharata-mausalaparva, mahabharata-svargarohanikaparva, mahabharata-mahaprasthanikaparva
+- бык среди бхаратов  · n=61  · mahabharata-bhishmaparva, mahabharata-aranyakaparva, bhagavadgita-erman, mahabharata-sabhaparva
+- о бык из рода Бхараты  · n=43  · mahabharata-dronaparva, mahabharata-udyogaparva, mahabharata-shalyaparva, mahabharata-adiparva, mahabharata-sabhaparva, mahabharata-virataparva
+- о бык-бхарата  · n=31  · mahabharata-aranyakaparva, mahabharata-karnaparva, mahabharata-ashramavasikaparva, mahabharata-ashvamedhikaparva, mahabharata-striparva, mahabharata-sauptikaparva, mahabharata-shantiparva, mahabharata-mausalaparva, mahabharata-mahaprasthanikaparva
+- о бык среди бхаратов  · n=16  · mahabharata-bhishmaparva, mahabharata-aranyakaparva, bhagavadgita-erman, mahabharata-karnaparva
+- потомок Бхараты  · n=8  · mahabharata-udyogaparva, mahabharata-dronaparva, mahabharata-sabhaparva, mahabharata-shalyaparva
+- быки из рода Бхараты  · n=4  · mahabharata-adiparva, mahabharata-sabhaparva
+- о лучший из Бхарат  · n=4  · bhagavadgita-prabhupada
+- быки-бхараты  · n=3  · mahabharata-aranyakaparva
+- Бык из рода Бхараты  · n=3  · mahabharata-dronaparva, mahabharata-udyogaparva, mahabharata-shalyaparva
+- бык среди Бхаратов  · n=3  · mahabharata-dronaparva, mahabharata-udyogaparva, mahabharata-sabhaparva
+- о лучший из потомков Бхараты  · n=3  · bhagavadgita-radha, bhagavadgita-burba
+- бык среди Бхарат  · n=3  · bhagavadgita-smirnov, bhagavadgity
+- лучший из Бхарат  · n=3  · bhagavadgita-sharma
+- о предводитель Бхарат  · n=3  · bhagavadgita-prabhupada
+- быки среди бхаратов  · n=2  · mahabharata-aranyakaparva
+- бхарата  · n=2  · mahabharata-aranyakaparva
+- лучший из рода Бхараты  · n=2  · mahabharata-adiparva
+- быка из рода Бхараты  · n=2  · mahabharata-adiparva, mahabharata-shalyaparva
+- о бык среди Бхаратов  · n=2  · mahabharata-adiparva, mahabharata-dronaparva
+- быка среди бхаратов  · n=2  · mahabharata-bhishmaparva
+- о потомок Бхараты  · n=2  · mahabharata-dronaparva, mahabharata-sabhaparva
+- бык среди людей  · n=2  · mahabharata-udyogaparva
+- Бык среди Бхарат  · n=2  · gitarthasamgraha-abhinavagupta
+- бык среди потомков Бхараты  · n=2  · bhagavadgita-burba
+- о бык среди потомков Бхараты  · n=2  · bhagavadgita-burba
+- о бык среды потомков Бхараты  · n=2  · bhagavadgita-burba
+- повелитель Бхаратов  · n=2  · bhagavadgita-1914
+- лучший Бхарата  · n=2  · bhagavadgity, bhagavadgita-smirnov
+- тур-Бхарата  · n=2  · bhagavadgity, bhagavadgita-smirnov
+- великій вождь бхаратовъ  · n=2  · bhagavadgity, bhagavadgita-1909
+- Бык-бхарата  · n=1  · mahabharata-aranyakaparva
+- о быки среди бхаратов  · n=1  · mahabharata-aranyakaparva
+- быков-бхаратов  · n=1  · mahabharata-aranyakaparva
+- лучший из бхаратов  · n=1  · mahabharata-adiparva
+- лучший из потомков Бхараты  · n=1  · mahabharata-adiparva
+- лучший потомок Бхараты  · n=1  · mahabharata-adiparva
+- Бхарата  · n=1  · mahabharata-adiparva
+- бык рода Бхараты  · n=1  · mahabharata-bhishmaparva
+- бык рода бхаратов  · n=1  · mahabharata-bhishmaparva
+- о бык из рода Бхаратов  · n=1  · mahabharata-dronaparva
+- тигр среди людей  · n=1  · mahabharata-udyogaparva
+- о Бык среди Бхаратов  · n=1  · gitarthasamgraha-abhinavagupta
+- о Бык среди Бхарат  · n=1  · gitarthasamgraha-abhinavagupta
+- бык среды потомков Бхараты  · n=1  · bhagavadgita-burba
+- о мощный средь Бхаратов  · n=1  · ramanuja_gitabhashya
+- лучший из Бхаратов  · n=1  · bhagavadgita-1914
+- богатырь среди Бхаратов  · n=1  · bhagavadgita-1914
+- о Бхарата  · n=1  · bhagavadgity
+- о бык среди Бхарат  · n=1  · bhagavadgity
+- о потомокъ Бхараты  · n=1  · bhagavadgita-1788
+- бык средь Бхаратов  · n=1  · bhagavadgita-sementsov
+- Бык средь Бхаратов  · n=1  · bhagavadgita-sementsov
+- храбрый вождь бхаратовъ  · n=1  · bhagavadgita-1909
+- вождь бхаратовъ  · n=1  · bhagavadgita-1909
+- О лучший из Бхарат  · n=1  · bhagavadgita-sharma
+- Бхарат  · n=1  · bhagavadgita-prabhupada
+- о тур среди потомков Бхараты  · n=1  · bhagavadgita-radha
+- храбрейший в роде Куру  · n=1  · mahabharata-karnaparva
+- быку из рода Бхараты  · n=1  · mahabharata-sabhaparva
+- Бхараты  · n=1  · mahabharata-virataparva
+- быку-бхарате  · n=1  · mahabharata-ashramavasikaparva
+- Юдхиштхира  · n=1  · mahabharata-ashramavasikaparva
+- храбрейший из бхаратов  · n=1  · mahabharata-ashramavasikaparva
+
+### `BaratarzaBaH` — bharatarṣabhaḥ  (n=3)
+
+- бык из рода Бхараты  · n=2  · mahabharata-adiparva, mahabharata-virataparva
+- бык-бхарата  · n=1  · mahabharata-ashvamedhikaparva
+
+### `BaratarzaBam` — bharatarṣabham  (n=3)
+
+- быке из рода Бхараты  · n=1  · mahabharata-adiparva
+- бхарате-быке  · n=1  · mahabharata-bhishmaparva
+- быка-бхарату  · n=1  · mahabharata-karnaparva
+
+### `BaratarzaBasya` — bharatarṣabhasya  (n=3)
+
+- быку-бхарате  · n=1  · mahabharata-aranyakaparva
+- тот бык из рода Бхараты (Бхишма)  · n=1  · mahabharata-dronaparva
+- бык-бхарата  · n=1  · mahabharata-karnaparva
+
+### `BaratarzaBe` — bharatarṣabhe  (n=1)
+
+- бык-бхарата  · n=1  · mahabharata-karnaparva
+
+### `BaratasainikAH` — bharatasainikāḥ  (n=1)
+
+- воины Бхараты  · n=1  · ramayana-ayodhyakanda
+
+### `BaratasattamAH` — bharatasattamāḥ  (n=1)
+
+- лучшие среди бхаратов  · n=1  · mahabharata-aranyakaparva
+
+### `Baratasattama` — bharatasattama  (n=91)
+
+- лучший из бхаратов  · n=19  · mahabharata-aranyakaparva, mahabharata-ashvamedhikaparva, mahabharata-bhishmaparva, mahabharata-karnaparva, ramanuja_gitabhashya, mahabharata-sauptikaparva, mahabharata-mahaprasthanikaparva
+- лучший из рода Бхараты  · n=17  · mahabharata-adiparva, mahabharata-sabhaparva, mahabharata-udyogaparva, mahabharata-shalyaparva
+- достойнейший бхарата  · n=13  · mahabharata-aranyakaparva, mahabharata-ashramavasikaparva, mahabharata-striparva
+- достойнейший из бхаратов  · n=5  · mahabharata-aranyakaparva, mahabharata-ashramavasikaparva
+- о лучший из бхаратов  · n=5  · mahabharata-bhishmaparva, bhagavadgita-erman, mahabharata-sauptikaparva, mahabharata-mahaprasthanikaparva
+- превосходнейший из рода Бхараты  · n=4  · mahabharata-dronaparva, mahabharata-shalyaparva
+- первейший из рода Бхараты  · n=4  · mahabharata-dronaparva, mahabharata-udyogaparva, mahabharata-shalyaparva, mahabharata-sabhaparva
+- лучший из Бхарат  · n=4  · gitarthasamgraha-abhinavagupta, bhagavadgita-smirnov, bhagavadgita-sharma, bhagavadgita-prabhupada
+- о достойнейший бхарата  · n=2  · mahabharata-aranyakaparva, mahabharata-karnaparva
+- лучший из потомков Бхараты  · n=2  · mahabharata-adiparva, mahabharata-sabhaparva
+- лучший из Бхаратов  · n=2  · mahabharata-adiparva, mahabharata-udyogaparva
+- о лучший из рода Бхараты  · n=2  · mahabharata-udyogaparva, mahabharata-sabhaparva
+- о достойнейший из бхаратов  · n=1  · mahabharata-aranyakaparva
+- праведнейший из бхаратов  · n=1  · mahabharata-aranyakaparva
+- превосходнейший среди бхаратов  · n=1  · mahabharata-adiparva
+- наилучшим в роду Бхараты  · n=1  · mahabharata-adiparva
+- достойнейший из рода Бхараты  · n=1  · mahabharata-udyogaparva
+- наилучшие из рода Бхараты  · n=1  · mahabharata-udyogaparva
+- первейший из бхаратов  · n=1  · mahabharata-shalyaparva
+- о превосходнейший из бхаратов  · n=1  · mahabharata-shalyaparva
+- наилучший из рода Бхараты  · n=1  · mahabharata-shalyaparva
+- о первейший из рода Бхараты  · n=1  · mahabharata-shalyaparva
+- лучшие из бхаратов  · n=1  · mahabharata-ashvamedhikaparva
+- достойнейший среди бхаратов  · n=1  · mahabharata-ashramavasikaparva
+
+### `Baratasattamam` — bharatasattamam  (n=1)
+
+- достойнейшего из бхаратов  · n=1  · mahabharata-striparva
+
+### `BaratasiMhAnAM` — bharatasiṃhānāṃ  (n=1)
+
+- львов-бхаратов  · n=1  · mahabharata-ashvamedhikaparva
+
+### `BaratasiMha` — bharatasiṃha  (n=2)
+
+- льва из рода Бхараты  · n=1  · mahabharata-adiparva
+- лев среди бхаратов  · n=1  · mahabharata-bhishmaparva
+
+### `BaratastrI` — bharatastrī  (n=3)
+
+- жен бхаратийских  · n=1  · mahabharata-udyogaparva
+- женами бхаратов  · n=1  · mahabharata-striparva
+- женщины бхаратов  · n=1  · mahabharata-shantiparva
+
+### `BaratastriyaH` — bharatastriyaḥ  (n=4)
+
+- жены бхаратийские  · n=1  · mahabharata-dronaparva
+- женщины бхаратов  · n=1  · mahabharata-ashvamedhikaparva
+- жены бхаратов  · n=1  · mahabharata-ashvamedhikaparva
+- бхаратских жен  · n=1  · mahabharata-striparva
+
+### `BaratastvayA` — bharatastvayā  (n=1)
+
+- Бхарата с тобой  · n=1  · ramayana-ayodhyakanda
+
+### `BaratasyABizecanam` — bharatasyābhiṣecanam  (n=1)
+
+- помазания Бхараты  · n=1  · ramayana-ayodhyakanda
+
+### `Baratasya` — bharatasya  (n=40)
+
+- Бхараты  · n=24  · ramayana-ayodhyakanda, mahabharata-adiparva, ramayana-aranyakanda, mahabharata-aranyakaparva, rigveda, rigveda
+- Бхарата  · n=7  · ramayana-ayodhyakanda, ramayana-aranyakanda, mahabharata-aranyakaparva
+- Бхарате  · n=4  · ramayana-ayodhyakanda, ramayana-aranyakanda
+- Бхарату  · n=2  · ramayana-ayodhyakanda
+- за Бхаратой  · n=1  · ramayana-ayodhyakanda
+- брата  · n=1  · ramayana-ayodhyakanda
+- у Бхараты  · n=1  · rigveda
+
+### `Baratatva` — bharatatva  (n=1)
+
+- Бхарата  · n=1  · mahabharata-adiparva
+
+### `Baratau` — bharatau  (n=2)
+
+- Бхарата  · n=2  · ramayana-ayodhyakanda
+
+### `BaratavaMSa` — bharatavaṃśa  (n=2)
+
+- рода Бхараты  · n=2  · mahabharata-adiparva
+
+### `BaratavaMSasya` — bharatavaṃśasya  (n=1)
+
+- рода Бхараты  · n=1  · mahabharata-adiparva
+
+### `Baratayozit` — bharatayoṣit  (n=1)
+
+- бхаратская жена  · n=1  · mahabharata-striparva
+
+### `Barate` — bharate  (n=19)
+
+- приносит  · n=6  · rigveda, rigveda, rigveda, rigveda
+- Бхаратой  · n=2  · ramayana-ayodhyakanda
+- поддерживает  · n=2  · rigveda, shv-up
+- распространяется  · n=2  · rigveda
+- на Бхарату  · n=1  · ramayana-ayodhyakanda
+- Бхарата  · n=1  · ramayana-ayodhyakanda
+- Бхарате  · n=1  · ramayana-balakanda
+- сбрасывает  · n=1  · rigveda
+- объемлет  · n=1  · rigveda
+- потечет  · n=1  · rigveda
+- уносит  · n=1  · rigveda
+
+### `BarateByaH` — bharatebhyaḥ  (n=2)
+
+- Бхаратам  · n=1  · rigveda
+- Бхараты  · n=1  · rigveda
+
+### `Baratena` — bharatena  (n=20)
+
+- Бхарата  · n=5  · ramayana-ayodhyakanda, raghuvamsha
+- Бхараты  · n=5  · ramayana-ayodhyakanda, ramayana-aranyakanda
+- Бхаратой  · n=4  · ramayana-ayodhyakanda, ramayana-aranyakanda, mahabharata-aranyakaparva, mahabharata-adiparva
+- За Бхаратой  · n=1  · ramayana-ayodhyakanda
+- с Бхаратой  · n=1  · ramayana-ayodhyakanda
+- Бхарате  · n=1  · ramayana-ayodhyakanda
+- сына  · n=1  · ramayana-ayodhyakanda
+- от Бхараты  · n=1  · ramayana-ayodhyakanda
+- брат  · n=1  · ramayana-ayodhyakanda
+
+### `Baratezu` — bharateṣu  (n=1)
+
+- герои бхаратийские  · n=1  · mahabharata-dronaparva
+
+### `Barati` — bharati  (n=12)
+
+- несет  · n=4  · rigveda, rigveda, rigveda, atharvaveda
+- отбирает  · n=2  · rigveda, atharvaveda
+- уносит  · n=2  · rigveda
+- взращивает  · n=1  · mahabharata-aranyakaparva
+- Приносит  · n=1  · rigveda
+- приносит  · n=1  · rigveda
+- собирает  · n=1  · atharvaveda
+
+### `Baratim` — bharatim  (n=1)
+
+- речь  · n=1  · ramayana-ayodhyakanda
+
+### `Barato` — bharato  (n=1)
+
+- Бхарату  · n=1  · ramayana-aranyakanda
+
+### `Baraty` — bharaty  (n=1)
+
+- несет  · n=1  · rigveda
+
+### `Bare` — bhare  (n=30)
+
+- приношу  · n=9  · rigveda, rigveda, rigveda, rigveda, rigveda
+- битве  · n=8  · rigveda, rigveda
+- в битве  · n=6  · rigveda, rigveda
+- в состязании  · n=3  · rigveda, rigveda
+- состязании  · n=2  · rigveda
+- В борьбе  · n=2  · rigveda
+
+### `Bare-Bare` — bhare-bhare  (n=6)
+
+- в каждой битве  · n=3  · rigveda, rigveda, rigveda
+- в каждом бою  · n=2  · rigveda, rigveda
+- в каждом состязании  · n=1  · rigveda
+
+### `BareBare` — bharebhare  (n=1)
+
+- в каждом состязании  · n=1  · atharvaveda
+
+### `BareDAH` — bhare dhāḥ  (n=1)
+
+- поддержи в бою  · n=1  · rigveda
+
+### `BareRa` — bhareṇa  (n=3)
+
+- бременем  · n=2  · ramayana-aranyakanda, gitagovinda
+- от избытка  · n=1  · gitagovinda
+
+### `Barema` — bharema  (n=2)
+
+- будем приносить  · n=1  · atharvaveda
+- приносить  · n=1  · atharvaveda
+
+### `Baremahi` — bharemahi  (n=2)
+
+- срываем  · n=2  · rigveda
+
+### `Barerata` — bharerata  (n=2)
+
+- Пусть возьмут на себя  · n=1  · rigveda
+- возьмут на себя  · n=1  · rigveda
+
+### `Bareyam` — bhareyam  (n=2)
+
+- должен содержать  · n=2  · mahabharata-adiparva
+
+### `Barezu` — bhareṣu  (n=12)
+
+- в битвах  · n=5  · rigveda, rigveda, rigveda, rigveda
+- в сражениях  · n=2  · rigveda, rigveda
+- в столкновениях  · n=2  · atharvaveda
+- в боях  · n=1  · rigveda
+- В сражениях  · n=1  · rigveda
+- сражениях  · n=1  · rigveda
+
+### `BarezujAm` — bhareṣujām  (n=2)
+
+- рожденного в боях  · n=2  · rigveda
+
+### `BargAKya` — bhargākhya  (n=1)
+
+- сиянием  · n=1  · mai-up
+
+### `Barga` — bharga  (n=1)
+
+- Бхарги  · n=1  · mahabharata-sabhaparva
+
+### `BargaH` — bhargaḥ  (n=8)
+
+- Отблеск  · n=2  · rigveda
+- блеск  · n=2  · rigveda
+- Блеск  · n=2  · rigveda
+- сияние  · n=2  · br-up
+
+### `Bargas` — bhargas  (n=6)
+
+- сияние  · n=3  · mai-up, atharvaveda
+- Сияние  · n=2  · atharvaveda, mai-up
+- сиянии  · n=1  · mai-up
+
+### `BargasvatIm` — bhargasvatīm  (n=1)
+
+- Блистательную  · n=1  · atharvaveda
+
+### `BariBrad` — bharibhrad  (n=1)
+
+- вздымая вихрь  · n=1  · rigveda
+
+### `BariBrat` — bharibhrat  (n=1)
+
+- яростно размахивает  · n=1  · rigveda
+
+### `BariBrati` — bharibhrati  (n=1)
+
+- носят  · n=1  · rigveda
+
+### `BaritAH` — bharitāḥ  (n=1)
+
+- наполнены  · n=1  · mahabharata-sabhaparva
+
+### `Baritra` — bharitra  (n=2)
+
+- пальцами  · n=1  · rigveda
+- держательницами  · n=1  · rigveda
+
+### `Barizu` — bhariṣu  (n=2)
+
+- жаждущий добычи  · n=2  · rigveda
+
+### `BarizyAmi` — bhariṣyāmi  (n=3)
+
+- буду кормильцем  · n=1  · mahabharata-aranyakaparva
+- буду кормить  · n=1  · mahabharata-aranyakaparva
+- буду содержать  · n=1  · mahabharata-adiparva
+
+### `Barizyati` — bhariṣyati  (n=1)
+
+- останется позаботиться  · n=1  · ramayana-ayodhyakanda
+
+### `Barizye` — bhariṣye  (n=1)
+
+- буду содержать  · n=1  · mahabharata-adiparva
+
+### `BarjanakapAla` — bharjanakapāla  (n=1)
+
+- жаровня  · n=1  · nyaya-bhashya
+
+### `Barjayati` — bharjayati  (n=2)
+
+- сжигает  · n=2  · mai-up
+
+### `Barjita` — bharjita  (n=1)
+
+- предала  · n=1  · devi-gita
+
+### `BarmaR` — bharmaṇ  (n=1)
+
+- побуждению  · n=1  · rigveda
+
+### `Baro` — bharo  (n=1)
+
+- дал  · n=1  · rigveda
+
+### `BartA` — bhartā  (n=58)
+
+- муж  · n=17  · ramayana-ayodhyakanda, ramayana-sundarakanda, manavadharmashastra, ramayana-aranyakanda, ramayana-balakanda, mahabharata-aranyakaparva, mahabharata-adiparva, shukasaptati
+- супруг  · n=14  · mahabharata-aranyakaparva, mahabharata-adiparva, ramayana-aranyakanda, ramayana-ayodhyakanda, mahabharata-ashvamedhikaparva, mahabharata-sabhaparva
+- супруга  · n=5  · mahabharata-aranyakaparva, raghuvamsha
+- супругом  · n=4  · mahabharata-adiparva, mahabharata-aranyakaparva, mahabharata-udyogaparva
+- мужа  · n=3  · ramayana-aranyakanda, ramayana-ayodhyakanda
+- владыка  · n=2  · mahabharata-adiparva, buddhacharita
+- владыку  · n=1  · ramayana-ayodhyakanda
+- господин  · n=1  · ramayana-ayodhyakanda
+- слуг  · n=1  · ramayana-ayodhyakanda
+- мужу  · n=1  · ramayana-ayodhyakanda
+- супруги  · n=1  · mahabharata-aranyakaparva
+- супругу  · n=1  · mahabharata-aranyakaparva
+- Кто несет  · n=1  · rigveda
+- правитель  · n=1  · buddhacharita
+- покровитель  · n=1  · mahabharata-udyogaparva
+- повелитель  · n=1  · bhagavadgita-burba
+- носитель  · n=1  · bhagavadgita-smirnov
+- носит всех  · n=1  · bhagavadgita-sementsov
+- верховный владыка  · n=1  · bhagavadgita-sharma
+
+### `BartAra` — bhartāra  (n=9)
+
+- мужа  · n=2  · ramayana-ayodhyakanda, ramayana-sundarakanda
+- мужу  · n=2  · shukasaptati
+- к мужу  · n=1  · ramayana-ayodhyakanda
+- выйдя замуж  · n=1  · ramayana-sundarakanda
+- супруга  · n=1  · ramayana-balakanda
+- супругу  · n=1  · mahabharata-adiparva
+- о супруге  · n=1  · mahabharata-striparva
+
+### `BartAraH` — bhartāraḥ  (n=2)
+
+- муж  · n=1  · mahabharata-aranyakaparva
+- супруги  · n=1  · mahabharata-aranyakaparva
+
+### `BartAraM` — bhartāraṃ  (n=13)
+
+- супруга  · n=4  · mahabharata-aranyakaparva, mahabharata-adiparva, mahabharata-ashvamedhikaparva
+- как мужа  · n=1  · ramayana-sundarakanda
+- владыку  · n=1  · ramayana-sundarakanda
+- господина  · n=1  · ramayana-sundarakanda
+- мужа  · n=1  · mahabharata-aranyakaparva
+- супругу  · n=1  · mahabharata-adiparva
+- повелителя  · n=1  · mahabharata-dronaparva
+- супруг  · n=1  · mahabharata-ashvamedhikaparva
+- на супруга  · n=1  · mahabharata-ashvamedhikaparva
+- мужу  · n=1  · shukasaptati
+
+### `BartAram` — bhartāram  (n=49)
+
+- супруга  · n=15  · mahabharata-aranyakaparva, ramayana-ayodhyakanda, ramayana-aranyakanda, mahabharata-adiparva, mahabharata-udyogaparva, mahabharata-shalyaparva, mahabharata-ashvamedhikaparva, raghuvamsha, mahabharata-striparva
+- мужа  · n=10  · mahabharata-aranyakaparva, ramayana-aranyakanda, ramayana-ayodhyakanda, ramayana-sundarakanda, shukasaptati
+- супругу  · n=3  · mahabharata-adiparva, ramayana-balakanda, mahabharata-aranyakaparva
+- мужу  · n=3  · ramayana-ayodhyakanda, manavadharmashastra, ramayana-aranyakanda
+- супругом  · n=3  · ramayana-aranyakanda, mahabharata-aranyakaparva, mahabharata-adiparva
+- к мужу  · n=1  · mahabharata-adiparva
+- у мужа  · n=1  · ramayana-ayodhyakanda
+- с Рагхавой  · n=1  · ramayana-ayodhyakanda
+- мужем  · n=1  · ramayana-ayodhyakanda
+- государя  · n=1  · ramayana-ayodhyakanda
+- за владыкой  · n=1  · ramayana-ayodhyakanda
+- о муже  · n=1  · ramayana-sundarakanda
+- владыку  · n=1  · ramayana-sundarakanda
+- Владыка  · n=1  · ramayana-sundarakanda
+- Раме  · n=1  · ramayana-aranyakanda
+- брата  · n=1  · ramayana-aranyakanda
+- с мужем  · n=1  · ramayana-aranyakanda
+- супруг  · n=1  · mahabharata-adiparva
+- повелителя  · n=1  · mahabharata-dronaparva
+- мужьям  · n=1  · mahabharata-virataparva
+
+### `BartFRAm` — bhartṝṇām  (n=1)
+
+- для моих супругов  · n=1  · mahabharata-virataparva
+
+### `BartFn` — bhartṝn  (n=3)
+
+- супругов  · n=2  · mahabharata-adiparva, mahabharata-sabhaparva
+- мужей  · n=1  · mahabharata-adiparva
+
+### `Bartari` — bhartari  (n=6)
+
+- мужа  · n=3  · manavadharmashastra, mahabharata-aranyakaparva
+- господин  · n=2  · ramayana-sundarakanda, buddhacharita
+- супруга  · n=1  · mahabharata-aranyakaparva
+
+### `Bartave` — bhartave  (n=3)
+
+- чтобы носили  · n=1  · rigveda
+- носить  · n=1  · atharvaveda
+- Носить  · n=1  · atharvaveda
+
+### `BartavyA` — bhartavyā  (n=1)
+
+- упоминать  · n=1  · ramayana-ayodhyakanda
+
+### `Bartavya` — bhartavya  (n=3)
+
+- должен лелеять  · n=1  · mahabharata-aranyakaparva
+- воспитан  · n=1  · mahabharata-adiparva
+- поддержать  · n=1  · mahabharata-udyogaparva
+
+### `BartavyaH` — bhartavyaḥ  (n=1)
+
+- носить  · n=1  · ramayana-aranyakanda
+
+### `Barteva` — bharteva  (n=1)
+
+- словно муж  · n=1  · rigveda
+
+### `Bartf` — bhartṛ  (n=286)
+
+- мужа  · n=33  · ramayana-sundarakanda, ramayana-ayodhyakanda, mahabharata-aranyakaparva, manavadharmashastra, mahabharata-adiparva, ramayana-aranyakanda, ramayana-balakanda, shukasaptati, mahabharata-striparva
+- супруг  · n=31  · mahabharata-aranyakaparva, mahabharata-adiparva, ramayana-ayodhyakanda, kama-sutra, mahabharata-virataparva, mahabharata-ashramavasikaparva, ramayana-balakanda, mahabharata-udyogaparva, mahabharata-striparva
+- муж  · n=23  · manavadharmashastra, ramayana-aranyakanda, shukasaptati, ramayana-ayodhyakanda, mahabharata-adiparva, ramayana-sundarakanda, mahabharata-aranyakaparva, raghuvamsha
+- супруга  · n=23  · kama-sutra, mahabharata-adiparva, ramayana-aranyakanda, mahabharata-aranyakaparva, ramayana-ayodhyakanda, mahabharata-striparva, mahabharata-udyogaparva, mahabharata-shalyaparva, mahabharata-ashvamedhikaparva, raghuvamsha, mahabharata-ashramavasikaparva
+- мужу  · n=18  · ramayana-sundarakanda, ramayana-ayodhyakanda, manavadharmashastra, ramayana-aranyakanda, mahabharata-aranyakaparva, mahabharata-ashvamedhikaparva, shukasaptati
+- супругу  · n=15  · mahabharata-aranyakaparva, ramayana-aranyakanda, ramayana-ayodhyakanda, mahabharata-adiparva, ramayana-balakanda, kama-sutra, mahabharata-udyogaparva, mahabharata-striparva
+- супругом  · n=14  · mahabharata-aranyakaparva, mahabharata-adiparva, mahabharata-mausalaparva, ramayana-balakanda, mahabharata-dronaparva, mahabharata-udyogaparva, mahabharata-shalyaparva
+- господин  · n=8  · ramayana-ayodhyakanda, buddhacharita, ramayana-sundarakanda, mahabharata-udyogaparva
+- мужем  · n=7  · ramayana-ayodhyakanda, ramayana-sundarakanda, ramayana-aranyakanda, mahabharata-aranyakaparva, shukasaptati
+- господина  · n=7  · ramayana-ayodhyakanda, ramayana-sundarakanda, buddhacharita
+- Супруг  · n=4  · ramayana-aranyakanda, bhagavadgita-1914, bhagavadgity, bhagavadgita-smirnov
+- супруги  · n=4  · mahabharata-aranyakaparva
+- носитель  · n=3  · mahabharata-adiparva, bhagavadgity, atharvaveda
+- мужья  · n=3  · ramayana-ayodhyakanda, ramayana-sundarakanda, mahabharata-aranyakaparva
+- хозяин  · n=3  · manavadharmashastra, mahabharata-aranyakaparva, mahabharata-udyogaparva
+- супругов  · n=3  · mahabharata-aranyakaparva, mahabharata-shalyaparva, mahabharata-sabhaparva
+- Питающий  · n=3  · bhagavadgita-erman, mahabharata-bhishmaparva
+- тот, кто поддерживает  · n=3  · bhagavadgita-radha
+- владыки  · n=2  · ramayana-ayodhyakanda, mahabharata-aranyakaparva
+- царь  · n=2  · ramayana-ayodhyakanda, raghuvamsha
+- мужьям  · n=2  · ramayana-ayodhyakanda, manavadharmashastra
+- повелителя  · n=2  · ramayana-sundarakanda, mahabharata-virataparva
+- с мужем  · n=2  · ramayana-sundarakanda
+- начальник  · n=2  · manavadharmashastra
+- супругами  · n=2  · ramayana-balakanda, mahabharata-aranyakaparva
+- мужей  · n=2  · mahabharata-aranyakaparva
+- властелина  · n=2  · mahabharata-aranyakaparva, kumarasambhava
+- за супругом  · n=2  · mahabharata-adiparva
+- кормилец  · n=2  · mahabharata-bhishmaparva, bhagavadgita-erman
+- владыка  · n=2  · buddhacharita, mahabharata-ashramavasikaparva
+- правитель  · n=2  · mahabharata-udyogaparva, raghuvamsha
+- покровитель  · n=2  · mahabharata-udyogaparva, bhagavadgita-1788
+- хранитель  · n=2  · gitarthasamgraha-abhinavagupta, bhagavadgita-prabhupada
+- опора  · n=2  · ramanuja_gitabhashya, bhagavadgita-sementsov
+- супруге  · n=2  · raghuvamsha, shatakatrayam
+- владетелю  · n=1  · mahabharata-adiparva
+- двадцать четыре  · n=1  · mahabharata-adiparva
+- мною  · n=1  · ramayana-ayodhyakanda
+- отец  · n=1  · ramayana-ayodhyakanda
+- владыкой  · n=1  · ramayana-ayodhyakanda
+- его  · n=1  · ramayana-ayodhyakanda
+- хозяина  · n=1  · ramayana-ayodhyakanda
+- владыку  · n=1  · ramayana-ayodhyakanda
+- женою  · n=1  · ramayana-sundarakanda
+- повелитель  · n=1  · ramayana-sundarakanda
+- муже  · n=1  · ramayana-sundarakanda
+- отца  · n=1  · ramayana-sundarakanda
+- Мужу  · n=1  · ramayana-sundarakanda
+- с любовью  · n=1  · ramayana-aranyakanda
+- владык  · n=1  · ramayana-aranyakanda
+- Рагхавы  · n=1  · ramayana-aranyakanda
+- сказала  · n=1  · ramayana-aranyakanda
+- свекровь  · n=1  · ramayana-aranyakanda
+- Раме  · n=1  · ramayana-aranyakanda
+- Рамы  · n=1  · ramayana-aranyakanda
+- женой  · n=1  · ramayana-balakanda
+- предана Раме  · n=1  · ramayana-balakanda
+- предводитель  · n=1  · mahabharata-aranyakaparva
+- несет  · n=1  · rigveda
+- хозяину  · n=1  · buddhacharita
+- хозяином  · n=1  · mahabharata-udyogaparva
+- Покровитель  · n=1  · gitarthasamgraha-abhinavagupta
+- Носитель/Повелитель/Муж  · n=1  · bhagavadgita-burba
+- Поддерживающий  · n=1  · bhagavadgita-burba
+- Носит тело  · n=1  · ramanuja_gitabhashya
+- поддерживающий  · n=1  · bhagavadgita-1914
+- разрушеніе  · n=1  · bhagavadgita-1788
+- держава  · n=1  · bhagavadgita-sementsov
+- творецъ  · n=1  · bhagavadgita-1909
+- покровителемъ  · n=1  · bhagavadgita-1909
+- заботящийся  · n=1  · bhagavadgita-sharma
+- владелец  · n=1  · bhagavadgita-prabhupada
+- верховный наслаждающийся  · n=1  · bhagavadgita-prabhupada
+- царю  · n=1  · kumarasambhava
+- Воля  · n=1  · kumarasambhava
+- поддержкой  · n=1  · br-up
+- государя  · n=1  · raghuvamsha
+- государем  · n=1  · mahabharata-virataparva
+- помощником  · n=1  · atharvaveda
+- мужьями  · n=1  · mahabharata-ashramavasikaparva
+- Шивы  · n=1  · megha-duta
+- Супруга  · n=1  · megha-duta
+
+### `BartfBiH` — bhartṛbhiḥ  (n=1)
+
+- мужья  · n=1  · mahabharata-aranyakaparva
+
+### `BartfGna` — bhartṛghna  (n=1)
+
+- нанесение вреда своему благодетелю  · n=1  · mahabharata-sabhaparva
+
+### `BartfH` — bhartṛḥ  (n=1)
+
+- мужа  · n=1  · ramayana-aranyakanda
+
+### `BartfKawvAsTitAm` — bhartṛkhaṭvāsthitām  (n=1)
+
+- в постели мужа  · n=1  · shukasaptati
+
+### `BartfSAsanAt` — bhartṛśāsanāt  (n=1)
+
+- по приказу господина  · n=1  · ramayana-sundarakanda
+
+### `BartfSAsana` — bhartṛśāsana  (n=2)
+
+- приказ, данный мне владыкой  · n=1  · ramayana-sundarakanda
+- воля хозяина  · n=1  · mahabharata-aranyakaparva
+
+### `BartfSokABipIqitA` — bhartṛśokābhipīḍitā  (n=1)
+
+- терзаясь тоской о супруге  · n=1  · mahabharata-aranyakaparva
+
+### `BartfSokArtA` — bhartṛśokārtā  (n=1)
+
+- тоскуя по мужу  · n=1  · mahabharata-aranyakaparva
+
+### `BartfSoka` — bhartṛśoka  (n=2)
+
+- скорбью по мужу  · n=1  · ramayana-sundarakanda
+- тоской о супруге  · n=1  · mahabharata-striparva
+
+### `BartfSokaparA` — bhartṛśokaparā  (n=1)
+
+- поглощена тоской о супруге  · n=1  · mahabharata-aranyakaparva
+
+### `BartfSokaparItANgI` — bhartṛśokaparītāṅgī  (n=1)
+
+- тревога за мужа лишила телесных сил  · n=1  · mahabharata-aranyakaparva
+
+### `BartfSu` — bhartṛśu  (n=1)
+
+- мужей  · n=1  · raghuvamsha
+
+### `BartfSuSrUzaRAparA` — bhartṛśuśrūṣaṇāparā  (n=1)
+
+- не имеющая равных в послушании мужу  · n=1  · ramayana-sundarakanda
+
+### `BartfSuSrUzaRa` — bhartṛśuśrūṣaṇa  (n=1)
+
+- преданность своему супругу  · n=1  · mahabharata-aranyakaparva
+
+### `BartfcintAparAyaRA` — bhartṛcintāparāyaṇā  (n=1)
+
+- погруженная в мысли о муже  · n=1  · ramayana-sundarakanda
+
+### `BartfcintAparAyaRa` — bhartṛcintāparāyaṇa  (n=1)
+
+- погружена в мысли о муже  · n=1  · ramayana-sundarakanda
+
+### `BartfcoditAH` — bhartṛcoditāḥ  (n=1)
+
+- по велению своего царя  · n=1  · raghuvamsha
+
+### `BartfdarSanadurgata` — bhartṛdarśanadurgata  (n=1)
+
+- несчастную, [желающую] встречи с мужем  · n=1  · ramayana-sundarakanda
+
+### `BartfdarSanakANkzayA` — bhartṛdarśanakāṅkṣayā  (n=1)
+
+- мечтая лишь о встрече с супругом  · n=1  · mahabharata-aranyakaparva
+
+### `BartfdarSanalAlasA` — bhartṛdarśanalālasā  (n=3)
+
+- желание увидеть супруга  · n=1  · mahabharata-aranyakaparva
+- одержимая желанием увидеть супруга  · n=1  · mahabharata-aranyakaparva
+- тоскуя по своему супругу  · n=1  · mahabharata-aranyakaparva
+
+### `BartfdarSanalAlasAm` — bhartṛdarśanalālasām  (n=1)
+
+- жажду увидеть мужа  · n=1  · mahabharata-aranyakaparva
+
+### `BartfdfQavratA` — bhartṛdṛḍhavratā  (n=1)
+
+- стойкая в верности мужу  · n=1  · ramayana-sundarakanda
+
+### `BartfdveziRI` — bhartṛdveṣiṇī  (n=1)
+
+- ненавидящая мужа  · n=1  · kama-sutra
+
+### `BartfguRaiH` — bhartṛguṇaiḥ  (n=1)
+
+- качествам мужей  · n=1  · manavadharmashastra
+
+### `BartfhInA` — bhartṛhīnā  (n=1)
+
+- нет мужа  · n=1  · mahabharata-aranyakaparva
+
+### `BartfhIna` — bhartṛhīna  (n=1)
+
+- без супруга  · n=1  · mahabharata-aranyakaparva
+
+### `BartfhitArTAya` — bhartṛhitārthāya  (n=1)
+
+- во благо господина  · n=1  · ramayana-sundarakanda
+
+### `Bartfhita` — bhartṛhita  (n=2)
+
+- достойную заботы мужа  · n=1  · ramayana-sundarakanda
+- радующаяся благу мужа  · n=1  · ramayana-sundarakanda
+
+### `Bartfhitam` — bhartṛhitam  (n=1)
+
+- добро своему супругу  · n=1  · mahabharata-adiparva
+
+### `Bartfhite` — bhartṛhite  (n=1)
+
+- преданность мужу  · n=1  · ramayana-sundarakanda
+
+### `Bartfjena` — bhartṛjena  (n=1)
+
+- из-за смерти господина  · n=1  · ramayana-sundarakanda
+
+### `BartfkA` — bhartṛkā  (n=1)
+
+- жена  · n=1  · shukasaptati
+
+### `BartfkAryaviniScitAH` — bhartṛkāryaviniścitāḥ  (n=1)
+
+- твердо решившиеся осуществить цели своих повелителей  · n=1  · mahabharata-shalyaparva
+
+### `Bartfloka` — bhartṛloka  (n=1)
+
+- миров мужа  · n=1  · manavadharmashastra
+
+### `Bartflokam` — bhartṛlokam  (n=1)
+
+- местопребывания мужа  · n=1  · manavadharmashastra
+
+### `BartflokaparAyaRa` — bhartṛlokaparāyaṇa  (n=1)
+
+- следуя обычаю жизни своего господина  · n=1  · mahabharata-adiparva
+
+### `BartflokaprapannAnAm` — bhartṛlokaprapannānām  (n=1)
+
+- которые удалились в ту страну, куда раньше ушел их супруг  · n=1  · raghuvamsha
+
+### `BartfmaraRa` — bhartṛmaraṇa  (n=1)
+
+- смерти мужа  · n=1  · mahabharata-aranyakaparva
+
+### `Bartfn` — bhartṛn  (n=2)
+
+- мужьям  · n=1  · ramayana-ayodhyakanda
+- мужей  · n=1  · ramayana-ayodhyakanda
+
+### `BartfnideSaraukzya` — bhartṛnideśaraukṣya  (n=1)
+
+- жестокость  · n=1  · raghuvamsha
+
+### `BartfpUjA` — bhartṛpūjā  (n=1)
+
+- почитание хозяина  · n=1  · mahabharata-aranyakaparva
+
+### `BartfpiRqAnupAlaka` — bhartṛpiṇḍānupālaka  (n=1)
+
+- кормящийся от своего господина  · n=1  · mahabharata-ashramavasikaparva
+
+### `BartfpiRqApahAriRAm` — bhartṛpiṇḍāpahāriṇām  (n=1)
+
+- которые не ценят хлеб господина  · n=1  · mahabharata-udyogaparva
+
+### `BartfpiRqam` — bhartṛpiṇḍam  (n=1)
+
+- хлеб господина  · n=1  · mahabharata-karnaparva
+
+### `BartfpiRqavimokzArTam` — bhartṛpiṇḍavimokṣārtham  (n=1)
+
+- ради выполнения долга перед своими хозяевами за предоставленные ими средства к жизни  · n=1  · mahabharata-shalyaparva
+
+### `Bartfputragate` — bhartṛputragate  (n=1)
+
+- верного своему долгу  · n=1  · ramayana-ayodhyakanda
+
+### `BartfsTAna` — bhartṛsthāna  (n=2)
+
+- Бхартристхану  · n=1  · mahabharata-aranyakaparva
+- Бхартристхане  · n=1  · mahabharata-aranyakaparva
+
+### `BartfsalokatA` — bhartṛsalokatā  (n=1)
+
+- тех же миров, что и их мужья  · n=1  · mahabharata-ashramavasikaparva
+
+### `BartfsmaraRatanvaNgI` — bhartṛsmaraṇatanvaṅgī  (n=1)
+
+- исхудавшая от тоски по мужу  · n=1  · mahabharata-aranyakaparva
+
+### `Bartfsneha` — bhartṛsneha  (n=1)
+
+- любовь к господину  · n=1  · buddhacharita
+
+### `Bartfsnehabala` — bhartṛsnehabala  (n=1)
+
+- силой любви к мужу  · n=1  · ramayana-sundarakanda
+
+### `Bartfsuta` — bhartṛsuta  (n=1)
+
+- хозяину  · n=1  · buddhacharita
+
+### `BartfsvayaMvarA` — bhartṛsvayaṃvarā  (n=1)
+
+- сваямваре  · n=1  · mahabharata-adiparva
+
+### `BartfsvayaMvara` — bhartṛsvayaṃvara  (n=1)
+
+- сваямвара  · n=1  · mahabharata-adiparva
+
+### `Bartftejas` — bhartṛtejas  (n=1)
+
+- блеском ее мужа  · n=1  · ramayana-sundarakanda
+
+### `Bartftve` — bhartṛtve  (n=1)
+
+- в супруги  · n=1  · mahabharata-udyogaparva
+
+### `BartfvAtsalyaBUzita` — bhartṛvātsalyabhūṣita  (n=1)
+
+- украшенную [только] любовью к мужу  · n=1  · ramayana-sundarakanda
+
+### `BartfviditAM` — bhartṛviditāṃ  (n=1)
+
+- с ведома своего мужа  · n=1  · shukasaptati
+
+### `BartfvinAkfta` — bhartṛvinākṛta  (n=1)
+
+- без супруга  · n=1  · mahabharata-aranyakaparva
+
+### `Bartfvrata` — bhartṛvrata  (n=1)
+
+- обеты супруга  · n=1  · mahabharata-ashramavasikaparva
+
+### `BartfvyasanaduHKitA` — bhartṛvyasanaduḥkhitā  (n=1)
+
+- бедою мужа терзаясь  · n=1  · mahabharata-aranyakaparva
+
+### `BartfvyasanakarSitA` — bhartṛvyasanakarśitā  (n=1)
+
+- сокрушалась о бедствиях супруга  · n=1  · mahabharata-aranyakaparva
+
+### `BartfvyasanapIqitAH` — bhartṛvyasanapīḍitāḥ  (n=1)
+
+- истерзанные бедой, [случившейся с их] господином  · n=1  · ramayana-sundarakanda
+
+### `Bartfzu` — bhartṛṣu  (n=1)
+
+- к своим супругам  · n=1  · mahabharata-adiparva
+
+### `Barti` — bharti  (n=1)
+
+- несет  · n=1  · rigveda
+
+### `BartiH` — bhartiḥ  (n=1)
+
+- повелитель  · n=1  · buddhacharita
+
+### `Bartr` — bhartr  (n=1)
+
+- супругом  · n=1  · mahabharata-adiparva
+
+### `BartrA` — bhartrā  (n=14)
+
+- мужем  · n=4  · manavadharmashastra, ramayana-sundarakanda
+- муж  · n=3  · shukasaptati
+- супругом  · n=2  · mahabharata-adiparva
+- мужа  · n=1  · manavadharmashastra
+- с супругом  · n=1  · mahabharata-aranyakaparva
+- супруга  · n=1  · mahabharata-aranyakaparva
+- супруг  · n=1  · raghuvamsha
+- с мужем  · n=1  · shukasaptati
+
+### `BartrI` — bhartrī  (n=1)
+
+- поддержка  · n=1  · atharvaveda
+
+### `Bartra` — bhartra  (n=1)
+
+- супругом  · n=1  · mahabharata-udyogaparva
+
+### `Bartre` — bhartre  (n=4)
+
+- замуж  · n=1  · mahabharata-aranyakaparva
+- вождю  · n=1  · mahabharata-karnaparva
+- супругу  · n=1  · mahabharata-shalyaparva
+- град  · n=1  · raghuvamsha
+
+### `BartsayAMcakrire` — bhartsayāṃ cakrire  (n=1)
+
+- Оскобляли (продолжали оскорблять)  · n=1  · ramayana-sundarakanda
+
+### `BartsayAmAsa` — bhartsayāmāsa  (n=1)
+
+- принялся поносить  · n=1  · mahabharata-aranyakaparva
+
+### `Bartsayan` — bhartsayan  (n=2)
+
+- выговаривая  · n=1  · mahabharata-dronaparva
+- восклицая  · n=1  · mahabharata-virataparva
+
+### `Bartsayanta` — bhartsayanta  (n=1)
+
+- угрожая  · n=1  · ramayana-sundarakanda
+
+### `Bartsayantau` — bhartsayantau  (n=3)
+
+- порицая  · n=1  · mahabharata-dronaparva
+- угрожая  · n=1  · mahabharata-shalyaparva
+- устрашая  · n=1  · mahabharata-sabhaparva
+
+### `Bartsayanti` — bhartsayanti  (n=1)
+
+- бранить  · n=1  · ramayana-sundarakanda
+
+### `Bartsayati` — bhartsayati  (n=1)
+
+- утащит  · n=1  · mahabharata-aranyakaparva
+
+### `BartsayitvA` — bhartsayitvā  (n=2)
+
+- С грубыми проклятиями  · n=1  · mahabharata-aranyakaparva
+- порицая  · n=1  · mahabharata-udyogaparva
+
+### `BartsitA` — bhartsitā  (n=2)
+
+- оскорбленная  · n=1  · ramayana-sundarakanda
+- оскорбляли  · n=1  · ramayana-sundarakanda
+
+### `BartsitAm` — bhartsitām  (n=1)
+
+- оскорбляли  · n=1  · ramayana-sundarakanda
+
+### `BartsyAmi` — bhartsyāmi  (n=1)
+
+- привяжу  · n=1  · atharvaveda
+
+### `BartsyamAnA` — bhartsyamānā  (n=2)
+
+- оскорбляемая  · n=2  · ramayana-sundarakanda
+
+### `BartsyamAna` — bhartsyamāna  (n=1)
+
+- пугаемую  · n=1  · ramayana-sundarakanda
+
+### `Bartu` — bhartu  (n=1)
+
+- мужа  · n=1  · ramayana-ayodhyakanda
+
+### `BartuH` — bhartuḥ  (n=57)
+
+- мужа  · n=14  · ramayana-ayodhyakanda, mahabharata-aranyakaparva, ramayana-sundarakanda, manavadharmashastra, ramayana-aranyakanda, kama-sutra, raghuvamsha
+- супруга  · n=12  · mahabharata-adiparva, mahabharata-aranyakaparva, kama-sutra, ramayana-ayodhyakanda, mahabharata-ashvamedhikaparva, raghuvamsha
+- супругу  · n=4  · mahabharata-adiparva, mahabharata-aranyakaparva, shatakatrayam-serebryakov
+- супруг  · n=3  · ramayana-ayodhyakanda, mahabharata-udyogaparva
+- Рагхавы  · n=2  · ramayana-ayodhyakanda
+- господина  · n=2  · ramayana-ayodhyakanda
+- супругом  · n=2  · ramayana-ayodhyakanda, mahabharata-aranyakaparva
+- мужу  · n=2  · ramayana-sundarakanda, manavadharmashastra
+- господину  · n=1  · ramayana-ayodhyakanda
+- с мужем  · n=1  · ramayana-ayodhyakanda
+- Васиштхи  · n=1  · ramayana-ayodhyakanda
+- к мужу  · n=1  · ramayana-sundarakanda
+- владыки  · n=1  · ramayana-aranyakanda
+- своему мужу  · n=1  · mahabharata-aranyakaparva
+- твоего супруга  · n=1  · mahabharata-adiparva
+- моего повелителя  · n=1  · buddhacharita
+- Владыке  · n=1  · kumarasambhava
+- повелителя  · n=1  · mahabharata-shalyaparva
+- за ним  · n=1  · mahabharata-sabhaparva
+- своих мужей  · n=1  · mahabharata-sabhaparva
+- своего супруга  · n=1  · raghuvamsha
+- властелина  · n=1  · megha-duta
+- властелинъ  · n=1  · megha-duta
+- хозяина  · n=1  · megha-duta
+
+### `Bartur` — bhartur  (n=9)
+
+- супругу  · n=2  · raghuvamsha
+- мужу  · n=1  · ramayana-sundarakanda
+- мужа  · n=1  · ramayana-sundarakanda
+- с мужем  · n=1  · mahabharata-aranyakaparva
+- владыки  · n=1  · raghuvamsha
+- владыке  · n=1  · raghuvamsha
+- супруга  · n=1  · raghuvamsha
+- супругом  · n=1  · raghuvamsha
+
+### `BarturAjYayA` — bharturājñayā  (n=1)
+
+- везя господина  · n=1  · buddhacharita
+
+### `BarturmaurKyeRodvignA` — bhartur maurkhyeṇodvignā  (n=1)
+
+- обеспокоенная глупостью мужа  · n=1  · kama-sutra
+
+### `BarturvirahaM` — bharturvirahaṃ  (n=1)
+
+- разлуку с царевичем  · n=1  · buddhacharita
+
+### `Bartus` — bhartus  (n=1)
+
+- мужа  · n=1  · ramayana-sundarakanda
+
+### `BarukacCa` — bharukaccha  (n=2)
+
+- берега моря  · n=1  · mahabharata-sabhaparva
+- Бхарукаччха  · n=1  · mahabharata-sabhaparva
+
+### `Barvan` — bharvan  (n=1)
+
+- пожирая  · n=1  · rigveda
+
+### `Barvati` — bharvati  (n=1)
+
+- пожирает  · n=1  · rigveda
+
+### `Barya` — bharya  (n=1)
+
+- супруга  · n=1  · mahabharata-aranyakaparva
+
+### `Barzad` — bharṣad  (n=1)
+
+- примет  · n=1  · rigveda
+
+### `Bas` — bhas  (n=2)
+
+- освещает  · n=2  · bhagavadgita-prabhupada
+
+### `BasaTaS` — bhasathaś  (n=2)
+
+- истребляете  · n=2  · rigveda
+
+### `Basad` — bhasad  (n=3)
+
+- зад  · n=2  · atharvaveda
+- хватает  · n=1  · rigveda
+
+### `Basadam` — bhasadam  (n=1)
+
+- заднюю часть  · n=1  · atharvaveda
+
+### `Basadya` — bhasadya  (n=2)
+
+- заднюю  · n=2  · atharvaveda
+
+### `BasamUhena` — bhasamūhena  (n=1)
+
+- на совокупность накшатр  · n=1  · vedanga_jyotisha
+
+### `Basan` — bhasan  (n=2)
+
+- сгрызет  · n=2  · rigveda
+
+### `Basat` — bhasat  (n=1)
+
+- зад  · n=1  · atharvaveda
+
+### `BasmANgarAgA` — bhasmāṅgarāgā  (n=1)
+
+- умащенному золою  · n=1  · raghuvamsha
+
+### `BasmAnta` — bhasmānta  (n=1)
+
+- конец в пепле  · n=1  · br-up
+
+### `BasmAntakaraRa` — bhasmāntakaraṇa  (n=1)
+
+- испепелить  · n=1  · mahabharata-aranyakaparva
+
+### `BasmArha` — bhasmārha  (n=1)
+
+- заслуживаешь быть обращенным в пепел  · n=1  · ramayana-sundarakanda
+
+### `BasmAruRa` — bhasmāruṇa  (n=1)
+
+- цвета пепла  · n=1  · buddhacharita
+
+### `BasmAruRapraBa` — bhasmāruṇaprabha  (n=1)
+
+- отливающий красным, точно зола  · n=1  · mahabharata-mausalaparva
+
+### `BasmAvaSezIkftavigrahARAm` — bhasmāvaśeṣīkṛtavigrahāṇām  (n=1)
+
+- испепелил  · n=1  · raghuvamsha
+
+### `BasmAvaSeza` — bhasmāvaśeṣa  (n=1)
+
+- испепелило  · n=1  · kumarasambhava
+
+### `BasmAvftANgAn` — bhasmāvṛtāṅgān  (n=1)
+
+- покрылись золой  · n=1  · mahabharata-adiparva
+
+### `BasmIBUtAH` — bhasmībhūtāḥ  (n=1)
+
+- Станут пеплом  · n=1  · ramayana-balakanda
+
+### `BasmIBUta` — bhasmībhūta  (n=7)
+
+- превратившись в пепел  · n=1  · mahabharata-adiparva
+- станешь кучей золы  · n=1  · ramayana-aranyakanda
+- обратилось во прах  · n=1  · mahabharata-aranyakaparva
+- превратилось в пепел  · n=1  · mahabharata-adiparva
+- превращен в пепел  · n=1  · mahabharata-adiparva
+- превратилась в пепел  · n=1  · shukasaptati
+- обращены в пепел  · n=1  · mahabharata-striparva
+
+### `BasmIBUtezu` — bhasmībhūteṣu  (n=1)
+
+- являющимся пеплом  · n=1  · manavadharmashastra
+
+### `BasmIBavati` — bhasmībhavati  (n=1)
+
+- становится прахом  · n=1  · manavadharmashastra
+
+### `BasmIkarizyataH` — bhasmīkariṣyataḥ  (n=2)
+
+- обратят в пепел  · n=1  · ramayana-sundarakanda
+- превратят в пепел  · n=1  · ramayana-sundarakanda
+
+### `BasmIkftA` — bhasmīkṛtā  (n=2)
+
+- обращен в пепел  · n=2  · ramayana-sundarakanda
+
+### `BasmIkftAM` — bhasmīkṛtāṃ  (n=2)
+
+- превращенным в пепел  · n=2  · mahabharata-udyogaparva
+
+### `BasmIkfta` — bhasmīkṛta  (n=2)
+
+- обращен в пепел  · n=1  · ramayana-sundarakanda
+- превращены в пепел  · n=1  · ramayana-balakanda
+
+### `BasmIkriyate` — bhasmīkriyate  (n=1)
+
+- обратился в пепел  · n=1  · mahabharata-dronaparva
+
+### `BasmIkuru` — bhasmīkuru  (n=1)
+
+- испепели  · n=1  · mahabharata-aranyakaparva
+
+### `Basma` — bhasma  (n=11)
+
+- пепел  · n=3  · ramayana-sundarakanda, mahabharata-adiparva, atharvaveda
+- в пепел  · n=2  · mahabharata-dronaparva, mahabharata-udyogaparva
+- золу  · n=1  · ramayana-ayodhyakanda
+- разрушив  · n=1  · mahabharata-dronaparva
+- в прах  · n=1  · mahabharata-karnaparva
+- пеплом  · n=1  · mahabharata-ashvamedhikaparva
+- сжигает  · n=1  · hatha-yoga-pradipika
+- прах  · n=1  · mahabharata-sauptikaparva
+
+### `Basma-sAt` — bhasma-sāt  (n=1)
+
+- в пепел  · n=1  · bhagavadgita-radha
+
+### `BasmaBUtAH` — bhasmabhūtāḥ  (n=1)
+
+- обратились в пепел  · n=1  · mahabharata-udyogaparva
+
+### `BasmaBUtam` — bhasmabhūtam  (n=1)
+
+- превращенную в пепел  · n=1  · mahabharata-shalyaparva
+
+### `BasmaSAyin` — bhasmaśāyin  (n=2)
+
+- лежать на земле в золе  · n=1  · ramayana-balakanda
+- возлежавший на груде пепла  · n=1  · buddhacharita
+
+### `BasmacCanna` — bhasmacchanna  (n=2)
+
+- засыпанный золою  · n=1  · ramayana-ayodhyakanda
+- скрытому в пепле  · n=1  · mahabharata-virataparva
+
+### `BasmacCanneva` — bhasmacchanneva  (n=1)
+
+- покрытым пылью  · n=1  · ramayana-balakanda
+
+### `BasmakartA` — bhasmakartā  (n=1)
+
+- Испепелитель  · n=1  · mahabharata-ashvamedhikaparva
+
+### `Basmakfta` — bhasmakṛta  (n=1)
+
+- пепел  · n=1  · ramayana-balakanda
+
+### `BasmalozWatfRadrumaiH` — bhasmaloṣṭhatṛṇadrumaiḥ  (n=1)
+
+- пеплом и комьями земли, соломой и деревьями  · n=1  · mahabharata-dronaparva
+
+### `Basmamayam` — bhasmamayam  (n=1)
+
+- из золы  · n=1  · shukasaptati
+
+### `Basman` — bhasman  (n=32)
+
+- пепел  · n=12  · manavadharmashastra, ramayana-balakanda, mahabharata-aranyakaparva, mahabharata-shalyaparva, mahabharata-ashvamedhikaparva, mahabharata-virataparva, gitagovinda
+- пепле  · n=3  · manavadharmashastra, ch-up, isha-up
+- пепла  · n=3  · ramayana-balakanda, manavadharmashastra
+- пеплом  · n=2  · mahabharata-aranyakaparva, kama-sutra
+- колючим  · n=2  · rigveda
+- золы  · n=1  · ramayana-ayodhyakanda
+- на пепел  · n=1  · manavadharmashastra
+- золу  · n=1  · ramayana-aranyakanda
+- пылью  · n=1  · ramayana-balakanda
+- угли  · n=1  · mahabharata-aranyakaparva
+- прах  · n=1  · mahabharata-aranyakaparva
+- тлен  · n=1  · mahabharata-aranyakaparva
+- золой  · n=1  · mahabharata-aranyakaparva
+- перемалывающим  · n=1  · rigveda
+- пепельной пыли  · n=1  · yotat-up
+
+### `BasmanA` — bhasmanā  (n=1)
+
+- золой  · n=1  · manavadharmashastra
+
+### `BasmaprABftaM` — bhasmaprābhṛtaṃ  (n=1)
+
+- посылку, состоящую из золы  · n=1  · shukasaptati
+
+### `BasmarASIkftA` — bhasmarāśīkṛtā  (n=1)
+
+- громоздилась куча пепла  · n=1  · ramayana-balakanda
+
+### `BasmarASIkfta` — bhasmarāśīkṛta  (n=3)
+
+- Превратил в кучу пепла  · n=1  · ramayana-balakanda
+- серую кучу пепла  · n=1  · ramayana-balakanda
+- превращенное в кучу пепла  · n=1  · mahabharata-adiparva
+
+### `BasmarUkzAyAm` — bhasmarūkṣāyām  (n=1)
+
+- покрытой пеплом  · n=1  · ramayana-sundarakanda
+
+### `BasmasAnnItAH` — bhasmasānnītāḥ  (n=1)
+
+- обращены в пепел  · n=1  · mahabharata-ashramavasikaparva
+
+### `BasmasAt` — bhasmasāt  (n=26)
+
+- в пепел  · n=20  · mahabharata-adiparva, mahabharata-bhishmaparva, mahabharata-karnaparva, mahabharata-shalyaparva, mahabharata-aranyakaparva, gitarthasamgraha-abhinavagupta, bhagavadgita-burba, ramanuja_gitabhashya, bhagavadgita-1914, bhagavadgity, bhagavadgita-erman, bhagavadgita-smirnov, bhagavadgita-sementsov, bhagavadgita-sharma, bhagavadgita-prabhupada, mahabharata-ashramavasikaparva
+- пепел  · n=2  · mahabharata-adiparva, mahabharata-aranyakaparva
+- дотла  · n=1  · bhagavadgita-1914
+- без остатка  · n=1  · bhagavadgita-sementsov
+- въ ничтожный пепелъ  · n=1  · bhagavadgita-1909
+- пожираетъ  · n=1  · bhagavadgita-1909
+
+### `BasmasAtkf` — bhasmasāt kṛ  (n=2)
+
+- превращаетъ въ пепелъ  · n=1  · bhagavadgita-1788
+- превращать въ пепелъ  · n=1  · bhagavadgita-1788
+
+### `BasmasAtkfta` — bhasmasātkṛta  (n=1)
+
+- пепел  · n=1  · ramayana-balakanda
+
+### `BasmasAtkftavata` — bhasmasāt kṛtavata  (n=1)
+
+- испепелившего  · n=1  · raghuvamsha
+
+### `BasmavarRaprakASena` — bhasmavarṇaprakāśena  (n=1)
+
+- подобной цвету пепла  · n=1  · mahabharata-virataparva
+
+### `Basmavfta` — bhasmavṛta  (n=1)
+
+- сокрытый пеплом  · n=1  · mahabharata-virataparva
+
+### `BastrA` — bhastrā  (n=4)
+
+- утроба  · n=2  · mahabharata-adiparva
+- мехов  · n=1  · hatha-yoga-pradipika
+- Бхастрику  · n=1  · hatha-yoga-pradipika
+
+### `BastrAKya` — bhastrākhya  (n=2)
+
+- Бхастрикой  · n=1  · hatha-yoga-pradipika
+- Бхастрики  · n=1  · hatha-yoga-pradipika
+
+### `BastrAm` — bhastrām  (n=1)
+
+- Бхастрика Пранаяму  · n=1  · hatha-yoga-pradipika
+
+### `BastrAvallohakArasya` — bhastrāvallohakārasya  (n=1)
+
+- подобно кузнечным мехам  · n=1  · hatha-yoga-pradipika
+
+### `BastrikA` — bhastrikā  (n=3)
+
+- Бхастрика  · n=2  · hatha-yoga-pradipika
+- происхождения  · n=1  · shatakatrayam-serebryakov
+
+### `Basvata` — bhasvata  (n=3)
+
+- сияющим  · n=3  · mahabharata-bhishmaparva, ramanuja_gitabhashya, bhagavadgita-erman
+
+### `BatsyAmi` — bhatsyāmi  (n=1)
+
+- привяжу  · n=1  · atharvaveda
+
+### `BaumA` — bhaumā  (n=1)
+
+- земные твари  · n=1  · mahabharata-aranyakaparva
+
+### `BaumAnikavakAni` — bhaumāni kavakāni  (n=1)
+
+- грибов, растущих на земле  · n=1  · manavadharmashastra
+
+### `Bauma` — bhauma  (n=27)
+
+- земной  · n=5  · mahabharata-adiparva, raghuvamsha, mahabharata-virataparva
+- сына Земли  · n=3  · mahabharata-aranyakaparva, mahabharata-udyogaparva
+- земные  · n=3  · mahabharata-adiparva, raghuvamsha
+- с земли  · n=3  · mahabharata-bhishmaparva
+- бхаума  · n=2  · mahabharata-adiparva
+- землю  · n=1  · ramayana-ayodhyakanda
+- пол  · n=1  · ramayana-ayodhyakanda
+- земляные  · n=1  · manavadharmashastra
+- по земле  · n=1  · ramayana-balakanda
+- из глины  · n=1  · mahabharata-aranyakaparva
+- на земле  · n=1  · mahabharata-aranyakaparva
+- земном  · n=1  · mahabharata-adiparva
+- земное  · n=1  · mahabharata-bhishmaparva
+- о свойствах земли  · n=1  · mahabharata-bhishmaparva
+- пыль с земли  · n=1  · mahabharata-dronaparva
+- сын Земли  · n=1  · mahabharata-udyogaparva
+
+### `Baumam` — bhaumam  (n=2)
+
+- с земли  · n=2  · mahabharata-virataparva
+
+### `Baumasya` — bhaumasya  (n=3)
+
+- сына Бхуми  · n=2  · mahabharata-udyogaparva
+- сын Бхуми  · n=1  · mahabharata-udyogaparva
+
+### `BaumavAravrata` — bhaumavāravrata  (n=2)
+
+- Обет вторника  · n=2  · devi-gita
+
+### `Baumena` — bhaumena  (n=1)
+
+- земли  · n=1  · mahabharata-karnaparva
+
+### `BaumikaiH` — bhaumikaiḥ  (n=1)
+
+- собравшимся на земле  · n=1  · manavadharmashastra
+
+### `BautaH` — bhautaḥ  (n=1)
+
+- духам  · n=1  · manavadharmashastra
+
+### `Bautika` — bhautika  (n=8)
+
+- материальных элементов  · n=3  · sankhya-karika, nyaya-bhashya
+- духам  · n=1  · manavadharmashastra
+- материальных  · n=1  · nyaya-bhashya
+- материальный  · n=1  · nyaya-bhashya
+- вещественное начало  · n=1  · nyaya-bhashya
+- Материальное  · n=1  · nyaya-bhashya
+
+### `BautikaDarma` — bhautikadharma  (n=1)
+
+- свойство материальных вещей  · n=1  · nyaya-bhashya
+
+### `Bautikatva` — bhautikatva  (n=1)
+
+- вещественности  · n=1  · nyaya-bhashya
+
+### `Bautikezu` — bhautikeṣu  (n=1)
+
+- плоти  · n=1  · raghuvamsha
+
+### `BauvanAH` — bhauvanāḥ  (n=2)
+
+- вселенских  · n=2  · atharvaveda
+
+### `Bauvana` — bhauvana  (n=3)
+
+- Бхаувана  · n=3  · mahabharata-udyogaparva, mahabharata-adiparva
+
+### `BauvanaH` — bhauvanaḥ  (n=1)
+
+- Бхаувана  · n=1  · mahabharata-adiparva
+
+### `Bauvanena` — bhauvanena  (n=2)
+
+- Бхауваной  · n=2  · mahabharata-udyogaparva
+
+### `Bav` — bhav  (n=67)
+
+- бывает  · n=7  · bhagavadgita-smirnov, bhagavadgita-sementsov, ch-up, nyaya-bhashya
+- становится  · n=6  · ch-up, mahabharata-aranyakaparva, hatha-yoga-pradipika, vedartha-samgraha_ramanuja, tai-up
+- быть  · n=5  · shukasaptati, mahabharata-adiparva, mahabharata-aranyakaparva, mahabharata-virataparva
+- был  · n=4  · ramayana-ayodhyakanda, mahabharata-aranyakaparva, mahabharata-virataparva, mahabharata-ashramavasikaparva
+- есть  · n=4  · ch-up, pr-up
+- станет  · n=2  · mahabharata-adiparva, ramayana-ayodhyakanda
+- стали  · n=2  · manavadharmashastra, devi-gita
+- будь  · n=2  · rigveda, bhagavadgita-sementsov
+- продолжают существование  · n=2  · mahabharata-adiparva
+- становятся  · n=2  · mahabharata-adiparva, br-up
+- происходит  · n=2  · mahabharata-bhishmaparva, bhagavadgita-erman
+- становишься  · n=2  · rigveda
+- была  · n=2  · ch-up
+- Да будут  · n=1  · atharvaveda
+- получит имя  · n=1  · mahabharata-adiparva
+- буду  · n=1  · ramayana-ayodhyakanda
+- пусть  · n=1  · manavadharmashastra
+- не должны  · n=1  · ramayana-balakanda
+- вспомнит  · n=1  · mahabharata-aranyakaparva
+- рождаться  · n=1  · mahabharata-aranyakaparva
+- устройте  · n=1  · rigveda
+- будет  · n=1  · rigveda
+- развиваются  · n=1  · mahabharata-adiparva
+- имеется  · n=1  · mahabharata-adiparva
+- Бхаве  · n=1  · mahabharata-dronaparva
+- возникает  · n=1  · ramanuja_gitabhashya
+- ВОЗНИКАЕТ  · n=1  · ramanuja_gitabhashya
+- было  · n=1  · bhagavadgita-1914
+- стань  · n=1  · bhagavadgita-smirnov
+- возросла  · n=1  · mahabharata-shalyaparva
+- бывают  · n=1  · mahabharata-sabhaparva
+- наступит  · n=1  · mahabharata-sabhaparva
+- возникнуть  · n=1  · hatha-yoga-pradipika
+- превращается  · n=1  · atharvaveda
+- бываешь  · n=1  · atharvaveda
+- будьте  · n=1  · shatakatrayam
+- можешь  · n=1  · shukasaptati
+- обретают  · n=1  · vedartha-samgraha_ramanuja
+
+### `BavA` — bhavā  (n=36)
+
+- Будь  · n=17  · rigveda, rigveda, rigveda, rigveda, rigveda, rigveda, rigveda, rigveda
+- будь  · n=13  · rigveda, rigveda, rigveda, rigveda, rigveda, rigveda, atharvaveda
+- стань  · n=2  · rigveda, atharvaveda
+- состояния  · n=2  · sankhya-karika
+- Стань  · n=1  · rigveda
+- Обратись  · n=1  · rigveda
+
+### `BavABavAtmakam` — bhavābhavātmakam  (n=1)
+
+- преходящи  · n=1  · mahabharata-aranyakaparva
+
+### `BavABavau` — bhavābhavau  (n=1)
+
+- бытия и небытия  · n=1  · buddhacharita
+
+### `BavABiharziRI` — bhavābhiharṣiṇī  (n=1)
+
+- радующая  · n=1  · ramayana-ayodhyakanda
+
+### `BavAMSca` — bhavāṃśca  (n=1)
+
+- ты  · n=1  · mahabharata-ashvamedhikaparva
+
+### `BavAMScabrahmavittamaH` — bhavāṃśca brahmavittamaḥ  (n=1)
+
+- А что до тебя самого, то ты - наилучший из всех знатоков брахмы  · n=1  · mahabharata-dronaparva
+
+### `BavANga` — bhavāṅga  (n=1)
+
+- с головы Бхавы  · n=1  · ramayana-balakanda
+
+### `BavASarvau` — bhavāśarvau  (n=7)
+
+- Бхава-и-Шарва  · n=6  · atharvaveda, atharvaveda, atharvaveda, atharvaveda
+- Бхаву-и-Шарву  · n=1  · atharvaveda
+
+### `BavASoka` — bhavāśoka  (n=2)
+
+- ашока  · n=2  · mahabharata-aranyakaparva
+
+### `BavATaH` — bhavāthaḥ  (n=1)
+
+- станете  · n=1  · atharvaveda
+
+### `BavAdfSa` — bhavādṛśa  (n=2)
+
+- такие, как ты  · n=2  · shukasaptati
+
+### `BavAdya` — bhavādya  (n=1)
+
+- теперь  · n=1  · mahabharata-adiparva
+
+### `BavAma` — bhavāma  (n=2)
+
+- считаться  · n=1  · mahabharata-udyogaparva
+- будут  · n=1  · rigveda
+
+### `BavAmaH` — bhavāmaḥ  (n=1)
+
+- Прикинулись бы  · n=1  · mahabharata-aranyakaparva
+
+### `BavAmbuDi` — bhavāmbudhi  (n=1)
+
+- океан бытия  · n=1  · bhagavadgita-radha
+
+### `BavAmburASau` — bhavāmburāśau  (n=2)
+
+- рыб  · n=1  · shatakatrayam
+- море бытия  · n=1  · shatakatrayam-serebryakov
+
+### `BavAmi` — bhavāmi  (n=30)
+
+- становлюсь  · n=9  · ramayana-ayodhyakanda, mahabharata-aranyakaparva, bhagavadgita-burba, bhagavadgita-smirnov, bhagavadgita-1909, bhagavadgita-prabhupada, bhagavadgita-radha, atharvaveda, atharvaveda
+- буду  · n=5  · mahabharata-virataparva, ramayana-ayodhyakanda, bhagavadgita-1788
+- есмь  · n=3  · ramanuja_gitabhashya, bhagavadgity, bhagavadgita-erman
+- являюсь  · n=2  · mahabharata-dronaparva, bhagavadgita-sharma
+- вытащил  · n=1  · ramayana-ayodhyakanda
+- довожусь  · n=1  · mahabharata-aranyakaparva
+- я  · n=1  · mahabharata-bhishmaparva
+- немедля  · n=1  · gitarthasamgraha-abhinavagupta
+- пребывают  · n=1  · bhagavadgita-1914
+- Я  · n=1  · bhagavadgita-sementsov
+- становится  · n=1  · bhagavadgita-prabhupada
+- превращаюсь  · n=1  · mahabharata-ashvamedhikaparva
+- будешь  · n=1  · shukasaptati
+- стану  · n=1  · shukasaptati
+- существую  · n=1  · sankhya-karika
+
+### `BavAn` — bhavān  (n=274)
+
+- ты  · n=191  · mahabharata-aranyakaparva, mahabharata-udyogaparva, mahabharata-adiparva, mahabharata-karnaparva, mahabharata-dronaparva, ramayana-ayodhyakanda, ramayana-aranyakanda, mahabharata-ashvamedhikaparva, raghuvamsha, mahabharata-virataparva, mahabharata-shalyaparva, mahabharata-bhishmaparva, mahabharata-sabhaparva, br-up, amaru-shataka, megha-duta, ramanuja_gitabhashya, bhagavadgity, mahabharata-ashramavasikaparva, mahabharata-shantiparva, ramayana-balakanda, buddhacharita, gitarthasamgraha-abhinavagupta, bhagavadgita-smirnov, bhagavadgita-sementsov, bhagavadgita-1909, bhagavadgita-radha, mahabharata-mahaprasthanikaparva
+- Ты  · n=27  · mahabharata-dronaparva, bhagavadgita-prabhupada, ramayana-aranyakanda, ramayana-balakanda, mahabharata-aranyakaparva, mahabharata-udyogaparva, bhagavadgita-1914, bhagavadgita-sharma, ramayana-sundarakanda, mahabharata-adiparva, mahabharata-bhishmaparva, gitarthasamgraha-abhinavagupta, bhagavadgita-sementsov, mahabharata-sabhaparva, mahabharata-virataparva, gitagovinda
+- господин  · n=12  · br-up, buddhacharita, mahabharata-ashvamedhikaparva, ramayana-ayodhyakanda, ramayana-sundarakanda, ramayana-balakanda, mahabharata-adiparva, bhagavadgita-burba
+- тебя  · n=7  · ramayana-ayodhyakanda, ramayana-aranyakanda, ramayana-balakanda, mahabharata-aranyakaparva, mahabharata-bhishmaparva, bhagavadgita-1909, mahabharata-karnaparva
+- почтенный  · n=7  · mahabharata-aranyakaparva, mahabharata-karnaparva, mahabharata-ashvamedhikaparva
+- вы  · n=2  · mahabharata-adiparva
+- тебе  · n=2  · ramayana-ayodhyakanda, mahabharata-aranyakaparva
+- с тобою  · n=2  · mahabharata-aranyakaparva
+- ты сам  · n=2  · mahabharata-udyogaparva, bhagavadgita-smirnov
+- Господин  · n=2  · bhagavadgita-burba
+- Богомъ  · n=2  · bhagavadgity, bhagavadgita-1788
+- Вы  · n=2  · bhagavadgita-radha
+- Взяв лук с натянутой тетивой  · n=1  · ramayana-ayodhyakanda
+- оставайся  · n=1  · ramayana-ayodhyakanda
+- государь  · n=1  · ramayana-balakanda
+- твое  · n=1  · mahabharata-aranyakaparva
+- Только скажи  · n=1  · mahabharata-aranyakaparva
+- повелитель  · n=1  · buddhacharita
+- благоволи ты  · n=1  · mahabharata-udyogaparva
+- владыка  · n=1  · mahabharata-udyogaparva
+- Ты, почтенный  · n=1  · gitarthasamgraha-abhinavagupta
+- Ты, Господь  · n=1  · bhagavadgita-1914
+- Ты сам  · n=1  · bhagavadgita-erman
+- Ты самъ, учитель мой  · n=1  · bhagavadgita-1788
+- сей  · n=1  · bhagavadgita-1788
+- Богъ  · n=1  · bhagavadgita-1909
+- ты (досточтимый)  · n=1  · bhagavadgita-prabhupada
+- твой  · n=1  · mahabharata-karnaparva
+
+### `BavAnI` — bhavānī  (n=5)
+
+- Бхавани  · n=3  · devi-gita, megha-duta
+- богини  · n=1  · megha-duta
+- Гаури  · n=1  · megha-duta
+
+### `BavAnagre` — bhavānagre  (n=1)
+
+- ты сам прежде всего  · n=1  · mahabharata-udyogaparva
+
+### `BavAnfkzarA` — bhavānṛkṣarā  (n=1)
+
+- Без типов  · n=1  · rigveda
+
+### `BavAni` — bhavāni  (n=1)
+
+- ты следуешь  · n=1  · mahabharata-karnaparva
+
+### `BavAntara` — bhavāntara  (n=1)
+
+- в иной жизни  · n=1  · buddhacharita
+
+### `BavAnuSanasA` — bhavānuśanasā  (n=1)
+
+- Ушанасу  · n=1  · mahabharata-udyogaparva
+
+### `BavAnupekzAM` — bhavānupekṣāṃ  (n=1)
+
+- снисходительно  · n=1  · mahabharata-dronaparva
+
+### `BavAnyadi` — bhavānyadi  (n=1)
+
+- действительно  · n=1  · mahabharata-aranyakaparva
+
+### `BavAnyuktaH` — bhavānyuktaḥ  (n=1)
+
+- ты  · n=1  · mahabharata-karnaparva
+
+### `BavApyaya` — bhavāpyaya  (n=2)
+
+- рожденье и смерть  · n=1  · bhagavadgita-sementsov
+- начала и конца  · n=1  · bhagavadgita-1909
+
+### `BavApyayau` — bhavāpyayau  (n=6)
+
+- возникновении и уходе  · n=2  · mahabharata-bhishmaparva, bhagavadgita-erman
+- рождении и возращении  · n=1  · gitarthasamgraha-abhinavagupta
+- появление и исчезновение  · n=1  · bhagavadgita-burba
+- появлении и исчезновении  · n=1  · bhagavadgita-burba
+- возникновении и смерти  · n=1  · ramanuja_gitabhashya
+
+### `BavArjuna` — bhavārjuna  (n=12)
+
+- о Арджуна  · n=2  · mahabharata-bhishmaparva, bhagavadgita-erman
+- будь, о Арджуна  · n=2  · gitarthasamgraha-abhinavagupta, bhagavadgita-1914
+- Арджуна  · n=2  · bhagavadgita-smirnov
+- будь, Арджуна  · n=2  · bhagavadgita-sementsov, bhagavadgita-1909
+- будь же йогином, Арджуна  · n=1  · ramanuja_gitabhashya
+- стань, Арджуна  · n=1  · bhagavadgity
+- будь  · n=1  · bhagavadgita-1788
+- ты  · n=1  · bhagavadgita-1909
+
+### `BavAsi` — bhavāsi  (n=5)
+
+- будешь  · n=2  · rigveda, atharvaveda
+- становишься  · n=1  · rigveda
+- бываешь  · n=1  · rigveda
+- если ты  · n=1  · rigveda
+
+### `BavAsme` — bhavāsme  (n=1)
+
+- будь у нас  · n=1  · rigveda
+
+### `BavAt` — bhavāt  (n=3)
+
+- из бытия  · n=2  · devi-gita
+- опасности  · n=1  · mahabharata-adiparva
+
+### `BavAti` — bhavāti  (n=19)
+
+- будет  · n=11  · rigveda, rigveda, rigveda, rigveda, rigveda, rigveda, atharvaveda, rigveda, atharvaveda
+- станет  · n=4  · rigveda, rigveda, atharvaveda
+- становится  · n=2  · rigveda, atharvaveda
+- стать  · n=1  · rigveda
+- бывает  · n=1  · rigveda
+
+### `BavAtu` — bhavātu  (n=1)
+
+- пусть будет  · n=1  · rigveda
+
+### `BavAya` — bhavāya  (n=3)
+
+- к успеху  · n=1  · mahabharata-aranyakaparva
+- ради счастья  · n=1  · buddhacharita
+- Бхаве  · n=1  · mahabharata-ashvamedhikaparva
+
+### `BavItvA` — bhavītvā  (n=2)
+
+- предназначены для существования  · n=2  · rigveda
+
+### `BavIyas` — bhavīyas  (n=1)
+
+- наибольшим  · n=1  · rigveda
+
+### `Bava` — bhava  (n=423)
+
+- будь  · n=181  · mahabharata-udyogaparva, mahabharata-aranyakaparva, mahabharata-adiparva, ramayana-ayodhyakanda, ramayana-sundarakanda, ramayana-aranyakanda, mahabharata-dronaparva, mahabharata-bhishmaparva, bhagavadgita-burba, bhagavadgity, bhagavadgita-radha, rigveda, bhagavadgita-smirnov, ramanuja_gitabhashya, bhagavadgita-prabhupada, atharvaveda, rigveda, rigveda, buddhacharita, gitarthasamgraha-abhinavagupta, bhagavadgita-sharma, rigveda, mahabharata-shalyaparva, mahabharata-virataparva, rigveda, rigveda, bhagavadgita-erman, bhagavadgita-1788, bhagavadgita-sementsov, bhagavadgita-1909, mahabharata-karnaparva, mahabharata-sabhaparva, raghuvamsha, mahabharata-ashramavasikaparva, manavadharmashastra, rigveda, bhagavadgita-1914, atharvaveda, atharvaveda, shatakatrayam, atharvaveda, atharvaveda, shukasaptati, atharvaveda, amaru-shataka, mahabharata-sauptikaparva, kau-up
+- Бхава  · n=35  · atharvaveda, atharvaveda, mahabharata-dronaparva, mahabharata-adiparva, ramayana-balakanda, mahabharata-aranyakaparva, atharvaveda, mahabharata-karnaparva, atharvaveda, mahabharata-sabhaparva, shatakatrayam-serebryakov, atharvaveda, mahabharata-sauptikaparva, vedanga_jyotisha
+- Будь  · n=31  · rigveda, ramayana-aranyakanda, rigveda, bhagavadgita-1788, atharvaveda, ramayana-sundarakanda, ramayana-balakanda, rigveda, rigveda, mahabharata-udyogaparva, rigveda, mahabharata-adiparva, ramanuja_gitabhashya, bhagavadgita-1914, bhagavadgita-sementsov, rigveda, rigveda, atharvaveda, mahabharata-virataparva, atharvaveda, atharvaveda, atharvaveda
+- стань  · n=25  · bhagavadgita-prabhupada, bhagavadgita-burba, rigveda, atharvaveda, ramayana-ayodhyakanda, ramayana-aranyakanda, ramayana-balakanda, mahabharata-aranyakaparva, rigveda, bhagavadgita-1914, bhagavadgita-radha, atharvaveda, atharvaveda
+- Стань  · n=8  · ramayana-aranyakanda, ramayana-balakanda, mahabharata-aranyakaparva, rigveda, atharvaveda, raghuvamsha, atharvaveda, atharvaveda
+- Бхаве  · n=8  · atharvaveda, mahabharata-dronaparva, mahabharata-karnaparva, atharvaveda, atharvaveda, mahabharata-sauptikaparva
+- Бхаву  · n=5  · mahabharata-karnaparva, mahabharata-aranyakaparva, mahabharata-dronaparva, atharvaveda
+- станешь  · n=4  · ramayana-ayodhyakanda, ramayana-aranyakanda, atharvaveda
+- будет  · n=4  · ramayana-ayodhyakanda, mahabharata-aranyakaparva, kumarasambhava
+- бытие  · n=4  · ramayana-ayodhyakanda, bhagavadgita-1914, yoga-sutry, yoga-sutry_zagumennov
+- чувством  · n=4  · mahabharata-bhishmaparva, bhagavadgita-erman
+- рождение  · n=4  · bhagavadgita-prabhupada, mahabharata-dronaparva, bhagavadgita-radha
+- оставайся  · n=3  · ramayana-ayodhyakanda, atharvaveda
+- существование  · n=3  · mahabharata-bhishmaparva, bhagavadgita-erman, yoga-sutry_sharma
+- пребывай  · n=3  · mahabharata-bhishmaparva, bhagavadgita-erman, bhagavadgita-sharma
+- жизнь  · n=2  · ramayana-ayodhyakanda, bhagavadgita-1909
+- ты  · n=2  · ramayana-ayodhyakanda, mahabharata-aranyakaparva
+- благоденствия  · n=2  · ramayana-ayodhyakanda
+- благо  · n=2  · ramayana-ayodhyakanda, mahabharata-aranyakaparva
+- будешь  · n=2  · ramayana-ayodhyakanda, bhagavadgita-1909
+- желаньем  · n=2  · ramanuja_gitabhashya
+- погружайся  · n=2  · ramanuja_gitabhashya, bhagavadgita-sementsov
+- говоренія  · n=2  · bhagavadgity, bhagavadgita-1788
+- возникновении  · n=2  · bhagavadgita-smirnov, bhagavadgita-sharma
+- яви  · n=2  · bhagavadgita-sementsov, bhagavadgita-1909
+- Бхавы  · n=2  · kumarasambhava, atharvaveda
+- из  · n=2  · devi-gita
+- мир  · n=2  · shatakatrayam, shatakatrayam-serebryakov
+- существующий  · n=2  · mai-up
+- Пусть  · n=1  · ramayana-ayodhyakanda
+- нрав  · n=1  · ramayana-ayodhyakanda
+- останься  · n=1  · ramayana-ayodhyakanda
+- охраняй  · n=1  · ramayana-ayodhyakanda
+- горе  · n=1  · ramayana-ayodhyakanda
+- Жить  · n=1  · ramayana-ayodhyakanda
+- печалят  · n=1  · ramayana-ayodhyakanda
+- быть  · n=1  · ramayana-ayodhyakanda
+- бывал  · n=1  · ramayana-ayodhyakanda
+- Будешь  · n=1  · ramayana-sundarakanda
+- победу  · n=1  · ramayana-sundarakanda
+- Довольствуйся  · n=1  · ramayana-aranyakanda
+- Возьми  · n=1  · ramayana-aranyakanda
+- живи  · n=1  · ramayana-balakanda
+- обретешь  · n=1  · ramayana-balakanda
+- Соблюдай  · n=1  · ramayana-balakanda
+- жить спокойно  · n=1  · mahabharata-aranyakaparva
+- обратись  · n=1  · mahabharata-aranyakaparva
+- жизни  · n=1  · mahabharata-aranyakaparva
+- благоденствующий  · n=1  · mahabharata-aranyakaparva
+- твари  · n=1  · mahabharata-aranyakaparva
+- проявись  · n=1  · rigveda
+- Сделай  · n=1  · rigveda
+- помоги  · n=1  · rigveda
+- Превратись  · n=1  · rigveda
+- да пребудешь  · n=1  · mahabharata-bhishmaparva
+- владыку  · n=1  · mahabharata-dronaparva
+- бытия  · n=1  · buddhacharita
+- перерождений  · n=1  · buddhacharita
+- изобилие  · n=1  · mahabharata-udyogaparva
+- благополучием  · n=1  · mahabharata-udyogaparva
+- преуспеяния  · n=1  · mahabharata-udyogaparva
+- пусть будешь  · n=1  · rigveda
+- да будет  · n=1  · rigveda
+- Сущее  · n=1  · gitarthasamgraha-abhinavagupta
+- посвяти  · n=1  · gitarthasamgraha-abhinavagupta
+- сделай  · n=1  · gitarthasamgraha-abhinavagupta
+- бытие/возникновение  · n=1  · bhagavadgita-burba
+- происхождении  · n=1  · bhagavadgita-1914
+- дай  · n=1  · bhagavadgita-1914
+- проявление  · n=1  · bhagavadgity
+- пусть  · n=1  · bhagavadgita-erman
+- совершай  · n=1  · bhagavadgita-smirnov
+- рѣшись содѣлаться  · n=1  · bhagavadgita-1788
+- рожденье  · n=1  · bhagavadgita-sementsov
+- Прилепись  · n=1  · bhagavadgita-sementsov
+- считаются  · n=1  · bhagavadgita-sementsov
+- поклоняйся  · n=1  · bhagavadgita-1909
+- приучи себя  · n=1  · bhagavadgita-sharma
+- устремляясь  · n=1  · bhagavadgita-sharma
+- природа  · n=1  · bhagavadgita-prabhupada
+- энергия  · n=1  · bhagavadgita-prabhupada
+- появление  · n=1  · bhagavadgita-prabhupada
+- стать  · n=1  · bhagavadgita-prabhupada
+- предстань  · n=1  · bhagavadgita-radha
+- чающим  · n=1  · kumarasambhava
+- Распрямись  · n=1  · rigveda
+- существования  · n=1  · devi-gita
+- появление на свет  · n=1  · raghuvamsha
+- сжалься  · n=1  · raghuvamsha
+- стал  · n=1  · atharvaveda
+- воплощения  · n=1  · shatakatrayam
+- смилуйся  · n=1  · shatakatrayam
+- сансары  · n=1  · shatakatrayam
+- бытии  · n=1  · shatakatrayam
+- бытием  · n=1  · shatakatrayam-serebryakov
+- миру чувств  · n=1  · shatakatrayam-serebryakov
+- страдания  · n=1  · gitagovinda
+- возникает  · n=1  · yoga-sutry_vyasa-bhashya
+- причинная  · n=1  · yoga-sutry_sharma
+- бытию  · n=1  · vedartha-samgraha_ramanuja
+- существованию  · n=1  · paramarthasara-abhinavagupta
+- Бхава (Ардра)  · n=1  · vedanga_jyotisha
+
+### `Bava-KaRqana` — bhava-khaṇḍana  (n=1)
+
+- разрушающий узы бытия  · n=1  · gitagovinda
+
+### `Bava-apyayau` — bhava-apyayau  (n=1)
+
+- о творении и уничтожении  · n=1  · bhagavadgita-radha
+
+### `Bava-jalaDi-ratnam` — bhava-jaladhi-ratnam  (n=1)
+
+- сокровище в океане бытия  · n=1  · gitagovinda
+
+### `Bava-mocana` — bhava-mocana  (n=1)
+
+- освобождающий от уз бытия  · n=1  · gitagovinda
+
+### `Bava-ratim` — bhava-ratim  (n=1)
+
+- страстью  · n=1  · shatakatrayam-serebryakov
+
+### `Bava-sAra` — bhava-sāra  (n=1)
+
+- превосходнейшему  · n=1  · gitagovinda
+
+### `BavaBAmAya` — bhavabhāmāya  (n=1)
+
+- блеску  · n=1  · nr-up
+
+### `BavaBUtam` — bhavabhūtam  (n=1)
+
+- основу бытия  · n=1  · shv-up
+
+### `BavaH` — bhavaḥ  (n=10)
+
+- Бхава  · n=4  · mahabharata-adiparva, mahabharata-aranyakaparva, mahabharata-dronaparva, buddhacharita
+- рожденіе  · n=2  · bhagavadgity, bhagavadgita-1788
+- бытие  · n=1  · gitarthasamgraha-abhinavagupta
+- сущее  · n=1  · ramanuja_gitabhashya
+- возникновение  · n=1  · bhagavadgita-smirnov
+- рождение  · n=1  · bhagavadgita-sharma
+
+### `BavaTa` — bhavatha  (n=6)
+
+- сопровождает  · n=2  · rigveda
+- вы становитесь  · n=1  · atharvaveda
+- становитесь  · n=1  · atharvaveda
+- знаете  · n=1  · rigveda
+- заключаетесь  · n=1  · rigveda
+
+### `BavaTaH` — bhavathaḥ  (n=5)
+
+- бываете  · n=2  · rigveda, rigveda
+- остаетесь  · n=1  · rigveda
+- останетесь  · n=1  · rigveda
+- были  · n=1  · rigveda
+
+### `BavaTo` — bhavatho  (n=2)
+
+- бываете  · n=2  · rigveda, rigveda
+
+### `Bavac` — bhavac  (n=2)
+
+- настоящее  · n=2  · raghuvamsha
+
+### `BavacApramattaH` — bhavacāpramattaḥ  (n=1)
+
+- не оставляй заботой  · n=1  · ramayana-ayodhyakanda
+
+### `Bavad` — bhavad  (n=3)
+
+- страдания  · n=1  · shatakatrayam
+- вашего  · n=1  · vedartha-samgraha_ramanuja
+- вашей  · n=1  · vedartha-samgraha_ramanuja
+
+### `Bavad-avanAya` — bhavad-avanāya  (n=1)
+
+- защитить тебя  · n=1  · gitagovinda
+
+### `BavadA` — bhavadā  (n=1)
+
+- Бхавада  · n=1  · mahabharata-shalyaparva
+
+### `BavadAgamana` — bhavadāgamana  (n=1)
+
+- твоем приходе  · n=1  · ramayana-sundarakanda
+
+### `BavadBAvAnuga` — bhavadbhāvānuga  (n=1)
+
+- исполнял волю  · n=1  · mahabharata-ashvamedhikaparva
+
+### `BavadBaktigata` — bhavadbhaktigata  (n=1)
+
+- испытывал любовь  · n=1  · mahabharata-ashvamedhikaparva
+
+### `BavadBi` — bhavadbhi  (n=2)
+
+- вам  · n=1  · mahabharata-aranyakaparva
+- вами  · n=1  · mahabharata-udyogaparva
+
+### `BavadBiH` — bhavadbhiḥ  (n=27)
+
+- вами  · n=11  · mahabharata-aranyakaparva, mahabharata-shalyaparva, mahabharata-ashramavasikaparva, ramayana-sundarakanda, mahabharata-adiparva, mahabharata-dronaparva, mahabharata-udyogaparva, mahabharata-sabhaparva
+- вы  · n=6  · mahabharata-aranyakaparva, ramayana-balakanda, mahabharata-karnaparva, mahabharata-ashvamedhikaparva, raghuvamsha
+- Вы  · n=3  · ramayana-aranyakanda, mahabharata-udyogaparva, mahabharata-svargarohanikaparva
+- с вами  · n=3  · mahabharata-adiparva, mahabharata-bhishmaparva, mahabharata-shalyaparva
+- вам  · n=2  · mahabharata-udyogaparva, shukasaptati
+- вас  · n=1  · mahabharata-sabhaparva
+- вашей помощью  · n=1  · mahabharata-ashramavasikaparva
+
+### `BavadBir` — bhavadbhir  (n=1)
+
+- с вами  · n=1  · ramayana-sundarakanda
+
+### `BavadByAM` — bhavadbhyāṃ  (n=1)
+
+- Когда ты  · n=1  · mahabharata-udyogaparva
+
+### `BavadByAm` — bhavadbhyām  (n=3)
+
+- вашими  · n=1  · ramayana-balakanda
+- вами  · n=1  · mahabharata-adiparva
+- вами обоими  · n=1  · mahabharata-dronaparva
+
+### `BavadByAmanusaMmatam` — bhavadbhyām anusaṃmatam  (n=1)
+
+- согласованные, одобренные (мною) вместе с вами  · n=1  · mahabharata-dronaparva
+
+### `BavadByas` — bhavadbhyas  (n=1)
+
+- вас  · n=1  · mahabharata-adiparva
+
+### `BavadIya` — bhavadīya  (n=1)
+
+- тебе принадлежит  · n=1  · mahabharata-ashramavasikaparva
+
+### `BavadbudDiyujA` — bhavadbuddhiyujā  (n=1)
+
+- поддерживаемый твоею мудростью  · n=1  · mahabharata-ashramavasikaparva
+
+### `BavaddarSanAkANkzin` — bhavaddarśanākāṅkṣin  (n=1)
+
+- с желанием увидеть тебя  · n=1  · mahabharata-aranyakaparva
+
+### `BavaddarSanam` — bhavaddarśanam  (n=1)
+
+- ваша точка зрения  · n=1  · vedartha-samgraha_ramanuja
+
+### `Bavadfzwi` — bhavadṛṣṭi  (n=1)
+
+- утверждать, что все существует  · n=1  · yoga-sutry_vyasa-bhashya
+
+### `Bavadgata` — bhavadgata  (n=1)
+
+- под твоею защитой  · n=1  · mahabharata-aranyakaparva
+
+### `Bavadgatam` — bhavadgatam  (n=1)
+
+- устремлен только к тебе  · n=1  · mahabharata-ashvamedhikaparva
+
+### `BavadguRaSataiH` — bhavadguṇaśataiḥ  (n=1)
+
+- сотен твоих достоинств  · n=1  · mahabharata-ashramavasikaparva
+
+### `BavadguruH` — bhavadguruḥ  (n=1)
+
+- отец же твой  · n=1  · raghuvamsha
+
+### `BavaduHKa` — bhavaduḥkha  (n=1)
+
+- горести бытия  · n=1  · shatakatrayam-serebryakov
+
+### `Bavaduttara` — bhavaduttara  (n=1)
+
+- помещая 'господин' в конце  · n=1  · manavadharmashastra
+
+### `BavadvAkya` — bhavadvākya  (n=1)
+
+- твоему слову  · n=1  · mahabharata-sabhaparva
+
+### `Bavadvacana` — bhavadvacana  (n=1)
+
+- твою волю  · n=1  · mahabharata-ashramavasikaparva
+
+### `Bavadvasu` — bhavadvasu  (n=1)
+
+- имеющий добро  · n=1  · atharvaveda
+
+### `BavadviDA` — bhavadvidhā  (n=1)
+
+- подобные господину (тебе)  · n=1  · ramayana-sundarakanda
+
+### `BavadviDAH` — bhavadvidhāḥ  (n=5)
+
+- подобные тебе  · n=2  · mahabharata-aranyakaparva, mahabharata-udyogaparva
+- подобно тебе  · n=1  · mahabharata-aranyakaparva
+- такого, как ты  · n=1  · mahabharata-aranyakaparva
+- такие, как ты  · n=1  · mahabharata-aranyakaparva
+
+### `BavadviDaH` — bhavadvidhaḥ  (n=1)
+
+- Подобный тебе  · n=1  · ramayana-sundarakanda
+
+### `BavadvizayavAsinaH` — bhavadviṣayavāsinaḥ  (n=2)
+
+- живем на твоей земле  · n=2  · ramayana-aranyakanda
+
+### `Bavagata` — bhavagata  (n=1)
+
+- относящийся к Господу  · n=1  · vedartha-samgraha_ramanuja
+
+### `BavajijjanaH` — bhavajijjanaḥ  (n=1)
+
+- победившим бытие  · n=1  · gitarthasamgraha-abhinavagupta
+
+### `BavakAla` — bhavakāla  (n=2)
+
+- добрые времена  · n=2  · mahabharata-mausalaparva
+
+### `Bavakaikeyi` — bhavakaikeyi  (n=1)
+
+- Кайкейи  · n=1  · ramayana-ayodhyakanda
+
+### `BavakalyARa` — bhavakalyāṇa  (n=1)
+
+- благосклонный  · n=1  · mahabharata-udyogaparva
+
+### `BavallabDavarodIrRaH` — bhavallabdhavarodīrṇaḥ  (n=1)
+
+- гордый дарами твоими  · n=1  · kumarasambhava
+
+### `Bavam` — bhavam  (n=6)
+
+- Бхаву  · n=3  · mahabharata-karnaparva
+- Бхава  · n=1  · mahabharata-dronaparva
+- к Бхаве  · n=1  · mahabharata-karnaparva
+- Бхаве  · n=1  · mahabharata-karnaparva
+
+### `Bavamanyave` — bhavamanyave  (n=1)
+
+- духу  · n=1  · nr-up
+
+### `Bavamaya` — bhavamaya  (n=1)
+
+- состоящей только из Махадевы  · n=1  · mahabharata-dronaparva
+
+### `BavamicCankurUnprati` — bhavamicchankurūnprati  (n=1)
+
+- желая блага кауравам  · n=1  · mahabharata-udyogaparva
+
+### `Bavan` — bhavan  (n=12)
+
+- Ты  · n=2  · mahabharata-bhishmaparva, bhagavadgita-erman
+- становящийся  · n=2  · rigveda
+- став  · n=2  · rigveda, atharvaveda
+- существуя  · n=2  · atharvaveda
+- провели  · n=1  · ramayana-ayodhyakanda
+- Являясь  · n=1  · rigveda
+- были  · n=1  · mahabharata-karnaparva
+- возникающая  · n=1  · atharvaveda
+
+### `BavanABimuKI` — bhavanābhimukhī  (n=1)
+
+- восвояси  · n=1  · kumarasambhava
+
+### `BavanAgrezu` — bhavanāgreṣu  (n=1)
+
+- крыши дворцов  · n=1  · ramayana-sundarakanda
+
+### `BavanAm` — bhavanām  (n=1)
+
+- домами  · n=1  · ramayana-aranyakanda
+
+### `BavanAni` — bhavanāni  (n=2)
+
+- дома  · n=1  · ramayana-sundarakanda
+- увидеть  · n=1  · ramayana-aranyakanda
+
+### `BavanAt` — bhavanāt  (n=3)
+
+- из чертогов  · n=1  · mahabharata-aranyakaparva
+- из покоев  · n=1  · mahabharata-ashvamedhikaparva
+- места  · n=1  · mahabharata-sauptikaparva
+
+### `BavanIya` — bhavanīya  (n=1)
+
+- того, что следует созерцать  · n=1  · yoga-sutry_vyasa-bhashya
+
+### `Bavana` — bhavana  (n=100)
+
+- дом  · n=16  · kama-sutra, buddhacharita, mahabharata-udyogaparva, shatakatrayam, ramayana-ayodhyakanda, ramayana-sundarakanda, manavadharmashastra, mahabharata-aranyakaparva, mahabharata-shalyaparva, shatakatrayam-serebryakov, amaru-shataka
+- дворец  · n=15  · ramayana-ayodhyakanda, ramayana-sundarakanda, mahabharata-aranyakaparva, mahabharata-adiparva, buddhacharita, mahabharata-udyogaparva, mahabharata-karnaparva, mahabharata-sabhaparva
+- покои  · n=8  · mahabharata-ashvamedhikaparva, mahabharata-ashramavasikaparva, ramayana-ayodhyakanda, buddhacharita
+- дома  · n=8  · ramayana-sundarakanda, kama-sutra, mahabharata-udyogaparva
+- дворца  · n=5  · ramayana-sundarakanda, shatakatrayam-serebryakov
+- домами  · n=4  · mahabharata-adiparva, ramayana-sundarakanda
+- дворцы  · n=4  · ramayana-sundarakanda, mahabharata-adiparva
+- дворце  · n=3  · mahabharata-adiparva, ramayana-sundarakanda
+- жилище  · n=3  · mahabharata-aranyakaparva, kama-sutra, mahabharata-shalyaparva
+- обиталище  · n=3  · mahabharata-adiparva, mahabharata-udyogaparva, mahabharata-sabhaparva
+- чертог  · n=3  · mahabharata-bhishmaparva, mahabharata-dronaparva
+- домах  · n=2  · ramayana-ayodhyakanda, ramayana-sundarakanda
+- жилища  · n=2  · ramayana-aranyakanda, kama-sutra
+- чертоги  · n=2  · mahabharata-aranyakaparva
+- домой  · n=2  · kama-sutra, buddhacharita
+- в домах  · n=1  · ramayana-sundarakanda
+- домам  · n=1  · ramayana-sundarakanda
+- Дворец  · n=1  · ramayana-sundarakanda
+- Дворцы  · n=1  · ramayana-sundarakanda
+- дворцов  · n=1  · ramayana-sundarakanda
+- владения  · n=1  · ramayana-aranyakanda
+- храм  · n=1  · kama-sutra
+- жилищ  · n=1  · mahabharata-adiparva
+- доме  · n=1  · mahabharata-adiparva
+- дворцами  · n=1  · mahabharata-bhishmaparva
+- обитель  · n=1  · mahabharata-dronaparva
+- очагам  · n=1  · buddhacharita
+- лагерь  · n=1  · mahabharata-udyogaparva
+- храмов  · n=1  · ramanuja_gitabhashya
+- служенья  · n=1  · shatakatrayam
+- собрание  · n=1  · shatakatrayam-serebryakov
+- двор  · n=1  · shatakatrayam-serebryakov
+- в мире  · n=1  · gitagovinda
+- существование  · n=1  · yoga-sutry_vyasa-bhashya
+- домъ  · n=1  · megha-duta
+
+### `Bavana-maDye` — bhavana-madhye  (n=1)
+
+- в доме  · n=1  · kama-sutra
+
+### `BavanaM` — bhavanaṃ  (n=1)
+
+- домой  · n=1  · mahabharata-udyogaparva
+
+### `BavanaSiKjiBiH` — bhavanaśikhjibhiḥ  (n=1)
+
+- павлиновъ  · n=1  · megha-duta
+
+### `BavanaSrezWa` — bhavanaśreṣṭha  (n=2)
+
+- Великолепный дворец  · n=1  · ramayana-sundarakanda
+- великолепный чертог  · n=1  · mahabharata-virataparva
+
+### `BavanadvAra` — bhavanadvāra  (n=2)
+
+- к воротам дворца  · n=1  · mahabharata-virataparva
+- дверь  · n=1  · shatakatrayam
+
+### `BavanadvAram` — bhavanadvāram  (n=1)
+
+- Двери дворца  · n=1  · buddhacharita
+
+### `BavanairupaSoBitam` — bhavanairupaśobhitam  (n=1)
+
+- блистающая чертогами  · n=1  · mahabharata-bhishmaparva
+
+### `Bavanam` — bhavanam  (n=16)
+
+- дворец  · n=3  · ramayana-sundarakanda, mahabharata-adiparva, buddhacharita
+- дом  · n=3  · mahabharata-aranyakaparva, kama-sutra, shukasaptati
+- обиталищу  · n=2  · mahabharata-aranyakaparva, mahabharata-adiparva
+- жилище  · n=2  · kama-sutra, mahabharata-adiparva
+- спальню  · n=1  · ramayana-ayodhyakanda
+- живет  · n=1  · ramayana-aranyakanda
+- чертоги  · n=1  · mahabharata-aranyakaparva
+- местопребывание  · n=1  · mahabharata-adiparva
+- чертог  · n=1  · mahabharata-ashvamedhikaparva
+- место  · n=1  · shatakatrayam
+
+### `BavanapratisaMskAra` — bhavanapratisaṃskāra  (n=1)
+
+- приводят в порядок жилище  · n=1  · kama-sutra
+
+### `Bavanasya` — bhavanasya  (n=1)
+
+- дома  · n=1  · mahabharata-adiparva
+
+### `BavanavalaBau` — bhavanavalabhau  (n=1)
+
+- на кровлѣ дома  · n=1  · megha-duta
+
+### `BavanavinyAsa` — bhavanavinyāsa  (n=1)
+
+- устройство жилища  · n=1  · kama-sutra
+
+### `Bavane` — bhavane  (n=8)
+
+- в доме  · n=2  · ramayana-ayodhyakanda, mahabharata-aranyakaparva
+- обиталище  · n=2  · mahabharata-adiparva
+- дворца  · n=1  · ramayana-aranyakanda
+- приюте  · n=1  · mahabharata-aranyakaparva
+- чертогах  · n=1  · mahabharata-aranyakaparva
+- во дворце  · n=1  · mahabharata-adiparva
+
+### `Bavanetrajanman` — bhavanetrajanman  (n=1)
+
+- Оком рожденное  · n=1  · kumarasambhava
+
+### `Bavanezu` — bhavaneṣu  (n=1)
+
+- дворцах  · n=1  · ramayana-sundarakanda
+
+### `BavanmUlam` — bhavanmūlam  (n=1)
+
+- ради тебя  · n=1  · mahabharata-aranyakaparva
+
+### `BavanmaDya` — bhavanmadhya  (n=1)
+
+- помещая 'господин' в середине  · n=1  · manavadharmashastra
+
+### `Bavanmanas` — bhavanmanas  (n=1)
+
+- храню тебя в сердце своем  · n=1  · mahabharata-ashvamedhikaparva
+
+### `Bavannetra` — bhavannetra  (n=2)
+
+- имея тебя предводителем  · n=1  · mahabharata-dronaparva
+- обладая тобою как своими глазами  · n=1  · mahabharata-dronaparva
+
+### `Bavanottama` — bhavanottama  (n=3)
+
+- лучший из дворцов  · n=2  · ramayana-sundarakanda
+- великолепными домами  · n=1  · ramayana-sundarakanda
+
+### `Bavant` — bhavant  (n=88)
+
+- ты  · n=31  · mahabharata-adiparva, mahabharata-udyogaparva, mahabharata-dronaparva, mahabharata-ashramavasikaparva, ramayana-aranyakanda, buddhacharita, mahabharata-shalyaparva, mahabharata-sabhaparva, ramayana-balakanda, mahabharata-aranyakaparva, mahabharata-bhishmaparva, bhagavadgita-erman, mahabharata-karnaparva, kumarasambhava
+- вы  · n=17  · mahabharata-adiparva, ramayana-ayodhyakanda, ramayana-balakanda, mahabharata-udyogaparva, gitarthasamgraha-abhinavagupta, bhagavadgita-1914, mahabharata-virataparva, mahabharata-ashramavasikaparva, mahabharata-sauptikaparva
+- тебе  · n=7  · ramayana-balakanda, mahabharata-aranyakaparva, mahabharata-dronaparva, mahabharata-udyogaparva, mahabharata-karnaparva, raghuvamsha
+- тебя  · n=6  · mahabharata-bhishmaparva, mahabharata-ashramavasikaparva, mahabharata-udyogaparva, bhagavadgita-erman
+- Ты  · n=5  · ramayana-ayodhyakanda, mahabharata-aranyakaparva, bhagavadgita-smirnov, bhagavadgita-sementsov, mahabharata-karnaparva
+- тобою  · n=2  · ramayana-aranyakanda, mahabharata-udyogaparva
+- почтенные  · n=2  · ramayana-balakanda, mahabharata-striparva
+- вам  · n=2  · ramayana-balakanda
+- почтенный  · n=2  · mahabharata-aranyakaparva, mahabharata-karnaparva
+- Взойди  · n=2  · mahabharata-aranyakaparva
+- господин  · n=2  · buddhacharita
+- Вы  · n=1  · mahabharata-adiparva
+- тобой  · n=1  · ramayana-aranyakanda
+- Почтенный  · n=1  · mahabharata-aranyakaparva
+- Почтенные  · n=1  · mahabharata-aranyakaparva
+- вас  · n=1  · buddhacharita
+- о почтенные  · n=1  · bhagavadgita-burba
+- Господин  · n=1  · bhagavadgita-smirnov
+- вы (досточтимые)  · n=1  · bhagavadgita-prabhupada
+- на Вы  · n=1  · mahabharata-karnaparva
+- владыка  · n=1  · mahabharata-ashvamedhikaparva
+
+### `BavantI` — bhavantī  (n=6)
+
+- Превращаясь  · n=2  · rigveda, atharvaveda
+- оказавшихся  · n=1  · rigveda
+- Будучи  · n=1  · rigveda
+- она не [представляется] таковой  · n=1  · yoga-sutry_vyasa-bhashya
+- став  · n=1  · chaurapanchashika
+
+### `BavantIH` — bhavantīḥ  (n=1)
+
+- становящиеся  · n=1  · rigveda
+
+### `Bavanta` — bhavanta  (n=11)
+
+- вы  · n=5  · mahabharata-udyogaparva, mahabharata-adiparva, mahabharata-aranyakaparva, bhagavadgita-1909
+- ты  · n=1  · mahabharata-udyogaparva
+- он  · n=1  · bhagavadgita-sementsov
+- надо следить  · n=1  · bhagavadgita-sementsov
+- каждый из вас  · n=1  · bhagavadgita-sharma
+- Вы  · n=1  · mahabharata-sabhaparva
+- летящаго  · n=1  · megha-duta
+
+### `BavantaH` — bhavantaḥ  (n=40)
+
+- вы  · n=33  · mahabharata-adiparva, mahabharata-aranyakaparva, ramayana-ayodhyakanda, mahabharata-ashramavasikaparva, mahabharata-dronaparva, mahabharata-shalyaparva, mahabharata-virataparva, ramayana-balakanda, mahabharata-bhishmaparva, bhagavadgity, bhagavadgita-erman, bhagavadgita-smirnov, bhagavadgita-radha, mahabharata-ashvamedhikaparva, mahabharata-sabhaparva, mahabharata-svargarohanikaparva
+- Существуя  · n=2  · rigveda
+- Вы  · n=1  · mahabharata-adiparva
+- Твои  · n=1  · mahabharata-aranyakaparva
+- воинов  · n=1  · ramanuja_gitabhashya
+- Становясь  · n=1  · atharvaveda
+- становясь  · n=1  · atharvaveda
+
+### `BavantaM` — bhavantaṃ  (n=4)
+
+- тебя  · n=3  · mahabharata-udyogaparva, mahabharata-dronaparva
+- к тебе  · n=1  · mahabharata-sabhaparva
+
+### `BavantaSca` — bhavantaśca  (n=1)
+
+- вы тоже  · n=1  · mahabharata-shalyaparva
+
+### `Bavantam` — bhavantam  (n=46)
+
+- тебя  · n=24  · mahabharata-udyogaparva, mahabharata-adiparva, mahabharata-aranyakaparva, mahabharata-bhishmaparva, mahabharata-dronaparva, bhagavadgity, bhagavadgita-smirnov, bhagavadgita-1788, bhagavadgita-1909, mahabharata-sabhaparva, gitagovinda, mahabharata-ashramavasikaparva, megha-duta
+- тебе  · n=5  · mahabharata-adiparva, mahabharata-aranyakaparva, mahabharata-karnaparva, mahabharata-shalyaparva, raghuvamsha
+- Тебя  · n=4  · gitarthasamgraha-abhinavagupta, ramanuja_gitabhashya, bhagavadgita-sharma, bhagavadgita-prabhupada
+- к тебе  · n=2  · buddhacharita, br-up
+- ты  · n=2  · gitagovinda
+- высокочтимого  · n=1  · ramayana-ayodhyakanda
+- пребывающего  · n=1  · rigveda
+- тобою  · n=1  · mahabharata-udyogaparva
+- Господина  · n=1  · bhagavadgita-burba
+- Тебе  · n=1  · bhagavadgita-1914
+- Вас  · n=1  · bhagavadgita-radha
+- с тобой  · n=1  · mahabharata-karnaparva
+- о тебе  · n=1  · mahabharata-ashvamedhikaparva
+- за тобой  · n=1  · mahabharata-ashramavasikaparva
+
+### `BavantamaparAjitam` — bhavantamaparājitam  (n=1)
+
+- тебя, непобедимого владыку  · n=1  · mahabharata-bhishmaparva
+
+### `BavantastadyaTAvfttaH` — bhavantastadyathāvṛttaḥ  (n=1)
+
+- о том, как все произошло  · n=1  · mahabharata-adiparva
+
+### `Bavantau` — bhavantau  (n=2)
+
+- вы оба  · n=1  · ramayana-ayodhyakanda
+- у вас  · n=1  · mahabharata-sauptikaparva
+
+### `Bavanti` — bhavanti  (n=169)
+
+- становятся  · n=29  · mahabharata-udyogaparva, shv-up, mnar-up, atharvaveda, kena-up, manavadharmashastra, ramayana-aranyakanda, ramayana-balakanda, mahabharata-aranyakaparva, kama-sutra, mahabharata-adiparva, mahabharata-dronaparva, mahabharata-shalyaparva, mahabharata-ashvamedhikaparva, atharvaveda, atharvaveda, atharvaveda, vedartha-samgraha_ramanuja, kat-up, kau-up, pai-up
+- бывают  · n=27  · mahabharata-udyogaparva, mahabharata-aranyakaparva, rigveda, manavadharmashastra, rigveda, ch-up, yoga-sutry_vyasa-bhashya, atharvaveda, rigveda, ramanuja_gitabhashya, kumarasambhava, mahabharata-sabhaparva, br-up, mahabharata-virataparva, atharvaveda, mai-up
+- есть  · n=10  · mahabharata-aranyakaparva, ramayana-ayodhyakanda, ramayana-aranyakanda, mahabharata-bhishmaparva, buddhacharita, br-up, shatakatrayam-serebryakov, mai-up
+- возникают  · n=8  · rigveda, gitarthasamgraha-abhinavagupta, bhagavadgita-burba, ramanuja_gitabhashya, bhagavadgita-sementsov, atharvaveda, yoga-sutry_vyasa-bhashya, pr-up
+- являются  · n=7  · mahabharata-aranyakaparva, bhagavadgita-burba, bhagavadgita-1909, nyaya-bhashya, mahabharata-ashvamedhikaparva, mahabharata-sabhaparva, sankhya-karika
+- суть  · n=5  · mahabharata-aranyakaparva, rigveda, gitarthasamgraha-abhinavagupta, bhagavadgita-smirnov, mahabharata-ashvamedhikaparva
+- существуют  · n=5  · nyaya-bhashya, mahabharata-mausalaparva, bhagavadgita-erman
+- обретают  · n=4  · ch-up
+- стали  · n=3  · mahabharata-aranyakaparva, rigveda, vedartha-samgraha_ramanuja
+- бывает  · n=2  · atharvaveda, mahabharata-udyogaparva
+- лишаются  · n=2  · ramayana-aranyakanda, yoga-sutry_vyasa-bhashya
+- станут  · n=2  · rigveda, mahabharata-dronaparva
+- имеются  · n=2  · mahabharata-dronaparva, mahabharata-udyogaparva
+- живут  · n=2  · ch-up
+- поднимаются  · n=2  · rigveda
+- будут  · n=2  · rigveda
+- обрели  · n=2  · vedartha-samgraha_ramanuja
+- названы  · n=1  · ramayana-aranyakanda
+- Те, кто  · n=1  · ramayana-aranyakanda
+- видел  · n=1  · ramayana-aranyakanda
+- становились  · n=1  · mahabharata-aranyakaparva
+- могут погибнуть  · n=1  · mahabharata-aranyakaparva
+- преобладает  · n=1  · mahabharata-aranyakaparva
+- стоит  · n=1  · mahabharata-aranyakaparva
+- могут быть  · n=1  · mahabharata-aranyakaparva
+- Жили  · n=1  · mahabharata-aranyakaparva
+- минет  · n=1  · mahabharata-aranyakaparva
+- исходит  · n=1  · mahabharata-aranyakaparva
+- были  · n=1  · rigveda
+- они  · n=1  · kama-sutra
+- действуют  · n=1  · kama-sutra
+- принимают  · n=1  · kama-sutra
+- сделались  · n=1  · mahabharata-adiparva
+- владеют  · n=1  · mahabharata-bhishmaparva
+- проходят  · n=1  · rigveda
+- Находятся  · n=1  · buddhacharita
+- относятся  · n=1  · mahabharata-udyogaparva
+- достигали  · n=1  · mahabharata-udyogaparva
+- имеется  · n=1  · mahabharata-udyogaparva
+- бывают достигнуты  · n=1  · mahabharata-udyogaparva
+- имеют успеха  · n=1  · mahabharata-udyogaparva
+- происходитъ  · n=1  · bhagavadgity
+- возникли  · n=1  · bhagavadgita-smirnov
+- раждаются  · n=1  · bhagavadgita-1788
+- создаются  · n=1  · bhagavadgita-sharma
+- ведут  · n=1  · ch-up
+- идут  · n=1  · ch-up
+- не к лицу  · n=1  · mahabharata-karnaparva
+- вздымаются  · n=1  · rigveda
+- дарован  · n=1  · kumarasambhava
+- рады  · n=1  · kumarasambhava
+- не  · n=1  · nyaya-bhashya
+- должны быть  · n=1  · nyaya-bhashya
+- существует  · n=1  · devi-gita
+- будет  · n=1  · devi-gita
+- становится  · n=1  · devi-gita
+- находятся  · n=1  · mahabharata-sabhaparva
+- обладают  · n=1  · mahabharata-virataparva
+- могли  · n=1  · mahabharata-virataparva
+- служат  · n=1  · mahabharata-virataparva
+- не сможешь  · n=1  · shatakatrayam
+- достигают  · n=1  · shatakatrayam-serebryakov
+- имеют место  · n=1  · sankhya-karika
+- оказываются  · n=1  · yoga-sutry_vyasa-bhashya
+- уничтожаются  · n=1  · yoga-sutry_vyasa-bhashya
+- считать  · n=1  · mahabharata-ashramavasikaparva
+- действует  · n=1  · vedartha-samgraha_ramanuja
+- рождаются  · n=1  · mahabharata-striparva
+- говорят  · n=1  · mai-up
+- достигает  · n=1  · kau-up
+- место  · n=1  · mahabharata-svargarohanikaparva
+- достаются  · n=1  · pai-up
+
+### `Bavanto` — bhavanto  (n=2)
+
+- вы  · n=2  · mahabharata-adiparva
+
+### `Bavantu` — bhavantu  (n=41)
+
+- да будут  · n=7  · atharvaveda, atharvaveda, rigveda, mahabharata-karnaparva, atharvaveda
+- пусть будут  · n=7  · atharvaveda, mahabharata-adiparva, mahabharata-udyogaparva, rigveda, atharvaveda, mahabharata-virataparva
+- Да будут  · n=5  · atharvaveda, rigveda, atharvaveda
+- будут  · n=5  · mahabharata-adiparva, atharvaveda, atharvaveda, atharvaveda
+- пусть станут  · n=4  · rigveda, atharvaveda, atharvaveda, atharvaveda
+- Да сровняются  · n=2  · rigveda
+- станут  · n=1  · ramayana-balakanda
+- пусть  · n=1  · rigveda
+- пусть уберутся  · n=1  · rigveda
+- Пусть будут  · n=1  · rigveda
+- Да  · n=1  · rigveda
+- да сгинут  · n=1  · atharvaveda
+- будет находиться  · n=1  · mahabharata-virataparva
+- уберутся прочь  · n=1  · atharvaveda
+- Да останутся  · n=1  · atharvaveda
+- 21a-c. = РВ X, 18, 1a-c (с вариантами).  · n=1  · atharvaveda
+- Пусть будет  · n=1  · atharvaveda
+
+### `BavapUrvapatnI` — bhavapūrvapatnī  (n=2)
+
+- Бхавы былая супруга  · n=1  · kumarasambhava
+- прежняя жена Шивы  · n=1  · kumarasambhava
+
+### `BavapraRASa` — bhavapraṇāśa  (n=1)
+
+- прекратить рождения и смерти  · n=1  · buddhacharita
+
+### `Bavapratyaya` — bhavapratyaya  (n=2)
+
+- обусловленное существованием  · n=2  · yoga-sutry_vyasa-bhashya
+
+### `BavaproktaH` — bhavaproktaḥ  (n=1)
+
+- произносимые Бхавой  · n=1  · mahabharata-dronaparva
+
+### `BavarasAsvAdana` — bhavarasāsvādana  (n=1)
+
+- пучину сладостных желаний  · n=1  · shatakatrayam
+
+### `Bavarasa` — bhavarasa  (n=1)
+
+- чувства и наслаждения  · n=1  · shatakatrayam-serebryakov
+
+### `Bavarati` — bhavarati  (n=1)
+
+- утех  · n=1  · shatakatrayam
+
+### `Bavas` — bhavas  (n=3)
+
+- будь  · n=1  · mahabharata-aranyakaparva
+- Бхава  · n=1  · vedanga_jyotisha
+- вашей  · n=1  · vedartha-samgraha_ramanuja
+
+### `BavasAgara` — bhavasāgara  (n=1)
+
+- океана сансары  · n=1  · buddhacharita
+
+### `BavasId` — bhavasīd  (n=1)
+
+- становишься  · n=1  · rigveda
+
+### `Bavasi` — bhavasi  (n=15)
+
+- бываешь  · n=6  · rigveda, rigveda, rigveda, rigveda, rigveda
+- есть  · n=3  · ramayana-sundarakanda, ramayana-aranyakanda
+- возникаешь  · n=2  · atharvaveda, atharvaveda
+- таков  · n=1  · rigveda
+- становишься  · n=1  · rigveda
+- станешь  · n=1  · raghuvamsha
+- станешь обладать  · n=1  · atharvaveda
+
+### `Bavasva` — bhavasva  (n=6)
+
+- будь  · n=4  · mahabharata-aranyakaparva, mahabharata-virataparva
+- стань  · n=2  · mahabharata-aranyakaparva
+
+### `Bavasya` — bhavasya  (n=1)
+
+- существования  · n=1  · yoga-sutry_vyasa-bhashya
+
+### `Bavat` — bhavat  (n=175)
+
+- ты  · n=49  · mahabharata-aranyakaparva, mahabharata-udyogaparva, mahabharata-adiparva, ramayana-ayodhyakanda, mahabharata-ashvamedhikaparva, buddhacharita, mahabharata-dronaparva, mahabharata-mausalaparva, mahabharata-sabhaparva, mahabharata-virataparva, mahabharata-bhishmaparva, mahabharata-karnaparva, devi-gita, shukasaptati, mahabharata-ashramavasikaparva
+- тобою  · n=13  · mahabharata-udyogaparva, mahabharata-dronaparva, ramayana-ayodhyakanda, mahabharata-bhishmaparva, mahabharata-shalyaparva, mahabharata-sabhaparva, mahabharata-ashramavasikaparva, mahabharata-sauptikaparva
+- тебе  · n=9  · mahabharata-adiparva, mahabharata-udyogaparva, ramayana-ayodhyakanda, ramayana-balakanda, buddhacharita, mahabharata-shalyaparva, mahabharata-ashramavasikaparva
+- вас  · n=7  · ramayana-ayodhyakanda, mahabharata-adiparva, mahabharata-udyogaparva, mahabharata-shalyaparva
+- вы  · n=6  · mahabharata-adiparva, nyaya-bhashya, mahabharata-aranyakaparva, mahabharata-dronaparva
+- тебя  · n=6  · mahabharata-aranyakaparva, mahabharata-adiparva, mahabharata-sabhaparva, mahabharata-sauptikaparva
+- вами  · n=5  · mahabharata-adiparva, ramayana-ayodhyakanda, ramayana-sundarakanda, vedartha-samgraha_ramanuja
+- был  · n=5  · ramayana-balakanda, mahabharata-udyogaparva, mahabharata-sabhaparva
+- вам  · n=5  · mahabharata-aranyakaparva, mahabharata-udyogaparva, mahabharata-virataparva, shatakatrayam, mahabharata-ashramavasikaparva
+- настоящее  · n=5  · br-up, man-up
+- твое  · n=4  · ramayana-ayodhyakanda, mahabharata-bhishmaparva, mahabharata-shalyaparva, mahabharata-ashramavasikaparva
+- твой  · n=4  · mahabharata-ashvamedhikaparva, ramayana-balakanda, mahabharata-udyogaparva
+- Ты  · n=4  · mahabharata-udyogaparva, mahabharata-aranyakaparva, buddhacharita
+- почтенный  · n=4  · mahabharata-ashvamedhikaparva, mahabharata-striparva
+- ваше  · n=3  · mahabharata-adiparva, mahabharata-udyogaparva
+- вашего  · n=3  · ramayana-sundarakanda, mahabharata-ashramavasikaparva
+- твоей  · n=3  · buddhacharita, mahabharata-shalyaparva, gitagovinda
+- будущего  · n=2  · rigveda
+- ваш  · n=2  · mahabharata-adiparva, mahabharata-udyogaparva
+- твои  · n=2  · mahabharata-udyogaparva, mahabharata-ashramavasikaparva
+- вашей  · n=2  · vedartha-samgraha_ramanuja
+- раздался  · n=1  · mahabharata-adiparva
+- было  · n=1  · mahabharata-adiparva
+- была  · n=1  · mahabharata-adiparva
+- твоя  · n=1  · ramayana-ayodhyakanda
+- растущих  · n=1  · ramayana-ayodhyakanda
+- достанется  · n=1  · ramayana-ayodhyakanda
+- бывает  · n=1  · ramayana-sundarakanda
+- Господин  · n=1  · ramayana-sundarakanda
+- Бхават  · n=1  · manavadharmashastra
+- Государь  · n=1  · manavadharmashastra
+- господин  · n=1  · ramayana-balakanda
+- благословенный  · n=1  · ramayana-balakanda
+- твоему  · n=1  · mahabharata-aranyakaparva
+- есть  · n=1  · mahabharata-aranyakaparva
+- произошла  · n=1  · rigveda
+- ты сам  · n=1  · mahabharata-bhishmaparva
+- твоим  · n=1  · mahabharata-bhishmaparva
+- твоего  · n=1  · mahabharata-dronaparva
+- Тобою  · n=1  · mahabharata-dronaparva
+- сказал  · n=1  · buddhacharita
+- твоих  · n=1  · mahabharata-udyogaparva
+- владыка  · n=1  · mahabharata-udyogaparva
+- случилось  · n=1  · mahabharata-udyogaparva
+- настоящего  · n=1  · mahabharata-dronaparva
+- Твоего  · n=1  · bhagavadgita-sementsov
+- ваших  · n=1  · mahabharata-karnaparva
+- разгорелся  · n=1  · mahabharata-karnaparva
+- твою  · n=1  · mahabharata-ashvamedhikaparva
+- свой  · n=1  · raghuvamsha
+- у вас  · n=1  · mahabharata-virataparva
+- вступить в связь  · n=1  · shukasaptati
+- тобой  · n=1  · mahabharata-ashramavasikaparva
+
+### `BavatA` — bhavatā  (n=59)
+
+- тобой  · n=18  · mahabharata-aranyakaparva, ramayana-ayodhyakanda, mahabharata-karnaparva, mahabharata-udyogaparva, mahabharata-shantiparva, ramayana-sundarakanda, ramayana-balakanda, mahabharata-ashvamedhikaparva, mahabharata-sabhaparva, mahabharata-ashramavasikaparva
+- ты  · n=17  · ramayana-ayodhyakanda, mahabharata-aranyakaparva, raghuvamsha, mahabharata-adiparva, ramayana-sundarakanda, ramayana-aranyakanda, ramayana-balakanda, mahabharata-udyogaparva, mahabharata-karnaparva, mahabharata-ashvamedhikaparva, mahabharata-virataparva, amaru-shataka, mahabharata-mahaprasthanikaparva
+- тобою  · n=7  · mahabharata-dronaparva, mahabharata-udyogaparva, mahabharata-aranyakaparva, mahabharata-shalyaparva, mahabharata-ashramavasikaparva
+- Ты  · n=2  · ramayana-ayodhyakanda, mahabharata-ashvamedhikaparva
+- тебе  · n=2  · mahabharata-udyogaparva, mahabharata-sabhaparva
+- твоей  · n=1  · ramayana-aranyakanda
+- твоему  · n=1  · ramayana-balakanda
+- твоя  · n=1  · mahabharata-aranyakaparva
+- твой  · n=1  · mahabharata-aranyakaparva
+- будьте  · n=1  · rigveda
+- с тобой  · n=1  · mahabharata-udyogaparva
+- благоденствуют  · n=1  · mahabharata-udyogaparva
+- станьте  · n=1  · rigveda
+- вами  · n=1  · nyaya-bhashya
+- Тобою  · n=1  · mahabharata-ashvamedhikaparva
+- в мою сторону  · n=1  · rigveda
+- через меня  · n=1  · atharvaveda
+- твоем  · n=1  · mahabharata-ashramavasikaparva
+
+### `BavatAM` — bhavatāṃ  (n=6)
+
+- вашего  · n=1  · mahabharata-adiparva
+- ваши  · n=1  · mahabharata-adiparva
+- вам  · n=1  · mahabharata-adiparva
+- вашему  · n=1  · mahabharata-karnaparva
+- от вас  · n=1  · mahabharata-virataparva
+- вас  · n=1  · mahabharata-ashramavasikaparva
+
+### `BavatAm` — bhavatām  (n=28)
+
+- вашей  · n=4  · mahabharata-adiparva, ramayana-sundarakanda, ramayana-aranyakanda, mahabharata-aranyakaparva
+- вам  · n=4  · mahabharata-adiparva, mahabharata-dronaparva, mahabharata-mausalaparva, mahabharata-svargarohanikaparva
+- ваш  · n=3  · mahabharata-adiparva, mahabharata-udyogaparva, vedartha-samgraha_ramanuja
+- вашего  · n=2  · mahabharata-adiparva, mahabharata-udyogaparva
+- ваше  · n=2  · ramayana-aranyakanda, mahabharata-aranyakaparva
+- вас  · n=2  · mahabharata-dronaparva, mahabharata-shalyaparva
+- по-твоему  · n=1  · mahabharata-aranyakaparva
+- нам  · n=1  · mahabharata-adiparva
+- для всех вас  · n=1  · mahabharata-adiparva
+- представляли  · n=1  · mahabharata-dronaparva
+- вы  · n=1  · mahabharata-udyogaparva
+- пусть будут  · n=1  · rigveda
+- Да будут  · n=1  · rigveda
+- будут  · n=1  · rigveda
+- ваши  · n=1  · gitagovinda
+- пусть будет  · n=1  · atharvaveda
+- вашим  · n=1  · mahabharata-mausalaparva
+
+### `BavatAnukUlA` — bhavatānukūlā  (n=1)
+
+- благосклонны  · n=1  · mahabharata-udyogaparva
+
+### `BavatApam` — bhavatāpam  (n=1)
+
+- страдания бытия  · n=1  · gitagovinda
+
+### `BavatApy` — bhavatāpy  (n=1)
+
+- от тебя  · n=1  · raghuvamsha
+
+### `BavatI` — bhavatī  (n=26)
+
+- ты  · n=10  · mahabharata-udyogaparva, ramayana-sundarakanda, mahabharata-shantiparva, mahabharata-aranyakaparva, gitagovinda, mahabharata-ashramavasikaparva
+- госпожа  · n=5  · mahabharata-adiparva, ramayana-sundarakanda, manavadharmashastra, mahabharata-udyogaparva, br-up
+- тебя  · n=2  · ramayana-ayodhyakanda, mahabharata-udyogaparva
+- ты (почтит.)  · n=1  · mahabharata-shantiparva
+- Ты  · n=1  · ramayana-aranyakanda
+- тобою  · n=1  · mahabharata-adiparva
+- твоего  · n=1  · mahabharata-udyogaparva
+- твоих  · n=1  · mahabharata-udyogaparva
+- она  · n=1  · mahabharata-udyogaparva
+- Тебе  · n=1  · kumarasambhava
+- Почтенная  · n=1  · mahabharata-striparva
+- почтенная  · n=1  · mahabharata-striparva
+
+### `BavatIBiH` — bhavatībhiḥ  (n=2)
+
+- Вы  · n=1  · mahabharata-aranyakaparva
+- вы  · n=1  · mahabharata-aranyakaparva
+
+### `BavatIha` — bhavatīha  (n=1)
+
+- здесь  · n=1  · mahabharata-karnaparva
+
+### `BavatInAm` — bhavatīnām  (n=1)
+
+- вам  · n=1  · mahabharata-aranyakaparva
+
+### `Bavata` — bhavata  (n=10)
+
+- ты  · n=1  · mahabharata-aranyakaparva
+- Будьте  · n=1  · rigveda
+- дайте  · n=1  · rigveda
+- приводятся  · n=1  · kama-sutra
+- для тебя  · n=1  · mahabharata-dronaparva
+- возникают  · n=1  · bhagavadgita-smirnov
+- тобою  · n=1  · mahabharata-shalyaparva
+- Дайте  · n=1  · atharvaveda
+- Станьте  · n=1  · atharvaveda
+- твое  · n=1  · mahabharata-ashramavasikaparva
+
+### `BavataH` — bhavataḥ  (n=67)
+
+- тебе  · n=7  · mahabharata-aranyakaparva, mahabharata-shalyaparva, mahabharata-dronaparva, mahabharata-karnaparva
+- тебя  · n=5  · mahabharata-udyogaparva, ramayana-sundarakanda, mahabharata-aranyakaparva, gitagovinda
+- являются  · n=4  · manavadharmashastra, rigveda, nyaya-bhashya, br-up
+- вас  · n=4  · mahabharata-adiparva, mahabharata-ashramavasikaparva
+- ты  · n=4  · mahabharata-udyogaparva, bhagavadgita-smirnov, bhagavadgita-1788, mahabharata-karnaparva
+- твой  · n=4  · mahabharata-udyogaparva, bhagavadgita-1909, mahabharata-karnaparva, megha-duta
+- твоему  · n=3  · mahabharata-aranyakaparva, buddhacharita, mahabharata-udyogaparva
+- Ты  · n=3  · bhagavadgita-1914, bhagavadgity, bhagavadgita-sharma
+- для тебя  · n=2  · mahabharata-adiparva, mahabharata-mausalaparva
+- бывают  · n=2  · rigveda, ait-up
+- твоего  · n=2  · raghuvamsha, mahabharata-ashramavasikaparva
+- тобой  · n=2  · mahabharata-ashramavasikaparva, megha-duta
+- твоих  · n=1  · mahabharata-aranyakaparva
+- твоей  · n=1  · mahabharata-aranyakaparva
+- от тебя  · n=1  · mahabharata-aranyakaparva
+- вы  · n=1  · mahabharata-aranyakaparva
+- пусть  · n=1  · rigveda
+- половины  · n=1  · rigveda
+- приводятся  · n=1  · kama-sutra
+- твои  · n=1  · mahabharata-adiparva
+- твоя  · n=1  · mahabharata-udyogaparva
+- у вас  · n=1  · mahabharata-udyogaparva
+- твое  · n=1  · ramanuja_gitabhashya
+- происходят  · n=1  · bhagavadgita-1914
+- будут  · n=1  · bhagavadgita-sementsov
+- истекаютъ  · n=1  · bhagavadgita-1909
+- Твое (Господа)  · n=1  · bhagavadgita-prabhupada
+- возникающие  · n=1  · bhagavadgita-prabhupada
+- Твое  · n=1  · bhagavadgita-radha
+- проявляются  · n=1  · bhagavadgita-radha
+- есть  · n=1  · ch-up
+- быть  · n=1  · nyaya-bhashya
+- почтенные  · n=1  · mahabharata-ashvamedhikaparva
+- благосклонны  · n=1  · rigveda
+- Услышат  · n=1  · atharvaveda
+- тѣнью  · n=1  · megha-duta
+- у тебя  · n=1  · mahabharata-adiparva
+
+### `BavataM` — bhavataṃ  (n=2)
+
+- Будьте  · n=1  · rigveda
+- будьте  · n=1  · rigveda
+
+### `Bavatam` — bhavatam  (n=8)
+
+- будьте  · n=6  · rigveda, rigveda, atharvaveda
+- пусть управляют  · n=1  · rigveda
+- Будьте  · n=1  · rigveda
+
+### `Bavatas` — bhavatas  (n=1)
+
+- господина  · n=1  · bhagavadgita-burba
+
+### `BavatastvagADA` — bhavatastvagādhā  (n=1)
+
+- бездонной  · n=1  · buddhacharita
+
+### `Bavate` — bhavate  (n=7)
+
+- тебе  · n=4  · mahabharata-adiparva, mahabharata-udyogaparva, mahabharata-ashvamedhikaparva
+- становится  · n=1  · mahabharata-aranyakaparva
+- тебя  · n=1  · kama-sutra
+- на твое попечение  · n=1  · mahabharata-virataparva
+
+### `Bavateti` — bhavateti  (n=3)
+
+- ты  · n=1  · mahabharata-adiparva
+- вами  · n=1  · mahabharata-adiparva
+- Господин  · n=1  · nyaya-bhashya
+
+### `Bavati` — bhavati  (n=785)
+
+- становится  · n=181  · ch-up, bhagavadgita-prabhupada, br-up, atharvaveda, atharvaveda, yoga-sutry_vyasa-bhashya, mahabharata-adiparva, mahabharata-udyogaparva, bhagavadgita-burba, manavadharmashastra, nyaya-bhashya, atharvaveda, mai-up, tai-up, mahabharata-aranyakaparva, rigveda, mahabharata-bhishmaparva, kau-up, bhagavadgita-radha, mahabharata-karnaparva, rigveda, atharvaveda, kat-up, paramarthasara-abhinavagupta, pai-up, kama-sutra, gitarthasamgraha-abhinavagupta, rigveda, ramanuja_gitabhashya, mahabharata-ashvamedhikaparva, mahabharata-sabhaparva, shatakatrayam, atharvaveda, atharvaveda, pr-up, mun-up, bhagavadgita-erman, bhagavadgita-sharma, mahabharata-virataparva, atharvaveda, amaru-shataka, vedartha-samgraha_ramanuja, jabala-up, ait-up, pratyabhijna-hridaya_kshemaraja
+- бывает  · n=145  · ch-up, bhagavadgity, atharvaveda, ramanuja_gitabhashya, bhagavadgita-burba, bhagavadgita-smirnov, br-up, ramayana-ayodhyakanda, rigveda, mahabharata-bhishmaparva, bhagavadgita-erman, sankhya-karika, manavadharmashastra, mahabharata-aranyakaparva, rigveda, mahabharata-udyogaparva, bhagavadgita-sementsov, bhagavadgita-radha, man-up, mahabharata-adiparva, rigveda, gitarthasamgraha-abhinavagupta, rigveda, bhagavadgita-sharma, nyaya-bhashya, mahabharata-sabhaparva, mahabharata-virataparva, yotat-up, atharvaveda, pr-up, tai-up, pai-up, mahabharata-dronaparva, rigveda, rigveda, bhagavadgita-1914, mahabharata-karnaparva, rigveda, atharvaveda, atharvaveda, shatakatrayam, atharvaveda, shatakatrayam-serebryakov, shukasaptati, atharvaveda, mahabharata-ashramavasikaparva, kat-up, mai-up, mun-up
+- есть  · n=60  · mahabharata-aranyakaparva, tai-up, br-up, ch-up, ramayana-ayodhyakanda, mahabharata-adiparva, nyaya-bhashya, manavadharmashastra, ramayana-aranyakanda, bhagavadgita-1914, bhagavadgita-sharma, shatakatrayam, shatakatrayam-serebryakov, sankhya-karika, rigveda, kama-sutra, mahabharata-udyogaparva, bhagavadgity, bhagavadgita-smirnov, bhagavadgita-sementsov, kumarasambhava, mahabharata-ashvamedhikaparva, gitagovinda, atharvaveda, vedartha-samgraha_ramanuja, mahabharata-striparva, jabala-up
+- является  · n=30  · nyaya-bhashya, bhagavadgita-prabhupada, manavadharmashastra, bhagavadgita-radha, vedartha-samgraha_ramanuja, mahabharata-aranyakaparva, mahabharata-udyogaparva, bhagavadgita-smirnov, gitarthasamgraha-abhinavagupta, bhagavadgita-1788, bhagavadgita-sharma, mahabharata-virataparva, mai-up, jabala-up
+- будет  · n=30  · atharvaveda, mahabharata-aranyakaparva, shukasaptati, ramayana-aranyakanda, mahabharata-udyogaparva, gitarthasamgraha-abhinavagupta, ramanuja_gitabhashya, bhagavadgita-sementsov, bhagavadgita-prabhupada, rigveda, mahabharata-shalyaparva, mahabharata-ashvamedhikaparva, mahabharata-virataparva, shatakatrayam-serebryakov, sankhya-karika, yotat-up
+- происходит  · n=22  · bhagavadgita-erman, devi-gita, bhagavadgita-1914, sankhya-karika, rigveda, mahabharata-adiparva, mahabharata-bhishmaparva, bhagavadgita-burba, bhagavadgita-smirnov, bhagavadgita-1909, bhagavadgita-sharma, bhagavadgita-prabhupada, bhagavadgita-radha, nyaya-bhashya, paramarthasara-abhinavagupta, pratyabhijna-hridaya_kshemaraja
+- возникает  · n=15  · rigveda, bhagavadgita-burba, yoga-sutry_vyasa-bhashya, kama-sutra, buddhacharita, ramanuja_gitabhashya, bhagavadgita-smirnov, bhagavadgita-prabhupada, bhagavadgita-radha, atharvaveda, sankhya-karika, vedartha-samgraha_ramanuja
+- приходит  · n=10  · mahabharata-bhishmaparva, gitarthasamgraha-abhinavagupta, ramanuja_gitabhashya, bhagavadgita-1914, bhagavadgita-erman, bhagavadgita-sementsov, bhagavadgita-sharma, bhagavadgita-radha, br-up
+- станет  · n=8  · ramayana-ayodhyakanda, mahabharata-aranyakaparva, gitarthasamgraha-abhinavagupta, bhagavadgita-1914, bhagavadgity, bhagavadgita-smirnov, bhagavadgita-1909, atharvaveda
+- быть  · n=8  · mahabharata-sabhaparva, pratyabhijna-hridaya_kshemaraja, mahabharata-bhishmaparva, mahabharata-udyogaparva, bhagavadgita-1909, nyaya-bhashya
+- появляется  · n=6  · bhagavadgita-burba, mahabharata-bhishmaparva, bhagavadgita-erman, bhagavadgita-prabhupada, yoga-sutry_vyasa-bhashya
+- рождается  · n=6  · bhagavadgita-prabhupada, mahabharata-dronaparva, bhagavadgity, bhagavadgita-smirnov, nyaya-bhashya
+- тот  · n=5  · ramayana-ayodhyakanda, mahabharata-aranyakaparva, ch-up, mahabharata-ashvamedhikaparva, mnar-up
+- остается  · n=5  · manavadharmashastra, mahabharata-aranyakaparva, mahabharata-udyogaparva, nyaya-bhashya, shatakatrayam
+- становятся  · n=5  · jabala-up, ramayana-aranyakanda, ch-up, sankhya-karika
+- совершается  · n=5  · ch-up, kama-sutra, bhagavadgita-smirnov, shatakatrayam-serebryakov
+- наступает  · n=5  · mahabharata-udyogaparva, ramanuja_gitabhashya, bhagavadgity, bhagavadgita-sementsov, yoga-sutry_vyasa-bhashya
+- имеет  · n=4  · sankhya-karika, manavadharmashastra, ch-up
+- случается  · n=4  · bhagavadgita-erman, mahabharata-bhishmaparva, rigveda
+- существует  · n=4  · mahabharata-bhishmaparva, bhagavadgita-radha, br-up, paramarthasara-abhinavagupta
+- ты  · n=4  · mahabharata-karnaparva, mahabharata-udyogaparva, gitagovinda
+- возрастает  · n=4  · gitarthasamgraha-abhinavagupta, bhagavadgity, bhagavadgita-sementsov, bhagavadgita-prabhupada
+- находится  · n=4  · gitarthasamgraha-abhinavagupta, bhagavadgita-radha, br-up, rigveda
+- проявляется  · n=4  · bhagavadgita-prabhupada, bhagavadgita-radha
+- означает  · n=4  · vedartha-samgraha_ramanuja
+- он  · n=3  · manavadharmashastra, mahabharata-udyogaparva
+- идет  · n=3  · manavadharmashastra, mahabharata-aranyakaparva, bhagavadgita-sharma
+- не бывает  · n=3  · bhagavadgita-smirnov, manavadharmashastra
+- было  · n=3  · mahabharata-aranyakaparva, mahabharata-udyogaparva, mahabharata-virataparva
+- достигается  · n=3  · mahabharata-aranyakaparva, mahabharata-dronaparva, vedartha-samgraha_ramanuja
+- тебя  · n=3  · mahabharata-udyogaparva, mahabharata-dronaparva
+- бываетъ  · n=3  · bhagavadgita-1788, bhagavadgita-1909, megha-duta
+- стало  · n=3  · ch-up, sankhya-karika
+- бывают  · n=3  · ch-up, mahabharata-sauptikaparva
+- желает  · n=3  · ch-up
+- преуспевает  · n=3  · atharvaveda
+- был  · n=2  · mahabharata-adiparva, ch-up
+- о госпожа  · n=2  · mahabharata-adiparva, ramayana-aranyakanda
+- принимает  · n=2  · ramayana-ayodhyakanda, br-up
+- не  · n=2  · ramayana-ayodhyakanda, mahabharata-aranyakaparva
+- производится  · n=2  · manavadharmashastra, bhagavadgita-1788
+- приносит  · n=2  · manavadharmashastra, mahabharata-aranyakaparva
+- приобретает  · n=2  · manavadharmashastra, atharvaveda
+- считается  · n=2  · mahabharata-aranyakaparva
+- Воплощают  · n=2  · rigveda
+- Он  · n=2  · rigveda
+- расположился  · n=2  · rigveda
+- пойдет  · n=2  · rigveda
+- суждено  · n=2  · mahabharata-bhishmaparva, bhagavadgita-erman
+- возникают  · n=2  · mahabharata-udyogaparva, mahabharata-sauptikaparva
+- может быть  · n=2  · gitarthasamgraha-abhinavagupta, jabala-up
+- происходят  · n=2  · gitarthasamgraha-abhinavagupta
+- раждается  · n=2  · bhagavadgita-1788
+- будетъ  · n=2  · bhagavadgita-1909
+- служат  · n=2  · ch-up, kat-up
+- оказывается  · n=2  · br-up
+- одерживает  · n=2  · br-up
+- претерпевает  · n=2  · shatakatrayam-serebryakov
+- сдержать  · n=2  · shatakatrayam-serebryakov
+- состоится  · n=2  · atharvaveda
+- по моему  · n=2  · sankhya-karika
+- испытывают  · n=2  · yoga-sutry_vyasa-bhashya, mahabharata-sauptikaparva
+- достигает  · n=2  · yoga-sutry_vyasa-bhashya, jabala-up
+- госпожа  · n=1  · mahabharata-adiparva
+- уедет  · n=1  · ramayana-ayodhyakanda
+- считаться  · n=1  · ramayana-ayodhyakanda
+- Нет  · n=1  · ramayana-ayodhyakanda
+- все равно что  · n=1  · ramayana-ayodhyakanda
+- овладевает  · n=1  · ramayana-ayodhyakanda
+- испытывает  · n=1  · ramayana-sundarakanda
+- невинны  · n=1  · manavadharmashastra
+- получает  · n=1  · manavadharmashastra
+- пребывает  · n=1  · manavadharmashastra
+- делается  · n=1  · manavadharmashastra
+- оберегаешь  · n=1  · mahabharata-aranyakaparva
+- защищаешь  · n=1  · mahabharata-aranyakaparva
+- как  · n=1  · mahabharata-aranyakaparva
+- добиваюсь  · n=1  · mahabharata-aranyakaparva
+- обращается  · n=1  · mahabharata-aranyakaparva
+- подобен  · n=1  · mahabharata-aranyakaparva
+- живет  · n=1  · mahabharata-aranyakaparva
+- составляют  · n=1  · mahabharata-aranyakaparva
+- Таков  · n=1  · mahabharata-aranyakaparva
+- стать  · n=1  · mahabharata-aranyakaparva
+- обретают  · n=1  · mahabharata-aranyakaparva
+- пересекает  · n=1  · rigveda
+- стал  · n=1  · rigveda
+- Есть  · n=1  · rigveda
+- возникла  · n=1  · rigveda
+- огорчается  · n=1  · kama-sutra
+- у нее  · n=1  · kama-sutra
+- попадает во власть  · n=1  · kama-sutra
+- становиться  · n=1  · mahabharata-adiparva
+- бывать  · n=1  · mahabharata-bhishmaparva
+- одерживается  · n=1  · mahabharata-bhishmaparva
+- обретаемый  · n=1  · mahabharata-bhishmaparva
+- отмечен  · n=1  · mahabharata-bhishmaparva
+- предается  · n=1  · mahabharata-dronaparva
+- оказался  · n=1  · mahabharata-dronaparva
+- у тебя  · n=1  · mahabharata-dronaparva
+- остался  · n=1  · buddhacharita
+- склоняется  · n=1  · mahabharata-udyogaparva
+- способно  · n=1  · mahabharata-udyogaparva
+- может принадлежать  · n=1  · mahabharata-udyogaparva
+- должно быть  · n=1  · mahabharata-udyogaparva
+- окажется  · n=1  · mahabharata-udyogaparva
+- горящий  · n=1  · gitarthasamgraha-abhinavagupta
+- выявляется  · n=1  · gitarthasamgraha-abhinavagupta
+- бывает/есть  · n=1  · bhagavadgita-burba
+- пребывают  · n=1  · ramanuja_gitabhashya
+- уничтожает  · n=1  · bhagavadgita-1914
+- родиться  · n=1  · bhagavadgita-1914
+- торжествует  · n=1  · bhagavadgita-1914
+- слагается  · n=1  · bhagavadgita-1914
+- утверждается  · n=1  · bhagavadgita-erman
+- возник  · n=1  · bhagavadgita-smirnov
+- происходитъ  · n=1  · bhagavadgita-1788
+- можетъ быть  · n=1  · bhagavadgita-1788
+- принадлежитъ  · n=1  · bhagavadgita-1788
+- получаетъ  · n=1  · bhagavadgita-1788
+- проливается  · n=1  · bhagavadgita-sementsov
+- ведет  · n=1  · bhagavadgita-sementsov
+- обретешь  · n=1  · bhagavadgita-sementsov
+- возродится  · n=1  · bhagavadgita-sementsov
+- достигнетъ  · n=1  · bhagavadgita-1909
+- получитъ  · n=1  · bhagavadgita-1909
+- родится  · n=1  · bhagavadgita-1909
+- бесконечно  · n=1  · bhagavadgita-sharma
+- приводит  · n=1  · bhagavadgita-sharma
+- достигнуть  · n=1  · bhagavadgita-sharma
+- узнать  · n=1  · bhagavadgita-sharma
+- несут  · n=1  · bhagavadgita-sharma
+- относиться  · n=1  · bhagavadgita-prabhupada
+- определяют  · n=1  · bhagavadgita-prabhupada
+- произошел  · n=1  · bhagavadgita-radha
+- [он] попадает  · n=1  · bhagavadgita-radha
+- достается  · n=1  · ch-up
+- длится  · n=1  · ch-up
+- к тебе  · n=1  · mahabharata-udyogaparva
+- следует  · n=1  · nyaya-bhashya
+- Именно  · n=1  · nyaya-bhashya
+- может  · n=1  · nyaya-bhashya
+- верно  · n=1  · nyaya-bhashya
+- тождественно  · n=1  · nyaya-bhashya
+- достигнуто  · n=1  · nyaya-bhashya
+- достичь  · n=1  · mahabharata-ashvamedhikaparva
+- обрести  · n=1  · mahabharata-ashvamedhikaparva
+- обретет  · n=1  · devi-gita
+- заслуживает  · n=1  · mahabharata-sabhaparva
+- падает  · n=1  · mahabharata-sabhaparva
+- удовлетворить  · n=1  · br-up
+- исполняется  · n=1  · br-up
+- служит  · n=1  · br-up
+- собирается  · n=1  · br-up
+- обращаются  · n=1  · raghuvamsha
+- охватывает  · n=1  · mahabharata-virataparva
+- образует  · n=1  · atharvaveda
+- творит  · n=1  · shatakatrayam
+- полнится  · n=1  · shatakatrayam
+- случится  · n=1  · shatakatrayam
+- Бывает  · n=1  · atharvaveda
+- поместится  · n=1  · shukasaptati
+- это  · n=1  · shukasaptati
+- имеет место  · n=1  · sankhya-karika
+- благодаря чему  · n=1  · sankhya-karika
+- дают  · n=1  · sankhya-karika
+- можно видеть  · n=1  · yoga-sutry_vyasa-bhashya
+- выступают  · n=1  · yoga-sutry_vyasa-bhashya
+- присутствует  · n=1  · yoga-sutry_vyasa-bhashya
+- изменяется  · n=1  · yoga-sutry_vyasa-bhashya
+- не способны  · n=1  · yoga-sutry_vyasa-bhashya
+- обретает  · n=1  · yoga-sutry_vyasa-bhashya
+- связана  · n=1  · yoga-sutry_vyasa-bhashya
+- подобно  · n=1  · vedartha-samgraha_ramanuja
+- говорит  · n=1  · vedartha-samgraha_ramanuja
+- выражает  · n=1  · vedartha-samgraha_ramanuja
+- можетъ  · n=1  · megha-duta
+- возобновляется  · n=1  · megha-duta
+- ощущаютъ  · n=1  · megha-duta
+- Бываютъ  · n=1  · megha-duta
+- сжимается  · n=1  · paramarthasara-abhinavagupta
+- зовется  · n=1  · jabala-up
+- вызывает  · n=1  · yoga-sutry_vyasa-bhashya
+
+### `Bavatim` — bhavatim  (n=1)
+
+- тебя  · n=1  · mahabharata-udyogaparva
+
+### `Bavato` — bhavato  (n=5)
+
+- твой  · n=2  · mahabharata-shalyaparva
+- твоя  · n=1  · ramayana-aranyakanda
+- тебя  · n=1  · raghuvamsha
+- твоего  · n=1  · raghuvamsha
+
+### `BavatoH` — bhavatoḥ  (n=2)
+
+- ваш  · n=1  · ramayana-balakanda
+- вами обоими  · n=1  · mahabharata-dronaparva
+
+### `Bavator` — bhavator  (n=1)
+
+- вам  · n=1  · mahabharata-karnaparva
+
+### `BavatpUrva` — bhavatpūrva  (n=1)
+
+- начиная с 'господин'  · n=1  · manavadharmashastra
+
+### `BavatprasAdAt` — bhavatprasādāt  (n=1)
+
+- По твоей милости  · n=1  · mahabharata-dronaparva
+
+### `BavatprasAda` — bhavatprasāda  (n=3)
+
+- твоей милости  · n=2  · mahabharata-adiparva, mahabharata-ashvamedhikaparva
+- твоей доброте  · n=1  · mahabharata-aranyakaparva
+
+### `BavatprasAdo'yam` — bhavatprasādo'yam  (n=1)
+
+- милость  · n=1  · mahabharata-ashvamedhikaparva
+
+### `BavatpriyacikIrzA` — bhavatpriyacikīrṣā  (n=1)
+
+- желал делать приятное  · n=1  · mahabharata-ashvamedhikaparva
+
+### `BavatputrARAm` — bhavatputrāṇām  (n=1)
+
+- твоих сыновей  · n=1  · ramanuja_gitabhashya
+
+### `BavatsakASAdDi` — bhavatsakāśāddhi  (n=1)
+
+- от вас  · n=1  · mahabharata-adiparva
+
+### `BavatsakASe` — bhavatsakāśe  (n=1)
+
+- Позволь мне  · n=1  · mahabharata-karnaparva
+
+### `BavatsandarSana` — bhavatsandarśana  (n=1)
+
+- видел тебя  · n=1  · mahabharata-adiparva
+
+### `Bavatsu` — bhavatsu  (n=5)
+
+- брахманов  · n=1  · ramayana-ayodhyakanda
+- вас  · n=1  · mahabharata-aranyakaparva
+- среди вас  · n=1  · mahabharata-udyogaparva
+- при вас  · n=1  · mahabharata-virataparva
+- вы  · n=1  · mahabharata-ashramavasikaparva
+
+### `BavattaH` — bhavattaḥ  (n=1)
+
+- от тебя  · n=1  · raghuvamsha
+
+### `Bavatu` — bhavatu  (n=74)
+
+- пусть будет  · n=18  · mahabharata-adiparva, atharvaveda, mahabharata-udyogaparva, mahabharata-aranyakaparva, kama-sutra, rigveda, mahabharata-karnaparva, mahabharata-shalyaparva, atharvaveda, atharvaveda, amaru-shataka
+- будет  · n=18  · mahabharata-adiparva, ramayana-ayodhyakanda, ramayana-balakanda, mahabharata-udyogaparva, mahabharata-aranyakaparva, mahabharata-dronaparva, mahabharata-karnaparva
+- Да будет  · n=5  · atharvaveda, ramayana-ayodhyakanda, ramayana-sundarakanda, rigveda, atharvaveda
+- да будет  · n=5  · mahabharata-adiparva, mahabharata-aranyakaparva, rigveda, mahabharata-udyogaparva, atharvaveda
+- станет  · n=3  · ramayana-ayodhyakanda, rigveda, atharvaveda
+- быть  · n=3  · shukasaptati
+- будь  · n=2  · atharvaveda, atharvaveda
+- пусть станет  · n=2  · ramayana-ayodhyakanda, atharvaveda
+- пусть  · n=2  · ramayana-ayodhyakanda, amaru-shataka
+- пусть сгинет  · n=2  · rigveda, atharvaveda
+- Пусть будет  · n=2  · rigveda, rigveda
+- да родится  · n=1  · mahabharata-adiparva
+- это  · n=1  · ramayana-ayodhyakanda
+- исполнится  · n=1  · ramayana-balakanda
+- не нарушать  · n=1  · mahabharata-aranyakaparva
+- да будет так  · n=1  · mahabharata-udyogaparva
+- осуществиться  · n=1  · mahabharata-udyogaparva
+- Пусть так  · n=1  · mahabharata-karnaparva
+- пусть произойдет  · n=1  · mahabharata-shalyaparva
+- Будь  · n=1  · gitagovinda
+- поправила  · n=1  · shukasaptati
+- было  · n=1  · shukasaptati
+- стань  · n=1  · atharvaveda
+
+### `Bavatveza` — bhavatveṣa  (n=1)
+
+- пусть будет сделан  · n=1  · mahabharata-sabhaparva
+
+### `Bavatviti` — bhavatviti  (n=5)
+
+- быть  · n=4  · shukasaptati
+- ему быть  · n=1  · shukasaptati
+
+### `BavatyA` — bhavatyā  (n=10)
+
+- ты  · n=4  · ramayana-ayodhyakanda, mahabharata-shantiparva
+- тобой  · n=4  · mahabharata-ashramavasikaparva, mahabharata-shantiparva, mahabharata-adiparva
+- Ты  · n=1  · ramayana-ayodhyakanda
+- твоего  · n=1  · mahabharata-adiparva
+
+### `BavatyAH` — bhavatyāḥ  (n=3)
+
+- твоему  · n=1  · ramayana-ayodhyakanda
+- Тебе  · n=1  · ramayana-aranyakanda
+- госпожа  · n=1  · mahabharata-striparva
+
+### `BavatyAm` — bhavatyām  (n=2)
+
+- к тебе  · n=1  · mahabharata-ashramavasikaparva
+- твоего  · n=1  · mahabharata-striparva
+
+### `BavatyaH` — bhavatyaḥ  (n=2)
+
+- вы  · n=2  · mahabharata-aranyakaparva
+
+### `Bavatyai` — bhavatyai  (n=1)
+
+- тебе  · n=1  · mahabharata-ashvamedhikaparva
+
+### `BavatyevahimebudDirdfzwvAtmAnaMsuKAccyutam` — bhavatyeva hi me buddhirdṛṣṭvātmānaṃ sukhāccyutam  (n=1)
+
+- Я смотрю на себя: лишился я счастья  · n=1  · mahabharata-aranyakaparva
+
+### `Bave` — bhave  (n=1)
+
+- Шиве  · n=1  · shatakatrayam
+
+### `BaveH` — bhaveḥ  (n=5)
+
+- будешь  · n=2  · mahabharata-aranyakaparva, mahabharata-udyogaparva
+- станем одним  · n=2  · devi-gita
+- окажешься  · n=1  · ramayana-sundarakanda
+
+### `BaveTA` — bhavethā  (n=1)
+
+- будь  · n=1  · ramayana-ayodhyakanda
+
+### `BaveTAH` — bhavethāḥ  (n=3)
+
+- будь  · n=2  · mahabharata-adiparva, mahabharata-virataparva
+- станешь  · n=1  · mahabharata-aranyakaparva
+
+### `Bavecca` — bhavecca  (n=2)
+
+- носит  · n=1  · manavadharmashastra
+- пусть будет  · n=1  · mahabharata-adiparva
+
+### `Baved` — bhaved  (n=1)
+
+- да проявят  · n=1  · gitagovinda
+
+### `Bavedatra` — bhavedatra  (n=1)
+
+- так же  · n=1  · ramayana-ayodhyakanda
+
+### `Bavediti` — bhavediti  (n=2)
+
+- будет  · n=1  · mahabharata-bhishmaparva
+- спалит  · n=1  · mahabharata-ashvamedhikaparva
+
+### `BavedvyaktamapaDyAto` — bhavedvyaktamapadhyāto  (n=1)
+
+- падает, что очевидно, во мнении  · n=1  · mahabharata-bhishmaparva
+
+### `BavedyA` — bhavedyā  (n=1)
+
+- которое смогло бы привести  · n=1  · mahabharata-adiparva
+
+### `Baveha` — bhaveha  (n=7)
+
+- Стань здесь  · n=2  · rigveda, atharvaveda
+- будь тут  · n=2  · rigveda, atharvaveda
+- Будь здесь  · n=1  · atharvaveda
+- да будешь ты здесь  · n=1  · atharvaveda
+- соединись здесь  · n=1  · atharvaveda
+
+### `Bavej` — bhavej  (n=1)
+
+- может быть  · n=1  · mahabharata-udyogaparva
+
+### `Bavelloke` — bhavelloke  (n=1)
+
+- в мире  · n=1  · mahabharata-dronaparva
+
+### `Bavema` — bhavema  (n=11)
+
+- хотим процветать  · n=2  · rigveda
+- соединимся  · n=2  · atharvaveda
+- Пусть будем  · n=1  · mahabharata-aranyakaparva
+- хотим быть  · n=1  · rigveda
+- хотим  · n=1  · rigveda
+- будем  · n=1  · mahabharata-dronaparva
+- сможем стать  · n=1  · rigveda
+- были  · n=1  · rigveda
+- станем  · n=1  · rigveda
+
+### `Bavemahi` — bhavemahi  (n=1)
+
+- будем  · n=1  · mahabharata-dronaparva
+
+### `BavenAvasTitaH` — bhavenāvasthitaḥ  (n=1)
+
+- стоя вместе с Бхавой  · n=1  · mahabharata-karnaparva
+
+### `Bavena` — bhavena  (n=1)
+
+- Бхава  · n=1  · kumarasambhava
+
+### `Bavendra` — bhavendra  (n=1)
+
+- будь  · n=1  · rigveda
+
+### `Bavesu` — bhavesu  (n=1)
+
+- формах  · n=1  · bhagavadgita-sharma
+
+### `Bavet` — bhavet  (n=398)
+
+- будет  · n=96  · mahabharata-aranyakaparva, mahabharata-udyogaparva, mahabharata-dronaparva, mahabharata-adiparva, ramayana-sundarakanda, mahabharata-karnaparva, devi-gita, mahabharata-shalyaparva, mahabharata-shantiparva, ramayana-ayodhyakanda, ramayana-aranyakanda, bhagavadgita-sementsov, mahabharata-ashvamedhikaparva, yotat-up, vedanga_jyotisha, manavadharmashastra, gitarthasamgraha-abhinavagupta, ramanuja_gitabhashya, bhagavadgita-erman, bhagavadgita-prabhupada, mahabharata-sabhaparva, mahabharata-virataparva, shatakatrayam
+- может быть  · n=19  · mahabharata-udyogaparva, mahabharata-sabhaparva, mahabharata-aranyakaparva, mahabharata-adiparva, mahabharata-shalyaparva, mahabharata-virataparva, mahabharata-dronaparva, mahabharata-karnaparva, yotat-up
+- становится  · n=18  · mahabharata-aranyakaparva, hatha-yoga-pradipika, raghuvamsha, ramayana-aranyakanda, mahabharata-ashvamedhikaparva, vedanga_jyotisha, pai-up, jab-up
+- было бы  · n=16  · mahabharata-udyogaparva, mahabharata-adiparva, bhagavadgita-radha, mahabharata-aranyakaparva, mahabharata-dronaparva, bhagavadgita-burba, bhagavadgita-smirnov, bhagavadgita-sharma, mahabharata-karnaparva, mahabharata-shalyaparva, mahabharata-ashvamedhikaparva, mahabharata-striparva
+- был бы  · n=13  · ramayana-sundarakanda, mahabharata-adiparva, bhagavadgita-prabhupada, mahabharata-dronaparva, mahabharata-udyogaparva, bhagavadgita-erman, mahabharata-shalyaparva, mahabharata-sabhaparva, mahabharata-ashramavasikaparva
+- бывает  · n=9  · mahabharata-dronaparva, mahabharata-shantiparva, ramayana-aranyakanda, kama-sutra, mahabharata-karnaparva, mahabharata-sabhaparva, mahabharata-ashramavasikaparva
+- был  · n=9  · mahabharata-aranyakaparva, ramayana-sundarakanda, mahabharata-bhishmaparva, mahabharata-dronaparva, mahabharata-shalyaparva, mahabharata-virataparva
+- было  · n=8  · mahabharata-shantiparva, ramayana-ayodhyakanda, ramayana-aranyakanda, mahabharata-adiparva, mahabharata-udyogaparva, mahabharata-ashvamedhikaparva, mahabharata-sabhaparva, mahabharata-sauptikaparva
+- станет  · n=6  · mahabharata-adiparva, ramayana-ayodhyakanda, mahabharata-aranyakaparva, gitarthasamgraha-abhinavagupta, mahabharata-shalyaparva, jabala-up
+- бы  · n=6  · ramayana-ayodhyakanda, ramayana-aranyakanda, buddhacharita, mahabharata-ashvamedhikaparva
+- пусть  · n=5  · devi-gita, manavadharmashastra, mahabharata-aranyakaparva
+- пусть будет  · n=5  · manavadharmashastra, mahabharata-aranyakaparva, kama-sutra, mahabharata-udyogaparva, mahabharata-karnaparva
+- есть  · n=5  · mahabharata-aranyakaparva, ramayana-aranyakanda
+- быть  · n=4  · manavadharmashastra, mahabharata-dronaparva, mahabharata-karnaparva, mahabharata-sabhaparva
+- случится  · n=4  · mahabharata-aranyakaparva, shatakatrayam-serebryakov, yotat-up
+- происходит  · n=4  · devi-gita, mahabharata-aranyakaparva, kama-sutra
+- да будет  · n=4  · mahabharata-aranyakaparva, mahabharata-adiparva, mahabharata-bhishmaparva, mahabharata-ashramavasikaparva
+- была бы  · n=4  · mahabharata-virataparva, mahabharata-adiparva
+- мог бы быть  · n=3  · mahabharata-aranyakaparva, mahabharata-udyogaparva, mahabharata-virataparva
+- является  · n=3  · mahabharata-dronaparva, devi-gita, hatha-yoga-pradipika
+- появится  · n=2  · ramayana-ayodhyakanda, yotat-up
+- должно быть  · n=2  · ramayana-sundarakanda, mahabharata-dronaparva
+- считается  · n=2  · manavadharmashastra
+- следует вести  · n=2  · manavadharmashastra
+- должен быть  · n=2  · manavadharmashastra
+- Было бы  · n=2  · ramayana-aranyakanda
+- услышав  · n=2  · ramayana-aranyakanda
+- может обернуться  · n=2  · mahabharata-aranyakaparva, mahabharata-karnaparva
+- следует  · n=2  · mahabharata-dronaparva, gitarthasamgraha-abhinavagupta
+- случается  · n=2  · mahabharata-dronaparva, mahabharata-shalyaparva
+- стал  · n=2  · mahabharata-udyogaparva, mahabharata-virataparva
+- может быть достигнуто  · n=2  · mahabharata-udyogaparva
+- должен  · n=2  · mahabharata-karnaparva, mahabharata-ashvamedhikaparva
+- можно  · n=2  · mahabharata-shalyaparva, mahabharata-virataparva
+- настигает  · n=2  · devi-gita
+- что  · n=2  · hatha-yoga-pradipika
+- исполнится  · n=1  · mahabharata-adiparva
+- да родится  · n=1  · mahabharata-adiparva
+- превращался  · n=1  · mahabharata-adiparva
+- сделать  · n=1  · ramayana-ayodhyakanda
+- станут  · n=1  · ramayana-ayodhyakanda
+- могу быть  · n=1  · ramayana-ayodhyakanda
+- не становится  · n=1  · ramayana-ayodhyakanda
+- благо  · n=1  · ramayana-ayodhyakanda
+- пригодится  · n=1  · ramayana-ayodhyakanda
+- избежать  · n=1  · ramayana-sundarakanda
+- стала бы  · n=1  · ramayana-sundarakanda
+- или  · n=1  · ramayana-sundarakanda
+- если  · n=1  · ramayana-sundarakanda
+- вызвало  · n=1  · ramayana-sundarakanda
+- осталось  · n=1  · ramayana-sundarakanda
+- нельзя сидеть  · n=1  · manavadharmashastra
+- относится  · n=1  · manavadharmashastra
+- следует считать  · n=1  · manavadharmashastra
+- произошло бы  · n=1  · manavadharmashastra
+- может применяться  · n=1  · manavadharmashastra
+- полагается  · n=1  · manavadharmashastra
+- надо сохранять  · n=1  · manavadharmashastra
+- жить  · n=1  · manavadharmashastra
+- возникнет  · n=1  · manavadharmashastra
+- подумал  · n=1  · ramayana-aranyakanda
+- стать  · n=1  · ramayana-aranyakanda
+- уцелеет  · n=1  · ramayana-aranyakanda
+- станет делать  · n=1  · ramayana-aranyakanda
+- исходящее  · n=1  · ramayana-aranyakanda
+- не вижу  · n=1  · ramayana-aranyakanda
+- да будут  · n=1  · ramayana-aranyakanda
+- была  · n=1  · ramayana-aranyakanda
+- прошу  · n=1  · ramayana-aranyakanda
+- знаешь  · n=1  · ramayana-aranyakanda
+- ограничить  · n=1  · ramayana-aranyakanda
+- мне  · n=1  · ramayana-balakanda
+- Случается  · n=1  · ramayana-balakanda
+- пройдет  · n=1  · ramayana-balakanda
+- сбудется  · n=1  · mahabharata-aranyakaparva
+- пусть постигнет  · n=1  · mahabharata-aranyakaparva
+- Быть может  · n=1  · mahabharata-aranyakaparva
+- Или  · n=1  · mahabharata-aranyakaparva
+- воплотился  · n=1  · mahabharata-aranyakaparva
+- столько  · n=1  · mahabharata-aranyakaparva
+- быть может  · n=1  · mahabharata-aranyakaparva
+- к  · n=1  · mahabharata-aranyakaparva
+- обретает  · n=1  · mahabharata-aranyakaparva
+- такой  · n=1  · mahabharata-aranyakaparva
+- свойственно  · n=1  · mahabharata-aranyakaparva
+- чтобы достичь  · n=1  · mahabharata-aranyakaparva
+- пребудет  · n=1  · mahabharata-aranyakaparva
+- приводят  · n=1  · mahabharata-aranyakaparva
+- видна  · n=1  · mahabharata-aranyakaparva
+- подобен  · n=1  · mahabharata-aranyakaparva
+- даруй  · n=1  · mahabharata-aranyakaparva
+- не  · n=1  · mahabharata-aranyakaparva
+- погрязнет  · n=1  · mahabharata-aranyakaparva
+- могут быть  · n=1  · mahabharata-aranyakaparva
+- вселяет  · n=1  · mahabharata-aranyakaparva
+- могу  · n=1  · mahabharata-aranyakaparva
+- нужно применить  · n=1  · mahabharata-adiparva
+- да совершится  · n=1  · mahabharata-adiparva
+- состоится  · n=1  · mahabharata-adiparva
+- могло состояться  · n=1  · mahabharata-adiparva
+- считался бы  · n=1  · mahabharata-adiparva
+- последует  · n=1  · mahabharata-adiparva
+- будет поступать  · n=1  · mahabharata-adiparva
+- может  · n=1  · mahabharata-adiparva
+- может обстоять  · n=1  · mahabharata-dronaparva
+- придется  · n=1  · mahabharata-dronaparva
+- оказалось  · n=1  · mahabharata-dronaparva
+- должна быть  · n=1  · mahabharata-dronaparva
+- смогу  · n=1  · buddhacharita
+- возникнуть  · n=1  · mahabharata-udyogaparva
+- можно было бы  · n=1  · mahabharata-udyogaparva
+- может служить  · n=1  · mahabharata-udyogaparva
+- может быть найдена  · n=1  · mahabharata-udyogaparva
+- стоящий  · n=1  · mahabharata-udyogaparva
+- мог бы  · n=1  · mahabharata-udyogaparva
+- может принести  · n=1  · mahabharata-udyogaparva
+- может расколоться  · n=1  · mahabharata-udyogaparva
+- случилось  · n=1  · mahabharata-udyogaparva
+- достоин быть  · n=1  · mahabharata-udyogaparva
+- наступит  · n=1  · mahabharata-udyogaparva
+- появилось бы  · n=1  · bhagavadgita-burba
+- вспыхнуло  · n=1  · bhagavadgity
+- потерплю  · n=1  · bhagavadgita-1788
+- могло бы быть  · n=1  · bhagavadgita-radha
+- будь  · n=1  · mahabharata-karnaparva
+- может случиться  · n=1  · mahabharata-karnaparva
+- может стать  · n=1  · mahabharata-karnaparva
+- повлечет  · n=1  · mahabharata-karnaparva
+- может принадлежать  · n=1  · mahabharata-shalyaparva
+- может представиться возможность  · n=1  · mahabharata-shalyaparva
+- должен действовать  · n=1  · mahabharata-shalyaparva
+- могло  · n=1  · mahabharata-shalyaparva
+- ни  · n=1  · mahabharata-ashvamedhikaparva
+- преобладает  · n=1  · mahabharata-ashvamedhikaparva
+- на подъёме  · n=1  · mahabharata-ashvamedhikaparva
+- развита  · n=1  · mahabharata-ashvamedhikaparva
+- достигнет  · n=1  · mahabharata-ashvamedhikaparva
+- именуется  · n=1  · devi-gita
+- надо быть  · n=1  · devi-gita
+- появляется  · n=1  · devi-gita
+- рождается  · n=1  · devi-gita
+- сделается  · n=1  · mahabharata-sabhaparva
+- будет существовать  · n=1  · mahabharata-sabhaparva
+- послужит  · n=1  · raghuvamsha
+- ложись  · n=1  · hatha-yoga-pradipika
+- это  · n=1  · hatha-yoga-pradipika
+- можно достичь успеха  · n=1  · hatha-yoga-pradipika
+- выглядит  · n=1  · hatha-yoga-pradipika
+- не подвержен  · n=1  · hatha-yoga-pradipika
+- достигнута  · n=1  · hatha-yoga-pradipika
+- попадет  · n=1  · mahabharata-virataparva
+- может осуществиться  · n=1  · mahabharata-virataparva
+- охватывает  · n=1  · mahabharata-virataparva
+- явится  · n=1  · yotat-up
+- став  · n=1  · yotat-up
+- бы найти  · n=1  · mahabharata-striparva
+- быть можетъ  · n=1  · megha-duta
+- можно добиться  · n=1  · mahabharata-sauptikaparva
+- предпочтут  · n=1  · mahabharata-sauptikaparva
+- подвергнется  · n=1  · mahabharata-sauptikaparva
+- Пусть  · n=1  · mun-up
+
+### `BavetAm` — bhavetām  (n=4)
+
+- не  · n=1  · ramayana-ayodhyakanda
+- благоденствуют  · n=1  · mahabharata-udyogaparva
+- будут  · n=1  · mahabharata-udyogaparva
+- быть  · n=1  · shukasaptati
+
+### `Bavetpravftti` — bhavetpravṛtti  (n=1)
+
+- может длиться жизнь  · n=1  · ramayana-ayodhyakanda
+
+### `BavetyarTaH` — bhavetyarthaḥ  (n=1)
+
+- таков смысл  · n=1  · jabala-up
+
+### `BaveyaM` — bhaveyaṃ  (n=1)
+
+- стану  · n=1  · ramayana-sundarakanda
+
+### `Baveyam` — bhaveyam  (n=15)
+
+- буду  · n=3  · mahabharata-adiparva, mahabharata-aranyakaparva, devi-gita
+- стать  · n=3  · mahabharata-shantiparva, mahabharata-aranyakaparva, mahabharata-udyogaparva
+- стану  · n=3  · mahabharata-shantiparva, ramayana-ayodhyakanda, ramayana-sundarakanda
+- быть  · n=1  · mahabharata-shantiparva
+- Буду  · n=1  · ramayana-ayodhyakanda
+- был  · n=1  · mahabharata-aranyakaparva
+- меня  · n=1  · mahabharata-udyogaparva
+- остаться  · n=1  · mahabharata-udyogaparva
+- был бы  · n=1  · mahabharata-striparva
+
+### `Baveyu` — bhaveyu  (n=1)
+
+- стали  · n=1  · mahabharata-aranyakaparva
+
+### `BaveyuH` — bhaveyuḥ  (n=4)
+
+- Да будут  · n=1  · mahabharata-adiparva
+- пусть будет  · n=1  · mahabharata-aranyakaparva
+- преуспели бы  · n=1  · mahabharata-udyogaparva
+- должны были бы существовать  · n=1  · vedartha-samgraha_ramanuja
+
+### `Baveyur` — bhaveyur  (n=2)
+
+- будут  · n=2  · ramayana-sundarakanda
+
+### `Bavezu` — bhaveṣu  (n=1)
+
+- в бытии  · n=1  · buddhacharita
+
+### `BaviSyati` — bhaviśyati  (n=1)
+
+- Быть  · n=1  · ramayana-ayodhyakanda
+
+### `BavisyaTa` — bhavisyatha  (n=1)
+
+- Пусть  · n=1  · mahabharata-aranyakaparva
+
+### `Bavisyati` — bhavisyati  (n=1)
+
+- будет  · n=1  · mahabharata-udyogaparva
+
+### `BavitA` — bhavitā  (n=126)
+
+- будет  · n=49  · mahabharata-adiparva, mahabharata-udyogaparva, mahabharata-aranyakaparva, mahabharata-dronaparva, mahabharata-shantiparva, ramayana-ayodhyakanda, mahabharata-bhishmaparva, ramanuja_gitabhashya, bhagavadgita-sementsov, kat-up, ramayana-balakanda, gitarthasamgraha-abhinavagupta, bhagavadgita-burba, bhagavadgita-1914, bhagavadgita-erman, bhagavadgita-1788, bhagavadgita-sharma, bhagavadgita-radha, mahabharata-ashramavasikaparva
+- будешь  · n=6  · mahabharata-aranyakaparva, mahabharata-udyogaparva, mahabharata-virataparva, megha-duta
+- станет  · n=5  · ramayana-ayodhyakanda, mahabharata-adiparva, bhagavadgita-prabhupada, mahabharata-sauptikaparva
+- родится  · n=4  · mahabharata-adiparva, ramayana-ayodhyakanda, mahabharata-aranyakaparva
+- придет  · n=3  · mahabharata-aranyakaparva, mahabharata-adiparva
+- станешь  · n=3  · mahabharata-ashvamedhikaparva, mahabharata-aranyakaparva
+- буду  · n=3  · mahabharata-dronaparva, mahabharata-udyogaparva, mahabharata-sabhaparva
+- возникнет  · n=3  · bhagavadgita-burba, bhagavadgita-smirnov, bhagavadgita-prabhupada
+- предстоит  · n=2  · mahabharata-adiparva, mahabharata-udyogaparva
+- наступит  · n=2  · mahabharata-adiparva
+- нет  · n=2  · ramayana-ayodhyakanda, bhagavadgita-smirnov
+- найдется  · n=2  · mahabharata-aranyakaparva
+- становится  · n=2  · mahabharata-bhishmaparva, bhagavadgita-erman
+- окажется  · n=2  · mahabharata-dronaparva, mahabharata-udyogaparva
+- осуществится  · n=1  · mahabharata-adiparva
+- Закончится  · n=1  · mahabharata-shantiparva
+- Станет  · n=1  · ramayana-ayodhyakanda
+- исполнится  · n=1  · mahabharata-aranyakaparva
+- сбудется  · n=1  · mahabharata-aranyakaparva
+- вовлечет  · n=1  · mahabharata-aranyakaparva
+- останешься  · n=1  · mahabharata-aranyakaparva
+- возгордишься  · n=1  · mahabharata-aranyakaparva
+- принесешь  · n=1  · mahabharata-aranyakaparva
+- нельзя отвратить  · n=1  · mahabharata-aranyakaparva
+- стань  · n=1  · mahabharata-aranyakaparva
+- родит  · n=1  · mahabharata-aranyakaparva
+- достигну  · n=1  · mahabharata-adiparva
+- может не состояться  · n=1  · mahabharata-adiparva
+- должен родиться  · n=1  · mahabharata-adiparva
+- достигнешь  · n=1  · mahabharata-adiparva
+- свершится  · n=1  · mahabharata-bhishmaparva
+- случалось  · n=1  · mahabharata-dronaparva
+- будущее  · n=1  · mahabharata-dronaparva
+- ждет  · n=1  · buddhacharita
+- случится  · n=1  · mahabharata-udyogaparva
+- оправдается  · n=1  · mahabharata-udyogaparva
+- грянет  · n=1  · mahabharata-udyogaparva
+- будут  · n=1  · mahabharata-udyogaparva
+- неизбежна  · n=1  · mahabharata-udyogaparva
+- начнется  · n=1  · mahabharata-udyogaparva
+- возникает  · n=1  · gitarthasamgraha-abhinavagupta
+- будет существовать  · n=1  · bhagavadgity
+- сдѣлалъ  · n=1  · bhagavadgity
+- не будетъ  · n=1  · bhagavadgita-1909
+- будетъ  · n=1  · bhagavadgita-1909
+- быть  · n=1  · bhagavadgita-sharma
+- начнет существовать [родится]  · n=1  · bhagavadgita-radha
+- будет происходить  · n=1  · mahabharata-shalyaparva
+- постигнет  · n=1  · mahabharata-ashvamedhikaparva
+- представит  · n=1  · devi-gita
+- может быть  · n=1  · mahabharata-virataparva
+- сгинет  · n=1  · mahabharata-striparva
+
+### `BavitAraH` — bhavitāraḥ  (n=3)
+
+- будут  · n=1  · mahabharata-aranyakaparva
+- были  · n=1  · mahabharata-adiparva
+- станут  · n=1  · mahabharata-karnaparva
+
+### `BavitArau` — bhavitārau  (n=2)
+
+- будут  · n=2  · mahabharata-dronaparva, mahabharata-virataparva
+
+### `BavitAsi` — bhavitāsi  (n=2)
+
+- станешь  · n=1  · mahabharata-aranyakaparva
+- достигнешь  · n=1  · raghuvamsha
+
+### `BavitAsmi` — bhavitāsmi  (n=1)
+
+- превзойду  · n=1  · mahabharata-aranyakaparva
+
+### `BavitAsyeka` — bhavitāsyeka  (n=1)
+
+- один жить будешь  · n=1  · mahabharata-aranyakaparva
+
+### `BavitAtvatsamonAnyaHkaScidyuDinaraHkvacit` — bhavitā tvatsamo nānyaḥ kaścidyudhi naraḥ kvacit  (n=1)
+
+- Никакой другой человек не станет равным тебе в бою  · n=1  · mahabharata-dronaparva
+
+### `Bavita` — bhavita  (n=1)
+
+- исполнится  · n=1  · mahabharata-adiparva
+
+### `Bavitavya` — bhavitavya  (n=20)
+
+- судьба  · n=4  · mahabharata-ashramavasikaparva, mahabharata-aranyakaparva, mahabharata-mausalaparva
+- предопределено  · n=2  · mahabharata-aranyakaparva, mahabharata-udyogaparva
+- должно быть  · n=2  · mahabharata-adiparva, nyaya-bhashya
+- должно  · n=2  · nyaya-bhashya, mahabharata-ashvamedhikaparva
+- быть  · n=2  · shukasaptati
+- будет  · n=1  · mahabharata-adiparva
+- Случилось  · n=1  · ramayana-aranyakanda
+- предопределение  · n=1  · mahabharata-aranyakaparva
+- суждено  · n=1  · mahabharata-aranyakaparva
+- грядущее  · n=1  · mahabharata-bhishmaparva
+- чему предопределено случиться  · n=1  · mahabharata-shalyaparva
+- судьбу  · n=1  · mahabharata-ashramavasikaparva
+- грядущая  · n=1  · mahabharata-striparva
+
+### `BavitavyaM` — bhavitavyaṃ  (n=3)
+
+- предопределено  · n=2  · mahabharata-dronaparva
+- должно случиться  · n=1  · mahabharata-adiparva
+
+### `Bavitavyam` — bhavitavyam  (n=7)
+
+- судьба  · n=2  · mahabharata-mausalaparva
+- должна  · n=1  · ramayana-ayodhyakanda
+- наступит  · n=1  · mahabharata-aranyakaparva
+- предопределено  · n=1  · mahabharata-udyogaparva
+- должен быть  · n=1  · sankhya-karika
+- должно было исполниться  · n=1  · mahabharata-ashramavasikaparva
+
+### `BavitavyatayA` — bhavitavyatayā  (n=1)
+
+- судьбою  · n=1  · ramayana-ayodhyakanda
+
+### `Bavitf` — bhavitṛ  (n=6)
+
+- будет  · n=3  · kama-sutra, mahabharata-adiparva, mahabharata-ashramavasikaparva
+- оборачивается  · n=1  · mahabharata-aranyakaparva
+- могут быть  · n=1  · mahabharata-adiparva
+- должен быть  · n=1  · mahabharata-virataparva
+
+### `BavitrI` — bhavitrī  (n=10)
+
+- будет  · n=3  · mahabharata-adiparva, kumarasambhava
+- будут  · n=1  · mahabharata-aranyakaparva
+- наступит  · n=1  · mahabharata-aranyakaparva
+- там  · n=1  · mahabharata-aranyakaparva
+- станет  · n=1  · mahabharata-udyogaparva
+- суждено  · n=1  · raghuvamsha
+- станешь  · n=1  · mahabharata-ashramavasikaparva
+- не окажется  · n=1  · mahabharata-sauptikaparva
+
+### `BavitrIm` — bhavitrīm  (n=1)
+
+- предстанешь  · n=1  · megha-duta
+
+### `Bavitra` — bhavitra  (n=4)
+
+- место (нашей) жизни (?)  · n=4  · rigveda, atharvaveda
+
+### `Bavitu` — bhavitu  (n=1)
+
+- быть  · n=1  · mahabharata-virataparva
+
+### `BavituM` — bhavituṃ  (n=2)
+
+- стать  · n=1  · mahabharata-aranyakaparva
+- быть  · n=1  · mahabharata-udyogaparva
+
+### `Bavitum` — bhavitum  (n=16)
+
+- быть  · n=11  · mahabharata-adiparva, nyaya-bhashya, ramayana-aranyakanda, ramayana-ayodhyakanda, mahabharata-udyogaparva, mahabharata-striparva
+- стать  · n=3  · ramayana-sundarakanda, mahabharata-adiparva
+- жить  · n=1  · ramayana-ayodhyakanda
+- становится  · n=1  · ramayana-sundarakanda
+
+### `Bavitumarhasi` — bhavitumarhasi  (n=1)
+
+- должен  · n=1  · mahabharata-udyogaparva
+
+### `Bavitumarhati` — bhavitum arhati  (n=4)
+
+- может быть  · n=2  · nyaya-bhashya
+- должна становиться  · n=1  · ramayana-sundarakanda
+- должно быть  · n=1  · mahabharata-udyogaparva
+
+### `BavitvA` — bhavitvā  (n=1)
+
+- быть  · n=1  · shukasaptati
+
+### `BavizyARi` — bhaviṣyāṇi  (n=5)
+
+- будущие  · n=3  · bhagavadgity, bhagavadgita-erman, bhagavadgita-smirnov
+- будущих  · n=1  · bhagavadgita-burba
+- будущего  · n=1  · bhagavadgita-radha
+
+### `BavizyAma` — bhaviṣyāma  (n=2)
+
+- будем  · n=1  · mahabharata-udyogaparva
+- прекратим существовать  · n=1  · bhagavadgity
+
+### `BavizyAmaH` — bhaviṣyāmaḥ  (n=16)
+
+- будем  · n=3  · bhagavadgita-sementsov, bhagavadgita-1909, mahabharata-ashvamedhikaparva
+- существовать не перестанем  · n=2  · mahabharata-bhishmaparva, bhagavadgita-erman
+- будем существовать  · n=2  · bhagavadgita-prabhupada, bhagavadgita-radha
+- сделаемся  · n=1  · mahabharata-adiparva
+- заслужим  · n=1  · mahabharata-udyogaparva
+- будет  · n=1  · gitarthasamgraha-abhinavagupta
+- станем не-сущими  · n=1  · ramanuja_gitabhashya
+- перестанем существовать  · n=1  · bhagavadgita-1914
+- прекратим существовать  · n=1  · bhagavadgita-smirnov
+- престанемъ существовать  · n=1  · bhagavadgita-1788
+- прекратим существование  · n=1  · bhagavadgita-sharma
+- будем жить  · n=1  · mahabharata-ashramavasikaparva
+
+### `BavizyAmas` — bhaviṣyāmas  (n=1)
+
+- будем  · n=1  · bhagavadgita-burba
+
+### `BavizyAmi` — bhaviṣyāmi  (n=48)
+
+- буду  · n=20  · ramayana-ayodhyakanda, mahabharata-adiparva, mahabharata-aranyakaparva, mahabharata-udyogaparva, mahabharata-karnaparva, mahabharata-virataparva, shukasaptati, mahabharata-striparva, pr-up
+- стану  · n=9  · ramayana-ayodhyakanda, mahabharata-adiparva, ramayana-sundarakanda, ramayana-aranyakanda, mahabharata-udyogaparva, mahabharata-shalyaparva, mahabharata-virataparva
+- Стану  · n=2  · ramayana-ayodhyakanda, ramayana-sundarakanda
+- сделаюсь  · n=2  · mahabharata-aranyakaparva, mahabharata-virataparva
+- смогу  · n=2  · mahabharata-aranyakaparva, mahabharata-virataparva
+- меня  · n=1  · ramayana-ayodhyakanda
+- Придет  · n=1  · ramayana-ayodhyakanda
+- будет  · n=1  · ramayana-ayodhyakanda
+- Буду  · n=1  · ramayana-sundarakanda
+- наемся  · n=1  · ramayana-sundarakanda
+- дарую  · n=1  · ramayana-balakanda
+- останусь  · n=1  · mahabharata-aranyakaparva
+- будут  · n=1  · mahabharata-udyogaparva
+- обрету  · n=1  · gitarthasamgraha-abhinavagupta
+- стать  · n=1  · mahabharata-karnaparva
+- сумею  · n=1  · shatakatrayam
+- сумею я  · n=1  · shatakatrayam-serebryakov
+- буду существовать  · n=1  · mahabharata-sauptikaparva
+
+### `BavizyAvaH` — bhaviṣyāvaḥ  (n=1)
+
+- будем  · n=1  · mahabharata-aranyakaparva
+
+### `BavizyTa` — bhaviṣytha  (n=1)
+
+- станете  · n=1  · ramayana-balakanda
+
+### `Bavizya` — bhaviṣya  (n=19)
+
+- будущее  · n=6  · manavadharmashastra, mahabharata-aranyakaparva, mahabharata-adiparva, mahabharata-bhishmaparva, bhagavadgita-sharma, mahabharata-sabhaparva
+- будущие  · n=5  · bhagavadgita-prabhupada, mahabharata-bhishmaparva, ramanuja_gitabhashya, bhagavadgita-1914
+- Пророческая (Бхавишья)  · n=1  · mahabharata-adiparva
+- в будущем  · n=1  · mahabharata-adiparva
+- будущем  · n=1  · mahabharata-aranyakaparva
+- Будущее  · n=1  · mahabharata-bhishmaparva
+- неизбежно сулит  · n=1  · mahabharata-udyogaparva
+- впредь будущія  · n=1  · bhagavadgita-1788
+- возникнут  · n=1  · bhagavadgita-sementsov
+- будет жить  · n=1  · bhagavadgita-1909
+
+### `BavizyaDvam` — bhaviṣyadhvam  (n=2)
+
+- явитесь  · n=1  · ramayana-balakanda
+- разделитесь  · n=1  · mahabharata-aranyakaparva
+
+### `BavizyaTa` — bhaviṣyatha  (n=2)
+
+- станьте  · n=1  · ramayana-balakanda
+- станете  · n=1  · rigveda
+
+### `BavizyacCuBayogyatA` — bhaviṣyacchubhayogyatā  (n=1)
+
+- подходишь для будущей удачи  · n=1  · ramayana-sundarakanda
+
+### `BavizyadBUtadarSinI` — bhaviṣyadbhūtadarśinī  (n=1)
+
+- видит прошедшее и будущее  · n=1  · mahabharata-udyogaparva
+
+### `BavizyadBUtajalpaka` — bhaviṣyadbhūtajalpaka  (n=1)
+
+- толкователь будущего и прошедшего  · n=1  · mahabharata-sabhaparva
+
+### `Bavizyant` — bhaviṣyant  (n=3)
+
+- Собираясь стать  · n=2  · atharvaveda
+- ожидающее  · n=1  · kama-sutra
+
+### `Bavizyanti` — bhaviṣyanti  (n=75)
+
+- будут  · n=26  · mahabharata-aranyakaparva, mahabharata-virataparva, mahabharata-udyogaparva, ramayana-aranyakanda, mahabharata-dronaparva, bhagavadgita-prabhupada, mahabharata-shantiparva, ramayana-ayodhyakanda, ramayana-sundarakanda, ramayana-balakanda, bhagavadgita-smirnov, mahabharata-karnaparva
+- будет  · n=8  · mahabharata-adiparva, mahabharata-shantiparva, mahabharata-aranyakaparva, mahabharata-bhishmaparva, mahabharata-udyogaparva, ramanuja_gitabhashya, bhagavadgita-sementsov
+- станут  · n=5  · mahabharata-aranyakaparva, ramayana-balakanda, mahabharata-udyogaparva, mahabharata-karnaparva
+- существовать перестанут  · n=4  · mahabharata-bhishmaparva, bhagavadgita-erman
+- останется  · n=2  · mahabharata-shantiparva, bhagavadgity
+- станет  · n=2  · ramayana-aranyakanda
+- родятся  · n=2  · ramayana-balakanda
+- погибнут  · n=2  · gitarthasamgraha-abhinavagupta, bhagavadgita-sharma
+- Будут  · n=1  · ramayana-ayodhyakanda
+- не добьются успеха  · n=1  · ramayana-sundarakanda
+- Рассыплются  · n=1  · ramayana-aranyakanda
+- сделаю  · n=1  · ramayana-aranyakanda
+- Сгорят  · n=1  · ramayana-balakanda
+- настанет  · n=1  · mahabharata-aranyakaparva
+- сохранит  · n=1  · mahabharata-aranyakaparva
+- делаются  · n=1  · mahabharata-aranyakaparva
+- превратятся  · n=1  · mahabharata-aranyakaparva
+- будет в ходу  · n=1  · mahabharata-aranyakaparva
+- найдутся  · n=1  · mahabharata-adiparva
+- обратятся  · n=1  · mahabharata-dronaparva
+- подпадут  · n=1  · mahabharata-dronaparva
+- победят  · n=1  · mahabharata-udyogaparva
+- произойдет  · n=1  · gitarthasamgraha-abhinavagupta
+- будут существовать  · n=1  · bhagavadgita-burba
+- ускользнет  · n=1  · bhagavadgita-1914
+- будутъ  · n=1  · bhagavadgita-1788
+- сойдетъ  · n=1  · bhagavadgita-1909
+- останутся [в живых]  · n=1  · bhagavadgita-radha
+- будут следовать  · n=1  · ch-up
+- послужат  · n=1  · mahabharata-ashramavasikaparva
+- достанутся  · n=1  · mahabharata-ashramavasikaparva
+- обретут  · n=1  · mahabharata-striparva
+
+### `Bavizyanto` — bhaviṣyanto  (n=1)
+
+- станут  · n=1  · br-up
+
+### `BavizyantyAH` — bhaviṣyantyāḥ  (n=1)
+
+- грядущего  · n=1  · raghuvamsha
+
+### `BavizyarUpa` — bhaviṣyarūpa  (n=1)
+
+- будущее  · n=1  · mahabharata-udyogaparva
+
+### `Bavizyasi` — bhaviṣyasi  (n=65)
+
+- будешь  · n=38  · mahabharata-adiparva, mahabharata-udyogaparva, mahabharata-aranyakaparva, atharvaveda, ramayana-aranyakanda, mahabharata-dronaparva, mahabharata-virataparva, ramayana-ayodhyakanda, mahabharata-karnaparva, mahabharata-shalyaparva, mahabharata-sabhaparva, mahabharata-striparva
+- станешь  · n=10  · mahabharata-udyogaparva, ramayana-balakanda, mahabharata-adiparva, ramayana-aranyakanda, mahabharata-aranyakaparva, buddhacharita
+- можешь  · n=2  · ramayana-aranyakanda, mahabharata-shalyaparva
+- получишь  · n=2  · mahabharata-aranyakaparva, mahabharata-ashvamedhikaparva
+- останешься  · n=2  · mahabharata-aranyakaparva
+- Станем  · n=1  · ramayana-ayodhyakanda
+- стать  · n=1  · ramayana-ayodhyakanda
+- может царствовать  · n=1  · ramayana-ayodhyakanda
+- не будешь ты жить  · n=1  · ramayana-sundarakanda
+- жить не будешь  · n=1  · ramayana-sundarakanda
+- быть  · n=1  · ramayana-aranyakanda
+- Будешь блюсти  · n=1  · ramayana-balakanda
+- будет  · n=1  · mahabharata-aranyakaparva
+- погибнешь  · n=1  · mahabharata-adiparva
+- стану  · n=1  · mahabharata-udyogaparva
+- ты  · n=1  · devi-gita
+
+### `Bavizyat` — bhaviṣyat  (n=41)
+
+- будущее  · n=13  · br-up, mahabharata-bhishmaparva, mahabharata-ashvamedhikaparva, mahabharata-aranyakaparva, gitarthasamgraha-abhinavagupta, mahabharata-virataparva, mai-up, man-up
+- будет  · n=4  · mahabharata-aranyakaparva, mahabharata-dronaparva, mahabharata-sabhaparva, atharvaveda
+- что будет  · n=3  · atharvaveda, atharvaveda
+- будущих существ  · n=2  · mahabharata-bhishmaparva, bhagavadgita-erman
+- будущий  · n=2  · sankhya-karika
+- то, что будет  · n=2  · atharvaveda
+- пойдет  · n=1  · ramayana-ayodhyakanda
+- будущего  · n=1  · mahabharata-aranyakaparva
+- предстоит в будущем  · n=1  · mahabharata-dronaparva
+- еще будет  · n=1  · mahabharata-udyogaparva
+- грядущего  · n=1  · bhagavadgita-1914
+- тѣхъ, которымъ предлежитъ существовать  · n=1  · bhagavadgity
+- долженствующего возникнуть  · n=1  · bhagavadgita-smirnov
+- существовать  · n=1  · bhagavadgita-1788
+- будущих  · n=1  · bhagavadgita-sementsov
+- возродиться  · n=1  · bhagavadgita-1909
+- грядет  · n=1  · bhagavadgita-sharma
+- будущих [шести изменений]  · n=1  · bhagavadgita-radha
+- Будущему  · n=1  · br-up
+- будущим  · n=1  · atharvaveda
+- Будущее  · n=1  · yoga-sutry_vyasa-bhashya
+
+### `BavizyatAm` — bhaviṣyatām  (n=4)
+
+- того, что будет  · n=1  · bhagavadgita-burba
+- будущих  · n=1  · ramanuja_gitabhashya
+- того, что появится в будущем  · n=1  · bhagavadgita-prabhupada
+- рождение  · n=1  · bhagavadgita-prabhupada
+
+### `Bavizyata` — bhaviṣyata  (n=1)
+
+- будут  · n=1  · ramayana-balakanda
+
+### `BavizyataH` — bhaviṣyataḥ  (n=7)
+
+- будут  · n=5  · mahabharata-adiparva, mahabharata-aranyakaparva, mahabharata-udyogaparva
+- будущего  · n=1  · kama-sutra
+- провидя  · n=1  · kumarasambhava
+
+### `Bavizyate` — bhaviṣyate  (n=1)
+
+- станут неведомы  · n=1  · ramayana-balakanda
+
+### `Bavizyati` — bhaviṣyati  (n=393)
+
+- будет  · n=201  · mahabharata-aranyakaparva, mahabharata-adiparva, mahabharata-udyogaparva, ramayana-ayodhyakanda, mahabharata-dronaparva, mahabharata-shalyaparva, ramayana-balakanda, mahabharata-bhishmaparva, mahabharata-virataparva, ramayana-sundarakanda, mahabharata-ashvamedhikaparva, ch-up, mahabharata-karnaparva, ramayana-aranyakanda, raghuvamsha, shukasaptati, mahabharata-sabhaparva, mahabharata-sauptikaparva, buddhacharita, nyaya-bhashya, sankhya-karika, kama-sutra, gitarthasamgraha-abhinavagupta, bhagavadgita-burba, bhagavadgita-erman, bhagavadgita-smirnov, bhagavadgita-1909, atharvaveda, gitagovinda, amaru-shataka, mahabharata-ashramavasikaparva, pr-up
+- станет  · n=25  · mahabharata-aranyakaparva, ramayana-aranyakanda, mahabharata-adiparva, ramayana-ayodhyakanda, ramayana-balakanda, mahabharata-udyogaparva, bhagavadgity, bhagavadgita-prabhupada, bhagavadgita-radha, mahabharata-karnaparva, mahabharata-shalyaparva, mahabharata-ashvamedhikaparva, mahabharata-virataparva, mahabharata-mausalaparva, mahabharata-mahaprasthanikaparva
+- наступит  · n=7  · mahabharata-adiparva, mahabharata-udyogaparva, mahabharata-karnaparva, mahabharata-sabhaparva, mahabharata-mausalaparva
+- будут  · n=5  · mahabharata-adiparva, mahabharata-aranyakaparva, mahabharata-udyogaparva, kumarasambhava, mahabharata-sauptikaparva
+- родится  · n=5  · mahabharata-adiparva, mahabharata-aranyakaparva, ramayana-balakanda
+- Будет  · n=5  · ramayana-balakanda, ramayana-ayodhyakanda, ramayana-sundarakanda
+- будешь  · n=4  · mahabharata-adiparva, ramayana-aranyakanda, mahabharata-aranyakaparva
+- исполнится  · n=4  · ramayana-ayodhyakanda, mahabharata-adiparva, mahabharata-dronaparva, mahabharata-shalyaparva
+- может быть  · n=4  · mahabharata-aranyakaparva, ramayana-ayodhyakanda, mahabharata-udyogaparva
+- могу обрести  · n=4  · ramayana-ayodhyakanda
+- случится  · n=4  · ramayana-balakanda, mahabharata-aranyakaparva, mahabharata-dronaparva, mahabharata-sabhaparva
+- окажется  · n=3  · ramayana-ayodhyakanda, ramayana-aranyakanda
+- Станет  · n=3  · ramayana-aranyakanda, ramayana-sundarakanda
+- предстоит  · n=3  · ramayana-aranyakanda, mahabharata-udyogaparva, mahabharata-sabhaparva
+- лишится жизни  · n=3  · ramayana-aranyakanda
+- окажутся  · n=3  · mahabharata-udyogaparva, ramayana-aranyakanda
+- свершится  · n=3  · mahabharata-bhishmaparva, mahabharata-aranyakaparva
+- произойдет  · n=3  · mahabharata-sabhaparva, mahabharata-udyogaparva
+- буду  · n=2  · ramayana-ayodhyakanda, mahabharata-aranyakaparva
+- утратит  · n=2  · ramayana-sundarakanda, mahabharata-virataparva
+- была  · n=2  · ramayana-aranyakanda
+- примет  · n=2  · ramayana-balakanda, mahabharata-aranyakaparva
+- сбудется  · n=2  · mahabharata-aranyakaparva, mahabharata-adiparva
+- появятся  · n=2  · mahabharata-aranyakaparva
+- совершится  · n=2  · kama-sutra, mahabharata-karnaparva
+- прибудет  · n=2  · ramanuja_gitabhashya, bhagavadgita-sementsov
+- возникнет  · n=2  · mahabharata-shalyaparva, mahabharata-sabhaparva
+- будет жить  · n=2  · mahabharata-shalyaparva, mahabharata-sauptikaparva
+- получится  · n=1  · mahabharata-adiparva
+- будем  · n=1  · ramayana-ayodhyakanda
+- Навсегда  · n=1  · ramayana-ayodhyakanda
+- было бы  · n=1  · ramayana-ayodhyakanda
+- послужат  · n=1  · ramayana-ayodhyakanda
+- бы  · n=1  · ramayana-ayodhyakanda
+- сделать  · n=1  · ramayana-ayodhyakanda
+- придут  · n=1  · ramayana-ayodhyakanda
+- достанется  · n=1  · ramayana-ayodhyakanda
+- умрет  · n=1  · ramayana-sundarakanda
+- Суждено  · n=1  · ramayana-aranyakanda
+- выстоит  · n=1  · ramayana-aranyakanda
+- лишится  · n=1  · ramayana-aranyakanda
+- принесет  · n=1  · ramayana-aranyakanda
+- исполнила  · n=1  · ramayana-aranyakanda
+- могу уйти  · n=1  · ramayana-aranyakanda
+- избежать  · n=1  · ramayana-balakanda
+- вступит  · n=1  · ramayana-balakanda
+- Суждена была  · n=1  · ramayana-balakanda
+- будет считаться  · n=1  · ramayana-balakanda
+- случиться  · n=1  · mahabharata-aranyakaparva
+- затеяли бы  · n=1  · mahabharata-aranyakaparva
+- останутся  · n=1  · mahabharata-aranyakaparva
+- случилось  · n=1  · mahabharata-aranyakaparva
+- навлечешь  · n=1  · mahabharata-aranyakaparva
+- быть  · n=1  · mahabharata-aranyakaparva
+- причинит  · n=1  · mahabharata-aranyakaparva
+- не грозит  · n=1  · mahabharata-aranyakaparva
+- уготованы  · n=1  · mahabharata-aranyakaparva
+- станешь  · n=1  · mahabharata-aranyakaparva
+- постигнет  · n=1  · mahabharata-aranyakaparva
+- наберемся  · n=1  · mahabharata-aranyakaparva
+- может  · n=1  · mahabharata-aranyakaparva
+- исполнишь  · n=1  · mahabharata-aranyakaparva
+- воцарится  · n=1  · mahabharata-aranyakaparva
+- должна быть  · n=1  · mahabharata-aranyakaparva
+- ляжет  · n=1  · mahabharata-aranyakaparva
+- станут  · n=1  · mahabharata-aranyakaparva
+- найдется  · n=1  · mahabharata-adiparva
+- должно было начаться  · n=1  · mahabharata-adiparva
+- будешь жить  · n=1  · mahabharata-adiparva
+- принимаю  · n=1  · mahabharata-adiparva
+- получит  · n=1  · mahabharata-adiparva
+- появится  · n=1  · mahabharata-adiparva
+- жить  · n=1  · mahabharata-bhishmaparva
+- доставит  · n=1  · mahabharata-dronaparva
+- добьется успеха  · n=1  · mahabharata-dronaparva
+- может кончиться  · n=1  · mahabharata-dronaparva
+- распадается  · n=1  · buddhacharita
+- получишь  · n=1  · buddhacharita
+- Останется  · n=1  · buddhacharita
+- ожидает  · n=1  · mahabharata-udyogaparva
+- будет мучить  · n=1  · mahabharata-udyogaparva
+- будет находиться  · n=1  · mahabharata-udyogaparva
+- разразится  · n=1  · mahabharata-udyogaparva
+- сохранится  · n=1  · mahabharata-udyogaparva
+- приведет  · n=1  · mahabharata-udyogaparva
+- предстоит совершить  · n=1  · mahabharata-udyogaparva
+- можно  · n=1  · mahabharata-udyogaparva
+- наступило  · n=1  · mahabharata-adiparva
+- будет моим  · n=1  · bhagavadgita-1914
+- надобно мнѣ имѣть  · n=1  · bhagavadgita-1788
+- заполучу  · n=1  · bhagavadgita-sharma
+- станет (больше)  · n=1  · bhagavadgita-prabhupada
+- окончится  · n=1  · mahabharata-karnaparva
+- кончится  · n=1  · mahabharata-karnaparva
+- отвергает  · n=1  · kumarasambhava
+- считаться  · n=1  · kumarasambhava
+- уготовано  · n=1  · mahabharata-shalyaparva
+- будущем  · n=1  · nyaya-bhashya
+- будет по-твоему  · n=1  · mahabharata-ashvamedhikaparva
+- откроется  · n=1  · mahabharata-ashvamedhikaparva
+- состоится  · n=1  · mahabharata-ashvamedhikaparva
+- взяться  · n=1  · mahabharata-ashvamedhikaparva
+- достичь  · n=1  · devi-gita
+- будет рождена  · n=1  · devi-gita
+- должен буду  · n=1  · mahabharata-sabhaparva
+- Предстоит  · n=1  · mahabharata-sabhaparva
+- оправдается  · n=1  · mahabharata-sabhaparva
+- становится  · n=1  · shatakatrayam
+- не будет  · n=1  · shukasaptati
+- пойдет  · n=1  · shukasaptati
+- удастся  · n=1  · amaru-shataka
+- возможна  · n=1  · mahabharata-ashramavasikaparva
+
+### `Bavizyato` — bhaviṣyato  (n=1)
+
+- будут  · n=1  · mahabharata-adiparva
+
+### `Bavizyatparva` — bhaviṣyatparva  (n=2)
+
+- Пророческая  · n=1  · mahabharata-adiparva
+- Бхавишьяпарва  · n=1  · mahabharata-adiparva
+
+### `Bavo'stitvam` — bhavo'stitvam  (n=1)
+
+- бытие  · n=1  · sankhya-karika
+
+### `BavocCedakara` — bhavocchedakara  (n=1)
+
+- избавитель от тяготы мирской юдоли  · n=1  · raghuvamsha
+
+### `Bavoduhya` — bhavoduhya  (n=1)
+
+- из дома  · n=1  · atharvaveda
+
+### `BavotI` — bhavotī  (n=1)
+
+- будь  · n=1  · rigveda
+
+### `BavotpattiH` — bhavotpattiḥ  (n=1)
+
+- рождений  · n=1  · buddhacharita
+
+### `BavyA` — bhavyā  (n=1)
+
+- Благословенная  · n=1  · kumarasambhava
+
+### `BavyArTakarIm` — bhavyārthakarīm  (n=1)
+
+- которым суждено было истиной стать  · n=1  · buddhacharita
+
+### `BavyAt` — bhavyāt  (n=1)
+
+- из того, что будет  · n=1  · atharvaveda
+
+### `BavyAya` — bhavyāya  (n=1)
+
+- прекрасному  · n=1  · rigveda
+
+### `Bavya` — bhavya  (n=41)
+
+- будет  · n=10  · atharvaveda, atharvaveda, rigveda, atharvaveda, vedartha-samgraha_ramanuja, kai-up
+- будущее  · n=6  · atharvaveda, mahabharata-dronaparva, atharvaveda, shv-up, mnar-up
+- настоящее  · n=5  · mahabharata-bhishmaparva, manavadharmashastra, mahabharata-aranyakaparva, mai-up
+- то, что будет  · n=3  · atharvaveda, atharvaveda
+- что будет  · n=3  · atharvaveda, atharvaveda, atharvaveda
+- бхавья  · n=2  · ramayana-ayodhyakanda, ramayana-sundarakanda
+- будущего  · n=2  · mahabharata-dronaparva, kat-up
+- Приветливый  · n=1  · ramayana-ayodhyakanda
+- дерево Averrhoa carambola  · n=1  · ramayana-ayodhyakanda
+- благочестивом  · n=1  · ramayana-aranyakanda
+- благочестивый  · n=1  · ramayana-aranyakanda
+- Настоящее  · n=1  · mahabharata-bhishmaparva
+- в будущем  · n=1  · buddhacharita
+- должно появиться  · n=1  · mahabharata-udyogaparva
+- того, что должно быть  · n=1  · atharvaveda
+- что было  · n=1  · atharvaveda
+- производные от корня bhū- «быть»  · n=1  · atharvaveda
+
+### `BavyaM` — bhavyaṃ  (n=8)
+
+- настоящее  · n=4  · mahabharata-ashvamedhikaparva, mahabharata-dronaparva, mahabharata-virataparva
+- то, что будет  · n=2  · atharvaveda
+- будущем  · n=1  · ramayana-balakanda
+- хорошо  · n=1  · shukasaptati
+
+### `Bavyam` — bhavyam  (n=6)
+
+- будет  · n=3  · rigveda, shv-up
+- есть  · n=1  · mahabharata-dronaparva
+- должно быть  · n=1  · mahabharata-udyogaparva
+- будущее  · n=1  · atharvaveda
+
+### `Bavyatva` — bhavyatva  (n=1)
+
+- способность к существованию  · n=1  · yoga-sutry_vyasa-bhashya
+
+### `Bavyena` — bhavyena  (n=1)
+
+- благим  · n=1  · ramayana-balakanda
+
+### `Bawa` — bhaṭa  (n=4)
+
+- воинов  · n=2  · ramayana-balakanda
+- воина  · n=1  · ramayana-aranyakanda
+- наемники  · n=1  · mai-up
+
+### `BawwArikA` — bhaṭṭārikā  (n=3)
+
+- богини Бхаттарики  · n=1  · shukasaptati
+- богине Бхаттарике  · n=1  · shukasaptati
+- Бхаттарика  · n=1  · shukasaptati
+
+### `Bawwaputram` — bhaṭṭaputram  (n=1)
+
+- певца  · n=1  · shukasaptati
+
+### `BawwendurAjAdAmnAya` — bhaṭṭendurājādāmnāya  (n=1)
+
+- После получения передачи учения от Бхаттендураджи  · n=1  · gitarthasamgraha-abhinavagupta
+
+### `BayABaya` — bhayābhaya  (n=2)
+
+- опасность и устранение  · n=1  · mahabharata-adiparva
+- страх и бесстрашие  · n=1  · bhagavadgita-burba
+
+### `BayABipannA` — bhayābhipannā  (n=1)
+
+- охваченные смятением  · n=1  · mahabharata-karnaparva
+
+### `BayAgama` — bhayāgama  (n=1)
+
+- в страхе  · n=1  · ramayana-ayodhyakanda
+
+### `BayAkaram` — bhayākaram  (n=1)
+
+- вызывающий ужас  · n=1  · ramayana-sundarakanda
+
+### `BayAkula` — bhayākula  (n=1)
+
+- в страхе  · n=1  · shukasaptati
+
+### `BayAkulacitta` — bhayākulacitta  (n=1)
+
+- в ужасе  · n=1  · shukasaptati
+
+### `BayAmahe` — bhayāmahe  (n=2)
+
+- боимся  · n=2  · rigveda, atharvaveda
+
+### `BayAmarzau` — bhayāmarṣau  (n=1)
+
+- зависть и страх  · n=1  · mahabharata-udyogaparva
+
+### `BayAnakAH` — bhayānakāḥ  (n=1)
+
+- страшные  · n=1  · mahabharata-dronaparva
+
+### `BayAnakAn` — bhayānakān  (n=1)
+
+- наводящие ужас  · n=1  · mahabharata-shalyaparva
+
+### `BayAnakAni` — bhayānakāni  (n=5)
+
+- устрашающие  · n=2  · mahabharata-bhishmaparva, bhagavadgita-burba
+- страшные  · n=1  · mahabharata-udyogaparva
+- жуткими  · n=1  · ramanuja_gitabhashya
+- страх наводящие  · n=1  · bhagavadgita-1914
+
+### `BayAnaka` — bhayānaka  (n=29)
+
+- ужасные  · n=4  · gitarthasamgraha-abhinavagupta, bhagavadgity, bhagavadgita-1788, bhagavadgita-1909
+- страшная  · n=3  · mahabharata-bhishmaparva, mahabharata-shalyaparva
+- страшные  · n=2  · mahabharata-bhishmaparva, bhagavadgita-erman
+- грозные  · n=2  · bhagavadgita-prabhupada
+- страшных  · n=2  · mahabharata-karnaparva, mahabharata-svargarohanikaparva
+- ужасных  · n=1  · ramayana-sundarakanda
+- устрашающей  · n=1  · ramayana-balakanda
+- приводящий в трепет  · n=1  · ramayana-balakanda
+- страшный  · n=1  · mahabharata-bhishmaparva
+- наводящего страх  · n=1  · mahabharata-dronaparva
+- вызывающую ужас  · n=1  · mahabharata-dronaparva
+- свирепой  · n=1  · mahabharata-dronaparva
+- ужасная  · n=1  · mahabharata-dronaparva
+- ужасный  · n=1  · mahabharata-udyogaparva
+- наводящими ужас  · n=1  · bhagavadgita-smirnov
+- страшно  · n=1  · bhagavadgita-sementsov
+- огромные  · n=1  · bhagavadgita-sharma
+- вселяющие ужас  · n=1  · bhagavadgita-radha
+- грозный  · n=1  · mahabharata-karnaparva
+- устрашающего вида  · n=1  · mahabharata-karnaparva
+- страх  · n=1  · devi-gita
+
+### `BayAnakaH` — bhayānakaḥ  (n=1)
+
+- наводившим ужас  · n=1  · mahabharata-shalyaparva
+
+### `BayAnakam` — bhayānakam  (n=3)
+
+- устрашающие  · n=1  · mahabharata-aranyakaparva
+- являющая  · n=1  · mahabharata-bhishmaparva
+- внушающим ужас  · n=1  · mahabharata-shalyaparva
+
+### `BayAnake` — bhayānake  (n=2)
+
+- ужасное  · n=1  · mahabharata-shalyaparva
+- внушающая ужас  · n=1  · mahabharata-shalyaparva
+
+### `BayAni` — bhayāni  (n=1)
+
+- опасности  · n=1  · mahabharata-udyogaparva
+
+### `BayAnvita` — bhayānvita  (n=2)
+
+- в смятении  · n=1  · ramayana-balakanda
+- содержащие угрозу  · n=1  · mahabharata-udyogaparva
+
+### `BayApahA` — bhayāpahā  (n=1)
+
+- избавляющее от страхов  · n=1  · mahabharata-aranyakaparva
+
+### `BayApaha` — bhayāpaha  (n=1)
+
+- рассеет страх  · n=1  · mahabharata-adiparva
+
+### `BayArTa` — bhayārtha  (n=1)
+
+- для страха  · n=1  · mahabharata-karnaparva
+
+### `BayArditA` — bhayārditā  (n=2)
+
+- одержимое страхом  · n=1  · mahabharata-dronaparva
+- Мучимое страхом  · n=1  · mahabharata-dronaparva
+
+### `BayArditAH` — bhayārditāḥ  (n=3)
+
+- мучимые страхом  · n=2  · mahabharata-dronaparva, mahabharata-karnaparva
+- терзаемые страхом  · n=1  · mahabharata-sabhaparva
+
+### `BayArdita` — bhayārdita  (n=8)
+
+- мучимые страхом  · n=2  · mahabharata-dronaparva, mahabharata-virataparva
+- терзаемое страхом  · n=1  · ramayana-sundarakanda
+- измученный страхом  · n=1  · mahabharata-dronaparva
+- терзаемых страхом  · n=1  · mahabharata-dronaparva
+- терзаемые страхом  · n=1  · mahabharata-karnaparva
+- охваченное ужасом  · n=1  · mahabharata-karnaparva
+- удрученное от страха  · n=1  · mahabharata-sabhaparva
+
+### `BayArditaH` — bhayārditaḥ  (n=1)
+
+- мучимый страхом  · n=1  · mahabharata-dronaparva
+
+### `BayArtA` — bhayārtā  (n=5)
+
+- повергнутое в отчаяние  · n=1  · mahabharata-aranyakaparva
+- мучимые страхом  · n=1  · mahabharata-adiparva
+- терзаемая ужасом  · n=1  · mahabharata-adiparva
+- охваченная страхом  · n=1  · mahabharata-udyogaparva
+- мучимые страхами  · n=1  · mahabharata-shalyaparva
+
+### `BayArtAH` — bhayārtāḥ  (n=1)
+
+- терзаясь страхом  · n=1  · mahabharata-striparva
+
+### `BayArtAya` — bhayārtāya  (n=1)
+
+- угнетенному страхом  · n=1  · mahabharata-sabhaparva
+
+### `BayArta` — bhayārta  (n=13)
+
+- поддались страху  · n=2  · mahabharata-aranyakaparva
+- испуганный  · n=1  · ramayana-sundarakanda
+- опасающегося  · n=1  · ramayana-sundarakanda
+- охваченная страхом  · n=1  · ramayana-sundarakanda
+- гонимые ужасом  · n=1  · mahabharata-aranyakaparva
+- гонимый страхом  · n=1  · mahabharata-aranyakaparva
+- терзаемые страхом  · n=1  · mahabharata-aranyakaparva
+- в беде  · n=1  · mahabharata-aranyakaparva
+- страхом терзаемые  · n=1  · mahabharata-bhishmaparva
+- удрученные страхом  · n=1  · mahabharata-udyogaparva
+- охваченное страхом  · n=1  · mahabharata-udyogaparva
+- охвачено паническим страхом  · n=1  · mahabharata-udyogaparva
+
+### `BayArtaM` — bhayārtaṃ  (n=1)
+
+- измученному страхом  · n=1  · mahabharata-virataparva
+
+### `BayArtam` — bhayārtam  (n=1)
+
+- напуган  · n=1  · mahabharata-karnaparva
+
+### `BayArtau` — bhayārtau  (n=1)
+
+- обуянные страхом  · n=1  · mahabharata-sauptikaparva
+
+### `BayAt` — bhayāt  (n=73)
+
+- из страха  · n=18  · mahabharata-udyogaparva, mahabharata-dronaparva, mahabharata-aranyakaparva, mahabharata-adiparva, ramayana-sundarakanda, ramanuja_gitabhashya, bhagavadgita-radha, mahabharata-sabhaparva
+- в страхе  · n=13  · ramayana-aranyakanda, mahabharata-adiparva, mahabharata-dronaparva, mahabharata-shalyaparva, ramayana-ayodhyakanda, mahabharata-aranyakaparva, shukasaptati, mahabharata-sauptikaparva
+- от страха  · n=11  · mahabharata-dronaparva, mahabharata-adiparva, mahabharata-virataparva, ramayana-sundarakanda, mahabharata-karnaparva, raghuvamsha
+- страха  · n=5  · mahabharata-udyogaparva, ramayana-aranyakanda, mahabharata-dronaparva, gitarthasamgraha-abhinavagupta
+- опасности  · n=3  · ramayana-sundarakanda, mahabharata-udyogaparva
+- из боязни  · n=3  · mahabharata-bhishmaparva, mahabharata-udyogaparva, bhagavadgita-erman
+- от беды  · n=2  · mahabharata-aranyakaparva, mahabharata-karnaparva
+- от опасности  · n=2  · mahabharata-dronaparva, mahabharata-udyogaparva
+- боится  · n=1  · ramayana-ayodhyakanda
+- От страха  · n=1  · ramayana-sundarakanda
+- испугавшись  · n=1  · ramayana-sundarakanda
+- страхом  · n=1  · ramayana-aranyakanda
+- в ужасе  · n=1  · ramayana-aranyakanda
+- от ужаса  · n=1  · mahabharata-aranyakaparva
+- страх  · n=1  · mahabharata-aranyakaparva
+- Испугались  · n=1  · mahabharata-aranyakaparva
+- из-за опасности  · n=1  · mahabharata-adiparva
+- опасностью  · n=1  · mahabharata-dronaparva
+- Из страха  · n=1  · gitarthasamgraha-abhinavagupta
+- ужаса (бедствия)  · n=1  · bhagavadgita-smirnov
+- страдания [в виде рождений и смертей]  · n=1  · bhagavadgita-radha
+- из опасения  · n=1  · mahabharata-virataparva
+- боясь  · n=1  · shukasaptati
+- ужаса  · n=1  · mahabharata-sauptikaparva
+
+### `BayAta` — bhayāta  (n=2)
+
+- боится  · n=1  · rigveda
+- страшится  · n=1  · rigveda
+
+### `BayAtura` — bhayātura  (n=2)
+
+- мучимые страхом  · n=1  · mahabharata-dronaparva
+- объятые ужасом  · n=1  · mahabharata-sauptikaparva
+
+### `BayAturam` — bhayāturam  (n=1)
+
+- паническим страхом  · n=1  · mahabharata-virataparva
+
+### `BayAvadIrRaiH` — bhayāvadīrṇaiḥ  (n=1)
+
+- терзаемые страхом  · n=1  · mahabharata-karnaparva
+
+### `BayAvahA` — bhayāvahā  (n=3)
+
+- внушающая страх  · n=1  · mahabharata-dronaparva
+- наводила страх  · n=1  · mahabharata-dronaparva
+- внушающую страх  · n=1  · mahabharata-shalyaparva
+
+### `BayAvahAH` — bhayāvahāḥ  (n=2)
+
+- наводящие страх  · n=1  · ramayana-aranyakanda
+- трепет внушавшие  · n=1  · mahabharata-striparva
+
+### `BayAvahAnAm` — bhayāvahānām  (n=1)
+
+- вызывающих ужас  · n=1  · ramayana-sundarakanda
+
+### `BayAvahAni` — bhayāvahāni  (n=1)
+
+- наводящие ужас  · n=1  · mahabharata-udyogaparva
+
+### `BayAvaha` — bhayāvaha  (n=30)
+
+- опасностью чреват  · n=2  · mahabharata-bhishmaparva, bhagavadgita-erman
+- страшный  · n=2  · mahabharata-dronaparva, bhagavadgita-1909
+- приводящая в ужас  · n=2  · mahabharata-dronaparva, mahabharata-bhishmaparva
+- опасна  · n=2  · ramanuja_gitabhashya, bhagavadgita-sharma
+- несущая ужас  · n=1  · mahabharata-adiparva
+- ужасная  · n=1  · mahabharata-adiparva
+- внушающий страх  · n=1  · ramayana-sundarakanda
+- пугающий  · n=1  · ramayana-sundarakanda
+- наводящего ужас  · n=1  · ramayana-aranyakanda
+- Устрашающим  · n=1  · ramayana-balakanda
+- Источник страха  · n=1  · ramayana-balakanda
+- страшного  · n=1  · mahabharata-aranyakaparva
+- грозную  · n=1  · mahabharata-aranyakaparva
+- устрашающее  · n=1  · mahabharata-bhishmaparva
+- ужасающая  · n=1  · mahabharata-bhishmaparva
+- страх наводящий  · n=1  · mahabharata-bhishmaparva
+- наводил страх  · n=1  · mahabharata-dronaparva
+- чудовищным  · n=1  · buddhacharita
+- наводящую страх  · n=1  · mahabharata-udyogaparva
+- полна опасности  · n=1  · bhagavadgita-1914
+- раждаетъ страхъ  · n=1  · bhagavadgita-1788
+- яростно  · n=1  · mahabharata-karnaparva
+- вызывающего страх  · n=1  · mahabharata-shalyaparva
+- устрашающий  · n=1  · mahabharata-ashvamedhikaparva
+- несущие страх  · n=1  · shv-up
+- грозен  · n=1  · mahabharata-sauptikaparva
+
+### `BayAvahaH` — bhayāvahaḥ  (n=4)
+
+- опасна  · n=2  · bhagavadgity, bhagavadgita-smirnov
+- опасен  · n=1  · bhagavadgita-sementsov
+- таит в себе опасность  · n=1  · bhagavadgita-radha
+
+### `BayAvaham` — bhayāvaham  (n=4)
+
+- страшного  · n=1  · ramayana-aranyakanda
+- наводящего ужас  · n=1  · mahabharata-adiparva
+- удивительный  · n=1  · mahabharata-dronaparva
+- внушающее страх  · n=1  · mahabharata-dronaparva
+
+### `BayAvahas` — bhayāvahas  (n=2)
+
+- страх приносящий  · n=1  · bhagavadgita-burba
+- опасна  · n=1  · bhagavadgita-burba
+
+### `BayAvahe` — bhayāvahe  (n=2)
+
+- страшная  · n=1  · mahabharata-dronaparva
+- наводящий ужас  · n=1  · mahabharata-karnaparva
+
+### `BayAvatIrRa` — bhayāvatīrṇa  (n=1)
+
+- одержимый страхом  · n=1  · mahabharata-karnaparva
+
+### `BayAvizwa` — bhayāviṣṭa  (n=1)
+
+- обуянные страхом  · n=1  · mahabharata-dronaparva
+
+### `Baya` — bhaya  (n=553)
+
+- страх  · n=170  · mahabharata-dronaparva, mahabharata-udyogaparva, mahabharata-aranyakaparva, mahabharata-adiparva, bhagavadgita-prabhupada, mahabharata-shalyaparva, ramayana-sundarakanda, mahabharata-karnaparva, mahabharata-bhishmaparva, ramayana-ayodhyakanda, bhagavadgita-1914, bhagavadgita-burba, bhagavadgita-sharma, mahabharata-ashvamedhikaparva, ramayana-aranyakanda, ramayana-balakanda, kama-sutra, buddhacharita, gitarthasamgraha-abhinavagupta, bhagavadgity, bhagavadgita-smirnov, mahabharata-sabhaparva, atharvaveda, vedartha-samgraha_ramanuja, yotat-up, mahabharata-sauptikaparva, mahabharata-shantiparva, manavadharmashastra, bhagavadgita-erman, bhagavadgita-sementsov, shatakatrayam-serebryakov, gitagovinda, tai-up, ramanuja_gitabhashya, bhagavadgita-radha, ch-up, nyaya-bhashya, devi-gita, raghuvamsha, hatha-yoga-pradipika, atharvaveda, mahabharata-virataparva, atharvaveda, shatakatrayam, shukasaptati, kat-up, mai-up, mahabharata-svargarohanikaparva
+- страха  · n=127  · mahabharata-udyogaparva, mahabharata-dronaparva, mahabharata-aranyakaparva, mahabharata-adiparva, gitarthasamgraha-abhinavagupta, mahabharata-shalyaparva, mahabharata-ashvamedhikaparva, bhagavadgity, ramayana-sundarakanda, mahabharata-sabhaparva, manavadharmashastra, ramayana-aranyakanda, mahabharata-bhishmaparva, bhagavadgita-burba, ramanuja_gitabhashya, bhagavadgita-sementsov, bhagavadgita-1909, shatakatrayam-serebryakov, kat-up, ramayana-ayodhyakanda, kama-sutra, buddhacharita, bhagavadgita-1914, bhagavadgita-1788, bhagavadgita-sharma, bhagavadgita-radha, mahabharata-karnaparva, nyaya-bhashya, hatha-yoga-pradipika, mahabharata-virataparva, atharvaveda, ramayana-balakanda, rigveda, bhagavadgita-erman, bhagavadgita-smirnov, ch-up, shatakatrayam, mahabharata-ashramavasikaparva, vedartha-samgraha_ramanuja, yotat-up
+- опасность  · n=38  · mahabharata-adiparva, ch-up, mahabharata-udyogaparva, mahabharata-aranyakaparva, manavadharmashastra, ramayana-aranyakanda, kama-sutra, mahabharata-dronaparva, mahabharata-sabhaparva, ramayana-ayodhyakanda, ramayana-sundarakanda, mahabharata-bhishmaparva, buddhacharita, bhagavadgita-smirnov, bhagavadgita-prabhupada, bhagavadgita-radha, mahabharata-karnaparva, mahabharata-shalyaparva, raghuvamsha, mahabharata-virataparva
+- страхе  · n=27  · gitagovinda, mahabharata-dronaparva, mahabharata-bhishmaparva, mahabharata-karnaparva, ramayana-aranyakanda, mahabharata-aranyakaparva, mahabharata-shalyaparva, ramayana-sundarakanda, buddhacharita, mahabharata-virataparva, mahabharata-ashramavasikaparva
+- опасности  · n=25  · mahabharata-adiparva, manavadharmashastra, mahabharata-aranyakaparva, mahabharata-dronaparva, mahabharata-udyogaparva, mahabharata-svargarohanikaparva, mahabharata-bhishmaparva, rigveda, bhagavadgita-erman, bhagavadgita-smirnov, mahabharata-karnaparva, mahabharata-shalyaparva, rigveda, mahabharata-virataparva
+- страхом  · n=20  · mahabharata-udyogaparva, ramayana-aranyakanda, ramayana-balakanda, mahabharata-aranyakaparva, mahabharata-bhishmaparva, mahabharata-dronaparva, mahabharata-karnaparva, mahabharata-adiparva, ramanuja_gitabhashya, mahabharata-shalyaparva, mahabharata-sauptikaparva, mai-up
+- ужас  · n=11  · mahabharata-aranyakaparva, ramayana-ayodhyakanda, mahabharata-adiparva, manavadharmashastra, ramayana-aranyakanda, mahabharata-bhishmaparva, buddhacharita
+- боязни  · n=8  · mahabharata-adiparva, mahabharata-udyogaparva, kama-sutra, gitarthasamgraha-abhinavagupta, bhagavadgita-smirnov, bhagavadgita-1788
+- боязнь  · n=7  · kama-sutra, mahabharata-adiparva, mahabharata-dronaparva, mahabharata-udyogaparva, kumarasambhava, shatakatrayam-serebryakov
+- бояться  · n=6  · ramayana-aranyakanda, ramayana-ayodhyakanda, ramayana-balakanda, mahabharata-adiparva, mahabharata-udyogaparva
+- боюсь  · n=5  · ramayana-ayodhyakanda, mahabharata-aranyakaparva, ramayana-balakanda
+- страшится  · n=5  · shatakatrayam, mahabharata-aranyakaparva, bhagavadgita-1909
+- из страха  · n=5  · mahabharata-adiparva, mahabharata-dronaparva, buddhacharita
+- страхи  · n=4  · ramayana-ayodhyakanda, manavadharmashastra, bhagavadgita-sharma, ch-up
+- ужаса  · n=4  · ramayana-ayodhyakanda, ramayana-aranyakanda, bhagavadgita-1914, mahabharata-bhishmaparva
+- страху  · n=4  · mahabharata-aranyakaparva, mahabharata-dronaparva, buddhacharita, bhagavadgita-sementsov
+- страшно  · n=4  · buddhacharita, bhagavadgity, bhagavadgita-1788, shatakatrayam
+- страхъ  · n=4  · bhagavadgita-1788, bhagavadgita-1909
+- несчастье  · n=3  · ramayana-ayodhyakanda, mahabharata-adiparva
+- в страхе  · n=3  · mahabharata-bhishmaparva, ramayana-aranyakanda
+- беда  · n=3  · mahabharata-aranyakaparva, mahabharata-ashramavasikaparva
+- боится  · n=2  · ramayana-ayodhyakanda, bhagavadgita-1788
+- страшиться  · n=2  · ramayana-balakanda, mahabharata-ashvamedhikaparva
+- страхов  · n=2  · mahabharata-aranyakaparva, bhagavadgita-burba
+- опасений  · n=2  · mahabharata-adiparva, mahabharata-dronaparva
+- трепет  · n=2  · mahabharata-bhishmaparva, mahabharata-karnaparva
+- опасное  · n=2  · mahabharata-bhishmaparva, bhagavadgita-erman
+- угроза  · n=2  · buddhacharita, mahabharata-udyogaparva
+- знамения  · n=1  · ramayana-ayodhyakanda
+- недовольны  · n=1  · ramayana-ayodhyakanda
+- защитником  · n=1  · ramayana-ayodhyakanda
+- страху, отчаянию  · n=1  · ramayana-ayodhyakanda
+- Страшатся  · n=1  · ramayana-ayodhyakanda
+- ужасный  · n=1  · ramayana-ayodhyakanda
+- испуге  · n=1  · ramayana-ayodhyakanda
+- боясь  · n=1  · ramayana-ayodhyakanda
+- несчастий  · n=1  · ramayana-ayodhyakanda
+- пугались  · n=1  · ramayana-sundarakanda
+- бойся  · n=1  · ramayana-sundarakanda
+- страшились  · n=1  · ramayana-sundarakanda
+- опасностям  · n=1  · manavadharmashastra
+- в бедах  · n=1  · ramayana-aranyakanda
+- бхая  · n=1  · ramayana-aranyakanda
+- беду  · n=1  · ramayana-aranyakanda
+- беспокойства  · n=1  · ramayana-aranyakanda
+- опасное время  · n=1  · ramayana-aranyakanda
+- напугать  · n=1  · ramayana-aranyakanda
+- Испугавшись  · n=1  · ramayana-aranyakanda
+- горем  · n=1  · ramayana-aranyakanda
+- участи  · n=1  · ramayana-aranyakanda
+- в испуге  · n=1  · ramayana-aranyakanda
+- тревогой  · n=1  · ramayana-aranyakanda
+- Страх  · n=1  · ramayana-balakanda
+- устрашающая  · n=1  · ramayana-balakanda
+- опасении  · n=1  · mahabharata-aranyakaparva
+- ужасом  · n=1  · mahabharata-aranyakaparva
+- несчастья  · n=1  · mahabharata-aranyakaparva
+- ужасе  · n=1  · mahabharata-aranyakaparva
+- страхами  · n=1  · mahabharata-aranyakaparva
+- Бхая  · n=1  · mahabharata-adiparva
+- побоюсь  · n=1  · mahabharata-adiparva
+- грозные  · n=1  · mahabharata-bhishmaparva
+- страшная  · n=1  · mahabharata-bhishmaparva
+- опасение  · n=1  · mahabharata-dronaparva
+- устрашаясь  · n=1  · buddhacharita
+- не  · n=1  · buddhacharita
+- опасностей  · n=1  · buddhacharita
+- страшат  · n=1  · buddhacharita
+- опасения  · n=1  · mahabharata-udyogaparva
+- опасных  · n=1  · mahabharata-udyogaparva
+- из опасения  · n=1  · mahabharata-udyogaparva
+- бедствие  · n=1  · mahabharata-udyogaparva
+- страшись  · n=1  · mahabharata-adiparva
+- испугавшись  · n=1  · bhagavadgita-sementsov
+- трусомъ  · n=1  · bhagavadgita-1909
+- Побѣдитель  · n=1  · bhagavadgita-1909
+- трепетать  · n=1  · mahabharata-karnaparva
+- грозный час  · n=1  · mahabharata-karnaparva
+- напасть  · n=1  · mahabharata-ashvamedhikaparva
+- страшные  · n=1  · br-up
+- пугающей  · n=1  · shatakatrayam
+- робость  · n=1  · shukasaptati
+- страшен  · n=1  · yotat-up
+- не смѣетъ  · n=1  · megha-duta
+
+### `Baya+pra+Rud` — bhaya+pra+ṇud  (n=1)
+
+- рассеивая страх  · n=1  · mahabharata-shalyaparva
+
+### `Baya-AvahaH` — bhaya-āvahaḥ  (n=2)
+
+- опасен  · n=1  · bhagavadgita-prabhupada
+- опасно  · n=1  · bhagavadgita-prabhupada
+
+### `Baya-sandarSana` — bhaya-sandarśana  (n=1)
+
+- угрозу, Вызывающую трепет  · n=1  · ramayana-aranyakanda
+
+### `BayaArtAH` — bhayaārtāḥ  (n=1)
+
+- В страхе  · n=1  · ramayana-aranyakanda
+
+### `BayaBIta` — bhayabhīta  (n=1)
+
+- охваченные страхом  · n=1  · mahabharata-dronaparva
+
+### `BayaH` — bhayaḥ  (n=1)
+
+- страх  · n=1  · mahabharata-shalyaparva
+
+### `BayaM` — bhayaṃ  (n=22)
+
+- страх  · n=6  · mahabharata-dronaparva, kama-sutra, mahabharata-udyogaparva, bhagavadgita-smirnov, mahabharata-virataparva
+- страха  · n=6  · mahabharata-virataparva, mahabharata-adiparva, mahabharata-udyogaparva, bhagavadgita-1788, mahabharata-ashramavasikaparva
+- опасность  · n=5  · mahabharata-dronaparva, rigveda, ramayana-sundarakanda
+- опасения  · n=2  · mahabharata-udyogaparva
+- тревога  · n=1  · mahabharata-aranyakaparva
+- тревогу  · n=1  · mahabharata-dronaparva
+- опасности  · n=1  · mahabharata-virataparva
+
+### `BayaMtevyetu` — bhayaṃ te vyetu  (n=1)
+
+- пусть пройдет твой страх  · n=1  · mahabharata-aranyakaparva
+
+### `BayaNkarAH` — bhayaṅkarāḥ  (n=1)
+
+- внушающие страх  · n=1  · mahabharata-dronaparva
+
+### `BayaNkarI` — bhayaṅkarī  (n=2)
+
+- страшный  · n=1  · mahabharata-shalyaparva
+- Бхаянкари  · n=1  · mahabharata-shalyaparva
+
+### `BayaNkara` — bhayaṅkara  (n=14)
+
+- ужасный  · n=3  · mahabharata-adiparva, ramayana-aranyakanda
+- наводя ужас  · n=2  · mahabharata-adiparva
+- внушая ужас  · n=1  · ramayana-aranyakanda
+- мрачен  · n=1  · mahabharata-aranyakaparva
+- ужасен на вид  · n=1  · mahabharata-dronaparva
+- наводящие ужас  · n=1  · mahabharata-dronaparva
+- наводит ужас  · n=1  · mahabharata-udyogaparva
+- повергшей в ужас  · n=1  · mahabharata-karnaparva
+- ужасного  · n=1  · mahabharata-virataparva
+- наводящий ужас  · n=1  · mahabharata-virataparva
+- страшна  · n=1  · shatakatrayam-serebryakov
+
+### `BayaNkaraH` — bhayaṅkaraḥ  (n=6)
+
+- жесток  · n=1  · mahabharata-aranyakaparva
+- устрашающая  · n=1  · mahabharata-dronaparva
+- внушающий ужас  · n=1  · mahabharata-karnaparva
+- внушающая трепет  · n=1  · mahabharata-karnaparva
+- внушает страха  · n=1  · shatakatrayam
+- слово  · n=1  · shatakatrayam
+
+### `BayaNkaram` — bhayaṅkaram  (n=2)
+
+- грозное  · n=1  · mahabharata-adiparva
+- ужасный  · n=1  · mahabharata-adiparva
+
+### `BayaNkare` — bhayaṅkare  (n=1)
+
+- страшной  · n=1  · mahabharata-dronaparva
+
+### `BayaSAntaye` — bhayaśāntaye  (n=1)
+
+- ради прекращения бедствий  · n=1  · mahabharata-adiparva
+
+### `BayaSaMsin` — bhayaśaṃsin  (n=1)
+
+- предвещая беду  · n=1  · mahabharata-mausalaparva
+
+### `BayaSaNkita` — bhayaśaṅkita  (n=1)
+
+- в страхе и растерянности  · n=1  · ramayana-sundarakanda
+
+### `BayaSokasamAvizwa` — bhayaśokasamāviṣṭa  (n=1)
+
+- Тоска и страх овладели  · n=1  · mahabharata-aranyakaparva
+
+### `BayaSokasamanvita` — bhayaśokasamanvita  (n=1)
+
+- преисполненный страха и горя  · n=1  · mahabharata-shalyaparva
+
+### `BayacCalAt` — bhayacchalāt  (n=1)
+
+- словно бы из страха  · n=1  · raghuvamsha
+
+### `BayadA` — bhayadā  (n=1)
+
+- Жестокую  · n=1  · ramayana-aranyakanda
+
+### `BayadAn` — bhayadān  (n=1)
+
+- предвещающий опасность  · n=1  · mahabharata-dronaparva
+
+### `BayadAyi` — bhayadāyi  (n=1)
+
+- приводило в трепет  · n=1  · raghuvamsha
+
+### `Bayada` — bhayada  (n=2)
+
+- внушающий страх  · n=1  · mahabharata-dronaparva
+- чудовищный  · n=1  · mahabharata-karnaparva
+
+### `BayadaiH` — bhayadaiḥ  (n=1)
+
+- наводившими страх  · n=1  · mahabharata-shalyaparva
+
+### `BayadarSinAm` — bhayadarśinām  (n=1)
+
+- для боязливых  · n=1  · ramayana-ayodhyakanda
+
+### `BayadarSinI` — bhayadarśinī  (n=1)
+
+- сознавая опасность  · n=1  · ramayana-ayodhyakanda
+
+### `Bayahetu` — bhayahetu  (n=1)
+
+- причина для опасений  · n=1  · buddhacharita
+
+### `Bayajanana` — bhayajanana  (n=2)
+
+- наводя ужас  · n=1  · mahabharata-adiparva
+- внушающие ужас  · n=1  · mahabharata-adiparva
+
+### `BayakarSita` — bhayakarśita  (n=1)
+
+- терзаемые страхом  · n=1  · ramayana-aranyakanda
+
+### `Bayakara` — bhayakara  (n=1)
+
+- ужас наводящим  · n=1  · mahabharata-bhishmaparva
+
+### `BayakartAram` — bhayakartāram  (n=1)
+
+- на страх  · n=1  · mahabharata-aranyakaparva
+
+### `Bayakartf` — bhayakartṛ  (n=1)
+
+- сеющий ужас  · n=1  · mahabharata-ashvamedhikaparva
+
+### `Bayam` — bhayam  (n=81)
+
+- страх  · n=37  · ramayana-ayodhyakanda, mahabharata-dronaparva, mahabharata-aranyakaparva, mahabharata-udyogaparva, mahabharata-adiparva, mahabharata-bhishmaparva, mahabharata-shalyaparva, ramayana-sundarakanda, ramayana-balakanda, rigveda, rigveda, rigveda, bhagavadgita-sharma, bhagavadgita-prabhupada, bhagavadgita-radha, mahabharata-sabhaparva, br-up, mahabharata-virataparva, shatakatrayam-serebryakov
+- страха  · n=10  · mahabharata-ashvamedhikaparva, mahabharata-adiparva, ramayana-ayodhyakanda, mahabharata-dronaparva, mahabharata-udyogaparva, atharvaveda, mahabharata-sauptikaparva
+- опасность  · n=7  · mahabharata-dronaparva, mahabharata-udyogaparva, mahabharata-adiparva, ramayana-ayodhyakanda, ramayana-aranyakanda
+- ужас  · n=4  · mahabharata-aranyakaparva, mahabharata-dronaparva, mahabharata-ashvamedhikaparva, mahabharata-virataparva
+- страшное  · n=3  · rigveda, ramanuja_gitabhashya
+- опасностей  · n=2  · ramayana-ayodhyakanda
+- страхъ  · n=2  · bhagavadgity, bhagavadgita-1788
+- испытании  · n=1  · ramayana-ayodhyakanda
+- не боюсь  · n=1  · ramayana-ayodhyakanda
+- безопасен  · n=1  · ramayana-ayodhyakanda
+- Страх  · n=1  · ramayana-ayodhyakanda
+- бояться  · n=1  · ramayana-ayodhyakanda
+- боишься  · n=1  · ramayana-ayodhyakanda
+- не боится  · n=1  · ramayana-ayodhyakanda
+- тревогу  · n=1  · ramayana-aranyakanda
+- напугал  · n=1  · ramayana-aranyakanda
+- робость  · n=1  · mahabharata-aranyakaparva
+- страшны  · n=1  · mahabharata-aranyakaparva
+- страшиться  · n=1  · mahabharata-aranyakaparva
+- боязнь  · n=1  · br-up
+- опасностью  · n=1  · rigveda
+- в опасности  · n=1  · mahabharata-virataparva
+- опасения  · n=1  · mahabharata-ashramavasikaparva
+
+### `BayamAna` — bhayamāna  (n=2)
+
+- Боясь  · n=1  · rigveda
+- боясь  · n=1  · rigveda
+
+### `BayamAnaH` — bhayamānaḥ  (n=1)
+
+- Бхаямана  · n=1  · rigveda
+
+### `BayamAviSat` — bhayamāviśat  (n=1)
+
+- Страх объял  · n=1  · mahabharata-bhishmaparva
+
+### `Bayamkara` — bhayamkara  (n=2)
+
+- жестокой  · n=1  · ramayana-ayodhyakanda
+- внушал страх  · n=1  · ramayana-sundarakanda
+
+### `BayamohitA` — bhayamohitā  (n=2)
+
+- испуганная  · n=1  · ramayana-sundarakanda
+- оробевшей от страха  · n=1  · mahabharata-udyogaparva
+
+### `BayamohitAH` — bhayamohitāḥ  (n=1)
+
+- встревоженные страхом  · n=1  · mahabharata-shalyaparva
+
+### `Bayamohita` — bhayamohita  (n=1)
+
+- в помрачении от страха  · n=1  · ramayana-sundarakanda
+
+### `BayamohitaH` — bhayamohitaḥ  (n=1)
+
+- в страхе  · n=1  · ramayana-sundarakanda
+
+### `Bayante` — bhayante  (n=6)
+
+- боятся  · n=3  · rigveda, rigveda
+- Боятся  · n=1  · rigveda
+- испытывают страх  · n=1  · rigveda
+- страшатся  · n=1  · rigveda
+
+### `BayapIqitA` — bhayapīḍitā  (n=1)
+
+- мучаясь от страха  · n=1  · mahabharata-adiparva
+
+### `BayapIqitAH` — bhayapīḍitāḥ  (n=1)
+
+- мучимые страхом  · n=1  · mahabharata-dronaparva
+
+### `BayapIqita` — bhayapīḍita  (n=6)
+
+- мучимые страхом  · n=2  · mahabharata-udyogaparva, mahabharata-shalyaparva
+- объятый ужасом  · n=1  · mahabharata-aranyakaparva
+- терзаемые страхом  · n=1  · mahabharata-bhishmaparva
+- ужасом охваченные  · n=1  · mahabharata-bhishmaparva
+- подавленные ужасом  · n=1  · mahabharata-sauptikaparva
+
+### `BayapIqitaH` — bhayapīḍitaḥ  (n=2)
+
+- мучимый страхом  · n=1  · mahabharata-adiparva
+- терзаемый страхом  · n=1  · mahabharata-striparva
+
+### `BayapIqitam` — bhayapīḍitam  (n=1)
+
+- измученного страхом  · n=1  · mahabharata-virataparva
+
+### `BayaparA` — bhayaparā  (n=1)
+
+- полная страха  · n=1  · ramayana-aranyakanda
+
+### `Bayapradam` — bhayapradam  (n=1)
+
+- внушил бы ужас  · n=1  · mahabharata-striparva
+
+### `BayaruzoS` — bhayaruṣoś  (n=1)
+
+- ярости и страха  · n=1  · raghuvamsha
+
+### `BayasTAna` — bhayasthāna  (n=2)
+
+- поводов для печали  · n=1  · mahabharata-striparva
+- повод для страха  · n=1  · mahabharata-svargarohanikaparva
+
+### `BayasTAnaSatAni` — bhayasthānaśatāni  (n=1)
+
+- сотни поводов для страха  · n=1  · mahabharata-aranyakaparva
+
+### `BayasTAnam` — bhayasthānam  (n=1)
+
+- причины для страха  · n=1  · ramayana-ayodhyakanda
+
+### `BayasTe` — bhayasthe  (n=1)
+
+- опасного положения  · n=1  · rigveda
+
+### `BayasaMvigna` — bhayasaṃvigna  (n=2)
+
+- смутился в страхе  · n=1  · mahabharata-adiparva
+- дрожащим от страха  · n=1  · mahabharata-adiparva
+
+### `BayasamtrastacetanaH` — bhayasamtrastacetanaḥ  (n=1)
+
+- с сердцем, трепещущим от страха  · n=1  · ramayana-ayodhyakanda
+
+### `BayatAm` — bhayatām  (n=1)
+
+- Пусть боится  · n=1  · rigveda
+
+### `Bayata` — bhayata  (n=1)
+
+- страшится  · n=1  · rigveda
+
+### `Bayate` — bhayate  (n=6)
+
+- боится  · n=6  · rigveda, rigveda, rigveda, rigveda
+
+### `BayatrastA` — bhayatrastā  (n=1)
+
+- Дрожащая от страха  · n=1  · ramayana-sundarakanda
+
+### `BayatrastAH` — bhayatrastāḥ  (n=1)
+
+- дрожа от страха  · n=1  · mahabharata-virataparva
+
+### `Bayatrasta` — bhayatrasta  (n=1)
+
+- дрожащие от страха  · n=1  · ramayana-sundarakanda
+
+### `Bayatrastam` — bhayatrastam  (n=1)
+
+- дрожащее от страха  · n=1  · mahabharata-shalyaparva
+
+### `BayatrastevacANganA` — bhayatrasteva cāṅganā  (n=1)
+
+- подобно женщине, перепуганной от страха  · n=1  · mahabharata-dronaparva
+
+### `BayauGa` — bhayaugha  (n=1)
+
+- пучине страха  · n=1  · mahabharata-aranyakaparva
+
+### `BayavarDanAH` — bhayavardhanāḥ  (n=1)
+
+- заставили трепетать  · n=1  · mahabharata-karnaparva
+
+### `BayavarDanI` — bhayavardhanī  (n=1)
+
+- усиливающая страх  · n=1  · mahabharata-shalyaparva
+
+### `BayavarDana` — bhayavardhana  (n=11)
+
+- увеличивающая страх  · n=2  · mahabharata-dronaparva, mahabharata-shalyaparva
+- внушает ужас  · n=1  · mahabharata-aranyakaparva
+- ужас вселял  · n=1  · mahabharata-bhishmaparva
+- увеличивающий страх  · n=1  · mahabharata-dronaparva
+- увеличивающем страх  · n=1  · mahabharata-dronaparva
+- увеличивающие страх  · n=1  · mahabharata-dronaparva
+- вселявший трепет  · n=1  · mahabharata-karnaparva
+- усиливающая страх  · n=1  · mahabharata-shalyaparva
+- увеличивался страх  · n=1  · mahabharata-shalyaparva
+- сеющего страх  · n=1  · mahabharata-ashramavasikaparva
+
+### `BayavarDanaH` — bhayavardhanaḥ  (n=1)
+
+- увеличивающий страх  · n=1  · mahabharata-dronaparva
+
+### `BayavarDanam` — bhayavardhanam  (n=2)
+
+- увеличивающая страх  · n=1  · mahabharata-dronaparva
+- вселяя ужас  · n=1  · mahabharata-karnaparva
+
+### `BayavarDane` — bhayavardhane  (n=1)
+
+- увеличивающее страх  · n=1  · mahabharata-dronaparva
+
+### `BayavarDinI` — bhayavardhinī  (n=3)
+
+- увеличивающая страх  · n=1  · mahabharata-dronaparva
+- увеличивающая ужас  · n=1  · mahabharata-dronaparva
+- умножающая страх  · n=1  · mahabharata-shalyaparva
+
+### `BayavarDinIm` — bhayavardhinīm  (n=1)
+
+- усиливающую страх  · n=1  · mahabharata-dronaparva
+
+### `Bayavedin` — bhayavedin  (n=3)
+
+- предвещавшие страшное  · n=1  · mahabharata-adiparva
+- предчувствующие ужас  · n=1  · mahabharata-bhishmaparva
+- возвещая опасность  · n=1  · mahabharata-udyogaparva
+
+### `BayavihvalANga` — bhayavihvalāṅga  (n=1)
+
+- онемев от страха  · n=1  · mahabharata-shalyaparva
+
+### `BayaviklabayA` — bhayaviklabayā  (n=2)
+
+- трепещущим  · n=1  · ramayana-ayodhyakanda
+- Трепещущим  · n=1  · ramayana-ayodhyakanda
+
+### `BayavitrastA` — bhayavitrastā  (n=1)
+
+- дрожа от страха  · n=1  · ramayana-sundarakanda
+
+### `Bayavitrasta` — bhayavitrasta  (n=1)
+
+- испуганы  · n=1  · ramayana-sundarakanda
+
+### `BayavyAkulita` — bhayavyākulita  (n=1)
+
+- охваченные смятением от страха  · n=1  · mahabharata-shalyaparva
+
+### `Bayayukta` — bhayayukta  (n=2)
+
+- связанные со страхом  · n=1  · kama-sutra
+- испуганный  · n=1  · shukasaptati
+
+### `Baye` — bhaye  (n=5)
+
+- страх  · n=2  · ramayana-ayodhyakanda, mahabharata-dronaparva
+- среди опасности  · n=1  · rigveda
+- в страхе  · n=1  · mahabharata-adiparva
+- опасности  · n=1  · mahabharata-dronaparva
+
+### `BayeByaH` — bhayebhyaḥ  (n=1)
+
+- от опасностей  · n=1  · mahabharata-aranyakaparva
+
+### `BayejAte` — bhaye jāte  (n=1)
+
+- под влиянием охватившей их сильной тревоги  · n=1  · mahabharata-shalyaparva
+
+### `Bayena` — bhayena  (n=14)
+
+- страхом  · n=8  · ramayana-aranyakanda, mahabharata-bhishmaparva, bhagavadgita-burba, ramanuja_gitabhashya, bhagavadgita-erman, bhagavadgita-sementsov, bhagavadgita-sharma, bhagavadgita-prabhupada
+- от страха  · n=1  · bhagavadgita-smirnov
+- ужасъ  · n=1  · bhagavadgita-1909
+- испугался  · n=1  · bhagavadgita-prabhupada
+- из-за страха  · n=1  · bhagavadgita-radha
+- объятые трепетом  · n=1  · mahabharata-karnaparva
+- боялись  · n=1  · shukasaptati
+
+### `Bayete` — bhayete  (n=1)
+
+- боятся  · n=1  · rigveda
+
+### `Bayezu` — bhayeṣu  (n=3)
+
+- в бедах  · n=1  · ramayana-aranyakanda
+- во время опасностей  · n=1  · mahabharata-dronaparva
+- в минуту опасности  · n=1  · mahabharata-karnaparva
+
+### `Bayodvigna` — bhayodvigna  (n=5)
+
+- мучимые страхом  · n=1  · mahabharata-adiparva
+- перепугалась от страха  · n=1  · mahabharata-udyogaparva
+- перепуганный от страха  · n=1  · mahabharata-udyogaparva
+- встревоженные от страха  · n=1  · mahabharata-shalyaparva
+- оцепеневший от ужаса  · n=1  · mahabharata-virataparva
+
+### `BayodvignaH` — bhayodvignaḥ  (n=1)
+
+- перепуганный от страха  · n=1  · mahabharata-adiparva
+
+### `Bayuk` — bhayuk  (n=2)
+
+- находится в каждом созвездии  · n=1  · vedanga_jyotisha
+- находится  · n=1  · vedanga_jyotisha
+
+### `Baz` — bhaṣ  (n=2)
+
+- с лаем  · n=1  · mahabharata-adiparva
+- лающей  · n=1  · mahabharata-adiparva
+
+### `Bazan` — bhaṣan  (n=1)
+
+- издающие  · n=1  · mahabharata-bhishmaparva
+
+### `BazantaH` — bhaṣantaḥ  (n=1)
+
+- с рычаньем  · n=1  · mahabharata-striparva
+
+### `Bazante` — bhaṣante  (n=1)
+
+- лают  · n=1  · mahabharata-sabhaparva
+
+### `Bazanti` — bhaṣanti  (n=1)
+
+- говорят  · n=1  · mahabharata-aranyakaparva
+
+### `BazeyuH` — bhaṣeyuḥ  (n=1)
+
+- лают  · n=1  · mahabharata-sabhaparva
+
+### `Bed` — bhed  (n=1)
+
+- сломил  · n=1  · rigveda
+
+### `BedABeda` — bhedābheda  (n=1)
+
+- бхеда-абхеда  · n=1  · vedartha-samgraha_ramanuja
+
+### `BedABedavAda` — bhedābhedavāda  (n=1)
+
+- единства и отличия  · n=1  · gitarthasamgraha-abhinavagupta
+
+### `BedAH` — bhedāḥ  (n=2)
+
+- раздоры  · n=2  · mahabharata-udyogaparva, mahabharata-karnaparva
+
+### `BedAt` — bhedāt  (n=1)
+
+- ввиду различения  · n=1  · pratyabhijna-hridaya_kshemaraja
+
+### `BedAtmaka` — bhedātmaka  (n=1)
+
+- двойственный  · n=1  · gitarthasamgraha-abhinavagupta
+
+### `BedAvaBAsa` — bhedāvabhāsa  (n=1)
+
+- проявление двойственности  · n=1  · gitarthasamgraha-abhinavagupta
+
+### `Beda` — bheda  (n=189)
+
+- различие  · n=30  · nyaya-bhashya, bhagavadgita-prabhupada, devi-gita, yoga-sutry_vyasa-bhashya, yoga-sutry_zagumennov, vedartha-samgraha_ramanuja, bhagavadgita-burba, raghuvamsha, yoga-sutry, yoga-sutry_sharma, paramarthasara-abhinavagupta, shiva-sutry_sharma
+- различия  · n=11  · nyaya-bhashya, devi-gita, sankhya-karika, vedartha-samgraha_ramanuja, bhagavadgita-1914, bhagavadgita-prabhupada
+- различий  · n=8  · devi-gita, yoga-sutry_vyasa-bhashya, vedartha-samgraha_ramanuja
+- разновидностей  · n=5  · sankhya-karika, yoga-sutry_vyasa-bhashya
+- раздор  · n=4  · mahabharata-adiparva, mahabharata-aranyakaparva
+- раздора  · n=4  · mahabharata-bhishmaparva, mahabharata-adiparva, mahabharata-udyogaparva
+- различении  · n=4  · mahabharata-bhishmaparva, gitarthasamgraha-abhinavagupta, bhagavadgita-erman, mai-up
+- Бхеда  · n=4  · rigveda, atharvaveda
+- разделение  · n=4  · devi-gita, bhagavadgita-1914, bhagavadgita-erman
+- отделять  · n=4  · shatakatrayam, shatakatrayam-serebryakov
+- разделении  · n=3  · gitartha-samgraha_yamunacharya, mahabharata-bhishmaparva
+- виды  · n=3  · gitarthasamgraha-abhinavagupta, bhagavadgita-sementsov, hatha-yoga-pradipika
+- различные  · n=3  · nyaya-bhashya, yotat-up
+- дробления  · n=3  · devi-gita
+- разлада  · n=2  · mahabharata-udyogaparva
+- раскол  · n=2  · mahabharata-udyogaparva
+- Бхеды  · n=2  · rigveda, atharvaveda
+- видах  · n=2  · bhagavadgita-prabhupada, vedartha-samgraha_ramanuja
+- разновидности  · n=2  · nyaya-bhashya, sankhya-karika
+- отличной  · n=2  · nyaya-bhashya, devi-gita
+- рассекает  · n=2  · devi-gita
+- стороны  · n=2  · hatha-yoga-pradipika
+- пронзить  · n=2  · hatha-yoga-pradipika
+- пронзается  · n=2  · hatha-yoga-pradipika
+- отдельные  · n=2  · sankhya-karika
+- от раздела  · n=1  · mahabharata-adiparva
+- рознь  · n=1  · ramayana-sundarakanda
+- расколом  · n=1  · manavadharmashastra
+- внесением раскола  · n=1  · manavadharmashastra
+- раскололась  · n=1  · ramayana-balakanda
+- сломан  · n=1  · ramayana-balakanda
+- сеянием раздора  · n=1  · mahabharata-aranyakaparva
+- раздоры  · n=1  · mahabharata-aranyakaparva
+- разрыв  · n=1  · kama-sutra
+- распря  · n=1  · mahabharata-adiparva
+- раздоре  · n=1  · mahabharata-adiparva
+- видов  · n=1  · mahabharata-bhishmaparva
+- сеяние раздора  · n=1  · mahabharata-bhishmaparva
+- прорвать  · n=1  · mahabharata-dronaparva
+- раскалывает  · n=1  · buddhacharita
+- распре  · n=1  · mahabharata-udyogaparva
+- сеяния раздора  · n=1  · mahabharata-udyogaparva
+- раздору  · n=1  · mahabharata-udyogaparva
+- Бхеду  · n=1  · rigveda
+- значение  · n=1  · gitarthasamgraha-abhinavagupta
+- различиях  · n=1  · gitarthasamgraha-abhinavagupta
+- Различие  · n=1  · gitarthasamgraha-abhinavagupta
+- подразделяются  · n=1  · gitarthasamgraha-abhinavagupta
+- различеньем  · n=1  · ramanuja_gitabhashya
+- смущать  · n=1  · bhagavadgita-1914
+- раздѣляются  · n=1  · bhagavadgity
+- раздѣленію  · n=1  · bhagavadgity
+- различение  · n=1  · bhagavadgita-smirnov
+- вліяніемъ  · n=1  · bhagavadgita-1788
+- трояки  · n=1  · bhagavadgita-sementsov
+- трехвидным  · n=1  · bhagavadgita-sementsov
+- дѣлится  · n=1  · bhagavadgita-1909
+- различаемъ  · n=1  · bhagavadgita-1909
+- дѣленью  · n=1  · bhagavadgita-1909
+- типов  · n=1  · bhagavadgita-sharma
+- о делении  · n=1  · bhagavadgita-radha
+- различный  · n=1  · kumarasambhava
+- многообразие  · n=1  · nyaya-bhashya
+- фракций  · n=1  · nyaya-bhashya
+- фрагментарно  · n=1  · nyaya-bhashya
+- множественны  · n=1  · nyaya-bhashya
+- различиями  · n=1  · nyaya-bhashya
+- различием  · n=1  · nyaya-bhashya
+- агрегата  · n=1  · nyaya-bhashya
+- отличие  · n=1  · nyaya-bhashya
+- пронзающим  · n=1  · devi-gita
+- отличным  · n=1  · devi-gita
+- проникновение  · n=1  · hatha-yoga-pradipika
+- разлад  · n=1  · mahabharata-virataparva
+- ради  · n=1  · shatakatrayam
+- различья  · n=1  · shatakatrayam
+- отдельных [вещей]  · n=1  · sankhya-karika
+- деления  · n=1  · sankhya-karika
+- разновидностях  · n=1  · sankhya-karika
+- в виде  · n=1  · sankhya-karika
+- нарушении  · n=1  · sankhya-karika
+- множественность  · n=1  · sankhya-karika
+- уничтожаются  · n=1  · yoga-sutry_vyasa-bhashya
+- разнообразии  · n=1  · yoga-sutry_vyasa-bhashya
+- разнообразие  · n=1  · yoga-sutry_vyasa-bhashya
+- устранение  · n=1  · yoga-sutry
+- различными  · n=1  · yoga-sutry_sharma
+- устранения  · n=1  · yoga-sutry_zagumennov
+- бхеда  · n=1  · vedartha-samgraha_ramanuja
+- отличительные признаки  · n=1  · vedartha-samgraha_ramanuja
+- различии  · n=1  · vedartha-samgraha_ramanuja
+- разделенных  · n=1  · vedartha-samgraha_ramanuja
+- распадом  · n=1  · shv-up
+- многоразлично  · n=1  · paramarthasara-abhinavagupta
+- различения  · n=1  · paramarthasara-abhinavagupta
+- разграничения  · n=1  · shiva-sutry_sharma
+- концентрации  · n=1  · shiva-sutry_sharma
+- отличии  · n=1  · gitartha-samgraha_yamunacharya
+- множественности  · n=1  · pratyabhijna-hridaya_kshemaraja
+- дробиться  · n=1  · pratyabhijna-hridaya_kshemaraja
+- различаются  · n=1  · yoga-sutry_vyasa-bhashya
+- различны  · n=1  · yoga-sutry_vyasa-bhashya
+
+### `Beda-aBeda` — bheda-abheda  (n=1)
+
+- бхеда-абхеды  · n=1  · vedartha-samgraha_ramanuja
+
+### `Beda-aBeda-vAda` — bheda-abheda-vāda  (n=1)
+
+- бхеда-абхеда-вады  · n=1  · vedartha-samgraha_ramanuja
+
+### `BedaH` — bhedaḥ  (n=8)
+
+- разлада  · n=2  · mahabharata-adiparva
+- раздора  · n=1  · mahabharata-adiparva
+- раздор  · n=1  · mahabharata-adiparva
+- разделения  · n=1  · gitarthasamgraha-abhinavagupta
+- разлад  · n=1  · mahabharata-sabhaparva
+- разница  · n=1  · shatakatrayam-serebryakov
+- разный  · n=1  · yotat-up
+
+### `BedaM` — bhedaṃ  (n=1)
+
+- отличия  · n=1  · nyaya-bhashya
+
+### `BedabudDi` — bhedabuddhi  (n=2)
+
+- полагания вселенной отличной от Высшего духа  · n=2  · devi-gita
+
+### `BedabudDyavalambana` — bhedabuddhyavalambana  (n=2)
+
+- основана на полагании вселенной отличной от Высшего духа  · n=2  · devi-gita
+
+### `BedagrAhi` — bhedagrāhi  (n=1)
+
+- различия  · n=1  · vedartha-samgraha_ramanuja
+
+### `Bedaka` — bhedaka  (n=3)
+
+- Взламывающих  · n=1  · manavadharmashastra
+- Портящий  · n=1  · manavadharmashastra
+- различительный  · n=1  · nyaya-bhashya
+
+### `Bedakara` — bhedakara  (n=1)
+
+- вносят разлад  · n=1  · ramayana-aranyakanda
+
+### `Bedam` — bhedam  (n=11)
+
+- Бхеду  · n=2  · rigveda
+- различие  · n=2  · gitarthasamgraha-abhinavagupta, bhagavadgita-1914
+- различии  · n=2  · bhagavadgita-burba, bhagavadgita-smirnov
+- Бхеда  · n=1  · rigveda
+- различенье  · n=1  · ramanuja_gitabhashya
+- раздѣляются  · n=1  · bhagavadgita-1788
+- отличительные свойства  · n=1  · bhagavadgita-sharma
+- о различии  · n=1  · bhagavadgita-radha
+
+### `BedanIyAmaH` — bhedanīyāmaḥ  (n=1)
+
+- неразделенное  · n=1  · ramayana-ayodhyakanda
+
+### `Bedana` — bhedana  (n=9)
+
+- ломанием  · n=1  · ramayana-sundarakanda
+- прокалывании  · n=1  · manavadharmashastra
+- сломан  · n=1  · ramayana-balakanda
+- подвиг  · n=1  · ramayana-balakanda
+- воздействуют  · n=1  · kama-sutra
+- распоров  · n=1  · mahabharata-adiparva
+- сокрушения  · n=1  · mahabharata-dronaparva
+- раскол  · n=1  · mahabharata-ashramavasikaparva
+- разрушение  · n=1  · vajs-up
+
+### `Bedane` — bhedane  (n=2)
+
+- порче  · n=1  · manavadharmashastra
+- раскола  · n=1  · mahabharata-ashramavasikaparva
+
+### `BedasaMSayarUpa` — bhedasaṃśayarūpa  (n=2)
+
+- узел сомнения и двойственности  · n=2  · gitarthasamgraha-abhinavagupta
+
+### `Bedasya` — bhedasya  (n=2)
+
+- посеяв рознь  · n=1  · ramayana-sundarakanda
+- различия  · n=1  · vedartha-samgraha_ramanuja
+
+### `BedatA` — bhedatā  (n=1)
+
+- различие  · n=1  · vedartha-samgraha_ramanuja
+
+### `Bedatas` — bhedatas  (n=2)
+
+- как  · n=2  · sankhya-karika
+
+### `Bedati` — bhedati  (n=2)
+
+- Разобьет  · n=1  · rigveda
+- проломит  · n=1  · rigveda
+
+### `Bedaty` — bhedaty  (n=1)
+
+- Разбить  · n=1  · rigveda
+
+### `BedatyAga` — bhedatyāga  (n=1)
+
+- отвлечься от различий  · n=1  · paramarthasara-abhinavagupta
+
+### `BedatyAgena` — bhedatyāgena  (n=1)
+
+- отвлечься от различий  · n=1  · paramarthasara-abhinavagupta
+
+### `Bedau` — bhedau  (n=2)
+
+- щели  · n=2  · rigveda
+
+### `BedavAda` — bhedavāda  (n=2)
+
+- учение о различии  · n=2  · gitarthasamgraha-abhinavagupta
+
+### `BedavAdaH` — bhedavādaḥ  (n=1)
+
+- различия  · n=1  · gitarthasamgraha-abhinavagupta
+
+### `Bedavarjana` — bhedavarjana  (n=2)
+
+- так как не делает различий  · n=2  · devi-gita
+
+### `BedavivakzA` — bhedavivakṣā  (n=1)
+
+- выявляются отличие  · n=1  · nyaya-bhashya
+
+### `Bedavizaya` — bhedaviṣaya  (n=1)
+
+- относящиеся к сфере различия  · n=1  · nyaya-bhashya
+
+### `BedavyAptim` — bhedavyāptim  (n=1)
+
+- двойственность  · n=1  · pratyabhijna-hridaya_kshemaraja
+
+### `BedavyavahAra` — bhedavyavahāra  (n=1)
+
+- основанием обыденной практики является различие  · n=1  · vedartha-samgraha_ramanuja
+
+### `Beday` — bheday  (n=1)
+
+- разлучить  · n=1  · kama-sutra
+
+### `BedayAmAsa` — bhedayāmāsa  (n=5)
+
+- предал опустошению  · n=1  · mahabharata-aranyakaparva
+- наслал разрушить  · n=1  · mahabharata-aranyakaparva
+- сокрушил  · n=1  · mahabharata-aranyakaparva
+- напустил  · n=1  · mahabharata-aranyakaparva
+- разрушил  · n=1  · mahabharata-aranyakaparva
+
+### `BedayAmaH` — bhedayāmaḥ  (n=1)
+
+- посеем раздор  · n=1  · mahabharata-adiparva
+
+### `BedayantI` — bhedayantī  (n=1)
+
+- против  · n=1  · ramayana-ayodhyakanda
+
+### `Bedayanti` — bhedayanti  (n=1)
+
+- начинают сеять раздор  · n=1  · mahabharata-adiparva
+
+### `Bedayantu` — bhedayantu  (n=2)
+
+- пусть посеют раздор  · n=1  · mahabharata-adiparva
+- пусть поссорят  · n=1  · mahabharata-adiparva
+
+### `Bedayasva` — bhedayasva  (n=1)
+
+- разрушишь  · n=1  · ramayana-balakanda
+
+### `Bedayenna` — bhedayenna  (n=1)
+
+- не вносить смущения  · n=1  · gitarthasamgraha-abhinavagupta
+
+### `BedayeyuH` — bhedayeyuḥ  (n=1)
+
+- раскалывать  · n=1  · ramayana-balakanda
+
+### `Bedayitum` — bhedayitum  (n=1)
+
+- отвратить  · n=1  · mahabharata-adiparva
+
+### `BedayitvA` — bhedayitvā  (n=1)
+
+- разъедин  · n=1  · mahabharata-udyogaparva
+
+### `BedayizyAmi` — bhedayiṣyāmi  (n=1)
+
+- разлучу  · n=1  · kama-sutra
+
+### `Bede` — bhede  (n=4)
+
+- при разрывании  · n=1  · kama-sutra
+- при разладе  · n=1  · mahabharata-sabhaparva
+- в этом мире различений  · n=1  · pratyabhijna-hridaya_kshemaraja
+- в мире различений  · n=1  · pratyabhijna-hridaya_kshemaraja
+
+### `Bedena` — bhedena  (n=1)
+
+- сеянием раздора  · n=1  · mahabharata-virataparva
+
+### `BediBiH` — bhedibhiḥ  (n=2)
+
+- пронзившими  · n=2  · ramayana-aranyakanda
+
+### `Bedin` — bhedin  (n=6)
+
+- нарушителей  · n=1  · manavadharmashastra
+- в разные части тела  · n=1  · ramayana-aranyakanda
+- ранящие  · n=1  · mahabharata-aranyakaparva
+- пробивающих  · n=1  · mahabharata-bhishmaparva
+- способными поразить  · n=1  · mahabharata-dronaparva
+- проникающими  · n=1  · mahabharata-dronaparva
+
+### `Bedita` — bhedita  (n=3)
+
+- отъединят  · n=1  · mahabharata-aranyakaparva
+- вызвать разлад  · n=1  · mahabharata-udyogaparva
+- внести разлад  · n=1  · mahabharata-udyogaparva
+
+### `Bej` — bhej  (n=1)
+
+- занял  · n=1  · mahabharata-adiparva
+
+### `BejAnAsa` — bhejānāsa  (n=1)
+
+- Хотели бы получить долю  · n=1  · rigveda
+
+### `BejAnAsaH` — bhejānāsaḥ  (n=1)
+
+- Став причастными  · n=1  · rigveda
+
+### `BejAna` — bhejāna  (n=1)
+
+- насладился  · n=1  · atharvaveda
+
+### `BejAte` — bhejāte  (n=2)
+
+- разделили  · n=1  · ramayana-ayodhyakanda
+- отправились в путь  · n=1  · rigveda
+
+### `Beje` — bheje  (n=19)
+
+- занял  · n=3  · mahabharata-adiparva, raghuvamsha
+- отправился  · n=2  · rigveda
+- Рассекал  · n=1  · ramayana-sundarakanda
+- Принял  · n=1  · ramayana-aranyakanda
+- привязана  · n=1  · mahabharata-aranyakaparva
+- села  · n=1  · mahabharata-adiparva
+- Пришел  · n=1  · buddhacharita
+- разбежалось  · n=1  · mahabharata-karnaparva
+- разбегалось  · n=1  · mahabharata-shalyaparva
+- рассыпалось  · n=1  · mahabharata-shalyaparva
+- блюл  · n=1  · raghuvamsha
+- почтил  · n=1  · raghuvamsha
+- осеняла  · n=1  · raghuvamsha
+- уплатил дань покорности  · n=1  · raghuvamsha
+- взошли  · n=1  · raghuvamsha
+- устроен  · n=1  · raghuvamsha
+
+### `Bejire` — bhejire  (n=20)
+
+- заняли  · n=2  · mahabharata-adiparva, mahabharata-sabhaparva
+- разделил  · n=2  · rigveda
+- разлетелись  · n=1  · ramayana-ayodhyakanda
+- ждет  · n=1  · ramayana-ayodhyakanda
+- показались  · n=1  · ramayana-sundarakanda
+- забрались на  · n=1  · ramayana-sundarakanda
+- нашли приют  · n=1  · ramayana-balakanda
+- вкусили  · n=1  · rigveda
+- взошли  · n=1  · mahabharata-bhishmaparva
+- уселись  · n=1  · mahabharata-udyogaparva
+- разошлись  · n=1  · mahabharata-karnaparva
+- служили  · n=1  · raghuvamsha
+- воздавали почести  · n=1  · raghuvamsha
+- надели  · n=1  · mahabharata-virataparva
+- испугались  · n=1  · shatakatrayam
+- разделили  · n=1  · atharvaveda
+- ушли  · n=1  · mahabharata-ashramavasikaparva
+- пребывали  · n=1  · mahabharata-svargarohanikaparva
+
+### `Beka` — bheka  (n=1)
+
+- Лягушки  · n=1  · ramayana-ayodhyakanda
+
+### `Bema` — bhema  (n=2)
+
+- бояться  · n=1  · rigveda
+- робеем  · n=1  · rigveda
+
+### `BeqI` — bheḍī  (n=1)
+
+- Бхеди  · n=1  · mahabharata-shalyaparva
+
+### `BerI` — bherī  (n=43)
+
+- барабанов  · n=14  · mahabharata-karnaparva, mahabharata-bhishmaparva, mahabharata-dronaparva, mahabharata-aranyakaparva, ramayana-sundarakanda, mahabharata-shalyaparva
+- литавры  · n=9  · mahabharata-bhishmaparva, bhagavadgita-1914, bhagavadgita-erman, bhagavadgita-smirnov, bhagavadgita-sementsov, mahabharata-shalyaparva
+- литавр  · n=5  · mahabharata-karnaparva, mahabharata-dronaparva, mahabharata-udyogaparva
+- барабаны  · n=4  · mahabharata-dronaparva, mahabharata-udyogaparva, mahabharata-shalyaparva, hatha-yoga-pradipika
+- Барабанов  · n=1  · ramayana-aranyakanda
+- в барабаны  · n=1  · mahabharata-bhishmaparva
+- цимбалы  · n=1  · mahabharata-dronaparva
+- барабан  · n=1  · mahabharata-udyogaparva
+- кимвалы  · n=1  · ramanuja_gitabhashya
+- инструментовъ  · n=1  · bhagavadgita-1788
+- ураган  · n=1  · bhagavadgita-1909
+- горны  · n=1  · bhagavadgita-sharma
+- большой барабан  · n=1  · bhagavadgita-prabhupada
+- труб  · n=1  · mahabharata-karnaparva
+- цимбалами  · n=1  · mahabharata-virataparva
+
+### `BerIH` — bherīḥ  (n=5)
+
+- барабаны  · n=2  · mahabharata-dronaparva
+- литавры  · n=2  · mahabharata-sabhaparva
+- в барабаны  · n=1  · mahabharata-dronaparva
+
+### `BerIRAM` — bherīṇāṃ  (n=1)
+
+- барабанов  · n=1  · mahabharata-karnaparva
+
+### `BerIRAm` — bherīṇām  (n=2)
+
+- барабанов  · n=2  · mahabharata-bhishmaparva, mahabharata-dronaparva
+
+### `BerISaNKamfdaNgAn` — bherīśaṅkhamṛdaṅgān  (n=1)
+
+- боевых раковин и барабанов бхери, мриданга  · n=1  · mahabharata-sauptikaparva
+
+### `BerISaNKamfdaNgAnAm` — bherīśaṅkhamṛdaṅgānām  (n=1)
+
+- рев раковин и грохот барабанов и литавр  · n=1  · mahabharata-shalyaparva
+
+### `BerISaNKaninAdaiH` — bherīśaṅkhaninādaiḥ  (n=2)
+
+- грохота барабанов и пения труб  · n=1  · mahabharata-bhishmaparva
+- грохота барабанов и звука раковин  · n=1  · mahabharata-virataparva
+
+### `BerISaNKavAda` — bherīśaṅkhavāda  (n=1)
+
+- трубачей с барабанщиками  · n=1  · mahabharata-bhishmaparva
+
+### `BerISabdAH` — bherīśabdāḥ  (n=2)
+
+- грохот барабанов  · n=2  · mahabharata-virataparva
+
+### `BerISabda` — bherīśabda  (n=1)
+
+- звук литавр  · n=1  · hatha-yoga-pradipika
+
+### `BerISabdena` — bherīśabdena  (n=1)
+
+- от грохота барабанов  · n=1  · mahabharata-dronaparva
+
+### `BerISataninAdita` — bherīśataninādita  (n=2)
+
+- звучную как сотня литавр  · n=1  · mahabharata-dronaparva
+- зазвучавшую подобно сотне барабанов  · n=1  · mahabharata-virataparva
+
+### `BerIdaRqasaMyogena` — bherīdaṇḍasaṃyogena  (n=1)
+
+- через контакт барабана и палочки  · n=1  · nyaya-bhashya
+
+### `BerIm` — bherīm  (n=1)
+
+- литавру  · n=1  · mahabharata-adiparva
+
+### `BerImfdaNganinadaiH` — bherīmṛdaṅganinadaiḥ  (n=1)
+
+- под звон литавр и грохот барабанов  · n=1  · mahabharata-udyogaparva
+
+### `BerImfdaNgavIRAnAm` — bherīmṛdaṅgavīṇānām  (n=1)
+
+- Лютен, тимпанов, барабанов  · n=1  · ramayana-ayodhyakanda
+
+### `BerImurajakacCapa` — bherīmurajakacchapa  (n=1)
+
+- литавры и барабаны как черепахи  · n=1  · mahabharata-dronaparva
+
+### `BerIninadonmuKa` — bherīninadonmukha  (n=1)
+
+- звуками барабанного боя  · n=1  · mahabharata-karnaparva
+
+### `BerIpaRavaSaNKAnAM` — bherīpaṇavaśaṅkhānāṃ  (n=1)
+
+- литавр, барабанов, раковин  · n=1  · mahabharata-aranyakaparva
+
+### `BerIpaRavaSabdaiH` — bherīpaṇavaśabdaiḥ  (n=1)
+
+- звоном литавр и цимбал  · n=1  · mahabharata-bhishmaparva
+
+### `BerIpaRavapraRAdAn` — bherīpaṇavapraṇādān  (n=1)
+
+- звуки литавр и бубнов  · n=1  · mahabharata-bhishmaparva
+
+### `BerIsahasrARi` — bherīsahasrāṇi  (n=2)
+
+- тысячи барабанов  · n=2  · mahabharata-bhishmaparva, mahabharata-udyogaparva
+
+### `BerIsvanamahAsvanA` — bherīsvanamahāsvanā  (n=1)
+
+- Бхерисванамахасвана  · n=1  · mahabharata-shalyaparva
+
+### `BerIvistIrRakacCapa` — bherīvistīrṇakacchapa  (n=1)
+
+- барабаны - огромных черепах  · n=1  · mahabharata-dronaparva
+
+### `BerIzu` — bherīṣu  (n=1)
+
+- литавры  · n=1  · mahabharata-dronaparva
+
+### `Berya` — bherya  (n=1)
+
+- барабанные  · n=1  · mahabharata-dronaparva
+
+### `BeryaH` — bheryaḥ  (n=7)
+
+- литавры  · n=4  · mahabharata-dronaparva, bhagavadgity, bhagavadgita-radha, mahabharata-sabhaparva
+- литавр  · n=1  · mahabharata-bhishmaparva
+- бхери  · n=1  · mahabharata-dronaparva
+- Бхери  · n=1  · mahabharata-dronaparva
+
+### `Beryas` — bheryas  (n=2)
+
+- литавры  · n=2  · bhagavadgita-burba
+
+### `BeryorAhatayoriva` — bheryorāhatayoriva  (n=1)
+
+- подобно грохоту двух барабанов  · n=1  · mahabharata-virataparva
+
+### `Besajakrt` — bhesajakrt  (n=2)
+
+- исцелена  · n=2  · ch-up
+
+### `Bet` — bhet  (n=2)
+
+- разбей  · n=1  · rigveda
+- столкнул  · n=1  · rigveda
+
+### `Betavya` — bhetavya  (n=7)
+
+- бойся  · n=3  · mahabharata-udyogaparva, mahabharata-ashvamedhikaparva
+- бояться  · n=2  · ramayana-ayodhyakanda, mahabharata-sabhaparva
+- следует опасаться  · n=1  · mahabharata-adiparva
+- следует бояться  · n=1  · mahabharata-shalyaparva
+
+### `BetavyaM` — bhetavyaṃ  (n=4)
+
+- бояться  · n=3  · mahabharata-aranyakaparva, mahabharata-dronaparva, mahabharata-virataparva
+- бойся  · n=1  · mahabharata-udyogaparva
+
+### `Betavyam` — bhetavyam  (n=3)
+
+- бояться  · n=1  · mahabharata-udyogaparva
+- следует бояться  · n=1  · mahabharata-udyogaparva
+- бойся  · n=1  · shukasaptati
+
+### `Betavye` — bhetavye  (n=1)
+
+- не бояться  · n=1  · ramayana-ayodhyakanda
+
+### `BetsyAmi` — bhetsyāmi  (n=3)
+
+- раздроблю  · n=2  · mahabharata-aranyakaparva, mahabharata-shalyaparva
+- пронзить  · n=1  · mahabharata-virataparva
+
+### `Betsyanti` — bhetsyanti  (n=8)
+
+- рассекут  · n=7  · mahabharata-ashvamedhikaparva
+- поразит  · n=1  · mahabharata-bhishmaparva
+
+### `Betsyase` — bhetsyase  (n=1)
+
+- разбить  · n=1  · mahabharata-udyogaparva
+
+### `Betsyate` — bhetsyate  (n=1)
+
+- раздробит  · n=1  · mahabharata-aranyakaparva
+
+### `Betsyati` — bhetsyati  (n=3)
+
+- собьет  · n=1  · mahabharata-dronaparva
+- разобьет  · n=1  · mahabharata-shalyaparva
+- сразит  · n=1  · mahabharata-mausalaparva
+
+### `Betsyaty` — bhetsyaty  (n=1)
+
+- поразит  · n=1  · raghuvamsha
+
+### `BettA` — bhettā  (n=1)
+
+- прорвать  · n=1  · mahabharata-dronaparva
+
+### `BettAraH` — bhettāraḥ  (n=1)
+
+- раскалывали  · n=1  · mahabharata-aranyakaparva
+
+### `BettAraM` — bhettāraṃ  (n=2)
+
+- ломающего  · n=1  · manavadharmashastra
+- расколоть  · n=1  · mahabharata-karnaparva
+
+### `BettavyaH` — bhettavyaḥ  (n=1)
+
+- разбить  · n=1  · ramayana-sundarakanda
+
+### `Bettf` — bhettṛ  (n=3)
+
+- дробящий  · n=1  · mahabharata-adiparva
+- сокрушитель  · n=1  · mahabharata-adiparva
+- проломитель  · n=1  · rigveda
+
+### `BettuM` — bhettuṃ  (n=2)
+
+- прорвать  · n=1  · mahabharata-dronaparva
+- нарушить  · n=1  · buddhacharita
+
+### `Bettum` — bhettum  (n=6)
+
+- пронзить  · n=2  · mahabharata-dronaparva
+- разбить  · n=1  · mahabharata-adiparva
+- быть разрезаны  · n=1  · mahabharata-dronaparva
+- нарушить  · n=1  · mahabharata-virataparva
+- разделить  · n=1  · pratyabhijna-hridaya_kshemaraja
+
+### `Betum` — bhetum  (n=1)
+
+- удержать  · n=1  · ramayana-aranyakanda
+
+### `BezajA` — bheṣajā  (n=5)
+
+- целебные средства  · n=4  · rigveda, atharvaveda, rigveda
+- целебных средств  · n=1  · rigveda
+
+### `BezajAni` — bheṣajāni  (n=2)
+
+- Целебные средства  · n=1  · atharvaveda
+- лекарства  · n=1  · atharvaveda
+
+### `BezajI` — bheṣajī  (n=5)
+
+- исцеляют  · n=1  · atharvaveda
+- лекарство  · n=1  · atharvaveda
+- исцелителями  · n=1  · atharvaveda
+- целебными средствами  · n=1  · atharvaveda
+- целительны  · n=1  · atharvaveda
+
+### `BezajIH` — bheṣajīḥ  (n=1)
+
+- исцеляют  · n=1  · rigveda
+
+### `BezajIm` — bheṣajīm  (n=1)
+
+- целебное  · n=1  · atharvaveda
+
+### `Bezaja` — bheṣaja  (n=67)
+
+- лекарство  · n=27  · atharvaveda, atharvaveda, atharvaveda, atharvaveda, atharvaveda, atharvaveda, rigveda, rigveda, mahabharata-udyogaparva, mahabharata-shalyaparva, atharvaveda, atharvaveda, atharvaveda
+- целебное средство  · n=15  · atharvaveda, atharvaveda, atharvaveda, atharvaveda, rigveda, rigveda, rigveda, rigveda, atharvaveda
+- лекарств  · n=4  · atharvaveda, atharvaveda, atharvaveda
+- целебные средства  · n=3  · rigveda, rigveda
+- целебным средством  · n=3  · rigveda, rigveda
+- исцеление  · n=2  · atharvaveda
+- целебных средства  · n=2  · atharvaveda
+- лекарства  · n=1  · rigveda
+- целебными средствами  · n=1  · rigveda
+- целебном средстве  · n=1  · rigveda
+- средства исцеления  · n=1  · mahabharata-bhishmaparva
+- Целебные средства  · n=1  · rigveda
+- целебного средства  · n=1  · atharvaveda
+- целебным средствам  · n=1  · atharvaveda
+- Целебной  · n=1  · atharvaveda
+- лечебных трав  · n=1  · shatakatrayam-serebryakov
+- Лекарство  · n=1  · atharvaveda
+- снадобье  · n=1  · mahabharata-sauptikaparva
+
+### `BezajaM` — bheṣajaṃ  (n=1)
+
+- заговор  · n=1  · mahabharata-karnaparva
+
+### `Bezajam` — bheṣajam  (n=21)
+
+- целебное средство  · n=9  · rigveda, atharvaveda, atharvaveda, rigveda, rigveda, atharvaveda, atharvaveda
+- лекарство  · n=4  · rigveda, atharvaveda, atharvaveda, atharvaveda
+- лекарством  · n=2  · rigveda
+- целебном средстве  · n=1  · atharvaveda
+- (опущено)  · n=1  · atharvaveda
+- снадобья  · n=1  · mahabharata-aranyakaparva
+- лекарственное средство  · n=1  · mahabharata-shalyaparva
+- средство  · n=1  · atharvaveda
+- лечебное средство  · n=1  · mahabharata-virataparva
+
+### `BezajasaNgraha` — bheṣajasaṅgraha  (n=1)
+
+- лекарства  · n=1  · shatakatrayam
+
+### `Bezajasya` — bheṣajasya  (n=2)
+
+- целебного средства  · n=1  · rigveda
+- целебным средством  · n=1  · rigveda
+
+### `Bezajau` — bheṣajau  (n=1)
+
+- целебных средства  · n=1  · atharvaveda
+
+### `BezajeBiH` — bheṣajebhiḥ  (n=1)
+
+- лекарств  · n=1  · rigveda
+
+### `BezajeBir` — bheṣajebhir  (n=1)
+
+- целебными средствами  · n=1  · rigveda
+
+### `BezajeByaH` — bheṣajebhyaḥ  (n=1)
+
+- лекарствам  · n=1  · atharvaveda
+
+### `Bezajena` — bheṣajena  (n=1)
+
+- лекарством  · n=1  · ramayana-sundarakanda
+
+### `Bf` — bhṛ  (n=42)
+
+- принеси  · n=7  · rigveda, rigveda, rigveda
+- Принеси  · n=3  · rigveda, atharvaveda
+- неся  · n=2  · rigveda, rigveda
+- носить  · n=2  · rigveda, kumarasambhava
+- поддерживает  · n=2  · mahabharata-bhishmaparva
+- несет  · n=2  · bhagavadgita-sementsov, atharvaveda
+- вынашивал  · n=2  · rigveda
+- принес  · n=2  · atharvaveda
+- носил  · n=2  · atharvaveda, atharvaveda
+- заботиться  · n=1  · ramayana-ayodhyakanda
+- одарена  · n=1  · mahabharata-aranyakaparva
+- собирают  · n=1  · rigveda
+- вывезли  · n=1  · rigveda
+- бросайся  · n=1  · rigveda
+- приношу  · n=1  · rigveda
+- приносят  · n=1  · rigveda
+- поддерживая  · n=1  · bhagavadgita-sharma
+- принесите  · n=1  · rigveda
+- снес  · n=1  · atharvaveda
+- чей лик  · n=1  · shatakatrayam
+- Я проношусь  · n=1  · atharvaveda
+- носи  · n=1  · atharvaveda
+- передает  · n=1  · atharvaveda
+- носят  · n=1  · atharvaveda
+- Неся  · n=1  · atharvaveda
+- принесут  · n=1  · atharvaveda
+- принесли  · n=1  · atharvaveda
+
+### `BfNgA` — bhṛṅgā  (n=2)
+
+- пчел  · n=2  · atharvaveda
+
+### `BfNgArARi` — bhṛṅgārāṇi  (n=1)
+
+- золотые вазы  · n=1  · mahabharata-ashvamedhikaparva
+
+### `BfNgAra` — bhṛṅgāra  (n=1)
+
+- сосуд  · n=1  · ramayana-sundarakanda
+
+### `BfNgAru` — bhṛṅgāru  (n=1)
+
+- ваза  · n=1  · ramayana-ayodhyakanda
+
+### `BfNgI` — bhṛṅgī  (n=1)
+
+- пчел  · n=1  · gitagovinda
+
+### `BfNgInAda` — bhṛṅgīnāda  (n=2)
+
+- жужжанию шмеля  · n=2  · hatha-yoga-pradipika
+
+### `BfNga` — bhṛṅga  (n=5)
+
+- пчела  · n=2  · hatha-yoga-pradipika, amaru-shataka
+- бхринги  · n=1  · kama-sutra
+- бхринга  · n=1  · kama-sutra
+- пчеле  · n=1  · gitagovinda
+
+### `BfNganAda` — bhṛṅganāda  (n=2)
+
+- жужжанию шмеля  · n=2  · hatha-yoga-pradipika
+
+### `BfNgarAja` — bhṛṅgarāja  (n=3)
+
+- бхрингараджи  · n=2  · mahabharata-aranyakaparva, kama-sutra
+- бхрингараджа  · n=1  · kama-sutra
+
+### `BfNgarAjaiH` — bhṛṅgarājaiḥ  (n=1)
+
+- пчелы  · n=1  · ramayana-sundarakanda
+
+### `BfSABiGAta` — bhṛśābhighāta  (n=1)
+
+- от сильного удара  · n=1  · mahabharata-karnaparva
+
+### `BfSASita` — bhṛśāśita  (n=1)
+
+- жадно поглощающий  · n=1  · mahabharata-sauptikaparva
+
+### `BfSAhata` — bhṛśāhata  (n=1)
+
+- тяжко раненные  · n=1  · mahabharata-karnaparva
+
+### `BfSAhatau` — bhṛśāhatau  (n=1)
+
+- сильно ударяемые  · n=1  · mahabharata-shalyaparva
+
+### `BfSAnuraktameDAvI` — bhṛśānuraktamedhāvī  (n=1)
+
+- Весьма преданный (ему) мудрый  · n=1  · ramayana-sundarakanda
+
+### `BfSArditAm` — bhṛśārditām  (n=1)
+
+- жестоко преследуема  · n=1  · mahabharata-sauptikaparva
+
+### `BfSArditam` — bhṛśārditam  (n=1)
+
+- жестоко изранен  · n=1  · mahabharata-karnaparva
+
+### `BfSArtA` — bhṛśārtā  (n=1)
+
+- тяжко страдающая  · n=1  · mahabharata-striparva
+
+### `BfSArtAnAm` — bhṛśārtānām  (n=1)
+
+- несчастных  · n=1  · mahabharata-aranyakaparva
+
+### `BfSArtam` — bhṛśārtam  (n=1)
+
+- тяжко страдающему  · n=1  · mahabharata-karnaparva
+
+### `BfSAsvasTAn` — bhṛśāsvasthān  (n=1)
+
+- в страшном унынии  · n=1  · mahabharata-dronaparva
+
+### `BfSAtatenAmitabARavarziRA` — bhṛśātatenāmitabāṇavarṣiṇā  (n=1)
+
+- натянутым до отказа, из которого непрерывным дождем сыпались стрелы  · n=1  · mahabharata-karnaparva
+
+### `BfSAtura` — bhṛśātura  (n=1)
+
+- сильно удрученные  · n=1  · mahabharata-shalyaparva
+
+### `BfSAturaH` — bhṛśāturaḥ  (n=1)
+
+- в крайнем возбуждении  · n=1  · mahabharata-sauptikaparva
+
+### `BfSAyasta` — bhṛśāyasta  (n=1)
+
+- с большой стремительностью  · n=1  · mahabharata-dronaparva
+
+### `BfSa` — bhṛśa  (n=59)
+
+- сильно  · n=12  · mahabharata-dronaparva, mahabharata-udyogaparva, mahabharata-adiparva, mahabharata-shalyaparva
+- тяжко  · n=6  · ramayana-ayodhyakanda, mahabharata-karnaparva, mahabharata-aranyakaparva, mahabharata-bhishmaparva
+- жестоко  · n=3  · mahabharata-dronaparva
+- сильной  · n=3  · mahabharata-dronaparva, mahabharata-sabhaparva
+- очень  · n=2  · ramayana-ayodhyakanda
+- ужас  · n=2  · ramayana-aranyakanda
+- тяжкою  · n=2  · mahabharata-aranyakaparva
+- великой  · n=2  · mahabharata-adiparva, mahabharata-ashramavasikaparva
+- сильный  · n=2  · mahabharata-dronaparva, gitagovinda
+- еще  · n=1  · ramayana-ayodhyakanda
+- престарелая  · n=1  · ramayana-ayodhyakanda
+- великого  · n=1  · ramayana-ayodhyakanda
+- убитых горем  · n=1  · ramayana-ayodhyakanda
+- Добродетельный  · n=1  · ramayana-ayodhyakanda
+- великим  · n=1  · ramayana-ayodhyakanda
+- большом  · n=1  · ramayana-ayodhyakanda
+- великое  · n=1  · ramayana-ayodhyakanda
+- снова и снова  · n=1  · ramayana-sundarakanda
+- глубоком  · n=1  · ramayana-aranyakanda
+- тяжких  · n=1  · ramayana-aranyakanda
+- долго  · n=1  · ramayana-aranyakanda
+- тяжкой  · n=1  · mahabharata-aranyakaparva
+- громкими  · n=1  · mahabharata-aranyakaparva
+- крайности  · n=1  · mahabharata-bhishmaparva
+- сильное  · n=1  · mahabharata-dronaparva
+- сильным  · n=1  · mahabharata-dronaparva
+- глубоко  · n=1  · mahabharata-dronaparva
+- ве  · n=1  · mahabharata-dronaparva
+- горестно  · n=1  · buddhacharita
+- горько  · n=1  · buddhacharita
+- Тяжко  · n=1  · mahabharata-ashvamedhikaparva
+- глубокой  · n=1  · mahabharata-sabhaparva
+- громко  · n=1  · shukasaptati
+- превеликий  · n=1  · mahabharata-striparva
+
+### `BfSa-duHKita` — bhṛśa-duḥkhita  (n=1)
+
+- весьма опечалилась  · n=1  · mahabharata-aranyakaparva
+
+### `BfSaM` — bhṛśaṃ  (n=55)
+
+- сильно  · n=20  · mahabharata-dronaparva, mahabharata-adiparva, mahabharata-aranyakaparva, mahabharata-bhishmaparva, mahabharata-udyogaparva, mahabharata-karnaparva, mahabharata-shalyaparva, mahabharata-virataparva
+- весьма  · n=3  · mahabharata-adiparva, mahabharata-dronaparva, mahabharata-bhishmaparva
+- жестоко  · n=2  · mahabharata-bhishmaparva, mahabharata-striparva
+- неистово  · n=2  · mahabharata-dronaparva
+- ужасно  · n=2  · mahabharata-dronaparva
+- тяжко  · n=2  · mahabharata-bhishmaparva, mahabharata-karnaparva
+- в гневе  · n=1  · ramayana-ayodhyakanda
+- громко  · n=1  · ramayana-sundarakanda
+- нещадно  · n=1  · mahabharata-aranyakaparva
+- горько  · n=1  · mahabharata-aranyakaparva
+- испытываю  · n=1  · mahabharata-aranyakaparva
+- крайне  · n=1  · mahabharata-aranyakaparva
+- безмерно  · n=1  · mahabharata-bhishmaparva
+- громкие  · n=1  · mahabharata-bhishmaparva
+- чрезвычайно  · n=1  · mahabharata-dronaparva
+- глубокой  · n=1  · mahabharata-dronaparva
+- глубокое  · n=1  · mahabharata-dronaparva
+- горестно  · n=1  · buddhacharita
+- чрезмерно  · n=1  · mahabharata-udyogaparva
+- больше  · n=1  · mahabharata-udyogaparva
+- хорошо  · n=1  · mahabharata-udyogaparva
+- с полною силой  · n=1  · mahabharata-udyogaparva
+- израненный  · n=1  · mahabharata-bhishmaparva
+- мощными  · n=1  · mahabharata-karnaparva
+- великим  · n=1  · mahabharata-ashvamedhikaparva
+- крепко  · n=1  · mahabharata-sabhaparva
+- еще больше  · n=1  · raghuvamsha
+- сокрушительным  · n=1  · raghuvamsha
+- совсем  · n=1  · mahabharata-virataparva
+- очень  · n=1  · shatakatrayam
+
+### `BfSaMkrudDa` — bhṛśaṃ kruddha  (n=2)
+
+- сильно разгневанный  · n=1  · mahabharata-dronaparva
+- в сильном гневе  · n=1  · mahabharata-karnaparva
+
+### `BfSaMkzata` — bhṛśaṃ kṣata  (n=1)
+
+- тяжело раненный  · n=1  · mahabharata-shalyaparva
+
+### `BfSaMmUQa` — bhṛśaṃ mūḍha  (n=1)
+
+- крайне глупый  · n=1  · mahabharata-dronaparva
+
+### `BfSaMmarmaRi` — bhṛśaṃ marmaṇi  (n=1)
+
+- тяжко в грудь  · n=1  · mahabharata-karnaparva
+
+### `BfSaMsaMvignahfdaya` — bhṛśaṃ saṃvignahṛdaya  (n=1)
+
+- ужас стеснил сердце  · n=1  · mahabharata-karnaparva
+
+### `BfSaMtIkzRa` — bhṛśaṃ tīkṣṇa  (n=1)
+
+- острейшей  · n=1  · mahabharata-karnaparva
+
+### `BfSaMtUryaninAdezuvAdyamAnezu` — bhṛśaṃ tūryaninādeṣu vādyamāneṣu  (n=1)
+
+- когда громко загремели литавры и зазвучали трубы  · n=1  · mahabharata-bhishmaparva
+
+### `BfSaMtrastA` — bhṛśaṃ trastā  (n=1)
+
+- дрожащие  · n=1  · mahabharata-sauptikaparva
+
+### `BfSaMvidDa` — bhṛśaṃ viddha  (n=2)
+
+- раненный тяжко  · n=1  · mahabharata-bhishmaparva
+- глубоко пронзенный  · n=1  · mahabharata-dronaparva
+
+### `BfSaSokavarDana` — bhṛśaśokavardhana  (n=1)
+
+- увеличило бы мою печаль  · n=1  · mahabharata-virataparva
+
+### `BfSadAruRAH` — bhṛśadāruṇāḥ  (n=1)
+
+- сильнейшие  · n=1  · mahabharata-ashvamedhikaparva
+
+### `BfSadAruRa` — bhṛśadāruṇa  (n=5)
+
+- становясь все более ожесточенной  · n=1  · mahabharata-dronaparva
+- ужасной  · n=1  · buddhacharita
+- свирепыми  · n=1  · mahabharata-karnaparva
+- ожесточеннейший  · n=1  · mahabharata-karnaparva
+- ужаснейшего  · n=1  · mahabharata-shalyaparva
+
+### `BfSadAruRaiH` — bhṛśadāruṇaiḥ  (n=1)
+
+- безжалостными  · n=1  · mahabharata-aranyakaparva
+
+### `BfSadAruRam` — bhṛśadāruṇam  (n=1)
+
+- столь мрачный  · n=1  · mahabharata-aranyakaparva
+
+### `BfSadAruRe` — bhṛśadāruṇe  (n=2)
+
+- полном опасностей  · n=1  · ramayana-ayodhyakanda
+- ужасно страшную  · n=1  · mahabharata-dronaparva
+
+### `BfSadaRqaH` — bhṛśadaṇḍaḥ  (n=1)
+
+- строго наказывать  · n=1  · manavadharmashastra
+
+### `BfSaduHKArtau` — bhṛśaduḥkhārtau  (n=1)
+
+- измученные скорбью  · n=1  · mahabharata-adiparva
+
+### `BfSaduHKitA` — bhṛśaduḥkhitā  (n=2)
+
+- скорбью  · n=1  · mahabharata-aranyakaparva
+- глубоко огорченная  · n=1  · mahabharata-aranyakaparva
+
+### `BfSaduHKitAH` — bhṛśaduḥkhitāḥ  (n=5)
+
+- в великой печали  · n=2  · mahabharata-adiparva
+- сильно опечаленные  · n=2  · mahabharata-adiparva, mahabharata-shalyaparva
+- жестоко страдают  · n=1  · buddhacharita
+
+### `BfSaduHKita` — bhṛśaduḥkhita  (n=12)
+
+- страдая  · n=1  · ramayana-ayodhyakanda
+- в великом отчаянии  · n=1  · mahabharata-aranyakaparva
+- сильно терзаться горем  · n=1  · mahabharata-adiparva
+- в сильной печали  · n=1  · mahabharata-adiparva
+- глубоко опечаленный  · n=1  · mahabharata-dronaparva
+- охваченный сильным горем  · n=1  · mahabharata-shalyaparva
+- тяжко горюя  · n=1  · mahabharata-ashramavasikaparva
+- жестоко сокрушались  · n=1  · mahabharata-ashramavasikaparva
+- тяжко страдающую  · n=1  · mahabharata-ashramavasikaparva
+- тяжко страдающий  · n=1  · mahabharata-ashramavasikaparva
+- тяжко страдая  · n=1  · mahabharata-striparva
+- безмерно затосковал  · n=1  · mahabharata-mausalaparva
+
+### `BfSaduHKitaH` — bhṛśaduḥkhitaḥ  (n=2)
+
+- сильно огорченный  · n=1  · mahabharata-adiparva
+- сильно подавленный горем  · n=1  · mahabharata-dronaparva
+
+### `BfSaharzitaH` — bhṛśaharṣitaḥ  (n=1)
+
+- очень обрадовался  · n=1  · mahabharata-aranyakaparva
+
+### `BfSajAtavismaya` — bhṛśajātavismaya  (n=1)
+
+- в великом изумлении  · n=1  · ramayana-sundarakanda
+
+### `BfSakopanAH` — bhṛśakopanāḥ  (n=1)
+
+- сильно гневные  · n=1  · mahabharata-adiparva
+
+### `BfSakopana` — bhṛśakopana  (n=2)
+
+- весьма гневных  · n=1  · mahabharata-adiparva
+- гневный  · n=1  · mahabharata-aranyakaparva
+
+### `BfSalulita` — bhṛśalulita  (n=1)
+
+- сильно потревожено  · n=1  · mahabharata-dronaparva
+
+### `BfSam` — bhṛśam  (n=349)
+
+- сильно  · n=112  · mahabharata-dronaparva, mahabharata-shalyaparva, mahabharata-adiparva, ramayana-ayodhyakanda, mahabharata-aranyakaparva, mahabharata-sabhaparva, mahabharata-virataparva, mahabharata-udyogaparva, mahabharata-karnaparva, ramayana-sundarakanda, manavadharmashastra, ramayana-balakanda, mahabharata-bhishmaparva, mahabharata-ashvamedhikaparva, ramayana-aranyakanda, shatakatrayam-serebryakov, gitagovinda, mahabharata-ashramavasikaparva, mahabharata-sauptikaparva
+- весьма  · n=16  · mahabharata-adiparva, mahabharata-karnaparva, mahabharata-bhishmaparva, mahabharata-dronaparva, mahabharata-ashvamedhikaparva, ramayana-sundarakanda, manavadharmashastra, ramayana-balakanda, mahabharata-aranyakaparva
+- глубоко  · n=14  · mahabharata-dronaparva, mahabharata-shalyaparva, mahabharata-aranyakaparva, ramayana-sundarakanda, mahabharata-sabhaparva, gitagovinda
+- тяжко  · n=14  · mahabharata-karnaparva, mahabharata-bhishmaparva, mahabharata-ashvamedhikaparva, mahabharata-ashramavasikaparva
+- очень  · n=10  · mahabharata-dronaparva, mahabharata-udyogaparva, mahabharata-shantiparva, ramayana-sundarakanda, ramayana-aranyakanda, mahabharata-adiparva, mahabharata-virataparva, mahabharata-sauptikaparva
+- громко  · n=8  · mahabharata-bhishmaparva, mahabharata-dronaparva, ramayana-ayodhyakanda, ramayana-aranyakanda, mahabharata-sabhaparva, mahabharata-adiparva
+- жестоко  · n=7  · mahabharata-dronaparva, ramayana-sundarakanda, mahabharata-adiparva, mahabharata-bhishmaparva, mahabharata-karnaparva, mahabharata-ashramavasikaparva
+- крепко  · n=6  · mahabharata-virataparva, mahabharata-adiparva, manavadharmashastra, mahabharata-dronaparva, raghuvamsha
+- мощно  · n=4  · mahabharata-karnaparva, mahabharata-bhishmaparva, mahabharata-sauptikaparva
+- сильной  · n=4  · mahabharata-dronaparva, mahabharata-virataparva, mahabharata-mahaprasthanikaparva
+- громкий  · n=3  · mahabharata-dronaparva, ramayana-balakanda
+- совсем  · n=3  · mahabharata-aranyakaparva, mahabharata-dronaparva, mahabharata-udyogaparva
+- великой  · n=3  · mahabharata-adiparva, mahabharata-shalyaparva
+- усиленно  · n=3  · mahabharata-adiparva, mahabharata-dronaparva
+- сильным  · n=3  · mahabharata-dronaparva
+- усердно  · n=3  · mahabharata-udyogaparva, mahabharata-dronaparva
+- еще больше  · n=2  · ramayana-ayodhyakanda, mahabharata-dronaparva
+- обильные  · n=2  · ramayana-ayodhyakanda, mahabharata-dronaparva
+- сильная  · n=2  · ramayana-sundarakanda, mahabharata-shalyaparva
+- столь  · n=2  · mahabharata-aranyakaparva, mahabharata-adiparva
+- плотно  · n=2  · mahabharata-aranyakaparva, mahabharata-shalyaparva
+- суровому  · n=2  · mahabharata-aranyakaparva, mahabharata-ashvamedhikaparva
+- с силой  · n=2  · mahabharata-aranyakaparva, mahabharata-karnaparva
+- тотчас  · n=2  · mahabharata-bhishmaparva
+- тяжкие  · n=2  · mahabharata-bhishmaparva, mahabharata-karnaparva
+- ярко  · n=2  · mahabharata-bhishmaparva, mahabharata-karnaparva
+- тяжело  · n=2  · mahabharata-dronaparva, mahabharata-udyogaparva
+- густо  · n=2  · mahabharata-dronaparva
+- очень громко  · n=2  · mahabharata-dronaparva
+- сильную  · n=2  · mahabharata-dronaparva
+- громкие  · n=2  · mahabharata-dronaparva, mahabharata-shalyaparva
+- громким  · n=2  · buddhacharita, mahabharata-karnaparva
+- тяжким  · n=2  · mahabharata-udyogaparva, mahabharata-striparva
+- большой  · n=1  · mahabharata-adiparva
+- грузно  · n=1  · mahabharata-adiparva
+- величайшим  · n=1  · mahabharata-shantiparva
+- близко  · n=1  · ramayana-ayodhyakanda
+- вся  · n=1  · ramayana-ayodhyakanda
+- Плотно  · n=1  · ramayana-ayodhyakanda
+- уж слишком  · n=1  · ramayana-ayodhyakanda
+- безмерной  · n=1  · ramayana-ayodhyakanda
+- Труднодоступна  · n=1  · ramayana-ayodhyakanda
+- причинившие ему боль  · n=1  · ramayana-ayodhyakanda
+- страстно  · n=1  · ramayana-ayodhyakanda
+- прекрасно  · n=1  · ramayana-ayodhyakanda
+- немало  · n=1  · ramayana-ayodhyakanda
+- Крепко  · n=1  · ramayana-sundarakanda
+- часто  · n=1  · ramayana-sundarakanda
+- энергично  · n=1  · manavadharmashastra
+- любой  · n=1  · manavadharmashastra
+- жестокие  · n=1  · ramayana-aranyakanda
+- Безжалостно  · n=1  · ramayana-aranyakanda
+- великого  · n=1  · ramayana-aranyakanda
+- без устали  · n=1  · ramayana-aranyakanda
+- в страхе  · n=1  · ramayana-aranyakanda
+- стремительно  · n=1  · ramayana-aranyakanda
+- возвращался  · n=1  · ramayana-aranyakanda
+- полное  · n=1  · ramayana-aranyakanda
+- Множество  · n=1  · ramayana-balakanda
+- страшно  · n=1  · mahabharata-aranyakaparva
+- исторгнут  · n=1  · mahabharata-aranyakaparva
+- горькими слезами  · n=1  · mahabharata-aranyakaparva
+- будто  · n=1  · mahabharata-aranyakaparva
+- превеликим  · n=1  · mahabharata-aranyakaparva
+- крепкую  · n=1  · mahabharata-aranyakaparva
+- жарком  · n=1  · mahabharata-aranyakaparva
+- мощный  · n=1  · mahabharata-aranyakaparva
+- глубокое  · n=1  · mahabharata-aranyakaparva
+- решительно  · n=1  · mahabharata-aranyakaparva
+- особенно  · n=1  · mahabharata-aranyakaparva
+- серьезно  · n=1  · mahabharata-aranyakaparva
+- глубокие  · n=1  · mahabharata-aranyakaparva
+- отчаянные  · n=1  · mahabharata-aranyakaparva
+- небывалым  · n=1  · mahabharata-aranyakaparva
+- горячо  · n=1  · mahabharata-aranyakaparva
+- овладели  · n=1  · mahabharata-aranyakaparva
+- множество  · n=1  · mahabharata-aranyakaparva
+- слишком сильно  · n=1  · mahabharata-aranyakaparva
+- великую  · n=1  · mahabharata-adiparva
+- сильнее  · n=1  · mahabharata-adiparva
+- горько  · n=1  · mahabharata-adiparva
+- то и дело  · n=1  · mahabharata-bhishmaparva
+- бурных  · n=1  · mahabharata-bhishmaparva
+- во множестве  · n=1  · mahabharata-bhishmaparva
+- необычайной  · n=1  · mahabharata-bhishmaparva
+- быстро  · n=1  · mahabharata-bhishmaparva
+- зычные  · n=1  · mahabharata-dronaparva
+- весьма жестоко  · n=1  · mahabharata-dronaparva
+- горькие  · n=1  · mahabharata-dronaparva
+- неистово  · n=1  · mahabharata-dronaparva
+- со всей стремительностью  · n=1  · mahabharata-dronaparva
+- изо всех сил  · n=1  · mahabharata-dronaparva
+- быстрее  · n=1  · mahabharata-dronaparva
+- высокие  · n=1  · mahabharata-dronaparva
+- весьма блистательно  · n=1  · mahabharata-dronaparva
+- с большим рвением  · n=1  · mahabharata-dronaparva
+- стойкий  · n=1  · mahabharata-dronaparva
+- неистовые  · n=1  · mahabharata-dronaparva
+- Плачут  · n=1  · buddhacharita
+- непрерывно  · n=1  · mahabharata-udyogaparva
+- глубокую  · n=1  · mahabharata-udyogaparva
+- сурового  · n=1  · mahabharata-udyogaparva
+- ревностно  · n=1  · mahabharata-udyogaparva
+- вскоре  · n=1  · mahabharata-udyogaparva
+- грубое  · n=1  · ch-up
+- крайне  · n=1  · mahabharata-karnaparva
+- как  · n=1  · mahabharata-karnaparva
+- безжалостно  · n=1  · mahabharata-karnaparva
+- с превеликим трудом  · n=1  · mahabharata-karnaparva
+- тягчайшие  · n=1  · mahabharata-karnaparva
+- преисполнившись  · n=1  · mahabharata-karnaparva
+- друг с другом  · n=1  · mahabharata-karnaparva
+- мощные  · n=1  · mahabharata-karnaparva
+- бурно  · n=1  · mahabharata-karnaparva
+- сурово  · n=1  · mahabharata-karnaparva
+- упорно  · n=1  · mahabharata-karnaparva
+- легко  · n=1  · mahabharata-karnaparva
+- страшное  · n=1  · mahabharata-karnaparva
+- разрывается  · n=1  · mahabharata-shalyaparva
+- сильные  · n=1  · mahabharata-shalyaparva
+- почти полному  · n=1  · mahabharata-shalyaparva
+- глубокой  · n=1  · mahabharata-shalyaparva
+- великая  · n=1  · mahabharata-shalyaparva
+- велико  · n=1  · mahabharata-ashvamedhikaparva
+- всеми силами  · n=1  · mahabharata-ashvamedhikaparva
+- сильном  · n=1  · mahabharata-ashvamedhikaparva
+- постоянном  · n=1  · mahabharata-sabhaparva
+- чрезмерное  · n=1  · mahabharata-sabhaparva
+- тяжкое  · n=1  · mahabharata-virataparva
+- сильное  · n=1  · mahabharata-virataparva
+- все снова и снова  · n=1  · mahabharata-virataparva
+- глубоком  · n=1  · mahabharata-ashramavasikaparva
+- большей  · n=1  · mahabharata-ashramavasikaparva
+- Тяжко  · n=1  · mahabharata-striparva
+- в смертной муке  · n=1  · mahabharata-sauptikaparva
+
+### `BfSamaByahanatkrudDastottrairivamahAdvipam` — bhṛśamabhyahanatkruddhastottrairiva mahādvipam  (n=1)
+
+- сильно ударил в него, как (ударяют) могучего слона стрекалами  · n=1  · mahabharata-shalyaparva
+
+### `BfSamaSrunetraH` — bhṛśamaśrunetraḥ  (n=1)
+
+- со слезами на глазах  · n=1  · mahabharata-karnaparva
+
+### `BfSamudvigna` — bhṛśamudvigna  (n=1)
+
+- сильно встревожено  · n=1  · mahabharata-dronaparva
+
+### `BfSanisvana` — bhṛśanisvana  (n=1)
+
+- резкую  · n=1  · mahabharata-udyogaparva
+
+### `BfSapIqitAn` — bhṛśapīḍitān  (n=1)
+
+- сильно измученных  · n=1  · mahabharata-shalyaparva
+
+### `BfSapIqita` — bhṛśapīḍita  (n=3)
+
+- жестоко изранен  · n=1  · mahabharata-aranyakaparva
+- жестоко страдал  · n=1  · mahabharata-aranyakaparva
+- Изувеченный  · n=1  · mahabharata-aranyakaparva
+
+### `BfSasaMhfzwA` — bhṛśasaṃhṛṣṭā  (n=1)
+
+- сильно обрадованные  · n=1  · mahabharata-shalyaparva
+
+### `BfSasaMvidDaH` — bhṛśasaṃviddhaḥ  (n=1)
+
+- глубоко пронзенный  · n=1  · mahabharata-dronaparva
+
+### `BfSasaMvignAH` — bhṛśasaṃvignāḥ  (n=1)
+
+- в крайней тревоге  · n=1  · mahabharata-sauptikaparva
+
+### `BfSasaMvigna` — bhṛśasaṃvigna  (n=3)
+
+- сильно встревожились  · n=1  · mahabharata-dronaparva
+- крайне возбужденные  · n=1  · mahabharata-karnaparva
+- тревоги  · n=1  · mahabharata-striparva
+
+### `BfSasaNkrudDa` — bhṛśasaṅkruddha  (n=9)
+
+- сильно разгневанный  · n=2  · mahabharata-shalyaparva, mahabharata-virataparva
+- сильно разгневанных  · n=1  · mahabharata-dronaparva
+- сильно разгневанные  · n=1  · mahabharata-dronaparva
+- сильно разгневался  · n=1  · mahabharata-dronaparva
+- охваченные сильной яростью  · n=1  · mahabharata-dronaparva
+- охваченные сильным гневом  · n=1  · mahabharata-dronaparva
+- преисполненный сильного гнева  · n=1  · mahabharata-dronaparva
+- сильно разгневаны  · n=1  · mahabharata-udyogaparva
+
+### `BfSasantapta` — bhṛśasantapta  (n=1)
+
+- сильно огорчился  · n=1  · mahabharata-adiparva
+
+### `BfSasantaptam` — bhṛśasantaptam  (n=1)
+
+- крайне изнуренному  · n=1  · mahabharata-ashvamedhikaparva
+
+### `BfSatIkzRAByAm` — bhṛśatīkṣṇābhyām  (n=1)
+
+- очень острыми  · n=1  · mahabharata-dronaparva
+
+### `BfSatIkzRa` — bhṛśatīkṣṇa  (n=1)
+
+- острейшею  · n=1  · mahabharata-bhishmaparva
+
+### `BfSatIkzRena` — bhṛśatīkṣṇena  (n=2)
+
+- очень острым  · n=1  · mahabharata-dronaparva
+- острым  · n=1  · mahabharata-aranyakaparva
+
+### `BfSatayA` — bhṛśatayā  (n=1)
+
+- сильный  · n=1  · raghuvamsha
+
+### `BfSavedanArta` — bhṛśavedanārta  (n=1)
+
+- громко кричал от боли  · n=1  · mahabharata-karnaparva
+
+### `BfSavegitaiH` — bhṛśavegitaiḥ  (n=1)
+
+- стремительно мчавшихся  · n=1  · mahabharata-sauptikaparva
+
+### `BfSavikzatAH` — bhṛśavikṣatāḥ  (n=1)
+
+- сильно изранены  · n=1  · mahabharata-shalyaparva
+
+### `BfSavikzata` — bhṛśavikṣata  (n=4)
+
+- сильно изувеченные  · n=2  · mahabharata-shalyaparva
+- жестоко израненные  · n=1  · mahabharata-aranyakaparva
+- Тяжко израненный  · n=1  · mahabharata-ashvamedhikaparva
+
+### `BfSavikzatam` — bhṛśavikṣatam  (n=2)
+
+- сильно израненное  · n=1  · mahabharata-shalyaparva
+- сильно израненного  · n=1  · mahabharata-shalyaparva
+
+### `BfSavikzatau` — bhṛśavikṣatau  (n=1)
+
+- сильно изранены  · n=1  · mahabharata-shalyaparva
+
+### `BfSavismitAH` — bhṛśavismitāḥ  (n=1)
+
+- полные восхищения  · n=1  · ramayana-balakanda
+
+### `BfSavismitaH` — bhṛśavismitaḥ  (n=1)
+
+- Велико было изумление  · n=1  · mahabharata-aranyakaparva
+
+### `BfSodvignAstrayo` — bhṛśodvignāstrayo  (n=1)
+
+- сильной тревогой  · n=1  · mahabharata-shalyaparva
+
+### `BfSodvignaH` — bhṛśodvignaḥ  (n=2)
+
+- в сильной тревоге  · n=1  · mahabharata-dronaparva
+- сильно перепуганные  · n=1  · mahabharata-shalyaparva
+
+### `BfSopahatasaNkalpAH` — bhṛśopahatasaṅkalpāḥ  (n=1)
+
+- сильно разочарованные в своих ожиданиях  · n=1  · mahabharata-shalyaparva
+
+### `BfTi` — bhṛthi  (n=1)
+
+- принесении  · n=1  · rigveda
+
+### `BfgURAM` — bhṛgūṇāṃ  (n=2)
+
+- бхригуидов  · n=1  · mahabharata-adiparva
+- Бхригу  · n=1  · mahabharata-adiparva
+
+### `BfgURAm` — bhṛgūṇām  (n=1)
+
+- Бхригу  · n=1  · rigveda
+
+### `BfgUdvaha` — bhṛgūdvaha  (n=10)
+
+- потомок Бхригу  · n=9  · mahabharata-adiparva, mahabharata-ashvamedhikaparva, mahabharata-shantiparva
+- потомка Бхригу  · n=1  · mahabharata-shantiparva
+
+### `Bfgau` — bhṛgau  (n=1)
+
+- Бхригу  · n=1  · mahabharata-adiparva
+
+### `BfgavARa` — bhṛgavāṇa  (n=2)
+
+- Бхригавану  · n=1  · rigveda
+- Бхригавана  · n=1  · rigveda
+
+### `BfgavARe` — bhṛgavāṇe  (n=1)
+
+- Бхригавана  · n=1  · rigveda
+
+### `BfgavARo` — bhṛgavāṇo  (n=1)
+
+- Бхригу  · n=1  · rigveda
+
+### `Bfgava` — bhṛgava  (n=2)
+
+- Бхригу  · n=1  · rigveda
+- бхригу  · n=1  · rigveda
+
+### `BfgavaH` — bhṛgavaḥ  (n=10)
+
+- Бхригу  · n=6  · rigveda, rigveda, atharvaveda
+- бхригу  · n=4  · rigveda
+
+### `Bfgave` — bhṛgave  (n=3)
+
+- Бхригу  · n=1  · mahabharata-adiparva
+- для Бхригу  · n=1  · rigveda
+- к бхригу  · n=1  · rigveda
+
+### `Bfgavo` — bhṛgavo  (n=4)
+
+- Бхригу  · n=4  · rigveda, rigveda
+
+### `BfgoH` — bhṛgoḥ  (n=2)
+
+- Бхригу  · n=2  · mahabharata-shantiparva, mahabharata-shalyaparva
+
+### `BfgoHsuta` — bhṛgoḥ suta  (n=1)
+
+- потомка Бхиргу  · n=1  · mahabharata-karnaparva
+
+### `Bfgordine` — bhṛgordine  (n=2)
+
+- в пятницу  · n=2  · devi-gita
+
+### `Bfgu` — bhṛgu  (n=89)
+
+- Бхригу  · n=75  · mahabharata-adiparva, mahabharata-aranyakaparva, manavadharmashastra, mahabharata-shantiparva, mahabharata-udyogaparva, mahabharata-sabhaparva, rigveda, rigveda, mahabharata-bhishmaparva, bhagavadgita-burba, bhagavadgita-smirnov, bhagavadgita-sementsov, bhagavadgita-prabhupada, rigveda, mahabharata-shalyaparva, atharvaveda, atharvaveda, tai-up, ramayana-ayodhyakanda, mahabharata-dronaparva, rigveda, gitarthasamgraha-abhinavagupta, bhagavadgita-1914, bhagavadgity, bhagavadgita-erman, bhagavadgita-radha, mahabharata-ashvamedhikaparva, rigveda, mahabharata-virataparva, atharvaveda
+- потомков Бхригу  · n=3  · mahabharata-adiparva
+- потомки Бхригу  · n=2  · mahabharata-aranyakaparva, mahabharata-adiparva
+- Бригу  · n=2  · bhagavadgita-1788
+- потомка Бхригу  · n=1  · mahabharata-shantiparva
+- бхригуидам  · n=1  · mahabharata-adiparva
+- бхригуидов  · n=1  · mahabharata-adiparva
+- бхригу  · n=1  · rigveda
+- мудрость  · n=1  · bhagavadgita-1909
+- Брама  · n=1  · bhagavadgita-1909
+- Бхаргавы  · n=1  · mahabharata-ashvamedhikaparva
+
+### `Bfgu-pati` — bhṛgu-pati  (n=1)
+
+- повелителя Бхригу  · n=1  · gitagovinda
+
+### `BfguBAryA` — bhṛgubhāryā  (n=1)
+
+- супруга Бхригу  · n=1  · mahabharata-adiparva
+
+### `BfguBiH` — bhṛgubhiḥ  (n=1)
+
+- с Бхригу  · n=1  · atharvaveda
+
+### `BfguByaH` — bhṛgubhyaḥ  (n=1)
+
+- для Бхригу  · n=1  · rigveda
+
+### `BfguH` — bhṛguḥ  (n=11)
+
+- Бхригу  · n=11  · manavadharmashastra, ramayana-balakanda, mahabharata-adiparva, mahabharata-shantiparva, buddhacharita, ramanuja_gitabhashya, bhagavadgita-sharma, mahabharata-shalyaparva
+
+### `BfguRA` — bhṛguṇā  (n=2)
+
+- Бхригу  · n=2  · mahabharata-adiparva, mahabharata-shalyaparva
+
+### `BfguSApa` — bhṛguśāpa  (n=2)
+
+- проклятия Бхригу  · n=2  · devi-gita
+
+### `BfguSArdUla` — bhṛguśārdūla  (n=9)
+
+- тигр из рода Бхригу  · n=5  · mahabharata-adiparva, mahabharata-shantiparva, mahabharata-udyogaparva
+- Тигр среди потомков Бхригу  · n=2  · mahabharata-shantiparva
+- тигр [рода] Бхригу  · n=1  · mahabharata-shantiparva
+- тигр среди Бхригу  · n=1  · mahabharata-shantiparva
+
+### `BfguSArdUlam` — bhṛguśārdūlam  (n=1)
+
+- тигра из рода Бхригу  · n=1  · mahabharata-udyogaparva
+
+### `BfguSrezWa` — bhṛguśreṣṭha  (n=9)
+
+- лучший из рода Бхригу  · n=3  · mahabharata-aranyakaparva, mahabharata-adiparva, mahabharata-ashvamedhikaparva
+- лучший из Бхригу  · n=2  · mahabharata-shantiparva
+- первейший из рода Бхригу  · n=2  · mahabharata-udyogaparva
+- лучший среди потомков Бхригу  · n=1  · mahabharata-shantiparva
+- лучший [из рода] Бхригу  · n=1  · mahabharata-shantiparva
+
+### `BfguSrezWaH` — bhṛguśreṣṭhaḥ  (n=1)
+
+- лучший из Бхригу  · n=1  · mahabharata-shantiparva
+
+### `BfguSrezWapuraskftAH` — bhṛguśreṣṭhapuraskṛtāḥ  (n=1)
+
+- во главе с первейшим отпрыском рода Бхригу  · n=1  · mahabharata-udyogaparva
+
+### `Bfgukulodvaha` — bhṛgukulodvaha  (n=2)
+
+- продолжатель рода Бхригу  · n=2  · mahabharata-aranyakaparva, mahabharata-ashvamedhikaparva
+
+### `Bfgunandana` — bhṛgunandana  (n=21)
+
+- потомок Бхригу  · n=12  · mahabharata-adiparva, mahabharata-ashvamedhikaparva, mahabharata-aranyakaparva, mahabharata-karnaparva
+- о потомок Бхригу  · n=2  · mahabharata-adiparva
+- потомок рода Бхригу  · n=2  · mahabharata-udyogaparva
+- лучший среди рода Бхригу  · n=1  · mahabharata-adiparva
+- потомка Бхригу  · n=1  · mahabharata-udyogaparva
+- отпрыск рода Бхригу  · n=1  · mahabharata-udyogaparva
+- о отпрыск рода Бхригу  · n=1  · mahabharata-udyogaparva
+- радость Бхаргавов  · n=1  · mahabharata-karnaparva
+
+### `BfgunandanaH` — bhṛgunandanaḥ  (n=1)
+
+- потомок Бхригу  · n=1  · mahabharata-adiparva
+
+### `Bfgunandane` — bhṛgunandane  (n=1)
+
+- в потомка рода Бхригу  · n=1  · mahabharata-udyogaparva
+
+### `Bfgupati` — bhṛgupati  (n=1)
+
+- повелителя Бхригу  · n=1  · gitagovinda
+
+### `BfgupatiyaSovartma` — bhṛgupatiyaśovartma  (n=2)
+
+- сынъ Джамадагни  · n=1  · megha-duta
+- Сынъ Джамадагни  · n=1  · megha-duta
+
+### `BfgupatnI` — bhṛgupatnī  (n=3)
+
+- жену Бхригу  · n=2  · ramayana-balakanda
+- жены  · n=1  · mahabharata-adiparva
+
+### `BfguprasravaRe` — bhṛguprasravaṇe  (n=1)
+
+- Бхригупрасаване  · n=1  · ramayana-balakanda
+
+### `BfguproktaM` — bhṛguproktaṃ  (n=1)
+
+- объявленную Бхригу  · n=1  · manavadharmashastra
+
+### `Bfgusattama` — bhṛgusattama  (n=3)
+
+- лучший из потомков Бхригу  · n=1  · mahabharata-adiparva
+- наилучшем из рода Бхригу  · n=1  · mahabharata-adiparva
+- первейший из рода Бхригу  · n=1  · mahabharata-udyogaparva
+
+### `BfgutuNga` — bhṛgutuṅga  (n=10)
+
+- Бхригутунга  · n=7  · mahabharata-aranyakaparva, ramayana-balakanda, mahabharata-adiparva, mahabharata-sabhaparva
+- Бхригутунгу  · n=2  · mahabharata-aranyakaparva
+- Бхригутунге  · n=1  · mahabharata-aranyakaparva
+
+### `BfgutuNgaM` — bhṛgutuṅgaṃ  (n=1)
+
+- Бхригутунге  · n=1  · mahabharata-aranyakaparva
+
+### `BfgutuNge` — bhṛgutuṅge  (n=1)
+
+- на Бхригутунге  · n=1  · mahabharata-adiparva
+
+### `BfguvaMSa` — bhṛguvaṃśa  (n=4)
+
+- род Бхригу  · n=2  · mahabharata-adiparva
+- рода Бхригу  · n=1  · mahabharata-adiparva
+- роду Бхригу  · n=1  · mahabharata-adiparva
+
+### `BfguvaMSasya` — bhṛguvaṃśasya  (n=1)
+
+- рода Бхригу  · n=1  · mahabharata-adiparva
+
+### `Bfguvac` — bhṛguvac  (n=1)
+
+- подобно Бхригу  · n=1  · rigveda
+
+### `BfguveSman` — bhṛguveśman  (n=2)
+
+- доме некоего бхригуида  · n=1  · mahabharata-adiparva
+- доме потомка Бхригу  · n=1  · mahabharata-adiparva
+
+### `Bfguvistara` — bhṛguvistara  (n=1)
+
+- ведущие начало от Бхригу  · n=1  · mahabharata-adiparva
+
+### `BfhadAraRyakaUpanizad` — Bṛhadāraṇyaka Upaniṣad  (n=1)
+
+- Брихадараньяка-упанишада  · n=1  · nyaya-bhashya
+
+### `Bfjj` — bhṛjj  (n=1)
+
+- поджарит  · n=1  · rigveda
+
+### `BfjjakaRwaka` — bhṛjjakaṇṭaka  (n=1)
+
+- бхриджджакантака  · n=1  · manavadharmashastra
+
+### `BfkuwI` — bhṛkuṭī  (n=2)
+
+- брови  · n=2  · ramayana-ayodhyakanda, mahabharata-dronaparva
+
+### `BfkuwIH` — bhṛkuṭīḥ  (n=1)
+
+- брови  · n=1  · raghuvamsha
+
+### `BfkuwIkftalocana` — bhṛkuṭīkṛtalocana  (n=1)
+
+- грозно нахмуренным ликом  · n=1  · mahabharata-aranyakaparva
+
+### `BfkuwImuKa` — bhṛkuṭīmukha  (n=2)
+
+- хмурыми  · n=1  · buddhacharita
+- с лицом, искаженным изломом бровей  · n=1  · mahabharata-udyogaparva
+
+### `Bfkuwim` — bhṛkuṭim  (n=3)
+
+- брови  · n=3  · ramayana-ayodhyakanda, ramayana-aranyakanda, mahabharata-adiparva
+
+### `BfmAt` — bhṛmāt  (n=1)
+
+- по ошибке  · n=1  · rigveda
+
+### `BfmaM` — bhṛmaṃ  (n=2)
+
+- ошибку  · n=2  · rigveda
+
+### `Bfmala` — bhṛmala  (n=1)
+
+- оглушенный  · n=1  · atharvaveda
+
+### `BfmayaH` — bhṛmayaḥ  (n=1)
+
+- стремительными  · n=1  · rigveda
+
+### `Bfmi` — bhṛmi  (n=4)
+
+- трубу  · n=2  · rigveda
+- ревностный  · n=1  · rigveda
+- стремительный  · n=1  · rigveda
+
+### `BfmiH` — bhṛmiḥ  (n=1)
+
+- напролом  · n=1  · rigveda
+
+### `Bfmim` — bhṛmim  (n=1)
+
+- деятельного  · n=1  · rigveda
+
+### `Bfnga` — bhṛn̄ga-  (n=1)
+
+- порода больших горных пчел  · n=1  · atharvaveda
+
+### `Bft` — bhṛt  (n=5)
+
+- несет  · n=1  · bhagavadgita-sementsov
+- с ... в руках  · n=1  · mahabharata-karnaparva
+- имеющий  · n=1  · shatakatrayam-serebryakov
+- людские  · n=1  · shatakatrayam-serebryakov
+- подобен  · n=1  · amaru-shataka
+
+### `BftAHputrAScapautrAScatezAmapiviSezataH` — bhṛtāḥ putrāśca pautrāśca teṣāmapi viśeṣataḥ  (n=1)
+
+- в особенности же он поддерживал и содержал их сыновей и внуков  · n=1  · mahabharata-adiparva
+
+### `BftAhipARqunAmAtyA` — bhṛtā hi pāṇḍunāmātyā  (n=1)
+
+- Советники получали постоянную поддержку от Панду  · n=1  · mahabharata-adiparva
+
+### `BftAm` — bhṛtām  (n=1)
+
+- Лучшему  · n=1  · ramayana-aranyakanda
+
+### `BftAn` — bhṛtān  (n=1)
+
+- получающие плату  · n=1  · mahabharata-udyogaparva
+
+### `BftAnapyaBftAMstaTA` — bhṛtānapyabhṛtāṃstathā  (n=1)
+
+- наемные и союзные войска  · n=1  · mahabharata-udyogaparva
+
+### `Bfta` — bhṛta  (n=19)
+
+- имеющий  · n=3  · shatakatrayam, shatakatrayam-serebryakov
+- слуги  · n=2  · ramayana-ayodhyakanda, mahabharata-aranyakaparva
+- наемные  · n=2  · mahabharata-ashramavasikaparva
+- служит  · n=1  · ramayana-ayodhyakanda
+- наемный работник  · n=1  · manavadharmashastra
+- получающего плату  · n=1  · manavadharmashastra
+- наняты  · n=1  · mahabharata-dronaparva
+- сопутствуемые  · n=1  · mahabharata-karnaparva
+- содержались  · n=1  · mahabharata-shalyaparva
+- владеющие  · n=1  · mahabharata-virataparva
+- наполненные  · n=1  · shatakatrayam
+- насытившись  · n=1  · shatakatrayam
+- работающие  · n=1  · shatakatrayam-serebryakov
+- одетый  · n=1  · shatakatrayam-serebryakov
+- нагрузи  · n=1  · shukasaptati
+
+### `BftakADyApaka` — bhṛtakādhyāpaka  (n=1)
+
+- обучающего за плату  · n=1  · manavadharmashastra
+
+### `BftakADyApita` — bhṛtakādhyāpita  (n=1)
+
+- обучающегося у платного учителя  · n=1  · manavadharmashastra
+
+### `BftakAH` — bhṛtakāḥ  (n=1)
+
+- слугами  · n=1  · ramayana-ayodhyakanda
+
+### `Bftaka` — bhṛtaka  (n=4)
+
+- слуга  · n=2  · manavadharmashastra
+- нанятого  · n=1  · manavadharmashastra
+- слуге  · n=1  · mahabharata-aranyakaparva
+
+### `Bfti` — bhṛti  (n=8)
+
+- жалованье  · n=2  · manavadharmashastra
+- работа за плату  · n=1  · manavadharmashastra
+- службу  · n=1  · mahabharata-aranyakaparva
+- должность  · n=1  · mahabharata-aranyakaparva
+- подкрепление  · n=1  · rigveda
+- монет  · n=1  · mahabharata-sabhaparva
+- средств существования  · n=1  · mahabharata-virataparva
+
+### `Bftim` — bhṛtim  (n=2)
+
+- приношение  · n=2  · rigveda
+
+### `BftvA` — bhṛtvā  (n=1)
+
+- чтишь  · n=1  · ramayana-ayodhyakanda
+
+### `BftyA` — bhṛtyā  (n=2)
+
+- для питания  · n=1  · rigveda
+- слуги  · n=1  · mahabharata-udyogaparva
+
+### `BftyADyApana` — bhṛtyādhyāpana  (n=1)
+
+- обучение [Веде] за плату  · n=1  · manavadharmashastra
+
+### `BftyAH` — bhṛtyāḥ  (n=4)
+
+- слуги  · n=2  · ramayana-ayodhyakanda, mahabharata-aranyakaparva
+- слуг  · n=1  · ramayana-ayodhyakanda
+- слугами  · n=1  · mahabharata-sabhaparva
+
+### `BftyAm` — bhṛtyām  (n=2)
+
+- служить  · n=2  · rigveda, atharvaveda
+
+### `BftyAn` — bhṛtyān  (n=5)
+
+- слуг  · n=2  · ramayana-ayodhyakanda, ramayana-balakanda
+- о слугах  · n=1  · ramayana-ayodhyakanda
+- Слуг  · n=1  · mahabharata-aranyakaparva
+- приближенных  · n=1  · raghuvamsha
+
+### `BftyAnAm` — bhṛtyānām  (n=2)
+
+- тех, кого он обязан содержать  · n=1  · manavadharmashastra
+- не  · n=1  · manavadharmashastra
+
+### `Bftya` — bhṛtya  (n=64)
+
+- слуг  · n=13  · ramayana-ayodhyakanda, mahabharata-aranyakaparva, mahabharata-udyogaparva, mahabharata-adiparva, manavadharmashastra, mahabharata-dronaparva, mahabharata-shalyaparva, mahabharata-virataparva, mahabharata-ashramavasikaparva
+- слуги  · n=11  · mahabharata-adiparva, ramayana-ayodhyakanda, manavadharmashastra, ramayana-balakanda, mahabharata-aranyakaparva, buddhacharita, mahabharata-udyogaparva, mahabharata-shalyaparva, mahabharata-sabhaparva, mahabharata-ashramavasikaparva, mahabharata-mausalaparva
+- слугам  · n=8  · manavadharmashastra, ramayana-ayodhyakanda, ramayana-sundarakanda, mahabharata-aranyakaparva, kama-sutra, mahabharata-udyogaparva, mahabharata-striparva
+- слугами  · n=6  · manavadharmashastra, mahabharata-aranyakaparva, ramayana-balakanda, mahabharata-udyogaparva
+- слуга  · n=5  · mahabharata-udyogaparva, mahabharata-adiparva, manavadharmashastra, mahabharata-aranyakaparva
+- тех, кого он обязан содержать  · n=3  · manavadharmashastra
+- слугу  · n=1  · ramayana-ayodhyakanda
+- помощи  · n=1  · ramayana-ayodhyakanda
+- семью  · n=1  · ramayana-ayodhyakanda
+- Слуга  · n=1  · ramayana-ayodhyakanda
+- тем, кого он обязан содержать  · n=1  · manavadharmashastra
+- тех, которых они обязаны содержать  · n=1  · manavadharmashastra
+- прокормление  · n=1  · manavadharmashastra
+- работников  · n=1  · manavadharmashastra
+- воины  · n=1  · ramayana-balakanda
+- усопших предков  · n=1  · mahabharata-aranyakaparva
+- слугах  · n=1  · mahabharata-aranyakaparva
+- служитель, слуга  · n=1  · mahabharata-udyogaparva
+- прислужники  · n=1  · mahabharata-udyogaparva
+- приспешник  · n=1  · mahabharata-udyogaparva
+- приверженцев и слуг  · n=1  · mahabharata-shalyaparva
+- домочадцами  · n=1  · mahabharata-ashvamedhikaparva
+- свиты  · n=1  · mahabharata-ashvamedhikaparva
+- приближенные  · n=1  · mahabharata-ashramavasikaparva
+
+### `BftyaBAvi` — bhṛtyabhāvi  (n=1)
+
+- смиренным слугою  · n=1  · raghuvamsha
+
+### `BftyaM` — bhṛtyaṃ  (n=1)
+
+- слуга  · n=1  · ramayana-sundarakanda
+
+### `BftyaiH` — bhṛtyaiḥ  (n=1)
+
+- зависимыми людьми  · n=1  · kama-sutra
+
+### `Bftyajana` — bhṛtyajana  (n=4)
+
+- слуг  · n=3  · kama-sutra, mahabharata-dronaparva, mahabharata-ashramavasikaparva
+- челядь  · n=1  · manavadharmashastra
+
+### `Bftyam` — bhṛtyam  (n=1)
+
+- слугу  · n=1  · ramayana-ayodhyakanda
+
+### `Bftyavarga` — bhṛtyavarga  (n=3)
+
+- слуг  · n=1  · mahabharata-aranyakaparva
+- подчиненным, слугам  · n=1  · kama-sutra
+- прислуга  · n=1  · mahabharata-ashramavasikaparva
+
+### `Bftyavat` — bhṛtyavat  (n=1)
+
+- точно слуга  · n=1  · mahabharata-aranyakaparva
+
+### `Bftyavatsala` — bhṛtyavatsala  (n=1)
+
+- любящий своих слуг  · n=1  · ramayana-ayodhyakanda
+
+### `Bftyavfttaye` — bhṛtyavṛttaye  (n=1)
+
+- для содержания челяди  · n=1  · manavadharmashastra
+
+### `Bftye` — bhṛtye  (n=1)
+
+- слуге  · n=1  · mahabharata-aranyakaparva
+
+### `Bftyezu` — bhṛtyeṣu  (n=1)
+
+- слуг  · n=1  · manavadharmashastra
+
+### `BfzwamAMsopadaMSAni` — bhṛṣṭamāṃsopadaṃśāni  (n=1)
+
+- жареное мясо с приправами  · n=1  · kama-sutra
+
+### `BfzwamatsyAn` — bhṛṣṭamatsyān  (n=1)
+
+- жареных карпов  · n=1  · shukasaptati
+
+### `BfzwiH` — bhṛṣṭiḥ  (n=2)
+
+- вершина  · n=2  · rigveda
+
+### `BfzwimatA` — bhṛṣṭimatā  (n=1)
+
+- зазубренной  · n=1  · rigveda
+
+### `BhIzma` — Bhīṣma  (n=1)
+
+- Бишма  · n=1  · bhagavadgita-1909
+
+### `BhagavAn` — Bhagavān  (n=1)
+
+- Благословенный  · n=1  · yoga-sutry_vyasa-bhashya
+
+### `BhairavamudrA` — Bhairavamudrā  (n=1)
+
+- Бхайрава-мудра  · n=1  · pratyabhijna-hridaya_kshemaraja
+
+### `Bharata` — Bharata  (n=1)
+
+- Бхаратъ  · n=1  · bhagavadgita-1909
+
+### `Bhimasena` — Bhimasena  (n=1)
+
+- Бхимасена  · n=1  · mahabharata-karnaparva
+
+### `Bi` — bhi  (n=1)
+
+- перепугалось  · n=1  · atharvaveda
+
+### `BiBAjana` — bhibhājana  (n=1)
+
+- кувшинов и чаш  · n=1  · ramayana-ayodhyakanda
+
+### `BiDarma` — bhidharma  (n=1)
+
+- различные объекты  · n=1  · gitarthasamgraha-abhinavagupta
+
+### `BiRqipAla` — bhiṇḍipāla  (n=11)
+
+- копье  · n=2  · mahabharata-karnaparva
+- пращами  · n=1  · mahabharata-bhishmaparva
+- дротами  · n=1  · mahabharata-bhishmaparva
+- короткая стрела  · n=1  · mahabharata-bhishmaparva
+- короткие стрелы  · n=1  · mahabharata-dronaparva
+- короткие дротики  · n=1  · mahabharata-dronaparva
+- короткими дротиками  · n=1  · mahabharata-dronaparva
+- пращей  · n=1  · mahabharata-udyogaparva
+- праща  · n=1  · mahabharata-karnaparva
+- камнями из пращей  · n=1  · mahabharata-karnaparva
+
+### `BiRqipAlaiH` — bhiṇḍipālaiḥ  (n=3)
+
+- короткими дротиками  · n=1  · mahabharata-dronaparva
+- бхиндипалами  · n=1  · mahabharata-karnaparva
+- дротиками  · n=1  · mahabharata-shalyaparva
+
+### `BiRqipAlaparaSvaDa` — bhiṇḍipālaparaśvadha  (n=1)
+
+- пращами и бердышами  · n=1  · mahabharata-bhishmaparva
+
+### `Bid` — bhid  (n=30)
+
+- разбил  · n=2  · rigveda, rigveda
+- пронзил  · n=2  · mahabharata-dronaparva, mahabharata-shalyaparva
+- избавившись  · n=2  · devi-gita
+- разорву  · n=1  · ramayana-ayodhyakanda
+- разрушу  · n=1  · ramayana-ayodhyakanda
+- рушат  · n=1  · ramayana-sundarakanda
+- раскалывающий  · n=1  · ramayana-sundarakanda
+- разрушать  · n=1  · manavadharmashastra
+- мешает  · n=1  · manavadharmashastra
+- влетев  · n=1  · ramayana-aranyakanda
+- сквозь  · n=1  · ramayana-aranyakanda
+- начали рыть  · n=1  · ramayana-balakanda
+- разрубил  · n=1  · rigveda
+- раскололи  · n=1  · rigveda
+- расщелины  · n=1  · rigveda
+- расколол  · n=1  · rigveda
+- выйдя  · n=1  · mahabharata-adiparva
+- искромсав  · n=1  · mahabharata-dronaparva
+- прорвавшись  · n=1  · mahabharata-dronaparva
+- разрушить  · n=1  · mahabharata-dronaparva
+- разбивают  · n=1  · rigveda
+- пробить  · n=1  · mahabharata-shalyaparva
+- раздавит  · n=1  · atharvaveda
+- разбиваю  · n=1  · atharvaveda
+- расколовшейся  · n=1  · yoga-sutry_vyasa-bhashya
+- разрушает  · n=1  · yoga-sutry_vyasa-bhashya
+- раскрывается  · n=1  · yotat-up
+
+### `BidantaH` — bhidantaḥ  (n=2)
+
+- взорвали  · n=1  · rigveda
+- раскалывая  · n=1  · rigveda
+
+### `Bideyam` — bhideyam  (n=1)
+
+- пробиваться  · n=1  · atharvaveda
+
+### `BidyamAnA` — bhidyamānā  (n=1)
+
+- теснимое  · n=1  · mahabharata-dronaparva
+
+### `BidyamAnAH` — bhidyamānāḥ  (n=1)
+
+- отделившись  · n=1  · mahabharata-adiparva
+
+### `BidyamAna` — bhidyamāna  (n=11)
+
+- пронзаемый  · n=2  · mahabharata-bhishmaparva, mahabharata-dronaparva
+- Кипящего  · n=1  · ramayana-balakanda
+- расколотая  · n=1  · ramayana-balakanda
+- истерзанной  · n=1  · ramayana-balakanda
+- разрезал  · n=1  · ramayana-balakanda
+- раскалываемой  · n=1  · mahabharata-dronaparva
+- уязвляемый  · n=1  · mahabharata-dronaparva
+- разобщены  · n=1  · mahabharata-udyogaparva
+- различается  · n=1  · nyaya-bhashya
+- разрушаются  · n=1  · brb-up
+
+### `BidyamAnezu` — bhidyamāneṣu  (n=1)
+
+- поражен  · n=1  · mahabharata-bhishmaparva
+
+### `Bidyante` — bhidyante  (n=2)
+
+- разъединяются  · n=1  · manavadharmashastra
+- знают разлада  · n=1  · mahabharata-adiparva
+
+### `BidyatAm` — bhidyatām  (n=1)
+
+- раскалывающихся  · n=1  · mahabharata-dronaparva
+
+### `Bidyate` — bhidyate  (n=16)
+
+- разделяется  · n=2  · gitarthasamgraha-abhinavagupta
+- отлична  · n=2  · nyaya-bhashya, yoga-sutry_vyasa-bhashya
+- Разрубается  · n=2  · mun-up
+- раскололось  · n=1  · ramayana-ayodhyakanda
+- разорвалось  · n=1  · ramayana-ayodhyakanda
+- сломлен  · n=1  · mahabharata-bhishmaparva
+- прорвал  · n=1  · mahabharata-bhishmaparva
+- меняется  · n=1  · nyaya-bhashya
+- отличного  · n=1  · devi-gita
+- разрубается  · n=1  · devi-gita
+- распределяется  · n=1  · sankhya-karika
+- отличается  · n=1  · vedartha-samgraha_ramanuja
+- разрушается  · n=1  · atma-up
+
+### `Bidyeran` — bhidyeran  (n=2)
+
+- были бы сокрушены  · n=1  · manavadharmashastra
+- разорваться  · n=1  · ramayana-balakanda
+
+### `Bidyete` — bhidyete  (n=1)
+
+- пропадают  · n=1  · pr-up
+
+### `Bikz` — bhikṣ  (n=1)
+
+- попросив милостыни  · n=1  · kau-up
+
+### `BikzA` — bhikṣā  (n=25)
+
+- милостыня  · n=7  · manavadharmashastra, sankhya-karika, mahabharata-adiparva, shatakatrayam-serebryakov
+- милостыню  · n=6  · manavadharmashastra, buddhacharita, gitarthasamgraha-abhinavagupta, mahabharata-ashvamedhikaparva, atharvaveda
+- подаяние  · n=5  · mahabharata-aranyakaparva, manavadharmashastra, mahabharata-adiparva, buddhacharita
+- пищи  · n=2  · ch-up
+- дар  · n=1  · mahabharata-aranyakaparva
+- подаяньем  · n=1  · shatakatrayam
+- даянья  · n=1  · shatakatrayam
+- подаянием  · n=1  · shukasaptati
+- милости  · n=1  · mahabharata-ashramavasikaparva
+
+### `BikzABuj` — bhikṣābhuj  (n=5)
+
+- живущие подаянием  · n=1  · mahabharata-adiparva
+- питающийся подаянием  · n=1  · mahabharata-adiparva
+- питающихся подаянием  · n=1  · mahabharata-adiparva
+- питающиеся подаянием  · n=1  · mahabharata-adiparva
+- живет подаянием  · n=1  · mahabharata-aranyakaparva
+
+### `BikzABujAm` — bhikṣābhujām  (n=1)
+
+- питающихся подаянием  · n=1  · mahabharata-adiparva
+
+### `BikzABujaH` — bhikṣābhujaḥ  (n=1)
+
+- живущие подаянием  · n=1  · mahabharata-aranyakaparva
+
+### `BikzADArapAtra` — bhikṣādhārapātra  (n=1)
+
+- чаши для хранения подаяний  · n=1  · jabala-up
+
+### `BikzAM` — bhikṣāṃ  (n=2)
+
+- милость  · n=2  · mahabharata-udyogaparva
+
+### `BikzASI` — bhikṣāśī  (n=3)
+
+- Подаянием только сыт  · n=1  · shatakatrayam
+- подаянием  · n=1  · shatakatrayam
+- Питающийся подаянием  · n=1  · shatakatrayam-serebryakov
+
+### `BikzASana` — bhikṣāśana  (n=1)
+
+- подачкою пресной  · n=1  · shatakatrayam
+
+### `BikzASanaM` — bhikṣāśanaṃ  (n=1)
+
+- пища  · n=1  · shatakatrayam-serebryakov
+
+### `BikzASramakAma` — bhikṣāśramakāma  (n=1)
+
+- возлюбивший обители праведных  · n=1  · buddhacharita
+
+### `BikzAbalipariSrAnta` — bhikṣābalipariśrānta  (n=1)
+
+- истощившись [сбором] милостыни и [приношением] бали  · n=1  · manavadharmashastra
+
+### `BikzAcaraRa` — bhikṣācaraṇa  (n=1)
+
+- просящего милостыню  · n=1  · ramayana-ayodhyakanda
+
+### `BikzAcarya` — bhikṣācarya  (n=2)
+
+- жизнь отшельников  · n=1  · nyaya-bhashya
+- жизнь нищенствующих монахов  · n=1  · br-up
+
+### `BikzAhAra` — bhikṣāhāra  (n=1)
+
+- подаянием жить  · n=1  · shatakatrayam
+
+### `BikzAhAram` — bhikṣāhāram  (n=1)
+
+- Питание милостыней  · n=1  · shatakatrayam-serebryakov
+
+### `BikzAm` — bhikṣām  (n=8)
+
+- милостыню  · n=3  · manavadharmashastra
+- как милостыню  · n=1  · mahabharata-adiparva
+- дары  · n=1  · mahabharata-aranyakaparva
+- милостыни  · n=1  · mahabharata-shalyaparva
+- подаянием  · n=1  · shatakatrayam-serebryakov
+- за милостыней  · n=1  · mahabharata-ashramavasikaparva
+
+### `BikzAmaH` — bhikṣāmaḥ  (n=1)
+
+- будем просить  · n=1  · mahabharata-adiparva
+
+### `BikzArTa` — bhikṣārtha  (n=1)
+
+- милостыни  · n=1  · mahabharata-adiparva
+
+### `BikzArTam` — bhikṣārtham  (n=3)
+
+- собирая милостыню  · n=1  · mahabharata-aranyakaparva
+- с просьбой  · n=1  · mahabharata-aranyakaparva
+- за милостью  · n=1  · mahabharata-udyogaparva
+
+### `BikzArTin` — bhikṣārthin  (n=1)
+
+- собирая милостыню  · n=1  · manavadharmashastra
+
+### `BikzAsaktu` — bhikṣāsaktu  (n=1)
+
+- милостыней  · n=1  · shatakatrayam-serebryakov
+
+### `BikzAsaktuBiH` — bhikṣāsaktubhiḥ  (n=1)
+
+- подаянием  · n=1  · shatakatrayam
+
+### `BikzAwana` — bhikṣāṭana  (n=3)
+
+- собери милостыню  · n=1  · gitarthasamgraha-abhinavagupta
+- сложить  · n=1  · shatakatrayam
+- нищенство  · n=1  · shatakatrayam-serebryakov
+
+### `BikzamARA` — bhikṣamāṇā  (n=1)
+
+- Прося  · n=1  · rigveda
+
+### `BikzamARAH` — bhikṣamāṇāḥ  (n=8)
+
+- Испрашивая  · n=4  · rigveda
+- Стремясь  · n=2  · rigveda
+- прося  · n=1  · rigveda
+- ищущие  · n=1  · rigveda
+
+### `BikzamARAya` — bhikṣamāṇāya  (n=1)
+
+- просящему милостыню  · n=1  · mahabharata-adiparva
+
+### `BikzamARa` — bhikṣamāṇa  (n=3)
+
+- нищим  · n=1  · ramayana-ayodhyakanda
+- умоляющим  · n=1  · mahabharata-aranyakaparva
+- стремясь  · n=1  · rigveda
+
+### `BikzamARaH` — bhikṣamāṇaḥ  (n=1)
+
+- прося  · n=1  · rigveda
+
+### `BikzamARe` — bhikṣamāṇe  (n=1)
+
+- прося  · n=1  · rigveda
+
+### `Bikzanta` — bhikṣanta  (n=1)
+
+- Просят  · n=1  · rigveda
+
+### `Bikzasva` — bhikṣasva  (n=1)
+
+- попроси  · n=1  · mahabharata-adiparva
+
+### `Bikzate` — bhikṣate  (n=1)
+
+- взывает  · n=1  · rigveda
+
+### `BikzavaH` — bhikṣavaḥ  (n=1)
+
+- монахов  · n=1  · buddhacharita
+
+### `Bikzave` — bhikṣave  (n=1)
+
+- нищему  · n=1  · manavadharmashastra
+
+### `BikzayA` — bhikṣayā  (n=2)
+
+- милостыню  · n=2  · ch-up
+
+### `Bikze` — bhikṣe  (n=4)
+
+- прошу  · n=3  · mahabharata-adiparva, mahabharata-ashvamedhikaparva, rigveda
+- испрашиваю  · n=1  · rigveda
+
+### `Bikzeta` — bhikṣeta  (n=7)
+
+- пусть испрашивает  · n=2  · rigveda
+- следует просить  · n=1  · manavadharmashastra
+- просить милостыни  · n=1  · manavadharmashastra
+- просить  · n=1  · manavadharmashastra
+- стремится приобщиться  · n=1  · rigveda
+- пусть попросит  · n=1  · rigveda
+
+### `BikziRyAH` — bhikṣiṇyāḥ  (n=2)
+
+- Отшельницы  · n=2  · ramayana-ayodhyakanda
+
+### `Bikzita` — bhikṣita  (n=1)
+
+- просит  · n=1  · mahabharata-aranyakaparva
+
+### `Bikzite` — bhikṣite  (n=2)
+
+- испрашиваю  · n=1  · mahabharata-adiparva
+- выпрошенные  · n=1  · mahabharata-adiparva
+
+### `Bikzitu` — bhikṣitu  (n=3)
+
+- просить в дар  · n=2  · mahabharata-ashvamedhikaparva
+- просить милостыню  · n=1  · mahabharata-ashvamedhikaparva
+
+### `Bikzitum` — bhikṣitum  (n=4)
+
+- просить  · n=2  · mahabharata-aranyakaparva
+- попросить  · n=1  · mahabharata-aranyakaparva
+- просьбой  · n=1  · mahabharata-aranyakaparva
+
+### `BikzitvA` — bhikṣitvā  (n=6)
+
+- выпросив  · n=3  · manavadharmashastra
+- попросил  · n=2  · ramayana-balakanda
+- попросив милостыни  · n=1  · kau-up
+
+### `Bikzizye` — bhikṣiṣye  (n=1)
+
+- попрошу  · n=1  · mahabharata-shalyaparva
+
+### `Bikzu` — bhikṣu  (n=16)
+
+- нищий  · n=2  · mahabharata-adiparva
+- монахов  · n=2  · buddhacharita, mahabharata-udyogaparva
+- нищенствующий монах  · n=2  · mahabharata-shalyaparva
+- странствующего монаха  · n=1  · ramayana-aranyakanda
+- нищенствующие  · n=1  · mahabharata-aranyakaparva
+- просителю  · n=1  · mahabharata-aranyakaparva
+- просящий подаяние  · n=1  · mahabharata-adiparva
+- инок  · n=1  · buddhacharita
+- монахи  · n=1  · buddhacharita
+- нищие  · n=1  · mahabharata-udyogaparva
+- нищенства  · n=1  · mahabharata-udyogaparva
+- нищенствующего монаха  · n=1  · mahabharata-shalyaparva
+- просители  · n=1  · mahabharata-ashvamedhikaparva
+
+### `BikzukI` — bhikṣukī  (n=6)
+
+- нищенка  · n=2  · kama-sutra
+- нищенки  · n=1  · kama-sutra
+- нищенствующая монахиня  · n=1  · kama-sutra
+- нищенствующими странницами  · n=1  · kama-sutra
+- нищенствующими  · n=1  · kama-sutra
+
+### `BikzukIBavana` — bhikṣukībhavana  (n=1)
+
+- жилище нищенствующей монахини  · n=1  · kama-sutra
+
+### `BikzukIkzapaRikAtApasI` — bhikṣukīkṣapaṇikātāpasī  (n=1)
+
+- нищенки  · n=1  · kama-sutra
+
+### `Bikzuka` — bhikṣuka  (n=9)
+
+- нищие  · n=4  · kama-sutra, manavadharmashastra
+- просящим милостыню  · n=1  · ramayana-ayodhyakanda
+- нищенствующего отшельника  · n=1  · manavadharmashastra
+- нищий  · n=1  · manavadharmashastra
+- нищенствующий монах  · n=1  · mahabharata-shalyaparva
+- тот, кто нищенствует  · n=1  · mahabharata-ashvamedhikaparva
+
+### `Bikzukau` — bhikṣukau  (n=2)
+
+- нищие  · n=1  · mahabharata-udyogaparva
+- нищими  · n=1  · mahabharata-sauptikaparva
+
+### `Bikzuki` — bhikṣuki  (n=1)
+
+- нищенка  · n=1  · mahabharata-adiparva
+
+### `BikzurUpa` — bhikṣurūpa  (n=1)
+
+- в облике нищенствующего монаха  · n=1  · mahabharata-shalyaparva
+
+### `Bikzuvarya` — bhikṣuvarya  (n=1)
+
+- лучший среди монахов  · n=1  · buddhacharita
+
+### `Bikzuveza` — bhikṣuveṣa  (n=2)
+
+- в монашеском одеянии  · n=1  · buddhacharita
+- одеянье отшельника  · n=1  · buddhacharita
+
+### `BikzuvezaM` — bhikṣuveṣaṃ  (n=1)
+
+- одетый в платье монаха  · n=1  · buddhacharita
+
+### `Bikzuzu` — bhikṣuṣu  (n=1)
+
+- нищенствуют  · n=1  · mahabharata-ashvamedhikaparva
+
+### `Bima` — bhima  (n=1)
+
+- Бхима  · n=1  · mahabharata-udyogaparva
+
+### `Bimasena` — bhimasena  (n=2)
+
+- Бхимасеной  · n=1  · mahabharata-dronaparva
+- Бхима  · n=1  · mahabharata-ashramavasikaparva
+
+### `BimasenaH` — bhimasenaḥ  (n=1)
+
+- Бхимасена  · n=1  · mahabharata-bhishmaparva
+
+### `Bimasenam` — bhimasenam  (n=1)
+
+- Бхимасене  · n=1  · mahabharata-udyogaparva
+
+### `Bimasya` — bhimasya  (n=2)
+
+- Бхиму  · n=1  · mahabharata-bhishmaparva
+- Бхимы  · n=1  · mahabharata-udyogaparva
+
+### `BinAdmi` — bhinādmi  (n=1)
+
+- прокалываю  · n=1  · atharvaveda
+
+### `BinDI` — bhindhī  (n=1)
+
+- раздробить  · n=1  · mahabharata-shalyaparva
+
+### `BinDIti` — bhindhīti  (n=1)
+
+- Нарушь  · n=1  · mahabharata-aranyakaparva
+
+### `BinDi` — bhindhi  (n=10)
+
+- разорви  · n=2  · rigveda, atharvaveda
+- Разбей  · n=2  · rigveda
+- прорви  · n=2  · mahabharata-dronaparva
+- Проломи  · n=1  · rigveda
+- пробей  · n=1  · mahabharata-udyogaparva
+- руби  · n=1  · mahabharata-ashvamedhikaparva
+- пронзи  · n=1  · mahabharata-virataparva
+
+### `Binad` — bhinad  (n=4)
+
+- Расколи  · n=1  · rigveda
+- расколол  · n=1  · rigveda
+- расколешь  · n=1  · rigveda
+- проломил  · n=1  · rigveda
+
+### `Binadad` — bhinadad  (n=1)
+
+- пусть проявится  · n=1  · rigveda
+
+### `Binadmi` — bhinadmi  (n=10)
+
+- разбиваю  · n=2  · rigveda, atharvaveda
+- пробиваю  · n=1  · atharvaveda
+- рассекаю  · n=1  · atharvaveda
+- разрываю  · n=1  · atharvaveda
+- сокрушу  · n=1  · mahabharata-dronaparva
+- нарушу  · n=1  · buddhacharita
+- раздроблю  · n=1  · mahabharata-shalyaparva
+- дроблю  · n=1  · atharvaveda
+- раскалываю  · n=1  · atharvaveda
+
+### `Binat` — bhinat  (n=10)
+
+- расколол  · n=2  · rigveda, rigveda
+- разбил  · n=2  · rigveda
+- проломил  · n=2  · rigveda
+- пробил  · n=2  · rigveda
+- Проломил  · n=1  · rigveda
+- проломит  · n=1  · rigveda
+
+### `Binatsi` — bhinatsi  (n=1)
+
+- раскалываешь  · n=1  · rigveda
+
+### `Binatti` — bhinatti  (n=5)
+
+- разъединяет  · n=1  · manavadharmashastra
+- нарушает  · n=1  · nyaya-bhashya
+- разрывает  · n=1  · mahabharata-ashvamedhikaparva
+- пронзает  · n=1  · amaru-shataka
+- прорывает  · n=1  · mai-up
+
+### `Bind` — bhind  (n=2)
+
+- нарушают  · n=1  · manavadharmashastra
+- разбивают  · n=1  · atharvaveda
+
+### `BindAnA` — bhindānā  (n=2)
+
+- ломая  · n=2  · rigveda
+
+### `BindDIti` — bhinddhīti  (n=2)
+
+- разломи  · n=1  · ch-up
+- разломай  · n=1  · ch-up
+
+### `BindDi` — bhinddhi  (n=5)
+
+- Расколи  · n=3  · atharvaveda
+- расколи  · n=2  · atharvaveda, atharvaveda
+
+### `Bindan` — bhindan  (n=4)
+
+- разрывая  · n=1  · ramayana-aranyakanda
+- раскалывая  · n=1  · rigveda
+- Ломающий  · n=1  · rigveda
+- рассекая  · n=1  · raghuvamsha
+
+### `Bindant` — bhindant  (n=1)
+
+- раскалывая  · n=1  · atharvaveda
+
+### `BindantaH` — bhindantaḥ  (n=4)
+
+- Раскалывая  · n=2  · rigveda, atharvaveda
+- проникая  · n=1  · mahabharata-dronaparva
+- Разбивая  · n=1  · rigveda
+
+### `Bindanti` — bhindanti  (n=3)
+
+- отдаляют  · n=1  · mahabharata-aranyakaparva
+- шествует  · n=1  · kumarasambhava
+- уничтожают  · n=1  · atharvaveda
+
+### `Bindat` — bhindat  (n=3)
+
+- раскалывающий  · n=1  · ramayana-sundarakanda
+- рубил  · n=1  · mahabharata-aranyakaparva
+- Разбивающий  · n=1  · atharvaveda
+
+### `BindatAm` — bhindatām  (n=1)
+
+- жаждавших пронзить  · n=1  · mahabharata-shalyaparva
+
+### `Bindata` — bhindata  (n=2)
+
+- раздроблять  · n=1  · mahabharata-udyogaparva
+- проходит  · n=1  · mai-up
+
+### `Bindur` — bhindur  (n=1)
+
+- Проламывающий  · n=1  · rigveda
+
+### `BindyAM` — bhindyāṃ  (n=1)
+
+- разбить  · n=1  · mahabharata-udyogaparva
+
+### `BindyAm` — bhindyām  (n=1)
+
+- раздробит  · n=1  · mahabharata-sabhaparva
+
+### `BindyAt` — bhindyāt  (n=7)
+
+- испортит  · n=1  · manavadharmashastra
+- могут прорвать  · n=1  · mahabharata-dronaparva
+- прорвать  · n=1  · mahabharata-dronaparva
+- расколоть  · n=1  · mahabharata-udyogaparva
+- смущают  · n=1  · gitarthasamgraha-abhinavagupta
+- разрушил  · n=1  · mahabharata-sabhaparva
+- раскалывать  · n=1  · atharvaveda
+
+### `BinnA` — bhinnā  (n=20)
+
+- разделенная  · n=4  · mahabharata-bhishmaparva, bhagavadgita-burba, raghuvamsha, vedartha-samgraha_ramanuja
+- разделена  · n=2  · devi-gita
+- разбитая  · n=1  · ramayana-sundarakanda
+- разбивается  · n=1  · mahabharata-dronaparva
+- разбитой  · n=1  · mahabharata-dronaparva
+- поделенная  · n=1  · gitarthasamgraha-abhinavagupta
+- расчлененная  · n=1  · ramanuja_gitabhashya
+- разделение  · n=1  · bhagavadgita-1914
+- разделённая  · n=1  · bhagavadgity
+- проявляюся  · n=1  · bhagavadgita-1909
+- разломлено  · n=1  · ch-up
+- разваливающейся  · n=1  · mahabharata-karnaparva
+- прохудившаяся  · n=1  · mahabharata-karnaparva
+- различные  · n=1  · nyaya-bhashya
+- разносимое  · n=1  · raghuvamsha
+- разделенных  · n=1  · vedartha-samgraha_ramanuja
+
+### `BinnAH` — bhinnāḥ  (n=1)
+
+- разделившись  · n=1  · mahabharata-karnaparva
+
+### `BinnAYjanacayopama` — bhinnāñjanacayopama  (n=2)
+
+- подобный груде раздробленной сурьмы  · n=1  · mahabharata-dronaparva
+- подобный массе растертой глазной мази  · n=1  · mahabharata-dronaparva
+
+### `BinnAYjanacayopamaH` — bhinnāñjanacayopamaḥ  (n=1)
+
+- подобно массе растертой глазной мази  · n=1  · mahabharata-dronaparva
+
+### `BinnAjYAnagranTi` — bhinnājñānagranthi  (n=1)
+
+- разорвана связь с неведением  · n=1  · paramarthasara-abhinavagupta
+
+### `BinnAm` — bhinnām  (n=1)
+
+- расколотую  · n=1  · atharvaveda
+
+### `BinnAn` — bhinnān  (n=2)
+
+- разбитые  · n=1  · mahabharata-dronaparva
+- разделенных  · n=1  · mahabharata-shalyaparva
+
+### `BinnAnAm` — bhinnānām  (n=1)
+
+- изрубленных  · n=1  · mahabharata-shalyaparva
+
+### `BinnArTa` — bhinnārtha  (n=1)
+
+- разные объекты  · n=1  · nyaya-bhashya
+
+### `BinnArTagrAhaka` — bhinnārthagrāhaka  (n=2)
+
+- воспринимают различные объекты  · n=2  · sankhya-karika
+
+### `BinnAyAm` — bhinnāyām  (n=1)
+
+- разбитом  · n=1  · mahabharata-shalyaparva
+
+### `Binna` — bhinna  (n=69)
+
+- в раздоре  · n=2  · mahabharata-adiparva, mahabharata-udyogaparva
+- отличается  · n=2  · kama-sutra, vedartha-samgraha_ramanuja
+- дурного  · n=2  · mahabharata-dronaparva
+- различны  · n=2  · buddhacharita, paramarthasara-abhinavagupta
+- разбитый  · n=2  · nyaya-bhashya, shatakatrayam-serebryakov
+- дробь  · n=2  · vedanga_jyotisha
+- размывают  · n=1  · ramayana-ayodhyakanda
+- уничтоженными  · n=1  · ramayana-sundarakanda
+- поломанный  · n=1  · ramayana-sundarakanda
+- разломанный  · n=1  · manavadharmashastra
+- разбитая  · n=1  · ramayana-aranyakanda
+- Попадали  · n=1  · ramayana-aranyakanda
+- раненных  · n=1  · ramayana-aranyakanda
+- разорванных  · n=1  · ramayana-aranyakanda
+- расщепленными  · n=1  · ramayana-aranyakanda
+- разорванной  · n=1  · ramayana-aranyakanda
+- расщепленная  · n=1  · ramayana-aranyakanda
+- разделяется  · n=1  · mahabharata-aranyakaparva
+- преступали  · n=1  · mahabharata-aranyakaparva
+- раскололо  · n=1  · mahabharata-aranyakaparva
+- раскрошенный  · n=1  · rigveda
+- разламываемые  · n=1  · mahabharata-bhishmaparva
+- иссеченный  · n=1  · mahabharata-bhishmaparva
+- пробили  · n=1  · mahabharata-bhishmaparva
+- погруженную  · n=1  · mahabharata-dronaparva
+- прорванный  · n=1  · mahabharata-dronaparva
+- рассеченных  · n=1  · mahabharata-dronaparva
+- разделенные  · n=1  · mahabharata-dronaparva
+- иссеченными  · n=1  · mahabharata-dronaparva
+- пронзенных  · n=1  · mahabharata-dronaparva
+- израненными  · n=1  · mahabharata-dronaparva
+- срублены  · n=1  · mahabharata-dronaparva
+- истерзаны  · n=1  · mahabharata-dronaparva
+- вырвана  · n=1  · buddhacharita
+- иные  · n=1  · buddhacharita
+- разъединены  · n=1  · mahabharata-udyogaparva
+- разбитую  · n=1  · mahabharata-udyogaparva
+- рассеченными  · n=1  · mahabharata-udyogaparva
+- разлада  · n=1  · mahabharata-udyogaparva
+- разобщены  · n=1  · mahabharata-udyogaparva
+- отличных  · n=1  · gitarthasamgraha-abhinavagupta
+- разломан  · n=1  · ch-up
+- размозжены  · n=1  · mahabharata-karnaparva
+- сраженных  · n=1  · mahabharata-karnaparva
+- изломанные  · n=1  · mahabharata-karnaparva
+- вырывающейся из берегов  · n=1  · mahabharata-karnaparva
+- раскрытый  · n=1  · kumarasambhava
+- распущенный  · n=1  · kumarasambhava
+- различаются  · n=1  · nyaya-bhashya
+- разрушения  · n=1  · nyaya-bhashya
+- в разладе  · n=1  · mahabharata-sabhaparva
+- расщепленный  · n=1  · br-up
+- застыла  · n=1  · raghuvamsha
+- пронзенным  · n=1  · raghuvamsha
+- разная  · n=1  · shatakatrayam
+- нарушится  · n=1  · shatakatrayam
+- разбитого  · n=1  · shatakatrayam
+- сломленной  · n=1  · gitagovinda
+- разнообразное  · n=1  · vedartha-samgraha_ramanuja
+- различное  · n=1  · vedartha-samgraha_ramanuja
+- разделенности  · n=1  · vedartha-samgraha_ramanuja
+- различие  · n=1  · vedartha-samgraha_ramanuja
+- отличны  · n=1  · pratyabhijna-hridaya_kshemaraja
+
+### `BinnaBARqa` — bhinnabhāṇḍa  (n=1)
+
+- упряжь (на животных) была разорвана  · n=1  · mahabharata-dronaparva
+
+### `BinnaBARqe` — bhinnabhāṇḍe  (n=1)
+
+- разбитого сосуда  · n=1  · manavadharmashastra
+
+### `BinnaBARqezu` — bhinnabhāṇḍeṣu  (n=1)
+
+- в разбитой посуде  · n=1  · manavadharmashastra
+
+### `BinnaBAjane` — bhinnabhājane  (n=1)
+
+- в разбитой посуде  · n=1  · manavadharmashastra
+
+### `BinnaBujAntaraH` — bhinnabhujāntaraḥ  (n=1)
+
+- чья грудь была изранена  · n=1  · ramayana-sundarakanda
+
+### `BinnaGawa` — bhinnaghaṭa  (n=1)
+
+- разбитого горшка  · n=1  · shatakatrayam-serebryakov
+
+### `BinnaH` — bhinnaḥ  (n=2)
+
+- расщепленный  · n=1  · br-up
+- восьмеро  · n=1  · raghuvamsha
+
+### `BinnaM` — bhinnaṃ  (n=1)
+
+- прорван  · n=1  · mahabharata-dronaparva
+
+### `BinnaSfNgAkziKuraiH` — bhinnaśṛṅgākṣikhuraiḥ  (n=1)
+
+- имеющих поврежденные рога, глаза, копыта  · n=1  · manavadharmashastra
+
+### `BinnaSruti` — bhinnaśruti  (n=1)
+
+- разновоспринимаемые  · n=1  · nyaya-bhashya
+
+### `Binnadeha` — bhinnadeha  (n=1)
+
+- искалеченные тела  · n=1  · mahabharata-dronaparva
+
+### `BinnadehaH` — bhinnadehaḥ  (n=1)
+
+- с пронзенным телом  · n=1  · mahabharata-dronaparva
+
+### `BinnagAtravarAH` — bhinnagātravarāḥ  (n=1)
+
+- с разбитыми головами  · n=1  · mahabharata-karnaparva
+
+### `Binnahfdaya` — bhinnahṛdaya  (n=3)
+
+- с пробитым сердцем  · n=1  · mahabharata-aranyakaparva
+- с грудью, пронзенной  · n=1  · mahabharata-dronaparva
+- с грудью, насквозь пронзенной  · n=1  · mahabharata-dronaparva
+
+### `BinnahfdayaH` — bhinnahṛdayaḥ  (n=2)
+
+- с пробитым сердцем  · n=1  · mahabharata-aranyakaparva
+- с растерзанным сердцем  · n=1  · mahabharata-dronaparva
+
+### `BinnaiH` — bhinnaiḥ  (n=3)
+
+- разбиты  · n=1  · ramayana-ayodhyakanda
+- отколовшимися  · n=1  · mahabharata-aranyakaparva
+- стерты  · n=1  · mahabharata-aranyakaparva
+
+### `BinnajAnvasTimastakAH` — bhinnajānvasthimastakāḥ  (n=1)
+
+- с раздробленными костями, черепами и коленями  · n=1  · mahabharata-aranyakaparva
+
+### `BinnajAtIya` — bhinnajātīya  (n=2)
+
+- разнородных  · n=1  · nyaya-bhashya
+- различных классов  · n=1  · yoga-sutry_vyasa-bhashya
+
+### `BinnakaraRa` — bhinnakaraṇa  (n=2)
+
+- различных усилиях  · n=1  · nyaya-bhashya
+- различиях в усилиях  · n=1  · nyaya-bhashya
+
+### `Binnakarawa` — bhinnakaraṭa  (n=1)
+
+- с потрескавшимися от течки висками  · n=1  · mahabharata-aranyakaparva
+
+### `Binnakavaca` — bhinnakavaca  (n=1)
+
+- с панцирем, насквозь пронзенным  · n=1  · mahabharata-dronaparva
+
+### `Binnakawa` — bhinnakaṭa  (n=1)
+
+- с лопнувшими висками  · n=1  · mahabharata-karnaparva
+
+### `BinnakawaiH` — bhinnakaṭaiḥ  (n=1)
+
+- источающими мускус из висков  · n=1  · raghuvamsha
+
+### `BinnakumBAH` — bhinnakumbhāḥ  (n=1)
+
+- с рассеченными лбами  · n=1  · mahabharata-karnaparva
+
+### `BinnakumBa` — bhinnakumbha  (n=2)
+
+- с рассеченными лобными выпуклостями  · n=1  · mahabharata-shalyaparva
+- с разбитыми лобными выпуклостями  · n=1  · mahabharata-shalyaparva
+
+### `BinnalakzaRatvAt` — bhinnalakṣaṇatvāt  (n=1)
+
+- различия признаков  · n=1  · kama-sutra
+
+### `Binnam` — bhinnam  (n=2)
+
+- разделившаяся  · n=1  · raghuvamsha
+- иное  · n=1  · pratyabhijna-hridaya_kshemaraja
+
+### `BinnamUrteH` — bhinnamūrteḥ  (n=1)
+
+- разделившись  · n=1  · kumarasambhava
+
+### `BinnamarmA` — bhinnamarmā  (n=1)
+
+- уязвленный в жизненно важные места  · n=1  · mahabharata-dronaparva
+
+### `BinnamarmARam` — bhinnamarmāṇam  (n=1)
+
+- пронзены жизненные центры  · n=1  · mahabharata-striparva
+
+### `Binnamarma` — bhinnamarma  (n=1)
+
+- раненный в грудь  · n=1  · mahabharata-aranyakaparva
+
+### `Binnamarman` — bhinnamarman  (n=9)
+
+- с пораженными жизненными узлами  · n=6  · mahabharata-ashvamedhikaparva
+- пораженный в уязвимые места  · n=1  · mahabharata-bhishmaparva
+- поразив жизненно важные места  · n=1  · mahabharata-dronaparva
+- пронзенный в жизненно важные места  · n=1  · mahabharata-dronaparva
+
+### `BinnamaryAda` — bhinnamaryāda  (n=4)
+
+- преступающий границы нравственности  · n=2  · mahabharata-dronaparva
+- преступающих закон  · n=1  · mahabharata-aranyakaparva
+- попирающие нормы  · n=1  · mahabharata-ashvamedhikaparva
+
+### `BinnamastakapiRqaka` — bhinnamastakapiṇḍaka  (n=1)
+
+- с разбитыми головами  · n=1  · mahabharata-dronaparva
+
+### `BinnamastakapiRqikAH` — bhinnamastakapiṇḍikāḥ  (n=1)
+
+- с головами и лобными выпуклостями раскроенными  · n=1  · mahabharata-dronaparva
+
+### `Binnanimitta` — bhinnanimitta  (n=2)
+
+- побуждаемое различными причинами  · n=2  · nyaya-bhashya
+
+### `Binnanimittau` — bhinnanimittau  (n=1)
+
+- две различные причины  · n=1  · nyaya-bhashya
+
+### `BinnapaTA` — bhinnapathā  (n=1)
+
+- различны  · n=1  · raghuvamsha
+
+### `BinnapallavapuwaH` — bhinnapallavapuṭaḥ  (n=1)
+
+- разглаживающий молодые листочки  · n=1  · raghuvamsha
+
+### `Binnapota` — bhinnapota  (n=1)
+
+- судно затонуло  · n=1  · mahabharata-dronaparva
+
+### `BinnapravAhA` — bhinnapravāhā  (n=1)
+
+- вторгаются  · n=1  · raghuvamsha
+
+### `BinnarahasyA` — bhinnarahasyā  (n=2)
+
+- не хранящая тайн  · n=1  · kama-sutra
+- выдавшая тайну  · n=1  · kama-sutra
+
+### `BinnaruciH` — bhinnaruciḥ  (n=1)
+
+- разные вкусы  · n=1  · raghuvamsha
+
+### `BinnasTAna` — bhinnasthāna  (n=1)
+
+- различные локализации  · n=1  · nyaya-bhashya
+
+### `BinnasanDAnakArin` — bhinnasandhānakārin  (n=1)
+
+- для сплочения прорванных рядов  · n=1  · mahabharata-udyogaparva
+
+### `BinnasanDi` — bhinnasandhi  (n=2)
+
+- чьи сочлененья повреждены  · n=1  · mahabharata-ashvamedhikaparva
+- чьи сочленения повреждены  · n=1  · mahabharata-ashvamedhikaparva
+
+### `BinnasarvANga` — bhinnasarvāṅga  (n=1)
+
+- с разбитыми членами  · n=1  · mahabharata-shalyaparva
+
+### `BinnasenAH` — bhinnasenāḥ  (n=1)
+
+- разбитые войска  · n=1  · mahabharata-karnaparva
+
+### `BinnatanutrARa` — bhinnatanutrāṇa  (n=1)
+
+- пробил латы  · n=1  · mahabharata-bhishmaparva
+
+### `BinnatanutradehAH` — bhinnatanutradehāḥ  (n=1)
+
+- разбиты латы на их телах  · n=1  · mahabharata-bhishmaparva
+
+### `BinnatanutrakAyAH` — bhinnatanutrakāyāḥ  (n=1)
+
+- в разбитых латах на теле  · n=1  · mahabharata-bhishmaparva
+
+### `BinnatvAt` — bhinnatvāt  (n=2)
+
+- из-за своего отличия  · n=2  · kama-sutra
+
+### `Binnatva` — bhinnatva  (n=1)
+
+- различии  · n=1  · vedartha-samgraha_ramanuja
+
+### `BinnavarRADarozWam` — bhinnavarṇādharoṣṭham  (n=1)
+
+- ротикъ алый потерялъ румянецъ  · n=1  · megha-duta
+
+### `Binnavarman` — bhinnavarman  (n=1)
+
+- с пробитыми доспехами  · n=1  · mahabharata-shalyaparva
+
+### `BinnavedyapraTArUpaM` — bhinnavedyaprathārūpaṃ  (n=1)
+
+- принимает форму разделенного знания  · n=1  · pratyabhijna-hridaya_kshemaraja
+
+### `BinnavfttitA` — bhinnavṛttitā  (n=2)
+
+- ведение дурной жизни  · n=1  · manavadharmashastra
+- испорченность  · n=1  · mahabharata-ashvamedhikaparva
+
+### `BinnavikIrRadeha` — bhinnavikīrṇadeha  (n=1)
+
+- тело разрушается и рассеивается  · n=1  · mahabharata-ashvamedhikaparva
+
+### `BinnavizayAH` — bhinnaviṣayāḥ  (n=1)
+
+- с различными объектами  · n=1  · sankhya-karika
+
+### `Binnayor` — bhinnayor  (n=1)
+
+- разделенных  · n=1  · yoga-sutry_vyasa-bhashya
+
+### `Binne` — bhinne  (n=1)
+
+- разрушено  · n=1  · mahabharata-shalyaparva
+
+### `Binnezu` — bhinneṣu  (n=3)
+
+- прорваны  · n=1  · mahabharata-bhishmaparva
+- различных  · n=1  · nyaya-bhashya
+- поражены  · n=1  · mahabharata-ashvamedhikaparva
+
+### `Bipatsyase` — bhipatsyase  (n=1)
+
+- снизойдет  · n=1  · mahabharata-aranyakaparva
+
+### `Bisma` — bhisma  (n=2)
+
+- Бхишма  · n=2  · mahabharata-sabhaparva
+
+### `Bita` — bhita  (n=2)
+
+- встревоженный  · n=1  · mahabharata-aranyakaparva
+- напуганы  · n=1  · mahabharata-sabhaparva
+
+### `Bitti` — bhitti  (n=1)
+
+- стенами  · n=1  · ramayana-ayodhyakanda
+
+### `BittvA` — bhittvā  (n=87)
+
+- пробив  · n=13  · mahabharata-dronaparva, mahabharata-bhishmaparva, mahabharata-karnaparva, mahabharata-adiparva, mahabharata-shalyaparva
+- прорвав  · n=7  · mahabharata-dronaparva, mahabharata-adiparva
+- разорвав  · n=6  · mahabharata-adiparva, mahabharata-sabhaparva, ramayana-ayodhyakanda, ramayana-aranyakanda
+- пронзив  · n=5  · mahabharata-dronaparva
+- прорвавшись  · n=3  · mahabharata-dronaparva, raghuvamsha
+- пронзили  · n=2  · ramayana-aranyakanda
+- разорвана  · n=2  · ramayana-aranyakanda
+- разбив  · n=2  · rigveda
+- выйдя  · n=2  · mahabharata-adiparva
+- пронзив насквозь  · n=2  · mahabharata-dronaparva
+- пронзила  · n=2  · mahabharata-karnaparva, raghuvamsha
+- пробивает  · n=2  · hatha-yoga-pradipika
+- достав  · n=1  · mahabharata-adiparva
+- Раскалывая  · n=1  · mahabharata-adiparva
+- разрезав  · n=1  · ramayana-sundarakanda
+- разрушениями  · n=1  · manavadharmashastra
+- Пронзая  · n=1  · ramayana-aranyakanda
+- Расщепив  · n=1  · ramayana-aranyakanda
+- закрытая  · n=1  · ramayana-aranyakanda
+- раскопав  · n=1  · ramayana-balakanda
+- Раскопав  · n=1  · ramayana-balakanda
+- изрыв  · n=1  · ramayana-balakanda
+- разрыв  · n=1  · mahabharata-aranyakaparva
+- Разоряя  · n=1  · mahabharata-aranyakaparva
+- распоров  · n=1  · mahabharata-adiparva
+- сокрушив  · n=1  · mahabharata-bhishmaparva
+- разгромив  · n=1  · mahabharata-bhishmaparva
+- Пробившись  · n=1  · mahabharata-bhishmaparva
+- пронизав  · n=1  · mahabharata-bhishmaparva
+- Прорвавшись  · n=1  · mahabharata-dronaparva
+- пробив насквозь  · n=1  · mahabharata-dronaparva
+- вырыв  · n=1  · mahabharata-dronaparva
+- расщепив  · n=1  · mahabharata-udyogaparva
+- раскраивая  · n=1  · mahabharata-udyogaparva
+- рассекал  · n=1  · mahabharata-udyogaparva
+- ранив  · n=1  · mahabharata-karnaparva
+- поразив  · n=1  · mahabharata-karnaparva
+- Пронизывая  · n=1  · mahabharata-karnaparva
+- Разбивая  · n=1  · mahabharata-karnaparva
+- ударил  · n=1  · mahabharata-karnaparva
+- рассек  · n=1  · mahabharata-karnaparva
+- разя  · n=1  · mahabharata-karnaparva
+- Пробив  · n=1  · mahabharata-shalyaparva
+- рассекая  · n=1  · mahabharata-ashvamedhikaparva
+- рассекши  · n=1  · mahabharata-ashvamedhikaparva
+- пробиваясь  · n=1  · mahabharata-ashvamedhikaparva
+- расколов  · n=1  · mahabharata-ashvamedhikaparva
+- пронзается  · n=1  · hatha-yoga-pradipika
+- расчленив  · n=1  · mahabharata-virataparva
+- домчится  · n=1  · megha-duta
+- пройдя  · n=1  · mai-up
+
+### `BitvA` — bhitvā  (n=9)
+
+- разорвав  · n=2  · ramayana-sundarakanda, ramayana-aranyakanda
+- разбив  · n=1  · ramayana-aranyakanda
+- распорол  · n=1  · mahabharata-dronaparva
+- пронзив  · n=1  · mahabharata-dronaparva
+- пробив  · n=1  · mahabharata-karnaparva
+- Пробив насквозь  · n=1  · mahabharata-karnaparva
+- Проникнув  · n=1  · mai-up
+- проникнув  · n=1  · mai-up
+
+### `BiyA` — bhiyā  (n=15)
+
+- страха  · n=6  · rigveda, rigveda, rigveda, rigveda
+- от страха  · n=5  · rigveda, rigveda, rigveda
+- в страхе  · n=1  · rigveda
+- Из страха  · n=1  · rigveda
+- из страха  · n=1  · rigveda
+- ужас  · n=1  · rigveda
+
+### `BiyAmitrAnt` — bhiyāmitrānt  (n=1)
+
+- Объедини врагов в страхе  · n=1  · atharvaveda
+
+### `BiyAnAH` — bhiyānāḥ  (n=2)
+
+- из страха  · n=2  · rigveda
+
+### `BiyAna` — bhiyāna  (n=2)
+
+- в страхе  · n=1  · rigveda
+- испуганные  · n=1  · rigveda
+
+### `BiyaH` — bhiyaḥ  (n=1)
+
+- страх  · n=1  · atharvaveda
+
+### `Biyam` — bhiyam  (n=1)
+
+- страх  · n=1  · rigveda
+
+### `Biyas` — bhiyas  (n=6)
+
+- страха  · n=5  · rigveda, rigveda, rigveda, atharvaveda
+- страх  · n=1  · rigveda
+
+### `BiyasA` — bhiyasā  (n=9)
+
+- от страха  · n=4  · rigveda, rigveda
+- страха  · n=4  · rigveda, rigveda
+- в страхе  · n=1  · rigveda
+
+### `BiyasAne` — bhiyasāne  (n=1)
+
+- перепуганные  · n=1  · atharvaveda
+
+### `BiyasaM` — bhiyasaṃ  (n=1)
+
+- страх  · n=1  · rigveda
+
+### `Biyasam` — bhiyasam  (n=2)
+
+- страх  · n=2  · rigveda, atharvaveda
+
+### `Biyase` — bhiyase  (n=1)
+
+- в ужас  · n=1  · rigveda
+
+### `BizaRaH` — bhiṣaṇaḥ  (n=1)
+
+- ужасен  · n=1  · ramayana-aranyakanda
+
+### `BizagBiH` — bhiṣagbhiḥ  (n=1)
+
+- лекарей  · n=1  · mahabharata-ashvamedhikaparva
+
+### `BizagBir` — bhiṣagbhir  (n=1)
+
+- врачи  · n=1  · raghuvamsha
+
+### `Bizaj` — bhiṣaj  (n=20)
+
+- целители  · n=4  · rigveda, atharvaveda, atharvaveda, atharvaveda
+- лекарь  · n=2  · mahabharata-aranyakaparva, rigveda
+- целителей  · n=2  · rigveda, atharvaveda
+- для двоих целителей  · n=2  · atharvaveda
+- лекарю  · n=1  · manavadharmashastra
+- целебных средств  · n=1  · rigveda
+- целителя  · n=1  · rigveda
+- целителем  · n=1  · rigveda
+- целителями  · n=1  · rigveda
+- лекарей  · n=1  · mahabharata-adiparva
+- целительницы  · n=1  · rigveda
+- целитель  · n=1  · atharvaveda
+- знахарь  · n=1  · atharvaveda
+- целебным средством  · n=1  · mai-up
+
+### `BizajA` — bhiṣajā  (n=4)
+
+- целители  · n=2  · rigveda, atharvaveda
+- целителями  · n=1  · rigveda
+- с целителем  · n=1  · atharvaveda
+
+### `BizajAM` — bhiṣajāṃ  (n=1)
+
+- из целителей  · n=1  · rigveda
+
+### `BizajAm` — bhiṣajām  (n=3)
+
+- Знахари  · n=1  · mahabharata-aranyakaparva
+- врачам  · n=1  · raghuvamsha
+- врачей  · n=1  · raghuvamsha
+
+### `BizajaH` — bhiṣajaḥ  (n=1)
+
+- лекарей  · n=1  · atharvaveda
+
+### `BizajyaTaH` — bhiṣajyathaḥ  (n=1)
+
+- исцеляете  · n=1  · rigveda
+
+### `Bizajyatam` — bhiṣajyatam  (n=1)
+
+- исцелите  · n=1  · rigveda
+
+### `Bizak` — bhiṣak  (n=1)
+
+- лекарь  · n=1  · rigveda
+
+### `BizaktamaM` — bhiṣaktamaṃ  (n=1)
+
+- самый исцеляющий  · n=1  · rigveda
+
+### `Bizaktara` — bhiṣaktara  (n=1)
+
+- лучше исцеляющие  · n=1  · atharvaveda
+
+### `Bizakti` — bhiṣakti  (n=1)
+
+- исцеляет  · n=1  · rigveda
+
+### `Bizma` — bhiṣma  (n=1)
+
+- Бхишма  · n=1  · bhagavadgita-smirnov
+
+### `Bo` — bho  (n=9)
+
+- о  · n=4  · mahabharata-aranyakaparva, shatakatrayam, shukasaptati, mahabharata-mahaprasthanikaparva
+- О  · n=3  · mahabharata-adiparva, mahabharata-aranyakaparva, mahabharata-svargarohanikaparva
+- эй  · n=1  · mahabharata-adiparva
+- господин  · n=1  · br-up
+
+### `BoBAva` — bhobhāva  (n=1)
+
+- свойство [слова] 'бхох'  · n=1  · manavadharmashastra
+
+### `BoBavatpUrvaka` — bhobhavatpūrvaka  (n=1)
+
+- ранее упомянутый 'бхох' и 'бхават'  · n=1  · manavadharmashastra
+
+### `BoBo` — bho bho  (n=5)
+
+- О  · n=2  · mahabharata-ashramavasikaparva, mahabharata-svargarohanikaparva
+- Эй, владыка  · n=1  · mahabharata-dronaparva
+- Смотрите же  · n=1  · mahabharata-ashvamedhikaparva
+- Хранители  · n=1  · amaru-shataka
+
+### `BoH` — bhoḥ  (n=5)
+
+- о  · n=2  · ramayana-ayodhyakanda, mahabharata-adiparva
+- О  · n=1  · mahabharata-aranyakaparva
+- эй  · n=1  · mahabharata-aranyakaparva
+- увы  · n=1  · mahabharata-dronaparva
+
+### `BoHSabda` — bhoḥśabda  (n=1)
+
+- слово 'бхох'  · n=1  · manavadharmashastra
+
+### `BogA` — bhogā  (n=7)
+
+- наслаждения  · n=3  · gitarthasamgraha-abhinavagupta, bhagavadgita-smirnov
+- удовольствия  · n=3  · bhagavadgita-prabhupada, bhagavadgita-sharma
+- услады  · n=1  · bhagavadgita-sementsov
+
+### `BogAH` — bhogāḥ  (n=19)
+
+- удовольствия  · n=3  · bhagavadgita-burba, bhagavadgita-sementsov, mahabharata-shalyaparva
+- богатства и удовольствия  · n=2  · mahabharata-udyogaparva
+- наслаждения  · n=2  · gitarthasamgraha-abhinavagupta, bhagavadgita-radha
+- счастье  · n=1  · buddhacharita
+- наслаждение  · n=1  · buddhacharita
+- счастьем  · n=1  · buddhacharita
+- доли  · n=1  · gitarthasamgraha-abhinavagupta
+- услады  · n=1  · bhagavadgity
+- наслаждений  · n=1  · bhagavadgita-erman
+- веселія и забавъ  · n=1  · bhagavadgita-1788
+- удовольствий  · n=1  · bhagavadgita-sharma
+- материальные наслаждения  · n=1  · bhagavadgita-prabhupada
+- Яств  · n=1  · shatakatrayam
+- наслаждениями  · n=1  · shatakatrayam-serebryakov
+- Наслаждения  · n=1  · shatakatrayam-serebryakov
+
+### `BogAiSvaryagati` — bhogāiśvaryagati  (n=1)
+
+- путь наслаждений и власти  · n=1  · ramanuja_gitabhashya
+
+### `BogAiSvaryaprasakta` — bhogāiśvaryaprasakta  (n=1)
+
+- привязанных к наслажденьям и власти  · n=1  · ramanuja_gitabhashya
+
+### `BogAlaya` — bhogālaya  (n=1)
+
+- в котором вкушаются  · n=1  · devi-gita
+
+### `BogAn` — bhogān  (n=28)
+
+- удовольствия  · n=4  · mahabharata-adiparva, bhagavadgita-burba
+- блага  · n=4  · mahabharata-bhishmaparva, mahabharata-udyogaparva, ramanuja_gitabhashya, bhagavadgita-smirnov
+- пищу  · n=4  · gitarthasamgraha-abhinavagupta, bhagavadgita-1914, bhagavadgity, bhagavadgita-smirnov
+- наслаждения  · n=2  · mahabharata-adiparva, mahabharata-udyogaparva
+- наслаждениями  · n=2  · mahabharata-adiparva, bhagavadgita-1909
+- властью  · n=1  · ramayana-ayodhyakanda
+- яства и удовольствия  · n=1  · ramayana-aranyakanda
+- удовольствий  · n=1  · ramayana-aranyakanda
+- радости  · n=1  · mahabharata-bhishmaparva
+- счастье  · n=1  · buddhacharita
+- колец  · n=1  · rigveda
+- владѣніе, богатство и забавы  · n=1  · bhagavadgita-1788
+- исполниться  · n=1  · bhagavadgita-1788
+- предметы наслаждения  · n=1  · bhagavadgita-prabhupada
+- усладами  · n=1  · bhagavadgita-radha
+- следствия  · n=1  · mahabharata-ashvamedhikaparva
+- радостями  · n=1  · shatakatrayam-serebryakov
+
+### `BogApavargArTa` — bhogāpavargārtha  (n=1)
+
+- имеет объектом опыт и освобождение  · n=1  · yoga-sutry_vyasa-bhashya
+
+### `BogApavargArTam` — bhogāpavargārtham  (n=1)
+
+- для его опыта и освобождения  · n=1  · yoga-sutry_vyasa-bhashya
+
+### `BogApavargArTatA` — bhogāpavargārthatā  (n=1)
+
+- цель – опыт и освобождение  · n=1  · yoga-sutry_vyasa-bhashya
+
+### `BogAvAsaka` — bhogāvāsaka  (n=1)
+
+- женские покои  · n=1  · kama-sutra
+
+### `BogAya` — bhogāya  (n=1)
+
+- к наслаждению  · n=1  · gitarthasamgraha-abhinavagupta
+
+### `BogAyatana` — bhogāyatana  (n=1)
+
+- локус вкушения  · n=1  · nyaya-bhashya
+
+### `BogI` — bhogī  (n=10)
+
+- наслаждающийся  · n=5  · bhagavadgita-prabhupada, bhagavadgita-burba, bhagavadgity, bhagavadgita-sharma
+- наслаждаюсь  · n=3  · ramanuja_gitabhashya, bhagavadgita-sementsov, bhagavadgita-1909
+- вкушаю  · n=1  · bhagavadgita-erman
+- змея  · n=1  · mahabharata-virataparva
+
+### `Boga` — bhoga  (n=179)
+
+- наслаждения  · n=19  · mahabharata-adiparva, gitarthasamgraha-abhinavagupta, mahabharata-ashvamedhikaparva, shatakatrayam, shatakatrayam-serebryakov, ramayana-ayodhyakanda, manavadharmashastra, mahabharata-bhishmaparva, mahabharata-aranyakaparva, bhagavadgita-erman, bhagavadgita-smirnov, bhagavadgita-1909, devi-gita, br-up
+- наслаждение  · n=16  · gitarthasamgraha-abhinavagupta, shatakatrayam-serebryakov, mahabharata-shantiparva, hatha-yoga-pradipika, bhagavadgita-1914, bhagavadgita-prabhupada, mahabharata-ashvamedhikaparva, br-up, shatakatrayam, yoga-sutry
+- опыт  · n=10  · yoga-sutry_vyasa-bhashya, yoga-sutry, yoga-sutry_zagumennov
+- наслаждений  · n=8  · shatakatrayam-serebryakov, ramayana-sundarakanda, mahabharata-bhishmaparva, bhagavadgita-radha, devi-gita, shatakatrayam, vedartha-samgraha_ramanuja
+- блага  · n=5  · mahabharata-udyogaparva, bhagavadgity, bhagavadgita-erman, bhagavadgita-sementsov, mahabharata-ashramavasikaparva
+- вкушение  · n=5  · sankhya-karika, nyaya-bhashya
+- радости  · n=4  · ramayana-aranyakanda, bhagavadgita-1914, bhagavadgita-erman, bhagavadgita-1909
+- удовольствия  · n=4  · mahabharata-udyogaparva, bhagavadgita-burba, ramanuja_gitabhashya, mahabharata-ashramavasikaparva
+- удовольствие  · n=4  · bhagavadgita-burba, yoga-sutry_sharma, mahabharata-shantiparva
+- тип опыта  · n=4  · yoga-sutry_vyasa-bhashya
+- удовольствиями  · n=3  · mahabharata-adiparva, ramayana-ayodhyakanda, bhagavadgita-sharma
+- пользе  · n=3  · manavadharmashastra
+- удовольствий  · n=3  · ramayana-aranyakanda, mahabharata-udyogaparva
+- Наслажденья  · n=3  · ramanuja_gitabhashya, bhagavadgity, shatakatrayam
+- опыта  · n=3  · yoga-sutry_zagumennov, yoga-sutry_vyasa-bhashya
+- желания  · n=2  · ramayana-ayodhyakanda
+- яства  · n=2  · ramayana-sundarakanda, mahabharata-bhishmaparva
+- пищу  · n=2  · manavadharmashastra, bhagavadgita-sementsov
+- чувственный объект  · n=2  · mahabharata-aranyakaparva
+- удовольствиях  · n=2  · kama-sutra, bhagavadgita-prabhupada
+- наслаждениям  · n=2  · mahabharata-udyogaparva
+- наслаждаться  · n=2  · gitarthasamgraha-abhinavagupta
+- услада  · n=2  · bhagavadgita-burba, shatakatrayam
+- усладах  · n=2  · ramanuja_gitabhashya, shatakatrayam
+- услады  · n=2  · ramanuja_gitabhashya, bhagavadgita-smirnov
+- чувственных удовольствий  · n=2  · bhagavadgita-prabhupada, bhagavadgita-radha
+- вкушения  · n=2  · nyaya-bhashya
+- наслаждении  · n=2  · atharvaveda, shatakatrayam-serebryakov
+- жизненный опыт  · n=2  · yoga-sutry_vyasa-bhashya, yoga-sutry
+- живи  · n=1  · ramayana-ayodhyakanda
+- яствами  · n=1  · ramayana-sundarakanda
+- сокровища  · n=1  · ramayana-sundarakanda
+- радостями  · n=1  · ramayana-sundarakanda
+- Богатства  · n=1  · ramayana-sundarakanda
+- пользования  · n=1  · manavadharmashastra
+- обрит  · n=1  · manavadharmashastra
+- использования  · n=1  · manavadharmashastra
+- шудра  · n=1  · manavadharmashastra
+- усладами  · n=1  · ramayana-aranyakanda
+- мирские блага  · n=1  · mahabharata-aranyakaparva
+- житейские блага  · n=1  · mahabharata-aranyakaparva
+- предметы удовольствия  · n=1  · mahabharata-aranyakaparva
+- наслаждениях  · n=1  · mahabharata-bhishmaparva
+- благами  · n=1  · mahabharata-udyogaparva
+- обращение  · n=1  · gitarthasamgraha-abhinavagupta
+- наслаждению  · n=1  · gitarthasamgraha-abhinavagupta
+- утех  · n=1  · bhagavadgita-1914
+- дары  · n=1  · bhagavadgita-1914
+- наслажденьях  · n=1  · bhagavadgita-smirnov
+- Наслажденія  · n=1  · bhagavadgita-1788
+- веселья  · n=1  · bhagavadgita-1909
+- веселиться  · n=1  · bhagavadgita-1909
+- богатства  · n=1  · bhagavadgita-1909
+- одарят  · n=1  · bhagavadgita-sharma
+- удовлетворить  · n=1  · bhagavadgita-sharma
+- жизненные блага  · n=1  · bhagavadgita-prabhupada
+- мирские радости  · n=1  · bhagavadgita-radha
+- к наслаждениям  · n=1  · bhagavadgita-radha
+- предметами удовольствий  · n=1  · mahabharata-shalyaparva
+- предметы удовольствий  · n=1  · mahabharata-shalyaparva
+- кольца  · n=1  · mahabharata-shalyaparva
+- ощущения  · n=1  · mahabharata-ashvamedhikaparva
+- плоды  · n=1  · mahabharata-ashvamedhikaparva
+- бхогой  · n=1  · hatha-yoga-pradipika
+- тем  · n=1  · shatakatrayam
+- услад  · n=1  · shatakatrayam
+- услада услад  · n=1  · shatakatrayam
+- утехи любви  · n=1  · shatakatrayam
+- выгода  · n=1  · atharvaveda
+- разумное правление  · n=1  · shatakatrayam-serebryakov
+- управление государством  · n=1  · shatakatrayam-serebryakov
+- Наслаждения  · n=1  · shatakatrayam-serebryakov
+- Наслаждение  · n=1  · shatakatrayam-serebryakov
+- 'вкушению'  · n=1  · sankhya-karika
+- род опыта  · n=1  · yoga-sutry_vyasa-bhashya
+- Опыт  · n=1  · yoga-sutry_vyasa-bhashya
+- форму опыта  · n=1  · yoga-sutry_vyasa-bhashya
+- типе опыта  · n=1  · yoga-sutry_vyasa-bhashya
+- содержание опыта  · n=1  · yoga-sutry_vyasa-bhashya
+- форма опыта  · n=1  · yoga-sutry_vyasa-bhashya
+- мучения  · n=1  · yoga-sutry_sharma
+- воспринимаемым  · n=1  · shv-up
+- испытания  · n=1  · paramarthasara-abhinavagupta
+- вкушением  · n=1  · kai-up
+- Вкушение  · n=1  · pratyabhijna-hridaya_kshemaraja
+- опыту  · n=1  · yoga-sutry_vyasa-bhashya
+
+### `BogaH` — bhogaḥ  (n=3)
+
+- счастьем  · n=1  · buddhacharita
+- наслаждение  · n=1  · shatakatrayam-serebryakov
+- достигается  · n=1  · yoga-sutry_sharma
+
+### `BogaM` — bhogaṃ  (n=1)
+
+- власть  · n=1  · rigveda
+
+### `BogaiH` — bhogaiḥ  (n=12)
+
+- в наслаждениях  · n=2  · gitarthasamgraha-abhinavagupta, bhagavadgita-erman
+- наслаждениями  · n=2  · bhagavadgita-sharma, bhagavadgita-prabhupada
+- предметы удовольствия  · n=1  · mahabharata-aranyakaparva
+- удовольствиями  · n=1  · kama-sutra
+- от удовольствий  · n=1  · mahabharata-udyogaparva
+- кольцами  · n=1  · rigveda
+- наслаждение  · n=1  · bhagavadgity
+- забавы  · n=1  · bhagavadgita-1788
+- в усладах  · n=1  · bhagavadgita-sementsov
+- наслаждения  · n=1  · bhagavadgita-radha
+
+### `BogaiSvarya-gati` — bhogaiśvarya-gati  (n=2)
+
+- достиженья богатства и власти  · n=1  · bhagavadgity
+- для пріобрѣтенія мірскихъ богатствъ и увеселеній  · n=1  · bhagavadgita-1788
+
+### `BogaiSvarya-gatiM` — bhogaiśvarya-gatiṃ  (n=1)
+
+- достижению удовольствий и владычества  · n=1  · bhagavadgita-burba
+
+### `BogaiSvarya-gatim` — bhogaiśvarya-gatim  (n=3)
+
+- достижению удовольствия и власти  · n=1  · bhagavadgita-1914
+- счастіе земное  · n=1  · bhagavadgita-1909
+- качествъ  · n=1  · bhagavadgita-1909
+
+### `BogaiSvarya-prasaktAnAm` — bhogaiśvarya-prasaktānām  (n=5)
+
+- удовольствию и власти приверженным  · n=1  · bhagavadgita-burba
+- прикован к утехам и власти  · n=1  · bhagavadgita-1914
+- людей прилѣпленныхъ къ богатствамъ и увеселеніямъ  · n=1  · bhagavadgita-1788
+- богатству и наслажденью стремится  · n=1  · bhagavadgita-1909
+- Гуны  · n=1  · bhagavadgita-1909
+
+### `BogaiSvarya-prasakta` — bhogaiśvarya-prasakta  (n=1)
+
+- привязан к наслаждениям и власти  · n=1  · bhagavadgity
+
+### `BogaiSvaryagatIH` — bhogaiśvaryagatīḥ  (n=2)
+
+- по пути наслаждения и могущества  · n=1  · gitarthasamgraha-abhinavagupta
+- гибели множества достойнейших людей  · n=1  · gitarthasamgraha-abhinavagupta
+
+### `BogaiSvaryagati` — bhogaiśvaryagati  (n=3)
+
+- ради достижения наслаждений и владычества  · n=2  · mahabharata-bhishmaparva, bhagavadgita-erman
+- путь к наслаждениям и богатству  · n=1  · bhagavadgita-sharma
+
+### `BogaiSvaryagatiM` — bhogaiśvaryagatiṃ  (n=1)
+
+- для достиженья богатства и божественной власти  · n=1  · bhagavadgita-smirnov
+
+### `BogaiSvaryagatim` — bhogaiśvaryagatim  (n=3)
+
+- к власти и усладам  · n=1  · bhagavadgita-sementsov
+- путь чувственного наслаждения и богатства  · n=1  · bhagavadgita-prabhupada
+- путь наслаждения и богатства  · n=1  · bhagavadgita-prabhupada
+
+### `BogaiSvaryaprasaktAnAM` — bhogaiśvaryaprasaktānāṃ  (n=2)
+
+- привязан к наслаждениям и власти  · n=1  · bhagavadgita-smirnov
+- власть  · n=1  · bhagavadgita-smirnov
+
+### `BogaiSvaryaprasaktAnAm` — bhogaiśvaryaprasaktānām  (n=3)
+
+- привязавшихся к наслаждениям  · n=1  · bhagavadgita-sementsov
+- тех, кто привязан к мирским удовольствиям и богатству  · n=1  · bhagavadgita-prabhupada
+- тех, кто стремится к мирским удовольствиям  · n=1  · bhagavadgita-prabhupada
+
+### `BogaiSvaryaprasakta` — bhogaiśvaryaprasakta  (n=4)
+
+- приверженных наслаждениям и владычеству  · n=2  · mahabharata-bhishmaparva, bhagavadgita-erman
+- стремящихся к наслаждению и власти  · n=1  · gitarthasamgraha-abhinavagupta
+- погрязший в желании богатств и наслаждений  · n=1  · bhagavadgita-sharma
+
+### `BogajAla` — bhogajāla  (n=1)
+
+- сеть наслаждений  · n=1  · mahabharata-ashvamedhikaparva
+
+### `BogakAle` — bhogakāle  (n=1)
+
+- пора наслаждений  · n=1  · ramayana-ayodhyakanda
+
+### `BogakarI` — bhogakarī  (n=1)
+
+- источник радости  · n=1  · shatakatrayam
+
+### `BogakriyA` — bhogakriyā  (n=2)
+
+- акт вкушения  · n=1  · gitarthasamgraha-abhinavagupta
+- Акт вкушения  · n=1  · gitarthasamgraha-abhinavagupta
+
+### `Bogam` — bhogam  (n=4)
+
+- наслаждения  · n=1  · rigveda
+- расположения  · n=1  · rigveda
+- пользы  · n=1  · rigveda
+- наслаждение  · n=1  · rigveda
+
+### `BogamUlaM` — bhogamūlaṃ  (n=1)
+
+- корень наслаждений  · n=1  · mahabharata-udyogaparva
+
+### `Bogan` — bhogan  (n=1)
+
+- наслаждения  · n=1  · mahabharata-udyogaparva
+
+### `Bogarahita` — bhogarahita  (n=1)
+
+- лишенное наслаждения  · n=1  · sankhya-karika
+
+### `Bogas` — bhogas  (n=4)
+
+- наслаждение  · n=4  · br-up
+
+### `BogasADana` — bhogasādhana  (n=1)
+
+- средство вкушения  · n=1  · nyaya-bhashya
+
+### `BogasaMjYA` — bhogasaṃjñā  (n=1)
+
+- назвать счастьем  · n=1  · buddhacharita
+
+### `BogasaMjYAm` — bhogasaṃjñām  (n=1)
+
+- счастьем  · n=1  · buddhacharita
+
+### `BogasaMskAraiH` — bhogasaṃskāraiḥ  (n=1)
+
+- угощение  · n=1  · shukasaptati
+
+### `BogasampannA` — bhogasampannā  (n=1)
+
+- окружена довольством  · n=1  · mahabharata-adiparva
+
+### `BogasuKAdi` — bhogasukhādi  (n=1)
+
+- наслаждения, счастья и прочих  · n=1  · gitarthasamgraha-abhinavagupta
+
+### `BogatfzRayA` — bhogatṛṣṇayā  (n=1)
+
+- из жажды власти  · n=1  · raghuvamsha
+
+### `BogavAsanAnirAsa` — bhogavāsanānirāsa  (n=2)
+
+- прекращения желания наслаждения  · n=2  · gitarthasamgraha-abhinavagupta
+
+### `Bogavant` — bhogavant  (n=4)
+
+- Бхогаван  · n=2  · mahabharata-sabhaparva
+- счастлив  · n=1  · mahabharata-aranyakaparva
+- пользуясь всеми удовольствиями  · n=1  · mahabharata-sabhaparva
+
+### `BogavantaH` — bhogavantaḥ  (n=1)
+
+- богатые  · n=1  · mahabharata-udyogaparva
+
+### `Bogavat` — bhogavat  (n=1)
+
+- наслаждается счастьем  · n=1  · mahabharata-virataparva
+
+### `BogavatI` — bhogavatī  (n=21)
+
+- Бхогавати  · n=20  · mahabharata-aranyakaparva, mahabharata-udyogaparva, mahabharata-adiparva, ramayana-ayodhyakanda, ramayana-sundarakanda, ramayana-aranyakanda, mahabharata-shalyaparva
+- богаты  · n=1  · mahabharata-udyogaparva
+
+### `BogavatIm` — bhogavatīm  (n=2)
+
+- Бхогавати  · n=1  · mahabharata-aranyakaparva
+- змеей  · n=1  · mahabharata-adiparva
+
+### `BogavezwitaH` — bhogaveṣṭitaḥ  (n=1)
+
+- свернувшегося в кольцо  · n=1  · raghuvamsha
+
+### `Boge` — bhoge  (n=3)
+
+- кольце  · n=2  · mahabharata-aranyakaparva
+- наслаждениями  · n=1  · shatakatrayam-serebryakov
+
+### `BogeBiH` — bhogebhiḥ  (n=2)
+
+- кольцами  · n=2  · atharvaveda
+
+### `BogecCA` — bhogecchā  (n=2)
+
+- Желаний  · n=1  · shatakatrayam
+- желание наслаждений  · n=1  · shatakatrayam-serebryakov
+
+### `Bogena` — bhogena  (n=3)
+
+- кольцами  · n=2  · mahabharata-adiparva
+- опыта  · n=1  · yoga-sutry_vyasa-bhashya
+
+### `Bogezu` — bhogeṣu  (n=6)
+
+- к усладам  · n=1  · ramayana-aranyakanda
+- страстям и удовольствиям  · n=1  · ramayana-aranyakanda
+- наслаждения  · n=1  · mahabharata-aranyakaparva
+- усладам  · n=1  · bhagavadgity
+- удовольствию  · n=1  · bhagavadgita-sharma
+- щедрот  · n=1  · shatakatrayam
+
+### `BogiBogABA` — bhogibhogābhā  (n=1)
+
+- подобными туловищам змей  · n=1  · mahabharata-dronaparva
+
+### `BogiBogADikapIvara` — bhogibhogādhikapīvara  (n=1)
+
+- огромная  · n=1  · raghuvamsha
+
+### `BogiBogAdanAsInaM` — bhogibhogādanāsīnaṃ  (n=2)
+
+- опирающегося на ложе змея  · n=1  · raghuvamsha
+- Великий змей  · n=1  · raghuvamsha
+
+### `BogiBoga` — bhogibhoga  (n=2)
+
+- змеиным кольцам  · n=1  · mahabharata-karnaparva
+- змеям  · n=1  · mahabharata-karnaparva
+
+### `Bogin` — bhogin  (n=15)
+
+- наслаждающийся  · n=4  · gitarthasamgraha-abhinavagupta, bhagavadgita-1914, bhagavadgita-smirnov, bhagavadgita-radha
+- змей  · n=3  · mahabharata-udyogaparva, raghuvamsha
+- змеев  · n=2  · mahabharata-dronaparva
+- змеи  · n=1  · mahabharata-aranyakaparva
+- вкушаю  · n=1  · mahabharata-bhishmaparva
+- наслаждаюсь  · n=1  · bhagavadgita-1788
+- змеями  · n=1  · kumarasambhava
+- змею  · n=1  · raghuvamsha
+- змея  · n=1  · shatakatrayam
+
+### `BoginA` — bhoginā  (n=4)
+
+- змеей  · n=3  · ramayana-sundarakanda, shatakatrayam-serebryakov
+- змея  · n=1  · shatakatrayam
+
+### `BoginaH` — bhoginaḥ  (n=4)
+
+- змеи  · n=3  · mahabharata-adiparva, shatakatrayam-serebryakov
+- змея  · n=1  · raghuvamsha
+
+### `Boginam` — bhoginam  (n=1)
+
+- склонного к удовольствиям  · n=1  · kama-sutra
+
+### `BogivezwanamArgezu` — bhogiveṣṭanamārgeṣu  (n=1)
+
+- веревками, плотно обвивающими стволы по бороздам, проложенным змеями  · n=1  · raghuvamsha
+
+### `Bogizu` — bhogiṣu  (n=1)
+
+- змеев  · n=1  · mahabharata-udyogaparva
+
+### `Bogo` — bhogo  (n=2)
+
+- защита  · n=1  · shatakatrayam
+- яйцо  · n=1  · shatakatrayam
+
+### `Bogya` — bhogya  (n=25)
+
+- добра  · n=7  · ch-up
+- доставляющим наслаждение  · n=3  · atharvaveda
+- объект  · n=2  · gitarthasamgraha-abhinavagupta
+- вкушается  · n=2  · sankhya-karika
+- то, чем надлежит наслаждаться  · n=2  · yoga-sutry_vyasa-bhashya
+- желанную  · n=1  · ramayana-ayodhyakanda
+- предметами удовольствий  · n=1  · mahabharata-adiparva
+- объекта  · n=1  · gitarthasamgraha-abhinavagupta
+- бхогья  · n=1  · gitarthasamgraha-abhinavagupta
+- наслаждаемое  · n=1  · sankhya-karika
+- предмет наслаждения  · n=1  · vedartha-samgraha_ramanuja
+- наслаждений  · n=1  · vedartha-samgraha_ramanuja
+- воспринимаемом  · n=1  · shv-up
+- вкушаемым  · n=1  · kai-up
+
+### `BogyaBAva` — bhogyabhāva  (n=2)
+
+- вкушаемому  · n=2  · gitarthasamgraha-abhinavagupta
+
+### `BogyaBUtAt` — bhogyabhūtāt  (n=1)
+
+- воспринимаемого  · n=1  · vedartha-samgraha_ramanuja
+
+### `Bogyatva` — bhogyatva  (n=1)
+
+- вкушаемое  · n=1  · gitarthasamgraha-abhinavagupta
+
+### `Boh` — bhoh  (n=1)
+
+- Бхох  · n=1  · manavadharmashastra
+
+### `BojAH` — bhojāḥ  (n=3)
+
+- бходжи  · n=3  · mahabharata-mausalaparva
+
+### `BojAn` — bhojān  (n=2)
+
+- благодетелей  · n=1  · rigveda
+- покровителей жертвы  · n=1  · rigveda
+
+### `BojAnIka` — bhojānīka  (n=4)
+
+- войско бходжей  · n=3  · mahabharata-dronaparva
+- войск бходжей  · n=1  · mahabharata-dronaparva
+
+### `BojAnIkaM` — bhojānīkaṃ  (n=1)
+
+- строй бходжей  · n=1  · mahabharata-dronaparva
+
+### `BojAnIkena` — bhojānīkena  (n=1)
+
+- войсками из Бходжи  · n=1  · mahabharata-dronaparva
+
+### `BojAnIkepsava` — bhojānīkepsava  (n=1)
+
+- желающие войска бходжей  · n=1  · mahabharata-dronaparva
+
+### `BojApaka` — bhojāpaka  (n=1)
+
+- повара  · n=1  · mahabharata-adiparva
+
+### `Boja` — bhoja  (n=78)
+
+- Бходжа  · n=22  · mahabharata-karnaparva, mahabharata-sabhaparva, mahabharata-sauptikaparva, mahabharata-shantiparva, mahabharata-udyogaparva, raghuvamsha, kama-sutra, mahabharata-adiparva, mahabharata-bhishmaparva, mahabharata-dronaparva
+- бходжи  · n=9  · mahabharata-mausalaparva, mahabharata-udyogaparva, mahabharata-aranyakaparva, mahabharata-adiparva, mahabharata-sabhaparva, mahabharata-svargarohanikaparva
+- Бходжи  · n=7  · mahabharata-adiparva, mahabharata-bhishmaparva, mahabharata-dronaparva, mahabharata-udyogaparva, mahabharata-sabhaparva, raghuvamsha, mahabharata-virataparva
+- бходжей  · n=7  · mahabharata-dronaparva, mahabharata-karnaparva, mahabharata-udyogaparva, mahabharata-virataparva, mahabharata-sauptikaparva
+- правитель бходжей  · n=5  · mahabharata-dronaparva, mahabharata-shalyaparva
+- щедрого  · n=3  · rigveda, rigveda, rigveda
+- щедрые  · n=2  · rigveda, rigveda
+- Критаварман  · n=2  · mahabharata-dronaparva, mahabharata-shalyaparva
+- правителя бходжей  · n=2  · mahabharata-dronaparva
+- правитель рода Бходжа  · n=2  · mahabharata-shalyaparva
+- Властитель Бходжи  · n=2  · mahabharata-shalyaparva
+- Бходжей  · n=2  · mahabharata-sabhaparva, mahabharata-sauptikaparva
+- доставляющим наслаждение  · n=1  · rigveda
+- Щедрые  · n=1  · rigveda
+- Щедрого  · n=1  · rigveda
+- Гостеприимного  · n=1  · rigveda
+- воин из рода Бходжа  · n=1  · mahabharata-dronaparva
+- Критавармана из рода Бходжа  · n=1  · mahabharata-dronaparva
+- Отпрыск рода Бходжа  · n=1  · mahabharata-dronaparva
+- Правитель бходжей  · n=1  · mahabharata-dronaparva
+- правителю бходжей  · n=1  · mahabharata-dronaparva
+- властителем Бходжи  · n=1  · mahabharata-udyogaparva
+- повелитель бходжей  · n=1  · mahabharata-shalyaparva
+- Бходжу  · n=1  · mahabharata-sauptikaparva
+- бходжами  · n=1  · mahabharata-mausalaparva
+
+### `BojaH` — bhojaḥ  (n=8)
+
+- Бходжа  · n=4  · mahabharata-dronaparva, mahabharata-karnaparva
+- Щедрый  · n=1  · rigveda
+- щедрый  · n=1  · rigveda
+- правитель бходжей  · n=1  · mahabharata-dronaparva
+- властитель Бходжи  · n=1  · mahabharata-udyogaparva
+
+### `BojaSabda` — bhojaśabda  (n=1)
+
+- громкое имя  · n=1  · mahabharata-adiparva
+
+### `BojakanyA` — bhojakanyā  (n=1)
+
+- царевной бходжей  · n=1  · raghuvamsha
+
+### `Bojakawa` — bhojakaṭa  (n=1)
+
+- Бходжаката  · n=1  · mahabharata-sabhaparva
+
+### `BojakawaM` — bhojakaṭaṃ  (n=2)
+
+- Бходжаката  · n=2  · mahabharata-udyogaparva
+
+### `BojakawasTAya` — bhojakaṭasthāya  (n=1)
+
+- правившему в Бходжакате  · n=1  · mahabharata-sabhaparva
+
+### `BojakulapradIpa` — bhojakulapradīpa  (n=1)
+
+- светоч рода Бходжей  · n=1  · raghuvamsha
+
+### `Bojam` — bhojam  (n=6)
+
+- Щедрого  · n=2  · rigveda, rigveda
+- приготовившему возлияние  · n=1  · rigveda
+- Критаварман из рода Бходжа  · n=1  · mahabharata-shalyaparva
+- щедрого  · n=1  · rigveda
+- выплачу  · n=1  · rigveda
+
+### `Bojan` — bhojan  (n=1)
+
+- кормом  · n=1  · shukasaptati
+
+### `BojanA` — bhojanā  (n=2)
+
+- жертвенных дел  · n=1  · rigveda
+- успехи  · n=1  · rigveda
+
+### `BojanAByaYjanAddAnAt` — bhojanābhyañjanāddānāt  (n=1)
+
+- для пищи, умащения и дарения  · n=1  · manavadharmashastra
+
+### `BojanAcCAdana` — bhojanācchādana  (n=1)
+
+- пищей и одеждой  · n=1  · mahabharata-udyogaparva
+
+### `BojanAcCAdanasaMskAraiH` — bhojanācchādanasaṃskāraiḥ  (n=1)
+
+- дала поесть, наделила одеждой  · n=1  · shukasaptati
+
+### `BojanAdau` — bhojanādau  (n=2)
+
+- еда и пр.  · n=1  · gitarthasamgraha-abhinavagupta
+- является  · n=1  · gitarthasamgraha-abhinavagupta
+
+### `BojanAdi` — bhojanādi  (n=2)
+
+- еду и прочее  · n=1  · shukasaptati
+- пищи и прочего  · n=1  · mahabharata-ashramavasikaparva
+
+### `BojanAdicikIrzitam` — bhojanādi cikīrṣitam  (n=1)
+
+- стремлений к наслаждениям и прочему  · n=1  · mahabharata-adiparva
+
+### `BojanAnantara` — bhojanānantara  (n=1)
+
+- после трапезы  · n=1  · kama-sutra
+
+### `BojanAni` — bhojanāni  (n=8)
+
+- благодеяния  · n=2  · rigveda
+- удовольствия  · n=2  · atharvaveda
+- наслаждения  · n=1  · rigveda
+- средства питания  · n=1  · rigveda
+- имущество  · n=1  · rigveda
+- (жертвенные) блюда  · n=1  · atharvaveda
+
+### `BojanArTa` — bhojanārtha  (n=5)
+
+- ради снискания пищи  · n=2  · manavadharmashastra
+- ради пищи  · n=1  · manavadharmashastra
+- чтобы поесть  · n=1  · manavadharmashastra
+- ради еды  · n=1  · mahabharata-dronaparva
+
+### `BojanArTin` — bhojanārthin  (n=1)
+
+- нуждающимся в еде  · n=1  · mahabharata-ashvamedhikaparva
+
+### `BojanAt` — bhojanāt  (n=1)
+
+- пищи  · n=1  · mahabharata-udyogaparva
+
+### `BojanAvaSizwa` — bhojanāvaśiṣṭa  (n=1)
+
+- оставшегося от еды  · n=1  · kama-sutra
+
+### `BojanAya` — bhojanāya  (n=4)
+
+- для питания  · n=1  · rigveda
+- для наслаждения  · n=1  · rigveda
+- обедать  · n=1  · shukasaptati
+- на обед  · n=1  · shukasaptati
+
+### `BojanIya` — bhojanīya  (n=3)
+
+- накормлены  · n=1  · manavadharmashastra
+- мясо  · n=1  · mahabharata-aranyakaparva
+- предметы наслаждения  · n=1  · mahabharata-adiparva
+
+### `Bojana` — bhojana  (n=82)
+
+- пища  · n=13  · manavadharmashastra, mahabharata-bhishmaparva, ramayana-ayodhyakanda, ramayana-balakanda, mahabharata-adiparva, bhagavadgita-1914, bhagavadgity, bhagavadgita-erman, bhagavadgita-sementsov, bhagavadgita-prabhupada, hatha-yoga-pradipika
+- пищу  · n=8  · mahabharata-adiparva, mahabharata-aranyakaparva, bhagavadgita-sharma, ch-up, mahabharata-shalyaparva, mahabharata-ashvamedhikaparva
+- еду  · n=7  · rigveda, ramayana-ayodhyakanda, mahabharata-aranyakaparva, shukasaptati
+- еда  · n=5  · mahabharata-udyogaparva, gitarthasamgraha-abhinavagupta, bhagavadgita-burba, bhagavadgita-prabhupada, mahabharata-ashvamedhikaparva
+- пищи  · n=4  · ramayana-ayodhyakanda, mahabharata-adiparva, mahabharata-udyogaparva, raghuvamsha
+- еде  · n=3  · mahabharata-aranyakaparva
+- яства  · n=2  · mahabharata-aranyakaparva
+- еды  · n=2  · mahabharata-aranyakaparva, kama-sutra
+- едой  · n=2  · rigveda
+- пищей  · n=2  · mahabharata-adiparva
+- трапезы  · n=2  · mahabharata-bhishmaparva, bhagavadgita-erman
+- запасы  · n=2  · rigveda
+- блюда  · n=2  · rigveda
+- охочие  · n=1  · ramayana-ayodhyakanda
+- накормить  · n=1  · ramayana-ayodhyakanda
+- во время еды  · n=1  · manavadharmashastra
+- употреблением  · n=1  · manavadharmashastra
+- угощение  · n=1  · ramayana-aranyakanda
+- питались  · n=1  · mahabharata-aranyakaparva
+- поваром  · n=1  · mahabharata-aranyakaparva
+- подкрепитель  · n=1  · rigveda
+- отраду  · n=1  · rigveda
+- прием пищи  · n=1  · kama-sutra
+- выпивать  · n=1  · mahabharata-dronaparva
+- наслаждения  · n=1  · rigveda
+- пищей и питьем  · n=1  · mahabharata-udyogaparva
+- утехи  · n=1  · rigveda
+- пирах  · n=1  · gitarthasamgraha-abhinavagupta
+- имущество  · n=1  · rigveda
+- Подкрепление  · n=1  · rigveda
+- в веселья час  · n=1  · bhagavadgita-1914
+- вкушении пищи  · n=1  · bhagavadgity
+- трапезою  · n=1  · bhagavadgita-1788
+- пріятно  · n=1  · bhagavadgita-1788
+- обедая  · n=1  · bhagavadgita-sementsov
+- трапезой  · n=1  · bhagavadgita-1909
+- ѣсть  · n=1  · bhagavadgita-1909
+- трапезничать  · n=1  · devi-gita
+- наслаждение  · n=1  · atharvaveda
+- кормят  · n=1  · atharvaveda
+- питание  · n=1  · yotat-up
+
+### `BojanaM` — bhojanaṃ  (n=5)
+
+- пищу  · n=2  · rigveda
+- пропитание  · n=1  · mahabharata-aranyakaparva
+- угощение  · n=1  · mahabharata-udyogaparva
+- обедая  · n=1  · shukasaptati
+
+### `BojanaSradDA` — bhojanaśraddhā  (n=1)
+
+- удовольствие от пищи  · n=1  · mahabharata-udyogaparva
+
+### `BojanadAyinI` — bhojanadāyinī  (n=1)
+
+- подаю  · n=1  · mahabharata-aranyakaparva
+
+### `Bojanagara` — bhojanagara  (n=1)
+
+- город бходжей  · n=1  · mahabharata-udyogaparva
+
+### `Bojanam` — bhojanam  (n=17)
+
+- пищу  · n=5  · ramayana-sundarakanda, rigveda, rigveda, rigveda, hatha-yoga-pradipika
+- пища  · n=3  · manavadharmashastra, bhagavadgita-smirnov, bhagavadgita-radha
+- имущество  · n=2  · rigveda
+- о еде  · n=1  · mahabharata-aranyakaparva
+- еду  · n=1  · rigveda
+- удовлетворение  · n=1  · rigveda
+- трапеза  · n=1  · gitarthasamgraha-abhinavagupta
+- еда  · n=1  · ramanuja_gitabhashya
+- попытка отравить  · n=1  · mahabharata-karnaparva
+- пищи  · n=1  · hatha-yoga-pradipika
+
+### `BojanavelA` — bhojanavelā  (n=1)
+
+- к обеду  · n=1  · shukasaptati
+
+### `Bojane` — bhojane  (n=5)
+
+- есть  · n=1  · ramayana-balakanda
+- в приготовлении изысканных яств  · n=1  · mahabharata-aranyakaparva
+- принимает  · n=1  · kama-sutra
+- пищу  · n=1  · mahabharata-adiparva
+- пищи  · n=1  · mahabharata-shalyaparva
+
+### `Bojanena` — bhojanena  (n=4)
+
+- еду  · n=2  · ramayana-aranyakanda, ramayana-balakanda
+- угощения  · n=1  · ramayana-ayodhyakanda
+- пищи  · n=1  · mahabharata-udyogaparva
+
+### `BojanepsayA` — bhojanepsayā  (n=1)
+
+- желая есть  · n=1  · mahabharata-udyogaparva
+
+### `Bojanezu` — bhojaneṣu  (n=4)
+
+- обедая  · n=1  · ramanuja_gitabhashya
+- в еде  · n=1  · bhagavadgita-sharma
+- и во время совместной трапезы  · n=1  · bhagavadgita-prabhupada
+- трапеза  · n=1  · bhagavadgita-prabhupada
+
+### `Bojapati` — bhojapati  (n=1)
+
+- государя бходжей  · n=1  · raghuvamsha
+
+### `BojarAja` — bhojarāja  (n=5)
+
+- царя бходжей  · n=2  · mahabharata-dronaparva, mahabharata-karnaparva
+- царя Бходжи  · n=1  · mahabharata-udyogaparva
+- царь Бходжа  · n=1  · mahabharata-udyogaparva
+- Бходжа  · n=1  · mahabharata-mausalaparva
+
+### `BojarAjaH` — bhojarājaḥ  (n=1)
+
+- царь из рода Бходжа  · n=1  · mahabharata-udyogaparva
+
+### `BojarAjakalatram` — bhojarājakalatram  (n=1)
+
+- жен царя Бходжи  · n=1  · mahabharata-mausalaparva
+
+### `BojarAjanyAn` — bhojarājanyān  (n=1)
+
+- приближенных царя Бходжи  · n=1  · mahabharata-sabhaparva
+
+### `BojarAjanyavarDana` — bhojarājanyavardhana  (n=3)
+
+- взрастивший воинство бходжей  · n=2  · mahabharata-ashvamedhikaparva
+- расширившего пределы царства Бходжи  · n=1  · mahabharata-udyogaparva
+
+### `BojarAjanyavfdDa` — bhojarājanyavṛddha  (n=1)
+
+- престарелые цари из рода Бходжа  · n=1  · mahabharata-sabhaparva
+
+### `Bojase` — bhojase  (n=4)
+
+- обладаешь свойствами  · n=1  · rigveda
+- для вкушения  · n=1  · rigveda
+- насытила  · n=1  · rigveda
+- насыщения  · n=1  · rigveda
+
+### `Bojasya` — bhojasya  (n=4)
+
+- радушным  · n=1  · rigveda
+- царь бходжей  · n=1  · mahabharata-karnaparva
+- Бходжи  · n=1  · mahabharata-sabhaparva
+- Кришне  · n=1  · mahabharata-sabhaparva
+
+### `Bojate` — bhojate  (n=1)
+
+- наслаждается  · n=1  · rigveda
+
+### `BojavfzRyanDakAH` — bhojavṛṣṇyandhakāḥ  (n=2)
+
+- из рода Бходжа, Вришни и Андхака  · n=1  · mahabharata-adiparva
+- бходжи, вришни и андхаки  · n=1  · mahabharata-adiparva
+
+### `BojavfzRyanDakAnAm` — bhojavṛṣṇyandhakānām  (n=1)
+
+- из бходжей, вришниев и андхаков  · n=1  · mahabharata-adiparva
+
+### `BojavfzRyanDakAtmajaiH` — bhojavṛṣṇyandhakātmajaiḥ  (n=1)
+
+- сыновьями бходжей, вришниев и андхаков  · n=1  · mahabharata-adiparva
+
+### `BojavfzRyanDakastrI` — bhojavṛṣṇyandhakastrī  (n=1)
+
+- женщин бходжей, вришниев и андхаков  · n=1  · mahabharata-mausalaparva
+
+### `Bojay` — bhojay  (n=3)
+
+- угощать  · n=2  · ramayana-ayodhyakanda, mahabharata-adiparva
+- потчевали  · n=1  · mahabharata-aranyakaparva
+
+### `BojayAmAsa` — bhojayāmāsa  (n=7)
+
+- угостил  · n=2  · mahabharata-adiparva, mahabharata-ashvamedhikaparva
+- накормил  · n=1  · mahabharata-adiparva
+- скормил  · n=1  · ramayana-aranyakanda
+- Получили богатое угощение  · n=1  · ramayana-balakanda
+- накормила  · n=1  · mahabharata-adiparva
+- насытил  · n=1  · mahabharata-sabhaparva
+
+### `Bojaya` — bhojaya  (n=2)
+
+- накорми  · n=1  · mahabharata-adiparva
+- Накорми  · n=1  · nyaya-bhashya
+
+### `Bojayanti` — bhojayanti  (n=3)
+
+- кормят  · n=1  · ramayana-ayodhyakanda
+- кормили  · n=1  · ramayana-ayodhyakanda
+- потчуют  · n=1  · mahabharata-sabhaparva
+
+### `Bojayate` — bhojayate  (n=1)
+
+- накормил  · n=1  · mahabharata-aranyakaparva
+
+### `Bojayet` — bhojayet  (n=22)
+
+- надо накормить  · n=5  · manavadharmashastra
+- накормить  · n=3  · manavadharmashastra
+- накормит  · n=3  · mahabharata-aranyakaparva, manavadharmashastra
+- кормить  · n=2  · manavadharmashastra
+- угощать  · n=2  · manavadharmashastra
+- пусть потчует  · n=2  · devi-gita
+- предлагает  · n=1  · manavadharmashastra
+- покормить  · n=1  · manavadharmashastra
+- побуждает отведать  · n=1  · manavadharmashastra
+- пусть угощает  · n=1  · manavadharmashastra
+- следует почтить  · n=1  · manavadharmashastra
+
+### `BojayitvA` — bhojayitvā  (n=7)
+
+- покормив  · n=1  · mahabharata-aranyakaparva
+- кормила  · n=1  · mahabharata-aranyakaparva
+- угостил  · n=1  · mahabharata-aranyakaparva
+- поднося угощение  · n=1  · mahabharata-aranyakaparva
+- накормив  · n=1  · mahabharata-adiparva
+- угощая  · n=1  · mahabharata-adiparva
+- насытив  · n=1  · mahabharata-shalyaparva
+
+### `Bojezu` — bhojeṣu  (n=3)
+
+- дружелюбных  · n=2  · rigveda
+- у благодетелей  · n=1  · rigveda
+
+### `Bojin` — bhojin  (n=3)
+
+- тех, кто съел бы  · n=1  · mahabharata-shantiparva
+- вкушающих  · n=1  · mahabharata-shantiparva
+- пожирают  · n=1  · mahabharata-udyogaparva
+
+### `BojinaH` — bhojinaḥ  (n=1)
+
+- едоков  · n=1  · mahabharata-shantiparva
+
+### `BojitA` — bhojitā  (n=2)
+
+- накормить  · n=1  · mahabharata-aranyakaparva
+- позабавился  · n=1  · shukasaptati
+
+### `BojitASca` — bhojitāśca  (n=1)
+
+- накормить  · n=1  · shukasaptati
+
+### `Bojite` — bhojite  (n=1)
+
+- накормить  · n=1  · mahabharata-aranyakaparva
+
+### `BojyA` — bhojyā  (n=7)
+
+- любовных излияний  · n=2  · rigveda
+- сестре Бходжи  · n=2  · raghuvamsha
+- из рода Бходжа  · n=1  · mahabharata-dronaparva
+- происходящую из рода Бхожа  · n=1  · mahabharata-dronaparva
+- сестра Бходжи  · n=1  · raghuvamsha
+
+### `BojyAni` — bhojyāni  (n=3)
+
+- яства  · n=2  · mahabharata-udyogaparva, mahabharata-virataparva
+- блюда  · n=1  · ramayana-sundarakanda
+
+### `BojyAnna` — bhojyānna  (n=1)
+
+- чью пищу можно есть  · n=1  · manavadharmashastra
+
+### `Bojya` — bhojya  (n=24)
+
+- пищу  · n=2  · manavadharmashastra, mahabharata-mausalaparva
+- услады  · n=2  · rigveda
+- изворотливости  · n=2  · mahabharata-udyogaparva
+- яствами  · n=2  · mahabharata-ashvamedhikaparva
+- съедобной  · n=1  · mahabharata-adiparva
+- воды  · n=1  · ramayana-ayodhyakanda
+- кушанья  · n=1  · ramayana-ayodhyakanda
+- вкушаешь  · n=1  · ramayana-ayodhyakanda
+- предлагая им мед с рисом и сахарный тростник  · n=1  · ramayana-ayodhyakanda
+- пища, не требующая разжевывания  · n=1  · manavadharmashastra
+- трапезе  · n=1  · manavadharmashastra
+- увеселение  · n=1  · manavadharmashastra
+- съестных продуктов  · n=1  · manavadharmashastra
+- пища  · n=1  · mahabharata-aranyakaparva
+- гостеприимство  · n=1  · rigveda
+- съедобной пищи  · n=1  · mahabharata-dronaparva
+- снедь  · n=1  · kumarasambhava
+- пищей  · n=1  · mahabharata-ashvamedhikaparva
+- пред  · n=1  · mahabharata-sabhaparva
+- пище  · n=1  · mahabharata-ashramavasikaparva
+
+### `BojyaM` — bhojyaṃ  (n=1)
+
+- запасом продовольствия  · n=1  · mahabharata-udyogaparva
+
+### `BojyaiH` — bhojyaiḥ  (n=2)
+
+- едой  · n=2  · ramayana-aranyakanda
+
+### `Bojyam` — bhojyam  (n=3)
+
+- еда  · n=1  · ramayana-ayodhyakanda
+- еду  · n=1  · ramayana-ayodhyakanda
+- вкушать  · n=1  · mahabharata-aranyakaparva
+
+### `Bojye` — bhojye  (n=3)
+
+- в еде  · n=1  · mahabharata-adiparva
+- в пище  · n=1  · mahabharata-dronaparva
+- пир  · n=1  · mahabharata-adiparva
+
+### `BoktA` — bhoktā  (n=14)
+
+- вкуситель  · n=3  · gitarthasamgraha-abhinavagupta, bhagavadgita-erman, bhagavadgita-smirnov
+- наслаждающийся  · n=3  · bhagavadgita-smirnov, bhagavadgita-sharma, bhagavadgita-prabhupada
+- пойдет против  · n=1  · mahabharata-aranyakaparva
+- вкушатель  · n=1  · bhagavadgita-burba
+- участвую  · n=1  · bhagavadgita-1788
+- все вкушает  · n=1  · bhagavadgita-sementsov
+- наслаждаюсь  · n=1  · bhagavadgita-prabhupada
+- наслаждается  · n=1  · devi-gita
+- вкушающий  · n=1  · sankhya-karika
+- Вкушающим  · n=1  · paramarthasara-abhinavagupta
+
+### `BoktAra` — bhoktāra  (n=2)
+
+- Вкушающего  · n=2  · bhagavadgita-burba
+
+### `BoktAraH` — bhoktāraḥ  (n=2)
+
+- Участвовать  · n=1  · ramayana-balakanda
+- будут править  · n=1  · mahabharata-udyogaparva
+
+### `BoktAraM` — bhoktāraṃ  (n=1)
+
+- вкусителя  · n=1  · bhagavadgity
+
+### `BoktAram` — bhoktāram  (n=8)
+
+- того, кто приемлет  · n=1  · mahabharata-bhishmaparva
+- наслаждающегося  · n=1  · gitarthasamgraha-abhinavagupta
+- покровитель  · n=1  · bhagavadgita-1788
+- Господа  · n=1  · bhagavadgita-sharma
+- того, кто наслаждается  · n=1  · bhagavadgita-prabhupada
+- наслаждается  · n=1  · bhagavadgita-prabhupada
+- как покровителя  · n=1  · bhagavadgita-radha
+- дарует  · n=1  · raghuvamsha
+
+### `BoktAsmi` — bhoktāsmi  (n=1)
+
+- буду услаждаться  · n=1  · mahabharata-shalyaparva
+
+### `Boktavya` — bhoktavya  (n=7)
+
+- пищу  · n=1  · mahabharata-adiparva
+- использовать  · n=1  · manavadharmashastra
+- владеть  · n=1  · mahabharata-aranyakaparva
+- то, что вкушается  · n=1  · nyaya-bhashya
+- наслаждаться  · n=1  · mahabharata-ashramavasikaparva
+- подлежит вкушению  · n=1  · mai-up
+- вкушаемое  · n=1  · mai-up
+
+### `BoktavyaM` — bhoktavyaṃ  (n=1)
+
+- еды вдосталь  · n=1  · mahabharata-aranyakaparva
+
+### `Boktavyam` — bhoktavyam  (n=3)
+
+- съедобное  · n=1  · mahabharata-adiparva
+- есть  · n=1  · ramayana-aranyakanda
+- буду есть  · n=1  · mahabharata-aranyakaparva
+
+### `Boktf` — bhoktṛ  (n=59)
+
+- вкуситель  · n=6  · gitarthasamgraha-abhinavagupta, bhagavadgity, mahabharata-bhishmaparva
+- вкушающий  · n=5  · gitarthasamgraha-abhinavagupta, mai-up, manavadharmashastra
+- Вкушающий  · n=4  · bhagavadgita-erman, mahabharata-bhishmaparva, paramarthasara-abhinavagupta
+- вкушающего  · n=4  · sankhya-karika, bhagavadgita-smirnov
+- наслаждающийся  · n=3  · gitarthasamgraha-abhinavagupta, bhagavadgita-1914, bhagavadgita-prabhupada
+- вкусителем  · n=3  · ramanuja_gitabhashya, bhagavadgita-sementsov, sankhya-karika
+- субъекта  · n=2  · gitarthasamgraha-abhinavagupta
+- вкусителя  · n=2  · ramanuja_gitabhashya, bhagavadgita-sementsov
+- вкушает  · n=2  · ramanuja_gitabhashya, bhagavadgita-sementsov
+- хранитель  · n=2  · bhagavadgita-radha
+- тот, кто наслаждается  · n=2  · yoga-sutry_vyasa-bhashya
+- пользователь  · n=1  · manavadharmashastra
+- оштрафован  · n=1  · manavadharmashastra
+- возрадуется  · n=1  · ramayana-balakanda
+- субъектом  · n=1  · gitarthasamgraha-abhinavagupta
+- наслаждается  · n=1  · gitarthasamgraha-abhinavagupta
+- Вкушатель  · n=1  · bhagavadgita-burba
+- Наслаждающийся  · n=1  · bhagavadgita-burba
+- Радующийся  · n=1  · bhagavadgita-1914
+- вкушаются  · n=1  · bhagavadgita-1914
+- приемлет  · n=1  · bhagavadgita-erman
+- участникъ  · n=1  · bhagavadgita-1788
+- пріемлющимъ  · n=1  · bhagavadgita-1909
+- властитель  · n=1  · bhagavadgita-1909
+- Владыкою  · n=1  · bhagavadgita-1909
+- принимающий  · n=1  · bhagavadgita-sharma
+- верховный наслаждающийся  · n=1  · bhagavadgita-prabhupada
+- хозяин  · n=1  · bhagavadgita-radha
+- снедающий  · n=1  · kumarasambhava
+- субъект вкушения  · n=1  · nyaya-bhashya
+- наслаждающимся  · n=1  · kat-up
+- воспринимающим  · n=1  · shv-up
+- воспринимающем  · n=1  · shv-up
+- вкушающем  · n=1  · mai-up
+- вкушающим  · n=1  · kai-up
+
+### `BoktfBAva` — bhoktṛbhāva  (n=2)
+
+- по природе воспринимающий  · n=1  · shv-up
+- воспринимающий  · n=1  · shv-up
+
+### `BoktfBogya` — bhoktṛbhogya  (n=2)
+
+- субъекта и объекта  · n=2  · gitarthasamgraha-abhinavagupta
+
+### `BoktfBogyaSakti` — bhoktṛbhogyaśakti  (n=1)
+
+- способность быть субъектом опыта и способность быть его объектом  · n=1  · yoga-sutry_vyasa-bhashya
+
+### `BoktfSakti` — bhoktṛśakti  (n=1)
+
+- энергия Того-кто-наслаждается  · n=1  · yoga-sutry_vyasa-bhashya
+
+### `BoktfsvarUpa` — bhoktṛsvarūpa  (n=1)
+
+- субъект опыта  · n=1  · yoga-sutry_vyasa-bhashya
+
+### `Boktftattva` — bhoktṛtattva  (n=1)
+
+- таттва вкушающего  · n=1  · gitarthasamgraha-abhinavagupta
+
+### `Boktftva` — bhoktṛtva  (n=12)
+
+- в переживании  · n=2  · mahabharata-bhishmaparva, bhagavadgita-erman
+- вкушения  · n=2  · gitarthasamgraha-abhinavagupta, bhagavadgity
+- субъектом объекта  · n=1  · gitarthasamgraha-abhinavagupta
+- ощущенья  · n=1  · ramanuja_gitabhashya
+- восприятия  · n=1  · bhagavadgita-1914
+- вкушение  · n=1  · bhagavadgita-smirnov
+- чувствованіи  · n=1  · bhagavadgita-1788
+- даетъ намъ ощущенья  · n=1  · bhagavadgita-1909
+- процессе наслаждения  · n=1  · bhagavadgita-prabhupada
+- опыта  · n=1  · bhagavadgita-radha
+
+### `Boktftve` — bhoktṛtve  (n=3)
+
+- во вкушении  · n=1  · bhagavadgita-burba
+- вкушении  · n=1  · bhagavadgita-burba
+- бывают  · n=1  · bhagavadgita-sementsov
+
+### `BoktrI` — bhoktrī  (n=2)
+
+- пожирательница  · n=2  · hatha-yoga-pradipika
+
+### `Boktu` — bhoktu  (n=8)
+
+- править  · n=2  · ramayana-ayodhyakanda
+- получать  · n=1  · mahabharata-aranyakaparva
+- брать  · n=1  · buddhacharita
+- просить  · n=1  · bhagavadgita-sementsov
+- поддерживать свою жизнь  · n=1  · bhagavadgita-radha
+- ради его спокойствия  · n=1  · raghuvamsha
+- утолить  · n=1  · shatakatrayam
+
+### `BoktuM` — bhoktuṃ  (n=9)
+
+- есть  · n=1  · ramayana-sundarakanda
+- наслаждаться пищей  · n=1  · mahabharata-aranyakaparva
+- пожирать  · n=1  · mahabharata-aranyakaparva
+- вкусить  · n=1  · mahabharata-udyogaparva
+- услаждаться  · n=1  · mahabharata-udyogaparva
+- жить  · n=1  · bhagavadgita-erman
+- насытиться  · n=1  · mahabharata-shalyaparva
+- стяжать  · n=1  · shatakatrayam
+- наслаждаться  · n=1  · shatakatrayam-serebryakov
+
+### `BoktukAma` — bhoktukāma  (n=2)
+
+- хочу есть  · n=1  · mahabharata-adiparva
+- желают владеть  · n=1  · mahabharata-bhishmaparva
+
+### `Boktum` — bhoktum  (n=26)
+
+- владеть  · n=3  · mahabharata-dronaparva
+- вкушать  · n=3  · bhagavadgita-burba, bhagavadgita-1909, mahabharata-ashvamedhikaparva
+- питаться  · n=3  · bhagavadgita-1914, bhagavadgity, bhagavadgita-smirnov
+- наслаждаться  · n=2  · ramayana-aranyakanda, buddhacharita
+- жить  · n=2  · ramayana-aranyakanda, mahabharata-bhishmaparva
+- откушать  · n=1  · manavadharmashastra
+- отведать  · n=1  · ramayana-balakanda
+- порадоваться  · n=1  · mahabharata-aranyakaparva
+- пожирать  · n=1  · mahabharata-aranyakaparva
+- съесть  · n=1  · mahabharata-aranyakaparva
+- проглотить  · n=1  · buddhacharita
+- искать пропитанія  · n=1  · bhagavadgita-1788
+- просить  · n=1  · bhagavadgita-sharma
+- наслаждаться (жизнью)  · n=1  · bhagavadgita-prabhupada
+- услаждаться  · n=1  · mahabharata-shalyaparva
+- вкусить  · n=1  · shukasaptati
+- есть  · n=1  · mahabharata-ashramavasikaparva
+- насладиться  · n=1  · mahabharata-striparva
+
+### `BokzyAmaH` — bhokṣyāmaḥ  (n=1)
+
+- будем наслаждаться  · n=1  · mahabharata-dronaparva
+
+### `BokzyAvahe` — bhokṣyāvahe  (n=1)
+
+- вкусим  · n=1  · mahabharata-aranyakaparva
+
+### `Bokzyante` — bhokṣyante  (n=1)
+
+- будут захватывать  · n=1  · mahabharata-aranyakaparva
+
+### `Bokzyanti` — bhokṣyanti  (n=2)
+
+- будут убивать  · n=1  · mahabharata-aranyakaparva
+- будут владеть  · n=1  · mahabharata-adiparva
+
+### `Bokzyase` — bhokṣyase  (n=18)
+
+- насладишься  · n=5  · buddhacharita, gitarthasamgraha-abhinavagupta, ramanuja_gitabhashya, bhagavadgity, bhagavadgita-sementsov
+- будешь наслаждаться  · n=4  · mahabharata-udyogaparva, bhagavadgita-1909, bhagavadgita-prabhupada, bhagavadgita-radha
+- будешь властвовать  · n=2  · mahabharata-bhishmaparva, bhagavadgita-erman
+- будешь владеть  · n=2  · mahabharata-udyogaparva, mahabharata-virataparva
+- Владей  · n=2  · mahabharata-sabhaparva
+- получишь  · n=1  · bhagavadgita-1788
+- будет наслаждаться  · n=1  · bhagavadgita-prabhupada
+- станешь владеть  · n=1  · mahabharata-sauptikaparva
+
+### `Bokzyasi` — bhokṣyasi  (n=2)
+
+- избавишься от забот  · n=1  · ramayana-balakanda
+- владеть  · n=1  · mahabharata-aranyakaparva
+
+### `Bokzyate` — bhokṣyate  (n=6)
+
+- будет владеть  · n=2  · mahabharata-udyogaparva, mahabharata-shalyaparva
+- есть  · n=1  · ramayana-ayodhyakanda
+- сможет есть  · n=1  · ramayana-ayodhyakanda
+- будет вкушать блаженство  · n=1  · mahabharata-aranyakaparva
+- будет властвовать  · n=1  · raghuvamsha
+
+### `Bokzyati` — bhokṣyati  (n=4)
+
+- будет владеть  · n=2  · mahabharata-adiparva
+- наслаждаются  · n=1  · ramayana-ayodhyakanda
+- будет править  · n=1  · mahabharata-aranyakaparva
+
+### `Bokzye` — bhokṣye  (n=4)
+
+- буду есть  · n=1  · ramayana-aranyakanda
+- съем  · n=1  · mahabharata-aranyakaparva
+- наслаждаться  · n=1  · gitarthasamgraha-abhinavagupta
+- буду пользоваться  · n=1  · shukasaptati
+
+### `Br` — bhr  (n=2)
+
+- Нося  · n=1  · rigveda
+- братья  · n=1  · mahabharata-adiparva
+
+### `BrAMSa` — bhrāṃśa  (n=2)
+
+- гибель  · n=1  · bhagavadgita-smirnov
+- расстройство  · n=1  · bhagavadgita-prabhupada
+
+### `BrASayan` — bhrāśayan  (n=2)
+
+- Затупляя  · n=2  · rigveda
+
+### `BrASyAni` — bhrāśyāni  (n=2)
+
+- концы  · n=2  · rigveda
+
+### `BrAj` — bhrāj  (n=6)
+
+- сверкающие  · n=2  · rigveda, atharvaveda
+- сверкающий  · n=1  · rigveda
+- сверкавших  · n=1  · mahabharata-adiparva
+- сверкало  · n=1  · mahabharata-dronaparva
+- блестит  · n=1  · shv-up
+
+### `BrAjA` — bhrājā  (n=1)
+
+- блеском  · n=1  · rigveda
+
+### `BrAja` — bhrāja  (n=1)
+
+- сверкающий  · n=1  · atharvaveda
+
+### `BrAjadfzwayaH` — bhrājadṛṣṭayaḥ  (n=5)
+
+- со сверкающими копьями  · n=5  · rigveda, rigveda
+
+### `BrAjadfzwi` — bhrājadṛṣṭi  (n=3)
+
+- со сверкающими копьями  · n=2  · rigveda, rigveda
+- блестящее копье  · n=1  · rigveda
+
+### `BrAjadfzwim` — bhrājadṛṣṭim  (n=1)
+
+- сияющими копьями  · n=1  · rigveda
+
+### `BrAjajjanmAnaH` — bhrājajjanmānaḥ  (n=1)
+
+- сияющие от рождения  · n=1  · rigveda
+
+### `BrAjamAnA` — bhrājamānā  (n=1)
+
+- сверкающий  · n=1  · mahabharata-sabhaparva
+
+### `BrAjamAnAH` — bhrājamānāḥ  (n=2)
+
+- ослепительные  · n=1  · mahabharata-dronaparva
+- блистая  · n=1  · mahabharata-virataparva
+
+### `BrAjamAnAm` — bhrājamānām  (n=1)
+
+- сверкающая  · n=1  · mahabharata-bhishmaparva
+
+### `BrAjamAnAn` — bhrājamānān  (n=2)
+
+- сияющие  · n=1  · mahabharata-adiparva
+- блистающих  · n=1  · mahabharata-bhishmaparva
+
+### `BrAjamAnAni` — bhrājamānāni  (n=1)
+
+- расцвеченными  · n=1  · mahabharata-aranyakaparva
+
+### `BrAjamAna` — bhrājamāna  (n=32)
+
+- сверкающие  · n=3  · mahabharata-adiparva, ramayana-aranyakanda, mahabharata-bhishmaparva
+- сверкающий  · n=3  · rigveda, atharvaveda, atharvaveda
+- сияющими  · n=2  · ramayana-sundarakanda
+- сияющего  · n=2  · ramayana-sundarakanda
+- сиявшего  · n=2  · mahabharata-aranyakaparva, mahabharata-adiparva
+- сиял  · n=2  · mahabharata-aranyakaparva, mahabharata-svargarohanikaparva
+- блистающего  · n=2  · mahabharata-dronaparva
+- сверкающего  · n=2  · atharvaveda
+- сияющие  · n=1  · mahabharata-adiparva
+- Блистая  · n=1  · ramayana-ayodhyakanda
+- сияя  · n=1  · mahabharata-aranyakaparva
+- блистающие  · n=1  · mahabharata-aranyakaparva
+- блистая  · n=1  · mahabharata-adiparva
+- сверкая  · n=1  · mahabharata-bhishmaparva
+- блистали  · n=1  · mahabharata-bhishmaparva
+- блистающих  · n=1  · mahabharata-dronaparva
+- блистательный  · n=1  · mahabharata-dronaparva
+- Сверкающее  · n=1  · rigveda
+- сверкающих  · n=1  · mahabharata-sabhaparva
+- сверкающее  · n=1  · atharvaveda
+- сверкающую  · n=1  · mahabharata-sauptikaparva
+- сиянии  · n=1  · mun-up
+
+### `BrAjamAnaH` — bhrājamānaḥ  (n=5)
+
+- озарился  · n=1  · mahabharata-aranyakaparva
+- сияющий  · n=1  · rigveda
+- сияющему  · n=1  · mahabharata-dronaparva
+- сияя  · n=1  · mahabharata-karnaparva
+- сверкая  · n=1  · atharvaveda
+
+### `BrAjamAnaM` — bhrājamānaṃ  (n=1)
+
+- лучезарного  · n=1  · mahabharata-virataparva
+
+### `BrAjamAnaiH` — bhrājamānaiḥ  (n=1)
+
+- яркокрасующимися  · n=1  · mahabharata-dronaparva
+
+### `BrAjant` — bhrājant  (n=2)
+
+- сверкающий  · n=1  · rigveda
+- Сверкающие  · n=1  · atharvaveda
+
+### `BrAjanta` — bhrājanta  (n=2)
+
+- сверкают  · n=1  · rigveda
+- Сверкающие  · n=1  · atharvaveda
+
+### `BrAjantaH` — bhrājantaḥ  (n=2)
+
+- Сверкающие  · n=1  · rigveda
+- Пылающие  · n=1  · rigveda
+
+### `BrAjante` — bhrājante  (n=7)
+
+- сверкают  · n=3  · rigveda, rigveda
+- Сверкают  · n=1  · rigveda
+- блистают  · n=1  · rigveda
+- излучали сияние  · n=1  · mahabharata-karnaparva
+- сияли  · n=1  · mahabharata-karnaparva
+
+### `BrAjanti` — bhrājanti  (n=2)
+
+- блестит  · n=1  · ramayana-ayodhyakanda
+- сверкали  · n=1  · mahabharata-karnaparva
+
+### `BrAjas` — bhrājas  (n=1)
+
+- сиянием  · n=1  · mnar-up
+
+### `BrAjasA` — bhrājasā  (n=1)
+
+- сверканием  · n=1  · rigveda
+
+### `BrAjase` — bhrājase  (n=5)
+
+- сверкаешь  · n=2  · rigveda
+- сможешь сиять  · n=1  · mahabharata-aranyakaparva
+- воссияешь  · n=1  · mahabharata-aranyakaparva
+- блистаешь  · n=1  · mahabharata-adiparva
+
+### `BrAjat` — bhrājat  (n=2)
+
+- сияющий  · n=1  · ramayana-sundarakanda
+- сияющего  · n=1  · atharvaveda
+
+### `BrAjatA` — bhrājatā  (n=1)
+
+- блистающим  · n=1  · atharvaveda
+
+### `BrAjate` — bhrājate  (n=8)
+
+- сверкает  · n=3  · rigveda, rigveda
+- сияет  · n=2  · ramayana-aranyakanda, shv-up
+- блистала  · n=1  · mahabharata-aranyakaparva
+- Сверкает  · n=1  · rigveda
+- сверкал  · n=1  · mahabharata-dronaparva
+
+### `BrAjati` — bhrājati  (n=1)
+
+- сияет  · n=1  · ramayana-aranyakanda
+
+### `BrAjayantIm` — bhrājayantīm  (n=1)
+
+- озаряла  · n=1  · mahabharata-aranyakaparva
+
+### `BrAjayanta` — bhrājayanta  (n=1)
+
+- озарила  · n=1  · mahabharata-dronaparva
+
+### `BrAjizRu` — bhrājiṣṇu  (n=5)
+
+- лучезарным  · n=1  · mahabharata-dronaparva
+- сияющий  · n=1  · mahabharata-dronaparva
+- блеском  · n=1  · mahabharata-sabhaparva
+- блистательный  · n=1  · raghuvamsha
+- блистающими  · n=1  · mahabharata-svargarohanikaparva
+
+### `BrAjizRukuRqala` — bhrājiṣṇukuṇḍala  (n=1)
+
+- сверкающую серьгами  · n=1  · mahabharata-aranyakaparva
+
+### `BrAjizRumuttamam` — bhrājiṣṇumuttamam  (n=1)
+
+- блистательному и высокому  · n=1  · mahabharata-virataparva
+
+### `BrAjizmat` — bhrājiṣmat  (n=1)
+
+- блистают  · n=1  · mahabharata-bhishmaparva
+
+### `BrAjizye` — bhrājiṣye  (n=1)
+
+- сиять  · n=1  · mahabharata-striparva
+
+### `BrAjo` — bhrājo  (n=2)
+
+- сверкающий  · n=1  · atharvaveda
+- блистаешь  · n=1  · atharvaveda
+
+### `BrAjyAsam` — bhrājyāsam  (n=1)
+
+- хочу блистать  · n=1  · atharvaveda
+
+### `BrAma` — bhrāma  (n=1)
+
+- смятении  · n=1  · gitagovinda
+
+### `BrAmaRayoH` — bhrāmaṇayoḥ  (n=1)
+
+- брахманов  · n=1  · ch-up
+
+### `BrAmako` — bhrāmako  (n=1)
+
+- бродячий  · n=1  · shukasaptati
+
+### `BrAmarI` — bhrāmarī  (n=6)
+
+- Бхрамари  · n=5  · hatha-yoga-pradipika, devi-gita
+- эпилептика  · n=1  · manavadharmashastra
+
+### `BrAmay` — bhrāmay  (n=3)
+
+- стал вращать  · n=1  · ramayana-sundarakanda
+- стал размахивать  · n=1  · ramayana-sundarakanda
+- вращающий  · n=1  · gitarthasamgraha-abhinavagupta
+
+### `BrAmayAmAsa` — bhrāmayām āsa  (n=2)
+
+- стал вертеть  · n=1  · ramayana-sundarakanda
+- стал потрясать  · n=1  · mahabharata-dronaparva
+
+### `BrAmaya` — bhrāmaya  (n=1)
+
+- воздевая  · n=1  · mahabharata-karnaparva
+
+### `BrAmayan` — bhrāmayan  (n=17)
+
+- вращает  · n=3  · ramanuja_gitabhashya, bhagavadgita-sementsov, bhagavadgita-sharma
+- заставляя вращаться  · n=2  · mahabharata-bhishmaparva, bhagavadgita-erman
+- размышляя  · n=2  · bhagavadgity, bhagavadgita-1788
+- побуждающий странствовать  · n=2  · bhagavadgita-radha
+- размахивая  · n=1  · mahabharata-adiparva
+- кружа  · n=1  · mahabharata-dronaparva
+- побуждающий скитаться/кружиться  · n=1  · bhagavadgita-burba
+- заставляет вращаться  · n=1  · bhagavadgita-1914
+- вращая  · n=1  · bhagavadgita-smirnov
+- промышляетъ  · n=1  · bhagavadgita-1909
+- заставляющий перемещаться  · n=1  · bhagavadgita-prabhupada
+- направляя  · n=1  · bhagavadgita-prabhupada
+
+### `BrAmayant` — bhrāmayant  (n=1)
+
+- вращающую  · n=1  · ramayana-sundarakanda
+
+### `BrAmayantI` — bhrāmayantī  (n=1)
+
+- Потрясая  · n=1  · ramayana-sundarakanda
+
+### `BrAmayat` — bhrāmayat  (n=1)
+
+- закружил  · n=1  · mahabharata-sabhaparva
+
+### `BrAmayata` — bhrāmayata  (n=1)
+
+- кружа  · n=1  · mahabharata-udyogaparva
+
+### `BrAmayati` — bhrāmayati  (n=1)
+
+- Вознесшему  · n=1  · ramayana-ayodhyakanda
+
+### `BrAmayedezA` — bhrāmayedeṣā  (n=1)
+
+- вращай  · n=1  · hatha-yoga-pradipika
+
+### `BrAmayet` — bhrāmayet  (n=2)
+
+- движет  · n=1  · kama-sutra
+- поворачивается  · n=1  · kama-sutra
+
+### `BrAmayitvA` — bhrāmayitvā  (n=4)
+
+- завращав  · n=1  · ramayana-sundarakanda
+- покрутив  · n=1  · ramayana-sundarakanda
+- кружа  · n=1  · mahabharata-dronaparva
+- завертев  · n=1  · mahabharata-sabhaparva
+
+### `BrAmita` — bhrāmita  (n=1)
+
+- тащили  · n=1  · shukasaptati
+
+### `BrAmya` — bhrāmya  (n=2)
+
+- закружив  · n=1  · mahabharata-dronaparva
+- вращая  · n=1  · mahabharata-dronaparva
+
+### `BrAmyad` — bhrāmyad  (n=1)
+
+- кружащихся  · n=1  · gitagovinda
+
+### `BrAmyamARAn` — bhrāmyamāṇān  (n=1)
+
+- носившимися взад и вперед  · n=1  · mahabharata-karnaparva
+
+### `BrAmyamARa` — bhrāmyamāṇa  (n=4)
+
+- развевающиеся  · n=2  · mahabharata-bhishmaparva
+- размахивал  · n=1  · mahabharata-karnaparva
+- мечется  · n=1  · mai-up
+
+### `BrAmyamARaH` — bhrāmyamāṇaḥ  (n=2)
+
+- забыть готов  · n=1  · shatakatrayam
+- одурачили  · n=1  · shatakatrayam-serebryakov
+
+### `BrAmyanta` — bhrāmyanta  (n=1)
+
+- вращение  · n=1  · gitarthasamgraha-abhinavagupta
+
+### `BrAmyate` — bhrāmyate  (n=3)
+
+- блуждает  · n=2  · shv-up
+- вращается  · n=1  · shv-up
+
+### `BrAmyati` — bhrāmyati  (n=1)
+
+- бродить  · n=1  · shatakatrayam
+
+### `BrAntAH` — bhrāntāḥ  (n=1)
+
+- сбиты с толку  · n=1  · mahabharata-adiparva
+
+### `BrAntAsiracaranm` — bhrāntāsiracaranm  (n=1)
+
+- Кружа  · n=1  · mahabharata-dronaparva
+
+### `BrAnta` — bhrānta  (n=24)
+
+- скитался  · n=2  · shatakatrayam, shatakatrayam-serebryakov
+- пришли в замешательство  · n=1  · mahabharata-adiparva
+- сбиты с толку  · n=1  · mahabharata-adiparva
+- помутившимся  · n=1  · ramayana-ayodhyakanda
+- пришедшим в смятение  · n=1  · ramayana-ayodhyakanda
+- лишился  · n=1  · ramayana-aranyakanda
+- бродил  · n=1  · ramayana-aranyakanda
+- блуждающие  · n=1  · ramayana-aranyakanda
+- рассеиваются  · n=1  · mahabharata-aranyakaparva
+- кругом себя обращался  · n=1  · mahabharata-bhishmaparva
+- метались  · n=1  · mahabharata-bhishmaparva
+- описывал круги  · n=1  · mahabharata-dronaparva
+- круживших извилистым путем  · n=1  · mahabharata-dronaparva
+- пришли в расстройство  · n=1  · mahabharata-dronaparva
+- круговыми движениями  · n=1  · mahabharata-udyogaparva
+- быстроходный  · n=1  · mahabharata-udyogaparva
+- завертелось  · n=1  · mahabharata-karnaparva
+- Сбитый с толку  · n=1  · devi-gita
+- скитаться  · n=1  · shatakatrayam
+- будто  · n=1  · shatakatrayam
+- мотылька  · n=1  · shatakatrayam
+- впавшим в заблуждение  · n=1  · vedartha-samgraha_ramanuja
+- заблуждение  · n=1  · vedartha-samgraha_ramanuja
+
+### `BrAntacittA` — bhrāntacittā  (n=2)
+
+- разум ее блуждает  · n=1  · ramayana-sundarakanda
+- с помутившимся разумом  · n=1  · ramayana-aranyakanda
+
+### `BrAntacitta` — bhrāntacitta  (n=1)
+
+- с помраченным умом  · n=1  · ramayana-sundarakanda
+
+### `BrAntadvijam` — bhrāntadvijam  (n=1)
+
+- перепуганные птицы  · n=1  · mahabharata-virataparva
+
+### `BrAntairaTaistUrRam` — bhrāntai rathais tūrṇam  (n=1)
+
+- Быстро мчавшихся извилистым путем  · n=1  · mahabharata-dronaparva
+
+### `BrAntapataNgapakzapavanavyAloladIpANkuraCAyAcaYcalam` — bhrāntapataṅgapakṣapavanavyāloladīpāṅkurachāyācañcalam  (n=1)
+
+- ненадежным и преходящим, как пламя светильника, гаснущее под крыльями бездумной бабочки  · n=1  · shatakatrayam-serebryakov
+
+### `BrAntatrastamfgadvijam` — bhrāntatrastamṛgadvijam  (n=1)
+
+- в которой звери и птицы были растеряны и испуганы  · n=1  · ramayana-sundarakanda
+
+### `BrAntavAtAm` — bhrāntavātām  (n=1)
+
+- гонимую ветром  · n=1  · mahabharata-shalyaparva
+
+### `BrAntaviplutamAnasa` — bhrāntaviplutamānasa  (n=1)
+
+- подавлен духом  · n=1  · ramayana-sundarakanda
+
+### `BrAnte` — bhrānte  (n=1)
+
+- тронулась  · n=1  · mahabharata-aranyakaparva
+
+### `BrAnti` — bhrānti  (n=9)
+
+- движется  · n=1  · kama-sutra
+- странствуя  · n=1  · shatakatrayam-serebryakov
+- ошибочное восприятие  · n=1  · yoga-sutry
+- ложное восприятие  · n=1  · yoga-sutry_sharma
+- ошибочные воззрения  · n=1  · yoga-sutry_zagumennov
+- заблуждение  · n=1  · amaru-shataka
+- болтовне  · n=1  · amaru-shataka
+- иллюзии  · n=1  · paramarthasara-abhinavagupta
+- видимость  · n=1  · paramarthasara-abhinavagupta
+
+### `BrAntiM` — bhrāntiṃ  (n=2)
+
+- заблуждение  · n=2  · paramarthasara-abhinavagupta
+
+### `BrAntibIja` — bhrāntibīja  (n=1)
+
+- семя заблуждения  · n=1  · yoga-sutry_vyasa-bhashya
+
+### `BrAntidarSana` — bhrāntidarśana  (n=2)
+
+- Ошибочное видение  · n=2  · yoga-sutry_vyasa-bhashya
+
+### `BrAntidarSanam` — bhrāntidarśanam  (n=1)
+
+- ложное восприятие  · n=1  · yoga-sutry_vyasa-bhashya
+
+### `BrAntimUla` — bhrāntimūla  (n=1)
+
+- основано на ошибке  · n=1  · vedartha-samgraha_ramanuja
+
+### `BrAntimUlatva` — bhrāntimūlatva  (n=1)
+
+- основа  · n=1  · vedartha-samgraha_ramanuja
+
+### `BrAntimUlavAkya` — bhrāntimūlavākya  (n=1)
+
+- утверждение основано на иллюзии  · n=1  · vedartha-samgraha_ramanuja
+
+### `BrAntiparikalpita` — bhrāntiparikalpita  (n=1)
+
+- иллюзорной сущности  · n=1  · vedartha-samgraha_ramanuja
+
+### `BrAntisaMskAra` — bhrāntisaṃskāra  (n=1)
+
+- совершении движений  · n=1  · kama-sutra
+
+### `BrAntvA` — bhrāntvā  (n=1)
+
+- нагулявшись  · n=1  · shukasaptati
+
+### `BrAntyA` — bhrāntyā  (n=3)
+
+- блуждающим  · n=1  · hatha-yoga-pradipika
+- случайно  · n=1  · shatakatrayam
+- наивно  · n=1  · amaru-shataka
+
+### `BrAtA` — bhrātā  (n=55)
+
+- брат  · n=42  · mahabharata-aranyakaparva, ramayana-ayodhyakanda, ramayana-aranyakanda, mahabharata-virataparva, mahabharata-dronaparva, mahabharata-udyogaparva, mahabharata-shantiparva, rigveda, rigveda, mahabharata-adiparva, manavadharmashastra, mahabharata-sabhaparva, atharvaveda, atharvaveda, mahabharata-sauptikaparva
+- братом  · n=5  · ramayana-aranyakanda, rigveda, mahabharata-adiparva, atharvaveda, mahabharata-ashramavasikaparva
+- брата  · n=3  · mahabharata-aranyakaparva
+- воина  · n=1  · mahabharata-shantiparva
+- не подобает  · n=1  · ramayana-ayodhyakanda
+- брату  · n=1  · ramayana-aranyakanda
+- Брат  · n=1  · mahabharata-aranyakaparva
+- Братец  · n=1  · mahabharata-ashvamedhikaparva
+
+### `BrAtF` — bhrātṝ  (n=1)
+
+- братья  · n=1  · ramayana-ayodhyakanda
+
+### `BrAtFRAM` — bhrātṝṇāṃ  (n=3)
+
+- братьев  · n=3  · ramayana-sundarakanda, mahabharata-bhishmaparva, mahabharata-sabhaparva
+
+### `BrAtFRAm` — bhrātṝṇām  (n=17)
+
+- братьев  · n=11  · mahabharata-adiparva, mahabharata-ashramavasikaparva, mahabharata-shantiparva, mahabharata-aranyakaparva, mahabharata-dronaparva, mahabharata-udyogaparva, mahabharata-shalyaparva, mahabharata-mahaprasthanikaparva
+- братьям  · n=3  · mahabharata-shantiparva, mahabharata-udyogaparva
+- между братьями  · n=1  · mahabharata-udyogaparva
+- за братьями  · n=1  · mahabharata-sabhaparva
+- братьях  · n=1  · mahabharata-sauptikaparva
+
+### `BrAtFn` — bhrātṝn  (n=48)
+
+- братьев  · n=37  · mahabharata-adiparva, mahabharata-aranyakaparva, mahabharata-shalyaparva, mahabharata-dronaparva, mahabharata-striparva, mahabharata-udyogaparva, gitarthasamgraha-abhinavagupta, bhagavadgita-burba, ramanuja_gitabhashya, bhagavadgita-sharma, bhagavadgita-radha, mahabharata-sabhaparva, mahabharata-ashramavasikaparva, mahabharata-sauptikaparva, mahabharata-mahaprasthanikaparva
+- братья  · n=3  · mahabharata-bhishmaparva, mahabharata-shalyaparva, mahabharata-sauptikaparva
+- двоюродных братьев  · n=2  · bhagavadgita-1914
+- о братьях  · n=1  · ramayana-ayodhyakanda
+- брата  · n=1  · mahabharata-aranyakaparva
+- братьям  · n=1  · mahabharata-aranyakaparva
+- племянниковъ  · n=1  · bhagavadgita-1788
+- братьями  · n=1  · mahabharata-virataparva
+- брату  · n=1  · mahabharata-striparva
+
+### `BrAtFnutsfjya` — bhrātṝnutsṛjya  (n=1)
+
+- кинув братьев  · n=1  · mahabharata-bhishmaparva
+
+### `BrAta` — bhrāta  (n=1)
+
+- брат  · n=1  · ramayana-ayodhyakanda
+
+### `BrAtaH` — bhrātaḥ  (n=2)
+
+- брат  · n=1  · rigveda
+- о брат  · n=1  · mahabharata-adiparva
+
+### `BrAtar` — bhrātar  (n=37)
+
+- брат  · n=11  · rigveda, mahabharata-karnaparva, shatakatrayam, ramayana-aranyakanda, mahabharata-udyogaparva, rigveda, rigveda, gitagovinda
+- брата  · n=9  · ramayana-aranyakanda, mahabharata-karnaparva, mahabharata-adiparva, ramayana-sundarakanda, ramayana-balakanda, mahabharata-dronaparva, mahabharata-shalyaparva
+- братья  · n=6  · mahabharata-dronaparva, ramayana-ayodhyakanda, ramayana-aranyakanda, ramayana-balakanda, mahabharata-sabhaparva
+- братьев  · n=5  · ramayana-balakanda, mahabharata-dronaparva, mahabharata-karnaparva, mahabharata-shalyaparva, raghuvamsha
+- Братья  · n=3  · ramayana-ayodhyakanda, ramayana-balakanda
+- Братьев  · n=1  · mahabharata-adiparva
+- братьями  · n=1  · mahabharata-adiparva
+- другъ  · n=1  · megha-duta
+
+### `BrAtarA` — bhrātarā  (n=1)
+
+- братья  · n=1  · rigveda
+
+### `BrAtara` — bhrātara  (n=28)
+
+- брата  · n=8  · mahabharata-virataparva, mahabharata-dronaparva, mahabharata-udyogaparva, rigveda, mahabharata-karnaparva, mahabharata-ashvamedhikaparva, raghuvamsha
+- братьев  · n=6  · mahabharata-bhishmaparva, mahabharata-adiparva, mahabharata-udyogaparva, mahabharata-sabhaparva, mahabharata-sauptikaparva
+- братья  · n=4  · mahabharata-dronaparva, mahabharata-aranyakaparva, mahabharata-bhishmaparva
+- Братья  · n=3  · mahabharata-aranyakaparva, mahabharata-udyogaparva, mahabharata-svargarohanikaparva
+- брат  · n=2  · mahabharata-shantiparva
+- братом  · n=2  · ramayana-ayodhyakanda
+- брату  · n=2  · ramayana-aranyakanda, mahabharata-bhishmaparva
+- Брата  · n=1  · ramayana-ayodhyakanda
+
+### `BrAtaraH` — bhrātaraḥ  (n=49)
+
+- братья  · n=32  · mahabharata-aranyakaparva, mahabharata-dronaparva, mahabharata-adiparva, mahabharata-udyogaparva, mahabharata-shalyaparva, mahabharata-sabhaparva, mahabharata-virataparva, ramayana-ayodhyakanda, manavadharmashastra, rigveda, mahabharata-karnaparva, mahabharata-ashvamedhikaparva, atharvaveda, mahabharata-ashramavasikaparva, mahabharata-svargarohanikaparva, mahabharata-mahaprasthanikaparva
+- братьев  · n=10  · mahabharata-aranyakaparva, mahabharata-bhishmaparva, mahabharata-virataparva, mahabharata-ashramavasikaparva, mahabharata-dronaparva
+- Братья  · n=3  · mahabharata-aranyakaparva, rigveda, mahabharata-sabhaparva
+- братьями  · n=2  · mahabharata-aranyakaparva
+- братьям  · n=1  · mahabharata-bhishmaparva
+- пятер  · n=1  · mahabharata-sauptikaparva
+
+### `BrAtaraM` — bhrātaraṃ  (n=13)
+
+- брата  · n=9  · mahabharata-aranyakaparva, mahabharata-adiparva, mahabharata-karnaparva, mahabharata-virataparva, mahabharata-sabhaparva
+- брат  · n=1  · mahabharata-shantiparva
+- братом  · n=1  · mahabharata-aranyakaparva
+- брату  · n=1  · mahabharata-aranyakaparva
+- за братом  · n=1  · mahabharata-dronaparva
+
+### `BrAtaraMnihataMdfzwvA` — bhrātaraṃ nihataṃ dṛṣṭvā  (n=1)
+
+- Увидев своего брата убитым  · n=1  · mahabharata-dronaparva
+
+### `BrAtaraS` — bhrātaraś  (n=1)
+
+- братья  · n=1  · mahabharata-aranyakaparva
+
+### `BrAtaram` — bhrātaram  (n=48)
+
+- брата  · n=20  · ramayana-ayodhyakanda, ramayana-aranyakanda, mahabharata-shantiparva, mahabharata-aranyakaparva, mahabharata-shalyaparva, ramayana-balakanda, mahabharata-dronaparva
+- брату  · n=14  · ramayana-aranyakanda, ramayana-ayodhyakanda, mahabharata-aranyakaparva, mahabharata-adiparva, mahabharata-karnaparva, mahabharata-virataparva, atharvaveda
+- брат  · n=4  · mahabharata-shantiparva, ramayana-ayodhyakanda, ramayana-aranyakanda, rigveda
+- Бхарата  · n=2  · ramayana-ayodhyakanda
+- Рама  · n=1  · ramayana-ayodhyakanda
+- Раму  · n=1  · ramayana-ayodhyakanda
+- Ватапи  · n=1  · ramayana-aranyakanda
+- Илвале  · n=1  · ramayana-aranyakanda
+- Братом  · n=1  · ramayana-aranyakanda
+- младшему  · n=1  · mahabharata-aranyakaparva
+- на брата  · n=1  · mahabharata-aranyakaparva
+- к брату  · n=1  · mahabharata-sabhaparva
+
+### `BrAtarau` — bhrātarau  (n=45)
+
+- братьев  · n=15  · ramayana-ayodhyakanda, ramayana-aranyakanda, ramayana-balakanda, mahabharata-bhishmaparva, ramayana-sundarakanda, mahabharata-adiparva, mahabharata-sabhaparva, mahabharata-sauptikaparva, mahabharata-svargarohanikaparva
+- брата  · n=8  · mahabharata-karnaparva, ramayana-aranyakanda, ramayana-balakanda, mahabharata-aranyakaparva, mahabharata-adiparva, mahabharata-dronaparva, mahabharata-shalyaparva
+- братья  · n=7  · mahabharata-aranyakaparva, ramayana-ayodhyakanda, ramayana-aranyakanda, mahabharata-dronaparva, mahabharata-shalyaparva
+- Братья  · n=5  · ramayana-balakanda, ramayana-aranyakanda
+- оба брата  · n=3  · mahabharata-karnaparva, mahabharata-shalyaparva, mahabharata-virataparva
+- двое братьев  · n=2  · mahabharata-aranyakaparva, mahabharata-shalyaparva
+- братьями  · n=1  · mahabharata-adiparva
+- братьям  · n=1  · ramayana-aranyakanda
+- обоих братьев  · n=1  · mahabharata-aranyakaparva
+- они  · n=1  · mahabharata-shalyaparva
+- герои  · n=1  · mahabharata-shalyaparva
+
+### `BrAtari` — bhrātari  (n=3)
+
+- брат  · n=2  · mahabharata-bhishmaparva, mahabharata-karnaparva
+- брате  · n=1  · ramayana-ayodhyakanda
+
+### `BrAtaro` — bhrātaro  (n=1)
+
+- братья  · n=1  · mahabharata-shalyaparva
+
+### `BrAtaru` — bhrātaru  (n=1)
+
+- Братья  · n=1  · ramayana-aranyakanda
+
+### `BrAteva` — bhrāteva  (n=1)
+
+- словно брат  · n=1  · rigveda
+
+### `BrAtf` — bhrātṛ  (n=596)
+
+- брат  · n=138  · mahabharata-aranyakaparva, mahabharata-adiparva, mahabharata-udyogaparva, ramayana-aranyakanda, mahabharata-dronaparva, ramayana-ayodhyakanda, ramayana-sundarakanda, mahabharata-bhishmaparva, ramayana-balakanda, mahabharata-shalyaparva, mahabharata-karnaparva, mahabharata-virataparva, mahabharata-striparva, manavadharmashastra, mahabharata-ashvamedhikaparva, raghuvamsha, atharvaveda, mahabharata-ashramavasikaparva, mahabharata-shantiparva, rigveda, atharvaveda, shatakatrayam-serebryakov, mahabharata-mahaprasthanikaparva, rigveda, rigveda, ch-up, mahabharata-sabhaparva, atharvaveda, shatakatrayam, atharvaveda, mahabharata-mausalaparva, mahabharata-svargarohanikaparva
+- братьями  · n=104  · mahabharata-aranyakaparva, mahabharata-bhishmaparva, mahabharata-udyogaparva, mahabharata-sabhaparva, mahabharata-adiparva, mahabharata-shalyaparva, mahabharata-dronaparva, mahabharata-ashramavasikaparva, mahabharata-karnaparva, ramayana-ayodhyakanda, ramayana-aranyakanda, mahabharata-ashvamedhikaparva, atharvaveda, mahabharata-virataparva, manavadharmashastra, ramayana-balakanda, mahabharata-mahaprasthanikaparva
+- братьев  · n=100  · mahabharata-aranyakaparva, mahabharata-dronaparva, mahabharata-shalyaparva, ramayana-ayodhyakanda, mahabharata-udyogaparva, mahabharata-adiparva, mahabharata-bhishmaparva, mahabharata-striparva, mahabharata-ashvamedhikaparva, mahabharata-virataparva, mahabharata-mahaprasthanikaparva, ramayana-sundarakanda, mahabharata-karnaparva, mahabharata-sabhaparva, mahabharata-mausalaparva, mahabharata-svargarohanikaparva, ramayana-aranyakanda, ramayana-balakanda, kama-sutra, bhagavadgity, bhagavadgita-erman, bhagavadgita-smirnov, bhagavadgita-sementsov, bhagavadgita-1909, bhagavadgita-prabhupada, mahabharata-ashramavasikaparva, mahabharata-sauptikaparva
+- брата  · n=87  · ramayana-ayodhyakanda, ramayana-aranyakanda, mahabharata-aranyakaparva, manavadharmashastra, mahabharata-adiparva, mahabharata-dronaparva, ramayana-sundarakanda, mahabharata-bhishmaparva, mahabharata-karnaparva, mahabharata-virataparva, ramayana-balakanda, mahabharata-udyogaparva, kama-sutra, mahabharata-sabhaparva, mahabharata-ashvamedhikaparva, raghuvamsha, mahabharata-ashramavasikaparva, mahabharata-striparva
+- братья  · n=65  · mahabharata-adiparva, mahabharata-aranyakaparva, mahabharata-shalyaparva, mahabharata-bhishmaparva, mahabharata-dronaparva, mahabharata-udyogaparva, mahabharata-ashramavasikaparva, manavadharmashastra, mahabharata-karnaparva, ramayana-ayodhyakanda, mahabharata-sabhaparva, mahabharata-striparva, mahabharata-mausalaparva, mahabharata-mahaprasthanikaparva, ramayana-sundarakanda, ch-up, mahabharata-ashvamedhikaparva, atharvaveda, mahabharata-sauptikaparva, mahabharata-svargarohanikaparva
+- брату  · n=38  · ramayana-aranyakanda, mahabharata-aranyakaparva, ramayana-ayodhyakanda, mahabharata-adiparva, mahabharata-virataparva, ch-up, mahabharata-shalyaparva, ramayana-balakanda, mahabharata-udyogaparva, mahabharata-ashvamedhikaparva, mahabharata-sabhaparva, shukasaptati, mahabharata-ashramavasikaparva, mahabharata-mausalaparva
+- братьям  · n=20  · mahabharata-adiparva, mahabharata-aranyakaparva, mahabharata-bhishmaparva, mahabharata-udyogaparva, mahabharata-sabhaparva, mahabharata-sauptikaparva, ramayana-sundarakanda, ramayana-aranyakanda, ramayana-balakanda, mahabharata-dronaparva, mahabharata-ashramavasikaparva, mahabharata-svargarohanikaparva
+- братом  · n=18  · ramayana-sundarakanda, ramayana-aranyakanda, ramayana-balakanda, mahabharata-aranyakaparva, rigveda, mahabharata-adiparva, mahabharata-dronaparva, mahabharata-udyogaparva, mahabharata-shalyaparva
+- Брат  · n=4  · ramayana-ayodhyakanda, ramayana-aranyakanda, atharvaveda, shukasaptati
+- брате  · n=3  · mahabharata-aranyakaparva, ramayana-balakanda
+- Братья  · n=2  · ramayana-ayodhyakanda, mahabharata-aranyakaparva
+- Брата  · n=2  · ramayana-aranyakanda, ramayana-balakanda
+- Рамы  · n=2  · ramayana-aranyakanda
+- братьях  · n=2  · mahabharata-aranyakaparva, mahabharata-svargarohanikaparva
+- друг  · n=1  · ramayana-ayodhyakanda
+- супруга  · n=1  · ramayana-ayodhyakanda
+- Братьям  · n=1  · ramayana-ayodhyakanda
+- Лакшманой  · n=1  · ramayana-ayodhyakanda
+- старшего брата  · n=1  · ramayana-ayodhyakanda
+- братской  · n=1  · ramayana-ayodhyakanda
+- верность  · n=1  · ramayana-ayodhyakanda
+- Раме  · n=1  · ramayana-aranyakanda
+- Брату  · n=1  · ramayana-aranyakanda
+- они  · n=1  · mahabharata-udyogaparva
+- вместе с матерями  · n=1  · mahabharata-mahaprasthanikaparva
+
+### `BrAtf-han` — bhrātṛ-han  (n=2)
+
+- убийца брата  · n=2  · ch-up
+
+### `BrAtfBAryA` — bhrātṛbhāryā  (n=1)
+
+- жена брата  · n=1  · manavadharmashastra
+
+### `BrAtfBAva` — bhrātṛbhāva  (n=2)
+
+- братской любви  · n=1  · mahabharata-udyogaparva
+- братское согласие  · n=1  · mahabharata-karnaparva
+
+### `BrAtfBi` — bhrātṛbhi  (n=3)
+
+- братьями  · n=2  · mahabharata-dronaparva
+- с братьями  · n=1  · mahabharata-udyogaparva
+
+### `BrAtfBiH` — bhrātṛbhiḥ  (n=49)
+
+- братьями  · n=32  · mahabharata-aranyakaparva, mahabharata-adiparva, mahabharata-sabhaparva, mahabharata-karnaparva, mahabharata-shalyaparva, mahabharata-ashramavasikaparva, mahabharata-bhishmaparva, mahabharata-dronaparva, mahabharata-udyogaparva, mahabharata-virataparva
+- с братьями  · n=10  · mahabharata-aranyakaparva, mahabharata-shalyaparva, mahabharata-sabhaparva, mahabharata-dronaparva, mahabharata-bhishmaparva, mahabharata-ashvamedhikaparva
+- братьев  · n=7  · mahabharata-bhishmaparva, mahabharata-aranyakaparva, mahabharata-udyogaparva, mahabharata-shalyaparva, mahabharata-striparva, mahabharata-mahaprasthanikaparva
+
+### `BrAtfBiHparivArita` — bhrātṛbhiḥ parivārita  (n=1)
+
+- в окружении братьев  · n=1  · mahabharata-bhishmaparva
+
+### `BrAtfByAm` — bhrātṛbhyām  (n=3)
+
+- братьев  · n=1  · ramayana-ayodhyakanda
+- братьями  · n=1  · ramayana-aranyakanda
+- двух братьев  · n=1  · mahabharata-sabhaparva
+
+### `BrAtfByaH` — bhrātṛbhyaḥ  (n=4)
+
+- братьев  · n=2  · mahabharata-dronaparva, mahabharata-sauptikaparva
+- братьям  · n=1  · mahabharata-adiparva
+- своим братьям  · n=1  · mahabharata-virataparva
+
+### `BrAtfGAtin` — bhrātṛghātin  (n=2)
+
+- братоубийцы  · n=1  · mahabharata-shantiparva
+- убийца брата  · n=1  · mahabharata-shantiparva
+
+### `BrAtfGAtinaH` — bhrātṛghātinaḥ  (n=1)
+
+- убийцы брата  · n=1  · mahabharata-shantiparva
+
+### `BrAtfSata` — bhrātṛśata  (n=1)
+
+- сотней братьев  · n=1  · mahabharata-udyogaparva
+
+### `BrAtfSatam` — bhrātṛśatam  (n=1)
+
+- сотню братьев  · n=1  · mahabharata-dronaparva
+
+### `BrAtfbAnDavAn` — bhrātṛbāndhavān  (n=1)
+
+- родню братьев  · n=1  · mahabharata-karnaparva
+
+### `BrAtfdatta` — bhrātṛdatta  (n=2)
+
+- от братьев  · n=2  · manavadharmashastra
+
+### `BrAtfhA` — bhrātṛhā  (n=1)
+
+- убийца брата  · n=1  · mahabharata-aranyakaparva
+
+### `BrAtfhetoH` — bhrātṛhetoḥ  (n=1)
+
+- для брата  · n=1  · mahabharata-udyogaparva
+
+### `BrAtfhitaM` — bhrātṛhitaṃ  (n=1)
+
+- брату на благо  · n=1  · mahabharata-udyogaparva
+
+### `BrAtfhyAyAM` — bhrātṛhyāyāṃ  (n=1)
+
+- невестке  · n=1  · raghuvamsha
+
+### `BrAtfjAyA` — bhrātṛjāyā  (n=1)
+
+- супругу брата  · n=1  · megha-duta
+
+### `BrAtfloka` — bhrātṛloka  (n=1)
+
+- миром братьев  · n=1  · ch-up
+
+### `BrAtflokakAma` — bhrātṛlokakāma  (n=1)
+
+- желает мира братьев  · n=1  · ch-up
+
+### `BrAtfmaDyagaH` — bhrātṛmadhyagaḥ  (n=1)
+
+- меж двух своих братьев  · n=1  · mahabharata-aranyakaparva
+
+### `BrAtfnandana` — bhrātṛnandana  (n=1)
+
+- любимейший из братьев  · n=1  · mahabharata-aranyakaparva
+
+### `BrAtfnindaka` — bhrātṛnindaka  (n=1)
+
+- порицающий братьев  · n=1  · mahabharata-dronaparva
+
+### `BrAtfnizevita` — bhrātṛniṣevita  (n=1)
+
+- избрал твой брат  · n=1  · mahabharata-adiparva
+
+### `BrAtfprayukta` — bhrātṛprayukta  (n=2)
+
+- подосланный [царским] братом  · n=1  · kama-sutra
+- подосланный царским братом  · n=1  · kama-sutra
+
+### `BrAtfputra` — bhrātṛputra  (n=1)
+
+- братьев и сыновей  · n=1  · mahabharata-udyogaparva
+
+### `BrAtfsADAraRaBogam` — bhrātṛsādhāraṇabhogam  (n=1)
+
+- вместе с братьями  · n=1  · raghuvamsha
+
+### `BrAtfsahita` — bhrātṛsahita  (n=1)
+
+- с братьями  · n=1  · mahabharata-aranyakaparva
+
+### `BrAtfsahitaH` — bhrātṛsahitaḥ  (n=1)
+
+- от братьев моих  · n=1  · mahabharata-aranyakaparva
+
+### `BrAtfsamUhasya` — bhrātṛsamūhasya  (n=1)
+
+- среди толпы братьев  · n=1  · mahabharata-adiparva
+
+### `BrAtfsama` — bhrātṛsama  (n=1)
+
+- как к брату  · n=1  · mahabharata-karnaparva
+
+### `BrAtfsauhfda` — bhrātṛsauhṛda  (n=2)
+
+- привязанность к брату  · n=1  · mahabharata-adiparva
+- сочувствия к брату  · n=1  · mahabharata-aranyakaparva
+
+### `BrAtfsneha` — bhrātṛsneha  (n=1)
+
+- братской любовью  · n=1  · mahabharata-aranyakaparva
+
+### `BrAtftva` — bhrātṛtva  (n=2)
+
+- правом брата  · n=1  · mahabharata-aranyakaparva
+- братских чувств  · n=1  · mahabharata-aranyakaparva
+
+### `BrAtftvaM` — bhrātṛtvaṃ  (n=1)
+
+- братскую связь  · n=1  · rigveda
+
+### `BrAtftvam` — bhrātṛtvam  (n=2)
+
+- братства  · n=1  · rigveda
+- о братском родстве  · n=1  · mahabharata-dronaparva
+
+### `BrAtfvaDa` — bhrātṛvadha  (n=2)
+
+- об убийстве брата  · n=2  · ramayana-sundarakanda, mahabharata-dronaparva
+
+### `BrAtfvacas` — bhrātṛvacas  (n=1)
+
+- приказания моего брата  · n=1  · mahabharata-adiparva
+
+### `BrAtfvat` — bhrātṛvat  (n=4)
+
+- как брат  · n=2  · mahabharata-sabhaparva
+- братом  · n=1  · mahabharata-aranyakaparva
+- будто братья  · n=1  · mahabharata-ashramavasikaparva
+
+### `BrAtfvatsala` — bhrātṛvatsala  (n=5)
+
+- любящий братьев  · n=2  · ramayana-ayodhyakanda, ramayana-sundarakanda
+- любящий брата  · n=2  · ramayana-ayodhyakanda, ramayana-sundarakanda
+- брата Рамы  · n=1  · ramayana-ayodhyakanda
+
+### `BrAtfvatsalaH` — bhrātṛvatsalaḥ  (n=2)
+
+- любящий братьев  · n=1  · ramayana-ayodhyakanda
+- любящий своего брата  · n=1  · ramayana-ayodhyakanda
+
+### `BrAtfvatsalam` — bhrātṛvatsalam  (n=1)
+
+- преданным Раме  · n=1  · ramayana-ayodhyakanda
+
+### `BrAtfvihIna` — bhrātṛvihīna  (n=1)
+
+- без братьев  · n=1  · mahabharata-svargarohanikaparva
+
+### `BrAtfvya` — bhrātṛvya  (n=19)
+
+- враждебного племянника  · n=2  · mahabharata-dronaparva
+- соперника  · n=2  · atharvaveda
+- соперник  · n=2  · atharvaveda
+- двоюродного брата  · n=2  · atharvaveda
+- двоюродных братьев  · n=1  · mahabharata-dronaparva
+- двоюродным братом  · n=1  · mahabharata-dronaparva
+- врага  · n=1  · nyaya-bhashya
+- враг  · n=1  · br-up
+- врагов  · n=1  · br-up
+- врагами  · n=1  · br-up
+- двоюродный брат  · n=1  · atharvaveda
+- враги  · n=1  · atharvaveda
+- враги мои  · n=1  · atharvaveda
+- противников  · n=1  · atharvaveda
+- соперники  · n=1  · tai-up
+
+### `BrAtfvyaGnI` — bhrātṛvyaghnī  (n=2)
+
+- Убийца противников  · n=1  · atharvaveda
+- противников  · n=1  · atharvaveda
+
+### `BrAtfvyacAtana` — bhrātṛvyacātana  (n=1)
+
+- изгнание противников  · n=1  · atharvaveda
+
+### `BrAtfvyakzayaRa` — bhrātṛvyakṣayaṇa  (n=1)
+
+- уничтожение противников  · n=1  · atharvaveda
+
+### `BrAtfvyam` — bhrātṛvyam  (n=1)
+
+- соперника  · n=1  · atharvaveda
+
+### `BrAtfvyasanakarSita` — bhrātṛvyasanakarśita  (n=3)
+
+- несчастьем, постигшим братьев, подавленный  · n=1  · mahabharata-bhishmaparva
+- терзавшийся гибелью своего брата  · n=1  · mahabharata-dronaparva
+- потрясенные гибелью брата  · n=1  · mahabharata-karnaparva
+
+### `BrAtfvyasya` — bhrātṛvyasya  (n=6)
+
+- соперника  · n=4  · atharvaveda
+- двоюродного брата  · n=2  · atharvaveda
+
+### `BrAtfzu` — bhrātṛṣu  (n=2)
+
+- братьев  · n=1  · ramayana-ayodhyakanda
+- из братьев  · n=1  · raghuvamsha
+
+### `BrAtr` — bhrātr  (n=38)
+
+- братом  · n=15  · ramayana-ayodhyakanda, ramayana-sundarakanda, ramayana-aranyakanda, mahabharata-adiparva, mahabharata-udyogaparva, mahabharata-virataparva
+- брат  · n=9  · manavadharmashastra, ramayana-ayodhyakanda, ramayana-aranyakanda, ramayana-balakanda, mahabharata-aranyakaparva, atharvaveda
+- брату  · n=3  · ramayana-ayodhyakanda, rigveda
+- брата  · n=3  · ramayana-sundarakanda, mahabharata-adiparva, mahabharata-karnaparva
+- братья  · n=2  · manavadharmashastra
+- братьев  · n=2  · manavadharmashastra
+- Лакшманой  · n=1  · ramayana-ayodhyakanda
+- Братом  · n=1  · ramayana-sundarakanda
+- братьями  · n=1  · manavadharmashastra
+- брате  · n=1  · mahabharata-karnaparva
+
+### `BrAtrA` — bhrātrā  (n=44)
+
+- братом  · n=23  · ramayana-ayodhyakanda, ramayana-aranyakanda, mahabharata-dronaparva, mahabharata-shantiparva, manavadharmashastra, mahabharata-adiparva, mahabharata-sabhaparva, raghuvamsha, mahabharata-virataparva
+- брат  · n=8  · ramayana-ayodhyakanda, mahabharata-aranyakaparva, ramayana-aranyakanda, mahabharata-adiparva, mahabharata-ashvamedhikaparva
+- брата  · n=3  · mahabharata-shantiparva, ramayana-ayodhyakanda, ramayana-aranyakanda
+- с братом  · n=2  · ramayana-ayodhyakanda, ramayana-aranyakanda
+- вместе  · n=1  · ramayana-ayodhyakanda
+- Агастья  · n=1  · ramayana-aranyakanda
+- Лакшмана  · n=1  · ramayana-aranyakanda
+- Лакшманой  · n=1  · ramayana-aranyakanda
+- брату  · n=1  · mahabharata-aranyakaparva
+- из брата  · n=1  · mahabharata-aranyakaparva
+- Духшасаной  · n=1  · mahabharata-dronaparva
+- братские отношения  · n=1  · rigveda
+
+### `BrAtrABrAtA` — bhrātrā bhrātā  (n=1)
+
+- брат от руки брата  · n=1  · mahabharata-karnaparva
+
+### `BrAtrAprasTApito` — bhrātrā prasthāpito  (n=1)
+
+- послан братом  · n=1  · mahabharata-bhishmaparva
+
+### `BrAtrAya` — bhrātrāya  (n=1)
+
+- братом  · n=1  · rigveda
+
+### `BrAtram` — bhrātram  (n=2)
+
+- братство  · n=1  · rigveda
+- братства  · n=1  · rigveda
+
+### `BrAtre` — bhrātre  (n=4)
+
+- брату  · n=3  · mahabharata-aranyakaparva, mahabharata-adiparva, mahabharata-udyogaparva
+- Бхарате  · n=1  · ramayana-ayodhyakanda
+
+### `BrAtroH` — bhrātroḥ  (n=2)
+
+- братьев  · n=1  · ramayana-sundarakanda
+- братьям  · n=1  · ramayana-aranyakanda
+
+### `BrAtrya` — bhrātrya  (n=3)
+
+- брат  · n=1  · mahabharata-shantiparva
+- братский долг  · n=1  · mahabharata-shantiparva
+- братский  · n=1  · mahabharata-shantiparva
+
+### `BrAtryam` — bhrātryam  (n=2)
+
+- братские чувства  · n=1  · mahabharata-shantiparva
+- братский долг  · n=1  · mahabharata-shantiparva
+
+### `BrAtuH` — bhrātuḥ  (n=50)
+
+- брата  · n=37  · ramayana-ayodhyakanda, mahabharata-dronaparva, ramayana-aranyakanda, rigveda, mahabharata-udyogaparva, mahabharata-karnaparva, mahabharata-ashvamedhikaparva, mahabharata-adiparva, ramayana-sundarakanda, manavadharmashastra, rigveda, mahabharata-shalyaparva, atharvaveda, mahabharata-sabhaparva, raghuvamsha
+- брат  · n=4  · ramayana-ayodhyakanda, ramayana-aranyakanda, mahabharata-karnaparva, mahabharata-aranyakaparva
+- брату  · n=4  · mahabharata-adiparva, mahabharata-shalyaparva, mahabharata-ashvamedhikaparva, mahabharata-striparva
+- для брата  · n=2  · manavadharmashastra, ramayana-aranyakanda
+- ними  · n=1  · ramayana-ayodhyakanda
+- перед братом  · n=1  · mahabharata-aranyakaparva
+- племянника  · n=1  · mahabharata-dronaparva
+
+### `BrAtur` — bhrātur  (n=6)
+
+- брата  · n=5  · ramayana-ayodhyakanda, mahabharata-aranyakaparva, rigveda, mahabharata-sabhaparva
+- у брата  · n=1  · atharvaveda
+
+### `BrAturAnayane` — bhrāturānayane  (n=1)
+
+- желающим его возвращения  · n=1  · ramayana-ayodhyakanda
+
+### `BrAturarTAya` — bhrāturarthāya  (n=1)
+
+- для брата  · n=1  · mahabharata-udyogaparva
+
+### `BrAturjyezWasya` — bhrāturjyeṣṭhasya  (n=1)
+
+- старшего брата  · n=1  · mahabharata-mahaprasthanikaparva
+
+### `BrAturvIra` — bhrāturvīra  (n=1)
+
+- собственных коней брата  · n=1  · mahabharata-udyogaparva
+
+### `BrAturvacana` — bhrāturvacana  (n=1)
+
+- слово своего брата  · n=1  · mahabharata-adiparva
+
+### `BrAturvacanam` — bhrāturvacanam  (n=1)
+
+- Речи брата  · n=1  · mahabharata-bhishmaparva
+
+### `BrAturvai` — bhrāturvai  (n=1)
+
+- своего брата  · n=1  · mahabharata-sabhaparva
+
+### `BrAtus` — bhrātus  (n=1)
+
+- брата  · n=1  · mahabharata-aranyakaparva
+
+### `BrAw` — bhrāṭ  (n=1)
+
+- сверкая  · n=1  · rigveda
+
+### `BrIRanti` — bhrīṇanti  (n=1)
+
+- ранит  · n=1  · rigveda
+
+### `BrISa` — bhrīśa  (n=1)
+
+- тяжко  · n=1  · ramayana-ayodhyakanda
+
+### `BrU` — bhrū  (n=24)
+
+- бровей  · n=12  · gitagovinda, bhagavadgita-erman, bhagavadgita-1909, buddhacharita, ramanuja_gitabhashya, bhagavadgity, bhagavadgita-smirnov, bhagavadgita-prabhupada
+- бровь  · n=6  · mahabharata-aranyakaparva, buddhacharita, bhagavadgita-1914, shatakatrayam, gitagovinda, jabala-up
+- переносице  · n=1  · bhagavadgita-smirnov
+- не указано  · n=1  · bhagavadgita-prabhupada
+- бровями  · n=1  · mahabharata-karnaparva
+- межбровьем  · n=1  · yotat-up
+- межбровья  · n=1  · yotat-up
+- хмуря брови  · n=1  · megha-duta
+
+### `BrU-cApa` — bhrū-cāpa  (n=1)
+
+- дугу бровей  · n=1  · gitagovinda
+
+### `BrU-maDya-gata` — bhrū-madhya-gata  (n=1)
+
+- расположенная в межбровье  · n=1  · jabala-up
+
+### `BrU-pallava` — bhrū-pallava  (n=1)
+
+- Росток ее бровей  · n=1  · gitagovinda
+
+### `BrUBaNga` — bhrūbhaṅga  (n=2)
+
+- изломах бровей  · n=1  · kumarasambhava
+- брови  · n=1  · amaru-shataka
+
+### `BrUBaNge` — bhrūbhaṅge  (n=1)
+
+- Нахмурены брови  · n=1  · amaru-shataka
+
+### `BrUBeda` — bhrūbheda  (n=2)
+
+- нахмурить чело  · n=1  · raghuvamsha
+- хмурить веки  · n=1  · amaru-shataka
+
+### `BrUDyAna` — bhrūdhyāna  (n=1)
+
+- сосредоточение в межбровье  · n=1  · hatha-yoga-pradipika
+
+### `BrUGrARasaMDi` — bhrūghrāṇasaṃdhi  (n=1)
+
+- соединении бровей и носа  · n=1  · jabala-up
+
+### `BrURa` — bhrūṇa  (n=2)
+
+- брахман  · n=1  · manavadharmashastra
+- зародыши  · n=1  · rigveda
+
+### `BrURaGna` — bhrūṇaghna  (n=1)
+
+- убийца брахмана  · n=1  · manavadharmashastra
+
+### `BrURaGni` — bhrūṇaghni  (n=2)
+
+- на губителя зародыша  · n=2  · atharvaveda
+
+### `BrURahA` — bhrūṇahā  (n=4)
+
+- убийца  · n=2  · br-up
+- как  · n=1  · ramayana-ayodhyakanda
+- убийца брахмана  · n=1  · manavadharmashastra
+
+### `BrURahan` — bhrūṇahan  (n=2)
+
+- убийцу ученого брахмана  · n=1  · manavadharmashastra
+- губит зародыш  · n=1  · mahabharata-udyogaparva
+
+### `BrURahatyA` — bhrūṇahatyā  (n=3)
+
+- гибель зачатого плода  · n=1  · ramayana-ayodhyakanda
+- убийство нерожденного ребенка  · n=1  · ramayana-ayodhyakanda
+- убийства зародыша  · n=1  · mahabharata-aranyakaparva
+
+### `BrURahatyAkftaM` — bhrūṇahatyākṛtaṃ  (n=1)
+
+- от убийства зародыша  · n=1  · mahabharata-adiparva
+
+### `BrURahatyAkftam` — bhrūṇahatyākṛtam  (n=1)
+
+- убийство зародыша  · n=1  · mahabharata-adiparva
+
+### `BrURaheti` — bhrūṇaheti  (n=1)
+
+- губителем зародыша  · n=1  · mahabharata-adiparva
+
+### `BrUcApAkfzwamukta` — bhrūcāpākṛṣṭamukta  (n=1)
+
+- луки бровей натянув туго  · n=1  · shatakatrayam
+
+### `BrUcApa` — bhrūcāpa  (n=1)
+
+- лука бровей  · n=1  · shatakatrayam-serebryakov
+
+### `BrUcAturya` — bhrūcāturya  (n=2)
+
+- изгибы бровей искусные  · n=1  · shatakatrayam
+- Искусные движения бровей  · n=1  · shatakatrayam-serebryakov
+
+### `BrUkuwi` — bhrūkuṭi  (n=1)
+
+- нахмуренные брови  · n=1  · ramayana-sundarakanda
+
+### `BrUkuwiracanA` — bhrūkuṭiracanā  (n=1)
+
+- хмурила брови  · n=1  · amaru-shataka
+
+### `BrUkzepamAtrAnumatapraveSAm` — bhrūkṣepamātrānumatapraveśām  (n=1)
+
+- движением брови разрешил доступ  · n=1  · kumarasambhava
+
+### `BrUlatA` — bhrūlatā  (n=5)
+
+- бровями-лианами  · n=1  · kumarasambhava
+- взгляда  · n=1  · shatakatrayam
+- лианобровая  · n=1  · shatakatrayam-serebryakov
+- брови  · n=1  · amaru-shataka
+- бровями  · n=1  · amaru-shataka
+
+### `BrUlata` — bhrūlata  (n=1)
+
+- лианы бровей  · n=1  · kumarasambhava
+
+### `BrUlatam` — bhrūlatam  (n=1)
+
+- бровей  · n=1  · amaru-shataka
+
+### `BrUlate` — bhrūlate  (n=2)
+
+- бровей-лиан  · n=1  · shatakatrayam
+- лианы бровей  · n=1  · shatakatrayam-serebryakov
+
+### `BrUmaDya` — bhrūmadhya  (n=4)
+
+- межбровья  · n=2  · hatha-yoga-pradipika
+- Между бровей  · n=1  · devi-gita
+- межбровье  · n=1  · yotat-up
+
+### `BrUmaDyama` — bhrūmadhyama  (n=1)
+
+- межбровье  · n=1  · yotat-up
+
+### `BrUmaDye` — bhrūmadhye  (n=2)
+
+- посередине бровей  · n=2  · devi-gita
+
+### `BrUsaMjYayA` — bhrūsaṃjñayā  (n=1)
+
+- движением бровей  · n=1  · shukasaptati
+
+### `BrUsaMvftAkza` — bhrūsaṃvṛtākṣa  (n=1)
+
+- брови его на глаза нависли  · n=1  · buddhacharita
+
+### `BrUsaNkawA` — bhrūsaṅkaṭā  (n=1)
+
+- хмурил брови  · n=1  · mahabharata-shalyaparva
+
+### `BrUsaYjYayA` — bhrūsañjñayā  (n=1)
+
+- знаком бровей  · n=1  · amaru-shataka
+
+### `BrUviBaNgakuwila` — bhrūvibhaṅgakuṭila  (n=1)
+
+- бросали негодующие взгляды из-под нахмуренных бровей  · n=1  · raghuvamsha
+
+### `BrUvijfmBa` — bhrūvijṛmbha  (n=1)
+
+- игрой её бровей  · n=1  · devi-gita
+
+### `BrUvikArAn` — bhrūvikārān  (n=1)
+
+- съ улыбкой  · n=1  · megha-duta
+
+### `BrUvikriyA` — bhrūvikriyā  (n=1)
+
+- брови  · n=1  · kumarasambhava
+
+### `BrUvilAsAn` — bhrūvilāsān  (n=2)
+
+- нахмуренныя брови  · n=2  · megha-duta
+
+### `BraMSAt` — bhraṃśāt  (n=2)
+
+- от потери  · n=1  · bhagavadgity
+- отъ лишенія  · n=1  · bhagavadgita-1788
+
+### `BraMSa` — bhraṃśa  (n=6)
+
+- гибель  · n=2  · buddhacharita
+- урон  · n=1  · ramayana-ayodhyakanda
+- потери  · n=1  · bhagavadgita-1914
+- утрата  · n=1  · raghuvamsha
+- сокрушает  · n=1  · gitagovinda
+
+### `BraMSaH` — bhraṃśaḥ  (n=1)
+
+- низвергается  · n=1  · mahabharata-ashvamedhikaparva
+
+### `BraMSam` — bhraṃśam  (n=1)
+
+- гибель  · n=1  · buddhacharita
+
+### `BraMSana` — bhraṃśana  (n=1)
+
+- изгнание  · n=1  · ramayana-ayodhyakanda
+
+### `BraMSasva` — bhraṃśasva  (n=1)
+
+- покинуть  · n=1  · ramayana-ayodhyakanda
+
+### `BraMSay` — bhraṃśay  (n=1)
+
+- разрушить  · n=1  · mahabharata-aranyakaparva
+
+### `BraMSayati` — bhraṃśayati  (n=1)
+
+- рассеивает  · n=1  · mahabharata-udyogaparva
+
+### `BraMSayizyAmi` — bhraṃśayiṣyāmi  (n=2)
+
+- лишу  · n=2  · mahabharata-aranyakaparva
+
+### `BraMSayizyasi` — bhraṃśayiṣyasi  (n=2)
+
+- погубишь  · n=1  · mahabharata-udyogaparva
+- лишишься  · n=1  · mahabharata-udyogaparva
+
+### `BraMSayizyati` — bhraṃśayiṣyati  (n=1)
+
+- лишит  · n=1  · mahabharata-sauptikaparva
+
+### `BraMSiBiH` — bhraṃśibhiḥ  (n=1)
+
+- упали  · n=1  · megha-duta
+
+### `BraMSitA` — bhraṃśitā  (n=1)
+
+- лишена  · n=1  · mahabharata-udyogaparva
+
+### `BraMSitAH` — bhraṃśitāḥ  (n=3)
+
+- лишенные  · n=1  · mahabharata-adiparva
+- лишены  · n=1  · mahabharata-udyogaparva
+- лишившись  · n=1  · mahabharata-udyogaparva
+
+### `BraMSita` — bhraṃśita  (n=4)
+
+- лишен  · n=3  · mahabharata-aranyakaparva, mahabharata-sabhaparva
+- отнял  · n=1  · mahabharata-aranyakaparva
+
+### `BraSat` — bhraśat  (n=1)
+
+- отпадет  · n=1  · atharvaveda
+
+### `BraSyaddiSo` — bhraśyaddiśo  (n=1)
+
+- на сотни сторон  · n=1  · shatakatrayam
+
+### `BraSyante` — bhraśyante  (n=1)
+
+- покорялись  · n=1  · ramayana-ayodhyakanda
+
+### `BraSyat` — bhraśyat  (n=1)
+
+- разлетающийся  · n=1  · shatakatrayam-serebryakov
+
+### `BraSyate` — bhraśyate  (n=8)
+
+- лишается  · n=6  · mahabharata-udyogaparva, manavadharmashastra, mahabharata-aranyakaparva, mahabharata-shalyaparva, mahabharata-sauptikaparva
+- похищающих  · n=1  · mahabharata-aranyakaparva
+- расстроен  · n=1  · mahabharata-shalyaparva
+
+### `BraSyati` — bhraśyati  (n=1)
+
+- низвергается  · n=1  · mahabharata-udyogaparva
+
+### `BraSyatu` — bhraśyatu  (n=1)
+
+- отлучат  · n=1  · ramayana-ayodhyakanda
+
+### `Brajas` — bhrajas  (n=2)
+
+- силу  · n=2  · atharvaveda
+
+### `Bram` — bhram  (n=6)
+
+- скитаясь  · n=1  · mahabharata-aranyakaparva
+- ходили  · n=1  · buddhacharita
+- вращаться  · n=1  · nyaya-bhashya
+- скитаться  · n=1  · shatakatrayam-serebryakov
+- кружит  · n=1  · shatakatrayam-serebryakov
+- крутятся  · n=1  · yotat-up
+
+### `BramA` — bhramā  (n=1)
+
+- Бхрама  · n=1  · mahabharata-shalyaparva
+
+### `BramAmi` — bhramāmi  (n=1)
+
+- брожу  · n=1  · mahabharata-aranyakaparva
+
+### `BramAsa` — bhramāsa  (n=1)
+
+- вихри  · n=1  · rigveda
+
+### `BramAt` — bhramāt  (n=1)
+
+- по ошибке  · n=1  · gitagovinda
+
+### `BramAveSAdaNge` — bhramāveśādaṅge  (n=1)
+
+- помрачение  · n=1  · shatakatrayam-serebryakov
+
+### `Brama` — bhrama  (n=8)
+
+- вращающемуся  · n=2  · sankhya-karika
+- колебания  · n=1  · rigveda
+- заблуждения  · n=1  · gitarthasamgraha-abhinavagupta
+- помраченье  · n=1  · shatakatrayam
+- вращающееся  · n=1  · sankhya-karika
+- заблуждениям  · n=1  · vedartha-samgraha_ramanuja
+- ошибки  · n=1  · vedartha-samgraha_ramanuja
+
+### `BramaRa` — bhramaṇa  (n=3)
+
+- вращение  · n=1  · mahabharata-adiparva
+- странствует  · n=1  · shatakatrayam-serebryakov
+- кормиться  · n=1  · shukasaptati
+
+### `Bramad` — bhramad  (n=2)
+
+- мятущихся  · n=1  · mahabharata-dronaparva
+- движущееся  · n=1  · br-up
+
+### `BramadBiH` — bhramadbhiḥ  (n=2)
+
+- прохожие  · n=1  · buddhacharita
+- вьющиеся  · n=1  · raghuvamsha
+
+### `BramadraTAmbude` — bhramadrathāmbude  (n=1)
+
+- в облаке колесниц  · n=1  · mahabharata-dronaparva
+
+### `BramamARAn` — bhramamāṇān  (n=1)
+
+- мечутся  · n=1  · mahabharata-karnaparva
+
+### `Braman` — bhraman  (n=3)
+
+- скитался  · n=1  · mahabharata-aranyakaparva
+- бродя  · n=1  · mahabharata-adiparva
+- скитающийся  · n=1  · shukasaptati
+
+### `Bramant` — bhramant  (n=1)
+
+- бродящего  · n=1  · ramayana-sundarakanda
+
+### `BramantI` — bhramantī  (n=1)
+
+- бродила  · n=1  · gitagovinda
+
+### `Bramanta` — bhramanta  (n=1)
+
+- напоминавшие  · n=1  · mahabharata-dronaparva
+
+### `BramantyaH` — bhramantyaḥ  (n=1)
+
+- странствующие  · n=1  · buddhacharita
+
+### `BramarABilInayoH` — bhramarābhilīnayoḥ  (n=1)
+
+- с пчелами, льнущими к ним  · n=1  · raghuvamsha
+
+### `BramarAH` — bhramarāḥ  (n=2)
+
+- Пчелы  · n=1  · buddhacharita
+- пчелы  · n=1  · mahabharata-karnaparva
+
+### `BramarI` — bhramarī  (n=1)
+
+- черная пчела  · n=1  · raghuvamsha
+
+### `Bramara` — bhramara  (n=14)
+
+- пчелы  · n=5  · ramayana-aranyakanda, ramayana-sundarakanda, mahabharata-dronaparva, raghuvamsha
+- пчел  · n=5  · mahabharata-karnaparva, mahabharata-shalyaparva, raghuvamsha, hatha-yoga-pradipika, gitagovinda
+- пчелами  · n=2  · ramayana-ayodhyakanda, mahabharata-dronaparva
+- пчела  · n=1  · mahabharata-udyogaparva
+- пчеле  · n=1  · amaru-shataka
+
+### `BramaraS` — bhramaraś  (n=1)
+
+- пчела  · n=1  · raghuvamsha
+
+### `BramaraiH` — bhramaraiḥ  (n=4)
+
+- по-пчелиному  · n=2  · mahabharata-ashvamedhikaparva
+- пчелы  · n=1  · mahabharata-aranyakaparva
+- пчел  · n=1  · mahabharata-dronaparva
+
+### `Bramarair` — bhramarair  (n=1)
+
+- пчелы  · n=1  · mahabharata-aranyakaparva
+
+### `Bramaraka` — bhramaraka  (n=6)
+
+- поворот  · n=3  · kama-sutra
+- движущееся  · n=2  · kama-sutra
+- волчок  · n=1  · kama-sutra
+
+### `BramarapaNkti` — bhramarapaṅkti  (n=2)
+
+- рои пчел  · n=1  · mahabharata-aranyakaparva
+- пчелиным роям  · n=1  · mahabharata-karnaparva
+
+### `BramarasaMkramitekzaRavfttayaH` — bhramarasaṃkramitekṣaṇavṛttayaḥ  (n=1)
+
+- мечущие взоры пчелиными роями  · n=1  · raghuvamsha
+
+### `Bramarasya` — bhramarasya  (n=1)
+
+- пчелки  · n=1  · kumarasambhava
+
+### `Bramarayuta` — bhramarayuta  (n=1)
+
+- Где кружат рои пчел  · n=1  · ramayana-sundarakanda
+
+### `BramareRa` — bhramareṇa  (n=1)
+
+- пчелой  · n=1  · gitagovinda
+
+### `Bramas` — bhramas  (n=2)
+
+- водоворот  · n=2  · rigveda
+
+### `Bramasi` — bhramasi  (n=2)
+
+- облетаешь  · n=1  · shatakatrayam
+- обегаешь  · n=1  · shatakatrayam-serebryakov
+
+### `Bramat` — bhramat  (n=4)
+
+- бродил  · n=1  · ramayana-sundarakanda
+- движущийся  · n=1  · mahabharata-adiparva
+- бродили  · n=1  · mahabharata-dronaparva
+- жужжащей  · n=1  · amaru-shataka
+
+### `BramatA` — bhramatā  (n=1)
+
+- вьющейся  · n=1  · gitagovinda
+
+### `Bramati` — bhramati  (n=26)
+
+- блуждает  · n=8  · mahabharata-adiparva, mahabharata-bhishmaparva, bhagavadgita-burba, ramanuja_gitabhashya, bhagavadgita-erman, bhagavadgita-sementsov, bhagavadgita-radha, yoga-sutry_vyasa-bhashya
+- бродит  · n=2  · ramayana-aranyakanda
+- кружится  · n=2  · bhagavadgita-1788, bhagavadgita-1909
+- забывает  · n=2  · bhagavadgita-prabhupada
+- пробегая  · n=1  · ramayana-aranyakanda
+- плывет  · n=1  · ramayana-aranyakanda
+- пустился в скитания  · n=1  · mahabharata-aranyakaparva
+- смутился  · n=1  · gitarthasamgraha-abhinavagupta
+- идет кругом  · n=1  · bhagavadgita-1914
+- мутится  · n=1  · bhagavadgity
+- колеблется  · n=1  · bhagavadgita-smirnov
+- помутился  · n=1  · bhagavadgita-sharma
+- движения  · n=1  · shatakatrayam
+- кружащихся  · n=1  · shatakatrayam
+- бродишь  · n=1  · gitagovinda
+- вращается  · n=1  · sankhya-karika
+
+### `BramayAMcakAra` — bhramayāṃ cakāra  (n=1)
+
+- принялся вертеть  · n=1  · raghuvamsha
+
+### `Bramayan` — bhramayan  (n=1)
+
+- Потрясая  · n=1  · buddhacharita
+
+### `Bramayati` — bhramayati  (n=3)
+
+- плывет  · n=1  · shatakatrayam
+- вертит  · n=1  · shatakatrayam-serebryakov
+- колышется  · n=1  · shatakatrayam-serebryakov
+
+### `BramayitvA` — bhramayitvā  (n=1)
+
+- раскрутив  · n=1  · sankhya-karika
+
+### `Bramet` — bhramet  (n=1)
+
+- поворачивается  · n=1  · kama-sutra
+
+### `BramituM` — bhramituṃ  (n=1)
+
+- бегать  · n=1  · shukasaptati
+
+### `Bramohita` — bhramohita  (n=1)
+
+- приведенные в замешательство  · n=1  · mahabharata-adiparva
+
+### `Brasyate` — bhrasyate  (n=1)
+
+- гибнуть  · n=1  · mahabharata-udyogaparva
+
+### `BrazWa` — bhraṣṭha  (n=2)
+
+- лишился  · n=2  · ramayana-ayodhyakanda
+
+### `BrazwA` — bhraṣṭā  (n=2)
+
+- пропавшая  · n=1  · ramayana-sundarakanda
+- пущенное  · n=1  · mahabharata-bhishmaparva
+
+### `BrazwAH` — bhraṣṭāḥ  (n=2)
+
+- низринулись  · n=1  · mahabharata-adiparva
+- падают  · n=1  · mahabharata-shalyaparva
+
+### `BrazwAm` — bhraṣṭām  (n=1)
+
+- Упала  · n=1  · ramayana-ayodhyakanda
+
+### `Brazwa` — bhraṣṭa  (n=18)
+
+- изгнанного  · n=2  · ramayana-aranyakanda
+- утратившего  · n=1  · ramayana-sundarakanda
+- соскользнуло  · n=1  · ramayana-aranyakanda
+- в изгнании  · n=1  · ramayana-aranyakanda
+- разрушено  · n=1  · ramayana-aranyakanda
+- Упав  · n=1  · ramayana-balakanda
+- сорвавшиеся  · n=1  · mahabharata-aranyakaparva
+- упал  · n=1  · mahabharata-adiparva
+- упавший  · n=1  · mahabharata-adiparva
+- не познал  · n=1  · buddhacharita
+- расточается  · n=1  · buddhacharita
+- низринулся  · n=1  · mahabharata-udyogaparva
+- лишен  · n=1  · mahabharata-udyogaparva
+- уронила  · n=1  · raghuvamsha
+- нет  · n=1  · shatakatrayam
+- повыпадали  · n=1  · shatakatrayam-serebryakov
+- стерла  · n=1  · amaru-shataka
+
+### `BrazwaH` — bhraṣṭaḥ  (n=6)
+
+- хриплым  · n=1  · ramayana-ayodhyakanda
+- без дубины  · n=1  · ramayana-aranyakanda
+- обронил  · n=1  · mahabharata-aranyakaparva
+- исчез  · n=1  · mahabharata-aranyakaparva
+- низвергнулся  · n=1  · mahabharata-udyogaparva
+- скатился  · n=1  · mahabharata-udyogaparva
+
+### `BrazwaM` — bhraṣṭaṃ  (n=1)
+
+- упал  · n=1  · mahabharata-aranyakaparva
+
+### `Brazwakambala` — bhraṣṭakambala  (n=1)
+
+- с попонами, сбившимися на сторону  · n=1  · mahabharata-dronaparva
+
+### `Brazwam` — bhraṣṭam  (n=3)
+
+- низведении  · n=1  · ramayana-ayodhyakanda
+- соскользнул  · n=1  · ramayana-aranyakanda
+- низринувшегося  · n=1  · mahabharata-udyogaparva
+
+### `BrazwarAjya` — bhraṣṭarājya  (n=2)
+
+- лишенного царства  · n=2  · mahabharata-aranyakaparva
+
+### `BrazwarAjyaH` — bhraṣṭarājyaḥ  (n=1)
+
+- отнято царство  · n=1  · mahabharata-aranyakaparva
+
+### `BrazwatanUjANga` — bhraṣṭatanūjāṅga  (n=1)
+
+- лишено крыльев  · n=1  · mahabharata-udyogaparva
+
+### `Brazwavarma` — bhraṣṭavarma  (n=1)
+
+- когда спал с него доспех  · n=1  · mahabharata-karnaparva
+
+### `BrazwavijYAna` — bhraṣṭavijñāna  (n=1)
+
+- помраченный в знании  · n=1  · mahabharata-udyogaparva
+
+### `Brazwayoga` — bhraṣṭayoga  (n=1)
+
+- прервалась йога  · n=1  · mahabharata-mahaprasthanikaparva
+
+### `Brazwo` — bhraṣṭo  (n=1)
+
+- Уйдя  · n=1  · shukasaptati
+
+### `Breza` — bhreṣa  (n=1)
+
+- утрата  · n=1  · yoga-sutry_vyasa-bhashya
+
+### `Brezate` — bhreṣate  (n=1)
+
+- оступится  · n=1  · rigveda
+
+### `Brgu` — bhrgu  (n=1)
+
+- Бхригу  · n=1  · mahabharata-aranyakaparva
+
+### `BriyAte` — bhriyāte  (n=1)
+
+- опустить  · n=1  · rigveda
+
+### `Briyante` — bhriyante  (n=1)
+
+- откладываются  · n=1  · rigveda
+
+### `Briyate` — bhriyate  (n=1)
+
+- умирает  · n=1  · atma-up
+
+### `Brsam` — bhrsam  (n=3)
+
+- Много раз  · n=1  · mahabharata-aranyakaparva
+- Ярко  · n=1  · mahabharata-aranyakaparva
+- хорошо  · n=1  · mahabharata-sabhaparva
+
+### `Bru` — bhru  (n=9)
+
+- бровями  · n=3  · ramayana-sundarakanda, gitagovinda, jabala-up
+- бровь  · n=3  · bhagavadgita-burba, raghuvamsha
+- брови  · n=2  · mahabharata-udyogaparva, atma-up
+- бровей  · n=1  · kumarasambhava
+
+### `Bruhi` — bhruhi  (n=1)
+
+- Говори  · n=1  · ramayana-ayodhyakanda
+
+### `BrukuwI` — bhrukuṭī  (n=6)
+
+- бровями  · n=1  · ramayana-ayodhyakanda
+- сдвинув  · n=1  · ramayana-aranyakanda
+- морщины  · n=1  · mahabharata-karnaparva
+- брови  · n=1  · mahabharata-shalyaparva
+- нахмурил брови  · n=1  · mahabharata-sabhaparva
+- бровь  · n=1  · shatakatrayam-serebryakov
+
+### `BrukuwIM` — bhrukuṭīṃ  (n=1)
+
+- брови  · n=1  · mahabharata-shalyaparva
+
+### `BrukuwIkuwila` — bhrukuṭīkuṭila  (n=1)
+
+- с нахмуренными бровями  · n=1  · mahabharata-karnaparva
+
+### `BrukuwIm` — bhrukuṭīm  (n=1)
+
+- брови  · n=1  · ramayana-ayodhyakanda
+
+### `BrukuwIpuwa` — bhrukuṭīpuṭa  (n=1)
+
+- излом нахмуренных бровей  · n=1  · mahabharata-sabhaparva
+
+### `Brukuwim` — bhrukuṭim  (n=1)
+
+- брови  · n=1  · mahabharata-udyogaparva
+
+### `BrukuwipuwAkuwilaH` — bhrukuṭipuṭākuṭilaḥ  (n=1)
+
+- с грозно сдвинутыми бровями, изогнутыми в морщинах  · n=1  · mahabharata-dronaparva
+
+### `Bruvau` — bhruvau  (n=3)
+
+- брови  · n=2  · buddhacharita, gitagovinda
+- между бровями  · n=1  · br-up
+
+### `BruvoH` — bhruvoḥ  (n=6)
+
+- бровей  · n=4  · mahabharata-bhishmaparva, gitarthasamgraha-abhinavagupta, rigveda
+- бровями  · n=1  · bhagavadgita-1788
+- бхрумадхью  · n=1  · bhagavadgita-sharma
+
+### `BruvoHmaDye` — bhruvoḥ madhye  (n=3)
+
+- между бровей  · n=2  · bhagavadgita-prabhupada, bhagavadgita-radha
+- межбровье  · n=1  · bhagavadgita-prabhupada
+
+### `Bruvor` — bhruvor  (n=3)
+
+- бровей  · n=2  · ramayana-ayodhyakanda, ramanuja_gitabhashya
+- межбровье  · n=1  · hatha-yoga-pradipika
+
+### `Bruvorantargata` — bhruvorantargata  (n=1)
+
+- в межбровье  · n=1  · hatha-yoga-pradipika
+
+### `BruvormaDye` — bhruvor madhye  (n=22)
+
+- между бровей  · n=11  · mahabharata-dronaparva, bhagavadgita-erman, bhagavadgita-smirnov, mahabharata-karnaparva, mahabharata-bhishmaparva, bhagavadgita-1788, mahabharata-sauptikaparva
+- меж бровей  · n=5  · mahabharata-aranyakaparva, gitarthasamgraha-abhinavagupta, bhagavadgita-sementsov, mahabharata-karnaparva, mahabharata-bhishmaparva
+- межбровье  · n=3  · bhagavadgita-smirnov, bhagavadgita-sharma, hatha-yoga-pradipika
+- в средостении между бровями  · n=1  · bhagavadgita-1914
+- в межбровье  · n=1  · bhagavadgity
+- Между бровей  · n=1  · bhagavadgita-1909
+
+### `Bruvos` — bhruvos  (n=2)
+
+- бровей  · n=2  · bhagavadgita-burba
+
+### `Bu` — bhu  (n=30)
+
+- земле  · n=7  · ramayana-balakanda, mahabharata-adiparva, mahabharata-dronaparva, devi-gita, shatakatrayam, shatakatrayam-serebryakov
+- земля  · n=4  · mahabharata-adiparva, mahabharata-udyogaparva
+- землю  · n=3  · ramayana-ayodhyakanda, mahabharata-adiparva
+- земли  · n=3  · ramayana-ayodhyakanda, rigveda, shatakatrayam-serebryakov
+- руку  · n=2  · mahabharata-dronaparva
+- Будь  · n=2  · rigveda, rigveda
+- есть  · n=1  · ramayana-balakanda
+- ты охватил  · n=1  · rigveda
+- стал бы  · n=1  · rigveda
+- на земле  · n=1  · mahabharata-adiparva
+- господин  · n=1  · rigveda
+- будь  · n=1  · rigveda
+- рука  · n=1  · mahabharata-shalyaparva
+- питаясь  · n=1  · mahabharata-ashvamedhikaparva
+- Земле  · n=1  · mahabharata-virataparva
+
+### `BuDnya` — bhudhnya  (n=1)
+
+- глубинного  · n=1  · atharvaveda
+
+### `BuNge` — bhuṅge  (n=1)
+
+- вкушает  · n=1  · gitarthasamgraha-abhinavagupta
+
+### `BuNkai` — bhuṅkai  (n=1)
+
+- подобают  · n=1  · ramayana-aranyakanda
+
+### `BuNkta` — bhuṅkta  (n=1)
+
+- принялась за еду  · n=1  · mahabharata-ashramavasikaparva
+
+### `BuNkte` — bhuṅkte  (n=74)
+
+- наслаждается  · n=11  · bhagavadgita-smirnov, bhagavadgita-prabhupada, mahabharata-adiparva, mahabharata-udyogaparva, gitarthasamgraha-abhinavagupta, bhagavadgity, bhagavadgita-sharma, bhagavadgita-radha
+- вкушает  · n=11  · bhagavadgita-burba, mahabharata-udyogaparva, ramanuja_gitabhashya, mahabharata-ashvamedhikaparva, bhagavadgita-sementsov, mahabharata-shalyaparva
+- ест  · n=7  · manavadharmashastra, ramayana-ayodhyakanda, ramayana-sundarakanda, mahabharata-udyogaparva, mahabharata-shalyaparva
+- правит  · n=2  · mahabharata-aranyakaparva, raghuvamsha
+- продолжал есть  · n=2  · mahabharata-adiparva
+- пользуется  · n=2  · mahabharata-bhishmaparva, bhagavadgita-1914
+- приемлет  · n=2  · mahabharata-bhishmaparva, bhagavadgita-erman
+- пожинает  · n=2  · mahabharata-udyogaparva, mahabharata-mahaprasthanikaparva
+- принимал пищу  · n=2  · mahabharata-ashvamedhikaparva, shukasaptati
+- берет корм  · n=2  · shatakatrayam
+- достигается  · n=1  · manavadharmashastra
+- съедает  · n=1  · manavadharmashastra
+- принимается за еду  · n=1  · mahabharata-aranyakaparva
+- пожирает  · n=1  · mahabharata-aranyakaparva
+- резвятся  · n=1  · mahabharata-aranyakaparva
+- владел  · n=1  · mahabharata-adiparva
+- правил  · n=1  · mahabharata-adiparva
+- поедает  · n=1  · mahabharata-adiparva
+- ел  · n=1  · mahabharata-adiparva
+- получаемые  · n=1  · bhagavadgita-1914
+- Наслаждающійся  · n=1  · bhagavadgita-1788
+- участвуетъ  · n=1  · bhagavadgita-1788
+- воспринимаетъ  · n=1  · bhagavadgita-1909
+- принимает  · n=1  · bhagavadgita-sharma
+- испытывает  · n=1  · bhagavadgita-radha
+- радует  · n=1  · kumarasambhava
+- обладало  · n=1  · kumarasambhava
+- владеет  · n=1  · mahabharata-ashvamedhikaparva
+- обладать  · n=1  · mahabharata-ashvamedhikaparva
+- испытывать  · n=1  · mahabharata-ashvamedhikaparva
+- получать  · n=1  · mahabharata-ashvamedhikaparva
+- наслаждаешься  · n=1  · shatakatrayam
+- поест  · n=1  · shatakatrayam-serebryakov
+- делал  · n=1  · shukasaptati
+- предавался удовольствиям  · n=1  · shukasaptati
+- забавлялся  · n=1  · shukasaptati
+- зажил  · n=1  · shukasaptati
+- стал  · n=1  · shukasaptati
+- питается  · n=1  · kau-up
+- Питается  · n=1  · kau-up
+- съедал  · n=1  · mahabharata-adiparva
+
+### `BuNkteti` — bhuṅkteti  (n=2)
+
+- Наслаждайтесь  · n=1  · mahabharata-adiparva
+- наслаждайтесь  · n=1  · mahabharata-adiparva
+
+### `BuNkze` — bhuṅkṣe  (n=3)
+
+- испытывал  · n=1  · mahabharata-ashvamedhikaparva
+- наслаждался  · n=1  · mahabharata-ashvamedhikaparva
+- наслаждаешься  · n=1  · mahabharata-ashvamedhikaparva
+
+### `BuNkzva` — bhuṅkṣva  (n=38)
+
+- наслаждайся  · n=13  · ramayana-sundarakanda, mahabharata-udyogaparva, mahabharata-aranyakaparva, bhagavadgita-burba, bhagavadgita-1914, bhagavadgita-sementsov, bhagavadgita-sharma, bhagavadgita-prabhupada, bhagavadgita-radha, mahabharata-karnaparva, mahabharata-ashvamedhikaparva
+- насладись  · n=4  · ramayana-ayodhyakanda, buddhacharita, gitarthasamgraha-abhinavagupta, bhagavadgita-smirnov
+- владей  · n=3  · mahabharata-aranyakaparva, mahabharata-bhishmaparva, bhagavadgita-erman
+- ешь  · n=2  · ramayana-sundarakanda, ramanuja_gitabhashya
+- услаждайся  · n=2  · mahabharata-shalyaparva
+- отведай  · n=1  · ramayana-ayodhyakanda
+- Вкушай  · n=1  · mahabharata-adiparva
+- пожинай  · n=1  · mahabharata-bhishmaparva
+- Пожинай  · n=1  · mahabharata-dronaparva
+- предавайся  · n=1  · buddhacharita
+- Возьми  · n=1  · buddhacharita
+- Наслаждайся  · n=1  · mahabharata-udyogaparva
+- приими  · n=1  · bhagavadgity
+- пріими  · n=1  · bhagavadgita-1788
+- вниди  · n=1  · bhagavadgita-1909
+- закуси  · n=1  · shukasaptati
+- поешь  · n=1  · shukasaptati
+- пользуйся  · n=1  · shukasaptati
+- вкушай  · n=1  · mahabharata-ashramavasikaparva
+
+### `BuSuRqI` — bhuśuṇḍī  (n=7)
+
+- бхушунди  · n=6  · mahabharata-aranyakaparva, mahabharata-karnaparva, mahabharata-adiparva, mahabharata-dronaparva
+- Бхушунди  · n=1  · mahabharata-sauptikaparva
+
+### `BuSuRqIBiH` — bhuśuṇḍībhiḥ  (n=1)
+
+- огненными снарядами  · n=1  · mahabharata-bhishmaparva
+
+### `BuSuRqIpASahastAH` — bhuśuṇḍīpāśahastāḥ  (n=1)
+
+- арканы и бхушунди  · n=1  · mahabharata-sauptikaparva
+
+### `BuSuRqi` — bhuśuṇḍi  (n=4)
+
+- бхушунди  · n=3  · mahabharata-dronaparva, mahabharata-karnaparva, mahabharata-shalyaparva
+- Бхушунди  · n=1  · mahabharata-shalyaparva
+
+### `BuSuRqyaH` — bhuśuṇḍyaḥ  (n=4)
+
+- бхушунди  · n=3  · mahabharata-dronaparva, mahabharata-adiparva
+- Бхушунди  · n=1  · mahabharata-dronaparva
+
+### `BuYj` — bhuñj  (n=22)
+
+- ест  · n=3  · manavadharmashastra, nyaya-bhashya, mahabharata-ashvamedhikaparva
+- вкушая  · n=2  · mahabharata-adiparva, bhagavadgita-1909
+- вкушать  · n=2  · mahabharata-adiparva, manavadharmashastra
+- пользуется  · n=2  · bhagavadgita-erman, bhagavadgita-1909
+- охраняем  · n=2  · ch-up
+- использует  · n=2  · shatakatrayam-serebryakov
+- поглощает  · n=1  · manavadharmashastra
+- наслаждаться  · n=1  · mahabharata-aranyakaparva
+- вкушали  · n=1  · mahabharata-aranyakaparva
+- наслаждается  · n=1  · bhagavadgity
+- вкушают  · n=1  · bhagavadgity
+- вкушает  · n=1  · bhagavadgita-sementsov
+- Кришна  · n=1  · bhagavadgita-1909
+- Брама  · n=1  · bhagavadgita-1909
+- питается  · n=1  · shukasaptati
+
+### `BuYjAmo` — bhuñjāmo  (n=1)
+
+- охраняем  · n=1  · ch-up
+
+### `BuYjAnA` — bhuñjānā  (n=3)
+
+- Наслаждалась  · n=1  · ramayana-sundarakanda
+- Наслаждаясь  · n=1  · ramayana-aranyakanda
+- вкушая  · n=1  · mahabharata-aranyakaparva
+
+### `BuYjAnAH` — bhuñjānāḥ  (n=3)
+
+- вкушайте  · n=1  · mahabharata-aranyakaparva
+- вкушая  · n=1  · mahabharata-adiparva
+- питающихся  · n=1  · mahabharata-sabhaparva
+
+### `BuYjAna` — bhuñjāna  (n=16)
+
+- наслаждающегося  · n=3  · bhagavadgity, bhagavadgita-smirnov, bhagavadgita-radha
+- вкушающий  · n=2  · manavadharmashastra
+- принимая пищу  · n=1  · manavadharmashastra
+- поглощая пищу  · n=1  · manavadharmashastra
+- вкушающих  · n=1  · manavadharmashastra
+- использующий  · n=1  · manavadharmashastra
+- наслаждаясь  · n=1  · ramayana-aranyakanda
+- ел  · n=1  · mahabharata-adiparva
+- вкушающего  · n=1  · mahabharata-bhishmaparva
+- наслаждается  · n=1  · bhagavadgita-1914
+- ощущает  · n=1  · bhagavadgita-sementsov
+- душу  · n=1  · bhagavadgita-1909
+- вкусить  · n=1  · mahabharata-ashvamedhikaparva
+
+### `BuYjAnaH` — bhuñjānaḥ  (n=1)
+
+- наслаждаешься  · n=1  · mahabharata-udyogaparva
+
+### `BuYjAnaM` — bhuñjānaṃ  (n=3)
+
+- наслаждается  · n=1  · gitarthasamgraha-abhinavagupta
+- вкушает  · n=1  · ramanuja_gitabhashya
+- въ наслажденіи  · n=1  · bhagavadgita-1788
+
+### `BuYjAnam` — bhuñjānam  (n=5)
+
+- наслаждающегося  · n=2  · bhagavadgita-burba, bhagavadgita-prabhupada
+- поедавшего  · n=1  · mahabharata-adiparva
+- вкушающего  · n=1  · bhagavadgita-erman
+- наслаждающимся  · n=1  · bhagavadgita-sharma
+
+### `BuYjAte` — bhuñjāte  (n=1)
+
+- ели  · n=1  · mahabharata-adiparva
+
+### `BuYjITAH` — bhuñjīthāḥ  (n=3)
+
+- наслаждайся  · n=1  · bhagavadgita-radha
+- Наслаждайся  · n=1  · isha-up
+- Терпи  · n=1  · isha-up
+
+### `BuYjIra` — bhuñjīra  (n=1)
+
+- вкушающие  · n=1  · manavadharmashastra
+
+### `BuYjIta` — bhuñjīta  (n=12)
+
+- есть  · n=4  · manavadharmashastra
+- ест  · n=4  · manavadharmashastra, mahabharata-ashvamedhikaparva
+- вкусит  · n=1  · manavadharmashastra
+- пользуется  · n=1  · manavadharmashastra
+- наслаждаться  · n=1  · mahabharata-udyogaparva
+- вкушать  · n=1  · mahabharata-ashvamedhikaparva
+
+### `BuYjIyAm` — bhuñjīyām  (n=2)
+
+- кормили  · n=2  · mahabharata-aranyakaparva
+
+### `BuYjIyAtAm` — bhuñjīyātām  (n=1)
+
+- могут есть  · n=1  · manavadharmashastra
+
+### `BuYjIya` — bhuñjīya  (n=14)
+
+- буду вкушать  · n=5  · mahabharata-bhishmaparva, bhagavadgita-burba, bhagavadgita-erman, bhagavadgita-prabhupada, bhagavadgita-radha
+- вкусим  · n=2  · gitarthasamgraha-abhinavagupta, bhagavadgity
+- вкушать  · n=1  · ramanuja_gitabhashya
+- буду есть  · n=1  · bhagavadgita-1914
+- будем вкушать  · n=1  · bhagavadgita-smirnov
+- пріобрѣлъ бы  · n=1  · bhagavadgita-1788
+- измажу  · n=1  · bhagavadgita-sementsov
+- наслаждался бы  · n=1  · bhagavadgita-1909
+- буду наслаждаться  · n=1  · bhagavadgita-sharma
+
+### `BuYjamAna` — bhuñjamāna  (n=1)
+
+- ели и пили  · n=1  · ramayana-balakanda
+
+### `BuYjan` — bhuñjan  (n=2)
+
+- вкушая  · n=1  · mahabharata-adiparva
+- владевший  · n=1  · manavadharmashastra
+
+### `BuYjanti` — bhuñjanti  (n=1)
+
+- ели  · n=1  · mahabharata-aranyakaparva
+
+### `BuYjat` — bhuñjat  (n=1)
+
+- едящим  · n=1  · yotat-up
+
+### `BuYjatAm` — bhuñjatām  (n=1)
+
+- приступили к еде  · n=1  · mahabharata-ashvamedhikaparva
+
+### `BuYjatInAm` — bhuñjatīnām  (n=1)
+
+- приносящие пользу  · n=1  · rigveda
+
+### `BuYjata` — bhuñjata  (n=1)
+
+- скупого  · n=1  · rigveda
+
+### `BuYjate` — bhuñjate  (n=43)
+
+- вкушают  · n=9  · mahabharata-adiparva, buddhacharita, mahabharata-udyogaparva, gitarthasamgraha-abhinavagupta, bhagavadgita-smirnov, bhagavadgita-sharma, bhagavadgita-prabhupada, mahabharata-ashvamedhikaparva
+- едят  · n=5  · mahabharata-karnaparva, bhagavadgita-burba, mahabharata-sabhaparva, shatakatrayam
+- поедают  · n=3  · manavadharmashastra, ramanuja_gitabhashya, bhagavadgita-sementsov
+- наслаждаются  · n=3  · shatakatrayam-serebryakov, manavadharmashastra
+- питаются  · n=3  · mahabharata-bhishmaparva, bhagavadgita-1914, bhagavadgita-radha
+- вкушали  · n=2  · mahabharata-aranyakaparva
+- насыщаются  · n=2  · mahabharata-bhishmaparva, bhagavadgita-erman
+- владеют  · n=2  · shatakatrayam
+- насытилась  · n=1  · manavadharmashastra
+- пожирают  · n=1  · manavadharmashastra
+- ели и пили  · n=1  · ramayana-balakanda
+- в жертву  · n=1  · ramayana-balakanda
+- вкушать будет  · n=1  · mahabharata-aranyakaparva
+- доедала  · n=1  · mahabharata-aranyakaparva
+- кормятся  · n=1  · mahabharata-adiparva
+- пользуются  · n=1  · rigveda
+- ѣдятъ  · n=1  · bhagavadgita-1788
+- довольствуются  · n=1  · mahabharata-sabhaparva
+- используют  · n=1  · rigveda
+- питающиеся  · n=1  · shatakatrayam-serebryakov
+- завоевывают  · n=1  · shatakatrayam-serebryakov
+- ели  · n=1  · mahabharata-adiparva
+
+### `BuYje` — bhuñje  (n=2)
+
+- ем  · n=1  · mahabharata-adiparva
+- еда моя состоит  · n=1  · mahabharata-ashramavasikaparva
+
+### `BuYjema` — bhuñjema  (n=1)
+
+- правь  · n=1  · mahabharata-bhishmaparva
+
+### `BuYjyuH` — bhuñjyuḥ  (n=1)
+
+- приносят пользу  · n=1  · br-up
+
+### `BuaMgendrasamAnasAre` — bhuaṃgendrasamānasāre  (n=1)
+
+- мощью равную царю змиев  · n=1  · raghuvamsha
+
+### `BudDa` — Buddha  (n=1)
+
+- Будда  · n=1  · nyaya-bhashya
+
+### `BugnaBrUH` — bhugnabhrūḥ  (n=1)
+
+- бровей не хмурит  · n=1  · amaru-shataka
+
+### `Bugnavaktra` — bhugnavaktra  (n=2)
+
+- с искривленными лицами  · n=1  · ramayana-sundarakanda
+- с искривленными ртами  · n=1  · ramayana-sundarakanda
+
+### `Buj` — bhuj  (n=43)
+
+- насладиться  · n=3  · rigveda, bhagavadgita-smirnov, bhagavadgita-sharma
+- вкушающие  · n=3  · gitarthasamgraha-abhinavagupta, bhagavadgity, bhagavadgita-radha
+- пользовался  · n=1  · mahabharata-adiparva
+- наслаждайся  · n=1  · ramayana-ayodhyakanda
+- еда  · n=1  · manavadharmashastra
+- есть  · n=1  · manavadharmashastra
+- съев  · n=1  · manavadharmashastra
+- использовалась  · n=1  · manavadharmashastra
+- оштрафован  · n=1  · manavadharmashastra
+- использует  · n=1  · manavadharmashastra
+- шудра  · n=1  · manavadharmashastra
+- терпят бедствие  · n=1  · ramayana-aranyakanda
+- пожинать  · n=1  · mahabharata-aranyakaparva
+- овладел  · n=1  · rigveda
+- вкушающих  · n=1  · rigveda
+- извлекли пользу  · n=1  · rigveda
+- жертвенной услады  · n=1  · rigveda
+- наслаждался  · n=1  · mahabharata-adiparva
+- поедаемую  · n=1  · mahabharata-adiparva
+- вкушают  · n=1  · mahabharata-bhishmaparva
+- руки  · n=1  · mahabharata-dronaparva
+- владеть  · n=1  · mahabharata-udyogaparva
+- вкушение  · n=1  · gitarthasamgraha-abhinavagupta
+- яства  · n=1  · rigveda
+- вкусишь  · n=1  · bhagavadgita-burba
+- будешь владеть  · n=1  · bhagavadgita-burba
+- вкушая  · n=1  · ramanuja_gitabhashya
+- насладишься  · n=1  · bhagavadgita-1914
+- пріобрѣтающій  · n=1  · bhagavadgita-1788
+- рука  · n=1  · mahabharata-shalyaparva
+- наслаждением  · n=1  · hatha-yoga-pradipika
+- наслаждаться  · n=1  · shatakatrayam-serebryakov
+- съешьте  · n=1  · shukasaptati
+- забавляться любовью  · n=1  · shukasaptati
+- спал  · n=1  · shukasaptati
+- вкусив  · n=1  · sankhya-karika
+- принимают пищу  · n=1  · mahabharata-ashramavasikaparva
+- вкушает  · n=1  · mai-up
+- пожинает  · n=1  · mahabharata-svargarohanikaparva
+
+### `BujA` — bhujā  (n=8)
+
+- руками  · n=6  · mahabharata-aranyakaparva, mahabharata-dronaparva, mahabharata-adiparva, mahabharata-mausalaparva
+- руки  · n=1  · buddhacharita
+- плечи  · n=1  · gitagovinda
+
+### `BujAByAM` — bhujābhyāṃ  (n=1)
+
+- руками  · n=1  · mahabharata-aranyakaparva
+
+### `BujAByAm` — bhujābhyām  (n=14)
+
+- руками  · n=9  · ramayana-ayodhyakanda, mahabharata-adiparva, ramayana-aranyakanda, mahabharata-aranyakaparva, mahabharata-ashvamedhikaparva, mahabharata-sabhaparva
+- обеими руками  · n=2  · mahabharata-bhishmaparva, mahabharata-dronaparva
+- Руками  · n=1  · ramayana-aranyakanda
+- силой своих рук  · n=1  · mahabharata-aranyakaparva
+- обнимая  · n=1  · mahabharata-ashvamedhikaparva
+
+### `BujAGAtAt` — bhujāghātāt  (n=1)
+
+- от хлопков их рук  · n=1  · mahabharata-sabhaparva
+
+### `BujAGAta` — bhujāghāta  (n=1)
+
+- ударяли друг друга руками  · n=1  · mahabharata-dronaparva
+
+### `BujAH` — bhujāḥ  (n=3)
+
+- руки  · n=2  · mahabharata-shalyaparva
+- руками  · n=1  · mahabharata-shalyaparva
+
+### `BujAMSca` — bhujāṃśca  (n=1)
+
+- руками  · n=1  · mahabharata-karnaparva
+
+### `BujAMsadeSa` — bhujāṃsadeśa  (n=2)
+
+- из подмышки  · n=1  · buddhacharita
+- плеча  · n=1  · buddhacharita
+
+### `BujANka` — bhujāṅka  (n=1)
+
+- объятиях  · n=1  · ramayana-sundarakanda
+
+### `BujAgra` — bhujāgra  (n=3)
+
+- запястье  · n=1  · mahabharata-dronaparva
+- изгиба  · n=1  · mahabharata-udyogaparva
+- кисти рук  · n=1  · mahabharata-karnaparva
+
+### `BujAgralaladujjvalakuRqalAni` — bhujāgralaladujjvalakuṇḍalāni  (n=1)
+
+- Серьги в ушах блистают, к самым плечам склонясь  · n=1  · chaurapanchashika
+
+### `BujAn` — bhujān  (n=1)
+
+- рук  · n=1  · raghuvamsha
+
+### `BujAntara` — bhujāntara  (n=1)
+
+- грудь  · n=1  · mahabharata-dronaparva
+
+### `BujAntaraM` — bhujāntaraṃ  (n=2)
+
+- грудь  · n=1  · raghuvamsha
+- груди  · n=1  · raghuvamsha
+
+### `BujAntaram` — bhujāntaram  (n=1)
+
+- объятия  · n=1  · raghuvamsha
+
+### `BujAntare` — bhujāntare  (n=1)
+
+- между ключиц  · n=1  · mahabharata-udyogaparva
+
+### `BujArjitAnAM` — bhujārjitānāṃ  (n=1)
+
+- обретенных им  · n=1  · raghuvamsha
+
+### `BujAu` — bhujāu  (n=1)
+
+- руки  · n=1  · mahabharata-shalyaparva
+
+### `BujI` — bhujī  (n=1)
+
+- несущие радость  · n=1  · rigveda
+
+### `Buja` — bhuja  (n=108)
+
+- руки  · n=32  · ramayana-sundarakanda, mahabharata-karnaparva, mahabharata-dronaparva, mahabharata-shalyaparva, ramayana-aranyakanda, buddhacharita, ramayana-ayodhyakanda, mahabharata-aranyakaparva, mahabharata-udyogaparva, mahabharata-ashvamedhikaparva, mahabharata-sabhaparva, raghuvamsha, mahabharata-ashramavasikaparva
+- руку  · n=16  · mahabharata-dronaparva, mahabharata-karnaparva, ramayana-sundarakanda, ramayana-ayodhyakanda, mahabharata-aranyakaparva, mahabharata-bhishmaparva, mahabharata-udyogaparva, mahabharata-sabhaparva, raghuvamsha, mahabharata-striparva
+- рука  · n=15  · ramayana-aranyakanda, mahabharata-aranyakaparva, mahabharata-dronaparva, mahabharata-karnaparva, raghuvamsha, ramayana-sundarakanda, mahabharata-bhishmaparva, mahabharata-udyogaparva, mahabharata-shalyaparva, mahabharata-striparva
+- руками  · n=13  · ramayana-aranyakanda, mahabharata-striparva, ramayana-sundarakanda, ramayana-balakanda, kama-sutra, mahabharata-bhishmaparva, mahabharata-dronaparva, buddhacharita
+- рук  · n=12  · ramayana-aranyakanda, mahabharata-adiparva, mahabharata-dronaparva, mahabharata-karnaparva, gitagovinda, ramayana-sundarakanda, mahabharata-udyogaparva
+- рукою  · n=4  · ramayana-aranyakanda, mahabharata-bhishmaparva, mahabharata-dronaparva, mahabharata-karnaparva
+- мощнорукий  · n=2  · ramayana-ayodhyakanda, ramayana-aranyakanda
+- чтобы им пользовались  · n=2  · rigveda
+- блага  · n=2  · rigveda
+- рукий  · n=1  · ramayana-aranyakanda
+- крыла  · n=1  · mahabharata-aranyakaparva
+- радости  · n=1  · rigveda
+- руках  · n=1  · mahabharata-bhishmaparva
+- Руками  · n=1  · buddhacharita
+- кисти  · n=1  · mahabharata-karnaparva
+- плечах  · n=1  · raghuvamsha
+- рукам  · n=1  · shatakatrayam
+- еду  · n=1  · shatakatrayam
+- ласкъ  · n=1  · megha-duta
+
+### `Buja-banDanaM` — bhuja-bandhanaṃ  (n=1)
+
+- цепью рук  · n=1  · gitagovinda
+
+### `BujaH` — bhujaḥ  (n=4)
+
+- Вкушающие  · n=2  · bhagavadgita-smirnov
+- пользу  · n=1  · rigveda
+- руку  · n=1  · mahabharata-aranyakaparva
+
+### `BujaMgADipateH` — bhujaṃgādhipateḥ  (n=2)
+
+- Тысячеглавый  · n=1  · kumarasambhava
+- змей Шеша  · n=1  · kumarasambhava
+
+### `BujaMga` — bhujaṃga  (n=4)
+
+- змеи  · n=2  · ramayana-sundarakanda, kumarasambhava
+- змея  · n=2  · ramayana-sundarakanda, raghuvamsha
+
+### `BujaMgaM` — bhujaṃgaṃ  (n=1)
+
+- змей  · n=1  · raghuvamsha
+
+### `BujaMgama` — bhujaṃgama  (n=3)
+
+- змей  · n=2  · ramayana-sundarakanda, raghuvamsha
+- змеи  · n=1  · ramayana-sundarakanda
+
+### `BujaMgamonnadDajawAkalApa` — bhujaṃgamonnaddhajaṭākalāpa  (n=1)
+
+- змеями перевитого  · n=1  · kumarasambhava
+
+### `BujaMgapihitadvAram` — bhujaṃgapihitadvāram  (n=1)
+
+- врата в который охраняют змии  · n=1  · raghuvamsha
+
+### `BujaMgarAja` — bhujaṃgarāja  (n=1)
+
+- царь змей  · n=1  · raghuvamsha
+
+### `BujaNgAH` — bhujaṅgāḥ  (n=1)
+
+- Змеи  · n=1  · ramayana-sundarakanda
+
+### `BujaNgI` — bhujaṅgī  (n=3)
+
+- змея  · n=2  · hatha-yoga-pradipika
+- Бхуджанги  · n=1  · hatha-yoga-pradipika
+
+### `BujaNga` — bhujaṅga  (n=16)
+
+- змей  · n=3  · mahabharata-adiparva, mahabharata-shalyaparva
+- змеи  · n=3  · mahabharata-dronaparva, shatakatrayam-serebryakov, paramarthasara-abhinavagupta
+- змеями  · n=2  · ramayana-sundarakanda, buddhacharita
+- змея  · n=2  · mahabharata-aranyakaparva, buddhacharita
+- змею  · n=2  · mahabharata-dronaparva, shatakatrayam
+- змеем  · n=1  · mahabharata-adiparva
+- змее  · n=1  · ramayana-sundarakanda
+- кобру  · n=1  · shatakatrayam-serebryakov
+- змеей  · n=1  · paramarthasara-abhinavagupta
+
+### `BujaNgaBakzaH` — bhujaṅgabhakṣaḥ  (n=1)
+
+- пожирая змей  · n=1  · mahabharata-adiparva
+
+### `BujaNgaBojin` — bhujaṅgabhojin  (n=1)
+
+- пожирателя змей  · n=1  · mahabharata-adiparva
+
+### `BujaNgadIrGa` — bhujaṅgadīrgha  (n=1)
+
+- длинные, будто змеи  · n=1  · buddhacharita
+
+### `BujaNgamA` — bhujaṅgamā  (n=1)
+
+- змея  · n=1  · mahabharata-adiparva
+
+### `BujaNgamAH` — bhujaṅgamāḥ  (n=2)
+
+- змеи  · n=2  · mahabharata-adiparva
+
+### `BujaNgamAm` — bhujaṅgamām  (n=1)
+
+- змею  · n=1  · mahabharata-adiparva
+
+### `BujaNgamAn` — bhujaṅgamān  (n=1)
+
+- змеям  · n=1  · mahabharata-adiparva
+
+### `BujaNgama` — bhujaṅgama  (n=18)
+
+- змей  · n=11  · mahabharata-adiparva, mahabharata-aranyakaparva, mahabharata-udyogaparva
+- змею  · n=2  · mahabharata-aranyakaparva, mahabharata-adiparva
+- змея  · n=2  · mahabharata-adiparva, mahabharata-karnaparva
+- змеев  · n=2  · mahabharata-svargarohanikaparva
+- о…сыне Дхритараштры…  · n=1  · mahabharata-aranyakaparva
+
+### `BujaNgama-nAyaka` — bhujaṅgama-nāyaka  (n=1)
+
+- повелитель змей  · n=1  · gitagovinda
+
+### `BujaNgame` — bhujaṅgame  (n=3)
+
+- о змея  · n=2  · mahabharata-adiparva
+- змея  · n=1  · mahabharata-adiparva
+
+### `BujaNgamottama` — bhujaṅgamottama  (n=1)
+
+- лучший из змей  · n=1  · mahabharata-adiparva
+
+### `BujaNgapravareRa` — bhujaṅgapravareṇa  (n=1)
+
+- змей  · n=1  · buddhacharita
+
+### `BujaNgavat` — bhujaṅgavat  (n=1)
+
+- ползущие змеи  · n=1  · ramayana-ayodhyakanda
+
+### `Bujabala` — bhujabala  (n=1)
+
+- силой рук  · n=1  · mahabharata-aranyakaparva
+
+### `BujacCedam` — bhujacchedam  (n=1)
+
+- отрубленную руку  · n=1  · raghuvamsha
+
+### `BujacyutAn` — bhujacyutān  (n=1)
+
+- выпущенные руками  · n=1  · mahabharata-shalyaparva
+
+### `Bujacyuta` — bhujacyuta  (n=1)
+
+- бросаемыми руками  · n=1  · mahabharata-udyogaparva
+
+### `Bujadvaye` — bhujadvaye  (n=1)
+
+- на обеих руках  · n=1  · mahabharata-aranyakaparva
+
+### `BujagAH` — bhujagāḥ  (n=7)
+
+- змеи  · n=7  · mahabharata-adiparva, mahabharata-dronaparva, mahabharata-shalyaparva
+
+### `BujagAriH` — bhujagāriḥ  (n=1)
+
+- враг змеев  · n=1  · mahabharata-sauptikaparva
+
+### `BujagAtmajA` — bhujagātmajā  (n=2)
+
+- дочь змеи  · n=1  · mahabharata-adiparva
+- дочь змея  · n=1  · mahabharata-mahaprasthanikaparva
+
+### `BujagAtmaje` — bhujagātmaje  (n=1)
+
+- дочь змея  · n=1  · mahabharata-ashvamedhikaparva
+
+### `BujagI` — bhujagī  (n=1)
+
+- змею  · n=1  · ramayana-aranyakanda
+
+### `Bujaga` — bhujaga  (n=27)
+
+- змей  · n=12  · mahabharata-adiparva, mahabharata-karnaparva, mahabharata-ashvamedhikaparva
+- змеи  · n=7  · mahabharata-adiparva, mahabharata-dronaparva, mahabharata-aranyakaparva, mahabharata-udyogaparva
+- змею  · n=2  · mahabharata-adiparva
+- змея  · n=2  · mahabharata-adiparva, mahabharata-bhishmaparva
+- змеями  · n=2  · ramayana-sundarakanda, mahabharata-dronaparva
+- змеиным  · n=1  · mahabharata-adiparva
+- змеей  · n=1  · mahabharata-adiparva
+
+### `BujagaSayana` — bhujagaśayana  (n=2)
+
+- со змѣя  · n=1  · megha-duta
+- змѣя  · n=1  · megha-duta
+
+### `BujagaSrezWaH` — bhujagaśreṣṭhaḥ  (n=1)
+
+- лучший из змей  · n=1  · mahabharata-adiparva
+
+### `BujagaiH` — bhujagaiḥ  (n=1)
+
+- змей  · n=1  · mahabharata-dronaparva
+
+### `Bujagam` — bhujagam  (n=1)
+
+- змею  · n=1  · mahabharata-karnaparva
+
+### `BujagasaNkASa` — bhujagasaṅkāśa  (n=1)
+
+- подобный змее  · n=1  · mahabharata-dronaparva
+
+### `BujagasvasA` — bhujagasvasā  (n=1)
+
+- сестра змеи  · n=1  · mahabharata-adiparva
+
+### `Bujagasya` — bhujagasya  (n=2)
+
+- змея  · n=2  · mahabharata-adiparva
+
+### `Bujagatva` — bhujagatva  (n=1)
+
+- в змею  · n=1  · mahabharata-adiparva
+
+### `Bujagavalaya` — bhujagavalaya  (n=2)
+
+- змѣю  · n=1  · megha-duta
+- запястье, змѣю  · n=1  · megha-duta
+
+### `BujagavarAgraja` — bhujagavarāgraja  (n=1)
+
+- старший брат лучших из змей  · n=1  · mahabharata-adiparva
+
+### `Bujagaviza` — bhujagaviṣa  (n=1)
+
+- змеиный яд  · n=1  · mahabharata-karnaparva
+
+### `Bujagena` — bhujagena  (n=1)
+
+- змеем  · n=1  · mahabharata-adiparva
+
+### `Bujagendra` — bhujagendra  (n=2)
+
+- повелитель змей  · n=1  · mahabharata-udyogaparva
+- змей  · n=1  · mahabharata-adiparva
+
+### `BujagendraBogapralambabAhu` — bhujagendrabhogapralambabāhu  (n=1)
+
+- с руками длинными, как тела огромных змей  · n=1  · mahabharata-adiparva
+
+### `BujagendravaDU` — bhujagendravadhū  (n=1)
+
+- невестке владыки змей  · n=1  · ramayana-sundarakanda
+
+### `Bujagopama` — bhujagopama  (n=3)
+
+- змее подобный  · n=2  · mahabharata-bhishmaparva
+- напоминающий собою змею  · n=1  · mahabharata-dronaparva
+
+### `Bujagottama` — bhujagottama  (n=6)
+
+- лучший из змей  · n=2  · mahabharata-adiparva
+- великие змеи  · n=1  · mahabharata-adiparva
+- о лучший из змеев  · n=1  · mahabharata-aranyakaparva
+- лучшая из змей  · n=1  · mahabharata-adiparva
+- лучший из змеев  · n=1  · mahabharata-udyogaparva
+
+### `BujagottamaH` — bhujagottamaḥ  (n=1)
+
+- лучший среди змей  · n=1  · buddhacharita
+
+### `Bujagottamam` — bhujagottamam  (n=1)
+
+- превосходнейшего из змей  · n=1  · mahabharata-dronaparva
+
+### `Bujagottame` — bhujagottame  (n=1)
+
+- лучшая среди змеев  · n=1  · mahabharata-ashvamedhikaparva
+
+### `BujaiH` — bhujaiḥ  (n=3)
+
+- голыми руками  · n=1  · mahabharata-dronaparva
+- руками  · n=1  · mahabharata-dronaparva
+- на руках  · n=1  · mahabharata-sabhaparva
+
+### `BujalatA` — bhujalatā  (n=5)
+
+- руки лиана  · n=1  · shatakatrayam
+- лианоподобная рука  · n=1  · shatakatrayam-serebryakov
+- рука  · n=1  · shatakatrayam-serebryakov
+- лиана руки  · n=1  · shatakatrayam-serebryakov
+- лианой-рукой  · n=1  · amaru-shataka
+
+### `BujalatArpitakaRWapASAM` — bhujalatārpitakaṇṭhapāśāṃ  (n=1)
+
+- лианами нежных рук Шею мою обхватила  · n=1  · chaurapanchashika
+
+### `Bujam` — bhujam  (n=7)
+
+- руку  · n=5  · ramayana-ayodhyakanda, mahabharata-udyogaparva, raghuvamsha
+- для наслаждения  · n=1  · rigveda
+- насладится  · n=1  · atharvaveda
+
+### `BujamUrDorubAhulyAt` — bhujamūrdhorubāhulyāt  (n=1)
+
+- так много было у него рук, и голов, и бедер  · n=1  · raghuvamsha
+
+### `BujamaDya` — bhujamadhya  (n=1)
+
+- груди  · n=1  · raghuvamsha
+
+### `BujamayI` — bhujamayī  (n=2)
+
+- руки  · n=2  · kama-sutra
+
+### `BujamgaiH` — bhujamgaiḥ  (n=1)
+
+- вырвалась из-под пяты Вишну  · n=1  · ramayana-ayodhyakanda
+
+### `BujanAgasamAkulAm` — bhujanāgasamākulām  (n=1)
+
+- руки (воинов) заменяли змей  · n=1  · mahabharata-dronaparva
+
+### `Bujanirjitadviz` — bhujanirjitadviṣ  (n=1)
+
+- разгромив врагов мощью длани своей  · n=1  · raghuvamsha
+
+### `Bujanirmukta` — bhujanirmukta  (n=1)
+
+- выпущенная из его руки  · n=1  · mahabharata-dronaparva
+
+### `BujanisvanaH` — bhujanisvanaḥ  (n=1)
+
+- шум рукоплесканий  · n=1  · mahabharata-adiparva
+
+### `BujantA` — bhujantā  (n=1)
+
+- Пользуясь  · n=1  · rigveda
+
+### `BujapASa` — bhujapāśa  (n=2)
+
+- объятиях  · n=1  · ramayana-sundarakanda
+- руки  · n=1  · buddhacharita
+
+### `BujaplavaiH` — bhujaplavaiḥ  (n=1)
+
+- вплавь  · n=1  · mahabharata-adiparva
+
+### `BujapraharaRa` — bhujapraharaṇa  (n=1)
+
+- с голыми руками  · n=1  · mahabharata-bhishmaparva
+
+### `BujasaMBogapIqita` — bhujasaṃbhogapīḍita  (n=1)
+
+- сжав в объятиях  · n=1  · ramayana-sundarakanda
+
+### `BujasamAhftadigvasunA` — bhujasamāhṛtadigvasunā  (n=1)
+
+- чья длань собрала великие богатства во всех странах  · n=1  · raghuvamsha
+
+### `Bujau` — bhujau  (n=9)
+
+- руки  · n=8  · ramayana-aranyakanda, mahabharata-karnaparva
+- обе руки  · n=1  · mahabharata-shalyaparva
+
+### `BujavIryABiguptaH` — bhujavīryābhiguptaḥ  (n=1)
+
+- защищен силой рук  · n=1  · ramayana-sundarakanda
+
+### `BujavIryArjita` — bhujavīryārjita  (n=1)
+
+- добытые силой рук  · n=1  · mahabharata-dronaparva
+
+### `BujavIrya` — bhujavīrya  (n=6)
+
+- силой своих рук  · n=1  · ramayana-balakanda
+- мощью руки  · n=1  · mahabharata-aranyakaparva
+- могуществом рук  · n=1  · mahabharata-adiparva
+- силой твоих рук  · n=1  · mahabharata-adiparva
+- мощь рук  · n=1  · mahabharata-dronaparva
+- мощью рук  · n=1  · mahabharata-dronaparva
+
+### `BujavIryavyapASrayam` — bhujavīryavyapāśrayam  (n=1)
+
+- опирался на мощь своих рук  · n=1  · mahabharata-aranyakaparva
+
+### `BujavIrye` — bhujavīrye  (n=1)
+
+- мощи своих рук  · n=1  · mahabharata-mausalaparva
+
+### `BujavIryeRa` — bhujavīryeṇa  (n=1)
+
+- мощью руки  · n=1  · mahabharata-aranyakaparva
+
+### `Bujavega` — bhujavega  (n=1)
+
+- изо всей силы рук  · n=1  · mahabharata-shalyaparva
+
+### `Bujavegena` — bhujavegena  (n=1)
+
+- проворством рук  · n=1  · mahabharata-aranyakaparva
+
+### `BujavijitavimAnaratnADirUQaH` — bhujavijitavimānaratnādhirūḍhaḥ  (n=1)
+
+- взошел на прекраснейшую из небесных колесниц, которую завоевал своею дланью  · n=1  · raghuvamsha
+
+### `BujavinizpezAt` — bhujaviniṣpeṣāt  (n=1)
+
+- от сжатия рук  · n=1  · mahabharata-aranyakaparva
+
+### `Bujavinizpeza` — bhujaviniṣpeṣa  (n=1)
+
+- мяли друг друга руками  · n=1  · mahabharata-aranyakaparva
+
+### `BujayoH` — bhujayoḥ  (n=6)
+
+- рук  · n=3  · mahabharata-dronaparva, mahabharata-karnaparva
+- от его рук  · n=1  · mahabharata-aranyakaparva
+- в обеих руках  · n=1  · shatakatrayam-serebryakov
+- в руках  · n=1  · mahabharata-mausalaparva
+
+### `Buje` — bhuje  (n=14)
+
+- подкрепляющей пищи  · n=2  · rigveda
+- насладится  · n=1  · rigveda
+- на радость  · n=1  · rigveda
+- насладились  · n=1  · rigveda
+- для наслаждения  · n=1  · rigveda
+- к наслаждению  · n=1  · rigveda
+- пользу  · n=1  · rigveda
+- рукою  · n=1  · mahabharata-dronaparva
+- чтобы насладиться  · n=1  · rigveda
+- для удовольствия  · n=1  · rigveda
+- в руку  · n=1  · raghuvamsha
+- в длань  · n=1  · raghuvamsha
+- руку  · n=1  · raghuvamsha
+
+### `BujemA` — bhujemā  (n=1)
+
+- потерпим  · n=1  · rigveda
+
+### `Bujema` — bhujema  (n=6)
+
+- расплатимся  · n=5  · rigveda, rigveda
+- испытаем мы  · n=1  · rigveda
+
+### `Bujezu` — bhujeṣu  (n=1)
+
+- на руках  · n=1  · mahabharata-udyogaparva
+
+### `Buji` — bhuji  (n=1)
+
+- наслаждение  · n=1  · rigveda
+
+### `BujiNga` — bhujiṅga  (n=1)
+
+- Бхуджинги  · n=1  · mahabharata-bhishmaparva
+
+### `BujizyA` — bhujiṣyā  (n=4)
+
+- служанка  · n=2  · raghuvamsha, mahabharata-virataparva
+- рабыня  · n=1  · mahabharata-adiparva
+- поступающие в услужение  · n=1  · mahabharata-virataparva
+
+### `BujizyAm` — bhujiṣyām  (n=1)
+
+- наемница  · n=1  · mahabharata-aranyakaparva
+
+### `Bujizya` — bhujiṣya  (n=1)
+
+- доставляющий наслаждение  · n=1  · atharvaveda
+
+### `BujmA` — bhujmā  (n=2)
+
+- обильная  · n=2  · rigveda
+
+### `Bujma` — bhujma  (n=2)
+
+- Насыщающий  · n=2  · rigveda
+
+### `BujoruvikzepaRaGoradarSanaH` — bhujoruvikṣepaṇaghoradarśanaḥ  (n=1)
+
+- Имеющий грозный облик из-за того, что расставил руки и бедра  · n=1  · ramayana-sundarakanda
+
+### `Bujyai` — bhujyai  (n=2)
+
+- для наслаждения  · n=2  · rigveda
+
+### `BujyamAna` — bhujyamāna  (n=3)
+
+- используемые  · n=1  · manavadharmashastra
+- используется  · n=1  · manavadharmashastra
+- вкушаемой  · n=1  · mahabharata-ashvamedhikaparva
+
+### `Bujyante` — bhujyante  (n=1)
+
+- блаженствуют  · n=1  · mahabharata-aranyakaparva
+
+### `BujyatAm` — bhujyatām  (n=6)
+
+- кушайте  · n=2  · mahabharata-adiparva, mahabharata-sabhaparva
+- наслаждайся  · n=2  · mahabharata-udyogaparva, mahabharata-ashvamedhikaparva
+- наслаждайтесь  · n=1  · mahabharata-adiparva
+- накормите  · n=1  · mahabharata-adiparva
+
+### `Bujyate` — bhujyate  (n=7)
+
+- наслаждаются  · n=1  · mahabharata-aranyakaparva
+- пожинает  · n=1  · mahabharata-aranyakaparva
+- исчерпаются  · n=1  · mahabharata-aranyakaparva
+- достигают  · n=1  · mahabharata-udyogaparva
+- вкушают  · n=1  · mahabharata-ashvamedhikaparva
+- вкушается  · n=1  · mahabharata-ashvamedhikaparva
+- вкушение  · n=1  · hatha-yoga-pradipika
+
+### `Bujyu` — bhujyu  (n=14)
+
+- Бхуджью  · n=12  · rigveda, br-up, rigveda, rigveda
+- Приносящую насыщение  · n=1  · rigveda
+- Бжуджью  · n=1  · rigveda
+
+### `BujyuH` — bhujyuḥ  (n=1)
+
+- испугались  · n=1  · rigveda
+
+### `BujyuM` — bhujyuṃ  (n=3)
+
+- Бхуджью  · n=3  · rigveda, rigveda
+
+### `Bujyum` — bhujyum  (n=12)
+
+- Бхуджью  · n=10  · rigveda, rigveda, rigveda, rigveda, rigveda
+- К Бхуджью  · n=1  · rigveda
+- доставляющее наслаждение  · n=1  · rigveda
+
+### `Buk` — bhuk  (n=1)
+
+- вкушающий  · n=1  · mahabharata-ashvamedhikaparva
+
+### `BuktA` — bhuktā  (n=4)
+
+- воспользовался  · n=2  · shukasaptati
+- владели  · n=1  · raghuvamsha
+- насладился  · n=1  · shukasaptati
+
+### `BuktAH` — bhuktāḥ  (n=6)
+
+- услаждался  · n=1  · mahabharata-shalyaparva
+- вкушал  · n=1  · mahabharata-ashvamedhikaparva
+- отведав  · n=1  · shatakatrayam
+- изъедены  · n=1  · shatakatrayam
+- насладились  · n=1  · shatakatrayam-serebryakov
+- съедены  · n=1  · shatakatrayam-serebryakov
+
+### `BuktAguRam` — bhuktāguṇam  (n=1)
+
+- нитка жемчуга  · n=1  · megha-duta
+
+### `BuktAnAm` — bhuktānām  (n=1)
+
+- съевший  · n=1  · ramayana-aranyakanda
+
+### `Bukta` — bhukta  (n=32)
+
+- съеденная  · n=2  · manavadharmashastra
+- наслаждался  · n=2  · mahabharata-dronaparva, mahabharata-udyogaparva
+- съеденной  · n=2  · sankhya-karika
+- насладиться  · n=1  · mahabharata-shantiparva
+- исполнил  · n=1  · ramayana-ayodhyakanda
+- готовил  · n=1  · ramayana-ayodhyakanda
+- выпитой  · n=1  · ramayana-ayodhyakanda
+- ест  · n=1  · ramayana-ayodhyakanda
+- Повелевал  · n=1  · ramayana-ayodhyakanda
+- съеден  · n=1  · ramayana-sundarakanda
+- съеденную  · n=1  · manavadharmashastra
+- используемое  · n=1  · manavadharmashastra
+- пищу  · n=1  · mahabharata-aranyakaparva
+- ела  · n=1  · kama-sutra
+- кормиться  · n=1  · buddhacharita
+- съедена  · n=1  · mahabharata-udyogaparva
+- съедено  · n=1  · mahabharata-udyogaparva
+- употребляется  · n=1  · mahabharata-udyogaparva
+- покорены  · n=1  · mahabharata-shalyaparva
+- съеденное  · n=1  · nyaya-bhashya
+- едим  · n=1  · mahabharata-ashvamedhikaparva
+- наслаждение  · n=1  · mahabharata-sabhaparva
+- поглощено  · n=1  · hatha-yoga-pradipika
+- кормился  · n=1  · shatakatrayam
+- побирался  · n=1  · shatakatrayam-serebryakov
+- добилась своего  · n=1  · shukasaptati
+- вкусила  · n=1  · mahabharata-ashramavasikaparva
+- пройденный  · n=1  · vedanga_jyotisha
+- пройденных  · n=1  · vedanga_jyotisha
+
+### `BuktaBogA` — bhuktabhogā  (n=2)
+
+- вкусив наслаждение  · n=2  · vedartha-samgraha_ramanuja, shv-up
+
+### `BuktaBoga` — bhuktabhoga  (n=2)
+
+- вкушавший лучшие яства  · n=1  · ramayana-ayodhyakanda
+- вкусив наслаждение  · n=1  · mnar-up
+
+### `BuktaSeza` — bhuktaśeṣa  (n=1)
+
+- остаток от пищи  · n=1  · manavadharmashastra
+
+### `Buktam` — bhuktam  (n=6)
+
+- съедает  · n=1  · ramayana-ayodhyakanda
+- съеденную  · n=1  · ramayana-sundarakanda
+- съеденная  · n=1  · manavadharmashastra
+- вкушал вволю  · n=1  · mahabharata-dronaparva
+- наслаждался  · n=1  · mahabharata-udyogaparva
+- вкушал  · n=1  · mahabharata-ashramavasikaparva
+
+### `BuktamAtre` — bhuktamātre  (n=1)
+
+- тотчас после еды  · n=1  · manavadharmashastra
+
+### `BuktapUrvAstriyaMnindatAmaGaSaMsin` — bhuktapūrvā striyaṃ nindatāmaghaśaṃsin  (n=1)
+
+- порицающих женщину после наслаждения с ней  · n=1  · mahabharata-dronaparva
+
+### `BuktavAn` — bhuktavān  (n=1)
+
+- ел  · n=1  · mahabharata-udyogaparva
+
+### `Buktavantam` — bhuktavantam  (n=1)
+
+- насытился  · n=1  · mahabharata-udyogaparva
+
+### `Buktavat` — bhuktavat  (n=7)
+
+- накормлены  · n=1  · manavadharmashastra
+- вкушающими  · n=1  · manavadharmashastra
+- люди поели  · n=1  · manavadharmashastra
+- Поев  · n=1  · manavadharmashastra
+- По окончании трапезы  · n=1  · mahabharata-aranyakaparva
+- поедят  · n=1  · mahabharata-aranyakaparva
+- насыщаться  · n=1  · mahabharata-sabhaparva
+
+### `BuktavatAm` — bhuktavatām  (n=3)
+
+- наевшись  · n=1  · ramayana-ayodhyakanda
+- насытившимся  · n=1  · manavadharmashastra
+- поели  · n=1  · ramayana-aranyakanda
+
+### `Buktavatsu` — bhuktavatsu  (n=3)
+
+- после угощения  · n=2  · manavadharmashastra
+- насытились  · n=1  · mahabharata-aranyakaparva
+
+### `BuktaviBava` — bhuktavibhava  (n=1)
+
+- Истративший средства  · n=1  · kama-sutra
+
+### `Buktena` — bhuktena  (n=1)
+
+- радости  · n=1  · ramayana-ayodhyakanda
+
+### `Bukti` — bhukti  (n=1)
+
+- обед  · n=1  · shukasaptati
+
+### `Buktidinezu` — bhuktidineṣu  (n=1)
+
+- в дневном движении  · n=1  · vedanga_jyotisha
+
+### `BuktocCizwA` — bhuktocchiṣṭā  (n=1)
+
+- измятую и увядшую  · n=1  · buddhacharita
+
+### `BuktvA` — bhuktvā  (n=63)
+
+- насладившись  · n=11  · mahabharata-bhishmaparva, buddhacharita, mahabharata-udyogaparva, gitarthasamgraha-abhinavagupta, bhagavadgita-burba, ramanuja_gitabhashya, bhagavadgita-erman, bhagavadgita-sementsov, bhagavadgita-sharma, bhagavadgita-radha, shukasaptati
+- поев  · n=9  · manavadharmashastra, mahabharata-adiparva, mahabharata-udyogaparva, shukasaptati
+- съев  · n=8  · mahabharata-adiparva, manavadharmashastra, mahabharata-aranyakaparva, mahabharata-ashvamedhikaparva
+- вкусив  · n=3  · manavadharmashastra, mahabharata-udyogaparva
+- вкушая  · n=2  · manavadharmashastra, mahabharata-ashvamedhikaparva
+- Приняв угощение  · n=2  · ramayana-balakanda
+- воспользовавшись  · n=2  · mahabharata-bhishmaparva, mahabharata-udyogaparva
+- Насладившись  · n=2  · bhagavadgita-1914, bhagavadgity
+- ела  · n=1  · ramayana-ayodhyakanda
+- поедая  · n=1  · ramayana-ayodhyakanda
+- ели  · n=1  · ramayana-ayodhyakanda
+- наслаждался  · n=1  · ramayana-ayodhyakanda
+- наслаждаясь  · n=1  · ramayana-ayodhyakanda
+- после еды  · n=1  · manavadharmashastra
+- наслаждаешься  · n=1  · mahabharata-aranyakaparva
+- поевший  · n=1  · mahabharata-aranyakaparva
+- доев  · n=1  · mahabharata-adiparva
+- после того как из нее же ел  · n=1  · mahabharata-adiparva
+- покушав  · n=1  · mahabharata-adiparva
+- насладился  · n=1  · buddhacharita
+- грызут  · n=1  · buddhacharita
+- подкрепив себя едой  · n=1  · mahabharata-udyogaparva
+- насладясь  · n=1  · bhagavadgita-smirnov
+- участвовавшимъ  · n=1  · bhagavadgita-1788
+- возвратится  · n=1  · bhagavadgita-1909
+- изведав  · n=1  · bhagavadgita-prabhupada
+- живет  · n=1  · bhagavadgita-prabhupada
+- располагая  · n=1  · mahabharata-shalyaparva
+- услаждаясь  · n=1  · mahabharata-shalyaparva
+- Пожав  · n=1  · mahabharata-shalyaparva
+- владел  · n=1  · mahabharata-shalyaparva
+- насытившись  · n=1  · mahabharata-sabhaparva
+
+### `Bumanyu` — bhumanyu  (n=2)
+
+- Бхуманью  · n=2  · mahabharata-adiparva
+
+### `BunajAmahai` — bhunajāmahai  (n=3)
+
+- будем радоваться  · n=1  · rigveda
+- вкусили  · n=1  · rigveda
+- воспользоваться  · n=1  · atharvaveda
+
+### `Bunajad` — bhunajad  (n=1)
+
+- поможет  · n=1  · br-up
+
+### `Bunakti` — bhunakti  (n=2)
+
+- приносит пользу  · n=1  · br-up
+- приносит пользы  · n=1  · br-up
+
+### `Bunaktu` — bhunaktu  (n=2)
+
+- будет доволен  · n=2  · tai-up
+
+### `BunjAnAH` — bhunjānāḥ  (n=1)
+
+- не подобает  · n=1  · ramayana-ayodhyakanda
+
+### `Bunjate` — bhunjate  (n=2)
+
+- наслаждаться  · n=1  · ramayana-ayodhyakanda
+- существуют  · n=1  · manavadharmashastra
+
+### `Bunkzva` — bhunkṣva  (n=3)
+
+- Наслаждайся  · n=1  · ramayana-ayodhyakanda
+- владей  · n=1  · ramayana-ayodhyakanda
+- под твою власть  · n=1  · ramayana-ayodhyakanda
+
+### `Bupati` — bhupati  (n=2)
+
+- владыка земли  · n=1  · mahabharata-aranyakaparva
+- властвует на земле  · n=1  · mahabharata-aranyakaparva
+
+### `BuraRA` — bhuraṇā  (n=1)
+
+- подвижные  · n=1  · rigveda
+
+### `BuraRAv` — bhuraṇāv  (n=2)
+
+- подвижных  · n=2  · rigveda
+
+### `BuraRa` — bhuraṇa  (n=1)
+
+- спешащие  · n=1  · rigveda
+
+### `BuraRyU` — bhuraṇyū  (n=2)
+
+- быстрые  · n=1  · rigveda
+- деятельных  · n=1  · rigveda
+
+### `BuraRyaTo` — bhuraṇyatho  (n=2)
+
+- кидаетесь (на помощь)  · n=1  · rigveda
+- набрасываетесь  · n=1  · rigveda
+
+### `BuraRyan` — bhuraṇyan  (n=1)
+
+- беспокойный  · n=1  · rigveda
+
+### `BuraRyantam` — bhuraṇyantam  (n=3)
+
+- мечущегося  · n=2  · atharvaveda
+- на деятельного  · n=1  · rigveda
+
+### `BuraRyasi` — bhuraṇyasi  (n=2)
+
+- деятелен  · n=2  · rigveda
+
+### `BuraRyati` — bhuraṇyati  (n=2)
+
+- мечется  · n=1  · rigveda
+- ищет  · n=1  · rigveda
+
+### `BuraRyavaH` — bhuraṇyavaḥ  (n=1)
+
+- трепещущие  · n=1  · rigveda
+
+### `BuraRyu` — bhuraṇyu  (n=2)
+
+- извивающийся  · n=1  · rigveda
+- трепещущую  · n=1  · rigveda
+
+### `Buraj` — bhuraj  (n=1)
+
+- готовят  · n=1  · rigveda
+
+### `Burajanta` — bhurajanta  (n=1)
+
+- готовят  · n=1  · rigveda
+
+### `BuramARam` — bhuramāṇam  (n=1)
+
+- барахтающемуся  · n=1  · rigveda
+
+### `Buranta` — bhuranta  (n=1)
+
+- сотрясают  · n=1  · rigveda
+
+### `Burantu` — bhurantu  (n=1)
+
+- Пусть дергаются  · n=1  · rigveda
+
+### `Buranyum` — bhuranyum  (n=1)
+
+- трепещущую  · n=1  · atharvaveda
+
+### `BuridakziRa` — bhuridakṣiṇa  (n=1)
+
+- щедро дарующий бхарата  · n=1  · mahabharata-aranyakaparva
+
+### `BurijoH` — bhurijoḥ  (n=4)
+
+- двух рук(-зажимов)  · n=2  · rigveda
+- двух рук  · n=2  · rigveda
+
+### `Burijor` — bhurijor  (n=2)
+
+- в тисках  · n=1  · rigveda
+- рук  · n=1  · rigveda
+
+### `BurizAx` — bhuriṣāḷ  (n=1)
+
+- покоряющая многих  · n=1  · rigveda
+
+### `BuruRqa` — bhuruṇḍa  (n=1)
+
+- бхурунды  · n=1  · mahabharata-aranyakaparva
+
+### `BurvaRi` — bhurvaṇi  (n=1)
+
+- в волнении  · n=1  · rigveda
+
+### `BurvaRiH` — bhurvaṇiḥ  (n=2)
+
+- возбужденный  · n=2  · rigveda
+
+### `But` — bhut  (n=1)
+
+- будет  · n=1  · mahabharata-sabhaparva
+
+### `Buta` — bhuta  (n=3)
+
+- сущего  · n=2  · mahabharata-aranyakaparva
+- существ  · n=1  · bhagavadgita-sharma
+
+### `ButaDara` — bhutadhara  (n=1)
+
+- землю  · n=1  · ramayana-ayodhyakanda
+
+### `Butagrama` — bhutagrama  (n=2)
+
+- совокупность всех живых существ  · n=1  · bhagavadgita-prabhupada
+- живые существа  · n=1  · bhagavadgita-prabhupada
+
+### `Butam` — bhutam  (n=1)
+
+- сторонников  · n=1  · kama-sutra
+
+### `Butana` — bhutana  (n=1)
+
+- существ  · n=1  · bhagavadgita-sharma
+
+### `Butanam` — bhutanam  (n=1)
+
+- существах  · n=1  · bhagavadgita-sharma
+
+### `ButayajYa` — bhutayajña  (n=1)
+
+- приношения риса духам  · n=1  · mahabharata-ashvamedhikaparva
+
+### `Butesu` — bhutesu  (n=2)
+
+- проявленном  · n=1  · bhagavadgita-prabhupada
+- материальном мире  · n=1  · bhagavadgita-prabhupada
+
+### `Butva` — bhutva  (n=2)
+
+- появляясь на свет  · n=1  · bhagavadgita-prabhupada
+- появляются на свет  · n=1  · bhagavadgita-prabhupada
+
+### `BuvA` — bhuvā  (n=4)
+
+- мире  · n=2  · rigveda, rigveda
+- рождающейся  · n=1  · atharvaveda
+- земля  · n=1  · kumarasambhava
+
+### `BuvAni` — bhuvāni  (n=2)
+
+- окажусь  · n=2  · rigveda
+
+### `Buva` — bhuva  (n=10)
+
+- бхувас  · n=3  · ch-up, br-up
+- места  · n=1  · rigveda
+- земля  · n=1  · mahabharata-dronaparva
+- землю  · n=1  · mahabharata-dronaparva
+- окрестности  · n=1  · raghuvamsha
+- Будь  · n=1  · atharvaveda
+- являются  · n=1  · yoga-sutry
+- воздушное пространство  · n=1  · mai-up
+
+### `BuvaBartr` — bhuvabhartr  (n=2)
+
+- хранитель поднебесья  · n=1  · mahabharata-aranyakaparva
+- царит в поднебесье  · n=1  · mahabharata-aranyakaparva
+
+### `BuvaH` — bhuvaḥ  (n=43)
+
+- бхувас  · n=12  · tai-up, ch-up, br-up
+- стал  · n=2  · rigveda, rigveda
+- был  · n=2  · rigveda
+- земли  · n=2  · mahabharata-adiparva, shatakatrayam
+- будешь  · n=2  · rigveda
+- ты царь  · n=2  · rigveda
+- Воздушному пространству  · n=2  · br-up
+- воздушное пространство  · n=2  · br-up, mai-up
+- земля  · n=2  · raghuvamsha
+- атмосфера  · n=1  · manavadharmashastra
+- бхувах  · n=1  · manavadharmashastra
+- ты  · n=1  · rigveda
+- ты стал  · n=1  · rigveda
+- Бываешь  · n=1  · rigveda
+- воспримешь  · n=1  · rigveda
+- Бхувас  · n=1  · ch-up
+- Будь  · n=1  · rigveda
+- оказался  · n=1  · rigveda
+- будь  · n=1  · atharvaveda
+- мира  · n=1  · mahabharata-sabhaparva
+- воздушному пространству  · n=1  · br-up
+- стала  · n=1  · atharvaveda
+- Земля  · n=1  · megha-duta
+- землю  · n=1  · megha-duta
+
+### `BuvaM` — bhuvaṃ  (n=10)
+
+- землю  · n=4  · mahabharata-bhishmaparva, mahabharata-dronaparva, raghuvamsha, mahabharata-virataparva
+- был  · n=3  · rigveda
+- стану  · n=1  · rigveda
+- над землею  · n=1  · raghuvamsha
+- страну  · n=1  · shukasaptati
+
+### `BuvaS` — bhuvaś  (n=1)
+
+- пола  · n=1  · raghuvamsha
+
+### `Buvad` — bhuvad  (n=13)
+
+- был  · n=4  · rigveda, rigveda
+- стал  · n=3  · rigveda, rigveda
+- будет  · n=1  · rigveda
+- Да будет  · n=1  · rigveda
+- Хор  · n=1  · rigveda
+- послужит  · n=1  · rigveda
+- произойдет  · n=1  · rigveda
+- превосходит  · n=1  · rigveda
+
+### `Buvam` — bhuvam  (n=2)
+
+- землю  · n=2  · mahabharata-ashvamedhikaparva, raghuvamsha
+
+### `Buvan` — bhuvan  (n=10)
+
+- станут  · n=2  · rigveda
+- станет  · n=1  · rigveda
+- пусть будут  · n=1  · rigveda
+- идут  · n=1  · rigveda
+- должен быть  · n=1  · rigveda
+- будут находиться  · n=1  · rigveda
+- будут  · n=1  · rigveda
+- Да уважит  · n=1  · rigveda
+- ради  · n=1  · rigveda
+
+### `BuvanA` — bhuvanā  (n=24)
+
+- существа  · n=15  · rigveda, rigveda, rigveda, rigveda, rigveda, rigveda, rigveda, atharvaveda, atharvaveda, atharvaveda, atharvaveda
+- миры  · n=5  · rigveda, rigveda, rigveda, paramarthasara-abhinavagupta
+- существ  · n=1  · rigveda
+- живые существа  · n=1  · rigveda
+- существам  · n=1  · rigveda
+- существами  · n=1  · atharvaveda
+
+### `BuvanADipatya` — bhuvanādhipatya  (n=1)
+
+- власть над миром  · n=1  · shatakatrayam
+
+### `BuvanAlokanaprIti` — bhuvanālokanaprīti  (n=1)
+
+- миром любоваться  · n=1  · kumarasambhava
+
+### `BuvanAnAm` — bhuvanānām  (n=2)
+
+- существ  · n=1  · rigveda
+- среди существ  · n=1  · rigveda
+
+### `BuvanAni` — bhuvanāni  (n=67)
+
+- существа  · n=32  · rigveda, rigveda, rigveda, rigveda, rigveda, atharvaveda, rigveda, rigveda, atharvaveda, atharvaveda, atharvaveda, atharvaveda, atharvaveda
+- миры  · n=16  · rigveda, rigveda, mahabharata-adiparva, rigveda, mahabharata-dronaparva, atharvaveda
+- существ  · n=4  · rigveda, rigveda, rigveda, atharvaveda
+- мирами  · n=3  · rigveda, mahabharata-adiparva
+- существам  · n=3  · rigveda, rigveda, rigveda
+- царствами  · n=2  · shatakatrayam-serebryakov
+- сущности  · n=1  · rigveda
+- мир  · n=1  · rigveda
+- мироздания  · n=1  · rigveda
+- миров  · n=1  · rigveda
+- явления  · n=1  · rigveda
+- существах  · n=1  · rigveda
+- по всем существам  · n=1  · atharvaveda
+
+### `BuvanAnuviSvA` — bhuvanānu viśvā  (n=1)
+
+- по всем существам  · n=1  · rigveda
+
+### `BuvanAt` — bhuvanāt  (n=1)
+
+- существа  · n=1  · rigveda
+
+### `BuvanAvalI` — bhuvanāvalī  (n=1)
+
+- миров  · n=1  · paramarthasara-abhinavagupta
+
+### `BuvanAya` — bhuvanāya  (n=3)
+
+- мир  · n=1  · rigveda
+- мира  · n=1  · rigveda
+- вселенной  · n=1  · rigveda
+
+### `Buvana` — bhuvana  (n=161)
+
+- существа  · n=50  · rigveda, rigveda, atharvaveda, rigveda, rigveda, rigveda, rigveda, rigveda, atharvaveda, atharvaveda, rigveda, rigveda, atharvaveda, atharvaveda, atharvaveda, atharvaveda, atharvaveda, atharvaveda
+- миры  · n=18  · rigveda, mahabharata-adiparva, mahabharata-aranyakaparva, rigveda, rigveda, shv-up, rigveda, gitarthasamgraha-abhinavagupta, mahabharata-striparva, sub-up
+- мир  · n=15  · mahabharata-adiparva, kat-up, mahabharata-aranyakaparva, rigveda, rigveda, gitarthasamgraha-abhinavagupta, rigveda, shatakatrayam-serebryakov, yoga-sutry, shv-up, tai-up
+- мира  · n=13  · shv-up, mnar-up, rigveda, rigveda, mahabharata-adiparva, mahabharata-dronaparva, rigveda, rigveda, ch-up, rigveda, mun-up
+- мироздания  · n=13  · rigveda, atharvaveda, atharvaveda, rigveda, atharvaveda, atharvaveda, atharvaveda, atharvaveda
+- вселенной  · n=4  · rigveda, rigveda, mahabharata-udyogaparva, atharvaveda
+- мирозданием  · n=4  · rigveda, rigveda, rigveda, rigveda
+- вселенную  · n=3  · rigveda, rigveda, mahabharata-udyogaparva
+- сущности  · n=3  · rigveda, atharvaveda
+- мирах  · n=3  · mahabharata-karnaparva, paramarthasara-abhinavagupta, pratyabhijna-hridaya_kshemaraja
+- миров  · n=3  · atharvaveda, yoga-sutry_zagumennov, vedartha-samgraha_ramanuja
+- мироздание  · n=3  · atharvaveda, atharvaveda
+- жилище  · n=2  · ramayana-aranyakanda
+- света  · n=2  · rigveda
+- Вселенной  · n=2  · rigveda, yoga-sutry_vyasa-bhashya
+- вселенная  · n=2  · mahabharata-adiparva, mahabharata-udyogaparva
+- миром  · n=2  · rigveda, rigveda
+- место  · n=2  · atharvaveda
+- свет  · n=2  · atharvaveda
+- двадцать четыре  · n=1  · mahabharata-adiparva
+- Вселенная  · n=1  · rigveda
+- воплощение небес  · n=1  · mahabharata-dronaparva
+- мирами  · n=1  · rigveda
+- Существа  · n=1  · rigveda
+- существо  · n=1  · rigveda
+- царства  · n=1  · raghuvamsha
+- царств  · n=1  · shatakatrayam
+- мире  · n=1  · gitagovinda
+- пространство  · n=1  · yoga-sutry_sharma
+- существование  · n=1  · atharvaveda
+- существования  · n=1  · atharvaveda
+- покои  · n=1  · mahabharata-ashramavasikaparva
+- живыми творениями  · n=1  · vedartha-samgraha_ramanuja
+- творениями  · n=1  · vedartha-samgraha_ramanuja
+
+### `BuvanaBarAya` — bhuvanabharāya  (n=1)
+
+- нести тяжесть мира  · n=1  · shatakatrayam-serebryakov
+
+### `BuvanaBartr` — bhuvanabhartr  (n=1)
+
+- поддерживающий миры  · n=1  · mahabharata-aranyakaparva
+
+### `BuvanaM` — bhuvanaṃ  (n=3)
+
+- мир  · n=1  · rigveda
+- вселенной  · n=1  · rigveda
+- свет  · n=1  · atharvaveda
+
+### `BuvanaPalake` — bhuvanaphalake  (n=2)
+
+- фишками  · n=1  · shatakatrayam
+- на игральной доске вселенной  · n=1  · shatakatrayam-serebryakov
+
+### `BuvanaSiKino` — bhuvanaśikhino  (n=1)
+
+- павлины  · n=1  · megha-duta
+
+### `BuvanaSreRI` — bhuvanaśreṇī  (n=1)
+
+- живых существ множество  · n=1  · shatakatrayam
+
+### `BuvanaSreRIm` — bhuvanaśreṇīm  (n=2)
+
+- сонмы миров  · n=2  · shatakatrayam-serebryakov
+
+### `BuvanacyavAna` — bhuvanacyavāna  (n=2)
+
+- Сотрясающих вселенную  · n=2  · rigveda, atharvaveda
+
+### `Buvanam` — bhuvanam  (n=11)
+
+- мироздание  · n=3  · rigveda, atharvaveda
+- мир  · n=2  · rigveda
+- существующее  · n=2  · atharvaveda
+- миром  · n=1  · mahabharata-aranyakaparva
+- вселенной  · n=1  · rigveda
+- свет  · n=1  · rigveda
+- вселенная  · n=1  · rigveda
+
+### `BuvanasundarI` — bhuvanasundarī  (n=1)
+
+- благословенную красу мира  · n=1  · devi-gita
+
+### `Buvanasya` — bhuvanasya  (n=41)
+
+- мироздания  · n=21  · rigveda, rigveda, rigveda, rigveda, rigveda, rigveda, atharvaveda, rigveda, atharvaveda, atharvaveda
+- вселенной  · n=8  · rigveda, rigveda, mahabharata-udyogaparva, rigveda, rigveda, rigveda, atharvaveda
+- мира  · n=5  · mahabharata-adiparva, rigveda, rigveda, rigveda, atharvaveda
+- множеством существований  · n=2  · atharvaveda
+- миром  · n=1  · rigveda
+- света  · n=1  · rigveda
+- существ  · n=1  · rigveda
+- (вселенной)  · n=1  · atharvaveda
+- бытия  · n=1  · atharvaveda
+
+### `BuvanasyaDAma` — bhuvanasya dhāma  (n=1)
+
+- прибежище мира  · n=1  · mahabharata-udyogaparva
+
+### `BuvanasyagopA` — bhuvanasya gopā  (n=1)
+
+- пастухи мира  · n=1  · rigveda
+
+### `BuvanasyagopAH` — bhuvanasya gopāḥ  (n=1)
+
+- хранители вселенной  · n=1  · rigveda
+
+### `BuvanasyasUnunA` — bhuvanasya sūnunā  (n=2)
+
+- сын Бхуваны  · n=2  · mahabharata-karnaparva
+
+### `Buvanatraya` — bhuvanatraya  (n=1)
+
+- мирами  · n=1  · kumarasambhava
+
+### `Buvanavidita` — bhuvanavidita  (n=1)
+
+- знаменитый  · n=1  · megha-duta
+
+### `Buvane` — bhuvane  (n=3)
+
+- мире  · n=1  · rigveda
+- землю  · n=1  · mahabharata-karnaparva
+- в созидании  · n=1  · atharvaveda
+
+### `BuvaneBya` — bhuvanebhya  (n=1)
+
+- существ  · n=1  · rigveda
+
+### `BuvaneByo` — bhuvanebhyo  (n=1)
+
+- существам  · n=1  · rigveda
+
+### `BuvaneSAnI` — bhuvaneśānī  (n=2)
+
+- Бхуванешани  · n=1  · devi-gita
+- Бхуванешвари  · n=1  · devi-gita
+
+### `BuvaneSa` — bhuvaneśa  (n=1)
+
+- властителя мира  · n=1  · shv-up
+
+### `BuvaneSvarI` — bhuvaneśvarī  (n=1)
+
+- Бхуванешвари  · n=1  · devi-gita
+
+### `BuvaneSvara` — bhuvaneśvara  (n=6)
+
+- владык миров  · n=1  · mahabharata-adiparva
+- владыки вселенной  · n=1  · mahabharata-dronaparva
+- владыка вселенной  · n=1  · mahabharata-dronaparva
+- владыку вселенной  · n=1  · mahabharata-dronaparva
+- владыке вселенной  · n=1  · mahabharata-udyogaparva
+- Владыка вселенной  · n=1  · mahabharata-dronaparva
+
+### `BuvanezWA` — bhuvaneṣṭhā  (n=1)
+
+- пребывает он в существах  · n=1  · atharvaveda
+
+### `BuvanezWAH` — bhuvaneṣṭhāḥ  (n=1)
+
+- пребывая в существах  · n=1  · atharvaveda
+
+### `Buvanezu` — bhuvaneṣu  (n=19)
+
+- среди существ  · n=5  · rigveda, rigveda, rigveda
+- существах  · n=2  · rigveda, atharvaveda
+- уголки мира  · n=2  · mahabharata-dronaparva
+- к мирам  · n=2  · rigveda
+- в мирах  · n=2  · rigveda, raghuvamsha
+- миров  · n=2  · atharvaveda
+- в существах  · n=1  · rigveda
+- из существ  · n=1  · rigveda
+- по земле  · n=1  · mahabharata-dronaparva
+- в [небесных] мирах  · n=1  · paramarthasara-abhinavagupta
+
+### `Buvantraya` — bhuvantraya  (n=1)
+
+- три мира  · n=1  · raghuvamsha
+
+### `Buvas` — bhuvas  (n=8)
+
+- мир  · n=2  · atharvaveda
+- страны  · n=1  · rigveda
+- Ты стал  · n=1  · rigveda
+- вышедших замуж  · n=1  · kama-sutra
+- воздушное пространство  · n=1  · br-up
+- землю  · n=1  · raghuvamsha
+- Землею  · n=1  · shatakatrayam-serebryakov
+
+### `Buvaspati` — bhuvas pati  (n=1)
+
+- господин вселенной  · n=1  · atharvaveda
+
+### `Buvat` — bhuvat  (n=26)
+
+- будет  · n=4  · atharvaveda, rigveda, rigveda, atharvaveda
+- стал  · n=3  · rigveda
+- был  · n=3  · rigveda, atharvaveda
+- бывает  · n=3  · rigveda, atharvaveda
+- Да возникнет  · n=1  · rigveda
+- стала  · n=1  · rigveda
+- охватывает  · n=1  · rigveda
+- да проявится  · n=1  · rigveda
+- станет  · n=1  · rigveda
+- пусть будет  · n=1  · rigveda
+- Да будет  · n=1  · rigveda
+- Да будет он  · n=1  · rigveda
+- служит  · n=1  · rigveda
+- Пусть будет  · n=1  · rigveda
+- является  · n=1  · rigveda
+- возникла  · n=1  · rigveda
+- разворачивается  · n=1  · rigveda
+
+### `Buve` — bhuve  (n=2)
+
+- стал  · n=2  · rigveda
+
+### `Buvi` — bhuvi  (n=255)
+
+- на земле  · n=133  · mahabharata-adiparva, mahabharata-aranyakaparva, ramayana-ayodhyakanda, mahabharata-dronaparva, mahabharata-udyogaparva, mahabharata-shalyaparva, ramayana-balakanda, mahabharata-karnaparva, mahabharata-sabhaparva, manavadharmashastra, mahabharata-bhishmaparva, mahabharata-striparva, mahabharata-shantiparva, buddhacharita, bhagavadgita-burba, raghuvamsha, mahabharata-sauptikaparva, rampt-up, ramayana-sundarakanda, ramayana-aranyakanda, gitarthasamgraha-abhinavagupta, ramanuja_gitabhashya, bhagavadgita-1914, bhagavadgita-smirnov, bhagavadgita-sementsov, mahabharata-ashvamedhikaparva, hatha-yoga-pradipika, mahabharata-virataparva, shatakatrayam, shatakatrayam-serebryakov, mun-up, mahabharata-mausalaparva
+- на землю  · n=53  · mahabharata-dronaparva, mahabharata-aranyakaparva, ramayana-ayodhyakanda, mahabharata-adiparva, mahabharata-karnaparva, mahabharata-striparva, ramayana-aranyakanda, mahabharata-bhishmaparva, mahabharata-shalyaparva, mahabharata-ashvamedhikaparva, mahabharata-shantiparva, ramayana-sundarakanda, ramayana-balakanda, buddhacharita, mahabharata-udyogaparva, raghuvamsha, mahabharata-virataparva, mahabharata-sauptikaparva, mahabharata-mausalaparva
+- землю  · n=12  · mahabharata-mahaprasthanikaparva, mahabharata-aranyakaparva, mahabharata-dronaparva, ramayana-ayodhyakanda, manavadharmashastra, mahabharata-bhishmaparva, mahabharata-karnaparva, mahabharata-ashvamedhikaparva
+- в мире  · n=10  · mahabharata-aranyakaparva, ramayana-ayodhyakanda, ramayana-aranyakanda, buddhacharita, mahabharata-shalyaparva, mahabharata-virataparva, mahabharata-ashramavasikaparva
+- земле  · n=9  · ramayana-ayodhyakanda, mahabharata-aranyakaparva, mahabharata-adiparva, mahabharata-ashvamedhikaparva
+- наземь  · n=6  · mahabharata-shantiparva, mahabharata-bhishmaparva, mahabharata-karnaparva, mahabharata-ashvamedhikaparva, mahabharata-striparva, mahabharata-sauptikaparva
+- на Земле  · n=5  · mahabharata-dronaparva, mahabharata-udyogaparva, bhagavadgita-radha, mahabharata-shalyaparva, yoga-sutry_vyasa-bhashya
+- земля  · n=4  · ramayana-ayodhyakanda, manavadharmashastra, mahabharata-dronaparva, mahabharata-shalyaparva
+- в этом мире  · n=3  · buddhacharita, bhagavadgita-sharma, bhagavadgita-prabhupada
+- На земле  · n=2  · ramayana-balakanda
+- на свете  · n=2  · mahabharata-aranyakaparva
+- на этой земле  · n=2  · mahabharata-aranyakaparva, mahabharata-ashvamedhikaparva
+- на всей землѣ  · n=2  · bhagavadgity, bhagavadgita-1788
+- о землю  · n=1  · ramayana-ayodhyakanda
+- земли  · n=1  · ramayana-aranyakanda
+- свету  · n=1  · mahabharata-aranyakaparva
+- оземь  · n=1  · mahabharata-dronaparva
+- мир  · n=1  · mahabharata-dronaparva
+- на Землю  · n=1  · mahabharata-dronaparva
+- на поле брани  · n=1  · mahabharata-dronaparva
+- на  · n=1  · buddhacharita
+- на землѣ  · n=1  · bhagavadgita-1909
+- в землю  · n=1  · mahabharata-karnaparva
+- на мѣстѣ томъ  · n=1  · megha-duta
+- на порогѣ  · n=1  · megha-duta
+
+### `BuviH` — bhuviḥ  (n=1)
+
+- на землю  · n=1  · ramayana-aranyakanda
+
+### `BuvizWa` — bhuviṣṭha  (n=1)
+
+- на земле  · n=1  · mahabharata-adiparva
+
+### `Buvo` — bhuvo  (n=5)
+
+- будь  · n=1  · rigveda
+- Ты стал  · n=1  · rigveda
+- Ты был  · n=1  · rigveda
+- Будь  · n=1  · rigveda
+- земли  · n=1  · raghuvamsha
+
+### `Buyah` — bhuyah  (n=1)
+
+- еще  · n=1  · ramayana-ayodhyakanda
+
+### `Buyas` — bhuyas  (n=2)
+
+- возрожден  · n=1  · mahabharata-aranyakaparva
+- еще раз  · n=1  · bhagavadgita-sharma
+
+### `BvatyA` — bhvatyā  (n=2)
+
+- тебе  · n=2  · devi-gita
+
+### `Bájante` — bhájante  (n=2)
+
+- вкушают  · n=2  · rigveda
 
 ### `b` — b  (n=1)
 

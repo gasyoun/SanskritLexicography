@@ -1,6 +1,18 @@
-# Surface glossary — SLP1 `y`
+# Surface glossary — SLP1 `Y`
 
-4001 forms. Format: `form` (sa) — total n → ru (n) · registers.
+4004 forms. Format: `form` (sa) — total n → ru (n) · registers.
+
+### `YAjYavalkyaH` — Yājñavalkyaḥ  (n=1)
+
+- Яджнявалкья  · n=1  · br-up
+
+### `YanArdana` — ñanārdana  (n=1)
+
+- Джанардана  · n=1  · ramanuja_gitabhashya
+
+### `Yoga-sUtra` — Yoga-sūtra  (n=1)
+
+- Йога-сутр  · n=1  · nyaya-bhashya
 
 ### `y` — y  (n=1)
 

@@ -1,6 +1,3188 @@
-# Surface glossary — SLP1 `g`
+# Surface glossary — SLP1 `G`
 
-4050 forms. Format: `form` (sa) — total n → ru (n) · registers.
+4589 forms. Format: `form` (sa) — total n → ru (n) · registers.
+
+### `GA` — ghā  (n=13)
+
+- же  · n=6  · rigveda, rigveda
+- Да  · n=1  · rigveda
+- прежде всего  · n=1  · rigveda
+- Пусть  · n=1  · rigveda
+- только  · n=1  · rigveda
+- самым  · n=1  · rigveda
+- ведь  · n=1  · rigveda
+- хочу я  · n=1  · rigveda
+
+### `GANgeya` — Gāṅgeya  (n=1)
+
+- Гангея  · n=1  · mahabharata-dronaparva
+
+### `GArzwya` — ghārṣṭya  (n=1)
+
+- нашлепала  · n=1  · shukasaptati
+
+### `GAsAdGAsam` — ghāsād ghāsam  (n=1)
+
+- часть за частью  · n=1  · atharvaveda
+
+### `GAsa` — ghāsa  (n=3)
+
+- корм  · n=1  · atharvaveda
+- питание  · n=1  · atharvaveda
+- Корм  · n=1  · atharvaveda
+
+### `GAsi` — ghāsi  (n=2)
+
+- трава  · n=1  · rigveda
+- ты идешь  · n=1  · rigveda
+
+### `GAta` — ghāta  (n=5)
+
+- ударов  · n=1  · ramayana-ayodhyakanda
+- убийстве  · n=1  · ramayana-sundarakanda
+- гибелью  · n=1  · ramayana-aranyakanda
+- уничтожение  · n=1  · mahabharata-karnaparva
+- убийства  · n=1  · mahabharata-virataparva
+
+### `GAtaka` — ghātaka  (n=4)
+
+- убивающий  · n=2  · gitarthasamgraha-abhinavagupta
+- убийцы  · n=1  · manavadharmashastra
+- палач  · n=1  · mahabharata-aranyakaparva
+
+### `GAtakam` — ghātakam  (n=2)
+
+- убийство  · n=1  · ramayana-ayodhyakanda
+- как убийца  · n=1  · mahabharata-bhishmaparva
+
+### `GAtanI` — ghātanī  (n=1)
+
+- разящее  · n=1  · mahabharata-aranyakaparva
+
+### `GAtana` — ghātana  (n=1)
+
+- истребляя  · n=1  · buddhacharita
+
+### `GAtanam` — ghātanam  (n=1)
+
+- убиение  · n=1  · mahabharata-sabhaparva
+
+### `GAtayAmAsa` — ghātayāmāsa  (n=4)
+
+- вызвал опустошение  · n=1  · mahabharata-adiparva
+- заставил убить  · n=1  · mahabharata-dronaparva
+- разить насмерть  · n=1  · mahabharata-karnaparva
+- понудил убить  · n=1  · mahabharata-sabhaparva
+
+### `GAtayAmi` — ghātayāmi  (n=2)
+
+- не обрекаю на смерть  · n=1  · ramayana-sundarakanda
+- прикажу убить  · n=1  · mahabharata-virataparva
+
+### `GAtayan` — ghātayan  (n=1)
+
+- казнящий  · n=1  · manavadharmashastra
+
+### `GAtayantI` — ghātayantī  (n=1)
+
+- губят  · n=1  · ramayana-sundarakanda
+
+### `GAtayanti` — ghātayanti  (n=2)
+
+- губят  · n=1  · ramayana-sundarakanda
+- убивают  · n=1  · mahabharata-sabhaparva
+
+### `GAtayasva` — ghātayasva  (n=1)
+
+- убьешь  · n=1  · ramayana-aranyakanda
+
+### `GAtayati` — ghātayati  (n=14)
+
+- обречь смерти  · n=2  · mahabharata-bhishmaparva, bhagavadgita-erman
+- побуждает убивать  · n=1  · bhagavadgita-burba
+- убивать заставляет  · n=1  · ramanuja_gitabhashya
+- заставить убивать  · n=1  · bhagavadgity
+- заставлять убивать  · n=1  · bhagavadgita-smirnov
+- Убивать  · n=1  · bhagavadgita-smirnov
+- допустишь быть убито  · n=1  · bhagavadgita-1788
+- побуждает к убийству  · n=1  · bhagavadgita-sementsov
+- исчезнутъ  · n=1  · bhagavadgita-1909
+- побудить к убийству  · n=1  · bhagavadgita-sharma
+- причиняет боль  · n=1  · bhagavadgita-prabhupada
+- убивать  · n=1  · bhagavadgita-prabhupada
+- может побудить к убийству  · n=1  · bhagavadgita-radha
+
+### `GAtayeTAH` — ghātayethāḥ  (n=1)
+
+- столкни  · n=1  · mahabharata-ashramavasikaparva
+
+### `GAtayema` — ghātayema  (n=1)
+
+- дадим убить  · n=1  · mahabharata-bhishmaparva
+
+### `GAtayet` — ghātayet  (n=8)
+
+- Уничтожит  · n=1  · ramayana-sundarakanda
+- приказать лишить жизни  · n=1  · manavadharmashastra
+- применять телесные наказания  · n=1  · manavadharmashastra
+- велит казнить  · n=1  · manavadharmashastra
+- надо велить казнить  · n=1  · manavadharmashastra
+- карать  · n=1  · manavadharmashastra
+- убьет  · n=1  · mahabharata-adiparva
+- уничтожит  · n=1  · mahabharata-adiparva
+
+### `GAtayeya` — ghātayeya  (n=1)
+
+- сделать так, чтобы был убит  · n=1  · mahabharata-udyogaparva
+
+### `GAtayeyaM` — ghātayeyaṃ  (n=1)
+
+- убить  · n=1  · mahabharata-udyogaparva
+
+### `GAtayitvA` — ghātayitvā  (n=22)
+
+- допустив убийство  · n=5  · mahabharata-shalyaparva, mahabharata-adiparva, mahabharata-virataparva
+- были убиты  · n=1  · mahabharata-adiparva
+- убив  · n=1  · mahabharata-adiparva
+- умертвив  · n=1  · mahabharata-adiparva
+- смертельно раненный  · n=1  · mahabharata-adiparva
+- приведя к погибели  · n=1  · mahabharata-shantiparva
+- гибели  · n=1  · mahabharata-shantiparva
+- допустили, что убит  · n=1  · mahabharata-bhishmaparva
+- заставив убить  · n=1  · mahabharata-dronaparva
+- позволив убить  · n=1  · mahabharata-dronaparva
+- привел к гибели  · n=1  · mahabharata-shalyaparva
+- стал причиной смерти  · n=1  · mahabharata-ashvamedhikaparva
+- позволив погубить  · n=1  · mahabharata-ashvamedhikaparva
+- на смертоубийство  · n=1  · mahabharata-ashvamedhikaparva
+- погубив  · n=1  · mahabharata-ashvamedhikaparva
+- побудив убить  · n=1  · mahabharata-sabhaparva
+- велев убить  · n=1  · mahabharata-virataparva
+- причиной гибели  · n=1  · mahabharata-striparva
+
+### `GAtayizyanti` — ghātayiṣyanti  (n=1)
+
+- истребят  · n=1  · mahabharata-striparva
+
+### `GAtayizyasi` — ghātayiṣyasi  (n=1)
+
+- допускаешь убивать  · n=1  · mahabharata-dronaparva
+
+### `GAtayizyati` — ghātayiṣyati  (n=5)
+
+- уничтожит  · n=1  · ramayana-sundarakanda
+- убьет  · n=1  · ramayana-sundarakanda
+- приведет к погибели  · n=1  · mahabharata-aranyakaparva
+- обречет на убийство  · n=1  · mahabharata-dronaparva
+- погубит  · n=1  · mahabharata-udyogaparva
+
+### `GAtayizyu` — ghātayiṣyu  (n=1)
+
+- жаждущие убить  · n=1  · mahabharata-bhishmaparva
+
+### `GAtin` — ghātin  (n=2)
+
+- Губителя  · n=1  · ramayana-aranyakanda
+- убившего  · n=1  · ramayana-aranyakanda
+
+### `GAtinI` — ghātinī  (n=1)
+
+- разбито  · n=1  · ramayana-aranyakanda
+
+### `GAtinam` — ghātinam  (n=2)
+
+- губителя  · n=1  · ramayana-aranyakanda
+- Убийцей  · n=1  · ramayana-aranyakanda
+
+### `GAtitA` — ghātitā  (n=2)
+
+- разорена  · n=1  · mahabharata-ashramavasikaparva
+- опустошил  · n=1  · mahabharata-ashramavasikaparva
+
+### `GAtitAH` — ghātitāḥ  (n=1)
+
+- убиты  · n=1  · mahabharata-dronaparva
+
+### `GAtita` — ghātita  (n=9)
+
+- убит  · n=2  · mahabharata-dronaparva, mahabharata-shalyaparva
+- погублены  · n=1  · ramayana-sundarakanda
+- уничтожены  · n=1  · mahabharata-adiparva
+- допущено убийство  · n=1  · mahabharata-dronaparva
+- допустил убийство  · n=1  · mahabharata-shalyaparva
+- сражён  · n=1  · devi-gita
+- опустошена  · n=1  · mahabharata-striparva
+- поверженный  · n=1  · mahabharata-svargarohanikaparva
+
+### `GAtitaH` — ghātitaḥ  (n=2)
+
+- толкнул на гибель  · n=1  · mahabharata-shantiparva
+- убит  · n=1  · mahabharata-shantiparva
+
+### `GAtuka` — ghātuka  (n=1)
+
+- пожирает  · n=1  · atharvaveda
+
+### `GAwa` — ghāṭa  (n=1)
+
+- помеха  · n=1  · gitagovinda
+
+### `GUrRAmi` — ghūrṇāmi  (n=1)
+
+- впадать в нерешительность  · n=1  · mahabharata-mausalaparva
+
+### `GUrRamAnA` — ghūrṇamānā  (n=1)
+
+- с трепещущими сердцами  · n=1  · mahabharata-dronaparva
+
+### `GUrRamAna` — ghūrṇamāna  (n=3)
+
+- мечущемуся  · n=1  · ramayana-ayodhyakanda
+- кидаясь  · n=1  · mahabharata-dronaparva
+- качаться  · n=1  · pratyabhijna-hridaya_kshemaraja
+
+### `GUrRamAnahfdaya` — ghūrṇamānahṛdaya  (n=1)
+
+- с сильно бьющимся сердцем  · n=1  · mahabharata-adiparva
+
+### `GUrRan` — ghūrṇan  (n=1)
+
+- крутясь  · n=1  · mahabharata-adiparva
+
+### `GUrRana` — ghūrṇana  (n=1)
+
+- кружит  · n=1  · gitagovinda
+
+### `GUrRantI` — ghūrṇantī  (n=1)
+
+- пошатывались  · n=1  · ramayana-sundarakanda
+
+### `GUrRanta` — ghūrṇanta  (n=1)
+
+- заметались  · n=1  · mahabharata-sauptikaparva
+
+### `GUrRat` — ghūrṇat  (n=1)
+
+- мечущийся  · n=1  · mahabharata-dronaparva
+
+### `GUrRate` — ghūrṇate  (n=1)
+
+- бушевал  · n=1  · mahabharata-aranyakaparva
+
+### `GUrRati` — ghūrṇati  (n=1)
+
+- колеблется  · n=1  · mahabharata-adiparva
+
+### `GUrRayati` — ghūrṇayati  (n=2)
+
+- плывет  · n=1  · shatakatrayam
+- кружится  · n=1  · shatakatrayam-serebryakov
+
+### `GUrRe` — ghūrṇe  (n=1)
+
+- зашаталась  · n=1  · mahabharata-karnaparva
+
+### `GUrRikA` — ghūrṇikā  (n=2)
+
+- Гхурника  · n=2  · mahabharata-adiparva
+
+### `GUrRike` — ghūrṇike  (n=1)
+
+- Гхурника  · n=1  · mahabharata-adiparva
+
+### `Ga` — gha  (n=6)
+
+- Конечно  · n=1  · rigveda
+- только  · n=1  · rigveda
+- такой  · n=1  · rigveda
+- это  · n=1  · rigveda
+- как раз  · n=1  · rigveda
+- то  · n=1  · rigveda
+
+### `GaRqA` — ghaṇḍā  (n=1)
+
+- с колоколами  · n=1  · ramayana-ayodhyakanda
+
+### `GaRwA` — ghaṇṭā  (n=8)
+
+- колокольцев  · n=2  · mahabharata-dronaparva, mahabharata-shalyaparva
+- колокольчик  · n=1  · mahabharata-aranyakaparva
+- бубенец  · n=1  · mahabharata-bhishmaparva
+- колокольца  · n=1  · mahabharata-dronaparva
+- колокольцы  · n=1  · mahabharata-karnaparva
+- гонг  · n=1  · hatha-yoga-pradipika
+- колокола  · n=1  · amaru-shataka
+
+### `GaRwASabdAnusArin` — ghaṇṭāśabdānusārin  (n=1)
+
+- идущего на звонок  · n=1  · shukasaptati
+
+### `GaRwASabda` — ghaṇṭāśabda  (n=3)
+
+- звон колокольчиков  · n=1  · mahabharata-aranyakaparva
+- звон бубенцов  · n=1  · mahabharata-bhishmaparva
+- звон колокольчика  · n=1  · shukasaptati
+
+### `GaRwAdinAdasaktastabDAntaHkaraRahariRasya` — ghaṇṭādinādasaktastabdhāntaḥkaraṇahariṇasya  (n=1)
+
+- олень, оцепеневший от звука колокольчиков  · n=1  · hatha-yoga-pradipika
+
+### `GaRwAjAlAkularava` — ghaṇṭājālākularava  (n=1)
+
+- издавала звон, увешанная сетью колокольцев  · n=1  · mahabharata-dronaparva
+
+### `GaRwAkarRa` — ghaṇṭākarṇa  (n=1)
+
+- Гхантакарна  · n=1  · mahabharata-shalyaparva
+
+### `GaRwApaRavaka` — ghaṇṭāpaṇavaka  (n=1)
+
+- глашатай  · n=1  · mahabharata-virataparva
+
+### `GaRwApatAkAmaRivajraBAja` — ghaṇṭāpatākāmaṇivajrabhāja  (n=1)
+
+- с колокольчиками, флагами, драгоценными камнями, ваджрой  · n=1  · mahabharata-shalyaparva
+
+### `GaRwArava` — ghaṇṭārava  (n=1)
+
+- звоном колокольцев  · n=1  · mahabharata-shalyaparva
+
+### `GaRwAtAla` — ghaṇṭātāla  (n=1)
+
+- язычок колокольчика  · n=1  · shukasaptati
+
+### `GaRwAtAqa` — ghaṇṭātāḍa  (n=1)
+
+- ударяя в колокол  · n=1  · manavadharmashastra
+
+### `GaRwe` — ghaṇṭe  (n=1)
+
+- колокольца  · n=1  · mahabharata-aranyakaparva
+
+### `GanA` — ghanā  (n=2)
+
+- тучи  · n=1  · ramayana-ayodhyakanda
+- тучам  · n=1  · ramayana-sundarakanda
+
+### `GanABogam` — ghanābhogam  (n=1)
+
+- облаками густыми  · n=1  · buddhacharita
+
+### `GanAGana` — ghanāghana  (n=2)
+
+- бешеным  · n=1  · mahabharata-karnaparva
+- Бьющий наповал  · n=1  · atharvaveda
+
+### `GanAGanaH` — ghanāghanaḥ  (n=1)
+
+- Всегда готовый сражаться  · n=1  · rigveda
+
+### `GanAH` — ghanāḥ  (n=2)
+
+- тучи  · n=1  · ramayana-ayodhyakanda
+- тучам  · n=1  · ramayana-ayodhyakanda
+
+### `GanAn` — ghanān  (n=2)
+
+- тучи  · n=2  · ramayana-balakanda, mahabharata-dronaparva
+
+### `GanAntara` — ghanāntara  (n=2)
+
+- среди туч  · n=1  · ramayana-sundarakanda
+- сошедшими  · n=1  · ramayana-balakanda
+
+### `GanAntarasTa` — ghanāntarastha  (n=1)
+
+- в окружении туч  · n=1  · mahabharata-aranyakaparva
+
+### `GanApAya` — ghanāpāya  (n=1)
+
+- исчезновение туч  · n=1  · mahabharata-sabhaparva
+
+### `GanApAye` — ghanāpāye  (n=1)
+
+- рассеялись тучи  · n=1  · ramayana-ayodhyakanda
+
+### `GanAtyaye` — ghanātyaye  (n=1)
+
+- рассеялись облака  · n=1  · mahabharata-adiparva
+
+### `GanIkfta` — ghanīkṛta  (n=1)
+
+- сгущенным  · n=1  · kama-sutra
+
+### `Gana` — ghana  (n=60)
+
+- тучи  · n=6  · ramayana-aranyakanda, mahabharata-adiparva, mahabharata-dronaparva, mahabharata-virataparva, shatakatrayam, shatakatrayam-serebryakov
+- облака  · n=6  · mahabharata-karnaparva, mahabharata-aranyakaparva, mahabharata-adiparva, mahabharata-dronaparva, raghuvamsha
+- тесно  · n=2  · ramayana-ayodhyakanda, kama-sutra
+- тучами  · n=2  · ramayana-sundarakanda, mahabharata-aranyakaparva
+- тучей  · n=2  · ramayana-sundarakanda, gitagovinda
+- гряду  · n=2  · ramayana-aranyakanda
+- облаками  · n=2  · mahabharata-adiparva, mahabharata-shalyaparva
+- облаков  · n=2  · raghuvamsha, gitagovinda
+- облако  · n=1  · mahabharata-adiparva
+- богатых  · n=1  · ramayana-ayodhyakanda
+- туч  · n=1  · ramayana-sundarakanda
+- Гханы  · n=1  · ramayana-sundarakanda
+- гряде  · n=1  · ramayana-aranyakanda
+- туче  · n=1  · ramayana-aranyakanda
+- Тучи  · n=1  · mahabharata-aranyakaparva
+- облаке  · n=1  · mahabharata-aranyakaparva
+- непроглядный  · n=1  · mahabharata-aranyakaparva
+- убийцей  · n=1  · rigveda
+- гуща облаков  · n=1  · mahabharata-dronaparva
+- густое облако  · n=1  · mahabharata-dronaparva
+- тяжкие  · n=1  · buddhacharita
+- других предметах  · n=1  · buddhacharita
+- богатства  · n=1  · gitarthasamgraha-abhinavagupta
+- богатство  · n=1  · bhagavadgity
+- непроглядного  · n=1  · mahabharata-karnaparva
+- Тучами  · n=1  · kumarasambhava
+- Молот  · n=1  · rigveda
+- тучам  · n=1  · mahabharata-shalyaparva
+- густой  · n=1  · mahabharata-ashvamedhikaparva
+- дубиной  · n=1  · atharvaveda
+- туча  · n=1  · shatakatrayam
+- упругие  · n=1  · shatakatrayam-serebryakov
+- мрачные  · n=1  · shatakatrayam-serebryakov
+- дождей  · n=1  · shatakatrayam-serebryakov
+- полные  · n=1  · gitagovinda
+- полногрудой  · n=1  · gitagovinda
+- пышных  · n=1  · gitagovinda
+- твердь  · n=1  · yoga-sutry_vyasa-bhashya
+- тьмой  · n=1  · amaru-shataka
+- колокольца  · n=1  · amaru-shataka
+- шею  · n=1  · amaru-shataka
+- темноте  · n=1  · amaru-shataka
+- пышные  · n=1  · amaru-shataka
+- другъ  · n=1  · megha-duta
+
+### `Gana-jaGana-maRqale` — ghana-jaghana-maṇḍale  (n=1)
+
+- на пышной округлости бедер  · n=1  · gitagovinda
+
+### `GanaH` — ghanaḥ  (n=1)
+
+- молотом  · n=1  · rigveda
+
+### `GanaSabdaviklavAs` — ghanaśabdaviklavās  (n=1)
+
+- грома в облаках  · n=1  · raghuvamsha
+
+### `Ganaante` — ghanaante  (n=1)
+
+- на исходе жаркой поры  · n=1  · mahabharata-dronaparva
+
+### `GanadunduBisvana` — ghanadundubhisvana  (n=1)
+
+- чей голос звучит подобно рокоту барабана  · n=1  · buddhacharita
+
+### `Ganagarjita` — ghanagarjita  (n=1)
+
+- раскатам грома из туч  · n=1  · raghuvamsha
+
+### `GanaiH` — ghanaiḥ  (n=3)
+
+- тучами  · n=1  · mahabharata-adiparva
+- облаками  · n=1  · mahabharata-dronaparva
+- облака  · n=1  · raghuvamsha
+
+### `Ganam` — ghanam  (n=4)
+
+- туча  · n=1  · mahabharata-adiparva
+- плотное  · n=1  · bhagavadgita-radha
+- молот  · n=1  · rigveda
+- грубого  · n=1  · hatha-yoga-pradipika
+
+### `GananAdaniHsvanaH` — ghananādaniḥsvanaḥ  (n=1)
+
+- подобный раскату грома  · n=1  · ramayana-sundarakanda
+
+### `GananidrayA` — ghananidrayā  (n=1)
+
+- крепким сном  · n=1  · buddhacharita
+
+### `Ganapawala` — ghanapaṭala  (n=2)
+
+- небо  · n=1  · shatakatrayam
+- тучи  · n=1  · shatakatrayam-serebryakov
+
+### `GanasaMniBaiH` — ghanasaṃnibhaiḥ  (n=1)
+
+- тучам подобных  · n=1  · raghuvamsha
+
+### `GanasaNkASa` — ghanasaṅkāśa  (n=1)
+
+- видом напоминавшие облака  · n=1  · mahabharata-shalyaparva
+
+### `GanastanamaRqala` — ghanastanamaṇḍala  (n=3)
+
+- мандалы грудей высоких  · n=2  · shatakatrayam
+- мандала полных грудей  · n=1  · shatakatrayam-serebryakov
+
+### `GanatimirarudDe` — ghanatimiraruddhe  (n=2)
+
+- густой туман  · n=1  · shatakatrayam
+- густая тьма  · n=1  · shatakatrayam-serebryakov
+
+### `GanatulyavikramaH` — ghanatulyavikramaḥ  (n=1)
+
+- мощью равная туче  · n=1  · ramayana-sundarakanda
+
+### `Ganau` — ghanau  (n=2)
+
+- упруги  · n=2  · shatakatrayam, shatakatrayam-serebryakov
+
+### `GanavivaraprasftAH` — ghanavivaraprasṛtāḥ  (n=1)
+
+- Пробивающиеся сквозь разрывы в тучах  · n=1  · buddhacharita
+
+### `GanavyapAyena` — ghanavyapāyena  (n=2)
+
+- рассеиваются облака  · n=2  · raghuvamsha
+
+### `Gane` — ghane  (n=3)
+
+- При убийстве  · n=1  · rigveda
+- грубому  · n=1  · hatha-yoga-pradipika
+- крепкие  · n=1  · gitagovinda
+
+### `Ganena` — ghanena  (n=1)
+
+- дубиной  · n=1  · rigveda
+
+### `Ganeva` — ghaneva  (n=3)
+
+- Словно дубиной  · n=2  · rigveda, rigveda
+- словно молотом  · n=1  · rigveda
+
+### `GaniGnat` — ghanighnat  (n=1)
+
+- поражая  · n=1  · rigveda
+
+### `Gano'drimivavfzwiBiH` — ghano'drimiva vṛṣṭibhiḥ  (n=1)
+
+- подобно тому как облако окутывает гору своими ливнями  · n=1  · mahabharata-dronaparva
+
+### `Ganá` — ghaná  (n=1)
+
+- дубины  · n=1  · rigveda
+
+### `Garga` — Garga  (n=1)
+
+- Гарга  · n=1  · nyaya-bhashya
+
+### `GarmABitaptAH` — gharmābhitaptāḥ  (n=1)
+
+- Измученных летней жарой  · n=1  · ramayana-ayodhyakanda
+
+### `GarmAMSu` — gharmāṃśu  (n=1)
+
+- жарколучистому солнцу  · n=1  · mahabharata-dronaparva
+
+### `GarmAMSuH` — gharmāṃśuḥ  (n=1)
+
+- солнце  · n=1  · mahabharata-dronaparva
+
+### `GarmAmBas` — gharmāmbhas  (n=1)
+
+- потом и дождем  · n=1  · mahabharata-dronaparva
+
+### `GarmAn` — gharmān  (n=1)
+
+- зноям  · n=1  · atharvaveda
+
+### `GarmAnta` — gharmānta  (n=4)
+
+- на исходе летней поры  · n=1  · mahabharata-dronaparva
+- на исходе жаркой поры  · n=1  · mahabharata-dronaparva
+- в конце жаркого времени  · n=1  · mahabharata-dronaparva
+- конце жаркого времени  · n=1  · mahabharata-udyogaparva
+
+### `GarmAnte` — gharmānte  (n=5)
+
+- на исходе жаркой поры  · n=2  · mahabharata-dronaparva
+- в период дождей  · n=2  · mahabharata-udyogaparva, mahabharata-virataparva
+- в конце знойной поры  · n=1  · mahabharata-karnaparva
+
+### `GarmArta` — gharmārta  (n=2)
+
+- томимый зноем  · n=1  · mahabharata-karnaparva
+- измученных зноем  · n=1  · mahabharata-ashvamedhikaparva
+
+### `GarmAsa` — gharmāsa  (n=2)
+
+- жара  · n=2  · rigveda
+
+### `Garma` — gharma  (n=50)
+
+- жар  · n=7  · rigveda, atharvaveda, rigveda, rigveda, atharvaveda
+- котелок с молоком  · n=7  · atharvaveda, rigveda
+- горячее молоко  · n=6  · rigveda, rigveda, mahabharata-adiparva, rigveda
+- лета  · n=2  · ramayana-ayodhyakanda
+- в пекле  · n=2  · rigveda
+- Два жара  · n=2  · rigveda
+- Теплое молоко  · n=2  · rigveda
+- зной  · n=2  · rigveda, atharvaveda
+- котелка с молоком  · n=2  · rigveda
+- горшок с горячим молоком  · n=2  · atharvaveda
+- горячего питья  · n=2  · atharvaveda
+- летним зноем  · n=1  · ramayana-ayodhyakanda
+- зноем  · n=1  · ramayana-ayodhyakanda
+- добродетель  · n=1  · kama-sutra
+- солнечный зной, жар  · n=1  · rigveda
+- зной, котелок с горячим молоком  · n=1  · rigveda
+- Котелок с молоком  · n=1  · rigveda
+- горячему молоку  · n=1  · rigveda
+- жаре  · n=1  · atharvaveda
+- горячий напиток  · n=1  · atharvaveda
+- котелок с горячим молоком  · n=1  · atharvaveda
+- котелка с горячим молоком  · n=1  · atharvaveda
+- жаркой  · n=1  · atharvaveda
+- Котелок  · n=1  · atharvaveda
+- жара  · n=1  · atharvaveda
+
+### `GarmaH` — gharmaḥ  (n=5)
+
+- котелок  · n=2  · rigveda
+- лето  · n=1  · raghuvamsha
+- котелок с разогретым молоком  · n=1  · atharvaveda
+- котелок с молоком  · n=1  · atharvaveda
+
+### `GarmaM` — gharmaṃ  (n=3)
+
+- котелок с молоком  · n=2  · rigveda
+- горячий напиток  · n=1  · atharvaveda
+
+### `GarmadIDitiH` — gharmadīdhitiḥ  (n=1)
+
+- жаркое солнце  · n=1  · raghuvamsha
+
+### `Garmada` — gharmada  (n=1)
+
+- жарок  · n=1  · mahabharata-sabhaparva
+
+### `GarmaduGe` — gharmadughe  (n=1)
+
+- доящиеся теплым молоком  · n=1  · atharvaveda
+
+### `GarmalabDa` — gharmalabdha  (n=1)
+
+- въ жару  · n=1  · megha-duta
+
+### `Garmam` — gharmam  (n=14)
+
+- котелок с молоком  · n=2  · rigveda
+- горячее питье  · n=2  · rigveda
+- гхарма  · n=2  · rigveda
+- горячий напиток  · n=2  · rigveda
+- жертвенное молоко  · n=1  · mahabharata-adiparva
+- котелок  · n=1  · rigveda
+- горячее молоко  · n=1  · rigveda
+- жаркой  · n=1  · rigveda
+- горячему молоку  · n=1  · rigveda
+- горячий жертвенный напиток  · n=1  · atharvaveda
+
+### `Garmapakza` — gharmapakṣa  (n=2)
+
+- жаркой половины месяца  · n=2  · mahabharata-virataparva
+
+### `Garmapalvalam` — gharmapalvalam  (n=1)
+
+- пруд летом  · n=1  · raghuvamsha
+
+### `GarmaraSmi` — gharmaraśmi  (n=1)
+
+- палящее солнце  · n=1  · mahabharata-bhishmaparva
+
+### `Garmas` — gharmas  (n=1)
+
+- котелок с молоком  · n=1  · rigveda
+
+### `GarmasAgara` — gharmasāgara  (n=1)
+
+- горячее молоко  · n=1  · mahabharata-bhishmaparva
+
+### `Garmasad` — gharmasad  (n=3)
+
+- сидящими возле горячего молока  · n=1  · rigveda
+- сидящих вокруг горячего молока  · n=1  · atharvaveda
+- сидящими вокруг горячего молока  · n=1  · atharvaveda
+
+### `GarmasadBiH` — gharmasadbhiḥ  (n=2)
+
+- сидящими вокруг горячего молока  · n=2  · rigveda
+
+### `GarmastuBe` — gharmastubhe  (n=2)
+
+- ревущую в такт котелку с молоком  · n=2  · rigveda
+
+### `GarmasvarasaH` — gharmasvarasaḥ  (n=2)
+
+- шумящие, как кипящий котелок  · n=2  · rigveda
+
+### `GarmasvedeBiH` — gharmasvedebhiḥ  (n=2)
+
+- Потными от горячего молока  · n=2  · rigveda
+
+### `GarmavfdDi` — gharmavṛddhi  (n=1)
+
+- день увеличивается  · n=1  · vedanga_jyotisha
+
+### `GarmavfdDis` — gharmavṛddhis  (n=1)
+
+- день увеличивается  · n=1  · vedanga_jyotisha
+
+### `Garme` — gharme  (n=1)
+
+- в котелок с молоком  · n=1  · atharvaveda
+
+### `Garmin` — gharmin  (n=2)
+
+- готовящие горячее молоко  · n=2  · rigveda
+
+### `Garmo` — gharmo  (n=1)
+
+- котелок с молоком  · n=1  · rigveda
+
+### `GarzamARasya` — gharṣamāṇasya  (n=1)
+
+- терся  · n=1  · mahabharata-aranyakaparva
+
+### `Gas` — ghas  (n=1)
+
+- съедай  · n=1  · rigveda
+
+### `Gasa` — ghasa  (n=1)
+
+- Гхаса  · n=1  · mahabharata-shalyaparva
+
+### `Gasat` — ghasat  (n=1)
+
+- Пусть вкусит  · n=1  · rigveda
+
+### `GasmarA` — ghasmarā  (n=1)
+
+- прожорливы  · n=1  · mahabharata-karnaparva
+
+### `Gaso` — ghaso  (n=1)
+
+- Ешь  · n=1  · rigveda
+
+### `Gatotkaca` — ghatotkaca  (n=1)
+
+- Гхатоткача  · n=1  · mahabharata-aranyakaparva
+
+### `Gautama` — Gautama  (n=1)
+
+- Гаутама  · n=1  · vajs-up
+
+### `Gaw` — ghaṭ  (n=1)
+
+- несу  · n=1  · mahabharata-aranyakaparva
+
+### `GawA` — ghaṭā  (n=2)
+
+- сосуды  · n=1  · mahabharata-aranyakaparva
+- праздничных сборищ  · n=1  · kama-sutra
+
+### `GawABAva` — ghaṭābhāva  (n=2)
+
+- небытие горшка  · n=2  · nyaya-bhashya
+
+### `GawAdInAm` — ghaṭādīnām  (n=1)
+
+- горшков и т. п.  · n=1  · nyaya-bhashya
+
+### `GawAdi` — ghaṭādi  (n=5)
+
+- горшки и т.п.  · n=2  · gitarthasamgraha-abhinavagupta
+- горшок и т.п.  · n=1  · yoga-sutry_vyasa-bhashya
+- кувшин и прочее  · n=1  · yoga-sutry_vyasa-bhashya
+- глиняные горшки и прочее  · n=1  · paramarthasara-abhinavagupta
+
+### `GawAdikAryam` — ghaṭādikāryam  (n=2)
+
+- горшок и т. п.  · n=1  · nyaya-bhashya
+- горшок  · n=1  · nyaya-bhashya
+
+### `GawAdinizpattidarSanAt` — ghaṭādiniṣpattidarśanāt  (n=2)
+
+- общеизвестно, как производятся горшки и т. п.  · n=1  · nyaya-bhashya
+- производства горшка  · n=1  · nyaya-bhashya
+
+### `GawAdisaMyoga` — ghaṭādisaṃyoga  (n=1)
+
+- связь с кувшином  · n=1  · vedartha-samgraha_ramanuja
+
+### `GawAgozWIprekzaRakasamAjasamasyAkrIqanaSIla` — ghaṭāgoṣṭhīprekṣaṇakasamājasamasyākrīḍanaśīla  (n=1)
+
+- склонный к праздничным сборищам, компании, представлениям, встречам и общим играм  · n=1  · kama-sutra
+
+### `GawAkASa` — ghaṭākāśa  (n=7)
+
+- пространством в сосудах  · n=2  · devi-gita
+- пространству в сосудах  · n=2  · devi-gita
+- пространство в кувшине  · n=1  · vedartha-samgraha_ramanuja
+- пространство, [заключенное] в горшке  · n=1  · pai-up
+- пространство, ограниченное горшком  · n=1  · pai-up
+
+### `GawAmahe` — ghaṭāmahe  (n=2)
+
+- посвятить себя борьбе  · n=1  · mahabharata-aranyakaparva
+- приложить старания  · n=1  · mahabharata-dronaparva
+
+### `GawAvasTA` — ghaṭāvasthā  (n=2)
+
+- горшок  · n=1  · yotat-up
+- приём «горшок»  · n=1  · yotat-up
+
+### `GawIkftya` — ghaṭīkṛtya  (n=2)
+
+- входит  · n=2  · hatha-yoga-pradipika
+
+### `GawIyantra` — ghaṭīyantra  (n=2)
+
+- водочерпальному колесу  · n=2  · devi-gita
+
+### `Gawa` — ghaṭa  (n=57)
+
+- горшок  · n=21  · nyaya-bhashya, sankhya-karika, gitarthasamgraha-abhinavagupta, devi-gita, yoga-sutry_vyasa-bhashya, yotat-up, brb-up
+- сосуд  · n=5  · manavadharmashastra, mahabharata-aranyakaparva, shatakatrayam-serebryakov
+- кувшин  · n=5  · vedartha-samgraha_ramanuja, sankhya-karika
+- кувшины  · n=3  · mahabharata-ashvamedhikaparva, ramayana-ayodhyakanda
+- кувшина  · n=3  · vedartha-samgraha_ramanuja, nyaya-bhashya
+- горшку  · n=2  · nyaya-bhashya, brb-up
+- Гхата  · n=2  · hatha-yoga-pradipika
+- горшки  · n=2  · sankhya-karika
+- чаши  · n=1  · ramayana-ayodhyakanda
+- кувшинах  · n=1  · ramayana-ayodhyakanda
+- праздничные сборища  · n=1  · kama-sutra
+- горшком  · n=1  · nyaya-bhashya
+- кувшинов  · n=1  · raghuvamsha
+- Гхатам  · n=1  · hatha-yoga-pradipika
+- сосуда  · n=1  · shatakatrayam
+- кувшином  · n=1  · vedartha-samgraha_ramanuja
+- мисок  · n=1  · vedartha-samgraha_ramanuja
+- Сосуд  · n=1  · yotat-up
+- горшка  · n=1  · yotat-up
+- черпак  · n=1  · yotat-up
+- глиняным горшкам  · n=1  · paramarthasara-abhinavagupta
+- светильника  · n=1  · yoga-sutry_vyasa-bhashya
+
+### `GawaH` — ghaṭaḥ  (n=2)
+
+- горшок  · n=2  · sankhya-karika
+
+### `GawaM` — ghaṭaṃ  (n=1)
+
+- кувшин  · n=1  · shukasaptati
+
+### `GawaSarAvAdi` — ghaṭaśarāvādi  (n=1)
+
+- кувшина, миски и т.п.  · n=1  · vedartha-samgraha_ramanuja
+
+### `GawaSoDanakAraka` — ghaṭaśodhanakāraka  (n=1)
+
+- очищающие тело  · n=1  · hatha-yoga-pradipika
+
+### `GawaiH` — ghaṭaiḥ  (n=2)
+
+- кувшины  · n=1  · ramayana-ayodhyakanda
+- цепляясь за  · n=1  · ramayana-ayodhyakanda
+
+### `GawajAnava` — ghaṭajānava  (n=1)
+
+- С челюстями, кувшинам подобными  · n=1  · buddhacharita
+
+### `GawajAnu` — ghaṭajānu  (n=1)
+
+- с коленями колоколом  · n=1  · mahabharata-sauptikaparva
+
+### `GawajAnuka` — ghaṭajānuka  (n=1)
+
+- Гхата-джанука  · n=1  · mahabharata-sabhaparva
+
+### `Gawaka` — ghaṭaka  (n=2)
+
+- радеет  · n=1  · shatakatrayam
+- радеют  · n=1  · shatakatrayam-serebryakov
+
+### `Gawam` — ghaṭam  (n=3)
+
+- кувшин  · n=3  · shukasaptati, ramayana-ayodhyakanda
+
+### `GawamAnAH` — ghaṭamānāḥ  (n=1)
+
+- все силы прилагающих  · n=1  · mahabharata-bhishmaparva
+
+### `GawamAna` — ghaṭamāna  (n=7)
+
+- стремящиеся  · n=1  · mahabharata-bhishmaparva
+- старающегося  · n=1  · mahabharata-dronaparva
+- брал  · n=1  · mahabharata-dronaparva
+- старавшиеся  · n=1  · mahabharata-shalyaparva
+- стремится  · n=1  · nyaya-bhashya
+- стремящихся  · n=1  · nyaya-bhashya
+- старавшегося  · n=1  · mahabharata-sabhaparva
+
+### `GawamAnam` — ghaṭamānam  (n=1)
+
+- старающегося  · n=1  · mahabharata-bhishmaparva
+
+### `GawamAropayatA` — ghaṭamāropayatā  (n=1)
+
+- поднял  · n=1  · shukasaptati
+
+### `GawamaDye` — ghaṭamadhye  (n=1)
+
+- внутри горшка  · n=1  · yotat-up
+
+### `GawasTena` — ghaṭasthena  (n=1)
+
+- сидевшим в кувшине  · n=1  · shukasaptati
+
+### `GawasaMyuktAkASapradeSa` — ghaṭasaṃyuktākāśapradeśa  (n=1)
+
+- пространство в кувшине  · n=1  · vedartha-samgraha_ramanuja
+
+### `Gawase` — ghaṭase  (n=2)
+
+- вынашиваешь злобу  · n=1  · mahabharata-shantiparva
+- стараешься  · n=1  · mahabharata-shantiparva
+
+### `GawastanaprasravaRaiH` — ghaṭastanaprasravaṇaiḥ  (n=1)
+
+- кормила  · n=1  · kumarasambhava
+
+### `Gawasva` — ghaṭasva  (n=1)
+
+- отвечай  · n=1  · mahabharata-aranyakaparva
+
+### `GawatA` — ghaṭatā  (n=1)
+
+- старайся  · n=1  · mahabharata-striparva
+
+### `Gawate` — ghaṭate  (n=10)
+
+- нет  · n=3  · vedartha-samgraha_ramanuja
+- невозможно  · n=2  · nyaya-bhashya
+- старается  · n=1  · mahabharata-dronaparva
+- происходит  · n=1  · gitarthasamgraha-abhinavagupta
+- стремится  · n=1  · nyaya-bhashya
+- заключаются  · n=1  · yotat-up
+- заключается  · n=1  · yotat-up
+
+### `Gawavadeva` — ghaṭavadeva  (n=2)
+
+- подобно горшку  · n=2  · nyaya-bhashya
+
+### `Gawavat` — ghaṭavat  (n=7)
+
+- подобно горшку  · n=6  · nyaya-bhashya, brb-up
+- подобен кувшину  · n=1  · hatha-yoga-pradipika
+
+### `Gawaya` — ghaṭaya  (n=3)
+
+- возложи  · n=1  · gitagovinda
+- охвати  · n=1  · gitagovinda
+- укрепи  · n=1  · gitagovinda
+
+### `Gawayati` — ghaṭayati  (n=1)
+
+- укрепляет  · n=1  · gitagovinda
+
+### `Gawe` — ghaṭe  (n=2)
+
+- прилагаю старания  · n=1  · mahabharata-dronaparva
+- в кувшин  · n=1  · shukasaptati
+
+### `Gawena` — ghaṭena  (n=1)
+
+- с горшком  · n=1  · nyaya-bhashya
+
+### `Gaweta` — ghaṭeta  (n=1)
+
+- невозможным  · n=1  · devi-gita
+
+### `GawikA` — ghaṭikā  (n=3)
+
+- гхатика  · n=2  · yotat-up
+- Мера времени ghaṭika  · n=1  · yotat-up
+
+### `GawikApraRAlavigaladvArA` — ghaṭikāpraṇālavigaladvārā  (n=1)
+
+- вода из кувшина  · n=1  · amaru-shataka
+
+### `GawikAzazwi` — ghaṭikāṣaṣṭi  (n=1)
+
+- 60 гхатика  · n=1  · yotat-up
+
+### `GawitArau` — ghaṭitārau  (n=1)
+
+- устроят  · n=1  · mahabharata-udyogaparva
+
+### `Gawitavat` — ghaṭitavat  (n=1)
+
+- вложил  · n=1  · amaru-shataka
+
+### `Gawo` — ghaṭo  (n=2)
+
+- кувшин  · n=1  · shatakatrayam
+- воплощения  · n=1  · shatakatrayam
+
+### `GawoDnIH` — ghaṭodhnīḥ  (n=1)
+
+- с выменем с бадью  · n=1  · raghuvamsha
+
+### `Gawodara` — ghaṭodara  (n=1)
+
+- Гхатодара  · n=1  · mahabharata-sabhaparva
+
+### `Gawotkaca` — ghaṭotkaca  (n=92)
+
+- Гхатоткача  · n=65  · mahabharata-dronaparva, mahabharata-bhishmaparva, mahabharata-adiparva, mahabharata-aranyakaparva, mahabharata-svargarohanikaparva, mahabharata-udyogaparva, mahabharata-ashramavasikaparva, mahabharata-karnaparva, mahabharata-shalyaparva
+- Гхатоткачу  · n=15  · mahabharata-dronaparva, mahabharata-bhishmaparva, mahabharata-karnaparva
+- Гхатоткачи  · n=5  · mahabharata-dronaparva, mahabharata-adiparva
+- Гхатоткаче  · n=4  · mahabharata-dronaparva, mahabharata-aranyakaparva, mahabharata-shalyaparva
+- Гхатоткачей  · n=3  · mahabharata-dronaparva, mahabharata-bhishmaparva, mahabharata-karnaparva
+
+### `GawotkacaH` — ghaṭotkacaḥ  (n=13)
+
+- Гхатоткача  · n=13  · mahabharata-dronaparva, mahabharata-bhishmaparva, mahabharata-aranyakaparva
+
+### `GawotkacaSara` — ghaṭotkacaśara  (n=1)
+
+- стрелами Гхатоткачи  · n=1  · mahabharata-dronaparva
+
+### `Gawotkacam` — ghaṭotkacam  (n=13)
+
+- Гхатоткачу  · n=8  · mahabharata-dronaparva, mahabharata-bhishmaparva
+- Гхатоткаче  · n=2  · mahabharata-bhishmaparva, mahabharata-dronaparva
+- против Гхатоткачи  · n=1  · mahabharata-dronaparva
+- Гхатоткачи  · n=1  · mahabharata-dronaparva
+- Гхатоткачей  · n=1  · mahabharata-shalyaparva
+
+### `Gawotkacapramuktena` — ghaṭotkacapramuktena  (n=1)
+
+- изданным Гхатоткачей  · n=1  · mahabharata-dronaparva
+
+### `Gawotkacaprayuktena` — ghaṭotkacaprayuktena  (n=1)
+
+- издаваемым Гхатоткачей  · n=1  · mahabharata-dronaparva
+
+### `GawotkacaraTam` — ghaṭotkacaratham  (n=1)
+
+- колесницу Гхатоткачи  · n=1  · mahabharata-dronaparva
+
+### `GawotkacasamIrita` — ghaṭotkacasamīrita  (n=1)
+
+- посланное Гхатоткачей  · n=1  · mahabharata-dronaparva
+
+### `Gawotkacasuta` — ghaṭotkacasuta  (n=2)
+
+- сын Гхатоткачи  · n=2  · mahabharata-dronaparva
+
+### `Gawotkacasya` — ghaṭotkacasya  (n=1)
+
+- Гхатоткачи  · n=1  · mahabharata-bhishmaparva
+
+### `GawotkacavaDa` — ghaṭotkacavadha  (n=3)
+
+- Убийство Гхатоткачи  · n=1  · mahabharata-adiparva
+- убийство Гхатоткачи  · n=1  · mahabharata-adiparva
+- Гхатоткача  · n=1  · mahabharata-adiparva
+
+### `GawotkacavinirmitAm` — ghaṭotkacavinirmitām  (n=2)
+
+- созданную Гхатоткачей  · n=1  · mahabharata-dronaparva
+- вызванную Гхатоткачей  · n=1  · mahabharata-dronaparva
+
+### `Gawotkace` — ghaṭotkace  (n=6)
+
+- Гхатоткача  · n=2  · mahabharata-adiparva, mahabharata-karnaparva
+- на Гхатоткаче  · n=2  · mahabharata-dronaparva
+- в Гхатоткаче  · n=1  · mahabharata-dronaparva
+- в Гхатоткачу  · n=1  · mahabharata-dronaparva
+
+### `Gawotkacena` — ghaṭotkacena  (n=5)
+
+- Гхатоткачей  · n=4  · mahabharata-dronaparva
+- на Гхатоткаче  · n=1  · mahabharata-dronaparva
+
+### `Gawotkacenasahita` — ghaṭotkacena sahita  (n=1)
+
+- вместе с Гхатоткачей  · n=1  · mahabharata-bhishmaparva
+
+### `Gawwana` — ghaṭṭana  (n=1)
+
+- касается  · n=1  · kama-sutra
+
+### `Gawwanam` — ghaṭṭanam  (n=1)
+
+- касается  · n=1  · kama-sutra
+
+### `Gawwayan` — ghaṭṭayan  (n=1)
+
+- уязвляя  · n=1  · mahabharata-dronaparva
+
+### `Gawwayant` — ghaṭṭayant  (n=1)
+
+- надрывая  · n=1  · mahabharata-bhishmaparva
+
+### `GawwayantI` — ghaṭṭayantī  (n=1)
+
+- приводя в волнение  · n=1  · mahabharata-virataparva
+
+### `Gawwayati` — ghaṭṭayati  (n=1)
+
+- трет  · n=1  · kama-sutra
+
+### `Gawwayet` — ghaṭṭayet  (n=4)
+
+- касается  · n=1  · kama-sutra
+- ударяет  · n=1  · kama-sutra
+- наносит удары  · n=1  · kama-sutra
+- трогает  · n=1  · kama-sutra
+
+### `Gawwita` — ghaṭṭita  (n=1)
+
+- затронуты  · n=1  · mahabharata-dronaparva
+
+### `GawwitaH` — ghaṭṭitaḥ  (n=1)
+
+- сталкивающихся  · n=1  · ramayana-ayodhyakanda
+
+### `Gawwitaka` — ghaṭṭitaka  (n=1)
+
+- трущий  · n=1  · kama-sutra
+
+### `Gawwitakam` — ghaṭṭitakam  (n=1)
+
+- трущий  · n=1  · kama-sutra
+
+### `Gawwitau` — ghaṭṭitau  (n=1)
+
+- потревоженным  · n=1  · mahabharata-dronaparva
+
+### `Ged` — ghed  (n=6)
+
+- в самом деле  · n=1  · rigveda
+- Только  · n=1  · rigveda
+- Совсем  · n=1  · rigveda
+- В самом деле  · n=1  · rigveda
+- действительно  · n=1  · rigveda
+- Ведь  · n=1  · rigveda
+
+### `Gem` — ghem  (n=1)
+
+- Ведь  · n=1  · rigveda
+
+### `Gen` — ghen  (n=2)
+
+- в опьянении  · n=2  · rigveda
+
+### `GfRA` — ghṛṇā  (n=18)
+
+- пугаясь  · n=2  · ramayana-balakanda
+- жаром  · n=2  · rigveda, rigveda
+- знойно  · n=2  · rigveda
+- солнечный зной  · n=2  · rigveda
+- с состраданием  · n=1  · ramayana-ayodhyakanda
+- сострадание  · n=1  · mahabharata-aranyakaparva
+- снисходительность  · n=1  · mahabharata-aranyakaparva
+- жар  · n=1  · rigveda
+- от зноя  · n=1  · rigveda
+- зноя  · n=1  · rigveda
+- отвращения  · n=1  · mahabharata-shalyaparva
+- доброта  · n=1  · mahabharata-ashvamedhikaparva
+- отвращение  · n=1  · raghuvamsha
+- любовь  · n=1  · raghuvamsha
+
+### `GfRAm` — ghṛṇām  (n=2)
+
+- колебаний  · n=1  · ramayana-balakanda
+- нерешительность  · n=1  · mahabharata-aranyakaparva
+
+### `GfRAvizwa` — ghṛṇāviṣṭa  (n=1)
+
+- поддался состраданию  · n=1  · mahabharata-aranyakaparva
+
+### `GfRI` — ghṛṇī  (n=10)
+
+- милосерден  · n=2  · mahabharata-aranyakaparva, mahabharata-sabhaparva
+- сострадателен  · n=2  · mahabharata-udyogaparva
+- сострадающим  · n=1  · mahabharata-shantiparva
+- сострадание  · n=1  · mahabharata-shantiparva
+- милостивый  · n=1  · ramayana-sundarakanda
+- добродушен  · n=1  · mahabharata-aranyakaparva
+- сострадательный  · n=1  · mahabharata-dronaparva
+- солнечный зной  · n=1  · rigveda
+
+### `GfRIva` — ghṛṇīva  (n=2)
+
+- сопровождаемый Марутами  · n=1  · rigveda
+- солнечный зной  · n=1  · rigveda
+
+### `GfRIvant` — ghṛṇīvant  (n=1)
+
+- Пылающий  · n=1  · rigveda
+
+### `GfRa` — ghṛṇa  (n=1)
+
+- жарой  · n=1  · rigveda
+
+### `GfRayA` — ghṛṇayā  (n=2)
+
+- щадить  · n=1  · ramayana-balakanda
+- из жалости  · n=1  · mahabharata-udyogaparva
+
+### `GfRe` — ghṛṇe  (n=1)
+
+- при солнечном зное  · n=1  · rigveda
+
+### `GfRi` — ghṛṇi  (n=1)
+
+- солнечного зноя  · n=1  · rigveda
+
+### `GfRiH` — ghṛṇiḥ  (n=1)
+
+- пылающий  · n=1  · atharvaveda
+
+### `GfRin` — ghṛṇin  (n=5)
+
+- милосердный  · n=2  · mahabharata-aranyakaparva, mahabharata-udyogaparva
+- сострадательный  · n=2  · mahabharata-udyogaparva
+- жалостливый  · n=1  · mahabharata-aranyakaparva
+
+### `GfRinA` — ghṛṇinā  (n=1)
+
+- милостивы  · n=1  · mahabharata-virataparva
+
+### `GfRinaH` — ghṛṇinaḥ  (n=1)
+
+- милосердного  · n=1  · mahabharata-udyogaparva
+
+### `GfRitvAddrupadAtmaje` — ghṛṇitvāddrupadātmaje  (n=1)
+
+- из сострадания сына Друпады  · n=1  · mahabharata-bhishmaparva
+
+### `GfRitva` — ghṛṇitva  (n=1)
+
+- сострадательность  · n=1  · mahabharata-aranyakaparva
+
+### `GftA` — ghṛtā  (n=1)
+
+- расплавленного масла  · n=1  · atharvaveda
+
+### `GftAcI` — ghṛtācī  (n=26)
+
+- Гхритачи  · n=8  · mahabharata-adiparva, ramayana-ayodhyakanda, mahabharata-aranyakaparva, mahabharata-sabhaparva
+- полная жира  · n=5  · rigveda, rigveda, rigveda, rigveda
+- Гхритачьи  · n=1  · ramayana-balakanda
+- в расплавленном масле  · n=1  · rigveda
+- обмазанную жиром  · n=1  · rigveda
+- полные жира  · n=1  · rigveda
+- богатых жиром  · n=1  · rigveda
+- с расплавленным жиром  · n=1  · rigveda
+- окруженная жиром  · n=1  · rigveda
+- полная масла  · n=1  · rigveda
+- полной жира (ложкой)  · n=1  · rigveda
+- полно жира  · n=1  · rigveda
+- Подобная жиру  · n=1  · atharvaveda
+- сочащаяся жиром  · n=1  · atharvaveda
+- сочащуюся жиром  · n=1  · atharvaveda
+
+### `GftAcIH` — ghṛtācīḥ  (n=4)
+
+- полные жира  · n=2  · rigveda, rigveda
+- намазанные жиром  · n=2  · rigveda
+
+### `GftAcIm` — ghṛtācīm  (n=5)
+
+- смазанной жиром  · n=2  · rigveda
+- Гхритачи  · n=2  · mahabharata-adiparva, mahabharata-shalyaparva
+- жертвенную ложку  · n=1  · rigveda
+
+### `GftAcyA` — ghṛtācyā  (n=2)
+
+- Гхритачи  · n=2  · buddhacharita
+
+### `GftAhavana` — ghṛtāhavana  (n=3)
+
+- жиром поливаемый  · n=1  · rigveda
+- окропленный жиром  · n=1  · rigveda
+- Политому жиром  · n=1  · rigveda
+
+### `GftAhuta` — ghṛtāhuta  (n=2)
+
+- политый жиром  · n=2  · atharvaveda
+
+### `GftAhutam` — ghṛtā hutam  (n=1)
+
+- политого жиром  · n=1  · atharvaveda
+
+### `GftAkta` — ghṛtākta  (n=1)
+
+- умащенные топленым маслом  · n=1  · mahabharata-dronaparva
+
+### `GftAktaH` — ghṛtāktaḥ  (n=1)
+
+- умастив себя топленым маслом  · n=1  · mahabharata-virataparva
+
+### `GftAktam` — ghṛtāktam  (n=1)
+
+- натертом растопленным маслом  · n=1  · mahabharata-sauptikaparva
+
+### `GftAni` — ghṛtāni  (n=1)
+
+- потокам жира  · n=1  · rigveda
+
+### `GftAnnA` — ghṛtānnā  (n=1)
+
+- питающиеся жиром  · n=1  · rigveda
+
+### `GftAnna` — ghṛtānna  (n=1)
+
+- с пищей из жира  · n=1  · rigveda
+
+### `GftArci` — ghṛtārci  (n=1)
+
+- Лучащийся  · n=1  · mahabharata-ashvamedhikaparva
+
+### `GftAsutI` — ghṛtāsutī  (n=2)
+
+- чьё питьё – расплавленное масло  · n=1  · rigveda
+- получающих как возлияние жир  · n=1  · rigveda
+
+### `GftAsuti` — ghṛtāsuti  (n=3)
+
+- чей выжатый напиток — жир  · n=2  · rigveda
+- чей напиток — жир  · n=1  · rigveda
+
+### `GftAt` — ghṛtāt  (n=3)
+
+- из жира  · n=2  · rigveda, atharvaveda
+- жира  · n=1  · rigveda
+
+### `GftAvfDA` — ghṛtāvṛdhā  (n=1)
+
+- жиром взращены  · n=1  · rigveda
+
+### `Gfta` — ghṛta  (n=130)
+
+- жиром  · n=33  · rigveda, atharvaveda, atharvaveda, rigveda, rigveda, atharvaveda, atharvaveda, atharvaveda, atharvaveda, atharvaveda, rigveda, rigveda, rigveda, atharvaveda, atharvaveda, atharvaveda, atharvaveda, atharvaveda
+- жир  · n=22  · atharvaveda, rigveda, rigveda, rigveda, rigveda, rigveda, rigveda, rigveda, rigveda, rigveda, atharvaveda, atharvaveda, atharvaveda, atharvaveda, atharvaveda
+- жира  · n=13  · rigveda, rigveda, rigveda, atharvaveda, rigveda, rigveda, atharvaveda, atharvaveda
+- масло  · n=12  · manavadharmashastra, ramayana-ayodhyakanda, ramayana-aranyakanda, br-up, shukasaptati, yotat-up, mai-up, brb-up, pai-up
+- коровье масло  · n=7  · manavadharmashastra
+- масла  · n=6  · rigveda, ramayana-aranyakanda, br-up, shv-up, mai-up
+- коровьего масла  · n=4  · manavadharmashastra
+- Жиром  · n=4  · rigveda, rigveda, rigveda, atharvaveda
+- Жир  · n=4  · rigveda, atharvaveda, atharvaveda
+- топлёное масло  · n=3  · devi-gita, mahabharata-bhishmaparva
+- топленое масло  · n=2  · mahabharata-adiparva, kama-sutra
+- коровьим маслом  · n=2  · manavadharmashastra
+- топленого масла  · n=2  · kama-sutra, mahabharata-karnaparva
+- топленым маслом  · n=2  · kama-sutra
+- топленом масле  · n=2  · kama-sutra, mahabharata-sabhaparva
+- сбитое масло  · n=1  · mahabharata-adiparva
+- сбитого масла  · n=1  · mahabharata-adiparva
+- из масла  · n=1  · mahabharata-adiparva
+- сливки  · n=1  · ramayana-ayodhyakanda
+- Вооруженное  · n=1  · ramayana-aranyakanda
+- жертвенное масло  · n=1  · rigveda
+- в жир  · n=1  · rigveda
+- растопленное масло  · n=1  · rigveda
+- маслом  · n=1  · br-up
+- масле  · n=1  · shukasaptati
+- сдобных  · n=1  · shukasaptati
+- очищенное коровье масло  · n=1  · mahabharata-striparva
+
+### `GftaM` — ghṛtaṃ  (n=12)
+
+- жир  · n=6  · rigveda, rigveda, rigveda, rigveda
+- топленое масло  · n=3  · rigveda, mahabharata-virataparva
+- коровьего масла  · n=1  · manavadharmashastra
+- Жиром  · n=1  · rigveda
+- масло  · n=1  · br-up
+
+### `GftaScut` — ghṛtaścut  (n=21)
+
+- сочащийся жиром  · n=4  · atharvaveda
+- сочащиеся жиром  · n=3  · rigveda, atharvaveda
+- сочатся жиром  · n=2  · atharvaveda
+- сочащимися жиром  · n=2  · atharvaveda
+- сочатся жертвенным маслом  · n=1  · rigveda
+- струящуюся жиром  · n=1  · rigveda
+- струят жир  · n=1  · rigveda
+- струящие жир  · n=1  · rigveda
+- Сочась жиром  · n=1  · rigveda
+- сочащейся жиром  · n=1  · rigveda
+- сочащиеся маслом  · n=1  · rigveda
+- струился жиром  · n=1  · rigveda
+- струящийся жиром  · n=1  · rigveda
+- сочащиеся жертвенным маслом  · n=1  · atharvaveda
+
+### `GftaScuta` — ghṛtaścuta  (n=1)
+
+- сочащимися жиром  · n=1  · atharvaveda
+
+### `GftaScutaH` — ghṛtaścutaḥ  (n=1)
+
+- источают жир  · n=1  · rigveda
+
+### `GftaScutam` — ghṛtaścutam  (n=4)
+
+- сочащейся жиром  · n=2  · rigveda
+- сочащимся жиром  · n=1  · rigveda
+- сочащийся жиром  · n=1  · atharvaveda
+
+### `GftaSrI` — ghṛtaśrī  (n=4)
+
+- украшенный жиром  · n=4  · rigveda, rigveda
+
+### `GftaSriyA` — ghṛtaśriyā  (n=1)
+
+- жиром украшены  · n=1  · rigveda
+
+### `GftaSriyam` — ghṛtaśriyam  (n=1)
+
+- украшенного жиром  · n=1  · rigveda
+
+### `Gftaduha` — ghṛtaduha  (n=1)
+
+- доящиеся жиром  · n=1  · rigveda
+
+### `Gftahasta` — ghṛtahasta  (n=1)
+
+- с жиром в руке  · n=1  · rigveda
+
+### `Gftahrada` — ghṛtahrada  (n=1)
+
+- С прудами из жира  · n=1  · atharvaveda
+
+### `Gftai` — ghṛtai  (n=1)
+
+- Потоками жира  · n=1  · rigveda
+
+### `GftaiH` — ghṛtaiḥ  (n=8)
+
+- потоками жира  · n=2  · rigveda, rigveda
+- жиром  · n=2  · rigveda, rigveda
+- жир  · n=1  · rigveda
+- от капель жира  · n=1  · rigveda
+- струями жира  · n=1  · rigveda
+- Потоками жира  · n=1  · rigveda
+
+### `Gftair` — ghṛtair  (n=1)
+
+- жиром  · n=1  · rigveda
+
+### `GftakaraRa` — ghṛtakaraṇa  (n=1)
+
+- приготовляет сливки  · n=1  · kama-sutra
+
+### `GftakauSika` — ghṛtakauśika  (n=2)
+
+- Гхритакаушики  · n=1  · br-up
+- Гхритакаушика  · n=1  · br-up
+
+### `GftakeSam` — ghṛtakeśam  (n=2)
+
+- с волосами (, смазанными) жиром  · n=2  · rigveda
+
+### `GftakulyA` — ghṛtakulyā  (n=1)
+
+- ручьи топленого масла  · n=1  · mahabharata-aranyakaparva
+
+### `GftakumBa` — ghṛtakumbha  (n=1)
+
+- горшок коровьего масла  · n=1  · manavadharmashastra
+
+### `Gftam` — ghṛtam  (n=39)
+
+- жир  · n=16  · rigveda, rigveda, rigveda, rigveda, rigveda, rigveda, rigveda, atharvaveda, atharvaveda, atharvaveda
+- жиром  · n=10  · rigveda, rigveda, atharvaveda, rigveda, rigveda
+- Жир  · n=3  · rigveda, rigveda, rigveda
+- жиру  · n=3  · atharvaveda, atharvaveda
+- Дрова для огня  · n=1  · ramayana-ayodhyakanda
+- Очищенное масло  · n=1  · ramayana-ayodhyakanda
+- коровьего масла  · n=1  · manavadharmashastra
+- коровье масло  · n=1  · manavadharmashastra
+- растопленный жир  · n=1  · rigveda
+- масла  · n=1  · rigveda
+- Апам Напате  · n=1  · rigveda
+
+### `GftamaDumayatva` — ghṛtamadhumayatva  (n=1)
+
+- сладких речений  · n=1  · amaru-shataka
+
+### `GftamedovasAhutam` — ghṛtamedovasāhutam  (n=1)
+
+- питаемый топленым маслом, жиром и салом  · n=1  · mahabharata-virataparva
+
+### `GftanirRig` — ghṛtanirṇig  (n=1)
+
+- в праздничном наряде из жира  · n=1  · rigveda
+
+### `GftanirRij` — ghṛtanirṇij  (n=2)
+
+- тот, чей праздничный наряд — жир  · n=2  · rigveda
+
+### `GftanirRijaH` — ghṛtanirṇijaḥ  (n=1)
+
+- одетые в жир  · n=1  · rigveda
+
+### `GftanirRik` — ghṛtanirṇik  (n=2)
+
+- в одеянии из жира  · n=1  · rigveda
+- С нарядом из жира  · n=1  · rigveda
+
+### `GftapA` — ghṛtapā  (n=1)
+
+- Пьющий жир  · n=1  · atharvaveda
+
+### `GftapAyasa` — ghṛtapāyasa  (n=2)
+
+- рис на молоке с топленым маслом  · n=1  · mahabharata-udyogaparva
+- кушанье из риса на молоке с топленым маслом  · n=1  · mahabharata-udyogaparva
+
+### `GftapUrRa` — ghṛtapūrṇa  (n=4)
+
+- наполненных маслом  · n=2  · mahabharata-aranyakaparva
+- с топленым маслом  · n=1  · ramayana-balakanda
+- наполненных топленым маслом  · n=1  · mahabharata-adiparva
+
+### `GftapaSu` — ghṛtapaśu  (n=1)
+
+- животное из коровьего масла  · n=1  · manavadharmashastra
+
+### `GftapadI` — ghṛtapadī  (n=2)
+
+- со следами, пропитанными жиром  · n=1  · rigveda
+- С ногами из жира  · n=1  · atharvaveda
+
+### `GftapfcA` — ghṛtapṛcā  (n=1)
+
+- жиром насыщены  · n=1  · rigveda
+
+### `GftapfktA` — ghṛtapṛktā  (n=1)
+
+- и топленым маслом  · n=1  · mahabharata-adiparva
+
+### `GftapfzWAH` — ghṛtapṛṣṭhāḥ  (n=2)
+
+- Жирноспинные  · n=2  · rigveda
+
+### `GftapfzWa` — ghṛtapṛṣṭha  (n=13)
+
+- жирноспинный  · n=3  · rigveda, rigveda
+- жирноспинного  · n=3  · rigveda
+- жирноспинную  · n=2  · rigveda
+- жирноспинным  · n=2  · atharvaveda
+- жирноспинные  · n=2  · atharvaveda, atharvaveda
+- Жирноспинную  · n=1  · rigveda
+
+### `GftapfzWaH` — ghṛtapṛṣṭhaḥ  (n=1)
+
+- жирноспинный  · n=1  · atharvaveda
+
+### `GftapfzWam` — ghṛtapṛṣṭham  (n=3)
+
+- Жирноспинную  · n=2  · rigveda
+- жирноспинного  · n=1  · rigveda
+
+### `GftapfzWo` — ghṛtapṛṣṭho  (n=1)
+
+- жирноспинный  · n=1  · atharvaveda
+
+### `GftaprASanam` — ghṛtaprāśanam  (n=1)
+
+- вкусит коровьего масла  · n=1  · manavadharmashastra
+
+### `Gftaprasatta` — ghṛtaprasatta  (n=1)
+
+- Сидящий среди жира  · n=1  · rigveda
+
+### `GftapratIkA` — ghṛtapratīkā  (n=2)
+
+- С ликом, натертым жиром  · n=2  · rigveda
+
+### `GftapratIkAm` — ghṛtapratīkām  (n=2)
+
+- с лицом, намазанным жиром  · n=2  · rigveda
+
+### `GftapratIka` — ghṛtapratīka  (n=1)
+
+- жирноликого  · n=1  · rigveda
+
+### `GftapratIkaH` — ghṛtapratīkaḥ  (n=3)
+
+- Лик из жира  · n=2  · rigveda, rigveda
+- Жирноликий  · n=1  · atharvaveda
+
+### `GftapratIkaM` — ghṛtapratīkaṃ  (n=1)
+
+- с ликом, обмазанным жиром  · n=1  · rigveda
+
+### `GftaprayA` — ghṛtaprayā  (n=1)
+
+- С жертвенной усладой из жира  · n=1  · rigveda
+
+### `Gftapriya` — ghṛtapriya  (n=1)
+
+- любящего жир  · n=1  · atharvaveda
+
+### `Gftapriyam` — ghṛtapriyam  (n=1)
+
+- любителя жира  · n=1  · atharvaveda
+
+### `Gftapruz` — ghṛtapruṣ  (n=3)
+
+- Кропящие жиром  · n=1  · rigveda
+- брызжущую жиром  · n=1  · rigveda
+- кропящею жиром  · n=1  · rigveda
+
+### `GftapruzaH` — ghṛtapruṣaḥ  (n=2)
+
+- кропящие жиром  · n=1  · rigveda
+- брызгая жиром  · n=1  · rigveda
+
+### `Gftapruzam` — ghṛtapruṣam  (n=2)
+
+- кропящий жиром  · n=1  · rigveda
+- эпитеты  · n=1  · rigveda
+
+### `Gftapva` — ghṛtapva  (n=1)
+
+- очищающие жиром  · n=1  · atharvaveda
+
+### `Gftapvas` — ghṛtapvas  (n=2)
+
+- очищающие жиром  · n=1  · rigveda
+- очистят нас жиром  · n=1  · rigveda
+
+### `GftasnAH` — ghṛtasnāḥ  (n=2)
+
+- искупавшийся в жире  · n=2  · rigveda
+
+### `GftasnU` — ghṛtasnū  (n=6)
+
+- сочащиеся жиром  · n=4  · rigveda, rigveda, atharvaveda
+- со спинами, помазанными жиром  · n=1  · rigveda
+- плавающие в жире  · n=1  · rigveda
+
+### `Gftasna` — ghṛtasna  (n=1)
+
+- сочащиеся жиром  · n=1  · rigveda
+
+### `Gftasnav` — ghṛtasnav  (n=1)
+
+- жирноспинный  · n=1  · rigveda
+
+### `Gftasnu` — ghṛtasnu  (n=3)
+
+- сочащихся жиром  · n=2  · rigveda
+- смоченным жиром  · n=1  · rigveda
+
+### `GftasnuH` — ghṛtasnuḥ  (n=3)
+
+- с жиром на спине  · n=2  · rigveda, rigveda
+- купающаяся в жире  · n=1  · rigveda
+
+### `GftasnunA` — ghṛtasnunā  (n=2)
+
+- Жирноспинной  · n=2  · rigveda
+
+### `GftasnuvA` — ghṛtasnuvā  (n=1)
+
+- сочащихся жиром  · n=1  · rigveda
+
+### `GftastAvo` — ghṛtastāvo  (n=2)
+
+- капли жира (?)  · n=2  · atharvaveda
+
+### `Gftasya` — ghṛtasya  (n=25)
+
+- жира  · n=20  · rigveda, atharvaveda, rigveda, rigveda, atharvaveda, atharvaveda, atharvaveda, atharvaveda
+- из жира  · n=2  · rigveda
+- жиром  · n=1  · rigveda
+- жиру  · n=1  · rigveda
+- жир  · n=1  · atharvaveda
+
+### `Gftatoya` — ghṛtatoya  (n=1)
+
+- топленое масло  · n=1  · mahabharata-bhishmaparva
+
+### `GftavAn` — ghṛtavān  (n=1)
+
+- из жира  · n=1  · atharvaveda
+
+### `GftavadBiH` — ghṛtavadbhiḥ  (n=1)
+
+- богатыми жиром  · n=1  · rigveda
+
+### `Gftavant` — ghṛtavant  (n=7)
+
+- пропитанную жиром  · n=2  · rigveda
+- полную жира  · n=1  · rigveda
+- богатый жиром  · n=1  · rigveda
+- полному жира  · n=1  · rigveda
+- полных жира  · n=1  · rigveda
+- Маслянистые  · n=1  · rigveda
+
+### `Gftavanta` — ghṛtavanta  (n=1)
+
+- полные жира  · n=1  · atharvaveda
+
+### `Gftavantam` — ghṛtavantam  (n=5)
+
+- полное жира  · n=3  · rigveda, rigveda, rigveda
+- жирную  · n=1  · rigveda
+- богатое жиром  · n=1  · rigveda
+
+### `Gftavartani` — ghṛtavartani  (n=1)
+
+- Оставляющая колею из жира  · n=1  · rigveda
+
+### `Gftavat` — ghṛtavat  (n=19)
+
+- жирное  · n=3  · rigveda, rigveda
+- полный жира  · n=3  · rigveda, atharvaveda
+- полное жира  · n=2  · rigveda, atharvaveda
+- жиром  · n=2  · atharvaveda, atharvaveda
+- богатое жиром  · n=1  · rigveda
+- Полное жира  · n=1  · rigveda
+- жирный  · n=1  · rigveda
+- богатую жиром  · n=1  · rigveda
+- из жира  · n=1  · rigveda
+- полные жира  · n=1  · atharvaveda
+- богатым жиром  · n=1  · atharvaveda
+- полная жира  · n=1  · atharvaveda
+- богатая жиром  · n=1  · atharvaveda
+
+### `GftavatA` — ghṛtavatā  (n=1)
+
+- богато жиром  · n=1  · atharvaveda
+
+### `GftavatI` — ghṛtavatī  (n=2)
+
+- с жиром  · n=1  · rigveda
+- полные жира  · n=1  · rigveda
+
+### `GftavfdDa` — ghṛtavṛddha  (n=1)
+
+- Окрепший от жара  · n=1  · atharvaveda
+
+### `Gftayone` — ghṛtayone  (n=1)
+
+- с лоном из жира  · n=1  · atharvaveda
+
+### `Gftayoni` — ghṛtayoni  (n=5)
+
+- имеющей лоно из жира  · n=2  · rigveda
+- с лоном из жира  · n=1  · rigveda
+- обитель – жир  · n=1  · rigveda
+- обитель - жир  · n=1  · rigveda
+
+### `Gfte` — ghṛte  (n=2)
+
+- в жире  · n=2  · rigveda
+
+### `GfteBiH` — ghṛtebhiḥ  (n=2)
+
+- потоками жира  · n=2  · rigveda
+
+### `GftenAkta` — ghṛtenākta  (n=1)
+
+- умащенную жиром  · n=1  · rigveda
+
+### `Gftena` — ghṛtena  (n=38)
+
+- жиром  · n=30  · rigveda, rigveda, rigveda, atharvaveda, rigveda, rigveda, atharvaveda, rigveda, rigveda, atharvaveda, atharvaveda, atharvaveda, atharvaveda, atharvaveda
+- топленым маслом  · n=2  · atharvaveda, mahabharata-ashvamedhikaparva
+- с жиром  · n=2  · atharvaveda, atharvaveda
+- жир  · n=1  · atharvaveda
+- жиру  · n=1  · rigveda
+- жертвенного масла  · n=1  · atharvaveda
+- Жиром  · n=1  · atharvaveda
+
+### `Gftokzita` — ghṛtokṣita  (n=1)
+
+- Облитые топленым маслом  · n=1  · mahabharata-adiparva
+
+### `Gftám` — ghṛtám  (n=1)
+
+- жир  · n=1  · rigveda
+
+### `Gftásya` — ghṛtásya  (n=1)
+
+- жира  · n=1  · rigveda
+
+### `Gfzau` — ghṛṣau  (n=1)
+
+- В возбужденной борьбе  · n=1  · rigveda
+
+### `Gfzu` — ghṛṣu  (n=1)
+
+- Веселый  · n=1  · rigveda
+
+### `Gfzum` — ghṛṣum  (n=3)
+
+- Бодрых  · n=2  · rigveda
+- радостного  · n=1  · rigveda
+
+### `Gfzvaya` — ghṛṣvaya  (n=2)
+
+- дрожа (от нетерпения)  · n=1  · rigveda
+- Предвкушая пьянящий напиток  · n=1  · rigveda
+
+### `GfzvayaH` — ghṛṣvayaḥ  (n=1)
+
+- радостные  · n=1  · rigveda
+
+### `Gfzvaye` — ghṛṣvaye  (n=4)
+
+- неистовой  · n=1  · rigveda
+- радостного  · n=1  · rigveda
+- вожделенной  · n=1  · rigveda
+- вожделенную  · n=1  · rigveda
+
+### `Gfzve` — ghṛṣve  (n=1)
+
+- буйный  · n=1  · rigveda
+
+### `GfzveH` — ghṛṣveḥ  (n=2)
+
+- вызывающей радость  · n=1  · rigveda
+- пылкого  · n=1  · rigveda
+
+### `Gfzvi` — ghṛṣvi  (n=4)
+
+- радостного  · n=2  · rigveda, rigveda
+- радостным  · n=1  · rigveda
+- радостные  · n=1  · rigveda
+
+### `GfzvirADaso` — ghṛṣvirādhaso  (n=1)
+
+- с потрясающими дарами  · n=1  · rigveda
+
+### `Gfzwa` — ghṛṣṭa  (n=2)
+
+- вытолкали  · n=1  · ramayana-sundarakanda
+- ободраны  · n=1  · mahabharata-aranyakaparva
+
+### `GfzwajAnuSirokzikAn` — ghṛṣṭajānuśirokṣikān  (n=1)
+
+- с поврежденными коленями, головой и глазами  · n=1  · mahabharata-adiparva
+
+### `Gfzwakam` — ghṛṣṭakam  (n=1)
+
+- трение  · n=1  · kama-sutra
+
+### `GfzwopalaSilAtala` — ghṛṣṭopalaśilātala  (n=1)
+
+- каменистая поверхность  · n=1  · mahabharata-aranyakaparva
+
+### `GitA` — ghitā  (n=1)
+
+- сосредоточена  · n=1  · rigveda
+
+### `Gn` — ghn  (n=1)
+
+- бить  · n=1  · mahabharata-striparva
+
+### `Gna` — ghna  (n=7)
+
+- губит  · n=1  · manavadharmashastra
+- убийца  · n=1  · ramayana-aranyakanda
+- наносит ущерба  · n=1  · kama-sutra
+- губитель  · n=1  · mahabharata-dronaparva
+- губителя  · n=1  · mahabharata-dronaparva
+- убивающего  · n=1  · mahabharata-dronaparva
+- исчезают  · n=1  · hatha-yoga-pradipika
+
+### `GnaY` — ghnañ  (n=1)
+
+- убивая  · n=1  · rigveda
+
+### `GnadBiH` — ghnadbhiḥ  (n=1)
+
+- разили  · n=1  · mahabharata-bhishmaparva
+
+### `Gnam` — ghnam  (n=1)
+
+- убийцу  · n=1  · ramayana-aranyakanda
+
+### `Gnan` — ghnan  (n=5)
+
+- убивая  · n=1  · mahabharata-dronaparva
+- Сокрушая  · n=1  · rigveda
+- Убивая  · n=1  · rigveda
+- разит  · n=1  · mahabharata-karnaparva
+- убийцей  · n=1  · rigveda
+
+### `Gnann` — ghnann  (n=1)
+
+- убивает  · n=1  · rigveda
+
+### `Gnant` — ghnant  (n=9)
+
+- убивающего  · n=3  · rigveda
+- ради сокрушения  · n=1  · mahabharata-dronaparva
+- рассеивающему  · n=1  · mahabharata-dronaparva
+- убивающие  · n=1  · rigveda
+- Убивая  · n=1  · rigveda
+- истребляющему  · n=1  · mahabharata-karnaparva
+- истребили  · n=1  · mahabharata-striparva
+
+### `GnantI` — ghnantī  (n=2)
+
+- раздирали  · n=1  · mahabharata-aranyakaparva
+- били  · n=1  · mahabharata-mausalaparva
+
+### `Gnanta` — ghnanta  (n=4)
+
+- Подавляя сопротивление  · n=1  · rigveda
+- убиваешь  · n=1  · mahabharata-adiparva
+- Убивая  · n=1  · atharvaveda
+- несет погибель  · n=1  · mahabharata-sauptikaparva
+
+### `GnantaH` — ghnantaḥ  (n=3)
+
+- убивая  · n=2  · mahabharata-adiparva, atharvaveda
+- разившие  · n=1  · mahabharata-striparva
+
+### `GnantaM` — ghnantaṃ  (n=5)
+
+- Убивающего  · n=3  · rigveda
+- убивающего  · n=2  · rigveda
+
+### `Gnantam` — ghnantam  (n=11)
+
+- убивающего  · n=5  · rigveda, rigveda, rigveda
+- Убивающего  · n=2  · rigveda
+- уничтожающего  · n=1  · rigveda
+- уничтожать  · n=1  · mahabharata-dronaparva
+- сокрушавшего  · n=1  · mahabharata-dronaparva
+- уничтожал  · n=1  · mahabharata-shalyaparva
+
+### `Gnanti` — ghnanti  (n=21)
+
+- убивают  · n=8  · mahabharata-dronaparva, mahabharata-udyogaparva, mahabharata-aranyakaparva, mahabharata-adiparva, ch-up, br-up
+- убивали  · n=1  · ramayana-ayodhyakanda
+- убить способны  · n=1  · ramayana-ayodhyakanda
+- Нюхали  · n=1  · ramayana-sundarakanda
+- Убивают  · n=1  · ramayana-aranyakanda
+- убивает  · n=1  · ramayana-balakanda
+- истребляют  · n=1  · mahabharata-aranyakaparva
+- уничтожают  · n=1  · mahabharata-aranyakaparva
+- сокрушают  · n=1  · rigveda
+- убьет  · n=1  · rigveda
+- вредят  · n=1  · mahabharata-dronaparva
+- губят  · n=1  · mahabharata-udyogaparva
+- разили  · n=1  · mahabharata-karnaparva
+- били  · n=1  · mahabharata-sauptikaparva
+
+### `Gnanto` — ghnanto  (n=1)
+
+- убивать  · n=1  · rigveda
+
+### `Gnantu` — ghnantu  (n=7)
+
+- пусть убьют  · n=2  · mahabharata-dronaparva, rigveda
+- поразят  · n=2  · atharvaveda
+- покарают  · n=1  · mahabharata-aranyakaparva
+- пусть сразят  · n=1  · mahabharata-karnaparva
+- убьют  · n=1  · atharvaveda
+
+### `Gnat` — ghnat  (n=2)
+
+- убивающих  · n=1  · bhagavadgita-burba
+- убитым  · n=1  · bhagavadgita-smirnov
+
+### `GnatA` — ghnatā  (n=4)
+
+- уничтожив  · n=1  · mahabharata-aranyakaparva
+- уничтожая  · n=1  · mahabharata-dronaparva
+- погубив  · n=1  · mahabharata-karnaparva
+- защитой  · n=1  · raghuvamsha
+
+### `Gnata` — ghnata  (n=6)
+
+- убившего  · n=2  · ramayana-ayodhyakanda
+- убейте  · n=2  · mahabharata-dronaparva, mahabharata-karnaparva
+- убивать  · n=1  · mahabharata-bhishmaparva
+- ударяли  · n=1  · mahabharata-udyogaparva
+
+### `GnataH` — ghnataḥ  (n=14)
+
+- убит  · n=2  · mahabharata-bhishmaparva, ramanuja_gitabhashya
+- убитым  · n=2  · bhagavadgita-1914, bhagavadgity
+- убивающих  · n=2  · bhagavadgita-radha, mahabharata-shalyaparva
+- истребляющего  · n=1  · mahabharata-dronaparva
+- погибну  · n=1  · gitarthasamgraha-abhinavagupta
+- буду убит  · n=1  · bhagavadgita-erman
+- убивают  · n=1  · bhagavadgita-sementsov
+- сулило  · n=1  · bhagavadgita-1909
+- убивающего  · n=1  · bhagavadgita-sharma
+- убивающий  · n=1  · bhagavadgita-prabhupada
+- разили  · n=1  · mahabharata-karnaparva
+
+### `Gnate` — ghnate  (n=1)
+
+- бьют  · n=1  · atharvaveda
+
+### `Gnau` — ghnau  (n=1)
+
+- убивающие  · n=1  · ramayana-aranyakanda
+
+### `GoRA` — ghoṇā  (n=1)
+
+- мордами  · n=1  · mahabharata-bhishmaparva
+
+### `GoRa` — ghoṇa  (n=1)
+
+- колесо  · n=1  · ramayana-ayodhyakanda
+
+### `GonAM` — ghonāṃ  (n=1)
+
+- носатой  · n=1  · kama-sutra
+
+### `GoqAcolI` — ghoḍā colī  (n=1)
+
+- Гходачоли  · n=1  · hatha-yoga-pradipika
+
+### `GorA` — ghorā  (n=30)
+
+- грозная  · n=3  · ramayana-aranyakanda, mahabharata-karnaparva, mahabharata-sauptikaparva
+- ужасный  · n=3  · mahabharata-bhishmaparva, mahabharata-dronaparva, mahabharata-karnaparva
+- ужасная  · n=3  · mahabharata-dronaparva, mahabharata-shalyaparva
+- ужасные  · n=2  · ramayana-aranyakanda
+- страшный  · n=2  · ramayana-aranyakanda, mahabharata-dronaparva
+- страшная  · n=2  · mahabharata-bhishmaparva, mahabharata-shalyaparva
+- страшное  · n=2  · mahabharata-dronaparva
+- озлобленная  · n=1  · ramayana-aranyakanda
+- глубоких  · n=1  · ramayana-aranyakanda
+- грозных  · n=1  · mahabharata-aranyakaparva
+- грозные  · n=1  · rigveda
+- страшными  · n=1  · mahabharata-adiparva
+- Густые  · n=1  · mahabharata-adiparva
+- грозное  · n=1  · mahabharata-dronaparva
+- грубые  · n=1  · mahabharata-udyogaparva
+- грозной  · n=1  · mahabharata-udyogaparva
+- Грозная  · n=1  · rigveda
+- ужасное  · n=1  · rigveda
+- страшную  · n=1  · mahabharata-shalyaparva
+- Грозные  · n=1  · atharvaveda
+
+### `GorABinandin` — ghorābhinandin  (n=1)
+
+- восхищавший и ужасавший  · n=1  · mahabharata-striparva
+
+### `GorABisaMhita` — ghorābhisaṃhita  (n=2)
+
+- скрытую угрозу  · n=1  · ramayana-balakanda
+- содержащее (нечто) ужасное  · n=1  · ramayana-balakanda
+
+### `GorAH` — ghorāḥ  (n=6)
+
+- страшные  · n=3  · mahabharata-dronaparva, ramayana-aranyakanda
+- грозные  · n=1  · mahabharata-aranyakaparva
+- жестокую  · n=1  · mahabharata-aranyakaparva
+- страшных  · n=1  · mahabharata-udyogaparva
+
+### `GorARAm` — ghorāṇām  (n=2)
+
+- грозных  · n=2  · ramayana-sundarakanda, rigveda
+
+### `GorARi` — ghorāṇi  (n=3)
+
+- зловещие  · n=1  · ramayana-aranyakanda
+- жестоких  · n=1  · mahabharata-karnaparva
+- страшные  · n=1  · mahabharata-shalyaparva
+
+### `GorAd` — ghorād  (n=1)
+
+- ужасного  · n=1  · mahabharata-udyogaparva
+
+### `GorAkzaM` — ghorākṣaṃ  (n=1)
+
+- со страшными глазами  · n=1  · mahabharata-aranyakaparva
+
+### `GorAm` — ghorām  (n=8)
+
+- страшную  · n=3  · mahabharata-adiparva, mahabharata-dronaparva, mahabharata-shalyaparva
+- грозного  · n=1  · ramayana-aranyakanda
+- Постигнет  · n=1  · ramayana-aranyakanda
+- страшный  · n=1  · mahabharata-bhishmaparva
+- страшные  · n=1  · mahabharata-udyogaparva
+- ужасную  · n=1  · mahabharata-udyogaparva
+
+### `GorAn` — ghorān  (n=5)
+
+- страшные  · n=2  · mahabharata-dronaparva
+- ужасных  · n=1  · mahabharata-adiparva
+- Грозным  · n=1  · ramayana-aranyakanda
+- свирепые  · n=1  · mahabharata-shalyaparva
+
+### `GorAnAda` — ghorānāda  (n=1)
+
+- устрашающие вопли  · n=1  · mahabharata-aranyakaparva
+
+### `GorAsaH` — ghorāsaḥ  (n=3)
+
+- грозные  · n=2  · rigveda
+- Грозные  · n=1  · rigveda
+
+### `GorAt` — ghorāt  (n=6)
+
+- страшного  · n=2  · mahabharata-aranyakaparva, mahabharata-adiparva
+- греха  · n=1  · mahabharata-karnaparva
+- жестокой  · n=1  · mahabharata-karnaparva
+- грозного  · n=1  · mahabharata-karnaparva
+- от ужасного  · n=1  · atharvaveda
+
+### `GorAyAM` — ghorāyāṃ  (n=1)
+
+- грозном  · n=1  · mahabharata-aranyakaparva
+
+### `GorAyAm` — ghorāyām  (n=1)
+
+- страшную  · n=1  · mahabharata-dronaparva
+
+### `Gora` — ghora  (n=487)
+
+- страшный  · n=45  · mahabharata-dronaparva, mahabharata-adiparva, mahabharata-bhishmaparva, mahabharata-aranyakaparva, manavadharmashastra, mahabharata-udyogaparva, mahabharata-shalyaparva, mahabharata-virataparva, rigveda, bhagavadgita-1914, bhagavadgita-1788, bhagavadgita-1909, mahabharata-sabhaparva, mahabharata-sauptikaparva
+- ужасный  · n=36  · mahabharata-dronaparva, mahabharata-adiparva, mahabharata-bhishmaparva, mahabharata-shalyaparva, ramayana-balakanda, mahabharata-aranyakaparva, atharvaveda, manavadharmashastra, ramayana-aranyakanda, gitarthasamgraha-abhinavagupta, bhagavadgita-burba, ramanuja_gitabhashya, bhagavadgity, bhagavadgita-sementsov, bhagavadgita-radha, mahabharata-ashvamedhikaparva, mahabharata-virataparva, mahabharata-striparva
+- страшное  · n=25  · mahabharata-dronaparva, mahabharata-udyogaparva, mahabharata-sabhaparva, mahabharata-adiparva, mahabharata-bhishmaparva, mahabharata-shalyaparva, ramayana-ayodhyakanda, mahabharata-aranyakaparva, mahabharata-ashvamedhikaparva
+- грозный  · n=16  · mahabharata-bhishmaparva, mahabharata-karnaparva, mahabharata-ashvamedhikaparva, ramayana-sundarakanda, rigveda, mahabharata-shalyaparva, devi-gita, mahabharata-virataparva, mahabharata-sauptikaparva
+- ужасное  · n=14  · mahabharata-bhishmaparva, atharvaveda, ramayana-sundarakanda, atharvaveda, ramayana-aranyakanda, bhagavadgita-erman, bhagavadgita-sharma
+- страшная  · n=14  · mahabharata-dronaparva, mahabharata-bhishmaparva, mahabharata-adiparva, mahabharata-udyogaparva, mahabharata-shalyaparva
+- страшные  · n=13  · mahabharata-udyogaparva, mahabharata-bhishmaparva, mahabharata-adiparva, ramayana-ayodhyakanda, mahabharata-aranyakaparva, mahabharata-dronaparva, mahabharata-shalyaparva
+- грозные  · n=11  · ramayana-aranyakanda, mahabharata-aranyakaparva, mahabharata-karnaparva, ramayana-ayodhyakanda, mahabharata-dronaparva, mahabharata-udyogaparva, mahabharata-striparva, mahabharata-sauptikaparva
+- грозных  · n=11  · mahabharata-aranyakaparva, mahabharata-karnaparva, ramayana-aranyakanda, ramayana-sundarakanda, mahabharata-bhishmaparva, rigveda
+- грозное  · n=11  · mahabharata-aranyakaparva, mahabharata-karnaparva, ramayana-aranyakanda, mahabharata-bhishmaparva, mahabharata-svargarohanikaparva
+- грозную  · n=10  · mahabharata-aranyakaparva, mahabharata-karnaparva, ramayana-balakanda, mahabharata-bhishmaparva, mahabharata-sauptikaparva, mahabharata-mausalaparva
+- ужасная  · n=9  · mahabharata-bhishmaparva, mahabharata-adiparva, ramayana-aranyakanda, mahabharata-aranyakaparva, mahabharata-dronaparva, mahabharata-shalyaparva
+- ужасные  · n=8  · mahabharata-adiparva, ramayana-aranyakanda, ramayana-sundarakanda, mahabharata-aranyakaparva, mahabharata-dronaparva, gitarthasamgraha-abhinavagupta
+- ужасную  · n=8  · mahabharata-bhishmaparva, ramayana-sundarakanda, ramayana-aranyakanda, mahabharata-udyogaparva, mahabharata-virataparva
+- страшного  · n=8  · mahabharata-dronaparva, mahabharata-striparva, manavadharmashastra, rigveda, mahabharata-udyogaparva, mahabharata-ashvamedhikaparva
+- страшной  · n=8  · mahabharata-dronaparva, ramayana-aranyakanda, mahabharata-aranyakaparva, mahabharata-bhishmaparva, mahabharata-udyogaparva, mahabharata-ashramavasikaparva
+- страшными  · n=7  · mahabharata-dronaparva, mahabharata-shalyaparva, mahabharata-adiparva, mahabharata-aranyakaparva, mahabharata-udyogaparva
+- страшную  · n=7  · mahabharata-dronaparva, ramayana-ayodhyakanda, mahabharata-adiparva, mahabharata-bhishmaparva, mahabharata-udyogaparva, mahabharata-virataparva
+- страшных  · n=7  · mahabharata-adiparva, mahabharata-sabhaparva, mahabharata-dronaparva, mahabharata-udyogaparva, mahabharata-shalyaparva
+- ужасными  · n=6  · mahabharata-bhishmaparva, mahabharata-adiparva, ramayana-aranyakanda
+- грозной  · n=6  · mahabharata-karnaparva, ramayana-balakanda, mahabharata-ashvamedhikaparva, mahabharata-striparva, mahabharata-mausalaparva
+- грозная  · n=6  · mahabharata-karnaparva, mahabharata-aranyakaparva, mahabharata-ashvamedhikaparva
+- жестокий  · n=5  · ramayana-ayodhyakanda, mahabharata-aranyakaparva, mahabharata-dronaparva, bhagavadgita-sementsov, mahabharata-karnaparva
+- ужас  · n=5  · mahabharata-bhishmaparva, ramayana-ayodhyakanda, ramayana-aranyakanda, mahabharata-shalyaparva
+- страшным  · n=5  · ramayana-aranyakanda, mahabharata-dronaparva, mahabharata-bhishmaparva
+- зловещие  · n=5  · mahabharata-udyogaparva, ramayana-balakanda, mahabharata-adiparva, mahabharata-bhishmaparva
+- волнующий  · n=5  · sankhya-karika
+- грозным  · n=4  · ramayana-aranyakanda, mahabharata-bhishmaparva, mahabharata-dronaparva, mahabharata-ashvamedhikaparva
+- суровый  · n=4  · mahabharata-aranyakaparva, mahabharata-dronaparva, mahabharata-udyogaparva, mahabharata-karnaparva
+- грозного  · n=4  · mahabharata-aranyakaparva, mahabharata-bhishmaparva, bhagavadgita-erman, atharvaveda
+- ужасным  · n=4  · rigveda, mahabharata-dronaparva, mahabharata-virataparva
+- ужасного  · n=4  · mahabharata-dronaparva, atharvaveda, mahabharata-virataparva, mahabharata-striparva
+- суровому  · n=4  · mahabharata-shalyaparva, mahabharata-ashvamedhikaparva
+- грозными  · n=3  · ramayana-sundarakanda, ramayana-aranyakanda, ramayana-balakanda
+- ужасных  · n=3  · ramayana-sundarakanda, mahabharata-aranyakaparva, mahabharata-karnaparva
+- зловещий  · n=3  · ramayana-aranyakanda, mahabharata-adiparva
+- ужасна  · n=3  · mahabharata-adiparva, mahabharata-bhishmaparva, atharvaveda
+- великий  · n=3  · mahabharata-dronaparva, mahabharata-bhishmaparva, mahabharata-udyogaparva
+- отчаянный  · n=2  · ramayana-ayodhyakanda, mahabharata-karnaparva
+- грозно  · n=2  · ramayana-sundarakanda, mahabharata-bhishmaparva
+- жестокой  · n=2  · ramayana-sundarakanda, mahabharata-sauptikaparva
+- страшном  · n=2  · manavadharmashastra, mahabharata-dronaparva
+- Страшное  · n=2  · ramayana-balakanda
+- великое  · n=2  · ramayana-balakanda, mahabharata-udyogaparva
+- устрашающие  · n=2  · mahabharata-aranyakaparva, mahabharata-karnaparva
+- жестоко  · n=2  · mahabharata-aranyakaparva
+- мрачный  · n=2  · mahabharata-aranyakaparva, mahabharata-bhishmaparva
+- суровым  · n=2  · mahabharata-adiparva, mahabharata-dronaparva
+- Страшные  · n=2  · mahabharata-adiparva, mahabharata-dronaparva
+- ужасному  · n=2  · mahabharata-bhishmaparva, bhagavadgita-1914
+- свирепыми  · n=2  · mahabharata-dronaparva, mahabharata-shalyaparva
+- свирепая  · n=2  · mahabharata-dronaparva
+- ужасной  · n=2  · mahabharata-dronaparva
+- свирепым  · n=2  · mahabharata-dronaparva
+- суровое  · n=2  · mahabharata-udyogaparva, mahabharata-shalyaparva
+- гхора  · n=2  · mahabharata-udyogaparva
+- ужасающий  · n=2  · bhagavadgity, mahabharata-karnaparva
+- страшному  · n=2  · bhagavadgita-erman, mahabharata-virataparva
+- устрашающий  · n=2  · bhagavadgita-prabhupada, mahabharata-karnaparva
+- Гхора  · n=2  · ch-up
+- суровейшему  · n=2  · mahabharata-ashvamedhikaparva, mahabharata-ashramavasikaparva
+- диком  · n=1  · mahabharata-adiparva
+- грозное, страшное  · n=1  · mahabharata-adiparva
+- неблагоприятные  · n=1  · ramayana-ayodhyakanda
+- долгая  · n=1  · ramayana-ayodhyakanda
+- ужаса  · n=1  · ramayana-ayodhyakanda
+- огромные  · n=1  · ramayana-sundarakanda
+- громкий  · n=1  · ramayana-sundarakanda
+- Гхоры  · n=1  · ramayana-sundarakanda
+- мерзкого  · n=1  · ramayana-aranyakanda
+- глухом  · n=1  · ramayana-aranyakanda
+- злобные  · n=1  · ramayana-aranyakanda
+- страшного вида  · n=1  · ramayana-aranyakanda
+- Безобразного вида  · n=1  · ramayana-aranyakanda
+- наводя страх  · n=1  · ramayana-aranyakanda
+- громкие  · n=1  · ramayana-aranyakanda
+- ракшасов  · n=1  · ramayana-aranyakanda
+- из колчана  · n=1  · ramayana-aranyakanda
+- горький  · n=1  · ramayana-aranyakanda
+- Грозный  · n=1  · ramayana-aranyakanda
+- сильный  · n=1  · ramayana-aranyakanda
+- участь  · n=1  · ramayana-aranyakanda
+- неожиданное зло  · n=1  · ramayana-aranyakanda
+- Грозных  · n=1  · ramayana-aranyakanda
+- смертоносные  · n=1  · ramayana-aranyakanda
+- Безжалостно  · n=1  · ramayana-aranyakanda
+- произошла  · n=1  · ramayana-aranyakanda
+- Огромные  · n=1  · ramayana-aranyakanda
+- глубокие  · n=1  · ramayana-aranyakanda
+- пугающую  · n=1  · ramayana-aranyakanda
+- искривленные  · n=1  · ramayana-aranyakanda
+- безобразная  · n=1  · ramayana-aranyakanda
+- злодеяний  · n=1  · ramayana-balakanda
+- суровую  · n=1  · ramayana-balakanda
+- тягчайшей  · n=1  · ramayana-balakanda
+- грозен  · n=1  · ramayana-balakanda
+- угрожающий  · n=1  · ramayana-balakanda
+- клекот  · n=1  · ramayana-balakanda
+- тяжкой, злою  · n=1  · mahabharata-aranyakaparva
+- лютого  · n=1  · mahabharata-aranyakaparva
+- жестоки  · n=1  · mahabharata-aranyakaparva
+- страшна  · n=1  · mahabharata-aranyakaparva
+- суровой  · n=1  · mahabharata-aranyakaparva
+- жутко  · n=1  · mahabharata-aranyakaparva
+- жестокому  · n=1  · mahabharata-aranyakaparva
+- Зловеще грохочущие  · n=1  · mahabharata-aranyakaparva
+- мрачным  · n=1  · mahabharata-aranyakaparva
+- душераздирающий  · n=1  · mahabharata-aranyakaparva
+- глубокий  · n=1  · mahabharata-aranyakaparva
+- суровыми  · n=1  · mahabharata-aranyakaparva
+- дремучий  · n=1  · mahabharata-adiparva
+- суровые  · n=1  · mahabharata-adiparva
+- Ужасной  · n=1  · mahabharata-bhishmaparva
+- ужаснейшем  · n=1  · mahabharata-bhishmaparva
+- ужасающая  · n=1  · mahabharata-bhishmaparva
+- грозному  · n=1  · mahabharata-bhishmaparva
+- жуткие  · n=1  · mahabharata-bhishmaparva
+- лютой  · n=1  · mahabharata-dronaparva
+- лютую  · n=1  · mahabharata-dronaparva
+- кромешная  · n=1  · mahabharata-dronaparva
+- потрясающий  · n=1  · mahabharata-dronaparva
+- ужасном  · n=1  · mahabharata-dronaparva
+- страшно трудный  · n=1  · mahabharata-udyogaparva
+- страшен  · n=1  · mahabharata-udyogaparva
+- свирепому  · n=1  · mahabharata-udyogaparva
+- сурового  · n=1  · mahabharata-udyogaparva
+- протяжно  · n=1  · mahabharata-udyogaparva
+- жар  · n=1  · mahabharata-adiparva
+- жестокихъ  · n=1  · bhagavadgity
+- страданьемъ  · n=1  · bhagavadgita-1909
+- ужасающей  · n=1  · bhagavadgita-sharma
+- ужасающую  · n=1  · bhagavadgita-prabhupada
+- вредную для других  · n=1  · bhagavadgita-prabhupada
+- жестокая  · n=1  · mahabharata-karnaparva
+- жесточайшее  · n=1  · mahabharata-karnaparva
+- суровая  · n=1  · mahabharata-karnaparva
+- густой  · n=1  · mahabharata-shalyaparva
+- скопище  · n=1  · mahabharata-shalyaparva
+- страшно суровых  · n=1  · mahabharata-shalyaparva
+- глубоко  · n=1  · mahabharata-shalyaparva
+- Ужасные  · n=1  · mahabharata-ashvamedhikaparva
+- гадкой  · n=1  · mahabharata-ashvamedhikaparva
+- чудовищные  · n=1  · mahabharata-ashvamedhikaparva
+- смертоноснейшие  · n=1  · hatha-yoga-pradipika
+- неистовой  · n=1  · mahabharata-virataparva
+- ужасы  · n=1  · atharvaveda
+- раскаленных  · n=1  · yoga-sutry_vyasa-bhashya
+- тяжкому  · n=1  · mahabharata-ashramavasikaparva
+- дикую  · n=1  · mahabharata-ashramavasikaparva
+- жестокое  · n=1  · mahabharata-striparva
+- жестокую  · n=1  · mahabharata-sauptikaparva
+- зло  · n=1  · mahabharata-sauptikaparva
+
+### `Gora-darSana` — ghora-darśana  (n=4)
+
+- Таящих в себе угрозу  · n=1  · ramayana-aranyakanda
+- Страшные видом  · n=1  · ramayana-aranyakanda
+- Страшные  · n=1  · ramayana-aranyakanda
+- ужасного вида  · n=1  · ramayana-aranyakanda
+
+### `Gora-rUpa` — ghora-rūpa  (n=1)
+
+- страшной на вид  · n=1  · mahabharata-dronaparva
+
+### `GoraH` — ghoraḥ  (n=8)
+
+- страшное  · n=2  · mahabharata-adiparva, mahabharata-virataparva
+- ужасный  · n=2  · mahabharata-bhishmaparva, mahabharata-dronaparva
+- ужасен  · n=1  · ramayana-sundarakanda
+- жестокое  · n=1  · ramayana-aranyakanda
+- страшную  · n=1  · mahabharata-bhishmaparva
+- страшная  · n=1  · mahabharata-karnaparva
+
+### `GoraM` — ghoraṃ  (n=14)
+
+- суровому  · n=2  · mahabharata-aranyakaparva, mahabharata-adiparva
+- страшное  · n=2  · mahabharata-bhishmaparva, mahabharata-dronaparva
+- ужасная  · n=1  · ramayana-sundarakanda
+- грозная  · n=1  · mahabharata-bhishmaparva
+- страшным  · n=1  · mahabharata-dronaparva
+- свирепую  · n=1  · mahabharata-dronaparva
+- ужасным  · n=1  · mahabharata-dronaparva
+- страшный  · n=1  · mahabharata-dronaparva
+- изуверский  · n=1  · gitarthasamgraha-abhinavagupta
+- плотный  · n=1  · mahabharata-virataparva
+- страшная  · n=1  · mahabharata-virataparva
+- ужасный  · n=1  · mahabharata-adiparva
+
+### `Goracakzas` — ghoracakṣas  (n=1)
+
+- с грозным взглядом  · n=1  · rigveda
+
+### `Goracakzase` — ghoracakṣase  (n=1)
+
+- с грозным взглядом  · n=1  · atharvaveda
+
+### `Goracakzus` — ghoracakṣus  (n=3)
+
+- грозным взглядом  · n=2  · mahabharata-adiparva, mahabharata-dronaparva
+- со страшными глазами  · n=1  · mahabharata-dronaparva
+
+### `GoracakzuzA` — ghoracakṣuṣā  (n=1)
+
+- страшным взглядом  · n=1  · mahabharata-dronaparva
+
+### `GoradarSanA` — ghoradarśanā  (n=2)
+
+- ужасный своим видом  · n=1  · mahabharata-aranyakaparva
+- жутким видом  · n=1  · mahabharata-aranyakaparva
+
+### `GoradarSanAm` — ghoradarśanām  (n=1)
+
+- страшные  · n=1  · mahabharata-aranyakaparva
+
+### `GoradarSana` — ghoradarśana  (n=20)
+
+- ужасный обликом  · n=2  · ramayana-sundarakanda, mahabharata-bhishmaparva
+- ужасным обликом  · n=2  · ramayana-sundarakanda, mahabharata-bhishmaparva
+- грозным видом  · n=2  · mahabharata-udyogaparva
+- ужасны видом  · n=1  · ramayana-sundarakanda
+- страшным  · n=1  · ramayana-aranyakanda
+- Внушающим всем ужас  · n=1  · ramayana-balakanda
+- ужасным  · n=1  · ramayana-balakanda
+- страшному  · n=1  · mahabharata-aranyakaparva
+- устрашающих с виду  · n=1  · mahabharata-aranyakaparva
+- страшный видом  · n=1  · mahabharata-adiparva
+- страшный  · n=1  · mahabharata-adiparva
+- ужасного обликом  · n=1  · mahabharata-bhishmaparva
+- устрашающий видом  · n=1  · mahabharata-bhishmaparva
+- страшное видом  · n=1  · mahabharata-dronaparva
+- страшных видом  · n=1  · mahabharata-shalyaparva
+- ужасного видом  · n=1  · mahabharata-ashvamedhikaparva
+- грозный видом  · n=1  · mahabharata-sauptikaparva
+
+### `GoradarSanaiH` — ghoradarśanaiḥ  (n=3)
+
+- страшными на вид  · n=1  · mahabharata-dronaparva
+- ужасными видом  · n=1  · mahabharata-shalyaparva
+- грозных видом  · n=1  · mahabharata-sauptikaparva
+
+### `GoradarSanam` — ghoradarśanam  (n=4)
+
+- страшен твой облик  · n=1  · ramayana-balakanda
+- страшному видом  · n=1  · mahabharata-udyogaparva
+- страшного обликом  · n=1  · mahabharata-aranyakaparva
+- страшная видом  · n=1  · mahabharata-shalyaparva
+
+### `Goradfzwi` — ghoradṛṣṭi  (n=2)
+
+- взгляд был ужасен  · n=1  · mahabharata-aranyakaparva
+- со страшным взглядом  · n=1  · mahabharata-udyogaparva
+
+### `GoraiH` — ghoraiḥ  (n=17)
+
+- ужасными  · n=5  · mahabharata-bhishmaparva, ramayana-sundarakanda, mahabharata-dronaparva
+- грозными  · n=2  · ramayana-aranyakanda, mahabharata-sauptikaparva
+- страшными  · n=2  · mahabharata-dronaparva
+- Жестоко  · n=1  · ramayana-aranyakanda
+- угрозами  · n=1  · ramayana-aranyakanda
+- смертоносными  · n=1  · ramayana-aranyakanda
+- устрашающего  · n=1  · mahabharata-aranyakaparva
+- страшные  · n=1  · mahabharata-adiparva
+- свирепыми  · n=1  · mahabharata-dronaparva
+- страшным  · n=1  · mahabharata-shalyaparva
+- грозные  · n=1  · atharvaveda
+
+### `Gorakarman` — ghorakarman  (n=1)
+
+- страшного в деяниях  · n=1  · mahabharata-dronaparva
+
+### `Gorakarmin` — ghorakarmin  (n=1)
+
+- совершивший страшный подвиг  · n=1  · mahabharata-udyogaparva
+
+### `Goram` — ghoram  (n=84)
+
+- страшный  · n=8  · mahabharata-dronaparva, mahabharata-adiparva, ramayana-balakanda, mahabharata-shalyaparva, mahabharata-striparva
+- грозный  · n=6  · mahabharata-adiparva, ramayana-balakanda, mahabharata-bhishmaparva, mahabharata-dronaparva, mahabharata-karnaparva, mahabharata-ashvamedhikaparva
+- грозную  · n=5  · mahabharata-karnaparva, ramayana-sundarakanda, ramayana-aranyakanda, mahabharata-mausalaparva
+- страшную  · n=5  · mahabharata-udyogaparva, mahabharata-bhishmaparva, mahabharata-dronaparva, mahabharata-shalyaparva
+- страшное  · n=3  · mahabharata-adiparva, mahabharata-dronaparva, mahabharata-udyogaparva
+- ужасное  · n=3  · mahabharata-adiparva, mahabharata-dronaparva, bhagavadgita-smirnov
+- ужасная  · n=3  · mahabharata-adiparva, ramayana-aranyakanda, mahabharata-shalyaparva
+- ужасную  · n=3  · gitarthasamgraha-abhinavagupta, bhagavadgita-burba, bhagavadgita-radha
+- ужасного  · n=2  · ramayana-aranyakanda, atharvaveda
+- суровому  · n=2  · mahabharata-aranyakaparva, mahabharata-udyogaparva
+- ужасной  · n=2  · mahabharata-adiparva, mahabharata-bhishmaparva
+- страшным  · n=2  · mahabharata-adiparva, mahabharata-shalyaparva
+- страшной  · n=2  · mahabharata-dronaparva
+- страшен  · n=1  · mahabharata-adiparva
+- мрачен  · n=1  · mahabharata-adiparva
+- другое  · n=1  · ramayana-ayodhyakanda
+- горько  · n=1  · ramayana-ayodhyakanda
+- великий  · n=1  · ramayana-sundarakanda
+- рев  · n=1  · ramayana-aranyakanda
+- жестокие  · n=1  · ramayana-aranyakanda
+- дремучий  · n=1  · ramayana-aranyakanda
+- несчастьем  · n=1  · ramayana-aranyakanda
+- Ужасную  · n=1  · ramayana-aranyakanda
+- с режущим наконечником  · n=1  · ramayana-aranyakanda
+- страшном  · n=1  · ramayana-aranyakanda
+- страдальческий  · n=1  · mahabharata-aranyakaparva
+- дикую  · n=1  · mahabharata-aranyakaparva
+- Суров  · n=1  · mahabharata-aranyakaparva
+- полный опасностей  · n=1  · mahabharata-aranyakaparva
+- сурового  · n=1  · mahabharata-adiparva
+- страшные  · n=1  · mahabharata-adiparva
+- страшному  · n=1  · mahabharata-bhishmaparva
+- ужасный  · n=1  · mahabharata-bhishmaparva
+- обильно  · n=1  · mahabharata-udyogaparva
+- жестокий  · n=1  · ramanuja_gitabhashya
+- аскетические  · n=1  · bhagavadgita-1914
+- ужасающий  · n=1  · bhagavadgita-smirnov
+- жестокихъ  · n=1  · bhagavadgita-1788
+- ужасные  · n=1  · bhagavadgita-sharma
+- грозное  · n=1  · mahabharata-karnaparva
+- свирепую  · n=1  · mahabharata-karnaparva
+- тревожен  · n=1  · mahabharata-aranyakaparva
+- свирепая  · n=1  · mahabharata-shalyaparva
+- грозной  · n=1  · mahabharata-ashvamedhikaparva
+- ужасном  · n=1  · rigveda
+- яростная  · n=1  · raghuvamsha
+- страшная  · n=1  · mahabharata-virataparva
+- ужасно  · n=1  · atharvaveda
+- грозного  · n=1  · mahabharata-sauptikaparva
+- грозная  · n=1  · mahabharata-mausalaparva
+- устрашающий  · n=1  · mahabharata-svargarohanikaparva
+
+### `GoramArtasvara` — ghoramārtasvara  (n=1)
+
+- страшный мучительный рев  · n=1  · mahabharata-dronaparva
+
+### `GoranirhrAda` — ghoranirhrāda  (n=1)
+
+- жутким рыданием  · n=1  · mahabharata-bhishmaparva
+
+### `GorapASaiH` — ghorapāśaiḥ  (n=2)
+
+- страшными арканами  · n=2  · mahabharata-aranyakaparva
+
+### `GorapradarSana` — ghorapradarśana  (n=1)
+
+- страшными на вид  · n=1  · mahabharata-adiparva
+
+### `GorapravAdin` — ghorapravādin  (n=1)
+
+- страшно завывают  · n=1  · mahabharata-virataparva
+
+### `GorarUpA` — ghorarūpā  (n=2)
+
+- грозную  · n=1  · mahabharata-aranyakaparva
+- страшная видом  · n=1  · mahabharata-dronaparva
+
+### `GorarUpAH` — ghorarūpāḥ  (n=6)
+
+- ужасные  · n=1  · mahabharata-aranyakaparva
+- страшных  · n=1  · mahabharata-aranyakaparva
+- страшные видом  · n=1  · mahabharata-dronaparva
+- страшные  · n=1  · mahabharata-udyogaparva
+- престрашного вида  · n=1  · mahabharata-striparva
+- ужасные видом  · n=1  · mahabharata-sauptikaparva
+
+### `GorarUpAM` — ghorarūpāṃ  (n=1)
+
+- страшной  · n=1  · mahabharata-dronaparva
+
+### `GorarUpARAm` — ghorarūpāṇām  (n=2)
+
+- грозных  · n=1  · mahabharata-aranyakaparva
+- страшных видом  · n=1  · mahabharata-dronaparva
+
+### `GorarUpAm` — ghorarūpām  (n=2)
+
+- ужасный видом  · n=1  · mahabharata-bhishmaparva
+- страшный  · n=1  · mahabharata-udyogaparva
+
+### `GorarUpAn` — ghorarūpān  (n=1)
+
+- неисчислимые  · n=1  · mahabharata-karnaparva
+
+### `GorarUpa` — ghorarūpa  (n=52)
+
+- устрашающий  · n=2  · mahabharata-aranyakaparva, mahabharata-karnaparva
+- страшный на вид  · n=2  · mahabharata-adiparva, mahabharata-bhishmaparva
+- страшным  · n=2  · mahabharata-bhishmaparva
+- страшное зрелище  · n=2  · mahabharata-bhishmaparva
+- грозные обликом  · n=2  · mahabharata-bhishmaparva, mahabharata-karnaparva
+- страшная на вид  · n=2  · mahabharata-dronaparva, mahabharata-shalyaparva
+- страшные видом  · n=2  · mahabharata-dronaparva, mahabharata-shalyaparva
+- страшной на вид  · n=2  · mahabharata-shalyaparva
+- ужасный на вид  · n=1  · mahabharata-adiparva
+- устрашающей формы  · n=1  · mahabharata-adiparva
+- ужасного вида  · n=1  · mahabharata-adiparva
+- страшное на вид  · n=1  · mahabharata-adiparva
+- ужасный вид  · n=1  · mahabharata-adiparva
+- грозным обликом  · n=1  · ramayana-sundarakanda
+- грозных видов  · n=1  · ramayana-sundarakanda
+- грозный на вид  · n=1  · manavadharmashastra
+- грозную  · n=1  · mahabharata-aranyakaparva
+- грозным  · n=1  · mahabharata-aranyakaparva
+- мрачные  · n=1  · mahabharata-aranyakaparva
+- страшную  · n=1  · mahabharata-aranyakaparva
+- ужасное зрелище  · n=1  · mahabharata-bhishmaparva
+- ужасные обликом  · n=1  · mahabharata-bhishmaparva
+- ужасный с виду  · n=1  · mahabharata-bhishmaparva
+- потрясающий  · n=1  · mahabharata-bhishmaparva
+- страшной  · n=1  · mahabharata-bhishmaparva
+- свирепая  · n=1  · mahabharata-dronaparva
+- свирепую  · n=1  · mahabharata-dronaparva
+- страшный видом  · n=1  · mahabharata-dronaparva
+- грозная на вид  · n=1  · mahabharata-dronaparva
+- страшное зрелище являющая  · n=1  · mahabharata-bhishmaparva
+- страшного вида  · n=1  · mahabharata-dronaparva
+- ужасную видом  · n=1  · mahabharata-udyogaparva
+- страшен видом  · n=1  · mahabharata-udyogaparva
+- зловещие формы  · n=1  · mahabharata-udyogaparva
+- великой  · n=1  · mahabharata-karnaparva
+- суровый, страшный  · n=1  · mahabharata-karnaparva
+- грозная  · n=1  · mahabharata-karnaparva
+- грозную видом  · n=1  · mahabharata-karnaparva
+- устрашающее  · n=1  · mahabharata-shalyaparva
+- страшными  · n=1  · mahabharata-shalyaparva
+- чрезмерно суровым  · n=1  · mahabharata-shalyaparva
+- страшного видом  · n=1  · mahabharata-ashvamedhikaparva
+- страшно  · n=1  · mahabharata-virataparva
+- ужасающий  · n=1  · mahabharata-virataparva
+
+### `GorarUpaH` — ghorarūpaḥ  (n=4)
+
+- страшное зрелище  · n=1  · mahabharata-bhishmaparva
+- грозная  · n=1  · mahabharata-karnaparva
+- грозным  · n=1  · mahabharata-shalyaparva
+- Устрашающий видом  · n=1  · mahabharata-sauptikaparva
+
+### `GorarUpaM` — ghorarūpaṃ  (n=2)
+
+- ужасного видом  · n=1  · mahabharata-dronaparva
+- страшной на вид  · n=1  · mahabharata-shalyaparva
+
+### `GorarUpaMbaBUva` — ghorarūpaṃ babhūva  (n=1)
+
+- страшно было видеть  · n=1  · mahabharata-ashvamedhikaparva
+
+### `GorarUpaiH` — ghorarūpaiḥ  (n=1)
+
+- страшными  · n=1  · mahabharata-aranyakaparva
+
+### `GorarUpair` — ghorarūpair  (n=1)
+
+- грозных  · n=1  · mahabharata-karnaparva
+
+### `GorarUpairmahattaraiH` — ghorarūpairmahattaraiḥ  (n=1)
+
+- более могучими и более страшными  · n=1  · mahabharata-dronaparva
+
+### `GorarUpam` — ghorarūpam  (n=8)
+
+- грозную  · n=2  · mahabharata-aranyakaparva, mahabharata-karnaparva
+- страшным на вид  · n=2  · mahabharata-shalyaparva
+- ужасный вид  · n=1  · mahabharata-adiparva
+- страшное зрелище  · n=1  · mahabharata-bhishmaparva
+- ужасное на вид  · n=1  · mahabharata-dronaparva
+- страшная видом  · n=1  · mahabharata-shalyaparva
+
+### `GorarUpaparAkrama` — ghorarūpaparākrama  (n=1)
+
+- устрашающим видом и грозной доблестью наделены  · n=1  · mahabharata-karnaparva
+
+### `GorarUpe` — ghorarūpe  (n=6)
+
+- ужасного вида  · n=1  · mahabharata-adiparva
+- ужасный обликом  · n=1  · mahabharata-adiparva
+- страшной  · n=1  · mahabharata-dronaparva
+- страшный  · n=1  · mahabharata-dronaparva
+- страшное на вид  · n=1  · mahabharata-shalyaparva
+- страшная  · n=1  · mahabharata-shalyaparva
+
+### `GorarUpeRa` — ghorarūpeṇa  (n=2)
+
+- страшной видом  · n=1  · mahabharata-dronaparva
+- на ужасной видом  · n=1  · mahabharata-dronaparva
+
+### `GorarUpin` — ghorarūpin  (n=1)
+
+- страшные  · n=1  · mahabharata-aranyakaparva
+
+### `GorasaNGaiH` — ghorasaṅghaiḥ  (n=1)
+
+- страшными стаями  · n=1  · mahabharata-dronaparva
+
+### `GorasaNkASa` — ghorasaṅkāśa  (n=4)
+
+- ужасный, темный  · n=1  · ramayana-balakanda
+- Словно гром, его оглушившее  · n=1  · ramayana-balakanda
+- грозном  · n=1  · ramayana-balakanda
+- страшных видом  · n=1  · mahabharata-udyogaparva
+
+### `GorasannAdAH` — ghorasannādāḥ  (n=1)
+
+- со страшным визгом  · n=1  · mahabharata-dronaparva
+
+### `GorasvananinAdita` — ghorasvananinādita  (n=1)
+
+- с ужасающим грохотом  · n=1  · mahabharata-aranyakaparva
+
+### `Gorasya` — ghorasya  (n=2)
+
+- ужасным  · n=1  · rigveda
+- яростью  · n=1  · atharvaveda
+
+### `GoratamaH` — ghoratamaḥ  (n=1)
+
+- страшный  · n=1  · mahabharata-shalyaparva
+
+### `GoratarA` — ghoratarā  (n=1)
+
+- устрашающем  · n=1  · mahabharata-dronaparva
+
+### `Goratara` — ghoratara  (n=5)
+
+- исполненные ужаса  · n=1  · ramayana-sundarakanda
+- страшнее  · n=1  · mahabharata-aranyakaparva
+- ужаснейшего  · n=1  · mahabharata-dronaparva
+- страшный  · n=1  · mahabharata-shalyaparva
+- жесточайшей  · n=1  · mahabharata-sauptikaparva
+
+### `GorataraH` — ghorataraḥ  (n=2)
+
+- отчаянней  · n=1  · mahabharata-aranyakaparva
+- ужасающий  · n=1  · mahabharata-bhishmaparva
+
+### `Gorataram` — ghorataram  (n=3)
+
+- более суровое  · n=1  · mahabharata-aranyakaparva
+- еще более грозный  · n=1  · mahabharata-karnaparva
+- особо устрашающий  · n=1  · mahabharata-karnaparva
+
+### `Goratva` — ghoratva  (n=1)
+
+- страх  · n=1  · mahabharata-aranyakaparva
+
+### `GoravIrya` — ghoravīrya  (n=1)
+
+- страшною силой  · n=1  · mahabharata-udyogaparva
+
+### `Goravadana` — ghoravadana  (n=1)
+
+- грозноликого  · n=1  · mahabharata-aranyakaparva
+
+### `Goravarpa` — ghoravarpa  (n=1)
+
+- с ужасным обликом  · n=1  · rigveda
+
+### `Goravarpasa` — ghoravarpasa  (n=1)
+
+- страшного вида  · n=1  · rigveda
+
+### `Goravikrama` — ghoravikrama  (n=1)
+
+- одаренных страшною силой  · n=1  · mahabharata-udyogaparva
+
+### `Goraviza` — ghoraviṣa  (n=1)
+
+- страшным ядовитым  · n=1  · mahabharata-udyogaparva
+
+### `GorayA` — ghorayā  (n=1)
+
+- грозной  · n=1  · rigveda
+
+### `Gore` — ghore  (n=30)
+
+- страшному  · n=3  · ramanuja_gitabhashya, bhagavadgita-1788
+- ужасному  · n=3  · bhagavadgity, bhagavadgita-smirnov, bhagavadgita-sementsov
+- грозной  · n=2  · ramayana-balakanda, mahabharata-aranyakaparva
+- ужасной  · n=2  · mahabharata-dronaparva, atharvaveda
+- ужасном  · n=1  · mahabharata-adiparva
+- ад  · n=1  · ramayana-ayodhyakanda
+- глухом  · n=1  · ramayana-balakanda
+- вершил  · n=1  · ramayana-balakanda
+- кромешной  · n=1  · ramayana-balakanda
+- диком  · n=1  · mahabharata-aranyakaparva
+- дремучему  · n=1  · mahabharata-aranyakaparva
+- страшном  · n=1  · mahabharata-aranyakaparva
+- свирепой  · n=1  · mahabharata-dronaparva
+- страшный  · n=1  · mahabharata-dronaparva
+- ужасный  · n=1  · mahabharata-dronaparva
+- ожесточения  · n=1  · mahabharata-dronaparva
+- ужасная  · n=1  · mahabharata-dronaparva
+- страшная  · n=1  · mahabharata-dronaparva
+- ужасную  · n=1  · bhagavadgita-burba
+- страшное  · n=1  · bhagavadgita-1909
+- в ужасном  · n=1  · bhagavadgita-prabhupada
+- ужасное  · n=1  · bhagavadgita-radha
+- страшные  · n=1  · mahabharata-shalyaparva
+- страшной  · n=1  · mahabharata-sabhaparva
+
+### `GoreRa` — ghoreṇa  (n=6)
+
+- страшным  · n=2  · mahabharata-dronaparva, mahabharata-sabhaparva
+- взглядом  · n=1  · ramayana-aranyakanda
+- суровому  · n=1  · mahabharata-aranyakaparva
+- страшное  · n=1  · mahabharata-aranyakaparva
+- страшному  · n=1  · mahabharata-shalyaparva
+
+### `GoretamasimagnAnAm` — ghore tamasi magnānām  (n=1)
+
+- окутанные кромешною тьмою  · n=1  · mahabharata-dronaparva
+
+### `Goro` — ghoro  (n=1)
+
+- горько рыдая  · n=1  · ramayana-ayodhyakanda
+
+### `GowakamuKa` — ghoṭakamukha  (n=6)
+
+- Гхотакамукха  · n=6  · kama-sutra
+
+### `GowakamuKaH` — ghoṭakamukhaḥ  (n=1)
+
+- Гхотакамукха  · n=1  · kama-sutra
+
+### `GowikA` — ghoṭikā  (n=1)
+
+- лошади  · n=1  · shukasaptati
+
+### `GowikAdvaya` — ghoṭikādvaya  (n=1)
+
+- двух кобыл  · n=1  · shukasaptati
+
+### `GowikAnirRaya` — ghoṭikānirṇaya  (n=1)
+
+- различить лошадей  · n=1  · shukasaptati
+
+### `GozA` — ghoṣā  (n=6)
+
+- Гхоша  · n=4  · rigveda, rigveda
+- грохот  · n=1  · rigveda
+- вопли  · n=1  · atharvaveda
+
+### `GozAH` — ghoṣāḥ  (n=4)
+
+- становища  · n=2  · mahabharata-aranyakaparva
+- звуки  · n=1  · atharvaveda
+- боевые крики  · n=1  · atharvaveda
+
+### `GozARi` — ghoṣāṇi  (n=1)
+
+- звоном  · n=1  · ramayana-aranyakanda
+
+### `GozAm` — ghoṣām  (n=2)
+
+- музыка  · n=2  · ramayana-ayodhyakanda
+
+### `GozAn` — ghoṣān  (n=3)
+
+- шум  · n=2  · rigveda
+- пастушьих стоянках  · n=1  · mahabharata-aranyakaparva
+
+### `GozAt` — ghoṣāt  (n=2)
+
+- звучит  · n=1  · rigveda
+- прогрохочет  · n=1  · rigveda
+
+### `GozAyai` — ghoṣāyai  (n=2)
+
+- Гхоше  · n=2  · rigveda
+
+### `Goza` — ghoṣa  (n=78)
+
+- звук  · n=7  · ramayana-sundarakanda, mahabharata-dronaparva, mahabharata-udyogaparva, bhagavadgita-sementsov, bhagavadgita-prabhupada, bhagavadgita-radha, hatha-yoga-pradipika
+- шум  · n=6  · atharvaveda, ramayana-sundarakanda, mahabharata-bhishmaparva, rigveda, br-up
+- рев  · n=5  · rigveda, bhagavadgita-burba, bhagavadgita-1914, rigveda
+- клич  · n=4  · rigveda, bhagavadgity, bhagavadgita-smirnov, atharvaveda
+- звуки  · n=3  · ramayana-ayodhyakanda, mahabharata-shalyaparva, raghuvamsha
+- крик  · n=3  · rigveda, rigveda
+- грохот  · n=3  · rigveda, atharvaveda, mahabharata-virataparva
+- грохотом  · n=3  · mahabharata-bhishmaparva, mahabharata-virataparva
+- рева  · n=3  · rigveda, mahabharata-dronaparva
+- гул  · n=3  · mahabharata-udyogaparva, gitarthasamgraha-abhinavagupta, bhagavadgita-burba
+- возгласы  · n=3  · ch-up
+- зов  · n=2  · mahabharata-bhishmaparva, bhagavadgita-erman
+- скрип  · n=2  · mahabharata-dronaparva, mahabharata-udyogaparva
+- звуками  · n=2  · devi-gita
+- сладостным, проникновенным  · n=1  · ramayana-ayodhyakanda
+- клекот  · n=1  · ramayana-ayodhyakanda
+- Шум  · n=1  · ramayana-ayodhyakanda
+- Оглашаемого  · n=1  · ramayana-sundarakanda
+- пением  · n=1  · ramayana-sundarakanda
+- бряцанием  · n=1  · ramayana-sundarakanda
+- от этого рева  · n=1  · ramayana-sundarakanda
+- звенели  · n=1  · ramayana-aranyakanda
+- звучание  · n=1  · mahabharata-aranyakaparva
+- пастушеских становищ  · n=1  · mahabharata-aranyakaparva
+- грохоту  · n=1  · mahabharata-aranyakaparva
+- Клич  · n=1  · rigveda
+- глас  · n=1  · rigveda
+- шумом  · n=1  · mahabharata-adiparva
+- гремящей  · n=1  · mahabharata-bhishmaparva
+- стук  · n=1  · mahabharata-dronaparva
+- гулом  · n=1  · mahabharata-dronaparva
+- прогремел  · n=1  · buddhacharita
+- Громкозвучные гласы  · n=1  · bhagavadgita-1788
+- гласъ  · n=1  · bhagavadgita-1909
+- Юдгаманджу  · n=1  · bhagavadgita-1909
+- Курусы  · n=1  · bhagavadgita-1909
+- звука  · n=1  · bhagavadgita-sharma
+- звон  · n=1  · mahabharata-karnaparva
+- звуков  · n=1  · mahabharata-shalyaparva
+- восклицания  · n=1  · mahabharata-sabhaparva
+- со звуком  · n=1  · hatha-yoga-pradipika
+- пастухов  · n=1  · mahabharata-virataparva
+- стоянках  · n=1  · mahabharata-virataparva
+
+### `GozaH` — ghoṣaḥ  (n=9)
+
+- грохот  · n=2  · ramayana-ayodhyakanda, rigveda
+- звуки  · n=1  · ramayana-ayodhyakanda
+- Грохот  · n=1  · ramayana-ayodhyakanda
+- шум  · n=1  · ramanuja_gitabhashya
+- ШУМ  · n=1  · ramanuja_gitabhashya
+- гул  · n=1  · rigveda
+- звук  · n=1  · mahabharata-ashvamedhikaparva
+- ревущие звуки  · n=1  · atharvaveda
+
+### `GozaTaH` — ghoṣathaḥ  (n=1)
+
+- провозглашаете  · n=1  · rigveda
+
+### `GozabudDa` — ghoṣabuddha  (n=1)
+
+- разбуженная шумом  · n=1  · atharvaveda
+
+### `Gozam` — ghoṣam  (n=17)
+
+- клич  · n=4  · rigveda, rigveda, atharvaveda
+- гимны  · n=2  · ramayana-aranyakanda
+- шум  · n=2  · ramanuja_gitabhashya, atharvaveda
+- звук  · n=1  · ramayana-ayodhyakanda
+- гимны и восхваления  · n=1  · ramayana-ayodhyakanda
+- восхваления  · n=1  · ramayana-ayodhyakanda
+- плеск  · n=1  · mahabharata-aranyakaparva
+- гам  · n=1  · rigveda
+- слова  · n=1  · buddhacharita
+- гул  · n=1  · rigveda
+- звуком  · n=1  · atharvaveda
+- стук  · n=1  · atharvaveda
+
+### `GozavAn` — ghoṣavān  (n=3)
+
+- грохочущее  · n=1  · mahabharata-adiparva
+- грохочущий  · n=1  · mahabharata-adiparva
+- грохочущая  · n=1  · mahabharata-adiparva
+
+### `Gozava` — ghoṣava  (n=1)
+
+- звуки  · n=1  · ramayana-ayodhyakanda
+
+### `Gozavant` — ghoṣavant  (n=1)
+
+- грохочущая  · n=1  · mahabharata-adiparva
+
+### `Gozavat` — ghoṣavat  (n=6)
+
+- грохочущее  · n=1  · mahabharata-adiparva
+- грохочущий  · n=1  · mahabharata-adiparva
+- ржанье  · n=1  · ramayana-ayodhyakanda
+- грохочущими  · n=1  · ramayana-sundarakanda
+- оглашаемый  · n=1  · ramayana-sundarakanda
+- звучно  · n=1  · ch-up
+
+### `GozavfdDAn` — ghoṣavṛddhān  (n=1)
+
+- старейшин пастухов  · n=1  · raghuvamsha
+
+### `GozayAmAsa` — ghoṣayāmāsa  (n=1)
+
+- объявил  · n=1  · mahabharata-aranyakaparva
+
+### `GozayAtrA` — ghoṣayātrā  (n=8)
+
+- Путешествие к пастухам  · n=1  · mahabharata-adiparva
+- посещение пастухов  · n=1  · mahabharata-adiparva
+- путешествие на пастбища  · n=1  · mahabharata-adiparva
+- стоянки пастухов  · n=1  · mahabharata-adiparva
+- поход за скотом  · n=1  · mahabharata-adiparva
+- поездку в стоянки пастухов  · n=1  · mahabharata-adiparva
+- объезда пастушеских станов  · n=1  · mahabharata-aranyakaparva
+- объезд становищ  · n=1  · mahabharata-aranyakaparva
+
+### `GozayAtrAm` — ghoṣayātrām  (n=1)
+
+- в становища  · n=1  · mahabharata-aranyakaparva
+
+### `GozayAtrAyAM` — ghoṣayātrāyāṃ  (n=2)
+
+- во время путешествия в пастушеский стан  · n=1  · mahabharata-dronaparva
+- при поездке в пастушеский стан  · n=1  · mahabharata-udyogaparva
+
+### `Gozaya` — ghoṣaya  (n=2)
+
+- призываешь  · n=2  · rigveda
+
+### `GozayantaH` — ghoṣayantaḥ  (n=1)
+
+- ревя  · n=1  · ramayana-sundarakanda
+
+### `Gozayanti` — ghoṣayanti  (n=1)
+
+- провозглашали  · n=1  · ramayana-sundarakanda
+
+### `Gozayantu` — ghoṣayantu  (n=3)
+
+- возгласят  · n=1  · mahabharata-udyogaparva
+- возвестят  · n=1  · mahabharata-virataparva
+- пусть возвестят  · n=1  · mahabharata-virataparva
+
+### `Gozayatu` — ghoṣayatu  (n=1)
+
+- пусть возвещает  · n=1  · gitagovinda
+
+### `Goze` — ghoṣe  (n=3)
+
+- громко возвещать  · n=2  · rigveda
+- про(звучала)  · n=1  · rigveda
+
+### `GozeRa` — ghoṣeṇa  (n=6)
+
+- звоном  · n=3  · ramayana-ayodhyakanda, mahabharata-dronaparva
+- стуком  · n=1  · rigveda
+- звука тетивы  · n=1  · mahabharata-karnaparva
+- от звона  · n=1  · mahabharata-virataparva
+
+### `Gozi` — ghoṣi  (n=3)
+
+- обрати свой слух  · n=2  · rigveda
+- услышь  · n=1  · rigveda
+
+### `GoziRI` — ghoṣiṇī  (n=3)
+
+- громкогласным  · n=2  · atharvaveda
+- шумные  · n=1  · atharvaveda
+
+### `GozikA` — ghoṣikā  (n=1)
+
+- громкие  · n=1  · mahabharata-karnaparva
+
+### `Gozin` — ghoṣin  (n=3)
+
+- издающие приятное ржание  · n=1  · mahabharata-dronaparva
+- с шумом и звоном  · n=1  · mahabharata-karnaparva
+- шумящие  · n=1  · atharvaveda
+
+### `GrA` — ghrā  (n=3)
+
+- обоняя  · n=2  · nyaya-bhashya
+- обоняет  · n=1  · br-up
+
+### `GrARAdi` — ghrāṇādi  (n=6)
+
+- обоняния  · n=2  · nyaya-bhashya
+- способность обоняния и т. д.  · n=1  · nyaya-bhashya
+- обоняния и прочих  · n=1  · nyaya-bhashya
+- обоняние и прочие  · n=1  · nyaya-bhashya
+- обоняние и т. д.  · n=1  · nyaya-bhashya
+
+### `GrARAt` — ghrāṇāt  (n=1)
+
+- из носа  · n=1  · mahabharata-karnaparva
+
+### `GrARa` — ghrāṇa  (n=69)
+
+- нос  · n=24  · sankhya-karika, mahabharata-ashvamedhikaparva, hatha-yoga-pradipika, bhagavadgita-sharma, bhagavadgita-radha, ch-up, nyaya-bhashya, mnar-up, paramarthasara-abhinavagupta
+- обоняние  · n=12  · nyaya-bhashya, kau-up, ramayana-ayodhyakanda, mahabharata-bhishmaparva, bhagavadgita-burba, bhagavadgita-1914, mahabharata-ashvamedhikaparva, pr-up
+- обоняния  · n=9  · nyaya-bhashya, kama-sutra, atma-up
+- обонянием  · n=5  · nyaya-bhashya, mahabharata-adiparva, bhagavadgita-erman, bhagavadgita-smirnov
+- носом  · n=4  · nyaya-bhashya, mahabharata-ashvamedhikaparva, sankhya-karika, jabala-up
+- обнюхиванием  · n=1  · manavadharmashastra
+- ногти  · n=1  · manavadharmashastra
+- благоухали  · n=1  · ramayana-aranyakanda
+- гхрана  · n=1  · gitarthasamgraha-abhinavagupta
+- обонянии  · n=1  · gitarthasamgraha-abhinavagupta
+- обоняньем  · n=1  · bhagavadgity
+- обонянія  · n=1  · bhagavadgita-1788
+- Обонянием  · n=1  · bhagavadgita-sementsov
+- чувствами  · n=1  · bhagavadgita-1909
+- в орган обоняния  · n=1  · bhagavadgita-prabhupada
+- носа  · n=1  · nyaya-bhashya
+- Нос  · n=1  · mahabharata-ashvamedhikaparva
+- органом обоняния  · n=1  · devi-gita
+- орган обоняния  · n=1  · yoga-sutry_vyasa-bhashya
+- Обоняние  · n=1  · kau-up
+
+### `GrARacakzus` — ghrāṇacakṣus  (n=2)
+
+- глазами которому служили его ноздри  · n=2  · mahabharata-karnaparva
+
+### `GrARagata` — ghrāṇagata  (n=1)
+
+- проникающими в мой нос  · n=1  · mahabharata-ashvamedhikaparva
+
+### `GrARakAntamaDuganDakarziRI` — ghrāṇakāntamadhugandhakarṣiṇī  (n=1)
+
+- влекущие сладким винным запахом  · n=1  · raghuvamsha
+
+### `GrARam` — ghrāṇam  (n=2)
+
+- обонянием  · n=1  · ramanuja_gitabhashya
+- нос  · n=1  · mahabharata-ashvamedhikaparva
+
+### `GrARaniHSvAsaSItalAm` — ghrāṇaniḥśvāsaśītalām  (n=1)
+
+- холодной от дыхания  · n=1  · mahabharata-dronaparva
+
+### `GrARaranDrAByAm` — ghrāṇarandhrābhyām  (n=2)
+
+- через ноздри  · n=2  · hatha-yoga-pradipika
+
+### `GrARasTaSca` — ghrāṇasthaśca  (n=1)
+
+- пребывающий в носу  · n=1  · mahabharata-ashvamedhikaparva
+
+### `GrARavijYAna` — ghrāṇavijñāna  (n=2)
+
+- обонятельное познание  · n=2  · nyaya-bhashya
+
+### `GrARayuktAH` — ghrāṇayuktāḥ  (n=1)
+
+- запахи  · n=1  · mahabharata-aranyakaparva
+
+### `GrARena` — ghrāṇena  (n=3)
+
+- через нос  · n=2  · hatha-yoga-pradipika
+- обонянием  · n=1  · kau-up
+
+### `GrAReneha` — ghrāṇeneha  (n=1)
+
+- носом  · n=1  · mahabharata-ashvamedhikaparva
+
+### `GrAtA` — ghrātā  (n=2)
+
+- тот, кто обоняет  · n=1  · mahabharata-ashvamedhikaparva
+- ощущающий [запахи]  · n=1  · paramarthasara-abhinavagupta
+
+### `GrAtavya` — ghrātavya  (n=3)
+
+- обонять  · n=2  · shatakatrayam, shatakatrayam-serebryakov
+- обоняемое  · n=1  · pr-up
+
+### `GrAtf` — ghrātṛ  (n=6)
+
+- обоняющий  · n=3  · br-up, pr-up, kau-up
+- обоняющим  · n=2  · mai-up, atma-up
+- Обоняющий  · n=1  · mahabharata-ashvamedhikaparva
+
+### `GrAti` — ghrāti  (n=2)
+
+- обоняет  · n=1  · mahabharata-ashvamedhikaparva
+- обоняние  · n=1  · br-up
+
+### `GrAtiraGreyamadyayoH` — ghrātiraghreyamadyayoḥ  (n=1)
+
+- нюхание [вещей], неподлежащих нюханию, или спиртных напитков  · n=1  · manavadharmashastra
+
+### `GrAtvA` — ghrātvā  (n=2)
+
+- обоняя  · n=1  · manavadharmashastra
+- вдыхаю  · n=1  · raghuvamsha
+
+### `GrAya` — ghrāya  (n=2)
+
+- вдохнул  · n=1  · amaru-shataka
+- дыханьем  · n=1  · amaru-shataka
+
+### `GraMs` — ghraṃs  (n=1)
+
+- жара  · n=1  · atharvaveda
+
+### `GraMsa` — ghraṃsa  (n=9)
+
+- жар  · n=4  · atharvaveda
+- зноя  · n=2  · rigveda
+- пылающий  · n=1  · rigveda
+- при солнечном зное  · n=1  · rigveda
+- горячий  · n=1  · atharvaveda
+
+### `GraMsam` — ghraṃsam  (n=1)
+
+- зноя  · n=1  · rigveda
+
+### `Greya` — ghreya  (n=1)
+
+- благовония  · n=1  · mahabharata-sabhaparva
+
+### `Greyam` — ghreyam  (n=1)
+
+- то, что обоняется  · n=1  · mahabharata-ashvamedhikaparva
+
+### `Greye` — ghreye  (n=1)
+
+- то, что обоняется  · n=1  · mahabharata-ashvamedhikaparva
+
+### `GuvAnaH` — ghuvānaḥ  (n=1)
+
+- когда зовут  · n=1  · rigveda
+
+### `Guvema` — ghuvema  (n=1)
+
+- хотим призвать  · n=1  · rigveda
+
+### `GuzwAnna` — ghuṣṭānna  (n=1)
+
+- предложенную всем пришедшим по приглашению  · n=1  · manavadharmashastra
+
+### `GuzwaH` — ghuṣṭaḥ  (n=1)
+
+- звучат  · n=1  · mahabharata-aranyakaparva
+
+### `GuzyamARa` — ghuṣyamāṇa  (n=1)
+
+- молва  · n=1  · mahabharata-ashvamedhikaparva
+
+### `GuzyatAm` — ghuṣyatām  (n=2)
+
+- разглашено будет  · n=1  · mahabharata-udyogaparva
+- да будет объявлено  · n=1  · mahabharata-ashramavasikaparva
+
+### `Guzyate` — ghuṣyate  (n=1)
+
+- слышат  · n=1  · mahabharata-ashvamedhikaparva
 
 ### `gA` — gā  (n=185)
 
