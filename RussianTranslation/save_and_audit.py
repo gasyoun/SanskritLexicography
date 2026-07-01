@@ -41,10 +41,20 @@ def main():
     if result is None:                      # direct (non-wrapped) workflow result
         result = wrapper
 
+    # A batch thunk that THROWS (e.g. StructuredOutput retry cap exceeded) makes
+    # parallel() yield null for that slot, and grouped.flat() leaves the null in
+    # `results`. Drop those null entries so the file is well-formed for the audit
+    # + promote_en chain; the dropped batch's cards are simply absent (they surface
+    # as missing keys in a requeue diff against the rootmap).
+    dropped = sum(1 for r in (result.get("results") or []) if not r)
+    if dropped:
+        result["results"] = [r for r in result["results"] if r]
+        print(f"NOTE: dropped {dropped} null result slot(s) from a failed batch thunk")
+
     out_path = os.path.join(HERE, f"wf_output.{tag}.{root}.json")
 
     def nn(res):                                  # non-null card count
-        return sum(1 for r in (res.get("results") or []) if r.get("card"))
+        return sum(1 for r in (res.get("results") or []) if r and r.get("card"))
 
     new_nn = nn(result)
     if os.path.exists(out_path):
