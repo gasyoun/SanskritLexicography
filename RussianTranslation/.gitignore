@@ -72,3 +72,9 @@ src/pwg_ru_translated.jsonl.prefreq.bak
 src/dcs_freq_dims.json
 src/mw_en_tm.json
 src/pilot/run_pilot_wf.en_*.js
+
+# Sa→Ru glossary — generated data (regenerate via src/build_*.py; see glossary/README.md).
+# Tracked: glossary/README.md, glossary/SAMPLE_root_glossary.md, and the src/ scripts.
+glossary/*.jsonl
+glossary/*.tsv
+glossary/md/
