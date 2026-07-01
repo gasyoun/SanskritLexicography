@@ -1,0 +1,16 @@
+## anuvipaś
+
+`pa_s~~h0_17_anuvi`
+
+
+**1)** — *anuvi* erblicken, beschauen: *tameṣa udyannanuvipaśyati*
+[ŚAT. BR. 6,7,2,4.] *te 'surānrātriṃ tamaḥ praviṣṭānnānuvyapaśyan*
+[PAÑCAV. BR. 9,1,1.]
+
+- **RU:** — *anuvi* узреть, созерцать: *tameṣa udyannanuvipaśyati*
+[ŚAT. BR. 6,7,2,4.] *te 'surānrātriṃ tamaḥ praviṣṭānnānuvyapaśyan*
+[PAÑCAV. BR. 9,1,1.]
+- **EN:** *anuvi* to catch sight of, to view: *tameṣa udyannanuvipaśyati*
+[ŚAT. BR. 6,7,2,4.] *te 'surānrātriṃ tamaḥ praviṣṭānnānuvyapaśyan*
+[PAÑCAV. BR. 9,1,1.]
+  <sub>DCS 2 · attested</sub>

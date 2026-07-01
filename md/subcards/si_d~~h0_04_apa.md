@@ -1,0 +1,40 @@
+## sidh
+
+`si_d~~h0_04_apa`
+
+
+**1)** — *apa* wegtreiben, verjagen: *rakṣasaḥ*
+[ṚV. 1,35,10.] [6,47,21.] *dūrāddavīyo apa sedha śatrūn* 29. *dasyūn*
+[5,31,7.] [8,18,10.] [68,9.] [10,25,7.] *duritā*
+[9,82,2.] [AV. 8,2,7.] *yamadūtān* 11. *taṃ vṛkṣā apa sedhanti chāyāṃ no mopa gā iti*
+[5,19,9.] *saṃvatsaraṃ yavāhārastatpāpamapasedhati*
+
+- **RU:** — *apa* прогонять, изгонять: *rakṣasaḥ*
+[ṚV. 1,35,10.] [6,47,21.] *dūrāddavīyo apa sedha śatrūn* 29. *dasyūn*
+[5,31,7.] [8,18,10.] [68,9.] [10,25,7.] *duritā*
+[9,82,2.] [AV. 8,2,7.] *yamadūtān* 11. *taṃ vṛkṣā apa sedhanti chāyāṃ no mopa gā iti*
+[5,19,9.] *saṃvatsaraṃ yavāhārastatpāpamapasedhati*
+- **EN:** — *apa* {to drive away, chase off}: *rakṣasaḥ*
+[ṚV. 1,35,10.] [6,47,21.] *dūrāddavīyo apa sedha śatrūn* 29. *dasyūn*
+[5,31,7.] [8,18,10.] [68,9.] [10,25,7.] *duritā*
+[9,82,2.] [AV. 8,2,7.] *yamadūtān* 11. *taṃ vṛkṣā apa sedhanti chāyāṃ no mopa gā iti*
+[5,19,9.] *saṃvatsaraṃ yavāhārastatpāpamapasedhati*
+  <sub>DCS 2028 · attested</sub>
+
+**2)** [M. 11,198.] abwehren, abhalten von (abl.): *pṛṣṭhataḥ parānvīrān*
+[MBH. 6,541.] *nāgaṃ prabhinnaṃ girikūṭakalpamupatyakāṃ* (so [ed. Bomb.]) *haimavatīṃ carantam . daṇḍīva yūthādapasedhasi* (so [ed. Bomb.], [ed. Calc.] und [DRAUP. 5,5] *˚sedhase*)
+*tvam*
+[3,15643.] *bhīmasenādapāsedhatsūtaputram*
+[7,5805.] [7397] (nach der Lesart der [ed. Bomb.]).
+
+- **RU:** [M. 11,198.] отражать, удерживать от (abl.): *pṛṣṭhataḥ parānvīrān*
+[MBH. 6,541.] *nāgaṃ prabhinnaṃ girikūṭakalpamupatyakāṃ* (так [ed. Bomb.]) *haimavatīṃ carantam . daṇḍīva yūthādapasedhasi* (так [ed. Bomb.], [ed. Calc.] und [DRAUP. 5,5] *˚sedhase*)
+*tvam*
+[3,15643.] *bhīmasenādapāsedhatsūtaputram*
+[7,5805.] [7397] (по чтению [ed. Bomb.]).
+- **EN:** [M. 11,198.] {to ward off, keep off from} (abl.): *pṛṣṭhataḥ parānvīrān*
+[MBH. 6,541.] *nāgaṃ prabhinnaṃ girikūṭakalpamupatyakāṃ* (so [ed. Bomb.]) *haimavatīṃ carantam . daṇḍīva yūthādapasedhasi* (so [ed. Bomb.], [ed. Calc.] and [DRAUP. 5,5] *˚sedhase*)
+*tvam*
+[3,15643.] *bhīmasenādapāsedhatsūtaputram*
+[7,5805.] [7397] (according to the reading of the [ed. Bomb.]).
+  <sub>DCS 2028 · attested</sub>

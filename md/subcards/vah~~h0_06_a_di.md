@@ -1,0 +1,22 @@
+## vah
+
+`vah~~h0_06_a_di`
+
+
+**1)** — *adhi* tragen: *puruṣānadhivahataḥ* eine Sänfte
+[BHĀG. P. 5,10,2.] *adhyūḍha* (s. auch bes.) aufgesetzt auf (loc.)
+[AIT. BR. 3,41.]
+
+- **RU:** — *adhi* нести: *puruṣānadhivahataḥ* паланкин
+[BHĀG. P. 5,10,2.] *adhyūḍha* (s. также bes.) водружённый на (loc.)
+[AIT. BR. 3,41.]
+- **EN:** — *adhi* to carry: *puruṣānadhivahataḥ* a litter
+[BHĀG. P. 5,10,2.] *adhyūḍha* (s. also bes.) set upon (loc.)
+[AIT. BR. 3,41.]
+  <sub>DCS 1857 · attested</sub>
+
+**etym/cross-ref)** — Vgl. *adhivāhana* .
+
+- **RU:** — Vgl. *adhivāhana* .
+- **EN:** — Vgl. *adhivāhana*.
+  <sub>DCS 1857 · attested</sub>

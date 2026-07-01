@@ -1,0 +1,13 @@
+## dhā
+
+`_d_a~~h0_07_vyanu`
+
+
+**1)** — *vyanu* etwa entfalten: *vayo na pakṣānvyanu śriyo dhire*
+[ṚV. 1,166,10.]
+
+- **RU:** — *vyanu* приблизительно развёртывать, раскрывать: *vayo na pakṣānvyanu śriyo dhire*
+[ṚV. 1,166,10.]
+- **EN:** — *vyanu* approximately to unfold: *vayo na pakṣānvyanu śriyo dhire*
+[ṚV. 1,166,10.]
+  <sub>DCS 4861 · attested</sub>

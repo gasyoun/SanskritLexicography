@@ -1,0 +1,114 @@
+## iṣ
+
+`iz~~h9_00_pwg00`
+
+
+**2)** I. 3. *iṣ*¦ *iṣ*
+ 2) *te neṣurvaradānam*
+[HARIV. 7967.] *neṣustadvaradānam* die neuere Ausg. *anājñaptastu saumitre praveṣṭuṃ necchayāmyaham (icchayāmi = icchāmi!)*
+[R. 7,59,1,25.]
+- **EN:** I. 3. *iṣ*¦ *iṣ*
+ 2) *te neṣurvaradānam*
+[HARIV. 7967.] *neṣustadvaradānam* the more recent Ausg. *anājñaptastu saumitre praveṣṭuṃ necchayāmyaham (icchayāmi = icchāmi!)*
+[R. 7,59,1,25.]
+
+**3)** — 3)
+[VARĀH. BṚH. S. 53,16.]
+[SARVADARŚANAS. 141. 9.] Füge noch annehmen hinzu.
+
+- **RU:** — 3)
+[VARĀH. BṚH. S. 53,16.]
+[SARVADARŚANAS. 141. 9.] Добавить ещё принимать.
+- **EN:** — 3)
+[VARĀH. BṚH. S. 53,16.]
+[SARVADARŚANAS. 141. 9.] Add further "to accept".
+  <sub>DCS 5402 · attested</sub>
+
+**4)** — 4)
+ b) *na tvātmanaḥ saṃpradānaṃ dhanaratnavadiṣyate*
+[Spr. 4293.]
+— c)
+[SARVADARŚANAS. 61,16.]
+— *anu* untersuchen
+[KATHĀS. 112,150.] — caus. suchen: *atiramaṇīye kāvye 'pi piśuno dūṣaṇamanveṣayati . atiramaṇīye vapuṣi vraṇamiva makṣikānikaraḥ ..*
+[Spr. 3409.]
+— *abhi* wünschen, wollen, beabsichtigen; mit infin.
+[KATHĀS. 106,126.] *abhīṣṭavarṣin* erwünschten Regen sendend
+[Spr. 1915.]
+— *prati* vgl. *pratīcchaka* .
+— *vi* suchen
+[TBR. 2,7,13,2.]
+- **EN:** — 4)
+ b) *na tvātmanaḥ saṃpradānaṃ dhanaratnavadiṣyate*
+[Spr. 4293.]
+— c)
+[SARVADARŚANAS. 61,16.]
+— *anu* to examine
+[KATHĀS. 112,150.] — caus. to seek: *atiramaṇīye kāvye 'pi piśuno dūṣaṇamanveṣayati . atiramaṇīye vapuṣi vraṇamiva makṣikānikaraḥ ..*
+[Spr. 3409.]
+— *abhi* to wish, to want, to intend; with infin.
+[KATHĀS. 106,126.] *abhīṣṭavarṣin* sending desired rain
+[Spr. 1915.]
+— *prati* vgl. *pratīcchaka*.
+— *vi* to seek
+[TBR. 2,7,13,2.]
+
+**head)** I. 3. *iṣ*¦ *iṣ*
+
+- **RU:** I. 3. *iṣ*¦ *iṣ*
+  <sub>DCS 5402 · attested</sub>
+
+**2))** 2) *te neṣurvaradānam*
+[HARIV. 7967.] *neṣustadvaradānam* die neuere Ausg. *anājñaptastu saumitre praveṣṭuṃ necchayāmyaham (icchayāmi = icchāmi!)*
+[R. 7,59,1,25.]
+
+- **RU:** 2) *te neṣurvaradānam*
+[HARIV. 7967.] *neṣustadvaradānam* новейшая Ausg. *anājñaptastu saumitre praveṣṭuṃ necchayāmyaham (icchayāmi = icchāmi!)*
+[R. 7,59,1,25.]
+  <sub>DCS 5402 · attested</sub>
+
+**4b))** — 4)
+ b) *na tvātmanaḥ saṃpradānaṃ dhanaratnavadiṣyate*
+[Spr. 4293.]
+
+- **RU:** — 4)
+ b) *na tvātmanaḥ saṃpradānaṃ dhanaratnavadiṣyate*
+[Spr. 4293.]
+  <sub>DCS 5402 · attested</sub>
+
+**4c))** — c)
+[SARVADARŚANAS. 61,16.]
+
+- **RU:** — c)
+[SARVADARŚANAS. 61,16.]
+  <sub>DCS 5402 · attested</sub>
+
+**untersuchen)** *anu* untersuchen
+[KATHĀS. 112,150.] — caus. suchen: *atiramaṇīye kāvye 'pi piśuno dūṣaṇamanveṣayati . atiramaṇīye vapuṣi vraṇamiva makṣikānikaraḥ ..*
+[Spr. 3409.]
+
+- **RU:** *anu* исследовать
+[KATHĀS. 112,150.] — caus. искать: *atiramaṇīye kāvye 'pi piśuno dūṣaṇamanveṣayati . atiramaṇīye vapuṣi vraṇamiva makṣikānikaraḥ ..*
+[Spr. 3409.]
+  <sub>DCS 5402 · attested</sub>
+
+**wünschen)** — *abhi* wünschen, wollen, beabsichtigen; mit infin.
+[KATHĀS. 106,126.] *abhīṣṭavarṣin* erwünschten Regen sendend
+[Spr. 1915.]
+
+- **RU:** — *abhi* желать, хотеть, намереваться; с infin.
+[KATHĀS. 106,126.] *abhīṣṭavarṣin* посылающий желанный дождь
+[Spr. 1915.]
+  <sub>DCS 5402 · attested</sub>
+
+**cross_1)** — *prati* vgl. *pratīcchaka* .
+
+- **RU:** — *prati* vgl. *pratīcchaka* .
+  <sub>DCS 5402 · attested</sub>
+
+**suchen_nachtrag)** — *vi* suchen
+[TBR. 2,7,13,2.]
+
+- **RU:** — *vi* искать
+[TBR. 2,7,13,2.]
+  <sub>DCS 5402 · attested</sub>

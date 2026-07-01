@@ -1,0 +1,34 @@
+## pra+vā
+
+`v_a~~h1_15_pra`
+
+
+**1)** — *pra* wehen: *ahameva vāta iva pra vāmi*
+[ṚV. 10,125,8.] *vanācca vāyuḥ surabhiḥ pravāyāt*
+[MBH. 1,2936.] *vātāśca pravavuḥ*
+[4509.] [3,11998.] [6,731.] [7,328.] [9029.] [12,6333.] [12081.] [HARIV. 4941.] [8790.] [R. 2,71,25.] [91,26.] [R. GORR. 2,100,21.] [3,22,15.] [52,11.] [BHĀG. P. 3,9,18.] [5,24,5.] [PAÑCAT. 169,6.] von Gerüchen: *gandho yasyāḥ krośātpravāti vai*
+[MBH. 1,6934.] [6,138.]
+[R. GORR. 2,100,23.] [125,21] ([114,10] [SCHL.]). [4,13,21.] [5,73,59.]
+
+- **RU:** — *pra* веять: *ahameva vāta iva pra vāmi*
+[ṚV. 10,125,8.] *vanācca vāyuḥ surabhiḥ pravāyāt*
+[MBH. 1,2936.] *vātāśca pravavuḥ*
+[4509.] [3,11998.] [6,731.] [7,328.] [9029.] [12,6333.] [12081.] [HARIV. 4941.] [8790.] [R. 2,71,25.] [91,26.] [R. GORR. 2,100,21.] [3,22,15.] [52,11.] [BHĀG. P. 3,9,18.] [5,24,5.] [PAÑCAT. 169,6.] о запахах: *gandho yasyāḥ krośātpravāti vai*
+[MBH. 1,6934.] [6,138.]
+[R. GORR. 2,100,23.] [125,21] ([114,10] [SCHL.]). [4,13,21.] [5,73,59.]
+- **EN:** — *pra* to blow: *ahameva vāta iva pra vāmi*
+[ṚV. 10,125,8.] *vanācca vāyuḥ surabhiḥ pravāyāt*
+[MBH. 1,2936.] *vātāśca pravavuḥ*
+[4509.] [3,11998.] [6,731.] [7,328.] [9029.] [12,6333.] [12081.] [HARIV. 4941.] [8790.] [R. 2,71,25.] [91,26.] [R. GORR. 2,100,21.] [3,22,15.] [52,11.] [BHĀG. P. 3,9,18.] [5,24,5.] [PAÑCAT. 169,6.] of scents: *gandho yasyāḥ krośātpravāti vai*
+[MBH. 1,6934.] [6,138.]
+[R. GORR. 2,100,23.] [125,21] ([114,10] [SCHL.]). [4,13,21.] [5,73,59.]
+  <sub>DCS 79 · attested</sub>
+
+**ppp)** — Vgl. *pravā, pravāta* (auch
+[R. 5,26,1]), *pravāyya* .
+
+- **RU:** — Vgl. *pravā, pravāta* (auch
+[R. 5,26,1]), *pravāyya* .
+- **EN:** — Vgl. *pravā, pravāta* (also
+[R. 5,26,1]), *pravāyya* .
+  <sub>DCS 79 · attested</sub>

@@ -1,0 +1,60 @@
+## brū
+
+`br_u~~h0_00_pwg01`
+
+
+**2)** — 2) sich nennen, genannt werden. heissen;
+
+- **RU:** — 2) называться, именоваться, называть себя;
+- **EN:** 2) to call oneself, to be named, be called
+  <sub>DCS 9786 · attested</sub>
+
+**2a)** a) med.: *adha cidva uta bruve* und so heisst es auch von euch, und so nennt man euch wirklich
+[ṚV. 8,72,9.] [3,54,7.] *prayuñjatī diva eti bruvāṇā mahī mātā*
+[5,47,1.] *uta ghā nemo astutaḥ pumā iti bruve paṇiḥ*
+[61,8.] *janaṃ ca mitro yatati bruvāṇaḥ*
+[7,36,2.] [3,59,1.] *(indraḥ) tanyati bruvāṇaḥ* etwa sich ansagend, sich zu erkennen gebend
+[6,38,2.] *sa indro brāhmaṇo bruvāṇa iṣṭakāmupādhatta* sich ausgebend für
+[TBR. 1,1,2,5.]
+[ŚAT. BR. 2,1,2,14.] [3,3.] [4,19.] [1,6,1,8.] *paurogavo bruvāṇo 'haṃ ballavo nāma*
+[MBH. 4,28.] [560.] *brahmabruvāṇa* sich für einen Brahmanen ausgebend
+[5,2427.] *gautamabruvāṇa, gautamo vā bruvāṇaḥ*
+[Ind. St. 1,38.] *brūte kathā svayameva* erzählt sich selbst
+[P. 3,1,89], Vārtt., Sch.
+[VOP. 24,12.] Vielleicht sich sagen lassen, fragen nach (wie
+εἴρομαι): *jāmi bruvata āyudham*
+[ṚV. 8,6,3.] *jāmi bruvāṇa āyudhāni veti*
+[10,8,7.]
+
+- **RU:** a) med.: *adha cidva uta bruve* и так же говорится о вас, и так вас действительно называют
+[ṚV. 8,72,9.] [3,54,7.] *prayuñjatī diva eti bruvāṇā mahī mātā*
+[5,47,1.] *uta ghā nemo astutaḥ pumā iti bruve paṇiḥ*
+[61,8.] *janaṃ ca mitro yatati bruvāṇaḥ*
+[7,36,2.] [3,59,1.] *(indraḥ) tanyati bruvāṇaḥ* приблизительно называя себя, давая себя узнать
+[6,38,2.] *sa indro brāhmaṇo bruvāṇa iṣṭakāmupādhatta* выдавая себя за
+[TBR. 1,1,2,5.]
+[ŚAT. BR. 2,1,2,14.] [3,3.] [4,19.] [1,6,1,8.] *paurogavo bruvāṇo 'haṃ ballavo nāma*
+[MBH. 4,28.] [560.] *brahmabruvāṇa* выдавая себя за брахмана
+[5,2427.] *gautamabruvāṇa, gautamo vā bruvāṇaḥ*
+[Ind. St. 1,38.] *brūte kathā svayameva* рассказывает о себе самом
+[P. 3,1,89], Vārtt., Sch.
+[VOP. 24,12.] Возможно — позволять говорить себе, спрашивать о (как
+εἴρομαι): *jāmi bruvata āyudham*
+[ṚV. 8,6,3.] *jāmi bruvāṇa āyudhāni veti*
+[10,8,7.]
+- **EN:** a) med.: *adha cidva uta bruve* "and thus it is also said of you, and thus you are indeed called" [ṚV. 8,72,9.] [3,54,7.] *prayuñjatī diva eti bruvāṇā mahī mātā* [5,47,1.] *uta ghā nemo astutaḥ pumā iti bruve paṇiḥ* [61,8.] *janaṃ ca mitro yatati bruvāṇaḥ* [7,36,2.] [3,59,1.] *(indraḥ) tanyati bruvāṇaḥ* perhaps "announcing oneself, making oneself known" [6,38,2.] *sa indro brāhmaṇo bruvāṇa iṣṭakāmupādhatta* "giving oneself out for" [TBR. 1,1,2,5.] [ŚAT. BR. 2,1,2,14.] [3,3.] [4,19.] [1,6,1,8.] *paurogavo bruvāṇo 'haṃ ballavo nāma* [MBH. 4,28.] [560.] *brahmabruvāṇa* "giving himself out to be a Brahman" [5,2427.] *gautamabruvāṇa, gautamo vā bruvāṇaḥ* [Ind. St. 1,38.] *brūte kathā svayameva* "tells of itself" [P. 3,1,89], Vārtt., Sch. [VOP. 24,12.] Perhaps "to have it said of oneself, to ask after" (as εἴρομαι): *jāmi bruvata āyudham* [ṚV. 8,6,3.] *jāmi bruvāṇa āyudhāni veti* [10,8,7.]
+  <sub>DCS 9786 · attested</sub>
+
+**2b)** — b) act.: *bruvanballavajātīyaḥ* sich ausgebend für
+[MBH. 4,558.]
+
+- **RU:** — b) act.: *bruvanballavajātīyaḥ* выдавая себя за
+[MBH. 4,558.]
+- **EN:** b) act.: *bruvanballavajātīyaḥ* "giving oneself out for" [MBH. 4,558.]
+  <sub>DCS 9786 · attested</sub>
+
+**note)** — Vgl. *bruva* .
+
+- **RU:** — Vgl. *bruva* .
+- **EN:** — Vgl. *bruva*.
+  <sub>DCS 9786 · attested</sub>

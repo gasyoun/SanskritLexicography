@@ -1,0 +1,26 @@
+## adhi-gam
+
+`gam~~h2_04_a_di`
+
+
+**1)** — *adhi*
+ 1) *sūkṣmapadyā sopānālīmadhigatavatī* geht, führt zu
+[Spr. 2777.]
+- **EN:** — *adhi*
+ 1) *sūkṣmapadyā sopānālīmadhigatavatī* goes to, leads to
+[Spr. 2777.]
+
+**2)** — 2)
+[BHĀG. P. 11,8,14.]
+- **EN:** — 2)
+[BHĀG. P. 11,8,14.]
+
+**4)** — 4)
+[ŚĀṄKH. GṚHY. 1,17,18] in [Ind. St. 5,408. fg.] Z. 7 [MBH. 6,4538] liest die [ed. Bomb.] *nādhyagacchanta* .
+- **EN:** — 4)
+[ŚĀṄKH. GṚHY. 1,17,18] in [Ind. St. 5,408. fg.] Z. 7 [MBH. 6,4538] the [ed. Bomb.] reads *nādhyagacchanta*.
+
+**6)** — 6) *virodham* sich in Streit einlassen
+[Spr. 4354.]
+- **EN:** — 6) *virodham* to engage in a dispute, to enter into a quarrel
+[Spr. 4354.]

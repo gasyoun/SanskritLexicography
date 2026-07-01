@@ -1,0 +1,58 @@
+## abhicar
+
+`car~~h0_10_a_bi`
+
+
+**1)** — *abhi*
+ 1) sich vergehen gegen Jmd, untreu sein dem Gatten (vgl. u. *ati): manasā vacasā caiva yathā nābhicarāmyaham*
+[MBH. 3,2208.] *patiṃ yā nābhicarati manovāgdehasaṃyatā*
+[M. 5,165.] [9,29.] *yathā nābhicaretāṃ tau (strīpuṃsau) viyuktāvitaretaram*
+[102.] *yathaivāhaṃ nābhicare kadācitpatīnmadādvai manasāpi jātu*
+[MBH. 4,457.]
+
+- **RU:** — *abhi*
+ 1) погрешать против кого-л., изменять супругу (vgl. u. *ati): manasā vacasā caiva yathā nābhicarāmyaham*
+[MBH. 3,2208.] *patiṃ yā nābhicarati manovāgdehasaṃyatā*
+[M. 5,165.] [9,29.] *yathā nābhicaretāṃ tau (strīpuṃsau) viyuktāvitaretaram*
+[102.] *yathaivāhaṃ nābhicare kadācitpatīnmadādvai manasāpi jātu*
+[MBH. 4,457.]
+- **EN:** — *abhi* 1) to transgress against someone, to be unfaithful to one's husband (vgl. u. *ati): manasā vacasā caiva yathā nābhicarāmyaham* [MBH. 3,2208.] *patiṃ yā nābhicarati manovāgdehasaṃyatā* [M. 5,165.] [9,29.] *yathā nābhicaretāṃ tau (strīpuṃsau) viyuktāvitaretaram* [102.] *yathaivāhaṃ nābhicare kadācitpatīnmadādvai manasāpi jātu* [MBH. 4,457.]
+  <sub>DCS 169 · attested</sub>
+
+**2)** — 2) es Jmd anthun, bezaubern, bannen: *mā no ghoreṇa caratābhi dhṛṣṇu*
+[ṚV. 10,34,14.]
+[AV. 5,30,2.] *agnau vā tvā gārhapatye 'bhiceruḥ*
+[10,1,18.] *rājasūyenejāno nābhicaritavai*
+[TBR. 1,7,7,5.] [1,5,1.] *prāṇam*
+[2,2,1,7.] [TS. 2,2,3,2.] [ŚAT. BR. 1,2,1,7.] [5,5,5,14.] [11,1,6,12.] [KĀTY. ŚR. 2,4,28.] [3,5,14.] [22,3,1.] [11,24.] [27.] [33.] [23,5,24.] [LĀṬY. 3,5,23.] *abhicaran*
+[YĀJÑ. 1,294.] [3,289.] *viprāyābhicaranyathā*
+[BHĀG. P. 3,19,13.] Vgl. *kṛtyā*,
+чародѣи, чаровати, очаровати.
+
+- **RU:** — 2) причинять вред кому-л., околдовывать, заклинать: *mā no ghoreṇa caratābhi dhṛṣṇu*
+[ṚV. 10,34,14.]
+[AV. 5,30,2.] *agnau vā tvā gārhapatye 'bhiceruḥ*
+[10,1,18.] *rājasūyenejāno nābhicaritavai*
+[TBR. 1,7,7,5.] [1,5,1.] *prāṇam*
+[2,2,1,7.] [TS. 2,2,3,2.] [ŚAT. BR. 1,2,1,7.] [5,5,5,14.] [11,1,6,12.] [KĀTY. ŚR. 2,4,28.] [3,5,14.] [22,3,1.] [11,24.] [27.] [33.] [23,5,24.] [LĀṬY. 3,5,23.] *abhicaran*
+[YĀJÑ. 1,294.] [3,289.] *viprāyābhicaranyathā*
+[BHĀG. P. 3,19,13.] Vgl. *kṛtyā*,
+чародѣи, чаровати, очаровати.
+- **EN:** — 2) to bewitch someone, to enchant, to put under a spell: *mā no ghoreṇa caratābhi dhṛṣṇu* [ṚV. 10,34,14.] [AV. 5,30,2.] *agnau vā tvā gārhapatye 'bhiceruḥ* [10,1,18.] *rājasūyenejāno nābhicaritavai* [TBR. 1,7,7,5.] [1,5,1.] *prāṇam* [2,2,1,7.] [TS. 2,2,3,2.] [ŚAT. BR. 1,2,1,7.] [5,5,5,14.] [11,1,6,12.] [KĀTY. ŚR. 2,4,28.] [3,5,14.] [22,3,1.] [11,24.] [27.] [33.] [23,5,24.] [LĀṬY. 3,5,23.] *abhicaran* [YĀJÑ. 1,294.] [3,289.] *viprāyābhicaranyathā* [BHĀG. P. 3,19,13.] Vgl. *kṛtyā*, чародѣи, чаровати, очаровати.
+  <sub>DCS 169 · attested</sub>
+
+**3)** — 3) besitzen: *saiṣā hi māgadhī nāma vasostasya — pūrvābhicaritā*
+[R. 1,34,10.] Statt dessen
+[GORR. 1,35,10] : *pūrvamadhyāsitā tena* .
+
+- **RU:** — 3) обладать: *saiṣā hi māgadhī nāma vasostasya — pūrvābhicaritā*
+[R. 1,34,10.] Statt dessen
+[GORR. 1,35,10] : *pūrvamadhyāsitā tena* .
+- **EN:** — 3) to possess: *saiṣā hi māgadhī nāma vasostasya — pūrvābhicaritā* [R. 1,34,10.] Instead of this [GORR. 1,35,10] : *pūrvamadhyāsitā tena* .
+  <sub>DCS 169 · attested</sub>
+
+**4)** — Vgl. *abhicara* fgg.
+
+- **RU:** — Vgl. *abhicara* fgg.
+- **EN:** — Vgl. *abhicara* fgg.
+  <sub>DCS 169 · attested</sub>

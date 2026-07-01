@@ -1,0 +1,22 @@
+## pratyabhicar
+
+`car~~h0_11_pratya_bi`
+
+
+**1)** — *pratyabhi* gegen Jmd zaubern: *prati tamabhi cara yo3 smāndveṣṭi*
+[AV. 2,11,3.] *na ha vai taṃ kaścana stṛṇute ya etaiḥ pratyabhicarati*
+[ŚĀṄKH. ŚR. 14,22,22.]
+
+- **RU:** — *pratyabhi* колдовать против кого-л.: *prati tamabhi cara yo3 smāndveṣṭi*
+[AV. 2,11,3.] *na ha vai taṃ kaścana stṛṇute ya etaiḥ pratyabhicarati*
+[ŚĀṄKH. ŚR. 14,22,22.]
+- **EN:** *pratyabhi* to work magic against someone: *prati tamabhi cara yo3 smāndveṣṭi*
+[AV. 2,11,3.] *na ha vai taṃ kaścana stṛṇute ya etaiḥ pratyabhicarati*
+[ŚĀṄKH. ŚR. 14,22,22.]
+  <sub>DCS 0 · attested</sub>
+
+**note)** — Vgl. *pratyabhicaraṇa* .
+
+- **RU:** — Vgl. *pratyabhicaraṇa* .
+- **EN:** Vgl. *pratyabhicaraṇa*.
+  <sub>DCS 0 · attested</sub>

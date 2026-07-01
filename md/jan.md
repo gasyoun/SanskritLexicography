@@ -1,0 +1,2725 @@
+# jan
+
+_PWG article — 38 sub-card(s), 254 sense(s) · RU 120/254 · EN 213/254_
+
+## jan
+
+`jan~~h0_00_pwg00`
+
+
+**I.1a)** *jan*¦ I. trans.
+ 1) Präsensformen:
+ a) *janāmi, janāmasi, ajanam, ajanan*; med. *janata, ajananta*; nur in der älteren Sprache.
+- **EN:** *jan* I. trans.
+1) Present forms:
+a) *janāmi, janāmasi, ajanam, ajanan*; med. *janata, ajananta*; only in the older language.
+
+**I.1b)** — b) *jajanti*
+[DHĀTUP. 25,24.]
+[P. 6,1,192.] conj. *jajanat (indram)* Sch., *jajanam (indram)*
+[7,4,78], Sch. *jajñiṣe, jajñidhve*
+[VOP. 10,7.] [9,39];
+vgl. u. II, 2 und unter — *vyati* .
+
+- **RU:** — b) *jajanti*
+[DHĀTUP. 25,24.]
+[P. 6,1,192.] conj. *jajanat (indram)* Sch., *jajanam (indram)*
+[7,4,78], Sch. *jajñiṣe, jajñidhve*
+[VOP. 10,7.] [9,39];
+vgl. u. II, 2 и под — *vyati*.
+- **EN:** — b) *jajanti*
+[DHĀTUP. 25,24.]
+[P. 6,1,192.] conj. *jajanat (indram)* Sch., *jajanam (indram)*
+[7,4,78], Sch. *jajñiṣe, jajñidhve*
+[VOP. 10,7.] [9,39];
+vgl. u. II, 2 and under — *vyati*.
+  <sub>DCS 9250 · attested</sub>
+
+**I.1c)** — c) *jāyate* (vgl. u. simpl., *pra, vi* und *sam*), ep. auch *˚ti* .
+
+- **RU:** — c) *jāyate* (vgl. u. simpl., *pra, vi* und *sam*), ep. также *˚ti*.
+- **EN:** — c) *jāyate* (vgl. u. simpl., *pra, vi* and *sam*), epic also *˚ti*.
+  <sub>DCS 9250 · attested</sub>
+
+**I.2)** — 2) allgemeine Formen: *jajāna, jajñatus, jajñus*
+[P. 6,4,98.] *jajanus* (ved.); *jajñe, jajñivaṃs; janiṣyati, ˚te*, ep. *(pra) jāsyati* u. s. w.; *janiṣṭām*
+2. du. aor., *ajaniṣṭa*
+3. sg. aor.; *ajani* die pass. Form in der Bed. zeugte
+[ṚV. 2,34,2.] *janitos* (
+[P. 3,4,16]), *janitvī*
+[ṚV. 10,65,7.]
+
+- **RU:** — 2) Общие формы: *jajāna, jajñatus, jajñus*
+[P. 6,4,98.] *jajanus* (ved.); *jajñe, jajñivaṃs; janiṣyati, ˚te*, ep. *(pra) jāsyati* u. s. w.; *janiṣṭām*
+2. du. aor., *ajaniṣṭa*
+3. sg. aor.; *ajani* pass. форма в Bed. зачал
+[ṚV. 2,34,2.] *janitos* (
+[P. 3,4,16]), *janitvī*
+[ṚV. 10,65,7.]
+- **EN:** — 2) general forms: *jajāna, jajñatus, jajñus*
+[P. 6,4,98.] *jajanus* (ved.); *jajñe, jajñivaṃs; janiṣyati, ˚te*, epic *(pra) jāsyati* u. s. w.; *janiṣṭām*
+2. du. aor., *ajaniṣṭa*
+3. sg. aor.; *ajani* the pass. form in the Bed. "begot"
+[ṚV. 2,34,2.] *janitos* (
+[P. 3,4,16]), *janitvī*
+[ṚV. 10,65,7.]
+  <sub>DCS 9250 · attested</sub>
+
+**I.3)** — 3) caus. *janayati*
+[DHĀTUP. 19,63.]
+[VOP. 18,22.] *˚te; ajījanat, jījanam, ajījane, jījananta; janayāṃ cakāra* und *cakre; janayitavai*
+([ŚAT. BR. 14,9,4,13]). Nach
+[P. 1,3,86] und
+[VOP. 22,2] caus. stets act., aber dieses gilt nur für die spätere ungebundene Rede.
+
+- **RU:** — 3) caus. *janayati*
+[DHĀTUP. 19,63.]
+[VOP. 18,22.] *˚te; ajījanat, jījanam, ajījane, jījananta; janayāṃ cakāra* und *cakre; janayitavai*
+([ŚAT. BR. 14,9,4,13]). По [P. 1,3,86] и [VOP. 22,2] caus. всегда act., однако это относится лишь к позднейшей прозе.
+- **EN:** — 3) caus. *janayati*
+[DHĀTUP. 19,63.]
+[VOP. 18,22.] *˚te; ajījanat, jījanam, ajījane, jījananta; janayāṃ cakāra* and *cakre; janayitavai*
+([ŚAT. BR. 14,9,4,13]). After
+[P. 1,3,86] and
+[VOP. 22,2] caus. always act., but this holds only for the later unbound speech (prose).
+  <sub>DCS 9250 · attested</sub>
+
+**1)** 1) zeugen, gebären; erzeugen, hervorbringen, verursachen, gignere: *sadyaḥ pravītā vṛṣaṇaṃ jajāna*
+[ṚV. 3,29,3.] *yathā putraṃ janāditi*
+[AV. 6,84,3.] *prajāṃ janaya patye asmai*
+[14,2,24.] *ya eva māmajījanata*
+[ŚAT. BR. 1,8,1,8.] *māmajījanathāḥ*
+[9.] *uttānāyāmajanayatsuṣūtam*
+[ṚV. 2,10,3.] *ajanayo maruto vakṣaṇābhyo diva ā vakṣaṇābhyaḥ*
+[1,134,4.] *agniṃ naro janayata*
+[3,29,5.] *uta sma yaṃ śiśuṃ yathā navaṃ janiṣṭāraṇī*
+[5,9,3.] *yo aśmanorantaragniṃ jajāna*
+[2,12,3.] [10,7,5.] *rodasī*
+[1,160,4.] *bhuvanā*
+[2,35,2.] [40,5.] *didyuto divaḥ*
+[13,7.] *svaḥ*
+[3,61,4.] [4,40,2.] *daivyāni vratāni*
+[7,75,3.] [ŚAT. BR. 2,2,4,3.] [1,8,1,8.] [9.] [14,9,4,27.] *bhrātṛvyam*
+[TS. 2,2,10,5.] — *devi putrān janiṣyasi*
+[MBH. 1,2770.] *manasedaṃ jajāna*
+[BHĀG. P. 5,7,13.] *jamadagniṃ tataḥ putraṃ jajñe sā*
+[MBH. 3,11067] (S. 571). [1,2627.] [R. 3,20,22]. *caidyoparicarājjajñe girikā sapta mānavān*
+[HARIV. 1805.] *(saḥ) pumāṃsaṃ jāyate putram*
+[CARAṆAVY.] in [Ind. St. 3,282,9.] *bhāsī bhāsānajāyata*
+[R. 3,20,17.] *yaḥ pāṇḍum — ajījanat*
+[MBH. 1,2213.]
+[R. 1,16,8.]
+[ŚĀK. 71,12.] *janayitvā sutaṃ tasyām*
+[M. 3,17.] [10,20.] *yadanyagoṣu vṛṣabho vatsānāṃ janayecchatam*
+[9,50.] [MBH. 1,2772.] [BHĀG. P. 3,12,54.] *ṛṣim* — *bhruvo 'ntare janayate — prabhuḥ*
+[HARIV. 11800.] *janito brāhmaṇyāṃ vṛṣalena yaḥ*
+[AK. 2,10,4.] *kanyā tu yaṃ putraṃ janayedrahaḥ*
+[M. 9,172.]
+[MBH. 1,2621.] [4294.] [2,2598.]
+[R. 1,19,3.] [39,8.] [3,20,15. fgg.]
+[RAGH. 8,28.]
+[PAÑCAT. I,118.] [218,22.] *śūdrādāyogavaṃ vaiśyā janayāmāsa vai sutam*
+[YĀJÑ. 1,94.] *putram — matto vai janayiṣyasi*
+[R. 1,46,6.] *jāyā janayate putram*
+[MBH. 1,3104.] *na hi tvaṃ janito mayā* (_f._)
+[HARIV. 9238.] *sa tu śabdo divaṃ stabdhvā pratiśabdamajījanat*
+[ARJ. 6,13.] *ātmā hi janayatyeṣāṃ karmayogaṃ śarīriṇām*
+[M. 12,119.] *mahāghoraṃ prajānāṃ janayanbhayam*
+[MBH. 2,2694.] *pratyayam*
+[R. 1,1,64.] *prītim*
+[2,95,16.] *saṃkrośaṃ rāghavasya vivāsanam*
+[58,26.] *janayati mama cedaṃ kutsitaṃ karma lajjām*
+[MṚCCH. 64,14.] [HIT. I,172.] [RAGH. ed. Calc. 1,77.] [ŚĀK. 29.] [38,7.] [VID. 150.] *janaya radakhaṇḍanam*
+[GĪT. 10,3.] *devadānavayakṣāṇāṃ bhayaṃ janayate mahat*
+[MBH. 3,12875.] *kathāpratigraho vīra śraddhāṃ janayate śubhām*
+[8373.] *lobho janayate tṛṣām*
+[HIT. I,133.] *reṇurjanitastena*
+[MBH. 4,1236.] *prahārajanitā vyathā*
+[PAÑCAT. V,47.] [MEGH. 71.] [87.] [ŚĀK. 78.] [14,19.] *janitātyarthānurāgā yoṣit = vanitā*
+[AK. 3,4,14,76.] Lob, Andacht, Lied u. s. w. erzeugen: *stomamagnaye jījanam*
+[ṚV. 7,15,4.] *brahmāṇi*
+[22,9.] *hṛdā matiṃ janaye cārumagnaye*
+[10,91,14.] *janāmi suṣṭutim*
+[8,43,2.] [3,2,1.] geboren werden lassen: *prajāpatirjanayati prajā imāḥ*
+[AV. 7,19,1.] *goṣṭhe no gā janaya yoniṣu prajāḥ*
+[13,1,19.] *janayati nṛpameko 'pi (grahaḥ)*
+[VARĀH. BṚH. 20] ([19),2. 14,1.]
+- **EN:** 1) "to beget, to bear/give birth to; to engender, bring forth, produce, cause, gignere": *sadyaḥ pravītā vṛṣaṇaṃ jajāna*
+[ṚV. 3,29,3.] *yathā putraṃ janāditi*
+[AV. 6,84,3.] *prajāṃ janaya patye asmai*
+[14,2,24.] *ya eva māmajījanata*
+[ŚAT. BR. 1,8,1,8.] *māmajījanathāḥ*
+[9.] *uttānāyāmajanayatsuṣūtam*
+[ṚV. 2,10,3.] *ajanayo maruto vakṣaṇābhyo diva ā vakṣaṇābhyaḥ*
+[1,134,4.] *agniṃ naro janayata*
+[3,29,5.] *uta sma yaṃ śiśuṃ yathā navaṃ janiṣṭāraṇī*
+[5,9,3.] *yo aśmanorantaragniṃ jajāna*
+[2,12,3.] [10,7,5.] *rodasī*
+[1,160,4.] *bhuvanā*
+[2,35,2.] [40,5.] *didyuto divaḥ*
+[13,7.] *svaḥ*
+[3,61,4.] [4,40,2.] *daivyāni vratāni*
+[7,75,3.] [ŚAT. BR. 2,2,4,3.] [1,8,1,8.] [9.] [14,9,4,27.] *bhrātṛvyam*
+[TS. 2,2,10,5.] — *devi putrān janiṣyasi*
+[MBH. 1,2770.] *manasedaṃ jajāna*
+[BHĀG. P. 5,7,13.] *jamadagniṃ tataḥ putraṃ jajñe sā*
+[MBH. 3,11067] (S. 571). [1,2627.] [R. 3,20,22]. *caidyoparicarājjajñe girikā sapta mānavān*
+[HARIV. 1805.] *(saḥ) pumāṃsaṃ jāyate putram*
+[CARAṆAVY.] in [Ind. St. 3,282,9.] *bhāsī bhāsānajāyata*
+[R. 3,20,17.] *yaḥ pāṇḍum — ajījanat*
+[MBH. 1,2213.]
+[R. 1,16,8.]
+[ŚĀK. 71,12.] *janayitvā sutaṃ tasyām*
+[M. 3,17.] [10,20.] *yadanyagoṣu vṛṣabho vatsānāṃ janayecchatam*
+[9,50.] [MBH. 1,2772.] [BHĀG. P. 3,12,54.] *ṛṣim* — *bhruvo 'ntare janayate — prabhuḥ*
+[HARIV. 11800.] *janito brāhmaṇyāṃ vṛṣalena yaḥ*
+[AK. 2,10,4.] *kanyā tu yaṃ putraṃ janayedrahaḥ*
+[M. 9,172.]
+[MBH. 1,2621.] [4294.] [2,2598.]
+[R. 1,19,3.] [39,8.] [3,20,15. fgg.]
+[RAGH. 8,28.]
+[PAÑCAT. I,118.] [218,22.] *śūdrādāyogavaṃ vaiśyā janayāmāsa vai sutam*
+[YĀJÑ. 1,94.] *putram — matto vai janayiṣyasi*
+[R. 1,46,6.] *jāyā janayate putram*
+[MBH. 1,3104.] *na hi tvaṃ janito mayā* (_f._)
+[HARIV. 9238.] *sa tu śabdo divaṃ stabdhvā pratiśabdamajījanat*
+[ARJ. 6,13.] *ātmā hi janayatyeṣāṃ karmayogaṃ śarīriṇām*
+[M. 12,119.] *mahāghoraṃ prajānāṃ janayanbhayam*
+[MBH. 2,2694.] *pratyayam*
+[R. 1,1,64.] *prītim*
+[2,95,16.] *saṃkrośaṃ rāghavasya vivāsanam*
+[58,26.] *janayati mama cedaṃ kutsitaṃ karma lajjām*
+[MṚCCH. 64,14.] [HIT. I,172.] [RAGH. ed. Calc. 1,77.] [ŚĀK. 29.] [38,7.] [VID. 150.] *janaya radakhaṇḍanam*
+[GĪT. 10,3.] *devadānavayakṣāṇāṃ bhayaṃ janayate mahat*
+[MBH. 3,12875.] *kathāpratigraho vīra śraddhāṃ janayate śubhām*
+[8373.] *lobho janayate tṛṣām*
+[HIT. I,133.] *reṇurjanitastena*
+[MBH. 4,1236.] *prahārajanitā vyathā*
+[PAÑCAT. V,47.] [MEGH. 71.] [87.] [ŚĀK. 78.] [14,19.] *janitātyarthānurāgā yoṣit = vanitā*
+[AK. 3,4,14,76.] praise, devotion, song u. s. w. "to generate": *stomamagnaye jījanam*
+[ṚV. 7,15,4.] *brahmāṇi*
+[22,9.] *hṛdā matiṃ janaye cārumagnaye*
+[10,91,14.] *janāmi suṣṭutim*
+[8,43,2.] [3,2,1.] "to cause to be born": *prajāpatirjanayati prajā imāḥ*
+[AV. 7,19,1.] *goṣṭhe no gā janaya yoniṣu prajāḥ*
+[13,1,19.] *janayati nṛpameko 'pi (grahaḥ)*
+[VARĀH. BṚH. 20] ([19),2. 14,1.]
+
+**2)** — 2) bestimmen zu, machen zu; schaffen, verschaffen: *rāye nu yaṃ jajñatū rodasīme*
+[ṚV. 7,90,3.] *sajūstatakṣurindraṃ jajanuśca rājase*
+[8,86,10.] *ruce jananta sūryam*
+[9,23,2.] [VS. 19,94.] *yasmā u devaḥ savitā jajāna*
+[10,31,4.] *tasmā araṃ gamāma vo yasya kṣayāya jinvatha . āpo janayathā ca naḥ*
+[9,3.] *devamādevaṃ janata pracetasam*
+[4,1,1.] [2,13,5.] *taṃ tvājananta mātaraḥ kaviṃ devāso aṅgiraḥ . havyavāhamamartyam*
+[8,102,17.] [3,49,1.] *rājānamiryaṃ janāya janayatha*
+[5,58,4.] *tritāya gā ajanayannaheradhi*
+[10,48,2.] *(dātram) tadrodasī janayataṃ jaritre*
+[1,185,3.]
+
+- **RU:** — 2) предназначать к, делать чем-л.; создавать, доставлять: *rāye nu yaṃ jajñatū rodasīme*
+[ṚV. 7,90,3.] *sajūstatakṣurindraṃ jajanuśca rājase*
+[8,86,10.] *ruce jananta sūryam*
+[9,23,2.] [VS. 19,94.] *yasmā u devaḥ savitā jajāna*
+[10,31,4.] *tasmā araṃ gamāma vo yasya kṣayāya jinvatha . āpo janayathā ca naḥ*
+[9,3.] *devamādevaṃ janata pracetasam*
+[4,1,1.] [2,13,5.] *taṃ tvājananta mātaraḥ kaviṃ devāso aṅgiraḥ . havyavāhamamartyam*
+[8,102,17.] [3,49,1.] *rājānamiryaṃ janāya janayatha*
+[5,58,4.] *tritāya gā ajanayannaheradhi*
+[10,48,2.] *(dātram) tadrodasī janayataṃ jaritre*
+[1,185,3.]
+- **EN:** — 2) "to destine/appoint for, to make into; to create, procure": *rāye nu yaṃ jajñatū rodasīme*
+[ṚV. 7,90,3.] *sajūstatakṣurindraṃ jajanuśca rājase*
+[8,86,10.] *ruce jananta sūryam*
+[9,23,2.] [VS. 19,94.] *yasmā u devaḥ savitā jajāna*
+[10,31,4.] *tasmā araṃ gamāma vo yasya kṣayāya jinvatha . āpo janayathā ca naḥ*
+[9,3.] *devamādevaṃ janata pracetasam*
+[4,1,1.] [2,13,5.] *taṃ tvājananta mātaraḥ kaviṃ devāso aṅgiraḥ . havyavāhamamartyam*
+[8,102,17.] [3,49,1.] *rājānamiryaṃ janāya janayatha*
+[5,58,4.] *tritāya gā ajanayannaheradhi*
+[10,48,2.] *(dātram) tadrodasī janayataṃ jaritre*
+[1,185,3.]
+  <sub>DCS 9250 · attested</sub>
+
+**II.1a)** — II. intrans.
+ 1) Präsensformen:
+ a) *janiṣe, janiṣva, janidhve, janidhvam*
+[P. 7,2,78.] *janamāna*
+[ṚV. 8,88,3.] *ajanata*
+[4,5,5.] *ajñata* in den
+[BRĀHMAṆA], nach
+[P. 2,4,80] aor.
+
+- **RU:** — II. intrans.
+ 1) Формы настоящего времени:
+ a) *janiṣe, janiṣva, janidhve, janidhvam*
+[P. 7,2,78.] *janamāna*
+[ṚV. 8,88,3.] *ajanata*
+[4,5,5.] *ajñata* в [BRĀHMAṆA], по [P. 2,4,80] aor.
+- **EN:** — II. intrans.
+1) Present forms:
+a) *janiṣe, janiṣva, janidhve, janidhvam*
+[P. 7,2,78.] *janamāna*
+[ṚV. 8,88,3.] *ajanata*
+[4,5,5.] *ajñata* in the
+[BRĀHMAṆA], after
+[P. 2,4,80] aor.
+  <sub>DCS 9250 · attested</sub>
+
+**I (грамматическая рубрика))** *jan*¦ I. trans.
+
+- **RU:** *jan*¦ I. trans.
+  <sub>DCS 9250 · attested</sub>
+
+**1) Präsensformen)** 1) Präsensformen:
+
+- **RU:** 1) Формы настоящего времени:
+  <sub>DCS 9250 · attested</sub>
+
+**1a)** a) *janāmi, janāmasi, ajanam, ajanan*; med. *janata, ajananta*; nur in der älteren Sprache.
+
+- **RU:** a) *janāmi, janāmasi, ajanam, ajanan*; med. *janata, ajananta*; только в более древнем языке.
+  <sub>DCS 9250 · attested</sub>
+
+**I.1) зачинать, рождать; производить, порождать, причинять)** 1) zeugen, gebären; erzeugen, hervorbringen, verursachen, gignere: *sadyaḥ pravītā vṛṣaṇaṃ jajāna*
+[ṚV. 3,29,3.] *yathā putraṃ janāditi*
+[AV. 6,84,3.] *prajāṃ janaya patye asmai*
+[14,2,24.] *ya eva māmajījanata*
+[ŚAT. BR. 1,8,1,8.] *māmajījanathāḥ*
+[9.] *uttānāyāmajanayatsuṣūtam*
+[ṚV. 2,10,3.] *ajanayo maruto vakṣaṇābhyo diva ā vakṣaṇābhyaḥ*
+[1,134,4.] *agniṃ naro janayata*
+[3,29,5.] *uta sma yaṃ śiśuṃ yathā navaṃ janiṣṭāraṇī*
+[5,9,3.] *yo aśmanorantaragniṃ jajāna*
+[2,12,3.] [10,7,5.] *rodasī*
+[1,160,4.] *bhuvanā*
+[2,35,2.] [40,5.] *didyuto divaḥ*
+[13,7.] *svaḥ*
+[3,61,4.] [4,40,2.] *daivyāni vratāni*
+[7,75,3.] [ŚAT. BR. 2,2,4,3.] [1,8,1,8.] [9.] [14,9,4,27.] *bhrātṛvyam*
+[TS. 2,2,10,5.] — *devi putrān janiṣyasi*
+[MBH. 1,2770.] *manasedaṃ jajāna*
+[BHĀG. P. 5,7,13.] *jamadagniṃ tataḥ putraṃ jajñe sā*
+[MBH. 3,11067] (S. 571). [1,2627.] [R. 3,20,22]. *caidyoparicarājjajñe girikā sapta mānavān*
+[HARIV. 1805.] *(saḥ) pumāṃsaṃ jāyate putram*
+[CARAṆAVY.] in [Ind. St. 3,282,9.] *bhāsī bhāsānajāyata*
+[R. 3,20,17.] *yaḥ pāṇḍum — ajījanat*
+[MBH. 1,2213.]
+[R. 1,16,8.]
+[ŚĀK. 71,12.] *janayitvā sutaṃ tasyām*
+[M. 3,17.] [10,20.] *yadanyagoṣu vṛṣabho vatsānāṃ janayecchatam*
+[9,50.] [MBH. 1,2772.] [BHĀG. P. 3,12,54.] *ṛṣim* — *bhruvo 'ntare janayate — prabhuḥ*
+[HARIV. 11800.] *janito brāhmaṇyāṃ vṛṣalena yaḥ*
+[AK. 2,10,4.] *kanyā tu yaṃ putraṃ janayedrahaḥ*
+[M. 9,172.]
+[MBH. 1,2621.] [4294.] [2,2598.]
+[R. 1,19,3.] [39,8.] [3,20,15. fgg.]
+[RAGH. 8,28.]
+[PAÑCAT. I,118.] [218,22.] *śūdrādāyogavaṃ vaiśyā janayāmāsa vai sutam*
+[YĀJÑ. 1,94.] *putram — matto vai janayiṣyasi*
+[R. 1,46,6.] *jāyā janayate putram*
+[MBH. 1,3104.] *na hi tvaṃ janito mayā* (_f._)
+[HARIV. 9238.] *sa tu śabdo divaṃ stabdhvā pratiśabdamajījanat*
+[ARJ. 6,13.] *ātmā hi janayatyeṣāṃ karmayogaṃ śarīriṇām*
+[M. 12,119.] *mahāghoraṃ prajānāṃ janayanbhayam*
+[MBH. 2,2694.] *pratyayam*
+[R. 1,1,64.] *prītim*
+[2,95,16.] *saṃkrośaṃ rāghavasya vivāsanam*
+[58,26.] *janayati mama cedaṃ kutsitaṃ karma lajjām*
+[MṚCCH. 64,14.] [HIT. I,172.] [RAGH. ed. Calc. 1,77.] [ŚĀK. 29.] [38,7.] [VID. 150.] *janaya radakhaṇḍanam*
+[GĪT. 10,3.] *devadānavayakṣāṇāṃ bhayaṃ janayate mahat*
+[MBH. 3,12875.] *kathāpratigraho vīra śraddhāṃ janayate śubhām*
+[8373.] *lobho janayate tṛṣām*
+[HIT. I,133.] *reṇurjanitastena*
+[MBH. 4,1236.] *prahārajanitā vyathā*
+[PAÑCAT. V,47.] [MEGH. 71.] [87.] [ŚĀK. 78.] [14,19.] *janitātyarthānurāgā yoṣit = vanitā*
+[AK. 3,4,14,76.] Lob, Andacht, Lied u. s. w. erzeugen: *stomamagnaye jījanam*
+[ṚV. 7,15,4.] *brahmāṇi*
+[22,9.] *hṛdā matiṃ janaye cārumagnaye*
+[10,91,14.] *janāmi suṣṭutim*
+[8,43,2.] [3,2,1.] geboren werden lassen: *prajāpatirjanayati prajā imāḥ*
+[AV. 7,19,1.] *goṣṭhe no gā janaya yoniṣu prajāḥ*
+[13,1,19.] *janayati nṛpameko 'pi (grahaḥ)*
+[VARĀH. BṚH. 20] ([19),2. 14,1.]
+
+- **RU:** 1) зачинать, рождать; производить, порождать, вызывать, gignere: *sadyaḥ pravītā vṛṣaṇaṃ jajāna*
+[ṚV. 3,29,3.] *yathā putraṃ janāditi*
+[AV. 6,84,3.] *prajāṃ janaya patye asmai*
+[14,2,24.] *ya eva māmajījanata*
+[ŚAT. BR. 1,8,1,8.] *māmajījanathāḥ*
+[9.] *uttānāyāmajanayatsuṣūtam*
+[ṚV. 2,10,3.] *ajanayo maruto vakṣaṇābhyo diva ā vakṣaṇābhyaḥ*
+[1,134,4.] *agniṃ naro janayata*
+[3,29,5.] *uta sma yaṃ śiśuṃ yathā navaṃ janiṣṭāraṇī*
+[5,9,3.] *yo aśmanorantaragniṃ jajāna*
+[2,12,3.] [10,7,5.] *rodasī*
+[1,160,4.] *bhuvanā*
+[2,35,2.] [40,5.] *didyuto divaḥ*
+[13,7.] *svaḥ*
+[3,61,4.] [4,40,2.] *daivyāni vratāni*
+[7,75,3.] [ŚAT. BR. 2,2,4,3.] [1,8,1,8.] [9.] [14,9,4,27.] *bhrātṛvyam*
+[TS. 2,2,10,5.] — *devi putrān janiṣyasi*
+[MBH. 1,2770.] *manasedaṃ jajāna*
+[BHĀG. P. 5,7,13.] *jamadagniṃ tataḥ putraṃ jajñe sā*
+[MBH. 3,11067] (S. 571). [1,2627.] [R. 3,20,22]. *caidyoparicarājjajñe girikā sapta mānavān*
+[HARIV. 1805.] *(saḥ) pumāṃsaṃ jāyate putram*
+[CARAṆAVY.] в [Ind. St. 3,282,9.] *bhāsī bhāsānajāyata*
+[R. 3,20,17.] *yaḥ pāṇḍum — ajījanat*
+[MBH. 1,2213.]
+[R. 1,16,8.]
+[ŚĀK. 71,12.] *janayitvā sutaṃ tasyām*
+[M. 3,17.] [10,20.] *yadanyagoṣu vṛṣabho vatsānāṃ janayecchatam*
+[9,50.] [MBH. 1,2772.] [BHĀG. P. 3,12,54.] *ṛṣim* — *bhruvo 'ntare janayate — prabhuḥ*
+[HARIV. 11800.] *janito brāhmaṇyāṃ vṛṣalena yaḥ*
+[AK. 2,10,4.] *kanyā tu yaṃ putraṃ janayedrahaḥ*
+[M. 9,172.]
+[MBH. 1,2621.] [4294.] [2,2598.]
+[R. 1,19,3.] [39,8.] [3,20,15. fgg.]
+[RAGH. 8,28.]
+[PAÑCAT. I,118.] [218,22.] *śūdrādāyogavaṃ vaiśyā janayāmāsa vai sutam*
+[YĀJÑ. 1,94.] *putram — matto vai janayiṣyasi*
+[R. 1,46,6.] *jāyā janayate putram*
+[MBH. 1,3104.] *na hi tvaṃ janito mayā* (_f._)
+[HARIV. 9238.] *sa tu śabdo divaṃ stabdhvā pratiśabdamajījanat*
+[ARJ. 6,13.] *ātmā hi janayatyeṣāṃ karmayogaṃ śarīriṇām*
+[M. 12,119.] *mahāghoraṃ prajānāṃ janayanbhayam*
+[MBH. 2,2694.] *pratyayam*
+[R. 1,1,64.] *prītim*
+[2,95,16.] *saṃkrośaṃ rāghavasya vivāsanam*
+[58,26.] *janayati mama cedaṃ kutsitaṃ karma lajjām*
+[MṚCCH. 64,14.] [HIT. I,172.] [RAGH. ed. Calc. 1,77.] [ŚĀK. 29.] [38,7.] [VID. 150.] *janaya radakhaṇḍanam*
+[GĪT. 10,3.] *devadānavayakṣāṇāṃ bhayaṃ janayate mahat*
+[MBH. 3,12875.] *kathāpratigraho vīra śraddhāṃ janayate śubhām*
+[8373.] *lobho janayate tṛṣām*
+[HIT. I,133.] *reṇurjanitastena*
+[MBH. 4,1236.] *prahārajanitā vyathā*
+[PAÑCAT. V,47.] [MEGH. 71.] [87.] [ŚĀK. 78.] [14,19.] *janitātyarthānurāgā yoṣit = vanitā*
+[AK. 3,4,14,76.] хвалу, молитву, песнь u. s. w. порождать: *stomamagnaye jījanam*
+[ṚV. 7,15,4.] *brahmāṇi*
+[22,9.] *hṛdā matiṃ janaye cārumagnaye*
+[10,91,14.] *janāmi suṣṭutim*
+[8,43,2.] [3,2,1.] дать родиться, заставить родиться: *prajāpatirjanayati prajā imāḥ*
+[AV. 7,19,1.] *goṣṭhe no gā janaya yoniṣu prajāḥ*
+[13,1,19.] *janayati nṛpameko 'pi (grahaḥ)*
+[VARĀH. BṚH. 20] ([19),2. 14,1.]
+  <sub>DCS 9250 · attested</sub>
+
+## jan
+
+`jan~~h0_00_pwg01`
+
+
+**1.b)** — b) *jāyate*
+[DHĀTUP. 26,40.]
+[P. 7,3,79.]
+[VOP. 11,6.] [8,70.] [128.] *jāyamāna*; ep. auch *jāyati* .
+
+- **RU:** — b) *jāyate*
+[DHĀTUP. 26,40.]
+[P. 7,3,79.]
+[VOP. 11,6.] [8,70.] [128.] *jāyamāna*; ep. также *jāyati*.
+- **EN:** — b) *jāyate* [DHĀTUP. 26,40.] [P. 7,3,79.] [VOP. 11,6.] [8,70.] [128.] *jāyamāna*; epic also *jāyati*.
+  <sub>DCS 9250 · attested</sub>
+
+**1.c)** — c) *janyate*
+[P. 6,4,43.] Nicht zu belegen.
+
+- **RU:** — c) *janyate*
+[P. 6,4,43.] Не поддаётся подтверждению.
+- **EN:** — c) *janyate* [P. 6,4,43.] Not attestable.
+  <sub>DCS 9250 · attested</sub>
+
+**2 general forms)** — 2) allgemeine Formen: *ajani (jani, jāni*
+[ṚV. 8,7,36]) und *ajaniṣṭa*
+[P. 3,1,61.] [7,3,35.]
+[VOP. 11,7.] *janiṣṭhās; jajñe, jajñiṣe, jajñire*
+[P. 6,4,98.] *jajñus* (
+[MBH. 3,14387]), *jajñāna, jajñivaṃs; janiṣyate, ˚ti* (ep.); *janitā*; (*ā, ud*) *janiṣīṣṭa; jāta* .
+
+- **RU:** — 2) Общие формы: *ajani (jani, jāni*
+[ṚV. 8,7,36]) und *ajaniṣṭa*
+[P. 3,1,61.] [7,3,35.]
+[VOP. 11,7.] *janiṣṭhās; jajñe, jajñiṣe, jajñire*
+[P. 6,4,98.] *jajñus* (
+[MBH. 3,14387]), *jajñāna, jajñivaṃs; janiṣyate, ˚ti* (ep.); *janitā*; (*ā, ud*) *janiṣīṣṭa; jāta*.
+- **EN:** — 2) general forms: *ajani (jani, jāni* [ṚV. 8,7,36]) and *ajaniṣṭa* [P. 3,1,61.] [7,3,35.] [VOP. 11,7.] *janiṣṭhās; jajñe, jajñiṣe, jajñire* [P. 6,4,98.] *jajñus* ([MBH. 3,14387]), *jajñāna, jajñivaṃs; janiṣyate, ˚ti* (epic); *janitā*; (*ā, ud*) *janiṣīṣṭa; jāta*.
+  <sub>DCS 9250 · attested</sub>
+
+**II.1)** 1) gezeugt —, geboren werden; hervorgebracht werden, entstehen: *putraḥ*
+[ṚV. 1,31,11.] [5,6.]
+[AIT. BR. 7,14.] *trirha vai puruṣo jāyate*
+[ŚAT. BR. 11,2,1,1.] *ā mātarā huvāno yato jajñiṣe suśevaḥ*
+[ṚV. 7,7,3.] *ādasmādanyo ajaniṣṭa tavyān*
+[5,32,3.] *irā viśvasmai bhuvanāya jāyate*
+[5,83,4.] [1,141,1.] *citraḥ praketo ajaniṣṭa vibhvā*
+[113,1.] *agniḥ*
+[AIT. BR. 1,16.]
+[KĀTY. ŚR. 25,4,2.] *hotājaniṣṭa cetanaḥ*
+[ṚV. 2,5,1.] *ṛtam*
+[1,105,15.] *jajñānaḥ* neugeboren
+[7,98,3.] *jajñānasya brāhmasya sāma* Bez. eines Sāman
+[Ind. St. 3,216.] *jāyasva mriyasva*
+[CHĀND. UP. 5,10,8.] *sā māturudarasthā tu bahūnvarṣagaṇānkila . nivasantī na vai jajñe*
+[HARIV. 1913.] *jāyasva śīghram*
+[1914.] *brāhmādiṣu vivāheṣu — brahmavarcasvinaḥ putrā jāyante*
+[M. 3,39.] *api naḥ sa kule jāyāt*
+[274.] *tasmin* (*aṇḍe*) *jajñe svayaṃ brahmā*
+[1,9.] *vajraprahārātskandasya jajñustatra kumārakāḥ . — kanyāśca jajñire 'sya*
+[MBH. 3,14387. fg.] *putro janiṣyate cātra yuṣmatsvasuḥ*
+[KATHĀS. 6,18.]
+[PAÑCAT. 252,19.] *tasya kanyā — jajñe*
+[PAÑCAT. 259,24.] *savarṇebhyaḥ savarṇāsu jāyante sajātayaḥ (putrāḥ)*
+[YĀJÑ. 1,90.] *yadarthamiha jajñivān*
+[BHĀG. P. 4,23,2.] *janitā viṣṇuyaśaso nāmnā kalkiḥ*
+[1,3,25.] *dāsyāmahaṃ jajñe*
+[7,15,73.] [MBH. 1,4051.] [R. 3,20,29.] [M. 3,174.] *brāhmaṇādvaiśyakanyāyāmambaṣṭho nāma jāyate*
+[10,8.] [MBH. 1,2081.] *kathaṃ kṣatreṣu jāyathāḥ . asyāṃ hi yonau jāyante prāyaśaḥ krūrabuddhayaḥ*
+[3,1395.] *āhiṇḍiko niṣādena vaidehyāmeva jāyate*
+[M. 10,37.] *caṇḍālena — pukkasyāṃ jāyate*
+[38.] *mama vaktrādajāyata*
+[R. 1,16,7.] *gomayādvṛściko jāyate*
+[P. 1,4,30], Sch.
+*vījājjāyanti jantavaḥ*
+[MBH. 12,7751.] [13,3151.] *ādityājjāyate vṛṣṭirvṛṣṭerannaṃ tataḥ prajāḥ*
+[M. 3,76.] [1,75.] [76.] *tasyāṃ visṛjyamānāyāṃ sapta srotāṃsi jajñire*
+[R. 1,44,14.] *utsaḥ, hradaḥ*
+[AV. 6,106,1.] *vyavahāreṇa mitrāṇi jāyante ripavastathā*
+[HIT. I,65.] *aniṣṭādiṣṭalābhe 'pi na gatirjāyate śubhā* 5.
+*kiṃ tena tṛptiryena na jāyate*
+[PAÑCAT. I,327.] *tasya jajñe viniścayaḥ*
+[R. 2,65,15.] *vyāyāmena ca tenāsya jajñe śirasi vedanā*
+[MBH. 3,16748.] *arājake janapade doṣā jāyanti vai sadā*
+[1,1718.] *ṛ ityasya sthāne jāyamāno 'ṇ*
+[P. 1,1,51], Sch.
+*acintito vadho 'jñānāṃ mīnānāmiva jāyate* zu Theil werden
+[PAÑCAT. II,3.] wachsen, von Pflanzen
+[AV. 5,17,16.] [4,1.] [4,19,4.]
+[KĀTY. ŚR. 22,3,2.] *jāyerañchākhāḥ praroheyuḥ palāśāni*
+[ŚAT. BR. 14,9,3,15.]
+[M. 9,38.]
+[VARĀH. BṚH. S. 54,8.] [20.] *ajñata vā asya dantāḥ*
+[AIT. BR. 7,15.] *jāyate svayameva* oder *jāyate* —
+[P. 6,1,195], Sch.
+
+- **RU:** 1) быть зачатым, родиться; быть произведённым, возникать: *putraḥ*
+[ṚV. 1,31,11.] [5,6.]
+[AIT. BR. 7,14.] *trirha vai puruṣo jāyate*
+[ŚAT. BR. 11,2,1,1.] *ā mātarā huvāno yato jajñiṣe suśevaḥ*
+[ṚV. 7,7,3.] *ādasmādanyo ajaniṣṭa tavyān*
+[5,32,3.] *irā viśvasmai bhuvanāya jāyate*
+[5,83,4.] [1,141,1.] *citraḥ praketo ajaniṣṭa vibhvā*
+[113,1.] *agniḥ*
+[AIT. BR. 1,16.]
+[KĀTY. ŚR. 25,4,2.] *hotājaniṣṭa cetanaḥ*
+[ṚV. 2,5,1.] *ṛtam*
+[1,105,15.] *jajñānaḥ* новорождённый
+[7,98,3.] *jajñānasya brāhmasya sāma* Bez. eines Sāman
+[Ind. St. 3,216.] *jāyasva mriyasva*
+[CHĀND. UP. 5,10,8.] *sā māturudarasthā tu bahūnvarṣagaṇānkila . nivasantī na vai jajñe*
+[HARIV. 1913.] *jāyasva śīghram*
+[1914.] *brāhmādiṣu vivāheṣu — brahmavarcasvinaḥ putrā jāyante*
+[M. 3,39.] *api naḥ sa kule jāyāt*
+[274.] *tasmin* (*aṇḍe*) *jajñe svayaṃ brahmā*
+[1,9.] *vajraprahārātskandasya jajñustatra kumārakāḥ . — kanyāśca jajñire 'sya*
+[MBH. 3,14387. fg.] *putro janiṣyate cātra yuṣmatsvasuḥ*
+[KATHĀS. 6,18.]
+[PAÑCAT. 252,19.] *tasya kanyā — jajñe*
+[PAÑCAT. 259,24.] *savarṇebhyaḥ savarṇāsu jāyante sajātayaḥ (putrāḥ)*
+[YĀJÑ. 1,90.] *yadarthamiha jajñivān*
+[BHĀG. P. 4,23,2.] *janitā viṣṇuyaśaso nāmnā kalkiḥ*
+[1,3,25.] *dāsyāmahaṃ jajñe*
+[7,15,73.] [MBH. 1,4051.] [R. 3,20,29.] [M. 3,174.] *brāhmaṇādvaiśyakanyāyāmambaṣṭho nāma jāyate*
+[10,8.] [MBH. 1,2081.] *kathaṃ kṣatreṣu jāyathāḥ . asyāṃ hi yonau jāyante prāyaśaḥ krūrabuddhayaḥ*
+[3,1395.] *āhiṇḍiko niṣādena vaidehyāmeva jāyate*
+[M. 10,37.] *caṇḍālena — pukkasyāṃ jāyate*
+[38.] *mama vaktrādajāyata*
+[R. 1,16,7.] *gomayādvṛściko jāyate*
+[P. 1,4,30], Sch.
+*vījājjāyanti jantavaḥ*
+[MBH. 12,7751.] [13,3151.] *ādityājjāyate vṛṣṭirvṛṣṭerannaṃ tataḥ prajāḥ*
+[M. 3,76.] [1,75.] [76.] *tasyāṃ visṛjyamānāyāṃ sapta srotāṃsi jajñire*
+[R. 1,44,14.] *utsaḥ, hradaḥ*
+[AV. 6,106,1.] *vyavahāreṇa mitrāṇi jāyante ripavastathā*
+[HIT. I,65.] *aniṣṭādiṣṭalābhe 'pi na gatirjāyate śubhā* 5.
+*kiṃ tena tṛptiryena na jāyate*
+[PAÑCAT. I,327.] *tasya jajñe viniścayaḥ*
+[R. 2,65,15.] *vyāyāmena ca tenāsya jajñe śirasi vedanā*
+[MBH. 3,16748.] *arājake janapade doṣā jāyanti vai sadā*
+[1,1718.] *ṛ ityasya sthāne jāyamāno 'ṇ*
+[P. 1,1,51], Sch.
+*acintito vadho 'jñānāṃ mīnānāmiva jāyate* доставаться на долю
+[PAÑCAT. II,3.] расти, о растениях
+[AV. 5,17,16.] [4,1.] [4,19,4.]
+[KĀTY. ŚR. 22,3,2.] *jāyerañchākhāḥ praroheyuḥ palāśāni*
+[ŚAT. BR. 14,9,3,15.]
+[M. 9,38.]
+[VARĀH. BṚH. S. 54,8.] [20.] *ajñata vā asya dantāḥ*
+[AIT. BR. 7,15.] *jāyate svayameva* oder *jāyate* —
+[P. 6,1,195], Sch.
+- **EN:** 1) to be begotten —, to be born; to be brought forth, to arise: *putraḥ* [ṚV. 1,31,11.] [5,6.] [AIT. BR. 7,14.] *trirha vai puruṣo jāyate* [ŚAT. BR. 11,2,1,1.] *ā mātarā huvāno yato jajñiṣe suśevaḥ* [ṚV. 7,7,3.] *ādasmādanyo ajaniṣṭa tavyān* [5,32,3.] *irā viśvasmai bhuvanāya jāyate* [5,83,4.] [1,141,1.] *citraḥ praketo ajaniṣṭa vibhvā* [113,1.] *agniḥ* [AIT. BR. 1,16.] [KĀTY. ŚR. 25,4,2.] *hotājaniṣṭa cetanaḥ* [ṚV. 2,5,1.] *ṛtam* [1,105,15.] *jajñānaḥ* newborn [7,98,3.] *jajñānasya brāhmasya sāma* Bez. of a Sāman [Ind. St. 3,216.] *jāyasva mriyasva* [CHĀND. UP. 5,10,8.] *sā māturudarasthā tu bahūnvarṣagaṇānkila . nivasantī na vai jajñe* [HARIV. 1913.] *jāyasva śīghram* [1914.] *brāhmādiṣu vivāheṣu — brahmavarcasvinaḥ putrā jāyante* [M. 3,39.] *api naḥ sa kule jāyāt* [274.] *tasmin* (*aṇḍe*) *jajñe svayaṃ brahmā* [1,9.] *vajraprahārātskandasya jajñustatra kumārakāḥ . — kanyāśca jajñire 'sya* [MBH. 3,14387. fg.] *putro janiṣyate cātra yuṣmatsvasuḥ* [KATHĀS. 6,18.] [PAÑCAT. 252,19.] *tasya kanyā — jajñe* [PAÑCAT. 259,24.] *savarṇebhyaḥ savarṇāsu jāyante sajātayaḥ (putrāḥ)* [YĀJÑ. 1,90.] *yadarthamiha jajñivān* [BHĀG. P. 4,23,2.] *janitā viṣṇuyaśaso nāmnā kalkiḥ* [1,3,25.] *dāsyāmahaṃ jajñe* [7,15,73.] [MBH. 1,4051.] [R. 3,20,29.] [M. 3,174.] *brāhmaṇādvaiśyakanyāyāmambaṣṭho nāma jāyate* [10,8.] [MBH. 1,2081.] *kathaṃ kṣatreṣu jāyathāḥ . asyāṃ hi yonau jāyante prāyaśaḥ krūrabuddhayaḥ* [3,1395.] *āhiṇḍiko niṣādena vaidehyāmeva jāyate* [M. 10,37.] *caṇḍālena — pukkasyāṃ jāyate* [38.] *mama vaktrādajāyata* [R. 1,16,7.] *gomayādvṛściko jāyate* [P. 1,4,30], Sch. *vījājjāyanti jantavaḥ* [MBH. 12,7751.] [13,3151.] *ādityājjāyate vṛṣṭirvṛṣṭerannaṃ tataḥ prajāḥ* [M. 3,76.] [1,75.] [76.] *tasyāṃ visṛjyamānāyāṃ sapta srotāṃsi jajñire* [R. 1,44,14.] *utsaḥ, hradaḥ* [AV. 6,106,1.] *vyavahāreṇa mitrāṇi jāyante ripavastathā* [HIT. I,65.] *aniṣṭādiṣṭalābhe 'pi na gatirjāyate śubhā* 5. *kiṃ tena tṛptiryena na jāyate* [PAÑCAT. I,327.] *tasya jajñe viniścayaḥ* [R. 2,65,15.] *vyāyāmena ca tenāsya jajñe śirasi vedanā* [MBH. 3,16748.] *arājake janapade doṣā jāyanti vai sadā* [1,1718.] *ṛ ityasya sthāne jāyamāno 'ṇ* [P. 1,1,51], Sch. *acintito vadho 'jñānāṃ mīnānāmiva jāyate* to fall to one's share [PAÑCAT. II,3.] to grow, of plants [AV. 5,17,16.] [4,1.] [4,19,4.] [KĀTY. ŚR. 22,3,2.] *jāyerañchākhāḥ praroheyuḥ palāśāni* [ŚAT. BR. 14,9,3,15.] [M. 9,38.] [VARĀH. BṚH. S. 54,8.] [20.] *ajñata vā asya dantāḥ* [AIT. BR. 7,15.] *jāyate svayameva* or *jāyate* — [P. 6,1,195], Sch.
+  <sub>DCS 9250 · attested</sub>
+
+**II.2)** — 2) wiedergeboren werden: *ekaviṃśatimājātīḥ pāpayoniṣu jāyate*
+[M. 4,166.] *tiryagyonau ca jāyate*
+[4,200.] *patirbhāryāṃ saṃpraviśya garbho bhūtveha jāyate . jāyāyāstaddhi jāyātvaṃ yadasyāṃ jāyate punaḥ ..*
+[9,8.] [11,24.] *jāyate hemakartṛṣu*
+[12,61.] [MBH. 3,530.]
+
+*parivartini saṃsāre mṛtaḥ ko vā na jāyate*
+[HIT. Pr. 13.] *tasmāttvam — śūdrayonau janiṣyasi*
+[MBH. 1,2425.] [3950.] *tataḥ pretaḥ parikliṣṭaḥ paścājjāyati brāhmaṇaḥ*
+[13,5451]; vgl. *punaḥ punarjāyati*
+[14,884.]
+
+- **RU:** — 2) возрождаться: *ekaviṃśatimājātīḥ pāpayoniṣu jāyate*
+[M. 4,166.] *tiryagyonau ca jāyate*
+[4,200.] *patirbhāryāṃ saṃpraviśya garbho bhūtveha jāyate . jāyāyāstaddhi jāyātvaṃ yadasyāṃ jāyate punaḥ ..*
+[9,8.] [11,24.] *jāyate hemakartṛṣu*
+[12,61.] [MBH. 3,530.]
+
+*parivartini saṃsāre mṛtaḥ ko vā na jāyate*
+[HIT. Pr. 13.] *tasmāttvam — śūdrayonau janiṣyasi*
+[MBH. 1,2425.] [3950.] *tataḥ pretaḥ parikliṣṭaḥ paścājjāyati brāhmaṇaḥ*
+[13,5451]; vgl. *punaḥ punarjāyati*
+[14,884.]
+- **EN:** — 2) to be reborn: *ekaviṃśatimājātīḥ pāpayoniṣu jāyate* [M. 4,166.] *tiryagyonau ca jāyate* [4,200.] *patirbhāryāṃ saṃpraviśya garbho bhūtveha jāyate . jāyāyāstaddhi jāyātvaṃ yadasyāṃ jāyate punaḥ ..* [9,8.] [11,24.] *jāyate hemakartṛṣu* [12,61.] [MBH. 3,530.] *parivartini saṃsāre mṛtaḥ ko vā na jāyate* [HIT. Pr. 13.] *tasmāttvam — śūdrayonau janiṣyasi* [MBH. 1,2425.] [3950.] *tataḥ pretaḥ parikliṣṭaḥ paścājjāyati brāhmaṇaḥ* [13,5451]; vgl. *punaḥ punarjāyati* [14,884.]
+  <sub>DCS 9250 · attested</sub>
+
+**II.3)** — 3) werden, sein: *arānna nemiḥ paribhūrajāyathāḥ*
+[ṚV. 1,141,9.] *divā na naktaṃ palito yavājani*
+[144,4.] *yadedastambhītprathayannamūṃ divamādijjaniṣṭa pārthivaḥ*
+[VĀLAKH. 3,8.]
+[ṚV. 3,59,4.] [5,33,5.] [35,3.] *tvaṃ vṛṣā janānāṃ maṃhiṣṭha indra jajñiṣe*
+[8,15,10.] *ghoraḥ sankratvā janiṣṭhā aṣāLahaḥ*
+[7,28,2.] *prapathe pathāmajaniṣṭa pūṣā prapathe divaḥ*
+[10,17,6.] *yatsaha sarvābhirmimīta saṃśliṣṭā aṅgulayo jāyerannekayaikayotsargaṃ mimīte tasmādvibhaktā jāyante*
+[TS. 6,1,9,5.]
+[AV. 12,4,14.] *kāmato (enaḥ kṛtvā) vyavahāryastu vacanādiha jāyate*
+[YĀJÑ. 3,226.] *tatroṣya rajanīḥ pañca pūtātmā jāyate naraḥ*
+[MBH. 3,4083.] *kṣudhārtā jajñire janāḥ*
+[1,6625.] [M. 1,99.] [NALOD. 1,42.] *moghā hi nāma jāyeta mahatsūpakṛtiḥ kutaḥ*
+[VID. 58.] *hrasvo varṇo jāyate yatra ṣaṣṭhaḥ*
+[ŚRUT. 19. 25.] *raktanetro 'jani kṣaṇāt*
+[BHAṬṬ. 6,32.] *na tasya vedādhyayane tathā buddhirajāyata . yathāsya buddhirabhavaddhanurvede*
+[MBH. 1,5073.]
+
+- **RU:** — 3) становиться, быть: *arānna nemiḥ paribhūrajāyathāḥ*
+[ṚV. 1,141,9.] *divā na naktaṃ palito yavājani*
+[144,4.] *yadedastambhītprathayannamūṃ divamādijjaniṣṭa pārthivaḥ*
+[VĀLAKH. 3,8.]
+[ṚV. 3,59,4.] [5,33,5.] [35,3.] *tvaṃ vṛṣā janānāṃ maṃhiṣṭha indra jajñiṣe*
+[8,15,10.] *ghoraḥ sankratvā janiṣṭhā aṣāLahaḥ*
+[7,28,2.] *prapathe pathāmajaniṣṭa pūṣā prapathe divaḥ*
+[10,17,6.] *yatsaha sarvābhirmimīta saṃśliṣṭā aṅgulayo jāyerannekayaikayotsargaṃ mimīte tasmādvibhaktā jāyante*
+[TS. 6,1,9,5.]
+[AV. 12,4,14.] *kāmato (enaḥ kṛtvā) vyavahāryastu vacanādiha jāyate*
+[YĀJÑ. 3,226.] *tatroṣya rajanīḥ pañca pūtātmā jāyate naraḥ*
+[MBH. 3,4083.] *kṣudhārtā jajñire janāḥ*
+[1,6625.] [M. 1,99.] [NALOD. 1,42.] *moghā hi nāma jāyeta mahatsūpakṛtiḥ kutaḥ*
+[VID. 58.] *hrasvo varṇo jāyate yatra ṣaṣṭhaḥ*
+[ŚRUT. 19. 25.] *raktanetro 'jani kṣaṇāt*
+[BHAṬṬ. 6,32.] *na tasya vedādhyayane tathā buddhirajāyata . yathāsya buddhirabhavaddhanurvede*
+[MBH. 1,5073.]
+- **EN:** — 3) to become, to be: *arānna nemiḥ paribhūrajāyathāḥ* [ṚV. 1,141,9.] *divā na naktaṃ palito yavājani* [144,4.] *yadedastambhītprathayannamūṃ divamādijjaniṣṭa pārthivaḥ* [VĀLAKH. 3,8.] [ṚV. 3,59,4.] [5,33,5.] [35,3.] *tvaṃ vṛṣā janānāṃ maṃhiṣṭha indra jajñiṣe* [8,15,10.] *ghoraḥ sankratvā janiṣṭhā aṣāLahaḥ* [7,28,2.] *prapathe pathāmajaniṣṭa pūṣā prapathe divaḥ* [10,17,6.] *yatsaha sarvābhirmimīta saṃśliṣṭā aṅgulayo jāyerannekayaikayotsargaṃ mimīte tasmādvibhaktā jāyante* [TS. 6,1,9,5.] [AV. 12,4,14.] *kāmato (enaḥ kṛtvā) vyavahāryastu vacanādiha jāyate* [YĀJÑ. 3,226.] *tatroṣya rajanīḥ pañca pūtātmā jāyate naraḥ* [MBH. 3,4083.] *kṣudhārtā jajñire janāḥ* [1,6625.] [M. 1,99.] [NALOD. 1,42.] *moghā hi nāma jāyeta mahatsūpakṛtiḥ kutaḥ* [VID. 58.] *hrasvo varṇo jāyate yatra ṣaṣṭhaḥ* [ŚRUT. 19. 25.] *raktanetro 'jani kṣaṇāt* [BHAṬṬ. 6,32.] *na tasya vedādhyayane tathā buddhirajāyata . yathāsya buddhirabhavaddhanurvede* [MBH. 1,5073.]
+  <sub>DCS 9250 · attested</sub>
+
+**II.4)** — 4) Statt finden: *jāyante niviḍāśleṣāḥ samībhūtaśarīrayoḥ*
+[VET. 11,5.] *śaraṇaṃ kasya jāyate*
+[32,20.]
+
+- **RU:** — 4) иметь место, происходить: *jāyante niviḍāśleṣāḥ samībhūtaśarīrayoḥ*
+[VET. 11,5.] *śaraṇaṃ kasya jāyate*
+[32,20.]
+- **EN:** — 4) to take place: *jāyante niviḍāśleṣāḥ samībhūtaśarīrayoḥ* [VET. 11,5.] *śaraṇaṃ kasya jāyate* [32,20.]
+  <sub>DCS 9250 · attested</sub>
+
+**II.5)** — 5) möglich —, zulässig sein: *yatra bandho na jāyate* wo das Unterbinden sich nicht anwenden lässt
+[SUŚR. 2,269,19.]
+
+- **RU:** — 5) быть возможным, допустимым: *yatra bandho na jāyate* там, где перевязывание не применяется
+[SUŚR. 2,269,19.]
+- **EN:** — 5) to be possible —, to be permissible: *yatra bandho na jāyate* where ligation cannot be applied [SUŚR. 2,269,19.]
+  <sub>DCS 9250 · attested</sub>
+
+## jan
+
+`jan~~h0_00_pwg02`
+
+
+**6)** — 6) = *jan* mit *abhi* für Etwas geboren werden, für Etwas von der Geburt an bestimmt sein: *pāpāsaḥ santo anṛtā asatyā idaṃ padamajanatā gabhīram*
+[ṚV. 4,5,5.] *taṃ taṃ lokaṃ jāyate tāṃśca kāmān*
+[MUṆḌ. UP. 3,1,10.]
+[ŚAṂK.] hat *jayate* (von *ji*), welches er durch *prāpnoti* erklärt. — *jāta* s. bes.
+- **EN:** — 6) = *jan* with *abhi* to be born for something, to be destined from birth for something: *pāpāsaḥ santo anṛtā asatyā idaṃ padamajanatā gabhīram*
+[ṚV. 4,5,5.] *taṃ taṃ lokaṃ jāyate tāṃśca kāmān*
+[MUṆḌ. UP. 3,1,10.]
+[ŚAṂK.] has *jayate* (from *ji*), which he explains by *prāpnoti*. — *jāta* s. bes.
+
+**6) = быть рождённым для чего-л., быть от природы предназначенным к чему-л.)** — 6) = *jan* mit *abhi* für Etwas geboren werden, für Etwas von der Geburt an bestimmt sein: *pāpāsaḥ santo anṛtā asatyā idaṃ padamajanatā gabhīram*
+[ṚV. 4,5,5.] *taṃ taṃ lokaṃ jāyate tāṃśca kāmān*
+[MUṆḌ. UP. 3,1,10.]
+[ŚAṂK.] hat *jayate* (von *ji*), welches er durch *prāpnoti* erklärt. — *jāta* s. bes.
+
+- **RU:** — 6) = *jan* с *abhi* быть рождённым для чего-л., быть от рождения предназначенным к чему-л.: *pāpāsaḥ santo anṛtā asatyā idaṃ padamajanatā gabhīram*
+[ṚV. 4,5,5.] *taṃ taṃ lokaṃ jāyate tāṃśca kāmān*
+[MUṆḌ. UP. 3,1,10.]
+[ŚAṂK.] имеет *jayate* (от *ji*), которое он объясняет через *prāpnoti*. — *jāta* s. bes.
+  <sub>DCS 9250 · attested</sub>
+
+## jan
+
+`jan~~h0_01_sec_1`
+
+
+**1)** — desid. *jijaniṣati*
+[P. 6,4,42], Sch.
+— intens. *jañjanyate* und *jājāyate*
+[P. 6,4,43.]
+[VOP. 20,8.] *jañjantas* und *jājātas, jañjanati* und *jañjñati*
+[17.]
+
+- **RU:** — desid. *jijaniṣati*
+[P. 6,4,42], Sch.
+— intens. *jañjanyate* und *jājāyate*
+[P. 6,4,43.]
+[VOP. 20,8.] *jañjantas* und *jājātas, jañjanati* und *jañjñati*
+[17.]
+- **EN:** — desid. *jijaniṣati*
+[P. 6,4,42], Sch.
+— intens. *jañjanyate* and *jājāyate*
+[P. 6,4,43.]
+[VOP. 20,8.] *jañjantas* and *jājātas, jañjanati* and *jañjñati*
+[17.]
+  <sub>DCS 9250 · attested</sub>
+
+## jan
+
+`jan~~h0_02_vyati`
+
+
+**1)** — *vyati*, ˚*jājñadhvam, ˚jajñidhve, ˚jajñiṣe, ˚jajñiṣva*
+[KĀŚ.] zu [P. 7,2,77.] [78.] [VOP. 23,55.]
+
+- **RU:** — *vyati*, ˚*jājñadhvam, ˚jajñidhve, ˚jajñiṣe, ˚jajñiṣva*
+[KĀŚ.] к [P. 7,2,77.] [78.] [VOP. 23,55.]
+- **EN:** — *vyati*, ˚*jājñadhvam, ˚jajñidhve, ˚jajñiṣe, ˚jajñiṣva*
+[KĀŚ.] to [P. 7,2,77.] [78.] [VOP. 23,55.]
+  <sub>DCS 9250 · attested</sub>
+
+## jan
+
+`jan~~h0_03_a_di`
+
+
+**1)** — *adhi* . In zahlreichen Stellen der älteren Sprache erscheint *jan* mit *adhi* verbunden in der Bed. geboren werden von (abl.), entstehen aus, aber wie die betonten Texte zeigen, ist die praep. nicht unmittelbar zum Verbum zu ziehen. Ausser den u. *adhi* 2, c, δ
+angeführten Beispielen vgl. noch: *tasmādyatra kva ca śocati svedate vā puruṣastejasa eva tadadhyāpo jāyante*
+[CHĀND. UP. 6,2,3. 4.] *aṅgādaṅgātsaṃbhavasi hṛdayādadhi* (v. l. *abhi) jāyase*
+[MBH. 1,3050.] Mit vorang. loc. geboren werden, zur Welt kommen auf: *brāhmaṇo jāyamāno hi pṛthivyāmadhi jāyate* (wird, ist) *. īśvaraḥ sarvabhūtānām*
+[M. 1,99.] Ein Beispiel mit vorangeh. acc. findet man unter *adhi* 2, a, α
+Entschieden zum Verbum gehört *adhi* an der folg. Stelle: *(tena) adhijajñe — ātmajamūrtirātmā* wurde erzeugt
+[RAGH. 18,23.]
+— Vgl. u. *pra* und *adhija* fg.
+- **EN:** — *adhi* . In numerous passages of the older language *jan* appears connected with *adhi* in the sense to be born from (abl.), to arise from, but as the accented texts show, the praep. is not directly to be construed with the verb. Besides the examples cited at u. *adhi* 2, c, δ, there is also: *tasmādyatra kva ca śocati svedate vā puruṣastejasa eva tadadhyāpo jāyante*
+[CHĀND. UP. 6,2,3. 4.] *aṅgādaṅgātsaṃbhavasi hṛdayādadhi* (v. l. *abhi) jāyase*
+[MBH. 1,3050.] With vorang. loc. to be born, to come into the world upon: *brāhmaṇo jāyamāno hi pṛthivyāmadhi jāyate* (is, is born) *. īśvaraḥ sarvabhūtānām*
+[M. 1,99.] An example with vorangeh. acc. is found under *adhi* 2, a, α.
+Decidedly belonging to the verb is *adhi* in the folg. passage: *(tena) adhijajñe — ātmajamūrtirātmā* was begotten
+[RAGH. 18,23.]
+— Vgl. u. *pra* and *adhija* fg.
+
+**adhi+jan — родиться от / происходить из)** — *adhi* . In zahlreichen Stellen der älteren Sprache erscheint *jan* mit *adhi* verbunden in der Bed. geboren werden von (abl.), entstehen aus, aber wie die betonten Texte zeigen, ist die praep. nicht unmittelbar zum Verbum zu ziehen. Ausser den u. *adhi* 2, c, δ
+angeführten Beispielen vgl. noch: *tasmādyatra kva ca śocati svedate vā puruṣastejasa eva tadadhyāpo jāyante*
+[CHĀND. UP. 6,2,3. 4.] *aṅgādaṅgātsaṃbhavasi hṛdayādadhi* (v. l. *abhi) jāyase*
+[MBH. 1,3050.] Mit vorang. loc. geboren werden, zur Welt kommen auf: *brāhmaṇo jāyamāno hi pṛthivyāmadhi jāyate* (wird, ist) *. īśvaraḥ sarvabhūtānām*
+[M. 1,99.] Ein Beispiel mit vorangeh. acc. findet man unter *adhi* 2, a, α
+Entschieden zum Verbum gehört *adhi* an der folg. Stelle: *(tena) adhijajñe — ātmajamūrtirātmā* wurde erzeugt
+[RAGH. 18,23.]
+
+- **RU:** — *adhi*. Во многих местах более древнего языка *jan* с *adhi* выступает в Bed. родиться от (abl.), происходить из, однако, как показывают акцентуированные тексты, praep. непосредственно к глаголу не относится. Помимо примеров, приведённых под u. *adhi* 2, c, δ, vgl. ещё: *tasmādyatra kva ca śocati svedate vā puruṣastejasa eva tadadhyāpo jāyante*
+[CHĀND. UP. 6,2,3. 4.] *aṅgādaṅgātsaṃbhavasi hṛdayādadhi* (v. l. *abhi) jāyase*
+[MBH. 1,3050.] С vorang. loc. родиться, появиться на свет в: *brāhmaṇo jāyamāno hi pṛthivyāmadhi jāyate* (становится, есть) *. īśvaraḥ sarvabhūtānām*
+[M. 1,99.] Пример с vorangeh. acc. находится под *adhi* 2, a, α.
+Бесспорно к глаголу относится *adhi* в folg. месте: *(tena) adhijajñe — ātmajamūrtirātmā* был рождён
+[RAGH. 18,23.]
+  <sub>DCS 9250 · attested</sub>
+
+**adhi+jan — дополнение и перекрёстные ссылки)** — Vgl. u. *pra* und *adhija* fg.
+
+- **RU:** — Vgl. u. *pra* und *adhija* fg.
+  <sub>DCS 9250 · attested</sub>
+
+## jan
+
+`jan~~h0_04_anu`
+
+
+**1)** — *anu*¦
+ 1) später —, hinterher geboren werden, — zur Welt kommen, — entstehen; nach Jmd (acc.) geboren werden: *putrikāyāṃ kṛtāyāṃ tu yadi putro 'nujāyate*
+[M. 9,131.] *ekavarṣāntarāstvete draupadeyāḥ — anvajāyanta* stets um ein Jahr später als der Vorhergehende
+[MBH. 1,8046.] *eṣa sākṣāddhareraṃśo jātaḥ — iyaṃ ca tatparā hi śrīranujajñe*
+[BHĀG. P. 4,15,6.] *atha vā jāyamānasya yacchīlamanujāyate*
+[MBH. 3,321.] *pumāṃsaṃ putraṃ janaya taṃ pumā anu jāyatām*
+[AV. 3,23,3.] *bhrātaraḥ*
+[2,13,5.] *tadāśā anvajāyanta*
+[ṚV. 10,72,3.] [5.] *anujāto māṇavako māṇavikām anujātā* (pass.) *māṇavikā māṇavakena . anujātaṃ* (impers.) *māṇavakena*
+[P. 3,4,72], Sch.
+[VOP. 26,129.]
+- **EN:** — *anu*¦
+ 1) to be born — to come into the world — to arise later, — afterward; to be born after Someone (acc.): *putrikāyāṃ kṛtāyāṃ tu yadi putro 'nujāyate*
+[M. 9,131.] *ekavarṣāntarāstvete draupadeyāḥ — anvajāyanta* always a year later than the preceding one
+[MBH. 1,8046.] *eṣa sākṣāddhareraṃśo jātaḥ — iyaṃ ca tatparā hi śrīranujajñe*
+[BHĀG. P. 4,15,6.] *atha vā jāyamānasya yacchīlamanujāyate*
+[MBH. 3,321.] *pumāṃsaṃ putraṃ janaya taṃ pumā anu jāyatām*
+[AV. 3,23,3.] *bhrātaraḥ*
+[2,13,5.] *tadāśā anvajāyanta*
+[ṚV. 10,72,3.] [5.] *anujāto māṇavako māṇavikām anujātā* (pass.) *māṇavikā māṇavakena . anujātaṃ* (impers.) *māṇavakena*
+[P. 3,4,72], Sch.
+[VOP. 26,129.]
+
+**2)** — 2) Jmd (acc.) ähnlich geboren werden: *asau kumārastamato 'nujātastriviṣṭapasyeva patiṃ jayantaḥ*
+[RAGH. 6,78.] — *ko 'nvenaṃ janayetpunaḥ*
+[BṚH. ĀR. UP. 3,9,28] gehört
+
+nicht hierher, da mit
+[ŚAT. BR. 14,6,9,34] *ko nvenaṃ* zu lesen ist. Wie ist aber die folgende Stelle aufzufassen: *bāhyānāmanujāyante sairaṃdhryāṃ māgadheṣu ca*
+[MBH. 13,2581]?
+- **EN:** — 2) to be born similar to Someone (acc.): *asau kumārastamato 'nujātastriviṣṭapasyeva patiṃ jayantaḥ*
+[RAGH. 6,78.] — *ko 'nvenaṃ janayetpunaḥ*
+[BṚH. ĀR. UP. 3,9,28] does not belong here, since it is to be read with
+[ŚAT. BR. 14,6,9,34] *ko nvenaṃ*. But how is the following passage to be understood: *bāhyānāmanujāyante sairaṃdhryāṃ māgadheṣu ca*
+[MBH. 13,2581]?
+
+**3)** — Vgl. *anuja, anujāta* .
+- **EN:** — Vgl. *anuja, anujāta* .
+
+## samanu+jan
+
+`jan~~h0_05_samanu`
+
+
+**1)** — *samanu* Jmd (acc.) ähnlich geboren werden: *pitṝnsamanujāyante narā mātaramaṅganāḥ*
+[R. 2,35,26.]
+
+- **RU:** родиться подобным кому-либо (acc.): *pitṝnsamanujāyante narā mātaramaṅganāḥ*
+[R. 2,35,26.]
+- **EN:** — *samanu* to be born similar to Someone (acc.): *pitṝnsamanujāyante narā mātaramaṅganāḥ*
+[R. 2,35,26.]
+  <sub>DCS 9250 · attested</sub>
+
+## apa+jan
+
+`jan~~h0_06_apa`
+
+
+**1)** — *apa* s. *apajāta* .
+
+- **RU:** *apa* s. *apajāta* .
+- **EN:** — *apa* s. *apajāta* .
+  <sub>DCS 9250 · attested</sub>
+
+## api+jan
+
+`jan~~h0_07_api`
+
+
+**1)** — *api* s. *apija* .
+
+- **RU:** *api* s. *apija* .
+- **EN:** — *api* s. *apija* .
+  <sub>DCS 9250 · attested</sub>
+
+## abhijan
+
+`jan~~h0_08_a_bi`
+
+
+**1)** — *abhi*
+ 1) für Etwas (eine Thätigkeit, Loos u. s. w.) oder für Jmd geboren werden, für Etwas von Geburt an bestimmt sein, durch die Geburt auf Etwas Ansprüche haben; mit dem acc.: *sa etadbhāgadheyamabhyajāyata yadagnihotram*
+[TBR. 2,1,2,5.] [2,3,4.] *ya iṣaṃ svarabhijāyanta dhūtayaḥ*
+[ṚV. 1,168,2.] *kṛtaṃ lokaṃ puruṣo 'bhijāyate*
+[ŚAT. BR. 6,2,2,27.] *ākāśamabhijāyate*
+[CHĀND. UP. 7,12,1.] *te cāndramasameva lokamabhijayante* (*abhijāyante?*)
+[PRAŚNOP. 1,9.] *saṃpadaṃ daivīmabhijātasya*
+[BHAG. 16,3.] [4.] [5.] *dānamadhyayanam* u. s. w. *janmanaivābhyajāyathāḥ*
+[MBH. 12,2856.] *yadiyaṃ kumāryabhijātā tadiyamiha pratipadyatām*
+[ĀŚV. GṚHY. 1,5.] *kāmaṃ krodham* u. s. w. *bhūmipaḥ . samyagvijetuṃ yo veda sa mahīmabhijāyate*
+[MBH. 5,4342.] *jāyamānābhi jāyate devāntsabrāhmaṇānvaśā*
+[AV. 12,4,10.]
+- **EN:** — *abhi*
+ 1) to be born for something (an activity, a portion u. s. w.) or for someone, to be destined for something from birth, to have claims to something by birth; with the acc.: *sa etadbhāgadheyamabhyajāyata yadagnihotram*
+[TBR. 2,1,2,5.] [2,3,4.] *ya iṣaṃ svarabhijāyanta dhūtayaḥ*
+[ṚV. 1,168,2.] *kṛtaṃ lokaṃ puruṣo 'bhijāyate*
+[ŚAT. BR. 6,2,2,27.] *ākāśamabhijāyate*
+[CHĀND. UP. 7,12,1.] *te cāndramasameva lokamabhijayante* (*abhijāyante?*)
+[PRAŚNOP. 1,9.] *saṃpadaṃ daivīmabhijātasya*
+[BHAG. 16,3.] [4.] [5.] *dānamadhyayanam* u. s. w. *janmanaivābhyajāyathāḥ*
+[MBH. 12,2856.] *yadiyaṃ kumāryabhijātā tadiyamiha pratipadyatām*
+[ĀŚV. GṚHY. 1,5.] *kāmaṃ krodham* u. s. w. *bhūmipaḥ . samyagvijetuṃ yo veda sa mahīmabhijāyate*
+[MBH. 5,4342.] *jāyamānābhi jāyate devāntsabrāhmaṇānvaśā*
+[AV. 12,4,10.]
+
+**2)** — 2) geboren werden, entstehen: *te kṣipramevābhijajñire*
+[R. 1,16,19.] *yadyonāvabhijāyate*
+[M. 2,247.] *sa vai tathā vakra evābhyajāyat*
+[MBH. 3,10608.] *ākūtyāṃ ruceryajño 'bhyajāyata*
+[BHĀG. P. 1,3,12.] *hṛdayābhijāta*
+[5,8,24.] *jātasneho yatra tanvābhijātaḥ*
+[3,25,31.] *tapasā cīyate brahma tato 'nnamabhijāyate . annātprāṇaḥ*
+[MUṆḌ. UP. 1,1,8.] *tāmraṃ kārṣṇāyasaṃ cāpi taikṣṇyādevābhyajāyata*
+[R. 1,38,20.] *kāmātkrodho 'bhijāyate*
+[BHAG. 2,62.] *sarveṣāṃ tatra bhūtānāṃ lomaharṣo 'bhyajāyata*
+[MBH. 8,2927.] *abhijāta* angeboren, ererbt: *yattvasya sahajam — pitṛpaitāmahaṃ balam . abhijātabalaṃ nāma taccaturthabalaṃ smṛtam ..*
+[5,1357.] _n._ Geburt: *abhijātakovidāḥ* Nativitätskundige
+[BHĀG. P. 1,16,1.]
+- **EN:** — 2) to be born, to arise: *te kṣipramevābhijajñire*
+[R. 1,16,19.] *yadyonāvabhijāyate*
+[M. 2,247.] *sa vai tathā vakra evābhyajāyat*
+[MBH. 3,10608.] *ākūtyāṃ ruceryajño 'bhyajāyata*
+[BHĀG. P. 1,3,12.] *hṛdayābhijāta*
+[5,8,24.] *jātasneho yatra tanvābhijātaḥ*
+[3,25,31.] *tapasā cīyate brahma tato 'nnamabhijāyate . annātprāṇaḥ*
+[MUṆḌ. UP. 1,1,8.] *tāmraṃ kārṣṇāyasaṃ cāpi taikṣṇyādevābhyajāyata*
+[R. 1,38,20.] *kāmātkrodho 'bhijāyate*
+[BHAG. 2,62.] *sarveṣāṃ tatra bhūtānāṃ lomaharṣo 'bhyajāyata*
+[MBH. 8,2927.] *abhijāta* innate, inherited: *yattvasya sahajam — pitṛpaitāmahaṃ balam . abhijātabalaṃ nāma taccaturthabalaṃ smṛtam ..*
+[5,1357.] _n._ birth: *abhijātakovidāḥ* those versed in nativities
+[BHĀG. P. 1,16,1.]
+
+**3)** — 3) wiedergeboren werden: *śucīnāṃ śrīmatāṃ gehe yogabhraṣṭo 'bhijāyate*
+[BHAG. 6,41.] *na sa bhūyo 'bhijāyate*
+[13,23.] *aśvinostīrthamāsādya rūpavānabhijāyate*
+[MBH. 3,5087.] [13,5149.] [5511.] *te 'bhijātāḥ kurukṣetre brāhmaṇāḥ*
+[HARIV. 1293.] sich wiedererzeugen: *tathāpyanudinaṃ tṛṣṇā mamaiteṣvabhijāyate*
+[MBH. 1,3514.]
+- **EN:** — 3) to be reborn: *śucīnāṃ śrīmatāṃ gehe yogabhraṣṭo 'bhijāyate*
+[BHAG. 6,41.] *na sa bhūyo 'bhijāyate*
+[13,23.] *aśvinostīrthamāsādya rūpavānabhijāyate*
+[MBH. 3,5087.] [13,5149.] [5511.] *te 'bhijātāḥ kurukṣetre brāhmaṇāḥ*
+[HARIV. 1293.] to reproduce oneself: *tathāpyanudinaṃ tṛṣṇā mamaiteṣvabhijāyate*
+[MBH. 1,3514.]
+
+**4)** — 4) werden: *tasyāḥ spṛṣṭvaiva salilaṃ naraḥ śailo 'bhijāyate*
+[R. 4,44,77.]
+- **EN:** — 4) to become: *tasyāḥ spṛṣṭvaiva salilaṃ naraḥ śailo 'bhijāyate*
+[R. 4,44,77.]
+
+**5)** — Vgl. *abhijana, abhijanitu, abhijāta* fg.
+- **EN:** — Vgl. *abhijana, abhijanitu, abhijāta* fg.
+
+## samabhi+jan
+
+`jan~~h0_09_sama_bi`
+
+
+**1)** — *samabhi* entstehen: *tataḥ kālena mahatā matiḥ samabhijāyata . sagarasyāśvamedhena yajeyamiti*
+[R. 1,39,24.]
+
+- **RU:** возникнуть: *tataḥ kālena mahatā matiḥ samabhijāyata . sagarasyāśvamedhena yajeyamiti*
+[R. 1,39,24.]
+- **EN:** — *samabhi* to arise: *tataḥ kālena mahatā matiḥ samabhijāyata . sagarasyāśvamedhena yajeyamiti*
+[R. 1,39,24.]
+  <sub>DCS 1 · attested</sub>
+
+## ava+jan
+
+`jan~~h0_10_ava`
+
+
+**1)** — *ava* zur Welt bringen: *varaṃ kanyāvajanitā* ad
+[HIT. Pr. 12.] [13.]
+
+- **RU:** произвести на свет, родить: *varaṃ kanyāvajanitā* ad
+[HIT. Pr. 12.] [13.]
+- **EN:** — *ava* to bring into the world: *varaṃ kanyāvajanitā* ad
+[HIT. Pr. 12.] [13.]
+  <sub>DCS 4 · attested</sub>
+
+## ājan
+
+`jan~~h0_11__a`
+
+
+**1)** — *ā*
+ 1) trans. erzeugen: *prajāmā janayāvahai*
+[AV. 14,2,71.] Jmd geboren werden lassen: *ā naḥ prajāṃ janayatu prajāpatiḥ*
+[ṚV. 10,85,43.] fruchtbar machen, durch Zeugung mehren: *ā no jane janaya*
+[1,113,19.]
+- **EN:** — *ā*
+ 1) trans. to beget: *prajāmā janayāvahai*
+[AV. 14,2,71.] to cause someone to be born: *ā naḥ prajāṃ janayatu prajāpatiḥ*
+[ṚV. 10,85,43.] to make fruitful, to increase through procreation: *ā no jane janaya*
+[1,113,19.]
+
+**2a)** — 2) intrans.
+ a) aus einem —, von einem Orte aus geboren werden, — entstehen: *ataścidā janiṣīṣṭa pravṛddhaḥ* auf diesem Wege soll er zur Welt geboren werden
+[ṚV. 4,18,1.] *diva ājātā*
+[43,3.] [1,179,4.] *mātroḥ*
+[7,3,9.] [5,30,5.] [1,83,5.] [10,129,6.] [ŚAT. BR. 12,1,2,3.]
+- **EN:** — 2) intrans.
+ a) to be born from, or arise from, a place: *ataścidā janiṣīṣṭa pravṛddhaḥ* on this path he shall be born into the world
+[ṚV. 4,18,1.] *diva ājātā*
+[43,3.] [1,179,4.] *mātroḥ*
+[7,3,9.] [5,30,5.] [1,83,5.] [10,129,6.] [ŚAT. BR. 12,1,2,3.]
+
+**2b)** — b) geboren werden, entstehen: *ā brāhmaṇo jāyatām*
+[VS. 22,22.]
+[AV. 3,23,2.] *taskarā araṇyeṣvājāyeran*
+[ŚAT. BR. 13,2,4,2.]
+[AIT. BR. 8,9.] *brāhmaṇakalpaste prajāyāmājaniṣyate*
+[7,29.] *ā vīro jāyatāṃ putraste daśamāsyaḥ*
+[ĀŚV. GṚHY. 1,13.] *ā tvā kumārastaruṇa ā vatso jāyatādiha*
+[2,8.] *sasyamiva martyaḥ pacyate sasyamivājāyate punaḥ*
+[KAṬHOP. 1,6.] *na cehājāyate punaḥ*
+[M. 2,249.]
+[YĀJÑ. 1,50.] [3,109.] *prāṇena kṣipatā kṣuttṛḍantarājāyate prabhoḥ*
+[BHĀG. P. 2,10,17.]
+- **EN:** — b) to be born, to arise: *ā brāhmaṇo jāyatām*
+[VS. 22,22.]
+[AV. 3,23,2.] *taskarā araṇyeṣvājāyeran*
+[ŚAT. BR. 13,2,4,2.]
+[AIT. BR. 8,9.] *brāhmaṇakalpaste prajāyāmājaniṣyate*
+[7,29.] *ā vīro jāyatāṃ putraste daśamāsyaḥ*
+[ĀŚV. GṚHY. 1,13.] *ā tvā kumārastaruṇa ā vatso jāyatādiha*
+[2,8.] *sasyamiva martyaḥ pacyate sasyamivājāyate punaḥ*
+[KAṬHOP. 1,6.] *na cehājāyate punaḥ*
+[M. 2,249.]
+[YĀJÑ. 1,50.] [3,109.] *prāṇena kṣipatā kṣuttṛḍantarājāyate prabhoḥ*
+[BHĀG. P. 2,10,17.]
+
+**3)** — Vgl. *ājanana*,
+
+*ājāti, ājāna* fg.
+- **EN:** — Vgl. *ājanana*,
+
+*ājāti, ājāna* fg.
+
+## udā+jan
+
+`jan~~h0_12_ud_a`
+
+
+**1)** — *udā* hervorgehen aus: *udyatsahaḥ sahasa ājaniṣṭa*
+[ṚV. 5,31,3.]
+
+- **RU:** происходить из, выходить из: *udyatsahaḥ sahasa ājaniṣṭa*
+[ṚV. 5,31,3.]
+- **EN:** — *udā* to come forth from, to issue from: *udyatsahaḥ sahasa ājaniṣṭa*
+[ṚV. 5,31,3.]
+  <sub>DCS 9250 · attested</sub>
+
+## udjan
+
+`jan~~h0_13_ud`
+
+
+**1)** — *ud*
+ 1) trans. zeugen, hervorbringen: *udusriyā janitā yo jajāna*
+[ṚV. 3,1,12.]
+- **EN:** — *ud*
+ 1) trans. to beget, to bring forth: *udusriyā janitā yo jajāna*
+[ṚV. 3,1,12.]
+
+**2)** — 2) intrans. geboren werden, entstehen: *yato devā udajāyanta viśve*
+[ṚV. 4,18,1.] *udagnirvṛtraḥājani*
+[1,74,3.] [10,55,7.] *idaṃ vacaḥ śatasāḥ saṃsahasramudagnaye janiṣīṣṭa* (nach
+[SĀY.] = *udajījanat) dvibarhāḥ*
+[7,8,6.] [10,43,9.]
+- **EN:** — 2) intrans. to be born, to arise: *yato devā udajāyanta viśve*
+[ṚV. 4,18,1.] *udagnirvṛtraḥājani*
+[1,74,3.] [10,55,7.] *idaṃ vacaḥ śatasāḥ saṃsahasramudagnaye janiṣīṣṭa* (according to
+[SĀY.] = *udajījanat) dvibarhāḥ*
+[7,8,6.] [10,43,9.]
+
+## jan (upa)
+
+`jan~~h0_14_upa`
+
+
+**1)** — *upa*
+ 1) hinzukommen, — treten: *veda māso dvādaśa . vedā ya upajāyate*
+[ṚV. 1,25,8.] *śakāra upajāyate*
+[ṚV. PRĀT. 4,37.]
+[ŚĀṄKH. ŚR. 14,22,26.] *pañcame pañcame varṣe dvau māsāvupajāyataḥ*
+[MBH. 4,1608.]
+
+- **RU:** — *upa*
+ 1) приходить, — приступать: *veda māso dvādaśa . vedā ya upajāyate*
+[ṚV. 1,25,8.] *śakāra upajāyate*
+[ṚV. PRĀT. 4,37.]
+[ŚĀṄKH. ŚR. 14,22,26.] *pañcame pañcame varṣe dvau māsāvupajāyataḥ*
+[MBH. 4,1608.]
+- **EN:** — *upa*
+ 1) to come to be added, to step in addition: *veda māso dvādaśa . vedā ya upajāyate*
+[ṚV. 1,25,8.] *śakāra upajāyate*
+[ṚV. PRĀT. 4,37.]
+[ŚĀṄKH. ŚR. 14,22,26.] *pañcame pañcame varṣe dvau māsāvupajāyataḥ*
+[MBH. 4,1608.]
+  <sub>DCS 9250 · attested</sub>
+
+**2)** — 2) geboren werden; entstehen, sich einstellen, zum Vorschein kommen, sich zeigen: *uṣmaṇaścopajāyante*
+[M. 1,45.] *asminna nirguṇaṃ gotre apatyamupajāyate*
+[HIT. Pr. 44.] *tasya suvarcalāyāṃ pratīha upajātaḥ*
+[BHĀG. P. 5,15,3.] *mukhatastālu nirbhinnaṃ jihvā tatropajāyate*
+[2,10,18.] *yaddhīdaṃ kiṃ ca jāyate 'syāṃ tadupajāyate*
+[ŚAT. BR. 2,3,4,9.]
+[KAUŚ. 135.] *kothaḥ*
+[SUŚR. 1,266,16.] *tathā tathā kuśalatā teṣāṃ teṣūpajāyate*
+[M. 12,73.] *dhyāyato viṣayānpuṃsaḥ saṅgasteṣūpajāyate*
+[BHAG. 2,62.] *dehe 'sminprakāśa upajāyate . jñānaṃ yadā*
+[14,11.] [MBH. 2,2590.] [3,114.] [1293.] [R. 3,69,5.] [6,82,7.] [PAÑCAT. I,154.] [HIT. I,61.] [BHĀG. P. 6,14,2.] *upajātamupaplavyaṃ saha gāṇḍīvadhanvanā*
+[MBH. 9,3482.] *tatkṣaṇopajātayā pratibhayā*
+[DAŚAK.] in [BENF. Chr. 194,15.] *upajātaviśvāsa* _adj._ bei dem sich Vertrauen eingestellt hat
+[HIT. 42,6.] *˚kheda*
+[MṚCCH. 157,21.] *˚sādhvasa*
+[ṚT. 2,9.] *˚krodha*
+[PRAB. 6,6.]
+
+- **RU:** — 2) родиться; возникать, появляться, обнаруживаться, проявляться: *uṣmaṇaścopajāyante*
+[M. 1,45.] *asminna nirguṇaṃ gotre apatyamupajāyate*
+[HIT. Pr. 44.] *tasya suvarcalāyāṃ pratīha upajātaḥ*
+[BHĀG. P. 5,15,3.] *mukhatastālu nirbhinnaṃ jihvā tatropajāyate*
+[2,10,18.] *yaddhīdaṃ kiṃ ca jāyate 'syāṃ tadupajāyate*
+[ŚAT. BR. 2,3,4,9.]
+[KAUŚ. 135.] *kothaḥ*
+[SUŚR. 1,266,16.] *tathā tathā kuśalatā teṣāṃ teṣūpajāyate*
+[M. 12,73.] *dhyāyato viṣayānpuṃsaḥ saṅgasteṣūpajāyate*
+[BHAG. 2,62.] *dehe 'sminprakāśa upajāyate . jñānaṃ yadā*
+[14,11.] [MBH. 2,2590.] [3,114.] [1293.] [R. 3,69,5.] [6,82,7.] [PAÑCAT. I,154.] [HIT. I,61.] [BHĀG. P. 6,14,2.] *upajātamupaplavyaṃ saha gāṇḍīvadhanvanā*
+[MBH. 9,3482.] *tatkṣaṇopajātayā pratibhayā*
+[DAŚAK.] in [BENF. Chr. 194,15.] *upajātaviśvāsa* _adj._ в ком возникло доверие
+[HIT. 42,6.] *˚kheda*
+[MṚCCH. 157,21.] *˚sādhvasa*
+[ṚT. 2,9.] *˚krodha*
+[PRAB. 6,6.]
+- **EN:** — 2) to be born; to arise, to set in, to come to view, to show itself: *uṣmaṇaścopajāyante*
+[M. 1,45.] *asminna nirguṇaṃ gotre apatyamupajāyate*
+[HIT. Pr. 44.] *tasya suvarcalāyāṃ pratīha upajātaḥ*
+[BHĀG. P. 5,15,3.] *mukhatastālu nirbhinnaṃ jihvā tatropajāyate*
+[2,10,18.] *yaddhīdaṃ kiṃ ca jāyate 'syāṃ tadupajāyate*
+[ŚAT. BR. 2,3,4,9.]
+[KAUŚ. 135.] *kothaḥ*
+[SUŚR. 1,266,16.] *tathā tathā kuśalatā teṣāṃ teṣūpajāyate*
+[M. 12,73.] *dhyāyato viṣayānpuṃsaḥ saṅgasteṣūpajāyate*
+[BHAG. 2,62.] *dehe 'sminprakāśa upajāyate . jñānaṃ yadā*
+[14,11.] [MBH. 2,2590.] [3,114.] [1293.] [R. 3,69,5.] [6,82,7.] [PAÑCAT. I,154.] [HIT. I,61.] [BHĀG. P. 6,14,2.] *upajātamupaplavyaṃ saha gāṇḍīvadhanvanā*
+[MBH. 9,3482.] *tatkṣaṇopajātayā pratibhayā*
+[DAŚAK.] in [BENF. Chr. 194,15.] *upajātaviśvāsa* _adj._ in whom trust has arisen
+[HIT. 42,6.] *˚kheda*
+[MṚCCH. 157,21.] *˚sādhvasa*
+[ṚT. 2,9.] *˚krodha*
+[PRAB. 6,6.]
+  <sub>DCS 9250 · attested</sub>
+
+**3)** — 3) wiedergeboren werden: *sarge 'pi nopajāyate*
+[BHAG. 14,2.] *ihaiva sā śunī gṛdhrī śūkarī copajāyate*
+[YĀJÑ. 3,256.] *mānuṣeṣu*
+[MBH. 13,6689.]
+
+- **RU:** — 3) возрождаться, рождаться вновь: *sarge 'pi nopajāyate*
+[BHAG. 14,2.] *ihaiva sā śunī gṛdhrī śūkarī copajāyate*
+[YĀJÑ. 3,256.] *mānuṣeṣu*
+[MBH. 13,6689.]
+- **EN:** — 3) to be reborn: *sarge 'pi nopajāyate*
+[BHAG. 14,2.] *ihaiva sā śunī gṛdhrī śūkarī copajāyate*
+[YĀJÑ. 3,256.] *mānuṣeṣu*
+[MBH. 13,6689.]
+  <sub>DCS 9250 · attested</sub>
+
+**4)** — 4) sein: *prabhutvaṃ dhanamūlaṃ hi rājñāmapyupajāyate*
+[HIT. I,115.] — caus. erzeugen, verursachen: *vacanāni karṇasukhamupajanayanti*
+[PRAB. 29,15.]
+
+- **RU:** — 4) быть: *prabhutvaṃ dhanamūlaṃ hi rājñāmapyupajāyate*
+[HIT. I,115.] — caus. порождать, производить: *vacanāni karṇasukhamupajanayanti*
+[PRAB. 29,15.]
+- **EN:** — 4) to be: *prabhutvaṃ dhanamūlaṃ hi rājñāmapyupajāyate*
+[HIT. I,115.] — caus. to engender, to cause: *vacanāni karṇasukhamupajanayanti*
+[PRAB. 29,15.]
+  <sub>DCS 9250 · attested</sub>
+
+**5)** — Vgl. *upaja, upajana, upajā* .
+
+- **RU:** — Vgl. *upaja, upajana, upajā* .
+- **EN:** — Vgl. *upaja, upajana, upajā* .
+  <sub>DCS 9250 · attested</sub>
+
+## jan (samupa)
+
+`jan~~h0_15_samupa`
+
+
+**1)** — *samupa*
+ 1) entstehen, sich einstellen, zum Vorschein kommen: *mama duḥkhamidaṃ putra bhūyaḥ samupajāyate*
+[R. 2,75,41.] *yādṛśo 'yaṃ mama krodho daivātsamupajāyate*
+[3,69,22.] *samupajātābhiniveśam*
+[PRAB. 67,14.]
+
+- **RU:** — *samupa*
+ 1) возникать, появляться, обнаруживаться: *mama duḥkhamidaṃ putra bhūyaḥ samupajāyate*
+[R. 2,75,41.] *yādṛśo 'yaṃ mama krodho daivātsamupajāyate*
+[3,69,22.] *samupajātābhiniveśam*
+[PRAB. 67,14.]
+- **EN:** — *samupa*
+ 1) to arise, to set in, to come to view: *mama duḥkhamidaṃ putra bhūyaḥ samupajāyate*
+[R. 2,75,41.] *yādṛśo 'yaṃ mama krodho daivātsamupajāyate*
+[3,69,22.] *samupajātābhiniveśam*
+[PRAB. 67,14.]
+  <sub>DCS 9250 · attested</sub>
+
+**2)** — 2) wiedergeboren werden: *svarge samupajāyate*
+[MBH. 13,6722.] — caus. erzeugen, verursachen: *atiśayaparuṣābhirgrīṣmavahneḥ śikhābhiḥ samupajanitatāpam — vindhyam*
+[ṚT. 2,28.]
+
+- **RU:** — 2) возрождаться, рождаться вновь: *svarge samupajāyate*
+[MBH. 13,6722.] — caus. порождать, производить: *atiśayaparuṣābhirgrīṣmavahneḥ śikhābhiḥ samupajanitatāpam — vindhyam*
+[ṚT. 2,28.]
+- **EN:** — 2) to be reborn: *svarge samupajāyate*
+[MBH. 13,6722.] — caus. to engender, to cause: *atiśayaparuṣābhirgrīṣmavahneḥ śikhābhiḥ samupajanitatāpam — vindhyam*
+[ṚT. 2,28.]
+  <sub>DCS 9250 · attested</sub>
+
+## jan (nis)
+
+`jan~~h0_16_nis`
+
+
+**1)** — *nis* hervortreten, zum Vorschein kommen, sich zeigen: *(bodhisattvaiḥ) sarvabodhisattvapāramitānirjātaiḥ = nirjāta — sarva˚pāramitaiḥ*, mit Verstellung des partic., wie diese bei *jāta* [s. d. u. 1,d] ganz gewöhnlich (ist)
+[LALIT. ed. Calc. 2,4.] [RĀJ.] : perfect in the virtues of pāramitā,
+[FOUC.] : tous vraiment parvenus à l'état de Bodhisattvas arrivés à l'autre rive.
+
+- **RU:** — *nis* выступать, появляться, обнаруживаться: *(bodhisattvaiḥ) sarvabodhisattvapāramitānirjātaiḥ = nirjāta — sarva˚pāramitaiḥ*, с перестановкой partic., как это при *jāta* [s. d. u. 1,d] вполне обычно
+[LALIT. ed. Calc. 2,4.] [RĀJ.] : совершенный в добродетелях pāramitā,
+[FOUC.] : воистину достигшие состояния бодхисаттв, переправившихся на другой берег.
+- **EN:** — *nis* to come forth, to come to view, to show itself: *(bodhisattvaiḥ) sarvabodhisattvapāramitānirjātaiḥ = nirjāta — sarva˚pāramitaiḥ*, with displacement of the partic., as is quite usual with this in *jāta* [s. d. u. 1,d]
+[LALIT. ed. Calc. 2,4.] [RĀJ.]: perfect in the virtues of pāramitā,
+[FOUC.]: all truly arrived at the state of Bodhisattvas who have reached the further shore.
+  <sub>DCS 9250 · attested</sub>
+
+## jan (pari)
+
+`jan~~h0_17_pari`
+
+
+**1)** — *pari* dasselbe Verhältniss wie oben bei *adhi*; z. B. *yadoṣadhībhyaḥ pari jāyate viṣam* entstehen aus
+[ṚV. 7,50,3.] Nur partic. *pumānpuṃsaḥ parijātaḥ*
+[AV. 6,3,1] (wo viell. richtiger *pari jātaḥ* betont würde) und *aparijāta* nicht fertig, nicht lebensfähig geboren oder todtgeboren
+[ĀŚV. GṚHY. 4,4.] *sasyena parijātaḥ*
+[P. 5,2,68]; nach dem Sch. = *guṇena saṃbaddhaḥ* .
+
+- **RU:** — *pari* то же соотношение, что выше при *adhi*; z. B. *yadoṣadhībhyaḥ pari jāyate viṣam* возникать из
+[ṚV. 7,50,3.] Только partic. *pumānpuṃsaḥ parijātaḥ*
+[AV. 6,3,1] (где viell. правильнее ставить ударение *pari jātaḥ*) и *aparijāta* рождённый не до конца, нежизнеспособный или мертворождённый
+[ĀŚV. GṚHY. 4,4.] *sasyena parijātaḥ*
+[P. 5,2,68]; по Sch. = *guṇena saṃbaddhaḥ* .
+- **EN:** — *pari* the same relation as above with *adhi*; z. B. *yadoṣadhībhyaḥ pari jāyate viṣam* to arise from
+[ṚV. 7,50,3.] Only partic. *pumānpuṃsaḥ parijātaḥ*
+[AV. 6,3,1] (where viell. would more correctly be accented *pari jātaḥ*) and *aparijāta* born not complete, not viable, or stillborn
+[ĀŚV. GṚHY. 4,4.] *sasyena parijātaḥ*
+[P. 5,2,68]; according to Sch. = *guṇena saṃbaddhaḥ*.
+  <sub>DCS 9250 · attested</sub>
+
+## jan (pra)
+
+`jan~~h0_18_pra`
+
+
+**1)** — *pra*
+ 1) geboren werden, entstehen: *devaṃ manaḥ kuto adhi prajātam*
+[ṚV. 1,164,18.] [121,6.] [10,62,8.] [73,10.] *ahorātre pra jāyete anyo anyasya rūpayoḥ*
+[AV. 10,8,23.] *yadasyāṃ viśvaṃ bhūtamadhi prajāyate*
+[TS. 2,4,6,1.]
+[AV. 7,5,2.] [9,3,20.] *oṣadhayaḥ*
+[11,4,16.] [17.] [ŚAT. BR. 1,9,2,5.] [4,5,5,1.] *paścāddhi yoṣāyai prajāḥ prajāyante*
+[3,8,4,10.] *prajāta*
+[AV. 1,34,1.] [6,89,1.] *retaḥ siktaṃ prajāyate* zu einer Geburt werden
+[ŚAT. BR. 12,4,1,7.] — *kṣatriyācchūdrakanyāyām* —
+
+*ugro nāma prajāyate*
+[M. 10,9.] *mātāpitroḥ prajāyante putrāḥ sādhāraṇāḥ*
+[MBH. 1,4251.] [4,240.] *mahiṣyeṇa karaṇyāṃ tu rathakāraḥ prajāyate*
+[YĀJÑ. 1,95.] *(tasya) daśa putrāḥ prajajñire*
+[BHĀG. P. 3,12,21.] *ajaṃ prajātaṃ jagataḥ śivāya*
+[1,5,21.] *rājakulaprajātā*
+[R. 5,11,21.] *tataḥ (phalāt) prajāyanti punaśca pādapāḥ*
+[HARIV. 11272.] *prajajñe hṛdi manmathaḥ*
+[MBH. 1,4869.] *lobhātkāmaḥ prajāyate*
+[HIT. I,24.] *nirghātāḥ — vivarebhyaḥ prajajñire*
+[BHĀG. P. 3,17,8.]
+
+- **RU:** — *pra*
+ 1) рождаться, возникать: *devaṃ manaḥ kuto adhi prajātam*
+[ṚV. 1,164,18.] [121,6.] [10,62,8.] [73,10.] *ahorātre pra jāyete anyo anyasya rūpayoḥ*
+[AV. 10,8,23.] *yadasyāṃ viśvaṃ bhūtamadhi prajāyate*
+[TS. 2,4,6,1.]
+[AV. 7,5,2.] [9,3,20.] *oṣadhayaḥ*
+[11,4,16.] [17.] [ŚAT. BR. 1,9,2,5.] [4,5,5,1.] *paścāddhi yoṣāyai prajāḥ prajāyante*
+[3,8,4,10.] *prajāta*
+[AV. 1,34,1.] [6,89,1.] *retaḥ siktaṃ prajāyate* стать рождением
+[ŚAT. BR. 12,4,1,7.] — *kṣatriyācchūdrakanyāyām* —
+
+*ugro nāma prajāyate*
+[M. 10,9.] *mātāpitroḥ prajāyante putrāḥ sādhāraṇāḥ*
+[MBH. 1,4251.] [4,240.] *mahiṣyeṇa karaṇyāṃ tu rathakāraḥ prajāyate*
+[YĀJÑ. 1,95.] *(tasya) daśa putrāḥ prajajñire*
+[BHĀG. P. 3,12,21.] *ajaṃ prajātaṃ jagataḥ śivāya*
+[1,5,21.] *rājakulaprajātā*
+[R. 5,11,21.] *tataḥ (phalāt) prajāyanti punaśca pādapāḥ*
+[HARIV. 11272.] *prajajñe hṛdi manmathaḥ*
+[MBH. 1,4869.] *lobhātkāmaḥ prajāyate*
+[HIT. I,24.] *nirghātāḥ — vivarebhyaḥ prajajñire*
+[BHĀG. P. 3,17,8.]
+- **EN:** — *pra*
+ 1) to be born, to arise: *devaṃ manaḥ kuto adhi prajātam*
+[ṚV. 1,164,18.] [121,6.] [10,62,8.] [73,10.] *ahorātre pra jāyete anyo anyasya rūpayoḥ*
+[AV. 10,8,23.] *yadasyāṃ viśvaṃ bhūtamadhi prajāyate*
+[TS. 2,4,6,1.]
+[AV. 7,5,2.] [9,3,20.] *oṣadhayaḥ*
+[11,4,16.] [17.] [ŚAT. BR. 1,9,2,5.] [4,5,5,1.] *paścāddhi yoṣāyai prajāḥ prajāyante*
+[3,8,4,10.] *prajāta*
+[AV. 1,34,1.] [6,89,1.] *retaḥ siktaṃ prajāyate* to become a birth
+[ŚAT. BR. 12,4,1,7.] — *kṣatriyācchūdrakanyāyām* —
+
+*ugro nāma prajāyate*
+[M. 10,9.] *mātāpitroḥ prajāyante putrāḥ sādhāraṇāḥ*
+[MBH. 1,4251.] [4,240.] *mahiṣyeṇa karaṇyāṃ tu rathakāraḥ prajāyate*
+[YĀJÑ. 1,95.] *(tasya) daśa putrāḥ prajajñire*
+[BHĀG. P. 3,12,21.] *ajaṃ prajātaṃ jagataḥ śivāya*
+[1,5,21.] *rājakulaprajātā*
+[R. 5,11,21.] *tataḥ (phalāt) prajāyanti punaśca pādapāḥ*
+[HARIV. 11272.] *prajajñe hṛdi manmathaḥ*
+[MBH. 1,4869.] *lobhātkāmaḥ prajāyate*
+[HIT. I,24.] *nirghātāḥ — vivarebhyaḥ prajajñire*
+[BHĀG. P. 3,17,8.]
+  <sub>DCS 9250 · attested</sub>
+
+**2)** — 2) wiedergeboren werden: *tailapāyī prajāyate*
+[MBH. 13,5509.]
+
+- **RU:** — 2) возрождаться, рождаться вновь: *tailapāyī prajāyate*
+[MBH. 13,5509.]
+- **EN:** — 2) to be reborn: *tailapāyī prajāyate*
+[MBH. 13,5509.]
+  <sub>DCS 9250 · attested</sub>
+
+**3)** — 3) sich fortpflanzen durch, in (instr.); zeugen, gebären; mit dem acc.: *pra jāyemahi prajābhiḥ*
+[ṚV. 2,33,1.] *pra jāyante vīrudhaśca prajābhiḥ*
+[35,8.] [6,70,3.] *prajayā paśubhiḥ*
+[ŚAT. BR. 14,9,2,6.] *ihaivota pra jāyadhvam*
+[AV. 3,14,4.] *tāvatyo haivābhaviṣyanna prājaniṣyanta*
+[ŚAT. BR. 4,3,1,25.] *(prajāpatiḥ) aikṣata kathaṃ nu prajāyeya*
+[2,2,4,1.] [14,4,2,30.] *prajāyamānā retasā*
+[9,2,8.] *upasthaṃ prajaniṣyamāṇo 'bhimṛśet*
+[ŚĀṄKH. GṚHY. 1,19.] *agniḥ svaṃ retaḥ prajaniṣyate* zur Geburt werden lassen
+[ŚAT. BR. 2,2,4,17.] *menakāyāṃ prajajñivān . gandharvarājaḥ*
+[MBH. 1,943.] *anṛtau vratī jaṭī caiva bhāryāyāṃ sa prajāyatu*
+[13,4573.] *na prajāsyatha patniṣu*
+[R. 1,38,6.] *prajāyasva*
+[MBH. 1,8343.] [4660.] *śreyasā cetprajāyate*
+[M. 10,64.] *na prajāsyati cāpyeṣa mānuṣeṣu*
+[MBH. 1,3958.] *saptavarṣāṣṭavarṣāśca prajāsyanti narāstadā*
+[3,13058.] *tayārcaṃ cchrāmyaṃścacāra prajākāmastayemāṃ prajātiṃ prajajñe*
+[ŚAT. BR. 1,8,1,10.] *imāṃ prajātiṃ prājāyanta*
+[2,2,4,18.] *yā prajāyate*
+[ŚĀṄKH. GṚHY. 3,10. 5,7.] *sā — prajajñe — kumāram*
+[MBH. 1,1927.] [2624.] [2629.] [3423.] [6072.] *prajāyantesutānnāryaḥ*
+[3,13639.] *kanyām — prājāyata*
+[BENF. Chr. 50,14.] *na prajāsyati*
+[MBH. 1,4526.] [3,14765.] *nārī prajaniṣyamāṇā* der Zeit des Gebärens nahe
+[SUŚR. 1,368,7.] *prajātā* die da geboren hat
+[AK. 2,6,1,6.]
+[H. 539.] *yamau prajātā*
+[ŚĀṄKH. ŚR. 3,4,14.]
+[KĀTY. ŚR. 25,11,17.]
+[MBH. 1,3046.] [3927.]
+[HARIV. 3371.]
+[SUŚR. 1,370,17.] *dāsīnāmaprajātānām*
+[MBH. 5,3047.] *ṛtaprajātā* die rechtzeitig entbunden ist, rechtzeitig gebärend
+[AV. 1,11,1.]
+
+- **RU:** — 3) размножаться посредством, в (instr.); зачинать, рожать; с acc.: *pra jāyemahi prajābhiḥ*
+[ṚV. 2,33,1.] *pra jāyante vīrudhaśca prajābhiḥ*
+[35,8.] [6,70,3.] *prajayā paśubhiḥ*
+[ŚAT. BR. 14,9,2,6.] *ihaivota pra jāyadhvam*
+[AV. 3,14,4.] *tāvatyo haivābhaviṣyanna prājaniṣyanta*
+[ŚAT. BR. 4,3,1,25.] *(prajāpatiḥ) aikṣata kathaṃ nu prajāyeya*
+[2,2,4,1.] [14,4,2,30.] *prajāyamānā retasā*
+[9,2,8.] *upasthaṃ prajaniṣyamāṇo 'bhimṛśet*
+[ŚĀṄKH. GṚHY. 1,19.] *agniḥ svaṃ retaḥ prajaniṣyate* дать стать рождением
+[ŚAT. BR. 2,2,4,17.] *menakāyāṃ prajajñivān . gandharvarājaḥ*
+[MBH. 1,943.] *anṛtau vratī jaṭī caiva bhāryāyāṃ sa prajāyatu*
+[13,4573.] *na prajāsyatha patniṣu*
+[R. 1,38,6.] *prajāyasva*
+[MBH. 1,8343.] [4660.] *śreyasā cetprajāyate*
+[M. 10,64.] *na prajāsyati cāpyeṣa mānuṣeṣu*
+[MBH. 1,3958.] *saptavarṣāṣṭavarṣāśca prajāsyanti narāstadā*
+[3,13058.] *tayārcaṃ cchrāmyaṃścacāra prajākāmastayemāṃ prajātiṃ prajajñe*
+[ŚAT. BR. 1,8,1,10.] *imāṃ prajātiṃ prājāyanta*
+[2,2,4,18.] *yā prajāyate*
+[ŚĀṄKH. GṚHY. 3,10. 5,7.] *sā — prajajñe — kumāram*
+[MBH. 1,1927.] [2624.] [2629.] [3423.] [6072.] *prajāyantesutānnāryaḥ*
+[3,13639.] *kanyām — prājāyata*
+[BENF. Chr. 50,14.] *na prajāsyati*
+[MBH. 1,4526.] [3,14765.] *nārī prajaniṣyamāṇā* близкая к сроку родов
+[SUŚR. 1,368,7.] *prajātā* та, что родила
+[AK. 2,6,1,6.]
+[H. 539.] *yamau prajātā*
+[ŚĀṄKH. ŚR. 3,4,14.]
+[KĀTY. ŚR. 25,11,17.]
+[MBH. 1,3046.] [3927.]
+[HARIV. 3371.]
+[SUŚR. 1,370,17.] *dāsīnāmaprajātānām*
+[MBH. 5,3047.] *ṛtaprajātā* разрешившаяся в срок, рожающая вовремя
+[AV. 1,11,1.]
+- **EN:** — 3) to propagate oneself through, in (instr.); to beget, to bear; with the acc.: *pra jāyemahi prajābhiḥ*
+[ṚV. 2,33,1.] *pra jāyante vīrudhaśca prajābhiḥ*
+[35,8.] [6,70,3.] *prajayā paśubhiḥ*
+[ŚAT. BR. 14,9,2,6.] *ihaivota pra jāyadhvam*
+[AV. 3,14,4.] *tāvatyo haivābhaviṣyanna prājaniṣyanta*
+[ŚAT. BR. 4,3,1,25.] *(prajāpatiḥ) aikṣata kathaṃ nu prajāyeya*
+[2,2,4,1.] [14,4,2,30.] *prajāyamānā retasā*
+[9,2,8.] *upasthaṃ prajaniṣyamāṇo 'bhimṛśet*
+[ŚĀṄKH. GṚHY. 1,19.] *agniḥ svaṃ retaḥ prajaniṣyate* to cause to become a birth
+[ŚAT. BR. 2,2,4,17.] *menakāyāṃ prajajñivān . gandharvarājaḥ*
+[MBH. 1,943.] *anṛtau vratī jaṭī caiva bhāryāyāṃ sa prajāyatu*
+[13,4573.] *na prajāsyatha patniṣu*
+[R. 1,38,6.] *prajāyasva*
+[MBH. 1,8343.] [4660.] *śreyasā cetprajāyate*
+[M. 10,64.] *na prajāsyati cāpyeṣa mānuṣeṣu*
+[MBH. 1,3958.] *saptavarṣāṣṭavarṣāśca prajāsyanti narāstadā*
+[3,13058.] *tayārcaṃ cchrāmyaṃścacāra prajākāmastayemāṃ prajātiṃ prajajñe*
+[ŚAT. BR. 1,8,1,10.] *imāṃ prajātiṃ prājāyanta*
+[2,2,4,18.] *yā prajāyate*
+[ŚĀṄKH. GṚHY. 3,10. 5,7.] *sā — prajajñe — kumāram*
+[MBH. 1,1927.] [2624.] [2629.] [3423.] [6072.] *prajāyantesutānnāryaḥ*
+[3,13639.] *kanyām — prājāyata*
+[BENF. Chr. 50,14.] *na prajāsyati*
+[MBH. 1,4526.] [3,14765.] *nārī prajaniṣyamāṇā* near the time of giving birth
+[SUŚR. 1,368,7.] *prajātā* she who has given birth
+[AK. 2,6,1,6.]
+[H. 539.] *yamau prajātā*
+[ŚĀṄKH. ŚR. 3,4,14.]
+[KĀTY. ŚR. 25,11,17.]
+[MBH. 1,3046.] [3927.]
+[HARIV. 3371.]
+[SUŚR. 1,370,17.] *dāsīnāmaprajātānām*
+[MBH. 5,3047.] *ṛtaprajātā* she who is delivered at the right time, giving birth at the right time
+[AV. 1,11,1.]
+  <sub>DCS 9250 · attested</sub>
+
+**4)** — Vgl. *aprajajñi, ṛtaprajāta, praja* u. s. w. — caus. *prajanayāmakaḥ*
+[P. 3,1,42.] Jmd (acc.) sich fortpflanzen lassen durch (instr.); fortpflanzen, entstehen lassen: *pra no janaya gobhiraśvaiḥ*
+[ṚV. 7,41,3.]
+[AV. 10,7,26.] [15,1,2.]
+[ŚAT. BR. 3,8,4,10.] [4,3,1,22.] *prajāṃ prajanayāvahai*
+[ĀŚV. GṚHY. 1,7.] zur Geburt werden lassen: *yathā taddevā retaḥ prājanayan*
+[ŚAT. BR. 1,7,4,4.] — desid. *prajijaniṣamāṇa* in's Leben treten wollend
+[ŚAT. BR. 7,4,1,14.] — desid. vom caus. zur Zeugung —, zum Leben bringen wollen: *yathānyasyāṃ yonau retaḥ siktaṃ tadanyasyāṃ prajijanayiṣet* wie wenn er den Samen, der in einen Schooss gegossen ist, in einem andern sich zur Frucht entwickeln lassen wollte
+[ŚAT. BR. 12,5,1,13.] *prajijanayiṣitavya*
+[7,3,1,12.]
+
+- **RU:** — Vgl. *aprajajñi, ṛtaprajāta, praja* u. s. w. — caus. *prajanayāmakaḥ*
+[P. 3,1,42.] кого-л. (acc.) заставить размножиться посредством (instr.); размножать, давать возникнуть: *pra no janaya gobhiraśvaiḥ*
+[ṚV. 7,41,3.]
+[AV. 10,7,26.] [15,1,2.]
+[ŚAT. BR. 3,8,4,10.] [4,3,1,22.] *prajāṃ prajanayāvahai*
+[ĀŚV. GṚHY. 1,7.] дать стать рождением: *yathā taddevā retaḥ prājanayan*
+[ŚAT. BR. 1,7,4,4.] — desid. *prajijaniṣamāṇa* желающий вступить в жизнь
+[ŚAT. BR. 7,4,1,14.] — desid. от caus. желая производить к зачатию —, к жизни: *yathānyasyāṃ yonau retaḥ siktaṃ tadanyasyāṃ prajijanayiṣet* как если бы он хотел дать развиться в плод в другом лоне семени, влитому в одно
+[ŚAT. BR. 12,5,1,13.] *prajijanayiṣitavya*
+[7,3,1,12.]
+- **EN:** — Vgl. *aprajajñi, ṛtaprajāta, praja* u. s. w. — caus. *prajanayāmakaḥ*
+[P. 3,1,42.] (causative) to cause someone (acc.) to propagate themselves through (instr.); to propagate, to cause to arise: *pra no janaya gobhiraśvaiḥ*
+[ṚV. 7,41,3.]
+[AV. 10,7,26.] [15,1,2.]
+[ŚAT. BR. 3,8,4,10.] [4,3,1,22.] *prajāṃ prajanayāvahai*
+[ĀŚV. GṚHY. 1,7.] to cause to become a birth: *yathā taddevā retaḥ prājanayan*
+[ŚAT. BR. 1,7,4,4.] — desid. *prajijaniṣamāṇa* wishing to step into life
+[ŚAT. BR. 7,4,1,14.] — desid. of the caus. wishing to bring to procreation, to bring to life: *yathānyasyāṃ yonau retaḥ siktaṃ tadanyasyāṃ prajijanayiṣet* as if he wished to let the seed, poured into one womb, develop into fruit in another
+[ŚAT. BR. 12,5,1,13.] *prajijanayiṣitavya*
+[7,3,1,12.]
+  <sub>DCS 9250 · attested</sub>
+
+## jan (anupra)
+
+`jan~~h0_19_anupra`
+
+
+**1)** — *anupra*
+ 1) nach Etwas geboren werden: *saṃvatsaraṃ prajāḥ paśavo 'nu prajāyante*
+[TS. 1,5,1,3.] [3,3,6,3.] [5,4,11,2.]
+[LĀṬY. 3,5,5.] *yadvai meto mahadevābhvaṃ nānuprajāyeta*
+[ŚAT. BR. 3,2,1,27.]
+
+- **RU:** — *anupra*
+ 1) рождаться вслед за чем-л.: *saṃvatsaraṃ prajāḥ paśavo 'nu prajāyante*
+[TS. 1,5,1,3.] [3,3,6,3.] [5,4,11,2.]
+[LĀṬY. 3,5,5.] *yadvai meto mahadevābhvaṃ nānuprajāyeta*
+[ŚAT. BR. 3,2,1,27.]
+- **EN:** — *anupra*
+ 1) to be born after something: *saṃvatsaraṃ prajāḥ paśavo 'nu prajāyante*
+[TS. 1,5,1,3.] [3,3,6,3.] [5,4,11,2.]
+[LĀṬY. 3,5,5.] *yadvai meto mahadevābhvaṃ nānuprajāyeta*
+[ŚAT. BR. 3,2,1,27.]
+  <sub>DCS 9250 · attested</sub>
+
+**2)** — 2) fort und fort zeugen (?): *prajāmanuprajāyante śmaśānāntakriyākṛtaḥ*
+[BHĀG. P. 3,32,30.] — caus. nach Etwas geboren werden lassen: *idaṃ sarvamanuprajanayati*
+[ŚAT. BR. 2,3,4,8.]
+
+- **RU:** — 2) непрестанно рождать (?): *prajāmanuprajāyante śmaśānāntakriyākṛtaḥ*
+[BHĀG. P. 3,32,30.] — caus. заставить родиться вслед за чем-л.: *idaṃ sarvamanuprajanayati*
+[ŚAT. BR. 2,3,4,8.]
+- **EN:** — 2) to beget continually, one after another (?): *prajāmanuprajāyante śmaśānāntakriyākṛtaḥ*
+[BHĀG. P. 3,32,30.] — caus. to cause to be born after something: *idaṃ sarvamanuprajanayati*
+[ŚAT. BR. 2,3,4,8.]
+  <sub>DCS 9250 · attested</sub>
+
+## jan (apapra)
+
+`jan~~h0_20_apapra`
+
+
+**1)** — *apapra* partic. *apaprajātā* die eine Fehlgeburt gemacht hat
+[SUŚR. 2,398,21. 401,2. 413,4.]
+
+- **RU:** — *apapra* partic. *apaprajātā* та, что сделала выкидыш
+[SUŚR. 2,398,21. 401,2. 413,4.]
+- **EN:** — *apapra* partic. *apaprajātā* who has had a miscarriage [SUŚR. 2,398,21. 401,2. 413,4.]
+  <sub>DCS 9250 · attested</sub>
+
+## jan (aBipra)
+
+`jan~~h0_21_a_bipra`
+
+
+**1)** — *abhipra* caus. für Etwas erzeugen: *imamevaitallokamimāḥ prajā abhiprajanayati*
+[ŚAT. BR. 1,9,2,13.] [3,8,5,4.]
+
+- **RU:** — *abhipra* caus. порождать для чего-л.: *imamevaitallokamimāḥ prajā abhiprajanayati*
+[ŚAT. BR. 1,9,2,13.] [3,8,5,4.]
+- **EN:** — *abhipra* caus. to beget for something: *imamevaitallokamimāḥ prajā abhiprajanayati* [ŚAT. BR. 1,9,2,13.] [3,8,5,4.]
+  <sub>DCS 9250 · attested</sub>
+
+## jan (upapra+jan)
+
+`jan~~h0_22_upapra`
+
+
+**1)** — *upapra* hinzugeboren werden: *yathā manuṣyā devānupaprajaniṣyante*
+[KĀṬH.] in [Ind. St. 3,463.]
+
+- **RU:** — *upapra* дополнительно рождаться: *yathā manuṣyā devānupaprajaniṣyante*
+[KĀṬH.] in [Ind. St. 3,463.]
+- **EN:** — *upapra* to be born in addition: *yathā manuṣyā devānupaprajaniṣyante* [KĀṬH.] in [Ind. St. 3,463.]
+  <sub>DCS 9250 · attested</sub>
+
+## jan (saMpra+jan)
+
+`jan~~h0_23_sa_mpra`
+
+
+**1)** — *saṃpra*
+ 1) entstehen, zum Vorschein kommen, sich zeigen: *uttarāduttaraṃvākyaṃ *
+
+* vadatāṃ saṃprajāyate*
+[PAÑCAT. I,69.] *īdṛśā bahavastatra samutpātā bhayāvahāḥ* — *saṃprajajñire*
+[R. 6,90,32.] da sein: *antyajo 'pi yadā sākṣī vivāde saṃprajāyate . na tatra yujyate divyam*
+[PAÑCAT. I,452.]
+
+- **RU:** — *saṃpra*
+ 1) возникать, появляться, обнаруживаться: *uttarāduttaraṃvākyaṃ *
+
+* vadatāṃ saṃprajāyate*
+[PAÑCAT. I,69.] *īdṛśā bahavastatra samutpātā bhayāvahāḥ* — *saṃprajajñire*
+[R. 6,90,32.] существовать, быть налицо: *antyajo 'pi yadā sākṣī vivāde saṃprajāyate . na tatra yujyate divyam*
+[PAÑCAT. I,452.]
+- **EN:** — *saṃpra*
+ 1) to arise, to come into appearance, to show itself: *uttarāduttaraṃvākyaṃ *
+
+* vadatāṃ saṃprajāyate*
+[PAÑCAT. I,69.] *īdṛśā bahavastatra samutpātā bhayāvahāḥ* — *saṃprajajñire*
+[R. 6,90,32.] to be present, to exist: *antyajo 'pi yadā sākṣī vivāde saṃprajāyate . na tatra yujyate divyam*
+[PAÑCAT. I,452.]
+  <sub>DCS 9250 · attested</sub>
+
+**2)** — 2) wiedergeboren werden: *sārikā saṃprajāyate*
+[MBH. 13,5459.] [5508.]
+
+- **RU:** — 2) возрождаться, рождаться вновь: *sārikā saṃprajāyate*
+[MBH. 13,5459.] [5508.]
+- **EN:** — 2) to be born again: *sārikā saṃprajāyate*
+[MBH. 13,5459.] [5508.]
+  <sub>DCS 9250 · attested</sub>
+
+**3)** — 3) *saṃprajātā* gekalbt habend: *˚tāsu goṣu*
+[GOBH. 3,6,4. 5.]
+
+- **RU:** — 3) *saṃprajātā* отелившаяся: *˚tāsu goṣu*
+[GOBH. 3,6,4. 5.]
+- **EN:** — 3) *saṃprajātā* having calved: *˚tāsu goṣu*
+[GOBH. 3,6,4. 5.]
+  <sub>DCS 9250 · attested</sub>
+
+## jan (prati+jan)
+
+`jan~~h0_24_prati`
+
+
+**1)** — *prati* wiedergeboren werden, von Neuem entstehen: *prajāpatiścarasi garbhe tvameva pratijāyase*
+[PRAŚNOP. 2,8.] *pratijātakopa*
+[MBH. 6,2651.]
+
+- **RU:** — *prati* возрождаться, возникать заново: *prajāpatiścarasi garbhe tvameva pratijāyase*
+[PRAŚNOP. 2,8.] *pratijātakopa*
+[MBH. 6,2651.]
+- **EN:** — *prati* to be reborn, to come into being anew: *prajāpatiścarasi garbhe tvameva pratijāyase* [PRAŚNOP. 2,8.] *pratijātakopa* [MBH. 6,2651.]
+  <sub>DCS 9250 · attested</sub>
+
+## jan (vi+jan)
+
+`jan~~h0_25_vi`
+
+
+**1)** — *vi*
+ 1) geboren werden, entstehen: *narāśaṃso bhavati yadvijāyate*
+[ṚV. 3,29,11.] [9,108,12.]
+[AV. 9,3,20.] *yūnā ha santā prathamaṃ vi jajñatuḥ*
+[ṚV. 9,68,5.] *mahadvi jajñe akṣaraṃ pade goḥ*
+[3,55,1.] *amṛtam*
+[9,74,4.] *varuṇasya bhāryā yā jyeṣṭhā śukrāddevī vyajāyata*
+[MBH. 1,2616.] *andha eva vyājāyata*
+[2720.] [R. 1,16,20.] *sādhyāyāṃ vai vyajāyata*
+[HARIV. 11540.] *vijajñivān . hrasvo 'timātraḥ puruṣaḥ*
+[HARIV. 308.] *tasya — mūrghni dhūmo vyajāyata*
+[R. 1,68,8.] *vijāta = jāta* geboren
+[H. an. 3,301.]
+[MBH. 12,1042.] *duḥkhānmumūrṣā me vyajāyata*
+[2,1899.] *mānātkrodho vyajāyata*
+[3,8494.]
+
+- **RU:** — *vi*
+ 1) рождаться, возникать: *narāśaṃso bhavati yadvijāyate*
+[ṚV. 3,29,11.] [9,108,12.]
+[AV. 9,3,20.] *yūnā ha santā prathamaṃ vi jajñatuḥ*
+[ṚV. 9,68,5.] *mahadvi jajñe akṣaraṃ pade goḥ*
+[3,55,1.] *amṛtam*
+[9,74,4.] *varuṇasya bhāryā yā jyeṣṭhā śukrāddevī vyajāyata*
+[MBH. 1,2616.] *andha eva vyājāyata*
+[2720.] [R. 1,16,20.] *sādhyāyāṃ vai vyajāyata*
+[HARIV. 11540.] *vijajñivān . hrasvo 'timātraḥ puruṣaḥ*
+[HARIV. 308.] *tasya — mūrghni dhūmo vyajāyata*
+[R. 1,68,8.] *vijāta = jāta* рождённый
+[H. an. 3,301.]
+[MBH. 12,1042.] *duḥkhānmumūrṣā me vyajāyata*
+[2,1899.] *mānātkrodho vyajāyata*
+[3,8494.]
+- **EN:** — *vi*
+ 1) to be born, to arise: *narāśaṃso bhavati yadvijāyate*
+[ṚV. 3,29,11.] [9,108,12.]
+[AV. 9,3,20.] *yūnā ha santā prathamaṃ vi jajñatuḥ*
+[ṚV. 9,68,5.] *mahadvi jajñe akṣaraṃ pade goḥ*
+[3,55,1.] *amṛtam*
+[9,74,4.] *varuṇasya bhāryā yā jyeṣṭhā śukrāddevī vyajāyata*
+[MBH. 1,2616.] *andha eva vyājāyata*
+[2720.] [R. 1,16,20.] *sādhyāyāṃ vai vyajāyata*
+[HARIV. 11540.] *vijajñivān . hrasvo 'timātraḥ puruṣaḥ*
+[HARIV. 308.] *tasya — mūrghni dhūmo vyajāyata*
+[R. 1,68,8.] *vijāta = jāta* born
+[H. an. 3,301.]
+[MBH. 12,1042.] *duḥkhānmumūrṣā me vyajāyata*
+[2,1899.] *mānātkrodho vyajāyata*
+[3,8494.]
+  <sub>DCS 9250 · attested</sub>
+
+**2)** — 2) sich verwandeln in, werden zu: *sā kanyā tapasā tena dehārdhena vyajāyata . nadī ca rājanvatseṣu kanyā caivābhavattadā ..*
+[MBH. 5,7368.] *vijāta = vikṛta*
+[H. an. 3,301.]
+
+- **RU:** — 2) превращаться во что-л., становиться: *sā kanyā tapasā tena dehārdhena vyajāyata . nadī ca rājanvatseṣu kanyā caivābhavattadā ..*
+[MBH. 5,7368.] *vijāta = vikṛta*
+[H. an. 3,301.]
+- **EN:** — 2) to change into, to become: *sā kanyā tapasā tena dehārdhena vyajāyata . nadī ca rājanvatseṣu kanyā caivābhavattadā ..*
+[MBH. 5,7368.] *vijāta = vikṛta*
+[H. an. 3,301.]
+  <sub>DCS 9250 · attested</sub>
+
+**3)** — 3) zeugen, gebären, zur Welt bringen: *paśustiṣṭhangarbhaṃ dhitvānupaviśya vijāyate*
+[ŚAT. BR. 7,4,1,2.] *yatra vijāyate yaminyapartuḥ*
+[AV. 3,28,1.] *yacchālāyāṃ vijāyate*
+[9,3,13.] *ajāyamāno bahudhā vi jāyate*
+[VS. 31,19.] *(aśvataryaḥ) na vijāyante* pflanzen sich nicht fort
+[AIT. BR. 4,9.] *(oṣadhayaḥ) baḥvīrvi jāyante*
+[AV. 11,4,3.] *strī*
+[ŚAT. BR. 1,3,3,6.] *ajā triḥ saṃvatsarasya vijāyate*
+[3,3,3,8.] [4,5,5,6.] *kāmamā vijanitoḥ saṃbhavema*
+[TS. 2,5,1,5.] — *tasmātputraṃ vyajāyata*
+[R. 1,70,35.] *yakṣī putraṃ vyajāyata*
+[27,8.] [39,17.] [3,20,28.] [32.] [MBH. 1,2554.] [2621.] [3762.] [3,8843.] [HARIV. 11535.] [BHĀG. P. 9,9,39.] *samāṃ samāṃ vijāyate*
+[P. 5,2,12.]
+[H. 1271.] *vijātā* die geboren hat
+[H. 539.]
+[an. 3,301.]
+
+- **RU:** — 3) производить на свет, рожать, порождать: *paśustiṣṭhangarbhaṃ dhitvānupaviśya vijāyate*
+[ŚAT. BR. 7,4,1,2.] *yatra vijāyate yaminyapartuḥ*
+[AV. 3,28,1.] *yacchālāyāṃ vijāyate*
+[9,3,13.] *ajāyamāno bahudhā vi jāyate*
+[VS. 31,19.] *(aśvataryaḥ) na vijāyante* не размножаются
+[AIT. BR. 4,9.] *(oṣadhayaḥ) baḥvīrvi jāyante*
+[AV. 11,4,3.] *strī*
+[ŚAT. BR. 1,3,3,6.] *ajā triḥ saṃvatsarasya vijāyate*
+[3,3,3,8.] [4,5,5,6.] *kāmamā vijanitoḥ saṃbhavema*
+[TS. 2,5,1,5.] — *tasmātputraṃ vyajāyata*
+[R. 1,70,35.] *yakṣī putraṃ vyajāyata*
+[27,8.] [39,17.] [3,20,28.] [32.] [MBH. 1,2554.] [2621.] [3762.] [3,8843.] [HARIV. 11535.] [BHĀG. P. 9,9,39.] *samāṃ samāṃ vijāyate*
+[P. 5,2,12.]
+[H. 1271.] *vijātā* родившая
+[H. 539.]
+[an. 3,301.]
+- **EN:** — 3) to beget, to give birth to, to bring into the world: *paśustiṣṭhangarbhaṃ dhitvānupaviśya vijāyate*
+[ŚAT. BR. 7,4,1,2.] *yatra vijāyate yaminyapartuḥ*
+[AV. 3,28,1.] *yacchālāyāṃ vijāyate*
+[9,3,13.] *ajāyamāno bahudhā vi jāyate*
+[VS. 31,19.] *(aśvataryaḥ) na vijāyante* they do not propagate themselves
+[AIT. BR. 4,9.] *(oṣadhayaḥ) baḥvīrvi jāyante*
+[AV. 11,4,3.] *strī*
+[ŚAT. BR. 1,3,3,6.] *ajā triḥ saṃvatsarasya vijāyate*
+[3,3,3,8.] [4,5,5,6.] *kāmamā vijanitoḥ saṃbhavema*
+[TS. 2,5,1,5.] — *tasmātputraṃ vyajāyata*
+[R. 1,70,35.] *yakṣī putraṃ vyajāyata*
+[27,8.] [39,17.] [3,20,28.] [32.] [MBH. 1,2554.] [2621.] [3762.] [3,8843.] [HARIV. 11535.] [BHĀG. P. 9,9,39.] *samāṃ samāṃ vijāyate*
+[P. 5,2,12.]
+[H. 1271.] *vijātā* who has given birth
+[H. 539.]
+[an. 3,301.]
+— Vgl. *avijāta, vijanana* u. s. w.
+  <sub>DCS 9250 · attested</sub>
+
+**4)** — Vgl. *avijāta, vijanana* u. s. w.
+
+- **RU:** — Vgl. *avijāta, vijanana* u. s. w.
+  <sub>DCS 9250 · attested</sub>
+
+## jan (sam+jan)
+
+`jan~~h0_26_sam`
+
+
+**1)** — *sam*
+ 1) mit Etwas (ausgestattet) geboren werden: *saṃ dakṣeṇa manasā jāyate kaviḥ*
+[ṚV. 9,68,5.] zugleich mit Etwas erscheinen: *samuṣadbhirajāyathāḥ*
+[1,6,3.] *agniryatrābhimathyate* u. s. w. *tatra saṃjāyate manaḥ*
+[ŚVETĀŚV. UP. 2,6.]
+
+- **RU:** — *sam*
+ 1) родиться (наделённым) чем-л.: *saṃ dakṣeṇa manasā jāyate kaviḥ*
+[ṚV. 9,68,5.] появляться одновременно с чем-л.: *samuṣadbhirajāyathāḥ*
+[1,6,3.] *agniryatrābhimathyate* u. s. w. *tatra saṃjāyate manaḥ*
+[ŚVETĀŚV. UP. 2,6.]
+- **EN:** — *sam*
+ 1) to be born (endowed) with something: *saṃ dakṣeṇa manasā jāyate kaviḥ*
+[ṚV. 9,68,5.] to appear together with something: *samuṣadbhirajāyathāḥ*
+[1,6,3.] *agniryatrābhimathyate* u. s. w. *tatra saṃjāyate manaḥ*
+[ŚVETĀŚV. UP. 2,6.]
+  <sub>DCS 9250 · attested</sub>
+
+**2)** — 2) geboren werden, entstehen, sich einstellen, zum Vorschein kommen, sich zeigen: *tataḥ saṃjajñire vīrāḥ kṣitāviha narādhipāḥ*
+[MBH. 1,2695.] *putraśataṃ pūrṇaṃ dhṛtarāṣṭrasya — saṃjajñe*
+[4519.] *yāvatsaṃjāyate kiṃcitsattvaṃ sthāvarajaṅgamam*
+[BHAG. 13,26.] *bharatāt — samajāyata*
+[R. 1,70,27.] [19] *adityāṃ samajāyata*
+[31,16.] *tava kukṣau — saṃjaniṣyati*
+[R. 1,70,34.] *ardhasaṃjātaśasyā (vasuṃdharā)* halb emporgeschossen
+[N. 24,47.] *saṃjātaśītapiḍaka*
+[SUŚR. 1,113,1.] *tasya — svedo vai samajāyata*
+[MBH. 3,16748.] *jagāmastaṃ tataḥ sūryaḥ saṃdhyā ca samajāyata*
+[R. 3,16,38.] *strīsahasraninādaśca saṃjajñe rājaveśmani*
+[2,34,19.] *ādau citte* (so ist zu lesen) *tataḥ kāye satāṃ saṃjāyate jarā*
+[PAÑCAT. I,182.] *durbalānāṃ ca rakṣaṇāt . balaṃ saṃjāyate*
+[M. 8,172.] *saṅgātsaṃjāyate kāmaḥ*
+[BHAG. 2,62.] *yuddhābhilāṣaḥ*
+[HARIV. 9861.] *mūrcchā*
+[MBH. 1,5886.] *vismayaḥ*
+[7,4066.] *kāruṇyam*
+[R. 1,2,16.] *bhīḥ*
+[PAÑCAT. I,125.] *virāgaḥ*
+[BHĀG. P. 3,3,22.] *yathā saṃjāyate varṇaharaṇādiva bhūbhujām* wie es sich zu ereignen pflegt
+[RĀJA-TAR. 5,180.] *tatrākasmātkhe vāṇī saṃjātā*
+[PAÑCAT. 186,17.] *tadasya saṃjātam* ist entstanden, hat sich gezeigt
+[P. 5,2,36.] *rākṣasebhyaśca saṃjātaṃ bhayameṣām*
+[R. 3,1,14.] *idaṃ te cāru saṃjātaṃ yauvanaṃ vyativartate*
+[5,22,12.] *me mahatī prītiḥ saṃjātā*
+[PAÑCAT. 109,25.] *prayojane saṃjāte*
+[96,6.] *trayāṇāmapi maraṇaṃ saṃjātam* ereignete sich
+[VET. 33,11.] *parasparaṃ kaṭākṣanirīkṣaṇaṃ saṃjātam*
+[7,3. 23,18.] *tatra gatvā dakṣiṇādhipatinā *
+
+* saha darśanaṃ saṃjātam*
+[35,11.] *saṃjātakopa* _adj._ erzürnt
+[R. 3,28,14.] *˚pāśa*
+[ŚĀK. 32.] *˚nirveda*
+[KATHĀS. 4,26.] *˚viśrambha*
+[VID. 147.] *˚vepathu*
+[BHĀG. P. 4,17,28.]
+
+- **RU:** — 2) рождаться, возникать, наступать, появляться, обнаруживаться: *tataḥ saṃjajñire vīrāḥ kṣitāviha narādhipāḥ*
+[MBH. 1,2695.] *putraśataṃ pūrṇaṃ dhṛtarāṣṭrasya — saṃjajñe*
+[4519.] *yāvatsaṃjāyate kiṃcitsattvaṃ sthāvarajaṅgamam*
+[BHAG. 13,26.] *bharatāt — samajāyata*
+[R. 1,70,27.] [19] *adityāṃ samajāyata*
+[31,16.] *tava kukṣau — saṃjaniṣyati*
+[R. 1,70,34.] *ardhasaṃjātaśasyā (vasuṃdharā)* наполовину взошедший
+[N. 24,47.] *saṃjātaśītapiḍaka*
+[SUŚR. 1,113,1.] *tasya — svedo vai samajāyata*
+[MBH. 3,16748.] *jagāmastaṃ tataḥ sūryaḥ saṃdhyā ca samajāyata*
+[R. 3,16,38.] *strīsahasraninādaśca saṃjajñe rājaveśmani*
+[2,34,19.] *ādau citte* (так следует читать) *tataḥ kāye satāṃ saṃjāyate jarā*
+[PAÑCAT. I,182.] *durbalānāṃ ca rakṣaṇāt . balaṃ saṃjāyate*
+[M. 8,172.] *saṅgātsaṃjāyate kāmaḥ*
+[BHAG. 2,62.] *yuddhābhilāṣaḥ*
+[HARIV. 9861.] *mūrcchā*
+[MBH. 1,5886.] *vismayaḥ*
+[7,4066.] *kāruṇyam*
+[R. 1,2,16.] *bhīḥ*
+[PAÑCAT. I,125.] *virāgaḥ*
+[BHĀG. P. 3,3,22.] *yathā saṃjāyate varṇaharaṇādiva bhūbhujām* как это обычно случается
+[RĀJA-TAR. 5,180.] *tatrākasmātkhe vāṇī saṃjātā*
+[PAÑCAT. 186,17.] *tadasya saṃjātam* возникло, обнаружилось
+[P. 5,2,36.] *rākṣasebhyaśca saṃjātaṃ bhayameṣām*
+[R. 3,1,14.] *idaṃ te cāru saṃjātaṃ yauvanaṃ vyativartate*
+[5,22,12.] *me mahatī prītiḥ saṃjātā*
+[PAÑCAT. 109,25.] *prayojane saṃjāte*
+[96,6.] *trayāṇāmapi maraṇaṃ saṃjātam* произошло
+[VET. 33,11.] *parasparaṃ kaṭākṣanirīkṣaṇaṃ saṃjātam*
+[7,3. 23,18.] *tatra gatvā dakṣiṇādhipatinā *
+
+* saha darśanaṃ saṃjātam*
+[35,11.] *saṃjātakopa* _adj._ разгневавшись
+[R. 3,28,14.] *˚pāśa*
+[ŚĀK. 32.] *˚nirveda*
+[KATHĀS. 4,26.] *˚viśrambha*
+[VID. 147.] *˚vepathu*
+[BHĀG. P. 4,17,28.]
+- **EN:** — 2) to be born, to arise, to set in, to come into appearance, to show itself: *tataḥ saṃjajñire vīrāḥ kṣitāviha narādhipāḥ*
+[MBH. 1,2695.] *putraśataṃ pūrṇaṃ dhṛtarāṣṭrasya — saṃjajñe*
+[4519.] *yāvatsaṃjāyate kiṃcitsattvaṃ sthāvarajaṅgamam*
+[BHAG. 13,26.] *bharatāt — samajāyata*
+[R. 1,70,27.] [19] *adityāṃ samajāyata*
+[31,16.] *tava kukṣau — saṃjaniṣyati*
+[R. 1,70,34.] *ardhasaṃjātaśasyā (vasuṃdharā)* half shot up
+[N. 24,47.] *saṃjātaśītapiḍaka*
+[SUŚR. 1,113,1.] *tasya — svedo vai samajāyata*
+[MBH. 3,16748.] *jagāmastaṃ tataḥ sūryaḥ saṃdhyā ca samajāyata*
+[R. 3,16,38.] *strīsahasraninādaśca saṃjajñe rājaveśmani*
+[2,34,19.] *ādau citte* (thus it is to be read) *tataḥ kāye satāṃ saṃjāyate jarā*
+[PAÑCAT. I,182.] *durbalānāṃ ca rakṣaṇāt . balaṃ saṃjāyate*
+[M. 8,172.] *saṅgātsaṃjāyate kāmaḥ*
+[BHAG. 2,62.] *yuddhābhilāṣaḥ*
+[HARIV. 9861.] *mūrcchā*
+[MBH. 1,5886.] *vismayaḥ*
+[7,4066.] *kāruṇyam*
+[R. 1,2,16.] *bhīḥ*
+[PAÑCAT. I,125.] *virāgaḥ*
+[BHĀG. P. 3,3,22.] *yathā saṃjāyate varṇaharaṇādiva bhūbhujām* as it usually happens
+[RĀJA-TAR. 5,180.] *tatrākasmātkhe vāṇī saṃjātā*
+[PAÑCAT. 186,17.] *tadasya saṃjātam* has arisen, has shown itself
+[P. 5,2,36.] *rākṣasebhyaśca saṃjātaṃ bhayameṣām*
+[R. 3,1,14.] *idaṃ te cāru saṃjātaṃ yauvanaṃ vyativartate*
+[5,22,12.] *me mahatī prītiḥ saṃjātā*
+[PAÑCAT. 109,25.] *prayojane saṃjāte*
+[96,6.] *trayāṇāmapi maraṇaṃ saṃjātam* it happened
+[VET. 33,11.] *parasparaṃ kaṭākṣanirīkṣaṇaṃ saṃjātam*
+[7,3. 23,18.] *tatra gatvā dakṣiṇādhipatinā *
+
+* saha darśanaṃ saṃjātam*
+[35,11.] *saṃjātakopa* _adj._ enraged
+[R. 3,28,14.] *˚pāśa*
+[ŚĀK. 32.] *˚nirveda*
+[KATHĀS. 4,26.] *˚viśrambha*
+[VID. 147.] *˚vepathu*
+[BHĀG. P. 4,17,28.]
+  <sub>DCS 9250 · attested</sub>
+
+**3)** — 3) werden: *gatāsuriva saṃjajñe*
+[HARIV. 15925.]
+[R. 6,37,65.] *dvādaśavarṣā saṃjajñe*
+[PAÑCAT. 188,20.] *svavyāpāraparāṅmukhaḥ saṃjātaḥ*
+[32,9.] [VET. 4,9. 7,9.] [BHAṬṬ. 6,110.] *kiyānkālastavaivaṃ sthitasya saṃjātaḥ* wie viel Zeit ist verflossen, seitdem du so stehst?
+[PAÑCAT. 242,14.]
+
+- **RU:** — 3) становиться: *gatāsuriva saṃjajñe*
+[HARIV. 15925.]
+[R. 6,37,65.] *dvādaśavarṣā saṃjajñe*
+[PAÑCAT. 188,20.] *svavyāpāraparāṅmukhaḥ saṃjātaḥ*
+[32,9.] [VET. 4,9. 7,9.] [BHAṬṬ. 6,110.] *kiyānkālastavaivaṃ sthitasya saṃjātaḥ* сколько времени прошло с тех пор, как ты так стоишь?
+[PAÑCAT. 242,14.]
+- **EN:** — 3) to become: *gatāsuriva saṃjajñe*
+[HARIV. 15925.]
+[R. 6,37,65.] *dvādaśavarṣā saṃjajñe*
+[PAÑCAT. 188,20.] *svavyāpāraparāṅmukhaḥ saṃjātaḥ*
+[32,9.] [VET. 4,9. 7,9.] [BHAṬṬ. 6,110.] *kiyānkālastavaivaṃ sthitasya saṃjātaḥ* how much time has elapsed since you have been standing thus?
+[PAÑCAT. 242,14.]
+  <sub>DCS 9250 · attested</sub>
+
+**4)** — 4) gebären: *diggajaṃ caiva śaṅkhākhyaṃ śvetā vai samajāyata*
+[R. 3,20,27.] — caus. zeugen, gebären; bilden, bauen; erzeugen, hervorbringen, verursachen: *kaśyapastvasyāmādityānsamajījanat*
+[MBH. 1,3135.] *tasyāṃ saṃjanayāmāsa kurum*
+[6633.] [HARIV. 1799.] *tasyāṃ saṃjanayāṃ cakra ātmajām*
+[BHĀG. P. 4,28,30.] *putrān — mattaḥ saṃjanayiṣyatha*
+[R. 3,20,13.] *tatra saṃjanayāmāsa nānāgārāṇi*
+[MBH. 1,4995.] *bhinddhyanīkam — dvāraṃ saṃjanayasva naḥ*
+[7,1526.] *matsyaparivartanasaṃjanitaphena*
+[PAÑCAT. 188,10.] *tasya saṃjanayanharṣam*
+[BHAG. 1,12.] *(teṣām) bhedaṃ saṃjanayiṣyati*
+[MBH. 5,118.] *ratim*
+[R. 2,95,5.]
+[ṚT. 2,18.] *sukham*
+[SUŚR. 1,243,11.] *trāsam*
+[R. 3,43,35.]
+[HIT. III,23.] *(janakṣayaḥ) tvayā saṃjanitaḥ*
+[MBH. 7,3563.]
+
+- **RU:** — 4) рожать: *diggajaṃ caiva śaṅkhākhyaṃ śvetā vai samajāyata*
+[R. 3,20,27.] — caus. зачинать, рожать; создавать, строить; порождать, производить, вызывать: *kaśyapastvasyāmādityānsamajījanat*
+[MBH. 1,3135.] *tasyāṃ saṃjanayāmāsa kurum*
+[6633.] [HARIV. 1799.] *tasyāṃ saṃjanayāṃ cakra ātmajām*
+[BHĀG. P. 4,28,30.] *putrān — mattaḥ saṃjanayiṣyatha*
+[R. 3,20,13.] *tatra saṃjanayāmāsa nānāgārāṇi*
+[MBH. 1,4995.] *bhinddhyanīkam — dvāraṃ saṃjanayasva naḥ*
+[7,1526.] *matsyaparivartanasaṃjanitaphena*
+[PAÑCAT. 188,10.] *tasya saṃjanayanharṣam*
+[BHAG. 1,12.] *(teṣām) bhedaṃ saṃjanayiṣyati*
+[MBH. 5,118.] *ratim*
+[R. 2,95,5.]
+[ṚT. 2,18.] *sukham*
+[SUŚR. 1,243,11.] *trāsam*
+[R. 3,43,35.]
+[HIT. III,23.] *(janakṣayaḥ) tvayā saṃjanitaḥ*
+[MBH. 7,3563.]
+- **EN:** — 4) to give birth to: *diggajaṃ caiva śaṅkhākhyaṃ śvetā vai samajāyata*
+[R. 3,20,27.] — caus. to beget, to give birth to; to form, to build; to produce, to bring forth, to cause: *kaśyapastvasyāmādityānsamajījanat*
+[MBH. 1,3135.] *tasyāṃ saṃjanayāmāsa kurum*
+[6633.] [HARIV. 1799.] *tasyāṃ saṃjanayāṃ cakra ātmajām*
+[BHĀG. P. 4,28,30.] *putrān — mattaḥ saṃjanayiṣyatha*
+[R. 3,20,13.] *tatra saṃjanayāmāsa nānāgārāṇi*
+[MBH. 1,4995.] *bhinddhyanīkam — dvāraṃ saṃjanayasva naḥ*
+[7,1526.] *matsyaparivartanasaṃjanitaphena*
+[PAÑCAT. 188,10.] *tasya saṃjanayanharṣam*
+[BHAG. 1,12.] *(teṣām) bhedaṃ saṃjanayiṣyati*
+[MBH. 5,118.] *ratim*
+[R. 2,95,5.]
+[ṚT. 2,18.] *sukham*
+[SUŚR. 1,243,11.] *trāsam*
+[R. 3,43,35.]
+[HIT. III,23.] *(janakṣayaḥ) tvayā saṃjanitaḥ*
+[MBH. 7,3563.]
+  <sub>DCS 9250 · attested</sub>
+
+## jan (aBisam+jan)
+
+`jan~~h0_27_a_bisam`
+
+
+**1)** — *abhisam* entstehen, sich zeigen: *abhisaṃjātaharṣa*
+[HARIV. 13778.]
+
+- **RU:** — *abhisam* возникать, появляться: *abhisaṃjātaharṣa*
+[HARIV. 13778.]
+- **EN:** — *abhisam* to arise, to appear: *abhisaṃjātaharṣa* [HARIV. 13778.]
+  <sub>DCS 9250 · attested</sub>
+
+## jan (pratisam+jan)
+
+`jan~~h0_28_pratisam`
+
+
+**1)** — *pratisam* dass.: *(duḥkham) manasi pratisaṃjātam*
+[R. 2,22,7.]
+
+- **RU:** — *pratisam* dass.: *(duḥkham) manasi pratisaṃjātam*
+[R. 2,22,7.]
+- **EN:** — *pratisam* dass.: *(duḥkham) manasi pratisaṃjātam* [R. 2,22,7.]
+  <sub>DCS 9250 · attested</sub>
+
+## jan
+
+`jan~~h1_00_pwg00`
+
+
+**I.1)** *jan*¦ I.
+[Sp. 17, Z. 7] lies *ajanayamaherādhi* . — II. 6) vgl. *yo yasya jāyate vadhyaḥ* wem Jemand schon von der Geburt an als Schlachtopfer bestimmt ist
+[Spr. 2559.]
+- **EN:** *jan* I.
+[Sp. 17, Z. 7] read *ajanayamaherādhi*. — II. 6) vgl. *yo yasya jāyate vadhyaḥ* for whom someone is destined from birth on as a sacrificial victim [Spr. 2559.]
+
+**II.6.a)** — *abhi*
+ 1) *svaṃ tu karmābhijāyate* seine Geburt (d. i. die Art und Weise wie er geboren wird) richtet sich nach seinen eigenen Thaten, hängt v. s. e. Th. ab
+[Spr. 4314.]
+
+- **RU:** — *abhi*
+ 1) *svaṃ tu karmābhijāyate* его рождение (d. i. то, каким образом он рождается, определяется его собственными делами, зависит от s. некоего Th.
+[Spr. 4314.]
+- **EN:** — *abhi*
+ 1) *svaṃ tu karmābhijāyate* his birth (d. i. the manner in which he is born) is determined by his own deeds, depends on s. a Th.
+[Spr. 4314.]
+  <sub>DCS 9250 · attested</sub>
+
+**II.6.b)** — 2) *na sa bhūyo 'bhijāyate* der erlebt keine Wiedergeburt
+[BHĀG. 13,23.] [Spr. 3063.] Z. 2 lies 2,147 st. 2,247. — caus. von Neuem hervorrufen, beleben: *abhijñānamabhijanayitum*
+[SARVADARŚANAS. 117,7.]
+
+- **RU:** — 2) *na sa bhūyo 'bhijāyate* тот не переживает нового рождения
+[BHĀG. 13,23.] [Spr. 3063.] Z. 2 читай 2,147 st. 2,247. — caus. вновь вызывать к жизни, оживлять: *abhijñānamabhijanayitum*
+[SARVADARŚANAS. 117,7.]
+- **EN:** — 2) *na sa bhūyo 'bhijāyate* he who experiences no rebirth
+[BHĀG. 13,23.] [Spr. 3063.] Z. 2 read 2,147 st. 2,247. — caus. to call forth anew, to revive: *abhijñānamabhijanayitum*
+[SARVADARŚANAS. 117,7.]
+  <sub>DCS 9250 · attested</sub>
+
+**III.1)** — *upa*
+ 1)
+[PAÑCAV. BR. 19,3,3.]
+[ĀŚV. ŚR. 11,4,7.]
+[WEBER, JYOT. 95.] *upajāta* neu hinzugetreten
+[AV. PRĀT. 4,10.] Schol. zu [12. 46. 53.]
+
+- **RU:** — *upa*
+ 1)
+[PAÑCAV. BR. 19,3,3.]
+[ĀŚV. ŚR. 11,4,7.]
+[WEBER, JYOT. 95.] *upajāta* вновь присоединившийся
+[AV. PRĀT. 4,10.] Schol. zu [12. 46. 53.]
+- **EN:** — *upa*
+ 1)
+[PAÑCAV. BR. 19,3,3.]
+[ĀŚV. ŚR. 11,4,7.]
+[WEBER, JYOT. 95.] *upajāta* newly added
+[AV. PRĀT. 4,10.] Schol. to [12. 46. 53.]
+  <sub>DCS 9250 · attested</sub>
+
+**III.2)** — 2) *upajāyate* entsteht als Folge
+[SARVADARŚANAS. 2,7. 3,20.] Z. 9. fg. [MBH. 9,3482] ist zu streichen, da daselbst mit der [ed. Bomb.] *upayātam* gehet nach zu lesen ist.
+
+- **RU:** — 2) *upajāyate* возникает как следствие
+[SARVADARŚANAS. 2,7. 3,20.] Z. 9. fg. [MBH. 9,3482] следует вычеркнуть, так как там с [ed. Bomb.] *upayātam* следует за надлежит читать.
+- **EN:** — 2) *upajāyate* arises as a consequence
+[SARVADARŚANAS. 2,7. 3,20.] Z. 9. fg. [MBH. 9,3482] is to be deleted, since there [ed. Bomb.] *upayātam* goes after is to be read.
+  <sub>DCS 9250 · attested</sub>
+
+**III.4)** — 4) *tena nārada nārīṇāṃ satītvamupajāyate* darum giebt es Keuschheit bei den Frauen
+[Spr. 3308.] — caus. *prajāmevāsmā upajanayati*
+[PAÑCAV. BR. 19,3,3.] veranlassen
+[SARVADARŚANAS. 140,10.] *saṃśleṣamupajanayati* so v. a. versucht sie zu umarmen
+[MĀLAV. 54,10.]
+
+- **RU:** — 4) *tena nārada nārīṇāṃ satītvamupajāyate* поэтому существует целомудрие у женщин
+[Spr. 3308.] — caus. *prajāmevāsmā upajanayati*
+[PAÑCAV. BR. 19,3,3.] побудить
+[SARVADARŚANAS. 140,10.] *saṃśleṣamupajanayati* так v. a. пытается обнять её
+[MĀLAV. 54,10.]
+- **EN:** — 4) *tena nārada nārīṇāṃ satītvamupajāyate* therefore there is chastity among women
+[Spr. 3308.] — caus. *prajāmevāsmā upajanayati*
+[PAÑCAV. BR. 19,3,3.] to cause, occasion
+[SARVADARŚANAS. 140,10.] *saṃśleṣamupajanayati* so v. a. tries to embrace her
+[MĀLAV. 54,10.]
+  <sub>DCS 9250 · attested</sub>
+
+**I (corrigendum))** *jan*¦ I.
+[Sp. 17, Z. 7] lies *ajanayamaherādhi* .
+
+- **RU:** *jan*¦ I.
+[Sp. 17, Z. 7] читай *ajanayamaherādhi* .
+  <sub>DCS 9250 · attested</sub>
+
+**II.6 (corrigendum))** II. 6) vgl. *yo yasya jāyate vadhyaḥ* wem Jemand schon von der Geburt an als Schlachtopfer bestimmt ist
+[Spr. 2559.]
+
+- **RU:** II. 6) vgl. *yo yasya jāyate vadhyaḥ* тот, кому кто-л. уже от рождения предназначен в жертву
+[Spr. 2559.]
+  <sub>DCS 9250 · attested</sub>
+
+## jan
+
+`jan~~h2_00_pwg00`
+
+
+**1)** *jan*¦ mit *abhi*
+ 1) zu Etwas (nom. des partic. fut. pass.) da sein: *rakto 'bhijāyate bhogyo nārīṇāṃ śāṭako yathā*
+[Spr. (II) 5695.]
+
+- **RU:** *jan*¦ с *abhi*
+ 1) быть для чего-либо (nom. partic. fut. pass.), существовать: *rakto 'bhijāyate bhogyo nārīṇāṃ śāṭako yathā*
+[Spr. (II) 5695.]
+- **EN:** *jan*¦ with *abhi* 1) to exist for something (nom. of the partic. fut. pass.): *rakto 'bhijāyate bhogyo nārīṇāṃ śāṭako yathā* [Spr. (II) 5695.]
+  <sub>DCS 9250 · attested</sub>
+
+## jan
+
+`jan~~h0_zz_pw00`
+
+
+**1)** — 1〉 Trans. *janati, ˚te, janayati, ˚te, jāyate* (episch auch *jāyati*) und **jajanti*.
+- **EN:** — 1) Trans. *janati, ˚te, janayati, ˚te, jāyate* (epic also *jāyati*) and **jajanti*.
+
+**1a)** — a〉 zeugen, — mit (Loc.), gebären, — von (Abl.); erzeugen, hervorbringen, verursachen, gignere.
+- **EN:** — a) to beget, — with (Loc.), to bear, — of (Abl.); to generate, bring forth, cause, gignere.
+
+**1b)** — b〉 Caus. geboren werden lassen.
+- **EN:** — b) Caus. to cause to be born.
+
+**1c)** — c〉 bestimmen —, machen zu (Dat.).
+- **EN:** — c) to destine —, to make into (Dat.).
+
+**1d)** — d〉 erzeugen als, bewirken dass ist; mit doppeltem Acc. [329,6].
+- **EN:** — d) to engender as, to bring about that (something) is; with double Acc. [329,6].
+
+**1e)** — e〉 schaffen, verschaffen.
+- **EN:** — e) to create, to procure.
+
+**2)** — 2〉 Intrans. *janite, jāyate* (episch auch *jāyati*), **janyate*. Episch auch *jajñus* und *janiṣyati*.
+- **EN:** — 2) Intrans. *janite, jāyate* (epic also *jāyati*), **janyate*. Epic also *jajñus* and *janiṣyati*.
+
+**2a)** — a〉 erzeugt —, geboren —, hervorgebracht werden, wachsen, entstehen.
+- **EN:** — a) to be engendered —, be born —, be brought forth, to grow, to arise.
+
+**2b)** — b〉 geboren werden als, von Geburt oder Natur sein; mit doppeltem Nom. [51,9]. [Spr. 5643].
+- **EN:** — b) to be born as, to be by birth or nature; with double Nom. [51,9]. [Spr. 5643].
+
+**2c)** — c〉 geboren werden —, von der Geburt an bestimmt sein zu (Acc.).
+- **EN:** — c) to be born —, to be destined from birth for (Acc.).
+
+**2d)** — d〉 wiedergeboren werden.
+- **EN:** — d) to be born again.
+
+**2e)** — e〉 werden, sein, dass Prädicat im Nom.
+- **EN:** — e) to become, to be — the predicate standing in Nom.
+
+**2f)** — f〉 *werden zu, verwandelt werden in (Dat.) [229,3].
+- **EN:** — f) *to become, to be transformed into (Dat.) [229,3].
+
+**2g)** — g〉 erfolgen, eintreten, Statt finden.
+- **EN:** — g) to ensue, to occur, to take place.
+
+**2h)** — h〉 möglich —, zulässig sein.
+- **EN:** — h) to be possible —, to be admissible.
+
+**3)** — 3〉 Partic. *jāta*
+- **EN:** — 3) Partic. *jāta*
+
+**3a)** — a〉 geboren, — von (Loc.), erzeugt von (Instr. oder Abl.), — mit (Loc.), neugeboren, gewachsen, entstanden, — aus (Abl.), zum Vorschein gekommen. Am Ende eines Comp.
+- **EN:** — a) born, — of (Loc.), begotten by (Instr. or Abl.), — with (Loc.), newborn, grown, arisen — from (Abl.), come to appear. At the end of a Comp.
+
+**3a-alpha)** — α〉 geboren vor so und so langer Zeit, so und so alt.
+- **EN:** — α) born such-and-such a time ago, such-and-such years old.
+
+**3a-beta)** — β〉 entstanden —, sich zeigend an.
+- **EN:** — β) arisen —, showing itself on.
+
+**3b)** — b〉 geboren —, von Natur bestimmt zu (Dat.) [ṚV. 4,20,6. 9,94,4].
+- **EN:** — b) born —, destined by nature for (Dat.) [ṚV. 4,20,6. 9,94,4].
+
+**3c)** — c〉 geworden. _n._ impers. mit doppeltem Instr.
+- **EN:** — c) become. _n._ impers. with double Instr.
+
+**3d)** — d〉 geworden —, gereichend zu (Dat.) [Spr. 2932].
+- **EN:** — d) become —, redounding to (Dat.) [Spr. 2932].
+
+**3e)** — e〉 erfolgt, eingetreten, geschehen, verstrichen (Zeit [Ind. St. 15,314]).
+- **EN:** — e) ensued, occurred, happened, elapsed (of time [Ind. St. 15,314]).
+
+**3f)** — f〉 da sein, vorhanden, gegenwärtig.
+- **EN:** — f) to be there, present, at hand.
+
+**3g)** — g〉 versehen mit (Instr.).
+- **EN:** — g) provided with (Instr.).
+
+**3h)** — h〉 häufig am Anfange eines adj. Comp. in den Bedeutungen a〉 c〉 e〉 und f〉. Nicht selten auch mit Umstellung der beiden Glieder. *Desid. *jijaniṣati*. *Intens. *jañjanyate, jājāyate, jañjantas, jājātas, jañjanati* und *jañjñati*.
+- **EN:** — h) frequently at the start of a adj. Comp. in senses a) c) e) and f). Not infrequently also with transposition of the two members. *Desid. *jijaniṣati*. *Intens. *jañjanyate, jājāyate, jañjantas, jājātas, jañjanati* and *jañjñati*.
+
+**compound-note)** — Mit **vyati* Med. *karmavyatihāre*.
+- **EN:** — With **vyati* Med. *karmavyatihāre*.
+
+**preverb-1-head)** — Mit *adhi*
+- **EN:** — With *adhi*
+
+**preverb-1-1)** — 1〉 geboren werden —, entstehen aus (Abl.), erzeugt werden von (Instr.).
+- **EN:** — 1) to be born —, to arise from (Abl.), to be begotten by (Instr.).
+
+**preverb-1-2)** — 2〉 entstehen auf oder über (Acc.).
+- **EN:** — 2) to arise upon or above (Acc.).
+
+**preverb-1-3)** — 3〉 werden zu (Nom.), sein.
+- **EN:** — 3) to become (Nom.), to be.
+
+**preverb-2-head)** — Mit *anu*
+- **EN:** — With *anu*
+
+**preverb-2-1)** — 1〉 später —, hinterher geboren werden, — zur Welt kommen, — entstehen, nach Jmd (Acc.) geboren werden.
+- **EN:** — 1) to be born later —, afterward, — to come into the world, — to arise, to be born after someone (Acc.).
+
+**preverb-2-2)** — 2〉 Jmd (Acc.) ähnlich geboren werden. *anujāta* von einem Sohne so v. a. dem Vater an Vorzügen gleichend.
+- **EN:** — 2) to be born similar to someone (Acc.). *anujāta* of a son so v. a., equalling the father in excellences.
+
+**preverb-2-3)** — 3〉 *anujāta* der die zweite Geburt erfahren hat, d. i. in die Lehre aufgenommen worden ist.
+- **EN:** — 3) *anujāta* one who has undergone the second birth, d. i. who has been received into the doctrine.
+
+**preverb-2-4)** — 4〉 [MBH. 13,48,19] ist in Unordnung; vgl. [M. 10,31.] [32].
+- **EN:** — 4) [MBH. 13,48,19] is in disorder; vgl. [M. 10,31.] [32].
+
+**preverb-3)** — Mit *samanu* Jmd (Acc.) ähnlich geboren werden.
+- **EN:** — With *samanu*, to be born similar to someone (Acc.).
+
+**preverb-4)** — Mit *apa*, *˚jāta* aus der Art geschlagen, missrathen (Sohn).
+- **EN:** — With *apa*, *˚jāta* degenerate, ill-bred (of a son).
+
+**preverb-5)** — Mit *api* in *apija*.
+- **EN:** — With *api* in *apija*.
+
+**preverb-6-head)** — Mit *abhi*
+- **EN:** — With *abhi*
+
+**preverb-6-1)** — 1〉 für Etwas oder Jmd geboren werden, von Geburt an bestimmt sein zu, durch die Geburt angewiesen sein —, — Ansprüche haben auf (Acc.). *˚jāta* mit act. Bed.
+- **EN:** — 1) to be born for something or someone, to be destined from birth for, to be entitled by birth to —, — to have claims on (Acc.). *˚jāta* with act. Bed.
+
+**preverb-6-2)** — 2〉 geboren werden gemäss, — entsprechend; mit Acc. [Spr. 3338].
+- **EN:** — 2) to be born according to —, corresponding to; with Acc. [Spr. 3338].
+
+**preverb-6-3)** — 3〉 zu Etwas (Nom. des Partic. fut. pass.) da sein.
+- **EN:** — 3) to be there for something (Nom. of the Partic. fut. pass.).
+
+**preverb-7-head)** — Mit *pra*
+- **EN:** — With *pra*
+
+**preverb-6-4)** — 4〉 geboren —, erzeugt werden, — von (Abl.), — mit (Loc.), entstehen, — aus (Abl.), zum Vorschein kommen mit (Instr.).
+- **EN:** — 4) to be born —, to be begotten — by (Abl.), — with (Loc.), to arise — from (Abl.), to come to appear with (Instr.).
+
+**preverb-6-5)** — 5〉 wiedergeboren werden, von Neuem entstehen.
+- **EN:** — 5) to be born again, to arise anew.
+
+**preverb-6-6)** — 6〉 werden [102,13]. — zu (Nom.).
+- **EN:** — 6) to become [102,13]. — into (Nom.).
+
+**preverb-6-7)** — 7〉 *abhijāta*
+- **EN:** — 7) *abhijāta*
+
+**preverb-6-7a)** — a〉 von edler Herkunft.
+- **EN:** — a) of noble origin.
+
+**preverb-6-7b)** — b〉 reizend, lieblich.
+- **EN:** — b) charming, lovely.
+
+**preverb-6-7c)** — c〉 *gelehrt.
+- **EN:** — c) *learned.
+
+**preverb-6-7d)** — d〉 *schicklich, passend, angemessen.
+- **EN:** — d) *seemly, fitting, appropriate.
+
+**preverb-6-caus)** — Caus. von Neuem hervorrufen, beleben.
+- **EN:** — Caus. to call forth anew, to revive.
+
+**preverb-8)** — Mit *samabhi* entstehen.
+- **EN:** — With *samabhi*, to arise.
+
+**preverb-9)** — Mit *ava* falsche Lesart; vgl. [Spr. 5960].
+- **EN:** — With *ava*, false reading; vgl. [Spr. 5960].
+
+**preverb-10)** — Mit *ā* geboren werden, entstehen.
+- **EN:** — With *ā*, to be born, to arise.
+
+**preverb-11-head)** — Caus.
+- **EN:** — Caus.
+
+**preverb-11-1)** — 1〉 erzeugen.
+- **EN:** — 1) to engender.
+
+**preverb-11-2)** — 2〉 Jmd geboren werden lassen.
+- **EN:** — 2) to cause someone to be born.
+
+**preverb-11-3)** — 3〉 fruchtbar machen, Zeugungskraft schaffen.
+- **EN:** — 3) to make fruitful, to create generative power.
+
+**preverb-12)** — Mit *udā* hervorgehen aus (Abl.).
+- **EN:** — With *udā*, to emerge from (Abl.).
+
+**preverb-13)** — Mit *pratyā* (*˚jāyate*) wiedergeboren werden [KĀRAṆḌ. 42,9]. *˚jāyeyam* [SĀMAV. BR. 3,8,1].
+- **EN:** — With *pratyā* (*˚jāyate*), to be born again [KĀRAṆḌ. 42,9]. *˚jāyeyam* [SĀMAV. BR. 3,8,1].
+
+**preverb-14-head)** — Mit *ud*
+- **EN:** — With *ud*
+
+**preverb-14-1)** — 1〉 zeugen, hervorbringen.
+- **EN:** — 1) to beget, to bring forth.
+
+**preverb-14-2)** — 2〉 geboren werden, entstehen, — aus (Abl.).
+- **EN:** — 2) to be born, to arise, — from (Abl.).
+
+**preverb-15-head)** — Mit *upa*
+- **EN:** — With *upa*
+
+**preverb-15-1)** — 1〉 hinzukommen, — treten. *˚jāta* neu hinzugetreten.
+- **EN:** — 1) to be added —, to step in addition. *˚jāta* newly added.
+
+**preverb-15-2)** — 2〉 als Folge entstehen.
+- **EN:** — 2) to arise as a consequence.
+
+**preverb-15-3)** — 3〉 geboren werden, entstehen, sich einstellen, zum Vorschein kommen, sich zeigen [KAP. 5,50]. [Spr. 7222]. *˚jāta* entstanden, zum Vorschein gekommen, sich eingestellt habend.
+- **EN:** — 3) to be born, to arise, to set in, to come to appear, to show itself [KAP. 5,50]. [Spr. 7222]. *˚jāta* having arisen, having come to appear, having set in.
+
+**preverb-15-4)** — 4〉 widergeboren werden.
+- **EN:** — 4) to be born again.
+
+**preverb-15-5)** — 5〉 sein [Spr. 3056]. — *upajātam* [MBH. 9,3482] fehlerhaft für *upayātam*.
+- **EN:** — 5) to be [Spr. 3056]. — *upajātam* [MBH. 9,3482] erroneous for *upayātam*.
+
+**preverb-15-caus-head)** — Caus.
+- **EN:** — Caus.
+
+**preverb-15-caus-1)** — 1〉 erzeugen, verursachen, veranlassen.
+- **EN:** — 1) to engender, to cause, to occasion.
+
+**preverb-15-caus-2)** — 2〉 Etwas versuchen.
+- **EN:** — 2) to attempt something.
+
+**preverb-16-head)** — Mit *samupa*
+- **EN:** — With *samupa*
+
+**preverb-16-1)** — 1〉 entstehen, sich einstellen, zum Vorschein kommen.
+- **EN:** — 1) to arise, to set in, to come to appear.
+
+**preverb-16-2)** — 2〉 wiedergeboren werden.
+- **EN:** — 2) to be born again.
+
+**preverb-16-caus)** — Caus. erzeugen, verursachen.
+- **EN:** — Caus. to engender, to cause.
+
+**preverb-17)** — Mit *nis*, *nirjāta* zum Vorschein gekommen, da seiend; am Ende eines Comp. in verstellter Ordnung.
+- **EN:** — With *nis*, *nirjāta* having come to appear, being there; at the end of a Comp. in transposed order.
+
+**preverb-18-head)** — Mit *pari*, *parijāta*
+- **EN:** — With *pari*, *parijāta*
+
+**preverb-18-1)** — 1〉 erzeugt von (Abl.) [AV. 3,6,1].
+- **EN:** — 1) begotten by (Abl.) [AV. 3,6,1].
+
+**preverb-18-2)** — 2〉 vollkommen ausgebildet; s. *a˚*.
+- **EN:** — 2) fully developed; s. *a˚*.
+
+**preverb-19-head)** — Mit *pra*
+- **EN:** — With *pra*
+
+**preverb-19-1)** — 1〉 geboren werden, entstehen, — aus (Abl.), in (*adhi* oder Loc.), erzeugt werden von (Instr. oder Abl.) mit (Loc.). *mātāpitros* von Mutter und Vater.
+- **EN:** — 1) to be born, to arise, — from (Abl.), in (*adhi* or Loc.), to be begotten by (Instr. or Abl.) with (Loc.). *mātāpitros* of mother and father.
+
+**preverb-19-2)** — 2〉 zu einem lebenden Wesen sich entwickeln.
+- **EN:** — 2) to develop into a living being.
+
+**preverb-19-3)** — 3〉 wiedergeboren werden.
+- **EN:** — 3) to be born again.
+
+**preverb-19-4)** — 4〉 sich fortpflanzen, — durch (Instr.).
+- **EN:** — 4) to propagate itself, — through (Instr.).
+
+**preverb-19-5)** — 5〉 zeugen, gebären, zeugen mit (Loc. oder Instr.). *prajātā* it act. Bed.
+- **EN:** — 5) to beget, to bear, to beget with (Loc. or Instr.). *prajātā* it act. Bed.
+
+**preverb-19-6)** — 6〉 zu einem lebenden Wesen werden lassen.
+- **EN:** — 6) to cause to become a living being.
+
+**preverb-19-caus-head)** — Caus.
+- **EN:** — Caus.
+
+**preverb-19-caus-1)** — 1〉 Jmd (Acc.) sich fortpflanzen lassen durch (Instr.), fortpflanzen, entstehen lassen.
+- **EN:** — 1) to let someone (Acc.) propagate through (Instr.), to propagate, to cause to arise.
+
+**preverb-19-caus-2)** — 2〉 zeugen. *prajanayāmakaḥ* [MAITR. S. 1,6,10. 8,5].
+- **EN:** — 2) to beget. *prajanayāmakaḥ* [MAITR. S. 1,6,10. 8,5].
+
+**preverb-19-caus-3)** — 3〉 zu einem lebenden Wesen werden lassen.
+- **EN:** — 3) to cause to become a living being.
+
+**preverb-20)** — Desid. *prajijaniṣyamāṇa* inʼs Leben treten wollend.
+- **EN:** — Desid. *prajijaniṣyamāṇa* desirous of entering into life.
+
+**preverb-21)** — Desid. vom Caus. *prajijanayiṣati* zu einem lebenden Wesen werden lassen wollen.
+- **EN:** — Desid. from the Caus. *prajijanayiṣati* wishing to cause to become a living being.
+
+**preverb-22-head)** — Mit *anupra* nach Etwas geboren werden. *prajām* so v. a. sich immer weiter und weiter fortpflanzen [BHĀG. P. 3,32,20].
+- **EN:** — With *anupra*, to be born after something. *prajām* so v. a. to propagate itself ever further and further [BHĀG. P. 3,32,20].
+
+**preverb-22-caus)** — Caus. nach Etwas geboren werden lassen.
+- **EN:** — Caus. to cause to be born after something.
+
+**preverb-23)** — Mit *apapra*, *˚jātā* die eine Fehlgeburt gemacht hat.
+- **EN:** — With *apapra*, *˚jātā* one (f.) who has had a miscarriage.
+
+**preverb-24)** — Mit *abhipra* gebären [ṚV. 5,19,1].
+- **EN:** — With *abhipra*, to bear [ṚV. 5,19,1].
+
+**preverb-25)** — Caus. für Etwas erzeugen.
+- **EN:** — Caus. to engender for something.
+
+## jan
+
+`jan~~h0_zz_pw01`
+
+
+**prefix1)** — Mit *upapra* hinzugeboren werden zu (Acc.).
+
+- **RU:** — С *upapra* родиться в дополнение к (Acc.).
+- **EN:** With *upapra*, to be born in addition to (Acc.).
+  <sub>DCS 9250 · attested</sub>
+
+**prefix2)** — Mit *prapra* stets aufʼs Neue entstehen [ṚV. 5,58,5].
+
+- **RU:** — С *prapra* возникать всякий раз заново [ṚV. 5,58,5].
+- **EN:** With *prapra*, to come into existence ever anew [ṚV. 5,58,5].
+  <sub>DCS 9250 · attested</sub>
+
+**prefix3-intro)** — Mit *saṃpra*
+- **EN:** With *saṃpra*
+
+**prefix3.1)** — 1〉 entstehen, zum Vorschein kommen, — aus (Abl.).
+- **EN:** 1) to arise, come to appear — from (Abl.).
+
+**prefix3.2)** — 2〉 da sein.
+
+- **RU:** — 2〉 присутствовать, наличествовать.
+- **EN:** 2) to be present, exist.
+  <sub>DCS 9250 · attested</sub>
+
+**prefix3.3)** — 3〉 wiedergeboren werden.
+
+- **RU:** — 3〉 возрождаться.
+- **EN:** 3) to be born again.
+  <sub>DCS 9250 · attested</sub>
+
+**prefix3.4)** — 4〉 *saṃprajātā* gekalbt habend.
+
+- **RU:** — 4〉 *saṃprajātā* отелившаяся.
+- **EN:** 4) *saṃprajātā* having calved.
+  <sub>DCS 9250 · attested</sub>
+
+**prefix4)** — Mit *prati* wiedergeboren werden, von Neuem entstehen.
+
+- **RU:** — С *prati* возрождаться, возникать вновь.
+- **EN:** With *prati*, to be born again, to come into existence anew.
+  <sub>DCS 9250 · attested</sub>
+
+**prefix5-intro)** — Mit *vi*
+- **EN:** With *vi*
+
+**prefix5.1)** — 1〉 geboren werden, — von (Loc.), erzeugt werden, — von (Abl.), entstehen, — aus (Abl.).
+- **EN:** 1) to be born — of (Loc.), to be begotten — by (Abl.), to arise — from (Abl.).
+
+**prefix5.2)** — 2〉 sich verwandeln in, werden zu (Nom.).
+
+- **RU:** — 2〉 превращаться в, становиться (Nom.).
+- **EN:** 2) to be transformed into, to become (Nom.).
+  <sub>DCS 9250 · attested</sub>
+
+**prefix5.3)** — 3〉 sich fortpflanzen.
+
+- **RU:** — 3〉 размножаться.
+- **EN:** 3) to propagate itself, to reproduce.
+  <sub>DCS 9250 · attested</sub>
+
+**prefix5.4)** — 4〉 zeugen, gebären, — von (Abl.), Kinder-, Junge zur Welt bringen. *vijātā* die geboren hat.
+
+- **RU:** — 4〉 порождать, рожать, — от (Abl.), производить на свет детей, детёнышей. *vijātā* та, которая родила.
+- **EN:** 4) to beget, to give birth, — to (Abl.), to bring children, young into the world. *vijātā* she who has given birth.
+  <sub>DCS 9250 · attested</sub>
+
+**prefix6-intro)** — Mit *sam*
+- **EN:** With *sam*
+
+**prefix6.1)** — 1〉 geboren werden —, zugleich erscheinen mit (Instr.).
+- **EN:** 1) to be born —, to appear at the same time as (Instr.).
+
+**prefix6.2)** — 2〉 geboren werden, — von (Loc.), erzeugt werden, — von (Abl.), wachsen, entstehen, — aus (Abl.), sich einstellen, zum Vorschein kommen, sich ereignen.
+
+- **RU:** — 2〉 рождаться, — от (Loc.), быть порождённым, — от (Abl.), расти, возникать, — из (Abl.), наступать, появляться, происходить.
+- **EN:** 2) to be born — of (Loc.), to be begotten — by (Abl.), to grow, arise — from (Abl.), to occur, to come to appear, to happen.
+  <sub>DCS 9250 · attested</sub>
+
+**prefix6.3)** — 3〉 werden; verfliessen (von der Zeit).
+
+- **RU:** — 3〉 становиться; истекать (о времени).
+- **EN:** 3) to become; to elapse (of time).
+  <sub>DCS 9250 · attested</sub>
+
+**prefix6.4)** — 4〉 gebären.
+
+- **RU:** — 4〉 рожать.
+- **EN:** 4) to give birth.
+  <sub>DCS 9250 · attested</sub>
+
+**prefix7-intro)** — Caus.
+- **EN:** Caus.
+
+**prefix7.1)** — 1〉 zeugen, — mit (Loc.), gebären, — von (Abl.); bilden, bauen; erzeugen, hervorbringen, verursachen.
+- **EN:** 1) to beget — with (Loc.), to give birth — to (Abl.); to form, to build; to produce, to bring forth, to cause.
+
+**prefix7.2)** — 2〉 bei sich hervorbringen, erlangen [LALIT. 340,3].
+
+- **RU:** — 2〉 производить в себе, обретать [LALIT. 340,3].
+- **EN:** 2) to bring forth in oneself, to obtain [LALIT. 340,3].
+  <sub>DCS 9250 · attested</sub>
+
+**prefix8)** — Mit *abhisam*, *˚saṃjāta* entstanden.
+
+- **RU:** — С *abhisam*, *˚saṃjāta* возникший.
+- **EN:** With *abhisam*, *˚saṃjāta* arisen.
+  <sub>DCS 9250 · attested</sub>
+
+**prefix9)** — Mit *upasam* sich einstellen, zum Vorschein kommen [PARIBH. 64].
+
+- **RU:** — С *upasam* наступать, появляться [PARIBH. 64].
+- **EN:** With *upasam*, to occur, to come to appear [PARIBH. 64].
+  <sub>DCS 9250 · attested</sub>
+
+**prefix10)** — Mit *pratisam*, *˚saṃjāta* entstanden.
+
+- **RU:** — С *pratisam*, *˚saṃjāta* возникший.
+- **EN:** With *pratisam*, *˚saṃjāta* arisen.
+  <sub>DCS 9250 · attested</sub>
+
+**Mit T5 — 1〉)** — Mit *saṃpra*
+— 1〉 entstehen, zum Vorschein kommen, — aus (Abl.).
+
+- **RU:** — С *saṃpra*
+— 1〉 возникать, появляться, — из (Abl.).
+  <sub>DCS 9250 · attested</sub>
+
+**Mit T9 — 1〉)** — Mit *vi*
+— 1〉 geboren werden, — von (Loc.), erzeugt werden, — von (Abl.), entstehen, — aus (Abl.).
+
+- **RU:** — С *vi*
+— 1〉 рождаться, — от (Loc.), быть порождённым, — от (Abl.), возникать, — из (Abl.).
+  <sub>DCS 9250 · attested</sub>
+
+**Mit T16 — 1〉)** — Mit *sam*
+— 1〉 geboren werden —, zugleich erscheinen mit (Instr.).
+
+- **RU:** — С *sam*
+— 1〉 родиться —, появиться одновременно с (Instr.).
+  <sub>DCS 9250 · attested</sub>
+
+**T21 — 1〉)** — Caus. 
+— 1〉 zeugen, — mit (Loc.), gebären, — von (Abl.); bilden, bauen; erzeugen, hervorbringen, verursachen.
+
+- **RU:** — Caus. 
+— 1〉 порождать, — с (Loc.), рожать, — от (Abl.); образовывать, строить; производить, порождать, причинять.
+  <sub>DCS 9250 · attested</sub>
+
+## jan
+
+`jan~~h0_zz_pw02`
+
+
+**T35)** √*jan*¦ 1〉 *jajanat* [MAITR. S. 1,3,20]. [9,1] ([KĀṬH. 9,8]).
+
+- **RU:** √*jan*¦ 1〉 *jajanat* [MAITR. S. 1,3,20]. [9,1] ([KĀṬH. 9,8]).
+- **EN:** √*jan*¦ 1) *jajanat* [MAITR. S. 1,3,20]. [9,1] ([KĀṬH. 9,8]).
+  <sub>DCS 9250 · mixed</sub>
+
+**T36-37)** √*jan*¦ mit *nis*, *nirjāta* entstanden aus (Abl.) [VAJRACCH. 25,4]. [6].
+— Mit *pratyā* [KAUṢ. UP. 1,2].
+- **EN:** √*jan*¦ with *nis*, *nirjāta* arisen from Abl., [VAJRACCH. 25,4]. [6].
+— With *pratyā* [KAUṢ. UP. 1,2].
+
+**T38-39)** √*jan*¦ mit *pra*, *prajāta* qui semen immisit [KĀTY. ŚR. 20,3,20].
+— Mit *parivi* in der Fortpflanzung übertreffen, mit Acc. [MAITR. S. 2,5,1 (46,15)].
+- **EN:** √*jan*¦ with *pra*, *prajāta* "qui semen immisit" (one who has emitted semen) [KĀTY. ŚR. 20,3,20].
+— With *parivi* to surpass in propagation, with Acc. [MAITR. S. 2,5,1 (46,15)].
+
+**T40)** √*jan*¦, *nirjāta* (mit *niryāta* wechselnd) bedeutet vollkommen vertraut mit, steht also richtig nach.
+
+- **RU:** √*jan*¦, *nirjāta* (чередуясь с *niryāta*) означает совершенно хорошо знакомый с, стоит, таким образом, правильно после.
+- **EN:** √*jan*¦, *nirjāta* (alternating with *niryāta*) means "thoroughly familiar with", and so rightly stands after.
+  <sub>DCS 9250 · mixed</sub>
+
+**T41-46)** √*jan*¦ II. 2. *jajñivān* lebte auf, wurde wieder lebendig [MBH. 8,33,31].
+— Mit *ava*, *˚jāta* = *apajāta* missrathen [DIVYĀVAD. 2,13].
+— Mit *pratyā* II. 3.
+— Mit *nis* 3. 5.
+— Mit *pra* II. 4.
+— Mit *parivi* 4.
+- **EN:** √*jan*¦ II. 2. *jajñivān* revived, came to life again [MBH. 8,33,31].
+— With *ava*, *˚jāta* = *apajāta* to turn out badly, to fail [DIVYĀVAD. 2,13].
+— With *pratyā* II. 3.
+— With *nis* 3. 5.
+— With *pra* II. 4.
+— With *parivi* 4.
+
+**1)** √*jan*¦ mit *nis*, *nirjāta* entstanden aus (Abl.) [VAJRACCH. 25,4]. [6].
+
+- **RU:** √*jan*¦ с *nis*, *nirjāta* происходящий из (Abl.) [VAJRACCH. 25,4]. [6].
+  <sub>DCS 9250 · mixed</sub>
+
+**2)** — Mit *pratyā* [KAUṢ. UP. 1,2].
+
+- **RU:** — С *pratyā* [KAUṢ. UP. 1,2].
+  <sub>DCS 9250 · mixed</sub>
+
+**1)** √*jan*¦ mit *pra*, *prajāta* qui semen immisit [KĀTY. ŚR. 20,3,20].
+
+- **RU:** √*jan*¦ с *pra*, *prajāta* qui semen immisit [KĀTY. ŚR. 20,3,20].
+  <sub>DCS 9250 · mixed</sub>
+
+**2)** — Mit *parivi* in der Fortpflanzung übertreffen, mit Acc. [MAITR. S. 2,5,1 (46,15)].
+
+- **RU:** — С *parivi* превосходить в деторождении, с Acc. [MAITR. S. 2,5,1 (46,15)].
+  <sub>DCS 9250 · mixed</sub>
+
+**II.2)** √*jan*¦ II. 2. *jajñivān* lebte auf, wurde wieder lebendig [MBH. 8,33,31].
+
+- **RU:** √*jan*¦ II. 2. *jajñivān* ожил, снова ожил [MBH. 8,33,31].
+  <sub>DCS 9250 · attested</sub>
+
+**ava)** — Mit *ava*, *˚jāta* = *apajāta* missrathen [DIVYĀVAD. 2,13].
+
+- **RU:** — С *ava*, *˚jāta* = *apajāta* неудавшийся [DIVYĀVAD. 2,13].
+  <sub>DCS 9250 · attested</sub>
+
+**pratyā II.3)** — Mit *pratyā* II. 3.
+
+- **RU:** — С *pratyā* II. 3.
+  <sub>DCS 9250 · mixed</sub>
+
+**nis 3.5)** — Mit *nis* 3. 5.
+
+- **RU:** — С *nis* 3. 5.
+  <sub>DCS 9250 · mixed</sub>
+
+**pra II.4)** — Mit *pra* II. 4.
+
+- **RU:** — С *pra* II. 4.
+  <sub>DCS 9250 · mixed</sub>
+
+**parivi 4)** — Mit *parivi* 4.
+
+- **RU:** — С *parivi* 4.
+  <sub>DCS 9250 · mixed</sub>
+
+## jan
+
+`jan~~h0_zz_sch`
+
+
+**main)** jan¦ 1. jajānat [Maitr. S. 1,3,20; 9,1] ([Kāṭh. 9,8]). jajñivān lebte auf, wurde wieder lebendig, [MBh. 8,33,31.] — Mit ava, ˚jāta = apajāta, mißraten, [Divyāvad. 2,13.] — Mit pratyā [Kauṣ. Up. 1,2.] — Mit nis, nirjāta entstanden aus (Abl.), [Vajracch. 25,]
+
+ 4. 6. — nirjāta (mit niryāta verwechselt) bedeutet vollkommen vertraut mit, steht also richtig nach. — Mit pra, prajāta qui semen inmisit, [Kāty. Śr. 20,3,20.] — Mit parivi in der Fortpflanzung übertreffen, mit Akk. [Maitr. S. 2,5,1] (46,15). {part=,seq=13866,type=,n=14}
+- **EN:** jan¦ 1. jajānat [Maitr. S. 1,3,20; 9,1] ([Kāṭh. 9,8]). jajñivān revived, came to life again, [MBh. 8,33,31.] — With ava, °jāta = apajāta, turned out badly, [Divyāvad. 2,13.] — With pratyā [Kauṣ. Up. 1,2.] — With nis, nirjāta arisen from (Abl.), [Vajracch. 25,]
+
+4. 6. — nirjāta (confused with niryāta) means thoroughly familiar with, and so rightly stands after. — With pra, prajāta "qui semen inmisit" (one who has emitted semen), [Kāty. Śr. 20,3,20.] — With parivi to surpass in propagation, with Acc. [Maitr. S. 2,5,1] (46,15). {part=,seq=13866,type=,n=14}
+
+**jajānat)** jan¦ 1. jajānat [Maitr. S. 1,3,20; 9,1] ([Kāṭh. 9,8]). jajñivān lebte auf, wurde wieder lebendig, [MBh. 8,33,31.]
+
+- **RU:** jan¦ 1. jajānat [Maitr. S. 1,3,20; 9,1] ([Kāṭh. 9,8]). jajñivān жил снова, ожил, [MBh. 8,33,31.]
+  <sub>DCS 9250 · attested</sub>
+
+**ava)** — Mit ava, ˚jāta = apajāta, mißraten, [Divyāvad. 2,13.]
+
+- **RU:** — С ava, ˚jāta = apajāta, неудавшийся, [Divyāvad. 2,13.]
+  <sub>DCS 9250 · attested</sub>
+
+**pratyā)** — Mit pratyā [Kauṣ. Up. 1,2.]
+
+- **RU:** — С pratyā [Kauṣ. Up. 1,2.]
+  <sub>DCS 9250 · attested</sub>
+
+**nis 4.6)** — Mit nis, nirjāta entstanden aus (Abl.), [Vajracch. 25,] 4. 6.
+
+- **RU:** — С nis, nirjāta происходящий из (Abl.), [Vajracch. 25,] 4. 6.
+  <sub>DCS 9250 · attested</sub>
+
+**nis-nirjāta-correction)** — nirjāta (mit niryāta verwechselt) bedeutet vollkommen vertraut mit, steht also richtig nach.
+
+- **RU:** — nirjāta (перепутанное с niryāta) означает совершенно хорошо знакомый с, стоит, таким образом, правильно после.
+  <sub>DCS 9250 · attested</sub>
+
+**pra)** — Mit pra, prajāta qui semen inmisit, [Kāty. Śr. 20,3,20.]
+
+- **RU:** — С pra, prajāta qui semen inmisit, [Kāty. Śr. 20,3,20.]
+  <sub>DCS 9250 · attested</sub>
+
+**parivi)** — Mit parivi in der Fortpflanzung übertreffen, mit Akk. [Maitr. S. 2,5,1] (46,15).
+
+- **RU:** — С parivi превосходить в деторождении, с Akk. [Maitr. S. 2,5,1] (46,15).
+  <sub>DCS 9250 · attested</sub>
+
+## jan
+
+`jan~~h0_zz_pwkvn`
+
+
+**b1)** *jan*¦ 1〉 *jajanat* [MAITR. S. 1,3,20]. [9,1] ([KĀṬH. 9,8]).
+
+- **RU:** *jan*¦ 1〉 *jajanat* [MAITR. S. 1,3,20]. [9,1] ([KĀṬH. 9,8]).
+- **EN:** *jan*¦ 1) *jajanat* [MAITR. S. 1,3,20]. [9,1] ([KĀṬH. 9,8]).
+  <sub>DCS 9250 · mixed</sub>
+
+**b2)** *jan*¦ mit *nis*, *nirjāta* entstanden aus (Abl.) [VAJRACCH. 25,4]. [6]. — Mit *pratyā* [KAUṢ. UP. 1,2].
+- **EN:** *jan*¦ with *nis*, *nirjāta* arisen from Abl., [VAJRACCH. 25,4]. [6]. — With *pratyā* [KAUṢ. UP. 1,2].
+
+**b3)** *jan*¦ mit *pra*, *prajāta* qui semen immisit [KĀTY. ŚR. 20,3,20]. — Mit *parivi* in der Fortpflanzung übertreffen, mit Acc. [MAITR. S. 2,5,1 (46,15)].
+- **EN:** *jan*¦ with *pra*, *prajāta* "qui semen immisit" (one who has emitted semen) [KĀTY. ŚR. 20,3,20]. — With *parivi* to surpass in propagation, with Acc. [MAITR. S. 2,5,1 (46,15)].
+
+**b4)** *jan*¦, *nirjāta* (mit *niryāta* wechselnd) bedeutet vollkommen vertraut mit, steht also richtig nach.
+
+- **RU:** *jan*¦, *nirjāta* (чередуясь с *niryāta*) означает совершенно хорошо знакомый с, стоит, таким образом, правильно после.
+- **EN:** *jan*¦, *nirjāta* (alternating with *niryāta*) means "thoroughly familiar with", and so rightly stands after.
+  <sub>DCS 9250 · mixed</sub>
+
+**b5)** *jan*¦ II. 2. *jajñivān* lebte auf, wurde wieder lebendig [MBH. 8,33,31]. — Mit *ava, ˚jāta = apajāta* missrathen [DIVYĀVAD. 2,13]. — Mit *pratyā* II. 3. — Mit *nis* 3. 5. — Mit *pra* II. 4. — Mit *parivi* 4.
+- **EN:** *jan*¦ II. 2. *jajñivān* revived, came to life again [MBH. 8,33,31]. — With *ava, ˚jāta = apajāta* turned out badly, failed [DIVYĀVAD. 2,13]. — With *pratyā* II. 3. — With *nis* 3. 5. — With *pra* II. 4. — With *parivi* 4.
+
+**nis)** *jan*¦ mit *nis*, *nirjāta* entstanden aus (Abl.) [VAJRACCH. 25,4]. [6].
+
+- **RU:** *jan*¦ с *nis*, *nirjāta* происходящий из (Abl.) [VAJRACCH. 25,4]. [6].
+  <sub>DCS 9250 · mixed</sub>
+
+**nis-2)** — Mit *pratyā* [KAUṢ. UP. 1,2].
+
+- **RU:** — С *pratyā* [KAUṢ. UP. 1,2].
+  <sub>DCS 9250 · mixed</sub>
+
+**pra)** *jan*¦ mit *pra*, *prajāta* qui semen immisit [KĀTY. ŚR. 20,3,20].
+
+- **RU:** *jan*¦ с *pra*, *prajāta* qui semen immisit [KĀTY. ŚR. 20,3,20].
+  <sub>DCS 9250 · mixed</sub>
+
+**parivi)** — Mit *parivi* in der Fortpflanzung übertreffen, mit Acc. [MAITR. S. 2,5,1 (46,15)].
+
+- **RU:** — С *parivi* превосходить в деторождении, с Acc. [MAITR. S. 2,5,1 (46,15)].
+  <sub>DCS 9250 · mixed</sub>
+
+**II.2)** *jan*¦ II. 2. *jajñivān* lebte auf, wurde wieder lebendig [MBH. 8,33,31].
+
+- **RU:** *jan*¦ II. 2. *jajñivān* ожил, снова ожил [MBH. 8,33,31].
+  <sub>DCS 9250 · attested</sub>
+
+**ava)** — Mit *ava, ˚jāta = apajāta* missrathen [DIVYĀVAD. 2,13].
+
+- **RU:** — С *ava, ˚jāta = apajāta* неудавшийся [DIVYĀVAD. 2,13].
+  <sub>DCS 9250 · attested</sub>
+
+**pratyā II.3)** — Mit *pratyā* II. 3.
+
+- **RU:** — С *pratyā* II. 3.
+  <sub>DCS 9250 · mixed</sub>
+
+**nis 3.5)** — Mit *nis* 3. 5.
+
+- **RU:** — С *nis* 3. 5.
+  <sub>DCS 9250 · mixed</sub>
+
+**pra II.4)** — Mit *pra* II. 4.
+
+- **RU:** — С *pra* II. 4.
+  <sub>DCS 9250 · mixed</sub>
+
+**parivi 4)** — Mit *parivi* 4.
+
+- **RU:** — С *parivi* 4.
+  <sub>DCS 9250 · mixed</sub>

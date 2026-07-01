@@ -1,0 +1,250 @@
+## parihā
+
+`h_a~~h1_15_pari`
+
+
+**1)** — *pari*
+ 1) Jmd verlassen: *vaidehīṃ parihāya*
+[R. GORR. 2,16,31.] *taṃ parihātum*
+[BHĀG. P. 11,29,46.] Etwas aufgeben: *parihātukāma* (*parihāra˚* [ed. Bomb.]) sc. die Herrschaft
+[MBH. 4,303] ([304]). unterlassen: *yathoktānyapi karmāṇi parihāya*
+[M. 12,92.] so v. a. nicht beachten: *mā ca śakrasya vacanaṃ *
+
+* paryahāsīḥ* (*pratihāsīḥ* die neuere Ausg.)
+[HARIV. 14317.]
+- **EN:** — *pari*
+ 1) to abandon someone: *vaidehīṃ parihāya*
+[R. GORR. 2,16,31.] *taṃ parihātum*
+[BHĀG. P. 11,29,46.] to give up something: *parihātukāma* (*parihāra˚* [ed. Bomb.]) sc. the rule
+[MBH. 4,303] ([304]). to omit, leave undone: *yathoktānyapi karmāṇi parihāya*
+[M. 12,92.] so v. a. to disregard: *mā ca śakrasya vacanaṃ *
+
+* paryahāsīḥ* (*pratihāsīḥ* the more recent Ausg.)
+[HARIV. 14317.]
+
+**2)** — 2) fehlerhaft oder ungenau für pass. in der Bed. eine Einbusse erleiden, Schaden nehmen, zu Schanden werden: *yadi tānyodhayiṣyāmaḥ kiṃ vai naḥ parihāsyati* (= *naṅkṣyati*
+[NĪLAK.]) [MBH. 2,2460.] *vyājena sadbhirvihito dharmaste parihāsyati*
+[12,5436.] kommen um (abl.), verlustig gehen: *na rāgātparihāsyathaḥ*
+[R. 7,93,8.]
+
+- **RU:** — 2) ошибочно или неточно вместо pass. в Bed. терпеть урон, нести ущерб, быть посрамлённым: *yadi tānyodhayiṣyāmaḥ kiṃ vai naḥ parihāsyati* (= *naṅkṣyati*
+[NĪLAK.]) [MBH. 2,2460.] *vyājena sadbhirvihito dharmaste parihāsyati*
+[12,5436.] лишаться (abl.), терять: *na rāgātparihāsyathaḥ*
+[R. 7,93,8.]
+- **EN:** — 2) erroneously or inaccurately for pass. in the Bed.: to suffer a loss, to incur damage, to be put to shame: *yadi tānyodhayiṣyāmaḥ kiṃ vai naḥ parihāsyati* (= *naṅkṣyati*
+[NĪLAK.]) [MBH. 2,2460.] *vyājena sadbhirvihito dharmaste parihāsyati*
+[12,5436.] to lose, be deprived of (abl.), to forfeit: *na rāgātparihāsyathaḥ*
+[R. 7,93,8.]
+  <sub>DCS 74 · attested</sub>
+
+**3a)** — 3) pass.
+ a) gemieden —, unterlassen werden: *kairajīrṇabhayādbhrātarbhojanaṃ parihīyate*
+[Spr. (II) 2984.] *bhavadbhirna yathā yajñe parihīyeta kiṃ ca na*
+[R. 1,12,30.] unterbleiben, ausbleiben, mangeln, fehlen: *sarvāścaiva kriyāstasya paryahīyanta*
+[MBH. 13,4752.] *parihīyamāṇasatkāra*
+[Spr. (II) 762.] *yatkiṃcidasmadgṛhe parihīyate tadicchāmyahamaparihīyamānaṃ* (so beide Ausgg.) *bhavatā kriyamāṇam*
+[MBH. 1,748.] *yathā sarvaṃ suvihitaṃ na kiṃcitparihīyate*
+[R. 1,12,16. fg.] *setsyate vīra kāryārtho na kiṃcitparihāsyate*
+[HARIV. 3979] = [4054] = [R. 5,1,91.] *na kālaḥ kālamatyeti na kālaḥ parihīyate* bleibt nicht aus
+[Spr. (II) 3193.]
+- **EN:** — 3) pass.
+ a) to be avoided, to be left undone: *kairajīrṇabhayādbhrātarbhojanaṃ parihīyate*
+[Spr. (II) 2984.] *bhavadbhirna yathā yajñe parihīyeta kiṃ ca na*
+[R. 1,12,30.] to remain undone, to fail to occur, to be lacking, to be absent: *sarvāścaiva kriyāstasya paryahīyanta*
+[MBH. 13,4752.] *parihīyamāṇasatkāra*
+[Spr. (II) 762.] *yatkiṃcidasmadgṛhe parihīyate tadicchāmyahamaparihīyamānaṃ* (so both Ausgg.) *bhavatā kriyamāṇam*
+[MBH. 1,748.] *yathā sarvaṃ suvihitaṃ na kiṃcitparihīyate*
+[R. 1,12,16. fg.] *setsyate vīra kāryārtho na kiṃcitparihāsyate*
+[HARIV. 3979] = [4054] = [R. 5,1,91.] *na kālaḥ kālamatyeti na kālaḥ parihīyate* does not fail to occur
+[Spr. (II) 3193.]
+
+**3b)** — b) schwinden, sich legen, nachlassen, aufhören: *vardhate snehaḥ krodhaśca parihīyate*
+[Spr. (II) 5298.] *vardhate krodhaḥ snehaśca pa˚*
+[5299.] *utsāhaḥ*
+[3769.] sein Ende erreichen: *rājavaṃśastu bharturme parihāsyate*
+[R. 7,48,8.] Tag, Nacht, Wache (*prahara*)
+[KATHĀS. 5,80.] [6,123.] [13,31.] [26,25.] [74,107.] [124,185.]
+
+- **RU:** — b) исчезать, утихать, спадать, прекращаться: *vardhate snehaḥ krodhaśca parihīyate*
+[Spr. (II) 5298.] *vardhate krodhaḥ snehaśca pa˚*
+[5299.] *utsāhaḥ*
+[3769.] достигать своего конца: *rājavaṃśastu bharturme parihāsyate*
+[R. 7,48,8.] день, ночь, стража (*prahara*)
+[KATHĀS. 5,80.] [6,123.] [13,31.] [26,25.] [74,107.] [124,185.]
+- **EN:** — b) to vanish, to subside, to abate, to cease: *vardhate snehaḥ krodhaśca parihīyate*
+[Spr. (II) 5298.] *vardhate krodhaḥ snehaśca pa˚*
+[5299.] *utsāhaḥ*
+[3769.] to reach its end: *rājavaṃśastu bharturme parihāsyate*
+[R. 7,48,8.] day, night, watch (*prahara*)
+[KATHĀS. 5,80.] [6,123.] [13,31.] [26,25.] [74,107.] [124,185.]
+  <sub>DCS 74 · attested</sub>
+
+**3c)** — c) den Kürzern ziehen, unterliegen, Schlimmes erfahren: *dharmiṣṭhāḥ parihīyante pāpīyānvardhate janaḥ*
+[MBH. 3,12858.] [5,5446.]
+[HARIV. 3090.]
+[Spr. (II) 678.] [5344.] *na parihīyate* (*parājīyate* [ed. Bomb.]) *prativādinā gaṇadāsaḥ* besiegt werden, nachstehen
+[MĀLAV. 12,14.]
+
+- **RU:** — c) оказаться в проигрыше, потерпеть поражение, испытать недоброе: *dharmiṣṭhāḥ parihīyante pāpīyānvardhate janaḥ*
+[MBH. 3,12858.] [5,5446.]
+[HARIV. 3090.]
+[Spr. (II) 678.] [5344.] *na parihīyate* (*parājīyate* [ed. Bomb.]) *prativādinā gaṇadāsaḥ* быть побеждённым, уступать
+[MĀLAV. 12,14.]
+- **EN:** — c) to draw the shorter straw, to be worsted, to suffer misfortune: *dharmiṣṭhāḥ parihīyante pāpīyānvardhate janaḥ*
+[MBH. 3,12858.] [5,5446.]
+[HARIV. 3090.]
+[Spr. (II) 678.] [5344.] *na parihīyate* (*parājīyate* [ed. Bomb.]) *prativādinā gaṇadāsaḥ* to be defeated, to fall behind
+[MĀLAV. 12,14.]
+  <sub>DCS 74 · attested</sub>
+
+**3d)** — d) mit abl. ablassen —, abstehen von, untreu werden: *svadharmāt*
+[MBH. 3,16780.] kommen um: *svargāt*
+[M. 9,254.] *rājavaṃśāt*
+[R. 2,8,22] ([7,17] [GORR.]). *dharmāt*
+[Spr. (II) 1973.] *śarīradharmakośebhyaḥ*
+[6290.] so v. a. Nichts wissen von: *na tarhi prāgavasthāyāḥ parihīyase*
+[MĀLATĪM. 69,18.]
+
+- **RU:** — d) с abl. отступаться —, уклоняться от, изменять: *svadharmāt*
+[MBH. 3,16780.] лишаться: *svargāt*
+[M. 9,254.] *rājavaṃśāt*
+[R. 2,8,22] ([7,17] [GORR.]). *dharmāt*
+[Spr. (II) 1973.] *śarīradharmakośebhyaḥ*
+[6290.] так v. a. не знать ничего о: *na tarhi prāgavasthāyāḥ parihīyase*
+[MĀLATĪM. 69,18.]
+- **EN:** — d) with abl. to desist from —, to renounce, to be unfaithful to: *svadharmāt*
+[MBH. 3,16780.] to lose: *svargāt*
+[M. 9,254.] *rājavaṃśāt*
+[R. 2,8,22] ([7,17] [GORR.]). *dharmāt*
+[Spr. (II) 1973.] *śarīradharmakośebhyaḥ*
+[6290.] so v. a. to know nothing of: *na tarhi prāgavasthāyāḥ parihīyase*
+[MĀLATĪM. 69,18.]
+  <sub>DCS 74 · attested</sub>
+
+**3e-intro)** — e) partic. *parihīṇa* (häufig *˚hīna* geschrieben)
+[KĀŚ.] zu [P. 8,4,29.]
+
+- **RU:** — e) partic. *parihīṇa* (часто пишется *˚hīna*)
+[KĀŚ.] к [P. 8,4,29.]
+- **EN:** — e) partic. *parihīṇa* (often written *˚hīna*)
+[KĀŚ.] on [P. 8,4,29.]
+  <sub>DCS 74 · attested</sub>
+
+**3e-alpha)** α) unterblieben, fehlend: *˚kriya*
+[MBH. 13,4753.] geschwunden: *vardhamānaparihīnatejasau*
+[RAGH. 11,82.] *˚bhagavadanugraha*
+[BHĀG. P. 5,24,26.]
+
+- **RU:** α) несостоявшийся, отсутствующий: *˚kriya*
+[MBH. 13,4753.] исчезнувший: *vardhamānaparihīnatejasau*
+[RAGH. 11,82.] *˚bhagavadanugraha*
+[BHĀG. P. 5,24,26.]
+- **EN:** α) left undone, lacking: *˚kriya*
+[MBH. 13,4753.] vanished: *vardhamānaparihīnatejasau*
+[RAGH. 11,82.] *˚bhagavadanugraha*
+[BHĀG. P. 5,24,26.]
+  <sub>DCS 74 · attested</sub>
+
+**3e-beta)** — β) sich enthaltend, es fehlen lassend an: *balikarmataḥ*
+[MBH. 13,4784.] ermangelnd, ohne — seiend: *pramāṇāt*
+[3,2803.] *sāhasāt*
+[Spr. (II) 706.] *putrairapatyairdāraiśca*
+[R. 3,73,32.] *arthena*
+[Spr. (II) 617], v. l. *kiraṇaiḥ*
+[VARĀH. BṚH. S. 4,29.] in comp. mit der Ergänzung: *artha˚*
+[16,33.] [54,21.] [47.] [90.] [68,8.] [19.] [26.] [BHĀṢĀP. 14.]
+
+- **RU:** — β) воздерживающийся, допускающий недостаток в: *balikarmataḥ*
+[MBH. 13,4784.] лишённый, не имеющий: *pramāṇāt*
+[3,2803.] *sāhasāt*
+[Spr. (II) 706.] *putrairapatyairdāraiśca*
+[R. 3,73,32.] *arthena*
+[Spr. (II) 617], v. l. *kiraṇaiḥ*
+[VARĀH. BṚH. S. 4,29.] в comp. с дополнением: *artha˚*
+[16,33.] [54,21.] [47.] [90.] [68,8.] [19.] [26.] [BHĀṢĀP. 14.]
+- **EN:** — β) abstaining from, allowing something to be lacking in: *balikarmataḥ*
+[MBH. 13,4784.] lacking, being without —: *pramāṇāt*
+[3,2803.] *sāhasāt*
+[Spr. (II) 706.] *putrairapatyairdāraiśca*
+[R. 3,73,32.] *arthena*
+[Spr. (II) 617], v. l. *kiraṇaiḥ*
+[VARĀH. BṚH. S. 4,29.] in comp. with the supplement: *artha˚*
+[16,33.] [54,21.] [47.] [90.] [68,8.] [19.] [26.] [BHĀṢĀP. 14.]
+  <sub>DCS 74 · attested</sub>
+
+**compound-intro)** — Vgl. *parihāṇa* fg. — caus.
+
+- **RU:** — Vgl. *parihāṇa* fg. — caus.
+- **EN:** — Vgl. *parihāṇa* fg. — caus.
+  <sub>DCS 74 · attested</sub>
+
+**compound-1)** 1) unterbrechen, nicht zu Ende führen: *svakarma*
+[M. 8,206. fg.]
+
+- **RU:** 1) прерывать, не доводить до конца: *svakarma*
+[M. 8,206. fg.]
+- **EN:** 1) to interrupt, to leave unfinished: *svakarma*
+[M. 8,206. fg.]
+  <sub>DCS 74 · attested</sub>
+
+**compound-2)** 2) Jmd um Etwas (instr.) bringen: *vṛttyā parihāpitaḥ*
+[BHĀG. P. 11,22,57.]
+- **EN:** 2) to deprive someone of something (instr.): *vṛttyā parihāpitaḥ*
+[BHĀG. P. 11,22,57.]
+
+**act.1)** — *pari*
+
+- **RU:** — *pari*
+  <sub>DCS 74 · attested</sub>
+
+**act.1.1)** 1) Jmd verlassen: *vaidehīṃ parihāya*
+[R. GORR. 2,16,31.] *taṃ parihātum*
+[BHĀG. P. 11,29,46.] Etwas aufgeben: *parihātukāma* (*parihāra˚* [ed. Bomb.]) sc. die Herrschaft
+[MBH. 4,303] ([304]). unterlassen: *yathoktānyapi karmāṇi parihāya*
+[M. 12,92.] so v. a. nicht beachten: *mā ca śakrasya vacanaṃ *
+
+* paryahāsīḥ* (*pratihāsīḥ* die neuere Ausg.)
+[HARIV. 14317.]
+
+- **RU:** 1) покидать кого-л.: *vaidehīṃ parihāya*
+[R. GORR. 2,16,31.] *taṃ parihātum*
+[BHĀG. P. 11,29,46.] отказываться от чего-л.: *parihātukāma* (*parihāra˚* [ed. Bomb.]) sc. власть
+[MBH. 4,303] ([304]). оставлять в пренебрежении, упускать: *yathoktānyapi karmāṇi parihāya*
+[M. 12,92.] так v. a. не замечать: *mā ca śakrasya vacanaṃ *
+
+* paryahāsīḥ* (*pratihāsīḥ* более новое Ausg.)
+[HARIV. 14317.]
+  <sub>DCS 74 · attested</sub>
+
+**pass.3)** — 3) pass.
+
+- **RU:** — 3) pass.
+  <sub>DCS 74 · attested</sub>
+
+**pass.3a)** a) gemieden —, unterlassen werden: *kairajīrṇabhayādbhrātarbhojanaṃ parihīyate*
+[Spr. (II) 2984.] *bhavadbhirna yathā yajñe parihīyeta kiṃ ca na*
+[R. 1,12,30.] unterbleiben, ausbleiben, mangeln, fehlen: *sarvāścaiva kriyāstasya paryahīyanta*
+[MBH. 13,4752.] *parihīyamāṇasatkāra*
+[Spr. (II) 762.] *yatkiṃcidasmadgṛhe parihīyate tadicchāmyahamaparihīyamānaṃ* (so beide Ausgg.) *bhavatā kriyamāṇam*
+[MBH. 1,748.] *yathā sarvaṃ suvihitaṃ na kiṃcitparihīyate*
+[R. 1,12,16. fg.] *setsyate vīra kāryārtho na kiṃcitparihāsyate*
+[HARIV. 3979] = [4054] = [R. 5,1,91.] *na kālaḥ kālamatyeti na kālaḥ parihīyate* bleibt nicht aus
+[Spr. (II) 3193.]
+
+- **RU:** a) быть избегаемым —, быть оставляемым без внимания: *kairajīrṇabhayādbhrātarbhojanaṃ parihīyate*
+[Spr. (II) 2984.] *bhavadbhirna yathā yajñe parihīyeta kiṃ ca na*
+[R. 1,12,30.] не происходить, не состояться, не хватать, отсутствовать: *sarvāścaiva kriyāstasya paryahīyanta*
+[MBH. 13,4752.] *parihīyamāṇasatkāra*
+[Spr. (II) 762.] *yatkiṃcidasmadgṛhe parihīyate tadicchāmyahamaparihīyamānaṃ* (так оба Ausgg.) *bhavatā kriyamāṇam*
+[MBH. 1,748.] *yathā sarvaṃ suvihitaṃ na kiṃcitparihīyate*
+[R. 1,12,16. fg.] *setsyate vīra kāryārtho na kiṃcitparihāsyate*
+[HARIV. 3979] = [4054] = [R. 5,1,91.] *na kālaḥ kālamatyeti na kālaḥ parihīyate* неизбежно наступает
+[Spr. (II) 3193.]
+  <sub>DCS 74 · attested</sub>
+
+**caus.2)** — 2) Jmd um Etwas (instr.) bringen: *vṛttyā parihāpitaḥ*
+[BHĀG. P. 11,22,57.]
+
+- **RU:** — 2) лишать кого-л. чего-л. (instr.): *vṛttyā parihāpitaḥ*
+[BHĀG. P. 11,22,57.]
+  <sub>DCS 74 · attested</sub>
