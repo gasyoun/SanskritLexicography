@@ -507,7 +507,14 @@ async function translateBatch(batch, bi) {
 }
 const grouped = await parallel(BATCHES.map((b, i) => () => translateBatch(b, i)))
 const out = grouped.flat()
-return { meta: META, results: out }
+// Compact summary first so the orchestrator can read counts (ok/null/healed + the exact
+// null keys to requeue) WITHOUT parsing the full results blob. results are still carried
+// for save_and_audit/promote (the workflow runtime can't write files -> must be returned).
+const _ok = out.filter(r => r.card).length
+const summary = { root: META.root, lang: META.lang, cards: out.length, ok: _ok,
+                  null: out.length - _ok, healed: out.filter(r => r.escalated).length,
+                  null_keys: out.filter(r => !r.card).map(r => r.key) }
+return { meta: META, summary, results: out }
 """ % {
         'root': root, 'field': field, 'tr': json.dumps(tr, ensure_ascii=True),
         # Language-aware meta + model pin. EN path pins Sonnet 5 explicitly
