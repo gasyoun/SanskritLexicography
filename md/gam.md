@@ -1,6 +1,6 @@
 # gam
 
-_PWG article — 127 sub-card(s), 627 sense(s) · RU 27/627 · EN 621/627_
+_PWG article — 127 sub-card(s), 759 sense(s) · RU 437/759 · EN 621/759_
 
 ## gam
 
@@ -958,21 +958,61 @@ to draw near, to present oneself: *kāle tvanugate*
 **2)** — Vgl. *apaga* u. s. w.
 - **EN:** Vgl. *apaga* u. s. w.
 
-## vyapagam
+## vyapa+gam
 
 `gam~~h0_15_vyapa`
 
 
-**1)** — *vyapa* dass.: *tato vyapagataḥ punaḥ* [MBH. 13,7421.] *kṣutpipāse ca sarveṣāṃ kṣaṇena vyapagacchatām* [3,17419.] *vyapagacchatu te — bhayam* [R. 5,22,3.] *mado me vyapagataḥ* [BHARTṚ. 2,8.] *vyapagatamadarāgadambhadveṣadoṣa* [INDR. 5,62.] [MBH. 3,882.] [R. 4,8,4.] [MṚCCH. 1,3. 16.] [MEGH. 74.] *dharmādvyapagataḥ* vom Rechte gewichen [R. 4,17,50.] Von Sternen: sich ganz entfernen,12 Sternbilder entfernt abstehen: *arkātsite dvitīye budhe 'tha vā yugapadeva sthitayoḥ . vyapagatayorvā* (Sch.: = *ādityāddvādaśasthānasthitayoḥ) tanniṣpattiratīva gurudṛṣṭyā ..* [VARĀH. BṚH. S. 39 (38),4.]
-- **EN:** *vyapa* dass.: *tato vyapagataḥ punaḥ* [MBH. 13,7421.] *kṣutpipāse ca sarveṣāṃ kṣaṇena vyapagacchatām* [3,17419.] *vyapagacchatu te — bhayam* [R. 5,22,3.] *mado me vyapagataḥ* [BHARTṚ. 2,8.] *vyapagatamadarāgadambhadveṣadoṣa* [INDR. 5,62.] [MBH. 3,882.] [R. 4,8,4.] [MṚCCH. 1,3. 16.] [MEGH. 74.] *dharmādvyapagataḥ* departed from what is right [R. 4,17,50.] Said of stars: to withdraw entirely, to stand 12 constellations apart: *arkātsite dvitīye budhe 'tha vā yugapadeva sthitayoḥ . vyapagatayorvā* (Sch.: = *ādityāddvādaśasthānasthitayoḥ) tanniṣpattiratīva gurudṛṣṭyā ..* [VARĀH. BṚH. S. 39 (38),4.]
+**1)** — *vyapa* dass.: *tato vyapagataḥ punaḥ*
+[MBH. 13,7421.] *kṣutpipāse ca sarveṣāṃ kṣaṇena vyapagacchatām*
+[3,17419.] *vyapagacchatu te — bhayam*
+[R. 5,22,3.] *mado me vyapagataḥ*
+[BHARTṚ. 2,8.] *vyapagatamadarāgadambhadveṣadoṣa*
+[INDR. 5,62.]
+[MBH. 3,882.]
+[R. 4,8,4.]
+[MṚCCH. 1,3. 16.]
+[MEGH. 74.] *dharmādvyapagataḥ* vom Rechte gewichen
 
-## apigam
+- **RU:** — *vyapa* dass.: *tato vyapagataḥ punaḥ*
+[MBH. 13,7421.] *kṣutpipāse ca sarveṣāṃ kṣaṇena vyapagacchatām*
+[3,17419.] *vyapagacchatu te — bhayam*
+[R. 5,22,3.] *mado me vyapagataḥ*
+[BHARTṚ. 2,8.] *vyapagatamadarāgadambhadveṣadoṣa*
+[INDR. 5,62.]
+[MBH. 3,882.]
+[R. 4,8,4.]
+[MṚCCH. 1,3. 16.]
+[MEGH. 74.] *dharmādvyapagataḥ* «уклонившийся от права»
+- **EN:** *vyapa* dass.: *tato vyapagataḥ punaḥ* [MBH. 13,7421.] *kṣutpipāse ca sarveṣāṃ kṣaṇena vyapagacchatām* [3,17419.] *vyapagacchatu te — bhayam* [R. 5,22,3.] *mado me vyapagataḥ* [BHARTṚ. 2,8.] *vyapagatamadarāgadambhadveṣadoṣa* [INDR. 5,62.] [MBH. 3,882.] [R. 4,8,4.] [MṚCCH. 1,3. 16.] [MEGH. 74.] *dharmādvyapagataḥ* departed from what is right [R. 4,17,50.] Said of stars: to withdraw entirely, to stand 12 constellations apart: *arkātsite dvitīye budhe 'tha vā yugapadeva sthitayoḥ . vyapagatayorvā* (Sch.: = *ādityāddvādaśasthānasthitayoḥ) tanniṣpattiratīva gurudṛṣṭyā ..* [VARĀH. BṚH. S. 39 (38),4.]
+  <sub>attested</sub>
+
+**2)** [R. 4,17,50.] Von Sternen: sich ganz entfernen,12 Sternbilder entfernt abstehen: *arkātsite dvitīye budhe 'tha vā yugapadeva sthitayoḥ . vyapagatayorvā*
+(Sch.: = *ādityāddvādaśasthānasthitayoḥ) tanniṣpattiratīva gurudṛṣṭyā ..*
+[VARĀH. BṚH. S. 39 (38),4.]
+
+- **RU:** [R. 4,17,50.] О звёздах: «совершенно удалиться, отстоять на 12 созвездий»: *arkātsite dvitīye budhe 'tha vā yugapadeva sthitayoḥ . vyapagatayorvā*
+(Sch.: = *ādityāddvādaśasthānasthitayoḥ) tanniṣpattiratīva gurudṛṣṭyā ..*
+[VARĀH. BṚH. S. 39 (38),4.]
+  <sub>lexicographic</sub>
+
+## api+gam
 
 `gam~~h0_16_api`
 
 
 **1)** — *api*
  1) in Etwas eingehen, bei Jmd eintreten: *devān*
+[AV. 12,4,31.] [3,53.]
+[ŚAT. BR. 14,4,3,1.] *tāṃścidevāpi gacchatāt*
+[ṚV. 10,154,1.] *api panthāmaganmahi svastigām*
+[6,51,16.] [10,2,2.] *(rāyaḥ) vrajaṃ na gāvaḥ prayatā api gman*
+[5,33,10.] *asuṃ vāgapi gacchatu*
+[AV. 2,12,8.] *sukṛtāṃ lokam*
+[9,5,1.] [12,2,4.] [45.] [VS. 40,3.] [ŚAT. BR. 3,4,2,7.] [14,7,2,14.] [LĀṬY. 4,12,17.]
+
+- **RU:** — *api*
+ 1) «войти во что-либо, вступить к кому-либо»: *devān*
 [AV. 12,4,31.] [3,53.]
 [ŚAT. BR. 14,4,3,1.] *tāṃścidevāpi gacchatāt*
 [ṚV. 10,154,1.] *api panthāmaganmahi svastigām*
@@ -989,11 +1029,16 @@ to draw near, to present oneself: *kāle tvanugate*
 [5,33,10.] *asuṃ vāgapi gacchatu*
 [AV. 2,12,8.] *sukṛtāṃ lokam*
 [9,5,1.] [12,2,4.] [45.] [VS. 40,3.] [ŚAT. BR. 3,4,2,7.] [14,7,2,14.] [LĀṬY. 4,12,17.]
+  <sub>attested</sub>
 
 **2)** — 2) inire feminam: *apyū nu patnīrvṛṣaṇo jagamyuḥ*
 [ṚV. 1,179,1.]
+
+- **RU:** — 2) «совокупляться с женщиной» (inire feminam): *apyū nu patnīrvṛṣaṇo jagamyuḥ*
+[ṚV. 1,179,1.]
 - **EN:** — 2) inire feminam: *apyū nu patnīrvṛṣaṇo jagamyuḥ*
 [ṚV. 1,179,1.]
+  <sub>attested</sub>
 
 ## abhigam
 
@@ -1027,6 +1072,34 @@ to draw near, to present oneself: *kāle tvanugate*
 [3,16656.] *abhigata* gekommen zu (dat.): *viniścayenābhigato 'smi te*
 [MBH. 3,16700.] besucht: *mayā pūrvaṃ bahuśo 'bhigato hi saḥ*
 [R. 4,59,11.]
+
+- **RU:** — *abhi*
+ 1) «приблизиться, подойти, подступить» (acc.) «прийти к, пойти к» или «навстречу»: *(dūtaḥ) abhi māmagacchat*
+[ṚV. 10,98,2.] [146,5.]
+[AV. 20,135,1.]
+[MUṆḌ. UP. 1,2,12.] *svāṃ yonim*
+[ŚĀṄKH. ŚR. 4,11,12.]
+[LĀṬY. 2,1,7.] — *abhigacchan* (без acc.)
+[M. 2,196.]
+[MBH. 1,7684.] [13,1626.]
+[N. 2,26.] [12,30.]
+[INDR. 2,19.]
+[R. 3,10,8.] *abhijagmurnaraśreṣṭhān*
+[MBH. 1,5769.] [7635.] [3,1441.] [8069.]
+[N. 1,6.] [2,9.]
+[M. 1,1.] [4,153.] [11,99.]
+[R. 1,1,55.] [56.] [76.] [57,15.] [3,2,13.] [15.] [8,18.]
+[VID. 51.] *tadabhigacchāva vanam*
+[R. 2,96,27.] *vidarbhān*
+[N. 2,25.] *kurukṣetram*
+[MBH.] в [BENF. Chr. 20,23.] *tatra*
+[R. 1,60,11.] *abhigatvā(!)*
+[MBH. 3,6068.] [8141.] med.: *abhyagacchata vaidehīm*
+[R. 3,52,20.] [10,1.]
+[MBH. 2,1994.] *vanāni kramaśastāta sarvāṇyevābhyagacchata*
+[3,16656.] *abhigata* «пришедший к» (dat.): *viniścayenābhigato 'smi te*
+[MBH. 3,16700.] «посещённый»: *mayā pūrvaṃ bahuśo 'bhigato hi saḥ*
+[R. 4,59,11.]
 - **EN:** — *abhi*
  1) to come up, to approach, to step up to (acc.), to come to, go to, or towards: *(dūtaḥ) abhi māmagacchat*
 [ṚV. 10,98,2.] [146,5.]
@@ -1054,20 +1127,35 @@ to draw near, to present oneself: *kāle tvanugate*
 [3,16656.] *abhigata* come to (dat.): *viniścayenābhigato 'smi te*
 [MBH. 3,16700.] visited: *mayā pūrvaṃ bahuśo 'bhigato hi saḥ*
 [R. 4,59,11.]
+  <sub>attested</sub>
 
 **2)** — 2) folgen: *tyaktvā jñātijanam — anurāgādvane rāmaṃ diṣṭyā tvamabhigacchasi*
 [R. 3,2,21.]
+
+- **RU:** — 2) «следовать»: *tyaktvā jñātijanam — anurāgādvane rāmaṃ diṣṭyā tvamabhigacchasi*
+[R. 3,2,21.]
 - **EN:** — 2) to follow: *tyaktvā jñātijanam — anurāgādvane rāmaṃ diṣṭyā tvamabhigacchasi*
 [R. 3,2,21.]
+  <sub>attested</sub>
 
 **3)** — 3) finden, antreffen: *tatastvāṃ brāhmaṇaḥ — abhyagacchatkośalāyāmṛtuparṇaniveśane*
+[MBH. 3,2978.] *yadyasmānabhigaccheta pāpaḥ*
+[2042.]
+
+- **RU:** — 3) «находить, заставать»: *tatastvāṃ brāhmaṇaḥ — abhyagacchatkośalāyāmṛtuparṇaniveśane*
 [MBH. 3,2978.] *yadyasmānabhigaccheta pāpaḥ*
 [2042.]
 - **EN:** — 3) to find, to come upon: *tatastvāṃ brāhmaṇaḥ — abhyagacchatkośalāyāmṛtuparṇaniveśane*
 [MBH. 3,2978.] *yadyasmānabhigaccheta pāpaḥ*
 [2042.]
+  <sub>attested</sub>
 
 **4)** — 4) fleischlich beiwohnen: *abhigantāsmi bhaginīṃ mātaraṃ vā taveti ha . śapantam*
+[YĀJÑ. 2,205.] *abhyagacchaḥ patiṃ yattvaṃ bhajamānam*
+[MBH. 1,2981.] [4203.] *yastviha vā agamyāṃ striyaṃ puruṣo 'gamyaṃ vā puruṣaṃ yoṣidabhigacchati*
+[BHĀG. P. 5,26,20.]
+
+- **RU:** — 4) «плотски познавать, совокупляться»: *abhigantāsmi bhaginīṃ mātaraṃ vā taveti ha . śapantam*
 [YĀJÑ. 2,205.] *abhyagacchaḥ patiṃ yattvaṃ bhajamānam*
 [MBH. 1,2981.] [4203.] *yastviha vā agamyāṃ striyaṃ puruṣo 'gamyaṃ vā puruṣaṃ yoṣidabhigacchati*
 [BHĀG. P. 5,26,20.]
@@ -1075,17 +1163,29 @@ to draw near, to present oneself: *kāle tvanugate*
 [YĀJÑ. 2,205.] *abhyagacchaḥ patiṃ yattvaṃ bhajamānam*
 [MBH. 1,2981.] [4203.] *yastviha vā agamyāṃ striyaṃ puruṣo 'gamyaṃ vā puruṣaṃ yoṣidabhigacchati*
 [BHĀG. P. 5,26,20.]
+  <sub>attested</sub>
 
 **5)** — 5) sich an Etwas machen: *yuddhamevābhigacchāmaḥ*
 [R. 5,82,18.] *vihāram* sich ergehen
 [MBH. 1,7716.]
+
+- **RU:** — 5) «приступать к чему-либо»: *yuddhamevābhigacchāmaḥ*
+[R. 5,82,18.] *vihāram* «прогуливаться, предаваться (чему-либо)»
+[MBH. 1,7716.]
 - **EN:** — 5) to set about something: *yuddhamevābhigacchāmaḥ*
 [R. 5,82,18.] *vihāram* to expatiate, to hold forth
 [MBH. 1,7716.]
+  <sub>attested</sub>
 
 **6)** — 6) erlangen, erwerben, theilhaft werden: *śrameṇānaḍvānkīlālaṃ kīnāśaścābhi gacchataḥ*
 [AV. 4,11,10.] [16,7,9.] [11.] *tanna manuṣyeṣu hiraṇyamabhigamyate*
 [ŚAT. BR. 3,2,4,13.] [8,3,35.] eines Zustandes theilhaft werden: *nidrāmabhigataḥ* eingeschlafen
+[R. 5,68,3.] *abhyagacchaddvayorakṣaṇostyāgamekasya*
+[2,96,54.]
+
+- **RU:** — 6) «достигать, приобретать, становиться причастным»: *śrameṇānaḍvānkīlālaṃ kīnāśaścābhi gacchataḥ*
+[AV. 4,11,10.] [16,7,9.] [11.] *tanna manuṣyeṣu hiraṇyamabhigamyate*
+[ŚAT. BR. 3,2,4,13.] [8,3,35.] «становиться причастным некоему состоянию»: *nidrāmabhigataḥ* «уснувший»
 [R. 5,68,3.] *abhyagacchaddvayorakṣaṇostyāgamekasya*
 [2,96,54.]
 - **EN:** — 6) to attain, to acquire, to become partaker of: *śrameṇānaḍvānkīlālaṃ kīnāśaścābhi gacchataḥ*
@@ -1093,8 +1193,15 @@ to draw near, to present oneself: *kāle tvanugate*
 [ŚAT. BR. 3,2,4,13.] [8,3,35.] to become partaker of a state: *nidrāmabhigataḥ* fallen asleep
 [R. 5,68,3.] *abhyagacchaddvayorakṣaṇostyāgamekasya*
 [2,96,54.]
+  <sub>attested</sub>
 
 **7)** — 7) begreifen: *(manasā) uśijo jagmurabhi tāni vedasā*
+[ṚV. 3,60,1.] *yadvai hṛdayenābhigacchati tajjihvayā vadati*
+[TS. 6,3,10,4.] [1,7,4.] *medhayā vai manasābhigacchati yajeyeti*
+[ŚAT. BR. 3,1,4,7.] [13.] *no hyanabhigataṃ manasā vāgvadati*
+[4,6,7,19.] [1,4,5,9.]
+
+- **RU:** — 7) «постигать, понимать»: *(manasā) uśijo jagmurabhi tāni vedasā*
 [ṚV. 3,60,1.] *yadvai hṛdayenābhigacchati tajjihvayā vadati*
 [TS. 6,3,10,4.] [1,7,4.] *medhayā vai manasābhigacchati yajeyeti*
 [ŚAT. BR. 3,1,4,7.] [13.] *no hyanabhigataṃ manasā vāgvadati*
@@ -1104,6 +1211,7 @@ to draw near, to present oneself: *kāle tvanugate*
 [TS. 6,3,10,4.] [1,7,4.] *medhayā vai manasābhigacchati yajeyeti*
 [ŚAT. BR. 3,1,4,7.] [13.] *no hyanabhigataṃ manasā vāgvadati*
 [4,6,7,19.] [1,4,5,9.]
+  <sub>attested</sub>
 
 **8)** — Vgl. *abhigantar* fgg., *abhigāmin* . — caus. zum Verständniss bringen, erklären(?): *vedāṅgānyabhigamayanti sarvayatnaiḥ*
 [MBH. 1,1295.]
@@ -1112,21 +1220,38 @@ to draw near, to present oneself: *kāle tvanugate*
 [MBH. 1,1295.]
 [WEST.]: legere.
 
-## samabhigam
+**caus)** Vgl. *abhigantar* fgg., *abhigāmin* . — caus. zum Verständniss bringen, erklären(?): *vedāṅgānyabhigamayanti sarvayatnaiḥ*
+[MBH. 1,1295.]
+[WEST.] : legere.
+
+- **RU:** Vgl. *abhigantar* fgg., *abhigāmin* . — caus. «приводить к пониманию, объяснять(?)»: *vedāṅgānyabhigamayanti sarvayatnaiḥ*
+[MBH. 1,1295.]
+[WEST.]: «legere» (лат. «читать»)
+  <sub>lexicographic</sub>
+
+## samābhi+gam
 
 `gam~~h0_18_sama_bi`
 
 
-**1)** — *samabhi* herankommen: *samabhigacchantaṃ prekṣya rāmam* [R. 3,9,16.]
-- **EN:** *samabhi* to approach: *samabhigacchantaṃ prekṣya rāmam* [R. 3,9,16.]
+**1)** — *samabhi* herankommen: *samabhigacchantaṃ prekṣya rāmam*
+[R. 3,9,16.]
 
-## aramgam
+- **RU:** — *samabhi* «подходить, приближаться»: *samabhigacchantaṃ prekṣya rāmam*
+[R. 3,9,16.]
+- **EN:** *samabhi* to approach: *samabhigacchantaṃ prekṣya rāmam* [R. 3,9,16.]
+  <sub>attested</sub>
+
+## āram+gam
 
 `gam~~h0_19_aram`
 
 
 **1)** — *aram* s. u. d. W.
+
+- **RU:** — *aram* s. u. d. W.
 - **EN:** *aram* s. u. d. W.
+  <sub>attested</sub>
 
 ## avagam
 
@@ -1142,6 +1267,16 @@ to draw near, to present oneself: *kāle tvanugate*
 [ŚAT. BR. 14,1,1,5.] *ava śādeṣu gacchati*
 [ṚV. 9,15,6.] gerathen unter: *na sannā ava gacchati*
 [AV. 6,76,4.]
+
+- **RU:** — *ava*
+ 1) «прийти сюда» или «прийти туда, посетить, снизойти»: *viśveha devau savanāva gacchatam*
+[ṚV. 8,35,4.] *samanam*
+[10,86,10.] [6,75,5.] *(yaḥ) bṛhaspatiṃ namasāva ca gacchāt*
+[AV. 4,1,7.] [18,2,56.] *añjaḥ samudramava jagmurāpaḥ*
+[ṚV. 1,32,2.] *yajñasyodṛcam*
+[ŚAT. BR. 14,1,1,5.] *ava śādeṣu gacchati*
+[ṚV. 9,15,6.] «попасть под»: *na sannā ava gacchati*
+[AV. 6,76,4.]
 - **EN:** — *ava*
  1) to come here or thither, to visit, to condescend: *viśveha devau savanāva gacchatam*
 [ṚV. 8,35,4.] *samanam*
@@ -1151,18 +1286,28 @@ to draw near, to present oneself: *kāle tvanugate*
 [ŚAT. BR. 14,1,1,5.] *ava śādeṣu gacchati*
 [ṚV. 9,15,6.] to fall in among, come among: *na sannā ava gacchati*
 [AV. 6,76,4.]
+  <sub>attested</sub>
 
 **2)** — 2) erlangen: *ubhe eva viśaṃ ca rāṣṭraṃ cāvagacchati yadi nāvagacchedimamahamādityebhyo bhāgaṃ nirvapāmyāmuṣmādamuṣyai viśo 'vagantoriti*
+[TS. 2,3,1,4.] [6,6,5,3.]
+[AIT. BR. 8,10.]
+
+- **RU:** — 2) «достигать, обретать»: *ubhe eva viśaṃ ca rāṣṭraṃ cāvagacchati yadi nāvagacchedimamahamādityebhyo bhāgaṃ nirvapāmyāmuṣmādamuṣyai viśo 'vagantoriti*
 [TS. 2,3,1,4.] [6,6,5,3.]
 [AIT. BR. 8,10.]
 - **EN:** — 2) to attain, obtain: *ubhe eva viśaṃ ca rāṣṭraṃ cāvagacchati yadi nāvagacchedimamahamādityebhyo bhāgaṃ nirvapāmyāmuṣmādamuṣyai viśo 'vagantoriti*
 [TS. 2,3,1,4.] [6,6,5,3.]
 [AIT. BR. 8,10.]
+  <sub>attested</sub>
 
 **3)** — 3) an Etwas gehen, unternehmen: *kuto yuddhaṃ jātu naro 'vagacchet*
 [MBH. 5,740.]
+
+- **RU:** — 3) «приступать к чему-либо, предпринимать»: *kuto yuddhaṃ jātu naro 'vagacchet*
+[MBH. 5,740.]
 - **EN:** — 3) to set about something, undertake: *kuto yuddhaṃ jātu naro 'vagacchet*
 [MBH. 5,740.]
+  <sub>attested</sub>
 
 **4)** — 4) auf Etwas kommen, auf Etwas verfallen, bemerken, erkennen, in Erfahrung bringen, sich von Etwas überzeugen, überzeugt sein: *yatraitadvapāṃ vā harvīṃṣi vā vayāṃsi dvipadacatuṣpadaṃ vābhimṛśyāvagaccheyuḥ*
 
@@ -1173,6 +1318,60 @@ to draw near, to present oneself: *kāle tvanugate*
 [ŚIŚ. 9,56.] *acāpalyaṃ pratyakṣeṇāvagamyate*
 [HIT. I,92.] *anasūyayāpi madīyastarko 'vagataḥ (avagata = vidita, buddha* u. s. w.
 [AK. 3,2,57.]
+[H. 1496]) [ŚĀK. 34,7], v. l. *dhyānāvagatavṛttānta*
+[111,4], v. l. [PAÑCAT. 130,16.] [BHĀG. P. 3,11,5.] *bhavatu tāvadavagacchāmi* ich will mal sehen, was es ist
+[ŚĀK. 8,22], v. l. *parastādavagamyata eva* was da folgt errathe ich schon
+[15,4.] *na khalvavagacchāmi* ich komme nicht dahinter, ich verstehe das nicht
+[21,17.] *kathamavagamyate* wie kommst du darauf? woraus schliessest du dieses?
+[98,23.] *avagacchādya yatkāryaṃ kartavyaṃ te* bringe in Erfahrung
+[R. 6,10,6.] *avagantuṃ tvayā yuktaṃ buddhyā — mṛgo hemamayo naiṣaḥ* zur Ueberzeugung gelangen
+[3,49,19.] [1,30,17.] *saṃbhāvya ityavagatya*
+[ITIH.] bei [SĀY.] zu [ṚV. 1,125,1.] [MBH. 1,896.] [3431.] [HIT. 39,7.] Sch. zu [Kap. 1,80.] *tadaiva dhyānādavagato 'smi — iti* gelangte ich zur Ueberzeugung
+[ŚĀK. 111,4.] *kathaṃ śāntamityabhihite śrānta ityavagacchati mūrkhaḥ* glauben, dass gemeint sei
+[MṚCCH. 13,11.] *yāvadbhiḥ śabdaiḥ so 'rtho 'vagamyate tāvantaḥ prayoktavyāḥ* wie viele Wörter der Sinn zum Verständniss verlangt
+[PAT.] zu [P. 8,1,12.] *nāvagam* mit einem infin. nicht verstehen: *(tadbalaṃ) saṃkhyātuṃ nāvajagmatuḥ*
+[R. 6,1,17.] Jmd oder Etwas (acc.) für Etwas (acc.) erkennen, halten, ansehen: *tasya māmavagacchadhvaṃ bhāryām*
+[MBH. 3,2483.] *tattadevāvagaccha tvaṃ mama tejoṃ'śasaṃbhavam*
+[BHAG. 10,41.]
+[R. 6,103,16.] [4,7,7.]
+[SUŚR. 1,23,13.]
+[ŚĀK. 17,6.] [111,20.]
+[RAGH. 8,87.]
+[BHAṬṬ. 5,81.] *ūḍhapūrvāṃ tadduhitaramavagato 'ham*
+[ŚĀK. 110,17.] *na tathāsmi — yathā māmavagacchasi*
+[R. 6,101,7.]
+
+- **RU:** — 4) «напасть на мысль о чём-либо, заметить, распознать, узнать, увериться в чём-либо, быть уверенным»: *yatraitadvapāṃ vā harvīṃṣi vā vayāṃsi dvipadacatuṣpadaṃ vābhimṛśyāvagaccheyuḥ*
+
+[KAUŚ. 123.] *asya saundaryamavagatya*
+[ITIH.] у [SĀY.] к [ṚV. 1,125,1.] *na tvetadavagacchanti*
+[R. 3,2,25.] [4,19,22.] *yadāvagacchedāyatyāmādhikyaṃ dhruvramātmanaḥ . tadātve cālpikāṃ pīḍām*
+[M. 7,169.]
+[ŚIŚ. 9,56.] *acāpalyaṃ pratyakṣeṇāvagamyate*
+[HIT. I,92.] *anasūyayāpi madīyastarko 'vagataḥ (avagata = vidita, buddha* u. s. w.
+[AK. 3,2,57.]
+[H. 1496]) [ŚĀK. 34,7], v. l. *dhyānāvagatavṛttānta*
+[111,4], v. l. [PAÑCAT. 130,16.] [BHĀG. P. 3,11,5.] *bhavatu tāvadavagacchāmi* «я хочу посмотреть, что это такое»
+[ŚĀK. 8,22], v. l. *parastādavagamyata eva* «что за этим следует, я уже догадываюсь»
+[15,4.] *na khalvavagacchāmi* «я не пойму этого, я этого не понимаю»
+[21,17.] *kathamavagamyate* «как ты к этому пришёл? из чего ты это заключаешь?»
+[98,23.] *avagacchādya yatkāryaṃ kartavyaṃ te* «узнавать, выведывать»
+[R. 6,10,6.] *avagantuṃ tvayā yuktaṃ buddhyā — mṛgo hemamayo naiṣaḥ* «прийти к убеждению»
+[3,49,19.] [1,30,17.] *saṃbhāvya ityavagatya*
+[ITIH.] у [SĀY.] к [ṚV. 1,125,1.] [MBH. 1,896.] [3431.] [HIT. 39,7.] Sch. к [Kap. 1,80.] *tadaiva dhyānādavagato 'smi — iti* «я пришёл к убеждению»
+[ŚĀK. 111,4.] *kathaṃ śāntamityabhihite śrānta ityavagacchati mūrkhaḥ* «полагать, что подразумевается»
+[MṚCCH. 13,11.] *yāvadbhiḥ śabdaiḥ so 'rtho 'vagamyate tāvantaḥ prayoktavyāḥ* «сколько слов требует смысл для понимания»
+[PAT.] к [P. 8,1,12.] *nāvagam* с одним infin. «не понимать»: *(tadbalaṃ) saṃkhyātuṃ nāvajagmatuḥ*
+[R. 6,1,17.] «кого-либо» или «что-либо» (acc.) «за что-либо» (acc.) «признавать, считать, рассматривать»: *tasya māmavagacchadhvaṃ bhāryām*
+[MBH. 3,2483.] *tattadevāvagaccha tvaṃ mama tejoṃ'śasaṃbhavam*
+[BHAG. 10,41.]
+[R. 6,103,16.] [4,7,7.]
+[SUŚR. 1,23,13.]
+[ŚĀK. 17,6.] [111,20.]
+[RAGH. 8,87.]
+[BHAṬṬ. 5,81.] *ūḍhapūrvāṃ tadduhitaramavagato 'ham*
+[ŚĀK. 110,17.] *na tathāsmi — yathā māmavagacchasi*
+[R. 6,101,7.]
 - **EN:** — 4) to hit upon something, come to think of something, notice, recognize, ascertain, become convinced of something, be convinced: *yatraitadvapāṃ vā harvīṃṣi vā vayāṃsi dvipadacatuṣpadaṃ vābhimṛśyāvagaccheyuḥ*
 
 [KAUŚ. 123.] *asya saundaryamavagatya*
@@ -1182,6 +1381,7 @@ to draw near, to present oneself: *kāle tvanugate*
 [ŚIŚ. 9,56.] *acāpalyaṃ pratyakṣeṇāvagamyate*
 [HIT. I,92.] *anasūyayāpi madīyastarko 'vagataḥ (avagata = vidita, buddha* u. s. w.
 [AK. 3,2,57.]
+  <sub>attested</sub>
 
 **4-idioms)** [H. 1496]) [ŚĀK. 34,7], v. l. *dhyānāvagatavṛttānta*
 [111,4], v. l. [PAÑCAT. 130,16.] [BHĀG. P. 3,11,5.] *bhavatu tāvadavagacchāmi* ich will mal sehen, was es ist
@@ -1233,10 +1433,16 @@ to draw near, to present oneself: *kāle tvanugate*
  1) herbeischaffen: *imamihāva gamaya*
 [AV. 3,3,6.] verschaffen: *ādityā viśamavagamayanti*
 [TS. 2,3,1,4.]
+
+- **RU:** — Vgl. *avagati, avagantavya* fgg. — caus.
+ 1) «доставлять сюда»: *imamihāva gamaya*
+[AV. 3,3,6.] «доставать, добывать»: *ādityā viśamavagamayanti*
+[TS. 2,3,1,4.]
 - **EN:** — Vgl. *avagati, avagantavya* fgg. — caus.
  1) to procure, bring about: *imamihāva gamaya*
 [AV. 3,3,6.] to obtain, provide: *ādityā viśamavagamayanti*
 [TS. 2,3,1,4.]
+  <sub>attested</sub>
 
 **caus-2)** — 2) erfahren lassen, kennen lehren: *na māṃ samānavidyatayā paribhavanamavagamayitumarhasi*
 [MĀLAV. 14,2.]
@@ -1244,38 +1450,58 @@ to draw near, to present oneself: *kāle tvanugate*
 [113,3.] *viruddhamavagamayati*
 [SĀH. D. 214,2.] *na bhavati mahimā vinā vipatteravagamayanniva paśyato payodhiḥ*
 [BHAṬṬ. 10,62.] mit dem acc. des obj. und des praed. 53.
+
+- **RU:** — 2) «давать узнать, обучать распознаванию»: *na māṃ samānavidyatayā paribhavanamavagamayitumarhasi*
+[MĀLAV. 14,2.]
+[DAŚAK. 93,15.] *sarvamidam — pitroravagamayya*
+[113,3.] *viruddhamavagamayati*
+[SĀH. D. 214,2.] *na bhavati mahimā vinā vipatteravagamayanniva paśyato payodhiḥ*
+[BHAṬṬ. 10,62.] с acc. obj. и praed. 53.
 - **EN:** — 2) to let know, teach to know: *na māṃ samānavidyatayā paribhavanamavagamayitumarhasi*
 [MĀLAV. 14,2.]
 [DAŚAK. 93,15.] *sarvamidam — pitroravagamayya*
 [113,3.] *viruddhamavagamayati*
 [SĀH. D. 214,2.] *na bhavati mahimā vinā vipatteravagamayanniva paśyato payodhiḥ*
 [BHAṬṬ. 10,62.] with the acc. of the obj. and the praed. 53.
+  <sub>attested</sub>
 
-## pratyavagam
+## pratyava+gam
 
 `gam~~h0_21_pratyava`
 
 
-**1)** — *pratyava* einzeln erkennen [MBH. 11,90.]
-- **EN:** *pratyava* to recognise individually, discern one by one [MBH. 11,90.]
+**1)** — *pratyava* einzeln erkennen
+[MBH. 11,90.]
 
-## samavagam
+- **RU:** — *pratyava* «распознавать по отдельности»
+[MBH. 11,90.]
+- **EN:** *pratyava* to recognise individually, discern one by one [MBH. 11,90.]
+  <sub>attested</sub>
+
+## samava+gam
 
 `gam~~h0_22_samava`
 
 
 **1)** — *samava* vollständig kennen lernen
 [BHĀG. P. 5,13,25.] [14,39.]
+
+- **RU:** — *samava* «полностью познать, вполне узнать»
+[BHĀG. P. 5,13,25.] [14,39.]
 - **EN:** — *samava* to come to know completely
 [BHĀG. P. 5,13,25.] [14,39.]
+  <sub>attested</sub>
 
-## astamgam
+## astam+gam
 
 `gam~~h0_23_astam`
 
 
 **1)** — *astam* s. u. 2. *asta* 2.
+
+- **RU:** — *astam* s. u. 2. *asta* 2.
 - **EN:** — *astam* s. u. 2. *asta* 2.
+  <sub>attested</sub>
 
 ## āgam
 
@@ -1317,6 +1543,42 @@ to draw near, to present oneself: *kāle tvanugate*
 [N. 7,1.] *āgacchethāḥ*
 [MBH.] in [BENF. Chr. 28,16.] *āgam saha* mit Jmd zusammenkommen
 [N. 16,30.]
+
+- **RU:** — *ā*
+ 1) «прийти, явиться, наступить; прийти к, в, после; подступить к, к; достигнуть, встретить»: *viśvo hya1nyo arirājagāma*
+[ṚV. 10,28,1.] *āgacchata āgatasya nāma gṛhṇāmyāyataḥ*
+[AV. 6,82,1.] *devo devebhirā gamat*
+[ṚV. 1,1,5.] [5,3.] [21,4.] [34,10.] *āgacchataṃ sīmavobhiḥ*
+[117,19.] [10,108,3.] *kayā na āśvinā gamatho hūyamānā*
+[4,43,4.] *ā vāṃ ratho gamyāḥ*
+[1,181,3.] [186,6.] [10,3,7.] *ā vāṃ patitvaṃ sakhyāya jagmuṣī*
+[1,119,5.] [VS. 9,19.] *ā mā -ghoṣo gacchati vāṅma āsām (apām)*
+[AV. 3,13,6.] *ā ghā tā gacchānuttarā yugāni*
+[ṚV. 10,10,10.] *mā no arātiraghaśaṃsa āgan* «пусть оно не достигнет нас»
+[TBR. 3,1,2,8.] *abhayaṃ tvāgacchatāt*
+[ŚAT. BR. 14,6,11,6.] [7,1,43.] [8,12,1.] — *ayamayamāgacchāmi*
+[ŚĀK. 42,5.] *ājagāma tato brahmā — draṣṭuṃ tam*
+[R. 1,2,26.] [13]
+[MBH. 3,15314.]
+[N. 4,15.] *rathaḥ — ājagāma*
+[MBH. 3,1715.] *satvaramāgamyatāṃ devena*
+[HIT. 41,13.] *nānādigdeśāt*
+[9,4.] [R. 1,59,9.] *ājagāmāśu pāṇḍavān*
+[HIḌ. 3,1.]
+[R. 1,59,5.] *abhyāsam*
+[9,25.] [MBH. 1,7030.] *samīpam*
+[N. 2,23.] *antikam*
+[ITIH.] у [SĀY.] к [ṚV. 1,125,1.] *parvatam*
+[ARJ. 1,3.] *sabhādvāram*
+[MBH. 3,264.]
+[N. 13,48.]
+[R. 1,9,43.] [57.] [26,30.] *rātrau tava gṛha āgamiṣyāmi*
+
+[VET. 24,3.] *tatra*
+[SUND. 4,21.]
+[N. 7,1.] *āgacchethāḥ*
+[MBH.] в [BENF. Chr. 28,16.] *āgam saha* «сойтись с кем-либо»
+[N. 16,30.]
 - **EN:** — *ā*
  1) to come up, arrive, appear; to come to, into, towards; to approach, step up to; to reach, meet with: *viśvo hya1nyo arirājagāma*
 [ṚV. 10,28,1.] *āgacchata āgatasya nāma gṛhṇāmyāyataḥ*
@@ -1352,6 +1614,7 @@ to draw near, to present oneself: *kāle tvanugate*
 [N. 7,1.] *āgacchethāḥ*
 [MBH.] in [BENF. Chr. 28,16.] *āgam saha* to meet, come together with someone
 [N. 16,30.]
+  <sub>attested</sub>
 
 **2)** — 2) zurückkehren
 [TS. 1,5,9,4.]
@@ -1359,6 +1622,17 @@ to draw near, to present oneself: *kāle tvanugate*
 [R. 1,61,22.]
 [VID. 84.]
 [VET. 30,7.] gewöhnlich in Verbindung mit *punar*
+[N. 23,5.]
+[R. 5,3,40.] *āgamya punarāśramāt*
+[1,2,9.] *punarāgamya tāṃ sabhām*
+[N. 10,20.] [1,31.] [4,22.]
+
+- **RU:** — 2) «возвращаться»
+[TS. 1,5,9,4.]
+[N. 24,1.]
+[R. 1,61,22.]
+[VID. 84.]
+[VET. 30,7.] обычно в сочетании с *punar*
 [N. 23,5.]
 [R. 5,3,40.] *āgamya punarāśramāt*
 [1,2,9.] *punarāgamya tāṃ sabhām*
@@ -1373,8 +1647,15 @@ to draw near, to present oneself: *kāle tvanugate*
 [R. 5,3,40.] *āgamya punarāśramāt*
 [1,2,9.] *punarāgamya tāṃ sabhām*
 [N. 10,20.] [1,31.] [4,22.]
+  <sub>attested</sub>
 
 **3)** — 3) in einen Zustand eingehen, — gerathen, sich hingeben: *teṣāmānṛṇyamāgaccha*
+[R. 3,27,13.] *dhyānam*
+[R. 6,99,4.] *samudvegam*
+[3,55,18.] *viśvāsam*
+[52,49.] [PAÑCAT. 34,15.] — *āgata*
+
+- **RU:** — 3) «войти в некое состояние, — впасть, предаться»: *teṣāmānṛṇyamāgaccha*
 [R. 3,27,13.] *dhyānam*
 [R. 6,99,4.] *samudvegam*
 [3,55,18.] *viśvāsam*
@@ -1384,6 +1665,7 @@ to draw near, to present oneself: *kāle tvanugate*
 [R. 6,99,4.] *samudvegam*
 [3,55,18.] *viśvāsam*
 [52,49.] [PAÑCAT. 34,15.] — *āgata*
+  <sub>attested</sub>
 
 **ppp-1)** 1) herbeigekommen, gekommen
 [AV. 6,82,1.] [10,4,9.] [19,53,7.] *ahani*
@@ -1422,6 +1704,44 @@ to draw near, to present oneself: *kāle tvanugate*
 [R. 1,35,23.] *˚saṃtrāsa*
 [6,5,3.] *māmāgataṃ tasya tadvacaḥ* jene Rede von ihm geht jetzt an mir in Erfüllung
 [DAŚ. 2,58.]
+
+- **RU:** 1) «пришедший, явившийся»
+[AV. 6,82,1.] [10,4,9.] [19,53,7.] *ahani*
+[7,52,2.] *ṛtau*
+[11,4,4.] *punaryantu yata āgatāḥ*
+[14,2,10.] [ŚAT. BR. 3,6,2,2.] [KĀTY. ŚR. 7,8,22.] о «госте»
+[AIT. BR. 1,15.]
+[ŚAT. BR. 1,6,4,3.] [3,3,4,31.] — *āgato 'smi*
+[N. 21,22.] [3,3.] [22.] [26,34.]
+[R. 3,68,48.]
+[VID. 5.] [298.] *ahamapyanupadamāgata eva* «я приду тотчас следом»
+[ŚĀK. 29,1.] *āgatābhyāgatān*
+[MBH. 5,912.] *tasya kālo 'yamāgataḥ*
+[R. 1,62,9.] *kāla āgate*
+[MBH. 3,1793.] *rājanyām*
+[PAÑCAT. 128,11.] *gṛhamāgatān*
+[M. 3,113.]
+[N. 12,78.]
+[DAŚ. 1,25.]
+[VID. 244.] [304.] *tvatsamīpam*
+[MEGH. 97.] *nipāne vāgataṃ gajam*
+[DAŚ. 2,13.] *ihāgataḥ*
+[N. 12,38.] [16,24.] [16,24.] [18,12.] [22,7.]
+[HIT. 19,3.] *tatra*
+[18,10.] *āśramāgata* «пришедший в скит»
+[M. 6,7.] *gṛhāgata*
+[PAÑCAT. III,11.] *śaraṇāgata*
+[RAGH. 3,11.] *tiryakpratimukhāgata* (повозка) «которая ударилась сбоку или спереди обо что-либо»
+[M. 8,291.] Также с указанием места «откуда» compon.: *digāgata*
+[YĀJÑ. 2,154.] «доставшийся, выпавший на долю»: *nyāyāgatadhana*
+[YĀJÑ. 3,205.] *anvayāgata* «унаследованный»
+[PAÑCAT. 16,11.] [168,23] (ошибочно *anvayagata)*; vgl. *kramāgata, paryāyāgata*) «то, что случилось»: *kimanyadidamāgatam*
+[MBH. 3,2555.] «то, что наступило»: *āgataṃ cāśā ca*
+[ŚAT. BR. 2,3,1,24.] [27.] *āgatamanyu*
+[M. 2,152.] *kiṃcidāgatavismaya*
+[R. 1,35,23.] *˚saṃtrāsa*
+[6,5,3.] *māmāgataṃ tasya tadvacaḥ* «та его речь теперь на мне исполняется»
+[DAŚ. 2,58.]
 - **EN:** 1) having come up, arrived
 [AV. 6,82,1.] [10,4,9.] [19,53,7.] *ahani*
 [7,52,2.] *ṛtau*
@@ -1459,17 +1779,35 @@ to draw near, to present oneself: *kāle tvanugate*
 [R. 1,35,23.] *˚saṃtrāsa*
 [6,5,3.] *māmāgataṃ tasya tadvacaḥ* that speech of his is now being fulfilled in me
 [DAŚ. 2,58.]
+  <sub>attested</sub>
 
 **ppp-2)** — 2) zurückgekehrt: *proṣuṣamāgatam*
 [ŚAT. BR. 12,5,2,8.] [13,4,4,7.] In derselben Bed. mit *punar: govrajātpunarāgatam*
+[M. 11,195.]
+[HIT. 21,11.]
+
+- **RU:** — 2) «возвратившийся»: *proṣuṣamāgatam*
+[ŚAT. BR. 12,5,2,8.] [13,4,4,7.] В том же Bed. с *punar: govrajātpunarāgatam*
 [M. 11,195.]
 [HIT. 21,11.]
 - **EN:** — 2) returned: *proṣuṣamāgatam*
 [ŚAT. BR. 12,5,2,8.] [13,4,4,7.] In the same Bed. with *punar: govrajātpunarāgatam*
 [M. 11,195.]
 [HIT. 21,11.]
+  <sub>attested</sub>
 
 **ppp-3)** — 3) gerathen in (acc.): *dāsatvam*
+[N. 26,20.] *śailatvam*
+[MBH. 13,191.] *anaṅgavaśam*
+[3,1851.] *pañcatvam*
+[KATHĀS. 2,32.] *śokaḥ ślokatvam*
+[R. 1,2,43.] *kāruṇyam*
+[58,13.] *paraṃ vismayam*
+[4,14.] *saṃdeham*
+[64,10.] *saṃtāpam*
+[14.]
+
+- **RU:** — 3) «впавший в» (acc.): *dāsatvam*
 [N. 26,20.] *śailatvam*
 [MBH. 13,191.] *anaṅgavaśam*
 [3,1851.] *pañcatvam*
@@ -1489,6 +1827,7 @@ to draw near, to present oneself: *kāle tvanugate*
 [4,14.] *saṃdeham*
 [64,10.] *saṃtāpam*
 [14.]
+  <sub>attested</sub>
 
 ## āgam
 
@@ -1497,8 +1836,12 @@ to draw near, to present oneself: *kāle tvanugate*
 
 **4)** — 4) durchlaufen: *āgato hyasyādhvā bhavati*
 [ŚAT. BR. 6,3,3,8.]
+
+- **RU:** — 4) пройти насквозь, миновать: *āgato hyasyādhvā bhavati*
+[ŚAT. BR. 6,3,3,8.]
 - **EN:** 4) to traverse, pass through: *āgato hyasyādhvā bhavati*
 [ŚAT. BR. 6,3,3,8.]
+  <sub>attested</sub>
 
 **etym-note)** — Vgl. *anāgata, anāgamiṣyant, āgati* fgg., *āgāmin* fg., *svāgata* .
 - **EN:** — Vgl. *anāgata, anāgamiṣyant, āgati* fgg., *āgāmin* fg., *svāgata*.
@@ -1507,12 +1850,23 @@ to draw near, to present oneself: *kāle tvanugate*
 [AV. 6,81,2.] *āgamitāpi vidūram*
 [GĪT. 12,3.] in der Erzählung herbeikommen lassen, Jmds Ankunft erzählen: *rājānamāgamayati = rājāgamanamācaṣṭe*
 [P. 3,1,26], Vārtt. 2, Sch.
+
+- **RU:** 1) дать прийти, привести, доставить: *ā gamaya*
+[AV. 6,81,2.] *āgamitāpi vidūram*
+[GĪT. 12,3.] в повествовании дать кому-л. прибыть, рассказать о чьём-л. прибытии: *rājānamāgamayati = rājāgamanamācaṣṭe*
+[P. 3,1,26], Vārtt. 2, Sch.
 - **EN:** [causative] 1) to cause to come hither, to bring about, to occasion: *ā gamaya*
 [AV. 6,81,2.] *āgamitāpi vidūram*
 [GĪT. 12,3.] "to cause to come hither in the narrative, to narrate someone's arrival": *rājānamāgamayati = rājāgamanamācaṣṭe*
 [P. 3,1,26], Vārtt. 2, Sch.
+  <sub>attested</sub>
 
 **caus-2)** — 2) Jmd Etwas beibringen: *prajñāmevāgamayati yaḥ prājñebhyaḥ sa paṇḍitaḥ*
+[MBH. 5,1247.] *nipuṇāgamita*
+(Sch.: = *nipuṇācāryeṇābhyāsitam*)
+[ŚIŚ. 9,79.]
+
+- **RU:** — 2) научить кого-л. чему-л., внушить кому-л. что-л.: *prajñāmevāgamayati yaḥ prājñebhyaḥ sa paṇḍitaḥ*
 [MBH. 5,1247.] *nipuṇāgamita*
 (Sch.: = *nipuṇācāryeṇābhyāsitam*)
 [ŚIŚ. 9,79.]
@@ -1520,26 +1874,37 @@ to draw near, to present oneself: *kāle tvanugate*
 [MBH. 5,1247.] *nipuṇāgamita*
 (Sch.: = *nipuṇācāryeṇābhyāsitam*)
 [ŚIŚ. 9,79.]
+  <sub>attested</sub>
 
 **caus-3)** — 3) Kunde von Etwas (acc.) erhalten: *sarvamāgamayāmāsa pāṇḍavānāṃ viceṣṭitam . — gūḍhaiḥ praṇihitaiścaraiḥ*
 [MBH. 5,132.] *tadapyāgamitaṃ mayā*
 [1,5434.] *tatkuto 'sminvipine priyāpravṛttimāgamayeyam*
 [VIKR. 57,18.] *āgamita* gelesen
 [JAṬĀDH.] im [ŚKDR.]
+
+- **RU:** — 3) получить весть, известие о чём-л. (acc.): *sarvamāgamayāmāsa pāṇḍavānāṃ viceṣṭitam . — gūḍhaiḥ praṇihitaiścaraiḥ*
+[MBH. 5,132.] *tadapyāgamitaṃ mayā*
+[1,5434.] *tatkuto 'sminvipine priyāpravṛttimāgamayeyam*
+[VIKR. 57,18.] *āgamita* читается
+[JAṬĀDH.] в [ŚKDR.]
 - **EN:** [causative] 3) to receive news of something (acc.): *sarvamāgamayāmāsa pāṇḍavānāṃ viceṣṭitam . — gūḍhaiḥ praṇihitaiścaraiḥ*
 [MBH. 5,132.] *tadapyāgamitaṃ mayā*
 [1,5434.] *tatkuto 'sminvipine priyāpravṛttimāgamayeyam*
 [VIKR. 57,18.] *āgamita* "read"
 [JAṬĀDH.] in [ŚKDR.]
+  <sub>attested</sub>
 
 **caus-4)** — 4) med. (die Zeit kommen lassen) abwarten, sich gedulden
 [P. 1,3,21], Vārtt. 2. *āgamayasva tāvat = kṣamasva*
 Sch. *āgamayate kālam*
 [VOP. 23,3.] *karmādiṣu sarveṣvadhvaryuḥ saṃpraiṣamāgamayeta*
 [LĀṬY. 4,9,8.] *adhīyīta vā tadvidbhyo vā parvāgamayeta*
-[GOBH. 1,5,14.] — intens. wiederholt sich nähern: *ā ganīganti karṇam*
-[ṚV. 6,75,3.] — desid. zu kommen im Begriff sein: *grāmamājigamiṣantaḥ*
-[ĀŚV. GṚHY. 4,1.]
+
+- **RU:** — 4) med. (дать наступить времени) выждать, набраться терпения
+[P. 1,3,21], Vārtt. 2. *āgamayasva tāvat = kṣamasva*
+Sch. *āgamayate kālam*
+[VOP. 23,3.] *karmādiṣu sarveṣvadhvaryuḥ saṃpraiṣamāgamayeta*
+[LĀṬY. 4,9,8.] *adhīyīta vā tadvidbhyo vā parvāgamayeta*
 - **EN:** [causative] 4) med. ("to let the time come") to wait out, to be patient
 [P. 1,3,21], Vārtt. 2. *āgamayasva tāvat = kṣamasva*
 Sch. *āgamayate kālam*
@@ -1548,6 +1913,26 @@ Sch. *āgamayate kālam*
 [GOBH. 1,5,14.] — "to approach repeatedly": *ā ganīganti karṇam*
 [ṚV. 6,75,3.] — "to be about to come": *grāmamājigamiṣantaḥ*
 [ĀŚV. GṚHY. 4,1.]
+  <sub>attested</sub>
+
+**caus-intro)** — Vgl. *anāgata, anāgamiṣyant, āgati* fgg., *āgāmin* fg., *svāgata* . — caus.
+
+- **RU:** — Vgl. *anāgata, anāgamiṣyant, āgati* fgg., *āgāmin* fg., *svāgata* . — caus.
+  <sub>attested</sub>
+
+**intens)** [GOBH. 1,5,14.] — intens. wiederholt sich nähern: *ā ganīganti karṇam*
+[ṚV. 6,75,3.]
+
+- **RU:** [GOBH. 1,5,14.] — intens. неоднократно приближаться: *ā ganīganti karṇam*
+[ṚV. 6,75,3.]
+  <sub>attested</sub>
+
+**desid)** — desid. zu kommen im Begriff sein: *grāmamājigamiṣantaḥ*
+[ĀŚV. GṚHY. 4,1.]
+
+- **RU:** — desid. собираться прийти: *grāmamājigamiṣantaḥ*
+[ĀŚV. GṚHY. 4,1.]
+  <sub>attested</sub>
 
 ## adhyāgam
 
@@ -1557,9 +1942,14 @@ Sch. *āgamayate kālam*
 **1)** — *adhyā* stossen auf, auffinden: *nādhyāgamacca mṛgayaṃstāṃ gām*
 [MBH. 1,3948.] *trātāraṃ nādhyagaccheran(!)*
 [6,4538.]
+
+- **RU:** — *adhyā* наткнуться на, обнаружить: *nādhyāgamacca mṛgayaṃstāṃ gām*
+[MBH. 1,3948.] *trātāraṃ nādhyagaccheran(!)*
+[6,4538.]
 - **EN:** to come upon, to discover, find: *nādhyāgamacca mṛgayaṃstāṃ gām*
 [MBH. 1,3948.] *trātāraṃ nādhyagaccheran(!)*
 [6,4538.]
+  <sub>attested</sub>
 
 ## anvāgam
 
@@ -1572,9 +1962,13 @@ Sch. *āgamayate kālam*
 [MBH. 1,1917.] *maghavāhaṃ lokapathaṃ prajānāmanvāgamaṃ parivāde gajasya*
 [13,4898.] *anvāgata* mit act. Bed.
 [6,2809.] mit pass.: *anvāgataṃ bhrātṛbhiḥ*
-[1,157.] *ananvāgata* unbetroffen von: *puṇyena, pāpena*
-[ŚAT. BR. 14,7,1,17.] [22.] [40.] — desid. nachzufolgen beabsichtigen: *tānasurā anvājigāṃsan*
-[ŚAT. BR. 11,2,7,6.]
+
+- **RU:** — *anvā* прийти за кем-л. в некое место, следовать за, идти вдоль: *anvāgantā yajñapatirvo atra*
+[VS. 18,59.] *yatra tasthatustadviśve devā anvājagmuḥ*
+[ŚAT. BR. 2,4,3,5.] [1,6,3,18.] [3,2,4,4.] [6,2,17.] [11,6,2,5.] *nainamanvāgamiṣyāmi*
+[MBH. 1,1917.] *maghavāhaṃ lokapathaṃ prajānāmanvāgamaṃ parivāde gajasya*
+[13,4898.] *anvāgata* с act. Bed.
+[6,2809.] с pass.: *anvāgataṃ bhrātṛbhiḥ*
 - **EN:** to come after someone to a place, to follow, to go along: *anvāgantā yajñapatirvo atra*
 [VS. 18,59.] *yatra tasthatustadviśve devā anvājagmuḥ*
 [ŚAT. BR. 2,4,3,5.] [1,6,3,18.] [3,2,4,4.] [6,2,17.] [11,6,2,5.] *nainamanvāgamiṣyāmi*
@@ -1584,13 +1978,35 @@ Sch. *āgamayate kālam*
 [1,157.] *ananvāgata* "unaffected by": *puṇyena, pāpena*
 [ŚAT. BR. 14,7,1,17.] [22.] [40.] — "to intend to follow": *tānasurā anvājigāṃsan*
 [ŚAT. BR. 11,2,7,6.]
+  <sub>attested</sub>
 
-## samanvā + gam
+**2)** [1,157.] *ananvāgata* unbetroffen von: *puṇyena, pāpena*
+[ŚAT. BR. 14,7,1,17.] [22.] [40.]
+
+- **RU:** [1,157.] *ananvāgata* не затронутый чем-л., непричастный к: *puṇyena, pāpena*
+[ŚAT. BR. 14,7,1,17.] [22.] [40.]
+  <sub>attested</sub>
+
+**3)** — desid. nachzufolgen beabsichtigen: *tānasurā anvājigāṃsan*
+[ŚAT. BR. 11,2,7,6.]
+
+- **RU:** — desid. намереваться последовать за: *tānasurā anvājigāṃsan*
+[ŚAT. BR. 11,2,7,6.]
+  <sub>attested</sub>
+
+## samanvāgam
 
 `gam~~h0_27_samanv_a`
 
 
-**1)** — *samanvā*, partic. *samanvāgata* am Ende eines comp. begleitet von, versehen mit
+**1)** — *samanvā*, partic.
+*samanvāgata* comp. am Ende eines comp. begleitet von, versehen mit
+[BURN. Intr. 168, N. 2. 625.]
+
+[SADDH. P. 4,8,b. 9,a.]
+
+- **RU:** — *samanvā*, partic.
+*samanvāgata* comp. в конце comp. сопровождаемый, снабжённый чем-л.
 [BURN. Intr. 168, N. 2. 625.]
 
 [SADDH. P. 4,8,b. 9,a.]
@@ -1598,14 +2014,14 @@ Sch. *āgamayate kālam*
 [BURN. Intr. 168, N. 2. 625.]
 
 [SADDH. P. 4,8,b. 9,a.]
+  <sub>attested</sub>
 
-## abhyā + gam
+## abhyāgam
 
 `gam~~h0_28_a_by_a`
 
 
-**1)** — *abhyā*
- 1) herbeikommen, zu Jmd oder irgendwohin kommen, — treten, besuchen: *tatra vāsāyābhyāgaman*
+**1)** 1) herbeikommen, zu Jmd oder irgendwohin kommen, — treten, besuchen: *tatra vāsāyābhyāgaman*
 [MBH. 1,7583.]
 [R. 3,6,10.] [10,8.] *varṣamabhyājagāma*
 [MBH. 3,10979.] *yamanabhyāgamiṣyanmanyeta* welchen er voraussichtlich nicht besuchen wird
@@ -1632,6 +2048,35 @@ Sch. *āgamayate kālam*
 [DAŚ. 1,20.] *svāmisakāśam*
 [PAÑCAT. 55,25.] *gehaṃ bālo 'pyabhyāgato guruḥ*
 [MĀRK. P. 24,34.] *kramādabhyāgataṃ dravyam* ererbtes Gut
+[YĀJÑ. 2,119.]
+
+- **RU:** 1) прийти к кому-л. или куда-л., — вступить, посетить: *tatra vāsāyābhyāgaman*
+[MBH. 1,7583.]
+[R. 3,6,10.] [10,8.] *varṣamabhyājagāma*
+[MBH. 3,10979.] *yamanabhyāgamiṣyanmanyeta* которого он, вероятно, не посетит
+[ŚAT. BR. 12,4,1,9.] [2,1.] *tamabhyāgacchāma*
+[CHĀND. UP. 5,11,2.]
+[MBH. 1,5241.]
+[ARJ. 2,6.]
+[R. 1,1,42.] [63,1.] *abhyāgacchanta vaidehīm*
+[3,6,11.] [52,20.] *abhyāgaccha rāmasya veśma*
+[2,32,2.] С *punar* возвратиться
+[R. 1,9,54.] *na punaḥ — yuddhamabhyāgamiṣyati*
+[MBH. 9,1241.] *abhyāgata* (s. тоже туда) пришедший, прибывший, пришелец; пришедший к, в: *śālvebhyo 'bhyāgataḥ*
+[SĀV. 7,3.]
+[PAÑCAT. III,241.] [36,13.] [44,22.] *āgatābhyatāṃśca*
+[MBH. 5,912.]
+[N. 11,20.]
+[R. 3,9,23.]
+[PAÑCAT. 25,9.] [124,3.] *sarvasyābhyāgato guruḥ*
+[HIT. I,54.] [PAÑCAT. 13,6.] [117,11.] [15.] [KATHĀS. 24,101.] в отличие от *atithi* гость
+[BHĀG. P. 5,26,35.] *agnerabhyāgato mūrtiḥ*
+[6,7,30.] *tasminnabhyāgate kāle*
+[R. 3,68,26.] *banam*
+[N. 11,28.] *nadīm*
+[DAŚ. 1,20.] *svāmisakāśam*
+[PAÑCAT. 55,25.] *gehaṃ bālo 'pyabhyāgato guruḥ*
+[MĀRK. P. 24,34.] *kramādabhyāgataṃ dravyam* унаследованное имущество
 [YĀJÑ. 2,119.]
 - **EN:** — *abhyā*
  1) to come up, to come to someone or to come, step to a place, to visit: *tatra vāsāyābhyāgaman*
@@ -1662,39 +2107,64 @@ Sch. *āgamayate kālam*
 [PAÑCAT. 55,25.] *gehaṃ bālo 'pyabhyāgato guruḥ*
 [MĀRK. P. 24,34.] *kramādabhyāgataṃ dravyam* inherited property
 [YĀJÑ. 2,119.]
+  <sub>attested</sub>
 
 **2)** — 2) in einen Zustand, ein Verhältniss gerathen: *cintāmabhyāgamat*
 [R. 3,4,20.] *poṣaṇābhyā˚* gemästet
 [MBH. 13,3515.]
+
+- **RU:** — 2) впасть в некое состояние, отношение: *cintāmabhyāgamat*
+[R. 3,4,20.] *poṣaṇābhyā˚* откормленный
+[MBH. 13,3515.]
 - **EN:** — 2) to enter into a state, a condition: *cintāmabhyāgamat*
 [R. 3,4,20.] *poṣaṇābhyā˚* fattened
 [MBH. 13,3515.]
+  <sub>attested</sub>
 
 **3 (cross-reference))** — Vgl. *abhyāgata* fgg.
-- **EN:** — Vgl. *abhyāgata* fgg.
 
-## samabhyā + gam
+- **RU:** — Vgl. *abhyāgata* fgg.
+- **EN:** — Vgl. *abhyāgata* fgg.
+  <sub>attested</sub>
+
+**intro)** — *abhyā*
+
+- **RU:** — *abhyā*
+  <sub>attested</sub>
+
+## samabhyāgam
 
 `gam~~h0_29_sama_by_a`
 
 
 **1)** — *samabhyā* ankommen: *bho bhavānsamabhyāgato 'tithiḥ*
 [PAÑCAT. 205,9.]
+
+- **RU:** — *samabhyā* прибыть: *bho bhavānsamabhyāgato 'tithiḥ*
+[PAÑCAT. 205,9.]
 - **EN:** — *samabhyā* to arrive: *bho bhavānsamabhyāgato 'tithiḥ*
 [PAÑCAT. 205,9.]
+  <sub>attested</sub>
 
-## samudā + gam
+## samudāgam
 
 `gam~~h0_30_samud_a`
 
 
 **1)** — *samudā* zur vollständigen Kenntniss von Etwas gelangen(?): *sarvabuddhadharmasamudāgata*
 [LALIT. Calc. 8,9.]
+
+- **RU:** — *samudā* достичь полного знания о чём-л.(?): *sarvabuddhadharmasamudāgata*
+[LALIT. Calc. 8,9.]
 - **EN:** — *samudā* to attain complete knowledge of something(?): *sarvabuddhadharmasamudāgata*
 [LALIT. Calc. 8,9.]
+  <sub>attested</sub>
 
 **2 (cross-reference))** — Vgl. *samudāgama* .
+
+- **RU:** — Vgl. *samudāgama* .
 - **EN:** — Vgl. *samudāgama* .
+  <sub>attested</sub>
 
 ## upAgam
 
@@ -1787,23 +2257,26 @@ Sch. *āgamayate kālam*
 - **RU:** — Vgl. *upāgama* и u. *gam* с *upa*.
   <sub>DCS 600 · lexicographic</sub>
 
-## abhyupā + gam
+## abhyupāgam
 
 `gam~~h0_32_a_byup_a`
 
 
 **1)** — *abhyupā* kommen zu, in: *antikamabhyupāgatāḥ*
 [LALIT. Calc. 7,11.]
+
+- **RU:** — *abhyupā* прийти к, в: *antikamabhyupāgatāḥ*
+[LALIT. Calc. 7,11.]
 - **EN:** — *abhyupā* to come to, into: *antikamabhyupāgatāḥ*
 [LALIT. Calc. 7,11.]
+  <sub>attested</sub>
 
-## samupā + gam
+## samupāgam
 
 `gam~~h0_33_samup_a`
 
 
-**1)** — *samupā*
- 1) herbeikommen, zu Jmd oder irgendwohin kommen. — treten: *tvaritāḥ samupājagmuḥ*
+**1)** 1) herbeikommen, zu Jmd oder irgendwohin kommen. — treten: *tvaritāḥ samupājagmuḥ*
 [MBH. 3,2192.] *tvadarthaṃ samupāgatāḥ*
 [1,6984.] [R. 1,9,25.] [MṚCCH. 172,13.] [PAÑCAT. II,63.] [BRAHMA-P. 1,9.] [ṚT. 6,1.] *nidāghakālaḥ samupāgataḥ*
 [1,1.] [MBH. 2,768.] *tvāṃ samupāgataḥ*
@@ -1812,6 +2285,17 @@ Sch. *āgamayate kālam*
 [MBH. 3,10228.]
 [R. 3,23,2.] *sūrye 'staṃ samupāgate*
 [2,46,12.] *sa brahmaśāpo niyatamadya māṃ samupāgataḥ* hat mich getroffen
+[YAJÑAD. 2,53.]
+
+- **RU:** 1) прийти к кому-л. или куда-л. — вступить: *tvaritāḥ samupājagmuḥ*
+[MBH. 3,2192.] *tvadarthaṃ samupāgatāḥ*
+[1,6984.] [R. 1,9,25.] [MṚCCH. 172,13.] [PAÑCAT. II,63.] [BRAHMA-P. 1,9.] [ṚT. 6,1.] *nidāghakālaḥ samupāgataḥ*
+[1,1.] [MBH. 2,768.] *tvāṃ samupāgataḥ*
+[R. 3,66,7.] *śaraṇaṃ rāma bhavantaṃ samupāgatāḥ*
+[10,20.] *tīrthaṃ prabhāsaṃ samupājagāma*
+[MBH. 3,10228.]
+[R. 3,23,2.] *sūrye 'staṃ samupāgate*
+[2,46,12.] *sa brahmaśāpo niyatamadya māṃ samupāgataḥ* постигло меня
 [YAJÑAD. 2,53.]
 - **EN:** — *samupā*
  1) to come up, to come to someone or to come somewhere — to step: *tvaritāḥ samupājagmuḥ*
@@ -1824,18 +2308,32 @@ Sch. *āgamayate kālam*
 [R. 3,23,2.] *sūrye 'staṃ samupāgate*
 [2,46,12.] *sa brahmaśāpo niyatamadya māṃ samupāgataḥ* has befallen me
 [YAJÑAD. 2,53.]
+  <sub>attested</sub>
 
 **2)** — 2) in einen Zustand, ein Verhältniss treten —, gerathen: *yāvadghanatvaṃ samupāgataṃ tat*
+[VARĀH. BṚH. S. 54,27.] *cintāṃ samupāgatā*
+[R. 2,29,22.]
+
+- **RU:** — 2) вступить в некое состояние, отношение —, впасть: *yāvadghanatvaṃ samupāgataṃ tat*
 [VARĀH. BṚH. S. 54,27.] *cintāṃ samupāgatā*
 [R. 2,29,22.]
 - **EN:** — 2) to enter into a state, a condition —, to fall into: *yāvadghanatvaṃ samupāgataṃ tat*
 [VARĀH. BṚH. S. 54,27.] *cintāṃ samupāgatā*
 [R. 2,29,22.]
+  <sub>attested</sub>
 
 **3 (cross-reference))** — Vgl. unter *samupa* .
-- **EN:** — Vgl. under *samupa* .
 
-## nyā + gam
+- **RU:** — Vgl. под *samupa* .
+- **EN:** — Vgl. under *samupa* .
+  <sub>attested</sub>
+
+**intro)** — *samupā*
+
+- **RU:** — *samupā*
+  <sub>attested</sub>
+
+## nyāgam
 
 `gam~~h0_34_ny_a`
 
@@ -1843,23 +2341,36 @@ Sch. *āgamayate kālam*
 **1)** — *nyā*, *nyāgan*
 [AV. 7,73,8] v. l. für *abhyāgāt* im
 [ṚV.]
+
+- **RU:** — *nyā*, *nyāgan*
+[AV. 7,73,8] v. l. вместо *abhyāgāt* в
+[ṚV.]
 - **EN:** *nyā*, *nyāgan*
 [AV. 7,73,8] v. l. for *abhyāgāt* in
 [ṚV.]
+  <sub>attested</sub>
 
-## paryA-gam
+## paryāgam
 
 `gam~~h0_35_pary_a`
 
 
-**1)** — *paryā*
- 1) einen Umgang halten, einen Umlauf vollbringen; seine Zeit andauern, — durchleben, sein Ende erreichen: *kumāryaḥ samalaṃkṛtya paryāgacchantu me purāt*
+**1)** 1) einen Umgang halten, einen Umlauf vollbringen; seine Zeit andauern, — durchleben, sein Ende erreichen: *kumāryaḥ samalaṃkṛtya paryāgacchantu me purāt*
 [MBH. 4,1146.] *saṃvatsare paryāgate*
 [TS. 1,6,10,3.] *yugaparyāgate kāle*
 [R. 3,35,9.] *aparyāgataṃ dhānyam* noch kein Jahr alt
 [SUŚR. 1,199. 17.] *kaphārocakakāsaśvāsapāṇḍurogayakṣmasu paryāgateṣu* inveteratus
 [159,20.] *paryāgata* der seinen Lebenslauf vollbracht hat
 [MBH. 13,3496.] *paryāgataṃ mama kṛṣṇasya caiva yo manyate* welcher meint, dass es zwischen mir und Kṛṣṇa aus sei
+[5,1896.]
+
+- **RU:** 1) совершать обход, совершить круговорот; длиться (о своём времени), — прожить, достичь своего конца: *kumāryaḥ samalaṃkṛtya paryāgacchantu me purāt*
+[MBH. 4,1146.] *saṃvatsare paryāgate*
+[TS. 1,6,10,3.] *yugaparyāgate kāle*
+[R. 3,35,9.] *aparyāgataṃ dhānyam* ещё не достигший года
+[SUŚR. 1,199. 17.] *kaphārocakakāsaśvāsapāṇḍurogayakṣmasu paryāgateṣu* inveteratus
+[159,20.] *paryāgata* тот, кто завершил свой жизненный путь
+[MBH. 13,3496.] *paryāgataṃ mama kṛṣṇasya caiva yo manyate* который полагает, что между мной и Kṛṣṇa всё кончено
 [5,1896.]
 - **EN:** — *paryā*
  1) to make a circuit, to complete a revolution; to last out one's time, — to live through, to reach one's end: *kumāryaḥ samalaṃkṛtya paryāgacchantu me purāt*
@@ -1870,19 +2381,28 @@ Sch. *āgamayate kālam*
 [159,20.] *paryāgata* "who has completed the course of his life"
 [MBH. 13,3496.] *paryāgataṃ mama kṛṣṇasya caiva yo manyate* "who thinks that it is over between me and" Kṛṣṇa 
 [5,1896.]
+  <sub>attested</sub>
 
 **2)** — 2) sich rings um Etwas legen, umstricken. in seine Gewalt bekommen: *na vidhiṃ grasate prajñā prajñāṃ tu grasate vidhiḥ . vidhiparyāgatānarthānprājño na pratipadyate ..*
 [MBH. 1,4567.]
+
+- **RU:** — 2) обвиться вокруг чего-л., опутать. подчинить своей власти: *na vidhiṃ grasate prajñā prajñāṃ tu grasate vidhiḥ . vidhiparyāgatānarthānprājño na pratipadyate ..*
+[MBH. 1,4567.]
 - **EN:** — 2) to lie all around something, to enwrap, ensnare; to get into one's power: *na vidhiṃ grasate prajñā prajñāṃ tu grasate vidhiḥ . vidhiparyāgatānarthānprājño na pratipadyate ..*
 [MBH. 1,4567.]
+  <sub>attested</sub>
+
+**intro)** — *paryā*
+
+- **RU:** — *paryā*
+  <sub>attested</sub>
 
 ## pratyāgam
 
 `gam~~h0_36_praty_a`
 
 
-**1)** — *pratyā*
- 1) zurückkehren
+**1)** 1) zurückkehren
 [TBR. 1,3,10,1.]
 [GOBH. 3,6,1.]
 [MBH. 2,1181.] [2490.]
@@ -1891,6 +2411,21 @@ Sch. *āgamayate kālam*
 [24,32.] [MBH. 3,289.] [DRAUP. 8,50.] *raṇātpratyāgataṃ śūram*
 [CĀṆ. 79.] *pratyājagāma nagaram*
 [MBH.] in [BENF. Chr. 62,58.] *punaḥ pratyāgataḥ — gṛhamātmanaḥ*
+[INDR. 5. 51.] *snehaḥ pratihato na pratyāgacchati*
+[SUŚR. 2,200,10.] *pratyāgatāsu*
+[RAGH. 14,56.] *˚prāṇa*
+[MBH. 3,8681.] *˚smṛti*
+[R. 2,58,1.]
+
+- **RU:** 1) возвратиться
+[TBR. 1,3,10,1.]
+[GOBH. 3,6,1.]
+[MBH. 2,1181.] [2490.]
+[R. 4,33,22.] [58,28.] *punaḥ pratyāgamiṣyati*
+[2,52,78.] *pratyāgata*
+[24,32.] [MBH. 3,289.] [DRAUP. 8,50.] *raṇātpratyāgataṃ śūram*
+[CĀṆ. 79.] *pratyājagāma nagaram*
+[MBH.] в [BENF. Chr. 62,58.] *punaḥ pratyāgataḥ — gṛhamātmanaḥ*
 [INDR. 5. 51.] *snehaḥ pratihato na pratyāgacchati*
 [SUŚR. 2,200,10.] *pratyāgatāsu*
 [RAGH. 14,56.] *˚prāṇa*
@@ -1911,8 +2446,14 @@ Sch. *āgamayate kālam*
 [RAGH. 14,56.] *˚prāṇa*
 [MBH. 3,8681.] *˚smṛti*
 [R. 2,58,1.]
+  <sub>attested</sub>
 
 **2)** — 2) zu sich selbst kommen, seine Besinnung wiederhalten: *urvaśī pratyāgacchati*
+[VIKR. 8,1], v. l. *pratyāgata*
+(v. l. *˚cetana*)
+[ŚĀK. 92,21.]
+
+- **RU:** — 2) прийти в себя, вновь обрести сознание: *urvaśī pratyāgacchati*
 [VIKR. 8,1], v. l. *pratyāgata*
 (v. l. *˚cetana*)
 [ŚĀK. 92,21.]
@@ -1920,19 +2461,32 @@ Sch. *āgamayate kālam*
 [VIKR. 8,1], v. l. *pratyāgata*
 (v. l. *˚cetana*)
 [ŚĀK. 92,21.]
+  <sub>attested</sub>
 
 **note)** — Vgl. *gatapratyāgata* .
-- **EN:** — Vgl. *gatapratyāgata*.
 
-## saṃpratyā + gam
+- **RU:** — Vgl. *gatapratyāgata* .
+- **EN:** — Vgl. *gatapratyāgata*.
+  <sub>attested</sub>
+
+**intro)** — *pratyā*
+
+- **RU:** — *pratyā*
+  <sub>attested</sub>
+
+## saṃpratyāgam
 
 `gam~~h0_37_sa_mpraty_a`
 
 
 **1)** — *saṃpratyā* zurückkehren: *ciroṣitaṃ cāpi saṃpratyāgatameva ca*
 [MBH. 13,2193.]
+
+- **RU:** — *saṃpratyā* возвратиться: *ciroṣitaṃ cāpi saṃpratyāgatameva ca*
+[MBH. 13,2193.]
 - **EN:** *saṃpratyā* to return: *ciroṣitaṃ cāpi saṃpratyāgatameva ca*
 [MBH. 13,2193.]
+  <sub>attested</sub>
 
 ## samāgam
 
@@ -1966,6 +2520,34 @@ Sch. *āgamayate kālam*
 [MBH. 7,2389.]
 [R. 6,8,20.] *sā tvaṃ mayā samāgaccha* (fleischlich)
 [MBH. 3,17097.] [13,1462.]
+
+- **RU:** — *samā*
+ 1) сойтись, встретиться, соединиться, у (loc.), с (instr. одного или вместе с *saha, sārgham*) встретиться с кем-л. (дружественно или враждебно), вступить в половую связь
+[ŚAT. BR. 10,6,2,1.] *yaddvau rathau mṛditau samāgacchetām*
+[12,5,1,5.] *kāmyake pāṇḍavaṃ draṣṭuṃ samājagmuḥ*
+[MBH. 3,8476.]
+[R. 4,28,31.]
+[PAÑCAT. II,17.] *amantrayansamāgamya sarve*
+[R. 1,63,17.] *taddāsaireva dātavyaṃ samāgamya*
+[M. 8,408.] [7,148.]
+[MBH.] в [BENF. Chr. 43. 23.] [PAÑCAT. 77,18.] *samāgacchantyayatnena saṃgamaṃ ca parasparam* вступить друг с другом в союз
+[R. 4,44,78.] сойтись, о звёздах так v. a. занять такое положение, что одна звезда закрывает другую,
+[VARĀH. BṚH. S. 5,11.] [34.] *yadā vai mithunau samāgacchataḥ* (в плотском смысле)
+[CHĀND. UP. 1,1,6.] *samāgata* сошедшиеся, собравшиеся, соединённые
+[MBH.] в [BENF. Chr. 4,15. 19,15.] [BHAG. 1,23.] [N. 3,5.] [4,10.] [22.] [13,19.] [R. 3,35,114.] [ŚĀK. 188.] *aruṇa aupaveśau samājagmuḥ*
+[ŚAT. BR. 10,6,1,1.] *brāhmaṇairdhāvayadbhiḥ samājagāma*
+[11,6,2,1.] *yathārhamṛṣibhiḥ sarvaiḥ samāgamya*
+[R. 1,50,9.] [2,70,2.] *mantribhiḥ samāgataḥ*
+[YĀJÑ. 1,328.]
+[DRAUP. 5,22.]
+[R. 1,1,58.] [67] *api kṛtyaṃ kṛtaṃ tāta rāmeṇa ca samāgatam*
+[2,113,7.] *pareṇa samāgatam* (враждебно)
+[M. 7,92.]
+[MBH. 1,5996.]
+[BENF. Chr. 33,1.] *samāgamya dvijaiḥ sārdham*
+[MBH. 7,2389.]
+[R. 6,8,20.] *sā tvaṃ mayā samāgaccha* (в плотском смысле)
+[MBH. 3,17097.] [13,1462.]
 - **EN:** — *samā*
  1) to come together, to meet, to unite, with (loc.), with (instr. alone or with *saha, sārgham*) to come together with someone (as friends or as foes), to unite sexually
 [ŚAT. BR. 10,6,2,1.] *yaddvau rathau mṛditau samāgacchetām*
@@ -1993,9 +2575,27 @@ Sch. *āgamayate kālam*
 [MBH. 7,2389.]
 [R. 6,8,20.] *sā tvaṃ mayā samāgaccha* (carnally)
 [MBH. 3,17097.] [13,1462.]
+  <sub>attested</sub>
 
 **2)** — 2) kommen, herbeikommen, wiederkommen; kommen zu, in (acc.): *tatra rāma samāgaccha tvaritam*
 [MBH.] in [BENF. Chr. 23,38.] *caredvratamahatvāpi ghātārthaṃ samāgataḥ*
+[YĀJÑ. 3,252.] *gṛdhrarājaḥ samāgamya rāghavaṃ vākyamabravīt*
+[R. 3,23,4.] [66,6.] *samāgatā saiva divaḥ*
+[MṚCCH. 171,24.]
+[PAÑCAT. 34,20.] *ṣaṣṭhe 'hani samāgate*
+[R. 1,32,7.] *samāgatā jarā*
+[PAÑCAT. III,228.] *yāvadahaṃ purīṣotsargaṃ kṛtvā samāgacchāmi*
+[34,22.] [88,25.] [211,10.] [221,4.] [229,3.] [BRAHMA-P. 54,12.] [VET. 2,20. 12,7.] *pāṇḍavān — samājagmurmahāvane*
+[MBH. 3,461.]
+[INDR. 2,15.]
+[R. 1,59,10.] *vaidūryaparvataṃ caiva narmadāṃ ca mahānadīm . samāgamata(!)*
+[MBH. 3,10307.] *sāṃkāśyāṃ te samāgamya*
+[R. 1,70,7.] [33,20.]
+[PAÑCAT. 100,2.] *tava gṛhaṃ samāgamiṣyāmi*
+[235,12.] [VET. 29,8.]
+
+- **RU:** — 2) прийти, подойти, вернуться; прийти к, в (acc.): *tatra rāma samāgaccha tvaritam*
+[MBH.] в [BENF. Chr. 23,38.] *caredvratamahatvāpi ghātārthaṃ samāgataḥ*
 [YĀJÑ. 3,252.] *gṛdhrarājaḥ samāgamya rāghavaṃ vākyamabravīt*
 [R. 3,23,4.] [66,6.] *samāgatā saiva divaḥ*
 [MṚCCH. 171,24.]
@@ -2026,10 +2626,17 @@ Sch. *āgamayate kālam*
 [R. 1,70,7.] [33,20.]
 [PAÑCAT. 100,2.] *tava gṛhaṃ samāgamiṣyāmi*
 [235,12.] [VET. 29,8.]
+  <sub>attested</sub>
 
 **3)** — 3) stossen auf, finden: *kva nu nāma vayam — taṃ naram . samāgacchema yo nastadrūpamāpādayetpunaḥ ..*
 [MBH. 1,7873.] *ṣaḍindriyāṇi viṣayaṃ samāgacchanti vai yadā*
 [3,113.] — caus. Jmd (acc.) zusammenführen mit (instr. loc.): *samāgamaya vaidehyā rāmam*
+[R. 5,6,29.] *tāṃ kaumudīmiva samāgamayendubimbe*
+[VIKR. 34.]
+
+- **RU:** — 3) наткнуться на, найти: *kva nu nāma vayam — taṃ naram . samāgacchema yo nastadrūpamāpādayetpunaḥ ..*
+[MBH. 1,7873.] *ṣaḍindriyāṇi viṣayaṃ samāgacchanti vai yadā*
+[3,113.] — caus. свести кого-л. (acc.) вместе с (instr. loc.): *samāgamaya vaidehyā rāmam*
 [R. 5,6,29.] *tāṃ kaumudīmiva samāgamayendubimbe*
 [VIKR. 34.]
 - **EN:** — 3) to come upon, to find: *kva nu nāma vayam — taṃ naram . samāgacchema yo nastadrūpamāpādayetpunaḥ ..*
@@ -2037,8 +2644,9 @@ Sch. *āgamayate kālam*
 [3,113.] — caus. to bring someone (acc.) together with (instr. loc.): *samāgamaya vaidehyā rāmam*
 [R. 5,6,29.] *tāṃ kaumudīmiva samāgamayendubimbe*
 [VIKR. 34.]
+  <sub>attested</sub>
 
-## abhisamāgam
+## abhisamā
 
 `gam~~h0_39_a_bisam_a`
 
@@ -2046,14 +2654,23 @@ Sch. *āgamayate kālam*
 **1)** — *abhisamā*
  1) zusammen herbeikommen: *imāni ca sarvāṇi bhūtānyabhisamāgacchanti*
 [NIR. 12,11.]
+
+- **RU:** — *abhisamā*
+ 1) сойтись вместе, сообща прийти: *imāni ca sarvāṇi bhūtānyabhisamāgacchanti*
+[NIR. 12,11.]
 - **EN:** — *abhisamā*
  1) to come together, to come hither jointly: *imāni ca sarvāṇi bhūtānyabhisamāgacchanti*
 [NIR. 12,11.]
+  <sub>attested</sub>
 
 **2)** — 2) zu Jmd (acc.) kommen
 [MBH. 11,445.]
+
+- **RU:** — 2) прийти к кому-л. (acc.)
+[MBH. 11,445.]
 - **EN:** — 2) to come to someone (acc.)
 [MBH. 11,445.]
+  <sub>attested</sub>
 
 ## udgam
 
@@ -2068,6 +2685,15 @@ Sch. *āgamayate kālam*
 [ṚT. 1,10], v. l. *śālapota ivodgataḥ*
 [MBH. 3,11690.] [1,5942]; vgl. *śālamiva pravṛddham*
 [3,15703.]
+
+- **RU:** — *ud*
+ 1) подниматься вверх, восходить, вздыматься, вздыбливаться; о светилах
+[VARĀH. BṚH. S. 7,19.] [8,1.] *śakrasyodgamya caraṇaṃ prasthito janamejayaḥ*
+[MBH. 13,330.]
+[PAÑCAT. 47,18.] *vātodgatareṇu*
+[ṚT. 1,10], v. l. *śālapota ivodgataḥ*
+[MBH. 3,11690.] [1,5942]; vgl. *śālamiva pravṛddham*
+[3,15703.]
 - **EN:** — *ud*
  1) to go up, to rise, to raise oneself, to shoot up; of heavenly bodies
 [VARĀH. BṚH. S. 7,19.] [8,1.] *śakrasyodgamya caraṇaṃ prasthito janamejayaḥ*
@@ -2076,6 +2702,7 @@ Sch. *āgamayate kālam*
 [ṚT. 1,10], v. l. *śālapota ivodgataḥ*
 [MBH. 3,11690.] [1,5942]; vgl. *śālamiva pravṛddham*
 [3,15703.]
+  <sub>attested</sub>
 
 **2)** — 2) herausgehen, hervorkommen, hervorbrechen, hinausgehen: *udvayaṃ tamasaspari — sūryamaganma*
 [ṚV. 1,50,10.] *acirodgatapallava*
@@ -2090,6 +2717,22 @@ Sch. zu [AMAR. 36.] *udgatāḥ pauravadhūmukhebhyaḥ śṛṇvankathāḥ*
 [AMAR. 91.] *taddarśanodgatānprāṇān*
 [BHĀG. P. 4,22,3.] *udgatānīva sattvāni babhūvuḥ*
 [R. 2,48,1.] *udgata* aus dem Munde hervorgekommen, vomirt
+[AK. 3,2,47.]
+[H. 1495.]
+
+- **RU:** — 2) выходить, появляться, вырываться, выступать наружу: *udvayaṃ tamasaspari — sūryamaganma*
+[ṚV. 1,50,10.] *acirodgatapallava*
+[VIKR. 107.]
+[ṚT. 6,18.] *pakṣairudgataiḥ*
+[R. 4,63,2.] *viśuṣkakaṇṭhodgataśīkarāmbhas*
+[ṚT. 1,15], v. l. *udgato romāñcaḥ*
+Sch. к [AMAR. 36.] *udgatāḥ pauravadhūmukhebhyaḥ śṛṇvankathāḥ*
+[RAGH. 7,16.]
+[VID. 94.]
+[BHARTṚ. 2,29.]
+[AMAR. 91.] *taddarśanodgatānprāṇān*
+[BHĀG. P. 4,22,3.] *udgatānīva sattvāni babhūvuḥ*
+[R. 2,48,1.] *udgata* вышедший изо рта, извергнутый рвотой
 [AK. 3,2,47.]
 [H. 1495.]
 - **EN:** — 2) to go out, to come forth, to break forth, to go forth: *udvayaṃ tamasaspari — sūryamaganma*
@@ -2107,14 +2750,22 @@ Sch. to [AMAR. 36.] *udgatāḥ pauravadhūmukhebhyaḥ śṛṇvankathāḥ*
 [R. 2,48,1.] *udgata* come forth from the mouth, vomited
 [AK. 3,2,47.]
 [H. 1495.]
+  <sub>attested</sub>
 
 **3)** — 3) sich ausbreiten, sich verbreiten: *unnābha ityudgatanāmadheyaḥ*
 [RAGH. 18,19.]
+
+- **RU:** — 3) распространяться, разноситься: *unnābha ityudgatanāmadheyaḥ*
+[RAGH. 18,19.]
 - **EN:** — 3) to spread, to spread abroad: *unnābha ityudgatanāmadheyaḥ*
 [RAGH. 18,19.]
+  <sub>attested</sub>
 
 **note)** — Vgl. *udgata* fgg., *udgama* fg., *kulodgata* .
+
+- **RU:** — Vgl. *udgata* fgg., *udgama* fg., *kulodgata* .
 - **EN:** — Vgl. *udgata* fgg., *udgama* fg., *kulodgata*.
+  <sub>attested</sub>
 
 ## abhyudgam
 
@@ -2125,30 +2776,47 @@ Sch. to [AMAR. 36.] *udgatāḥ pauravadhūmukhebhyaḥ śṛṇvankathāḥ*
  1) sich ausbreiten, sich verbreiten: *mahaccābhyudgataṃ yaśaḥ*
 [R. 4,21,7.] *bhagavataḥ kīrtiśabdaśloko loke 'bhyudgataḥ*
 [LALIT. Calc. 3,3.]
+
+- **RU:** — *abhyud*
+ 1) распространяться, разноситься: *mahaccābhyudgataṃ yaśaḥ*
+[R. 4,21,7.] *bhagavataḥ kīrtiśabdaśloko loke 'bhyudgataḥ*
+[LALIT. Calc. 3,3.]
 - **EN:** — *abhyud*
  1) to spread, to spread abroad: *mahaccābhyudgataṃ yaśaḥ*
 [R. 4,21,7.] *bhagavataḥ kīrtiśabdaśloko loke 'bhyudgataḥ*
 [LALIT. Calc. 3,3.]
+  <sub>attested</sub>
 
 **2)** — 2) hinaus — und Jmd (acc.) entgegen gehen: *abhyudgatāstvāṃ vayamadya sarve*
 [MBH. 1,3572.]
+
+- **RU:** — 2) выйти навстречу кому-л. (acc.): *abhyudgatāstvāṃ vayamadya sarve*
+[MBH. 1,3572.]
 - **EN:** — 2) to go out — and to go to meet someone (acc.): *abhyudgatāstvāṃ vayamadya sarve*
 [MBH. 1,3572.]
+  <sub>attested</sub>
 
 **note)** — Vgl. *abhyudgama* fg.
-- **EN:** — Vgl. *abhyudgama* fg.
 
-## prod + gam
+- **RU:** — Vgl. *abhyudgama* fg.
+- **EN:** — Vgl. *abhyudgama* fg.
+  <sub>attested</sub>
+
+## prodgam
 
 `gam~~h0_42_prod`
 
 
 **1)** — *prod* hervorragen: *yadṛcchāprodgatodagrasapakṣagiri*
 [KATHĀS. 26,9.]
+
+- **RU:** — *prod* выступать, возвышаться над окружающим: *yadṛcchāprodgatodagrasapakṣagiri*
+[KATHĀS. 26,9.]
 - **EN:** *prod* to project, to stand out: *yadṛcchāprodgatodagrasapakṣagiri*
 [KATHĀS. 26,9.]
+  <sub>attested</sub>
 
-## pratyud + gam
+## pratyudgam
 
 `gam~~h0_43_pratyud`
 
@@ -2163,6 +2831,17 @@ Sch. to [AMAR. 36.] *udgatāḥ pauravadhūmukhebhyaḥ śṛṇvankathāḥ*
 [MBH. 6,3503.] mit pass. Bed.: *pauraiḥ pratyudgato dūram*
 [R. 1,77,8.]
 [RAGH. 2,20.] [12,62.]
+
+- **RU:** — *pratyud* выйти навстречу кому-л. (acc.) (для приветствия или с враждебным намерением): *tamāgatamabhiprekṣya pratyudgamya — . praṇipatyābhivādyainaṃ tasthuḥ prāñjalayastadā ..*
+[MBH. 1,6422.] [16,121.]
+[M. 2,196.]
+[R. 1,9,53.] [67] *pratyujjagāma taṃ bhrātā*
+[2,96,33.] [4,33,45.] [RAGH. 5,2.] [KUMĀRAS. 7,52.] [BHĀG. P. 1,11,19.] [13,4.] [GĪT. 11,10.] *pratyudgamya rathaṃ ripoḥ . vidhvaṃsayitumicchāmi*
+[R. 6,90,6.] med.: *pratyudgacchata tām*
+[MBH. 3,1834.] *pratyudgata* с act. Bed.: *pratyudgatāḥ* (с враждебным намерением) *kekayān*
+[MBH. 6,3503.] с pass. Bed.: *pauraiḥ pratyudgato dūram*
+[R. 1,77,8.]
+[RAGH. 2,20.] [12,62.]
 - **EN:** *pratyud* to go out — and go toward someone (acc.) in welcome (in order to receive them, or with hostile intent): *tamāgatamabhiprekṣya pratyudgamya — . praṇipatyābhivādyainaṃ tasthuḥ prāñjalayastadā ..*
 [MBH. 1,6422.] [16,121.]
 [M. 2,196.]
@@ -2173,16 +2852,21 @@ Sch. to [AMAR. 36.] *udgatāḥ pauravadhūmukhebhyaḥ śṛṇvankathāḥ*
 [MBH. 6,3503.] with pass. Bed.: *pauraiḥ pratyudgato dūram*
 [R. 1,77,8.]
 [RAGH. 2,20.] [12,62.]
+  <sub>attested</sub>
 
-## samud + gam
+## samudgam
 
 `gam~~h0_44_samud`
 
 
 **1)** — *samud* hervorkommen, hervorbrechen: *samudgatasveda*
 [ṚT. 1,7.]
+
+- **RU:** — *samud* появляться, вырываться наружу: *samudgatasveda*
+[ṚT. 1,7.]
 - **EN:** *samud* to come forth, to break forth: *samudgatasveda*
 [ṚT. 1,7.]
+  <sub>attested</sub>
 
 ## upagam
 
@@ -2432,6 +3116,19 @@ a) bordering on, situated near: *upagatā daśa yeṣām = upadaśāḥ* nearly 
 [MBH. 14,327.] zu einem Zeitpunkt gelangen: *āṣāḍhīmabhyupagato bharataḥ*
 [R. 4,27,11.] erlangen, erreichen: *atrābhyupagataḥ — vaidehyā iva darśanam*
 [5,67,10.]
+
+- **RU:** — *abhyupa*
+ 1) приблизиться, подойти, подступить к кому-л., идти к, в: *tatkṣaṇādevābhyupagamyādityaḥ provāca*
+[PAÑCAT. 189,24.] *abhyupagata*
+
+[SUŚR. 1,7,12.] *gurūnabhyupagacchati*
+[MBH. 1,4847.] *asmānihāgatāneṣa niṣkramyābhyupagacchati*
+[R. 3,18,24.] *(bhartari) paralokamabhyupagate*
+[ŚIŚ. 9,13.] прийти кому-л. на помощь: *vayamabhyupagacchāmaḥ kṛṣṇeṇa tvāṃ pradharṣitam*
+[HARIV. 2095.] приступить к чему-л.: *tasmādabhyupagantavyaṃ yuddhāya*
+[MBH. 14,327.] достичь определённого момента: *āṣāḍhīmabhyupagato bharataḥ*
+[R. 4,27,11.] добыть, достигнуть: *atrābhyupagataḥ — vaidehyā iva darśanam*
+[5,67,10.]
 - **EN:** — *abhyupa*
  1) to come near, go up to, approach someone, go to, towards: *tatkṣaṇādevābhyupagamyādityaḥ provāca*
 [PAÑCAT. 189,24.] *abhyupagata*
@@ -2444,12 +3141,22 @@ a) bordering on, situated near: *upagatā daśa yeṣām = upadaśāḥ* nearly 
 [MBH. 14,327.] to reach a point in time: *āṣāḍhīmabhyupagato bharataḥ*
 [R. 4,27,11.] to obtain, attain: *atrābhyupagataḥ — vaidehyā iva darśanam*
 [5,67,10.]
+  <sub>attested</sub>
 
 **2)** — 2) sich für Etwas erklären, zugestehen, zugeben, einwilligen: *na tu dhanadāyāsāvabhyupagacchati*
 [DAŚAK. 79,8.] *priyābhyupagate dyūte*
 [MBH. 5,4239.] *taccāvaśyamabhyupagantavyam*
 [KĀŚ.] zu [P. 1,2,55.] *svābhyupagatasyāvidyānṛtatvasya*
 Sch. zu [KAP. 1,21.] *abhyupagataṃ tāvadasmābhirevam*
+[ŚĀK. 69,22.] *tathā ca tenābhyupagate*
+[DAŚAK. 201,8.] *abhyupagata = pratijñāta*
+u. s. w. [H. 1489.]
+
+- **RU:** — 2) высказаться за что-л., признать, допустить, согласиться: *na tu dhanadāyāsāvabhyupagacchati*
+[DAŚAK. 79,8.] *priyābhyupagate dyūte*
+[MBH. 5,4239.] *taccāvaśyamabhyupagantavyam*
+[KĀŚ.] к [P. 1,2,55.] *svābhyupagatasyāvidyānṛtatvasya*
+Sch. к [KAP. 1,21.] *abhyupagataṃ tāvadasmābhirevam*
 [ŚĀK. 69,22.] *tathā ca tenābhyupagate*
 [DAŚAK. 201,8.] *abhyupagata = pratijñāta*
 u. s. w. [H. 1489.]
@@ -2461,13 +3168,19 @@ Sch. to [KAP. 1,21.] *abhyupagataṃ tāvadasmābhirevam*
 [ŚĀK. 69,22.] *tathā ca tenābhyupagate*
 [DAŚAK. 201,8.] *abhyupagata = pratijñāta*
 u. s. w. [H. 1489.]
+  <sub>attested</sub>
 
 **caus)** — Vgl. *abhyupagama* . — caus. Jemand zur Einwilligung bewegen: *māmabhyupagamayya*
+[DAŚAK. 82,5.] *etāvatkālaṃ tvaddāsa ityabhyupagamitaḥ*
+[MIT. 268,13.]
+
+- **RU:** — Vgl. *abhyupagama* . — caus. побудить кого-л. к согласию: *māmabhyupagamayya*
 [DAŚAK. 82,5.] *etāvatkālaṃ tvaddāsa ityabhyupagamitaḥ*
 [MIT. 268,13.]
 - **EN:** — Vgl. *abhyupagama*. — caus. to move someone to consent: *māmabhyupagamayya*
 [DAŚAK. 82,5.] *etāvatkālaṃ tvaddāsa ityabhyupagamitaḥ*
 [MIT. 268,13.]
+  <sub>attested</sub>
 
 ## samupagam
 
@@ -2479,18 +3192,30 @@ u. s. w. [H. 1489.]
 [MBH. 1,7718.] *saṃnikarṣaṃ me śīghraṃ samupagacchatu*
 [R. 6,99,21.] *vasiṣṭhaṃ samupāgamat*
 [MBH. 1,6673]*. [6872]*. [R. 1,18,9]*.
+
+- **RU:** — *samupa*
+ 1) приблизиться, подойти к: *gītaiśca stutisaṃyuktaiḥ prītyā samupajagmire*
+[MBH. 1,7718.] *saṃnikarṣaṃ me śīghraṃ samupagacchatu*
+[R. 6,99,21.] *vasiṣṭhaṃ samupāgamat*
+[MBH. 1,6673]*. [6872]*. [R. 1,18,9]*.
 - **EN:** — *samupa*
  1) to come up to, approach: *gītaiśca stutisaṃyuktaiḥ prītyā samupajagmire*
 [MBH. 1,7718.] *saṃnikarṣaṃ me śīghraṃ samupagacchatu*
 [R. 6,99,21.] *vasiṣṭhaṃ samupāgamat*
 [MBH. 1,6673]*. [6872]*. [R. 1,18,9]*.
+  <sub>attested</sub>
 
 **2)** — 2) in einen Zustand, ein Verhältniss treten: *pañcatvaṃ samupāgamat*
 [KATHĀS. 5,122]*. *grahaṇam*
 [R. 1,1,73].* — Die mit * bezeichneten Stellen könnten auch zu *samupā* gehören.
+
+- **RU:** — 2) войти в некое состояние, в некое отношение: *pañcatvaṃ samupāgamat*
+[KATHĀS. 5,122]*. *grahaṇam*
+[R. 1,1,73].* — Места, отмеченные звёздочкой, могли бы относиться также к *samupā*.
 - **EN:** — 2) to enter into a state, a condition: *pañcatvaṃ samupāgamat*
 [KATHĀS. 5,122]*. *grahaṇam*
 [R. 1,1,73].* — The passages marked with * could also belong to *samupā*.
+  <sub>attested</sub>
 
 ## nigam
 
@@ -2561,8 +3286,12 @@ u. s. w. [H. 1489.]
 
 **1)** — *upani* stossen auf, treffen auf, gerathen in: *yatraiva bhasmoddhṛtamupanigacchet*
 [ŚAT. BR. 2,3,2,5.] [7,3,1,26.] [5,1,29.] [13,4,2,17.]
+
+- **RU:** — *upani* наткнуться на, встретить, попасть в: *yatraiva bhasmoddhṛtamupanigacchet*
+[ŚAT. BR. 2,3,2,5.] [7,3,1,26.] [5,1,29.] [13,4,2,17.]
 - **EN:** — *upani* to strike against, to meet with, to fall into *yatraiva bhasmoddhṛtamupanigacchet*
 [ŚAT. BR. 2,3,2,5.] [7,3,1,26.] [5,1,29.] [13,4,2,17.]
+  <sub>attested</sub>
 
 ## saṃnigam
 
@@ -2571,10 +3300,14 @@ u. s. w. [H. 1489.]
 
 **1)** — *saṃni* mit Jmd (instr.) zusammenkommen: *yaiḥ saṃnigacchati sarvāṃstānatirocate*
 [ŚAT. BR. 14,5,1,9.]
+
+- **RU:** — *saṃni* сойтись с кем-л. (instr.): *yaiḥ saṃnigacchati sarvāṃstānatirocate*
+[ŚAT. BR. 14,5,1,9.]
 - **EN:** — *saṃni* to come together with someone (instr.) *yaiḥ saṃnigacchati sarvāṃstānatirocate*
 [ŚAT. BR. 14,5,1,9.]
+  <sub>attested</sub>
 
-## nis-gam
+## nirgam
 
 `gam~~h0_51_nis`
 
@@ -2614,6 +3347,42 @@ u. s. w. [H. 1489.]
 [R. 1,64,15.] [2,40,33] [3,28,39.]
 [VID. 96.] [178.] zum Vorschein kommen, von einer Knospe: *cūtānāṃ ciranirgatāpi kalikā badhnāti na svaṃ rajaḥ*
 [ŚĀK. 131.]
+
+- **RU:** — *nis*
+ 1) выходить, выступать наружу, появляться, уходить из дома, отправляться в путь: *tiraścatā pārśvānnirgamāṇi*
+[ṚV. 4,18,2.] *nirjaganvāntamaso jyotiṣāgāt*
+[10,1,1.] [KAUŚ. 129. 135.] *adhivinnā tu yā nārī nirgacchedruṣitā gṛhāt*
+[M. 9,83.] *nirgatya nagarāt*
+[MBH. 1,5874.]
+[R. 3,28,35.] [4,52,22.]
+[PAÑCAT. II,86.] [ŚĀK. 74.] [ṚT. 1,27.] [VID. 41.] [142.] *nirgamya tathaiva yamunājalāt*
+[MĀRK. P. 22,47.] *(garbhaḥ) girjagāma — tadaṅgataḥ*
+[BRAHMA-P. 59,13.] *(vitastāyāḥ) nirgatāyā mahāpadmasalilāt*
+[RĀJA-TAR. 5,118.] *(ājñā) nirgatā mukhāt*
+[395.] *grāmanirgata*
+[P. 2,1,37], Vārtt. *śikhā pradīpasya — saṃdhimukhena nirgatā*
+[MṚCCH. 48,11.] *manuṣyāṇāṃ praviśadeva padaṃ paśyati na ca nirgacchat*
+[PAÑCAT. 255,17.] *anilaḥ saśabdo nirgacchati*
+[SUŚR. 1,30,10.] *arśāṃsi nirgatāni*
+[2,48,1.] *nirgacchati gudaṃ bahiḥ*
+[1,298,1.] *nirgamya ca bahiḥ*
+[MĀRK. P. 22,46.] *prakāśaṃ nirgataḥ*
+[ŚĀK. 46,7.] *mṛgayāṃ nirgato nṛpaḥ*
+[MBH. 3,14055.] *(sainayoḥ) nirgacchamānayoḥ saṃkhye*
+[6,3848.] в том же смысле без *saṃkhye*
+[DAŚAK.] в [BENF. Chr. 201,2.] *na kutracidapi nirgatā*
+[PAÑCAT. 36,23.] *mārgeṣu *
+
+* nirgataḥ*
+[RĀJA-TAR. 5,452.] *kāryārthaṃ nirgataṃ cāpi bhartāraṃ gṛhamāgatam*
+[MBH. 13,5870.]
+[PAÑCAT. I,21.] [AMAR. 61.] *nirgamyatāṃ śīghram*
+[BHĀG. P. 1,13,17.] [7,1.]
+[INDR. 5,5.]
+[MBH. 3,15233.] [16654.]
+[R. 1,64,15.] [2,40,33] [3,28,39.]
+[VID. 96.] [178.] появиться, показаться, о бутоне: *cūtānāṃ ciranirgatāpi kalikā badhnāti na svaṃ rajaḥ*
+[ŚĀK. 131.]
 - **EN:** — *nis*
  1) to go out, step out, come forth, leave one's house, set out: *tiraścatā pārśvānnirgamāṇi*
 [ṚV. 4,18,2.] *nirjaganvāntamaso jyotiṣāgāt*
@@ -2649,8 +3418,14 @@ u. s. w. [H. 1489.]
 [R. 1,64,15.] [2,40,33] [3,28,39.]
 [VID. 96.] [178.] to come into view, appear, of a bud: *cūtānāṃ ciranirgatāpi kalikā badhnāti na svaṃ rajaḥ*
 [ŚĀK. 131.]
+  <sub>attested</sub>
 
 **2)** — 2) weggehen, vergehen, schwinden: *nandake nirgatajale*
+[RĀJA-TAR. 5,108.] *nirgatanikhilakalmaṣatayā*
+[VEDĀNTAS. 6.] *nirgataviśaṅka*
+[PAÑCAT. 124,12.]
+
+- **RU:** — 2) уходить, исчезать, пропадать: *nandake nirgatajale*
 [RĀJA-TAR. 5,108.] *nirgatanikhilakalmaṣatayā*
 [VEDĀNTAS. 6.] *nirgataviśaṅka*
 [PAÑCAT. 124,12.]
@@ -2658,18 +3433,28 @@ u. s. w. [H. 1489.]
 [RĀJA-TAR. 5,108.] *nirgatanikhilakalmaṣatayā*
 [VEDĀNTAS. 6.] *nirgataviśaṅka*
 [PAÑCAT. 124,12.]
+  <sub>attested</sub>
 
 **3)** — 3) von Etwas (abl.) frei kommen, befreit werden von: *nirgato gadāt*
 [AK. 2,6,2,8.]
+
+- **RU:** — 3) освободиться от чего-л. (abl.), быть освобождённым от: *nirgato gadāt*
+[AK. 2,6,2,8.]
 - **EN:** — 3) to come free from something (abl.), to be freed from: *nirgato gadāt*
 [AK. 2,6,2,8.]
+  <sub>attested</sub>
 
 **4)** — 4) in einen Zustand (acc.) übergehen: *puruṣāḥ preṣyatāmeke nirgacchanti dhanārthinaḥ*
 [MBH. 3,15399.] — desid. hinauszutreten begehren: *garbhānna nirjigamiṣe bahirandhakūpe*
 [BHĀG. P. 3,31,20.]
+
+- **RU:** — 4) перейти в некое состояние (acc.): *puruṣāḥ preṣyatāmeke nirgacchanti dhanārthinaḥ*
+[MBH. 3,15399.] — desid. желать выйти наружу: *garbhānna nirjigamiṣe bahirandhakūpe*
+[BHĀG. P. 3,31,20.]
 - **EN:** — 4) to pass over into a state (acc.): *puruṣāḥ preṣyatāmeke nirgacchanti dhanārthinaḥ*
 [MBH. 3,15399.] — desid. to desire to step out: *garbhānna nirjigamiṣe bahirandhakūpe*
 [BHĀG. P. 3,31,20.]
+  <sub>attested</sub>
 
 ## abhinirgam
 
@@ -2678,10 +3463,14 @@ u. s. w. [H. 1489.]
 
 **1)** — *abhinis* hinausgehen, sich entfernen von: *cārayitvā tu tamṛṣimāśramādabhinirgatam*
 [R. 1,9,13.]
+
+- **RU:** — *abhinis* выходить, удаляться от: *cārayitvā tu tamṛṣimāśramādabhinirgatam*
+[R. 1,9,13.]
 - **EN:** — *abhinis* to go out, to remove oneself from *cārayitvā tu tamṛṣimāśramādabhinirgatam*
 [R. 1,9,13.]
+  <sub>attested</sub>
 
-## vinis-gam
+## vinis+gam
 
 `gam~~h0_53_vinis`
 
@@ -2698,6 +3487,19 @@ u. s. w. [H. 1489.]
 [ṚT. 1,21.] *tvayā saha śrīśca vinirgatā mama* gewichen
 [R. 4,22,39.] sich entfernen (von Sternen)
 [VARĀH. BṚH. S. 4,26.]
+
+- **RU:** — *vinis*
+ 1) выходить, выступать наружу, уходить из дома, удаляться: *vinirgaccha tūrṇamāsyādapāvṛtāt*
+[MBH. 1,1341.] *bhavanāt*
+[R. 5,84,10.] *vilāt*
+[4,52,13.] [53,22.] *nagarāt*
+[VID. 279.] *advāreṇa vinirgacchan*
+[MBH. 2,1816.] *upetya ca — bāhyakakṣyāṃ vinirgataḥ*
+[32.] [R. 6,5,15.] [PAÑCAT. 29,21.] *yuddhārthaṃ vinirgataḥ*
+[48,13.] *vinirgatālohitajihva (mahiṣīkula)*
+[ṚT. 1,21.] *tvayā saha śrīśca vinirgatā mama* отступивший, ушедший
+[R. 4,22,39.] удаляться (о звёздах)
+[VARĀH. BṚH. S. 4,26.]
 - **EN:** — *vinis*
  1) to go out, step out, leave the house, go away: *vinirgaccha tūrṇamāsyādapāvṛtāt*
 [MBH. 1,1341.] *bhavanāt*
@@ -2710,28 +3512,41 @@ u. s. w. [H. 1489.]
 [ṚT. 1,21.] *tvayā saha śrīśca vinirgatā mama* departed, gone away
 [R. 4,22,39.] to withdraw, move away (of stars)
 [VARĀH. BṚH. S. 4,26.]
+  <sub>attested</sub>
 
 **2)** — 2) sich von Etwas (abl.) losmachen, befreien: *saṅgebhyo vinirgataḥ*
 [M. 8,65.] [6,57.]
+
+- **RU:** — 2) освобождаться от чего-либо (abl.) , избавляться: *saṅgebhyo vinirgataḥ*
+[M. 8,65.] [6,57.]
 - **EN:** — 2) to free oneself from something (abl.), to become released: *saṅgebhyo vinirgataḥ*
 [M. 8,65.] [6,57.]
+  <sub>attested</sub>
 
 **3)** — 3) ausser sich gerathen: *sa tu brahmaṛṣarese gatāsumuragaṃ ruṣā . vinirgacchandhanuṣkoṭyā nidhāya puramāgataḥ ..*
 [BHĀG. P. 1,18,30.]
+
+- **RU:** — 3) прийти в исступление, выйти из себя: *sa tu brahmaṛṣarese gatāsumuragaṃ ruṣā . vinirgacchandhanuṣkoṭyā nidhāya puramāgataḥ ..*
+[BHĀG. P. 1,18,30.]
 - **EN:** — 3) to be beside oneself: *sa tu brahmaṛṣarese gatāsumuragaṃ ruṣā . vinirgacchandhanuṣkoṭyā nidhāya puramāgataḥ ..*
 [BHĀG. P. 1,18,30.]
+  <sub>attested</sub>
 
-## saṃnirgam
+## saṃnis+gam
 
 `gam~~h0_54_sa_mnis`
 
 
 **1)** — *saṃnis* hinausgehen, aufbrechen: *sa baddhatūṇaḥ svarathaṃ samāsthitaḥ saṃnirjagāma*
 [R. 5,42,5.]
+
+- **RU:** — *saṃnis* выходить, отправляться в путь: *sa baddhatūṇaḥ svarathaṃ samāsthitaḥ saṃnirjagāma*
+[R. 5,42,5.]
 - **EN:** — *saṃnis* to go out, to set out *sa baddhatūṇaḥ svarathaṃ samāsthitaḥ saṃnirjagāma*
 [R. 5,42,5.]
+  <sub>attested</sub>
 
-## parā-gam
+## parā+gam
 
 `gam~~h0_55_par_a`
 
@@ -2741,23 +3556,38 @@ u. s. w. [H. 1489.]
 [AV. 7,12,4.] *dūraṃ pa˚*
 [ṚV. 10,97,21.] *yatra kāmāḥ parāgatāḥ*
 [ŚAT. BR. 10,5,4,16.]
+
+- **RU:** — *parā*
+ 1) уходить прочь, избегать, ускользать: *yadvo manaḥ parāgataṃ yadbaddhamiha veha vā*
+[AV. 7,12,4.] *dūraṃ pa˚*
+[ṚV. 10,97,21.] *yatra kāmāḥ parāgatāḥ*
+[ŚAT. BR. 10,5,4,16.]
 - **EN:** — *parā*
  1) to go away, escape, elude: *yadvo manaḥ parāgataṃ yadbaddhamiha veha vā*
 [AV. 7,12,4.] *dūraṃ pa˚*
 [ṚV. 10,97,21.] *yatra kāmāḥ parāgatāḥ*
 [ŚAT. BR. 10,5,4,16.]
+  <sub>attested</sub>
 
 **2)** — 2) hingehen, abscheiden: *ye te pūrve parāgatā apare pitaraśca ye*
 [AV. 18,3,72.]
+
+- **RU:** — 2) уходить, отходить (умирать): *ye te pūrve parāgatā apare pitaraśca ye*
+[AV. 18,3,72.]
 - **EN:** — 2) to pass on, to depart (i.e. die): *ye te pūrve parāgatā apare pitaraśca ye*
 [AV. 18,3,72.]
+  <sub>attested</sub>
 
 **3)** — 3) *parāgata* erfüllt von (vgl. — *pari): parāgaparāgatapaṅkaja*
 [ŚIŚ. 6,2.]
+
+- **RU:** — 3) *parāgata* исполненный чем-либо (vgl. — *pari): parāgaparāgatapaṅkaja*
+[ŚIŚ. 6,2.]
 - **EN:** — 3) *parāgata* filled with, permeated by (vgl. — *pari): parāgaparāgatapaṅkaja*
 [ŚIŚ. 6,2.]
+  <sub>attested</sub>
 
-## pari-gam
+## pari+gam
 
 `gam~~h0_56_pari`
 
@@ -2780,6 +3610,25 @@ u. s. w. [H. 1489.]
 [R. 6,15,5.] *valkadukūlakuthādibhiḥ parigataḥ*
 [BHAṬṬ. 10,1.] *viśadaprabhāparigataḥ*
 [ŚIŚ. 9,26.]
+
+- **RU:** — *pari*
+ 1) обходить вокруг, обращаться вокруг, обходить кругом, совершать круговой обход: окружать (кольцом), заключать в себе, окружать: *ghṛṇā vayo 'ruṣāsaḥ pari gman*
+[ṚV. 4,43,6.] *pari dyāmiva sūryo 'hīnāṃ janimāgamam*
+[AV. 6,12,1.] *pravo|ṛnparigatyā dabhīteḥ*
+[ṚV. 2,15,4.] *pari vrajeva vāhvorjaganvāṃsā svarṇaram*
+[5,64,1.] *tāni ratho bhūtvā paryagacchattāni parigatyātmannadhatta*
+[ŚAT. BR. 9,4,1,2.] [15.] [5,1,36.] [8,2,4,16.] — *tāvāśramānnadīścaiva vanāni ca sarāṃsi ca . tasyāṃ niśi vicinvantau daṃpatī parijagmatuḥ ..*
+[SĀV. 6,3.]
+[MBH. 1,7918.] *aśokavṛkṣam*
+[3,2507.] [R. 2,55,24.] *taṃ hayaṃ tatra parigamya pradakṣiṇam*
+[1,13,34.] *meruṃ parigantum*
+[5,3,37.] *yathā hi merurbhagavatā* (d. i. *sūryeṇa) nityaśaḥ parigamyate*
+[MBH. 3,8783.] *sarvaloko hyayaṃ manye buddhyā parigatastvayā*
+[12,8319.] [R. 1,61,14.] [4,52,12.] *senāparigata* окружённый войском
+[RAGH. ed. Calc. 1,38.] *latāparigatairdrumaiḥ*
+[R. 6,15,5.] *valkadukūlakuthādibhiḥ parigataḥ*
+[BHAṬṬ. 10,1.] *viśadaprabhāparigataḥ*
+[ŚIŚ. 9,26.]
 - **EN:** — *pari*
  1) to wander around, circumambulate, walk around, go round: to circle, to enclose, to surround: *ghṛṇā vayo 'ruṣāsaḥ pari gman*
 [ṚV. 4,43,6.] *pari dyāmiva sūryo 'hīnāṃ janimāgamam*
@@ -2798,8 +3647,14 @@ u. s. w. [H. 1489.]
 [R. 6,15,5.] *valkadukūlakuthādibhiḥ parigataḥ*
 [BHAṬṬ. 10,1.] *viśadaprabhāparigataḥ*
 [ŚIŚ. 9,26.]
+  <sub>attested</sub>
 
 **2)** — 2) sich nach allen Seiten verbreiten, sich verbreiten nach: *parigataśaraccandrakiraṇāstriyāmāḥ*
+[BHARTṚ. 3,86.] *parigataśaktiḥ (nīlalohitaḥ)*
+[ŚĀK. 194.] *parisaraparigatayamunājala*
+[GĪT. 1,33.]
+
+- **RU:** — 2) распространяться во все стороны, распространяться на: *parigataśaraccandrakiraṇāstriyāmāḥ*
 [BHARTṚ. 3,86.] *parigataśaktiḥ (nīlalohitaḥ)*
 [ŚĀK. 194.] *parisaraparigatayamunājala*
 [GĪT. 1,33.]
@@ -2807,13 +3662,27 @@ u. s. w. [H. 1489.]
 [BHARTṚ. 3,86.] *parigataśaktiḥ (nīlalohitaḥ)*
 [ŚĀK. 194.] *parisaraparigatayamunājala*
 [GĪT. 1,33.]
+  <sub>attested</sub>
 
 **3)** — 3) dahingehen, abscheiden: *vayaṃ yebhyo jātāściraparigatā eva khalu te*
 [BHARTṚ. 3,49.]
+
+- **RU:** — 3) уходить, отходить (умирать): *vayaṃ yebhyo jātāściraparigatā eva khalu te*
+[BHARTṚ. 3,49.]
 - **EN:** — 3) to pass away, to depart (i.e. die): *vayaṃ yebhyo jātāściraparigatā eva khalu te*
 [BHARTṚ. 3,49.]
+  <sub>attested</sub>
 
 **4)** — 4) in einen Zustand übergehen, theilhaft werden, erlangen: *vṛṣalatvaṃ parigatāḥ*
+[MBH. 13,2103.] [2105.] [14,832.] *mānuṣatām*
+[13,6738.] *śāntim*
+
+[2,1761.] *parigatavedana*
+[12,12070.] *parigata = prāpta*
+[TRIK. 3,3,171.]
+[MED. t. 205.]
+
+- **RU:** — 4) переходить в некое состояние, становиться причастным чему-либо, обретать: *vṛṣalatvaṃ parigatāḥ*
 [MBH. 13,2103.] [2105.] [14,832.] *mānuṣatām*
 [13,6738.] *śāntim*
 
@@ -2829,8 +3698,18 @@ u. s. w. [H. 1489.]
 [12,12070.] *parigata = prāpta*
 [TRIK. 3,3,171.]
 [MED. t. 205.]
+  <sub>attested</sub>
 
 **5)** — 5) *parigata* (umgeben) erfüllt, in Besitz genommen, behaftet: *parigataḥ kṣudhā*
+[PAÑCAT. I,55.] *kṣudhāpari˚*
+[MBH. 14,2717.] *śvāsahikkā˚*
+[SUŚR. 2,501,9.] *cintā˚*
+[MBH. 3,15091.] [8,3609.] *hrī˚*
+[HIT. I,128.] [MṚCCH. 8,11.] *adhvaśrama˚*
+[MEGH. 17.] *bhramaṇaparigataṃ bhaikṣam*
+[ŚĀNTIŚ. 4,7.]
+
+- **RU:** — 5) *parigata* (окружённый) исполненный, охваченный, отмеченный: *parigataḥ kṣudhā*
 [PAÑCAT. I,55.] *kṣudhāpari˚*
 [MBH. 14,2717.] *śvāsahikkā˚*
 [SUŚR. 2,501,9.] *cintā˚*
@@ -2846,10 +3725,17 @@ u. s. w. [H. 1489.]
 [HIT. I,128.] [MṚCCH. 8,11.] *adhvaśrama˚*
 [MEGH. 17.] *bhramaṇaparigataṃ bhaikṣam*
 [ŚĀNTIŚ. 4,7.]
+  <sub>attested</sub>
 
 **6)** — 6) *parigata = jñāta* (
 [TRIK. 3,3,171.]
 [MED. t. 205.] [H. an. 4,118]) gekannt in *parigatārtha* bekannt, vertraut mit Etwas: *tadatra parigatārthaṃ kṛtvā piśunaṃ brūhi*
+[ŚĀK. 95,20.]
+[RAGH. 7,68.]
+
+- **RU:** — 6) *parigata = jñāta* (
+[TRIK. 3,3,171.]
+[MED. t. 205.] [H. an. 4,118]) знаемый в *parigatārtha* известный, знакомый с чем-либо: *tadatra parigatārthaṃ kṛtvā piśunaṃ brūhi*
 [ŚĀK. 95,20.]
 [RAGH. 7,68.]
 - **EN:** — 6) *parigata = jñāta* (
@@ -2857,19 +3743,27 @@ u. s. w. [H. 1489.]
 [MED. t. 205.] [H. an. 4,118]) known, in *parigatārtha* known, familiar with something: *tadatra parigatārthaṃ kṛtvā piśunaṃ brūhi*
 [ŚĀK. 95,20.]
 [RAGH. 7,68.]
+  <sub>attested</sub>
 
 **7)** — 7) nach
 [MED.] und [H. an.] ist *parigata* auch = *ceṣṭita* vollbracht; nach
 [MED.] = *vismṛta* vergessen; nach
 [H. an.] = *lābha*, wofür viell. *labdha* (= *prāpta* erlangt) zu lesen ist. — caus. umlaufen lassen, (eine Zeit) verbringen: *tenāṣṭau parigamitāḥ samāḥ kathaṃcit*
 [RAGH. 8,91.]
+
+- **RU:** — 7) по
+[MED.] и [H. an.] *parigata* равнозначно также *ceṣṭita* совершённый, исполненный; по
+[MED.] = *vismṛta* забытый; по
+[H. an.] = *lābha*, вместо чего следует читать viell. *labdha* (= *prāpta* обретённый). — caus. давать обойти кругом, (время) проводить: *tenāṣṭau parigamitāḥ samāḥ kathaṃcit*
+[RAGH. 8,91.]
 - **EN:** — 7) according to
 [MED.] and [H. an.], *parigata* is also = *ceṣṭita* accomplished, completed; according to
 [MED.] = *vismṛta* forgotten; according to
 [H. an.] = *lābha*, for which viell. *labdha* (= *prāpta* attained) is to be read. — caus. to cause to circulate, (a period of time) to spend: *tenāṣṭau parigamitāḥ samāḥ kathaṃcit*
 [RAGH. 8,91.]
+  <sub>lexicographic</sub>
 
-## punar√gam
+## punar+gam
 
 `gam~~h0_57_punar`
 
@@ -2877,14 +3771,22 @@ u. s. w. [H. 1489.]
 **1)** — *punar* heimkehren: *tataḥ sā nacirādeva vidarbhānagamatpunaḥ*
 [N. 17,23.] *gamyatāṃ svapuraṃ punaḥ*
 [R. 1,58,5.]
+
+- **RU:** — *punar* возвращаться домой: *tataḥ sā nacirādeva vidarbhānagamatpunaḥ*
+[N. 17,23.] *gamyatāṃ svapuraṃ punaḥ*
+[R. 1,58,5.]
 - **EN:** *punar* to return home: *tataḥ sā nacirādeva vidarbhānagamatpunaḥ*
 [N. 17,23.] *gamyatāṃ svapuraṃ punaḥ*
 [R. 1,58,5.]
+  <sub>attested</sub>
 
 **2)** — Vgl. unter — *ā* .
-- **EN:** Vgl., see under — *ā*.
 
-## pra-gam
+- **RU:** — Vgl. см. под — *ā* .
+- **EN:** Vgl., see under — *ā*.
+  <sub>attested</sub>
+
+## pra+gam
 
 `gam~~h0_58_pra`
 
@@ -2896,6 +3798,14 @@ u. s. w. [H. 1489.]
 [MBH.] in [LA. 47,18.] [R. 3,19,27.] *aṣṭakasya vaiśvāmitreraśvamedhe sarve rājānaḥ prāgacchanta*
 [MBH. 3,13301.] schreiten zu, gehen an: *pro droṇe harayaḥ karmāgman*
 [ṚV. 6,37,2.]
+
+- **RU:** — *pra*
+ 1) отправляться в путь, идти к: *tadāśramapadaṃ draṣṭuṃ prajagmuḥ*
+[R. 1,9,30.] *prajagāmātha yatrāsau tiṣṭhate muniḥ*
+[BRAHMA-P. 53,14.] *pragato vilam*
+[MBH.] в [LA. 47,18.] [R. 3,19,27.] *aṣṭakasya vaiśvāmitreraśvamedhe sarve rājānaḥ prāgacchanta*
+[MBH. 3,13301.] приступать к, браться за: *pro droṇe harayaḥ karmāgman*
+[ṚV. 6,37,2.]
 - **EN:** — *pra*
  1) to set out, go to: *tadāśramapadaṃ draṣṭuṃ prajagmuḥ*
 [R. 1,9,30.] *prajagāmātha yatrāsau tiṣṭhate muniḥ*
@@ -2903,18 +3813,27 @@ u. s. w. [H. 1489.]
 [MBH.] in [LA. 47,18.] [R. 3,19,27.] *aṣṭakasya vaiśvāmitreraśvamedhe sarve rājānaḥ prāgacchanta*
 [MBH. 3,13301.] to proceed to, set about: *pro droṇe harayaḥ karmāgman*
 [ṚV. 6,37,2.]
+  <sub>attested</sub>
 
 **2)** — 2) es bringen zu: *viśvānyaśvinā yuvaṃ pra dhītānyagacchatam*
 [ṚV. 8,8,10.]
+
+- **RU:** — 2) доводить до чего-либо: *viśvānyaśvinā yuvaṃ pra dhītānyagacchatam*
+[ṚV. 8,8,10.]
 - **EN:** — 2) to bring it to (the point of): *viśvānyaśvinā yuvaṃ pra dhītānyagacchatam*
 [ṚV. 8,8,10.]
+  <sub>attested</sub>
 
 **3)** — 3) *pragata* auseinanderstehend: *pragatajānuka*
 [AK. 2,6,1,47.]
+
+- **RU:** — 3) *pragata* находящийся врозь, стоящий порознь: *pragatajānuka*
+[AK. 2,6,1,47.]
 - **EN:** — 3) *pragata* standing apart, separated: *pragatajānuka*
 [AK. 2,6,1,47.]
+  <sub>attested</sub>
 
-## vipra√gam
+## vipra+gam
 
 `gam~~h0_59_vipra`
 
@@ -2922,11 +3841,16 @@ u. s. w. [H. 1489.]
 **1)** — *vipra* auseinandergehen: *yathāgataṃ viprajagmuḥ*
 [MBH. 1,7372.] [3,8823.] [8858.] [15,575.] *(hatārohāśca mātaṅgāḥ) viprajagmuranīkeṣu ghanā vātahatā iva*
 [6,2317.]
+
+- **RU:** — *vipra* расходиться в стороны: *yathāgataṃ viprajagmuḥ*
+[MBH. 1,7372.] [3,8823.] [8858.] [15,575.] *(hatārohāśca mātaṅgāḥ) viprajagmuranīkeṣu ghanā vātahatā iva*
+[6,2317.]
 - **EN:** *vipra* to part, go apart: *yathāgataṃ viprajagmuḥ*
 [MBH. 1,7372.] [3,8823.] [8858.] [15,575.] *(hatārohāśca mātaṅgāḥ) viprajagmuranīkeṣu ghanā vātahatā iva*
 [6,2317.]
+  <sub>attested</sub>
 
-## prati-gam
+## prati+gam
 
 `gam~~h0_60_prati`
 
@@ -2936,11 +3860,18 @@ u. s. w. [H. 1489.]
 [ŚĀK. 18,10.]
 [PAÑCAT. 21,9.] *(devīm) prayatenātmanā tāta pratigamyābhivādata*
 [MBH. 3,10908.]
+
+- **RU:** — *prati*
+ 1) идти навстречу: *bhavatu pratigamiṣyāmastāvat*
+[ŚĀK. 18,10.]
+[PAÑCAT. 21,9.] *(devīm) prayatenātmanā tāta pratigamyābhivādata*
+[MBH. 3,10908.]
 - **EN:** — *prati*
  1) to go to meet, go toward: *bhavatu pratigamiṣyāmastāvat*
 [ŚĀK. 18,10.]
 [PAÑCAT. 21,9.] *(devīm) prayatenātmanā tāta pratigamyābhivādata*
 [MBH. 3,10908.]
+  <sub>attested</sub>
 
 **2)** — 2) zurückkehren, heimkehren: *pratijagmuryathāgatam*
 [N. 5,39.]
@@ -2952,6 +3883,17 @@ u. s. w. [H. 1489.]
 [P. 2,1,14], Sch.
 *gatāgatapratigatasaṃpatādyāśca pakṣiṇām . gatibhedāḥ*
 [JAṬĀDH.] im [ŚKDR.] u. *pratigata* .
+
+- **RU:** — 2) возвращаться, возвращаться домой: *pratijagmuryathāgatam*
+[N. 5,39.]
+[MBH. 13,3503] (med.). [R. 1,9,42.] [11,19.] [4,9,57.] [53,12.] [ŚĀK. 54,22.] [DAŚAK.] в [BENF. Chr. 192,17.] *ahaṃ na tān (lokān) vai pratigantā*
+[MBH. 1,3668.] *laṅkāṃ pratigataḥ*
+[R. 3,42,43.] [4,9,16] [6,106,6.]
+[VIKR. 94.]
+[PAÑCAT. 233,8.]
+[P. 2,1,14], Sch.
+*gatāgatapratigatasaṃpatādyāśca pakṣiṇām . gatibhedāḥ*
+[JAṬĀDH.] в [ŚKDR.] u. *pratigata* .
 - **EN:** — 2) to return, come home: *pratijagmuryathāgatam*
 [N. 5,39.]
 [MBH. 13,3503] (med.). [R. 1,9,42.] [11,19.] [4,9,57.] [53,12.] [ŚĀK. 54,22.] [DAŚAK.] in [BENF. Chr. 192,17.] *ahaṃ na tān (lokān) vai pratigantā*
@@ -2962,15 +3904,22 @@ u. s. w. [H. 1489.]
 [P. 2,1,14], Sch.
 *gatāgatapratigatasaṃpatādyāśca pakṣiṇām . gatibhedāḥ*
 [JAṬĀDH.] in [ŚKDR.] u. *pratigata* .
+  <sub>attested</sub>
 
 **3)** — 3) *pratigata* dem Gedächtniss entschwunden: *tasya saṃdidihe buddhistāṃ dṛṣṭvā tadvinirṇaye .. adhītāṃ yogahīnasya vidyāṃ pratigatāmiva .*
 [R. 5,18,18.] — Statt *mṛgaṃ pratigatāṃ spṛhām*
 [R. 3,49,12.]
 [BENF. Chr. 66,12] ist *mṛgaṃ prati gatāṃ spṛhām* zu lesen.
+
+- **RU:** — 3) *pratigata* изгладившийся из памяти, забытый: *tasya saṃdidihe buddhistāṃ dṛṣṭvā tadvinirṇaye .. adhītāṃ yogahīnasya vidyāṃ pratigatāmiva .*
+[R. 5,18,18.] — Вместо *mṛgaṃ pratigatāṃ spṛhām*
+[R. 3,49,12.]
+[BENF. Chr. 66,12] следует читать *mṛgaṃ prati gatāṃ spṛhām* .
 - **EN:** — 3) *pratigata* vanished from memory: *tasya saṃdidihe buddhistāṃ dṛṣṭvā tadvinirṇaye .. adhītāṃ yogahīnasya vidyāṃ pratigatāmiva .*
 [R. 5,18,18.] — Instead of *mṛgaṃ pratigatāṃ spṛhām*
 [R. 3,49,12.]
 [BENF. Chr. 66,12] read *mṛgaṃ prati gatāṃ spṛhām*.
+  <sub>lexicographic</sub>
 
 ## vi-gam
 
@@ -2981,10 +3930,16 @@ u. s. w. [H. 1489.]
  1) auseinandergehen: *tredhā viṣvagvi gacchati*
 [AV. 11,8,33.] *avanitalavigataiśca bhūtasaṃghaiḥ*
 [MBH. 7,1622.]
+
+- **RU:** — *vi*
+ 1) «расходиться в разные стороны»: *tredhā viṣvagvi gacchati*
+[AV. 11,8,33.] *avanitalavigataiśca bhūtasaṃghaiḥ*
+[MBH. 7,1622.]
 - **EN:** — *vi*
  1) to go apart, separate: *tredhā viṣvagvi gacchati*
 [AV. 11,8,33.] *avanitalavigataiśca bhūtasaṃghaiḥ*
 [MBH. 7,1622.]
+  <sub>attested</sub>
 
 **2)** — 2) weggehen; vergehen, verschwinden: *vigate bāhuvīrye*
 [AV. 5,21,10.] *tato niśā sā vyagamanmahātmanāṃ saṃśṛṇvatāṃ viprasamīritā giraḥ*
@@ -3000,6 +3955,29 @@ u. s. w. [H. 1489.]
 [GĪT. 11,33.] *saṃdhyayāpi sapadi vyagami* (pass. impers., der Form nach aber vom caus.)
 [ŚIŚ. 9,17.] Sehr häufig *vigata* verschwunden, gewichen, = *a* priv. am Anfange eines adj. comp.: *vigatāsu*
 [MBH. 7,1420.] *˚nayana* blind
+[PAÑCAT. 262,13.] *˚saṃtrāsa*
+[MBH. 3,13.] *˚snehasauhṛda*
+[SUND. 4,17.] *˚jvara*
+[N. 12,68.] *˚saṃkalpa*
+[2,28.] *˚klama*
+[M. 7,151.] — [BHAG. 6,14.] [R. 1,1,82.] [3,12,4] [64,16.] [BHARTṚ. 2,46.] [ŚĀK. 184.] [MĀLAV. 17,9.] [RĀJA-TAR. 5,20.] [VID. 46.] [337.] [BHAṬṬ. 6,82.] *vigata = vīta*
+[TRIK. 3,3,184.]
+[H. an. 3,297.]
+
+- **RU:** — 2) «уходить; проходить, исчезать» (semicolon marks a real sense-break within the German: «уходить» = удаление, «проходить/исчезать» = прехождение, угасание): *vigate bāhuvīrye*
+[AV. 5,21,10.] *tato niśā sā vyagamanmahātmanāṃ saṃśṛṇvatāṃ viprasamīritā giraḥ*
+[MBH. 14,1912.] *samāḥ sahasraṃ vyagaman*
+[BHĀG. P. 8,2,28.] *vigataṃ vayaḥ*
+[1,13,20.] *śraddhā ca no mā vyagamat*
+[M. 3,259.]
+[YĀJÑ. 1,245.] *atra snātasya bhāvaste mānuṣo vigamiṣyati*
+[MBH. 18,109.] *sa manyurvyagamacchīghram*
+[3,10403.] *na vigacchati vaidehyāḥ — prabhā*
+[R. 2,60,16.] [4,12,6.]
+[BHAG. 11,1.]
+[GĪT. 11,33.] *saṃdhyayāpi sapadi vyagami* (pass. impers., по форме, однако, от caus.)
+[ŚIŚ. 9,17.] Очень часто *vigata* «исчезнувший, ушедший», = *a* priv. в начале adj. comp.: *vigatāsu*
+[MBH. 7,1420.] *˚nayana* «слепой»
 [PAÑCAT. 262,13.] *˚saṃtrāsa*
 [MBH. 3,13.] *˚snehasauhṛda*
 [SUND. 4,17.] *˚jvara*
@@ -3030,33 +4008,51 @@ u. s. w. [H. 1489.]
 [M. 7,151.] — [BHAG. 6,14.] [R. 1,1,82.] [3,12,4] [64,16.] [BHARTṚ. 2,46.] [ŚĀK. 184.] [MĀLAV. 17,9.] [RĀJA-TAR. 5,20.] [VID. 46.] [337.] [BHAṬṬ. 6,82.] *vigata = vīta*
 [TRIK. 3,3,184.]
 [H. an. 3,297.]
+  <sub>attested</sub>
 
 **3)** — 3) *vigata* hingegangen, gestorben
 [M. 5,75.]
+
+- **RU:** — 3) *vigata* «ушедший, умерший»
+[M. 5,75.]
 - **EN:** — 3) *vigata* gone away, deceased
 [M. 5,75.]
+  <sub>attested</sub>
 
 **4)** — 4) *vigata* glanzlos
 [AK. 3,2,49.] [TRIK. 3,3,184.] [H. an. 3,297.]
+
+- **RU:** — 4) *vigata* «лишённый блеска, тусклый»
+[AK. 3,2,49.] [TRIK. 3,3,184.] [H. an. 3,297.]
 - **EN:** — 4) *vigata* lustreless
 [AK. 3,2,49.] [TRIK. 3,3,184.] [H. an. 3,297.]
+  <sub>attested</sub>
 
 **5)** — 5) *vidūravigata*
 [BHĀG. P. 5,1,36] übersetzt BURNOUF durch un homme de l'extraction la plus basse, wörtlich: in weite Ferne weggegangen. — caus. vergehen lassen, verbringen (die Zeit): *śayyāprāntavivartanairvigamayatyunnidra eva kṣapāḥ*
 [ŚĀK. 132.]
+
+- **RU:** — 5) *vidūravigata*
+[BHĀG. P. 5,1,36] BURNOUF переводит как un homme de l'extraction la plus basse (человек самого низкого происхождения), буквально: «ушедший в дальнюю даль». — caus. «проводить, коротать» (время): *śayyāprāntavivartanairvigamayatyunnidra eva kṣapāḥ*
+[ŚĀK. 132.]
 - **EN:** — 5) *vidūravigata*
 [BHĀG. P. 5,1,36] BURNOUF translates as un homme de l'extraction la plus basse, literally: gone far away. — caus. to let pass, spend (time): *śayyāprāntavivartanairvigamayatyunnidra eva kṣapāḥ*
 [ŚĀK. 132.]
+  <sub>attested</sub>
 
-## pravi√gam
+## pravi+gam
 
 `gam~~h0_62_pravi`
 
 
 **1)** — *pravi* vergehen, schwinden: *pravigatagadadoṣa*
 [VARĀH. BṚH. S. 12,19.]
+
+- **RU:** — *pravi* проходить, исчезать: *pravigatagadadoṣa*
+[VARĀH. BṚH. S. 12,19.]
 - **EN:** *pravi* to pass away, to fade: *pravigatagadadoṣa*
 [VARĀH. BṚH. S. 12,19.]
+  <sub>attested</sub>
 
 ## sam√gam
 
@@ -3364,7 +4360,12 @@ Sch. Vārtt. 2, Sch.
 **1)** 2. *gam*¦ = *kṣam* Erde, nur in der Form *gmas* (gen. abl.): *divaśca gmaśca rājasi*
 [ṚV. 1,25,20.] [37,6.] [5,38,3.] [10,22,6.] [49,2.]
 [NAIGH. 1,1] führt den nom. *gmā* auf.
+
+- **RU:** 2. *gam*¦ = *kṣam* земля, только в форме *gmas* (gen. abl.): *divaśca gmaśca rājasi*
+[ṚV. 1,25,20.] [37,6.] [5,38,3.] [10,22,6.] [49,2.]
+[NAIGH. 1,1] приводит nom. *gmā*.
 - **EN:** 2. *gam* = *kṣam* 'earth', only in the form *gmas* (gen. abl.): *divaśca gmaśca rājasi* [ṚV. 1,25,20.] [37,6.] [5,38,3.] [10,22,6.] [49,2.] [NAIGH. 1,1] cites the nom. *gmā*.
+  <sub>lexicographic</sub>
 
 ## gam
 
@@ -3389,6 +4390,25 @@ Sch. Vārtt. 2, Sch.
 [Spr. 1775.]
 - **EN:** — 5) *prāṇadroham* to seek someone's life, attempt to kill someone
 [Spr. 1775.]
+
+**1)** 1. *gam*¦
+ 3)
+ a) *gacchasva tvaṃ gajāhvayam*
+[BHĀG. P. 10,48,32.]
+— 4)
+[WEBER, RĀMAT. UP. 356.] [KATHĀS. 106,133. fg.]
+— 5) *prāṇadroham* Jmd nach dem Leben trachten
+[Spr. 1775.]
+
+- **RU:** 1. *gam*¦
+ 3)
+ a) *gacchasva tvaṃ gajāhvayam*
+[BHĀG. P. 10,48,32.]
+— 4)
+[WEBER, RĀMAT. UP. 356.] [KATHĀS. 106,133. fg.]
+— 5) *prāṇadroham* покушаться на чью-либо жизнь
+[Spr. 1775.]
+  <sub>attested</sub>
 
 ## gam
 
@@ -3428,27 +4448,68 @@ Sch. Vārtt. 2, Sch.
  e) the having-gone-away, the being-departed: *vayogate*
 [Spr. 1610.]
 
+**1)** — partic. *gata*
+ 1)
+ a) *caure gate*
+[Spr. 1610.]
+— b)
+[R. 7,8,4.]
+— d) *dattāpi vindhyavāsinyā vidyā me niṣphalā gatā*
+[KATHĀS. 52,161.]
+— g)
+ δ) *dharmakṛcchra˚*
+[BHĀG. P. 10,64,19.] Z. 9 lies auf der Erde st. in der Welt.
+— 2)
+ e) das Fortgegangensein, das Dahinsein: *vayogate*
+[Spr. 1610.]
+
+- **RU:** — partic. *gata*
+ 1)
+ a) *caure gate*
+[Spr. 1610.]
+— b)
+[R. 7,8,4.]
+— d) *dattāpi vindhyavāsinyā vidyā me niṣphalā gatā*
+[KATHĀS. 52,161.]
+— g)
+ δ) *dharmakṛcchra˚*
+[BHĀG. P. 10,64,19.] Z. 9 читай на земле st. в мире.
+— 2)
+ e) состояние ушедшего, отбытие, пребывание вдали: *vayogate*
+[Spr. 1610.]
+  <sub>attested</sub>
+
 ## gam
 
 `gam~~h2_02_sec_2`
 
 
-**2)** 2)
+**2)** — caus.
+ 2)
+[KATHĀS. 95,70.]
+
+- **RU:** — caus.
+ 2)
 [KATHĀS. 95,70.]
 - **EN:** 2)
 [KATHĀS. 95,70.]
+  <sub>attested</sub>
 
 ## atigam
 
 `gam~~h2_03_ati`
 
 
-**1)** *ati* übergehen, überspringen; mit acc.
+**1)** — *ati* übergehen, überspringen; mit acc.
+[ṚV. PRĀT. 11,1.] [12.]
+
+- **RU:** — *ati* переходить, перепрыгивать; с acc.
 [ṚV. PRĀT. 11,1.] [12.]
 - **EN:** *ati* to pass over, to skip over; with acc.
 [ṚV. PRĀT. 11,1.] [12.]
+  <sub>attested</sub>
 
-## adhi-gam
+## adhigam
 
 `gam~~h2_04_a_di`
 
@@ -3456,9 +4517,26 @@ Sch. Vārtt. 2, Sch.
 **1)** — *adhi*
  1) *sūkṣmapadyā sopānālīmadhigatavatī* geht, führt zu
 [Spr. 2777.]
+— 2)
+[BHĀG. P. 11,8,14.]
+— 4)
+[ŚĀṄKH. GṚHY. 1,17,18] in [Ind. St. 5,408. fg.] Z. 7 [MBH. 6,4538] liest die [ed. Bomb.] *nādhyagacchanta* .
+— 6) *virodham* sich in Streit einlassen
+[Spr. 4354.]
+
+- **RU:** — *adhi*
+ 1) *sūkṣmapadyā sopānālīmadhigatavatī* идёт, ведёт к
+[Spr. 2777.]
+— 2)
+[BHĀG. P. 11,8,14.]
+— 4)
+[ŚĀṄKH. GṚHY. 1,17,18] в [Ind. St. 5,408. fg.] Z. 7 [MBH. 6,4538] читает [ed. Bomb.] *nādhyagacchanta* .
+— 6) *virodham* вступать в спор
+[Spr. 4354.]
 - **EN:** — *adhi*
  1) *sūkṣmapadyā sopānālīmadhigatavatī* goes to, leads to
 [Spr. 2777.]
+  <sub>attested</sub>
 
 **2)** — 2)
 [BHĀG. P. 11,8,14.]
@@ -3482,8 +4560,16 @@ Sch. Vārtt. 2, Sch.
 
 **1)** — *anu*
  1) *lakṣmaṇānuyātreṇa pṛṣṭhato 'nugamiṣyate* (pass.)
+[R. 7,38,11.] mit loc. (vgl. 6): *yasminkoṣo balaṃ caiva tasmilloko 'nugacchati*
+[KĀM. NĪTIS. 5,61.] [Sp. 673, Z. 1] [KATHĀS. 1,8] hat *anugata* act. Bed.
+
+- **RU:** — *anu*
+ 1) *lakṣmaṇānuyātreṇa pṛṣṭhato 'nugamiṣyate* (pass.)
+[R. 7,38,11.] с loc. (vgl. 6): *yasminkoṣo balaṃ caiva tasmilloko 'nugacchati*
+[KĀM. NĪTIS. 5,61.] [Sp. 673, Z. 1] [KATHĀS. 1,8] имеет *anugata* act. Bed.
 - **EN:** — *anu*
  1) to go after, follow *lakṣmaṇānuyātreṇa pṛṣṭhato 'nugamiṣyate* (pass.)
+  <sub>attested</sub>
 
 **2)** [R. 7,38,11.] mit loc. (vgl. 6): *yasminkoṣo balaṃ caiva tasmilloko 'nugacchati*
 [KĀM. NĪTIS. 5,61.] [Sp. 673, Z. 1] [KATHĀS. 1,8] hat *anugata* act. Bed.
@@ -3491,7 +4577,16 @@ Sch. Vārtt. 2, Sch.
 [KĀM. NĪTIS. 5,61.] [Sp. 673, Z. 1] [KATHĀS. 1,8] has *anugata* act. Bed.
 
 **5)** — 5) *śatahradānāṃ lolatvaṃ śastrāṇāṃ tīkṣṇatāṃ tathā . garuḍānilayoḥ śaighryamanugacchanti (anukurvanti* v. l.) *yoṣitaḥ ..* ahmen nach
+[Spr. 5054.] — caus.
+ 1) *anurasitasya*
+v. l.
+
+- **RU:** — 5) *śatahradānāṃ lolatvaṃ śastrāṇāṃ tīkṣṇatāṃ tathā . garuḍānilayoḥ śaighryamanugacchanti (anukurvanti* v. l.) *yoṣitaḥ ..* подражать
+[Spr. 5054.] — caus.
+ 1) *anurasitasya*
+v. l.
 - **EN:** — 5) *śatahradānāṃ lolatvaṃ śastrāṇāṃ tīkṣṇatāṃ tathā . garuḍānilayoḥ śaighryamanugacchanti (anukurvanti* v. l.) *yoṣitaḥ ..* to imitate, follow the example of
+  <sub>attested</sub>
 
 **1b)** [Spr. 5054.] — caus.
  1) *anurasitasya*
@@ -3505,16 +4600,22 @@ v. l.
 `gam~~h2_06_vyapa`
 
 
-**1)** *vyapa*, *vyapagatalepa* gewichen, verschwunden
+**1)** — *vyapa*, *vyapagatalepa* gewichen, verschwunden
 [SARVADARŚANAS. 40,19.] verstreichen: *tasminvyapagate 'hani*
 [KATHĀS. 109,59.] Z. 5. fgg. streiche Von Sternen u. s. w. bis zum Schlusse, da an der angeführten Stelle (
 [40,4]) die richtige Lesart *vyayagatayoḥ* ist.
+
+- **RU:** — *vyapa*, *vyapagatalepa* отступивший, исчезнувший
+[SARVADARŚANAS. 40,19.] протекать, миновать (о времени): *tasminvyapagate 'hani*
+[KATHĀS. 109,59.] Z. 5. fgg. вычеркни «От звёзд» u. s. w. до конца, так как в указанном месте (
+[40,4]) верное чтение — *vyayagatayoḥ* .
 - **EN:** *vyapa*, *vyapagatalepa* departed, vanished
 [SARVADARŚANAS. 40,19.] to elapse, to pass (of time): *tasminvyapagate 'hani*
 [KATHĀS. 109,59.] Z. 5. fgg. delete from "Von Sternen" u. s. w. to the end, since at the cited passage (
 [40,4]) the correct reading is *vyayagatayoḥ*.
+  <sub>attested</sub>
 
-## gam (api-)
+## apigam
 
 `gam~~h2_07_api`
 
@@ -3522,14 +4623,23 @@ v. l.
 **2)** — *api*
  2) vgl. *yadvā me (retaḥ) apigacchati* in das Weib eingehen
 [ĀŚV. ŚR. 2,16,19.]
+
+- **RU:** — *api*
+ 2) vgl. *yadvā me (retaḥ) apigacchati* входить в женщину (совокупляться)
+[ĀŚV. ŚR. 2,16,19.]
 - **EN:** — *api*
  2) vgl. *yadvā me (retaḥ) apigacchati* to enter into the woman, i.e. to have intercourse with her
 [ĀŚV. ŚR. 2,16,19.]
+  <sub>attested</sub>
 
 **3)** — 3) zu Etwas gelangen, theilhaft werden *nānyathā hyapigacchanti* (so schreiben wir) *vṛttiṃ lokāḥ kathaṃ ca na*
 [MBH. 3,1213.]
+
+- **RU:** — 3) достигать чего-либо, становиться причастным (чему-либо) *nānyathā hyapigacchanti* (так мы пишем) *vṛttiṃ lokāḥ kathaṃ ca na*
+[MBH. 3,1213.]
 - **EN:** — 3) to arrive at something, become partaker of it *nānyathā hyapigacchanti* (thus we write it) *vṛttiṃ lokāḥ kathaṃ ca na*
 [MBH. 3,1213.]
+  <sub>attested</sub>
 
 ## abhigam
 
@@ -3539,29 +4649,46 @@ v. l.
 **1)** — *abhi*
  1) *nāvamanyedabhigatam* so v. a. den, der mit einer Bitte nahet,
 [Spr. 1557.] Z. 8 *abhigatvā* auch die [ed. Bomb.]
+
+- **RU:** — *abhi*
+ 1) *nāvamanyedabhigatam* так v. a. того, кто приближается с просьбой,
+[Spr. 1557.] Z. 8 *abhigatvā* также и [ed. Bomb.]
 - **EN:** — *abhi*
  1) *nāvamanyedabhigatam* thus v. a. one who approaches with a request,
 [Spr. 1557.] Z. 8 *abhigatvā* also the [ed. Bomb.]
+  <sub>attested</sub>
 
 **3)** — 3)
 [KĀṬH. 21,7.]
+
+- **RU:** — 3)
+[KĀṬH. 21,7.]
 - **EN:** — 3)
 [KĀṬH. 21,7.]
+  <sub>attested</sub>
 
 **5)** — 5) *ekārthaṃ samyaguddiśya kriyāṃ yatrābhigacchataḥ*
 [Spr. 3838.] der Schol. zu [KĀM. NĪTIS.] liest *ekārthāṃ* und *yātrāṃ* (das er mit *iddiśya* verbindet) st. *kriyām; abhigacchataḥ* erklärt er durch *udyacchataḥ* .
+
+- **RU:** — 5) *ekārthaṃ samyaguddiśya kriyāṃ yatrābhigacchataḥ*
+[Spr. 3838.] к Schol. к [KĀM. NĪTIS.] читает *ekārthāṃ* и *yātrāṃ* (которое он связывает с *iddiśya*) st. *kriyām; abhigacchataḥ* объясняет через *udyacchataḥ* .
 - **EN:** — 5) *ekārthaṃ samyaguddiśya kriyāṃ yatrābhigacchataḥ*
 [Spr. 3838.] who Schol. reads [KĀM. NĪTIS.] as *ekārthāṃ* and *yātrāṃ* (which he connects with *iddiśya*) st. *kriyām; abhigacchataḥ* he explains by *udyacchataḥ*.
+  <sub>lexicographic</sub>
 
 ## samabhigam
 
 `gam~~h2_09_sama_bi`
 
 
-**1)** *samabhi* sich (fleischlich) verbinden mit: *na ca yujyate 'nyarūpo dehenānena samabhigantumayam*
+**1)** — *samabhi* sich (fleischlich) verbinden mit: *na ca yujyate 'nyarūpo dehenānena samabhigantumayam*
+[KATHĀS. 119,202.]
+
+- **RU:** — *samabhi* соединяться (плотски) с: *na ca yujyate 'nyarūpo dehenānena samabhigantumayam*
 [KATHĀS. 119,202.]
 - **EN:** *samabhi* to unite oneself (carnally) with: *na ca yujyate 'nyarūpo dehenānena samabhigantumayam*
 [KATHĀS. 119,202.]
+  <sub>attested</sub>
 
 ## avagam
 
@@ -3571,11 +4698,21 @@ v. l.
 **2)** — *ava*
  2) *avagata* im Gegens. zu *aparuddha*
 [KĀṬH. 27,5. 28,1.]
+
+- **RU:** — *ava*
+ 2) *avagata* в Gegens. к *aparuddha*
+[KĀṬH. 27,5. 28,1.]
 - **EN:** — *ava*
  2) *avagata* to descend in the Gegens. to *aparuddha*
 [KĀṬH. 27,5. 28,1.]
+  <sub>attested</sub>
 
 **4)** — 4) *yo jīvāmītyavagacchati* wer der Meinung ist, dass er lebe,
+[Spr. 4264.] — caus.
+ 2)
+[SARVADARŚANAS. 29,12. 119,7.]
+
+- **RU:** — 4) *yo jīvāmītyavagacchati* тот, кто полагает, что он жив,
 [Spr. 4264.] — caus.
  2)
 [SARVADARŚANAS. 29,12. 119,7.]
@@ -3583,19 +4720,27 @@ v. l.
 [Spr. 4264.] — caus.
  2)
 [SARVADARŚANAS. 29,12. 119,7.]
+  <sub>attested</sub>
 
 **extra)** — Vgl. *avagati* fgg.
+
+- **RU:** — Vgl. *avagati* fgg.
 - **EN:** — Vgl. *avagati* fgg.
+  <sub>attested</sub>
 
 ## vyavagam
 
 `gam~~h2_11_vyava`
 
 
-**1)** *vyava* med. sich trennen
+**1)** — *vyava* med. sich trennen
+[KĀṬH. 27,5. 28,1.]
+
+- **RU:** — *vyava* med. разделяться, расставаться
 [KĀṬH. 27,5. 28,1.]
 - **EN:** *vyava* med. to separate, to part from one another
 [KĀṬH. 27,5. 28,1.]
+  <sub>attested</sub>
 
 ## āgam
 
@@ -3606,74 +4751,105 @@ v. l.
  1) *yadā tvavaśyaṃ yātavyaṃ sarvairdehibhirāgataiḥ* gekommen so v. a. zur Welt gekommen, geboren
 [Spr. 3027.] *tata āgataḥ* daher kommend, — stammend
 [P. 4,3,74.] Z. 2 lies *punaḥ — nayantu* st. *punaryantu* .
+
+- **RU:** — *ā* partic.
+ 1) *yadā tvavaśyaṃ yātavyaṃ sarvairdehibhirāgataiḥ* пришедший так v. a. явившийся на свет, рождённый
+[Spr. 3027.] *tata āgataḥ* происходящий оттуда, — родом оттуда
+[P. 4,3,74.] Z. 2 читай *punaḥ — nayantu* st. *punaryantu* .
 - **EN:** — *ā* partic.
  1) *yadā tvavaśyaṃ yātavyaṃ sarvairdehibhirāgataiḥ* come, arrived; thus v. a. come into the world, born
 [Spr. 3027.] *tata āgataḥ* coming from there, descended, derived
 [P. 4,3,74.] Z. 2 read *punaḥ — nayantu* st. *punaryantu*.
+  <sub>attested</sub>
 
 ## adhyāgam
 
 `gam~~h2_13_a_dy_a`
 
 
-**1)** *adhyā*,
+**1)** — *adhyā*,
 [MBH. 6,4538] hat die [ed. Bomb.] *nādhyagacchanta*; vgl. oben u. *adhi*
+[4]).
+
+- **RU:** — *adhyā*,
+[MBH. 6,4538] имеет [ed. Bomb.] *nādhyagacchanta*; vgl. выше u. *adhi*
 [4]).
 - **EN:** *adhyā*,
 [MBH. 6,4538] has the [ed. Bomb.] *nādhyagacchanta*; vgl. above u. *adhi*
 [4]).
+  <sub>attested</sub>
 
-## gam
+## anvāgam
 
 `gam~~h2_14_anv_a`
 
 
 **1)** — *anvā*, ˚*gata* mit act. Bed.
 [KATHĀS. 60,103.]
+
+- **RU:** — *anvā*, ˚*gata* с act. Bed.
+[KATHĀS. 60,103.]
 - **EN:** — *anvā*, ˚*gata* with act. Bed.
 [KATHĀS. 60,103.]
+  <sub>attested</sub>
 
-## gam
+## samabhyāgam
 
 `gam~~h2_15_sama_by_a`
 
 
 **1)** — *samabhyā*, *tvāṃ bho mānasa saṃsmaranpunarasau haṃsaḥ samabhyāgataḥ* zurückgekehrt
 [Spr. 4306.]
+
+- **RU:** — *samabhyā*, *tvāṃ bho mānasa saṃsmaranpunarasau haṃsaḥ samabhyāgataḥ* возвратившийся
+[Spr. 4306.]
 - **EN:** — *samabhyā*, *tvāṃ bho mānasa saṃsmaranpunarasau haṃsaḥ samabhyāgataḥ* having returned
 [Spr. 4306.]
+  <sub>attested</sub>
 
-## gam
+## abhyupāgam
 
 `gam~~h2_16_a_byup_a`
 
 
 **1)** — *abhyupā*, *atisnehavaśāttvāṃ ca vayaṃ sarve 'bhyupāgatāḥ*
 [KATHĀS. 107,62.]
+
+- **RU:** — *abhyupā*, *atisnehavaśāttvāṃ ca vayaṃ sarve 'bhyupāgatāḥ*
+[KATHĀS. 107,62.]
 - **EN:** — *abhyupā*, *atisnehavaśāttvāṃ ca vayaṃ sarve 'bhyupāgatāḥ*
 [KATHĀS. 107,62.]
+  <sub>attested</sub>
 
-## gam
+## paryupa+gam
 
 `gam~~h2_17_paryup_a`
 
 
 **1)** — *paryupā*, ˚*gatāḥ* um Jmd herum stehend
 [BHĀG. P. 10,65,5.]
+
+- **RU:** — *paryupā*, ˚*gatāḥ* «стоящий вокруг кого-либо»
+[BHĀG. P. 10,65,5.]
 - **EN:** — *paryupā*, ˚*gatāḥ* standing around someone
 [BHĀG. P. 10,65,5.]
+  <sub>attested</sub>
 
-## gam
+## nyā+gam
 
 `gam~~h2_18_ny_a`
 
 
 **1)** — *nyā* herabkommen zu
 [ṚV. 8,5,13.]
+
+- **RU:** — *nyā* «сойти, спуститься к»
+[ṚV. 8,5,13.]
 - **EN:** — *nyā* to come down to
 [ṚV. 8,5,13.]
+  <sub>attested</sub>
 
-## gam
+## paryā+gam
 
 `gam~~h2_19_pary_a`
 
@@ -3682,22 +4858,32 @@ v. l.
  1)
 Z. 6, *paryāgataḥ punaḥ*
 [MBH. 13,3496] bedeutet wieder in's Leben gekommen.
+
+- **RU:** — *paryā*
+ 1)
+Z. 6, *paryāgataḥ punaḥ*
+[MBH. 13,3496] означает «вновь пришедший в жизнь, воскресший».
 - **EN:** — *paryā*
  1)
 Z. 6, *paryāgataḥ punaḥ*
 [MBH. 13,3496] means having come back to life.
+  <sub>attested</sub>
 
-## gam
+## pratinyā+gam
 
 `gam~~h2_20_pratiny_a`
 
 
 **1)** — *pratinyā* zurückkehren
 [KĀṬH. 27,9.]
+
+- **RU:** — *pratinyā* «возвращаться»
+[KĀṬH. 27,9.]
 - **EN:** — *pratinyā* to return
 [KĀṬH. 27,9.]
+  <sub>attested</sub>
 
-## samāgam
+## samā+gam
 
 `gam~~h2_21_sam_a`
 
@@ -3706,30 +4892,44 @@ Z. 6, *paryāgataḥ punaḥ*
  1) *˚gamya* sich verbindend
 [ṚV. PRĀT. 16,4.] *śaśaṅko raviṇā samāgataḥ* in Conjunction stehend
 [VARĀH. BṚH. 5,6.]
+
+- **RU:** — *samā*
+ 1) *˚gamya* «соединяющийся»
+[ṚV. PRĀT. 16,4.] *śaśaṅko raviṇā samāgataḥ* «находящийся в соединении (астр. конъюнкции)»
+[VARĀH. BṚH. 5,6.]
 - **EN:** — *samā*
  1) *˚gamya* joining itself
 [ṚV. PRĀT. 16,4.] *śaśaṅko raviṇā samāgataḥ* standing in conjunction
 [VARĀH. BṚH. 5,6.]
+  <sub>attested</sub>
 
-## gam
+## ud+gam
 
 `gam~~h2_22_ud`
 
 
 **1)** — *ud*, *udgata* hinausgehend über (eine Zahl) so v. a. *abhyadhika*
 [WEBER, JYOT. 54. fg. 112.]
+
+- **RU:** — *ud*, *udgata* «превышающий, выходящий за пределы» (какое-либо число), так v. a. *abhyadhika*
+[WEBER, JYOT. 54. fg. 112.]
 - **EN:** — *ud*, *udgata* going beyond (a number), thus v. a. *abhyadhika*
 [WEBER, JYOT. 54. fg. 112.]
+  <sub>attested</sub>
 
-## gam
+## apoda+gam
 
 `gam~~h2_23_apod`
 
 
 **1)** — *apod* desid. sich losmachen wollen
 [AIT. BR. 6,34.]
+
+- **RU:** — *apod* desid. «желающий освободиться, вырваться»
+[AIT. BR. 6,34.]
 - **EN:** — *apod* desid. wishing to free oneself
 [AIT. BR. 6,34.]
+  <sub>attested</sub>
 
 ## upagam
 
@@ -3739,26 +4939,44 @@ Z. 6, *paryāgataḥ punaḥ*
 **1)** — *upa*
  1) *yopakartṝṃśca* (d. i. *ya upa˚) hantṝṃśca tejasaivopagacchati* Jmd mit Gewalt entgegentreten, Gewalt gegen Jmd gebrauchen
 [MBH. 3,1049.]
+
+- **RU:** — *upa*
+ 1) *yopakartṝṃśca* (d. i. *ya upa˚) hantṝṃśca tejasaivopagacchati* «выступить против кого-либо силой, применить силу против кого-либо»
+[MBH. 3,1049.]
 - **EN:** — *upa*
  1) *yopakartṝṃśca* (d. i. *ya upa˚) hantṝṃśca tejasaivopagacchati* to confront someone with force, to use force against someone
 [MBH. 3,1049.]
+  <sub>attested</sub>
 
 **5)** — 5)
 Z. 4 lies 9, 6 st. 9, 16.
+
+- **RU:** — 5)
+Z. 4 читай 9, 6 st. 9, 16.
 - **EN:** — 5)
 Z. 4 read 9, 6 st. 9, 16.
+  <sub>attested</sub>
 
 **6)** — 6) *anityatāmupagate citte*
 [Spr. 2590.]
+
+- **RU:** — 6) *anityatāmupagate citte*
+[Spr. 2590.]
 - **EN:** — 6) *anityatāmupagate citte*
 [Spr. 2590.]
+  <sub>attested</sub>
 
 **7c)** — 7)
+ c) *buddhiprayatnopagatādhyavasāya*
+[Spr. 1327.]
+
+- **RU:** — 7)
  c) *buddhiprayatnopagatādhyavasāya*
 [Spr. 1327.]
 - **EN:** — 7)
  c) *buddhiprayatnopagatādhyavasāya*
 [Spr. 1327.]
+  <sub>attested</sub>
 
 ## abhyupagam
 
@@ -3768,11 +4986,16 @@ Z. 4 read 9, 6 st. 9, 16.
 **1)** — *abhyupa*
  2)
 [SARVADARŚANAS. 30,12. 83,6. 113,18.]
+
+- **RU:** — *abhyupa*
+ 2)
+[SARVADARŚANAS. 30,12. 83,6. 113,18.]
 - **EN:** — *abhyupa*
  2)
 [SARVADARŚANAS. 30,12. 83,6. 113,18.]
+  <sub>attested</sub>
 
-## gam
+## samupa+gam
 
 `gam~~h2_26_samupa`
 
@@ -3780,9 +5003,14 @@ Z. 4 read 9, 6 st. 9, 16.
 **1)** — *samupa*
  2) *uparāgānte śaśinaḥ samupagatā rohiṇī yogam*
 [ŚĀK. 181.]
+
+- **RU:** — *samupa*
+ 2) *uparāgānte śaśinaḥ samupagatā rohiṇī yogam*
+[ŚĀK. 181.]
 - **EN:** — *samupa*
  2) *uparāgānte śaśinaḥ samupagatā rohiṇī yogam*
 [ŚĀK. 181.]
+  <sub>attested</sub>
 
 ## nigam
 
@@ -3807,6 +5035,25 @@ Z. 4 read 9, 6 st. 9, 16.
 [14,474] (S. 291). An zwei Stellen (
 [MBH. 6,3643.] [13,5501]) hat die v. l. richtig *nigacchati* . — caus. schliessen, folgern: *nigamayannāha*
 [CANDRAKĪRTI 41.]
+
+- **RU:** — *ni*
+ 3) «впасть в, достичь, стать причастным (чему-либо)»; часто st. *nigacchati, ˚nti* ошибочно *niyacchati, ˚nti* записывается: *astaṃ niyacchanti*
+[MAITRYUP. 6,14.] *anyo'nyakṛtavairāṇāṃ putrapautraṃ niyacchati . putrapautravināśe ca paralokaṃ niyacchati (vairam* (следует восполнить как subj.) *..*
+[MBH. 12,5159.] *ātmadoṣairniyacchanti sarve sukhaduḥkhe janāḥ*
+[1,3308.] *na ca doṣaṃ niyacchanti*
+[R. 5,87,21.] *prakṛtiṃ svām*
+[MBH. 13,2604.] *yoniṃ puruṣaḥ svāṃ niyacchati*
+[2605.] *siddhim*
+[M. 2,93.] [12,11.]
+[MĀRK. P. 43,81.] *vaiśyabhāvam*
+[M. 10,93.] *amaratvam*
+[MBH. 5,2473.] *lavaṇatvam*
+[6,3643.] *krakaratvam*
+[13,5501.] *brāhmaṇatvam*
+[6615.] *saṃbhūtatvam*
+[14,474] (S. 291). В двух местах (
+[MBH. 6,3643.] [13,5501]) v. l. правильно *nigacchati*. — caus. «заключать, делать вывод»: *nigamayannāha*
+[CANDRAKĪRTI 41.]
 - **EN:** — *ni*
  3) to fall into, to reach, to become possessed of; frequently written st. *nigacchati, ˚nti* erroneously *niyacchati, ˚nti*: *astaṃ niyacchanti*
 [MAITRYUP. 6,14.] *anyo'nyakṛtavairāṇāṃ putrapautraṃ niyacchati . putrapautravināśe ca paralokaṃ niyacchati (vairam* to be supplied as subj.) *..*
@@ -3825,28 +5072,37 @@ Z. 4 read 9, 6 st. 9, 16.
 [14,474] (S. 291). In two passages (
 [MBH. 6,3643.] [13,5501]) the v. l. correctly has *nigacchati*. — caus. to conclude, to infer: *nigamayannāha*
 [CANDRAKĪRTI 41.]
+  <sub>attested</sub>
 
-## gam
+## upani+gam
 
 `gam~~h2_28_upani`
 
 
 **1)** — *upani*
 [AIT. BR. 7,31.]
+
+- **RU:** — *upani*
+[AIT. BR. 7,31.]
 - **EN:** — *upani*
 [AIT. BR. 7,31.]
+  <sub>attested</sub>
 
-## gam
+## saṃni+gam
 
 `gam~~h2_29_sa_mni`
 
 
 **1)** — *saṃni*
 [ṚV. PRĀT. 11,23.]
+
+- **RU:** — *saṃni*
+[ṚV. PRĀT. 11,23.]
 - **EN:** — *saṃni*
 [ṚV. PRĀT. 11,23.]
+  <sub>attested</sub>
 
-## gam
+## nis+gam
 
 `gam~~h2_30_nis`
 
@@ -3855,21 +5111,33 @@ Z. 4 read 9, 6 st. 9, 16.
  1) hervortreten, zum Vorschein kommen: *nirjagāma kathaṃ yaśaḥ*
 [Spr. 3651.] *nirgata* hervortretend
 [H. 1034.]
+
+- **RU:** — *nis*
+ 1) «выступать вперёд, показываться, обнаруживаться»: *nirjagāma kathaṃ yaśaḥ*
+[Spr. 3651.] *nirgata* «выступающий вперёд»
+[H. 1034.]
 - **EN:** — *nis*
  1) to come forth, to come into view: *nirjagāma kathaṃ yaśaḥ*
 [Spr. 3651.] *nirgata* coming forth
 [H. 1034.]
+  <sub>attested</sub>
 
 **4)** — 4)
 [MBH. 3,15399] ist wohl *nigacchanti* zu lesen; dagegen ist *nirjagāma nidrām* er schlief ein
 [KATHĀS. 64,164] durch das Metrum gesichert. — caus. aufbrechen heissen
 [BHĀG. P. 10,71,13.]
+
+- **RU:** — 4)
+[MBH. 3,15399], по-видимому, следует читать как *nigacchanti*; напротив, *nirjagāma nidrām* «он заснул»
+[KATHĀS. 64,164] подтверждается размером стиха. — caus. «называться выступлением в путь»
+[BHĀG. P. 10,71,13.]
 - **EN:** — 4)
 [MBH. 3,15399] is probably to be read as *nigacchanti*; on the other hand *nirjagāma nidrām* he fell asleep
 [KATHĀS. 64,164] is secured by the metre. — caus. to be called to set out
 [BHĀG. P. 10,71,13.]
+  <sub>attested</sub>
 
-## gam
+## pari+gam
 
 `gam~~h2_31_pari`
 
@@ -3878,12 +5146,18 @@ Z. 4 read 9, 6 st. 9, 16.
  5) *jarā˚*
 [Spr. 217], v. l. Z. 4 [ŚĀNTIŚ. 4,7] gehört zu 4); vgl.
 [Spr. 1753.]
+
+- **RU:** — *pari*
+ 5) *jarā˚*
+[Spr. 217], v. l. Z. 4 [ŚĀNTIŚ. 4,7] относится к 4); vgl.
+[Spr. 1753.]
 - **EN:** — *pari*
  5) *jarā˚*
 [Spr. 217], v. l. Z. 4 [ŚĀNTIŚ. 4,7] belongs to 4); vgl.
 [Spr. 1753.]
+  <sub>attested</sub>
 
-## vigam
+## vi+gam
 
 `gam~~h2_32_vi`
 
@@ -3891,12 +5165,18 @@ Z. 4 read 9, 6 st. 9, 16.
 **1)** — *vi*
 - **EN:** — *vi*
 
-**2)** 2) *raṇavigata* vom Kampfe abstehend
+**2)** — *vi*
+ 2) *raṇavigata* vom Kampfe abstehend
+[R. 7,29,37.]
+
+- **RU:** — *vi*
+ 2) *raṇavigata* «отступающий от битвы, уклоняющийся от боя»
 [R. 7,29,37.]
 - **EN:** 2) *raṇavigata* "desisting from the fight"
 [R. 7,29,37.]
+  <sub>attested</sub>
 
-## samgam
+## sam+gam
 
 `gam~~h2_33_sam`
 
@@ -3904,39 +5184,63 @@ Z. 4 read 9, 6 st. 9, 16.
 **1)** — *sam*
 - **EN:** — *sam*
 
-**3)** 3) med. auch
+**3)** — *sam*
+ 3) med. auch
+[PAÑCAV. BR. 17,12,3. 5.]
+
+- **RU:** — *sam*
+ 3) med. также
 [PAÑCAV. BR. 17,12,3. 5.]
 - **EN:** 3) med. also
 [PAÑCAV. BR. 17,12,3. 5.]
+  <sub>attested</sub>
 
 **4)** — 4)
 [SARVADARŚANAS. 50,15. 101,19. 116,19. 117,9. 150,13.] *kāyakṣālanasaṃgata* sich eignend zu
 [Spr. 3564.] *asaṃgata* zu Jmd nicht passend
 [404.]
+
+- **RU:** — 4)
+[SARVADARŚANAS. 50,15. 101,19. 116,19. 117,9. 150,13.] *kāyakṣālanasaṃgata* «подходящий к, годный для»
+[Spr. 3564.] *asaṃgata* «не подходящий кому-либо»
+[404.]
 - **EN:** — 4)
 [SARVADARŚANAS. 50,15. 101,19. 116,19. 117,9. 150,13.] *kāyakṣālanasaṃgata* "suited to"
 [Spr. 3564.] *asaṃgata* "not fitting for someone"
 [404.]
+  <sub>attested</sub>
 
 **5)** — 5) *taṃ saṃgamya* nachdem er mit ihm zusammengekommen war
 [BHĀG. P. 10,68,19.] — caus.
+ 1) verbinden, construiren: *anyārthavantyapi padāni hṛdisthārthāgatyā arthāntare saṃgamayya*
+[SĀH. D. 132,7.]
+
+- **RU:** — 5) *taṃ saṃgamya* «после того как он с ним встретился, сошёлся»
+[BHĀG. P. 10,68,19.] — caus.
+ 1) «соединять, конструировать (грамматически связывать)»: *anyārthavantyapi padāni hṛdisthārthāgatyā arthāntare saṃgamayya*
+[SĀH. D. 132,7.]
 - **EN:** — 5) *taṃ saṃgamya* "after he had come together with him"
 [BHĀG. P. 10,68,19.] — caus.
+  <sub>attested</sub>
 
 **5.1)** 1) verbinden, construiren: *anyārthavantyapi padāni hṛdisthārthāgatyā arthāntare saṃgamayya*
 [SĀH. D. 132,7.]
 - **EN:** 1) "to join, construe (grammatically)": *anyārthavantyapi padāni hṛdisthārthāgatyā arthāntare saṃgamayya*
 [SĀH. D. 132,7.]
 
-## anusamgam
+## anusam+gam
 
 `gam~~h2_34_anusam`
 
 
 **1)** — *anusam* desid. nachfolgen wollen
 [AIT. BR. 2,36.]
+
+- **RU:** — *anusam* desid. «желающий последовать за, стремящийся сопровождать»
+[AIT. BR. 2,36.]
 - **EN:** — *anusam* desid. "wishing to follow after"
 [AIT. BR. 2,36.]
+  <sub>attested</sub>
 
 ## abhisamgam
 
@@ -4689,126 +5993,735 @@ Z. 14. fg. The passage [N. 12,20] is to be struck out, since here *saṃgatyā* 
 **T292)** — Mit *samā*
 - **EN:** — With *samā*
 
+**pw_193)** — Mit *apa* fortgehen, weichen, schwinden, — von (Abl.). *˚gata*
+
+- **RU:** — С *apa* уходить, отступать, исчезать — от (Abl.). *˚gata*
+  <sub>attested</sub>
+
+**pw_194_1)** — 1〉 fortgegangen, gewichen, geschwunden, abgekommen von (Abl. oder im Comp. vorangehend).
+
+- **RU:** — 1〉 ушедший, отступивший, исчезнувший, отставший от (Abl. или предшествующее в Comp.).
+  <sub>attested</sub>
+
+**pw_195_2)** — 2〉 *gestorben.
+
+- **RU:** — 2〉 *умерший.
+  <sub>attested</sub>
+
+**pw_196)** — Mit *vyapa* fortgehen, weichen, schwinden. *˚gata* fortgegangen, gewichen, geschwunden, verstrichen, gewichen von (Abl.).
+
+- **RU:** — С *vyapa* уходить, отступать, исчезать. *˚gata* ушедший, отступивший, исчезнувший, истёкший, отступивший от (Abl.).
+  <sub>attested</sub>
+
+**pw_197)** — Mit *api* und Acc.
+
+- **RU:** — С *api* и Acc.
+  <sub>attested</sub>
+
+**pw_198_1)** — 1〉 eingehen —, eintreten in, hingehen zu, betreten (einen Weg) [ṚV. 10,2,3] (mit vorangehendem *ā*). eingehen in, so v. a. sich auflösen in [ŚAṂK. zu BĀDAR. 2,1,9].
+
+- **RU:** — 1〉 входить —, вступать в, направляться к, вступать на (путь) [ṚV. 10,2,3] (с предшествующим *ā*). входить в, так v. a. растворяться в [ŚAṂK. zu BĀDAR. 2,1,9].
+  <sub>attested</sub>
+
+**pw_199_2)** — 2〉 gelangen zu, theilhaftig werden.
+
+- **RU:** — 2〉 достигать, становиться причастным.
+  <sub>attested</sub>
+
+**pw_200)** — Mit *abhi*
+
+- **RU:** — С *abhi*
+  <sub>attested</sub>
+
+**pw_201_1)** — 1〉 herbei-, herankommen, sich nähern, treten zu, kommen —, gehen zu oder nach; mit Acc. *˚gata*
+
+- **RU:** — 1〉 приходить, приближаться, подступать, подходить к, идти — к или в направлении; с Acc. *˚gata*
+  <sub>attested</sub>
+
+**pw_202_a)** — a〉 gekommen zu (Dat.), mit einer Bitte herangetreten.
+
+- **RU:** — a〉 пришедший к (Dat.), обратившийся с просьбой.
+  <sub>attested</sub>
+
+**pw_203_b)** — b〉 zu dem man gekommen ist, besucht.
+
+- **RU:** — b〉 к кому пришли, посещённый.
+  <sub>attested</sub>
+
+**pw_204_2)** — 2〉 heimkehren [GAUT.]
+
+- **RU:** — 2〉 возвращаться домой [GAUT.]
+  <sub>attested</sub>
+
+**pw_205_3)** — 3〉 Jmd (Acc.) folgen, nachgehen.
+
+- **RU:** — 3〉 следовать —, идти вслед за кем-л. (Acc.).
+  <sub>attested</sub>
+
+**pw_206_4)** — 4〉 Jmd (Acc.) finden, antreffen.
+
+- **RU:** — 4〉 находить —, заставать кого-л. (Acc.).
+  <sub>attested</sub>
+
+**pw_207_5)** — 5〉 fleischlich beiwohnen (von beiden Geschlechtern), mit Acc. [Spr. 7842].
+
+- **RU:** — 5〉 иметь плотскую связь (о обоих полах), с Acc. [Spr. 7842].
+  <sub>attested</sub>
+
+**pw_208_6)** — 6〉 sich machen an, sich hingeben. *cintām* [MBH. 9,42,10].
+
+- **RU:** — 6〉 приниматься за, предаваться. *cintām* [MBH. 9,42,10].
+  <sub>attested</sub>
+
+**pw_209_7)** — 7〉 erlangen, erwerben, theilhaftig werden. *nidrāmabhigataḥ* so v. a. eingeschlafen.
+
+- **RU:** — 7〉 обретать, приобретать, становиться причастным. *nidrāmabhigataḥ* так v. a. уснувший.
+  <sub>attested</sub>
+
+**pw_210_8)** — 8〉 mit *manasā, medhayā* oder *hṛdayena* erfassen, begreifen.
+
+- **RU:** — 8〉 с *manasā, medhayā* или *hṛdayena* постигать, понимать.
+  <sub>attested</sub>
+
+**pw_211)** — Caus. lernen, studiren.
+
+- **RU:** — Caus. учиться, изучать.
+  <sub>attested</sub>
+
+**pw_212)** — Mit *samabhi*
+
+- **RU:** — С *samabhi*
+  <sub>attested</sub>
+
+**pw_213_1)** — 1〉 herankommen.
+
+- **RU:** — 1〉 приближаться.
+  <sub>attested</sub>
+
+**pw_214_2)** — 2〉 sich fleischlich verbinden mit (Instr.).
+
+- **RU:** — 2〉 вступать в плотскую связь с (Instr.).
+  <sub>attested</sub>
+
+**pw_215)** — Mit *aram* gewärtig sein, erscheinen, sich darbieten; mit Dat.
+
+- **RU:** — С *aram* ожидаться, являться, представляться; с Dat.
+  <sub>attested</sub>
+
+**pw_216)** — Mit *ava*
+
+- **RU:** — С *ava*
+  <sub>attested</sub>
+
+**pw_217_1)** — 1〉 herabkommen zu (Acc. oder Loc.).
+
+- **RU:** — 1〉 нисходить к (Acc. или Loc.).
+  <sub>attested</sub>
+
+**pw_218_2)** — 2〉 her-, hinkommen zu, besuchen, sich begeben in, gerathen unter; mit Acc.
+
+- **RU:** — 2〉 приходить —, направляться к, посещать, отправляться в, попадать под; с Acc.
+  <sub>attested</sub>
+
+**pw_219_3)** — 3〉 erlangen.
+
+- **RU:** — 3〉 обретать.
+  <sub>attested</sub>
+
+**pw_220_4)** — 4〉 zu Etwas gelangen, reich oder mächtig werden [TS. 6,6,5,3.] [4].
+
+- **RU:** — 4〉 достигать чего-л., становиться богатым или могущественным [TS. 6,6,5,3.] [4].
+  <sub>attested</sub>
+
+**pw_221_5)** — 5〉 gehen an, unternehmen.
+
+- **RU:** — 5〉 приступать к, предпринимать.
+  <sub>attested</sub>
+
+**pw_222_6)** — 6〉 auf Etwas kommen, — verfallen, in Erfahrung bringen, erfahren von (Abl. [323,28]), bemerken, erkennen, errathen, verstehen, sich von Etwas überzeugen, überzeugt —, der Meinung sein, wissen (*avagacchant* wissentlich [107,29]). *avagata* mit act. und pass. Bed.
+
+- **RU:** — 6〉 доходить до чего-л., — приходить к, узнавать, разузнавать о (Abl. [323,28]), замечать, распознавать, угадывать, понимать, убеждаться в чём-л., быть убеждённым —, быть того мнения, знать (*avagacchant* сознательно [107,29]). *avagata* с act. и pass. Bed.
+  <sub>attested</sub>
+
+**pw_223_7)** — 7〉 erkennen für, halten, ansehen, wissen dass; mit zwei Acc. *na tathāsmi yathā māmavagacchasi* so v. a. ich bin nicht so, wie du glaubst. *avagata* mit act. Bed.
+
+- **RU:** — 7〉 признавать за, считать, полагать, знать, что; с двумя Acc. *na tathāsmi yathā māmavagacchasi* так v. a. я не таков, как ты полагаешь. *avagata* с act. Bed.
+  <sub>attested</sub>
+
+**pw_224_8)** — 8〉 *avagata* [Ind. St. 10,318] fehlerhaft für *apagata*.
+
+- **RU:** — 8〉 *avagata* [Ind. St. 10,318] ошибочно вместо *apagata*.
+  <sub>attested</sub>
+
+**pw_225)** — Caus.
+
+- **RU:** — Caus.
+  <sub>attested</sub>
+
+**pw_226_1)** — 1〉 herbeischaffen, verschaffen.
+
+- **RU:** — 1〉 доставлять, добывать.
+  <sub>attested</sub>
+
+**pw_227_2)** — 2〉 erfahren lassen, kennen lehren.
+
+- **RU:** — 2〉 давать узнать, учить познанию.
+  <sub>attested</sub>
+
+**pw_228)** — Mit *adhyava*, *˚gata* [Ind. St. 10,318] fehlerhaft für *vyapagata*; vgl. [Comm. zu SŪRYAS. 7,20,b. 21,a.]
+
+- **RU:** — С *adhyava*, *˚gata* [Ind. St. 10,318] ошибочно вместо *vyapagata*; vgl. [Comm. zu SŪRYAS. 7,20,b. 21,a.]
+  <sub>attested</sub>
+
+**pw_229)** — Mit *pratyava* genau kennen.
+
+- **RU:** — С *pratyava* точно знать.
+  <sub>attested</sub>
+
+**pw_230)** — Mit *vyava* Med. sich trennen.
+
+- **RU:** — С *vyava* Med. расставаться.
+  <sub>attested</sub>
+
+**pw_231)** — Mit *samava* vollständig kennen lernen.
+
+- **RU:** — С *samava* полностью познать.
+  <sub>attested</sub>
+
+**pw_232)** — Mit *ā*
+
+- **RU:** — С *ā*
+  <sub>attested</sub>
+
+**pw_233_1)** — 1〉 herbeikommen, sich einstellen, kommen, — von (Abl.), — zu, in oder nach, treten an oder zu; mit Acc. oder Loc. *iha* [78,20]. *atra* [151,19]. Mit nachfolgendem *accha* [ṚV. 7,18,4].
+
+- **RU:** — 1〉 приходить, являться, приходить — от (Abl.), — к, в или в направлении, вступать в или подступать к; с Acc. или Loc. *iha* [78,20]. *atra* [151,19]. С последующим *accha* [ṚV. 7,18,4].
+  <sub>attested</sub>
+
+**pw_234_2)** — 2〉 wiederkommen, zurückkehren. Gewöhnlich mit *punar* [21,27]. [29,25].
+
+- **RU:** — 2〉 приходить снова, возвращаться. Обычно с *punar* [21,27]. [29,25].
+  <sub>attested</sub>
+
+**pw_235_3)** — 3〉 zusammenkommen mit (Instr.) [MBH. 3,68,34].
+
+- **RU:** — 3〉 сходиться с (Instr.) [MBH. 3,68,34].
+  <sub>attested</sub>
+
+**pw_236_4)** — 4〉 erreichen, treffen, zu Theil werden. *adṛṣṭaṃ bhayaṃ tvāmāgamiṣyati* [39,1]. Mit vorangehendem *acchā* [ṚV. 8,929].
+
+- **RU:** — 4〉 достигать, попадать, доставаться в удел. *adṛṣṭaṃ bhayaṃ tvāmāgamiṣyati* [39,1]. С предшествующим *acchā* [ṚV. 8,929].
+  <sub>attested</sub>
+
+**pw_237_5)** — 5〉 in einen Zustand eingehen, — gerathen, sich hingeben.
+
+- **RU:** — 5〉 входить в некое состояние —, впадать в него, предаваться ему.
+  <sub>attested</sub>
+
+**pw_238)** — Partic. *agata* (s. auch bes.)
+
+- **RU:** — Partic. *agata* (s. также bes.)
+  <sub>attested</sub>
+
+**pw_239_1)** — 1〉 mit act. Bed.
+
+- **RU:** — 1〉 с act. Bed.
+  <sub>attested</sub>
+
+**pw_240_a)** — a〉 herbeigekommen, gekommen (auch von der Zeit), — in oder zu (Acc., Loc. oder im Comp. vorangehend). Auch in Comp. mit dem Orte woher.
+
+- **RU:** — a〉 пришедший (также о времени), — в или к (Acc., Loc. или предшествующее в Comp.). Также в Comp. с местом откуда.
+  <sub>attested</sub>
+
+**pw_241_b)** — b〉 zur Welt gekommen [Spr. 6533].
+
+- **RU:** — b〉 родившийся на свет [Spr. 6533].
+  <sub>attested</sub>
+
+**pw_242_c)** — c〉 zurückgekommen, wiedergekehrt. Gewöhnlich mit *punar*.
+
+- **RU:** — c〉 вернувшийся, возвратившийся. Обычно с *punar*.
+  <sub>attested</sub>
+
+**pw_243_d)** — d〉 am Ende eines Comp. angekommen, so v. a. angestossen.
+
+- **RU:** — d〉 достигший конца Comp., так v. a. примкнувший.
+  <sub>attested</sub>
+
+**pw_244_e)** — e〉 kommend —, stammend von (Abl.).
+
+- **RU:** — e〉 происходящий —, ведущий начало от (Abl.).
+  <sub>attested</sub>
+
+**pw_245_f)** — f〉 zugekommen, zugefallen. *māmāgataṃ tasya tadvacaḥ* so v. a. jenes Wort von ihm ist jetzt an mir in Erfüllung gegangen.
+
+- **RU:** — f〉 доставшийся, выпавший на долю. *māmāgataṃ tasya tadvacaḥ* так v. a. то его слово теперь на мне исполнилось.
+  <sub>attested</sub>
+
+**pw_246_g)** — g〉 zugetragen, sich eingestellt habend.
+
+- **RU:** — g〉 случившийся, наступивший.
+  <sub>attested</sub>
+
+**pw_247_h)** — h〉 gerathen in, theilhaftig geworden; mit Acc.
+
+- **RU:** — h〉 попавший в, ставший причастным; с Acc.
+  <sub>attested</sub>
+
+**pw_248_i)** — i〉 durch Berechnung herausgekommen, berechnet.
+
+- **RU:** — i〉 вычисленный, полученный расчётом.
+  <sub>attested</sub>
+
+**pw_249_2)** — 2〉 mit pass. Bed. durchlaufen (Weg).
+
+- **RU:** — 2〉 с pass. Bed. пройденный (путь).
+  <sub>attested</sub>
+
+**pw_250)** — Caus.
+
+- **RU:** — Caus.
+  <sub>attested</sub>
+
+**pw_251_1)** — 1〉 herbeikommen lassen, herbeiführen.
+
+- **RU:** — 1〉 заставлять прийти, приводить.
+  <sub>attested</sub>
+
+**pw_252_2)** — 2〉 *in der Erzählung herbeikommen lassen, Jmds Ankunft erzählen.
+
+- **RU:** — 2〉 *вводить в рассказ, повествовать о чьём-л. прибытии.
+  <sub>attested</sub>
+
+**pw_253_3)** — 3〉 Kunde von Etwas (Acc.) erhalten, — sich verschaffen [GOBH. 1,5,12]. (Med.). [CARAKA. 1,8].
+
+- **RU:** — 3〉 получать —, добывать себе весть о чём-л. (Acc.) [GOBH. 1,5,12]. (Med.). [CARAKA. 1,8].
+  <sub>attested</sub>
+
+**pw_254_4)** — 4〉 Etwas (Acc.) von Jmd (Abl.) lernen [222,10]. [RAGH. 10,72]. [Spr. 4213]. *āgamita* in Comp. mit dem Lehrer.
+
+- **RU:** — 4〉 учиться чему-л. (Acc.) у кого-л. (Abl.) [222,10]. [RAGH. 10,72]. [Spr. 4213]. *āgamita* в Comp. с учителем.
+  <sub>attested</sub>
+
+**pw_255_5)** — 5〉 Med. die Zeit kommen lassen, abwarten, sich gedulden.
+
+- **RU:** — 5〉 Med. дать времени прийти, выжидать, терпеливо ждать.
+  <sub>attested</sub>
+
+**pw_256)** — Desid. zu kommen wünschen nach (Acc.).
+
+- **RU:** — Desid. желать прихода к (Acc.).
+  <sub>attested</sub>
+
+**pw_257)** — Intens. (*āganīganti*) wiederholt sich nähern, mit Acc.
+
+- **RU:** — Intens. (*āganīganti*) неоднократно приближаться, с Acc.
+  <sub>attested</sub>
+
+**pw_258)** — Mit *adhyā* [235,1]. [2]. stossen auf, auffinden.
+
+- **RU:** — С *adhyā* [235,1]. [2]. наталкиваться на, обнаруживать.
+  <sub>attested</sub>
+
+**pw_259)** — Mit *anvā* hinter Jmd her kommen an einen Ort, nachfolgen, entlang gehen; mit Acc. *anvāgata* mit act. und pass. Bed. Vgl. *ananvāgata*.
+
+- **RU:** — С *anvā* приходить куда-л. вслед за кем-л., следовать, идти вдоль; с Acc. *anvāgata* с act. и pass. Bed. Vgl. *ananvāgata*.
+  <sub>attested</sub>
+
+**pw_260)** — Desid. (*˚jigāṃsati*) nachzufolgen beabsichtigen, mit Acc.
+
+- **RU:** — Desid. (*˚jigāṃsati*) намеревающийся последовать, с Acc.
+  <sub>attested</sub>
+
+**pw_261)** — Mit *samanvā*, *˚gata* (buddh.) begleitet von, versehen mit (instr. oder im Comp. vorangehend) [LALIT. 10,10. 15,6. 184,6]. [KĀRAṆḌ. 41,24. 52,17].
+
+- **RU:** — С *samanvā*, *˚gata* (buddh.) сопровождаемый —, снабжённый чем-л. (instr. или предшествующее в Comp.) [LALIT. 10,10. 15,6. 184,6]. [KĀRAṆḌ. 41,24. 52,17].
+  <sub>attested</sub>
+
+**pw_262)** — Mit *abhyā*
+
+- **RU:** — С *abhyā*
+  <sub>attested</sub>
+
+**pw_263_1)** — 1〉 herbeikommen, kommen —, treten zu, besuchen. *˚gata* herbeigekommen, gekommen (auch von der Zeit), — zu oder nach (Acc.) *poṣaṇābhyāgata* gekommen um sich zu mästen [MBH. 13,71,31]. *kramāt* so v. a. ererbt.
+
+- **RU:** — 1〉 приходить, приходить — к, вступать к, посещать. *˚gata* пришедший (также о времени), — к или в направлении (Acc.) *poṣaṇābhyāgata* пришедший, чтобы откормиться [MBH. 13,71,31]. *kramāt* так v. a. унаследованный.
+  <sub>attested</sub>
+
+**pw_264_2)** — 2〉 in einen Zustand —, in ein Verhältniss gerathen.
+
+- **RU:** — 2〉 впадать в некое состояние —, в некое отношение.
+  <sub>attested</sub>
+
+**pw_265)** — Mit *samabhyā* convenire [PRASANNAR. 14,3]. herbeikommen.
+
+- **RU:** — С *samabhyā* convenire [PRASANNAR. 14,3]. приходить.
+  <sub>attested</sub>
+
+**pw_266)** Mit *punar* zurückkehren.
+
+- **RU:** С *punar* возвращаться.
+  <sub>attested</sub>
+
+**pw_267)** — Mit *avā* unternehmen, anstellen [ṚV. 3,31,14].
+
+- **RU:** — С *avā* предпринимать, устраивать [ṚV. 3,31,14].
+  <sub>attested</sub>
+
+**pw_268)** — Mit *samudā*, *˚gata* am Ende eines Comp. etwa hervorragend in.
+
+- **RU:** — С *samudā*, *˚gata* в конце Comp. примерно выдающийся в.
+  <sub>attested</sub>
+
+**pw_269)** — Mit *upā*
+
+- **RU:** — С *upā*
+  <sub>attested</sub>
+
+**pw_270_1)** — 1〉 herbeikommen, hinzutreten, kommen zu oder nach (Acc. oder Loc.). *˚gata* herbeigekommen, gekommen (auch von einer Zeit [116,7]), — um sich unter Jmds Schutz zu stellen.
+
+- **RU:** — 1〉 приходить, подступать, приходить к или в направлении (Acc. или Loc.). *˚gata* пришедший (также о времени [116,7]), — чтобы отдаться под чью-л. защиту.
+  <sub>attested</sub>
+
+**pw_271_2)** — 2〉 zurückkehren.
+
+- **RU:** — 2〉 возвращаться.
+  <sub>attested</sub>
+
+**pw_272_3)** — 3〉 gehen an, sich hingeben.
+
+- **RU:** — 3〉 приступать к, предаваться.
+  <sub>attested</sub>
+
+**pw_273_4)** — 4〉 in einen Zustand treten, in ein Verhältniss treten, gerathen in.
+
+- **RU:** — 4〉 вступать в некое состояние, вступать, впадать в некое отношение.
+  <sub>attested</sub>
+
+**pw_274_5)** — 5〉 sich einstellen, zufallen, zu Theil werden.
+
+- **RU:** — 5〉 наступать, доставаться, выпадать на долю.
+  <sub>attested</sub>
+
+**pw_275)** — Mit *abhyupā*, *˚gata* gekommen zu oder in. *vyasanāya* so v. a. Unglück verheissend genaht (Schicksal) [R. GORR. 2,20,9].
+
+- **RU:** — С *abhyupā*, *˚gata* пришедший к или в. *vyasanāya* так v. a. приблизившийся, суля несчастье (о судьбе) [R. GORR. 2,20,9].
+  <sub>attested</sub>
+
+**pw_276)** — Mit *paryupā*, *˚gata* Pl. um Jmd herum stehend.
+
+- **RU:** — С *paryupā*, *˚gata* Pl. стоящий вокруг кого-л..
+  <sub>attested</sub>
+
+**pw_277)** — Mit *samupā*
+
+- **RU:** — С *samupā*
+  <sub>attested</sub>
+
+**pw_278_1)** — 1〉 herbeikommen, kommen zu oder nach, treten zu; mit Acc. *˚gata* herbeigekommen, gekommen (auch von der Zeit), gekommen zu oder nach.
+
+- **RU:** — 1〉 приходить, приходить к или в направлении, подступать; с Acc. *˚gata* пришедший (также о времени), пришедший к или в направлении.
+  <sub>attested</sub>
+
+**pw_279_2)** — 2〉 treffen, erreichen. *˚gata* mit act. Bed.
+
+- **RU:** — 2〉 попадать, достигать. *˚gata* с act. Bed.
+  <sub>attested</sub>
+
+**pw_280_3)** — 3〉 in einen Zustand —, in ein Verhältniss treten, gerathen in.
+
+- **RU:** — 3〉 вступать в некое состояние —, впадать в некое отношение.
+  <sub>attested</sub>
+
+**pw_281)** — Mit *nyā* herabkommen zu.
+
+- **RU:** — С *nyā* нисходить к.
+  <sub>attested</sub>
+
+**pw_282)** — Mit *pratinyā* zu rückkehren.
+
+- **RU:** — С *pratinyā* возвращаться.
+  <sub>attested</sub>
+
+**pw_283)** — Mit *paryā* einen Umgang halten. — *paryāgata*
+
+- **RU:** — С *paryā* поддерживать общение. — *paryāgata*
+  <sub>attested</sub>
+
+**pw_284_1)** — 1〉 den Kreislauf vollendet habend, abgelaufen.
+
+- **RU:** — 1〉 завершивший круговорот, истёкший.
+  <sub>attested</sub>
+
+**pw_285_2)** — 2〉 inveteratus [MBH. 5,48,89].
+
+- **RU:** — 2〉 inveteratus [MBH. 5,48,89].
+  <sub>attested</sub>
+
+**pw_286_3)** — 3〉 wieder inʼs Leben gekommen.
+
+- **RU:** — 3〉 вновь вернувшийся к жизни.
+  <sub>attested</sub>
+
+**pw_287_4)** — 4〉 umstrickt —, in der Gewalt stehend von (im Comp. vorangehend).
+
+- **RU:** — 4〉 опутанный —, находящийся во власти (предшествующее в Comp.).
+  <sub>attested</sub>
+
+**pw_288)** — Mit *pratyā*
+
+- **RU:** — С *pratyā*
+  <sub>attested</sub>
+
+**pw_289_1)** — 1〉 zurück-, wiederkehren, — von (Abl. [291,15]), — zu (Acc.).
+
+- **RU:** — 1〉 возвращаться, — от (Abl. [291,15]), — к (Acc.).
+  <sub>attested</sub>
+
+**pw_290_2)** — 2〉 wieder zu sich selbst kommen, seine Besinnung wiedererlangen.
+
+- **RU:** — 2〉 приходить в себя, вновь обретать сознание.
+  <sub>attested</sub>
+
+**pw_291)** — Mit *saṃpratyā* zurückkehren.
+
+- **RU:** — С *saṃpratyā* возвращаться.
+  <sub>attested</sub>
+
+**pw_292)** — Mit *samā*
+
+- **RU:** — С *samā*
+  <sub>attested</sub>
+
 ## gam
 
 `gam~~h0_zz_pw02`
 
 
 **1)** — 1〉 zusammenkommen, zusammentreffen, sich verbinden, zusammenkommen bei (Loc.), zusammenkommen —, zusammenstossen mit (*saha, sārdham* oder Instr. allein), sich geschlechtlich verbinden mit (Instr.); von Sternen so v. a. in eine solche Stellung kommen, dass der eine Stern den andern verdeckt. *saṃgamaṃ parasparam* eine Verbindung unter einander eingehen. *samāgata* zusammengekommen, versammelt, vereint, — mit (Instr.), zusammengestossen mit (Instr.), in Conjunction stehend mit (Instr.).
+
+- **RU:** — 1) сходиться, встречаться, соединяться, сходиться у (Loc.), сходиться —, сталкиваться с (*saha, sārdham* или Instr. одно), вступать в половую связь с (Instr.); о звёздах так v. a. приходить в такое положение, что одна звезда закрывает другую. *saṃgamaṃ parasparam* вступать во взаимную связь. *samāgata* сошедшийся, собравшийся, объединённый — с (Instr.), столкнувшийся с (Instr.), находящийся в соединении с (Instr.).
 - **EN:** — 1) to come together, meet, unite, come together at (Loc.); to come together with —, collide with (*saha, sārdham* or Instr. alone); to have sexual union with (Instr.); of stars, similarly v. a. to come into such a position that one star eclipses the other. *saṃgamaṃ parasparam* to enter into a connection with one another. *samāgata* come together, assembled, united — with (Instr.); collided with (Instr.); standing in conjunction with (Instr.).
+  <sub>attested</sub>
 
 **2)** — 2〉 herbeikommen, kommen, kommen zu; mit Acc. oder ([179,25]).
+
+- **RU:** — 2) приходить, идти, приходить к; с Acc. или ([179,25]).
 - **EN:** — 2) to come up, come, come to; with Acc. or ([179,25]).
+  <sub>attested</sub>
 
 **3)** — 3〉 zurückkehren [110,12]. von (Abl.). [150,15].
+
+- **RU:** — 3) возвращаться [110,12]. от (Abl.). [150,15].
 - **EN:** — 3) to return [110,12]; from (Abl.). [150,15].
+  <sub>attested</sub>
 
 **4)** — 4〉 stossen auf, finden; mit Acc.
+
+- **RU:** — 4) наталкиваться на, находить; с Acc.
 - **EN:** — 4) to come upon, find; with Acc.
+  <sub>attested</sub>
 
 **caus)** — Caus. Jmd (Acc.) zusammenführen —, zusammenbringen mit (Instr. oder Loc.).
+
+- **RU:** — Caus. кого-л. (Acc.) сводить —, соединять с (Instr. или Loc.).
 - **EN:** — Caus. to bring someone (Acc.) together with —, unite with (Instr. or Loc.).
+  <sub>attested</sub>
 
 **abhi-1)** — Mit *abhisamā*
 — 1〉 zusammen herbeikommen.
+
+- **RU:** — С *abhisamā*
+— 1) сходиться вместе.
 - **EN:** — With *abhisamā*
 — 1) to come together.
+  <sub>attested</sub>
 
 **abhi-2)** — 2〉 kommen zu (Acc.).
+
+- **RU:** — 2) приходить к (Acc.).
 - **EN:** — 2) to come to (Acc.).
+  <sub>attested</sub>
 
 **ud-1)** — Mit *ud*
 — 1〉 in die Höhe gehen, aufgehen (von Gestirnen [314,4]), sich erheben, aufschiessen.
+
+- **RU:** — С *ud*
+— 1) подниматься, всходить (о светилах [314,4]), возноситься, вздыматься.
 - **EN:** — With *ud*
 — 1) to rise upward, rise (of heavenly bodies [314,4]), to lift oneself up, shoot up.
+  <sub>attested</sub>
 
 **ud-2)** — 2〉 hervorkommen, -brechen, zum Vorschein kommen. *udgata* hervorgekommen, — aus, hervorkommend aus (Abl. oder im Comp. vorangehend) [Spr. 7795]. zum Vorschein gekommen [Chr. 308,21].
+
+- **RU:** — 2) появляться, пробиваться, показываться. *udgata* появившийся, — из, появляющийся из (Abl. или в Comp., предшествующем) [Spr. 7795]. показавшийся [Chr. 308,21].
 - **EN:** — 2) to come forth, break forth, come into view. *udgata* come forth from —, coming forth from (Abl., or preceding in the Comp.) [Spr. 7795]; come into view [Chr. 308,21].
+  <sub>attested</sub>
 
 **ud-3)** — 3〉 hinaus-, fortgehen, schwinden.
+
+- **RU:** — 3) уходить прочь, исчезать.
 - **EN:** — 3) to go out, go away, vanish.
+  <sub>attested</sub>
 
 **ud-4)** — 4〉 sich ausbreiten, — verbreiten *udgata* weit verbreitet.
+
+- **RU:** — 4) распространяться, — расширяться *udgata* широко распространённый.
 - **EN:** — 4) to spread out, spread abroad *udgata* widely spread.
+  <sub>attested</sub>
 
 **ud-5)** — 5〉 **udgata* vomirt.
+
+- **RU:** — 5) **udgata* вырвано, извергнуто рвотой.
 - **EN:** — 5) **udgata* vomited.
+  <sub>lexicographic</sub>
 
 **ud-caus-1)** — Caus.
 — 1〉 aufgehen lassen (die Sonne) [MAHĀBH. 3,28,a.]
+
+- **RU:** — Caus.
+— 1) заставлять восходить (солнце) [MAHĀBH. 3,28,a.]
 - **EN:** — Caus.
 — 1) to make rise (the sun) [MAHĀBH. 3,28,a.]
+  <sub>attested</sub>
 
 **ud-caus-2)** — 2〉 hervorkommen lassen. *uroruhātpayāṃsi* Milch aus der Brust saugen [Spr. 7774].
+
+- **RU:** — 2) заставлять появляться. *uroruhātpayāṃsi* высасывать молоко из груди [Spr. 7774].
 - **EN:** — 2) to make come forth. *uroruhātpayāṃsi* to suck milk from the breast [Spr. 7774].
+  <sub>attested</sub>
 
 **ud-des)** — Mit *apod* Desid. (*˚jigāṃsati*) sich zu entziehen suchen, mit Abl. [22,2].
+
+- **RU:** — С *apod* Desid. (*˚jigāṃsati*) пытаться уклониться, с Abl. [22,2].
 - **EN:** — With *apod* Desid. (*˚jigāṃsati*) to seek to withdraw oneself, with Abl. [22,2].
+  <sub>attested</sub>
 
 **upa-1)** — Mit *abhyud*
 — 1〉 aufgehen (vom Monde) [314,7].
+
+- **RU:** — С *abhyud*
+— 1) восходить (о луне) [314,7].
 - **EN:** — With *abhyud*
 — 1) to rise (of the moon) [314,7].
+  <sub>attested</sub>
 
 **upa-2)** — 2〉 hinaus und Jmd (Acc.) entgegen gehen.
+
+- **RU:** — 2) выходить и идти навстречу кому-л. (Acc.).
 - **EN:** — 2) to go out and toward someone (Acc.), to go to meet.
+  <sub>attested</sub>
 
 **upa-3)** — 3〉 sich ausbreiten, — verbreiten.
+
+- **RU:** — 3) распространяться, — расширяться.
 - **EN:** — 3) to spread out, spread abroad.
+  <sub>attested</sub>
 
 **upa-4)** — 4〉 *˚abhyudgata* erhaben über [LALIT. 69,10].
+
+- **RU:** — 4) *˚abhyudgata* возвышенный над [LALIT. 69,10].
 - **EN:** — 4) *˚abhyudgata* elevated above [LALIT. 69,10].
+  <sub>attested</sub>
 
 **sam-ud)** — Mit *prod* hervorragen.
+
+- **RU:** — С *prod* выситься, выделяться.
 - **EN:** — With *prod* to stand out, project.
+  <sub>attested</sub>
 
 **pra-1)** — Mit *pratyud*
 — 1〉 hinaus und Jmd entgegen gehen (zur Bewillkommnung oder in feindlicher Absicht). *pratyudgata* mit act. und pass. Bed.
+
+- **RU:** — С *pratyud*
+— 1) выходить и идти навстречу кому-л. (для приветствия или с враждебным намерением). *pratyudgata* с act. и pass. Bed.
 - **EN:** — With *pratyud*
 — 1) to go out and toward someone (for welcome or with hostile intent). *pratyudgata* with act. and pass. Bed.
+  <sub>attested</sub>
 
 **pra-2)** — 2〉 wieder herauskommen, — zum Vorschein kommen [PRASANNAR. 146,14].
+
+- **RU:** — 2) вновь выходить, — показываться [PRASANNAR. 146,14].
 - **EN:** — 2) to come out again —, come into view [PRASANNAR. 146,14].
+  <sub>attested</sub>
 
 **pra-3)** — 3〉 sich aufmachen, nach, proficisci; mit Acc. oder Loc. [KĀRAṆḌ. 45,10. 47,11. 49,8].
+
+- **RU:** — 3) отправляться, к, proficisci; с Acc. или Loc. [KĀRAṆḌ. 45,10. 47,11. 49,8].
 - **EN:** — 3) to set out, toward, proficisci; with Acc. or Loc. [KĀRAṆḌ. 45,10. 47,11. 49,8].
+  <sub>attested</sub>
 
 **vi-1)** — Mit *samud*
 — 1〉 hervorkommen, hervorbrechen.
+
+- **RU:** — С *samud*
+— 1) появляться, пробиваться.
 - **EN:** — With *samud*
 — 1) to come forth, break forth.
+  <sub>attested</sub>
 
 **vi-2)** — 2〉 *samudgata* begonnen (die Glieder im Comp. verstellt) [LALIT. 8,8].
+
+- **RU:** — 2) *samudgata* начатый (члены сложного слова в Comp. переставлены) [LALIT. 8,8].
 - **EN:** — 2) *samudgata* begun (the limbs displaced in the Comp.) [LALIT. 8,8].
+  <sub>attested</sub>
 
 **sam-1)** — Mit *upa*
 — 1〉 hinzu-, herbeikommen, herankommen an, hinzutreten zu, hingehen —, gelangen zu, besuchen; mit Acc. oder Dat. (ausnahmsweise). *upagata* auch der sich in Jmds Schutz begeben hat.
+
+- **RU:** — С *upa*
+— 1) подходить, приходить, приближаться к, приступать к, идти —, достигать, посещать; с Acc. или Dat. (в виде исключения). *upagata* также тот, кто отдался под чью-л. защиту.
 - **EN:** — With *upa*
 — 1) to come up to —, approach, draw near to, step up to, go to —, arrive at, visit; with Acc. or Dat. (exceptionally). *upagata* also one who has taken refuge in someone's protection.
+  <sub>attested</sub>
 
 **sam-2)** — 2〉 Jmd (Acc.) feindlich entgegentreten, herfallen über. *adhrameṇa* Jmd übel begegnen.
+
+- **RU:** — 2) выступать против кого-л. враждебно, нападать на (Acc.). *adhrameṇa* дурно обходиться с кем-л..
 - **EN:** — 2) to confront someone (Acc.) with hostility, fall upon. *adhrameṇa* to treat someone badly.
+  <sub>attested</sub>
 
 **sam-3)** — 3〉 feindlich zusammenstossen mit (instr.) [ṚV. 1,53,9].
+
+- **RU:** — 3) враждебно сталкиваться с (instr.) [ṚV. 1,53,9].
 - **EN:** — 3) to clash with in hostility (instr.) [ṚV. 1,53,9].
+  <sub>attested</sub>
 
 **sam-4)** — 4〉 inire (feminam).
+
+- **RU:** — 4) inire (feminam).
 - **EN:** — 4) inire (feminam).
+  <sub>attested</sub>
 
 **sam-5)** — 5〉 erreichen, treffen, widerfahren, begegnen, zu Theil werden; mit Acc. *upagata* zu Theil geworden [MBH. 13,57,40]. [Spr. 45].
+
+- **RU:** — 5) достигать, встречать, случаться, попадаться, доставаться в удел; с Acc. *upagata* доставшийся в удел [MBH. 13,57,40]. [Spr. 45].
 - **EN:** — 5) to reach, hit, befall, encounter, fall to one's share; with Acc. *upagata* fallen to one's share [MBH. 13,57,40]. [Spr. 45].
+  <sub>attested</sub>
 
 **sam-6)** — 6〉 einen best. Standpunct erreichen (von Sternen).
+
+- **RU:** — 6) достигать best. положения (о звёздах).
 - **EN:** — 6) to reach a best. position (of stars).
+  <sub>attested</sub>
 
 **sam-7)** — 7〉 an Etwas gehen, unternehmen.
+
+- **RU:** — 7) приступать к чему-л., предпринимать.
 - **EN:** — 7) to set about something, undertake.
+  <sub>attested</sub>
 
 **sam-8)** — 8〉 in einen Zustand —, in ein Verhältniss treten, verfallen in, erlangen, theilhaftig werden. *upagata* mit Acc. oder am Ende eines Comp.
+
+- **RU:** — 8) в состояние —, в отношение вступать, впадать в, обретать, становиться причастным. *upagata* с Acc. или в конце Comp.
 - **EN:** — 8) to enter into a state —, into a relation, fall into, attain, partake of. *upagata* with Acc. or at the end of a Comp.
+  <sub>attested</sub>
 
 **sam-9)** — 9〉 Jmd erwählen zu; mit zwei Acc.
+
+- **RU:** — 9) избирать кого-л. кем-л.; с двумя Acc.
 - **EN:** — 9) to choose someone as; with two Acc.
+  <sub>attested</sub>
 
 **sam-ppp)** — *upagata*
 — 1〉 *angrenzend, in der Nähe befindlich.
@@ -4822,125 +6735,234 @@ Z. 14. fg. The passage [N. 12,20] is to be struck out, since here *saṃgatyā* 
 — 4) conceded, granted, acknowledged.
 
 **sam-caus)** — Caus. herbeikommen lassen.
+
+- **RU:** — Caus. заставлять приходить.
 - **EN:** — Caus. to make come up.
+  <sub>attested</sub>
 
 **sam-des)** — Desid. (*˚jigamiṣati*) zu wandeln begehren.
+
+- **RU:** — Desid. (*˚jigamiṣati*) желать шествовать.
 - **EN:** — Desid. (*˚jigamiṣati*) to desire to walk.
+  <sub>attested</sub>
 
 **abhi-sam-1)** — Mit *abhyupa*
 — 1〉 herbeikommen, hinzugehen, treten zu, gehen zu oder nach (Acc.).
+
+- **RU:** — С *abhyupa*
+— 1) приходить, подходить, приближаться к, идти к или в (Acc.).
 - **EN:** — With *abhyupa*
 — 1) to come up, go up to, step up to, go to or toward (Acc.).
+  <sub>attested</sub>
 
 **abhi-sam-2)** — 2〉 Jmd (Acc.) zu Hülfe kommen.
+
+- **RU:** — 2) приходить на помощь кому-л. (Acc.).
 - **EN:** — 2) to come to someone's (Acc.) aid.
+  <sub>attested</sub>
 
 **abhi-sam-3)** — 3〉 gehen —, sich machen an (Dat.).
+
+- **RU:** — 3) приступать —, браться за (Dat.).
 - **EN:** — 3) to go to —, set about (Dat.).
+  <sub>attested</sub>
 
 **abhi-sam-4)** — 4〉 zu einem best. Zeitpunkt (Acc.) gelangen.
+
+- **RU:** — 4) до best. момента времени (Acc.) доходить.
 - **EN:** — 4) to arrive at a best. point in time (Acc.).
+  <sub>attested</sub>
 
 **abhi-sam-5)** — 5〉 Etwas (Acc.) erlangen, theilhaftig werden. *abhyupagata* mit act. Bed.
+
+- **RU:** — 5) что-л. (Acc.) обретать, становиться причастным. *abhyupagata* с act. Bed.
 - **EN:** — 5) to attain, partake of something (Acc.). *abhyupagata* with act. Bed.
+  <sub>attested</sub>
 
 **abhi-sam-6)** — 6〉 sich für Etwas erklären, zugestehen, zugeben, einräumen, einwilligen in (Acc.). [327,24].
+
+- **RU:** — 6) высказываться за что-л., соглашаться, признавать, допускать, изъявлять согласие на (Acc.). [327,24].
 - **EN:** — 6) to declare oneself for something, admit, grant, concede, consent to (Acc.). [327,24].
+  <sub>attested</sub>
 
 **abhi-sam-caus)** — Caus. Jmd (Acc.) zur Einwilligung bewegen.
+
+- **RU:** — Caus. побуждать кого-л. (Acc.) к согласию.
 - **EN:** — Caus. to move someone (Acc.) to consent.
+  <sub>attested</sub>
 
 **upa-sam-1)** — Mit *samupa*
 — 1〉 herbeikommen, hinzutreten zu (Acc.).
+
+- **RU:** — С *samupa*
+— 1) приходить, приближаться к (Acc.).
 - **EN:** — With *samupa*
 — 1) to come up, step up to (Acc.).
+  <sub>attested</sub>
 
 **upa-sam-2)** — 2〉 in einen Zustand —, in ein Verhältniss treten.
+
+- **RU:** — 2) в состояние —, в отношение вступать.
 - **EN:** — 2) to enter into a state —, into a relation.
+  <sub>attested</sub>
 
 **ni-1)** — Mit *ni*
 — 1〉 sich niederlassen auf oder bei (Acc. oder Loc.).
+
+- **RU:** — С *ni*
+— 1) садиться, опускаться на или у (Acc. или Loc.).
 - **EN:** — With *ni*
 — 1) to settle down upon or at (Acc. or Loc.).
+  <sub>attested</sub>
 
 **ni-2)** — 2〉 sich einstellen.
+
+- **RU:** — 2) наступать, являться.
 - **EN:** — 2) to present oneself, set in.
+  <sub>attested</sub>
 
 **ni-3)** — 3〉 inire (feminam).
+
+- **RU:** — 3) inire (feminam).
 - **EN:** — 3) inire (feminam).
+  <sub>attested</sub>
 
 **ni-4)** — 4〉 gerathen an oder in, gelangen zu, theilhaftig werden. Häufig *˚gacchati* und *˚gacchanti* herzustellen für *˚yacchati* und *˚yacchanti*.
+
+- **RU:** — 4) попадать в или к, достигать, становиться причастным. Часто *˚gacchati* и *˚gacchanti* следует восстанавливать вместо *˚yacchati* и *˚yacchanti*.
 - **EN:** — 4) to fall upon or into, arrive at, partake of. Often *˚gacchati* and *˚gacchanti* to be restored for *˚yacchati* and *˚yacchanti*.
+  <sub>attested</sub>
 
 **ni-5)** — 5〉 eintreten, sich einfügen.
-- **EN:** — 5) to enter, insert oneself.
 
-**ni-caus)** — Caus.
-— 1〉 einsetzen, einfügen.
-— 2〉 schliessen, er-, folgern.
+- **RU:** — 5) вступать, включаться.
+- **EN:** — 5) to enter, insert oneself.
+  <sub>attested</sub>
+
+**ni-caus)** — Caus. Jmd (Acc.) zur Einwilligung bewegen.
+
+- **RU:** — Caus. побуждать кого-л. (Acc.) к согласию.
 - **EN:** — Caus.
 — 1) to insert, put in.
 — 2) to conclude, infer.
+  <sub>attested</sub>
 
 **prati-ni)** — Mit *upani* stossen —, treffen auf, gerathen in.
+
+- **RU:** — С *upani* наталкиваться —, попадать на, впадать в.
 - **EN:** — With *upani* to come upon —, hit upon, fall into.
+  <sub>attested</sub>
 
 **sam-ni)** — Mit *saṃni* zusammentreffen, zusammenkommen mit (Instr.).
+
+- **RU:** — С *saṃni* встречаться, сходиться с (Instr.).
 - **EN:** — With *saṃni* to meet, come together with (Instr.).
+  <sub>attested</sub>
 
 **misc-1)** — Mit *vini* Caus. in *˚gamaka*.
+
+- **RU:** — С *vini* Caus. в *˚gamaka*.
 - **EN:** — With *vini* Caus. into *˚gamaka*.
+  <sub>attested</sub>
 
 **nis-1)** — Mit *nis*
 — 1〉 hinausgehen, — treten, hervorkommen, von Hause gehen, aufbrechen; das Woher im Abl., das Wohin im Acc. oder Loc. *nirgata* hinausgegangen, hinausgehend u. s. w.; das Wohin im Abl. oder im Comp. vorangehend ([183,31]). Oefters mit pleonastischem *bahis*.
+
+- **RU:** — С *nis*
+— 1) выходить, — выступать, появляться, уходить из дома, отправляться; откуда — в Abl., куда — в Acc. или Loc. *nirgata* вышедший, выходящий u. s. w.; куда — в Abl. или в Comp., предшествующем ([183,31]). Нередко с плеонастическим *bahis*.
 - **EN:** — With *nis*
 — 1) to go out —, step out, come forth, leave the house, set out; the whence in the Abl., the whither in the Acc. or Loc. *nirgata* gone out, going out u. s. w.; the whither in the Abl. or preceding in the Comp. ([183,31]). Often with pleonastic *bahis*.
+  <sub>attested</sub>
 
 **nis-2)** — 2〉 hervortreten, -brechen, zum Vorschein kommen.
+
+- **RU:** — 2) выступать, — пробиваться, показываться.
 - **EN:** — 2) to step forth, break forth, come into view.
+  <sub>attested</sub>
 
 **nis-3)** — 3〉 fortgehen, so v. a. schwinden.
+
+- **RU:** — 3) уходить, так v. a. исчезать.
 - **EN:** — 3) to go away, thus v. a. to vanish.
+  <sub>attested</sub>
 
 **nis-4)** — 4〉 befreit werden von (Abl.).
+
+- **RU:** — 4) освобождаться от (Abl.).
 - **EN:** — 4) to be freed from (Abl.).
+  <sub>attested</sub>
 
 **nis-5)** — 5〉 gerathen in, theilhaftig werden. *nidrām* so v. a. einschlafen.
+
+- **RU:** — 5) впадать в, становиться причастным. *nidrām* так v. a. засыпать.
 - **EN:** — 5) to fall into, partake of. *nidrām* thus v. a. to fall asleep.
+  <sub>attested</sub>
 
 **nis-caus)** — Caus. aufbrechen heissen.
+
+- **RU:** — Caus. побуждать отправиться.
 - **EN:** — Caus. to bid set out.
+  <sub>attested</sub>
 
 **nis-des)** — Desid. (*˚jigamiṣate*) hinauszutreten begehren; das Woher im Abl., das Wohin im Loc.
+
+- **RU:** — Desid. (*˚jigamiṣate*) желать выйти; откуда — в Abl., куда — в Loc.
 - **EN:** — Desid. (*˚jigamiṣate*) to desire to step out; the whence in the Abl., the whither in the Loc.
+  <sub>attested</sub>
 
 **apa-nis)** — Mit *abhinis* hinausgehen aus, sich entfernen von (Abl.).
+
+- **RU:** — С *abhinis* выходить из, удаляться от (Abl.).
 - **EN:** — With *abhinis* to go out from, depart from (Abl.).
+  <sub>attested</sub>
 
 **vinis-1)** — Mit *vinis*
 — 1〉 hinausgehen, -treten, hervorkommen, aus dem Hause gehen, fortgehen, aufbrechen; das Woher im Abl., das Wohin im Acc. *vinirgata* hinausgegangen, herauskommend, -tretend, hervor-. [107,4].
+
+- **RU:** — С *vinis*
+— 1) выходить, -выступать, появляться, уходить из дома, уходить, отправляться; откуда — в Abl., куда — в Acc. *vinirgata* вышедший, выходящий, выступающий, появляющийся. [107,4].
 - **EN:** — With *vinis*
 — 1) to go out, step out, come forth, leave the house, go away, set out; the whence in the Abl., the whither in the Acc. *vinirgata* gone out, coming out, stepping out, forth-. [107,4].
+  <sub>attested</sub>
 
 **vinis-2)** — 2〉 sich entfernen (von Sternen), weichen.
+
+- **RU:** — 2) удаляться (о звёздах), отступать.
 - **EN:** — 2) to withdraw (of stars), yield.
+  <sub>attested</sub>
 
 **vinis-3)** — 3〉 sich losmachen —, sich befreien von (Abl.).
+
+- **RU:** — 3) освобождаться —, избавляться от (Abl.).
 - **EN:** — 3) to free oneself —, become free from (Abl.).
+  <sub>attested</sub>
 
 **vinis-4)** — 4〉 ausser sich gerathen.
+
+- **RU:** — 4) приходить в исступление, выходить из себя.
 - **EN:** — 4) to fall beside oneself.
+  <sub>attested</sub>
 
 **prativinis)** — Mit *saṃnis* hinausgehen, aufbrechen.
+
+- **RU:** — С *saṃnis* выходить, отправляться.
 - **EN:** — With *saṃnis* to go out, set out.
+  <sub>attested</sub>
 
 **para-1)** — Mit *parā*
 — 1〉 weg-, entgehen, entweichen.
+
+- **RU:** — С *parā*
+— 1) уходить прочь, ускользать, спасаться бегством.
 - **EN:** — With *parā*
 — 1) to go away —, escape, slip away.
+  <sub>attested</sub>
 
 **para-2)** — 2〉 hingehen, abscheiden.
+
+- **RU:** — 2) уходить, преставляться.
 - **EN:** — 2) to depart, pass away.
+  <sub>attested</sub>
 
 **para-3)** — 3〉 *parāgata*
 — a〉 gekommen, angelangt [KĀD. 2,102,13].
@@ -4950,27 +6972,95 @@ Z. 14. fg. The passage [N. 12,20] is to be struck out, since here *saṃgatyā* 
 — b) filled —, full of (preceding in the Comp.).
 
 **anupara)** — Mit *anuparā* einem Entweichenden (Acc.) nachgehen [MAITR. S. 1,8,9].
+
+- **RU:** — С *anuparā* преследовать ускользающего (Acc.) [MAITR. S. 1,8,9].
 - **EN:** — With *anuparā* to follow one who is escaping (Acc.) [MAITR. S. 1,8,9].
+  <sub>attested</sub>
 
 **pari-1)** — Mit *pari*
 — 1〉 umhergehen, umwandeln, umschreiten, umkreisen, durchwandern. *˚gata* durchwandert. [89,19]
+
+- **RU:** — С *pari*
+— 1) обходить кругом, обращаться вокруг, обходить, окружать, странствовать по. *˚gata* исхоженный. [89,19]
 - **EN:** — With *pari*
 — 1) to go about, walk around, circumambulate, circle, wander through. *˚gata* wandered through. [89,19]
+  <sub>attested</sub>
 
 **pari-2)** — 2〉 umschliessen, umgeben. *˚gata* am Ende eines Comp. umschlossen —, umgeben von.
+
+- **RU:** — 2) окружать, обступать. *˚gata* в конце Comp. окружённый —, обступленный.
 - **EN:** — 2) to enclose, surround. *˚gata* at the end of a Comp. enclosed —, surrounded by.
+  <sub>attested</sub>
 
 **pari-3)** — 3〉 sich nach allen Seiten verbreiten *˚gata* weit verbreitet.
+
+- **RU:** — 3) распространяться во все стороны *˚gata* широко распространённый.
 - **EN:** — 3) to spread out on all sides *˚gata* widely spread.
+  <sub>attested</sub>
 
 **pari-4)** — 4〉 dahingehen, abscheiden. *˚gata* gestorben.
+
+- **RU:** — 4) уходить, преставляться. *˚gata* умерший.
 - **EN:** — 4) to pass on, depart (die). *˚gata* died.
+  <sub>attested</sub>
 
 **pari-5)** — 5〉 in einen Zustand übergehen, theilhaftig werden, erlangen.
+
+- **RU:** — 5) в состояние переходить, становиться причастным, обретать.
 - **EN:** — 5) to pass over into a state, partake of, attain.
+  <sub>attested</sub>
 
 **pari-final)** — *parigata*
+
+- **RU:** — *parigata*
 - **EN:** — *parigata*
+  <sub>attested</sub>
+
+**prati-ppp)** — *upagata*
+— 1〉 *angrenzend, in der Nähe befindlich.
+
+- **RU:** — *upagata*
+— 1) *сопредельный, находящийся поблизости.
+  <sub>lexicographic</sub>
+
+**prati-ppp-2)** — 2〉 *heimgegangen, todt.
+
+- **RU:** — 2) *преставившийся, мёртвый.
+  <sub>lexicographic</sub>
+
+**prati-ppp-3)** — 3〉 versehen mit. *hemnā* so v. a. in Gold gefasst. *baddhiprayatnopagata* begleitet von [Spr. 3134].
+
+- **RU:** — 3) снабжённый. *hemnā* так v. a. оправленный в золото. *baddhiprayatnopagata* сопровождаемый [Spr. 3134].
+  <sub>attested</sub>
+
+**prati-ppp-4)** — 4〉 eingeräumt, zugestanden, anerkannt.
+
+- **RU:** — 4) допущенный, уступленный, признанный.
+  <sub>attested</sub>
+
+**sam-a-caus)** — Caus.
+— 1〉 einsetzen, einfügen.
+
+- **RU:** — Caus.
+— 1) вставлять, включать.
+  <sub>attested</sub>
+
+**sam-a-caus-2)** — 2〉 schliessen, er-, folgern.
+
+- **RU:** — 2) заключать, выводить.
+  <sub>attested</sub>
+
+**ati-nir-3a)** — 3〉 *parāgata*
+— a〉 gekommen, angelangt [KĀD. 2,102,13].
+
+- **RU:** — 3) *parāgata*
+— a) пришедший, прибывший [KĀD. 2,102,13].
+  <sub>attested</sub>
+
+**ati-nir-3b)** — b〉 erfüllt —, voll von (im Comp. vorangehend).
+
+- **RU:** — b) исполненный —, полный (в Comp., предшествующем).
+  <sub>attested</sub>
 
 ## gam
 
@@ -4978,64 +7068,121 @@ Z. 14. fg. The passage [N. 12,20] is to be struck out, since here *saṃgatyā* 
 
 
 **1)** — 1〉 (umgeben) erfüllt —, in Besitz genommen —, heimgesucht von, behaftet mit (Instr. oder im Comp. vorangehend).
+
+- **RU:** — 1) (окружённый) исполненный —, охваченный —, поражённый, обременённый (Instr. или в Comp., предшествующем).
 - **EN:** — 1) (surrounded) filled —, taken possession of —, visited by, afflicted with (Instr. or preceding in the Comp.).
+  <sub>attested</sub>
 
 **2)** — 2〉 erfahren, erlebt [BĀLAR. 91,22].
+
+- **RU:** — 2) испытанный, пережитый [BĀLAR. 91,22].
 - **EN:** — 2) experienced, undergone [BĀLAR. 91,22].
+  <sub>attested</sub>
 
 **3)** — 3〉 kennen gelernt, erlernt von (Abl.) [BĀLAR. 225,13].
+
+- **RU:** — 3) познанный, изученный кем-л. (Abl.) [BĀLAR. 225,13].
 - **EN:** — 3) become acquainted with, learned from (Abl.) [BĀLAR. 225,13].
+  <sub>attested</sub>
 
 **4)** — 4〉 gekannt.
+
+- **RU:** — 4) известный.
 - **EN:** — 4) known.
+  <sub>attested</sub>
 
 **5)** — 5〉 *vergessen.
+
+- **RU:** — 5) *забытый.
 - **EN:** — 5) *forgotten.
+  <sub>lexicographic</sub>
 
 **6)** — 6〉 *= *ceṣṭita*
+
+- **RU:** — 6) *= *ceṣṭita*
 - **EN:** — 6) *= *ceṣṭita*
+  <sub>lexicographic</sub>
 
 **caus)** — Caus. eine Zeit (Acc.) verbringen.
+
+- **RU:** — Caus. время (Acc.) проводить.
 - **EN:** — Caus. to spend a time (Acc.).
+  <sub>attested</sub>
 
 **pra-1)** — Mit *pra*
 — 1〉 aufbrechen, hingehen zu (Acc. oder Loc.). Mit folgendem *antar* hineindringen in (Acc.) [ṚV. 10,42,8]
+
+- **RU:** — С *pra*
+— 1) отправляться, идти к (Acc. или Loc.). Со следующим *antar* проникать в (Acc.) [ṚV. 10,42,8]
 - **EN:** — With *pra*
 — 1) to set out, go to (Acc. or Loc.). With following *antar* to penetrate into (Acc.) [ṚV. 10,42,8]
+  <sub>attested</sub>
 
 **pra-2)** — 2〉 schreiten zu, gehen an (Acc.).
+
+- **RU:** — 2) приступать к, браться за (Acc.).
 - **EN:** — 2) to proceed to, go about (Acc.).
+  <sub>attested</sub>
 
 **pra-3)** — 3〉 gelangen zu, theilhaftig werden [ṚV. 8,8,10].
+
+- **RU:** — 3) достигать, становиться причастным [ṚV. 8,8,10].
 - **EN:** — 3) to arrive at, partake of [ṚV. 8,8,10].
+  <sub>attested</sub>
 
 **pra-4)** — 4〉 **pragata* auseinanderstehend.
+
+- **RU:** — 4) **pragata* стоящий врозь.
 - **EN:** — 4) **pragata* standing apart.
+  <sub>lexicographic</sub>
 
 **vipra)** — Mit *vipra* auseinandergehen, sich zerstreuen.
+
+- **RU:** — С *vipra* расходиться, рассеиваться.
 - **EN:** — With *vipra* to go apart, disperse.
+  <sub>attested</sub>
 
 **prati-1)** — Mit *prati*
 — 1〉 entgegenkommen [ṚV. 5,41,18]. entgegengehen.
+
+- **RU:** — С *prati*
+— 1) идти навстречу [ṚV. 5,41,18]. выходить навстречу.
 - **EN:** — With *prati*
 — 1) to come to meet [ṚV. 5,41,18]; to go to meet.
+  <sub>attested</sub>
 
 **prati-2)** — 2〉 zurück-, heimkehren, — nach oder in (Acc.).
+
+- **RU:** — 2) возвращаться, — домой, — в или к (Acc.).
 - **EN:** — 2) to return —, come home —, to or into (Acc.).
+  <sub>attested</sub>
 
 **prati-3)** — 3〉 *˚gata* dem Gedächtniss entschwunden.
+
+- **RU:** — 3) *˚gata* исчезнувший из памяти.
 - **EN:** — 3) *˚gata* vanished from memory.
+  <sub>attested</sub>
 
 **apa-1)** — Mit *vi*
 — 1〉 auseinandergehen.
+
+- **RU:** — С *vi*
+— 1) расходиться.
 - **EN:** — With *vi*
 — 1) to go apart.
+  <sub>attested</sub>
 
 **apa-2)** — 2〉 weggehen; vergehen, verstreichen, verschwinden. *vigata* am Anfange eines adj. Comp. verschwunden, gewichen.
+
+- **RU:** — 2) уходить прочь; проходить, протекать, исчезать. *vigata* в начале adj. Comp. исчезнувший, отступивший.
 - **EN:** — 2) to go away; pass, elapse, vanish. *vigata* at the beginning of a adj. Comp. vanished, yielded.
+  <sub>attested</sub>
 
 **apa-3)** — 3〉 abstehen von. *raṇavigata* vom Kampfe abstehend.
+
+- **RU:** — 3) отступаться от. *raṇavigata* отступающий от боя.
 - **EN:** — 3) to desist from. *raṇavigata* desisting from battle.
+  <sub>attested</sub>
 
 **apa-ppp)** — *vigata*
 — 1〉 hingegangen, gestorben.
@@ -5045,36 +7192,62 @@ Z. 14. fg. The passage [N. 12,20] is to be struck out, since here *saṃgatyā* 
 — 2) *lustreless. Vgl. *vidūra vigata*
 
 **apa-caus)** — Caus. verbringen (eine Zeit).
+
+- **RU:** — Caus. проводить (время).
 - **EN:** — Caus. to spend (a time).
+  <sub>attested</sub>
 
 **vyapa)** — Mit *pravi*, *˚gata* verschwunden, gewichen.
+
+- **RU:** — С *pravi*, *˚gata* исчезнувший, отступивший.
 - **EN:** — With *pravi*, *˚gata* vanished, yielded.
+  <sub>attested</sub>
 
 **sam-1a)** — Mit *sam*
 — 1〉 Med. (ausnahmsweise auch Act.)
 — a〉 zusammenkommen, -treffen, zusammenkommen —, sich vereinigen —, sich verbinden mit (Instr. oder Instr. mit *saha* oder *sārdham*). Von freundlichem, feindlichem und geschlechtlichem Zusammenkommen. *kulasaṃgata* so v. a. ein Bekannter der Familie [GAUT. 17,6].
+
+- **RU:** — С *sam*
+— 1) Med. (в виде исключения также Act.)
+— a) сходиться, -встречаться, сходиться —, соединяться —, связываться с (Instr. или Instr. с *saha* или *sārdham*). О дружеском, враждебном и половом сближении. *kulasaṃgata* так v. a. знакомый семьи [GAUT. 17,6].
 - **EN:** — With *sam*
 — 1) Med. (exceptionally also Act.)
 — a) to come together, meet —, come together with —, unite with —, join with (Instr. or Instr. with *saha* or *sārdham*). Of friendly, hostile, and sexual coming-together. *kulasaṃgata* thus v. a. an acquaintance of the family [GAUT. 17,6].
+  <sub>attested</sub>
 
 **sam-1b)** — b〉 zusammenkommen —, sich einfinden bei (Loc.).
+
+- **RU:** — b) сходиться —, являться, собираться у (Loc.).
 - **EN:** — b) to come together —, present oneself at (Loc.).
+  <sub>attested</sub>
 
 **sam-1c)** — c〉 theilhaftig werden, mit Instr. [ṚV. 5,42,18. 7,81,2].
+
+- **RU:** — c) становиться причастным, с Instr. [ṚV. 5,42,18. 7,81,2].
 - **EN:** — c) to partake of, with Instr. [ṚV. 5,42,18. 7,81,2].
+  <sub>attested</sub>
 
 **sam-1d)** — d〉 abscheiden, sterben.
+
+- **RU:** — d) преставляться, умирать.
 - **EN:** — d) to depart, die.
+  <sub>attested</sub>
 
 **sam-1e)** — e〉 zusammenpassen, zutreffen, entsprechen. *saṃgata* zutreffend, übereinstimmend mit (im Comp. vorangehend zu [Spr. 1539]).
+
+- **RU:** — e) соответствовать, совпадать, отвечать. *saṃgata* соответствующий, согласующийся с (в Comp., предшествующем к [Spr. 1539]).
 - **EN:** — e) to fit together, apply, correspond. *saṃgata* applicable, agreeing with (preceding in the Comp. to [Spr. 1539]).
+  <sub>attested</sub>
 
 **sam-1f)** — f〉 mit Acc.
 — α〉 zusammentreffen mit (nur *saṃgamya*).
-— β〉 in ein Verhältniss eingehen. *viśrambham* Vertrauen fassen.
+
+- **RU:** — f) с Acc.
+— α) сходиться с (только *saṃgamya*).
 - **EN:** — f) with Acc.
 — α) to meet with (only *saṃgamya*).
 — β) to enter into a relation. *viśrambham* to conceive trust.
+  <sub>attested</sub>
 
 **sam-2)** — 2〉 *Act. mit Acc.
 — a〉 gehen nach, besuchen.
@@ -5084,60 +7257,141 @@ Z. 14. fg. The passage [N. 12,20] is to be struck out, since here *saṃgatyā* 
 — b) to have carnal intercourse with.
 
 **sam-3)** — 3〉 *samgata* eingeschrumpft. Statt *saṃgatam* [R. 3,25,7] liest [ed. Bomb. 3,19,10] besser *samgatāḥ* zusammengekommen.
+
+- **RU:** — 3) *samgata* сморщенный, съёжившийся. Вместо *saṃgatam* [R. 3,25,7] [ed. Bomb. 3,19,10] читает лучше *samgatāḥ* сошедшийся.
 - **EN:** — 3) *samgata* shrunk. Instead of *saṃgatam* [R. 3,25,7] [ed. Bomb. 3,19,10] reads better *samgatāḥ* come together.
+  <sub>attested</sub>
 
 **sam-caus-1)** — Caus.
 — 1〉 zusammenbringen, zusammenbringen —, -führen —, verbinden mit (Instr.).
+
+- **RU:** — Caus.
+— 1) сводить, сводить —, приводить —, соединять с (Instr.).
 - **EN:** — Caus.
 — 1) to bring together, bring together —, lead together —, unite with (Instr.).
+  <sub>attested</sub>
 
 **sam-caus-2)** — 2〉 verbinden, so v. a. construiren.
+
+- **RU:** — 2) соединять, так v. a. конструировать (грамматически).
 - **EN:** — 2) to connect, thus v. a. to construct.
+  <sub>attested</sub>
 
 **sam-caus-3)** — 3〉 hinführen zu, mit zwei Acc.
+
+- **RU:** — 3) приводить к, с двумя Acc.
 - **EN:** — 3) to lead to, with two Acc.
+  <sub>attested</sub>
 
 **sam-caus-4)** — 4〉 übergehen lassen auf (Loc.), übergeben.
+
+- **RU:** — 4) передавать на (Loc.), вручать.
 - **EN:** — 4) to let pass over to (Loc.), hand over.
+  <sub>attested</sub>
 
 **sam-caus-5)** — 5〉 tödten (nach [NĪLAK.]) [MBH. 5,142,9].
+
+- **RU:** — 5) убивать (по [NĪLAK.]) [MBH. 5,142,9].
 - **EN:** — 5) to kill (according to [NĪLAK.]) [MBH. 5,142,9].
+  <sub>attested</sub>
 
 **sam-des-1)** — *Desid.
 — 1〉 *saṃjigaṃsate* zusammenkommen wollen mit (Loc.).
+
+- **RU:** — *Desid.
+— 1) *saṃjigaṃsate* желать сойтись с (Loc.).
 - **EN:** — *Desid.
 — 1) *saṃjigaṃsate* to wish to come together with (Loc.).
+  <sub>lexicographic</sub>
 
 **sam-des-2)** — 2〉 ved. *saṃjigāṃsati* gelangen wollen nach (Acc.).
+
+- **RU:** — 2) ved. *saṃjigāṃsati* желать достичь (Acc.).
 - **EN:** — 2) ved. *saṃjigāṃsati* to wish to arrive at (Acc.).
+  <sub>attested</sub>
 
 **anusam-des)** — Mit *anusam* Desid. (*˚jigamiṣati*) nachfolgen wollen.
+
+- **RU:** — С *anusam* Desid. (*˚jigamiṣati*) желать последовать.
 - **EN:** — With *anusam* Desid. (*˚jigamiṣati*) to wish to follow.
+  <sub>attested</sub>
 
 **abhisam-1)** — Mit *abhisam*
 — 1〉 zusammen herbeikommen, — zu (Acc.).
+
+- **RU:** — С *abhisam*
+— 1) вместе сходиться, — к (Acc.).
 - **EN:** — With *abhisam*
 — 1) to come together —, to (Acc.).
+  <sub>attested</sub>
 
 **abhisam-2)** — 2〉 zusammenkommen mit (Instr.). *˚abhisaṃgata* im Verein mit.
+
+- **RU:** — 2) сходиться с (Instr.). *˚abhisaṃgata* в соединении с.
 - **EN:** — 2) to come together with (Instr.). *˚abhisaṃgata* in union with.
+  <sub>attested</sub>
 
 **abhisam-3)** — 3〉 zusammen bewillkommnen.
+
+- **RU:** — 3) вместе приветствовать.
 - **EN:** — 3) to welcome together.
+  <sub>attested</sub>
 
 **upasam-1)** — Mit *upasam*
 — 1〉 zusammen herbeikommen, zu (Acc.).
+
+- **RU:** — С *upasam*
+— 1) вместе сходиться, к (Acc.).
 - **EN:** — With *upasam*
 — 1) to come together, to (Acc.).
+  <sub>attested</sub>
 
 **upasam-2)** — 2〉 hinzutreten —, sich gesellen zu (Acc.).
+
+- **RU:** — 2) присоединяться —, приобщаться к (Acc.).
 - **EN:** — 2) to step up to —, join oneself to (Acc.).
+  <sub>attested</sub>
 
 **upasam-3)** — 3〉 sich verbinden. *mithunāyopasaṃgatau* im Beischlaf begriffen.
+
+- **RU:** — 3) соединяться. *mithunāyopasaṃgatau* находящийся в соитии.
 - **EN:** — 3) to unite oneself. *mithunāyopasaṃgatau* engaged in intercourse.
+  <sub>attested</sub>
 
 **upasam-4)** — 4〉 in einen Zustand —, in ein Verhältniss treten.
+
+- **RU:** — 4) в состояние —, в отношение вступать.
 - **EN:** — 4) to enter into a state —, into a relation.
+  <sub>attested</sub>
+
+**vi-a2-ppp-1)** — *vigata*
+— 1〉 hingegangen, gestorben.
+
+- **RU:** — *vigata*
+— 1) ушедший, умерший.
+  <sub>attested</sub>
+
+**vi-a2-ppp-2)** — 2〉 *glanzlos. Vgl. *vidūra vigata*
+
+- **RU:** — 2) *тусклый, без блеска. Vgl. *vidūra vigata*
+  <sub>lexicographic</sub>
+
+**sam-1f-beta)** — β〉 in ein Verhältniss eingehen. *viśrambham* Vertrauen fassen.
+
+- **RU:** — β) в отношение вступать. *viśrambham* проникаться доверием.
+  <sub>attested</sub>
+
+**sam-2a)** — 2〉 *Act. mit Acc.
+— a〉 gehen nach, besuchen.
+
+- **RU:** — 2) *Act. с Acc.
+— a) идти к, посещать.
+  <sub>lexicographic</sub>
+
+**sam-2b)** — b〉 fleischlich beiwohnen.
+
+- **RU:** — b) вступать в плотскую связь.
+  <sub>lexicographic</sub>
 
 ## gam
 
@@ -5145,23 +7399,37 @@ Z. 14. fg. The passage [N. 12,20] is to be struck out, since here *saṃgatyā* 
 
 
 **abhyud-1)** √*gam*¦ mit *abhyud* 1〉 *abhyudgata* aufgegangen (Sonne) [VAJRACCH. 32,17].
+
+- **RU:** √*gam*¦ с *abhyud* 1) *abhyudgata* взошедшее (солнце) [VAJRACCH. 32,17].
 - **EN:** √*gam* with *abhyud* 1) *abhyudgata* risen (sun) [VAJRACCH. 32,17].
+  <sub>attested</sub>
 
 **nis-zukommen)** √*gam*¦ mit *abhi* Caus. auch zukommen lassen [SĀY. zu ṚV. 9,1,4].
 — Mit *nis* Caus. auch verlieren, einbüssen [CAMPAKA 396]. [484].
+
+- **RU:** √*gam*¦ с *abhi* Caus. также давать причитаться [SĀY. zu ṚV. 9,1,4].
+— С *nis* Caus. также терять, лишаться [CAMPAKA 396]. [484].
 - **EN:** √*gam* with *abhi* Caus. also to let accrue to, grant [SĀY. zu ṚV. 9,1,4].
 — With *nis* Caus. also to lose, forfeit [CAMPAKA 396]. [484].
+  <sub>attested</sub>
 
 **upanis-block)** √*gam*¦ mit *abhi* Caus. II. 5.
 — Mit *ā* II. *āgamya* Absol. so v. a. für, behufs; mit Acc. [DIVYĀVAD. 95,10]. mit Gen. [405,10].
 — Mit *abhyud* II. 3.
 — Mit *nis* Caus. II. 5.
 — Mit *upanis* hinausgehen zu (Acc.) [JĀTAKAM. 31].
+
+- **RU:** √*gam*¦ с *abhi* Caus. II. 5.
+— С *ā* II. *āgamya* Absol. так v. a. для, ради; с Acc. [DIVYĀVAD. 95,10]. с Gen. [405,10].
+— С *abhyud* II. 3.
+— С *nis* Caus. II. 5.
+— С *upanis* выходить к (Acc.) [JĀTAKAM. 31].
 - **EN:** √*gam* with *abhi* Caus. II. 5.
 — With *ā* II. *āgamya* Absol. thus v. a. for, for the sake of; with Acc. [DIVYĀVAD. 95,10]; with Gen. [405,10].
 — With *abhyud* II. 3.
 — With *nis* Caus. II. 5.
 — With *upanis* to go out to (Acc.) [JĀTAKAM. 31].
+  <sub>attested</sub>
 
 ## gam
 
@@ -5171,16 +7439,55 @@ Z. 14. fg. The passage [N. 12,20] is to be struck out, since here *saṃgatyā* 
 **abhi)** gam¦ mit abhi [Kaus.] auch: zukommen lassen, [Sāy.] zu [ṚV. 9,1,4.] -Mit ā, āgamya Absol. so v.a. für, behufs; mit Akk. [Divyāvad. 95,10]; mit Gen. 405,10. — Mit ˚parā "die"? [Harṣac. 243,3; 252,9.] — Mit abhyud 1. abhyudgata aufgegangen (Sonne), [Vajracch. 32,17.] — Mit nis [Kaus.] auch: verlieren, einbüßen, Campaka 396. 484. — Mit upanis hinausgehen zu (Akk.), [Jātakam. 31.] {part=,seq=12313,type=,n=11}
 - **EN:** gam with abhi [Kaus.] also: to let accrue, grant, [Sāy.] to [ṚV. 9,1,4.]. — With ā, āgamya absol. so v. a. for, for the sake of; with Acc. [Divyāvad. 95,10]; with Gen. 405,10. — With °parā "the"? [Harṣac. 243,3; 252,9.] — With abhyud- 1. abhyudgata risen (sun), [Vajracch. 32,17.] — With nis- [Kaus.] also: to lose, forfeit, Campaka 396. 484. — With upanis- to go out to (Acc.), [Jātakam. 31.] {part=,seq=12313,type=,n=11}
 
+**abhi-add)** [Kaus.] auch: zukommen lassen, [Sāy.] zu [ṚV. 9,1,4.]
+
+- **RU:** [Kaus.] также: давать причитаться, предоставлять, [Sāy.] к [ṚV. 9,1,4.]
+  <sub>attested</sub>
+
+**ā-add)** Absol. so v.a. für, behufs; mit Akk. [Divyāvad. 95,10]; mit Gen. 405,10.
+
+- **RU:** Absol. так — то же, что для, ради; с Acc. [Divyāvad. 95,10]; с Gen. 405,10.
+  <sub>attested</sub>
+
+**parā-add)** "die"? [Harṣac. 243,3; 252,9.]
+
+- **RU:** «die»? (чтение под вопросом) [Harṣac. 243,3; 252,9.]
+  <sub>attested</sub>
+
+**1)** 1. abhyudgata aufgegangen (Sonne), [Vajracch. 32,17.]
+
+- **RU:** 1. abhyudgata — взошедший (о солнце), [Vajracch. 32,17.]
+  <sub>attested</sub>
+
+**nis-add)** [Kaus.] auch: verlieren, einbüßen, Campaka 396. 484.
+
+- **RU:** [Kaus.] также: терять, лишаться, Campaka 396. 484.
+  <sub>attested</sub>
+
+**upanis-add)** hinausgehen zu (Akk.), [Jātakam. 31.]
+
+- **RU:** выходить к (Acc.), [Jātakam. 31.]
+  <sub>attested</sub>
+
 ## gam
 
 `gam~~h0_zz_pwkvn`
 
 
 **abhyud-1)** *gam*¦ mit *abhyud* 1〉 *abhyudgata* aufgegangen (Sonne) [VAJRACCH. 32,17].
+
+- **RU:** *gam*¦ с *abhyud* 1) *abhyudgata* взошедшее (солнце) [VAJRACCH. 32,17].
 - **EN:** *gam* with *abhyud* 1) *abhyudgata* risen (sun) [VAJRACCH. 32,17].
+  <sub>attested</sub>
 
 **nis-zukommen)** *gam*¦ mit *abhi* Caus. auch zukommen lassen [SĀY.] zu [ṚV. 9,1,4]. — Mit *nis* Caus. auch verlieren, einbüssen [CAMPAKA 396]. [484].
+
+- **RU:** *gam*¦ с *abhi* Caus. также давать причитаться [SĀY.] к [ṚV. 9,1,4]. — С *nis* Caus. также терять, лишаться [CAMPAKA 396]. [484].
 - **EN:** *gam* with *abhi* Caus. also to let accrue to, grant [SĀY.] to [ṚV. 9,1,4]. — With *nis* Caus. also to lose, forfeit [CAMPAKA 396]. [484].
+  <sub>attested</sub>
 
 **upanis-block)** *gam*¦ mit *abhi* Caus. II. 5. — Mit *ā* II. *āgamya* Absol. so v. a. für, behufs; mit Acc. [DIVYĀVAD. 95,10]. mit Gen. [405,10]. — Mit *abhyud* II. 3. — Mit *nis* Caus. II. 5. — Mit *upanis* hinausgehen zu (Acc.) [JĀTAKAM. 31].
+
+- **RU:** *gam*¦ с *abhi* Caus. II. 5. — С *ā* II. *āgamya* Absol. так v. a. для, ради; с Acc. [DIVYĀVAD. 95,10]. с Gen. [405,10]. — С *abhyud* II. 3. — С *nis* Caus. II. 5. — С *upanis* выходить к (Acc.) [JĀTAKAM. 31].
 - **EN:** *gam* with *abhi* Caus. II. 5. — With *ā* II. *āgamya* Absol. thus v. a. for, for the sake of; with Acc. [DIVYĀVAD. 95,10]; with Gen. [405,10]. — With *abhyud* II. 3. — With *nis* Caus. II. 5. — With *upanis* to go out to (Acc.) [JĀTAKAM. 31].
+  <sub>attested</sub>

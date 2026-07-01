@@ -1,7 +1,12 @@
-## pratyavagam
+## pratyava+gam
 
 `gam~~h0_21_pratyava`
 
 
-**1)** — *pratyava* einzeln erkennen [MBH. 11,90.]
+**1)** — *pratyava* einzeln erkennen
+[MBH. 11,90.]
+
+- **RU:** — *pratyava* «распознавать по отдельности»
+[MBH. 11,90.]
 - **EN:** *pratyava* to recognise individually, discern one by one [MBH. 11,90.]
+  <sub>attested</sub>

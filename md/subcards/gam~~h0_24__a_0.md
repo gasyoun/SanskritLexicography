@@ -38,6 +38,42 @@
 [N. 7,1.] *āgacchethāḥ*
 [MBH.] in [BENF. Chr. 28,16.] *āgam saha* mit Jmd zusammenkommen
 [N. 16,30.]
+
+- **RU:** — *ā*
+ 1) «прийти, явиться, наступить; прийти к, в, после; подступить к, к; достигнуть, встретить»: *viśvo hya1nyo arirājagāma*
+[ṚV. 10,28,1.] *āgacchata āgatasya nāma gṛhṇāmyāyataḥ*
+[AV. 6,82,1.] *devo devebhirā gamat*
+[ṚV. 1,1,5.] [5,3.] [21,4.] [34,10.] *āgacchataṃ sīmavobhiḥ*
+[117,19.] [10,108,3.] *kayā na āśvinā gamatho hūyamānā*
+[4,43,4.] *ā vāṃ ratho gamyāḥ*
+[1,181,3.] [186,6.] [10,3,7.] *ā vāṃ patitvaṃ sakhyāya jagmuṣī*
+[1,119,5.] [VS. 9,19.] *ā mā -ghoṣo gacchati vāṅma āsām (apām)*
+[AV. 3,13,6.] *ā ghā tā gacchānuttarā yugāni*
+[ṚV. 10,10,10.] *mā no arātiraghaśaṃsa āgan* «пусть оно не достигнет нас»
+[TBR. 3,1,2,8.] *abhayaṃ tvāgacchatāt*
+[ŚAT. BR. 14,6,11,6.] [7,1,43.] [8,12,1.] — *ayamayamāgacchāmi*
+[ŚĀK. 42,5.] *ājagāma tato brahmā — draṣṭuṃ tam*
+[R. 1,2,26.] [13]
+[MBH. 3,15314.]
+[N. 4,15.] *rathaḥ — ājagāma*
+[MBH. 3,1715.] *satvaramāgamyatāṃ devena*
+[HIT. 41,13.] *nānādigdeśāt*
+[9,4.] [R. 1,59,9.] *ājagāmāśu pāṇḍavān*
+[HIḌ. 3,1.]
+[R. 1,59,5.] *abhyāsam*
+[9,25.] [MBH. 1,7030.] *samīpam*
+[N. 2,23.] *antikam*
+[ITIH.] у [SĀY.] к [ṚV. 1,125,1.] *parvatam*
+[ARJ. 1,3.] *sabhādvāram*
+[MBH. 3,264.]
+[N. 13,48.]
+[R. 1,9,43.] [57.] [26,30.] *rātrau tava gṛha āgamiṣyāmi*
+
+[VET. 24,3.] *tatra*
+[SUND. 4,21.]
+[N. 7,1.] *āgacchethāḥ*
+[MBH.] в [BENF. Chr. 28,16.] *āgam saha* «сойтись с кем-либо»
+[N. 16,30.]
 - **EN:** — *ā*
  1) to come up, arrive, appear; to come to, into, towards; to approach, step up to; to reach, meet with: *viśvo hya1nyo arirājagāma*
 [ṚV. 10,28,1.] *āgacchata āgatasya nāma gṛhṇāmyāyataḥ*
@@ -73,6 +109,7 @@
 [N. 7,1.] *āgacchethāḥ*
 [MBH.] in [BENF. Chr. 28,16.] *āgam saha* to meet, come together with someone
 [N. 16,30.]
+  <sub>attested</sub>
 
 **2)** — 2) zurückkehren
 [TS. 1,5,9,4.]
@@ -80,6 +117,17 @@
 [R. 1,61,22.]
 [VID. 84.]
 [VET. 30,7.] gewöhnlich in Verbindung mit *punar*
+[N. 23,5.]
+[R. 5,3,40.] *āgamya punarāśramāt*
+[1,2,9.] *punarāgamya tāṃ sabhām*
+[N. 10,20.] [1,31.] [4,22.]
+
+- **RU:** — 2) «возвращаться»
+[TS. 1,5,9,4.]
+[N. 24,1.]
+[R. 1,61,22.]
+[VID. 84.]
+[VET. 30,7.] обычно в сочетании с *punar*
 [N. 23,5.]
 [R. 5,3,40.] *āgamya punarāśramāt*
 [1,2,9.] *punarāgamya tāṃ sabhām*
@@ -94,8 +142,15 @@
 [R. 5,3,40.] *āgamya punarāśramāt*
 [1,2,9.] *punarāgamya tāṃ sabhām*
 [N. 10,20.] [1,31.] [4,22.]
+  <sub>attested</sub>
 
 **3)** — 3) in einen Zustand eingehen, — gerathen, sich hingeben: *teṣāmānṛṇyamāgaccha*
+[R. 3,27,13.] *dhyānam*
+[R. 6,99,4.] *samudvegam*
+[3,55,18.] *viśvāsam*
+[52,49.] [PAÑCAT. 34,15.] — *āgata*
+
+- **RU:** — 3) «войти в некое состояние, — впасть, предаться»: *teṣāmānṛṇyamāgaccha*
 [R. 3,27,13.] *dhyānam*
 [R. 6,99,4.] *samudvegam*
 [3,55,18.] *viśvāsam*
@@ -105,6 +160,7 @@
 [R. 6,99,4.] *samudvegam*
 [3,55,18.] *viśvāsam*
 [52,49.] [PAÑCAT. 34,15.] — *āgata*
+  <sub>attested</sub>
 
 **ppp-1)** 1) herbeigekommen, gekommen
 [AV. 6,82,1.] [10,4,9.] [19,53,7.] *ahani*
@@ -143,6 +199,44 @@
 [R. 1,35,23.] *˚saṃtrāsa*
 [6,5,3.] *māmāgataṃ tasya tadvacaḥ* jene Rede von ihm geht jetzt an mir in Erfüllung
 [DAŚ. 2,58.]
+
+- **RU:** 1) «пришедший, явившийся»
+[AV. 6,82,1.] [10,4,9.] [19,53,7.] *ahani*
+[7,52,2.] *ṛtau*
+[11,4,4.] *punaryantu yata āgatāḥ*
+[14,2,10.] [ŚAT. BR. 3,6,2,2.] [KĀTY. ŚR. 7,8,22.] о «госте»
+[AIT. BR. 1,15.]
+[ŚAT. BR. 1,6,4,3.] [3,3,4,31.] — *āgato 'smi*
+[N. 21,22.] [3,3.] [22.] [26,34.]
+[R. 3,68,48.]
+[VID. 5.] [298.] *ahamapyanupadamāgata eva* «я приду тотчас следом»
+[ŚĀK. 29,1.] *āgatābhyāgatān*
+[MBH. 5,912.] *tasya kālo 'yamāgataḥ*
+[R. 1,62,9.] *kāla āgate*
+[MBH. 3,1793.] *rājanyām*
+[PAÑCAT. 128,11.] *gṛhamāgatān*
+[M. 3,113.]
+[N. 12,78.]
+[DAŚ. 1,25.]
+[VID. 244.] [304.] *tvatsamīpam*
+[MEGH. 97.] *nipāne vāgataṃ gajam*
+[DAŚ. 2,13.] *ihāgataḥ*
+[N. 12,38.] [16,24.] [16,24.] [18,12.] [22,7.]
+[HIT. 19,3.] *tatra*
+[18,10.] *āśramāgata* «пришедший в скит»
+[M. 6,7.] *gṛhāgata*
+[PAÑCAT. III,11.] *śaraṇāgata*
+[RAGH. 3,11.] *tiryakpratimukhāgata* (повозка) «которая ударилась сбоку или спереди обо что-либо»
+[M. 8,291.] Также с указанием места «откуда» compon.: *digāgata*
+[YĀJÑ. 2,154.] «доставшийся, выпавший на долю»: *nyāyāgatadhana*
+[YĀJÑ. 3,205.] *anvayāgata* «унаследованный»
+[PAÑCAT. 16,11.] [168,23] (ошибочно *anvayagata)*; vgl. *kramāgata, paryāyāgata*) «то, что случилось»: *kimanyadidamāgatam*
+[MBH. 3,2555.] «то, что наступило»: *āgataṃ cāśā ca*
+[ŚAT. BR. 2,3,1,24.] [27.] *āgatamanyu*
+[M. 2,152.] *kiṃcidāgatavismaya*
+[R. 1,35,23.] *˚saṃtrāsa*
+[6,5,3.] *māmāgataṃ tasya tadvacaḥ* «та его речь теперь на мне исполняется»
+[DAŚ. 2,58.]
 - **EN:** 1) having come up, arrived
 [AV. 6,82,1.] [10,4,9.] [19,53,7.] *ahani*
 [7,52,2.] *ṛtau*
@@ -180,17 +274,35 @@
 [R. 1,35,23.] *˚saṃtrāsa*
 [6,5,3.] *māmāgataṃ tasya tadvacaḥ* that speech of his is now being fulfilled in me
 [DAŚ. 2,58.]
+  <sub>attested</sub>
 
 **ppp-2)** — 2) zurückgekehrt: *proṣuṣamāgatam*
 [ŚAT. BR. 12,5,2,8.] [13,4,4,7.] In derselben Bed. mit *punar: govrajātpunarāgatam*
+[M. 11,195.]
+[HIT. 21,11.]
+
+- **RU:** — 2) «возвратившийся»: *proṣuṣamāgatam*
+[ŚAT. BR. 12,5,2,8.] [13,4,4,7.] В том же Bed. с *punar: govrajātpunarāgatam*
 [M. 11,195.]
 [HIT. 21,11.]
 - **EN:** — 2) returned: *proṣuṣamāgatam*
 [ŚAT. BR. 12,5,2,8.] [13,4,4,7.] In the same Bed. with *punar: govrajātpunarāgatam*
 [M. 11,195.]
 [HIT. 21,11.]
+  <sub>attested</sub>
 
 **ppp-3)** — 3) gerathen in (acc.): *dāsatvam*
+[N. 26,20.] *śailatvam*
+[MBH. 13,191.] *anaṅgavaśam*
+[3,1851.] *pañcatvam*
+[KATHĀS. 2,32.] *śokaḥ ślokatvam*
+[R. 1,2,43.] *kāruṇyam*
+[58,13.] *paraṃ vismayam*
+[4,14.] *saṃdeham*
+[64,10.] *saṃtāpam*
+[14.]
+
+- **RU:** — 3) «впавший в» (acc.): *dāsatvam*
 [N. 26,20.] *śailatvam*
 [MBH. 13,191.] *anaṅgavaśam*
 [3,1851.] *pañcatvam*
@@ -210,3 +322,4 @@
 [4,14.] *saṃdeham*
 [64,10.] *saṃtāpam*
 [14.]
+  <sub>attested</sub>

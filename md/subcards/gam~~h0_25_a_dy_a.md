@@ -6,6 +6,11 @@
 **1)** — *adhyā* stossen auf, auffinden: *nādhyāgamacca mṛgayaṃstāṃ gām*
 [MBH. 1,3948.] *trātāraṃ nādhyagaccheran(!)*
 [6,4538.]
+
+- **RU:** — *adhyā* наткнуться на, обнаружить: *nādhyāgamacca mṛgayaṃstāṃ gām*
+[MBH. 1,3948.] *trātāraṃ nādhyagaccheran(!)*
+[6,4538.]
 - **EN:** to come upon, to discover, find: *nādhyāgamacca mṛgayaṃstāṃ gām*
 [MBH. 1,3948.] *trātāraṃ nādhyagaccheran(!)*
 [6,4538.]
+  <sub>attested</sub>
