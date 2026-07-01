@@ -158,47 +158,104 @@ def dcs_count(dcs):
     return None
 
 
+def load_en_full(root):
+    """EN store as ordered structure: (selected_key_order, {subcard: {iast,h,senses:[{tag,german,english}]}})."""
+    fp = os.path.join(REPO, 'wf_output.en.%s.json' % root)
+    if not os.path.exists(fp):
+        return [], {}
+    d = json.load(open(fp, encoding='utf-8'))
+    by_sub = {}
+    for e in d['results']:
+        c = e.get('card')
+        if not c:
+            continue
+        rec0 = (c.get('records') or [{}])[0]
+        senses = []
+        for i, s in enumerate(rec_senses(c)):
+            senses.append({'tag': str(s.get('tag') if s.get('tag') is not None else i),
+                           'german': s.get('german') or '', 'english': s.get('english') or ''})
+        by_sub[e['key']] = {'iast': c.get('iast') or '', 'h': rec0.get('h') or '', 'senses': senses}
+    return list(d['meta'].get('selected_keys') or []), by_sub
+
+
+def make_sense(tag, de, ru, en, dcs, src):
+    return {
+        'tag': str(tag), 'has_ru': bool(ru), 'has_en': bool(en),
+        'de_html': _render(de, 'html'), 'ru_html': _render(ru, 'html'), 'en_html': _render(en, 'html'),
+        'de_md': _render(de, 'md'), 'ru_md': _render(ru, 'md'), 'en_md': _render(en, 'md'),
+        'dcs': dcs_count(dcs), 'src': src or '',
+    }
+
+
 def build_model():
+    """UNION spine: every EN sub-card/sense (the full per-root set) with RU attached
+    where present, plus any RU-only sub-cards/senses appended. So EN-complete roots
+    (e.g. gam, 127 sub-cards) show fully even where RU is partial, and the gap is
+    visible per sense (has_ru / has_en)."""
     ru = load_ru()
+    en_files = {os.path.basename(f).replace('wf_output.en.', '').replace('.json', '')
+                for f in glob.glob(os.path.join(REPO, 'wf_output.en.*.json'))}
     model = []
-    for root in sorted(ru, key=lambda s: slp1_iast(s).lower()):
-        en_text, en_tag = load_en(root)
-        en_available = bool(en_text or en_tag)
-        subs = {}          # subcard -> {h, iast, senses:[]}
-        order = []
-        n_sense = 0
-        n_en = 0
-        for r in ru[root]:
+    for root in sorted(set(ru) | en_files, key=lambda s: slp1_iast(s).lower()):
+        ru_rows = ru.get(root, [])
+        ru_by_sub = {}
+        for r in ru_rows:
+            ru_by_sub.setdefault(r.get('subcard') or r.get('key1'), []).append(r)
+        ru_bytext, ru_bytag = {}, {}
+        for sub, rows in ru_by_sub.items():
+            for i, r in enumerate(rows):
+                ru_bytext.setdefault((sub, _norm(r.get('de'))), r)
+                tg = str(r.get('sense_tag') if r.get('sense_tag') is not None else i)
+                ru_bytag.setdefault((sub, tg), r)
+        en_order, en_by_sub = load_en_full(root)
+        sub_order = list(en_order)
+        seen = set(sub_order)
+        for r in ru_rows:
             sub = r.get('subcard') or r.get('key1')
-            if sub not in subs:
-                subs[sub] = {'key': sub, 'h': r.get('h') or '', 'iast': r.get('iast') or '',
-                             'senses': []}
-                order.append(sub)
-            tag = str(r.get('sense_tag') if r.get('sense_tag') is not None else len(subs[sub]['senses']))
-            en_txt = en_text.get((sub, _norm(r.get('de')))) or en_tag.get((sub, tag))
-            if en_txt:
-                n_en += 1
-            subs[sub]['senses'].append({
-                'tag': tag,
-                'de_html': _render(r.get('de'), 'html'),
-                'ru_html': _render(r.get('ru'), 'html'),
-                'en_html': _render(en_txt, 'html') if en_txt else '',
-                'de_md': _render(r.get('de'), 'md'),
-                'ru_md': _render(r.get('ru'), 'md'),
-                'en_md': _render(en_txt, 'md') if en_txt else '',
-                'dcs': dcs_count(r.get('dcs_freq')),
-                'src': r.get('source_type') or '',
-                'review': r.get('review_status') or '',
-            })
-            n_sense += 1
+            if sub not in seen:
+                sub_order.append(sub)
+                seen.add(sub)
+        subcards = []
+        n_sense = n_ru = n_en = 0
+        for sub in sub_order:
+            en_entry = en_by_sub.get(sub)
+            en_senses = en_entry['senses'] if en_entry else []
+            ru_sub_rows = ru_by_sub.get(sub, [])
+            used = set()
+            senses = []
+            for i, es in enumerate(en_senses):
+                rrow = (ru_bytext.get((sub, _norm(es['german'])))
+                        or ru_bytag.get((sub, es['tag'])))
+                if rrow is not None:
+                    used.add(id(rrow))
+                senses.append(make_sense(
+                    tag=es['tag'], de=(rrow.get('de') if rrow else es['german']),
+                    ru=(rrow.get('ru') if rrow else None), en=es['english'],
+                    dcs=(rrow.get('dcs_freq') if rrow else None),
+                    src=(rrow.get('source_type') if rrow else '')))
+            for i, r in enumerate(ru_sub_rows):
+                if id(r) in used:
+                    continue
+                senses.append(make_sense(
+                    tag=(r.get('sense_tag') if r.get('sense_tag') is not None else i),
+                    de=r.get('de'), ru=r.get('ru'), en=None,
+                    dcs=r.get('dcs_freq'), src=r.get('source_type')))
+            if not senses:
+                continue
+            ru0 = ru_sub_rows[0] if ru_sub_rows else None
+            iast = (ru0.get('iast') if ru0 else '') or (en_entry.get('iast') if en_entry else '') or ''
+            h = (ru0.get('h') if ru0 else '') or (en_entry.get('h') if en_entry else '') or ''
+            for s in senses:
+                n_sense += 1
+                n_ru += 1 if s['has_ru'] else 0
+                n_en += 1 if s['has_en'] else 0
+            subcards.append({'key': sub, 'h': h, 'iast': iast, 'senses': senses})
         model.append({
-            'root': root,
-            'iast': slp1_iast(root),
-            'en_available': en_available,
-            'n_subcards': len(order),
-            'n_senses': n_sense,
-            'n_en_senses': n_en,
-            'subcards': [subs[k] for k in order],
+            'root': root, 'iast': slp1_iast(root),
+            'en_available': bool(en_by_sub), 'ru_available': bool(ru_rows),
+            'n_subcards': len(subcards), 'n_senses': n_sense,
+            'n_ru_senses': n_ru, 'n_en_senses': n_en,
+            'subcards': subcards,
         })
     return model
 
@@ -231,9 +288,9 @@ def subcard_md(sub):
 
 def root_md(r):
     lines = ['# %s' % r['iast'], '',
-             '_PWG article — %d sub-card(s), %d sense(s); EN: %s_' % (
+             '_PWG article — %d sub-card(s), %d sense(s) · RU %d/%d · EN %d/%d_' % (
                  r['n_subcards'], r['n_senses'],
-                 '%d senses' % r['n_en_senses'] if r['en_available'] else 'not available'),
+                 r['n_ru_senses'], r['n_senses'], r['n_en_senses'], r['n_senses']),
              '']
     for sub in r['subcards']:
         lines.append(subcard_md(sub))
@@ -255,6 +312,8 @@ INDEX_HTML = r"""<!doctype html><html lang="ru"><head><meta charset="utf-8">
 .rlink{display:flex;justify-content:space-between;gap:6px;padding:4px 8px;border-radius:6px;cursor:pointer;font-size:14px}
 .rlink:hover{background:var(--card)}.rlink.active{background:var(--accent);color:#fff}
 .rlink .en{font-size:11px;color:var(--mut)}.rlink.active .en{color:#fff}
+.cov{font-size:10px;color:var(--mut)}.cov.low{color:#c46b00;font-weight:600}
+.rlink.active .cov,.rlink.active .cov.low{color:#ffd9a8}
 #main{flex:1;padding:20px 28px;max-width:900px}
 .iast{font-style:italic}
 h2.root{font-size:26px;margin:0 0 2px}.meta{color:var(--mut);font-size:13px;margin-bottom:14px}
@@ -290,7 +349,8 @@ var arthead=document.getElementById('arthead'), artbody=document.getElementById(
 function esc(x){return x==null?'':(''+x);}
 function renderList(f){list.innerHTML='';A.roots.filter(function(r){return !f||r.iast.toLowerCase().indexOf(f)>=0||r.root.toLowerCase().indexOf(f)>=0;}).forEach(function(r){
  var d=document.createElement('div');d.className='rlink'+(cur===r.root?' active':'');
- d.innerHTML='<span class="iast">'+r.iast+'</span><span class="en">'+r.n_senses+(r.en_available?' ·en':'')+'</span>';
+ var ruf=r.n_senses?Math.round(100*r.n_ru_senses/r.n_senses):0;
+ d.innerHTML='<span class="iast">'+r.iast+'</span><span class="en" title="senses; RU / EN coverage">'+r.n_senses+' <span class="cov'+(ruf<100?' low':'')+'">RU'+ruf+'%</span></span>';
  d.onclick=function(){cur=r.root;renderList(q.value.toLowerCase());renderRoot(r);};list.appendChild(d);});}
 // Language is a CSS class on #artbody (lang-de|lang-ru|lang-en). All three blocks
 // are always in the DOM; the class shows/hides them, so switching cannot silently no-op.
@@ -305,7 +365,8 @@ function renderRoot(r){
  cur=r.root;
  arthead.innerHTML='<h2 class="root iast">'+r.iast+'</h2>'
   +'<div class="meta">PWG-статья · '+r.n_subcards+' под-карт., '+r.n_senses+' знач.'
-  +(r.en_available?' · EN: '+r.n_en_senses+' знач.':' · EN нет')+'</div>'
+  +' · <b>RU '+r.n_ru_senses+'/'+r.n_senses+'</b> · EN '+r.n_en_senses+'/'+r.n_senses
+  +(r.n_ru_senses<r.n_senses?' <span class="cov low">RU неполный</span>':'')+'</div>'
   +'<div class="tabs">'
   +'<button class="tab" data-lang="de">Deutsch (оригинал)</button>'
   +'<button class="tab" data-lang="ru">Русский</button>'
@@ -358,7 +419,8 @@ def emit(model):
     # data js (drop the _md fields from the embedded blob to keep it lean)
     slim = {'roots': [{
         'root': r['root'], 'iast': r['iast'], 'en_available': r['en_available'],
-        'n_subcards': r['n_subcards'], 'n_senses': r['n_senses'], 'n_en_senses': r['n_en_senses'],
+        'n_subcards': r['n_subcards'], 'n_senses': r['n_senses'],
+        'n_ru_senses': r['n_ru_senses'], 'n_en_senses': r['n_en_senses'],
         'subcards': [{'key': s['key'], 'h': s['h'], 'iast': s['iast'], 'senses': [
             {'tag': x['tag'], 'de_html': x['de_html'], 'ru_html': x['ru_html'],
              'en_html': x['en_html'], 'dcs': x['dcs'], 'src': x['src']}
