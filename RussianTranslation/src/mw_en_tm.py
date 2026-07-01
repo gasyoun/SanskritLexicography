@@ -87,6 +87,52 @@ def build(path):
     return by
 
 
+def slp1_simplify(key: str) -> str:
+    """Reduce a standard SLP1 string to a simplified no-diacritic ASCII form.
+
+    Works for both MW headword keys and indic_transliteration output — both use
+    standard SLP1 where R=ṇ (retroflex nasal). Self-contained copy of
+    sanskrit_util.slp1_simplify so this module works standalone.
+
+    ⚠️ R=ṇ trap: guṇa is 'guRa' in MW, NOT 'guNa'. Missing R→n maps guṇa to
+    gūna ("voided as ordure"). This function handles it.
+    """
+    s = key or ''
+    s = (s.replace('K', 'kh').replace('G', 'gh')
+          .replace('C', 'ch').replace('J', 'jh')
+          .replace('T', 'th').replace('D', 'dh')
+          .replace('P', 'ph').replace('B', 'bh'))
+    s = s.replace('S', 's').replace('z', 's')
+    s = s.replace('Y', 'n').replace('N', 'n').replace('R', 'n')
+    s = s.replace('A', 'a').replace('I', 'i').replace('U', 'u')
+    s = s.replace('E', 'ai').replace('O', 'au')
+    s = s.replace('f', 'r').replace('F', 'r').replace('x', 'l').replace('X', 'l')
+    s = s.replace('M', 'm').replace('H', '')
+    s = s.replace('W', 'th').replace('Q', 'dh')
+    s = s.replace('w', 't').replace('q', 'd')
+    s = s.replace('L', 'l')
+    return s.lower()
+
+
+def build_simplified_index(mw_data: dict) -> dict:
+    """Build a {simplified_form: [slp1_keys]} index for fuzzy MW headword lookup.
+
+    Use slp1_simplify() on query tokens to look up in this index — same
+    simplification on both sides ensures consistent matching.
+
+    Example::
+
+        mw_data = json.loads(Path('mw_en_tm.json').read_text(encoding='utf-8'))
+        idx = build_simplified_index(mw_data)
+        hits = idx.get(slp1_simplify(query_token), [])
+    """
+    idx: dict = {}
+    for k in mw_data:
+        s = slp1_simplify(k)
+        idx.setdefault(s, []).append(k)
+    return idx
+
+
 def selftest():
     body = ('<s>vad</s> ¦ <ab>cl.</ab> 1. <ab>P.</ab> (<ls>Dhātup.</ls> <s>va/dati</s>)\n'
             '<div n="to"/>to speak, say, utter, tell, <ls>RV.</ls>;\n'
