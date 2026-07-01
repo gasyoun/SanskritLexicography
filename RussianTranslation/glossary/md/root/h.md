@@ -1,4 +1,4 @@
-# Root glossary (Sa→Ru) — `h`
+# Root glossary (Sa→Ru) — `H`
 
 32 entries.
 

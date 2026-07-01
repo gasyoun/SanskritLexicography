@@ -34,12 +34,17 @@ The four `gamemahi` lines you started from are one surface entry inside this rol
 
 Published (tracked + served on GitHub Pages) and regenerable via the scripts. The one
 exception is the 140 MB raw `surface_glossary.jsonl`, which exceeds GitHub's 100 MB file
-limit and ships as `surface_glossary.jsonl.gz` instead. [`index.html`](index.html) is the
-searchable front-end over `root_glossary.tsv` / `lemma_glossary.tsv`.
+limit — it ships as `surface_glossary.jsonl.gz` **and** as a per-initial-letter split under
+[`surface/<X>.jsonl`](surface/) (26 parts, max ~22 MB; `cat surface/*.jsonl` reconstructs the
+whole). [`index.html`](index.html) is the searchable front-end over the root/lemma TSVs.
+
+Bucket filenames are **case-folded to upper** (`a` and `A` share one file): SLP1 is
+case-significant but Windows' filesystem is case-insensitive, so separate `a`/`A` files would
+collide and truncate. The phonemic distinction is preserved inside each record's `slp1` field.
 
 | File | What |
 |---|---|
-| `surface_glossary.jsonl` / `.tsv` | **Layer 1** — 190,838 forms → Ru with counts, registers, works, kinds |
+| `surface_glossary.tsv` + `surface/<X>.jsonl` (+ `.jsonl.gz`) | **Layer 1** — 190,838 forms → Ru with counts, registers, works, kinds |
 | `md/surface/<X>.md` | human-readable surface glossary, one file per initial SLP1 letter |
 | `lemma_glossary.jsonl` / `.tsv` + `md/lemma/` | **Layer 2** — 40,370 lemmas → Ru (nouns' stem, verbs' lemma) |
 | `root_glossary.jsonl` / `.tsv` + `md/root/` | **Layer 3** — 2,021 verb roots → Ru (aggregated over lemmas & forms) |

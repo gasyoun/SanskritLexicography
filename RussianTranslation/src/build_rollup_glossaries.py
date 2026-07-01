@@ -38,9 +38,11 @@ def register(work):
     return _reg.sub('', work or '')
 
 def bucket(s):
+    # case-FOLD to upper: Windows' filesystem is case-insensitive, so 'a'/'A' shard files
+    # collide and truncate each other. Fold them into one shard (see build_surface_glossary).
     if not s:
         return '_'
-    return s[0] if re.match(r'[A-Za-z]', s[0]) else '_other'
+    return s[0].upper() if re.match(r'[A-Za-z]', s[0]) else '_other'
 
 
 def load_maps():

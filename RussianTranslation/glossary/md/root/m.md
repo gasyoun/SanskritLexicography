@@ -1,4 +1,4 @@
-# Root glossary (Sa→Ru) — `m`
+# Root glossary (Sa→Ru) — `M`
 
 108 entries.
 

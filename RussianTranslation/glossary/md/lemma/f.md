@@ -1,6 +1,11 @@
-# Lemma glossary (Sa→Ru) — `f`
+# Lemma glossary (Sa→Ru) — `F`
 
-178 entries.
+179 entries.
+
+### `F`  (n=2, 1 forms)  ·  noun
+
+- звенит  · n=1
+- пробует на вкус  · n=1
 
 ### `f`  (n=11, 5 forms)  ·  verb/ADV/noun/NOUN
 

@@ -1,6 +1,30 @@
-# Surface glossary — SLP1 `t`
+# Surface glossary — SLP1 `T`
 
-6810 forms. Format: `form` (sa) — total n → ru (n) · registers.
+6816 forms. Format: `form` (sa) — total n → ru (n) · registers.
+
+### `TAraka` — Tāraka  (n=1)
+
+- Тараки  · n=1  · mahabharata-aranyakaparva
+
+### `Ta` — tha  (n=3)
+
+- тха  · n=3  · ch-up
+
+### `TaRqula` — thaṇḍula  (n=1)
+
+- зерну  · n=1  · atma-up
+
+### `TaittirIyaSaMhitA` — Taittirīya Saṃhitā  (n=1)
+
+- Тайттирия-самхита  · n=1  · nyaya-bhashya
+
+### `TaittirIyaĀraRyaka` — Taittirīya Āraṇyaka  (n=1)
+
+- Тайттирия-араньяка  · n=1  · nyaya-bhashya
+
+### `Tam` — tham  (n=4)
+
+- тха  · n=4  · ch-up
 
 ### `t` — t  (n=2)
 

@@ -1,6 +1,64 @@
-# Surface glossary — SLP1 `v`
+# Surface glossary — SLP1 `V`
 
-17023 forms. Format: `form` (sa) — total n → ru (n) · registers.
+17037 forms. Format: `form` (sa) — total n → ru (n) · registers.
+
+### `VAjasaneyiSaMhitA` — Vājasaneyi Saṃhitā  (n=1)
+
+- Ваджасанейи-самхита  · n=1  · nyaya-bhashya
+
+### `VAlmIki` — Vālmīki  (n=1)
+
+- Вальмики  · n=1  · vajs-up
+
+### `VAmeSvarI` — Vāmeśvarī  (n=1)
+
+- Вамешвари  · n=1  · pratyabhijna-hridaya_kshemaraja
+
+### `VAtsyAyana` — Vātsyāyana  (n=13)
+
+- Ватсьяяна  · n=9  · nyaya-bhashya
+- Ватсьяяны  · n=3  · nyaya-bhashya
+- Ватсьяяне  · n=1  · nyaya-bhashya
+
+### `VaiKAnasa` — Vaikhānasa  (n=1)
+
+- Вайкханасы  · n=1  · manavadharmashastra
+
+### `Varuna` — Varuna  (n=1)
+
+- Варуна  · n=1  · manavadharmashastra
+
+### `VasizWa` — Vasiṣṭha  (n=2)
+
+- Васиштха  · n=2  · manavadharmashastra, vajs-up
+
+### `Vida` — Vida  (n=1)
+
+- Вида  · n=1  · nyaya-bhashya
+
+### `VigrahavyAvartanI` — Vigrahavyāvartanī  (n=2)
+
+- Виграхавьявартани  · n=2  · nyaya-bhashya
+
+### `VijYAnakAya` — Vijñānakāya  (n=1)
+
+- Виджнянакая  · n=1  · nyaya-bhashya
+
+### `VinItadeva` — Vinītadeva  (n=1)
+
+- Винитадэва  · n=1  · nyaya-bhashya
+
+### `VirAjaH` — Virājaḥ  (n=1)
+
+- Вираджей  · n=1  · sub-up
+
+### `VoDu` — Vodhu  (n=1)
+
+- Водху  · n=1  · sankhya-karika
+
+### `VyAsa` — Vyāsa  (n=1)
+
+- Вьяса  · n=1  · vajs-up
 
 ### `v` — v  (n=3)
 
