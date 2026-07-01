@@ -2,12 +2,12 @@
 
 <p align="right"><sub>Created: 01-07-2026 · Last updated: 01-07-2026</sub></p>
 
-**🔎 Live searchable glossary + data home:** **[gasyoun/sanskrit-russian-glossary](https://github.com/gasyoun/sanskrit-russian-glossary)**
-→ <https://gasyoun.github.io/sanskrit-russian-glossary/> — type an SLP1 root/word (`gam`, `BU`)
-or a Russian word and browse the ranked translations. The glossary got its own repo because
-this repo's GitHub Pages slot serves the PWG article dashboard (`gh-pages` branch). **This
-directory holds the generation pipeline** (`../src/build_*.py`); the live site + a mirror of the
-data live in that repo.
+**🔎 Live searchable glossary + all data:** **[gasyoun/SanskritRussian](https://github.com/gasyoun/SanskritRussian)**
+→ <https://gasyoun.github.io/SanskritRussian/> — type an SLP1 root/word (`gam`, `BU`) or a
+Russian word and browse the ranked translations. The glossary has its own repo because this
+repo's GitHub Pages slot serves the PWG article dashboard (`gh-pages` branch). **This directory
+holds only the generation pipeline** (`../src/build_*.py`) — the data is git-ignored here
+(regenerate locally); the committed data + live site live in that repo.
 
 A full inventory of **how every Sanskrit word is rendered into Russian** in the aligned
 corpus, at three granularities:
@@ -36,11 +36,12 @@ The four `gamemahi` lines you started from are one surface entry inside this rol
 
 ## Files
 
-Published (tracked + served on GitHub Pages) and regenerable via the scripts. The one
-exception is the 140 MB raw `surface_glossary.jsonl`, which exceeds GitHub's 100 MB file
-limit — it ships as `surface_glossary.jsonl.gz` **and** as a per-initial-letter split under
-[`surface/<X>.jsonl`](surface/) (26 parts, max ~22 MB; `cat surface/*.jsonl` reconstructs the
-whole). [`index.html`](index.html) is the searchable front-end over the root/lemma TSVs.
+The scripts regenerate these locally; here they are **git-ignored** (the committed copies live
+in [gasyoun/SanskritRussian](https://github.com/gasyoun/SanskritRussian)). The 140 MB raw
+`surface_glossary.jsonl` exceeds GitHub's 100 MB file limit, so it ships (in that repo) as
+`surface_glossary.jsonl.gz` **and** as a per-initial-letter split under `surface/<X>.jsonl`
+(26 parts, max ~22 MB; `cat surface/*.jsonl` reconstructs the whole). `index.html` there is the
+searchable front-end over the root/lemma TSVs.
 
 Bucket filenames are **case-folded to upper** (`a` and `A` share one file): SLP1 is
 case-significant but Windows' filesystem is case-insensitive, so separate `a`/`A` files would
