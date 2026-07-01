@@ -16,6 +16,8 @@ input-format + markup-verbatim specifics ("keep {Tn} verbatim" instead of "{#..#
 
 Usage:  python src/pilot/gen_opt_harness2.py <root> [--keys=k1,k2] [--budget=12000] [--out=PATH]
         [--selfheal [--selfheal-budget=12]]   # budget = citation-weighted units (1+<ls>) per heal call
+        [--binary-split]                      # bisect a failing batch instead of flat-retrying it
+        [--output-budget=N]                   # size batches by citation-weighted output, not input bytes
 Writes: src/pilot/run_pilot_wf.opt2.js  (or --out=PATH — use a per-root/per-chat path to
         avoid the gen->copy race when several chats generate harnesses concurrently)
 """
@@ -49,6 +51,19 @@ SELFHEAL_GROUP_BUDGET = 12   # --selfheal-budget=N: fragments are grouped (in do
                    #  light (low-<ls>) fragments share one call, cutting a 13-fragment card to a
                    #  handful of calls instead of 13, without recombining the dense units that
                    #  caused the original failure.
+BINARY_SPLIT = False   # --binary-split: when a whole batch call fails/comes back malformed (not
+                   #  just individual cards inside it), bisect the still-pending cards into two
+                   #  halves and retry each half recursively (own 2-attempt budget each) instead
+                   #  of re-submitting the identical full batch — isolates a single poison card
+                   #  without re-billing the cards around it. Bottoms out at single cards, which
+                   #  fall through to --selfheal as before. Gated: default OFF, behavior-identical
+                   #  to the pre-existing retry loop when off.
+OUTPUT_BUDGET = None   # --output-budget=N: size the main batches by estimated OUTPUT complexity
+                   #  (citation-weighted units, 1 + <ls> count per card — same metric as
+                   #  --selfheal-budget) instead of INPUT bytes (skeleton+portrait). Input bytes
+                   #  don't predict StructuredOutput failure (TOKEN_LEVER_FINDING_2026-06-30: the
+                   #  portrait-slim byte lever was a non-lever); citation density does. None =
+                   #  unchanged byte-budget behavior.
 
 
 def grammar_text(root):
@@ -153,6 +168,10 @@ def parse_args(argv):
             globals()['SELFHEAL'] = True     # gated: default OFF -> existing runs unchanged
         elif a.startswith('--selfheal-budget='):
             globals()['SELFHEAL_GROUP_BUDGET'] = int(a.split('=', 1)[1])
+        elif a == '--binary-split':
+            globals()['BINARY_SPLIT'] = True
+        elif a.startswith('--output-budget='):
+            globals()['OUTPUT_BUDGET'] = int(a.split('=', 1)[1])
     if lang not in ('ru', 'en'):
         die('unknown --lang %r (ru|en)' % lang)
     if lang == 'en' and mw_tm is None:
@@ -413,14 +432,15 @@ def build(root, keys, rootmap, budget, lean=False, nws_gate=False,
                         for g in groups]
             phf[k] = [[it['ph'] for it in g] for g in groups]
 
-    batches, cur, sz = [], [], 0
-    for k in keys:
-        ksz = len(inputs[k]['skeleton']) + len(inputs[k]['portrait'])
-        if cur and sz + ksz > budget:
-            batches.append(cur); cur, sz = [], 0
-        cur.append(k); sz += ksz
-    if cur:
-        batches.append(cur)
+    # --output-budget=N: size batches by citation-weighted OUTPUT complexity (1 + <ls> per
+    # card) instead of input bytes — bytes don't predict StructuredOutput failure (a dense
+    # card's masked bytes can be small while its sense/citation count is what blows the
+    # retry cap). None (default) keeps the original input-byte budget, byte-identical output.
+    if OUTPUT_BUDGET is not None:
+        batches = _group_by_budget(keys, lambda k: 1 + inputs[k]['ls'], OUTPUT_BUDGET)
+    else:
+        batches = _group_by_budget(
+            keys, lambda k: len(inputs[k]['skeleton']) + len(inputs[k]['portrait']), budget)
 
     # Grammar injection. Root mode: one shared GRAMMAR block (the root conjugation,
     # identical across sub-cards) before CONV_TR; GRAMMARS empty. Nominal mode: each
@@ -447,6 +467,7 @@ def build(root, keys, rootmap, budget, lean=False, nws_gate=False,
         'input_hashes': input_hashes,
         'selfheal': SELFHEAL, 'selfheal_group_budget': SELFHEAL_GROUP_BUDGET if SELFHEAL else None,
         'selfheal_cards': {k: len(v) for k, v in frags.items()} if SELFHEAL else {},
+        'binary_split': BINARY_SPLIT, 'output_budget': OUTPUT_BUDGET,
     }
 
     js = """// AUTO-DERIVED v2 (batched + masked, canonical output) from run_pilot_wf.js - root=%(root)s.
@@ -469,6 +490,7 @@ const INPUTS = %(inputs)s
 const PH = %(phmaps)s
 const FRAGS = %(frags)s
 const PHF = %(phf)s
+const BINARY_SPLIT = %(binary_split)s
 const META = %(meta)s
 
 const restore = (t, ph) => (t || '').replace(/\\{T(\\d+)\\}/g, (m, n) => (ph[+n - 1] !== undefined ? ph[+n - 1] : m))
@@ -494,6 +516,39 @@ const accept = (c, k) => {
   return c
 }
 
+// Resolve one heal GROUP (indices into `grp`), trying the whole group up to 3 attempts;
+// if it still has >1 unresolved fragment, bisect and resolve each half independently with
+// its own fresh 3-attempt budget — this is the safety net a grouped call needs: a live run
+// on brU showed a 2-fragment group (ud) fail all 3 attempts and lose BOTH fragments, where
+// the pre-grouping one-fragment-per-call design would only have risked one. Bisection falls
+// back toward that safer granularity only when a group actually struggles, so the happy path
+// (group succeeds) keeps the full cost saving. Returns a {idx: card} map, or null if any
+// fragment never resolved even as a singleton.
+async function healGroup(k, idxs, grp, label) {
+  const resolved = {}
+  let pending = idxs.slice()
+  for (let att = 0; att < 3 && pending.length; att++) {
+    const blocks = pending.map(i => '\\n\\n=== CARD ' + k + '_f' + i + ' (fragment ' + (i + 1) + '/' + grp.length + ') ===\\n--- masked German (translatable only; {Tn}=masked span) ---\\n' + grp[i].skeleton).join('')
+    const prompt = PREAMBLE + GRAMMAR + CONV_TR + blocks
+    const res = await agent(prompt, { label: label + '[' + pending.length + ']' + (att ? '(r' + att + ')' : ''), phase: 'Translate', schema: CARDS_SCHEMA, model: '%(model)s', tools: [] })
+    if (res && Array.isArray(res.cards)) {
+      pending.forEach((fi, idx) => { const c = res.cards[idx]; if (c) resolved[fi] = c })
+    }
+    pending = pending.filter(fi => !resolved[fi])
+  }
+  if (pending.length > 1) {
+    const mid = Math.ceil(pending.length / 2)
+    const [a, b] = await Promise.all([
+      healGroup(k, pending.slice(0, mid), grp, label + '/A'),
+      healGroup(k, pending.slice(mid), grp, label + '/B'),
+    ])
+    if (a) Object.assign(resolved, a)
+    if (b) Object.assign(resolved, b)
+    pending = pending.filter(fi => !resolved[fi])
+  }
+  return pending.length ? null : resolved
+}
+
 // --selfheal fallback: a card the batch could not translate is split (deterministically,
 // precomputed in FRAGS) into fragments, GROUPED into budget-sized batches (fragment-grouping
 // tier), then each group is translated in ONE agent() call (several fragments per call, same
@@ -506,21 +561,8 @@ async function selfHeal(k) {
   for (let gi = 0; gi < groups.length; gi++) {
     const grp = groups[gi]
     const gph = (PHF[k] || [])[gi] || []
-    const resolved = {}
-    let pending = grp.map((_, i) => i)
-    // Retry only the fragments in this group still unresolved — one flaky fragment must not
-    // re-bill the rest of the group (mirrors translateBatch's shrinking-pending pattern; also
-    // fixes the brU/man live-test miss where 1 of 13/11 fragments failed under all-or-nothing).
-    for (let att = 0; att < 3 && pending.length; att++) {
-      const blocks = pending.map(i => '\\n\\n=== CARD ' + k + '_f' + i + ' (fragment ' + (i + 1) + '/' + grp.length + ' of group ' + (gi + 1) + '/' + groups.length + ') ===\\n--- masked German (translatable only; {Tn}=masked span) ---\\n' + grp[i].skeleton).join('')
-      const prompt = PREAMBLE + GRAMMAR + CONV_TR + blocks
-      const res = await agent(prompt, { label: 'heal:' + k + '#g' + (gi + 1) + '[' + pending.length + ']' + (att ? '(r' + att + ')' : ''), phase: 'Translate', schema: CARDS_SCHEMA, model: '%(model)s', tools: [] })
-      if (res && Array.isArray(res.cards)) {
-        pending.forEach((fi, idx) => { const c = res.cards[idx]; if (c) resolved[fi] = c })
-      }
-      pending = pending.filter(fi => !resolved[fi])
-    }
-    if (pending.length) return null   // a fragment never resolved -> abandon the heal, never a lossy partial
+    const resolved = await healGroup(k, grp.map((_, i) => i), grp, 'heal:' + k + '#g' + (gi + 1))
+    if (!resolved) return null   // a fragment never resolved even solo -> abandon the heal, never a lossy partial
     for (let i = 0; i < grp.length; i++) {
       const card = resolved[i]
       const ph = gph[i] || []
@@ -537,24 +579,43 @@ async function selfHeal(k) {
 }
 
 phase('Translate')
-async function translateBatch(batch, bi) {
-  // Retry ONLY the cards still unresolved (positional within the shrinking pending
-  // set), not the whole batch — one missing/garbled card must not re-bill the rest.
-  const resolved = {}, healed = {}
-  let pending = batch.slice()
-  for (let attempt = 0; attempt < 2 && pending.length; attempt++) {
+// Try a group of cards up to 2 full-group attempts, retrying ONLY the cards still
+// unresolved (positional within the shrinking pending set) — one missing/garbled card
+// must not re-bill the rest. Returns { resolved, pending } (pending = still-unresolved).
+// With BINARY_SPLIT off this is the whole retry story (unchanged from before); with it on,
+// a group of >1 cards that still fails after 2 attempts is bisected and each half gets its
+// own fresh 2-attempt budget — isolates a single poison card instead of re-billing the
+// group around it identically on every retry.
+async function resolveGroup(pending, label) {
+  const resolved = {}
+  let cur = pending.slice()
+  for (let attempt = 0; attempt < 2 && cur.length; attempt++) {
     // lean mode: NWS_RULE is non-empty and injected only when the batch has an NWS card
     // (full mode: NWS_RULE is '' and the NWS rule already lives inside CONV_TR).
-    const nws = (NWS_RULE && pending.some(k => INPUTS[k].nws)) ? ('\\n\\n' + NWS_RULE + '\\n') : ''
-    const prompt = PREAMBLE + GRAMMAR + CONV_TR + nws + pending.map(cardBlock).join('')
-    const res = await agent(prompt, { label: 'b' + bi + '[' + pending.length + ']' + (attempt ? '(retry)' : ''), phase: 'Translate', schema: CARDS_SCHEMA, model: '%(model)s', tools: [] })
+    const nws = (NWS_RULE && cur.some(k => INPUTS[k].nws)) ? ('\\n\\n' + NWS_RULE + '\\n') : ''
+    const prompt = PREAMBLE + GRAMMAR + CONV_TR + nws + cur.map(cardBlock).join('')
+    const res = await agent(prompt, { label: label + '[' + cur.length + ']' + (attempt ? '(retry)' : ''), phase: 'Translate', schema: CARDS_SCHEMA, model: '%(model)s', tools: [] })
     if (res && Array.isArray(res.cards)) {
-      pending.forEach((k, i) => { const c = accept(res.cards[i], k); if (c) resolved[k] = c })
+      cur.forEach((k, i) => { const c = accept(res.cards[i], k); if (c) resolved[k] = c })
     }
-    pending = pending.filter(k => !resolved[k])
+    cur = cur.filter(k => !resolved[k])
   }
+  if (BINARY_SPLIT && cur.length > 1) {
+    const mid = Math.ceil(cur.length / 2)
+    const [a, b] = await Promise.all([
+      resolveGroup(cur.slice(0, mid), label + '/A'),
+      resolveGroup(cur.slice(mid), label + '/B'),
+    ])
+    Object.assign(resolved, a.resolved, b.resolved)
+    cur = cur.filter(k => !resolved[k])
+  }
+  return { resolved, pending: cur }
+}
+async function translateBatch(batch, bi) {
+  const { resolved, pending } = await resolveGroup(batch, 'b' + bi)
   // self-healing tier: split-translate-stitch the cards the batch gave up on (no-op unless
   // --selfheal populated FRAGS). Runs only for the few still-failing cards.
+  const healed = {}
   for (const k of pending) { const c = await selfHeal(k); if (c) { resolved[k] = c; healed[k] = 1 } }
   return batch.map(k => ({ key: k, card: resolved[k] || null, judge: null, judge_sonnet: null, escalated: !!healed[k] }))
 }
@@ -585,6 +646,7 @@ return { meta: META, summary, results: out }
         'batches': json.dumps(batches), 'inputs': json.dumps(inputs, ensure_ascii=True),
         'phmaps': json.dumps(phmaps, ensure_ascii=True), 'meta': json.dumps(meta, ensure_ascii=True),
         'frags': json.dumps(frags, ensure_ascii=True), 'phf': json.dumps(phf, ensure_ascii=True),
+        'binary_split': json.dumps(BINARY_SPLIT),
     }
     for bad in ['readFileSync', 'fileURLToPath', 'import.meta']:
         if bad in js:
