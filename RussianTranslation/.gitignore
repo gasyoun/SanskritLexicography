@@ -73,7 +73,12 @@ src/dcs_freq_dims.json
 src/mw_en_tm.json
 src/pilot/run_pilot_wf.en_*.js
 
-# Sa→Ru glossary — PUBLISHED (see glossary/README.md + glossary/index.html on GitHub Pages).
-# The data is tracked; only the >100 MB raw surface JSONL is kept out (GitHub's hard file
-# limit) and shipped instead as surface_glossary.jsonl.gz.
-glossary/surface_glossary.jsonl
+# Sa→Ru glossary — this repo holds only the generation pipeline (src/build_*.py) + docs.
+# The data + live site live in gasyoun/SanskritRussian; regenerate here, don't commit it.
+# Tracked: glossary/README.md, glossary/SAMPLE_root_glossary.md, and the src/ scripts.
+glossary/*.jsonl
+glossary/*.jsonl.gz
+glossary/*.tsv
+glossary/md/
+glossary/surface/
+glossary/index.html
