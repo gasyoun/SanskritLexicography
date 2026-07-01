@@ -22,7 +22,7 @@
 [3,33,32.] *yathā sute bhrātari vā nipātite*
 [R. GORR. 2,45,32.] [KATHĀS. 11,60.] [20,199.] [27,45.] [42,127.] [166.] [RĀJA-TAR. 5,431.] [6,332.] [PAÑCAT. 23,22.] [HIT. II,116.] [BHĀG. P. 1,8,10.] [MĀRK. P. 74,41.] [PRAB. 88,7.] *māṃsaṃ śvacaṇḍālakravyādādinipātitam* so v. a. the flesh of an animal that has been slain,
 [YĀJÑ. 1,192] = [MĀRK. P. 35,20.]
-  <sub>DCS 899 · attested</sub>
+  <sub>attested</sub>
 
 **caus3)** — 3) *karān* Tribut erheben von (abl.): *na cāsthāne na cākāle karāṃstebhyo nipātayet*
 [MBH. 12,3313.]
@@ -31,7 +31,7 @@
 [MBH. 12,3313.]
 - **EN:** — 3) *karān* to levy tribute from (abl.): *na cāsthāne na cākāle karāṃstebhyo nipātayet*
 [MBH. 12,3313.]
-  <sub>DCS 899 · attested</sub>
+  <sub>attested</sub>
 
 **caus4)** — 4) in der Gramm. eine Erscheinung, die sich der allgemeinen Regel nicht fügt, fertig hinstellen, als Unregelmässigkeit besonders aufführen, Etwas als unregelmässig betrachten: *amāvasorahaṃ ṇyatornipātayāmyavṛddhitām* Kār. zu [P. 3,1,122.]
 *ṇyadāyādeśa ityetāvupacāyye nipātitau* Kār.
@@ -55,10 +55,10 @@ Schol. zu [ṚV. PRĀT. 2,35.] Schol. zu [VS. PRĀT. 3,71] in [Ind. St. 4,192.] 
 Schol. zu [P. 5,2,114.] [2,1,72.] [UJJVAL.] zu [UṆĀDIS. 1,41. 42. 54. 58. 66. 148. 149,154] u. s. w. [VOP. 2,13.] — For *nipātya*
 [ŚĀṄKH. ŚR. 4,14,2] better *nipādya* with
 [ŚAT. BR. 12,5,2,7.]
-  <sub>DCS 899 · attested</sub>
+  <sub>attested</sub>
 
 **desid)** — Vgl. *nipātana, nipātanīya, nipātya* .
 
 - **RU:** — Vgl. *nipātana, nipātanīya, nipātya* .
 - **EN:** — Vgl. *nipātana, nipātanīya, nipātya* .
-  <sub>DCS 899 · attested</sub>
+  <sub>attested</sub>

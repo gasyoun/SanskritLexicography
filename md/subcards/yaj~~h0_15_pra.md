@@ -28,7 +28,7 @@
 [10,4,1.] *tava pra yakṣi saṃdṛśam*
 [6,16,8.] *(hotuḥ) tasyānu dharmaṃ pra yaja*
 [3,17,5.] [TS. 3,2,7,1.] [PAÑCAR. 3,6,13. 15. 8,5. 10,9.] med. 8,1.
-  <sub>DCS 6777 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) ein best. Opfer (*prayāja*) darbringen: *yāvāneva paśustaṃ prayajati*
 [TS. 6,3,7,5.]
@@ -37,10 +37,10 @@
 [TS. 6,3,7,5.]
 - **EN:** — 2) to offer a best. sacrifice (*prayāja*): *yāvāneva paśustaṃ prayajati*
 [TS. 6,3,7,5.]
-  <sub>DCS 6777 · attested</sub>
+  <sub>attested</sub>
 
 **note)** — Vgl. *prayaj*, fg., *prayāga, prayāja* .
 
 - **RU:** — Vgl. *prayaj*, fg., *prayāga, prayāja* .
 - **EN:** — Vgl. *prayaj*, fg., *prayāga, prayāja*.
-  <sub>DCS 6777 · attested</sub>
+  <sub>attested</sub>

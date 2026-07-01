@@ -115,7 +115,7 @@
 [BHĀG. P. 7,8,43.] *tasmai kanyā dvādaśemā dakṣastā anvamanyata* so v. a. даровал
 [HARIV. 11523.]
 - **EN:** — *anu* 1) to assent, to consent, to approve; to be favourably disposed, to favour, favere: *viśve devā anvamanyanta hṛdbhiḥ* [ṚV. 1,116,17.] [6,72,3.] *taṃ no devā anu maṃsīrata kratum* [10,37,5.] [AV. 8,2,21.] *sītā viśvairdevairanumatā* [VS. 20,70.] [34,8.] [38,13.] [TS. 3,1,4,1.] [PAÑCAV. BR. 21,10,18.] *anumate 'bhimate vā* [ĀŚV. GṚHY. 4,7,28.] *yadi kanyānumanyate* "if she consents" [M. 9,97.] [MBH. 2,1714.] [13,3609.] *evamevānumaṃsyeran* [14,800.] [HARIV. 6985.] *rājāṅgulyānumanyate* [MĀLAV. 69,22.] *anumanya* [KATHĀS. 30,78.] *anumanya sa tasyāśca svayaṃvarakṛte* "with regard to" [SOM. NALA 21.] [DAŚAK.] in [BENF. Chr. 191,11.] *yathā vāpyanumanyase* "as you please" [R. 6,95,53.] *tadbhavānanumanyatām* [YĀJÑ. 3,334.] [SUŚR. 1,16,15.] [MBH. 1,5583.] [5743.] [R. 2,2,13.] *tasya sādhvanumanyanta — bharatasya vacaḥ śrutvā* [105,11.] [R. GORR. 2,99,22.] [5,18,35.] *tatra nāhamanumantumutsahe moghavṛtti kalabhasya ceṣṭitam* [RAGH. 11,39.] [Spr. 1934.] [KATHĀS. 44,85.] [45,358.] [46,206.] [49,77.] [235.] *tadanumanmahi* [BHĀG. P. 3,16,25.] *tattathetyanvamaṃsata* [8,9,13.] [MĀRK. P. 23,114.] the supplement in infin.: *nānumene mahābāhustāṃ netuṃ vijanaṃ vanam* [R. 2,29,21.] [RĀJA-TAR. 2,116.] *dvāre niyuktapuruṣānumatapraveśaḥ* "allowed, permitted" [MĀLAV. 11,7.] *anusūyayāpi madīyastarko 'numataḥ* "approved" [ŚĀK. 34,7], v. l. *kasyānumate* "consent, permission" [VIKR. 58.] [MBH. 3,279.] [HARIV. 6578.] *anumataprada* [RĀJA-TAR. 5,429.] *avicārānumatena tena* [DAŚAK.] in [BENF. Chr. 188,13.] *parṣado 'numataṃ vratam* "acknowledged, sanctioned" [YĀJÑ. 3,301.] "to approve of" so v. a. "to devote oneself to a thing, to follow": *dharmārthāvabhisaṃtyajya saṃrambhaṃ yo 'numanyate* [MBH. 5,4288.] *vidhimimamanumanya* [VARĀH. BṚH. S. 43,68.] *anumatamuniśāsana* [DAŚAK.] in [BENF. Chr. 184,3.] *vṛṣṭiṃ ca karṣakajanānumatāṃ karoti* "welcome, desired" [VARĀH. BṚH. S. 5,72.] "to acknowledge, ratum ducere; to grant" (someone dat.) (something acc.): *tubhyaṃ ha kṣā anu kṣatraṃ maṃhanā manyata dyauḥ* [ṚV. 4,17,1.] [5,46,4.] [6,52,1.] *anu tanno jāspatirmaṃsīṣṭa ratnaṃ devasya savituriyānaḥ* [7,38,6.] *manyatāmanu (me) tapastapaspatiḥ* [VS. 5,6.] *anu no 'dyānumatiryajñaṃ deveṣu manyatām* [34,9.] "to concede" [23,31.] [TBR. 1,7,2,1.] [3,7,5,2.] [10,9,6.] *aditiriyamevāsmai rājyamanumanyate* [TS. 2,3,1,2.] [ŚAT. BR. 1,9,1,19.] *so 'smai prīto 'numanyate* [4,3,4,11.] [5,3,5,31.] "to give way": *arātīvā cidanu nau maṃsate* [ṚV. 8,51,11.] *ko nāma tavānumaṃsyate . alaktakāṅkāni padāni pādayorvikīrṇakeśāsu paretabhūmiṣu* "to concede, to allow" [KUMĀRAS. 5,68.] *niṣkṛtiṃ ca na tasyāpi anumanyanti karhicit* (so the [ed. Bomb.]) [MBH. 13,6036.] *svavarṣaṃ karmakṣetramanumanyamānaḥ* so v. a. "acknowledging it as the true field for works" [BHĀG. P. 5,4,8.] *kailāśanāthodvahanāya bhūyaḥ puṣpaṃ divaḥ puṣpakamanvamaṃsta* "granted" [RAGH. 14,20.] [BHĀG. P. 7,8,43.] *tasmai kanyā dvādaśemā dakṣastā anvamanyata* so v. a. "gave" [HARIV. 11523.]
-  <sub>DCS 289 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) Jmd Erlaubniss geben, gestatten; mit acc. der Person: *anvenaṃ mātā manyatām*
 [AIT. BR. 2,6.]
@@ -155,7 +155,7 @@
 [YĀJÑ. 2,72.] *kṛtābhimarśāmanumanyamānaḥ sutām* so v. a. снисходить, прощать
 [ŚĀK. 116.]
 - **EN:** — 2) to give someone permission, to allow; with acc. of the person: *anvenaṃ mātā manyatām* [AIT. BR. 2,6.] [VS. 6,9.] *indro vṛtrāya vajramudayacchattaṃ dyāvāpṛthivī nānvamanyetām* "heaven and earth did not allow him that" [TBR. 2,7,3,2.] [MBH. 1,3202.] [4890.] [RĀJA-TAR. 6,195.] [KATHĀS. 17,139.] [32,196.] *sā mānumanyasva vanaṃ vrajantam* [R. 2,21,61.] *anumanyasva māṃ devi gamiṣyantamito vanam* [45.] *rājanyānsvapuranivṛttaye 'numene* [RAGH. 4,87.] *anumene vanāya tam* [MĀRK. P. 76,38.] *anumata* "having permission" [ŚĀṄKH. ŚR. 16,10,15.] [RAGH. 7,64.] [9,49.] [KATHĀS. 43,233.] "to admit someone, to acknowledge" [KUMĀRAS. 1,60.] *kaliṅgasenāmapi yatsapatnīmanumanyate* [KATHĀS. 33,14.] *ubhayānumataḥ sākṣī* [YĀJÑ. 2,72.] *kṛtābhimarśāmanumanyamānaḥ sutām* so v. a. "to overlook, to forgive" [ŚĀK. 116.]
-  <sub>DCS 289 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) mit *na* zurückstossen, Nichts wissen wollen von: *imāṃ svasāraṃ ca yavīyasīṃ me kumudvatīṃ nārhasi nānumantum*
 [RAGH. 16,85.] *bhartāraṃ nānumanyante vinipātagataṃ striyaḥ*
@@ -167,7 +167,7 @@
 [Spr. 3643.] не заботиться о чём-либо, не придавать чему-либо значения: *na nindāmanumanyate*
 [KĀM. NĪTIS. 5,38.]
 - **EN:** — 3) with *na* to reject, to want to have nothing to do with: *imāṃ svasāraṃ ca yavīyasīṃ me kumudvatīṃ nārhasi nānumantum* [RAGH. 16,85.] *bhartāraṃ nānumanyante vinipātagataṃ striyaḥ* [Spr. 3643.] "not to concern oneself with something, to make nothing of something": *na nindāmanumanyate* [KĀM. NĪTIS. 5,38.]
-  <sub>DCS 289 · attested</sub>
+  <sub>attested</sub>
 
 **note)** — Vgl. *anumata* (wo fernere Belege für 1. u. 2. zu finden sind), *˚mati, ˚manana, ˚mantar* . — caus.
 - **EN:** — Vgl. *anumata* (where further attestations for 1. u. 2. are to be found), *˚mati, ˚manana, ˚mantar*. — caus.
@@ -234,4 +234,4 @@
 — 4) принимать во внимание что-либо, учитывать: *tvadāśayamananumānya*
 [DAŚAK.] in [BENF. Chr. 188,1.] — desid. заключать, делать вывод: *manasaiva pure devaḥ pūrvarūpaṃ vipaśyati . anumīmāṃsate 'pūrvaṃ manasā bhagavānajaḥ ..*
 [BHĀG. P. 6,1,48.] *anu anantaramapūrvaṃ rūpaṃ mīmāṃsate yadyasyānurūpaṃ tadvicārayati* Schol.
-  <sub>DCS 289 · attested</sub>
+  <sub>attested</sub>

@@ -34,7 +34,7 @@ Z. 4 lies 3, 31, 19 st. 3, 31, 9.
  10) *kiṃ yātametadbhavati . suṣṭhu yātam . sādhu ca yātam*
 [PAT. a. a. O. 6 (4),43,a.] = *gata, jñāta, siddha*
 [KAIY.]
-  <sub>DCS 5678 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — *samā*
  3) theilhaftig werden: *vastu*

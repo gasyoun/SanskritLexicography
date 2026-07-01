@@ -1,4 +1,4 @@
-## abhi-āp
+## abhi + āp
 
 `_ap~~h0_01_a_bi`
 
@@ -19,6 +19,31 @@
 
 *abhīpsantī*
 [M. 5,156.] med. : *abhīpsate 'nāmayameva teṣām*
+[MBH. 5,17.] *abhīpsita* gewünscht, erwünscht, genehm, lieb
+[AK. 3,2,3.] [61.] *manasā yadabhīpsitam*
+[VIŚV. 15,11.] *ādānam — dānaṃ ca — abhīpsitānāmarthānām*
+[M. 7,204.]
+
+- **RU:** *abhi* доходить до чего-л., достигать
+[ŚAT. BR. 7,4,1,43.] *yatrābhyāpnoti tadabhimṛśya*
+[9,1,2,16.] [13,6,2,20.] Vgl. *abhīpatas*. — caus. доводить до цели: *āte vā recayati na vābhyāpayati*
+[ŚAT. BR. 9,5,2,3.] [1,1,1,15.] [21.] [10,1,3,8.] [10.] [4,3,6.] — desid. стремиться получить, желать чего-л., хотеть; act.: *taṃ kṛtsnaṃ samrāṅguṇamabhīpsati*
+[MBH. 2,534.] *tvāṃ putraṃ cāpyabhīpsāmaḥ*
+[3,14458.] *yadi — yajñaṃ prāptumabhīpsasi*
+[2,632.] *śuddhimabhīpsatā*
+[M. 5,136.] [12,105.] *brahmalokamabhīpsataḥ*
+[YĀJÑ. 1,111.] *yogamabhīpsatā*
+[3,110.] *senāpatimabhīpsantaḥ*
+[R. 1,38,1.] *abhīpsatī*
+[MBH. 1,6469.]
+[R. 2,35,19.]
+
+*abhīpsantī*
+[M. 5,156.] med.: *abhīpsate 'nāmayameva teṣām*
+[MBH. 5,17.] *abhīpsita* желанный, вожделенный, приятный, милый
+[AK. 3,2,3.] [61.] *manasā yadabhīpsitam*
+[VIŚV. 15,11.] *ādānam — dānaṃ ca — abhīpsitānāmarthānām*
+[M. 7,204.]
 - **EN:** — *abhi* to reach up to something, to attain
 [ŚAT. BR. 7,4,1,43.] *yatrābhyāpnoti tadabhimṛśya*
 [9,1,2,16.] [13,6,2,20.] Vgl. *abhīpatas*. — caus. to bring to the goal: *āte vā recayati na vābhyāpayati*
@@ -35,6 +60,7 @@
 
 *abhīpsantī*
 [M. 5,156.] med.: *abhīpsate 'nāmayameva teṣām*
+  <sub>attested</sub>
 
 **ppp)** [MBH. 5,17.] *abhīpsita* gewünscht, erwünscht, genehm, lieb
 [AK. 3,2,3.] [61.] *manasā yadabhīpsitam*

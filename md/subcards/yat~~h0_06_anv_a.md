@@ -14,7 +14,7 @@ in or at; with loc. or acc.: *aśve vai sarvā devatā anvāyattāḥ*
 [12,7,2,19.] [14,5,2,3.] *darvyaṃ pitaro 'nvāyattāḥ*
 [6,8,9.] [CHĀND. UP. 1,10,9. fgg. 11,4. fgg. 2,9,2.]
 *etā eva* (*diśaḥ*) *hotrakā anvāyattāḥ*
-  <sub>DCS 9672 · attested</sub>
+  <sub>attested</sub>
 
 **2)** [ĀŚV. ŚR. 10,10,10.] — caus. anreihen, folgen lassen; in Verbindung bringen, sich betheiligen lassen: mit loc. oder acc.: *devatā evāsminnanvāyātayati* [TBR. 3,8,7,3.] [ŚAT. BR. 13,1,2,9.] *chandāṃsi yajñamanvāyātayati* [3,4,1,23.] [ŚĀṄKH. BR. 12,7. 24,5.] [ĀŚV. ŚR. 4,11,5.] *puroLāśeṣu havīṃṣyanvāyātayeyuḥ* [9,2,22.] [ŚĀṄKH. ŚR. 12,9,8. 13,20,9. 14,3,1. 5,5.]
 
@@ -24,4 +24,4 @@ in or at; with loc. or acc.: *aśve vai sarvā devatā anvāyattāḥ*
 [ŚAT. BR. 13,1,2,9.] *chandāṃsi yajñamanvāyātayati*
 [3,4,1,23.] [ŚĀṄKH. BR. 12,7. 24,5.] [ĀŚV. ŚR. 4,11,5.] *puroLāśeṣu havīṃṣyanvāyātayeyuḥ*
 [9,2,22.] [ŚĀṄKH. ŚR. 12,9,8. 13,20,9. 14,3,1. 5,5.]
-  <sub>DCS 9672 · attested</sub>
+  <sub>attested</sub>

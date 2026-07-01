@@ -9,4 +9,4 @@
 - **RU:** — *acchā* med. подзывать, звать к себе
 [PAÑCAV. BR. 13,6,9.]
 - **EN:** — *acchā* med. "to call hither, summon" [PAÑCAV. BR. 13,6,9.]
-  <sub>DCS 9786 · attested</sub>
+  <sub>attested</sub>

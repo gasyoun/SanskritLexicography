@@ -10,4 +10,4 @@
 [ŚAT. BR. 6,7,2,16.] [4,11.] [9,4,4,11.]
 - **EN:** — *atipra* to be deprived of something (acc.): *nedimāṃ lokānatipraṇaśyāni*
 [ŚAT. BR. 6,7,2,16.] [4,11.] [9,4,4,11.]
-  <sub>DCS 1422 · attested</sub>
+  <sub>attested</sub>

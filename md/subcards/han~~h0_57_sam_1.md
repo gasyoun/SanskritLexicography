@@ -7,4 +7,4 @@
 
 - **RU:** — Vgl. *saṃhat* fgg., *saṃhantar, saṃgha, saṃghāta, sāṃhatya, adrisaṃhata, vajra˚, su˚* .
 - **EN:** Vgl. *saṃhat* fgg., *saṃhantar, saṃgha, saṃghāta, sāṃhatya, adrisaṃhata, vajra˚, su˚*.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>

@@ -10,7 +10,7 @@ u. s. w. [VS. PRĀT. 3,87.] [AV. PRĀT. 4,95.] [TS. PRĀT. 13,12.] [P. 8,4,15.] 
 u. s. w. [VS. PRĀT. 3,87.] [AV. PRĀT. 4,95.] [TS. PRĀT. 13,12.] [P. 8,4,15.] [VOP. 8,22.] [12,3.]
 - **EN:** — *pra*, *prahiṇomi*
 u. s. w. [VS. PRĀT. 3,87.] [AV. PRĀT. 4,95.] [TS. PRĀT. 13,12.] [P. 8,4,15.] [VOP. 8,22.] [12,3.]
-  <sub>DCS 434 · attested</sub>
+  <sub>attested</sub>
 
 **1)** 1) antreiben, erregen: *pra vo devamaśvaṃ na vājinaṃ hiṣe*
 [ṚV. 7,7,1.] *hinvannṛtasya dīdhitiṃ prādhvare*
@@ -22,7 +22,7 @@ u. s. w. [VS. PRĀT. 3,87.] [AV. PRĀT. 4,95.] [TS. PRĀT. 13,12.] [P. 8,4,15.] 
 - **EN:** 1) to drive on, rouse, excite: *pra vo devamaśvaṃ na vājinaṃ hiṣe*
 [ṚV. 7,7,1.] *hinvannṛtasya dīdhitiṃ prādhvare*
 [9,102,8.]
-  <sub>DCS 434 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) schleudern: *cakraṃ tasmai prāhiṇavam*
 [MBH. 3,880.] [12139.] [5,7209.] *prāhiṇvam*
@@ -52,7 +52,7 @@ u. s. w. [VS. PRĀT. 3,87.] [AV. PRĀT. 4,95.] [TS. PRĀT. 13,12.] [P. 8,4,15.] 
 [BHAṬṬ. 15,121.]
 [PAÑCAT. 40,18.] *aśokāya pādam*
 [MĀLAV. 38,11.]
-  <sub>DCS 434 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) herbei —, hinschaffen, liefern, Jmd Etwas zustellen, zukommen lassen: *pitṛbhyaḥ*
 [ṚV. 10,16,1.] *ūrmiṃ devamādanam*
@@ -82,7 +82,7 @@ u. s. w. [VS. PRĀT. 3,87.] [AV. PRĀT. 4,95.] [TS. PRĀT. 13,12.] [P. 8,4,15.] 
 [KATHĀS. 10,100.] [21,89.] *asyāmbhaḥ*
 [25,132.] [43,92.] *prābhṛtaṃ praheṣyāmi*
 [121,224.] [RĀJA-TAR. 3,250.] [321.] [BHĀG. P. 9,4,34.]
-  <sub>DCS 434 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) absenden (einen Boten), wegschicken,
 
@@ -205,7 +205,7 @@ to drive out, expel, send to someone (dat.), to or into something (acc.): *kravy
 [2,3.] [27,110.] [43,111.] *yoddhum*
 [BHAṬṬ. 14,1.] pass. *prahīyatām*
 [KATHĀS. 101,113.]
-  <sub>DCS 434 · attested</sub>
+  <sub>attested</sub>
 
 **5)** — 5) so v. a. *preṣayati* auffordern, anweisen
 [LĀṬY. 1,1,13. 8,3,2.] *putraṃ śvetaketuṃ prajighāya yājayeti*
@@ -217,7 +217,7 @@ to drive out, expel, send to someone (dat.), to or into something (acc.): *kravy
 - **EN:** — 5) thus v. a. *preṣayati* to summon, direct, instruct
 [LĀṬY. 1,1,13. 8,3,2.] *putraṃ śvetaketuṃ prajighāya yājayeti*
 [KAUṢ. UP. 1,1.]
-  <sub>DCS 434 · attested</sub>
+  <sub>attested</sub>
 
 **6)** — 6) med. dahinfahren: *rathā iva pra sargā aheṣata*
 [ṚV. 9,22,1.]
@@ -226,7 +226,7 @@ to drive out, expel, send to someone (dat.), to or into something (acc.): *kravy
 [ṚV. 9,22,1.]
 - **EN:** — 6) med. to travel away, go forth: *rathā iva pra sargā aheṣata*
 [ṚV. 9,22,1.]
-  <sub>DCS 434 · attested</sub>
+  <sub>attested</sub>
 
 **7)** — 7) hierher die Form *prajidhyatu* davonlaufen: *ata eva parāṅpraji˚ (= gacchatu*
 [SĀY.]) [AIT. BR. 8,28.]
@@ -235,7 +235,7 @@ to drive out, expel, send to someone (dat.), to or into something (acc.): *kravy
 [SĀY.]) [AIT. BR. 8,28.]
 - **EN:** — 7) here belongs the form *prajidhyatu* to run away: *ata eva parāṅpraji˚ (= gacchatu*
 [SĀY.]) [AIT. BR. 8,28.]
-  <sub>DCS 434 · attested</sub>
+  <sub>attested</sub>
 
 **8)** — 8) = 2. *hā* mit *pra* verlassen, im Stich lassen: *tamapaṇḍitam . te 'kṛtārthaṃ prahiṇvanti prāṇā rāyaḥ sutādayaḥ*
 [Spr. (II) 4151] ([BHĀG. P.]).
@@ -244,7 +244,7 @@ to drive out, expel, send to someone (dat.), to or into something (acc.): *kravy
 [Spr. (II) 4151] ([BHĀG. P.]).
 - **EN:** — 8) = 2. *hā* with *pra* to forsake, abandon, leave in the lurch: *tamapaṇḍitam . te 'kṛtārthaṃ prahiṇvanti prāṇā rāyaḥ sutādayaḥ*
 [Spr. (II) 4151] ([BHĀG. P.]).
-  <sub>DCS 434 · attested</sub>
+  <sub>attested</sub>
 
 **9)** — 9) partic. *prahita*
 
@@ -287,7 +287,7 @@ u. s. w. [ṚV. 10,165,4.] [AV. 2,29,4.] [6,29,2.] [8,2,11.] [18,4,65.] [ŚAT. B
 [R. 2,46,2.]
 [KATHĀS. 27,54.]
 [MĀRK. P. 114,6.]
-  <sub>DCS 434 · attested</sub>
+  <sub>attested</sub>
 
 **9a)** a) angetrieben, angefeuert: *pārtha˚*
 [BHĀG. P. 3,1,9.] *kāla˚*
@@ -298,7 +298,7 @@ u. s. w. [ṚV. 10,165,4.] [AV. 2,29,4.] [6,29,2.] [8,2,11.] [18,4,65.] [ŚAT. B
 [BHĀG. P. 3,1,9.] *kāla˚*
 [7,2,56.] *daiva˚*
 [8,20,14.] [9,6,29.] [22,16.]
-  <sub>DCS 434 · attested</sub>
+  <sub>attested</sub>
 
 **9b)** — b) geschleudert
 [AK. 2,8,2,56.]
@@ -331,7 +331,7 @@ u. s. w. [ṚV. 10,165,4.] [AV. 2,29,4.] [6,29,2.] [8,2,11.] [18,4,65.] [ŚAT. B
 [RAGH. 2,27.] [13,42.] [15,84.]
 [BHĀG. P. 3,3,7.] *vicāramārgaprahitena cetasā*
 [KUMĀRAS. 5,42.]
-  <sub>DCS 434 · attested</sub>
+  <sub>attested</sub>
 
 **9c)** — c) hingeschafft, zugestellt, zugesandt (von Sachen)
 [KATHĀS. 12,192.] [21,91.] *lekha*
@@ -344,7 +344,7 @@ u. s. w. [ṚV. 10,165,4.] [AV. 2,29,4.] [6,29,2.] [8,2,11.] [18,4,65.] [ŚAT. B
 [42,109.] [124,198.] *mālā*
 [50,136.] [DAŚAK. 87,8.] [PAÑCAT. ed. orn. 55,7.] *kuśala* ad
 [MEGH. 112.]
-  <sub>DCS 434 · attested</sub>
+  <sub>attested</sub>
 
 **9d)** — d) ausgesandt
 [H. 1492.] Boten
@@ -373,4 +373,4 @@ u. s. w. [ṚV. 10,165,4.] [AV. 2,29,4.] [6,29,2.] [8,2,11.] [18,4,65.] [ŚAT. B
 [R. 2,46,2.]
 [KATHĀS. 27,54.]
 [MĀRK. P. 114,6.]
-  <sub>DCS 434 · attested</sub>
+  <sub>attested</sub>

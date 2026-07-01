@@ -10,4 +10,4 @@
 [ŚAT. BR. 1,8,1,6.]
 - **EN:** — *antar* to cut off, intercludere: *taṃ tu tvā mā girau santamudakamantaśchaitsīt*
 [ŚAT. BR. 1,8,1,6.]
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>

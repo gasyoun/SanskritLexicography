@@ -21,4 +21,4 @@ v. l. für *sru (gatau)*
 v. l. для *sru (gatau)*
 [DHĀTUP. 22,42.]
 [VOP. 8,95.] *asāvīt, suṣavitha, suṣuviva, savitā* und *sotā* 96.
-  <sub>DCS 14088 · lexicographic</sub>
+  <sub>lexicographic</sub>

@@ -16,4 +16,4 @@
 [P. 8,4,17.]
 [VOP. 8,22.] [11,5.] to become calm: *praṇiśāmya daśagrīva*
 [BHAṬṬ. 9,100.]
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>

@@ -10,7 +10,7 @@
  1) _adj._ поющий, в конце comp. s. *sāmagā* .
 - **EN:** 4. *gā*¦ (= 2. *gā*)
  1) _adj._ singing, at the end of a comp. s. *sāmagā* .
-  <sub>DCS 1930 · lexicographic</sub>
+  <sub>lexicographic</sub>
 
 **2)** — 2) _f._ Gesang, Vers (*gāthā*)
 [PURUṢ.] im [ŚKDR.]
@@ -24,9 +24,9 @@
 
 - **RU:** — 2) _f._ песнь, стих (*gāthā*)
 [PURUṢ.] в [ŚKDR.]
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **cross-ref)** — Vgl. 2. *ga* .
 
 - **RU:** — Vgl. 2. *ga* .
-  <sub>DCS 1930 · lexicographic</sub>
+  <sub>lexicographic</sub>

@@ -10,4 +10,4 @@
 [KAUŚ. 97.]
 - **EN:** — *apa* to drive away or expel by means of a sacrifice: *tāṃste yajñasya māyayā sarvānapayajāmasi*
 [KAUŚ. 97.]
-  <sub>DCS 6777 · attested</sub>
+  <sub>attested</sub>

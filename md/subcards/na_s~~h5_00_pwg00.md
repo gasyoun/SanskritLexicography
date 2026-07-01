@@ -10,4 +10,4 @@
 [HARIV. 4167] по чтению новейших Ausg.
 - **EN:** 1. *naś*¦ with *vi, vyanaśat* with caus. Bed.
 [HARIV. 4167] according to the reading of the more recent Ausg.
-  <sub>DCS 1422 · attested</sub>
+  <sub>attested</sub>

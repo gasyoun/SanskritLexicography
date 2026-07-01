@@ -25,7 +25,7 @@
 [MEGH. 29.] *(bāṇāḥ) saṃnipeturakuṇṭhāgrā nāgeṣu ca hayeṣu ca*
 [MBH. 6,2126.] *saṃnyapatanbhuvi*
 [15,647.] [HARIV. 5830.] [6351.]
-  <sub>DCS 103 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) zu Grunde gehen, umkommen
 [MBH. 7,434.]
@@ -34,7 +34,7 @@
 [MBH. 7,434.]
 - **EN:** — 2) to perish, be destroyed
 [MBH. 7,434.]
-  <sub>DCS 103 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) zusammenkommen, zusammenstossen, zusammentreffen, zusammenfallen: *śataśaḥ saṃnipatya*
 [MBH. 2,2003.] *gajāścācalasaṃkāśāḥ saṃnipetuḥ samantataḥ*
@@ -70,7 +70,7 @@
 [ṚV. PRĀT. 15,12] (read *saṃnipateddvitīyam* at
 [REGNIER]). [ŚĀṄKH. ŚR. 13,30,2.] [ĀŚV. GṚHY. 1,7.] *saṃnipatyopakāraka* in the Gegens. to *ārādupakāraka*
 [MADHUS.] in [Ind. St. 1,15,6.]
-  <sub>DCS 103 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) sich darbieten: *na saṃnipatitaṃ dharmyamupabhogaṃ yadṛcchayā . pratyācakṣe na cāpyenamanurundhye sudurlabham ..*
 [MBH. 12,6676.]
@@ -79,7 +79,7 @@
 [MBH. 12,6676.]
 - **EN:** — 4) to present itself, offer itself: *na saṃnipatitaṃ dharmyamupabhogaṃ yadṛcchayā . pratyācakṣe na cāpyenamanurundhye sudurlabham ..*
 [MBH. 12,6676.]
-  <sub>DCS 103 · attested</sub>
+  <sub>attested</sub>
 
 **caus-1)** — Vgl. *saṃnipāta* . — caus.
  1) herabwerfen, herabschleudern, herabschiessen, abschiessen: *chattraṃ dhvajaṃ ca samare śarābhyāṃ saṃnyapātayat*
@@ -106,7 +106,7 @@
 **Caus. addendum header)** — Vgl. *saṃnipāta* . — caus.
 
 - **RU:** — Vgl. *saṃnipāta* . — caus.
-  <sub>DCS 103 · attested</sub>
+  <sub>attested</sub>
 
 **Caus. 1)** 1) herabwerfen, herabschleudern, herabschiessen, abschiessen: *chattraṃ dhvajaṃ ca samare śarābhyāṃ saṃnyapātayat*
 [MBH. 7,7488.] *taiḥ śarairmūrdhni susaṃnipātitaiḥ*
@@ -115,7 +115,7 @@
 - **RU:** 1) бросать вниз, низвергать, метать, выпускать (стрелу): *chattraṃ dhvajaṃ ca samare śarābhyāṃ saṃnyapātayat*
 [MBH. 7,7488.] *taiḥ śarairmūrdhni susaṃnipātitaiḥ*
 [R. 5,42,8.] Vgl. *saṃnipātya* .
-  <sub>DCS 103 · attested</sub>
+  <sub>attested</sub>
 
 **Caus. 2)** — 2) zusammenkommenlassen, versammeln, vereinigen, zusammenbringen: *tvatkṛte hi mayā vīra rājānaḥ saṃnipātitāḥ*
 [MBH. 3,2162.]
@@ -132,4 +132,4 @@
 
 (в обоих последних местах следует без сомнения читать *saṃnipātya*). *pūrve cārdhapuruṣīye pañcamabhāgīyārdhapuruṣīyayoḥ saṃnipātya*
 [KĀTY. ŚR. 16,8,16.]
-  <sub>DCS 103 · attested</sub>
+  <sub>attested</sub>

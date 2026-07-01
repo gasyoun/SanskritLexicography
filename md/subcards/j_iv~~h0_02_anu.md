@@ -16,7 +16,7 @@
  1) to live after the manner of someone, to live as another does; with the acc.: *imaṃ paścādanu jīvātha sarve*
 [TS. 5,7,4,4.] *anvajīvadamarālakeśvarau*
 [RAGH. 19,15.]
-  <sub>DCS 14 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) für Jmd leben, sich ihm ganz hingeben, ihm zugethan sein: *trayodaśemā hi samāḥ sadā vayaṃ tvāmanvajīviṣma dhanaṃjayāśayā*
 [MBH. 8,3388.] *jīvantāvanujīvāmi bhartavyau tau mameti ca*
@@ -31,7 +31,7 @@
 [MBH. 8,3388.] *jīvantāvanujīvāmi bhartavyau tau mameti ca*
 [SĀV. 5,94.] *ye ca tvāmanujīvanti nāhaṃ teṣāṃ na te mama*
 [R. 2,42,7.]
-  <sub>DCS 14 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) leben von, bestehen durch, erhalten werden von; mit dem acc.: *jīvantaṃ tvānujīvantu prajāḥ sarvā yudhiṣṭhira .. parjanyamiva bhūtāni mahādrumamivāṇḍajāḥ . kuveramiva rakṣāṃsi śatakratumivāmarāḥ .. jñātayastvānujīvantu suhṛdaśca* (vgl. *anu tvāṃ tāta jīvantu brāhmaṇāḥ suhṛdastathā . parjanyamiva bhūtāni devā iva śatakratum ..*
 [5,4535]) [MBH. 13,3100. fgg.] [14,16.] [R. 5,2,35.]
@@ -40,7 +40,7 @@
 [5,4535]) [MBH. 13,3100. fgg.] [14,16.] [R. 5,2,35.]
 - **EN:** — 3) to live off, to subsist through, to be sustained by; with the acc.: *jīvantaṃ tvānujīvantu prajāḥ sarvā yudhiṣṭhira .. parjanyamiva bhūtāni mahādrumamivāṇḍajāḥ . kuveramiva rakṣāṃsi śatakratumivāmarāḥ .. jñātayastvānujīvantu suhṛdaśca* (vgl. *anu tvāṃ tāta jīvantu brāhmaṇāḥ suhṛdastathā . parjanyamiva bhūtāni devā iva śatakratum ..*
 [5,4535]) [MBH. 13,3100. fgg.] [14,16.] [R. 5,2,35.]
-  <sub>DCS 14 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) sich in Etwas (acc.) fügen, Jmd Etwas gönnen: *yāṃ tāṃ śriyamasūyāma purā dṛṣṭvā yudhiṣṭhire . adya tāmanujīvāmaḥ*
 [MBH. 7,428.] — caus. Jmd wieder zum Leben bringen
@@ -52,10 +52,10 @@
 - **EN:** — 4) to acquiesce in something (acc.) , to grant someone something: *yāṃ tāṃ śriyamasūyāma purā dṛṣṭvā yudhiṣṭhire . adya tāmanujīvāmaḥ*
 [MBH. 7,428.] — caus. to bring someone back to life
 [DAŚAK.] in [BENF. Chr. 187,9.]
-  <sub>DCS 14 · attested</sub>
+  <sub>attested</sub>
 
 **note)** — Vgl. *anujīvin, anujīvya* .
 
 - **RU:** Caus. Vgl. *anujīvin, anujīvya*.
 - **EN:** — Vgl. *anujīvin, anujīvya*.
-  <sub>DCS 14 · attested</sub>
+  <sub>attested</sub>

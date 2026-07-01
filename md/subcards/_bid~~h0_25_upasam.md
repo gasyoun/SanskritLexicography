@@ -10,4 +10,4 @@
 [LĀṬY. 5,1,4.]
 - **EN:** — *upasam* dass.
 [LĀṬY. 5,1,4.]
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>

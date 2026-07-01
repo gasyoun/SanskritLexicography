@@ -10,7 +10,7 @@
 [MBH. 4,2126.]
 - **EN:** — 13) consequence, result: *mā te svako 'rtho nipateta mohāttatsaṃvidhātavyamariṣṭbandham (= ariṣṭbaddham)* thus v. a. that which brings well-being
 [MBH. 4,2126.]
-  <sub>DCS 2655 · attested</sub>
+  <sub>attested</sub>
 
 **14)** — 14) in der Rhet. Lautgefüge, Wortgefüge
 [KĀVYĀD. 1,47.] *˚pāruṣya*
@@ -28,7 +28,7 @@
 [PRATĀPAR. 11,a,9.] [Verz. d. Oxf. H. 207,a,28.] [DHŪRTAS. 68,12.] *kāvya˚* poetic work
 [SĀH. D. 6,12.] *mṛdaṅgādidhvānabandha* a structure of tones, music
 [ŚATR. 10,127.]
-  <sub>DCS 2655 · attested</sub>
+  <sub>attested</sub>
 
 **15)** — 15) eine Krankheit, bei welcher die Augenlider nicht ganz geschlossen werden können (vollständig *vartmabandha)*
 [SUŚR. 2,309,1.]
@@ -37,7 +37,7 @@
 [SUŚR. 2,309,1.]
 - **EN:** — 15) a disease in which the eyelids cannot be fully closed (in full *vartmabandha)*
 [SUŚR. 2,309,1.]
-  <sub>DCS 2655 · attested</sub>
+  <sub>attested</sub>
 
 **16)** — 16) in Verbindung mit Zahlwörtern Theil: *daśa˚* ein Zehntel
 [M. 8,107.] *pañca˚* (u. *pañcabandha* nicht genau erklärt)
@@ -52,7 +52,7 @@
 — Vgl. *aṅka˚, artha˚* (also
 [VIKR. 32]), *ka˚, kari˚, ku˚, kūṭa˚, keśa˚, dakṣiṇā˚, paṇa˚* (also
 [DAŚAK.] in [BENF. Chr. 183,20. 191,16]), *pattra˚, padma˚, paśu˚, pāṇi˚, pāda˚, prema˚, premā˚, maṇi˚, rajju˚, roma˚, vatsa˚, vastra˚, vātsa˚, veṇī˚, śreṇī˚* .
-  <sub>DCS 2655 · attested</sub>
+  <sub>attested</sub>
 
 **Nachtr)** — Vgl. *aṅka˚, artha˚* (auch
 [VIKR. 32]), *ka˚, kari˚, ku˚, kūṭa˚, keśa˚, dakṣiṇā˚, paṇa˚* (auch
@@ -61,4 +61,4 @@
 - **RU:** — Vgl. *aṅka˚, artha˚* (также
 [VIKR. 32]), *ka˚, kari˚, ku˚, kūṭa˚, keśa˚, dakṣiṇā˚, paṇa˚* (также
 [DAŚAK.] в [BENF. Chr. 183,20. 191,16]), *pattra˚, padma˚, paśu˚, pāṇi˚, pāda˚, prema˚, premā˚, maṇi˚, rajju˚, roma˚, vatsa˚, vastra˚, vātsa˚, veṇī˚, śreṇī˚* .
-  <sub>DCS 2655 · attested</sub>
+  <sub>attested</sub>

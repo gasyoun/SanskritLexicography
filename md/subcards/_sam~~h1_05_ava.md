@@ -10,4 +10,4 @@
 [AIT. BR. 3,34.]
 - **EN:** — *ava* partic. *˚śānta* extinguished
 [AIT. BR. 3,34.]
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>

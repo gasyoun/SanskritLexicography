@@ -7,4 +7,4 @@
 
 - **RU:** 3. *su*¦ _adj._ в *dāvasu*, возможно, восходит к 2. *su*.
 - **EN:** 3. *su*¦ _adj._ in *dāvasu* perhaps to be traced back to 2. *su*.
-  <sub>DCS 14088 · attested</sub>
+  <sub>attested</sub>

@@ -45,7 +45,7 @@
 
 - **RU:** — Vgl. *jighāṃsaka* fgg.
 - **EN:** — Vgl. *jighāṃsaka* fgg.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **desid-head)** — desid. *jighāṃsati*
 [P. 6,4,16.] [7,3,55.]
@@ -84,4 +84,4 @@
 [HARIV. 9281.] *jighāṃsita*
 [KATHĀS. 36,91.]
 [DAŚAK. 172,13.]
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>

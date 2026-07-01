@@ -19,4 +19,4 @@
 [RĀJA-TAR. 6,205.] *āśramam*
 [RAGH. 2,67.]
 [KATHĀS. 13,194.] [53,22.]
-  <sub>DCS 9 · attested</sub>
+  <sub>attested</sub>

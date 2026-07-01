@@ -13,4 +13,4 @@
 - **EN:** — *paryā* to come from (abl.)
 [ṚV. 8,8,3.] *ā no yātaṃ divaspari* 4. *ā yāhyarya ā pari svāhā somasya pītaye*
 [34,10.]
-  <sub>DCS 5678 · attested</sub>
+  <sub>attested</sub>

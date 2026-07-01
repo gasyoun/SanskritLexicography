@@ -13,7 +13,7 @@ v. l. *saṃdeśane, bhāṣaṇe*)
 - **EN:** — caus. *vādayati*, *˚te* (*saṃdeśavacane*,
 v. l. *saṃdeśane, bhāṣaṇe*)
 [DHĀTUP. 34,34.] med. [P. 1,3,89.] [VOP. 23,58.]
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **caus-1)** 1) Etwas sagen —, sprechen lassen: *ativādaṃ na pravadenna vādayedyaḥ*
 [MBH. 5,1270.] Jmd zum Reden veranlassen, — auffordern: *vādito 'pi na vadati*
@@ -25,7 +25,7 @@ v. l. *saṃdeśane, bhāṣaṇe*)
 - **EN:** 1) to cause someone to say something, to make speak: *ativādaṃ na pravadenna vādayedyaḥ*
 [MBH. 5,1270.] to cause someone to speak, to call upon to speak: *vādito 'pi na vadati*
 [Verz. d. Oxf. H. 156,a,24.]
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **caus-2)** — 2) ertönen —, erklingen lassen, spielen (ein musikalisches Instrument): act., selten med.: *vīṇām*
 [ŚAT. BR. 3,2,4,6.] [13,1,5,1.]
@@ -154,7 +154,7 @@ v. l. *saṃdeśane, bhāṣaṇe*)
 [VARĀH. BṚH. S. 33,23.]
 [BṚH. 27 (25),9.] *vādyamāna* _n._ dass.: *bherīśaṅkhamṛdaṅgānāṃ paṇavānāṃ sahasraśaḥ . vādyamānaṃ sa (vādyamānāni* the more recent Ausg.)
 [HARIV. 6889.]
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **caus-3)** — 3) von Jmd (ein musikalisches Instrument) spielen lassen: *avīvadadvīṇāṃ parivādakena*
 Schol. zu [P. 1,1,58], Vārtt. 2. [7,4,1], Vārtt. 3. 93, Vārtt. 1.
@@ -163,7 +163,7 @@ Schol. zu [P. 1,1,58], Vārtt. 2. [7,4,1], Vārtt. 3. 93, Vārtt. 1.
 Schol. к [P. 1,1,58], Vārtt. 2. [7,4,1], Vārtt. 3. 93, Vārtt. 1.
 - **EN:** — 3) to have (a musical instrument) played by someone: *avīvadadvīṇāṃ parivādakena*
 Schol. to [P. 1,1,58], Vārtt. 2. [7,4,1], Vārtt. 3. 93, Vārtt. 1.
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **caus-4)** — 4) sprechen, hersagen: *nāndīṃ ca vādayāmāsa pradyumno gada eva ca*
 [HARIV. 8692.] die neuere Ausg. liest *nāndiṃ* und
@@ -181,9 +181,9 @@ Schol. to [P. 1,1,58], Vārtt. 2. [7,4,1], Vārtt. 3. 93, Vārtt. 1.
 - **RU:** — 4) произносить, читать вслух: *nāndīṃ ca vādayāmāsa pradyumno gada eva ca*
 [HARIV. 8692.] более новое Ausg. читает *nāndiṃ* и
 [NĪLAK.] трактует слово ошибочно в значении Bed. музыкального инструмента.
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **caus. cross-ref)** — Vgl. *jalavādita* .
 
 - **RU:** — Vgl. *jalavādita* .
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>

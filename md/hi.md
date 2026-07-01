@@ -108,7 +108,7 @@ _PWG article — 20 sub-card(s), 110 sense(s) · RU 101/110 · EN 61/110_
 [TS. 3,2,5,3.]
 [KĀTY. ŚR. 9,12,4.] *hinv, hinvati*
 [DHĀTUP. 15,82] (*prīṇanārtha*); vgl. *in, inv* .
-  <sub>DCS 23914 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) schleudern: *vajraṃ hinvanti sāyakam*
 [ṚV. 1,84,11.] *kasmānna hinoṣi vajram*
@@ -129,7 +129,7 @@ _PWG article — 20 sub-card(s), 110 sense(s) · RU 101/110 · EN 61/110_
 [8,10,55.] pass.: *gadā śakrajitā jidhye*
 [BHAṬṬ. 14,36.] med.: *hinvāno vācam* giving forth the voice
 [ṚV. 9,84,4.]
-  <sub>DCS 23914 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) fördern, unterstützen, verhelfen zu (dat.)
 [ṚV. 1,18,4.] *dhiye*
@@ -153,7 +153,7 @@ _PWG article — 20 sub-card(s), 110 sense(s) · RU 101/110 · EN 61/110_
 [8,60,5.] *kratave*
 [10,27,16.] [9,36,3.] *na vā u somo vṛjinaṃ hinoti*
 [7,104,13.] [8,4,16.] [47,6.] [AV. 4,8,7.]
-  <sub>DCS 23914 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) her —, hinbefördern, herbeischaffen: *somam*
 [ṚV. 3,46,5.] *dhāsimattave*
@@ -168,7 +168,7 @@ _PWG article — 20 sub-card(s), 110 sense(s) · RU 101/110 · EN 61/110_
 [ṚV. 3,46,5.] *dhāsimattave*
 [8,43,29.] *devebhyaḥ*
 [ŚAT. BR. 3,5,1,35.]
-  <sub>DCS 23914 · attested</sub>
+  <sub>attested</sub>
 
 **5)** — 5) = 2. *hā* verlassen, aufgeben: *padavīṃ na hinvanti*
 [BHĀG. P. 5,1,5.] *yāvadidaṃ (kalevaraṃ) hinomyaham*
@@ -186,7 +186,7 @@ _PWG article — 20 sub-card(s), 110 sense(s) · RU 101/110 · EN 61/110_
 [1,9,24.] *karma hinvan*
 [7,10,11.] to get rid of, to free oneself from
 [10,77,32.]
-  <sub>DCS 23914 · attested</sub>
+  <sub>attested</sub>
 
 **6)** — 6) als ungewöhnliche Form könnte hierher gehören *hayantā* du. concitantes sc. equos
 [ṚV. 1,116,18] und *apāṃ napātamaśvinā hayantam (hayatam*, wie unsre Hdschr. liest, wäre treibet an)
@@ -201,7 +201,7 @@ _PWG article — 20 sub-card(s), 110 sense(s) · RU 101/110 · EN 61/110_
 [ṚV. 1,116,18] and *apāṃ napātamaśvinā hayantam (hayatam*, as our Hdschr. reads, would mean drives on)
 [TS. 1,6,12,4.] the text is however uncertain, as
 [AV. 19,42,4] shows. = *airśvasaṃgamayitāram* Comm.
-  <sub>DCS 23914 · attested</sub>
+  <sub>attested</sub>
 
 **1)** 1. *hi*¦, *hinoti*
 [DHĀTUP. 27,11] (*gatau vṛddhau*).* (pra) hiṇmasi*
@@ -214,12 +214,12 @@ _PWG article — 20 sub-card(s), 110 sense(s) · RU 101/110 · EN 61/110_
 [AV.] *ahetana, ahema, ahyam, ahyan, (pra) ahait, (pra) ahaiṣīt, (pra) jighāya*
 [P. 7,3,56.]
 [VOP. 12,4.] *jidhyus, (pra) heṣyāmi* . med. *hinve, hinvate, hinvire, (pra) hiṣe, aheṣata*
-  <sub>DCS 23914 · attested</sub>
+  <sub>attested</sub>
 
 **3)** 3. pl., *hinvāna*; partic. *hita* s. bes.
 
 - **RU:** 3. pl., *hinvāna*; partic. *hita* s. bes.
-  <sub>DCS 23914 · attested</sub>
+  <sub>attested</sub>
 
 ## hi
 
@@ -233,7 +233,7 @@ _PWG article — 20 sub-card(s), 110 sense(s) · RU 101/110 · EN 61/110_
 [P. 7,3,56], Schol. [VOP. 18,1.]
 - **EN:** — caus. aor. *ajīhayat*
 [P. 7,3,56], Schol. [VOP. 18,1.]
-  <sub>DCS 23914 · attested</sub>
+  <sub>attested</sub>
 
 ## hi
 
@@ -247,7 +247,7 @@ _PWG article — 20 sub-card(s), 110 sense(s) · RU 101/110 · EN 61/110_
 [P. 7,3,56], Schol.
 - **EN:** — desid. *jighīṣati*
 [P. 7,3,56], Schol.
-  <sub>DCS 23914 · attested</sub>
+  <sub>attested</sub>
 
 ## hi
 
@@ -258,7 +258,7 @@ _PWG article — 20 sub-card(s), 110 sense(s) · RU 101/110 · EN 61/110_
 
 - **RU:** — intens. *jeghīyate* ebend.
 - **EN:** — intens. *jeghīyate* ebend.
-  <sub>DCS 23914 · attested</sub>
+  <sub>attested</sub>
 
 ## hi
 
@@ -272,7 +272,7 @@ _PWG article — 20 sub-card(s), 110 sense(s) · RU 101/110 · EN 61/110_
 [BHĀG. P. 10,33,40.]
 - **EN:** — *apa* to throw off, to free oneself from: *hṛdrogam*
 [BHĀG. P. 10,33,40.]
-  <sub>DCS 23914 · attested</sub>
+  <sub>attested</sub>
 
 ## hi
 
@@ -286,7 +286,7 @@ _PWG article — 20 sub-card(s), 110 sense(s) · RU 101/110 · EN 61/110_
 [ṚV. 9,74,8.]
 - **EN:** — *ā* med. to fetch, procure, bring hither
 [ṚV. 9,74,8.]
-  <sub>DCS 23914 · attested</sub>
+  <sub>attested</sub>
 
 ## hi
 
@@ -303,7 +303,7 @@ _PWG article — 20 sub-card(s), 110 sense(s) · RU 101/110 · EN 61/110_
 - **EN:** — *pari* to convey to a place, transport: *yāṃ vāṃ hotrāṃ parihinomi* (
 [AV. PRĀT. 3,88]) *medhayā*
 [ṚV. 7,104,6.]
-  <sub>DCS 23914 · attested</sub>
+  <sub>attested</sub>
 
 ## prahi
 
@@ -317,7 +317,7 @@ u. s. w. [VS. PRĀT. 3,87.] [AV. PRĀT. 4,95.] [TS. PRĀT. 13,12.] [P. 8,4,15.] 
 u. s. w. [VS. PRĀT. 3,87.] [AV. PRĀT. 4,95.] [TS. PRĀT. 13,12.] [P. 8,4,15.] [VOP. 8,22.] [12,3.]
 - **EN:** — *pra*, *prahiṇomi*
 u. s. w. [VS. PRĀT. 3,87.] [AV. PRĀT. 4,95.] [TS. PRĀT. 13,12.] [P. 8,4,15.] [VOP. 8,22.] [12,3.]
-  <sub>DCS 434 · attested</sub>
+  <sub>attested</sub>
 
 **1)** 1) antreiben, erregen: *pra vo devamaśvaṃ na vājinaṃ hiṣe*
 [ṚV. 7,7,1.] *hinvannṛtasya dīdhitiṃ prādhvare*
@@ -329,7 +329,7 @@ u. s. w. [VS. PRĀT. 3,87.] [AV. PRĀT. 4,95.] [TS. PRĀT. 13,12.] [P. 8,4,15.] 
 - **EN:** 1) to drive on, rouse, excite: *pra vo devamaśvaṃ na vājinaṃ hiṣe*
 [ṚV. 7,7,1.] *hinvannṛtasya dīdhitiṃ prādhvare*
 [9,102,8.]
-  <sub>DCS 434 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) schleudern: *cakraṃ tasmai prāhiṇavam*
 [MBH. 3,880.] [12139.] [5,7209.] *prāhiṇvam*
@@ -359,7 +359,7 @@ u. s. w. [VS. PRĀT. 3,87.] [AV. PRĀT. 4,95.] [TS. PRĀT. 13,12.] [P. 8,4,15.] 
 [BHAṬṬ. 15,121.]
 [PAÑCAT. 40,18.] *aśokāya pādam*
 [MĀLAV. 38,11.]
-  <sub>DCS 434 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) herbei —, hinschaffen, liefern, Jmd Etwas zustellen, zukommen lassen: *pitṛbhyaḥ*
 [ṚV. 10,16,1.] *ūrmiṃ devamādanam*
@@ -389,7 +389,7 @@ u. s. w. [VS. PRĀT. 3,87.] [AV. PRĀT. 4,95.] [TS. PRĀT. 13,12.] [P. 8,4,15.] 
 [KATHĀS. 10,100.] [21,89.] *asyāmbhaḥ*
 [25,132.] [43,92.] *prābhṛtaṃ praheṣyāmi*
 [121,224.] [RĀJA-TAR. 3,250.] [321.] [BHĀG. P. 9,4,34.]
-  <sub>DCS 434 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) absenden (einen Boten), wegschicken,
 
@@ -512,7 +512,7 @@ to drive out, expel, send to someone (dat.), to or into something (acc.): *kravy
 [2,3.] [27,110.] [43,111.] *yoddhum*
 [BHAṬṬ. 14,1.] pass. *prahīyatām*
 [KATHĀS. 101,113.]
-  <sub>DCS 434 · attested</sub>
+  <sub>attested</sub>
 
 **5)** — 5) so v. a. *preṣayati* auffordern, anweisen
 [LĀṬY. 1,1,13. 8,3,2.] *putraṃ śvetaketuṃ prajighāya yājayeti*
@@ -524,7 +524,7 @@ to drive out, expel, send to someone (dat.), to or into something (acc.): *kravy
 - **EN:** — 5) thus v. a. *preṣayati* to summon, direct, instruct
 [LĀṬY. 1,1,13. 8,3,2.] *putraṃ śvetaketuṃ prajighāya yājayeti*
 [KAUṢ. UP. 1,1.]
-  <sub>DCS 434 · attested</sub>
+  <sub>attested</sub>
 
 **6)** — 6) med. dahinfahren: *rathā iva pra sargā aheṣata*
 [ṚV. 9,22,1.]
@@ -533,7 +533,7 @@ to drive out, expel, send to someone (dat.), to or into something (acc.): *kravy
 [ṚV. 9,22,1.]
 - **EN:** — 6) med. to travel away, go forth: *rathā iva pra sargā aheṣata*
 [ṚV. 9,22,1.]
-  <sub>DCS 434 · attested</sub>
+  <sub>attested</sub>
 
 **7)** — 7) hierher die Form *prajidhyatu* davonlaufen: *ata eva parāṅpraji˚ (= gacchatu*
 [SĀY.]) [AIT. BR. 8,28.]
@@ -542,7 +542,7 @@ to drive out, expel, send to someone (dat.), to or into something (acc.): *kravy
 [SĀY.]) [AIT. BR. 8,28.]
 - **EN:** — 7) here belongs the form *prajidhyatu* to run away: *ata eva parāṅpraji˚ (= gacchatu*
 [SĀY.]) [AIT. BR. 8,28.]
-  <sub>DCS 434 · attested</sub>
+  <sub>attested</sub>
 
 **8)** — 8) = 2. *hā* mit *pra* verlassen, im Stich lassen: *tamapaṇḍitam . te 'kṛtārthaṃ prahiṇvanti prāṇā rāyaḥ sutādayaḥ*
 [Spr. (II) 4151] ([BHĀG. P.]).
@@ -551,7 +551,7 @@ to drive out, expel, send to someone (dat.), to or into something (acc.): *kravy
 [Spr. (II) 4151] ([BHĀG. P.]).
 - **EN:** — 8) = 2. *hā* with *pra* to forsake, abandon, leave in the lurch: *tamapaṇḍitam . te 'kṛtārthaṃ prahiṇvanti prāṇā rāyaḥ sutādayaḥ*
 [Spr. (II) 4151] ([BHĀG. P.]).
-  <sub>DCS 434 · attested</sub>
+  <sub>attested</sub>
 
 **9)** — 9) partic. *prahita*
 
@@ -594,7 +594,7 @@ u. s. w. [ṚV. 10,165,4.] [AV. 2,29,4.] [6,29,2.] [8,2,11.] [18,4,65.] [ŚAT. B
 [R. 2,46,2.]
 [KATHĀS. 27,54.]
 [MĀRK. P. 114,6.]
-  <sub>DCS 434 · attested</sub>
+  <sub>attested</sub>
 
 **9a)** a) angetrieben, angefeuert: *pārtha˚*
 [BHĀG. P. 3,1,9.] *kāla˚*
@@ -605,7 +605,7 @@ u. s. w. [ṚV. 10,165,4.] [AV. 2,29,4.] [6,29,2.] [8,2,11.] [18,4,65.] [ŚAT. B
 [BHĀG. P. 3,1,9.] *kāla˚*
 [7,2,56.] *daiva˚*
 [8,20,14.] [9,6,29.] [22,16.]
-  <sub>DCS 434 · attested</sub>
+  <sub>attested</sub>
 
 **9b)** — b) geschleudert
 [AK. 2,8,2,56.]
@@ -638,7 +638,7 @@ u. s. w. [ṚV. 10,165,4.] [AV. 2,29,4.] [6,29,2.] [8,2,11.] [18,4,65.] [ŚAT. B
 [RAGH. 2,27.] [13,42.] [15,84.]
 [BHĀG. P. 3,3,7.] *vicāramārgaprahitena cetasā*
 [KUMĀRAS. 5,42.]
-  <sub>DCS 434 · attested</sub>
+  <sub>attested</sub>
 
 **9c)** — c) hingeschafft, zugestellt, zugesandt (von Sachen)
 [KATHĀS. 12,192.] [21,91.] *lekha*
@@ -651,7 +651,7 @@ u. s. w. [ṚV. 10,165,4.] [AV. 2,29,4.] [6,29,2.] [8,2,11.] [18,4,65.] [ŚAT. B
 [42,109.] [124,198.] *mālā*
 [50,136.] [DAŚAK. 87,8.] [PAÑCAT. ed. orn. 55,7.] *kuśala* ad
 [MEGH. 112.]
-  <sub>DCS 434 · attested</sub>
+  <sub>attested</sub>
 
 **9d)** — d) ausgesandt
 [H. 1492.] Boten
@@ -680,7 +680,7 @@ u. s. w. [ṚV. 10,165,4.] [AV. 2,29,4.] [6,29,2.] [8,2,11.] [18,4,65.] [ŚAT. B
 [R. 2,46,2.]
 [KATHĀS. 27,54.]
 [MĀRK. P. 114,6.]
-  <sub>DCS 434 · attested</sub>
+  <sub>attested</sub>
 
 ## prahi
 
@@ -694,7 +694,7 @@ u. s. w. [ṚV. 10,165,4.] [AV. 2,29,4.] [6,29,2.] [8,2,11.] [18,4,65.] [ŚAT. B
 [MBH. 4,69.]
 - **EN:** — e) sent to (loc.); thus v. a. charged with the care of —, entrusted with — : *ahaṃ hi satataṃ goṣu bhavatā prahitaḥ purā*
 [MBH. 4,69.]
-  <sub>DCS 434 · attested</sub>
+  <sub>attested</sub>
 
 **10)** — 10) partic. *prahitavant* der ausgesandt hat, st. des verbi finiti
 [R. 4,32,12.]
@@ -721,13 +721,13 @@ u. s. w. [ṚV. 10,165,4.] [AV. 2,29,4.] [6,29,2.] [8,2,11.] [18,4,65.] [ŚAT. B
 [119,a.] *prajighāpa˚*
 
 [P.] [ed. Calc.] [7,3,56.]
-  <sub>DCS 434 · attested</sub>
+  <sub>attested</sub>
 
 **caus_desid)** — Vgl. *prahāyya, prahitaṃgama, prahetar* fgg.
 
 - **RU:** — Vgl. *prahāyya, prahitaṃgama, prahetar* fgg.
 - **EN:** — Vgl. *prahāyya, prahitaṃgama, prahetar* fgg.
-  <sub>DCS 434 · attested</sub>
+  <sub>attested</sub>
 
 ## hi
 
@@ -741,7 +741,7 @@ u. s. w. [ṚV. 10,165,4.] [AV. 2,29,4.] [6,29,2.] [8,2,11.] [18,4,65.] [ŚAT. B
 [UTTARAR. 30,2. 3 (39,13).]
 - **EN:** — *anupra*, partic. *˚hita* sent after, dispatched in pursuit
 [UTTARAR. 30,2. 3 (39,13).]
-  <sub>DCS 23914 · attested</sub>
+  <sub>attested</sub>
 
 ## hi
 
@@ -755,7 +755,7 @@ u. s. w. [ṚV. 10,165,4.] [AV. 2,29,4.] [6,29,2.] [8,2,11.] [18,4,65.] [ŚAT. B
 [AV. 10,1,15.]
 - **EN:** — *abhipra*, partic. *˚hita* sent hither, dispatched towards
 [AV. 10,1,15.]
-  <sub>DCS 23914 · attested</sub>
+  <sub>attested</sub>
 
 ## hi
 
@@ -772,7 +772,7 @@ u. s. w. [ṚV. 10,165,4.] [AV. 2,29,4.] [6,29,2.] [8,2,11.] [18,4,65.] [ŚAT. B
 - **EN:** — *upapra* to send to (acc.)
 [AV. 18,4,40.]
 [ŚAT. BR. 11,5,1,11.]
-  <sub>DCS 23914 · attested</sub>
+  <sub>attested</sub>
 
 ## hi
 
@@ -789,7 +789,7 @@ u. s. w. [ṚV. 10,165,4.] [AV. 2,29,4.] [6,29,2.] [8,2,11.] [18,4,65.] [ŚAT. B
 - **EN:** — *pratipra* to send back, to drive back
 [ŚAT. BR. 3,5,1,16.]
 [AV. 10,1,5.] [15.]
-  <sub>DCS 23914 · attested</sub>
+  <sub>attested</sub>
 
 ## hi
 
@@ -803,7 +803,7 @@ u. s. w. [ṚV. 10,165,4.] [AV. 2,29,4.] [6,29,2.] [8,2,11.] [18,4,65.] [ŚAT. B
 [MBH. 8,4074.]
 - **EN:** — *saṃpra*, partic. *˚hita* hurled: *śarāḥ*
 [MBH. 8,4074.]
-  <sub>DCS 23914 · attested</sub>
+  <sub>attested</sub>
 
 ## hi
 
@@ -820,7 +820,7 @@ u. s. w. [ṚV. 10,165,4.] [AV. 2,29,4.] [6,29,2.] [8,2,11.] [18,4,65.] [ŚAT. B
 - **EN:** — *sam*
  1) to dispatch, send off
 [BHĀG. P. 9,10,18.]
-  <sub>DCS 23914 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) zusammenbringen, — setzen, verfertigen: *saṃ vāṃ karmaṇā hinomi* so v. a. zuwege —, zurechtbringen
 [ṚV. 6,69,1.] *stomaṃ saṃ hinomi rathaṃ na taṣṭā*
@@ -844,7 +844,7 @@ u. s. w. [ṚV. 10,165,4.] [AV. 2,29,4.] [6,29,2.] [8,2,11.] [18,4,65.] [ŚAT. B
 [6,40,2.] to be referred here also
 [1,94,1.], where *samahema* st. *saṃ mahema* is to be read, and likewise also
 [111,3.] Accordingly under 1. *ah* to be corrected.
-  <sub>DCS 23914 · attested</sub>
+  <sub>attested</sub>
 
 ## hi
 
@@ -898,7 +898,7 @@ u. s. w. [ṚV. 10,165,4.] [AV. 2,29,4.] [6,29,2.] [8,2,11.] [18,4,65.] [ŚAT. B
 [MALLIN.] к [ŚIŚ. 11,64] со ссылкой на
 [AK. 3,5,9], где, однако, наши Ausgg. *'ho hī* st. *hi hau* читают. *śoke*
 [ŚABDAR.] в [ŚKDR.] Никогда в начале предложения.
-  <sub>DCS 23914 · attested</sub>
+  <sub>attested</sub>
 
 **1)** 1) begründend und bestätigend: denn, ja, nämlich: *indavo vāmuśanti hi*
 [ṚV. 1,2,4.] [15,2.] [3.] [24,4.] *vadhīrhi dasyum*
@@ -1081,7 +1081,7 @@ u. s. w. [ṚV. 1,25,1.] [109,1.] [6,1,1.] [2,1.] [AV. 4,14,1.] [5,13,1.] *katha
 [SARVADARŚANAS. 99,5. 14.] в двух следующих друг за другом предложениях: *gatvā hi varayiṣye tvāṃ mano hi mama tāṃ gatam*
 [MBH. 3,2241.]
 [R. 1,64,19.]
-  <sub>DCS 23914 · attested</sub>
+  <sub>attested</sub>
 
 ## hi
 
@@ -1113,7 +1113,7 @@ u. s. w. [ṚV. 1,25,1.] [109,1.] [6,1,1.] [2,1.] [AV. 4,14,1.] [5,13,1.] *katha
 [MBH. 1,5985.] [3,2891.]
 [Spr. (II) 2513.] *paśyāmo hi* let us just see
 [KATHĀS. 18,266.]
-  <sub>DCS 23914 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) allerdings, ja wohl, in der That: *yuvaṃ hi parṣatho ati dviṣaḥ*
 [ṚV. 8,26,5.] *tāvabravīdastu me 'trāpītyastu hī3tyabrūtām*
@@ -1134,7 +1134,7 @@ u. s. w. [ṚV. 1,25,1.] [109,1.] [6,1,1.] [2,1.] [AV. 4,14,1.] [5,13,1.] *katha
 [ŚAT. BR. 3,8,3,4.] [14,5,1,14.]
 [P. 8,2,93.] *devīṃ vācamupāsate hi bahavaḥ sāraṃ tu* u. s. w. indeed — but
 [Spr. (II) 2954.]
-  <sub>DCS 23914 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) häufig blosser Versfüller,
 z. B. [MBH. 5,6023.] [RAGH. 1,69.] insbesondere zwischen Vocalen zur Entfernung eines Hiatus
@@ -1182,7 +1182,7 @@ z. B. [MBH. 5,6023.] [RAGH. 1,69.] especially between vowels to remove a hiatus
 [4577.] *guhyādguhyatarastvaṃ hi hyevamāha pitāmahaḥ*
 [R. 7,37,5,47.] *svalpaṃ hi nahi naḥ sukham*
 [73,14.]
-  <sub>DCS 23914 · attested</sub>
+  <sub>attested</sub>
 
 ## hi
 
@@ -1193,37 +1193,37 @@ z. B. [MBH. 5,6023.] [RAGH. 1,69.] especially between vowels to remove a hiatus
 
 - **RU:** **1.** √*hi*¦ *hinoti* (*gatau vṛddhau*; Med. *hinve* u. s. w.)
 - **EN:** **1.** √*hi*¦ *hinoti* (*gatau vṛddhau*; Med. *hinve* u. s. w.)
-  <sub>DCS 23914 · attested</sub>
+  <sub>attested</sub>
 
 **1)** — 1〉 Act. Med. in Bewegung setzen, antreiben, anfeuern, reizen. Hierher wohl auch *hayant* Partic. Med. sich in Bewegung setzen, angefeuert werden u. s. w., sich beeifern, beeilen.
 
 - **RU:** — 1〉 Act. Med. приводить в движение, погонять, воодушевлять, побуждать. Сюда же, вероятно, *hayant* Partic. Med. приходить в движение, быть воодушевлённым u. s. w., усердствовать, торопиться.
 - **EN:** — 1〉 Act. Med. to set in motion, drive on, incite, stimulate. To be referred here probably also *hayant* Partic. Med. to set oneself in motion, to be incited u. s. w., to exert oneself, hasten.
-  <sub>DCS 23914 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2〉 veranlassen zu (Dat.).
 
 - **RU:** — 2〉 побуждать к (Dat.).
 - **EN:** — 2〉 to cause to, incite to (Dat.).
-  <sub>DCS 23914 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3〉 fördern, unterstützen, verhelfen zu (Dat.).
 
 - **RU:** — 3〉 способствовать, поддерживать, помогать в (Dat.).
 - **EN:** — 3〉 to promote, support, assist to (Dat.).
-  <sub>DCS 23914 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4〉 her-, hinbefördern, herbeischaffen.
 
 - **RU:** — 4〉 доставлять сюда или туда, подносить, добывать.
 - **EN:** — 4〉 to convey hither or thither, procure.
-  <sub>DCS 23914 · attested</sub>
+  <sub>attested</sub>
 
 **5)** — 5〉 schleudern. *hinvāno vācam* die Stimme hinauslassend, — entsendend.
 
 - **RU:** — 5〉 метать, бросать. *hinvāno vācam* испускающий голос, — отправляющий голос.
 - **EN:** — 5〉 to hurl, shoot. *hinvāno vācam* sending forth, discharging the voice.
-  <sub>DCS 23914 · attested</sub>
+  <sub>attested</sub>
 
 **6)** — 6〉 = **2.** *hā* [BHĀG. P.]
 — a〉 verlassen, aufgeben.
@@ -1250,25 +1250,25 @@ z. B. [MBH. 5,6023.] [RAGH. 1,69.] especially between vowels to remove a hiatus
 
 - **RU:** — Mit *apa* сбрасывать, освобождаться от (Acc.) [BHĀG. P.]
 - **EN:** — With *apa* to cast off, free oneself from (Acc.) [BHĀG. P.]
-  <sub>DCS 23914 · attested</sub>
+  <sub>attested</sub>
 
 **abhi+)** — Mit *api* herausfordern zu (Loc.) [ṚV. 10,71,5].
 
 - **RU:** — Mit *api* вызывать на (Loc.) [ṚV. 10,71,5].
 - **EN:** — With *api* to challenge to (Loc.) [ṚV. 10,71,5].
-  <sub>DCS 23914 · attested</sub>
+  <sub>attested</sub>
 
 **a+)** — Mit *ā* Med. herbeischaffen.
 
 - **RU:** — Mit *ā* Med. доставлять.
 - **EN:** — With *ā* Med. to procure, fetch.
-  <sub>DCS 23914 · attested</sub>
+  <sub>attested</sub>
 
 **ava+)** — Mit *pari*, *parihinomi* hinbefördern, verbringen.
 
 - **RU:** — Mit *pari*, *parihinomi* переправлять, переводить.
 - **EN:** — With *pari*, *parihinomi* to convey down, transport.
-  <sub>DCS 23914 · attested</sub>
+  <sub>attested</sub>
 
 **pra+)** — Mit *pra*, *prahiṇoti*
 — 1〉 antreiben, anregen.
@@ -1318,25 +1318,25 @@ z. B. [MBH. 5,6023.] [RAGH. 1,69.] especially between vowels to remove a hiatus
 
 - **RU:** — Mit *anupra*, *˚hita* посланный вслед.
 - **EN:** — With *anupra*, *˚hita* sent after.
-  <sub>DCS 23914 · attested</sub>
+  <sub>attested</sub>
 
 **abhipra+)** — Mit *abhipra*, *abhiprahita* hergeschickt.
 
 - **RU:** — Mit *abhipra*, *abhiprahita* присланный.
 - **EN:** — With *abhipra*, *abhiprahita* sent hither.
-  <sub>DCS 23914 · attested</sub>
+  <sub>attested</sub>
 
 **sampra+)** — Mit *upapra* hinsenden zu Jmd (Acc. oder Dat.).
 
 - **RU:** — Mit *upapra* посылать к кому-л. (Acc. oder Dat.).
 - **EN:** — With *upapra* to send to someone (Acc. or Dat.).
-  <sub>DCS 23914 · attested</sub>
+  <sub>attested</sub>
 
 **prati+)** — Mit *pratipra* zurücksenden, — jagen.
 
 - **RU:** — Mit *pratipra* отсылать обратно, — прогонять.
 - **EN:** — With *pratipra* to send back, drive back.
-  <sub>DCS 23914 · attested</sub>
+  <sub>attested</sub>
 
 **sam+)** — Mit *saṃpra*
 — 1〉 schleudern. *˚hita* geschleudert.
@@ -1367,212 +1367,212 @@ z. B. [MBH. 5,6023.] [RAGH. 1,69.] especially between vowels to remove a hiatus
 
 - **RU:** **1.** √*hi*¦ mit *anupra* VII. *˚hita* выпущенный, метнутый [KIR. 17,93].
 - **EN:** **1.** √*hi*¦ with *anupra* VII. *˚hita* shot off, discharged [KIR. 17,93].
-  <sub>DCS 23914 · attested</sub>
+  <sub>attested</sub>
 
 **PW-6)** — 6〉 = **2.** *hā* [BHĀG. P.]
 
 - **RU:** — 6〉 = **2.** *hā* [BHĀG. P.]
-  <sub>DCS 23914 · attested</sub>
+  <sub>attested</sub>
 
 **PW-6a)** — a〉 verlassen, aufgeben.
 
 - **RU:** — a〉 оставлять, покидать.
-  <sub>DCS 23914 · attested</sub>
+  <sub>attested</sub>
 
 **PW-6b)** — b〉 Etwas loswerden, sich befreien von.
 
 - **RU:** — b〉 избавляться от чего-л., освобождаться от.
-  <sub>DCS 23914 · attested</sub>
+  <sub>attested</sub>
 
 **PW-7)** — 7〉 *hita*
 
 - **RU:** — 7〉 *hita*
-  <sub>DCS 23914 · attested</sub>
+  <sub>attested</sub>
 
 **PW-7a)** — a〉 getrieben, gespornt, im Lauf befindlich.
 
 - **RU:** — a〉 погнанный, подстёгнутый, несущийся.
-  <sub>DCS 23914 · attested</sub>
+  <sub>attested</sub>
 
 **PW-7b)** — b〉 angewiesen, aufgefordert.
 
 - **RU:** — b〉 предписанный, призванный.
-  <sub>DCS 23914 · attested</sub>
+  <sub>attested</sub>
 
 **PW-mit-ava)** — Caus. Aor. *ajīhayat*.
 
 - **RU:** — Caus. Aor. *ajīhayat*.
-  <sub>DCS 23914 · attested</sub>
+  <sub>attested</sub>
 
 **PW-mit-ud)** — Desid. *jighīṣati*.
 
 - **RU:** — Desid. *jighīṣati*.
-  <sub>DCS 23914 · attested</sub>
+  <sub>attested</sub>
 
 **PW-mit-upa)** — Intens. *jeghīyate*.
 
 - **RU:** — Intens. *jeghīyate*.
-  <sub>DCS 23914 · attested</sub>
+  <sub>attested</sub>
 
 **PW-mit-pra)** — Mit *pra*, *prahiṇoti*
 
 - **RU:** — Mit *pra*, *prahiṇoti*
-  <sub>DCS 23914 · attested</sub>
+  <sub>attested</sub>
 
 **PW-pra-1)** — 1〉 antreiben, anregen.
 
 - **RU:** — 1〉 погонять, побуждать.
-  <sub>DCS 23914 · attested</sub>
+  <sub>attested</sub>
 
 **PW-pra-2)** — 2〉 auffordern, anweisen.
 
 - **RU:** — 2〉 призывать, предписывать.
-  <sub>DCS 23914 · attested</sub>
+  <sub>attested</sub>
 
 **PW-pra-3)** — 3〉 schleudern, — auf (Dat. oder Loc.), den Blick richten auf (Acc.) [KĀD. 31,24 (56,5)].
 
 - **RU:** — 3〉 метать, — на (Dat. oder Loc.), взгляд направлять на (Acc.) [KĀD. 31,24 (56,5)].
-  <sub>DCS 23914 · attested</sub>
+  <sub>attested</sub>
 
 **PW-pra-4)** — 4〉 absenden (Boten), entsenden, entlassen, weg schicken, vertreiben, absenden u. s. w. zu Jmd (Dat., Gen., Acc. mit *prati*) Gen. mit *antikam* oder *pārśvam* nach oder an einen Ort (Acc. oder Acc. mit *prati*) um zu (Dat. oder Infin.).
 
 - **RU:** — 4〉 отправлять (гонца), снаряжать, отпускать, прогонять, посылать u. s. w. к кому-л. (Dat., Gen., Acc. mit *prati*) Gen. mit *antikam* oder *pārśvam* в или к какому-л. месту (Acc. oder Acc. mit *prati*) чтобы (Dat. oder Infin.).
-  <sub>DCS 23914 · attested</sub>
+  <sub>attested</sub>
 
 **PW-pra-5)** — 5〉 herbei-, hinschaffen zu, liefern, Jmd (Dat.) Etwas zustellen, zukommen lassen.
 
 - **RU:** — 5〉 доставлять, подносить, вручать кому-л. (Dat.) что-л., передавать.
-  <sub>DCS 23914 · attested</sub>
+  <sub>attested</sub>
 
 **PW-pra-6)** — 6〉 Med. da hinfahren.
 
 - **RU:** — 6〉 Med. отправляться туда.
-  <sub>DCS 23914 · attested</sub>
+  <sub>attested</sub>
 
 **PW-pra-7)** — 7〉 = **2.** *hā* mit *pra* verlassen, im Stich lassen [BHĀG. P.]
 
 - **RU:** — 7〉 = **2.** *hā* mit *pra* оставлять, бросать [BHĀG. P.]
-  <sub>DCS 23914 · attested</sub>
+  <sub>attested</sub>
 
 **PW-pra-8)** — 8〉 *prajidhyati* und *prajighyatu* [AIT. BR. 8,28] wohl fehlerhaft für *prajigāti* und *prajigātu*.
 
 - **RU:** — 8〉 *prajidhyati* und *prajighyatu* [AIT. BR. 8,28] вероятно ошибочно вместо *prajigāti* und *prajigātu*.
-  <sub>DCS 23914 · attested</sub>
+  <sub>attested</sub>
 
 **PW-pra-9)** — 9〉 *prahita*
 
 - **RU:** — 9〉 *prahita*
-  <sub>DCS 23914 · attested</sub>
+  <sub>attested</sub>
 
 **PW-pra-9a)** — a〉 angetrieben, angefeuert.
 
 - **RU:** — a〉 погнанный, воодушевлённый.
-  <sub>DCS 23914 · attested</sub>
+  <sub>attested</sub>
 
 **PW-pra-9b)** — b〉 geschleudert, — auf (Loc.).
 
 - **RU:** — b〉 брошенный, метнутый, — в/на (Loc.).
-  <sub>DCS 23914 · attested</sub>
+  <sub>attested</sub>
 
 **PW-pra-9c)** — c〉 geschleudert, so v. a. rasch vorgestreckt (Arm).
 
 - **RU:** — c〉 брошенный, так v. a. быстро вытянутый (рука).
-  <sub>DCS 23914 · attested</sub>
+  <sub>attested</sub>
 
 **PW-pra-9d)** — d〉 geworfen, gerichtet, — auf (im Comp. vorangehend) vom Auge, Blick, Geist.
 
 - **RU:** — d〉 брошенный, направленный, — на (im Comp. vorangehend) о глазе, взгляде, мысли.
-  <sub>DCS 23914 · attested</sub>
+  <sub>attested</sub>
 
 **PW-pra-9e)** — e〉 eingestossen, eingegraben (Fingernagel).
 
 - **RU:** — e〉 вонзённый, вбитый (ноготь).
-  <sub>DCS 23914 · attested</sub>
+  <sub>attested</sub>
 
 **PW-pra-9f)** — f〉 hingeschafft, zugestellt, zugesandt (Sachen).
 
 - **RU:** — f〉 доставленный, врученный, переданный (о вещах).
-  <sub>DCS 23914 · attested</sub>
+  <sub>attested</sub>
 
 **PW-pra-9g)** — g〉 ausgesandt, — zu (Gen. mit *pārśve*) gegen (Dat.), zu Etwas (Dat.), fortgeschickt, fortgejagt, — in oder nach (Dat.).
 
 - **RU:** — g〉 посланный, — к (Gen. mit *pārśve*) против (Dat.), для чего-л. (Dat.), отправленный прочь, прогнанный, — в или к (Dat.).
-  <sub>DCS 23914 · attested</sub>
+  <sub>attested</sub>
 
 **PW-pra-9h)** — h〉 hingeschickt zu (Loc.), so v. a. mit der Sorge um beauftragt.
 
 - **RU:** — h〉 посланный к (Loc.), так v. a. которому поручена забота о.
-  <sub>DCS 23914 · attested</sub>
+  <sub>attested</sub>
 
 **PW-10)** — 10〉 *prahitavān* = *prajighāya* sandte aus.
 
 - **RU:** — 10〉 *prahitavān* = *prajighāya* отправлял.
-  <sub>DCS 23914 · attested</sub>
+  <sub>attested</sub>
 
 **PW-note1)** — Caus. Aor. *prājīhayat*.
 
 - **RU:** — Caus. Aor. *prājīhayat*.
-  <sub>DCS 23914 · attested</sub>
+  <sub>attested</sub>
 
 **PW-note2)** — Desid. vom Caus. *prājighāyayipati* (*prajighāpayiṣati* fehlerhaft).
 
 - **RU:** — Desid. vom Caus. *prājighāyayipati* (*prajighāpayiṣati* ошибочно).
-  <sub>DCS 23914 · attested</sub>
+  <sub>attested</sub>
 
 **PW-mit-sam)** — Mit *saṃpra*
 
 - **RU:** — Mit *saṃpra*
-  <sub>DCS 23914 · attested</sub>
+  <sub>attested</sub>
 
 **PW-sam-1)** — 1〉 schleudern. *˚hita* geschleudert.
 
 - **RU:** — 1〉 метать. *˚hita* брошенный.
-  <sub>DCS 23914 · attested</sub>
+  <sub>attested</sub>
 
 **PW-sam-2)** — 2〉 absenden. *saṃprahitavān* [R. ed. Bomb. 4,32,12].
 
 - **RU:** — 2〉 отправлять. *saṃprahitavān* [R. ed. Bomb. 4,32,12].
-  <sub>DCS 23914 · attested</sub>
+  <sub>attested</sub>
 
 **PW-mit-su)** — Mit *sam*
 
 - **RU:** — Mit *sam*
-  <sub>DCS 23914 · attested</sub>
+  <sub>attested</sub>
 
 **PW-su-1)** — 1〉 absenden.
 
 - **RU:** — 1〉 отправлять.
-  <sub>DCS 23914 · attested</sub>
+  <sub>attested</sub>
 
 **PW-su-2)** — 2〉 zusammenbringen, -setzen, verfertigen, zuwege —, zurecht bringen.
 
 - **RU:** — 2〉 собирать вместе, соединять, изготовлять, приводить в порядок, устраивать.
-  <sub>DCS 23914 · attested</sub>
+  <sub>attested</sub>
 
 **PW2-head)** **2.** *hi*¦ _Indecl._ (nie am Anfange eines Satzes; das Verbum fin. dabei orthotornirt)
 
 - **RU:** **2.** *hi*¦ _Indecl._ (никогда в начале предложения; глагол fin. при этом ортотонирован)
-  <sub>DCS 23914 · attested</sub>
+  <sub>attested</sub>
 
 **PW2-1)** — 1〉 begründend und bestätigend; denn, ja, nämlich. Häufig nach Demonstrativen, Relativen und Interrogativen. In [VS. PRĀT.] bezeichnet es den Schluss eines Abschnitt.
 
 - **RU:** — 1〉 обосновывающая и подтверждающая; ибо, ведь, а именно. Часто после указательных, относительных и вопросительных местоимений. В [VS. PRĀT.] обозначает конец раздела.
-  <sub>DCS 23914 · attested</sub>
+  <sub>attested</sub>
 
 **PW2-2)** — 2〉 aufmunternd beim Imperativ oder Potentialis doch. Ebenso *paśyāmo* *hi* wir wollen doch sehen.
 
 - **RU:** — 2〉 побудительная при императиве или потенциалисе же, ну. Также *paśyāmo* *hi* посмотрим же.
-  <sub>DCS 23914 · attested</sub>
+  <sub>attested</sub>
 
 **PW2-3)** — 3〉 allerdings, jawohl, in der That. *hi — tu* oder *hi — punar* ([BĀLAR. 296,4]) wohl — aber.
 
 - **RU:** — 3〉 конечно, да, в самом деле. *hi — tu* oder *hi — punar* ([BĀLAR. 296,4]) правда — но.
-  <sub>DCS 23914 · attested</sub>
+  <sub>attested</sub>
 
 **PW2-4)** — 4〉 häufig blosser Versfüller, insbes. zwischen zwei Vocalen zur Entfernung des Hiatus oder zur Gewinnung einer Länge. Erscheint in einem und demselben Satze sogar doppelt.
 
 - **RU:** — 4〉 нередко простой стихотворный заполнитель, insbes. между двумя гласными для устранения зияния или получения долгого слога. Встречается в одном и том же предложении даже дважды.
-  <sub>DCS 23914 · attested</sub>
+  <sub>attested</sub>
 
 ## hi
 
@@ -1583,7 +1583,7 @@ z. B. [MBH. 5,6023.] [RAGH. 1,69.] especially between vowels to remove a hiatus
 
 - **RU:** 1. hi¦ с anupra, ˚hita выпущенный (стрелой), отстреленный, [Kir. 17,33.] {part=,seq=27937,type=,n=2}
 - **EN:** 1. hi¦ with anupra, ˚hita shot off, discharged, [Kir. 17,33.] {part=,seq=27937,type=,n=2}
-  <sub>DCS 23914 · attested</sub>
+  <sub>attested</sub>
 
 ## hi
 
@@ -1594,4 +1594,4 @@ z. B. [MBH. 5,6023.] [RAGH. 1,69.] especially between vowels to remove a hiatus
 
 - **RU:** **1.** *hi*¦ с *anupra* VII. *˚hita* выпущенный (стрелой), отстреленный [KIR. 17,93].
 - **EN:** **1.** *hi*¦ with *anupra* VII. *˚hita* shot off, discharged [KIR. 17,93].
-  <sub>DCS 23914 · attested</sub>
+  <sub>attested</sub>

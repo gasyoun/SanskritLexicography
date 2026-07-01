@@ -13,7 +13,7 @@
 - **EN:** — *upani*
  1) to fly down to: *taṃ haṃsa upanipatyābhyuvāda*
 [CHĀND. UP. 4,7,2.]
-  <sub>DCS 4 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) dazu eintreten: *tattu saptavidhe vyādhāvupanipatati*
 [SUŚR. 1,89,6.] gelegentlich zur Erwähnung kommen
@@ -25,7 +25,7 @@
 - **EN:** — 2) to come in additionally: *tattu saptavidhe vyādhāvupanipatati*
 [SUŚR. 1,89,6.] to come up for mention incidentally
 [14,6.]
-  <sub>DCS 4 · attested</sub>
+  <sub>attested</sub>
 
 **caus)** — Vgl. *upanipāta* fg. — Für das caus.
 [ŚĀṄKH. ŚR. 16,3,33] und [ĀŚV. ŚR. 10,8] wird richtiger *pad* caus. gelesen.
@@ -34,4 +34,4 @@
 [ŚĀṄKH. ŚR. 16,3,33] и [ĀŚV. ŚR. 10,8] правильнее читать *pad* caus..
 - **EN:** — Vgl. *upanipāta* fg. — For the caus.
 [ŚĀṄKH. ŚR. 16,3,33] and [ĀŚV. ŚR. 10,8] *pad* caus. is more correctly read.
-  <sub>DCS 4 · attested</sub>
+  <sub>attested</sub>

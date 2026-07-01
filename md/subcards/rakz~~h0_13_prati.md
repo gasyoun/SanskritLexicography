@@ -19,7 +19,7 @@
 [MBH. 12,3596.] *viśvā āśāḥ prati rakṣantyeke*
 [AV. 10,8,36.] *satyāṃ* (so the [ed. Bomb.]) *pratijñāṃ tāṃ pārthena pratirakṣatā* keeping faithfully
 [MBH. 8,3542.]
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) fürchten, sich retten vor: *pratirakṣannasuryam*
 [VS. 8,24.]
@@ -28,4 +28,4 @@
 [VS. 8,24.]
 - **EN:** — 2) to fear, to save oneself from: *pratirakṣannasuryam*
 [VS. 8,24.]
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>

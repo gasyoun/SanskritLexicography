@@ -15,11 +15,11 @@
 [R. 3,75,73.] *yāvadasau somilako granthimanveṣyati* (read: *anviṣyati) . tāvatsuvarṇaṃ nāsti*
 [PAÑCAT. 134,25.] med.: *mṛgamanviṣyamāṇaḥ* (?)
 [HIT. 34,18.]
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — Vgl. 2. 3. 4 und 5. *iṣ* mit *anu* .
 
 - **RU:** — Vgl. 2. 3. 4 und 5. *iṣ* mit *anu* .
 - **EN:** — Vgl.
 2. 3. 4 and 5. *iṣ* with *anu* .
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>

@@ -16,4 +16,4 @@
 [VS. 3,21.]
 [ŚĀṄKH. ŚR. 15,24,7. 10.] to disappear, to recede: *apāgādagneragnitvam*
 [CHĀND. UP. 6,4,1.]
-  <sub>DCS 14 · attested</sub>
+  <sub>attested</sub>

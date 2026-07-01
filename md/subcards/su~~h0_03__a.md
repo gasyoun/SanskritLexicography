@@ -15,11 +15,11 @@
 - **EN:** — *ā* press (the Soma) u. s. w.: *ā sotā pari ṣiñcata* [ṚV. 9,108,7.] *yo asmai tīvrānsomā āsunoti* [10,42,5.] [ŚAT. BR. 12,7,3,6.] [12.] *tasmāttava sutaṃ prasutamāsutaṃ kule dṛśyate* [CHĀND. UP. 5,12,1.]
 — Vgl. 2. *āsava, āsāva*.* āsāvya*
 ([BHAṬṬ. 6,64]). 2. *āsuti*.
-  <sub>DCS 19 · attested</sub>
+  <sub>attested</sub>
 
 **addendum)** — Vgl. 2. *āsava, āsāva*.* āsāvya*
 ([BHAṬṬ. 6,64]). 2. *āsuti*.
 
 - **RU:** — Vgl. 2. *āsava, āsāva*.* āsāvya*
 ([BHAṬṬ. 6,64]). 2. *āsuti*.
-  <sub>DCS 19 · attested</sub>
+  <sub>attested</sub>

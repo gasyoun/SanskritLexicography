@@ -17,7 +17,7 @@
 [PAT. a. a. O. 1,222,a.]
 - **EN:** — *anu* pass. to take place, occur
 [PAT. a. a. O. 1,222,a.]
-  <sub>DCS 2655 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — *ud*
  1) *vaṭavṛkṣa ātmānamudbadhya* sich erhängen
@@ -36,35 +36,35 @@
 **head)** *bandh*¦
 
 - **RU:** *bandh*¦
-  <sub>DCS 2655 · attested</sub>
+  <sub>attested</sub>
 
 **NW17-3)** 3) *rāgī badhnāti karmāṇi (kāryāṇi* vermuthet) so v. a. unterlässt
 [Spr. (II) 5732.]
 
 - **RU:** 3) *rāgī badhnāti karmāṇi (kāryāṇi* предполагается) так v. a. упускает, не делает
 [Spr. (II) 5732.]
-  <sub>DCS 2655 · attested</sub>
+  <sub>attested</sub>
 
 **NW19)** — *ud*
 
 - **RU:** — *ud*
-  <sub>DCS 2655 · attested</sub>
+  <sub>attested</sub>
 
 **NW20-1)** 1) *vaṭavṛkṣa ātmānamudbadhya* sich erhängen
 [PAÑCAT. 135,3], v. l.
 
 - **RU:** 1) *vaṭavṛkṣa ātmānamudbadhya* вешаться
 [PAÑCAT. 135,3], v. l.
-  <sub>DCS 2655 · attested</sub>
+  <sub>attested</sub>
 
 **NW21)** — *ni*
 
 - **RU:** — *ni*
-  <sub>DCS 2655 · attested</sub>
+  <sub>attested</sub>
 
 **NW22-2)** 2) partic. *nibaddha* aus vielen Sätzen oder Strophen bestehend, *a˚* nur aus einem Satze oder einer Strophe bestehend
 [VĀMANA 1,3,28. 30.]
 
 - **RU:** 2) partic. *nibaddha* состоящий из многих предложений или строф, *a˚* состоящий лишь из одного предложения или одной строфы
 [VĀMANA 1,3,28. 30.]
-  <sub>DCS 2655 · attested</sub>
+  <sub>attested</sub>

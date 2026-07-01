@@ -10,7 +10,7 @@
 [ŚAT. BR. 3,2,4,16.] [5,3,11.]
 - **EN:** — 2) *jujyūṣanti* to seek to eke out one's life with (instr.)
 [ŚAT. BR. 3,2,4,16.] [5,3,11.]
-  <sub>DCS 2223 · attested</sub>
+  <sub>attested</sub>
 
 **Desid. 3 (Partic.))** — 3) *jijyūṣita* der sein Leben zu fristen sucht mit (instr.): *brahmabandhavena, vaiśyatayā, śūdratayā*
 [AIT. BR. 7,29.] — *jīvita* s. bes.
@@ -19,4 +19,4 @@
 [AIT. BR. 7,29.] — *jīvita* s. bes.
 - **EN:** — 3) *jijyūṣita* one who seeks to eke out his life with (instr.): *brahmabandhavena, vaiśyatayā, śūdratayā*
 [AIT. BR. 7,29.] — *jīvita* s. bes.
-  <sub>DCS 2223 · attested</sub>
+  <sub>attested</sub>

@@ -28,4 +28,4 @@ gebogen
 [P. 8,4,31], Sch.
 bent
 [BHAṬṬ. 10,31.]
-  <sub>DCS 2938 · attested</sub>
+  <sub>attested</sub>

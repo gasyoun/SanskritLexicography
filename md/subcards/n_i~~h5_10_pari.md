@@ -27,7 +27,7 @@ Schol. *pariṇītam* takes nom. act. as marriage. —
 [NĪLAK.] : *supariṇītena sādhunā* .
 - **EN:** — 4)
 [NĪLAK.] : *supariṇītena sādhunā* .
-  <sub>DCS 581 · attested</sub>
+  <sub>attested</sub>
 
 **2-angetrauten-gatten)** — *pari*
  2) *pariṇītabhartar*
@@ -42,11 +42,11 @@ Schol. *pariṇītam* als nom. act. Heirath. —
 [UTTARARĀMAC. 29,15 (39,3)] понимает
 Schol. *pariṇītam* как nom. act. брак. —
 [Z. 15] статьи есть
-  <sub>DCS 581 · attested</sub>
+  <sub>attested</sub>
 
 **3-corr-8)** 3) st.
  8) zu lesen.
 
 - **RU:** 3) st.
  вместо 8) следует читать.
-  <sub>DCS 581 · attested</sub>
+  <sub>attested</sub>

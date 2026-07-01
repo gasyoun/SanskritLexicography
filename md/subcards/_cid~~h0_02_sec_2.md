@@ -16,4 +16,4 @@
 [P. 7,4,65], Sch.
 *cecchidyate*
 [83], Vārtt. 2, Sch. ([ed. Calc.])
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>

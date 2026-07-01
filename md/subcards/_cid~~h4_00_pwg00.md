@@ -13,4 +13,4 @@
 - **EN:** 2. *chid*¦ _f._ nom. act. cutting, annihilation: *bhava˚*
 [HEM.]
 [YOGAŚ. 3,141.]
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>

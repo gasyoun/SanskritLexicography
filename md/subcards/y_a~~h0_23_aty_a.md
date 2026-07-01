@@ -10,4 +10,4 @@
 {T T4} [5,75,2.]
 - **EN:** — *atyā* "to go past, to pass by" (acc.): *atyāyāhi śaśvataḥ*
 [ṚV. 3,35,5.] [5,75,2.]
-  <sub>DCS 1 · attested</sub>
+  <sub>attested</sub>

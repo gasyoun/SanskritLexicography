@@ -113,7 +113,7 @@
 [20.] *nirabhidyata vai gudam*
 [3,26,56.] [SUŚR. 1,271,19.] act. in the same Bed.: *nirbibheda virājastvak*
 [BHĀG. P. 3,26,56.]
-  <sub>DCS 216 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) trennen, scheiden: *mukhatastālu nirbhinnam* trennte sich
 [BHĀG. P. 2,10,18.] *anirbhinna (brahman* und *sujanapreman)* nicht geschieden und ununterbrochen
@@ -125,7 +125,7 @@
 - **EN:** — 2) to separate, to part: *mukhatastālu nirbhinnam* separated itself
 [BHĀG. P. 2,10,18.] *anirbhinna (brahman* and *sujanapreman)* not separated and uninterrupted
 [Spr. 3473.]
-  <sub>DCS 216 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) *nirbhinna* uneinig: *anyo'nyameva nirbhinnam (balam)*
 [KĀM. NĪTIS. 13,81.]
@@ -134,7 +134,7 @@
 [KĀM. NĪTIS. 13,81.]
 - **EN:** — 3) *nirbhinna* at variance, disunited: *anyo'nyameva nirbhinnam (balam)*
 [KĀM. NĪTIS. 13,81.]
-  <sub>DCS 216 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) verrathen: *nirbhinnaprāyaṃ rahasyam*
 [DAŚAK.] in [BENF. Chr. 193,8.]
@@ -143,7 +143,7 @@
 [DAŚAK.] в [BENF. Chr. 193,8.]
 - **EN:** — 4) to betray: *nirbhinnaprāyaṃ rahasyam*
 [DAŚAK.] in [BENF. Chr. 193,8.]
-  <sub>DCS 216 · attested</sub>
+  <sub>attested</sub>
 
 **5)** — 5) hinter Etwas kommen: *kāntakāpacāraṃ nirbhidya*
 [DAŚAK.] in [BENF. Chr. 200,20.]
@@ -152,15 +152,15 @@
 [DAŚAK.] в [BENF. Chr. 200,20.]
 - **EN:** — 5) to get to the bottom of something: *kāntakāpacāraṃ nirbhidya*
 [DAŚAK.] in [BENF. Chr. 200,20.]
-  <sub>DCS 216 · attested</sub>
+  <sub>attested</sub>
 
 **nom)** — Vgl. *nirbheda* fg.
 
 - **RU:** — Vgl. *nirbheda* fg.
 - **EN:** — Vgl. *nirbheda* fg.
-  <sub>DCS 216 · attested</sub>
+  <sub>attested</sub>
 
 **intro)** — *nis*
 
 - **RU:** — *nis*
-  <sub>DCS 216 · attested</sub>
+  <sub>attested</sub>

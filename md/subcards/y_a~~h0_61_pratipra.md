@@ -28,10 +28,10 @@
 [R. 3,1,1.] [6,105,1.] [7,64,18.]
 [RAGH. 14,19.] [Verz. d. Oxf. H. 117,a,5] (here perhaps *˚yāntaṃ* is to be read). to flow back
 [ṢAḌV. BR. 5,10.]
-  <sub>DCS 7 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — Vgl. *pratiprayāṇa* .
 
 - **RU:** — Vgl. *pratiprayāṇa* .
 - **EN:** — Vgl. *pratiprayāṇa*.
-  <sub>DCS 7 · attested</sub>
+  <sub>attested</sub>

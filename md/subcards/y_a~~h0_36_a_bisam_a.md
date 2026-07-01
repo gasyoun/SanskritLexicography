@@ -10,4 +10,4 @@
 [MBH. 5,1974.]
 - **EN:** — *abhisamā* to come together
 [MBH. 5,1974.]
-  <sub>DCS 1 · attested</sub>
+  <sub>attested</sub>

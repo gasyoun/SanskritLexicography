@@ -25,10 +25,10 @@
 [TS. 7,5,10,1.] *dantidantāvabhinna*
 [MBH. 6,1774.] *(agnihotram) yatrāvabhinnaṃ syāt* burst asunder
 [ŚAT. BR. 12,4,1,8.]
-  <sub>DCS 15 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — Vgl. *avabhoden* .
 
 - **RU:** — Vgl. *avabhoden* .
 - **EN:** — Vgl. *avabhoden* .
-  <sub>DCS 15 · attested</sub>
+  <sub>attested</sub>

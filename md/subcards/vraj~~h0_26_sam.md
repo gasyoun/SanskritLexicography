@@ -13,4 +13,4 @@
 - **EN:** — *sam* to wander, walk: *yatraiva saṃvrajannanvāhāryapacanamanusmaret*
 [ŚAT. BR. 2,3,2,4.]
 [KĀTY. ŚR. 4,15,32.]
-  <sub>DCS 1202 · attested</sub>
+  <sub>attested</sub>

@@ -10,4 +10,4 @@
 [ŚĀṄKH. BR. 30,5.]
 - **EN:** — *apa* to take oneself off, to make oneself scarce: *apanaśya dhiktvā jālmāstu*
 [ŚĀṄKH. BR. 30,5.]
-  <sub>DCS 1422 · attested</sub>
+  <sub>attested</sub>

@@ -10,4 +10,4 @@
 [Spr. 2507.]
 - **EN:** — *ā* to slit apart, to tear asunder: *tanme varṣma nṛsiṃharājakarajairābhidyate*
 [Spr. 2507.]
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>

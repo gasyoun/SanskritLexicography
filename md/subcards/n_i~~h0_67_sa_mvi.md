@@ -10,4 +10,4 @@
 [MBH. 12,3176.]
 - **EN:** — *saṃvi* to drive away, suppress: *saṃvinīya madakrodhau mānamīrṣāṃ ca*
 [MBH. 12,3176.]
-  <sub>DCS 2376 · attested</sub>
+  <sub>attested</sub>

@@ -25,7 +25,7 @@
 [MBH. 7,2617.] *śivirāya ninīṣantaṃ rajjvā baddhvā ripuṃ balāt*
 [BHĀG. P. 1,7,34.] *nineṣati* (!)
 [AV. 19,50,5.]
-  <sub>DCS 2376 · attested</sub>
+  <sub>attested</sub>
 
 **desid_2_wish_to_take)** — 2) mit sich nehmen wollen: *na ca sa sītāṃ nṛvaro ninīṣati*
 [R. 2,27,23.]
@@ -34,7 +34,7 @@
 [R. 2,27,23.]
 - **EN:** 2) to wish to take with oneself: *na ca sa sītāṃ nṛvaro ninīṣati*
 [R. 2,27,23.]
-  <sub>DCS 2376 · attested</sub>
+  <sub>attested</sub>
 
 **desid_3_wish_to_bring_into_state)** — 3) in einen Zustand bringen wollen: *kṣayaṃ ninīṣatā daityān*
 [VĀRĀHA-P.] in [Verz. d. Oxf. H. 59,a,3.]
@@ -48,7 +48,7 @@
 [AIT. BR. 6,30.]
 - **EN:** 4) to wish to exclude from (abl.): *kathendraṃ madhyaṃdinānninīṣasi*
 [AIT. BR. 6,30.]
-  <sub>DCS 2376 · attested</sub>
+  <sub>attested</sub>
 
 **desid_5_wish_to_ascertain)** — 5) herauszubringen versuchen, nachspüren: *ninīṣantaḥ padam*
 [MBH. 11,303.] *tapasā cānumānena* u. s. w. *ninīṣetparamaṃ brahma*
@@ -66,11 +66,11 @@
 [12,7478.] *tathā buddhipradīpena dūrasthaṃ suvipaścitaḥ . pratyāsannaṃ ninīṣante jñeyaṃ jñānābhisaṃhitam ..*
 [7426.]
 — Vgl. *ninīṣā, ˚ṣu*.
-  <sub>DCS 2376 · attested</sub>
+  <sub>attested</sub>
 
 **desid-3)** — 3) in einen Zustand bringen wollen: *kṣayaṃ ninīṣatā daityān*
 [VĀRĀHA-P.] в [Verz. d. Oxf. H. 59,a,3.]
 
 - **RU:** — 3) желать привести в какое-либо состояние: *kṣayaṃ ninīṣatā daityān*
 [VĀRĀHA-P.] в [Verz. d. Oxf. H. 59,a,3.]
-  <sub>DCS 2376 · attested</sub>
+  <sub>attested</sub>

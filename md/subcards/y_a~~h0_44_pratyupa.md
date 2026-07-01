@@ -19,4 +19,4 @@
 [1,8393.] *pratyupāyādgṛhaṃ prati*
 [13,1883.] *kālastvayaṃ pratyupayāti dāruṇo duryodhano yuddhamupāgamadyat*
 [8,1991.]
-  <sub>DCS 3 · attested</sub>
+  <sub>attested</sub>

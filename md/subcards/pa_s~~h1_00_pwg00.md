@@ -7,4 +7,4 @@
 
 - **RU:** 2. *paś*¦ nom. s. u. 2. *pad* 1. в конце.
 - **EN:** 2. *paś*¦ nom. s. u. 2. *pad* 1. at the end.
-  <sub>DCS 4733 · lexicographic</sub>
+  <sub>lexicographic</sub>

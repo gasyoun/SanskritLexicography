@@ -11,6 +11,10 @@
 [4320.]
 
 An beiden Stellen vielleicht auch in der Bed. 3).
+
+- **RU:** — *pra*, *prālambhi, pralambham* [P. 7,1,69], Sch. [VOP. 24,7.] 1) {%схватывать, хватать, овладевать кем-л.[MBH. 5,1551.] *kāmamanyubhyāṃ pralabdhaḥ* [4320.]
+
+В обоих местах, возможно, также в значении Bed. 3).
 - **EN:** — *pra*, *prālambhi, pralambham*
 [P. 7,1,69], Sch.
 [VOP. 24,7.]
@@ -19,20 +23,30 @@ An beiden Stellen vielleicht auch in der Bed. 3).
 [4320.]
 
 In both places perhaps also in the Bed. 3).
+  <sub>attested</sub>
 
 **2)** — 2) erlangen, bekommen
 [KATHĀS. 21,133.]
+
+- **RU:** — 2) {%достигать, получать[KATHĀS. 21,133.]
 - **EN:** — 2) to obtain, to get
 [KATHĀS. 21,133.]
+  <sub>attested</sub>
 
 **3)** — 3) Jmd hintergehen, anführen, foppen, zum Narren halten
 [MBH. 2,1365] (*pralambhante* beide Ausgg., = *avalambante*
 [NĪLAK.]). [3,2612.] [11,122.] [BHĀG. P. 3,17,27.] [29.] [18,13.] [4,7,13.] [10,22,21.] [34,13.] [11,1,16.]
+
+- **RU:** — 3) {%обманывать, вводить в заблуждение, дурачить, водить за нос кого-л.[MBH. 2,1365] (*pralambhante* оба Ausgg., = *avalambante* [NĪLAK.]). [3,2612.] [11,122.] [BHĀG. P. 3,17,27.] [29.] [18,13.] [4,7,13.] [10,22,21.] [34,13.] [11,1,16.]
 - **EN:** — 3) to deceive, to dupe, to fool, to make a fool of someone
 [MBH. 2,1365] (*pralambhante* both Ausgg., = *avalambante*
 [NĪLAK.]). [3,2612.] [11,122.] [BHĀG. P. 3,17,27.] [29.] [18,13.] [4,7,13.] [10,22,21.] [34,13.] [11,1,16.]
+  <sub>attested</sub>
 
 **caus)** — Vgl. *pralabdhavya, pralambha* fg. — caus. Jmd anführen, foppen, zum Narren halten
 [BHĀG. P. 9,3,20.] [10,60,49.]
+
+- **RU:** — Vgl. *pralabdhavya, pralambha* fg. — caus. {%обманывать, дурачить, водить за нос кого-л.[BHĀG. P. 9,3,20.] [10,60,49.]
 - **EN:** — Vgl. *pralabdhavya, pralambha* fg. — caus. to deceive someone, to fool, to make a fool of
 [BHĀG. P. 9,3,20.] [10,60,49.]
+  <sub>attested</sub>

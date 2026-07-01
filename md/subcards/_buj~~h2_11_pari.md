@@ -13,7 +13,7 @@
 - **EN:** — *pari*
  1) to eat something (acc.) in advance, to eat first: *parocchiṣṭaṃ ca yadbhuktaṃ paribhuktaṃ ca yadbhavet*
 [MBH. 13,1579.]
-  <sub>DCS 94 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) Jmd (acc.) beim Essen übergehen, ohne Essen lassen: *api svitparyabhuṅkthāstvaṃ saṃbhojyānvṛddhabālakān*
 [BHĀG. P. 1,14,43.]
@@ -22,7 +22,7 @@
 [BHĀG. P. 1,14,43.]
 - **EN:** — 2) to pass over someone (acc.) at eating, to leave without food: *api svitparyabhuṅkthāstvaṃ saṃbhojyānvṛddhabālakān*
 [BHĀG. P. 1,14,43.]
-  <sub>DCS 94 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) verspeisen: *(śarīraṃ me) balimiva paribhoktuṃ vāyasāstarkayanti*
 [MṚCCH. 157,11.] geniessen, benutzen, gebrauchen: *yadi me sa putra imaṃ dhanaskandhaṃ paribhuñjīyāt*
@@ -64,4 +64,4 @@
 [AK. 3,4,23,147.] — st. *paribhujyantam*
 [MBH. 11,97] reads the [ed. Bomb.] *paribhṛjjantam* (d. i. *˚bhṛjjyantam)* . Vgl. *paribhoktar* fg. — desid. partic. *paribubhukṣita* exceedingly hungry
 [MBH. 9,1483.] Can also be analysed as *pari + bu˚*.
-  <sub>DCS 94 · attested</sub>
+  <sub>attested</sub>

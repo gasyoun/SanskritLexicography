@@ -13,4 +13,4 @@
 - **EN:** — *samupā* to bring many to a place, assemble: *śrotriyāṃśca videśasthānsatkṛtya samupānaya*
 [R. GORR. 1,11,7.] *mantrāya samupānītaiḥ*
 [MBH. 1,7460.] — Forms with the augment are found under *samupa* .
-  <sub>DCS 2376 · attested</sub>
+  <sub>attested</sub>

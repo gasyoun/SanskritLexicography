@@ -58,7 +58,7 @@
 [MĀRK. P. 19,20.]
 [MADHYAM. 1.] *praṇipatitaśirobhiḥ*
 [VARĀH. BṚH. S. 42 (43),60.]
-  <sub>DCS 240 · attested</sub>
+  <sub>attested</sub>
 
 **caus)** — Vgl. *praṇipāta* . — caus. machen, dass Jmd sich niederwirft: *ātmanā sahaināṃ praṇipātayati*
 [MĀLAV. 39,16.]
@@ -67,4 +67,4 @@
 [MĀLAV. 39,16.]
 - **EN:** — Vgl. *praṇipāta* . — caus. to cause someone to prostrate himself: *ātmanā sahaināṃ praṇipātayati*
 [MĀLAV. 39,16.]
-  <sub>DCS 240 · attested</sub>
+  <sub>attested</sub>

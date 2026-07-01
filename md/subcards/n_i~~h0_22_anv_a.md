@@ -10,4 +10,4 @@
 [MBH. 7,6343.]
 - **EN:** — *anvā* to bring to, supply: *rathamanvānayattasmai*
 [MBH. 7,6343.]
-  <sub>DCS 6 · attested</sub>
+  <sub>attested</sub>

@@ -10,4 +10,4 @@
 [MBH. 5,7090.]
 - **EN:** — *vyapa* caus. to drive away, expel: *yaste yuddhamayaṃ darpaṃ kāmaṃ ca vyapanāśayet*
 [MBH. 5,7090.]
-  <sub>DCS 1422 · attested</sub>
+  <sub>attested</sub>

@@ -29,13 +29,13 @@ vgl. u. II, 2 и под — *vyati*.
 [7,4,78], Sch. *jajñiṣe, jajñidhve*
 [VOP. 10,7.] [9,39];
 vgl. u. II, 2 and under — *vyati*.
-  <sub>DCS 9250 · attested</sub>
+  <sub>attested</sub>
 
 **I.1c)** — c) *jāyate* (vgl. u. simpl., *pra, vi* und *sam*), ep. auch *˚ti* .
 
 - **RU:** — c) *jāyate* (vgl. u. simpl., *pra, vi* und *sam*), ep. также *˚ti*.
 - **EN:** — c) *jāyate* (vgl. u. simpl., *pra, vi* and *sam*), epic also *˚ti*.
-  <sub>DCS 9250 · attested</sub>
+  <sub>attested</sub>
 
 **I.2)** — 2) allgemeine Formen: *jajāna, jajñatus, jajñus*
 [P. 6,4,98.] *jajanus* (ved.); *jajñe, jajñivaṃs; janiṣyati, ˚te*, ep. *(pra) jāsyati* u. s. w.; *janiṣṭām*
@@ -59,7 +59,7 @@ vgl. u. II, 2 and under — *vyati*.
 [ṚV. 2,34,2.] *janitos* (
 [P. 3,4,16]), *janitvī*
 [ṚV. 10,65,7.]
-  <sub>DCS 9250 · attested</sub>
+  <sub>attested</sub>
 
 **I.3)** — 3) caus. *janayati*
 [DHĀTUP. 19,63.]
@@ -78,7 +78,7 @@ vgl. u. II, 2 and under — *vyati*.
 ([ŚAT. BR. 14,9,4,13]). After
 [P. 1,3,86] and
 [VOP. 22,2] caus. always act., but this holds only for the later unbound speech (prose).
-  <sub>DCS 9250 · attested</sub>
+  <sub>attested</sub>
 
 **1)** 1) zeugen, gebären; erzeugen, hervorbringen, verursachen, gignere: *sadyaḥ pravītā vṛṣaṇaṃ jajāna*
 [ṚV. 3,29,3.] *yathā putraṃ janāditi*
@@ -235,7 +235,7 @@ vgl. u. II, 2 and under — *vyati*.
 [5,58,4.] *tritāya gā ajanayannaheradhi*
 [10,48,2.] *(dātram) tadrodasī janayataṃ jaritre*
 [1,185,3.]
-  <sub>DCS 9250 · attested</sub>
+  <sub>attested</sub>
 
 **II.1a)** — II. intrans.
  1) Präsensformen:
@@ -260,22 +260,22 @@ a) *janiṣe, janiṣva, janidhve, janidhvam*
 [4,5,5.] *ajñata* in the
 [BRĀHMAṆA], after
 [P. 2,4,80] aor.
-  <sub>DCS 9250 · attested</sub>
+  <sub>attested</sub>
 
 **I (грамматическая рубрика))** *jan*¦ I. trans.
 
 - **RU:** *jan*¦ I. trans.
-  <sub>DCS 9250 · attested</sub>
+  <sub>attested</sub>
 
 **1) Präsensformen)** 1) Präsensformen:
 
 - **RU:** 1) Формы настоящего времени:
-  <sub>DCS 9250 · attested</sub>
+  <sub>attested</sub>
 
 **1a)** a) *janāmi, janāmasi, ajanam, ajanan*; med. *janata, ajananta*; nur in der älteren Sprache.
 
 - **RU:** a) *janāmi, janāmasi, ajanam, ajanan*; med. *janata, ajananta*; только в более древнем языке.
-  <sub>DCS 9250 · attested</sub>
+  <sub>attested</sub>
 
 **I.1) зачинать, рождать; производить, порождать, причинять)** 1) zeugen, gebären; erzeugen, hervorbringen, verursachen, gignere: *sadyaḥ pravītā vṛṣaṇaṃ jajāna*
 [ṚV. 3,29,3.] *yathā putraṃ janāditi*
@@ -398,4 +398,4 @@ a) *janiṣe, janiṣva, janidhve, janidhvam*
 [AV. 7,19,1.] *goṣṭhe no gā janaya yoniṣu prajāḥ*
 [13,1,19.] *janayati nṛpameko 'pi (grahaḥ)*
 [VARĀH. BṚH. 20] ([19),2. 14,1.]
-  <sub>DCS 9250 · attested</sub>
+  <sub>attested</sub>

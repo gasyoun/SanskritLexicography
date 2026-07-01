@@ -16,4 +16,4 @@
 [PAT. a. a. O. 1,254,a.]
 
 — *pra* to fold, fold together: *prabhujati vāsasī* ebend.
-  <sub>DCS 2938 · attested</sub>
+  <sub>attested</sub>

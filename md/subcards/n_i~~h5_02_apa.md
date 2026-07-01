@@ -13,4 +13,4 @@
 - **EN:** — *apa*
  9) *apanīta* _n._ also
 [R. ed. Bomb. 6,95,38.]
-  <sub>DCS 226 · attested</sub>
+  <sub>attested</sub>

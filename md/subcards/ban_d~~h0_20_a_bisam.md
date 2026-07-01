@@ -32,9 +32,9 @@ Schol. zu [P. 2,2,11.] [1,6.] [KULL.] zu [M. 2,204.] Schol. bei
 [PAT.] к [P. 6,1,150.] ders. к 147 при [GOLD.] [MĀN. 127,a.] *arthaśabdaḥ pratyekamabhisaṃbadhyate* относится к, следует отнести, — следует восполнить
 Schol. к [P. 2,2,11.] [1,6.] [KULL.] к [M. 2,204.] Schol. при
 [WILSON, SĀṂKHYAK. S. 51.]
-  <sub>DCS 15 · attested</sub>
+  <sub>attested</sub>
 
 **Nachtrag (T29))** — Vgl. *abhisaṃbandha* .
 
 - **RU:** — Vgl. *abhisaṃbandha* .
-  <sub>DCS 15 · attested</sub>
+  <sub>attested</sub>

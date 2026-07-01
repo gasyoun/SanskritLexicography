@@ -55,7 +55,7 @@
 [R. 1,63,3.] *nātiprīto 'bhyagātpuram*
 [BHĀG. P. 4,9,27.] *te 'bhyagurbhavanam*
 [BHAṬṬ. 15,2.]
-  <sub>DCS 138 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) gelangen zu, theilhaft werden: *śvetaṃ lindu mābhigām*
 [CHĀND. UP. 8,14,1.] *sāvitrī tuṣṭimabhyagāt*
@@ -70,4 +70,4 @@
 [CHĀND. UP. 8,14,1.] *sāvitrī tuṣṭimabhyagāt*
 [MBH. 3,16625.] — *tasya yauvanamabhyagāt*
 [MBH. 2,696] erroneous for *atyagāt* .
-  <sub>DCS 138 · attested</sub>
+  <sub>attested</sub>

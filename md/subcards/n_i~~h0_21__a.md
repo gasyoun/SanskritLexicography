@@ -145,7 +145,7 @@
 [R. 1,40,9.] [2,82,29] [3,55,52.] *ānayiṣyāmi*
 [VET. in LA. 37,10.] — *ānīye*
 [DAŚAK. 85,11] ([BENF. Chr. 195,11]) erroneously for *anīye* .
-  <sub>DCS 1178 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) eingiessen, einmengen: *harirānītaḥ puruvāro apsu*
 [ṚV. 9,96,24.]
@@ -169,7 +169,7 @@
 [KĀTY. ŚR. 3,2,22.] *(kṣīram) adhiśrityottaramānayati*
 [TBR. 2,1,5,5.]
 [ĀŚV. GṚHY. 1,24.]
-  <sub>DCS 1178 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) (Opfer) bringen (vgl. *har* mit *ā): yaḥ puruṣamedhānāmāyutamānayattenāsyāyutanāyitvam*
 [MBH. 1,3773.]
@@ -178,7 +178,7 @@
 [MBH. 1,3773.]
 - **EN:** — 3) to bring (a sacrifice) (vgl. *har* with *ā): yaḥ puruṣamedhānāmāyutamānayattenāsyāyutanāyitvam*
 [MBH. 1,3773.]
-  <sub>DCS 1178 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) Jmd Etwas zuführen so v. a. zutheilen, übertragen auf: *ānināya bhuvaḥ kampaṃ jahārāśramavāsinām*
 [RAGH. 15,24.]
@@ -187,7 +187,7 @@
 [RAGH. 15,24.]
 - **EN:** — 4) to bring something to someone, hence v. a. to assign, transfer to: *ānināya bhuvaḥ kampaṃ jahārāśramavāsinām*
 [RAGH. 15,24.]
-  <sub>DCS 1178 · attested</sub>
+  <sub>attested</sub>
 
 **5)** — 5) bringen zu Etwas, versetzen in (vgl. simpl.): *tānānayedvaśaṃ sarvānsāmādibhirupāyaiḥ* zum Gehorsam bringen, sich unterwerfen
 [M. 7,107.] [108.] [9,261.] *hatvā cāsya camūṃ kṛtsnāṃ vaśamevānayāmahe*
@@ -205,7 +205,7 @@
 [MBH. 4,982.] *vidhvaṃsamānītāḥ* destroyed
 [MĀRK. P. 14,65.] *nakāralopoṣmarabhāvamānayedapetarāgāṃ prakṛtiṃ parigrahe*
 [ṚV. PRĀT. 11,19.] [20.]
-  <sub>DCS 1178 · attested</sub>
+  <sub>attested</sub>
 
 **6)** — 6) ableiten, berechnen nach
 [SŪRYAS. 12,65.]
@@ -214,7 +214,7 @@
 [SŪRYAS. 12,65.]
 - **EN:** — 6) to derive, reckon according to
 [SŪRYAS. 12,65.]
-  <sub>DCS 1178 · attested</sub>
+  <sub>attested</sub>
 
 **7)** — 7) anbringen, anwenden, an den Tag legen, zeigen: *bhavarase vairāgyamānīyatām* so v. a. *ādhīyatām* (wie auch die v. l. hat; vgl.
 [Spr.] *nanvātmātmanyavadhīyatām* u. s. w.)
@@ -226,7 +226,7 @@
 - **EN:** — 7) to employ, apply, display, show: *bhavarase vairāgyamānīyatām* thus v. a. *ādhīyatām* (as also the v. l. has; vgl.
 [Spr.] *nanvātmātmanyavadhīyatām* u. s. w.)
 [BHARTṚ.] in [SCHIEFNER] and [WEBER S. 26, Z. 3.]
-  <sub>DCS 1178 · attested</sub>
+  <sub>attested</sub>
 
 **caus)** — Vgl. *ānaya* fgg., *˚nāya, ˚nāyya, ˚nīti, ˚netar*
 
@@ -262,4 +262,4 @@ fg. — caus. to cause to bring hither, to have come, to have brought: *tayā tv
 [UPAK. 73] (*tāmanayyeha* [KATHĀS. 4,75]).
 med. [R. GORR. 2,82,10.] *ānāpayitum* erroneously for *ānāyayitum*
 [R. SCHL. 2,14,21.]
-  <sub>DCS 1178 · attested</sub>
+  <sub>attested</sub>

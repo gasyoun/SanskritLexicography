@@ -31,4 +31,4 @@
 [ŚAT. BR. 7,5,1,25.] *bhūmestatspāśayitvāya no brūhi*
 [6,3,3,11.] partic. *spāśita = spaṣṭa*
 [P. 7,2,27.]
-  <sub>DCS 4733 · attested</sub>
+  <sub>attested</sub>

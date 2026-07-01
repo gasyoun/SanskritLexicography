@@ -16,4 +16,4 @@
 [KATHĀS. 22,144.] *kṛṣṇasya nidhanākāṅkṣī tūrṇamabhyutpapāta ha*
 [HARIV. 4114.] Vgl. *abhyutpatana* . — caus. to cause to fly up towards (acc.)
 [ŚAT. BR. 1,8,3,14.]
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>

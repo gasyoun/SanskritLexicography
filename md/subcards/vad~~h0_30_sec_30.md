@@ -10,4 +10,4 @@
 [ŚĀṄKH. ŚR. 17,14,8.]
 - **EN:** — caus. to cause to resound afterwards: *vīṇām*
 [ŚĀṄKH. ŚR. 17,14,8.]
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>

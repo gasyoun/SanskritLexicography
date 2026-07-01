@@ -53,7 +53,7 @@
 [28,115] (*preraṇe*,
 [VOP.] *kṣepe)*.* suvatāt*; med. (in den
 [BRĀHMAṆA]): *suvate*
-  <sub>DCS 14088 · attested</sub>
+  <sub>attested</sub>
 
 **3.)** 3. pl. [ŚAT. BR. 5,3,3,13.] *suvāntai* 14. *suvante*
 [TS. 5,6,3,1.] *suvai, suvāvahai*
@@ -110,9 +110,9 @@
 [MAITRYUP. 6,16.] *mā na sāvīrmahāstrāṇi* so v. a. мечи
 [BHAṬṬ. 9,50.] — *prajāpateḥ sutaṃ rayiṣṭham* N. eines Sāman
 [Ind. St. 3,225,a.]
-  <sub>DCS 14088 · attested</sub>
+  <sub>attested</sub>
 
 **addendum)** — Vgl. 2. *sava*, 2. *savana*, 1. *savitar, savīman* .
 
 - **RU:** — Vgl. 2. *sava*, 2. *savana*, 1. *savitar, savīman* .
-  <sub>DCS 14088 · attested</sub>
+  <sub>attested</sub>

@@ -124,4 +124,4 @@
 [MBH. 4,838.]
 [R. GORR. 1,69,1.] [3,40,24.] *sītā rāvaṇaṃ prābravīdvacaḥ* spoke to R. the words
 [BHAṬṬ. 8,85.]
-  <sub>DCS 244 · attested</sub>
+  <sub>attested</sub>

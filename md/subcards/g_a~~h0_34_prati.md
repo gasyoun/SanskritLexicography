@@ -10,4 +10,4 @@
 [BHĀG. P. 4,20,37.]
 - **EN:** — *prati* to return: *svadhāma pratyagātprabhuḥ*
 [BHĀG. P. 4,20,37.]
-  <sub>DCS 1 · attested</sub>
+  <sub>attested</sub>

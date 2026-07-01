@@ -79,7 +79,7 @@ try not to speak with me about it
 [BHĀG. P. 3,20,5.] [12,10,7.] *iti tau daṃpatī tatra samudya samayaṃ mithaḥ* so v. a. concluding a pact
 [BHĀG. P. 4,25,43.] *yathāsamuditam* by agreement
 [ŚAT. BR. 13,5,4,27.]
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) act. zusammen klingen, von musikalischen Instrumenten
 [AV. 4,37,4.]
@@ -88,7 +88,7 @@ try not to speak with me about it
 [AV. 4,37,4.]
 - **EN:** — 2) act. to sound together, of musical instruments
 [AV. 4,37,4.]
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) übereinstimmen, zustimmen: *daivaṃ na saṃvadati*
 [MṚCCH. 165,20.] *daivaṃ saṃvadate yadi*
@@ -106,7 +106,7 @@ try not to speak with me about it
 [HARIV. 7413.] *tvadākhyātā ca tasyaiṣā saṃvadiṣyati matkathā*
 [KATHĀS. 121,218.] *api ca kṛtinamenaṃ śaktidevaṃ svanāmnā vyadhita samuditena sveṣu vidyādhareṣu ..* so v. a. in use
 [26,279.]
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) sprechen: *yadi jñāsyāmi vakṣyāmi ajānanna tu saṃvade*
 [MBH. 13,480.] *bhīṣmaḥsamavadattatra giraṃ sādhubhirarcitām*
@@ -121,7 +121,7 @@ try not to speak with me about it
 [MBH. 13,480.] *bhīṣmaḥsamavadattatra giraṃ sādhubhirarcitām*
 [4,915.] *evaṃ samuditastena* addressed
 [BHĀG. P. 3,24,41.]
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **5)** — 5) bezeichnen als, erklären für, nennen: *mandākrāntāṃ tāṃ saṃvadanti*
 [ŚRUT. 42.]
@@ -130,7 +130,7 @@ try not to speak with me about it
 [ŚRUT. 42.]
 - **EN:** — 5) to designate as, to declare to be, to call: *mandākrāntāṃ tāṃ saṃvadanti*
 [ŚRUT. 42.]
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **caus-1)** — Vgl. *saṃvaditavya, saṃvāda* . — caus.
  1) sich unterreden lassen: *saṃvādayainaṃ devaiḥ*
@@ -148,7 +148,7 @@ try not to speak with me about it
 [ŚAT. BR. 1,8,3,20.] to bring about a conference about (loc.), med.
 [ŚĀṄKH. ŚR. 17,14,2.]
 [KAUṢ. UP. 4,3. fgg.]; vgl. S. 136. fg.
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **caus-2)** — 2) sich über Etwas einigen, einstimmen: *saṃvādayanniva*
 [KATHĀS. 107,79.] *saṃvādyatāṃ tatsarveṣām*
@@ -163,7 +163,7 @@ try not to speak with me about it
 [KATHĀS. 107,79.] *saṃvādyatāṃ tatsarveṣām*
 [50,166.] *saṃvādita* that about which one has agreed
 [MBH. 1,7931.]
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **caus-3)** — 3) zutreffend angeben: *saṃvādya rūpasaṃkhyādīn*
 [M. 8,31.]
@@ -172,7 +172,7 @@ try not to speak with me about it
 [M. 8,31.]
 - **EN:** — 3) to state correctly, to indicate accurately: *saṃvādya rūpasaṃkhyādīn*
 [M. 8,31.]
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **caus-4)** — 4) Jmd zum Sprechen auffordern
 [HIT. 83,1], v. l.
@@ -181,7 +181,7 @@ try not to speak with me about it
 [HIT. 83,1], v. l.
 - **EN:** — 4) to prompt someone to speak
 [HIT. 83,1], v. l.
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **caus-5)** — 5) ertönen lassen (ein musikalisches Instrument): *tūryāṇi*
 [MBH. 1,7056.] *vāditrāṇi*
@@ -196,10 +196,10 @@ try not to speak with me about it
 [MBH. 1,7056.] *vāditrāṇi*
 [7909.] *vīṇām*
 [KATHĀS. 21,4.]
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **caus-tail)** — Vgl. *saṃvādana* .
 
 - **RU:** — Vgl. *saṃvādana* .
 - **EN:** — Vgl. *saṃvādana* .
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>

@@ -10,7 +10,7 @@
 [Sp. 215, Z. 2] v. u. следует читать [Spr. 208] ([567] 2-го Aufl.) st. 208.
 - **EN:** 1. *rakṣ*¦
 [Sp. 215, Z. 2] v. u. read [Spr. 208] ([567] of the 2nd Aufl.) st. 208.
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **1)** — caus. schützen vor (abl.)
 [Spr. (II) 5221.]
@@ -19,7 +19,7 @@
 [Spr. (II) 5221.]
 - **EN:** — caus. to protect from (abl.)
 [Spr. (II) 5221.]
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — *samabhi* Jmd bewahren, behüten, beschützen
 [R. ed. Bomb. 2,12,19.]
@@ -28,7 +28,7 @@
 [R. ed. Bomb. 2,12,19.]
 - **EN:** — *samabhi* to preserve, guard, protect someone
 [R. ed. Bomb. 2,12,19.]
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — *ā*, *ātmānamārakṣati sindhuvegāt*
 [Spr. (II) 6634.]
@@ -37,4 +37,4 @@
 [Spr. (II) 6634.]
 - **EN:** — *ā*, *ātmānamārakṣati sindhuvegāt*
 [Spr. (II) 6634.]
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>

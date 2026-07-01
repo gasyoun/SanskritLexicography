@@ -67,7 +67,7 @@
 [P. 3,1,25], Sch.
 [VOP. 21,17.] to fill with one's song: *upagīyamānā bhramarai rājante vanarājayaḥ*
 [MBH. 3,11606.] [17284.]
-  <sub>DCS 121 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) besingen: *(jambuḥ) arcitā copagītā ca nityamapsarasāṃ gaṇaiḥ*
 [R. 4,44,57.] *surāsurendrairupagīyamānamahānubhāvaḥ*
@@ -85,7 +85,7 @@
 [BHĀG. P. 4,16,27.] *yatropagīyate nityaṃ devadevaḥ*
 [3,7,20.] *saptasāmopagītaṃ tvām*
 [RAGH. 10,22.]
-  <sub>DCS 121 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) singen: *rathaṃtaraṃ sāmagāścopagānti*
 [MBH. 12,10299.] *jihvāsatī — na yopagāyatyurugāyagāthāḥ*
@@ -107,9 +107,9 @@
 [MBH. 12,10299.] *jihvāsatī — na yopagāyatyurugāyagāthāḥ*
 [BHĀG. P. 2,3,20.] *tasyedamupagāyanti* о нём поют следующее
 [5,14,41.]
-  <sub>DCS 121 · attested</sub>
+  <sub>attested</sub>
 
 **cross-ref)** — Vgl. *upagā, upagātar* .
 
 - **RU:** — Vgl. *upagā, upagātar* .
-  <sub>DCS 121 · lexicographic</sub>
+  <sub>lexicographic</sub>

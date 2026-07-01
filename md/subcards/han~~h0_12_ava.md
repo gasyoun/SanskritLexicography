@@ -35,7 +35,7 @@
 [VARĀH. BṚH. S. 89,1.] *yathā śailasya mahataḥ śailenaivāvajaghnataḥ*
 (= *avahanyamānasya* [NĪLAK.], one might conjecture *avahanyataḥ*; vgl. [6,2514])
 [MBH. 4,1424.]
-  <sub>DCS 64 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) zurückschlagen, — stossen; verscheuchen, abwehren: *śardhaḥ*
 [ṚV. 1,133,3.] *brahmadviṣaḥ*
@@ -56,7 +56,7 @@
 [KAUŚ. 70.]
 [ĀŚV. GṚHY. 2,4,14.] *duritam*
 [ŚĀK. 83], v. l.
-  <sub>DCS 64 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) ausschlagen, dreschen
 [ṚV. 1,191,2.] Körner
@@ -77,7 +77,7 @@
 [ŚAT. BR. 2,4,2,9.] [6,1,8.]
 [KĀTY. ŚR. 1,10,13] (partic. *avahata*).
 [2,4,14.] [4,1,5.] [GOBH. 1,7,4. 3,7,5.] [KAUŚ. 2. 61. 87.] [ĀŚV. ŚR. 2,6,7. 8.] [BHĀG. P. 11,9,6.] [8.] [MADHUS.] in [Ind. St. 1,15,1.]
-  <sub>DCS 64 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — Vgl. *avaghāta, avahanana, avahantar* der niederschlägt, abwehrt
 [ṚV. 4,25,6.] — caus. dreschen lassen: *(tām) vrīhīnavaghātayet*
@@ -92,9 +92,9 @@
 [ṚV. 4,25,6.] — caus. to have (something) threshed: *(tām) vrīhīnavaghātayet*
 [ŚAT. BR. 14,9,4,12.] — intens. to strike back: *ava jaṅghanīhi*
 [AV. 5,20,8.]
-  <sub>DCS 64 · attested</sub>
+  <sub>attested</sub>
 
 **prefix-header)** — *ava*
 
 - **RU:** — *ava*
-  <sub>DCS 64 · attested</sub>
+  <sub>attested</sub>

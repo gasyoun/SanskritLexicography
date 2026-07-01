@@ -10,31 +10,31 @@
 
 - **RU:** Mit vyati выходить за пределы чего-л., Haravijaya 6,30. [46,43.]
 - **EN:** With vyati to go beyond something, Haravijaya 6,30. [46,43.]
-  <sub>DCS 3124 · attested</sub>
+  <sub>attested</sub>
 
 **sama_patita)** Mit samā, ˚patita unerwartet zum Vorschein gekommen, -x- sich eingestellt habend, [Jātakam. 26.]
 
 - **RU:** Mit samā, ˚patita неожиданно появившийся, объявившийся, [Jātakam. 26.]
 - **EN:** With samā, ˚patita having appeared unexpectedly, having presented itself, [Jātakam. 26.]
-  <sub>DCS 3124 · attested</sub>
+  <sub>attested</sub>
 
 **abhyud)** Mit abhyud [Kaus.] auffliegen machen zu (Akk.), [Śat. Br. 1,8,3,14.]
 
 - **RU:** Mit abhyud [Kaus.] заставлять взлетать к (Akk.), [Śat. Br. 1,8,3,14.]
 - **EN:** With abhyud [Kaus.] to cause to fly up to (Acc.), [Śat. Br. 1,8,3,14.]
-  <sub>DCS 3124 · attested</sub>
+  <sub>attested</sub>
 
 **prod)** Mit prod ˚sich (vom Sitze) erheben, [Yudh. 6,132.]
 
 - **RU:** Mit prod ˚подниматься (с места), [Yudh. 6,132.]
 - **EN:** With prod ˚to rise (from one's seat), [Yudh. 6,132.]
-  <sub>DCS 3124 · attested</sub>
+  <sub>attested</sub>
 
 **abhini)** Mit abhini herabfallen auf (Akk.), [Āpast. Gṛhy. 23,8.]
 
 - **RU:** Mit abhini падать на (Akk.), [Āpast. Gṛhy. 23,8.]
 - **EN:** With abhini to fall down upon (Acc.), [Āpast. Gṛhy. 23,8.]
-  <sub>DCS 3124 · attested</sub>
+  <sub>attested</sub>
 
 **abhini_caus)** [Kaus.] fallen lassen, schleudern (Worte), [Jātakam. 21,18.]
 - **EN:** [Kaus.] to let fall, to hurl (words), [Jātakam. 21,18.]
@@ -48,21 +48,21 @@
 **ati_patya)** 1. pat¦ mit ati, ˚patya Absol. mit Akk. so v.a. sich nicht kümmernd um, [Jātakam. 2,26; 28,13.]
 
 - **RU:** 1. pat¦ mit ati, ˚patya Absol. mit Akk. так, т.е. не заботясь о, [Jātakam. 2,26; 28,13.]
-  <sub>DCS 3124 · attested</sub>
+  <sub>attested</sub>
 
 **fallen_lassen)** [Kaus.] fallen lassen, 
 
  schleudern (Worte), [Jātakam. 21,18.]
 
 - **RU:** [Kaus.] ронять, бросать (слова), [Jātakam. 21,18.]
-  <sub>DCS 3124 · attested</sub>
+  <sub>attested</sub>
 
 **nis)** Mit nis ˚vor Gericht unterliegen, [Kauṭ. 149,2]/1 v.u.
 
 - **RU:** Mit nis ˚проигрывать судебный процесс, [Kauṭ. 149,2]/1 v.u.
-  <sub>DCS 3124 · attested</sub>
+  <sub>attested</sub>
 
 **abhisam)** Mit abhisam 1. hinfliegen, hineilen zu, stürzen auf (Akk.) — 2. einherfliegen. {part=,seq=17875,type=,n=18}
 
 - **RU:** Mit abhisam 1. лететь к, спешить к, бросаться на (Akk.) — 2. лететь вперёд. {part=,seq=17875,type=,n=18}
-  <sub>DCS 3124 · attested</sub>
+  <sub>attested</sub>

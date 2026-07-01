@@ -10,4 +10,4 @@
 [ŚAT. BR. 2,3,1,7.] [4,4,6.]
 - **EN:** — *abhyastam* to set (of a heavenly body) before, during, in the course of an action u. s. w.: *uddhṛtamabhyastamagāt*
 [ŚAT. BR. 2,3,1,7.] [4,4,6.]
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>

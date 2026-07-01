@@ -10,4 +10,4 @@
 [R. 7,29,37.]
 - **EN:** — *samanuni* dass.: *svasutavacanamādṛtaḥ priyaṃ tatsamanuniśamya* recognising
 [R. 7,29,37.]
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>

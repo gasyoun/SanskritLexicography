@@ -28,7 +28,7 @@
 [ŚAT. BR. 10,1,5,3.] [9,1,2,32.]
 [LĀṬY. 8,8,35.] *rathyāsu bālakairnityaṃ bahuśaḥ parigīyate*
 [R. 6,11,38.]
-  <sub>DCS 31 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) nah und fern überall singen, besingen, verkünden als: *etaiḥ karmaguṇairloke nāmāgneḥ parigīyate*
 [MBH. 13,4095.] *yāni nāmāni mahātmanaḥ — ṛṣibhiḥ parigītāni*
@@ -52,4 +52,4 @@
 [6,3,27.] *avyaktādi paraṃ yacca sa eva parigīyate*
 [MBH. 1,252.]
 [R. 6,102,29.]
-  <sub>DCS 31 · attested</sub>
+  <sub>attested</sub>

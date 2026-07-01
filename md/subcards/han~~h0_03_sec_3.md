@@ -37,7 +37,7 @@
 - **RU:** — intens. *jaṅghanāni, ˚nat, ˚nāva, jaṅghananta, jaṅghnat* и *jaṅghanat* partic. *(ā) jaṅghanti; ghanighnat*. бить, ударять, так v. a. наступать на: *pṛthivyāḥ sānau jaṅghananta pāṇibhiḥ*
 [ṚV. 2,31,2.] *pavyā rathasya*
 [1,88,2.] *pṛthivīm*
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **intens-2)** [10,119,10.] treffen, erschlagen: *vṛtram*
 [3,53,11.] [6,16,34.] *pavamānasya jaṅghnato (jighnato* [SV.])
@@ -46,7 +46,7 @@
 - **RU:** поражать, убивать: *vṛtram*
 [3,53,11.] [6,16,34.] *pavamānasya jaṅghnato (jighnato* [SV.])
 *hareścandrā asṛkṣata*
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **intens-3)** [9,66,25.] vernichten: *tamāṃsi* [24.] *ghanighnadduritā*
 [90,6.] — *jaṅghanīti* und *jaṅghanti, jaṅghatas, jaṅghnati* und *jaṅghanati*
@@ -61,4 +61,4 @@
 [P. 7,4,30], Vārtt. *jaṅghanyate*
 [P. 7,3,55], Schol. [VOP. 20,8.] *jaṅghanyamāna* с pass. Bed. терзаемый, мучимый
 [MUṆḌ. UP. 1,2,8.]
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>

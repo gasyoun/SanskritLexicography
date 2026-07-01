@@ -71,7 +71,7 @@
 [UTTARARĀMAC. 32,17.] *unmattā gaurivāndhā śrīḥ kvacidevāvatiṣṭhate*
 [MBH. 5,1511.] *yauvanonmattanayanāḥ (yoṣitaḥ)* agitated
 [R. 1,9,7.]
-  <sub>DCS 278 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) erheitern, ergötzen: *uttvā sutāso rabhasā amandiṣuḥ*
 
@@ -86,7 +86,7 @@
 
 [ṚV. 1,82,6.] [2,33,6.] *uttvā mandantu stomāḥ*
 [8,53,1.] [9,81,1.]
-  <sub>DCS 278 · attested</sub>
+  <sub>attested</sub>
 
 **caus)** — Vgl. *unmatta* fgg., *unmada, unmadiṣṇu, unmāda* fgg. — caus. aufregen, in Ekstase versetzen; verwirrt machen, von Sinnen bringen, verrückt machen: *unmaditā mauneyena vātā ā tasthimā vayam*
 [ṚV. 10,136,3.] *adyāpi me hṛdayamunmadayanti*
@@ -113,9 +113,9 @@
 [MBH. 4,379.]
 [R. 3,23,24.]
 [DAŚAK. 61,9. 78,15. 88,7.] Vgl. *anunmadita*.
-  <sub>DCS 278 · attested</sub>
+  <sub>attested</sub>
 
 **head)** — *ud*
 
 - **RU:** — *ud*
-  <sub>DCS 278 · attested</sub>
+  <sub>attested</sub>

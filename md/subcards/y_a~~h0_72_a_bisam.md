@@ -16,4 +16,4 @@
 [ṚV. 9,86,15.] *nāvodakādudakamabhisaṃyāti*
 [KĀṬH. 22,6.] {to set upon someone, advance against someone} (acc.): *māmekamabhisaṃyātau*
 [MBH. 8,1828.]
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>

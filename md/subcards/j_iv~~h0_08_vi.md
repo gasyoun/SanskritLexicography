@@ -10,4 +10,4 @@
 [MBH. 1,2002.]
 - **EN:** *vi* 'to revive, return to life': *dvijaprabhāvāt — vyajīvatsa vanaspatiḥ*
 [MBH. 1,2002.]
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>

@@ -158,7 +158,7 @@ pass. *pīyate* (
 [RAGH. 12,48.] *˚kośa* who has drained the treasure
 [RĀJA-TAR. 5,421.] [6,225.] *yogena mīlitadṛgātmani pītanidraḥ* hence v. a. who has given himself over to sleep
 [BHĀG. P. 7,9,32.]
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>
 
 **ppp_2_having_drunk)** — 2) getrunken habend: *bhuktapītaḥ* [KATHĀS. 39,157.] *pītapratibaddhavatsā (dhenu)* [RAGH. 2,1.] *a˚* noch nicht getrunken habend [MBH. 2,1902.] [ŚĀK. 84.] in comp. mit dem obj.: *surāpīta* der Surā getrunken hat [P. 6,2,170], Sch. *taila˚, ghṛta˚, madya˚* gaṇa *āhitāgnyādi* zu [P. 2,2,37.] *viṣa˚* [HARIV. 4840.] [R. GORR. 2,84,1.] *vṛṣalīphena˚* [M. 3,19.] getränkt, eingetaucht in Oel: *bhallena pītena niśitena* [MBH. 6,3186.] *sitapītābhyāṃ* (lies *śita˚) kṣurābhyām* [7,1078.] imbibirt, voll von: *pītaḥ sa śaucena* [12,1722.]
 
@@ -177,19 +177,19 @@ pass. *pīyate* (
 [MBH. 6,3186.] *sitapītābhyāṃ* (read *śita˚) kṣurābhyām*
 [7,1078.] imbibed, saturated with: *pītaḥ sa śaucena*
 [12,1722.]
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>
 
 **ppp_3_verbal_noun_drinking)** — 3) _n._ das Trinken [MED. t. 34.]
 
 - **RU:** — 3) _n._ питьё, акт питья [MED. t. 34.]
 - **EN:** — 3) _n._ the act of drinking
 [MED. t. 34.]
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>
 
 **1)** 1. *pā*¦ I. *pāti, pāhi, peyās* 3. sg. ([ṚV. 9,109,2]), *apām* (vgl. aor.), *apus, pās, pātam* u. s. w.; partic. *pāntam, pāntau* . Diese Formen nur in der älteren Sprache. II. *pibati* (in den späteren Schriften meist *pivati* geschrieben) [P. 7,3,78.] [VOP. 8,70.] auch med. Vereinzelt finden. sich Formen wie *pipatu* [KĀṬH. 25,6.] *pipate* (s. u. *anupra*). — perf. *papau, papātha (papitha* [P. 6,4,64], Sch.), *papathus, papus, papīyāt* ([ṚV. 6,37,2.] [10,28,1]), *papivaṃs* ([P. 7,2,67], Sch.), *papuṣas; papire, papāna* ([ṚV. 6,44,7]); aor. *apāt* [P. 2,4,77.] [VOP. 8,25]; fut. *pāsyati, ˚te*; prec. *peyāt* [P. 6,4,67.] [VOP. 8,85]; *pītvā, pītvī*, mit praepp. *˚pāya* nach [P. 6,4,69] und [VOP. 26,212], zu belegen nur *˚pīya; pātum, pātave, pibadhyai*; absol. *pāyam* [P. 3,4,22], Sch.; pass. *pīyate* ([P. 6,4,66]), *apāṣi, pape*; partic. *pīta* . trinken [DHĀTUP. 22,27.] mit acc. oder partitivem gen.: *pibatu somaṃ varuṇaḥ* [ṚV. 1,44,14.] *madhvaḥ pibanti gauryaḥ* [84,10.] *(avatam) viśve papire svardṛśaḥ* [2,24,4.] *pāhi naḥ sutam* [3,40,6.] [4,20,4.] [7,98,3.] *na somo apratā pape* (pass.) [8,32,16.] [2,11,10.] [19,1.] [AV. 5,19,5.] [VS. 4,11.] [21,60.] [AIT. BR. 3,30.] *ya etāsāṃ nadīnāṃ pibanti* [ŚAT. BR. 9,3,1,24.] [1,6,3,4.] *pātramapāyi* [ṚV. 6,44,16.] — *na vāryañjalinā pibet* [M. 4,63.] [6,46.] *pibantaṃ caiva vatsakam* [11,114.] *yadi vakṣo hi te bhittvā na pibecchoṇitaṃ raṇe* [MBH. 2,2534.] [3,17253.] [R. 1,44,36.] *papau* [RAGH. 2,69.] *madhu dvirephaḥ — papau* [KUMĀRAS. 3,36.] [KATHĀS. 45,230.] *apāt* [BHAṬṬ. 15,6.] *pāsyanti* [HIḌ. 1,52.] [MBH. 4,689.] [BHĀG. P. 9,21,10.] *peyās* [BHAṬṬ. 19,27.] *pātum* [M. 11,7.] [ŚĀK. 84.] *pītvāpaḥ* [M. 5,145.] *pibate* [MBH. 5,268.] [HARIV. 11332.] [14808.] *pibamānā* [MBH. 4,403.] *pibasva* [3,17259.] [4,454.] [14,277.] [1606.] *pāsyāmahe* [HARIV. 8002.] *tīrthodakamiṃdaṃ tāvatpīyatām* [R. 1,9,34.] [MEGH. 43.] [MĀRK. P. 54,30.] [HIT. Pr. 28.] *pape* impers. [BHAṬṬ. 14,92.] *rajaḥ* Staub einschlucken [M. 11,110.] *stanaṃ papau* [MĀRK. P. 17,7.] *adharam* [ŚĀK. 22.] [MEGH. 25.] *pibanyaśo mūrtamiva* einsaugen [RAGH. 7,60.] *papau — āśugaḥ — manuṣyaśoṇitam* [3,54.] *cakṣuṣā, locanaiḥ* u. s. w. mit den Augen sich laben an [R. GORR. 2,43,5.] [MEGH. 16.] [RAGH. 2,19.] [73.] [3,17.] [KATHĀS. 10,211.] [49,213.] [BHAṬṬ. 8,49.] [BHĀG. P. 9,24,64.] *aho nṛloke * * pīyeta harilīlāmṛtaṃ vacaḥ* mit den Ohren sich laben an [1,16,9.] *carāścareyuḥ paritaḥ pibanto jagatāṃ matam* (vgl. u. *samā*) [KĀM. NĪTIS. 12,26.] *kālaḥ pibati tatphalam* austrinken so v. a. fortnehmen [PAÑCAT. III,233.] *svatejasāpibattīvramātmaprasvāpanaṃ tamaḥ* [BHĀG. P. 3,26,20.] trinken so v. a. geistige Getränke trinken [MÜLLER, SL. 83.] *pīta*
 
 - **RU:** *pā*¦ I. *pāti, pāhi, peyās* 3. sg. ([ṚV. 9,109,2]), *apām* (vgl. aor.), *apus, pās, pātam* u. s. w.; partic. *pāntam, pāntau*. Эти формы только в более древнем языке. II. *pibati* (в позднейших сочинениях чаще пишется *pivati*) [P. 7,3,78.] [VOP. 8,70.] также med.. Изредка встречаются формы вроде *pipatu* [KĀṬH. 25,6.] *pipate* (s. u. *anupra*). — perf. *papau, papātha (papitha* [P. 6,4,64], Sch.), *papathus, papus, papīyāt* ([ṚV. 6,37,2.] [10,28,1]), *papivaṃs* ([P. 7,2,67], Sch.), *papuṣas; papire, papāna* ([ṚV. 6,44,7]); aor. *apāt* [P. 2,4,77.] [VOP. 8,25]; fut. *pāsyati, ˚te*; prec. *peyāt* [P. 6,4,67.] [VOP. 8,85]; *pītvā, pītvī*, с praepp. *˚pāya* после [P. 6,4,69] и [VOP. 26,212], засвидетельствовано лишь *˚pīya; pātum, pātave, pibadhyai*; absol. *pāyam* [P. 3,4,22], Sch.; pass. *pīyate* ([P. 6,4,66]), *apāṣi, pape*; partic. *pīta*. пить [DHĀTUP. 22,27.] с acc. или партитивным gen.: *pibatu somaṃ varuṇaḥ* [ṚV. 1,44,14.] *madhvaḥ pibanti gauryaḥ* [84,10.] *(avatam) viśve papire svardṛśaḥ* [2,24,4.] *pāhi naḥ sutam* [3,40,6.] [4,20,4.] [7,98,3.] *na somo apratā pape* (pass.) [8,32,16.] [2,11,10.] [19,1.] [AV. 5,19,5.] [VS. 4,11.] [21,60.] [AIT. BR. 3,30.] *ya etāsāṃ nadīnāṃ pibanti* [ŚAT. BR. 9,3,1,24.] [1,6,3,4.] *pātramapāyi* [ṚV. 6,44,16.] — *na vāryañjalinā pibet* [M. 4,63.] [6,46.] *pibantaṃ caiva vatsakam* [11,114.] *yadi vakṣo hi te bhittvā na pibecchoṇitaṃ raṇe* [MBH. 2,2534.] [3,17253.] [R. 1,44,36.] *papau* [RAGH. 2,69.] *madhu dvirephaḥ — papau* [KUMĀRAS. 3,36.] [KATHĀS. 45,230.] *apāt* [BHAṬṬ. 15,6.] *pāsyanti* [HIḌ. 1,52.] [MBH. 4,689.] [BHĀG. P. 9,21,10.] *peyās* [BHAṬṬ. 19,27.] *pātum* [M. 11,7.] [ŚĀK. 84.] *pītvāpaḥ* [M. 5,145.] *pibate* [MBH. 5,268.] [HARIV. 11332.] [14808.] *pibamānā* [MBH. 4,403.] *pibasva* [3,17259.] [4,454.] [14,277.] [1606.] *pāsyāmahe* [HARIV. 8002.] *tīrthodakamiṃdaṃ tāvatpīyatām* [R. 1,9,34.] [MEGH. 43.] [MĀRK. P. 54,30.] [HIT. Pr. 28.] *pape* impers. [BHAṬṬ. 14,92.] *rajaḥ* глотать пыль [M. 11,110.] *stanaṃ papau* [MĀRK. P. 17,7.] *adharam* [ŚĀK. 22.] [MEGH. 25.] *pibanyaśo mūrtamiva* всасывать [RAGH. 7,60.] *papau — āśugaḥ — manuṣyaśoṇitam* [3,54.] *cakṣuṣā, locanaiḥ* u. s. w. наслаждаться глазами, упиваться видом [R. GORR. 2,43,5.] [MEGH. 16.] [RAGH. 2,19.] [73.] [3,17.] [KATHĀS. 10,211.] [49,213.] [BHAṬṬ. 8,49.] [BHĀG. P. 9,24,64.] *aho nṛloke * * pīyeta harilīlāmṛtaṃ vacaḥ* наслаждаться слухом, упиваться (слушая) [1,16,9.] *carāścareyuḥ paritaḥ pibanto jagatāṃ matam* (vgl. u. *samā*) [KĀM. NĪTIS. 12,26.] *kālaḥ pibati tatphalam* выпивать до дна, а также v. a. уносить, отнимать [PAÑCAT. III,233.] *svatejasāpibattīvramātmaprasvāpanaṃ tamaḥ* [BHĀG. P. 3,26,20.] пить, так v. a. пить хмельные напитки [MÜLLER, SL. 83.] *pīta*
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>
 
 ## pā
 
@@ -208,7 +208,7 @@ pass. *pīyate* (
 **caus_main)** — caus. *pāyayati, ˚te* [P. 7,3,37.] [1,3,89.] [VOP. 18,6.] [23,58.] aor. *apīpyat* [P. 7,4,4.] [VOP. 18,7.] infinit. *pāyayitavai* [ŚAT. BR. 2,3,2,8.] tränken, zu trinken geben: *devā uśataḥ pāyaya haviḥ* [ṚV. 2,37,6.] *dakṣaṃ mahe pāyayate* [1,56,1.] [14,7.] [3,57,5.] [AV. 8,7,22.] [10,10,9.] [ŚAT. BR. 1,8,2,9.] *pāyayamāneva yoṣā putram* [NIR. 2,27.] *paśum* [ĀŚV. GṚHY. 1,11.] — [YĀJÑ. 2,112.] *hayānpāyayitvā* [MBH. 1,192.] [4,2155.] *tānhayān — pāyayāmāsa vāri saḥ* [7,3741.] [13,536.] *gāvo vatsānna pāpayan* (sic) [R. 2,41,9.] [91,52.] [SUŚR. 1,46,19] (*pāpayet!*). [63,6.] [KATHĀS. 10,109.] [13,85.] [BHĀG. P. 1,3,17.] [3,2,23.] [31.] [5,26,26.] [P. 8,1,60], Sch. [SIDDH. K.] zu [P. 2,3,27.] [VOP. 5,12.] *pāyayanti stanaṃ harim* [Z. d. d. m. G. 6,96,21.] *pāyayeta* [SUŚR. 1,158,19. 314,10.] [RAGH. 13,9.] *madhvapāyayata — ātmānam* [BHAṬṬ. 8,41.] *jyotsnāmṛtaṃ śaśī — vāpīḥ — apāyayata* 62. *yaścemāṃ mānavo dhenuṃ svairvatsairamarādibhiḥ . pāyayatyucite kāle* wer seine Kälber an dieser Kuh trinken lässt [MĀRK. P. 29,13.] *pāyita* was man zu trinken giebt [ŚAT. BR. 14,7,3,11.] getränkt: *pāyitāścāmṛtaṃ surāḥ* [BHĀG. P. 8,12,13.] getränkt so v. a. eingetaucht in: *nārācaistailapāyitaiḥ* [MBH. 9,1530.] *kṣāre kadalyā mathitena (takreṇa) yukte dinoṣite pāyitamāyasaṃ yat* [VARĀH. BṚH. S. 49,26.]
 
 - **RU:** — caus. *pāyayati, ˚te* [P. 7,3,37.] [1,3,89.] [VOP. 18,6.] [23,58.] aor. *apīpyat* [P. 7,4,4.] [VOP. 18,7.] infinit. *pāyayitavai* [ŚAT. BR. 2,3,2,8.] поить, давать пить: *devā uśataḥ pāyaya haviḥ* [ṚV. 2,37,6.] *dakṣaṃ mahe pāyayate* [1,56,1.] [14,7.] [3,57,5.] [AV. 8,7,22.] [10,10,9.] [ŚAT. BR. 1,8,2,9.] *pāyayamāneva yoṣā putram* [NIR. 2,27.] *paśum* [ĀŚV. GṚHY. 1,11.] — [YĀJÑ. 2,112.] *hayānpāyayitvā* [MBH. 1,192.] [4,2155.] *tānhayān — pāyayāmāsa vāri saḥ* [7,3741.] [13,536.] *gāvo vatsānna pāpayan* (sic) [R. 2,41,9.] [91,52.] [SUŚR. 1,46,19] (*pāpayet!*). [63,6.] [KATHĀS. 10,109.] [13,85.] [BHĀG. P. 1,3,17.] [3,2,23.] [31.] [5,26,26.] [P. 8,1,60], Sch. [SIDDH. K.] к [P. 2,3,27.] [VOP. 5,12.] *pāyayanti stanaṃ harim* [Z. d. d. m. G. 6,96,21.] *pāyayeta* [SUŚR. 1,158,19. 314,10.] [RAGH. 13,9.] *madhvapāyayata — ātmānam* [BHAṬṬ. 8,41.] *jyotsnāmṛtaṃ śaśī — vāpīḥ — apāyayata* 62. *yaścemāṃ mānavo dhenuṃ svairvatsairamarādibhiḥ . pāyayatyucite kāle* тот, кто позволяет своим телятам сосать эту корову [MĀRK. P. 29,13.] *pāyita* то, что дают пить [ŚAT. BR. 14,7,3,11.] напоенный, напоённый: *pāyitāścāmṛtaṃ surāḥ* [BHĀG. P. 8,12,13.] напоенный, так v. a. погружённый в: *nārācaistailapāyitaiḥ* [MBH. 9,1530.] *kṣāre kadalyā mathitena (takreṇa) yukte dinoṣite pāyitamāyasaṃ yat* [VARĀH. BṚH. S. 49,26.]
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>
 
 ## pā
 
@@ -221,7 +221,7 @@ pass. *pīyate* (
 **desid-caus-traenken-wollen)** — desid. vom caus. zu trinken zu geben beabsichtigen: *yo durbrāhmaṇo 'somaṃ pipāyayiṣet* [KĀṬH. 13,6.]
 
 - **RU:** — desid. от caus. намереваться дать пить: *yo durbrāhmaṇo 'somaṃ pipāyayiṣet* [KĀṬH. 13,6.]
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>
 
 ## pā
 
@@ -235,18 +235,18 @@ pass. *pīyate* (
 
 - **RU:** 1) *pipāsati* [P. 7,4,79], Sch. *somamindraḥ pipāsati* [ṚV. 8,4,11.] [NIR. 7,13.] [AIT. BR. 6,8.] [CHĀND. UP. 3,17,1.] *pipāsantaśca śoṇitam* [MBH. 7,205.] *pipāsita* жаждущий [3,17247.] [MṚCCH. 160,19.] [Spr. 1780.] [VET. in LA. 25,10.]
 - **EN:** 1) *pipāsati* [P. 7,4,79], Sch. *somamindraḥ pipāsati* [ṚV. 8,4,11.] [NIR. 7,13.] [AIT. BR. 6,8.] [CHĀND. UP. 3,17,1.] *pipāsantaśca śoṇitam* [MBH. 7,205.] *pipāsita* thirsty [3,17247.] [MṚCCH. 160,19.] [Spr. 1780.] [VET. in LA. 25,10.]
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>
 
 **desid-2)** — 2) *pipīṣati* [ṚV. 1,15,9.] *pipīṣate* dat. [6,42,1.]
 
 - **RU:** — 2) *pipīṣati* [ṚV. 1,15,9.] *pipīṣate* dat. [6,42,1.]
 - **EN:** — 2) *pipīṣati* [ṚV. 1,15,9.] *pipīṣate* dat. [6,42,1.]
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>
 
 **desid-trinken-wollen)** — desid. trinken wollen, durstig sein:
 
 - **RU:** — desid. хотеть пить, быть жаждущим:
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>
 
 ## pā
 
@@ -259,7 +259,7 @@ pass. *pīyate* (
 **intens-gierig-trinken)** — intens. *pepīyate* [P. 6,4,66.] [VOP. 20,4.] gierig —, wiederholt trinken: *pepīyamāna* [CHĀND. UP. 6,11,1.] *pepīyate 'mbhaḥ* [SUŚR. 2,488,21.] *pepīyate madhu madhau saha kāminībhiḥ* [VARĀH. BṚH. S. 19,18.] mit pass. Bed.: *tayā pepīyamāna udake* [BHĀG. P. 5,8,1.] *nāgāḥ — pepīyamānā bhramaraiḥ* an denen Bienen gierig saugen [HARIV. 8798.]
 
 - **RU:** — intens. *pepīyate* [P. 6,4,66.] [VOP. 20,4.] жадно пить, пить снова и снова: *pepīyamāna* [CHĀND. UP. 6,11,1.] *pepīyate 'mbhaḥ* [SUŚR. 2,488,21.] *pepīyate madhu madhau saha kāminībhiḥ* [VARĀH. BṚH. S. 19,18.] с pass. Bed.: *tayā pepīyamāna udake* [BHĀG. P. 5,8,1.] *nāgāḥ — pepīyamānā bhramaraiḥ* которых пчёлы жадно сосут [HARIV. 8798.]
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>
 
 ## pā
 
@@ -272,7 +272,7 @@ pass. *pīyate* (
 **ati-pa-traenken)** — *ati* caus. in grosser Menge Jmd (acc.) Etwas (acc.) zu trinken geben: *sā madyaṃ tenātipāyitā* [KATHĀS. 39,207.]
 
 - **RU:** — *ati* caus. в большом количестве поить кого-л. (acc.) чем-л. (acc.): *sā madyaṃ tenātipāyitā* [KATHĀS. 39,207.]
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>
 
 ## pā
 
@@ -289,12 +289,12 @@ pass. *pīyate* (
 
 - **RU:** caus. поить после: *yathā pariviṣyānupāyayet* [ŚAT. BR. 9,2,3,41.]
 - **EN:** caus. to cause to drink afterwards: *yathā pariviṣyānupāyayet* [ŚAT. BR. 9,2,3,41.]
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>
 
 **anu-pa-nachher-trinken)** — *anu* nachher —, darauf trinken: *etābhirvā indrastṛtīyasavanamanvapibat* [AIT. BR. 3,38.] [ŚĀṄKH. ŚR. 4,21,15.] [SUŚR. 1,167,16.] *kalmāṣānbhakṣayenmadhu cānupibet* [377,4. 2,160,6.] *nīlānyavāngavyapayo 'nupītān* [325,19.] *dhātrīphalānāṃ svaramena cūrṇam — līḍhvānupītvā ca payaḥ* [VARĀH. BṚH. S. 75,6.] [8.] *madhu pītvā rasavatkathaṃ nu me . anupāsyasi vāṣyadūṣitaṃ paralokopanataṃ jalāñjalim* später trinken [RAGH. 8,67.] trinken an: *mṛgayūthānupītāni (˚nipītāni* [SCHL.]) — *tīrthāni* [R. GORR. 2,104,5.] Vgl. *anupāna*
 
 - **RU:** — *anu* пить после, затем пить: *etābhirvā indrastṛtīyasavanamanvapibat* [AIT. BR. 3,38.] [ŚĀṄKH. ŚR. 4,21,15.] [SUŚR. 1,167,16.] *kalmāṣānbhakṣayenmadhu cānupibet* [377,4. 2,160,6.] *nīlānyavāngavyapayo 'nupītān* [325,19.] *dhātrīphalānāṃ svaramena cūrṇam — līḍhvānupītvā ca payaḥ* [VARĀH. BṚH. S. 75,6.] [8.] *madhu pītvā rasavatkathaṃ nu me . anupāsyasi vāṣyadūṣitaṃ paralokopanataṃ jalāñjalim* пить позднее [RAGH. 8,67.] пить из: *mṛgayūthānupītāni (˚nipītāni* [SCHL.]) — *tīrthāni* [R. GORR. 2,104,5.] Vgl. *anupāna*
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>
 
 ## pā
 
@@ -307,7 +307,7 @@ pass. *pīyate* (
 **antar-pa-main)** — *antar* s. *antaḥpeya* .
 
 - **RU:** — *antar* s. *antaḥpeya*.
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>
 
 ## pā
 
@@ -321,12 +321,12 @@ pass. *pīyate* (
 
 - **RU:** *abhipīta* напоённый, насыщенный, наполненный: *na kṣutpipāse rājendra bhūmeśchidre bhaviṣyataḥ . vasordhārābhipītatvāttejasāpyāyitena ca ..* [MBH. 12,12844.]
 - **EN:** *abhipīta* steeped in, filled with: *na kṣutpipāse rājendra bhūmeśchidre bhaviṣyataḥ . vasordhārābhipītatvāttejasāpyāyitena ca ..* [MBH. 12,12844.]
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>
 
 **abhi-pa-davon-trinken)** — *abhi* davon trinken: *bhūya evābhipāya śeṣaṃ brāhmaṇāya dadyāt* [GOBH. 4,10,14.]
 
 - **RU:** — *abhi* пить из этого, пить от того: *bhūya evābhipāya śeṣaṃ brāhmaṇāya dadyāt* [GOBH. 4,10,14.]
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>
 
 ## pā
 
@@ -339,7 +339,7 @@ pass. *pīyate* (
 **ava-pa-main)** — *ava* s. *avapāna* .
 
 - **RU:** — *ava* s. *avapāna*.
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>
 
 ## pā
 
@@ -352,7 +352,7 @@ pass. *pīyate* (
 **anvava-pa-nach-andern)** — *anvava* nach Andern zum Trunke kommen: *tata īśvarā yadi nāsurarakṣāṃsyanvavapātoḥ* [ŚĀṄKH. BR. 10,2. 17,9.]
 
 - **RU:** — *anvava* приходить к питью вслед за другими: *tata īśvarā yadi nāsurarakṣāṃsyanvavapātoḥ* [ŚĀṄKH. BR. 10,2. 17,9.]
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>
 
 ## āpā
 
@@ -380,7 +380,7 @@ pass. *pīyate* (
 **Apā_1)** — *ā* trinken aus: *praśāstrādā pibataṃ madhu* [ṚV. 2,36,6.] *pāntamā vo andhasaḥ* [8,81,1.] austrinken: *samudram* [R. 3,55,9.] hineintrinken, einschlürfen, trinken an: *(asya) nāpibeyaṃ balādvakṣo bhittvā cedrudhiraṃ yudhi* [MBH. 2,2302.] *mādanīyāni pānāni* [7,2312.] *āplutyākāśagaṅgāyāmāpīya salilaṃ bahu* [HARIV. 10452.] *ṣaḍānanāpītapayodharāsu — kṛttikāsu* [RAGH. 14,22.] *tatā 'syā āpapau vaktraṃ padmaṃ madhukaro yathā* [HARIV. 8746.] *upaiti savitā hyastaṃ rasamāpīya pārthivam* einsaugen, aussaugen [MBH. 12,2119.] *divākarāpītarasā mahauṣadhīḥ* [1894.] mit den Ohren Etwas einsaugen, hören: *bhagavatkathāsudhām . āpīya karṇāñjalibhiḥ* [BHĀG. P. 3,13,49.] *āpīyatām* man höre [2,6,45.] mit den Augen einsaugen: *tā rāghavaṃ dṛṣṭibhirāpibantyo nāryaḥ* [RAGH. 7,12.] Vgl. *āpāna, āpāyin* . — caus. einschlürfen lassen: *āpāyayati govindapādapadmāsavaṃ madhu* [BHĀG. P. 1,18,12.]
 
 - **RU:** — *ā* пить из (чего-л.): *praśāstrādā pibataṃ madhu* [ṚV. 2,36,6.] *pāntamā vo andhasaḥ* [8,81,1.] выпивать до дна: *samudram* [R. 3,55,9.] пить, вбирая; отпивать, прихлёбывать, пить из (чего-л.): *(asya) nāpibeyaṃ balādvakṣo bhittvā cedrudhiraṃ yudhi* [MBH. 2,2302.] *mādanīyāni pānāni* [7,2312.] *āplutyākāśagaṅgāyāmāpīya salilaṃ bahu* [HARIV. 10452.] *ṣaḍānanāpītapayodharāsu — kṛttikāsu* [RAGH. 14,22.] *tatā 'syā āpapau vaktraṃ padmaṃ madhukaro yathā* [HARIV. 8746.] *upaiti savitā hyastaṃ rasamāpīya pārthivam* всасывать, вытягивать (сок) [MBH. 12,2119.] *divākarāpītarasā mahauṣadhīḥ* [1894.] всасывать ушами, слышать: *bhagavatkathāsudhām . āpīya karṇāñjalibhiḥ* [BHĀG. P. 3,13,49.] *āpīyatām* да услышат [2,6,45.] всасывать глазами, воспринимать взором: *tā rāghavaṃ dṛṣṭibhirāpibantyo nāryaḥ* [RAGH. 7,12.] Vgl. *āpāna, āpāyin*. — caus. давать прихлёбывать, давать всосать: *āpāyayati govindapādapadmāsavaṃ madhu* [BHĀG. P. 1,18,12.]
-  <sub>DCS 31 · attested</sub>
+  <sub>attested</sub>
 
 ## pā
 
@@ -393,7 +393,7 @@ pass. *pīyate* (
 **sama-pa-einsaugen)** — *samā* einsaugen, aussaugen: *samāpibanto jagatāṃ matāni jalāni bhūmeriva sūryapādāḥ* [KĀM. NĪTIS. 12,48.] *atīkṣṇenābhyupāyena tathā rāṣṭraṃ samāpibet* [MBH. 12,3307.]
 
 - **RU:** — *samā* всасывать, высасывать: *samāpibanto jagatāṃ matāni jalāni bhūmeriva sūryapādāḥ* [KĀM. NĪTIS. 12,48.] *atīkṣṇenābhyupāyena tathā rāṣṭraṃ samāpibet* [MBH. 12,3307.]
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>
 
 ## pā
 
@@ -407,12 +407,12 @@ pass. *pīyate* (
 
 - **RU:** — Vgl. *utpiba*.
 - **EN:** — Vgl. *utpiba* .
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>
 
 **ud-pa-auftrinken)** — *ud* med. auftrinken, aufzehren, sich voll trinken: *utpibante vā imāni dikṣu nāṣṭrā rakṣāṃsi* [ŚAT. BR. 5,2,4,7.] [11.]
 
 - **RU:** — *ud* med. выпивать досуха, поглощать, напиваться досыта: *utpibante vā imāni dikṣu nāṣṭrā rakṣāṃsi* [ŚAT. BR. 5,2,4,7.] [11.]
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>
 
 ## anudpā
 
@@ -425,7 +425,7 @@ pass. *pīyate* (
 - **RU:** — *anūd* допивать за другим
 [ŚAT. BR. 3,7,1,29. fgg.]
 - **EN:** — *anūd* to drink up after another [ŚAT. BR. 3,7,1,29. fgg.]
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>
 
 ## nipā
 
@@ -469,7 +469,7 @@ pass. *pīyate* (
 [GORR.]) *tīrthāni*
 [R. 2,95,5.] *ata eva nipīyate 'dharaḥ*
 [BHARTṚ. 1,82.] *madhupairnipītakusumaḥ (taruḥ)*
-  <sub>DCS 34 · attested</sub>
+  <sub>attested</sub>
 
 **1b)** [Spr. 922.] einsaugen, absorbiren, verschwinden machen: *nyapādvāyuṃ sahāmbhasā*
 [BHĀG. P. 3,10,6.] *svarūpamahasaiva nipītabhedamohāya (parāya)*
@@ -484,7 +484,7 @@ pass. *pīyate* (
 [BHĀG. P. 3,10,6.] *svarūpamahasaiva nipītabhedamohāya (parāya)*
 [9,14.] Vgl. *nipāna, nipīti* . — caus. to cause to be sipped in
 [BHĀG. P. 8,2,25.]
-  <sub>DCS 34 · attested</sub>
+  <sub>attested</sub>
 
 ## nispā
 
@@ -510,13 +510,13 @@ ausgesogen
 
 sucked dry
 [R. GORR. 2,62,17], v. l.
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>
 
 **1b)** — Vgl. *niṣpāna* .
 
 - **RU:** — Vgl. *niṣpāna* .
 - **EN:** — Vgl. *niṣpāna* .
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>
 
 ## paripā
 
@@ -540,12 +540,12 @@ sucked dry
 
 - **RU:** — Vgl. *paripāna* .
 - **EN:** — Vgl. *paripāna* .
-  <sub>DCS 51 · attested</sub>
+  <sub>attested</sub>
 
 **1)** — *pari* vor und nach Jmd trinken: *tānvai tvamubhayataḥ paripiba*
 
 - **RU:** — *pari* пить до и после кого-л.: *tānvai tvamubhayataḥ paripiba*
-  <sub>DCS 51 · attested</sub>
+  <sub>attested</sub>
 
 **2)** [AIT. BR. 3,30.] austrinken, aussaugen: *mattadvirephaparipītamadhupraseka (kovidāra)*
 [ṚT. 3,6.] *vāyvarkaparipītāmbu (taḍāga)*
@@ -558,7 +558,7 @@ sucked dry
 [R. 4,15,34.] *paripīta* пропитанный
 [SUŚR. 1,60,5.] *taila˚*
 [2,35,14. 72,14.]
-  <sub>DCS 51 · attested</sub>
+  <sub>attested</sub>
 
 ## prapā
 
@@ -602,7 +602,7 @@ sucked dry
 [BHĀG. P. 4,9,3.] *prapāya* absol.
 [P. 6,4,69], Sch.
 [VOP. 26,212.]
-  <sub>DCS 82 · attested</sub>
+  <sub>attested</sub>
 
 ## anuprapā
 
@@ -625,7 +625,7 @@ sucked dry
 [KĀṬH. 36,13.] *tasmātparastādarvāñco manuṣyānpitaro 'nuprapipate* (!)
 [TS. 2,5,8,7.] Vgl.
 [TBR. 1,3,10,4.]
-  <sub>DCS 3 · attested</sub>
+  <sub>attested</sub>
 
 ## vipā
 
@@ -648,13 +648,13 @@ sucked dry
 [10,131,5.] [4.] *ubhe vā eṣa ete savane vipibati yatsavitā*
 [AIT. BR. 3,29.] *adbhyaḥ kṣīraṃ vyapibat*
 [VS. 19,73.]
-  <sub>DCS 21 · attested</sub>
+  <sub>attested</sub>
 
 **1b)** — Vgl. *gardabhīvipīta* .
 
 - **RU:** — Vgl. *gardabhīvipīta* .
 - **EN:** — Vgl. *gardabhīvipīta* .
-  <sub>DCS 21 · attested</sub>
+  <sub>attested</sub>
 
 ## sampā
 
@@ -677,7 +677,7 @@ sucked dry
 [ṚV. 7,37,2.] *samṛtubhiḥ pibasva*
 [4,35,7.] [9.] [10,135,1.] [AIT. BR. 3,30.] [ŚAT. BR. 3,6,2,26.] [ŚĀṄKH. GṚHY. 1,17.] Vgl. *saṃpiba, saṃpīti* . — caus. to cause to drink: *retaḥ saṃpāyayanti*
 [BHĀG. P. 5,26,26.]
-  <sub>DCS 13 · attested</sub>
+  <sub>attested</sub>
 
 ## pā
 
@@ -700,7 +700,7 @@ sucked dry
  1) at the end of a comp. drinking: *amṛta˚*
 [MBH. 12,10435.] *viṣāgni˚, mṛtyu˚, kṣīra˚, madhuścyutānāmagrapāḥ, tuṣitājya˚*
 [10436.] Vgl. *agre˚, indrapātama* (with passive Bed.), *añjaspā, ṛtu˚, ṛdū˚, kīlāla˚, payaspā, pūrva˚, madhu˚, soma˚* u. s. w. and also 1. *pa* .
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>
 
 ## pā
 
@@ -790,7 +790,7 @@ sucked dry
 [BHAṬṬ. 7,69.] *pāta* сохранён u. s. w.
 [TRIK. 3,3,169.]
 [MED. t. 32.]
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) beobachten, merken, aufpassen auf; beaufsichtigen, beachten, halten, befolgen: *ke dhāsimagne anṛtasya pānti*
 [ṚV. 5,12,4.] *ukthā*
@@ -813,12 +813,12 @@ sucked dry
 [5,12,6.] *viṣṇurvai yajñasya duriṣṭaṃ pāti varuṇaḥ sviṣṭam*
 [AIT. BR. 3,38.] med.: *vratāni pāno amṛtasya cāruṇa ubhe nṛcakṣā anu paśyate viśau*
 [ṚV. 9,70,4.]
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>
 
 **3_anu)** — *adhi* s. *adhipa, ˚pā* .
 
 - **RU:** — *adhi* s. *adhipa, ˚pā* .
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>
 
 **4_anu_caus)** — *abhi* behüten; beobachten: *viśvānyadyajñā abhipāsi*
 [ṚV. 3,9,6.] *yo vāmadabdho abhi pāti cittibhiḥ*
@@ -831,7 +831,7 @@ sucked dry
 [VĀLAKH. 9,3.]
 [ṚV. 10,1,3.] *agniṣṭvābhi pātu mahyā svastyā*
 [VS. 13,19.]
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>
 
 **5_abhi)** — *ni* beschützen, behüten: *viśvebhiḥ pātu pāyubhirni sūrīn*
 [ṚV. 7,38,3.] [3,7.] *yo vanuṣyato nipāti*
@@ -854,14 +854,14 @@ sucked dry
 [1,73,2.] [AV. 9,10,23.] наблюдать, блюсти: *ṛtasya padaṃ kavayo ni pānti*
 [ṚV. 10,5,2.] *tāṃ dyotamānāṃ svaryaṃ manīṣāmṛtasya pade kavayo ni pānti*
 [10,177,2.]
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>
 
 **6_ava)** — *nis* behüten vor (abl.): *yenā niraṃhaso yūyaṃ pātha nethā ca martyamati dviṣaḥ*
 [ṚV. 10,126,2.] Diese Praep. scheint übrigens durch das folg. *netha* oder ein im Sinne liegendes *piparta* veranlasst zu sein.
 
 - **RU:** — *nis* оберегать от (abl.): *yenā niraṃhaso yūyaṃ pātha nethā ca martyamati dviṣaḥ*
 [ṚV. 10,126,2.] Эта Praep., впрочем, по всей видимости, обусловлена folg. *netha* или подразумевающимся в смысле *piparta*.
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>
 
 **7_pari)** — *pari* rings behüten, — beschützen, bewahren: *ubhe rodasī pari pāsato naḥ*
 [ṚV. 7,34,23.] *āyurviśvāyuḥ pari pāsati tvā*
@@ -888,19 +888,19 @@ sucked dry
 [DEV. 11,32.] *anuśāsanam* хранить, поддерживать
 [BHĀG. P. 1,7,53.] *dharmeṇa dharmaḥ paripāti setum*
 [3,1,36.]
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>
 
 **8_sam)** — Vgl. *paripāṇa* .
 
 - **RU:** — Vgl. *paripāṇa* .
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>
 
 **9_vi)** — *pra* behüten, bewahren vor (abl.): *kalkiḥ kaleḥ kālamalātprapātu*
 [BHĀG. P. 6,8,17.]
 
 - **RU:** — *pra* оберегать, хранить от (abl.): *kalkiḥ kaleḥ kālamalātprapātu*
 [BHĀG. P. 6,8,17.]
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>
 
 ## pā
 
@@ -914,7 +914,7 @@ sucked dry
 [MED.] p. 1) в конце comp. хранящий, оберегающий, охраняющий; s. *apāna˚, āprīta˚, āyuṣpā, ṛta˚, kratu˚, go˚, cakṣuṣpā, chardiṣpā, tanū˚, tapuṣpā, nidhi˚, niṣikta˚, paraspā, prāṇa˚* u. s. w. и также 2. *pa* .
 - **EN:** 4. *pā*¦ (= 3. *pā*) _adj._ (*pā* [!] *pātari*
 [MED.] p. 1) at the end of a comp. guarding, keeping safe, sheltering; s. *apāna˚, āprīta˚, āyuṣpā, ṛta˚, kratu˚, go˚, cakṣuṣpā, chardiṣpā, tanū˚, tapuṣpā, nidhi˚, niṣikta˚, paraspā, prāṇa˚* u. s. w. and also 2. *pa* .
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>
 
 ## pā
 
@@ -934,7 +934,7 @@ sucked dry
 [DHĀTUP. 22,23.] *pāyati dhānyamātapena*
 [DURGAD.] in [WEST.] — caus. *pāyayati*
 [P. 7,3,37], Sch.
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>
 
 ## pā
 
@@ -964,26 +964,26 @@ Schol. к [P. 7,1,49.] *pītvānam* ved. к 48. *pāyaṃ pāyam*
 [ŚĀK. 72.] — intens.
 Z. 3 переставить слова с pass. Bed.: во вторую строку после
 [2,488,21.]
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>
 
 **Nachtrag_ni_patch)** — *ā* einsaugen, in sich hineinziehen: *svasṛṣṭamidamāpīya* (= *saṃhṛtya*
 Schol.) [BHĀG. P. 10,87,12.]
 
 - **RU:** — *ā* всасывать, втягивать в себя: *svasṛṣṭamidamāpīya* (= *saṃhṛtya*
 Schol.) [BHĀG. P. 10,87,12.]
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>
 
 **Nachtrag_nis_patch)** — *nis*, *bimbādhare 'tha niṣpītanīrāge*
 [KATHĀS. 86,115.]
 
 - **RU:** — *nis*, *bimbādhare 'tha niṣpītanīrāge*
 [KATHĀS. 86,115.]
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>
 
 **Nachtrag_pra_patch)** — *pra* vgl. *prapā, prapāna; — prati* vgl. *˚pāna; — vi* vgl. *pītavipīta* .
 
 - **RU:** — *pra* vgl. *prapā, prapāna; — prati* vgl. *˚pāna; — vi* vgl. *pītavipīta* .
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>
 
 ## pā
 
@@ -995,7 +995,7 @@ Schol.) [BHĀG. P. 10,87,12.]
 
 - **RU:** 3. *pā*¦
  1) сюда BROCKHAUS справедливо относит приводимое у нас u. *āp*
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>
 
 **Nachtrag_3_2)** 2) stehende Stelle: *(saptaite manavaḥ) sve sve 'ntare sarvamidamutpādyāpuścarācaram*
 [M. 1,63.] = *pālitavantaḥ*
@@ -1004,7 +1004,7 @@ Schol.) [BHĀG. P. 10,87,12.]
 - **RU:** 2) устойчивое место: *(saptaite manavaḥ) sve sve 'ntare sarvamidamutpādyāpuścarācaram*
 [M. 1,63.] = *pālitavantaḥ*
 [KULL.]
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>
 
 ## pā
 
@@ -1021,7 +1021,7 @@ Schol.) [BHĀG. P. 10,87,12.]
 - **EN:** 6. *pā*¦, *pipīte* only in combination with *ud* to rebel, rise up against, set oneself in hostile opposition to: *utpipānaḥ*
 [AV. 5,20,7.] [13,1,31.] *utpipīte*
 [TS. 3,2,10,2.]
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>
 
 **pref_1)** — *anūd*, *mūlaṃ vā atitiṣṭhadrakṣāṃsyanūtpipate* der überstehenden Wurzel nach erheben sich die Rakṣas
 [TBR. 3,2,9,10.]
@@ -1030,7 +1030,7 @@ Schol.) [BHĀG. P. 10,87,12.]
 [TBR. 3,2,9,10.]
 - **EN:** — *anūd*, *mūlaṃ vā atitiṣṭhadrakṣāṃsyanūtpipate* according to the root cited above, Rakṣas rise up
 [TBR. 3,2,9,10.]
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>
 
 **pref_2)** — *pratyud* = *ud*
 [TS. 1,6,10,1.]
@@ -1039,7 +1039,7 @@ Schol.) [BHĀG. P. 10,87,12.]
 [TS. 1,6,10,1.]
 - **EN:** — *pratyud* = *ud*
 [TS. 1,6,10,1.]
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>
 
 ## pā
 
@@ -1053,7 +1053,7 @@ Schol.) [BHĀG. P. 10,87,12.]
 [VĀMANA 5,2,78.]
 - **EN:** 1. *pā*¦ with *pra*, absolut. *˚pāya* and *˚pīya*
 [VĀMANA 5,2,78.]
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>
 
 ## pā
 
@@ -1064,7 +1064,7 @@ Schol.) [BHĀG. P. 10,87,12.]
 
 - **RU:** *pā*¦ с *ud* (Nachträge), vgl. — место, приведённое под 1. *pā* с *ud*.
 - **EN:** *pā*¦ with *ud* (Addenda), vgl. the passage cited under 1. *pā* with *ud*.
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>
 
 ## pā
 
@@ -1081,469 +1081,469 @@ Schol.) [BHĀG. P. 10,87,12.]
 
 - **RU:** — 2〉 всасывать. Так v. a. усваивать, наслаждаться; так v. a. усваивать, наслаждаться: глазами, ушами (Instr.) всасывать. Так v. a. упиваться (чем-л.). *jagatāṃ matam* впитывать мнения людей. Так v. a. подслушивать, улавливать на слух.
 - **EN:** — 2〉 to imbibe. thus v. a. to appropriate, enjoy: thus v. a. to appropriate, enjoy: with the eyes, ears (Instr.) to imbibe. thus v. a. to feast upon. *jagatāṃ matam* to imbibe people's opinions. thus v. a. to glean by listening.
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3〉 aussaugen. so v. a. erschöpfen (einen Schatz), absorbiren, verschwinden machen.
 
 - **RU:** — 3〉 высасывать. Так v. a. истощать (сокровище), поглощать, заставлять исчезнуть.
 - **EN:** — 3〉 to drain, suck out. thus v. a. to exhaust (a treasure), absorb, cause to disappear.
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4〉 *pīta*
 
 - **RU:** — 4〉 *pīta*
 - **EN:** — 4〉 *pīta*
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>
 
 **4a)** — a〉 mit pass. Bed.
 
 - **RU:** — a〉 с pass. Bed.
 - **EN:** — a〉 with pass. Bed.
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>
 
 **4a-alpha)** — α〉 getrunken, eingesogen (auch Wasser durch einen Baum [179,9]), gesogen (Rauch). *pītavant* eingesogen habend [39,9].
 
 - **RU:** — α〉 выпитый, всосанный (в том числе воду — деревом [179,9]), вобравший (дым). *pītavant* всосавший [39,9].
 - **EN:** — α〉 drunk, imbibed (also water by a tree [179,9]), sucked (smoke). *pītavant* having imbibed [39,9].
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>
 
 **4a-beta)** — β〉 eingesogen, so v. a. mit den Ohren e.
 
 - **RU:** — β〉 всосанный, так v. a. воспринятый на слух e.
 - **EN:** — β〉 imbibed, thus v. a. with the ears e.
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>
 
 **4a-gamma)** — γ〉 ausgesogen, so v. a. erschöpft (Schatz), absorbirt [KĀD. 257,14].
 
 - **RU:** — γ〉 высосанный, так v. a. истощённый (сокровище), поглощённый [KĀD. 257,14].
 - **EN:** — γ〉 drained, thus v. a. exhausted (treasure), absorbed [KĀD. 257,14].
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>
 
 **4b)** — b〉 mit act Bed.
 
 - **RU:** — b〉 с act. Bed.
 - **EN:** — b〉 with act. Bed.
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>
 
 **4b-alpha)** — α〉 getrunken habend (gewöhnlich in Comp. mit seinem Obj.).
 
 - **RU:** — α〉 напившийся, выпивший (обычно в Comp. с соответствующим Obj.).
 - **EN:** — α〉 having drunk (usually in Comp. with its Obj.).
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>
 
 **4b-beta)** — β〉 getränkt in Oel eingetaucht (Waffe).
 
 - **RU:** — β〉 пропитанный маслом, погружённый в масло (об оружии).
 - **EN:** — β〉 soaked, dipped in oil (weapon).
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>
 
 **4c)** — c〉 [MBH. 12,1722] fehlerhaft für *prīta*; [BHĀG. P. 7,9,32] ist *˚ātmanipītanidraḥ* zu verbinden.
 
 - **RU:** — c〉 [MBH. 12,1722] ошибочно вместо *prīta*; [BHĀG. P. 7,9,32] следует соединять с *˚ātmanipītanidraḥ*.
 - **EN:** — c〉 [MBH. 12,1722] erroneously for *prīta*; [BHĀG. P. 7,9,32] is to be read with *˚ātmanipītanidraḥ*.
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>
 
 **caus)** — Caus. *pāyayati, ˚te* (*pāpayati* fehlerhaft) tränken, zu trinken geben; mit doppeltem Acc. ([CARAKA. 6,11]) oder mit partitivem Gen. (nur in der älteren Sprache) des Trankes: Jmd (Instr.) saugen lassen an (Acc.) *pāyita*
 
 - **RU:** — Caus. *pāyayati, ˚te* (*pāpayati* ошибочно) поить, давать пить; с двойным Acc. ([CARAKA. 6,11]) или с партитивным Gen. (только в более древнем языке) питья: заставлять кого-л. (Instr.) сосать (Acc.) *pāyita*
 - **EN:** — Caus. *pāyayati, ˚te* (*pāpayati* erroneously) to water, give to drink; with double Acc. ([CARAKA. 6,11]) or with partitive Gen. (only in the older language) of the drink: to cause someone (Instr.) to suck at (Acc.) *pāyita*
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>
 
 **caus-1)** — 1〉 was man zu trinken giebt.
 
 - **RU:** — 1〉 то, что дают пить.
 - **EN:** — 1〉 what one gives to drink.
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>
 
 **caus-2)** — 2〉 getränkt.
 
 - **RU:** — 2〉 напоенный.
 - **EN:** — 2〉 watered, given to drink.
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>
 
 **caus-3)** — 3〉 getränkt, so v. a. eingetaucht in (im Comp. vorangehend).
 
 - **RU:** — 3〉 напоенный, так v. a. погружённый в (в Comp. — предшествующий).
 - **EN:** — 3〉 watered, thus v. a. dipped in (preceding in Comp.).
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>
 
 **desid)** — Desid. *pipāsati* und *pipīṣati* (nur im [ṚV.]) Etwas trinken wollen, durstig sein. *pipāsant* ([ŚĀK. 72]) und *pipāsita* durstig.
 
 - **RU:** — Desid. *pipāsati* и *pipīṣati* (только в [ṚV.]) хотеть пить что-л., испытывать жажду. *pipāsant* ([ŚĀK. 72]) и *pipāsita* жаждущий.
 - **EN:** — Desid. *pipāsati* and *pipīṣati* (only in [ṚV.]) to wish to drink something, to be thirsty. *pipāsant* ([ŚĀK. 72]) and *pipāsita* thirsty.
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>
 
 **desid-caus)** — Desid. vom Caus. *pipāyayiṣati* zu trinken zu geben beabsichtigen.
 
 - **RU:** — Desid. от Caus. *pipāyayiṣati* намереваться дать пить.
 - **EN:** — Desid. from Caus. *pipāyayiṣati* to intend to give to drink.
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>
 
 **intens)** — Intens. *pepīyate*
 
 - **RU:** — Intens. *pepīyate*
 - **EN:** — Intens. *pepīyate*
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>
 
 **intens-1)** — 1〉 gierig —, wiederholt trinken.
 
 - **RU:** — 1〉 жадно или многократно пить.
 - **EN:** — 1〉 to drink greedily or repeatedly.
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>
 
 **intens-2)** — 2〉 gierig —, wiederholt getrunken werden ([Spr. 7744]) gierig gesogen werden.
 
 - **RU:** — 2〉 жадно или многократно выпиваться ([Spr. 7744]), жадно всасываться.
 - **EN:** — 2〉 to be drunk greedily or repeatedly ([Spr. 7744]), to be greedily sucked.
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>
 
 **preverb-ā-caus)** — Mit *ati* Caus. in grosser Menge Jmd Etwas zu trinken geben, mit doppeltem Acc.
 
 - **RU:** — С *ati* Caus. в большом количестве поить кого-л. чем-л., с двойным Acc.
 - **EN:** — With *ati* Caus. to give someone a great quantity of something to drink, with double Acc.
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>
 
 **preverb-anu)** — Mit *anu*
 
 - **RU:** — С *anu*
 - **EN:** — With *anu*
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>
 
 **preverb-anu-1)** — 1〉 nachher —, später —, darauf trinken.
 
 - **RU:** — 1〉 пить после, позднее.
 - **EN:** — 1〉 to drink afterwards, later, thereupon.
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>
 
 **preverb-anu-2)** — 2〉 trinken an (Acc.) v. l. *ni*.
 
 - **RU:** — 2〉 прихлёбывать из (Acc.) v. l. *ni*.
 - **EN:** — 2〉 to drink at (Acc.) v. l. *ni*.
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>
 
 **preverb-anu-caus)** — Caus. nachher trinken lassen.
 
 - **RU:** — Caus. поить вслед за этим.
 - **EN:** — Caus. to cause to drink afterwards.
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>
 
 **preverb-antar)** — Mit *antar* in *antaḥpeya*.
 
 - **RU:** — С *antar* см. *antaḥpeya*.
 - **EN:** — With *antar* in *antaḥpeya*.
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>
 
 **preverb-apa)** — Mit *abhi*
 
 - **RU:** — С *abhi*
 - **EN:** — With *abhi*
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>
 
 **preverb-apa-1)** — 1〉 davon trinken [GOBH. 4,10,17].
 
 - **RU:** — 1〉 пить (из этого) [GOBH. 4,10,17].
 - **EN:** — 1〉 to drink from it [GOBH. 4,10,17].
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>
 
 **preverb-apa-2)** — 2〉 *abhipīta* getränkt —, erfüllt von (Instr.).
 
 - **RU:** — 2〉 *abhipīta* напоенный, исполненный (Instr.).
 - **EN:** — 2〉 *abhipīta* soaked, filled with (Instr.).
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>
 
 **preverb-abhi)** — Mit *ava* in *avapāna*
 
 - **RU:** — С *ava* см. *avapāna*
 - **EN:** — With *ava* in *avapāna*
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>
 
 **preverb-ava)** — Mit *anvava* nach Andern zum Trunke kommen.
 
 - **RU:** — С *anvava* приходить пить вслед за другими.
 - **EN:** — With *anvava* to come to drink after others.
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>
 
 **preverb-ā)** — Mit *ā*
 
 - **RU:** — С *ā*
 - **EN:** — With *ā*
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>
 
 **preverb-ā-1)** — 1〉 hineintrinken, einschlürfen, trinken ([57,8]) aus (Abl.) oder an (Acc.), austrinken, einsaugen, aussaugen, einziehen (Rauch) [CARAKA. 6,20].
 
 - **RU:** — 1〉 пить, поглощая; прихлёбывать; пить ([57,8]) из (Abl.) или из/у (Acc.), выпивать до дна, всасывать, высасывать, втягивать (дым) [CARAKA. 6,20].
 - **EN:** — 1〉 to drink in, sip, drink ([57,8]) from (Abl.) or at (Acc.), to drink up, imbibe, suck out, draw in (smoke) [CARAKA. 6,20].
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>
 
 **preverb-ā-2)** — 2〉 mit Augen, Ohren (Instr.) einsaugen, so v. a. sich laben an. *āpīyatam* so v. a. man höre.
 
 - **RU:** — 2〉 глазами, ушами (Instr.) всасывать, так v. a. упиваться (чем-л.). *āpīyatam* так v. a. да услышат.
 - **EN:** — 2〉 with the eyes, ears (Instr.) to imbibe, thus v. a. to feast upon. *āpīyatam* thus v. a. let one hear.
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>
 
 **preverb-ā-3)** — 3〉 absorbiren, verschwinden machen.
 
 - **RU:** — 3〉 поглощать, заставлять исчезнуть.
 - **EN:** — 3〉 to absorb, cause to disappear.
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>
 
 **preverb-ā-caus2)** — Caus. einschlürfen lassen.
 
 - **RU:** — Caus. давать прихлёбывать.
 - **EN:** — Caus. to cause to sip, cause to imbibe.
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>
 
 **preverb-ud)** — Mit *samā* einsaugen, aussaugen.
 
 - **RU:** — С *samā* всасывать, высасывать.
 - **EN:** — With *samā* to imbibe, suck out.
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>
 
 **preverb-upa)** — Mit *ud*, *utpibante* [ŚAT. BR. 5,2,4,7.] [11] fehlerhaft für *utpipateḥ* vgl. **5.** *pā*.
 
 - **RU:** — С *ud*, *utpibante* [ŚAT. BR. 5,2,4,7.] [11] ошибочно вместо *utpipateḥ* vgl. **5.** *pā*.
 - **EN:** — With *ud*, *utpibante* [ŚAT. BR. 5,2,4,7.] [11] erroneously for *utpipateḥ* vgl. **5.** *pā*.
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>
 
 **preverb-pari)** — Mit *anūd* Med. herfallen über, sich stürzen auf (Acc.) [ŚAT. BR. 3,7,1,29. fgg.] Also gleichfalls Verwechselung mit **5.** *pā*
 
 - **RU:** — С *anūd* Med. набрасываться на, устремляться на (Acc.) [ŚAT. BR. 3,7,1,29. fgg.]. Следовательно, также смешение с **5.** *pā*
 - **EN:** — With *anūd* Med. to fall upon, rush at (Acc.) [ŚAT. BR. 3,7,1,29. fgg.] Also likewise a confusion with **5.** *pā*
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>
 
 **preverb-pra-caus)** — Mit *upa* Caus. tränken {{MĀN.ŚR.1,2,5.8,3.3,5.Gṛhj.->[MĀN. ŚR. 1,2,5. 8,3. 3,5]. [MĀN. GṚHY. 2,4]||20160107|Dhaval Patel, Jim Funderburk.|https://github.com/sanskrit-lexicon/CORRECTIONS/issues/236|Inferred}}.
 
 - **RU:** — С *upa* Caus. поить {{MĀN.ŚR.1,2,5.8,3.3,5.Gṛhj.->[MĀN. ŚR. 1,2,5. 8,3. 3,5]. [MĀN. GṚHY. 2,4]||20160107|Dhaval Patel, Jim Funderburk.|https://github.com/sanskrit-lexicon/CORRECTIONS/issues/236|Inferred}}.
 - **EN:** — With *upa* Caus. to water, give to drink {{MĀN.ŚR.1,2,5.8,3.3,5.Gṛhj.->[MĀN. ŚR. 1,2,5. 8,3. 3,5]. [MĀN. GṚHY. 2,4]||20160107|Dhaval Patel, Jim Funderburk.|https://github.com/sanskrit-lexicon/CORRECTIONS/issues/236|Inferred}}.
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>
 
 **preverb-vi)** — Mit *ni*
 
 - **RU:** — С *ni*
 - **EN:** — With *ni*
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>
 
 **preverb-vi-1)** — 1〉 hineintrinken, einschlürfen, trinken an.
 
 - **RU:** — 1〉 пить, всасывая; прихлёбывать.
 - **EN:** — 1〉 to drink in, sip, drink at.
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>
 
 **preverb-vi-2)** — 2〉 einsaugen. so v. a. absorbiren verschwinden machen [BHĀG. P. 7,9,32]. (*˚ātmanipīta˚* zu verbinden).
 
 - **RU:** — 2〉 всасывать. Так v. a. поглощать, заставлять исчезнуть [BHĀG. P. 7,9,32]. (*˚ātmanipīta˚* следует соединять).
 - **EN:** — 2〉 to imbibe. thus v. a. to absorb, cause to disappear [BHĀG. P. 7,9,32]. (*˚ātmanipīta˚* to be read together).
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>
 
 **preverb-vi-caus)** — Caus. einschlürfen lassen.
 
 - **RU:** — Caus. давать прихлёбывать.
 - **EN:** — Caus. to cause to sip.
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>
 
 **preverb-sam)** — Mit *vini* begierig einsaugen, sich laben an [PRASANNAR. 139,13].
 
 - **RU:** — С *vini* жадно всасывать, упиваться (чем-л.) [PRASANNAR. 139,13].
 - **EN:** — With *vini* to eagerly imbibe, feast upon [PRASANNAR. 139,13].
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>
 
 **preverb-nis)** — Mit *nis* trinken aus (Abl.) austrinken, aussaugen. *niṣyīta* erschöpft [CARAKA. 1,3].
 
 - **RU:** — С *nis* пить из (Abl.), выпивать до дна, высасывать. *niṣyīta* истощённый [CARAKA. 1,3].
 - **EN:** — With *nis* to drink from (Abl.), drink up, drain. *niṣyīta* exhausted [CARAKA. 1,3].
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>
 
 **preverb-pari2)** — Mit *pari*
 
 - **RU:** — С *pari*
 - **EN:** — With *pari*
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>
 
 **preverb-pari2-1)** — 1〉 vor und nach Jmd (Acc.) trinken.
 
 - **RU:** — 1〉 пить до и после кого-л. (Acc.).
 - **EN:** — 1〉 to drink before and after someone (Acc.).
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>
 
 **preverb-pari2-2)** — 2〉 austrinken, aussaugen, ausrauchen *paripītadhūpavarti* [KĀD. 18,6]. *upaniṣadaḥ paripītāḥ* so v. a. durchstudirt [Spr. 7772].
 
 - **RU:** — 2〉 выпивать до дна, высасывать, выкуривать *paripītadhūpavarti* [KĀD. 18,6]. *upaniṣadaḥ paripītāḥ* так v. a. основательно изученный [Spr. 7772].
 - **EN:** — 2〉 to drink up, suck out, smoke out *paripītadhūpavarti* [KĀD. 18,6]. *upaniṣadaḥ paripītāḥ* thus v. a. thoroughly studied [Spr. 7772].
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>
 
 **preverb-pari2-3)** — 3〉 benehmen, entziehen [KĀD. 90,13].
 
 - **RU:** — 3〉 отнимать, лишать [KĀD. 90,13].
 - **EN:** — 3〉 to deprive of, withdraw [KĀD. 90,13].
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>
 
 **preverb-pari2-4)** — 4〉 *paripīta* getränkt mit (im Comp. vorangehend) [SUŚR. 1,160,5].
 
 - **RU:** — 4〉 *paripīta* напоенный, пропитанный (в Comp. — предшествующий) [SUŚR. 1,160,5].
 - **EN:** — 4〉 *paripīta* soaked with (preceding in Comp.) [SUŚR. 1,160,5].
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>
 
 **preverb-prati)** — Mit *pra* sich anʼs Trinken machen trinken, einschlürfen.
 
 - **RU:** — С *pra* приниматься за питьё, пить, прихлёбывать.
 - **EN:** — With *pra* to set about drinking, drink, sip.
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>
 
 **preverb-sam2)** — Mit *anupra* Act. der Reihe nach Etwas trinken, Med. nach Jmd (Acc.) trinken.
 
 - **RU:** — С *anupra* Act. пить что-л. по очереди, Med. пить после кого-л. (Acc.).
 - **EN:** — With *anupra* Act. to drink something in turn, Med. to drink after someone (Acc.).
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>
 
 **preverb-antar2)** — Mit *prati* in *pratipāna*.
 
 - **RU:** — С *prati* см. *pratipāna*.
 - **EN:** — With *prati* in *pratipāna*.
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>
 
 **preverb-ut)** — Mit *vi*
 
 - **RU:** — С *vi*
 - **EN:** — With *vi*
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>
 
 **preverb-ut-1)** — 1〉 auf-, sich an-, sich voll trinken.
 
 - **RU:** — 1〉 напиться досыта, напиться вдоволь.
 - **EN:** — 1〉 to drink up, drink one's fill.
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>
 
 **preverb-ut-2)** — 2〉 heraus trinken aus (Abl.) [VS. 19,73].
 
 - **RU:** — 2〉 вытягивать питьё из (Abl.) [VS. 19,73].
 - **EN:** — 2〉 to drink out from (Abl.) [VS. 19,73].
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>
 
 **preverb-sam3)** — Mit *sam* Act. zusammen hineintrinken Med. zusammen trinken.
 
 - **RU:** — С *sam* Act. пить вместе, совместно поглощать Med. пить вместе.
 - **EN:** — With *sam* Act. to drink in together Med. to drink together.
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>
 
 **caus-final)** — Caus. trinken lassen.
 
 - **RU:** — Caus. поить.
 - **EN:** — Caus. to cause to drink.
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>
 
 **1)** **2.** *˚pā*¦ _Adj._ trinkend.
 
 - **RU:** **2.** *˚pā*¦ _Adj._ пьющий.
 - **EN:** **2.** *˚pā*¦ _Adj._ drinking.
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>
 
 **head)** **3.** √*pā*¦, *pāti*
 
 - **RU:** **3.** √*pā*¦, *pāti*
 - **EN:** **3.** √*pā*¦, *pāti*
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>
 
 **1)** — 1〉 bewachen, bewahren, schützen, schirmen, hüten, — vor (Abl.) die Erde, das Land
 
 - **RU:** — 1〉 охранять, оберегать, защищать, укрывать, беречь — от (Abl.) землю, страну
 - **EN:** — 1〉 to watch, preserve, protect, guard, keep — from (Abl.) the earth, the land
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2〉 beobachten, merken —, aufpassen auf, beaufsichtigen, beachten, halten, befolgen. Partic. Praes. *pāna*
 
 - **RU:** — 2〉 наблюдать, замечать, следить за, присматривать, соблюдать, придерживаться. Partic. Praes. *pāna*
 - **EN:** — 2〉 to observe, note, attend to, supervise, heed, keep, follow. Partic. Praes. *pāna*
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>
 
 **preverb-ā)** — Mit *adhi* in *˚pa* und *˚pā*.
 
 - **RU:** — С *adhi* см. *˚pa* и *˚pā*.
 - **EN:** — With *adhi* in *˚pa* and *˚pā*.
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>
 
 **preverb-upa)** — Mit *anu*, *˚pāhi* zu [Spr. 2597] wohl nur fehlerhaft für *˚yāhi*.
 
 - **RU:** — С *anu*, *˚pāhi* к [Spr. 2597] — вероятно, лишь ошибочно вместо *˚yāhi*.
 - **EN:** — With *anu*, *˚pāhi* for [Spr. 2597] probably only erroneously for *˚yāhi*.
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>
 
 **preverb-pari)** — Mit *abhi*
 
 - **RU:** — С *abhi*
 - **EN:** — With *abhi*
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>
 
 **preverb-pari-1)** — 1〉 behüten.
 
 - **RU:** — 1〉 охранять.
 - **EN:** — 1〉 to guard, protect.
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>
 
 **preverb-pari-2)** — 2〉 beobachten.
 
 - **RU:** — 2〉 наблюдать.
 - **EN:** — 2〉 to observe.
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>
 
 **preverb-pra)** — Mit *ni*
 
 - **RU:** — С *ni*
 - **EN:** — With *ni*
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>
 
 **preverb-pra-1)** — 1〉 beschützen, behüten, — vor (Abl.)
 
 - **RU:** — 1〉 защищать, охранять — от (Abl.)
 - **EN:** — 1〉 to protect, guard — from (Abl.)
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>
 
 **preverb-pra-2)** — 2〉 beobachten, überwachen, wahren.
 
 - **RU:** — 2〉 наблюдать, надзирать, блюсти.
 - **EN:** — 2〉 to observe, supervise, keep.
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>
 
 **preverb-vi)** — Mit *nis* behüten vor (Abl.).
 
 - **RU:** — С *nis* охранять от (Abl.).
 - **EN:** — With *nis* to guard from (Abl.).
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>
 
 **preverb-sam)** — Mit *pari*
 
 - **RU:** — С *pari*
 - **EN:** — With *pari*
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>
 
 **preverb-sam-1)** — 1〉 rings behüten, — beschützen, bewahren.
 
 - **RU:** — 1〉 охранять со всех сторон, защищать, беречь.
 - **EN:** — 1〉 to guard on all sides, protect, preserve.
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>
 
 **preverb-sam-2)** — 2〉 beobachten, wahren, aufrecht erhalten.
 
 - **RU:** — 2〉 наблюдать, блюсти, поддерживать.
 - **EN:** — 2〉 to observe, keep, maintain.
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>
 
 **preverb-ava)** — Mit *pra* behüten —, bewahren vor (Abl.).
 
 - **RU:** — С *pra* охранять, уберегать от (Abl.).
 - **EN:** — With *pra* to guard, preserve from (Abl.).
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>
 
 **1)** **4.** *˚pā*¦ _Adj._ bewachend, behütend, schirmend u. s. w.
 
 - **RU:** **4.** *˚pā*¦ _Adj._ охраняющий, оберегающий, защищающий u. s. w.
 - **EN:** **4.** *˚pā*¦ _Adj._ watching, guarding, protecting u. s. w.
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>
 
 **head)** **5.** √*pā*¦, *pipīte* (3, Pl. *pipate*) mit *ud* sich auflehnen, aufbegehren gegen, sich feindlich entgegenstellen. Partic. *utpipāna*.
 
 - **RU:** **5.** √*pā*¦, *pipīte* (3, Pl. *pipate*) с *ud* восставать, противиться, враждебно противостоять. Partic. *utpipāna*.
 - **EN:** **5.** √*pā*¦, *pipīte* (3, Pl. *pipate*) with *ud* to rebel, revolt against, oppose in a hostile manner. Partic. *utpipāna*.
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>
 
 **preverb-pari)** — Mit *anūd* herfallen über, sich stürzen auf (Acc.) Vgl. **1.** *pā* mit *anūd*
 - **EN:** — With *anūd* to fall upon, rush at (Acc.) Vgl. **1.** *pā* with *anūd*
@@ -1552,19 +1552,19 @@ Schol.) [BHĀG. P. 10,87,12.]
 
 - **RU:** — С *pratyud* восставать против кого-л. (Acc.).
 - **EN:** — With *pratyud* to rebel against someone (Acc.).
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>
 
 **1)** **6.** *√*pā*¦, *pāyati* (*śoṣaṇe*).
 
 - **RU:** **6.** *√*pā*¦, *pāyati* (*śoṣaṇe*).
 - **EN:** **6.** *√*pā*¦, *pāyati* (*śoṣaṇe*).
-  <sub>DCS 5704 · lexicographic</sub>
+  <sub>lexicographic</sub>
 
 **1)** **1.** √*pā*¦ mit *nis* Caus. trinken lassen aus (Abl.) [MAITR. S. 2,3,5 (33,5. 6)].
 
 - **RU:** **1.** √*pā*¦ с *nis* Caus. давать пить из (Abl.) [MAITR. S. 2,3,5 (33,5. 6)].
 - **EN:** **1.** √*pā*¦ with *nis* Caus. to cause to drink from (Abl.) [MAITR. S. 2,3,5 (33,5. 6)].
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>
 
 **cross-ref)** **1.** √*pā*¦ mit *upa* Caus. auch [ĀPAST. ŚR. 9,18,11].
 — Mit *nis* Z. 2, lies *niṣpīta*. — Caus. 5.
@@ -1574,47 +1574,47 @@ Schol.) [BHĀG. P. 10,87,12.]
 **PW1_1)** **1.** *pā*¦, Präsensstämme: *pā, pip* (ganz vereinzelt) und *pib*; Act., seltener Med.; Absol. *pītvā*, **˚pāya* und *˚pīya*; *pīyate* pass. — 1〉 trinken, einsaugen, einschlürfen; mit Acc. oder partitivem Gen. (nur in der älteren Sprache) des Trankes: Blut einsaugen (vom Schwert und Pfeil gesagt); saugen an ([252,27]) Staub, Rauch einschlucken, einziehen; trinken auch so v. a. geistige Getränke trinken.
 
 - **RU:** **1.** *pā*¦, основы настоящего времени: *pā, pip* (крайне редко) и *pib*; Act., реже Med.; Absol. *pītvā*, **˚pāya* и *˚pīya*; *pīyate* pass. — 1〉 пить, всасывать, поглощать; с Acc. или партитивным Gen. (только в более древнем языке) питья: кровь всасывать (говорится о мече и стреле); сосать ([252,27]), пыль, дым заглатывать, втягивать; пить, также v. a. пить хмельные напитки.
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>
 
 **PW1_vi_caus)** — Caus. einschlürfen lassen.
 
 - **RU:** — Caus. давать прихлёбывать.
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>
 
 **PW3_anu)** — Mit *abhi*
 
 - **RU:** — С *abhi*
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>
 
 **PW3_pari)** — Mit *ni*
 
 - **RU:** — С *ni*
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>
 
 **PW3_sam)** — Mit *pari*
 
 - **RU:** — С *pari*
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>
 
 **PW5_abhi)** — Mit *anūd* herfallen über, sich stürzen auf (Acc.) Vgl.
 
 - **RU:** — С *anūd* набрасываться на, устремляться на (Acc.) Vgl.
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>
 
 **PW5_note)** **1.** *pā* mit *anūd*
 
 - **RU:** **1.** *pā* с *anūd*
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>
 
 **PW_vi_main)** **1.** √*pā*¦ mit *upa* Caus. auch [ĀPAST. ŚR. 9,18,11].
 
 - **RU:** **1.** √*pā*¦ с *upa* Caus. также [ĀPAST. ŚR. 9,18,11].
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>
 
 **PW_vi_note)** — Mit *nis* Z. 2, lies *niṣpīta*. — Caus. 5.
 
 - **RU:** — С *nis* стр. 2, читай *niṣpīta*. — Caus. 5.
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>
 
 ## pā
 
@@ -1627,17 +1627,17 @@ Schol.) [BHĀG. P. 10,87,12.]
 **mit-upa)** 1. pā¦ mit upa [Kaus.] auch [Āpast. Śr. 9,18,11.]
 
 - **RU:** 1. pā¦ с upa [Kaus.] также [Āpast. Śr. 9,18,11.]
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>
 
 **mit-nis)** Mit nis Z. 2 lies niṣpīta.
 
 - **RU:** С nis стр. 2 читай niṣpīta.
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>
 
 **caus-abl)** [Kaus.] trinken lassen aus (Abl.), [Maitr. S. 2,3,5] (33,5. 6).
 
 - **RU:** [Kaus.] поить, давать пить из (Abl.), [Maitr. S. 2,3,5] (33,5. 6).
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>
 
 ## pā
 
@@ -1648,10 +1648,10 @@ Schol.) [BHĀG. P. 10,87,12.]
 
 - **RU:** **1.** *pā*¦ с *nis* Caus. поить, давать пить из (Abl.) [MAITR. S. 2,3,5 (33,5. 6)].
 - **EN:** **1.** *pā*¦ with *nis* Caus. to cause to drink from (Abl.) [MAITR. S. 2,3,5 (33,5. 6)].
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>
 
 **cross-ref)** **1.** *pā*¦ mit *upa* Caus. auch [ĀPAST. ŚR. 9,18,11]. — Mit *nis* Z. 2, lies *niṣpīta*. — Caus. 5.
 
 - **RU:** **1.** *pā*¦ с *upa* Caus. также [ĀPAST. ŚR. 9,18,11]. — С *nis* стр. 2, читай *niṣpīta*. — Caus. 5.
 - **EN:** **1.** *pā*¦ with *upa* Caus. also [ĀPAST. ŚR. 9,18,11]. — With *nis* line 2, read *niṣpīta*. — Caus. 5.
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>

@@ -10,4 +10,4 @@
 [BHĀG. P. 11,18,38.]
 - **EN:** — *upā* to betake oneself to: *munimupāvrajet*
 [BHĀG. P. 11,18,38.]
-  <sub>DCS 1202 · attested</sub>
+  <sub>attested</sub>

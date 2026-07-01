@@ -58,4 +58,4 @@
 [Verz. d. Oxf. H. 319,a,8. b, No. 758] *(bhagnanetra* gedr.). *bhugna* is called the Saṃdhi of *o* and *au* before non-labial vowels
 [ṚV. PRĀT. 2,11.]
 — Vgl. *bhuji, bhujyu*, 1. *bhoga* .
-  <sub>DCS 2938 · attested</sub>
+  <sub>attested</sub>

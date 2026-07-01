@@ -10,4 +10,4 @@
 [R. GORR. 2,76,24.]
 - **EN:** — *pravi* to tear open, wound: *pratodapravibhinnāṅga*
 [R. GORR. 2,76,24.]
-  <sub>DCS 1 · attested</sub>
+  <sub>attested</sub>

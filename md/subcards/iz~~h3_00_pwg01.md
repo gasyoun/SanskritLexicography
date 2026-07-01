@@ -7,7 +7,7 @@
 
 - **RU:** — 4) pass.
 - **EN:** — 4) pass.
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>
 
 **4a)** a) gewünscht —, gern gesehen werden: *sarvamātmārthamiṣyate*
 [MBH. 1,6145.] [5144.] [6184.] *nṛpasaṃśraya iṣyate budhaiḥ*
@@ -28,7 +28,7 @@
 [HIT. 24,18.] *na hi cūḍāmaṇisthāne pādukā kaiścidiṣyate*
 [IV,11.] *ataḥ samīpe pariṇeturiṣyate pramadā svabandhubhiḥ*
 [ŚĀK. 114.]
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>
 
 **4b)** — b) verlangt —, gefordert werden, vorgeschrieben sein: *kṛtopanayanasyāsya vratādeśanamiṣyate . brahmaṇo grahaṇaṃ caiva*
 [M. 2,173.] *hastacchedanamiṣyate*
@@ -43,7 +43,7 @@
 [M. 2,173.] *hastacchedanamiṣyate*
 [8,322.] *aśvamedhasya caikasya vaitaso bhāga iṣyate*
 [R. 1,13,42.]
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>
 
 **4c)** — c) gebilligt —, anerkannt —, angenommen —, für Etwas angesehen werden, gelten: *acchadmanā māyayā ca mṛgāṇāṃ vadha iṣyate*
 [MBH. 1,4570.] *nihatasya paśoryajñe svargaprāptiryadīṣyate*
@@ -82,10 +82,10 @@
 [TRIK. 2,8,62.] *jambho dante 'pi ceṣyate* jambha also stands for tooth (also means tooth)
 [3,3,286.] [64.] with act.-ending though the metre did not require it: *yadi kāle tu doṣo 'sti yadi tatrāpi neṣyati*
 [MBH. 13,59.]
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>
 
 **closing)** — Vgl. *icchā, icchu* .
 
 - **RU:** — Vgl. *icchā, icchu* .
 - **EN:** — Vgl. *icchā, icchu*.
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>

@@ -62,7 +62,7 @@ _PWG article — 39 sub-card(s), 156 sense(s) · RU 104/156 · EN 144/156_
 [Verz. d. Oxf. H. 319,a,8. b, No. 758] *(bhagnanetra* gedr.). *bhugna* is called the Saṃdhi of *o* and *au* before non-labial vowels
 [ṚV. PRĀT. 2,11.]
 — Vgl. *bhuji, bhujyu*, 1. *bhoga* .
-  <sub>DCS 2938 · attested</sub>
+  <sub>attested</sub>
 
 ## bhuj
 
@@ -79,7 +79,7 @@ _PWG article — 39 sub-card(s), 156 sense(s) · RU 104/156 · EN 144/156_
 - **EN:** — *ava* to bend inward
 [KAUŚ. 19.] *bhagnāvabhugnabhūyiṣṭhaiḥ (drumaiḥ)* bent down
 [MBH. 1,5891.]
-  <sub>DCS 2938 · attested</sub>
+  <sub>attested</sub>
 
 ## bhuj
 
@@ -93,7 +93,7 @@ _PWG article — 39 sub-card(s), 156 sense(s) · RU 104/156 · EN 144/156_
 [KAUŚ. 20.]
 - **EN:** — *pratyava* to bend back: *rṭabhān*
 [KAUŚ. 20.]
-  <sub>DCS 2938 · attested</sub>
+  <sub>attested</sub>
 
 ## ābhuj
 
@@ -119,7 +119,7 @@ _PWG article — 39 sub-card(s), 156 sense(s) · RU 104/156 · EN 144/156_
 [PAÑCAR. 3,6,11.] pushed to one side
 [DAŚAK.] in [BENF. Chr. 198,21.]
 — Vgl. *ābhoga* .
-  <sub>DCS 23 · attested</sub>
+  <sub>attested</sub>
 
 ## bhuj
 
@@ -136,7 +136,7 @@ _PWG article — 39 sub-card(s), 156 sense(s) · RU 104/156 · EN 144/156_
 - **EN:** — *vyā*, partic. *vyābhugna* bent: *keśivaktravilagnastu kṛṣṇavāhuraśobhata . vyābhugna iva gharmānte candrārdhakiraṇairghanaḥ ..*
 [HARIV. 4313.]
 [PRAB. 67,11], v. l.
-  <sub>DCS 2938 · attested</sub>
+  <sub>attested</sub>
 
 ## bhuj
 
@@ -168,7 +168,7 @@ _PWG article — 39 sub-card(s), 156 sense(s) · RU 104/156 · EN 144/156_
 [1,99,2.] *nirbhugne netre* twisted eyes
 [2,402,11. 17.] *śmaśāne — nirbhugnasragvibhūṣite* bent
 [MBH. 13,6406.]
-  <sub>DCS 2938 · attested</sub>
+  <sub>attested</sub>
 
 ## bhuj
 
@@ -182,7 +182,7 @@ _PWG article — 39 sub-card(s), 156 sense(s) · RU 104/156 · EN 144/156_
 [SUŚR. 2,353,12.]
 - **EN:** — *vinis* to push to one side: *vāmenākṣi vinirbhujya hastena*
 [SUŚR. 2,353,12.]
-  <sub>DCS 2938 · attested</sub>
+  <sub>attested</sub>
 
 ## bhuj
 
@@ -214,7 +214,7 @@ gebogen
 [P. 8,4,31], Sch.
 bent
 [BHAṬṬ. 10,31.]
-  <sub>DCS 2938 · attested</sub>
+  <sub>attested</sub>
 
 ## bhuj
 
@@ -234,7 +234,7 @@ bent
 [KAUŚ. 1.]
 [KĀṬH.] at Schol. to [KĀTY. ŚR. 10,7,4.] [PAÑCAV. BR. 20,2,4.] *prabhugna*
 [P. 8,4,29], Sch.
-  <sub>DCS 2938 · attested</sub>
+  <sub>attested</sub>
 
 ## bhuj
 
@@ -248,7 +248,7 @@ bent
 [VYUTP. 101.]
 - **EN:** — *vi*, partic. *vibhugna* bent around
 [VYUTP. 101.]
-  <sub>DCS 2938 · attested</sub>
+  <sub>attested</sub>
 
 ## bhuj
 
@@ -262,7 +262,7 @@ bent
 [SUŚR. 1,101,6.]
 - **EN:** — *pravi* to bend around: *śalyavāraṅgam*
 [SUŚR. 1,101,6.]
-  <sub>DCS 2938 · attested</sub>
+  <sub>attested</sub>
 
 ## bhuj
 
@@ -276,7 +276,7 @@ bent
 [BHAṬṬ. 4,42.]
 - **EN:** — *sam*, partic. *saṃbhugna* bent together
 [BHAṬṬ. 4,42.]
-  <sub>DCS 2938 · attested</sub>
+  <sub>attested</sub>
 
 ## bhuj
 
@@ -287,7 +287,7 @@ bent
 
 - **RU:** 2. *bhuj*¦ (= 1. *bhuj)* s. *tri˚* .
 - **EN:** 2. *bhuj* (= 1. *bhuj)* s. *tri˚* .
-  <sub>DCS 2938 · attested</sub>
+  <sub>attested</sub>
 
 ## bhuj
 
@@ -743,7 +743,7 @@ u. s. w. [M. 8,146. fg.] [168.] *kṣetram*
 [Spr. 1103], v. l.
 - **EN:** — 2) *bhuñjāpayati*
 [Spr. 1103], v. l.
-  <sub>DCS 2938 · lexicographic</sub>
+  <sub>lexicographic</sub>
 
 **caus.1)** 1) *bhojayati* (
 [P. 1,3,87.]
@@ -798,7 +798,7 @@ u. s. w. [M. 8,146. fg.] [168.] *kṣetram*
 [Spr. 1103.] позволять кому-либо наслаждаться чем-либо: *(daṃpatī) bhogāniṣṭān — bhojayāmāsa* ad
 [MEGH. 113.] *bhojayiṣyāmi bhavatīṃ bhuvanatrayam*
 [BHAṬṬ. 8,83.] Vgl. *bhojanīya* .
-  <sub>DCS 2938 · attested</sub>
+  <sub>attested</sub>
 
 ## bhuj
 
@@ -828,7 +828,7 @@ u. s. w. [M. 8,146. fg.] [168.] *kṣetram*
 [NIR. 7,13.]
 [SUŚR. 1,242,1. 244,15.]
 [PAÑCAR. 4,3,202]), *bubhukṣu* .
-  <sub>DCS 2938 · lexicographic</sub>
+  <sub>lexicographic</sub>
 
 **desid.1)** — desid. zu essen wünschen, hungrig sein: *annaṃ bubhukṣamāṇaḥ*
 [MBH. 13,5009.] *rājanme dīyatāmannaṃ sagaṇāya bubhukṣate*
@@ -839,7 +839,7 @@ u. s. w. [M. 8,146. fg.] [168.] *kṣetram*
 [MBH. 13,5009.] *rājanme dīyatāmannaṃ sagaṇāya bubhukṣate*
 [BHĀG. P. 9,21,8.] желать наслаждаться: *na sa rājyaṃ bubhukṣati*
 [MBH. 1,5667.]
-  <sub>DCS 2938 · attested</sub>
+  <sub>attested</sub>
 
 ## bhuj
 
@@ -853,7 +853,7 @@ u. s. w. [M. 8,146. fg.] [168.] *kṣetram*
 [VARĀH. BṚH. S. 19,18] *(pepīyate* там же также pass.; согласно этому в u. 2. *pā* intens. слова «с pass. Bed.» следует переставить строкой выше перед *pepīyate*).
 - **EN:** — intens. *bobhujyate* with pass. Bed. to be devoured repeatedly: *bobhujyate 'tithisuhṛtsvajanaiḥ sahānnam*
 [VARĀH. BṚH. S. 19,18] *(pepīyate* ibid. is likewise pass.; accordingly in u. 2. *pā* intens. the words «with pass. Bed.» are to be placed one line higher before *pepīyate*).
-  <sub>DCS 2938 · attested</sub>
+  <sub>attested</sub>
 
 ## bhuj
 
@@ -873,7 +873,7 @@ u. s. w. [M. 8,146. fg.] [168.] *kṣetram*
 [BHĀG. P. 7,8,44.] to enjoy: *adhibhujyamānam — rikthaṃ pitṛpaitāmaham*
 [BHĀG. P. 5,7,8.] *rājyamidaṃ svecchayādhibhujyatām (upabhujyatām* v. l.)
 [HIT. 130,4.]
-  <sub>DCS 2938 · attested</sub>
+  <sub>attested</sub>
 
 ## bhuj
 
@@ -890,7 +890,7 @@ u. s. w. [M. 8,146. fg.] [168.] *kṣetram*
 - **EN:** — *anu*
  1) to enjoy the recompense for something (acc.): *eko 'nubhuṅkte sukṛ- tamekaḥ eva ca duṣkṛtam*
 [Spr. 3822.]
-  <sub>DCS 2938 · attested</sub>
+  <sub>attested</sub>
 
 **anu-2-enjoy)** — 2) geniessen: *durvinayavṛkṣaphalamanu- bhuṅkṣva*
 [PAÑCAT. 259,15.] *bhogān*
@@ -908,7 +908,7 @@ u. s. w. [M. 8,146. fg.] [168.] *kṣetram*
 [BHĀG. P. 7,10,10.] *anvabhuṅkta — candrikām*
 [RAGH. 19,39.] *maṇḍanānmaṇḍanamanvabhuṅkta* she partook of one ornament after another
 [KUMĀRAS. 7,5.]
-  <sub>DCS 2938 · attested</sub>
+  <sub>attested</sub>
 
 **anu-3-traverse)** — 3) durchlaufen (in astr. Sinne): *(aṅgārakaḥ) tribhistribhiḥ pakṣairekaikaśo rāśīndvādaśānubhuṅkte*
 [BHĀG. P. 5,22,14.]
@@ -917,7 +917,7 @@ u. s. w. [M. 8,146. fg.] [168.] *kṣetram*
 [BHĀG. P. 5,22,14.]
 - **EN:** — 3) to traverse (in astr. sense): *(aṅgārakaḥ) tribhistribhiḥ pakṣairekaikaśo rāśīndvādaśānubhuṅkte*
 [BHĀG. P. 5,22,14.]
-  <sub>DCS 2938 · attested</sub>
+  <sub>attested</sub>
 
 ## bhuj
 
@@ -931,7 +931,7 @@ u. s. w. [M. 8,146. fg.] [168.] *kṣetram*
 [ŚĀṄKH. ŚR. 16,21,21.]
 - **EN:** — *abhi* to be useful to someone (acc.), to serve: *ime lokā anyo'nyamabhibhuñjanti*
 [ŚĀṄKH. ŚR. 16,21,21.]
-  <sub>DCS 2938 · attested</sub>
+  <sub>attested</sub>
 
 ## ābhuj
 
@@ -942,7 +942,7 @@ u. s. w. [M. 8,146. fg.] [168.] *kṣetram*
 
 - **RU:** — *ā* s. *ābhogi* и vgl. *ābhojin* в *bhujagābhojin* .
 - **EN:** — *ā* s. *ābhogi* and vgl. *ābhojin* in *bhujagābhojin* .
-  <sub>DCS 23 · attested</sub>
+  <sub>attested</sub>
 
 ## upabhuj
 
@@ -1121,7 +1121,7 @@ employing
 [Spr. 677], v. l. *tathemāmupabhuñjataḥ* (gen. partic.)
 [MĀRK. P. 113,21.] *tenopabhujyamānaṃ śarīram (striyāḥ)*
 [KATHĀS. 38,36.] It is tempting, where *yuj* with *upa* has the meaning to eat, consume, to assume a confusion with *bhuj*, but in the many passages that [WESTERGAARD] cites, the [ed. Bomb.] of [MBH.] reads only [1,6221] *upabhokṣyati* st. *upayokṣyati*; vgl. u. *bhuj* simpl. at the end.
-  <sub>DCS 154 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) den Lohn für Etwas (acc.) haben: *mānasaṃ manasaivāyamupabhuṅkte śubhāśubham . vācā vācā kṛtaṃ karma kāyenaiva ca kāyikam ..*
 [M. 12,8.] *svakṛtaṃ hyupabhujyate*
@@ -1133,7 +1133,7 @@ employing
 - **EN:** — 2) to have the reward for something (acc.): *mānasaṃ manasaivāyamupabhuṅkte śubhāśubham . vācā vācā kṛtaṃ karma kāyenaiva ca kāyikam ..*
 [M. 12,8.] *svakṛtaṃ hyupabhujyate*
 [R. 6,98,29.]
-  <sub>DCS 154 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) act. Jmd (acc.) zu Nutzen sein, dienen: *upa vayaṃ taṃ bhuñjāmo (= pālayāmaḥ*
 [ŚAṂK.]) *'smiṃśca loke 'muṣmiṃśca*
@@ -1145,7 +1145,7 @@ employing
 - **EN:** — 3) act. to be of use, to serve someone (acc.): *upa vayaṃ taṃ bhuñjāmo (= pālayāmaḥ*
 [ŚAṂK.]) *'smiṃśca loke 'muṣmiṃśca*
 [CHĀND. UP. 4,11,2.]
-  <sub>DCS 154 · attested</sub>
+  <sub>attested</sub>
 
 **caus)** — Vgl. *upabhuktadhana, upabhoktar* fgg. — caus. zu geniessen geben: *rasānupabhojayet*
 [SUŚR. 2,441,11.]
@@ -1154,7 +1154,7 @@ employing
 [SUŚR. 2,441,11.]
 - **EN:** — Vgl. *upabhuktadhana, upabhoktar* fgg. — caus. to give to enjoy: *rasānupabhojayet*
 [SUŚR. 2,441,11.]
-  <sub>DCS 154 · attested</sub>
+  <sub>attested</sub>
 
 ## pratyupabhuj
 
@@ -1168,13 +1168,13 @@ employing
 [R. 6,11,39.]
 - **EN:** — *pratyupa* to enjoy, consume: *gṛheṣu balikarmāṇi pretāḥ samupabhuñjate*
 [R. 6,11,39.]
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — Vgl. *pratyupabhoga* .
 
 - **RU:** — Vgl. *pratyupabhoga* .
 - **EN:** — Vgl. *pratyupabhoga* .
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>
 
 ## samupabhuj
 
@@ -1188,13 +1188,13 @@ employing
 [MBH. 13,2482.] [Verz. d. Oxf. H. 259,b,26.]
 - **EN:** — *samupa* to enjoy; so v. a. to make love with (acc.): *vaśyāṃ kumārīṃ balato ye tāṃ samupabhuñjate*
 [MBH. 13,2482.] [Verz. d. Oxf. H. 259,b,26.]
-  <sub>DCS 3 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — Vgl. *samupabhoga* .
 
 - **RU:** — Vgl. *samupabhoga* .
 - **EN:** — Vgl. *samupabhoga* .
-  <sub>DCS 3 · attested</sub>
+  <sub>attested</sub>
 
 ## paribhuj
 
@@ -1211,7 +1211,7 @@ employing
 - **EN:** — *pari*
  1) to eat something (acc.) in advance, to eat first: *parocchiṣṭaṃ ca yadbhuktaṃ paribhuktaṃ ca yadbhavet*
 [MBH. 13,1579.]
-  <sub>DCS 94 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) Jmd (acc.) beim Essen übergehen, ohne Essen lassen: *api svitparyabhuṅkthāstvaṃ saṃbhojyānvṛddhabālakān*
 [BHĀG. P. 1,14,43.]
@@ -1220,7 +1220,7 @@ employing
 [BHĀG. P. 1,14,43.]
 - **EN:** — 2) to pass over someone (acc.) at eating, to leave without food: *api svitparyabhuṅkthāstvaṃ saṃbhojyānvṛddhabālakān*
 [BHĀG. P. 1,14,43.]
-  <sub>DCS 94 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) verspeisen: *(śarīraṃ me) balimiva paribhoktuṃ vāyasāstarkayanti*
 [MṚCCH. 157,11.] geniessen, benutzen, gebrauchen: *yadi me sa putra imaṃ dhanaskandhaṃ paribhuñjīyāt*
@@ -1262,7 +1262,7 @@ employing
 [AK. 3,4,23,147.] — st. *paribhujyantam*
 [MBH. 11,97] reads the [ed. Bomb.] *paribhṛjjantam* (d. i. *˚bhṛjjyantam)* . Vgl. *paribhoktar* fg. — desid. partic. *paribubhukṣita* exceedingly hungry
 [MBH. 9,1483.] Can also be analysed as *pari + bu˚*.
-  <sub>DCS 94 · attested</sub>
+  <sub>attested</sub>
 
 ## prabhuj
 
@@ -1279,7 +1279,7 @@ employing
 - **EN:** — *pra*
  1) to begin to eat: *prabhukta odanaḥ*
 [P. 1,2,21], Sch.
-  <sub>DCS 9 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) dienstfertig sein: *ā ghā yoṣeva sūnaryuṣā yāti prabhuñjatī*
 [ṚV. 1,48,5.]
@@ -1288,7 +1288,7 @@ employing
 [ṚV. 1,48,5.]
 - **EN:** — 2) to be ready to serve, to be serviceable: *ā ghā yoṣeva sūnaryuṣā yāti prabhuñjatī*
 [ṚV. 1,48,5.]
-  <sub>DCS 9 · attested</sub>
+  <sub>attested</sub>
 
 ## pratibhuj
 
@@ -1302,13 +1302,13 @@ employing
 [MBH. 9,1863.]
 - **EN:** — *prati* to enjoy: *asyāvahāsasya phalaṃ pratibhokṣyatha*
 [MBH. 9,1863.]
-  <sub>DCS 7 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — Vgl. *pratibhoga* .
 
 - **RU:** — Vgl. *pratibhoga* .
 - **EN:** — Vgl. *pratibhoga* .
-  <sub>DCS 7 · attested</sub>
+  <sub>attested</sub>
 
 ## vibhuj
 
@@ -1322,7 +1322,7 @@ employing
 [SIDDH. K.] к [P. 2,1,69.]
 - **EN:** — *vi* . partic. in *bhuktavibhukta* gaṇa *śākapārthivādi* from
 [SIDDH. K.] to [P. 2,1,69.]
-  <sub>DCS 8 · attested</sub>
+  <sub>attested</sub>
 
 ## sambhuj
 
@@ -1363,7 +1363,7 @@ employing
 
 *saṃbhuktabhūrijārā*
 [6,321.]
-  <sub>DCS 15 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) sich nützlich erweisen: *sarvānyajñānsaṃbhuñjatī* bei allen Opfern dienend
 [AV. 3,10,7.]
@@ -1372,7 +1372,7 @@ employing
 [AV. 3,10,7.]
 - **EN:** — 2) to prove useful, to be of service: *sarvānyajñānsaṃbhuñjatī* serving at all sacrifices
 [AV. 3,10,7.]
-  <sub>DCS 15 · attested</sub>
+  <sub>attested</sub>
 
 **caus)** — Vgl. *saṃbhoga* u. s. w. — caus. Jmd (acc.) speisen mit (instr.)
 [YĀJÑ. 1,105.]
@@ -1387,7 +1387,7 @@ employing
 [YĀJÑ. 1,105.]
 [BHĀG. P. 9,5,18.] *atithīnannapānena bhṛtyānatyaśanena ca . saṃbhojya*
 [MBH. 3,12672.]
-  <sub>DCS 15 · attested</sub>
+  <sub>attested</sub>
 
 ## bhuj
 
@@ -1452,7 +1452,7 @@ employing
 [22,13.] *indre bhujaṃ śaśamānāsa āśata*
 [92,7.] *ātmanā bhujamaśnutām* so v. a. may he rejoice in his life
 [AV. 8,2,8.]
-  <sub>DCS 2938 · attested</sub>
+  <sub>attested</sub>
 
 **2a)** — 2) _adj._ am Ende eines comp.
  a) geniessend, essend
@@ -1533,7 +1533,7 @@ employing
 [H. 4.] *kāśyaṣī˚*
 [RĀJA-TAR. 1,45.] Exceptionally not compounded with its obj.: *na prakāmabhujaḥ śrāddhe*
 [RAGH. 1,66]; vgl. *agra˚* .
-  <sub>DCS 2938 · attested</sub>
+  <sub>attested</sub>
 
 **2b)** — b) den Lohn für Etwas geniessend: *kilviṣa˚*
 [MĀRK. P. 29,30.]
@@ -1542,7 +1542,7 @@ employing
 [MĀRK. P. 29,30.]
 - **EN:** — b) enjoying the reward for something: *kilviṣa˚*
 [MĀRK. P. 29,30.]
-  <sub>DCS 2938 · attested</sub>
+  <sub>attested</sub>
 
 **2c)** — c) Nutzen bringend, frommend: *viśva˚*
 [MAITRYUP. 5,1. 6. 9.]
@@ -1551,7 +1551,7 @@ employing
 [MAITRYUP. 5,1. 6. 9.]
 - **EN:** — c) bringing benefit, being profitable: *viśva˚*
 [MAITRYUP. 5,1. 6. 9.]
-  <sub>DCS 2938 · attested</sub>
+  <sub>attested</sub>
 
 **2d)** — d) durchlaufend, erfüllend: *vyakta˚ (kāla)*
 [BHĀG. P. 3,11,3.] *aviśeṣa˚ (kāla)* 4.
@@ -1563,7 +1563,7 @@ employing
 — Vgl. *a˚, agra˚, anna˚, amṛta˚, kaṇa˚, kaṇṭaka˚*
 ([HIT. 121,16]). *kravya˚, kṣiti˚, kṣitilava˚, kṣauṇī˚, kṣmā˚, jagatī˚, taru˚, deha˚, dhārā˚, pāṇi˚, piśita˚, puru˚, pṛthivī˚, pṛthvī˚, phaṇi˚, vali˚, bahu˚* (also
 [SUŚR. 2,542. 5]), *bhāga˚, bhikṣā˚, bhujaṃga˚, bhū˚, bhūmi˚, bheka˚, bhaikṣa˚, mita˚, yajña˚, yajñāṃśa˚, lepa˚, vetana˚, stana˚, havirbhuj, haviṣya˚* .
-  <sub>DCS 2938 · attested</sub>
+  <sub>attested</sub>
 
 **nachtr)** — Vgl. *a˚, agra˚, anna˚, amṛta˚, kaṇa˚, kaṇṭaka˚*
 ([HIT. 121,16]). *kravya˚, kṣiti˚, kṣitilava˚, kṣauṇī˚, kṣmā˚, jagatī˚, taru˚, deha˚, dhārā˚, pāṇi˚, piśita˚, puru˚, pṛthivī˚, pṛthvī˚, phaṇi˚, vali˚, bahu˚* (auch
@@ -1572,7 +1572,7 @@ employing
 - **RU:** — Vgl. *a˚, agra˚, anna˚, amṛta˚, kaṇa˚, kaṇṭaka˚*
 ([HIT. 121,16]). *kravya˚, kṣiti˚, kṣitilava˚, kṣauṇī˚, kṣmā˚, jagatī˚, taru˚, deha˚, dhārā˚, pāṇi˚, piśita˚, puru˚, pṛthivī˚, pṛthvī˚, phaṇi˚, vali˚, bahu˚* (также
 [SUŚR. 2,542. 5]), *bhāga˚, bhikṣā˚, bhujaṃga˚, bhū˚, bhūmi˚, bheka˚, bhaikṣa˚, mita˚, yajña˚, yajñāṃśa˚, lepa˚, vetana˚, stana˚, havirbhuj, haviṣya˚* .
-  <sub>DCS 2938 · attested</sub>
+  <sub>attested</sub>
 
 ## bhuj
 
@@ -1594,7 +1594,7 @@ employing
 [Spr. 938], which passage in our edition stands under 3. *bhuj*
 ([Sp. 302, Z. 9. fgg.]). *pratyavaskandabhugna* bent, disheartened
 [KATHĀS. 71,109.]
-  <sub>DCS 2938 · attested</sub>
+  <sub>attested</sub>
 
 ## bhuj
 
@@ -1611,7 +1611,7 @@ employing
 - **EN:** 3. *bhuj*¦
  1)
 [Sp. 302, Z. 9. fgg.] vgl. above u. 1. *bhuj* .
-  <sub>DCS 2938 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — *anu*
  2) *anubhoktuṃ mahotsavam* so v. a. Theil nehmen an
@@ -1623,7 +1623,7 @@ employing
 - **EN:** — *anu*
  2) *anubhoktuṃ mahotsavam* so v. a. to take part in
 [R. 7,91,10.]
-  <sub>DCS 2938 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — *samā* geniessen: *samābhokṣyanti pṛthivīm* so v. a. werden herrschen über
 [BHĀG. P. 12,1,7.]
@@ -1632,7 +1632,7 @@ employing
 [BHĀG. P. 12,1,7.]
 - **EN:** — *samā* to enjoy: *samābhokṣyanti pṛthivīm* so v. a. will rule over
 [BHĀG. P. 12,1,7.]
-  <sub>DCS 2938 · attested</sub>
+  <sub>attested</sub>
 
 **caus)** — *samupa*
 [R. 7,26,21.]
@@ -1641,7 +1641,7 @@ employing
 [R. 7,26,21.]
 - **EN:** — *samupa*
 [R. 7,26,21.]
-  <sub>DCS 2938 · attested</sub>
+  <sub>attested</sub>
 
 **deriv-1)** — *sam*
  1) fleischlich geniessen
@@ -1653,7 +1653,7 @@ employing
 - **EN:** — *sam*
  1) to enjoy carnally
 [R. 7,17,6.]
-  <sub>DCS 2938 · attested</sub>
+  <sub>attested</sub>
 
 ## bhuj
 
@@ -1673,7 +1673,7 @@ employing
 [PAT. a. a. O. 1,254,a.]
 
 — *pra* to fold, fold together: *prabhujati vāsasī* ebend.
-  <sub>DCS 2938 · attested</sub>
+  <sub>attested</sub>
 
 ## bhuj
 
@@ -1696,7 +1696,7 @@ Z. 4 исправить на *bhujantā* st. *bhuñjantā* . — intens. *bobhuj
 [PAÑCAV. BR. 1,1,1.] —
 Z. 4 read *bhujantā* st. *bhuñjantā* . — intens. *bobhujīti* to enjoy
 [Spr. (II) 4053.]
-  <sub>DCS 2938 · attested</sub>
+  <sub>attested</sub>
 
 ## bhuj
 
@@ -1713,7 +1713,7 @@ Z. 5 исправить на 5, 48, 4.
 - **EN:** 4. *bhuj*¦
  1) add: possession, property.
 Z. 5 read 5, 48, 4.
-  <sub>DCS 2938 · lexicographic</sub>
+  <sub>lexicographic</sub>
 
 ## bhuj
 
@@ -1739,151 +1739,151 @@ Z. 5 read 5, 48, 4.
 
 - **RU:** — С *ava* «сгибать внутрь, пригибать». *˚bhugna* «пригнутый, опущенный вниз».
 - **EN:** — With *ava* to bend inward. *˚bhugna* bent down.
-  <sub>DCS 2938 · attested</sub>
+  <sub>attested</sub>
 
 **preverb-ava)** — Mit *pratyava* zurückbiegen.
 
 - **RU:** — С *pratyava* «сгибать назад, отгибать».
 - **EN:** — With *pratyava* to bend back.
-  <sub>DCS 2938 · attested</sub>
+  <sub>attested</sub>
 
 **preverb-ud)** — Mit *ā* einbiegen. *paryaṅkamābhujya* die Beine beim Sitzen unterschlagend [VAJRACCH. 19,9. 10]. [KĀRAṆḌ. 85,8. 86,8]. *ābhugna* gebogen, gekrümmt, zur Seite gedrängt.
 
 - **RU:** — С *ā* «сгибать, подгибать». *paryaṅkamābhujya* «со скрещёнными (подогнутыми) ногами в позе сидения» [VAJRACCH. 19,9. 10]. [KĀRAṆḌ. 85,8. 86,8]. *ābhugna* «согнутый, изогнутый, отодвинутый в сторону».
 - **EN:** — With *ā* to bend inward. *paryaṅkamābhujya* sitting with legs crossed [VAJRACCH. 19,9. 10]. [KĀRAṆḌ. 85,8. 86,8]. *ābhugna* bent, curved, pressed to one side.
-  <sub>DCS 2938 · attested</sub>
+  <sub>attested</sub>
 
 **preverb-upa)** — Mit *vyā*, *˚bhugna* gebogen. _n._
 
 - **RU:** — С *vyā*, *˚bhugna* «согнутый, изогнутый». _n._
 - **EN:** — With *vyā*, *˚bhugna* bent. _n._
-  <sub>DCS 2938 · attested</sub>
+  <sub>attested</sub>
 
 **preverb-ni)** — Mit *ni* beugen, senken.
 
 - **RU:** — С *ni* «сгибать, опускать, клонить».
 - **EN:** — With *ni* to bend, to lower.
-  <sub>DCS 2938 · attested</sub>
+  <sub>attested</sub>
 
 **preverb-nis)** — Mit *nis* bei Seite legen, — schieben, aus der Stelle rücken, herausschieben aus (Abl. [ṚV. 6,62,6]). *oṣṭhau* die Lippen verziehen. Pass. sich bei Seite drücken, entwischen. *nirbhugna* gebogen, verdreht (Augen).
 
 - **RU:** — С *nis* «откладывать в сторону, отодвигать, смещать с места, выдвигать из» (Abl. [ṚV. 6,62,6]). *oṣṭhau* «кривить губы». Pass. «отклоняться в сторону, ускользать». *nirbhugna* «согнутый, вывернутый» (о глазах).
 - **EN:** — With *nis* to lay aside, to push aside, to displace, to push out of (Abl. [ṚV. 6,62,6]). *oṣṭhau* to distort the lips. Pass. to press to one side, to slip away. *nirbhugna* bent, twisted (of eyes).
-  <sub>DCS 2938 · attested</sub>
+  <sub>attested</sub>
 
 **preverb-parā)** — Mit *vinis* bei Seite biegen.
 
 - **RU:** — С *vinis* «изгибать в сторону».
 - **EN:** — With *vinis* to bend aside.
-  <sub>DCS 2938 · attested</sub>
+  <sub>attested</sub>
 
 **preverb-pari)** — Mit *pari* umspannen, umfangen. *˚bhugna* gebogen [BHAṬṬ.]
 
 - **RU:** — С *pari* «охватывать, обнимать». *˚bhugna* «согнутый, изогнутый» [BHAṬṬ.]
 - **EN:** — With *pari* to encircle, to embrace. *˚bhugna* bent [BHAṬṬ.]
-  <sub>DCS 2938 · attested</sub>
+  <sub>attested</sub>
 
 **preverb-pra)** — Mit *pra* beugen; falten, zusammenlegen.
 
 - **RU:** — С *pra* «сгибать; складывать, сворачивать».
 - **EN:** — With *pra* to bend; to fold, to lay together.
-  <sub>DCS 2938 · attested</sub>
+  <sub>attested</sub>
 
 **preverb-prā)** — Mit **vi*, *˚bhugna* umgebogen.
 
 - **RU:** — С **vi*, *˚bhugna* «загнутый, отогнутый».
 - **EN:** — With **vi*, *˚bhugna* bent round.
-  <sub>DCS 2938 · attested</sub>
+  <sub>attested</sub>
 
 **preverb-vi)** — Mit *pravi* umbiegen.
 
 - **RU:** — С *pravi* «отгибать, заворачивать».
 - **EN:** — With *pravi* to bend round.
-  <sub>DCS 2938 · attested</sub>
+  <sub>attested</sub>
 
 **preverb-sam)** — Mit *sam* umwinden [Comm. zu ĀPAST. ŚR. 7,11,5]. *saṃbhugna* zusammengebogen.
 
 - **RU:** — С *sam* «обвивать, обматывать» [Comm. zu ĀPAST. ŚR. 7,11,5]. *saṃbhugna* «согнутый, свёрнутый вместе».
 - **EN:** — With *sam* to wind round [Comm. zu ĀPAST. ŚR. 7,11,5]. *saṃbhugna* bent together.
-  <sub>DCS 2938 · attested</sub>
+  <sub>attested</sub>
 
 **in-compound)** **2.** *bhuj*¦ in *tribhuj*.
 
 - **RU:** **2.** *bhuj*¦ в *tribhuj*.
 - **EN:** **2.** *bhuj*¦ in *tribhuj*.
-  <sub>DCS 2938 · lexicographic</sub>
+  <sub>lexicographic</sub>
 
 **root-gloss)** **3.** √*bhuj*¦, *bhājati*, *bhunakti*, *bhuṅkte*, *bhuñjati* (*bhuñjatī* Partic. _f._). *˚te*, *bhukta* Partic.
 
 - **RU:** **3.** √*bhuj*¦, *bhājati*, *bhunakti*, *bhuṅkte*, *bhuñjati* (*bhuñjatī* Partic. _f._). *˚te*, *bhukta* Partic.
 - **EN:** **3.** √*bhuj*¦, *bhājati*, *bhunakti*, *bhuṅkte*, *bhuñjati* (*bhuñjatī* Partic. _f._). *˚te*, *bhukta* Partic.
-  <sub>DCS 2938 · attested</sub>
+  <sub>attested</sub>
 
 **1-enjoy-possess)** — 1〉 geniessen, Etwas zu geniessen haben, sowohl zu Nutzen haben, mit Nutzen besitzen, benutzen, sich dem Genuss von Etwas hingeben, als vom Genuss von Speisen; in der älteren Sprache mit Instr., in der späteren meistentheils mit Acc. ohne Object seine Mahlzeit halten und fressen (von Thieren); die Erde, ein Land, eine Stadt (Acc.) geniessen, den Nutzen von ihr haben, so v. a. beherrschen und sich in den Besitz setzen (von einem Fürsten gesagt); Jmd (Acc.) geniessen, so v. a. sich zu Nutzen machen, ausbeuten und geschlechtlich geniessen. In der späteren Sprache gewöhnlich Med.
 
 - **RU:** — 1〉 «наслаждаться, иметь нечто в пользование», как «извлекать пользу, владеть с пользой, пользоваться, предаваться наслаждению чем-либо», так и применительно к «вкушению пищи»; в более древнем языке с Instr., в позднейшем по большей части с Acc. без дополнения — «принимать пищу и есть» (о животных: «поедать»); землю, страну, город (Acc.) «вкушать, извлекать из неё пользу», то есть v. a. «властвовать» и «овладевать» (говорится о государе); кого-либо (Acc.) «вкушать», то есть v. a. «использовать в своих целях, эксплуатировать» и «вкушать плотски». В позднейшем языке обычно Med.
 - **EN:** — 1〉 to enjoy, to have something to enjoy; both to make use of profitably, to possess with benefit, to use, to give oneself up to the enjoyment of something, and to enjoy food; in the older language with Instr., in the later mostly with Acc. without object to take one's meal and to eat (of animals); to enjoy the earth, a country, a city (Acc.), to have the benefit of it, thus v. a. to rule and to take possession (said of a prince); to enjoy someone (Acc.), thus v. a. to make use of, to exploit, and to enjoy carnally. In the later language usually Med.
-  <sub>DCS 2938 · attested</sub>
+  <sub>attested</sub>
 
 **2-experience-recompense)** — 2〉 Etwas (Acc., ausnahmsweise Instr.) zu geniessen haben, so v. a. zu büssen haben bei Jmd. (Gen.) den Lohn für Etwas (Acc.) davontragen.
 
 - **RU:** — 2〉 «иметь нечто» (Acc., в виде исключения Instr.) «в удел, в пользование», то есть v. a. «нести наказание у кого-либо»; (Gen.) «пожинать плоды чего-либо» (Acc.).
 - **EN:** — 2〉 to have something (Acc., exceptionally Instr.) to enjoy, thus v. a. to have to atone for at someone's hands. (Gen.) to carry off the reward for something (Acc.).
-  <sub>DCS 2938 · attested</sub>
+  <sub>attested</sub>
 
 **3-be-useful)** — 3〉 Act. Jmd (Acc.) zu Nutzen sein, zu Gute kommen, frommen, dienen. Einmal v. l. Med.
 
 - **RU:** — 3〉 Act. «быть полезным кому-либо» (Acc.), «идти на пользу, приносить благо, служить». Единожды v. l. Med.
 - **EN:** — 3〉 Act. to be of benefit to someone (Acc.), to be of advantage, to profit, to serve. Once v. l. Med.
-  <sub>DCS 2938 · attested</sub>
+  <sub>attested</sub>
 
 **4-pass-through-time)** — 4〉 in der Astr. durchlaufen, mit Acc. [Spr. 7740] (zugleich geniessen, verzehren) Eine best. Zeit durchlaufen, so v. a. verleben, währen, erfüllen, dauern. — Wird mit *yuj* verwechselt.
 
 - **RU:** — 4〉 в Astr. «проходить, протекать», с Acc. [Spr. 7740] (одновременно «наслаждаться, расходовать») определённый best. период времени «проживать, длиться, наполнять, продолжаться». — Смешивается с *yuj*.
 - **EN:** — 4〉 in the Astr. to pass through; with Acc. [Spr. 7740] (at the same time to enjoy, to consume) to pass through a best. period of time, thus v. a. to live through, to last, to fulfil, to endure. — Confused with *yuj*.
-  <sub>DCS 2938 · attested</sub>
+  <sub>attested</sub>
 
 **caus-intro)** — Caus. *bhojayati*. *˚te* (metrisch)
 
 - **RU:** — Caus. *bhojayati*. *˚te* (метрически)
 - **EN:** — Caus. *bhojayati*. *˚te* (metrical)
-  <sub>DCS 2938 · attested</sub>
+  <sub>attested</sub>
 
 **caus-1)** — 1〉 Jmd Etwas essen lassen, speisen mit; mit doppeltem Acc. oder mit Acc. der Person und Instr. der Sache.
 
 - **RU:** — 1〉 «кормить кого-либо чем-либо, угощать»; с двойным Acc. или с Acc. лица и Instr. вещи.
 - **EN:** — 1〉 to cause someone to eat something, to feed with; with double Acc. or with Acc. of the person and Instr. of the thing.
-  <sub>DCS 2938 · attested</sub>
+  <sub>attested</sub>
 
 **caus-2)** — 2〉 ausnahmsweise Jmd Etwas geniessen lassen überh.
 
 - **RU:** — 2〉 в виде исключения «давать кому-либо наслаждаться чем-либо» überh.
 - **EN:** — 2〉 exceptionally, to cause someone to enjoy something überh.
-  <sub>DCS 2938 · attested</sub>
+  <sub>attested</sub>
 
 **caus-3)** — 3〉 als Nahrung geniessen, — gebrauchen [CARAKA. 6,18].
 
 - **RU:** — 3〉 «употреблять в пищу, использовать как питание» [CARAKA. 6,18].
 - **EN:** — 3〉 to enjoy, to use as food [CARAKA. 6,18].
-  <sub>DCS 2938 · attested</sub>
+  <sub>attested</sub>
 
 **desid-intro)** — Desid. *bubhukṣati* (einmal), *˚te*
 
 - **RU:** — Desid. *bubhukṣati* (единожды), *˚te*
 - **EN:** — Desid. *bubhukṣati* (once), *˚te*
-  <sub>DCS 2938 · attested</sub>
+  <sub>attested</sub>
 
 **desid-1)** — 1〉 zu essen wünschen, hungrig sein.
 
 - **RU:** — 1〉 «желать есть, быть голодным».
 - **EN:** — 1〉 to wish to eat, to be hungry.
-  <sub>DCS 2938 · attested</sub>
+  <sub>attested</sub>
 
 **desid-2)** — 2〉 zu geniessen —, theilhaftig zu werden wünschen [NAIṢ. 6,100]. — *bubhukṣita* s. bes.
 
 - **RU:** — 2〉 «желать насладиться —, желать приобщиться к чему-либо» [NAIṢ. 6,100]. — *bubhukṣita* s. bes.
 - **EN:** — 2〉 to wish to enjoy, to wish to partake of [NAIṢ. 6,100]. — *bubhukṣita* s. bes.
-  <sub>DCS 2938 · attested</sub>
+  <sub>attested</sub>
 
 **intens-intro)** — Intens.
 - **EN:** — Intens.
@@ -1898,7 +1898,7 @@ Z. 5 read 5, 48, 4.
 
 - **RU:** — С *adhi* «съедать, поедать, наслаждаться» überh.
 - **EN:** — With *adhi* to eat up, to enjoy überh.
-  <sub>DCS 2938 · attested</sub>
+  <sub>attested</sub>
 
 **preverb-anu-intro)** Mit *anu*
 - **EN:** With *anu*
@@ -1916,19 +1916,19 @@ Z. 5 read 5, 48, 4.
 
 - **RU:** — С *abhi* «быть полезным кому-либо» (Acc.), «служить».
 - **EN:** — With *abhi* to be useful to someone (Acc.), to serve.
-  <sub>DCS 2938 · attested</sub>
+  <sub>attested</sub>
 
 **preverb-apa)** — Mit *ā* in 2. **ābhoga*, *ābhogaya* u. s. w.
 
 - **RU:** — С *ā* во 2. **ābhoga*, *ābhogaya* u. s. w.
 - **EN:** — With *ā* in 2. **ābhoga*, *ābhogaya* u. s. w.
-  <sub>DCS 2938 · lexicographic</sub>
+  <sub>lexicographic</sub>
 
 **preverb-abhi2)** — Mit *samā* geniessen, so v. a. herrschen über (Acc.).
 
 - **RU:** — С *samā* «наслаждаться», то есть v. a. «властвовать над» (Acc.).
 - **EN:** — With *samā* to enjoy, thus v. a. to rule over (Acc.).
-  <sub>DCS 2938 · attested</sub>
+  <sub>attested</sub>
 
 **preverb-upa-intro)** — Mit *upa*
 - **EN:** — With *upa*
@@ -1946,13 +1946,13 @@ Z. 5 read 5, 48, 4.
 
 - **RU:** — С *pratyupa* «наслаждаться, поедать».
 - **EN:** — With *pratyupa* to enjoy, to eat up.
-  <sub>DCS 2938 · attested</sub>
+  <sub>attested</sub>
 
 **preverb-prati)** — Mit *samupa* der Liebe pflegen mit (Acc.)
 
 - **RU:** — С *samupa* «предаваться любви с» (Acc.)
 - **EN:** — With *samupa* to make love with (Acc.)
-  <sub>DCS 2938 · attested</sub>
+  <sub>attested</sub>
 
 **preverb-vi-intro)** — Mit *pari*
 - **EN:** — With *pari*
@@ -1994,7 +1994,7 @@ Z. 5 read 5, 48, 4.
 
 - **RU:** — С *vi* в **bhuktavibhukta*.
 - **EN:** — With *vi* in **bhuktavibhukta*.
-  <sub>DCS 2938 · lexicographic</sub>
+  <sub>lexicographic</sub>
 
 **preverb-sam3-intro)** — Mit *sam*
 - **EN:** — With *sam*
@@ -2036,13 +2036,13 @@ Z. 5 read 5, 48, 4.
 
 - **RU:** **3.** √*bhuj*¦ с *upa* Desid. «намереваться вкусить (в супружеском смысле)» [HEM. PAR. 1,380].
 - **EN:** **3.** √*bhuj*¦ with *upa* Desid. to intend to enjoy (conjugally) [HEM. PAR. 1,380].
-  <sub>DCS 2938 · attested</sub>
+  <sub>attested</sub>
 
 **cross-ref)** **3.** √*bhuj*¦ mit *upa* Desid. 5.
 
 - **RU:** **3.** √*bhuj*¦ с *upa* Desid. 5.
 - **EN:** **3.** √*bhuj*¦ with *upa* Desid. 5.
-  <sub>DCS 2938 · attested</sub>
+  <sub>attested</sub>
 
 **PW1-root)** **1.** √*bhuj*¦, *bhujati* biegen.
 — Pass. *bhujyate* gebeugt —, entmuthigt werden. — *bhugna*
@@ -2055,7 +2055,7 @@ Z. 5 read 5, 48, 4.
 — 1〉 «согнутый, изогнутый, бороздчатый» (о бровях), «отодвинутый в сторону, вывернутый» (о глазах).
 — 2〉 «согнутый, поникший, упавший духом».
 — 3〉 Bez. «формы Saṃdhi от *o* и *au* перед нелабиальными гласными».
-  <sub>DCS 2938 · attested</sub>
+  <sub>attested</sub>
 
 **PW3-intens)** — Intens.
 — 1〉 *bobhujīti* geniessen.
@@ -2064,7 +2064,7 @@ Z. 5 read 5, 48, 4.
 - **RU:** — Intens.
 — 1〉 *bobhujīti* «наслаждаться (с усилением)».
 — 2〉 *bobhujyate* «быть многократно поедаемым».
-  <sub>DCS 2938 · attested</sub>
+  <sub>attested</sub>
 
 **PW3-anu)** Mit *anu*
 — 1〉 den Lohn für Etwas (Acc.) geniessen.
@@ -2075,7 +2075,7 @@ Z. 5 read 5, 48, 4.
 — 1〉 «пожинать плоды чего-либо» (Acc.), «получать вознаграждение за».
 — 2〉 «наслаждаться, приобщаться, принимать участие в».
 — 3〉 в Astr. «проходить (период)».
-  <sub>DCS 2938 · attested</sub>
+  <sub>attested</sub>
 
 **PW3-upa)** — Mit *upa*
 — 1〉 geniessen, essen, verspeisen, verzehren; geniessen auch so v. a. benutzen, gebrauchen, Nutzen ziehen aus, leben von, beherrschen; theilhaftig werden (auch von Unangenehmem). Jmd benutzen auch so v. a. der Liebe pflegen mit (statt des Acc. der Person auch *śarīram*).
@@ -2086,7 +2086,7 @@ Z. 5 read 5, 48, 4.
 — 1〉 «наслаждаться, есть, поедать, пожирать; наслаждаться» также в смысле v. a. «пользоваться, применять, извлекать пользу из, жить за счёт, властвовать; приобщаться» (также о неприятном). «Использовать кого-либо» также в смысле v. a. «предаваться любви с» (вместо Acc. лица — также *śarīram*).
 — 2〉 «иметь вознаграждение за что-либо» (Acc.).
 — 3〉 Act. «быть полезным кому-либо» (Acc.), «служить».
-  <sub>DCS 2938 · attested</sub>
+  <sub>attested</sub>
 
 **PW3-abhi)** — Mit *pari*
 — 1〉 Etwas vorweg essen.
@@ -2099,7 +2099,7 @@ Z. 5 read 5, 48, 4.
 — 2〉 «обходить кого-либо» (Acc.) «при еде, оставлять без угощения».
 — 3〉 «поедать, съедать, пожирать, истреблять» [KĀD. 2,118,1]. ([145,6]).
 — 4〉 «наслаждаться, пользоваться, употреблять». — *paribhujyantam* [MBH. 11,97] ошибочно вместо *˚bhṛjjyantam*. — *paribubhukṣita* s. bes. ([Nachtr. 4])
-  <sub>DCS 2938 · attested</sub>
+  <sub>attested</sub>
 
 **PW3-pari)** — Mit *pra*
 — 1〉 *zu essen anfangen.
@@ -2108,7 +2108,7 @@ Z. 5 read 5, 48, 4.
 - **RU:** — С *pra*
 — 1〉 *«приступать к еде, начинать есть».
 — 2〉 Act. «быть услужливым, быть готовым к услугам».
-  <sub>DCS 2938 · attested</sub>
+  <sub>attested</sub>
 
 **PW3-pari2)** — Mit *prati*
 — 1〉 geniessen.
@@ -2119,7 +2119,7 @@ Z. 5 read 5, 48, 4.
 — 1〉 «наслаждаться».
 — 2〉 «принимать пищу наряду с лечением» [CARAKA. 1,13]. *pratibhukta* «соблюдавший диету» [6,26]. «питавшийся во время лечения» (Instr.) [20].
 — Caus. *laghvannapratibhojita* «тот, кому при лечении давали принимать лёгкую пищу» [BHĀVAPR. 3,21,38].
-  <sub>DCS 2938 · attested</sub>
+  <sub>attested</sub>
 
 **PW3-sam3)** — Mit *sam*
 — 1〉 zusammen geniessen, ein gemeinsames Mahl halten [AV. 3,10,7. 11,2,31]. [ĀPAST. 2,17,9]. (wohl *saṃbhuñjatāṃ* zu lesen).
@@ -2132,7 +2132,7 @@ Z. 5 read 5, 48, 4.
 — 2〉 «наслаждаться, наслаждаться плотски».
 — 3〉 в Astr. «проходить (период)». *saṃbhukta* [MAṆITTHA] у [UTPALA zu VARĀH. BṚH. 26 (24),4].
 — Caus. «кормить кого-либо» (Acc.) «вместе с» (Instr.).
-  <sub>DCS 2938 · attested</sub>
+  <sub>attested</sub>
 
 **PW4-def)** **4.** *bhuj*¦
 — 1〉 _f._ das Nutzenbringen, Zugutekommen, Frommen; Genuss, Vortheil, Nutzen; das Haben, die Habe. Dat. *bhje* auch als Infin.
@@ -2149,7 +2149,7 @@ Z. 5 read 5, 48, 4.
 — b〉 «пожинающий плоды чего-либо».
 — c〉 «приносящий пользу, содействующий благу».
 — d〉 «проходящий, наполняющий» (о времени).
-  <sub>DCS 2938 · attested</sub>
+  <sub>attested</sub>
 
 ## bhuj
 
@@ -2160,7 +2160,7 @@ Z. 5 read 5, 48, 4.
 
 - **RU:** 3. bhuj¦ с upa Desid. намереваться (супружески) вкусить, [Hem. Par. 1,380.] {part=,seq=20923,type=,n=2}
 - **EN:** 3. bhuj¦ with upa Desid. to be willing to enjoy (conjugally), [Hem. Par. 1,380.] {part=,seq=20923,type=,n=2}
-  <sub>DCS 2938 · attested</sub>
+  <sub>attested</sub>
 
 ## bhuj
 
@@ -2171,10 +2171,10 @@ Z. 5 read 5, 48, 4.
 
 - **RU:** **3.** *bhuj*¦ с *upa* Desid. намереваться вкусить (супружески) [HEM. PAR. 1,380].
 - **EN:** **3.** *bhuj*¦ with *upa* Desid. to be willing to enjoy (conjugally) [HEM. PAR. 1,380].
-  <sub>DCS 2938 · attested</sub>
+  <sub>attested</sub>
 
 **cross-ref)** **3.** *bhuj*¦ mit *upa* Desid. 5.
 
 - **RU:** **3.** *bhuj*¦ с *upa* Desid. 5.
 - **EN:** **3.** *bhuj*¦ with *upa* Desid. 5.
-  <sub>DCS 2938 · lexicographic</sub>
+  <sub>lexicographic</sub>

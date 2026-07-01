@@ -13,4 +13,4 @@
 - **EN:** — *pratinis* to come out again: *(yathā) na jīvanpratiniryāti mahato 'smādrathabrajāt*
 [MBH. 6,5155.] *yathā prayukta oṃkāraḥ pratiniryāti mūrdhani*
 [MĀRK. P. 42,6.]
-  <sub>DCS 3 · attested</sub>
+  <sub>attested</sub>

@@ -133,7 +133,7 @@ Schol. zu [P. 4,2,70.] *nadīmāśramasaṃbaddhām* standing in connection with
 [MĀRK. P. 26,14. fg.] *sukhabaddhamasaṃbaddhaṃ tathā hyeṣa prabhāṣate* (of a Kokila)
 [R. 2,96,14] ([105,13] [GORR.]) *saṃbaddham* probably _adv._ in the following passage: *avādayanta gandharvā vāditraṃ sumanoharam . jaguścāpsaraso rājño yaśaḥ saṃbaddhameva ca ..* sang thereto
 [MBH. 9,3443.]
-  <sub>DCS 154 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) Jmd Etwas verschaffen: *manojñagandhaṃ sahakārabhaṅgaṃ purāṇaśīdhruṃ navapāṭlaṃ ca . saṃbadhnatā kāmijaneṣu doṣāḥ sarve nidāghāvadhinā pramṛṣṭāḥ ..*
 [RAGH. 16,52.]
@@ -142,7 +142,7 @@ Schol. zu [P. 4,2,70.] *nadīmāśramasaṃbaddhām* standing in connection with
 [RAGH. 16,52.]
 - **EN:** — 2) to procure something for someone: *manojñagandhaṃ sahakārabhaṅgaṃ purāṇaśīdhruṃ navapāṭlaṃ ca . saṃbadhnatā kāmijaneṣu doṣāḥ sarve nidāghāvadhinā pramṛṣṭāḥ ..*
 [RAGH. 16,52.]
-  <sub>DCS 154 · attested</sub>
+  <sub>attested</sub>
 
 **caus)** — Vgl. *saṃbandha* u. s. w. — caus. anbinden lassen: *paśuṃ raktāmbaraṃ kṛtvā yūpe taṃ samabandhayat*
 [R. 1,62,24.] verbinden heissen; sagen, dass man verbinden müsse: *kecittu tatspṛṣṭinamiti cāṇḍālodakyādibhiḥ sarvaiḥ saṃbandhayanti*
@@ -154,4 +154,4 @@ Schol. zu [P. 4,2,70.] *nadīmāśramasaṃbaddhām* standing in connection with
 - **EN:** — Vgl. *saṃbandha* u. s. w. — caus. to have bound: *paśuṃ raktāmbaraṃ kṛtvā yūpe taṃ samabandhayat*
 [R. 1,62,24.] to bid join, to say that one must join: *kecittu tatspṛṣṭinamiti cāṇḍālodakyādibhiḥ sarvaiḥ saṃbandhayanti*
 [KULL.] zu [M. 5,85.]
-  <sub>DCS 154 · attested</sub>
+  <sub>attested</sub>

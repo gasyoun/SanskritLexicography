@@ -91,7 +91,7 @@
 [MBH. 3,1763.] "to make an attack"
 [KĀM. NĪTIS. 15,2. 13.] "to come", of time: *kālo 'bhiyātastriṇavacaturyugavikalpitaḥ* (more precisely it would be *atiyātaḥ* "elapsed")
 [BHĀG. P. 9,3,33.]
-  <sub>DCS 279 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) an Etwas gehen, sich hingeben: *vāsam* so v. a. sich niederlassen
 [R. 7,66,15.] *pāṣaṇḍam* sich der Ketzerei hingeben
@@ -103,7 +103,7 @@
 - **EN:** — 2) "to set about something, to devote oneself to": *vāsam* hence v. a. "to settle down"
 [R. 7,66,15.] *pāṣaṇḍam* "to devote oneself to heresy"
 [BHĀG. P. 5,14,13.]
-  <sub>DCS 279 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) theilhaft werden, mit acc.
 [MBH. 5,1699.] [13,5851.] *na tu tadbrajati yannyastadaṇḍo gatavairo 'bhiyāti*
@@ -118,7 +118,7 @@
 [MBH. 5,1699.] [13,5851.] *na tu tadbrajati yannyastadaṇḍo gatavairo 'bhiyāti*
 [BHĀG. P. 5,13,15.] *aiśvaryamabhiyātaḥ*
 [R. 5,88,10.]
-  <sub>DCS 279 · attested</sub>
+  <sub>attested</sub>
 
 **causative)** — Vgl. *abhiyātar* fgg. — caus. herbeikommen lassen, hinsenden
 [BHĀG. P. 5,2,3.]
@@ -127,4 +127,4 @@
 [BHĀG. P. 5,2,3.]
 - **EN:** — Vgl. *abhiyātar* fgg. — caus. "to cause to come up, to send to"
 [BHĀG. P. 5,2,3.]
-  <sub>DCS 279 · attested</sub>
+  <sub>attested</sub>

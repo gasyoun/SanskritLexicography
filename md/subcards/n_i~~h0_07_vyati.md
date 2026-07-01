@@ -10,4 +10,4 @@
 [ĀŚV. ŚR. 12,8.]
 - **EN:** — *vyati* to let pass, allow to elapse: *kālam*
 [ĀŚV. ŚR. 12,8.]
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>

@@ -412,4 +412,4 @@ u. s. w. [AK. 3,2,55.] [H. 1497.] protected, guarded, preserved, kept; of person
 [Spr. 4692.] Vgl. *devarakṣita, *
 
 * buddha˚, mahā˚, maitreya˚* .
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>

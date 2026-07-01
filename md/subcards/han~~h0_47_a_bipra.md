@@ -19,4 +19,4 @@ v. l.).
 [ŚAT. BR. 14,7,1,12.] partic. *˚hata* "wounded": tree
 [SUŚR. 1,327,4] (*abhihata*
 v. l.).
-  <sub>DCS 3 · attested</sub>
+  <sub>attested</sub>

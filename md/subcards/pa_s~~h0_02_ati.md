@@ -16,4 +16,4 @@
 [ṚV. 1,94,7.] *sahasrākṣā ati paśyanti bhūmim*
 [AV. 4,16,4.] [5,2.] [13,1,45.] *tataḥ paraṃ nāti paśyāmi kiṃ cana*
 [18,2,32.]
-  <sub>DCS 4733 · attested</sub>
+  <sub>attested</sub>

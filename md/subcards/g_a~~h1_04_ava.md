@@ -7,7 +7,7 @@
 
 - **RU:** — *ava* петь на убыль так v. a. поносить в песнях, осмеивать; *avagīta*
 - **EN:** — *ava* to sing down, hence v. a. to revile, mock in songs; *avagīta*
-  <sub>DCS 12 · attested</sub>
+  <sub>attested</sub>
 
 **PPP.1)** 1) _adj._ geschmäht, verspottet, elend, erbärmlich, = *khyātagarhaṇa*
 [AK. 3,2,42.] = *garhita*
@@ -43,7 +43,7 @@
 [ŚKDR.] according to ders. Aut. *avagītāṃ daśām*
 [KIR. 2,7.] *avagītamidaṃ sarvamāvābhyāṃ bhaktakānanam* having become a source of disgust
 [HARIV. 3483.]
-  <sub>DCS 12 · attested</sub>
+  <sub>attested</sub>
 
 **subst.2)** — 2) _n._ Gespötte, üble Nachrede, = *janya*
 [AK. 3,4,14,81.] = *apavāda*
@@ -58,4 +58,4 @@
 [AK. 3,4,14,81.] = *apavāda*
 [H. an.] = *nirvāda*
 [MED.] [VIŚVA.]
-  <sub>DCS 12 · lexicographic</sub>
+  <sub>lexicographic</sub>

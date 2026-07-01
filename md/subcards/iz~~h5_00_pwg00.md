@@ -27,9 +27,9 @@
 [HIT. 113,8] (v. l. *anviṣyan*). *iṣ, iṣati* причисляется к глаголам движения
 [NAIGH. 2,14.]
 [NIR. 9,18.]
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>
 
 **cross_ref)** — Vgl. *īṣ* .
 
 - **RU:** — Vgl. *īṣ* .
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>

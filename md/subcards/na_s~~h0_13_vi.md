@@ -156,7 +156,7 @@
 [MBH. 4,426.] [5,767.]
 [R. 2,110,30]; vgl. the caus. from simpl. — desid. from caus. *vināśayiṣitaḥ* (without Redupl.!)
 [DAŚAK. 112,3] v. u.
-  <sub>DCS 596 · attested</sub>
+  <sub>attested</sub>
 
 **2)** [2,64.] [YĀJÑ. 2,59.] [268.] — caus. verschwinden machen, vertreiben, vernichten, verderben, zu Grunde richten, umbringen: *tvaṃ pura indra vyojasā nāśayadhyai*
 [ṚV. 8,86,14.] [1,55,6.] *aśastīrvi hi nīnaśaḥ*
@@ -221,4 +221,4 @@
 [MBH. 4,426.] [5,767.]
 [R. 2,110,30]; vgl. caus. от simpl. — desid. от caus. *vināśayiṣitaḥ* (без Redupl.!)
 [DAŚAK. 112,3] v. u.
-  <sub>DCS 596 · attested</sub>
+  <sub>attested</sub>

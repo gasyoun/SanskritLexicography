@@ -19,4 +19,4 @@
 [ṚV. 7,37,2.] *samṛtubhiḥ pibasva*
 [4,35,7.] [9.] [10,135,1.] [AIT. BR. 3,30.] [ŚAT. BR. 3,6,2,26.] [ŚĀṄKH. GṚHY. 1,17.] Vgl. *saṃpiba, saṃpīti* . — caus. to cause to drink: *retaḥ saṃpāyayanti*
 [BHĀG. P. 5,26,26.]
-  <sub>DCS 13 · attested</sub>
+  <sub>attested</sub>

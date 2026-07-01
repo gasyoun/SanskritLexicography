@@ -7,10 +7,10 @@
 
 - **RU:** **3.** *bhuj*¦ с *upa* Desid. намереваться вкусить (супружески) [HEM. PAR. 1,380].
 - **EN:** **3.** *bhuj*¦ with *upa* Desid. to be willing to enjoy (conjugally) [HEM. PAR. 1,380].
-  <sub>DCS 2938 · attested</sub>
+  <sub>attested</sub>
 
 **cross-ref)** **3.** *bhuj*¦ mit *upa* Desid. 5.
 
 - **RU:** **3.** *bhuj*¦ с *upa* Desid. 5.
 - **EN:** **3.** *bhuj*¦ with *upa* Desid. 5.
-  <sub>DCS 2938 · lexicographic</sub>
+  <sub>lexicographic</sub>

@@ -13,7 +13,7 @@
 - **EN:** — *vipra*
 1) to direct (the mind) upon: *saṃcaye ca vināśānte maraṇānte ca jīvite saṃyoge ca viyogānte ko nu vipraṇayenmanaḥ ..*
 [MBH. 12,3891. fg.]
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) verstreichen lassen: *saṃvatsaraṃ vipraṇayet*
 [MBH. 12,3560.]
@@ -22,4 +22,4 @@
 [MBH. 12,3560.]
 - **EN:** 2) to let pass, allow to elapse: *saṃvatsaraṃ vipraṇayet*
 [MBH. 12,3560.]
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>

@@ -10,4 +10,4 @@
 [P. 8,4,18], Sch.
 - **EN:** — *prani* and *praṇi, ˚bhinatti*
 [P. 8,4,18], Sch.
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>

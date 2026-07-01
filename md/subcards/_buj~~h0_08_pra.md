@@ -16,4 +16,4 @@
 [KAUŚ. 1.]
 [KĀṬH.] at Schol. to [KĀTY. ŚR. 10,7,4.] [PAÑCAV. BR. 20,2,4.] *prabhugna*
 [P. 8,4,29], Sch.
-  <sub>DCS 2938 · attested</sub>
+  <sub>attested</sub>

@@ -13,4 +13,4 @@
 — *vipari* ходить, расхаживать [PAT. a. a. O. 3,48,a.]
 - **EN:** 1. *pat*¦ with *ava, anavapatitaśabda* _adj._ apparently whose voice is not attested [CARAKA 3,8.]
 — *vipari* to go about, wander [PAT. a. a. O. 3,48,a.]
-  <sub>DCS 3124 · attested</sub>
+  <sub>attested</sub>

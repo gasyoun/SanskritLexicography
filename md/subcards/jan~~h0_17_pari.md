@@ -19,4 +19,4 @@
 [AV. 6,3,1] (where viell. would more correctly be accented *pari jātaḥ*) and *aparijāta* born not complete, not viable, or stillborn
 [ĀŚV. GṚHY. 4,4.] *sasyena parijātaḥ*
 [P. 5,2,68]; according to Sch. = *guṇena saṃbaddhaḥ*.
-  <sub>DCS 9250 · attested</sub>
+  <sub>attested</sub>

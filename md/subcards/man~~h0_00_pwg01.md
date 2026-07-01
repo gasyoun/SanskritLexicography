@@ -67,7 +67,7 @@
 [KAṬHOP. 2,19.] *paṇḍitaṃ manyamānāḥ*
 [5.] [MUṆḌ. UP. 1,2,8] (the Scholia at both passages *paṇḍitā)*.
 [MBH. 13,1543.]
-  <sub>DCS 4704 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) meinen so v. a. für gut finden, billigen: *kathaṃ vā gautamī manyate*
 [ŚĀK. 56,3.] *yathā bhavānmanyate*
@@ -97,7 +97,7 @@
 [KATHĀS. 27,149.] [28,34.]
 [SĀH. D. 11,14.] to agree with someone (acc.)
 [MBH. 14,799.]
-  <sub>DCS 4704 · attested</sub>
+  <sub>attested</sub>
 
 **5)** — 5) denken an so v. a. mit Sinn und Herz zugewandt sein, ehren, schätzen *(stu*
 [SĀY.]): *agniṃ taṃ manye yo vasuḥ*
@@ -160,7 +160,7 @@
 [RĀJA-TAR. 4,311.] *evameva naravyāghraḥ paralīḍhaṃ* (thus the [ed. Bomb.]) *na manyate* thus v. a. to disdain
 [R. 2,61,16.] *śaṭhastu samayaṃ prāpya nopakāraṃ hi manyate* values as nothing
 [Spr. 5051.]
-  <sub>DCS 4704 · attested</sub>
+  <sub>attested</sub>
 
 **6)** — 6) im Sinne haben, wollen, wünschen, das Absehen haben auf: *yamagne tvaṃ cinmanyase rayiṃ tamā bhara* welchen du selbst willst
 [ṚV. 5,20,1.] [39,2.] [10,21,4.] *manye vāṃ jātavedasā yajadhyai*
@@ -196,7 +196,7 @@
 [MBH. 3,2788.] *yauvarājyamamanyata*
 [R. 2,1,26.] with gen. to desire: *suvitasya manāmahe (vanāmahe*
 [SV.]) [ṚV. 9,41,2.]
-  <sub>DCS 4704 · attested</sub>
+  <sub>attested</sub>
 
 **7)** — 7) gedenken (im Gebet u. s. w.), erwähnen, meminisse, commemorare; erdenken, ersinnen: *kasya nūnaṃ manāmahe devasya nāma*
 [ṚV. 1,24,1.] [8,11,5.] *amanmahi marutāṃ nāma bhadram*
@@ -238,7 +238,7 @@
 [VS. 4,11.] with gen.: *yanna yajñasya manvate martyāsaḥ*
 [ṚV. 10,2,5.] [12,6.] *agnermanve prathamasya*
 [AV. 4,23,1.]
-  <sub>DCS 4704 · attested</sub>
+  <sub>attested</sub>
 
 **8)** — 8) Etwas (acc. gen. in der älteren Sprache) wahrnehmen, innewerden, erkennen; wissen, begreifen: *purutrā te manutāṃ viṣṭhitaṃ jagat*
 [ṚV. 6,47,29.] [1,30,21.] *indriyāṇāṃ pṛthagbhāvamudayāstamayau ca yat . pṛthagutpadyamānānāṃ matvā dhīro na śocati ..*
@@ -268,7 +268,7 @@
 [MEGH. 72.] *tadu ha na mene gārgyaḥ* that G. did not know
 [ŚAT. BR. 14,5,1,16.] [6,9,28.] *paśyan, śṛṇvan, manvānaḥ*
 [4,2,17.] [5,4,15.] [7,1,28.] [CHĀND. UP. 7,18. 8,12,5.] [TAITT. UP. 2,7.] Cit. in [VEDĀNTAS. (Allah.) No. 111.]
-  <sub>DCS 4704 · attested</sub>
+  <sub>attested</sub>
 
 **9)** — 9) zudenken so v. a. schenken, verehren: *yaḥ sahasraṃ sahasrāṇāṃ kanyā hemavibhūṣitāḥ — brāhmaṇebhyo hyamanyata*
 [MBH. 7,2250.] [2265.] [2317.]
@@ -277,13 +277,13 @@
 [MBH. 7,2250.] [2265.] [2317.]
 - **EN:** — 9) to bestow upon, intend for thus v. a. to give, present as homage: *yaḥ sahasraṃ sahasrāṇāṃ kanyā hemavibhūṣitāḥ — brāhmaṇebhyo hyamanyata*
 [MBH. 7,2250.] [2265.] [2317.]
-  <sub>DCS 4704 · attested</sub>
+  <sub>attested</sub>
 
 **10)** — 10) partic. *mata*
 
 - **RU:** 10) partic. *mata*
 - **EN:** — 10) partic. *mata*
-  <sub>DCS 4704 · attested</sub>
+  <sub>attested</sub>
 
 **10a)** a) erscheinend als, geltend —, angesehen werdend für: *sa vai sparśaguṇo mataḥ*
 [M. 1,76.] *indriyaṃ karaṇaṃ matam*
@@ -334,4 +334,4 @@ davor ein fem.-suff. verkürzt
 [4,380.] compounded with *śreṇi* u. s. w. (as praed.) gaṇa *kṛtādi* to [P. 2,1,59.]
 before it a fem.-suff. shortened
 [6,3,43. fgg.] *brāhmaṇimatā* Schol. *bahu˚* held in high regard, esteemed; s. u. *bahu* citations.
-  <sub>DCS 4704 · attested</sub>
+  <sub>attested</sub>

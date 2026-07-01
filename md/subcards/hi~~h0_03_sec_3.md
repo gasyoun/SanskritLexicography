@@ -7,4 +7,4 @@
 
 - **RU:** — intens. *jeghīyate* ebend.
 - **EN:** — intens. *jeghīyate* ebend.
-  <sub>DCS 23914 · attested</sub>
+  <sub>attested</sub>

@@ -16,7 +16,7 @@
  1) to fix, direct (one's attention etc.) upon: *yanmano mayi nirbaddham*
 [BHĀG. P. 3,9,35.] *mayi nirbaddhahṛdayā*
 [9,4,66.]
-  <sub>DCS 2655 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) sich an Jmd klammern, heftig in Jmd dringen,
 
@@ -34,10 +34,10 @@ Jmd stark zusetzen: *nirbadhnatātimātraṃ ca gālavena*
 importune someone urgently: *nirbadhnatātimātraṃ ca gālavena*
 [MBH. 5,4116.] *bhūyo bhūyaśca nirbaddhayā tvayā*
 [DAŚAK.] in [BENF. Chr. 193,3.]
-  <sub>DCS 2655 · attested</sub>
+  <sub>attested</sub>
 
 **caus)** — Vgl. *nirbandha* fgg.
 
 - **RU:** — Vgl. *nirbandha* fgg.
 - **EN:** — Vgl. *nirbandha* fgg.
-  <sub>DCS 2655 · attested</sub>
+  <sub>attested</sub>

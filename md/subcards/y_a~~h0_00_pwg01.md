@@ -67,7 +67,7 @@
 [143,b, No. 295.]
 *yātamanāgataṃ ca* the past and the future
 [VARĀH. BṚH. S. 68,1.]
-  <sub>DCS 5678 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) gehen so v. a. auf eine best. Entfernung (acc.) reichen, sich erstrecken: *pañca (yojanāni) abdānāṃ garjitaṃ yāti śabdaḥ*
 [VARĀH. BṚH. S. 30,32.] für eine best. Zeit (acc.) hinreichen: *māsameko naro yāti dvau māsau mṛgasūkarau*
@@ -79,7 +79,7 @@
 - **EN:** — 3) to go, so v. a. to reach —, to extend over a best. distance (acc.): *pañca (yojanāni) abdānāṃ garjitaṃ yāti śabdaḥ*
 [VARĀH. BṚH. S. 30,32.] to suffice for a best. time (acc.): *māsameko naro yāti dvau māsau mṛgasūkarau*
 [HIT. I,158.]
-  <sub>DCS 5678 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) gehen so v. a. von Statten gehen, gelingen, zu Stande
 
@@ -94,7 +94,7 @@ kommen: *etattapasā na yāti na cejyayā nirvapaṇādgṛhādvā*
 
 to pass: *etattapasā na yāti na cejyayā nirvapaṇādgṛhādvā*
 [BHĀG. P. 5,12,12.]
-  <sub>DCS 5678 · attested</sub>
+  <sub>attested</sub>
 
 **5)** — 5) verfahren, sich benehmen: *naivamanyāḥ striyo yānti*
 [MBH. 4,77.]
@@ -103,7 +103,7 @@ to pass: *etattapasā na yāti na cejyayā nirvapaṇādgṛhādvā*
 [MBH. 4,77.]
 - **EN:** — 5) to act, to conduct oneself: *naivamanyāḥ striyo yānti*
 [MBH. 4,77.]
-  <sub>DCS 5678 · attested</sub>
+  <sub>attested</sub>
 
 **6)** — 6) gehen —, kommen —, sich begeben —, fahren —, reisen —, gelangen zu, nach, in; marschiren gegen; die Ergänzung oder nähere Bestimmung
  a) im acc.: *kaṃ yātha*
@@ -322,4 +322,4 @@ to pass: *etattapasā na yāti na cejyayā nirvapaṇādgṛhādvā*
 [ŚĀK. 139], v. l.
 [RAGH. 3,21.] *yāyātha tvaṃ dviṣāmantaṃ bhūyo yātāsi cāsakṛt* so v. a. to be done with
 [BHAṬṬ. 9,47.]
-  <sub>DCS 5678 · attested</sub>
+  <sub>attested</sub>

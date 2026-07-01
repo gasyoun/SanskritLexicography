@@ -19,4 +19,4 @@
 [KĀṬH. 36,13.] *tasmātparastādarvāñco manuṣyānpitaro 'nuprapipate* (!)
 [TS. 2,5,8,7.] Vgl.
 [TBR. 1,3,10,4.]
-  <sub>DCS 3 · attested</sub>
+  <sub>attested</sub>

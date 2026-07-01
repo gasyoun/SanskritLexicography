@@ -7,4 +7,4 @@
 
 - **RU:** — desid. s. *cicchitsu* .
 - **EN:** — desid. s. *cicchitsu* .
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>

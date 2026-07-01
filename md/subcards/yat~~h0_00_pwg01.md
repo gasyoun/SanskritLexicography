@@ -10,7 +10,7 @@
 [MBH. 1,5570.] *apanetuṃ ca yatito na caiva śakito mayā*
 [6015.] impers.: *yatitaṃ vai mayā pūrvaṃ vettha brāhmaṇi tattathā . kṣemaṃ yatastato gantum* I was intent upon it
 [6128.]
-  <sub>DCS 9672 · attested</sub>
+  <sub>attested</sub>
 
 **6)** — 6) med. feindlich zusammengerathen: *ta ugrāso vṛṣaṇa ugrabāhavo nakiṣṭanūṣu yetire* greifen sich nicht unter einander selbst an [ṚV. 8,20,12.] *saṃ jānate na yatante mithaste* [7,76,5.] im Kampfe liegen [AIT. BR. 1,14.] [8,10.] *devāsurā yattā āsan* [KĀṬH. 37,11.]
 
@@ -20,4 +20,4 @@
 [7,76,5.] to be engaged in battle
 [AIT. BR. 1,14.] [8,10.] *devāsurā yattā āsan*
 [KĀṬH. 37,11.]
-  <sub>DCS 9672 · attested</sub>
+  <sub>attested</sub>

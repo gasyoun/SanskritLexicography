@@ -10,4 +10,4 @@
 [MBH. 1,5437.]
 - **EN:** — *anusam*, partic. *˚baddha* connected with, accompanied by: *sādhuvāda˚ (hāhākāra)*
 [MBH. 1,5437.]
-  <sub>DCS 2655 · attested</sub>
+  <sub>attested</sub>

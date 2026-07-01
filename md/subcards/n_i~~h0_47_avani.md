@@ -16,7 +16,7 @@
  1) to bring into, to immerse (in water): *udapātre 'kṣatān*
 [ŚĀṄKH. GṚHY. 1,22.] *mārjālīye kalaśān*
 [ŚR. 17,17,9.]
-  <sub>DCS 2376 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) niedergiessen: *apaḥ pṛthivyām*
 [ŚĀṄKH. GṚHY. 6,1.]
@@ -25,4 +25,4 @@
 [ŚĀṄKH. GṚHY. 6,1.]
 - **EN:** — 2) to pour down: *apaḥ pṛthivyām*
 [ŚĀṄKH. GṚHY. 6,1.]
-  <sub>DCS 2376 · attested</sub>
+  <sub>attested</sub>

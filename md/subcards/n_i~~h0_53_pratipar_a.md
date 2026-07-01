@@ -9,4 +9,4 @@
 - **RU:** — *pratiparā* возвращать, отводить обратно
 [ŚAT. BR. 2,5,2,20.]
 - **EN:** — *pratiparā* to lead back [ŚAT. BR. 2,5,2,20.]
-  <sub>DCS 2376 · attested</sub>
+  <sub>attested</sub>

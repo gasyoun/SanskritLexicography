@@ -16,7 +16,7 @@
  1) *yāvadāyudhamānaye* until I bring hither
 [R. 7,68,17.] *āninyathuḥ pitṛsthānādgurave gurudakṣiṇām*
 [BHĀG. P. 10,85,32.]
-  <sub>DCS 1178 · attested</sub>
+  <sub>attested</sub>
 
 **5)** — 5) *mitrāṇi śatrutvamivānayantī mitratvamapyarthavaśācca śatrūn*
 [Spr. 4722.] — caus.
@@ -43,4 +43,4 @@
 [RAGHUNĀTHAM] sequuntur; libri scholiis
 [MAHEŚVARATĪRTHAE] instructi *ānāyituṃ* (read *ānāyayituṃ)* praebent. — desid. to intend to bring hither
 [BHĀG. P. 10,89,42.]
-  <sub>DCS 1178 · attested</sub>
+  <sub>attested</sub>

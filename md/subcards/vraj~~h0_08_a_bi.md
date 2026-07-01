@@ -14,7 +14,7 @@
 [BHĀG. P. 10,79,19.]
 - **EN:** — *abhi* to go towards, to traverse *abhivrajannakṣitaṃ pājasā rajaḥ*
 [ṚV. 1,58,5.] [9,68,3.] — [1,144,5.] [KAUŚ. 44.] *araṇyasyārdhamabhivrajya*
-  <sub>DCS 1202 · attested</sub>
+  <sub>attested</sub>
 
 **2)** [106. 126.] *keralān* sich begeben zu
 [BHĀG. P. 10,79,19.]

@@ -91,7 +91,7 @@
 [RAGH. 13,29.] *sauhṛdaṃ bhid* to break friendship, med.
 [R. 4,34,84.] *premavibhinnadhairya* broken so v. a. brought to nought
 [BHĀG. P. 3,1,32.]
-  <sub>DCS 136 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) trennen: *śarīrādavibhinno 'sya gomukhastu bhaviṣyati* so v. a. nicht von seiner Seite kommend
 [KATHĀS. 34,118.] *(rājñī) abhūdavibhinnaiva bhūpateḥ*
@@ -106,7 +106,7 @@
 [KATHĀS. 34,118.] *(rājñī) abhūdavibhinnaiva bhūpateḥ*
 [27,57.] [Spr. 1801.] alongside *saṃbhinna* among the Beiww. of Śiva
 [MBH. 12,10374.]
-  <sub>DCS 136 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) lösen, auseinandermachen: *āntrapāśaṃ vibhidya*
 [HARIV. 14717.] *hṛtsaṃśayabandhanaṃ me vibhettumarhasi*
@@ -127,7 +127,7 @@
 [BHĀG. P. 4,11,30.] to spread apart, drive apart: *mṛdupavanavibhinnaḥ — ghanarucirakalāpaḥ*
 [VIKR. 85.] *marutā vibhinnam — abhram*
 [BHAṬṬ. 2,8.]
-  <sub>DCS 136 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) entzweien, pass. sich entzweien; part. *vibhinna* uneins, in Uneinigkeit lebend
 [VID. 62.] wo Uneinigkeit herrscht: *sthāna*
@@ -139,7 +139,7 @@
 - **EN:** — 4) to set at variance, pass. to fall out with each other; part. *vibhinna* at odds, living in discord
 [VID. 62.] where discord prevails: *sthāna*
 [Spr. 2732.]
-  <sub>DCS 136 · attested</sub>
+  <sub>attested</sub>
 
 **5)** — 5) umstimmen: *vibhetsyati manāṃsyeṣām*
 [MBH. 5,124.] pass. eine Umstimmung erfahren: *paśubuddhirvibhidyate*
@@ -157,7 +157,7 @@
 [BHĀG. P. 7,5,12.] *vibhinna* won over, changed in disposition
 [R. GORR. 2,28,15.] having become disloyal
 [RĀJA-TAR. 6,124.]
-  <sub>DCS 136 · attested</sub>
+  <sub>attested</sub>
 
 **6)** — 6) pass. sich ändern, eine Veränderung erfahren: *svaraścaiva vyabhidyata*
 [R. GORR. 2,36,10.] [3,29,14.] *vibhinnavarṇarahita*
@@ -178,7 +178,7 @@
 [KATHĀS. 33,8.]
 [RAGH. 8,42.] *āśāvibhinna* deceived in his hope
 [Spr. 3054.]
-  <sub>DCS 136 · attested</sub>
+  <sub>attested</sub>
 
 **7)** — 7) *vibhinna* verschieden: *vibhinnau cāhiduṇḍubhau*
 [KATHĀS. 14,84.] *namo vibhinnaveśāya (viṣṇave)*
@@ -193,7 +193,7 @@
 [KATHĀS. 14,84.] *namo vibhinnaveśāya (viṣṇave)*
 [PAÑCAR. 4,4,13.] [MĀRK. P. 23,84.] *˚darśin* (vgl. *bhinnadarśin*)
 [38.]
-  <sub>DCS 136 · attested</sub>
+  <sub>attested</sub>
 
 **8)** — 8) *vibhinna* vermengt mit (instr.): *vibhinnamambhojapalāśaśobhayā*
 [KIR. 4,27. 5,34.] — caus. Jmd von Jmd (abl.) entfernen, abspänstig machen
@@ -208,10 +208,10 @@
 [KIR. 4,27. 5,34.] — caus. to remove someone from someone (abl.), to alienate
 [MBH. 12,4108.]
 [R. GORR. 2,6,16] ([7,18] [SCHL.]). [8,55.]
-  <sub>DCS 136 · attested</sub>
+  <sub>attested</sub>
 
 **closing)** — Vgl. *vibhettar* u. s. w.
 
 - **RU:** — Vgl. *vibhettar* u. s. w.
 - **EN:** — Vgl. *vibhettar* u. s. w.
-  <sub>DCS 136 · attested</sub>
+  <sub>attested</sub>

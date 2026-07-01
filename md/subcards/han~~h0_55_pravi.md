@@ -10,4 +10,4 @@
 [MBH. 8,4110.]
 - **EN:** *pravi*, partic. *˚hata* beaten back —, put to flight: *sainya*
 [MBH. 8,4110.]
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>

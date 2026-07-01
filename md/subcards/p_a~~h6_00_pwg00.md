@@ -8,7 +8,7 @@
 
 - **RU:** 3. *pā*¦
  1) сюда BROCKHAUS справедливо относит приводимое у нас u. *āp*
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>
 
 **Nachtrag_3_2)** 2) stehende Stelle: *(saptaite manavaḥ) sve sve 'ntare sarvamidamutpādyāpuścarācaram*
 [M. 1,63.] = *pālitavantaḥ*
@@ -17,4 +17,4 @@
 - **RU:** 2) устойчивое место: *(saptaite manavaḥ) sve sve 'ntare sarvamidamutpādyāpuścarācaram*
 [M. 1,63.] = *pālitavantaḥ*
 [KULL.]
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>

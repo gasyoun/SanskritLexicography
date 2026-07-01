@@ -10,4 +10,4 @@
 [ṚV. 9,74,8.]
 - **EN:** — *ā* med. to fetch, procure, bring hither
 [ṚV. 9,74,8.]
-  <sub>DCS 23914 · attested</sub>
+  <sub>attested</sub>

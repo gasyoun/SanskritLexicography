@@ -10,4 +10,4 @@
 [BHĀG. P. 10,17,6.]
 - **EN:** — *pratyabhi* "to set upon someone" (acc.) "to attack"
 [BHĀG. P. 10,17,6.]
-  <sub>DCS 1 · attested</sub>
+  <sub>attested</sub>

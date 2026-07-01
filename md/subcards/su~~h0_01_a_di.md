@@ -12,4 +12,4 @@
 — Vgl. *adhiṣavaṇa* .
 - **EN:** — *adhi* dass.: *adhi suvāno nahuṣyebhirinduḥ* [ṚV. 9,91,2.]
 — Vgl. *adhiṣavaṇa*.
-  <sub>DCS 14088 · attested</sub>
+  <sub>attested</sub>

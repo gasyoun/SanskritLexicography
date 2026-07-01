@@ -10,4 +10,4 @@
 [ṚV. 1,141,4.]
 - **EN:** — *paripra* to bring hither: *pra yatpituḥ paramānnīyate pari*
 [ṚV. 1,141,4.]
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>

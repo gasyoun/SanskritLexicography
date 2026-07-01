@@ -13,4 +13,4 @@
 - **EN:** 2. *rakṣ*¦ (= 1. *rakṣ*) _adj._ at the end of a comp. guarding, watching over u. s. w.
 [VOP. 3,136.]
 — Vgl. *go˚* .
-  <sub>DCS 1930 · lexicographic</sub>
+  <sub>lexicographic</sub>

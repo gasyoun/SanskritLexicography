@@ -10,4 +10,4 @@
 [MBH. 5,432.] [13,150.]
 - **EN:** — *samanu* to go after, to follow: *devīmindrāṇī sā samanvagāt*
 [MBH. 5,432.] [13,150.]
-  <sub>DCS 2 · attested</sub>
+  <sub>attested</sub>

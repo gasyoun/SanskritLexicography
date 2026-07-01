@@ -10,4 +10,4 @@
 [SUŚR. 1,101,6.]
 - **EN:** — *pravi* to bend around: *śalyavāraṅgam*
 [SUŚR. 1,101,6.]
-  <sub>DCS 2938 · attested</sub>
+  <sub>attested</sub>

@@ -13,7 +13,7 @@
 - **EN:** — 6) to fall upon: *prajāsu nihatyeva sahasānnamatsyataḥ*
 [KĀTY. ŚR. 4,15,16.] with gen.: *śuddhahastau brāhmaṇasyānihatyaitaṃ svargaṃ sukṛtāpītam* with pure hands, as those who have not laid hands on a Brahman,
 [AV. 12,3,44.]
-  <sub>DCS 2228 · attested</sub>
+  <sub>attested</sub>
 
 **7)** — 7) heften an (loc.): *yathā puṃsaḥ striyāṃ nihanyate manaḥ* haftet an
 [AV. 6,70,1.]
@@ -22,7 +22,7 @@
 [AV. 6,70,1.]
 - **EN:** — 7) to attach to, fix upon (loc.): *yathā puṃsaḥ striyāṃ nihanyate manaḥ* is attached to
 [AV. 6,70,1.]
-  <sub>DCS 2228 · attested</sub>
+  <sub>attested</sub>
 
 **8)** — 8) senken: *pakṣau bhūmyām*
 [AV. 6,8,2.] *(hastam) tiryaṅnihatya*
@@ -37,7 +37,7 @@
 [AV. 6,8,2.] *(hastam) tiryaṅnihatya*
 [VS. PRĀT. 1,123.] *ṛjum*
 [124.]
-  <sub>DCS 2228 · attested</sub>
+  <sub>attested</sub>
 
 **9)** — 9) mit gesenktem Tone d. i. mit dem Anudātta sprechen
 [ṚV. PRĀT. 11,27.]
@@ -55,7 +55,7 @@
 [Ind. St. 4,174. 330.]
 [ĀŚV. ŚR. 7,11,5.]
 [P. 8,1,35], Schol.
-  <sub>DCS 2228 · attested</sub>
+  <sub>attested</sub>
 
 **10)** — 10) multipliciren Comm. zu [ĀRYABH. 4,25]
 u. s. w.
@@ -64,13 +64,13 @@ u. s. w.
 u. s. w.
 - **EN:** — 10) to multiply Comm. by [ĀRYABH. 4,25]
 u. s. w.
-  <sub>DCS 2228 · attested</sub>
+  <sub>attested</sub>
 
 **11)** — 11) partic. *nihata*
 
 - **RU:** — 11) partic. *nihata*
 - **EN:** — 11) partic. *nihata*
-  <sub>DCS 2228 · attested</sub>
+  <sub>attested</sub>
 
 **11a)** a) geschleudert: *vajra*
 [ṚV. 6,27,4.] niedergeschlagen: *yugāntāgni˚ (meru)*
@@ -118,7 +118,7 @@ u. s. w.
 [KATHĀS. 25,197.]
 [RĀJA-TAR. 2,94.] [4,329.] [5,335.] [414.] [434.]
 [BHĀG. P. 1,15,7.] [5,14,22.] [7,10,25.]
-  <sub>DCS 2228 · attested</sub>
+  <sub>attested</sub>
 
 **11b)** — b) zerstört, zu Grunde gerichtet, vernichtet: *tripura*
 [MBH. 3,1703.] *deśa*
@@ -148,7 +148,7 @@ u. s. w.
 [KATHĀS. 50,66.] *yogyatā*
 [Spr. (II) 6516.] *pradoṣe panthāḥ* gone, thus v. a. no longer to be seen
 [4254.]
-  <sub>DCS 2228 · attested</sub>
+  <sub>attested</sub>
 
 **11c)** — c) mit dem Anudātta gesprochen
 [Ind. St. 4,366.] Kār. 1 aus
@@ -163,7 +163,7 @@ _n._ [4.]
 [Ind. St. 4,366.] Kār. 1 out
 [SIDDH. K.] to [P. 7,2,10.] Comm. to [TS. PRĀT. 19,3.] *˚tva*
 _n._ [4.]
-  <sub>DCS 2228 · attested</sub>
+  <sub>attested</sub>
 
 **11d)** — d) fehlerhaft für *nihita*
 [R. 2,82,16] (*nihita* [ed. Bomb.]).
@@ -193,4 +193,4 @@ read)
 [MBH. 1,5792.] *nighātayiṣyanyudhi yātudhānān*
 [BHAṬṬ. 2,21.] — intens. *nighanighnat* hurling
 [ṚV. 1,55,5.]
-  <sub>DCS 2228 · attested</sub>
+  <sub>attested</sub>

@@ -13,4 +13,4 @@
 - **EN:** — *sam*
  2) the passage
 [ṚV. 5,65,6] belongs to sense 1).
-  <sub>DCS 2376 · attested</sub>
+  <sub>attested</sub>

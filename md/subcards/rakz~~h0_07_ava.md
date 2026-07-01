@@ -10,4 +10,4 @@
 [MBH. 8,2115], где, однако, вероятнее следует читать *avakṣaranto* орошающий, оскверняющий (семенем). Редкая стопа – ⏑ – –, появляющаяся при перестановке, могла способствовать сохранению простой описки.
 - **EN:** — *ava* apparently in the passage: *ramante copahāsena puruṣāḥ puruṣaiḥ saha *|* anyo'nyamavarakṣanto deśe deśe samaithunāḥ *||
 [MBH. 8,2115], where however *avakṣaranto* sprinkling, defiling (with seed) is probably to be read. The rare foot – ⏑ – – that appears upon transposition may have contributed to the preservation of the simple scribal error.
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>

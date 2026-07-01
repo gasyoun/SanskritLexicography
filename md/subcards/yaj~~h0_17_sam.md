@@ -40,7 +40,7 @@
 
 - **RU:** — Vgl. *saṃyāja, saṃyājya, samiṣṭayajus* .
 - **EN:** — Vgl. *saṃyāja, saṃyājya, samiṣṭayajus*.
-  <sub>DCS 6777 · attested</sub>
+  <sub>attested</sub>
 
 **1) совместно чтить/жертвовать богам)** — *sam* zusammen (den Göttern) huldigen, — opfern: *hotārā ṛju yakṣataḥ samṛcā*
 [ṚV. 2,3,7.] *yadbrāhmaṇāḥ saṃyajante sakhāyaḥ*
@@ -53,26 +53,26 @@
 [10,71,8.] *viśve devāḥ samayajanta*
 [TBR. 1,4,10,3.]
 [ŚAT. BR. 4,2,1,33.]
-  <sub>DCS 6777 · attested</sub>
+  <sub>attested</sub>
 
 **жертвовать (более позднее словоупотребление))** [ŚĀṄKH. ŚR. 14,29,6. 39,7.] opfern: *saṃyaṣṭuṃ (yaṣṭuṃ sa* die neuere Ausg.) *vājimedhena saṃbhārānupacakrame*
 [HARIV. 11087.] *kratubhiḥ samīje*
 
 - **RU:** [ŚĀṄKH. ŚR. 14,29,6. 39,7.] жертвовать: *saṃyaṣṭuṃ (yaṣṭuṃ sa* более новое Ausg.) *vājimedhena saṃbhārānupacakrame*
 [HARIV. 11087.] *kratubhiḥ samīje*
-  <sub>DCS 6777 · attested</sub>
+  <sub>attested</sub>
 
 **чтить кого-либо)** [BHĀG. P. 9,24,65.] Jmd huldigen: *pūjyāṃśca saṃyajet*
 [Spr. 4114],
 
 - **RU:** [BHĀG. P. 9,24,65.] чтить кого-либо: *pūjyāṃśca saṃyajet*
 [Spr. 4114],
-  <sub>DCS 6777 · attested</sub>
+  <sub>attested</sub>
 
 **совместно подносить)** v. l. zusammen darbringen: *avapruṣo vipruṣo saṃyajāmi*
 
 - **RU:** v. l. подносить совместно: *avapruṣo vipruṣo saṃyajāmi*
-  <sub>DCS 6777 · attested</sub>
+  <sub>attested</sub>
 
 **посвящать)** [TBR. 3,7,6,21.] weihen: *samayaṣṭāstramaṇḍalam*
 [BHAṬṬ. 15,96.] — caus. zusammen opfern lassen, die Patnisaṃyāja machen
@@ -85,11 +85,11 @@
 [AIT. BR. 1,11.] [3,45.]
 [TBR. 1,1,10,5.]
 [ŚAT. BR. 1,3,1,21.] [9,2,1.] [3,1,3,6.] [2,3,23.] [4,2,1,31.]
-  <sub>DCS 6777 · attested</sub>
+  <sub>attested</sub>
 
 **caus. — быть жрецом для кого-либо)** [KĀṬH. 23,9.] für Jmd (acc.) als Opferpriester thätig sein
 [MBH. 1,6375.] [12,12372.]
 
 - **RU:** [KĀṬH. 23,9.] действовать ради кого-либо (acc.) в качестве жреца-исполнителя
 [MBH. 1,6375.] [12,12372.]
-  <sub>DCS 6777 · attested</sub>
+  <sub>attested</sub>

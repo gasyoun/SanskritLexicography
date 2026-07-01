@@ -142,7 +142,7 @@
 [R. 4,29,1.] *jarāṃ praśāntidūtīmupayātām*
 [KATHĀS. 10,216.] *durmantriṇaṃ kamupayānti na nītidoṣāḥ* so v. a. to meet
 [Spr. 1195.]
-  <sub>DCS 291 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) in einen Zustand, eine Lage, ein Verhältniss kommen, — gerathen; theilhaftig werden, erlangen, finden: *mṛtyum*
 [VARĀH. BṚH. S. 69,30.] *amī ghanā vāyuvaśopayātāḥ*
@@ -274,7 +274,7 @@ wird zur Freude
 
 becomes a joy
 [Spr. 2042.]
-  <sub>DCS 291 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) inire (feminam): *anupayānpatiḥ*
 [Spr. 656], v. l. *tasmātsa yuvatīmanyāṃ nākāmāmupayāsyati*
@@ -289,10 +289,10 @@ becomes a joy
 [Spr. 656], v. l. *tasmātsa yuvatīmanyāṃ nākāmāmupayāsyati*
 [R. 7,26,55.] *adharmataścopayātā*
 [MBH. 8,2081.]
-  <sub>DCS 291 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — Vgl. *upayāna, upayāyin* .
 
 - **RU:** — Vgl. *upayāna, upayāyin* .
 - **EN:** — Vgl. *upayāna, upayāyin* .
-  <sub>DCS 291 · attested</sub>
+  <sub>attested</sub>

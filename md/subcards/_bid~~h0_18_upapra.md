@@ -10,4 +10,4 @@
 [TBR. 1,1,3,5.] [2,1,3.]
 - **EN:** — *upapra* to crumble, to strew in fragments: *tābhyaḥ sūdamupa prābhinat*
 [TBR. 1,1,3,5.] [2,1,3.]
-  <sub>DCS 1 · attested</sub>
+  <sub>attested</sub>

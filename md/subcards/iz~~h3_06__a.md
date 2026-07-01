@@ -16,4 +16,4 @@
 [ṚV. 1,184,2.] *eṣṭā rāya eṣṭā vāmāni preṣe bhagāya*
 [AIT. BR. 1,26.]
 [VS. 5,7.]
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>

@@ -7,4 +7,4 @@
 
 - **RU:** — *upasam* s. *upasaṃvāda* .
 - **EN:** — *upasam* s. *upasaṃvāda* .
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>

@@ -7,4 +7,4 @@
 
 - **RU:** *apa* s. *apajāta* .
 - **EN:** — *apa* s. *apajāta* .
-  <sub>DCS 9250 · attested</sub>
+  <sub>attested</sub>

@@ -86,7 +86,7 @@
 [BHAṬṬ. 7,69.] *pāta* сохранён u. s. w.
 [TRIK. 3,3,169.]
 [MED. t. 32.]
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) beobachten, merken, aufpassen auf; beaufsichtigen, beachten, halten, befolgen: *ke dhāsimagne anṛtasya pānti*
 [ṚV. 5,12,4.] *ukthā*
@@ -109,12 +109,12 @@
 [5,12,6.] *viṣṇurvai yajñasya duriṣṭaṃ pāti varuṇaḥ sviṣṭam*
 [AIT. BR. 3,38.] med.: *vratāni pāno amṛtasya cāruṇa ubhe nṛcakṣā anu paśyate viśau*
 [ṚV. 9,70,4.]
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>
 
 **3_anu)** — *adhi* s. *adhipa, ˚pā* .
 
 - **RU:** — *adhi* s. *adhipa, ˚pā* .
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>
 
 **4_anu_caus)** — *abhi* behüten; beobachten: *viśvānyadyajñā abhipāsi*
 [ṚV. 3,9,6.] *yo vāmadabdho abhi pāti cittibhiḥ*
@@ -127,7 +127,7 @@
 [VĀLAKH. 9,3.]
 [ṚV. 10,1,3.] *agniṣṭvābhi pātu mahyā svastyā*
 [VS. 13,19.]
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>
 
 **5_abhi)** — *ni* beschützen, behüten: *viśvebhiḥ pātu pāyubhirni sūrīn*
 [ṚV. 7,38,3.] [3,7.] *yo vanuṣyato nipāti*
@@ -150,14 +150,14 @@
 [1,73,2.] [AV. 9,10,23.] наблюдать, блюсти: *ṛtasya padaṃ kavayo ni pānti*
 [ṚV. 10,5,2.] *tāṃ dyotamānāṃ svaryaṃ manīṣāmṛtasya pade kavayo ni pānti*
 [10,177,2.]
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>
 
 **6_ava)** — *nis* behüten vor (abl.): *yenā niraṃhaso yūyaṃ pātha nethā ca martyamati dviṣaḥ*
 [ṚV. 10,126,2.] Diese Praep. scheint übrigens durch das folg. *netha* oder ein im Sinne liegendes *piparta* veranlasst zu sein.
 
 - **RU:** — *nis* оберегать от (abl.): *yenā niraṃhaso yūyaṃ pātha nethā ca martyamati dviṣaḥ*
 [ṚV. 10,126,2.] Эта Praep., впрочем, по всей видимости, обусловлена folg. *netha* или подразумевающимся в смысле *piparta*.
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>
 
 **7_pari)** — *pari* rings behüten, — beschützen, bewahren: *ubhe rodasī pari pāsato naḥ*
 [ṚV. 7,34,23.] *āyurviśvāyuḥ pari pāsati tvā*
@@ -184,16 +184,16 @@
 [DEV. 11,32.] *anuśāsanam* хранить, поддерживать
 [BHĀG. P. 1,7,53.] *dharmeṇa dharmaḥ paripāti setum*
 [3,1,36.]
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>
 
 **8_sam)** — Vgl. *paripāṇa* .
 
 - **RU:** — Vgl. *paripāṇa* .
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>
 
 **9_vi)** — *pra* behüten, bewahren vor (abl.): *kalkiḥ kaleḥ kālamalātprapātu*
 [BHĀG. P. 6,8,17.]
 
 - **RU:** — *pra* оберегать, хранить от (abl.): *kalkiḥ kaleḥ kālamalātprapātu*
 [BHĀG. P. 6,8,17.]
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>

@@ -50,7 +50,7 @@ from [SIDDH. K.] to [P. 7,2,10.] Sch. to [7,2,61. fg.]); *bhitsīṣṭa*
 ([P. 1,2,11], Sch.);
 inf. *bhettum*, ved. *bhettavai*; pass. *bhidyate, bhinna*
 ([P. 8,2,42]).
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **1)** 1) spalten, einbrechen, ein Loch in Etwas schlagen, zerschlagen, zersprengen, aufreissen, schlitzen: *puraḥ*
 [ṚV. 1,53,8.] [2,14,6.]
@@ -275,7 +275,7 @@ inf. *bhettum*, ved. *bhettavai*; pass. *bhidyate, bhinna*
 [TRIK. 3,3,250.]
 [H. 1488.]
 [an. 2,277.]
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **1-dam)** [MED. n. 14.] *setum, maryādām, velāṃ bhid* einen Damm, Schranken, das Ufer durchbrechen: *baddhaṃ setuṃ ko nu* (so ist zu lesen) *bhindyāt*
 [MBH. 2,2483.] *ambhasā bhidyate setuḥ*
@@ -371,7 +371,7 @@ inf. *bhettum*, ved. *bhettavai*; pass. *bhidyate, bhinna*
 [Spr. 5234.] *bhittvā pratijñām*
 [HARIV. 8121.] *vrataṃ bhinddhi*
 [SĀV. 4,7.]
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 ## bhid
 
@@ -427,7 +427,7 @@ P. [YĀJÑ. 2,248.] *bhinna* дробь, дробное число
 P., less than one
 P. [YĀJÑ. 2,248.] *bhinna* a fraction, a fractional number
 [COLEBR. Alg. 13.]
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) spalten so v. a. öffnen; blühen machen; pass. sich öffnen: *khānīmāni bhittvā*
 [MAITRYUP. 2,6.] *bibhide niviḍo 'pi muṣṭiḥ*
@@ -475,7 +475,7 @@ P. [YĀJÑ. 2,248.] *bhinna* a fraction, a fractional number
 [MBH. 1,7006.]
 [Spr. 2529] (Conj.). in the passage *bhinnebhamauktikāpūrṇapāṇiḥ siṃhaḥ*
 [RĀJA-TAR. 4,176] *bhinna* means, however, not "rutting" but "lacerated."
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) lösen, pass. sich lösen, aufgehen: *prasthānabhinnāṃ na babandha nīvīm*
 [RAGH. 7,9.] *tatastau tu jaṭā* (so die [ed. Bomb.] und
@@ -508,7 +508,7 @@ P. [YĀJÑ. 2,248.] *bhinna* a fraction, a fractional number
 *vacāṃsi yogagrathitāni sādho na naḥ kṣamaṃ te manasāpi bhettum* to disentangle
 [BHĀG. P. 5,10,19.] *tacchlokakūṭamadyāpi grathitaṃ sudṛḍhaṃ mune . bhettuṃ na śakyate 'rthasya gūḍhatvāt*
 [MBH. 1,82.]
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **5)** — 5) unterbrechen, stören: *tayordvāḥsthaḥ samayaṃ lakṣmaṇo 'bhinat*
 [RAGH. 15,94.] *teṣāṃ na bhinnā mudaḥ*
@@ -529,7 +529,7 @@ P. [YĀJÑ. 2,248.] *bhinna* a fraction, a fractional number
 [MBH. 13,7544. fg.] Vgl. *bhinnavṛtta*. * bhrūbhaṅgabhinnatilaka* so v. a. obliterated
 [MĀLAV. 67.]
 [DAŚAK.] in [BENF. Chr. 199,5.]
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **6)** — 6) brechen so v. a. verrathen: *bhindantyavamatā mantram*
 [M. 7,150.]
@@ -556,7 +556,7 @@ P. [YĀJÑ. 2,248.] *bhinna* a fraction, a fractional number
 [Spr. 2113.]
 [KĀM. NĪTIS. 11,53.] *na rahasyaṃ bhetsyati*
 [DAŚAK.] in [BENF. Chr. 197,20.]
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **7)** — 7) spalten, theilen so v. a. entzweien: *dūta eva hi saṃdhatte bhinattyeva ca saṃhatān . dūtastatkurute karma bhidyante yena vā na vā ..*
 [M. 7,66.] *jalavatparvatāñchatrūnbhindyādanupalakṣitaḥ*
@@ -586,7 +586,7 @@ P. [YĀJÑ. 2,248.] *bhinna* a fraction, a fractional number
 [KĀM. NĪTIS. 17,25. 19,2.] [KATHĀS. 34,210.] *dānabhinna* made to defect by gifts, bribed
 [Spr. 4956.] pass. to separate oneself from, to keep aloof from (instr.): *dveṣyairapakṣairahitaiśca tasya bhidyasva nityaṃ kuhakoddhataiśca*
 [MBH. 3,14718.]
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **8)** — 8) Jmd mit sich selbst entzweien, irre machen, umstimmen: *mahānto 'pi hi bhidyante strībhiradbhirivācalāḥ*
 [Spr. 2102.] *evaṃ viprakṛto rājanvalirbhagavatāsuraḥ . bhidyamāno 'pyabhinnātmā pratyāha*
@@ -601,7 +601,7 @@ P. [YĀJÑ. 2,248.] *bhinna* a fraction, a fractional number
 [Spr. 2102.] *evaṃ viprakṛto rājanvalirbhagavatāsuraḥ . bhidyamāno 'pyabhinnātmā pratyāha*
 [BHĀG. P. 8,22,1.] Vgl. *vāgbhirbhedyo hi kātaraḥ*
 [Spr. 199.]
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **9)** — 9) ändern; pass. sich ändern: *na — bhindanti mandāṃ gatim*
 [KUMĀRAS. 1,11.] *yathemā nadyaḥ syandamānāḥ samudrāyaṇāḥ samudraṃ prāpyāstaṃ gacchanti bhidyete tāsāṃ nāmarūpe*
@@ -643,7 +643,7 @@ P. [YĀJÑ. 2,248.] *bhinna* a fraction, a fractional number
 [MEGH. 82.] *chāyābhinnasphaṭikaviśada*
 [63.] *bhinno rāgaḥ kisalarucāmājyadhūmodgamena* ad
 [ŚĀK. 14.]
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **10)** — 10) unterscheiden, einen Unterschied machen; pass. verschieden sein. sich unterscheiden von (abl.): *ityanye bhindanti*
 [H. 309.]
@@ -715,7 +715,7 @@ Sch. *jaganmitho bhinnamabhinnamīśvarāt*
 Schol. to [P. 1,1,14.] [2,1.] [4,6.] [NĪLAK. 160.] different, so v. a. deviating from the usual, the normal: *bhinnavartman* so v. a. one who has left the right path
 [Spr. 1707.] *bhinnacāritradarśana*
 [R. GORR. 2,118,7.] Vgl. *nātibhinna*.
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 ## bhid
 
@@ -759,7 +759,7 @@ Schol.) [ŚĀK. 32.] *dṛṣṭvāṃ bhinnaṃ (= lagnaṃ* Schol.) *kuṅkuma
 [ŚIŚ. 4,26. 20,56.] *tīvrāghātādabhimukhataruskandhabhinnaikadantaḥ (bhinna* v. l. for *bhagna)* so v. a. stuck, clinging (= *lagna*
 Schol.) [ŚĀK. 32.] *dṛṣṭvāṃ bhinnaṃ (= lagnaṃ* Schol.) *kuṅkumaṃ kāpi kaṇṭhe* hanging upon, adhering
 [KUVALAY. 174,a,4.] Vgl. *bhinnāñjana*.
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 ## bhid
 
@@ -788,7 +788,7 @@ Schol.) [ŚĀK. 32.] *dṛṣṭvāṃ bhinnaṃ (= lagnaṃ* Schol.) *kuṅkuma
 [HARIV. 11905.] *anayormahānnisargopajātaḥ snehaḥ kathaṃ bhedayituṃ śakyaḥ* to destroy, dissolve
 [HIT. 67,2.] *bhedita = bhinna*
 [AK. 3,2,50.]
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **caus-2)** — 2) theilen: *ṣoḍaśabheditāḥ* sechszehnfach getheilt, in 16 Arten zerfallend
 [SĀH. D. 18,112.] Könnte auch _adj._ von *ṣoḍaśa — bheda* sein.
@@ -797,7 +797,7 @@ Schol.) [ŚĀK. 32.] *dṛṣṭvāṃ bhinnaṃ (= lagnaṃ* Schol.) *kuṅkuma
 [SĀH. D. 18,112.] Могло бы также быть _adj._ от *ṣoḍaśa — bheda*.
 - **EN:** — 2) to divide: *ṣoḍaśabheditāḥ* divided sixteenfold, falling into 16 kinds
 [SĀH. D. 18,112.] Could also be _adj._ from *ṣoḍaśa — bheda*.
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **caus-3)** — 3) entzweien mit Andern oder mit sich, Jmd irre machen, auf seine Seite hinüberziehen
 [MBH. 1,1358.] [7399.] [13,555.] [558.] *suśliṣṭānapi* (so die neuere Ausg.) *lokeṣu bhedayan*
@@ -827,7 +827,7 @@ Schol.) [ŚĀK. 32.] *dṛṣṭvāṃ bhinnaṃ (= lagnaṃ* Schol.) *kuṅkuma
 [MBH. 5,2835.]
 [R. GORR. 2,18,15.] [77,2.] *tamṛṣiṃ kauśikaṃ rambhe bhedayasva (= kāmotpādanena tapasaścālaya* Schol.) *tapasvinam* so v. a. proceed
 [R. SCHL. 1,64,7.]
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 ## bhid
 
@@ -848,12 +848,12 @@ zu durchbrechen —, zu sprengen beabsichtigen: *anīkam*
  to intend to break through, to intend to burst: *anīkam*
 [MBH. 7,1480.] [1624.]
 — Vgl. *bibhitsā* fg.
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **desid-2)** — Vgl. *bibhitsā* fg.
 
 - **RU:** — Vgl. *bibhitsā* fg.
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 ## bhid
 
@@ -864,7 +864,7 @@ zu durchbrechen —, zu sprengen beabsichtigen: *anīkam*
 
 - **RU:** — desid. от caus. s. *bibhedayiṣu* .
 - **EN:** — desid. from caus. s. *bibhedayiṣu*.
-  <sub>DCS 2113 · lexicographic</sub>
+  <sub>lexicographic</sub>
 
 ## bhid
 
@@ -893,7 +893,7 @@ Sch.
 [VOP. 20,22.] to split, to hew into repeatedly: *bhūyastaṃ bebhidāṃ cakre nakhatuṇḍāyudhaḥ khagaḥ*
 [BHAṬṬ. 5,105.] *tasyāpyabebhidiṣṭāsau mūrdhānaṃ muṣṭināṅgadaḥ*
 [15,116.]
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 ## bhid
 
@@ -913,7 +913,7 @@ Sch.
 [ŚAT. BR. 1,6,3,17.] pass. to open itself: *anvabhidyetāṃ* (v. l. *nyabhi˚) karṇau*
 [BHĀG. P. 3,26,55.] — *baddhaṃ setuṃ ko 'nubhindyāt*
 [MBH. 2,2483] erroneously for *ko nu bhi˚*.
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 ## bhid
 
@@ -927,7 +927,7 @@ Sch.
 [ṚV. 8,45,40.]
 - **EN:** — *apa* to strike off, to knock away: *bhindhi viśvā apa dviṣaḥ*
 [ṚV. 8,45,40.]
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 ## avabhid
 
@@ -956,13 +956,13 @@ Sch.
 [TS. 7,5,10,1.] *dantidantāvabhinna*
 [MBH. 6,1774.] *(agnihotram) yatrāvabhinnaṃ syāt* burst asunder
 [ŚAT. BR. 12,4,1,8.]
-  <sub>DCS 15 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — Vgl. *avabhoden* .
 
 - **RU:** — Vgl. *avabhoden* .
 - **EN:** — Vgl. *avabhoden* .
-  <sub>DCS 15 · attested</sub>
+  <sub>attested</sub>
 
 ## ābhid
 
@@ -976,7 +976,7 @@ Sch.
 [Spr. 2507.]
 - **EN:** — *ā* to slit apart, to tear asunder: *tanme varṣma nṛsiṃharājakarajairābhidyate*
 [Spr. 2507.]
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>
 
 ## udbhid
 
@@ -1059,13 +1059,13 @@ Sch.
 [AV. 9,2,2.] *jitamasmākamudbhinnamasmākam*
 [10,5,36.] [16,8,1.] [4,38,1.] [PAÑCAV. BR. 16,16,2. 3.] *anyo 'nyaśaṅkayodbhinnān — vaśamānayet* those who have come to the top
 [KĀM. NĪTIS. 17,45.]
-  <sub>DCS 78 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — Vgl. *udbhid* fg., *udbheda* fg.
 
 - **RU:** — Vgl. *udbhid* fg., *udbheda* fg.
 - **EN:** — Vgl. *udbhid* fg., *udbheda* fg.
-  <sub>DCS 78 · attested</sub>
+  <sub>attested</sub>
 
 ## prodbhid
 
@@ -1082,7 +1082,7 @@ Sch.
 - **EN:** — *prod*, partic. *prodbhinna* having shot forth, having broken out: *˚romodgamā*
 [Spr. 830.] *˚kāntidrava*
 [ŚĀK. CH. 128,18.]
-  <sub>DCS 5 · attested</sub>
+  <sub>attested</sub>
 
 ## nibhid
 
@@ -1096,7 +1096,7 @@ Sch.
 [BHĀG. P. 3,26,55.]
 - **EN:** — *ni* pass. to open (intr.): *nyabhidyetāṃ* (v. l. for *anubhi˚) karṇau*
 [BHĀG. P. 3,26,55.]
-  <sub>DCS 2 · attested</sub>
+  <sub>attested</sub>
 
 ## prānibhid
 
@@ -1110,7 +1110,7 @@ Sch.
 [P. 8,4,18], Sch.
 - **EN:** — *prani* and *praṇi, ˚bhinatti*
 [P. 8,4,18], Sch.
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>
 
 ## nirbhid
 
@@ -1227,7 +1227,7 @@ Sch.
 [20.] *nirabhidyata vai gudam*
 [3,26,56.] [SUŚR. 1,271,19.] act. in the same Bed.: *nirbibheda virājastvak*
 [BHĀG. P. 3,26,56.]
-  <sub>DCS 216 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) trennen, scheiden: *mukhatastālu nirbhinnam* trennte sich
 [BHĀG. P. 2,10,18.] *anirbhinna (brahman* und *sujanapreman)* nicht geschieden und ununterbrochen
@@ -1239,7 +1239,7 @@ Sch.
 - **EN:** — 2) to separate, to part: *mukhatastālu nirbhinnam* separated itself
 [BHĀG. P. 2,10,18.] *anirbhinna (brahman* and *sujanapreman)* not separated and uninterrupted
 [Spr. 3473.]
-  <sub>DCS 216 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) *nirbhinna* uneinig: *anyo'nyameva nirbhinnam (balam)*
 [KĀM. NĪTIS. 13,81.]
@@ -1248,7 +1248,7 @@ Sch.
 [KĀM. NĪTIS. 13,81.]
 - **EN:** — 3) *nirbhinna* at variance, disunited: *anyo'nyameva nirbhinnam (balam)*
 [KĀM. NĪTIS. 13,81.]
-  <sub>DCS 216 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) verrathen: *nirbhinnaprāyaṃ rahasyam*
 [DAŚAK.] in [BENF. Chr. 193,8.]
@@ -1257,7 +1257,7 @@ Sch.
 [DAŚAK.] в [BENF. Chr. 193,8.]
 - **EN:** — 4) to betray: *nirbhinnaprāyaṃ rahasyam*
 [DAŚAK.] in [BENF. Chr. 193,8.]
-  <sub>DCS 216 · attested</sub>
+  <sub>attested</sub>
 
 **5)** — 5) hinter Etwas kommen: *kāntakāpacāraṃ nirbhidya*
 [DAŚAK.] in [BENF. Chr. 200,20.]
@@ -1266,18 +1266,18 @@ Sch.
 [DAŚAK.] в [BENF. Chr. 200,20.]
 - **EN:** — 5) to get to the bottom of something: *kāntakāpacāraṃ nirbhidya*
 [DAŚAK.] in [BENF. Chr. 200,20.]
-  <sub>DCS 216 · attested</sub>
+  <sub>attested</sub>
 
 **nom)** — Vgl. *nirbheda* fg.
 
 - **RU:** — Vgl. *nirbheda* fg.
 - **EN:** — Vgl. *nirbheda* fg.
-  <sub>DCS 216 · attested</sub>
+  <sub>attested</sub>
 
 **intro)** — *nis*
 
 - **RU:** — *nis*
-  <sub>DCS 216 · attested</sub>
+  <sub>attested</sub>
 
 ## vinirbhid
 
@@ -1305,14 +1305,14 @@ Sch.
 [MBH. 6,2524.]
 [HARIV. 10748.] pass. to split, to open (intr.): *karṇāvasya vinirbhinnau*
 [BHĀG. P. 3,6,17.]
-  <sub>DCS 54 · attested</sub>
+  <sub>attested</sub>
 
 **2)** [HARIV. 10748.] pass. sich spalten, sich öffnen: *karṇāvasya vinirbhinnau*
 [BHĀG. P. 3,6,17.]
 
 - **RU:** [HARIV. 10748.] pass. «раскалываться, раскрываться»: *karṇāvasya vinirbhinnau*
 [BHĀG. P. 3,6,17.]
-  <sub>DCS 54 · attested</sub>
+  <sub>attested</sub>
 
 ## parābhid
 
@@ -1326,7 +1326,7 @@ Sch.
 [MBH. 7,9379.] [8,481.]
 - **EN:** — *parā* to pierce through, to wound: *śaraiścainam — parābhinat*
 [MBH. 7,9379.] [8,481.]
-  <sub>DCS 11 · attested</sub>
+  <sub>attested</sub>
 
 ## paribhid
 
@@ -1356,7 +1356,7 @@ Sch.
 
 * ca tairapi (yatnairapi* [ed. Bomb.]) *kṛtā kālena paribhidyate*
 [MBH. 13,7543.]
-  <sub>DCS 7 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) verändern, entstellen: *paribhinnasvara*
 [MBH. 12,5362.]
@@ -1365,18 +1365,18 @@ Sch.
 [MBH. 12,5362.]
 - **EN:** — 2) to alter, to disfigure: *paribhinnasvara*
 [MBH. 12,5362.]
-  <sub>DCS 7 · attested</sub>
+  <sub>attested</sub>
 
 **nom)** — Vgl. *paribhedaka* .
 
 - **RU:** — Vgl. *paribhedaka* .
 - **EN:** — Vgl. *paribhedaka* .
-  <sub>DCS 7 · attested</sub>
+  <sub>attested</sub>
 
 **intro)** — *pari*
 
 - **RU:** — *pari*
-  <sub>DCS 7 · attested</sub>
+  <sub>attested</sub>
 
 ## pra+bhid
 
@@ -1480,7 +1480,7 @@ Sch.
 [R. GORR. 2,20,4.] [6,4,10.]
 [KUMĀRAS. 5,80.]
 [Spr. 673.]
-  <sub>DCS 122 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) pass. sich spalten so v. a. sich theilen: *jaṅgamānāṃ ca sarveṣāṃ śarīre pañca dhātavaḥ . pratyekaśaḥ prabhidyante yaiḥ śarīraṃ viceṣṭate ..*
 [MBH. 12,6839.]
@@ -1489,7 +1489,7 @@ Sch.
 [MBH. 12,6839.]
 - **EN:** — 2) pass. to split (intr.), so v. a. to divide: *jaṅgamānāṃ ca sarveṣāṃ śarīre pañca dhātavaḥ . pratyekaśaḥ prabhidyante yaiḥ śarīraṃ viceṣṭate ..*
 [MBH. 12,6839.]
-  <sub>DCS 122 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) *prabhinna* entstellt, verändert, verstimmt: *na tvāṃ prabhinnaṃ (= parājitaṃ* Schol.). *jānāmi*
 [MBH. 16,259.]
@@ -1498,7 +1498,7 @@ Sch.
 [MBH. 16,259.]
 - **EN:** — 3) *prabhinna* disfigured, altered, disturbed: *na tvāṃ prabhinnaṃ (= parājitaṃ* Schol.). *jānāmi*
 [MBH. 16,259.]
-  <sub>DCS 122 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) *prabhinnāñjana* so v. a. *bhinnāñjana* mit Oel angemachte Augensalbe
 [ṚT. 2,2.]
@@ -1510,13 +1510,13 @@ Sch.
 - **EN:** — 4) *prabhinnāñjana* so v. a. *bhinnāñjana* eye-salve prepared with oil
 [ṚT. 2,2.]
 [PAÑCAR. 4,6,8.]
-  <sub>DCS 122 · attested</sub>
+  <sub>attested</sub>
 
 **nom)** — Vgl. *prabhid, prabheda* fgg.
 
 - **RU:** — Vgl. *prabhid, prabheda* fgg.
 - **EN:** — Vgl. *prabhid, prabheda* fgg.
-  <sub>DCS 122 · attested</sub>
+  <sub>attested</sub>
 
 ## upaprabhid
 
@@ -1530,7 +1530,7 @@ Sch.
 [TBR. 1,1,3,5.] [2,1,3.]
 - **EN:** — *upapra* to crumble, to strew in fragments: *tābhyaḥ sūdamupa prābhinat*
 [TBR. 1,1,3,5.] [2,1,3.]
-  <sub>DCS 1 · attested</sub>
+  <sub>attested</sub>
 
 ## saṃpra+bhid
 
@@ -1544,7 +1544,7 @@ Sch.
 [MBH. 7,1083.]
 - **EN:** — *saṃpra*, partic. *˚bhinna* of an elephant whose forehead has opened and is streaming (in the rutting season)
 [MBH. 7,1083.]
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 ## prati+bhid
 
@@ -1561,7 +1561,7 @@ Sch.
 - **EN:** — *prati*
  1) to pierce through: *kasyādya kāyaṃ pratibhidya ghorā mahīṃ pravekṣyanti śitāḥ śarāgryāḥ*
 [MBH. 3,15681.]
-  <sub>DCS 5 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) verrathen: *apratibhidya rahasyam*
 [DAŚAK.] in [BENF. Chr. 199,21.]
@@ -1570,7 +1570,7 @@ Sch.
 [DAŚAK.] in [BENF. Chr. 199,21.]
 - **EN:** — 2) to betray: *apratibhidya rahasyam*
 [DAŚAK.] in [BENF. Chr. 199,21.]
-  <sub>DCS 5 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) seinen Unwillen gegen Jmd (acc.) an den Tag legen
 [RAGH. 19,22.]
@@ -1582,7 +1582,7 @@ Sch.
 - **EN:** — 3) to manifest one's displeasure against someone (acc.)
 [RAGH. 19,22.]
 [ŚIŚ. 9,58. 10,35.]
-  <sub>DCS 5 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) *pratibhinna* wohl in unmittelbarer Berührung stehend —, eng verbunden mit (instr.): *dūrvāpravālaiḥ pratibhinnaśobham* (cujus splendor divisus est Dūrvae culminibus [ST.])
 [KUMĀRAS. 7,7.] *candreṇa nityaṃ pratibhinnamauleḥ — harasya* (cujus crista distincta est luna [ST.])
@@ -1594,13 +1594,13 @@ Sch.
 - **EN:** — 4) *pratibhinna* prob. standing in immediate contact with —, closely joined to (instr.): *dūrvāpravālaiḥ pratibhinnaśobham* (cujus splendor divisus est Dūrvae culminibus [ST.])
 [KUMĀRAS. 7,7.] *candreṇa nityaṃ pratibhinnamauleḥ — harasya* (cujus crista distincta est luna [ST.])
 [35.]
-  <sub>DCS 5 · attested</sub>
+  <sub>attested</sub>
 
 **5)** — Vgl. *pratibheda* fg.
 
 - **RU:** — Vgl. *pratibheda* fg.
 - **EN:** — Vgl. *pratibheda* fg.
-  <sub>DCS 5 · attested</sub>
+  <sub>attested</sub>
 
 ## vi+bhid
 
@@ -1695,7 +1695,7 @@ Sch.
 [RAGH. 13,29.] *sauhṛdaṃ bhid* to break friendship, med.
 [R. 4,34,84.] *premavibhinnadhairya* broken so v. a. brought to nought
 [BHĀG. P. 3,1,32.]
-  <sub>DCS 136 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) trennen: *śarīrādavibhinno 'sya gomukhastu bhaviṣyati* so v. a. nicht von seiner Seite kommend
 [KATHĀS. 34,118.] *(rājñī) abhūdavibhinnaiva bhūpateḥ*
@@ -1710,7 +1710,7 @@ Sch.
 [KATHĀS. 34,118.] *(rājñī) abhūdavibhinnaiva bhūpateḥ*
 [27,57.] [Spr. 1801.] alongside *saṃbhinna* among the Beiww. of Śiva
 [MBH. 12,10374.]
-  <sub>DCS 136 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) lösen, auseinandermachen: *āntrapāśaṃ vibhidya*
 [HARIV. 14717.] *hṛtsaṃśayabandhanaṃ me vibhettumarhasi*
@@ -1731,7 +1731,7 @@ Sch.
 [BHĀG. P. 4,11,30.] to spread apart, drive apart: *mṛdupavanavibhinnaḥ — ghanarucirakalāpaḥ*
 [VIKR. 85.] *marutā vibhinnam — abhram*
 [BHAṬṬ. 2,8.]
-  <sub>DCS 136 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) entzweien, pass. sich entzweien; part. *vibhinna* uneins, in Uneinigkeit lebend
 [VID. 62.] wo Uneinigkeit herrscht: *sthāna*
@@ -1743,7 +1743,7 @@ Sch.
 - **EN:** — 4) to set at variance, pass. to fall out with each other; part. *vibhinna* at odds, living in discord
 [VID. 62.] where discord prevails: *sthāna*
 [Spr. 2732.]
-  <sub>DCS 136 · attested</sub>
+  <sub>attested</sub>
 
 **5)** — 5) umstimmen: *vibhetsyati manāṃsyeṣām*
 [MBH. 5,124.] pass. eine Umstimmung erfahren: *paśubuddhirvibhidyate*
@@ -1761,7 +1761,7 @@ Sch.
 [BHĀG. P. 7,5,12.] *vibhinna* won over, changed in disposition
 [R. GORR. 2,28,15.] having become disloyal
 [RĀJA-TAR. 6,124.]
-  <sub>DCS 136 · attested</sub>
+  <sub>attested</sub>
 
 **6)** — 6) pass. sich ändern, eine Veränderung erfahren: *svaraścaiva vyabhidyata*
 [R. GORR. 2,36,10.] [3,29,14.] *vibhinnavarṇarahita*
@@ -1782,7 +1782,7 @@ Sch.
 [KATHĀS. 33,8.]
 [RAGH. 8,42.] *āśāvibhinna* deceived in his hope
 [Spr. 3054.]
-  <sub>DCS 136 · attested</sub>
+  <sub>attested</sub>
 
 **7)** — 7) *vibhinna* verschieden: *vibhinnau cāhiduṇḍubhau*
 [KATHĀS. 14,84.] *namo vibhinnaveśāya (viṣṇave)*
@@ -1797,7 +1797,7 @@ Sch.
 [KATHĀS. 14,84.] *namo vibhinnaveśāya (viṣṇave)*
 [PAÑCAR. 4,4,13.] [MĀRK. P. 23,84.] *˚darśin* (vgl. *bhinnadarśin*)
 [38.]
-  <sub>DCS 136 · attested</sub>
+  <sub>attested</sub>
 
 **8)** — 8) *vibhinna* vermengt mit (instr.): *vibhinnamambhojapalāśaśobhayā*
 [KIR. 4,27. 5,34.] — caus. Jmd von Jmd (abl.) entfernen, abspänstig machen
@@ -1812,13 +1812,13 @@ Sch.
 [KIR. 4,27. 5,34.] — caus. to remove someone from someone (abl.), to alienate
 [MBH. 12,4108.]
 [R. GORR. 2,6,16] ([7,18] [SCHL.]). [8,55.]
-  <sub>DCS 136 · attested</sub>
+  <sub>attested</sub>
 
 **closing)** — Vgl. *vibhettar* u. s. w.
 
 - **RU:** — Vgl. *vibhettar* u. s. w.
 - **EN:** — Vgl. *vibhettar* u. s. w.
-  <sub>DCS 136 · attested</sub>
+  <sub>attested</sub>
 
 ## pravi+bhid
 
@@ -1832,7 +1832,7 @@ Sch.
 [R. GORR. 2,76,24.]
 - **EN:** — *pravi* to tear open, wound: *pratodapravibhinnāṅga*
 [R. GORR. 2,76,24.]
-  <sub>DCS 1 · attested</sub>
+  <sub>attested</sub>
 
 ## sam+bhid
 
@@ -1870,7 +1870,7 @@ Sch.
 [Spr. 5088.]
 [MBH. 15,383.] [2,2443] (where both Ausgg. incorrectly read *asaṃbhinnārtha˚*). *saṃbhinnavṛtta* who has broken off —, abandoned his good conduct
 [12,788.]
-  <sub>DCS 85 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) zusammenbringen, in Berührung bringen, verbinden, vermengen: *na saṃbhinatti tasmādasaṃbhinnāḥ prāṇāḥ*
 [TS. 6,2,11,2.] *asaṃbhindannavadyati*
@@ -1915,7 +1915,7 @@ Sch.
 [BHAṬṬ. 7,5.] *saṃbhinno māruto yasya marmasthānāni kṛntati* so v. a. compact
 [MĀRK. P. 43,14] = [VĀYU-P.] in [Verz. d. Oxf. H. 51,b,6.] *saṃbhinna* joined alongside *vibhinna* as Beiw. Śiva's
 [MBH. 12,10374.]
-  <sub>DCS 85 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3)
 
@@ -1930,13 +1930,13 @@ sich zu Jmd (acc.) gesellen: *tataśca bhagavānasmānupekṣate na saṃbhinatt
 
 to join someone (acc.): *tataśca bhagavānasmānupekṣate na saṃbhinatti (saṃbhinanti* gedr.) *nācaṣṭhe (nā ceṣṭa* gedr.)
 [SADDH. P. 4,27,b.]
-  <sub>DCS 85 · attested</sub>
+  <sub>attested</sub>
 
 **closing)** — Vgl. *saṃbheda* .
 
 - **RU:** — Vgl. *saṃbheda* .
 - **EN:** — Vgl. *saṃbheda* .
-  <sub>DCS 85 · attested</sub>
+  <sub>attested</sub>
 
 ## anusam+bhid
 
@@ -1950,7 +1950,7 @@ to join someone (acc.): *tataśca bhagavānasmānupekṣate na saṃbhinatti (sa
 [KĀṬH. 36,7.]
 - **EN:** — *anusam* to bring together u. s. w.
 [KĀṬH. 36,7.]
-  <sub>DCS 2 · attested</sub>
+  <sub>attested</sub>
 
 ## upasam+bhid
 
@@ -1964,7 +1964,7 @@ to join someone (acc.): *tataśca bhagavānasmānupekṣate na saṃbhinatti (sa
 [LĀṬY. 5,1,4.]
 - **EN:** — *upasam* dass.
 [LĀṬY. 5,1,4.]
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 ## bhid
 
@@ -1999,7 +1999,7 @@ Sch. *iṅgudīphala˚ (upala)* breaking, crushing
 [PAÑCAR. 4,3,108.] [H. 10.] *dṛṣṭalakṣya˚* hitting, striking
 [RAGH. 1,61.] *agha˚* scattering, putting to flight
 [BHĀG. P. 3,15,23.] Vgl. *aśma˚, giri˚, gotra˚, takra˚, tamo˚, naga˚, puṭa˚, pura˚, puṣpadanta˚, pūrbhid˚, brahma˚* .
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **2a)** — 2) _f._
  a) concret Spalter, Verwunder: *bhinatpuro na bhido adevīḥ* du durchbohrtest die dämonischen Durchbohrer, wie ihre Burgen,
@@ -2011,7 +2011,7 @@ Sch. *iṅgudīphala˚ (upala)* breaking, crushing
 - **EN:** — 2) _f._
  a) concret splitter, wounder: *bhinatpuro na bhido adevīḥ* thou didst pierce the demonic piercers, as their fortresses,
 [ṚV. 1,174,8.]
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **2b)** — b) Spaltung, Scheidung
 [BHĀG. P. 6,16,47.] *bhaktyā paramayābhidā* die keine Scheidung kennt
@@ -2038,7 +2038,7 @@ Sch. *iṅgudīphala˚ (upala)* breaking, crushing
 [314.] *vṛkṣa˚*
 [349.] *karañja˚*
 [421.] [H. 780.] [807.] [898.]
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 ## bhid
 
@@ -2052,7 +2052,7 @@ Sch. *iṅgudīphala˚ (upala)* breaking, crushing
 [R. 7,23,5,8.]
 - **EN:** 1. *bhid*¦ with *abhi* pass. to burst, break asunder: *yantrasyevābhibhidyataḥ*
 [R. 7,23,5,8.]
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **revealed)** — *ud*, *vyājoktirgopanaṃ vyājādudbhinnasyāpi vastunaḥ* zum Vorschein gekommen, verrathen
 [SĀH. D. 749.]
@@ -2061,7 +2061,7 @@ Sch. *iṅgudīphala˚ (upala)* breaking, crushing
 [SĀH. D. 749.]
 - **EN:** — *ud*, *vyājoktirgopanaṃ vyājādudbhinnasyāpi vastunaḥ* having come to light, betrayed
 [SĀH. D. 749.]
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **5)** — *vi*
  5) *bṛddhānāmapi yadbuddhirbālavākyairvibhidyate*
@@ -2073,7 +2073,7 @@ Sch. *iṅgudīphala˚ (upala)* breaking, crushing
 - **EN:** — *vi*
  5) *bṛddhānāmapi yadbuddhirbālavākyairvibhidyate*
 [BHĀG. P. 10,74,31.]
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **burst)** — *pravi*, ˚*bhinna* geborsten
 [KATHĀS. 106,181.]
@@ -2082,7 +2082,7 @@ Sch. *iṅgudīphala˚ (upala)* breaking, crushing
 [KATHĀS. 106,181.]
 - **EN:** — *pravi*, ˚*bhinna* burst, cracked
 [KATHĀS. 106,181.]
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — *sam*
  2) *saṃbhinna* verbunden; davon nom. abstr. *˚tā* _f._
@@ -2094,7 +2094,7 @@ Sch. *iṅgudīphala˚ (upala)* breaking, crushing
 - **EN:** — *sam*
  2) *saṃbhinna* joined, connected; thence nom. abstr. *˚tā* _f._
 [SARVADARŚANAS. 2,14.]
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 ## bhid
 
@@ -2108,7 +2108,7 @@ Sch. *iṅgudīphala˚ (upala)* breaking, crushing
 [ŚAT. BR. 5,3,5,29.]
 - **EN:** 1. *bhid*¦ with *parā*
 [ŚAT. BR. 5,3,5,29.]
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **from_vi)** — *pra* caus. vom intens. *prabebhidayya*
 [PAT. a. a. O. 6 (4),14,a.]
@@ -2117,7 +2117,7 @@ Sch. *iṅgudīphala˚ (upala)* breaking, crushing
 [PAT. a. a. O. 6 (4),14,a.]
 - **EN:** — *pra* caus. from intens. *prabebhidayya*
 [PAT. a. a. O. 6 (4),14,a.]
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **7)** — *vi*
  7) *śrutayo vibhinnāḥ* sich widersprechend
@@ -2129,7 +2129,7 @@ Sch. *iṅgudīphala˚ (upala)* breaking, crushing
 - **EN:** — *vi*
  7) *śrutayo vibhinnāḥ* contradicting each other, mutually contradictory
 [Spr. (II) 2505.]
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 ## bhid
 
@@ -2139,497 +2139,497 @@ Sch. *iṅgudīphala˚ (upala)* breaking, crushing
 **root-header)** **1.** √*bhid*¦, *bhadati*, *bhinatti*; ausnahmsweise auch Med. (*bhindāna* [ṚV. 6,27,6]).
 
 - **RU:** **1.** √*bhid*¦, *bhadati*, *bhinatti*; в виде исключения также Med. (*bhindāna* [ṚV. 6,27,6]).
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **1)** — 1〉 spalten, einbrechen, ein Loch in Etwas schlagen, durchstechen, durchbrechen, zersprengen, aufreissen, -schlitzen. *setum*, *maryādām*, *sthitim*, *velām* einen Damm, Schranken, das Ufer durchbrechen. Ein Planet oder Komet durchbricht eines Stern, wenn er durch ihn durchgeht. Pass. *bhidyate*, *˚ti* (metrisch, aber auch bei [BAUDH.] im [Comm. zu ĀPAST. ŚR. 5,29,12]; *bhindatām* [MBH. 6,4125] fehlerhaft für *bhidyatām*) auch in intransit. Bed. bersten. *bhinna* zerschlagen, zerbrochen u. s. w.
 
 - **RU:** 1〉 расщеплять, взламывать, пробивать отверстие в чём-либо, прокалывать, прорывать, взрывать, разрывать, разрезать. *setum*, *maryādām*, *sthitim*, *velām* прорывать плотину, преграды, берег. Планета или комета «прорывает» звезду, когда проходит сквозь неё. Pass. *bhidyate*, *˚ti* (метрически, но также у [BAUDH.] в [Comm. zu ĀPAST. ŚR. 5,29,12]; *bhindatām* [MBH. 6,4125] ошибочно вместо *bhidyatām*), также в intransit. Bed. трескаться, лопаться. *bhinna* разбитый, сломанный u. s. w.
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2〉 brechen in übertr. Bed. so v. a. vertreiben, verschwinden —, zu Nichte machen; Pass. zu Nichte werden. *bhinna* zu Nichte gemacht [104,27].
 
 - **RU:** 2〉 разрушать, в übertr. Bed., то есть v. a. изгонять, рассеивать, уничтожать; Pass. быть уничтоженным. *bhinna* уничтоженный [104,27].
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3〉 spalten, so v. a. theilen; Pass. getheilt werden, sich theilen. *bhinna* getheilt auch so v. a. nicht ganz, weniger als ein.
 
 - **RU:** 3〉 расщеплять, то есть v. a. делить; Pass. быть разделённым, делиться. *bhinna* разделённый, также в значении v. a. неполный, меньше одного.
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4〉 spalten, so v. a. öffen; blühen machen; Pass. sich öffnen, freien Lauf haben (Wasser), sich ergiessen, über die Ufer treten. *bhinna* geöffnet, aufgeblüht. *˚karaṭa* oder *˚gaṇḍakaraṭa* _Adj._ von einem Elephanten, dessen Schläfen zur Brunstzeit sich geöffnet haben und fliessen; auch *bhinna* allein in derselben Bed.
 
 - **RU:** 4〉 расщеплять, то есть v. a. открывать; заставлять цвести; Pass. открываться, течь свободно (о воде), разливаться, выходить из берегов. *bhinna* открытый, расцветший. *˚karaṭa* или *˚gaṇḍakaraṭa* _Adj._ об слоне, у которого виски в период течки открылись и источают жидкость; также *bhinna* само по себе в том же значении Bed.
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **5)** — 5〉 lösen, entwirren; Pass. sich lösen, aufgehen.
 
 - **RU:** 5〉 развязывать, распутывать; Pass. развязываться, распускаться.
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **6)** — 6〉 unterbrechen, stören; nicht einhalten (die Zeit).
 
 - **RU:** 6〉 прерывать, нарушать; не соблюдать (время).
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **7)** — 7〉 brechen, so v. a. verrathen.
 
 - **RU:** 7〉 нарушать, то есть v. a. предавать.
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **8)** — 8〉 spalten, theilen, so v. a. entzweien. *bhinna* Pl. Entzweite, Zerfallene; *dāna˚* durch Geschenke abtrünnig gemacht, — bestochen.
 
 - **RU:** 8〉 раскалывать, делить, то есть v. a. вносить раздор. *bhinna* Pl. поссорившиеся, разорвавшие отношения; *dāna˚* отколотый подарками, подкупленный.
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **9)** — 9〉 Pass. sich abtheilen —, sich fernhalten von (Instr.)
 
 - **RU:** 9〉 Pass. отделяться, держаться в стороне от (Instr.)
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **10)** — 10〉 Jmd mit sich selbst entzweien, irre machen, umstimmen; nur Pass.
 
 - **RU:** 10〉 вносить раздор в душу кого-либо, смущать, переубеждать; только Pass.
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **11)** — 11〉 ändern, Pass. sich ändern. *bhinna* verändert, entstellt.
 
 - **RU:** 11〉 изменять; Pass. изменяться. *bhinna* изменённый, искажённый.
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **12)** — 12〉 unterscheiden, einen Unterschied machen; Pass. verschieden sein, sich unterscheiden von (Abl.). *bhinna* verschieden, — von (Abl. oder im Comp. vorangehend); verschieden auch so v. a. vom Gewöhnlichen —, vom Normalen abweichend.
 
 - **RU:** 12〉 различать, проводить различие; Pass. отличаться, быть отличным от (Abl.). *bhinna* отличный, — от (Abl. или в Comp. предшествующем); отличный также в значении v. a. отклоняющийся от обычного, от нормального.
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **13)** — 13〉 *bhinna* vermischt —, verbunden mit (Instr. oder im Comp. vorangehend), hängend —, haftend —, hängen geblieben an (Loc. oder im Comp. vorangehend).
 
 - **RU:** 13〉 *bhinna* смешанный, соединённый с (Instr. или в Comp. предшествующем), подвешенный, прикреплённый, застрявший на (Loc. или в Comp. предшествующем).
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **caus-header)** — Caus. *bhedayati*
 
 - **RU:** — Caus. *bhedayati*
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **caus-1)** — 1〉 spalten, brechen, zerschlagen [MBH. 3,135,52].
 
 - **RU:** 1〉 раскалывать, ломать, разбивать [MBH. 3,135,52].
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **caus-2)** — 2〉 zerstören, zu Nichte machen.
 
 - **RU:** 2〉 разрушать, уничтожать.
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **caus-3)** — 3〉 theilen. *ṣoḍaśabhedita* sechzehnfach getheilt, in 46 Arten zerfallend.
 
 - **RU:** 3〉 делить. *ṣoḍaśabhedita* разделённый на шестнадцать частей, распадающийся на 46 видов.
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **caus-4)** — 4〉 entzweien mit Andern oder mit sich, Jmd irre machen, auf seine Seite herüberziehen, verführen.
 
 - **RU:** 4〉 поссорить с другими или с самим собой, сбить с толку, переманить на свою сторону, совратить.
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **desid-header)** — Desid. *bibhitsati* zu durchbrechen —, zu sprengen beabsichtigen.
 
 - **RU:** — Desid. *bibhitsati* намереваться прорвать, намереваться взорвать.
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **intens-header)** — Desid. vom Caus. in *bibhedayiṣu*.
 
 - **RU:** — Desid. от Caus. в *bibhedayiṣu*.
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **freq-header)** — Intens. *bebhidīti*, *bebhetti* zu wiederholten Malen spalten, — einhauen in [BHAṬṬ.]
 
 - **RU:** — Intens. *bebhidīti*, *bebhetti* многократно раскалывать, рубить в [BHAṬṬ.]
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **pref-anu)** — Mit *vyati*, *˚bhinna* unzertrennlich verbunden mit (Instr.) [Comm. zu NYĀYAS. 4,2,18].
 
 - **RU:** С *vyati*, *˚bhinna* неразрывно связанный с (Instr.) [Comm. zu NYĀYAS. 4,2,18].
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **pref-ava-header)** — Mit *anu*
 
 - **RU:** С *anu*
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **pref-ava-1)** — 1〉 der Länge nach spalten, — zerschlitzen.
 
 - **RU:** 1〉 раскалывать вдоль, разрезать вдоль.
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **pref-ava-2)** — 2〉 Pass. sich öffnen. — *ko 'nubhindyāt* [MBH. 2,2483] fehlerhaft für *ko nu bhi˚*.
 
 - **RU:** 2〉 Pass. открываться. — *ko 'nubhindyāt* [MBH. 2,2483] ошибочно вместо *ko nu bhi˚*.
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **pref-abhi)** — Mit *antar* auf Verrath sinnen [DAŚAK. 19,8].
 
 - **RU:** С *antar* замышлять предательство [DAŚAK. 19,8].
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **pref-aa)** — Mit *apa* abschlagen (Feinde).
 
 - **RU:** С *apa* отражать (врагов).
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **pref-ud)** — Mit *abhi* Pass. zerspringen, zerbrechen.
 
 - **RU:** С *abhi* Pass. разрываться, разламываться.
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **pref-ni)** — Mit *ava* zerspalten, durchbohren. *avabhinna* durchbohrt, zersprungen.
 
 - **RU:** С *ava* раскалывать, пронзать насквозь. *avabhinna* пронзённый, расколовшийся.
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **pref-pari)** — Mit *ā* zerschlitzen, zerreissen.
 
 - **RU:** С *ā* разрезать на куски, разрывать.
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **pref-pra-header)** — Mit *ud*
 
 - **RU:** С *ud*
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **pref-pra-1)** — 1〉 durchbrechen, durchdringen durch (Acc.).
 
 - **RU:** 1〉 прорываться, проникать через (Acc.).
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **pref-pra-2)** — 2〉 durchdringen, obenauf kommen. *udbhinna* emporgekommen.
 
 - **RU:** 2〉 проникать, выходить наверх. *udbhinna* пробившийся наверх.
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **pref-pra-3)** — 3〉 Pass. aufspringen, bersten.
 
 - **RU:** 3〉 Pass. вскакивать, трескаться.
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **pref-pra-4)** — 4〉 Act. (nur einmal in [ŚAT. BR.]) Pass. hervorbrechen, hervorschiessen, zum Vorschein kommen. *udbhinna* hervorgebrochen, hervorgeschossen, zum Vorschein gekommen.
 
 - **RU:** 4〉 Act. (только один раз в [ŚAT. BR.]) Pass. вырываться наружу, выстреливать, появляться. *udbhinna* вырвавшийся наружу, выстреливший, появившийся.
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **pref-pra-5-header)** — 5〉 *udbhinna*
 
 - **RU:** 5〉 *udbhinna*
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **pref-pra-5a)** — a〉 verrathen.
 
 - **RU:** a〉 предавать.
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **pref-pra-5b)** — b〉 versehen —, ausgestattet mit (im Comp. vorangehend) [BHĀG. P. 3,2,5]. [PAÑCAR. 4,6,7].
 
 - **RU:** b〉 снабжённый, наделённый (в Comp. предшествующем) [BHĀG. P. 3,2,5]. [PAÑCAR. 4,6,7].
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **pref-prati-pra)** — Mit *prod*, *prodbhinna* hervorgeschossen, hervorgebrochen.
 
 - **RU:** С *prod*, *prodbhinna* выстреливший, вырвавшийся наружу.
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **pref-vi-pra)** — Mit *ni* Pass. sich öffnen.
 
 - **RU:** С *ni* Pass. открываться.
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **pref-vi-header)** — Mit *nis*
 
 - **RU:** С *nis*
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **pref-vi-1)** — 1〉 auseinanderspalten, -schlitzen, aufreissen, durchschlagen, durchschiessen, ausstechen (die Augen), verwunden: Pass. (und einmal [BHĀG. P.]) Act. sich spalten, sich öffnen. *nirbhinna* auseinandergespalten u. s. w.
 
 - **RU:** 1〉 раскалывать на части, разрезать, разрывать, прорубать, простреливать, выкалывать (глаза), ранить: Pass. (и один раз [BHĀG. P.]) Act. раскалываться, открываться. *nirbhinna* расколотый на части u. s. w.
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **pref-vi-2)** — 2〉 Oeffnungen (Acc.) bilden.
 
 - **RU:** 2〉 образовывать отверстия (Acc.).
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **pref-vi-3)** — 3〉 lösen (einen Knoten).
 
 - **RU:** 3〉 развязывать (узел).
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **pref-vi-4)** — 4〉 hinter Etwas (Acc.) kommen.
 
 - **RU:** 4〉 добираться до чего-либо (Acc.), доходить до сути.
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **pref-vi-5-header)** — 5〉 *nirbhinna*
 
 - **RU:** 5〉 *nirbhinna*
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **pref-vi-5a)** — a〉 sich abgesondert habend von (*˚tas*).
 
 - **RU:** a〉 отделившийся от (*˚tas*).
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **pref-vi-5b)** — b〉 verrathen.
 
 - **RU:** b〉 преданный, предавший.
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **pref-vi-5c)** — c〉 uneinig.
 
 - **RU:** c〉 несогласный, в разладе.
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **pref-sam-vi)** — Mit *vinis*
 
 - **RU:** С *vinis*
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **pref-sam-vi-1)** — 1〉 auseinanderspalten, aufschlitzen, durchschiessen. *vinirbhinna* durchschossen.
 
 - **RU:** 1〉 раскалывать на части, разрезать, простреливать. *vinirbhinna* простреленный.
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **pref-sam-vi-2)** — 2〉 *vinirbhinna* sich geöffnet habend.
 
 - **RU:** 2〉 *vinirbhinna* открывшийся.
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **pref-pra-vi)** — Mit *parā* durchbohren, verwunden [ŚAT. BR. 5,3,5,29].
 
 - **RU:** С *parā* пронзать, ранить [ŚAT. BR. 5,3,5,29].
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **pref-sam-header)** — Mit *pari* Pass. durchbrochen werden in übertr. Bed. *paribhinna*
 
 - **RU:** С *pari* Pass. быть прорванным в übertr. Bed. *paribhinna*
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **pref-sam-1)** — 1〉 zerspalten, zerschlagen, zersprungen, zerbröckelt.
 
 - **RU:** 1〉 расколотый, разбитый, треснувший, раскрошившийся.
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **pref-sam-2)** — 2〉 verändert, entstellt.
 
 - **RU:** 2〉 изменённый, искажённый.
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **pref-upa-header)** — Mit *pra*
 
 - **RU:** С *pra*
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **pref-upa-1)** — 1〉 spalten, zerspalten, aufreissen, durchstechen; Pass. zerspringen, zerbröckeln. *prabhinna* zerspalten, zerbrochen, durchstochen.
 
 - **RU:** 1〉 раскалывать, расщеплять, разрывать, прокалывать; Pass. разрываться, крошиться. *prabhinna* расколотый, сломанный, проколотый.
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **pref-upa-2)** — 2〉 Pass. aufgehen, sich lösen, sich öffnen. *prabhinna* aufgegangen, aufgeblüht. *˚karaṭa* und *˚karaṭāmukha* _Adj._ von einem Elephanten, dessen Schläfen sich geöffnet haben und fliessen (in der Brunstzeit).
 
 - **RU:** 2〉 Pass. раскрываться, развязываться, открываться. *prabhinna* раскрывшийся, расцветший. *˚karaṭa* и *˚karaṭāmukha* _Adj._ об слоне, у которого виски открылись и источают жидкость (в период течки).
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **pref-upa-3)** — 3〉 Pass. sich spalten, so v. a. sich theilen.
 
 - **RU:** 3〉 Pass. раскалываться, то есть v. a. делиться.
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **pref-upa-4-header)** — 4〉 *prabhinna*
 
 - **RU:** 4〉 *prabhinna*
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **pref-upa-4a)** — a〉 durch Oeffnungen hervordringend (Blut).
 
 - **RU:** a〉 сочащийся через отверстия (кровь).
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **pref-upa-4b)** — b〉 durch Oeffnungen nässend.
 
 - **RU:** b〉 увлажняющийся через отверстия.
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **pref-upa-4c)** — c〉 durchbrochen, so v. a. unterbrochen.
 
 - **RU:** c〉 прорванный, то есть v. a. прерванный.
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **pref-upa-4d)** — d〉 entstellt, verändert, verstimmt.
 
 - **RU:** d〉 искажённый, изменённый, расстроенный.
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **pref-upa-note)** — *Caus. vom Intens. *prabebhidayya*.
 
 - **RU:** *Caus. от Intens. *prabebhidayya*.
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **pref-apa)** — Mit *upapra* zerbröckeln, in Brocken hinstreuen.
 
 - **RU:** С *upapra* крошить, рассыпать кусками.
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **pref-ud-upa)** Mit *saṃpra*, *˚bhinna* von einem Elephanten, dessen Stirn sich geöffnet hat und fliesst (in der Brunstzeit).
 
 - **RU:** С *saṃpra*, *˚bhinna* об слоне, у которого лоб открылся и источает жидкость (в период течки).
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **pref-prati-header)** — Mit *prati*
 
 - **RU:** С *prati*
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **pref-prati-1)** — 1〉 durchbohren.
 
 - **RU:** 1〉 пронзать насквозь.
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **pref-prati-2)** — 2〉 verrathen.
 
 - **RU:** 2〉 предавать.
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **pref-prati-3)** — 3〉 seinen Unwillen gegen Jmd (Acc.) an den Tag legen.
 
 - **RU:** 3〉 выражать своё неудовольствие в адрес кого-либо (Acc.).
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **pref-aa2-header)** — Mit *vi*
 
 - **RU:** С *vi*
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **pref-aa2-1)** — 1〉 durchbohren, zerspalten, zerbrechen; stechen (von einem Insecte). Einen Himmelskörper spalten, so v. a. durch ihn gehen. Pass. und ausnahmsweise Act. zerbrechen, auseinanderbersten. *vibhinna* durchbohrt u. s. w.
 
 - **RU:** 1〉 пронзать, раскалывать, ломать; жалить (о насекомом). Небесное тело «раскалывать», то есть v. a. проходить сквозь него. Pass. и в виде исключения Act. ломаться, разламываться. *vibhinna* пронзённый u. s. w.
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **pref-aa2-2)** — 2〉 brechen, so v. a. zu Nichte machen. *vibhinna* zu N. gemacht.
 
 - **RU:** 2〉 нарушать, то есть v. a. уничтожать. *vibhinna* превращённый в N..
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **pref-aa2-3)** — 3〉 lösen, auseinandermachen.
 
 - **RU:** 3〉 освобождать, разъединять.
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **pref-aa2-4)** — 4〉 brechen, so v. a. verstossen gegen [BĀLAR. 74,3].
 
 - **RU:** 4〉 нарушать, то есть v. a. преступать [BĀLAR. 74,3].
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **pref-aa2-5)** — 5〉 umstimmen, Pass. eine Umstimmung erfahren. *vibhinna* umgestimmt, untreu geworden.
 
 - **RU:** 5〉 переубеждать, переманивать; Pass. подвергаться переубеждению. *vibhinna* переубеждённый, ставший неверным.
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **pref-aa2-6)** — 6〉 Pass. sich ändern, eine Veränderung erfahren. *vibhinna* verändert, entstellt.
 
 - **RU:** 6〉 Pass. изменяться, претерпевать изменение. *vibhinna* изменённый, искажённый.
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **pref-aa2-7-header)** — 7〉 *vibhinna*
 
 - **RU:** 7〉 *vibhinna*
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **pref-aa2-7a)** — a〉 geöffnet, aufgeblüht; offen und fliessend (die Stirn eines brünstigen Elephanten).
 
 - **RU:** a〉 открытый, расцветший; открытый и источающий жидкость (лоб слона в период течки).
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **pref-aa2-7b)** — b〉 auseinandergebreitet, -getrieben.
 
 - **RU:** b〉 раздвинутый, разогнанный.
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **pref-aa2-7c)** — c〉 getrennt in *a˚* ([Nachtr. 4]).
 
 - **RU:** c〉 разделённый в *a˚* ([Nachtr. 4]).
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **pref-aa2-7d)** — d〉 uneins, in Uneinigkeit lebend.
 
 - **RU:** d〉 несогласный, живущий в раздоре.
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **pref-aa2-7e)** — e〉 wo Uneinigkeit herrscht.
 
 - **RU:** e〉 там, где царит раздор.
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **pref-aa2-7f)** — f〉 sich widersprechend.
 
 - **RU:** f〉 противоречивый, противоречащий себе.
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **pref-aa2-7g)** — g〉 getäuscht in *āśā˚* in seiner Hoffnung.
 
 - **RU:** g〉 обманутый в *āśā˚* в своей надежде.
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **pref-aa2-7h)** — h〉 verschieden.
 
 - **RU:** h〉 различный, иной.
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **pref-aa2-7i)** — i〉 vermengt mit (Instr.)
 
 - **RU:** i〉 смешанный с (Instr.)
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **pref-aa2-caus)** — Caus. Jmd von Jmd (Abl.) entfernen, abspänstig machen.
 
 - **RU:** — Caus. удалять кого-либо от кого-либо (Abl.), переманивать.
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **pref-anu-aa2)** — Mit *pravi*, *˚bhinna* aufgerissen, verwundet, geborsten.
 
 - **RU:** С *pravi*, *˚bhinna* разорванный, раненый, треснувший.
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **pref-sam-header2)** — Mit *sam*
 
 - **RU:** С *sam*
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **pref-sam-1b)** — 1〉 zerspalten, zerbrechen, durchbohren, verletzen. *saṃbhinna* zerspalten u. s. w. *˚maryāda* _Adj._ der die Schranken durchbrochen hat.
 
 - **RU:** 1〉 раскалывать, ломать, пронзать, ранить. *saṃbhinna* расколотый u. s. w. *˚maryāda* _Adj._ тот, кто прорвал преграды.
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **pref-sam-2b)** — 2〉 unterbrechen, aufgeben. *saṃbhinnavṛtta* _Adj._ der seinen guten Lebenswandel verlassen hat.
 
 - **RU:** 2〉 прерывать, оставлять. *saṃbhinnavṛtta* _Adj._ тот, кто оставил добропорядочный образ жизни.
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **pref-sam-3b)** — 3〉 zusammenbringen, in Berührung bringen, verbinden, vermengen. *saṃbhinna* zusammengezogen (die Glieder einer Schildkröte), in Berührung gekommen, verbunden, dicht anliegend, compact.
 
 - **RU:** 3〉 сводить вместе, приводить в соприкосновение, соединять, смешивать. *saṃbhinna* сжатый (члены черепахи), соприкоснувшийся, соединённый, плотно прилегающий, компактный.
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **pref-sam-4b)** — 4〉 sich zu Jmd (Acc.) gesellen.
 
 - **RU:** 4〉 присоединяться к кому-либо (Acc.).
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **pref-pra-sam)** — Mit *anusam* zusammenbringen, verbinden [ĀPAST. ŚR. 3,5,2. 8,5,20].
 
 - **RU:** С *anusam* сводить вместе, соединять [ĀPAST. ŚR. 3,5,2. 8,5,20].
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **pref-final)** — Mit *upasam* dass.
 
 - **RU:** С *upasam* dass.
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 ## bhid
 
@@ -2639,52 +2639,52 @@ Sch. *iṅgudīphala˚ (upala)* breaking, crushing
 **header)** **2.** *bhid*¦
 
 - **RU:** **2.** *bhid*¦
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **1)** — 1〉 _Adj._ am Ende eines Comp.
 
 - **RU:** 1〉 _Adj._ в конце Comp.
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **1a)** — a〉 zerbrechend, zermalmend, durchbrechend, durchbohrend, treffend (ein Ziel).
 
 - **RU:** a〉 разбивающий, сокрушающий, прорывающий, пронзающий, поражающий (цель).
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **1b)** — b〉 vertreibend, zu Nichte machend.
 
 - **RU:** b〉 прогоняющий, уничтожающий.
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2〉 _f._
 
 - **RU:** 2〉 _f._
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **2a)** — a〉 Wand [ṚV. 1,174,8]. Vgl. *bhitti*.
 
 - **RU:** a〉 стена [ṚV. 1,174,8]. Vgl. *bhitti*.
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **2b)** — b〉 Spaltung, Scheidung.
 
 - **RU:** b〉 раскол, разделение.
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **2c)** — c〉 Art, Species.
 
 - **RU:** c〉 вид, разновидность.
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **addendum-pw-1-7)** **1.** √*bhid*¦ 7〉 mit *antar* Verrath schmieden [DAŚAK. 19,8].
 
 - **RU:** 1. √*bhid*¦ 7〉 с *antar* замышлять предательство [DAŚAK. 19,8].
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **addendum-pw-2-2d)** **2.** √*bhid*¦ 2〉d〉 Unterschied [VĀGBHAṬĀLAṂKĀRA 1,20] nach [AUFRECHT].
 
 - **RU:** 2. √*bhid*¦ 2〉d〉 различие [VĀGBHAṬĀLAṂKĀRA 1,20] согласно [AUFRECHT].
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **addendum-pw-1-vi-iv5)** **1.** √*bhid*¦ mit *antar* IV. 5.
 — Mit *ava* IV. *˚bhinna* verwundet [JĀTAKAM. 24,23].
@@ -2693,12 +2693,12 @@ Sch. *iṅgudīphala˚ (upala)* breaking, crushing
 - **RU:** 1. √*bhid*¦ с *antar* IV. 5.
 С *ava* IV. *˚bhinna* раненый [JĀTAKAM. 24,23].
 С *upapra* IV. Vgl. [PISCHEL, Vedische Studien 72].
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **addendum-pw-2-iv5)** **2.** √*bhid*¦ IV. 5.
 
 - **RU:** 2. √*bhid*¦ IV. 5.
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 ## bhid
 
@@ -2714,37 +2714,37 @@ Sch. *iṅgudīphala˚ (upala)* breaking, crushing
 **sch-1-antar)** 1. bhid¦ 7. mit antar Verrat schmieden, [Daśak. 19,8.]
 
 - **RU:** 1. bhid 7. mit antar — замышлять измену, [Daśak. 19,8.]
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **sch-1-ava)** Mit ava, ˚bhinna verwundet, [Jātakam. 24,23.]
 
 - **RU:** Mit ava, ˚bhinna — раненый, [Jātakam. 24,23.]
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **sch-1-samud)** Mit ˚samud, to burst forth, [Harṣac. 153,15; 167,9.]
 
 - **RU:** Mit ˚samud — прорываться наружу, [Harṣac. 153,15; 167,9.]
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **sch-1-upapra)** Mit upapra, vgl. [Pischel, Ved. Stud. I,72.]
 
 - **RU:** Mit upapra, vgl. [Pischel, Ved. Stud. I,72.]
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **sch-1-vini)** Mit ˚vini, vinibhinna [S II,267,18] Druckfehler für vinirbhinna.
 
 - **RU:** Mit ˚vini, vinibhinna [S II,267,18] — опечатка вместо vinirbhinna.
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **sch-2-unterschied)** 2. bhid¦ 2. d) Unterschied, Vāgbhaṭālaṃkāra 1,20 nach Aufrecht.
 
 - **RU:** 2. bhid 2. d) различие, Vāgbhaṭālaṃkāra 1,20 по Aufrecht.
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **sch-2-vernichtung)** ˚Vernichtung, [Sūryaś. 14]d.
 
 - **RU:** ˚уничтожение, [Sūryaś. 14]d.
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 ## bhid
 
@@ -2755,22 +2755,22 @@ Sch. *iṅgudīphala˚ (upala)* breaking, crushing
 
 - **RU:** 1. *bhid*: 7〉 с *antar* замышлять предательство [DAŚAK. 19,8].
 - **EN:** **1.** *bhid*¦ 7〉 with *antar* to plot treason [DAŚAK. 19,8].
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **2d)** **2.** *bhid*¦ 2〉d〉 Unterschied [VĀGBHAṬĀLAṂKĀRA 1,20] nach [AUFRECHT].
 
 - **RU:** 2. *bhid*: 2〉d〉 различие [VĀGBHAṬĀLAṂKĀRA 1,20] по [AUFRECHT].
 - **EN:** **2.** *bhid*¦ 2〉d〉 difference [VĀGBHAṬĀLAṂKĀRA 1,20] after [AUFRECHT].
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **pw_cross)** **1.** *bhid*¦ mit *antar* IV. 5. — Mit *ava* IV. *˚bhinna* verwundet [JĀTAKAM. 24,23]. — Mit *upapra* IV. Vgl. [PISCHEL, Vedische Studien 72].
 
 - **RU:** 1. *bhid*: с *antar* IV. 5. — С *ava* IV. *˚bhinna* раненый [JĀTAKAM. 24,23]. — С *upapra* IV. Vgl. [PISCHEL, Vedische Studien 72].
 - **EN:** **1.** *bhid*¦ with *antar* IV. 5. — With *ava* IV. *˚bhinna* wounded [JĀTAKAM. 24,23]. — With *upapra* IV. Vgl. [PISCHEL, Vedische Studien 72].
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **pw_cross2)** **2.** *bhid*¦ IV. 5.
 
 - **RU:** 2. *bhid*: IV. 5.
 - **EN:** **2.** *bhid*¦ IV. 5.
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>

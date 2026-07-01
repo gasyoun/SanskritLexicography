@@ -10,10 +10,10 @@
 [MṚCCH. 34,7.]
 - **EN:** — *pratyabhi* caus. med. to return a greeting
 [MṚCCH. 34,7.]
-  <sub>DCS 2 · attested</sub>
+  <sub>attested</sub>
 
 **caus)** — Vgl. *pratyabhivāda* fgg.
 
 - **RU:** — Vgl. *pratyabhivāda* fgg.
 - **EN:** — Vgl. *pratyabhivāda* fgg.
-  <sub>DCS 2 · attested</sub>
+  <sub>attested</sub>

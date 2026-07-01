@@ -10,4 +10,4 @@
 [KAUŚ. 68. 140.]
 - **EN:** — *pratyudā* to stride in the opposite direction
 [KAUŚ. 68. 140.]
-  <sub>DCS 1202 · attested</sub>
+  <sub>attested</sub>

@@ -19,4 +19,4 @@
  1) at the end of a comp. drinking: *amṛta˚*
 [MBH. 12,10435.] *viṣāgni˚, mṛtyu˚, kṣīra˚, madhuścyutānāmagrapāḥ, tuṣitājya˚*
 [10436.] Vgl. *agre˚, indrapātama* (with passive Bed.), *añjaspā, ṛtu˚, ṛdū˚, kīlāla˚, payaspā, pūrva˚, madhu˚, soma˚* u. s. w. and also 1. *pa* .
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>

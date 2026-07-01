@@ -13,4 +13,4 @@
 - **EN:** *pratisam*, partic. *anyo'nyapratisaṃhatau* joined with one another
 [MBH. 9,249] (*anyo'nyamabhisaṃśritau* [ed. Bomb.]). instead of *pratisaṃhata*
 [12,8275], [ed. Bomb.] reads *˚hṛta*.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>

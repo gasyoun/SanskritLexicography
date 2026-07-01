@@ -19,7 +19,7 @@
 [BHĀG. P. 10,83,29.] to lift onto one's shoulder, med.
 [30,31.] to raise aloft, so v. a. to excite in a high degree: *utsavaṃ dṛśīnāmunnayan*
 [35,23.] [Sp. 274, Z. 5] read *śayane* .
-  <sub>DCS 311 · attested</sub>
+  <sub>attested</sub>
 
 **5-del)** — 5) zu streichen, da die Stelle zu
  1) gehört: den Eiter hinausschaffend.
@@ -28,7 +28,7 @@
  1): выводящий гной.
 - **EN:** — 5) to be deleted, as the passage belongs under
  1): removing pus, discharging purulent matter.
-  <sub>DCS 311 · attested</sub>
+  <sub>attested</sub>
 
 **6)** — 6) *svarajātīramiśritāḥ . unninye*
 [BHĀG. P. 10,33,10.] *tadaiva dhruvamunninye* ebend.
@@ -37,4 +37,4 @@
 [BHĀG. P. 10,33,10.] *tadaiva dhruvamunninye* ebend.
 - **EN:** — 6) *svarajātīramiśritāḥ . unninye*
 [BHĀG. P. 10,33,10.] *tadaiva dhruvamunninye* ebend.
-  <sub>DCS 311 · attested</sub>
+  <sub>attested</sub>

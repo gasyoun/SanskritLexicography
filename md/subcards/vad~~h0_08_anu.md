@@ -58,7 +58,7 @@
 
 * laṅkā pūtakratoḥ puraḥ* Laṅkā resounded like Indra's city
 [BHAṬṬ. 8,29.]
-  <sub>DCS 54 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) act. abermals sagen, auf Etwas zurückkommen, Etwas wiederholen (um die Wichtigkeit desselben hervorzuheben)
 [ŚAṂK.] zu [CHĀND. UP. S. 54.] Comm. zu [NYĀYAS. 1,1,1. 2,1,64.] zu [JAIM. 1,23.] [BHĀG. P. 11,21,42. fg.] [KULL.] zu [M. 1,74.] [2,6.] [45.] [3,25. fg.] [6,87.] [8,409.] [SĀH. D. 215,2.]
@@ -67,7 +67,7 @@
 [ŚAṂK.] zu [CHĀND. UP. S. 54.] Comm. zu [NYĀYAS. 1,1,1. 2,1,64.] zu [JAIM. 1,23.] [BHĀG. P. 11,21,42. fg.] [KULL.] zu [M. 1,74.] [2,6.] [45.] [3,25. fg.] [6,87.] [8,409.] [SĀH. D. 215,2.]
 - **EN:** — 2) act. to say again, to return to something, to repeat something (in order to emphasise its importance)
 [ŚAṂK.] zu [CHĀND. UP. S. 54.] Comm. zu [NYĀYAS. 1,1,1. 2,1,64.] zu [JAIM. 1,23.] [BHĀG. P. 11,21,42. fg.] [KULL.] zu [M. 1,74.] [2,6.] [45.] [3,25. fg.] [6,87.] [8,409.] [SĀH. D. 215,2.]
-  <sub>DCS 54 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) schmähen: *dakṣamanūdya*
 [BHĀG. P. 4,4,24.]
@@ -76,7 +76,7 @@
 [BHĀG. P. 4,4,24.]
 - **EN:** — 3) to revile: *dakṣamanūdya*
 [BHĀG. P. 4,4,24.]
-  <sub>DCS 54 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) Jmd um ein Almosen ansprechen: *ye tvānuvādeyuravṛttikarśitāḥ*
 [MBH. 4,229.]
@@ -88,7 +88,7 @@
 - **EN:** — 4) to solicit someone for alms: *ye tvānuvādeyuravṛttikarśitāḥ*
 [MBH. 4,229.]
 [NĪLAK.] : *anuvāde 'yuḥ pūrvaṃ dehītyuktyā dattasyaiva kṣetrārāmādeḥ prativarṣaṃ punardehīti rājavacanaṃ yadadhikāriṇaṃ prati tadanuvādastannimittaṃ ye tvāṃ prati ayuḥ prāpnuyuḥ*
-  <sub>DCS 54 · attested</sub>
+  <sub>attested</sub>
 
 **caus)** — Vgl. *anuvāda* fg. — caus. ertönen —, erklingen lassen: *ātodyān*
 [HARIV. 8688.]
@@ -97,4 +97,4 @@
 [HARIV. 8688.]
 - **EN:** — Vgl. *anuvāda* fg. — caus. to cause to sound —, to cause to resound: *ātodyān*
 [HARIV. 8688.]
-  <sub>DCS 54 · attested</sub>
+  <sub>attested</sub>

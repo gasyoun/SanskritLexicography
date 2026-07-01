@@ -9,4 +9,4 @@
 **ati-pa-traenken)** — *ati* caus. in grosser Menge Jmd (acc.) Etwas (acc.) zu trinken geben: *sā madyaṃ tenātipāyitā* [KATHĀS. 39,207.]
 
 - **RU:** — *ati* caus. в большом количестве поить кого-л. (acc.) чем-л. (acc.): *sā madyaṃ tenātipāyitā* [KATHĀS. 39,207.]
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>

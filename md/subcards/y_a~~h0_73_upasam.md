@@ -10,4 +10,4 @@
 [ṚV. 6,73,1.]
 - **EN:** — *upasam* {to come together to, to come jointly to}: *asya śriyamupasaṃyāta sarve*
 [ṚV. 6,73,1.]
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>

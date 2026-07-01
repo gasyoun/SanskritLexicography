@@ -10,4 +10,4 @@
 [BHAṬṬ. 15,106.]
 - **EN:** — *prod* to fly up: *prodapāti nabhastena*
 [BHAṬṬ. 15,106.]
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>

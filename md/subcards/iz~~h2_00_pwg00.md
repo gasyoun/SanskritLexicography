@@ -33,7 +33,7 @@
 [61,13.] to escape, spring forth: *tubhyaṃ śukrāsaḥ śucayasturaṇyavo madeṣūgrā iṣaṇanta bhurvaṇyapāmiṣanta bhurvaṇi*
 [134,5.] *ṛtena dīrghamiṣaṇanta pṛkṣaḥ*
 [4,23,9.]
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) antreiben, erregen; beleben, fördern: *ūtibhistamiṣaṇo dyumnahūtau*
 [ṚV. 4,16,9.] *gātumiṣṇan*
@@ -57,11 +57,11 @@
 [AV. 8,8,14.] [15.] [11,5,1.]
 [VS. 31,22.] *prāṇā vai devā dhiṣṇyāste hi sarvā dhiya iṣṇanti*
 [ŚAT. BR. 7,1,1,24.] [3,1,23.]
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>
 
 **head)** 2. *iṣ*¦, *iṣṇāti*
 [DHĀTUP. 31,53] (*ābhīkṣṇye*). med. *iṣaṇanta*; aor. *iṣanta*; partic. *iṣṇāna* .
 
 - **RU:** 2. *iṣ*¦, *iṣṇāti*
 [DHĀTUP. 31,53] (*ābhīkṣṇye*). med. *iṣaṇanta*; aor. *iṣanta*; partic. *iṣṇāna* .
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>

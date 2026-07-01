@@ -10,4 +10,4 @@
 [BHĀG. P. 6,2,20.]
 - **EN:** — *vinis* to bring completely to a clear conclusion, to settle definitively: *evaṃ suvinirṇīya dharmaṃ bhāgavatam*
 [BHĀG. P. 6,2,20.]
-  <sub>DCS 2376 · attested</sub>
+  <sub>attested</sub>

@@ -10,4 +10,4 @@
 [SĀH. D. 308,5.]
 - **EN:** *vyapa* "to ward off, prevent": *na samāsoktibuddhiṃ vyapahantumīśaḥ*
 [SĀH. D. 308,5.]
-  <sub>DCS 2 · attested</sub>
+  <sub>attested</sub>

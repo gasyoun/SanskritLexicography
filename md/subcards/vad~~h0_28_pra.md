@@ -81,7 +81,7 @@
 [MBH. 3,5012.] [8146.] [15641.]
 [R. 5,52,18.] *pravadati bharatastāṃ nāyikāṃ vipralabdhām* Comm. with [GĪT. 7,2.]
 [ŚRUT. 43]. Kār. 1, from [KĀŚ.] to [P. 7,2,10.] [Spr. 1771.] [2273.] [2295.] [2377.] [3957.] [4923.] [VARĀH. BṚH. S. 15,29.] [68,114.] [88,32.] [BHĀG. P. 3,25,31.] [PAÑCAR. 1,1,44.]
-  <sub>DCS 176 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — Vgl. *pravada* fgg., *pravāda, pravādin* . — caus. ertönen lassen, spielen (ein musikalisches Instrument): *vīṇām*
 [ŚĀṄKH. ŚR. 17,14,8.] *pravāditaiśca vāditraiḥ*
@@ -102,18 +102,18 @@
 [HARIV. 12006.] *gandharvān — supravāditān* making music beautifully
 [11792.] st. *śaṅkhāṃśca mṛdaṅgāṃśca pravādyanti*
 [MBH. 12,1899] is probably to be read *śaṅkhāśca mṛdaṅgāśca pra˚*.
-  <sub>DCS 176 · attested</sub>
+  <sub>attested</sub>
 
 **caus)** — Vgl. *pravādaka* .
 
 - **RU:** — Vgl. *pravādaka* .
 - **EN:** — Vgl. *pravādaka*.
-  <sub>DCS 176 · attested</sub>
+  <sub>attested</sub>
 
 **header)** — *pra*
 
 - **RU:** — *pra*
-  <sub>DCS 176 · attested</sub>
+  <sub>attested</sub>
 
 **1) heraussagen, reden, sprechen; aussagen, ansagen, verkünden)** 1) heraussagen, reden, sprechen; aussagen, ansagen, verkünden: *pravadatāṃ śreṣṭhaḥ*
 [HARIV. 5927.] [7036.]
@@ -172,4 +172,4 @@
 [ŚVETĀŚV. UP. 3,21.]
 [Spr. 2843.] *ye 'pyaṅganānāṃ pravadanti doṣān*
 [VARĀH. BṚH. S. 74,5.]
-  <sub>DCS 176 · attested</sub>
+  <sub>attested</sub>

@@ -163,7 +163,7 @@ u. s. w. [11,40.] *parahitam*
 [544.] so v. a. to hinder, prevent
 [RĀJA-TAR. 5,253.] *vighnaiḥ sahasraguṇitairapi hanyamānāḥ*
 [Spr. (II) 4342], v. l.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) (die Trommel) schlagen
 [AV. 20,132,9.]
@@ -187,7 +187,7 @@ u. s. w. [11,40.] *parahitam*
 [BHĀG. P. 7,8,36] (pass.).
 [PAÑCAT. 21,2.] [10]; vgl. *bherīghnant* . (a liquid) to beat, churn: *hanyādyāvadghanatvaṃ samupāgatam*
 [VARĀH. BṚH. S. 55,25.]
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) ein Geschoss werfen auf (gen.): *jahi vadharvanuṣo martyasya*
 [ṚV. 4,22,9.] [7,25,3]; vgl. unter *nis* .
@@ -196,7 +196,7 @@ u. s. w. [11,40.] *parahitam*
 [ṚV. 4,22,9.] [7,25,3]; vgl. под *nis* .
 - **EN:** — 4) to hurl a missile at (gen.): *jahi vadharvanuṣo martyasya*
 [ṚV. 4,22,9.] [7,25,3]; vgl. under *nis* .
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **5)** — 5) an sich unterdrücken, aufgeben, fahren lassen: *vyathāṃ jahi*
 [MBH. 1,6145.] *jahi saṃtāpamātmanaḥ*
@@ -226,7 +226,7 @@ u. s. w. [11,40.] *parahitam*
 [Spr. (II) 2597.] *vaiklavyam*
 [BHĀG. P. 1,13,42.] *āsuraṃ bhāvam*
 [7,8,10.] the conjecture lies near that this *jahi* stands for *jahihi* (from *hā*).
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **6)** — 6) partic. *hata*
 
@@ -310,7 +310,7 @@ u. s. w. [11,40.] *parahitam*
 [Spr. (II) 567]; vgl. [3902.] *śarajjyotsnāhate tamasi*
 [6413.] [VARĀH. BṚH. S. 43,33.] insbes. at the beginning of a adj. comp.: *˚kaṇṭaka*
 [MBH. 3,3049.] *˚kilbiṣa*
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **6a)** a) geschlagen; getroffen, erschlagen, vernichtet
 [ṚV. 1,104,3.] [10,86,18.] [113,7.]
@@ -469,4 +469,4 @@ u. s. w. [11,40.] *parahitam*
 [Spr. (II) 567]; vgl. [3902.] *śarajjyotsnāhate tamasi*
 [6413.] [VARĀH. BṚH. S. 43,33.] insbes. в начале adj. comp.: *˚kaṇṭaka*
 [MBH. 3,3049.] *˚kilbiṣa*
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>

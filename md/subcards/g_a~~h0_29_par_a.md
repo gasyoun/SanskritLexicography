@@ -16,4 +16,4 @@
 [ṚV. 1,164,17.] *tiṣṭhā su kaṃ maghavanmā parā gāḥ*
 [3,53,2.] *apānaḥ*
 [AV. 7,53,4.]
-  <sub>DCS 4 · attested</sub>
+  <sub>attested</sub>

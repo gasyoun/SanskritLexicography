@@ -57,7 +57,7 @@
 [6,17,1.] *sūtvā*
 [KĀŚ.] к [P. 7,2,44.] [TS. 2,1,5,4.] partic. *sūta, suta* (s. особо; лишь ввиду *suta* и *suṣuti* оправдано допущение *su* с кратким *u*) и *sūna*
 ([P. 8,2,45.] [VOP. 26,88. fg.]).
-  <sub>DCS 14088 · attested</sub>
+  <sub>attested</sub>
 
 **рождать/производить)** zeugen, gebären
 [ṚV. 1,135,8.] [164,17.] [168,9.] *nārī naryaṃ susāva*
@@ -80,7 +80,7 @@
 [AV. 2,36,3.] высиживать (о птицах)
 [ṚV. 1,164,22.] pass. вероятно сюда же: *asāvanyo asura sūyata dyauḥ*
 [10,132,4.]
-  <sub>DCS 14088 · attested</sub>
+  <sub>attested</sub>
 
 **поздняя речь — рождать (PPP))** — In der späteren Sprache meist in der Bed. gebären: *āyuṣmantaṃ sutaṃ sūte*
 [M. 3,263.] [9,9.] [10,39.]
@@ -173,22 +173,22 @@
 [MED. t. 72. fg.] *sūtā* отелившаяся
 [M. 8,242.] *vanye sattve sūte* когда дикий зверь принёс детёнышей
 [VARĀH. BṚH. S. 91,3.]
-  <sub>DCS 14088 · attested</sub>
+  <sub>attested</sub>
 
 **Nachtr.1)** — Vgl. *savitrī* .
 
 - **RU:** — Vgl. *savitrī* .
-  <sub>DCS 14088 · attested</sub>
+  <sub>attested</sub>
 
 **Nachtr.2)** — *nis* vgl. *niḥṣūti* .
 
 - **RU:** — *nis* vgl. *niḥṣūti* .
-  <sub>DCS 14088 · attested</sub>
+  <sub>attested</sub>
 
 **Nachtr.3-intro)** — *pra*
 
 - **RU:** — *pra*
-  <sub>DCS 14088 · attested</sub>
+  <sub>attested</sub>
 
 **Nachtr.3-1)** 1) gebären: *prasūte sma sutam*
 [KATHĀS. 39,19.] [56,287.]
@@ -241,7 +241,7 @@ Schol. к [P. 5,2,12.] *prasūyante mithunānyeva tāḥ*
 [ŚĀK. 94.] [95], v. l.
 [KATHĀS. 14,38.]
 [PRAB. 11,10.] *prasotum*
-  <sub>DCS 14088 · attested</sub>
+  <sub>attested</sub>
 
 **Nachtr.3-erzeugen)** [BHAṬṬ. 1,13.] erzeugen: *prasūyate*
 [M. 10,27.] [30. fg.] *anena prasaviṣyadhvam* Nachkommenschaft haben
@@ -274,4 +274,4 @@ Schol. к [P. 5,2,12.] *prasūyante mithunānyeva tāḥ*
 
 *phalaṃ prasūya*
 [Spr. (II) 5426.]
-  <sub>DCS 14088 · attested</sub>
+  <sub>attested</sub>

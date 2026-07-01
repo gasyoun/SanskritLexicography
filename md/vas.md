@@ -1,6 +1,6 @@
 # vas
 
-_PWG article — 66 sub-card(s), 446 sense(s) · RU 154/446 · EN 418/446_
+_PWG article — 66 sub-card(s), 464 sense(s) · RU 258/464 · EN 418/464_
 
 ## vas
 
@@ -2547,7 +2547,7 @@ v. l.).
 [ŚAT. BR. 2,6,2,7.]
   <sub>DCS 2546 · attested</sub>
 
-## upavas
+## upa-vas
 
 `vas~~h4_16_upa`
 
@@ -2561,6 +2561,8 @@ v. l.).
 [TS. 1,6,7,3.] *yajñamevārabhya gṛhītvopavasati*
 [6,4,2,1.] [ŚAT. BR. 3,6,1,26.] *yatte vayaṃ paśyanta upavasāva* dessen Erscheinen sehend wir bei dir bleiben wollen
 [8,1,1,3.]
+
+- **RU:** 1) пребывать при (при, acc.), ждать, выжидать: *devāsurā yajñamupāvasannasmabhyamanuvakṣyatyasmabhyamiti* [AIT. BR. 2,15.] *āgnīdhre* [36.] *gṛheṣu* [ŚAT. BR. 1,1,1,7.] *āśitā evādyopavasāma . kasya vāhedam . kasya vā śvo bhaviteti* «мы хотим подождать, кому сегодня или завтра это будет принадлежать», [TBR. 1,6,6,4.] *upāsmiṃ chvo yakṣyamāṇe devatā vasanti* [TS. 1,6,7,3.] *yajñamevārabhya gṛhītvopavasati* [6,4,2,1.] [ŚAT. BR. 3,6,1,26.] *yatte vayaṃ paśyanta upavasāva* «видя его появление, мы хотим остаться при тебе» [8,1,1,3.]
 - **EN:** — *upa*
  1) to remain with, stay by (acc.), to wait, to wait for: *devāsurā yajñamupāvasannasmabhyamanuvakṣyatyasmabhyamiti*
 [AIT. BR. 2,15.] *āgnīdhre*
@@ -2570,6 +2572,7 @@ v. l.).
 [TS. 1,6,7,3.] *yajñamevārabhya gṛhītvopavasati*
 [6,4,2,1.] [ŚAT. BR. 3,6,1,26.] *yatte vayaṃ paśyanta upavasāva* "seeing whose appearance we wish to remain with you"
 [8,1,1,3.]
+  <sub>attested</sub>
 
 **2)** — 2) (mit Essen zuwarten) sich enthalten, fasten
 [P. 1,4,48], Vārtt. mit acc. der Speise oder der Zeitdauer: *yadgrāmyānupavasati*
@@ -2613,6 +2616,49 @@ v. l.).
 [Spr. 4455.]
 [MĀRK. P. 16,61.] *upoṣya* in Fasten zuzubringen
 [WEBER, KṚṢṆAJ. 227. fg.]
+
+- **RU:** 2) (воздерживаясь от еды) поститься, воздерживаться, поститься
+[P. 1,4,48], Vārtt. с acc. обозначением пищи или срока: *yadgrāmyānupavasati*
+[TS. 1,6,7,3.] *paurṇamāsena*
+[ŚAT. BR. 1,6,3,31. fgg.] *tadahaḥ*
+[11,1,1,4.] *trirātram*
+[ŚĀṄKH. GṚHY. 5,1. 10.]
+
+*paurṇamāsīm*
+[KĀTY. ŚR. 2,1,1.]
+[ĀŚV. GṚHY. 1,9,3. 13,2.] *trirātropoṣita*
+[GOBH. 4,8,13.]
+[KAUŚ. 94. 140.] *upavatsyadbhukta*
+[1. 8.] med. [ŚĀṄKH. GṚHY. 2,12.] — *upavaseddinam*
+[M. 2,220.] [5,20.] [11,157.] [213.] [259.]
+[YĀJÑ. 3,292.]
+[MBH. 15,126.]
+[R. GORR. 1,45,1.]
+[VARĀH. BṚH. S. 105,8.]
+[BHĀG. P. 7,12,5.] [WEBER, KṚṢṆAJ. 226.] *trirātramupoṣya*
+[YĀJÑ. 3,264.]
+[MBH. 3,4060.] [5092.]
+[Spr. 4494.]
+[VARĀH. BṚH. S. 26,11.]
+[KATHĀS. 93,82.]
+[BHĀG. P. 4,8,71.] [8,9,14.] *upoṣita* «постившийся, натощак»
+[YĀJÑ. 2,97.]
+[MBH. 13,3259.] [3264.] [3267.] [3276.]
+[HARIV. 7602.]
+[RAGH. 16,39.]
+[KATHĀS. 33,156.] [42,173.]
+[PAÑCAT. 199,12.] *tattīropoṣita*
+[KATHĀS. 46,107.] *taṃ dvādaśāhamupoṣitam*
+[114,48.] [115,141.] *trirātropoṣita*
+[YĀJÑ. 3,302.]
+[MBH. 3,4086.]
+[KATHĀS. 19,6.] [21,143.]
+[RĀJA-TAR. 4,100.] *upoṣitābhyāmiva locanābhyām*
+[RAGH. 2,19.] с pass. Bed. «проведённый в посте»: *tithi*
+[WEBER, KṚṢṆAJ. 222.] _n._ «пост»
+[Spr. 4455.]
+[MĀRK. P. 16,61.] *upoṣya* «провести в посте»
+[WEBER, KṚṢṆAJ. 227. fg.]
 - **EN:** — 2) (to wait with regard to food) to abstain, to fast
 [P. 1,4,48], Vārtt. with acc. of the food or of the duration of time: *yadgrāmyānupavasati*
 [TS. 1,6,7,3.] *paurṇamāsena*
@@ -2655,36 +2701,52 @@ v. l.).
 [Spr. 4455.]
 [MĀRK. P. 16,61.] *upoṣya* to be spent in fasting
 [WEBER, KṚṢṆAJ. 227. fg.]
+  <sub>attested</sub>
 
 **3)** — 3) beziehen, zum Aufenthaltsort erwählen; mit acc.
 [P. 1,4,48.] *grāmam*
 Schol. *vikuṇṭham*
 [VOP. 5,2.]
+
+- **RU:** 3) поселяться, избирать местом пребывания; с acc. [P. 1,4,48.] *grāmam* Schol. *vikuṇṭham* [VOP. 5,2.]
 - **EN:** — 3) to take up residence in, to choose as one's dwelling-place; with acc.
 [P. 1,4,48.] *grāmam*
 Schol. *vikuṇṭham*
 [VOP. 5,2.]
+  <sub>attested</sub>
 
 **4)** — 4) sich zu Jmd (acc.) in die Lehre begeben
 [MBH. 5,2177.]
+
+- **RU:** 4) отправляться к кому-л. (acc.) в обучение
+[MBH. 5,2177.]
 - **EN:** — 4) to place oneself under someone (acc.) as a pupil, to enter into instruction with someone
 [MBH. 5,2177.]
+  <sub>attested</sub>
 
 **5)** — 5) antreten, sich widmen, obliegen: *tapaḥśraddhe ye hyupavasanti*
 [MUṆḌ. UP. 1,2,11.] *vanavāsamupāvasat*
 [MBH. 13,205] nach der Lesart der [ed. Bomb.] *udāvasat* [ed. Calc.] *kimicchakamupoṣitā*
 [MĀRK. P. 126,17.] [19.]
+
+- **RU:** 5) приступать, посвящать себя, исполнять: *tapaḥśraddhe ye hyupavasanti* [MUṆḌ. UP. 1,2,11.] *vanavāsamupāvasat* [MBH. 13,205] по чтению [ed. Bomb.] *udāvasat* [ed. Calc.] *kimicchakamupoṣitā* [MĀRK. P. 126,17.] [19.]
 - **EN:** — 5) to take up, to devote oneself to, to undertake: *tapaḥśraddhe ye hyupavasanti*
 [MUṆḌ. UP. 1,2,11.] *vanavāsamupāvasat*
 [MBH. 13,205] according to the reading of the [ed. Bomb.] *udāvasat* [ed. Calc.] *kimicchakamupoṣitā*
 [MĀRK. P. 126,17.] [19.]
+  <sub>attested</sub>
 
 **6 (textual note))** — 6) *upavasita*
 [ĀŚV. GṚHY. 1,14,7] bei [ST.] fehlerhaft für *upāvasita* (von *sā* mit *upā)*, wie eine von uns verglichene Hdschr. liest; vgl.
 [ŚAT. BR. 3,9,2,8.] Andere schreiben ganz falsch *upavasathā*, die Ausg. der Bibl. ind. *upavasithā* .
+
+- **RU:** 6) *upavasita*
+[ĀŚV. GṚHY. 1,14,7] у [ST.] ошибочно вместо *upāvasita* (от *sā* с *upā)*, как читает сличённая нами Hdschr.; vgl.
+[ŚAT. BR. 3,9,2,8.] Другие пишут совершенно неверно *upavasathā*, Ausg. Bibl. ind. *upavasithā*.
 - **EN:** — 6) *upavasita*
 [ĀŚV. GṚHY. 1,14,7] in [ST.] erroneously for *upāvasita* (from *sā* with *upā)*, as a Hdschr. we compared reads; vgl.
 [ŚAT. BR. 3,9,2,8.] Others write quite incorrectly *upavasathā*, the Ausg. of the Bibl. ind. *upavasithā* .
+  <sub>lexicographic</sub>
 
 **caus. intro)** — Vgl. *upavasatha, upavastar, upavāsa, upavāsin, upoṣaṇa* fg. — caus.
 - **EN:** — Vgl. *upavasatha, upavastar, upavāsa, upavāsin, upoṣaṇa* fg. — caus.
@@ -2698,12 +2760,27 @@ Schol. *vikuṇṭham*
 [PĀR. GṚHY. 1,14.]
 [R. 2,5,4] ([4,4] [GORR.]). *atithiṃ nopavāsayet*
 [MBH. 12,7046] = [13,7576.]
+
+- **RU:** 2) заставлять поститься
+[PĀR. GṚHY. 1,14.]
+[R. 2,5,4] ([4,4] [GORR.]). *atithiṃ nopavāsayet*
+[MBH. 12,7046] = [13,7576.]
 - **EN:** — 2) to cause to fast
 [PĀR. GṚHY. 1,14.]
 [R. 2,5,4] ([4,4] [GORR.]). *atithiṃ nopavāsayet*
 [MBH. 12,7046] = [13,7576.]
+  <sub>attested</sub>
 
-## samupavas
+**causative-1)** — Vgl. *upavasatha, upavastar, upavāsa, upavāsin, upoṣaṇa* fg. — caus.
+ 1) warten —, eine Zeit zubringen lassen
+[TS. 6,3,2,3.]
+
+- **RU:** — Vgl. *upavasatha, upavastar, upavāsa, upavāsin, upoṣaṇa* fg. — caus.
+1) заставлять ждать —, давать провести время
+[TS. 6,3,2,3.]
+  <sub>attested</sub>
+
+## sam-upa-vas
 
 `vas~~h4_17_samupa`
 
@@ -2713,16 +2790,27 @@ Schol. *vikuṇṭham*
 [MBH. 13,3273.]
 [VARĀH. BṚH. S. 105,16.]
 [BHĀG. P. 9,4,30.]
+
+- **RU:** — *samupa*
+ 1) поститься: *samupoṣita* тот, кто постился / соблюдавший пост
+[MBH. 13,3273.]
+[VARĀH. BṚH. S. 105,16.]
+[BHĀG. P. 9,4,30.]
 - **EN:** — *samupa*
  1) to fast: *samupoṣita* having fasted
 [MBH. 13,3273.]
 [VARĀH. BṚH. S. 105,16.]
 [BHĀG. P. 9,4,30.]
+  <sub>attested</sub>
 
 **2)** — 2) antreten, obliegen: *tadvrataṃ samupoṣitā*
 [MĀRK. P. 126,9.]
+
+- **RU:** — 2) приступать (к чему-л.), брать на себя (обязанность): *tadvrataṃ samupoṣitā*
+[MĀRK. P. 126,9.]
 - **EN:** — 2) to take up, to undertake: *tadvrataṃ samupoṣitā*
 [MĀRK. P. 126,9.]
+  <sub>attested</sub>
 
 ## nivas
 
@@ -3812,6 +3900,29 @@ Z. 2 add *vasiṣṭa*
 **2)** 2) gehört zu 2. *vas:* die Nacht hell werden lassen so v. a. bis Tagesanbruch erzählen.
 - **EN:** 2) belongs to 2. *vas:* "to make the night grow bright", thus v. a. "to tell until daybreak".
 
+**5)** 5. *vas*¦
+ 1) *kriyāsiddhiḥ sattve vasati mahatāṃ nopakaraṇe* beruht auf
+[Spr. (II) 5712] = [6145.]
+— *adhi* caus.
+ 2) zu streichen; vgl. *vāsay* mit *adhi* .
+— *ni*
+ 1) *tadapi surāṇāṃ cetasi nivasitamiva pārijātena* hat seinen Sitz aufgeschlagen
+[Z. d. d. m. G. 27,82.]
+— *vi* caus.
+ 2) gehört zu 2. *vas:* die Nacht hell werden lassen so v. a. bis Tagesanbruch erzählen.
+
+- **RU:** 5. *vas*¦
+ 1) *kriyāsiddhiḥ sattve vasati mahatāṃ nopakaraṇe* основано на
+[Spr. (II) 5712] = [6145.]
+— *adhi* caus.
+ 2) вычеркнуть; vgl. *vāsay* с *adhi* .
+— *ni*
+ 1) *tadapi surāṇāṃ cetasi nivasitamiva pārijātena* разбил свой стан / расположился станом
+[Z. d. d. m. G. 27,82.]
+— *vi* caus.
+ 2) относится к 2. *vas:* сделать ночь светлой так v. a. рассказывать до наступления дня.
+  <sub>mixed</sub>
+
 ## vas
 
 `vas~~h0_zz_pw00`
@@ -4278,28 +4389,52 @@ Z. 2 add *vasiṣṭa*
 
 
 **4)** — 4〉 sich dauernd in einer Lage befinden, sich unterziehen; mit Acc.
+
+- **RU:** 4) постоянно находиться в каком-либо положении, подвергаться; с Acc.
 - **EN:** — 4) to remain permanently in a position, to be, to undergo; with Acc.
+  <sub>attested</sub>
 
 **5)** — 5〉 *na me vairo nivasate* [HARIV. 6049] fehlerhaft für *na me vairaṃ pravasati*.
+
+- **RU:** 5) *na me vairo nivasate* [HARIV. 6049] ошибочно вместо *na me vairaṃ pravasati*.
 - **EN:** — 5) *na me vairo nivasate* [HARIV. 6049] erroneous for *na me vairaṃ pravasati*.
+  <sub>attested</sub>
 
 **caus_intro)** — Caus.
+
+- **RU:** — Caus.
 - **EN:** — Caus.
+  <sub>attested</sub>
 
 **caus_1)** — 1〉 verweilen lassen, beherbergen, aufnehmen (in seinem Hause).
+
+- **RU:** 1) давать пристанище, приютить, принимать (в своём доме).
 - **EN:** — 1) to let dwell, to lodge, to receive (into one's house).
+  <sub>attested</sub>
 
 **caus_2)** — 2〉 bewohnt machen, bevölkern.
+
+- **RU:** 2) заселять, населять.
 - **EN:** — 2) to make inhabited, to populate.
+  <sub>attested</sub>
 
 **caus_3)** — 3〉 zur Wohnstatt wählen, bewohnen.
+
+- **RU:** 3) избирать местом жительства, обитать в.
 - **EN:** — 3) to choose as a dwelling-place, to inhabit.
+  <sub>attested</sub>
 
 **caus_4)** — 4〉 setzen auf (Loc.).
+
+- **RU:** 4) сажать на (Loc.).
 - **EN:** — 4) to set upon (Loc.).
+  <sub>attested</sub>
 
 **caus_anu)** — Mit *adhini* zur Wohnstatt wählen.
+
+- **RU:** — С *adhini*: избирать местом жительства.
 - **EN:** — With *adhini* to choose as a dwelling-place.
+  <sub>attested</sub>
 
 **caus_sam_intro)** — Mit *saṃni*
 - **EN:** — With *saṃni*
@@ -4308,22 +4443,40 @@ Z. 2 add *vasiṣṭa*
 - **EN:** — 1) to dwell together, — to live with (Instr.). *samāgame* to live in association with (Gen.).
 
 **caus_sam_2)** — 2〉 wohnen in (Loc.).
+
+- **RU:** 2) обитать в (Loc.).
 - **EN:** — 2) to dwell in (Loc.).
+  <sub>attested</sub>
 
 **caus_aa_su)** — Mit *nis* ausleben, zu Ende leben; mit dem Acc. *vāsam* oder *˚vāsam* [MBH. 3,25,18].
+
+- **RU:** — С *nis*: дожить до конца, прожить до конца; с Acc. *vāsam* или *˚vāsam* [MBH. 3,25,18].
 - **EN:** — With *nis* to live out, to live to the end; with the Acc. *vāsam* or *˚vāsam* [MBH. 3,25,18].
+  <sub>attested</sub>
 
 **caus_nis_intro)** — Caus.
+
+- **RU:** — Caus.
 - **EN:** — Caus.
+  <sub>attested</sub>
 
 **caus_nis_1)** — 1〉 aus seinem Wohnorte vertreiben, vertreiben, verbannen, — aus (Abl.), in (Acc.), zu (Dat. eines Nom. act.).
+
+- **RU:** 1) изгонять из места жительства, изгонять, ссылать, — из (Abl.), в (Acc.), к (Dat. Nom. act.).
 - **EN:** — 1) to drive out of one's dwelling-place, to expel, to banish, — from (Abl.), into (Acc.), to (Dat. of a Nom. act.).
+  <sub>attested</sub>
 
 **caus_nis_2)** — 2〉 entlassen.
+
+- **RU:** 2) отпускать, увольнять.
 - **EN:** — 2) to dismiss.
+  <sub>attested</sub>
 
 **caus_nis_3)** — 3〉 sich vertreiben, zubringen, verleben.
+
+- **RU:** 3) проводить, коротать (время).
 - **EN:** — 3) to drive away the time for oneself, to pass, to spend (time).
+  <sub>attested</sub>
 
 **upa_sam_intro)** — Mit *pari*
 - **EN:** — With *pari*
@@ -4332,19 +4485,34 @@ Z. 2 add *vasiṣṭa*
 - **EN:** — 1) to dwell, to live with (Instr.). *saṃsargitayā* to associate with (Acc.).
 
 **upa_sam_2_intro)** — 2〉 *paryuṣita*
+
+- **RU:** 2) *paryuṣita*
 - **EN:** — 2) *paryuṣita*
+  <sub>attested</sub>
 
 **upa_sam_2a)** — a〉 übernachtet habend.
+
+- **RU:** a) проведший ночь.
 - **EN:** — a) having spent the night.
+  <sub>attested</sub>
 
 **upa_sam_2b)** — b〉 über Nacht gelegen, — gestanden, gestrig ([GAUT.]), überh. abgestanden, alt, verdorben (von Speisen und andern Stoffen); auch in Comp. mit der Zeitdauer oder mit dem Stoffe, in dem Etwas gelegen hat.
+
+- **RU:** b) пролежавший ночь, — простоявший, вчерашний ([GAUT.]), überh. несвежий, старый, испортившийся (о пище и других веществах); также в Comp. с указанием продолжительности времени или вещества, в котором что-либо пролежало.
 - **EN:** — b) having stood overnight, — having lain, of yesterday ([GAUT.]), überh. stale, old, spoiled (of food and other substances); also in Comp. with the duration of time or with the substance in which something has lain.
+  <sub>attested</sub>
 
 **upa_sam_2c)** — c〉 von einem Worte so v. a. nicht zur Zeit gelöst.
+
+- **RU:** c) о слове так v. a.: не разрешённый вовремя.
 - **EN:** — c) of a word, thus v. a. not resolved in time.
+  <sub>attested</sub>
 
 **upa_sam_caus)** — Caus. über Nacht stehen lassen.
+
+- **RU:** — Caus. оставлять стоять на ночь.
 - **EN:** — Caus. to let stand overnight.
+  <sub>attested</sub>
 
 **pra_intro)** — Mit *pra*
 - **EN:** — With *pra*
@@ -4353,37 +4521,70 @@ Z. 2 add *vasiṣṭa*
 - **EN:** — 1) (to leave one's dwelling for the night) to set out on a journey, to depart.
 
 **pra_2)** — 2〉 verschwinden, aufhören, nicht mehr vorhanden sein [HARIV. 2,50,84. 3,2,30]. Von der Sonne so v. a. nicht mehr scheinen.
+
+- **RU:** 2) исчезать, прекращаться, переставать существовать [HARIV. 2,50,84. 3,2,30]. О солнце так v. a.: более не светить.
 - **EN:** — 2) to disappear, to cease, to be no longer present [HARIV. 2,50,84. 3,2,30]. Of the sun, thus v. a. to shine no more.
+  <sub>attested</sub>
 
 **pra_3)** — 3〉 verweilten, sich aufhalten.
+
+- **RU:** 3) пребывать, находиться.
 - **EN:** — 3) to tarry, to stay.
+  <sub>attested</sub>
 
 **pra_4)** — 4〉 verbannen. *vanavāse* zum Aufenthalt im Walde.
+
+- **RU:** 4) изгонять, ссылать. *vanavāse* на пребывание в лесу.
 - **EN:** — 4) to banish. *vanavāse* to a sojourn in the forest.
+  <sub>attested</sub>
 
 **pra_5_intro)** — 5〉 *proṣita*
+
+- **RU:** 5) *proṣita*
 - **EN:** — 5) *proṣita*
+  <sub>attested</sub>
 
 **pra_5a)** — a〉 vom Hause abwesend, in der Fremde weilend, abwesend.
+
+- **RU:** a) отсутствующий из дома, пребывающий на чужбине, отсутствующий.
 - **EN:** — a) absent from home, sojourning abroad, absent.
+  <sub>attested</sub>
 
 **pra_5b)** — b〉 verschwunden, verwischt; heliakisch untergegangen.
+
+- **RU:** b) исчезнувший, стёршийся; закатившийся гелиактически (о светиле).
 - **EN:** — b) vanished, effaced; set heliacally (of a star).
+  <sub>attested</sub>
 
 **pra_5c)** — c〉 heimgegangen, gestorben [HARṢAC. 153,9].
+
+- **RU:** c) отошедший, умерший [HARṢAC. 153,9].
 - **EN:** — c) departed (this life), dead [HARṢAC. 153,9].
+  <sub>attested</sub>
 
 **pra_caus)** — Caus. entfernen, Jmd aus seinem Wohnort vertreiben, verbannen. — *˚pravāsitaḥ* [KATHĀS. 73,22] fehlerhaft für *˚pravāsataḥ*.
+
+- **RU:** — Caus. удалять, изгонять кого-либо из места жительства, ссылать. — *˚pravāsitaḥ* [KATHĀS. 73,22] ошибочно вместо *˚pravāsataḥ*.
 - **EN:** — Caus. to remove, to drive someone from his dwelling-place, to banish. — *˚pravāsitaḥ* [KATHĀS. 73,22] erroneous for *˚pravāsataḥ*.
+  <sub>attested</sub>
 
 **pra_desid)** — Desid. *pravivatsati* zu verreisen beabsichtigen [ŚIŚ. 15,120 (86)], im Begriff stehen sich wegzubegeben aus (Abl.) [CARAKA. 5,12] (*pravivatsatām* zu lesen).
+
+- **RU:** — Desid. *pravivatsati* намереваться отправиться в путь [ŚIŚ. 15,120 (86)], собираться удалиться из (Abl.) [CARAKA. 5,12] (следует читать *pravivatsatām*).
 - **EN:** — Desid. *pravivatsati* to intend to set out on a journey [ŚIŚ. 15,120 (86)], to be about to depart from (Abl.) [CARAKA. 5,12] (*pravivatsatām* to be read).
+  <sub>attested</sub>
 
 **vi_pra)** — Mit *atipra* über eine best. Zeit (Acc.) hinaus abwesend sein [ĀPAST. ŚR. 6,26,7] und [BAUDH.] im Comm. dazu.
+
+- **RU:** — С *atipra*: отсутствовать сверх best. времени (Acc.) [ĀPAST. ŚR. 6,26,7], и [BAUDH.] в Comm. к этому.
 - **EN:** — With *atipra* to be absent beyond a best. time (Acc.) [ĀPAST. ŚR. 6,26,7] and [BAUDH.] as the Comm. to it.
+  <sub>attested</sub>
 
 **sam_pra)** — Mit *apapra* in *anapaproṣita*.
+
+- **RU:** — С *apapra* в *anapaproṣita*.
 - **EN:** — With *apapra* in *anapaproṣita*.
+  <sub>attested</sub>
 
 **vi_intro)** — Mit *vipra*
 - **EN:** — With *vipra*
@@ -4392,34 +4593,61 @@ Z. 2 add *vasiṣṭa*
 - **EN:** — 1) to set out on a journey, to go abroad, to sojourn in Fr.. *viproṣya* after a journey [GAUT.] [ĀPAST. 1,11,11].
 
 **vi_2)** — 2〉 *viproṣita* verreist, — weggezogen in (Acc.); verbannt (auch *rājya˚*).
+
+- **RU:** 2) *viproṣita* уехавший, — переселившийся в (Acc.); изгнанный (также *rājya˚*).
 - **EN:** — 2) *viproṣita* having set out, — having moved away into (Acc.); banished (also *rājya˚*).
+  <sub>attested</sub>
 
 **vi_3)** — 3〉 *vipravasita* _n._ impers. Loc. nachdem der und der (Instr.) fortgegangen war.
+
+- **RU:** 3) *vipravasita* _n._ impers. Loc. после того как такой-то (Instr.) удалился.
 - **EN:** — 3) *vipravasita* _n._ impers. Loc. after so-and-so (Instr.) had departed.
+  <sub>attested</sub>
 
 **vi_caus_intro)** — Caus.
+
+- **RU:** — Caus.
 - **EN:** — Caus.
+  <sub>attested</sub>
 
 **vi_caus_1)** — 1〉 verbannen, — aus (Abl.).
 - **EN:** — 1) to banish, — from (Abl.).
 
 **vi_caus_2)** — 2〉 verscheuchen, entfernen, verschwinden machen.
+
+- **RU:** 2) прогонять, удалять, заставлять исчезнуть.
 - **EN:** — 2) to scare away, to remove, to make disappear.
+  <sub>attested</sub>
 
 **vi_caus_pp)** — Mit *saṃpra*, *saṃproṣita* verschwunden, untergegangen (Sonne) [DHŪRTAN. 37].
+
+- **RU:** — С *saṃpra*, *saṃproṣita* исчезнувший, закатившийся (о солнце) [DHŪRTAN. 37].
 - **EN:** — With *saṃpra*, *saṃproṣita* vanished, set (of the sun) [DHŪRTAN. 37].
+  <sub>attested</sub>
 
 **sam_pari)** — Mit *prati* seinen Wohnsitz —, seinen Standort haben.
+
+- **RU:** — С *prati*: иметь своё местожительство —, своё местопребывание.
 - **EN:** — With *prati* to have one's dwelling-place —, one's station.
+  <sub>attested</sub>
 
 **caus2_intro)** — Caus.
+
+- **RU:** — Caus.
 - **EN:** — Caus.
+  <sub>attested</sub>
 
 **caus2_1)** — 1〉 beherbergen.
+
+- **RU:** 1) давать приют, приютить.
 - **EN:** — 1) to lodge, to harbour.
+  <sub>attested</sub>
 
 **caus2_2)** — 2〉 ansässig machen.
+
+- **RU:** 2) поселять, водворять.
 - **EN:** — 2) to make settled, to settle (someone).
+  <sub>attested</sub>
 
 **apa_intro)** — Mit *vi*
 - **EN:** — With *vi*
@@ -4428,46 +4656,85 @@ Z. 2 add *vasiṣṭa*
 - **EN:** — 1) to remove one's lodging, to depart from (Abl.).
 
 **apa_2)** — 2〉 *brahmacaryam* so v. a. in die Lehre gehen.
+
+- **RU:** 2) *brahmacaryam* так v. a.: поступать в учение.
 - **EN:** — 2) *brahmacaryam* thus v. a. to go into apprenticeship.
+  <sub>attested</sub>
 
 **apa_3)** — 3〉 zubringen, verleben; mit Acc. der Zeit.
+
+- **RU:** 3) проводить, коротать (время); с Acc. времени.
 - **EN:** — 3) to pass, to spend (a period); with Acc. of time.
+  <sub>attested</sub>
 
 **apa_4)** — 4〉 *vi-vatsyantaḥ* [ĀŚV. ŚR. 11,5,1] fehlerhaft für *vi-vartsyantaḥ*.
+
+- **RU:** 4) *vi-vatsyantaḥ* [ĀŚV. ŚR. 11,5,1] ошибочно вместо *vi-vartsyantaḥ*.
 - **EN:** — 4) *vi-vatsyantaḥ* [ĀŚV. ŚR. 11,5,1] erroneous for *vi-vartsyantaḥ*.
+  <sub>attested</sub>
 
 **apa_5_intro)** — 5〉 *vyuṣita*
+
+- **RU:** 5) *vyuṣita*
 - **EN:** — 5) *vyuṣita*
+  <sub>attested</sub>
 
 **apa_5a)** — a〉 verreist, abwesend.
+
+- **RU:** a) уехавший, отсутствующий.
 - **EN:** — a) gone on a journey, absent.
+  <sub>attested</sub>
 
 **apa_5b)** — b〉 zugebracht —, verlebt habend; mit Acc. der Zeit.
+
+- **RU:** b) проведший —, прокоротавший (время); с Acc. времени.
 - **EN:** — b) having spent —, having passed (time); with Acc. of time.
+  <sub>attested</sub>
 
 **apa_5c)** — c〉 am Ende eines Comp. bewohnt von.
+
+- **RU:** c) в конце Comp. заселённый .
 - **EN:** — c) at the end of a Comp., inhabited by.
+  <sub>attested</sub>
 
 **apa_6_intro)** — 6〉 *vyuṣṭa*
+
+- **RU:** 6) *vyuṣṭa*
 - **EN:** — 6) *vyuṣṭa*
+  <sub>attested</sub>
 
 **apa_6a)** — a〉 = 4〉b〉.
+
+- **RU:** a) = 4)b).
 - **EN:** — a) = 4)b).
+  <sub>attested</sub>
 
 **apa_6b)** — b〉 *= *paryuṣita*.
+
+- **RU:** b) *= *paryuṣita*.
 - **EN:** — b) *= *paryuṣita*.
+  <sub>attested</sub>
 
 **apa_caus_intro)** — Caus.
+
+- **RU:** — Caus.
 - **EN:** — Caus.
+  <sub>attested</sub>
 
 **apa_caus_1)** — 1〉 zum Hause —, zum Lande hinausjagen, verbannen.
 - **EN:** — 1) to drive out of the house —, out of the land, to banish.
 
 **apa_caus_2)** — 2〉 fortsenden, entsenden.
+
+- **RU:** 2) отсылать, отправлять.
 - **EN:** — 2) to send away, to dispatch.
+  <sub>attested</sub>
 
 **apa_pp)** — Mit *nirvi*, *nirvyuṣita* zugebracht, verlebt.
+
+- **RU:** — С *nirvi*, *nirvyuṣita* проведённый, прожитый.
 - **EN:** — With *nirvi*, *nirvyuṣita* spent, passed (of time).
+  <sub>attested</sub>
 
 **abhi_intro)** — Mit *sam*
 - **EN:** — With *sam*
@@ -4476,34 +4743,134 @@ Z. 2 add *vasiṣṭa*
 - **EN:** — 1) Act. Med. to stay together, to dwell together, to associate with someone; the person in the Instr., in the Instr.
 
 **abhi_loc)** — Mit *saha* oder im Acc.
+
+- **RU:** — С *saha* или в Acc.
 - **EN:** — With *saha* or in the Acc.
+  <sub>attested</sub>
 
 **abhi_2)** — 2〉 mit Jmd zusammenkommen.
+
+- **RU:** 2) сходиться, встречаться с кем-либо.
 - **EN:** — 2) to come together with someone, to meet.
+  <sub>attested</sub>
 
 **abhi_3)** — 3〉 sich aufhalten, seinen Wohnsitz haben, leben an einem Orte (Loc.) [Spr. 7843].
+
+- **RU:** 3) пребывать, иметь своё местожительство, жить в каком-либо месте (Loc.) [Spr. 7843].
 - **EN:** — 3) to stay, to have one's dwelling, to live in a place (Loc.) [Spr. 7843].
+  <sub>attested</sub>
 
 **abhi_4)** — 4〉 zubringen, mit Acc. der Zeit.
+
+- **RU:** 4) проводить (время), с Acc. времени.
 - **EN:** — 4) to spend (time), with Acc. of time.
+  <sub>attested</sub>
 
 **abhi_5)** — 5〉 *samuṣita* zugebracht habend, mit Acc. der Nacht.
+
+- **RU:** 5) *samuṣita* проведший, с Acc. ночи.
 - **EN:** — 5) *samuṣita* having spent, with Acc. of the night.
+  <sub>attested</sub>
 
 **abhi_caus_intro)** — Caus.
+
+- **RU:** — Caus.
 - **EN:** — Caus.
+  <sub>attested</sub>
 
 **abhi_caus_1)** — 1〉 zusammen wohnen lassen, zusammenbringen, — mit (Instr. oder Instr. mit *saha*).
 - **EN:** — 1) to let dwell together, to bring together, — with (Instr. or Instr. with *saha*).
 
 **abhi_caus_2)** — 2〉 beherbergen.
+
+- **RU:** 2) давать приют, приютить.
 - **EN:** — 2) to lodge, to harbour.
+  <sub>attested</sub>
 
 **pratyabhi)** — Mit *adhisam* sich beisammen aufhalten, zusammen wohnen.
+
+- **RU:** — С *adhisam*: находиться вместе, жить сообща.
 - **EN:** — With *adhisam* to stay together, to dwell together.
+  <sub>attested</sub>
 
 **sam_abhi)** — Mit *abhisam*, *abhisaṃvasāna* sich vereinigend um (Acc.) [ĀPAST. ŚR. 7,17,1].
+
+- **RU:** — С *abhisam*, *abhisaṃvasāna* объединяясь вокруг (Acc.) [ĀPAST. ŚR. 7,17,1].
 - **EN:** — With *abhisam*, *abhisaṃvasāna* uniting around (Acc.) [ĀPAST. ŚR. 7,17,1].
+  <sub>attested</sub>
+
+**1)** — Mit *saṃni*
+— 1〉 zusammen wohnen, — leben mit (Instr.). *samāgame* in Verein mit (Gen.) leben.
+
+- **RU:** — С *saṃni*
+1) жить вместе, — совместно с (Instr.). *samāgame* жить сообща с (Gen.).
+  <sub>attested</sub>
+
+**main)** — Caus.
+
+- **RU:** — Caus.
+  <sub>attested</sub>
+
+**1)** — Mit *pari*
+— 1〉 verweilen, leben mit (Instr.). *saṃsargitayā* verkehren mit (Acc.).
+
+- **RU:** — С *pari*
+1) пребывать, жить с (Instr.). *saṃsargitayā* общаться с (Acc.).
+  <sub>attested</sub>
+
+**1)** — Mit *pra*
+— 1〉 (für die Nacht seine Wohnung verlassen) verreisen, sich entfernen.
+
+- **RU:** — С *pra*
+1) (покинуть на ночь своё жилище) отправляться в путь, удаляться.
+  <sub>attested</sub>
+
+**1)** — Mit *vipra*
+— 1〉 verreisen, in die Fremde ziehen, in der Fr. weilen. *viproṣya* nach einer Reise [GAUT.] [ĀPAST. 1,11,11].
+
+- **RU:** — С *vipra*
+1) отправляться в путь, уезжать на чужбину, пребывать в Fr.. *viproṣya* после путешествия [GAUT.] [ĀPAST. 1,11,11].
+  <sub>attested</sub>
+
+**1)** — Caus.
+— 1〉 verbannen, — aus (Abl.).
+
+- **RU:** — Caus.
+1) изгонять, — из (Abl.).
+  <sub>attested</sub>
+
+**main)** — Caus.
+
+- **RU:** — Caus.
+  <sub>attested</sub>
+
+**1)** — Mit *vi*
+— 1〉 sich ausquartieren sich fortbegeben von (Abl.).
+
+- **RU:** — С *vi*
+1) выселяться, удаляться от (Abl.).
+  <sub>attested</sub>
+
+**1)** — Caus.
+— 1〉 zum Hause —, zum Lande hinausjagen, verbannen.
+
+- **RU:** — Caus.
+1) изгонять из дома —, из страны, ссылать.
+  <sub>attested</sub>
+
+**1)** — Mit *sam*
+— 1〉 Act. Med. sich beisammen aufhalten, zusammen wohnen, mit Jmd verkehren; die Person im Instr. im Instr.
+
+- **RU:** — С *sam*
+1) Act. Med. находиться вместе, жить сообща, общаться с кем-либо; лицо в Instr. в Instr.
+  <sub>attested</sub>
+
+**1)** — Caus.
+— 1〉 zusammen wohnen lassen, zusammenbringen, — mit (Instr. oder Instr. mit *saha*).
+
+- **RU:** — Caus.
+1) давать жить вместе, сводить, — с (Instr. или Instr. с *saha*).
+  <sub>attested</sub>
 
 ## vas
 
@@ -4511,52 +4878,100 @@ Z. 2 add *vasiṣṭa*
 
 
 **6)** **6.** *vas*¦ etwa Wohnsitz oder Ansässiger. Nur Gen. Pl. *vasām*.
+
+- **RU:** **6.** *vas*¦ примерно «местожительство» или «оседлый житель». Только Gen. Pl. *vasām*.
 - **EN:** **6.** *vas* ¦ perhaps 'dwelling-place' or 'one who is settled'. Only Gen. Pl. *vasām*.
+  <sub>lexicographic</sub>
 
 **7_intro)** **7.** √*vas*¦ (nur *vasiṣva*, *˚vāvase* und *vāvasāna*) den Angriff oder Lauf richten gegen, losstürmen auf. *rāyas* so v. a. dem Erwerb nachjagen.
+
+- **RU:** **7.** √*vas*¦ (только *vasiṣva*, *˚vāvase* и *vāvasāna*) направлять нападение или бег против кого-л., устремляться, бросаться на. *rāyas* так v. a. гнаться за наживой.
 - **EN:** **7.** √*vas* ¦ (only *vasiṣva*, *˚vāvase*, and *vāvasāna*) to direct the attack or course against, to rush upon. *rāyas*, thus v. a., to chase after gain.
+  <sub>attested</sub>
 
 **7_anu)** — Mit *anu* den Lauf richten nach (Acc.). Nach [GELDNER] ([KUHNʼS Z. 27,216. fg.]) verzehren.
+
+- **RU:** — С *anu* направлять бег к чему-л. (Acc.). По [GELDNER] ([KUHNʼS Z. 27,216. fg.]) поедать, пожирать.
 - **EN:** — With *anu* to direct one's course toward (Acc.). According to [GELDNER] ([KUHNʼS Z. 27,216. fg.]) to consume.
+  <sub>attested</sub>
 
 **8_intro)** **8.** √*vas*¦, *vāsayati* (*snehacchedāpaharaṇeṣu, vadhe*; st. *apaharaṇa* auch *upaharaṇa* und *avaharaṇa*). Simplex nicht zu belegen.
+
+- **RU:** **8.** √*vas*¦, *vāsayati* (*snehacchedāpaharaṇeṣu, vadhe*; st. *apaharaṇa* также *upaharaṇa* и *avaharaṇa*). Простая форма (симплекс) не засвидетельствована.
 - **EN:** **8.** √*vas* ¦, *vāsayati* (*snehacchedāpaharaṇeṣu, vadhe*; st. *apaharaṇa* also *upaharaṇa* and *avaharaṇa*). The simplex is not attested.
+  <sub>lexicographic</sub>
 
 **8_a)** — Mit *ud* (?) in *udvāsana** 2〉.
+
+- **RU:** — С *ud* (?), см. *udvāsana** 2〉.
 - **EN:** — With *ud* (?) in *udvāsana** 2).
+  <sub>lexicographic</sub>
 
 **8_ni)** — Mit *ni*, *nivāsita* umʼs Leben gebracht. v. l. *nipātita*.
+
+- **RU:** — С *ni*, *nivāsita* лишённый жизни, погубленный. v. l. *nipātita*.
 - **EN:** — With *ni*, *nivāsita* deprived of life, killed. v. l. *nipātita*.
+  <sub>attested</sub>
 
 **8_b)** — Mit *nis* in *nirvāsana* 3〉.
+
+- **RU:** — С *nis*, см. *nirvāsana* 3〉.
 - **EN:** — With *nis* in *nirvāsana* 3).
+  <sub>lexicographic</sub>
 
 **8_pari)** — Mit *pari* rings abschneiden, ausschneiden, abschneiden [ĀPAST. 1,25,1].
+
+- **RU:** — С *pari* со всех сторон отрезать, вырезать, отсекать [ĀPAST. 1,25,1].
 - **EN:** — With *pari* to cut off all around, to cut out, to cut off [ĀPAST. 1,25,1].
+  <sub>attested</sub>
 
 **8_c)** — Mit *pra* in *pravāsana** 2〉.
+
+- **RU:** — С *pra*, см. *pravāsana** 2〉.
 - **EN:** — With *pra* in *pravāsana** 2).
+  <sub>lexicographic</sub>
 
 **9)** **9.** *√*vas*¦, *vasayati* (*stambhe*).
+
+- **RU:** **9.** *√*vas*¦, *vasayati* (*stambhe*).
 - **EN:** **9.** *√*vas* ¦, *vasayati* (*stambhe*).
+  <sub>lexicographic</sub>
 
 **2_corr)** **2.** √*vas*¦ mit *abhivi* [ĀPAST. ŚR. 14,23,12].
+
+- **RU:** **2.** √*vas*¦ с *abhivi* [ĀPAST. ŚR. 14,23,12].
 - **EN:** **2.** √*vas* ¦ with *abhivi* [ĀPAST. ŚR. 14,23,12].
+  <sub>lexicographic</sub>
 
 **5_corr)** **5.** √*vas*¦ mit *vi* 6〉a〉 lies = 5〉b〉 und füge [VASIṢṬHA 27,17] hinzu.
+
+- **RU:** **5.** √*vas*¦ с *vi*: 6〉a〉 читай = 5〉b〉 и добавь [VASIṢṬHA 27,17].
 - **EN:** **5.** √*vas* ¦ with *vi* 6)a) read = 5)b) and add [VASIṢṬHA 27,17].
+  <sub>lexicographic</sub>
 
 **2_vi)** **2.** √*vas*¦ mit *vi* VI. Aor. *vyavāṭ* [MAITR. S. 3,4,9 (57,5)]. Vgl. [AV. 8,1,21].
+
+- **RU:** **2.** √*vas*¦ с *vi* VI. Aor. *vyavāṭ* [MAITR. S. 3,4,9 (57,5)]. Vgl. [AV. 8,1,21].
 - **EN:** **2.** √*vas* ¦ with *vi* VI. Aor. *vyavāṭ* [MAITR. S. 3,4,9 (57,5)]. Vgl. [AV. 8,1,21].
+  <sub>attested</sub>
 
 **2_vi_b)** — Mit *abhivi* VI. 6.
+
+- **RU:** — С *abhivi* VI. 6.
 - **EN:** — With *abhivi* VI. 6.
+  <sub>attested</sub>
 
 **5_vi)** **5.** √*vas*¦ VI. Aor. *avāksam* (so alle Hdschrr. nach [AUFRECHT]) [AIT. BR. 1,28,16] im Wortspiel mit *vāk* st. *avātsam* (so [HAUG]). 2〉 mit Acc. des Weibes [MBH. 13,4,10].
+
+- **RU:** **5.** √*vas*¦ VI. Aor. *avāksam* (так все Hdschrr. по [AUFRECHT]) [AIT. BR. 1,28,16] в игре слов с *vāk* st. *avātsam* (так [HAUG]). 2〉 с Acc. женщины [MBH. 13,4,10].
 - **EN:** **5.** √*vas* ¦ VI. Aor. *avāksam* (thus all Hdschrr. after [AUFRECHT]) [AIT. BR. 1,28,16] in a pun with *vāk* st. *avātsam* (thus [HAUG]). 2) with Acc. of the woman [MBH. 13,4,10].
+  <sub>attested</sub>
 
 **5_vi_b)** — Mit *vi* VI. 6.
+
+- **RU:** — С *vi* VI. 6.
 - **EN:** — With *vi* VI. 6.
+  <sub>attested</sub>
 
 ## vas
 
@@ -4565,6 +4980,11 @@ Z. 2 add *vasiṣṭa*
 
 **vi_aor)** 2. vas¦ mit vi, Aor. vyavāṭ, [Maitr. S. 3,4,9] (57,5). Vgl. [AV. 8,1,21.] — Mit abhivi, [Āpast. Śr. 14,23,12.] {part=,seq=23685,type=,n=3}
 - **EN:** 2. vas ¦ with vi, Aor. vyavāṭ, [Maitr. S. 3,4,9] (57,5). Cf. [AV. 8,1,21.]. — With abhivi, [Āpast. Śr. 14,23,12.] {part=,seq=23685,type=,n=3}
+
+**2)** vas¦ mit vi, Aor. vyavāṭ, [Maitr. S. 3,4,9] (57,5). Vgl. [AV. 8,1,21.] — Mit abhivi, [Āpast. Śr. 14,23,12.]
+
+- **RU:** vas с vi, аорист vyavāṭ, [Maitr. S. 3,4,9] (57,5). Ср. [AV. 8,1,21.] — С abhivi, [Āpast. Śr. 14,23,12.]
+  <sub>attested</sub>
 
 ## vas
 
@@ -4582,3 +5002,39 @@ Z. 2 add *vasiṣṭa*
 
 **5_vi)** **5.** *vas*¦ VI. Aor. *avāksam* (so alle Hdschrr. nach [AUFRECHT]) [AIT. BR. 1,28,16] im Wortspiel mit *vāk* st. *avātsam* (so [HAUG]). 2〉 mit Acc. des Weibes [MBH. 13,4]. [10]. — Mit *vi* VI. 6.
 - **EN:** **5.** *vas* ¦ VI. Aor. *avāksam* (thus all Hdschrr. after [AUFRECHT]) [AIT. BR. 1,28,16] in a pun with *vāk* st. *avātsam* (thus [HAUG]). 2) with Acc. of the woman [MBH. 13,4]. [10]. — With *vi* VI. 6.
+
+**pwkvn-1)** === LAYER: PWKVN — PWK variant supplement (keyed to PW sense numbers) ===
+
+**2.** *vas*¦ mit *abhivi* [ĀPAST. ŚR. 14,23,12].
+
+- **RU:** === СЛОЙ: PWKVN — дополнение вариантов PWK (привязано к номерам значений PW) ===
+
+**2.** *vas*¦ с *abhivi* [ĀPAST. ŚR. 14,23,12].
+  <sub>lexicographic</sub>
+
+**pwkvn-2)** === LAYER: PWKVN — PWK variant supplement (keyed to PW sense numbers) ===
+
+**5.** *vas*¦ mit *vi* 6〉a〉 lies = 5〉b〉 und füge [VASIṢṬHA 27,17] hinzu.
+
+- **RU:** === СЛОЙ: PWKVN — дополнение вариантов PWK (привязано к номерам значений PW) ===
+
+**5.** *vas*¦ с *vi* 6〉a〉 читай = 5〉b〉 и добавь [VASIṢṬHA 27,17].
+  <sub>lexicographic</sub>
+
+**pwkvn-3)** === LAYER: PWKVN — PWK variant supplement (keyed to PW sense numbers) ===
+
+**2.** *vas*¦ mit *vi* VI. Aor. *vyavāṭ* [MAITR. S. 3,4,9 (57,5)]. Vgl. [AV. 8,1,21]. — Mit *abhivi* VI. 6.
+
+- **RU:** === СЛОЙ: PWKVN — дополнение вариантов PWK (привязано к номерам значений PW) ===
+
+**2.** *vas*¦ с *vi* VI. Aor. *vyavāṭ* [MAITR. S. 3,4,9 (57,5)]. Vgl. [AV. 8,1,21]. — С *abhivi* VI. 6.
+  <sub>lexicographic</sub>
+
+**pwkvn-4)** === LAYER: PWKVN — PWK variant supplement (keyed to PW sense numbers) ===
+
+**5.** *vas*¦ VI. Aor. *avāksam* (so alle Hdschrr. nach [AUFRECHT]) [AIT. BR. 1,28,16] im Wortspiel mit *vāk* st. *avātsam* (so [HAUG]). 2〉 mit Acc. des Weibes [MBH. 13,4]. [10]. — Mit *vi* VI. 6.
+
+- **RU:** === СЛОЙ: PWKVN — дополнение вариантов PWK (привязано к номерам значений PW) ===
+
+**5.** *vas*¦ VI. Aor. *avāksam* (так все Hdschrr. по [AUFRECHT]) [AIT. BR. 1,28,16] в игре слов с *vāk* st. *avātsam* (так [HAUG]). 2〉 с Acc. женщины [MBH. 13,4]. [10]. — С *vi* VI. 6.
+  <sub>lexicographic</sub>

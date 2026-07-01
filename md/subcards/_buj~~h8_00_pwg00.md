@@ -13,4 +13,4 @@ Z. 5 исправить на 5, 48, 4.
 - **EN:** 4. *bhuj*¦
  1) add: possession, property.
 Z. 5 read 5, 48, 4.
-  <sub>DCS 2938 · lexicographic</sub>
+  <sub>lexicographic</sub>

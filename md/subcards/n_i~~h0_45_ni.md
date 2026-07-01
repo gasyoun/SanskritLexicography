@@ -25,7 +25,7 @@
 [BHĀG. P. 2,2,16] to carry thither, to carry out: *dāsīkumbhaṃ vahirgrāmānninayeran* (v. l. *ninayeyuḥ*)
 [YĀJÑ. 3,295.] to carry hither, to fetch: *ninayerannavaṃ ghaṭam* 296. to lead to, to bring about: *ni mātarā nayati retase bhuje*
 [ṚV. 1,155,3.]
-  <sub>DCS 227 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) neigen: *vaktraṃ ninīya*
 [BHĀG. P. 1,8,31.]
@@ -34,7 +34,7 @@
 [BHĀG. P. 1,8,31.]
 - **EN:** — 2) to incline: *vaktraṃ ninīya*
 [BHĀG. P. 1,8,31.]
-  <sub>DCS 227 · attested</sub>
+  <sub>attested</sub>
 
 **3a)** — 3) niedergiessen, hingiessen, eingiessen: *yatpūrṇapātramantarvedi ninayati*
 [TS. 1,7,5,3.] *oṣadhībhyo vṛṣṭiṃ ninayati*
@@ -55,7 +55,7 @@
 [12,4,1,5.] [8,1,8.] [KĀTY. ŚR. 2,5,6.] [ĀŚV. ŚR. 9,3.] [GṚHY. 1,2. 10. 11.] *udakaṃ ninayeccheṣaṃ śanaiḥ piṇḍāntike punaḥ*
 [M. 3,218.]
 [BHĀG. P. 1,8,2.]
-  <sub>DCS 227 · attested</sub>
+  <sub>attested</sub>
 
 **3b)** — 3) vollführen, vollbringen: *yena makho ninīyate*
 [BHĀG. P. 4,6,50.] *śrāddham*
@@ -67,10 +67,10 @@
 - **EN:** — 3) to complete, to accomplish: *yena makho ninīyate*
 [BHĀG. P. 4,6,50.] *śrāddham*
 [KULL.] to [M. 2,172.] [3,91.]
-  <sub>DCS 227 · attested</sub>
+  <sub>attested</sub>
 
 **note)** — Vgl. *ninayana*, wo statt der 2ten Bed. das Vollführen, Vollbringen zu setzen ist.
 
 - **RU:** — Vgl. *ninayana*, где вместо второго Bed. следует читать «совершение, выполнение».
 - **EN:** — Vgl. *ninayana*, where instead of the 2nd Bed. the meaning "completion, accomplishment" is to be substituted.
-  <sub>DCS 227 · attested</sub>
+  <sub>attested</sub>

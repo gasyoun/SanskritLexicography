@@ -10,4 +10,4 @@
 [KATHĀS. 34,255.]
 - **EN:** — *vipra*, partic. in the passage unintelligible to us: *nirvartya tatra vahalodyatavipramattavīvāhamaṅgalavidhim*
 [KATHĀS. 34,255.]
-  <sub>DCS 1 · attested</sub>
+  <sub>attested</sub>

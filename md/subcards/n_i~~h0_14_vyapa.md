@@ -19,7 +19,7 @@
 [R. 2,66,13.]
 [MBH. 1,6017.] *na daivaṃ vyapanayati vimārgaṃ nāsti daive prabhutvam*
 [13,341.]
-  <sub>DCS 57 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) wegschaffen, entfernen, vertreiben: *śare tu tasminvyapanītamātre*
 [R. GORR. 2,65,46.] *śokaśalyam*
@@ -85,4 +85,4 @@
 [3,2008.] [R. 5,28,18.] *karmārabdhaṃ vyapanayan*
 [BHĀG. P. 5,10,15.] — caus. to have removed: *tanmayā tvatkṛte hyetadanyathā vyapanāyitam (astram)*
 [MBH. 7,1290.]
-  <sub>DCS 57 · attested</sub>
+  <sub>attested</sub>

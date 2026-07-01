@@ -10,4 +10,4 @@
 [PĀR. GṚHY. 2,16.]
 - **EN:** — *vi* to pass away, vanish: *pūrṇaṃ me mā vigāt*
 [PĀR. GṚHY. 2,16.]
-  <sub>DCS 59 · attested</sub>
+  <sub>attested</sub>

@@ -11,4 +11,4 @@
 [PRAŚNOP. 2,8.] *pratijātakopa*
 [MBH. 6,2651.]
 - **EN:** — *prati* to be reborn, to come into being anew: *prajāpatiścarasi garbhe tvameva pratijāyase* [PRAŚNOP. 2,8.] *pratijātakopa* [MBH. 6,2651.]
-  <sub>DCS 9250 · attested</sub>
+  <sub>attested</sub>

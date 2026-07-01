@@ -10,4 +10,4 @@
 [ŚAT. BR. 5,1,2,19.]
 - **EN:** — *vyava* to pour in individually, to pour in one by one: *(somagrahān) camaseṣu vyavanīya*
 [ŚAT. BR. 5,1,2,19.]
-  <sub>DCS 2 · attested</sub>
+  <sub>attested</sub>

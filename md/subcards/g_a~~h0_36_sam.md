@@ -13,7 +13,7 @@
 - **EN:** — *sam*
  1) to come together
 [AV. 19,57,2.]
-  <sub>DCS 40 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) hingehen zu: *paraṃ samagātsvadhāma*
 [BHĀG. P. 9,24,66.] *aiśvaraṃ samagātpadam*
@@ -25,4 +25,4 @@
 - **EN:** — 2) to go to, repair to: *paraṃ samagātsvadhāma*
 [BHĀG. P. 9,24,66.] *aiśvaraṃ samagātpadam*
 [4,31,27.]
-  <sub>DCS 40 · attested</sub>
+  <sub>attested</sub>

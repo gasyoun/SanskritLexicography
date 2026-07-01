@@ -25,4 +25,4 @@
 [SADDH. P. 4,21,b.] *dhiyā samanupaśyanti tadgatāḥ saviturgatim*
 [MBH. 12,7425.] to consider as: *svenānumānena paraṃ sādhuṃ samanupaśyati*
 [1,5037.] [12,13864.]
-  <sub>DCS 4733 · attested</sub>
+  <sub>attested</sub>

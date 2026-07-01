@@ -9,4 +9,4 @@
 - **RU:** — *ud* возбуждать: *utsunoṣīkṣamāṇānāṃ kandukakrīḍayā manaḥ*
 [BHĀG. P. 3,20,35.] По значению скорее относится к 2. *su* (как и *utsava*).
 - **EN:** — *ud* stir up, excite: *utsunoṣīkṣamāṇānāṃ kandukakrīḍayā manaḥ* [BHĀG. P. 3,20,35.] By meaning rather belonging to 2. *su* (as also *utsava*).
-  <sub>DCS 14088 · attested</sub>
+  <sub>attested</sub>

@@ -7,4 +7,4 @@
 
 - **RU:** — *pratini* vgl. *pratinipāta; — nis* vgl. *niṣpāta* .
 - **EN:** — *pratini* vgl. *pratinipāta; — nis* vgl. *niṣpāta* .
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>

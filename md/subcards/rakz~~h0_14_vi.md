@@ -19,4 +19,4 @@
 [11,5,17.] *anyo'nyaṃ samupāśritya virakṣanti raṇājire (na tyakṣyanti raṇājiram* [ed. Bomb.])
 [MBH. 7,4410.] *droṇaṃ ca ke vyarakṣanta*
 [7329.]
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>

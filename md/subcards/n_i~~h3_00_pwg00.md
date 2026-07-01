@@ -7,4 +7,4 @@
 
 - **RU:** **1.** *nī*¦ [vgl. ] Z. 19. Читай: 3〉 st. 8〉.
 - **EN:** **1.** *nī*¦ [vgl. ] Z. 19. Read: 3〉 st. 8〉.
-  <sub>DCS 2376 · attested</sub>
+  <sub>attested</sub>

@@ -244,7 +244,7 @@ Schol. for [P.]), where moreover *prapai* is to be conjectured. *tataḥ sarve t
 [BĀLAB. 17.] to fly apart: *yathā prayānti saṃyānti srotovegena vālukāḥ*
 [Spr. 4787.] *truṭattantukaṃ muktājālamiva prayāti jhaṭiti bhraśyaddiśaḥ*
 [3003.]
-  <sub>DCS 1438 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) = *yā* wandeln, gehen, sich bewegen, fahren: *yaṃ ca panthānamākramya prayāti manujeśvaraḥ*
 [R. 5,81,22.] *prajāsu kaḥ kena pathā prayāti*
@@ -274,7 +274,7 @@ Schol. for [P.]), where moreover *prapai* is to be conjectured. *tataḥ sarve t
 [MBH. 5,7178.] *prayāta* ("having set itself in motion") = *prayānt* going, moving, flying: *prayāte tu rathe*
 [MBH. 3,2809.] *so 'paśyaddhaṃsayugalaṃ prayātaṃ gagaṇe niśi*
 [KATHĀS. 3,27.]
-  <sub>DCS 1438 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) sich benehmen: *tanmitramāpadi sukhe ca samaṃ prayāti*
 [Spr. 1926], v. l.
@@ -283,7 +283,7 @@ Schol. for [P.]), where moreover *prapai* is to be conjectured. *tataḥ sarve t
 [Spr. 1926], v. l.
 - **EN:** — 3) to behave, conduct oneself: *tanmitramāpadi sukhe ca samaṃ prayāti*
 [Spr. 1926], v. l.
-  <sub>DCS 1438 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) in einen Zustand, eine Lage, ein Verhältniss gerathen, theilhaftig werden: *nijāṃ gatim*
 [KATHĀS. 52,409.] *nidhanam*
@@ -367,4 +367,4 @@ Schol. for [P.]), where moreover *prapai* is to be conjectured. *tataḥ sarve t
 [YĀJÑ. 3,131.] *ślāghanīyatām*
 [Spr. 167.] *devatvam*
 [171.] [500.] [KĀM. NĪTIS. 15,9.] [RĀJA-TAR. 1,283.] [MĀRK. P. 23,65.] [BHAṬṬ. 6,49.] [SARVADARŚANAS. 170,9.]
-  <sub>DCS 1438 · attested</sub>
+  <sub>attested</sub>

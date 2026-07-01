@@ -10,4 +10,4 @@
 [ŚAT. BR. 2,6,1,3.]
 - **EN:** — *upod* to lead upward: *pitṝṃ chreyāṃsaṃ lokamuponnayati*
 [ŚAT. BR. 2,6,1,3.]
-  <sub>DCS 2376 · attested</sub>
+  <sub>attested</sub>

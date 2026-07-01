@@ -22,7 +22,7 @@
 [AV. 4,24,7.] [2,30,2.] [10,85,23.] *sa evainaṃ mitreṇa saṃnayati*
 [TS. 2,1,8,4.] to join together: *iti dakṣaḥ kaviryajñaṃ bhadra rudrāvamarśitam — saṃninye*
 [BHĀG. P. 4,7,48.]
-  <sub>DCS 2376 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) lenken, leiten: *yuvaṃ mitremaṃ janaṃ yatathaḥ sa caṃ nayathaḥ*
 [ṚV. 5,65,6.] *saṃ yannṝnna rodasī ninetha*
@@ -34,7 +34,7 @@
 - **EN:** — 2) to steer, guide: *yuvaṃ mitremaṃ janaṃ yatathaḥ sa caṃ nayathaḥ*
 [ṚV. 5,65,6.] *saṃ yannṝnna rodasī ninetha*
 [7,28,3.]
-  <sub>DCS 2376 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) führen, richten auf: *brahmaṇyātmānaṃ saṃnayan*
 [BHĀG. P. 6,10,11.] herbeiführen
@@ -64,7 +64,7 @@
 [ŚAT. BR. 11,1,5,3.]
 [ṢAḌV. BR. 4,6] (med.). *mṛgavatyā śyāmayā ca muradviṣe . naikanaivedyasāmagrī samanīyata nityaśaḥ* Inschr. in
 [Journ. of the Am. Or. S. 7,12,12. 13.]
-  <sub>DCS 2376 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) Jmd beschenken mit (instr.): *samindra ṇo manasā neṣi -gobhiḥ saṃ sūribhirharivaḥ saṃ svasti*
 [ṚV. 5,42,4.] [6,54,1.]
@@ -73,7 +73,7 @@
 [ṚV. 5,42,4.] [6,54,1.]
 - **EN:** — 4) to present someone with (instr.): *samindra ṇo manasā neṣi -gobhiḥ saṃ sūribhirharivaḥ saṃ svasti*
 [ṚV. 5,42,4.] [6,54,1.]
-  <sub>DCS 2376 · attested</sub>
+  <sub>attested</sub>
 
 **5)** — 5) erstatten, heimgeben, bezahlen: *ṛṇam*
 [ṚV. 8,47,17.]
@@ -94,7 +94,7 @@
 [AIT. BR. 7,13.]
 [TS. 2,5,3,3.]
 [M. 9,107.]
-  <sub>DCS 2376 · attested</sub>
+  <sub>attested</sub>
 
 **6)** — 6) vermengen: *lohitadrapsena saṃnīya*
 [KAUŚ. 36.] *mantham*
@@ -131,9 +131,9 @@
 [ŚAT. BR. 1,6,4,10.] [11.] [2,4,4,15.]
 [KĀTY. ŚR. 4,2,17.] *asaṃnayant* 36.
 — Vgl. *saṃnaya, ˚neya* .
-  <sub>DCS 2376 · attested</sub>
+  <sub>attested</sub>
 
 **note)** — Vgl. *saṃnaya, ˚neya* .
 
 - **RU:** — Vgl. *saṃnaya, ˚neya* .
-  <sub>DCS 2376 · lexicographic</sub>
+  <sub>lexicographic</sub>

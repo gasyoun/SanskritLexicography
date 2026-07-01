@@ -77,13 +77,13 @@ u. s. w.): *tasmai pratnamiti pūrvaṃ karmābhivadati*
 [PRAŚNOP. 2,2.] *yo 'nṛtamabhivadati*
 [6,1.] *priyāṃ vācamabhivadantyaḥ*
 [MUṆḌ. UP. 1,2,6.]
-  <sub>DCS 197 · attested</sub>
+  <sub>attested</sub>
 
 **caus-preamble)** — Vgl. *abhivadana, ˚vāda, ˚vādin, ˚vādya* . — caus.
 
 - **RU:** — Vgl. *abhivadana, ˚vāda, ˚vādin, ˚vādya* . — caus.
 - **EN:** — Vgl. *abhivadana, ˚vāda, ˚vādin, ˚vādya* . — caus.
-  <sub>DCS 197 · attested</sub>
+  <sub>attested</sub>
 
 **caus-1)** 1) Jmd anreden, begrüssen (oft mit Ergänzung der Person); med.:
 [LĀṬY. 3,3,15.] *guruṃ gotreṇābhivādayeta*
@@ -146,7 +146,7 @@ u. s. w.): *tasmai pratnamiti pūrvaṃ karmābhivadati*
 [KATHĀS. 63,74.]
 [BHĀG. P. 5,3,16.] to announce oneself to (dat.): *ācāryāya*
 [ŚĀṄKH. GṚHY. 4,12.]
-  <sub>DCS 197 · attested</sub>
+  <sub>attested</sub>
 
 **caus-2)** — 2) med. Jmd (acc.) durch Jmd (acc. oder instr.) begrüssen lassen
 [P. 1,4,53], Vārtt.
@@ -158,7 +158,7 @@ u. s. w.): *tasmai pratnamiti pūrvaṃ karmābhivadati*
 - **EN:** — 2) med. to have someone (acc.) greeted by someone (acc. or instr.)
 [P. 1,4,53], Vārtt.
 [VOP. 5,5.]
-  <sub>DCS 197 · attested</sub>
+  <sub>attested</sub>
 
 **caus-3)** — 3) Etwas hersagen lassen: *āśiṣamabhyavādayat*
 [BHĀG. P. 4,12,28.]
@@ -167,7 +167,7 @@ u. s. w.): *tasmai pratnamiti pūrvaṃ karmābhivadati*
 [BHĀG. P. 4,12,28.]
 - **EN:** — 3) to have something recited: *āśiṣamabhyavādayat*
 [BHĀG. P. 4,12,28.]
-  <sub>DCS 197 · attested</sub>
+  <sub>attested</sub>
 
 **caus-4)** — 4) erklingen lassen, spielen (ein musikalisches Instrument): *vāditrāṇi*
 [MBH. 3,14386.]
@@ -176,20 +176,20 @@ u. s. w.): *tasmai pratnamiti pūrvaṃ karmābhivadati*
 [MBH. 3,14386.]
 - **EN:** — 4) to cause to resound, to play (a musical instrument): *vāditrāṇi*
 [MBH. 3,14386.]
-  <sub>DCS 197 · attested</sub>
+  <sub>attested</sub>
 
 **caus-closing)** — Vgl. *abhivādaka* fg., *˚vādanīya* .
 
 - **RU:** — Vgl. *abhivādaka* fg., *˚vādanīya* .
 - **EN:** — Vgl. *abhivādaka* fg., *˚vādanīya* .
-  <sub>DCS 197 · attested</sub>
+  <sub>attested</sub>
 
 **header)** — *abhi*
  1) Jmd anreden, begrüssen
 
 - **RU:** — *abhi*
  1) обращаться к кому-л., приветствовать
-  <sub>DCS 197 · attested</sub>
+  <sub>attested</sub>
 
 **1) Jmd anreden, begrüssen)** [AIT. BR. 3,28.] [4,20.]
 [TS. 2,5,8,3.] *pūrvo rājño 'bhibadati*
@@ -224,4 +224,4 @@ u. s. w.): *tasmai pratnamiti pūrvaṃ karmābhivadati*
 [15668.] [4,223.] [5,4230.] [R. 1,70,33.] [2,110,21] ([119,20] [GORR.]). [KATHĀS. 45,99.] *jāraṃ cauretyabhivadan* кто прелюбодея называет вором
 [YĀJÑ. 2,301.] med. [MBH. 5,923.] st. *abhivāde*
 [3,1836] читает [ed. Bomb.] *abhivādaye* .
-  <sub>DCS 197 · attested</sub>
+  <sub>attested</sub>

@@ -19,7 +19,7 @@
 [ŚAT. BR. 13,8,4,1.]
 - **EN:** 1) to set around, fence in by piercing/staking around: *śaṅkubhiḥ*
 [ŚAT. BR. 13,8,4,1.]
-  <sub>DCS 4 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) schlagen: *urāṃsi parinighnantyaḥ* (so beide Ausgg.)
 [MBH. 3,12261.]
@@ -28,4 +28,4 @@
 [MBH. 3,12261.]
 - **EN:** — 2) to strike: *urāṃsi parinighnantyaḥ* (thus both Ausgg.)
 [MBH. 3,12261.]
-  <sub>DCS 4 · attested</sub>
+  <sub>attested</sub>

@@ -10,4 +10,4 @@
 [MED.] p. 1) в конце comp. хранящий, оберегающий, охраняющий; s. *apāna˚, āprīta˚, āyuṣpā, ṛta˚, kratu˚, go˚, cakṣuṣpā, chardiṣpā, tanū˚, tapuṣpā, nidhi˚, niṣikta˚, paraspā, prāṇa˚* u. s. w. и также 2. *pa* .
 - **EN:** 4. *pā*¦ (= 3. *pā*) _adj._ (*pā* [!] *pātari*
 [MED.] p. 1) at the end of a comp. guarding, keeping safe, sheltering; s. *apāna˚, āprīta˚, āyuṣpā, ṛta˚, kratu˚, go˚, cakṣuṣpā, chardiṣpā, tanū˚, tapuṣpā, nidhi˚, niṣikta˚, paraspā, prāṇa˚* u. s. w. and also 2. *pa* .
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>

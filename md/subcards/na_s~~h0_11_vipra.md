@@ -35,11 +35,11 @@ to be lost, i.e. to be ineffectual, to bear no fruit
 [R. 3,55,6.] *sarvathā vipranaṣṭāste — nahi vipro gatiṃ teṣāṃ vāsaṃ vāpi*
 [MBH. 4,877.] — caus. to cause to be lost
 [SADDH. P. 4,23,b.]
-  <sub>DCS 1422 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — caus. verloren gehen lassen
 [SADDH. P. 4,23,b.]
 
 - **RU:** — caus. заставлять исчезать, приводить к утрате
 [SADDH. P. 4,23,b.]
-  <sub>DCS 1422 · attested</sub>
+  <sub>attested</sub>

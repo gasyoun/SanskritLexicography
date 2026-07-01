@@ -19,7 +19,7 @@
 [PAÑCAV. BR. 13,11,10.] to rush upon someone (acc.): *bhallaiḥ* u. s. w. *pratyaghnanmām*
 [MBH. 3,12217.] *indramasurānpratijaghnuṣam*
 [7,1120.]
-  <sub>DCS 245 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) wiederschlagen: *pratihanyāddhataḥ*
 [MBH. 3,1091.]
@@ -34,7 +34,7 @@
 [MBH. 3,1091.]
 [Spr. (II) 151.] [5611.] *pratihantuṃ* (so to be read with the [ed. Bomb.]) *na cecchati hantāram*
 [MBH. 12,8437.]
-  <sub>DCS 245 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) zerschlagen, brechen: *parṣān*
 [ṚV. 10,48,7.]
@@ -49,7 +49,7 @@
 [ṚV. 10,48,7.]
 [NIR. 3,10.] *abhimātim*
 [ṚV. 8,25,15.]
-  <sub>DCS 245 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) anspiessen: *sṛke yattvā pratyahandeva ekaḥ*
 [ṚV. 1,32,12.]
@@ -58,7 +58,7 @@
 [ṚV. 1,32,12.]
 - **EN:** — 4) to pierce, spit (on a stake): *sṛke yattvā pratyahandeva ekaḥ*
 [ṚV. 1,32,12.]
-  <sub>DCS 245 · attested</sub>
+  <sub>attested</sub>
 
 **5)** — 5) Jmd oder Etwas zurückschlagen, abwehren, sich wehren gegen
 [RAGH. 9,60.]
@@ -130,7 +130,7 @@
 [R. 2,52,24] ([49,18] [GORR.]). *yauvarājyābhiṣecanam* to thwart, foil
 [R. GORR. 2,20,25.] *pratihaṃsi mamājñām*
 [7,59,14.]
-  <sub>DCS 245 · attested</sub>
+  <sub>attested</sub>
 
 **6)** — 6) pass. mit abl. fern gehalten werden von, verlustig gehen: *niḥśreyasāt*
 [WINDISCHMANN, Sancara 94.]
@@ -139,7 +139,7 @@
 [WINDISCHMANN, Sancara 94.]
 - **EN:** — 6) pass. with abl. to be kept away from, to be deprived of: *niḥśreyasāt*
 [WINDISCHMANN, Sancara 94.]
-  <sub>DCS 245 · attested</sub>
+  <sub>attested</sub>
 
 **7)** — 7) absol. *˚hatya* in entgegengesetzter Richtung: *kṛṣati*
 [KAUŚ. 20.]
@@ -148,7 +148,7 @@
 [KAUŚ. 20.]
 - **EN:** — 7) absol. *˚hatya* in the opposite direction: *kṛṣati*
 [KAUŚ. 20.]
-  <sub>DCS 245 · attested</sub>
+  <sub>attested</sub>
 
 **8intro)** — 8) partic. *˚hata*
 - **EN:** — 8) partic. *˚hata*
@@ -358,7 +358,7 @@
 [KATHĀS. 123,226.] persons
 [MBH. 13,6840.]
 [KATHĀS. 42,86.] [49,247.] [Verz. d. Oxf. H. 247,b, No. 624.]
-  <sub>DCS 245 · attested</sub>
+  <sub>attested</sub>
 
 **8)** — 8) partic. *˚hata*
  a) wogegen Etwas schlägt: *tīvrāghātapratihatataruskandha*
@@ -377,4 +377,4 @@
 [ŚĀK. 50.] *arkaraśmi˚ (vaḍabhī)*
 [R. 3,61,9.] = *pratiskhalita*
 [H. an. 4,113.]
-  <sub>DCS 245 · attested</sub>
+  <sub>attested</sub>

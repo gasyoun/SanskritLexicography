@@ -10,4 +10,4 @@
 [VARĀH. BṚH. S. 19,18] *(pepīyate* там же также pass.; согласно этому в u. 2. *pā* intens. слова «с pass. Bed.» следует переставить строкой выше перед *pepīyate*).
 - **EN:** — intens. *bobhujyate* with pass. Bed. to be devoured repeatedly: *bobhujyate 'tithisuhṛtsvajanaiḥ sahānnam*
 [VARĀH. BṚH. S. 19,18] *(pepīyate* ibid. is likewise pass.; accordingly in u. 2. *pā* intens. the words «with pass. Bed.» are to be placed one line higher before *pepīyate*).
-  <sub>DCS 2938 · attested</sub>
+  <sub>attested</sub>

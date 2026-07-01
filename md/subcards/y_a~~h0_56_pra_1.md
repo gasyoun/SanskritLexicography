@@ -32,4 +32,4 @@ Schol. zu [P. 8,4,30.] велеть выступать в поход
 [ŚAT. BR. 11,8,1,3.] Vgl. *prayāpaṇa* fgg. — desid. желать отправиться в путь: *rājānaṃ prayiyāsantam*
 [ŚAT. BR. 14,7,1,44.] — caus. vom desid.: побуждать кого-л. к тому, чтобы он хотел отправиться в путь: *prayiyāsayantaḥ*
 [BHAṬṬ. 3,25.]
-  <sub>DCS 1438 · attested</sub>
+  <sub>attested</sub>

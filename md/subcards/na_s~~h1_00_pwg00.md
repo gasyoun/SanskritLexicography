@@ -10,4 +10,4 @@
 [P. 8,2,63], Sch.
 [VOP. 3,149.]
 — Vgl. *jīva˚* .
-  <sub>DCS 1422 · attested</sub>
+  <sub>attested</sub>

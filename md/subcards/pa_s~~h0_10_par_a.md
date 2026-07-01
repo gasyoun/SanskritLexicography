@@ -28,4 +28,4 @@
 [ŚAT. BR. 6,3,3,6.] [9,5,1,9.] *nadyai pāram*
 [11,1,6,6.] [14,1,3,7.] *yamadūrātparāpaśyet*
 [KĀTY. ŚR. 25,4,1.]
-  <sub>DCS 7 · attested</sub>
+  <sub>attested</sub>

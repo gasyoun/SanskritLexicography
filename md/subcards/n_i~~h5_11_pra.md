@@ -54,4 +54,4 @@
 [SARVADARŚANAS. 128,4. 135,10. 154,3.] *bhagavānkaṇādaḥ praṇināya sūtram*
 [111,12.] *praṇītatva* _n._
 [127,8. 129,1.]
-  <sub>DCS 2376 · mixed</sub>
+  <sub>mixed</sub>

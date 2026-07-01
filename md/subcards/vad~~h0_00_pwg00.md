@@ -49,7 +49,7 @@ v. l. *saṃdeśane, bhāṣaṇe*), *vadet, udeyam* (
 [ŚAT. BR. 1,5,1,18.] *vaditum; uditvā*
 [P. 1,2,7.]
 [VOP. 26,204.] *˚udya*; pass. *udyate, avādi, udita* .
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **1a)** 1) act.
  a) reden, sagen, sprechen: *yaḥ purā sute vadāmi kāni cit*
@@ -322,4 +322,4 @@ v. l. *saṃdeśane, bhāṣaṇe*), *vadet, udeyam* (
 [BHAṬṬ. 5,96.] The person in the acc. with *abhiḥ vada māmabhi*
 [MBH. 7,98.] in the gen. [KATHĀS. 18,142.] — pass.: *tābhyāmavādi* impers.
 [RĀJA-TAR. 1,219.] [3,23.] *udita*
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>

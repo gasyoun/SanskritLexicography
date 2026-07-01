@@ -13,7 +13,7 @@
 - **EN:** — *abhini*
  1) to pierce, impale, spit (on something)
 [ṚV. 1,162,11.]
-  <sub>DCS 10 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) schlagen auf: *anyo'nyamabhinighnatāṃ śarāṇām*
 [R. 6,81,25.] *dundubhīn* die Trommeln
@@ -40,7 +40,7 @@
 [MBH. 3,332.] *yathā śailasya mahataḥ śailenaivābhinighnataḥ*
 [4,1424] according to a reading noted by
 [NĪLAK.].
-  <sub>DCS 10 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) partic. *˚hata* Bez. eines Svarita, der sonst *˚hita* heisst,
 [AV. PRĀT. 20,4.] [10.] Comm. zu [8.]
@@ -49,4 +49,4 @@
 [AV. PRĀT. 20,4.] [10.] Comm. к [8.]
 - **EN:** — 3) partic. *˚hata* Bez. of a Svarita, which otherwise is called *˚hita*,
 [AV. PRĀT. 20,4.] [10.] Comm. to [8.]
-  <sub>DCS 10 · attested</sub>
+  <sub>attested</sub>

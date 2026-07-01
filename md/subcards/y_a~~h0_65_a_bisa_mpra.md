@@ -10,4 +10,4 @@
 [MBH. 6,3762.] *saṃvārayiṣṇūnabhivārayitvā* [ed. Bomb.] st. *āvārayiṣyannabhisaṃprayāya* der [ed. Calc.]
 - **EN:** — *abhisaṃpra* {to go to, to draw near, to approach}
 [MBH. 6,3762.] *saṃvārayiṣṇūnabhivārayitvā* [ed. Bomb.] st. *āvārayiṣyannabhisaṃprayāya* the [ed. Calc.]
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>

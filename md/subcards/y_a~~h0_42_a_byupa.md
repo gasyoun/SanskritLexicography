@@ -19,7 +19,7 @@
 [R. 1,73,5.] [4,62,12.] *niveśāyābhyupāyāma[ḥ]*
 [MBH. 7,1967.] *tau rājaputrau sahasābhyupāyācchāyeva rāhordivi candrasūryau*
 [R. 2,29,33.]
-  <sub>DCS 4 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) in einen Zustand u. s. w. kommen: *śamam* zur Ruhe gelangen
 [MĀRK. P. 131,19.]
@@ -28,4 +28,4 @@
 [MĀRK. P. 131,19.]
 - **EN:** — 2) to come into a state u. s. w.: *śamam* to attain rest
 [MĀRK. P. 131,19.]
-  <sub>DCS 4 · attested</sub>
+  <sub>attested</sub>

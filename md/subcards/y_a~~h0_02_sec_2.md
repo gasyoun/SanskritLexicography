@@ -34,10 +34,10 @@
 [KATHĀS. 18,292.] *svarṇadvīpam*
 [36,80.] *astaṃ mahīdharaṃ śreṣṭhaṃ yiyāsati divākaraḥ* so v. a. is about to set
 [MBH. 7,6257.]
-  <sub>DCS 5678 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — Vgl. *yiyāsu* .
 
 - **RU:** — Vgl. *yiyāsu* .
 - **EN:** — Vgl. *yiyāsu* .
-  <sub>DCS 5678 · attested</sub>
+  <sub>attested</sub>

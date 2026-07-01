@@ -13,10 +13,10 @@
 - **EN:** — *pratyā*
  1) *˚naya surendrasya trailokyamidamavyayam* to restore, recover
 [HARIV. 14199.]
-  <sub>DCS 32 · attested</sub>
+  <sub>attested</sub>
 
 **add)** — Vgl. *pratyānayana, pratyāneya* .
 
 - **RU:** — Vgl. *pratyānayana, pratyāneya* .
 - **EN:** — Vgl. *pratyānayana, pratyāneya* .
-  <sub>DCS 32 · attested</sub>
+  <sub>attested</sub>

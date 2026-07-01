@@ -119,9 +119,9 @@
 [HARIV. 6210] (отсутствует в более новом Ausg.) — *mānayate stambhe*
 [DHĀTUP. 33,35.] *garvake*
 [VOP.]
-  <sub>DCS 4704 · attested</sub>
+  <sub>attested</sub>
 
 **closing_note)** — Vgl. *mānana, mānanīya, mānya* .
 
 - **RU:** — Vgl. *mānana, mānanīya, mānya* .
-  <sub>DCS 4704 · attested</sub>
+  <sub>attested</sub>

@@ -79,10 +79,10 @@
 [AV. 9,2,2.] *jitamasmākamudbhinnamasmākam*
 [10,5,36.] [16,8,1.] [4,38,1.] [PAÑCAV. BR. 16,16,2. 3.] *anyo 'nyaśaṅkayodbhinnān — vaśamānayet* those who have come to the top
 [KĀM. NĪTIS. 17,45.]
-  <sub>DCS 78 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — Vgl. *udbhid* fg., *udbheda* fg.
 
 - **RU:** — Vgl. *udbhid* fg., *udbheda* fg.
 - **EN:** — Vgl. *udbhid* fg., *udbheda* fg.
-  <sub>DCS 78 · attested</sub>
+  <sub>attested</sub>

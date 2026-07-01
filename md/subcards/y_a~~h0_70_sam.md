@@ -58,7 +58,7 @@
 [R. 6,33,34.] *punarapi vīravaraḥ saṃyātaḥ*
 [VET. in LA. (III) 28,15.] *vidhūmāmiha* (thus the [ed. Bomb.]) *saṃyāntīmulkām*
 [MBH. 7,8881.]
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) in einen Zustand, eine Lage, ein Verhältniss treten, theilhaftig werden: *nirvāṇam*
 [BHĀG. P. 11,14,46.] *ekatām*
@@ -82,7 +82,7 @@
 [BHAG. 2,22.] *śubhāllokān*
 [MBH. 3,6013.] *apāvṛtamṛtam*
 [BHĀG. P. 3,9,15.]
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) sich richten nach (acc.): *gurumiva kṛtamagryaṃ karma* (acc.) *saṃyāti daivam* (nom.)
 [MBH. 13,341.] — *saṃyayuḥ*
@@ -94,10 +94,10 @@
 - **EN:** — 3) {to conform to, comply with} (acc.): *gurumiva kṛtamagryaṃ karma* (acc.) *saṃyāti daivam* (nom.)
 [MBH. 13,341.] — *saṃyayuḥ*
 [HARIV. 15892] erroneous for *khaṃ yayuḥ*, as the more recent Ausg. reads.
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — Vgl. *saṃyāna* .
 
 - **RU:** — Vgl. *saṃyāna* .
 - **EN:** — Vgl. *saṃyāna*.
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>

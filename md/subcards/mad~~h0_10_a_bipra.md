@@ -20,7 +20,7 @@
 [8,12,13.] med.: *tvāmagne vasupatiṃ vasūnāmabhi pra mande adhvareṣu*
 [5,4,1.] *kayā tvaṃ na ūtyābhi pra mandase vṛṣan*
 [8,82,19.]
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) verwirren, betäuben, confundere (vgl. *pra* 2. und *vi): abhi pra manda purudatra māyāḥ*
 [ṚV. 6,18,9.]
@@ -29,9 +29,9 @@
 [ṚV. 6,18,9.]
 - **EN:** — 2) to confuse, to stupefy, confundere (vgl. *pra* 2. and *vi): abhi pra manda purudatra māyāḥ*
 [ṚV. 6,18,9.]
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>
 
 **head-ref)** — *abhipra*
 
 - **RU:** — *abhipra*
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>

@@ -10,4 +10,4 @@
 [GĪT. 7,20.]
 - **EN:** — *pari* caus. to appease, cause to cease: *kalikaluṣaṃ janayatu pariśamitam*
 [GĪT. 7,20.]
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>

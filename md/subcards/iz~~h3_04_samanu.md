@@ -10,4 +10,4 @@
 [R. 3,66,1.]
 - **EN:** *samanu* to search through: *āśramaṃ samanviṣya*
 [R. 3,66,1.]
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>

@@ -109,10 +109,10 @@ u. s. w. [CHĀND. UP. 8,7,2.] [4,1,7.] [P. 5,2,75.] *nikṣepasyāpahartāramani
 [AK. 3,2,54.]
 [H. 1491.] *kadācidapi nāsmābhiranveṣitaḥ (hradaḥ)*
 [PAÑCAT. 77,11.]
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>
 
 **closing)** — Vgl. *anveṣa* fgg.
 
 - **RU:** — Vgl. *anveṣa* fgg.
 - **EN:** — Vgl. *anveṣa* fgg.
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>

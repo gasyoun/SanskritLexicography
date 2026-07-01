@@ -34,12 +34,12 @@
 - **EN:** — 2) to pass over, to transgress: *ati vāyo sasato yāhi*
 [ṚV. 1,135,7.] to overstep, to transgress: *nideśam*
 [BHĀG. P. 10,70,27.]
-  <sub>DCS 5678 · attested</sub>
+  <sub>attested</sub>
 
 **ati-head)** — *ati*
 
 - **RU:** — *ati*
-  <sub>DCS 5678 · attested</sub>
+  <sub>attested</sub>
 
 **ati-1)** 1) vorübergehen: *mātiyāsīḥ*
 [BHAṬṬ. 2,51.] (einen Ort) passiren, vorüberkommen an, überholen; superare: *(rathaḥ) yenātiyātho duritāni viśvā*
@@ -60,4 +60,4 @@
 [BHĀG. P. 1,6,14.] Сюда, вероятно, относится также *aśvīva tā ati yeṣaṃ* (от *yeṣ* по
 [SĀY.]) *rathena*
 [ṚV. 2,27,16.]
-  <sub>DCS 5678 · attested</sub>
+  <sub>attested</sub>

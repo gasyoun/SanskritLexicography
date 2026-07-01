@@ -39,7 +39,7 @@
 [LĀṬY. 4,11,10.] *anupaśya yathā pūrve pratipaśya yathāpare*
 [KAṬHOP. 1,6.] *dakṣiṇasyāṃ diśi yamaṃ pratyapaśyaṃ vyavasthitam*
 [MBH. 3,12005.] [7,3944.] [8,1242.] [12,9760.] [16,162.]
-  <sub>DCS 19 · attested</sub>
+  <sub>attested</sub>
 
 **2)** [N. 12,18.] sehen so v. a. kennen: *nahi — sainye 'sminpratipaśyāmi ya enaṃ viṣahedyudhi*
 - **EN:** [N. 12,18.], 'to see', so v. a. 'to know': *nahi — sainye 'sminpratipaśyāmi ya enaṃ viṣahedyudhi*

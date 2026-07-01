@@ -10,4 +10,4 @@
 [ṚT. 1,1.]
 - **EN:** — *abhyupa*, partic. *˚śānta* stilled, cooled: *˚manmatha*
 [ṚT. 1,1.]
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>

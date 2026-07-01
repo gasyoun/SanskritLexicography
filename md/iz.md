@@ -12,7 +12,7 @@ _PWG article — 37 sub-card(s), 191 sense(s) · RU 92/191 · EN 161/191_
 - **RU:** *iṣ*¦ Привести что-либо в (быстрое) движение. Этот корень, который вплоть до отдельных ответвлений значения соответствует греч. ἵημι, ἵεμαι, образует пять основ настоящего времени, к которым примыкают и некоторые другие модификации флексии. *iṣayati* s. u. *iṣay* .
 - **EN:** *iṣ*¦ To set something in (rapid) motion. This root, which corresponds to the Greek
 ἵημι, ἵεμαι down into the individual branches of its meaning, forms five present stems, to which a few further modifications of the inflexion are also attached. *iṣayati* s. u. *iṣay* .
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>
 
 ## iṣ
 
@@ -32,7 +32,7 @@ _PWG article — 37 sub-card(s), 191 sense(s) · RU 92/191 · EN 161/191_
 [BRĀHMAṆA] runs counter to the whole of ancient usage; originally either: sprinkle the waters! or = *preṣya*). med.: *ye vāsmiṃ chuklamīṣire* to hurl, to throw
 [AV. 5,19,3.] Here, perhaps, may also belong, as aor.: *stomairiṣemāgnaye* with praises we wish to Agni sprinkle for the u. s. w. (butter u. s. w.) or else amount to as much as *stomāniṣema*
 [ṚV. 8,44,27.] — partic. *iṣita*
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>
 
 **PPP-1)** 1) bewegt, getrieben; ausgestossen (von der Stimme); von einem Schiff [ṚV. 1,182,6.] Feuer durch Wind [10,91,7.] *vācaḥ* [AV. 10,8,33.] *yebhirvāta iṣita pravāti* [35.] *yannakṣatraṃ patati jātavedaḥ somena rājñā iṣitaṃ parastāt* geschleudert (von Sternschnuppen) [KAUŚ. 128.]
 
@@ -43,7 +43,7 @@ _PWG article — 37 sub-card(s), 191 sense(s) · RU 92/191 · EN 161/191_
 [AV. 10,8,33.] *yebhirvāta iṣita pravāti*
 [35.] *yannakṣatraṃ patati jātavedaḥ somena rājñā iṣitaṃ parastāt* hurled (of shooting stars)
 [KAUŚ. 128.]
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>
 
 **PPP-2)** — 2) zur Eile getrieben, gesandt; eilig: *indrasya dūtīriṣitā carāmi* [ṚV. 10,108,2.] [165,1.] [2.] *virabharadiṣitaḥ śyeno adhvare* [11,4.] *gavyangrāma iṣita indrajūtaḥ* [3,33,11.] *sa tatkṛdhīṣitastūyamagne* [6,5,6.] [AV. 6,116,2.]
 
@@ -53,7 +53,7 @@ _PWG article — 37 sub-card(s), 191 sense(s) · RU 92/191 · EN 161/191_
 [11,4.] *gavyangrāma iṣita indrajūtaḥ*
 [3,33,11.] *sa tatkṛdhīṣitastūyamagne*
 [6,5,6.] [AV. 6,116,2.]
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>
 
 **PPP-3)** — 3) bewogen, aufgemuntert, aufgefordert: *devānyakṣadiṣito yajīyān* [ṚV. 3,4,3.] [3,2.] [6,11,1.] [VS. 21,61.] *asya pātaṃ dhiyeṣitā* [ṚV. 3,12,1.] [32,4.] [16.] *divo no * * vṛṣṭimiṣito rirīhi* [10,98,10.] [6,49,10.] [7,33,13.] *jyeṣṭhaṃ mātā sūnave bhāgamādhādanvasya ketamiṣitaṃ savitrā* [2,38,5.] *iṣitā daivyā hotāro bhadravācyāya preṣito mānuṣaḥ sūktavākāya* [ŚAT. BR. 1,8,3,10.] *manasā vā iṣitā vāgvadati* [AIT. BR. 2,5.] [KENOP. 1.]
 
@@ -69,13 +69,13 @@ _PWG article — 37 sub-card(s), 191 sense(s) · RU 92/191 · EN 161/191_
 [ŚAT. BR. 1,8,3,10.] *manasā vā iṣitā vāgvadati*
 [AIT. BR. 2,5.]
 [KENOP. 1.]
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>
 
 **final)** — Vgl. *aśveṣita, indreṣita, deveṣita, puruṣeṣita, martyeṣita, yuṣmeṣita, rajeṣita, śuneṣita* .
 
 - **RU:** — Vgl. *aśveṣita, indreṣita, deveṣita, puruṣeṣita, martyeṣita, yuṣmeṣita, rajeṣita, śuneṣita* .
 - **EN:** — Vgl. *aśveṣita, indreṣita, deveṣita, puruṣeṣita, martyeṣita, yuṣmeṣita, rajeṣita, śuneṣita* .
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>
 
 ## iṣ
 
@@ -94,14 +94,14 @@ _PWG article — 37 sub-card(s), 191 sense(s) · RU 92/191 · EN 161/191_
 [R. 3,75,73.] *yāvadasau somilako granthimanveṣyati* (read: *anviṣyati) . tāvatsuvarṇaṃ nāsti*
 [PAÑCAT. 134,25.] med.: *mṛgamanviṣyamāṇaḥ* (?)
 [HIT. 34,18.]
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — Vgl. 2. 3. 4 und 5. *iṣ* mit *anu* .
 
 - **RU:** — Vgl. 2. 3. 4 und 5. *iṣ* mit *anu* .
 - **EN:** — Vgl.
 2. 3. 4 and 5. *iṣ* with *anu* .
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>
 
 ## iṣ
 
@@ -113,7 +113,7 @@ _PWG article — 37 sub-card(s), 191 sense(s) · RU 92/191 · EN 161/191_
 - **RU:** — *api* med. стремиться вслед, пытаться настичь: *asya vrateṣvapi soma iṣyate* [ṚV. 9,69,1.]
 - **EN:** — *api* med. to strive after, to try to catch up with: *asya vrateṣvapi soma iṣyate*
 [ṚV. 9,69,1.]
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>
 
 ## iṣ
 
@@ -135,7 +135,7 @@ _PWG article — 37 sub-card(s), 191 sense(s) · RU 92/191 · EN 161/191_
 [6,3,2,3.] Vgl. further below the caus. — gerund. *praiṣam* in the combination *praiṣaiḥ* (or *iṣṭibhiḥ) praiṣamicchati* he seeks, by exhortations and calls, to drive up, d. h. he seeks to drive up (like game): *yajño vai devebhya udakrāmattamiṣṭibhiḥ praiṣamaicchan*
 [AIT. BR. 1,2.] *yajño˚ taṃ praiṣaiḥ praiṣamaicchan*
 [3,9.] [ŚAT. BR. 3,9,3,28.] [13,1,4,1.]
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) act. auffordern, insbes. regelmässig gebraucht von der Aufforderung, welche der das Opfer leitende Priester an einen andern dabei fungirenden richtet, damit dieser einen Spruch oder eine Handlung beginne. *adhvaryupreṣito maitrāvaruṇaḥ preṣyati praiṣai rhotāraṃ hotā yajati* [ĀŚV. ŚR. 3,2. 1,5.] *prahvastiṣṭhanpreṣyati* [AIT. BR. 3,9.] [AV. 11,3,14.] *rathaṃtaraṃ gāyeti preṣyati* [KĀTY. ŚR. 4,9,6.] Das Object, auf welches die Aufforderung geht, steht im acc.: *sāma preṣyati* (er fordert auf zu einem Sāman mit den Worten) *gāya brūhīti vā* [KĀTY. ŚR. 10,8,16.] *śaunaḥśepaṃ ca preṣyati* [15,6,1.] [20,3,1.] Ebenso ist auch der häufige imperat. *preṣya* mit begleitendem acc. oder gen. ([P. 2,3,61]) nicht geradezu durch bringe dar zu erklären, sondern als abgekürzte Redeweise aufzufassen für fordere auf zur Darbringung (oder Recitation). Wo gen. steht, ist dieser partitiver Art; z. B. *agnīṣomābhyāṃ chāgasya vapāṃ medaḥ preṣya* [ŚAT. BR. 3,8,2,27] sind Worte des Adhvaryu an den Maitrāvaruṇa: richte deine Aufforderung (an den Hotar) in Betreff der Darbringung von Netz und Fett des Bocks für Agni und Soma. *samidhaḥ preṣyeti* [3,8,1,4.] *dhānāsomānprasthitānpreṣya* [4,3,3,9.] *chāgānāṃ haviḥ prasthitaṃ preṣyeti* [5,1,3,14.] Vgl. Vārtt. zu [P. 2,3,61.] Mit dat. allein: fordere auf zur Darbringung (Recitation) für einen Gott u. s. w.: *agnaye sviṣṭakṛte preṣya* [ŚAT. BR. 3,8,3,34.] *svāhākṛtibhyaḥ preṣya* [2,23.] *ādityebhyaḥ preṣya* [4,3,5,20.] Die Bedeutung bringe dar kann mittelbar nur dann eintreten, wenn der Maitrāvaruṇa zugleich die Stelle des Hotar versieht: *samaitrāvaruṇe (paśusomādau karmaṇi) preṣyetyāha yajasthāne* [KĀTY. ŚR. 6,4,10]; vgl. auch [AIT. BR. 2,5.] *pre3ṣya* [P. 8,2,91.] S. auch *praiṣa* und *praiṣya* . — caus. *preṣayati*
 
@@ -159,7 +159,7 @@ With dat. alone: call upon (someone) for the offering (recitation) to a god u. s
 [KĀTY. ŚR. 6,4,10]; vgl. also
 [AIT. BR. 2,5.] *pre3ṣya*
 [P. 8,2,91.] S. also *praiṣa* and *praiṣya* . — caus. *preṣayati*
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>
 
 **II-1)** 1) schleudern, werfen: *preṣayāmi mahāvegamastramasyā vināśane*
 [R. 3,35,46.] *śarāṃśca*
@@ -201,12 +201,12 @@ With dat. alone: call upon (someone) for the offering (recitation) to a god u. s
 [KATHĀS. 4,21.] [85.] to banish: *mā cāsmai preṣitaṃ rāmam — bhavantaḥ śaṃsiṣuḥ*
 [R. 2,68,8.] to send someone a message, to have someone told: *sa ca me preṣayāmāsa śaivaṃ dhanuranuttamam — mahyaṃ vai dīyatāmiti*
 [1,71,17.]
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>
 
 **PPP-1)** 1) schleudern, werfen: *preṣayāmi mahāvegamastramasyā vināśane* [R. 3,35,46.] *śarāṃśca* — *praiṣayaṃ śālvarājāya* [MBH. 3,850.] *praiṣiṣadrākṣasaḥ prāsam* [BHAṬṬ. 15,77.] (die Augen) richten: *snigdhaṃ vīkṣitamanyato 'pi nayane yatpreṣayantyā tayā* [ŚĀK. 35.] *tatastataḥ preṣitavāmalocanā* [23.]
 
 - **RU:** 1) метать, бросать: *preṣayāmi mahāvegamastramasyā vināśane* [R. 3,35,46.] *śarāṃśca* — *praiṣayaṃ śālvarājāya* [MBH. 3,850.] *praiṣiṣadrākṣasaḥ prāsam* [BHAṬṬ. 15,77.] (глаза) направлять: *snigdhaṃ vīkṣitamanyato 'pi nayane yatpreṣayantyā tayā* [ŚĀK. 35.] *tatastataḥ preṣitavāmalocanā* [23.]
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>
 
 ## iṣ
 
@@ -219,7 +219,7 @@ With dat. alone: call upon (someone) for the offering (recitation) to a god u. s
 - **EN:** — *anupra* caus. to send after, to send out: *anupreṣaya vānarān*
 [R. 4,37,10.] *yātrānupreṣita*
 [KATHĀS. 19,69.]
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>
 
 ## iṣ
 
@@ -232,7 +232,7 @@ With dat. alone: call upon (someone) for the offering (recitation) to a god u. s
 - **EN:** — *abhipra* to call upon, to command: *devānāmenaṃ ghoraiḥ krūraiḥ praiṣairabhipreṣyāmi*
 [AV. 16,7,2.] in the liturg. sense: *tasmānnānabhipreṣitamadhvaryuṇā kiṃ cana kriyate*
 [ŚAT. BR. 4,6,7,19.]
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>
 
 ## iṣ
 
@@ -255,7 +255,7 @@ With dat. alone: call upon (someone) for the offering (recitation) to a god u. s
 [AIT. BR. 2,5]; vgl.
 [ŚAT. BR. 4,6,7,19.]
 [KĀTY. ŚR. 6,5,10.] [8,8,32.]
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>
 
 ## iṣ
 
@@ -266,7 +266,7 @@ With dat. alone: call upon (someone) for the offering (recitation) to a god u. s
 
 - **RU:** — *nipra* s. *pṛśninipreṣita* .
 - **EN:** — *nipra* s. *pṛśninipreṣita* .
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>
 
 ## iṣ
 
@@ -280,7 +280,7 @@ With dat. alone: call upon (someone) for the offering (recitation) to a god u. s
 [BHAṬṬ. 7,108.]
 - **EN:** — *paripra* caus. to send out: *kapivṛṣāḥ paripraiṣayan — mārutim*
 [BHAṬṬ. 7,108.]
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>
 
 ## iṣ
 
@@ -312,7 +312,7 @@ With dat. alone: call upon (someone) for the offering (recitation) to a god u. s
 [NIR. 1,15.]
 [KAUŚ. 16.]
 [KĀTY. ŚR. 21,3,34.] Vgl. *saṃpraiṣa*.
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — caus. senden, schicken, fortschicken, entlassen: *tataḥ saṃpreṣayāmāsa ratnāni vividhāni ca*
 [MBH. 2,1179.] *na khalveṣā matirmahyaṃ yattvāṃ saṃpreṣayāmyaham*
@@ -342,7 +342,7 @@ With dat. alone: call upon (someone) for the offering (recitation) to a god u. s
 [MBH. 14,2200.] *saṃpreṣita*
 [1,3200.] [6012.] [3,14716.] [R. 5,33,25.] [HIT. 93,17.] to send Jmd (gen.) a message
 [MBH. 5,102.]
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>
 
 ## iṣ
 
@@ -379,7 +379,7 @@ With dat. alone: call upon (someone) for the offering (recitation) to a god u. s
 [61,13.] to escape, spring forth: *tubhyaṃ śukrāsaḥ śucayasturaṇyavo madeṣūgrā iṣaṇanta bhurvaṇyapāmiṣanta bhurvaṇi*
 [134,5.] *ṛtena dīrghamiṣaṇanta pṛkṣaḥ*
 [4,23,9.]
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) antreiben, erregen; beleben, fördern: *ūtibhistamiṣaṇo dyumnahūtau*
 [ṚV. 4,16,9.] *gātumiṣṇan*
@@ -403,14 +403,14 @@ With dat. alone: call upon (someone) for the offering (recitation) to a god u. s
 [AV. 8,8,14.] [15.] [11,5,1.]
 [VS. 31,22.] *prāṇā vai devā dhiṣṇyāste hi sarvā dhiya iṣṇanti*
 [ŚAT. BR. 7,1,1,24.] [3,1,23.]
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>
 
 **head)** 2. *iṣ*¦, *iṣṇāti*
 [DHĀTUP. 31,53] (*ābhīkṣṇye*). med. *iṣaṇanta*; aor. *iṣanta*; partic. *iṣṇāna* .
 
 - **RU:** 2. *iṣ*¦, *iṣṇāti*
 [DHĀTUP. 31,53] (*ābhīkṣṇye*). med. *iṣaṇanta*; aor. *iṣanta*; partic. *iṣṇāna* .
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>
 
 ## iṣ
 
@@ -481,7 +481,7 @@ With dat. alone: call upon (someone) for the offering (recitation) to a god u. s
 [4,18,10.] *yudhedāpitvamicchase*
 [8,21,13.] *sunāmā straiṇamicchatām*
 [AV. 8,6,4.] In the idioms
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>
 
 **1a)** a) *icchati manasā* und ähnlichen: haben wollen, herbeiwünschen, erwünschen: *yamaicchāma manasā so3yamāgāt*
 [ṚV. 10,53,2.] *icchāmīddhṛdā manasā cidindram*
@@ -499,7 +499,7 @@ With dat. alone: call upon (someone) for the offering (recitation) to a god u. s
 [6,28,5.] *paṇericcha hṛdi priyam*
 [53,6.] *antaricchanti taṃ jane rudraṃ paro manīṣayā*
 [8,61,3.] [AV. 11,9,8.]
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>
 
 **1b)** — b) *icchati manaḥ* Jmd zu gewinnen suchen: *tasya vā tvaṃ mana icchā sa vā tava*
 [ṚV. 10,10,14.] *marutāṃ mana icchata*
@@ -511,7 +511,7 @@ With dat. alone: call upon (someone) for the offering (recitation) to a god u. s
 - **EN:** — b) *icchati manaḥ* to seek to win someone over: *tasya vā tvaṃ mana icchā sa vā tava*
 [ṚV. 10,10,14.] *marutāṃ mana icchata*
 [AV. 4,15,15.]
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) zu gewinnen —, sich zu verschaffen suchen; erwünschen, wünschen; haben wollen, verlangen; belieben, Willens sein, im Begriff sein, im Sinne haben; act. mit acc.: *sakhāyaḥ kratumicchata*
 [ṚV. 8,59,13.] *yukto 'vasātāramicchāt*
@@ -715,7 +715,7 @@ With dat. alone: call upon (someone) for the offering (recitation) to a god u. s
 [ŚAT. BR. 1,8,1,8.] *deveṣu yajñe bhāgamīṣire*
 [6,1,1.] *yatpitā putreṣvicchate*
 [8,4,1,4.] [1,5,1,26.] [4,1,2,6.] [3,11.] [14,4,1,27.] [2,27.]
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) anerkennen, ansehen für: *jyeṣṭhāmūlīyamicchanti māsamāṣāḍhapūrvajam* den dem Ā. vorangehenden Monat sieht man für den Jy. an
 [TRIK. 1,1,111.] Vgl. 4,c.
@@ -724,7 +724,7 @@ With dat. alone: call upon (someone) for the offering (recitation) to a god u. s
 [TRIK. 1,1,111.] Vgl. 4,c.
 - **EN:** — 3) to acknowledge, regard as: *jyeṣṭhāmūlīyamicchanti māsamāṣāḍhapūrvajam* the month preceding the Ā. is regarded as the Jy.
 [TRIK. 1,1,111.] Vgl. 4,c.
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>
 
 **head)** 3. *iṣ*¦, *icchati*
 [BHĀTUP. 28,59.] [P. 7,3,77.] *aicchat; iyeṣa, īṣathus, īṣus; eṣiṣyati; eṣitā* und *eṣṭā*
@@ -741,7 +741,7 @@ With dat. alone: call upon (someone) for the offering (recitation) to a god u. s
 [P. 3,1,85], Kār., Sch.)
 *icchate; īṣe, īṣāte*; inf. *eṣṭum* und *eṣitum; eṣitvā*
 [VOP. 26,207]; partic. *iṣṭa* (s. d.).
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>
 
 ## iṣ
 
@@ -752,7 +752,7 @@ With dat. alone: call upon (someone) for the offering (recitation) to a god u. s
 
 - **RU:** — 4) pass.
 - **EN:** — 4) pass.
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>
 
 **4a)** a) gewünscht —, gern gesehen werden: *sarvamātmārthamiṣyate*
 [MBH. 1,6145.] [5144.] [6184.] *nṛpasaṃśraya iṣyate budhaiḥ*
@@ -773,7 +773,7 @@ With dat. alone: call upon (someone) for the offering (recitation) to a god u. s
 [HIT. 24,18.] *na hi cūḍāmaṇisthāne pādukā kaiścidiṣyate*
 [IV,11.] *ataḥ samīpe pariṇeturiṣyate pramadā svabandhubhiḥ*
 [ŚĀK. 114.]
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>
 
 **4b)** — b) verlangt —, gefordert werden, vorgeschrieben sein: *kṛtopanayanasyāsya vratādeśanamiṣyate . brahmaṇo grahaṇaṃ caiva*
 [M. 2,173.] *hastacchedanamiṣyate*
@@ -788,7 +788,7 @@ With dat. alone: call upon (someone) for the offering (recitation) to a god u. s
 [M. 2,173.] *hastacchedanamiṣyate*
 [8,322.] *aśvamedhasya caikasya vaitaso bhāga iṣyate*
 [R. 1,13,42.]
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>
 
 **4c)** — c) gebilligt —, anerkannt —, angenommen —, für Etwas angesehen werden, gelten: *acchadmanā māyayā ca mṛgāṇāṃ vadha iṣyate*
 [MBH. 1,4570.] *nihatasya paśoryajñe svargaprāptiryadīṣyate*
@@ -827,13 +827,13 @@ With dat. alone: call upon (someone) for the offering (recitation) to a god u. s
 [TRIK. 2,8,62.] *jambho dante 'pi ceṣyate* jambha also stands for tooth (also means tooth)
 [3,3,286.] [64.] with act.-ending though the metre did not require it: *yadi kāle tu doṣo 'sti yadi tatrāpi neṣyati*
 [MBH. 13,59.]
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>
 
 **closing)** — Vgl. *icchā, icchu* .
 
 - **RU:** — Vgl. *icchā, icchu* .
 - **EN:** — Vgl. *icchā, icchu*.
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>
 
 ## iṣ
 
@@ -856,7 +856,7 @@ Sch. как _n._ nom. act.
 Sch. as _n._ nom. act.
 [P. 3,3,161.] [166.] *adhīṣṭaḥ* (sic) *satkārapūrvako vyāpāraḥ*
 [161], Sch.
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>
 
 **closing)** — Vgl. *adhyeṣaṇa* .
 - **EN:** — Vgl. *adhyeṣaṇa*.
@@ -864,7 +864,7 @@ Sch. as _n._ nom. act.
 **cross-ref)** — Vgl. *adhyeṣaṇa* .
 
 - **RU:** — Vgl. *adhyeṣaṇa* .
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>
 
 ## iṣ
 
@@ -977,13 +977,13 @@ u. s. w. [CHĀND. UP. 8,7,2.] [4,1,7.] [P. 5,2,75.] *nikṣepasyāpahartāramani
 [AK. 3,2,54.]
 [H. 1491.] *kadācidapi nāsmābhiranveṣitaḥ (hradaḥ)*
 [PAÑCAT. 77,11.]
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>
 
 **closing)** — Vgl. *anveṣa* fgg.
 
 - **RU:** — Vgl. *anveṣa* fgg.
 - **EN:** — Vgl. *anveṣa* fgg.
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>
 
 ## iṣ
 
@@ -997,7 +997,7 @@ u. s. w. [CHĀND. UP. 8,7,2.] [4,1,7.] [P. 5,2,75.] *nikṣepasyāpahartāramani
 [MBH. 1,1668.]
 - **EN:** *paryanu* to seek out, search after: *anvagacchaddhanuṣpāṇiḥ paryanveṣṭumitastataḥ*
 [MBH. 1,1668.]
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>
 
 ## iṣ
 
@@ -1011,7 +1011,7 @@ u. s. w. [CHĀND. UP. 8,7,2.] [4,1,7.] [P. 5,2,75.] *nikṣepasyāpahartāramani
 [R. 3,66,1.]
 - **EN:** *samanu* to search through: *āśramaṃ samanviṣya*
 [R. 3,66,1.]
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>
 
 ## iṣ
 
@@ -1049,7 +1049,7 @@ u. s. w. [CHĀND. UP. 8,7,2.] [4,1,7.] [P. 5,2,75.] *nikṣepasyāpahartāramani
 [PAÑCAT. I,75.] [SĀH. D. 55,19.] superl. *abhīṣṭatama* exceedingly dear: *ahamadya tavābhīṣṭatamānmatsyānsamānīya pacantī tiṣṭhāmi*
 [PAÑCAT. 262,18.] _m._ the most beloved
 [SĀH. D. 55,5.]
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>
 
 ## iṣ
 
@@ -1069,7 +1069,7 @@ u. s. w. [CHĀND. UP. 8,7,2.] [4,1,7.] [P. 5,2,75.] *nikṣepasyāpahartāramani
 [ṚV. 1,184,2.] *eṣṭā rāya eṣṭā vāmāni preṣe bhagāya*
 [AIT. BR. 1,26.]
 [VS. 5,7.]
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>
 
 ## iṣ
 
@@ -1083,7 +1083,7 @@ u. s. w. [CHĀND. UP. 8,7,2.] [4,1,7.] [P. 5,2,75.] *nikṣepasyāpahartāramani
 [CHĀND. UP. 1,11,2.]
 - **EN:** — *pari* to search around for: *bhagavantaṃ vā ahamebhiḥ sarvairārtvijyaiḥ paryaiśiṣam* (read: *paryaiṣiṣam*)
 [CHĀND. UP. 1,11,2.]
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>
 
 ## iṣ
 
@@ -1133,7 +1133,7 @@ aufnehmen, ihnen folgen, darauf achten: *vacanaṃ na pratīcchatā*
 to take up, to follow them, to heed them: *vacanaṃ na pratīcchatā*
 [R. 1,34,30.] *ājñāṃ pratīṣuḥ*
 [BHAṬṬ. 3,43.]
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>
 
 **1))** — *prati*
  1) sich richten auf Etwas, zustreben: *sato bandhumasati niravindanhṛdi pratīṣyā kavayo manīṣā*
@@ -1142,7 +1142,7 @@ to take up, to follow them, to heed them: *vacanaṃ na pratīcchatā*
 - **RU:** — *prati*
  1) направляться на что-либо, стремиться к чему-либо: *sato bandhumasati niravindanhṛdi pratīṣyā kavayo manīṣā*
 [ṚV. 10,129,4.]
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>
 
 ## iṣ
 
@@ -1159,7 +1159,7 @@ to take up, to follow them, to heed them: *vacanaṃ na pratīcchatā*
 
 - **RU:** — *saṃprati* соглашаться, давать согласие: *saṃpratīccha me*
 [R. 1,52,13.]
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>
 
 ## iṣ
 
@@ -1190,7 +1190,7 @@ to take up, to follow them, to heed them: *vacanaṃ na pratīcchatā*
 [17,45.] *deśamanyaṃ durādharṣamanvaiṣan*
 [R. 4,48,7.] *anveṣamāṇa*
 [MBH. 1,5253.] [6585.] [3,2379.] [2452.] [12664.]
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>
 
 **2)** [R. 3,74,3.] [4,48,4.] hinterhergehen, verfolgen: *kevalaṃ parapuruṣānanveṣamāṇā paribhramati*
 [PAÑCAT. 225,24.] *kāvyasyānveṣate gatim*
@@ -1202,17 +1202,17 @@ to take up, to follow them, to heed them: *vacanaṃ na pratīcchatā*
 - **EN:** [R. 3,74,3.] [4,48,4.] to go after, to pursue: *kevalaṃ parapuruṣānanveṣamāṇā paribhramati*
 [PAÑCAT. 225,24.] *kāvyasyānveṣate gatim*
 [R. 1,3,2.]
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>
 
 **intro)** 4. *iṣ*¦, *eṣati* und *eṣate* nur in Verbindung mit *anu* zu belegen.
 
 - **RU:** 4. *iṣ*¦, *eṣati* и *eṣate* засвидетельствованы только в сочетании с *anu*.
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>
 
 **sense_a)** — Vgl. *eṣ* .
 
 - **RU:** — Vgl. *eṣ* .
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>
 
 ## iṣ
 
@@ -1243,12 +1243,12 @@ to take up, to follow them, to heed them: *vacanaṃ na pratīcchatā*
 [HIT. 113,8] (v. l. *anviṣyan*). *iṣ, iṣati* причисляется к глаголам движения
 [NAIGH. 2,14.]
 [NIR. 9,18.]
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>
 
 **cross_ref)** — Vgl. *īṣ* .
 
 - **RU:** — Vgl. *īṣ* .
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>
 
 ## iṣ
 
@@ -1264,17 +1264,17 @@ to take up, to follow them, to heed them: *vacanaṃ na pratīcchatā*
 
 - **RU:** — 2) _f._ желание в *iṭcara* . — Тождественно с I. *iṣ*.
 - **EN:** — 2) _f._ wish, in *iṭcara*. — Is identical with I. *iṣ*.
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>
 
 **head)** II. *iṣ*¦
 
 - **RU:** II. *iṣ*¦
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>
 
 **1))** 1) _adj._ sich rasch bewegend, eilend in *aramiṣ* .
 
 - **RU:** 1) _adj._ быстро движущийся, спешащий в *aramiṣ* .
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>
 
 ## iṣ
 
@@ -1285,7 +1285,7 @@ to take up, to follow them, to heed them: *vacanaṃ na pratīcchatā*
 
 - **RU:** III. *iṣ*¦ _f._ в sg. во всех падежах, в pl. употребляется только в nom. acc. (*iṣas*, реже *iṣas*) и gen..
 - **EN:** III. *iṣ*¦ _f._, in the sg. found in all cases, in the pl. used only in the nom. acc. (*iṣas*, more rarely *iṣas*) and gen..
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>
 
 **1)** 1) Trank, Labung, Erquickung
 [NAIGH. 1,7.]
@@ -1336,7 +1336,7 @@ to take up, to follow them, to heed them: *vacanaṃ na pratīcchatā*
 [4,16,21.] *dhenuṃ na iṣaṃ pinvatamasakrām*
 [6,63,8.] [35,4.] [1,63,8.] [86,5.] [2,34,4.] *dhukṣasva pipyuṣīmiṣam*
 [VĀLAKH. 5,15.] In most of these passages sense 2 of Bed. is included as well. In particular:
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>
 
 **1a)** a) Spende, Trankopfer: *yadado divo arṇava iṣo vā madatho gṛhe*
 [ṚV. 8,26,17.] *yajvarīriṣaḥ*
@@ -1357,7 +1357,7 @@ to take up, to follow them, to heed them: *vacanaṃ na pratīcchatā*
 [3,54,22.] *saṃ vāṃ karmaṇā samiṣā hinomi*
 [7,69,1.] [1,129,7.] *juṣantāṃ yajñamadruho 'namīvā iṣo mahīḥ*
 [3,22,4.]
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>
 
 **1b)** — b) die erquickenden Gewässer des Himmels
 [NIR. 10,26.] *apāvṛṇodiṣa indraḥ parīvṛtāḥ*
@@ -1378,7 +1378,7 @@ to take up, to follow them, to heed them: *vacanaṃ na pratīcchatā*
 [8,5,21.] *iṣaṃ svarabhijāyanta dhūtayaḥ*
 [168,2.] [3,30,11.] [53,1.] *apāmūrmiṃ divaspari . ayakṣmā bṛhatīriṣaḥ*
 [9,49,1.] [10,17,8.]
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) Saft so v. a. Kraft, Frische; Wohlsein, Gedeihen; Wohlstand; sg. und pl.: *samasme bhūṣataṃ narotsaṃ na pipyuṣīriṣaḥ* theilet uns Kräfte mit sprudelnd wie eine Quelle
 [ṚV. 10,143,6] (s. auch u. 1.). *sāṃgrāmajityāyeṣamā vadeha* Muth
@@ -1450,7 +1450,7 @@ einem Thema *iṣi* besteht, wie *dṛśaye, yudhaye* datt. zu *dṛś, yudh* si
 
 a stem *iṣi* exists, just as *dṛśaye, yudhaye* datt. are to *dṛś, yudh*. *te asmabhyamiṣaye viśvamāyuḥ kṣapa usrā varivasyantu devāḥ*
 [ṚV. 6,52,15.] — Closely related to *iḍ, iḍā* and *irā*.
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>
 
 ## iṣ
 
@@ -1471,7 +1471,7 @@ a stem *iṣi* exists, just as *dṛśaye, yudhaye* datt. are to *dṛś, yudh*.
 [BHĀG. P. 10,23,16.] Schol. принимает *īṣita*, которое он объясняет через *preṣita*.
 - **EN:** — 2) sent
 [BHĀG. P. 10,23,16.] the Schol. adopts *īṣita*, which he explains by *preṣita*.
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) *pariśrameṣita* so v. a. heimgesucht. gequält
 [BHĀG. P. 12,9,16.] *iṣito gataḥ prāpta ityarthaḥ iṣu sarpaṇa ityasmāt* Schol.
@@ -1493,7 +1493,7 @@ a stem *iṣi* exists, just as *dṛśaye, yudhaye* datt. are to *dṛś, yudh*.
 [HARIV. 9130.] *praikṣīt* новейшая Ausg.
 - **EN:** 1) *sa māṃ praiṣītsuraśreṣṭhaḥ*
 [HARIV. 9130.] *praikṣīt* the more recent Ausg.
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>
 
 **5)** — *anupra* caus. Jmd zu Jmd hinsenden: *anupreṣitā*
 [KATHĀS. 77,56.]
@@ -1505,50 +1505,50 @@ a stem *iṣi* exists, just as *dṛśaye, yudhaye* datt. are to *dṛś, yudh*.
 **head)** I. 1. *iṣ*¦ *iṣita*
 
 - **RU:** I. 1. *iṣ*¦ *iṣita*
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>
 
 **1))** 1) ausgesprochen, verkündet
 [BHĀG. P. 10,87,36.] [11,28.] [35.]
 
 - **RU:** 1) произнесённый, провозглашённый
 [BHĀG. P. 10,87,36.] [11,28.] [35.]
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>
 
 **3))** — 3) *pariśrameṣita* so v. a. heimgesucht. gequält
 [BHĀG. P. 12,9,16.] *iṣito gataḥ prāpta ityarthaḥ iṣu sarpaṇa ityasmāt* Schol.
 
 - **RU:** — 3) *pariśrameṣita* в значении v. a. поражённый, истерзанный
 [BHĀG. P. 12,9,16.] *iṣito gataḥ prāpta ityarthaḥ iṣu sarpaṇa ityasmāt* Schol.
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>
 
 **cross_1)** — *prādhi* s. *prādhyeṣaṇa* .
 
 - **RU:** — *prādhi* s. *prādhyeṣaṇa* .
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>
 
 **cross_2)** — *anu*, *svagṛhe veśavāṭe dyūtasabhāyāmāpaṇe ca nipuṇamanviṣyannopalabdhavān*
 [DAŚAK.] in [BENF. Chr. 192,10.]
 
 - **RU:** — *anu*, *svagṛhe veśavāṭe dyūtasabhāyāmāpaṇe ca nipuṇamanviṣyannopalabdhavān*
 [DAŚAK.] в [BENF. Chr. 192,10.]
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>
 
 **cross_3)** — *pra*
 
 - **RU:** — *pra*
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>
 
 **nachtrag_hinsenden)** — *anupra* caus. Jmd zu Jmd hinsenden: *anupreṣitā*
 [KATHĀS. 77,56.]
 
 - **RU:** — *anupra* caus. посылать кого-либо к кому-либо: *anupreṣitā*
 [KATHĀS. 77,56.]
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>
 
 **nachtrag_cross)** — *paripra* s. *paripreṣya* .
 
 - **RU:** — *paripra* s. *paripreṣya* .
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>
 
 ## iṣ
 
@@ -1574,7 +1574,7 @@ a stem *iṣi* exists, just as *dṛśaye, yudhaye* datt. are to *dṛś, yudh*.
 - **EN:** — 3)
 [VARĀH. BṚH. S. 53,16.]
 [SARVADARŚANAS. 141. 9.] Add further "to accept".
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4)
  b) *na tvātmanaḥ saṃpradānaṃ dhanaratnavadiṣyate*
@@ -1608,7 +1608,7 @@ a stem *iṣi* exists, just as *dṛśaye, yudhaye* datt. are to *dṛś, yudh*.
 **head)** I. 3. *iṣ*¦ *iṣ*
 
 - **RU:** I. 3. *iṣ*¦ *iṣ*
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>
 
 **2))** 2) *te neṣurvaradānam*
 [HARIV. 7967.] *neṣustadvaradānam* die neuere Ausg. *anājñaptastu saumitre praveṣṭuṃ necchayāmyaham (icchayāmi = icchāmi!)*
@@ -1617,7 +1617,7 @@ a stem *iṣi* exists, just as *dṛśaye, yudhaye* datt. are to *dṛś, yudh*.
 - **RU:** 2) *te neṣurvaradānam*
 [HARIV. 7967.] *neṣustadvaradānam* новейшая Ausg. *anājñaptastu saumitre praveṣṭuṃ necchayāmyaham (icchayāmi = icchāmi!)*
 [R. 7,59,1,25.]
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>
 
 **4b))** — 4)
  b) *na tvātmanaḥ saṃpradānaṃ dhanaratnavadiṣyate*
@@ -1626,14 +1626,14 @@ a stem *iṣi* exists, just as *dṛśaye, yudhaye* datt. are to *dṛś, yudh*.
 - **RU:** — 4)
  b) *na tvātmanaḥ saṃpradānaṃ dhanaratnavadiṣyate*
 [Spr. 4293.]
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>
 
 **4c))** — c)
 [SARVADARŚANAS. 61,16.]
 
 - **RU:** — c)
 [SARVADARŚANAS. 61,16.]
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>
 
 **untersuchen)** *anu* untersuchen
 [KATHĀS. 112,150.] — caus. suchen: *atiramaṇīye kāvye 'pi piśuno dūṣaṇamanveṣayati . atiramaṇīye vapuṣi vraṇamiva makṣikānikaraḥ ..*
@@ -1642,7 +1642,7 @@ a stem *iṣi* exists, just as *dṛśaye, yudhaye* datt. are to *dṛś, yudh*.
 - **RU:** *anu* исследовать
 [KATHĀS. 112,150.] — caus. искать: *atiramaṇīye kāvye 'pi piśuno dūṣaṇamanveṣayati . atiramaṇīye vapuṣi vraṇamiva makṣikānikaraḥ ..*
 [Spr. 3409.]
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>
 
 **wünschen)** — *abhi* wünschen, wollen, beabsichtigen; mit infin.
 [KATHĀS. 106,126.] *abhīṣṭavarṣin* erwünschten Regen sendend
@@ -1651,19 +1651,19 @@ a stem *iṣi* exists, just as *dṛśaye, yudhaye* datt. are to *dṛś, yudh*.
 - **RU:** — *abhi* желать, хотеть, намереваться; с infin.
 [KATHĀS. 106,126.] *abhīṣṭavarṣin* посылающий желанный дождь
 [Spr. 1915.]
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>
 
 **cross_1)** — *prati* vgl. *pratīcchaka* .
 
 - **RU:** — *prati* vgl. *pratīcchaka* .
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>
 
 **suchen_nachtrag)** — *vi* suchen
 [TBR. 2,7,13,2.]
 
 - **RU:** — *vi* искать
 [TBR. 2,7,13,2.]
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>
 
 ## iṣ
 
@@ -1677,7 +1677,7 @@ a stem *iṣi* exists, just as *dṛśaye, yudhaye* datt. are to *dṛś, yudh*.
 [Spr. 4127.]
 - **EN:** I. 4. *iṣ*¦ with *anu, tiṣṭhantaṃ ca śayānaṃ ca mṛtyuranveṣate yadā*
 [Spr. 4127.]
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>
 
 ## iṣ
 
@@ -1688,12 +1688,12 @@ a stem *iṣi* exists, just as *dṛśaye, yudhaye* datt. are to *dṛś, yudh*.
 
 - **RU:** I. 5. *iṣ*¦ *iṣ, sa naṣṭāṃ gāṃ kṣudhārto vai anviṣaṃstatra tatra ha* ищущий
 - **EN:** *iṣ*; *iṣ, sa naṣṭāṃ gāṃ kṣudhārto vai anviṣaṃstatra tatra ha*, seeking [R. 7,53,10.]
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>
 
 **I.5.citation)** [R. 7,53,10.]
 
 - **RU:** [R. 7,53,10.]
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>
 
 ## iṣ
 
@@ -1704,7 +1704,7 @@ a stem *iṣi* exists, just as *dṛśaye, yudhaye* datt. are to *dṛś, yudh*.
 
 - **RU:** II. *iṣ*¦ vgl. *gaviṣ* и *nemanniṣ*.
 - **EN:** *iṣ* — vgl. *gaviṣ* and *nemanniṣ*.
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>
 
 ## iṣ
 
@@ -1719,7 +1719,7 @@ Z. 10 st. *preṣitam* hat die [ed. Bomb.] richtig *proṣitam* .
  2)
 Z. 10 st. *preṣitam* правильно понял [ed. Bomb.] *proṣitam*.
 - **EN:** *iṣ* ¦ with *pra* caus.
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>
 
 **I.1.note)** 2)
 - **EN:** 2)
@@ -1754,7 +1754,7 @@ Z. 4 v. u. [M. 12,37] is to be taken as passive; one could moreover also conject
 — *ā* vgl. u. 1. *yaj* with *ā* 1).
 — *prati*, strike Bed.
  1) and place the citation with the following.
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>
 
 ## iṣ
 
@@ -2046,7 +2046,7 @@ Z. 4 v. u. [M. 12,37] is to be taken as passive; one could moreover also conject
 **SCH 4.iṣ 2 addendum)** 4. iṣ¦ 2. [Hariv. 2],72,52 nach [Nīlak.] {part=,seq=7855,type=,n=21}
 
 - **RU:** 4. iṣ 2. [Hariv. 2],72,52 после [Nīlak.]
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>
 
 ## iṣ
 
@@ -2057,34 +2057,34 @@ Z. 4 v. u. [M. 12,37] is to be taken as passive; one could moreover also conject
 
 - **RU:** 1. *iṣ* с *upa* — устремляться к (Acc.) [MAITR. S. 1,2,14] ([KĀṬH. 3,3]. [KAP. S. 2,10]. [MĀN. ŚR. 1,8,2]).
 - **EN:** **1.** *iṣ* ¦ with *upa* to press onward toward, strive toward (Acc.) [MAITR. S. 1,2,14] ([KĀṬH. 3,3]. [KAP. S. 2,10]. [MĀN. ŚR. 1,8,2]).
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>
 
 **4-a)** **4.** *iṣ*¦ 2〉 [HARIV. 2,72,52] nach [NĪLAK.]
 
 - **RU:** 4. *iṣ* 2〉 [HARIV. 2,72,52] — после [NĪLAK.]
 - **EN:** **4.** *iṣ* ¦ 2〉 [HARIV. 2,72,52] after [NĪLAK.]
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>
 
 **1-b)** **1.** *iṣ*¦ mit *atipra* darüber hinaus auffordern [ĀPAST. ŚR. 12,27,6]. [14,34,4]. [VAITĀN.]
 
 - **RU:** 1. *iṣ* с *atipra* — сверх того побуждать [ĀPAST. ŚR. 12,27,6]. [14,34,4]. [VAITĀN.]
 - **EN:** **1.** *iṣ* ¦ with *atipra* to call upon further, exhort beyond [ĀPAST. ŚR. 12,27,6]. [14,34,4]. [VAITĀN.]
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>
 
 **1-c)** **1.** *iṣ*¦ mit *samanu* I. durchsuchen. *samanveṣitum* [R. ed. Bomb. 3,67,7]. — Mit *upa* 2. — Mit *atipra* 5.
 
 - **RU:** 1. *iṣ* с *samanu* I. — обыскивать. *samanveṣitum* [R. ed. Bomb. 3,67,7]. — С *upa* 2. — С *atipra* 5.
 - **EN:** **1.** *iṣ* ¦ with *samanu* I. to search through. *samanveṣitum* [R. ed. Bomb. 3,67,7]. — With *upa* 2. — With *atipra* 5.
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>
 
 **3)** **3.** *iṣ*¦ mit passivisch aufzufassendem Infinitiv: *samudraṃ netumicchāmi bhavadbhiḥ* ich wünsche von Euch anʼs Meer geführt zu werden [R. ed. Bomb. 4,58,33]. [56,21]. Zu 4〉e〉β〉 gehört *pratikūlitumicchāmi na hi vākyamidaṃ tvayā* [3,24,13].
 
 - **RU:** 3. *iṣ* с инфинитивом, понимаемым пассивно: *samudraṃ netumicchāmi bhavadbhiḥ* — я желаю, чтобы вы отвели меня к морю [R. ed. Bomb. 4,58,33]. [56,21]. К 4〉e〉β〉 относится *pratikūlitumicchāmi na hi vākyamidaṃ tvayā* [3,24,13].
 - **EN:** **3.** *iṣ* ¦ with an infinitive to be understood passively: *samudraṃ netumicchāmi bhavadbhiḥ* I wish to be led by you to the sea [R. ed. Bomb. 4,58,33]. [56,21]. To 4〉e〉β〉 belongs *pratikūlitumicchāmi na hi vākyamidaṃ tvayā* [3,24,13].
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>
 
 **4-b)** **4.** *iṣ*¦ I. 3.
 
 - **RU:** 4. *iṣ* I. 3.
 - **EN:** **4.** *iṣ* ¦ I. 3.
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>

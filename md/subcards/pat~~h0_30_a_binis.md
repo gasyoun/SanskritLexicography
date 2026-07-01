@@ -7,7 +7,7 @@
 
 - **RU:** *abhinis* вылетать к (чему-либо): *idaṃ yatkṛṣṇaḥ śakunirabhiniṣpatannapīpatat*
 - **EN:** — *abhinis* to fly out toward: *idaṃ yatkṛṣṇaḥ śakunirabhiniṣpatannapīpatat*
-  <sub>DCS 3124 · attested</sub>
+  <sub>attested</sub>
 
 **1b)** [AV. 7,64,1.] hervorspringen, hinausschiessen (intrans.): *senāgrādabhiniṣpatya prāyudhyaṃstatra mānavāḥ*
 [MBH. 6,2434.] *ratnabhāso gavākṣajālairabhiniṣpatantyaḥ*
@@ -19,4 +19,4 @@
 - **EN:** [AV. 7,64,1.] to spring forth, shoot out (intrans.): *senāgrādabhiniṣpatya prāyudhyaṃstatra mānavāḥ*
 [MBH. 6,2434.] *ratnabhāso gavākṣajālairabhiniṣpatantyaḥ*
 [BHAṬṬ. 1,8.]
-  <sub>DCS 3124 · attested</sub>
+  <sub>attested</sub>

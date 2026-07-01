@@ -10,4 +10,4 @@
 [ĀŚV. GṚHY. 3,12,15] при [STENZLER]; s. однако u. *anupari* .
 - **EN:** — *anuparyā*, thus
 [ĀŚV. GṚHY. 3,12,15] in [STENZLER]; s. however u. *anupari* .
-  <sub>DCS 5678 · attested</sub>
+  <sub>attested</sub>

@@ -22,7 +22,7 @@
 [1,91,1.] *cakṣuriva yantamanu neṣathā sugam*
 [5,54,6.] *uruṃ no lokamanu neṣi vidvān*
 [6,47,8.] [8,47,11.]
-  <sub>DCS 126 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) Jmd (dat.) Etwas (acc.) zuführen, mittheilen: *anuneṣyāmyahaṃ vidyāṃ svayaṃ tubhyam*
 [MBH. 1,6481.]
@@ -31,7 +31,7 @@
 [MBH. 1,6481.]
 - **EN:** — 2) to bring something (acc.) to someone (dat.), to impart, to communicate: *anuneṣyāmyahaṃ vidyāṃ svayaṃ tubhyam*
 [MBH. 1,6481.]
-  <sub>DCS 126 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) (an sich heranziehen) Jmd freundlich zureden, freundliche Worte an Jmd richten in der Absicht ihn günstig zu stimmen, zu gewinnen, zu versöhnen, Jmd bitten: *bhavato* (acc. pl.) *'nunayāmyevaṃ purū rājye 'bhiṣicyatām*
 [MBH. 1,3528.] *praṇipātena sāntvena dānena ca mahāyaśāḥ . ṛtvijo 'nunayāmāsa*
@@ -91,4 +91,4 @@
 [BHĀG. P. 4,26,20.] with the gen. or dat. of the person: *na tena te 'nunayāmi*
 [GĪT. 3,7.]
 — Vgl. *anunaya, ˚neya* .
-  <sub>DCS 126 · attested</sub>
+  <sub>attested</sub>

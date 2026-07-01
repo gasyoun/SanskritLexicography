@@ -31,7 +31,7 @@
 [HARIV. 12547.] *yāsāṃ garbhāḥ — vyasavaḥ saṃvatsarānte vinipatanti*
 [BHĀG. P. 5,18,15.] *vinipatya vipannau svastatsthānadrauṇikāntare*
 [KATHĀS. 3,33.]
-  <sub>DCS 9 · attested</sub>
+  <sub>attested</sub>
 
 **caus)** — Vgl. *vinipāta* . — caus. niederfallen machen, hinabwerfen, hinabschleudern: *tenarkṣaṃ vinipātitam*
 [MĀRK. P. 75,57.] *pateyaṃ* (vom Himmel zur Erde) *satsviti dhyāyanbhavatsu vinipātitaḥ*
@@ -88,4 +88,4 @@
 [33,10.] *rākṣasā vayamātmā ca yugapadvinipātitāḥ*
 [R. 6,94,23.] *matkṛtye vinipātite*
 [5,65,3.]
-  <sub>DCS 9 · attested</sub>
+  <sub>attested</sub>

@@ -34,7 +34,7 @@
 [Spr. 5088.]
 [MBH. 15,383.] [2,2443] (where both Ausgg. incorrectly read *asaṃbhinnārtha˚*). *saṃbhinnavṛtta* who has broken off —, abandoned his good conduct
 [12,788.]
-  <sub>DCS 85 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) zusammenbringen, in Berührung bringen, verbinden, vermengen: *na saṃbhinatti tasmādasaṃbhinnāḥ prāṇāḥ*
 [TS. 6,2,11,2.] *asaṃbhindannavadyati*
@@ -79,7 +79,7 @@
 [BHAṬṬ. 7,5.] *saṃbhinno māruto yasya marmasthānāni kṛntati* so v. a. compact
 [MĀRK. P. 43,14] = [VĀYU-P.] in [Verz. d. Oxf. H. 51,b,6.] *saṃbhinna* joined alongside *vibhinna* as Beiw. Śiva's
 [MBH. 12,10374.]
-  <sub>DCS 85 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3)
 
@@ -94,10 +94,10 @@ sich zu Jmd (acc.) gesellen: *tataśca bhagavānasmānupekṣate na saṃbhinatt
 
 to join someone (acc.): *tataśca bhagavānasmānupekṣate na saṃbhinatti (saṃbhinanti* gedr.) *nācaṣṭhe (nā ceṣṭa* gedr.)
 [SADDH. P. 4,27,b.]
-  <sub>DCS 85 · attested</sub>
+  <sub>attested</sub>
 
 **closing)** — Vgl. *saṃbheda* .
 
 - **RU:** — Vgl. *saṃbheda* .
 - **EN:** — Vgl. *saṃbheda* .
-  <sub>DCS 85 · attested</sub>
+  <sub>attested</sub>

@@ -16,4 +16,4 @@
 [BHĀG. P. 7,8,44.] to enjoy: *adhibhujyamānam — rikthaṃ pitṛpaitāmaham*
 [BHĀG. P. 5,7,8.] *rājyamidaṃ svecchayādhibhujyatām (upabhujyatām* v. l.)
 [HIT. 130,4.]
-  <sub>DCS 2938 · attested</sub>
+  <sub>attested</sub>

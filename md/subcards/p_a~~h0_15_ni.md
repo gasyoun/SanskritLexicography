@@ -40,7 +40,7 @@
 [GORR.]) *tīrthāni*
 [R. 2,95,5.] *ata eva nipīyate 'dharaḥ*
 [BHARTṚ. 1,82.] *madhupairnipītakusumaḥ (taruḥ)*
-  <sub>DCS 34 · attested</sub>
+  <sub>attested</sub>
 
 **1b)** [Spr. 922.] einsaugen, absorbiren, verschwinden machen: *nyapādvāyuṃ sahāmbhasā*
 [BHĀG. P. 3,10,6.] *svarūpamahasaiva nipītabhedamohāya (parāya)*
@@ -55,4 +55,4 @@
 [BHĀG. P. 3,10,6.] *svarūpamahasaiva nipītabhedamohāya (parāya)*
 [9,14.] Vgl. *nipāna, nipīti* . — caus. to cause to be sipped in
 [BHĀG. P. 8,2,25.]
-  <sub>DCS 34 · attested</sub>
+  <sub>attested</sub>

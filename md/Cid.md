@@ -206,7 +206,7 @@ Sch.; *ciccheda* and *cicchide, cicchidvaṃs*
 [VARĀH. BṚH. S. 29,23.] *indradhanus (acchinna)*
 [34,3.] *rekhāḥ*
 [67,50.] [68,14.]
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) scheiden, trennen: *chinatti kṛṣyā gordhanādyaṃ kravyādanuvartate*
 [AV. 12,3,37.] [5,38.] [43.] *nāsmādgaṇaśchidyate*
@@ -233,7 +233,7 @@ Sch.; *ciccheda* and *cicchide, cicchidvaṃs*
 [ŚĀṄKH. ŚR. 1,5,9. 4,13,3.] to detach, isolate, extract: *śṛṅgīva ṭaṅkacchinnamanaḥśilaḥ*
 [RAGH. 12,80.] *(kṛṣṇamṛgam) pakvaṃ samājñāya niṣṭaptaṃ chinnaśoṇitam*
 [R. 2,56,23.]
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) unterbrechen, stören: *chinne ca gatikarmaṇi*
 [HARIV. 16258.] *madhyāhnārkatāpacchinnadṛṣṭi*
@@ -245,7 +245,7 @@ Sch.; *ciccheda* and *cicchide, cicchidvaṃs*
 - **EN:** — 3) to interrupt, disturb: *chinne ca gatikarmaṇi*
 [HARIV. 16258.] *madhyāhnārkatāpacchinnadṛṣṭi*
 [MṚCCH. 119,19.]
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) vernichten, zu Grunde richten, zerstören, entfernen: *bāhūnivataunmā cchetsīḥ* (lies *chai˚*)
 [MBH. 2,1942.] *tataśchetsyati nārācairjagatsarvaṃ sarākṣasam*
@@ -296,7 +296,7 @@ Sch.; *ciccheda* and *cicchide, cicchidvaṃs*
 [HARIV. 7730.] *ṛṇaṃ chittvā* to discharge a debt
 
 [RĀJA-TAR. 6,16.]
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **5)** — 5) *chinna* heruntergekommen, entkräftet, ermüdet: *strī˚, bhāra˚, mārga˚*
 [VYUTP. 209.]
@@ -305,13 +305,13 @@ Sch.; *ciccheda* and *cicchide, cicchidvaṃs*
 [VYUTP. 209.]
 - **EN:** — 5) *chinna* brought low, enfeebled, exhausted: *strī˚, bhāra˚, mārga˚*
 [VYUTP. 209.]
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **cross-ref)** — Vgl. *bhid* .
 
 - **RU:** — Vgl. *bhid* .
 - **EN:** — Vgl. *bhid* .
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **header)** *chid*¦, *chinatti* und *chintte*
 [DHĀTUP. 29,3.] *chinddhi (chindhi)*
@@ -340,7 +340,7 @@ Sch.; *ciccheda* und *cicchide, cicchidvaṃs*
 [P. 7,2,67], Sch.;
 *chetsyati* Kār 3 aus
 [SIDDH. K.] zu [P. 7,2,10]; *chittvā, chettum; acchedi, chinna* .
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 ## chid
 
@@ -351,7 +351,7 @@ Sch.; *ciccheda* und *cicchide, cicchidvaṃs*
 
 - **RU:** — caus. *chedayati*
 - **EN:** — caus. *chedayati*
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **caus-1)** 1) abschneiden, abhauen
 [DHĀTUP. 35,80] (*ched*).* mūle*
@@ -375,7 +375,7 @@ Sch.; *ciccheda* und *cicchide, cicchidvaṃs*
 [SUŚR. 1,369,1.] *yanme bāhumacicchidaḥ*
 [MBH. 7,5954.] *chedita*
 [H. 1490.]
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **caus-2)** — 2) abschneiden —, abhauen —, zerhauen lassen: *dvāvoṣṭhau chedayennṛpaḥ*
 [M. 8,282.] *hastau*
@@ -393,7 +393,7 @@ Sch.; *ciccheda* und *cicchide, cicchidvaṃs*
 [283.] *aṅgulī*
 [277.] *(tam) chedayellavaśaḥ kṣuraiḥ*
 [292.]
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 ## chid
 
@@ -413,7 +413,7 @@ Sch.; *ciccheda* und *cicchide, cicchidvaṃs*
 [P. 7,4,65], Sch.
 *cecchidyate*
 [83], Vārtt. 2, Sch. ([ed. Calc.])
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 ## chid
 
@@ -424,7 +424,7 @@ Sch.; *ciccheda* und *cicchide, cicchidvaṃs*
 
 - **RU:** — desid. s. *cicchitsu* .
 - **EN:** — desid. s. *cicchitsu* .
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 ## chid
 
@@ -438,7 +438,7 @@ Sch.; *ciccheda* und *cicchide, cicchidvaṃs*
 [ŚĀṄKH. ŚR. 2,8,13.] Viell. *ucchindan* mit dem *a* neg.
 - **EN:** — *anu* to cut through lengthwise(?): *anucchindanniva (udvāsayet)*
 [ŚĀṄKH. ŚR. 2,8,13.] Viell. *ucchindan* with the *a* neg.
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 ## chid
 
@@ -452,7 +452,7 @@ Sch.; *ciccheda* und *cicchide, cicchidvaṃs*
 [ŚAT. BR. 1,8,1,6.]
 - **EN:** — *antar* to cut off, intercludere: *taṃ tu tvā mā girau santamudakamantaśchaitsīt*
 [ŚAT. BR. 1,8,1,6.]
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 ## chid
 
@@ -478,13 +478,13 @@ Schol. zu [KĀTY. ŚR. 3,7,17.] [8,2.] *etasyai vā eṣāpacchidyaiṣaiva puna
 Schol. to [KĀTY. ŚR. 3,7,17.] [8,2.] *etasyai vā eṣāpacchidyaiṣaiva punarbhavani*
 [ŚAT. BR. 5,3,4,9.] *ājarasaṃ hāsmai vājinaṃ nāpacchidyate* is not taken from him
 [AIT. BR. 1,13.]
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **caus)** — Vgl. *apaccheda* .
 
 - **RU:** — Vgl. *apaccheda* .
 - **EN:** — Vgl. *apaccheda* .
-  <sub>DCS 2209 · lexicographic</sub>
+  <sub>lexicographic</sub>
 
 ## chid
 
@@ -495,7 +495,7 @@ Schol. to [KĀTY. ŚR. 3,7,17.] [8,2.] *etasyai vā eṣāpacchidyaiṣaiva puna
 
 - **RU:** — *ava*
 - **EN:** — *ava*
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **1)** 1) abtrennen, scheiden: *ava vā eṣa suvargāllokācchidyate*
 [TS. 2,2,5,4.] [3,2,1,1.] [2.]
@@ -510,7 +510,7 @@ Schol. to [KĀTY. ŚR. 3,7,17.] [8,2.] *etasyai vā eṣāpacchidyaiṣaiva puna
 [TS. 2,2,5,4.] [3,2,1,1.] [2.]
 [BĀLAB. 33.] *anavacchinna* undifferentiated
 [YOGAS. 2,31.]
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) voneinanderreissen, aus seinem Zusammenhange reissen, unterbrechen: *avacchinna*
 [LĀṬY. 10,3,13.] *vanavṛkṣāvacchinnākāśayoḥ, vanavṛkṣatadavacchinnākāśayoḥ*
@@ -525,13 +525,13 @@ Schol. to [KĀTY. ŚR. 3,7,17.] [8,2.] *etasyai vā eṣāpacchidyaiṣaiva puna
 [LĀṬY. 10,3,13.] *vanavṛkṣāvacchinnākāśayoḥ, vanavṛkṣatadavacchinnākāśayoḥ*
 [VEDĀNTAS. (Allah.) No. 34.] *dikkālānavacchinnāya — śāntāya tejase*
 [BHARTṚ. 2,1.]
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **caus)** — Vgl. *avaccheda* fgg.
 
 - **RU:** — Vgl. *avaccheda* fgg.
 - **EN:** — Vgl. *avaccheda* fgg.
-  <sub>DCS 2209 · lexicographic</sub>
+  <sub>lexicographic</sub>
 
 ## chid
 
@@ -545,7 +545,7 @@ Schol. to [KĀTY. ŚR. 3,7,17.] [8,2.] *etasyai vā eṣāpacchidyaiṣaiva puna
 [AIT. BR. 3,19.]
 - **EN:** — *paryava* to sever all around on both sides: *ubhayata enaṃ viśaḥ paryavacchinadānīti*
 [AIT. BR. 3,19.]
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 ## chid
 
@@ -556,7 +556,7 @@ Schol. to [KĀTY. ŚR. 3,7,17.] [8,2.] *etasyai vā eṣāpacchidyaiṣaiva puna
 
 - **RU:** — *vyava*
 - **EN:** — *vyava*
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **1)** 1) abschneiden: *prajātantuṃ mā vyavacchetsīḥ* (sic)
 [TAITT. UP. 1,11,1.]
@@ -565,7 +565,7 @@ Schol. to [KĀTY. ŚR. 3,7,17.] [8,2.] *etasyai vā eṣāpacchidyaiṣaiva puna
 [TAITT. UP. 1,11,1.]
 - **EN:** 1) to cut off: *prajātantuṃ mā vyavacchetsīḥ* (sic)
 [TAITT. UP. 1,11,1.]
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) abschneiden, abtrennen, scheiden: *vyavacchidya tu rājānam — rathānīkena mahatā sarvataḥ paryavārayat* nachdem er ihn (von den Andern) abgeschnitten hatte
 [MBH. 7,1166.] *viśaṃ kṣatrādvyavacchindyāt*
@@ -589,7 +589,7 @@ Schol. to [KĀTY. ŚR. 3,7,17.] [8,2.] *etasyai vā eṣāpacchidyaiṣaiva puna
 [6,6,4,11.] [ŚĀṄKH. ŚR. 2,12,10. 11.] *vyavacchinna* distinguished
 [TARKASAM̃GR. 58.] = *bhinna*
 [TRIK. 3,1,18.]
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) voneinanderreissen, auseinanderthun; unterbrechen: *(śaram) śravaṇāntamupānīya vyavacchinnena muṣṭinā*
 [R. 3,50,17.] *mantraliṅgairvyavacchinnaṃ bhajanto na viduḥ param*
@@ -613,7 +613,7 @@ Schol. to [KĀTY. ŚR. 3,7,17.] [8,2.] *etasyai vā eṣāpacchidyaiṣaiva puna
 [AIT. BR. 1,11.] *avyavacchinnadhāraughaiḥ samudraughasamairghanaiḥ*
 [HARIV. 3580.] *avyavacchinnapiṇḍitaiḥ (śaraiḥ)* _adv._
 [MBH. 7,4746.]
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) sich zu (*prati*) Etwas entscheiden: *iti vyavacchidya sa pāṇḍaveyaḥ prāyopaveśaṃ prati*
 [BHĀG. P. 1,19,7.]
@@ -622,13 +622,13 @@ Schol. to [KĀTY. ŚR. 3,7,17.] [8,2.] *etasyai vā eṣāpacchidyaiṣaiva puna
 [BHĀG. P. 1,19,7.]
 - **EN:** — 4) to decide upon (*prati*) something: *iti vyavacchidya sa pāṇḍaveyaḥ prāyopaveśaṃ prati*
 [BHĀG. P. 1,19,7.]
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **caus)** — Vgl. *vyavaccheda* .
 
 - **RU:** — Vgl. *vyavaccheda* .
 - **EN:** — Vgl. *vyavaccheda* .
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 ## chid
 
@@ -639,7 +639,7 @@ Schol. to [KĀTY. ŚR. 3,7,17.] [8,2.] *etasyai vā eṣāpacchidyaiṣaiva puna
 
 - **RU:** — *ā*
 - **EN:** — *ā*
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **1)** 1) abreissen, abschneiden, zerschneiden, zerbrechen: *kṛtyākṛtaḥ prajāṃ naḍamivā cchindhi vārṣikam*
 [AV. 4,19,1.] [7,74,2.] [12,5,51.] *tṛṇam*
@@ -675,7 +675,7 @@ Schol. to [KĀTY. ŚR. 3,7,17.] [8,2.] *etasyai vā eṣāpacchidyaiṣaiva puna
 [MṚCCH. 131,17.]
 [BHĀG. P. 9,15,33.] *jagadācchidya dhāvat*
 [3,21,18.]
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) herausnehmen: *pādāvācchidyotkrāmati tasmādu haitatpretamāhurācchedyasyeti*
 [ŚAT. BR. 10,5,2,13.] *sa yathā *
@@ -699,7 +699,7 @@ Schol. to [KĀTY. ŚR. 3,7,17.] [8,2.] *etasyai vā eṣāpacchidyaiṣaiva puna
 [3,3,2,8.] [8,1,8.] *hiraṇyaṃ sahasācchidya*
 [KĀTY. ŚR. 7,8,27.] *asimācchidya*
 [DAŚAK. 117,4.]
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) abziehen, entfernen: *asminyathāvatsakhi vartamānā bhartāramācchetsyasi kāminībhyaḥ*
 [MBH. 3,14710.] *karmāntarārjitebhyaḥ svargādilokebhya ācchinatti* abschneiden von, ausschliessen von
@@ -711,7 +711,7 @@ Schol. to [KĀTY. ŚR. 3,7,17.] [8,2.] *etasyai vā eṣāpacchidyaiṣaiva puna
 - **EN:** — 3) to withdraw, remove: *asminyathāvatsakhi vartamānā bhartāramācchetsyasi kāminībhyaḥ*
 [MBH. 3,14710.] *karmāntarārjitebhyaḥ svargādilokebhya ācchinatti* to cut off from, exclude from
 [KULL.] to [M. 4,219.]
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) entreissen, wegnehmen, rauben: *kṛtāntena . ācchidya mama mandāyā nīyase*
 [HARIV. 4836.] *(havyam) jātavedomukhānmāyī miṣatāmācchinatti naḥ*
@@ -738,7 +738,7 @@ Schol. to [KĀTY. ŚR. 3,7,17.] [8,2.] *etasyai vā eṣāpacchidyaiṣaiva puna
 [MṚCCH. 165,7.]
 [PAÑCAT. 222,4.]
 [BHĀG. P. 6,7,39.] [8,19,32.]
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **5)** — 5) nicht beachten, keine Rücksicht auf Etwas nehmen: *yattvāṃ saṃcodayati me vaca ācchidya*
 [R. 2,24,33.] *yathā ca manye durjīvamevaṃ na sukaraṃ dhruvam . ācchidya putre niryāte kauśalyā yatra jīvati ..* dessenungeachtet, dass der Sohn fortgegangen ist,
@@ -750,7 +750,7 @@ Schol. to [KĀTY. ŚR. 3,7,17.] [8,2.] *etasyai vā eṣāpacchidyaiṣaiva puna
 - **EN:** — 5) to disregard, pay no heed to something: *yattvāṃ saṃcodayati me vaca ācchidya*
 [R. 2,24,33.] *yathā ca manye durjīvamevaṃ na sukaraṃ dhruvam . ācchidya putre niryāte kauśalyā yatra jīvati ..* notwithstanding that the son has gone away,
 [57,20.]
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 ## chid
 
@@ -764,7 +764,7 @@ Schol. to [KĀTY. ŚR. 3,7,17.] [8,2.] *etasyai vā eṣāpacchidyaiṣaiva puna
 [VIKR. 15.]
 - **EN:** — *avā* to wrest away: *daityahastādavācchidya*
 [VIKR. 15.]
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 ## chid
 
@@ -778,7 +778,7 @@ Schol. to [KĀTY. ŚR. 3,7,17.] [8,2.] *etasyai vā eṣāpacchidyaiṣaiva puna
 [BHĀG. P. 5,14,24.]
 - **EN:** — *upā* to drag away with oneself, wrest away: *muktastato yadi bandhāddevadatta upācchinatti tasmādapi viṣṇumitraḥ*
 [BHĀG. P. 5,14,24.]
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 ## chid
 
@@ -792,7 +792,7 @@ Schol. to [KĀTY. ŚR. 3,7,17.] [8,2.] *etasyai vā eṣāpacchidyaiṣaiva puna
 [R. 6,8,17.]
 - **EN:** — *samā* dass.: *kālarātryā samācchidya nītaḥ*
 [R. 6,8,17.]
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 ## chid
 
@@ -809,7 +809,7 @@ Schol. to [KĀTY. ŚR. 3,7,17.] [8,2.] *etasyai vā eṣāpacchidyaiṣaiva puna
 - **EN:** — *ud*
  1) to cut out, cut off: *nocchindyādātmano mūlaṃ pareṣāṃ cātitṛṣṇayā*
 [MBH. 7,139.]
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) ausrotten, zu Grunde richten, vernichten, Jmd den Untergang bereiten
 [AV. 7,113,1.] *ucchidyamāneṣu bhṛguṣu*
@@ -839,7 +839,7 @@ Sch. in [WILS.] [SĀṂKHYAK. S. 10.] *ucchettuṃ prabhavati yanna saptasaptist
 Sch. in [WILS.] [SĀṂKHYAK. S. 10.] *ucchettuṃ prabhavati yanna saptasaptistannaiśaṃ timiramapākaroti candraḥ*
 [ŚĀK. 157.] *ucchinna* (beside *vinaṣṭa*) ruined, rejected, wretched
 [MṚCCH. 34,15.]
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) störend in Etwas eingreifen, hemmen, unterbrechen: *tamucchindyāmasya kāmaṃ kathaṃ nu yamasādane*
 [MBH. 1,4891.] *kaccinnyāyānanucchidya kośaste 'bhiprapūryate*
@@ -869,7 +869,7 @@ Sch. zu [KAP. 1,60.] *anucchidyamānatayāvasthānāt*
 [M. 3,101.] *aviveko yuktitaḥ śravaṇataśca na bādhyate nocchidyate*
 Sch. to [KAP. 1,60.] *anucchidyamānatayāvasthānāt*
 [SĀH. D. 75,2.]
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **caus)** — Vgl. *ucchitti, ucchettar* fgg. — caus. ausrotten, vernichten oder vernichten lassen: *prātaḥ sakalānyapi sattvānyucchedayiṣyāmi*
 [PAÑCAT. 55,12.]
@@ -878,7 +878,7 @@ Sch. to [KAP. 1,60.] *anucchidyamānatayāvasthānāt*
 [PAÑCAT. 55,12.]
 - **EN:** — Vgl. *ucchitti, ucchettar* fgg. — caus. to extirpate, destroy or to cause to be destroyed: *prātaḥ sakalānyapi sattvānyucchedayiṣyāmi*
 [PAÑCAT. 55,12.]
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 ## chid
 
@@ -889,7 +889,7 @@ Sch. to [KAP. 1,60.] *anucchidyamānatayāvasthānāt*
 
 - **RU:** — *vyud* pass. mit den Personalendungen des act.
 - **EN:** — *vyud* pass. with the personal endings of act.
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **1)** 1) sich ablösen, abbrechen: *ubhayatra prasaktasya dharme cādharma eva ca . phalārthamūlaṃ vyucchidyettena nandanti śatravaḥ ..*
 [MBH. 12,3923.]
@@ -898,7 +898,7 @@ Sch. to [KAP. 1,60.] *anucchidyamānatayāvasthānāt*
 [MBH. 12,3923.]
 - **EN:** 1) to become detached, break off: *ubhayatra prasaktasya dharme cādharma eva ca . phalārthamūlaṃ vyucchidyettena nandanti śatravaḥ ..*
 [MBH. 12,3923.]
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) eine Unterbrechung erleiden, aufhören: *vinaṣṭe ca mamānuje . piṇḍaḥ pitṝṇāṃ vyucchidyet*
 [MBH. 1,6188.] *kīrtirme vyucchinnā* hat ihr Ende erreicht
@@ -925,7 +925,7 @@ Sch. to [KAP. 1,60.] *anucchidyamānatayāvasthānāt*
 [HARIV. 2355.] *˚pṛthupravṛtti*
 [VIKR. 110.] *tatraikāvayavaṃ dhyāyedavyucchinnena cetasā*
 [BHĀG. P. 2,1,19.]
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 ## chid
 
@@ -945,7 +945,7 @@ Sch. to [KAP. 1,60.] *anucchidyamānatayāvasthānāt*
 [PRAB. 50,12.] to tear out and at the same time to ruin: *saṃghātavānyathā veṇurniviḍo veṇubhirvṛtaḥ . na śakyaḥ sa samucchettuṃ durbalo 'pi tathā nṛpaḥ ..*
 [PAÑCAT. III,57] (vgl. [HIT. IV,26]). to extirpate, destroy: *ye samuccicchidurjñātīn*
 [MBH. 5,2727.] [12,3797.]
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **2)** [PRAB. 50,12.] ausreissen und zugleich zu Grunde richten: *saṃghātavānyathā veṇurniviḍo veṇubhirvṛtaḥ . na śakyaḥ sa samucchettuṃ durbalo 'pi tathā nṛpaḥ ..*
 [PAÑCAT. III,57] (vgl. [HIT. IV,26]). ausrotten, vernichten: *ye samuccicchidurjñātīn*
@@ -954,7 +954,7 @@ Sch. to [KAP. 1,60.] *anucchidyamānatayāvasthānāt*
 - **RU:** [PRAB. 50,12.] вырывать с корнем и вместе с тем погублять: *saṃghātavānyathā veṇurniviḍo veṇubhirvṛtaḥ . na śakyaḥ sa samucchettuṃ durbalo 'pi tathā nṛpaḥ ..*
 [PAÑCAT. III,57] (vgl. [HIT. IV,26]). искоренять, уничтожать: *ye samuccicchidurjñātīn*
 [MBH. 5,2727.] [12,3797.]
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 ## chid
 
@@ -965,7 +965,7 @@ Sch. to [KAP. 1,60.] *anucchidyamānatayāvasthānāt*
 
 - **RU:** — *pari*
 - **EN:** — *pari*
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **1)** 1) auf beiden Seiten abschneiden, beschneiden: *amūlaṃ vā ubhayataḥ paricchinnaṃ rakṣaḥ*
 [ŚAT. BR. 1,1,2,4.] [3,1,3,13.] *tṛṇam*
@@ -977,7 +977,7 @@ Sch. to [KAP. 1,60.] *anucchidyamānatayāvasthānāt*
 - **EN:** 1) to cut off on both sides, to trim: *amūlaṃ vā ubhayataḥ paricchinnaṃ rakṣaḥ*
 [ŚAT. BR. 1,1,2,4.] [3,1,3,13.] *tṛṇam*
 [LĀṬY. 2,1,6.]
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) abschneiden: *vāsaso 'rdhaṃ paricchidya*
 [MBH. 3,2593.] zerschneiden, verstümmeln: *te nipetuḥ paricchinnā bhūmau rāmasya sāyakaiḥ*
@@ -989,7 +989,7 @@ Sch. to [KAP. 1,60.] *anucchidyamānatayāvasthānāt*
 - **EN:** — 2) to cut off: *vāsaso 'rdhaṃ paricchidya*
 [MBH. 3,2593.] to cut up, mutilate: *te nipetuḥ paricchinnā bhūmau rāmasya sāyakaiḥ*
 [R. 3,32,26.]
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) abscheiden, absondern: *śatena śatena vatsānpāyayati payaḥ . śatena paricchidyetyarthaḥ*
 [SIDDH. K.] zu [P. 2,3,27.]
@@ -998,7 +998,7 @@ Sch. to [KAP. 1,60.] *anucchidyamānatayāvasthānāt*
 [SIDDH. K.] zu [P. 2,3,27.]
 - **EN:** — 3) to separate off, to segregate: *śatena śatena vatsānpāyayati payaḥ . śatena paricchidyetyarthaḥ*
 [SIDDH. K.] to [P. 2,3,27.]
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) nach allen Seiten abgrenzen, genau bestimmen, genau angeben, richtig abschätzen, sich Gewissheit über Etwas oder Jmd verschaffen
 [Z. d. d. m. G. 7,310, N. 1.] [P. 2,1,28], Sch. *yasya na cānubandhi yaśaḥ paricchettumiyattayālam*
@@ -1040,13 +1040,13 @@ Sch. zu [KAP. 1,28. 49. 50.] [VEDĀNTAS. (Allah.) No. 36.]
 [BHĀG. P. 3,10,12] ([BURN.]: apparaît â l'existence avec ses divisions, par la volonté de l'Être suprême). *paricchinna* delimited, restricted: *paricchinnaṃ na sarvopādānam*
 [KAP. 1,77.]
 Sch. to [KAP. 1,28. 49. 50.] [VEDĀNTAS. (Allah.) No. 36.]
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **caus)** — Vgl. *paricchitti* u. s. w.
 
 - **RU:** — Vgl. *paricchitti* u. s. w.
 - **EN:** — Vgl. *paricchitti* u. s. w.
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 ## chid
 
@@ -1060,7 +1060,7 @@ Sch. to [KAP. 1,28. 49. 50.] [VEDĀNTAS. (Allah.) No. 36.]
 [MBH. 5,4513.]
 - **EN:** — *vipari* to cut off all around, to trim, to cut up: *viparicchinnamūlo 'pi na viṣīdet*
 [MBH. 5,4513.]
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 ## chid
 
@@ -1112,7 +1112,7 @@ Sch. to [KAP. 1,28. 49. 50.] [VEDĀNTAS. (Allah.) No. 36.]
 [MBH. 12,9770.] — caus. to cause to be cut off: *mahātmanaḥ . karau pracchedayāmāsa*
 [MBH. 12,686.] *pravṛddhānāṃ vṛkṣāṇāṃ śākhāṃ pracchedayettathā*
 [2637.]
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **pra-1)** — *pra*
  1) abreissen, abschneiden; zerschneiden, zerhauen, spalten, durchbohren: *tāṃstvaṃ pra cchindhi varaṇa purā diṣṭātpurāyuṣaḥ*
@@ -1145,7 +1145,7 @@ Sch. to [KAP. 1,28. 49. 50.] [VEDĀNTAS. (Allah.) No. 36.]
 [MBH. 3,11710.] *patākāṃ cakragoptārau sarvopakaraṇāni ca . laghuhastaḥ praciccheda*
 [7,1628.] *tilaśaḥ*
 [7863.]
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 ## chid
 
@@ -1159,7 +1159,7 @@ Sch. to [KAP. 1,28. 49. 50.] [VEDĀNTAS. (Allah.) No. 36.]
 [HARIV. 13613.]
 - **EN:** — *saṃpra* to cut up, hew asunder, split: *tataḥ śastrāṇi śūlāni niśitāni sahasraśaḥ . astravīryeṇa mahatā ditijaḥ saṃpracicchide ..*
 [HARIV. 13613.]
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 ## chid
 
@@ -1179,7 +1179,7 @@ Sch. to [KAP. 1,28. 49. 50.] [VEDĀNTAS. (Allah.) No. 36.]
 (v. l. *pracchidya*)
 [ŚĀṄKH. ŚR. 1,6,6.] to answer someone (acc.) with hewing, splitting u. s. w.: *tāṃśca sātyakiḥ . nārācaiḥ praticiccheda*
 [MBH. 7,4848.]
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 ## chid
 
@@ -1190,7 +1190,7 @@ Sch. to [KAP. 1,28. 49. 50.] [VEDĀNTAS. (Allah.) No. 36.]
 
 - **RU:** — *vi*
 - **EN:** — *vi*
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **1)** 1) zerreissen, zerbrechen, spalten, trennen, unterbrechen: *yathā nakulo vicchidya saṃdadhātyahiṃ punaḥ . evā kāmasya vicchinnaṃ saṃ dhehi vīryāvati ..*
 [AV. 6,139,5.] *(śūlam) vicicchide haririṣubhiḥ sahasradhā*
@@ -1304,7 +1304,7 @@ Sch. to [KAP. 1,28. 49. 50.] [VEDĀNTAS. (Allah.) No. 36.]
 [PRAB. 33,10.] with interruptions: *tatrādvitīyavastuni vicchidya vicchidyāntarindriyavṛttipravāho dhyānam*
 ([BALL.]: on separate occasions [instead of being uninterruptedly so])
 [VEDĀNTAS. (Allah.) No. 134.]
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) sich spalten: *reto 'sya vicchindyāt*
 [TS. 5,6,8,5.]
@@ -1313,7 +1313,7 @@ Sch. to [KAP. 1,28. 49. 50.] [VEDĀNTAS. (Allah.) No. 36.]
 [TS. 5,6,8,5.]
 - **EN:** — 2) to split (intrans.): *reto 'sya vicchindyāt*
 [TS. 5,6,8,5.]
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) *vicchinna = kuṭila* krumm
 [H. an. 3,416.]
@@ -1322,7 +1322,7 @@ Sch. to [KAP. 1,28. 49. 50.] [VEDĀNTAS. (Allah.) No. 36.]
 [H. an. 3,416.]
 - **EN:** — 3) *vicchinna = kuṭila* crooked
 [H. an. 3,416.]
-  <sub>DCS 2209 · lexicographic</sub>
+  <sub>lexicographic</sub>
 
 **4)** — 4) *vicchinna = samālabdha* gesalbt
 [TRIK. 3,3,262.]
@@ -1337,13 +1337,13 @@ Sch. to [KAP. 1,28. 49. 50.] [VEDĀNTAS. (Allah.) No. 36.]
 [TRIK. 3,3,262.]
 [H. an.]
 [MED. n. 132.]
-  <sub>DCS 2209 · lexicographic</sub>
+  <sub>lexicographic</sub>
 
 **caus)** — Vgl. *vicchitti* fgg.
 
 - **RU:** — Vgl. *vicchitti* fgg.
 - **EN:** — Vgl. *vicchitti* fgg.
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 ## chid
 
@@ -1395,7 +1395,7 @@ Sch. to [KAP. 1,28. 49. 50.] [VEDĀNTAS. (Allah.) No. 36.]
 [BHAG. 4,11.]
 [BHĀG. P. 1,15,31.] [3,7,15.] *praśnam* to settle a question
 [4,29,52.]
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **sam-1)** — *sam*
  1) abschneiden, abhauen; zerschneiden, spalten, durchbohren: *lomāni*
@@ -1428,7 +1428,7 @@ Sch. to [KAP. 1,28. 49. 50.] [VEDĀNTAS. (Allah.) No. 36.]
 [MBH. 1,8311.]
 [BHĀG. P. 3,3,17.] [4,6,2.] [10,18.] *saṃchidyantau ca gātrāṇi* рубя друг другу члены тела
 [MBH. 7,7918.]
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 ## chid
 
@@ -1459,7 +1459,7 @@ Sch. to [KAP. 1,28. 49. 50.] [VEDĀNTAS. (Allah.) No. 36.]
 [MBH. 7,4656.] *vācaśca hṛdayacchidaḥ*
 [R. 5,37,10.] *marmacchido vedanāḥ*
 [ŚĀNTIŚ. 1,16.] Vgl. *ukha˚, keśa˚, pakṣa˚, vana˚* .
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **1b)** — b) zu-Grunde richtend, vernichtend, entfernend: *jīvita˚*
 [MBH. 5,1809.]
@@ -1486,7 +1486,7 @@ Sch. to [KAP. 1,28. 49. 50.] [VEDĀNTAS. (Allah.) No. 36.]
 [6,35.] *duḥkha˚*
 [4,8,23.] *mārgeṇādhvaklamacchidā*
 [VID. 33.] Vgl. *darpa˚, paṅka˚* .
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) _m._ Divisor; Nenner eines Bruchs
 [COLEBR. Alg. 35.]
@@ -1495,7 +1495,7 @@ Sch. to [KAP. 1,28. 49. 50.] [VEDĀNTAS. (Allah.) No. 36.]
 [COLEBR. Alg. 35.]
 - **EN:** — 3) _m._ divisor; denominator of a fraction
 [COLEBR. Alg. 35.]
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 ## chid
 
@@ -1506,19 +1506,19 @@ Sch. to [KAP. 1,28. 49. 50.] [VEDĀNTAS. (Allah.) No. 36.]
 
 - **RU:** *chid*¦
 - **EN:** 1. *chid*¦
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **2)** 2) *udanvacchinnā bhūḥ* so v. a. begrenzt
 
 - **RU:** 2) *udanvacchinnā bhūḥ* так v. a. — «ограниченный»
 - **EN:** 2) *udanvacchinnā bhūḥ* so v. a. bounded, delimited
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **2-cit)** [Spr. 461.]
 
 - **RU:** [Spr. 461.]
 - **EN:** [Spr. 461.]
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) *acchinnaṃ lokasya hasitaṃ tvabhūt* ununterbrochen
 [KATHĀS. 61,47.] *kiṃ naśchinnam* was stört es uns? was geht es uns an? was machen wir uns daraus?
@@ -1530,13 +1530,13 @@ Sch. to [KAP. 1,28. 49. 50.] [VEDĀNTAS. (Allah.) No. 36.]
 - **EN:** — 3) *acchinnaṃ lokasya hasitaṃ tvabhūt* uninterrupted
 [KATHĀS. 61,47.] *kiṃ naśchinnam* what does it matter to us? what does it concern us? what do we care about it?
 [Spr. 2130.]
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **3-ref)** [MALLIN.] zu [KIR. 2,7.] [SARVADARŚANAS. 27,13.]
 
 - **RU:** [MALLIN.] к [KIR. 2,7.] [SARVADARŚANAS. 27,13.]
 - **EN:** [MALLIN.] see [KIR. 2,7.] [SARVADARŚANAS. 27,13.]
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) *śrutirātmaśaraṇyānāṃ vyasanaṃ no chinatti kim*
 [LA. (II) 90,22.] *saṃśayam*
@@ -1551,7 +1551,7 @@ Sch. to [KAP. 1,28. 49. 50.] [VEDĀNTAS. (Allah.) No. 36.]
 [LA. (II) 90,22.] *saṃśayam*
 [SŪRYAS. 12,9.] *tāvatpayo 'khilam . tattasyāśchinnam* vanished, no longer present
 [KATHĀS. 61,47.]
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **6)** — 6) theilen, dividiren
 [SŪRYAS. 4,26.] — caus.
@@ -1560,7 +1560,7 @@ Sch. to [KAP. 1,28. 49. 50.] [VEDĀNTAS. (Allah.) No. 36.]
 [SŪRYAS. 4,26.] — caus.
 - **EN:** — 6) to divide, to divide (arithmetically)
 [SŪRYAS. 4,26.] — caus.
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **caus-1)** 1)
 [Spr. 4540.]
@@ -1569,13 +1569,13 @@ Sch. to [KAP. 1,28. 49. 50.] [VEDĀNTAS. (Allah.) No. 36.]
 [Spr. 4540.]
 - **EN:** 1)
 [Spr. 4540.]
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **caus-ppp)** — *ava*
 
 - **RU:** — *ava*
 - **EN:** — *ava*
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **caus-3)** 3) *avacchinna* bestimmt, präcisirt, begrifflich begrenzt: *ṣoḍaśasaṃkhyāvacchinno gaṇaḥ ṣoḍaśakaḥ*
 [SARVADARŚANAS. 148,21.] [NĪLAK. 205. 225. 238. 242. 244. 170. fg.] *tādātmyasaṃbandhāvacchinnapratiyogiko 'nyo'nyābhāvaḥ*
@@ -1602,7 +1602,7 @@ Sch. to [KAP. 1,28. 49. 50.] [VEDĀNTAS. (Allah.) No. 36.]
 [BĀLAB. 33] and [YOGAS. 2,31] under
  1) and
 [VEDĀNTAS. (Allah.) No. 34] and [BHARTṚ. 2,1] under 2); *dikkālānavacchinna* not belonging to space and time, not falling under the categories of space and time.
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **des-1)** — *ā*
  1)
@@ -1614,7 +1614,7 @@ Z. 4 [MBH. 12,9377] — [ed. Bomb.] читает *ye ca cchindanti vṛṣaṇā
 - **EN:** — *ā*
  1)
 Z. 4 [MBH. 12,9377] reads the [ed. Bomb.] *ye ca cchindanti vṛṣaṇān* .
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **des-3)** — 3) entfernen, zu Nichte machen: *yenācchinnaṃ tattamaḥ* (so die [ed. Bomb.])
 [MBH. 13,7362.]
@@ -1623,7 +1623,7 @@ Z. 4 [MBH. 12,9377] reads the [ed. Bomb.] *ye ca cchindanti vṛṣaṇān* .
 [MBH. 13,7362.]
 - **EN:** — 3) to remove, to annihilate: *yenācchinnaṃ tattamaḥ* (so the [ed. Bomb.])
 [MBH. 13,7362.]
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **des-4)** — 4) *ācchinnadāradraviṇāḥ*
 [BHĀG. P. 12,2,9.]
@@ -1632,7 +1632,7 @@ Z. 4 [MBH. 12,9377] reads the [ed. Bomb.] *ye ca cchindanti vṛṣaṇān* .
 [BHĀG. P. 12,2,9.]
 - **EN:** — 4) *ācchinnadāradraviṇāḥ*
 [BHĀG. P. 12,2,9.]
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **des-6)** — 6) unterbrechen: *kathāmācchidya*
 [KATHĀS. 61,94.]
@@ -1641,7 +1641,7 @@ Z. 4 [MBH. 12,9377] reads the [ed. Bomb.] *ye ca cchindanti vṛṣaṇān* .
 [KATHĀS. 61,94.]
 - **EN:** — 6) to interrupt: *kathāmācchidya*
 [KATHĀS. 61,94.]
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **des-ppp)** — *samud*, *samucchinna* verloren gegangen: *racanā*
 [SŪRYAS. 13,18.]
@@ -1650,7 +1650,7 @@ Z. 4 [MBH. 12,9377] reads the [ed. Bomb.] *ye ca cchindanti vṛṣaṇān* .
 [SŪRYAS. 13,18.]
 - **EN:** — *samud*, *samucchinna* lost, gone: *racanā*
 [SŪRYAS. 13,18.]
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **intens-4)** — *pari*
  4)
@@ -1674,7 +1674,7 @@ Schol. посредством *pṛthakprakāśita*.* aparicchinna* — «нео
 Schol. through *pṛthakprakāśita*.* aparicchinna* unlimited, unrestricted
 [Spr. 3473.]
 [SARVADARŚANAS. 53,2.]
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **pass-1)** — *vi*
  1) *vicchinna* unterbrochen
@@ -1698,7 +1698,7 @@ Schol. through *pṛthakprakāśita*.* aparicchinna* unlimited, unrestricted
 [171,10.] *a˚*
 [58,14.] *vicchinnatva*
 [165,20.]
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 ## chid
 
@@ -1715,7 +1715,7 @@ Z. 2 — следует читать [M.] st. [MBH.]
 - **EN:** 1. *chid*¦ with *ud*
  1)
 Z. 2 read [M.] st. [MBH.]
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — *pra* caus. vom intens. *pracecchidayya*
 [PAT. a. a. O. 6 (4) 14,a.]
@@ -1724,7 +1724,7 @@ Z. 2 read [M.] st. [MBH.]
 [PAT. a. a. O. 6 (4) 14,a.]
 - **EN:** — *pra* caus. from intens. *pracecchidayya*
 [PAT. a. a. O. 6 (4) 14,a.]
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 ## chid
 
@@ -1741,7 +1741,7 @@ Z. 2 read [M.] st. [MBH.]
 - **EN:** 2. *chid*¦ _f._ nom. act. cutting, annihilation: *bhava˚*
 [HEM.]
 [YOGAŚ. 3,141.]
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 ## chid
 
@@ -1757,43 +1757,43 @@ Z. 2 read [M.] st. [MBH.]
 - **RU:** **1.** √*chid*¦, *chinatti, chintte* (*chindet* [KṢURIKOP. 14. 19])
 — 1〉 срезать, -рубать, -бивать, -рывать, -грызать, -кусывать, разрезать, -рубать, -рывать, раскалывать, пробуравливать. *saṃdhim* пробить отверстие в стене. Pass. разломать, разорвать (intrans.). *chinna* отрезанный u. s. w.; разорванный, -резанный; надрезанный, d. h. снабжённый перетяжками [217,6].
 - **EN:** — 1〉 to cut off, hew off, strike off, tear off, gnaw off, bite off, cut through, hew through, tear through, split, pierce. *saṃdhim* to make a hole in the wall. Pass. to break, to tear (intrans.). *chinna* cut off u. s. w.; torn open, cut open; incised, d. h. provided with notches/constrictions [217,6].
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2〉 scheiden, trennen, — von (Abl., ausnahmsweise Instr.). *chinna* unterbrochen, nicht zusammenhängend. *˚chinna* auch begrenzt —, eingeschlossen von [Spr. 1229].
 
 - **RU:** — 2〉 разлучать, отделять, — от (Abl., исключительно Instr.). *chinna* прерванный, не связный. *˚chinna* также ограниченный —, замкнутый [Spr. 1229].
 - **EN:** — 2〉 to separate, to sever, — from (Abl., exceptionally Instr.). *chinna* interrupted, not continuous. *˚chinna* also bounded by, enclosed by [Spr. 1229].
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3〉 ablösen, -sondern, herausnehmen.
 
 - **RU:** — 3〉 отделять, обособлять, извлекать.
 - **EN:** — 3〉 to detach, to separate out, to extract.
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4〉 unterbrechen, stören.
 
 - **RU:** — 4〉 прерывать, нарушать.
 - **EN:** — 4〉 to interrupt, to disturb.
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **5)** — 5〉 vernichten, zu Grunde richten, zerstören, entfernen. *ṛṇam* so v. a. eine Schuld tilgen. Pass. verschwinden [287,26]. *chinna* verschwunden, nicht mehr da seiend. *kiṃ naśchinnam* so v. a. was büssen wir dabei ein? was machen wir uns daraus?
 
 - **RU:** — 5〉 уничтожать, губить, разрушать, устранять. *ṛṇam* так v. a. уплатить долг. Pass. исчезать [287,26]. *chinna* исчезнувший, более не существующий. *kiṃ naśchinnam* так v. a. что мы при этом теряем? что нам до этого?
 - **EN:** — 5〉 to annihilate, to ruin, to destroy, to remove. *ṛṇam* so v. a. to discharge a debt. Pass. to disappear [287,26]. *chinna* vanished, no longer present. *kiṃ naśchinnam* so v. a. what do we forfeit thereby? what do we care about it?
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **6)** — 6〉 theilen, dividiren.
 
 - **RU:** — 6〉 делить, производить деление.
 - **EN:** — 6〉 to divide, to divide (arithmetically).
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **7)** — 7〉 **chinna* am Ende eines Comp. herabgekommen —, entkräftet —, ermüdet durch oder von.
 
 - **RU:** — 7〉 **chinna* в конце Comp. павший —, обессиленный —, утомлённый от чего-л. или чем-л.
 - **EN:** — 7〉 **chinna* at the end of a Comp. reduced by, weakened by, exhausted by or from.
-  <sub>DCS 2209 · lexicographic</sub>
+  <sub>lexicographic</sub>
 
 **caus-header)** — Caus. *chedayati*
 - **EN:** — Caus. *chedayati*
@@ -1808,37 +1808,37 @@ Z. 2 read [M.] st. [MBH.]
 
 - **RU:** — Desid. в *cicchitsu*.
 - **EN:** — Desid. in *cicchitsu*.
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **intens-header)** — *Intens. *cecchidīti* und *cecchidyate*.
 
 - **RU:** — *Intens. *cecchidīti* и *cecchidyate*.
 - **EN:** — *Intens. *cecchidīti* and *cecchidyate*.
-  <sub>DCS 2209 · lexicographic</sub>
+  <sub>lexicographic</sub>
 
 **ati)** — Mit *ati*, *˚cchinna* zu stark aufgeschnitten [SUŚR. 2,19,1]. zu stark zerhauen, — verwundet [MBH. 12,96,15].
 
 - **RU:** — Mit *ati*, *˚cchinna* чрезмерно надрезанный [SUŚR. 2,19,1]. чрезмерно изрубленный, — израненный [MBH. 12,96,15].
 - **EN:** — With *ati*, *˚cchinna* cut too deeply [SUŚR. 2,19,1]. too deeply hewn, — wounded [MBH. 12,96,15].
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **ava)** — Mit *antar* abschneiden, intercludere [28,7].
 
 - **RU:** — Mit *antar* срезать, отрезать (intercludere) [28,7].
 - **EN:** — With *antar* to cut off, intercludere [28,7].
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **apa)** — Mit *apa* abspalten, abtrennen.
 
 - **RU:** — Mit *apa* откалывать, отделять.
 - **EN:** — With *apa* to split off, to sever.
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **abhi)** — Mit *samapa* abschneiden [ŚULBAS. 3,72].
 
 - **RU:** — Mit *samapa* срезать [ŚULBAS. 3,72].
 - **EN:** — With *samapa* to cut off [ŚULBAS. 3,72].
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **apa2)** — Mit *ava* Jmd von sich weisen, zurückstossen [KĀD. 2,87,8]. Pass. getrennt —, geschieden werden von (Abl.). — *avacchinna*
 - **EN:** — With *ava* to repel someone from oneself, to push away [KĀD. 2,87,8]. Pass. to become separated, divided from (Abl.). — *avacchinna*
@@ -1856,7 +1856,7 @@ Z. 2 read [M.] st. [MBH.]
 
 - **RU:** — Mit *paryava* отделять со всех сторон.
 - **EN:** — With *paryava* to sever on all sides.
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **pra-header)** — Mit *vyava*
 - **EN:** — With *vyava*
@@ -1907,19 +1907,19 @@ Z. 2 read [M.] st. [MBH.]
 
 - **RU:** — Mit *avā* вырывать из (Abl.).
 - **EN:** — With *avā* to wrest out of (Abl.).
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **upa)** — Mit *upā* mit sich fortziehen, entreissen.
 
 - **RU:** — Mit *upā* увлекать за собой, вырывать.
 - **EN:** — With *upā* to drag away with oneself, to wrest away.
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **sam-header)** — Mit *samā* dass.
 
 - **RU:** — Mit *samā* dass.
 - **EN:** — With *samā* dass.
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **ni-header)** — Mit *ud*
 - **EN:** — With *ud*
@@ -1937,13 +1937,13 @@ Z. 2 read [M.] st. [MBH.]
 
 - **RU:** — Caus. искоренять, уничтожать или заставлять уничтожать.
 - **EN:** — Caus. to extirpate, to annihilate or to cause to be annihilated.
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **prati)** — Mit *vyud* Pass. mit den Personalendungen des Act. zu Nichte werden, eine Unterbrechung erleiden, aufhören. *vyucchinna* zu Ende gegangen.
 
 - **RU:** — Mit *vyud* Pass. с личными окончаниями Act. сводиться к нулю, подвергаться перерыву, прекращаться. *vyucchinna* завершившийся.
 - **EN:** — With *vyud* Pass. with the personal endings of the Act. to come to nothing, to suffer an interruption, to cease. *vyucchinna* come to an end.
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **ud2-header)** — Mit *samud*
 - **EN:** — With *samud*
@@ -1970,7 +1970,7 @@ Z. 2 read [M.] st. [MBH.]
 
 - **RU:** — Mit *vipari* обрезать со всех сторон, подрезать, разрезать.
 - **EN:** — With *vipari* to cut off on all sides, to trim, to cut through.
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **vi2-header)** — Mit *pra*
 - **EN:** — With *pra*
@@ -1988,13 +1988,13 @@ Z. 2 read [M.] st. [MBH.]
 
 - **RU:** — *Caus. от Intens. *pracecchidayya*.
 - **EN:** — *Caus. from Intens. *pracecchidayya*.
-  <sub>DCS 2209 · lexicographic</sub>
+  <sub>lexicographic</sub>
 
 **ni2)** — Mit *saṃpra* zerschneiden, -hauen, spalten.
 
 - **RU:** — Mit *saṃpra* разрезать, -рубать, раскалывать.
 - **EN:** — With *saṃpra* to cut apart, to hew apart, to split.
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **ava2-header)** — Mit *prati*
 - **EN:** — With *prati*
@@ -2053,13 +2053,13 @@ Z. 2 read [M.] st. [MBH.]
 
 - **RU:** — b〉 губящий, уничтожающий, устраняющий.
 - **EN:** — b〉 ruining, annihilating, removing.
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **2-2)** — 2〉 _m._ Divisor, Nenner eines Bruchs.
 
 - **RU:** — 2〉 _m._ делитель, знаменатель дроби.
 - **EN:** — 2〉 _m._ divisor, denominator of a fraction.
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **2-3a)** — 3〉 _f._
 — a〉 das Abschneiden, Abhauen. *śirasām* [BĀLAR. 249,12].
@@ -2068,25 +2068,25 @@ Z. 2 read [M.] st. [MBH.]
 — a〉 срезание, срубание. *śirasām* [BĀLAR. 249,12].
 - **EN:** — 3〉 _f._
 — a〉 the cutting off, the hewing off. *śirasām* [BĀLAR. 249,12].
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **2-3b)** — b〉 am Ende eines Comp. das zu Nichte Machen.
 
 - **RU:** — b〉 в конце Comp. уничтожение.
 - **EN:** — b〉 at the end of a Comp. the annihilation.
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **vipra)** √*chid*¦ mit *vipra* trennen [ĀPAST. ŚR. 10,15,12]. [19,14].
 
 - **RU:** √*chid*¦ mit *vipra* разлучать, отделять [ĀPAST. ŚR. 10,15,12]. [19,14].
 - **EN:** √*chid*¦ with *vipra* to separate [ĀPAST. ŚR. 10,15,12]. [19,14].
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **1)** **1.** √*chid*¦, *chindatprāṇi* (Nomin.) ein grasfressendes Thier [ĀPAST. ŚR. 9,13,1]. [16,8].
 
 - **RU:** **1.** √*chid*¦, *chindatprāṇi* (Nomin.) травоядное животное [ĀPAST. ŚR. 9,13,1]. [16,8].
 - **EN:** **1.** √*chid*¦, *chindatprāṇi* (Nomin.) a grass-eating animal [ĀPAST. ŚR. 9,13,1]. [16,8].
-  <sub>DCS 2209 · lexicographic</sub>
+  <sub>lexicographic</sub>
 
 **II-6)** **1.** √*chid*¦ II. 6. Auch lösen, entscheiden (einen Zweifel) [MBH. 1,71,17].
 — Mit *vipra* 4.
@@ -2095,7 +2095,7 @@ Z. 2 read [M.] st. [MBH.]
 — Mit *vipra* 4.
 - **EN:** **1.** √*chid*¦ II. 6. Also to resolve, to decide (a doubt) [MBH. 1,71,17].
 — With *vipra* 4.
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **Kaus.)** — Caus. *chedayati*
 — 1〉 abschneiden —, abhauen —, zerhauen lassen.
@@ -2104,7 +2104,7 @@ Z. 2 read [M.] st. [MBH.]
 - **RU:** — Caus. *chedayati*
 — 1〉 велеть срезать —, срубать —, разрубать.
 — 2〉 срезать, срубать.
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **Mit upa)** — Mit *ava* Jmd von sich weisen, zurückstossen [KĀD. 2,87,8]. Pass. getrennt —, geschieden werden von (Abl.). — *avacchinna*
 — 1〉 unterbrochen.
@@ -2115,7 +2115,7 @@ Z. 2 read [M.] st. [MBH.]
 — 1〉 прерванный.
 — 2〉 ограниченный —, замкнутый (предшествующим в Comp.) [260,30]. [261,5].
 — 3〉 определённый, точно установленный, понятийно определённый.
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **Mit pra)** — Mit *vyava*
 — 1〉 abschneiden.
@@ -2132,7 +2132,7 @@ Z. 2 read [M.] st. [MBH.]
 — 4〉 прерывать.
 — 5〉 разграничивать, точно определять [BHĀG. P. 4,29,45].
 — 6〉 решаться на (*prati*).
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **Mit vi)** — Mit *ā*
 — 1〉 abreissen, -schneiden, zerschneiden, -brechen.
@@ -2151,7 +2151,7 @@ Z. 2 read [M.] st. [MBH.]
 — 5〉 прерывать.
 — 6〉 удалять, уничтожать.
 — 7〉 не замечать, не принимать во внимание.
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **Mit prati + vi / vi + prati)** — Mit *ud*
 — 1〉 ausschneiden, abschneiden, — von (Abl.) [AV. PAIPP. 20,2,2].
@@ -2162,7 +2162,7 @@ Z. 2 read [M.] st. [MBH.]
 — 1〉 вырезать, срезать, — от (Abl.) [AV. PAIPP. 20,2,2].
 — 2〉 искоренять, губить, уничтожать, готовить кому-л. гибель. *ucchinna* о человеке — v. a. погибший, жалкий.
 — 3〉 вмешиваться, нарушая что-л., препятствовать, прерывать. Pass. быть остановленным —, прерванным, прекращаться, иссякать, недоставать.
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **Mit vi + pra)** — Mit *samud*
 — 1〉 ausreissen, zerreissen.
@@ -2171,7 +2171,7 @@ Z. 2 read [M.] st. [MBH.]
 - **RU:** — Mit *samud*
 — 1〉 вырывать, разрывать.
 — 2〉 искоренять, уничтожать, сводить к нулю. *samucchinna* утраченный.
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **Mit sam + vi)** — Mit *pari*
 — 1〉 auf beiden Seiten abschneiden, beschneiden; — Getraide schneiden [KĀRAṆḌ. 71,7].
@@ -2182,7 +2182,7 @@ Z. 2 read [M.] st. [MBH.]
 — 1〉 обрезать с обеих сторон, подрезать; — злаки жать [KĀRAṆḌ. 71,7].
 — 2〉 разграничивать со всех сторон, точно определять, — обозначать, верно оценивать, удостоверяться в чём-л. *paricchinna* ограниченный.
 — 3〉 *paricchinna* расщеплённый, поэтому v. a. многообразно являющийся.
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **Mit pra + sam)** — Mit *pra*
 — 1〉 abreissen, -schneiden, zerschneiden, -hauen, spalten, durchbohren.
@@ -2193,7 +2193,7 @@ Z. 2 read [M.] st. [MBH.]
 — 1〉 обрывать, -резать, разрезать, -рубать, раскалывать, пробуравливать.
 — 2〉 вырывать, отнимать.
 — Caus. велеть срезать.
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **Mit ud + sam)** — Mit *prati*
 — 1〉 abreissen, -schneiden.
@@ -2202,7 +2202,7 @@ Z. 2 read [M.] st. [MBH.]
 - **RU:** — Mit *prati*
 — 1〉 обрывать, -резать.
 — 2〉 рубя, раскалывая u. s. w. отвечать кому-л. (Acc.).
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **Mit vi + ud)** — Mit *vi*
 — 1〉 zerreissen, -brechen, spalten.
@@ -2223,7 +2223,7 @@ Z. 2 read [M.] st. [MBH.]
 — 6〉 *vicchinna*
 — a〉 *кривой.
 — b〉 *умащённый (*samālabdha*).
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **Mit ā + vi + ud)** — Mit *sam*
 — 1〉 abschneiden, -hauen, zerschneiden, spalten, durchbohren. *saṃchidyantau* (v. l. *saṃchindantau*) *ca gātrāṇi* sich gegenseitig Glieder abhauend.
@@ -2232,7 +2232,7 @@ Z. 2 read [M.] st. [MBH.]
 - **RU:** — Mit *sam*
 — 1〉 срезать, -рубать, разрезать, раскалывать, пробуравливать. *saṃchidyantau* (v. l. *saṃchindantau*) *ca gātrāṇi* взаимно отрубая члены.
 — 2〉 разрешать (сомнение), решать (вопрос).
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **1a)** **2.** *chid*¦
 — 1〉 _Adj._ am Ende eines Comp.
@@ -2241,7 +2241,7 @@ Z. 2 read [M.] st. [MBH.]
 - **RU:** **2.** *chid*¦
 — 1〉 _Adj._ в конце Comp.
 — a〉 срезающий, разрезающий, -ламывающий, -рывающий, раскалывающий, пробуравливающий.
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 ## chid
 
@@ -2254,17 +2254,17 @@ Z. 2 read [M.] st. [MBH.]
 **SCH-lösen)** 1. chid¦ auch lösen, entscheiden (einen Zweifel), [MBh. 1,71,17.]
 
 - **RU:** 1. chid¦ также — «разрешать, решать» (сомнение), [MBh. 1,71,17.]
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **SCH-chindatprani)** chindatprāṇi (Nomin.) ein grasfressendes Tier, [Āpast. Śr. 9,13,1; 16,8.]
 
 - **RU:** chindatprāṇi (Nomin.) — «травоядное животное», [Āpast. Śr. 9,13,1; 16,8.]
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **SCH-vipra)** Mit vipra trennen, [Āpast. Śr. 10,15,12; 19,14.] {part=,seq=13779,type=,n=5}
 
 - **RU:** С vipra — «разделять», [Āpast. Śr. 10,15,12; 19,14.] {part=,seq=13779,type=,n=5}
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 ## chid
 
@@ -2275,19 +2275,19 @@ Z. 2 read [M.] st. [MBH.]
 
 - **RU:** *chid*¦ с *vipra* — «разделять» [ĀPAST. ŚR. 10,15,12]. [19,14].
 - **EN:** *chid*¦ with *vipra* to separate [ĀPAST. ŚR. 10,15,12]. [19,14].
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **1)** **1.** *chid*¦, *chindatprāṇi* (Nomin.) ein grasfressendes Thier [ĀPAST. ŚR. 9,13,1]. [16,8].
 
 - **RU:** **1.** *chid*¦, *chindatprāṇi* (Nomin.) — «травоядное животное» [ĀPAST. ŚR. 9,13,1]. [16,8].
 - **EN:** **1.** *chid*¦, *chindatprāṇi* (Nomin.) a grass-eating animal [ĀPAST. ŚR. 9,13,1]. [16,8].
-  <sub>DCS 2209 · lexicographic</sub>
+  <sub>lexicographic</sub>
 
 **II-6)** **1.** *chid*¦ II. 6. Auch lösen, entscheiden (einen Zweifel) [MBH. 1,71,17]. — Mit *vipra* 4.
 
 - **RU:** **1.** *chid*¦ II. 6. Также — «разрешать, решать» (сомнение) [MBH. 1,71,17]. — С *vipra* 4.
 - **EN:** **1.** *chid*¦ II. 6. Also to resolve, to decide (a doubt) [MBH. 1,71,17]. — With *vipra* 4.
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 ## chid
 
@@ -2298,109 +2298,109 @@ Z. 2 read [M.] st. [MBH.]
 
 - **RU:** *chid* [Gen , unsp] ( chinátti, chintte VII ) (в математике) делить. Sūryas iv, 26
 - **EN:** *chid* [Gen , unsp] ( chinátti, chintte VII ) (in math.) to divide. Sūryas iv, 26
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **2)** [Ved , unsp] abschneiden (Fuss, Flügel, Akk), abreissen, zerreissen (Faden, Zügel, Akk), zerstossen (den Kopf, Akk, mit dem Fusse, Istr)
 
 - **RU:** [Ved , unsp] отрезать (ногу, крыло, Akk), отрывать, разрывать (нить, поводья, Akk), разбивать (голову, Akk, ногой, Istr)
 - **EN:** [Ved , unsp] to cut off (foot, wing, Acc.), to tear away, to tear asunder (thread, reins, Acc.), to crush (the head, Acc., with the foot, Instr.)
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **3)** [Ved , unsp] ( chinátti VII ) brechen, zerbrechen
 
 - **RU:** [Ved , unsp] ( chinátti VII ) ломать, разламывать
 - **EN:** [Ved , unsp] ( chinátti VII ) to break, to break asunder
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **4)** [Ved , unsp] ( VII ) abtrennen, abschneiden, abhauen. ṚV 1,116,15
 
 - **RU:** [Ved , unsp] ( VII ) отделять, отрезать, срубать. ṚV 1,116,15
 - **EN:** [Ved , unsp] ( VII ) to separate off, to cut off, to hew off. ṚV 1,116,15
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **5)** [Buddh , unsp] durchschneiden. zerhacken
 
 - **RU:** [Buddh , unsp] разрезать. рубить
 - **EN:** [Buddh , unsp] to cut through; to hack to pieces
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **6)** *+ anu : to destroy. dhalal 1934, ś. 52, Z. 4 .* [Kāv , unsp] + antar : wegreissen. ŚB 1,8,1,6 . Ved , unsp
 
 - **RU:** *+ anu : to destroy. dhalal 1934, ś. 52, Z. 4 .* [Kāv , unsp] + antar : вырывать, уносить прочь. ŚB 1,8,1,6 . Ved , unsp
 - **EN:** *+ anu : to destroy. dhalal 1934, ś. 52, Z. 4 .* [Kāv , unsp] + antar: to tear away. ŚB 1,8,1,6 . Ved , unsp
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **7)** *+ apa ( apacchinna ): snatched aṭay. khā 7.16.16 .* [Śā , Soc (s.v. apacchinna )] + ā . acchindati . Buddh , unsp ; BHSD : 7 (s.v. acchindati )
 
 - **RU:** *+ apa ( apacchinna ): snatched aṭay. khā 7.16.16 .* [Śā , Soc (s.v. apacchinna )] + ā . acchindati . Buddh , unsp ; BHSD : 7 (s.v. acchindati )
 - **EN:** *+ apa ( apacchinna ): snatched aṭay. khā 7.16.16 .* [Śā , Soc (s.v. apacchinna )] + ā . acchindati . Buddh , unsp ; BHSD : 7 (s.v. acchindati )
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **8)** *+ ud ( ucchinna ): (involving the ceding oṛ) despoiled (lands). khā 7.3.33 .* [Śā , Soc (s.v. ucchinna )] + upa ( upacchinatti ): cuts off, interrupts. ASP 177.4 . Buddh , unsp ; BHSD : 134 (s.v. upacchinatti )
 
 - **RU:** *+ ud ( ucchinna ): (involving the ceding oṛ) despoiled (lands). khā 7.3.33 .* [Śā , Soc (s.v. ucchinna )] + upa ( upacchinatti ): отрезать, прерывать. ASP 177.4 . Buddh , unsp ; BHSD : 134 (s.v. upacchinatti )
 - **EN:** *+ ud ( ucchinna ): (involving the ceding oṛ) despoiled (lands). khā 7.3.33 .* [Śā , Soc (s.v. ucchinna )] + upa ( upacchinatti ): cuts off, interrupts. ASP 177.4 . Buddh , unsp ; BHSD : 134 (s.v. upacchinatti )
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **9)** *+ pari : a) clip round, cut through or oṛṛ or to pieces, mutilate; b) discriminate, decide, determine; c) to separate, divide, part; d) to avert, obviate. Śbh , khāvya(ṃṭh) , śiddhkh .* [Gen , unsp (s.v. paricchid )] – zerbrechen, zersplittern. ṚV 7,33,6 . Ved , unsp
 
 - **RU:** *+ pari : a) clip round, cut through or oṛṛ or to pieces, mutilate; b) discriminate, decide, determine; c) to separate, divide, part; d) to avert, obviate. Śbh , khāvya(ṃṭh) , śiddhkh .* [Gen , unsp (s.v. paricchid )] – разламывать, раздроблять. ṚV 7,33,6 . Ved , unsp
 - **EN:** *+ pari : a) clip round, cut through or oṛṛ or to pieces, mutilate; b) discriminate, decide, determine; c) to separate, divide, part; d) to avert, obviate. Śbh , khāvya(ṃṭh) , śiddhkh .* [Gen , unsp (s.v. paricchid )] – to break asunder, to splinter. ṚV 7,33,6 . Ved , unsp
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **10)** *– ; rings beschneiden und - abschneiden. ṚV 7,33,6 .* [Ved , unsp] – ( parichinatti ): reaps (grain). Kāraṇḍ 71.7 . Buddh , unsp ; BHSD : 322 (s.v. parichinatti )
 
 - **RU:** *– ; rings beschneiden und - abschneiden. ṚV 7,33,6 .* [Ved , unsp] – ( parichinatti ): жать (зерно). Kāraṇḍ 71.7 . Buddh , unsp ; BHSD : 322 (s.v. parichinatti )
 - **EN:** *– ; rings beschneiden und - abschneiden. ṚV 7,33,6 .* [Ved , unsp] – ( parichinatti ): reaps (grain). Kāraṇḍ 71.7 . Buddh , unsp ; BHSD : 322 (s.v. parichinatti )
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **11)** *– ( paricchinna ): precise. Lévi 1925, ś. 19, Z. 22 .* [Buddh , Phil (s.v. paricchinna )] – to make out. PPS, S. 103, Z. 32 . Jin , unsp ; SJS 8 : 158 (s.v. pari + chid )
 
 - **RU:** *– ( paricchinna ): precise. Lévi 1925, ś. 19, Z. 22 .* [Buddh , Phil (s.v. paricchinna )] – устанавливать, определять. PPS, S. 103, Z. 32 . Jin , unsp ; SJS 8 : 158 (s.v. pari + chid )
 - **EN:** *– ( paricchinna ): precise. Lévi 1925, ś. 19, Z. 22 .* [Buddh , Phil (s.v. paricchinna )] – to make out. PPS, S. 103, Z. 32 . Jin , unsp ; SJS 8 : 158 (s.v. pari + chid )
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **12)** *+ pári : ringsum beschneiden (ākk).* [Ved , unsp] + pratyā (only in Caus. ind. p. ° cchedya ), to break to pieces. BaudhDhŚ . Gen , unsp ; MW : 1330 (s.v. pratyācchid )
 
 - **RU:** *+ pári : ringsum beschneiden (ākk).* [Ved , unsp] + pratyā (only in Caus. ind. p. ° cchedya ), разбивать на куски. BaudhDhŚ . Gen , unsp ; MW : 1330 (s.v. pratyācchid )
 - **EN:** *+ pári : ringsum beschneiden (ākk).* [Ved , unsp] + pratyā (only in Caus. ind. p. ° cchedya ), to break to pieces. BaudhDhŚ . Gen , unsp ; MW : 1330 (s.v. pratyācchid )
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **13)** *+ vi : unterbrechen, stören. chhū Vī 7, 1 .* [Ved , unsp] – ( vichinna ). Caland 1896, p. 90 . Ved , unsp ; Renou 1935 : 27 (s.v. vichinna )
 
 - **RU:** *+ vi : unterbrechen, stören. chhū Vī 7, 1 .* [Ved , unsp] – ( vichinna ). Caland 1896, p. 90 . Ved , unsp ; Renou 1935 : 27 (s.v. vichinna )
 - **EN:** *+ vi : unterbrechen, stören. chhū Vī 7, 1 .* [Ved , unsp] – ( vichinna ). Caland 1896, p. 90 . Ved , unsp ; Renou 1935 : 27 (s.v. vichinna )
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **14)** *– teilen.* [Buddh , unsp (s.v. vicchid )] – ( vicchinna ): various, diverse. Lévi 1925, S. 8, Z. 12 . Buddh , Phil ; Bareau 1953 (2) (s.v. vicchinna ) > + vi ( vicchinna ): cut or torn or split or cleft or broken asunder. AV , Hariv , BhāgP . Gen , unsp ; MW : 959 (s.v. vícchinna )
 
 - **RU:** *– teilen.* [Buddh , unsp (s.v. vicchid )] – ( vicchinna ): разнообразный, различный. Lévi 1925, S. 8, Z. 12 . Buddh , Phil ; Bareau 1953 (2) (s.v. vicchinna ) > + vi ( vicchinna ): срезанный, разорванный, расщеплённый, расколотый, разбитый. AV , Hariv , BhāgP . Gen , unsp ; MW : 959 (s.v. vícchinna )
 - **EN:** *– teilen.* [Buddh , unsp (s.v. vicchid )] – ( vicchinna ): various, diverse. Lévi 1925, S. 8, Z. 12 . Buddh , Phil ; Bareau 1953 (2) (s.v. vicchinna ) > + vi ( vicchinna ): cut or torn or split or cleft or broken asunder. AV , Hariv , BhāgP . Gen , unsp ; MW : 959 (s.v. vícchinna )
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **15)** *+ vyava ( vyavacchinna ): 1) separated, detached ṛrom a speciṛic thing by the loss oṛ connection ṭith it ; 2) characteriṣed or possessed oṛ an intervention by similar things. ṃbhh on phāṇ īī.1.1 Vā 2 , ṃbhh on phāṇ īīī.3.83 .* [Śā , Ling (s.v. vyavacchinna )] – ( vyavacchinna ): fixed; demarcated. Sircar 1942, S. 237 . Epigr , unsp ; Sircar 1966 : 383 (s.v. vyavacchinna )
 
 - **RU:** *+ vyava ( vyavacchinna ): 1) separated, detached ṛrom a speciṛic thing by the loss oṛ connection ṭith it ; 2) characteriṣed or possessed oṛ an intervention by similar things. ṃbhh on phāṇ īī.1.1 Vā 2 , ṃbhh on phāṇ īīī.3.83 .* [Śā , Ling (s.v. vyavacchinna )] – ( vyavacchinna ): установленный; разграниченный. Sircar 1942, S. 237 . Epigr , unsp ; Sircar 1966 : 383 (s.v. vyavacchinna )
 - **EN:** *+ vyava ( vyavacchinna ): 1) separated, detached ṛrom a speciṛic thing by the loss oṛ connection ṭith it ; 2) characteriṣed or possessed oṛ an intervention by similar things. ṃbhh on phāṇ īī.1.1 Vā 2 , ṃbhh on phāṇ īīī.3.83 .* [Śā , Ling (s.v. vyavacchinna )] – ( vyavacchinna ): fixed; demarcated. Sircar 1942, S. 237 . Epigr , unsp ; Sircar 1966 : 383 (s.v. vyavacchinna )
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **16)** *+ vyud ( vyucchinna ): geteilt.* [Buddh , unsp (s.v. vyucchinna )] + vyud ( vyucchinna ): cut off, extirpated, destroyed, interrupted, ceased. Mbh , Kāvya(MW) . Gen , unsp ; MW : 1040 (s.v. vyucchitti )
 
 - **RU:** *+ vyud ( vyucchinna ): geteilt.* [Buddh , unsp (s.v. vyucchinna )] + vyud ( vyucchinna ): отрезанный, искоренённый, уничтоженный, прерванный, прекратившийся. Mbh , Kāvya(MW) . Gen , unsp ; MW : 1040 (s.v. vyucchitti )
 - **EN:** *+ vyud ( vyucchinna ): geteilt.* [Buddh , unsp (s.v. vyucchinna )] + vyud ( vyucchinna ): cut off, extirpated, destroyed, interrupted, ceased. Mbh , Kāvya(MW) . Gen , unsp ; MW : 1040 (s.v. vyucchitti )
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **17-chinna)** [ chinná ] divided, torn, cut through, perforated. AV . opened (a wound). Suś . disturbed. Hariv 16258 , Mṛcch . kiṃ naś chinnam : 'what is there in this to disturb us?' there is nothing to care about. Amaru . ? . Suś . [ said of the belly of a leach. ] limited by (in comp.). Bhartṛ(MW) iii, 20 . taken away or out of. R ii, 56, 23 , Ragh xii, 80 . ifc: decaying or exhausted by. Buddh(MW) , Lex(MW) . MW : 406 (s.v. chinná )
 
 - **RU:** [ chinná ] разделённый, разорванный, разрезанный, прободённый. AV . раскрытый (о ране). Suś . потревоженный, расстроенный. Hariv 16258 , Mṛcch . kiṃ naś chinnam : «что нам до этого?» — нет ничего, о чём стоит беспокоиться. Amaru . ? . Suś . [ говорится о брюхе пиявки. ] ограниченный чем-л. (в слож.). Bhartṛ(MW) iii, 20 . изъятый, отнятый. R ii, 56, 23 , Ragh xii, 80 . ifc: истощённый, подорванный чем-л. Buddh(MW) , Lex(MW) . MW : 406 (s.v. chinná )
 - **EN:** [ chinná ] divided, torn, cut through, perforated. AV . opened (a wound). Suś . disturbed. Hariv 16258 , Mṛcch . kiṃ naś chinnam : 'what is there in this to disturb us?' there is nothing to care about. Amaru . ? . Suś . [ said of the belly of a leach. ] limited by (in comp.). Bhartṛ(MW) iii, 20 . taken away or out of. R ii, 56, 23 , Ragh xii, 80 . ifc: decaying or exhausted by. Buddh(MW) , Lex(MW) . MW : 406 (s.v. chinná )
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **18-chedita)** [ chedita ] cut, divided. Lex(MW) . MW : 407 (s.v. chedita )
 
 - **RU:** [ chedita ] срезанный, разделённый. Lex(MW) . MW : 407 (s.v. chedita )
 - **EN:** [ chedita ] cut, divided. Lex(MW) . MW : 407 (s.v. chedita )
-  <sub>DCS 2209 · lexicographic</sub>
+  <sub>lexicographic</sub>
 
 **19-chinna-buddh)** [ppp. chinna ] wearied. [ in strī -, bhāra -, mārga - chinna . Mvy 8793-5 , MSV iv.68.13-14 . ] BHSD : 236 (s.v. chinna )
 - **EN:** [ppp. chinna ] wearied. [ in strī -, bhāra -, mārga - chinna . Mvy 8793-5 , MSV iv.68.13-14 . ] BHSD : 236 (s.v. chinna )
@@ -2409,9 +2409,9 @@ Z. 2 read [M.] st. [MBH.]
 
 - **RU:** *chid* [Tan , unsp] [ chinna ] (śivait) coupé. [ défaut pouvant affecter un mantra. ŚāraTi 2.71 . ]
 - **EN:** *chid* [Tan , unsp] [ chinna ] (śivait.) cut. [ a defect that can affect a mantra. ŚāraTi 2.71 . ]
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **NWS-19)** [Buddh , unsp] [ppp. chinna ] wearied. [ in strī -, bhāra -, mārga - chinna . Mvy 8793-5 , MSV iv.68.13-14 . ] BHSD : 236 (s.v. chinna )
 
 - **RU:** [Buddh , unsp] [ppp. chinna ] утомлённый, изнурённый. [ в strī -, bhāra -, mārga - chinna . Mvy 8793-5 , MSV iv.68.13-14 . ] BHSD : 236 (s.v. chinna )
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>

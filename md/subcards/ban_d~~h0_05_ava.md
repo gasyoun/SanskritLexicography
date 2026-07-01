@@ -43,10 +43,10 @@
 [24,9.] *bhartari prākprauḍhapraṇayāvabaddhaṃ manaḥ* "hanging on/depending on"
 [KATHĀS. 13,196.] *anavabaddhadoṣa* "not stagnant, not stuck"
 [SUŚR. 1,160,6.] [2,184,5.]
-  <sub>DCS 2655 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — Vgl. *avabandha* .
 
 - **RU:** — Vgl. *avabandha*.
 - **EN:** — Vgl. *avabandha*.
-  <sub>DCS 2655 · attested</sub>
+  <sub>attested</sub>

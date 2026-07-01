@@ -10,4 +10,4 @@
 [MBH. 12,6566.]
 - **EN:** — *abhisam* to lead towards, to: *tayorekatare mārge yadenamabhisaṃnayet*
 [MBH. 12,6566.]
-  <sub>DCS 2376 · attested</sub>
+  <sub>attested</sub>

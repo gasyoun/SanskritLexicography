@@ -7,4 +7,4 @@
 
 - **RU:** *niṣpra* s. *durniṣprapatana* .
 - **EN:** — *niṣpra* s. *durniṣprapatana* .
-  <sub>DCS 3124 · attested</sub>
+  <sub>attested</sub>

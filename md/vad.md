@@ -53,7 +53,7 @@ v. l. *saṃdeśane, bhāṣaṇe*), *vadet, udeyam* (
 [ŚAT. BR. 1,5,1,18.] *vaditum; uditvā*
 [P. 1,2,7.]
 [VOP. 26,204.] *˚udya*; pass. *udyate, avādi, udita* .
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **1a)** 1) act.
  a) reden, sagen, sprechen: *yaḥ purā sute vadāmi kāni cit*
@@ -326,7 +326,7 @@ v. l. *saṃdeśane, bhāṣaṇe*), *vadet, udeyam* (
 [BHAṬṬ. 5,96.] The person in the acc. with *abhiḥ vada māmabhi*
 [MBH. 7,98.] in the gen. [KATHĀS. 18,142.] — pass.: *tābhyāmavādi* impers.
 [RĀJA-TAR. 1,219.] [3,23.] *udita*
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 ## vad
 
@@ -364,7 +364,7 @@ v. l. *saṃdeśane, bhāṣaṇe*), *vadet, udeyam* (
 [ŚIŚ. 9,69.] *puṣpadantoditāṃ kathām*
 [KATHĀS. 7,39.] _n._ that which is spoken, speech, words
 [H. ś. 81.] [VARĀH. BṚH. S. 51,1.] [BHĀG. P. 4,7,6.]
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **1a-beta)** — β) angeredet, angesprochen: *ityuditaḥ sa tayā*
 [KATHĀS. 26,183.]
@@ -379,7 +379,7 @@ v. l. *saṃdeśane, bhāṣaṇe*), *vadet, udeyam* (
 [KATHĀS. 26,183.]
 [ŚIŚ. 9,61.]
 [BHĀG. P. 6,7,26.]
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **1b)** — b) mittheilen, verkünden, angeben, besprechen, sprechen über: *atha māgadharājāno bhāvinyo ye vadāmi te*
 [BHĀG. P. 9,22,44.] *yaṃ vadanti tamobhūtā dharmamatadvidaḥ*
@@ -436,7 +436,7 @@ v. l. *saṃdeśane, bhāṣaṇe*), *vadet, udeyam* (
 [M. 2,9.] [4,14.] [155.] [11,203.]
 [YĀJÑ. 1,154.] taught so v. a. received, correct; compar. *uditatara* so v. a. *iṣṭatara*
 [ŚĀṄKH. BR. 19,2.]
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **1c)** — c) ankündigen,
 
@@ -469,7 +469,7 @@ to foretell, to indicate: *yugapatprāptau parāmṛddhiṃ vadanti*
 [H. 568], Sch.
 *antaḥsthe 'ṅge* (*spṛṣṭe*) *svajana uditaḥ* indicated
 [VARĀH. BṚH. S. 51,25.]
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **1d)** — d) behaupten, annehmen: *śamārthinaḥ kālagatiṃ vadanti*
 [MBH. 13,25.] *śatamekādhikameke sahasramapare vadanti ketūnām*
@@ -487,7 +487,7 @@ to foretell, to indicate: *yugapatprāptau parāmṛddhiṃ vadanti*
 [VARĀH. BṚH. S. 11,5.] [21,5.] [23,4.]
 [PRAB. 112,15.]
 [SARVADARŚANAS. 126,14.]
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **1e)** — e) bezeichnen als, erklären für, nennen: *svargo loka iti yaṃ vadanti*
 [AV. 11,1,7.]
@@ -529,7 +529,7 @@ to foretell, to indicate: *yugapatprāptau parāmṛddhiṃ vadanti*
 [ŚRUT. 25.]
 [Spr. 2660.] [2707.] [2711.] [2887.] [3657.] Kār. to [P. 2,1,32.] [VARĀH. BṚH. S. 68,116.] [BHĀG. P. 2,4,21.] [3,1,10.] *taduparāgamiti vadanti lokāḥ*
 [5,24,3.]
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **1f)** — f) die Stimme ertönen lassen (von Vögeln
 u. s. w.); tönen, schallen, klingen: *vayo vadantaḥ*
@@ -574,7 +574,7 @@ u. s. w.); to sound, resound, ring: *vayo vadantaḥ*
 [KĀṬH. 34,5.]
 [KAUŚ. 84.] *vṛṣṭiḥ*
 [MAITRYUP. 6,22.]
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) med.
 - **EN:** — 2) med.
@@ -623,7 +623,7 @@ u. s. w.); to sound, resound, ring: *vayo vadantaḥ*
 [ṚV. 10,109,4.] *devā brahmannavadanta*
 [TS. 3,5,7,2.] to contend over: *manaśca ha vai vākcāhaṃbhadra ūdāte*
 [ŚAT. BR. 1,4,5,8.]
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **2c)** — c) sich nennen, sich ausgeben für: *turīye haiva saṃgrahitāro vadante*
 [AIT. BR. 2,25.]
@@ -632,7 +632,7 @@ u. s. w.); to sound, resound, ring: *vayo vadantaḥ*
 [AIT. BR. 2,25.]
 - **EN:** — c) to call oneself, to pass oneself off as: *turīye haiva saṃgrahitāro vadante*
 [AIT. BR. 2,25.]
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **2d)** — d) *bhāsane*
 [P. 1,3,47.] *jñāne* ebend. und
@@ -653,7 +653,7 @@ u. s. w.); to sound, resound, ring: *vayo vadantaḥ*
 [P.], Sch. *pāṇinirvadate*
 [VOP.] *laṅkāṃ samāviśadrātrau vadamāno 'ridurgamām* so v. a. triumphant
 [BHAṬṬ. 8,27.]
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **2) Medialformen: a) sagen, sprechen)** — 2) med.
  a) sagen, sprechen: *vadasva yatte vādyam*
@@ -688,7 +688,7 @@ u. s. w.); to sound, resound, ring: *vayo vadantaḥ*
 [BHĀG. P. 3,7,23.] [10,2.] [8,1,1.] [5,12.] [14,1.] *tadvadadhvaṃ varānsarve*
 [R. 7,36,9.] *vadasvainaṃ tattvavo mama* указывать so v. a. называть по имени
 [HARIV. 9996.]
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 ## vad
 
@@ -715,12 +715,12 @@ u. s. w.); to sound, resound, ring: *vayo vadantaḥ*
 [P. 1,3,47.]
 [VOP. 23,39.] *kṣetre*
 [P.], Sch. [VOP.]
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **cross-ref)** — Vgl. *anudita*, 1. *udya, yathodita, vādya* .
 
 - **RU:** — Vgl. *anudita*, 1. *udya, yathodita, vādya* .
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 ## vad
 
@@ -737,7 +737,7 @@ v. l. *saṃdeśane, bhāṣaṇe*)
 - **EN:** — caus. *vādayati*, *˚te* (*saṃdeśavacane*,
 v. l. *saṃdeśane, bhāṣaṇe*)
 [DHĀTUP. 34,34.] med. [P. 1,3,89.] [VOP. 23,58.]
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **caus-1)** 1) Etwas sagen —, sprechen lassen: *ativādaṃ na pravadenna vādayedyaḥ*
 [MBH. 5,1270.] Jmd zum Reden veranlassen, — auffordern: *vādito 'pi na vadati*
@@ -749,7 +749,7 @@ v. l. *saṃdeśane, bhāṣaṇe*)
 - **EN:** 1) to cause someone to say something, to make speak: *ativādaṃ na pravadenna vādayedyaḥ*
 [MBH. 5,1270.] to cause someone to speak, to call upon to speak: *vādito 'pi na vadati*
 [Verz. d. Oxf. H. 156,a,24.]
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **caus-2)** — 2) ertönen —, erklingen lassen, spielen (ein musikalisches Instrument): act., selten med.: *vīṇām*
 [ŚAT. BR. 3,2,4,6.] [13,1,5,1.]
@@ -878,7 +878,7 @@ v. l. *saṃdeśane, bhāṣaṇe*)
 [VARĀH. BṚH. S. 33,23.]
 [BṚH. 27 (25),9.] *vādyamāna* _n._ dass.: *bherīśaṅkhamṛdaṅgānāṃ paṇavānāṃ sahasraśaḥ . vādyamānaṃ sa (vādyamānāni* the more recent Ausg.)
 [HARIV. 6889.]
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **caus-3)** — 3) von Jmd (ein musikalisches Instrument) spielen lassen: *avīvadadvīṇāṃ parivādakena*
 Schol. zu [P. 1,1,58], Vārtt. 2. [7,4,1], Vārtt. 3. 93, Vārtt. 1.
@@ -887,7 +887,7 @@ Schol. zu [P. 1,1,58], Vārtt. 2. [7,4,1], Vārtt. 3. 93, Vārtt. 1.
 Schol. к [P. 1,1,58], Vārtt. 2. [7,4,1], Vārtt. 3. 93, Vārtt. 1.
 - **EN:** — 3) to have (a musical instrument) played by someone: *avīvadadvīṇāṃ parivādakena*
 Schol. to [P. 1,1,58], Vārtt. 2. [7,4,1], Vārtt. 3. 93, Vārtt. 1.
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **caus-4)** — 4) sprechen, hersagen: *nāndīṃ ca vādayāmāsa pradyumno gada eva ca*
 [HARIV. 8692.] die neuere Ausg. liest *nāndiṃ* und
@@ -905,12 +905,12 @@ Schol. to [P. 1,1,58], Vārtt. 2. [7,4,1], Vārtt. 3. 93, Vārtt. 1.
 - **RU:** — 4) произносить, читать вслух: *nāndīṃ ca vādayāmāsa pradyumno gada eva ca*
 [HARIV. 8692.] более новое Ausg. читает *nāndiṃ* и
 [NĪLAK.] трактует слово ошибочно в значении Bed. музыкального инструмента.
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **caus. cross-ref)** — Vgl. *jalavādita* .
 
 - **RU:** — Vgl. *jalavādita* .
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 ## vad
 
@@ -924,7 +924,7 @@ Schol. to [P. 1,1,58], Vārtt. 2. [7,4,1], Vārtt. 3. 93, Vārtt. 1.
 [GOBH. 1,5,27.]
 - **EN:** — desid. to intend to say, to intend to speak: *satyaṃ vivadiṣet*
 [GOBH. 1,5,27.]
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 ## vad
 
@@ -953,7 +953,7 @@ to speak loudly, to sound loudly: *ketumaddundubhirvāvadīti* (vgl.
 Sch.) [ṚV. 6,47,31.] *jihvayā*
 [59,6.] [10,67,3.] [68,1.] [AV. 6,126,3.] [20,135,13.] *vāvadyamāna*
 [ŚAT. BR. 1,7,4,19.] [8,2,12.]
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 ## vad
 
@@ -976,7 +976,7 @@ Sch.) [ṚV. 6,47,31.] *jihvayā*
 [VOP. 8,141.] to address with a greeting, to invite; act.
 [ṚV. 1,38,13.] [5,83,1.] *acchā ca tvainā namasā vadāmi*
 [8,21,6.] [10,88,14.] [VĀLAKH. 3,3.] [VS. 16,4.] [AV. 6,59,3.] [142,2.] [8,7,1.] [12,1,27.]
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 ## vad
 
@@ -987,7 +987,7 @@ Sch.) [ṚV. 6,47,31.] *jihvayā*
 
 - **RU:** — *ati* act.
 - **EN:** — *ati* act.
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **ati-1)** 1) übertönen, lauter oder besser reden, niederschwatzen, niederdisputiren: *dundubhiḥ sarvā vāco 'tivadati*
 [TBR. 1,3,6,2.] *rāṣṭraṃ viśamati vadati*
@@ -1017,7 +1017,7 @@ Sch.) [ṚV. 6,47,31.] *jihvayā*
 [ṢAḌV. BR. 2,3.] *eṣa tu ativadati yaḥ satyenātivadati*
 [CHĀND. UP. 7,16,1.] *vṛddhānnātivadejjātu* (*nābhibhavejjātu* [ed. Bomb.])
 [MBH. 13,7578.]
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **ati-2)** — 2) mehr sagen, überfordern: *yāvaddātābhimanasyeta tannāti vadet*
 [AV. 11,3,25.]
@@ -1031,12 +1031,12 @@ Sch.) [ṚV. 6,47,31.] *jihvayā*
 
 - **RU:** — 2) говорить лишнее, требовать сверх меры: *yāvaddātābhimanasyeta tannāti vadet*
 [AV. 11,3,25.]
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **ati+vad cross-ref)** — Vgl. *ativāda, ˚vādin, atyudya* .
 
 - **RU:** — Vgl. *ativāda, ˚vādin, atyudya* .
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 ## vad
 
@@ -1053,7 +1053,7 @@ Sch.) [ṚV. 6,47,31.] *jihvayā*
 - **EN:** — *abhyati* act. = *ati*
  1)
 [PAÑCAV. BR. 8,3,6.]
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 ## adhi+vad
 
@@ -1073,7 +1073,7 @@ Sch.) [ṚV. 6,47,31.] *jihvayā*
 [TBR. 3,8,3,2.]
 [ŚAT. BR. 7,1,1,14.] [2,1,12.] [3,1,24.]
 — Vgl. *adhivāda* .
-  <sub>DCS 5 · attested</sub>
+  <sub>attested</sub>
 
 ## anu+vad
 
@@ -1135,7 +1135,7 @@ Sch.) [ṚV. 6,47,31.] *jihvayā*
 
 * laṅkā pūtakratoḥ puraḥ* Laṅkā resounded like Indra's city
 [BHAṬṬ. 8,29.]
-  <sub>DCS 54 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) act. abermals sagen, auf Etwas zurückkommen, Etwas wiederholen (um die Wichtigkeit desselben hervorzuheben)
 [ŚAṂK.] zu [CHĀND. UP. S. 54.] Comm. zu [NYĀYAS. 1,1,1. 2,1,64.] zu [JAIM. 1,23.] [BHĀG. P. 11,21,42. fg.] [KULL.] zu [M. 1,74.] [2,6.] [45.] [3,25. fg.] [6,87.] [8,409.] [SĀH. D. 215,2.]
@@ -1144,7 +1144,7 @@ Sch.) [ṚV. 6,47,31.] *jihvayā*
 [ŚAṂK.] zu [CHĀND. UP. S. 54.] Comm. zu [NYĀYAS. 1,1,1. 2,1,64.] zu [JAIM. 1,23.] [BHĀG. P. 11,21,42. fg.] [KULL.] zu [M. 1,74.] [2,6.] [45.] [3,25. fg.] [6,87.] [8,409.] [SĀH. D. 215,2.]
 - **EN:** — 2) act. to say again, to return to something, to repeat something (in order to emphasise its importance)
 [ŚAṂK.] zu [CHĀND. UP. S. 54.] Comm. zu [NYĀYAS. 1,1,1. 2,1,64.] zu [JAIM. 1,23.] [BHĀG. P. 11,21,42. fg.] [KULL.] zu [M. 1,74.] [2,6.] [45.] [3,25. fg.] [6,87.] [8,409.] [SĀH. D. 215,2.]
-  <sub>DCS 54 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) schmähen: *dakṣamanūdya*
 [BHĀG. P. 4,4,24.]
@@ -1153,7 +1153,7 @@ Sch.) [ṚV. 6,47,31.] *jihvayā*
 [BHĀG. P. 4,4,24.]
 - **EN:** — 3) to revile: *dakṣamanūdya*
 [BHĀG. P. 4,4,24.]
-  <sub>DCS 54 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) Jmd um ein Almosen ansprechen: *ye tvānuvādeyuravṛttikarśitāḥ*
 [MBH. 4,229.]
@@ -1165,7 +1165,7 @@ Sch.) [ṚV. 6,47,31.] *jihvayā*
 - **EN:** — 4) to solicit someone for alms: *ye tvānuvādeyuravṛttikarśitāḥ*
 [MBH. 4,229.]
 [NĪLAK.] : *anuvāde 'yuḥ pūrvaṃ dehītyuktyā dattasyaiva kṣetrārāmādeḥ prativarṣaṃ punardehīti rājavacanaṃ yadadhikāriṇaṃ prati tadanuvādastannimittaṃ ye tvāṃ prati ayuḥ prāpnuyuḥ*
-  <sub>DCS 54 · attested</sub>
+  <sub>attested</sub>
 
 **caus)** — Vgl. *anuvāda* fg. — caus. ertönen —, erklingen lassen: *ātodyān*
 [HARIV. 8688.]
@@ -1174,7 +1174,7 @@ Sch.) [ṚV. 6,47,31.] *jihvayā*
 [HARIV. 8688.]
 - **EN:** — Vgl. *anuvāda* fg. — caus. to cause to sound —, to cause to resound: *ātodyān*
 [HARIV. 8688.]
-  <sub>DCS 54 · attested</sub>
+  <sub>attested</sub>
 
 ## abhyanu+vad
 
@@ -1188,7 +1188,7 @@ Sch.) [ṚV. 6,47,31.] *jihvayā*
 [ŚAT. BR. 10,4,1,9.]
 - **EN:** — *abhyanu* act. to say with reference to something
 [ŚAT. BR. 10,4,1,9.]
-  <sub>DCS 1 · attested</sub>
+  <sub>attested</sub>
 
 ## apavad
 
@@ -1205,7 +1205,7 @@ Sch.) [ṚV. 6,47,31.] *jihvayā*
 - **EN:** — *apa* med.
 [P. 1,3,73.]
 [VOP. 23,58.]
-  <sub>DCS 19 · attested</sub>
+  <sub>attested</sub>
 
 **1)** 1) seinen Unmuth auslassen gegen, tadeln, schmähen: *uta me 'pa vadeyuḥ*
 [TBR. 2,3,9,9.]
@@ -1232,7 +1232,7 @@ Sch.) [ṚV. 6,47,31.] *jihvayā*
 [P. 1,3,77], Sch.
 *nṛbhyo 'pavadamānasya* (thus it is to be read)
 [BHAṬṬ. 8,45.]
-  <sub>DCS 19 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) act. Jmd (acc.) durch Reden zerstreuen
 [PĀR. GṚHY. 3,10.] *apavadeyustānitihāsaiḥ purātanaiḥ*
@@ -1244,7 +1244,7 @@ Sch.) [ṚV. 6,47,31.] *jihvayā*
 - **EN:** — 2) act. to divert someone (acc.) by speaking
 [PĀR. GṚHY. 3,10.] *apavadeyustānitihāsaiḥ purātanaiḥ*
 [YĀJÑ. 3,7.]
-  <sub>DCS 19 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) act. ausnehmen (eine Ausnahme machen)
 Schol. zu [AV. PRĀT. 2,63.] [101.] [3,60.] *apodya*
@@ -1259,13 +1259,13 @@ Schol. к [AV. PRĀT. 2,63.] [101.] [3,60.] *apodya*
 Schol. zu [AV. PRĀT. 2,63.] [101.] [3,60.] *apodya*
 [ṚV. PRĀT. 4,18.] *apodyata*
 [11,5.]
-  <sub>DCS 19 · attested</sub>
+  <sub>attested</sub>
 
 **caus-preamble)** — Vgl. *apavāda* fg. — caus.
 
 - **RU:** — Vgl. *apavāda* fg. — caus.
 - **EN:** — Vgl. *apavāda* fg. — caus.
-  <sub>DCS 19 · attested</sub>
+  <sub>attested</sub>
 
 **caus-1)** 1) Jmd tadeln, schmähen: *yaścainamabhinandeta yaścainamapavādayet*
 [MBH. 12,8797.] Etwas tadeln, missbilligen: *tasmānnityaṃ kṣamā tāta paṇḍitairapavāditā* (*api varjitā* [ed. Bomb.])
@@ -1277,7 +1277,7 @@ Schol. zu [AV. PRĀT. 2,63.] [101.] [3,60.] *apodya*
 - **EN:** 1) to censure someone, to revile: *yaścainamabhinandeta yaścainamapavādayet*
 [MBH. 12,8797.] to censure something, to disapprove: *tasmānnityaṃ kṣamā tāta paṇḍitairapavāditā* (*api varjitā* [ed. Bomb.])
 [3,1036.]
-  <sub>DCS 19 · attested</sub>
+  <sub>attested</sub>
 
 **caus-2)** — 2) ausnehmen (eine Ausnahme machen): *˚vādya*
 [ṚV. PRĀT. 1,10.] [6,5.] *˚vādyate*
@@ -1289,7 +1289,7 @@ Schol. zu [AV. PRĀT. 2,63.] [101.] [3,60.] *apodya*
 - **EN:** — 2) to except (to make an exception): *˚vādya*
 [ṚV. PRĀT. 1,10.] [6,5.] *˚vādyate*
 [11,18.]
-  <sub>DCS 19 · attested</sub>
+  <sub>attested</sub>
 
 ## abhivad
 
@@ -1370,13 +1370,13 @@ u. s. w.): *tasmai pratnamiti pūrvaṃ karmābhivadati*
 [PRAŚNOP. 2,2.] *yo 'nṛtamabhivadati*
 [6,1.] *priyāṃ vācamabhivadantyaḥ*
 [MUṆḌ. UP. 1,2,6.]
-  <sub>DCS 197 · attested</sub>
+  <sub>attested</sub>
 
 **caus-preamble)** — Vgl. *abhivadana, ˚vāda, ˚vādin, ˚vādya* . — caus.
 
 - **RU:** — Vgl. *abhivadana, ˚vāda, ˚vādin, ˚vādya* . — caus.
 - **EN:** — Vgl. *abhivadana, ˚vāda, ˚vādin, ˚vādya* . — caus.
-  <sub>DCS 197 · attested</sub>
+  <sub>attested</sub>
 
 **caus-1)** 1) Jmd anreden, begrüssen (oft mit Ergänzung der Person); med.:
 [LĀṬY. 3,3,15.] *guruṃ gotreṇābhivādayeta*
@@ -1439,7 +1439,7 @@ u. s. w.): *tasmai pratnamiti pūrvaṃ karmābhivadati*
 [KATHĀS. 63,74.]
 [BHĀG. P. 5,3,16.] to announce oneself to (dat.): *ācāryāya*
 [ŚĀṄKH. GṚHY. 4,12.]
-  <sub>DCS 197 · attested</sub>
+  <sub>attested</sub>
 
 **caus-2)** — 2) med. Jmd (acc.) durch Jmd (acc. oder instr.) begrüssen lassen
 [P. 1,4,53], Vārtt.
@@ -1451,7 +1451,7 @@ u. s. w.): *tasmai pratnamiti pūrvaṃ karmābhivadati*
 - **EN:** — 2) med. to have someone (acc.) greeted by someone (acc. or instr.)
 [P. 1,4,53], Vārtt.
 [VOP. 5,5.]
-  <sub>DCS 197 · attested</sub>
+  <sub>attested</sub>
 
 **caus-3)** — 3) Etwas hersagen lassen: *āśiṣamabhyavādayat*
 [BHĀG. P. 4,12,28.]
@@ -1460,7 +1460,7 @@ u. s. w.): *tasmai pratnamiti pūrvaṃ karmābhivadati*
 [BHĀG. P. 4,12,28.]
 - **EN:** — 3) to have something recited: *āśiṣamabhyavādayat*
 [BHĀG. P. 4,12,28.]
-  <sub>DCS 197 · attested</sub>
+  <sub>attested</sub>
 
 **caus-4)** — 4) erklingen lassen, spielen (ein musikalisches Instrument): *vāditrāṇi*
 [MBH. 3,14386.]
@@ -1469,20 +1469,20 @@ u. s. w.): *tasmai pratnamiti pūrvaṃ karmābhivadati*
 [MBH. 3,14386.]
 - **EN:** — 4) to cause to resound, to play (a musical instrument): *vāditrāṇi*
 [MBH. 3,14386.]
-  <sub>DCS 197 · attested</sub>
+  <sub>attested</sub>
 
 **caus-closing)** — Vgl. *abhivādaka* fg., *˚vādanīya* .
 
 - **RU:** — Vgl. *abhivādaka* fg., *˚vādanīya* .
 - **EN:** — Vgl. *abhivādaka* fg., *˚vādanīya* .
-  <sub>DCS 197 · attested</sub>
+  <sub>attested</sub>
 
 **header)** — *abhi*
  1) Jmd anreden, begrüssen
 
 - **RU:** — *abhi*
  1) обращаться к кому-л., приветствовать
-  <sub>DCS 197 · attested</sub>
+  <sub>attested</sub>
 
 **1) Jmd anreden, begrüssen)** [AIT. BR. 3,28.] [4,20.]
 [TS. 2,5,8,3.] *pūrvo rājño 'bhibadati*
@@ -1517,7 +1517,7 @@ u. s. w.): *tasmai pratnamiti pūrvaṃ karmābhivadati*
 [15668.] [4,223.] [5,4230.] [R. 1,70,33.] [2,110,21] ([119,20] [GORR.]). [KATHĀS. 45,99.] *jāraṃ cauretyabhivadan* кто прелюбодея называет вором
 [YĀJÑ. 2,301.] med. [MBH. 5,923.] st. *abhivāde*
 [3,1836] читает [ed. Bomb.] *abhivādaye* .
-  <sub>DCS 197 · attested</sub>
+  <sub>attested</sub>
 
 ## pratyabhi+vad
 
@@ -1531,13 +1531,13 @@ u. s. w.): *tasmai pratnamiti pūrvaṃ karmābhivadati*
 [MṚCCH. 34,7.]
 - **EN:** — *pratyabhi* caus. med. to return a greeting
 [MṚCCH. 34,7.]
-  <sub>DCS 2 · attested</sub>
+  <sub>attested</sub>
 
 **caus)** — Vgl. *pratyabhivāda* fgg.
 
 - **RU:** — Vgl. *pratyabhivāda* fgg.
 - **EN:** — Vgl. *pratyabhivāda* fgg.
-  <sub>DCS 2 · attested</sub>
+  <sub>attested</sub>
 
 ## samabhi+vad
 
@@ -1557,7 +1557,7 @@ u. s. w.): *tasmai pratnamiti pūrvaṃ karmābhivadati*
 [MBH. 13,276.]
 [R. 2,115,8.] *vasudevasya pādau*
 [HARIV. 5735.]
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 ## ava+vad
 
@@ -1568,7 +1568,7 @@ u. s. w.): *tasmai pratnamiti pūrvaṃ karmābhivadati*
 
 - **RU:** — *ava*
 - **EN:** — *ava*
-  <sub>DCS 12 · attested</sub>
+  <sub>attested</sub>
 
 **1)** 1) durch Nachrede Abbruch thun, herabsetzen: *mā śriyo 'vavādiṣmeti duravavadaṃ hi śreyasaḥ*
 [AIT. BR. 5,22.]
@@ -1577,7 +1577,7 @@ u. s. w.): *tasmai pratnamiti pūrvaṃ karmābhivadati*
 [AIT. BR. 5,22.]
 - **EN:** 1) to damage by disparagement, to depreciate: *mā śriyo 'vavādiṣmeti duravavadaṃ hi śreyasaḥ*
 [AIT. BR. 5,22.]
-  <sub>DCS 12 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) unterweisen: *asmābhirapyanye bodhisattvā avavaditāḥ* (!)
 [SADDH. P. 4,6,a.]
@@ -1586,13 +1586,13 @@ u. s. w.): *tasmai pratnamiti pūrvaṃ karmābhivadati*
 [SADDH. P. 4,6,a.]
 - **EN:** — 2) to instruct: *asmābhirapyanye bodhisattvā avavaditāḥ* (!)
 [SADDH. P. 4,6,a.]
-  <sub>DCS 12 · attested</sub>
+  <sub>attested</sub>
 
 **caus)** — Vgl. *avavada* fgg., *avavāda* .
 
 - **RU:** — Vgl. *avavada* fgg., *avavāda* .
 - **EN:** — Vgl. *avavada* fgg., *avavāda* .
-  <sub>DCS 12 · attested</sub>
+  <sub>attested</sub>
 
 ## vyava+vad
 
@@ -1603,7 +1603,7 @@ u. s. w.): *tasmai pratnamiti pūrvaṃ karmābhivadati*
 
 - **RU:** — *vyava* act.
 - **EN:** — *vyava* act.
-  <sub>DCS 7 · attested</sub>
+  <sub>attested</sub>
 
 **1)** 1) beschreien
 [PAÑCAV. BR. 6,7,11.]
@@ -1612,7 +1612,7 @@ u. s. w.): *tasmai pratnamiti pūrvaṃ karmābhivadati*
 [PAÑCAV. BR. 6,7,11.]
 - **EN:** 1) to cry out against, to decry
 [PAÑCAV. BR. 6,7,11.]
-  <sub>DCS 7 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) zu reden beginnen, das Schweigen brechen (nach
 [ŚAṂK.]) [CHĀND. UP. 4,16,2.]
@@ -1621,7 +1621,7 @@ u. s. w.): *tasmai pratnamiti pūrvaṃ karmābhivadati*
 [ŚAṂK.]) [CHĀND. UP. 4,16,2.]
 - **EN:** — 2) to begin to speak, to break silence (according to
 [ŚAṂK.]) [CHĀND. UP. 4,16,2.]
-  <sub>DCS 7 · attested</sub>
+  <sub>attested</sub>
 
 ## ā+vad
 
@@ -1662,7 +1662,7 @@ u. s. w.): *tasmai pratnamiti pūrvaṃ karmābhivadati*
 [TS. 1,1,5,2.]
 [ŚAT. BR. 1,1,4,18.]
 [LĀṬY. 3,11,3. 4,2,3.]
-  <sub>DCS 49 · attested</sub>
+  <sub>attested</sub>
 
 ## samā+vad
 
@@ -1676,7 +1676,7 @@ u. s. w.): *tasmai pratnamiti pūrvaṃ karmābhivadati*
 [MBH. 3,16148.]
 - **EN:** — *samā* act. to make a pronouncement
 [MBH. 3,16148.]
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 ## ud+vad
 
@@ -1705,7 +1705,7 @@ u. s. w.): *tasmai pratnamiti pūrvaṃ karmābhivadati*
 [AV. 5,20,1.] — caus. to cause to proclaim: *haviṣkṛtam*
 [ŚAT. BR. 1,1,4,11.] to cause to resound
 [4,3,3,19.] Vgl. *udvādana* .
-  <sub>DCS 5 · attested</sub>
+  <sub>attested</sub>
 
 ## pratyud+vad
 
@@ -1719,7 +1719,7 @@ u. s. w.): *tasmai pratnamiti pūrvaṃ karmābhivadati*
 [ŚAT. BR. 1,1,4,13.] [17.]
 - **EN:** — *pratyud* caus. to cause to resound in return
 [ŚAT. BR. 1,1,4,13.] [17.]
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 ## upavad
 
@@ -1751,7 +1751,7 @@ u. s. w.): *tasmai pratnamiti pūrvaṃ karmābhivadati*
 - **EN:** — 2) to address
 [AIT. BR. 3,23.] to entreat
 [PAÑCAT.] in [Ind. St. 3,372,23.]
-  <sub>DCS 62 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) med. Jmd bereden, an sich zu locken suchen (*upasaṃbhāṣāyām* und *upamantraṇe*)
 [P. 1,3,47.] (*pralobhe*)
@@ -1769,7 +1769,7 @@ u. s. w.): *tasmai pratnamiti pūrvaṃ karmābhivadati*
 [VOP. 23,39.] *karmakarānupavadate = upasāntvayati, kulabhāryāmupavadate = upacchandayati*
 [P.], Sch. *kaṃcinnopāvadiṣṭāsau*
 [BHAṬṬ. 8,28.]
-  <sub>DCS 62 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) in der dunklen Stelle *guhā hitamupa niṇigvadanti*
 [ṚV. 4,5,8] zieht
@@ -1781,20 +1781,20 @@ u. s. w.): *tasmai pratnamiti pūrvaṃ karmābhivadati*
 - **EN:** — 4) in the obscure passage *guhā hitamupa niṇigvadanti*
 [ṚV. 4,5,8] takes
 [SĀY.] *upa* with *hitam*.
-  <sub>DCS 62 · attested</sub>
+  <sub>attested</sub>
 
 **caus)** — Vgl. *upavāda* fg.
 
 - **RU:** — Vgl. *upavāda* fg.
 - **EN:** — Vgl. *upavāda* fg.
-  <sub>DCS 62 · attested</sub>
+  <sub>attested</sub>
 
 **header)** — *upa*
  1) missliebig reden über (acc.), beschreien, berufen
 
 - **RU:** — *upa*
  1) дурно отзываться о (acc.), поносить, бесславить
-  <sub>DCS 62 · attested</sub>
+  <sub>attested</sub>
 
 **1) missliebig reden über, beschreien, berufen)** [AV. 15,2,1.]
 [TBR. 2,3,9,7.]
@@ -1807,7 +1807,7 @@ u. s. w.): *tasmai pratnamiti pūrvaṃ karmābhivadati*
 [AIT. BR. 2,31.] *taṃ hema upodurdāsyā vai tvaṃ putro 'si*
 [ŚĀṄKH. BR. 12,3.]
 [LĀṬY. 10,7,4.]
-  <sub>DCS 62 · attested</sub>
+  <sub>attested</sub>
 
 ## pratyupa+vad
 
@@ -1821,7 +1821,7 @@ u. s. w.): *tasmai pratnamiti pūrvaṃ karmābhivadati*
 [PAÑCAV. BR. 10,7,2.]
 - **EN:** — *pratyupa* to offend by speaking: *teno śrīḥ pratyupoditā*
 [PAÑCAV. BR. 10,7,2.]
-  <sub>DCS 1 · attested</sub>
+  <sub>attested</sub>
 
 ## ni+vad
 
@@ -1835,7 +1835,7 @@ u. s. w.): *tasmai pratnamiti pūrvaṃ karmābhivadati*
 [MBH. 5,7656. fg.]
 - **EN:** — *ni* caus. med. to cause to resound: *bherīsahasrāṇi śaṅkhānāmayutāni ca*
 [MBH. 5,7656. fg.]
-  <sub>DCS 1 · attested</sub>
+  <sub>attested</sub>
 
 ## nis+vad
 
@@ -1852,7 +1852,7 @@ u. s. w.): *tasmai pratnamiti pūrvaṃ karmābhivadati*
 - **EN:** — *nis*
  1) to talk away, refute by words: *āyurmā nirvādiṣṭam*
 [VS. 5,17.]
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) hinausreden, hinausschallen lassen: *vācaṃ viṣasya dūṣaṇīṃ tāmito niravādiṣam*
 [AV. 4,6,2.]
@@ -1861,7 +1861,7 @@ u. s. w.): *tasmai pratnamiti pūrvaṃ karmābhivadati*
 [AV. 4,6,2.]
 - **EN:** — 2) to speak out, to cause to resound outward: *vācaṃ viṣasya dūṣaṇīṃ tāmito niravādiṣam*
 [AV. 4,6,2.]
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) seinen Unmuth gegen Jmd (acc.) auslassen, Jmd schmähen
 [MBH. 4,122.] *nirvādairnirvadedenam*
@@ -1873,13 +1873,13 @@ u. s. w.): *tasmai pratnamiti pūrvaṃ karmābhivadati*
 - **EN:** — 3) to vent one's displeasure upon someone (acc.), to revile someone
 [MBH. 4,122.] *nirvādairnirvadedenam*
 [5,4618.] med. [12,12361.]
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **caus)** — Vgl. *nirvāda* .
 
 - **RU:** — Vgl. *nirvāda* .
 - **EN:** — Vgl. *nirvāda*.
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 ## abhinis+vad
 
@@ -1893,7 +1893,7 @@ u. s. w.): *tasmai pratnamiti pūrvaṃ karmābhivadati*
 [PAÑCAV. BR. 11,11,9. 23,7,2.]
 - **EN:** — *abhinis* to assert with reference to (acc.): *kṣatraṃ vā etadaharabhinirvadati yatpañcadaśam*
 [PAÑCAV. BR. 11,11,9. 23,7,2.]
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 ## parā+vad
 
@@ -1910,7 +1910,7 @@ u. s. w.): *tasmai pratnamiti pūrvaṃ karmābhivadati*
 - **EN:** — *parā* to talk away, to refute
 [AV. 6,29,2.] *dviṣantam*
 [LĀṬY. 3,11,3.]
-  <sub>DCS 4 · attested</sub>
+  <sub>attested</sub>
 
 ## abhiparā+vad
 
@@ -1927,7 +1927,7 @@ u. s. w.): *tasmai pratnamiti pūrvaṃ karmābhivadati*
 - **EN:** — *abhiparā* to address
 [ŚAT. BR. 11,5,1,6.]
 [ŚĀṄKH. BR. 23,5.]
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 ## pari+vad
 
@@ -1959,7 +1959,7 @@ u. s. w.): *tasmai pratnamiti pūrvaṃ karmābhivadati*
 [ŚĀṄKH. BR. 6,4.] *prajāpatim*
 [PAÑCAV. BR. 4,9,14.] *ādityameva te pari vadanti sarve*
 [AV. 10,8,17.] [12,4,49.]
-  <sub>DCS 20 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) sich nachtheilig über Jmd auslassen, Jmd tadeln
 [Spr. 134.]
@@ -1971,13 +1971,13 @@ u. s. w.): *tasmai pratnamiti pūrvaṃ karmābhivadati*
 - **EN:** — 2) to speak disparagingly of someone, to censure someone
 [Spr. 134.]
 [MBH. 12,4869.] [13,4992.] med. [3,14686.] [5,1338.]
-  <sub>DCS 20 · attested</sub>
+  <sub>attested</sub>
 
 **caus)** — Vgl. *parivāda* fgg.
 
 - **RU:** — Vgl. *parivāda* fgg.
 - **EN:** — Vgl. *parivāda* fgg.
-  <sub>DCS 20 · attested</sub>
+  <sub>attested</sub>
 
 ## pravad
 
@@ -2062,7 +2062,7 @@ u. s. w.): *tasmai pratnamiti pūrvaṃ karmābhivadati*
 [MBH. 3,5012.] [8146.] [15641.]
 [R. 5,52,18.] *pravadati bharatastāṃ nāyikāṃ vipralabdhām* Comm. with [GĪT. 7,2.]
 [ŚRUT. 43]. Kār. 1, from [KĀŚ.] to [P. 7,2,10.] [Spr. 1771.] [2273.] [2295.] [2377.] [3957.] [4923.] [VARĀH. BṚH. S. 15,29.] [68,114.] [88,32.] [BHĀG. P. 3,25,31.] [PAÑCAR. 1,1,44.]
-  <sub>DCS 176 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — Vgl. *pravada* fgg., *pravāda, pravādin* . — caus. ertönen lassen, spielen (ein musikalisches Instrument): *vīṇām*
 [ŚĀṄKH. ŚR. 17,14,8.] *pravāditaiśca vāditraiḥ*
@@ -2083,18 +2083,18 @@ u. s. w.): *tasmai pratnamiti pūrvaṃ karmābhivadati*
 [HARIV. 12006.] *gandharvān — supravāditān* making music beautifully
 [11792.] st. *śaṅkhāṃśca mṛdaṅgāṃśca pravādyanti*
 [MBH. 12,1899] is probably to be read *śaṅkhāśca mṛdaṅgāśca pra˚*.
-  <sub>DCS 176 · attested</sub>
+  <sub>attested</sub>
 
 **caus)** — Vgl. *pravādaka* .
 
 - **RU:** — Vgl. *pravādaka* .
 - **EN:** — Vgl. *pravādaka*.
-  <sub>DCS 176 · attested</sub>
+  <sub>attested</sub>
 
 **header)** — *pra*
 
 - **RU:** — *pra*
-  <sub>DCS 176 · attested</sub>
+  <sub>attested</sub>
 
 **1) heraussagen, reden, sprechen; aussagen, ansagen, verkünden)** 1) heraussagen, reden, sprechen; aussagen, ansagen, verkünden: *pravadatāṃ śreṣṭhaḥ*
 [HARIV. 5927.] [7036.]
@@ -2153,7 +2153,7 @@ u. s. w.): *tasmai pratnamiti pūrvaṃ karmābhivadati*
 [ŚVETĀŚV. UP. 3,21.]
 [Spr. 2843.] *ye 'pyaṅganānāṃ pravadanti doṣān*
 [VARĀH. BṚH. S. 74,5.]
-  <sub>DCS 176 · attested</sub>
+  <sub>attested</sub>
 
 ## anupra+vad
 
@@ -2173,7 +2173,7 @@ u. s. w.): *tasmai pratnamiti pūrvaṃ karmābhivadati*
  1) to repeat after, to echo: *vācaṃ proditāmanupravadanti*
 [AIT. BR. 2,15.]
 [TS. 2,2,9,5.]
-  <sub>DCS 3 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) aussagen über: *tāmetā ṛco 'nupravadanti*
 [NIR. 10,20.]
@@ -2182,7 +2182,7 @@ u. s. w.): *tasmai pratnamiti pūrvaṃ karmābhivadati*
 [NIR. 10,20.]
 - **EN:** — 2) to make a statement about: *tāmetā ṛco 'nupravadanti*
 [NIR. 10,20.]
-  <sub>DCS 3 · attested</sub>
+  <sub>attested</sub>
 
 ## vad (caus.)
 
@@ -2196,7 +2196,7 @@ u. s. w.): *tasmai pratnamiti pūrvaṃ karmābhivadati*
 [ŚĀṄKH. ŚR. 17,14,8.]
 - **EN:** — caus. to cause to resound afterwards: *vīṇām*
 [ŚĀṄKH. ŚR. 17,14,8.]
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 ## upapra+vad
 
@@ -2210,7 +2210,7 @@ u. s. w.): *tasmai pratnamiti pūrvaṃ karmābhivadati*
 [AV. 4,15,14.]
 - **EN:** — *upapra* to join in with the voice, to chime in vocally
 [AV. 4,15,14.]
-  <sub>DCS 2 · attested</sub>
+  <sub>attested</sub>
 
 ## vipra+vad
 
@@ -2230,7 +2230,7 @@ u. s. w.): *tasmai pratnamiti pūrvaṃ karmābhivadati*
 [P. 1,3,50], Sch.
 [VOP. 23,42.]
 [BHAṬṬ. 8,30.]
-  <sub>DCS 1 · attested</sub>
+  <sub>attested</sub>
 
 ## saṃpra+vad
 
@@ -2241,13 +2241,13 @@ u. s. w.): *tasmai pratnamiti pūrvaṃ karmābhivadati*
 
 - **RU:** — *saṃpra* громко произносить: *purā vāgbhyaḥ saṃpravaditoḥ*
 - **EN:** — *saṃpra* to pronounce aloud: *purā vāgbhyaḥ saṃpravaditoḥ*
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **1b)** [PAÑCAV. BR. 21,3,5.] gemeinschaftlich die Stimme ertönen lassen: *saṃpravadanti kukkuṭāḥ*
 
 - **RU:** [PAÑCAV. BR. 21,3,5.] совместно издавать звуки, дружно подавать голос: *saṃpravadanti kukkuṭāḥ*
 - **EN:** [PAÑCAV. BR. 21,3,5.] to let the voice resound together: *saṃpravadanti kukkuṭāḥ*
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **1c)** [Ind. St. 8,418.]
 [P. 1,3,48], Sch.
@@ -2262,7 +2262,7 @@ u. s. w.): *tasmai pratnamiti pūrvaṃ karmābhivadati*
 [P. 1,3,48], Sch.
 [VOP. 23,41.] med. to converse: *saṃpravadante brāhmaṇāḥ* ebend. *saṃpravadamānājjanāt*
 [BHAṬṬ. 8,28.]
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 ## prati+vad
 
@@ -2282,7 +2282,7 @@ u. s. w.): *tasmai pratnamiti pūrvaṃ karmābhivadati*
  1) to speak to someone (acc.): *śiraḥ prati vāmaśvyaṃ vadat*
 [ṚV. 1,119,9.] [8,45,5.] *maṇḍūkau māṃ prati vadataḥ*
 [KAUŚ. 96.]
-  <sub>DCS 13 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) antworten
 [MBH. 13,1452.]
@@ -2315,7 +2315,7 @@ u. s. w.): *tasmai pratnamiti pūrvaṃ karmābhivadati*
 [BHAṬṬ. 2,28.] *rājñā ca pratyavādi saḥ*
 [15,9.] *iti pratyuditā* (to rebuff Comm.) *yāmyā dūtāḥ*
 [BHĀG. P. 6,2,21.]
-  <sub>DCS 13 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) nachsprechen, wiederholen: *sa cāpi tatpratyavadadyathoktam*
 [KAṬHOP. 1,15.]
@@ -2327,7 +2327,7 @@ u. s. w.): *tasmai pratnamiti pūrvaṃ karmābhivadati*
 - **EN:** — 3) to repeat after, to repeat: *sa cāpi tatpratyavadadyathoktam*
 [KAṬHOP. 1,15.]
 [MBH. 5,4635.]
-  <sub>DCS 13 · attested</sub>
+  <sub>attested</sub>
 
 **caus)** — Vgl. *prativāda* fg. — intens. partic. *prativāvadat* widerredend
 [AIT. BR. 2,3.]
@@ -2336,7 +2336,7 @@ u. s. w.): *tasmai pratnamiti pūrvaṃ karmābhivadati*
 [AIT. BR. 2,3.]
 - **EN:** — Vgl. *prativāda* fg. — intens. partic. *prativāvadat* contradicting
 [AIT. BR. 2,3.]
-  <sub>DCS 13 · attested</sub>
+  <sub>attested</sub>
 
 ## vi+vad
 
@@ -2356,7 +2356,7 @@ u. s. w.): *tasmai pratnamiti pūrvaṃ karmābhivadati*
  1) act. to contradict something: *yaste havaṃ vivadat*
 [AV. 3,3,6.] *tadubhayaṃ vyuditam* disputed
 [ŚĀṄKH. BR. 19,2.]
-  <sub>DCS 92 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) sich mit Jmd in Wortstreit einlassen über (loc.); med.
 [P. 1,3,47], Sch.
@@ -2428,7 +2428,7 @@ u. s. w.): *tasmai pratnamiti pūrvaṃ karmābhivadati*
 [MBH. 12,9479.] to enter into dispute with, with acc. of the person: *na ca tānvivadeddhīmānākruṣṭaścāpi taiḥ sadā*
 [MĀRK. P. 34,93.] *vivaditāḥ* being in dispute: *rājyahetoḥ*
 [MBH. 13,556.]
-  <sub>DCS 92 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) sich unterhalten: *evaṃ vivadatostatra kṛṣṇanāradayoḥ*
 [HARIV. 10481.]
@@ -2437,7 +2437,7 @@ u. s. w.): *tasmai pratnamiti pūrvaṃ karmābhivadati*
 [HARIV. 10481.]
 - **EN:** — 3) to converse: *evaṃ vivadatostatra kṛṣṇanāradayoḥ*
 [HARIV. 10481.]
-  <sub>DCS 92 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) die Stimme ertönen lassen: *hṛṣṭo vivadamānaśca kokilo māmivāhvayat*
 [R. 3,79,10.]
@@ -2446,7 +2446,7 @@ u. s. w.): *tasmai pratnamiti pūrvaṃ karmābhivadati*
 [R. 3,79,10.]
 - **EN:** — 4) to let the voice sound, to raise the voice: *hṛṣṭo vivadamānaśca kokilo māmivāhvayat*
 [R. 3,79,10.]
-  <sub>DCS 92 · attested</sub>
+  <sub>attested</sub>
 
 **caus)** — Vgl. *vivāda* . — caus. einen Process einleiten, die Gerichtsverhandlung beginnen (antworten lassen
 [ST.]) [YĀJÑ. 2,12.] — intens. die Stimme laut, wiederholt erschallen lassen: *ya indra iva deveṣu goṣveti vivāvadat* (*ṛṣabhaḥ*)
@@ -2458,7 +2458,7 @@ u. s. w.): *tasmai pratnamiti pūrvaṃ karmābhivadati*
 - **EN:** — Vgl. *vivāda* . — caus. to institute a legal proceeding, to commence judicial proceedings (cause to answer
 [ST.]) [YĀJÑ. 2,12.] — intens. to cause the voice to resound loudly and repeatedly: *ya indra iva deveṣu goṣveti vivāvadat* (*ṛṣabhaḥ*)
 [AV. 9,4,11.]
-  <sub>DCS 92 · attested</sub>
+  <sub>attested</sub>
 
 ## sam+vad
 
@@ -2541,7 +2541,7 @@ try not to speak with me about it
 [BHĀG. P. 3,20,5.] [12,10,7.] *iti tau daṃpatī tatra samudya samayaṃ mithaḥ* so v. a. concluding a pact
 [BHĀG. P. 4,25,43.] *yathāsamuditam* by agreement
 [ŚAT. BR. 13,5,4,27.]
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) act. zusammen klingen, von musikalischen Instrumenten
 [AV. 4,37,4.]
@@ -2550,7 +2550,7 @@ try not to speak with me about it
 [AV. 4,37,4.]
 - **EN:** — 2) act. to sound together, of musical instruments
 [AV. 4,37,4.]
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) übereinstimmen, zustimmen: *daivaṃ na saṃvadati*
 [MṚCCH. 165,20.] *daivaṃ saṃvadate yadi*
@@ -2568,7 +2568,7 @@ try not to speak with me about it
 [HARIV. 7413.] *tvadākhyātā ca tasyaiṣā saṃvadiṣyati matkathā*
 [KATHĀS. 121,218.] *api ca kṛtinamenaṃ śaktidevaṃ svanāmnā vyadhita samuditena sveṣu vidyādhareṣu ..* so v. a. in use
 [26,279.]
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) sprechen: *yadi jñāsyāmi vakṣyāmi ajānanna tu saṃvade*
 [MBH. 13,480.] *bhīṣmaḥsamavadattatra giraṃ sādhubhirarcitām*
@@ -2583,7 +2583,7 @@ try not to speak with me about it
 [MBH. 13,480.] *bhīṣmaḥsamavadattatra giraṃ sādhubhirarcitām*
 [4,915.] *evaṃ samuditastena* addressed
 [BHĀG. P. 3,24,41.]
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **5)** — 5) bezeichnen als, erklären für, nennen: *mandākrāntāṃ tāṃ saṃvadanti*
 [ŚRUT. 42.]
@@ -2592,7 +2592,7 @@ try not to speak with me about it
 [ŚRUT. 42.]
 - **EN:** — 5) to designate as, to declare to be, to call: *mandākrāntāṃ tāṃ saṃvadanti*
 [ŚRUT. 42.]
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **caus-1)** — Vgl. *saṃvaditavya, saṃvāda* . — caus.
  1) sich unterreden lassen: *saṃvādayainaṃ devaiḥ*
@@ -2610,7 +2610,7 @@ try not to speak with me about it
 [ŚAT. BR. 1,8,3,20.] to bring about a conference about (loc.), med.
 [ŚĀṄKH. ŚR. 17,14,2.]
 [KAUṢ. UP. 4,3. fgg.]; vgl. S. 136. fg.
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **caus-2)** — 2) sich über Etwas einigen, einstimmen: *saṃvādayanniva*
 [KATHĀS. 107,79.] *saṃvādyatāṃ tatsarveṣām*
@@ -2625,7 +2625,7 @@ try not to speak with me about it
 [KATHĀS. 107,79.] *saṃvādyatāṃ tatsarveṣām*
 [50,166.] *saṃvādita* that about which one has agreed
 [MBH. 1,7931.]
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **caus-3)** — 3) zutreffend angeben: *saṃvādya rūpasaṃkhyādīn*
 [M. 8,31.]
@@ -2634,7 +2634,7 @@ try not to speak with me about it
 [M. 8,31.]
 - **EN:** — 3) to state correctly, to indicate accurately: *saṃvādya rūpasaṃkhyādīn*
 [M. 8,31.]
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **caus-4)** — 4) Jmd zum Sprechen auffordern
 [HIT. 83,1], v. l.
@@ -2643,7 +2643,7 @@ try not to speak with me about it
 [HIT. 83,1], v. l.
 - **EN:** — 4) to prompt someone to speak
 [HIT. 83,1], v. l.
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **caus-5)** — 5) ertönen lassen (ein musikalisches Instrument): *tūryāṇi*
 [MBH. 1,7056.] *vāditrāṇi*
@@ -2658,13 +2658,13 @@ try not to speak with me about it
 [MBH. 1,7056.] *vāditrāṇi*
 [7909.] *vīṇām*
 [KATHĀS. 21,4.]
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **caus-tail)** — Vgl. *saṃvādana* .
 
 - **RU:** — Vgl. *saṃvādana* .
 - **EN:** — Vgl. *saṃvādana* .
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 ## upasam+vad
 
@@ -2675,7 +2675,7 @@ try not to speak with me about it
 
 - **RU:** — *upasam* s. *upasaṃvāda* .
 - **EN:** — *upasam* s. *upasaṃvāda* .
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 ## parisam+vad
 
@@ -2689,7 +2689,7 @@ try not to speak with me about it
 [MBH. 13,7368.]
 - **EN:** — *parisam* to express oneself jointly about someone: *taṃ rākṣasāśca* (so the [ed. Bomb.]) *parisaṃvadanti rāyaspoṣaḥ sa vijigīṣurekaḥ*
 [MBH. 13,7368.]
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 ## pratisam+vad
 
@@ -2703,7 +2703,7 @@ try not to speak with me about it
 [AIT. BR. 3,23.]
 - **EN:** — *pratisam* to converse with (acc.): *te na prati cana samavadata*
 [AIT. BR. 3,23.]
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 ## visam+vad
 
@@ -2723,7 +2723,7 @@ try not to speak with me about it
 [M. 8,219.] to make objections, to contradict
 [KULL.] to [M. 12,110.] *tanmandāravatīdevīrūpaṃ nātra visaṃvadet*
 [KATHĀS. 101,82.]
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **caus-1)** — Vgl. *visaṃvāda* . — caus.
  1) Jmdes Unzufriedenheit erregen: *lakṣmaṇena na visaṃvāditaḥ kaścit*
@@ -2735,7 +2735,7 @@ try not to speak with me about it
 - **EN:** — Vgl. *visaṃvāda* . — caus.
  1) to provoke someone's dissatisfaction: *lakṣmaṇena na visaṃvāditaḥ kaścit*
 [R. 6,24,27.]
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **caus-2)** — 2) nicht bewähren: *avisaṃvāditapauruṣa*
 [MĀRK. P. 133,16.] *ramaṇīokkhu avahī vihiṇā visaṃvādido*
@@ -2747,7 +2747,7 @@ try not to speak with me about it
 - **EN:** — 2) to fail to prove, not to bear out: *avisaṃvāditapauruṣa*
 [MĀRK. P. 133,16.] *ramaṇīokkhu avahī vihiṇā visaṃvādido*
 [ŚĀK. 84,21.]
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 ## vad
 
@@ -2766,7 +2766,7 @@ try not to speak with me about it
 [Spr. (II) 6882.]
 - **EN:** 2) *guṇairvihīnā bahu vādayanti* to make much noise
 [Spr. (II) 6882.]
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **caus-1)** — *pra*
  1) so v. a. anbieten, ausbieten zum Verkauf
@@ -2778,7 +2778,7 @@ try not to speak with me about it
 - **EN:** — *pra*
  1) so v. a. to offer, to offer for sale
 [Spr. (II) 3969], v. l.
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 ## vad
 
@@ -2788,496 +2788,496 @@ try not to speak with me about it
 **root)** √*vad*¦, *vadati*, *˚te* (*udeyam* [AV.], *˚vādata* und *˚vādeyus* metrisch für *˚vadata* und *˚vadeyus*)
 
 - **RU:** √*vad*¦, *vadati*, *˚te* (*udeyam* [AV.], *˚vādata* и *˚vādeyus* метрически вместо *˚vadata* и *˚vadeyus*)
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **1)** — 1〉 Act.
 
 - **RU:** — 1〉 Act.
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **1a)** — a〉 reden, sagen, sprechen, — dass (mit doppeltem Acc. [[76,13]] oder mit *yad*), — ob (*yadi*), — zu Jmd (Acc., Gen. oder Acc. mit *abhi*), — zu Jmd Etwas (mit doppeltem Acc.).
 
 - **RU:** — a〉 говорить, сказать, речь вести, — что (с двойным Acc. [[76,13]] или с *yad*), — ли (*yadi*), — кому-либо (Acc., Gen. или Acc. с *abhi*), — кому-либо что-либо (с двойным Acc.).
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **1b)** — b〉 rathen zu (Acc.).
 
 - **RU:** — b〉 советовать, рекомендовать (Acc.).
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **1c)** — c〉 zusprechen, zusagen.
 
 - **RU:** — c〉 обещать, давать слово.
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **1d)** — d〉 mittheilen, verkünden, angeben, besprechen, sprechen —, berichten über, sprechen von (Acc.); mit Gen. oder Loc. der Person, zu der man spricht.
 
 - **RU:** — d〉 сообщать, возвещать, указывать, обсуждать, говорить —, сообщать о, говорить о (Acc.); с Gen. или Loc. лица, к которому обращаются.
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **1e)** — e〉 ankündigen, voraussagen, anzeigen, verrathen (von einem leblosen Subject [304,25]), besagen, bezeichnen.
 
 - **RU:** — e〉 возвещать, предвещать, указывать, выдавать (о неодушевлённом подлежащем [304,25]), означать, обозначать.
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **1f)** — f〉 behaupten, annehmen.
 
 - **RU:** — f〉 утверждать, полагать.
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **1g)** — g〉 bezeichnen, als, erklären für, nennen; mit doppeltem Acc. oder mit Nomin. und *iti*.
 
 - **RU:** — g〉 обозначать как, признавать, называть; с двойным Acc. или с Nomin. и *iti*.
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **1h)** — h〉 die Stimme (auch mit Hinzufügung von *vācam*) ertönen lassen (von Vögeln u. s. w.); tönen, schallen, klingen.
 
 - **RU:** — h〉 издавать голос (также с добавлением *vācam*) (о птицах u. s. w.); звучать, греметь, звенеть.
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **1i)** — i〉 *a*.*v*.*ad*.*as* [ṚV. 3,30,5] vielleicht fehlerhaft für *ava* *das* (von *dar*).
 
 - **RU:** — i〉 *a*.*v*.*ad*.*as* [ṚV. 3,30,5] возможно, ошибочно вместо *ava* *das* (от *dar*).
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2〉 Med.
 
 - **RU:** — 2〉 Med.
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **2a)** — a〉 sagen, sprechen, zu Jmd (Acc.).
 
 - **RU:** — a〉 говорить, сказать, кому-либо (Acc.).
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **2b)** — b〉 besprechen, sprechen, sprechen über, mittheilen, angeben, mit Namen nennen.
 
 - **RU:** — b〉 обсуждать, говорить, говорить о, сообщать, указывать, называть по имени.
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **2c)** — c〉 sich besprechen über (Loc.).
 
 - **RU:** — c〉 совещаться о (Loc.).
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **2d)** — d〉 sich streiten um (Loc.).
 
 - **RU:** — d〉 спорить о (Loc.).
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **2e)** — e〉 Ansprüche machen auf (Loc.) [AIT. BR. 2,25,6]. Diese Bed. ist wohl mit *yatna* [P. 1,3,47] gemeint.
 
 - **RU:** — e〉 претендовать на (Loc.) [AIT. BR. 2,25,6]. Эта Bed., по всей видимости, имеет в виду *yatna* [P. 1,3,47].
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **2f)** — f〉 wohl *eine Autorität sein —, hervorstechen, sich auszeichnen in (Loc.).
 
 - **RU:** — f〉 вероятно, *быть авторитетом —, выделяться, отличаться в (Loc.).
-  <sub>DCS 3918 · lexicographic</sub>
+  <sub>lexicographic</sub>
 
 **2g)** — g〉 triumphiren [BHAṬṬ.]
 
 - **RU:** — g〉 торжествовать [BHAṬṬ.]
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3〉 *udita*
 
 - **RU:** — 3〉 *udita*
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **3a)** — a〉 gesagt, gesprochen, — in Betreff von (*prati* [190,7]). *ityudite* impers. [126,13].
 
 - **RU:** — a〉 сказанный, произнесённый, — касательно (*prati* [190,7]). *ityudite* impers. [126,13].
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **3b)** — b〉 angeredet, angesprochen.
 
 - **RU:** — b〉 тот, к кому обратились, кому говорили.
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **3c)** — c〉 mitgetheilt, verkündet, angegeben.
 
 - **RU:** — c〉 сообщённый, возвещённый, указанный.
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **3d)** — d〉 gelehrt, so v. a. recipirt, richtig. Compar. *uditatara*.
 
 - **RU:** — d〉 установленный традицией, так v. a. принятый, правильный. Compar. *uditatara*.
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **3e)** — e〉 angedeutet.
 
 - **RU:** — e〉 подразумеваемый, указанный.
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **caus-header)** — Caus. *vādayati*, *vādayate* (metrisch)
 
 - **RU:** — Caus. *vādayati*, *vādayate* (метрически)
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **caus-1)** — 1〉 Etwas sagen —, sprechen lassen.
 
 - **RU:** — 1〉 заставить сказать что-либо —, заставить говорить.
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **caus-2)** — 2〉 Jmd zum Reden veranlassen, — auffordern. Nur *vādita*.
 
 - **RU:** — 2〉 побуждать кого-либо к речи, — призывать говорить. Только *vādita*.
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **caus-3)** — 3〉 ertönen —, erklingen lassen, spielen (ein musikalisches Instrument); mit Acc. (ausnahmsweise Loc.) des Instrumentes. Ohne Object musiciren. *bahu* so v. a. viel Lärm von sich machen. *vādita* gespielt (ein Instrument).
 
 - **RU:** — 3〉 извлекать звук —, заставить звучать, играть (на музыкальном инструменте); с Acc. (в виде исключения Loc.) инструмента. Без объекта музицировать. *bahu* так v. a. производить много шума. *vādita* сыгранный (инструмент).
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **caus-4)** — 4〉 *von Jmd (Instr.) ein musikalisches Instrument (Acc.) spielen lassen.
 
 - **RU:** — 4〉 *велеть кому-либо (Instr.) играть на музыкальном инструменте (Acc.).
-  <sub>DCS 3918 · lexicographic</sub>
+  <sub>lexicographic</sub>
 
 **caus-5)** — 5〉 sprechen, hersagen.
 
 - **RU:** — 5〉 говорить, произносить, декламировать.
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **desid-header)** — Desid. *vivadiṣati* zu sagen —, zu sprechen beabsichtigen [GOBH. 1,5,25].
 
 - **RU:** — Desid. *vivadiṣati* намереваться сказать —, намереваться говорить [GOBH. 1,5,25].
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **intens-header)** — Intens. (*vāvadīti*, *vāvadat*, *vavadyamāna*) laut reden, — tönen.
 
 - **RU:** — Intens. (*vāvadīti*, *vāvadat*, *vavadyamāna*) громко говорить, — звучать.
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **pra-header)** — Mit *accha* Act. begrüssend anreden, einladen.
 
 - **RU:** — С *accha* Act. обращаться с приветствием, приглашать.
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **abhi-header)** — Mit *ati* Act.
 
 - **RU:** — С *ati* Act.
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **abhi-1)** — 1〉 übertönen, lauter oder besser reden, niederschwatzen, niederdisputiren.
 
 - **RU:** — 1〉 заглушать, говорить громче или лучше, переговаривать, переспорить.
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **abhi-2)** — 2〉 mehr sagen, überfordern.
 
 - **RU:** — 2〉 говорить больше, требовать сверх меры.
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **ava-header)** — Mit *abhyati* Act. = 1〉 *ati* 1〉.
 
 - **RU:** — С *abhyati* Act. = 1〉 *ati* 1〉.
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **sam-header)** — Mit *adhi* Act. dabei —, dazu sprechen.
 
 - **RU:** — С *adhi* Act. говорить при этом —, прибавлять к сказанному.
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **anu-header)** — Mit *anu*
 
 - **RU:** — С *anu*
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **anu-1)** — 1〉 Act.
 
 - **RU:** — 1〉 Act.
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **anu-1a)** — a〉 nachsprechen, (Laute) nachahmen.
 
 - **RU:** — a〉 повторять сказанное, (звуки) подражать.
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **anu-1b)** — b〉 *nachtönen.
 
 - **RU:** — b〉 *отдаваться эхом, вторить.
-  <sub>DCS 3918 · lexicographic</sub>
+  <sub>lexicographic</sub>
 
 **anu-1c)** — c〉 mit Worten begleiten.
 
 - **RU:** — c〉 сопровождать словами.
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **anu-1d)** — d〉 abermals sagen, auf Etwas zurückkommen, Etwas wiederholen (um die Wichtigkeit desselben hervorzuheben).
 
 - **RU:** — d〉 снова сказать, возвращаться к чему-либо, повторять что-либо (чтобы подчеркнуть его важность).
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **anu-1e)** — e〉 schmähen.
 
 - **RU:** — e〉 порицать, поносить.
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **anu-1f)** — f〉 Jmd um ein Almosen ansprechen.
 
 - **RU:** — f〉 просить кого-либо о подаянии.
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **anu-2)** — 2〉 Med.
 
 - **RU:** — 2〉 Med.
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **anu-2a)** — a〉 *Jmds (Gen.) Worte wiederholen.
 
 - **RU:** — a〉 *повторять слова (Gen.) кого-либо.
-  <sub>DCS 3918 · lexicographic</sub>
+  <sub>lexicographic</sub>
 
 **anu-2b-1)** — b〉 erklingen wie (Gen.) Worte wiederholen.
 
 - **RU:** — b〉 звучать подобно (Gen.), повторять слова.
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **anu-2b-2)** — b〉 erklingen wie (Gen.) [BHAṬṬ.]
 
 - **RU:** — b〉 звучать подобно (Gen.) [BHAṬṬ.]
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **vi-header)** 
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **vi-1)** — 1〉 ertönen —, erklingen lassen.
 
 - **RU:** — 1〉 заставлять звучать —, извлекать звук.
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **vi-2)** — 2〉 widerhallen lassen [CARAKA. 1,1].
 
 - **RU:** — 2〉 заставлять отдаваться эхом [CARAKA. 1,1].
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **adhi-header)** — Mit *abhyanu* Act. in Beziehung auf Etwas sagen.
 
 - **RU:** — С *abhyanu* Act. говорить относительно чего-либо.
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **vi2-header)** — Mit *apa*
 
 - **RU:** — С *apa*
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **vi2-1)** — 1〉 Act.
 
 - **RU:** — 1〉 Act.
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **vi2-1a)** — a〉 seinen Unmuth auslassen gegen Jmd, tadeln, schmähen; mit Gen. oder Acc.
 
 - **RU:** — a〉 выражать своё недовольство на кого-либо, порицать, поносить; с Gen. или Acc.
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **vi2-1b)** — b〉 Jmd (Acc.) durch Reden zerstreuen.
 
 - **RU:** — b〉 развлекать кого-либо (Acc.) речью.
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **vi2-1c)** — c〉 ausnehmen (eine Ausnahme machen).
 
 - **RU:** — c〉 делать исключение.
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **vi2-1d)** — d〉 als unrichtig bezeichnen [ŚAṂK. zu BĀDAR. 2,1,14 (S. 447, Z. 10)].
 
 - **RU:** — d〉 указывать как неправильное [ŚAṂK. zu BĀDAR. 2,1,14 (S. 447, Z. 10)].
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **vi2-2)** — 2〉 Med. geringschätzig sprechen von, schmähen, tadeln; mit Acc. [CARAKA. 1,29]. [ŚIŚ. 17,19]. mit Instr. [BĀLAR. 44,12]. mit Dat. [BHAṬṬ.]
 
 - **RU:** — 2〉 Med. говорить пренебрежительно о, поносить, порицать; с Acc. [CARAKA. 1,29]. [ŚIŚ. 17,19]. с Instr. [BĀLAR. 44,12]. с Dat. [BHAṬṬ.]
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **nind-header)** 
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **nind-1)** — 1〉 Jmd tadeln, schmähen, Etwas tadeln, missbilligen.
 
 - **RU:** — 1〉 порицать кого-либо, поносить, порицать что-либо, осуждать.
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **nind-2)** — 2〉 ausnehmen (eine Ausnahme machen).
 
 - **RU:** — 2〉 делать исключение.
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **abhi2-header)** — Mit *abhi* Act. Med. (meist metrisch)
 
 - **RU:** — С *abhi* Act. Med. (большей частью метрически)
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **abhi2-1)** — 1〉 Jmd anreden, begrüssen. *jāraṃ* *cauretyabhivadan* den Ehebrecher mit Dieb anredend, so v. a. ihn Dieb scheltend.
 
 - **RU:** — 1〉 обращаться к кому-либо, приветствовать. *jāraṃ* *cauretyabhivadan* называя прелюбодея вором, так v. a. называя его вором, браня.
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **abhi2-2)** — 2〉 in Bezug auf — sagen, — erwähnen, mit einem Worte u. s. w. meinen, auf Etwas hinweisend sprechen.
 
 - **RU:** — 2〉 говорить относительно —, упоминать, одним словом u. s. w. подразумевать, говорить, указывая на что-либо.
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **abhi2-3)** — 3〉 aussprechen, ausdrücken.
 
 - **RU:** — 3〉 высказывать, выражать.
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **abhi2-4)** — 4〉 erklären für, nennen; mit doppeltem Acc.
 
 - **RU:** — 4〉 признавать, называть; с двойным Acc.
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **abhi2-5)** — 5〉 sprechen.
 
 - **RU:** — 5〉 говорить.
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **abhi2-caus-header)** 
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **abhi2-caus-1)** — 1〉 Act. (meist metrisch) Med. Jmd anreden, begrüssen; oft mit Ergänzung der Person.
 
 - **RU:** — 1〉 Act. (большей частью метрически) Med. обращаться к кому-либо, приветствовать; часто с указанием лица.
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **abhi2-caus-2)** — 2〉 *Med. Jmd (Acc.) durch Jmd (Acc. oder Instr.) begrüssen lassen.
 
 - **RU:** — 2〉 *Med. велеть кому-либо (Acc.) быть приветствованным кем-либо (Acc. или Instr.).
-  <sub>DCS 3918 · lexicographic</sub>
+  <sub>lexicographic</sub>
 
 **abhi2-caus-3)** — 3〉 Med. Jmd (Dat.) seine Verehrung bezeigen [ŚĀṄKH. GṚHY. 4,12].
 
 - **RU:** — 3〉 Med. выражать кому-либо (Dat.) своё почтение [ŚĀṄKH. GṚHY. 4,12].
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **abhi2-caus-4)** — 4〉 Act. Etwas hersagen lassen.
 
 - **RU:** — 4〉 Act. велеть произнести что-либо, заставить продекламировать.
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **abhi2-caus-5)** — 5〉 Act. erklingen lassen, spielen (ein musikalisches Instrument).
 
 - **RU:** — 5〉 Act. заставить звучать, играть (на музыкальном инструменте).
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **prati-header)** — Mit *pratyabhi* Act. einen Gruss erwiedern [ĀPAST. 1,14,20].
 
 - **RU:** — С *pratyabhi* Act. отвечать на приветствие [ĀPAST. 1,14,20].
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **sam-abhi-header)** — Caus. Med. dass.
 
 - **RU:** — Caus. Med. dass.
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **sam-header2)** — Mit *samabhi* Caus. Jmd begrüssen. Nur Absol.
 
 - **RU:** — С *samabhi* Caus. приветствовать кого-либо. Только Absol.
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **apa-header)** — Mit *ava* Act.
 
 - **RU:** — С *ava* Act.
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **apa-1)** — 1〉 durch Nachrede Abbruch thun, herabsetzen.
 
 - **RU:** — 1〉 наносить ущерб злословием, умалять.
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **apa-2)** — 2〉 unterweisen. Nur buddh. *avavadita* (!).
 
 - **RU:** — 2〉 наставлять, поучать. Только buddh. *avavadita* (!).
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **ud-header)** — Mit *vyava* Act.
 
 - **RU:** — С *vyava* Act.
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **ud-1)** — 1〉 beschreien.
 
 - **RU:** — 1〉 кричать о, оглашать криком.
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **ud-2)** — 2〉 zu reden beginnen, das Schweigen unterbrechen.
 
 - **RU:** — 2〉 начинать говорить, прерывать молчание.
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **pra2-header)** — Mit *ā* Act.
 
 - **RU:** — С *ā* Act.
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **pra2-1)** — 1〉 reden zu, anreden.
 
 - **RU:** — 1〉 говорить с кем-либо, обращаться.
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **pra2-2)** — 2〉 ankündigen, zusprechen.
 
 - **RU:** — 2〉 возвещать, обещать.
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **ni-header)** — Mit *samā* Act. einen Ausspruch thun.
 
 - **RU:** — С *samā* Act. делать высказывание, выносить суждение.
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **sam2-header)** — Mit *ud* Act.
 
 - **RU:** — С *ud* Act.
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **sam2-1)** — 1〉 die Stimme erheben, sich hören lassen.
 
 - **RU:** — 1〉 возвышать голос, заставить себя услышать.
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **sam2-2)** — 2〉 erschallen lassen.
 
 - **RU:** — 2〉 заставить звучать, огласить.
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **prati2-header)** — Mit *pratyud* Caus. dagegen erschallen lassen.
 
 - **RU:** — С *pratyud* Caus. заставлять отдаваться в ответ, вторить звуком.
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **abhi3-header)** — Mit *upa*
 
 - **RU:** — С *upa*
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **abhi3-1)** — 1〉 Act.
 
 - **RU:** — 1〉 Act.
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **abhi3-1a)** — a〉 missliebig reden über (Acc.), beschreien, berufen, Jmd anfahren [AIT. ĀR. 314,2] v. u.
 
 - **RU:** — a〉 неодобрительно отзываться о (Acc.), дурно прославлять, порицать, накидываться на кого-либо [AIT. ĀR. 314,2] v. u.
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **abhi3-1b)** — b〉 anreden.
 
 - **RU:** — b〉 обращаться к.
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **abhi3-1c)** — c〉 bitten.
 
 - **RU:** — c〉 просить.
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **abhi3-1d)** — d〉 in der dunkelen Stelle [ṚV. 4,5,8] zieht [SĀY.] *upa* zum Acc.
 
 - **RU:** — d〉 в тёмном месте [ṚV. 4,5,8] [SĀY.] *upa* относит к Acc.
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 ## vad
 
@@ -3288,25 +3288,25 @@ try not to speak with me about it
 
 - **RU:** 2〉 Med. — уговаривать кого-либо, стараться привлечь к себе [BHAṬṬ.]
 - **EN:** 2〉 Med. to persuade someone, to attempt to draw someone to oneself [BHAṬṬ.]
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **prefix_group2)** — Caus. Act. ertönen lassen [MĀN. GṚHY. 1,9].
 
 - **RU:** Caus. Act. — заставлять звучать [MĀN. GṚHY. 1,9].
 - **EN:** Caus. Act. to cause to resound [MĀN. GṚHY. 1,9].
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **prefix_pari)** — Mit *pratyupa* durch Reden beleidigen. Nur *pratyupodita*.
 
 - **RU:** С *pratyupa* — оскорблять словами. Только *pratyupodita*.
 - **EN:** With *pratyupa* to offend by speech. Only *pratyupodita*.
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **prefix_group3)** — Mit *ni* Caus. Med. erschallen lassen.
 
 - **RU:** С *ni* Caus. Med. — заставлять звучать, оглашать.
 - **EN:** With *ni* Caus. Med. to cause to resound.
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **prefix_nis2_1)** — Mit *nis* Act.
 — 1〉 wegreden.
@@ -3317,31 +3317,31 @@ try not to speak with me about it
 
 - **RU:** 2〉 говорить вовне, заставлять звучать наружу.
 - **EN:** 2〉 to speak outward, to make sound outward.
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **prefix_nis2_3)** — 3〉 seinen Unmuth gegen Jmd (Acc.) auslassen, Jmd schmähen. Metrisch auch Med.
 
 - **RU:** 3〉 выражать своё недовольство против кого-либо (Acc.), поносить кого-либо. Метрич. также Med.
 - **EN:** 3〉 to vent one's displeasure against someone (Acc.), to revile someone. Metrically also Med.
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **prefix_adhi2)** — Mit *abhinis* Act. aussagen in Bezug auf (Acc.).
 
 - **RU:** С *abhinis* Act. — высказываться в отношении (Acc.).
 - **EN:** With *abhinis* Act. to assert with reference to (Acc.).
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **prefix_apa2)** — Mit *parā* Act. wegsprechen [AV. 6,29,3].
 
 - **RU:** С *parā* Act. — отговаривать, устранять словами [AV. 6,29,3].
 - **EN:** With *parā* Act. to talk away, to deny by speech [AV. 6,29,3].
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **prefix_abhi3)** — Mit *abhiparā* anreden.
 
 - **RU:** С *abhiparā* — обращаться к кому-либо.
 - **EN:** With *abhiparā* to address.
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **prefix_pra2_1)** — Mit *pari* Act.
 — 1〉 sich auslassen, einen Ausspruch thun, bereden, besprechen, sich auslassen über (Acc.).
@@ -3352,13 +3352,13 @@ try not to speak with me about it
 
 - **RU:** 2〉 высказываться о ком-либо неблагоприятно, порицать кого-либо. Метрич. также Med.
 - **EN:** 2〉 to speak disparagingly about someone, to blame someone. Metrically also Med.
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **prefix_group4)** — Desid. in *parivivadiṣu* ([Nachtr. 5]).
 
 - **RU:** Desid. в *parivivadiṣu* ([Nachtr. 5]).
 - **EN:** Desid. in *parivivadiṣu* ([Nachtr. 5]).
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **prefix_pro_1)** — Mit *pra* Act. Med. (ausnahmsweise)
 — 1〉 heraussagen, reden, sprechen, aussagen, ansagen, verkünden; sprechen zu Jmd (Acc. [BHAṬṬ.]) *prodita* gesprochen.
@@ -3369,31 +3369,31 @@ try not to speak with me about it
 
 - **RU:** 2〉 издавать голос (о животных и птицах), журчать, шуметь (о воде).
 - **EN:** 2〉 to raise the voice (of animals and birds), to rush, to murmur (of water).
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **prefix_pro_3)** — 3〉 annehmen, statuiren.
 
 - **RU:** 3〉 принимать, признавать, постулировать.
 - **EN:** 3〉 to assume, to posit.
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **prefix_pro_4)** — 4〉 bezeichnen als, erklären für, nennen; mit doppeltem Acc.
 
 - **RU:** 4〉 обозначать как, объявлять, называть; с двойным Acc.
 - **EN:** 4〉 to designate as, to declare to be, to call; with double Acc.
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **prefix_pro_5)** — 5〉 anbieten, ausbieten zum Verkauf; mit Instr. des Preises.
 
 - **RU:** 5〉 предлагать, выставлять на продажу; с Instr. цены.
 - **EN:** 5〉 to offer, to offer for sale; with Instr. of the price.
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **prefix_pro_caus)** — Caus. Act. ertönen lassen, spielen (ein musikalisches Instrument). Ohne Object musiciren. *pravādyanti* mit act. Bed. (!).
 
 - **RU:** Caus. Act. — заставлять звучать, играть (на музыкальном инструменте). Без объекта — музицировать. *pravādyanti* с act. Bed. (!).
 - **EN:** Caus. Act. to cause to resound, to play (a musical instrument). Without object: to make music. *pravādyanti* with act. Bed. (!).
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **prefix_anu_pro_1)** — Mit *anupra* Act.
 — 1〉 nachsprechen.
@@ -3404,31 +3404,31 @@ try not to speak with me about it
 
 - **RU:** 2〉 высказываться о, свидетельствовать о.
 - **EN:** 2〉 to assert about.
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **prefix_anu_pro_caus)** — Caus. nachher ertönen lassen.
 
 - **RU:** Caus. — заставлять звучать впоследствии, вслед за чем-либо.
 - **EN:** Caus. to cause to resound afterwards.
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **prefix_ud_pro)** — Mit *abhipra* Caus. zu Jmds Ehren ertönen lassen [SADDH. P. 88,a.]
 
 - **RU:** С *abhipra* Caus. — заставлять звучать в честь кого-либо [SADDH. P. 88,a.]
 - **EN:** With *abhipra* Caus. to cause to resound in someone's honour [SADDH. P. 88,a.]
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **prefix_sam_pro)** — Mit *upapra* Act. mit der Stimme einfallen.
 
 - **RU:** С *upapra* Act. — вступать голосом, подхватывать голосом.
 - **EN:** With *upapra* Act. to join in with the voice.
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **prefix_vipra)** — Mit *vipra* Act. Med. sich gegenseitig widersprechen [BHAṬṬ.]
 
 - **RU:** С *vipra* Act. Med. — противоречить друг другу [BHAṬṬ.]
 - **EN:** With *vipra* Act. Med. to contradict one another [BHAṬṬ.]
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **prefix_sam2_1)** — Mit *saṃpra*
 — 1〉 laut aussprechen in *saṃpravaditos*.
@@ -3439,19 +3439,19 @@ try not to speak with me about it
 
 - **RU:** 2〉 Act. — совместно возвышать голос.
 - **EN:** 2〉 Act. to raise the voice together.
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **prefix_sam2_3)** — 3〉 Med. sich unterhalten [BHAṬṬ.]
 
 - **RU:** 3〉 Med. — беседовать, разговаривать [BHAṬṬ.]
 - **EN:** 3〉 Med. to converse [BHAṬṬ.]
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **prefix_group5)** — Caus. in *saṃpravādita*.
 
 - **RU:** Caus. в *saṃpravādita*.
 - **EN:** Caus. in *saṃpravādita*.
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **prefix_prati3_1)** — Mit *prati* Act.
 — 1〉 zu Jmd (Acc.) reden.
@@ -3462,25 +3462,25 @@ try not to speak with me about it
 
 - **RU:** 2〉 отвечать, — кому-либо (Acc.).
 - **EN:** 2〉 to answer, to reply to someone (Acc.).
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **prefix_prati3_3)** — 3〉 Jmd zurückweisen. Nur *pratyudita*.
 
 - **RU:** 3〉 отвергать кого-либо. Только *pratyudita*.
 - **EN:** 3〉 to repel someone, to rebuff. Only *pratyudita*.
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **prefix_prati3_4)** — 4〉 nachsprechen, widerholen.
 
 - **RU:** 4〉 повторять вслед, воспроизводить.
 - **EN:** 4〉 to repeat after, to echo.
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **prefix_prati3_caus)** — Intens. (*prativāvadat*) widerreden.
 
 - **RU:** Intens. (*prativāvadat*) — возражать, противоречить.
 - **EN:** Intens. (*prativāvadat*) to speak against, to contradict.
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **prefix_vi2_1)** — Mit *vi*
 — 1〉 Act. Etwas widerreden. *vyudita* strittig.
@@ -3491,37 +3491,37 @@ try not to speak with me about it
 
 - **RU:** 2〉 Act. Med. (старш.) — вступать с кем-либо (Instr., в виде исключения Acc.) в словесный спор о (Loc., в виде исключения Acc.), противоречить друг другу. *vivadamāna* также — спорный, *vivadita* (!) Pl. — находящийся в состоянии спора.
 - **EN:** 2〉 Act. Med. (older form) to enter into a verbal dispute with someone (Instr., exceptionally Acc.) about (Loc., exceptionally Acc.), to contradict one another. *vivadamāna* also controversial, *vivadita* (!) Pl. in dispute.
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **prefix_vi2_3)** — 3〉 Act. sich unterhalten.
 
 - **RU:** 3〉 Act. — беседовать, разговаривать.
 - **EN:** 3〉 Act. to converse.
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **prefix_vi2_4)** — 4〉 Med. die Stimme ertönen lassen (von Vögeln).
 
 - **RU:** 4〉 Med. — издавать голос (о птицах).
 - **EN:** 4〉 Med. to raise the voice (of birds).
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **prefix_vi2_caus)** — Caus. Act. einen Process einleiten, die Gerichtsverhandlung beginnen lassen.
 
 - **RU:** Caus. Act. — возбуждать судебный процесс, начинать судебное разбирательство.
 - **EN:** Caus. Act. to initiate a lawsuit, to cause a judicial proceeding to begin.
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **prefix_vi2_intens)** — Intens. (*vivāvadat*) die Stimme laut, widerholt ertönen lassen.
 
 - **RU:** Intens. (*vivāvadat*) — заставлять звучать громко и многократно.
 - **EN:** Intens. (*vivāvadat*) to cause the voice to resound loudly and repeatedly.
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **prefix_prati_vi)** — Mit *prativi* Med. dagegen reden [ĀPAST. ŚR. 10,27,6] (vgl. [Comm. zu KĀTY. ŚR. 7,8,27]).
 
 - **RU:** С *prativi* Med. — возражать, говорить в ответ [ĀPAST. ŚR. 10,27,6] (vgl. [Comm. zu KĀTY. ŚR. 7,8,27]).
 - **EN:** With *prativi* Med. to speak against, to reply in contradiction [ĀPAST. ŚR. 10,27,6] (vgl. [Comm. zu KĀTY. ŚR. 7,8,27]).
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **prefix_sam3_1)** — Mit *sam*
 — 1〉 Act. (metrisch) Med. zusammen —, zu einander sagen, — von (Acc.), sich unterreden mit (Instr.), sich bereden über (Loc.). *svena* *kratunā* mit sich zu Rathe gehen.
@@ -3532,31 +3532,31 @@ try not to speak with me about it
 
 - **RU:** 2〉 заключать соглашение. Только *samudya*.
 - **EN:** 2〉 to conclude a pact. Only *samudya*.
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **prefix_sam3_3)** — 3〉 Act. zusammen klingen (von musikalischen Instrumenten).
 
 - **RU:** 3〉 Act. — звучать совместно (о музыкальных инструментах).
 - **EN:** 3〉 Act. to sound together (of musical instruments).
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **prefix_sam3_4)** — 4〉 Act. Med. übereinstimmen, zustimmen, seine Zustimmung zu Etwas (Acc. [ŚIŚ. 13,3]) geben; zutreffen, so v. a. zusammen einen Sinn geben [308,6] (im Prākrit). *samudita* allgemein angenommen, gebräuchlich geworden.
 
 - **RU:** 4〉 Act. Med. — соглашаться, давать своё согласие на что-либо (Acc. [ŚIŚ. 13,3]); соответствовать, так v. a. — совместно составлять смысл [308,6] (в Prākrit). *samudita* — общепринятый, вошедший в употребление.
 - **EN:** 4〉 Act. Med. to agree, to assent, to give one's assent to something (Acc. [ŚIŚ. 13,3]); to be applicable, so v. a. to together make sense [308,6] (in the Prākrit). *samudita* generally accepted, having come into common use.
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **prefix_sam3_5)** — 5〉 Act. Med. sprechen, sagen zu (Acc.) [NAIṢ. 5,12]. *samudita* angeredet.
 
 - **RU:** 5〉 Act. Med. — говорить, сказать к (Acc.) [NAIṢ. 5,12]. *samudita* — тот, к кому обращена речь.
 - **EN:** 5〉 Act. Med. to speak, to say to (Acc.) [NAIṢ. 5,12]. *samudita* addressed.
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **prefix_sam3_6)** — 6〉 Act. bezeichnen als, erklären für, nennen; mit doppeltem Acc.
 
 - **RU:** 6〉 Act. — обозначать как, объявлять, называть; с двойным Acc.
 - **EN:** 6〉 Act. to designate as, to declare to be, to call; with double Acc.
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **prefix_sam3_caus_1)** — Caus.
 — 1〉 Act. sich unterreden lassen mit (Instr.).
@@ -3567,49 +3567,49 @@ try not to speak with me about it
 
 - **RU:** 2〉 Med. — вызывать беседу о (Loc.).
 - **EN:** 2〉 Med. to provoke a discussion about (Loc.).
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **prefix_sam3_caus_3)** — 3〉 Act. sich über Etwas einigen (*saṃvādya* [GAUT.]), einstimmen. *saṃvādita* worüber man sich geeinigt hat.
 
 - **RU:** 3〉 Act. — договариваться о чём-либо (*saṃvādya* [GAUT.]), соглашаться. *saṃvādita* — то, о чём договорились.
 - **EN:** 3〉 Act. to come to an agreement about something (*saṃvādya* [GAUT.]), to concur. *saṃvādita* that on which one has agreed.
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **prefix_sam3_caus_4)** — 4〉 zutreffend angeben. Nur Absol.
 
 - **RU:** 4〉 точно указывать. Только Absol.
 - **EN:** 4〉 to state correctly, to give an accurate account. Only Absol.
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **prefix_sam3_caus_5)** — 5〉 Act. Jmd zum Sprechen auffordern.
 
 - **RU:** 5〉 Act. — приглашать кого-либо говорить.
 - **EN:** 5〉 Act. to invite someone to speak.
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **prefix_sam3_caus_6)** — 6〉 ertönen lassen (ein musikalisches Instrument).
 
 - **RU:** 6〉 заставлять звучать (музыкальный инструмент).
 - **EN:** 6〉 to cause to resound (a musical instrument).
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **prefix_group6)** — Mit *upasam* in *upasaṃvāda*.
 
 - **RU:** С *upasam* в *upasaṃvāda*.
 - **EN:** With *upasam* in *upasaṃvāda*.
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **prefix_anu_sam)** — Mit *parisam* Act. sich gemeinschaftlich über Jmd (Acc.) äussern [MBH. 13,159,15].
 
 - **RU:** С *parisam* Act. — совместно высказываться о ком-либо (Acc.) [MBH. 13,159,15].
 - **EN:** With *parisam* Act. to express oneself collectively about someone (Acc.) [MBH. 13,159,15].
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **prefix_prati_sam2)** — Mit *pratisam* Med. sich mit Jmd (Acc.) einverstanden erklären.
 
 - **RU:** С *pratisam* Med. — объявлять себя согласным с кем-либо (Acc.).
 - **EN:** With *pratisam* Med. to declare oneself in agreement with someone (Acc.).
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **prefix_vi_sam_1)** — Mit *visam* Act.
 — 1〉 seiner Zusage untreu werden.
@@ -3620,7 +3620,7 @@ try not to speak with me about it
 
 - **RU:** 2〉 делать возражения, противоречить.
 - **EN:** 2〉 to raise objections, to contradict.
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **prefix_vi_sam_ppp)** — Caus. *visaṃvādita*
 — 1〉 dessen Unzufriedenheit erregt worden ist.
@@ -3631,117 +3631,117 @@ try not to speak with me about it
 
 - **RU:** 2〉 то, к чему есть возражения, не получившее всеобщего признания.
 - **EN:** 2〉 to which objection may be raised, not generally accepted.
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **pref-ud2)** — Mit *nis* Act.
 
 - **RU:** С *nis* Act.
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **pref-ud2-1)** — 1〉 wegreden.
 
 - **RU:** 1〉 заговаривать, уводить разговором.
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **pref-anu2)** — Mit *pari* Act.
 
 - **RU:** С *pari* Act.
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **pref-anu2-1)** — 1〉 sich auslassen, einen Ausspruch thun, bereden, besprechen, sich auslassen über (Acc.).
 
 - **RU:** 1〉 высказываться, делать заявление, совещаться, обсуждать, высказываться о (Acc.).
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **pref-ud3)** — Mit *pra* Act. Med. (ausnahmsweise)
 
 - **RU:** С *pra* Act. Med. (в виде исключения)
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **pref-ud3-1)** — 1〉 heraussagen, reden, sprechen, aussagen, ansagen, verkünden; sprechen zu Jmd (Acc. [BHAṬṬ.]) *prodita* gesprochen.
 
 - **RU:** 1〉 произносить, говорить, высказывать, возвещать, объявлять; говорить к кому-либо (Acc. [BHAṬṬ.]) *prodita* — произнесённый.
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **pref-anu3)** — Mit *anupra* Act.
 
 - **RU:** С *anupra* Act.
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **pref-anu3-1)** — 1〉 nachsprechen.
 
 - **RU:** 1〉 повторять вслед, воспроизводить сказанное.
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **pref-sam-ud)** — Mit *saṃpra*
 
 - **RU:** С *saṃpra*
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **pref-sam-ud-1)** — 1〉 laut aussprechen in *saṃpravaditos*.
 
 - **RU:** 1〉 произносить вслух в *saṃpravaditos*.
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **pref-prati2)** — Mit *prati* Act.
 
 - **RU:** С *prati* Act.
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **pref-prati2-1)** — 1〉 zu Jmd (Acc.) reden.
 
 - **RU:** 1〉 говорить к кому-либо (Acc.).
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **pref-vi2)** — Mit *vi*
 
 - **RU:** С *vi*
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **pref-vi2-1)** — 1〉 Act. Etwas widerreden. *vyudita* strittig.
 
 - **RU:** 1〉 Act. — оспаривать что-либо. *vyudita* — спорный.
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **pref-sam2)** — Mit *sam*
 
 - **RU:** С *sam*
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **pref-sam2-1)** — 1〉 Act. (metrisch) Med. zusammen —, zu einander sagen, — von (Acc.), sich unterreden mit (Instr.), sich bereden über (Loc.). *svena* *kratunā* mit sich zu Rathe gehen.
 
 - **RU:** 1〉 Act. (метрич.) Med. — говорить вместе, говорить друг другу о (Acc.), беседовать с (Instr.), совещаться о (Loc.). *svena* *kratunā* — совещаться с самим собой.
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **pref-sam2-caus)** — Caus.
 
 - **RU:** Caus.
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **pref-sam2-caus-1)** — 1〉 Act. sich unterreden lassen mit (Instr.).
 
 - **RU:** 1〉 Act. — позволять беседовать с собой (Instr.).
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **pref-vi-sam)** — Mit *visam* Act.
 
 - **RU:** С *visam* Act.
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **pref-vi-sam-1)** — 1〉 seiner Zusage untreu werden.
 
 - **RU:** 1〉 нарушать своё обещание, изменять данному слову.
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **pref-vi-sam-ppp)** — Caus. *visaṃvādita*
 
 - **RU:** Caus. *visaṃvādita*
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **pref-vi-sam-ppp-1)** — 1〉 dessen Unzufriedenheit erregt worden ist.
 
 - **RU:** 1〉 тот, чьё недовольство было вызвано.
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 ## vad
 
@@ -3752,4 +3752,4 @@ try not to speak with me about it
 
 - **RU:** с visam [Kaus.] ˚запутывать, порочить (судебный процесс), [Kauṭ. 177,5.]
 - **EN:** vad with viṣam [Kaus.] °to confuse, to render suspect (a lawsuit), [Kauṭ. 177,5.]
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>

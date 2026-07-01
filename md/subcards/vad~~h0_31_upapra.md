@@ -10,4 +10,4 @@
 [AV. 4,15,14.]
 - **EN:** — *upapra* to join in with the voice, to chime in vocally
 [AV. 4,15,14.]
-  <sub>DCS 2 · attested</sub>
+  <sub>attested</sub>

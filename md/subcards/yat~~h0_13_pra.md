@@ -39,13 +39,13 @@
 [SUŚR. 2,32,18.]
 [ŚĀK. 18,14.] *prayattamanvicchati śūlinaṃ manaḥ* striving, wholly intent upon the matter
 [Spr. 4591.]
-  <sub>DCS 127 · attested</sub>
+  <sub>attested</sub>
 
 **deriv)** — Vgl. *prayatitavya* fgg.
 
 - **RU:** — Vgl. *prayatitavya* fgg.
 - **EN:** — Vgl. *prayatitavya* fgg.
-  <sub>DCS 127 · lexicographic</sub>
+  <sub>lexicographic</sub>
 
 **1b)** [TBR. 2,8,2,2.] sich bestreben, sich bemühen um, bedacht sein auf, sich befleissigen; med. und act. (aus metrischen Rücksichten) mit loc.
 [ĀŚV. ŚR. 4,12,3.]
@@ -108,11 +108,11 @@
 [R. 3,35,17.] *prayatiṣye tathā rājanyathā śreyo bhaviṣyati*
 [MBH. 1,2085.]
 [SUŚR. 2,32,18.]
-  <sub>DCS 127 · attested</sub>
+  <sub>attested</sub>
 
 **1c)** [ŚĀK. 18,14.] *prayattamanvicchati śūlinaṃ manaḥ* sich bestrebend, ganz bei der Sache seiend
 [Spr. 4591.]
 
 - **RU:** [ŚĀK. 18,14.] *prayattamanvicchati śūlinaṃ manaḥ* стремящийся, всецело поглощённый делом
 [Spr. 4591.]
-  <sub>DCS 127 · attested</sub>
+  <sub>attested</sub>

@@ -39,7 +39,7 @@
 [MBH. 12,544.] [550.] [566.] [13,6475.]
 [ŚATR. 14,66.] *parivrajatpadavī*
 [BHĀG. P. 3,24,34.] [7,13,1.]
-  <sub>DCS 1202 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — Vgl. *parivrajya, parivrāj* fgg.
 - **EN:** — Vgl. *parivrajya, parivrāj* fgg.

@@ -13,10 +13,10 @@ Schol. zu [KĀTY. ŚR. 16,1,4] (ungedr.).
 - **EN:** — *anu* to worship afterwards: *tamagniṣṭomenānuyajati*
 Schol. to [KĀTY. ŚR. 16,1,4] (ungedr.).
 [PAÑCAR. 3,7,17] is to be written *tadanu yajecca*.
-  <sub>DCS 6777 · attested</sub>
+  <sub>attested</sub>
 
 **anu-yaj-2)** — Vgl. *anu yāga, anuyāja* .
 
 - **RU:** — Vgl. *anu yāga, anuyāja* .
 - **EN:** — Vgl. *anu yāga, anuyāja* .
-  <sub>DCS 6777 · lexicographic</sub>
+  <sub>lexicographic</sub>

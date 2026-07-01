@@ -25,7 +25,7 @@
 [11,2,22.] to lead away: *hastegṛhya nirṇayati*
 [KAUŚ. 76.]
 [NAIGH. 3,25.]
-  <sub>DCS 2376 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) auf s Reine bringen, Etwas herausbringen, hinter Etwas kommen. Etwas zur Entscheidung bringen, sich für Etwas entscheiden: *yo hi kāryaṃ mahāpadi . haṭhenecchati nirṇetum*
 [R. 5,85,11.] *kamapyupāyamātmanaiva nirṇīya*
@@ -67,10 +67,10 @@
 [MBH. 13,7735.]
 [BHĀG. P. 2,1,11.]
 [ŚAṂK.] to [BṚH. ĀR. UP. S. 216.]
-  <sub>DCS 2376 · attested</sub>
+  <sub>attested</sub>
 
 **note)** — Vgl. *nirṇaya, nirṇayana, nirṇetar* fg.
 
 - **RU:** — Vgl. *nirṇaya, nirṇayana, nirṇetar* fg.
 - **EN:** — Vgl. *nirṇaya, nirṇayana, nirṇetar* fg.
-  <sub>DCS 2376 · attested</sub>
+  <sub>attested</sub>

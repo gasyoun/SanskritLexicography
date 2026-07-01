@@ -13,4 +13,4 @@ Schol. zu [KĀTY. ŚR. 6,6,23.]
 
 - **RU:** — *pratipra*, partic. *˚sūta* снова дозволенный
 Schol. к [KĀTY. ŚR. 6,6,23.]
-  <sub>DCS 14088 · attested</sub>
+  <sub>attested</sub>

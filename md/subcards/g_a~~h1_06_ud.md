@@ -67,10 +67,10 @@
 [MBH. 3,1535.] *udgīta* _n._ song: *kiṃnarodgītabhāṣiṇī*
 [MBH. 1,6569.] in Prākrit: *sa kālo madavibbhamuggīdāṇaṃ*
 [ŚĀK. CH. 117,5.]
-  <sub>DCS 283 · attested</sub>
+  <sub>attested</sub>
 
 **deriv)** — Vgl. *udgātar, udgāthā, udgīti, udgītha* .
 
 - **RU:** — Vgl. *udgātar, udgāthā, udgīti, udgītha* .
 - **EN:** — Vgl. *udgātar, udgāthā, udgīti, udgītha* .
-  <sub>DCS 283 · attested</sub>
+  <sub>attested</sub>

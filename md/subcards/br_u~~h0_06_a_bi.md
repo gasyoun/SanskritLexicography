@@ -7,4 +7,4 @@
 
 - **RU:** — *abhi* s. u. *ati* .
 - **EN:** — *abhi* s. u. *ati* .
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>

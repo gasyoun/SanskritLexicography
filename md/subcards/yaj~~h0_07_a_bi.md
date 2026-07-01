@@ -24,7 +24,7 @@
 - **RU:** — *abhi* чтить жертвой: *devatā abhiyajet*
 [GOBH. 4,7,16.] *āmāvāsyena haviṣā pūrvapakṣamabhiyajate*
 [1,5,6.] [PAÑCAR. 3,7,12.] Сюда относит
-  <sub>DCS 6777 · attested</sub>
+  <sub>attested</sub>
 
 **abhi-sense-2)** [SĀY.] *bharadvājānsārñjayo abhyayaṣṭa (= apūjayat)*
 [ṚV. 6,47,25.] ein Opfer (acc.) darbringen: *aśvamedhaṃ yajñaṃ vaiṣṇavaṃ śakro 'bhiyajatām*
@@ -33,4 +33,4 @@
 - **RU:** [SĀY.] *bharadvājānsārñjayo abhyayaṣṭa (= apūjayat)*
 [ṚV. 6,47,25.] приносить жертву (acc.): *aśvamedhaṃ yajñaṃ vaiṣṇavaṃ śakro 'bhiyajatām*
 [MBH. 12,13217.]
-  <sub>DCS 6777 · attested</sub>
+  <sub>attested</sub>

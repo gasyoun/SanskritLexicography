@@ -10,4 +10,4 @@
 [R. 1,39,24.]
 - **EN:** — *samabhi* to arise: *tataḥ kālena mahatā matiḥ samabhijāyata . sagarasyāśvamedhena yajeyamiti*
 [R. 1,39,24.]
-  <sub>DCS 1 · attested</sub>
+  <sub>attested</sub>

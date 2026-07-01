@@ -9,4 +9,4 @@
 - **RU:** — *ati* поносить, бранить: *yaśasvinastīkṣṇaviṣānmahārathānatibruvan (abhibruvan* [ed. Bomb.]) *mūḍha na lajjase katham*
 [MBH. 3,15640.]
 - **EN:** — *ati* "to revile, abuse": *yaśasvinastīkṣṇaviṣānmahārathānatibruvan (abhibruvan* [ed. Bomb.]) *mūḍha na lajjase katham* [MBH. 3,15640.]
-  <sub>DCS 9786 · attested</sub>
+  <sub>attested</sub>

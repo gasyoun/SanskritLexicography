@@ -82,4 +82,4 @@
 [1,8,6.] [6,13,6.] [10,74,16.] [79,30.] *ayājayadrosavena goparājaṃ dvijottamaiḥ* he caused him to sacrifice by means of distinguished Brahmans
 [3,2,32.] [1,12,36.] with two acc.: *taṃ ca te yājayāmāsuryajñadīkṣām*
 [R. 7,57,10.]
-  <sub>DCS 6777 · attested</sub>
+  <sub>attested</sub>

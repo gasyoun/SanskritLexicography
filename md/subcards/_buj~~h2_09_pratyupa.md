@@ -10,10 +10,10 @@
 [R. 6,11,39.]
 - **EN:** — *pratyupa* to enjoy, consume: *gṛheṣu balikarmāṇi pretāḥ samupabhuñjate*
 [R. 6,11,39.]
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — Vgl. *pratyupabhoga* .
 
 - **RU:** — Vgl. *pratyupabhoga* .
 - **EN:** — Vgl. *pratyupabhoga* .
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>

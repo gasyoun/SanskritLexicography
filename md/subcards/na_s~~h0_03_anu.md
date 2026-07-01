@@ -7,4 +7,4 @@
 
 - **RU:** — *anu* s. *anunāśa* .
 - **EN:** — *anu* s. *anunāśa* .
-  <sub>DCS 1422 · attested</sub>
+  <sub>attested</sub>

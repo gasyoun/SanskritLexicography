@@ -10,4 +10,4 @@
 [AIT. BR. 3,25.]
 - **EN:** — *abhyava* to fly down
 [AIT. BR. 3,25.]
-  <sub>DCS 3124 · attested</sub>
+  <sub>attested</sub>

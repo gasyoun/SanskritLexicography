@@ -13,7 +13,7 @@
 - **EN:** — *pratyanu*
  1) to bring someone to yield, to make someone give way: *na cainamaśakadbhānurahaṃ vā snehakāraṇaiḥ . purā pratyanunetum*
 [MBH. 12,150.]
-  <sub>DCS 4 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) sich gegen Jmd oder Etwas erklären, nicht einverstanden sein mit Jmd oder Etwas: *bhavatāhamannasyāśucibhāvamālakṣya pratyanunītaḥ* wurde ich von dir Lügen gestraft
 [MBH. 1,787.] *etatpratyanunaye* dagegen lege ich Verwahrung ein
@@ -25,4 +25,4 @@
 - **EN:** — 2) to declare oneself against someone or something, to disagree with someone or something: *bhavatāhamannasyāśucibhāvamālakṣya pratyanunītaḥ* I was proved a liar by you
 [MBH. 1,787.] *etatpratyanunaye* against this I enter a protest
 [736.]
-  <sub>DCS 4 · attested</sub>
+  <sub>attested</sub>

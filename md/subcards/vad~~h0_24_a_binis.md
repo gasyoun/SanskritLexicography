@@ -10,4 +10,4 @@
 [PAÑCAV. BR. 11,11,9. 23,7,2.]
 - **EN:** — *abhinis* to assert with reference to (acc.): *kṣatraṃ vā etadaharabhinirvadati yatpañcadaśam*
 [PAÑCAV. BR. 11,11,9. 23,7,2.]
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>

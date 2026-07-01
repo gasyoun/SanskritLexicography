@@ -7,4 +7,4 @@
 
 - **RU:** с visam [Kaus.] ˚запутывать, порочить (судебный процесс), [Kauṭ. 177,5.]
 - **EN:** vad with viṣam [Kaus.] °to confuse, to render suspect (a lawsuit), [Kauṭ. 177,5.]
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>

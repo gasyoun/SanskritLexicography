@@ -22,7 +22,7 @@
 [VOP.] *madayati* [intoxicated] *nīcaṃ saṃpattiḥ . madayati* [reduced to distress] *śatruṃ śūraḥ*
 [DURGĀD.] in the [ŚKDR.]), *mandayati; amīmadanta, mādayadhyai*
 [ṚV. 1,167,1.] [6,19,6.] [22,3.] [60,13.]
-  <sub>DCS 63834 · attested</sub>
+  <sub>attested</sub>
 
 **1)** 1) act. ergötzen, erheitern, berauschen: *te tvā madā mādayantu*
 [ṚV. 7,23,5.] [9,84,3.] [80,5.] *tānha rājā madayāṃ cakāra*
@@ -73,13 +73,13 @@
 [PRAB. 6,4.]
 [BHAṬṬ. 10,27.] [12,87.] med. for metrical reasons: *(madyam) vikṣobhyendriyacetāṃsi vīryaṃ madayate 'cirāt*
 [SUŚR. 1,192,1.] Vgl. *madayantī*.
-  <sub>DCS 63834 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) med.
 
 - **RU:** — 2) med.
 - **EN:** — 2) med.
-  <sub>DCS 63834 · attested</sub>
+  <sub>attested</sub>
 
 **2a)** a) sich ergötzen, fröhlich sein, sich wohlbefinden, sich behagen lassen: *savane mādayasva*
 [ṚV. 7,29,2.] [38,8.] [39,5.] *tve viśve amṛtā mādayante*
@@ -112,7 +112,7 @@
 [16,8.] *akṣannamīmadanta hi*
 [1,82,2.] [VS. 2,31.] [7,5.] [20,46.] [KAUŚ. 6. 73. 88.] *mano mādayate yasya śastrābhyāsarasāyanāt*
 [DURGĀD.] in the [ŚKDR.]
-  <sub>DCS 63834 · attested</sub>
+  <sub>attested</sub>
 
 **2b)** — b) ein Leben der Freude führen, selig sein: *ye madhye divaḥ svadhayā mādayante*
 [ṚV. 10,15,14.] [1,108,12.] *svarga u tvamapi mādayāse*
@@ -130,10 +130,10 @@
 [10,95,18.] [1,101,8.] *yadvā prasravaṇe divo mādayāse svarṇare*
 [8,54,2.] [TBR. 3,1,1,15] in [Z. f. d. K. d. M. 7,270.] *yatra pitaro mādayante*
 [BHĀG. P. 5,2,21.]
-  <sub>DCS 63834 · attested</sub>
+  <sub>attested</sub>
 
 **cross-ref)** — Vgl. *manday* .
 
 - **RU:** — Vgl. *manday*.
 - **EN:** — Vgl. *manday*.
-  <sub>DCS 63834 · attested</sub>
+  <sub>attested</sub>

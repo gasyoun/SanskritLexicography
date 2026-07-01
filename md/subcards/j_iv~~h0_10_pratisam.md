@@ -10,4 +10,4 @@
 [R. 5,28,16.]
 - **EN:** *pratisam* 'to revive': *vātātapaklāntamivāpradhṛṣyaṃ varṣeṇa vījaṃ pratisaṃjijīve*
 [R. 5,28,16.]
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>

@@ -7,4 +7,4 @@
 
 - **RU:** 2. *bhuj*¦ (= 1. *bhuj)* s. *tri˚* .
 - **EN:** 2. *bhuj* (= 1. *bhuj)* s. *tri˚* .
-  <sub>DCS 2938 · attested</sub>
+  <sub>attested</sub>

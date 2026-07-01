@@ -19,4 +19,4 @@
 [AIT. BR. 2,5]; vgl.
 [ŚAT. BR. 4,6,7,19.]
 [KĀTY. ŚR. 6,5,10.] [8,8,32.]
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>

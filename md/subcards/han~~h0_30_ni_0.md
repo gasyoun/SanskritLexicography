@@ -67,7 +67,7 @@
 [MBH. 4,1680.] *śirāṃsi viśikhairnyahanam*
 [3,12220.] *nighnandviṣatāṃ manāṃsi*
 [15653.]
-  <sub>DCS 2228 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) anschlagen die Trommel: *koṇairbheryo nijaghnire* (pass.)
 [BHAṬṬ. 14,2.]
@@ -76,7 +76,7 @@
 [BHAṬṬ. 14,2.]
 - **EN:** — 3) to strike, the drum: *koṇairbheryo nijaghnire* (pass.)
 [BHAṬṬ. 14,2.]
-  <sub>DCS 2228 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) fällen, niederschlagen, erschlagen, tödten
 [ṚV. 2,13,8.] *vajreṇa śuṣṇam*
@@ -256,7 +256,7 @@ Schol. *nighnāna* able to strike down
 [BHAṬṬ. 5,81.] *stambo yena nihanyate* is cut down —, mown down
 [AK. 3,3,35.] *daivaṃ nihatya* thus v. a. overcoming
 [Spr. (II) 1255.]
-  <sub>DCS 2228 · attested</sub>
+  <sub>attested</sub>
 
 **5)** — 5) zerstören, zu Grunde richten, in's Verderben bringen, vernichten, vertreiben: *śaravarṣam*
 [MBH. 7,9345.] *astramastreṇa*
@@ -313,4 +313,4 @@ Schol. *nighnāna* able to strike down
 [DAŚAK. 91,15.] *balam*
 [BHAṬṬ. 8,20.] *vayaṃ bhṛśaṃ tatra mahānilāmbubhirhanyamānāḥ* being visited, afflicted
 [BHĀG. P. 10,80,38.]
-  <sub>DCS 2228 · attested</sub>
+  <sub>attested</sub>

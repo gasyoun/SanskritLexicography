@@ -9,4 +9,4 @@
 - **RU:** — *pra* caus. сбрасывать
 [MBH. 7,1571], wo mit der [ed. Bomb.] *prapātito˚* zu lesen ist.
 - **EN:** — *pra* caus. to throw off, cast down [MBH. 7,1571], where with the [ed. Bomb.] *prapātito˚* is to be read.
-  <sub>DCS 189 · attested</sub>
+  <sub>attested</sub>

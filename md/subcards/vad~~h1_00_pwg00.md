@@ -15,7 +15,7 @@
 [Spr. (II) 6882.]
 - **EN:** 2) *guṇairvihīnā bahu vādayanti* to make much noise
 [Spr. (II) 6882.]
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **caus-1)** — *pra*
  1) so v. a. anbieten, ausbieten zum Verkauf
@@ -27,4 +27,4 @@
 - **EN:** — *pra*
  1) so v. a. to offer, to offer for sale
 [Spr. (II) 3969], v. l.
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>

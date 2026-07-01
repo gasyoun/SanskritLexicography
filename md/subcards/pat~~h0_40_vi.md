@@ -13,7 +13,7 @@
 - **EN:** — *vi*
  1) to cut through: *vyadriṇā patatha tveṣamarṇavam*
 [ṚV. 1,168,6.]
-  <sub>DCS 3124 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) abfallen, abfliegen, sich abtrennen: *mūrdhā hāsya vipatet*
 [ŚAT. BR. 3,6,1,23.] [11,4,1,9.] [14,6,7,4.] [9,28.]
@@ -28,7 +28,7 @@
 [ŚAT. BR. 3,6,1,23.] [11,4,1,9.] [14,6,7,4.] [9,28.]
 [CHĀND. UP. 1,10,9. fgg. 11,4. fgg. 5,12,2] (where *vyapatiṣyat* is to be read). — 1. caus. (*patay*) to open up, to open: *vi me karṇā patayataḥ*
 [ṚV. 6,9,6.]
-  <sub>DCS 3124 · attested</sub>
+  <sub>attested</sub>
 
 **caus-1)** — 2) caus. (*pātay*) wegfliegen machen, abschiessen: *vi te madaṃ madāvati śaramiva pātayāmasi*
 [AV. 4,7,4.] *vyapātayaccharān*
@@ -62,4 +62,4 @@
 [ŚAT. BR. 14,4,1,26.] умертвить, убить: *kurupravīrāniṣubhirvyapātayat*
 [MBH. 7,6149.] *tāṃstu daivahatānpūrvaṃ paścāddrauṇirvyapātayat*
 [10,392.] Вероятно, в обоих местах следует читать *nyapā˚*.
-  <sub>DCS 3124 · attested</sub>
+  <sub>attested</sub>

@@ -10,4 +10,4 @@
 [KĀŚ.] к [P. 7,2,77.] [78.] [VOP. 23,55.]
 - **EN:** — *vyati*, ˚*jājñadhvam, ˚jajñidhve, ˚jajñiṣe, ˚jajñiṣva*
 [KĀŚ.] to [P. 7,2,77.] [78.] [VOP. 23,55.]
-  <sub>DCS 9250 · attested</sub>
+  <sub>attested</sub>

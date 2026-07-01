@@ -10,4 +10,4 @@
 [ṚV. 7,70,5.]
 - **EN:** — *pratiprā* dass.: *prati pra yātaṃ varamā janāya*
 [ṚV. 7,70,5.]
-  <sub>DCS 5678 · attested</sub>
+  <sub>attested</sub>

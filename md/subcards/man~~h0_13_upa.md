@@ -7,4 +7,4 @@
 
 - **RU:** — *upa* s. *upamāti* и *upamīmāṃsā* .
 - **EN:** — *upa* s. *upamāti* and *upamīmāṃsā* .
-  <sub>DCS 4704 · attested</sub>
+  <sub>attested</sub>

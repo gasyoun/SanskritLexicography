@@ -19,13 +19,13 @@
 [CHĀND. UP. 4,1,2.] *mā ta 'tipaptan*
 [LĀṬY. 3,10,9.] *ati sūryaṃ paraḥ śakunā iva paptima*
 ?(Schol. to [P. 6,4,99]). [ṚV. 9,107,20.] Vgl. u. *abhi* 2.
-  <sub>DCS 3124 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) versäumen, vernachlässigen, vgl. *atipāta, atipātya* . — caus.
 
 - **RU:** — 2) пропускать, упускать, пренебрегать, vgl. *atipāta, atipātya* . — caus.
 - **EN:** — 2) to miss, to neglect, vgl. *atipāta, atipātya*. — caus.
-  <sub>DCS 3124 · attested</sub>
+  <sub>attested</sub>
 
 **caus_1)** 1) vorbeifliegen lassen: *iṣumanatipātayan*
 [LĀṬY. 3,10,12.]
@@ -34,7 +34,7 @@
 [LĀṬY. 3,10,12.]
 - **EN:** 1) to cause to fly past: *iṣumanatipātayan*
 [LĀṬY. 3,10,12.]
-  <sub>DCS 3124 · attested</sub>
+  <sub>attested</sub>
 
 **caus_2)** — 2) wirkungslos machen: *saṃśamanamevaṃ saṃśodhanamatipātayati*
 [SUŚR. 1,146,12.]
@@ -43,7 +43,7 @@
 [SUŚR. 1,146,12.]
 - **EN:** — 2) to render ineffective: *saṃśamanamevaṃ saṃśodhanamatipātayati*
 [SUŚR. 1,146,12.]
-  <sub>DCS 3124 · attested</sub>
+  <sub>attested</sub>
 
 **caus_3)** — 3) hinraffen: *viṣaṃ muhūrtamapyupekṣitamāturamatipātayati*
 [SUŚR. 2,266,13.]
@@ -52,10 +52,10 @@
 [SUŚR. 2,266,13.]
 - **EN:** — 3) to carry off (by death): *viṣaṃ muhūrtamapyupekṣitamāturamatipātayati*
 [SUŚR. 2,266,13.]
-  <sub>DCS 3124 · attested</sub>
+  <sub>attested</sub>
 
 **intens)** — Vgl. *atipātita* .
 
 - **RU:** — Vgl. *atipātita* .
 - **EN:** — Vgl. *atipātita*.
-  <sub>DCS 3124 · lexicographic</sub>
+  <sub>lexicographic</sub>

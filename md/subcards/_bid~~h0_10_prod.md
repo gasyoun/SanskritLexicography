@@ -13,4 +13,4 @@
 - **EN:** — *prod*, partic. *prodbhinna* having shot forth, having broken out: *˚romodgamā*
 [Spr. 830.] *˚kāntidrava*
 [ŚĀK. CH. 128,18.]
-  <sub>DCS 5 · attested</sub>
+  <sub>attested</sub>

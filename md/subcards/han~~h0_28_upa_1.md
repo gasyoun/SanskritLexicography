@@ -10,10 +10,10 @@
 [Spr. (II) 4310.]
 - **EN:** d) uncontested: *vidhi*
 [Spr. (II) 4310.]
-  <sub>DCS 474 · attested</sub>
+  <sub>attested</sub>
 
 **cross-ref)** — Vgl. *upaghāta* fgg., *upaghna, upahatnu* fgg., *daivopahataka, dhūmopahata, nirupahata* .
 
 - **RU:** — Vgl. *upaghāta* fgg., *upaghna, upahatnu* fgg., *daivopahataka, dhūmopahata, nirupahata* .
 - **EN:** Vgl. *upaghāta* fgg., *upaghna, upahatnu* fgg., *daivopahataka, dhūmopahata, nirupahata*.
-  <sub>DCS 474 · attested</sub>
+  <sub>attested</sub>

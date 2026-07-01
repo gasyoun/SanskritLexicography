@@ -13,4 +13,4 @@
 - **EN:** — intens.: *rakṣā ṇo agne tava rakṣaṇebhī rārakṣāṇaḥ sumakha prīṇānaḥ* that is diligently tended —, watched
 [ṚV. 4,3,14.] diligently tending
 [SĀY.]
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>

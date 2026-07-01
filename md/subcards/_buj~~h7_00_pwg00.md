@@ -19,4 +19,4 @@ Z. 4 исправить на *bhujantā* st. *bhuñjantā* . — intens. *bobhuj
 [PAÑCAV. BR. 1,1,1.] —
 Z. 4 read *bhujantā* st. *bhuñjantā* . — intens. *bobhujīti* to enjoy
 [Spr. (II) 4053.]
-  <sub>DCS 2938 · attested</sub>
+  <sub>attested</sub>

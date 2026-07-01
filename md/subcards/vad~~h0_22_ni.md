@@ -10,4 +10,4 @@
 [MBH. 5,7656. fg.]
 - **EN:** — *ni* caus. med. to cause to resound: *bherīsahasrāṇi śaṅkhānāmayutāni ca*
 [MBH. 5,7656. fg.]
-  <sub>DCS 1 · attested</sub>
+  <sub>attested</sub>

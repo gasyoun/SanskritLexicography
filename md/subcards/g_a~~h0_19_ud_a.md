@@ -10,4 +10,4 @@
 [AV. 14,2,44.]
 - **EN:** — *udā* to come up to, come forth toward (acc.): *udāgāṃ jīva uṣaso vibhātīḥ*
 [AV. 14,2,44.]
-  <sub>DCS 2 · attested</sub>
+  <sub>attested</sub>

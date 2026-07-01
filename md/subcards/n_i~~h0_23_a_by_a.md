@@ -10,4 +10,4 @@
 [AIT. BR. 8,17.]
 - **EN:** — *abhyā* to pour in, mix in: *dadhi madhu sarpirātapavarṣyā āpo 'bhyānīya*
 [AIT. BR. 8,17.]
-  <sub>DCS 4 · attested</sub>
+  <sub>attested</sub>

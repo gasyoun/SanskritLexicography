@@ -127,7 +127,7 @@
 [VARĀH. BṚH. S. 32,21.] *hanyādetānsaṃpatantī śākhā*
 [MBH. 1,1387.] to take place, to happen: *vikārairbahubhiḥ prāptaiḥ saṃpatadbhirmahābalaiḥ*
 [HARIV. 11739.]
-  <sub>DCS 3124 · attested</sub>
+  <sub>attested</sub>
 
 **caus)** — Vgl. *saṃpāta* . — caus. fliegen —, fallen machen, schleudern, hinabwerfen: *śilāṃ saṃpātayāmāsa tasyorasi*
 [R. 6,18,50.] *sa vai pretya narake — girimūrdhnaḥ saṃpātyate*
@@ -139,4 +139,4 @@
 - **EN:** — Vgl. *saṃpāta* . — caus. to cause to fly, to cause to fall, to hurl, to throw down: *śilāṃ saṃpātayāmāsa tasyorasi*
 [R. 6,18,50.] *sa vai pretya narake — girimūrdhnaḥ saṃpātyate*
 [BHĀG. P. 5,26,28.]
-  <sub>DCS 3124 · attested</sub>
+  <sub>attested</sub>

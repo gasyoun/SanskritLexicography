@@ -18,4 +18,4 @@
 [Spr. 938], which passage in our edition stands under 3. *bhuj*
 ([Sp. 302, Z. 9. fgg.]). *pratyavaskandabhugna* bent, disheartened
 [KATHĀS. 71,109.]
-  <sub>DCS 2938 · attested</sub>
+  <sub>attested</sub>

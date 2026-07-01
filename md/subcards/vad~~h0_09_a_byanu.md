@@ -10,4 +10,4 @@
 [ŚAT. BR. 10,4,1,9.]
 - **EN:** — *abhyanu* act. to say with reference to something
 [ŚAT. BR. 10,4,1,9.]
-  <sub>DCS 1 · attested</sub>
+  <sub>attested</sub>

@@ -28,7 +28,7 @@
 [MBH. 1,5985.] [3,2891.]
 [Spr. (II) 2513.] *paśyāmo hi* let us just see
 [KATHĀS. 18,266.]
-  <sub>DCS 23914 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) allerdings, ja wohl, in der That: *yuvaṃ hi parṣatho ati dviṣaḥ*
 [ṚV. 8,26,5.] *tāvabravīdastu me 'trāpītyastu hī3tyabrūtām*
@@ -49,7 +49,7 @@
 [ŚAT. BR. 3,8,3,4.] [14,5,1,14.]
 [P. 8,2,93.] *devīṃ vācamupāsate hi bahavaḥ sāraṃ tu* u. s. w. indeed — but
 [Spr. (II) 2954.]
-  <sub>DCS 23914 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) häufig blosser Versfüller,
 z. B. [MBH. 5,6023.] [RAGH. 1,69.] insbesondere zwischen Vocalen zur Entfernung eines Hiatus
@@ -97,4 +97,4 @@ z. B. [MBH. 5,6023.] [RAGH. 1,69.] especially between vowels to remove a hiatus
 [4577.] *guhyādguhyatarastvaṃ hi hyevamāha pitāmahaḥ*
 [R. 7,37,5,47.] *svalpaṃ hi nahi naḥ sukham*
 [73,14.]
-  <sub>DCS 23914 · attested</sub>
+  <sub>attested</sub>

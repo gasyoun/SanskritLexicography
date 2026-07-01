@@ -13,7 +13,7 @@
 - **EN:** — *pra*
  1) to begin to eat: *prabhukta odanaḥ*
 [P. 1,2,21], Sch.
-  <sub>DCS 9 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) dienstfertig sein: *ā ghā yoṣeva sūnaryuṣā yāti prabhuñjatī*
 [ṚV. 1,48,5.]
@@ -22,4 +22,4 @@
 [ṚV. 1,48,5.]
 - **EN:** — 2) to be ready to serve, to be serviceable: *ā ghā yoṣeva sūnaryuṣā yāti prabhuñjatī*
 [ṚV. 1,48,5.]
-  <sub>DCS 9 · attested</sub>
+  <sub>attested</sub>

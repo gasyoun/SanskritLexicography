@@ -28,10 +28,10 @@
 [3,10,8,2.] [TS. 2,3,12,1.] *nirṛtim*
 [5,2,4,3.] [6,3,1.] *enaḥ*
 [6,6,3,1.] [ŚAT. BR. 12,9,2,4.] [13,3,6,5.] [KĀṬH. 21,6. 36,6.]
-  <sub>DCS 6777 · attested</sub>
+  <sub>attested</sub>
 
 **ava-yaj-2)** — Vgl. *avayajana, avayāj, aveṣṭi* .
 
 - **RU:** — Vgl. *avayajana, avayāj, aveṣṭi* .
 - **EN:** — Vgl. *avayajana, avayāj, aveṣṭi* .
-  <sub>DCS 6777 · lexicographic</sub>
+  <sub>lexicographic</sub>

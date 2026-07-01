@@ -25,4 +25,4 @@
 [KATHĀS. 6,60.] *niragānnaiva so 'ntaḥpurānnṛpaḥ . niragādarivargasya hṛdayāttu rujājvaraḥ ..*
 [18,83.] *niragācca mukhāttasya jvālā*
 [154.] [244.] [396.] [BHĀG. P. 3,13,18.] [4,13,18.] [5,18,39.] [BHAṬṬ. 6,118.]
-  <sub>DCS 31 · attested</sub>
+  <sub>attested</sub>

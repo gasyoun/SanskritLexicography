@@ -13,4 +13,4 @@
 [5,2,21.] *naivātmalābhādadhimanyate param*
 [18,20.]
 - **EN:** — *adhi* to hold in high regard, to esteem highly: *kṛṣṇāṅghrisevāmadhimanyamānaḥ* [BHĀG. P. 1,19,5.] *apsarasam* [5,2,21.] *naivātmalābhādadhimanyate param* [18,20.]
-  <sub>DCS 4704 · attested</sub>
+  <sub>attested</sub>

@@ -10,4 +10,4 @@
 [MBH. 3,16148.]
 - **EN:** — *samā* act. to make a pronouncement
 [MBH. 3,16148.]
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>

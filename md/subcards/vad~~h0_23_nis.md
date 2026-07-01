@@ -13,7 +13,7 @@
 - **EN:** — *nis*
  1) to talk away, refute by words: *āyurmā nirvādiṣṭam*
 [VS. 5,17.]
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) hinausreden, hinausschallen lassen: *vācaṃ viṣasya dūṣaṇīṃ tāmito niravādiṣam*
 [AV. 4,6,2.]
@@ -22,7 +22,7 @@
 [AV. 4,6,2.]
 - **EN:** — 2) to speak out, to cause to resound outward: *vācaṃ viṣasya dūṣaṇīṃ tāmito niravādiṣam*
 [AV. 4,6,2.]
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) seinen Unmuth gegen Jmd (acc.) auslassen, Jmd schmähen
 [MBH. 4,122.] *nirvādairnirvadedenam*
@@ -34,10 +34,10 @@
 - **EN:** — 3) to vent one's displeasure upon someone (acc.), to revile someone
 [MBH. 4,122.] *nirvādairnirvadedenam*
 [5,4618.] med. [12,12361.]
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **caus)** — Vgl. *nirvāda* .
 
 - **RU:** — Vgl. *nirvāda* .
 - **EN:** — Vgl. *nirvāda*.
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>

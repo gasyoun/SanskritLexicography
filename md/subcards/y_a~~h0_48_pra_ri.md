@@ -14,7 +14,7 @@
 [BHAṬṬ. 9,100.]
 - **EN:** — *praṇi*
 [P. 8,4,17], Sch.
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>
 
 **2)** [VOP. 8,22.] [9,16.] gerathen in: *ruṣam*
 [BHAṬṬ. 9,100.]

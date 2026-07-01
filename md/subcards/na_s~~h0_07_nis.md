@@ -22,7 +22,7 @@
 - **RU:** — *nis*, partic. *nirnaṣṭa* (*na* остаётся без изменений, поскольку *śa* перешло в *ṣa*) пропавший, исчезнувший: *˚nāmakṛtya (mahīpāla)*
 [RĀJA-TAR. 1,83.] *˚kaṇṭakakula*
 [6,367.]
-  <sub>DCS 1422 · attested</sub>
+  <sub>attested</sub>
 
 **nis-naś-2)** — caus. austreiben, vertreiben: *niṣkravyādamanīnaśam*
 [ṚV. 10,162,2.]
@@ -31,4 +31,4 @@
 - **RU:** — caus. выгонять, изгонять: *niṣkravyādamanīnaśam*
 [ṚV. 10,162,2.]
 [AV. 1,23,2.] [3.]
-  <sub>DCS 1422 · attested</sub>
+  <sub>attested</sub>

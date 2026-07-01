@@ -37,4 +37,4 @@
 [MBH. 3,884.] to set in, arrive; to meet, befall someone: *bhayaṃ cāgānmahānmama*
 [ARJ. 10,40.] *vyasanaṃ va āgāt*
 [MBH. 3,1355.]
-  <sub>DCS 282 · attested</sub>
+  <sub>attested</sub>

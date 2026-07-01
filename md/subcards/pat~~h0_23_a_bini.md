@@ -13,4 +13,4 @@
 - **EN:** — *abhini* caus. to throw down, hurl down: *ketavo 'bhinipātyante*
 [MBH. 8,3040.] *cakarṣābhinipātyārtāṃ gale gṛhya*
 [R. GORR. 2,77,10.]
-  <sub>DCS 4 · attested</sub>
+  <sub>attested</sub>

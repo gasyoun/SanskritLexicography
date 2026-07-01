@@ -16,7 +16,7 @@ Z. 9 füge *bahumānya*
 Z. 9 add *bahumānya*
 [R. 7,6,13] . — desid.
 [BHĀG. P. 10,81,24.]
-  <sub>DCS 4704 · attested</sub>
+  <sub>attested</sub>
 
 **1)** — *ava*
  1) *avamanyanti*
@@ -29,7 +29,7 @@ Z. 9 add *bahumānya*
 
 - **RU:** — *ā* vgl. 2. *āmana* .
 - **EN:** — *ā* vgl. 2. *āmana* .
-  <sub>DCS 4704 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — *upa* halten für: *vaco vaḥ samavetārthaṃ tātaitadupamanmahe*
 [BHĀG. P. 10,85,22]
@@ -38,7 +38,7 @@ Z. 9 add *bahumānya*
 [BHĀG. P. 10,85,22]
 - **EN:** — *upa* to hold to be, to regard as: *vaco vaḥ samavetārthaṃ tātaitadupamanmahe*
 [BHĀG. P. 10,85,22]
-  <sub>DCS 4704 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — *ni* dass.: *(acyutam) preṣṭhaṃ nyamaṃsvaṃ svam*
 [BHĀG. P. 10,61,2.]
@@ -47,7 +47,7 @@ Z. 9 add *bahumānya*
 [BHĀG. P. 10,61,2.]
 - **EN:** — *ni* dass.: *(acyutam) preṣṭhaṃ nyamaṃsvaṃ svam*
 [BHĀG. P. 10,61,2.]
-  <sub>DCS 4704 · attested</sub>
+  <sub>attested</sub>
 
 **corr1)** — *pra*
 Z. 2 lies 1, 62, 1 st. 1, 72, 1.
@@ -56,7 +56,7 @@ Z. 2 lies 1, 62, 1 st. 1, 72, 1.
 Z. 2 lies 1, 62, 1 st. 1, 72, 1.
 - **EN:** — *pra*
 Z. 2 read 1, 62, 1 st. 1, 72, 1.
-  <sub>DCS 4704 · attested</sub>
+  <sub>attested</sub>
 
 **corr2)** — *abhipra*
 Z. 1 lies *tvābhipramanvate* .
@@ -65,16 +65,16 @@ Z. 1 lies *tvābhipramanvate* .
 Z. 1 lies *tvābhipramanvate* .
 - **EN:** — *abhipra*
 Z. 1 read *tvābhipramanvate* .
-  <sub>DCS 4704 · attested</sub>
+  <sub>attested</sub>
 
 **Nachtrag-block-1-head)** — *ava*
 
 - **RU:** — *ava*
-  <sub>DCS 4704 · attested</sub>
+  <sub>attested</sub>
 
 **Nachtrag-1)** 1) *avamanyanti*
 [BHĀG. P. 11,5,9.]
 
 - **RU:** 1) *avamanyanti*
 [BHĀG. P. 11,5,9.]
-  <sub>DCS 4704 · attested</sub>
+  <sub>attested</sub>

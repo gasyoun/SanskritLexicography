@@ -71,4 +71,4 @@ Sch.). singender Vortrag, ein Fehler der Recitation,
 [ṚT. 3,13.]
 [CAURAP. 37] (vgl. however Sch.). singing delivery, a fault of recitation,
 [ŚIKṢĀ 35.]
-  <sub>DCS 83 · attested</sub>
+  <sub>attested</sub>

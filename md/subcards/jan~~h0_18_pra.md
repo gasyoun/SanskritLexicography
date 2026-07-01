@@ -70,7 +70,7 @@
 [MBH. 1,4869.] *lobhātkāmaḥ prajāyate*
 [HIT. I,24.] *nirghātāḥ — vivarebhyaḥ prajajñire*
 [BHĀG. P. 3,17,8.]
-  <sub>DCS 9250 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) wiedergeboren werden: *tailapāyī prajāyate*
 [MBH. 13,5509.]
@@ -79,7 +79,7 @@
 [MBH. 13,5509.]
 - **EN:** — 2) to be reborn: *tailapāyī prajāyate*
 [MBH. 13,5509.]
-  <sub>DCS 9250 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) sich fortpflanzen durch, in (instr.); zeugen, gebären; mit dem acc.: *pra jāyemahi prajābhiḥ*
 [ṚV. 2,33,1.] *pra jāyante vīrudhaśca prajābhiḥ*
@@ -184,7 +184,7 @@
 [SUŚR. 1,370,17.] *dāsīnāmaprajātānām*
 [MBH. 5,3047.] *ṛtaprajātā* she who is delivered at the right time, giving birth at the right time
 [AV. 1,11,1.]
-  <sub>DCS 9250 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — Vgl. *aprajajñi, ṛtaprajāta, praja* u. s. w. — caus. *prajanayāmakaḥ*
 [P. 3,1,42.] Jmd (acc.) sich fortpflanzen lassen durch (instr.); fortpflanzen, entstehen lassen: *pra no janaya gobhiraśvaiḥ*
@@ -217,4 +217,4 @@
 [ŚAT. BR. 7,4,1,14.] — desid. of the caus. wishing to bring to procreation, to bring to life: *yathānyasyāṃ yonau retaḥ siktaṃ tadanyasyāṃ prajijanayiṣet* as if he wished to let the seed, poured into one womb, develop into fruit in another
 [ŚAT. BR. 12,5,1,13.] *prajijanayiṣitavya*
 [7,3,1,12.]
-  <sub>DCS 9250 · attested</sub>
+  <sub>attested</sub>

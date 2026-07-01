@@ -14,9 +14,9 @@
 [ṚV. 1,33,2.] [8,35,7.] [9.] [85,11.] [10,123,6.] *tatpādayorupāpatan*
 [BHĀG. P. 7,2,31.]
 — Vgl. *upapāta, upapātin* .
-  <sub>DCS 1 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — Vgl. *upapāta, upapātin* .
 
 - **RU:** — Vgl. *upapāta, upapātin* .
-  <sub>DCS 1 · attested</sub>
+  <sub>attested</sub>

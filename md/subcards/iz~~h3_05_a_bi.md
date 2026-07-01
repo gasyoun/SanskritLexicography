@@ -34,4 +34,4 @@
 [PAÑCAT. I,75.] [SĀH. D. 55,19.] superl. *abhīṣṭatama* exceedingly dear: *ahamadya tavābhīṣṭatamānmatsyānsamānīya pacantī tiṣṭhāmi*
 [PAÑCAT. 262,18.] _m._ the most beloved
 [SĀH. D. 55,5.]
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>

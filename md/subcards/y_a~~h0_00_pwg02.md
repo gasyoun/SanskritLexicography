@@ -40,7 +40,7 @@
 [KATHĀS. 52,232.] *kva*
 [MBH. 3,2240.] [2530.] *priyā nānyā tvatto me 'stīti yaddhi mām . tvamavocaḥ kva tadyātam* so v. a. what has become of it? how does it stand with it?
 [HARIV. 7121.]
-  <sub>DCS 5678 · attested</sub>
+  <sub>attested</sub>
 
 **6c)** — c) im dat.: *yayatuḥ svaniveśāyobhe bale*
 [KATHĀS. 47,92.] *na devāya na viprāya na bandhubhyo na cātmane . kṛpaṇasya dhanaṃ yāti* so v. a. zu Gute kommen
@@ -73,7 +73,7 @@ to the ruin of
 [R. 3,56,23.] *kuśedhmāharaṇāya*
 [RAGH. 14,70.] *tapase* in order to mortify oneself
 [R. 1,46,7.]
-  <sub>DCS 5678 · attested</sub>
+  <sub>attested</sub>
 
 **6d)** — d) im acc. mit *pratiḥ doleva muhurāyāti yāti caiva sabhāṃ prati*
 [MBH. 3,2359.] *ayaṃ sa ratha āyāti yo 'yāsītpāṇḍavānprati*
@@ -88,7 +88,7 @@ to the ruin of
 [MBH. 3,2359.] *ayaṃ sa ratha āyāti yo 'yāsītpāṇḍavānprati*
 [5,1803.] [KATHĀS. 24,252.] *tadā yāyādripuṃ prati*
 [M. 7,171.]
-  <sub>DCS 5678 · attested</sub>
+  <sub>attested</sub>
 
 **6e)** — e) im infin.: *kṛṣṇaṃ draṣṭum*
 [VOP. 26,200.] *vigāhituṃ yāmunamamvu*
@@ -109,7 +109,7 @@ to the ruin of
 [Spr. 4406.]
 [RĀJA-TAR. 5,48.] [6,186.]
 [BHAṬṬ. 7,53.]
-  <sub>DCS 5678 · attested</sub>
+  <sub>attested</sub>
 
 **7)** — 7) an eine Beschäftigung gehen, in einen Zustand, eine Lage, ein Verhältniss kommen, — gerathen; theilhaft werden, erlangen; mit acc.: *sargavyāpāram*
 [KUMĀRAS. 2,54.] *mṛgayām*
@@ -328,4 +328,4 @@ to the ruin of
 [BHĀG. P. 1,12,28.] *yo 'śvavidyāmayānnalāt* to receive —, to learn from
 [9,9,17.] *utsavādutsavam* to experience one feast after another
 [KATHĀS. 39,218.]
-  <sub>DCS 5678 · attested</sub>
+  <sub>attested</sub>

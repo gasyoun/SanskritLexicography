@@ -10,4 +10,4 @@
 [Spr. (II) 4753.]
 - **EN:** *samupa*, partic. *˚hata* damaged, clouded: *˚mati*
 [Spr. (II) 4753.]
-  <sub>DCS 1 · attested</sub>
+  <sub>attested</sub>

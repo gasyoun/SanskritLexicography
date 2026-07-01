@@ -24,11 +24,11 @@
 [MBH. 6,2524.]
 [HARIV. 10748.] pass. to split, to open (intr.): *karṇāvasya vinirbhinnau*
 [BHĀG. P. 3,6,17.]
-  <sub>DCS 54 · attested</sub>
+  <sub>attested</sub>
 
 **2)** [HARIV. 10748.] pass. sich spalten, sich öffnen: *karṇāvasya vinirbhinnau*
 [BHĀG. P. 3,6,17.]
 
 - **RU:** [HARIV. 10748.] pass. «раскалываться, раскрываться»: *karṇāvasya vinirbhinnau*
 [BHĀG. P. 3,6,17.]
-  <sub>DCS 54 · attested</sub>
+  <sub>attested</sub>

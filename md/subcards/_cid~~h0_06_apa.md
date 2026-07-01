@@ -22,10 +22,10 @@ Schol. zu [KĀTY. ŚR. 3,7,17.] [8,2.] *etasyai vā eṣāpacchidyaiṣaiva puna
 Schol. to [KĀTY. ŚR. 3,7,17.] [8,2.] *etasyai vā eṣāpacchidyaiṣaiva punarbhavani*
 [ŚAT. BR. 5,3,4,9.] *ājarasaṃ hāsmai vājinaṃ nāpacchidyate* is not taken from him
 [AIT. BR. 1,13.]
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **caus)** — Vgl. *apaccheda* .
 
 - **RU:** — Vgl. *apaccheda* .
 - **EN:** — Vgl. *apaccheda* .
-  <sub>DCS 2209 · lexicographic</sub>
+  <sub>lexicographic</sub>

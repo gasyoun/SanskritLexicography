@@ -10,4 +10,4 @@
 [TS. 2,5,4,4.]
 - **EN:** — *ati* to pass over with the sacrifice, to omit in the sacrifice: *yaḥ svāṃ devatāmatiyajate*
 [TS. 2,5,4,4.]
-  <sub>DCS 6777 · attested</sub>
+  <sub>attested</sub>

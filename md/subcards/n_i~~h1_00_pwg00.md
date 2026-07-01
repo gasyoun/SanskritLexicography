@@ -19,4 +19,4 @@
 [6,4,77] (as an independent word).
 [82.] [7,3,116.] [VOP. 3,59.] [60.]
 — Vgl. *agraṇī, agre˚, ṛtanī, gāthā˚, grāmaṇī, padanī, pṛtanā˚, yajña˚, vaśa˚, senā˚* .
-  <sub>DCS 2376 · attested</sub>
+  <sub>attested</sub>

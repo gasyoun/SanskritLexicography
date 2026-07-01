@@ -27,7 +27,7 @@
 [17,45.] *deśamanyaṃ durādharṣamanvaiṣan*
 [R. 4,48,7.] *anveṣamāṇa*
 [MBH. 1,5253.] [6585.] [3,2379.] [2452.] [12664.]
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>
 
 **2)** [R. 3,74,3.] [4,48,4.] hinterhergehen, verfolgen: *kevalaṃ parapuruṣānanveṣamāṇā paribhramati*
 [PAÑCAT. 225,24.] *kāvyasyānveṣate gatim*
@@ -39,14 +39,14 @@
 - **EN:** [R. 3,74,3.] [4,48,4.] to go after, to pursue: *kevalaṃ parapuruṣānanveṣamāṇā paribhramati*
 [PAÑCAT. 225,24.] *kāvyasyānveṣate gatim*
 [R. 1,3,2.]
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>
 
 **intro)** 4. *iṣ*¦, *eṣati* und *eṣate* nur in Verbindung mit *anu* zu belegen.
 
 - **RU:** 4. *iṣ*¦, *eṣati* и *eṣate* засвидетельствованы только в сочетании с *anu*.
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>
 
 **sense_a)** — Vgl. *eṣ* .
 
 - **RU:** — Vgl. *eṣ* .
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>

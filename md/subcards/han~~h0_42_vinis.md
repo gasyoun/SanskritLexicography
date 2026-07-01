@@ -10,4 +10,4 @@
 [AV. 7,52,2.]
 - **EN:** — *vinis*, partic. *vinirhata* "destroyed, annihilated"
 [AV. 7,52,2.]
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>

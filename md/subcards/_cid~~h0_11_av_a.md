@@ -10,4 +10,4 @@
 [VIKR. 15.]
 - **EN:** — *avā* to wrest away: *daityahastādavācchidya*
 [VIKR. 15.]
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>

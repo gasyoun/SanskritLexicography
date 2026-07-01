@@ -23,9 +23,9 @@
 [P. 1,3,47.]
 [VOP. 23,39.] *kṣetre*
 [P.], Sch. [VOP.]
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **cross-ref)** — Vgl. *anudita*, 1. *udya, yathodita, vādya* .
 
 - **RU:** — Vgl. *anudita*, 1. *udya, yathodita, vādya* .
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>

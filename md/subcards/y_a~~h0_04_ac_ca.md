@@ -16,4 +16,4 @@
 [ṚV. 1,31,17.] [44,4.] *mama brahmendra yāhyacchā*
 [2,18,7.] [3,33,2.] [3.] [6,16,44.] *anasāccha yāti mahimānamevāsyāccha yāti*
 [TS. 6,1,9,3.]
-  <sub>DCS 5678 · attested</sub>
+  <sub>attested</sub>

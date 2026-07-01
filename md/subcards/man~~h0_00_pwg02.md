@@ -16,7 +16,7 @@
 [YĀJÑ. 2,86.] *sthāpyo nṛpamate pade*
 [R. 2,52,31.]
 [KĀM. NĪTIS. 4,67.] [Spr. 1984.]
-  <sub>DCS 4704 · attested</sub>
+  <sub>attested</sub>
 
 **10c)** — c) geachtet, geehrt, gern gesehen von (gen.)
 [P. 3,2,188.] *rājñām*
@@ -37,7 +37,7 @@ Schol. [2,2,12], [Sch. 3,67], Sch. [RAGH. 2,16.] [8,8.] [KĀM. NĪTIS. 14,39.] [
 [Spr. 1012.] = *saṃmata*
 [MED. t. 43.] = *saṃmita* (probably *saṃmata)* and *arcita*
 [H. an. 2,185.]
-  <sub>DCS 4704 · attested</sub>
+  <sub>attested</sub>
 
 **10d)** — d) gewollt, beabsichtigt: *āsitaṃ bhāṣitaṃ caiva mataṃ yaccāpyanuṣṭhitam*
 [R. 1,3,4.] *dīyatāmasya yanmatam*
@@ -49,7 +49,7 @@ Schol. [2,2,12], [Sch. 3,67], Sch. [RAGH. 2,16.] [8,8.] [KĀM. NĪTIS. 14,39.] [
 - **EN:** — d) wished, intended: *āsitaṃ bhāṣitaṃ caiva mataṃ yaccāpyanuṣṭhitam*
 [R. 1,3,4.] *dīyatāmasya yanmatam*
 [65,16.]
-  <sub>DCS 4704 · attested</sub>
+  <sub>attested</sub>
 
 **10e)** — e) begriffen, verstanden, erkannt; = *jñāta*
 [MED.] [KENOP. 12.] Vgl. *matākṣa* .
@@ -58,7 +58,7 @@ Schol. [2,2,12], [Sch. 3,67], Sch. [RAGH. 2,16.] [8,8.] [KĀM. NĪTIS. 14,39.] [
 [MED.] [KENOP. 12.] Vgl. *matākṣa* .
 - **EN:** — e) grasped, understood, recognized; = *jñāta*
 [MED.] [KENOP. 12.] Vgl. *matākṣa*.
-  <sub>DCS 4704 · attested</sub>
+  <sub>attested</sub>
 
 **10f)** — f) _n._
 - **EN:** — f) _n._
@@ -126,13 +126,13 @@ Schol. [2,2,12], [Sch. 3,67], Sch. [RAGH. 2,16.] [8,8.] [KĀM. NĪTIS. 14,39.] [
 [AK. 3,2,57.]
 [H. 1496.] But what does this form
 [PAÑCAR. 3,12,10] mean?
-  <sub>DCS 4704 · attested</sub>
+  <sub>attested</sub>
 
 **closing)** — Vgl. *mnā* .
 
 - **RU:** — Vgl. *mnā* .
 - **EN:** — Vgl. *mnā*.
-  <sub>DCS 4704 · attested</sub>
+  <sub>attested</sub>
 
 **f)** — f) _n._
  α) Meinung, Ansicht
@@ -183,4 +183,4 @@ Schol. [2,2,12], [Sch. 3,67], Sch. [RAGH. 2,16.] [8,8.] [KĀM. NĪTIS. 14,39.] [
 — Vgl. *amata (amata*
 [KĀM. NĪTIS. 13,67] fehlerhaft für *abhṛta*; vgl.
 [75]).
-  <sub>DCS 4704 · attested</sub>
+  <sub>attested</sub>

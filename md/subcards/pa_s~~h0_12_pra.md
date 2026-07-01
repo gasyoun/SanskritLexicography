@@ -90,7 +90,7 @@
 [MBH. 13,31.] *nānyāṃ gatiṃ prapaśyāmi*
 [R. GORR. 1,60,27] ([58,24] [SCHL.]). *nāhaṃ bhayaṃ prapaśyāmi kutaścitte*
 [2,76,23.] [3,43,39.] *evaṃ tvahaṃ prapaśyāmi na tvaṃ rāmasya rākṣasa . samarthaḥ saṃyuge sthātuṃ muhūrtamapi sāyudhaḥ ..*
-  <sub>DCS 195 · attested</sub>
+  <sub>attested</sub>
 
 **2)** [27,18.] sehen, schauen, gewahr werden, erkennen: *uta yadyandho bhavati praiva paśyati*
 [TS. 2,2,4,4.] *cakṣurbhyāṃ na prapaśyāmi*

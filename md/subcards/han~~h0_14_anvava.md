@@ -10,4 +10,4 @@
 [ŚAT. BR. 3,3,4,16.]
 - **EN:** *anvava* "to hit, strike"
 [ŚAT. BR. 3,3,4,16.]
-  <sub>DCS 1 · attested</sub>
+  <sub>attested</sub>

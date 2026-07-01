@@ -10,4 +10,4 @@
 [ṚV. 1,5,1.] [37,1.] [8,15,1.] [9,13,2.]
 - **EN:** — *abhipra* to begin to sing in praise of someone (acc.): *indramabhi pragāyata*
 [ṚV. 1,5,1.] [37,1.] [8,15,1.] [9,13,2.]
-  <sub>DCS 2 · attested</sub>
+  <sub>attested</sub>

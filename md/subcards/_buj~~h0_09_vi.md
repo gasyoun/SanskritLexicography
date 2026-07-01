@@ -10,4 +10,4 @@
 [VYUTP. 101.]
 - **EN:** — *vi*, partic. *vibhugna* bent around
 [VYUTP. 101.]
-  <sub>DCS 2938 · attested</sub>
+  <sub>attested</sub>

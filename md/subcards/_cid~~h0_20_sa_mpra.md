@@ -10,4 +10,4 @@
 [HARIV. 13613.]
 - **EN:** — *saṃpra* to cut up, hew asunder, split: *tataḥ śastrāṇi śūlāni niśitāni sahasraśaḥ . astravīryeṇa mahatā ditijaḥ saṃpracicchide ..*
 [HARIV. 13613.]
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>

@@ -36,7 +36,7 @@ Schol. — desid. med. [BHĀG. P. 11,7,70.]
 [Spr. 4893.] [5346] ([MBH. 5,4538]).
 - **EN:** — *abhyud* read "to seek to keep oneself alive, to nourish oneself" and vgl.
 [Spr. 4893.] [5346] ([MBH. 5,4538]).
-  <sub>DCS 2223 · attested</sub>
+  <sub>attested</sub>
 
 **caus.2c)** — *pratyud*
 [KATHĀS. 78,102.] *˚jīvita*
@@ -48,7 +48,7 @@ Schol. — desid. med. [BHĀG. P. 11,7,70.]
 - **EN:** — *pratyud*
 [KATHĀS. 78,102.] *˚jīvita*
 [58,33.]
-  <sub>DCS 2223 · attested</sub>
+  <sub>attested</sub>
 
 **des)** — *upa*
  2)
@@ -68,13 +68,13 @@ Jmd ausbeuten
 
 to exploit someone
 [KATHĀS. 61,268.]
-  <sub>DCS 2223 · attested</sub>
+  <sub>attested</sub>
 
 **des2)** — *pra* vgl. *prajīvana, prajīvin; — prati* vgl. *pratijīvana* .
 
 - **RU:** — *pra* vgl. *prajīvana, prajīvin; — prati* vgl. *pratijīvana* .
 - **EN:** — *pra* vgl. *prajīvana, prajīvin; — prati* vgl. *pratijīvana* .
-  <sub>DCS 2223 · attested</sub>
+  <sub>attested</sub>
 
 **des3)** — *sam* caus.
 [Spr. 4992.]
@@ -86,7 +86,7 @@ to exploit someone
 - **EN:** — *sam* caus.
 [Spr. 4992.]
 [BHĀG. P. 10,15,50.]
-  <sub>DCS 2223 · attested</sub>
+  <sub>attested</sub>
 
 **1 (T42 block))** *jīv*¦
  1) *jīva jīva* mögest du lange leben
@@ -101,7 +101,7 @@ to exploit someone
  1) поддерживать жизнь кого-л.
 [KATHĀS. 65,29.] *jīva* звать
 [124,113.]
-  <sub>DCS 2223 · attested</sub>
+  <sub>attested</sub>
 
 **2 (T44 block))** — 2) *jīvāpita*
 [R. 7,76,27.] *pugārṣaḥ* (!)
@@ -114,4 +114,4 @@ Schol. — desid. med. [BHĀG. P. 11,7,70.]
 Schol. — desid. med. [BHĀG. P. 11,7,70.]
 — *ā*, *ājīvyaikataraṃ bhāvaṃ yastvanyamupajīvati*
 [BHĀG. P. 10,24,19.]
-  <sub>DCS 2223 · attested</sub>
+  <sub>attested</sub>

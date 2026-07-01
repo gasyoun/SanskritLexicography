@@ -10,4 +10,4 @@
 [MBH. 8,4074.]
 - **EN:** — *saṃpra*, partic. *˚hita* hurled: *śarāḥ*
 [MBH. 8,4074.]
-  <sub>DCS 23914 · attested</sub>
+  <sub>attested</sub>

@@ -13,4 +13,4 @@
 - **EN:** — *vyā* act. med. to pour in while distributing
 [ŚAT. BR. 2,5,2,41.] [5,3,5,19.]
 [KĀTY. ŚR. 9,3,13.]
-  <sub>DCS 2376 · attested</sub>
+  <sub>attested</sub>

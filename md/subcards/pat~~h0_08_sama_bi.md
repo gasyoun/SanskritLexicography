@@ -10,4 +10,4 @@
 [R. 5,41,34.]
 - **EN:** — *samabhi* to rush upon (acc.)
 [R. 5,41,34.]
-  <sub>DCS 3124 · attested</sub>
+  <sub>attested</sub>

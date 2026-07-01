@@ -13,7 +13,7 @@
 - **EN:** — *pari*
  1) to obtain by sacrifice, to gain, to procure: *yathā pūrvebhyaḥ paryayā vājamindo*
 [ṚV. 9,82,5.]
-  <sub>DCS 6777 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) im Ritual vor und nach Jmd opfern, — verehren, eine Opferhandlung durch andere gleichsam unterstützen: *dhātārameva sarvāsāṃ purastātpurastādājyena pariyajet*
 [AIT. BR. 3,47.] *yadvapāṃ mahimnobhayataḥ pariyajati*
@@ -37,4 +37,4 @@
 [KĀTY. ŚR. 10,6,8.]
 [ĀŚV. ŚR. 5,19,2.]
 [LĀṬY. 8,11,12. 9,4,1. 2.]
-  <sub>DCS 6777 · attested</sub>
+  <sub>attested</sub>

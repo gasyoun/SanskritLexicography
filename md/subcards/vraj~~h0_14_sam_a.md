@@ -10,4 +10,4 @@
 [MBH. 6,5449.]
 - **EN:** — *samā* to return: *yaḥ saṃprāpya raṇe bhīṣmaṃ jīvamānaḥ samāvrajet*
 [MBH. 6,5449.]
-  <sub>DCS 1202 · attested</sub>
+  <sub>attested</sub>

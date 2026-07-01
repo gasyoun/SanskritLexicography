@@ -19,4 +19,4 @@
 [ŚAT. BR. 14,5,4,12.] [7,3,13.] *prajāśca tasya kṣīyante tataḥ so 'nuvinaśyati*
 [MBH. 12,3400.] *kāmānusārī puruṣaḥ kāmānanuvinaśyati*
 [6503.]
-  <sub>DCS 4 · attested</sub>
+  <sub>attested</sub>

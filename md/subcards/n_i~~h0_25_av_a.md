@@ -13,4 +13,4 @@
 - **EN:** — *avā*, *avānītā*
 [ŚĀK. CH. 125,5] probably erroneously for *apanītā*; the other recension
 ([83,9]) has st. whose *hṛtā* .
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>

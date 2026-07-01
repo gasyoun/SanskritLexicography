@@ -13,7 +13,7 @@ Z. 2 — следует читать [M.] st. [MBH.]
 - **EN:** 1. *chid*¦ with *ud*
  1)
 Z. 2 read [M.] st. [MBH.]
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — *pra* caus. vom intens. *pracecchidayya*
 [PAT. a. a. O. 6 (4) 14,a.]
@@ -22,4 +22,4 @@ Z. 2 read [M.] st. [MBH.]
 [PAT. a. a. O. 6 (4) 14,a.]
 - **EN:** — *pra* caus. from intens. *pracecchidayya*
 [PAT. a. a. O. 6 (4) 14,a.]
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>

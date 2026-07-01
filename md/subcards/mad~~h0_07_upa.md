@@ -10,10 +10,10 @@
 [ŚAT. BR. 1,4,2,1.]
 - **EN:** — *upa* to encourage, to inspire with courage: *tamupamadanti vīryavānvai tvamasyalaṃ vai tvametasmā asīti*
 [ŚAT. BR. 1,4,2,1.]
-  <sub>DCS 2 · attested</sub>
+  <sub>attested</sub>
 
 **cross-ref)** — Vgl. *upaṣāda* .
 
 - **RU:** — Vgl. *upaṣāda*.
 - **EN:** — Vgl. *upaṣāda*.
-  <sub>DCS 2 · attested</sub>
+  <sub>attested</sub>

@@ -10,4 +10,4 @@
 [R. 6,86,25.]
 - **EN:** — *samā* "to tie something onto oneself": *kavacaṃ ca samābadhya*
 [R. 6,86,25.]
-  <sub>DCS 2655 · attested</sub>
+  <sub>attested</sub>

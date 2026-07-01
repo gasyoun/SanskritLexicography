@@ -16,4 +16,4 @@
 [MBH. 1,1338.] [7,3974.] [8,3078.] [9,1547.]
 [HARIV. 10509.]
 [MĀRK. P. 105,22.]
-  <sub>DCS 41 · attested</sub>
+  <sub>attested</sub>

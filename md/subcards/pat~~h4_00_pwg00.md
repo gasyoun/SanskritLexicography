@@ -7,4 +7,4 @@
 
 - **RU:** **1.** *pat*¦ [vgl. ] с *ā* Z. 12 [RĀJA-TAR. 3,202] слово имеет Bed. 3; vgl. [Spr. 3490.]
 - **EN:** **1.** *pat*¦ [vgl. ] with *ā* Z. 12 [RĀJA-TAR. 3,202] the word has the Bed. 3; vgl. [Spr. 3490.]
-  <sub>DCS 3124 · attested</sub>
+  <sub>attested</sub>

@@ -31,7 +31,7 @@
 [P. 6,4,82]), *nīnima*
 [TS. 3,2,8,3], where however the metre requires *ninīma*; ved. *ninīyāt, ninīthas*; ep. *nayāmāsa; ninye; neṣyāmi*; ep. also *nayiṣyāmi, ˚ṣye; netā*, ep. also *nayitā; netum*, ep. (also
 [AIT. BR.]) also *nayitum; nītvā, ˚nīya*; pass. *nīyate, nīta*.
-  <sub>DCS 2376 · attested</sub>
+  <sub>attested</sub>
 
 **1_lead_guide)** 1) leiten, führen, lenken: *sunītibhirnayasi trāyase janam*
 [ṚV. 2,23,4.] *ṛju neṣati*
@@ -100,7 +100,7 @@
 [1,173,9.] [3,7,6.] [CHĀND. UP. 6,8,3.] of the horse that draws the chariot: *udbhā na nāvamanayanta dhīrāḥ*
 [ṚV. 5,45,10.] *krandadaśvo nayamāno ruvadgauḥ*
 [1,173,3.]
-  <sub>DCS 2376 · attested</sub>
+  <sub>attested</sub>
 
 **2_carry_away_bring)** — 2) abführen, wegführen, fortbringen, fortschaffen; hinführen, hinbringen, hinschaffen zu: *nayatā baddhametam*
 [ṚV. 10,34,3.] *lodhaṃ nayanti paśu manyamānāḥ*
@@ -242,7 +242,7 @@ a) in the acc.: *grāmamajāṃ nayati*
 [R. 2,30,19.] *naya mām*
 [R. GORR. 2,30,25.] *narāngehādgehātpratidivasamākṛṣya nayataḥ kṛtāntāt*
 [ŚĀNTIŚ. 3,5.]
-  <sub>DCS 2376 · attested</sub>
+  <sub>attested</sub>
 
 **4_bring_into_state)** — 4) Jmd oder Etwas in ein Verhältniss, eine Lage, einen Zustand (acc.) bringen, — versetzen: *vaśam* in seine Gewalt bringen: *na mitraṃ nayate vaśam*
 [AV. 5,19,15.]
@@ -402,7 +402,7 @@ a) in the acc.: *grāmamajāṃ nayati*
 [HIT. 21,9.] [26,22.] *gehebhyo nayatyeva narāniha*
 [VID. 200.] *daivenaikatra nītānām*
 [BHĀG. P. 7,2,21.]
-  <sub>DCS 2376 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) Jmd oder Etwas in ein Verhältniss, eine Lage, einen Zustand (acc.) bringen, — versetzen: *vaśam* in seine Gewalt bringen: *na mitraṃ nayate vaśam*
 [AV. 5,19,15.]
@@ -459,4 +459,4 @@ a) in the acc.: *grāmamajāṃ nayati*
 [8,178.] [9,218.] [R. 2,33,9.] [MEGH. 62.] [66.] [MĀLAV. 73.] [RĀJA-TAR. 5,16.] [144.] [354.] [PAÑCAT. 34,11.] [78,15.] [97,14.] [PRAB. 13,7.] [KIR. 5,19.] [BHAṬṬ. 5,15.] Inschr. в [Journ. of the Am. Or. S. 7,26, Śl. 10.] с loc. некоего nom. abstr.: *duhitṛtve* делать дочерью
 [R. 1,44,38.] *bhasmasāt* превращать в пепел
 [PAÑCAT. 38,18.]
-  <sub>DCS 2376 · attested</sub>
+  <sub>attested</sub>

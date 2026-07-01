@@ -16,4 +16,4 @@
 [ṚV. 1,82,6.] *saṃgrāmam*
 [TS. 2,2,1,2.] [3.]
 [ŚĀṄKH. BR. 22,9.]
-  <sub>DCS 7 · attested</sub>
+  <sub>attested</sub>

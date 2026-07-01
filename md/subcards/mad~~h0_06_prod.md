@@ -10,4 +10,4 @@
 [Journ. of the Am. Or. S. 7,9, Śl. 32.]
 - **EN:** — *prod* to begin to become mad, to become raging: *pronmādyadvindhyagandhadvipa* Inschr. in
 [Journ. of the Am. Or. S. 7,9, Śl. 32.]
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>

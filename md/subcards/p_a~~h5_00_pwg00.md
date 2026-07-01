@@ -26,23 +26,23 @@ Schol. к [P. 7,1,49.] *pītvānam* ved. к 48. *pāyaṃ pāyam*
 [ŚĀK. 72.] — intens.
 Z. 3 переставить слова с pass. Bed.: во вторую строку после
 [2,488,21.]
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>
 
 **Nachtrag_ni_patch)** — *ā* einsaugen, in sich hineinziehen: *svasṛṣṭamidamāpīya* (= *saṃhṛtya*
 Schol.) [BHĀG. P. 10,87,12.]
 
 - **RU:** — *ā* всасывать, втягивать в себя: *svasṛṣṭamidamāpīya* (= *saṃhṛtya*
 Schol.) [BHĀG. P. 10,87,12.]
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>
 
 **Nachtrag_nis_patch)** — *nis*, *bimbādhare 'tha niṣpītanīrāge*
 [KATHĀS. 86,115.]
 
 - **RU:** — *nis*, *bimbādhare 'tha niṣpītanīrāge*
 [KATHĀS. 86,115.]
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>
 
 **Nachtrag_pra_patch)** — *pra* vgl. *prapā, prapāna; — prati* vgl. *˚pāna; — vi* vgl. *pītavipīta* .
 
 - **RU:** — *pra* vgl. *prapā, prapāna; — prati* vgl. *˚pāna; — vi* vgl. *pītavipīta* .
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>

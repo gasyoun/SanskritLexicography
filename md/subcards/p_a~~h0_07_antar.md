@@ -9,4 +9,4 @@
 **antar-pa-main)** — *antar* s. *antaḥpeya* .
 
 - **RU:** — *antar* s. *antaḥpeya*.
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>

@@ -9,4 +9,4 @@
 **main)** 3. *yā*¦ _f._ zu 1. *ya* .
 
 - **RU:** 3. *yā*¦ _f._ к 1. *ya* .
-  <sub>DCS 5678 · lexicographic</sub>
+  <sub>lexicographic</sub>

@@ -1,6 +1,6 @@
 # viś
 
-_PWG article — 66 sub-card(s), 520 sense(s) · RU 211/520 · EN 499/520_
+_PWG article — 66 sub-card(s), 613 sense(s) · RU 545/613 · EN 499/613_
 
 ## viś
 
@@ -5292,45 +5292,77 @@ u. s. w. [ṚV. 4,50,8.] [6,8,4.] [10,124,8.] [173,6.] of the Tṛṇaskanda
 - **RU:** 1) с instr. [ṚV. 10,56,1.]
   <sub>DCS 2662 · attested</sub>
 
-## vi-√viś
+## viś
 
 `vi_s~~h0_zz_pw00`
 
 
 **1)** **1.** √*viś*¦, *viśati*, *te* (in der späteren Sprache meist metrisch)
-— 1〉 sich niederlassen, hineintreten —, eingehen —, einziehen —, sich hineinbegeben —, hineinschlüpfen —, eindringen —, versinken —, aufgehen in (Loc. oder Acc.); auch mit hinzugefügtem *antar* ([299,26]). *agnim* u. s. w. den Scheiterhaufen besteigen. In der Astr. in Conjunction kommen mit (Acc.). Ohne Ergänzung hineintreten inʼs Haus u. s. w., auftreten auf der Schaubühne, erscheinen.
+
+- **RU:** **1.** √*viś*¦, *viśati*, *te* (в более позднем языке большей частью в метрических текстах)
 - **EN:** **1.** √*viś*¦, *viśati*, *te* (in the later language mostly metrical)
 — 1) to settle down, enter into —, go in —, move in —, betake oneself into —, slip into —, penetrate —, sink into —, be absorbed into (Loc. or Acc.); also with *antar* added ([299,26]). *agnim* u. s. w. to mount the funeral pyre. In the Astr. to come into conjunction with (Acc.). Without complement: to enter the house u. s. w., to appear on the stage, to come forth.
+  <sub>attested</sub>
 
 **1-return)** — Mit *punar* oder *bhūyas* zurückgehen, zurückkehren, — in (Acc.).
+
+- **RU:** — С *punar* или *bhūyas* возвращаться, идти обратно, — в (Acc.).
 - **EN:** — With *punar* or *bhūyas*: to go back, return, — into (Acc.).
+  <sub>attested</sub>
 
 **2)** — 2〉 heimgehen, zur Ruhe gehen.
+
+- **RU:** — 2〉 идти домой, отходить на покой.
 - **EN:** — 2) to go home, go to rest.
+  <sub>attested</sub>
 
 **3)** — 3〉 sich setzen auf (Acc. oder Loc.).
+
+- **RU:** — 3〉 садиться на (Acc. или Loc.).
 - **EN:** — 3) to sit down upon (Acc. or Loc.).
+  <sub>attested</sub>
 
 **4)** — 4〉 sich irgendwohin (*agratas*, *agre* oder Acc.) begeben.
+
+- **RU:** — 4〉 отправляться куда-либо (*agratas*, *agre* или Acc.).
 - **EN:** — 4) to betake oneself somewhere (*agratas*, *agre*, or Acc.).
+  <sub>attested</sub>
 
 **5)** — 5〉 zuströmen (von Heeresabtheilungen und Nebenflüssen).
+
+- **RU:** — 5〉 стекаться, впадать (об отрядах войска и притоках рек).
 - **EN:** — 5) to flow into, stream towards (of army divisions and tributary rivers).
+  <sub>attested</sub>
 
 **6)** — 6〉 Jmd (Acc.) zuströmen, zufliessen, kommen (von einem Gedanken [95,4]), zu Theil werden, Jmd treffen.
+
+- **RU:** — 6〉 приходить, притекать, являться к кому-либо (Acc.) (о мысли [95,4]), доставаться, постигать кого-либо.
 - **EN:** — 6) to flow to —, come streaming to someone (Acc.) (of a thought [95,4]), to fall to one's share, befall someone.
+  <sub>attested</sub>
 
 **7)** — 7〉 Jmd (Loc.) zukommen, so v. a. für Jmd dasein, — gehen (impers.).
+
+- **RU:** — 7〉 причитаться кому-либо (Loc.), так v. a. предназначаться кому-либо, — идти (impers.).
 - **EN:** — 7) to fall to someone (Loc.), thus v. a. to be there for someone, — to go to (impers.).
+  <sub>attested</sub>
 
 **8)** — 8〉 in einen Zustand eintreten, gerathen in (Acc.).
+
+- **RU:** — 8〉 вступать, впадать в некое состояние (Acc.).
 - **EN:** — 8) to enter a state, fall into (Acc.).
+  <sub>attested</sub>
 
 **9)** — 9〉 an Etwas (Acc.) gehen.
+
+- **RU:** — 9〉 приступать к чему-либо (Acc.).
 - **EN:** — 9) to set about something (Acc.).
+  <sub>attested</sub>
 
 **10)** — 10〉 sich zu schaffen machen mit (Instr.).
+
+- **RU:** — 10〉 заниматься, иметь дело с (Instr.).
 - **EN:** — 10) to occupy oneself, busy oneself with (Instr.).
+  <sub>attested</sub>
 
 **11-ppp)** — 11〉 *viṣṭa*
 — a〉 eingegangen —, enthalten in (Acc. oder Loc.).
@@ -5361,13 +5393,22 @@ u. s. w. [ṚV. 4,50,8.] [6,8,4.] [10,124,8.] [173,6.] of the Tṛṇaskanda
 — 3) to follow someone (Acc.).
 
 **apa)** — Mit *apa* Caus. wegschicken.
+
+- **RU:** — С *apa* Caus. отсылать прочь.
 - **EN:** — With *apa* Caus.: to send away.
+  <sub>attested</sub>
 
 **apa-ppp)** — Mit *abhi*, *˚viṣṭa* ergriffen —, in der Gewalt stehend von (im Comp. vorangehend).
+
+- **RU:** — С *abhi*, *˚viṣṭa* охваченный —, находящийся во власти (с предшествующим Comp.).
 - **EN:** — With *abhi*, *˚viṣṭa*: seized by —, in the power of (preceded by the Comp.).
+  <sub>attested</sub>
 
 **abhi)** — Caus. eingehen machen in, richten auf (Loc.).
+
+- **RU:** — Caus. заставлять входить в, направлять на (Loc.).
 - **EN:** — Caus.: to make enter into, direct towards (Loc.).
+  <sub>attested</sub>
 
 **a-prefix)** — Mit *ā*
 — 1〉 eingehen, eintreten, sich niederlassen in oder unter, eindringen in (Acc., ausnahmsweise Loc.). *kham*, *gaganam* u. s. w. sich in die Luft erheben. *gṛheṣvāviśantaḥ pumāṃsaḥ* so v. a. Haushälter. Oefters ist *gṛham* oder dgl. zu ergänzen; auch heimkehren.
@@ -5426,7 +5467,10 @@ u. s. w. [ṚV. 4,50,8.] [6,8,4.] [10,124,8.] [173,6.] of the Tṛṇaskanda
 — 2) to go after, follow, conform to; with Acc.
 
 **upa)** — Mit *abhyā* eingehen —, eindringen —, fahren in, Eingang finden in; mit Acc. oder Loc.
+
+- **RU:** — С *abhyā* входить —, проникать —, вселяться в, находить доступ в; с Acc. или Loc.
 - **EN:** — With *abhyā*: to enter —, penetrate —, get into, find entry into; with Acc. or Loc.
+  <sub>attested</sub>
 
 **ni)** — Mit *upā*
 — 1〉 eingehen —, eintreten in (Acc.).
@@ -5443,10 +5487,16 @@ u. s. w. [ṚV. 4,50,8.] [6,8,4.] [10,124,8.] [173,6.] of the Tṛṇaskanda
 — Caus.: to hide [HEM. PAR. 8,27].
 
 **nis)** — Mit *nyā* eingehen in (Loc.).
+
+- **RU:** — С *nyā* входить в (Loc.).
 - **EN:** — With *nyā*: to enter into (Loc.).
+  <sub>attested</sub>
 
 **para)** — Mit *nirā* sich zurückziehen —, sich fernhalten von (Abl.).
+
+- **RU:** — С *nirā* удаляться —, держаться в стороне от (Abl.).
 - **EN:** — With *nirā*: to withdraw —, keep away from (Abl.).
+  <sub>attested</sub>
 
 **pari)** — Mit *prā* kommen zu (Acc.).
 — Caus. einlassen, hineinführen, — in (Loc.).
@@ -5454,7 +5504,10 @@ u. s. w. [ṚV. 4,50,8.] [6,8,4.] [10,124,8.] [173,6.] of the Tṛṇaskanda
 — Caus.: to let in, lead in, — into (Loc.).
 
 **pra)** — Mit *vyā* eindringen —, sich vertheilen in (Acc. oder Loc.).
+
+- **RU:** — С *vyā* проникать —, распределяться в (Acc. или Loc.).
 - **EN:** — With *vyā*: to penetrate —, distribute oneself into (Acc. or Loc.).
+  <sub>attested</sub>
 
 **prati)** — Mit *samā*
 — 1〉 eintreten, betreten, eingehen in, sich begeben auf oder zu, dringen in, durchdringen; mit Acc.
@@ -5532,7 +5585,417 @@ u. s. w. [ṚV. 4,50,8.] [6,8,4.] [10,124,8.] [173,6.] of the Tṛṇaskanda
 — 3) to cause someone to void per anum, with double Acc. [CARAKA. 6,10. 18]. [BHĀVAPR. 4,4]. — *upaveśya* [PAÑCAT. 147,6] erroneous for *upaviśya*.
 — With *adhyupa*: to seat oneself thereon.
 
-## viś
+**1-body)** — 1〉 sich niederlassen, hineintreten —, eingehen —, einziehen —, sich hineinbegeben —, hineinschlüpfen —, eindringen —, versinken —, aufgehen in (Loc. oder Acc.); auch mit hinzugefügtem *antar* ([299,26]). *agnim* u. s. w. den Scheiterhaufen besteigen. In der Astr. in Conjunction kommen mit (Acc.). Ohne Ergänzung hineintreten inʼs Haus u. s. w., auftreten auf der Schaubühne, erscheinen.
+
+- **RU:** — 1〉 поселяться, входить —, вступать —, вселяться —, проникать внутрь —, вползать —, врываться —, погружаться —, сливаться с (Loc. или Acc.); также с добавлением *antar* ([299,26]). *agnim* u. s. w. всходить на погребальный костёр. В Astr. вступать в соединение с (Acc.). Без дополнения входить в дом u. s. w., выступать на сцене, появляться.
+  <sub>attested</sub>
+
+**11)** — 11〉 *viṣṭa*
+
+- **RU:** — 11〉 *viṣṭa*
+  <sub>attested</sub>
+
+**11a)** — a〉 eingegangen —, enthalten in (Acc. oder Loc.).
+
+- **RU:** — a〉 вошедший в —, содержащийся в (Acc. или Loc.).
+  <sub>attested</sub>
+
+**11b)** — b〉 erfüllt —, verbunden mit (Instr.) [TS. 4,4,5,1.] [2]. [NYĀYAS. 3,1,68]. — Statt des unverständlichen *te viśantaṃ mudā yuktāḥ* [MBH. 7,1551] ([ed. Vardh. 7,35,13]) liest [ed. Bomb. 7,36,13] *te viṃśatipade (!) yattāḥ*.
+
+- **RU:** — b〉 исполненный —, соединённый с (Instr.) [TS. 4,4,5,1.] [2]. [NYĀYAS. 3,1,68]. — Вместо непонятного *te viśantaṃ mudā yuktāḥ* [MBH. 7,1551] ([ed. Vardh. 7,35,13]) [ed. Bomb. 7,36,13] читает *te viṃśatipade (!) yattāḥ*.
+  <sub>attested</sub>
+
+**caus-head)** — Caus. *veśayati*
+
+- **RU:** — Caus. *veśayati*
+  <sub>attested</sub>
+
+**caus-1)** — 1〉 eingehen machen in (Acc.).
+
+- **RU:** — 1〉 заставлять входить в (Acc.).
+  <sub>attested</sub>
+
+**caus-2)** — 2〉 sitzen heissen auf (Loc.)
+
+- **RU:** — 2〉 сажать на (Loc.)
+  <sub>attested</sub>
+
+**desid-head)** — Desid. *vivikṣati* hineinzutreten —, hineinzugehen in (Acc.). *agnim* u. s. w. den Scheiterhaufen zu besteigen beabsichtigen.
+
+- **RU:** — Desid. *vivikṣati* намереваться войти —, вступить в (Acc.). *agnim* u. s. w. намереваться взойти на погребальный костёр.
+  <sub>attested</sub>
+
+**desid-2)** — Mit *adhi* Caus. setzen auf (Acc.).
+
+- **RU:** — С *adhi* Caus. намереваться сесть на (Acc.).
+  <sub>attested</sub>
+
+**anu-head)** — Mit *anu*
+
+- **RU:** — С *anu*
+  <sub>attested</sub>
+
+**anu-1)** — 1〉 nach Jmd (Acc.) hineingehen in (Acc.).
+
+- **RU:** — 1〉 вслед за кем-либо (Acc.) входить в (Acc.).
+  <sub>attested</sub>
+
+**anu-2)** — 2〉 hineingehen, hineinfahren, — in (Acc.). *anuviṣṭa* mit pass. Bed.
+
+- **RU:** — 2〉 входить, вселяться, — в (Acc.). *anuviṣṭa* с pass. Bed.
+  <sub>attested</sub>
+
+**anu-3)** — 3〉 Jmd (Acc.) folgen.
+
+- **RU:** — 3〉 следовать за кем-либо (Acc.).
+  <sub>attested</sub>
+
+**aa-head)** — Mit *ā*
+
+- **RU:** — С *ā*
+  <sub>attested</sub>
+
+**aa-1)** — 1〉 eingehen, eintreten, sich niederlassen in oder unter, eindringen in (Acc., ausnahmsweise Loc.). *kham*, *gaganam* u. s. w. sich in die Luft erheben. *gṛheṣvāviśantaḥ pumāṃsaḥ* so v. a. Haushälter. Oefters ist *gṛham* oder dgl. zu ergänzen; auch heimkehren.
+
+- **RU:** — 1〉 входить, вступать, поселяться в или среди, проникать в (Acc., в исключительных случаях Loc.). *kham*, *gaganam* u. s. w. подниматься в воздух. *gṛheṣvāviśantaḥ pumāṃsaḥ* так v. a. домохозяин. Часто следует дополнить *gṛham* или dgl.; также возвращаться домой.
+  <sub>attested</sub>
+
+**aa-2)** — 2〉 geschlechtlichen Umgang haben mit einem Weibe (Acc.).
+
+- **RU:** — 2〉 иметь половую связь с женщиной (Acc.).
+  <sub>attested</sub>
+
+**aa-3)** — 3〉 sich nahe herbeimachen zu (Acc.), kommen.
+
+- **RU:** — 3〉 приближаться к (Acc.), приходить.
+  <sub>attested</sub>
+
+**aa-4)** — 4〉 sich niederlassen —, sich setzen auf (Acc.) zu [Spr. 1478].
+
+- **RU:** — 4〉 усаживаться —, садиться на (Acc.) для [Spr. 1478].
+  <sub>attested</sub>
+
+**aa-5)** — 5〉 fahren in, Besitz nehmen von, sich Jmds bemächtigen (von bösen Geistern, Gemüthszuständen, Leiden u. s. w.); mit Acc. [73,7].
+
+- **RU:** — 5〉 вселяться в, овладевать, захватывать кого-либо (о злых духах, душевных состояниях, недугах u. s. w.); с Acc. [73,7].
+  <sub>attested</sub>
+
+**aa-6)** — 6〉 in einen Zustand —, in ein Verhältniss eintreten, gerathen in (Acc.). *rūpāṇi* so v. a. Farben annehmen, *rājyam* die Herrschaft antreten.
+
+- **RU:** — 6〉 вступать, впадать в некое состояние —, в некое отношение (Acc.). *rūpāṇi* так v. a. принимать окраску, *rājyam* вступать во власть.
+  <sub>attested</sub>
+
+**aa-7)** — 7〉 *āviṣṭa*
+
+- **RU:** — 7〉 *āviṣṭa*
+  <sub>attested</sub>
+
+**aa-7a-head)** — a〉 mit act. Bed.
+
+- **RU:** — a〉 с act. Bed.
+  <sub>attested</sub>
+
+**aa-7a-alpha)** — α〉 hineingegangen, eingedrungen, steckend in (Loc., Acc. [[AIT. ĀR. 136,15]] oder im Comp. vorangehend).
+
+- **RU:** — α〉 вошедший, проникший, находящийся внутри (Loc., Acc. [[AIT. ĀR. 136,15]] или с предшествующим Comp.).
+  <sub>attested</sub>
+
+**aa-7a-beta)** — β〉 sitzend auf (Loc., von Vögeln) in der Luft schwebend.
+
+- **RU:** — β〉 сидящий на (Loc., о птицах) паря в воздухе.
+  <sub>attested</sub>
+
+**aa-7a-gamma)** — γ〉 fest sitzend, so v. a. constant.
+
+- **RU:** — γ〉 прочно сидящий, так v. a. постоянный.
+  <sub>attested</sub>
+
+**aa-7a-delta)** — δ〉 *ganz in Etwas steckend, einer Sache ganz hingegeben.
+
+- **RU:** — δ〉 *всецело погружённый во что-либо, всецело преданный делу.
+  <sub>attested</sub>
+
+**aa-7b-head)** — b〉 mit pass. Bed.
+
+- **RU:** — b〉 с pass. Bed.
+  <sub>attested</sub>
+
+**aa-7b-alpha)** — α〉 bewohnt —, erfüllt von (Instr. oder im Comp. vorangehend).
+
+- **RU:** — α〉 населённый —, исполненный (Instr. или с предшествующим Comp.).
+  <sub>attested</sub>
+
+**aa-7b-beta)** — β〉 getroffen von (einem Pfeile, Instr. oder im Comp. vorangehend).
+
+- **RU:** — β〉 поражённый (стрелой, Instr. или с предшествующим Comp.).
+  <sub>attested</sub>
+
+**aa-7b-gamma)** — γ〉 ergriffen —, besessen —, befallen —, überwältigt —, in der Gewalt stehend von (Instr. oder im Comp. vorangehend), behaftet mit. *rogāviṣṭa* [ĀPAST. 2,26,16]. Ohne Ergänzung von einem bösen Geiste besessen. — *āviśya* [KATHĀS. 45,6] fehlerhaft für *āveśya*.
+
+- **RU:** — γ〉 охваченный —, одержимый —, поражённый —, побеждённый —, находящийся во власти (Instr. или с предшествующим Comp.), поражённый. *rogāviṣṭa* [ĀPAST. 2,26,16]. Без дополнения одержимый злым духом. — *āviśya* [KATHĀS. 45,6] ошибочно вместо *āveśya*.
+  <sub>attested</sub>
+
+**aa-caus-head)** — Caus.
+
+- **RU:** — Caus.
+  <sub>attested</sub>
+
+**aa-caus-1)** — 1〉 eingehen machen, hineinbringen, hineinschieben, hineinlassen, hineinfahren lassen, — in (Loc. oder ausnahmsweise Acc.).
+
+- **RU:** — 1〉 заставлять входить, вводить внутрь, вдвигать, впускать, заставлять вселяться, — в (Loc. или в исключительных случаях Acc.).
+  <sub>attested</sub>
+
+**aa-caus-2)** — 2〉 inʼs Haus hineinlassen, so v. a. bewirthen.
+
+- **RU:** — 2〉 впускать в дом, так v. a. принимать, угощать.
+  <sub>attested</sub>
+
+**aa-caus-3)** — 3〉 Jmd (Loc.) aufladen, übertragen.
+
+- **RU:** — 3〉 возлагать, перекладывать на кого-либо (Loc.).
+  <sub>attested</sub>
+
+**aa-caus-4)** — 4〉 den Geist richten auf (Loc.).
+
+- **RU:** — 4〉 направлять дух на (Loc.).
+  <sub>attested</sub>
+
+**aa-caus-5)** — 5〉 Jmdm (Loc.) anheimstellen.
+
+- **RU:** — 5〉 предоставлять на усмотрение кому-либо (Loc.).
+  <sub>attested</sub>
+
+**aanu-head)** — Mit *anvā*
+
+- **RU:** — С *anvā*
+  <sub>attested</sub>
+
+**aanu-1)** — 1〉 eingehen, fahren in, sich Jmds bemächtigen; mit Acc. [TAITT. ĀR. 4,34,1].
+
+- **RU:** — 1〉 входить, вселяться, овладевать кем-либо; с Acc. [TAITT. ĀR. 4,34,1].
+  <sub>attested</sub>
+
+**aanu-2)** — 2〉 nachgehen, folgen, sich richten nach; mit Acc.
+
+- **RU:** — 2〉 следовать, идти за, сообразовываться с; с Acc.
+  <sub>attested</sub>
+
+**abhisam-head)** — Mit *upā*
+
+- **RU:** — С *upā*
+  <sub>attested</sub>
+
+**abhisam-1)** — 1〉 eingehen —, eintreten in (Acc.).
+
+- **RU:** — 1〉 входить —, вступать в (Acc.).
+  <sub>attested</sub>
+
+**abhisam-2)** — 2〉 fahren in, kommen über Jmd (Acc.) von einem Gemüthszustande.
+
+- **RU:** — 2〉 вселяться в, находить на кого-либо (Acc.) — о душевном состоянии.
+  <sub>attested</sub>
+
+**abhisam-3)** — 3〉 gerathen in (Acc.).
+
+- **RU:** — 3〉 впадать в (Acc.).
+  <sub>attested</sub>
+
+**aa-head2)** — Mit *samupā* sich an Etwas machen, beginnen; mit Acc.
+
+- **RU:** — С *samupā* приступать к чему-либо, начинать; с Acc.
+  <sub>attested</sub>
+
+**apa-verb)** — Caus. verbergen [HEM. PAR. 8,27].
+
+- **RU:** — Caus. скрывать [HEM. PAR. 8,27].
+  <sub>attested</sub>
+
+**upe-head)** — Mit *prā* kommen zu (Acc.).
+
+- **RU:** — С *prā* приходить к (Acc.).
+  <sub>attested</sub>
+
+**upa-caus)** — Caus. einlassen, hineinführen, — in (Loc.).
+
+- **RU:** — Caus. впускать, вводить, — в (Loc.).
+  <sub>attested</sub>
+
+**sam-head)** — Mit *samā*
+
+- **RU:** — С *samā*
+  <sub>attested</sub>
+
+**sam-1)** — 1〉 eintreten, betreten, eingehen in, sich begeben auf oder zu, dringen in, durchdringen; mit Acc.
+
+- **RU:** — 1〉 вступать, ступать, входить в, направляться на или к, проникать в, пронизывать; с Acc.
+  <sub>attested</sub>
+
+**sam-2)** — 2〉 sich niederlassen an einem Orte (Loc.), Platz nehmen —, sich setzen auf (Loc. oder Acc.).
+
+- **RU:** — 2〉 поселяться в каком-либо месте (Loc.), занимать место —, садиться на (Loc. или Acc.).
+  <sub>attested</sub>
+
+**sam-3)** — 3〉 einkehren, so v. a. Jmd zu Theil werden.
+
+- **RU:** — 3〉 останавливаться, заходить, так v. a. доставаться кому-либо.
+  <sub>attested</sub>
+
+**sam-4)** — 4〉 fahren in, sich Jmds bemächtigen (von bösen Geistern, Leidenschaften, Gemüthszuständen u. s. w.), kommen über Jmd; mit Acc.
+
+- **RU:** — 4〉 вселяться в, овладевать кем-либо (о злых духах, страстях, душевных состояниях u. s. w.), находить на кого-либо; с Acc.
+  <sub>attested</sub>
+
+**sam-5)** — 5〉 in einen Zustand eingehen, gerathen in (Acc.).
+
+- **RU:** — 5〉 вступать, впадать в некое состояние (Acc.).
+  <sub>attested</sub>
+
+**sam-6)** — 6〉 gehen an, obliegen; mit Acc.
+
+- **RU:** — 6〉 касаться, лежать на обязанности; с Acc.
+  <sub>attested</sub>
+
+**sam-7)** — 7〉 *samāviṣṭa*
+
+- **RU:** — 7〉 *samāviṣṭa*
+  <sub>attested</sub>
+
+**sam-7a)** — a〉 ergriffen —, überwältigt —, erfüllt von (Instr. oder im Comp. vorangehend).
+
+- **RU:** — a〉 охваченный —, побеждённый —, исполненный (Instr. или с предшествующим Comp.).
+  <sub>attested</sub>
+
+**sam-7b)** — b〉 versehen mit (im Comp. vorangehend).
+
+- **RU:** — b〉 снабжённый (с предшествующим Comp.).
+  <sub>attested</sub>
+
+**sam-7c)** — c〉 unterwiesen in (Instr.) von (Instr.).
+
+- **RU:** — c〉 наставленный в (Instr.) кем-либо (Instr.).
+  <sub>attested</sub>
+
+**sam-caus-head)** — Caus.
+
+- **RU:** — Caus.
+  <sub>attested</sub>
+
+**sam-caus-1)** — 1〉 hineingehen lassen, hineinstecken.
+
+- **RU:** — 1〉 впускать, всовывать внутрь.
+  <sub>attested</sub>
+
+**sam-caus-2)** — 2〉 in sich (*svasmin*) aufnehmen, enthalten.
+
+- **RU:** — 2〉 вмещать в себя (*svasmin*), содержать.
+  <sub>attested</sub>
+
+**sam-caus-3)** — 3〉 an einen Ort (Acc.) bringen, — führen.
+
+- **RU:** — 3〉 приводить, — доставлять в некое место (Acc.).
+  <sub>attested</sub>
+
+**sam-caus-4)** — 4〉 den Geist, die Gedanken u. s. w. richten auf (Loc.).
+
+- **RU:** — 4〉 направлять дух, мысли u. s. w. на (Loc.).
+  <sub>attested</sub>
+
+**sam-caus-5)** — 5〉 sich setzen heissen.
+
+- **RU:** — 5〉 приказывать сесть.
+  <sub>attested</sub>
+
+**sam-caus-6)** — 6〉 Jmdm (Loc.) aufbürden, übertragen.
+
+- **RU:** — 6〉 возлагать, перепоручать кому-либо (Loc.).
+  <sub>attested</sub>
+
+**nisad-head)** — Mit *upa*
+
+- **RU:** — С *upa*
+  <sub>attested</sub>
+
+**nisad-1)** — 1〉 herantreten an (Acc.).
+
+- **RU:** — 1〉 подходить к (Acc.).
+  <sub>attested</sub>
+
+**nisad-2)** — 2〉 sich setzen (auch vom Niederliegen der Thiere).
+
+- **RU:** — 2〉 садиться (также о залегании животных).
+  <sub>attested</sub>
+
+**nisad-3)** — 3〉 sich setzen euphemistisch für cacare [CARAKA. 3,5].
+
+- **RU:** — 3〉 садиться эвфемистически вместо cacare [CARAKA. 3,5].
+  <sub>attested</sub>
+
+**nisad-4)** — 4〉 das Lager aufschlagen, Halt machen.
+
+- **RU:** — 4〉 разбивать лагерь, останавливаться.
+  <sub>attested</sub>
+
+**nisad-5)** — 5〉 sich zu Jmd (Acc.) setzen; auch so v. a. nicht von Jmds Seite weichen um ihn zur Nachgiebigkeit zu zwingen.
+
+- **RU:** — 5〉 садиться рядом с кем-либо (Acc.); также так v. a. не отходить от кого-либо, чтобы принудить его к уступке.
+  <sub>attested</sub>
+
+**nisad-6)** — 6〉 sich zum Untergang neigen (von der Sonne).
+
+- **RU:** — 6〉 клониться к закату (о солнце).
+  <sub>attested</sub>
+
+**nisad-7)** — 7〉 sich mit einem Weibe (Instr.) vermischen.
+
+- **RU:** — 7〉 совокупляться с женщиной (Instr.).
+  <sub>attested</sub>
+
+**nisad-8)** — 8〉 sich einer Sache hingeben, obliegen; mit Acc.
+
+- **RU:** — 8〉 предаваться чему-либо, заниматься; с Acc.
+  <sub>attested</sub>
+
+**nisad-9)** — 9〉 *upaviṣṭa*
+
+- **RU:** — 9〉 *upaviṣṭa*
+  <sub>attested</sub>
+
+**nisad-9a)** — a〉 sich gesetzt habend, sitzend. Wie *upaviṣṭavān* auch als Verbum fin.
+
+- **RU:** — a〉 севший, сидящий. Как *upaviṣṭavān*, также в качестве глагола fin.
+  <sub>attested</sub>
+
+**nisad-9b)** — b〉 *prāyam*, *prāya˚* oder *anaśana˚* sich dem Tode durch Hungern geweiht habend, auf diese Weise ruhig den Tod erwartend. Das einfache *upaviṣṭa* in derselben Bed. — *upaviśya* [HARIV. 4568] fehlerhaft für *upaveśya*.
+
+- **RU:** — b〉 *prāyam*, *prāya˚* или *anaśana˚* обрёкший себя на смерть голодом, спокойно ожидая таким образом смерти. Простое *upaviṣṭa* в том же Bed. — *upaviśya* [HARIV. 4568] ошибочно вместо *upaveśya*.
+  <sub>attested</sub>
+
+**nisad-caus-head)** — Caus.
+
+- **RU:** — Caus.
+  <sub>attested</sub>
+
+**nisad-caus-1)** — 1〉 Jmd (Acc.) sich setzen lassen, sitzen heissen, — auf (Loc.) [KĀD. 247,13 (403,14)].
+
+- **RU:** — 1〉 давать сесть, велеть сесть кому-либо (Acc.), — на (Loc.) [KĀD. 247,13 (403,14)].
+  <sub>attested</sub>
+
+**nisad-caus-2)** — 2〉 niedersetzen in, bringen an einem Ort (Loc.).
+
+- **RU:** — 2〉 усаживать в, доставлять в некое место (Loc.).
+  <sub>attested</sub>
+
+**nisad-caus-3)** — 3〉 Jmd veranlassen per anum von sich zu geben, mit doppeltem Acc. [CARAKA. 6,10. 18]. [BHĀVAPR. 4,4]. — *upaveśya* [PAÑCAT. 147,6] fehlerhaft für *upaviśya*.
+
+- **RU:** — 3〉 побуждать кого-либо испражниться, с двойным Acc. [CARAKA. 6,10. 18]. [BHĀVAPR. 4,4]. — *upaveśya* [PAÑCAT. 147,6] ошибочно вместо *upaviśya*.
+  <sub>attested</sub>
+
+**final)** — Mit *adhyupa* sich darauf setzen.
+
+- **RU:** — С *adhyupa* садиться на это.
+  <sub>attested</sub>
+
+## vi-√sad (PW)
 
 `vi_s~~h0_zz_pw01`
 
@@ -5541,301 +6004,633 @@ u. s. w. [ṚV. 4,50,8.] [6,8,4.] [10,124,8.] [173,6.] of the Tṛṇaskanda
 - **EN:** — With *anūpa*
 
 **1)** — 1〉 sich der Reihe nach setzen.
+
+- **RU:** — 1〉 садиться по порядку, рассаживаться по очереди.
 - **EN:** — 1) to sit down in turn, one after another. *anūpa*
+  <sub>attested</sub>
 
 **2)** — 2〉 sich hinkauern (von einem Thiere, das gebiert).
+
+- **RU:** — 2〉 припадать на корточки, приседать (о животном, которое рожает).
 - **EN:** — 2) to crouch down (of an animal that is giving birth).
+  <sub>attested</sub>
 
 **adhi-vi)** — Mit *abhyupa* sich darauf setzen, sich setzen auf (Acc.), sich setzen überh.
+
+- **RU:** — С *abhyupa* садиться на это, садиться на (Acc.), садиться überh.
 - **EN:** — With *abhyupa* to sit down thereon, to sit down upon (Acc.), to sit down überh.
+  <sub>attested</sub>
 
 **anu-vi)** — Mit *upopa* sich neben einander setzen, zu Jmds (Acc.) Seite sich setzen. *upopaviṣṭa* mit act. und pass. Bedeutung.
+
+- **RU:** — С *upopa* садиться рядом друг с другом, садиться подле кого-л. (Acc.) стороны. *upopaviṣṭa* с act. и pass. значением.
 - **EN:** — With *upopa* to sit down beside one another, to sit down at someone's (Acc.) side. *upopaviṣṭa* with act. and pass. meaning.
+  <sub>attested</sub>
 
 **anu-vi-ppp)** — Mit *samupopa*, *˚viṣṭa* sich gesetzt habend —, sitzend auf (Loc.).
+
+- **RU:** — С *samupopa*, *˚viṣṭa* севший —, сидящий на (Loc.).
 - **EN:** — With *samupopa*, *˚viṣṭa* having sat down —, sitting upon (Loc.).
+  <sub>attested</sub>
 
 **abhi-vi)** — Mit *paryupa* sich herumsetzen, sich zusammensetzen in die Nähe von (Acc.) [LĀṬY. 2,11,17].
+
+- **RU:** — С *paryupa* садиться вокруг, собираться вместе вблизи (Acc.) [LĀṬY. 2,11,17].
 - **EN:** — With *paryupa* to seat oneself round, to gather close to (Acc.) [LĀṬY. 2,11,17].
+  <sub>attested</sub>
 
 **ava-vi)** — Mit *pratyupa* sich gegen Jmd (Acc.) setzen, so v. a. nicht von seiner Seite weichen um ihn zur Nachgiebigkeit zu zwingen. *pratyupaviṣṭa* mit act. Bedeutung.
+
+- **RU:** — С *pratyupa* садиться против кого-л. (Acc.), так v. a. не отступать от него, чтобы вынудить его к уступчивости. *pratyupaviṣṭa* со значением act..
 - **EN:** — With *pratyupa* to set oneself against someone (Acc.), so v. a. not to budge from his side in order to force him to yield. *pratyupaviṣṭa* with act. meaning.
+  <sub>attested</sub>
 
 **caus)** — Caus.
+
+- **RU:** — Caus.
 - **EN:** — Caus.
+  <sub>attested</sub>
 
 **caus-1)** — 1〉 Med. Veranlassung geben, dass ihm Jmd Etwas abzutrotzen sucht.
+
+- **RU:** — 1〉 Med. давать повод, чтобы кто-л. пытался у него что-л. вытребовать силой.
 - **EN:** — 1) Med. to give occasion for someone to try to wrest something from him by force.
+  <sub>attested</sub>
 
 **caus-2)** — 2〉 Jmd entgegentreten, Opposition machen; mit Acc.
+
+- **RU:** — 2〉 противостоять кому-л., оказывать противодействие; с Acc.
 - **EN:** — 2) to confront someone, to offer opposition; with Acc.
+  <sub>attested</sub>
 
 **ā-vi)** — Mit *vyupa* da und dort sich setzen.
+
+- **RU:** — С *vyupa* садиться там и сям, в разных местах.
 - **EN:** — With *vyupa* to sit down here and there.
+  <sub>attested</sub>
 
 **upa-vi)** — Mit *samupa*
+
+- **RU:** — С *samupa*
 - **EN:** — With *samupa*
+  <sub>attested</sub>
 
 **upa-vi-1)** — 1〉 sich zusammen setzen, sich setzen überh., — auf (Loc., Acc. oder Gen. mit *upari*). *samupaviṣṭa* sich gesetzt habend, sitzend.
+
+- **RU:** — 1〉 садиться вместе, садиться überh., — на (Loc., Acc. или Gen. с *upari*). *samupaviṣṭa* севший, сидящий.
 - **EN:** — 1) to sit down together, to sit down überh., — upon (Loc., Acc. or Gen. with *upari*). *samupaviṣṭa* having sat down, sitting.
+  <sub>attested</sub>
 
 **upa-vi-2)** — 2〉 eine best. Zeit (Acc.) verschlafen.
+
+- **RU:** — 2〉 проспать некоторое best. время (Acc.).
 - **EN:** — 2) to sleep through a best. period of time (Acc.).
+  <sub>attested</sub>
 
 **upa-vi-caus)** — Caus.
+
+- **RU:** — Caus.
 - **EN:** — Caus.
+  <sub>attested</sub>
 
 **upa-vi-caus-1)** — 1〉 sich setzen lassen, sitzen heissen.
+
+- **RU:** — 1〉 давать сесть, велеть сидеть (побуждать сесть).
 - **EN:** — 1) to make sit down, to bid sit.
+  <sub>attested</sub>
 
 **upa-vi-caus-2)** — 2〉 sich lagern lassen.
+
+- **RU:** — 2〉 давать расположиться станом.
 - **EN:** — 2) to make encamp.
+  <sub>attested</sub>
 
 **ni-vi)** — Mit *ni* Med. (Act. metrisch oder ungenau)
+
+- **RU:** — С *ni* Med. (Act. метрически или неточно)
 - **EN:** — With *ni* Med. (Act. metrically or inexactly)
+  <sub>attested</sub>
 
 **ni-vi-1)** — 1〉 hineingehen, heimgehen (inʼs Haus, Lager, Nest), eingehen —, dringen in (Acc. oder Loc.). Von einem Blutegel so v. a. anbeissen [217,33]. *jñeyapade* in den Bereich des Erkennbaren treten, *matau* in den Geist dringen, so v. a. zum Bewusstsein kommen.
+
+- **RU:** — 1〉 входить, возвращаться домой (в дом, в стан, в гнездо), проникать —, вторгаться в (Acc. или Loc.). О пиявке так v. a. впиваться, кусать [217,33]. *jñeyapade* вступать в сферу познаваемого, *matau* проникать в разум, так v. a. доходить до сознания.
 - **EN:** — 1) to go in, to go home (into the house, camp, nest), to enter into —, to penetrate into (Acc. or Loc.). Of a leech, so v. a. to bite in [217,33]. *jñeyapade* to enter the realm of the perceptible, *matau* to penetrate into the mind, so v. a. to come into consciousness.
+  <sub>attested</sub>
 
 **ni-vi-2)** — 2〉 sich lagern, Halt machen.
+
+- **RU:** — 2〉 располагаться станом, останавливаться.
 - **EN:** — 2) to encamp, to halt.
+  <sub>attested</sub>
 
 **ni-vi-3)** — 3〉 sich zur Ruhe begeben, sich legen.
+
+- **RU:** — 3〉 укладываться на покой, ложиться.
 - **EN:** — 3) to retire to rest, to lie down.
+  <sub>attested</sub>
 
 **ni-vi-4)** — 4〉 sich flüchten zu (Acc.).
+
+- **RU:** — 4〉 спасаться бегством к (Acc.).
 - **EN:** — 4) to take refuge with (Acc.).
+  <sub>attested</sub>
 
 **ni-vi-5)** — 5〉 sich setzen, — auf (Loc.).
+
+- **RU:** — 5〉 садиться, — на (Loc.).
 - **EN:** — 5) to sit down, — upon (Loc.).
+  <sub>attested</sub>
 
 **ni-vi-6)** — 6〉 hinuntersinken, versinken.
+
+- **RU:** — 6〉 опускаться вниз, погружаться.
 - **EN:** — 6) to sink down, to sink.
+  <sub>attested</sub>
 
 **ni-vi-7)** — 7〉 sich niederlassen, so v. a. ein Haus gründen, heirathen (vom Manne) [214,1].
+
+- **RU:** — 7〉 поселяться, обосновываться, так v. a. заводить дом, жениться (о мужчине) [214,1].
 - **EN:** — 7) to settle down, so v. a. to found a household, to marry (of a man) [214,1].
+  <sub>attested</sub>
 
 **ni-vi-8)** — 8〉 gegründet werden (von einer Stadt). Dreimal in der Verbindung *dvāravatyāṃ niviśantyām* ([MBH. 13,70,2]).
+
+- **RU:** — 8〉 быть основанным (о городе). Трижды в сочетании *dvāravatyāṃ niviśantyām* ([MBH. 13,70,2]).
 - **EN:** — 8) to be founded (of a city). Three times in the combination *dvāravatyāṃ niviśantyām* ([MBH. 13,70,2]).
+  <sub>attested</sub>
 
 **ni-vi-9)** — 9〉 sich hinwenden zu, sich richten auf (Loc., vom Geiste).
+
+- **RU:** — 9〉 обращаться к, устремляться на (Loc., о духе/уме).
 - **EN:** — 9) to turn toward, to direct oneself toward (Loc., of the mind).
+  <sub>attested</sub>
 
 **ni-vi-10)** — 10〉 obliegen, mit Loc.
+
+- **RU:** — 10〉 подобать, лежать на обязанности, с Loc.
 - **EN:** — 10) to be incumbent upon, to devolve, with Loc.
+  <sub>attested</sub>
 
 **ni-vi-11)** — 11〉 zukommen (Gegensatz abgehen).
+
+- **RU:** — 11〉 причитаться, подобать (противоположность недоставать).
 - **EN:** — 11) to fall to, to be due to (opposite abgehen = to be lacking).
+  <sub>attested</sub>
 
 **ni-vi-12)** — 12〉 zur Anwendung kommen bei (Loc.). Einmal Act. (!) in der Prosa.
+
+- **RU:** — 12〉 находить применение при (Loc.). Один раз Act. (!) в прозе.
 - **EN:** — 12) to come into application with (Loc.). Once Act. (!) in prose.
+  <sub>attested</sub>
 
 **ni-vi-13)** — 13〉 sich legen, so v. a. sich beruhigen, aufhören.
+
+- **RU:** — 13〉 стихать, так v. a. успокаиваться, прекращаться.
 - **EN:** — 13) to subside, so v. a. to calm down, to cease.
+  <sub>attested</sub>
 
 **ni-vi-14)** — 14〉 *niviṣṭa*
+
+- **RU:** — 14〉 *niviṣṭa*
 - **EN:** — 14) *niviṣṭa*
+  <sub>attested</sub>
 
 **ni-vi-14-a)** — a〉 hineingegangen, eingedrungen (auch mit hinzugefügtem *antar*), ruhend in oder auf ([311,17]), steckend an oder in (Loc. oder im Comp. vorangehend).
+
+- **RU:** — a〉 вошедший, проникший (также с добавленным *antar*), покоящийся в или на ([311,17]), застрявший у или в (Loc. или предшествующий Comp.).
 - **EN:** — a) having gone in, having penetrated (also with *antar* added), resting in or upon ([311,17]), lodged on or in (Loc. or preceding in Comp.).
+  <sub>attested</sub>
 
 **ni-vi-14-b)** — b〉 an einem Orte verweilend, sich aufhaltend. *dharmapathe* so v. a. auf dem Pfade des Rechten bleibend.
+
+- **RU:** — b〉 в каком-л. месте пребывающий, находящийся. *dharmapathe* так v. a. остающийся на пути правды/закона.
 - **EN:** — b) abiding, dwelling, in a place. *dharmapathe* so v. a. remaining on the path of righteousness.
+  <sub>attested</sub>
 
 **ni-vi-14-c)** — c〉 gelagert, aufgestellt (Wächter).
+
+- **RU:** — c〉 расположенный, поставленный (о страже).
 - **EN:** — c) encamped, posted (of a guard).
+  <sub>attested</sub>
 
 **ni-vi-14-d)** — d〉 zur Ruhe gegangen.
+
+- **RU:** — d〉 отошедший ко сну, успокоившийся.
 - **EN:** — d) gone to rest.
+  <sub>attested</sub>
 
 **ni-vi-14-e)** — e〉 sich gesetzt habend, sitzend, — auf, an oder in (Loc., Acc. mit *abhitas* [[AIT. 136,12]] oder im Comp. vorangehend).
+
+- **RU:** — e〉 севший, сидящий, — на, у или в (Loc., Acc. с *abhitas* [[AIT. 136,12]] или предшествующий Comp.).
 - **EN:** — e) having sat down, sitting, — upon, at, or in (Loc., Acc. with *abhitas* [[AIT. 136,12]] or preceding in Comp.).
+  <sub>attested</sub>
 
 **ni-vi-14-f)** — f〉 der sich häuslich niedergelassen hat, verheirathet.
+
+- **RU:** — f〉 обосновавшийся домом, женатый.
 - **EN:** — f) one who has settled down domestically, married.
+  <sub>attested</sub>
 
 **ni-vi-14-g)** — g〉 gelegen, situs.
+
+- **RU:** — g〉 расположенный, situs.
 - **EN:** — g) situated, situs.
+  <sub>attested</sub>
 
 **ni-vi-14-h)** — h〉 gerichtet auf (Loc. oder im Comp. vorangehend).
+
+- **RU:** — h〉 направленный на (Loc. или предшествующий Comp.).
 - **EN:** — h) directed toward (Loc. or preceding in Comp.).
+  <sub>attested</sub>
 
 **ni-vi-14-i)** — i〉 obliegend, bedacht auf (Loc.) [55,29].
+
+- **RU:** — i〉 лежащий на обязанности, помышляющий о (Loc.) [55,29].
 - **EN:** — i) being incumbent, intent upon (Loc.) [55,29].
+  <sub>attested</sub>
 
 **ni-vi-14-k)** — k〉 gegründet, angelegt.
+
+- **RU:** — k〉 основанный, заложенный.
 - **EN:** — k) founded, established.
+  <sub>attested</sub>
 
 **ni-vi-14-l)** — l〉 bezogen, eingenommen (ein Platz), bewohnt, angebaut [215,10]. [HARIV. 5171]. *antarniviṣṭapada* _Adj._ so v. a. im Herzen sich festgesetzt habend.
+
+- **RU:** — l〉 занятый, захваченный (о месте), обитаемый, возделанный [215,10]. [HARIV. 5171]. *antarniviṣṭapada* _Adj._ так v. a. укоренившийся в сердце.
 - **EN:** — l) occupied, taken (a place), inhabited, settled [215,10]. [HARIV. 5171]. *antarniviṣṭapada* _Adj._ so v. a. having lodged itself firmly in the heart.
+  <sub>attested</sub>
 
 **ni-vi-14-m)** — m〉 begonnen.
+
+- **RU:** — m〉 начатый.
 - **EN:** — m) begun.
+  <sub>attested</sub>
 
 **ni-vi-14-n)** — n〉 versehen mit (Instr.).
+
+- **RU:** — n〉 снабжённый (Instr.).
 - **EN:** — n) furnished with (Instr.).
+  <sub>attested</sub>
 
 **ni-vi-caus)** — Caus.
+
+- **RU:** — Caus.
 - **EN:** — Caus.
+  <sub>attested</sub>
 
 **ni-vi-caus-1)** — 1〉 sich lagern lassen.
+
+- **RU:** — 1〉 давать расположиться станом.
 - **EN:** — 1) to make encamp.
+  <sub>attested</sub>
 
 **ni-vi-caus-2)** — 2〉 aufstellen (ein Heer).
+
+- **RU:** — 2〉 выстраивать, расставлять (войско).
 - **EN:** — 2) to draw up, post (an army).
+  <sub>attested</sub>
 
 **ni-vi-caus-3)** — 3〉 zur Ruhe bringen.
+
+- **RU:** — 3〉 приводить к покою, успокаивать.
 - **EN:** — 3) to bring to rest.
+  <sub>attested</sub>
 
 **ni-vi-caus-4)** — 4〉 Jmd in ein Haus (Acc.) führen, einquartiren.
+
+- **RU:** — 4〉 вводить кого-л. в дом (Acc.), расквартировывать.
 - **EN:** — 4) to lead someone into a house (Acc.), to quarter, lodge.
+  <sub>attested</sub>
 
 **ni-vi-caus-5)** — 5〉 Jmd ein Haus beziehen lassen, so v. a. verheirathen (einen Mann).
+
+- **RU:** — 5〉 давать кому-л. вселиться в дом, так v. a. женить (мужчину).
 - **EN:** — 5) to let someone take possession of a house, so v. a. to marry off (a man).
+  <sub>attested</sub>
 
 **ni-vi-caus-6)** — 6〉 an einem Orte (Loc.) niedersetzen; — hinstellen, an einen Ort (Loc.) bringen, — versetzen. *˚pathe*, *adhvani* auf einen Weg (auch in übertragener Bed.) bringen. *kāvye*, *nāṭye* in ein Gedicht, in ein Schauspiel versetzen, so v. a. dort zur Erscheinung bringen.
+
+- **RU:** — 6〉 в каком-л. месте (Loc.) усаживать; — ставить, в какое-л. место (Loc.) приводить, — перемещать. *˚pathe*, *adhvani* наставлять на путь (также в переносном Bed.) смысле. *kāvye*, *nāṭye* вводить в поэму, в пьесу, так v. a. выводить там на сцену.
 - **EN:** — 6) to set down at a place (Loc.); — to place, bring to a place (Loc.), — to transfer. *˚pathe*, *adhvani* to bring upon a path (also in a transferred Bed.). *kāvye*, *nāṭye* to transpose into a poem, into a drama, so v. a. to bring it to appearance there.
+  <sub>attested</sub>
 
 **ni-vi-caus-7)** — 7〉 aufstellen, errichten (ein Gebäude u. s. w. [AGNI-P. 38,28. 30]), anlegen, gründen (eine Stadt u. s. w.).
+
+- **RU:** — 7〉 возводить, воздвигать (здание u. s. w. [AGNI-P. 38,28. 30]), закладывать, основывать (город u. s. w.).
 - **EN:** — 7) to set up, erect (a building u. s. w. [AGNI-P. 38,28. 30]), to lay out, found (a city u. s. w.).
+  <sub>attested</sub>
 
 **ni-vi-caus-8)** — 8〉 bevölkern, bewohnt machen.
+
+- **RU:** — 8〉 заселять, делать обитаемым.
 - **EN:** — 8) to populate, to make inhabited.
+  <sub>attested</sub>
 
 **ni-vi-caus-9)** — 9〉 sitzen machen, setzen auf (Loc.).
+
+- **RU:** — 9〉 сажать, усаживать на (Loc.).
 - **EN:** — 9) to make sit, to seat upon (Loc.).
+  <sub>attested</sub>
 
 **ni-vi-caus-10)** — 10〉 schleudern, abschiessen auf (Loc.).
+
+- **RU:** — 10〉 метать, пускать в (Loc.).
 - **EN:** — 10) to hurl, to shoot off at (Loc.).
+  <sub>attested</sub>
 
 **ni-vi-caus-11)** — 11〉 stecken —, hineinsetzen in (Loc.).
+
+- **RU:** — 11〉 вставлять —, помещать в (Loc.).
 - **EN:** — 11) to insert —, to put into (Loc.).
+  <sub>attested</sub>
 
 **ni-vi-caus-12)** — 12〉 aufstecken, aufsetzen, auflegen, anlegen (auch Schmucksachen, Kleidungsstücke), ansetzen, befestigen; das Worauf oder Woran im Loc.
+
+- **RU:** — 12〉 надевать, накладывать, налагать, прикреплять (также украшения, одежду), приставлять, укреплять; то, на что или к чему, в Loc.
 - **EN:** — 12) to put on, set on, lay on, put on (also ornaments, articles of clothing), to attach, fasten; the thing on or to which in Loc.
+  <sub>attested</sub>
 
 **ni-vi-caus-13)** — 13〉 auftragen (Zeichen u. s. w.) auf (Loc.). *citre* so v. a. malen, *pattre* so v. a. niederschreiben ([216,8]), *nāma svahastena* so v. a. eigenhändig unterschreiben.
+
+- **RU:** — 13〉 наносить (знак u. s. w.) на (Loc.). *citre* так v. a. рисовать, *pattre* так v. a. записывать ([216,8]), *nāma svahastena* так v. a. подписывать собственноручно.
 - **EN:** — 13) to apply (a mark u. s. w.) to (Loc.). *citre* so v. a. to paint, *pattre* so v. a. to write down ([216,8]), *nāma svahastena* so v. a. to sign with one's own hand.
+  <sub>attested</sub>
 
 **ni-vi-caus-14)** — 14〉 einsetzen in (ein Amt, eine Stellung), als Fürsten einsetzen in; mit Loc. *kare* so v. a. tributpflichtig machen. *karaniveśita* tr. gemacht.
+
+- **RU:** — 14〉 вводить в должность (пост, положение), поставлять князем в; с Loc. *kare* так v. a. облагать данью. *karaniveśita* tr. сделанный.
 - **EN:** — 14) to install in (an office, a position), to install as ruler in; with Loc. *kare* so v. a. to make tributary. *karaniveśita* made tr..
+  <sub>attested</sub>
 
 **ni-vi-caus-15)** — 15〉 Jmd (Loc.) ein Amt, eine Würde (Acc.) übertragend, Etwas übertragen auf Jmd (Loc.) [88,28]. [136,6]. verleihen, geben überh. *nāma* einen Namen.
+
+- **RU:** — 15〉 передавая кому-л. (Loc.) должность, достоинство (Acc.), возлагая нечто на кого-л. (Loc.) [88,28]. [136,6]. жаловать, давать überh. *nāma* имя.
 - **EN:** — 15) conferring upon someone (Loc.) an office, a dignity (Acc.); to confer something upon someone (Loc.) [88,28]. [136,6]. to bestow, to give überh. *nāma* a name.
+  <sub>attested</sub>
 
 **ni-vi-caus-16)** — 16〉 den Blick, die Gedanken, den Geist richten auf (Loc.).
+
+- **RU:** — 16〉 взгляд, мысли, дух устремлять на (Loc.).
 - **EN:** — 16) to direct the gaze, the thoughts, the mind toward (Loc.).
+  <sub>attested</sub>
 
 **ni-vi-caus-17)** — 17〉 *citte*, *hṛdaye* Etwas dem Herzen einprägen, dem Geist vorführen.
+
+- **RU:** — 17〉 *citte*, *hṛdaye* запечатлевать что-л. в сердце, представлять уму.
 - **EN:** — 17) *citte*, *hṛdaye* to impress something upon the heart, to present it to the mind.
+  <sub>attested</sub>
 
 **ni-vi-caus-star)** — *Desid. *nivivikṣate*.
+
+- **RU:** — *Desid. *nivivikṣate*.
 - **EN:** — *Desid. *nivivikṣate*.
+  <sub>attested</sub>
 
 **sam-ni-vi)** — Mit *adhini* Med. sich vertragen mit, stimmen —, passen zu (*saha*) [Comm. zu ĀPAST. ŚR. 11,2,4].
+
+- **RU:** — С *adhini* Med. ладить с, соответствовать —, подходить к (*saha*) [Comm. zu ĀPAST. ŚR. 11,2,4].
 - **EN:** — With *adhini* Med. to agree with, to accord —, to suit (*saha*) [Comm. zu ĀPAST. ŚR. 11,2,4].
+  <sub>attested</sub>
 
 **ni-vi-caus2)** — Caus.
+
+- **RU:** — Caus.
 - **EN:** — Caus.
+  <sub>attested</sub>
 
 **ni-vi-caus2-1)** — 1〉 Jmd einsetzen über (Loc.).
+
+- **RU:** — 1〉 ставить кого-л. над (Loc.).
 - **EN:** — 1) to install someone over (Loc.).
+  <sub>attested</sub>
 
 **ni-vi-caus2-2)** — 2〉 veranlassen einer Sache (Acc.) obzuliegen, — sich zu widmen.
+
+- **RU:** — 2〉 побуждать посвятить себя чему-л. (Acc.), заняться этим.
 - **EN:** — 2) to induce to attend to —, to devote oneself to, a matter (Acc.).
+  <sub>attested</sub>
 
 **pra-ni-vi)** — Mit *abhini* Med. (Act. ungenau)
+
+- **RU:** — С *abhini* Med. (Act. неточно)
 - **EN:** — With *abhini* Med. (Act. inexact)
+  <sub>attested</sub>
 
 **pra-ni-vi-1)** — 1〉 eintreten —, sich ergiessen —, eindringen in (Acc.).
+
+- **RU:** — 1〉 вступать —, изливаться —, проникать в (Acc.).
 - **EN:** — 1) to enter —, to pour into —, to penetrate into (Acc.).
+  <sub>attested</sub>
 
 **pra-ni-vi-2)** — 2〉 sich versenken in, sich ganz hingeben; mit Acc.
+
+- **RU:** — 2〉 погружаться в, всецело предаваться; с Acc.
 - **EN:** — 2) to immerse oneself in, to give oneself over entirely; with Acc.
+  <sub>attested</sub>
 
 **pra-ni-vi-3)** — 3〉 auf seinem Kopf bestehen [MBH. 5,77,17].
+
+- **RU:** — 3〉 упорно стоять на своём [MBH. 5,77,17].
 - **EN:** — 3) to insist stubbornly, to be set in one's head [MBH. 5,77,17].
+  <sub>attested</sub>
 
 **pra-ni-vi-4)** — 4〉 Jmdm (Loc.) zukommen (Gegensatz abgehen) [224,23].
+
+- **RU:** — 4〉 причитаться кому-л. (Loc.) (противоположность недоставать) [224,23].
 - **EN:** — 4) to fall to someone (Loc.) (opposite abgehen = to be lacking) [224,23].
+  <sub>attested</sub>
 
 **pra-ni-vi-5)** — 5〉 zur Anwendung kommen [PARIBH. 58. 62. 63].
+
+- **RU:** — 5〉 находить применение [PARIBH. 58. 62. 63].
 - **EN:** — 5) to come into application [PARIBH. 58. 62. 63].
+  <sub>attested</sub>
 
 **pra-ni-vi-6)** — 6〉 *abhiniviṣṭa*
+
+- **RU:** — 6〉 *abhiniviṣṭa*
 - **EN:** — 6) *abhiniviṣṭa*
+  <sub>attested</sub>
 
 **pra-ni-vi-6a)** — a〉 mit pass. Bed.
+
+- **RU:** — a〉 с pass. Bed.
 - **EN:** — a) with pass. Bed.
+  <sub>attested</sub>
 
 **pra-ni-vi-6a-alpha)** — α〉 (worin Etwas gedrungen ist) aufgetrieben, aufgedunsen, gewölbt [R. 2,9,33].
+
+- **RU:** — α〉 (во что нечто проникло) вздутый, распухший, выпуклый [R. 2,9,33].
 - **EN:** — α) (into which something has penetrated) swollen, puffed up, vaulted [R. 2,9,33].
+  <sub>attested</sub>
 
 **pra-ni-vi-6a-beta)** — β〉 worin man (Instr.) sich versetzt hat, dem man sich ganz hingegeben hat [MBH. 8,82,31].
+
+- **RU:** — β〉 во что кто-л. (Instr.) погрузился, чему всецело предался [MBH. 8,82,31].
 - **EN:** — β) into which one (Instr.) has placed oneself, to which one has given oneself entirely [MBH. 8,82,31].
+  <sub>attested</sub>
 
 **pra-ni-vi-6a-gamma)** — γ〉 durchdrungen —, in Beschlag genommen von (Instr.).
+
+- **RU:** — γ〉 проникнутый —, охваченный (Instr.).
 - **EN:** — γ) pervaded by —, taken possession of by (Instr.).
+  <sub>attested</sub>
 
 **pra-ni-vi-6a-delta)** — δ〉 reichlich versehen mit (Instr.).
+
+- **RU:** — δ〉 обильно снабжённый (Instr.).
 - **EN:** — δ) abundantly furnished with (Instr.).
+  <sub>attested</sub>
 
 **pra-ni-vi-6b)** — b〉 mit act. Bed.
+
+- **RU:** — b〉 с act. Bed.
 - **EN:** — b) with act. Bed.
+  <sub>attested</sub>
 
 **pra-ni-vi-6b-alpha)** — α〉 sich festgesetzt habend an einem Orte.
+
+- **RU:** — α〉 укрепившийся, обосновавшийся в каком-л. месте.
 - **EN:** — α) having settled firmly in a place.
+  <sub>attested</sub>
 
 **pra-ni-vi-6b-beta)** — β〉 fest auf einen Punct gerichtet, ganz mit Etwas beschäftigt, nur Eines vor Augen habend, ganz versessen auf (Loc., Acc. mit *prati*, ein adv. Comp. mit *adhi* oder im Comp. vorangehend). Ohne Ergänzung [ŚIŚ. 16,43].
+
+- **RU:** — β〉 твёрдо устремлённый на одну точку, всецело занятый чем-л., имеющий перед глазами только одно, всецело помешанный на (Loc., Acc. с *prati*, adv. Comp. с *adhi* или предшествующий Comp.). Без дополнения [ŚIŚ. 16,43].
 - **EN:** — β) fixed firmly on one point, wholly occupied with something, having only one thing before one's eyes, wholly bent upon (Loc., Acc. with *prati*, a adv. Comp. with *adhi* or preceding in Comp.). Without complement [ŚIŚ. 16,43].
+  <sub>attested</sub>
 
 **pra-ni-vi-caus)** — Caus.
+
+- **RU:** — Caus.
 - **EN:** — Caus.
+  <sub>attested</sub>
 
 **pra-ni-vi-caus-1)** — 1〉 hineingehen —, eingehen lassen —, führen in (Loc.).
+
+- **RU:** — 1〉 входить —, впускать —, вводить в (Loc.).
 - **EN:** — 1) to make enter —, to let go into —, to lead into (Loc.).
+  <sub>attested</sub>
 
 **pra-ni-vi-caus-2)** — 2〉 Jmd sich gegenüber sitzen heissen auf (Loc.).
+
+- **RU:** — 2〉 велеть кому-л. сесть напротив на (Loc.).
 - **EN:** — 2) to bid someone sit down facing one upon (Loc.).
+  <sub>attested</sub>
 
 **pra-ni-vi-caus-3)** — 3〉 *manas*, *ātmānam* den Geist —, die Gedanken ganz richten auf (Loc.).
+
+- **RU:** — 3〉 *manas*, *ātmānam* всецело устремлять дух —, мысли на (Loc.).
 - **EN:** — 3) *manas*, *ātmānam* to direct the mind —, the thoughts wholly upon (Loc.).
+  <sub>attested</sub>
 
 **pra-ni-vi-caus-4)** — 4〉 bewirken, dass Jmd einer Sache sein ganzes Herz zuwendet, Jmds ganzes Verlangen richten auf (Loc.).
+
+- **RU:** — 4〉 добиваться того, чтобы кто-л. обратил к чему-л. всё своё сердце, направлять всё чьё-л. желание на (Loc.).
 - **EN:** — 4) to bring it about that someone turns his whole heart to a matter, to direct someone's entire desire toward (Loc.).
+  <sub>attested</sub>
 
 **vi-ni-vi)** — Mit *upani*, *˚viṣṭa*
+
+- **RU:** — С *upani*, *˚viṣṭa*
 - **EN:** — With *upani*, *˚viṣṭa*
+  <sub>attested</sub>
 
 **vi-ni-vi-1)** — 1〉 erfüllt von (Instr.).
+
+- **RU:** — 1〉 исполненный (Instr.).
 - **EN:** — 1) filled with (Instr.).
+  <sub>attested</sub>
 
 **vi-ni-vi-2)** — 2〉 belagernd, einschliessend; mit Acc.
+
+- **RU:** — 2〉 осаждающий, окружающий; с Acc.
 - **EN:** — 2) besieging, surrounding; with Acc.
+  <sub>attested</sub>
 
 **vi-ni-vi-3)** — 3〉 erfüllend, mit Acc.
+
+- **RU:** — 3〉 наполняющий, с Acc.
 - **EN:** — 3) filling, with Acc.
+  <sub>attested</sub>
 
 **sam-ni-vi-caus)** — Caus.
+
+- **RU:** — Caus.
 - **EN:** — Caus.
+  <sub>attested</sub>
 
 **sam-ni-vi-caus-1)** — 1〉 sich lagern lassen.
+
+- **RU:** — 1〉 давать расположиться станом.
 - **EN:** — 1) to make encamp.
+  <sub>attested</sub>
 
 **sam-ni-vi-caus-2)** — 2〉 anlegen, gründen (eine Stadt).
+
+- **RU:** — 2〉 закладывать, основывать (город).
 - **EN:** — 2) to lay out, found (a city).
+  <sub>attested</sub>
 
 **pari-ni-vi)** — Mit *pariṇi* sich rings niederlassen.
+
+- **RU:** — С *pariṇi* селиться кругом, вокруг.
 - **EN:** — With *pariṇi* to settle down all around.
+  <sub>attested</sub>
 
 **pari-ni-vi-star)** — Mit **praṇi*.
+
+- **RU:** — С **praṇi*.
 - **EN:** — With **praṇi*.
+  <sub>attested</sub>
 
 **vi-pra-ni-vi)** — Mit *pratini*, *˚viṣṭa* ganz beschäftigt mit, nur Sinn habend für (Loc.). Ohne Ergänzung auf seinem Kopfe bestehend, verstockt.
+
+- **RU:** — С *pratini*, *˚viṣṭa* всецело занятый чем-л., помышляющий только о (Loc.). Без дополнения упорствующий на своём, упрямый.
 - **EN:** — With *pratini*, *˚viṣṭa* wholly occupied with, having a mind for nothing but (Loc.). Without complement, stubbornly set in one's own head, obstinate.
+  <sub>attested</sub>
 
 **sam-pra-ni-vi)** — Mit *vini*, *˚viṣṭa*
+
+- **RU:** — С *vini*, *˚viṣṭa*
 - **EN:** — With *vini*, *˚viṣṭa*
+  <sub>attested</sub>
+
+**175)** — С *anūpa*
+
+- **RU:** — С *anūpa*
+  <sub>attested</sub>
+
+**190)** — Caus.
+
+- **RU:** — Caus.
+  <sub>attested</sub>
+
+**221)** — Caus.
+
+- **RU:** — Caus.
+  <sub>attested</sub>
+
+**241)** — Caus.
+
+- **RU:** — Caus.
+  <sub>attested</sub>
+
+**259)** — Caus.
+
+- **RU:** — Caus.
+  <sub>attested</sub>
+
+**268)** — Caus.
+
+- **RU:** — Caus.
+  <sub>attested</sub>
+
+**269-1)** — 1〉 sich lagern lassen.
+
+- **RU:** — 1〉 давать расположиться станом.
+  <sub>attested</sub>
 
 ## viś
 
@@ -5843,303 +6638,615 @@ u. s. w. [ṚV. 4,50,8.] [6,8,4.] [10,124,8.] [173,6.] of the Tṛṇaskanda
 
 
 **1)** — 1〉 wohnend in (im Comp. vorangehend).
+
+- **RU:** — 1〉 живущий в Comp. (предшествующем).
 - **EN:** — 1) dwelling in (with Comp. preceding).
+  <sub>attested</sub>
 
 **2)** — 2〉 befindlich —, vorkommend in (Loc.).
+
+- **RU:** — 2〉 находящийся —, встречающийся в (Loc.).
 - **EN:** — 2) being —, occurring in (Loc.).
+  <sub>attested</sub>
 
 **3)** — 3〉 aufgestellt an oder in (Loc.).
+
+- **RU:** — 3〉 поставленный у или в (Loc.).
 - **EN:** — 3) set up at or in (Loc.).
+  <sub>attested</sub>
 
 **4)** — 4〉 aufgetragen auf (Loc., von Zeichen).
+
+- **RU:** — 4〉 нанесённый на (Loc., о знаках).
 - **EN:** — 4) applied to (Loc., of marks).
+  <sub>attested</sub>
 
 **5)** — 5〉 angelegt (Teiche).
+
+- **RU:** — 5〉 устроенный, заложенный (о прудах).
 - **EN:** — 5) laid out (ponds).
+  <sub>attested</sub>
 
 **6)** — 6〉 vertheilt, je anders seiend [Comm. zu LĀṬY. 9,4,34. 5,4].
+
+- **RU:** — 6〉 распределённый, каждый раз иной [Comm. zu LĀṬY. 9,4,34. 5,4].
 - **EN:** — 6) distributed, each being different [Comm. zu LĀṬY. 9,4,34. 5,4].
+  <sub>attested</sub>
 
 **caus-intro)** — Caus.
+
+- **RU:** — Caus.
 - **EN:** — Caus.
+  <sub>attested</sub>
 
 **caus-1)** — 1〉 niedersetzen, hinstellen, verlegen; das Wo oder Wohin im Loc.
+
+- **RU:** — 1〉 усаживать, ставить, помещать; «где» или «куда» выражено в Loc.
 - **EN:** — 1) to set down, place, relocate; the where or whither with Loc.
+  <sub>attested</sub>
 
 **caus-2)** — 2〉 aufstellen, errichten (ein Bildniss u. s. w.), anlegen (eine Stadt u. s. w.) [AGNI-P. 38,27].
+
+- **RU:** — 2〉 воздвигать, возводить (изображение u. s. w.), закладывать (город u. s. w.) [AGNI-P. 38,27].
 - **EN:** — 2) to set up, erect (an image u. s. w.), to found (a city u. s. w.) [AGNI-P. 38,27].
+  <sub>attested</sub>
 
 **caus-3)** — 3〉 aufstellen (Truppen).
+
+- **RU:** — 3〉 расставлять, выстраивать (войска).
 - **EN:** — 3) to deploy (troops).
+  <sub>attested</sub>
 
 **caus-4)** — 4〉 sitzen machen, setzen auf (Loc.).
+
+- **RU:** — 4〉 усаживать, сажать на (Loc.).
 - **EN:** — 4) to make sit, seat upon (Loc.).
+  <sub>attested</sub>
 
 **caus-5)** — 5〉 stecken in (Loc.).
+
+- **RU:** — 5〉 всовывать, помещать в (Loc.).
 - **EN:** — 5) to insert into (Loc.).
+  <sub>attested</sub>
 
 **caus-6)** — 6〉 aufsetzen, auflegen, anlegen; das Worauf oder Woran im Loc. [Spr. 7770].
+
+- **RU:** — 6〉 надевать, накладывать, прилаживать; «на что» выражено в Loc. [Spr. 7770].
 - **EN:** — 6) to put on, lay on, apply; the whereon or whereat with Loc. [Spr. 7770].
+  <sub>attested</sub>
 
 **caus-7)** — 7〉 anbringen, anwenden.
+
+- **RU:** — 7〉 прилагать, применять.
 - **EN:** — 7) to attach, apply.
+  <sub>attested</sub>
 
 **caus-8)** — 8〉 bringen —, versetzen auf (Loc.).
+
+- **RU:** — 8〉 приводить —, переносить на (Loc.).
 - **EN:** — 8) to bring —, place upon (Loc.).
+  <sub>attested</sub>
 
 **caus-9)** — 9〉 Jmd anstellen bei (Loc.). *kare* so v. a. tributpflichtig machen.
+
+- **RU:** — 9〉 определять кого-л. на службу к (Loc.). *kare* так v. a. делать данником, обязывать данью.
 - **EN:** — 9) to employ someone at/with (Loc.). *kare* thus v. a. to make tributary.
+  <sub>attested</sub>
 
 **caus-10)** — 10〉 *hṛdaye* inʼs Herz prägen.
+
+- **RU:** — 10〉 *hṛdaye* запечатлевать в сердце.
 - **EN:** — 10) *hṛdaye* to imprint upon the heart.
+  <sub>attested</sub>
 
 **caus-11)** — 11〉 den Blick —, die Gedanken richten auf (Loc.).
+
+- **RU:** — 11〉 обращать взор —, направлять мысли на (Loc.).
 - **EN:** — 11) to direct the gaze —, the thoughts toward (Loc.).
+  <sub>attested</sub>
 
 **caus-anu-intro)** — Mit *saṃni*
+
+- **RU:** — С *saṃni*
 - **EN:** — With *saṃni*
+  <sub>attested</sub>
 
 **caus-anu-1)** — 1〉 Med. verkehren —, Umgang haben mit (Instr.).
+
+- **RU:** — 1〉 Med. общаться —, водить знакомство с (Instr.).
 - **EN:** — 1) Med. to associate —, have intercourse with (Instr.).
+  <sub>attested</sub>
 
 **caus-anu-2-intro)** — 2〉 *˚viṣṭa*
+
+- **RU:** — 2〉 *˚viṣṭa*
 - **EN:** — 2) *˚viṣṭa*
+  <sub>attested</sub>
 
 **caus-anu-2a)** — a〉 gelagert, Halt gemacht habend.
+
+- **RU:** — a〉 расположившийся лагерем, сделавший привал.
 - **EN:** — a) encamped, having made a halt.
+  <sub>attested</sub>
 
 **caus-anu-2b)** — b〉 ruhend, steckend ([PRASANNAR. 54,12]), angesteckt, angehängt, enthalten, — in (Loc. oder im Comp. vorangehend).
+
+- **RU:** — b〉 покоящийся, находящийся, застрявший ([PRASANNAR. 54,12]), прикреплённый, привешенный, заключённый —, находящийся в (Loc. или в предшествующем Comp.).
 - **EN:** — b) resting, lodged ([PRASANNAR. 54,12]), attached, appended, contained — in (Loc. or with Comp. preceding).
+  <sub>attested</sub>
 
 **caus-anu-2c)** — c〉 sitzend.
+
+- **RU:** — c〉 сидящий.
 - **EN:** — c) sitting.
+  <sub>attested</sub>
 
 **caus-anu-2d)** — d〉 sich befindend auf (einem Wege, Loc.).
+
+- **RU:** — d〉 находящийся на (пути, Loc.).
 - **EN:** — d) being situated on (a road, Loc.).
+  <sub>attested</sub>
 
 **caus-anu-2e)** — e〉 in Jmds Hand seiend, so v. a. abhängig von (Loc.).
+
+- **RU:** — e〉 находящийся в чьей-л. руке, так v. a. зависимый от (Loc.).
 - **EN:** — e) being in someone's hand, thus v. a. dependent on (Loc.).
+  <sub>attested</sub>
 
 **caus-ava-intro)** — Caus.
+
+- **RU:** — Caus.
 - **EN:** — Caus.
+  <sub>attested</sub>
 
 **caus-ava-1)** — 1〉 einführen (in ein Haus u. s. w.), einquartiren in (Loc.).
+
+- **RU:** — 1〉 вводить (в дом u. s. w.), поселять, размещать в (Loc.).
 - **EN:** — 1) to bring in (into a house u. s. w.), to quarter in (Loc.).
+  <sub>attested</sub>
 
 **caus-ava-2)** — 2〉 niedersetzen, hinstellen, niederlegen.
+
+- **RU:** — 2〉 усаживать, ставить, класть.
 - **EN:** — 2) to set down, place, lay down.
+  <sub>attested</sub>
 
 **caus-ava-3)** — 3〉 aufstellen (Truppen).
+
+- **RU:** — 3〉 расставлять, выстраивать (войска).
 - **EN:** — 3) to deploy (troops).
+  <sub>attested</sub>
 
 **caus-ava-4)** — 4〉 sich lagern lassen.
+
+- **RU:** — 4〉 давать расположиться лагерем.
 - **EN:** — 4) to let encamp.
+  <sub>attested</sub>
 
 **caus-ava-5)** — 5〉 einbringen, hineinthun, thun in (Loc.). *saṃniveśita* hineingeschoben, hineingedrückt in (Loc.).
+
+- **RU:** — 5〉 вносить, вкладывать, помещать в (Loc.). *saṃniveśita* — вдвинутый, вдавленный в (Loc.).
 - **EN:** — 5) to bring in, put inside, place into (Loc.). *saṃniveśita* pushed in, pressed into (Loc.).
+  <sub>attested</sub>
 
 **caus-ava-6)** — 6〉 schleudern, schiessen auf (Loc.).
+
+- **RU:** — 6〉 метать, стрелять в (Loc.).
 - **EN:** — 6) to hurl, shoot at (Loc.).
+  <sub>attested</sub>
 
 **caus-ava-7)** — 7〉 anheften, anlegen, legen auf (Loc.) [64,29]. *lekhye* so v. a. auf einem Documente verzeichnen [KĀTY.]
+
+- **RU:** — 7〉 прикреплять, накладывать, класть на (Loc.) [64,29]. *lekhye* так v. a. записывать на документе [KĀTY.]
 - **EN:** — 7) to fasten, apply, lay upon (Loc.) [64,29]. *lekhye* thus v. a. to record on a document [KĀTY.]
+  <sub>attested</sub>
 
 **caus-ava-8)** — 8〉 anlegen, gründen (eine Stadt).
+
+- **RU:** — 8〉 закладывать, основывать (город).
 - **EN:** — 8) to found, establish (a city).
+  <sub>attested</sub>
 
 **caus-ava-9)** — 9〉 Jmd einsetzen in (Loc.).
+
+- **RU:** — 9〉 назначать, вводить кого-л. в (Loc.) (должность).
 - **EN:** — 9) to install someone in (Loc.).
+  <sub>attested</sub>
 
 **caus-ava-10)** — 10〉 Jmd (Loc.) Etwas aufladen, übertragen.
+
+- **RU:** — 10〉 возлагать —, перекладывать что-л. на кого-л. (Loc.).
 - **EN:** — 10) to load —, transfer something onto someone (Loc.).
+  <sub>attested</sub>
 
 **caus-ava-11)** — 11〉 den Geist richten auf (Loc.)
+
+- **RU:** — 11〉 направлять дух на (Loc.)
 - **EN:** — 11) to direct the mind toward (Loc.)
+  <sub>attested</sub>
 
 **caus-ava-12)** — Mit *abhisaṃni*, *abhisaṃniviṣṭa* in Jmd vereinigt.
+
+- **RU:** — С *abhisaṃni*, *abhisaṃniviṣṭa* соединённый —, слитый с кем-л.
 - **EN:** — With *abhisaṃni*, *abhisaṃniviṣṭa* united in someone.
+  <sub>attested</sub>
 
 **caus-aa-intro)** — Mit *nis*
+
+- **RU:** — С *nis*
 - **EN:** — With *nis*
+  <sub>attested</sub>
 
 **caus-aa-1)** — 1〉 sich hineinbegeben in (Acc. oder Loc.). *gṛheṣu* so v. a. Hausvater werden.
+
+- **RU:** — 1〉 входить, вселяться в (Acc. или Loc.). *gṛheṣu* так v. a. становиться отцом семейства, домохозяином.
 - **EN:** — 1) to enter into (Acc. or Loc.). *gṛheṣu* thus v. a. to become a householder.
+  <sub>attested</sub>
 
 **caus-aa-2)** — 2〉 ein Haus beziehen, heirathen (vom Manne).
+
+- **RU:** — 2〉 поселяться в доме, жениться (о мужчине).
 - **EN:** — 2) to move into a house, to marry (of a man).
+  <sub>attested</sub>
 
 **caus-aa-3)** — 3〉 abtragen, bezahlen.
+
+- **RU:** — 3〉 уплачивать, погашать (долг).
 - **EN:** — 3) to pay off, discharge.
+  <sub>attested</sub>
 
 **caus-aa-4)** — 4〉 geniessen, Genuss —, Freude haben an (Acc.).
+
+- **RU:** — 4〉 наслаждаться —, получать удовольствие —, радость от (Acc.).
 - **EN:** — 4) to enjoy, have enjoyment —, take pleasure in (Acc.).
+  <sub>attested</sub>
 
 **caus-aa-5-intro)** — 5〉 *nirviṣṭa*
+
+- **RU:** — 5〉 *nirviṣṭa*
 - **EN:** — 5) *nirviṣṭa*
+  <sub>attested</sub>
 
 **caus-aa-5a)** — a〉 hineingegangen, steckend in (Loc. oder im Comp. vorangehend).
+
+- **RU:** — a〉 вошедший, находящийся в (Loc. или в предшествующем Comp.).
 - **EN:** — a) having entered, lodged in (Loc. or with Comp. preceding).
+  <sub>attested</sub>
 
 **caus-aa-5b)** — b〉 sitzend. v. l. *niviṣṭa*
+
+- **RU:** — b〉 сидящий. v. l. *niviṣṭa*
 - **EN:** — b) sitting. v. l. *niviṣṭa*
+  <sub>attested</sub>
 
 **caus-aa-5c)** — c〉 abgetragen, bezahlt.
+
+- **RU:** — c〉 уплаченный, погашенный.
 - **EN:** — c) paid off, discharged.
+  <sub>attested</sub>
 
 **caus-aa-5d)** — d〉 genossen.
+
+- **RU:** — d〉 испытанный, вкушённый.
 - **EN:** — d) enjoyed.
+  <sub>attested</sub>
 
 **caus-aa-5e)** — e〉 gewonnen, erarbeitet [GAUT.] — *nirviśantyāṃ* [MBH. 13,345] fehlerhaft für *nivi˚*.
+
+- **RU:** — e〉 добытый, заработанный [GAUT.] — *nirviśantyāṃ* [MBH. 13,345] ошибочно вместо *nivi˚*.
 - **EN:** — e) won, earned [GAUT.] — *nirviśantyāṃ* [MBH. 13,345] erroneous for *nivi˚*.
+  <sub>attested</sub>
 
 **caus-aa-6)** — Desid. eine gemeinsame Wohnung beziehen wollen.
+
+- **RU:** — Desid. желать поселиться вместе, в общем жилище.
 - **EN:** — Desid. wishing to take up a shared dwelling.
+  <sub>attested</sub>
 
 **caus-pari)** — Mit *pari* umlagern, belagern. — Simpl. und Caus. häufig fehlerhaft für **1.** *viṣ*
+
+- **RU:** — С *pari* окружать лагерем, осаждать. — Simpl. и Caus. часто ошибочно вместо **1.** *viṣ*
 - **EN:** — With *pari* to surround, besiege. — Simpl. and Caus. frequently erroneous for **1.** *viṣ*
+  <sub>attested</sub>
 
 **caus-pra1)** — Mit *pari*.
+
+- **RU:** — С *pari*.
 - **EN:** — With *pari*.
+  <sub>attested</sub>
 
 **pra-intro)** — Mit *pra*
+
+- **RU:** — С *pra*
 - **EN:** — With *pra*
+  <sub>attested</sub>
 
 **pra-1)** — 1〉 eingehen, eintreten, eindringen, sich verstecken, sich begeben zu, in oder unter, gerathen in; die Ergänzung im Acc. oder Loc. *agnim, agnau*, *madhyamagneḥ*, *citāyām* so v. a. den Scheiterhaufen besteigen; *karṇayos* zu Ohren kommen; *ātmani*, *cittam* u. s. w. in das Herz u. s. w. dringen, sich dessen bemächtigen, Ohne Ergänzung eintreten (in ein Haus u. s. w.), im Schauspiel stehender Ausdruck für auf der Bühne auftreten.
+
+- **RU:** — 1〉 входить, вступать, проникать, прятаться, направляться к —, в или под, попадать в; дополнение в Acc. или Loc. *agnim, agnau*, *madhyamagneḥ*, *citāyām* так v. a. восходить на костёр; *karṇayos* доходить до слуха; *ātmani*, *cittam* u. s. w. проникать в сердце u. s. w., овладевать им; без дополнения — входить (в дом u. s. w.); в драме устойчивое выражение для «выходить на сцену».
 - **EN:** — 1) to go in, enter, penetrate, hide oneself, betake oneself to, into or under, fall into; the complement with Acc. or Loc. *agnim, agnau*, *madhyamagneḥ*, *citāyām* thus v. a. to mount the funeral pyre; *karṇayos* to come to one's ears; *ātmani*, *cittam* u. s. w. to penetrate into the heart u. s. w. and take possession of it, without a complement to enter (a house u. s. w.), in drama the fixed expression for to come on stage.
+  <sub>attested</sub>
 
 **pra-2)** — 2〉 gelangen zu, erreichen; mit Acc.
+
+- **RU:** — 2〉 доходить до, достигать; с Acc.
 - **EN:** — 2) to arrive at, reach; with Acc.
+  <sub>attested</sub>
 
 **pra-3)** — 3〉 sich geschlechtlich vermischen (von beiden Geschlechtern), mit Acc.
+
+- **RU:** — 3〉 вступать в половую связь (об обоих полах), с Acc.
 - **EN:** — 3) to have sexual intercourse (of either sex), with Acc.
+  <sub>attested</sub>
 
 **pra-4)** — 4〉 an Etwas gehen, obliegen, sich einer Sache hingeben; mit Acc., seltener Loc. ([Spr. 77]). *piṇḍīm*, *tarpaṇam* so v. a. annehmen, geniessen [229,12].
+
+- **RU:** — 4〉 приступать к чему-л., заниматься —, предаваться чему-л.; с Acc., реже Loc. ([Spr. 77]). *piṇḍīm*, *tarpaṇam* так v. a. принимать, вкушать [229,12].
 - **EN:** — 4) to set about something, attend to, devote oneself to a matter; with Acc., more rarely Loc. ([Spr. 77]). *piṇḍīm*, *tarpaṇam* thus v. a. to take up, enjoy [229,12].
+  <sub>attested</sub>
 
 **pra-5)** — 5〉 in Jmd (Acc.) hineingehen, so v. a. in ihm aufgehen, gegen ihn verschwinden, vor ihm ganz in den Schatten treten.
+
+- **RU:** — 5〉 входить в кого-л. (Acc.), так v. a. растворяться в нём, исчезать перед ним, совершенно меркнуть в его тени.
 - **EN:** — 5) to pass into someone (Acc.), thus v. a. to be absorbed in him, vanish beside him, be utterly eclipsed before him.
+  <sub>attested</sub>
 
 **pra-6-intro)** — 6〉 *praviṣṭa*
+
+- **RU:** — 6〉 *praviṣṭa*
 - **EN:** — 6) *praviṣṭa*
+  <sub>attested</sub>
 
 **pra-6a-intro)** — a〉 mit act. Bed.
+
+- **RU:** — a〉 с act. Bed.
 - **EN:** — a) with act. Bed.
+  <sub>attested</sub>
 
 **pra-6a-alpha)** — α〉 eingegangen, eingetreten, sich begeben habend unter, eingedrungen, sich befindend in; die Ergänzung im Acc., Loc. oder im Comp. vorangehend. Ohne Ergänzung eingetreten (in ein Haus), aufgetreten (auf der Bühne).
+
+- **RU:** — α〉 вошедший, вступивший, направившийся под —, проникший, находящийся в; дополнение в Acc., Loc. или в предшествующем Comp.. Без дополнения — вошедший (в дом), выступивший (на сцене).
 - **EN:** — α) having gone in, entered, betaken oneself under, penetrated, being situated in; the complement with Acc., Loc. or with Comp. preceding. Without a complement having entered (a house), having come on (the stage).
+  <sub>attested</sub>
 
 **pra-6a-beta)** — β〉 eingegangen, in, so v. a. Platz findend —, verschwindend in (Loc.).
+
+- **RU:** — β〉 вошедший, в, так v. a. находящий место —, исчезающий в (Loc.).
 - **EN:** — β) having gone into, thus v. a. finding a place —, disappearing in (Loc.).
+  <sub>attested</sub>
 
 **pra-6a-gamma)** — γ〉 eingesunken (Auge).
+
+- **RU:** — γ〉 запавший (о глазе).
 - **EN:** — γ) sunken (eye).
+  <sub>attested</sub>
 
 **pra-6a-delta)** — δ〉 eingetreten, angebrochen (Zeitalter).
+
+- **RU:** — δ〉 наступивший (о веке, эпохе).
 - **EN:** — δ) having set in, begun (an age/era).
+  <sub>attested</sub>
 
 **pra-6a-eps)** — ε〉 gerichtet auf, versenkt im (im Comp. vorangehend).
+
+- **RU:** — ε〉 направленный на —, погружённый в (в предшествующем Comp.).
 - **EN:** — ε) directed at, absorbed in (with Comp. preceding).
+  <sub>attested</sub>
 
 **pra-6a-zeta)** — ζ〉 eingedrungen in (*madhya˚*), so v. a. Jmds Vertrauen gewonnen habend.
+
+- **RU:** — ζ〉 проникший в (*madhya˚*), так v. a. завоевавший чьё-л. доверие.
 - **EN:** — ζ) having penetrated into (*madhya˚*), thus v. a. having won someone's trust.
+  <sub>attested</sub>
 
 **pra-6a-eta)** — η〉 eingedrungen in, so v. a. eingeweiht in (Acc.).
+
+- **RU:** — η〉 проникший в, так v. a. посвящённый в (Acc.).
 - **EN:** — η) having penetrated into, thus v. a. initiated into (Acc.).
+  <sub>attested</sub>
 
 **pra-6a-theta)** — ϑ〉 der an Etwas gegangen ist, sich an Etwas gemacht hat, beschäftigt mit (Loc.). *rājye* so v. a. die Herrschaft angetreten habend.
+
+- **RU:** — ϑ〉 тот, кто приступил к чему-л., взялся за что-л., занят чем-л. (Loc.). *rājye* так v. a. вступивший во власть.
 - **EN:** — ϑ) one who has set about something, has applied himself to something, occupied with (Loc.). *rājye* thus v. a. having assumed the rule.
+  <sub>attested</sub>
 
 **pra-6a-iota)** — ι〉 übereinstimmend mit (Loc.).
+
+- **RU:** — ι〉 согласующийся с (Loc.).
 - **EN:** — ι) agreeing with (Loc.).
+  <sub>attested</sub>
 
 **pra-6b-intro)** — b〉 mit pass. Bed.
+
+- **RU:** — b〉 с pass. Bed.
 - **EN:** — b) with pass. Bed.
+  <sub>attested</sub>
 
 **pra-6b-alpha)** — α〉 worin man eingetreten ist, betreten.
+
+- **RU:** — α〉 то, во что вошли —, вступили; проторённый, пройденный.
 - **EN:** — α) that which one has entered, trodden upon.
+  <sub>attested</sub>
 
 **pra-6b-beta)** — β〉 benutzt, womit man Geschäfte macht.
+
+- **RU:** — β〉 используемый, тот, посредством чего ведут дела.
 - **EN:** — β) used, that with which one conducts business.
+  <sub>attested</sub>
 
 **prac-intro)** 
 
 **prac-1)** — 1〉 hereintreten lassen, an einen Ort bringen oder bringen lassen, vorführen; das Wohin im Loc. oder Acc. Ohne Ergänzung Jmd hineinführen (inʼs Haus u. s. w.), hereinführen auf die Bühne, auftreten lassen.
+
+- **RU:** — 1〉 впускать, приводить в место или давать привести, представлять; «куда» в Loc. или Acc.; без дополнения — вводить кого-л. (в дом u. s. w.), выводить на сцену.
 - **EN:** — 1) to let enter, bring to a place or have brought, bring forward; the whither with Loc. or Acc.. Without a complement to lead someone in (into the house u. s. w.), to lead onto the stage, let appear.
+  <sub>attested</sub>
 
 **prac-2)** — 2〉 in sein Haus führen, so v. a. heirathen (vom Manne).
+
+- **RU:** — 2〉 вводить в свой дом, так v. a. жениться (о мужчине).
 - **EN:** — 2) to lead into one's house, thus v. a. to marry (of a man).
+  <sub>attested</sub>
 
 **prac-3)** — 3〉 niederlegen, hinthun, hinwerfen u. s. w. in (Loc. oder Acc.).
+
+- **RU:** — 3〉 класть, помещать, бросать u. s. w. в (Loc. или Acc.).
 - **EN:** — 3) to lay down, put, throw down u. s. w. into (Loc. or Acc.).
+  <sub>attested</sub>
 
 **prac-4)** — 4〉 in seine Würde —, in sein Amt einsetzen. Nur *praveśita*.
+
+- **RU:** — 4〉 вводить в должность —, сан. Только *praveśita*.
 - **EN:** — 4) to install in his dignity —, into his office. Only *praveśita*.
+  <sub>attested</sub>
 
 **prac-5)** — 5〉 Jmd in einen Zustand (Acc.) versetzen.
+
+- **RU:** — 5〉 приводить кого-л. в состояние (Acc.).
 - **EN:** — 5) to put someone into a state (Acc.).
+  <sub>attested</sub>
 
 **prac-6)** — 6〉 niederschreiben [215,8].
+
+- **RU:** — 6〉 записывать [215,8].
 - **EN:** — 6) to write down [215,8].
+  <sub>attested</sub>
 
 **prac-7)** — 7〉 einführen —, einweihen in (Acc.).
+
+- **RU:** — 7〉 вводить —, посвящать в (Acc.).
 - **EN:** — 7) to introduce —, initiate into (Acc.).
+  <sub>attested</sub>
 
 **prac-8)** — 8〉 Jmd (Loc.) Etwas beibringen.
+
+- **RU:** — 8〉 обучать кого-л. (Loc.) чему-л.
 - **EN:** — 8) to teach someone (Loc.) something.
+  <sub>attested</sub>
 
 **prac-9)** — 9〉 verausgaben.
+
+- **RU:** — 9〉 расходовать, тратить.
 - **EN:** — 9) to expend, spend.
+  <sub>attested</sub>
 
 **prac-10)** — 10〉 hereintreten, hineingehen, hineingebracht werden.
+
+- **RU:** — 10〉 входить, вступать; быть внесённым, введённым.
 - **EN:** — 10) to enter, go in, be brought in.
+  <sub>attested</sub>
 
 **des)** — Desid. *pravivikṣati* hineinzugehen —, einzudringen versuchen, im Begriff sein einzugehen in (Acc.) [CARAKA. 5,12]. Häufig mit Ergänzung von *senām*.
+
+- **RU:** — Desid. *pravivikṣati* пытающийся войти —, проникнуть; собирающийся войти в (Acc.) [CARAKA. 5,12]. Часто с дополнением *senām*.
 - **EN:** — Desid. *pravivikṣati* trying to go in —, to penetrate, about to enter into (Acc.) [CARAKA. 5,12]. Often with the complement of *senām*.
+  <sub>attested</sub>
 
 **anupra-intro)** — Mit *anupra*
+
+- **RU:** — С *anupra*
 - **EN:** — With *anupra*
+  <sub>attested</sub>
 
 **anupra-1)** — 1〉 eingehen, eintreten, eindringen, fahren in, sich begeben unter (Acc., seltener Loc.). *anupraviṣṭa* mit act. (auch *praviṣṭaḥ — anu*) und pass. ([127,26]) Bed. *anyo'nyānupraviṣṭāni* in einander befindlich, *pathikasārthamanupraviṣṭaḥ* so v. a. schloss sich den Reisenden an.
+
+- **RU:** — 1〉 входить, вступать, проникать, попадать в, направляться под (Acc., реже Loc.). *anupraviṣṭa* с act. (также *praviṣṭaḥ — anu*) и pass. ([127,26]) Bed. *anyo'nyānupraviṣṭāni* находящиеся друг в друге, *pathikasārthamanupraviṣṭaḥ* так v. a. присоединился к путникам.
 - **EN:** — 1) to go in, enter, penetrate, pass into, betake oneself under (Acc., more rarely Loc.). *anupraviṣṭa* with act. (also *praviṣṭaḥ — anu*) and pass. ([127,26]) Bed. *anyo'nyānupraviṣṭāni* situated one within another, *pathikasārthamanupraviṣṭaḥ* thus v. a. joined the travelers.
+  <sub>attested</sub>
 
 **anupra-2)** — 2〉 nach Jmd in ein Haus, in ein Gemach treten, zu Jmd hereintreten; mit Acc. der Person. *kṛṣṇasyānupraviṣṭaḥ* nach Kṛṣṇa eingetreten.
+
+- **RU:** — 2〉 входить вслед за кем-л. в дом, в покой, входить к кому-л.; с Acc. лица. *kṛṣṇasyānupraviṣṭaḥ* вошедший вслед за Kṛṣṇa.
 - **EN:** — 2) to step into a house, into a chamber after someone, to come in to someone; with Acc. of the person. *kṛṣṇasyānupraviṣṭaḥ* having entered after Kṛṣṇa.
+  <sub>attested</sub>
 
 **anupra-3)** — 3〉 sich zu Jmd (Acc.) flüchten. *anupraviṣṭa* geflüchtet zu (Loc.).
+
+- **RU:** — 3〉 искать убежища у кого-л. (Acc.). *anupraviṣṭa* нашедший убежище у (Loc.).
 - **EN:** — 3) to flee to someone (Acc.). *anupraviṣṭa* having fled to (Loc.).
+  <sub>attested</sub>
 
 **anupra-4)** — 4〉 eindringen in, so v. a. sich vertraut machen mit, durchstudiren; mit Acc. [LALIT. 168,6]. *anupraviṣṭa* mit act. Bed. [523,11].
+
+- **RU:** — 4〉 проникать в, так v. a. осваиваться с чем-л., тщательно изучать; с Acc. [LALIT. 168,6]. *anupraviṣṭa* с act. Bed. [523,11].
 - **EN:** — 4) to penetrate into, thus v. a. to make oneself familiar with, study thoroughly; with Acc. [LALIT. 168,6]. *anupraviṣṭa* with act. Bed. [523,11].
+  <sub>attested</sub>
 
 **anupra-caus)** — Caus. eingehen machen in (Acc.).
+
+- **RU:** — Caus. заставлять войти в (Acc.).
 - **EN:** — Caus. to make enter into (Acc.).
+  <sub>attested</sub>
 
 **abhi-intro)** — Mit *abhipra*
+
+- **RU:** — С *abhipra*
 - **EN:** — With *abhipra*
+  <sub>attested</sub>
 
 **abhi-1)** — 1〉 sich ergiessen in (Acc.).
+
+- **RU:** — 1〉 изливаться в (Acc.).
 - **EN:** — 1) to pour itself into (Acc.).
+  <sub>attested</sub>
 
 **abhi-2)** — 2〉 *abhipraviṣṭa* hereingetreten, gerathen in (Acc.).
+
+- **RU:** — 2〉 *abhipraviṣṭa* вошедший, попавший в (Acc.).
 - **EN:** — 2) *abhipraviṣṭa* having entered, fallen into (Acc.).
+  <sub>attested</sub>
 
 **a-pra)** — Mit *pratipra* zurückkehren nach (Acc.).
+
+- **RU:** — С *pratipra* возвращаться в (Acc.).
 - **EN:** — With *pratipra* to return to (Acc.).
+  <sub>attested</sub>
 
 **upa-intro)** — Mit *saṃpra*
+
+- **RU:** — С *saṃpra*
 - **EN:** — With *saṃpra*
+  <sub>attested</sub>
 
 **upa-1)** — 1〉 eintreten —, hineingehen —, fahren in (Acc.). *hṛdayam* (mit *iva* [ŚIŚ. 10,48]) in Jmds Herz sich Eingang verschaffen, *mānasam*, *dhyānam* in Gedanken versinken.
+
+- **RU:** — 1〉 входить —, вступать —, направляться в (Acc.). *hṛdayam* (с *iva* [ŚIŚ. 10,48]) проникать в чьё-л. сердце, *mānasam*, *dhyānam* погружаться в мысли.
 - **EN:** — 1) to enter —, go into —, pass into (Acc.). *hṛdayam* (with *iva* [ŚIŚ. 10,48]) to gain entry into someone's heart, *mānasam*, *dhyānam* to sink into thought.
+  <sub>attested</sub>
 
 **upa-2)** — 2〉 geschlechtlich beiwohnen (vom Manne), mit Acc.
+
+- **RU:** — 2〉 иметь половую близость (о мужчине), с Acc.
 - **EN:** — 2) to cohabit with (of a man), with Acc.
+  <sub>attested</sub>
 
 **upa-3)** — 3〉 sich zu Jmd halten, verkehren mit (Acc.).
+
+- **RU:** — 3〉 держаться кого-л., общаться с (Acc.).
 - **EN:** — 3) to keep close to someone, associate with (Acc.).
+  <sub>attested</sub>
 
 **upa-4)** — 4〉 *saṃpraviśya* [RĀJAT. 6,36] fehlerhaft für *˚veśya*; vgl. [Spr. 6320].
+
+- **RU:** — 4〉 *saṃpraviśya* [RĀJAT. 6,36] ошибочно вместо *˚veśya*; vgl. [Spr. 6320].
 - **EN:** — 4) *saṃpraviśya* [RĀJAT. 6,36] erroneous for *˚veśya*; vgl. [Spr. 6320].
+  <sub>attested</sub>
+
+**Mit-aa-intro)** — Caus.
+
+- **RU:** — Caus.
+  <sub>attested</sub>
+
+**Mit-aa-3)** — 3〉 aufstellen (Truppen).
+
+- **RU:** — 3〉 расставлять, выстраивать (войска).
+  <sub>attested</sub>
+
+**Mit-praves-intro)** — Caus.
+
+- **RU:** — Caus.
+  <sub>attested</sub>
 
 ## viś
 
@@ -6147,78 +7254,155 @@ u. s. w. [ṚV. 4,50,8.] [6,8,4.] [10,124,8.] [173,6.] of the Tṛṇaskanda
 
 
 **ni-intro)** — Caus. eintreten lassen, hineinbringen (an seinen Platz [CARAKA. 6,30]), hineinführen in (Acc. oder Loc.) [HARIV. 2,47,45]. *vyasane* inʼs Unglück bringen [Spr. 6320] (Conj.). *saṃpraveśita* so v. a. inʼs Land wieder eingelassen (Gegensatz *nirvāsita* ve bannt). *saṃpraveśya* [RĀJAT. 4,32] fehlerhaft für *˚viśya*.
+
+- **RU:** — Caus. побуждать вступить, вводить внутрь (на его место [CARAKA. 6,30]), вводить, вести внутрь (Acc. или Loc.) [HARIV. 2,47,45]. *vyasane* вводить, ввергать в несчастье [Spr. 6320] (Conj.). *saṃpraveśita* так v. a. вновь впущенный в страну (в противоположность *nirvāsita* изгнанному). *saṃpraveśya* [RĀJAT. 4,32] ошибочно вместо *˚viśya*.
 - **EN:** — Caus. to let enter, bring in (to its place [CARAKA. 6,30]), to lead into (Acc. or Loc.) [HARIV. 2,47,45]. *vyasane* to bring into misfortune [Spr. 6320] (Conj.). *saṃpraveśita* thus v. a. readmitted into the land (opposite *nirvāsita* banished). *saṃpraveśya* [RĀJAT. 4,32] erroneous for *˚viśya*.
+  <sub>attested</sub>
 
 **ni-anu)** — Mit *vi* eingehen in (Acc.).
+
+- **RU:** — С *vi* входить, вступать в (Acc.).
 - **EN:** — With *vi* to enter into (Acc.).
+  <sub>attested</sub>
 
 **ni-note)** — Caus. [HARIV. 5910]. wo aber mit der anderen Ausg. [2,49,9] *viveśatuḥ* (metrisch für *viviśatuḥ*) st. *viveśitau* zu lesen ist.
+
+- **RU:** — Caus. [HARIV. 5910], где, однако, при другом Ausg. [2,49,9] *viveśatuḥ* (метрически вместо *viviśatuḥ*) следует читать st. *viveśitau*.
 - **EN:** — Caus. [HARIV. 5910]. where however with the other Ausg. [2,49,9] *viveśatuḥ* (metrically for *viviśatuḥ*) st. *viveśitau* is to be read.
+  <sub>attested</sub>
 
 **ni-vi)** — Mit *anuvi* sich da und dort niederlassen, — einfinden; mit Acc. [MAITR. S. 2,4,7. 8].
+
+- **RU:** — С *anuvi* селиться то там, то здесь, — являться, прибывать; с Acc. [MAITR. S. 2,4,7. 8].
 - **EN:** — With *anuvi* to settle here and there, — to put in an appearance; with Acc. [MAITR. S. 2,4,7. 8].
+  <sub>attested</sub>
 
 **ni-sam-intro)** — Mit *sam*
+
+- **RU:** — С *sam*
 - **EN:** — With *sam*
+  <sub>attested</sub>
 
 **ni-sam-1)** — 1〉 herbeikommen.
+
+- **RU:** — 1〉 приходить, являться.
 - **EN:** — 1) to come up, arrive.
+  <sub>attested</sub>
 
 **ni-sam-2)** — 2〉 sich anschliessen an (Acc.), sich vereinen mit (Instr.).
+
+- **RU:** — 2〉 присоединяться к (Acc.), объединяться, соединяться с (Instr.).
 - **EN:** — 2) to join (Acc.), to unite with (Instr.).
+  <sub>attested</sub>
 
 **ni-sam-3)** — 3〉 eintreten —, eingehen —, dringen —, fahren in (Acc., ausnahmsweise Loc.).
+
+- **RU:** — 3〉 вступать —, входить —, проникать —, врываться в (Acc., в порядке исключения Loc.).
 - **EN:** — 3) to enter —, go in —, penetrate —, pass into (Acc., exceptionally Loc.).
+  <sub>attested</sub>
 
 **ni-sam-4)** — 4〉 aufgehen in (Loc.).
+
+- **RU:** — 4〉 раствориться, слиться воедино с (Loc.).
 - **EN:** — 4) to be absorbed in (Loc.).
+  <sub>attested</sub>
 
 **ni-sam-5)** — 5〉 sich niederlassen, — niederlegen, — zur Ruhe begeben ([27,19]), mit oder zu seinem Weibe (Instr., Instr. mit *saha* oder mit Dat. [[KAUṢ. UP. 2,10] *saṃvekṣyan* zu lesen]) — auf oder in (Loc. oder *˚upari*), schlafen mit (Instr.), sich lagen auf (Acc.). *saṃviṣṭa* sich hingelegt habend ([Chr. 39,26]), zur Ruhe gegangen, schlafend.
+
+- **RU:** — 5〉 располагаться, — ложиться, — отходить ко сну ([27,19]), с или к своей женой (Instr., Instr. с *saha* или с Dat. [следует читать [KAUṢ. UP. 2,10] *saṃvekṣyan*]) — на или в (Loc. или *˚upari*), спать с (Instr.), возлежать на (Acc.). *saṃviṣṭa* возлёгший ([Chr. 39,26]), отошедший ко сну, спящий.
 - **EN:** — 5) to settle down, — lie down, — go to rest ([27,19]), with or unto one's wife (Instr., Instr. with *saha* or with Dat. [to be read [KAUṢ. UP. 2,10] *saṃvekṣyan*]) — on or in (Loc. or *˚upari*), to sleep with (Instr.), to lie upon (Acc.). *saṃviṣṭa* having lain down ([Chr. 39,26]), gone to rest, sleeping.
+  <sub>attested</sub>
 
 **ni-sam-6)** — 6〉 beschlafen, mit Acc. des Weibes.
+
+- **RU:** — 6〉 возлечь с (в половом смысле), с Acc. супруги.
 - **EN:** — 6) to lie with, with Acc. of the woman.
+  <sub>attested</sub>
 
 **ni-sam-7)** — 7〉 sich setzen zu (Acc.). *saṃviṣṭa* gesessen mit (Instr.).
+
+- **RU:** — 7〉 садиться к, подле (Acc.). *saṃviṣṭa* сидевший с (Instr.).
 - **EN:** — 7) to sit down with (Acc.). *saṃviṣṭa* having sat with (Instr.).
+  <sub>attested</sub>
 
 **ni-sam-8)** — 8〉 sich mit Etwas (Acc.) befassen.
+
+- **RU:** — 8〉 заниматься чем-либо (Acc.).
 - **EN:** — 8) to occupy oneself with something (Acc.).
+  <sub>attested</sub>
 
 **ni-sam-caus-intro)** 
 
 **ni-sam-caus-1)** — 1〉 sich niederlegen lassen [217,29].
+
+- **RU:** — 1〉 побуждать, заставлять лечь [217,29].
 - **EN:** — 1) to let lie down [217,29].
+  <sub>attested</sub>
 
 **ni-sam-caus-2)** — 2〉 legen —, setzen auf oder in, bringen in oder nach (Loc.).
+
+- **RU:** — 2〉 класть —, ставить на или в, приводить в или к (Loc.).
 - **EN:** — 2) to lay —, set on or in, bring into or to (Loc.).
+  <sub>attested</sub>
 
 **ni-sam-anu)** — Mit *anusam* sich zur Ruhe begeben in der Richtung von, — im Gefolge von (Acc.). *suptām* sich zur Ruhe legen, wenn sie schläft.
+
+- **RU:** — С *anusam* отходить ко сну по направлению к, — вслед за (Acc.). *suptām* ложиться на покой тогда, когда она спит.
 - **EN:** — With *anusam* to go to rest in the direction of, — in the train of (Acc.). *suptām* to lie down to rest when she sleeps.
+  <sub>attested</sub>
 
 **ni-sam-abhi-intro)** — Mit *abhisam*
+
+- **RU:** — С *abhisam*
 - **EN:** — With *abhisam*
+  <sub>attested</sub>
 
 **ni-sam-abhi-1)** — 1〉 sich vereinigen um oder bei (Acc.).
+
+- **RU:** — 1〉 собираться, объединяться вокруг или при (Acc.).
 - **EN:** — 1) to gather around or at (Acc.).
+  <sub>attested</sub>
 
 **ni-sam-abhi-2)** — 2〉 aufgehen in (Acc.).
+
+- **RU:** — 2〉 раствориться, слиться воедино с (Acc.).
 - **EN:** — 2) to be absorbed in (Acc.).
+  <sub>attested</sub>
 
 **ni-sam-upa-intro)** — Mit *upasam*
+
+- **RU:** — С *upasam*
 - **EN:** — With *upasam*
+  <sub>attested</sub>
 
 **ni-sam-upa-1)** — 1〉 sich legen neben (Acc.).
+
+- **RU:** — 1〉 ложиться рядом с (Acc.).
 - **EN:** — 1) to lie down beside (Acc.).
+  <sub>attested</sub>
 
 **ni-sam-upa-2)** — 2〉 = *abhisam* 1〉.
+
+- **RU:** — 2〉 = *abhisam* 1〉.
 - **EN:** — 2) = *abhisam* 1).
+  <sub>attested</sub>
 
 **ni-sam-upa-caus)** — Caus. Jmd sich dazu legen —, Jmd daneben sitzen lassen.
+
+- **RU:** — Caus. побуждать кого-либо лечь рядом —, дать кому-либо сесть рядом.
 - **EN:** — Caus. to let someone lie down beside, — let someone sit alongside.
+  <sub>attested</sub>
 
 **ni-sam-sva)** — Mit *pratisam* sich zur Ruhe begeben [GAUT.]
+
+- **RU:** — С *pratisam* отходить ко сну [GAUT.]
 - **EN:** — With *pratisam* to go to rest [GAUT.]
+  <sub>attested</sub>
+
+**T80)** — Caus.
+
+- **RU:** — Caus.
+  <sub>attested</sub>
 
 ## viś / viṣ / viś
 
@@ -6269,4 +7453,7 @@ u. s. w. [ṚV. 4,50,8.] [6,8,4.] [10,124,8.] [173,6.] of the Tṛṇaskanda
 
 
 **pwkvn)** **1.** *viś*¦ mit *pra* Caus. VI. *ahaṃ dārakaṃ praveśitā* so v. a. ich bin mit einem Knaben schwanger [DIVYĀVAD. 541,28]. — Mit *manas* seine Gedanken richten auf (Loc.) [R. ed. Bomb. 3,68,38].
+
+- **RU:** **1.** *viś* ¦ с *pra* Caus. VI. *ahaṃ dārakaṃ praveśitā* так v. a. я беременна мальчиком [DIVYĀVAD. 541,28]. — С *manas* направлять свои мысли на (Loc.) [R. ed. Bomb. 3,68,38].
 - **EN:** **1.** *viś*¦ with *pra* Caus. VI. *ahaṃ dārakaṃ praveśitā* thus v. a. I am pregnant with a boy [DIVYĀVAD. 541,28]. — With *manas* to direct one's thoughts toward (Loc.) [R. ed. Bomb. 3,68,38].
+  <sub>attested</sub>

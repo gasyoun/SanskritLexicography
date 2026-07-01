@@ -10,4 +10,4 @@
 [AV. 5,7,1.] — Davon *rakṣas* .
 - **EN:** 3. *rakṣ*¦ (properly *ṛkṣ = riś, riṣ*) to injure, harm: *mā no rakṣīrdakṣiṇāṃ nīyamānām*
 [AV. 5,7,1.] — Derived from this: *rakṣas* .
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>

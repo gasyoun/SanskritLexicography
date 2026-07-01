@@ -45,7 +45,7 @@
 [MBH. 8,849.]
 [BHĀG. P. 4,14,34.] [6,9,18] the Bombay [edition] reads Ausgg., more correctly *nijaghnus*.* nirhatya*
 [RĀJA-TAR. 5,432] probably erroneous for *nirhṛtya*.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) loswerfen auf (mit gen. wie auch sonst bei Verbis des Zielens): *mahato *
 
@@ -60,7 +60,7 @@
 
 * nirmṛgasya vadharjaghāna*
 [ṚV. 5,32,3.]
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **caus-intro)** — Vgl. *ulkānirhata* unter *ulkā, nirghāta* fgg. und *ānirhata* . — caus.
 - **EN:** — Vgl. *ulkānirhata* under *ulkā, nirghāta* fgg. and *ānirhata*. — caus.
@@ -77,7 +77,7 @@
 [MBH. 1,5792.]
 - **EN:** — 2) to kill: *spaśairnirghātayetsarvān* (thus [ed. Bomb.])
 [MBH. 1,5792.]
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **caus-note)** — Vgl. *ulkānirhata* unter *ulkā, nirghāta* fgg. und *ānirhata* . — caus.
  1) *nirghātayati* herausschaffen: *śalyam*
@@ -86,4 +86,4 @@
 - **RU:** — Vgl. *ulkānirhata* под *ulkā, nirghāta* fgg. и *ānirhata*. — caus.
  1) *nirghātayati* выносить, удалять: *śalyam*
 [SUŚR. 1,100,12. 102,9.]
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>

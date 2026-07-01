@@ -142,4 +142,4 @@ u. s. w. [NAIGH. 3,6.] [AK. 3,5,10.] [TRIK. 1,1,113.] [H. 1535.] [an. 7,15.] [ME
 [BURNOUF] written separately) *naḥ*
 [BHĀG. P. 3,5,4.] *śaṃ yoḥ* s. u. *yos*. Collection of examples in
 [M. MÜLLER, Transl. 1,180.]
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>

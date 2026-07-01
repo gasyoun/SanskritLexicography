@@ -22,4 +22,4 @@
 *ataḥ samudramudvataścikitvā ava paśyata*
 [8,6,29.] [10,179,1.] [AV. 18,4,37.] med. to descry, to live to see: *puṣṭiṃ so aghnyānāṃ sve goṣṭhe 'va paśyate*
 [AV. 9,4,19.]
-  <sub>DCS 17 · attested</sub>
+  <sub>attested</sub>

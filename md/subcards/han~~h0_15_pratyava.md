@@ -9,4 +9,4 @@
 - **RU:** — *pratyava* отражать, давать сдачи: *prati śvasantamava* (лучше, вероятно, *pratiśvasantamava) dānavaṃ han*
 [ṚV. 5,29,4.]
 - **EN:** — *pratyava* "to strike back": *prati śvasantamava* (better probably *pratiśvasantamava) dānavaṃ han* [ṚV. 5,29,4.])
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>

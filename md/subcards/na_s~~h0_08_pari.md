@@ -10,4 +10,4 @@
 [P. 8,4,36], Sch.
 - **EN:** — *pari*, *pariṇaśyati, parinaṣṭa*
 [P. 8,4,36], Sch.
-  <sub>DCS 1422 · attested</sub>
+  <sub>attested</sub>

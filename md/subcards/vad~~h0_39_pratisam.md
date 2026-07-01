@@ -10,4 +10,4 @@
 [AIT. BR. 3,23.]
 - **EN:** — *pratisam* to converse with (acc.): *te na prati cana samavadata*
 [AIT. BR. 3,23.]
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>

@@ -16,7 +16,7 @@
  1) to survive: *saṃvatsaram*
 [ŚAT. BR. 4,2,4,6.] *tāṃ vai sa āyuṣārtimatyajīvat*
 [PAÑCAV. BR. 6,5.]
-  <sub>DCS 2223 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) besser leben als, mit dem acc. der Person: *atyajīvadamarālakeśvarau*
 [RAGH. ed. Calc. 19,15] (v. l. *anvajīvat*).
@@ -25,4 +25,4 @@
 [RAGH. ed. Calc. 19,15] (v. l. *anvajīvat*).
 - **EN:** — 2) to live better than, with the acc. of the person: *atyajīvadamarālakeśvarau*
 [RAGH. ed. Calc. 19,15] (v. l. *anvajīvat*).
-  <sub>DCS 2223 · attested</sub>
+  <sub>attested</sub>

@@ -16,4 +16,4 @@
 [HARIV. 12538.] slain
 [MBH. 6,5549.] [7,5816.] [8,4556.] — partic. *˚hata*
 [1,8300] erroneous for *˚hita*, as the [ed. Bomb.] reads. Vgl. *saṃnihatī* fg.
-  <sub>DCS 4 · attested</sub>
+  <sub>attested</sub>

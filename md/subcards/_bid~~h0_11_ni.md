@@ -10,4 +10,4 @@
 [BHĀG. P. 3,26,55.]
 - **EN:** — *ni* pass. to open (intr.): *nyabhidyetāṃ* (v. l. for *anubhi˚) karṇau*
 [BHĀG. P. 3,26,55.]
-  <sub>DCS 2 · attested</sub>
+  <sub>attested</sub>

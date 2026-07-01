@@ -7,4 +7,4 @@
 
 - **RU:** 3. *gā*¦ vgl. ещё *tamogā* .
 - **EN:** 3. *gā*¦ vgl. also *tamogā* .
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>

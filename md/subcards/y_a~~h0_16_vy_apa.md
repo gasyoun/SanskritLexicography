@@ -10,4 +10,4 @@
 [MBH. 3,775], однако с [ed. Bomb.] следует читать *vyapāyāt*.
 - **EN:** — *vyāpa* apparently
 [MBH. 3,775], where however *vyapāyāt* is to be read with the [ed. Bomb.].
-  <sub>DCS 21 · attested</sub>
+  <sub>attested</sub>

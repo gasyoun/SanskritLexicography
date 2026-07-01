@@ -13,4 +13,4 @@
 - **EN:** — *upapra* to send to (acc.)
 [AV. 18,4,40.]
 [ŚAT. BR. 11,5,1,11.]
-  <sub>DCS 23914 · attested</sub>
+  <sub>attested</sub>

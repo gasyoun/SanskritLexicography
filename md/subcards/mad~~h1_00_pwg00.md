@@ -16,7 +16,7 @@
 [ṚV. 10,27,20.] *adyedu prā- ṇīdamamannimāhā*
 [32,8.] *yadi śrāto juhotana yadyaśrāto mamattana*
 [179,1.]
-  <sub>DCS 63834 · attested</sub>
+  <sub>attested</sub>
 
 **gram-term)** — Vgl. *manda* .
 — *ni* s. *nimada* langsame und deutliche Aussprache. — caus. *nimādayati = akṣaraṃ spaṣṭamuccārayati*
@@ -38,16 +38,16 @@
 [ŚAT. BR. 3,7,3,11.] *idamevaitadretaḥ siktamupanimadati*
 [4,3,2,4.] *annamapacikramiṣadupanimadati*
 [6,9,5.]
-  <sub>DCS 63834 · attested</sub>
+  <sub>attested</sub>
 
 **nomen)** — Vgl. *manda* .
 
 - **RU:** — Vgl. *manda* .
-  <sub>DCS 63834 · attested</sub>
+  <sub>attested</sub>
 
 **gramm)** — *ni* s. *nimada* langsame und deutliche Aussprache. — caus. *nimādayati = akṣaraṃ spaṣṭamuccārayati*
 [SĀY.] bei [WEST.]
 
 - **RU:** — *ni* s. *nimada* медленное и отчётливое произношение. — caus. *nimādayati = akṣaraṃ spaṣṭamuccārayati*
 [SĀY.] bei [WEST.]
-  <sub>DCS 63834 · lexicographic</sub>
+  <sub>lexicographic</sub>

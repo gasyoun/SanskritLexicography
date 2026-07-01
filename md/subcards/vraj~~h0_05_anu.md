@@ -16,7 +16,7 @@
  1) to go along: *uttaramagnim*
 [ĀŚV. ŚR. 2,17,6. 4,4,3. 10,2.] *sarasvatīm*
 [12,6,3.]
-  <sub>DCS 83 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) begleiten, nachgehen, folgen: *gāḥ*
 [KAUŚ. 51.]
@@ -64,7 +64,7 @@
 [8,12,23.] *svajanuairanavrajyamānaḥ*
 [PAÑCAT. ed. orn. 4,4.] *ā śmaśānādanuvrajya itaro jñātibhimṛtaḥ*
 [YĀJÑ. 3,1.]
-  <sub>DCS 83 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) besuchen, sich wohin begeben
 [LĀṬY. 5,4,3.] *tīrthāni*
@@ -91,7 +91,7 @@
 [BHĀG. P. 3,31,43.] *anuvraje vrajam*
 [10,25,7.] *yonim* to enter into
 [3,30,4.]
-  <sub>DCS 83 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) in einen Zustand —, in eine Lage sich begeben:
 
@@ -109,7 +109,7 @@
 *mṛgā mṛgaiḥ saṅgamanuvrajanti* so v. a. attach themselves to
 [Spr. 2236.] *yathāgniragnau saṃkṣiptaḥ samānatvamanuvrajet*
 [MĀRK. P. 40,29.]
-  <sub>DCS 83 · attested</sub>
+  <sub>attested</sub>
 
 **cf)** — Vgl. *anuvrajana, anuvrajyā* (auch
 [M. 2,241], wo [WESTERGAARD] und [BENFEY] ein partic. fut. pass. annehmen).
@@ -118,4 +118,4 @@
 [M. 2,241], где [WESTERGAARD] и [BENFEY] принимают partic. fut. pass.).
 - **EN:** — Vgl. *anuvrajana, anuvrajyā* (also
 [M. 2,241], where [WESTERGAARD] and [BENFEY] take a partic. fut. pass.).
-  <sub>DCS 83 · lexicographic</sub>
+  <sub>lexicographic</sub>

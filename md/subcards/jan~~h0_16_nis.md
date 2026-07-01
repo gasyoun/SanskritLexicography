@@ -13,4 +13,4 @@
 - **EN:** — *nis* to come forth, to come to view, to show itself: *(bodhisattvaiḥ) sarvabodhisattvapāramitānirjātaiḥ = nirjāta — sarva˚pāramitaiḥ*, with displacement of the partic., as is quite usual with this in *jāta* [s. d. u. 1,d]
 [LALIT. ed. Calc. 2,4.] [RĀJ.]: perfect in the virtues of pāramitā,
 [FOUC.]: all truly arrived at the state of Bodhisattvas who have reached the further shore.
-  <sub>DCS 9250 · attested</sub>
+  <sub>attested</sub>

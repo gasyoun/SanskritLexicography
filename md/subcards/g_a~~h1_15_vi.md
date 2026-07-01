@@ -13,7 +13,7 @@
 - **EN:** — *vi*
  1) to sing discordantly, hence *vigīta* not harmonizing with one another, contradictory: *yaścādharottarānarthānvigītānnāvabudhyate*
 [M. 8,53.]
-  <sub>DCS 59 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) schmähen, tadeln: *vigīyase (ketaka) manmathadehadāhinā*
 [NAIṢ. 1,79.] Vgl. *vigāna*.* — vijigīta* (unregelm. Intensiv-Form) berühmt
@@ -31,4 +31,4 @@
 [BṚH. ĀR. UP. 6,4,18.]
 [ŚAṂK.] : *vividhaṃ gīto vigītaḥ* (sic);
 [ŚAT. BR. 14,9,4,17] reads st. whose *vijigīthaḥ* .
-  <sub>DCS 59 · attested</sub>
+  <sub>attested</sub>

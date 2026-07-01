@@ -10,4 +10,4 @@
 [MBH. 2,1606.] [12,1385.]
 - **EN:** — *samanu* to follow after — , to follow together
 [MBH. 2,1606.] [12,1385.]
-  <sub>DCS 1202 · attested</sub>
+  <sub>attested</sub>

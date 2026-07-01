@@ -19,10 +19,10 @@
 [10,131,5.] [4.] *ubhe vā eṣa ete savane vipibati yatsavitā*
 [AIT. BR. 3,29.] *adbhyaḥ kṣīraṃ vyapibat*
 [VS. 19,73.]
-  <sub>DCS 21 · attested</sub>
+  <sub>attested</sub>
 
 **1b)** — Vgl. *gardabhīvipīta* .
 
 - **RU:** — Vgl. *gardabhīvipīta* .
 - **EN:** — Vgl. *gardabhīvipīta* .
-  <sub>DCS 21 · attested</sub>
+  <sub>attested</sub>

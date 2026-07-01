@@ -17,7 +17,7 @@
 [ŚAT. BR. 1,8,3,14.] *grahān*
 [4,2,4,19.] thus v. a. to root out: *uddhantyasāvavanikaṇṭakaṃ saptakṛtva urudhāraparaśvadhena*
 [BHĀG. P. 2,7,22.]
-  <sub>DCS 6 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) ausschlagen (einen Graben u. s. w.), aufwerfen, aufschütten: der Eber [ŚAT. BR. 14,1,2,11.] *vedim* [TS. 2,2,10,5.] [5,2,3,2.] [6,6,4,1.] [TBR. 1,2,1,1.] [3,2,9,9.] *adhidevanam* Comm. [1,66,19.] [ĀPAST. 2,25,12] (*uddhatya* st. *uddhṛtya* zu lesen).
 
@@ -27,7 +27,7 @@
 [TS. 2,2,10,5.] [5,2,3,2.] [6,6,4,1.]
 [TBR. 1,2,1,1.] [3,2,9,9.] *adhidevanam*
 Comm. [1,66,19.] [ĀPAST. 2,25,12] (to be read *uddhatya* st. *uddhṛtya*).
-  <sub>DCS 6 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) med. sich erhängen: *uddhaniṣye* [R. 3,51,40] (*ābandhiṣye* [ed. Bomb.] [45,36]). *ātmānamuddhatya* (so ist vielleicht zu lesen) [PAÑCAT. 135,3.] — *uddhatya* [HARIV. 4408] fehlerhaft für *uddhṛtya* .
 
@@ -37,13 +37,13 @@ Comm. [1,66,19.] [ĀPAST. 2,25,12] (to be read *uddhatya* st. *uddhṛtya*).
 [45,36]). *ātmānamuddhatya* (this is perhaps the correct reading)
 [PAÑCAT. 135,3.] — *uddhatya*
 [HARIV. 4408] erroneous for *uddhṛtya*.
-  <sub>DCS 6 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) partic. *uddhata* a) aufgewirbelt (vgl. *uddhuta, uddhūta*): Staub [R. 5,73,63.] [ṚT. 1,10.] [ŚĀK. 8.] [KATHĀS. 14,13.]
 
 - **RU:** — 4) partic. *uddhata* a) взметённый вверх (vgl. *uddhuta, uddhūta*): пыль [R. 5,73,63.] [ṚT. 1,10.] [ŚĀK. 8.] [KATHĀS. 14,13.]
 - **EN:** — 4) partic. *uddhata*
-  <sub>DCS 6 · attested</sub>
+  <sub>attested</sub>
 
 **4a)** a) aufgewirbelt (vgl. *uddhuta, uddhūta*): Staub
 [R. 5,73,63.]
@@ -75,14 +75,14 @@ Comm. [1,66,19.] [ĀPAST. 2,25,12] (to be read *uddhatya* st. *uddhṛtya*).
 [BHAṬṬ. 9,7.] drawn out, — fetched out: *jalānmatsyau*
 [R. 2,53,32] (correctly *uddhṛta* [ed. Bomb.]). *garuḍeneva hradinyuddhatapannagā*
 [47,17] (*uddhṛta˚* [ed. Bomb.]).
-  <sub>DCS 6 · attested</sub>
+  <sub>attested</sub>
 
 **4c)** — c) angeschlagen: *vīṇā* [KĀTY. ŚR. 21,3,7.]
 
 - **RU:** — c) ударенный: *vīṇā* [KĀTY. ŚR. 21,3,7.]
 - **EN:** — c) struck against, knocked: *vīṇā*
 [KĀTY. ŚR. 21,3,7.]
-  <sub>DCS 6 · attested</sub>
+  <sub>attested</sub>
 
 **4d)** — d) gesteigert, heftig, intensiv [HALĀY. 4,59.] *manyu* [R. 4,36,21.] *dhvani* [ṚT. 2,1.] *hasita* [Spr. (II) 800.] *nṛtya* [DAŚAR. 1,10.] *yuddha* [KATHĀS. 74,82.] [BHĀG. P. 4,25,42.] [KUSUM. 27,12.] [PAÑCAT. 93,2] (Lesart unsicher).
 
@@ -96,7 +96,7 @@ Comm. [1,66,19.] [ĀPAST. 2,25,12] (to be read *uddhatya* st. *uddhṛtya*).
 [KATHĀS. 74,82.]
 [BHĀG. P. 4,25,42.]
 [KUSUM. 27,12.] [PAÑCAT. 93,2] (reading uncertain).
-  <sub>DCS 6 · attested</sub>
+  <sub>attested</sub>
 
 **4e)** — e) hochfahrend, stolz, übermüthig [H. 431.] [R. GORR. 1,14,43.] [NĀṬYAŚ. 18,73.] [Spr. (II) 1239.] [KATHĀS. 44,58.] [48,73.] [MĀRK. P. 17,8.] *dṛṅmanovāgbhiḥ* 14. *dorbhyāṃ brahmavareṇa ca* pochend auf [BHĀG. P. 3,17,19.] *vīryaśauryaśriyā* [11,6,29.] *akṣavadhoddhata* [RAGH. 12,63.] *dhīroddhata* (d. i. *dhīra* und zugleich *uddhata*) [BHAR. NĀṬYAŚ. 34,4. 5.] [DAŚAR. 2,2. 5.] [SĀH. D. 65.] *uddhataṃ vākyam* [Spr. (II) 5248.] [5903.] *veṣa* [5617.] *dhīroddhatā gatiḥ* [UTTARAR. 111,18 (151,2).] *anuddhata* nicht stolz, bescheiden, anspruchlos [KĀM. NĪTIS. 18,33.] *samṛddhibhiḥ* [Spr. (II) 4556.] [VARĀH. BṚH. S. 75,7.] *˚manas* [R. 2,6,22.] *veṣa* [SUŚR. 1,30,2.] *uddhatatva* _n._ hochfahrendes Wesen (Verwegenheit Comm.) [MAITRYUP. 3,5.]
 
@@ -118,7 +118,7 @@ Comm. [1,66,19.] [ĀPAST. 2,25,12] (to be read *uddhatya* st. *uddhṛtya*).
 [R. 2,6,22.] *veṣa*
 [SUŚR. 1,30,2.] *uddhatatva* _n._ arrogant nature (presumption Comm.)
 [MAITRYUP. 3,5.]
-  <sub>DCS 6 · attested</sub>
+  <sub>attested</sub>
 
 **4f)** — f) strotzend —, voll von (instr. oder im comp. vorangehend): *krodhaviṣoddhata* [MBH. 4,753.] *madoddhata* [R. 4,9,10] (*maho˚* gedr.). [KUMĀRAS. 3,31.] [Spr. (II) 4671.] [PAÑCAT. 224,8.] [254,8.] *dhanamadoddhata* [KATHĀS. 18,129.] *yauvanamadoddhata* [277.] *baloddhata* [Spr. (II) 815.]
 
@@ -132,7 +132,7 @@ Comm. [1,66,19.] [ĀPAST. 2,25,12] (to be read *uddhatya* st. *uddhṛtya*).
 [KATHĀS. 18,129.] *yauvanamadoddhata*
 [277.] *baloddhata*
 [Spr. (II) 815.]
-  <sub>DCS 6 · attested</sub>
+  <sub>attested</sub>
 
 **4g)** — g) in Bewegung versetzt, erregt (die v. l. oft richtiger *uddhuta):* das Meer [MBH. 1,5469.] [6,1644.] *mahāmeghaḥ śvasanena* [R. 6,108,1.] *˚saṭa* [RAGH. 9,60.] [ṚT. 2,8.] *vātoddhatāmbudhara* [VARĀH. BṚH. S. 19,20.] *veṇavo 'niloddhatāḥ* [AK. 2,4,5,27.] [PAÑCAT. 21,2.] *kṛṣṇabāṇāgniruddhato (uddhūto* die neuere Ausg.) *vivṛddhiṃ paramāṃ gataḥ* [HARIV. 10575.] *vātoddhato vahniḥ* [VARĀH. BṚH. S. 19,7.] so v. a. zum Vorschein gekommen: *riṣṭāni* [SUŚR. 1,102,18.]
 
@@ -149,24 +149,24 @@ v. l., often more correctly *uddhuta):*; the sea
 [HARIV. 10575.] *vātoddhato vahniḥ*
 [VARĀH. BṚH. S. 19,7.] thus v. a. come into view, appeared: *riṣṭāni*
 [SUŚR. 1,102,18.]
-  <sub>DCS 6 · attested</sub>
+  <sub>attested</sub>
 
 **4h)** — h) gehemmt, gehindert (= *atyantaṃ hataḥ* Comm.) [R. 2,45,30.]
 
 - **RU:** — h) сдержанный, задержанный (= *atyantaṃ hataḥ* Comm.) [R. 2,45,30.]
 - **EN:** — h) checked, hindered (= *atyantaṃ hataḥ* Comm.)
 [R. 2,45,30.]
-  <sub>DCS 6 · attested</sub>
+  <sub>attested</sub>
 
 **4i)** — i) _m._ N. pr. eines Esels [PAÑCAT. 247,25.]
 
 - **RU:** — i) _m._ N. pr. осла [PAÑCAT. 247,25.]
 - **EN:** — i) _m._ N. pr. of a donkey
 [PAÑCAT. 247,25.]
-  <sub>DCS 6 · attested</sub>
+  <sub>attested</sub>
 
 **5)** — Vgl. *udgha, udghana, udghāta* fg., *uddhati, madoddhata, rathoddhatā, siṃhoddhatā* .
 
 - **RU:** — Vgl. *udgha, udghana, udghāta* fg., *uddhati, madoddhata, rathoddhatā, siṃhoddhatā* .
 - **EN:** — Vgl. *udgha, udghana, udghāta* fg., *uddhati, madoddhata, rathoddhatā, siṃhoddhatā*.
-  <sub>DCS 6 · attested</sub>
+  <sub>attested</sub>

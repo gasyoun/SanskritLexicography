@@ -8,4 +8,4 @@
 - **RU:** — *anu* med. устремляться, достигать до (acc.): *anu janānyatate pañca dhīraḥ* [ṚV. 9,92,3.]
 - **EN:** *anu* med. to strive towards, to reach to (acc.): *anu janānyatate pañca dhīraḥ*
 [ṚV. 9,92,3.]
-  <sub>DCS 9672 · attested</sub>
+  <sub>attested</sub>

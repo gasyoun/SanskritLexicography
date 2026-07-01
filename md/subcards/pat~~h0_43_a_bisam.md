@@ -16,18 +16,18 @@
 
 - **RU:** — Vgl. *abhisaṃpāta* .
 - **EN:** — Vgl. *abhisaṃpāta* .
-  <sub>DCS 3124 · attested</sub>
+  <sub>attested</sub>
 
 **1))** — *abhisam* hinfliegen, hineilen zu, stürzen auf: *mahītalātkecidudīrṇavegāḥ (kapayaḥ) punardrumāgrānabhisaṃpatanti*
 [R. 5,60,16.] *te 'nyo 'nyamabhisaṃpetuḥ pātayantaḥ parasparam*
 
 - **RU:** — *abhisam* лететь, мчаться к, бросаться на: *mahītalātkecidudīrṇavegāḥ (kapayaḥ) punardrumāgrānabhisaṃpatanti*
 [R. 5,60,16.] *te 'nyo 'nyamabhisaṃpetuḥ pātayantaḥ parasparam*
-  <sub>DCS 3124 · attested</sub>
+  <sub>attested</sub>
 
 **2))** [HARIV. 12545.] einherfliegen: *śastraiśca divyairabhisaṃpatadbhiḥ*
 [MBH. 7,7295.]
 
 - **RU:** [HARIV. 12545.] лететь, парить: *śastraiśca divyairabhisaṃpatadbhiḥ*
 [MBH. 7,7295.]
-  <sub>DCS 3124 · attested</sub>
+  <sub>attested</sub>

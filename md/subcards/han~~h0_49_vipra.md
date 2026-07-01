@@ -22,4 +22,4 @@
 [5697.] [MBH. 7,3236.] *a˚* "untrodden": forest
 [R. 1,26,12.], road
 [3,74,4.]
-  <sub>DCS 9 · attested</sub>
+  <sub>attested</sub>

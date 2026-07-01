@@ -16,4 +16,4 @@
 [MBH. 2,1608.]
 [VARĀH. BṚH. S. 104,54.] *˚yāta* with passive Bed.
 [MBH. 7,3261.]
-  <sub>DCS 7 · attested</sub>
+  <sub>attested</sub>

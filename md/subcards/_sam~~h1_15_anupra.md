@@ -7,4 +7,4 @@
 
 - **RU:** — *anupra* caus. s. *anupraśamana* .
 - **EN:** — *anupra* caus. s. *anupraśamana* .
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>

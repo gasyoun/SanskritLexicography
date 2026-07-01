@@ -22,7 +22,7 @@
 [ṚV. PRĀT. 4,37.]
 [ŚĀṄKH. ŚR. 14,22,26.] *pañcame pañcame varṣe dvau māsāvupajāyataḥ*
 [MBH. 4,1608.]
-  <sub>DCS 9250 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) geboren werden; entstehen, sich einstellen, zum Vorschein kommen, sich zeigen: *uṣmaṇaścopajāyante*
 [M. 1,45.] *asminna nirguṇaṃ gotre apatyamupajāyate*
@@ -76,7 +76,7 @@
 [MṚCCH. 157,21.] *˚sādhvasa*
 [ṚT. 2,9.] *˚krodha*
 [PRAB. 6,6.]
-  <sub>DCS 9250 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) wiedergeboren werden: *sarge 'pi nopajāyate*
 [BHAG. 14,2.] *ihaiva sā śunī gṛdhrī śūkarī copajāyate*
@@ -91,7 +91,7 @@
 [BHAG. 14,2.] *ihaiva sā śunī gṛdhrī śūkarī copajāyate*
 [YĀJÑ. 3,256.] *mānuṣeṣu*
 [MBH. 13,6689.]
-  <sub>DCS 9250 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) sein: *prabhutvaṃ dhanamūlaṃ hi rājñāmapyupajāyate*
 [HIT. I,115.] — caus. erzeugen, verursachen: *vacanāni karṇasukhamupajanayanti*
@@ -103,10 +103,10 @@
 - **EN:** — 4) to be: *prabhutvaṃ dhanamūlaṃ hi rājñāmapyupajāyate*
 [HIT. I,115.] — caus. to engender, to cause: *vacanāni karṇasukhamupajanayanti*
 [PRAB. 29,15.]
-  <sub>DCS 9250 · attested</sub>
+  <sub>attested</sub>
 
 **5)** — Vgl. *upaja, upajana, upajā* .
 
 - **RU:** — Vgl. *upaja, upajana, upajā* .
 - **EN:** — Vgl. *upaja, upajana, upajā* .
-  <sub>DCS 9250 · attested</sub>
+  <sub>attested</sub>

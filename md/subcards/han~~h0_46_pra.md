@@ -82,7 +82,7 @@ u. s. w. [MEGH. 65.] [RAGH. 19,14.] [KATHĀS. 10,171.] [107,49.] [109,152.] [118
 [H. 940.] "slain"
 [KĀM. NĪTIS. 13,68] (vgl. [78]). [PAÑCAR. 4,3,117.] _n._ "blow, stroke": *jaṅghā˚* gaṇa *akṣadyūtādi*
 to [P. 4,4,19.]
-  <sub>DCS 51 · attested</sub>
+  <sub>attested</sub>
 
 **note)** — Vgl. *prahaṇana, prahan, prahantar* fg. — desid.: *etenāsmāllokātprajighāṃsanyajeta*
 [ŚĀṄKH. ŚR. 16,22,10] wohl fehlerhaft für *prajigāṃsan* .
@@ -91,4 +91,4 @@ to [P. 4,4,19.]
 [ŚĀṄKH. ŚR. 16,22,10] вероятно ошибочно вместо *prajigāṃsan* .
 - **EN:** — Vgl. *prahaṇana, prahan, prahantar* fg. — desid.: *etenāsmāllokātprajighāṃsanyajeta*
 [ŚĀṄKH. ŚR. 16,22,10], probably erroneous for *prajigāṃsan* .
-  <sub>DCS 51 · attested</sub>
+  <sub>attested</sub>

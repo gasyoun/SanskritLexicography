@@ -13,4 +13,4 @@
 - **EN:** — *upa*
  1) to lead towards (loc.): *aiśvarye vā suvistīrṇe vyasane vā sudāruṇe . rajjveva puruṣo baddhvā kṛtāntenopanīyate ..*
 [Spr. 3856.]
-  <sub>DCS 307 · attested</sub>
+  <sub>attested</sub>

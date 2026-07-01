@@ -111,7 +111,7 @@
 [BHĀG. P. 7,15,48.] neutr. [CHĀND. UP. 5,12,1.]
 — Vgl. 1. *sava*, 1. *savana, asuta, adriṣuta, jambhasuta, suṣuta* .
 - **EN:** *su*¦, *sunoti* [DHĀTUP. 27,1] (*abhiṣave, saṃdhākledapīḍāmanthe* [VOP.]). *sunota* [ṚV. 7,32,8.] *sunotana* [5,34,1.] *sunuta* [10,14,13.] *sunavat* and *sunvat* [27,22.] *sunvant* partic.; med. *sunve*
-  <sub>DCS 14088 · attested</sub>
+  <sub>attested</sub>
 
 **3)** sg. [7,29,1.] [9,88,1.] *sunvire, sunudhvam, sunavai*
 [8,80,1.] *suvāna* partic.; *suṣāva, suṣuma, suṣuviva* (

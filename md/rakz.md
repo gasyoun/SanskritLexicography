@@ -416,7 +416,7 @@ u. s. w. [AK. 3,2,55.] [H. 1497.] protected, guarded, preserved, kept; of person
 [Spr. 4692.] Vgl. *devarakṣita, *
 
 * buddha˚, mahā˚, maitreya˚* .
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 ## rakṣ
 
@@ -439,7 +439,7 @@ schützen: *ko 'smānatra vane rakṣayiṣyati*
 to protect: *ko 'smānatra vane rakṣayiṣyati*
 [PAÑCAT. 70,13.] to preserve: *svākāraṃ rakṣayedyastu sa bhṛtyo 'rho mahībhujām*
 [Spr. 1367.]
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 ## rakṣ
 
@@ -456,7 +456,7 @@ to protect: *ko 'smānatra vane rakṣayiṣyati*
 - **EN:** — desid. *rirakṣiṣati* to intend to protect from (abl.): *rirakṣiṣantaḥ*
 [MBH. 5,2368.] [6,3760] (*rira˚* to be read).
 [4695.]
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 ## rakṣ
 
@@ -473,7 +473,7 @@ to protect: *ko 'smānatra vane rakṣayiṣyati*
 - **EN:** — intens.: *rakṣā ṇo agne tava rakṣaṇebhī rārakṣāṇaḥ sumakha prīṇānaḥ* that is diligently tended —, watched
 [ṚV. 4,3,14.] diligently tending
 [SĀY.]
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 ## rakṣ
 
@@ -487,7 +487,7 @@ to protect: *ko 'smānatra vane rakṣayiṣyati*
 [HARIV. 15811.] лучше *yo hi rakṣati* более новое чтение Ausg.
 - **EN:** — *adhi* to guard, tend: *trailokyaṃ yo 'dhirakṣati*
 [HARIV. 15811.] better *yo hi rakṣati* the later Ausg.
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 ## rakṣ
 
@@ -507,7 +507,7 @@ to protect: *ko 'smānatra vane rakṣayiṣyati*
 [ŚĀṄKH. ŚR. 16,10,11.] *ke pṛṣṭhato 'nvarakṣanta* (*pṛṣṭhataścāpyabhavan* [ed. Bomb.])
 [MBH. 7,7330.] to tend, protect; med.
 [R. 6,103,2.]
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 ## rakṣ
 
@@ -620,7 +620,7 @@ to protect: *ko 'smānatra vane rakṣayiṣyati*
 [4,472.] *vratāni* to observe
 [ṚV. 4,53,4.] [7,83,9.] [9,73,3.]
 — Vgl. *abhirakṣitar* .
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 ## rakṣ
 
@@ -634,7 +634,7 @@ to protect: *ko 'smānatra vane rakṣayiṣyati*
 [MBH. 8,2115], где, однако, вероятнее следует читать *avakṣaranto* орошающий, оскверняющий (семенем). Редкая стопа – ⏑ – –, появляющаяся при перестановке, могла способствовать сохранению простой описки.
 - **EN:** — *ava* apparently in the passage: *ramante copahāsena puruṣāḥ puruṣaiḥ saha *|* anyo'nyamavarakṣanto deśe deśe samaithunāḥ *||
 [MBH. 8,2115], where however *avakṣaranto* sprinkling, defiling (with seed) is probably to be read. The rare foot – ⏑ – – that appears upon transposition may have contributed to the preservation of the simple scribal error.
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 ## rakṣ
 
@@ -654,13 +654,13 @@ to protect: *ko 'smānatra vane rakṣayiṣyati*
 [ṚV. 7,50,1.] *dvārāṇi yantrairārakṣitāni*
 [MBH. 15,186.] *bharatārakṣitaṃ putrarājyam*
 [R. 2,52,58.]
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **caus)** — Vgl. *ārakṣa* fgg.
 
 - **RU:** — Vgl. *ārakṣa* fgg.
 - **EN:** — Vgl. *ārakṣa* fgg.
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 ## rakṣ
 
@@ -674,7 +674,7 @@ to protect: *ko 'smānatra vane rakṣayiṣyati*
 [VOP. 8,73.]
 - **EN:** — *upa* s. *uparakṣaṇa; prani, ˚rakṣati*
 [VOP. 8,73.]
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 ## rakṣ
 
@@ -775,13 +775,13 @@ to protect: *ko 'smānatra vane rakṣayiṣyati*
 [HARIV. 6811.] to avoid
 [SUŚR. 2,15,12.] med. with gen. to avoid someone, to contrive that one does not meet with someone
 [R. 5,73,20.]
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **caus)** — Vgl. *parirakṣaka* fgg.
 
 - **RU:** — Vgl. *parirakṣaka* fgg.
 - **EN:** — Vgl. *parirakṣaka* fgg.
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 ## rakṣ
 
@@ -795,7 +795,7 @@ to protect: *ko 'smānatra vane rakṣayiṣyati*
 [R. 7,104,3.]
 - **EN:** — *saṃpari* to protect: *lokānsaṃparirakṣitum*
 [R. 7,104,3.]
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 ## rakṣ
 
@@ -814,12 +814,12 @@ to protect: *ko 'smānatra vane rakṣayiṣyati*
 
 - **RU:** — *pra* сохранять, защищать от (abl.), спасать от: *karkaṭena dvitīyena sarpātpānthaḥ prarakṣitaḥ*
 [Spr. 147.] [BÜHLER'S Ausg. des PAÑCAT.] liest *jīvitaṃ parirakṣitam* st. *sarpātpānthaḥ pra˚* .
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **pra (2))** — Vgl. *prarakṣa* fg.
 
 - **RU:** — Vgl. *prarakṣa* fg.
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 ## rakṣ
 
@@ -842,7 +842,7 @@ to protect: *ko 'smānatra vane rakṣayiṣyati*
 [MBH. 12,3596.] *viśvā āśāḥ prati rakṣantyeke*
 [AV. 10,8,36.] *satyāṃ* (so the [ed. Bomb.]) *pratijñāṃ tāṃ pārthena pratirakṣatā* keeping faithfully
 [MBH. 8,3542.]
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) fürchten, sich retten vor: *pratirakṣannasuryam*
 [VS. 8,24.]
@@ -851,7 +851,7 @@ to protect: *ko 'smānatra vane rakṣayiṣyati*
 [VS. 8,24.]
 - **EN:** — 2) to fear, to save oneself from: *pratirakṣannasuryam*
 [VS. 8,24.]
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 ## rakṣ
 
@@ -874,7 +874,7 @@ to protect: *ko 'smānatra vane rakṣayiṣyati*
 [11,5,17.] *anyo'nyaṃ samupāśritya virakṣanti raṇājire (na tyakṣyanti raṇājiram* [ed. Bomb.])
 [MBH. 7,4410.] *droṇaṃ ca ke vyarakṣanta*
 [7329.]
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 ## rakṣ
 
@@ -957,13 +957,13 @@ to protect: *ko 'smānatra vane rakṣayiṣyati*
 [Spr. 530.] *ātmanaśca pareṣāṃ ca vṛttiṃ saṃrakṣa* keep safe
 [MBH. 13,3080.] to store, keep in safekeeping: *taddānavaśarīraṃ te saṃrakṣya sthāpitaṃ mayā*
 [KATHĀS. 45,50.]
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — Vgl. *saṃrakṣaṇa* fgg.
 
 - **RU:** — Vgl. *saṃrakṣaṇa* fgg.
 - **EN:** — Vgl. *saṃrakṣaṇa* fgg.
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 ## rakṣ
 
@@ -980,7 +980,7 @@ to protect: *ko 'smānatra vane rakṣayiṣyati*
 - **EN:** 2. *rakṣ*¦ (= 1. *rakṣ*) _adj._ at the end of a comp. guarding, watching over u. s. w.
 [VOP. 3,136.]
 — Vgl. *go˚* .
-  <sub>DCS 1930 · lexicographic</sub>
+  <sub>lexicographic</sub>
 
 ## rakṣ
 
@@ -994,7 +994,7 @@ to protect: *ko 'smānatra vane rakṣayiṣyati*
 [AV. 5,7,1.] — Davon *rakṣas* .
 - **EN:** 3. *rakṣ*¦ (properly *ṛkṣ = riś, riṣ*) to injure, harm: *mā no rakṣīrdakṣiṇāṃ nīyamānām*
 [AV. 5,7,1.] — Derived from this: *rakṣas* .
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 ## rakṣ
 
@@ -1008,7 +1008,7 @@ to protect: *ko 'smānatra vane rakṣayiṣyati*
 [Sp. 215, Z. 2] v. u. следует читать [Spr. 208] ([567] 2-го Aufl.) st. 208.
 - **EN:** 1. *rakṣ*¦
 [Sp. 215, Z. 2] v. u. read [Spr. 208] ([567] of the 2nd Aufl.) st. 208.
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **1)** — caus. schützen vor (abl.)
 [Spr. (II) 5221.]
@@ -1017,7 +1017,7 @@ to protect: *ko 'smānatra vane rakṣayiṣyati*
 [Spr. (II) 5221.]
 - **EN:** — caus. to protect from (abl.)
 [Spr. (II) 5221.]
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — *samabhi* Jmd bewahren, behüten, beschützen
 [R. ed. Bomb. 2,12,19.]
@@ -1026,7 +1026,7 @@ to protect: *ko 'smānatra vane rakṣayiṣyati*
 [R. ed. Bomb. 2,12,19.]
 - **EN:** — *samabhi* to preserve, guard, protect someone
 [R. ed. Bomb. 2,12,19.]
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — *ā*, *ātmānamārakṣati sindhuvegāt*
 [Spr. (II) 6634.]
@@ -1035,7 +1035,7 @@ to protect: *ko 'smānatra vane rakṣayiṣyati*
 [Spr. (II) 6634.]
 - **EN:** — *ā*, *ātmānamārakṣati sindhuvegāt*
 [Spr. (II) 6634.]
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 ## rakṣ
 
@@ -1049,97 +1049,97 @@ to protect: *ko 'smānatra vane rakṣayiṣyati*
 — 1〉 стеречь, нести стражу, сохранять, защищать, охранять (в т.ч. скот), оберегать, блюсти, щадить, содержать, спасать, servare, — от (Abl.), хранить; тщательно следить за (Acc., в виде исключения Loc.), соблюдать (закон u. s. w.). Страну —, царство защищать, т.е. v. a. управлять. *rakṣamāṇa* [AV. 13,4,70]. с пассивным Bed. или ошибочно вместо *rakṣyamāṇa* *rakṣita* охраняемый u. s. w. *rakṣitam* _Adv._ надёжно сохранённый.
 - **EN:** **1.** √*rakṣ*¦ *rakṣati, ˚te* (*rakṣye* Fut. [89,28])
 — 1〉 to watch, keep watch, preserve, protect, guard (also cattle), to tend, take care of, spare, maintain, rescue, servare, — from (Abl.), to keep in safekeeping; to pay careful attention to (Acc., quite exceptionally Loc.), to observe (a law u. s. w.). To protect the land —, the realm, thus v. a. to rule. *rakṣamāṇa* [AV. 13,4,70]. with passive Bed. or erroneously for *rakṣyamāṇa* *rakṣita* guarded u. s. w. *rakṣitam* _Adv._ well kept.
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2〉 in Acht nehmen, so v. a. nicht antasten.
 
 - **RU:** — 2〉 блюсти, т.е. v. a. не трогать.
 - **EN:** — 2〉 to take heed of, thus v. a. not to touch.
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3〉 sich hüten vor, verhüten; mit Acc.
 
 - **RU:** — 3〉 остерегаться, предотвращать; mit Acc.
 - **EN:** — 3〉 to guard oneself against, to prevent; with Acc.
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4〉 Med. sich hüten, so v. a. sich fürchten.
 
 - **RU:** — 4〉 Med. остерегаться, т.е. v. a. бояться.
 - **EN:** — 4〉 Med. to guard oneself, thus v. a. to be afraid.
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **5)** — 5〉 Med. vielleicht verstecken.
 
 - **RU:** — 5〉 Med. быть может, прятать.
 - **EN:** — 5〉 Med. perhaps to conceal.
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **anu)** — Caus. *rakṣayati* schützen, — vor (Abl.) bewahren.
 
 - **RU:** — Caus. *rakṣayati* защищать, — от (Abl.) сохранять.
 - **EN:** — Caus. *rakṣayati* to protect, — to preserve from (Abl.).
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **des)** — Desid. *rirakṣiṣati* zu beschützen beabsichtigen vor (Abl.).
 
 - **RU:** — Desid. *rirakṣiṣati* намереваться защитить от (Abl.).
 - **EN:** — Desid. *rirakṣiṣati* to intend to protect from (Abl.).
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **int)** — Intens. *rārakṣāṇa* fleissig hütend.
 
 - **RU:** — Intens. *rārakṣāṇa* усердно охраняющий.
 - **EN:** — Intens. *rārakṣāṇa* diligently guarding.
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **anu+)** — Mit *adhi* bewachen, behüten. v. l. *hi rakṣati* st. *'dhirakṣati*.
 
 - **RU:** — Mit *adhi* охранять, оберегать. v. l. *hi rakṣati* st. *'dhirakṣati*.
 - **EN:** — With *adhi* to watch over, guard. v. l. *hi rakṣati* st. *'dhirakṣati*.
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **abhi+)** — Mit *anu* hütend nachgehen; behüten, beschützen.
 
 - **RU:** — Mit *anu* следовать охраняя; оберегать, защищать.
 - **EN:** — With *anu* to attend upon by guarding; to guard, protect.
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **pari+)** — Mit *abhi* bewachen, behüten, beschützen, — vor (Abl.), hegen, pflegen, bewahre, beobachten (Gesetze u. s. w.) Ein Heer hüten, so v. a. befehligen.
 
 - **RU:** — Mit *abhi* стеречь, оберегать, защищать, — от (Abl.), лелеять, холить, сохранять, соблюдать (законы u. s. w.) Войско охранять, т.е. v. a. возглавлять.
 - **EN:** — With *abhi* to watch over, guard, protect, — from (Abl.), to foster, tend, keep, observe (laws u. s. w.); to guard an army, thus v. a. to command.
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **vi+)** — Mit *samabhi* bewahre, behüten, beschützen.
 
 - **RU:** — Mit *samabhi* сохранять, оберегать, защищать.
 - **EN:** — With *samabhi* to preserve, guard, protect.
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **prati+err)** — Mit *ava* [MBH. 8,45,43] fehlerhaft. Unter *kṣar* ist *avakṣarantaḥ* st. *avarakṣantaḥ* vermuthet worden, [MBH. ed. Vardh.] liest *atitakṣantaḥ* (!)
 
 - **RU:** — Mit *ava* [MBH. 8,45,43] ошибочно. Под *kṣar* было предположено *avakṣarantaḥ* st. *avarakṣantaḥ*, [MBH. ed. Vardh.] читает *atitakṣantaḥ* (!)
 - **EN:** — With *ava* [MBH. 8,45,43] erroneous. Under *kṣar* it has been conjectured that *avakṣarantaḥ* st. *avarakṣantaḥ*, [MBH. ed. Vardh.] reads *atitakṣantaḥ* (!)
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **sampari+)** — Mit *ā* behüten, beschützen, bewahren, bewachen, — vor (Abl.)
 
 - **RU:** — Mit *ā* оберегать, защищать, сохранять, стеречь, — от (Abl.)
 - **EN:** — With *ā* to guard, protect, preserve, watch over, — from (Abl.)
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **samanu+)** — Mit *upa* in *uparakṣaṇa*.
 
 - **RU:** — Mit *upa* in *uparakṣaṇa*.
 - **EN:** — With *upa* in *uparakṣaṇa*.
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **pra+)** — Mit *prani*.
 
 - **RU:** — Mit *prani*.
 - **EN:** — With *prani*.
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **sam+intro)** — Mit *pari*
 — 1〉 bewachen, bewahren, beschützen, hüten, behüten, in Acht nehmen, erhalten, erretten, servare, — vor (Abl.) schonen, vor Berührung bewahren, aufbewahren, beobachten (ein Gesetz u. s. w.), bedacht sein auf. Eine Stadt u. s. w. hüten, so v. a. beherrschen.
@@ -1148,25 +1148,25 @@ to protect: *ko 'smānatra vane rakṣayiṣyati*
 — 1〉 стеречь, сохранять, защищать, охранять, оберегать, блюсти, содержать, спасать, servare, — от (Abl.) щадить, уберегать от прикосновения, хранить, соблюдать (закон u. s. w.), заботиться о. Город u. s. w. охранять, т.е. v. a. управлять.
 - **EN:** — With *pari*
 — 1〉 to watch over, preserve, protect, guard, keep guard over, take care of, maintain, rescue, servare, — from (Abl.), to spare, keep from contact, store up, observe (a law u. s. w.), to be mindful of. To guard a city u. s. w., thus v. a. to rule.
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **sam+2)** — 2〉 vermeiden; Med. mit Gen. Jmd vermeiden, machen, dass man mit Jmd nicht zusammenkommt.
 
 - **RU:** — 2〉 избегать; Med. mit Gen. избегать кого-либо, сделать так, чтобы не встретиться с кем-либо.
 - **EN:** — 2〉 to avoid; Med. with Gen. to avoid someone, to arrange that one does not meet with someone.
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **pra+2)** — Mit *saṃpari* beschützen.
 
 - **RU:** — Mit *saṃpari* защищать.
 - **EN:** — With *saṃpari* to protect.
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **pra+3)** — Mit *pra* bewahren, schützen vor (Abl.), erretten von (Abl.).
 
 - **RU:** — Mit *pra* сохранять, защищать от (Abl.), спасать от (Abl.).
 - **EN:** — With *pra* to preserve, protect from (Abl.), to rescue from (Abl.).
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **prati+intro)** — Mit *prati*
 — 1〉 behüten, beschützen, treu halten (ein Versprechen).
@@ -1180,31 +1180,31 @@ to protect: *ko 'smānatra vane rakṣayiṣyati*
 
 - **RU:** — Mit *vi* оберегать, защищать, сохранять.
 - **EN:** — With *vi* to guard, protect, preserve.
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **sam+full)** — Mit *sam* bewachen, bewahren, beschützen, hüten, behüten, erhalten, verschonen, erretten, servare, — vor (Abl.). sichern, verwahren, aufbewahren.
 
 - **RU:** — Mit *sam* стеречь, сохранять, защищать, охранять, оберегать, содержать, щадить, спасать, servare, — от (Abl.). обеспечивать, хранить, беречь.
 - **EN:** — With *sam* to watch over, preserve, protect, guard, keep guard over, maintain, spare, rescue, servare, — from (Abl.). To secure, keep in safekeeping, store up.
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **1)** **2.** √*˚rakṣ*¦ bewahrend, hütend in *gorakṣ*.
 
 - **RU:** **2.** √*˚rakṣ*¦ сохраняющий, охраняющий in *gorakṣ*.
 - **EN:** **2.** √*˚rakṣ*¦ preserving, guarding in *gorakṣ*.
-  <sub>DCS 1930 · lexicographic</sub>
+  <sub>lexicographic</sub>
 
 **1)** **3.** √*rakṣ*¦ (nur *rakṣīs*) beschädigen, verletzen [AV.]
 
 - **RU:** **3.** √*rakṣ*¦ (nur *rakṣīs*) повреждать, ранить [AV.]
 - **EN:** **3.** √*rakṣ*¦ (only *rakṣīs*) to injure, harm [AV.]
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **1)** **1.** √*rakṣ*¦ mit *samanu* in Acht nehmen, hüten [DIVYĀVAD. 104,13]. [105,18].
 
 - **RU:** **1.** √*rakṣ*¦ mit *samanu* блюсти, охранять [DIVYĀVAD. 104,13]. [105,18].
 - **EN:** **1.** √*rakṣ*¦ with *samanu* to take heed of, to guard [DIVYĀVAD. 104,13]. [105,18].
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **PW mit prati)** — Mit *prati*
 — 1〉 behüten, beschützen, treu halten (ein Versprechen).
@@ -1213,7 +1213,7 @@ to protect: *ko 'smānatra vane rakṣayiṣyati*
 - **RU:** — Mit *prati*
 — 1〉 оберегать, защищать, соблюдать верно (обещание).
 — 2〉 защищаться от, бояться.
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 ## rakṣ
 
@@ -1224,7 +1224,7 @@ to protect: *ko 'smānatra vane rakṣayiṣyati*
 
 - **RU:** 1. rakṣ¦ с samanu блюсти, охранять, [Divyāvad. 104,13; 105,18.] {part=,seq=22638,type=,n=2}
 - **EN:** 1. rakṣ¦ with samanu to take heed of, to guard, [Divyāvad. 104,13; 105,18.] {part=,seq=22638,type=,n=2}
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 ## rakṣ
 
@@ -1235,7 +1235,7 @@ to protect: *ko 'smānatra vane rakṣayiṣyati*
 
 - **RU:** **1.** *rakṣ*¦ с *samanu* блюсти, охранять [DIVYĀVAD. 104,13]. [105,18].
 - **EN:** **1.** *rakṣ*¦ with *samanu* to take heed of, to guard [DIVYĀVAD. 104,13]. [105,18].
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 ## rakṣ
 
@@ -1281,59 +1281,59 @@ to protect: *ko 'smānatra vane rakṣayiṣyati*
 **NWS-1)** *rakṣ* [Gen , unsp] ( rákṣati I P ) to keep (a secret). Kathās . to spare, have regard to (another's feelings). Mālav . to guard against, ward off, keep away, prevent, frustrate, injure. AV v, 1 . to conceal one's self, be afraid (?). ṚV x, 68, 1
 
 - **RU:** *rakṣ* [Gen , unsp] ( rákṣati I P ) хранить (тайну). Kathās . щадить, считаться с (чужими чувствами). Mālav . остерегаться, отражать, удалять, предотвращать, расстраивать, причинять вред. AV v, 1 . скрываться, бояться (?). ṚV x, 68, 1
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **NWS-2)** *rakṣ (=pṭ rakṣ 1)* [Gen , unsp] protéger. Renou 1997, S. 69 . priver, endommager. Renou 1997, S. 69
 
 - **RU:** *rakṣ (=pṭ rakṣ 1)* [Gen , unsp] защищать. Renou 1997, S. 69 . лишать, причинять ущерб. Renou 1997, S. 69
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **NWS-3)** [Ved , unsp] jemand (Akk) beschützen, behüten. etwas (Akk) behüten, bewachen, bewahren, in seinem Bestehen erhalten. die göttlichen Ordnungen oder Gesetze bewahren, bewachen (dass sie nicht verletzt werden). [ von Göttern. ] jemand (Akk) behüten vor (Abl). med: aufmerkend achten auf (Akk, Lok). wachsam sein (in der Hut). Int: fleissig hüten. Die Richtungswörter ánu , abhí , ā́ , pári fügen den oben angeführten Begriffen nur leise und leicht erkennbare Schattirungen bei
 
 - **RU:** [Ved , unsp] защищать, оберегать кого-л. (Akk). беречь, охранять, хранить что-л. (Akk), поддерживать в его существовании. хранить, охранять божественные установления или законы (чтобы они не нарушались). [ о богах. ] оберегать кого-л. (Akk) от (Abl). med: внимательно наблюдать за (Akk, Lok). быть бдительным (на страже). Int: усердно хранить. Направительные слова ánu , abhí , ā́ , pári привносят к вышеуказанным значениям лишь едва уловимые оттенки
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **NWS-4)** [Ved , unsp] ( I ) schützen, bewahren, wachen über
 
 - **RU:** [Ved , unsp] ( I ) защищать, хранить, бдеть над
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **NWS-5)** [Ved , unsp] ( I U ) hüten; behüten, bewachen, schützen. ṚV 4,33,4 , ṚV 4,50,2
 
 - **RU:** [Ved , unsp] ( I U ) охранять; беречь, стеречь, защищать. ṚV 4,33,4 , ṚV 4,50,2
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **NWS-6)** [Ved , unsp] auf der Hut sein, Wache halten. ṚV 10,68,1
 
 - **RU:** [Ved , unsp] быть настороже, нести стражу. ṚV 10,68,1
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **NWS-7)** [Śā , Soc] ( I P, X P ) to keep a watch over, to guard against. KA 1.16.35
 
 - **RU:** [Śā , Soc] ( I P, X P ) держать надзор над, остерегаться. KA 1.16.35
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **NWS-8)** [Jin , unsp , 1349 A.D. , Delhi] Kaus: to cause to be preserved. Rajaśekharasuri 1935, S. 119, Z. 12
 
 - **RU:** [Jin , unsp , 1349 A.D. , Delhi] Kaus: велеть сохранить. Rajaśekharasuri 1935, S. 119, Z. 12
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **NWS-9)** [Jin , unsp] to thwart. PPS, S. 101, Z. 32
 
 - **RU:** [Jin , unsp] расстраивать (замыслы), препятствовать. PPS, S. 101, Z. 32
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **NWS-10)** *+ ābl: beṭahren vor, erretten vor. ṚV 8,48,5 .* [Ved , unsp] + abhi : in Obhut -, Schutz nehmen. ṚV 1,163,5 . Ved , unsp
 
 - **RU:** *+ ābl: beṭahren vor, erretten vor. ṚV 8,48,5 .* [Ved , unsp] + abhi : брать под защиту, под опеку. ṚV 1,163,5 . Ved , unsp
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **NWS-11)** *+ upa ( uparakṣita ): „kept in custody“. aiī ḹ, ś. 213-224 (īndeḷ) .* [Epigr , unsp (s.v. uparakṣita )] + pari ( parirakṣita ): well guarded or preserved or kept. Mbh , Kāvya(MW) . Gen , unsp ; MW : 599 (s.v. parirakṣ )
 
 - **RU:** *+ upa ( uparakṣita ): „kept in custody“. aiī ḹ, ś. 213-224 (īndeḷ) .* [Epigr , unsp (s.v. uparakṣita )] + pari ( parirakṣita ): хорошо охраняемый, сохранённый, содержимый. Mbh , Kāvya(MW) . Gen , unsp ; MW : 599 (s.v. parirakṣ )
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **NWS-12)** *+ vratám : schütṣen, ṭachen über, überṭachen, e. ṭachsames āuge haben auṛ, beobachten, einhalten. ṚV 1,62,10 .* [Ved , unsp] Śā , Ling > [ rirakṣa -, Des] AiGr, I, S. 279 . * rirakṣiṣā ; ṣi dropped by haplology
 
 - **RU:** *+ vratám : schütṣen, ṭachen über, überṭachen, e. ṭachsames āuge haben auṛ, beobachten, einhalten. ṚV 1,62,10 .* [Ved , unsp] Śā , Ling > [ rirakṣa -, Des] AiGr, I, S. 279 . * rirakṣiṣā ; ṣi опущено в результате гаплологии
-  <sub>DCS 1930 · lexicographic</sub>
+  <sub>lexicographic</sub>

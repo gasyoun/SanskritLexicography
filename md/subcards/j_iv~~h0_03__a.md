@@ -22,10 +22,10 @@
 [MBH. 5,4536.] *ājīvan* making use of
 [YĀJÑ. 2,67.] *(dhenuḥ) ājīvyamānā jagatāṃ sākṣayā nāpacīyate*
 [MĀRK. P. 29,8.]
-  <sub>DCS 2223 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — Vgl. *ājīva* fgg.
 
 - **RU:** Caus. Vgl. *ājīva* fgg.
 - **EN:** — Vgl. *ājīva* fgg.
-  <sub>DCS 2223 · attested</sub>
+  <sub>attested</sub>

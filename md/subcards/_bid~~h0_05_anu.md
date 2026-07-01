@@ -16,4 +16,4 @@
 [ŚAT. BR. 1,6,3,17.] pass. to open itself: *anvabhidyetāṃ* (v. l. *nyabhi˚) karṇau*
 [BHĀG. P. 3,26,55.] — *baddhaṃ setuṃ ko 'nubhindyāt*
 [MBH. 2,2483] erroneously for *ko nu bhi˚*.
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>

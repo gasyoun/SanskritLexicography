@@ -106,7 +106,7 @@ _PWG article — 37 sub-card(s), 217 sense(s) · RU 173/217 · EN 164/217_
 [KATHĀS. 16,15.] *dehadāhaḥ*
 [GĪT. 7,41.]
 [BHĀG. P. 9,5,12.]
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 ## śam
 
@@ -331,7 +331,7 @@ _PWG article — 37 sub-card(s), 217 sense(s) · RU 173/217 · EN 164/217_
 [8297.] [4,397] (med.).
 [5,1880.] [R. 5,87,10.] [ṚT. 1,4.] [RAGH. 7,45.] [MEGH. 54.] ad [18.] [Spr. (II) 2723.] [(I) 2940.] [RĀJA-TAR. 4,125.] [BHĀG. P. 7,9,25.]Inschr. in [Journ. of the Am. Or. S. 7,25, Śl. 3.] *aśamitanakha* so v. a. not kept in order, neglected
 [MEGH. 89], v. l. for *aniyamitanakha* .
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 **caus.1b)** — b) euphemistisch so v. a. zum Tode bringen; Jmd aus dem Wege räumen, unschädlich machen, vernichten: *prajāṃ paśūn*
 [TS. 3,1,3,2.] *vainateyaśamitasya bhoginaḥ*
@@ -373,7 +373,7 @@ _PWG article — 37 sub-card(s), 217 sense(s) · RU 173/217 · EN 164/217_
 *saṃgrāme lalāṭaṃtapaṃ ravim*
 [BHAṬṬ. 6,99.] *prācīm* to submit oneself
 [KATHĀS. 19,89.]
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 **caus.1c)** — c) sich beruhigen so v. a. abstehen von Etwas
 [MBH. 1,7023.]
@@ -382,7 +382,7 @@ _PWG article — 37 sub-card(s), 217 sense(s) · RU 173/217 · EN 164/217_
 [MBH. 1,7023.]
 - **EN:** — c) to calm oneself, so v. a. to desist from something
 [MBH. 1,7023.]
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 **caus.2)** — 2) *śāmayati* (
 [VOP. 18,24]) aus metrischen Rücksichten: *droṇāstram — aśāmayat* (am Ende eines Śloka)
@@ -403,7 +403,7 @@ _PWG article — 37 sub-card(s), 217 sense(s) · RU 173/217 · EN 164/217_
 [9,633.] pass. *śāmyatām*
 [R. 5,41,4.]
 [MĀRK. P. 114,33] in the Bed. be removed from the way, be rendered harmless perhaps erroneous for *śamyatām* .
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 **1)** 1) *śamayati* (hier und da auch med. aus metrischen Rücksichten)
 [DHĀTUP. 19,70.]
@@ -422,7 +422,7 @@ _PWG article — 37 sub-card(s), 217 sense(s) · RU 173/217 · EN 164/217_
 [VOP. 24,5.] partic. *śamita* (по
 [P. 7,2,27.]
 [VOP. 26,114] и лексикографам, якобы также *śānta*).
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 ## śam
 
@@ -439,7 +439,7 @@ _PWG article — 37 sub-card(s), 217 sense(s) · RU 173/217 · EN 164/217_
 - **EN:** — intens. *śaṃśanti, śaṃśāntas*
 [P. 6,4,15], Schol. to be completely extinguished: *tejāṃsi śaṃśamāṃ cakruḥ*
 [BHAṬṬ. 14,67.]
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 ## śam
 
@@ -456,7 +456,7 @@ _PWG article — 37 sub-card(s), 217 sense(s) · RU 173/217 · EN 164/217_
 - **EN:** — *anu* to become quiet afterwards, to cease, to subside: *˚śāmyata* med.
 [BHĀG. P. 10,86,11.] *vādastamanu* (so according to Comm.) *śāmyati*
 [11,22,6.]
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 ## śam
 
@@ -470,7 +470,7 @@ _PWG article — 37 sub-card(s), 217 sense(s) · RU 173/217 · EN 164/217_
 [MBH. 12,6020.]
 - **EN:** — *abhi* to cease, to subside: *kutsā saṃjāyate, abhiśāmyati*
 [MBH. 12,6020.]
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 ## śam
 
@@ -484,7 +484,7 @@ _PWG article — 37 sub-card(s), 217 sense(s) · RU 173/217 · EN 164/217_
 [AIT. BR. 3,34.]
 - **EN:** — *ava* partic. *˚śānta* extinguished
 [AIT. BR. 3,34.]
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 ## śam
 
@@ -498,7 +498,7 @@ _PWG article — 37 sub-card(s), 217 sense(s) · RU 173/217 · EN 164/217_
 [ŚAT. BR. 7,3,2,1.] [2.]
 - **EN:** — *samava* caus. placare: *citiṃ samavaśamayanti*
 [ŚAT. BR. 7,3,2,1.] [2.]
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 ## śam
 
@@ -577,7 +577,7 @@ _PWG article — 37 sub-card(s), 217 sense(s) · RU 173/217 · EN 164/217_
 
 - **RU:** — Vgl. *upaśamana* fg.
 - **EN:** — Vgl. *upaśamana* fg.
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 **intrans.)** — *upa* ruhig —, still werden; aufhören, sich legen, erlöschen: *khalaḥ kenopaśāmyati*
 [Spr. 3197], v. l.
@@ -644,7 +644,7 @@ _PWG article — 37 sub-card(s), 217 sense(s) · RU 173/217 · EN 164/217_
 [MBH. 1,6577.] *agastyenāpi vātāpiḥ kiṃmarthamupaśāmitaḥ* так v. a. приведённый к вечному покою
 [3,8541.] [8645.] *mukhavātopaśāmita* охлаждённый путём обдувания (кушанье)
 [MĀRK. P. 50,45.]
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 ## śam
 
@@ -658,7 +658,7 @@ _PWG article — 37 sub-card(s), 217 sense(s) · RU 173/217 · EN 164/217_
 [ṚT. 1,1.]
 - **EN:** — *abhyupa*, partic. *˚śānta* stilled, cooled: *˚manmatha*
 [ṚT. 1,1.]
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 ## śam
 
@@ -681,7 +681,7 @@ _PWG article — 37 sub-card(s), 217 sense(s) · RU 173/217 · EN 164/217_
 [5,2363.] *tattamo vyupaśaśāma*
 [7,9427.] *na cāpi vairaṃ vaireṇa vyupaśāmyati*
 [Spr. (II) 3233.] Vgl. *vyupaśama*.
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 ## samupa+śam
 
@@ -695,7 +695,7 @@ _PWG article — 37 sub-card(s), 217 sense(s) · RU 173/217 · EN 164/217_
 [MBH. 12,10583.]
 - **EN:** — *samupa* dass.: *śabdaḥ samupaśāmyati*
 [MBH. 12,10583.]
-  <sub>DCS 2 · attested</sub>
+  <sub>attested</sub>
 
 ## ni+śam
 
@@ -712,7 +712,7 @@ _PWG article — 37 sub-card(s), 217 sense(s) · RU 173/217 · EN 164/217_
 - **EN:** — *ni* caus. to bring to rest, to set in order
 [AV. 6,52,3.] *mana udyutam*
 [111,2.]
-  <sub>DCS 20 · attested</sub>
+  <sub>attested</sub>
 
 ## praṇi+śam
 
@@ -732,7 +732,7 @@ _PWG article — 37 sub-card(s), 217 sense(s) · RU 173/217 · EN 164/217_
 [P. 8,4,17.]
 [VOP. 8,22.] [11,5.] to become calm: *praṇiśāmya daśagrīva*
 [BHAṬṬ. 9,100.]
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 ## pari+śam
 
@@ -746,7 +746,7 @@ _PWG article — 37 sub-card(s), 217 sense(s) · RU 173/217 · EN 164/217_
 [GĪT. 7,20.]
 - **EN:** — *pari* caus. to appease, cause to cease: *kalikaluṣaṃ janayatu pariśamitam*
 [GĪT. 7,20.]
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 ## praśam
 
@@ -934,7 +934,7 @@ _PWG article — 37 sub-card(s), 217 sense(s) · RU 173/217 · EN 164/217_
 [YOGAYĀTRĀ 2,22] in [Ind. St. 10,170.] [VARĀH. BṚH. S. 85,9.] of animals
 [86,16.] [R. 2,34,50.] [3,12,13.] [17,18.] [18,21.] [BRAHMA-P. in LA. (III) 52,17.] *˚rutaceṣṭita*
 [VARĀH. BṚH. S. 86,52.] Vgl. *praśama* fg. and *praśān* fgg.; to *praśām* is to be added the passage: *arurvai puruṣasyākṣi praśānmameti* sore is the man's eye, whole (painless) mine
-  <sub>DCS 323 · attested</sub>
+  <sub>attested</sub>
 
 **pra — caus./trans.)** [ŚAT. BR. 3,1,3,10.] — caus. beruhigen, beschwichtigen; stillen, aufhören machen, löschen: *sāntvena*
 [M. 8,391.]
@@ -1022,7 +1022,7 @@ _PWG article — 37 sub-card(s), 217 sense(s) · RU 173/217 · EN 164/217_
 [HARIV. 11939.] *praśamita* приведённый в покой так v. a. обезвреженный, уничтоженный
 [MBH. 3,2031.] *praśamitaripu*
 [MṚCCH. 178,12.]
-  <sub>DCS 323 · attested</sub>
+  <sub>attested</sub>
 
 **note — Dehnung des Wurzelvocals)** [RAGH. 1,61.] Mit Dehnung des Wurzelvocals: *praśāmita (rajaḥ śoṇitena)*
 [MBH. 9,633.] hier aus metrischer Rücksicht, ohne alle Veranlassung dagegen in den folgenden Stellen: *praśāmyamāna* beschwichtigt werdend
@@ -1041,7 +1041,7 @@ _PWG article — 37 sub-card(s), 217 sense(s) · RU 173/217 · EN 164/217_
 [NĪLAK.], таким образом, относится к 4. *śam*) *nagaram* подчиняться, отвоёвывать обратно
 [MBH. 3,12196.] *praśāmita*
 [HARIV. 11939.] Vgl. *praśamana* .
-  <sub>DCS 323 · attested</sub>
+  <sub>attested</sub>
 
 ## anupra+śam
 
@@ -1052,7 +1052,7 @@ _PWG article — 37 sub-card(s), 217 sense(s) · RU 173/217 · EN 164/217_
 
 - **RU:** — *anupra* caus. s. *anupraśamana* .
 - **EN:** — *anupra* caus. s. *anupraśamana* .
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 ## saṃpra+śam
 
@@ -1066,7 +1066,7 @@ _PWG article — 37 sub-card(s), 217 sense(s) · RU 173/217 · EN 164/217_
 [MBH. 1,8249.]
 - **EN:** — *saṃpra*, partic. *˚śānta* having ceased, abated, vanished: *˚rajastamas*
 [MBH. 1,8249.]
-  <sub>DCS 3 · attested</sub>
+  <sub>attested</sub>
 
 ## prati+śam
 
@@ -1083,7 +1083,7 @@ _PWG article — 37 sub-card(s), 217 sense(s) · RU 173/217 · EN 164/217_
 - **EN:** — *prati*, partic. *˚śānta* dass.: *˚śoka*
 [MBH. 12,891.] absol. *˚śāmya* being extinguished
 [454.] Vgl. *pratiśama* .
-  <sub>DCS 2 · attested</sub>
+  <sub>attested</sub>
 
 ## śam
 
@@ -1151,7 +1151,7 @@ _PWG article — 37 sub-card(s), 217 sense(s) · RU 173/217 · EN 164/217_
 **intro)** — *sam*
 
 - **RU:** — *sam*
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 **1))** 1) vollständig zur Ruhe gelangen: *saṃśāmya mā śucaḥ*
 [R. GORR. 2,23,6.] [1,76,26.] [2,18,47.] *saṃśāmya tena* (auch *saha tena*) so v. a. schliesse Frieden mit
@@ -1180,14 +1180,14 @@ _PWG article — 37 sub-card(s), 217 sense(s) · RU 173/217 · EN 164/217_
 [R. GORR. 1,5,4.] [76,18.] совершенно угасший: *agni*
 [2,68,1] ([66,1] [SCHL.]). [R. SCHL. 2,69,13.] так v. a. мёртвый
 [MBH. 9,1789.]
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 **2))** — 2) beruhigen, stillen, beschwichtigen
 [ŚAT. BR. 1,7,3,11.] [3,4,3,1.]
 
 - **RU:** — 2) успокаивать, утишать, умиротворять
 [ŚAT. BR. 1,7,3,11.] [3,4,3,1.]
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 **addendum/continuation)** — Vgl. *saṃśama* . — caus. dass.
 [ŚĀṄKH. ŚR. 14,29,3. 5.]
@@ -1214,7 +1214,7 @@ _PWG article — 37 sub-card(s), 217 sense(s) · RU 173/217 · EN 164/217_
 [R. 2,97,15.] *tvāmapi kālaḥ saṃśamayiṣyati* так v. a. упокоить навеки
 [MBH. 12,8143.] *bhāratayuddhapṛṣṭham* уничтожить, покончить с
 [5,5780.] Vgl. *saṃśamana* fg.
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 ## śam
 
@@ -1237,7 +1237,7 @@ _PWG article — 37 sub-card(s), 217 sense(s) · RU 173/217 · EN 164/217_
 [NIR. 1,10] (= *hinasti* D.). To cause someone harm: *mā naḥ śamnīthāḥ kathā naḥ śamnīṣa iti*
 [KĀṬH. 10,7.]
 — Vgl. 2. *śam* caus. 1) b}).
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 ## śam
 
@@ -1317,7 +1317,7 @@ _PWG article — 37 sub-card(s), 217 sense(s) · RU 173/217 · EN 164/217_
 [HARIV. 1012.]
 [MĀRK. P. 14,63.] — *niśamyamāna* with act. Bed. and gen.
 [R. ed. Bomb. 2,66,10.] Vgl. *niśamana, niśāma, niśāmana* .
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 ## ni+śam
 
@@ -1340,7 +1340,7 @@ _PWG article — 37 sub-card(s), 217 sense(s) · RU 173/217 · EN 164/217_
 * syāttannigadet*
 [ĀŚV. ŚR. 10,7,3. 4. 6.] *yathāniśāntam* so v. a. in the accepted customary manner
 [7,12,13. fg. 8,3,22.]
-  <sub>DCS 20 · attested</sub>
+  <sub>attested</sub>
 
 ## śam
 
@@ -1357,7 +1357,7 @@ _PWG article — 37 sub-card(s), 217 sense(s) · RU 173/217 · EN 164/217_
 - **EN:** — *anuni* = *niḥ ruditamanuniśamya*
 [BHĀG. P. 10,7,25.] *idamidamiti tṛṣṇayābhibhūtaṃ janamanavāptadhanaṃ viṣīdamānam . nipuṇamanuniśamya tattvabuddhyā* presenting to the mind
 [MBH. 12,6680.]
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 ## śam
 
@@ -1371,7 +1371,7 @@ _PWG article — 37 sub-card(s), 217 sense(s) · RU 173/217 · EN 164/217_
 [R. 7,29,37.]
 - **EN:** — *samanuni* dass.: *svasutavacanamādṛtaḥ priyaṃ tatsamanuniśamya* recognising
 [R. 7,29,37.]
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 ## śam
 
@@ -1385,7 +1385,7 @@ _PWG article — 37 sub-card(s), 217 sense(s) · RU 173/217 · EN 164/217_
 [DAŚAK. 94,16.]
 - **EN:** — *abhini* dass.: *˚śāmya* absol.
 [DAŚAK. 94,16.]
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 ## śam
 
@@ -1399,7 +1399,7 @@ _PWG article — 37 sub-card(s), 217 sense(s) · RU 173/217 · EN 164/217_
 [MBH. 8,1738.]
 - **EN:** — *upani* dass.: *tadupaniśamya vacaḥ*
 [MBH. 8,1738.]
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 ## śam
 
@@ -1413,7 +1413,7 @@ _PWG article — 37 sub-card(s), 217 sense(s) · RU 173/217 · EN 164/217_
 [R. ed. Ser. 1,8,19] (nach [WESTERGAARD]).
 - **EN:** — *praṇi* dass.
 [R. ed. Ser. 1,8,19] (after [WESTERGAARD]).
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 ## śam
 
@@ -1427,7 +1427,7 @@ _PWG article — 37 sub-card(s), 217 sense(s) · RU 173/217 · EN 164/217_
 [MBH. 3,1878.]
 - **EN:** — *vini* dass.: *idam — ghoraṃ śuci caritaṃ viniśamya phālgunasya*
 [MBH. 3,1878.]
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 ## śam
 
@@ -1450,7 +1450,7 @@ _PWG article — 37 sub-card(s), 217 sense(s) · RU 173/217 · EN 164/217_
 [KATHĀS. 40,115.] *sarvānrājñaḥ kulataḥ saṃniśāmya*
 [MBH. 5,7418.] *āyavyayau vipulau saṃniśāmya*
 [12,4389.]
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 ## śam
 
@@ -1596,7 +1596,7 @@ u. s. w. [NAIGH. 3,6.] [AK. 3,5,10.] [TRIK. 1,1,113.] [H. 1535.] [an. 7,15.] [ME
 [BURNOUF] written separately) *naḥ*
 [BHĀG. P. 3,5,4.] *śaṃ yoḥ* s. u. *yos*. Collection of examples in
 [M. MÜLLER, Transl. 1,180.]
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 ## śam
 
@@ -1610,7 +1610,7 @@ u. s. w. [NAIGH. 3,6.] [AK. 3,5,10.] [TRIK. 1,1,113.] [H. 1535.] [an. 7,15.] [ME
 [PAT. a. a. O. 6 (4),32,b.]
 - **EN:** 2. *śam*¦, intens. absol. *śaṃśamam* and *śaṃśāmam*
 [PAT. a. a. O. 6 (4),32,b.]
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 ## śam
 
@@ -1630,7 +1630,7 @@ u. s. w. [NAIGH. 3,6.] [AK. 3,5,10.] [TRIK. 1,1,113.] [H. 1535.] [an. 7,15.] [ME
 [VĀMANA 5,2,76.]
 — *anuni*
 [PAT. a. a. O. 1,16,b.]
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 ## śam
 
@@ -1644,19 +1644,19 @@ u. s. w. [NAIGH. 3,6.] [AK. 3,5,10.] [TRIK. 1,1,113.] [H. 1535.] [an. 7,15.] [ME
 — 1〉 стараться, усердно трудиться, работать; insbes. о деятельности при богослужении.
 - **EN:** **1.** √*śam*¦ (*śamīśva, śamīdhvam, śamyati, śaśame, śaśamate*, Partic. *śamant* [[SV. 1,4,2,3,6]] und *śamita*)
 — 1〉 to toil, be zealous, work; insbes. of activity in the cult.
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2〉 zurichten, zubereiten. v. l. *śim*.
 
 - **RU:** — 2〉 снаряжать, приготовлять. v. l. *śim*.
 - **EN:** — 2〉 to prepare, arrange. v. l. *śim*.
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3〉 *śaśamāna* eifrig bemüht, beschäftigt, fleissig; namentlich in der Arbeit für die Götter.
 
 - **RU:** — 3〉 *śaśamāna* усердно занятый, деятельный, прилежный; в особенности в труде для богов.
 - **EN:** — 3〉 *śaśamāna* zealously engaged, occupied, diligent; especially in work for the gods.
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 **1)** **2.** √*śam*¦, *śāmyati* (metrisch auch Med. und *śamet*; *Pass. impers. *śamyate, aśami*)
 — 1〉 ruhig —, still werden, befriedigt sein.
@@ -1665,68 +1665,68 @@ u. s. w. [NAIGH. 3,6.] [AK. 3,5,10.] [TRIK. 1,1,113.] [H. 1535.] [an. 7,15.] [ME
 — 1〉 успокаиваться, затихать, быть удовлетворённым.
 - **EN:** **2.** √*śam*¦, *śāmyati* (metrically also Med. and *śamet*; *Pass. impers. *śamyate, aśami*)
 — 1〉 to become calm, still, satisfied.
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2〉 aufhören, nachlassen, sich legen, erlöschen.
 
 - **RU:** — 2〉 прекращаться, ослабевать, утихать, угасать.
 - **EN:** — 2〉 to cease, abate, subside, be extinguished.
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 **3a)** — a〉 beruhigt, zur innern Ruhe gelangt, frei von aller Leidenschaft.
 
 - **RU:** — a〉 успокоенный, достигший внутреннего покоя, свободный от всякой страсти.
 - **EN:** — 3〉 *śānta*
 — a〉 calmed, having attained inner peace, free from all passion.
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 **3b)** — b〉 ruhig, still, sanft, mild. Superl. *śāntatama*.
 
 - **RU:** — b〉 тихий, спокойный, кроткий, мягкий. Superl. *śāntatama*.
 - **EN:** — b〉 calm, still, gentle, mild. Superl. *śāntatama*.
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 **3c)** — c〉 weich, schmiegsam.
 
 - **RU:** — c〉 мягкий, гибкий.
 - **EN:** — c〉 soft, pliant.
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 **3d)** — d〉 im Ritual und in der Auguralkunde zahm, mild, freundlich (im Gegensatz zu wild, der Ordnung widerstrebend), faustus.
 
 - **RU:** — d〉 в ритуале и в науке о предзнаменованиях кроткий, мягкий, благоприятный (в противоп. дикому, противящемуся порядку), faustus.
 - **EN:** — d〉 in ritual and in augury: tame, mild, propitious (as opposed to wild, resistant to order), faustus.
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 **3e)** — e〉 erloschen.
 
 - **RU:** — e〉 угасший.
 - **EN:** — e〉 extinguished.
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 **3f)** — f〉 nachgelassen, aufgehört, gewichen.
 
 - **RU:** — f〉 ослабший, прекратившийся, отступивший.
 - **EN:** — f〉 abated, ceased, subsided.
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 **3g)** — g〉 von Geschossen so v. a. unwirksam —, unschädlich geworden, — gemacht.
 
 - **RU:** — g〉 о снарядах so v. a. ставший или сделанный недейственным, безвредным.
 - **EN:** — g〉 of missiles: so v. a. rendered ineffective, rendered harmless.
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 **3h)** — h〉 zur Ruhe gekommen, so v. a. zum Tode befördert, gestorben, ausgestorben.
 
 - **RU:** — h〉 обретший покой, so v. a. умерщвлённый, умерший, вымерший.
 - **EN:** — h〉 come to rest; so v. a. brought to death, deceased, extinct.
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 **3i)** — i〉 *śāntaṃ pāpam* (auch wiederholt) abgewehrt sei das Uebel, ein Ausruf, mit den man ein Unheil, das ein ausgesprochenes Wort bewirken könnte, abwehren will. *dhik śāntam* so v. a. behüte Gott! bei Leibe nicht! *śāntam* allein = *śāntaṃ pāpam* und auch so v. a. so wahr mir Gott helfen möge!
 
 - **RU:** — i〉 *śāntaṃ pāpam* (auch wiederholt) да отвратится зло — восклицание, которым хотят предотвратить беду, которую могло бы навлечь произнесённое слово. *dhik śāntam* so v. a. упаси Бог! ни в коем случае! *śāntam* allein = *śāntaṃ pāpam* und auch so v. a. да поможет мне Бог!
 - **EN:** — i〉 *śāntaṃ pāpam* (also repeated) may the evil be averted — an exclamation with which one wards off misfortune that an uttered word might cause. *dhik śāntam* so v. a. God forbid! By no means! *śāntam* alone = *śāntaṃ pāpam* and also so v. a. God help me!
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 **caus_1)** — Caus. *śamayati* (metrisch auch *śāmayati*; Pass. *śāmyate* [auch [VAITĀN. 10,18] und zu [Spr. 6899]] u. s. w. wohl nur fehlerhaft)
 — 1〉 beruhigen, stillen, beschwichtigen.
@@ -1737,67 +1737,67 @@ u. s. w. [NAIGH. 3,6.] [AK. 3,5,10.] [TRIK. 1,1,113.] [H. 1535.] [an. 7,15.] [ME
 
 - **RU:** — 2〉 приводить в порядок, ошибку или беду исправлять, placare.
 - **EN:** — 2〉 to set right, to make good a fault or evil, placare.
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 **caus_3)** — 3〉 auslöschen (trans.) [PRASANNAR. 136,5].
 
 - **RU:** — 3〉 тушить, гасить (trans.) [PRASANNAR. 136,5].
 - **EN:** — 3〉 to extinguish (trans.) [PRASANNAR. 136,5].
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 **caus_4)** — 4〉 Jmd bezwingen, überwinden, sich (sibi) unterwerfen.
 
 - **RU:** — 4〉 кого-либо покорять, одолевать, подчинять себе (sibi).
 - **EN:** — 4〉 to subdue someone, overcome, bring under one's (sibi) subjection.
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 **caus_5)** — 5〉 euphemistisch so v. a. zum Tode bringen, schlachten ([VAITĀN. 10,18]), Jmd aus dem Wege räumen, unschädlich machen, vernichten [PRASANNAR. 136,5].
 
 - **RU:** — 5〉 эвфемистически so v. a. умерщвлять, закалывать ([VAITĀN. 10,18]), убирать кого-либо с дороги, обезвреживать, уничтожать [PRASANNAR. 136,5].
 - **EN:** — 5〉 euphemistically so v. a. to bring to death, slaughter ([VAITĀN. 10,18]), to remove someone out of the way, render harmless, destroy [PRASANNAR. 136,5].
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 **caus_6)** — 6〉 sich beruhigen, so v. a. von Etwas abstehen.
 
 - **RU:** — 6〉 успокаиваться, so v. a. воздерживаться от чего-либо.
 - **EN:** — 6〉 to calm oneself; so v. a. to desist from something.
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 **intens)** — Intens. *śaṃśamīti*, **śaṃśanti* vollständig erlöschen [BĀLAR. 136,8]. *śaṃśamāṃ cakruḥ* [BHAṬṬ.]
 
 - **RU:** — Intens. *śaṃśamīti*, **śaṃśanti* полностью угасать [BĀLAR. 136,8]. *śaṃśamāṃ cakruḥ* [BHAṬṬ.]
 - **EN:** — Intens. *śaṃśamīti*, **śaṃśanti* to be entirely extinguished [BĀLAR. 136,8]. *śaṃśamāṃ cakruḥ* [BHAṬṬ.]
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 **anu)** — Mit *anu* hinterher ruhig werden, — aufhören, — sich legen.
 
 - **RU:** — Mit *anu* следом успокаиваться, — прекращаться, — утихать.
 - **EN:** — With *anu* to become calm afterwards, to cease afterwards, to subside afterwards.
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 **ava)** — Mit *abhi* aufhören, sich legen.
 
 - **RU:** — Mit *abhi* прекращаться, утихать.
 - **EN:** — With *abhi* to cease, subside.
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 **a_plus)** — Mit *ava*, *avaśānta* erlöschen.
 
 - **RU:** — Mit *ava*, *avaśānta* угасать.
 - **EN:** — With *ava*, *avaśānta* to be extinguished.
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 **ud)** — Mit *vyava*, *vyavaśānta* dass. [MAITR. S. 1,8,6 (123,12)] = [ĀPAST. ŚR. 6,9,2].
 
 - **RU:** — Mit *vyava*, *vyavaśānta* dass. [MAITR. S. 1,8,6 (123,12)] = [ĀPAST. ŚR. 6,9,2].
 - **EN:** — With *vyava*, *vyavaśānta* dass. [MAITR. S. 1,8,6 (123,12)] = [ĀPAST. ŚR. 6,9,2].
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 **pari_caus)** — Mit *samava* Caus. placare.
 
 - **RU:** — Mit *samava* Caus. placare.
 - **EN:** — With *samava* Caus. placare.
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 **pra_1)** — Mit *upa* (Med. hier und da auch in ungebundener Rede) 
 — 1〉 ruhig —, still werden.
@@ -1806,19 +1806,19 @@ u. s. w. [NAIGH. 3,6.] [AK. 3,5,10.] [TRIK. 1,1,113.] [H. 1535.] [an. 7,15.] [ME
 — 1〉 становиться тихим, спокойным.
 - **EN:** — With *upa* (Med. here and there also in prose) 
 — 1〉 to become calm, still.
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 **pra_2)** — 2〉 erlöschen [Spr. 7848].
 
 - **RU:** — 2〉 угасать [Spr. 7848].
 - **EN:** — 2〉 to be extinguished [Spr. 7848].
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 **pra_3)** — 3〉 aufhören, sich legen.
 
 - **RU:** — 3〉 прекращаться, утихать.
 - **EN:** — 3〉 to cease, subside.
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 **pra_ppp_a)** — 4〉 *upaśānta*
 — a〉 beruhigt.
@@ -1827,19 +1827,19 @@ u. s. w. [NAIGH. 3,6.] [AK. 3,5,10.] [TRIK. 1,1,113.] [H. 1535.] [an. 7,15.] [ME
 — a〉 успокоенный.
 - **EN:** — 4〉 *upaśānta*
 — a〉 calmed.
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 **pra_ppp_b)** — b〉 erloschen.
 
 - **RU:** — b〉 угасший.
 - **EN:** — b〉 extinguished.
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 **pra_ppp_c)** — c〉 aufgehört, sich gelegt habend.
 
 - **RU:** — c〉 прекратившийся, утихший.
 - **EN:** — c〉 having ceased, having subsided.
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 **pra_caus_1)** — 1〉 beruhigen, stillen, beschwichtigen, placare.
 - **EN:** — 1〉 to calm, still, appease, placare.
@@ -1848,31 +1848,31 @@ u. s. w. [NAIGH. 3,6.] [AK. 3,5,10.] [TRIK. 1,1,113.] [H. 1535.] [an. 7,15.] [ME
 
 - **RU:** — 2〉 гасить (trans.) [290,9].
 - **EN:** — 2〉 to extinguish (trans.) [290,9].
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 **pra_caus_3)** — 3〉 abkühlen.
 
 - **RU:** — 3〉 охлаждать.
 - **EN:** — 3〉 to cool down.
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 **pra_caus_4)** — 4〉 aufhören machen.
 
 - **RU:** — 4〉 заставлять прекращаться.
 - **EN:** — 4〉 to cause to cease.
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 **pra_caus_5)** — 5〉 zur ewigen Ruhe bringen.
 
 - **RU:** — 5〉 отправлять на вечный покой.
 - **EN:** — 5〉 to bring to eternal rest.
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 **prati_abhi)** — Mit *abhyupa*, *˚śānta* gestillt, abgekühlt.
 
 - **RU:** — Mit *abhyupa*, *˚śānta* утолённый, охлаждённый.
 - **EN:** — With *abhyupa*, *˚śānta* stilled, cooled.
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 **vi_1)** — Mit *vyupa*
 — 1〉 sich beruhigen [MBH. 6,121,52].
@@ -1881,19 +1881,19 @@ u. s. w. [NAIGH. 3,6.] [AK. 3,5,10.] [TRIK. 1,1,113.] [H. 1535.] [an. 7,15.] [ME
 — 1〉 успокаиваться [MBH. 6,121,52].
 - **EN:** — With *vyupa*
 — 1〉 to calm oneself [MBH. 6,121,52].
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 **vi_2)** — 2〉 aufhören, sich legen. *duḥkhaṃ* *vyupaśāntam* [KĀRAṆḌ. 48,9].
 
 - **RU:** — 2〉 прекращаться, утихать. *duḥkhaṃ* *vyupaśāntam* [KĀRAṆḌ. 48,9].
 - **EN:** — 2〉 to cease, subside. *duḥkhaṃ* *vyupaśāntam* [KĀRAṆḌ. 48,9].
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 **vyava)** — Mit *samupa* aufhören, sich legen [CARAKA. 6,10].
 
 - **RU:** — Mit *samupa* прекращаться, утихать [CARAKA. 6,10].
 - **EN:** — With *samupa* to cease, subside [CARAKA. 6,10].
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 **sam_1a)** — Mit *ni*, *niśānta*
 — 1〉 *beruhigt, ruhig [H. an. 3,271]. [MED. t. 119].
@@ -1902,13 +1902,13 @@ u. s. w. [NAIGH. 3,6.] [AK. 3,5,10.] [TRIK. 1,1,113.] [H. 1535.] [an. 7,15.] [ME
 — 1〉 *успокоенный, тихий [H. an. 3,271]. [MED. t. 119].
 - **EN:** — With *ni*, *niśānta*
 — 1〉 *calmed, calm [H. an. 3,271]. [MED. t. 119].
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 **sam_1b)** — 2〉 hergebracht, üblich.
 
 - **RU:** — 2〉 установившийся, обычный.
 - **EN:** — 2〉 traditional, customary.
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 **sam_caus_1)** — 1〉 zur Ruhe —, zurecht bringen.
 - **EN:** — 1〉 to bring to rest, to set in order.
@@ -1923,13 +1923,13 @@ u. s. w. [NAIGH. 3,6.] [AK. 3,5,10.] [TRIK. 1,1,113.] [H. 1535.] [an. 7,15.] [ME
 
 - **RU:** — Mit *praṇi* успокаиваться [BHAṬṬ.]
 - **EN:** — With *praṇi* to calm oneself [BHAṬṬ.]
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 **sam_ud)** — Mit *pari* Caus. aufhören machen.
 
 - **RU:** — Mit *pari* Caus. заставлять прекращаться.
 - **EN:** — With *pari* Caus. to cause to cease.
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 **upa_1)** — Mit *pra*
 — 1〉 sich beruhigen, zur Ruhe kommen.
@@ -1938,19 +1938,19 @@ u. s. w. [NAIGH. 3,6.] [AK. 3,5,10.] [TRIK. 1,1,113.] [H. 1535.] [an. 7,15.] [ME
 — 1〉 успокаиваться, обретать покой.
 - **EN:** — With *pra*
 — 1〉 to calm oneself, come to rest.
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 **upa_2)** — 2〉 erlöschen.
 
 - **RU:** — 2〉 угасать.
 - **EN:** — 2〉 to be extinguished.
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 **upa_3)** — 3〉 aufhören, sich legen.
 
 - **RU:** — 3〉 прекращаться, утихать.
 - **EN:** — 3〉 to cease, subside.
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 **upa_ppp_a)** — 4〉 *praśānta*
 — a〉 ruhig geworden, beruhigt, ruhig.
@@ -1961,43 +1961,43 @@ u. s. w. [NAIGH. 3,6.] [AK. 3,5,10.] [TRIK. 1,1,113.] [H. 1535.] [an. 7,15.] [ME
 
 - **RU:** — b〉 тихий, so v. a. безразличный, беспечный.
 - **EN:** — b〉 calm; so v. a. indifferent, negligent.
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 **upa_ppp_c)** — c〉 in der Auguralkunde nichts Schlimmes bedeutend, boni ominis.
 
 - **RU:** — c〉 в науке о предзнаменованиях не предвещающий ничего дурного, boni ominis.
 - **EN:** — c〉 in augury: portending nothing ill, boni ominis.
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 **upa_ppp_d)** — d〉 erloschen.
 
 - **RU:** — d〉 угасший.
 - **EN:** — d〉 extinguished.
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 **upa_ppp_e)** — e〉 beseitigt, entfernt.
 
 - **RU:** — e〉 устранённый, удалённый.
 - **EN:** — e〉 removed, eliminated.
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 **upa_ppp_f)** — f〉 aufgehört —, sich gelegt habend, verschwunden, zu Ende gegangen, nicht da seiend, sich nicht sehen lassend.
 
 - **RU:** — f〉 прекратившийся, утихший, исчезнувший, закончившийся, отсутствующий, не показывающийся.
 - **EN:** — f〉 having ceased, having subsided, vanished, come to an end, no longer present, no longer visible.
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 **upa_ppp_g)** — g〉 zu Schanden geworden.
 
 - **RU:** — g〉 посрамлённый, потерпевший неудачу.
 - **EN:** — g〉 brought to shame.
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 **upa_ppp_h)** — h〉 zur ewigen Ruhe eingegangen, gestorben, todt.
 
 - **RU:** — h〉 обретший вечный покой, умерший, мёртвый.
 - **EN:** — h〉 gone to eternal rest, deceased, dead.
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 **upa_caus_1)** — Caus. (hier und da mit Dehnung des Wurzelvocals auch ohne metrische Veranlassung)
 — 1〉 beruhigen, beschwichtigen.
@@ -2008,37 +2008,37 @@ u. s. w. [NAIGH. 3,6.] [AK. 3,5,10.] [TRIK. 1,1,113.] [H. 1535.] [an. 7,15.] [ME
 
 - **RU:** — 2〉 гасить (trans.).
 - **EN:** — 2〉 to extinguish (trans.).
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 **upa_caus_3)** — 3〉 stillen, aufhören machen. *praśamita* [ŚIŚ. 17,38]. [VĀSAV. 281,2].
 
 - **RU:** — 3〉 унимать, заставлять прекращаться. *praśamita* [ŚIŚ. 17,38]. [VĀSAV. 281,2].
 - **EN:** — 3〉 to still, cause to cease. *praśamita* [ŚIŚ. 17,38]. [VĀSAV. 281,2].
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 **upa_caus_4)** — 4〉 unschädlich machen, vernichten.
 
 - **RU:** — 4〉 обезвреживать, уничтожать.
 - **EN:** — 4〉 to render harmless, destroy.
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 **upa_caus_5)** — 5〉 sich (silbi) unterwerfen, wiedererobern.
 
 - **RU:** — 5〉 подчинять себе (sibi), отвоёвывать.
 - **EN:** — 5〉 to bring under one's (sibi) subjection, to reconquer.
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 **samupa)** — Mit *anupra* in *anupraśaman*.
 
 - **RU:** — Mit *anupra* in *anupraśaman*.
 - **EN:** — With *anupra* in *anupraśaman*.
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 **paryupa)** — Mit *saṃpra*, *saṃpraśānta* aufgehört, gewichen, geschwunden.
 
 - **RU:** — Mit *saṃpra*, *saṃpraśānta* прекратившийся, отступивший, исчезнувший.
 - **EN:** — With *saṃpra*, *saṃpraśānta* having ceased, subsided, vanished.
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 **vyupa_1)** — Mit *prati*
 — 1〉 erlöschen.
@@ -2047,13 +2047,13 @@ u. s. w. [NAIGH. 3,6.] [AK. 3,5,10.] [TRIK. 1,1,113.] [H. 1535.] [an. 7,15.] [ME
 — 1〉 угасать.
 - **EN:** — With *prati*
 — 1〉 to be extinguished.
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 **vyupa_2)** — 2〉 *pratiśānta* aufgehört, gewichen, geschwunden.
 
 - **RU:** — 2〉 *pratiśānta* прекратившийся, отступивший, исчезнувший.
 - **EN:** — 2〉 *pratiśānta* having ceased, subsided, vanished.
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 **prati_caus)** *pratiśāmya* ([VAJRACCH. 19,9]) und *˚śāmayitvā* ([MAHĀVASTU 56,2]) wieder an seinen Platz bringen. Vgl.
 - **EN:** *pratiśāmya* ([VAJRACCH. 19,9]) and *˚śāmayitvā* ([MAHĀVASTU 56,2]) to bring back to its place. Vgl.
@@ -2068,37 +2068,37 @@ u. s. w. [NAIGH. 3,6.] [AK. 3,5,10.] [TRIK. 1,1,113.] [H. 1535.] [an. 7,15.] [ME
 — 1〉 полностью обретать покой.
 - **EN:** — With *sam*
 — 1〉 to attain complete rest.
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 **sam2_vi_2)** — 2〉 mit Instr. der Person (mit und ohne *saha*) Frieden schliessen mit.
 
 - **RU:** — 2〉 mit Instr. der Person (mit und ohne *saha*) заключать мир с.
 - **EN:** — 2〉 with Instr. of the person (with and without *saha*) to make peace with.
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 **sam2_vi_3)** — 3〉 erlöschen.
 
 - **RU:** — 3〉 угасать.
 - **EN:** — 3〉 to be extinguished.
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 **sam2_vi_4)** — 4〉 aufhören, sich legen.
 
 - **RU:** — 4〉 прекращаться, утихать.
 - **EN:** — 4〉 to cease, subside.
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 **sam2_vi_5)** — 5〉 wirkungslos werden (von einem Geschosse).
 
 - **RU:** — 5〉 становиться недейственным (о снаряде).
 - **EN:** — 5〉 to become ineffective (of a missile).
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 **sam2_vi_6)** — 6〉 beruhigen, stillen, beschwichtigen.
 
 - **RU:** — 6〉 успокаивать, унимать, умиротворять.
 - **EN:** — 6〉 to calm, still, appease.
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 **sam2_vi_ppp_a)** — 7〉 *saṃśānta*
 — a〉 vollständig beruhigt.
@@ -2109,19 +2109,19 @@ u. s. w. [NAIGH. 3,6.] [AK. 3,5,10.] [TRIK. 1,1,113.] [H. 1535.] [an. 7,15.] [ME
 
 - **RU:** — b〉 совершенно угасший.
 - **EN:** — b〉 completely extinguished.
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 **sam2_vi_ppp_c)** — c〉 vollständig sich gelegt habend, — aufgehört.
 
 - **RU:** — c〉 полностью утихший, — прекратившийся.
 - **EN:** — c〉 having completely subsided, having completely ceased.
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 **sam2_vi_ppp_d)** — d〉 gestorben, todt.
 
 - **RU:** — d〉 умерший, мёртвый.
 - **EN:** — d〉 deceased, dead.
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 **samupa_caus_1)** — 1〉 beruhigen, beschwichtigen.
 - **EN:** — 1〉 to calm, appease.
@@ -2130,109 +2130,109 @@ u. s. w. [NAIGH. 3,6.] [AK. 3,5,10.] [TRIK. 1,1,113.] [H. 1535.] [an. 7,15.] [ME
 
 - **RU:** — 2〉 гасить (trans.).
 - **EN:** — 2〉 to extinguish (trans.).
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 **samupa_caus_3)** — 3〉 beseitigen, aufhören machen.
 
 - **RU:** — 3〉 устранять, заставлять прекращаться.
 - **EN:** — 3〉 to remove, cause to cease.
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 **samupa_caus_4)** — 4〉 zu Ende bringen, vollbringen, beilegen.
 
 - **RU:** — 4〉 доводить до конца, совершать, улаживать.
 - **EN:** — 4〉 to bring to an end, accomplish, settle.
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 **samupa_caus_5)** — 5〉 zur ewiger Ruhe bringen, den Garaus machen.
 
 - **RU:** — 5〉 отправлять на вечный покой, доканчивать.
 - **EN:** — 5〉 to bring to eternal rest, to make an end of.
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3〉 *śānta*
 
 - **RU:** — 3〉 *śānta*
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 **caus-intro)** — Caus. *śamayati* (metrisch auch *śāmayati*; Pass. *śāmyate* [auch [VAITĀN. 10,18] und zu [Spr. 6899]] u. s. w. wohl nur fehlerhaft)
 
 - **RU:** — Caus. *śamayati* (metrisch auch *śāmayati*; Pass. *śāmyate* [auch [VAITĀN. 10,18] und zu [Spr. 6899]] u. s. w. wohl nur fehlerhaft)
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 **caus-1)** — 1〉 beruhigen, stillen, beschwichtigen.
 
 - **RU:** — 1〉 успокаивать, унимать, усмирять.
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 **ud-caus-1)** — Caus.
 — 1〉 beruhigen, stillen, beschwichtigen, placare.
 
 - **RU:** — Caus.
 — 1〉 успокаивать, унимать, умиротворять, placare.
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 **pra-caus-1)** — Caus.
 — 1〉 zur Ruhe —, zurecht bringen.
 
 - **RU:** — Caus.
 — 1〉 приводить к покою; приводить в порядок.
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 **pra-caus-2)** — 2〉 abkühlen [SĀY. zu ṚV. 10,39,9]. Vgl. **4.** *śam* mit *ni*.
 
 - **RU:** — 2〉 охлаждать [SĀY. zu ṚV. 10,39,9]. Vgl. **4.** *śam* mit *ni*.
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 **sam-prefix-3)** — 3〉 aufhören, sich legen.
 
 - **RU:** — 3〉 прекращаться, утихать.
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 **sam-prefix-4)** — 4〉 *praśānta*
 
 - **RU:** — 4〉 *praśānta*
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 **sam-prefix-4a)** — a〉 ruhig geworden, beruhigt, ruhig.
 
 - **RU:** — a〉 ставший спокойным, умиротворённый, тихий.
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 **sam-caus-intro)** — Caus. (hier und da mit Dehnung des Wurzelvocals auch ohne metrische Veranlassung)
 
 - **RU:** — Caus. (здесь и там с удлинением корневого гласного также без метрической необходимости)
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 **sam-caus-1)** — 1〉 beruhigen, beschwichtigen.
 
 - **RU:** — 1〉 успокаивать, умиротворять.
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 **pratyava-caus)** — Caus. *pratiśāmya* ([VAJRACCH. 19,9]) und *˚śāmayitvā* ([MAHĀVASTU 56,2]) wieder an seinen Platz bringen. Vgl. **1.** *śram* mit *pravi* Caus.
 
 - **RU:** — Caus. *pratiśāmya* ([VAJRACCH. 19,9]) und *˚śāmayitvā* ([MAHĀVASTU 56,2]) снова ставить на своё место. Vgl. **1.** *śram* mit *pravi* Caus.
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 **visam-prefix-7)** — 7〉 *saṃśānta*
 
 - **RU:** — 7〉 *saṃśānta*
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 **visam-prefix-7a)** — a〉 vollständig beruhigt.
 
 - **RU:** — a〉 полностью успокоенный.
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 **visam-caus-intro)** — Caus.
 
 - **RU:** — Caus.
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 **visam-caus-1)** — 1〉 beruhigen, beschwichtigen.
 
 - **RU:** — 1〉 успокаивать, умиротворять.
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 ## śam
 
@@ -2243,7 +2243,7 @@ u. s. w. [NAIGH. 3,6.] [AK. 3,5,10.] [TRIK. 1,1,113.] [H. 1535.] [an. 7,15.] [ME
 
 - **RU:** **3.** √*śam*¦, **śamnāti* (*vadhakarman*) причинить кому-либо вред. Засвидетельствовано лишь в *śamnīṣe* и *śamnīthās*.
 - **EN:** **3.** √*śam*¦, **śamnāti* (*vadhakarman*) to inflict suffering on someone. Only *śamnīṣe* and *śamnīthās* to be attested.
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 **ā_1)** **4.** √*śam*¦, *śamayati* und *śāmayati*.
 — Mit *ni* inne —, gewahr werden, vernehmen, hören, erfahren, kennen lernen, — dass ist oder war (mit prädicativem Acc.). Einmal auch mit Gen. st. Acc. Absol. *niśamya, niśāmya* und *niśamayya* ([ŚIŚ. 16,38]). *niśamyamāna* mit act. (!) Bed. und Gen. (v. l. aber *niśamya*).
@@ -2257,49 +2257,49 @@ u. s. w. [NAIGH. 3,6.] [AK. 3,5,10.] [TRIK. 1,1,113.] [H. 1535.] [an. 7,15.] [ME
 — 1〉 воспринимать, слышать [CARAKA. 6,10].
 - **EN:** — With *anuni*
 — 1〉 to perceive [CARAKA. 6,10].
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 **abhi_2)** — 2〉 dem Geiste vorführen.
 
 - **RU:** — 2〉 представлять уму, воображать.
 - **EN:** — 2〉 to present to the mind.
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 **ava)** — Mit *samanuni* erkennen.
 
 - **RU:** — С *samanuni* распознавать, познавать.
 - **EN:** — With *samanuni* to recognise, discern.
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 **upa)** — Mit *abhini* gewahr werden.
 
 - **RU:** — С *abhini* замечать, осознавать.
 - **EN:** — With *abhini* to become aware of, notice.
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 **pari)** — Mit *upani* vernehmen, hören.
 
 - **RU:** — С *upani* воспринимать, слышать.
 - **EN:** — With *upani* to perceive, hear.
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 **pra_1)** — Mit *praṇi* dass.
 
 - **RU:** — С *praṇi* dass.
 - **EN:** — With *praṇi* dass.
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 **vi)** — Mit *vini* dass.
 
 - **RU:** — С *vini* dass.
 - **EN:** — With *vini* dass.
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 **sam)** — Mit *saṃni* vernehmen, kennen lernen.
 
 - **RU:** — С *saṃni* воспринимать, слышать; узнавать.
 - **EN:** — With *saṃni* to perceive, come to know.
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 **1)** **5.** *śam*¦ _Indecl._
 — 1〉 wohlthätig, zum Vortheil, — Heil.
@@ -2308,29 +2308,29 @@ u. s. w. [NAIGH. 3,6.] [AK. 3,5,10.] [TRIK. 1,1,113.] [H. 1535.] [an. 7,15.] [ME
 — 1〉 благотворный, на пользу, во благо.
 - **EN:** **5.** *śam*¦ _Indecl._
 — 1〉 beneficial, to the advantage, to the welfare.
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2〉 substantivisch Heil, Wohl, Glück, Segen, mit Dat. oder Gen.
 
 - **RU:** — 2〉 субстантивно благо, благополучие, счастье, благословение, с Dat. или Gen.
 - **EN:** — 2〉 as substantive: welfare, weal, happiness, blessing, with Dat. or Gen.
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 **1)** **1.** √*śam*¦ mit *ni* VI. erlöschen [DHARMAŚARM. 13,41].
 
 - **RU:** **1.** √*śam*¦ с *ni* VI. гаснуть, угасать [DHARMAŚARM. 13,41].
 - **EN:** **1.** √*śam*¦ with *ni* VI. to be extinguished [DHARMAŚARM. 13,41].
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 **main)** **4.** √*śam*¦, *śamayati* und *śāmayati*.
 
 - **RU:** **4.** √*śam*¦, *śamayati* и *śāmayati*.
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 **mit upasarga 1 (прист. с управлением))** — Mit *ni* inne —, gewahr werden, vernehmen, hören, erfahren, kennen lernen, — dass ist oder war (mit prädicativem Acc.). Einmal auch mit Gen. st. Acc. Absol. *niśamya, niśāmya* und *niśamayya* ([ŚIŚ. 16,38]). *niśamyamāna* mit act. (!) Bed. und Gen. (v. l. aber *niśamya*).
 
 - **RU:** — С *ni* замечать, осознавать, воспринимать, слышать, узнавать, познавать, — что есть или было (с предикативным Acc.). Однажды также с Gen. st. Acc. Absol. *niśamya, niśāmya* и *niśamayya* ([ŚIŚ. 16,38]). *niśamyamāna* с act. (!) Bed. и Gen. (v. l. но *niśamya*).
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 ## śam
 
@@ -2343,7 +2343,7 @@ u. s. w. [NAIGH. 3,6.] [AK. 3,5,10.] [TRIK. 1,1,113.] [H. 1535.] [an. 7,15.] [ME
 **ni_erlöschen)** 1. śam mit ni erlöschen, [Dharmaśarm. 13,41.] {part=,seq=25149,type=,n=2}
 
 - **RU:** 1. śam с ni: угасать, [Dharmaśarm. 13,41.] {part=,seq=25149,type=,n=2}
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 ## śam
 
@@ -2354,7 +2354,7 @@ u. s. w. [NAIGH. 3,6.] [AK. 3,5,10.] [TRIK. 1,1,113.] [H. 1535.] [an. 7,15.] [ME
 
 - **RU:** **1.** *śam*¦ с *ni* VI. угасать [DHARMAŚARM. 13,41].
 - **EN:** **1.** *śam*¦ with *ni* VI. to be extinguished [DHARMAŚARM. 13,41].
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 ## śam
 
@@ -2439,124 +2439,124 @@ u. s. w. [NAIGH. 3,6.] [AK. 3,5,10.] [TRIK. 1,1,113.] [H. 1535.] [an. 7,15.] [ME
 **NWS-1)** *śam (=pṭ śam 1)* [Ved , unsp] wirken, mit Eifer thätig sein, sich abmühen (mit dem Instr dessen, wodurch oder womit man thätig ist). beim Gottesdienst thätig sein (durch Opferbereiten), eifrig beten. e. Gotte (Dat) eifrig dienen (durch Gebet oder Opferbereitung). wirksam sichern vor ( purā́ m. Abl). Vgl śamāy und ścam
 
 - **RU:** *śam (=pṭ śam 1)* [Ved , unsp] действовать, с усердием быть деятельным, трудиться (с Instr. того, посредством чего или чем трудятся). быть деятельным при богослужении (посредством приготовления жертвы), усердно молиться. усердно служить богу (Dat.) (молитвой или жертвенными приготовлениями). действенно ограждать от ( purā́ m. Abl). Ср. śamāy und ścam. [NWS: Graßmann 1873 (1996) : 1378]
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 **NWS-2)** [Ved , unsp] eifrig sein. AB 2,7,11 . [ = saṃjñapayata (Komm). ]
 
 - **RU:** [Ved , unsp] быть усердным. AB 2,7,11 . [ = saṃjñapayata (Komm). ] [NWS: Hillebrandt 1885 : 119]
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 **NWS-3)** [Ved , unsp] to work, to perform worship, to praise. ṚV I,85,12
 
 - **RU:** [Ved , unsp] трудиться, совершать богослужение, восхвалять. ṚV I,85,12. [NWS: Vedic Hymns I : 516]
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 **NWS-4)** [Ved , unsp] ( II Ā ) (das Opfer resp. das Opfertier) zurichten, zubereiten, absolut: das Opfer richten, die nötigen Vorbereitungen zum Opfer treffen. ṚV 5,2,7 . im ṚV nur Aor und Perf
 
 - **RU:** [Ved , unsp] ( II Ā ) (жертву или жертвенное животное) снаряжать, приготовлять; абсолютно: устраивать жертвоприношение, производить необходимые приготовления к жертве. ṚV 5,2,7 . в ṚV только Aor и Perf. [NWS: Geldner 1907 : 177]
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 **NWS-5)** *śám (=pṭ śám 2) + as : ṭohlergehen. ṚV 1,114,1 .* [Ved , unsp] + bhū : guttun. ṚV 10,37,10 . Ved , unsp
 
 - **RU:** *śám (=pṭ śám 2) + as : ṭohlergehen. ṚV 1,114,1 .* [Ved , unsp] + bhū : делать добро, идти на благо. ṚV 10,37,10 . [NWS: Geldner 1907 (N) : 236]
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 **NWS-6)** *śam (=pṭ śam 2)* [Gen , unsp] ( śāmyati (rarely °te, and ep. also śamati, °te) IV P ) to become tired, finish, stop, come to an end, rest, be quiet or calm or satisfied or contented. TSaṃ , ŚB . to cease, be allayed or extinguished. Mbh , Kāvya(MW)
 
 - **RU:** *śam (=pṭ śam 2)* [Gen , unsp] ( śāmyati (rarely °te, and ep. also śamati, °te) IV P ) уставать, заканчивать, прекращаться, приходить к концу, отдыхать, быть тихим, спокойным, удовлетворённым, довольным. TSaṃ , ŚB . прекращаться, утихать, угасать. Mbh , Kāvya. [NWS: MW : 1053]
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 **NWS-7)** [Śā , Med] ( śāmyati VI ) relieve, cure. Hoernle 1893-1912 (II) 39.260
 
 - **RU:** [Śā , Med] ( śāmyati VI ) облегчать, исцелять. Hoernle 1893-1912 (II) 39.260. [NWS: Hoernle 1908 : 327]
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 **NWS-8)** [Epigr , unsp] "to prevent". Majumdar 1924
 
 - **RU:** [Epigr , unsp] «предотвращать». Majumdar 1924. [NWS: Sircar 1966 : 288]
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 **NWS-9)** *+ upa : be relieved, be cured. ḥoernle 1893-1912 (īī) 53.537 .* [Śā , Med (s.v. upa - śam )] – zum Erlöschen bringen ( duḥkhāny uśamayaṃti , sic!). Buddh , unsp ; Schlingloff 1964 : 203 (s.v. upaśam )
 
 - **RU:** *+ upa : be relieved, be cured. ḥoernle 1893-1912 (īī) 53.537 .* [Śā , Med (s.v. upa - śam )] – приводить к угасанию ( duḥkhāny uśamayaṃti , sic!). Buddh , unsp . [NWS: Schlingloff 1964 : 203 (s.v. upaśam)]
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 **NWS-10)** *+ ni : to be eḷtinguished. dhharmaś , dhivyāv .* [Gen , unsp (s.v. niśam )] + pra ( praśānta ): destroyed. Mbh , Kāvya(MW) . Gen , unsp ; MW : 695 (s.v. praśān )
 
 - **RU:** *+ ni : to be eḷtinguished. dhharmaś , dhivyāv .* [Gen , unsp (s.v. niśam )] + pra ( praśānta ): уничтоженный. Mbh , Kāvya(MW) . [NWS: MW : 695 (s.v. praśān)]
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 **NWS-11)** *+ prati : (° śāmayati , also ° śam ° and erroneously ° śrām °, ° sam °) (1) stores aṭay (property); (2) puts aṭay (a monk’s boṭl and robe, aṛter his begging-round); (3) harbors (a person), entertains (privately). śaddhph 114.13 , ṃvu i.56.2 , ṃśV ii.99.15 .* [Buddh , unsp (s.v. pratiśāmayati )] – (° śāmaya -, ° śāme -): weglegen, wegstellen; aufräumen. AbhisDh § 8.5.9A2 . Buddh , unsp
 
 - **RU:** *+ prati : (° śāmayati , also ° śam ° and erroneously ° śrām °, ° sam °) (1) stores aṭay (property); (2) puts aṭay (a monk’s boṭl and robe, aṛter his begging-round); (3) harbors (a person), entertains (privately). śaddhph 114.13 , ṃvu i.56.2 , ṃśV ii.99.15 .* [Buddh , unsp (s.v. pratiśāmayati )] – (° śāmaya -, ° śāme -): откладывать в сторону, убирать; приводить в порядок. AbhisDh § 8.5.9A2 . Buddh , unsp. [NWS: Karashima 2012 : 378 (s.v. prati - śāmaya -)]
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 **NWS-12)** *+ pravi : (° śāmayati ) perh. stills, causes to subside. dhivyāv 542.22 .* [Buddh , unsp (s.v. praviśāmayati )] + vyupa , ppp.: quieted, calmed, allayed, appeased. Bbh 169.3 . Buddh , unsp ; BHSD : 519 (s.v. vyupaśānta )
 
 - **RU:** *+ pravi : (° śāmayati ) perh. stills, causes to subside. dhivyāv 542.22 .* [Buddh , unsp (s.v. praviśāmayati )] + vyupa , ppp.: успокоенный, утихший, унятый, умиротворённый. Bbh 169.3 . Buddh , unsp . [NWS: BHSD : 519 (s.v. vyupaśānta)]
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 **NWS-13)** *– (° śamaya -): ṣur ṇuhe bringen, erledigen. ābhisdhh § 38.8.30bh3 .* [Buddh , unsp (s.v. vy - upa - śamaya -)] + samava : "déposer ensemble". Caland 1924, p. 166 . Ved , unsp
 
 - **RU:** *– (° śamaya -): ṣur ṇuhe bringen, erledigen. ābhisdhh § 38.8.30bh3 .* [Buddh , unsp (s.v. vy - upa - śamaya -)] + samava : «складывать вместе». Caland 1924, p. 166 . [NWS: Renou 1935 : 46 (s.v. samavaśam -)]
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 **NWS-14)** [ śāntá ] auspicious (in augury; opp. to dīpta ). AV . purified, cleansed. W(MW) . MW : 1064 (s.v. śāntá )
 
 - **RU:** [ śāntá ] благоприятный (в гаданиях; противоп. dīpta ). AV . очищенный. W(MW) . [NWS: MW : 1064 (s.v. śāntá)]
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 **NWS-15)** [ śānta ] ruhevoll. Schlingloff 1964 : 245 (s.v. śānta )
 
 - **RU:** [ śānta ] исполненный покоя. [NWS: Schlingloff 1964 : 245 (s.v. śānta)]
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 **NWS-16)** *śam (=pṭ śam 3)* [Gen , unsp] ( śamnāti IX ) to put an end to, destroy. Kā(MW)
 
 - **RU:** *śam (=pṭ śam 3)* [Gen , unsp] ( śamnāti IX ) класть конец, уничтожать. Kā(MW). [NWS: MW : 1053]
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 **NWS-17)** *śám* [Ved , unsp] Indekl Heil, Freude
 
 - **RU:** *śám* [Ved , unsp] Indekl благо, радость. [NWS: Hillebrandt 1885 : 119]
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 **NWS-18)** [Ved , unsp] well, pleasant, sweet, health. ṚV I,165,4
 
 - **RU:** [Ved , unsp] хорошо, приятно, сладостно, здоровье. ṚV I,165,4. [NWS: Vedic Hymns I : 516]
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 **NWS-19)** [Ved , unsp] Subst [nur śámi (Lok) = Indekl] Zurüstung, Vorbereitung, Opferveranstaltung, Aufwartung. ṚV 1,87,5 ; śámī . Indekl recht , zusagend, nach Wunsch, glückbringend, heilsam, zum Glück, zum Wohl. ṚV 10,97,18 . + as oder bhū : recht sein, zusagen, zuträglich sein, gut tun, Glück bringen, zum Wohl dienen; wohlbekommen, zuträglich sein. ṚV 1,5,7 , ṚV 8,48,4 . als Subst gebraucht: Wohlsein, Gesundheit, Heil, alles Gute. ṚV 7,86,8
 
 - **RU:** [Ved , unsp] Subst [только śámi (Lok) = Indekl] снаряжение, приготовление, организация жертвоприношения, прислуживание. ṚV 1,87,5 ; śámī . Indekl правильно, по желанию, приносящий счастье, целительный, к счастью, во благо. ṚV 10,97,18 . + as oder bhū : быть уместным, подходить, быть полезным, делать добро, приносить счастье, служить во благо; быть на пользу, быть полезным. ṚV 1,5,7 , ṚV 8,48,4 . в субстантивном употреблении: благополучие, здоровье, благо, всё доброе. ṚV 7,86,8. [NWS: Geldner 1907 : 177 / Geldner 1907 : 220]
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 **NWS-20)** *śam* [Ved , unsp] Subst n ursprünglich wol: Werk, heilsames Werk. Heil, Segen. mit as oder bhū : jemandem (Dat) zum Heile gereichen, ihm lieb, angenehm sein (ebenso ohne ausgedrücktes as oder bhū ). śám yós oder śám ca yós ca : Heil und Segen
 
 - **RU:** *śam* [Ved , unsp] Subst n первоначально, по всей видимости: дело, благое дело. Благо, благодать. mit as oder bhū : служить кому-либо (Dat) во благо, быть ему милым, приятным (равно без эксплицитных as oder bhū ). śám yós oder śám ca yós ca : благо и процветание. [NWS: Graßmann 1873 (1996) : 1379]
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 **NWS-21)** [Reg , unsp] Indekl magic syllable. STB, S. 9, Z. 24
 
 - **RU:** [Reg , unsp] Indekl магический слог. STB, S. 9, Z. 24. [NWS: Ensink 1964 : 180]
-  <sub>DCS 1847 · lexicographic</sub>
+  <sub>lexicographic</sub>
 
 **NWS-22)** *śaśamāná* [Ved , unsp] eifrig. Hillebrandt 1885 : 119 (s.v. śam )
 
 - **RU:** *śaśamāná* [Ved , unsp] усердно. [NWS: Hillebrandt 1885 : 119 (s.v. śam)]
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 **NWS-23)** [Ved , unsp] = arcan . Naigh 3,14 . = śaṃsamāna . Nir 6,8 . der seine Arbeit getan hat, fertig. ṚV 10,142,6 . insbes: der alle Vorbereitungen und Arbeiten für das Opfer richtig gemacht hat, gerüstet, vorbereitet, fertig, opferbereit. ṚV 5,29,12 . + Instr: aufwartend mit. ṚV 1,151,7 . pass: (zum Opfer) hergerichtet. AV 2,34,2 . fertig, bereit. ṚV 1,24,4 . Geldner 1907 : 177 (s.v. śam )
 
 - **RU:** [Ved , unsp] = arcan . Naigh 3,14 . = śaṃsamāna . Nir 6,8 . тот, кто выполнил свою работу; готовый. ṚV 10,142,6 . в особенности: тот, кто правильно произвёл все приготовления и работы для жертвы; снаряжённый, подготовленный, готовый, готовый к жертвоприношению. ṚV 5,29,12 . + Instr: прислуживающий посредством. ṚV 1,151,7 . pass: (для жертвы) приготовленный. AV 2,34,2 . готовый, подготовленный. ṚV 1,24,4 . [NWS: Geldner 1907 : 177 (s.v. śam)]
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 **NWS-24)** *śámi* [Ved , unsp] Indekl śám . Geldner 1907 (N) : 236 (s.v. śám )
 
 - **RU:** *śámi* [Ved , unsp] Indekl śám . [NWS: Geldner 1907 (N) : 236 (s.v. śám)]
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 **NWS-25)** *śāntá* [Ved , unsp] Subst n Vorbereitung, Opferveranstaltung. Geldner 1907 : 177 (s.v. śam )
 
 - **RU:** *śāntá* [Ved , unsp] Subst n приготовление, устройство жертвоприношения. [NWS: Geldner 1907 : 177 (s.v. śam)]
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>

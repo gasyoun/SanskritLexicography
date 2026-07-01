@@ -112,7 +112,7 @@
 [PAÑCAT. 27,10.] *yāvatkṛṣṇapakṣaḥ samāyāti*
 [VET. in LA. (III) 8,3.] *śaśakasyāvasaraḥ samāyātaḥ*
 [PAÑCAT. 55,4.]
-  <sub>DCS 141 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) verstreichen, verfliessen: *māsā daśa samāyayuḥ*
 [MBH. 4,373.]
@@ -121,7 +121,7 @@
 [MBH. 4,373.]
 - **EN:** — 2) to pass, to elapse (of time): *māsā daśa samāyayuḥ*
 [MBH. 4,373.]
-  <sub>DCS 141 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) in einen Zustand, eine Lage, ein Verhältniss kommen; mit acc.: *vṛddhim*
 [Spr. 3257.]
@@ -136,4 +136,4 @@
 [Spr. 3257.]
 [MĀRK. P. 25,13.] *sauhityam*
 [RĀJA-TAR. 4,625.]
-  <sub>DCS 141 · attested</sub>
+  <sub>attested</sub>

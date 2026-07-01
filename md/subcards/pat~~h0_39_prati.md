@@ -10,4 +10,4 @@
 [MBH. 4,2110.]
 - **EN:** — *prati* to fly toward, hasten to meet: *tānyanīkāni nivartamānānyālokya — haṃso yathā meghamivāpatantaṃ dhanaṃjayaḥ pratyapatattarasvī*
 [MBH. 4,2110.]
-  <sub>DCS 1 · attested</sub>
+  <sub>attested</sub>

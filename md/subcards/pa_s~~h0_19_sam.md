@@ -93,7 +93,7 @@ to catch sight of, perceive, see, recognize: *mahānti cānyāni sarāṃsi pār
 [YĀJÑ. 3,64.] *yasya saṃpaśyataḥ* 'before whose eyes'
 [M. 7,143.]
 [HARIV. 7464.]
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) überzählen, recapituliren, zusammenzählen: *evaṃ yā iṣṭā devatā bhavanti tāḥ saṃpaśyatyasau havirajuṣatāsau havirajuṣateti*
 [ŚAT. BR. 1,9,1,10.] [2,2,3,7.] [1,7,3,10.] [4,3,5,20.] berechnen: *ṣaḍahairhi māsānsaṃpaśyanti*
@@ -109,7 +109,7 @@ to catch sight of, perceive, see, recognize: *mahānti cānyāni sarāṃsi pār
 [MĀRK. P. 39,31.] *prasthitaṃ vanavāsāya saṃpaśya kuśalena mām*
 [R. GORR. 2,35,20.] *saṃpaśyemaṃ bhogacayaṃ mahāntaṃ sahāsmābhirdhṛtarāṣṭrasya rājñaḥ*
 [MBH. 5,743.] *alaṃkṛtaśca saṃpaśyedāyudhīyaṃ punarjanam . vāhanāni ca sarvāṇi śastrāṇyābharaṇāni ca ..*
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>
 
 **3)** [M. 7,222.] Jmd sehen so v. a. mit Jmd zusammenkommen, Jmd vor sich lassen: *uttiṣṭha śakra saṃpaśya devarṣīṃśca samāgatām*
 [MBH. 5,498.]
@@ -159,4 +159,4 @@ to catch sight of, perceive, see, recognize: *mahānti cānyāni sarāṃsi pār
 [ŚAT. BR. 1,9,1,10.] [2,2,3,7.] [1,7,3,10.] [4,3,5,20.] to calculate: *ṣaḍahairhi māsānsaṃpaśyanti*
 [TS. 7,5,6,1.] *ṛtubhirhyeva garbhe santaṃ saṃpaśyantyṛtubhirjātam*
 [ŚAT. BR. 7,4,2,31.]
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>

@@ -13,4 +13,4 @@
 - **EN:** — *parā* to talk away, to refute
 [AV. 6,29,2.] *dviṣantam*
 [LĀṬY. 3,11,3.]
-  <sub>DCS 4 · attested</sub>
+  <sub>attested</sub>

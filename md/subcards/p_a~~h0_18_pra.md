@@ -40,4 +40,4 @@
 [BHĀG. P. 4,9,3.] *prapāya* absol.
 [P. 6,4,69], Sch.
 [VOP. 26,212.]
-  <sub>DCS 82 · attested</sub>
+  <sub>attested</sub>

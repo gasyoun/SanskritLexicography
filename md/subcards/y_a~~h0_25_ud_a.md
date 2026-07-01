@@ -10,4 +10,4 @@
 [KAUŚ. 17.]
 - **EN:** — *udā* "to betake oneself up to": *sabhām*
 [KAUŚ. 17.]
-  <sub>DCS 1 · attested</sub>
+  <sub>attested</sub>

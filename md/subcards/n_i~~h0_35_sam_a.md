@@ -55,7 +55,7 @@
 [ŚAT. BR. 1,5,3,16.] [8,2,17.] [2,5,2,30.]
 [KĀTY. ŚR. 3,5,13.] [6,7,22.] *kuṭambārthe samānītaṃ yatkiṃcitkāryameva tu . prātarutthāya tatsarvaṃ kārayāmi karomi ca ..* accumulated affairs
 [MBH. 13,5872.]
-  <sub>DCS 2376 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) herbeiführen, herbeibringen: *samānayāmāsa sutām*
 [MBH. 1,7334.] [3,2760.] [2761.]
@@ -82,7 +82,7 @@
 [PAÑCAT. 116,4.] *samānīteṣu — varāsaneṣu*
 [MBH. 1,7717.] [14,1654. fg.] *śīghraṃ kalasaṃ jalapūrṇaṃ samānaya*
 [9,3664.] [GOBH. 2,1,8.] [R. 2,37,5.] [89,11.] [RAGH. 12,78.] [PAÑCAT. 262,18.]
-  <sub>DCS 2376 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) heimführen, heimbringen: *hayānaṣṭau samānayat* (als Tribut)
 [MBH. 2,1035.] *samānayāmāsa tadā virāṭasya* (für V.) *dhanaṃ mahat*
@@ -103,7 +103,7 @@
 [3,16863.] *tato no mātaramṛṣiḥ samānīya nijāśramam*
 [BHĀG. P. 7,7,12.] *icchāmi tvāṃ samānetumadyaiva raghunandanam* to Rāma
 [R. 5,36,8.]
-  <sub>DCS 2376 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) darbringen (ein Opfer): *puraskṛtyādya bhavataḥ samāneṣyāmahe makham*
 [MBH. 14,362.] — caus.
@@ -112,7 +112,7 @@
 [MBH. 14,362.] — caus.
 - **EN:** — 4) to offer (a sacrifice): *puraskṛtyādya bhavataḥ samāneṣyāmahe makham*
 [MBH. 14,362.] — caus.
-  <sub>DCS 2376 · attested</sub>
+  <sub>attested</sub>
 
 **caus-1)** 1) herbeiführen lassen, zusammenberufen: *tatastu prakṛtīḥ sarvāḥ samānāyya*
 [MBH. 17,15.]
@@ -130,7 +130,7 @@
 [HARIV. 4130.] [6446.]
 [R. 4,9,9.] [38,37.] to cause to be brought together: *kāṣṭhāni*
 [R. 4,24,14.]
-  <sub>DCS 2376 · attested</sub>
+  <sub>attested</sub>
 
 **caus-2)** — 2) herbeikommen —, herbeibringen lassen: *śakraṃ samānāyya*
 [MBH. 13,4805.] *ghṛtakumbham*
@@ -142,4 +142,4 @@
 - **EN:** — 2) to cause to come near, to have brought near: *śakraṃ samānāyya*
 [MBH. 13,4805.] *ghṛtakumbham*
 [1,4538.]
-  <sub>DCS 2376 · attested</sub>
+  <sub>attested</sub>

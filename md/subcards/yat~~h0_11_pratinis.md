@@ -9,10 +9,10 @@
 - **RU:** — *pratinis* caus. снова выдавать, возвращать обратно
 [MBH. 3,13183.]
 - **EN:** — *pratinis* caus. to deliver up again, give back: [MBH. 3,13183.]
-  <sub>DCS 9672 · attested</sub>
+  <sub>attested</sub>
 
 **deriv)** — Vgl. *pratiniryātana* .
 
 - **RU:** — Vgl. *pratiniryātana* .
 - **EN:** — Vgl. *pratiniryātana* .
-  <sub>DCS 9672 · lexicographic</sub>
+  <sub>lexicographic</sub>

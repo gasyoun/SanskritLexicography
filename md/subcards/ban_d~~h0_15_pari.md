@@ -16,7 +16,7 @@
  1) med. to bind on, fasten on: *tatra tāni dṛḍhaiḥ pāśaiḥ sugāḍhaṃ paryabandhata*
 [MBH. 4,171.] to bind on oneself, put on: *mekhalām*
 [AV. 6,133,5.]
-  <sub>DCS 5 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) umzingeln: *tato 'sya yajñaviṣayo rakṣobhiḥ paryabadhyata*
 [MBH. 13,4785.]
@@ -25,7 +25,7 @@
 [MBH. 13,4785.]
 - **EN:** — 2) to surround, encircle: *tato 'sya yajñaviṣayo rakṣobhiḥ paryabadhyata*
 [MBH. 13,4785.]
-  <sub>DCS 5 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) hemmen, unterbrechen: *vācā — vāṣpaparibaddhayā*
 [R. 2,58,11.] — caus. umspannen: *vṛṣaṇādhaḥ pārśvapādau pāṇibhyāṃ paribandhayet*
@@ -37,4 +37,4 @@
 - **EN:** — 3) to check, interrupt: *vācā — vāṣpaparibaddhayā*
 [R. 2,58,11.] — caus. to span, encompass: *vṛṣaṇādhaḥ pārśvapādau pāṇibhyāṃ paribandhayet*
 [Verz. d. Oxf. H. 102,b,18.]
-  <sub>DCS 5 · attested</sub>
+  <sub>attested</sub>

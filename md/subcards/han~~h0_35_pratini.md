@@ -13,4 +13,4 @@
 - **EN:** — *pratini* to aim/deal a blow against: *vṛtrasya yadvadhena ni tvaṃ pratyānaṃ jaghantha*
 [ṚV. 1,52,15.] *andhake pratinihate*
 [MBH. 7,6726.]
-  <sub>DCS 1 · attested</sub>
+  <sub>attested</sub>

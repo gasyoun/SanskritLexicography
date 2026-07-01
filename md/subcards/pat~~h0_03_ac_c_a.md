@@ -13,4 +13,4 @@
 - **EN:** — *acchā* to fly toward
 [ŚAT. BR. 1,7,1,1.] [3,2,4,2.] — caus. *patayati* dass.: *raghuḥ śyenaḥ patayadandho acchā*
 [ṚV. 5,45,9.]
-  <sub>DCS 3124 · attested</sub>
+  <sub>attested</sub>

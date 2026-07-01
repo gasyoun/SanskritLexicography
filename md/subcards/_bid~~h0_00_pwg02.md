@@ -40,4 +40,4 @@ Schol.) [ŚĀK. 32.] *dṛṣṭvāṃ bhinnaṃ (= lagnaṃ* Schol.) *kuṅkuma
 [ŚIŚ. 4,26. 20,56.] *tīvrāghātādabhimukhataruskandhabhinnaikadantaḥ (bhinna* v. l. for *bhagna)* so v. a. stuck, clinging (= *lagna*
 Schol.) [ŚĀK. 32.] *dṛṣṭvāṃ bhinnaṃ (= lagnaṃ* Schol.) *kuṅkumaṃ kāpi kaṇṭhe* hanging upon, adhering
 [KUVALAY. 174,a,4.] Vgl. *bhinnāñjana*.
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>

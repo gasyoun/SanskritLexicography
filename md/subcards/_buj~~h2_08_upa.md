@@ -175,7 +175,7 @@ employing
 [Spr. 677], v. l. *tathemāmupabhuñjataḥ* (gen. partic.)
 [MĀRK. P. 113,21.] *tenopabhujyamānaṃ śarīram (striyāḥ)*
 [KATHĀS. 38,36.] It is tempting, where *yuj* with *upa* has the meaning to eat, consume, to assume a confusion with *bhuj*, but in the many passages that [WESTERGAARD] cites, the [ed. Bomb.] of [MBH.] reads only [1,6221] *upabhokṣyati* st. *upayokṣyati*; vgl. u. *bhuj* simpl. at the end.
-  <sub>DCS 154 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) den Lohn für Etwas (acc.) haben: *mānasaṃ manasaivāyamupabhuṅkte śubhāśubham . vācā vācā kṛtaṃ karma kāyenaiva ca kāyikam ..*
 [M. 12,8.] *svakṛtaṃ hyupabhujyate*
@@ -187,7 +187,7 @@ employing
 - **EN:** — 2) to have the reward for something (acc.): *mānasaṃ manasaivāyamupabhuṅkte śubhāśubham . vācā vācā kṛtaṃ karma kāyenaiva ca kāyikam ..*
 [M. 12,8.] *svakṛtaṃ hyupabhujyate*
 [R. 6,98,29.]
-  <sub>DCS 154 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) act. Jmd (acc.) zu Nutzen sein, dienen: *upa vayaṃ taṃ bhuñjāmo (= pālayāmaḥ*
 [ŚAṂK.]) *'smiṃśca loke 'muṣmiṃśca*
@@ -199,7 +199,7 @@ employing
 - **EN:** — 3) act. to be of use, to serve someone (acc.): *upa vayaṃ taṃ bhuñjāmo (= pālayāmaḥ*
 [ŚAṂK.]) *'smiṃśca loke 'muṣmiṃśca*
 [CHĀND. UP. 4,11,2.]
-  <sub>DCS 154 · attested</sub>
+  <sub>attested</sub>
 
 **caus)** — Vgl. *upabhuktadhana, upabhoktar* fgg. — caus. zu geniessen geben: *rasānupabhojayet*
 [SUŚR. 2,441,11.]
@@ -208,4 +208,4 @@ employing
 [SUŚR. 2,441,11.]
 - **EN:** — Vgl. *upabhuktadhana, upabhoktar* fgg. — caus. to give to enjoy: *rasānupabhojayet*
 [SUŚR. 2,441,11.]
-  <sub>DCS 154 · attested</sub>
+  <sub>attested</sub>

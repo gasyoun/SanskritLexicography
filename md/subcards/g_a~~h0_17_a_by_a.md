@@ -22,7 +22,7 @@
 [BHĀG. P. 9,21,10.] *kṛṣṇasya nārado 'bhyāgādāśramam*
 [1,4,32.] to meet, befall someone: *tvāṃ cedvyasanamabhyāgādidam*
 [MBH. 3,1120.]
-  <sub>DCS 24 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) an Etwas gehen, sich daran machen zu, sich entschliessen zu, mit dem inf.: *kṣudhārtaścāttumabhyāgādviśvāmitraḥ śvajāghanīm*
 [M. 10,108.]
@@ -31,4 +31,4 @@
 [M. 10,108.]
 - **EN:** — 2) to go to something, set about doing, resolve upon, with inf.: *kṣudhārtaścāttumabhyāgādviśvāmitraḥ śvajāghanīm*
 [M. 10,108.]
-  <sub>DCS 24 · attested</sub>
+  <sub>attested</sub>

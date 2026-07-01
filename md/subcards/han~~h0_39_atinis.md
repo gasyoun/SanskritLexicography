@@ -10,4 +10,4 @@
 [ṚV. PRĀT. 3,18.]
 - **EN:** — *atinis* to draw apart excessively: the Svarita
 [ṚV. PRĀT. 3,18.]
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>

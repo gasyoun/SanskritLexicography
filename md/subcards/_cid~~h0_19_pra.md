@@ -48,7 +48,7 @@
 [MBH. 12,9770.] — caus. to cause to be cut off: *mahātmanaḥ . karau pracchedayāmāsa*
 [MBH. 12,686.] *pravṛddhānāṃ vṛkṣāṇāṃ śākhāṃ pracchedayettathā*
 [2637.]
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **pra-1)** — *pra*
  1) abreissen, abschneiden; zerschneiden, zerhauen, spalten, durchbohren: *tāṃstvaṃ pra cchindhi varaṇa purā diṣṭātpurāyuṣaḥ*
@@ -81,4 +81,4 @@
 [MBH. 3,11710.] *patākāṃ cakragoptārau sarvopakaraṇāni ca . laghuhastaḥ praciccheda*
 [7,1628.] *tilaśaḥ*
 [7863.]
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>

@@ -37,13 +37,13 @@
 [RĀJA-TAR. 6,317.] *pra keśāḥ suvate*
 [TBR. 2,7,17,1.] *śabdaḥ* u. s. w. *vedādeva prasūyante*
 [M. 12,98], v. l.
-  <sub>DCS 14088 · attested</sub>
+  <sub>attested</sub>
 
 **3) participle senses)** — 3) partic. *prasūta*
 
 - **RU:** — 3) partic. *prasūta*
 - **EN:** — 3) partic. *prasūta*
-  <sub>DCS 14088 · attested</sub>
+  <sub>attested</sub>
 
 **3a) with prefix: having given birth, having delivered (geboren habend, niedergekommen))** a) mit act. Bed. _f._ *ā* geboren habend, niedergekommen (die Ergänzung im acc.; hier und da statt des verbi finiti)
 [AK. 2,6,1,16.]
@@ -79,7 +79,7 @@ Schol. к [KĀTY. ŚR. 24,6,8.] *jananī prasūtatanayā* чья дочь раз
 Schol. to [KĀTY. ŚR. 24,6,8.] *jananī prasūtatanayā* whose daughter has been delivered
 [Spr. (II) 6033.] *prasūtamātrā* just delivered
 [KATHĀS. 28,67.]
-  <sub>DCS 14088 · attested</sub>
+  <sub>attested</sub>
 
 **3b) born, begotten, sprung from, arisen (geboren, erzeugt, entsprungen, entstanden))** — b) geboren, erzeugt, entsprungen, entstanden
 [H. an. 3,273.]
@@ -178,7 +178,7 @@ Schol. to [KĀTY. ŚR. 24,6,8.] *jananī prasūtatanayā* whose daughter has bee
 [KAṆ. 1,1,4.] *saraladrumāṇāṃ srutakṣīratayā prasūto gandhaḥ*
 [KUMĀRAS. 1,9.] *prasūtaṃ tarhi saukhyaṃ naḥ*
 [Z. f. d. K. d. M. 2,426.]
-  <sub>DCS 14088 · attested</sub>
+  <sub>attested</sub>
 
 **3c) as synonym)** — c) _n._ als Synonym von *avyakta*
 [TATTVAS. 5.]
@@ -187,13 +187,13 @@ Schol. to [KĀTY. ŚR. 24,6,8.] *jananī prasūtatanayā* whose daughter has bee
 [TATTVAS. 5.]
 - **EN:** — c) _n._ as a synonym of *avyakta*
 [TATTVAS. 5.]
-  <sub>DCS 14088 · attested</sub>
+  <sub>attested</sub>
 
 **4))** — 4) partic. *prasūna*
 
 - **RU:** — 4) partic. *prasūna*
 - **EN:** — 4) partic. *prasūna*
-  <sub>DCS 14088 · attested</sub>
+  <sub>attested</sub>
 
 **4a))** a) = *prasūta*
 [H. an. 3,388.] = *jāta*
@@ -205,7 +205,7 @@ Schol. to [KĀTY. ŚR. 24,6,8.] *jananī prasūtatanayā* whose daughter has bee
 - **EN:** a) = *prasūta*
 [H. an. 3,388.] = *jāta*
 [MED. n. 87.]
-  <sub>DCS 14088 · attested</sub>
+  <sub>attested</sub>
 
 **4b) blossom, fruit (Blüthe, Frucht))** — b) _n._ Blüthe, Frucht; s. u. *prasūna* . In der Bed. Blüthe auch
 [Spr. (II) 7411], v. l.
@@ -220,7 +220,7 @@ Schol. to [KĀTY. ŚR. 24,6,8.] *jananī prasūtatanayā* whose daughter has bee
 [Spr. (II) 7411], v. l.
 [UTTARAR. 98,6 (129,12).] [MĀLATĪM. 57,13.] [BHĀG. P. 3,18,8] (engendré
 [BURNOUF]). [PAÑCAR. 1,7,50.]
-  <sub>DCS 14088 · mixed</sub>
+  <sub>mixed</sub>
 
 **cross-references)** — Vgl. 3. *prasava, prasavana*, 2. *prasavitar*, 2. *prasavin, prasūta*, 2. *prasūti, prasūna, devaprasūta* (hierher oder zu 2. *su*).
 - **EN:** — Vgl. 3. *prasava, prasavana*, 2. *prasavitar*, 2. *prasavin, prasūta*, 2. *prasūti, prasūna, devaprasūta* (here or to 2. *su*).
@@ -253,7 +253,7 @@ Schol. to [KĀTY. ŚR. 24,6,8.] *jananī prasūtatanayā* whose daughter has bee
 [MBH. 3,12978.]
 - **EN:** — 2) to be born: *tadāhaṃ saṃprasūyāmi gṛheṣu śubhakarmaṇām*
 [MBH. 3,12978.]
-  <sub>DCS 14088 · attested</sub>
+  <sub>attested</sub>
 
 **causative 3) begotten, born (erzeugt, geboren))** — 3) partic. *˚sūta* erzeugt, geboren: *bahvīḥ prajāḥ puruṣāt*
 [MUṆḌ. UP. 2,1,5.] *śarmiṣṭhayā*
@@ -274,7 +274,7 @@ Schol. to [KĀTY. ŚR. 24,6,8.] *jananī prasūtatanayā* whose daughter has bee
 [12,11814.] [13,4426.] *guṇavipuleṣu kuleṣu*
 [R. 4,41,79.] *māyā guṇasaṃprasūtā*
 [BHĀG. P. 11,10,13.]
-  <sub>DCS 14088 · attested</sub>
+  <sub>attested</sub>
 
 **further references)** — Vgl. *saṃprasūti* .
 — *vi* gebären: *sumatyapi garbhaṃ tumbaṃ vyasūyata*
@@ -302,7 +302,7 @@ Schol. to [KĀTY. ŚR. 24,6,8.] *jananī prasūtatanayā* whose daughter has bee
 — *abhipra*, partic. *˚sūta* порождённый, рождённый: *mātuḥ pituḥ karmaṇābhiprasūtaḥ saṃvardhate vidhivadbhojanena*
 [MBH. 5,964.]
 — *saṃpra*
-  <sub>DCS 14088 · attested</sub>
+  <sub>attested</sub>
 
 **prefix_1_erzeugen)** 1) erzeugen: *˚sūte*
 [MBH. 13,2582.] *˚sūyate*
@@ -313,19 +313,19 @@ Schol. to [KĀTY. ŚR. 24,6,8.] *jananī prasūtatanayā* whose daughter has bee
 [MBH. 13,2582.] *˚sūyate*
 [M. 10,33.] — *˚sūyate*
 [MBH. 13,5850] ошибочно вместо *˚ṇūyate*, как читает [ed. Bomb.].
-  <sub>DCS 14088 · attested</sub>
+  <sub>attested</sub>
 
 **addendum_T216)** — Vgl. *saṃprasūti* .
 
 - **RU:** — Vgl. *saṃprasūti* .
-  <sub>DCS 14088 · attested</sub>
+  <sub>attested</sub>
 
 **addendum_T217_gebaeren)** — *vi* gebären: *sumatyapi garbhaṃ tumbaṃ vyasūyata*
 [R. GORR. 1,40,17.]
 
 - **RU:** — *vi* рожать: *sumatyapi garbhaṃ tumbaṃ vyasūyata*
 [R. GORR. 1,40,17.]
-  <sub>DCS 14088 · attested</sub>
+  <sub>attested</sub>
 
 **addendum_T218_erzeugen)** — *sam* dass.: *śāradvatasya* (so die neuere Ausg.) *dāyādamahalyā samasūyata*
 [HARIV. 1784.] erzeugen in uneig. Bed.: *dattaṃ śreyāṃsi saṃsūte* (Conj.)
@@ -334,4 +334,4 @@ Schol. to [KĀTY. ŚR. 24,6,8.] *jananī prasūtatanayā* whose daughter has bee
 - **RU:** — *sam* dass.: *śāradvatasya* (так в новейшем Ausg.) *dāyādamahalyā samasūyata*
 [HARIV. 1784.] порождать в uneig. Bed.: *dattaṃ śreyāṃsi saṃsūte* (Conj.)
 [Spr. (II) 4252.]
-  <sub>DCS 14088 · attested</sub>
+  <sub>attested</sub>

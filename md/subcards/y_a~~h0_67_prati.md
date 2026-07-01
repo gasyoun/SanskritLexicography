@@ -25,7 +25,7 @@
 [7,7844.] {to set upon someone, advance against someone} (acc.)
 [HARIV. 5608.] *raṇāya vīraḥ pratiyātabuddhiḥ* {directed at, aimed at}
 [R. 5,43,14.]
-  <sub>DCS 76 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2)
 
@@ -91,7 +91,7 @@ heimkehren, wiederkehren
 [R. 4,29,9.] *prāṇinaṃ sarvamāpadaḥ . spṛśantyanilavalloke kṣaṇena pratiyānti (vyapayānti* [ed. Bomb.]) *ca ..*
 [3,71,5.] *pratiyātanidra* thus v. a. {awakened}
 [BHĀG. P. 5,1,16.]
-  <sub>DCS 76 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) Jmd (acc.) willfahren: *yāvanmāṃ pratiyāsyati*
 [R. 2,111,14.] *madvacanamaṅgīkṛtya pratiyāsyatyayodhyām* Comm. in der [ed. Bomb.], *yāvanna pratiyāsyati*
@@ -103,7 +103,7 @@ GORR. ([2,120,14]).
 - **EN:** — 3) {to comply with, accede to} {someone's wish} (acc.): *yāvanmāṃ pratiyāsyati*
 [R. 2,111,14.] *madvacanamaṅgīkṛtya pratiyāsyatyayodhyām* Comm. in the [ed. Bomb.], *yāvanna pratiyāsyati*
 GORR. ([2,120,14]).
-  <sub>DCS 76 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) Jmd (acc.) gleichkommen: *gayaṃ nṛpaḥ kaḥ pratiyāti karmabhiḥ*
 [BHĀG. P. 5,15,7.]
@@ -112,7 +112,7 @@ GORR. ([2,120,14]).
 [BHĀG. P. 5,15,7.]
 - **EN:** — 4) {to equal, be equal to someone} (acc.): *gayaṃ nṛpaḥ kaḥ pratiyāti karmabhiḥ*
 [BHĀG. P. 5,15,7.]
-  <sub>DCS 76 · attested</sub>
+  <sub>attested</sub>
 
 **5)** — 5) vergolten werden
 [BHĀG. P. 10,32,22.]
@@ -121,7 +121,7 @@ GORR. ([2,120,14]).
 [BHĀG. P. 10,32,22.]
 - **EN:** — 5) {to be requited, be repaid}
 [BHĀG. P. 10,32,22.]
-  <sub>DCS 76 · attested</sub>
+  <sub>attested</sub>
 
 **6)** — Vgl. *pratiyāna* fg. — caus. heimkehren lassen nach (acc.)
 [BHĀG. P. 10,73,28.]
@@ -130,4 +130,4 @@ GORR. ([2,120,14]).
 [BHĀG. P. 10,73,28.]
 - **EN:** — Vgl. *pratiyāna* fg. — caus. {to let return home to} (acc.)
 [BHĀG. P. 10,73,28.]
-  <sub>DCS 76 · attested</sub>
+  <sub>attested</sub>

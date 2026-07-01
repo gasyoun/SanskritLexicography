@@ -10,7 +10,7 @@ Schol. zu [JYOT. 27.]
 Schol. zu [JYOT. 27.]
 - **EN:** — 2) to subtract
 Schol. to [JYOT. 27.]
-  <sub>DCS 3124 · attested</sub>
+  <sub>attested</sub>
 
 **caus_3)** — 3) sich stürzen: *tasyāḥ srotasyapātayat*
 [MBH. 1,6752.]
@@ -19,4 +19,4 @@ Schol. to [JYOT. 27.]
 [MBH. 1,6752.]
 - **EN:** — 3) to rush, to plunge: *tasyāḥ srotasyapātayat*
 [MBH. 1,6752.]
-  <sub>DCS 3124 · attested</sub>
+  <sub>attested</sub>

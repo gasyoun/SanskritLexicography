@@ -10,4 +10,4 @@
 [RAGH. 6,52.]
 - **EN:** — *vyati* to pass by: *nṛpaṃ tam — sā vyatyagādanyabadhūrbhavitrī . mahīdharaṃ mārgavaśādupetaṃ srotovahā sāgaragāminīva ..*
 [RAGH. 6,52.]
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>

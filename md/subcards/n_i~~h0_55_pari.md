@@ -40,7 +40,7 @@
 [ŚAT. BR. 5,3,3,6.] [7,3,2,18.]
 [ŚĀṄKH. BR. 28,2.]
 [KAUŚ. 46. 64. 80. 81.]
-  <sub>DCS 2376 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) insbes. ein Paar oder eine Braut um das Feuer herumführen (als Hochzeitscerimonie): *pradakṣiṇaṃ tau pragṛhītapāṇī parīṇayāmāsa sa vedapāragaḥ*
 [MBH. 1,7340.] *tau daṃpatī triḥ pariṇīya vahnim (purodhāḥ)*
@@ -73,7 +73,7 @@
 [RĀJA-TAR. 3,436.]
 [DAŚAK.] in [BENF. Chr. 201,3.] [KATHĀS. 18,80.] [322.] *pariṇinye tāṃ gāndharvavidhinā* 220. *(tena) guptaṃ gāndharvavidhinā pariṇītā*
 [7,82.] [10,180.] [ŚĀK. 71.] [65,23.] [HIT. 28,3.] [VET. in LA. 20. 8.]
-  <sub>DCS 2376 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 8) herausbringen, ausspüren: *teṣāṃ vṛttaṃ pariṇayetsamyagrāṣṭreṣu taccaraiḥ*
 [M. 7,122.]
@@ -85,7 +85,7 @@
 - **EN:** — 8) to bring out, to track down, to ferret out: *teṣāṃ vṛttaṃ pariṇayetsamyagrāṣṭreṣu taccaraiḥ*
 [M. 7,122.]
 [MBH. 12,3272.]
-  <sub>DCS 2376 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) *pariṇīta* wohl ausgeführt in der Stelle: *ye caiva māṃ praśaṃsanti ye ca nindanti mānavāḥ . sarvānsupariṇītena karmaṇā toṣayāmyaham ..*
 [MBH. 3,13739.]
@@ -94,7 +94,7 @@
 [MBH. 3,13739.]
 - **EN:** — 4) *pariṇīta* probably to be understood as executed, carried out in the passage: *ye caiva māṃ praśaṃsanti ye ca nindanti mānavāḥ . sarvānsupariṇītena karmaṇā toṣayāmyaham ..*
 [MBH. 3,13739.]
-  <sub>DCS 2376 · attested</sub>
+  <sub>attested</sub>
 
 **note)** — Vgl. *pariṇaya, ˚ṇāya, ˚ṇetar* . — caus. zubringen (die Zeit): *tatra kākasaṃhasrāṇi tāṃ niśāṃ paryanāyayan* (sic)
 [MBH. 10,36.]
@@ -103,4 +103,4 @@
 [MBH. 10,36.]
 - **EN:** — Vgl. *pariṇaya, ˚ṇāya, ˚ṇetar* . — caus. to pass, to spend (time): *tatra kākasaṃhasrāṇi tāṃ niśāṃ paryanāyayan* (sic)
 [MBH. 10,36.]
-  <sub>DCS 2376 · attested</sub>
+  <sub>attested</sub>

@@ -16,7 +16,7 @@
  1) "to come up, approach": *ava svayuktā diva ā vṛthā yayuḥ*
 [ṚV. 1,168,4.] *neha bhadraṃ rakṣasvine nāvayai* (infin.) *nopayā uta*
 [8,47,12.]
-  <sub>DCS 8 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) abbitten, abwenden: *tvaṃ no agne varuṇasya haLo 'va yāsisīṣṭhāḥ*
 ? ([VS. PRĀT. 3,82.] [P. 3,1,34], Vārtt). [ṚV. 4,1,4.] *nū citsudānurava yāsadugrān*
@@ -34,10 +34,10 @@
 [6,66,5.] *ava devairdevakṛtameno 'yāsiṣam*
 [VS. 3,48.] *avayātām*
 [ṚV. 1,94,12] we consider to be corrupt st. *avayātā* nom. ag.
-  <sub>DCS 8 · attested</sub>
+  <sub>attested</sub>
 
 **noun)** — Vgl. *avayā, avayātar* fgg.
 
 - **RU:** — Vgl. *avayā, avayātar* fgg.
 - **EN:** — Vgl. *avayā, avayātar* fgg.
-  <sub>DCS 8 · attested</sub>
+  <sub>attested</sub>

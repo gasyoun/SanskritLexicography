@@ -13,4 +13,4 @@
 
 - **RU:** — *vi*, *˚ṣuvati, vyaṣāvīt*
 [VOP. 8,45.] [13,1.]
-  <sub>DCS 14088 · attested</sub>
+  <sub>attested</sub>

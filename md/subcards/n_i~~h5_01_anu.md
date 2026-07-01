@@ -13,4 +13,4 @@
 - **EN:** — *anu*
  3) *anumīya*
 [MBH. 3,286] erroneous for *anunīya*, as the [ed. Bomb.] reads.
-  <sub>DCS 126 · attested</sub>
+  <sub>attested</sub>

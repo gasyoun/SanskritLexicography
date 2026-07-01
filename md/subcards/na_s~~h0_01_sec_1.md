@@ -112,4 +112,4 @@ to let go, not to retain in memory
 [HARIV. 10087.] [1167.] *nāśayate cittam*
 [VĀYU-P.] in [Verz. d. Oxf. H. 50,b,26.] The aor. in the Bed. of simpl.: *mā vyāghrā nīnaśurvanāt* to disappear from
 [MBH. 5,862]; vgl. u. *vi* .
-  <sub>DCS 1422 · attested</sub>
+  <sub>attested</sub>

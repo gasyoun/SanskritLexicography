@@ -64,7 +64,7 @@
 **intro)** — *sam*
 
 - **RU:** — *sam*
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 **1))** 1) vollständig zur Ruhe gelangen: *saṃśāmya mā śucaḥ*
 [R. GORR. 2,23,6.] [1,76,26.] [2,18,47.] *saṃśāmya tena* (auch *saha tena*) so v. a. schliesse Frieden mit
@@ -93,14 +93,14 @@
 [R. GORR. 1,5,4.] [76,18.] совершенно угасший: *agni*
 [2,68,1] ([66,1] [SCHL.]). [R. SCHL. 2,69,13.] так v. a. мёртвый
 [MBH. 9,1789.]
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 **2))** — 2) beruhigen, stillen, beschwichtigen
 [ŚAT. BR. 1,7,3,11.] [3,4,3,1.]
 
 - **RU:** — 2) успокаивать, утишать, умиротворять
 [ŚAT. BR. 1,7,3,11.] [3,4,3,1.]
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 **addendum/continuation)** — Vgl. *saṃśama* . — caus. dass.
 [ŚĀṄKH. ŚR. 14,29,3. 5.]
@@ -127,4 +127,4 @@
 [R. 2,97,15.] *tvāmapi kālaḥ saṃśamayiṣyati* так v. a. упокоить навеки
 [MBH. 12,8143.] *bhāratayuddhapṛṣṭham* уничтожить, покончить с
 [5,5780.] Vgl. *saṃśamana* fg.
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>

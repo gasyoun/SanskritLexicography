@@ -33,7 +33,7 @@
 [1,166.] *vedānvibruvan*
 [4245.] *na vibrūyānnṛpo dharmam*
 [M. 8,390.]
-  <sub>DCS 46 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) falsch aussagen: *abruvanvibruvanvāpi naro bhavati kilviṣī*
 [M. 8,13.] [194.]
@@ -42,7 +42,7 @@
 [M. 8,13.] [194.]
 - **EN:** — 2) to state falsely, to give false testimony: *abruvanvibruvanvāpi naro bhavati kilviṣī*
 [M. 8,13.] [194.]
-  <sub>DCS 46 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) widersprechen, sich nicht einverstanden erklären
 [KATHĀS. 19,46.] med. sich streiten: *toke vā goṣu tanaye yadapsu vi krandasī urvarāsu bravaite*
@@ -53,7 +53,7 @@
 - **EN:** — 3) to contradict, to declare oneself in disagreement
 [KATHĀS. 19,46.] med. to quarrel, to dispute: *toke vā goṣu tanaye yadapsu vi krandasī urvarāsu bravaite*
 [ṚV. 6,25,4.]
-  <sub>DCS 46 · attested</sub>
+  <sub>attested</sub>
 
 **1 (продолжение — sich über Etwas aussprechen))** [MBH. 1,3449.] sich über Etwas (acc.) aussprechen, über Etwas seine Meinung sagen; erläutern, auslegen: *tadvākyaṃ vibrūta*
 [MBH. 2,2262.] *vyabravīdvayunā martyebhyo 'gnirvidvān*
@@ -78,4 +78,4 @@
 [1,166.] *vedānvibruvan*
 [4245.] *na vibrūyānnṛpo dharmam*
 [M. 8,390.]
-  <sub>DCS 46 · attested</sub>
+  <sub>attested</sub>

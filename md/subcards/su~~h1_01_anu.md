@@ -21,4 +21,4 @@
 [ŚAT. BR. 5,5,4,19.] *anu ṣva* (vgl. unter *nis*)
 [TAITT. ĀR. 2,6,4] falsch; vgl.
 [AV. 6,121,4.] [117,3.]
-  <sub>DCS 14088 · attested</sub>
+  <sub>attested</sub>

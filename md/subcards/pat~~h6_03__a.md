@@ -16,7 +16,7 @@
  2)
 [RĀJA-TAR. 3,202] would stand better under 3); vgl.
 [Spr. 3490.]
-  <sub>DCS 3124 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3)
 [SARVADARŚANAS. 11,11. 12,1.]
@@ -25,4 +25,4 @@
 [SARVADARŚANAS. 11,11. 12,1.]
 - **EN:** — 3)
 [SARVADARŚANAS. 11,11. 12,1.]
-  <sub>DCS 3124 · attested</sub>
+  <sub>attested</sub>

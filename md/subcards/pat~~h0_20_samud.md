@@ -70,4 +70,4 @@
 [MBH. 1,3320. fgg.]
 [BHĀG. P. 6,4,14.] to go forth, so v. a. to escape, disappear: *samutpatitatejas*
 [PAÑCAT. I,212.]
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>

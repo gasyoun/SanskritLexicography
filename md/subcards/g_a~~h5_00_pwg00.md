@@ -13,7 +13,7 @@
 - **EN:** 2. *gā*¦, *yaḥ śauryaudāryaśṛṅgāramayo janatayā jage* so v. a. who was called among the people
 [KATHĀS. 91,7.] *gīyate* is called, is named
 [SARVADARŚANAS. 163,12. fg.] — *gīta*
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **2a)** 2)
  a) *gītā = bhagavadgītā*
@@ -58,7 +58,7 @@
 [152.] *gītāmṛtataraṃgiṇī*
 [120.] *gītārthavivaraṇa*
 [205.]
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **3a)** — 3) zerfällt in *gāndharva* und *gāna*
 [Verz. d. Oxf. H. 199,b, No. 472.] in *mārga* und *deśī*
@@ -87,7 +87,7 @@
 - **EN:** — *anu*
  3) *evaṃ vrajastriyaḥ — kṛṣṇalīlānugāyatīḥ*
 [BHĀG. P. 10,35,26.]
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **3c)** — *ava*, *avagītaṃ muhurdṛṣṭamupalabdhaṃ ca yadbhavet*
 [HALĀY. 4,70.] *avagītaṃ tu nirvede 'nūktadṛṣṭe vigarhite*
@@ -99,7 +99,7 @@
 - **EN:** — *ava*, *avagītaṃ muhurdṛṣṭamupalabdhaṃ ca yadbhavet*
 [HALĀY. 4,70.] *avagītaṃ tu nirvede 'nūktadṛṣṭe vigarhite*
 [AJAYA] at [AUFRECHT, HALĀY.] [Ind.]
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **3d_leise)** — *ā*
  3) leicht —, leise singen
@@ -111,7 +111,7 @@
 - **EN:** — *ā*
  3) to sing softly, to sing gently
 [PAÑCAV. BR. 13,10,8. 19,12,7.]
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **3e)** — *ud*, *udgāti*
 [ŚĀṄKH. BR. 17,7.] *udgāyet*
@@ -129,7 +129,7 @@
 [LĀṬY. 6,10,18.] *ujjaguḥ*
 [BHĀG. P. 10,5,12.] *ityudgīya*
 [KATHĀS. 86,46.]
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **3f_1)** — *upa*
  1)
@@ -141,7 +141,7 @@
 - **EN:** — *upa*
  1)
 [ŚĀṄKH. BR. 17,7.]
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **3g_3)** — 3) *yathoktamṛṣiṇā pūrvaṃ sarvaṃ tatropagāyatām*
 [R. 7,94,1.]
@@ -150,7 +150,7 @@
 [R. 7,94,1.]
 - **EN:** — 3) *yathoktamṛṣiṇā pūrvaṃ sarvaṃ tatropagāyatām*
 [R. 7,94,1.]
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **3h_gesungen)** — *pra*, *pragīta* singend hergesagt, gesungen: *vaidikāśca (mantrāḥ) dvividhāḥ pragītā apragītāśca . tatra pragītāḥ sāmāni . apragītāśca dvividhāḥ* (nämlich *ṛcaḥ* und *yajūṃṣi)*
 [SARVADARŚANAS. 169,17. fg.] singend
@@ -162,7 +162,7 @@
 - **EN:** — *pra*, *pragīta* recited singing, sung: *vaidikāśca (mantrāḥ) dvividhāḥ pragītā apragītāśca . tatra pragītāḥ sāmāni . apragītāśca dvividhāḥ* (namely *ṛcaḥ* and *yajūṃṣi)*
 [SARVADARŚANAS. 169,17. fg.] singing
 [KATHĀS. 121,130.]
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **3i_beginnen)** — *saṃpra* zu singen beginnen: *samaṃ saṃprajaguryatra manastuṣṭivivardhanam*
 [R. 7,26,7.]
@@ -171,7 +171,7 @@
 [R. 7,26,7.]
 - **EN:** — *saṃpra* to begin to sing: *samaṃ saṃprajaguryatra manastuṣṭivivardhanam*
 [R. 7,26,7.]
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **3_structure)** — 3) zerfällt in *gāndharva* und *gāna*
 [Verz. d. Oxf. H. 199,b, No. 472.] in *mārga* und *deśī*
@@ -190,4 +190,4 @@
 [265,b,24.] название 4 гимнов на Kṛṣṇa
 [HALL 151.] — intens. *jegīyate* часто утверждается —, настойчиво утверждается
 [SARVADARŚANAS. 40,1. 122,1.]
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>

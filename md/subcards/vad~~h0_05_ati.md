@@ -7,7 +7,7 @@
 
 - **RU:** — *ati* act.
 - **EN:** — *ati* act.
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **ati-1)** 1) übertönen, lauter oder besser reden, niederschwatzen, niederdisputiren: *dundubhiḥ sarvā vāco 'tivadati*
 [TBR. 1,3,6,2.] *rāṣṭraṃ viśamati vadati*
@@ -37,7 +37,7 @@
 [ṢAḌV. BR. 2,3.] *eṣa tu ativadati yaḥ satyenātivadati*
 [CHĀND. UP. 7,16,1.] *vṛddhānnātivadejjātu* (*nābhibhavejjātu* [ed. Bomb.])
 [MBH. 13,7578.]
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **ati-2)** — 2) mehr sagen, überfordern: *yāvaddātābhimanasyeta tannāti vadet*
 [AV. 11,3,25.]
@@ -51,9 +51,9 @@
 
 - **RU:** — 2) говорить лишнее, требовать сверх меры: *yāvaddātābhimanasyeta tannāti vadet*
 [AV. 11,3,25.]
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **ati+vad cross-ref)** — Vgl. *ativāda, ˚vādin, atyudya* .
 
 - **RU:** — Vgl. *ativāda, ˚vādin, atyudya* .
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>

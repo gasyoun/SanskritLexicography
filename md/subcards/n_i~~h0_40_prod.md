@@ -13,4 +13,4 @@
 - **EN:** — *prod* to bring upward, to raise, to lift up: *dharādharaṃ pronnīyamānāvanimagradaṃṣṭrayā*
 [BHĀG. P. 3,18,2.] *guṇairudāraiḥ saṃyuktānpronnayenmadhyamādhamān*
 [KĀM. NĪTIS. 5,69.]
-  <sub>DCS 2376 · attested</sub>
+  <sub>attested</sub>

@@ -10,4 +10,4 @@
 [ṚV. 5,78,1.]
 - **EN:** — *upā* to fly toward: *haṃsāviva patatamā sutā upa*
 [ṚV. 5,78,1.]
-  <sub>DCS 1 · attested</sub>
+  <sub>attested</sub>

@@ -16,4 +16,4 @@
 [DHĀTUP. 22,23.] *pāyati dhānyamātapena*
 [DURGAD.] in [WEST.] — caus. *pāyayati*
 [P. 7,3,37], Sch.
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>

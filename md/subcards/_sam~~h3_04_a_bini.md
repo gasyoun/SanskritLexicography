@@ -10,4 +10,4 @@
 [DAŚAK. 94,16.]
 - **EN:** — *abhini* dass.: *˚śāmya* absol.
 [DAŚAK. 94,16.]
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>

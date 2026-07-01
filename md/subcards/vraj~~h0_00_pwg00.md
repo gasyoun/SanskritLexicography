@@ -16,7 +16,7 @@
 [DHĀTUP. 7,79.] [40], v. l. *vajrāja; avrājīt*
 [P. 7,2,3.]
 [VOP. 8,47.] [58.] *vrajiṣyati*; also med. *vrajitum, vrajitvā, vrajita* for metrical reasons.
-  <sub>DCS 1202 · attested</sub>
+  <sub>attested</sub>
 
 **1)** 1) schreiten, gehen; fortgehen; mit acc. des Ziels: *vavrājā sīmanadatīḥ*
 [ṚV. 3,1,6.] *pṛthagvrajantīḥ pari ṣīmavṛñjan*
@@ -214,7 +214,7 @@ Schol. to [P. 2,3,15.] [3,3,11.] *bhoktum* dass.
 [KĀM. NĪTIS. 10,40.] *māmekaṃ śaraṇaṃ vraja*
 [BHAG. 18,66.] [13,1042] (med.). *padāmbujaṃ te . vrajema sarve śaraṇam*
 [BHĀG. P. 3,5,42.] [31,12.] [6,9,26.] [8,5,21.]
-  <sub>DCS 1202 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) zu einem Weibe (acc.) gehen so v. a. ihm beiwohnen
 [M. 3,45.] [8,378.] [382. fg.] [385.]
@@ -226,7 +226,7 @@ Schol. to [P. 2,3,15.] [3,3,11.] *bhoktum* dass.
 - **EN:** — 2) to go to a woman (acc.), thus v. a. to have sexual intercourse with her
 [M. 3,45.] [8,378.] [382. fg.] [385.]
 [SUŚR. 2,147,11.]
-  <sub>DCS 1202 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) von der Bewegung unbelebter und auch unkörperlicher Dinge: einer Wolke
 [MEGH. 27.] *kiṃcitpaścādvraja laghugatiḥ kiṃcidevottareṇa*
@@ -283,7 +283,7 @@ Schol. to [P. 2,3,15.] [3,3,11.] *bhoktum* dass.
 [MEGH. 104.] *vrajatu tava nidāghaḥ*
 [ṚT. 1,28.] *kāle vrajati*
 [KĀM. NĪTIS. 12,16.] ad [ŚĀK. 193.] [Spr. 2924.] [KATHĀS. 23,87.] [PAÑCAT. 49,2.] [117,9.] [261,14.]
-  <sub>DCS 1202 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) in einen Zustand —, in eine Lage —, in ein Verhältniss gerathen: *jarām* alt werden
 [MBH. 3,16541] (med.). *mṛtyum* sterben
@@ -379,4 +379,4 @@ Schol. to [P. 2,3,15.] [3,3,11.] *bhoktum* dass.
 [RAGH. 18,16.]
 [KĀM. NĪTIS. 4,13. 80.] [ŚĀK. 9.] [VARĀH. BṚH. 11,20. 24 (22),3.] [SĀH. D. 43,12.] [63,15.] [MĀRK. P. 25,14] (med.). *bhasmatvam* (thus to be construed)
 [115,2.] [BHĀG. P. 1,18,22.] [PAÑCAT. 33,7.]
-  <sub>DCS 1202 · attested</sub>
+  <sub>attested</sub>

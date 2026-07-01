@@ -43,10 +43,10 @@
 [TS. 2,5,9,1.]
 [ĀŚV. ŚR. 1,3.] Instead of *anumatta*
 [DAŚAK.] in [BENF. Chr. 200,14] one should simply read *anunmatta*.
-  <sub>DCS 27 · attested</sub>
+  <sub>attested</sub>
 
 **cross-ref)** — Vgl. *anumādya* .
 
 - **RU:** — Vgl. *anumādya*.
 - **EN:** — Vgl. *anumādya*.
-  <sub>DCS 27 · attested</sub>
+  <sub>attested</sub>

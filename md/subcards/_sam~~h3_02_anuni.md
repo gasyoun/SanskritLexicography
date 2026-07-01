@@ -13,4 +13,4 @@
 - **EN:** — *anuni* = *niḥ ruditamanuniśamya*
 [BHĀG. P. 10,7,25.] *idamidamiti tṛṣṇayābhibhūtaṃ janamanavāptadhanaṃ viṣīdamānam . nipuṇamanuniśamya tattvabuddhyā* presenting to the mind
 [MBH. 12,6680.]
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>

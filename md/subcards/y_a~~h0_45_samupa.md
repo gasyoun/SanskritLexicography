@@ -25,7 +25,7 @@
 [VARĀH. BṚH. S. 47,25.] *astam*
 [11,34.] *atastvāṃ śaraṇyaśaraṇaṃ samupayātāḥ*
 [43,1.]
-  <sub>DCS 9 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) in einen Zustand u. s. w. kommen: *saṃdarśanam* sichtbar werden
 [VARĀH. BṚH. S. 87,26.]
@@ -34,4 +34,4 @@
 [VARĀH. BṚH. S. 87,26.]
 - **EN:** — 2) to come into a state u. s. w.: *saṃdarśanam* to become visible
 [VARĀH. BṚH. S. 87,26.]
-  <sub>DCS 9 · attested</sub>
+  <sub>attested</sub>

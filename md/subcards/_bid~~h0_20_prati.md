@@ -13,7 +13,7 @@
 - **EN:** — *prati*
  1) to pierce through: *kasyādya kāyaṃ pratibhidya ghorā mahīṃ pravekṣyanti śitāḥ śarāgryāḥ*
 [MBH. 3,15681.]
-  <sub>DCS 5 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) verrathen: *apratibhidya rahasyam*
 [DAŚAK.] in [BENF. Chr. 199,21.]
@@ -22,7 +22,7 @@
 [DAŚAK.] in [BENF. Chr. 199,21.]
 - **EN:** — 2) to betray: *apratibhidya rahasyam*
 [DAŚAK.] in [BENF. Chr. 199,21.]
-  <sub>DCS 5 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) seinen Unwillen gegen Jmd (acc.) an den Tag legen
 [RAGH. 19,22.]
@@ -34,7 +34,7 @@
 - **EN:** — 3) to manifest one's displeasure against someone (acc.)
 [RAGH. 19,22.]
 [ŚIŚ. 9,58. 10,35.]
-  <sub>DCS 5 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) *pratibhinna* wohl in unmittelbarer Berührung stehend —, eng verbunden mit (instr.): *dūrvāpravālaiḥ pratibhinnaśobham* (cujus splendor divisus est Dūrvae culminibus [ST.])
 [KUMĀRAS. 7,7.] *candreṇa nityaṃ pratibhinnamauleḥ — harasya* (cujus crista distincta est luna [ST.])
@@ -46,10 +46,10 @@
 - **EN:** — 4) *pratibhinna* prob. standing in immediate contact with —, closely joined to (instr.): *dūrvāpravālaiḥ pratibhinnaśobham* (cujus splendor divisus est Dūrvae culminibus [ST.])
 [KUMĀRAS. 7,7.] *candreṇa nityaṃ pratibhinnamauleḥ — harasya* (cujus crista distincta est luna [ST.])
 [35.]
-  <sub>DCS 5 · attested</sub>
+  <sub>attested</sub>
 
 **5)** — Vgl. *pratibheda* fg.
 
 - **RU:** — Vgl. *pratibheda* fg.
 - **EN:** — Vgl. *pratibheda* fg.
-  <sub>DCS 5 · attested</sub>
+  <sub>attested</sub>

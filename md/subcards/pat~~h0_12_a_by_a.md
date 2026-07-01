@@ -19,4 +19,4 @@
 [8,2631.] *anyo'nyamabhyāpatatāṃ nighnatāṃ cetaretaram*
 [4,1041.] *(karī) tāmeva badhūmabhyāpatat*
 [KATHĀS. 27,169.]
-  <sub>DCS 7 · attested</sub>
+  <sub>attested</sub>

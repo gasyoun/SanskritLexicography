@@ -151,7 +151,7 @@
 [AV. 6,109,1.] pass. impers.: *yajjīvyate kṣaṇamapi — manuṣyaiḥ*
 [PAÑCAT. I,29.] *yasyāḥ saṅgena jīvyeta*
 [IV,34.] [HIT. I,195.]
-  <sub>DCS 2223 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) aufleben: *tataste jīvati brāhmaṇī*
 [PAÑCAT. 221,8.] *jīvatādyajamānaḥ*
@@ -166,7 +166,7 @@
 [PAÑCAT. 221,8.] *jīvatādyajamānaḥ*
 [BHĀG. P. 4,6,51.] With *punar* dass.: *na jātu punarjīvenmadbāhvantaramāgataḥ*
 [HIḌ. 4,44.]
-  <sub>DCS 2223 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) seinen Lebensunterhalt haben, leben von (instr.): *ajīvan* keinen Lebensunterhalt habend
 [M. 10,112.] [11,18.] *vetanādibhyo jīvati*
@@ -214,7 +214,7 @@
 * bāṇijyaṃ tena caivāpi jīvyate*
 [M. 4,6.] Also with the loc. of the person: *ṣaḍime ṣaṭsu jīvanti saptamo nopalabhyate . caurāḥ pramatte jīvanti vyādhiteṣu cikitsakāḥ .. pramadāḥ kāmayāneṣu yājamāneṣu yājakāḥ . rājā vivadamāneṣu nityaṃ mūrkheṣu paṇḍitāḥ ..*
 [MBH. 5,1059. fg.] — caus.
-  <sub>DCS 2223 · attested</sub>
+  <sub>attested</sub>
 
 **caus-1)** 1) *jīvayati* (ep. auch *˚te)*; aor. *ajījivat* und *ajijīvat*
 [P. 7,4,3.]
@@ -286,7 +286,7 @@
 [13,4847.] *eṣo 'smān jīvayet*
 [KATHĀS. 3,17.] [18.] *jantūn jīvayituṃ tataḥ . svayamannapatiḥ — kṣitimavātarat*
 [RĀJA-TAR. 5,72.]
-  <sub>DCS 2223 · attested</sub>
+  <sub>attested</sub>
 
 **caus-2)** — 2) *jīvāpayati* Jmd wieder lebendig machen
 [VET. 18,8. 14.] *jīvāpita*
@@ -298,7 +298,7 @@
 - **EN:** — 2) *jīvāpayati* *to bring someone back to liṛe again*
 [VET. 18,8. 14.] *jīvāpita*
 [6. 16. 19,1. 34,1.] — desid.
-  <sub>DCS 2223 · attested</sub>
+  <sub>attested</sub>
 
 **desid-1)** 1) *jijīviṣati* leben wollen, zu leben wünschen: *jijīviṣet*
 [KĀTY. ŚR. 22,6,20.]
@@ -323,7 +323,7 @@
 [KĀTY. ŚR. 22,6,20.]
 [LĀṬY. 8,8,41.] *kurvanneveha karmāṇi jijīviṣecchataṃ samāḥ*
 [ĪŚOP. 2.]
-  <sub>DCS 2223 · attested</sub>
+  <sub>attested</sub>
 
 **desid-2)** [PRAB. 108,7.] *imāmavasthāṃ saṃprāptā madanyā kā jijīviṣet*
 [MBH. 4,615.] *yāneva hatvā na jijīviṣāmaḥ*

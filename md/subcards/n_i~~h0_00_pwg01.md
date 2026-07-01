@@ -16,7 +16,7 @@
 [M. 7,30.]
 [YĀJÑ. 1,354.]
 [Spr. 473.]
-  <sub>DCS 2376 · attested</sub>
+  <sub>attested</sub>
 
 **6_carry_bear)** — 6) hintragen, wegtragen, forttragen, hintragen zu
 [MBH. 3,11008.] *sarvaḥ praiṣyajanastatra ratnāni vividhāni ca — nināya*
@@ -73,7 +73,7 @@ Die Bed. ertragen scheint das Wort in der folgenden Stelle zu haben: *priyāpriy
 
 The meaning to bear, endure (Bed.) the word appears to have in the following passage: *priyāpriye cātmasamaṃ nayīta*
 [MBH. 5,1264.]
-  <sub>DCS 2376 · attested</sub>
+  <sub>attested</sub>
 
 **7_draw_line)** — 7) führen so v. a. ziehen (eine Linie u. s. w.): *udadhārām*
 [ŚĀṄKH. ŚR. 2,6,12.]
@@ -85,7 +85,7 @@ The meaning to bear, endure (Bed.) the word appears to have in the following pas
 - **EN:** 7) to lead, and thus v. a. to draw (a line u. s. w.): *udadhārām*
 [ŚĀṄKH. ŚR. 2,6,12.]
 [SŪRYAS. 6,10. 10,12.]
-  <sub>DCS 2376 · attested</sub>
+  <sub>attested</sub>
 
 **8_conduct_proceedings)** — 8) *vyavahārān* Processe führen, leiten (vom König als Richter)
 [YĀJÑ. 2,19.] *kriyām* eine heilige Handlung führen, leiten: *evaṃ śāstreṣu bhinneṣu bahudhā nīyate kriyā*
@@ -97,7 +97,7 @@ The meaning to bear, endure (Bed.) the word appears to have in the following pas
 - **EN:** 8) *vyavahārān* to conduct, direct legal proceedings (of the king as judge)
 [YĀJÑ. 2,19.] *kriyām* to conduct, direct a sacred rite: *evaṃ śāstreṣu bhinneṣu bahudhā nīyate kriyā*
 [MBH. 3,11252.]
-  <sub>DCS 2376 · attested</sub>
+  <sub>attested</sub>
 
 **9_spend_time)** — 9) hinbringen, zubringen, verbringen (die Zeit): *cāndrāyaṇairnayetkālam*
 [YĀJÑ. 3,50.] *rātrim*
@@ -121,7 +121,7 @@ The meaning to bear, endure (Bed.) the word appears to have in the following pas
 [AIT. BR. 2,19] ; vgl. desid. 4.
 - **EN:** 10) to lead away, and thus v. a. to exclude from: *somāt*
 [AIT. BR. 2,19]; vgl. desid. 4.
-  <sub>DCS 2376 · attested</sub>
+  <sub>attested</sub>
 
 **11_give_guidance)** — 11) med. Anleitung geben: *(saṃmānane): śāstre nayate = śāstrasthaṃ siddhāntaṃ śiṣyebhyaḥ prāpayati*
 [P. 1,3,36], Sch.
@@ -133,7 +133,7 @@ Nach [VOP. 23,28] bedeutet *śāstre nayate* bewandert sein in; *saṃmānana* w
 - **EN:** 11) med. to give instruction, guidance: *(saṃmānane): śāstre nayate = śāstrasthaṃ siddhāntaṃ śiṣyebhyaḥ prāpayati*
 [P. 1,3,36], Sch.
 According to [VOP. 23,28] *śāstre nayate* means to be versed in; *saṃmānana* the form ebend. is understood in the Bed. to mean to revere, since *viṣṇuṃ nayate* is given as the example.
-  <sub>DCS 2376 · lexicographic</sub>
+  <sub>lexicographic</sub>
 
 **12_ascertain)** — 12) Etwas herausbringen, hinter Etwas kommen, feststellen: *sīmāṃ prati samutpanne vivāde grāmayordvayoḥ . jyaiṣṭhe māsi nayetsīmāṃ suprakāśeṣu setuṣu ..*
 [M. 8,245.] *etairliṅgairnayetsīmāṃ rājā*
@@ -165,7 +165,7 @@ Schol. — In the passage: *na śaktastāni (asurāṇāṃ trīṇi purāṇi) 
 [BHARTṚ. Suppl. 25.] *kālaṃ nayamānā*
 [PAÑCAT. 60,25.] *sa evaṃ svāntaraṃ ninye yugānāmekasaptatim*
 [BHĀG. P. 3,22,36.]
-  <sub>DCS 2376 · attested</sub>
+  <sub>attested</sub>
 
 **12)** — 12) Etwas herausbringen, hinter Etwas kommen, feststellen: *sīmāṃ prati samutpanne vivāde grāmayordvayoḥ . jyaiṣṭhe māsi nayetsīmāṃ suprakāśeṣu setuṣu ..*
 [M. 8,245.] *etairliṅgairnayetsīmāṃ rājā*
@@ -180,9 +180,9 @@ Schol. — In der Stelle: *na śaktastāni (asurāṇāṃ trīṇi purāṇi) m
 [M. 8,44.] По [P. 1,3,36] в Bed. *jñāna* (vgl. u. 11) med.: *tattvaṃ nayate = niścinoti*
 Schol. — В месте: *na śaktastāni (asurāṇāṃ trīṇi purāṇi) maghavā netuṃ sarvāyudhairapi*
 [MBH. 7,9557] следует, вероятно, читать *jetuṃ* st. *netuṃ*.
-  <sub>DCS 2376 · attested</sub>
+  <sub>attested</sub>
 
 **cross-ref)** — Vgl. *naya, nayana, nayitavya, nayiṣṭha, nāya, nāyaka, nāyin, nīti, netar, netavya, netra, neya* .
 
 - **RU:** — Vgl. *naya, nayana, nayitavya, nayiṣṭha, nāya, nāyaka, nāyin, nīti, netar, netavya, netra, neya* .
-  <sub>DCS 2376 · attested</sub>
+  <sub>attested</sub>

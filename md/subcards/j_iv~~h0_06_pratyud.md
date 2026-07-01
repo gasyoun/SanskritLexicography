@@ -14,7 +14,7 @@
 [PAÑCAT. 244,2.]
 - **EN:** *pratyud* 'to revive, come to life again'
 [KATHĀS. 4,101.] *tena pratyujjijīva sā*
-  <sub>DCS 2223 · attested</sub>
+  <sub>attested</sub>
 
 **2)** [10,97.] [14,81.] — caus. wieder aufleben machen
 [PAÑCAT. 244,2.]
@@ -24,4 +24,4 @@
 
 - **RU:** Caus. Vgl. *pratyujjīvana*.
 - **EN:** — Vgl. *pratyujjīvana*.
-  <sub>DCS 2223 · attested</sub>
+  <sub>attested</sub>

@@ -23,9 +23,9 @@
 [TS. 7,5,5,1.]
 [KĀṬH. 34,4.]
 [PAÑCAV. BR. 9,4,1.]
-  <sub>DCS 14088 · attested</sub>
+  <sub>attested</sub>
 
 **sam+su (addendum))** — Vgl. *saṃsava, saṃsutasoma* .
 
 - **RU:** — Vgl. *saṃsava, saṃsutasoma* .
-  <sub>DCS 14088 · attested</sub>
+  <sub>attested</sub>

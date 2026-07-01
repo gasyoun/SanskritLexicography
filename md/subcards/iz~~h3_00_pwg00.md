@@ -67,7 +67,7 @@
 [4,18,10.] *yudhedāpitvamicchase*
 [8,21,13.] *sunāmā straiṇamicchatām*
 [AV. 8,6,4.] In the idioms
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>
 
 **1a)** a) *icchati manasā* und ähnlichen: haben wollen, herbeiwünschen, erwünschen: *yamaicchāma manasā so3yamāgāt*
 [ṚV. 10,53,2.] *icchāmīddhṛdā manasā cidindram*
@@ -85,7 +85,7 @@
 [6,28,5.] *paṇericcha hṛdi priyam*
 [53,6.] *antaricchanti taṃ jane rudraṃ paro manīṣayā*
 [8,61,3.] [AV. 11,9,8.]
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>
 
 **1b)** — b) *icchati manaḥ* Jmd zu gewinnen suchen: *tasya vā tvaṃ mana icchā sa vā tava*
 [ṚV. 10,10,14.] *marutāṃ mana icchata*
@@ -97,7 +97,7 @@
 - **EN:** — b) *icchati manaḥ* to seek to win someone over: *tasya vā tvaṃ mana icchā sa vā tava*
 [ṚV. 10,10,14.] *marutāṃ mana icchata*
 [AV. 4,15,15.]
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) zu gewinnen —, sich zu verschaffen suchen; erwünschen, wünschen; haben wollen, verlangen; belieben, Willens sein, im Begriff sein, im Sinne haben; act. mit acc.: *sakhāyaḥ kratumicchata*
 [ṚV. 8,59,13.] *yukto 'vasātāramicchāt*
@@ -301,7 +301,7 @@
 [ŚAT. BR. 1,8,1,8.] *deveṣu yajñe bhāgamīṣire*
 [6,1,1.] *yatpitā putreṣvicchate*
 [8,4,1,4.] [1,5,1,26.] [4,1,2,6.] [3,11.] [14,4,1,27.] [2,27.]
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) anerkennen, ansehen für: *jyeṣṭhāmūlīyamicchanti māsamāṣāḍhapūrvajam* den dem Ā. vorangehenden Monat sieht man für den Jy. an
 [TRIK. 1,1,111.] Vgl. 4,c.
@@ -310,7 +310,7 @@
 [TRIK. 1,1,111.] Vgl. 4,c.
 - **EN:** — 3) to acknowledge, regard as: *jyeṣṭhāmūlīyamicchanti māsamāṣāḍhapūrvajam* the month preceding the Ā. is regarded as the Jy.
 [TRIK. 1,1,111.] Vgl. 4,c.
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>
 
 **head)** 3. *iṣ*¦, *icchati*
 [BHĀTUP. 28,59.] [P. 7,3,77.] *aicchat; iyeṣa, īṣathus, īṣus; eṣiṣyati; eṣitā* und *eṣṭā*
@@ -327,4 +327,4 @@
 [P. 3,1,85], Kār., Sch.)
 *icchate; īṣe, īṣāte*; inf. *eṣṭum* und *eṣitum; eṣitvā*
 [VOP. 26,207]; partic. *iṣṭa* (s. d.).
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>

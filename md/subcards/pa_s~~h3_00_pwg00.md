@@ -16,4 +16,4 @@
 [P. 7,4,86.] intens. *pampaśyate, pampaśīti* ebend.
 [VOP. 20,8.] According to the Schol., a [KĀTY.] Sautra-root; vgl.
 [WESTERG.] in [DHĀTUP. 21,22.]
-  <sub>DCS 4733 · lexicographic</sub>
+  <sub>lexicographic</sub>

@@ -10,4 +10,4 @@
 [P. 8,2,36]) в конце comp. воздающий поклонение, приносящий жертву; s. *divi˚, deva˚* .
 - **EN:** 2. *yaj*¦ (= 1. *yaj*) nom. ag. (nom. *yaḍ* according to
 [P. 8,2,36]) at the end of a comp. paying homage, sacrificing; s. *divi˚, deva˚*.
-  <sub>DCS 6777 · lexicographic</sub>
+  <sub>lexicographic</sub>

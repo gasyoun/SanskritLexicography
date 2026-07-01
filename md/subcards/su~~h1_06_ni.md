@@ -13,4 +13,4 @@
 
 - **RU:** — *ni*, partic. *˚ṣuta* вложенный внутрь, вброшенный: *camase 'ṣṭātayāni niṣutāni bhavanti*
 [AIT. BR. 8,5.]
-  <sub>DCS 14088 · attested</sub>
+  <sub>attested</sub>

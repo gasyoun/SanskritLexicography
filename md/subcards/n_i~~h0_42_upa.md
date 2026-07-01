@@ -157,7 +157,7 @@
 [MBH. 4,860.] *rajjveva puruṣo baddhvā kṛtāntenopanīyate*
 [R. 5,35,3.] to lead, to guide: *andhā yathāndhairupanīyamānāḥ*
 [BHĀG. P. 7,5,31.]
-  <sub>DCS 307 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) su sich nehmen, aufnehmen, vom Lehrer, der den Schüler zum Unterricht aufnimmt; med.
 [P. 1,3,36.]
@@ -199,7 +199,7 @@
 [M. 2,69.] [140.] *upanīyamāna*
 [BHĀG. P. 8,18,14.] *upanīta*
 [17.] [M. 2,49.] [RAGH. 3,29.]
-  <sub>DCS 307 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) med. in Dienst nehmen
 [P. 1,3,36.]
@@ -214,7 +214,7 @@
 [P. 1,3,36.]
 [VOP. 23,28.] *karmakārānupanayate*
 [P.], Schol.
-  <sub>DCS 307 · attested</sub>
+  <sub>attested</sub>
 
 **caus)** — Vgl. *upanaya* fg., *˚nāya* fg., *˚netar* fg. —
 
@@ -229,4 +229,4 @@ caus. заботиться о том, чтобы кто-л. (acc.) был при
 
 caus. to ensure that someone (acc.) is received as a pupil by a teacher
 [M. 11,191.]
-  <sub>DCS 307 · attested</sub>
+  <sub>attested</sub>

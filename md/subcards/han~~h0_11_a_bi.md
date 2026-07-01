@@ -107,7 +107,7 @@
 [Spr. (II) 6696.] *talānāmabhihanyatām* (= *abhihanyamānānām)*
 [MBH. 6,2514.] *abhyahanmṛgān* slain
 [3,14056.]
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) anschlagen eine Trommel u. s. w.: *śaṅkhāśca bheryaśca* u. s. w. *abhyahanyanta*
 [BHAG. 1,13.]
@@ -122,7 +122,7 @@
 [BHAG. 1,13.]
 [MBH. 6,1535.]
 [R. GORR. 2,82,2.]
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) treffen so v. a. befallen, heimsuchen: *ajīrṇairabhihanyante te devāḥ*
 [MBH. 13,4375.] *duṣṭairbhūtaiḥ*
@@ -134,19 +134,19 @@
 - **EN:** — 3) to hit, hence v. a. to befall, afflict: *ajīrṇairabhihanyante te devāḥ*
 [MBH. 13,4375.] *duṣṭairbhūtaiḥ*
 [MĀRK. P. 43,32.] [WILSON, SĀṂKHYAK. S. 89.]
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **4-intro)** — 4) partic.
 
 - **RU:** — 4) partic.
 - **EN:** — 4) partic.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **4a-intro)** a) *abhihata*
 
 - **RU:** a) *abhihata*
 - **EN:** a) *abhihata*
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **4a.alpha)** α) getroffen, geschlagen, gestossen
 [AV. 11,10,22.]
@@ -221,7 +221,7 @@
 [ŚIKṢĀ 11.] attacked
 [R. 1,34,30.] *siṃhābhihata iva dvipaḥ*
 [5,4,8.]
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **4a.beta)** — β) angeschlagen: Trommel
 u. s. w. [R. 2,81,2.] [VARĀH. BṚH. S. 46,61.]
@@ -230,7 +230,7 @@ u. s. w. [R. 2,81,2.] [VARĀH. BṚH. S. 46,61.]
 u. s. w. [R. 2,81,2.] [VARĀH. BṚH. S. 46,61.]
 - **EN:** — β) struck (of a drum): drum
 u. s. w. [R. 2,81,2.] [VARĀH. BṚH. S. 46,61.]
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **4a.gamma)** — γ) getroffen so v. a. heimgesucht, behaftet mit: *˚rogaśokādyaiḥ śarīram*
 [MAITRYUP. 1,3.] *śāpena*
@@ -269,7 +269,7 @@ u. s. w. [R. 2,81,2.] [VARĀH. BṚH. S. 46,61.]
 [R. 5,65,1.] *śokavegābhihata*
 [Spr. (II) 6885.] = *abhibhūta*
 [COLEBR.] and [LOIS.] on [AK. 3,1,40.]
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **4b)** — b) *abhighāta* beschädigt: *manuṣyeṣvabhighāteṣu, goṣvabhighātāsu*
 [SĀMAVIDH. BR. 1,8,13.]
@@ -278,7 +278,7 @@ u. s. w. [R. 2,81,2.] [VARĀH. BṚH. S. 46,61.]
 [SĀMAVIDH. BR. 1,8,13.]
 - **EN:** — b) *abhighāta* damaged: *manuṣyeṣvabhighāteṣu, goṣvabhighātāsu*
 [SĀMAVIDH. BR. 1,8,13.]
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **final)** — Vgl. *abhighāta* fgg. und *sarvāṅgābhihata* . — caus. partic. *˚ghātita* getroffen: *śarābhi˚*
 [MBH. 8,4319.] — desid. treffen —,
@@ -296,9 +296,9 @@ niederschlagen wollen
 
 wishing to strike down
 [ṚV. 7,59,8.]
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **prefix-header)** — *abhi*
 
 - **RU:** — *abhi*
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>

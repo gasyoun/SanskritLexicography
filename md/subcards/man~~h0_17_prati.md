@@ -14,7 +14,7 @@
 [VS. 23,52.] *tadu ha śaunakaḥ kāpeyaḥ pratimanvānaḥ (= manasālocayan*
 [ŚAṂK.]) *pratyeyāya*
 [CHĀND. UP. 4,3,7.]
-  <sub>DCS 4704 · attested</sub>
+  <sub>attested</sub>
 
 **2)** [CHĀND. UP. 4,3,7.] — caus. Jmd ehren: *pratimānya dhanaṃjayam*
 [MBH. 3,1712.]
@@ -36,7 +36,7 @@
 [KĀM. NĪTIS. 17,31.] Inschr. in
 [Journ. of the Am. Or. S. 6,543,10.] to hold something in honour
 [VARĀH. BṚH. S. 50,6.]
-  <sub>DCS 4704 · attested</sub>
+  <sub>attested</sub>
 
 **3)** [VARĀH. BṚH. S. 50,6.] gut —, mit Beifall aufnehmen: *pūrvaṃ tu bālāḥ samudāharanti (samudāvahanti* die neuere Ausg.) *. vṛddhāśca paścātpratimānayanti sthāneṣu nityaṃ pratimānayanti ..*
 [HARIV. 8467.] *prīyamāṇo haladharaḥ saṃbandhaṃ pratimānayan*
@@ -48,7 +48,7 @@
 - **EN:** to receive well, with approval: *pūrvaṃ tu bālāḥ samudāharanti (samudāvahanti* the later Ausg.) *. vṛddhāśca paścātpratimānayanti sthāneṣu nityaṃ pratimānayanti ..*
 [HARIV. 8467.] *prīyamāṇo haladharaḥ saṃbandhaṃ pratimānayan*
 [MBH. 1,8015.] *tatpratimānyatāṃ prathamaḥ suhṛtpraṇayaḥ*
-  <sub>DCS 4704 · attested</sub>
+  <sub>attested</sub>
 
 **4)** [MṚCCH. 175,4.] beachten, berücksichtigen: *na jyeṣṭhatā na rājatvaṃ devānāṃ pratimānitam*
 [HARIV. 7310.]
@@ -57,4 +57,4 @@
 [HARIV. 7310.]
 - **EN:** [MṚCCH. 175,4.] to take note of, to take into consideration: *na jyeṣṭhatā na rājatvaṃ devānāṃ pratimānitam*
 [HARIV. 7310.]
-  <sub>DCS 4704 · attested</sub>
+  <sub>attested</sub>

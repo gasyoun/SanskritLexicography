@@ -10,4 +10,4 @@
 — *anvā* vgl. *anvāyātya* выше.
 - **EN:** *yat*¦ to be added at the end: vgl. *ayatant* .
 — *anvā* vgl. *anvāyātya* above.
-  <sub>DCS 9672 · attested</sub>
+  <sub>attested</sub>

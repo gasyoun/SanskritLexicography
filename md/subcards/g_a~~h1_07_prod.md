@@ -10,4 +10,4 @@
 [PRAB. 80,3.]
 - **EN:** — *prod* to begin to sing: *prodgītāṃ madhuparutaiḥ stutiṃ paṭhanto nṛtyanti (samīrāḥ)*
 [PRAB. 80,3.]
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>

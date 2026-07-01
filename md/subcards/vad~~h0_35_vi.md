@@ -16,7 +16,7 @@
  1) act. to contradict something: *yaste havaṃ vivadat*
 [AV. 3,3,6.] *tadubhayaṃ vyuditam* disputed
 [ŚĀṄKH. BR. 19,2.]
-  <sub>DCS 92 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) sich mit Jmd in Wortstreit einlassen über (loc.); med.
 [P. 1,3,47], Sch.
@@ -88,7 +88,7 @@
 [MBH. 12,9479.] to enter into dispute with, with acc. of the person: *na ca tānvivadeddhīmānākruṣṭaścāpi taiḥ sadā*
 [MĀRK. P. 34,93.] *vivaditāḥ* being in dispute: *rājyahetoḥ*
 [MBH. 13,556.]
-  <sub>DCS 92 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) sich unterhalten: *evaṃ vivadatostatra kṛṣṇanāradayoḥ*
 [HARIV. 10481.]
@@ -97,7 +97,7 @@
 [HARIV. 10481.]
 - **EN:** — 3) to converse: *evaṃ vivadatostatra kṛṣṇanāradayoḥ*
 [HARIV. 10481.]
-  <sub>DCS 92 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) die Stimme ertönen lassen: *hṛṣṭo vivadamānaśca kokilo māmivāhvayat*
 [R. 3,79,10.]
@@ -106,7 +106,7 @@
 [R. 3,79,10.]
 - **EN:** — 4) to let the voice sound, to raise the voice: *hṛṣṭo vivadamānaśca kokilo māmivāhvayat*
 [R. 3,79,10.]
-  <sub>DCS 92 · attested</sub>
+  <sub>attested</sub>
 
 **caus)** — Vgl. *vivāda* . — caus. einen Process einleiten, die Gerichtsverhandlung beginnen (antworten lassen
 [ST.]) [YĀJÑ. 2,12.] — intens. die Stimme laut, wiederholt erschallen lassen: *ya indra iva deveṣu goṣveti vivāvadat* (*ṛṣabhaḥ*)
@@ -118,4 +118,4 @@
 - **EN:** — Vgl. *vivāda* . — caus. to institute a legal proceeding, to commence judicial proceedings (cause to answer
 [ST.]) [YĀJÑ. 2,12.] — intens. to cause the voice to resound loudly and repeatedly: *ya indra iva deveṣu goṣveti vivāvadat* (*ṛṣabhaḥ*)
 [AV. 9,4,11.]
-  <sub>DCS 92 · attested</sub>
+  <sub>attested</sub>

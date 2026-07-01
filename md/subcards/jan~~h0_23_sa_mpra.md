@@ -25,7 +25,7 @@
 [PAÑCAT. I,69.] *īdṛśā bahavastatra samutpātā bhayāvahāḥ* — *saṃprajajñire*
 [R. 6,90,32.] to be present, to exist: *antyajo 'pi yadā sākṣī vivāde saṃprajāyate . na tatra yujyate divyam*
 [PAÑCAT. I,452.]
-  <sub>DCS 9250 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) wiedergeboren werden: *sārikā saṃprajāyate*
 [MBH. 13,5459.] [5508.]
@@ -34,7 +34,7 @@
 [MBH. 13,5459.] [5508.]
 - **EN:** — 2) to be born again: *sārikā saṃprajāyate*
 [MBH. 13,5459.] [5508.]
-  <sub>DCS 9250 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) *saṃprajātā* gekalbt habend: *˚tāsu goṣu*
 [GOBH. 3,6,4. 5.]
@@ -43,4 +43,4 @@
 [GOBH. 3,6,4. 5.]
 - **EN:** — 3) *saṃprajātā* having calved: *˚tāsu goṣu*
 [GOBH. 3,6,4. 5.]
-  <sub>DCS 9250 · attested</sub>
+  <sub>attested</sub>

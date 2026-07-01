@@ -119,7 +119,7 @@
 [BHĀG. P. 10,44,27.] *kāṣṭhakūṭāpahatacakṣus* gouged out, dug out
 [PAÑCAT. 81,25.] *˚cetana*
 [KATHĀS. 84,8] probably only a mistake for *apahṛta˚*.
-  <sub>DCS 526 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) ausschlagen, aushülsen (Reis)
 [KAUŚ. 2.] *anapahata*
@@ -131,7 +131,7 @@
 - **EN:** — 2) to hull, husk (rice)
 [KAUŚ. 2.] *anapahata*
 [19. 25.]
-  <sub>DCS 526 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) ausschiessen (als werthlos): *apahatā* von einer Kuh (krank Comm.)
 [KĀTY. ŚR. 15,3,34.]
@@ -140,15 +140,15 @@
 [KĀTY. ŚR. 15,3,34.]
 - **EN:** — 3) to reject, cull out (as worthless): *apahatā* of a cow (that is sick Comm.)
 [KĀTY. ŚR. 15,3,34.]
-  <sub>DCS 526 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — Vgl. *apaghana* fgg. und *apaha* fgg. — desid. s. *apajighāṃsu* .
 
 - **RU:** — Vgl. *apaghana* fgg. und *apaha* fgg. — desid. s. *apajighāṃsu* .
 - **EN:** — Vgl. *apaghana* fgg. and *apaha* fgg. — desid. s. *apajighāṃsu*.
-  <sub>DCS 526 · attested</sub>
+  <sub>attested</sub>
 
 **prefix-header)** — *apa*
 
 - **RU:** — *apa*
-  <sub>DCS 526 · attested</sub>
+  <sub>attested</sub>

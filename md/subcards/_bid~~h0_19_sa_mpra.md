@@ -10,4 +10,4 @@
 [MBH. 7,1083.]
 - **EN:** — *saṃpra*, partic. *˚bhinna* of an elephant whose forehead has opened and is streaming (in the rutting season)
 [MBH. 7,1083.]
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>

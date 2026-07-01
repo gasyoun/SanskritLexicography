@@ -22,7 +22,7 @@
 [4,16,7.] to strike off: the head
 [6,26,3.] *parāhanaddrauṇivarāṅgabhūṣaṇam*
 [MBH. 8,812.]
-  <sub>DCS 36 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) betasten: *yadvo 'śuddhāḥ parājaghnuḥ*
 [VS. 1,13.]
@@ -37,7 +37,7 @@
 [VS. 1,13.]
 [ŚAT. BR. 1,1,3,12.] *somam*
 [3,3,2,2.] [9,4,1.]
-  <sub>DCS 36 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) partic. *˚hata = āviddha*
 [MED. dh. 28.]
@@ -60,7 +60,7 @@
 [H. 265.]
 - **EN:** — 3) partic. *˚hata = āviddha*
 [MED. dh. 28.]
-  <sub>DCS 36 · attested</sub>
+  <sub>attested</sub>
 
 **3a)** a) ab-, weggeschlagen, vertrieben: *payodā vāyuvegaparāhatāḥ*
 [MBH. 3,12889.] *daivaṃ matpauruṣaparāhatam*
@@ -83,4 +83,4 @@
 **cross-ref)** — Vgl. *parāhati* .
 
 - **RU:** — Vgl. *parāhati* .
-  <sub>DCS 36 · attested</sub>
+  <sub>attested</sub>

@@ -85,7 +85,7 @@
 [BHĀG. P. 8,3,23.] *jālaniryātadhūpa*
 [10,71,33.] *tanmukhaniryātaṃ yaśaḥ*
 [4,31,24.]
-  <sub>DCS 357 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) vergehen, verstreichen: *hāyanāni dinānīva tadānīṃ mama niryayuḥ*
 [Spr. 5401.]
@@ -94,7 +94,7 @@
 [Spr. 5401.]
 - **EN:** — 2) to pass, elapse: *hāyanāni dinānīva tadānīṃ mama niryayuḥ*
 [Spr. 5401.]
-  <sub>DCS 357 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) bereinigen (ein Feld)
 [MBH. 12,3586]; vgl. *niryātar* (auch in den Nachträgen).
@@ -103,7 +103,7 @@
 [MBH. 12,3586]; vgl. *niryātar* (также в Дополнениях).
 - **EN:** — 3) to clear (a field)
 [MBH. 12,3586]; vgl. *niryātar* (also in the Addenda).
-  <sub>DCS 357 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) bei Seite legen: *āpadarthaṃ ca niryātaṃ (= dattaṃ*
 [NĪLAK.]) *dhanaṃ tviha vivardhayet* (so die [ed. Bomb.] st. *rājā na iha vindate* der [ed. Calc.])
@@ -115,7 +115,7 @@
 - **EN:** — 4) to lay aside: *āpadarthaṃ ca niryātaṃ (= dattaṃ*
 [NĪLAK.]) *dhanaṃ tviha vivardhayet* (thus the [ed. Bomb.] st. *rājā na iha vindate* of the [ed. Calc.])
 [MBH. 12,3283.]
-  <sub>DCS 357 · attested</sub>
+  <sub>attested</sub>
 
 **5)** — Vgl. *niryā* fg. und *niryāti* . — caus.
  1) hinausgehen —, hinausziehen lassen: *senām*
@@ -138,7 +138,7 @@
 [BHĀG. P. 3,21,17.]
 - **EN:** — 2) to remove, do away with: *niryāpitadehadharma*
 [BHĀG. P. 3,21,17.]
-  <sub>DCS 357 · attested</sub>
+  <sub>attested</sub>
 
 **8)** — 3) beginnen, unternehmen: *niryāpito mahotsavaḥ*
 [BHĀG. P. 4,3,8.]
@@ -147,7 +147,7 @@
 [BHĀG. P. 4,3,8.]
 - **EN:** — 3) to begin, undertake: *niryāpito mahotsavaḥ*
 [BHĀG. P. 4,3,8.]
-  <sub>DCS 357 · attested</sub>
+  <sub>attested</sub>
 
 **9)** — Vgl. *niryāpaṇa* .
 
@@ -159,12 +159,12 @@
 - **EN:** — Vgl. *niryāpaṇa* .
 
 — desid. s. *niryiyāsu* .
-  <sub>DCS 357 · attested</sub>
+  <sub>attested</sub>
 
 **caus_intro)** — Vgl. *niryā* fg. und *niryāti* . — caus.
 
 - **RU:** — Vgl. *niryā* fg. и *niryāti* . — caus.
-  <sub>DCS 357 · attested</sub>
+  <sub>attested</sub>
 
 **caus_1)** 1) hinausgehen —, hinausziehen lassen: *senām*
 [MBH. 5,5702.]
@@ -177,4 +177,4 @@
 [R. 7,64,18.] выгонять: *śivirāt*
 [BHĀG. P. 1,7,56.] *svapuryāḥ*
 [3,1,41.]
-  <sub>DCS 357 · attested</sub>
+  <sub>attested</sub>

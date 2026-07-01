@@ -27,7 +27,7 @@
 [MBH. 7,4656.] *vācaśca hṛdayacchidaḥ*
 [R. 5,37,10.] *marmacchido vedanāḥ*
 [ŚĀNTIŚ. 1,16.] Vgl. *ukha˚, keśa˚, pakṣa˚, vana˚* .
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **1b)** — b) zu-Grunde richtend, vernichtend, entfernend: *jīvita˚*
 [MBH. 5,1809.]
@@ -54,7 +54,7 @@
 [6,35.] *duḥkha˚*
 [4,8,23.] *mārgeṇādhvaklamacchidā*
 [VID. 33.] Vgl. *darpa˚, paṅka˚* .
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) _m._ Divisor; Nenner eines Bruchs
 [COLEBR. Alg. 35.]
@@ -63,4 +63,4 @@
 [COLEBR. Alg. 35.]
 - **EN:** — 3) _m._ divisor; denominator of a fraction
 [COLEBR. Alg. 35.]
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>

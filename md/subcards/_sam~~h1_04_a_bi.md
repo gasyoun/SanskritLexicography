@@ -10,4 +10,4 @@
 [MBH. 12,6020.]
 - **EN:** — *abhi* to cease, to subside: *kutsā saṃjāyate, abhiśāmyati*
 [MBH. 12,6020.]
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>

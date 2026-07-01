@@ -19,4 +19,4 @@
 [KATHĀS. 40,115.] *sarvānrājñaḥ kulataḥ saṃniśāmya*
 [MBH. 5,7418.] *āyavyayau vipulau saṃniśāmya*
 [12,4389.]
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>

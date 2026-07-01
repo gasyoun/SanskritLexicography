@@ -10,4 +10,4 @@
 [R. 5,36,61.]
 - **EN:** — *anupra* to follow someone (acc.) into exile: *anupravrajito rāmam*
 [R. 5,36,61.]
-  <sub>DCS 1202 · attested</sub>
+  <sub>attested</sub>

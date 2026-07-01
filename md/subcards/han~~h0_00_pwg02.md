@@ -287,4 +287,4 @@ Schol.
 [TRIK. 3,1,25.]
 [ARYABH. 2,7. 19.] [Journ. of the Am. Or. S. 6,558.] [VARĀH. BṚH. S. 8,20.] [BṚH. 7,4. 26 (24),8.] [GAṆIT.] [MADHYAM. 4.]
 — Vgl. *ahata, ayo˚, putra˚, mano˚, yūtha˚, vāta˚, sadyo˚, su˚* и *vadh*.
-  <sub>DCS 10052 · mixed</sub>
+  <sub>mixed</sub>

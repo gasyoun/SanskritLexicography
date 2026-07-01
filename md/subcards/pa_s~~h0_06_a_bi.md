@@ -40,4 +40,4 @@
 [3,46,11.] *bhūteṣu sarveṣvabhipaśyatāṃ* (gen. pl.) *tava* (st. *tvām!*)
 [BHĀG. P. 4,6,46.] to know
 [CHĀND. UP. 4,3,6.]
-  <sub>DCS 13 · attested</sub>
+  <sub>attested</sub>

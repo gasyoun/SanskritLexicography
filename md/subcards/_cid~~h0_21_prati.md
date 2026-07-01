@@ -16,4 +16,4 @@
 (v. l. *pracchidya*)
 [ŚĀṄKH. ŚR. 1,6,6.] to answer someone (acc.) with hewing, splitting u. s. w.: *tāṃśca sātyakiḥ . nārācaiḥ praticiccheda*
 [MBH. 7,4848.]
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>

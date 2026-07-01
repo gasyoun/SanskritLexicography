@@ -16,4 +16,4 @@
 [ṚV. 3,62,9.] *yāvatte 'bhi vipaśyāmi bhūme sūryeṇa medinā*
 [AV. 12,1,33.] *agne vi paśya bṛhatābhi rāyā* 'look hither'
 [ṚV. 3,23,2.] — [ŚAT. BR. 1,1,2,21.] [NIR. 7,22.] [10,22.] [46.] [12,24.]
-  <sub>DCS 6 · attested</sub>
+  <sub>attested</sub>

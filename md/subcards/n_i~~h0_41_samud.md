@@ -19,7 +19,7 @@
 [BHĀG. P. 3,13,16.] *tasya (ripoḥ) saṃśamanāyāśu tatkulīnaṃ samunnayet*
 [KĀM. NĪTIS. 8,66. 9,70.] *samunnītā (mati)*
 [MBH. 14,638.]
-  <sub>DCS 2376 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) herausbringen, erschliessen: *ityādyanyatsamunneyaṃ svayaṃ bhāvitabuddhibhiḥ*
 [SĀH. D. 75,8.]
@@ -34,7 +34,7 @@
 [SĀH. D. 75,8.]
 [RĀJA-TAR. 5,139] (where at Anf. *gacchatāmnāya˚* is probably to be read).
 [H. 257.]
-  <sub>DCS 2376 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) abtragen
 
@@ -52,4 +52,4 @@
 (a debt): *ṛṇamasminsamunnayatyamṛtatvaṃ ca gacchati* Cit. from the
 [ŚRUTI] at
 [KULL.] to [M. 9,107.]
-  <sub>DCS 2376 · attested</sub>
+  <sub>attested</sub>

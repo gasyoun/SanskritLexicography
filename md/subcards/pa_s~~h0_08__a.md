@@ -10,4 +10,4 @@
 [AV. 4,20,1.]
 - **EN:** — *ā* to look at
 [AV. 4,20,1.]
-  <sub>DCS 2 · attested</sub>
+  <sub>attested</sub>

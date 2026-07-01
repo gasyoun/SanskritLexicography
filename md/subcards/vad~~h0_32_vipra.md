@@ -16,4 +16,4 @@
 [P. 1,3,50], Sch.
 [VOP. 23,42.]
 [BHAṬṬ. 8,30.]
-  <sub>DCS 1 · attested</sub>
+  <sub>attested</sub>

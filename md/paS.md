@@ -289,7 +289,7 @@ z. B. [ŚĀK. 5,16.] [17.] [24,8.] [27,6.] [30,15.] [97,15.] [111,13.] [20.]
 [3074.] [3281.] [7855.] [3,2363.] [2538.] [10069.] [4,171.] [5,7094.] [7,773.] [8,3044.] *paśyadhvam — mahātmanaḥ . mayi bhaktiṃ parām*
 [13,928.] [14,806.] [N. 23,4.] [HARIV. 2594.] [R. 1,41,9.] [2,47,4.] [RĀJA-TAR. 4,385.] [BHĀG. P. 4,26,24.] [25.] [9,16,2.] *tasya buddhiriyaṃ tvāsīdahaṃ paśye vasuṃdharām . atiramyavanodyānām*
 [MĀRK. P. 61,7.] to see in astrol. sense thus v. a. to be within sight (in adspectu): *lagnamindāvapaśyati* when the moon does not see the L. (i.e. is not visible to it)
-  <sub>DCS 4733 · attested</sub>
+  <sub>attested</sub>
 
 **1a)** [VARĀH. BṚH. S. 5,1.] *svapnān* ein Traumgesicht sehen
 [R. 2,4,16.] *na paśyāmi* ich sehe nicht mehr
@@ -478,7 +478,7 @@ z. B. [ŚĀK. 5,16.] [17.] [24,8.] [27,6.] [30,15.] [97,15.] [111,13.] [20.]
 [ŚAT. BR. 7,5,1,25.] *bhūmestatspāśayitvāya no brūhi*
 [6,3,3,11.] partic. *spāśita = spaṣṭa*
 [P. 7,2,27.]
-  <sub>DCS 4733 · attested</sub>
+  <sub>attested</sub>
 
 ## paś
 
@@ -498,7 +498,7 @@ z. B. [ŚĀK. 5,16.] [17.] [24,8.] [27,6.] [30,15.] [97,15.] [111,13.] [20.]
 [ṚV. 1,94,7.] *sahasrākṣā ati paśyanti bhūmim*
 [AV. 4,16,4.] [5,2.] [13,1,45.] *tataḥ paraṃ nāti paśyāmi kiṃ cana*
 [18,2,32.]
-  <sub>DCS 4733 · attested</sub>
+  <sub>attested</sub>
 
 ## paś
 
@@ -620,7 +620,7 @@ z. B. [ŚĀK. 5,16.] [17.] [24,8.] [27,6.] [30,15.] [97,15.] [111,13.] [20.]
 [Spr. 1848.]
 [BHĀG. P. 2,4,21.] [5,14,5.] *anuspaṣṭa* noticed: *anuspaṣṭo bhavatyeṣo asya yo asmai revānna sunoti somam*
 [ṚV. 10,160,4.]
-  <sub>DCS 4733 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) Jmd bedenken mit: *brāhmaṇānagrahārairvā yathāvadanupaśyasi*
 [MBH. 15,679.] *sugrīvam — bhavānparigrahaiḥ prāptairyathāvadanupaśyatu*
@@ -641,7 +641,7 @@ z. B. [ŚĀK. 5,16.] [17.] [24,8.] [27,6.] [30,15.] [97,15.] [111,13.] [20.]
 [ṚV. 10,14,1.]
 [NIR. 10,20.]
 [AV. 6,28,3.]
-  <sub>DCS 4733 · attested</sub>
+  <sub>attested</sub>
 
 ## paś
 
@@ -670,7 +670,7 @@ z. B. [ŚĀK. 5,16.] [17.] [24,8.] [27,6.] [30,15.] [97,15.] [111,13.] [20.]
 [SADDH. P. 4,21,b.] *dhiyā samanupaśyanti tadgatāḥ saviturgatim*
 [MBH. 12,7425.] to consider as: *svenānumānena paraṃ sādhuṃ samanupaśyati*
 [1,5037.] [12,13864.]
-  <sub>DCS 4733 · attested</sub>
+  <sub>attested</sub>
 
 ## paś
 
@@ -687,7 +687,7 @@ z. B. [ŚĀK. 5,16.] [17.] [24,8.] [27,6.] [30,15.] [97,15.] [111,13.] [20.]
 - **EN:** — *antar* to look in between, to look into: *antaḥ paśyanti raśmibhiḥ*
 [ṚV. 1,132,3.] *antaḥ paśyanti vṛjinota sādhu*
 [2,27,3.]
-  <sub>DCS 4733 · attested</sub>
+  <sub>attested</sub>
 
 ## abhipaś
 
@@ -731,7 +731,7 @@ z. B. [ŚĀK. 5,16.] [17.] [24,8.] [27,6.] [30,15.] [97,15.] [111,13.] [20.]
 [3,46,11.] *bhūteṣu sarveṣvabhipaśyatāṃ* (gen. pl.) *tava* (st. *tvām!*)
 [BHĀG. P. 4,6,46.] to know
 [CHĀND. UP. 4,3,6.]
-  <sub>DCS 13 · attested</sub>
+  <sub>attested</sub>
 
 ## avapaś
 
@@ -757,7 +757,7 @@ z. B. [ŚĀK. 5,16.] [17.] [24,8.] [27,6.] [30,15.] [97,15.] [111,13.] [20.]
 *ataḥ samudramudvataścikitvā ava paśyata*
 [8,6,29.] [10,179,1.] [AV. 18,4,37.] med. to descry, to live to see: *puṣṭiṃ so aghnyānāṃ sve goṣṭhe 'va paśyate*
 [AV. 9,4,19.]
-  <sub>DCS 17 · attested</sub>
+  <sub>attested</sub>
 
 ## āpaś
 
@@ -771,7 +771,7 @@ z. B. [ŚĀK. 5,16.] [17.] [24,8.] [27,6.] [30,15.] [97,15.] [111,13.] [20.]
 [AV. 4,20,1.]
 - **EN:** — *ā* to look at
 [AV. 4,20,1.]
-  <sub>DCS 2 · attested</sub>
+  <sub>attested</sub>
 
 ## utpaś
 
@@ -806,7 +806,7 @@ z. B. [ŚĀK. 5,16.] [17.] [24,8.] [27,6.] [30,15.] [97,15.] [111,13.] [20.]
 [MEGH. 102.]
 [ŚIŚ. 1,15.]
 — Vgl. *utpaśya* .
-  <sub>DCS 7 · attested</sub>
+  <sub>attested</sub>
 
 ## parāpaś
 
@@ -838,7 +838,7 @@ z. B. [ŚĀK. 5,16.] [17.] [24,8.] [27,6.] [30,15.] [97,15.] [111,13.] [20.]
 [ŚAT. BR. 6,3,3,6.] [9,5,1,9.] *nadyai pāram*
 [11,1,6,6.] [14,1,3,7.] *yamadūrātparāpaśyet*
 [KĀTY. ŚR. 25,4,1.]
-  <sub>DCS 7 · attested</sub>
+  <sub>attested</sub>
 
 ## paripaś
 
@@ -898,7 +898,7 @@ z. B. [ŚĀK. 5,16.] [17.] [24,8.] [27,6.] [30,15.] [97,15.] [111,13.] [20.]
 [PAÑCAT. 199,10] ошибочно вместо *paripacyate* .
 - **EN:** *pari* to survey, look over: *pari spaśo varuṇasya paśyanti rodasī*
 [ṚV. 7,87,3.]
-  <sub>DCS 42 · attested</sub>
+  <sub>attested</sub>
 
 **2)** [AV. 11,2,25.] *bāhyāntaḥ paripaśyatām* (gen. pl.) von aussen und innen betrachten
 [PRAB. 71,6.] bemerken, sehen: *ye vājinaṃ paripaśyanti pakvam*
@@ -1045,7 +1045,7 @@ z. B. [ŚĀK. 5,16.] [17.] [24,8.] [27,6.] [30,15.] [97,15.] [111,13.] [20.]
 [MBH. 13,31.] *nānyāṃ gatiṃ prapaśyāmi*
 [R. GORR. 1,60,27] ([58,24] [SCHL.]). *nāhaṃ bhayaṃ prapaśyāmi kutaścitte*
 [2,76,23.] [3,43,39.] *evaṃ tvahaṃ prapaśyāmi na tvaṃ rāmasya rākṣasa . samarthaḥ saṃyuge sthātuṃ muhūrtamapi sāyudhaḥ ..*
-  <sub>DCS 195 · attested</sub>
+  <sub>attested</sub>
 
 **2)** [27,18.] sehen, schauen, gewahr werden, erkennen: *uta yadyandho bhavati praiva paśyati*
 [TS. 2,2,4,4.] *cakṣurbhyāṃ na prapaśyāmi*
@@ -1122,7 +1122,7 @@ z. B. [ŚĀK. 5,16.] [17.] [24,8.] [27,6.] [30,15.] [97,15.] [111,13.] [20.]
 [ṚV. 10,113,4.]
 - **EN:** *abhipra* to look out toward, to look around for: *prāpaśyadvīro abhi pauṃsyaṃ raṇam*
 [ṚV. 10,113,4.]
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>
 
 ## samprapaś
 
@@ -1149,7 +1149,7 @@ z. B. [ŚĀK. 5,16.] [17.] [24,8.] [27,6.] [30,15.] [97,15.] [111,13.] [20.]
 - **EN:** *saṃpra* to see, perceive, behold: *yadyuṣmāniha — vimuktānsaṃprapaśyāmi*
 [MBH. 3,15050.] [7,6194.] *jīvo niṣkrāntamātmānaṃ śarīrātsaṃprapaśyati*
 [14,581.] *tatsarvaṃ dharmavīryeṇa yathāvatsaṃprapaśyati*
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>
 
 **2)** [R. 1,3,4.] ansehen, betrachten: *tathā ca vidvāṃsastaṃ saṃprapaśyanti buddhyā*
 - **EN:** [R. 1,3,4.] to look at, regard: *tathā ca vidvāṃsastaṃ saṃprapaśyanti buddhyā*
@@ -1205,7 +1205,7 @@ z. B. [ŚĀK. 5,16.] [17.] [24,8.] [27,6.] [30,15.] [97,15.] [111,13.] [20.]
 [LĀṬY. 4,11,10.] *anupaśya yathā pūrve pratipaśya yathāpare*
 [KAṬHOP. 1,6.] *dakṣiṇasyāṃ diśi yamaṃ pratyapaśyaṃ vyavasthitam*
 [MBH. 3,12005.] [7,3944.] [8,1242.] [12,9760.] [16,162.]
-  <sub>DCS 19 · attested</sub>
+  <sub>attested</sub>
 
 **2)** [N. 12,18.] sehen so v. a. kennen: *nahi — sainye 'sminpratipaśyāmi ya enaṃ viṣahedyudhi*
 - **EN:** [N. 12,18.], 'to see', so v. a. 'to know': *nahi — sainye 'sminpratipaśyāmi ya enaṃ viṣahedyudhi*
@@ -1254,7 +1254,7 @@ z. B. [ŚĀK. 5,16.] [17.] [24,8.] [27,6.] [30,15.] [97,15.] [111,13.] [20.]
 [4,3,11,3.] [AV. 19,53,6.] *yāvatsūryo vipaśyati*
 [10,11,34.] [KAṬHOP. 4,6] (med.). *manasaiva pure devaḥ pūrvarūpaṃ vipaśyati*
 [BHĀG. P. 6,1,48.] *vipaśyatāṃ* (gen. pl.) *lokavidhim*
-  <sub>DCS 49 · attested</sub>
+  <sub>attested</sub>
 
 **2)** [7,2,37.] bemerken, wahrnehmen: *dehaṃ ca taṃ na caramaḥ sthitamutthitaṃ vā siddho vipaśyati*
 [3,28,37.] *guṇānvipaśyantyuta vā tamaśca*
@@ -1286,7 +1286,7 @@ z. B. [ŚĀK. 5,16.] [17.] [24,8.] [27,6.] [30,15.] [97,15.] [111,13.] [20.]
 - **EN:** *anuvi* to catch sight of, to view: *tameṣa udyannanuvipaśyati*
 [ŚAT. BR. 6,7,2,4.] *te 'surānrātriṃ tamaḥ praviṣṭānnānuvyapaśyan*
 [PAÑCAV. BR. 9,1,1.]
-  <sub>DCS 2 · attested</sub>
+  <sub>attested</sub>
 
 ## abhivipaś
 
@@ -1306,7 +1306,7 @@ z. B. [ŚĀK. 5,16.] [17.] [24,8.] [27,6.] [30,15.] [97,15.] [111,13.] [20.]
 [ṚV. 3,62,9.] *yāvatte 'bhi vipaśyāmi bhūme sūryeṇa medinā*
 [AV. 12,1,33.] *agne vi paśya bṛhatābhi rāyā* 'look hither'
 [ṚV. 3,23,2.] — [ŚAT. BR. 1,1,2,21.] [NIR. 7,22.] [10,22.] [46.] [12,24.]
-  <sub>DCS 6 · attested</sub>
+  <sub>attested</sub>
 
 ## sampaś
 
@@ -1403,7 +1403,7 @@ to catch sight of, perceive, see, recognize: *mahānti cānyāni sarāṃsi pār
 [YĀJÑ. 3,64.] *yasya saṃpaśyataḥ* 'before whose eyes'
 [M. 7,143.]
 [HARIV. 7464.]
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) überzählen, recapituliren, zusammenzählen: *evaṃ yā iṣṭā devatā bhavanti tāḥ saṃpaśyatyasau havirajuṣatāsau havirajuṣateti*
 [ŚAT. BR. 1,9,1,10.] [2,2,3,7.] [1,7,3,10.] [4,3,5,20.] berechnen: *ṣaḍahairhi māsānsaṃpaśyanti*
@@ -1419,7 +1419,7 @@ to catch sight of, perceive, see, recognize: *mahānti cānyāni sarāṃsi pār
 [MĀRK. P. 39,31.] *prasthitaṃ vanavāsāya saṃpaśya kuśalena mām*
 [R. GORR. 2,35,20.] *saṃpaśyemaṃ bhogacayaṃ mahāntaṃ sahāsmābhirdhṛtarāṣṭrasya rājñaḥ*
 [MBH. 5,743.] *alaṃkṛtaśca saṃpaśyedāyudhīyaṃ punarjanam . vāhanāni ca sarvāṇi śastrāṇyābharaṇāni ca ..*
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>
 
 **3)** [M. 7,222.] Jmd sehen so v. a. mit Jmd zusammenkommen, Jmd vor sich lassen: *uttiṣṭha śakra saṃpaśya devarṣīṃśca samāgatām*
 [MBH. 5,498.]
@@ -1469,7 +1469,7 @@ to catch sight of, perceive, see, recognize: *mahānti cānyāni sarāṃsi pār
 [ŚAT. BR. 1,9,1,10.] [2,2,3,7.] [1,7,3,10.] [4,3,5,20.] to calculate: *ṣaḍahairhi māsānsaṃpaśyanti*
 [TS. 7,5,6,1.] *ṛtubhirhyeva garbhe santaṃ saṃpaśyantyṛtubhirjātam*
 [ŚAT. BR. 7,4,2,31.]
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>
 
 ## paś
 
@@ -1480,7 +1480,7 @@ to catch sight of, perceive, see, recognize: *mahānti cānyāni sarāṃsi pār
 
 - **RU:** 2. *paś*¦ nom. s. u. 2. *pad* 1. в конце.
 - **EN:** 2. *paś*¦ nom. s. u. 2. *pad* 1. at the end.
-  <sub>DCS 4733 · lexicographic</sub>
+  <sub>lexicographic</sub>
 
 ## paś
 
@@ -1491,7 +1491,7 @@ to catch sight of, perceive, see, recognize: *mahānti cānyāni sarāṃsi pār
 
 - **RU:** 3. *paś*¦, *pāśayati* s. *pāśay* .
 - **EN:** 3. *paś*¦, *pāśayati* s. *pāśay*.
-  <sub>DCS 4733 · lexicographic</sub>
+  <sub>lexicographic</sub>
 
 ## paś
 
@@ -1511,7 +1511,7 @@ to catch sight of, perceive, see, recognize: *mahānti cānyāni sarāṃsi pār
 [P. 7,4,86.] intens. *pampaśyate, pampaśīti* ebend.
 [VOP. 20,8.] According to the Schol., a [KĀTY.] Sautra-root; vgl.
 [WESTERG.] in [DHĀTUP. 21,22.]
-  <sub>DCS 4733 · lexicographic</sub>
+  <sub>lexicographic</sub>
 
 ## paś
 
@@ -1531,7 +1531,7 @@ to catch sight of, perceive, see, recognize: *mahānti cānyāni sarāṃsi pār
 [Sp. 602, Z. 1] add further
 [Spr. 4310]; [Z. 26] add further: *anarthamarthataḥ paśyannarthaṃ caivāpyanarthataḥ* taking loss for gain and gain for loss
 [Spr. 3454.]
-  <sub>DCS 4733 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — *pra* halten für: *abhiśastaṃ prapaśyanti daridraṃ pārśvataḥ sthitam*
 [MBH. 12,214.]
@@ -1540,13 +1540,13 @@ to catch sight of, perceive, see, recognize: *mahānti cānyāni sarāṃsi pār
 [MBH. 12,214.]
 - **EN:** — *pra* to take for, regard as: *abhiśastaṃ prapaśyanti daridraṃ pārśvataḥ sthitam*
 [MBH. 12,214.]
-  <sub>DCS 4733 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — *prati* vgl. *pratispaśa, pratispāśana* .
 
 - **RU:** — *prati* vgl. *pratispaśa, pratispāśana* .
 - **EN:** — *prati* vgl. *pratispaśa, pratispāśana*.
-  <sub>DCS 4733 · attested</sub>
+  <sub>attested</sub>
 
 ## paś
 
@@ -1560,7 +1560,7 @@ to catch sight of, perceive, see, recognize: *mahānti cānyāni sarāṃsi pār
 [Spr. (II) 3380.]
 - **EN:** 1. *paś*¦ with *prati* to live through, experience: *nāpriyaṃ pratipaśyeyuḥ*
 [Spr. (II) 3380.]
-  <sub>DCS 4733 · attested</sub>
+  <sub>attested</sub>
 
 ## paś
 
@@ -1572,115 +1572,115 @@ to catch sight of, perceive, see, recognize: *mahānti cānyāni sarāṃsi pār
 - **RU:** — 1〉 видеть, быть способным видеть, иметь зрение. С *na* не видеть, быть слепым [Spr. 7826].
 - **EN:** **1.** √*paś*; only present stem *paśya* Act. Med. (mostly metrical).
 — 1) to see, to be able to see, to have the use of one's eyes. With *na* not to see, to be blind [Spr. 7826].
-  <sub>DCS 4733 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2〉 sehen erblicken, wahrnehmen, bemerken, gewahrwerden.
 
 - **RU:** — 2〉 увидеть, заметить, воспринять, обнаружить.
 - **EN:** — 2) to see, catch sight of, perceive, notice, become aware of.
-  <sub>DCS 4733 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3〉 hinsehen, ansehen, anschauen, betrachten, beschauen.
 
 - **RU:** — 3〉 смотреть, взирать, созерцать, рассматривать, обозревать.
 - **EN:** — 3) to look at, view, regard, contemplate, behold.
-  <sub>DCS 4733 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4〉 zusehen. *tasya paśyataḥ* so v. a. vor seinen Augen.
 
 - **RU:** — 4〉 наблюдать. *tasya paśyataḥ* так v. a. на его глазах.
 - **EN:** — 4) to look on. *tasya paśyataḥ* thus v. a. before his eyes.
-  <sub>DCS 4733 · attested</sub>
+  <sub>attested</sub>
 
 **5)** — 5〉 Jmd sehen. so v. a. vor sein Angesicht kommen lassen, empfangen.
 
 - **RU:** — 5〉 видеть кого-л.. так v. a. допустить к своему лицу, принять (аудиенция).
 - **EN:** — 5) to see someone. thus v. a. to summon into one's presence, to receive.
-  <sub>DCS 4733 · attested</sub>
+  <sub>attested</sub>
 
 **6)** — 6〉 Jmd sehen. so v. a. vor Jmds Angesicht erscheinen, vor Jmd erscheinen, sich Jmd vorstellen, Jmd seine Aufwartung machen.
 
 - **RU:** — 6〉 видеть кого-л.. так v. a. явиться пред лицом кого-л., предстать перед кем-л., представиться кому-л., засвидетельствовать почтение кому-л..
 - **EN:** — 6) to see someone. thus v. a. to appear before someone's presence, to appear before someone, to present oneself to someone, to pay someone a visit.
-  <sub>DCS 4733 · attested</sub>
+  <sub>attested</sub>
 
 **7)** — 7〉 in der Astrol. so v. a. in adspectu stehen.
 
 - **RU:** — 7〉 в Astrol. так v. a. находиться в поле зрения.
 - **EN:** — 7) in the Astrol. thus v. a. to stand in adspectu.
-  <sub>DCS 4733 · attested</sub>
+  <sub>attested</sub>
 
 **8)** — 8〉 sich umsehen nach, aufsuchen.
 
 - **RU:** — 8〉 оглядываться в поисках, разыскивать.
 - **EN:** — 8) to look around for, to seek out.
-  <sub>DCS 4733 · attested</sub>
+  <sub>attested</sub>
 
 **9)** — 9〉 finden.
 
 - **RU:** — 9〉 находить.
 - **EN:** — 9) to find.
-  <sub>DCS 4733 · attested</sub>
+  <sub>attested</sub>
 
 **10)** — 10〉 zu sehen bekommen so v. a. erleben, theilhaftig werden.
 
 - **RU:** — 10〉 увидеть (в смысле: получить возможность видеть) так v. a. пережить, удостоиться.
 - **EN:** — 10) to get to see thus v. a. to experience, to become partaker of.
-  <sub>DCS 4733 · attested</sub>
+  <sub>attested</sub>
 
 **11)** — 11〉 ansehen für, erkennen als, halten für, betrachten als; mit doppeltem Acc. Statt des Zweiten Acc. auch _Adv._ auf *vat*. [140,26]; statt des ersten Acc. ausnahmsweise Loc. (v. l. Acc.), statt des zweiten ein _Adv._ auf *vat*.
 
 - **RU:** — 11〉 считать чем-л., признавать чем-л., принимать за, рассматривать как; с двойным Acc. Вместо второго Acc. также _Adv._ при *vat*. [140,26]; вместо первого Acc. в виде исключения Loc. (v. l. Acc.), вместо второго — _Adv._ при *vat*.
 - **EN:** — 11) to regard as, recognize as, take for, consider as; with double Acc. — in place of the second Acc. also _Adv._ with *vat*. [140,26]; in place of the first Acc. exceptionally Loc. (v. l. Acc.), in place of the second a _Adv._ with *vat*.
-  <sub>DCS 4733 · attested</sub>
+  <sub>attested</sub>
 
 **12)** — 12〉 mit dem geistigen Auge erschauen (von Sehern und Dichtern); daher auch erfinden (z. B. Opfergebräuche). *svapnān* Traumgesichte sehen.
 
 - **RU:** — 12〉 созерцать духовным взором (о провидцах и поэтах); отсюда также изобретать (z. B. жертвенные обряды). *svapnān* видеть вещие сны.
 - **EN:** — 12) to behold with the spiritual eye (of seers and poets); hence also to invent (z. B. sacrificial rites). *svapnān* to see dream-visions.
-  <sub>DCS 4733 · attested</sub>
+  <sub>attested</sub>
 
 **13)** — 13〉 mit und ohne ([16,10]) *sādhu* einsehen, die richtige Einsicht haben.
 
 - **RU:** — 13〉 с ([16,10]) *sādhu* и без него понимать, иметь правильное разумение.
 - **EN:** — 13) with and without ([16,10]) *sādhu* to perceive, to have right insight.
-  <sub>DCS 4733 · attested</sub>
+  <sub>attested</sub>
 
 **14)** — 14〉 sehen. so v. a. kennen.
 
 - **RU:** — 14〉 видеть. так v. a. знать.
 - **EN:** — 14) to see. thus v. a. to know.
-  <sub>DCS 4733 · attested</sub>
+  <sub>attested</sub>
 
 **15)** — 15〉 in Betracht ziehen, erwägen, prüfen.
 
 - **RU:** — 15〉 принимать во внимание, взвешивать, рассматривать.
 - **EN:** — 15) to take into consideration, to weigh, to examine.
-  <sub>DCS 4733 · attested</sub>
+  <sub>attested</sub>
 
 **16)** — 16〉 voraussehen.
 
 - **RU:** — 16〉 предвидеть.
 - **EN:** — 16) to foresee.
-  <sub>DCS 4733 · attested</sub>
+  <sub>attested</sub>
 
 **17)** — 17〉 *paśyāmi* in den Satz eingeschoben, so v. a. ich sehe es, ich bin davon überzeugt.
 
 - **RU:** — 17〉 *paśyāmi* вставленное в предложение, так v. a. я вижу это, я убеждён в этом.
 - **EN:** — 17) *paśyāmi* inserted into the sentence, thus v. a. I see it, I am convinced of it.
-  <sub>DCS 4733 · attested</sub>
+  <sub>attested</sub>
 
 **18)** — 18〉 *paśya* sich und **paśyata* sehet interjectionsartig in den Satz eingeschoben oder vorangestellt, um die Aufmerksamkeit zu erregen. *paśya* leitet in prosaischen Schriften häufig einen Vers ein. Vgl. *spaś*.
 
 - **RU:** — 18〉 *paśya* смотри и **paśyata* смотрите вставляется в предложение или ставится перед ним в качестве междометия для привлечения внимания . *paśya* часто вводит стих в прозаических произведениях. Vgl. *spaś*.
 - **EN:** — 18) *paśya* behold and **paśyata* see inserted interjection-like into the sentence or placed at its head, to draw attention . *paśya* frequently introduces a verse in prose writings. Vgl. *spaś*.
-  <sub>DCS 4733 · attested</sub>
+  <sub>attested</sub>
 
 **19)** — Mit *ati* hinausschauen über, durchschauen.
 
 - **RU:** — С *ati* смотреть поверх, видеть насквозь.
 - **EN:** — With *ati* to look out over, to see through.
-  <sub>DCS 4733 · attested</sub>
+  <sub>attested</sub>
 
 **20)** — Mit *anu*
 — 1〉 hinblicken. *pṛṣṭhatas* sich umsehen. *devasyānupaśyataḥ* so v. a. vor den Augen des Gottes.
@@ -1691,37 +1691,37 @@ to catch sight of, perceive, see, recognize: *mahānti cānyāni sarāṃsi pār
 
 - **RU:** — 2〉 увидеть, воспринять, обнаружить, найти. *pratyakṣam* видеть перед собой.
 - **EN:** — 2) to catch sight of, perceive, discover, find. *pratyakṣam* to see before oneself.
-  <sub>DCS 4733 · attested</sub>
+  <sub>attested</sub>
 
 **22)** — 3〉 hinterher —, wieder sehen.
 
 - **RU:** — 3〉 видеть вслед, снова видеть.
 - **EN:** — 3) to see afterward —, to see again.
-  <sub>DCS 4733 · attested</sub>
+  <sub>attested</sub>
 
 **23)** — 4〉 zurückschauen.
 
 - **RU:** — 4〉 оглядываться назад.
 - **EN:** — 4) to look back.
-  <sub>DCS 4733 · attested</sub>
+  <sub>attested</sub>
 
 **24)** — 5〉 erkennen als, ansehen —, halten für; mit doppeltem Acc.
 
 - **RU:** — 5〉 признавать чем-л., считать, принимать за; с двойным Acc.
 - **EN:** — 5) to recognize as, regard —, take for; with double Acc.
-  <sub>DCS 4733 · attested</sub>
+  <sub>attested</sub>
 
 **25)** — 6〉 mit dem geistigen Auge schauen. *anṛtam* Etwas falsch ansehen.
 
 - **RU:** — 6〉 созерцать духовным взором. *anṛtam* воспринимать что-л. ложно.
 - **EN:** — 6) to behold with the spiritual eye. *anṛtam* to see something wrongly.
-  <sub>DCS 4733 · attested</sub>
+  <sub>attested</sub>
 
 **26)** — 7〉 in Betracht ziehen, erwägen, berücksichtigen.
 
 - **RU:** — 7〉 принимать во внимание, взвешивать, учитывать.
 - **EN:** — 7) to take into consideration, to weigh, to take account of.
-  <sub>DCS 4733 · attested</sub>
+  <sub>attested</sub>
 
 **27)** — Mit *samanu*
 — 1〉 anblicken, hinblicken auf.
@@ -1732,25 +1732,25 @@ to catch sight of, perceive, see, recognize: *mahānti cānyāni sarāṃsi pār
 
 - **RU:** — 2〉 замечать, воспринимать.
 - **EN:** — 2) to notice, to perceive.
-  <sub>DCS 4733 · attested</sub>
+  <sub>attested</sub>
 
 **29)** — 3〉 halten für, mit doppeltem Acc.
 
 - **RU:** — 3〉 считать, принимать за, с двойным Acc.
 - **EN:** — 3) to take for, with double Acc.
-  <sub>DCS 4733 · attested</sub>
+  <sub>attested</sub>
 
 **30)** — Mit *antar* dazwischen schauen, hineinschauen.
 
 - **RU:** — С *antar* смотреть промеж, заглядывать внутрь.
 - **EN:** — With *antar* to look in between, to look into.
-  <sub>DCS 4733 · attested</sub>
+  <sub>attested</sub>
 
 **31)** — Mit *apa* Jmd bei Etwas (Partic. Acc.) überraschen [MAITR. S. 1,10,16].
 
 - **RU:** — С *apa* застать кого-л. за чем-л. (Partic. Acc.) [MAITR. S. 1,10,16].
 - **EN:** — With *apa* to surprise someone at something (Partic. Acc.) [MAITR. S. 1,10,16].
-  <sub>DCS 4733 · attested</sub>
+  <sub>attested</sub>
 
 **32)** — Mit *abhi*
 — 1〉 beschauen, hinblicken auf, anblicken, überblicken, beobachten.
@@ -1761,13 +1761,13 @@ to catch sight of, perceive, see, recognize: *mahānti cānyāni sarāṃsi pār
 
 - **RU:** — 2〉 замечать, обнаруживать.
 - **EN:** — 2) to catch sight of, to become aware of.
-  <sub>DCS 4733 · attested</sub>
+  <sub>attested</sub>
 
 **34)** — 3〉 kennen.
 
 - **RU:** — 3〉 знать.
 - **EN:** — 3) to know.
-  <sub>DCS 4733 · attested</sub>
+  <sub>attested</sub>
 
 **35)** — Mit *ava*
 — 1〉 hinblicken auf, beobachten.
@@ -1778,13 +1778,13 @@ to catch sight of, perceive, see, recognize: *mahānti cānyāni sarāṃsi pār
 
 - **RU:** — 2〉 Med. видеть, замечать, так v. a. переживать.
 - **EN:** — 2) Med. to catch sight of, thus v. a. to experience.
-  <sub>DCS 4733 · attested</sub>
+  <sub>attested</sub>
 
 **37)** — Mit *ā* anschauen.
 
 - **RU:** — С *ā* созерцать, рассматривать.
 - **EN:** — With *ā* to view.
-  <sub>DCS 4733 · attested</sub>
+  <sub>attested</sub>
 
 **38)** — Mit *ud*
 — 1〉 in der Höhe erblicken.
@@ -1795,7 +1795,7 @@ to catch sight of, perceive, see, recognize: *mahānti cānyāni sarāṃsi pār
 
 - **RU:** — 2〉 усматривать в будущем, предвидеть, ожидать.
 - **EN:** — 2) to catch sight of in the future, to foresee, to expect.
-  <sub>DCS 4733 · attested</sub>
+  <sub>attested</sub>
 
 **40)** — Mit *parā*
 — 1〉 in die Ferne blicken. *yāvadāsīnaḥ parāpaśyati* so weit man sitzend sehen kann.
@@ -1806,7 +1806,7 @@ to catch sight of, perceive, see, recognize: *mahānti cānyāni sarāṃsi pār
 
 - **RU:** — 2〉 увидеть (вдали) [MAITR. S. 1,10,16].
 - **EN:** — 2) to catch sight of (in the distance) [MAITR. S. 1,10,16].
-  <sub>DCS 4733 · attested</sub>
+  <sub>attested</sub>
 
 **42)** — Mit *pari*
 — 1〉 überblicken, betrachten.
@@ -1817,19 +1817,19 @@ to catch sight of, perceive, see, recognize: *mahānti cānyāni sarāṃsi pār
 
 - **RU:** — 2〉 высматривать, завидеть, заметить, обнаружить.
 - **EN:** — 2) to spy out, catch sight of, perceive, notice, become aware of.
-  <sub>DCS 4733 · attested</sub>
+  <sub>attested</sub>
 
 **44)** — 3〉 eine Gedanken richten auf.
 
 - **RU:** — 3〉 направлять мысли на.
 - **EN:** — 3) to direct one's thoughts toward.
-  <sub>DCS 4733 · attested</sub>
+  <sub>attested</sub>
 
 **45)** — 4〉 kennen, erkennen, — als (mit doppeltem Acc.). — *paripaśyate* [PAÑCAT. 199,10]. Fehlerhaft für *˚pacyate*.
 
 - **RU:** — 4〉 знать, узнавать, — как (с двойным Acc.). — *paripaśyate* [PAÑCAT. 199,10]. Ошибочно вместо *˚pacyate*.
 - **EN:** — 4) to know, to recognize, — as (with double Acc.). — *paripaśyate* [PAÑCAT. 199,10]. Erroneous for *˚pacyate*.
-  <sub>DCS 4733 · attested</sub>
+  <sub>attested</sub>
 
 **46)** — Mit *pra*
 — 1〉 vor sich sehen, hinsehen, hinschauen, hinblicken.
@@ -1840,67 +1840,67 @@ to catch sight of, perceive, see, recognize: *mahānti cānyāni sarāṃsi pār
 
 - **RU:** — 2〉 смотреть на, созерцать.
 - **EN:** — 2) to regard, to view.
-  <sub>DCS 4733 · attested</sub>
+  <sub>attested</sub>
 
 **48)** — 3〉 gewahr werden, bemerken.
 
 - **RU:** — 3〉 замечать, обнаруживать.
 - **EN:** — 3) to become aware of, to notice.
-  <sub>DCS 4733 · attested</sub>
+  <sub>attested</sub>
 
 **49)** — 4〉 sehen, sehen können, das Augenlicht haben.
 
 - **RU:** — 4〉 видеть, быть способным видеть, обладать зрением.
 - **EN:** — 4) to see, to be able to see, to have the use of one's eyes.
-  <sub>DCS 4733 · attested</sub>
+  <sub>attested</sub>
 
 **50)** — 5〉 mit dem geistigen Auge schauen. *svapnān* Traumgesichter sehen.
 
 - **RU:** — 5〉 созерцать духовным взором. *svapnān* видеть вещие сны.
 - **EN:** — 5) to behold with the spiritual eye. *svapnān* to see dream-visions.
-  <sub>DCS 4733 · attested</sub>
+  <sub>attested</sub>
 
 **51)** — 6〉 vorausblicken, voraussehen.
 
 - **RU:** — 6〉 смотреть вперёд, предвидеть.
 - **EN:** — 6) to look ahead, to foresee.
-  <sub>DCS 4733 · attested</sub>
+  <sub>attested</sub>
 
 **52)** — 7〉 erkennen, kennen.
 
 - **RU:** — 7〉 узнавать, знать.
 - **EN:** — 7) to recognize, to know.
-  <sub>DCS 4733 · attested</sub>
+  <sub>attested</sub>
 
 **53)** — 8〉 ansehen. so v. a. beurtheilen.
 
 - **RU:** — 8〉 смотреть на. так v. a. оценивать, судить.
 - **EN:** — 8) to regard. thus v. a. to judge.
-  <sub>DCS 4733 · attested</sub>
+  <sub>attested</sub>
 
 **54)** — 9〉 eine Ansicht —, eine Meinung haben.
 
 - **RU:** — 9〉 иметь взгляд, иметь мнение.
 - **EN:** — 9) to have a view —, an opinion.
-  <sub>DCS 4733 · attested</sub>
+  <sub>attested</sub>
 
 **55)** — 10〉 eine richtige Einsicht haben.
 
 - **RU:** — 10〉 иметь правильное понимание.
 - **EN:** — 10) to have right insight.
-  <sub>DCS 4733 · attested</sub>
+  <sub>attested</sub>
 
 **56)** — 11〉 halten für, mit doppeltem Acc. [Spr. 7764].
 
 - **RU:** — 11〉 считать, принимать за, с двойным Acc. [Spr. 7764].
 - **EN:** — 11) to take for, with double Acc. [Spr. 7764].
-  <sub>DCS 4733 · attested</sub>
+  <sub>attested</sub>
 
 **57)** — Mit *abhipra* (*pra-abhi*). hinausschauen auf, sich umsehen nach.
 
 - **RU:** — С *abhipra* (*pra-abhi*). смотреть вовне на, оглядываться в поисках.
 - **EN:** — With *abhipra* (*pra-abhi*). to look out toward, to look around for.
-  <sub>DCS 4733 · attested</sub>
+  <sub>attested</sub>
 
 **58)** — Mit *saṃpra*
 — 1〉 sehen, gewahr werden, schauen.
@@ -1911,19 +1911,19 @@ to catch sight of, perceive, see, recognize: *mahānti cānyāni sarāṃsi pār
 
 - **RU:** — 2〉 смотреть на, рассматривать.
 - **EN:** — 2) to regard, to contemplate.
-  <sub>DCS 4733 · attested</sub>
+  <sub>attested</sub>
 
 **60)** — 3〉 wissen, kennen.
 
 - **RU:** — 3〉 знать.
 - **EN:** — 3) to know, to be acquainted with.
-  <sub>DCS 4733 · attested</sub>
+  <sub>attested</sub>
 
 **61)** — 4〉 ansehen —, halten für; mit doppeltem Acc.
 
 - **RU:** — 4〉 считать, принимать за; с двойным Acc.
 - **EN:** — 4) to regard —, take for; with double Acc.
-  <sub>DCS 4733 · attested</sub>
+  <sub>attested</sub>
 
 **62)** — Mit *prati*
 — 1〉 entgegenblicken, anblicken.
@@ -1934,25 +1934,25 @@ to catch sight of, perceive, see, recognize: *mahānti cānyāni sarāṃsi pār
 
 - **RU:** — 2〉 увидеть, заметить.
 - **EN:** — 2) to catch sight of, to see, to become aware of.
-  <sub>DCS 4733 · attested</sub>
+  <sub>attested</sub>
 
 **64)** — 3〉 sehen. so v. a. kennen.
 
 - **RU:** — 3〉 видеть. так v. a. знать.
 - **EN:** — 3) to see. thus v. a. to know.
-  <sub>DCS 4733 · attested</sub>
+  <sub>attested</sub>
 
 **65)** — 4〉 sehen so v. a. erleben, erfahren.
 
 - **RU:** — 4〉 видеть так v. a. переживать, испытывать.
 - **EN:** — 4) to see thus v. a. to experience, to learn.
-  <sub>DCS 4733 · attested</sub>
+  <sub>attested</sub>
 
 **66)** — 5〉 Med. (im eigenen Besitz) sehen.
 
 - **RU:** — 5〉 Med. видеть (в собственном владении).
 - **EN:** — 5) Med. (in one's own possession) to see.
-  <sub>DCS 4733 · attested</sub>
+  <sub>attested</sub>
 
 **67)** — Mit *vi*
 — 1〉 (an verschiedenen Orten, im Einzelnen) sehen, unterscheiden, kennen.
@@ -1963,7 +1963,7 @@ to catch sight of, perceive, see, recognize: *mahānti cānyāni sarāṃsi pār
 
 - **RU:** — 2〉 заметить, обнаружить, познакомиться с.
 - **EN:** — 2) to catch sight of, notice, become aware of, get to know.
-  <sub>DCS 4733 · attested</sub>
+  <sub>attested</sub>
 
 **69)** — Mit *anuvi*
 — 1〉 beschauen.
@@ -1974,7 +1974,7 @@ to catch sight of, perceive, see, recognize: *mahānti cānyāni sarāṃsi pār
 
 - **RU:** — 2〉 заметить, увидеть.
 - **EN:** — 2) to catch sight of.
-  <sub>DCS 4733 · attested</sub>
+  <sub>attested</sub>
 
 **71)** — Mit *abhivi*
 — 1〉 an-, beschauen [ĀPAST. ŚR. 1,5,8].
@@ -1985,13 +1985,13 @@ to catch sight of, perceive, see, recognize: *mahānti cānyāni sarāṃsi pār
 
 - **RU:** — 2〉 заметить, увидеть.
 - **EN:** — 2) to catch sight of.
-  <sub>DCS 4733 · attested</sub>
+  <sub>attested</sub>
 
 **73)** — 3〉 herblicken.
 
 - **RU:** — 3〉 смотреть сюда.
 - **EN:** — 3) to look hither.
-  <sub>DCS 4733 · attested</sub>
+  <sub>attested</sub>
 
 **74)** — Mit *sam*
 — 1〉 gleichzeitig erblicken, überblicken.
@@ -2002,217 +2002,217 @@ to catch sight of, perceive, see, recognize: *mahānti cānyāni sarāṃsi pār
 
 - **RU:** — 2〉 узнавать. *yasya saṃpaśyataḥ* на чьих глазах.
 - **EN:** — 2) to recognize. *yasya saṃpaśyataḥ* before whose eyes.
-  <sub>DCS 4733 · attested</sub>
+  <sub>attested</sub>
 
 **76)** — 3〉 sehen auf, anschauen, besichtigen.
 
 - **RU:** — 3〉 смотреть на, созерцать, осматривать.
 - **EN:** — 3) to look upon, view, inspect.
-  <sub>DCS 4733 · attested</sub>
+  <sub>attested</sub>
 
 **77)** — 4〉 Jmd sehen. so v. a. mit Jmd zusammenkommen, Jmd vor sich lassen.
 
 - **RU:** — 4〉 видеть кого-л.. так v. a. встречаться с кем-л., допускать кого-л. к себе.
 - **EN:** — 4) to see someone. thus v. a. to meet with someone, to admit someone to one's presence.
-  <sub>DCS 4733 · attested</sub>
+  <sub>attested</sub>
 
 **78)** — 5〉 Med. sich gegenseitig ansehen.
 
 - **RU:** — 5〉 Med. смотреть друг на друга.
 - **EN:** — 5) Med. to look at one another.
-  <sub>DCS 4733 · attested</sub>
+  <sub>attested</sub>
 
 **79)** — 6〉 Med. sich beisammen sehen, — befinden.
 
 - **RU:** — 6〉 Med. видеться вместе, находиться вместе.
 - **EN:** — 6) Med. to see oneself together with, to find oneself together with.
-  <sub>DCS 4733 · attested</sub>
+  <sub>attested</sub>
 
 **80)** — 7〉 seine Aufmerksamkeit richten auf, betrachten, erwägen.
 
 - **RU:** — 7〉 обращать внимание на, рассматривать, обдумывать.
 - **EN:** — 7) to direct one's attention to, to contemplate, to weigh.
-  <sub>DCS 4733 · attested</sub>
+  <sub>attested</sub>
 
 **81)** — 8〉 überzählen, recapituliren, zusammenzählen.
 
 - **RU:** — 8〉 пересчитывать, резюмировать, суммировать.
 - **EN:** — 8) to count over, to recapitulate, to add up.
-  <sub>DCS 4733 · attested</sub>
+  <sub>attested</sub>
 
 **82)** — 9〉 berechnen.
 
 - **RU:** — 9〉 вычислять.
 - **EN:** — 9) to calculate.
-  <sub>DCS 4733 · attested</sub>
+  <sub>attested</sub>
 
 **83)** — Mit *prasam* gehörig in Erwägung ziehen [MĀN. ŚR. 1,1,1].
 
 - **RU:** — С *prasam* надлежащим образом принимать во внимание [MĀN. ŚR. 1,1,1].
 - **EN:** — With *prasam* to take properly into consideration [MĀN. ŚR. 1,1,1].
-  <sub>DCS 4733 · attested</sub>
+  <sub>attested</sub>
 
 **1)** **2.** *paś*¦ _f._ Blick oder Auge Nur *paḍbhis* [ṚV. 4,2,12].
 
 - **RU:** **2.** *paś*¦ _f._ взгляд или глаз Только *paḍbhis* [ṚV. 4,2,12].
 - **EN:** 2. *paś*; _f._ glance or eye. Only *paḍbhis* [ṚV. 4,2,12].
-  <sub>DCS 4733 · attested</sub>
+  <sub>attested</sub>
 
 **1)** **3.** √*paś*¦, *pāśayati* s. !√*pāśay*.
 
 - **RU:** **3.** √*paś*¦, *pāśayati* s. !√*pāśay*.
 - **EN:** 3. √*paś*; *pāśayati* s. see! √*pāśay*.
-  <sub>DCS 4733 · lexicographic</sub>
+  <sub>lexicographic</sub>
 
 **preamble)** **1.** √*paś*¦ nur Präsensstamm *paśya* Act. Med. (meist metrisch).
 
 - **RU:** **1.** √*paś*¦ только основа настоящего времени *paśya* Act. Med. (преимущественно в метрических текстах).
-  <sub>DCS 4733 · attested</sub>
+  <sub>attested</sub>
 
 **mit_T38)** — Mit *anu*
 
 - **RU:** — С *anu*
-  <sub>DCS 4733 · attested</sub>
+  <sub>attested</sub>
 
 **mit_T38_1)** — 1〉 hinblicken. *pṛṣṭhatas* sich umsehen. *devasyānupaśyataḥ* so v. a. vor den Augen des Gottes.
 
 - **RU:** — 1〉 смотреть, взирать. *pṛṣṭhatas* оглядываться. *devasyānupaśyataḥ* так v. a. пред очами бога.
-  <sub>DCS 4733 · attested</sub>
+  <sub>attested</sub>
 
 **mit_T45)** — Mit *samanu*
 
 - **RU:** — С *samanu*
-  <sub>DCS 4733 · attested</sub>
+  <sub>attested</sub>
 
 **mit_T45_1)** — 1〉 anblicken, hinblicken auf.
 
 - **RU:** — 1〉 взглядывать на, смотреть на.
-  <sub>DCS 4733 · attested</sub>
+  <sub>attested</sub>
 
 **mit_T52)** — Mit *abhi*
 
 - **RU:** — С *abhi*
-  <sub>DCS 4733 · attested</sub>
+  <sub>attested</sub>
 
 **mit_T52_1)** — 1〉 beschauen, hinblicken auf, anblicken, überblicken, beobachten.
 
 - **RU:** — 1〉 осматривать, смотреть на, взирать на, обозревать, наблюдать.
-  <sub>DCS 4733 · attested</sub>
+  <sub>attested</sub>
 
 **mit_T53)** — Mit *ava*
 
 - **RU:** — С *ava*
-  <sub>DCS 4733 · attested</sub>
+  <sub>attested</sub>
 
 **mit_T53_1)** — 1〉 hinblicken auf, beobachten.
 
 - **RU:** — 1〉 смотреть на, наблюдать.
-  <sub>DCS 4733 · attested</sub>
+  <sub>attested</sub>
 
 **mit_T57)** — Mit *ud*
 
 - **RU:** — С *ud*
-  <sub>DCS 4733 · attested</sub>
+  <sub>attested</sub>
 
 **mit_T57_1)** — 1〉 in der Höhe erblicken.
 
 - **RU:** — 1〉 видеть наверху, замечать в вышине.
-  <sub>DCS 4733 · attested</sub>
+  <sub>attested</sub>
 
 **mit_T58)** — Mit *parā*
 
 - **RU:** — С *parā*
-  <sub>DCS 4733 · attested</sub>
+  <sub>attested</sub>
 
 **mit_T58_1)** — 1〉 in die Ferne blicken. *yāvadāsīnaḥ parāpaśyati* so weit man sitzend sehen kann.
 
 - **RU:** — 1〉 смотреть вдаль. *yāvadāsīnaḥ parāpaśyati* насколько можно видеть сидя.
-  <sub>DCS 4733 · attested</sub>
+  <sub>attested</sub>
 
 **mit_T61)** — Mit *pari*
 
 - **RU:** — С *pari*
-  <sub>DCS 4733 · attested</sub>
+  <sub>attested</sub>
 
 **mit_T61_1)** — 1〉 überblicken, betrachten.
 
 - **RU:** — 1〉 обозревать, рассматривать.
-  <sub>DCS 4733 · attested</sub>
+  <sub>attested</sub>
 
 **mit_T66)** — Mit *pra*
 
 - **RU:** — С *pra*
-  <sub>DCS 4733 · attested</sub>
+  <sub>attested</sub>
 
 **mit_T66_1)** — 1〉 vor sich sehen, hinsehen, hinschauen, hinblicken.
 
 - **RU:** — 1〉 смотреть перед собой, смотреть, взирать, глядеть.
-  <sub>DCS 4733 · attested</sub>
+  <sub>attested</sub>
 
 **mit_T73)** — Mit *saṃpra*
 
 - **RU:** — С *saṃpra*
-  <sub>DCS 4733 · attested</sub>
+  <sub>attested</sub>
 
 **mit_T73_1)** — 1〉 sehen, gewahr werden, schauen.
 
 - **RU:** — 1〉 видеть, замечать, созерцать.
-  <sub>DCS 4733 · attested</sub>
+  <sub>attested</sub>
 
 **mit_T75)** — Mit *prati*
 
 - **RU:** — С *prati*
-  <sub>DCS 4733 · attested</sub>
+  <sub>attested</sub>
 
 **mit_T75_1)** — 1〉 entgegenblicken, anblicken.
 
 - **RU:** — 1〉 смотреть навстречу, взирать на.
-  <sub>DCS 4733 · attested</sub>
+  <sub>attested</sub>
 
 **mit_T79)** — Mit *vi*
 
 - **RU:** — С *vi*
-  <sub>DCS 4733 · attested</sub>
+  <sub>attested</sub>
 
 **mit_T79_1)** — 1〉 (an verschiedenen Orten, im Einzelnen) sehen, unterscheiden, kennen.
 
 - **RU:** — 1〉 видеть (в различных местах, по отдельности), различать, знать.
-  <sub>DCS 4733 · attested</sub>
+  <sub>attested</sub>
 
 **mit_T80)** — Mit *anuvi*
 
 - **RU:** — С *anuvi*
-  <sub>DCS 4733 · attested</sub>
+  <sub>attested</sub>
 
 **mit_T80_1)** — 1〉 beschauen.
 
 - **RU:** — 1〉 осматривать.
-  <sub>DCS 4733 · attested</sub>
+  <sub>attested</sub>
 
 **mit_T81)** — Mit *abhivi*
 
 - **RU:** — С *abhivi*
-  <sub>DCS 4733 · attested</sub>
+  <sub>attested</sub>
 
 **mit_T81_1)** — 1〉 an-, beschauen [ĀPAST. ŚR. 1,5,8].
 
 - **RU:** — 1〉 смотреть на, осматривать [ĀPAST. ŚR. 1,5,8].
-  <sub>DCS 4733 · attested</sub>
+  <sub>attested</sub>
 
 **mit_T81_2)** — 2〉 erblicken.
 
 - **RU:** — 2〉 увидеть.
-  <sub>DCS 4733 · attested</sub>
+  <sub>attested</sub>
 
 **mit_T83)** — Mit *sam*
 
 - **RU:** — С *sam*
-  <sub>DCS 4733 · attested</sub>
+  <sub>attested</sub>
 
 **mit_T83_1)** — 1〉 gleichzeitig erblicken, überblicken.
 
 - **RU:** — 1〉 замечать одновременно, охватывать взглядом.
-  <sub>DCS 4733 · attested</sub>
+  <sub>attested</sub>
 
 ## paś
 
@@ -2223,4 +2223,4 @@ to catch sight of, perceive, see, recognize: *mahānti cānyāni sarāṃsi pār
 
 - **RU:** **4.** *√*paś*¦ Intens. *pampaśyate, pampaśīti*.
 - **EN:** 4. *√*paś*; Intens. *pampaśyate, pampaśīti*.
-  <sub>DCS 4733 · lexicographic</sub>
+  <sub>lexicographic</sub>

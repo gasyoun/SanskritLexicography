@@ -7,4 +7,4 @@
 
 - **RU:** — desid. от caus. s. *bibhedayiṣu* .
 - **EN:** — desid. from caus. s. *bibhedayiṣu*.
-  <sub>DCS 2113 · lexicographic</sub>
+  <sub>lexicographic</sub>

@@ -13,4 +13,4 @@
 - **EN:** *abhisam*, absol. *abhisaṃhatya* joining together, in company, united
 [MBH. 2,800.] [8,3029.] partic. *abhisaṃhata* attacked, treated with hostility
 [BHĀG. P. 8,11,1.]
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>

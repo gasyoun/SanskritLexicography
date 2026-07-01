@@ -34,7 +34,7 @@
 [4,3,11,3.] [AV. 19,53,6.] *yāvatsūryo vipaśyati*
 [10,11,34.] [KAṬHOP. 4,6] (med.). *manasaiva pure devaḥ pūrvarūpaṃ vipaśyati*
 [BHĀG. P. 6,1,48.] *vipaśyatāṃ* (gen. pl.) *lokavidhim*
-  <sub>DCS 49 · attested</sub>
+  <sub>attested</sub>
 
 **2)** [7,2,37.] bemerken, wahrnehmen: *dehaṃ ca taṃ na caramaḥ sthitamutthitaṃ vā siddho vipaśyati*
 [3,28,37.] *guṇānvipaśyantyuta vā tamaśca*

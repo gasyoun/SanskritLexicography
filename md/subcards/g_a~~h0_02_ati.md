@@ -19,7 +19,7 @@
 [ARJ. 4,62.] *āyuṣo 'rdhamathātyagāt*
 [BHĀG. P. 4,27,6.] *tasya yauvanamabhyagāt* (read: *atyagāt*)
 [MBH. 2,696.]
-  <sub>DCS 39 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) hingehen, sterben: *kenātyagādrājā vyādhinā*
 [R. 2,72,29.]
@@ -28,7 +28,7 @@
 [R. 2,72,29.]
 - **EN:** — 2) to go away, to die: *kenātyagādrājā vyādhinā*
 [R. 2,72,29.]
-  <sub>DCS 39 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) über Etwas hingehen, — wegschreiten: *ati śritī tiraścatā gavyā jigātyaṇvyā*
 [ṚV. 9,14,6.] *mā me 'vāṅnābhimati gāḥ*
@@ -49,7 +49,7 @@
 [MBH. 7,5229.] *(naukā) bahūrmivegābhihatā gaṅgāsalilamatyagāt*
 [R. 2,52,75.] to stride past someone, to pass for someone (of time): *mā tvāṃ kālo 'tyagādayam*
 [MBH. 1,6196.] [3,873.]
-  <sub>DCS 39 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) vorübergehen an: *atyanyā agā nānyā upāgām*
 [VS. 5,42.]
@@ -58,7 +58,7 @@
 [VS. 5,42.]
 - **EN:** — 4) to pass by: *atyanyā agā nānyā upāgām*
 [VS. 5,42.]
-  <sub>DCS 39 · attested</sub>
+  <sub>attested</sub>
 
 **5)** — 5) siegreich überschreiten, überwinden, glücklich entkommen: *atyagānmāyāṃ devānām*
 [BHĀG. P. 9,20,27.] *hiraṇyakaśipuścāpi bhagavannindayā tamaḥ . vivikṣuratyagātsūnoḥ prahrādasyānubhāvataḥ ..*
@@ -70,7 +70,7 @@
 - **EN:** — 5) to cross victoriously, to overcome, to escape safely: *atyagānmāyāṃ devānām*
 [BHĀG. P. 9,20,27.] *hiraṇyakaśipuścāpi bhagavannindayā tamaḥ . vivikṣuratyagātsūnoḥ prahrādasyānubhāvataḥ ..*
 [4,21,46.]
-  <sub>DCS 39 · attested</sub>
+  <sub>attested</sub>
 
 **6)** — 6) vorübergehen an, unbeachtet lassen: *na cainamatyagādvahnirvelāmiva mahodadhiḥ* er achtete auf ihn, that was er verlangt hatte
 [MBH. 2,1157.] *so 'mṛtasyābhayasyeśo martyamannaṃ yadatyagāt* (bei
@@ -88,4 +88,4 @@
 [BURNOUF] a different interpretation)
 [BHĀG. P. 2,6,17.] *prāptakālamidaṃ manye mā tvaṃ duryodhanātyagāḥ* to neglect
 [MBH. 5,4212.]
-  <sub>DCS 39 · attested</sub>
+  <sub>attested</sub>

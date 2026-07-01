@@ -15,7 +15,7 @@
 - **EN:** *ud* 'to revive, come to life again': *udajīvat*
 [BHAṬṬ. 17,95.] *kaścinmartyo mṛto rājanpunarujjīvito 'bhavat*
 [MBH. 12,5675.] [14,2392.]
-  <sub>DCS 2223 · attested</sub>
+  <sub>attested</sub>
 
 **2)** caus. beleben: *vīryaṃ saṃdhukṣayantī = punarujjīvayantī*
 [MALLIN.] zu [KUMĀRAS. 3,52.]
@@ -26,4 +26,4 @@
 
 - **RU:** Caus. Vgl. *ujjīvin*.
 - **EN:** — Vgl. *ujjīvin*.
-  <sub>DCS 2223 · attested</sub>
+  <sub>attested</sub>

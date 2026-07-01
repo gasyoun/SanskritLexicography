@@ -16,7 +16,7 @@
 [Sp. 602, Z. 1] add further
 [Spr. 4310]; [Z. 26] add further: *anarthamarthataḥ paśyannarthaṃ caivāpyanarthataḥ* taking loss for gain and gain for loss
 [Spr. 3454.]
-  <sub>DCS 4733 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — *pra* halten für: *abhiśastaṃ prapaśyanti daridraṃ pārśvataḥ sthitam*
 [MBH. 12,214.]
@@ -25,10 +25,10 @@
 [MBH. 12,214.]
 - **EN:** — *pra* to take for, regard as: *abhiśastaṃ prapaśyanti daridraṃ pārśvataḥ sthitam*
 [MBH. 12,214.]
-  <sub>DCS 4733 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — *prati* vgl. *pratispaśa, pratispāśana* .
 
 - **RU:** — *prati* vgl. *pratispaśa, pratispāśana* .
 - **EN:** — *prati* vgl. *pratispaśa, pratispāśana*.
-  <sub>DCS 4733 · attested</sub>
+  <sub>attested</sub>

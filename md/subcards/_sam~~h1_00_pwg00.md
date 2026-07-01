@@ -102,4 +102,4 @@
 [KATHĀS. 16,15.] *dehadāhaḥ*
 [GĪT. 7,41.]
 [BHĀG. P. 9,5,12.]
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>

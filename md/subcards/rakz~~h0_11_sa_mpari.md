@@ -10,4 +10,4 @@
 [R. 7,104,3.]
 - **EN:** — *saṃpari* to protect: *lokānsaṃparirakṣitum*
 [R. 7,104,3.]
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>

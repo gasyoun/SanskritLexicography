@@ -10,4 +10,4 @@
 [AV. 7,38,5.]
 - **EN:** — *nyā* to bring back: *iyaṃ ha mahyaṃ tvāmoṣadhirbaddhveva nyānayet*
 [AV. 7,38,5.]
-  <sub>DCS 2376 · attested</sub>
+  <sub>attested</sub>

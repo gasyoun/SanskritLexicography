@@ -16,7 +16,7 @@
 1) to collect together, gather in: *yaśo rakṣasva vidura saṃpraṇītam*
 [MBH. 2,2126.] *dayāvānapramattaśca karānsaṃpraṇayenmṛdūn* to levy tribute
 [12,3300.]
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) *daṇḍam* den Stock führen, Strafe verhängen: *(daṇḍam) yathārhataḥ saṃpraṇayennareṣvanyāyavartiṣu*
 [M. 7,16.]
@@ -25,7 +25,7 @@
 [M. 7,16.]
 - **EN:** 2) *daṇḍam* to wield the rod, inflict punishment: *(daṇḍam) yathārhataḥ saṃpraṇayennareṣvanyāyavartiṣu*
 [M. 7,16.]
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) abfassen, verfassen: *trīṇi ślokasahasrāṇi — muninā saṃpraṇītāni*
 [MBH. 1,561.]
@@ -35,9 +35,9 @@
 - **EN:** 3) to compose, draft: *trīṇi ślokasahasrāṇi — muninā saṃpraṇītāni*
 [MBH. 1,561.]
 — Vgl. *saṃpraṇetar* .
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>
 
 **addendum)** — Vgl. *saṃpraṇetar* .
 
 - **RU:** — Vgl. *saṃpraṇetar* .
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>

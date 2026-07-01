@@ -26,7 +26,7 @@
 [PAÑCAT. 80,6.] lustful
 [M. 4,40.] intoxicated, drunk: *kathāṃ pramattaḥ prathamaṃ kṛtāmiva (na smarati)*
 [ŚĀK. 76.]
-  <sub>DCS 241 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) achtlos sein, sich gleichgiltig abwenden von (abl.
 [P. 1,4,24], Vārtt.
@@ -158,7 +158,7 @@
 [MBH. 2,1467.] *yāne śayyāsane pāne bhojye vastre vibhūṣaṇe . sarvatraivāpramattaḥ syāt*
 [KĀM. NĪTIS. 7,9.] *apramattena te (= tvayā) bhāvyaṃ sadā prati puraṃdaram*
 [MBH. 13,2270.]
-  <sub>DCS 241 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) über Etwas (loc.) seine Pflicht vergessen, sich in Bezug auf Etwas gehen lassen: *ato 'rthānna pramādyanti pramadāsu vipaścitaḥ*
 [M. 2,213.] *pānastrīdyūtagoṣṭhīṣu rājānam — pramādyantam*
@@ -176,7 +176,7 @@
 [Spr. 1767.] *pramattaṃ grāmyadharmeṣu*
 [MBH. 3,16201.] *pramattaḥ kāmabhogeṣu*
 [R. 3,37,2] ([33,2] [ed. Bomb.]).
-  <sub>DCS 241 · attested</sub>
+  <sub>attested</sub>
 
 **caus-1)** 1) Etwas verscherzen: *pramāditāṃ kīrtimiva*
 [R. 5,21,10.]
@@ -186,7 +186,7 @@
 - **EN:** — Vgl. 1. *pramada, pramadaka, pramaditavya* fg., *pramāda, pramādikā* fg., *pramanda* . — caus.
  1) to forfeit something, to lose something through negligence: *pramāditāṃ kīrtimiva*
 [R. 5,21,10.]
-  <sub>DCS 241 · attested</sub>
+  <sub>attested</sub>
 
 **caus-2)** — 2) med. sich ergötzen, sich gütlich thun an: *pra carṣaṇī mādayethāṃ sutasya*
 [ṚV. 1,109,5.] Wegen
@@ -207,20 +207,20 @@ vgl. 1. *pradiś*.* pra sumatiṃ savitarvāya ūtaye mahasvantaṃ matsaraṃ m
 
 vgl. 1. *pradiś*.* pra sumatiṃ savitarvāya ūtaye mahasvantaṃ matsaraṃ mādayāthaḥ*
 [AV. 4,25,6], where one would have expected *mādayethe* or *mādayethām*.
-  <sub>DCS 241 · attested</sub>
+  <sub>attested</sub>
 
 **desid)** — Vgl. *pramandanī* .
 
 - **RU:** — Vgl. *pramandanī* .
 - **EN:** — Vgl. *pramandanī* .
-  <sub>DCS 241 · attested</sub>
+  <sub>attested</sub>
 
 **head-ref)** — *pra*
 
 - **RU:** — *pra*
-  <sub>DCS 241 · attested</sub>
+  <sub>attested</sub>
 
 **caus-head)** — Vgl. 1. *pramada, pramadaka, pramaditavya* fg., *pramāda, pramādikā* fg., *pramanda* . — caus.
 
 - **RU:** — Vgl. 1. *pramada, pramadaka, pramaditavya* fg., *pramāda, pramādikā* fg., *pramanda* . — caus.
-  <sub>DCS 241 · attested</sub>
+  <sub>attested</sub>

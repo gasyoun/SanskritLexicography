@@ -7,7 +7,7 @@
 
 - **RU:** — caus. *chedayati*
 - **EN:** — caus. *chedayati*
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **caus-1)** 1) abschneiden, abhauen
 [DHĀTUP. 35,80] (*ched*).* mūle*
@@ -31,7 +31,7 @@
 [SUŚR. 1,369,1.] *yanme bāhumacicchidaḥ*
 [MBH. 7,5954.] *chedita*
 [H. 1490.]
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **caus-2)** — 2) abschneiden —, abhauen —, zerhauen lassen: *dvāvoṣṭhau chedayennṛpaḥ*
 [M. 8,282.] *hastau*
@@ -49,4 +49,4 @@
 [283.] *aṅgulī*
 [277.] *(tam) chedayellavaśaḥ kṣuraiḥ*
 [292.]
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>

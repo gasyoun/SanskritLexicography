@@ -7,4 +7,4 @@
 
 - **RU:** **1.** *han*¦ mit **samava* устранять, убирать с дороги [MAHĀVY. 126].
 - **EN:** **1.** *han*¦ with **samava* to remove out of the way, get rid of [MAHĀVY. 126].
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>

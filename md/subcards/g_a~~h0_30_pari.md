@@ -25,7 +25,7 @@
 [AV. 1,34,5.] *sa tenābhidrutaḥ kākastrīllokānparyagāttataḥ*
 [R. 2,96,45.] to spread everywhere: *sa paryagāt*
 [ĪŚOP. 8.]
-  <sub>DCS 31 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) herbeikommen, gelangen zu, erreichen, über Jmd kommen: *pra vāṃ ghṛtācī bāhvordaghānā pari tmanā viṣurūpā jigāti*
 [ṚV. 7,84,1.] *vayo vayo jarase yaddadhānaḥ pari tmanā viṣurūpo jigāsi*
@@ -40,7 +40,7 @@
 [ṚV. 7,84,1.] *vayo vayo jarase yaddadhānaḥ pari tmanā viṣurūpo jigāsi*
 [5,15,4.] *jarā balī ca māṃ tāta palitāni ca paryaguḥ*
 [MBH. 1,3647.]
-  <sub>DCS 31 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) umgehen so v. a. ausweichen: *pari tveṣasya durmatirmahī gāt*
 [ṚV. 2,33,14.] *pari ghraṃsamomanā vāṃ vayo gāt*
@@ -55,7 +55,7 @@
 [ṚV. 2,33,14.] *pari ghraṃsamomanā vāṃ vayo gāt*
 [7,69,4.] to disregard, fail to heed: *yatkiṃ ca vadāmi tanme mā parigāteti*
 [AIT. BR. 6,33.]
-  <sub>DCS 31 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) dahinterkommen, eine Kenntniss von Etwas erlangen: *yo hyātmamāyāvibhavaṃ sma paryagādyathā nabhaḥ svāntamathāpare kutaḥ*
 [BHĀG. P. 2,6,35.] [BURNOUF] : (qui,) semblable au ciel qui ne (!) connait pas ses limites, n'a pu (!) encore atteindre le terme de la puissance de sa Māyā.
@@ -64,4 +64,4 @@
 [BHĀG. P. 2,6,35.] [BURNOUF] : (qui,) semblable au ciel qui ne (!) connait pas ses limites, n'a pu (!) encore atteindre le terme de la puissance de sa Māyā.
 - **EN:** — 4) to find out, acquire knowledge of something: *yo hyātmamāyāvibhavaṃ sma paryagādyathā nabhaḥ svāntamathāpare kutaḥ*
 [BHĀG. P. 2,6,35.] [BURNOUF] : (who, like the sky that knows not its own limits, has not yet been able to reach the end of the power of his Māyā.)
-  <sub>DCS 31 · attested</sub>
+  <sub>attested</sub>

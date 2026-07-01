@@ -109,4 +109,4 @@
 [4,472.] *vratāni* to observe
 [ṚV. 4,53,4.] [7,83,9.] [9,73,3.]
 — Vgl. *abhirakṣitar* .
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>

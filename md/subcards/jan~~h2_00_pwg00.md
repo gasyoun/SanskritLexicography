@@ -11,4 +11,4 @@
  1) быть для чего-либо (nom. partic. fut. pass.), существовать: *rakto 'bhijāyate bhogyo nārīṇāṃ śāṭako yathā*
 [Spr. (II) 5695.]
 - **EN:** *jan*¦ with *abhi* 1) to exist for something (nom. of the partic. fut. pass.): *rakto 'bhijāyate bhogyo nārīṇāṃ śāṭako yathā* [Spr. (II) 5695.]
-  <sub>DCS 9250 · attested</sub>
+  <sub>attested</sub>

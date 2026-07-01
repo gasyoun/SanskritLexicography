@@ -16,4 +16,4 @@
 [CHĀND. UP. 8,7,2.]
 [KAUṢ. UP. 2,3. 4.]
 [TBR. Comm. 1,89,2] v. u.
-  <sub>DCS 1202 · attested</sub>
+  <sub>attested</sub>

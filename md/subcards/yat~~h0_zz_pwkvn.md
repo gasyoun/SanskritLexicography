@@ -7,4 +7,4 @@
 
 - **RU:** *yat*¦ Caus. vgl. [ROTH] в [Z. d. d. m. G. 41,676]. — С *anvā* V. участвовать в чём-л. [ŚĀṄKH. BR. 23,5].
 - **EN:** *yat* Caus. vgl. [ROTH] in [Z. d. d. m. G. 41,676]. — With *anvā* V.: to take part in something [ŚĀṄKH. BR. 23,5].
-  <sub>DCS 9672 · attested</sub>
+  <sub>attested</sub>

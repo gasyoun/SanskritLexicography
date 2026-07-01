@@ -60,7 +60,7 @@
 [KATHĀS. 16,17.] [18,231.] [20,181.] [22,193.] [35,13.] [143.] [45,209.] [54,169.] [56,406.]
 [MĀRK. P. 72,17.]
 [BHAṬṬ. 4,44.]
-  <sub>DCS 70 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) in einen Zustand, eine Lage, ein Verhältniss
 
@@ -78,10 +78,10 @@ kommen; mit acc.: *tṛptim*
 with acc.: *tṛptim*
 [MĀRK. P. 31,8.] *vilokanīyatām*
 [KIR. 8,45.]
-  <sub>DCS 70 · attested</sub>
+  <sub>attested</sub>
 
 **note)** — Vgl. *upāyāta* .
 
 - **RU:** — Vgl. *upāyāta* .
 - **EN:** — Vgl. *upāyāta* .
-  <sub>DCS 70 · attested</sub>
+  <sub>attested</sub>

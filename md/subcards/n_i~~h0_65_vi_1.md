@@ -19,7 +19,7 @@
 [VOP. 23,28.] *karaṃ vinayate*
 [P.], Sch. *ṛṇam*
 [VOP.]
-  <sub>DCS 2376 · attested</sub>
+  <sub>attested</sub>
 
 **10)** — 10) med. zu frommen Zwecken verausgaben: *śataṃ vinayate = dharmārthaṃ viniyuṅkte*
 [P. 1,3,36], Sch.
@@ -34,7 +34,7 @@
 [P. 1,3,36], Sch.
 *dravyam*
 [VOP. 23,28.] According to [P.] and [VOP.] simply in the sense of to spend (*vyaya*).
-  <sub>DCS 2376 · attested</sub>
+  <sub>attested</sub>
 
 **desid)** — Vgl. *vinaya, ˚nayana, ˚nīta, ˚netar, ˚netra, ˚neya* . — desid. med. sich Etwas vertreiben wollen: *matsaraṃ vininīṣamāṇa āste*
 [ŚĀṄKH. ŚR. 17,17,2.]
@@ -43,4 +43,4 @@
 [ŚĀṄKH. ŚR. 17,17,2.]
 - **EN:** — Vgl. *vinaya, ˚nayana, ˚nīta, ˚netar, ˚netra, ˚neya* . — desid. med. wishing to drive something away from oneself: *matsaraṃ vininīṣamāṇa āste*
 [ŚĀṄKH. ŚR. 17,17,2.]
-  <sub>DCS 2376 · attested</sub>
+  <sub>attested</sub>

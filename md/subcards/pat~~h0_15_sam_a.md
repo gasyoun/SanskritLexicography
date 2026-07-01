@@ -34,7 +34,7 @@
 [R. 5,42,12.]
 [ŚATR. 14,218.] *pavanaḥ pavanābhihato gaganādavanau yadā samāpatati* to swoop down
 [VARĀH. BṚH. S. 38 (37),1.]
-  <sub>DCS 35 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) zusammenkommen mit (*saha*), sich geschlechtlich verbinden: *tābhiḥ saha samāpeturbrāhmaṇāḥ . ṛtāvṛtau*
 [MBH. 1,2461.]
@@ -43,7 +43,7 @@
 [MBH. 1,2461.]
 - **EN:** — 2) to come together with (*saha*), to unite sexually: *tābhiḥ saha samāpeturbrāhmaṇāḥ . ṛtāvṛtau*
 [MBH. 1,2461.]
-  <sub>DCS 35 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) gelangen zu (acc.), theilhaftig werden: *harṣaṃ samāpetuḥ*
 [MBH. 1,7213.]
@@ -52,4 +52,4 @@
 [MBH. 1,7213.]
 - **EN:** — 3) to attain (acc.), to partake of: *harṣaṃ samāpetuḥ*
 [MBH. 1,7213.]
-  <sub>DCS 35 · attested</sub>
+  <sub>attested</sub>

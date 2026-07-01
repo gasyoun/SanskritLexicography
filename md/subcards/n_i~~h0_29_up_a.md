@@ -43,7 +43,7 @@
 [MBH. 3,12756.] *(tām) keśabandha upānīya bāhubhyāṃ pariṣasvaje*
 [BHĀG. P. 8,12,28.] *(śarottamam) śravaṇāntamupānīya*
 [R. 3,50,17.]
-  <sub>DCS 21 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) hinführen, wegführen, entführen: *upānīya tato gaṅgāṃ rasātalatalam*
 [R. 1,44,42] ([45,32] [GORR.]). *balāt . svayaṃvarādupānīte ambikāmbālike*
@@ -58,4 +58,4 @@
 [R. 1,44,42] ([45,32] [GORR.]). *balāt . svayaṃvarādupānīte ambikāmbālike*
 [BHĀG. P. 9,22,23.] *yaścāsataḥ sattvamupānayīta* to lead to, so v. a. to initiate into
 [MBH. 5,1339.] — Forms with the augment have been placed under *upa* .
-  <sub>DCS 21 · attested</sub>
+  <sub>attested</sub>

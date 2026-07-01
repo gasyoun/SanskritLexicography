@@ -10,4 +10,4 @@
 [LĀṬY. 5,4,12. 10,11,11.]
 - **EN:** — *atipra* to lead past, conduct by: *dvāvagnī*
 [LĀṬY. 5,4,12. 10,11,11.]
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>

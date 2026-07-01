@@ -52,7 +52,7 @@
 [MBH. 12,1042.] *duḥkhānmumūrṣā me vyajāyata*
 [2,1899.] *mānātkrodho vyajāyata*
 [3,8494.]
-  <sub>DCS 9250 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) sich verwandeln in, werden zu: *sā kanyā tapasā tena dehārdhena vyajāyata . nadī ca rājanvatseṣu kanyā caivābhavattadā ..*
 [MBH. 5,7368.] *vijāta = vikṛta*
@@ -64,7 +64,7 @@
 - **EN:** — 2) to change into, to become: *sā kanyā tapasā tena dehārdhena vyajāyata . nadī ca rājanvatseṣu kanyā caivābhavattadā ..*
 [MBH. 5,7368.] *vijāta = vikṛta*
 [H. an. 3,301.]
-  <sub>DCS 9250 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) zeugen, gebären, zur Welt bringen: *paśustiṣṭhangarbhaṃ dhitvānupaviśya vijāyate*
 [ŚAT. BR. 7,4,1,2.] *yatra vijāyate yaminyapartuḥ*
@@ -116,9 +116,9 @@
 [H. 539.]
 [an. 3,301.]
 — Vgl. *avijāta, vijanana* u. s. w.
-  <sub>DCS 9250 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — Vgl. *avijāta, vijanana* u. s. w.
 
 - **RU:** — Vgl. *avijāta, vijanana* u. s. w.
-  <sub>DCS 9250 · attested</sub>
+  <sub>attested</sub>

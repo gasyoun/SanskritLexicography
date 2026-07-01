@@ -55,7 +55,7 @@
 [KŪRMA-P.] in [Verz. d. Oxf. H. 7,b,2] v. u. *yo vedamanubrūte (śiṣyebhyaḥ)*
 [ŚĀṄKH. ŚR. 15,16,6.]
 [GṚHY. 2,3.]
-  <sub>DCS 9786 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) das Wort (einladend, ehrerbietig) richten an (dat.), Jmd (dat.)
 
@@ -85,7 +85,7 @@ to invite to (gen.): *somāya krītāya prohyamāṇāyānubrūhi*
 *indrāgnibhyāṃ puroḍāśasyānubrūhi*
 [KĀTY. ŚR. 6,7,19.] [8,9.] [14.] [19,3,4.]
 [P. 2,3,61.]
-  <sub>DCS 9786 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) halten für, anerkennen für: *ekaḥ śāstā na dvitīyo 'sti śāstā yo hṛcchayastamahamanubravīmi*
 [MBH. 14,746. fgg.] *tathānubruvate tvāṃ hi* dafür halten sie ja dich
@@ -97,7 +97,7 @@ to invite to (gen.): *somāya krītāya prohyamāṇāyānubrūhi*
 - **EN:** — 3) to hold to be, to acknowledge as: *ekaḥ śāstā na dvitīyo 'sti śāstā yo hṛcchayastamahamanubravīmi*
 [MBH. 14,746. fgg.] *tathānubruvate tvāṃ hi* they indeed hold you to be that
 [HARIV. 15319.]
-  <sub>DCS 9786 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) med. nachsprechen, auswendiglernen, lernen: *anubruvāṇo adhyeti na svapan*
 [ṚV. 5,44,13.] *atha yadevānubruvīta tenarṣibhya ṛṇaṃ jāyate*
@@ -109,4 +109,4 @@ to invite to (gen.): *somāya krītāya prohyamāṇāyānubrūhi*
 - **EN:** — 4) med. to repeat after, to learn by heart, to learn: *anubruvāṇo adhyeti na svapan*
 [ṚV. 5,44,13.] *atha yadevānubruvīta tenarṣibhya ṛṇaṃ jāyate*
 [ŚAT. BR. 1,7,2,3.] [4,2,4,1.]
-  <sub>DCS 9786 · attested</sub>
+  <sub>attested</sub>

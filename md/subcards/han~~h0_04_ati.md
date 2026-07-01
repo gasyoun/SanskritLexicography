@@ -13,7 +13,7 @@
 - **EN:** — *ati*, partic. *˚hata*
  1) fastened, affixed: *tasya hṛdaye pādāvatihatau*
 [ŚAT. BR. 10,5,2,13.]
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) zu Grunde gerichtet: *vyāyāmātihata*
 [CARAKA 10,9.] — desid. entkommen wollen
@@ -25,4 +25,4 @@
 - **EN:** — 2) ruined, destroyed: *vyāyāmātihata*
 [CARAKA 10,9.] — desid. to wish to escape
 [AIT. UP. 3,3.] perhaps *atyajigāṃsat* st. *atyajighāṃsat* should be read.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>

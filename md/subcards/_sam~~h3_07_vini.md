@@ -10,4 +10,4 @@
 [MBH. 3,1878.]
 - **EN:** — *vini* dass.: *idam — ghoraṃ śuci caritaṃ viniśamya phālgunasya*
 [MBH. 3,1878.]
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>

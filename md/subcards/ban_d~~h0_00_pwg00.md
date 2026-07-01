@@ -260,7 +260,7 @@ Schol. zu [24.]
 [PAÑCAT. III,160.] *jāḍyādbaddha* или *jāḍyena baddhaḥ* попасть в плен вследствие собственной глупости
 Schol. к [P. 2,3,25.] *śatādbaddhaḥ* вследствие долга в сотню
 Schol. к [24.]
-  <sub>DCS 2655 · attested</sub>
+  <sub>attested</sub>
 
 **header)** *bandh*¦, *badhnāti*
 [DHĀTUP. 31,37.] imperat. *badhāna, nibadhnīhi*
@@ -281,4 +281,4 @@ Schol. к [24.]
 [HARIV. 14323.] *bandhiṣye*
 [MBH. 3,10727]; *banddhum* (местами ошибочно *baddhum), bandhitum*
 [R. 2,18,23]; *baddhvā*; pass. *badhyateḥ* partic. praet. *baddha* .
-  <sub>DCS 2655 · attested</sub>
+  <sub>attested</sub>

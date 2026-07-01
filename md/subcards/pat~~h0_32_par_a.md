@@ -37,7 +37,7 @@
 [AV. 1,3,9.]
 [ŚĀṄKH. GṚHY. 1,22.] *jaladāḥ parāpatan* marched away
 [BHĀG. P. 7,8,32.]
-  <sub>DCS 74 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) entfallen: *tasya retaḥ parāpatat*
 [TBR. 1,1,3,8.] [5,4.] *somasyaikaṃ hiṃsitasya parāpatat*
@@ -58,4 +58,4 @@
 [ŚAT. BR. 1,5,1,20.] [6,2,2,6.]
 [PĀR. GṚHY. 2,2.] — caus. to drive away: *parā śuklāni pātaya*
 [AV. 1,23,2.]
-  <sub>DCS 74 · attested</sub>
+  <sub>attested</sub>

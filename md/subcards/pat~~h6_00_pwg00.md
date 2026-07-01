@@ -22,7 +22,7 @@ vgl. [Spr. 2723.]
 [MBH. 12,9936.] [6528. fgg.] [9934. fg.] [12061.] Here also belongs the
 passage from [R.] standing at Z. 4;
 vgl. [Spr. 2723.]
-  <sub>DCS 3124 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2)
 Z. 6 lies *patottiṣṭha* .
@@ -31,7 +31,7 @@ Z. 6 lies *patottiṣṭha* .
 Z. 6 читай *patottiṣṭha* .
 - **EN:** — 2)
 Z. 6 read *patottiṣṭha* .
-  <sub>DCS 3124 · attested</sub>
+  <sub>attested</sub>
 
 **7)** — 7) *lakṣmīryatra patanti tatra vivṛtadvārā *
 
@@ -46,7 +46,7 @@ Z. 6 read *patottiṣṭha* .
 
 * iva vyāpadaḥ* there misfortune rushes in
 [Spr. 349.]
-  <sub>DCS 3124 · attested</sub>
+  <sub>attested</sub>
 
 **8)** — 8) *so 'yaṃ vanyakarī nareṣu patitaḥ* gerathen unter
 [Spr. 2506.] [Sp. 394, Z. 4] v. u. *vicārapatita* auch
@@ -58,7 +58,7 @@ Z. 6 read *patottiṣṭha* .
 - **EN:** — 8) *so 'yaṃ vanyakarī nareṣu patitaḥ* to fall under, to come under
 [Spr. 2506.] [Sp. 394, Z. 4] v. u. *vicārapatita* also
 [KATHĀS. 82,35.]
-  <sub>DCS 3124 · attested</sub>
+  <sub>attested</sub>
 
 **caus-1)** — 2. caus.
  1) werfen (die Würfel)
@@ -76,7 +76,7 @@ Z. 6 read *patottiṣṭha* .
 [KATHĀS. 121,81.] to hurl: *doṣaṃ śirasi*
 [106,57.] to set down upon: *adharmaḥ pādamekaṃ tu pātayatpṛthivītale*
 [R. 7,74,15.]
-  <sub>DCS 3124 · attested</sub>
+  <sub>attested</sub>
 
 **caus-4)** — 4) med. dahinfliegen, dahineilen
 [ṚV. 8,46,18.]
@@ -85,4 +85,4 @@ Z. 6 read *patottiṣṭha* .
 [ṚV. 8,46,18.]
 - **EN:** — 4) med. to fly along, to hasten along
 [ṚV. 8,46,18.]
-  <sub>DCS 3124 · attested</sub>
+  <sub>attested</sub>

@@ -56,7 +56,7 @@
 [PAÑCAT. 199,10] ошибочно вместо *paripacyate* .
 - **EN:** *pari* to survey, look over: *pari spaśo varuṇasya paśyanti rodasī*
 [ṚV. 7,87,3.]
-  <sub>DCS 42 · attested</sub>
+  <sub>attested</sub>
 
 **2)** [AV. 11,2,25.] *bāhyāntaḥ paripaśyatām* (gen. pl.) von aussen und innen betrachten
 [PRAB. 71,6.] bemerken, sehen: *ye vājinaṃ paripaśyanti pakvam*

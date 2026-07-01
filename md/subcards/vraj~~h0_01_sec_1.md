@@ -10,4 +10,4 @@
 [VOP.]) [DHĀTUP. 32,74.]
 - **EN:** — caus. *vrājayati (mārgasaṃskāragatyoḥ, mārgaṇasaṃskāre, mārgaṇasaṃskārayoḥ; saṃskāre, sarpaṇe*
 [VOP.]) [DHĀTUP. 32,74.]
-  <sub>DCS 1202 · attested</sub>
+  <sub>attested</sub>

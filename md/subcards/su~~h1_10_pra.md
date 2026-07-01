@@ -80,7 +80,7 @@
 
 - **RU:** — Vgl. 2. *prasava*, 1. *prasavitar*, 1. *prasūti, indraprasūta, bṛhaspati˚, brahma˚, vāja˚, haryaśva˚* .
 - **EN:** — Vgl. 2. *prasava*, 1. *prasavitar*, 1. *prasūti, indraprasūta, bṛhaspati˚, brahma˚, vāja˚, haryaśva˚*.
-  <sub>DCS 25 · attested</sub>
+  <sub>attested</sub>
 
 **main)** — *pra* in Bewegung bringen, erregen, zur Thätigkeit rufen (namentlich von Savitar gesagt); heissen, veranlassen; Jmd Etwas verstatten, überlassen: *niveśayaṃ ca prasuvaṃ ca bhūma*
 [ṚV. 7,45,1.] [77,1.] [4,53,3.] [5,82,9.] *prāsāvīddevaḥ savitā jagatpṛthak*
@@ -127,7 +127,7 @@
 [TBR. 3,8,4,1.] *prasuhi*
 (v. l. *˚sūhi*, в параллельном месте *˚suva*)
 [KĀTY. ŚR. 9,14,19.] так v. a. метни Comm. к [BHAṬṬ. 9,50.]
-  <sub>DCS 25 · attested</sub>
+  <sub>attested</sub>
 
 **PPP)** — partic. *prasūta* angetrieben, gesandt, geheissen; verstattet, dem es verstattet ist
 [ṚV. 1,113,1.] *arṣantvāpastvayeha prasūtāḥ*
@@ -158,4 +158,4 @@
 [ŚĀṄKH. ŚR. 14,7,2.] недозволенный, непозволительный
 [ŚAT. BR. 4,1,4,3.] — [AV. 3,1,4] следует понимать (vgl.
 [ṚV. 3,30,6]) как *pra sū te* .
-  <sub>DCS 25 · attested</sub>
+  <sub>attested</sub>

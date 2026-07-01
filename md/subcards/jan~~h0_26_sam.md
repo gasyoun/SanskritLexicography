@@ -19,7 +19,7 @@
 [ṚV. 9,68,5.] to appear together with something: *samuṣadbhirajāyathāḥ*
 [1,6,3.] *agniryatrābhimathyate* u. s. w. *tatra saṃjāyate manaḥ*
 [ŚVETĀŚV. UP. 2,6.]
-  <sub>DCS 9250 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) geboren werden, entstehen, sich einstellen, zum Vorschein kommen, sich zeigen: *tataḥ saṃjajñire vīrāḥ kṣitāviha narādhipāḥ*
 [MBH. 1,2695.] *putraśataṃ pūrṇaṃ dhṛtarāṣṭrasya — saṃjajñe*
@@ -136,7 +136,7 @@
 [KATHĀS. 4,26.] *˚viśrambha*
 [VID. 147.] *˚vepathu*
 [BHĀG. P. 4,17,28.]
-  <sub>DCS 9250 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) werden: *gatāsuriva saṃjajñe*
 [HARIV. 15925.]
@@ -157,7 +157,7 @@
 [PAÑCAT. 188,20.] *svavyāpāraparāṅmukhaḥ saṃjātaḥ*
 [32,9.] [VET. 4,9. 7,9.] [BHAṬṬ. 6,110.] *kiyānkālastavaivaṃ sthitasya saṃjātaḥ* how much time has elapsed since you have been standing thus?
 [PAÑCAT. 242,14.]
-  <sub>DCS 9250 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) gebären: *diggajaṃ caiva śaṅkhākhyaṃ śvetā vai samajāyata*
 [R. 3,20,27.] — caus. zeugen, gebären; bilden, bauen; erzeugen, hervorbringen, verursachen: *kaśyapastvasyāmādityānsamajījanat*
@@ -211,4 +211,4 @@
 [R. 3,43,35.]
 [HIT. III,23.] *(janakṣayaḥ) tvayā saṃjanitaḥ*
 [MBH. 7,3563.]
-  <sub>DCS 9250 · attested</sub>
+  <sub>attested</sub>

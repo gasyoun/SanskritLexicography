@@ -10,4 +10,4 @@
 [MBH. 3,10656.]
 - **EN:** — *samabhyā* to bring hither, lead hither: *vandiṃ samābhyānaya* (sic!) *matsakāśam*
 [MBH. 3,10656.]
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>

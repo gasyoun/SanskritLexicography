@@ -9,4 +9,4 @@
 - **RU:** — *abhipra* caus. порождать для чего-л.: *imamevaitallokamimāḥ prajā abhiprajanayati*
 [ŚAT. BR. 1,9,2,13.] [3,8,5,4.]
 - **EN:** — *abhipra* caus. to beget for something: *imamevaitallokamimāḥ prajā abhiprajanayati* [ŚAT. BR. 1,9,2,13.] [3,8,5,4.]
-  <sub>DCS 9250 · attested</sub>
+  <sub>attested</sub>

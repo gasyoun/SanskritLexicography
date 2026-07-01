@@ -1,6 +1,6 @@
 # vah
 
-_PWG article — 51 sub-card(s), 400 sense(s) · RU 138/400 · EN 372/400_
+_PWG article — 51 sub-card(s), 419 sense(s) · RU 366/419 · EN 372/419_
 
 ## vah
 
@@ -2059,7 +2059,7 @@ u. s. w.) [MBH. 1,3801.] [Spr. 512.]
 - **EN:** — Vgl. *prodvāha*.
   <sub>DCS 1857 · attested</sub>
 
-## samudvah
+## samud-vah
 
 `vah~~h0_22_samud`
 
@@ -2067,23 +2067,38 @@ u. s. w.) [MBH. 1,3801.] [Spr. 512.]
 **1)** — *samud*
  1) hinaustragen, forttragen: *narendraṃ didhakṣayantaḥ samudūhurārāt*
 [BHAṬṬ. 3,33.]
+
+- **RU:** — *samud*
+ 1) уносить, увозить прочь: *narendraṃ didhakṣayantaḥ samudūhurārāt*
+[BHAṬṬ. 3,33.]
 - **EN:** — *samud*
  1) "to carry out, carry away": *narendraṃ didhakṣayantaḥ samudūhurārāt*
 [BHAṬṬ. 3,33.]
+  <sub>attested</sub>
 
 **2)** — 2) heimführen, heirathen (ein Mädchen)
+[YĀJÑ. 3,261.]
+[R. 2,107,3] ([115,3] [GORR.]). [BHĀG. P. 10,52,24.]
+
+- **RU:** — 2) привести в дом (жены), жениться (на девушке)
 [YĀJÑ. 3,261.]
 [R. 2,107,3] ([115,3] [GORR.]). [BHĀG. P. 10,52,24.]
 - **EN:** — 2) "to take home, marry" (a girl)
 [YĀJÑ. 3,261.]
 [R. 2,107,3] ([115,3] [GORR.]). [BHĀG. P. 10,52,24.]
+  <sub>attested</sub>
 
 **3)** — 3) aufheben: *vajrasāramayaṃ śiśum*
+[MBH. 2,718.] *kṛcchrādiva samudvahan . padāni*
+[15,171.]
+
+- **RU:** — 3) поднимать, снимать (устранять): *vajrasāramayaṃ śiśum*
 [MBH. 2,718.] *kṛcchrādiva samudvahan . padāni*
 [15,171.]
 - **EN:** — 3) "to lift, raise": *vajrasāramayaṃ śiśum*
 [MBH. 2,718.] *kṛcchrādiva samudvahan . padāni*
 [15,171.]
+  <sub>attested</sub>
 
 **4)** — 4) tragen: *jaṭābhāram*
 [HARIV. 2825.] [12306.] *mantridhurām*
@@ -2091,6 +2106,15 @@ u. s. w.) [MBH. 1,3801.] [Spr. 512.]
 [86,9.] *mālām*
 [MBH. 13,982.] *duḥkhāni*
 [780.] *manasā, hṛdayena* im Herzen tragen, eingedenk sein
+[HARIV. 8749.]
+[R. 7,17,16.]
+
+- **RU:** — 4) нести: *jaṭābhāram*
+[HARIV. 2825.] [12306.] *mantridhurām*
+[KATHĀS. 4,136.] *tadrājyacintābhāram*
+[86,9.] *mālām*
+[MBH. 13,982.] *duḥkhāni*
+[780.] *manasā, hṛdayena* носить в сердце, помнить
 [HARIV. 8749.]
 [R. 7,17,16.]
 - **EN:** — 4) "to bear, carry": *jaṭābhāram*
@@ -2101,8 +2125,15 @@ u. s. w.) [MBH. 1,3801.] [Spr. 512.]
 [780.] *manasā, hṛdayena* "to bear in the heart, to be mindful of"
 [HARIV. 8749.]
 [R. 7,17,16.]
+  <sub>attested</sub>
 
 **5)** — 5) an sich tragen, haben, an den Tag legen, äussern: *cakṣurmanoharaṃ pīnaṃ mekhalādāmabhūṣitam . samudvahantī jaghanam*
+[R. 7,26,16.] *śakrakārmukarucam*
+[VARĀH. BṚH. S. 44,25.] *svedam*
+[Verz. d. Oxf. H. 171,a,1.] *viṣādam*
+[R. 6,82,22.]
+
+- **RU:** — 5) нести на себе, иметь, проявлять, обнаруживать: *cakṣurmanoharaṃ pīnaṃ mekhalādāmabhūṣitam . samudvahantī jaghanam*
 [R. 7,26,16.] *śakrakārmukarucam*
 [VARĀH. BṚH. S. 44,25.] *svedam*
 [Verz. d. Oxf. H. 171,a,1.] *viṣādam*
@@ -2112,6 +2143,7 @@ u. s. w.) [MBH. 1,3801.] [Spr. 512.]
 [VARĀH. BṚH. S. 44,25.] *svedam*
 [Verz. d. Oxf. H. 171,a,1.] *viṣādam*
 [R. 6,82,22.]
+  <sub>attested</sub>
 
 ## upavah
 
@@ -2161,7 +2193,7 @@ u. s. w.) [MBH. 1,3801.] [Spr. 512.]
 **3)** — Vgl. *upavaha, upavāhin* fg.
 - **EN:** — Vgl. *upavaha, upavāhin* fg.
 
-## samupavah
+## samupa+vah
 
 `vah~~h0_24_samupa`
 
@@ -2169,18 +2201,29 @@ u. s. w.) [MBH. 1,3801.] [Spr. 512.]
 **1)** — *samupa*
  1) mit sich führen, strömen lassen: *(nadī) śoṇitaṃ samupāvahat*
 [MBH. 9,2400.]
+
+- **RU:** — *samupa*
+ 1) нести с собой, заставлять течь: *(nadī) śoṇitaṃ samupāvahat*
+[MBH. 9,2400.]
 - **EN:** — *samupa*
  1) "to carry along with itself, to let stream": *(nadī) śoṇitaṃ samupāvahat*
 [MBH. 9,2400.]
+  <sub>attested</sub>
 
 **2)** — 2) pass. heranrücken, einbrechen, beginnen: *rātriśca samupohyate*
 [HARIV. 7569.] *saṃgrāme samupo|e*
 [ĀŚV. GṚHY. 3,12,1.] *indrau samupoḍhe* so v. a. aufgegangen
 [UTTARAR. 99,14 (131,14).] könnte eben so gut zu 1. *ūh* gezogen werden.
+
+- **RU:** — 2) pass. приближаться, наступать, начинаться: *rātriśca samupohyate*
+[HARIV. 7569.] *saṃgrāme samupo|e*
+[ĀŚV. GṚHY. 3,12,1.] *indrau samupoḍhe* так v. a. взошло
+[UTTARAR. 99,14 (131,14).] можно было бы с равным правом отнести и к 1. *ūh*.
 - **EN:** — 2) pass. "to draw near, set in, begin": *rātriśca samupohyate*
 [HARIV. 7569.] *saṃgrāme samupo|e*
 [ĀŚV. GṚHY. 3,12,1.] *indrau samupoḍhe* thus v. a. "risen"
 [UTTARAR. 99,14 (131,14).] could just as well be assigned to 1. *ūh*.
+  <sub>attested</sub>
 
 ## nivah
 
@@ -3027,11 +3070,31 @@ u. s. w.) [MBH. 1,3801.] [Spr. 512.]
 [Spr. (II) 4053.]
 - **EN:** 1. *vah*, intens. *vāvahīti* to carry, bear: *ratnabhāram* [Spr. (II) 4053.]
 
-**1)** — *ati* caus.
+**1)** *vah*¦, intens. *vāvahīti* tragen: *ratnabhāram*
+[Spr. (II) 4053.]
+— *ati* caus.
  1) vgl.
 [HEM.]
 [YOGAŚ. 1,35.]
+— *ud*
+ 4) *bhartāramudvahantīm* so v. a. auf sich liegen habend
+[BHOJAPRAB. 90,6.] [Sp. 866, Z. 6 lies 864 st. 846.]
+— *saṃpra* s. *saṃpravāha* .
+— *vi*
+
+- **RU:** *vah*¦, intens. *vāvahīti* «нести, везти»: *ratnabhāram*
+[Spr. (II) 4053.]
+— *ati* caus.
+ 1) vgl.
+[HEM.]
+[YOGAŚ. 1,35.]
+— *ud*
+ 4) *bhartāramudvahantīm* так v. a. «имея на себе / неся на себе (некое бремя, обязанность)»
+[BHOJAPRAB. 90,6.] [Sp. 866, Z. 6 lies 864 st. 846.]
+— *saṃpra* s. *saṃpravāha* .
+— *vi*
 - **EN:** *ati* caus. 1) vgl. [HEM.] [YOGAŚ. 1,35.]
+  <sub>attested</sub>
 
 **4)** — *ud*
  4) *bhartāramudvahantīm* so v. a. auf sich liegen habend
@@ -3048,157 +3111,307 @@ u. s. w.) [MBH. 1,3801.] [Spr. 512.]
 
 **caus2)** — *saṃvi* med. mit Andern (instr.) eine Ehe eingehen: *saṃvivahante gargaiḥ*
 [PAT. a. a. O. 1,247,a.]
+
+- **RU:** — *saṃvi* med. «с другими» (instr.) «вступать в брак»: *saṃvivahante gargaiḥ*
+[PAT. a. a. O. 1,247,a.]
 - **EN:** *saṃvi* med. with others (instr.) to enter into a marriage: *saṃvivahante gargaiḥ* [PAT. a. a. O. 1,247,a.]
+  <sub>attested</sub>
+
+**2)** 1) wegführen: *oghena vyuhyamānānāṃ* (Conj. für *vyū˚) plavānāṃ srotaso* (so zu lesen) *yathā*
+[Spr. (II) 3820.]
+
+- **RU:** 1) «уводить, увозить прочь»: *oghena vyuhyamānānāṃ* (Conj. вместо *vyū˚) plavānāṃ srotaso* (так следует читать) *yathā*
+[Spr. (II) 3820.]
+  <sub>attested</sub>
 
 ## vah
 
 `vah~~h0_zz_pw00`
 
 
-**1a)** **1.** √*vah*¦, *vahati*, *˚te* (später nur metrisch), *uhīta* (ausnahmsweise), *uhyate* Pass.
-— 1〉 trans.
+**1a)** — 1〉 trans.
 — a〉 führen, fahren, mit Gespann oder zu Schiffe (Instr.) bringen, — fortführen, den Wagen (Acc.) ziehen, die Rosse (Acc.) führen, so v. a. lenken. Agni führt oder geleitet die Gegenstände des Opfers zu den Göttern. Pass. geführt —, gefahren —, gezogen werden, fahren mit oder zu (Instr.).
+
+- **RU:** — 1〉 trans.
+— a〉 вести, везти, упряжкой или на судне (Instr.) доставлять, — увозить, колесницу (Acc.) тянуть, коней (Acc.) вести, так v. a. править. Agni ведёт или сопровождает предметы жертвоприношения к богам. Pass. быть ведомым —, везомым —, тянутым, ехать с чем-л. или к чему-л. (Instr.).
 - **EN:** **1.** √*vah* (*vahati*), *˚te* (later only metrically), *uhīta* (exceptionally), *uhyate* Pass.
  — 1) trans.
  — a) to lead, drive, to bring — convey by team or by ship (Instr.), to draw the chariot (Acc.), to lead the horses (Acc.), thus v. a. to guide. Agni leads or conducts the objects of the sacrifice to the gods. Pass. to be led —, driven —, drawn, to drive with or to (Instr.).
+  <sub>attested</sub>
 
 **1b)** — b〉 Wasser u. s. w. führen (von Flüssen), fliessen lassen (Thränen).
+
+- **RU:** — b〉 воду u. s. w. нести (о реках), проливать (слёзы).
 - **EN:** — b) to bear water u. s. w. (of rivers), to let flow (tears).
+  <sub>attested</sub>
 
 **1c)** — c〉 zuführen, bringen; verschaffen, bewirken.
+
+- **RU:** — c〉 доставлять, приносить; доставать, вызывать.
 - **EN:** — c) to bring to, convey; to procure, bring about.
+  <sub>attested</sub>
 
 **1d)** — d〉 darbringen (ein Opfer).
+
+- **RU:** — d〉 приносить (жертву).
 - **EN:** — d) to offer (a sacrifice).
+  <sub>attested</sub>
 
 **1e)** — e〉 in die Weite führen, verbreiten.
+
+- **RU:** — e〉 вести вдаль, распространять.
 - **EN:** — e) to lead far afield, to spread, diffuse.
+  <sub>attested</sub>
 
 **1f)** — f〉 wegführen, hintreiben, fortschleppen; rauben. Pass. weggeführt u. s. w. werden.
+
+- **RU:** — f〉 уводить, угонять, утаскивать; похищать. Pass. быть уведённым u. s. w. .
 - **EN:** — f) to lead away, drive off, drag off; to rob. Pass. to be led away u. s. w..
+  <sub>attested</sub>
 
 **1g)** — g〉 heimführen, heirathen (vom Manne, ausnahmsweise auch vom Weibe). Med. [ĀPAST. 2,12,1. 2].
+
+- **RU:** — g〉 вводить в дом (жену), жениться (о мужчине, в виде исключения также о женщине). Med. [ĀPAST. 2,12,1. 2].
 - **EN:** — g) to lead home, to marry (of the man, exceptionally also of the woman). Med. [ĀPAST. 2,12,1. 2].
+  <sub>attested</sub>
 
 **1h)** — h〉 mit sich —, bei sich führen.
+
+- **RU:** — h〉 нести при себе, иметь при себе.
 - **EN:** — h) to carry with —, to have about one.
+  <sub>attested</sub>
 
 **1i)** — i〉 tragen (auch von Kleidungsstücken), — auf (Instr. oder Loc.). *garbham* eine Leibesfrucht tragen; *śiras* (auch *śirāṃsi garvitāni* und mit *uccaistarām*) den Kopf hoch tragen; die Erde tragen auch so v. a. regieren.
+
+- **RU:** — i〉 носить (также об одежде), — на (Instr. или Loc.). *garbham* носить плод во чреве; *śiras* (также *śirāṃsi garvitāni* и с *uccaistarām*) высоко держать голову; землю нести, также так v. a. править.
 - **EN:** — i) to wear, to bear (also of garments), — upon (Instr. or Loc.). *garbham* to bear a child in the womb; *śiras* (also *śirāṃsi garvitāni* and with *uccaistarām*) to carry one's head high; to bear the earth, also thus v. a. to rule.
+  <sub>attested</sub>
 
 **1k)** — k〉 tragen, so v. a. am Leben erhalten.
+
+- **RU:** — k〉 нести, так v. a. поддерживать жизнь.
 - **EN:** — k) to bear, support, thus v. a. to keep alive, sustain.
+  <sub>attested</sub>
 
 **1l)** — l〉 ertragen, erdulden [186,25].
+
+- **RU:** — l〉 терпеть, сносить [186,25].
 - **EN:** — l) to bear, endure [186,25].
+  <sub>attested</sub>
 
 **1m)** — m〉 ertragen, s. v. a. nachsehen, verzeihen.
+
+- **RU:** — m〉 терпеть, s. v. a. прощать, спускать.
 - **EN:** — m) to bear, s. v. a. to overlook, forgive.
+  <sub>attested</sub>
 
 **1n)** — n〉 an sich tragen, so v. a. haben [Spr. 7843].
+
+- **RU:** — n〉 носить на себе, так v. a. иметь [Spr. 7843].
 - **EN:** — n) to bear upon oneself, thus v. a. to have [Spr. 7843].
+  <sub>attested</sub>
 
 **1o)** — o〉 sich unterziehen, sich hingeben, sich unterwerfen. *agnim*, *viṣam*. *tulām* sich dem Gottesurtheil mit dem Feuer, dem Gift, der Wage unterwerfen.
+
+- **RU:** — o〉 подвергать себя, предаваться, подчиняться. *agnim*, *viṣam*. *tulām* подвергать себя божьему суду огнём, ядом, весами.
 - **EN:** — o) to undergo, to devote oneself to, to submit oneself. *agnim*, *viṣam*. *tulām* to submit oneself to the ordeal by fire, by poison, by the balance.
+  <sub>attested</sub>
 
 **1p)** — p〉 empfinden (einen Schmerz) [302,27].
+
+- **RU:** — p〉 испытывать (боль) [302,27].
 - **EN:** — p) to feel (a pain) [302,27].
+  <sub>attested</sub>
 
 **1q)** — q〉 an den Tag legen, äussern [PAÑCAD. 38] (*avahat* zu lesen).
+
+- **RU:** — q〉 проявлять, высказывать [PAÑCAD. 38] (следует читать *avahat*).
 - **EN:** — q) to display, to express [PAÑCAD. 38] (read *avahat*).
+  <sub>attested</sub>
 
 **1r)** — r〉 bezahlen (als Strafe).
+
+- **RU:** — r〉 платить (в качестве штрафа).
 - **EN:** — r) to pay (as a fine).
+  <sub>attested</sub>
 
 **1s)** — s〉 zubringen (eine Zeit).
+
+- **RU:** — s〉 проводить (время).
 - **EN:** — s) to spend (a time).
+  <sub>attested</sub>
 
 **1t)** — t〉 *sahasā vahan* [HARIV. 4453] fehlerhaft für *manasā japan*.
+
+- **RU:** — t〉 *sahasā vahan* [HARIV. 4453] ошибочно вместо *manasā japan*.
 - **EN:** — t) *sahasā vahan* [HARIV. 4453] erroneous for *manasā japan*.
+  <sub>attested</sub>
 
 **2)** — 2〉 intrans.
+— a〉 zu Wagen oder mit Pferden (Instr.) fahren, den Wagen lenken, am Wagen u. s. w. ziehen, dahinfahren, laufen.
+
+- **RU:** — 2〉 intrans.
+— a〉 на колеснице или с конями (Instr.) ехать, править колесницей, в колесницу u. s. w. быть впряжённым, катиться, бежать.
 - **EN:** — 2) intrans.
+  <sub>attested</sub>
 
 **2a)** — a〉 zu Wagen oder mit Pferden (Instr.) fahren, den Wagen lenken, am Wagen u. s. w. ziehen, dahinfahren, laufen.
 - **EN:** — a) to drive in a chariot or with horses (Instr.), to drive, to guide the chariot, to draw u. s. w. at the chariot, to drive along, to run.
 
 **2b)** — b〉 zu Schiffe (Instr.) fahren, dem Wasser entlang hinfahren, schwimmen.
+
+- **RU:** — b〉 на судне (Instr.) плыть, идти вдоль воды, плавать.
 - **EN:** — b) to sail by ship (Instr.), to travel along the water, to swim.
+  <sub>attested</sub>
 
 **2c)** — c〉 dahinfahren vom Winde, so v. a. wehen [187,15].
+
+- **RU:** — c〉 нестись, лететь о ветре, так v. a. веять [187,15].
 - **EN:** — c) to course along of the wind, thus v. a. to blow [187,15].
+  <sub>attested</sub>
 
 **2d)** — d〉 dahinfliessen (von Jahren) [HARṢAC. 28,24].
+
+- **RU:** — d〉 протекать (о годах) [HARṢAC. 28,24].
 - **EN:** — d) to flow on (of years) [HARṢAC. 28,24].
+  <sub>attested</sub>
 
 **3)** — 3〉 *ūḍha*
+— a〉 weggeführt, fortgetrieben, — geschleppt, geraubt.
+
+- **RU:** — 3〉 *ūḍha*
+— a〉 уведённый, угнанный, — утащенный, похищенный.
 - **EN:** — 3) *ūḍha*
+  <sub>attested</sub>
 
 **3a)** — a〉 weggeführt, fortgetrieben, — geschleppt, geraubt.
 - **EN:** — a) led away, driven off, — dragged off, robbed.
 
 **3b)** — b〉 _f._ heimgeführt, so v. a. geheirathet, verheirathet.
+
+- **RU:** — b〉 _f._ введённая в дом, так v. a. взятая в жёны, замужняя.
 - **EN:** — b) _f._ led home, thus v. a. married, wedded.
+  <sub>attested</sub>
 
 **3c)** — c〉 getragen, — auf (im Comp. vorangehend).
+
+- **RU:** — c〉 несомый, — на (стоящее впереди в Comp.).
 - **EN:** — c) carried, — upon (preceding in Comp.).
+  <sub>attested</sub>
 
 **3d)** — d〉 herangekommen. *ūḍhavayas* _Adj._ so v. a. erwachsen.
+
+- **RU:** — d〉 достигший, наступивший. *ūḍhavayas* _Adj._ так v. a. взрослый.
 - **EN:** — d) come up, arrived. *ūḍhavayas* _Adj._ thus v. a. grown up, adult.
+  <sub>attested</sub>
 
 **3e)** — e〉 geäussert, an den Tag getreten [BHĀG. P. 2,7,25].
+
+- **RU:** — e〉 высказанный, проявившийся [BHĀG. P. 2,7,25].
 - **EN:** — e) expressed, brought to light [BHĀG. P. 2,7,25].
+  <sub>attested</sub>
 
 **4)** — 4〉 *voḍha* geehelicht (*bhāryāśata*).
+
+- **RU:** — 4〉 *voḍha* взятая в жёны (*bhāryāśata*).
 - **EN:** — 4) *voḍha* wedded (*bhāryāśata*).
+  <sub>attested</sub>
 
 **caus_intro)** — Caus. *vāhayati*, *˚te* (metrisch)
+
+- **RU:** — Caus. *vāhayati*, *˚te* (метрически)
 - **EN:** — Caus. *vāhayati*, *˚te* (metrically)
+  <sub>attested</sub>
 
 **caus1)** — 1〉 fahren lassen, einen Wagen laufen lassen, Pferde u. s. w. ziehen lassen, — *Etwas (mit doppeltem Acc.), lenken. Pass. zum Ziehen angehalten werden [HEM. PAR. 1,168].
+
+- **RU:** — 1〉 давать ехать, колеснице давать катиться, коней u. s. w. давать тянуть, — *что-л. (с двойным Acc.), править. Pass. быть побуждаемым к тяге [HEM. PAR. 1,168].
 - **EN:** — 1) to let drive, to let a chariot run, horses u. s. w. let pull, — *something (with double Acc.), to guide. Pass. to be made to draw [HEM. PAR. 1,168].
+  <sub>attested</sub>
 
 **caus2)** — 2〉 zu Wagen Etwas führen.
+
+- **RU:** — 2〉 на колеснице везти что-л..
 - **EN:** — 2) to convey something by chariot.
+  <sub>attested</sub>
 
 **caus3)** — 3〉 *Jmd lenken lassen, mit doppeltem Acc.
+
+- **RU:** — 3〉 *давать кому-л. править, с двойным Acc.
 - **EN:** — 3) *to have someone guided, with double Acc.
+  <sub>attested</sub>
 
 **caus4)** — 4〉 ein Schiff führen, — lenken.
+
+- **RU:** — 4〉 вести судно, — управлять.
 - **EN:** — 4) to steer a ship, — to guide it.
+  <sub>attested</sub>
 
 **caus5)** — 5〉 zu Wagen fahren, sich mittelst eines Vehikels begeben zu (Acc.).
+
+- **RU:** — 5〉 ехать на колеснице, отправляться на каком-л. средстве передвижения к (Acc.).
 - **EN:** — 5) to ride in a chariot, to betake oneself by means of a vehicle to (Acc.).
+  <sub>attested</sub>
 
 **caus6)** — 6〉 Pass. sich treiben lassen, getrieben —, angetrieben werden (eig. und übertr.) [CARAKA. 6,2].
+
+- **RU:** — 6〉 Pass. давать себя нести, быть гонимым —, побуждаемым (eig. и übertr.) [CARAKA. 6,2].
 - **EN:** — 6) Pass. to let oneself be driven, to be driven —, urged on (eig. and übertr.) [CARAKA. 6,2].
+  <sub>attested</sub>
 
 **caus7)** — 7〉 Etwas tragen lassen, — von (Instr.).
+
+- **RU:** — 7〉 давать нести что-л., — кем-л. (Instr.).
 - **EN:** — 7) to have something carried, — by (Instr.).
+  <sub>attested</sub>
 
 **caus8)** — 8〉 Jmd tragen lassen, — auf (Loc.), zum Tragen anstellen.
+
+- **RU:** — 8〉 давать нести кого-л., — на (Loc.), приставлять к переноске.
 - **EN:** — 8) to have someone carried, — upon (Loc.), to employ for carrying.
+  <sub>attested</sub>
 
 **caus9)** — 9〉 sich tragen lassen auf, so v. a. reiten auf (Acc.).
+
+- **RU:** — 9〉 давать нести себя на, так v. a. ехать верхом на (Acc.).
 - **EN:** — 9) to have oneself borne upon, thus v. a. to ride upon (Acc.).
+  <sub>attested</sub>
 
 **caus10)** — 10〉 Pass. getragen werden.
+
+- **RU:** — 10〉 Pass. быть носимым.
 - **EN:** — 10) Pass. to be carried.
+  <sub>attested</sub>
 
 **caus11)** — 11〉 betreten (einen Weg); nur Pass.
+
+- **RU:** — 11〉 вступать (на путь); лишь Pass.
 - **EN:** — 11) to tread (a path); only Pass.
+  <sub>attested</sub>
 
 **caus12)** — 12〉 zurücklegen (einen Weg).
+
+- **RU:** — 12〉 преодолевать, проходить (путь).
 - **EN:** — 12) to cover, traverse (a path).
+  <sub>attested</sub>
 
 **caus13)** — 13〉 Etwas in Bewegung setzen, wirken —, arbeiten lassen.
+
+- **RU:** — 13〉 приводить что-л. в движение, заставлять действовать —, работать.
 - **EN:** — 13) to set something in motion, to make it work —, operate.
+  <sub>attested</sub>
 
 **caus14)** — 14〉 verabreichen, eingeben (eine Arzenei). *madhuvāhita* in Honig eingegeben [BHĀVAPR. 2,114].
+
+- **RU:** — 14〉 давать, вводить (лекарство). *madhuvāhita* данное с мёдом [BHĀVAPR. 2,114].
 - **EN:** — 14) to administer, to give (a medicine). *madhuvāhita* given in honey [BHĀVAPR. 2,114].
+  <sub>attested</sub>
 
 **caus15)** — 15〉 Jmd anführen, betrügen. Nur *vāhita* angeführt.
+
+- **RU:** — 15〉 обманывать, дурачить кого-л.. Лишь *vāhita* обманутый.
 - **EN:** — 15) to deceive someone, to cheat. Only *vāhita* deceived.
+  <sub>attested</sub>
 
 **intens_intro)** — Intens.
 - **EN:** — Intens.
@@ -3207,19 +3420,33 @@ u. s. w.) [MBH. 1,3801.] [Spr. 512.]
 - **EN:** — 1) *vānīvāhyate* to lead back and forth. *vanīvāhita* [ŚAT. BR. 6,8,1,3].
 
 **intens2)** — 2〉 *vāvahīti* tragen.
+
+- **RU:** — 2〉 *vāvahīti* нести.
 - **EN:** — 2) *vāvahīti* to carry.
+  <sub>attested</sub>
 
 **ati_intro)** — Mit *ati*
+— 1〉 hinüberführen über.
+
+- **RU:** — С *ati*
+— 1〉 переводить через.
 - **EN:** — With *ati*
+  <sub>attested</sub>
 
 **ati1)** — 1〉 hinüberführen über.
 - **EN:** — 1) to lead across over.
 
 **ati2)** — 2〉 den Wagen vorbeifahren lassen.
+
+- **RU:** — 2〉 колеснице давать проехать мимо.
 - **EN:** — 2) to let the chariot drive past.
+  <sub>attested</sub>
 
 **ati3)** — 3〉 verbringen (einer Zeit).
+
+- **RU:** — 3〉 проводить (время).
 - **EN:** — 3) to spend (a time).
+  <sub>attested</sub>
 
 **ati_intro2)** — Caus.
 - **EN:** — Caus.
@@ -3228,19 +3455,34 @@ u. s. w.) [MBH. 1,3801.] [Spr. 512.]
 - **EN:** — 1) to tread (a path). Only *ativāhita*.
 
 **ati5)** — 2〉 versetzen, an einen andern Ort bringen.
+
+- **RU:** — 2〉 перемещать, доставлять в другое место.
 - **EN:** — 2) to transfer, to bring to another place.
+  <sub>attested</sub>
 
 **ati6)** — 3〉 glücklich über Etwas (Acc.) hinüberkommen [299,32] (im Prākrit).
+
+- **RU:** — 3〉 благополучно преодолеть что-л. (Acc.) перейти [299,32] (в Prākrit).
 - **EN:** — 3) to come safely across something (Acc.) [299,32] (in Prākrit).
+  <sub>attested</sub>
 
 **ati7)** — 4〉 verbringen (eine Zeit) [HEM. PAR. 1,246]. *Mit *vyati* Med. (*vyatihāre*).
+
+- **RU:** — 4〉 проводить (время) [HEM. PAR. 1,246]. *С *vyati* Med. (*vyatihāre*).
 - **EN:** — 4) to spend (a time) [HEM. PAR. 1,246]. *With *vyati* Med. (*vyatihāre*).
+  <sub>attested</sub>
 
 **anu_intro)** — Mit *samati* Caus. zubringen (eine Zeit).
+
+- **RU:** — С *samati* Caus. проводить (время).
 - **EN:** — With *samati* Caus. to spend (a time).
+  <sub>attested</sub>
 
 **abhi_intro)** — Mit *adhi* tragen. — *adhyūḍha* (s. auch bes.) in der Bed. aufgesetzt auf gehört zu **1.** *ūh*.
+
+- **RU:** — С *adhi* нести. — *adhyūḍha* (s. также bes.) в Bed. возложенный на принадлежит к **1.** *ūh*.
 - **EN:** — With *adhi* to bear. — *adhyūḍha* (s. also bes.) in the Bed. set upon belongs under **1.** *ūh*.
+  <sub>attested</sub>
 
 **anuved_intro)** — Mit *anu*
 - **EN:** — With *anu*
@@ -3249,28 +3491,51 @@ u. s. w.) [MBH. 1,3801.] [Spr. 512.]
 - **EN:** — 1) to lead along, with Acc.
 
 **anuved2)** — 2〉 Pass. fortgetrieben werden (vom Strome).
+
+- **RU:** — 2〉 Pass. быть уносимым (течением).
 - **EN:** — 2) Pass. to be driven off (by the stream).
+  <sub>attested</sub>
 
 **anuved3)** — 3〉 Med. nachschlagen, ähnlich werden.
+
+- **RU:** — 3〉 Med. уродиться в кого-л., становиться похожим.
 - **EN:** — 3) Med. to take after, to become similar.
+  <sub>attested</sub>
 
 **anuved4)** — 4〉 betreiben [MBH. 12,56,51] (nach [KERN] *anuvahanti* St. *anuvihanti* zu lesen).
+
+- **RU:** — 4〉 вести, заниматься [MBH. 12,56,51] (следует читать по [KERN] *anuvahanti* St. *anuvihanti*).
 - **EN:** — 4) to pursue, carry on [MBH. 12,56,51] (to be read after [KERN] *anuvahanti* St. *anuvihanti*).
+  <sub>attested</sub>
 
 **apa_intro)** — Mit *apa*
+— 1〉 wegfahren, wegführen.
+
+- **RU:** — С *apa*
+— 1〉 уезжать, уводить.
 - **EN:** — With *apa*
+  <sub>attested</sub>
 
 **apa1)** — 1〉 wegfahren, wegführen.
 - **EN:** — 1) to drive away, to lead away.
 
 **apa2)** — 2〉 wegtreiben, verscheuchen.
+
+- **RU:** — 2〉 прогонять, отгонять.
 - **EN:** — 2) to drive off, to chase away.
+  <sub>attested</sub>
 
 **apa3)** — 3〉 abwerfen (ein Gewand).
+
+- **RU:** — 3〉 сбрасывать (одежду).
 - **EN:** — 3) to throw off (a garment).
+  <sub>attested</sub>
 
 **apa4)** — 4〉 aufgeben, fahren lassen.
+
+- **RU:** — 4〉 отказываться, оставлять.
 - **EN:** — 4) to give up, to abandon.
+  <sub>attested</sub>
 
 **ava_intro)** — Caus.
 - **EN:** — Caus.
@@ -3279,25 +3544,46 @@ u. s. w.) [MBH. 1,3801.] [Spr. 512.]
 - **EN:** — 1) to drive away, to lead away, to remove.
 
 **ava2)** — 2〉 vertreiben, verjagen. *apovāhita* (!) [BHĀG. P.]
+
+- **RU:** — 2〉 изгонять, прогонять. *apovāhita* (!) [BHĀG. P.]
 - **EN:** — 2) to drive out, to chase off. *apovāhita* (!) [BHĀG. P.]
+  <sub>attested</sub>
 
 **ava3)** — 3〉 sich aus dem Staube machen.
+
+- **RU:** — 3〉 улепётывать, обращаться в бегство.
 - **EN:** — 3) to make off, to clear out.
+  <sub>attested</sub>
 
 **ava4)** — 4〉 **apavāhita* = *pihita* [GAL.]
+
+- **RU:** — 4〉 **apavāhita* = *pihita* [GAL.]
 - **EN:** — 4) **apavāhita* = *pihita* [GAL.]
+  <sub>attested</sub>
 
 **apaava_intro)** — Mit *pratyapa* zurückdrängen, -stossen.
+
+- **RU:** — С *pratyapa* оттеснять, отталкивать назад.
 - **EN:** — With *pratyapa* to push back, to repel.
+  <sub>attested</sub>
 
 **a_intro)** — Mit *vyapa*, *vyapohya* und *vyapoḍha* gehören zu **1.** *ūh* (vgl. auch [Nachtr. 5]).
+
+- **RU:** — С *vyapa*, *vyapohya* и *vyapoḍha* принадлежат к **1.** *ūh* (vgl. также [Nachtr. 5]).
 - **EN:** — With *vyapa*, *vyapohya* and *vyapoḍha* belong under **1.** *ūh* (vgl. also [Nachtr. 5]).
+  <sub>attested</sub>
 
 **a2)** — Mit *abhi* hinfahren, herbei —, hinführen zu (Acc.).
+
+- **RU:** — С *abhi* подъезжать, при —, подводить к (Acc.).
 - **EN:** — With *abhi* to drive there, to bring —, to lead to (Acc.).
+  <sub>attested</sub>
 
 **a3)** — Caus. zubringen (eine Zeit). Richtig *ati*.
+
+- **RU:** — Caus. проводить (время). Правильно *ati*.
 - **EN:** — Caus. to spend (a time). Correctly *ati*.
+  <sub>attested</sub>
 
 **a_intro2)** — Mit *ā*
 - **EN:** — With *ā*
@@ -3306,46 +3592,87 @@ u. s. w.) [MBH. 1,3801.] [Spr. 512.]
 - **EN:** — 1) to bring near, to bring to, to convey, — into (Acc.), to procure. Partic. *oḍha*
 
 **a5)** — 2〉 heimführen (als Gattin).
+
+- **RU:** — 2〉 вводить в дом (в качестве жены).
 - **EN:** — 2) to lead home (as a wife).
+  <sub>attested</sub>
 
 **a6)** — 3〉 eintragen, bezahlen.
+
+- **RU:** — 3〉 вносить, платить.
 - **EN:** — 3) to enter, to pay.
+  <sub>attested</sub>
 
 **a7)** — 4〉 fortführen, forttreiben.
+
+- **RU:** — 4〉 уводить, угонять.
 - **EN:** — 4) to lead away, to drive off.
+  <sub>attested</sub>
 
 **a8)** — 5〉 herbeifahren (intrans.) [ṚV. 4,14,3. 8,54,6].
+
+- **RU:** — 5〉 подъезжать (intrans.) [ṚV. 4,14,3. 8,54,6].
 - **EN:** — 5) to drive up (intrans.) [ṚV. 4,14,3. 8,54,6].
+  <sub>attested</sub>
 
 **a9)** — 6〉 sich ergiessen, fliessen.
+
+- **RU:** — 6〉 изливаться, течь.
 - **EN:** — 6) to pour forth, to flow.
+  <sub>attested</sub>
 
 **a10)** — 7〉 tragen. *rājyam* so v. a. regieren.
+
+- **RU:** — 7〉 нести. *rājyam* так v. a. править.
 - **EN:** — 7) to bear. *rājyam* thus v. a. to rule.
+  <sub>attested</sub>
 
 **a11)** — 8〉 an den Tag legen, anwenden.
+
+- **RU:** — 8〉 проявлять, применять.
 - **EN:** — 8) to display, to apply.
+  <sub>attested</sub>
 
 **ah_intro)** — Caus. herbeirufen, insbes. die Götter zum Opfer u. s. w.
+
+- **RU:** — Caus. призывать, insbes. богов к жертве u. s. w.
 - **EN:** — Caus. to call near, insbes. the gods to the sacrifice u. s. w.
+  <sub>attested</sub>
 
 **abhya_intro)** — Mit *anvā* herbeiführen.
+
+- **RU:** — С *anvā* приводить.
 - **EN:** — With *anvā* to bring near.
+  <sub>attested</sub>
 
 **abhini_intro)** — Mit *abhyā* herbeiführen, bringen [ṚV. 1,134,1].
+
+- **RU:** — С *abhyā* приводить, приносить [ṚV. 1,134,1].
 - **EN:** — With *abhyā* to bring near, to bring [ṚV. 1,134,1].
+  <sub>attested</sub>
 
 **ud_intro)** — Mit *udā*
+— 1〉 davonführen, wegfahren.
+
+- **RU:** — С *udā*
+— 1〉 уводить, увозить.
 - **EN:** — With *udā*
+  <sub>attested</sub>
 
 **ud1)** — 1〉 davonführen, wegfahren.
 - **EN:** — 1) to lead away, to drive off.
 
 **ud2)** — 2〉 hinaufführen.
+
+- **RU:** — 2〉 возводить наверх.
 - **EN:** — 2) to lead up.
+  <sub>attested</sub>
 
 **ud3)** — 3〉 heimführen, heirathen (ein Weib) [MBH. 6,119,34].
+
+- **RU:** — 3〉 вводить в дом, жениться (на женщине) [MBH. 6,119,34].
 - **EN:** — 3) to lead home, to marry (a woman) [MBH. 6,119,34].
+  <sub>attested</sub>
 
 **ud_intro2)** — Mit *samudā*
 - **EN:** — With *samudā*
@@ -3353,310 +3680,672 @@ u. s. w.) [MBH. 1,3801.] [Spr. 512.]
 **ud4)** — 1〉 hinausführen, — ziehen [HARIV. 2,89,85].
 - **EN:** — 1) to lead out, — to draw out [HARIV. 2,89,85].
 
+**1)** **1.** √*vah*¦, *vahati*, *˚te* (später nur metrisch), *uhīta* (ausnahmsweise), *uhyate* Pass.
+
+- **RU:** **1.** √*vah*¦, *vahati*, *˚te* (позднее лишь метрически), *uhīta* (в виде исключения), *uhyate* Pass.
+  <sub>attested</sub>
+
+**pra_intro)** — Intens.
+— 1〉 *vānīvāhyate* hinundher führen. *vanīvāhita* [ŚAT. BR. 6,8,1,3].
+
+- **RU:** — Intens.
+— 1〉 *vānīvāhyate* водить туда-сюда. *vanīvāhita* [ŚAT. BR. 6,8,1,3].
+  <sub>attested</sub>
+
+**ati_caus_intro)** — Caus.
+— 1〉 betreten (einen Weg). Nur *ativāhita*.
+
+- **RU:** — Caus.
+— 1〉 вступать (на путь). Лишь *ativāhita*.
+  <sub>attested</sub>
+
+**anu_intro)** — Mit *anu*
+— 1〉 führen entlang, mit Acc.
+
+- **RU:** — С *anu*
+— 1〉 вести вдоль, с Acc.
+  <sub>attested</sub>
+
+**apa_caus_intro)** — Caus.
+— 1〉 wegfahren, wegführen, abführen.
+
+- **RU:** — Caus.
+— 1〉 уезжать, уводить, отводить.
+  <sub>attested</sub>
+
+**a_caus_1)** — Mit *ā*
+— 1〉 herbeiführen, zuführen, bringen, — in (Acc.), verschaffen. Partic. *oḍha*
+
+- **RU:** — С *ā*
+— 1〉 приводить, подводить, приносить, — в (Acc.), доставать. Partic. *oḍha*
+  <sub>attested</sub>
+
+**upa2_intro)** — Mit *samudā*
+— 1〉 hinausführen, — ziehen [HARIV. 2,89,85].
+
+- **RU:** — С *samudā*
+— 1〉 выводить, — вытягивать [HARIV. 2,89,85].
+  <sub>attested</sub>
+
 ## vah
 
 `vah~~h0_zz_pw01`
 
 
 **x2)** — 2〉 davonführen, forttragen.
+
+- **RU:** — 2) уводить, уносить прочь.
 - **EN:** — 2) to lead away, to carry off.
+  <sub>attested</sub>
 
 **x3)** — 3〉 Jmd dahinziehen (von Pferden).
+
+- **RU:** — 3) увлекать кого-л. вдаль (везти) (о лошадях).
 - **EN:** — 3) to draw someone along (of horses).
+  <sub>attested</sub>
 
 **x4)** — 4〉 heimführen, heirathen (ein Weib).
+
+- **RU:** — 4) приводить в дом, брать в жёны (женщину).
 - **EN:** — 4) to lead home, to marry (a wife).
+  <sub>attested</sub>
 
 **p1_intro)** — Mit *upā* herbeiführen.
+
+- **RU:** — С *upā* приводить, доставлять.
 - **EN:** — With *upā* to bring near.
+  <sub>attested</sub>
 
 **p2_intro)** — Mit *nirā*
+
+- **RU:** — С *nirā*
 - **EN:** — With *nirā*
+  <sub>attested</sub>
 
 **p2_1)** — 1〉 entführen.
+
+- **RU:** — 1) похищать, увозить.
 - **EN:** — 1) to abduct.
+  <sub>attested</sub>
 
 **p2_2)** — 2〉 holen.
+
+- **RU:** — 2) приносить, приводить.
 - **EN:** — 2) to fetch.
+  <sub>attested</sub>
 
 **p3_intro)** — Mit *samā*
+
+- **RU:** — С *samā*
 - **EN:** — With *samā*
+  <sub>attested</sub>
 
 **p3_1)** — 1〉 zusammen herbeiführen, zusammenbringen, versammeln; Med. etwa sich zusammenfinden.
+
+- **RU:** — 1) сводить вместе, собирать, соединять; Med. — примерно сходиться, собираться (друг с другом).
 - **EN:** — 1) to bring together, to assemble, to gather; Med. perhaps to come together.
+  <sub>attested</sub>
 
 **p3_2)** — 2〉 herbeiführen, herbeiwehen.
+
+- **RU:** — 2) приносить, навевать (о ветре).
 - **EN:** — 2) to bring near, to waft near.
+  <sub>attested</sub>
 
 **p4_intro)** — Mit *ud*
+
+- **RU:** — С *ud*
 - **EN:** — With *ud*
+  <sub>attested</sub>
 
 **p4_1)** — 1〉 hinaufführen, -heben, -ziehen, aufheben.
+
+- **RU:** — 1) возводить вверх, поднимать, вытягивать вверх, поднимать (кверху).
 - **EN:** — 1) to lead up, lift up, draw up, raise.
+  <sub>attested</sub>
 
 **p4_2)** — 2〉 hinausführen, -schaffen, herausziehen (z. B. Pfeile aus dem Köcher).
+
+- **RU:** — 2) выводить наружу, вытаскивать, извлекать (z. B. стрелы из колчана).
 - **EN:** — 2) to lead out, take out, draw out (z. B. arrows from the quiver).
+  <sub>attested</sub>
 
 **p4_3)** — 3〉 in die Höhe bringen (in übertragener Bed.).
+
+- **RU:** — 3) возносить, поднимать (в переносном Bed.).
 - **EN:** — 3) to bring on high (in figurative Bed.).
+  <sub>attested</sub>
 
 **p4_4)** — 4〉 wegführen (die junge Frau aus dem Vaterhaus), überh. heimführen, heirathen. *udūḍhā* geehelicht.
+
+- **RU:** — 4) уводить (молодую женщину из отцовского дома), überh. приводить в дом, брать в жёны. *udūḍhā* взятая в жёны.
 - **EN:** — 4) to lead away (the young woman from her father's house), überh. to lead home, marry. *udūḍhā* wedded.
+  <sub>attested</sub>
 
 **p4_5)** — 5〉 zuführen, bringen, darbringen.
+
+- **RU:** — 5) подводить, приносить, подносить (в жертву).
 - **EN:** — 5) to bring to, convey, offer.
+  <sub>attested</sub>
 
 **p4_6)** — 6〉 tragen, — auf (Instr.). *bhartāram* so v. a. auf sich liegen haben; *mahīm* oder *rājyam* so v. a. regieren; *manasā* im Herzen tragen, so v. a. gedenken.
+
+- **RU:** — 6) нести — на (Instr.). *bhartāram* так v. a. нести на себе (какую-л. обязанность); *mahīm* или *rājyam* так v. a. управлять; *manasā* носить в сердце, так v. a. помнить, хранить в памяти.
 - **EN:** — 6) to bear, — upon (Instr.). *bhartāram* thus v. a. to have lying upon oneself; *mahīm* or *rājyam* thus v. a. to rule; *manasā* to bear in one's heart, thus v. a. to keep in mind.
+  <sub>attested</sub>
 
 **p4_7)** — 7〉 ertragen, erdulden.
+
+- **RU:** — 7) переносить, терпеть, сносить.
 - **EN:** — 7) to bear, to endure.
+  <sub>attested</sub>
 
 **p4_8)** — 8〉 festhalten (Gegensatz aufgeben).
+
+- **RU:** — 8) удерживать, придерживаться (чего-л.) (противоположность оставлять, отказываться).
 - **EN:** — 8) to hold fast (opposite to give up).
+  <sub>attested</sub>
 
 **p4_9)** — 9〉 an sich tragen, haben, besitzen [HEM. PAR. 1,411]. *devīśabdam* den Titel Devī führen [Chr. 328,29].
+
+- **RU:** — 9) носить на себе, иметь, обладать [HEM. PAR. 1,411]. *devīśabdam* носить титул Devī [Chr. 328,29].
 - **EN:** — 9) to bear upon oneself, to have, to possess [HEM. PAR. 1,411]. *devīśabdam* to bear the title Devī [Chr. 328,29].
+  <sub>attested</sub>
 
 **p4_10)** — 10〉 äussern, an den Tag legen.
+
+- **RU:** — 10) проявлять, обнаруживать.
 - **EN:** — 10) to express, to display.
+  <sub>attested</sub>
 
 **p4_11)** — 11〉 zu Ende führen.
+
+- **RU:** — 11) доводить до конца.
 - **EN:** — 11) to bring to an end.
+  <sub>attested</sub>
 
 **p4_12)** — 12〉 **udūḍha* = *pīvara*, *sthūla* gehört wohl zu **1.** *ūh*.
+
+- **RU:** — 12) **udūḍha* = *pīvara*, *sthūla* относится, по-видимому, к **1.** *ūh*.
 - **EN:** — 12) **udūḍha* = *pīvara*, *sthūla* probably belongs under **1.** *ūh*.
+  <sub>lexicographic</sub>
 
 **p4caus_intro)** — Caus.
+
+- **RU:** — Caus.
 - **EN:** — Caus.
+  <sub>attested</sub>
 
 **p4caus1)** — 1〉 verheirathen (ein Mädchen oder einen Mann), — mit (Instr.) [HEM. PAR. 1,210. 216].
+
+- **RU:** — 1) выдавать замуж / женить (девушку или мужчину), — с (Instr.) [HEM. PAR. 1,210. 216].
 - **EN:** — 1) to give in marriage (a girl or a man), — to (Instr.) [HEM. PAR. 1,210. 216].
+  <sub>attested</sub>
 
 **p4caus2)** — 2〉 heimführen, heirathen (ein Mädchen).
+
+- **RU:** — 2) приводить в дом, брать в жёны (девушку).
 - **EN:** — 2) to lead home, to marry (a girl).
+  <sub>attested</sub>
 
 **p5_intro)** — Mit *prod* äussern, an den Tag legen.
+
+- **RU:** — С *prod* проявлять, обнаруживать.
 - **EN:** — With *prod* to express, to display.
+  <sub>attested</sub>
 
 **p6_intro)** — Mit *samud*
+
+- **RU:** — С *samud*
 - **EN:** — With *samud*
+  <sub>attested</sub>
 
 **p6_1)** — 1〉 hinaus-, forttragen.
+
+- **RU:** — 1) выносить, уносить прочь.
 - **EN:** — 1) to carry out, to carry away.
+  <sub>attested</sub>
 
 **p6_2)** — 2〉 heimführen, heirathen (ein Mädchen).
+
+- **RU:** — 2) приводить в дом, брать в жёны (девушку).
 - **EN:** — 2) to lead home, to marry (a girl).
+  <sub>attested</sub>
 
 **p6_3)** — 3〉 aufheben.
+
+- **RU:** — 3) поднимать.
 - **EN:** — 3) to lift up.
+  <sub>attested</sub>
 
 **p6_4)** — 4〉 tragen. *manasā* oder *hṛdayena* im Herzen tragen, eingedenk sein.
+
+- **RU:** — 4) нести. *manasā* или *hṛdayena* носить в сердце, помнить.
 - **EN:** — 4) to bear. *manasā* or *hṛdayena* to bear in the heart, to be mindful.
+  <sub>attested</sub>
 
 **p6_5)** — 5〉 ertragen, erdulden.
+
+- **RU:** — 5) переносить, терпеть.
 - **EN:** — 5) to bear, to endure.
+  <sub>attested</sub>
 
 **p6_6)** — 6〉 an sich tragen, haben [319,16] (im Prākrit).
+
+- **RU:** — 6) носить на себе, иметь [319,16] (в Prākrit).
 - **EN:** — 6) to bear upon oneself, to have [319,16] (in Prākrit).
+  <sub>attested</sub>
 
 **p6_7)** — 7〉 an den Tag legen, äussern.
+
+- **RU:** — 7) обнаруживать, проявлять.
 - **EN:** — 7) to display, to express.
+  <sub>attested</sub>
 
 **p7_intro)** — Mit *upa*
+
+- **RU:** — С *upa*
 - **EN:** — With *upa*
+  <sub>attested</sub>
 
 **p7_1)** — 1〉 herbeiführen, bringen, verschaffen. *upoḍha* herbeigeführt, bewirkt.
+
+- **RU:** — 1) приводить, приносить, доставлять. *upoḍha* приведённый, вызванный (произведённый).
 - **EN:** — 1) to bring near, to convey, to procure. *upoḍha* brought about, effected.
+  <sub>attested</sub>
 
 **p7_2)** — 2〉 Jmd zu Etwas bringen, — verleiten; mit doppeltem Acc.
+
+- **RU:** — 2) приводить кого-л. к чему-л., склонять, соблазнять; с двойным Acc.
 - **EN:** — 2) to bring someone to something, — to induce; with double Acc.
+  <sub>attested</sub>
 
 **p7_3)** — 3〉 **upoḍha* = *ūḍha*.
+
+- **RU:** — 3) **upoḍha* = *ūḍha*.
 - **EN:** — 3) **upoḍha* = *ūḍha*.
+  <sub>lexicographic</sub>
 
 **p7_note)** — Vgl. auch **1.** *ūh*.
+
+- **RU:** — Vgl. также **1.** *ūh*.
 - **EN:** — Vgl. also belongs under **1.** *ūh*.
+  <sub>attested</sub>
 
 **p8_intro)** — Mit *upa* und *upoḍha*.
+
+- **RU:** — С *upa* и *upoḍha*.
 - **EN:** — With *upa* and *upoḍha*.
+  <sub>attested</sub>
 
 **p9_intro)** — Mit *samupa*
+
+- **RU:** — С *samupa*
 - **EN:** — With *samupa*
+  <sub>attested</sub>
 
 **p9_1)** — 1〉 mit sich führen, strömen lassen.
+
+- **RU:** — 1) нести с собой, давать течь.
 - **EN:** — 1) to carry along with oneself, to let stream.
+  <sub>attested</sub>
 
 **p9_2)** — 2〉 Pass. heranrücken, einbrechen, beginnen. *samupoḍha* aufgegangen (Mond). Könnte auch zu 1. *ūh* gehören.
+
+- **RU:** — 2) Pass. надвигаться, наступать, начинаться. *samupoḍha* взошедший (о луне). Могло бы также относиться к 1. *ūh*.
 - **EN:** — 2) Pass. to draw near, to set in, to begin. *samupoḍha* risen (of the moon). Could also belong under 1. *ūh*.
+  <sub>attested</sub>
 
 **p10_intro)** — Mit *ni*
+
+- **RU:** — С *ni*
 - **EN:** — With *ni*
+  <sub>attested</sub>
 
 **p10_1)** — 1〉 hernieder-, hereinführen zu (Dat. oder Loc.).
+
+- **RU:** — 1) низводить, приводить вниз к (Dat. или Loc.).
 - **EN:** — 1) to lead down to —, to lead in to (Dat. or Loc.).
+  <sub>attested</sub>
 
 **p10_2)** — 2〉 fliessen.
+
+- **RU:** — 2) течь.
 - **EN:** — 2) to flow.
+  <sub>attested</sub>
 
 **p10_3)** — 3〉 tragen, erhalten.
+
+- **RU:** — 3) нести, поддерживать.
 - **EN:** — 3) to bear, to support.
+  <sub>attested</sub>
 
 **p11_note)** — Caus. in Bewegung setzen.
+
+- **RU:** — Caus. приводить в движение.
 - **EN:** — Caus. to set in motion.
+  <sub>attested</sub>
 
 **p12_note)** — Mit **pariṇi* und **praṇi*.
+
+- **RU:** — С **pariṇi* и **praṇi*.
 - **EN:** — With **pariṇi* and **praṇi*.
+  <sub>lexicographic</sub>
 
 **p13_intro)** — Mit *nis*
+
+- **RU:** — С *nis*
 - **EN:** — With *nis*
+  <sub>attested</sub>
 
 **p13_1)** — 1〉 herausführen —, retten aus (Abl.); wegschaffen, wegspülen.
+
+- **RU:** — 1) выводить наружу —, спасать из (Abl.); уносить, смывать.
 - **EN:** — 1) to lead out from —, to save from (Abl.); to remove, to wash away.
+  <sub>attested</sub>
 
 **p13_2)** — 2〉 herausfliessen aus (Abl.) [MĀN. GṚHY. 2,11].
+
+- **RU:** — 2) вытекать из (Abl.) [MĀN. GṚHY. 2,11].
 - **EN:** — 2) to flow out of (Abl.) [MĀN. GṚHY. 2,11].
+  <sub>attested</sub>
 
 **p13_3)** — 3〉 ausführen, zu Stande bringen.
+
+- **RU:** — 3) выполнять, осуществлять.
 - **EN:** — 3) to carry out, to accomplish.
+  <sub>attested</sub>
 
 **p13_4)** — 4〉 zu Stande kommen, gelingen; zu seinem Ziele gelangen, glücklich über Etwas hinwegkommen.
+
+- **RU:** — 4) осуществляться, удаваться; достигать своей цели, благополучно преодолевать что-л..
 - **EN:** — 4) to come about, to succeed; to attain one's goal, to get safely over something.
+  <sub>attested</sub>
 
 **p13_5)** — 5〉 sein Leben unterhalten, leben von (Instr.) [CAMPAKA. 147].
+
+- **RU:** — 5) поддерживать своё существование, жить за счёт (Instr.) [CAMPAKA. 147].
 - **EN:** — 5) to maintain one's life, to live off (Instr.) [CAMPAKA. 147].
+  <sub>attested</sub>
 
 **p13_6)** — 6〉 Jmd anstehen, sich geziemen für (Gen.) [HEM. PAR. 7,42].
+
+- **RU:** — 6) подобать, приличествовать кому-л. (Gen.) [HEM. PAR. 7,42].
 - **EN:** — 6) to befit someone, to be fitting for (Gen.) [HEM. PAR. 7,42].
+  <sub>attested</sub>
 
 **p14_intro)** — Caus.
+
+- **RU:** — Caus.
 - **EN:** — Caus.
+  <sub>attested</sub>
 
 **p14_1)** — 1〉 verbringen, zu Ende bringen (eine Zeit).
+
+- **RU:** — 1) проводить, доводить до конца (время).
 - **EN:** — 1) to spend, to bring to an end (a time).
+  <sub>attested</sub>
 
 **p14_2)** — 2〉 ausführen, vollführen, zu Stande bringen.
+
+- **RU:** — 2) исполнять, совершать, осуществлять.
 - **EN:** — 2) to carry out, to perform, to accomplish.
+  <sub>attested</sub>
 
 **p15_note)** — Mit *pratinis*, *pratinirūḍha* einzeln ausgeführt [Comm. zu ĀPAST. ŚR. 12,20,19].
+
+- **RU:** — С *pratinis*, *pratinirūḍha* исполненный по отдельности (порознь) [Comm. zu ĀPAST. ŚR. 12,20,19].
 - **EN:** — With *pratinis*, *pratinirūḍha* carried out individually [Comm. zu ĀPAST. ŚR. 12,20,19].
+  <sub>attested</sub>
 
 **p16_note)** — Mit *parā* wegführen, wegschaffen zu (Dat.).
+
+- **RU:** — С *parā* уводить, уносить к (Dat.).
 - **EN:** — With *parā* to lead away, to remove to (Dat.).
+  <sub>attested</sub>
 
 **p17_intro)** — Mit *pari*
+
+- **RU:** — С *pari*
 - **EN:** — With *pari*
+  <sub>attested</sub>
 
 **p17_1)** — 1〉 herumführen, — tragen.
+
+- **RU:** — 1) водить кругом, — носить.
 - **EN:** — 1) to lead around, — to carry around.
+  <sub>attested</sub>
 
 **p17_2)** — 2〉 umherschleifen.
+
+- **RU:** — 2) волочить вокруг, таскать повсюду.
 - **EN:** — 2) to drag about.
+  <sub>attested</sub>
 
 **p17_3)** — 3〉 herumfliessen.
+
+- **RU:** — 3) течь вокруг.
 - **EN:** — 3) to flow around.
+  <sub>attested</sub>
 
 **p17_4)** — 4〉 den Hochzeitszug oder die Braut führen (vom Vaterhaus in das des Gatten); heimführen, heirathen.
+
+- **RU:** — 4) вести свадебное шествие или вести невесту (из отцовского дома в дом супруга); приводить в дом, брать в жёны.
 - **EN:** — 4) to lead the wedding procession or the bride (from the father's house to that of the husband); to lead home, to marry.
+  <sub>attested</sub>
 
 **p18_intro)** — Mit *pra*
+
+- **RU:** — С *pra*
 - **EN:** — With *pra*
+  <sub>attested</sub>
 
 **p18_1)** — 1〉 trans.
+
+- **RU:** — 1) trans.
 - **EN:** — 1) trans.
+  <sub>attested</sub>
 
 **p18_1a)** — a〉 weiterführen, vorwärts ziehen, — treiben ([ĀPAST. 1,11,8]).
+
+- **RU:** — a) вести дальше, тянуть вперёд, — гнать ([ĀPAST. 1,11,8]).
 - **EN:** — a) to lead further, to draw forward, — to drive ([ĀPAST. 1,11,8]).
+  <sub>attested</sub>
 
 **p18_1b)** — b〉 im Fliessen entführen, wegspülen.
+
+- **RU:** — b) уносить течением, смывать.
 - **EN:** — b) to carry off while flowing, to wash away.
+  <sub>attested</sub>
 
 **p18_1c)** — c〉 zuführen, bringen, hinführen zu (Acc.).
+
+- **RU:** — c) подводить, приносить, приводить к (Acc.).
 - **EN:** — c) to bring to, convey, lead to (Acc.).
+  <sub>attested</sub>
 
 **p18_1d)** — d〉 tragen.
+
+- **RU:** — d) нести.
 - **EN:** — d) to bear.
+  <sub>attested</sub>
 
 **p18_1e)** — e〉 an den Tag legen, äussern.
+
+- **RU:** — e) обнаруживать, проявлять.
 - **EN:** — e) to display, to express.
+  <sub>attested</sub>
 
 **p18_2)** — 2〉 intrans.
+
+- **RU:** — 2) intrans.
 - **EN:** — 2) intrans.
+  <sub>attested</sub>
 
 **p18_2a)** — a〉 vorwärts fahren, davonfahren (Med. [ṚV.]).
+
+- **RU:** — a) ехать вперёд, отъезжать (Med. [ṚV.]).
 - **EN:** — a) to drive forward, to drive off (Med. [ṚV.]).
+  <sub>attested</sub>
 
 **p18_2b)** — b〉 hinfliessen, fliessen.
+
+- **RU:** — b) течь туда, течь.
 - **EN:** — b) to flow on, to flow.
+  <sub>attested</sub>
 
 **p18_2c)** — c〉 hinbrausen, wehen.
+
+- **RU:** — c) нестись с шумом, веять.
 - **EN:** — c) to roar along, to blow.
+  <sub>attested</sub>
 
 **p19_intro)** — Caus.
+
+- **RU:** — Caus.
 - **EN:** — Caus.
+  <sub>attested</sub>
 
 **p19_1)** — 1〉 fortfahren lassen, so v. a. wegschicken.
+
+- **RU:** — 1) давать уехать, отпускать (везти прочь), так v. a. отсылать прочь.
 - **EN:** — 1) to let drive away, thus v. a. to send away.
+  <sub>attested</sub>
 
 **p19_2)** — 2〉 fortschwimmen lassen [HEM. PAR. 2,239]. [CAMPAKA. 84. 86].
+
+- **RU:** — 2) давать уплыть прочь [HEM. PAR. 2,239]. [CAMPAKA. 84. 86].
 - **EN:** — 2) to let swim away [HEM. PAR. 2,239]. [CAMPAKA. 84. 86].
+  <sub>attested</sub>
 
 **p19_3)** — 3〉 in Bewegung setzen, in Gang bringen.
+
+- **RU:** — 3) приводить в движение, запускать.
 - **EN:** — 3) to set in motion, to set going.
+  <sub>attested</sub>
 
 **p19_4)** — 4〉 *lokapravāhitam* [MBH. 6,191] fehlerhaft für *˚pravāhinam*.
+
+- **RU:** — 4) *lokapravāhitam* [MBH. 6,191] ошибочно вместо *˚pravāhinam*.
 - **EN:** — 4) *lokapravāhitam* [MBH. 6,191] erroneous for *˚pravāhinam*.
+  <sub>lexicographic</sub>
 
 **p20_note)** — Mit *atipra* darüber hinaus führen, — ziehen.
+
+- **RU:** — С *atipra* вести сверх того, — тянуть далее.
 - **EN:** — With *atipra* to lead beyond it, — to draw it.
+  <sub>attested</sub>
 
 **p21_intro)** — Mit *anupra*
+
+- **RU:** — С *anupra*
 - **EN:** — With *anupra*
+  <sub>attested</sub>
 
 **p21_1)** — 1〉 umherfahren, — führen.
+
+- **RU:** — 1) разъезжать вокруг, — водить кругом.
 - **EN:** — 1) to drive about, — to lead about.
+  <sub>attested</sub>
 
 **p21_2)** — 2〉 vorwärts kommen.
+
+- **RU:** — 2) продвигаться вперёд.
 - **EN:** — 2) to get ahead.
+  <sub>attested</sub>
 
 **p22_note)** — Mit *abhipra* hinführen zu.
+
+- **RU:** — С *abhipra* приводить к.
 - **EN:** — With *abhipra* to lead to.
+  <sub>attested</sub>
 
 **p23_note)** — Mit *saṃpra* in *saṃpravāha*.
+
+- **RU:** — С *saṃpra* в *saṃpravāha*.
 - **EN:** — With *saṃpra* in *saṃpravāha*.
+  <sub>attested</sub>
 
 **p24_note)** — Mit *prati* entgegenführen. *pratyasya vaha* [TS. 1,5,3,1] fehlerhaft; vgl. [VS. 3,8].
+
+- **RU:** — С *prati* вести навстречу. *pratyasya vaha* [TS. 1,5,3,1] ошибочно; vgl. [VS. 3,8].
 - **EN:** — With *prati* to lead to meet, to lead towards. *pratyasya vaha* [TS. 1,5,3,1] erroneous; vgl. [VS. 3,8].
+  <sub>lexicographic</sub>
 
 **p25_intro)** — Mit *vi*
+
+- **RU:** — С *vi*
 - **EN:** — With *vi*
+  <sub>attested</sub>
 
 **p25_1)** — 1〉 entführen wegführen, wegspülen, wegschwemmen.
+
+- **RU:** — 1) похищать, уводить, смывать, уносить (водой).
 - **EN:** — 1) to abduct, to lead away, to wash away, to flush away.
+  <sub>attested</sub>
 
 **p25_2)** — 2〉 wegführen (die Braut aus dem Elternhause); heimführen, heirathen (ein Mädchen) überh.; eine eheliche Verbindung schliessen, — mit (Instr.) [GOBH. 2,10,6]. Med. eine Hochzeit feiern; sich verheirathen. *mitho vivahamānāḥ* untereinander heirathend [ĀPAST. 1,29,8]. *vyūḍhā* geheirathet, verheirathet.
+
+- **RU:** — 2) уводить (невесту из родительского дома); приводить в дом, брать в жёны (девушку) überh.; заключать брачный союз, — с (Instr.) [GOBH. 2,10,6]. Med. справлять свадьбу; вступать в брак. *mitho vivahamānāḥ* вступающие в брак между собой [ĀPAST. 1,29,8]. *vyūḍhā* женатый, состоящий в браке.
 - **EN:** — 2) to lead away (the bride from her parents' house); to lead home, to marry (a girl) überh.; to contract a marital union, — with (Instr.) [GOBH. 2,10,6]. Med. to celebrate a wedding; to get married. *mitho vivahamānāḥ* intermarrying with one another [ĀPAST. 1,29,8]. *vyūḍhā* married, wedded.
+  <sub>attested</sub>
 
 **p25caus_intro)** — Caus. (*vī˚* [PAÑCAD.])
+
+- **RU:** — Caus. (*vī˚* [PAÑCAD.])
 - **EN:** — Caus. (*vī˚* [PAÑCAD.])
+  <sub>attested</sub>
 
 **p25caus1)** — 1〉 verheirathen (ein Mädchen), — mit (*saha* oder blosser Gen.) [PAÑCAD. 45,2]. *vivāhita* (vom Manne) verheirathet mit (Acc.) [34. 40].
+
+- **RU:** — 1) выдавать замуж (девушку), — с (*saha* или просто Gen.) [PAÑCAD. 45,2]. *vivāhita* (о мужчине) женатый на (Acc.) [34. 40].
 - **EN:** — 1) to give in marriage (a girl), — to (*saha* or mere Gen.) [PAÑCAD. 45,2]. *vivāhita* (of the man) married to (Acc.) [34. 40].
+  <sub>attested</sub>
 
 **p25caus2)** — 2〉 Med. heimführen, heirathen ein Mädchen.
+
+- **RU:** — 2) Med. приводить в дом, брать в жёны девушку.
 - **EN:** — 2) Med. to lead home, to marry a girl.
+  <sub>attested</sub>
 
 **p25b_note)** — Mit **saṃvi* Med. mit Andern (Instr.) eine Ehe eingehen.
+
+- **RU:** — С **saṃvi* Med. с другими (Instr.) вступать в брак.
 - **EN:** — With **saṃvi* Med. with others (Instr.) to enter into a marriage.
+  <sub>lexicographic</sub>
 
 **p26_intro)** — Mit *sam*
+
+- **RU:** — С *sam*
 - **EN:** — With *sam*
+  <sub>attested</sub>
 
 **p26_1)** — 1〉 zusammenführen; führen, hinüberführen.
+
+- **RU:** — 1) сводить вместе; вести, переводить на другую сторону.
 - **EN:** — 1) to bring together; to lead, to lead across.
+  <sub>attested</sub>
 
 **p26_2)** — 2〉 ziehen, langsam fortbewegen.
+
+- **RU:** — 2) тянуть, медленно перемещать.
 - **EN:** — 2) to draw, to move along slowly.
+  <sub>attested</sub>
+
+**mit30-2)** — 2〉 heimführen, heirathen (ein Mädchen).
+
+- **RU:** — 2) приводить в дом, брать в жёны (девушку).
+  <sub>attested</sub>
+
+**mitT62-intro)** — Caus.
+
+- **RU:** — Caus.
+  <sub>attested</sub>
+
+**mitT76-intro)** — Caus.
+
+- **RU:** — Caus.
+  <sub>attested</sub>
 
 ## vah
 
@@ -3664,49 +4353,94 @@ u. s. w.) [MBH. 1,3801.] [Spr. 512.]
 
 
 **y3)** — 3〉 mit sich fortziehen, treiben (vom Winde).
+
+- **RU:** 3) увлекать за собой, гнать (о ветре).
 - **EN:** — 3) to draw along with itself, to drive (of the wind).
+  <sub>attested</sub>
 
 **y4)** — 4〉 beladen [85,8].
+
+- **RU:** 4) нагружать [85,8].
 - **EN:** — 4) laden [85,8].
+  <sub>attested</sub>
 
 **y5)** — 5〉 Pass. getragen werden von, so v. a. reiten auf (Instr.).
+
+- **RU:** 5) Pass. быть носимым кем-л., чем-л., отсюда v. a. ехать верхом на (Instr.).
 - **EN:** — 5) Pass. to be borne by, thus v. a. to ride upon (Instr.).
+  <sub>attested</sub>
 
 **y6)** — 6〉 entlang fahren mit der Hand (Instr.) über, streichen; mit Acc. *saṃvavāhatus* (!).
+
+- **RU:** 6) проводить рукой (Instr.) вдоль чего-л., по чему-л., поглаживать; с Acc. *saṃvavāhatus* (!).
 - **EN:** — 6) to pass with the hand (Instr.) over, to stroke; with Acc. *saṃvavāhatus* (!).
+  <sub>attested</sub>
 
 **y7)** — 7〉 an den Tag legen, äussern.
+
+- **RU:** 7) проявлять, выражать.
 - **EN:** — 7) to display, to express.
+  <sub>attested</sub>
 
 **z_intro)** — Caus.
+
+- **RU:** Caus.
 - **EN:** — Caus.
+  <sub>attested</sub>
 
 **z1)** — 1〉 zusammenführen, sammeln.
+
+- **RU:** 1) сводить вместе, собирать.
 - **EN:** — 1) to bring together, to gather.
+  <sub>attested</sub>
 
 **z2)** — 2〉 fahren, lenken (einen Wagen u. s. w.), hinfahren, hinführen.
+
+- **RU:** 2) ехать, править (повозкой u. s. w.), отвозить, доставлять.
 - **EN:** — 2) to drive, to guide (a chariot u. s. w.), to drive there, to lead there.
+  <sub>attested</sub>
 
 **z3)** — 3〉 heimführen (ein Weib).
+
+- **RU:** 3) вести домой (жену, о браке).
 - **EN:** — 3) to lead home (a wife).
+  <sub>attested</sub>
 
 **z4)** — 4〉 jagen, treiben.
+
+- **RU:** 4) гнать, преследовать.
 - **EN:** — 4) to hunt, to drive.
+  <sub>attested</sub>
 
 **z5)** — 5〉 entlang fahren mit der Hand über, streichen, reiben mit Acc. [ĀPAST. 1,6,1] [VĀSAV. 263,3]. [PAÑCAD.]
+
+- **RU:** 5) проводить рукой вдоль чего-л., по чему-л., поглаживать, тереть с Acc. [ĀPAST. 1,6,1] [VĀSAV. 263,3]. [PAÑCAD.]
 - **EN:** — 5) to pass with the hand over, to stroke, to rub with Acc. [ĀPAST. 1,6,1] [VĀSAV. 263,3]. [PAÑCAD.]
+  <sub>attested</sub>
 
 **z6)** — 6〉 in Bewegung setzen [KĀD. 100,10. 155,11].
+
+- **RU:** 6) приводить в движение [KĀD. 100,10. 155,11].
 - **EN:** — 6) to set in motion [KĀD. 100,10. 155,11].
+  <sub>attested</sub>
 
 **z7_intro)** — Mit *anusam*
+
+- **RU:** С *anusam*
 - **EN:** — With *anusam*
+  <sub>attested</sub>
 
 **z7_1)** — 1〉 entlang führen.
+
+- **RU:** 1) вести вдоль чего-л.
 - **EN:** — 1) to lead along.
+  <sub>attested</sub>
 
 **z7_2)** — 2〉 ziehend folgen.
+
+- **RU:** 2) следовать, влекомый/тянущийся вослед.
 - **EN:** — 2) to follow while drawing.
+  <sub>attested</sub>
 
 ## vah
 
@@ -3714,10 +4448,16 @@ u. s. w.) [MBH. 1,3801.] [Spr. 512.]
 
 
 **2)** **2.** √*˚vah* (stark *vāh*, schwach *uh* und *ūh*, welches mit einem vorangehenden *a* zu *auh* wird)¦ fahrend, ziehend, führend, tragend, haltend.
+
+- **RU:** **2.** корень *˚vah* (сильная ступень *vāh*, слабая *uh* и *ūh*, которая после предшествующего *a* переходит в *auh*)¦ везущий, тянущий, ведущий, несущий, держащий.
 - **EN:** **2.** √*˚vah* (strong *vāh*, weak *uh* and *ūh*, which with a preceding *a* becomes *auh*)¦ driving, drawing, leading, bearing, holding.
+  <sub>attested</sub>
 
 **Lbody)** {{Lbody=101504}}
+
+- **RU:** {{Lbody=101504}}
 - **EN:** {{Lbody=101504}}
+  <sub>attested</sub>
 
 **1)** **1.** √*vah*¦ Caus. VI. treiben, betreiben (ein Geschäft) [DIVYĀVAD. 14,20].
 — Mit *abhi* VI. tragen, so v. a. haben [KIR. 16,39].
@@ -3728,13 +4468,56 @@ u. s. w.) [MBH. 1,3801.] [Spr. 512.]
 — With *samud* Caus. to raise up, lift on high [R. ed. Bomb. 4,28,39].
 — With *prati* class VI. to act counter to, contravene (an order, Acc.) [DIVYĀVAD. 178,11].
 
+**1.)** **1.** √*vah*¦ Caus. VI. treiben, betreiben (ein Geschäft) [DIVYĀVAD. 14,20].
+
+- **RU:** **1.** корень *vah*¦ Caus. VI. заниматься, вести (дело) [DIVYĀVAD. 14,20].
+  <sub>attested</sub>
+
+**1. — mit ā)** — Mit *abhi* VI. tragen, so v. a. haben [KIR. 16,39].
+
+- **RU:** — С *abhi* VI. нести, так v. a. иметь [KIR. 16,39].
+  <sub>attested</sub>
+
+**1. — mit ud)** — Mit *samud* Caus. in die Höhe heben [R. ed. Bomb. 4,28,39].
+
+- **RU:** — С *samud* Caus. поднимать вверх [R. ed. Bomb. 4,28,39].
+  <sub>attested</sub>
+
+**1. — mit prati)** — Mit *prati* VI. entgegenhandeln (einem Befehl, Acc.) [DIVYĀVAD. 178,11].
+
+- **RU:** — С *prati* VI. поступать наперекор, противодействовать (приказу, Acc.) [DIVYĀVAD. 178,11].
+  <sub>attested</sub>
+
 ## vah
 
 `vah~~h0_zz_sch`
 
 
-**1)** 1. vah¦ [Kaus.] treiben, betreiben (ein Geschäft), [Divyāvad. 14,20.] — Mit ati, [Kaus.] [Sam. I,23] [ativāhya padavīm; pw "nur ativāhita"]. — Mit abhi tragen, so v.a. haben, [Kir. 16,39.] — Mit samud [Kaus.] in die Höhe heben, [R. ed. Bomb. 4,28,39.] — Mit prati entgegenhandeln (einem Befehle, Akk.), [Divyāvad. 178,11.] {part=,seq=23722,type=,n=9}
+**1)** vah¦ [Kaus.] treiben, betreiben (ein Geschäft), [Divyāvad. 14,20.]
+
+- **RU:** vah [Kaus.] гнать, вести (дело, занятие), [Divyāvad. 14,20.]
 - **EN:** 1. vah¦ [Kaus.] to drive, to carry on, conduct (a business), [Divyāvad. 14,20.] — With ati, [Kaus.] [Sam. I,23] [ativāhya padavīm; PW "only ativāhita"]. — With abhi to bear, hence so much as to have, [Kir. 16,39.] — With samud [Kaus.] to raise up, lift on high, [R. ed. Bomb. 4,28,39.] — With prati to act counter to (an order, Acc.), [Divyāvad. 178,11.] {part=,seq=23722,type=,n=9}
+  <sub>lexicographic</sub>
+
+**2 (mit ati))** Mit ati, [Kaus.] [Sam. I,23] [ativāhya padavīm; pw "nur ativāhita"]
+
+- **RU:** С ati, [Kaus.] [Sam. I,23] [ativāhya padavīm; pw «только ativāhita"]»
+  <sub>lexicographic</sub>
+
+**3 (mit abhi))** Mit abhi tragen, so v.a. haben, [Kir. 16,39.]
+
+- **RU:** С abhi нести, то есть иметь, [Kir. 16,39.]
+  <sub>lexicographic</sub>
+
+**4 (mit samud))** Mit samud [Kaus.] in die Höhe heben, [R. ed. Bomb. 4,28,39.]
+
+- **RU:** С samud [Kaus.] поднимать ввысь, [R. ed. Bomb. 4,28,39.]
+  <sub>lexicographic</sub>
+
+**5 (mit prati))** Mit prati entgegenhandeln (einem Befehle, Akk.), [Divyāvad. 178,11.]
+
+- **RU:** С prati действовать наперекор, поступать вопреки (приказу, Akk.), [Divyāvad. 178,11.]
+  <sub>lexicographic</sub>
 
 ## vah
 
@@ -3742,4 +4525,7 @@ u. s. w.) [MBH. 1,3801.] [Spr. 512.]
 
 
 **1)** **1.** *vah*¦ Caus. VI. treiben, betreiben (ein Geschäft) [DIVYĀVAD. 14,20]. — Mit *abhi* VI. tragen, so v. a. haben [KIR. 16,39]. — Mit *samud* Caus. in die Höhe heben [R. ed. Bomb. 4,28,39]. — Mit *prati* VI. entgegenhandeln (einem Befehl, Acc.) [DIVYĀVAD. 178,11].
+
+- **RU:** **1.** *vah*¦ Caus. VI. гнать, вести (дело) [DIVYĀVAD. 14,20]. — С *abhi* VI. нести, так v. a. иметь [KIR. 16,39]. — С *samud* Caus. поднимать вверх [R. ed. Bomb. 4,28,39]. — С *prati* VI. действовать вопреки (приказу, Acc.) [DIVYĀVAD. 178,11].
 - **EN:** **1.** *vah*¦ Caus. class VI. to drive, to carry on, conduct (a business) [DIVYĀVAD. 14,20]. — With *abhi* class VI. to bear, hence v. a. to have [KIR. 16,39]. — With *samud* Caus. to raise up, lift on high [R. ed. Bomb. 4,28,39]. — With *prati* class VI. to act counter to, contravene (an order, Acc.) [DIVYĀVAD. 178,11].
+  <sub>lexicographic</sub>

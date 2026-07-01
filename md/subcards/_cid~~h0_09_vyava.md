@@ -7,7 +7,7 @@
 
 - **RU:** — *vyava*
 - **EN:** — *vyava*
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **1)** 1) abschneiden: *prajātantuṃ mā vyavacchetsīḥ* (sic)
 [TAITT. UP. 1,11,1.]
@@ -16,7 +16,7 @@
 [TAITT. UP. 1,11,1.]
 - **EN:** 1) to cut off: *prajātantuṃ mā vyavacchetsīḥ* (sic)
 [TAITT. UP. 1,11,1.]
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) abschneiden, abtrennen, scheiden: *vyavacchidya tu rājānam — rathānīkena mahatā sarvataḥ paryavārayat* nachdem er ihn (von den Andern) abgeschnitten hatte
 [MBH. 7,1166.] *viśaṃ kṣatrādvyavacchindyāt*
@@ -40,7 +40,7 @@
 [6,6,4,11.] [ŚĀṄKH. ŚR. 2,12,10. 11.] *vyavacchinna* distinguished
 [TARKASAM̃GR. 58.] = *bhinna*
 [TRIK. 3,1,18.]
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) voneinanderreissen, auseinanderthun; unterbrechen: *(śaram) śravaṇāntamupānīya vyavacchinnena muṣṭinā*
 [R. 3,50,17.] *mantraliṅgairvyavacchinnaṃ bhajanto na viduḥ param*
@@ -64,7 +64,7 @@
 [AIT. BR. 1,11.] *avyavacchinnadhāraughaiḥ samudraughasamairghanaiḥ*
 [HARIV. 3580.] *avyavacchinnapiṇḍitaiḥ (śaraiḥ)* _adv._
 [MBH. 7,4746.]
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) sich zu (*prati*) Etwas entscheiden: *iti vyavacchidya sa pāṇḍaveyaḥ prāyopaveśaṃ prati*
 [BHĀG. P. 1,19,7.]
@@ -73,10 +73,10 @@
 [BHĀG. P. 1,19,7.]
 - **EN:** — 4) to decide upon (*prati*) something: *iti vyavacchidya sa pāṇḍaveyaḥ prāyopaveśaṃ prati*
 [BHĀG. P. 1,19,7.]
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **caus)** — Vgl. *vyavaccheda* .
 
 - **RU:** — Vgl. *vyavaccheda* .
 - **EN:** — Vgl. *vyavaccheda* .
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>

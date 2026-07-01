@@ -19,14 +19,14 @@
 — 12) *anyathā* interpret differently
 [LA. (II) 91,7.] — Z. 3 from the end, which [ed. Bomb.] reads
 [MBH. 7,9557] *bhettuṃ* st. *netuṃ* .
-  <sub>DCS 2376 · attested</sub>
+  <sub>attested</sub>
 
 **1-corr)** 1) *santo hi satyena nayanti sūryam*
 [Spr. 5154.]
 
 - **RU:** 1) *santo hi satyena nayanti sūryam*
 [Spr. 5154.]
-  <sub>DCS 2376 · attested</sub>
+  <sub>attested</sub>
 
 **3-corr)** — 3) *tato vivāhyānicchantīmapyanaiṣītsa māṃ dvijaḥ*
 [KATHĀS. 52,38.] *anāyiṣata*
@@ -37,7 +37,7 @@
 [KATHĀS. 52,38.] *anāyiṣata*
 [Spr. 2842.] *caureṇāpi na nīyate (vidyāratnam)*
 [985.] [KATHĀS. 58,73.]
-  <sub>DCS 2376 · attested</sub>
+  <sub>attested</sub>
 
 **4-am-Ende)** — 4) am Ende, *bhasmasānnītaḥ*
 [MBH. 15,951.]
@@ -46,7 +46,7 @@
 - **RU:** — 4) в конце, *bhasmasānnītaḥ*
 [MBH. 15,951.]
 [HARIV. 3662.] [5950.]
-  <sub>DCS 2376 · attested</sub>
+  <sub>attested</sub>
 
 **12-anders-auslegen)** — 12) *anyathā* anders auslegen
 [LA. (II) 91,7.] — Z. 3 vom Schluss, die [ed. Bomb.] liest
@@ -55,4 +55,4 @@
 - **RU:** — 12) *anyathā* иначе истолковывать
 [LA. (II) 91,7.] — Z. 3 vom Schluss, die [ed. Bomb.] liest
 [MBH. 7,9557] *bhettuṃ* st. *netuṃ* .
-  <sub>DCS 2376 · attested</sub>
+  <sub>attested</sub>

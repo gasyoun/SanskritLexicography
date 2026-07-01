@@ -10,4 +10,4 @@
 [KĀṬH. 25,7] в [Ind. St. 3,467,8] вероятно ошибочно вместо *anumadan*.
 - **EN:** — *ava*, *avamadan*
 [KĀṬH. 25,7] in [Ind. St. 3,467,8] probably erroneous for *anumadan*.
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>

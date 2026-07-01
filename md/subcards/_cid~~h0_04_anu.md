@@ -10,4 +10,4 @@
 [ŚĀṄKH. ŚR. 2,8,13.] Viell. *ucchindan* mit dem *a* neg.
 - **EN:** — *anu* to cut through lengthwise(?): *anucchindanniva (udvāsayet)*
 [ŚĀṄKH. ŚR. 2,8,13.] Viell. *ucchindan* with the *a* neg.
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>

@@ -7,4 +7,4 @@
 
 - **RU:** **4.** *√*paś*¦ Intens. *pampaśyate, pampaśīti*.
 - **EN:** 4. *√*paś*; Intens. *pampaśyate, pampaśīti*.
-  <sub>DCS 4733 · lexicographic</sub>
+  <sub>lexicographic</sub>

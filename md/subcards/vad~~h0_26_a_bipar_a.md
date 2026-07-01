@@ -13,4 +13,4 @@
 - **EN:** — *abhiparā* to address
 [ŚAT. BR. 11,5,1,6.]
 [ŚĀṄKH. BR. 23,5.]
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>

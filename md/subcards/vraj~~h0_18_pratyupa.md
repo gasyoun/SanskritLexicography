@@ -10,4 +10,4 @@
 [MBH. 12,3540.]
 - **EN:** — *pratyupa* to advance against someone (acc.) with hostile intent, to attack
 [MBH. 12,3540.]
-  <sub>DCS 1202 · attested</sub>
+  <sub>attested</sub>

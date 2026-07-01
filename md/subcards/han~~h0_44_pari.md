@@ -10,7 +10,7 @@
 [P. 8,4,22. fg.]
 - **EN:** — *pari*, when the *na* of the root passes into *ṇa*
 [P. 8,4,22. fg.]
-  <sub>DCS 12 · attested</sub>
+  <sub>attested</sub>
 
 **1)** 1) umwinden: *bhogaiḥ*
 [KĀṬH. 13,4.]
@@ -22,7 +22,7 @@
 - **EN:** 1) "to wind around": *bhogaiḥ*
 [KĀṬH. 13,4.]
 [ŚĀṄKH. ŚR. 16,18,14.]
-  <sub>DCS 12 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) ersticken: das Feuer
 [ŚAT. BR. 10,5,2,6.]
@@ -31,7 +31,7 @@
 [ŚAT. BR. 10,5,2,6.]
 - **EN:** — 2) "to smother, choke": the fire
 [ŚAT. BR. 10,5,2,6.]
-  <sub>DCS 12 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) pass. einen Wandel erfahren: *prakṛtiḥ sā mama parā na kvacitparihanyate (prati˚* [ed. Bomb.])
 [MBH. 13,6329.] sich legen, vergehen: *utsāhaḥ parihanyate*
@@ -46,7 +46,7 @@
 [MBH. 13,6329.] "to subside, pass away": *utsāhaḥ parihanyate*
 [Spr. (II) 3769], v. l. for *parihīyate* . — Instead of *pari bādho jahī mṛdhaḥ*
 [ṚV. 8,45,40], *paribādho* is to be conjectured.
-  <sub>DCS 12 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) partic. *˚hata*
 [ŚĀK. 69,12] (v. l. *pratihata*) und
@@ -61,10 +61,10 @@
 [ŚĀK. 69,12] (v. l. *pratihata*) and
 [GĪT. 5,13], erroneous for *˚hṛta* (thus
 [GĪT.] in [HAEB.]).
-  <sub>DCS 12 · attested</sub>
+  <sub>attested</sub>
 
 **note)** — Vgl. *parighātin* und *duṣparihantu* .
 
 - **RU:** — Vgl. *parighātin* и *duṣparihantu* .
 - **EN:** — Vgl. *parighātin* and *duṣparihantu* .
-  <sub>DCS 12 · attested</sub>
+  <sub>attested</sub>

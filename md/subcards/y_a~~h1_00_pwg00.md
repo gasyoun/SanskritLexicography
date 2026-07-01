@@ -7,4 +7,4 @@
 
 - **RU:** 2. *yā*¦ (= 1. *yā*) в конце comp. идущий; s. *ṛṇa˚, eva˚, tura˚, deva˚* .
 - **EN:** 2. *yā*¦ (= 1. *yā*) at the end of a comp., {going}; s. *ṛṇa˚, eva˚, tura˚, deva˚*.
-  <sub>DCS 5678 · lexicographic</sub>
+  <sub>lexicographic</sub>

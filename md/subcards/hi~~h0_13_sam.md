@@ -13,7 +13,7 @@
 - **EN:** — *sam*
  1) to dispatch, send off
 [BHĀG. P. 9,10,18.]
-  <sub>DCS 23914 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) zusammenbringen, — setzen, verfertigen: *saṃ vāṃ karmaṇā hinomi* so v. a. zuwege —, zurechtbringen
 [ṚV. 6,69,1.] *stomaṃ saṃ hinomi rathaṃ na taṣṭā*
@@ -37,4 +37,4 @@
 [6,40,2.] to be referred here also
 [1,94,1.], where *samahema* st. *saṃ mahema* is to be read, and likewise also
 [111,3.] Accordingly under 1. *ah* to be corrected.
-  <sub>DCS 23914 · attested</sub>
+  <sub>attested</sub>

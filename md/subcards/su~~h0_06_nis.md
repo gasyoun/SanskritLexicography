@@ -9,4 +9,4 @@
 - **RU:** — *nis*, *niḥṣuṇoti*
 [P. 8,3,65], Vārtt. 1, Schol.
 - **EN:** — *nis*, *niḥṣuṇoti* [P. 8,3,65], Vārtt. 1, Schol.
-  <sub>DCS 14088 · attested</sub>
+  <sub>attested</sub>

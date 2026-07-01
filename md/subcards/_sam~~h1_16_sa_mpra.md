@@ -10,4 +10,4 @@
 [MBH. 1,8249.]
 - **EN:** — *saṃpra*, partic. *˚śānta* having ceased, abated, vanished: *˚rajastamas*
 [MBH. 1,8249.]
-  <sub>DCS 3 · attested</sub>
+  <sub>attested</sub>

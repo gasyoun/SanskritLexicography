@@ -34,4 +34,4 @@
 [VS. 5,5.] [42.] *satyamupa geyam* ved.
 [P. 3,1,86], Sch.
 — Vgl. *upā* .
-  <sub>DCS 121 · attested</sub>
+  <sub>attested</sub>

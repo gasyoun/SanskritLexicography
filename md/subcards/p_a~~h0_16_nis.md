@@ -22,10 +22,10 @@ ausgesogen
 
 sucked dry
 [R. GORR. 2,62,17], v. l.
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>
 
 **1b)** — Vgl. *niṣpāna* .
 
 - **RU:** — Vgl. *niṣpāna* .
 - **EN:** — Vgl. *niṣpāna* .
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>

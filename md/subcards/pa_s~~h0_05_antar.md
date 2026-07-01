@@ -13,4 +13,4 @@
 - **EN:** — *antar* to look in between, to look into: *antaḥ paśyanti raśmibhiḥ*
 [ṚV. 1,132,3.] *antaḥ paśyanti vṛjinota sādhu*
 [2,27,3.]
-  <sub>DCS 4733 · attested</sub>
+  <sub>attested</sub>

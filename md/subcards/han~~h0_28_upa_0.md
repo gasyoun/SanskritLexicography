@@ -34,7 +34,7 @@
 [P. 3,4,48], Schol. of the striking d. h. alighting of a bird: *kapotaścedāgāramupahanyāt*
 [ĀŚV. GṚHY. 3,7,7.] *mārjāravatpoṣakaṃ copahaṃsi* thus v. a. to scratch
 [MBH. 2,2123.]
-  <sub>DCS 474 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) anstecken, an die Spitze eines Stabes u. s. w. fassen, antupfen
 [TBR. 1,1,3,6.] *kumbhyai darvyā*
@@ -64,7 +64,7 @@
 [ŚĀṄKH. ŚR. 4,21,8.] *ājyameva saṃskṛtyopaghātaṃ juhuyāt* picking out piece by piece
 [GOBH. 1,9,24.]
 [ŚAT. BR. 5,2,2,4.] [4,4.] [14,9,4,18.] [23.]
-  <sub>DCS 474 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) einstecken, befestigen: *mayūkhān*
 [TS. 2,3,1,5.]
@@ -73,7 +73,7 @@
 [TS. 2,3,1,5.]
 - **EN:** — 3) to insert, fasten: *mayūkhān*
 [TS. 2,3,1,5.]
-  <sub>DCS 474 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) störend treffen, hemmen; beeinträchtigen, beschädigen: *prajananam*
 [AIT. BR. 3,11.] *akṣāṇāṃ vagnumupajighnamānaḥ*
@@ -121,7 +121,7 @@
 [SUŚR. 1,38,16.] *svabhāvaḥ*
 [BHĀG. P. 2,10,41.] *mama pratijñāmupahantum* to bring to disgrace
 [HARIV. 7209.]
-  <sub>DCS 474 · attested</sub>
+  <sub>attested</sub>
 
 **5)** — 5) anstossen, stecken bleiben im Recitiren u. s. w., fehlen: *adhīyannupahanyāt*
 [AIT. BR. 3,35.]
@@ -133,13 +133,13 @@
 - **EN:** — 5) to stumble, get stuck while reciting u. s. w., to fail: *adhīyannupahanyāt*
 [AIT. BR. 3,35.]
 [ŚĀṄKH. BR. 26,3. 27,1.] med. [TS. 7,3,1,1.] [2.]
-  <sub>DCS 474 · attested</sub>
+  <sub>attested</sub>
 
 **6)** — 6) partic. *upahata*
 
 - **RU:** — 6) partic. *upahata*
 - **EN:** — 6) partic. *upahata*
-  <sub>DCS 474 · attested</sub>
+  <sub>attested</sub>
 
 **6a)** a) belegt, bestreut: *āsanāni dvidarbhopahatāni*
 [DEVALA] bei [KULL.] zu [M. 3,208.]
@@ -148,7 +148,7 @@
 [DEVALA] при [KULL.] к [M. 3,208.]
 - **EN:** a) covered, strewn with: *āsanāni dvidarbhopahatāni*
 [DEVALA] in [KULL.] to [M. 3,208.]
-  <sub>DCS 474 · attested</sub>
+  <sub>attested</sub>
 
 **6b)** — b) erschlagen
 [UTTARAR. 133,11 (176,8).] *anupahatakruṣṭa* der nicht weiss, was Schlagen und Schmähen heisst (*upahata* und *kruṣṭa* wohl als nomm. act. zu fassen)
@@ -160,7 +160,7 @@
 - **EN:** — b) slain
 [UTTARAR. 133,11 (176,8).] *anupahatakruṣṭa* who does not know what striking and reviling mean (*upahata* and *kruṣṭa* probably to be taken as nomm. act.)
 [Lot. de la b. l. 603.]
-  <sub>DCS 474 · attested</sub>
+  <sub>attested</sub>
 
 **6c)** — c) behaftet (mit einem Uebel), heimgesucht, hart mitgenommen, beschädigt, verdorben, besudelt: *rakṣāṃsi devaiḥ*
 [ŚAT. BR. 7,3,2,6.] *grāmaścauraiḥ*
@@ -373,4 +373,4 @@
 [VARĀH. BṚH. S. 16,37.] *upahatātman* downcast, sad
 [KATHĀS. 114,100.] *anupahatātmaka* of good cheer
 [27,130.]
-  <sub>DCS 474 · attested</sub>
+  <sub>attested</sub>

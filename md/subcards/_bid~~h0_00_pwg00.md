@@ -46,7 +46,7 @@ from [SIDDH. K.] to [P. 7,2,10.] Sch. to [7,2,61. fg.]); *bhitsīṣṭa*
 ([P. 1,2,11], Sch.);
 inf. *bhettum*, ved. *bhettavai*; pass. *bhidyate, bhinna*
 ([P. 8,2,42]).
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **1)** 1) spalten, einbrechen, ein Loch in Etwas schlagen, zerschlagen, zersprengen, aufreissen, schlitzen: *puraḥ*
 [ṚV. 1,53,8.] [2,14,6.]
@@ -271,7 +271,7 @@ inf. *bhettum*, ved. *bhettavai*; pass. *bhidyate, bhinna*
 [TRIK. 3,3,250.]
 [H. 1488.]
 [an. 2,277.]
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **1-dam)** [MED. n. 14.] *setum, maryādām, velāṃ bhid* einen Damm, Schranken, das Ufer durchbrechen: *baddhaṃ setuṃ ko nu* (so ist zu lesen) *bhindyāt*
 [MBH. 2,2483.] *ambhasā bhidyate setuḥ*
@@ -367,4 +367,4 @@ inf. *bhettum*, ved. *bhettavai*; pass. *bhidyate, bhinna*
 [Spr. 5234.] *bhittvā pratijñām*
 [HARIV. 8121.] *vrataṃ bhinddhi*
 [SĀV. 4,7.]
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>

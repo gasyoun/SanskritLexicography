@@ -31,4 +31,4 @@
 [VARĀH. BṚH. S. 43 (34),17.] to draw near, so v. a. to cause: *jagatkṣayaṃ samupanayan*
 [HARIV. 10532.] to draw to oneself, to take with oneself: *(aśvān) javanānāśugāṃśca karārthaṃ samupānayat*
 [MBH. 2,1036.]
-  <sub>DCS 12 · attested</sub>
+  <sub>attested</sub>

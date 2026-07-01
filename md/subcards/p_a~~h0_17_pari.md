@@ -20,12 +20,12 @@
 
 - **RU:** — Vgl. *paripāna* .
 - **EN:** — Vgl. *paripāna* .
-  <sub>DCS 51 · attested</sub>
+  <sub>attested</sub>
 
 **1)** — *pari* vor und nach Jmd trinken: *tānvai tvamubhayataḥ paripiba*
 
 - **RU:** — *pari* пить до и после кого-л.: *tānvai tvamubhayataḥ paripiba*
-  <sub>DCS 51 · attested</sub>
+  <sub>attested</sub>
 
 **2)** [AIT. BR. 3,30.] austrinken, aussaugen: *mattadvirephaparipītamadhupraseka (kovidāra)*
 [ṚT. 3,6.] *vāyvarkaparipītāmbu (taḍāga)*
@@ -38,4 +38,4 @@
 [R. 4,15,34.] *paripīta* пропитанный
 [SUŚR. 1,60,5.] *taila˚*
 [2,35,14. 72,14.]
-  <sub>DCS 51 · attested</sub>
+  <sub>attested</sub>

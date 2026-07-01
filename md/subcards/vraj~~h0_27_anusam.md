@@ -16,4 +16,4 @@
 [ĀŚV. ŚR. 4,4,5.]
 [GOBH. 2,2,14.] *imā (gāḥ) anusaṃvraja*
 [CHĀND. UP. 4,4,5.]
-  <sub>DCS 1202 · attested</sub>
+  <sub>attested</sub>

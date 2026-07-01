@@ -10,4 +10,4 @@
 [ṚV. 10,82,4.]
 - **EN:** — *samā* to procure: *ta āyajanta draviṇaṃ samasmai*
 [ṚV. 10,82,4.]
-  <sub>DCS 6777 · attested</sub>
+  <sub>attested</sub>

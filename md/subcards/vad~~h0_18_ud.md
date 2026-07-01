@@ -25,4 +25,4 @@
 [AV. 5,20,1.] — caus. to cause to proclaim: *haviṣkṛtam*
 [ŚAT. BR. 1,1,4,11.] to cause to resound
 [4,3,3,19.] Vgl. *udvādana* .
-  <sub>DCS 5 · attested</sub>
+  <sub>attested</sub>

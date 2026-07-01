@@ -10,4 +10,4 @@
 [MBH. 1,1668.]
 - **EN:** *paryanu* to seek out, search after: *anvagacchaddhanuṣpāṇiḥ paryanveṣṭumitastataḥ*
 [MBH. 1,1668.]
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>

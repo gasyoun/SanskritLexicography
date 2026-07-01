@@ -31,4 +31,4 @@
 [MEGH. 102.]
 [ŚIŚ. 1,15.]
 — Vgl. *utpaśya* .
-  <sub>DCS 7 · attested</sub>
+  <sub>attested</sub>

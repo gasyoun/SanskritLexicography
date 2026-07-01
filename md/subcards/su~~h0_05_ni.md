@@ -7,4 +7,4 @@
 
 - **RU:** — *ni* desid. vgl. *nisusūs* .
 - **EN:** — *ni* desid. vgl. *nisusūs*.
-  <sub>DCS 14088 · attested</sub>
+  <sub>attested</sub>

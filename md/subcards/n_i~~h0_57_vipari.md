@@ -10,4 +10,4 @@
 [ṢAḌV. BR. 3,7.] Comm. читает *viparīta* .
 - **EN:** — *vipari*, partic. *˚ṇīta* whose place is exchanged with that of another.
 [ṢAḌV. BR. 3,7.] The Comm. reads *viparīta* .
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>

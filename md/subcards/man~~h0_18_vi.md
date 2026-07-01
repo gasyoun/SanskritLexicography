@@ -12,7 +12,7 @@
 [ṚV. 10,92,3.] *vimata* at variance, in disagreement: *vimatānāṃ saṃmatyarthe*
 [ĀŚV. ŚR. 2,11. 3,13. 6,6.] disregarded, insulted
 [BHĀG. P. 6,6,43.]
-  <sub>DCS 4704 · attested</sub>
+  <sub>attested</sub>
 
 **2)** [ĀŚV. ŚR. 2,11. 3,13. 6,6.] missachtet, beleidigt
 
@@ -25,13 +25,13 @@
 * madanaḥ*
 [116,2.] [KĀM. NĪTIS. 13,67. 74. 17,33.] [Spr. 2139.] [2516.] [4533.] [KATHĀS. 49,153.] [RĀJA-TAR. 4,569.] [BHĀG. P. 4,4,7.] [MĀRK. P. 62,17.] [70,17.] *śraddhāmiva vimānitām*
 [R. 5,21,10.]
-  <sub>DCS 4704 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — Vgl. *vimānya* .
 
 - **RU:** — Vgl. *vimānya* .
 - **EN:** — Vgl. *vimānya* .
-  <sub>DCS 4704 · attested</sub>
+  <sub>attested</sub>
 
 **3)** [BHĀG. P. 6,6,43.] — caus. entehren, mit Geringachtung behandeln: *vimānita*
 [MBH. 1,1257.] [5,2041.] [12,4158.] [13,6284.]
@@ -50,4 +50,4 @@
 * madanaḥ*
 [116,2.] [KĀM. NĪTIS. 13,67. 74. 17,33.] [Spr. 2139.] [2516.] [4533.] [KATHĀS. 49,153.] [RĀJA-TAR. 4,569.] [BHĀG. P. 4,4,7.] [MĀRK. P. 62,17.] [70,17.] *śraddhāmiva vimānitām*
 [R. 5,21,10.]
-  <sub>DCS 4704 · attested</sub>
+  <sub>attested</sub>

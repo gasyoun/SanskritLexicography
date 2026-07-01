@@ -10,10 +10,10 @@
 [ṚV. 1,72,1.]
 - **EN:** — *pra* to devise, to contrive; to utter, to pronounce: *pra manmahe śavasānāya śūṣamāṅgūṣaṃ girvaṇase aṅgirasvat*
 [ṚV. 1,72,1.]
-  <sub>DCS 4704 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — Vgl. *pramati* .
 
 - **RU:** — Vgl. *pramati* .
 - **EN:** — Vgl. *pramati* .
-  <sub>DCS 4704 · attested</sub>
+  <sub>attested</sub>

@@ -10,7 +10,7 @@
 [ŚAT. BR. 5,3,5,29.]
 - **EN:** 1. *bhid*¦ with *parā*
 [ŚAT. BR. 5,3,5,29.]
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **from_vi)** — *pra* caus. vom intens. *prabebhidayya*
 [PAT. a. a. O. 6 (4),14,a.]
@@ -19,7 +19,7 @@
 [PAT. a. a. O. 6 (4),14,a.]
 - **EN:** — *pra* caus. from intens. *prabebhidayya*
 [PAT. a. a. O. 6 (4),14,a.]
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **7)** — *vi*
  7) *śrutayo vibhinnāḥ* sich widersprechend
@@ -31,4 +31,4 @@
 - **EN:** — *vi*
  7) *śrutayo vibhinnāḥ* contradicting each other, mutually contradictory
 [Spr. (II) 2505.]
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>

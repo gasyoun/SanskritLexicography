@@ -20,7 +20,7 @@
 [12,5048.] *saṃmate sārthavāhasya* according to the opinion of
 [3,2536.] [7,1455.] *mama saṃmatena* dass.
 [HIT. 48,1.] [132,21.]
-  <sub>DCS 4704 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) halten für (acc.): *śatādviśiṣṭaṃ yaṃ yuddhe samamanyata*
 [MBH. 7,359.]
@@ -47,7 +47,7 @@
 [SĀH. D. 205.]
 [BHĀG. P. 6,10,33.] *rājānaṃ mānuṣaṃ prāhurdevatve saṃmato mama* I regard him as a god
 [R. 2,102,4.]
-  <sub>DCS 4704 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) gedenken, beabsichtigen: *samamanyata me patim . abhiṣecayituṃ rājā*
 [R. 3,53,4.]
@@ -56,7 +56,7 @@
 [R. 3,53,4.]
 - **EN:** — 3) to intend, to purpose: *samamanyata me patim . abhiṣecayituṃ rājā*
 [R. 3,53,4.]
-  <sub>DCS 4704 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) Jmd schätzen, ehren: *ko vā samayabhettāraṃ budhaḥ saṃmantumarhati*
 [MBH. 9,3595.]
@@ -128,7 +128,7 @@
 [MBH. 7,2142.] *saṃmatānaśvān* standing in repute
 [R. 2,40,17.] [68,10.] *rathamindrasya saṃmatam*
 [MBH. 3,1724.]
-  <sub>DCS 4704 · attested</sub>
+  <sub>attested</sub>
 
 **5)** — 5) Etwas billigen, anerkennen, gutheissen; *saṃmata* anerkannt
 [BHĀG. P. 2,1,22.] *sādhujanasya* von
@@ -158,7 +158,7 @@
 [BHĀG. P. 5,10,16.]
 [PAÑCAR. 1,1,16.] *asaṃmatādāyin* taking without the consent (of the owner)
 [MBH. 12,5969.]
-  <sub>DCS 4704 · attested</sub>
+  <sub>attested</sub>
 
 **6)** — 6) Jmd (acc.) bevollmächtigen, die Erlaubniss zu Etwas geben: *vikrīṇīte parasya svaṃ yo 'svāmī svāmyasaṃmataḥ*
 [M. 8,197.] Inschr. in
@@ -182,7 +182,7 @@ haben die richtige Lesart), für *saṃmita* (so die [ed. Calc.] und Bomb.)
 [MBH.] and the scholia to [KĀM. NĪTIS.]
 have the correct reading), for *saṃmita* (thus the [ed. Calc.] and Bomb.)
 [MBH.] in [BENF. Chr. 32,5.] Vgl. *saṃmati, saṃmāna* . — caus.
-  <sub>DCS 4704 · attested</sub>
+  <sub>attested</sub>
 
 **Caus.1)** 1) Jmd ehren, Jmd Ehre erweisen: *sādhūnsaṃmānayedrājā viparītāṃśca ghātayet*
 [YĀJÑ. 1,337.]
@@ -218,7 +218,7 @@ have the correct reading), for *saṃmita* (thus the [ed. Calc.] and Bomb.)
 [34,119.] [PAÑCAT. 29,16.] *snānabhojanapānācchādanādinā*
 [128,20.] *vibhavaiḥ*
 [Spr. 1903.]
-  <sub>DCS 4704 · attested</sub>
+  <sub>attested</sub>
 
 **Caus.2)** — 2) Etwas beachten: *utpātānasaṃmānya*
 [BHAṬṬ. 15,28.]
@@ -227,7 +227,7 @@ have the correct reading), for *saṃmita* (thus the [ed. Calc.] and Bomb.)
 [BHAṬṬ. 15,28.]
 - **EN:** — 2) (Caus.) to take note of something: *utpātānasaṃmānya*
 [BHAṬṬ. 15,28.]
-  <sub>DCS 4704 · attested</sub>
+  <sub>attested</sub>
 
 **Caus.3)** — 3) Jmd (gen.) Etwas versichern: *mayā hi sarvathā strīṇāṃ māhātmyaṃ varavarṇini . pativratānāmārādhyamiti saṃmānayāmi te ..*
 [MĀRK. P. 16,76.]
@@ -236,15 +236,15 @@ have the correct reading), for *saṃmita* (thus the [ed. Calc.] and Bomb.)
 [MĀRK. P. 16,76.]
 - **EN:** — 3) (Caus.) to assure someone (gen.) of something: *mayā hi sarvathā strīṇāṃ māhātmyaṃ varavarṇini . pativratānāmārādhyamiti saṃmānayāmi te ..*
 [MĀRK. P. 16,76.]
-  <sub>DCS 4704 · attested</sub>
+  <sub>attested</sub>
 
 **final)** — Vgl. *saṃmānana* .
 
 - **RU:** — Vgl. *saṃmānana* .
 - **EN:** — Vgl. *saṃmānana* .
-  <sub>DCS 4704 · attested</sub>
+  <sub>attested</sub>
 
 **preamble)** — *sam*
 
 - **RU:** — *sam*
-  <sub>DCS 4704 · attested</sub>
+  <sub>attested</sub>

@@ -19,7 +19,7 @@
 [R. 2,75,41.] *yādṛśo 'yaṃ mama krodho daivātsamupajāyate*
 [3,69,22.] *samupajātābhiniveśam*
 [PRAB. 67,14.]
-  <sub>DCS 9250 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) wiedergeboren werden: *svarge samupajāyate*
 [MBH. 13,6722.] — caus. erzeugen, verursachen: *atiśayaparuṣābhirgrīṣmavahneḥ śikhābhiḥ samupajanitatāpam — vindhyam*
@@ -31,4 +31,4 @@
 - **EN:** — 2) to be reborn: *svarge samupajāyate*
 [MBH. 13,6722.] — caus. to engender, to cause: *atiśayaparuṣābhirgrīṣmavahneḥ śikhābhiḥ samupajanitatāpam — vindhyam*
 [ṚT. 2,28.]
-  <sub>DCS 9250 · attested</sub>
+  <sub>attested</sub>

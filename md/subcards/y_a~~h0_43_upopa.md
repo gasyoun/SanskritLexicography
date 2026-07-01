@@ -10,4 +10,4 @@
 [MBH. 3,12358.]
 - **EN:** — *upopa* to reach, to enter upon: *te dvādaśaṃ varṣamupopayātā* (probably to be read thus) *vane vihartuṃ kuravaḥ*
 [MBH. 3,12358.]
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>

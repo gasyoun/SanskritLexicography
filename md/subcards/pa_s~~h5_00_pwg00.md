@@ -10,4 +10,4 @@
 [Spr. (II) 3380.]
 - **EN:** 1. *paś*¦ with *prati* to live through, experience: *nāpriyaṃ pratipaśyeyuḥ*
 [Spr. (II) 3380.]
-  <sub>DCS 4733 · attested</sub>
+  <sub>attested</sub>

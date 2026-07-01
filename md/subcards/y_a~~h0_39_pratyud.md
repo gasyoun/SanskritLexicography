@@ -22,10 +22,10 @@
 [RAGH. 1,49.]
 [MEGH. 23.] also with gen. of the person: *proṣyāgacchatāmāhitāgnīnāmagnayaḥ pratyudyānti* ved. Cit. in
 [MALLIN.] to [RAGH. 1,49.]
-  <sub>DCS 105 · attested</sub>
+  <sub>attested</sub>
 
 **note)** — Vgl. *pratyudyātar* .
 
 - **RU:** — Vgl. *pratyudyātar* .
 - **EN:** — Vgl. *pratyudyātar* .
-  <sub>DCS 105 · attested</sub>
+  <sub>attested</sub>

@@ -1,6 +1,6 @@
 # labh
 
-_PWG article — 26 sub-card(s), 172 sense(s) · RU 47/172 · EN 169/172_
+_PWG article — 26 sub-card(s), 174 sense(s) · RU 71/174 · EN 169/174_
 
 ## labh
 
@@ -1202,6 +1202,36 @@ v. l. has the correct reading.
 [VIKR. 67,4.] *nidrām*
 [29.] *bālasparśam*
 [ŚĀK. 103,19.]
+
+- **RU:** — *upa*
+ 1) поймать, схватить, овладеть, найти, получить, обрести, вновь обрести, стать причастным (pass. достаться в удел, стать долей)
+[KĀTY. ŚR. 25,9,2.] [12,25.]
+[R. 3,46,14.]
+[MBH. 1,1046] (act.). [1853.] [3,2597.] [R. 3,74,29.] *upalabdhaṃ hi mitraṃ me*
+[4,9,101.] [40,71.] [VIKR. 65,19.] [DAŚAK. 73,10.] [80,17.] *nāvamiva māmupalabhya*
+[88,5. 6.] [SADDH. P. 4,14,a.] *garbhānupalebhire* получили
+[R. 1,15,25] ([23] [GORR.]). [M. 11,17.] [MBH. 13,307.] *nālabhyaṃ copalabhyeta nṛṇām*
+[7601.] [14,448.] [HARIV. 6507] (*durgakarmāṇi saṃskārānupakalpya* более позднее Ausg.). *anartham*
+[R. 3,42,47.] *anyatamaṃ rasamupalabhate* приобретает вкус
+[SUŚR. 1,169,11.]
+[MṚCCH. 1,16.]
+[RAGH. 8,81.] [10,2.] [18,21.]
+[RĀJA-TAR. 5,297.]
+[BHĀG. P. 1,16,34.] [3,16,6.] [33,37.] [5,2,15.] [3,4.] *grahatvam*
+[HARIV. 607.] *smṛtim*
+[MBH. 1,3994.] [ŚĀK. 108,7.] [Verz. d. Oxf. H. 51,b,35.] *saṃjñām*
+[MBH. 1,216.]
+[R. 2,62,3.] [3,25,9.] *sukham*
+[Spr. 3322.] [4073.]
+[KUMĀRAS. 4,42.] *śāntim*
+[MBH. 1,6526.] [16,276.] *nirvṛtim*
+[RĀJA-TAR. 1,65.] *sveṣu *
+
+* dāreṣu ratim*
+[R. 5,22,30.]
+[VIKR. 67,4.] *nidrām*
+[29.] *bālasparśam*
+[ŚĀK. 103,19.]
 - **EN:** — *upa*
  1) to catch, to get hold of, to find, to obtain, to receive, to recover, to come to share in (pass. to fall to one's share)
 [KĀTY. ŚR. 25,9,2.] [12,25.]
@@ -1231,6 +1261,7 @@ v. l. has the correct reading.
 [VIKR. 67,4.] *nidrām*
 [29.] *bālasparśam*
 [ŚĀK. 103,19.]
+  <sub>attested</sub>
 
 **2)** — 2) wahrnehmen: *pratyakṣataḥ*
 [P. 6,3,80], Sch.
@@ -1246,6 +1277,21 @@ v. l. has the correct reading.
 [Spr. 1491.] [5328.]
 [BHĀG. P. 1,8,8.] [9,9.] [16,19.] [2,7,12.] [10,9.] [3,17,27.] [20,31.] [27,10.] [28,36.] [4,6,40.] [28,46.] [29,64.] [5,2,3.] [3,7.] [9,18.] [10,1] (*upalabdhaḥ* [ed. Bomb.]).
 [15,6.] [24,5.] [20.] [7,9,34.] [9,14,40.] [MĀRK. P. 37,34.] [SĀH. D. 10,3.] [PAÑCAT. 53,3.] [KĀŚ.] zu [P. 1,2,54.] [KULL.] zu [M. 8,69.] Schol. zu [ŚĀK. 13,12.]
+
+- **RU:** — 2) воспринимать: *pratyakṣataḥ*
+[P. 6,3,80], Sch.
+*sākṣādanupalabhyamānāvagnipiśācau kapotavātābhyāmanumīyete* ebend. *agnirāptopadeśātpratīyate 'trāgniriti . pratyāsīdatā dhūmadarśanenānumīyate . pratyāsannena ca pratyakṣata upalabhyate* Comm. к [NYĀYAS. 1,1,3.]
+[JAIM. 1,1,9.] [TATTVAS. 18.] [NĪLAK. 157.] [KUMĀRILA] у [MÜLLER, SL. 510.] [ŚAṂK.] к [BṚH. ĀR. UP. S. 27. 300.] [Verz. d. Oxf. H. 256,b,8.] [264,a,29] (*upāla˚* ошибочно напечатано).
+[BHĀṢĀP. 61.]
+[GAUḌAP.] к [SĀṂKHYAK. 6.] Schol. к [KAP. 1,109. 114. 157.] [SARVADARŚANAS. 7,13. 21. 21,19.] *tamālaśyāmalatvenopalabhyamānaṃ tamaḥ* воспринимаемый как
+[110,17. 144,4.] [MBH. 1,8276.] *nalaṃ ca hṛtasarvasvamupalabhya*
+[3,2274.] [2396.] [4,771.] [7,3070] (*upalapsyanti* [ed. Bomb.]).
+[HARIV. 11593.]
+[R. 2,65,13.] [3,60,13.] [5,14,59.] [51,15.] *nopalebhe tadātmānam*
+[7,88,12.] [VIKR. 57,11.] *na sukhaṃ duḥkhamevāsti yasmāttadupalabhyate*
+[Spr. 1491.] [5328.]
+[BHĀG. P. 1,8,8.] [9,9.] [16,19.] [2,7,12.] [10,9.] [3,17,27.] [20,31.] [27,10.] [28,36.] [4,6,40.] [28,46.] [29,64.] [5,2,3.] [3,7.] [9,18.] [10,1] (*upalabdhaḥ* [ed. Bomb.]).
+[15,6.] [24,5.] [20.] [7,9,34.] [9,14,40.] [MĀRK. P. 37,34.] [SĀH. D. 10,3.] [PAÑCAT. 53,3.] [KĀŚ.] к [P. 1,2,54.] [KULL.] к [M. 8,69.] Schol. к [ŚĀK. 13,12.]
 - **EN:** — 2) to perceive: *pratyakṣataḥ*
 [P. 6,3,80], Sch.
 *sākṣādanupalabhyamānāvagnipiśācau kapotavātābhyāmanumīyete* ebend. *agnirāptopadeśātpratīyate 'trāgniriti . pratyāsīdatā dhūmadarśanenānumīyate . pratyāsannena ca pratyakṣata upalabhyate* Comm. to [NYĀYAS. 1,1,3.]
@@ -1260,6 +1306,7 @@ v. l. has the correct reading.
 [Spr. 1491.] [5328.]
 [BHĀG. P. 1,8,8.] [9,9.] [16,19.] [2,7,12.] [10,9.] [3,17,27.] [20,31.] [27,10.] [28,36.] [4,6,40.] [28,46.] [29,64.] [5,2,3.] [3,7.] [9,18.] [10,1] (*upalabdhaḥ* [ed. Bomb.]).
 [15,6.] [24,5.] [20.] [7,9,34.] [9,14,40.] [MĀRK. P. 37,34.] [SĀH. D. 10,3.] [PAÑCAT. 53,3.] [KĀŚ.] to [P. 1,2,54.] [KULL.] to [M. 8,69.] Schol. to [ŚĀK. 13,12.]
+  <sub>attested</sub>
 
 **3)** — 3) erfahren, in Erfahrung bringen, kennen lernen, erkennen, sich Gewissheit verschaffen über
 [M. 7,57.]
@@ -1284,6 +1331,30 @@ v. l. has the correct reading.
 [Spr. 3220.] *caturthaṃ nopalabhyate* kennt man nicht
 [871.] [3067.] [KATHĀS. 6,128.] *vināśastava rāmeṇa saṃyuge nopalabhyate* so v. a. ist unbegreiflich
 [R. 6,95,7.]
+
+- **RU:** — 3) узнать, разузнать, познакомиться, познать, распознать, удостовериться в
+[M. 7,57.]
+[MBH. 2,2615.] [4,898.]
+[HARIV. 4609.]
+[R. 1,68,11.] [3,34,17.] [39,2.] [60,14.] [4,47,17.] [58,11.] [39.] [5,1,82.] [38,17.] [71,4.] [7,33,23.]
+[RAGH. 12,60.]
+[ŚĀK. 11,16.]
+[MĀLAV. 44,3.] [41.] [64.]
+[VARĀH. BṚH. 2,3.]
+[KATHĀS. 33,93.] [65,225.] [73,357.]
+[RĀJA-TAR. 3,500.] [4,430.]
+[BHĀG. P. 4,6,3.] [5,1,9.]
+[DAŚAK. 59,5.] [69,10.]
+[PAÑCAT. 172,21.]
+[BHAṬṬ. 3,27.] *anupalabhyātmānamananuvidya*
+[CHĀND. UP. 8,8,4.]
+[KAṬHOP. 6,12. fg.]
+[MAITRYUP. 4,4. 6,8.] распознать, уразуметь, знать
+[MBH. 2,709.] *manaso duḥkhamūlaṃ tu sneha ityupalabhyate*
+[3,73.] *savyadakṣiṇayoryatra viśeṣo nopalabhyate*
+[Spr. 3220.] *caturthaṃ nopalabhyate* не знают
+[871.] [3067.] [KATHĀS. 6,128.] *vināśastava rāmeṇa saṃyuge nopalabhyate* то v. a. непостижимо
+[R. 6,95,7.]
 - **EN:** — 3) to learn, to come to know, to become acquainted with, to recognize, to obtain certainty about
 [M. 7,57.]
 [MBH. 2,2615.] [4,898.]
@@ -1307,18 +1378,28 @@ v. l. has the correct reading.
 [Spr. 3220.] *caturthaṃ nopalabhyate* is not known
 [871.] [3067.] [KATHĀS. 6,128.] *vināśastava rāmeṇa saṃyuge nopalabhyate* then v. a. is incomprehensible
 [R. 6,95,7.]
+  <sub>attested</sub>
 
 **4)** — 4) pass. mit act. Bedeutung: *nopalabhyati mūḍhātmā pratyakṣaṃ brahma śāśvatam* nimmt wahr
 [HARIV. 11600] (*mūḍhānāṃ* die neuere Ausg., also hier wirkliches pass.). *sa hi sthānāni sarvāṇi kārtsnyena kapipuṃgavaḥ . naramāṃsāśināṃ loke naipuṇyenopalabhyate ..* kennt
 [R. 3,75,70.]
+
+- **RU:** — 4) pass. со act. значением: *nopalabhyati mūḍhātmā pratyakṣaṃ brahma śāśvatam* воспринимает
+[HARIV. 11600] (*mūḍhānāṃ* более позднее Ausg., следовательно, здесь действительное pass.). *sa hi sthānāni sarvāṇi kārtsnyena kapipuṃgavaḥ . naramāṃsāśināṃ loke naipuṇyenopalabhyate ..* знает
+[R. 3,75,70.]
 - **EN:** — 4) pass. with act. meaning: *nopalabhyati mūḍhātmā pratyakṣaṃ brahma śāśvatam* perceives
 [HARIV. 11600] (*mūḍhānāṃ* the more recent Ausg., hence here a real pass.). *sa hi sthānāni sarvāṇi kārtsnyena kapipuṃgavaḥ . naramāṃsāśināṃ loke naipuṇyenopalabhyate ..* knows
 [R. 3,75,70.]
+  <sub>attested</sub>
 
 **5)** — 5) *upalabdha*
 [R. 2,40,45] fehlerhaft für *upā˚* getadelt. wie die [ed. Bomb.] liest.
+
+- **RU:** — 5) *upalabdha*
+[R. 2,40,45] ошибочно вместо *upā˚* порицается. как читает [ed. Bomb.].
 - **EN:** — 5) *upalabdha*
 [R. 2,40,45] erroneous for *upā˚* blamed, as the [ed. Bomb.] reads.
+  <sub>lexicographic</sub>
 
 **caus1)** — Vgl. *upalabdhavya* fgg., *upalabhya* fgg. — caus.
  1) bewirken, dass Jmd etwas erhält, zukommen lassen: *bubhuje ca śriyaṃ svṛddhāṃ dvijadevopalambhitām*
@@ -1329,20 +1410,45 @@ v. l. has the correct reading.
 
 **caus2)** — 2) Jmd Etwas erfahren —, erkennen lassen
 [P. 1,4,52], Vārtt. 2, Schol.
+
+- **RU:** — 2) дать кому-л. что-л. узнать —, дать распознать
+[P. 1,4,52], Vārtt. 2, Schol.
 - **EN:** — 2) to let someone learn of —, recognize something
 [P. 1,4,52], Vārtt. 2, Schol.
+  <sub>attested</sub>
 
 **caus3)** — 3) bewirken, dass Jmd oder Etwas erkannt wird, erkennbar machen
 [BHĀG. P. 4,1,25.] — desid. etwa eingreifen wollen in: *akṣāṇāṃ gaṇamupalipsamānāḥ*
 [AV. 6,118,1], wo die Lesart zweifelhaft ist; die Hdschrr. scheinen *gattum* oder *gatram* zu schreiben, während
 [TBR. 3,7,12,3] *vagnamupajighnamānāḥ* gelesen wird.
+
+- **RU:** — 3) сделать так, чтобы кто-л. или что-л. было распознано, сделать узнаваемым
+[BHĀG. P. 4,1,25.] — desid. примерно желая вмешаться в: *akṣāṇāṃ gaṇamupalipsamānāḥ*
+[AV. 6,118,1], где чтение сомнительно; Hdschrr., по-видимому, пишут *gattum* или *gatram*, тогда как
+[TBR. 3,7,12,3] читается *vagnamupajighnamānāḥ*.
 - **EN:** — 3) to cause someone or something to be recognized, to make recognizable
 [BHĀG. P. 4,1,25.] — desid. perhaps wishing to intervene in: *akṣāṇāṃ gaṇamupalipsamānāḥ*
 [AV. 6,118,1], where the reading is doubtful; the Hdschrr. seem to write *gattum* or *gatram*, whereas
 [TBR. 3,7,12,3] *vagnamupajighnamānāḥ* is read.
+  <sub>lexicographic</sub>
 
 **note)** — Vgl. *upalipsā* fg.
+
+- **RU:** — Vgl. *upalipsā* fg.
 - **EN:** — Vgl. *upalipsā* fg.
+  <sub>attested</sub>
+
+**caus-intro)** — Vgl. *upalabdhavya* fgg., *upalabhya* fgg. — caus.
+
+- **RU:** — Vgl. *upalabdhavya* fgg., *upalabhya* fgg. — caus.
+  <sub>attested</sub>
+
+**caus-1)** 1) bewirken, dass Jmd etwas erhält, zukommen lassen: *bubhuje ca śriyaṃ svṛddhāṃ dvijadevopalambhitām*
+[BHĀG. P. 8,15,36.]
+
+- **RU:** 1) сделать так, чтобы кто-л. что-л. получил, доставить, передать: *bubhuje ca śriyaṃ svṛddhāṃ dvijadevopalambhitām*
+[BHĀG. P. 8,15,36.]
+  <sub>attested</sub>
 
 ## pratyupalabh
 
@@ -1375,15 +1481,19 @@ v. l. has the correct reading.
 - **EN:** — 2) to learn, to come to know
 [VARĀH. BṚH. S. 88,10.]
 
-## parilabh
+## pari-labh
 
 `la_b~~h0_14_pari`
 
 
 **1)** — *pari* erlangen, bekommen
 [Verz. d. Oxf. H. 248,b,6.]
+
+- **RU:** — *pari* обретать, получать
+[Verz. d. Oxf. H. 248,b,6.]
 - **EN:** *pari* to attain, obtain
 [Verz. d. Oxf. H. 248,b,6.]
+  <sub>attested</sub>
 
 ## pra-labh
 
@@ -1398,6 +1508,10 @@ v. l. has the correct reading.
 [4320.]
 
 An beiden Stellen vielleicht auch in der Bed. 3).
+
+- **RU:** — *pra*, *prālambhi, pralambham* [P. 7,1,69], Sch. [VOP. 24,7.] 1) {%схватывать, хватать, овладевать кем-л.[MBH. 5,1551.] *kāmamanyubhyāṃ pralabdhaḥ* [4320.]
+
+В обоих местах, возможно, также в значении Bed. 3).
 - **EN:** — *pra*, *prālambhi, pralambham*
 [P. 7,1,69], Sch.
 [VOP. 24,7.]
@@ -1406,25 +1520,35 @@ An beiden Stellen vielleicht auch in der Bed. 3).
 [4320.]
 
 In both places perhaps also in the Bed. 3).
+  <sub>attested</sub>
 
 **2)** — 2) erlangen, bekommen
 [KATHĀS. 21,133.]
+
+- **RU:** — 2) {%достигать, получать[KATHĀS. 21,133.]
 - **EN:** — 2) to obtain, to get
 [KATHĀS. 21,133.]
+  <sub>attested</sub>
 
 **3)** — 3) Jmd hintergehen, anführen, foppen, zum Narren halten
 [MBH. 2,1365] (*pralambhante* beide Ausgg., = *avalambante*
 [NĪLAK.]). [3,2612.] [11,122.] [BHĀG. P. 3,17,27.] [29.] [18,13.] [4,7,13.] [10,22,21.] [34,13.] [11,1,16.]
+
+- **RU:** — 3) {%обманывать, вводить в заблуждение, дурачить, водить за нос кого-л.[MBH. 2,1365] (*pralambhante* оба Ausgg., = *avalambante* [NĪLAK.]). [3,2612.] [11,122.] [BHĀG. P. 3,17,27.] [29.] [18,13.] [4,7,13.] [10,22,21.] [34,13.] [11,1,16.]
 - **EN:** — 3) to deceive, to dupe, to fool, to make a fool of someone
 [MBH. 2,1365] (*pralambhante* both Ausgg., = *avalambante*
 [NĪLAK.]). [3,2612.] [11,122.] [BHĀG. P. 3,17,27.] [29.] [18,13.] [4,7,13.] [10,22,21.] [34,13.] [11,1,16.]
+  <sub>attested</sub>
 
 **caus)** — Vgl. *pralabdhavya, pralambha* fg. — caus. Jmd anführen, foppen, zum Narren halten
 [BHĀG. P. 9,3,20.] [10,60,49.]
+
+- **RU:** — Vgl. *pralabdhavya, pralambha* fg. — caus. {%обманывать, дурачить, водить за нос кого-л.[BHĀG. P. 9,3,20.] [10,60,49.]
 - **EN:** — Vgl. *pralabdhavya, pralambha* fg. — caus. to deceive someone, to fool, to make a fool of
 [BHĀG. P. 9,3,20.] [10,60,49.]
+  <sub>attested</sub>
 
-## vipra-labh
+## vi-pra-labh
 
 `la_b~~h0_16_vipra`
 
@@ -1434,21 +1558,33 @@ In both places perhaps also in the Bed. 3).
 [MBH. 5,7431.] [ŚĀK. 70,22.] [UTTARAR. 114,15. fg.] ([155,10]). [KATHĀS. 4,61.] [12,190.] [25,203.] [45,273.] [71,170.] [BHĀG. P. 1,18,48.] [4,15,24.] [25,62.] [5,10,6.] [8,21,34.] [MĀRK. P. 24,27.] [DAŚAR. 2,25. 4,62.] [PRATĀPAR. 5,b,6.] [SĀH. D. 112.] [118.] [VET. in LA. (III) 20,16.] [HIT. 92,6.] [120,18.] [AK. 3,1,41.] [H. 442.] [HALĀY. 2,228.] *tvayoditaṃ vyaktamavipralabdham* ohne Trug
 [BHĀG. P. 5,10,10.] das Gesetz verhöhnen so v. a. ohne alle Rücksicht verletzen: *sa vai dharmo vipralabdhaḥ sabhāyāṃ pāpātmabhiḥ*
 [MBH. 3,223.]
+
+- **RU:** 1) обманывать, дурачить кого-л., насмехаться (над кем-л.), выставлять на посмешище [MBH. 5,7431.] [ŚĀK. 70,22.] [UTTARAR. 114,15. fg.] ([155,10]). [KATHĀS. 4,61.] [12,190.] [25,203.] [45,273.] [71,170.] [BHĀG. P. 1,18,48.] [4,15,24.] [25,62.] [5,10,6.] [8,21,34.] [MĀRK. P. 24,27.] [DAŚAR. 2,25. 4,62.] [PRATĀPAR. 5,b,6.] [SĀH. D. 112.] [118.] [VET. in LA. (III) 20,16.] [HIT. 92,6.] [120,18.] [AK. 3,1,41.] [H. 442.] [HALĀY. 2,228.] *tvayoditaṃ vyaktamavipralabdham* без обмана [BHĀG. P. 5,10,10.] закон осмеивать, глумиться над (законом), а также v. a. нарушать без всякого стеснения (уважения): *sa vai dharmo vipralabdhaḥ sabhāyāṃ pāpātmabhiḥ*
+[MBH. 3,223.]
 - **EN:** — *vipra*
  1) to deceive someone, to dupe, to mock, to make a fool of
 [MBH. 5,7431.] [ŚĀK. 70,22.] [UTTARAR. 114,15. fg.] ([155,10]). [KATHĀS. 4,61.] [12,190.] [25,203.] [45,273.] [71,170.] [BHĀG. P. 1,18,48.] [4,15,24.] [25,62.] [5,10,6.] [8,21,34.] [MĀRK. P. 24,27.] [DAŚAR. 2,25. 4,62.] [PRATĀPAR. 5,b,6.] [SĀH. D. 112.] [118.] [VET. in LA. (III) 20,16.] [HIT. 92,6.] [120,18.] [AK. 3,1,41.] [H. 442.] [HALĀY. 2,228.] *tvayoditaṃ vyaktamavipralabdham* without deceit
 [BHĀG. P. 5,10,10.] to mock the law, then v. a. to violate without any regard: *sa vai dharmo vipralabdhaḥ sabhāyāṃ pāpātmabhiḥ*
 [MBH. 3,223.]
+  <sub>attested</sub>
 
 **2)** — 2) wiedererlangen, wiederbekommen
 [MBH. 14,1732] nach der Lesart der [ed. Bomb.], *pravila˚* [ed. Calc.]; die richtige Lesart wird *pratila˚* sein.
+
+- **RU:** 2) вновь обретать, получать обратно
+[MBH. 14,1732] по чтению [ed. Bomb.], *pravila˚* [ed. Calc.]; правильным чтением будет, вероятно, *pratila˚*.
 - **EN:** — 2) to regain, to get back
 [MBH. 14,1732] according to the reading of the [ed. Bomb.], *pravila˚* [ed. Calc.]; the correct reading will be *pratila˚*.
+  <sub>attested</sub>
 
 **caus)** — Vgl. *vipralambha* . — caus. verhöhnen so v. a. rücksichtslos verletzen: *ājñām* einen Befehl
 [BHĀG. P. 6,3,8.]
+
+- **RU:** — Vgl. *vipralambha*. — caus. осмеивать, глумиться, а также v. a. нарушать без стеснения (без оглядки): *ājñām* приказ
+[BHĀG. P. 6,3,8.]
 - **EN:** — Vgl. *vipralambha*. — caus. to mock, then v. a. to violate without regard: *ājñām* a command
 [BHĀG. P. 6,3,8.]
+  <sub>attested</sub>
 
 ## pratilabh
 
@@ -1465,6 +1601,24 @@ In both places perhaps also in the Bed. 3).
 [MBH. 1,6827.] [7882.]
 [R. 4,61,13.] *brāhmaṇyam* (so die neuere Ausg.)
 [HARIV. 1019] (act.). *darśanam* so v. a. wiedersehen
+[MBH. 15,939.] *saṃjñām*
+[1,6773.] [6,2835.] [4574.] [7,4071.] [8,531.] [14,2013.] [R. 2,39,9] ([38,9] [GORR.]). [R. GORR. 2,9,37.] [35,2.] [58,1.] [5,30,15.] [MĀLAV. 68,19.] *cetanām*
+[MBH. 3,712.]
+[R. 6,8,7.] *pratilabdhendriyaprāṇa*
+[BHĀG. P. 10,16,55.] *pratilabdhavāc*
+[6,16,33.] *pratilabdhajayaśrī*
+[8,17,13.]
+
+- **RU:** — *prati*
+ 1) «вновь обрести, получить обратно»: *bhartāram*
+[MBH. 3,16809.]
+[HARIV. 9985.]
+[R. 3,8,25.] [4,25,39.]
+[BHĀG. P. 4,9,51.]
+[MĀRK. P. 24,43.] *cakṣūṃṣi*
+[MBH. 1,6827.] [7882.]
+[R. 4,61,13.] *brāhmaṇyam* (так новейшая Ausg.)
+[HARIV. 1019] (act.). *darśanam* так v. a. «увидеть вновь»
 [MBH. 15,939.] *saṃjñām*
 [1,6773.] [6,2835.] [4574.] [7,4071.] [8,531.] [14,2013.] [R. 2,39,9] ([38,9] [GORR.]). [R. GORR. 2,9,37.] [35,2.] [58,1.] [5,30,15.] [MĀLAV. 68,19.] *cetanām*
 [MBH. 3,712.]
@@ -1489,6 +1643,7 @@ In both places perhaps also in the Bed. 3).
 [BHĀG. P. 10,16,55.] *pratilabdhavāc*
 [6,16,33.] *pratilabdhajayaśrī*
 [8,17,13.]
+  <sub>attested</sub>
 
 **2)** — 2) erlangen, bekommen, theilhaftig werden: *patnīm*
 [BHĀG. P. 3,13,2.] *varaṃ śreṣṭham*
@@ -1500,6 +1655,17 @@ In both places perhaps also in the Bed. 3).
 [28,34.] [16,7.] *mānam* so v. a. stolz werden
 [2,14.] [5,13,10.] pass. zu Theil werden, sich darbieten: *randhram*
 [ŚAṂK.] zu [BṚH. ĀR. UP. S. 84.]
+
+- **RU:** — 2) «обрести, получить, стать причастным»: *patnīm*
+[BHĀG. P. 3,13,2.] *varaṃ śreṣṭham*
+[MBH. 12,4180.]
+[SADDH. P. 4,7,a.b. 26,a.] [BHĀG. P. 3,31,39.] *kāmam*
+[8,21.] [5,13,12.] *manoratham*
+[14,36.] *bodham*
+[3,5,45.] *harau bhagavati pratilabdhabhāvaḥ*
+[28,34.] [16,7.] *mānam* так v. a. «возгордиться»
+[2,14.] [5,13,10.] pass. «выпасть на долю, представиться»: *randhram*
+[ŚAṂK.] к [BṚH. ĀR. UP. S. 84.]
 - **EN:** — 2) to obtain, to get, to come to share in: *patnīm*
 [BHĀG. P. 3,13,2.] *varaṃ śreṣṭham*
 [MBH. 12,4180.]
@@ -1510,26 +1676,43 @@ In both places perhaps also in the Bed. 3).
 [28,34.] [16,7.] *mānam* then v. a. to become proud
 [2,14.] [5,13,10.] pass. to fall to one's lot, to present itself: *randhram*
 [ŚAṂK.] to [BṚH. ĀR. UP. S. 84.]
+  <sub>attested</sub>
 
 **3)** — 3) seinen Theil bekommen so v. a. bestraft werden
 [MBH. 1,3490.]
+
+- **RU:** — 3) «получить свою долю» так v. a. «быть наказанным»
+[MBH. 1,3490.]
 - **EN:** — 3) to get one's portion, hence v. a. to be punished
 [MBH. 1,3490.]
+  <sub>attested</sub>
 
 **4)** — 4) erfahren: *indrātpravṛttim*
 [R. 3,63,29.] *pratilabhya ca dharmātmā śiṣyaṃ dharmaparāyaṇam* nachdem er in Erfahrung gebracht hatte, dass
 [MBH. 13,2341.]
+
+- **RU:** — 4) «узнавать, разузнавать»: *indrātpravṛttim*
+[R. 3,63,29.] *pratilabhya ca dharmātmā śiṣyaṃ dharmaparāyaṇam* «после того как он разузнал, что»
+[MBH. 13,2341.]
 - **EN:** — 4) to learn: *indrātpravṛttim*
 [R. 3,63,29.] *pratilabhya ca dharmātmā śiṣyaṃ dharmaparāyaṇam* after he had found out that
 [MBH. 13,2341.]
+  <sub>attested</sub>
 
 **5)** — 5) erwarten, abwarten: *pratilabhyatāṃ śarat*
 [R. 4,26,25.]
+
+- **RU:** — 5) «ожидать, выжидать»: *pratilabhyatāṃ śarat*
+[R. 4,26,25.]
 - **EN:** — 5) to await, to wait for: *pratilabhyatāṃ śarat*
 [R. 4,26,25.]
+  <sub>attested</sub>
 
 **note)** — Vgl. *pratilabhya* fgg.
+
+- **RU:** — Vgl. *pratilabhya* fgg.
 - **EN:** — Vgl. *pratilabhya* fgg.
+  <sub>attested</sub>
 
 ## vi+labh
 

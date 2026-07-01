@@ -13,4 +13,4 @@
 - **EN:** *anuvi* to catch sight of, to view: *tameṣa udyannanuvipaśyati*
 [ŚAT. BR. 6,7,2,4.] *te 'surānrātriṃ tamaḥ praviṣṭānnānuvyapaśyan*
 [PAÑCAV. BR. 9,1,1.]
-  <sub>DCS 2 · attested</sub>
+  <sub>attested</sub>

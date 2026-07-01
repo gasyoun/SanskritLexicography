@@ -31,7 +31,7 @@
 [MBH. 12,13216.] *divyāḥ patantyeva śāpānmānuṣayoniṣu*
 [KATHĀS. 27,76.] [36,119.] *svargapatitaḥ* deprived of heaven
 [P. 2,1,38], Sch.
-  <sub>DCS 3124 · attested</sub>
+  <sub>attested</sub>
 
 **5)** — 5) zur Hölle niederfahren: *nejjihmā yantyo narakaṃ patāma*
 [NIR. 1,11] (vgl. Sch. zu [P. 3,4,8.] [8,1,30]). [R. GORR. 2,49,27.] *narakaṃ patitaḥ, narakapatitaḥ*
@@ -61,7 +61,7 @@
 [4,197.] *pātālamukhe*
 [DRAUP. 5,4.] *adhaḥ*
 [M. 11,172.]
-  <sub>DCS 3124 · attested</sub>
+  <sub>attested</sub>
 
 **6)** — 6) fallen (in moralischem Sinne): *prāyaḥ kandukapātenotpatatyāryaḥ patannapi . tathā tvanāryaḥ patati mṛtpiṇḍanaṃ yathā ..*
 [BHARTṚ. Suppl. 14.] fallen, stürzen s. v. a. seiner Kaste — seiner Stellung verlustig gehen: *paradharmeṇa jīvanhi sadyaḥ patati jātitaḥ*
@@ -109,7 +109,7 @@
 [M. 8,389.] *sāvitrīpatita* deprived of Sāv.
 [M. 2,39.]
 [YĀJÑ. 1,38]; vgl. *patitasāvitrīka*.
-  <sub>DCS 3124 · attested</sub>
+  <sub>attested</sub>
 
 **7)** — 7) fallen auf s. v. a. sich richten auf, treffen: *prasādasaumyāni satāṃ suhṛjjane patanti cakṣūṃṣi*
 [ŚĀK. 156.] *tato gātreṣu patitā teṣāṃ dṛṣṭiḥ*
@@ -133,7 +133,7 @@
 [BHĀG. P. 2,6,33.] *vyaktaṃ mayi ca tasyāṃ ca patito hi viparyayaḥ* s. v. a. fallen to one's share
 [R. 2,22,20.] *prajābhiśāpe patite*
 [RĀJA-TAR. 5,209.]
-  <sub>DCS 3124 · attested</sub>
+  <sub>attested</sub>
 
 **8)** — 8) gerathen in: *mahāpaṅke patito 'ham*
 [HIT. 41,16.] *citraṃ yacchvāpado 'pyenāṃ patitāmapi gocare nābadhīt*
@@ -172,7 +172,7 @@ Schol. zu [P. 1,1,71.]
 [Spr. 240.] *madhyapatita* so v. a. situated between
 
 Schol. to [P. 1,1,71.]
-  <sub>DCS 3124 · attested</sub>
+  <sub>attested</sub>
 
 **9)** — 9) sich ereignen, eintreten: *tatra ca cirakālaṃ durbhikṣaṃ patitam*
 [PAÑCAT. 232,25.] *yadi duḥkhaṃ patati*
@@ -187,7 +187,7 @@ Schol. to [P. 1,1,71.]
 [PAÑCAT. 232,25.] *yadi duḥkhaṃ patati*
 [ŚUK. in LA. 43,8.] *viparīte patite*
 [45,3.]
-  <sub>DCS 3124 · attested</sub>
+  <sub>attested</sub>
 
 **caus_1_intrans)** — 1. caus. *patayati* fliegen, dahineilen
 [DHĀTUP. 35,9.] *vayaḥ patayantaḥ*
@@ -211,7 +211,7 @@ Schol. to [P. 1,1,71.]
 [6,9,5.] [1,152,5.] [4,54,5.] [58,7.] [VS. 22,30.] [ŚĀṄKH. ŚR. 4,20,1.] According to some, in this Bed. also *pātayati*; s.
 [WEST.] — med. *patayate* to put to flight or to fell: *ye martyaṃ pṛtanāyantamūmairṛṇāvānaṃ na patayanta sargaiḥ*
 [ṚV. 1,169,7.]
-  <sub>DCS 3124 · attested</sub>
+  <sub>attested</sub>
 
 **caus_2_head)** — 2. caus. *pātayati* und *˚te*
  1) fliegen lassen, schleudern, fallen machen, fallen lassen, hinabwerfen, abschlagen, niederwerfen, umwerfen, werfen in, auf: *idaṃ yatkṛṣṇaḥ śakunirabhiniṣpatannapīpatat*
@@ -430,4 +430,4 @@ to direct the gaze upon: *sarvataścakṣurvane lolamapātayat*
 [ŚĀK. 117.] *arghatas* to deprive a thing of its price, to spoil the price of a thing: *maṇayo yairarghataḥ pātitāḥ*
 [BHARTṚ. 2,12.] to introduce, to set going (?)
 [RĀJA-TAR. 5,173.]
-  <sub>DCS 3124 · attested</sub>
+  <sub>attested</sub>

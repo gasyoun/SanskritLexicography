@@ -30,7 +30,7 @@
 
 - **RU:** — Vgl. 1. *āsava, āsavitar* und 1. *āsuti* .
 - **EN:** — Vgl. 1. *āsava, āsavitar* and 1. *āsuti*.
-  <sub>DCS 14088 · attested</sub>
+  <sub>attested</sub>
 
 **ā+su sense 1 — zutheilen, zusenden, schicken)** — *ā* zutheilen, zusenden, schicken: von Savitar
 [ṚV. 1,110,3.] *a smabhyamā suva sarvatātim*
@@ -49,7 +49,7 @@
 [7,45,3.] [10,35,7.] *vayaḥ*
 ? [100,3.] [AV. 2,29,2.] [7,14,3.] [4,24,5.] [ŚAT. BR. 13,4,2,9.] med. [ṚV. 7,38,2.] [PAÑCAV. BR. 21,10,15.] *ā suvorjam (agne)*
 [ṚV. 9,66,19.] *(indraḥ) ā sāviṣadarśasānāya śarum* посылай so v. a. бросай на
-  <sub>DCS 14088 · attested</sub>
+  <sub>attested</sub>
 
 **ā+su sense 2 — herbeischaffen, hercitiren)** [10,99,7.] herbeischaffen, hercitiren: *ā te prāṇaṃ suvāmasi*
 
@@ -58,4 +58,4 @@
 - **RU:** [10,99,7.] доставлять, созывать: *ā te prāṇaṃ suvāmasi*
 
 [AV. 7,53,6.]
-  <sub>DCS 14088 · attested</sub>
+  <sub>attested</sub>

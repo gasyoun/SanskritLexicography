@@ -28,7 +28,7 @@
 - **EN:** — 2) to address
 [AIT. BR. 3,23.] to entreat
 [PAÑCAT.] in [Ind. St. 3,372,23.]
-  <sub>DCS 62 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) med. Jmd bereden, an sich zu locken suchen (*upasaṃbhāṣāyām* und *upamantraṇe*)
 [P. 1,3,47.] (*pralobhe*)
@@ -46,7 +46,7 @@
 [VOP. 23,39.] *karmakarānupavadate = upasāntvayati, kulabhāryāmupavadate = upacchandayati*
 [P.], Sch. *kaṃcinnopāvadiṣṭāsau*
 [BHAṬṬ. 8,28.]
-  <sub>DCS 62 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) in der dunklen Stelle *guhā hitamupa niṇigvadanti*
 [ṚV. 4,5,8] zieht
@@ -58,20 +58,20 @@
 - **EN:** — 4) in the obscure passage *guhā hitamupa niṇigvadanti*
 [ṚV. 4,5,8] takes
 [SĀY.] *upa* with *hitam*.
-  <sub>DCS 62 · attested</sub>
+  <sub>attested</sub>
 
 **caus)** — Vgl. *upavāda* fg.
 
 - **RU:** — Vgl. *upavāda* fg.
 - **EN:** — Vgl. *upavāda* fg.
-  <sub>DCS 62 · attested</sub>
+  <sub>attested</sub>
 
 **header)** — *upa*
  1) missliebig reden über (acc.), beschreien, berufen
 
 - **RU:** — *upa*
  1) дурно отзываться о (acc.), поносить, бесславить
-  <sub>DCS 62 · attested</sub>
+  <sub>attested</sub>
 
 **1) missliebig reden über, beschreien, berufen)** [AV. 15,2,1.]
 [TBR. 2,3,9,7.]
@@ -84,4 +84,4 @@
 [AIT. BR. 2,31.] *taṃ hema upodurdāsyā vai tvaṃ putro 'si*
 [ŚĀṄKH. BR. 12,3.]
 [LĀṬY. 10,7,4.]
-  <sub>DCS 62 · attested</sub>
+  <sub>attested</sub>

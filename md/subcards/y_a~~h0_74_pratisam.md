@@ -10,4 +10,4 @@
 [MBH. 6,2697.] *so 'rjunapramukhe yāntam* [ed. Bomb.]
 - **EN:** — *pratisam* {to set upon someone, to attack someone}: *so 'rjunaṃ pratisaṃyātaḥ* (*prati* could also be construed with *arjunaṃ*)
 [MBH. 6,2697.] *so 'rjunapramukhe yāntam* [ed. Bomb.]
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>

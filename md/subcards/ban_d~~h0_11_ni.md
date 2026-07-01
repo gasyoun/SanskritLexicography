@@ -130,7 +130,7 @@
 [10,71.] *tābhyāmubhābhyāṃ (daivena puruṣakāreṇa ca) sarvārthā nibaddhāḥ* "depend on that"
 [73.] *(sadācāram) nibaddhaṃ sveṣu karmasu* "bound to"
 [M. 4,155.]
-  <sub>DCS 197 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) verbinden, zusammenfügen: *dṛḍhataranibaddhamuṣṭi (kṛpaṇa)*
 [Spr. 1227.] *nibaddha eṣa bhavatāmantyaḥ praṇāmāñjaliḥ*
@@ -207,7 +207,7 @@ furchen
 [No. 602.] [KULL.] on [M. 8,142.] *praṇītam = smṛtirūpeṇa nibaddham*
 [MALLIN.] on [KUMĀRAS. 6,31.] "to discuss": *svaśākhāvihitaiścāpi śākhāntaragatānvidhīn . kalpakārā vibadhnanti* (read *niba˚) sarva eva vikalpitān ..*
 [KUMĀRILA] in [MÜLLER, SL. 178.]
-  <sub>DCS 197 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) festhalten, zurückhalten, hemmen: *nibadhnīmo 'sya pauruṣam*
 [MBH. 4,982.] *guhānibaddhapratiśabda*
@@ -219,7 +219,7 @@ furchen
 - **EN:** — 3) "to hold fast, hold back, check": *nibadhnīmo 'sya pauruṣam*
 [MBH. 4,982.] *guhānibaddhapratiśabda*
 [RAGH. 2,28.]
-  <sub>DCS 197 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) heften auf, setzen, richten, zuwenden: *nālpīyasi nibadhnanti padamunnatacetasaḥ* setzen ihren Fuss auf so v. a. machen sich an
 [Spr. 4435.] *sāṃkhyanibaddhadṛṣṭi*
@@ -255,7 +255,7 @@ furchen
 [BHĀG. P. 1,6,25.] [7,1,23.] "to appoint someone to something, charge someone with something": *yatrānibaddho 'pīkṣeta śṛṇuyādvā kiṃcana*
 [M. 8,76.] *upakūlaṃ kālindyāḥ skandhāvāraṃ nibadhnatā* "to set up, install"
 [RĀJA-TAR. 1,60.]
-  <sub>DCS 197 · attested</sub>
+  <sub>attested</sub>
 
 **5)** — 5) *nibaddha* gebildet, bestehend aus: *śauryanibaddhamūla (rākṣasarājavṛkṣa)*
 [R. 6,93,18.]
@@ -264,7 +264,7 @@ furchen
 [R. 6,93,18.]
 - **EN:** — 5) *nibaddha* "formed of, consisting of": *śauryanibaddhamūla (rākṣasarājavṛkṣa)*
 [R. 6,93,18.]
-  <sub>DCS 197 · attested</sub>
+  <sub>attested</sub>
 
 **6)** — 6) *nibaddha* sich beziehend auf: *rāme nibaddhāḥ (gāthāḥ)*
 [HARIV. 2352.] *kurukṣetranibaddhā (gāthā)*
@@ -276,7 +276,7 @@ furchen
 - **EN:** — 6) *nibaddha* "referring to, relating to": *rāme nibaddhāḥ (gāthāḥ)*
 [HARIV. 2352.] *kurukṣetranibaddhā (gāthā)*
 [MBH. 9,3029.]
-  <sub>DCS 197 · attested</sub>
+  <sub>attested</sub>
 
 **7)** — Vgl. *nibanddhar* fgg. und *anibaddha* .
 - **EN:** — Vgl. *nibanddhar* fgg. and *anibaddha*.
@@ -284,4 +284,4 @@ furchen
 **cross-ref)** {T196}— Vgl. *nibanddhar* fgg. und *anibaddha* .
 
 - **RU:** {T196}— Vgl. *nibanddhar* fgg. und *anibaddha* .
-  <sub>DCS 197 · attested</sub>
+  <sub>attested</sub>

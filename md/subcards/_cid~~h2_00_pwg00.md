@@ -7,19 +7,19 @@
 
 - **RU:** *chid*¦
 - **EN:** 1. *chid*¦
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **2)** 2) *udanvacchinnā bhūḥ* so v. a. begrenzt
 
 - **RU:** 2) *udanvacchinnā bhūḥ* так v. a. — «ограниченный»
 - **EN:** 2) *udanvacchinnā bhūḥ* so v. a. bounded, delimited
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **2-cit)** [Spr. 461.]
 
 - **RU:** [Spr. 461.]
 - **EN:** [Spr. 461.]
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) *acchinnaṃ lokasya hasitaṃ tvabhūt* ununterbrochen
 [KATHĀS. 61,47.] *kiṃ naśchinnam* was stört es uns? was geht es uns an? was machen wir uns daraus?
@@ -31,13 +31,13 @@
 - **EN:** — 3) *acchinnaṃ lokasya hasitaṃ tvabhūt* uninterrupted
 [KATHĀS. 61,47.] *kiṃ naśchinnam* what does it matter to us? what does it concern us? what do we care about it?
 [Spr. 2130.]
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **3-ref)** [MALLIN.] zu [KIR. 2,7.] [SARVADARŚANAS. 27,13.]
 
 - **RU:** [MALLIN.] к [KIR. 2,7.] [SARVADARŚANAS. 27,13.]
 - **EN:** [MALLIN.] see [KIR. 2,7.] [SARVADARŚANAS. 27,13.]
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) *śrutirātmaśaraṇyānāṃ vyasanaṃ no chinatti kim*
 [LA. (II) 90,22.] *saṃśayam*
@@ -52,7 +52,7 @@
 [LA. (II) 90,22.] *saṃśayam*
 [SŪRYAS. 12,9.] *tāvatpayo 'khilam . tattasyāśchinnam* vanished, no longer present
 [KATHĀS. 61,47.]
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **6)** — 6) theilen, dividiren
 [SŪRYAS. 4,26.] — caus.
@@ -61,7 +61,7 @@
 [SŪRYAS. 4,26.] — caus.
 - **EN:** — 6) to divide, to divide (arithmetically)
 [SŪRYAS. 4,26.] — caus.
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **caus-1)** 1)
 [Spr. 4540.]
@@ -70,13 +70,13 @@
 [Spr. 4540.]
 - **EN:** 1)
 [Spr. 4540.]
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **caus-ppp)** — *ava*
 
 - **RU:** — *ava*
 - **EN:** — *ava*
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **caus-3)** 3) *avacchinna* bestimmt, präcisirt, begrifflich begrenzt: *ṣoḍaśasaṃkhyāvacchinno gaṇaḥ ṣoḍaśakaḥ*
 [SARVADARŚANAS. 148,21.] [NĪLAK. 205. 225. 238. 242. 244. 170. fg.] *tādātmyasaṃbandhāvacchinnapratiyogiko 'nyo'nyābhāvaḥ*
@@ -103,7 +103,7 @@
 [BĀLAB. 33] and [YOGAS. 2,31] under
  1) and
 [VEDĀNTAS. (Allah.) No. 34] and [BHARTṚ. 2,1] under 2); *dikkālānavacchinna* not belonging to space and time, not falling under the categories of space and time.
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **des-1)** — *ā*
  1)
@@ -115,7 +115,7 @@ Z. 4 [MBH. 12,9377] — [ed. Bomb.] читает *ye ca cchindanti vṛṣaṇā
 - **EN:** — *ā*
  1)
 Z. 4 [MBH. 12,9377] reads the [ed. Bomb.] *ye ca cchindanti vṛṣaṇān* .
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **des-3)** — 3) entfernen, zu Nichte machen: *yenācchinnaṃ tattamaḥ* (so die [ed. Bomb.])
 [MBH. 13,7362.]
@@ -124,7 +124,7 @@ Z. 4 [MBH. 12,9377] reads the [ed. Bomb.] *ye ca cchindanti vṛṣaṇān* .
 [MBH. 13,7362.]
 - **EN:** — 3) to remove, to annihilate: *yenācchinnaṃ tattamaḥ* (so the [ed. Bomb.])
 [MBH. 13,7362.]
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **des-4)** — 4) *ācchinnadāradraviṇāḥ*
 [BHĀG. P. 12,2,9.]
@@ -133,7 +133,7 @@ Z. 4 [MBH. 12,9377] reads the [ed. Bomb.] *ye ca cchindanti vṛṣaṇān* .
 [BHĀG. P. 12,2,9.]
 - **EN:** — 4) *ācchinnadāradraviṇāḥ*
 [BHĀG. P. 12,2,9.]
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **des-6)** — 6) unterbrechen: *kathāmācchidya*
 [KATHĀS. 61,94.]
@@ -142,7 +142,7 @@ Z. 4 [MBH. 12,9377] reads the [ed. Bomb.] *ye ca cchindanti vṛṣaṇān* .
 [KATHĀS. 61,94.]
 - **EN:** — 6) to interrupt: *kathāmācchidya*
 [KATHĀS. 61,94.]
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **des-ppp)** — *samud*, *samucchinna* verloren gegangen: *racanā*
 [SŪRYAS. 13,18.]
@@ -151,7 +151,7 @@ Z. 4 [MBH. 12,9377] reads the [ed. Bomb.] *ye ca cchindanti vṛṣaṇān* .
 [SŪRYAS. 13,18.]
 - **EN:** — *samud*, *samucchinna* lost, gone: *racanā*
 [SŪRYAS. 13,18.]
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **intens-4)** — *pari*
  4)
@@ -175,7 +175,7 @@ Schol. посредством *pṛthakprakāśita*.* aparicchinna* — «нео
 Schol. through *pṛthakprakāśita*.* aparicchinna* unlimited, unrestricted
 [Spr. 3473.]
 [SARVADARŚANAS. 53,2.]
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **pass-1)** — *vi*
  1) *vicchinna* unterbrochen
@@ -199,4 +199,4 @@ Schol. through *pṛthakprakāśita*.* aparicchinna* unlimited, unrestricted
 [171,10.] *a˚*
 [58,14.] *vicchinnatva*
 [165,20.]
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>

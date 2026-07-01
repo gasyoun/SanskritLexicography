@@ -10,4 +10,4 @@
 [VS.]) [AV. 6,84,1.]
 - **EN:** — *abhipra* to hold to be, to regard as: *bhūmiriti tvābhipramanvante janāḥ* (differently
 [VS.]) [AV. 6,84,1.]
-  <sub>DCS 4704 · attested</sub>
+  <sub>attested</sub>

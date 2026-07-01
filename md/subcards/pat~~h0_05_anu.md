@@ -34,7 +34,7 @@
 [PRAB. 16,16.] *(na jātu) anupatanti vinā te prāṇināṃ śucaḥ*
 [BHĀG. P. 1,17,8.] [5,1,37.] *anupātam* absol.: *gṛhānupātam* (vgl. u. *anupra*) going from house to house, *latānupātam* at
 [GOLD.] Wörterb. u. *anupātam*.
-  <sub>DCS 3124 · attested</sub>
+  <sub>attested</sub>
 
 **caus_1)** — Vgl. *anupāta, anupātin* . — caus.
  1) hinfliegen an: *jinato vajra tvaṃ sīmantamanvañcamanu pātaya* (wohl nur metrische Dehnung)
@@ -46,7 +46,7 @@
 - **EN:** — Vgl. *anupāta, anupātin*. — caus.
  1) to fly toward: *jinato vajra tvaṃ sīmantamanvañcamanu pātaya* (probably only a metrical lengthening)
 [AV. 6,134,3.]
-  <sub>DCS 3124 · attested</sub>
+  <sub>attested</sub>
 
 **caus_2)** — 2) Jmd mit sich hinabstürzen: *patantyā niraye kasmādahamapyanupātitaḥ*
 [R. GORR. 2,75,4.]
@@ -55,4 +55,4 @@
 [R. GORR. 2,75,4.]
 - **EN:** — 2) to drag someone down with oneself: *patantyā niraye kasmādahamapyanupātitaḥ*
 [R. GORR. 2,75,4.]
-  <sub>DCS 3124 · attested</sub>
+  <sub>attested</sub>

@@ -31,7 +31,7 @@
 [MBH. 4,1312.] med. "to hang oneself"
 [ŚAT. BR. 11,5,1,8.] *galamudbadhya dṛḍhayā celacīrayā* "to tie a noose round one's own neck"
 [RĀJA-TAR. 4,573.]
-  <sub>DCS 14 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) *udbaddha* als Beiw. von Waden so v. a. fest, drall
 [MBH. 1,6074.] [7,7897.]
@@ -43,10 +43,10 @@
 - **EN:** — 2) *udbaddha* as Beiw. of calves, thus v. a. "firm, taut"
 [MBH. 1,6074.] [7,7897.]
 [VARĀH. BṚH. S. 68,17.]
-  <sub>DCS 14 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — Vgl. *udbandha* fgg.
 
 - **RU:** — Vgl. *udbandha* fgg.
 - **EN:** — Vgl. *udbandha* fgg.
-  <sub>DCS 14 · attested</sub>
+  <sub>attested</sub>

@@ -7,4 +7,4 @@
 
 - **RU:** *api* s. *apija* .
 - **EN:** — *api* s. *apija* .
-  <sub>DCS 9250 · attested</sub>
+  <sub>attested</sub>

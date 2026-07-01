@@ -138,7 +138,7 @@ einer Wurzel *gī*)
 [77], Sch. *adhunaiṣo 'bhijinnāma yogo mauhūrtiko 'gāt* 'has come'
 [BHĀG. P. 3,18,27.] *anyadā jagati rāma ityayaṃ śabda uccarita eva māmagāt* 'came to me'; so v. a. 'came to me'
 [RAGH. 11,73.]
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) in einen Zustand gerathen, theilhaft werden: *siddhimagāt*
 [MBH. 3,10697.] *harṣam*
@@ -174,7 +174,7 @@ einer Wurzel *gī*)
 [BHAṬṬ. 4,13.] *vivekadṛśvatvam*
 [2,46.] *dyunivāsabhūyam*
 [3,21.]
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **desid)** desid. *jigīṣati* zu gehen verlangen: *gatiṃ jigīṣataḥ pādau ruruhāte 'bhikāmikām*
 [BHĀG. P. 2,10,25.]
@@ -186,7 +186,7 @@ einer Wurzel *gī*)
 
 - **RU:** — desid. *jigīṣati* желать идти: *gatiṃ jigīṣataḥ pādau ruruhāte 'bhikāmikām*
 [BHĀG. P. 2,10,25.]
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 ## gā
 
@@ -209,7 +209,7 @@ einer Wurzel *gī*)
 [7,57,7.] [2,24,12.] [3,22,3.] [39,1.] [10,6,4.] *ā no acchā jigātana*
 [5,59,6.] *pra saptagumṛtadhītiṃ sumedhāṃ bṛhaspatiṃ matiracchā jigāti*
 [10,47,6.]
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 ## atigā
 
@@ -232,7 +232,7 @@ einer Wurzel *gī*)
 [ARJ. 4,62.] *āyuṣo 'rdhamathātyagāt*
 [BHĀG. P. 4,27,6.] *tasya yauvanamabhyagāt* (read: *atyagāt*)
 [MBH. 2,696.]
-  <sub>DCS 39 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) hingehen, sterben: *kenātyagādrājā vyādhinā*
 [R. 2,72,29.]
@@ -241,7 +241,7 @@ einer Wurzel *gī*)
 [R. 2,72,29.]
 - **EN:** — 2) to go away, to die: *kenātyagādrājā vyādhinā*
 [R. 2,72,29.]
-  <sub>DCS 39 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) über Etwas hingehen, — wegschreiten: *ati śritī tiraścatā gavyā jigātyaṇvyā*
 [ṚV. 9,14,6.] *mā me 'vāṅnābhimati gāḥ*
@@ -262,7 +262,7 @@ einer Wurzel *gī*)
 [MBH. 7,5229.] *(naukā) bahūrmivegābhihatā gaṅgāsalilamatyagāt*
 [R. 2,52,75.] to stride past someone, to pass for someone (of time): *mā tvāṃ kālo 'tyagādayam*
 [MBH. 1,6196.] [3,873.]
-  <sub>DCS 39 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) vorübergehen an: *atyanyā agā nānyā upāgām*
 [VS. 5,42.]
@@ -271,7 +271,7 @@ einer Wurzel *gī*)
 [VS. 5,42.]
 - **EN:** — 4) to pass by: *atyanyā agā nānyā upāgām*
 [VS. 5,42.]
-  <sub>DCS 39 · attested</sub>
+  <sub>attested</sub>
 
 **5)** — 5) siegreich überschreiten, überwinden, glücklich entkommen: *atyagānmāyāṃ devānām*
 [BHĀG. P. 9,20,27.] *hiraṇyakaśipuścāpi bhagavannindayā tamaḥ . vivikṣuratyagātsūnoḥ prahrādasyānubhāvataḥ ..*
@@ -283,7 +283,7 @@ einer Wurzel *gī*)
 - **EN:** — 5) to cross victoriously, to overcome, to escape safely: *atyagānmāyāṃ devānām*
 [BHĀG. P. 9,20,27.] *hiraṇyakaśipuścāpi bhagavannindayā tamaḥ . vivikṣuratyagātsūnoḥ prahrādasyānubhāvataḥ ..*
 [4,21,46.]
-  <sub>DCS 39 · attested</sub>
+  <sub>attested</sub>
 
 **6)** — 6) vorübergehen an, unbeachtet lassen: *na cainamatyagādvahnirvelāmiva mahodadhiḥ* er achtete auf ihn, that was er verlangt hatte
 [MBH. 2,1157.] *so 'mṛtasyābhayasyeśo martyamannaṃ yadatyagāt* (bei
@@ -301,7 +301,7 @@ einer Wurzel *gī*)
 [BURNOUF] a different interpretation)
 [BHĀG. P. 2,6,17.] *prāptakālamidaṃ manye mā tvaṃ duryodhanātyagāḥ* to neglect
 [MBH. 5,4212.]
-  <sub>DCS 39 · attested</sub>
+  <sub>attested</sub>
 
 ## vyatigā
 
@@ -315,7 +315,7 @@ einer Wurzel *gī*)
 [RAGH. 6,52.]
 - **EN:** — *vyati* to pass by: *nṛpaṃ tam — sā vyatyagādanyabadhūrbhavitrī . mahīdharaṃ mārgavaśādupetaṃ srotovahā sāgaragāminīva ..*
 [RAGH. 6,52.]
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>
 
 ## adhigā
 
@@ -335,7 +335,7 @@ einer Wurzel *gī*)
  1) to fall into a state, to come to partake of: *viśvāmitro 'dhyagādyatra brāhmaṇatvam*
 [MBH. 3,8309.] *śramamadhyagāt*
 [BHĀG. P. 4,26,10.]
-  <sub>DCS 21 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) auf Etwas verfallen, sich zu Etwas entschliessen: *so 'vastratāmātmanaśca tasyāścāpyekavastratām . cintayitvādhyagādrājā vastrārdhasyāvakartanam ..*
 [N. 10,16.]
@@ -344,7 +344,7 @@ einer Wurzel *gī*)
 [N. 10,16.]
 - **EN:** — 2) to hit upon something, to resolve upon something: *so 'vastratāmātmanaśca tasyāścāpyekavastratām . cintayitvādhyagādrājā vastrārdhasyāvakartanam ..*
 [N. 10,16.]
-  <sub>DCS 21 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) sich erinnern, gedenken; merken auf: *adhītīradhyagādayam*
 [AV. 2,9,3.] *adhi no gāta marutaḥ*
@@ -359,7 +359,7 @@ einer Wurzel *gī*)
 [AV. 2,9,3.] *adhi no gāta marutaḥ*
 [ṚV. 8,20,22.] *adhi stotrasya sakhyasya gāta*
 [10,78,8.] [5,55,9.]
-  <sub>DCS 21 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) zu einer Kenntniss von Etwas (acc.) gelangen, studiren, lesen, lernen: *śiśurevādhyagātsarvaṃ paraṃ brahma sanātanam*
 [MBH. 13,121.] *adhyagānmahadākhyānam*
@@ -410,13 +410,13 @@ einer Wurzel *gī*)
 [P. 2,4,51.] — desid. from caus. *adhijigāpayiṣati* to desire to teach
 [P. 2,4,51.]
 [VOP. 19,1.]
-  <sub>DCS 21 · attested</sub>
+  <sub>attested</sub>
 
 **note)** — Vgl. *i* mit *adhi* .
 
 - **RU:** — Vgl. *i* с *adhi* .
 - **EN:** — Vgl. *i* with *adhi* .
-  <sub>DCS 21 · attested</sub>
+  <sub>attested</sub>
 
 ## anugā
 
@@ -445,7 +445,7 @@ einer Wurzel *gī*)
 [MBH. 3,2303.] *damayantī tamanvagāt*
 [2307.] [14554.] [R. 1,44,16.] [RAGH. 7,29.] [8,49.] [12,14.] to go along a road, to take someone's path: *mā bālipathamanvagāḥ*
 [R. 4,30,21.]
-  <sub>DCS 86 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) befolgen, sich richten nach: *devā devānāmanu hi vratā guḥ*
 [ṚV. 3,7,7.] [1,65,3] (2).
@@ -454,7 +454,7 @@ einer Wurzel *gī*)
 [ṚV. 3,7,7.] [1,65,3] (2).
 - **EN:** — 2) to follow, to conform to: *devā devānāmanu hi vratā guḥ*
 [ṚV. 3,7,7.] [1,65,3] (2).
-  <sub>DCS 86 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) nachgehen so v. a. sich leiten lassen von: *mā manyuvaśamanvagāḥ*
 [MBH. 3,373.]
@@ -463,7 +463,7 @@ einer Wurzel *gī*)
 [MBH. 3,373.]
 - **EN:** — 3) to go after, so v. a. to be guided by: *mā manyuvaśamanvagāḥ*
 [MBH. 3,373.]
-  <sub>DCS 86 · attested</sub>
+  <sub>attested</sub>
 
 ## samanugā
 
@@ -477,7 +477,7 @@ einer Wurzel *gī*)
 [MBH. 5,432.] [13,150.]
 - **EN:** — *samanu* to go after, to follow: *devīmindrāṇī sā samanvagāt*
 [MBH. 5,432.] [13,150.]
-  <sub>DCS 2 · attested</sub>
+  <sub>attested</sub>
 
 ## antargā
 
@@ -497,7 +497,7 @@ einer Wurzel *gī*)
  1) to go between something: *yo daivyāni mānuṣā janūṃṣyantarjigāti*
 [ṚV. 7,4,1.] *antaḥ kṛṣṇā aruṣairdhāmabhirgāt*
 [3,31,21.]
-  <sub>DCS 13 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) dazwischen treten, trennen, ausschliessen von (abl.): *mā no yajñādantargāta*
 [ŚAT. BR. 3,6,2,17.] [2,2,3.] [4,3,2,8.] *prāṇaṃ vā ayamantaragādadhvaryuḥ*
@@ -509,7 +509,7 @@ einer Wurzel *gī*)
 - **EN:** — 2) to step between, to separate, to exclude from (abl.): *mā no yajñādantargāta*
 [ŚAT. BR. 3,6,2,17.] [2,2,3.] [4,3,2,8.] *prāṇaṃ vā ayamantaragādadhvaryuḥ*
 [3,8,2,24.]
-  <sub>DCS 13 · attested</sub>
+  <sub>attested</sub>
 
 ## apagā
 
@@ -529,7 +529,7 @@ einer Wurzel *gī*)
 [VS. 3,21.]
 [ŚĀṄKH. ŚR. 15,24,7. 10.] to disappear, to recede: *apāgādagneragnitvam*
 [CHĀND. UP. 6,4,1.]
-  <sub>DCS 14 · attested</sub>
+  <sub>attested</sub>
 
 ## apigā
 
@@ -555,7 +555,7 @@ einer Wurzel *gī*)
 [ŚAT. BR. 11,5,3,8.]
 [KĀTY. ŚR. 25,5,29.]
 [KAUŚ. 136.]
-  <sub>DCS 3 · attested</sub>
+  <sub>attested</sub>
 
 ## abhigā
 
@@ -614,7 +614,7 @@ einer Wurzel *gī*)
 [R. 1,63,3.] *nātiprīto 'bhyagātpuram*
 [BHĀG. P. 4,9,27.] *te 'bhyagurbhavanam*
 [BHAṬṬ. 15,2.]
-  <sub>DCS 138 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) gelangen zu, theilhaft werden: *śvetaṃ lindu mābhigām*
 [CHĀND. UP. 8,14,1.] *sāvitrī tuṣṭimabhyagāt*
@@ -629,7 +629,7 @@ einer Wurzel *gī*)
 [CHĀND. UP. 8,14,1.] *sāvitrī tuṣṭimabhyagāt*
 [MBH. 3,16625.] — *tasya yauvanamabhyagāt*
 [MBH. 2,696] erroneous for *atyagāt* .
-  <sub>DCS 138 · attested</sub>
+  <sub>attested</sub>
 
 ## avagā
 
@@ -646,7 +646,7 @@ einer Wurzel *gī*)
 - **EN:** — *ava*
  1) to go away, to be lost: *mā no dyūte 'va gānmā samityām*
 [AV. 12,3,46.]
-  <sub>DCS 12 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) hingehen zu, sich vereinigen mit: *sṛjadarṇāṃsyava *
 * yadyudhā gāḥ*
@@ -665,7 +665,7 @@ einer Wurzel *gī*)
 [ṚV. 1,174,4.] *bhūmirbhūmimavāgāt*
 [KĀTY. ŚR. 25,5,29.] *indurindumavāgāt*
 [12,6.]
-  <sub>DCS 12 · attested</sub>
+  <sub>attested</sub>
 
 ## anvavagā
 
@@ -679,7 +679,7 @@ einer Wurzel *gī*)
 [ŚAT. BR. 2,6,1,15.]
 - **EN:** — *anvava* to go to, to unite with: *yānevāmūṃstrayānpitṝnanvavāgāttebhya evaitatpunarupodeti*
 [ŚAT. BR. 2,6,1,15.]
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>
 
 ## anuvyavagā
 
@@ -693,7 +693,7 @@ einer Wurzel *gī*)
 [ŚAT. BR. 3,4,2,2.]
 - **EN:** — *anuvyava* to step between following another: *pāpīyāṃsau vai bhavāmo 'surarakṣasāni vai no 'nuvyavāguḥ*
 [ŚAT. BR. 3,4,2,2.]
-  <sub>DCS 1 · attested</sub>
+  <sub>attested</sub>
 
 ## abhyastamgā
 
@@ -707,7 +707,7 @@ einer Wurzel *gī*)
 [ŚAT. BR. 2,3,1,7.] [4,4,6.]
 - **EN:** — *abhyastam* to set (of a heavenly body) before, during, in the course of an action u. s. w.: *uddhṛtamabhyastamagāt*
 [ŚAT. BR. 2,3,1,7.] [4,4,6.]
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>
 
 ## āgā
 
@@ -748,7 +748,7 @@ einer Wurzel *gī*)
 [MBH. 3,884.] to set in, arrive; to meet, befall someone: *bhayaṃ cāgānmahānmama*
 [ARJ. 10,40.] *vyasanaṃ va āgāt*
 [MBH. 3,1355.]
-  <sub>DCS 282 · attested</sub>
+  <sub>attested</sub>
 
 ## anvāgā
 
@@ -762,7 +762,7 @@ einer Wurzel *gī*)
 [ṚV. 1,126,3.]
 - **EN:** — *anvā* to follow after: *ṣaṣṭiḥ sahasramanu gavyamāgāt*
 [ṚV. 1,126,3.]
-  <sub>DCS 1 · attested</sub>
+  <sub>attested</sub>
 
 ## abhyāgā
 
@@ -788,7 +788,7 @@ einer Wurzel *gī*)
 [BHĀG. P. 9,21,10.] *kṛṣṇasya nārado 'bhyāgādāśramam*
 [1,4,32.] to meet, befall someone: *tvāṃ cedvyasanamabhyāgādidam*
 [MBH. 3,1120.]
-  <sub>DCS 24 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) an Etwas gehen, sich daran machen zu, sich entschliessen zu, mit dem inf.: *kṣudhārtaścāttumabhyāgādviśvāmitraḥ śvajāghanīm*
 [M. 10,108.]
@@ -797,7 +797,7 @@ einer Wurzel *gī*)
 [M. 10,108.]
 - **EN:** — 2) to go to something, set about doing, resolve upon, with inf.: *kṣudhārtaścāttumabhyāgādviśvāmitraḥ śvajāghanīm*
 [M. 10,108.]
-  <sub>DCS 24 · attested</sub>
+  <sub>attested</sub>
 
 ## samabhyāgā
 
@@ -814,7 +814,7 @@ einer Wurzel *gī*)
 - **EN:** — *samabhyā*
  1) to come near, approach: *brāhmaṇakṣatriyādyaṃ ca cāturvarṇyaṃ purāddrutam . darśanepsu samabhyāgāt*
 [MBH. 1,5328.]
-  <sub>DCS 4 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) Jmd treffen, heimsuchen: *vyasanaṃ vaḥ samabhyāgāt*
 [MBH. 2,2597.]
@@ -823,7 +823,7 @@ einer Wurzel *gī*)
 [MBH. 2,2597.]
 - **EN:** — 2) to meet, befall someone: *vyasanaṃ vaḥ samabhyāgāt*
 [MBH. 2,2597.]
-  <sub>DCS 4 · attested</sub>
+  <sub>attested</sub>
 
 ## udāgā
 
@@ -837,7 +837,7 @@ einer Wurzel *gī*)
 [AV. 14,2,44.]
 - **EN:** — *udā* to come up to, come forth toward (acc.): *udāgāṃ jīva uṣaso vibhātīḥ*
 [AV. 14,2,44.]
-  <sub>DCS 2 · attested</sub>
+  <sub>attested</sub>
 
 ## upāgā
 
@@ -860,7 +860,7 @@ einer Wurzel *gī*)
 [ṚV. 3,56,2.] *ābhirhi māyā upa dasyumāgāt*
 [10,73,5.] *tadutāpyāhuḥ sāmnainamupāgāditi sādhunainamupāgādityeva*
 [CHĀND. UP. 2,1,2.]
-  <sub>DCS 1 · attested</sub>
+  <sub>attested</sub>
 
 ## paryāgā
 
@@ -874,7 +874,7 @@ einer Wurzel *gī*)
 [MBH. 12,8157.]
 - **EN:** — *paryā* to complete a circuit, go around: *kālastu paryāgāt*
 [MBH. 12,8157.]
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>
 
 ## anuparyāgā
 
@@ -888,7 +888,7 @@ einer Wurzel *gī*)
 [AIT. BR. 3,28.]
 - **EN:** — *anuparyā* to come back again to: *vittaṃ nāvakṣarāṇyanuparyāguriti*
 [AIT. BR. 3,28.]
-  <sub>DCS 1 · attested</sub>
+  <sub>attested</sub>
 
 ## udgā
 
@@ -911,7 +911,7 @@ einer Wurzel *gī*)
 [115,1.] [AV. 2,8,1.] [6,121.] [3.] [TS. 3,2,4,4.] [TBR. 3,1,1,2.] [15.] *unmadhyataḥ paurṇamāsī jigāya*
 [15.] to come forth, make a beginning (?): *udagātkaṭhakauthumam . pratyaṣṭhātkaṭhakālāpam*
 [P. 2,4,3], Sch.
-  <sub>DCS 283 · attested</sub>
+  <sub>attested</sub>
 
 ## abhyudgā
 
@@ -928,7 +928,7 @@ einer Wurzel *gī*)
 - **EN:** — *abhyud* to rise over, rise before: *yadadya kacca vṛtrahannudagā abhi sūrya*
 [ṚV. 8,82,4.] *anuddhṛtamabhyudagāt*
 [ŚAT. BR. 12,4,4,7.]
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>
 
 ## pratyudgā
 
@@ -942,7 +942,7 @@ einer Wurzel *gī*)
 [ṚV. 7,62,2.]
 - **EN:** — *pratyud* dass.: *sa sūrya prati puro na udgāḥ*
 [ṚV. 7,62,2.]
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>
 
 ## upagā
 
@@ -980,7 +980,7 @@ einer Wurzel *gī*)
 [VS. 5,5.] [42.] *satyamupa geyam* ved.
 [P. 3,1,86], Sch.
 — Vgl. *upā* .
-  <sub>DCS 121 · attested</sub>
+  <sub>attested</sub>
 
 ## nigā
 
@@ -997,7 +997,7 @@ einer Wurzel *gī*)
 - **EN:** — *ni*
  1) to enter, nestle into, fit closely: *yudhyamānā śaraiḥ — dhvajinī nyagāt . anyo'nyam*
 [MBH. 6,1886.]
-  <sub>DCS 8 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) gerathen in: *eno mā ni gām*
 [ṚV. 10,128,4.] *mā daṃpatī pautramaghaṃ ni gātām*
@@ -1009,7 +1009,7 @@ einer Wurzel *gī*)
 - **EN:** — 2) to fall into, get into: *eno mā ni gām*
 [ṚV. 10,128,4.] *mā daṃpatī pautramaghaṃ ni gātām*
 [AV. 12,3,14.]
-  <sub>DCS 8 · attested</sub>
+  <sub>attested</sub>
 
 ## nirgā
 
@@ -1038,7 +1038,7 @@ einer Wurzel *gī*)
 [KATHĀS. 6,60.] *niragānnaiva so 'ntaḥpurānnṛpaḥ . niragādarivargasya hṛdayāttu rujājvaraḥ ..*
 [18,83.] *niragācca mukhāttasya jvālā*
 [154.] [244.] [396.] [BHĀG. P. 3,13,18.] [4,13,18.] [5,18,39.] [BHAṬṬ. 6,118.]
-  <sub>DCS 31 · attested</sub>
+  <sub>attested</sub>
 
 ## parāgā
 
@@ -1058,7 +1058,7 @@ einer Wurzel *gī*)
 [ṚV. 1,164,17.] *tiṣṭhā su kaṃ maghavanmā parā gāḥ*
 [3,53,2.] *apānaḥ*
 [AV. 7,53,4.]
-  <sub>DCS 4 · attested</sub>
+  <sub>attested</sub>
 
 ## parigā
 
@@ -1087,7 +1087,7 @@ einer Wurzel *gī*)
 [AV. 1,34,5.] *sa tenābhidrutaḥ kākastrīllokānparyagāttataḥ*
 [R. 2,96,45.] to spread everywhere: *sa paryagāt*
 [ĪŚOP. 8.]
-  <sub>DCS 31 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) herbeikommen, gelangen zu, erreichen, über Jmd kommen: *pra vāṃ ghṛtācī bāhvordaghānā pari tmanā viṣurūpā jigāti*
 [ṚV. 7,84,1.] *vayo vayo jarase yaddadhānaḥ pari tmanā viṣurūpo jigāsi*
@@ -1102,7 +1102,7 @@ einer Wurzel *gī*)
 [ṚV. 7,84,1.] *vayo vayo jarase yaddadhānaḥ pari tmanā viṣurūpo jigāsi*
 [5,15,4.] *jarā balī ca māṃ tāta palitāni ca paryaguḥ*
 [MBH. 1,3647.]
-  <sub>DCS 31 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) umgehen so v. a. ausweichen: *pari tveṣasya durmatirmahī gāt*
 [ṚV. 2,33,14.] *pari ghraṃsamomanā vāṃ vayo gāt*
@@ -1117,7 +1117,7 @@ einer Wurzel *gī*)
 [ṚV. 2,33,14.] *pari ghraṃsamomanā vāṃ vayo gāt*
 [7,69,4.] to disregard, fail to heed: *yatkiṃ ca vadāmi tanme mā parigāteti*
 [AIT. BR. 6,33.]
-  <sub>DCS 31 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) dahinterkommen, eine Kenntniss von Etwas erlangen: *yo hyātmamāyāvibhavaṃ sma paryagādyathā nabhaḥ svāntamathāpare kutaḥ*
 [BHĀG. P. 2,6,35.] [BURNOUF] : (qui,) semblable au ciel qui ne (!) connait pas ses limites, n'a pu (!) encore atteindre le terme de la puissance de sa Māyā.
@@ -1126,7 +1126,7 @@ einer Wurzel *gī*)
 [BHĀG. P. 2,6,35.] [BURNOUF] : (qui,) semblable au ciel qui ne (!) connait pas ses limites, n'a pu (!) encore atteindre le terme de la puissance de sa Māyā.
 - **EN:** — 4) to find out, acquire knowledge of something: *yo hyātmamāyāvibhavaṃ sma paryagādyathā nabhaḥ svāntamathāpare kutaḥ*
 [BHĀG. P. 2,6,35.] [BURNOUF] : (who, like the sky that knows not its own limits, has not yet been able to reach the end of the power of his Māyā.)
-  <sub>DCS 31 · attested</sub>
+  <sub>attested</sub>
 
 ## anuparigā
 
@@ -1140,7 +1140,7 @@ einer Wurzel *gī*)
 [MBH. 12,8081.]
 - **EN:** — *anupari* to pass through, traverse: *yadā ca pṛthivīṃ sarvāṃ yajamāno 'nuparyagāḥ*
 [MBH. 12,8081.]
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>
 
 ## pragā
 
@@ -1178,7 +1178,7 @@ einer Wurzel *gī*)
 [MBH. 6,2212.] Formally belonging here is the partic. *prajigat*, which
 [SĀY.] refers to [2.] *gā*: *kadā cana prajigato adevayoḥ*
 [ṚV. 1,150,2.]
-  <sub>DCS 83 · attested</sub>
+  <sub>attested</sub>
 
 ## upapragā
 
@@ -1198,7 +1198,7 @@ einer Wurzel *gī*)
 [AV. 1,28,1.] [6.] [37,1.] *upa prāgācchasanaṃ vājyarvā*
 [ṚV. 1,163,12.] [13.] [162,7.] *upa devāndaivīrviśaḥ prāguḥ*
 [VS. 6,7.]
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>
 
 ## pratigā
 
@@ -1212,7 +1212,7 @@ einer Wurzel *gī*)
 [BHĀG. P. 4,20,37.]
 - **EN:** — *prati* to return: *svadhāma pratyagātprabhuḥ*
 [BHĀG. P. 4,20,37.]
-  <sub>DCS 1 · attested</sub>
+  <sub>attested</sub>
 
 ## vigā
 
@@ -1226,7 +1226,7 @@ einer Wurzel *gī*)
 [PĀR. GṚHY. 2,16.]
 - **EN:** — *vi* to pass away, vanish: *pūrṇaṃ me mā vigāt*
 [PĀR. GṚHY. 2,16.]
-  <sub>DCS 59 · attested</sub>
+  <sub>attested</sub>
 
 ## saṃgā
 
@@ -1243,7 +1243,7 @@ einer Wurzel *gī*)
 - **EN:** — *sam*
  1) to come together
 [AV. 19,57,2.]
-  <sub>DCS 40 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) hingehen zu: *paraṃ samagātsvadhāma*
 [BHĀG. P. 9,24,66.] *aiśvaraṃ samagātpadam*
@@ -1255,7 +1255,7 @@ einer Wurzel *gī*)
 - **EN:** — 2) to go to, repair to: *paraṃ samagātsvadhāma*
 [BHĀG. P. 9,24,66.] *aiśvaraṃ samagātpadam*
 [4,31,27.]
-  <sub>DCS 40 · attested</sub>
+  <sub>attested</sub>
 
 ## gā
 
@@ -1449,7 +1449,7 @@ einer Wurzel *gī*)
 [R. 1,4,15.]
 [BHĀG. P. 3,15,18.] *vākyāni mama gāthābhirgāyamānāḥ*
 [N. 24,22.] — *gīta*
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **PPP.1)** 1) _adj._ gesungen, in gebundener Rede verkündet, besungen
 [TRIK. 3,3,155.]
@@ -1482,7 +1482,7 @@ einer Wurzel *gī*)
 [MBH.] in [BENF. Chr. 22,24.] [VARĀH. BṚH. S. 47,23.] *caturbhiryaḥ padairgīto maharṣiṇā — śokaḥ*
 [R. 1,2,43.]
 [ŚĀK. 47.]
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **PPP.2a)** — 2) _f._ *ā*
  a) (sc. *upaniṣad*) eine von einem inspirirten Weisen in gebundener Rede verkündete Lehre, s. *agastya˚, bhagavad˚, rāma˚, śiva˚*.
@@ -1494,7 +1494,7 @@ einer Wurzel *gī*)
 - **EN:** — 2) _f._ *ā*
  a) (sc. *upaniṣad*) a teaching proclaimed in verse by an inspired sage, s. *agastya˚, bhagavad˚, rāma˚, śiva˚*.
 Under *gītā* the *bhagavadgītā* is meant by [PRAB. 104,13. 17. 105,8].
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **PPP.2b)** — b) N. eines Metrums (4 Mal ⏑ ⏑ – ⏑ – ⏑ ⏑ – ⏑ – ⏑ ⏑ – ⏑ – ⏑ ⏑ – ⏑ –)
 [COLEBR. Misc. Ess. II,163] ([XV,4]).
@@ -1503,7 +1503,7 @@ Under *gītā* the *bhagavadgītā* is meant by [PRAB. 104,13. 17. 105,8].
 [COLEBR. Misc. Ess. II,163] ([XV,4]).
 - **EN:** — b) N. name of a metre (4 times ⏑ ⏑ – ⏑ – ⏑ ⏑ – ⏑ – ⏑ ⏑ – ⏑ – ⏑ ⏑ – ⏑ –)
 [COLEBR. Misc. Ess. II,163] ([XV,4]).
-  <sub>DCS 1930 · lexicographic</sub>
+  <sub>lexicographic</sub>
 
 **PPP.3)** — 3) _n._ Gesang
 [AK. 1,1,6,4.]
@@ -1596,7 +1596,7 @@ Under *gītā* the *bhagavadgītā* is meant by [PRAB. 104,13. 17. 105,8].
 [VOP. 20,4.] *jegīyante sma gandharvāḥ*
 [MBH. 12,12200.] *jegīyate* pass.
 [VARĀH. BṚH. S. 19,18.]
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 ## acchagā
 
@@ -1610,7 +1610,7 @@ Under *gītā* the *bhagavadgītā* is meant by [PRAB. 104,13. 17. 105,8].
 [ṚV. 5,25,1.]
 - **EN:** — *accha* to sing near, to call hither by singing: *acchā vo agnimavase devaṃ gāmi* (1. aor. med.)
 [ṚV. 5,25,1.]
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>
 
 ## anugā
 
@@ -1634,7 +1634,7 @@ Under *gītā* the *bhagavadgītā* is meant by [PRAB. 104,13. 17. 105,8].
 
 * kācidudañcitapañcamarāgam*
 [GĪT. 1,39.]
-  <sub>DCS 86 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) Jmd mit Gesang begleiten, Jmd (acc.) Etwas vorsingen: *(ugrasenaḥ) anugīyamāno gandharvaiḥ*
 [MBH. 1,7913.]
@@ -1643,7 +1643,7 @@ Under *gītā* the *bhagavadgītā* is meant by [PRAB. 104,13. 17. 105,8].
 [MBH. 1,7913.]
 - **EN:** — 2) to accompany someone with song, to sing something to someone (acc.): *(ugrasenaḥ) anugīyamāno gandharvaiḥ*
 [MBH. 1,7913.]
-  <sub>DCS 86 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) singen, besingen: *krīḍantamanugāyantam*
 [BHĀG. P. 6,1,60.] [4,39.] *anugītasatkatho vedeṣu guhyeṣu ca guhyavādibhiḥ*
@@ -1661,12 +1661,12 @@ Under *gītā* the *bhagavadgītā* is meant by [PRAB. 104,13. 17. 105,8].
 [1,10,24.] [5,19,2.] *śrūyatāṃ pṛthivīpāla yathaiṣo 'rtho 'nugīyate* as it is sung of this, what the ancient sages sing of it
 [MBH. 12,4211.] — caus. to have (someone) sing after: *stotrīyāmanugāpayet*
 [GOBH. 3,2,21. fgg.]
-  <sub>DCS 86 · attested</sub>
+  <sub>attested</sub>
 
 **prefix_marker)** — *anu*
 
 - **RU:** — *anu*
-  <sub>DCS 86 · attested</sub>
+  <sub>attested</sub>
 
 ## abhigā
 
@@ -1712,18 +1712,18 @@ Under *gītā* the *bhagavadgītā* is meant by [PRAB. 104,13. 17. 105,8].
 [CHĀND. UP. 1,5,2. 4.] *tadetadgāthayābhigītam*
 [ŚAT. BR. 13,5,4,2. fgg.] *(gāyanau) rājadhānīṣu rājñāṃ ca samājeṣvabhyagāyatām*
 [R. 1,4,24.]
-  <sub>DCS 138 · attested</sub>
+  <sub>attested</sub>
 
 **deriv)** — Vgl. *abhigeṣṇa* .
 
 - **RU:** — Vgl. *abhigeṣṇa* .
 - **EN:** — Vgl. *abhigeṣṇa* .
-  <sub>DCS 138 · attested</sub>
+  <sub>attested</sub>
 
 **prefix_marker)** — *abhi*
 
 - **RU:** — *abhi*
-  <sub>DCS 138 · attested</sub>
+  <sub>attested</sub>
 
 **1a)** 1) Jmd (acc.) zusingen, zurufen: *(yūnaḥ) abhi sobhare girā . gāya gā iva carkṛṣat*
 [ṚV. 8,20,19.] *indram*
@@ -1734,19 +1734,19 @@ Under *gītā* the *bhagavadgītā* is meant by [PRAB. 104,13. 17. 105,8].
 [ṚV. 8,20,19.] *indram*
 [32,13.] [46,14.] *punānam*
 [9,105,1.] *apaghnanneṣi pavamāna śatrūnpriyāṃ na jāro abhigīta induḥ*
-  <sub>DCS 138 · attested</sub>
+  <sub>attested</sub>
 
 **1b)** [96,23.] mit seinem Gesange erfüllen: *bhṛṅgarājābhigītāni (vanāni)*
 
 - **RU:** [96,23.] наполнять своим пением: *bhṛṅgarājābhigītāni (vanāni)*
-  <sub>DCS 138 · attested</sub>
+  <sub>attested</sub>
 
 **1c)** [R. 6,15,11.] incantare: *indragāthābhirvai devā asurānabhigāyāthainānatyāyan*
 [AIT. BR. 6,32.]
 
 - **RU:** [R. 6,15,11.] incantare, завораживать пением: *indragāthābhirvai devā asurānabhigāyāthainānatyāyan*
 [AIT. BR. 6,32.]
-  <sub>DCS 138 · attested</sub>
+  <sub>attested</sub>
 
 ## avagā
 
@@ -1757,7 +1757,7 @@ Under *gītā* the *bhagavadgītā* is meant by [PRAB. 104,13. 17. 105,8].
 
 - **RU:** — *ava* петь на убыль так v. a. поносить в песнях, осмеивать; *avagīta*
 - **EN:** — *ava* to sing down, hence v. a. to revile, mock in songs; *avagīta*
-  <sub>DCS 12 · attested</sub>
+  <sub>attested</sub>
 
 **PPP.1)** 1) _adj._ geschmäht, verspottet, elend, erbärmlich, = *khyātagarhaṇa*
 [AK. 3,2,42.] = *garhita*
@@ -1793,7 +1793,7 @@ Under *gītā* the *bhagavadgītā* is meant by [PRAB. 104,13. 17. 105,8].
 [ŚKDR.] according to ders. Aut. *avagītāṃ daśām*
 [KIR. 2,7.] *avagītamidaṃ sarvamāvābhyāṃ bhaktakānanam* having become a source of disgust
 [HARIV. 3483.]
-  <sub>DCS 12 · attested</sub>
+  <sub>attested</sub>
 
 **subst.2)** — 2) _n._ Gespötte, üble Nachrede, = *janya*
 [AK. 3,4,14,81.] = *apavāda*
@@ -1808,7 +1808,7 @@ Under *gītā* the *bhagavadgītā* is meant by [PRAB. 104,13. 17. 105,8].
 [AK. 3,4,14,81.] = *apavāda*
 [H. an.] = *nirvāda*
 [MED.] [VIŚVA.]
-  <sub>DCS 12 · lexicographic</sub>
+  <sub>lexicographic</sub>
 
 ## āgā
 
@@ -1825,7 +1825,7 @@ Under *gītā* the *bhagavadgītā* is meant by [PRAB. 104,13. 17. 105,8].
 - **EN:** — *ā*
  1) to sing to someone (acc.): *ā paśuṃ gāsi pṛthivīṃ vanaspatīn*
 [ṚV. 8,27,2.]
-  <sub>DCS 282 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) ersingen, durch Singen erlangen: *yo vāci bhogastaṃ devebhya āgāyat*
 [ŚAT. BR. 14,4,1,3. fgg.]
@@ -1837,13 +1837,13 @@ Under *gītā* the *bhagavadgītā* is meant by [PRAB. 104,13. 17. 105,8].
 - **EN:** — 2) to obtain by singing, to win through song: *yo vāci bhogastaṃ devebhya āgāyat*
 [ŚAT. BR. 14,4,1,3. fgg.]
 [CHĀND. UP. 1,2,13. 7,9.]
-  <sub>DCS 282 · attested</sub>
+  <sub>attested</sub>
 
 **deriv)** — Vgl. *āgātar, āgāna* .
 
 - **RU:** — Vgl. *āgātar, āgāna* .
 - **EN:** — Vgl. *āgātar, āgāna* .
-  <sub>DCS 282 · attested</sub>
+  <sub>attested</sub>
 
 ## udgā
 
@@ -1914,13 +1914,13 @@ Under *gītā* the *bhagavadgītā* is meant by [PRAB. 104,13. 17. 105,8].
 [MBH. 3,1535.] *udgīta* _n._ song: *kiṃnarodgītabhāṣiṇī*
 [MBH. 1,6569.] in Prākrit: *sa kālo madavibbhamuggīdāṇaṃ*
 [ŚĀK. CH. 117,5.]
-  <sub>DCS 283 · attested</sub>
+  <sub>attested</sub>
 
 **deriv)** — Vgl. *udgātar, udgāthā, udgīti, udgītha* .
 
 - **RU:** — Vgl. *udgātar, udgāthā, udgīti, udgītha* .
 - **EN:** — Vgl. *udgātar, udgāthā, udgīti, udgītha* .
-  <sub>DCS 283 · attested</sub>
+  <sub>attested</sub>
 
 ## prodgā
 
@@ -1934,7 +1934,7 @@ Under *gītā* the *bhagavadgītā* is meant by [PRAB. 104,13. 17. 105,8].
 [PRAB. 80,3.]
 - **EN:** — *prod* to begin to sing: *prodgītāṃ madhuparutaiḥ stutiṃ paṭhanto nṛtyanti (samīrāḥ)*
 [PRAB. 80,3.]
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>
 
 ## pratyudgā
 
@@ -1948,7 +1948,7 @@ Under *gītā* the *bhagavadgītā* is meant by [PRAB. 104,13. 17. 105,8].
 [LĀṬY. 7,8,19.]
 - **EN:** — *pratyud* to answer in song, to respond by singing: *pratyudgītastu khalveṣāṃ tathodgātā bhavati*
 [LĀṬY. 7,8,19.]
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>
 
 ## upagā
 
@@ -2019,7 +2019,7 @@ Under *gītā* the *bhagavadgītā* is meant by [PRAB. 104,13. 17. 105,8].
 [P. 3,1,25], Sch.
 [VOP. 21,17.] to fill with one's song: *upagīyamānā bhramarai rājante vanarājayaḥ*
 [MBH. 3,11606.] [17284.]
-  <sub>DCS 121 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) besingen: *(jambuḥ) arcitā copagītā ca nityamapsarasāṃ gaṇaiḥ*
 [R. 4,44,57.] *surāsurendrairupagīyamānamahānubhāvaḥ*
@@ -2037,7 +2037,7 @@ Under *gītā* the *bhagavadgītā* is meant by [PRAB. 104,13. 17. 105,8].
 [BHĀG. P. 4,16,27.] *yatropagīyate nityaṃ devadevaḥ*
 [3,7,20.] *saptasāmopagītaṃ tvām*
 [RAGH. 10,22.]
-  <sub>DCS 121 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) singen: *rathaṃtaraṃ sāmagāścopagānti*
 [MBH. 12,10299.] *jihvāsatī — na yopagāyatyurugāyagāthāḥ*
@@ -2059,12 +2059,12 @@ Under *gītā* the *bhagavadgītā* is meant by [PRAB. 104,13. 17. 105,8].
 [MBH. 12,10299.] *jihvāsatī — na yopagāyatyurugāyagāthāḥ*
 [BHĀG. P. 2,3,20.] *tasyedamupagāyanti* о нём поют следующее
 [5,14,41.]
-  <sub>DCS 121 · attested</sub>
+  <sub>attested</sub>
 
 **cross-ref)** — Vgl. *upagā, upagātar* .
 
 - **RU:** — Vgl. *upagā, upagātar* .
-  <sub>DCS 121 · lexicographic</sub>
+  <sub>lexicographic</sub>
 
 ## nigā
 
@@ -2081,7 +2081,7 @@ Under *gītā* the *bhagavadgītā* is meant by [PRAB. 104,13. 17. 105,8].
 - **EN:** — *ni*
  1) to accompany with song: *vīṇāmeva vādayanto nigāyantaḥ*
 [ŚAT. BR. 3,2,4,6.]
-  <sub>DCS 8 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) singen, verkünden: *tathā ca śrutayo bahvyo nigītā nigameṣvapi*
 [M. 9,19.]
@@ -2090,7 +2090,7 @@ Under *gītā* the *bhagavadgītā* is meant by [PRAB. 104,13. 17. 105,8].
 [M. 9,19.]
 - **EN:** — 2) to sing, proclaim: *tathā ca śrutayo bahvyo nigītā nigameṣvapi*
 [M. 9,19.]
-  <sub>DCS 8 · attested</sub>
+  <sub>attested</sub>
 
 ## parigā
 
@@ -2122,7 +2122,7 @@ Under *gītā* the *bhagavadgītā* is meant by [PRAB. 104,13. 17. 105,8].
 [ŚAT. BR. 10,1,5,3.] [9,1,2,32.]
 [LĀṬY. 8,8,35.] *rathyāsu bālakairnityaṃ bahuśaḥ parigīyate*
 [R. 6,11,38.]
-  <sub>DCS 31 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) nah und fern überall singen, besingen, verkünden als: *etaiḥ karmaguṇairloke nāmāgneḥ parigīyate*
 [MBH. 13,4095.] *yāni nāmāni mahātmanaḥ — ṛṣibhiḥ parigītāni*
@@ -2146,7 +2146,7 @@ Under *gītā* the *bhagavadgītā* is meant by [PRAB. 104,13. 17. 105,8].
 [6,3,27.] *avyaktādi paraṃ yacca sa eva parigīyate*
 [MBH. 1,252.]
 [R. 6,102,29.]
-  <sub>DCS 31 · attested</sub>
+  <sub>attested</sub>
 
 ## pragā
 
@@ -2221,7 +2221,7 @@ Sch.). singender Vortrag, ein Fehler der Recitation,
 [ṚT. 3,13.]
 [CAURAP. 37] (vgl. however Sch.). singing delivery, a fault of recitation,
 [ŚIKṢĀ 35.]
-  <sub>DCS 83 · attested</sub>
+  <sub>attested</sub>
 
 ## abhipragā
 
@@ -2235,7 +2235,7 @@ Sch.). singender Vortrag, ein Fehler der Recitation,
 [ṚV. 1,5,1.] [37,1.] [8,15,1.] [9,13,2.]
 - **EN:** — *abhipra* to begin to sing in praise of someone (acc.): *indramabhi pragāyata*
 [ṚV. 1,5,1.] [37,1.] [8,15,1.] [9,13,2.]
-  <sub>DCS 2 · attested</sub>
+  <sub>attested</sub>
 
 ## saṃpragā
 
@@ -2256,7 +2256,7 @@ Sch.). singender Vortrag, ein Fehler der Recitation,
 **1a)** — *saṃpra* singen: *yā gāthāḥ saṃpragāyanti*
 
 - **RU:** — *saṃpra* петь: *yā gāthāḥ saṃpragāyanti*
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>
 
 **1b)** [MBH. 8,1836.] singend aussprechen:
 
@@ -2267,7 +2267,7 @@ Sch.). singender Vortrag, ein Fehler der Recitation,
 
 *ikārāntaṃ caivopāyaṃ saṃpragāyanti kutsāḥ*
 [LĀṬY. 7,8,19.]
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>
 
 ## vigā
 
@@ -2284,7 +2284,7 @@ Sch.). singender Vortrag, ein Fehler der Recitation,
 - **EN:** — *vi*
  1) to sing discordantly, hence *vigīta* not harmonizing with one another, contradictory: *yaścādharottarānarthānvigītānnāvabudhyate*
 [M. 8,53.]
-  <sub>DCS 59 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) schmähen, tadeln: *vigīyase (ketaka) manmathadehadāhinā*
 [NAIṢ. 1,79.] Vgl. *vigāna*.* — vijigīta* (unregelm. Intensiv-Form) berühmt
@@ -2302,7 +2302,7 @@ Sch.). singender Vortrag, ein Fehler der Recitation,
 [BṚH. ĀR. UP. 6,4,18.]
 [ŚAṂK.] : *vividhaṃ gīto vigītaḥ* (sic);
 [ŚAT. BR. 14,9,4,17] reads st. whose *vijigīthaḥ* .
-  <sub>DCS 59 · attested</sub>
+  <sub>attested</sub>
 
 ## saṃgā
 
@@ -2352,7 +2352,7 @@ Sch.). singender Vortrag, ein Fehler der Recitation,
 [RAGH. 13,40.]
 [ṚT. 3,23.]
 [DHŪRTAS. 67,5. 68,15.]
-  <sub>DCS 40 · attested</sub>
+  <sub>attested</sub>
 
 ## gā
 
@@ -2369,7 +2369,7 @@ Sch.). singender Vortrag, ein Fehler der Recitation,
 - **EN:** 3. *gā*¦ (from *gam*) _adj._ going, at the end of compp.
 [P. 3,2,67] ([ved.).] [VOP. 26,66.] [67.]
 — Vgl. *agā, agregā, purogā, svastigā* and 1. *ga* .
-  <sub>DCS 1930 · lexicographic</sub>
+  <sub>lexicographic</sub>
 
 ## gā
 
@@ -2383,7 +2383,7 @@ Sch.). singender Vortrag, ein Fehler der Recitation,
  1) _adj._ поющий, в конце comp. s. *sāmagā* .
 - **EN:** 4. *gā*¦ (= 2. *gā*)
  1) _adj._ singing, at the end of a comp. s. *sāmagā* .
-  <sub>DCS 1930 · lexicographic</sub>
+  <sub>lexicographic</sub>
 
 **2)** — 2) _f._ Gesang, Vers (*gāthā*)
 [PURUṢ.] im [ŚKDR.]
@@ -2397,12 +2397,12 @@ Sch.). singender Vortrag, ein Fehler der Recitation,
 
 - **RU:** — 2) _f._ песнь, стих (*gāthā*)
 [PURUṢ.] в [ŚKDR.]
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **cross-ref)** — Vgl. 2. *ga* .
 
 - **RU:** — Vgl. 2. *ga* .
-  <sub>DCS 1930 · lexicographic</sub>
+  <sub>lexicographic</sub>
 
 ## gā
 
@@ -2426,13 +2426,13 @@ Sch.). singender Vortrag, ein Fehler der Recitation,
 - **EN:** — *abhi*
  1) *rājā hṛṣṭastamabhyagāt* went to meet him
 [KATHĀS. 51,176.]
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) am Schluss, auch [ed. Bomb.] *abhyagāt* .
 
 - **RU:** — 2) в конце, также [ed. Bomb.] *abhyagāt* .
 - **EN:** — 2) at the end, also [ed. Bomb.] *abhyagāt* .
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — *pari*
  4) lies umgehen so v. a. das Ziel verfehlen, nicht dahinter kommen, keine Kenntniss von Etwas erlangen. *pariśabdo niṣedhe*
@@ -2444,7 +2444,7 @@ Schol.
 - **EN:** — *pari*
  4) read: to go around, thus v. a. to miss the mark, not to get behind something, to obtain no knowledge of something. *pariśabdo niṣedhe*
 Schol.
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **5)** — *vipari* umfallen, umstürzen: *kathaṃ svayaṃ vai śakaṭaṃ viparyagāt*
 [BHĀG. P. 10,7,8.]
@@ -2453,19 +2453,19 @@ Schol.
 [BHĀG. P. 10,7,8.]
 - **EN:** — *vipari* to fall over, overturn: *kathaṃ svayaṃ vai śakaṭaṃ viparyagāt*
 [BHĀG. P. 10,7,8.]
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **heading)** 1. *gā*¦
 
 - **RU:** 1. *gā*¦
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **prefix_abhi.1)** 1) *muktāphalam — agāt* ging auf eine Perle zu
 [Spr. 5231.]
 
 - **RU:** 1) *muktāphalam — agāt* направился к жемчужине
 [Spr. 5231.]
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 ## gā
 
@@ -2482,7 +2482,7 @@ Schol.
 - **EN:** 2. *gā*¦, *yaḥ śauryaudāryaśṛṅgāramayo janatayā jage* so v. a. who was called among the people
 [KATHĀS. 91,7.] *gīyate* is called, is named
 [SARVADARŚANAS. 163,12. fg.] — *gīta*
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **2a)** 2)
  a) *gītā = bhagavadgītā*
@@ -2527,7 +2527,7 @@ Schol.
 [152.] *gītāmṛtataraṃgiṇī*
 [120.] *gītārthavivaraṇa*
 [205.]
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **3a)** — 3) zerfällt in *gāndharva* und *gāna*
 [Verz. d. Oxf. H. 199,b, No. 472.] in *mārga* und *deśī*
@@ -2556,7 +2556,7 @@ Schol.
 - **EN:** — *anu*
  3) *evaṃ vrajastriyaḥ — kṛṣṇalīlānugāyatīḥ*
 [BHĀG. P. 10,35,26.]
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **3c)** — *ava*, *avagītaṃ muhurdṛṣṭamupalabdhaṃ ca yadbhavet*
 [HALĀY. 4,70.] *avagītaṃ tu nirvede 'nūktadṛṣṭe vigarhite*
@@ -2568,7 +2568,7 @@ Schol.
 - **EN:** — *ava*, *avagītaṃ muhurdṛṣṭamupalabdhaṃ ca yadbhavet*
 [HALĀY. 4,70.] *avagītaṃ tu nirvede 'nūktadṛṣṭe vigarhite*
 [AJAYA] at [AUFRECHT, HALĀY.] [Ind.]
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **3d_leise)** — *ā*
  3) leicht —, leise singen
@@ -2580,7 +2580,7 @@ Schol.
 - **EN:** — *ā*
  3) to sing softly, to sing gently
 [PAÑCAV. BR. 13,10,8. 19,12,7.]
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **3e)** — *ud*, *udgāti*
 [ŚĀṄKH. BR. 17,7.] *udgāyet*
@@ -2598,7 +2598,7 @@ Schol.
 [LĀṬY. 6,10,18.] *ujjaguḥ*
 [BHĀG. P. 10,5,12.] *ityudgīya*
 [KATHĀS. 86,46.]
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **3f_1)** — *upa*
  1)
@@ -2610,7 +2610,7 @@ Schol.
 - **EN:** — *upa*
  1)
 [ŚĀṄKH. BR. 17,7.]
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **3g_3)** — 3) *yathoktamṛṣiṇā pūrvaṃ sarvaṃ tatropagāyatām*
 [R. 7,94,1.]
@@ -2619,7 +2619,7 @@ Schol.
 [R. 7,94,1.]
 - **EN:** — 3) *yathoktamṛṣiṇā pūrvaṃ sarvaṃ tatropagāyatām*
 [R. 7,94,1.]
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **3h_gesungen)** — *pra*, *pragīta* singend hergesagt, gesungen: *vaidikāśca (mantrāḥ) dvividhāḥ pragītā apragītāśca . tatra pragītāḥ sāmāni . apragītāśca dvividhāḥ* (nämlich *ṛcaḥ* und *yajūṃṣi)*
 [SARVADARŚANAS. 169,17. fg.] singend
@@ -2631,7 +2631,7 @@ Schol.
 - **EN:** — *pra*, *pragīta* recited singing, sung: *vaidikāśca (mantrāḥ) dvividhāḥ pragītā apragītāśca . tatra pragītāḥ sāmāni . apragītāśca dvividhāḥ* (namely *ṛcaḥ* and *yajūṃṣi)*
 [SARVADARŚANAS. 169,17. fg.] singing
 [KATHĀS. 121,130.]
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **3i_beginnen)** — *saṃpra* zu singen beginnen: *samaṃ saṃprajaguryatra manastuṣṭivivardhanam*
 [R. 7,26,7.]
@@ -2640,7 +2640,7 @@ Schol.
 [R. 7,26,7.]
 - **EN:** — *saṃpra* to begin to sing: *samaṃ saṃprajaguryatra manastuṣṭivivardhanam*
 [R. 7,26,7.]
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **3_structure)** — 3) zerfällt in *gāndharva* und *gāna*
 [Verz. d. Oxf. H. 199,b, No. 472.] in *mārga* und *deśī*
@@ -2659,7 +2659,7 @@ Schol.
 [265,b,24.] название 4 гимнов на Kṛṣṇa
 [HALL 151.] — intens. *jegīyate* часто утверждается —, настойчиво утверждается
 [SARVADARŚANAS. 40,1. 122,1.]
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 ## gā
 
@@ -2670,7 +2670,7 @@ Schol.
 
 - **RU:** 3. *gā*¦ vgl. ещё *tamogā* .
 - **EN:** 3. *gā*¦ vgl. also *tamogā* .
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 ## gā
 
@@ -2682,49 +2682,49 @@ Schol.
 
 - **RU:** **1.** √*gā*¦, *jigāti*, **jagāti* (**jagāyāt*), **gāti* ([NAIGH. 2,14]) und **gāte* — 1〉 приходить.
 - **EN:** 1. √*gā*, *jigāti*, **jagāti* (**jagāyāt*), **gāti* ([NAIGH. 2,14]) and **gāte* — 1〉 to come.
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2〉 kommen —, hingehen zu oder nach, zugehen auf, sich hinwenden zu; mit Acc. oder Loc.
 
 - **RU:** — 2〉 приходить — , идти к или в направлении, направляться к, обращаться к; с Acc. или Loc.
 - **EN:** — 2〉 to come to, go towards or to, advance upon, turn oneself towards; with Acc. or Loc.
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3〉 nachgehen, verfolgen [ṚV. 4,3,13. 10,18,4].
 
 - **RU:** — 3〉 преследовать, следовать за [ṚV. 4,3,13. 10,18,4].
 - **EN:** — 3〉 to go after, pursue [ṚV. 4,3,13. 10,18,4].
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4〉 zu Jmd (Dat.) kommen, so v. a. sich einstellen bei [ṚV. 8,45,32]. Jmd (Acc.) zukommen (von einem Namen).
 
 - **RU:** — 4〉 приходить к кому-л. (Dat.), так v. a. — появляться при [ṚV. 8,45,32]. доставаться кому-л. (Acc.) (об имени).
 - **EN:** — 4〉 to come to someone (Dat.), hence v. a. to present oneself with [ṚV. 8,45,32]. To fall to someone's share (Acc.) (of a name).
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **5)** — 5〉 in einen Zustand, eine Lage, ein Verhältniss (Acc.) kommen, theilhaftig werden.
 
 - **RU:** — 5〉 приходить в какое-л. состояние, положение, отношение (Acc.), приобщаться.
 - **EN:** — 5〉 to come into a state, condition, or relation (Acc.), to partake of.
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **6)** — 6〉 aufbrechen, davon —, fortgehen [ṚV. 10,108,9]. mit Abl. woher und Loc. wohin.
 
 - **RU:** — 6〉 отправляться, уходить, удаляться [ṚV. 10,108,9]. с Abl. — откуда и Loc. — куда.
 - **EN:** — 6〉 to set out, go away, depart [ṚV. 10,108,9]. with Abl. whence and Loc. whither.
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **7)** — 7〉 zu Ende gehen [NAIṢ. 8,109].
 
 - **RU:** — 7〉 подходить к концу [NAIṢ. 8,109].
 - **EN:** — 7〉 to come to an end [NAIṢ. 8,109].
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **8)** — 8〉 gehen, wandeln [ṚV. 8,2,39]. mit Acc. oder Instr. ([ṚV. 8,5,39]) des Weges.
 
 - **RU:** — 8〉 идти, странствовать [ṚV. 8,2,39]. с Acc. или Instr. ([ṚV. 8,5,39]) пути.
 - **EN:** — 8〉 to go, walk [ṚV. 8,2,39]. with Acc. or Instr. ([ṚV. 8,5,39]) of the way.
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **desid)** — Desid. *jigīṣati* zu gehen verlangen.
 - **EN:** — Desid. *jigīṣati* to desire to go.
@@ -2966,372 +2966,372 @@ Schol.
 
 - **RU:** **2.** *˚gā*¦ _Adj._ идущий к, идущий, странствующий.
 - **EN:** 2. *˚gā* _Adj._ going towards, going, moving.
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **Des.)** — Desid. *jigīṣati* zu gehen verlangen.
 
 - **RU:** — Desid. *jigīṣati* желать идти.
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **Mit T26/T27)** — Mit *accha*, *acchā* kommen —, hingehen zu. mit vorangehende *ā* und *pra* dass.
 
 - **RU:** — С *accha*, *acchā*: приходить — , идти к. с предшествующим *ā* и *pra* dass.
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **Mit T31-1)** — Mit *ati* — 1〉 hinschreiten —, wegschreiten über (Acc.).
 
 - **RU:** — С *ati* — 1〉 переступать через, переходить (Acc.).
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **Mit T31-2)** — 2〉 vorübergehen an (Acc.).
 
 - **RU:** — 2〉 проходить мимо (Acc.).
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **Mit T31-3)** — 3〉 vorübergehen, verstreichen (von der Zeit), — für (Acc.).
 
 - **RU:** — 3〉 проходить, истекать (о времени), — вместо (Acc.).
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **Mit T31-4)** — 4〉 hingehen, sterben.
 
 - **RU:** — 4〉 уходить, умирать.
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **Mit T31-5)** — 5〉 siegreich überschreiten, überwinden, glücklich entkommen; mit Acc.
 
 - **RU:** — 5〉 победоносно переступать, преодолевать, счастливо спасаться; с Acc.
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **Mit T31-6)** — 6〉 vorübergehen an, so v. a. unbeachtete lassen.
 
 - **RU:** — 6〉 проходить мимо, так v. a. — оставлять без внимания.
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **Mit T37)** — Mit *vyati* vorübergehen an (Acc.).
 
 - **RU:** — С *vyati*: проходить мимо (Acc.).
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **Mit T39-1)** — Mit *adhi* — 1〉 in einem Zustand (Acc.) gerathen, theilhaftig werden.
 
 - **RU:** — С *adhi* — 1〉 попадать в какое-л. состояние (Acc.), приобщаться.
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **Mit T39-2)** — 2〉 verfallen auf, sich entschliessen zu (Acc.).
 
 - **RU:** — 2〉 приходить к чему-л., решаться на (Acc.).
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **Mit T39-3)** — 3〉 sich erinnern, gedenken, merken auf (Gen. oder Acc.).
 
 - **RU:** — 3〉 вспоминать, помнить, обращать внимание на (Gen. или Acc.).
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **Mit T39-4)** — 4〉 Etwas (Acc.) studiren, lernen, — von (Abl.). Gewöhnlich Med.
 
 - **RU:** — 4〉 изучать, учиться чему-л. (Acc.), — у (Abl.). Обычно Med.
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **Mit T39 Caus.)** — *Caus. *adhigāpayati* lehren.
 
 - **RU:** — *Caus. *adhigāpayati*: учить.
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **Mit T39 Des.)** — *Desid. von Caus. *adhijigāpayiṣati* zu lehren verlangen.
 
 - **RU:** — *Desid. от Caus. *adhijigāpayiṣati*: желать учить.
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **Mit T52-1)** — Mit *anu* — 1〉 Jmd nachgehen, folgen, entlang gehen ([93,16]), einen Weg einschlagen; aufsuchen; mit Acc.
 
 - **RU:** — С *anu* — 1〉 следовать за кем-л., идти вдоль ([93,16]), избирать путь; разыскивать; с Acc.
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **Mit T52-2)** — 2〉 befolgen, sich richten nach (Acc.).
 
 - **RU:** — 2〉 следовать, руководствоваться (Acc.).
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **Mit T52-3)** — 3〉 sich hingeben, sich begeben in (Acc.).
 
 - **RU:** — 3〉 предаваться, погружаться в (Acc.).
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **Mit T57)** — Mit *samanu* Jmd nachgehen, folgen; mit Acc.
 
 - **RU:** — С *samanu*: следовать за кем-л.; с Acc.
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **Mit T59-1)** — Mit *antar* — 1〉 gehen zwischen Etwas (Acc.).
 
 - **RU:** — С *antar* — 1〉 идти между чем-л. (Acc.).
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **Mit T59-2)** — 2〉 dazwischentreten, trennen —, ausschliessen von (Abl.).
 
 - **RU:** — 2〉 вмешиваться, разлучать, отстранять от (Abl.).
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **Mit T62)** — Mit *apa* weggehen, sich entfernen —, sich fernhalten von (Abl.) [25,9]. [18]. weichen von (Abl.).
 
 - **RU:** — С *apa*: уходить, удаляться — , держаться вдали от (Abl.) [25,9]. [18]. отступать от (Abl.).
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **Mit T67)** — Mit *api* eingehen, eindringen, sich mischen in (Acc.).
 
 - **RU:** — С *api*: входить, проникать, вмешиваться в (Acc.).
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **Mit T69-1)** — Mit *abhi* — 1〉 herbeikommen, zugehen auf (auch in feindlicher Absicht), herantreten zu, hingehen nach, sich hinbegeben zu oder nach; mit Acc.
 
 - **RU:** — С *abhi* — 1〉 приходить, направляться к (также во враждебных целях), приступать к, идти к, отправляться к или в направлении; с Acc.
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **Mit T69-2)** — 2〉 gelangen zu, theilhaftig werden; mit Acc.
 
 - **RU:** — 2〉 достигать, приобщаться; с Acc.
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **Mit T69-3)** — 3〉 verstreichen (fehlerhaft für *ati*).
 
 - **RU:** — 3〉 истекать (ошибочно вместо *ati*).
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **Mit T73-1)** — Mit *ava* — 1〉 weggehen, abhanden kommen.
 
 - **RU:** — С *ava* — 1〉 уходить, пропадать.
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **Mit T73-2)** — 2〉 hingehen zu. *yudhā* in den Kampf gehen.
 
 - **RU:** — 2〉 идти к. *yudhā* — идти в бой.
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **Mit T73-3)** — 3〉 hingehen zu, so v. a. sich vereinigen mit (Acc.).
 
 - **RU:** — 3〉 идти к, так v. a. — соединяться с (Acc.).
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **Mit T77)** — Mit *anvava* hingehen zu, so v. a. sich vereinigen mit (Acc.).
 
 - **RU:** — С *anvava*: идти к, так v. a. — соединяться с (Acc.).
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **Mit T80)** — Mit *samabhyava* sich begeben in (Acc.) [GOP. BR. 2,4,11].
 
 - **RU:** — С *samabhyava*: отправляться в (Acc.) [GOP. BR. 2,4,11].
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **Mit T83)** — Mit *anuvyava* einem Andern folgend dazwischentreten, mit Acc.
 
 - **RU:** — С *anuvyava*: следуя за другим, вмешиваться, с Acc.
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **Mit T85-1)** — Mit *ā* — 1〉 herbeikommen, sich nähern, kommen zu, gelangen in; mit Acc.
 
 - **RU:** — С *ā* — 1〉 приходить, приближаться, прийти к, достигать; с Acc.
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **Mit T85-2)** — 2〉 sich einstellen, Jmd (Acc.) treffen, heimsuchen.
 
 - **RU:** — 2〉 появляться, настигать кого-л. (Acc.), постигать.
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **Mit T88)** — Mit *anvā* nachfolgen, mit Acc.
 
 - **RU:** — С *anvā*: следовать за, с Acc.
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **Mit T90-1)** — Mit *abhyā* — 1〉 herbeikommen, sich nähern, kommen zu oder in (Acc.), zugehen auf (Gen. [BHĀG. P.]).
 
 - **RU:** — С *abhyā* — 1〉 приходить, приближаться, прийти к или в (Acc.), направляться к (Gen. [BHĀG. P.]).
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **Mit T90-2)** — 2〉 Jmd (Acc.) treffen, heimsuchen.
 
 - **RU:** — 2〉 постигать кого-л. (Acc.), настигать.
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **Mit T90-3)** — 3〉 sich daran machen —, sich entschliessen zu (Infin.).
 
 - **RU:** — 3〉 приниматься за — , решаться на (Infin.).
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **Mit T96-1)** — Mit *samabhyā* — 1〉 herbeikommen.
 
 - **RU:** — С *samabhyā* — 1〉 приходить.
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **Mit T96-2)** — 2〉 Jmd (Acc.) treffen, heimsuchen.
 
 - **RU:** — 2〉 постигать кого-л. (Acc.), настигать.
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **Mit T98)** — Mit *udā* hinauf-, herauskommen zu (Acc.).
 
 - **RU:** — С *udā*: подниматься к, выходить к (Acc.).
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **Mit T100)** — Mit *upā* herbeikommen, zugehen auf (auch in feindlicher Absicht), kommen zu; mit Acc.
 
 - **RU:** — С *upā*: приходить, направляться к (также во враждебных целях), прийти к; с Acc.
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **Mit T102-1)** — Mit *paryā* — 1〉 einen Umlauf vollbringen.
 
 - **RU:** — С *paryā* — 1〉 совершать оборот (круговращение).
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **Mit T102-2)** — 2〉 einer Sache (Acc.) nachgehen sich beschäftigen mit [ṚV. 1,88,4].
 
 - **RU:** — 2〉 заниматься чем-л. (Acc.), посвящать себя [ṚV. 1,88,4].
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **Mit T105)** — Mit *anuparyā* wieder zurückkommen zu (Acc.).
 
 - **RU:** — С *anuparyā*: снова возвращаться к (Acc.).
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **Mit T107-1)** — Mit *ud* — 1〉 aufgehen (von Gestirnen).
 
 - **RU:** — С *ud* — 1〉 восходить (о светилах).
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **Mit T107-2)** — 2〉 hervortreten oder einen Aufschwung nehmen.
 
 - **RU:** — 2〉 выдвигаться или получать подъём.
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **Mit T108)** — Mit *abhyud* aufgehen über oder vor (Acc.).
 
 - **RU:** — С *abhyud*: восходить над или впереди (Acc.).
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **Mit T110)** — Mit *pratyud*. dass.
 
 - **RU:** — С *pratyud*. dass.
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **Mit T112-1)** — Mit *upa* — 1〉 hingehen zu, treten —, gerathen in, gelangen zu; mit Acc.
 
 - **RU:** — С *upa* — 1〉 идти к, вступать — , попадать в, достигать; с Acc.
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **Mit T112-2)** — 2〉 gehen, wandeln. *pathā yamasya*.
 
 - **RU:** — 2〉 идти, странствовать. *pathā yamasya*.
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **Mit T115-1)** — Mit *ni* — 1〉 gerathen in (Acc.).
 
 - **RU:** — С *ni* — 1〉 попадать в (Acc.).
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **Mit T115-2)** — 2〉 sich anschmiegen (?).
 
 - **RU:** — 2〉 прижиматься (?).
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **Mit T117-1)** — Mit *nis* — 1〉 hervorkommen, — aus (Abl.) [110,4].
 
 - **RU:** — С *nis* — 1〉 выходить, — из (Abl.) [110,4].
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **Mit T117-2)** — 2〉 hinausgehen, fortgehen von (Abl.). [132,21]. das Haus verlassen [127,8].
 
 - **RU:** — 2〉 выходить, уходить от (Abl.). [132,21]. покидать дом [127,8].
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **Mit T123)** — Mit *parā* bei Seite gehen, fortgehen, entfliehen; mit dem Acc. wohin.
 
 - **RU:** — С *parā*: уходить в сторону, удаляться, бежать; с Acc. — куда.
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **Mit T125-1)** — Mit *pari* — 1〉 umhergehen [ṚV. 5,15,4]. umgehen, umwandeln, umkreisen; durchfliegen.
 
 - **RU:** — С *pari* — 1〉 обходить вокруг [ṚV. 5,15,4]. обходить, окружать, облетать; пролетать насквозь.
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **Mit T125-2)** — 2〉 eingehen in (Acc.) [VS. 40,8] = [ĪŚOP. 8].
 
 - **RU:** — 2〉 входить в (Acc.) [VS. 40,8] = [ĪŚOP. 8].
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **Mit T125-3)** — 3〉 über Jmd (Acc.) kommen, heimsuchen.
 
 - **RU:** — 3〉 приходить на кого-л. (Acc.), постигать.
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **Mit T125-4)** — 4〉 vorübergehen an so v. a. ausweichen, vermeiden.
 
 - **RU:** — 4〉 проходить мимо, так v. a. — уклоняться, избегать.
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **Mit T125-5)** — 5〉 nicht beachten, überhören.
 
 - **RU:** — 5〉 не замечать, пропускать мимо ушей.
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **Mit T125-6)** — 6〉 nicht dahinterkommen, — erkennen [BHĀG. P. 2,6,35].
 
 - **RU:** — 6〉 не понимать, не распознавать [BHĀG. P. 2,6,35].
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **Mit T133)** — Mit *anupari* durchgehen, durchwandern.
 
 - **RU:** — С *anupari*: проходить насквозь, странствовать по.
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **Mit T134)** — Mit *vipari* umfallen, — stürzen.
 
 - **RU:** — С *vipari*: падать, опрокидываться.
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **Mit T135-1)** — Mit *pra* — 1〉 vorwärts gehen, vorschreiten, sich in Bewegung setzen, hinschreiten zu (Acc.).
 
 - **RU:** — С *pra* — 1〉 идти вперёд, продвигаться, приходить в движение, шагать к (Acc.).
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **Mit T135-2)** — 2〉 fortgehen, sich auf und davon machen von (Abl.) [17,10. fgg.] (Conj.).
 
 - **RU:** — 2〉 уходить, убираться от (Abl.) [17,10. fgg.] (Conj.).
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **Mit T135-3)** — 3〉 mit *antar* ein-, hinein gehen [ṚV. 8,48,2].
 
 - **RU:** — 3〉 с *antar*: входить, вступать [ṚV. 8,48,2].
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **Mit T142)** — Mit *apapra* fortgehen, weichen [ṚV. 1,113,16].
 
 - **RU:** — С *apapra*: уходить, отступать [ṚV. 1,113,16].
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **Mit T144)** — Mit *upapra* herbeikommen, hintreten zu (Acc.).
 
 - **RU:** — С *upapra*: приходить, подходить к (Acc.).
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **Mit T146)** — Mit *prati* zurückkehren zu (Acc.).
 
 - **RU:** — С *prati*: возвращаться к (Acc.).
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **Mit T148)** — Mit *vi* vergehen, entschwinden.
 
 - **RU:** — С *vi*: исчезать, улетучиваться.
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **Mit T149-1)** — Mit *sam* — 1〉 zusammenkommen.
 
 - **RU:** — С *sam* — 1〉 сходиться, собираться.
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **Mit T149-2)** — 2〉 hingehen zu (Acc.).
 
 - **RU:** — 2〉 идти к (Acc.).
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 ## gā
 
@@ -3342,13 +3342,13 @@ Schol.
 
 - **RU:** **3.** √*gā*¦ *gāyati, ˚te* (редко), *gāti* и **jigāti* [DHĀTUP. 25,25]. петь, говорить нараспев, воспевать кому-л. (Dat.), возвещать в стихах, воспевать (с Acc.), петь перед кем-л. (Acc.), исполнять нараспев. Pass. также называться, именоваться. *gīta* спетый, возвещённый в стихах, воспетый.
 - **EN:** 3. √*gā* *gāyati, ˚te* (rare), *gāti* and **jigāti* [DHĀTUP. 25,25]. to sing, to speak in a singing tone, to sing to someone (Dat.), to proclaim in verse, to celebrate in song (with Acc.), to sing before someone (Acc.), to perform in song. Pass. also to be called, to be named. *gīta* sung, proclaimed in verse, celebrated in song.
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **caus)** — Caus. *gāpayati* singen —, besingen lassen.
 
 - **RU:** — Caus. *gāpayati* заставлять петь —, заставлять воспевать.
 - **EN:** — Caus. *gāpayati* to cause to sing, to have sung or celebrated in song.
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **pass_1)** — Intens. *jegīyate*
 — 1〉 singen.
@@ -3358,19 +3358,19 @@ Schol.
 
 - **RU:** — 2〉 быть воспетым, воспеваться [DAŚAK. 1,10].
 - **EN:** — 2〉 to be sung, to be celebrated in song [DAŚAK. 1,10].
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **pass_3)** — 3〉 oft oder steif und fest behauptet werden.
 
 - **RU:** — 3〉 часто или упорно утверждаться.
 - **EN:** — 3〉 to be often or persistently asserted.
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **ā)** — Mit *accha* herbeisingen, — rufen.
 
 - **RU:** — С *accha* призывать пением, — звать пением.
 - **EN:** — With *accha* to sing hither, to summon by singing.
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **anu_1)** — Mit *anu*
 — 1〉 nachsingen, singen nach, — gemäss.
@@ -3380,31 +3380,31 @@ Schol.
 
 - **RU:** — 2〉 петь что-л. перед кем-л. (Acc.).
 - **EN:** — 2〉 to sing something before someone (Acc.).
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **anu_3)** — 3〉 singen, besingen; sich über Etwas (Acc.) aussprechen (von alten Weisen).
 
 - **RU:** — 3〉 петь, воспевать; высказываться о чём-л. (Acc.) (о древних мудрецах).
 - **EN:** — 3〉 to sing, celebrate in song; to pronounce concerning something (Acc.) (said of ancient sages).
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **anu_caus)** — Caus. nachsingen lassen [GOBH. 3,2,31. 34. 36].
 
 - **RU:** — Caus. заставлять петь вслед [GOBH. 3,2,31. 34. 36].
 - **EN:** — Caus. to have sung after [GOBH. 3,2,31. 34. 36].
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **anu-sam)** — Mit *samanu* in gebundener Rede wiederholen [{{CARARA->CARAKA||20160103|Dhaval Patel, Jim Funderburk.|https://github.com/sanskrit-lexicon/CORRECTIONS/issues/216|It is not a typo. Print error.}}. 2,1].
 
 - **RU:** — С *samanu* повторять в стихах [{{CARARA->CARAKA||20160103|Dhaval Patel, Jim Funderburk.|https://github.com/sanskrit-lexicon/CORRECTIONS/issues/216|It is not a typo. Print error.}}. 2,1].
 - **EN:** — With *samanu* to repeat in verse [{{CARARA->CARAKA||20160103|Dhaval Patel, Jim Funderburk.|https://github.com/sanskrit-lexicon/CORRECTIONS/issues/216|It is not a typo. Print error.}}. 2,1].
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **upa-vi)** — Mit *apa* aufhören zu singen [VAITĀN. 17,4]. [GOP. BR. 2,2,14].
 
 - **RU:** — С *apa* прекращать петь [VAITĀN. 17,4]. [GOP. BR. 2,2,14].
 - **EN:** — With *apa* to cease singing [VAITĀN. 17,4]. [GOP. BR. 2,2,14].
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **abhi_1)** — Mit *abhi*
 — 1〉 Jmd (Acc.) zusingen, zurufen.
@@ -3414,25 +3414,25 @@ Schol.
 
 - **RU:** — 2〉 наполнять своим пением.
 - **EN:** — 2〉 to fill with one's song.
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **abhi_3)** — 3〉 incantare, Jmd (Acc.) durch Gesang bezaubern.
 
 - **RU:** — 3〉 incantare, завораживать кого-л. (Acc.) пением.
 - **EN:** — 3〉 incantare, to enchant someone (Acc.) by singing.
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **abhi_4)** — 4〉 singen, besingen.
 
 - **RU:** — 4〉 петь, воспевать.
 - **EN:** — 4〉 to sing, celebrate in song.
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **abhi_5)** — 5〉 *abhigīta* mit dem zweiten Svara beginnend und mit dem ersten endend [SAṂHITOPAN. 17,2].
 
 - **RU:** — 5〉 *abhigīta* начиная со второго Svara и заканчивая первым [SAṂHITOPAN. 17,2].
 - **EN:** — 5〉 *abhigīta* beginning with the second Svara and ending with the first [SAṂHITOPAN. 17,2].
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **ā-ni_1)** — Mit *ava*, *avagīta*
 — 1〉 oft wiederholt, tritus [RĀJAT. 7,435].
@@ -3442,7 +3442,7 @@ Schol.
 
 - **RU:** — 2〉 ставший надоедливым, приевшийся.
 - **EN:** — 2〉 become tiresome, tedious.
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **prati_1)** — Mit *ā*
 — 1〉 Jmd (Acc.) zusingen.
@@ -3452,37 +3452,37 @@ Schol.
 
 - **RU:** — 2〉 получать пением, добывать пением.
 - **EN:** — 2〉 to obtain by singing, to win through song.
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **prati_3)** — 3〉 leicht —, leise singen.
 
 - **RU:** — 3〉 петь легко —, петь тихо.
 - **EN:** — 3〉 to sing gently, softly.
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **ud)** — Mit *ud* Gesang anstimmen, singen (insbes. vom liturgischen Singen), in gebundener Rede verkünden, besingen, Jmd (Acc.) vorsingen, mit Gesang erfüllen.
 
 - **RU:** — С *ud* затягивать песню, петь (insbes. о литургическом пении), возвещать в стихах, воспевать, петь перед кем-л. (Acc.), наполнять пением.
 - **EN:** — With *ud* to strike up a song, to sing (insbes. of liturgical singing), to proclaim in verse, to celebrate in song, to sing before someone (Acc.), to fill with song.
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **upa)** — Mit *prod* zu singen anheben.
 
 - **RU:** — С *prod* начинать петь.
 - **EN:** — With *prod* to begin to sing.
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **prati-ā)** — Mit *pratyud* Jmd (Acc.) singend antworten.
 
 - **RU:** — С *pratyud* отвечать кому-л. (Acc.) пением.
 - **EN:** — With *pratyud* to answer someone (Acc.) in song.
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **sam-ā)** — Mit *upa* Jmd (Dat., Loc. oder Acc.) zu singen, in den Gesang einfallen, Jmd (Acc.) vorsingen, besingen, mit seinem Gesange erfüllen; singen, Etwas (Acc.) von Jmd (Gen.) singen, so v. a. verkünden. *upagīta* auch mit act. Bed. der vorzusingen begonnen hat.
 
 - **RU:** — С *upa* петь с кем-л. (Dat., Loc. или Acc.), вступать в пение, петь перед кем-л. (Acc.), воспевать, наполнять своим пением; петь что-л. (Acc.) о ком-л. (Gen.), так v. a. возвещать. *upagīta* также с act. Bed. тот, кто начал петь перед кем-л..
 - **EN:** — With *upa* to sing to someone (Dat., Loc. or Acc.), to join in the singing, to sing before someone (Acc.), to celebrate in song, to fill with one's song; to sing, to sing something (Acc.) of someone (Gen.), hence v. a. to proclaim. *upagīta* also with act. Bed. who has begun to sing before.
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **sam_1)** — Mit *ni*
 — 1〉 mit Gesang begleiten.
@@ -3492,7 +3492,7 @@ Schol.
 
 - **RU:** — 2〉 петь, так v. a. возвещать.
 - **EN:** — 2〉 to sing, hence v. a. to proclaim.
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **pari_1)** — Mit *pari*
 — 1〉 singend umhergehen, — umkreisen, — umwandeln.
@@ -3502,7 +3502,7 @@ Schol.
 
 - **RU:** — 2〉 петь повсюду — вблизи и вдали, воспевать, возвещать как.
 - **EN:** — 2〉 to sing near and far, everywhere, to celebrate in song, to proclaim as.
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **pra_1)** — Mit *pra*
 — 1〉 zu singen —, zu besingen anheben, besingen. *pragīta*
@@ -3513,37 +3513,37 @@ Schol.
 
 - **RU:** — b〉 наполненный пением [LA. 60,6].
 - **EN:** — b〉 filled with song [LA. 60,6].
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **pra_c)** — c〉 der einen Gesang erhoben hat, singend.
 
 - **RU:** — c〉 поднявший песнопение, поющий.
 - **EN:** — c〉 one who has raised a song, singing.
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **pra_2)** — 2〉 ertönen.
 
 - **RU:** — 2〉 звучать, раздаваться.
 - **EN:** — 2〉 to resound.
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **abhi-pra)** — Mit *abhipra* Jmd (Acc.) zu besingen anheben.
 
 - **RU:** — С *abhipra* начинать воспевать кого-л. (Acc.).
 - **EN:** — With *abhipra* to begin to celebrate someone (Acc.) in song.
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **vi)** — Mit *vipra*, *˚gīta* worüber die Meinungen getheilt sind [Comm. zu JAIM. 2,3,3 (S. 173, Z. 8)].
 
 - **RU:** — С *vipra*, *˚gīta* о чём мнения расходятся [Comm. zu JAIM. 2,3,3 (S. 173, Z. 8)].
 - **EN:** — With *vipra*, *˚gīta* concerning which opinions are divided [Comm. zu JAIM. 2,3,3 (S. 173, Z. 8)].
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **sam-pra)** — Mit *saṃpra* zu singen anfangen, singen, singend ausprechen.
 
 - **RU:** — С *saṃpra* начинать петь, петь, произносить нараспев.
 - **EN:** — With *saṃpra* to begin to sing, to sing, to utter in a singing voice.
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **apa_1)** — Mit *vi*
 — 1〉 tadeln [NAIṢ. 9,13].
@@ -3553,13 +3553,13 @@ Schol.
 
 - **RU:** — 2〉 *vigīta* противоречащий, находящийся в противоречии.
 - **EN:** — 2〉 *vigīta* standing in contradiction.
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **sam-ud)** — Mit *sam* gemeinschaftlich besingen.
 
 - **RU:** — С *sam* совместно воспевать.
 - **EN:** — With *sam* to celebrate together in song.
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **1)** **4.** *gā*¦
 — 1〉 _Adj._ am Ende eines Comp. singend.
@@ -3567,173 +3567,173 @@ Schol.
 - **RU:** **4.** *gā*¦
 — 1〉 _Adj._ в конце Comp. поющий.
 - **EN:** 4. *gā* — 1〉 _Adj._ at the end of a Comp. singing.
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2〉 *_f._ Gesang, Vers.
 
 - **RU:** — 2〉 *_f._ пение, стих.
 - **EN:** — 2〉 *_f._ song, verse.
-  <sub>DCS 1930 · lexicographic</sub>
+  <sub>lexicographic</sub>
 
 **1)** **5.** *√*gā*¦, *jigāti* (*janmani*) [VOP.] in [DHĀTUP. 25,25].
 
 - **RU:** **5.** *√*gā*¦, *jigāti* (*janmani*) [VOP.] в [DHĀTUP. 25,25].
 - **EN:** 5. *√*gā*, *jigāti* (*janmani*) [VOP.] in [DHĀTUP. 25,25].
-  <sub>DCS 1930 · lexicographic</sub>
+  <sub>lexicographic</sub>
 
 **main)** **1.** √*gā*¦ mit *adhi* Caus. *adhyajīgapat* [HEM. PAR. 1,398].
 
 - **RU:** **1.** √*gā*¦ с *adhi* Caus. *adhyajīgapat* [HEM. PAR. 1,398].
 - **EN:** 1. √*gā* with *adhi* Caus. *adhyajīgapat* [HEM. PAR. 1,398].
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **main)** **3.** *gā*¦ auch sagen, sprechen, — zu Jmd (Acc.) [CAMPAKA 126]. [137]. [338]. [438]. [472]. [UTTAMAC. 107]. [285].
 
 - **RU:** **3.** *gā*¦ также говорить, произносить, — кому-л. (Acc.) [CAMPAKA 126]. [137]. [338]. [438]. [472]. [UTTAMAC. 107]. [285].
 - **EN:** 3. *gā* also to say, speak, — to someone (Acc.) [CAMPAKA 126]. [137]. [338]. [438]. [472]. [UTTAMAC. 107]. [285].
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **main)** **3.** √*gā*¦ *gāyati, ˚te* (selten), *gāti* und **jigāti* [DHĀTUP. 25,25]. singen, in singendem Tone sprechen, Jmd (Dat.) zusingen, in gebundener Rede verkünden, besingen (mit Acc.), Jmd (Acc.) vorsingen, singend vortragen. Pass. auch genannt werden, heissen. *gīta* gesungen, in gebundener Rede verkündet, besungen.
 
 - **RU:** **3.** √*gā*¦ *gāyati, ˚te* (редко), *gāti* и **jigāti* [DHĀTUP. 25,25]. петь, говорить нараспев, воспевать кому-л. (Dat.), возвещать в стихах, воспевать (с Acc.), петь перед кем-л. (Acc.), исполнять нараспев. Pass. также называться, именоваться. *gīta* спетый, возвещённый в стихах, воспетый.
 - **EN:** 1. √*gā* II. *jagāyāt* [ṚV. 10,28,1]. — With *adhi* Caus. II. 5. — With *ava* II. to understand, to know [KIR. 12,34]. — With *pra* II. 2〉 read [27,10. fgg.] — With *vi* II. to step between, to separate; with Acc. [ŚĀṄKH. BR. 13,9].
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **main)** **3.** √*gā*¦ *gāyati, ˚te* (selten), *gāti* und **jigāti* [DHĀTUP. 25,25]. singen, in singendem Tone sprechen, Jmd (Dat.) zusingen, in gebundener Rede verkünden, besingen (mit Acc.), Jmd (Acc.) vorsingen, singend vortragen. Pass. auch genannt werden, heissen. *gīta* gesungen, in gebundener Rede verkündet, besungen.
 
 - **RU:** **3.** √*gā*¦ *gāyati, ˚te* (редко), *gāti* и **jigāti* [DHĀTUP. 25,25]. петь, говорить нараспев, воспевать кому-л. (Dat.), возвещать в стихах, воспевать (с Acc.), петь перед кем-л. (Acc.), исполнять нараспев. Pass. также называться, именоваться. *gīta* спетый, возвещённый в стихах, воспетый.
 - **EN:** 3. √*gā* II. 5. — With *ava* II. *˚gīta* weakened (*śoka*) [JĀTAKAM. 2]. become tiresome [10,1].
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **desid./intens.)** — Intens. *jegīyate*
 
 - **RU:** — Intens. *jegīyate*
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **ā- 1))** — 1〉 singen.
 
 - **RU:** — 1〉 петь.
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **anu- intro)** — Mit *anu*
 
 - **RU:** — С *anu*
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **anu- 1))** — 1〉 nachsingen, singen nach, — gemäss.
 
 - **RU:** — 1〉 петь вслед, петь после, петь сообразно.
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **abhi- intro)** — Mit *abhi*
 
 - **RU:** — С *abhi*
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **abhi- 1))** — 1〉 Jmd (Acc.) zusingen, zurufen.
 
 - **RU:** — 1〉 петь кому-л. (Acc.), взывать к кому-л. пением.
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **pari-anu- / vi-anu- intro)** — Mit *ava*, *avagīta*
 
 - **RU:** — С *ava*, *avagīta*
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **pari-anu-/vi-anu- 1))** — 1〉 oft wiederholt, tritus [RĀJAT. 7,435].
 
 - **RU:** — 1〉 часто повторяемый, tritus [RĀJAT. 7,435].
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **pra- intro)** — Mit *ā*
 
 - **RU:** — С *ā*
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **pra- 1))** — 1〉 Jmd (Acc.) zusingen.
 
 - **RU:** — 1〉 петь кому-л. (Acc.).
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **saha- 1))** — Mit *ni*
 
 - **RU:** — С *ni*
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **saha- 1a))** — 1〉 mit Gesang begleiten.
 
 - **RU:** — 1〉 сопровождать пением.
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **pari- intro)** — Mit *pari*
 
 - **RU:** — С *pari*
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **pari- 1))** — 1〉 singend umhergehen, — umkreisen, — umwandeln.
 
 - **RU:** — 1〉 ходить вокруг с пением, — обходить с пением, — обходить кругом, распевая.
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **vi- intro)** — Mit *pra*
 
 - **RU:** — С *pra*
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **vi- 1))** — 1〉 zu singen —, zu besingen anheben, besingen. *pragīta*
 
 - **RU:** — 1〉 начинать петь, — начинать воспевать, воспевать. *pragīta*
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **vi- 1a))** — a〉 singend hergesagt, gesungen.
 
 - **RU:** — a〉 произнесённый нараспев, спетый.
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **vi+pra- intro)** — Mit *vi*
 
 - **RU:** — С *vi*
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **vi+pra- 1))** — 1〉 tadeln [NAIṢ. 9,13].
 
 - **RU:** — 1〉 порицать [NAIṢ. 9,13].
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **addendum-II-main)** **1.** √*gā*¦ II. *jagāyāt* [ṚV. 10,28,1].
 
 - **RU:** **1.** √*gā*¦ II. *jagāyāt* [ṚV. 10,28,1].
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **addendum-II-ā-)** — Mit *adhi* Caus. II. 5.
 
 - **RU:** — С *adhi* Caus. II. 5.
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **addendum-II-ava-)** — Mit *ava* II. verstehen, wissen [KIR. 12,34].
 
 - **RU:** — С *ava* II. понимать, знать [KIR. 12,34].
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **addendum-II-vi-2))** — Mit *pra* II. 2〉 lies [27,10. fgg.]
 
 - **RU:** — С *pra* II. 2〉 читай [27,10. fgg.]
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **addendum-II-antar-)** — Mit *vi* II. dazwischen treten, trennen; mit Acc. [ŚĀṄKH. BR. 13,9].
 
 - **RU:** — С *vi* II. вступать между, разделять; с Acc. [ŚĀṄKH. BR. 13,9].
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **addendum-II-3-main)** **3.** √*gā*¦ II. 5.
 
 - **RU:** **3.** √*gā*¦ II. 5.
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **addendum-II-3-pari-anu-)** — Mit *ava* II. *˚gīta* abgeschwächt (*śoka*) [JĀTAKAM. 2]. zum Ueberdruss geworden [10,1].
 
 - **RU:** — С *ava* II. *˚gīta* в ослабленном значении (*śoka*) [JĀTAKAM. 2]. ставший надоедливым, приевшийся [10,1].
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 ## gā
 
@@ -3749,12 +3749,12 @@ Schol.
 **SCH_1_gaa)** 1. gā¦ jagāyāt [ṚV. 10,28,1.] — Mit adhi [Kaus.] adhyajīgapat, [Hem. Par. 1,398.] — Mit ava verstehen, wissen, [Kir. 12,34.] — Mit pra 2. lies: 27,10 ff. — Mit vi dazwischen treten, trennen; mit Akk. [Śāṅkh. Br. 13,9.] {part=,seq=12430,type=,n=7}
 
 - **RU:** 1. gā¦ jagāyāt [ṚV. 10,28,1.] — С adhi [Kaus.] adhyajīgapat, [Hem. Par. 1,398.] — С ava понимать, знать, [Kir. 12,34.] — С pra 2. читать: 27,10 сл. — С vi вступать между, разделять; с Akk. [Śāṅkh. Br. 13,9.]
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **SCH_3_gaa)** 3. gā¦ auch sagen, sprechen, -x- zu jemand (Akk.), Campaka 126. 137. 338. 438. 472; [Uttamac. 107. 285.] — Mit ava, ˚gīta abgeschwächt (śoka), [Jātakam. 2]; zum Überdruß geworden,10,1. {part=,seq=12431,type=,n=6}
 
 - **RU:** 3. gā¦ также говорить, изрекать, к кому-л. (Akk.), Campaka 126. 137. 338. 438. 472; [Uttamac. 107. 285.] — С ava, ˚gīta в ослабленном значении (śoka), [Jātakam. 2]; ставший надоедливым, 10,1.
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 ## gā
 
@@ -3765,25 +3765,25 @@ Schol.
 
 - **RU:** **1.** *gā*¦ с *adhi* Caus. *adhyajīgapat* [HEM. PAR. 1,398].
 - **EN:** **1.** *gā*¦: with *adhi* Caus. *adhyajīgapat* [HEM. PAR. 1,398].
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **main)** **3.** *gā*¦ auch sagen, sprechen, — zu Jmd (Acc.) [CAMPAKA 126]. [137]. [338]. [438]. [472]. [UTTAMAC. 107]. [285].
 
 - **RU:** **3.** *gā*¦ также говорить, высказываться, — кому-л. (Acc.) [CAMPAKA 126]. [137]. [338]. [438]. [472]. [UTTAMAC. 107]. [285].
 - **EN:** **3.** *gā*¦ also: to say, to speak, to address someone (Acc.) [CAMPAKA 126]. [137]. [338]. [438]. [472]. [UTTAMAC. 107]. [285].
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **main)** **1.** *gā*¦ II. *jagāyāt* [ṚV. 10,28,1]. — Mit *adhi* Caus. II. 5. — Mit *ava* II. verstehen, wissen [KIR. 12,34]. — Mit *pra* II. 2〉 lies [27,10. fgg.] — Mit *vi* II. dazwischen treten, trennen; mit Acc. [ŚĀṄKH. BR. 13,9].
 
 - **RU:** **1.** *gā*¦ II. *jagāyāt* [ṚV. 10,28,1]. — С *adhi* Caus. II. 5. — С *ava* II. понимать, знать [KIR. 12,34]. — С *pra* II. 2〉 читай [27,10. fgg.] — С *vi* II. вступать между, разделять; с Acc. [ŚĀṄKH. BR. 13,9].
 - **EN:** **1.** *gā*¦ II. *jagāyāt* [ṚV. 10,28,1]. — With *adhi* Caus. II. 5. — With *ava* II.: to understand, to know [KIR. 12,34]. — With *pra* II. 2〉: read [27,10. fgg.]. — With *vi* II.: to intervene, separate; with Acc. [ŚĀṄKH. BR. 13,9].
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **main)** **3.** *gā*¦ II. 5. — Mit *ava* II. *˚gīta* abgeschwächt (*śoka*) [JĀTAKAM. 2]. zum Ueberdruss geworden [10,1].
 
 - **RU:** **3.** *gā*¦ II. 5. — С *ava* II. *˚gīta* ослабленное (*śoka*) [JĀTAKAM. 2]. ставший надоедливым [10,1].
 - **EN:** **3.** *gā*¦ II. 5. — With *ava* II.: *˚gīta* weakened (*śoka*) [JĀTAKAM. 2]. Become tiresome [10,1].
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 ## gā
 
@@ -3794,151 +3794,151 @@ Schol.
 
 - **RU:** *gā (=pṭ gā 1)* идти, приходить, странствовать. уходить. приходить к кому-л. (Akk) (с личными подлежащими). приходить к какому-л. месту (Akk) или направляться туда (место, укрытие). идти дорогой (Akk, Instr). враждебно нападать на (Akk). достигать, получать что-л. (Akk). идти куда-л. (Lok или нар. места). происходить [о каком-л. действии]. приходить кому-л. (Dat), т. е. появляться у него, доставаться ему. обращаться к кому-л. (Akk) (с песнями), воспевать. другая форма для gam
 - **EN:** *gā (=pṭ gā 1)* [Ved , unsp] to go, to come, to wander. to go away. to come to someone (Acc., with personally conceived subjects). to come to or go toward a place (Acc., place, hiding-spot). to travel a road (Acc., Instr.). to advance against hostilely (Acc.). to reach, to attain something (Acc.). to go somewhere (Loc. or adv. of place). to proceed, to take place [of an action]. to come to someone (Dat.), i.e. to arise for him, to fall to his share. to approach someone (Acc.) with songs, to sing of. alternative form for gam
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **2)** [Ved , unsp] ( III ) gehen, gehen in; weggehen. ṚV 10,108,9
 
 - **RU:** ( III ) идти, входить в; уходить. ṚV 10,108,9
 - **EN:** [Ved , unsp] (cl. III) to go, to go into; to go away. ṚV 10,108,9
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **3)** [Ved , unsp] gehen, fortgehen; sich in Bewegung setzen, kommen; gelangen zu. ṚV 10,108,9 , ṚV 1,2,3 , ṚV 3,31,1
 
 - **RU:** идти, уходить; приходить в движение, приходить; достигать. ṚV 10,108,9 , ṚV 1,2,3 , ṚV 3,31,1
 - **EN:** [Ved , unsp] to go, to go away; to set oneself in motion, to come; to arrive at. ṚV 10,108,9 , ṚV 1,2,3 , ṚV 3,31,1
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **4)** [Ved , unsp] to go. AV(P) 9.10,10
 
 - **RU:** идти. AV(P) 9.10,10
 - **EN:** [Ved , unsp] to go. AV(P) 9.10,10
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **5)** *nur in der ṝorm gātá , die auch ṣu gā , singen, geṣogen ṭerden könnte.* [Ved , unsp] + accha : auf etwas zugehen. ṚV 3,31,6 . Ved , unsp
 
 - **RU:** *nur in der ṝorm gātá , die auch ṣu gā , singen, geṣogen ṭerden könnte.* + accha: направляться к чему-л. ṚV 3,31,6
 - **EN:** *nur in der ṝorm gātá , die auch ṣu gā , singen, geṣogen ṭerden könnte.* [Ved , unsp] + accha: to go toward something. ṚV 3,31,6 . Ved , unsp
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **6)** *+ áccha : hingehen ṣu (ākk).* [Ved , unsp] + áti : über etwas (Akk) hinweggehen, hindurchschreiten. Ved , unsp
 
 - **RU:** *+ áccha : hingehen ṣu (ākk).* + áti: переходить через что-л. (Akk), проходить сквозь.
 - **EN:** *+ áccha : hingehen ṣu (ākk).* [Ved , unsp] + áti: to pass over something (Acc.), to stride through. Ved , unsp
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **7)** *+ ádhi : e. śache oder pherson (ghen) gedenken, achten auṛ (ghen).* [Ved , unsp] + ánu : 1) jemandem (Akk) nachgehen, folgen; 2) nachgehen = aufsuchen (Akk); 3) befolgen, sich richten nach (Akk); 4) vorübergehen. Ved , unsp
 
 - **RU:** *+ ádhi : e. śache oder pherson (ghen) gedenken, achten auṛ (ghen).* + ánu: 1) следовать за кем-л. (Akk), идти вслед; 2) следовать = разыскивать (Akk); 3) следовать чему-л., руководствоваться (Akk); 4) проходить мимо.
 - **EN:** *+ ádhi : e. śache oder pherson (ghen) gedenken, achten auṛ (ghen).* [Ved , unsp] + ánu: 1) to go after someone (Acc.), to follow; 2) to go after = to seek out (Acc.); 3) to follow, to conform to (Acc.); 4) to pass by. Ved , unsp
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **8)** *+ ánu ā́ : nachṛolgen.* [Ved , unsp] + anupra (° geṣma ). AV(P) 16.92,6 . Ved , unsp
 
 - **RU:** *+ ánu ā́ : nachṛolgen.* + anupra (° geṣma). AV(P) 16.92,6
 - **EN:** *+ ánu ā́ : nachṛolgen.* [Ved , unsp] + anupra (°geṣma). AV(P) 16.92,6 . Ved , unsp
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **9)** *+ antar : ausschliessen, beseitigen. ṚV 3,31,21 .* [Ved , unsp] + antár : 1) zwischen etwas (Akk) hineingehen; 2) hin und hergehen zwischen (Akk), vermitteln. Ved , unsp
 
 - **RU:** *+ antar : ausschliessen, beseitigen. ṚV 3,31,21 .* + antár: 1) входить между чем-л. (Akk); 2) ходить туда-сюда между (Akk), посредничать.
 - **EN:** *+ antar : ausschliessen, beseitigen. ṚV 3,31,21 .* [Ved , unsp] + antár: 1) to go in between something (Acc.); 2) to go back and forth between (Acc.), to mediate. Ved , unsp
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **10)** *+ anvā : hinterdreinkommen, ṛolgen. ṚV 1,126,3 .* [Ved , unsp] + apa : schwinden. ChU VI 4, 1 . Ved , unsp
 
 - **RU:** *+ anvā : hinterdreinkommen, ṛolgen. ṚV 1,126,3 .* + apa: исчезать. ChU VI 4, 1
 - **EN:** *+ anvā : hinterdreinkommen, ṛolgen. ṚV 1,126,3 .* [Ved , unsp] + apa: to vanish, to disappear. ChU VI 4, 1 . Ved , unsp
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **11)** *+ ápa prá : hinṭeggehen.* [Ved , unsp] + apapra : fortgehen. ṚV 1,113,16 . Ved , unsp
 
 - **RU:** *+ ápa prá : hinṭeggehen.* + apapra: уходить. ṚV 1,113,16
 - **EN:** *+ ápa prá : hinṭeggehen.* [Ved , unsp] + apapra: to go away, to depart. ṚV 1,113,16 . Ved , unsp
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **12)** *+ ápi : sich hineindrängen in (ākk).* [Ved , unsp] + abhi : losgehen auf. ṚV 1,33,13 . Ved , unsp
 
 - **RU:** *+ ápi : sich hineindrängen in (ākk).* + abhi: нападать на. ṚV 1,33,13
 - **EN:** *+ ápi : sich hineindrängen in (ākk).* [Ved , unsp] + abhi: to advance against, to go at. ṚV 1,33,13 . Ved , unsp
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **13)** *+ abhí : 1) herbeikommen; 2) hinkommen ṣu (ākk); 3) betreten (ākk); 4) angreiṛen (ṛeindlich).* [Ved , unsp] + abhí ā́ : herbeikommen zu (Akk). Ved , unsp
 
 - **RU:** *+ abhí : 1) herbeikommen; 2) hinkommen ṣu (ākk); 3) betreten (ākk); 4) angreiṛen (ṛeindlich).* + abhí ā́: приходить к (Akk).
 - **EN:** *+ abhí : 1) herbeikommen; 2) hinkommen ṣu (ākk); 3) betreten (ākk); 4) angreiṛen (ṛeindlich).* [Ved , unsp] + abhí ā́: to come near to (Acc.), to approach. Ved , unsp
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **14)** *+ abhí úd : auṛgehen über (ākk), von der śonne.* [Ved , unsp] + áva : sich vereinen mit, gehen zu (Instr). Ved , unsp
 
 - **RU:** *+ abhí úd : auṛgehen über (ākk), von der śonne.* + áva: соединяться с, идти к (Instr).
 - **EN:** *+ abhí úd : auṛgehen über (ākk), von der śonne.* [Ved , unsp] + áva: to unite with, to go toward (Instr.). Ved , unsp
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **15)** *+ ā : her-, herankommen; gehen ṣu, in (ākk).* [Ved , unsp] – a) kommen, erscheinen; zukommen, zuteil werden; b) betreten; aufsuchen, beziehen; c) heimkehren, zurückkehren. ṚV 1,35,8 , ṚV 2,38,11 , ṚV 1,167,5 , ṚV 2,38,8 , ṚV 2,38,6 . Ved , unsp
 
 - **RU:** *+ ā : her-, herankommen; gehen ṣu, in (ākk).* – a) приходить, появляться; доставаться, приходиться на долю; b) вступать; навещать, занимать; c) возвращаться домой, возвращаться. ṚV 1,35,8 , ṚV 2,38,11 , ṚV 1,167,5 , ṚV 2,38,8 , ṚV 2,38,6
 - **EN:** *+ ā : her-, herankommen; gehen ṣu, in (ākk).* [Ved , unsp] — a) to come, to appear; to befall, to fall to one's share; b) to enter; to seek out, to take up; c) to return home, to come back. ṚV 1,35,8 , ṚV 2,38,11 , ṚV 1,167,5 , ṚV 2,38,8 , ṚV 2,38,6 . Ved , unsp
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **16)** *+ ā́ : 1) herbeikommen; 2) kommen ṣu, gehen ṣu (ākk).* [Ved , unsp] + ā́ áccha : hingehen zu (Akk). Ved , unsp
 
 - **RU:** *+ ā́ : 1) herbeikommen; 2) kommen ṣu, gehen ṣu (ākk).* + ā́ áccha: идти к (Akk).
 - **EN:** *+ ā́ : 1) herbeikommen; 2) kommen ṣu, gehen ṣu (ākk).* [Ved , unsp] + ā́ accha: to go toward (Acc.). Ved , unsp
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **17)** *+ ud : auṛgehen.* [Ved , unsp] – aufgehen. ṚV 1,50,13 . Ved , unsp
 
 - **RU:** *+ ud : auṛgehen.* – восходить. ṚV 1,50,13
 - **EN:** *+ ud : auṛgehen.* [Ved , unsp] — to rise (of the sun). ṚV 1,50,13 . Ved , unsp
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **18)** *+ úd : auṛgehen (von der śonne).* [Ved , unsp] + upa : treten zu, in (Akk). AV 5,19,9 . Ved , unsp
 
 - **RU:** *+ úd : auṛgehen (von der śonne).* + upa: вступать к, в (Akk). AV 5,19,9
 - **EN:** *+ úd : auṛgehen (von der śonne).* [Ved , unsp] + upa: to step toward, into (Acc.). AV 5,19,9 . Ved , unsp
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **19)** *+ úpa : 1) hinkommen ṣu (ākk); 2) jemand (ṛragend) angehen; 3) ṭandern auṛ (īnstr).* [Ved , unsp] + úpa ā́ : 1) kommen zu (Akk); 2) anrücken gegen (Akk). Ved , unsp
 
 - **RU:** *+ úpa : 1) hinkommen ṣu (ākk); 2) jemand (ṛragend) angehen; 3) ṭandern auṛ (īnstr).* + úpa ā́: 1) приходить к (Akk); 2) наступать на (Akk).
 - **EN:** *+ úpa : 1) hinkommen ṣu (ākk); 2) jemand (ṛragend) angehen; 3) ṭandern auṛ (īnstr).* [Ved , unsp] + úpa ā́: 1) to come to (Acc.); 2) to advance against (Acc.). Ved , unsp
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **20)** *+ úpa prá : 1) heranschreiten; 2) heranschreiten ṣu (ākk).* [Ved , unsp] + upapra : hingehen. ṚV 1,162,7 . Ved , unsp
 
 - **RU:** *+ úpa prá : 1) heranschreiten; 2) heranschreiten ṣu (ākk).* + upapra: идти туда. ṚV 1,162,7
 - **EN:** *+ úpa prá : 1) heranschreiten; 2) heranschreiten ṣu (ākk).* [Ved , unsp] + upapra: to go toward. ṚV 1,162,7 . Ved , unsp
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **21)** *– kommen, hingehen. ṚV 1,163,12 .* [Ved , unsp] + ní : gerathen in (Akk). Ved , unsp
 
 - **RU:** *– kommen, hingehen. ṚV 1,163,12 .* + ní: попадать в (Akk).
 - **EN:** *– kommen, hingehen. ṚV 1,163,12 .* [Ved , unsp] + ní: to get into, to enter (Acc.). Ved , unsp
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **22)** *+ nis : heraus-, ṣum Vorschein kommen. ṚV 7,3,9 .* [Ved , unsp] + nís : hervorgehen. Ved , unsp
 
 - **RU:** *+ nis : heraus-, ṣum Vorschein kommen. ṚV 7,3,9 .* + nís: выходить.
 - **EN:** *+ nis : heraus-, ṣum Vorschein kommen. ṚV 7,3,9 .* [Ved , unsp] + nís: to come forth, to go out. Ved , unsp
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **23)** *+ parā : ṛort-, ṭeitergehen. ṚV 3,53,2 .* [Ved , unsp] + párā : 1) weggehen; 2) fortgehen zu (Akk). Ved , unsp
 
 - **RU:** *+ parā : ṛort-, ṭeitergehen. ṚV 3,53,2 .* + párā: 1) уходить; 2) уходить к (Akk).
 - **EN:** *+ parā : ṛort-, ṭeitergehen. ṚV 3,53,2 .* [Ved , unsp] + párā: 1) to go away; 2) to depart toward (Acc.). Ved , unsp
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **24)** *+ pari : umṭandeln.* [Ved , unsp] – a) umgehen, übergehen, verschonen; b) sich tummeln in (Lok und Akk). ṚV 2,33,14 , ṚV 9,96,9 . Ved , unsp
 
 - **RU:** *+ pari : umṭandeln.* – a) обходить стороной, миновать, щадить; b) резвиться в (Lok и Akk). ṚV 2,33,14 , ṚV 9,96,9
 - **EN:** *+ pari : umṭandeln.* [Ved , unsp] — a) to pass around, to pass over, to spare; b) to roam, to disport oneself in (Loc. and Acc.). ṚV 2,33,14 , ṚV 9,96,9 . Ved , unsp
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **25)** *+ pári : 1) herumṭandeln; 2) etṭas (ākk) umṭandeln, umkreisen; 3) hindurchṭandern ṣu (Lok); 4) vorübergehen; 5) vermeiden (ākk).* [Ved , unsp] + pári ā́ : e. Werk (Akk) betreiben. Ved , unsp
 
 - **RU:** *+ pári : 1) herumṭandeln; 2) etṭas (ākk) umṭandeln, umkreisen; 3) hindurchṭandern ṣu (Lok); 4) vorübergehen; 5) vermeiden (ākk).* + pári ā́: заниматься каким-л. делом (Akk).
 - **EN:** *+ pári : 1) herumṭandeln; 2) etṭas (ākk) umṭandeln, umkreisen; 3) hindurchṭandern ṣu (Lok); 4) vorübergehen; 5) vermeiden (ākk).* [Ved , unsp] + pári ā́: to pursue a work (Acc.), to be engaged in. Ved , unsp
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 ## gā
 
@@ -3949,124 +3949,124 @@ Schol.
 
 - **RU:** *+ pra : vorschreiten. ṚV 1,85,6 .* [Ved , unsp] – продвигаться вперёд, достигать; отправляться; pra - gam . ṚV 8,48,2 , ṚV 7,104,17 . Ved , unsp
 - **EN:** *+ pra : vorschreiten. ṚV 1,85,6 .* [Ved , unsp] — to press forward, to arrive; to set out; pra-gam. ṚV 8,48,2 , ṚV 7,104,17 . Ved , unsp
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **27)** *+ prá : 1) vorschreiten; 2) schreiten ṣu (ākk); 3) vor sich gehen, vorschreiten (von ḥandlungen); 4) ṛortgehen von (ābl).* [Ved , unsp] + prá áccha : hingehen zu (Akk). Ved , unsp
 
 - **RU:** *+ prá : 1) vorschreiten; 2) schreiten ṣu (ākk); 3) vor sich gehen, vorschreiten (von ḥandlungen); 4) ṛortgehen von (ābl).* [Ved , unsp] + prá áccha : направляться к (Akk). Ved , unsp
 - **EN:** *+ prá : 1) vorschreiten; 2) schreiten ṣu (ākk); 3) vor sich gehen, vorschreiten (von ḥandlungen); 4) ṛortgehen von (ābl).* [Ved , unsp] + prá accha: to go toward (Acc.). Ved , unsp
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **28)** *+ prá pári : umherschreiten.* [Ved , unsp] + práti úd : aufgehen über (Akk), von der Sonne. Ved , unsp
 
 - **RU:** *+ prá pári : umherschreiten.* [Ved , unsp] + práti úd : восходить над (Akk), о солнце. Ved , unsp
 - **EN:** *+ prá pári : umherschreiten.* [Ved , unsp] + práti úd: to rise over (Acc.), of the sun. Ved , unsp
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **29)** *gā (=pṭ gā 3)* [Gen , unsp] ( gā́yati, °te I P, rarely Ā ) Pass. ( gīyáte ): a) to be sung or praised in song; b) to be called. ṚV , Mbh i, 4329 . MW : 363 (s.v. gai )
 
 - **RU:** *gā (=pṭ gā 3)* [Gen , unsp] ( gā́yati, °te I P, rarely Ā ) Pass. ( gīyáte ): a) воспеваться, прославляться в песне; b) называться, именоваться. ṚV , Mbh i, 4329 . MW : 363 (s.v. gai )
 - **EN:** *gā (=pṭ gā 3)* [Gen , unsp] (gā́yati, °te cl. I P., rarely Ā.) Pass. (gīyáte): a) to be sung or praised in song; b) to be called. ṚV , Mbh i, 4329 . MW : 363 (s.v. gai)
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **30)** [Ved , unsp] singen. e. Lied (Akk) singen. jemandem (Dat) singen (zu seinem Lobe). jemandem e. Loblied (Akk) singen. jemanden (Akk) besingen. ertönen, schallen
 
 - **RU:** [Ved , unsp] петь. петь песнь (Akk). петь кому-л. (Dat; во хвалу ему). петь кому-л. хвалебную песнь (Akk). воспевать кого-л. (Akk). звучать, раздаваться
 - **EN:** [Ved , unsp] to sing. to sing a song (Acc.). to sing for someone (Dat.) (in his praise). to sing someone a hymn of praise (Acc.). to sing of someone (Acc.). to resound, to ring out
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **31)** [Ved , unsp] ( I meist P ) singen; lobsingen (+ Dat); besingen (Akk). ṚV 1,167,6 , ṚV 1,4,10 , ṚV 8,2,38 . Geldner 1907 : 56 (s.v. gai )
 
 - **RU:** [Ved , unsp] ( I meist P ) петь; петь хвалу (+ Dat); воспевать (Akk). ṚV 1,167,6 , ṚV 1,4,10 , ṚV 8,2,38 . Geldner 1907 : 56 (s.v. gai )
 - **EN:** [Ved , unsp] (cl. I, mostly P.) to sing; to sing in praise of (+ Dat.); to celebrate in song (Acc.). ṚV 1,167,6 , ṚV 1,4,10 , ṚV 8,2,38 . Geldner 1907 : 56 (s.v. gai)
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **32)** [Jin , unsp , 2. H. 12. Jh. , Gujarat] sprechen. HemPar III, 191
 
 - **RU:** [Jin , unsp , 2. H. 12. Jh. , Gujarat] говорить. HemPar III, 191
 - **EN:** [Jin , unsp , 2nd half 12th c., Gujarat] to speak. HemPar III, 191
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **33)** [Reg , unsp] ( gāyati ) to praise. SHK, 24,8 . Ensink 1964 : 60 (s.v. √ gai )
 
 - **RU:** [Reg , unsp] ( gāyati ) восхвалять, прославлять. SHK, 24,8 . Ensink 1964 : 60 (s.v. √ gai )
 - **EN:** [Reg , unsp] (gāyati) to praise. SHK, 24,8 . Ensink 1964 : 60 (s.v. √ gai)
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **34)** *+ áccha : jemanden (ākk) herbeisingen, d. h. ihn durch śingen herbeischaṛṛen.* [Ved , unsp] + anu : (ppp.) sung in conformity with (a preceding passage). Mvu i.42.5 . Buddh , unsp ; BHSD : 26 (s.v. anugīta )
 
 - **RU:** *+ áccha : jemanden (ākk) herbeisingen, d. h. ihn durch śingen herbeischaṛṛen.* [Ved , unsp] + anu : (ppp.) воспетый в согласии с (предшествующим отрывком). Mvu i.42.5 . Buddh , unsp ; BHSD : 26 (s.v. anugīta )
 - **EN:** *+ áccha : jemanden (ākk) herbeisingen, d. h. ihn durch śingen herbeischaṛṛen.* [Ved , unsp] + anu: (ppp.) sung in conformity with (a preceding passage). Mvu i.42.5 . Buddh , unsp ; BHSD : 26 (s.v. anugīta)
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **35)** *+ abhi : besingen, ansingen, anlocken, incantare . ṚV 9,96,23 .* [Ved , unsp (s.v. gai )] + abhí : jemanden (Akk) besingen, ihm zusingen. Ved , unsp
 
 - **RU:** *+ abhi : besingen, ansingen, anlocken, incantare . ṚV 9,96,23 .* [Ved , unsp (s.v. gai )] + abhí : воспевать кого-л. (Akk), петь ему. Ved , unsp
 - **EN:** *+ abhi : besingen, ansingen, anlocken, incantare . ṚV 9,96,23 .* [Ved , unsp (s.v. gai)] + abhí: to sing of someone (Acc.), to sing to him. Ved , unsp
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **36)** *+ abhí prá : anheben jemand (ākk) ṣu besingen.* [Ved , unsp] + abhipra : besingen. ṚV 1,5,1 . Ved , unsp ; Geldner 1907 : 56 (s.v. gai )
 
 - **RU:** *+ abhí prá : anheben jemand (ākk) ṣu besingen.* [Ved , unsp] + abhipra : воспевать. ṚV 1,5,1 . Ved , unsp ; Geldner 1907 : 56 (s.v. gai )
 - **EN:** *+ abhí prá : anheben jemand (ākk) ṣu besingen.* [Ved , unsp] + abhipra: to celebrate in song. ṚV 1,5,1 . Ved , unsp ; Geldner 1907 : 56 (s.v. gai)
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **37)** *+ ava (° gīta , ppp.): (lit. sung doṭn), reduced, diminished. jhkhṃ(Ā) 11.21 .* [Buddh , unsp (s.v. avagīta )] + ava ( avagīta ): a) sung depreciatingly; b) sung of frequently, well known, trite; c) censured, blamable, despicable, vile. Gen , unsp ; MW : 97 (s.v. avagīta )
 
 - **RU:** *+ ava (° gīta , ppp.): (lit. sung doṭn), reduced, diminished. jhkhṃ(Ā) 11.21 .* [Buddh , unsp (s.v. avagīta )] + ava ( avagīta ): a) воспетый пренебрежительно; b) часто воспеваемый, общеизвестный, избитый; c) порицаемый, достойный осуждения, презренный, низкий. Gen , unsp ; MW : 97 (s.v. avagīta )
 - **EN:** *+ ava (° gīta , ppp.): (lit. sung doṭn), reduced, diminished. jhkhṃ(Ā) 11.21 .* [Buddh , unsp (s.v. avagīta)] + ava (avagīta): a) sung depreciatingly; b) sung of frequently, well known, trite; c) censured, blamable, despicable, vile. Gen , unsp ; MW : 97 (s.v. avagīta)
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **38)** *+ ā ( āgīta ): sung unto. jhū .* [Gen , unsp (s.v. āgīta )] + ā́ : jemanden (Akk) besingen, ihm zusingen. Ved , unsp
 
 - **RU:** *+ ā ( āgīta ): sung unto. jhū .* [Gen , unsp (s.v. āgīta )] + ā́ : воспевать кого-л. (Akk), петь ему. Ved , unsp
 - **EN:** *+ ā ( āgīta ): sung unto. jhū .* [Gen , unsp (s.v. āgīta)] + ā́: to sing of someone (Acc.), to sing to him. Ved , unsp
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **39)** *+ ud (+ ghen). jhbh aid, p. 67 n. 2 .* [Ved , unsp (s.v. udgā -)] + úd : den Gesang anstimmen (s. udgātṛ́ ). Ved , unsp
 
 - **RU:** *+ ud (+ ghen). jhbh aid, p. 67 n. 2 .* [Ved , unsp (s.v. udgā -)] + úd : начинать пение, запевать (см. udgātṛ́ ). Ved , unsp
 - **EN:** *+ ud (+ ghen). jhbh aid, p. 67 n. 2 .* [Ved , unsp (s.v. udgā-)] + úd: to strike up the song, to begin singing (see udgātṛ́). Ved , unsp
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **40)** *+ úpa : jemandem (ākk, dhat, Lok) ṣusingen, ihn besingen.* [Ved , unsp] + pra : anstimmen, den Gesang beginnen, einstimmen. ṚV 8,1,7 . Ved , unsp ; Geldner 1907 : 56 (s.v. gai )
 
 - **RU:** *+ úpa : jemandem (ākk, dhat, Lok) ṣusingen, ihn besingen.* [Ved , unsp] + pra : запевать, начинать песнь, подхватывать пение. ṚV 8,1,7 . Ved , unsp ; Geldner 1907 : 56 (s.v. gai )
 - **EN:** *+ úpa : jemandem (ākk, dhat, Lok) ṣusingen, ihn besingen.* [Ved , unsp] + pra: to strike up, to begin the song, to join in singing. ṚV 8,1,7 . Ved , unsp ; Geldner 1907 : 56 (s.v. gai)
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **41)** *+ prá : 1) anheben ṣu singen, oder 2) jemandem e. Lied ṣu singen oder 3) ihn ṣu besingen; 4) ertönen.* [Ved , unsp] + vi : censurer. Renou 1997, S. 739 . Gen , unsp ; Renou 1997 : 1018 (s.v. vigāyati )
 
 - **RU:** *+ prá : 1) anheben ṣu singen, oder 2) jemandem e. Lied ṣu singen oder 3) ihn ṣu besingen; 4) ertönen.* [Ved , unsp] + vi : порицать, хулить. Renou 1997, S. 739 . Gen , unsp ; Renou 1997 : 1018 (s.v. vigāyati )
 - **EN:** *+ prá : 1) anheben ṣu singen, oder 2) jemandem e. Lied ṣu singen oder 3) ihn ṣu besingen; 4) ertönen.* [Ved , unsp] + vi: to censure. Renou 1997, S. 739 . Gen , unsp ; Renou 1997 : 1018 (s.v. vigāyati)
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **42)** *– „sing“.* [Ved , unsp (s.v. vigā -)] – ( vigīta ): „ pṛthag gītaḥ "; partly sung. ṢB II.3.11 , ĀpŚS XIII.15.9 . Ved , unsp ; Renou 1935 : 26 (s.v. vigīta )
 
 - **RU:** *– „sing“.* [Ved , unsp (s.v. vigā -)] – ( vigīta ): „ pṛthag gītaḥ "; частично воспетый. ṢB II.3.11 , ĀpŚS XIII.15.9 . Ved , unsp ; Renou 1935 : 26 (s.v. vigīta )
 - **EN:** *– „sing“.* [Ved , unsp (s.v. vigā-)] — (vigīta): "pṛthag gītaḥ"; partly sung. ṢB II.3.11 , ĀpŚS XIII.15.9 . Ved , unsp ; Renou 1935 : 26 (s.v. vigīta)
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **43)** *+ sam (° gāyati ): lit. ‘sings in unison’ = is concordant, avoids ḍuarreling [opp. oṛ vivadati ]. khphar 142.4 .* [Buddh , unsp (s.v. saṃgāyati )] – ( saṃgīta ): a) sung in chorus (?); b) corresponding, harmonizing. STB, S. 93, Z. 20 , Is Indon 1, 11 . Reg , unsp ; Ensink 1964 : 193 (s.v. saṃgīta )
 
 - **RU:** *+ sam (° gāyati ): lit. ‘sings in unison’ = is concordant, avoids ḍuarreling [opp. oṛ vivadati ]. khphar 142.4 .* [Buddh , unsp (s.v. saṃgāyati )] – ( saṃgīta ): a) воспетый хором (?); b) соответствующий, согласующийся. STB, S. 93, Z. 20 , Is Indon 1, 11 . Reg , unsp ; Ensink 1964 : 193 (s.v. saṃgīta )
 - **EN:** *+ sam (° gāyati ): lit. ‘sings in unison’ = is concordant, avoids ḍuarreling [opp. oṛ vivadati ]. khphar 142.4 .* [Buddh , unsp (s.v. saṃgāyati)] — (saṃgīta): a) sung in chorus (?); b) corresponding, harmonizing. STB, S. 93, Z. 20 , Is Indon 1, 11 . Reg , unsp ; Ensink 1964 : 193 (s.v. saṃgīta)
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **44)** *+ sam ( saṃgīta ): sung together, sung in chorus or harmony.* [Gen , unsp (s.v. saṃgīta )] + samanu : to repeat in verse or metre. Caraka(MW) . Gen , unsp ; MW : 1154 (s.v. samanugai )
 
 - **RU:** *+ sam ( saṃgīta ): sung together, sung in chorus or harmony.* [Gen , unsp (s.v. saṃgīta )] + samanu : повторять в стихах или в метре. Caraka(MW) . Gen , unsp ; MW : 1154 (s.v. samanugai )
 - **EN:** *+ sam ( saṃgīta ): sung together, sung in chorus or harmony.* [Gen , unsp (s.v. saṃgīta)] + samanu: to repeat in verse or metre. Caraka(MW) . Gen , unsp ; MW : 1154 (s.v. samanugai)
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **45)** *gā* [Śā , Ling] substitute morpheme for i ṇ in aor. forms. Pāṇ 2.4.45
 
 - **RU:** *gā* [Śā , Ling] заместительная морфема для i ṇ в формах аориста. Pāṇ 2.4.45
 - **EN:** *gā* [Śā , Ling] substitute morpheme for iṇ in aor. forms. Pāṇ 2.4.45
-  <sub>DCS 1930 · lexicographic</sub>
+  <sub>lexicographic</sub>
 
 **46)** [Reg , unsp] Subst f earth. Is Indon 3, 26
 
 - **RU:** [Reg , unsp] Subst f земля. Is Indon 3, 26
 - **EN:** [Reg , unsp] Subst. f. earth. Is Indon 3, 26
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>

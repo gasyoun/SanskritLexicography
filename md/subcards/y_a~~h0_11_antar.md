@@ -7,4 +7,4 @@
 
 - **RU:** — *antar* s. *antaryāṇīya* .
 - **EN:** — *antar* s. *antaryāṇīya* .
-  <sub>DCS 5678 · attested</sub>
+  <sub>attested</sub>

@@ -17,7 +17,7 @@
 [CHĀND. UP. 6,11,1.] *ghanā anyo'nyamabhyāhanituṃ pravṛttā vaneṣu nāgā iva* сталкиваться друг с другом
 [HARIV. 8785.] — partic. *abhyāhata*
 - **EN:** — *abhyā* "to hit": *śatrūn* [ṚV. 9,85,2.] *suśarmāṇaṃ śarairabhyāhanat* [MBH. 4,1102.] *abhyājaghne* [3,11956.] *vṛkṣasya yo mūle 'bhyāhanyāt* "to deal a blow with the axe" [CHĀND. UP. 6,11,1.] *ghanā anyo'nyamabhyāhanituṃ pravṛttā vaneṣu nāgā iva* "to strike against one another" [HARIV. 8785.] — partic. *abhyāhata*
-  <sub>DCS 48 · attested</sub>
+  <sub>attested</sub>
 
 **1pp)** 1) getroffen: *śaraiḥ*
 [MBH. 1,8223.] [3,745.] [5,7315.] *śastraiḥ*
@@ -41,7 +41,7 @@
 [RAGH. 14,33.] *timirābhyāhatā niśā* так v. a. кромешная тьма
 [R. 2,114,2] ([125,2] [GORR.]).
 - **EN:** 1) "struck": *śaraiḥ* [MBH. 1,8223.] [3,745.] [5,7315.] *śastraiḥ* [KATHĀS. 69,126.] *mālayā* "beaten" [66,24.] *salilena salilam* [R. 1,44,26.] "damaged": eye [SUŚR. 2,357,17.] "struck", hence v. a. "unpleasantly affected, visited (with misfortune)": *mṛtyunā* [MBH. 12,6530.] [Spr. (II) 4953.] *hṛdayaṃ kīrtiviparyayeṇa* [RAGH. 14,33.] *timirābhyāhatā niśā*, hence v. a. "pitch-dark" [R. 2,114,2] ([125,2] [GORR.]).
-  <sub>DCS 48 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) gehemmt, gehindert: *˚karmavṛtti*
 [BHAṬṬ. 1,17.] *sadānabhyāhataiśvaryaḥ*
@@ -57,10 +57,10 @@
 [MĀRK. P. 122,5.] *anabhyāhatamāśrāvayanniva* беспрепятственный
 [ĀŚV. ŚR. 4,15,11.]
 - **EN:** — 2) "hampered, hindered": *˚karmavṛtti* [BHAṬṬ. 1,17.] *sadānabhyāhataiśvaryaḥ* (thus to be read st. *sadā ābhyā˚*) [MĀRK. P. 122,5.] *anabhyāhatamāśrāvayanniva* "unhindered" [ĀŚV. ŚR. 4,15,11.]
-  <sub>DCS 48 · attested</sub>
+  <sub>attested</sub>
 
 **intens.)** — Vgl. *abhyāghāta* fg.
 
 - **RU:** — Vgl. *abhyāghāta* fg.
 - **EN:** — Vgl. *abhyāghāta* fg.
-  <sub>DCS 48 · attested</sub>
+  <sub>attested</sub>

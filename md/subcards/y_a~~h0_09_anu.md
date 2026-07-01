@@ -130,7 +130,7 @@
 [MBH. 14,223.] — In the passage *oṣadhīnāṃ śirāṃsīva dviṣacchīrṣāṇi so 'nvayāt*
 [MBH. 4,1727] perhaps *'nvacchāt* 'struck off' is to be read.
 [NĪLAK.] takes *anvayāt* as abl., in that he explains *anukramāt*.
-  <sub>DCS 308 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — Vgl. *anuyā, anuyātar* fgg. — caus. Jmd theilhaft werden lassen, mit dopp. acc.: *yātanāmanuyāpitaḥ*
 [BHĀG. P. 8,22,29.]
@@ -139,4 +139,4 @@
 [BHĀG. P. 8,22,29.]
 - **EN:** — Vgl. *anuyā, anuyātar* fgg. — caus. to let someone partake of, with dopp. acc.: *yātanāmanuyāpitaḥ*
 [BHĀG. P. 8,22,29.]
-  <sub>DCS 308 · attested</sub>
+  <sub>attested</sub>

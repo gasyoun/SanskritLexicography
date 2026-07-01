@@ -10,4 +10,4 @@
 [HARIV. 6300.]
 - **EN:** — *ā* to converse: *evamābruvamāṇau tau saṃprāptau keśavāntikam*
 [HARIV. 6300.]
-  <sub>DCS 1 · attested</sub>
+  <sub>attested</sub>

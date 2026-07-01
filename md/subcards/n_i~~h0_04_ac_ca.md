@@ -13,4 +13,4 @@
 - **EN:** — *accha* to lead towards, to conduct to: *acchā naḥ sumnaṃ neṣi*
 [ṚV. 8,16,12.] *sa no neṣadvasyo accha*
 [1,141,12.] [2,39,5.] [4,1,10.] [9,87,1.]
-  <sub>DCS 2376 · attested</sub>
+  <sub>attested</sub>

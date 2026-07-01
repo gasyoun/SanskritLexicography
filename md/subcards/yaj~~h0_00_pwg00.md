@@ -64,7 +64,7 @@ Schol. to [P. 3,4,104.] [1,2,11.] [8,3,78.] pass. *ijyate, ijyant, yajyamāna* a
 [PAT.] to [P. 6,1,108.] *iṣṭa; yaṣṭum, yaṣṭave, yajadhyai, ījitum*
 [MBH. 2,1230.] *iṣṭvā, iṣṭvīnam*
 [P. 7,1,48.]
-  <sub>DCS 6777 · attested</sub>
+  <sub>attested</sub>
 
 **1a)** 1) einen Gott verehren, huldigen, auch mit Gebet und Darbringung, daher weihen, opfern. In der alten Sprache in der Regel act., wenn Agni oder ein anderer Mittler handelt, und med., wenn der Mensch für sich verehrt und darbringt; später act. vom Opferpriester, med. vom Veranstalter des Opfers (*yajanti yājakāḥ, yajamāno yajeta*
 Schol. zu [P. 1,3,72.] [VOP. 23,58]). Ausnahmen sind jedoch häufig.
@@ -294,7 +294,7 @@ Schol. zu [P. 1,3,72.] [VOP. 23,58]). Ausnahmen sind jedoch häufig.
 
 - **RU:** 1) почитать бога, воздавать ему почесть, также с молитвой и подношением, отсюда посвящать, жертвовать. В древнем языке обычно act., когда действует Agni или иной посредник, и med., когда человек чтит и приносит жертву сам для себя; позднее act. об жреце-совершителе, med. об устроителе жертвоприношения (*yajanti yājakāḥ, yajamāno yajeta*
 Schol. zu [P. 1,3,72.] [VOP. 23,58]). Исключения, однако, часты.
-  <sub>DCS 6777 · attested</sub>
+  <sub>attested</sub>
 
 **1)a) — с dat./acc. бога, цели и instr. орудия)** a) mit acc. des Gottes, dat. der Person oder des Zweckes, für welchen, und instr. der Sache oder des Werkzeuges, womit die Handlung vollzogen wird. *agne vīhi haviṣā yakṣi devān*
 [ṚV. 7,17,3.] *ṛtaṃ hotā na iṣito yajāti*
@@ -515,4 +515,4 @@ Schol. zu [P. 1,4,32], Vārtt. *surāghaṭasahasreṇa māṃsabhūtodanena ca 
 [R. 1,39,25.] [61,5.] *iṣṭvā*
 [M. 4,236.]
 [R. 2,72,25.]
-  <sub>DCS 6777 · attested</sub>
+  <sub>attested</sub>

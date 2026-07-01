@@ -34,4 +34,4 @@
 [MBH. 6,2212.] Formally belonging here is the partic. *prajigat*, which
 [SĀY.] refers to [2.] *gā*: *kadā cana prajigato adevayoḥ*
 [ṚV. 1,150,2.]
-  <sub>DCS 83 · attested</sub>
+  <sub>attested</sub>

@@ -13,4 +13,4 @@
 - **EN:** — *pratyapa* to withdraw oneself, to flee homeward
 [MBH. 8,4840.] *rathāntaram* to leave one's chariot and mount another
 [7,8670.] [8,1003.]
-  <sub>DCS 4 · attested</sub>
+  <sub>attested</sub>

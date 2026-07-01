@@ -15,9 +15,9 @@ Z. 3 read: to split, to shatter st. to cause to fly off u. s. w.
 
 - **RU:** — *vi*
  2) читай: раскалываться, разрываться. — caus.
-  <sub>DCS 25 · attested</sub>
+  <sub>attested</sub>
 
 **3))** Z. 3 lies spalten, zersprengen st. abfliegen machen u. s. w.
 
 - **RU:** Z. 3 читай: раскалывать, разрывать st. заставить отлететь u. s. w.
-  <sub>DCS 25 · attested</sub>
+  <sub>attested</sub>

@@ -10,4 +10,4 @@
 [KAUŚ. 7. 18. fg.]
 - **EN:** — *udā* to stride forward: *anavekṣamāṇā grāmamudāvrajanti*
 [KAUŚ. 7. 18. fg.]
-  <sub>DCS 1202 · attested</sub>
+  <sub>attested</sub>

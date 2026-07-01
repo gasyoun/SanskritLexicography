@@ -104,7 +104,7 @@
 [TS. 3,2,5,3.]
 [KĀTY. ŚR. 9,12,4.] *hinv, hinvati*
 [DHĀTUP. 15,82] (*prīṇanārtha*); vgl. *in, inv* .
-  <sub>DCS 23914 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) schleudern: *vajraṃ hinvanti sāyakam*
 [ṚV. 1,84,11.] *kasmānna hinoṣi vajram*
@@ -125,7 +125,7 @@
 [8,10,55.] pass.: *gadā śakrajitā jidhye*
 [BHAṬṬ. 14,36.] med.: *hinvāno vācam* giving forth the voice
 [ṚV. 9,84,4.]
-  <sub>DCS 23914 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) fördern, unterstützen, verhelfen zu (dat.)
 [ṚV. 1,18,4.] *dhiye*
@@ -149,7 +149,7 @@
 [8,60,5.] *kratave*
 [10,27,16.] [9,36,3.] *na vā u somo vṛjinaṃ hinoti*
 [7,104,13.] [8,4,16.] [47,6.] [AV. 4,8,7.]
-  <sub>DCS 23914 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) her —, hinbefördern, herbeischaffen: *somam*
 [ṚV. 3,46,5.] *dhāsimattave*
@@ -164,7 +164,7 @@
 [ṚV. 3,46,5.] *dhāsimattave*
 [8,43,29.] *devebhyaḥ*
 [ŚAT. BR. 3,5,1,35.]
-  <sub>DCS 23914 · attested</sub>
+  <sub>attested</sub>
 
 **5)** — 5) = 2. *hā* verlassen, aufgeben: *padavīṃ na hinvanti*
 [BHĀG. P. 5,1,5.] *yāvadidaṃ (kalevaraṃ) hinomyaham*
@@ -182,7 +182,7 @@
 [1,9,24.] *karma hinvan*
 [7,10,11.] to get rid of, to free oneself from
 [10,77,32.]
-  <sub>DCS 23914 · attested</sub>
+  <sub>attested</sub>
 
 **6)** — 6) als ungewöhnliche Form könnte hierher gehören *hayantā* du. concitantes sc. equos
 [ṚV. 1,116,18] und *apāṃ napātamaśvinā hayantam (hayatam*, wie unsre Hdschr. liest, wäre treibet an)
@@ -197,7 +197,7 @@
 [ṚV. 1,116,18] and *apāṃ napātamaśvinā hayantam (hayatam*, as our Hdschr. reads, would mean drives on)
 [TS. 1,6,12,4.] the text is however uncertain, as
 [AV. 19,42,4] shows. = *airśvasaṃgamayitāram* Comm.
-  <sub>DCS 23914 · attested</sub>
+  <sub>attested</sub>
 
 **1)** 1. *hi*¦, *hinoti*
 [DHĀTUP. 27,11] (*gatau vṛddhau*).* (pra) hiṇmasi*
@@ -210,9 +210,9 @@
 [AV.] *ahetana, ahema, ahyam, ahyan, (pra) ahait, (pra) ahaiṣīt, (pra) jighāya*
 [P. 7,3,56.]
 [VOP. 12,4.] *jidhyus, (pra) heṣyāmi* . med. *hinve, hinvate, hinvire, (pra) hiṣe, aheṣata*
-  <sub>DCS 23914 · attested</sub>
+  <sub>attested</sub>
 
 **3)** 3. pl., *hinvāna*; partic. *hita* s. bes.
 
 - **RU:** 3. pl., *hinvāna*; partic. *hita* s. bes.
-  <sub>DCS 23914 · attested</sub>
+  <sub>attested</sub>

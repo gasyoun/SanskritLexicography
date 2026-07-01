@@ -28,7 +28,7 @@
 [NIR. 1,15.]
 [KAUŚ. 16.]
 [KĀTY. ŚR. 21,3,34.] Vgl. *saṃpraiṣa*.
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — caus. senden, schicken, fortschicken, entlassen: *tataḥ saṃpreṣayāmāsa ratnāni vividhāni ca*
 [MBH. 2,1179.] *na khalveṣā matirmahyaṃ yattvāṃ saṃpreṣayāmyaham*
@@ -58,4 +58,4 @@
 [MBH. 14,2200.] *saṃpreṣita*
 [1,3200.] [6012.] [3,14716.] [R. 5,33,25.] [HIT. 93,17.] to send Jmd (gen.) a message
 [MBH. 5,102.]
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>

@@ -19,16 +19,16 @@
 — *nis* vgl. *nirnāśana* fg.
 — *pravi*, ˚*naṣṭaharṣa* disappeared
 [R. 2,47,19] according to the reading of [ed. Bomb.]
-  <sub>DCS 1422 · lexicographic</sub>
+  <sub>lexicographic</sub>
 
 **2 (upasarga-1))** — *nis* vgl. *nirnāśana* fg.
 
 - **RU:** — *nis* vgl. *nirnāśana* fg.
-  <sub>DCS 1422 · attested</sub>
+  <sub>attested</sub>
 
 **3 (upasarga-2))** — *pravi*, ˚*naṣṭaharṣa* verschwunden
 [R. 2,47,19] nach der Lesart der [ed. Bomb.]
 
 - **RU:** — *pravi*, ˚*naṣṭaharṣa* исчезнувший
 [R. 2,47,19] по чтению [ed. Bomb.]
-  <sub>DCS 1422 · attested</sub>
+  <sub>attested</sub>

@@ -15,9 +15,9 @@
 
 - **RU:** — *pra* сохранять, защищать от (abl.), спасать от: *karkaṭena dvitīyena sarpātpānthaḥ prarakṣitaḥ*
 [Spr. 147.] [BÜHLER'S Ausg. des PAÑCAT.] liest *jīvitaṃ parirakṣitam* st. *sarpātpānthaḥ pra˚* .
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **pra (2))** — Vgl. *prarakṣa* fg.
 
 - **RU:** — Vgl. *prarakṣa* fg.
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>

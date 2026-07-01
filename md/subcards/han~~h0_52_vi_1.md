@@ -10,7 +10,7 @@
 [MBH. 13,6720] по чтению [ed. Bomb.]
 - **EN:** 2) to torment, plague; med.
 [MBH. 13,6720] according to the reading of the [ed. Bomb.]
-  <sub>DCS 177 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) hemmen, unterbrechen: *śrautāgnihotrahomān*
 [KULL.] zu [M. 5,84.] — desid. stören —, hemmen wollen: *karma vijighāṃsatā*
@@ -25,10 +25,10 @@
 [KULL.] of [M. 5,84.] — desid. to want to disturb —, to hinder: *karma vijighāṃsatā*
 [BHĀG. P. 4,19,31.] — intens. (?) to inflict a hurt upon someone: *mā sattvāni vijījahi*
 [MBH. 7,2383.]
-  <sub>DCS 177 · attested</sub>
+  <sub>attested</sub>
 
 **closing)** — Vgl. *vighāta* fgg., *vighna, vijighāṃsu, vihati* fgg., *vaihatya* .
 
 - **RU:** — Vgl. *vighāta* fgg., *vighna, vijighāṃsu, vihati* fgg., *vaihatya* .
 - **EN:** Vgl. *vighāta* fgg., *vighna, vijighāṃsu, vihati* fgg., *vaihatya*.
-  <sub>DCS 177 · attested</sub>
+  <sub>attested</sub>

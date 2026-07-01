@@ -17,7 +17,7 @@
 **1a)** — *saṃpra* singen: *yā gāthāḥ saṃpragāyanti*
 
 - **RU:** — *saṃpra* петь: *yā gāthāḥ saṃpragāyanti*
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>
 
 **1b)** [MBH. 8,1836.] singend aussprechen:
 
@@ -28,4 +28,4 @@
 
 *ikārāntaṃ caivopāyaṃ saṃpragāyanti kutsāḥ*
 [LĀṬY. 7,8,19.]
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>

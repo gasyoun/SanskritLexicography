@@ -10,4 +10,4 @@
 [KĀṬH. 36,7.]
 - **EN:** — *anusam* to bring together u. s. w.
 [KĀṬH. 36,7.]
-  <sub>DCS 2 · attested</sub>
+  <sub>attested</sub>

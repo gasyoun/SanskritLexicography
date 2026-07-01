@@ -19,7 +19,7 @@
 [KĀTY. ŚR. 5,5,13.] *(tam) pratinetumayodhyām*
 [R. 2,90,17] ([99,25] [GORR.]). [6,10,34.] *(nau) gṛhāya pratineṣyati*
 [2,98,22.]
-  <sub>DCS 17 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) zuführen: *tebhya enānprati nayāmi baddhvā*
 [AV. 8,8,10.] In der Stelle *bhadra na sarvametadvittaṃ gṛhaṃ pratinetuṃ yujyate*
@@ -33,7 +33,7 @@
 - **EN:** 2) to lead to, bring to: *tebhya enānprati nayāmi baddhvā*
 [AV. 8,8,10.] In the passage *bhadra na sarvametadvittaṃ gṛhaṃ pratinetuṃ yujyate*
 [PAÑCAT. 96,4] it is, as [BENFEY] has already done, *prati* to be separated from *netuṃ* (to carry into the house).
-  <sub>DCS 17 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) beimengen: *sthālīpāke ghṛtapiṇḍānpratinīyāśnāti*
 [KAUŚ. 52. 20. 35. 87.]
@@ -42,4 +42,4 @@
 [KAUŚ. 52. 20. 35. 87.]
 - **EN:** 3) to admix, add in: *sthālīpāke ghṛtapiṇḍānpratinīyāśnāti*
 [KAUŚ. 52. 20. 35. 87.]
-  <sub>DCS 17 · attested</sub>
+  <sub>attested</sub>

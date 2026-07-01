@@ -75,7 +75,7 @@
 
 - **RU:** — Vgl. *upaśamana* fg.
 - **EN:** — Vgl. *upaśamana* fg.
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 **intrans.)** — *upa* ruhig —, still werden; aufhören, sich legen, erlöschen: *khalaḥ kenopaśāmyati*
 [Spr. 3197], v. l.
@@ -142,4 +142,4 @@
 [MBH. 1,6577.] *agastyenāpi vātāpiḥ kiṃmarthamupaśāmitaḥ* так v. a. приведённый к вечному покою
 [3,8541.] [8645.] *mukhavātopaśāmita* охлаждённый путём обдувания (кушанье)
 [MĀRK. P. 50,45.]
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>

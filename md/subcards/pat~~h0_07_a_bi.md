@@ -90,7 +90,7 @@
 [PRAB. 102,4.] *so 'bhipatya mahābāhurdīrghamadhvānamalpavat*
 [HARIV. 6987.]
 [MBH. 12,11088.]
-  <sub>DCS 3124 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) überfliegen, im Fliegen überholen: *ekenaiva śatasyaiṣa pātenābhipatiṣyati . haṃsasya patitaṃ kākaḥ*
 [MBH. 8,1910.] durchlaufen: *ekenābhipatatyahnā yojanāni caturdaśa*
@@ -117,4 +117,4 @@ hinabwerfen: *sārathiṃ cābhyapātayat*
 [SĀY.] to [ṚV. 1,52,5] and in the Einl. to [1,105.]
 to throw down: *sārathiṃ cābhyapātayat*
 [MBH. 6,1684.] [7,8768.] [1153.]
-  <sub>DCS 3124 · attested</sub>
+  <sub>attested</sub>

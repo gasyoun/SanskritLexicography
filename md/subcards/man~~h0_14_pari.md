@@ -10,10 +10,10 @@
 [ṚV. 7,59,3.]
 - **EN:** — *pari* to overlook, to neglect: *nahi vaścaramaṃ cana vasiṣṭhaḥ parimaṃsate*
 [ṚV. 7,59,3.]
-  <sub>DCS 4704 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — Vgl. *parimat* .
 
 - **RU:** — Vgl. *parimat* .
 - **EN:** — Vgl. *parimat* .
-  <sub>DCS 4704 · attested</sub>
+  <sub>attested</sub>

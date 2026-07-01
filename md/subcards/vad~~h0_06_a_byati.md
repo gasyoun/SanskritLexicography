@@ -13,4 +13,4 @@
 - **EN:** — *abhyati* act. = *ati*
  1)
 [PAÑCAV. BR. 8,3,6.]
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>

@@ -16,4 +16,4 @@
 [KATHĀS. 12,102.] [17,159.] *virāṭam* to go to
 [MBH. 4,280.] *vasante samupāyāte* come, having come
 [Spr. 623.]
-  <sub>DCS 5 · attested</sub>
+  <sub>attested</sub>

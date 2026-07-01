@@ -20,7 +20,7 @@
 
 * kācidudañcitapañcamarāgam*
 [GĪT. 1,39.]
-  <sub>DCS 86 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) Jmd mit Gesang begleiten, Jmd (acc.) Etwas vorsingen: *(ugrasenaḥ) anugīyamāno gandharvaiḥ*
 [MBH. 1,7913.]
@@ -29,7 +29,7 @@
 [MBH. 1,7913.]
 - **EN:** — 2) to accompany someone with song, to sing something to someone (acc.): *(ugrasenaḥ) anugīyamāno gandharvaiḥ*
 [MBH. 1,7913.]
-  <sub>DCS 86 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) singen, besingen: *krīḍantamanugāyantam*
 [BHĀG. P. 6,1,60.] [4,39.] *anugītasatkatho vedeṣu guhyeṣu ca guhyavādibhiḥ*
@@ -47,9 +47,9 @@
 [1,10,24.] [5,19,2.] *śrūyatāṃ pṛthivīpāla yathaiṣo 'rtho 'nugīyate* as it is sung of this, what the ancient sages sing of it
 [MBH. 12,4211.] — caus. to have (someone) sing after: *stotrīyāmanugāpayet*
 [GOBH. 3,2,21. fgg.]
-  <sub>DCS 86 · attested</sub>
+  <sub>attested</sub>
 
 **prefix_marker)** — *anu*
 
 - **RU:** — *anu*
-  <sub>DCS 86 · attested</sub>
+  <sub>attested</sub>

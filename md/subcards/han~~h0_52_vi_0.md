@@ -46,7 +46,7 @@
 [TBR. 2,7,18,1.] to tear off: *kuśyau*
 [1,5,10,7.] [ŚAT. BR. 14,7,1,10.] *tūstāni* to loosen the braids
 [P. 3,1,21], Schol. [VOP. 21,17.]
-  <sub>DCS 177 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) auseinander schlagen so v. a. ausstrecken: ein Fell
 [ṚV. 5,85,1.] *śaṅkubhiḥ*
@@ -58,7 +58,7 @@
 - **EN:** — 2) to beat apart, hence v. a. to stretch out: a hide
 [ṚV. 5,85,1.] *śaṅkubhiḥ*
 [ŚAT. BR. 2,1,1,10.]
-  <sub>DCS 177 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) abschlagen, abwehren, sich wehren gegen: *talaprahārairanyāṃśca vyahanat*
 [MBH. 3,11117.] [13,73001] (nach der Lesart der [ed. Bomb.]). *yadi pratīpaṃ daivaṃ te na vihanyām*
@@ -70,7 +70,7 @@
 - **EN:** — 3) to beat off, ward off, defend oneself against: *talaprahārairanyāṃśca vyahanat*
 [MBH. 3,11117.] [13,73001] (according to the reading of the [ed. Bomb.]). *yadi pratīpaṃ daivaṃ te na vihanyām*
 [R. GORR. 2,20,32.]
-  <sub>DCS 177 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) stören, hemmen, unterdrücken, aufheben: *rakṣāṃsi kratūn*
 [BHAṬṬ. 1,19.] *pāpam*
@@ -145,7 +145,7 @@ Schol. к [VS. PRĀT. 4,185.] [SARVADARŚANAS. 130,20. 161,17.] *rājyaṃ kurū
 Schol. to [VS. PRĀT. 4,185.] [SARVADARŚANAS. 130,20. 161,17.] *rājyaṃ kurūṇāmanayādvihaṃsi*, hence v. a. to withhold
 [MBH. 5,5033.] *padmānyaśokapuṣpāṇi dṛṣṭvā dṛṣṭirvihanyate* (further) seeing is abolished, hence v. a. becomes useless, since there is then nothing more to see
 [R. 3,79,28.]
-  <sub>DCS 177 · attested</sub>
+  <sub>attested</sub>
 
 **5)** — 5) pass. sich quälen, sich Sorge machen: *alābhe na vihanyeta lābhaścainaṃ na harṣayet*
 [MBH. 12,9976.] *kimidaṃ tvaṃ vihanyase (vimuhyase* die neuere Ausg.)
@@ -172,7 +172,7 @@ Schol. to [VS. PRĀT. 4,185.] [SARVADARŚANAS. 130,20. 161,17.] *rājyaṃ kurū
 [NĪLAK.]), hence v. a. you needlessly rack your brains over it
 [HARIV. 8825.] *mā vihanyata gacchata*
 [MBH. 3,15138.]
-  <sub>DCS 177 · attested</sub>
+  <sub>attested</sub>
 
 **6)** — 6) partic. *vihata*
 - **EN:** — 6) partic. *vihata*
@@ -207,7 +207,7 @@ Schol. to [VS. PRĀT. 4,185.] [SARVADARŚANAS. 130,20. 161,17.] *rājyaṃ kurū
 *vajra˚*
 [ŚAT. BR. 8,2,3,14.] knocked out: *gadā karāt*
 [BHĀG. P. 3,19,3.]
-  <sub>DCS 177 · attested</sub>
+  <sub>attested</sub>
 
 **6b)** — b) getroffen, heimgesucht: *rambheva vāyuvihatā*
 [BHĀG. P. 10,60,24.] *daivena*
@@ -228,7 +228,7 @@ Schol. to [VS. PRĀT. 4,185.] [SARVADARŚANAS. 130,20. 161,17.] *rājyaṃ kurū
 [11,29,3.] *daiva˚* (Gegens. *rakṣita*)
 [Spr. (II) 3902.] *cittamakāmavihatam*
 [BHĀG. P. 10,80,29.]
-  <sub>DCS 177 · attested</sub>
+  <sub>attested</sub>
 
 **6c)** — c) abgeschlagen, abgewehrt: *astra*
 [R. 5,44,14.] *aśmavarṣa*
@@ -291,7 +291,7 @@ Schol. to [VS. PRĀT. 4,185.] [SARVADARŚANAS. 130,20. 161,17.] *rājyaṃ kurū
 [10,50.] [10,25,1.] *a˚* unhindered, unstoppable: *cakra*
 [BHĀG. P. 2,7,20.] *gati*
 [9,7,23.] [MEGH. 10.]
-  <sub>DCS 177 · attested</sub>
+  <sub>attested</sub>
 
 **6d)** — d) *a˚* an dem Nichts auszusetzen ist: Weib
 [KAURAP. 33.] = *strīguṇairakhaṇḍitā*
@@ -303,7 +303,7 @@ Schol.
 - **EN:** — d) *a˚* in whom there is nothing to find fault with: a woman
 [KAURAP. 33.] = *strīguṇairakhaṇḍitā*
 Schol.
-  <sub>DCS 177 · attested</sub>
+  <sub>attested</sub>
 
 **7)** — 7) *vi — han* fehlerhaft für *ni — han* (wie die
 v. l. fast überall hat)
@@ -336,4 +336,4 @@ v. l. has almost everywhere)
 [86,23] (*mṛta* [ed. Bomb.]). — caus.
  1) to strike: *parasainyaṃ vighātayet (vināśayet*
 v. l.) [Spr. (II) 2822.]
-  <sub>DCS 177 · attested</sub>
+  <sub>attested</sub>

@@ -46,7 +46,7 @@ aufnehmen, ihnen folgen, darauf achten: *vacanaṃ na pratīcchatā*
 to take up, to follow them, to heed them: *vacanaṃ na pratīcchatā*
 [R. 1,34,30.] *ājñāṃ pratīṣuḥ*
 [BHAṬṬ. 3,43.]
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>
 
 **1))** — *prati*
  1) sich richten auf Etwas, zustreben: *sato bandhumasati niravindanhṛdi pratīṣyā kavayo manīṣā*
@@ -55,4 +55,4 @@ to take up, to follow them, to heed them: *vacanaṃ na pratīcchatā*
 - **RU:** — *prati*
  1) направляться на что-либо, стремиться к чему-либо: *sato bandhumasati niravindanhṛdi pratīṣyā kavayo manīṣā*
 [ṚV. 10,129,4.]
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>

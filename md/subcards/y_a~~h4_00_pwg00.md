@@ -7,4 +7,4 @@
 
 - **RU:** *yā*¦ [vgl. ] с *vi* 2〉 Z. 4 читай {3,31,19} st. {3,31,9}.
 - **EN:** *yā*¦ [vgl. ] with *vi* 2〉 Z. 4 read {3,31,19} st. {3,31,9}.
-  <sub>DCS 5678 · attested</sub>
+  <sub>attested</sub>

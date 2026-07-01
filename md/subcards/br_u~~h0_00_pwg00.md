@@ -52,12 +52,12 @@
 [BHĀG. P. 7,13,22]), *bruvate; bruvīta; brūṣva, bruvadhvam*
 ([MBH. 3,2729], v. l.); *abrūta*; partic. *bruvāṇa* . Из общих форм засвидетельствована лишь 2-я pl. prec. *brūyāsta*
 [N. 17,35] ([MBH. 3,2729] вместо того *brūyāstat*, [ed. Bomb.] же — *brūyāsta* с упоминанием варианта *bruvadhvam*) .
-  <sub>DCS 9786 · attested</sub>
+  <sub>attested</sub>
 
 **1)** 1) sagen, aussprechen, berichten; nennen;
 
 - **RU:** 1) говорить, произносить, сообщать; называть;
-  <sub>DCS 9786 · attested</sub>
+  <sub>attested</sub>
 
 **1a)** a) act.: *indrāya nūnamarcatokthāni ca bravītana*
 [ṚV. 1,84,5.] *indra bravīmi te vacaḥ*
@@ -202,7 +202,7 @@
 [Śak.] [ŚĀK. 25,5.] *itīva rāmo bahusaṃgataṃ vacaḥ — saritaṃ prati bruvan*
 [R. 2,95,19] ([104,20] [GORR.]). говорить так — предсказывать, возвещать: *tadāpi sarvasasyānāṃ vṛddhiṃ brūyādvicakṣaṇaḥ*
 [VARĀH. BṚH. S. 22,5.]
-  <sub>DCS 9786 · attested</sub>
+  <sub>attested</sub>
 
 **1b)** — b) med. *svayameva brūṣva yatte bhaviṣyati sa etaṃ māhendraṃ grahamabrūta*
 [AIT. BR. 3,21.] *nādṛṣṭaṃ dṛṣṭato brūvīta*
@@ -241,4 +241,4 @@
 [YĀJÑ. 2,241.] *brūte 'nyasyāto 'pyāryo guṇāndoṣāṃstu durjanaḥ* говорит о
 [Spr. 2001.] *prāṇānāṃ vata kiṃ bruve kaṭhinatām*
 [1894.] [SOM. NALA 139.]
-  <sub>DCS 9786 · attested</sub>
+  <sub>attested</sub>

@@ -16,4 +16,4 @@
 [TBR. 3,8,3,2.]
 [ŚAT. BR. 7,1,1,14.] [2,1,12.] [3,1,24.]
 — Vgl. *adhivāda* .
-  <sub>DCS 5 · attested</sub>
+  <sub>attested</sub>

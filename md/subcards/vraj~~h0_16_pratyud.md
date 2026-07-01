@@ -10,4 +10,4 @@
 [RAGH. 1,90.] [13,33.]
 - **EN:** — *pratyud* to set out and go to meet someone
 [RAGH. 1,90.] [13,33.]
-  <sub>DCS 1202 · attested</sub>
+  <sub>attested</sub>

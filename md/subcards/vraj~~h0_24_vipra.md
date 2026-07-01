@@ -10,10 +10,10 @@
 [KĀTY. ŚR. 24,6,13.]
 - **EN:** — *vipra* to go apart, disperse
 [KĀTY. ŚR. 24,6,13.]
-  <sub>DCS 1202 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — Vgl. *vipravrājin* .
 
 - **RU:** — Vgl. *vipravrājin* .
 - **EN:** — Vgl. *vipravrājin* .
-  <sub>DCS 1202 · attested</sub>
+  <sub>attested</sub>

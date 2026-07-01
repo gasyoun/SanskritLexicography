@@ -16,4 +16,4 @@
 [MBH. 7,5173.] *abhisaṃpanna* [ed. Bomb.]; *˚saṃyata* would not suit the metre; vgl. simpl.
  5) h)
  α) at the end.
-  <sub>DCS 9672 · attested</sub>
+  <sub>attested</sub>

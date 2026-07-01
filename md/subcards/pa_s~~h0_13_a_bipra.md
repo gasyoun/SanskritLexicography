@@ -10,4 +10,4 @@
 [ṚV. 10,113,4.]
 - **EN:** *abhipra* to look out toward, to look around for: *prāpaśyadvīro abhi pauṃsyaṃ raṇam*
 [ṚV. 10,113,4.]
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>

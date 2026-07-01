@@ -28,4 +28,4 @@ GORR. [71,5]). *tathaiva gacchatastasya vyapayādrajanī śivā* миновал�
 [R. ed. Bomb. 3,66,6] (*pratiyānti*
 GORR. [71,5]). *tathaiva gacchatastasya vyapayādrajanī śivā* "elapsed"
 [R. SCHL. 2,49,2.]
-  <sub>DCS 21 · attested</sub>
+  <sub>attested</sub>

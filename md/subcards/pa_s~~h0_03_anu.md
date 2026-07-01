@@ -118,7 +118,7 @@
 [Spr. 1848.]
 [BHĀG. P. 2,4,21.] [5,14,5.] *anuspaṣṭa* noticed: *anuspaṣṭo bhavatyeṣo asya yo asmai revānna sunoti somam*
 [ṚV. 10,160,4.]
-  <sub>DCS 4733 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) Jmd bedenken mit: *brāhmaṇānagrahārairvā yathāvadanupaśyasi*
 [MBH. 15,679.] *sugrīvam — bhavānparigrahaiḥ prāptairyathāvadanupaśyatu*
@@ -139,4 +139,4 @@
 [ṚV. 10,14,1.]
 [NIR. 10,20.]
 [AV. 6,28,3.]
-  <sub>DCS 4733 · attested</sub>
+  <sub>attested</sub>

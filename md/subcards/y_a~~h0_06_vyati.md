@@ -20,16 +20,16 @@
 - **EN:** — 2) to elapse, to pass away (of time): *divasāḥ subhagāḥ puṇyāstvaritā vyatiyānti naḥ*
 [R. 3,22,10.] *˚yāta*
 [HARIV. 3787.]
-  <sub>DCS 5678 · attested</sub>
+  <sub>attested</sub>
 
 **vyati-head)** — *vyati*
 
 - **RU:** — *vyati*
-  <sub>DCS 5678 · attested</sub>
+  <sub>attested</sub>
 
 **vyati-1)** 1) durchdringen: *vi vāramavyaṃ samayāti yāti*
 [ṚV. 9,97,56.]
 
 - **RU:** 1) проникать, пронизывать: *vi vāramavyaṃ samayāti yāti*
 [ṚV. 9,97,56.]
-  <sub>DCS 5678 · attested</sub>
+  <sub>attested</sub>

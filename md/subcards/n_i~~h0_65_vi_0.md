@@ -105,7 +105,7 @@ This is, according to [P. 1,3,37] and [VOP. 23,29], in place only when the subje
 [R. 5,72,1.]
 [KUMĀRAS. 1,9.]
 [KĀM. NĪTIS. 12,18.]
-  <sub>DCS 2376 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) vertheilen, verrühren, umrühren
 [ṚV. 9,24,3.] [27,3.] *suta indo pavitra ā nṛbhiryato vi nīyase*
@@ -123,7 +123,7 @@ This is, according to [P. 1,3,37] and [VOP. 23,29], in place only when the subje
 [99,8.] *āśiraṃ vinīya*
 [ŚAT. BR. 4,3,3,19.]
 [KĀTY. ŚR. 10,3,11.]
-  <sub>DCS 2376 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) scheiteln: *keśān*
 [KĀTY. ŚR. 5,2,15.]
@@ -135,7 +135,7 @@ This is, according to [P. 1,3,37] and [VOP. 23,29], in place only when the subje
 - **EN:** 3) to part (the hair): *keśān*
 [KĀTY. ŚR. 5,2,15.]
 [PĀR. GṚHY. 1,15. 2,1.]
-  <sub>DCS 2376 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) dehnen: *ayastaptam*
 [ŚĀṄKH. BR. 22,6.] ausbreiten: *nihatasyāsya sattvasya jāmbūnadasamatvaci . śasyavṛṣyāṃ vinītāyāmicchāmyahamupāsitum ..*
@@ -147,7 +147,7 @@ This is, according to [P. 1,3,37] and [VOP. 23,29], in place only when the subje
 - **EN:** 4) to stretch, extend: *ayastaptam*
 [ŚĀṄKH. BR. 22,6.] to spread out: *nihatasyāsya sattvasya jāmbūnadasamatvaci . śasyavṛṣyāṃ vinītāyāmicchāmyahamupāsitum ..*
 [R. 3,49,29.]
-  <sub>DCS 2376 · attested</sub>
+  <sub>attested</sub>
 
 **5)** — 5) anleiten, veranlassen zu: *atyaṃ na mihe vi nayanti vājinamutsaṃ duhanti*
 [ṚV. 1,64,6.]
@@ -156,7 +156,7 @@ This is, according to [P. 1,3,37] and [VOP. 23,29], in place only when the subje
 [ṚV. 1,64,6.]
 - **EN:** 5) to instruct, induce to: *atyaṃ na mihe vi nayanti vājinamutsaṃ duhanti*
 [ṚV. 1,64,6.]
-  <sub>DCS 2376 · attested</sub>
+  <sub>attested</sub>
 
 **6)** — 6) lenken: *vinayantaṃ javenāśvān*
 [MBH. 4,599.]
@@ -165,7 +165,7 @@ This is, according to [P. 1,3,37] and [VOP. 23,29], in place only when the subje
 [MBH. 4,599.]
 - **EN:** 6) to steer, guide: *vinayantaṃ javenāśvān*
 [MBH. 4,599.]
-  <sub>DCS 2376 · attested</sub>
+  <sub>attested</sub>
 
 **7)** — 7) zähmen, abrichten, dressiren: *vanyānvineṣyanniva duṣṭasattvān*
 [RAGH. 2,8.] *vinīta* gezähmt, dressirt
@@ -314,7 +314,7 @@ This is, according to [P. 1,3,37] and [VOP. 23,29], in place only when the subje
 [M. 8,2.]
 [ŚĀK. 8,12.]
 [VARĀH. BṚH. S. 2], Anf. Vgl. *durvinīta* .
-  <sub>DCS 2376 · attested</sub>
+  <sub>attested</sub>
 
 **8)** — 8) zu Ende bringen, verbringen: *kathamapi yāminīṃ vinīya*
 [GĪT. 8,1.] durchführen, ausführen: *suvinītena karmaṇā*
@@ -329,4 +329,4 @@ This is, according to [P. 1,3,37] and [VOP. 23,29], in place only when the subje
 [GĪT. 8,1.] to carry through, execute: *suvinītena karmaṇā*
 [MBH. 13,2201.] *tarkayā suvinītayā*
 [4,892.]
-  <sub>DCS 2376 · attested</sub>
+  <sub>attested</sub>

@@ -10,4 +10,4 @@
 [P. 7,1,60.] [2,45]; s. *ninaṅkṣu* .
 - **EN:** — desid. *ninaśiṣyati* and *ninaṅkṣati*
 [P. 7,1,60.] [2,45]; s. *ninaṅkṣu* .
-  <sub>DCS 1422 · attested</sub>
+  <sub>attested</sub>

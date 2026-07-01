@@ -13,4 +13,4 @@
 - **EN:** — *ni*
  4) to offer, present: *ninīyāpaḥ piṇḍān*
 [BHĀG. P. 10,57,37.]
-  <sub>DCS 227 · attested</sub>
+  <sub>attested</sub>

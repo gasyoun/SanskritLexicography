@@ -13,4 +13,4 @@
 - **EN:** — *ni* caus. to bring to rest, to set in order
 [AV. 6,52,3.] *mana udyutam*
 [111,2.]
-  <sub>DCS 20 · attested</sub>
+  <sub>attested</sub>

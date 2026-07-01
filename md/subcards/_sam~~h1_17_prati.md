@@ -13,4 +13,4 @@
 - **EN:** — *prati*, partic. *˚śānta* dass.: *˚śoka*
 [MBH. 12,891.] absol. *˚śāmya* being extinguished
 [454.] Vgl. *pratiśama* .
-  <sub>DCS 2 · attested</sub>
+  <sub>attested</sub>

@@ -16,7 +16,7 @@
  1) to fall into a state, to come to partake of: *viśvāmitro 'dhyagādyatra brāhmaṇatvam*
 [MBH. 3,8309.] *śramamadhyagāt*
 [BHĀG. P. 4,26,10.]
-  <sub>DCS 21 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) auf Etwas verfallen, sich zu Etwas entschliessen: *so 'vastratāmātmanaśca tasyāścāpyekavastratām . cintayitvādhyagādrājā vastrārdhasyāvakartanam ..*
 [N. 10,16.]
@@ -25,7 +25,7 @@
 [N. 10,16.]
 - **EN:** — 2) to hit upon something, to resolve upon something: *so 'vastratāmātmanaśca tasyāścāpyekavastratām . cintayitvādhyagādrājā vastrārdhasyāvakartanam ..*
 [N. 10,16.]
-  <sub>DCS 21 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) sich erinnern, gedenken; merken auf: *adhītīradhyagādayam*
 [AV. 2,9,3.] *adhi no gāta marutaḥ*
@@ -40,7 +40,7 @@
 [AV. 2,9,3.] *adhi no gāta marutaḥ*
 [ṚV. 8,20,22.] *adhi stotrasya sakhyasya gāta*
 [10,78,8.] [5,55,9.]
-  <sub>DCS 21 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) zu einer Kenntniss von Etwas (acc.) gelangen, studiren, lesen, lernen: *śiśurevādhyagātsarvaṃ paraṃ brahma sanātanam*
 [MBH. 13,121.] *adhyagānmahadākhyānam*
@@ -91,10 +91,10 @@
 [P. 2,4,51.] — desid. from caus. *adhijigāpayiṣati* to desire to teach
 [P. 2,4,51.]
 [VOP. 19,1.]
-  <sub>DCS 21 · attested</sub>
+  <sub>attested</sub>
 
 **note)** — Vgl. *i* mit *adhi* .
 
 - **RU:** — Vgl. *i* с *adhi* .
 - **EN:** — Vgl. *i* with *adhi* .
-  <sub>DCS 21 · attested</sub>
+  <sub>attested</sub>

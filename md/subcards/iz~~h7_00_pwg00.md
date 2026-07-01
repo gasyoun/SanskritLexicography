@@ -7,7 +7,7 @@
 
 - **RU:** III. *iṣ*¦ _f._ в sg. во всех падежах, в pl. употребляется только в nom. acc. (*iṣas*, реже *iṣas*) и gen..
 - **EN:** III. *iṣ*¦ _f._, in the sg. found in all cases, in the pl. used only in the nom. acc. (*iṣas*, more rarely *iṣas*) and gen..
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>
 
 **1)** 1) Trank, Labung, Erquickung
 [NAIGH. 1,7.]
@@ -58,7 +58,7 @@
 [4,16,21.] *dhenuṃ na iṣaṃ pinvatamasakrām*
 [6,63,8.] [35,4.] [1,63,8.] [86,5.] [2,34,4.] *dhukṣasva pipyuṣīmiṣam*
 [VĀLAKH. 5,15.] In most of these passages sense 2 of Bed. is included as well. In particular:
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>
 
 **1a)** a) Spende, Trankopfer: *yadado divo arṇava iṣo vā madatho gṛhe*
 [ṚV. 8,26,17.] *yajvarīriṣaḥ*
@@ -79,7 +79,7 @@
 [3,54,22.] *saṃ vāṃ karmaṇā samiṣā hinomi*
 [7,69,1.] [1,129,7.] *juṣantāṃ yajñamadruho 'namīvā iṣo mahīḥ*
 [3,22,4.]
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>
 
 **1b)** — b) die erquickenden Gewässer des Himmels
 [NIR. 10,26.] *apāvṛṇodiṣa indraḥ parīvṛtāḥ*
@@ -100,7 +100,7 @@
 [8,5,21.] *iṣaṃ svarabhijāyanta dhūtayaḥ*
 [168,2.] [3,30,11.] [53,1.] *apāmūrmiṃ divaspari . ayakṣmā bṛhatīriṣaḥ*
 [9,49,1.] [10,17,8.]
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) Saft so v. a. Kraft, Frische; Wohlsein, Gedeihen; Wohlstand; sg. und pl.: *samasme bhūṣataṃ narotsaṃ na pipyuṣīriṣaḥ* theilet uns Kräfte mit sprudelnd wie eine Quelle
 [ṚV. 10,143,6] (s. auch u. 1.). *sāṃgrāmajityāyeṣamā vadeha* Muth
@@ -172,4 +172,4 @@ einem Thema *iṣi* besteht, wie *dṛśaye, yudhaye* datt. zu *dṛś, yudh* si
 
 a stem *iṣi* exists, just as *dṛśaye, yudhaye* datt. are to *dṛś, yudh*. *te asmabhyamiṣaye viśvamāyuḥ kṣapa usrā varivasyantu devāḥ*
 [ṚV. 6,52,15.] — Closely related to *iḍ, iḍā* and *irā*.
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>

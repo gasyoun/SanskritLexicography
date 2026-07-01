@@ -16,4 +16,4 @@
 [PAÑCAV. BR. 12,11,10.] *adhyāyamudvrajitaṃ rakṣo 'gṛhṇāt*
 [15,5,20.] *svādhyāyamudvavrāja*
 [CHĀND. UP. 1,12,1.]
-  <sub>DCS 1202 · attested</sub>
+  <sub>attested</sub>

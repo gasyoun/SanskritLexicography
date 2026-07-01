@@ -13,4 +13,4 @@
 - **EN:** — *samud* to rise up against someone (acc.)
 [MBH. 8,1316.] *yacca naḥ sahitānsarvānvirāṭanagare tadā . eka eva samudyātaḥ*
 [6,4456.]
-  <sub>DCS 3 · attested</sub>
+  <sub>attested</sub>

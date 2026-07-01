@@ -18,7 +18,7 @@
 [6,3,2,3.] Vgl. further below the caus. — gerund. *praiṣam* in the combination *praiṣaiḥ* (or *iṣṭibhiḥ) praiṣamicchati* he seeks, by exhortations and calls, to drive up, d. h. he seeks to drive up (like game): *yajño vai devebhya udakrāmattamiṣṭibhiḥ praiṣamaicchan*
 [AIT. BR. 1,2.] *yajño˚ taṃ praiṣaiḥ praiṣamaicchan*
 [3,9.] [ŚAT. BR. 3,9,3,28.] [13,1,4,1.]
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) act. auffordern, insbes. regelmässig gebraucht von der Aufforderung, welche der das Opfer leitende Priester an einen andern dabei fungirenden richtet, damit dieser einen Spruch oder eine Handlung beginne. *adhvaryupreṣito maitrāvaruṇaḥ preṣyati praiṣai rhotāraṃ hotā yajati* [ĀŚV. ŚR. 3,2. 1,5.] *prahvastiṣṭhanpreṣyati* [AIT. BR. 3,9.] [AV. 11,3,14.] *rathaṃtaraṃ gāyeti preṣyati* [KĀTY. ŚR. 4,9,6.] Das Object, auf welches die Aufforderung geht, steht im acc.: *sāma preṣyati* (er fordert auf zu einem Sāman mit den Worten) *gāya brūhīti vā* [KĀTY. ŚR. 10,8,16.] *śaunaḥśepaṃ ca preṣyati* [15,6,1.] [20,3,1.] Ebenso ist auch der häufige imperat. *preṣya* mit begleitendem acc. oder gen. ([P. 2,3,61]) nicht geradezu durch bringe dar zu erklären, sondern als abgekürzte Redeweise aufzufassen für fordere auf zur Darbringung (oder Recitation). Wo gen. steht, ist dieser partitiver Art; z. B. *agnīṣomābhyāṃ chāgasya vapāṃ medaḥ preṣya* [ŚAT. BR. 3,8,2,27] sind Worte des Adhvaryu an den Maitrāvaruṇa: richte deine Aufforderung (an den Hotar) in Betreff der Darbringung von Netz und Fett des Bocks für Agni und Soma. *samidhaḥ preṣyeti* [3,8,1,4.] *dhānāsomānprasthitānpreṣya* [4,3,3,9.] *chāgānāṃ haviḥ prasthitaṃ preṣyeti* [5,1,3,14.] Vgl. Vārtt. zu [P. 2,3,61.] Mit dat. allein: fordere auf zur Darbringung (Recitation) für einen Gott u. s. w.: *agnaye sviṣṭakṛte preṣya* [ŚAT. BR. 3,8,3,34.] *svāhākṛtibhyaḥ preṣya* [2,23.] *ādityebhyaḥ preṣya* [4,3,5,20.] Die Bedeutung bringe dar kann mittelbar nur dann eintreten, wenn der Maitrāvaruṇa zugleich die Stelle des Hotar versieht: *samaitrāvaruṇe (paśusomādau karmaṇi) preṣyetyāha yajasthāne* [KĀTY. ŚR. 6,4,10]; vgl. auch [AIT. BR. 2,5.] *pre3ṣya* [P. 8,2,91.] S. auch *praiṣa* und *praiṣya* . — caus. *preṣayati*
 
@@ -42,7 +42,7 @@ With dat. alone: call upon (someone) for the offering (recitation) to a god u. s
 [KĀTY. ŚR. 6,4,10]; vgl. also
 [AIT. BR. 2,5.] *pre3ṣya*
 [P. 8,2,91.] S. also *praiṣa* and *praiṣya* . — caus. *preṣayati*
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>
 
 **II-1)** 1) schleudern, werfen: *preṣayāmi mahāvegamastramasyā vināśane*
 [R. 3,35,46.] *śarāṃśca*
@@ -84,9 +84,9 @@ With dat. alone: call upon (someone) for the offering (recitation) to a god u. s
 [KATHĀS. 4,21.] [85.] to banish: *mā cāsmai preṣitaṃ rāmam — bhavantaḥ śaṃsiṣuḥ*
 [R. 2,68,8.] to send someone a message, to have someone told: *sa ca me preṣayāmāsa śaivaṃ dhanuranuttamam — mahyaṃ vai dīyatāmiti*
 [1,71,17.]
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>
 
 **PPP-1)** 1) schleudern, werfen: *preṣayāmi mahāvegamastramasyā vināśane* [R. 3,35,46.] *śarāṃśca* — *praiṣayaṃ śālvarājāya* [MBH. 3,850.] *praiṣiṣadrākṣasaḥ prāsam* [BHAṬṬ. 15,77.] (die Augen) richten: *snigdhaṃ vīkṣitamanyato 'pi nayane yatpreṣayantyā tayā* [ŚĀK. 35.] *tatastataḥ preṣitavāmalocanā* [23.]
 
 - **RU:** 1) метать, бросать: *preṣayāmi mahāvegamastramasyā vināśane* [R. 3,35,46.] *śarāṃśca* — *praiṣayaṃ śālvarājāya* [MBH. 3,850.] *praiṣiṣadrākṣasaḥ prāsam* [BHAṬṬ. 15,77.] (глаза) направлять: *snigdhaṃ vīkṣitamanyato 'pi nayane yatpreṣayantyā tayā* [ŚĀK. 35.] *tatastataḥ preṣitavāmalocanā* [23.]
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>

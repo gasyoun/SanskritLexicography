@@ -94,7 +94,7 @@
 [BHĀG. P. 5,17,7.] *niṣpatitamastiṣka*
 [HARIV. 4740.] to fly away, hasten away
 [ṚV. 10,24,5.]
-  <sub>DCS 3124 · attested</sub>
+  <sub>attested</sub>
 
 **caus)** — Vgl. *niṣpatana, niṣpatiṣṇu* . — caus. ausfallen machen: *akṣi*
 [AV. 1,8,3.] zu Schanden machen, zu Grunde richten: *idaṃ hi tava vistīrṇaṃ dhanadhānyasamācitam . hastyaśvarathasaṃpūrṇaṃ rājyaṃ niṣpātitaṃ tayā ..*
@@ -106,4 +106,4 @@
 - **EN:** — Vgl. *niṣpatana, niṣpatiṣṇu* . — caus. to cause to fall out: *akṣi*
 [AV. 1,8,3.] to ruin, bring to naught: *idaṃ hi tava vistīrṇaṃ dhanadhānyasamācitam . hastyaśvarathasaṃpūrṇaṃ rājyaṃ niṣpātitaṃ tayā ..*
 [R. 2,75,15.]
-  <sub>DCS 3124 · attested</sub>
+  <sub>attested</sub>

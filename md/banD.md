@@ -264,7 +264,7 @@ Schol. zu [24.]
 [PAÑCAT. III,160.] *jāḍyādbaddha* или *jāḍyena baddhaḥ* попасть в плен вследствие собственной глупости
 Schol. к [P. 2,3,25.] *śatādbaddhaḥ* вследствие долга в сотню
 Schol. к [24.]
-  <sub>DCS 2655 · attested</sub>
+  <sub>attested</sub>
 
 **header)** *bandh*¦, *badhnāti*
 [DHĀTUP. 31,37.] imperat. *badhāna, nibadhnīhi*
@@ -285,7 +285,7 @@ Schol. к [24.]
 [HARIV. 14323.] *bandhiṣye*
 [MBH. 3,10727]; *banddhum* (местами ошибочно *baddhum), bandhitum*
 [R. 2,18,23]; *baddhvā*; pass. *badhyateḥ* partic. praet. *baddha* .
-  <sub>DCS 2655 · attested</sub>
+  <sub>attested</sub>
 
 ## bandh
 
@@ -434,7 +434,7 @@ Schol. к [24.]
 - **EN:** — 2) to join, fit together: *(kṛtvā) baddhaiḥ (kṛtvābaddhaiḥ* [TR.] and [BENFEY]) *śilābandhaiḥ setubandhamapāṭayan* [RĀJA-TAR. 5,92.] *aṇavo* (the atoms) *baddhāḥ* [LIṄGA-P.] with [MUIR, ST. 4,326,1.] *vṛkāḥ pañcabaddhāśca śatabaddhāstathāpare* joined in fives, in hundreds [HARIV. 3507.] *rājānaḥ śreṇibaddhāḥ* [MBH. 2,568.] *chāyābaddhakadambakaṃ mṛgakulam* forming groups [ŚĀK. 39.] *dehabaddha* joined with a body [RAGH. 11,35.] [KUMĀRAS. 2,47.] [5,30.] *karmāṇi śīlena baddhāni* [Verz. d. Oxf. H. 56,a, N. 1.] *sukhabaddhamasaṃbaddhaṃ tathā hyeṣa prabhāṣate* so v. a. pleasant, sweet to hear [R. 2,96,14] ([105,13] [GORR.]) *dhanurmadhye baddhvā muṣṭim* so v. a. grasping the bow in the middle [1,28,5.] *eṣa muṣṭirmayā baddhaḥ* so v. a. clenched, balled [4,15,21.] [AK. 2,6,2,37.] *subaddhena suṣṭinā* [HARIV. 3779]; vgl. *baddhamuṣṭi*.* añjaliṃ *
 
 * bandh* to fold the hollow hands together: *sā mūrdhni baddhvā rudatī rājñaḥ padmamivāñjalim* [R. 2,62,11.] [4,6,12] [9,6.] [RAGH. 16,5.] *badhyatāmayamabhayayācanāñjaliḥ* [11,78.] [KATHĀS. 50,143.] [DHŪRTAS. 80,4.] *baddhāñjali* [MṚCCH. 174,11.] [DAŚAK.] in [BENF. Chr. 183,11.] *śirasi yairbaddho na sevāñjaliḥ* [Spr. 2959.] *baddhāñjalipuṭa* [R. 1,68,3.] [6,37,73] [101,26.] *āsanaṃ padmakaṃ baddhvā* to fold the feet together, while sitting, into the Padmaka -named posture [Ind. St. 2,47, N. 2.] *himagiriśilābaddhapadmāsana* [Spr. 808.] [VET. in LA. 13,7.] *baddhvā yogāsanāni* [BHAṬṬ. 7,77.] *bhrukuṭiṃ bandh* to knit the brows (could also have been placed under u. 6.) [MBH. 7,762.] [R. 2,23,2.] [3,54,1.] [6,82,180.] [100,11.] [KĀVYĀD. 2,326.] *suratabaddhāṅgyaḥ* arranged for intercourse [HARIV. 8315.] *kāñcanī vāsayaṣṭirmūle baddhā maṇibhiḥ* inlaid with jewels [MEGH. 77.] *marakataśilābaddhasopāna* [74.] *lohabaddhā gudāḥ* shod with iron [MBH. 7,8141.] *hastīva jāmbūnadabaddhaśṛṅga* overlaid with gold [R. 5,11,7.] *rītibaddha* set in brass [KATHĀS. 24,178.] [184.] *setuṃ bandh* to build a dam —, a bridge [BHĀG. P. 9,10,15.] [RĀJA-TAR. 5,103.] *setuṃ badhnāmi gaṅgāyām* [KATHĀS. 40,18.] *setuṃ bandhitumicchati* [R. 2,18,23.] *seturbaddhaśca sāgare* [6,81,18.] *baddhadviradasetubhiḥ* bridges formed of elephants [RAGH. 4,38.] *babandhurbandhanīyān* (sc. *deśān)* dammed [R. 2,80,10.] *bandhiṣye setunā gaṅgām* so v. a. I shall bridge over [MBH. 3,10727.] *nāyaṃ śakyastvayā baddhuṃ* (sic) *mahānoghaḥ* [10728.] *sāgaraṃ sumahadbaddhvā* [R. 6,34,14.] *pāṣāṇasetubandhena — abhavadbaddhā nikhilā nīlajāsarit* dammed off [RĀJA-TAR. 5,91.] *kedārakhaṇḍaṃ badhāna* so v. a. to stop up, block [MBH. 1,685. fg.] to fix in place, close up, shut: *abadhnannargalena bahiśca tām (mañjūṣām)* [KATHĀS. 4,56.] *parṇakuṭīdvāraṃ babandha* [Z. d. d. m. G. 14,575,20.] *divākarādarśanabaddhakośe 'ravinde* [RAGH. 6,66.] *baddhāmbaracaramārga* barred [Spr. 1938.] *maryādā badhyatāṃ sthirā* to set up a barrier [R. 4,4,13.] *jalanidhervelāṃ baddhvā nṛpaḥ sagaraḥ* to build up a bank/shore [Spr. 776.] *golaṃ baddhvā* to put together, construct [SŪRYAS. 8,12.] to bind verses —, to compose, frame, write: *pādabaddhaḥ ślokaḥ* [R. 1,2,21.] *śloka eva tvayā baddhaḥ* [33.] *rāmakathā ślokabaddhā* [38.] *(kāvyam) jātibhiḥ saptabhirbaddham* [4,6.] *pūrvairbaddhaṃ kathāvastu mayi bhūyo nibadhnati* [RĀJA-TAR. 1,8.] *dṛṣṭaṃ dṛṣṭaṃ nṛpodantaṃ baddhvā* [9.] *baddhā dvādaśabhirgranthasahasraiḥ pārthivāvaliḥ* [17.] *baddhaṃ ca yaddaṇḍinā* [Verz. d. Oxf. H. 167,a,36.] [211,a,45.] *abaddha* incoherent, senseless; _n._ incoherent chatter [AK. 1,1,5,21.] [H. 267.] *bahvabaddhaṃ prabhāṣase* [HARIV. 15824.] *bahvabaddhapralāpin* [N. 26,16.] *vāgvisarge — abaddhavati (= apaśabdādiyukte* Schol.) consisting of badly joined words [BHĀG. P. 1,5,11.]
-  <sub>DCS 2655 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) festhalten, zurückhalten: *babandha rājño hastam* (auf übernatürliche Weise)
 [KATHĀS. 49,28.] *baddhaḥ priyaḥ*
@@ -454,7 +454,7 @@ Schol. к [24.]
 [SUŚR. 2,443,18.] *vanarājiṣu — baddhapaṅkavatīṣu*, отсюда v. a. осушённый
 [HARIV. 3841.]
 - **EN:** — 3) to hold fast, hold back: *babandha rājño hastam* (in a supernatural manner) [KATHĀS. 49,28.] *baddhaḥ priyaḥ* [Spr. 2653.] *baddhvā vā vāsasā* by the garment [YĀJÑ. 3,292.] to check, suppress: *baddhadhārāpravāhena — aśruṇā* [SOM. NALA 164.] *baddhavāc* _adj._ [BHĀG. P. 1,15,43.] *baddha* halting, in contrast to Gegens. *drava* flowing [SUŚR. 2,443,18.] *vanarājiṣu — baddhapaṅkavatīṣu* so v. a. laid dry [HARIV. 3841.]
-  <sub>DCS 2655 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) heften, richten das Auge, das Ohr, die Sinne auf Etwas (loc.): *puṃskokilaninādeṣu ṣaṭpadācariteṣu ca . baddhaśrotramanaścakṣuḥ*
 [MBH. 3,11085. fg.] *muhuranupatati syandane baddhadṛṣṭiḥ*
@@ -474,7 +474,7 @@ Schol. к [24.]
 [MBH. 15,984.] *matiṃ badhāna sugrīve*
 [BHAṬṬ. 20,22.]
 - **EN:** — 4) to fix, direct the eye, the ear, the senses upon something (loc.): *puṃskokilaninādeṣu ṣaṭpadācariteṣu ca . baddhaśrotramanaścakṣuḥ* [MBH. 3,11085. fg.] *muhuranupatati syandane baddhadṛṣṭiḥ* [ŚĀK. 7.] *badhnanti ca payodeṣu dṛśaḥ* [KĀVYĀD. 2,103.] *baddhanetrā* [MBH. 15,436.] *tathāvidhe mano babandha* [RAGH. 3,4.] *bhavatyāṃ baddhacittaḥ* [MBH. 15,984.] *matiṃ badhāna sugrīve* [BHAṬṬ. 20,22.]
-  <sub>DCS 2655 · attested</sub>
+  <sub>attested</sub>
 
 **5)** — 5) im Gefolge haben, zur Folge haben, bewirken, hervorrufen: *badhnannaṅgeṣu romāñcam — priyāsparśaḥ*
 [KĀVYĀD. 2,11.] *badhnātyāryaparīvādaṃ khalasaṃvādaśṛḍkhalā*
@@ -504,7 +504,7 @@ Schol. к [24.]
 - **EN:** — 5) to have as a consequence, to result in, to bring about, to produce: *badhnannaṅgeṣu romāñcam — priyāsparśaḥ* [KĀVYĀD. 2,11.] *badhnātyāryaparīvādaṃ khalasaṃvādaśṛḍkhalā* [KATHĀS. 24,210]
 
 , *āśu badhnāti hi prema prāgjanmāntarasaṃstavaḥ* [28,117.] *baddhānandā divasāḥ* to make: [23,94.] *anyo'nyadāsabhāvaṃ ca paṇamatra babandhuḥ* so v. a. stipulated [KATHĀS. 22,182.] *kramaṃ babandha kramitum* [BHAṬṬ. 2,9.] *ākāśe lakṣyaṃ (lakṣaṃ) bandh* to set oneself a mark in the air, so v. a. to look in a particular direction in the air [ŚĀK. 31,7], v. l. [MUDRĀR. 6,19. 31,3. 62,5.] *ākāśabaddhalakṣa* [VIKRAM. 54,4.]
-  <sub>DCS 2655 · attested</sub>
+  <sub>attested</sub>
 
 **6)** — 6) ansetzen (Frucht u. s. w.); schlagen (Wurzeln), bekommen, bei sich zur Erscheinung bringen, zeigen, äussern, hegen, haben: *kāle khalu samārabdhāḥ phalaṃ badhnanti nītayaḥ*
 [RAGH. 12,69.] *dhṛtipuṣpamayamapi jano badhnāti na tādṛśaṃ cirātprabhṛti*
@@ -614,7 +614,7 @@ Schol. к [24.]
 [RĀJA-TAR. 6,222.] *baddhavepathu*, отсюда v. a. дрожащий
 [DAŚAK.] в [BENF. Chr. 187,10.] *baddharabhasā (śrī)*
 - **EN:** — 6) to set/put forth (fruit, u. s. w.); to strike (roots), to acquire, to bring to manifestation in oneself, to show, express, harbor, have: *kāle khalu samārabdhāḥ phalaṃ badhnanti nītayaḥ* [RAGH. 12,69.] *dhṛtipuṣpamayamapi jano badhnāti na tādṛśaṃ cirātprabhṛti* [MĀLAV. 54.] *baddhamūla* s. bes. *cūtānāṃ ciranirgatāpi kalikā badhnāti na svaṃ rajaḥ* [ŚĀK. 131.] [VIKRAM. 26.] *baddhakesara* [SUŚR. 1,210,11.] *sauhṛdam, sakhyam, ajaryam* to form a friendship [BHĀG. P. 1,14,33.] [KATHĀS. 38,159.] [28,110.] [KUMĀRAS. 1,20.] [RĀJA-TAR. 1,155.] [5,268.] [RAGH. 18,6.] *vairam* to begin enmity, to enter into a hostile relationship: *pūrvabaddhavaira* [R. 4,53,14.] *anyo'nyabaddhavairāṇām* living in mutual enmity [6,19,2.] [ŚĀK. 48.] [LIṄGA-P.] with [MUIR, ST. 4,326,6.] *ravirbaddhabhīmapariveṣamaṇḍalaḥ* [RAGH. 11,59.] *baddharājya* having attained sovereignty [RĀJA-TAR. 5,282.] *baddhotsava* so v. a. having a feast day [KATHĀS. 21,146.] *baddhapratijñā* having made a vow [38,114.] *baddhaniścayā* [16,116.] *baddho mānaparigrahe parikaraḥ* [Spr. 2084.] *(tatpure) badhnāti saṃnidhim* takes up his abode [RĀJA-TAR. 4,507.] *tatraiva baddhavasatiḥ* [2,97.] *baddhadveṣa* [446.] *baddhānuśaya* [R. GORR. 1,2,13.] *śiśau — baddhasnehā* [KATHĀS. 3,17.] *(adbhiḥ) badhnatībhirmadarāgaśobhām* [RAGH. 16,59.] *dhṛtiṃ badhāna* [Spr. 2215.] [M. 5,47], v. l. *babandha ca . naravāhanadatte — dhṛtim* [KATHĀS. 34,105.] *nopavanalatāsu — cakṣurbadhnāti dhṛtim* [VIKRAM. 27.] *mahatīṃ prītiṃ badhnāti* [MĀRK. P. 68,31.] *tasminbabandha sā na — kumudvatī bhānumatīva bhāvam* [RAGH. 6,36.] [Spr. 74.] [KATHĀS. 17,127.] [49,249.] *vatseśvaraṃ prati . gāḍhaṃ babandha sadbhāvam* [13,1.] *baddharāga* [Spr. 812.] *baddhānurāgā* [SOM. NALA 16.] *antarbaddhasadbhartṛbhaktiḥ* [KATHĀS. 33,216.] *mattebhendravibhinnakumbhakavalagrāsaikabaddhaspṛhaḥ* [Spr. 791.] [2045.] *vimbādharabaddhatṛṣṇa* [RAGH. 13,16.] [Spr. 3510.] *śāpāntabaddhāśa* [KATHĀS. 30,53.] [RĀJA-TAR. 4,599.] *ratiṃ badhnāti yatra ca* [M. 5,47.] [KATHĀS. 3,29.] [MĀRK. P. 26,9.] *ākaṇṭhaghṛtamāṃsādibhojanāsthāṃ babandha* [KATHĀS. 30,97.] [RĀJA-TAR. 5,245.] *baddhagrahe rājñi* [KATHĀS. 49,16.] *baddhāvasthiticāpala* [Spr. 2522.] *baddhāśaṅka* [KATHĀS. 15,95.] *vaprāntareṣu baddhāṃ baddhāṃ bhittiśaṅkām* [KIR. 5,36.] *baddhodyama* [RĀJA-TAR. 6,222.] *baddhavepathu* so v. a. trembling [DAŚAK.] in [BENF. Chr. 187,10.] *baddharabhasā (śrī)*
-  <sub>DCS 2655 · attested</sub>
+  <sub>attested</sub>
 
 ## bandh
 
@@ -641,7 +641,7 @@ scheint ganz am Platz seiend, wohl angebracht zu bedeuten.
 [ŚĀK. 29.] *baddha* при Anf. _adj._ compp. часто (s. выше) имеет значение, сходное с *jāta*. * subaddha* при Schol. к [JAIM. 1,32]
 по-видимому, означает «вполне уместный, хорошо подходящий».
 - **EN:** [RĀJA-TAR. 3,126.] *baddhamauna* so v. a. observing silence [HARIV. 8170.] [RAGH. 13,23.] *baddhapratiśrunti guhāmukhāni* [16,31.] *yāminyeṣā bahulajaladairbaddhabhīmāndhakārā* [Spr. 2475.] [KATHĀS. 46,207.] *drumeṣu phalaṃ svayaṃ baddham* has shown itself spontaneously [KUMĀRAS. 5,60.] *baddhaṃ vadane gharmāmbhasāṃ jālakam* has set in, is present [ŚĀK. 29.] *baddha* on the Anf. _adj._ compp. frequently has (s. above) a meaning similar to *jāta*. * subaddha* with Schol. for [JAIM. 1,32] appears to mean entirely fitting, well suited.
-  <sub>DCS 2655 · attested</sub>
+  <sub>attested</sub>
 
 ## bandh
 
@@ -676,7 +676,7 @@ Nach [DHĀTUP. 32,14] bedeuten *bandhayati* und *bādhayati* zusammenbinden; vgl
 [RĀJA-TAR. 6,330.] *śatena bandhitaḥ* "a debt of a hundred has brought him into prison"
 [P. 2,3,24], Sch.
 According to [DHĀTUP. 32,14], *bandhayati* and *bādhayati* mean "to bind together"; vgl. *bandhayitar*.
-  <sub>DCS 2655 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) zusammenfügen —, bauen lassen: *sa setuṃ bandhayāmāsa *
 
@@ -697,7 +697,7 @@ According to [DHĀTUP. 32,14], *bandhayati* and *bādhayati* mean "to bind toget
 [RAGH. 12,70.]
 [RĀJA-TAR. 1,156.] to have (a river) dammed up: *vitastāmekataḥ sthānātkarmakṛdbhirabandhayat*
 [5,90.]
-  <sub>DCS 2655 · attested</sub>
+  <sub>attested</sub>
 
 ## bandh
 
@@ -739,7 +739,7 @@ According to [DHĀTUP. 32,14], *bandhayati* and *bādhayati* mean "to bind toget
 [P. 3,1,44], Sch.
 - **EN:** — *anu*
  1) to bind along, to tie on [AV. 5,19,12.] *rāṣṭra eva viśamanubadhnāti* [TBR. 1,8,3,2.] [TS. 6,6,5,3.] *mekhalām* [GOBH. 3,4,17.] *anubaddhaśiraḥpādaṃ carma* [KAUŚ. 24. 64. 81.] *citrāṃ mālāṃ cānubaddhām* [MBH. 7,76.] *dayitabāhulatānubaddhā* to embrace, encompass [Spr. 3894.] *dharmabandhānubaddha* bound, fettered [R. GORR. 2,113,3.] *vacasā — tantyā lokaḥ kilāyaṃ kāmahato 'nubaddhaḥ* [BHĀG. P. 3,21,16.] *viṣayeṣvanvabadhyata* [4,27,10.] *ubhayorapi rājendra saṃbandhenānubadhyatām . ikṣvākukulam* to bring into connection [R. 1,72,8.] *anyo'nyānubaddha (trivarga)* [Verz. d. Oxf. H. 216,a,19.] *anubaddhena hṛṃdā śṛṇvanhareḥ kathāḥ* with a heart bound, wholly directed thereon [BHĀG. P. 3,22,33.] pass. to be added on as Anubandha: *dviścakāro 'nubadhyate* [P. 3,1,44], Sch.
-  <sub>DCS 2655 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) in seinem Gefolge haben: *na śiṣyānanubadhnīta*
 [BHĀG. P. 7,13,8.] *anubaddha* im Gefolge seiend, mit Etwas zusammenhängend, in Verbindung stehend: *anubaddhārthānarthasaṃśayānvicārya*
@@ -753,7 +753,7 @@ According to [DHĀTUP. 32,14], *bandhayati* and *bādhayati* mean "to bind toget
 [MBH. 3,2562.] *he vṛṣala te tathā vikṣepo 'stu yathā hiṃsāmanubadhnāti*
 [P. 6,1,141], Sch.
 - **EN:** — 2) to have in one's train: *na śiṣyānanubadhnīta* [BHĀG. P. 7,13,8.] *anubaddha* being in the train of, connected with something, standing in relation to *anubaddhārthānarthasaṃśayānvicārya* [DAŚAK.] in [BENF. Chr. 181,1.] *aho mamopari vidheḥ saṃrambho dāruṇo mahān . nānubadhnāti kuśalam* so v. a. brings no welfare [MBH. 3,2562.] *he vṛṣala te tathā vikṣepo 'stu yathā hiṃsāmanubadhnāti* [P. 6,1,141], Sch.
-  <sub>DCS 2655 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) äussern, an den Tag legen, hegen, haben: *manuṣyeṇa śauṭīryamanubadhnatā*
 [R. 5,71,6.] *pūrvānubaddhavaireṇa śatruṇā*
@@ -765,7 +765,7 @@ According to [DHĀTUP. 32,14], *bandhayati* and *bādhayati* mean "to bind toget
 [MṚCCH. 172,24.] *teṣu kiṃ bhavataḥ snehamanubadhnāti mānasam*
 [MĀRK. P. 81,22.]
 - **EN:** — 3) to express, manifest, harbor, have: *manuṣyeṇa śauṭīryamanubadhnatā* [R. 5,71,6.] *pūrvānubaddhavaireṇa śatruṇā* [MṚCCH. 172,24.] *teṣu kiṃ bhavataḥ snehamanubadhnāti mānasam* [MĀRK. P. 81,22.]
-  <sub>DCS 2655 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) sich Jmd anhängen, auf dem Fusse folgen, nachlaufen: *kimenāmanuba dhnāsi*
 [DHŪRTAS. 86,3.] *ko nu khalvayamanubadhyamānastapasvinībhyāmabālasattvo* *bālaḥ*
@@ -777,7 +777,7 @@ According to [DHĀTUP. 32,14], *bandhayati* and *bādhayati* mean "to bind toget
 [ŚĀK. 101,20.] *anubaddha* «сопровождаемый»: *samādhyanubaddhayoga*
 [BHĀG. P. 3,16,26.]
 - **EN:** — 4) to attach oneself to someone, to follow at his heels, to run after: *kimenāmanuba dhnāsi* [DHŪRTAS. 86,3.] *ko nu khalvayamanubadhyamānastapasvinībhyāmabālasattvo* *bālaḥ* [ŚĀK. 101,20.] *anubaddha* accompanied by: *samādhyanubaddhayoga* [BHĀG. P. 3,16,26.]
-  <sub>DCS 2655 · attested</sub>
+  <sub>attested</sub>
 
 **5)** — 5) auf Etwas bestehen
 [KATHĀS. 49,47.]
@@ -785,7 +785,7 @@ According to [DHĀTUP. 32,14], *bandhayati* and *bādhayati* mean "to bind toget
 - **RU:** — 5) «настаивать на чём-л.»
 [KATHĀS. 49,47.]
 - **EN:** — 5) to insist on something [KATHĀS. 49,47.]
-  <sub>DCS 2655 · attested</sub>
+  <sub>attested</sub>
 
 **6)** — 6) zusammenhalten, nicht reissen, nicht auseinandergehen: *bhaṅge 'pi hi mṛṇālānāmanubadhnanti tantavaḥ*
 [Spr. 3314.]
@@ -794,12 +794,12 @@ According to [DHĀTUP. 32,14], *bandhayati* and *bādhayati* mean "to bind toget
 [Spr. 3314.]
 - **EN:** — 6) to hold together, not to tear, not to come apart: *bhaṅge 'pi hi mṛṇālānāmanubadhnanti tantavaḥ* [Spr. 3314.]
 — Vgl. *anubandha* fg., *anubandhin, anūbandhya*.
-  <sub>DCS 2655 · attested</sub>
+  <sub>attested</sub>
 
 **cross-ref)** — Vgl. *anubandha* fg., *anubandhin, anūbandhya* .
 
 - **RU:** — Vgl. *anubandha* fg., *anubandhin, anūbandhya*.
-  <sub>DCS 2655 · attested</sub>
+  <sub>attested</sub>
 
 ## bandh
 
@@ -810,7 +810,7 @@ According to [DHĀTUP. 32,14], *bandhayati* and *bādhayati* mean "to bind toget
 
 - **RU:** — *paryanu* s. *paryanubandha*.
 - **EN:** — *paryanu* s. *paryanubandha*.
-  <sub>DCS 2655 · attested</sub>
+  <sub>attested</sub>
 
 ## bandh
 
@@ -824,13 +824,13 @@ According to [DHĀTUP. 32,14], *bandhayati* and *bādhayati* mean "to bind toget
 [ĀŚV. GṚHY. 3,8.]
 - **EN:** — *api* med. "to tie on to oneself": *srajam*
 [ĀŚV. GṚHY. 3,8.]
-  <sub>DCS 2655 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — Vgl. *apibaddha* .
 
 - **RU:** — Vgl. *apibaddha*.
 - **EN:** — Vgl. *apibaddha*.
-  <sub>DCS 2655 · attested</sub>
+  <sub>attested</sub>
 
 ## bandh
 
@@ -877,13 +877,13 @@ According to [DHĀTUP. 32,14], *bandhayati* and *bādhayati* mean "to bind toget
 [24,9.] *bhartari prākprauḍhapraṇayāvabaddhaṃ manaḥ* "hanging on/depending on"
 [KATHĀS. 13,196.] *anavabaddhadoṣa* "not stagnant, not stuck"
 [SUŚR. 1,160,6.] [2,184,5.]
-  <sub>DCS 2655 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — Vgl. *avabandha* .
 
 - **RU:** — Vgl. *avabandha*.
 - **EN:** — Vgl. *avabandha*.
-  <sub>DCS 2655 · attested</sub>
+  <sub>attested</sub>
 
 ## bandh
 
@@ -954,7 +954,7 @@ According to [DHĀTUP. 32,14], *bandhayati* and *bādhayati* mean "to bind toget
 [MBH. 10,71.] *dṛṣṭipāśaurivābaddhau*
 [KATHĀS. 34,103.] *bahumānena cābaddhāḥ*
 [BHĀG. P. 8,9,23.]
-  <sub>DCS 2655 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) verbinden, zusammenfügen: *vātābaddhābhavanmeghāḥ* (für *vātābaddhā abhavan)* zusammengeballt
 [MBH. 3,9970.] *ābaddhāñjali* die hohlen Hände zusammengefügt habend
@@ -966,7 +966,7 @@ According to [DHĀTUP. 32,14], *bandhayati* and *bādhayati* mean "to bind toget
 - **EN:** — 2) "to join, put together": *vātābaddhābhavanmeghāḥ* (for *vātābaddhā abhavan)* "clenched, balled together"
 [MBH. 3,9970.] *ābaddhāñjali* "having one's cupped hands joined together"
 [DAŚAK.] in [BENF. Chr. 199,14.]
-  <sub>DCS 2655 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) festhalten: *(brāhmaṇam) kaṇṭhe *
 
@@ -981,7 +981,7 @@ According to [DHĀTUP. 32,14], *bandhayati* and *bādhayati* mean "to bind toget
 
 * vābadhya vāsasā* thus v. a. "to hold fast by the collar"
 [M. 11,205]; vgl. u. simpl. 3.
-  <sub>DCS 2655 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) heften, richten (den Blick, den Geist): *syandanābaddhadṛṣṭi*
 [RAGH. 1,40.] *tadekābaddhamānasā*
@@ -993,7 +993,7 @@ According to [DHĀTUP. 32,14], *bandhayati* and *bādhayati* mean "to bind toget
 - **EN:** — 4) "to fix, direct" (the gaze, the mind): *syandanābaddhadṛṣṭi*
 [RAGH. 1,40.] *tadekābaddhamānasā*
 [KATHĀS. 15,85.]
-  <sub>DCS 2655 · attested</sub>
+  <sub>attested</sub>
 
 **5)** — 5) bewirken, hervorbringen, bilden; an sich hervorbringen, äussern, zeigen: *(tamisram) ābaddharekhamabhito ravimañjarībhiḥ*
 [GĪT. 11,12.] *ābaddhamāla* (zugleich mit angebundenen Kränzen)
@@ -1017,13 +1017,13 @@ According to [DHĀTUP. 32,14], *bandhayati* and *bādhayati* mean "to bind toget
 [BHAṬṬ. 3,30.] *ābaddhavepathu* thus v. a. "trembling"
 [KIR. 5,33.] *ābaddhasāraṇau (karau)*
 [KATHĀS. 6,57.]
-  <sub>DCS 2655 · attested</sub>
+  <sub>attested</sub>
 
 **6)** — Vgl. *ābaddha, ābandha* fg.
 
 - **RU:** — Vgl. *ābaddha, ābandha* fg.
 - **EN:** — Vgl. *ābaddha, ābandha* fg.
-  <sub>DCS 2655 · attested</sub>
+  <sub>attested</sub>
 
 ## bandh
 
@@ -1037,7 +1037,7 @@ According to [DHĀTUP. 32,14], *bandhayati* and *bādhayati* mean "to bind toget
 [R. 6,86,25.]
 - **EN:** — *samā* "to tie something onto oneself": *kavacaṃ ca samābadhya*
 [R. 6,86,25.]
-  <sub>DCS 2655 · attested</sub>
+  <sub>attested</sub>
 
 ## ud+bandh
 
@@ -1072,7 +1072,7 @@ According to [DHĀTUP. 32,14], *bandhayati* and *bādhayati* mean "to bind toget
 [MBH. 4,1312.] med. "to hang oneself"
 [ŚAT. BR. 11,5,1,8.] *galamudbadhya dṛḍhayā celacīrayā* "to tie a noose round one's own neck"
 [RĀJA-TAR. 4,573.]
-  <sub>DCS 14 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) *udbaddha* als Beiw. von Waden so v. a. fest, drall
 [MBH. 1,6074.] [7,7897.]
@@ -1084,13 +1084,13 @@ According to [DHĀTUP. 32,14], *bandhayati* and *bādhayati* mean "to bind toget
 - **EN:** — 2) *udbaddha* as Beiw. of calves, thus v. a. "firm, taut"
 [MBH. 1,6074.] [7,7897.]
 [VARĀH. BṚH. S. 68,17.]
-  <sub>DCS 14 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — Vgl. *udbandha* fgg.
 
 - **RU:** — Vgl. *udbandha* fgg.
 - **EN:** — Vgl. *udbandha* fgg.
-  <sub>DCS 14 · attested</sub>
+  <sub>attested</sub>
 
 ## samud+bandh
 
@@ -1104,7 +1104,7 @@ According to [DHĀTUP. 32,14], *bandhayati* and *bādhayati* mean "to bind toget
 [MBH. 4,1545.]
 - **EN:** — *samud* "to bind fast": *ātmānaṃ kaḥ samudbadhya kaṇṭhe baddhvā mahāśilām . samudraṃ pratareddorbhyām*
 [MBH. 4,1545.]
-  <sub>DCS 1 · attested</sub>
+  <sub>attested</sub>
 
 ## upa+bandh
 
@@ -1121,13 +1121,13 @@ According to [DHĀTUP. 32,14], *bandhayati* and *bādhayati* mean "to bind toget
 - **EN:** — *upa* "to bind" (by hands and feet): *yātudhānānupabaddhānihā vaha*
 [AV. 1,7,7.] *ajam*
 [ŚAT. BR. 2,1,4,3.] [11,5,1,2.]
-  <sub>DCS 4 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — Vgl. *upabandha* .
 
 - **RU:** — Vgl. *upabandha* .
 - **EN:** — Vgl. *upabandha*.
-  <sub>DCS 4 · attested</sub>
+  <sub>attested</sub>
 
 ## ni+bandh
 
@@ -1261,7 +1261,7 @@ According to [DHĀTUP. 32,14], *bandhayati* and *bādhayati* mean "to bind toget
 [10,71.] *tābhyāmubhābhyāṃ (daivena puruṣakāreṇa ca) sarvārthā nibaddhāḥ* "depend on that"
 [73.] *(sadācāram) nibaddhaṃ sveṣu karmasu* "bound to"
 [M. 4,155.]
-  <sub>DCS 197 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) verbinden, zusammenfügen: *dṛḍhataranibaddhamuṣṭi (kṛpaṇa)*
 [Spr. 1227.] *nibaddha eṣa bhavatāmantyaḥ praṇāmāñjaliḥ*
@@ -1338,7 +1338,7 @@ furchen
 [No. 602.] [KULL.] on [M. 8,142.] *praṇītam = smṛtirūpeṇa nibaddham*
 [MALLIN.] on [KUMĀRAS. 6,31.] "to discuss": *svaśākhāvihitaiścāpi śākhāntaragatānvidhīn . kalpakārā vibadhnanti* (read *niba˚) sarva eva vikalpitān ..*
 [KUMĀRILA] in [MÜLLER, SL. 178.]
-  <sub>DCS 197 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) festhalten, zurückhalten, hemmen: *nibadhnīmo 'sya pauruṣam*
 [MBH. 4,982.] *guhānibaddhapratiśabda*
@@ -1350,7 +1350,7 @@ furchen
 - **EN:** — 3) "to hold fast, hold back, check": *nibadhnīmo 'sya pauruṣam*
 [MBH. 4,982.] *guhānibaddhapratiśabda*
 [RAGH. 2,28.]
-  <sub>DCS 197 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) heften auf, setzen, richten, zuwenden: *nālpīyasi nibadhnanti padamunnatacetasaḥ* setzen ihren Fuss auf so v. a. machen sich an
 [Spr. 4435.] *sāṃkhyanibaddhadṛṣṭi*
@@ -1386,7 +1386,7 @@ furchen
 [BHĀG. P. 1,6,25.] [7,1,23.] "to appoint someone to something, charge someone with something": *yatrānibaddho 'pīkṣeta śṛṇuyādvā kiṃcana*
 [M. 8,76.] *upakūlaṃ kālindyāḥ skandhāvāraṃ nibadhnatā* "to set up, install"
 [RĀJA-TAR. 1,60.]
-  <sub>DCS 197 · attested</sub>
+  <sub>attested</sub>
 
 **5)** — 5) *nibaddha* gebildet, bestehend aus: *śauryanibaddhamūla (rākṣasarājavṛkṣa)*
 [R. 6,93,18.]
@@ -1395,7 +1395,7 @@ furchen
 [R. 6,93,18.]
 - **EN:** — 5) *nibaddha* "formed of, consisting of": *śauryanibaddhamūla (rākṣasarājavṛkṣa)*
 [R. 6,93,18.]
-  <sub>DCS 197 · attested</sub>
+  <sub>attested</sub>
 
 **6)** — 6) *nibaddha* sich beziehend auf: *rāme nibaddhāḥ (gāthāḥ)*
 [HARIV. 2352.] *kurukṣetranibaddhā (gāthā)*
@@ -1407,7 +1407,7 @@ furchen
 - **EN:** — 6) *nibaddha* "referring to, relating to": *rāme nibaddhāḥ (gāthāḥ)*
 [HARIV. 2352.] *kurukṣetranibaddhā (gāthā)*
 [MBH. 9,3029.]
-  <sub>DCS 197 · attested</sub>
+  <sub>attested</sub>
 
 **7)** — Vgl. *nibanddhar* fgg. und *anibaddha* .
 - **EN:** — Vgl. *nibanddhar* fgg. and *anibaddha*.
@@ -1415,7 +1415,7 @@ furchen
 **cross-ref)** {T196}— Vgl. *nibanddhar* fgg. und *anibaddha* .
 
 - **RU:** {T196}— Vgl. *nibanddhar* fgg. und *anibaddha* .
-  <sub>DCS 197 · attested</sub>
+  <sub>attested</sub>
 
 ## upani+bandh
 
@@ -1441,7 +1441,7 @@ furchen
 [KULL.] on [M. 2,7.] [Verz. d. Oxf. H. No. 24.] "to discuss"
 [No. 358.] Schol. on [KĀTY. ŚR. 1056,6.] [1059,2], v. u. *viṣayasyānupādānādviṣayyupanibadhyate . yatra sātiśayoktiḥ syāt*
 [PRATĀPAR. 84,b,6.]
-  <sub>DCS 20 · attested</sub>
+  <sub>attested</sub>
 
 ## saṃni+bandh
 
@@ -1462,7 +1462,7 @@ furchen
 
 - **RU:** — Vgl. *saṃnibandha* u. s. w.
 - **EN:** — Vgl. *saṃnibandha* u. s. w.
-  <sub>DCS 3 · attested</sub>
+  <sub>attested</sub>
 
 **1))** — *saṃni*, partic. *saṃnibaddha* geknüpft an, hängend an, abhängend von: *saṃsāre saṃnibaddhānāṃ nigaḍacchedakartarī*
 [BRAHMAVAIV. P.] in [Verz. d. Oxf. H. 20,b,8.] *bharate saṃnibaddhāḥ sma śaunike paśavo yathā*
@@ -1473,7 +1473,7 @@ furchen
 [BRAHMAVAIV. P.] в [Verz. d. Oxf. H. 20,b,8.] *bharate saṃnibaddhāḥ sma śaunike paśavo yathā*
 [R. 2,48,25.] усеянный чем-л.: *krīḍāśca* (места для игр) *nānādrumasaṃnibaddhāḥ*
 [MBH. 3,12318.]
-  <sub>DCS 3 · attested</sub>
+  <sub>attested</sub>
 
 ## nis+bandh
 
@@ -1493,7 +1493,7 @@ furchen
  1) to fix, direct (one's attention etc.) upon: *yanmano mayi nirbaddham*
 [BHĀG. P. 3,9,35.] *mayi nirbaddhahṛdayā*
 [9,4,66.]
-  <sub>DCS 2655 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) sich an Jmd klammern, heftig in Jmd dringen,
 
@@ -1511,13 +1511,13 @@ Jmd stark zusetzen: *nirbadhnatātimātraṃ ca gālavena*
 importune someone urgently: *nirbadhnatātimātraṃ ca gālavena*
 [MBH. 5,4116.] *bhūyo bhūyaśca nirbaddhayā tvayā*
 [DAŚAK.] in [BENF. Chr. 193,3.]
-  <sub>DCS 2655 · attested</sub>
+  <sub>attested</sub>
 
 **caus)** — Vgl. *nirbandha* fgg.
 
 - **RU:** — Vgl. *nirbandha* fgg.
 - **EN:** — Vgl. *nirbandha* fgg.
-  <sub>DCS 2655 · attested</sub>
+  <sub>attested</sub>
 
 ## pari+bandh
 
@@ -1537,7 +1537,7 @@ importune someone urgently: *nirbadhnatātimātraṃ ca gālavena*
  1) med. to bind on, fasten on: *tatra tāni dṛḍhaiḥ pāśaiḥ sugāḍhaṃ paryabandhata*
 [MBH. 4,171.] to bind on oneself, put on: *mekhalām*
 [AV. 6,133,5.]
-  <sub>DCS 5 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) umzingeln: *tato 'sya yajñaviṣayo rakṣobhiḥ paryabadhyata*
 [MBH. 13,4785.]
@@ -1546,7 +1546,7 @@ importune someone urgently: *nirbadhnatātimātraṃ ca gālavena*
 [MBH. 13,4785.]
 - **EN:** — 2) to surround, encircle: *tato 'sya yajñaviṣayo rakṣobhiḥ paryabadhyata*
 [MBH. 13,4785.]
-  <sub>DCS 5 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) hemmen, unterbrechen: *vācā — vāṣpaparibaddhayā*
 [R. 2,58,11.] — caus. umspannen: *vṛṣaṇādhaḥ pārśvapādau pāṇibhyāṃ paribandhayet*
@@ -1558,7 +1558,7 @@ importune someone urgently: *nirbadhnatātimātraṃ ca gālavena*
 - **EN:** — 3) to check, interrupt: *vācā — vāṣpaparibaddhayā*
 [R. 2,58,11.] — caus. to span, encompass: *vṛṣaṇādhaḥ pārśvapādau pāṇibhyāṃ paribandhayet*
 [Verz. d. Oxf. H. 102,b,18.]
-  <sub>DCS 5 · attested</sub>
+  <sub>attested</sub>
 
 ## pra+bandh
 
@@ -1593,7 +1593,7 @@ importune someone urgently: *nirbadhnatātimātraṃ ca gālavena*
 [Spr. 776.] *prabaddhavilūna*
 [P. 4,1,52], Vārtt. 3. *vākprabaddho hi saṃsāraḥ* chained to one's word, dependent on the word
 [MBH. 12,7804.]
-  <sub>DCS 35 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) unterdrücken, hemmen: *prabaddhamūtra* an Harnverhaltung leidend
 [SUŚR. 1,198,20.]
@@ -1602,7 +1602,7 @@ importune someone urgently: *nirbadhnatātimātraṃ ca gālavena*
 [SUŚR. 1,198,20.]
 - **EN:** — 2) to suppress, check: *prabaddhamūtra* suffering from retention of urine
 [SUŚR. 1,198,20.]
-  <sub>DCS 35 · attested</sub>
+  <sub>attested</sub>
 
 **caus-intro)** — Vgl. *prabaddhar* fgg.
 —
@@ -1657,7 +1657,7 @@ importune someone urgently: *nirbadhnatātimātraṃ ca gālavena*
 [ŚAṂK.] zu [BṚH. ĀR. UP. S. 270.] *svāmino yasyoparyāsthā pratibaddhā*
 [PAÑCAT. ed. orn. 60,24.] *āśāpratibaddhacitta*
 [31,6.]
-  <sub>DCS 35 · attested</sub>
+  <sub>attested</sub>
 
 **caus-3)** — 3) verschliessen, abschneiden: *pratibadhnāti hi śreyaḥ pūjyapūjāvyatikramaḥ*
 [RAGH. 1,79.] *asya svargaprāptiranena duṣkṛtena pratibadhyate*
@@ -1672,7 +1672,7 @@ importune someone urgently: *nirbadhnatātimātraṃ ca gālavena*
 [RAGH. 1,79.] *asya svargaprāptiranena duṣkṛtena pratibadhyate*
 [KULL.] zu [M. 9,254.] *pratibaddhaprasara*
 [MALLIN.] zu [KUMĀRAS. 3,12.]
-  <sub>DCS 35 · attested</sub>
+  <sub>attested</sub>
 
 **caus-4)** — 4) Jmd von sich weisen, fern halten von sich: *pratyabadhnāccārthapatim*
 [DAŚAK.] in [BENF. Chr. 190,6.] *paraiḥ pratibadhyamāno 'pi*
@@ -1693,7 +1693,7 @@ importune someone urgently: *nirbadhnatātimātraṃ ca gālavena*
 [MBH. 8,2108.] *pratibaddha = manohata, pratihata, hata*
 [AK. 3,1,41.]
 [H. 439.]
-  <sub>DCS 35 · attested</sub>
+  <sub>attested</sub>
 
 **caus-5)** — 5) *pratibaddha* verwickelt, schwer zu lösen
 [VARĀH. BṚH. S. 2,1.]
@@ -1702,18 +1702,18 @@ importune someone urgently: *nirbadhnatātimātraṃ ca gālavena*
 [VARĀH. BṚH. S. 2,1.]
 - **EN:** — 5) *pratibaddha* entangled, hard to resolve
 [VARĀH. BṚH. S. 2,1.]
-  <sub>DCS 35 · attested</sub>
+  <sub>attested</sub>
 
 **deriv)** — Vgl. *pratibadhya (pratibandhya)* fgg.
 
 - **RU:** — Vgl. *pratibadhya (pratibandhya)* fgg.
 - **EN:** — Vgl. *pratibadhya (pratibandhya)* fgg.
-  <sub>DCS 35 · attested</sub>
+  <sub>attested</sub>
 
 **Nachtrag-1 (T97))** — Vgl. *prabaddhar* fgg.
 
 - **RU:** — Vgl. *prabaddhar* fgg.
-  <sub>DCS 35 · attested</sub>
+  <sub>attested</sub>
 
 **Nachtrag-1a (T98–T99-1) anbinden)** —
  1) *prati* anbinden: *vṛkṣe nāvaṃ pratibadhnīṣva* binde dein Schiff an einen Baum
@@ -1752,7 +1752,7 @@ importune someone urgently: *nirbadhnatātimātraṃ ca gālavena*
 [ŚAṂK.] к [BṚH. ĀR. UP. S. 253.] *mṛtyu˚* подверженный смерти
 [98.] *rasāntareṣu pratibaddharāgam* так: созвучный, гармонирующий
 [KUMĀRAS. 7,91.]
-  <sub>DCS 35 · attested</sub>
+  <sub>attested</sub>
 
 ## vi+bandh
 
@@ -1778,7 +1778,7 @@ importune someone urgently: *nirbadhnatātimātraṃ ca gālavena*
 [AV. 5,20,2.] [6,112,3.] *carmaṇī*
 [LĀṬY. 3,10,11.] *śarkarānsvayamātṛṇṇāṃ śaṇarajjubhyāṃ vibadhya dhārayati* grasping by cords
 [KAUŚ. 72.]
-  <sub>DCS 57 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) *vibaddha* in's Stocken gerathen
 [SUŚR. 2,409,12.] verstopft
@@ -1796,13 +1796,13 @@ importune someone urgently: *nirbadhnatātimātraṃ ca gālavena*
 [411,11.] — *vibaddha* im gaṇa *ṛśyādi* zu [P. 4,2,80.]
 *vibadhnanti* bei
 [MÜLLER, SL. 178] erroneous for *nibadhnanti*.
-  <sub>DCS 57 · attested</sub>
+  <sub>attested</sub>
 
 **deriv)** — Vgl. *vibandha* .
 
 - **RU:** — Vgl. *vibandha* .
 - **EN:** — Vgl. *vibandha*.
-  <sub>DCS 57 · attested</sub>
+  <sub>attested</sub>
 
 ## sam+bandh
 
@@ -1939,7 +1939,7 @@ Schol. zu [P. 4,2,70.] *nadīmāśramasaṃbaddhām* standing in connection with
 [MĀRK. P. 26,14. fg.] *sukhabaddhamasaṃbaddhaṃ tathā hyeṣa prabhāṣate* (of a Kokila)
 [R. 2,96,14] ([105,13] [GORR.]) *saṃbaddham* probably _adv._ in the following passage: *avādayanta gandharvā vāditraṃ sumanoharam . jaguścāpsaraso rājño yaśaḥ saṃbaddhameva ca ..* sang thereto
 [MBH. 9,3443.]
-  <sub>DCS 154 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) Jmd Etwas verschaffen: *manojñagandhaṃ sahakārabhaṅgaṃ purāṇaśīdhruṃ navapāṭlaṃ ca . saṃbadhnatā kāmijaneṣu doṣāḥ sarve nidāghāvadhinā pramṛṣṭāḥ ..*
 [RAGH. 16,52.]
@@ -1948,7 +1948,7 @@ Schol. zu [P. 4,2,70.] *nadīmāśramasaṃbaddhām* standing in connection with
 [RAGH. 16,52.]
 - **EN:** — 2) to procure something for someone: *manojñagandhaṃ sahakārabhaṅgaṃ purāṇaśīdhruṃ navapāṭlaṃ ca . saṃbadhnatā kāmijaneṣu doṣāḥ sarve nidāghāvadhinā pramṛṣṭāḥ ..*
 [RAGH. 16,52.]
-  <sub>DCS 154 · attested</sub>
+  <sub>attested</sub>
 
 **caus)** — Vgl. *saṃbandha* u. s. w. — caus. anbinden lassen: *paśuṃ raktāmbaraṃ kṛtvā yūpe taṃ samabandhayat*
 [R. 1,62,24.] verbinden heissen; sagen, dass man verbinden müsse: *kecittu tatspṛṣṭinamiti cāṇḍālodakyādibhiḥ sarvaiḥ saṃbandhayanti*
@@ -1960,7 +1960,7 @@ Schol. zu [P. 4,2,70.] *nadīmāśramasaṃbaddhām* standing in connection with
 - **EN:** — Vgl. *saṃbandha* u. s. w. — caus. to have bound: *paśuṃ raktāmbaraṃ kṛtvā yūpe taṃ samabandhayat*
 [R. 1,62,24.] to bid join, to say that one must join: *kecittu tatspṛṣṭinamiti cāṇḍālodakyādibhiḥ sarvaiḥ saṃbandhayanti*
 [KULL.] zu [M. 5,85.]
-  <sub>DCS 154 · attested</sub>
+  <sub>attested</sub>
 
 ## anusam+bandh
 
@@ -1974,7 +1974,7 @@ Schol. zu [P. 4,2,70.] *nadīmāśramasaṃbaddhām* standing in connection with
 [MBH. 1,5437.]
 - **EN:** — *anusam*, partic. *˚baddha* connected with, accompanied by: *sādhuvāda˚ (hāhākāra)*
 [MBH. 1,5437.]
-  <sub>DCS 2655 · attested</sub>
+  <sub>attested</sub>
 
 ## abhisam+bandh
 
@@ -2010,12 +2010,12 @@ Schol. zu [P. 2,2,11.] [1,6.] [KULL.] zu [M. 2,204.] Schol. bei
 [PAT.] к [P. 6,1,150.] ders. к 147 при [GOLD.] [MĀN. 127,a.] *arthaśabdaḥ pratyekamabhisaṃbadhyate* относится к, следует отнести, — следует восполнить
 Schol. к [P. 2,2,11.] [1,6.] [KULL.] к [M. 2,204.] Schol. при
 [WILSON, SĀṂKHYAK. S. 51.]
-  <sub>DCS 15 · attested</sub>
+  <sub>attested</sub>
 
 **Nachtrag (T29))** — Vgl. *abhisaṃbandha* .
 
 - **RU:** — Vgl. *abhisaṃbandha* .
-  <sub>DCS 15 · attested</sub>
+  <sub>attested</sub>
 
 ## bandh
 
@@ -2082,7 +2082,7 @@ Schol. к [P. 2,2,11.] [1,6.] [KULL.] к [M. 2,204.] Schol. при
 [HALĀY. 2,375.] *brahmāstreṇa ca bandho vai māruteḥ*
 [R. GORR. 1,4,84.] *baddhau tu śarabandhena bhrātarau raṇamūrdhani*
 [6,20,18.] [5,44,13.] [15.] [MBH. 3,16466.]
-  <sub>DCS 2655 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) das Fangen, Einfangen: *gaja˚*
 [RAGH. 16,2.] *śakunibandhavyasanin*
@@ -2115,7 +2115,7 @@ Schol. к [P. 2,2,11.] [1,6.] [KULL.] к [M. 2,204.] Schol. при
 [HARIV. 3294.] *vandhānmokṣayatu mām*
 [14368.] [MĀLAV. 75.] [RĀJA-TAR. 3,121.] *˚mudrā*
 [4,179.]
-  <sub>DCS 2655 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) das Binden, Zusammenfügen in den verschiedensten Verbindungen (s. u. *bandh* 2.): *setorbandhaḥ, setu˚* die Errichtung eines Dammes, — einer Brücke
 [Spr. 2989.]
@@ -2190,7 +2190,7 @@ Schol. к [P. 2,2,11.] [1,6.] [KULL.] к [M. 2,204.] Schol. при
 [36]
 [RATIM.] and [SMARADĪP.] in the [ŚKDR.] [Verz. d. Oxf. H. 85,b,48.] *kathā˚* "the tying together of the narrative" thus v. a. "introduction"
 [MBH. 1,59] in the Unterschr.
-  <sub>DCS 2655 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) das Heften, Richten: *deśe nābhicakranāsāgrādau cittasya bandhaḥ*
 [Verz. d. Oxf. H. 236,b, N.]
@@ -2199,7 +2199,7 @@ Schol. к [P. 2,2,11.] [1,6.] [KULL.] к [M. 2,204.] Schol. при
 [Verz. d. Oxf. H. 236,b, N.]
 - **EN:** — 4) "the fixing, directing": *deśe nābhicakranāsāgrādau cittasya bandhaḥ*
 [Verz. d. Oxf. H. 236,b, N.]
-  <sub>DCS 2655 · attested</sub>
+  <sub>attested</sub>
 
 **5)** — 5) Verbindung, Verkehr: *ata eva santo nīcabandhaṃ varjayanti*
 [PAÑCAT. 60,19.]
@@ -2208,7 +2208,7 @@ Schol. к [P. 2,2,11.] [1,6.] [KULL.] к [M. 2,204.] Schol. при
 [PAÑCAT. 60,19.]
 - **EN:** — 5) "connection, intercourse": *ata eva santo nīcabandhaṃ varjayanti*
 [PAÑCAT. 60,19.]
-  <sub>DCS 2655 · attested</sub>
+  <sub>attested</sub>
 
 **6)** — 6) in der Philos. Gebundenheit (im Gegens. zu *mukti, mokṣa* Erlösung)
 [ŚVETĀŚV. UP. 6,16.] [KAP. 1,56. 87. 156. 3,24.] [BHAG. 18,30.] [SĀṂKHYAK. 44.] [NĪLAK. 10. 15. 19. 63.] [VṚDDHA-CĀṆ. 13,12.] [Verz. d. Oxf. H. 228,a, N.] [BHĀG. P. 4,30,19.] [MĀRK. P. 29,1.] [95,3.] [6.] [15.] [17.] ist im Sāṃkhya dreifach: *prakṛti˚, vaikārika˚, dakṣiṇā˚*
@@ -2226,7 +2226,7 @@ Schol. к [P. 2,2,11.] [1,6.] [KULL.] к [M. 2,204.] Schol. при
 [TATTVAS. 46.] Vgl. *karmabandha*
 [BHAG. 2,39.] *janma˚*
 [51.]
-  <sub>DCS 2655 · attested</sub>
+  <sub>attested</sub>
 
 **7)** — 7) das Bekommen, bei-sich-zur-Erscheinung-Bringen, Aeusserung: *adehabandhāya* um nicht ferner einen Körper anzunehmen
 [RAGH. 18,6.] *bhūyastanutyajāṃ nāsti śarīrabandhaḥ*
@@ -2253,7 +2253,7 @@ Schol. к [P. 2,2,11.] [1,6.] [KULL.] к [M. 2,204.] Schol. при
 [RAGH. 18,51.] *abhilāṣa˚*
 [6,81.] *lalitavibhramabandhavicakṣaṇa*
 [9,35.]
-  <sub>DCS 2655 · attested</sub>
+  <sub>attested</sub>
 
 **8)** — 8) Band, Fessel
 [H. an. 2,242.]
@@ -2314,7 +2314,7 @@ Schol. к [P. 2,2,11.] [1,6.] [KULL.] к [M. 2,204.] Schol. при
 [RĀJA-TAR. 3,122.] *dharmabandhena baddho 'smi*
 [R. 2,106,8.] *satya˚* _adj._ "for whom truth is a fetter, who holds fast to truth"
 [MBH. 1,6779.]
-  <sub>DCS 2655 · attested</sub>
+  <sub>attested</sub>
 
 **9)** — 9) Sehne (am Körper): *pīvaraśca suvarṇaśca dṛḍhabandhaśca jāyate (mārjāraḥ)*
 [MBH. 5,5437.]
@@ -2323,7 +2323,7 @@ Schol. к [P. 2,2,11.] [1,6.] [KULL.] к [M. 2,204.] Schol. при
 [MBH. 5,5437.]
 - **EN:** — 9) "sinew" (on the body): *pīvaraśca suvarṇaśca dṛḍhabandhaśca jāyate (mārjāraḥ)*
 [MBH. 5,5437.]
-  <sub>DCS 2655 · attested</sub>
+  <sub>attested</sub>
 
 **10)** — 10) Einfassung, Behälter: *ādhārastvambhasāṃ bandhaḥ*
 [H. 1096.]
@@ -2332,7 +2332,7 @@ Schol. к [P. 2,2,11.] [1,6.] [KULL.] к [M. 2,204.] Schol. при
 [H. 1096.]
 - **EN:** — 10) "setting/border, receptacle": *ādhārastvambhasāṃ bandhaḥ*
 [H. 1096.]
-  <sub>DCS 2655 · attested</sub>
+  <sub>attested</sub>
 
 **11)** — 11) Pfand oder vielmehr Verpfändung (vgl. *bandhaka)*
 [H. an.] [MED.]
@@ -2341,7 +2341,7 @@ Schol. к [P. 2,2,11.] [1,6.] [KULL.] к [M. 2,204.] Schol. при
 [H. an.] [MED.]
 - **EN:** — 11) "pledge" or rather "pledging" (vgl. *bandhaka)*
 [H. an.] [MED.]
-  <sub>DCS 2655 · attested</sub>
+  <sub>attested</sub>
 
 **12)** {T235}— 12) Körper
 [H. 564.]
@@ -2350,14 +2350,14 @@ Schol. к [P. 2,2,11.] [1,6.] [KULL.] к [M. 2,204.] Schol. при
 [H. 564.]
 - **EN:** — 12) "body"
 [H. 564.]
-  <sub>DCS 2655 · attested</sub>
+  <sub>attested</sub>
 
 **etym)** — *upasam* daranbinden: *vetasaśākhopasaṃbaddhā bhavati*
 [TBR. 3,8,4,3.] *bandha* (von *bandh)* _m._ gaṇa *uñchādi (karaṇe* d. i. in der Bed. Band) zu [P. 6,1,160.]
 
 - **RU:** — *upasam* привязывать: *vetasaśākhopasaṃbaddhā bhavati*
 [TBR. 3,8,4,3.] *bandha* (от *bandh)* _m._ gaṇa *uñchādi (karaṇe* d. i. в знач. Bed. связь, лента) к [P. 6,1,160.]
-  <sub>DCS 2655 · attested</sub>
+  <sub>attested</sub>
 
 ## bandh
 
@@ -2371,7 +2371,7 @@ Schol. к [P. 2,2,11.] [1,6.] [KULL.] к [M. 2,204.] Schol. при
 [MBH. 4,2126.]
 - **EN:** — 13) consequence, result: *mā te svako 'rtho nipateta mohāttatsaṃvidhātavyamariṣṭbandham (= ariṣṭbaddham)* thus v. a. that which brings well-being
 [MBH. 4,2126.]
-  <sub>DCS 2655 · attested</sub>
+  <sub>attested</sub>
 
 **14)** — 14) in der Rhet. Lautgefüge, Wortgefüge
 [KĀVYĀD. 1,47.] *˚pāruṣya*
@@ -2389,7 +2389,7 @@ Schol. к [P. 2,2,11.] [1,6.] [KULL.] к [M. 2,204.] Schol. при
 [PRATĀPAR. 11,a,9.] [Verz. d. Oxf. H. 207,a,28.] [DHŪRTAS. 68,12.] *kāvya˚* poetic work
 [SĀH. D. 6,12.] *mṛdaṅgādidhvānabandha* a structure of tones, music
 [ŚATR. 10,127.]
-  <sub>DCS 2655 · attested</sub>
+  <sub>attested</sub>
 
 **15)** — 15) eine Krankheit, bei welcher die Augenlider nicht ganz geschlossen werden können (vollständig *vartmabandha)*
 [SUŚR. 2,309,1.]
@@ -2398,7 +2398,7 @@ Schol. к [P. 2,2,11.] [1,6.] [KULL.] к [M. 2,204.] Schol. при
 [SUŚR. 2,309,1.]
 - **EN:** — 15) a disease in which the eyelids cannot be fully closed (in full *vartmabandha)*
 [SUŚR. 2,309,1.]
-  <sub>DCS 2655 · attested</sub>
+  <sub>attested</sub>
 
 **16)** — 16) in Verbindung mit Zahlwörtern Theil: *daśa˚* ein Zehntel
 [M. 8,107.] *pañca˚* (u. *pañcabandha* nicht genau erklärt)
@@ -2413,7 +2413,7 @@ Schol. к [P. 2,2,11.] [1,6.] [KULL.] к [M. 2,204.] Schol. при
 — Vgl. *aṅka˚, artha˚* (also
 [VIKR. 32]), *ka˚, kari˚, ku˚, kūṭa˚, keśa˚, dakṣiṇā˚, paṇa˚* (also
 [DAŚAK.] in [BENF. Chr. 183,20. 191,16]), *pattra˚, padma˚, paśu˚, pāṇi˚, pāda˚, prema˚, premā˚, maṇi˚, rajju˚, roma˚, vatsa˚, vastra˚, vātsa˚, veṇī˚, śreṇī˚* .
-  <sub>DCS 2655 · attested</sub>
+  <sub>attested</sub>
 
 **Nachtr)** — Vgl. *aṅka˚, artha˚* (auch
 [VIKR. 32]), *ka˚, kari˚, ku˚, kūṭa˚, keśa˚, dakṣiṇā˚, paṇa˚* (auch
@@ -2422,7 +2422,7 @@ Schol. к [P. 2,2,11.] [1,6.] [KULL.] к [M. 2,204.] Schol. при
 - **RU:** — Vgl. *aṅka˚, artha˚* (также
 [VIKR. 32]), *ka˚, kari˚, ku˚, kūṭa˚, keśa˚, dakṣiṇā˚, paṇa˚* (также
 [DAŚAK.] в [BENF. Chr. 183,20. 191,16]), *pattra˚, padma˚, paśu˚, pāṇi˚, pāda˚, prema˚, premā˚, maṇi˚, rajju˚, roma˚, vatsa˚, vastra˚, vātsa˚, veṇī˚, śreṇī˚* .
-  <sub>DCS 2655 · attested</sub>
+  <sub>attested</sub>
 
 ## bandh
 
@@ -2446,7 +2446,7 @@ Schol. к [P. 2,2,11.] [1,6.] [KULL.] к [M. 2,204.] Schol. при
 - **EN:** — 2)
 [Sp. 8, Z. 28. fgg.] *chandobaddha* "composed metrically"
 [SARVADARŚANAS. 169,19.] — caus.
-  <sub>DCS 2655 · attested</sub>
+  <sub>attested</sub>
 
 **T58-1)** 1)
 [KATHĀS. 77,77.]
@@ -2455,7 +2455,7 @@ Schol. к [P. 2,2,11.] [1,6.] [KULL.] к [M. 2,204.] Schol. при
 [KATHĀS. 77,77.]
 - **EN:** 1)
 [KATHĀS. 77,77.]
-  <sub>DCS 2655 · attested</sub>
+  <sub>attested</sub>
 
 **T59-60-1)** — *anu*
  1) fesseln in übertr. Bed.
@@ -2474,7 +2474,7 @@ Schol. к [P. 2,2,11.] [1,6.] [KULL.] к [M. 2,204.] Schol. при
 - **EN:** — 6) "to continue, to keep on exerting its effect"
 [UTTARARĀMAC. 64,10], where according to the more recent Ausg.
 ([82,12]) *vipralambhaḥ* is to be read; according to the Comm. *anubadhnāti = mohayati* .
-  <sub>DCS 2655 · attested</sub>
+  <sub>attested</sub>
 
 **T62-63-1)** — *ā*
  1) (dieses am Anfange hinzuzufügen)
@@ -2493,7 +2493,7 @@ Schol. к [P. 2,2,11.] [1,6.] [KULL.] к [M. 2,204.] Schol. при
 - **EN:** — 2) *anyo'nyābaddhabāhavaḥ*
 [BHĀG. P. 10,22,6.] — Instead of *kṛtvābaddhaiḥ śilābandhaiḥ*
 [RĀJA-TAR. 5,92] it is to be written *kṛtvā baddhaiḥ śi˚* with the [ed. Calc.].
-  <sub>DCS 2655 · attested</sub>
+  <sub>attested</sub>
 
 **T65-66-1)** — *ud*
  1) *udbadhyātmānaṃ pāśena* sich erhängend
@@ -2509,7 +2509,7 @@ Schol. к [P. 2,2,11.] [1,6.] [KULL.] к [M. 2,204.] Schol. при
 [BHĀG. P. 10,85,43.]
 - **EN:** — 3) "suspendere, to check, to abolish": *udbaddhavaira*
 [BHĀG. P. 10,85,43.]
-  <sub>DCS 2655 · attested</sub>
+  <sub>attested</sub>
 
 **T68-69-2)** — *ni*
  2)
@@ -2531,13 +2531,13 @@ Schol. к [P. 2,2,11.] [1,6.] [KULL.] к [M. 2,204.] Schol. при
 [UTTARARĀMAC. 120,7 (162,13).]
 - **EN:** — *upani*, ˚*baddha* "composed"
 [UTTARARĀMAC. 120,7 (162,13).]
-  <sub>DCS 2655 · attested</sub>
+  <sub>attested</sub>
 
 **T71)** — Vgl. *upanibandhana* .
 
 - **RU:** — Vgl. *upanibandhana* .
 - **EN:** — Vgl. *upanibandhana* .
-  <sub>DCS 2655 · attested</sub>
+  <sub>attested</sub>
 
 **T72)** — *pari* caus.: *vṛṣaṇādhaḥ pādapārṣṇiṃ pāṇibhyāṃ paribandhayet*
 [ŚKDR.] u. *āsana* .
@@ -2546,60 +2546,60 @@ Schol. к [P. 2,2,11.] [1,6.] [KULL.] к [M. 2,204.] Schol. при
 [ŚKDR.] u. *āsana* .
 - **EN:** — *pari* caus.: *vṛṣaṇādhaḥ pādapārṣṇiṃ pāṇibhyāṃ paribandhayet*
 [ŚKDR.] u. *āsana* .
-  <sub>DCS 2655 · attested</sub>
+  <sub>attested</sub>
 
 **head)** *bandh*¦
 
 - **RU:** *bandh*¦
-  <sub>DCS 2655 · attested</sub>
+  <sub>attested</sub>
 
 **NW56-1)** 1) *vāgbaddha* in der Rede gebunden so v. a. schweigend, Nichts sprechend
 [KATHĀS. 124,159]; vgl. *vāgyata* .
 
 - **RU:** 1) *vāgbaddha* связанный в речи, т.е. v. a. безмолвный, ничего не говорящий
 [KATHĀS. 124,159]; vgl. *vāgyata* .
-  <sub>DCS 2655 · attested</sub>
+  <sub>attested</sub>
 
 **NW59)** — *anu*
 
 - **RU:** — *anu*
-  <sub>DCS 2655 · attested</sub>
+  <sub>attested</sub>
 
 **NW60-1)** 1) fesseln in übertr. Bed.
 [BHĀG. P. 10,47,42.]
 
 - **RU:** 1) сковывать в übertr. Bed.
 [BHĀG. P. 10,47,42.]
-  <sub>DCS 2655 · attested</sub>
+  <sub>attested</sub>
 
 **NW62)** — *ā*
 
 - **RU:** — *ā*
-  <sub>DCS 2655 · attested</sub>
+  <sub>attested</sub>
 
 **NW63-1)** 1) (dieses am Anfange hinzuzufügen)
 [KATHĀS. 72,279.]
 
 - **RU:** 1) (следует добавить в начале)
 [KATHĀS. 72,279.]
-  <sub>DCS 2655 · attested</sub>
+  <sub>attested</sub>
 
 **NW65)** — *ud*
 
 - **RU:** — *ud*
-  <sub>DCS 2655 · attested</sub>
+  <sub>attested</sub>
 
 **NW66-1)** 1) *udbadhyātmānaṃ pāśena* sich erhängend
 [KATHĀS. 74,163.]
 
 - **RU:** 1) *udbadhyātmānaṃ pāśena* вешающийся
 [KATHĀS. 74,163.]
-  <sub>DCS 2655 · attested</sub>
+  <sub>attested</sub>
 
 **NW68)** — *ni*
 
 - **RU:** — *ni*
-  <sub>DCS 2655 · attested</sub>
+  <sub>attested</sub>
 
 **NW69-2)** 2)
 [Sp. 12, Z. 8. fg.] *andhakāranīrandhranibaddha*
@@ -2612,7 +2612,7 @@ Schol. к [P. 2,2,11.] [1,6.] [KULL.] к [M. 2,204.] Schol. при
 [UTTARARĀMAC. 105,10 (143,2).] *yasya hāsaḥ sa cetkvāpi sākṣānnaiva nibadhyate* так v. a. представляется
 [SĀH. D. 229.] *atra ṭakārāḥ — kevalaṃ śaktipradarśanāya nibaddhāḥ* так v. a. применяется, используется
 [219,15.]
-  <sub>DCS 2655 · attested</sub>
+  <sub>attested</sub>
 
 ## bandh
 
@@ -2633,7 +2633,7 @@ Schol. к [P. 2,2,11.] [1,6.] [KULL.] к [M. 2,204.] Schol. при
 [PAT. a. a. O. 1,222,a.]
 - **EN:** — *anu* pass. to take place, occur
 [PAT. a. a. O. 1,222,a.]
-  <sub>DCS 2655 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — *ud*
  1) *vaṭavṛkṣa ātmānamudbadhya* sich erhängen
@@ -2652,38 +2652,38 @@ Schol. к [P. 2,2,11.] [1,6.] [KULL.] к [M. 2,204.] Schol. при
 **head)** *bandh*¦
 
 - **RU:** *bandh*¦
-  <sub>DCS 2655 · attested</sub>
+  <sub>attested</sub>
 
 **NW17-3)** 3) *rāgī badhnāti karmāṇi (kāryāṇi* vermuthet) so v. a. unterlässt
 [Spr. (II) 5732.]
 
 - **RU:** 3) *rāgī badhnāti karmāṇi (kāryāṇi* предполагается) так v. a. упускает, не делает
 [Spr. (II) 5732.]
-  <sub>DCS 2655 · attested</sub>
+  <sub>attested</sub>
 
 **NW19)** — *ud*
 
 - **RU:** — *ud*
-  <sub>DCS 2655 · attested</sub>
+  <sub>attested</sub>
 
 **NW20-1)** 1) *vaṭavṛkṣa ātmānamudbadhya* sich erhängen
 [PAÑCAT. 135,3], v. l.
 
 - **RU:** 1) *vaṭavṛkṣa ātmānamudbadhya* вешаться
 [PAÑCAT. 135,3], v. l.
-  <sub>DCS 2655 · attested</sub>
+  <sub>attested</sub>
 
 **NW21)** — *ni*
 
 - **RU:** — *ni*
-  <sub>DCS 2655 · attested</sub>
+  <sub>attested</sub>
 
 **NW22-2)** 2) partic. *nibaddha* aus vielen Sätzen oder Strophen bestehend, *a˚* nur aus einem Satze oder einer Strophe bestehend
 [VĀMANA 1,3,28. 30.]
 
 - **RU:** 2) partic. *nibaddha* состоящий из многих предложений или строф, *a˚* состоящий лишь из одного предложения или одной строфы
 [VĀMANA 1,3,28. 30.]
-  <sub>DCS 2655 · attested</sub>
+  <sub>attested</sub>
 
 ## bandh
 
@@ -2694,19 +2694,19 @@ Schol. к [P. 2,2,11.] [1,6.] [KULL.] к [M. 2,204.] Schol. при
 
 - **RU:** — 6〉 удерживать кого-либо [NAIṢ. 6,107].
 - **EN:** 6) to hold someone back [NAIṢ. 6,107].
-  <sub>DCS 2655 · attested</sub>
+  <sub>attested</sub>
 
 **7)** — 7〉 Jmd von sich weisen, fern halten von sich. *˚baddha* so v. a. mit dem man Nichts zu thun haben will.
 
 - **RU:** — 7〉 отстранять кого-либо от себя, держать на расстоянии от себя. *˚baddha* так v. a. с кем не хотят иметь ничего общего.
 - **EN:** 7) to repel someone, to keep someone at a distance from oneself. *˚baddha* hence v. a. one with whom one wants to have nothing to do.
-  <sub>DCS 2655 · attested</sub>
+  <sub>attested</sub>
 
 **8)** — 8〉 *pratibaddha* verwickelt, schwer zu lösen.
 
 - **RU:** — 8〉 *pratibaddha* запутанный, трудно разрешимый.
 - **EN:** 8) *pratibaddha* entangled, hard to resolve.
-  <sub>DCS 2655 · attested</sub>
+  <sub>attested</sub>
 
 **prati2)** — Mit *vi*
 - **EN:** — With *vi* (prati, continued)
@@ -2718,19 +2718,19 @@ Schol. к [P. 2,2,11.] [1,6.] [KULL.] к [M. 2,204.] Schol. при
 
 - **RU:** — 2〉 захватывать верёвками (Instr.).
 - **EN:** 2) to grasp by cords (Instr.).
-  <sub>DCS 2655 · attested</sub>
+  <sub>attested</sub>
 
 **prati2-3)** — 3〉 inʼs Stocken bringen. *purīṣam* [CARAKA. 5,10]. *vibaddha* inʼs Stocken gerathen, verstopft.
 
 - **RU:** — 3〉 приводить в застой. *purīṣam* [CARAKA. 5,10]. *vibaddha* приходить в застой, закупориваться.
 - **EN:** 3) to bring to a standstill. *purīṣam* [CARAKA. 5,10]. *vibaddha* to come to a standstill, stopped up.
-  <sub>DCS 2655 · attested</sub>
+  <sub>attested</sub>
 
 **prati2-4)** — 4〉 *vibadhnanti* [MÜLLER, SL. 178] fehlerhaft für *niba˚*.
 
 - **RU:** — 4〉 *vibadhnanti* [MÜLLER, SL. 178] ошибочно вместо *niba˚*.
 - **EN:** 4) *vibadhnanti* [MÜLLER, SL. 178] erroneously for *niba˚*.
-  <sub>DCS 2655 · attested</sub>
+  <sub>attested</sub>
 
 **sam)** — Mit *sam*
 - **EN:** — With *sam* (sam)
@@ -2742,7 +2742,7 @@ Schol. к [P. 2,2,11.] [1,6.] [KULL.] к [M. 2,204.] Schol. при
 
 - **RU:** — 2〉 добывать, доставлять.
 - **EN:** 2) to procure, to provide.
-  <sub>DCS 2655 · attested</sub>
+  <sub>attested</sub>
 
 **sam-caus)** — Caus.
 - **EN:** — Caus. (causative)
@@ -2754,52 +2754,52 @@ Schol. к [P. 2,2,11.] [1,6.] [KULL.] к [M. 2,204.] Schol. при
 
 - **RU:** — 2〉 велеть соединять с (Instr.) так v. a. говорить, что нужно соединить.
 - **EN:** 2) to bid be joined with (Instr.), hence v. a. to say that one must join.
-  <sub>DCS 2655 · attested</sub>
+  <sub>attested</sub>
 
 **sam-anu)** Mit *anusam*. *anusaṃbaddha* verbunden mit, begleitet von (im Comp. vorangehend).
 
 - **RU:** Mit *anusam*. *anusaṃbaddha* связанный с, сопровождаемый (в Comp. предшествующий).
 - **EN:** With *anusam*. *anusaṃbaddha* joined with, accompanied by (preceding in Comp.).
-  <sub>DCS 2655 · attested</sub>
+  <sub>attested</sub>
 
 **sam-abhi)** — Mit *abhisam* mit Etwas verbinden, so v. a. darunter verstehen. Pass. verbunden werden mit, so v. a. gehören zu (Instr.). *pratyekam* zu Jedem gehören, — zu ergänzen sein [225,22]. [234,29].
 
 - **RU:** — Mit *abhisam* соединять с чем-либо, так v. a. подразумевать под этим. Pass. быть соединённым с, так v. a. принадлежать к (Instr.). *pratyekam* принадлежать к каждому, — быть подразумеваемым [225,22]. [234,29].
 - **EN:** — With *abhisam* to join with something, hence v. a. to understand thereby. Pass. to become joined with, hence v. a. to belong to (Instr.). *pratyekam* to belong to each, — to be supplied [225,22]. [234,29].
-  <sub>DCS 2655 · attested</sub>
+  <sub>attested</sub>
 
 **sam-ud)** — Mit *upasam*, *uapasaṃddha* darangebunden.
 
 - **RU:** — Mit *upasam*, *uapasaṃddha* привязанный к тому.
 - **EN:** — With *upasam*, *uapasaṃddha* bound thereto.
-  <sub>DCS 2655 · attested</sub>
+  <sub>attested</sub>
 
 **sam-prati)** — Mit *pratisam*, *pratisaṃbaddha* zusammenhängend, in Zusammenhang stehend [CARAKA. 3,8].
 
 - **RU:** — Mit *pratisam*, *pratisaṃbaddha* связанный вместе, находящийся во взаимосвязи [CARAKA. 3,8].
 - **EN:** — With *pratisam*, *pratisaṃbaddha* coherent, standing in connection [CARAKA. 3,8].
-  <sub>DCS 2655 · attested</sub>
+  <sub>attested</sub>
 
 **mit-T5-1)** — Mit *vi*
 — 1〉 auf verschiedenen Seiten anbinden; ausspannen, spannen.
 
 - **RU:** — Mit *vi*
 — 1〉 привязывать с разных сторон; распрягать, натягивать.
-  <sub>DCS 2655 · attested</sub>
+  <sub>attested</sub>
 
 **mit-T13-1)** — Mit *sam*
 — 1〉 zusammenbinden, verknüpfen, anbinden. Pass. sich verbinden, zusammenkleben, verbunden werden mit, so v. a. gehören zu (Instr. [224,17]), zu ergänzen sein in (Loc.). *saṃbaddha* zusammengebunden; geschlossen; verbunden mit (Instr. oder im Comp. vorangehend [223,17]), bedeckt mit (Instr.), erfüllt von (im Comp. vorangehend), in Verbindung stehend mit (im Comp. vorangehend), verbunden mit (im Comp. vorangehend), in Verbindung stehend mit (im Comp. vorangehend), verbunden mit (im Comp. vorangehend), so v. a. enthaltend; verbunden, so v. a. da seiend, vorhanden, sich befindend. *saṃbaddham* _Adv._ dazu, überdies.
 
 - **RU:** — Mit *sam*
 — 1〉 связывать вместе, соединять, привязывать. Pass. соединяться, слипаться, быть связанным с, так v. a. принадлежать к (Instr. [224,17]), быть подразумеваемым в (Loc.). *saṃbaddha* связанный вместе; закрытый; связанный с (Instr. или в Comp. предшествующий [223,17]), покрытый (Instr.), наполненный (в Comp. предшествующий), находящийся в связи с (в Comp. предшествующий), связанный с (в Comp. предшествующий), находящийся в связи с (в Comp. предшествующий), связанный с (в Comp. предшествующий), так v. a. содержащий; связанный, так v. a. находящийся здесь, наличный, пребывающий. *saṃbaddham* _Adv._ сверх того, к тому же.
-  <sub>DCS 2655 · attested</sub>
+  <sub>attested</sub>
 
 **caus-T33-1)** — Caus.
 — 1〉 anbinden lassen.
 
 - **RU:** — Caus.
 — 1〉 велеть привязывать.
-  <sub>DCS 2655 · attested</sub>
+  <sub>attested</sub>
 
 ## bandh
 
@@ -2810,13 +2810,13 @@ Schol. к [P. 2,2,11.] [1,6.] [KULL.] к [M. 2,204.] Schol. при
 
 - **RU:** √*bandh*¦ IV. *bandha* 2-я Imper. [R. ed. Bomb. 3,56,21].
 - **EN:** √*bandh* class IV, *bandha* 2nd Imper. [R. ed. Bomb. 3,56,21].
-  <sub>DCS 2655 · attested</sub>
+  <sub>attested</sub>
 
 **IV.2)** — Mit *ā* Med. sich erhängen [R. ed. Bomb. 3,45,36].
 
 - **RU:** — Mit *ā* Med. вешаться (самоповешение) [R. ed. Bomb. 3,45,36].
 - **EN:** — With *ā* Med. to hang oneself [R. ed. Bomb. 3,45,36].
-  <sub>DCS 2655 · attested</sub>
+  <sub>attested</sub>
 
 **IV.3)** — Mit *vini* IV. fesseln [JĀTAKAM. 31]. — Caus. dass. [17,17].
 - **EN:** — With *vini* class IV, to fetter, bind [JĀTAKAM. 31]. — Caus. dass. [17,17].
@@ -2824,7 +2824,7 @@ Schol. к [P. 2,2,11.] [1,6.] [KULL.] к [M. 2,204.] Schol. при
 **mit-T8-fesseln)** — Mit *vini* IV. fesseln [JĀTAKAM. 31]. — Caus. dass. [17,17].
 
 - **RU:** — Mit *vini* IV. оковывать, связывать [JĀTAKAM. 31]. — Caus. dass. [17,17].
-  <sub>DCS 2655 · attested</sub>
+  <sub>attested</sub>
 
 ## bandh
 
@@ -2838,7 +2838,7 @@ Schol. к [P. 2,2,11.] [1,6.] [KULL.] к [M. 2,204.] Schol. при
 
 - **RU:** — Mit vini оковывать, связывать, [Jātakam. 31.]
 - **EN:** — With vini to fetter, bind, [Jātakam. 31.]
-  <sub>DCS 2655 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — [Kaus.] dass.,17,17. {part=,seq=20279,type=,n=5}
 - **EN:** — [Kaus.] the same, 17, 17. {part=,seq=20279,type=,n=5}
@@ -2846,17 +2846,17 @@ Schol. к [P. 2,2,11.] [1,6.] [KULL.] к [M. 2,204.] Schol. при
 **sch-bandha-imper)** bandh¦ [R. ed. Bomb. 3,56,21] bandha 2. Imper.
 
 - **RU:** bandh¦ [R. ed. Bomb. 3,56,21] bandha 2. Imper.
-  <sub>DCS 2655 · attested</sub>
+  <sub>attested</sub>
 
 **sch-mit-a-sich-erhaengen)** — Mit ā [Med.] sich erhängen, [R. ed. Bomb. 3,45,36.]
 
 - **RU:** — Mit ā [Med.] вешаться, [R. ed. Bomb. 3,45,36.]
-  <sub>DCS 2655 · attested</sub>
+  <sub>attested</sub>
 
 **sch-dass-17-17)** — [Kaus.] dass.,17,17.
 
 - **RU:** — [Kaus.] то же, 17,17.
-  <sub>DCS 2655 · attested</sub>
+  <sub>attested</sub>
 
 ## bandh
 
@@ -2867,16 +2867,16 @@ Schol. к [P. 2,2,11.] [1,6.] [KULL.] к [M. 2,204.] Schol. при
 
 - **RU:** *bandh*¦ IV. *bandha* 2-я Imper. [R. ed. Bomb. 3,56,21].
 - **EN:** *bandh* class IV, *bandha* 2nd Imper. [R. ed. Bomb. 3,56,21].
-  <sub>DCS 2655 · attested</sub>
+  <sub>attested</sub>
 
 **IV.2)** — Mit *ā* Med. sich erhängen [R. ed. Bomb. 3,45,36].
 
 - **RU:** — Mit *ā* Med. вешаться (самоповешение) [R. ed. Bomb. 3,45,36].
 - **EN:** — With *ā* Med. to hang oneself [R. ed. Bomb. 3,45,36].
-  <sub>DCS 2655 · attested</sub>
+  <sub>attested</sub>
 
 **IV.3)** — Mit *vini* IV. fesseln [JĀTAKAM. 31]. — Caus. dass. [17,17].
 
 - **RU:** — Mit *vini* IV. оковывать, связывать [JĀTAKAM. 31]. — Caus. dass. [17,17].
 - **EN:** — With *vini* class IV, to fetter, bind [JĀTAKAM. 31]. — Caus. dass. [17,17].
-  <sub>DCS 2655 · attested</sub>
+  <sub>attested</sub>

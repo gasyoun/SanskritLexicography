@@ -13,7 +13,7 @@
 - **EN:** — *sam*
  1) act. to unite, join together: *saṃ śrudhīyataścidyatatho mahitvā*
 [ṚV. 6,67,3.]
-  <sub>DCS 9672 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) med. sich aneinander reihen: *saṃ śūraṇāso divyāso atyāḥ . haṃsā iva śreṇiśo yatante*
 [ṚV. 1,163,10.] *saṃ dānucitrā uṣaso yatantam*
@@ -25,7 +25,7 @@
 - **EN:** — 2) med. to range oneself alongside one another, fall into line: *saṃ śūraṇāso divyāso atyāḥ . haṃsā iva śreṇiśo yatante*
 [ṚV. 1,163,10.] *saṃ dānucitrā uṣaso yatantam*
 [5,59,8.]
-  <sub>DCS 9672 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) med. sich vereinigen, zusammentreffen, sich verbinden mit: *saṃ bhānunā yatate sūryasya*
 [ṚV. 5,37,1.] *saṃ raśmibhiryatate darśato rathaḥ*
@@ -37,7 +37,7 @@
 - **EN:** — 3) med. to unite, come together, associate with: *saṃ bhānunā yatate sūryasya*
 [ṚV. 5,37,1.] *saṃ raśmibhiryatate darśato rathaḥ*
 [9,111,3.]
-  <sub>DCS 9672 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) med. an einander gerathen, in Streit kommen: *saṃ yanmahī mithatī spardhamāne tanūrucā śūrasātā yataite*
 [ṚV. 7,93,5.]
@@ -73,7 +73,7 @@
 [CHĀND. UP. 1,2,1.] *saṃgrāmaṃ saṃyatiṣyamāṇaḥ*
 [AIT. BR. 8,10.] *saṃgrāme saṃyatte*
 [TS. 2,2,8,2.]
-  <sub>DCS 9672 · attested</sub>
+  <sub>attested</sub>
 
 **5)** — 5) *saṃyatta* vorbereitet, ganz bei der Sache seiend, der seine Maassregeln getroffen hat, auf der Hut seiend, sich vorsehend: *samare*
 [MBH. 7,5179.] *tathā yudhyeta saṃyatto*
@@ -103,10 +103,10 @@
 [HARIV. 15389] (*susaṃpanna* the later Ausg.).
 [BHĀG. P. 8,7,2] (according to the reading of the [ed. Bomb.]). *a˚*
 [6,28.]
-  <sub>DCS 9672 · attested</sub>
+  <sub>attested</sub>
 
 **deriv)** — Vgl. *asaṃyatta* .
 
 - **RU:** — Vgl. *asaṃyatta* .
 - **EN:** — Vgl. *asaṃyatta* .
-  <sub>DCS 9672 · lexicographic</sub>
+  <sub>lexicographic</sub>

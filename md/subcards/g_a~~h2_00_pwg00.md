@@ -13,4 +13,4 @@
 - **EN:** 3. *gā*¦ (from *gam*) _adj._ going, at the end of compp.
 [P. 3,2,67] ([ved.).] [VOP. 26,66.] [67.]
 — Vgl. *agā, agregā, purogā, svastigā* and 1. *ga* .
-  <sub>DCS 1930 · lexicographic</sub>
+  <sub>lexicographic</sub>

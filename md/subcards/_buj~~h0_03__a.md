@@ -22,4 +22,4 @@
 [PAÑCAR. 3,6,11.] pushed to one side
 [DAŚAK.] in [BENF. Chr. 198,21.]
 — Vgl. *ābhoga* .
-  <sub>DCS 23 · attested</sub>
+  <sub>attested</sub>

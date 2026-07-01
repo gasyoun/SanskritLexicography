@@ -68,7 +68,7 @@ Schol. to [P. 3,4,104.] [1,2,11.] [8,3,78.] pass. *ijyate, ijyant, yajyamāna* a
 [PAT.] to [P. 6,1,108.] *iṣṭa; yaṣṭum, yaṣṭave, yajadhyai, ījitum*
 [MBH. 2,1230.] *iṣṭvā, iṣṭvīnam*
 [P. 7,1,48.]
-  <sub>DCS 6777 · attested</sub>
+  <sub>attested</sub>
 
 **1a)** 1) einen Gott verehren, huldigen, auch mit Gebet und Darbringung, daher weihen, opfern. In der alten Sprache in der Regel act., wenn Agni oder ein anderer Mittler handelt, und med., wenn der Mensch für sich verehrt und darbringt; später act. vom Opferpriester, med. vom Veranstalter des Opfers (*yajanti yājakāḥ, yajamāno yajeta*
 Schol. zu [P. 1,3,72.] [VOP. 23,58]). Ausnahmen sind jedoch häufig.
@@ -298,7 +298,7 @@ Schol. zu [P. 1,3,72.] [VOP. 23,58]). Ausnahmen sind jedoch häufig.
 
 - **RU:** 1) почитать бога, воздавать ему почесть, также с молитвой и подношением, отсюда посвящать, жертвовать. В древнем языке обычно act., когда действует Agni или иной посредник, и med., когда человек чтит и приносит жертву сам для себя; позднее act. об жреце-совершителе, med. об устроителе жертвоприношения (*yajanti yājakāḥ, yajamāno yajeta*
 Schol. zu [P. 1,3,72.] [VOP. 23,58]). Исключения, однако, часты.
-  <sub>DCS 6777 · attested</sub>
+  <sub>attested</sub>
 
 **1)a) — с dat./acc. бога, цели и instr. орудия)** a) mit acc. des Gottes, dat. der Person oder des Zweckes, für welchen, und instr. der Sache oder des Werkzeuges, womit die Handlung vollzogen wird. *agne vīhi haviṣā yakṣi devān*
 [ṚV. 7,17,3.] *ṛtaṃ hotā na iṣito yajāti*
@@ -519,7 +519,7 @@ Schol. zu [P. 1,4,32], Vārtt. *surāghaṭasahasreṇa māṃsabhūtodanena ca 
 [R. 1,39,25.] [61,5.] *iṣṭvā*
 [M. 4,236.]
 [R. 2,72,25.]
-  <sub>DCS 6777 · attested</sub>
+  <sub>attested</sub>
 
 ## yaj
 
@@ -602,7 +602,7 @@ Schol. zu [P. 1,4,32], Vārtt. *surāghaṭasahasreṇa māṃsabhūtodanena ca 
 [BHAG. 17,11.] *aśvamedhādayo yajñāstvayeṣṭāḥ*
 [MĀRK. P. 15,54.] *sarvavedāḥ sa yeneṣṭho yāgaḥ sarvasvadakṣiṇaḥ*
 [AK. 2,7,9.]
-  <sub>DCS 6777 · attested</sub>
+  <sub>attested</sub>
 
 **1c)** — c) mit dat. der Person und acc. der Sache: *mahyaṃ yajantu*
 ([AV.] *yajantām) mama yāni havyā*
@@ -620,7 +620,7 @@ Schol. zu [P. 1,4,32], Vārtt. *surāghaṭasahasreṇa māṃsabhūtodanena ca 
 [ṚV. 10,128,4.] with loc. of the person
 [MAITRYUP. 6,9.] the person in acc. with *prati*
 [R. 2,107,11.]
-  <sub>DCS 6777 · attested</sub>
+  <sub>attested</sub>
 
 **1d)** — d) opfern so v. a. hingeben: *yajantībhiḥ svavigrahān*
 [BHAṬṬ. 8,49.]
@@ -629,7 +629,7 @@ Schol. zu [P. 1,4,32], Vārtt. *surāghaṭasahasreṇa māṃsabhūtodanena ca 
 [BHAṬṬ. 8,49.]
 - **EN:** — d) to sacrifice in the sense of to surrender, give up: *yajantībhiḥ svavigrahān*
 [BHAṬṬ. 8,49.]
-  <sub>DCS 6777 · attested</sub>
+  <sub>attested</sub>
 
 **1e)** — e) med. verehren, opfern um Etwas (acc.): *sakhyam*
 [ṚV. 7,36,5.]
@@ -638,7 +638,7 @@ Schol. zu [P. 1,4,32], Vārtt. *surāghaṭasahasreṇa māṃsabhūtodanena ca 
 [ṚV. 7,36,5.]
 - **EN:** — e) med. to worship, sacrifice for the sake of something (acc.): *sakhyam*
 [ṚV. 7,36,5.]
-  <sub>DCS 6777 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) im Ritual durch die Yājyā — Strophe zum Opfer einladen: *catasro devatā yajati*
 [ŚAT. BR. 1,9,2,6.] [4,4,5,16.]
@@ -650,13 +650,13 @@ Schol. zu [P. 1,4,32], Vārtt. *surāghaṭasahasreṇa māṃsabhūtodanena ca 
 - **EN:** — 2) in ritual usage, to invite to sacrifice by means of the Yājyā — verse: *catasro devatā yajati*
 [ŚAT. BR. 1,9,2,6.] [4,4,5,16.]
 [ŚĀṄKH. ŚR. 7,4,3. 10,7,9.]
-  <sub>DCS 6777 · attested</sub>
+  <sub>attested</sub>
 
 **cross-ref)** — Vgl. 2. *aniṣṭa* und 2. *iṣṭa* .
 
 - **RU:** — Vgl. 2. *aniṣṭa* und 2. *iṣṭa* .
 - **EN:** — Vgl. 2. *aniṣṭa* and 2. *iṣṭa* .
-  <sub>DCS 6777 · attested</sub>
+  <sub>attested</sub>
 
 ## yaj
 
@@ -742,7 +742,7 @@ Schol. zu [P. 1,4,32], Vārtt. *surāghaṭasahasreṇa māṃsabhūtodanena ca 
 [1,8,6.] [6,13,6.] [10,74,16.] [79,30.] *ayājayadrosavena goparājaṃ dvijottamaiḥ* he caused him to sacrifice by means of distinguished Brahmans
 [3,2,32.] [1,12,36.] with two acc.: *taṃ ca te yājayāmāsuryajñadīkṣām*
 [R. 7,57,10.]
-  <sub>DCS 6777 · attested</sub>
+  <sub>attested</sub>
 
 ## yaj
 
@@ -762,7 +762,7 @@ Schol. zu [P. 1,2,10.] *cāṇḍālasya yiyakṣataḥ*
 Schol. to [P. 1,2,10.] *cāṇḍālasya yiyakṣataḥ*
 [R. GORR. 1,61,14.] *yiyakṣamāṇa*
 [MBH. 2,59.]
-  <sub>DCS 6777 · attested</sub>
+  <sub>attested</sub>
 
 ## yaj
 
@@ -776,7 +776,7 @@ Schol. zu [P. 7,4,83.]
 Schol. zu [P. 7,4,83.]
 - **EN:** — intens. *yāyajyate, yāyajīti*
 Schol. to [P. 7,4,83.]
-  <sub>DCS 6777 · lexicographic</sub>
+  <sub>lexicographic</sub>
 
 ## yaj
 
@@ -790,7 +790,7 @@ Schol. to [P. 7,4,83.]
 [TS. 2,5,4,4.]
 - **EN:** — *ati* to pass over with the sacrifice, to omit in the sacrifice: *yaḥ svāṃ devatāmatiyajate*
 [TS. 2,5,4,4.]
-  <sub>DCS 6777 · attested</sub>
+  <sub>attested</sub>
 
 ## yaj
 
@@ -807,13 +807,13 @@ Schol. zu [KĀTY. ŚR. 16,1,4] (ungedr.).
 - **EN:** — *anu* to worship afterwards: *tamagniṣṭomenānuyajati*
 Schol. to [KĀTY. ŚR. 16,1,4] (ungedr.).
 [PAÑCAR. 3,7,17] is to be written *tadanu yajecca*.
-  <sub>DCS 6777 · attested</sub>
+  <sub>attested</sub>
 
 **anu-yaj-2)** — Vgl. *anu yāga, anuyāja* .
 
 - **RU:** — Vgl. *anu yāga, anuyāja* .
 - **EN:** — Vgl. *anu yāga, anuyāja* .
-  <sub>DCS 6777 · lexicographic</sub>
+  <sub>lexicographic</sub>
 
 ## yaj
 
@@ -827,7 +827,7 @@ Schol. to [KĀTY. ŚR. 16,1,4] (ungedr.).
 [KAUŚ. 97.]
 - **EN:** — *apa* to drive away or expel by means of a sacrifice: *tāṃste yajñasya māyayā sarvānapayajāmasi*
 [KAUŚ. 97.]
-  <sub>DCS 6777 · attested</sub>
+  <sub>attested</sub>
 
 ## yaj
 
@@ -855,7 +855,7 @@ Schol. to [KĀTY. ŚR. 16,1,4] (ungedr.).
 - **RU:** — *abhi* чтить жертвой: *devatā abhiyajet*
 [GOBH. 4,7,16.] *āmāvāsyena haviṣā pūrvapakṣamabhiyajate*
 [1,5,6.] [PAÑCAR. 3,7,12.] Сюда относит
-  <sub>DCS 6777 · attested</sub>
+  <sub>attested</sub>
 
 **abhi-sense-2)** [SĀY.] *bharadvājānsārñjayo abhyayaṣṭa (= apūjayat)*
 [ṚV. 6,47,25.] ein Opfer (acc.) darbringen: *aśvamedhaṃ yajñaṃ vaiṣṇavaṃ śakro 'bhiyajatām*
@@ -864,7 +864,7 @@ Schol. to [KĀTY. ŚR. 16,1,4] (ungedr.).
 - **RU:** [SĀY.] *bharadvājānsārñjayo abhyayaṣṭa (= apūjayat)*
 [ṚV. 6,47,25.] приносить жертву (acc.): *aśvamedhaṃ yajñaṃ vaiṣṇavaṃ śakro 'bhiyajatām*
 [MBH. 12,13217.]
-  <sub>DCS 6777 · attested</sub>
+  <sub>attested</sub>
 
 ## yaj
 
@@ -896,13 +896,13 @@ Schol. to [KĀTY. ŚR. 16,1,4] (ungedr.).
 [3,10,8,2.] [TS. 2,3,12,1.] *nirṛtim*
 [5,2,4,3.] [6,3,1.] *enaḥ*
 [6,6,3,1.] [ŚAT. BR. 12,9,2,4.] [13,3,6,5.] [KĀṬH. 21,6. 36,6.]
-  <sub>DCS 6777 · attested</sub>
+  <sub>attested</sub>
 
 **ava-yaj-2)** — Vgl. *avayajana, avayāj, aveṣṭi* .
 
 - **RU:** — Vgl. *avayajana, avayāj, aveṣṭi* .
 - **EN:** — Vgl. *avayajana, avayāj, aveṣṭi* .
-  <sub>DCS 6777 · lexicographic</sub>
+  <sub>lexicographic</sub>
 
 ## yaj
 
@@ -916,7 +916,7 @@ Schol. to [KĀTY. ŚR. 16,1,4] (ungedr.).
 [KĀṬH. 21,6.]
 - **EN:** — *nirava* to settle with, satisfy in relation to (abl.): *ṛtubhya eva rudraṃ niravayajate*
 [KĀṬH. 21,6.]
-  <sub>DCS 6777 · attested</sub>
+  <sub>attested</sub>
 
 ## yaj
 
@@ -951,7 +951,7 @@ on [P. 6,4,120]) *manuḥ*
 [SĀY.]), [AIT. BR. 1,26] and [VS. 5,7] thus v. a. won by sacrifice, obtained through worship; s. below (3).
 [MAH.] on [VS.] shares this view, whereas
 [SĀY.] on [AIT. BR.] takes *eṣṭar* and *eṣṭā* as nom. ag. to *iṣ*, similarly also in Comm. on [TS. 1,2,11,1.]
-  <sub>DCS 6777 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) verehren, mit acc.: *ā yaṃ hotā yajati viśvavāram*
 [ṚV. 7,7,5.] *yaṃ devāsastrirahannāyajante*
@@ -966,7 +966,7 @@ on [P. 6,4,120]) *manuḥ*
 [ṚV. 7,7,5.] *yaṃ devāsastrirahannāyajante*
 [3,4,2.] *yeṣu viṣṇustriṣu padeṣveṣṭaḥ*
 [VS. 23,49.]
-  <sub>DCS 6777 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) eropfern; überh. verschaffen (dem Menschen von den Göttern), zuwenden; med. auch sich verschaffen: *ā hi ṣmā sūnave pitā yajati*
 [ṚV. 1,26,3.] [40,4.] *agne mahi draviṇamā yajasva*
@@ -1008,13 +1008,13 @@ on [P. 6,4,120]) *manuḥ*
 [10,52,5.] [4,42,8.] *uruṣya rāya eṣo yajasva*
 [VS. 7,4.] [14,4.]
 [ŚAT. BR. 1,7,3,14.]
-  <sub>DCS 6777 · attested</sub>
+  <sub>attested</sub>
 
 **note)** — Vgl. *āyaji* fgg. und *āyāga* .
 
 - **RU:** — Vgl. *āyaji* fgg. und *āyāga* .
 - **EN:** — Vgl. *āyaji* fgg. and *āyāga*.
-  <sub>DCS 6777 · attested</sub>
+  <sub>attested</sub>
 
 ## yaj
 
@@ -1028,7 +1028,7 @@ on [P. 6,4,120]) *manuḥ*
 [ṚV. 10,82,4.]
 - **EN:** — *samā* to procure: *ta āyajanta draviṇaṃ samasmai*
 [ṚV. 10,82,4.]
-  <sub>DCS 6777 · attested</sub>
+  <sub>attested</sub>
 
 ## yaj
 
@@ -1051,13 +1051,13 @@ on [P. 6,4,120]) *manuḥ*
 [ŚAT. BR. 3,8,4,9.] [10.]
 [KĀTY. ŚR. 6,9,10.] *striyaścopayajeran*
 [PĀR. GṚHY. 2,17.]
-  <sub>DCS 6777 · attested</sub>
+  <sub>attested</sub>
 
 **note)** — Vgl. *upayaj, upayaṣṭar, upayāja* .
 
 - **RU:** — Vgl. *upayaj, upayaṣṭar, upayāja* .
 - **EN:** — Vgl. *upayaj, upayaṣṭar, upayāja*.
-  <sub>DCS 6777 · attested</sub>
+  <sub>attested</sub>
 
 ## yaj
 
@@ -1071,7 +1071,7 @@ on [P. 6,4,120]) *manuḥ*
 [ŚAT. BR. 3,8,4,18.] [3,1.]
 - **EN:** — *atyupa* to sacrifice yet further in addition
 [ŚAT. BR. 3,8,4,18.] [3,1.]
-  <sub>DCS 6777 · attested</sub>
+  <sub>attested</sub>
 
 ## yaj
 
@@ -1088,7 +1088,7 @@ on [P. 6,4,120]) *manuḥ*
 - **EN:** — *pari*
  1) to obtain by sacrifice, to gain, to procure: *yathā pūrvebhyaḥ paryayā vājamindo*
 [ṚV. 9,82,5.]
-  <sub>DCS 6777 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) im Ritual vor und nach Jmd opfern, — verehren, eine Opferhandlung durch andere gleichsam unterstützen: *dhātārameva sarvāsāṃ purastātpurastādājyena pariyajet*
 [AIT. BR. 3,47.] *yadvapāṃ mahimnobhayataḥ pariyajati*
@@ -1112,7 +1112,7 @@ on [P. 6,4,120]) *manuḥ*
 [KĀTY. ŚR. 10,6,8.]
 [ĀŚV. ŚR. 5,19,2.]
 [LĀṬY. 8,11,12. 9,4,1. 2.]
-  <sub>DCS 6777 · attested</sub>
+  <sub>attested</sub>
 
 ## yaj
 
@@ -1144,7 +1144,7 @@ on [P. 6,4,120]) *manuḥ*
 [10,4,1.] *tava pra yakṣi saṃdṛśam*
 [6,16,8.] *(hotuḥ) tasyānu dharmaṃ pra yaja*
 [3,17,5.] [TS. 3,2,7,1.] [PAÑCAR. 3,6,13. 15. 8,5. 10,9.] med. 8,1.
-  <sub>DCS 6777 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) ein best. Opfer (*prayāja*) darbringen: *yāvāneva paśustaṃ prayajati*
 [TS. 6,3,7,5.]
@@ -1153,13 +1153,13 @@ on [P. 6,4,120]) *manuḥ*
 [TS. 6,3,7,5.]
 - **EN:** — 2) to offer a best. sacrifice (*prayāja*): *yāvāneva paśustaṃ prayajati*
 [TS. 6,3,7,5.]
-  <sub>DCS 6777 · attested</sub>
+  <sub>attested</sub>
 
 **note)** — Vgl. *prayaj*, fg., *prayāga, prayāja* .
 
 - **RU:** — Vgl. *prayaj*, fg., *prayāga, prayāja* .
 - **EN:** — Vgl. *prayaj*, fg., *prayāga, prayāja*.
-  <sub>DCS 6777 · attested</sub>
+  <sub>attested</sub>
 
 ## yaj
 
@@ -1173,7 +1173,7 @@ on [P. 6,4,120]) *manuḥ*
 [ŚAT. BR. 4,6,8,19.]
 - **EN:** — *prati* to sacrifice in return, to sacrifice on the other side: *ājyenetare pratiyajanta āsate*
 [ŚAT. BR. 4,6,8,19.]
-  <sub>DCS 6777 · attested</sub>
+  <sub>attested</sub>
 
 ## yaj
 
@@ -1217,7 +1217,7 @@ on [P. 6,4,120]) *manuḥ*
 
 - **RU:** — Vgl. *saṃyāja, saṃyājya, samiṣṭayajus* .
 - **EN:** — Vgl. *saṃyāja, saṃyājya, samiṣṭayajus*.
-  <sub>DCS 6777 · attested</sub>
+  <sub>attested</sub>
 
 **1) совместно чтить/жертвовать богам)** — *sam* zusammen (den Göttern) huldigen, — opfern: *hotārā ṛju yakṣataḥ samṛcā*
 [ṚV. 2,3,7.] *yadbrāhmaṇāḥ saṃyajante sakhāyaḥ*
@@ -1230,26 +1230,26 @@ on [P. 6,4,120]) *manuḥ*
 [10,71,8.] *viśve devāḥ samayajanta*
 [TBR. 1,4,10,3.]
 [ŚAT. BR. 4,2,1,33.]
-  <sub>DCS 6777 · attested</sub>
+  <sub>attested</sub>
 
 **жертвовать (более позднее словоупотребление))** [ŚĀṄKH. ŚR. 14,29,6. 39,7.] opfern: *saṃyaṣṭuṃ (yaṣṭuṃ sa* die neuere Ausg.) *vājimedhena saṃbhārānupacakrame*
 [HARIV. 11087.] *kratubhiḥ samīje*
 
 - **RU:** [ŚĀṄKH. ŚR. 14,29,6. 39,7.] жертвовать: *saṃyaṣṭuṃ (yaṣṭuṃ sa* более новое Ausg.) *vājimedhena saṃbhārānupacakrame*
 [HARIV. 11087.] *kratubhiḥ samīje*
-  <sub>DCS 6777 · attested</sub>
+  <sub>attested</sub>
 
 **чтить кого-либо)** [BHĀG. P. 9,24,65.] Jmd huldigen: *pūjyāṃśca saṃyajet*
 [Spr. 4114],
 
 - **RU:** [BHĀG. P. 9,24,65.] чтить кого-либо: *pūjyāṃśca saṃyajet*
 [Spr. 4114],
-  <sub>DCS 6777 · attested</sub>
+  <sub>attested</sub>
 
 **совместно подносить)** v. l. zusammen darbringen: *avapruṣo vipruṣo saṃyajāmi*
 
 - **RU:** v. l. подносить совместно: *avapruṣo vipruṣo saṃyajāmi*
-  <sub>DCS 6777 · attested</sub>
+  <sub>attested</sub>
 
 **посвящать)** [TBR. 3,7,6,21.] weihen: *samayaṣṭāstramaṇḍalam*
 [BHAṬṬ. 15,96.] — caus. zusammen opfern lassen, die Patnisaṃyāja machen
@@ -1262,14 +1262,14 @@ on [P. 6,4,120]) *manuḥ*
 [AIT. BR. 1,11.] [3,45.]
 [TBR. 1,1,10,5.]
 [ŚAT. BR. 1,3,1,21.] [9,2,1.] [3,1,3,6.] [2,3,23.] [4,2,1,31.]
-  <sub>DCS 6777 · attested</sub>
+  <sub>attested</sub>
 
 **caus. — быть жрецом для кого-либо)** [KĀṬH. 23,9.] für Jmd (acc.) als Opferpriester thätig sein
 [MBH. 1,6375.] [12,12372.]
 
 - **RU:** [KĀṬH. 23,9.] действовать ради кого-либо (acc.) в качестве жреца-исполнителя
 [MBH. 1,6375.] [12,12372.]
-  <sub>DCS 6777 · attested</sub>
+  <sub>attested</sub>
 
 ## yaj
 
@@ -1283,7 +1283,7 @@ on [P. 6,4,120]) *manuḥ*
 [P. 8,2,36]) в конце comp. воздающий поклонение, приносящий жертву; s. *divi˚, deva˚* .
 - **EN:** 2. *yaj*¦ (= 1. *yaj*) nom. ag. (nom. *yaḍ* according to
 [P. 8,2,36]) at the end of a comp. paying homage, sacrificing; s. *divi˚, deva˚*.
-  <sub>DCS 6777 · lexicographic</sub>
+  <sub>lexicographic</sub>
 
 ## yaj
 
@@ -1297,7 +1297,7 @@ on [P. 6,4,120]) *manuḥ*
 [VYĀḌI] при Schol. к [H. 104.]
 - **EN:** *yaj*¦ (from 1. *yaj*) _m._ N. one of the ten horses of the Moon
 [VYĀḌI] in the Schol. on [H. 104.]
-  <sub>DCS 6777 · lexicographic</sub>
+  <sub>lexicographic</sub>
 
 ## yaj
 
@@ -1314,7 +1314,7 @@ Z. 3 hinzuzufügen: (*ā*) *yeje*
 - **EN:** 1. *yaj*¦
 to be added to Z. 3: (*ā*) *yeje*
 [KĀŚ.] on [P. 6,4,120.]
-  <sub>DCS 6777 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — *anupra* med. verehren
 [ṚV. 6,36,2.]
@@ -1323,7 +1323,7 @@ to be added to Z. 3: (*ā*) *yeje*
 [ṚV. 6,36,2.]
 - **EN:** — *anupra* med. to worship
 [ṚV. 6,36,2.]
-  <sub>DCS 6777 · attested</sub>
+  <sub>attested</sub>
 
 ## yaj
 
@@ -1335,215 +1335,215 @@ to be added to Z. 3: (*ā*) *yeje*
 
 - **RU:** **1.** √*yaj*¦, *yajati*, *˚te*
 — 1〉 почитать, чтить бога, воздавать ему честь, также с молитвой и приношением, отсюда освящать, жертвовать. В древнем языке как правило Act., когда действует Agni или иной посредник, и Med., когда человек почитает и приносит для себя; позднее Act. об обрядовом жреце, Med. об устроителе жертвоприношения. Исключения, однако, часты.
-  <sub>DCS 6777 · attested</sub>
+  <sub>attested</sub>
 
 **1a)** — a〉 mit Acc. des Gottes, Dat. der Person oder des Zweckes, für welchen, und, Instr. der Sache (auch partitivem Gen.) oder des Werkzeuges, womit die Handlung vollzogen wird. *iṣṭa* derjenige, welchem geopfert worden ist. Auch impers. mit Instr. der Person, die das Opfer darbringt, und Instr. des dargebrachten Opfers [YĀJÑ. 1,358].
 
 - **RU:** — a〉 с Acc. бога, Dat. лица или цели, ради которой, и Instr. предмета (также партитивным Gen.) или орудия, которым совершается действие. *iṣṭa* тот, кому была принесена жертва. Также impers. с Instr. лица, приносящего жертву, и Instr. принесённой жертвы [YĀJÑ. 1,358].
-  <sub>DCS 6777 · attested</sub>
+  <sub>attested</sub>
 
 **1b)** — b〉 mit Acc. des Opfers, Liedes u. s. w., worin sich die Cultushandlung vollzieht. Opfern und zugleich darbringen, hingeben, schenken [MBH. 13,31,10]. *iṣṭa* geopfert, dargebracht.
 
 - **RU:** — b〉 с Acc. жертвы, песнопения u. s. w., в которых совершается культовое действие. Жертвовать и одновременно подносить, отдавать, дарить [MBH. 13,31,10]. *iṣṭa* принесённый в жертву, поднесённый.
-  <sub>DCS 6777 · attested</sub>
+  <sub>attested</sub>
 
 **1c)** — c〉 mit Dat., Loc. oder Acc. mit *prati* der Person und Acc. der Sache.
 
 - **RU:** — c〉 с Dat., Loc. или Acc. с *prati* лица и Acc. предмета.
-  <sub>DCS 6777 · attested</sub>
+  <sub>attested</sub>
 
 **1d)** — d〉 Med. verehren —, opfern um Etwas (Acc.).
 
 - **RU:** — d〉 Med. почитать —, жертвовать ради чего-либо (Acc.).
-  <sub>DCS 6777 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2〉 Act. im Ritual durch die Yājyā-Strophen zum Opfer einladen.
 
 - **RU:** — 2〉 Act. в ритуале приглашать к жертвоприношению посредством строф Yājyā.
-  <sub>DCS 6777 · attested</sub>
+  <sub>attested</sub>
 
 **Kaus-1)** — Caus. *yājayati* (metrisch auch Med.)
 — 1〉 Jmd (Acc.) zum Opfer verhelfen, für Jmd als Opferpriester thätig sein; mit Instr. der Feier.
 
 - **RU:** — Caus. *yājayati* (метрически также Med.)
 — 1〉 помогать кому-либо (Acc.) совершить жертвоприношение, действовать для кого-либо в качестве жреца; с Instr. торжества.
-  <sub>DCS 6777 · attested</sub>
+  <sub>attested</sub>
 
 **Kaus-2)** — 2〉 Jmd (Acc.) ein Opfer (Instr.) darbringen heissen vermittelst Jmds (Instr.).
 
 - **RU:** — 2〉 велеть кому-либо (Acc.) совершить жертвоприношение (Instr.) посредством кого-либо (Instr.).
-  <sub>DCS 6777 · attested</sub>
+  <sub>attested</sub>
 
 **Kaus-3)** — 3〉 Jmd ein Opfer darbringen heissen, mit doppeltem Acc.
 
 - **RU:** — 3〉 {%велеть кому-либо принести жертву,% с двойным Acc.
-  <sub>DCS 6777 · attested</sub>
+  <sub>attested</sub>
 
 **Desid)** — Desid. *yiyakṣati*, *yāyajīti*.
 
 - **RU:** — Desid. *yiyakṣati*, *yāyajīti*.
-  <sub>DCS 6777 · attested</sub>
+  <sub>attested</sub>
 
 **pref-anu)** — Mit *ati* Med. mit dem Opfer eine Gottheit (Acc.) übergehen.
 
 - **RU:** — Mit *ati* Med. обходить божество (Acc.) при жертвоприношении.
-  <sub>DCS 6777 · attested</sub>
+  <sub>attested</sub>
 
 **pref-apa-1)** — Mit *anu*
 — 1〉 den Anuyāja darbringen [ĀPAST. ŚR. 8,3,10].
 
 - **RU:** — Mit *anu*
 — 1〉 совершать Anuyāja [ĀPAST. ŚR. 8,3,10].
-  <sub>DCS 6777 · attested</sub>
+  <sub>attested</sub>
 
 **pref-apa-2)** — 2〉 nachher verehren durch (Instr.). — [PAÑCAR. 3,7,17] ist *tadanu* *ya˚* zu trennen.
 
 - **RU:** — 2〉 затем чтить посредством (Instr.). — [PAÑCAR. 3,7,17] следует отделять от *tadanu* *ya˚*.
-  <sub>DCS 6777 · attested</sub>
+  <sub>attested</sub>
 
 **pref-ava)** — Mit *apa* mit einem Opfer vertreiben, wegopfern; Med. durch ein Opfer abkaufen [MANTRABR. 1,2,5].
 
 - **RU:** — Mit *apa* изгонять жертвой, отвращать жертвой; Med. откупаться жертвой [MANTRABR. 1,2,5].
-  <sub>DCS 6777 · attested</sub>
+  <sub>attested</sub>
 
 **pref-a-1)** — Mit *abhi*
 — 1〉 mit Opfer ehren, den Göttern (Acc.) opfern [MAITR. S. 1,4,5].
 
 - **RU:** — Mit *abhi*
 — 1〉 чтить жертвой, жертвовать богам (Acc.) [MAITR. S. 1,4,5].
-  <sub>DCS 6777 · attested</sub>
+  <sub>attested</sub>
 
 **pref-a-2)** — 2〉 ein Opfer (Acc.) darbringen [MAITR. S. 1,4,5 (56,8)].
 
 - **RU:** — 2〉 подносить жертву (Acc.) [MAITR. S. 1,4,5 (56,8)].
-  <sub>DCS 6777 · attested</sub>
+  <sub>attested</sub>
 
 **pref-nis)** — Mit *ava* durch Opfer oder Gebete abwenden, vertreiben, durch Gaben abfinden.
 
 - **RU:** — Mit *ava* отвращать, изгонять жертвами или молитвами, умиротворять дарами.
-  <sub>DCS 6777 · attested</sub>
+  <sub>attested</sub>
 
 **pref-prati)** — Mit *nirava* abfinden gegenüber von (Abl.).
 
 - **RU:** — Mit *nirava* умиротворять/откупаться по отношению к (Abl.).
-  <sub>DCS 6777 · attested</sub>
+  <sub>attested</sub>
 
 **pref-pra-1)** — Mit *ā*
 — 1〉 huldigend darbringen, weihen.
 
 - **RU:** — Mit *ā*
 — 1〉 подносить в знак почтения, посвящать.
-  <sub>DCS 6777 · attested</sub>
+  <sub>attested</sub>
 
 **pref-pra-2)** — 2〉 verehren, mit Acc.
 
 - **RU:** — 2〉 почитать, с Acc.
-  <sub>DCS 6777 · attested</sub>
+  <sub>attested</sub>
 
 **pref-pra-3)** — 3〉 eropfern, überh. verschaffen (den Menschen von den Göttern), zuwenden; Med. auch sich verschaffen. *eṣṭa* eropfert, durch Verehrung gewonnen.
 
 - **RU:** — 3〉 добывать жертвой, überh. доставлять (людям от богов), обращать; Med. также добывать для себя. *eṣṭa* добытый жертвой, обретённый через почитание.
-  <sub>DCS 6777 · attested</sub>
+  <sub>attested</sub>
 
 **pref-anu-pra)** — Mit *samā* verschaffen.
 
 - **RU:** — Mit *samā* доставлять, добывать.
-  <sub>DCS 6777 · attested</sub>
+  <sub>attested</sub>
 
 **pref-upa-pra)** — Mit *upa* dazu opfern.
 
 - **RU:** — Mit *upa* жертвовать дополнительно.
-  <sub>DCS 6777 · attested</sub>
+  <sub>attested</sub>
 
 **pref-pra-pra)** — Mit *atyupa* weiter dazu opfern.
 
 - **RU:** — Mit *atyupa* жертвовать сверх того.
-  <sub>DCS 6777 · attested</sub>
+  <sub>attested</sub>
 
 **pref-vi-1)** Mit *pari*
 — 1〉 eropfern, erlangen, verschaffen.
 
 - **RU:** Mit *pari*
 — 1〉 добывать жертвой, обретать, доставлять.
-  <sub>DCS 6777 · attested</sub>
+  <sub>attested</sub>
 
 **pref-vi-2)** — 2〉 im Ritual vor und nach Jmd opfern, — verehren, eine Opferhandlung durch andere gleichsam unterstützen.
 
 - **RU:** — 2〉 в ритуале жертвовать до и после кого-либо, — чтить, как бы поддерживать жертвенное действие посредством других.
-  <sub>DCS 6777 · attested</sub>
+  <sub>attested</sub>
 
 **pref-vi-Kaus)** — Vgl. *parīṣṭa* (auch [ĀPAST. ŚR. 9,12,11]).
 
 - **RU:** — Vgl. *parīṣṭa* (также [ĀPAST. ŚR. 9,12,11]).
-  <sub>DCS 6777 · attested</sub>
+  <sub>attested</sub>
 
 **pref-sam-1)** — Mit *pra*
 — 1〉 verehren, huldigen, Jmd (Acc.) Opfer darbringen.
 
 - **RU:** — Mit *pra*
 — 1〉 почитать, чтить, приносить жертву кому-либо (Acc.).
-  <sub>DCS 6777 · attested</sub>
+  <sub>attested</sub>
 
 **pref-sam-2)** — 2〉 ein best. Opfer *prayāja* darbringen.
 
 - **RU:** — 2〉 совершать best. жертву *prayāja*.
-  <sub>DCS 6777 · attested</sub>
+  <sub>attested</sub>
 
 **pref-prati-sam-1)** — Mit *prati*
 — 1〉 dagegen opfern.
 
 - **RU:** — Mit *prati*
 — 1〉 жертвовать в ответ.
-  <sub>DCS 6777 · attested</sub>
+  <sub>attested</sub>
 
 **pref-prati-sam-2)** — 2〉 in der Richtung auf Etwas zu (Acc.). opfern [ĀPAST. ŚR. 8,3,12].
 
 - **RU:** — 2〉 жертвовать в направлении чего-либо (Acc.) [ĀPAST. ŚR. 8,3,12].
-  <sub>DCS 6777 · attested</sub>
+  <sub>attested</sub>
 
 **pref-abhi-sam)** — Mit *anupra* Med. verehren.
 
 - **RU:** — Mit *anupra* Med. почитать.
-  <sub>DCS 6777 · attested</sub>
+  <sub>attested</sub>
 
 **pref-sam-a-1)** — Mit *sam*
 — 1〉 zusammen (den Göttern) opfern, — huldigen; opfern; überh.
 
 - **RU:** — Mit *sam*
 — 1〉 совместно жертвовать (богам), — чтить; приносить жертву; überh.
-  <sub>DCS 6777 · attested</sub>
+  <sub>attested</sub>
 
 **pref-sam-a-2)** — 2〉 zusammen darbringen.
 
 - **RU:** — 2〉 подносить совместно.
-  <sub>DCS 6777 · attested</sub>
+  <sub>attested</sub>
 
 **pref-sam-a-3)** — 3〉 huldigen, ehren (Ehrenwerthe.)
 
 - **RU:** — 3〉 чтить, воздавать честь (достойным почитания).
-  <sub>DCS 6777 · attested</sub>
+  <sub>attested</sub>
 
 **pref-sam-a-4)** — 4〉 weihen [BHAṬṬ.]
 
 - **RU:** — 4〉 освящать [BHAṬṬ.]
-  <sub>DCS 6777 · attested</sub>
+  <sub>attested</sub>
 
 **pref-sam-a-Kaus)** — Caus.
 — 1〉 zusammen opfern lassen, die Patnīsaṃyāja machen.
 
 - **RU:** — Caus.
 — 1〉 велеть совместно принести жертву, совершать Patnīsaṃyāja.
-  <sub>DCS 6777 · attested</sub>
+  <sub>attested</sub>
 
 **pref-sam-a-Kaus-2)** — 2〉 für Jmd (Acc.) als Opferpriester thätig sein.
 
 - **RU:** — 2〉 действовать в качестве жреца для кого-либо (Acc.).
-  <sub>DCS 6777 · attested</sub>
+  <sub>attested</sub>
 
 **2)** **2.** *˚yaj*¦ _Adj._ opfernd u. s. w. in *diviyaj* und *daivayaj*.
 
 - **RU:** **2.** *˚yaj*¦ _Adj._ приносящий жертву u. s. w. в *diviyaj* и *daivayaj*.
-  <sub>DCS 6777 · attested</sub>
+  <sub>attested</sub>
 
 ## yaj
 
@@ -1554,7 +1554,7 @@ to be added to Z. 3: (*ā*) *yeje*
 
 - **RU:** yaj¦ + ˚vi особо чтить, [H] XLVI,64.
 - **EN:** yaj¦ + ˚vi to worship in a particularly special manner, [H] XLVI,64.
-  <sub>DCS 6777 · attested</sub>
+  <sub>attested</sub>
 
 ## yaj
 
@@ -1606,69 +1606,69 @@ to be added to Z. 3: (*ā*) *yeje*
 **NWS-1)** *yaj* [Gen , unsp] ( yájati, °te I P Ā ) Pass ( ijyate ): to be sacrificed or worshipped. Mbh , Kāvya(MW) . Desid ( yíyakṣati , ° te ): to desire to sacrifice or worship. Mbh , R
 
 - **RU:** *yaj* [Gen , unsp] ( yájati, °te I P Ā ) Pass ( ijyate ): быть принесённым в жертву или быть почитаемым. Mbh , Kāvya(MW) . Desid ( yíyakṣati , °te ): желать принести жертву или совершить поклонение. Mbh , R
-  <sub>DCS 6777 · attested</sub>
+  <sub>attested</sub>
 
 **NWS-2)** [Ved , unsp] e. Gott (Akk) verehren (durch Gebet und Opfergabe), ihm huldigen, opfern. e. Gotte (Akk) durch Lied oder Opfergabe (Instr) huldigen. e. Gotte (Akk) für jemand (Dat) huldigen, opfern. e. Gott (Akk) durch Opfer wozu bewegen. e. Gotte (Akk) etwas (Akk oder partitiver Gen) darbringen, opfern. e. Gotte (Dat) etwas (Akk) darbringen, opfern. Lied oder Opfergabe (Akk) darbringen, opfern. opfern (ohne Obj). für jemand (Dat) opfern. etwas (Akk) heilig halten, heiligen, weihen. e. Gott (Akk) durch Opferwerk usw herbeischaffen (mit Lok oder ihá (hierher)). etwas (Akk) durch Opfer herbeischaffen, med: sich verschaffen. med: sich opfern lassen mit (Instr). [ oft von Agni (als dem opfernden, verehrenden) gebraucht. ] Des iyakṣ s. bes
 
 - **RU:** [Ved , unsp] почитать бога (Akk) (посредством молитвы и жертвоприношения), воздавать ему честь, приносить жертву. чтить бога (Akk) песнопением или жертвенным даром (Instr). чтить бога (Akk) ради кого-либо (Dat), приносить жертву. побуждать бога (Akk) жертвой к чему-либо. подносить богу (Akk) что-либо (Akk или партитивный Gen), жертвовать. подносить богу (Dat) что-либо (Akk), жертвовать. подносить песнопение или жертвенный дар (Akk), жертвовать. совершать жертвоприношение (без объекта). приносить жертву за кого-либо (Dat). почитать что-либо (Akk) как священное, освящать, посвящать. низводить бога (Akk) посредством жертвоприношения (с Lok или ihá (сюда)). добывать что-либо (Akk) жертвой; med: добывать для себя. med: позволять приносить себя в жертву посредством (Instr). [ часто употр. об Agni (как совершающем жертву, воздающем поклонение). ] Des iyakṣ s. bes
-  <sub>DCS 6777 · attested</sub>
+  <sub>attested</sub>
 
 **NWS-3)** [Ved , unsp] ( I ) verehren, opfern. Ā: für sich opfern, e. Opfer für sich veranstalten
 
 - **RU:** [Ved , unsp] ( I ) почитать, приносить жертву. Ā: совершать жертвоприношение для себя, устраивать жертву для себя
-  <sub>DCS 6777 · attested</sub>
+  <sub>attested</sub>
 
 **NWS-4)** [Ved , unsp] ( I ) Med: opfern. Akt: den Yājyāvers hersagen über (Akk). ṚV 1,162,15
 
 - **RU:** [Ved , unsp] ( I ) Med: совершать жертвоприношение. Akt: произносить стих yājyā над (Akk). ṚV 1,162,15
-  <sub>DCS 6777 · attested</sub>
+  <sub>attested</sub>
 
 **NWS-5)** [Ved , unsp] ( I U ) P: a) mit Opfergabe oder Gebet verehren (die Götter), opfern; Subj.: die Menschen, oder: Agni; b) die Opfergabe usw darbringen, opfern (+ zu ergänzendem Akk). ṚV 3,32,7 , ṚV 10,110,1 , ṚV 1,14,11 , ṚV 10,70,9 . Ā: verehren, opfern a) + Akk des Gottes; b) + Akk des Opfers; c) + Instr des Geopferten; d) + Akk des Gottes und Instr des Opfers; e) + Gen.part. des Opfers; f) absolut: e. Opfer veranstalten; g) erbitten, opfern um. ṚV 10,45,6 , ṚV 4,24,5d , ṚV 10,90,7 , ṚV 6,28,3 , ṚV 3,53,2 , ṚV 1,113,9 , ṚV 4,24,5a . Ā: sich opfern lassen. ṚV 2,16,4
 
 - **RU:** [Ved , unsp] ( I U ) P: a) почитать (богов) жертвенным даром или молитвой, приносить жертву; субъект: люди или Agni; b) подносить жертвенный дар и т. п., жертвовать (+ подразумеваемый Akk). ṚV 3,32,7 , ṚV 10,110,1 , ṚV 1,14,11 , ṚV 10,70,9 . Ā: почитать, приносить жертву a) + Akk бога; b) + Akk жертвы; c) + Instr жертвуемого; d) + Akk бога и Instr жертвы; e) + Gen.part. жертвы; f) абсолютно: устраивать жертвоприношение; g) испрашивать, жертвовать ради. ṚV 10,45,6 , ṚV 4,24,5d , ṚV 10,90,7 , ṚV 6,28,3 , ṚV 3,53,2 , ṚV 1,113,9 , ṚV 4,24,5a . Ā: позволять приносить себя в жертву. ṚV 2,16,4
-  <sub>DCS 6777 · attested</sub>
+  <sub>attested</sub>
 
 **NWS-6)** *khaus + ākk: ṛür jhemand als aupṛerpriester thätig sein. ḥarisv ḹīīī 5, 4, 5 ṣu ṚV īV 42, 8 .* [Ved , unsp] + ánu prá , med: für sich gewinnen (Akk). Ved , unsp
 
 - **RU:** *khaus + ākk: ṛür jhemand als aupṛerpriester thätig sein. ḥarisv ḹīīī 5, 4, 5 ṣu ṚV īV 42, 8 .* [Ved , unsp] + ánu prá , med: добывать для себя (Akk). Ved , unsp
-  <sub>DCS 6777 · attested</sub>
+  <sub>attested</sub>
 
 **NWS-7)** *+ abhi , Ā: ehren. ṚV 6,47,25 .* [Ved , unsp] + abhí : jemand (Akk) ehren. Ved , unsp
 
 - **RU:** *+ abhi , Ā: ehren. ṚV 6,47,25 .* [Ved , unsp] + abhí : чтить кого-либо (Akk). Ved , unsp
-  <sub>DCS 6777 · attested</sub>
+  <sub>attested</sub>
 
 **NWS-8)** *+ áva : 1) etṭas (ākk) durch aupṛer oder ghebete abṭenden; 2) e. ghott oder den āltar (ākk) durch aupṛerdienst beṛriedigen, abṛinden.* [Ved , unsp] + ā : eropfern. Ved , unsp
 
 - **RU:** *+ áva : 1) etṭas (ākk) durch aupṛer oder ghebete abṭenden; 2) e. ghott oder den āltar (ākk) durch aupṛerdienst beṛriedigen, abṛinden.* [Ved , unsp] + ā : добывать жертвой. Ved , unsp
-  <sub>DCS 6777 · attested</sub>
+  <sub>attested</sub>
 
 **NWS-9)** *– eropṛern, erbitten, erṭirken, einbringen. ṚV 10,52,5 .* [Ved , unsp] + ā́ : 1) jemand (Akk) verehren; 2) jemandem (Dat) etwas (Akk) huldigend darbringen; 3) jemandem (Dat Lok) etwas (Akk) ehrend zuwenden; 4) für jemand (Dat) opfern; 5) etwas (Akk) durch Opfer herbeischaffen; 6) med: sich etwas (Akk) verschaffen; 7) e. Gott (Akk) durch Opfer herbeischaffen. Ved , unsp
 
 - **RU:** *– eropṛern, erbitten, erṭirken, einbringen. ṚV 10,52,5 .* [Ved , unsp] + ā́ : 1) почитать кого-либо (Akk); 2) подносить кому-либо (Dat) что-либо (Akk) в знак почтения; 3) с почестями обращать что-либо (Akk) к кому-либо (Dat Lok); 4) приносить жертву за кого-либо (Dat); 5) добывать что-либо (Akk) жертвой; 6) med: добывать для себя что-либо (Akk); 7) низводить бога (Akk) жертвой. Ved , unsp
-  <sub>DCS 6777 · attested</sub>
+  <sub>attested</sub>
 
 **NWS-10)** *+ pári : jemandem (dhat) etṭas (ākk) verschaṛṛen.* [Ved , unsp] + pra , Ā: e. Opfer darbringen. ṚV 10,4,1 . Ved , unsp
 
 - **RU:** *+ pári : jemandem (dhat) etṭas (ākk) verschaṛṛen.* [Ved , unsp] + pra , Ā: подносить жертву. ṚV 10,4,1 . Ved , unsp
-  <sub>DCS 6777 · attested</sub>
+  <sub>attested</sub>
 
 **NWS-11)** *+ prá : 1) opṛern, ṣu opṛern anheben; 2) e. ghott (ākk) verehren; 3) jemandem (dhat) etṭas (ākk) darbringen.* [Ved , unsp] + sam : a) offer sacrifices at the same time; b) to consecrate, dedicate. ṚV , Bhaṭṭ . Gen , unsp ; MW : 1111 (s.v. saṃyaj )
 
 - **RU:** *+ prá : 1) opṛern, ṣu opṛern anheben; 2) e. ghott (ākk) verehren; 3) jemandem (dhat) etṭas (ākk) darbringen.* [Ved , unsp] + sam : a) совместно приносить жертву; b) посвящать, освящать. ṚV , Bhaṭṭ . Gen , unsp ; MW : 1111 (s.v. saṃyaj )
-  <sub>DCS 6777 · attested</sub>
+  <sub>attested</sub>
 
 **NWS-12)** *+ sám : 1) ṣusammen opṛern.* [Ved , unsp] + sám â : jemandem (Dat) etwas (Akk) verschaffen. Ved , unsp
 
 - **RU:** *+ sám : 1) ṣusammen opṛern.* [Ved , unsp] + sám â : доставлять кому-либо (Dat) что-либо (Akk). Ved , unsp
-  <sub>DCS 6777 · attested</sub>
+  <sub>attested</sub>
 
 **NWS-13)** *+ samā : vollständig eropṛern. ṚV 10,82,4 .* [Ved , unsp] yájamāna Ved , unsp > verehrend, opfernd; insbes: der Opferherr, Veranstalter e. Opfers. ṚV 3,53,3 . Geldner 1907 : 139 (s.v. yaj )
 
 - **RU:** *+ samā : vollständig eropṛern. ṚV 10,82,4 .* [Ved , unsp] yájamāna Ved , unsp > почитающий, приносящий жертву; в особенности: устроитель жертвоприношения, жертвователь. ṚV 3,53,3 . Geldner 1907 : 139 (s.v. yaj )
-  <sub>DCS 6777 · attested</sub>
+  <sub>attested</sub>
 
 **NWS-14)** [ījivaṃs Ep , unsp] Adj mfn [PtzPf] sacrificed. R I.44.6 . from yaj . Sen 1951 : 59 (s.v. yaj )
 
 - **RU:** [ījivaṃs Ep , unsp] Adj mfn [PtzPf] принесённый в жертву. R I.44.6 . from yaj . Sen 1951 : 59 (s.v. yaj )
-  <sub>DCS 6777 · attested</sub>
+  <sub>attested</sub>

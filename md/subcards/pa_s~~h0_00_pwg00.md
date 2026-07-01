@@ -285,7 +285,7 @@ z. B. [ŚĀK. 5,16.] [17.] [24,8.] [27,6.] [30,15.] [97,15.] [111,13.] [20.]
 [3074.] [3281.] [7855.] [3,2363.] [2538.] [10069.] [4,171.] [5,7094.] [7,773.] [8,3044.] *paśyadhvam — mahātmanaḥ . mayi bhaktiṃ parām*
 [13,928.] [14,806.] [N. 23,4.] [HARIV. 2594.] [R. 1,41,9.] [2,47,4.] [RĀJA-TAR. 4,385.] [BHĀG. P. 4,26,24.] [25.] [9,16,2.] *tasya buddhiriyaṃ tvāsīdahaṃ paśye vasuṃdharām . atiramyavanodyānām*
 [MĀRK. P. 61,7.] to see in astrol. sense thus v. a. to be within sight (in adspectu): *lagnamindāvapaśyati* when the moon does not see the L. (i.e. is not visible to it)
-  <sub>DCS 4733 · attested</sub>
+  <sub>attested</sub>
 
 **1a)** [VARĀH. BṚH. S. 5,1.] *svapnān* ein Traumgesicht sehen
 [R. 2,4,16.] *na paśyāmi* ich sehe nicht mehr

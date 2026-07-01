@@ -10,4 +10,4 @@
 [ŚAT. BR. 3,2,1,22.]
 - **EN:** — *pratipra* to reply, answer back
 [ŚAT. BR. 3,2,1,22.]
-  <sub>DCS 1 · attested</sub>
+  <sub>attested</sub>

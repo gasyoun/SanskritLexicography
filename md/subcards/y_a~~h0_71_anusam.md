@@ -25,10 +25,10 @@
 
 [MBH. 1,3072.] *tīrthānyanyānyanusaṃyāhi*
 [3,10094.]
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — Vgl. *anusaṃyāna* .
 
 - **RU:** — Vgl. *anusaṃyāna* .
 - **EN:** — Vgl. *anusaṃyāna*.
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>

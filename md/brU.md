@@ -56,12 +56,12 @@ _PWG article — 23 sub-card(s), 153 sense(s) · RU 110/153 · EN 115/153_
 [BHĀG. P. 7,13,22]), *bruvate; bruvīta; brūṣva, bruvadhvam*
 ([MBH. 3,2729], v. l.); *abrūta*; partic. *bruvāṇa* . Из общих форм засвидетельствована лишь 2-я pl. prec. *brūyāsta*
 [N. 17,35] ([MBH. 3,2729] вместо того *brūyāstat*, [ed. Bomb.] же — *brūyāsta* с упоминанием варианта *bruvadhvam*) .
-  <sub>DCS 9786 · attested</sub>
+  <sub>attested</sub>
 
 **1)** 1) sagen, aussprechen, berichten; nennen;
 
 - **RU:** 1) говорить, произносить, сообщать; называть;
-  <sub>DCS 9786 · attested</sub>
+  <sub>attested</sub>
 
 **1a)** a) act.: *indrāya nūnamarcatokthāni ca bravītana*
 [ṚV. 1,84,5.] *indra bravīmi te vacaḥ*
@@ -206,7 +206,7 @@ _PWG article — 23 sub-card(s), 153 sense(s) · RU 110/153 · EN 115/153_
 [Śak.] [ŚĀK. 25,5.] *itīva rāmo bahusaṃgataṃ vacaḥ — saritaṃ prati bruvan*
 [R. 2,95,19] ([104,20] [GORR.]). говорить так — предсказывать, возвещать: *tadāpi sarvasasyānāṃ vṛddhiṃ brūyādvicakṣaṇaḥ*
 [VARĀH. BṚH. S. 22,5.]
-  <sub>DCS 9786 · attested</sub>
+  <sub>attested</sub>
 
 **1b)** — b) med. *svayameva brūṣva yatte bhaviṣyati sa etaṃ māhendraṃ grahamabrūta*
 [AIT. BR. 3,21.] *nādṛṣṭaṃ dṛṣṭato brūvīta*
@@ -245,7 +245,7 @@ _PWG article — 23 sub-card(s), 153 sense(s) · RU 110/153 · EN 115/153_
 [YĀJÑ. 2,241.] *brūte 'nyasyāto 'pyāryo guṇāndoṣāṃstu durjanaḥ* говорит о
 [Spr. 2001.] *prāṇānāṃ vata kiṃ bruve kaṭhinatām*
 [1894.] [SOM. NALA 139.]
-  <sub>DCS 9786 · attested</sub>
+  <sub>attested</sub>
 
 ## brū
 
@@ -256,7 +256,7 @@ _PWG article — 23 sub-card(s), 153 sense(s) · RU 110/153 · EN 115/153_
 
 - **RU:** — 2) называться, именоваться, называть себя;
 - **EN:** 2) to call oneself, to be named, be called
-  <sub>DCS 9786 · attested</sub>
+  <sub>attested</sub>
 
 **2a)** a) med.: *adha cidva uta bruve* und so heisst es auch von euch, und so nennt man euch wirklich
 [ṚV. 8,72,9.] [3,54,7.] *prayuñjatī diva eti bruvāṇā mahī mātā*
@@ -292,7 +292,7 @@ _PWG article — 23 sub-card(s), 153 sense(s) · RU 110/153 · EN 115/153_
 [ṚV. 8,6,3.] *jāmi bruvāṇa āyudhāni veti*
 [10,8,7.]
 - **EN:** a) med.: *adha cidva uta bruve* "and thus it is also said of you, and thus you are indeed called" [ṚV. 8,72,9.] [3,54,7.] *prayuñjatī diva eti bruvāṇā mahī mātā* [5,47,1.] *uta ghā nemo astutaḥ pumā iti bruve paṇiḥ* [61,8.] *janaṃ ca mitro yatati bruvāṇaḥ* [7,36,2.] [3,59,1.] *(indraḥ) tanyati bruvāṇaḥ* perhaps "announcing oneself, making oneself known" [6,38,2.] *sa indro brāhmaṇo bruvāṇa iṣṭakāmupādhatta* "giving oneself out for" [TBR. 1,1,2,5.] [ŚAT. BR. 2,1,2,14.] [3,3.] [4,19.] [1,6,1,8.] *paurogavo bruvāṇo 'haṃ ballavo nāma* [MBH. 4,28.] [560.] *brahmabruvāṇa* "giving himself out to be a Brahman" [5,2427.] *gautamabruvāṇa, gautamo vā bruvāṇaḥ* [Ind. St. 1,38.] *brūte kathā svayameva* "tells of itself" [P. 3,1,89], Vārtt., Sch. [VOP. 24,12.] Perhaps "to have it said of oneself, to ask after" (as εἴρομαι): *jāmi bruvata āyudham* [ṚV. 8,6,3.] *jāmi bruvāṇa āyudhāni veti* [10,8,7.]
-  <sub>DCS 9786 · attested</sub>
+  <sub>attested</sub>
 
 **2b)** — b) act.: *bruvanballavajātīyaḥ* sich ausgebend für
 [MBH. 4,558.]
@@ -300,13 +300,13 @@ _PWG article — 23 sub-card(s), 153 sense(s) · RU 110/153 · EN 115/153_
 - **RU:** — b) act.: *bruvanballavajātīyaḥ* выдавая себя за
 [MBH. 4,558.]
 - **EN:** b) act.: *bruvanballavajātīyaḥ* "giving oneself out for" [MBH. 4,558.]
-  <sub>DCS 9786 · attested</sub>
+  <sub>attested</sub>
 
 **note)** — Vgl. *bruva* .
 
 - **RU:** — Vgl. *bruva* .
 - **EN:** — Vgl. *bruva*.
-  <sub>DCS 9786 · attested</sub>
+  <sub>attested</sub>
 
 ## brū
 
@@ -319,7 +319,7 @@ _PWG article — 23 sub-card(s), 153 sense(s) · RU 110/153 · EN 115/153_
 - **RU:** — *acchā* med. подзывать, звать к себе
 [PAÑCAV. BR. 13,6,9.]
 - **EN:** — *acchā* med. "to call hither, summon" [PAÑCAV. BR. 13,6,9.]
-  <sub>DCS 9786 · attested</sub>
+  <sub>attested</sub>
 
 ## brū
 
@@ -332,7 +332,7 @@ _PWG article — 23 sub-card(s), 153 sense(s) · RU 110/153 · EN 115/153_
 - **RU:** — *ati* поносить, бранить: *yaśasvinastīkṣṇaviṣānmahārathānatibruvan (abhibruvan* [ed. Bomb.]) *mūḍha na lajjase katham*
 [MBH. 3,15640.]
 - **EN:** — *ati* "to revile, abuse": *yaśasvinastīkṣṇaviṣānmahārathānatibruvan (abhibruvan* [ed. Bomb.]) *mūḍha na lajjase katham* [MBH. 3,15640.]
-  <sub>DCS 9786 · attested</sub>
+  <sub>attested</sub>
 
 ## brū
 
@@ -358,7 +358,7 @@ _PWG article — 23 sub-card(s), 153 sense(s) · RU 110/153 · EN 115/153_
 [173,3.] [AV. 8,2,8.] *adhi no brūtaṃ pṛtanāsūgrau*
 [4,28,7.] [8,2.] [27,1.] [VS. 15,1.] [17,52.] *yadbrāhmaṇaścāvrāhmaṇaśca praśnameyātāṃ brāhmaṇāyādhibrūyāt*
 [TS. 2,5,11,9.]
-  <sub>DCS 9786 · attested</sub>
+  <sub>attested</sub>
 
 ## brū
 
@@ -417,7 +417,7 @@ _PWG article — 23 sub-card(s), 153 sense(s) · RU 110/153 · EN 115/153_
 [KŪRMA-P.] in [Verz. d. Oxf. H. 7,b,2] v. u. *yo vedamanubrūte (śiṣyebhyaḥ)*
 [ŚĀṄKH. ŚR. 15,16,6.]
 [GṚHY. 2,3.]
-  <sub>DCS 9786 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) das Wort (einladend, ehrerbietig) richten an (dat.), Jmd (dat.)
 
@@ -447,7 +447,7 @@ to invite to (gen.): *somāya krītāya prohyamāṇāyānubrūhi*
 *indrāgnibhyāṃ puroḍāśasyānubrūhi*
 [KĀTY. ŚR. 6,7,19.] [8,9.] [14.] [19,3,4.]
 [P. 2,3,61.]
-  <sub>DCS 9786 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) halten für, anerkennen für: *ekaḥ śāstā na dvitīyo 'sti śāstā yo hṛcchayastamahamanubravīmi*
 [MBH. 14,746. fgg.] *tathānubruvate tvāṃ hi* dafür halten sie ja dich
@@ -459,7 +459,7 @@ to invite to (gen.): *somāya krītāya prohyamāṇāyānubrūhi*
 - **EN:** — 3) to hold to be, to acknowledge as: *ekaḥ śāstā na dvitīyo 'sti śāstā yo hṛcchayastamahamanubravīmi*
 [MBH. 14,746. fgg.] *tathānubruvate tvāṃ hi* they indeed hold you to be that
 [HARIV. 15319.]
-  <sub>DCS 9786 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) med. nachsprechen, auswendiglernen, lernen: *anubruvāṇo adhyeti na svapan*
 [ṚV. 5,44,13.] *atha yadevānubruvīta tenarṣibhya ṛṇaṃ jāyate*
@@ -471,7 +471,7 @@ to invite to (gen.): *somāya krītāya prohyamāṇāyānubrūhi*
 - **EN:** — 4) med. to repeat after, to learn by heart, to learn: *anubruvāṇo adhyeti na svapan*
 [ṚV. 5,44,13.] *atha yadevānubruvīta tenarṣibhya ṛṇaṃ jāyate*
 [ŚAT. BR. 1,7,2,3.] [4,2,4,1.]
-  <sub>DCS 9786 · attested</sub>
+  <sub>attested</sub>
 
 ## brū
 
@@ -485,7 +485,7 @@ to invite to (gen.): *somāya krītāya prohyamāṇāyānubrūhi*
 [AV. 6,57,1.]
 - **EN:** — *apa* to talk over (defensively, in order to ward off): *yeneṣumekatejanāṃ śataśalyāmapabravat*
 [AV. 6,57,1.]
-  <sub>DCS 9786 · attested</sub>
+  <sub>attested</sub>
 
 ## abhibrū
 
@@ -496,7 +496,7 @@ to invite to (gen.): *somāya krītāya prohyamāṇāyānubrūhi*
 
 - **RU:** — *abhi* s. u. *ati* .
 - **EN:** — *abhi* s. u. *ati* .
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>
 
 ## avabrū
 
@@ -507,7 +507,7 @@ to invite to (gen.): *somāya krītāya prohyamāṇāyānubrūhi*
 
 - **RU:** — *ava* s. *anavabrava* .
 - **EN:** — *ava* s. *anavabrava* .
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>
 
 ## ābrū
 
@@ -521,7 +521,7 @@ to invite to (gen.): *somāya krītāya prohyamāṇāyānubrūhi*
 [HARIV. 6300.]
 - **EN:** — *ā* to converse: *evamābruvamāṇau tau saṃprāptau keśavāntikam*
 [HARIV. 6300.]
-  <sub>DCS 1 · attested</sub>
+  <sub>attested</sub>
 
 ## pratyābrū
 
@@ -535,7 +535,7 @@ to invite to (gen.): *somāya krītāya prohyamāṇāyānubrūhi*
 [MBH. 4,1198.] *prītyābravīda˚* [ed. Bomb.]
 - **EN:** — *pratyā* to answer someone (acc.): *pratyābravīdarjunam*
 [MBH. 4,1198.] *prītyābravīda˚* [ed. Bomb.]
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>
 
 ## udbrū
 
@@ -552,7 +552,7 @@ to invite to (gen.): *somāya krītāya prohyamāṇāyānubrūhi*
 - **EN:** — *ud* med.
  1) viell. to agree upon, arrange about (acc.): *odanamudbruvate*
 [TBR. 1,7,10,6.]
-  <sub>DCS 2 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) viell. sich Etwas versagen, sich lossagen von (gen.): *sa yanna saṃbharati tasyodbruvīta tasya nāśnīyādyāvajjīvam*
 [ŚAT. BR. 5,2,2,4.]
@@ -561,7 +561,7 @@ to invite to (gen.): *somāya krītāya prohyamāṇāyānubrūhi*
 [ŚAT. BR. 5,2,2,4.]
 - **EN:** — 2) viell. to deny oneself something, to renounce, disown (gen.): *sa yanna saṃbharati tasyodbruvīta tasya nāśnīyādyāvajjīvam*
 [ŚAT. BR. 5,2,2,4.]
-  <sub>DCS 2 · attested</sub>
+  <sub>attested</sub>
 
 ## upabrū
 
@@ -578,7 +578,7 @@ to invite to (gen.): *somāya krītāya prohyamāṇāyānubrūhi*
 - **EN:** — *upa* med. (attested only once act.)
  1) to speak to Jmd. (acc.): *yamo 'haṃ tvāmupabruve*
 [MBH. 12,7228.]
-  <sub>DCS 22 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) bittend ansprechen um (dat.), anrufen; zureden, bereden zu
 [ṚV. 1,77,3.] [179,5.] *(dyāvāpṛthivī) upa bruve namasā yajñe asmin*
@@ -611,7 +611,7 @@ to invite to (gen.): *somāya krītāya prohyamāṇāyānubrūhi*
 [5,22,11.] act.: *upo harīṇāṃ patiṃ dakṣaṃ pṛñcantamabravam . nūnaṃ śrudhi stuvato aśvyasya*
 [ṚV. 8,24,14.]
 [ŚAT. BR. 9,3,3,11.]
-  <sub>DCS 22 · attested</sub>
+  <sub>attested</sub>
 
 ## nirbrū
 
@@ -635,7 +635,7 @@ to invite to (gen.): *somāya krītāya prohyamāṇāyānubrūhi*
 [ṚV. PRĀT. 11,32.]
 - **EN:** — *nis*
  1) to pronounce (loudly, distinctly, individually) [ŚĀṄKH. BR. 27,1.] [ŚAT. BR. 4,2,2,12.] [10,3,5,15.] [LĀṬY. 7,12,7. 13,3.] *nedavidvānnirbravāṇi* [ŚĀṄKH. BR. 21,1.] *krameta sarvāṇi padāni nirbruvan* [ṚV. PRĀT. 11,32.]
-  <sub>DCS 11 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) erklären
 [NIR. 2,1.] *sarvajñeyārthavarṇanātsarvānukramaṇīśabdaṃ nirbruvanti vipaścitaḥ*
@@ -645,7 +645,7 @@ to invite to (gen.): *somāya krītāya prohyamāṇāyānubrūhi*
 [NIR. 2,1.] *sarvajñeyārthavarṇanātsarvānukramaṇīśabdaṃ nirbruvanti vipaścitaḥ*
 [MÜLLER, SL. 216.] [DURGA] zu [NIR.] bei [MUIR, ST. II,176. 184.]
 - **EN:** — 2) to explain [NIR. 2,1.] *sarvajñeyārthavarṇanātsarvānukramaṇīśabdaṃ nirbruvanti vipaścitaḥ* [MÜLLER, SL. 216.] [DURGA] to [NIR.] in [MUIR, ST. II,176. 184.]
-  <sub>DCS 11 · attested</sub>
+  <sub>attested</sub>
 
 ## paribrū
 
@@ -659,7 +659,7 @@ to invite to (gen.): *somāya krītāya prohyamāṇāyānubrūhi*
 [KĀṬH. 27,4.]
 - **EN:** — *pari* to discuss, talk over: *yaṃ kāmayetāmayāvinaṃ jīvedityagnerante brāhmaṇāya procyāpaḥ paribrūyāt etadvai bheṣajam*
 [KĀṬH. 27,4.]
-  <sub>DCS 2 · attested</sub>
+  <sub>attested</sub>
 
 ## prabrū
 
@@ -787,7 +787,7 @@ to invite to (gen.): *somāya krītāya prohyamāṇāyānubrūhi*
 [MBH. 4,838.]
 [R. GORR. 1,69,1.] [3,40,24.] *sītā rāvaṇaṃ prābravīdvacaḥ* spoke to R. the words
 [BHAṬṬ. 8,85.]
-  <sub>DCS 244 · attested</sub>
+  <sub>attested</sub>
 
 ## pratiprabrū
 
@@ -801,7 +801,7 @@ to invite to (gen.): *somāya krītāya prohyamāṇāyānubrūhi*
 [ŚAT. BR. 3,2,1,22.]
 - **EN:** — *pratipra* to reply, answer back
 [ŚAT. BR. 3,2,1,22.]
-  <sub>DCS 1 · attested</sub>
+  <sub>attested</sub>
 
 ## pratibrū
 
@@ -848,7 +848,7 @@ to invite to (gen.): *somāya krītāya prohyamāṇāyānubrūhi*
 [VID. 297.]
 [BHĀG. P. 3,2,3.] with a double acc.: *kimahaṃ taṃ pratibrūyām*
 [R. 5,29,12.]
-  <sub>DCS 44 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) med. antworten so v. a. (Angriffe u. s. w.) zurückgeben: *tvayā prati bruve yajā*
 [ṚV. 7,31,6.] *prati śvasantaṃ bruvīmahi*
@@ -860,7 +860,7 @@ to invite to (gen.): *somāya krītāya prohyamāṇāyānubrūhi*
 - **EN:** — 2) med. to answer, hence also v. a. (attacks u. s. w.) to return, requite: *tvayā prati bruve yajā*
 [ṚV. 7,31,6.] *prati śvasantaṃ bruvīmahi*
 [8,21,11.] [81,32.]
-  <sub>DCS 44 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) verweigern, abschlagen *tathāpi na pratibrūyāṃ gurubhiḥ prārthitaṃ kiyat*
 [BHĀG. P. 6,7,37.]
@@ -869,7 +869,7 @@ to invite to (gen.): *somāya krītāya prohyamāṇāyānubrūhi*
 [BHĀG. P. 6,7,37.]
 - **EN:** — 3) to refuse, deny, decline *tathāpi na pratibrūyāṃ gurubhiḥ prārthitaṃ kiyat*
 [BHĀG. P. 6,7,37.]
-  <sub>DCS 44 · attested</sub>
+  <sub>attested</sub>
 
 ## vi+brū
 
@@ -906,7 +906,7 @@ to invite to (gen.): *somāya krītāya prohyamāṇāyānubrūhi*
 [1,166.] *vedānvibruvan*
 [4245.] *na vibrūyānnṛpo dharmam*
 [M. 8,390.]
-  <sub>DCS 46 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) falsch aussagen: *abruvanvibruvanvāpi naro bhavati kilviṣī*
 [M. 8,13.] [194.]
@@ -915,7 +915,7 @@ to invite to (gen.): *somāya krītāya prohyamāṇāyānubrūhi*
 [M. 8,13.] [194.]
 - **EN:** — 2) to state falsely, to give false testimony: *abruvanvibruvanvāpi naro bhavati kilviṣī*
 [M. 8,13.] [194.]
-  <sub>DCS 46 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) widersprechen, sich nicht einverstanden erklären
 [KATHĀS. 19,46.] med. sich streiten: *toke vā goṣu tanaye yadapsu vi krandasī urvarāsu bravaite*
@@ -926,7 +926,7 @@ to invite to (gen.): *somāya krītāya prohyamāṇāyānubrūhi*
 - **EN:** — 3) to contradict, to declare oneself in disagreement
 [KATHĀS. 19,46.] med. to quarrel, to dispute: *toke vā goṣu tanaye yadapsu vi krandasī urvarāsu bravaite*
 [ṚV. 6,25,4.]
-  <sub>DCS 46 · attested</sub>
+  <sub>attested</sub>
 
 **1 (продолжение — sich über Etwas aussprechen))** [MBH. 1,3449.] sich über Etwas (acc.) aussprechen, über Etwas seine Meinung sagen; erläutern, auslegen: *tadvākyaṃ vibrūta*
 [MBH. 2,2262.] *vyabravīdvayunā martyebhyo 'gnirvidvān*
@@ -951,7 +951,7 @@ to invite to (gen.): *somāya krītāya prohyamāṇāyānubrūhi*
 [1,166.] *vedānvibruvan*
 [4245.] *na vibrūyānnṛpo dharmam*
 [M. 8,390.]
-  <sub>DCS 46 · attested</sub>
+  <sub>attested</sub>
 
 ## sam+brū
 
@@ -969,14 +969,14 @@ to invite to (gen.): *somāya krītāya prohyamāṇāyānubrūhi*
 [ṚV. 1,30,6.] говорить кому-либо что-либо, обращаться к кому-либо (dopp. acc.): *paruṣaṃ tvāṃ samabruvam*
 [MBH. 6,5828.]
 - **EN:** to confer, to come to an agreement: *samanyeṣu bravāvahai* [ṚV. 1,30,6.] to say something to someone, with dopp. acc.: *paruṣaṃ tvāṃ samabruvam* [MBH. 6,5828.]
-  <sub>DCS 1 · attested</sub>
+  <sub>attested</sub>
 
 **1)** — *sam* sich unterreden, sich unterhalten: *yaddha yānti marutaḥ saṃ ha bruvate 'dhvannā*
 [ṚV. 1,37,13.] *vṛkṣacchāyopaviṣṭāste dṛṣṭvānyo'nyaṃ samabruvan*
 
 - **RU:** — *sam* беседовать, разговаривать, вести переговоры: *yaddha yānti marutaḥ saṃ ha bruvate 'dhvannā*
 [ṚV. 1,37,13.] *vṛkṣacchāyopaviṣṭāste dṛṣṭvānyo'nyaṃ samabruvan*
-  <sub>DCS 1 · attested</sub>
+  <sub>attested</sub>
 
 ## brū
 
@@ -989,7 +989,7 @@ to invite to (gen.): *somāya krītāya prohyamāṇāyānubrūhi*
 - **RU:** *brū*¦ с *pari* замолвить слово за кого-либо, так v. a. ходатайствовать у кого-либо посредством заступничества
 [AV. 19,39,2. fgg.]
 - **EN:** *brū*¦ with *pari* to discuss on behalf of someone, so v. a. to employ in discussion with someone [AV. 19,39,2. fgg.]
-  <sub>DCS 9786 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — *sam*, *samabruvan* sprachen zu einander
 [BHĀG. P. 10,30,26.]
@@ -997,7 +997,7 @@ to invite to (gen.): *somāya krītāya prohyamāṇāyānubrūhi*
 - **RU:** — *sam*, *samabruvan* говорили друг с другом
 [BHĀG. P. 10,30,26.]
 - **EN:** — *sam*, *samabruvan* they spoke to one another [BHĀG. P. 10,30,26.]
-  <sub>DCS 9786 · attested</sub>
+  <sub>attested</sub>
 
 ## brū
 
@@ -1008,49 +1008,49 @@ to invite to (gen.): *somāya krītāya prohyamāṇāyānubrūhi*
 
 - **RU:** √*brū*¦, *bravīti, brūte, brūmi* (эпическое), *brūhi* и *bravīhi, ābravīt, ābrabam* и *ābruvam* Из общих форм только сомнительное *brūyāsta*.
 - **EN:** √*brū*, *bravīti, brūte, brūmi* (epic), *brūhi* and *bravīhi, ābravīt, ābrabam* and *ābruvam*. Of general forms only the doubtful *brūyāsta*.
-  <sub>DCS 9786 · lexicographic</sub>
+  <sub>lexicographic</sub>
 
 **1)** — 1〉 Act. Med. sagen, aussprechen, berichten, mittheilen, nennen, angeben (mit Acc. der Sache, und Gen. Dat. oder Loc. der Person), Etwas zu Jmd sagen (mit doppeltem Acc.) sprechen zu (Acc., seltener Gen.), erklären für, nennen (mit doppeltem Acc.), sagen —, aussagen —, sprechen von (Acc. oder) Acc. mit *prati* oder *adhikṛtya*, beantworten (eine Frage); vorhersagen, verkünden.
 
 - **RU:** — 1〉 Act. Med. говорить, высказывать, сообщать, передавать, называть, указывать (с Acc. предмета, и Gen. Dat. или Loc. лица), говорить кому-либо что-либо (с двойным Acc.), обращаться к (с Acc., реже Gen.), объявлять, называть (с двойным Acc.), говорить —, высказываться —, говорить о (Acc. или) Acc. с *prati* или *adhikṛtya*, отвечать (на вопрос); предсказывать, возвещать.
 - **EN:** — 1) Act. Med. to say, utter, report, communicate, name, state (with Acc. of the thing, and Gen. Dat. or Loc. of the person); to say something to someone (with double Acc.); to speak to (Acc., more rarely Gen.); to declare to be, call (with double Acc.); to say —, state —, speak of (Acc. or) Acc. with *prati* or *adhikṛtya*; to answer (a question); to foretell, proclaim.
-  <sub>DCS 9786 · attested</sub>
+  <sub>attested</sub>
 
 **1-answer)** Mit *punar* antworten. Im [HIT.] steht regelmässig *brūte* neben *ābravīta*
 
 - **RU:** С *punar* отвечать. В [HIT.] регулярно стоит *brūte* рядом с *ābravīta*
 - **EN:** With *punar* to answer. In the [HIT.] *brūte* regularly stands beside *ābravīta*.
-  <sub>DCS 9786 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2〉 Med. (ausnahmsweise auch Act.) sich nennen, sich ausgeben für (Nomin., ausnahmsweise mit *iti*).
 
 - **RU:** — 2〉 Med. (в виде исключения также Act.) называть себя, выдавать себя за (Nomin., в виде исключения с *iti*).
 - **EN:** — 2) Med. (exceptionally also Act.) to call oneself, give oneself out as (Nomin., exceptionally with *iti*).
-  <sub>DCS 9786 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3〉 Med. für sich bezeichnen, so v. a. wählen [AIT. BR. 3,21,2].
 
 - **RU:** — 3〉 Med. обозначать для себя, так v. a. избирать, выбирать [AIT. BR. 3,21,2].
 - **EN:** — 3) Med. to designate for oneself, so v. a. to choose [AIT. BR. 3,21,2].
-  <sub>DCS 9786 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4〉 Med. sich selbst erzählen, von selbst fliessen (von einer Erzählung).
 
 - **RU:** — 4〉 Med. рассказываться само по себе, течь само по себе (о повествовании).
 - **EN:** — 4) Med. to tell itself, flow of itself (of a narrative).
-  <sub>DCS 9786 · attested</sub>
+  <sub>attested</sub>
 
 **aa-abhi)** — Mit *acchā* Med. herbeirufen.
 
 - **RU:** — С *acchā* Med. подзывать, призывать.
 - **EN:** — With *acchā* Med. to call hither, summon.
-  <sub>DCS 9786 · attested</sub>
+  <sub>attested</sub>
 
 **apa)** — Mit *ati* schmähen [CARAKA. 1,8].
 
 - **RU:** — С *ati* поносить, хулить [CARAKA. 1,8].
 - **EN:** — With *ati* to revile, abuse [CARAKA. 1,8].
-  <sub>DCS 9786 · attested</sub>
+  <sub>attested</sub>
 
 **abhi-intro)** — Mit *adhi*
 - **EN:** — With *adhi*
@@ -1062,7 +1062,7 @@ to invite to (gen.): *somāya krītāya prohyamāṇāyānubrūhi*
 
 - **RU:** — 2〉 заступаться за кого-либо (Dat.) [VAITĀN.]
 - **EN:** — 2) to intercede for, speak in favour of (Dat.) [VAITĀN.]
-  <sub>DCS 9786 · attested</sub>
+  <sub>attested</sub>
 
 **anu-intro)** — Mit *anu*
 - **EN:** — With *anu*
@@ -1074,31 +1074,31 @@ to invite to (gen.): *somāya krītāya prohyamāṇāyānubrūhi*
 
 - **RU:** — 2〉 подсказывать кому-либо (Dat.) что-либо, учить, сообщать.
 - **EN:** — 2) to say over to someone (Dat.), to teach, communicate something.
-  <sub>DCS 9786 · attested</sub>
+  <sub>attested</sub>
 
 **anu-3)** — 3〉 das Wort (einladend, ehrerbietig) richten an (Dat.), Jmd (Dat.) einladen zu (Gen.).
 
 - **RU:** — 3〉 обращать слово (приглашающим, почтительным образом) к (Dat.), приглашать кого-либо (Dat.) к чему-либо (Gen.).
 - **EN:** — 3) to address a word (invitingly, respectfully) to (Dat.), to invite someone (Dat.) to (Gen.).
-  <sub>DCS 9786 · attested</sub>
+  <sub>attested</sub>
 
 **anu-4)** — 4〉 sagen, sprechen.
 
 - **RU:** — 4〉 говорить, изрекать.
 - **EN:** — 4) to say, speak.
-  <sub>DCS 9786 · attested</sub>
+  <sub>attested</sub>
 
 **anu-5)** — 5〉 dafür halten, — anerkennen. Auch mit zugefügtem *tathā*.
 
 - **RU:** — 5〉 считать, признавать. Также с добавленным *tathā*.
 - **EN:** — 5) to consider as, — to acknowledge. Also with *tathā* added.
-  <sub>DCS 9786 · attested</sub>
+  <sub>attested</sub>
 
 **anu-6)** — 6〉 Med. nachsprechen, auswendig lernen, lernen [33,4].
 
 - **RU:** — 6〉 Med. повторять за кем-либо, учить наизусть, учиться [33,4].
 - **EN:** — 6) Med. to repeat after, learn by heart, learn [33,4].
-  <sub>DCS 9786 · attested</sub>
+  <sub>attested</sub>
 
 **apa2-intro)** — Mit *apa*
 - **EN:** — With *apa*
@@ -1110,37 +1110,37 @@ to invite to (gen.): *somāya krītāya prohyamāṇāyānubrūhi*
 
 - **RU:** — 2〉 отклонять заклинанием, заговаривать (с отвращающей целью).
 - **EN:** — 2) to talk over defensively, to avert by speaking.
-  <sub>DCS 9786 · attested</sub>
+  <sub>attested</sub>
 
 **apa3)** — Mit *abhi* schmähen [MBH. 3,268,2]. v. l. *ati*
 
 - **RU:** — С *abhi* поносить, хулить [MBH. 3,268,2]. v. l. *ati*
 - **EN:** — With *abhi* to revile, abuse [MBH. 3,268,2]. v. l. *ati*
-  <sub>DCS 9786 · attested</sub>
+  <sub>attested</sub>
 
 **aabhi)** — Mit *ava* in *anavabrava*
 
 - **RU:** — С *ava* в *anavabrava*
 - **EN:** — With *ava* in *anavabrava*
-  <sub>DCS 9786 · attested</sub>
+  <sub>attested</sub>
 
 **aa)** — Mit *ā* Med. sich unterhalten.
 
 - **RU:** — С *ā* Med. беседовать, разговаривать.
 - **EN:** — With *ā* Med. to converse.
-  <sub>DCS 9786 · attested</sub>
+  <sub>attested</sub>
 
 **aa2)** — Mit *pratyā* Jmd (Acc.) antworten. v. l. *prityābravīn* st. *pratyābravīt*
 
 - **RU:** — С *pratyā* отвечать кому-либо (Acc.). v. l. *prityābravīn* st. *pratyābravīt*
 - **EN:** — With *pratyā* to answer someone (Acc.). v. l. *prityābravīn* st. *pratyābravīt*
-  <sub>DCS 9786 · attested</sub>
+  <sub>attested</sub>
 
 **aa3)** — Mit *ud* Med. entsagen, aufgeben; mit Acc. oder Gen. [TBR. 1,7,10,6]. [ŚAT. BR. 5,2,2,4]. Vgl. [Comm. zu TS. 2,169].
 
 - **RU:** — С *ud* Med. отрекаться, отказываться; с Acc. или Gen. [TBR. 1,7,10,6]. [ŚAT. BR. 5,2,2,4]. Vgl. [Comm. zu TS. 2,169].
 - **EN:** — With *ud* Med. to renounce, give up; with Acc. or Gen. [TBR. 1,7,10,6]. [ŚAT. BR. 5,2,2,4]. Vgl. [Comm. zu TS. 2,169].
-  <sub>DCS 9786 · attested</sub>
+  <sub>attested</sub>
 
 **upa-intro)** — Mit *upa* Med. (einmal auch Act.)
 - **EN:** — With *upa* Med. (once also Act.)
@@ -1152,7 +1152,7 @@ to invite to (gen.): *somāya krītāya prohyamāṇāyānubrūhi*
 
 - **RU:** — 2〉 просительно обращаться за (Dat., в виде исключения Acc.), взывать; уговаривать, склонять к чему-либо.
 - **EN:** — 2) to address entreatingly for (Dat., exceptionally Acc.), to invoke; to persuade, talk into.
-  <sub>DCS 9786 · attested</sub>
+  <sub>attested</sub>
 
 **nis-intro)** — Mit *nis*
 - **EN:** — With *nis*
@@ -1164,7 +1164,7 @@ to invite to (gen.): *somāya krītāya prohyamāṇāyānubrūhi*
 
 - **RU:** — 2〉 разъяснять, объяснять.
 - **EN:** — 2) to explain, declare.
-  <sub>DCS 9786 · attested</sub>
+  <sub>attested</sub>
 
 **pari-intro)** — Mit *pari*
 - **EN:** — With *pari*
@@ -1176,7 +1176,7 @@ to invite to (gen.): *somāya krītāya prohyamāṇāyānubrūhi*
 
 - **RU:** — 2〉 замолвить слово за кого-либо, так v. a. применять ходатайство у кого-либо.
 - **EN:** — 2) to discuss on behalf of someone, so v. a. to employ in discussion with someone.
-  <sub>DCS 9786 · attested</sub>
+  <sub>attested</sub>
 
 **pra-intro)** — Mit *pra*
 - **EN:** — With *pra*
@@ -1188,37 +1188,37 @@ to invite to (gen.): *somāya krītāya prohyamāṇāyānubrūhi*
 
 - **RU:** — 2〉 хвалебно говорить, восхвалять.
 - **EN:** — 2) to utter in praise, to praise.
-  <sub>DCS 9786 · attested</sub>
+  <sub>attested</sub>
 
 **pra-3)** — 3〉 zu Jmd (Dat.) freundlich sprechen [ṚV. 1,161,12].
 
 - **RU:** — 3〉 дружески обращаться к кому-либо (Dat.) [ṚV. 1,161,12].
 - **EN:** — 3) to speak kindly to someone (Dat.) [ṚV. 1,161,12].
-  <sub>DCS 9786 · attested</sub>
+  <sub>attested</sub>
 
 **pra-4)** — 4〉 zu Jmd (Acc.) sprechen, Jmd Etwas sagen, — erzählen (mit doppeltem Acc. [BHAṬṬ.]).
 
 - **RU:** — 4〉 говорить с кем-либо (Acc.), говорить кому-либо что-либо, рассказывать (с двойным Acc. [BHAṬṬ.]).
 - **EN:** — 4) to speak to someone (Acc.), to tell someone something, — to relate (with double Acc. [BHAṬṬ.]).
-  <sub>DCS 9786 · attested</sub>
+  <sub>attested</sub>
 
 **pra-5)** — 5〉 Jmd nennen, schildern als (mit doppeltem Acc.).
 
 - **RU:** — 5〉 называть кого-либо, описывать как (с двойным Acc.).
 - **EN:** — 5) to call, describe someone as (with double Acc.).
-  <sub>DCS 9786 · attested</sub>
+  <sub>attested</sub>
 
 **pra-6)** — 6〉 Jmd (Dat.) Etwas anmelden, so v. a. anbieten, darreichen [ĀPAST. 1,3,31]; Vgl. **1.** *vid* mit *ni* Caus.
 
 - **RU:** — 6〉 объявлять кому-либо (Dat.) о чём-либо, так v. a. предлагать, подносить [ĀPAST. 1,3,31]; Vgl. **1.** *vid* с *ni* Caus.
 - **EN:** — 6) to announce something to someone (Dat.), so v. a. to offer, tender [ĀPAST. 1,3,31]; Vgl. **1.** *vid* with *ni* Caus.
-  <sub>DCS 9786 · attested</sub>
+  <sub>attested</sub>
 
 **prati-intro)** Mit *pratipra* erwidern.
 
 - **RU:** С *pratipra* возражать, отвечать.
 - **EN:** With *pratipra* to reply.
-  <sub>DCS 9786 · attested</sub>
+  <sub>attested</sub>
 
 **prati2-intro)** — Mit *prati*
 - **EN:** — With *prati*
@@ -1230,13 +1230,13 @@ to invite to (gen.): *somāya krītāya prohyamāṇāyānubrūhi*
 
 - **RU:** — 2〉 Med. отвечать кому-либо (Acc.), так v. a. давать отпор нападкам u. s. w..
 - **EN:** — 2) Med. to answer someone (Acc.), so v. a. to return attacks u. s. w..
-  <sub>DCS 9786 · attested</sub>
+  <sub>attested</sub>
 
 **prati2-3)** — 3〉 verweigern, abschlagen.
 
 - **RU:** — 3〉 отказывать, отклонять (просьбу).
 - **EN:** — 3) to refuse, decline.
-  <sub>DCS 9786 · attested</sub>
+  <sub>attested</sub>
 
 **vi-intro)** — Mit *vi*
 - **EN:** — With *vi*
@@ -1248,31 +1248,31 @@ to invite to (gen.): *somāya krītāya prohyamāṇāyānubrūhi*
 
 - **RU:** — 2〉 высказываться о чём-либо (Acc.), излагать своё мнение о чём-либо, отвечать на вопрос ([ĀPAST. 1,32,22]).
 - **EN:** — 2) to express oneself about something (Acc.), to state one's opinion about something, to answer a question ([ĀPAST. 1,32,22]).
-  <sub>DCS 9786 · attested</sub>
+  <sub>attested</sub>
 
 **vi-3)** — 3〉 erläutern, auslegen.
 
 - **RU:** — 3〉 разъяснять, толковать.
 - **EN:** — 3) to elucidate, interpret.
-  <sub>DCS 9786 · attested</sub>
+  <sub>attested</sub>
 
 **vi-4)** — 4〉 falsch aussagen.
 
 - **RU:** — 4〉 ложно утверждать, давать ложные показания.
 - **EN:** — 4) to state falsely, testify falsely.
-  <sub>DCS 9786 · attested</sub>
+  <sub>attested</sub>
 
 **vi-5)** — 5〉 widersprechen, sich nicht einverstanden erklären.
 
 - **RU:** — 5〉 противоречить, выражать несогласие.
 - **EN:** — 5) to contradict, declare oneself in disagreement.
-  <sub>DCS 9786 · attested</sub>
+  <sub>attested</sub>
 
 **vi-6)** — 6〉 Med. sich streiten.
 
 - **RU:** — 6〉 Med. спорить, препираться.
 - **EN:** — 6) Med. to quarrel, dispute.
-  <sub>DCS 9786 · attested</sub>
+  <sub>attested</sub>
 
 **sam-intro)** — Mit *sam*
 - **EN:** — With *sam*
@@ -1284,83 +1284,83 @@ to invite to (gen.): *somāya krītāya prohyamāṇāyānubrūhi*
 
 - **RU:** — 2〉 Med. договариваться, приходить к соглашению.
 - **EN:** — 2) Med. to confer together, come to an agreement.
-  <sub>DCS 9786 · attested</sub>
+  <sub>attested</sub>
 
 **sam-3)** — 3〉 zu Jmd Etwas sprechen, mit doppeltem Acc.
 
 - **RU:** — 3〉 говорить кому-либо что-либо, с двойным Acc.
 - **EN:** — 3) to say something to someone, with double Acc.
-  <sub>DCS 9786 · attested</sub>
+  <sub>attested</sub>
 
 **Mit … 1)** — Mit *adhi*
 — 1〉 Jmd (Dat.) tröstend —, ermuthigend zusprechen, — Muth einsprechen.
 
 - **RU:** — С *adhi*
 — 1〉 утешительно —,ободряюще обращаться к кому-либо (Dat.), внушать мужество.
-  <sub>DCS 9786 · attested</sub>
+  <sub>attested</sub>
 
 **Mit … hersagen 1)** — Mit *anu*
 — 1〉 hersagen, recitiren.
 
 - **RU:** — С *anu*
 — 1〉 произносить вслух, рецитировать.
-  <sub>DCS 9786 · attested</sub>
+  <sub>attested</sub>
 
 **Mit … aus dem Sinne reden 1)** — Mit *apa*
 — 1〉 Jmdm (Gen.) Jmdm (Acc.) aus dem Sinne reden, so v. a. Jmd über Jmd zu trösten suchen [MAITR. S. 1,5,12].
 
 - **RU:** — С *apa*
 — 1〉 отговаривать кого-либо (Gen.) от кого-либо (Acc.), так v. a. пытаться утешить кого-либо в ком-либо [MAITR. S. 1,5,12].
-  <sub>DCS 9786 · attested</sub>
+  <sub>attested</sub>
 
 **Mit … sprechen 1)** — Mit *upa* Med. (einmal auch Act.)
 — 1〉 zu Jmd (Acc.) Sprechen.
 
 - **RU:** — С *upa* Med. (однажды также Act.)
 — 1〉 говорить к кому-либо (Acc.), обращаться.
-  <sub>DCS 9786 · attested</sub>
+  <sub>attested</sub>
 
 **Mit … laut aussprechen 1)** — Mit *nis*
 — 1〉 laut, deutlich, einzeln aussprechen.
 
 - **RU:** — С *nis*
 — 1〉 произносить громко, отчётливо, по отдельности.
-  <sub>DCS 9786 · attested</sub>
+  <sub>attested</sub>
 
 **Mit … besprechen 1)** — Mit *pari*
 — 1〉 besprechen.
 
 - **RU:** — С *pari*
 — 1〉 обсуждать, говорить о.
-  <sub>DCS 9786 · attested</sub>
+  <sub>attested</sub>
 
 **Mit … ansagen 1)** — Mit *pra*
 — 1〉 ansagen, aussagen, ausrufen, anzeigen, verrathen, mittheilen, erzählen, lehren, verheissen.
 
 - **RU:** — С *pra*
 — 1〉 объявлять, возглашать, провозглашать, извещать, открывать (тайну), сообщать, рассказывать, учить, обещать.
-  <sub>DCS 9786 · attested</sub>
+  <sub>attested</sub>
 
 **Mit … antworten 1)** — Mit *prati*
 — 1〉 Jmd. (Acc.) antworten, Jmd Etwas zur Antwort geben (mit doppeltem Acc.)
 
 - **RU:** — С *prati*
 — 1〉 отвечать кому-либо (Acc.), давать кому-либо что-либо в ответ (с двойным Acc.)
-  <sub>DCS 9786 · attested</sub>
+  <sub>attested</sub>
 
 **Mit … sich aussprechen 1)** — Mit *vi*
 — 1〉 sich aussprechen, sich äussern, aussagen, eine Aussage machen ([214,8]) sprechen.
 
 - **RU:** — С *vi*
 — 1〉 высказываться, выражаться, утверждать, делать заявление ([214,8]), говорить.
-  <sub>DCS 9786 · attested</sub>
+  <sub>attested</sub>
 
 **Mit … sich unterreden 1)** — Mit *sam*
 — 1〉 Act. Med. sich unterreden, — unterhalten, zu einander sprechen.
 
 - **RU:** — С *sam*
 — 1〉 Act. Med. беседовать, разговаривать, говорить друг с другом.
-  <sub>DCS 9786 · attested</sub>
+  <sub>attested</sub>
 
 ## brū
 
@@ -1436,109 +1436,109 @@ to invite to (gen.): *somāya krītāya prohyamāṇāyānubrūhi*
 **NWS:1)** *brū* [Gen , unsp] ( brávīti, brūté II P Ā ) to answer. MānDhŚ , Mbh . (+ anyathā ) to speak or decide or judge wrongly. MānDhŚ , Pañcat
 
 - **RU:** *brū* отвечать. MānDhŚ, Mbh. (+ anyathā) говорить, решать или судить неправильно. MānDhŚ, Pañcat
-  <sub>DCS 9786 · attested</sub>
+  <sub>attested</sub>
 
 **NWS:2)** [Ved , unsp] jemandem (Dat) etwas (Akk) aussprechen. ohne Obj: reden, bes in dem Sinne: freundlich reden. zu jemandem (Dat) sagen, sprechen. [ mit wörtlich angeführter Rede und zwar so dass die Rede vorhergeht, und dann im Folgenden durch íti aufgenommen wird, oder so dass die Rede folgt, die dann bisweilen durch átha vorher angedeutet wird, oder so dass die Rede theilweise vorhergeht, theilweise folgt, oder es wird die Rede durch e. Pr z. B. káthā nur angedeutet, oder auch selbst diese Andeutung als sich von selbst verstehend ausgelassen, namentlich in Verbindungen wie ihá bravītu yás u tád cíketat „Wer dies weiss, der sage es hier". ] nennen, bezeichnen als (mit doppeltem Akk; im Pass mit doppeltem Nom), sagen dass dem besprochenen Gegenstand e. Eigenschaft oder e. Bez zukomme. jemand, etwas (Akk) lobend nennen, rühmend erwähnen
 
 - **RU:** высказывать кому-л. (Dat.) что-л. (Akk.); без объекта: говорить, в особ. в смысле: говорить ласково. говорить кому-л. (Dat.), сказать. [с буквально приводимой речью: либо речь предшествует и затем подхватывается словом íti, либо следует за основным высказыванием, иногда предвосхищённым словом átha, либо частично предшествует, частично следует; иногда речь лишь намечается формой, напр. káthā, или даже такое указание опускается как само собой разумеющееся, — особенно в оборотах типа ihá bravītu yás u tád cíketat «Кто это знает, тот пусть скажет здесь».] называть, обозначать как (с двойным Akk.; в Pass. с двойным Nom.), утверждать, что обсуждаемому предмету присуще какое-л. свойство или наименование. хвалебно называть кого-л., что-л. (Akk.), упоминать с похвалой
-  <sub>DCS 9786 · attested</sub>
+  <sub>attested</sub>
 
 **NWS:3)** [Ved , unsp] ( II U ) sagen, sprechen
 
 - **RU:** говорить, сказать
-  <sub>DCS 9786 · attested</sub>
+  <sub>attested</sub>
 
 **NWS:4)** [Ved , unsp] to speak. ṚV V,61,8
 
 - **RU:** говорить. ṚV V,61,8
-  <sub>DCS 9786 · attested</sub>
+  <sub>attested</sub>
 
 **NWS:5)** [Ved , unsp] ( II ) sprechen, reden; nennen, bezeichnen als (+ 2 Akk); sagen dass (+ präd Akk); sprechen von, verkünden; jemandem (Dat) sagen. ṚV 1,35,6 , ṚV 8,48,1 , ṚV 1,23,20 , ṚV 7,26,3 , ṚV 10,18,1 . Ā: sich nennen, heissen. ṚV 7,36,2
 
 - **RU:** говорить, речь вести; называть, обозначать как (+ 2 Akk.); утверждать что (+ предикативный Akk.); говорить о, возвещать; говорить кому-л. (Dat.). ṚV 1,35,6, ṚV 8,48,1, ṚV 1,23,20, ṚV 7,26,3, ṚV 10,18,1. Ā.: называться, именоваться. ṚV 7,36,2
-  <sub>DCS 9786 · attested</sub>
+  <sub>attested</sub>
 
 **NWS:6)** [Ved , unsp] nennen. ṚV 8,77,2
 
 - **RU:** называть. ṚV 8,77,2
-  <sub>DCS 9786 · attested</sub>
+  <sub>attested</sub>
 
 **NWS:7)** [Śā , Soc] to present a case (on the part of the plaintiff). MānDhŚ 8.58
 
 - **RU:** излагать дело (со стороны истца). MānDhŚ 8.58
-  <sub>DCS 9786 · attested</sub>
+  <sub>attested</sub>
 
 **NWS:8)** *either intr + punar or tr + praśnam (a ḍuestion).* [Gen , unsp] – vielleicht auch mit doppeltem Akk; auch mit Auslassung des e. oder anderen der genannten Casus. Ved , unsp
 
 - **RU:** *either intr + punar or tr + praśnam (a ḍuestion).* — быть может, также с двойным Akk.; а также с опущением одного или другого из упомянутых падежей.
-  <sub>DCS 9786 · attested</sub>
+  <sub>attested</sub>
 
 **NWS:9)** *+ a : to ṛail to testiṛy (on the part oṛ a ṭitness); to reṛuse to speak in court (on the part oṛ ligitants). ṃāndhhŚ 8.13 .* [Śā , Soc (s.v. a √ brū )] + adhi : zugunsten von jemandem (Dat) sprechen, verteidigen, in Schutz nehmen, Partei nehmen für, Recht geben. ṚV 1,35,11 . Ved , unsp
 
 - **RU:** *+ a : to ṛail to testiṛy (on the part oṛ a ṭitness); to reṛuse to speak in court (on the part oṛ ligitants). ṃāndhhŚ 8.13 .* + adhi: говорить в пользу кого-л. (Dat.), защищать, брать под защиту, принимать чью-л. сторону, признавать правым. ṚV 1,35,11.
-  <sub>DCS 9786 · attested</sub>
+  <sub>attested</sub>
 
 **NWS:10)** *– ṛürsprechen, ṛürbitten. ṚV 10,15,5 .* [Ved , unsp] + ádhi : jemandem (Dat) tröstend oder ermunternd zusprechen. Ved , unsp
 
 - **RU:** *– ṛürsprechen, ṛürbitten. ṚV 10,15,5 .* + ádhi: обращаться к кому-л. (Dat.) с утешением или ободрением.
-  <sub>DCS 9786 · attested</sub>
+  <sub>attested</sub>
 
 **NWS:11)** *– ( ádhi brūhi naḥ ): bless us. ṚV ī,114,10 .* [Ved , unsp] + ánu : nach der Erinnerung sprechen. Ved , unsp
 
 - **RU:** *– ( ádhi brūhi naḥ ): bless us. ṚV ī,114,10 .* + ánu: говорить по памяти, воспроизводить устно.
-  <sub>DCS 9786 · attested</sub>
+  <sub>attested</sub>
 
 **NWS:12)** *+ ava : tadeln, siehe anavabravá .* [Ved , unsp] + upa : ansprechen, bitten um (+ 2 Akk); zureden, ermuntern. ṚV 4,51,11 , ṚV 1,134,2 . Ved , unsp
 
 - **RU:** *+ ava : tadeln, siehe anavabravá .* + upa: обращаться к (кому-л.), просить о (+ 2 Akk.); увещевать, ободрять. ṚV 4,51,11, ṚV 1,134,2.
-  <sub>DCS 9786 · attested</sub>
+  <sub>attested</sub>
 
 **NWS:13)** *– bittend ansprechen, anruṛen, appellieren an. ṚV 10,35,7 .* [Ved , unsp] + úpa : 1) jemand (Akk) anrufen; 2) jemand anrufen als, mit dopp. Akk oder bei der zweiten Pers auch mit dem Vok statt des zweiten Akk; 3) jemand (Akk) auffordern zu (Dat); 4) jemand (Akk) bitten um (Akk). Ved , unsp
 
 - **RU:** *– bittend ansprechen, anruṛen, appellieren an. ṚV 10,35,7 .* + úpa: 1) взывать к кому-л. (Akk.); 2) называть кого-л. (так-то), с двойным Akk. или, при 2-м лице, с Voc. вместо второго Akk.; 3) побуждать кого-л. (Akk.) к чему-л. (Dat.); 4) просить кого-л. (Akk.) о чём-л. (Akk.).
-  <sub>DCS 9786 · attested</sub>
+  <sub>attested</sub>
 
 **NWS:14)** *– ( úpa bruvate ): they implore. ṚV ī,134,2 .* [Ved , unsp] + parā : „répliquer". JB . Ved , unsp
 
 - **RU:** *– ( úpa bruvate ): they implore. ṚV ī,134,2 .* + parā: «возражать, отвечать». JB.
-  <sub>DCS 9786 · attested</sub>
+  <sub>attested</sub>
 
 **NWS:15)** *+ pra : a) to say, tell, relate (ṭith satyam : to speak the truth, speak sincerely); b) to read beṛore (gen or dat); c) to call, name; d) to describe as (tṭo acc). bhṛhśaṃ , bhhāgph , ṃbh .* [Gen , unsp (s.v. prabrū )] – mittheilen, verrathen. Ved , unsp
 
 - **RU:** *+ pra : a) to say, tell, relate (ṭith satyam : to speak the truth, speak sincerely); b) to read beṛore (gen or dat); c) to call, name; d) to describe as (tṭo acc). bhṛhśaṃ , bhhāgph , ṃbh .* — сообщать, разглашать.
-  <sub>DCS 9786 · attested</sub>
+  <sub>attested</sub>
 
 **NWS:16)** *– verkünden, aussprechen, ansagen; rühmen, sich rühmen mit (ākk). ṚV 10,52,1 , ṚV 10,54,2 .* [Ved , unsp] – a) to respond to a charge (on the part of the defendant); b) (with anyathā ) to give false testimony causing the loss of suit. MānDhŚ 8.58 , NārSm Mā 1.60 . Śā , Soc ; Olivelle 2015 : 281 (s.v. pra √ brū )
 
 - **RU:** *– verkünden, aussprechen, ansagen; rühmen, sich rühmen mit (ākk). ṚV 10,52,1 , ṚV 10,54,2 .* — a) отвечать на обвинение (со стороны ответчика); b) (с anyathā) давать ложные показания, влекущие проигрыш дела. MānDhŚ 8.58, NārSm Mā 1.60.
-  <sub>DCS 9786 · attested</sub>
+  <sub>attested</sub>
 
 **NWS:17)** *+ prá : 1) jemandem (dhat) etṭas (ākk) verkünden oder rühmend nennen, anpreisen (auch ohne dhat und mit indirecter ṇede statt des ākk); 2) preisend aussprechen, preisen (ākk); 3) med: etṭas (ākk) an sich kund ṭerden lassen, oṛṛenbaren; 4) jemand (dhat) segnen (ghegensatṣ śap ).* [Ved , unsp] – ( prá bruváte ): they proclaim. ṚV V,87,2 . Ved , unsp
 
 - **RU:** *+ prá : 1) jemandem (dhat) etṭas (ākk) verkünden oder rühmend nennen, anpreisen (auch ohne dhat und mit indirecter ṇede statt des ākk); 2) preisend aussprechen, preisen (ākk); 3) med: etṭas (ākk) an sich kund ṭerden lassen, oṛṛenbaren; 4) jemand (dhat) segnen (ghegensatṣ śap ).* — (prá bruváte): возвещают, провозглашают. ṚV V,87,2.
-  <sub>DCS 9786 · attested</sub>
+  <sub>attested</sub>
 
 **NWS:18)** *+ prati : antṭorten.* [Ved , unsp] – Rede stehen (+ Dat). ṚV 10,95,13 . Ved , unsp
 
 - **RU:** *+ prati : antṭorten.* — держать ответ, отвечать на речь (+ Dat.). ṚV 10,95,13.
-  <sub>DCS 9786 · attested</sub>
+  <sub>attested</sub>
 
 **NWS:19)** *– ṇede stehen, seinen ṃann stehen gegen, sich erṭehren. ṚV 7,31,6 .* [Ved , unsp] + práti : 1) jemandem (Akk) antworten (auch ohne Casus); 2) an jemandem (Akk) Vergeltung üben; 3) zu jemand (Instr) sich gesellen. Ved , unsp
 
 - **RU:** *– ṇede stehen, seinen ṃann stehen gegen, sich erṭehren. ṚV 7,31,6 .* + práti: 1) отвечать кому-л. (Akk.), также без падежа; 2) воздавать кому-л. (Akk.) по заслугам, мстить; 3) присоединяться к кому-л. (Instr.).
-  <sub>DCS 9786 · attested</sub>
+  <sub>attested</sub>
 
 **NWS:20)** *+ vi : a) to eḷplain, propound, teach; b) to interpret, decide (a laṭ); c) to dispute, contend about. thśaṃ , ṃāndhhŚ viii, 390 , ṚV vi, 25, 4 .* [Gen , unsp (s.v. vibrū )] – to shout. TriṣaŚaPuC 8. 7. 281 . Jin , unsp , 2. H. 12. Jh. , Gujarat ; TŚPC 5 : 437 (s.v. vibrū )
 
 - **RU:** *+ vi : a) to eḷplain, propound, teach; b) to interpret, decide (a laṭ); c) to dispute, contend about. thśaṃ , ṃāndhhŚ viii, 390 , ṚV vi, 25, 4 .* — кричать, восклицать. TriṣaŚaPuC 8.7.281. Jin, unsp, 2. H. 12. Jh., Gujarat.
-  <sub>DCS 9786 · attested</sub>
+  <sub>attested</sub>
 
 **NWS:21)** *+ ví : 1) jemandem (dhat) etṭas (ākk) aussprechen, verkünden; 2) med: sich streiten.* [Ved , unsp] + sám : 1) sich besprechen, sich einander zugesellen. Ved , unsp
 
 - **RU:** *+ ví : 1) jemandem (dhat) etṭas (ākk) aussprechen, verkünden; 2) med: sich streiten.* + sám: 1) совещаться, беседовать друг с другом; объединяться.
-  <sub>DCS 9786 · attested</sub>
+  <sub>attested</sub>
 
 **NWS:22)** *– ( sám bruvate ): they talk together. ṚV ī,37,13 .* [Ved , unsp] + saṃpra , moy.: „échanger des communications". JB . Ved , unsp
 
 - **RU:** *– ( sám bruvate ): they talk together. ṚV ī,37,13 .* + saṃpra, moy.: «обмениваться сообщениями». JB.
-  <sub>DCS 9786 · attested</sub>
+  <sub>attested</sub>

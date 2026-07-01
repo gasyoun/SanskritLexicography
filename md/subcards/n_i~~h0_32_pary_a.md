@@ -22,7 +22,7 @@
 [GOBH. 3,8,5.]
 [ŚĀṄKH. GṚHY. 1,13. 2,6.] *ko nu tām — paryāṇayetsabhāmadhye*
 [MBH. 2,2685.]
-  <sub>DCS 2376 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) herbeiführen, herbeibringen: *ainaṃ nayanmātariśvā devebhyo mathitaṃ pari*
 [ṚV. 3,9,5.] *pāñcālarājaṃ drupadaṃ gṛhītvā raṇamūrdhani . paryānayata*
@@ -34,4 +34,4 @@
 - **EN:** — 2) to bring hither, fetch hither: *ainaṃ nayanmātariśvā devebhyo mathitaṃ pari*
 [ṚV. 3,9,5.] *pāñcālarājaṃ drupadaṃ gṛhītvā raṇamūrdhani . paryānayata*
 [MBH. 1,5446.]
-  <sub>DCS 2376 · attested</sub>
+  <sub>attested</sub>

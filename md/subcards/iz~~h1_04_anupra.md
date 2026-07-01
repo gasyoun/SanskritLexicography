@@ -9,4 +9,4 @@
 - **EN:** — *anupra* caus. to send after, to send out: *anupreṣaya vānarān*
 [R. 4,37,10.] *yātrānupreṣita*
 [KATHĀS. 19,69.]
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>

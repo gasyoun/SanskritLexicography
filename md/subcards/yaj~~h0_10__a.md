@@ -31,7 +31,7 @@ on [P. 6,4,120]) *manuḥ*
 [SĀY.]), [AIT. BR. 1,26] and [VS. 5,7] thus v. a. won by sacrifice, obtained through worship; s. below (3).
 [MAH.] on [VS.] shares this view, whereas
 [SĀY.] on [AIT. BR.] takes *eṣṭar* and *eṣṭā* as nom. ag. to *iṣ*, similarly also in Comm. on [TS. 1,2,11,1.]
-  <sub>DCS 6777 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) verehren, mit acc.: *ā yaṃ hotā yajati viśvavāram*
 [ṚV. 7,7,5.] *yaṃ devāsastrirahannāyajante*
@@ -46,7 +46,7 @@ on [P. 6,4,120]) *manuḥ*
 [ṚV. 7,7,5.] *yaṃ devāsastrirahannāyajante*
 [3,4,2.] *yeṣu viṣṇustriṣu padeṣveṣṭaḥ*
 [VS. 23,49.]
-  <sub>DCS 6777 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) eropfern; überh. verschaffen (dem Menschen von den Göttern), zuwenden; med. auch sich verschaffen: *ā hi ṣmā sūnave pitā yajati*
 [ṚV. 1,26,3.] [40,4.] *agne mahi draviṇamā yajasva*
@@ -88,10 +88,10 @@ on [P. 6,4,120]) *manuḥ*
 [10,52,5.] [4,42,8.] *uruṣya rāya eṣo yajasva*
 [VS. 7,4.] [14,4.]
 [ŚAT. BR. 1,7,3,14.]
-  <sub>DCS 6777 · attested</sub>
+  <sub>attested</sub>
 
 **note)** — Vgl. *āyaji* fgg. und *āyāga* .
 
 - **RU:** — Vgl. *āyaji* fgg. und *āyāga* .
 - **EN:** — Vgl. *āyaji* fgg. and *āyāga*.
-  <sub>DCS 6777 · attested</sub>
+  <sub>attested</sub>

@@ -10,4 +10,4 @@
 [MBH. 12,8081.]
 - **EN:** — *anupari* to pass through, traverse: *yadā ca pṛthivīṃ sarvāṃ yajamāno 'nuparyagāḥ*
 [MBH. 12,8081.]
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>

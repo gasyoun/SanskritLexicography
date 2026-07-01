@@ -100,7 +100,7 @@
 [R. GORR. 2,20,4.] [6,4,10.]
 [KUMĀRAS. 5,80.]
 [Spr. 673.]
-  <sub>DCS 122 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) pass. sich spalten so v. a. sich theilen: *jaṅgamānāṃ ca sarveṣāṃ śarīre pañca dhātavaḥ . pratyekaśaḥ prabhidyante yaiḥ śarīraṃ viceṣṭate ..*
 [MBH. 12,6839.]
@@ -109,7 +109,7 @@
 [MBH. 12,6839.]
 - **EN:** — 2) pass. to split (intr.), so v. a. to divide: *jaṅgamānāṃ ca sarveṣāṃ śarīre pañca dhātavaḥ . pratyekaśaḥ prabhidyante yaiḥ śarīraṃ viceṣṭate ..*
 [MBH. 12,6839.]
-  <sub>DCS 122 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) *prabhinna* entstellt, verändert, verstimmt: *na tvāṃ prabhinnaṃ (= parājitaṃ* Schol.). *jānāmi*
 [MBH. 16,259.]
@@ -118,7 +118,7 @@
 [MBH. 16,259.]
 - **EN:** — 3) *prabhinna* disfigured, altered, disturbed: *na tvāṃ prabhinnaṃ (= parājitaṃ* Schol.). *jānāmi*
 [MBH. 16,259.]
-  <sub>DCS 122 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) *prabhinnāñjana* so v. a. *bhinnāñjana* mit Oel angemachte Augensalbe
 [ṚT. 2,2.]
@@ -130,10 +130,10 @@
 - **EN:** — 4) *prabhinnāñjana* so v. a. *bhinnāñjana* eye-salve prepared with oil
 [ṚT. 2,2.]
 [PAÑCAR. 4,6,8.]
-  <sub>DCS 122 · attested</sub>
+  <sub>attested</sub>
 
 **nom)** — Vgl. *prabhid, prabheda* fgg.
 
 - **RU:** — Vgl. *prabhid, prabheda* fgg.
 - **EN:** — Vgl. *prabhid, prabheda* fgg.
-  <sub>DCS 122 · attested</sub>
+  <sub>attested</sub>

@@ -13,4 +13,4 @@
 
 - **RU:** — *adhipra* отсылать прочь от (abl.): *prajāpatirindraṃ vajrādadhi prasuvati*
 [KĀṬH. 14,7.]
-  <sub>DCS 14088 · attested</sub>
+  <sub>attested</sub>

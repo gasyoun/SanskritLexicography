@@ -13,7 +13,7 @@
 - **EN:** — *ud*
  1) to cut out, cut off: *nocchindyādātmano mūlaṃ pareṣāṃ cātitṛṣṇayā*
 [MBH. 7,139.]
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) ausrotten, zu Grunde richten, vernichten, Jmd den Untergang bereiten
 [AV. 7,113,1.] *ucchidyamāneṣu bhṛguṣu*
@@ -43,7 +43,7 @@ Sch. in [WILS.] [SĀṂKHYAK. S. 10.] *ucchettuṃ prabhavati yanna saptasaptist
 Sch. in [WILS.] [SĀṂKHYAK. S. 10.] *ucchettuṃ prabhavati yanna saptasaptistannaiśaṃ timiramapākaroti candraḥ*
 [ŚĀK. 157.] *ucchinna* (beside *vinaṣṭa*) ruined, rejected, wretched
 [MṚCCH. 34,15.]
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) störend in Etwas eingreifen, hemmen, unterbrechen: *tamucchindyāmasya kāmaṃ kathaṃ nu yamasādane*
 [MBH. 1,4891.] *kaccinnyāyānanucchidya kośaste 'bhiprapūryate*
@@ -73,7 +73,7 @@ Sch. zu [KAP. 1,60.] *anucchidyamānatayāvasthānāt*
 [M. 3,101.] *aviveko yuktitaḥ śravaṇataśca na bādhyate nocchidyate*
 Sch. to [KAP. 1,60.] *anucchidyamānatayāvasthānāt*
 [SĀH. D. 75,2.]
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **caus)** — Vgl. *ucchitti, ucchettar* fgg. — caus. ausrotten, vernichten oder vernichten lassen: *prātaḥ sakalānyapi sattvānyucchedayiṣyāmi*
 [PAÑCAT. 55,12.]
@@ -82,4 +82,4 @@ Sch. to [KAP. 1,60.] *anucchidyamānatayāvasthānāt*
 [PAÑCAT. 55,12.]
 - **EN:** — Vgl. *ucchitti, ucchettar* fgg. — caus. to extirpate, destroy or to cause to be destroyed: *prātaḥ sakalānyapi sattvānyucchedayiṣyāmi*
 [PAÑCAT. 55,12.]
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>

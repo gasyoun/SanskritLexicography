@@ -10,13 +10,13 @@
 [ĀŚV. ŚR. 2,3,11. 3,1,18. 4,10,1.]
 - **EN:** — *ati* to pass by, stride past: *apareṇa vedimativrajya*
 [ĀŚV. ŚR. 2,3,11. 3,1,18. 4,10,1.]
-  <sub>DCS 1202 · attested</sub>
+  <sub>attested</sub>
 
 **2)** [KAUŚ. 24.] hinstreichen über: *ativrajadbhiḥ pataṃgaiḥ*
 
 - **RU:** [KAUŚ. 24.] простираться над: *ativrajadbhiḥ pataṃgaiḥ*
 - **EN:** [KAUŚ. 24.] to range over: *ativrajadbhiḥ pataṃgaiḥ*
-  <sub>DCS 1202 · attested</sub>
+  <sub>attested</sub>
 
 **3)** [ṚV. 1,116,4.] durchstreichen, durchwandern, passiren: *ativrajya surāṣṭram*
 [BHĀG. P. 3,1,24.] *trilokīm*
@@ -25,7 +25,7 @@
 [BHĀG. P. 3,1,24.] *trilokīm*
 - **EN:** [ṚV. 1,116,4.] to traverse, wander through, pass through: *ativrajya surāṣṭram*
 [BHĀG. P. 3,1,24.] *trilokīm*
-  <sub>DCS 1202 · attested</sub>
+  <sub>attested</sub>
 
 **4)** [4,12,34.] hinübergelangen über (in übertr. Bed.): *triguṇam*
 [3,29,14.] *gatīstisraḥ*
@@ -37,4 +37,4 @@
 - **EN:** [4,12,34.] to pass beyond (in übertr. Bed.): *triguṇam*
 [3,29,14.] *gatīstisraḥ*
 [11,29,44.]
-  <sub>DCS 1202 · attested</sub>
+  <sub>attested</sub>

@@ -73,7 +73,7 @@
 [1,4672.] med. to bring to oneself: *yadvai prāṇenānnamātmanpraṇayate tatprāṇasya prāṇatvam*
 [ŚAT. BR. 12,9,1,14.] *praṇīta = praveśita* led in, brought within
 [H. an.] [MED.]
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) techn. Ausdruck fur das Hintragen des Feuers auf seine Oerter am Altar und des zu den Handlungen nöthigen Wassers (auch des Soma)
 [ṚV. 1,148,3.] [3,6,1.] [27,8.] [4,1,9.] *praṇīto agniragninā*
@@ -141,7 +141,7 @@
 [ŚĀṄKH. ŚR. 4,7,1.]
 [R. 6,96,5.] *praṇītā* _f._ a type of sacrificial vessel (*yajñapātrāntara*)
 [MED. t. 124.] Vgl. *agnipraṇayana* .
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) *daṇḍam* den Stock führen, Strafe verhängen: *yadi na praṇayedrājā daṇḍaṃ daṇḍyeṣvatandritaḥ*
 [M. 7,20.] [19.] [27.] [31.] [8,238.]
@@ -156,7 +156,7 @@
 [M. 7,20.] [19.] [27.] [31.] [8,238.]
 [MBH. 1,2469.] [3,1045.] [11317.] [12,3216.] [15,198.]
 [RAGH. ed. Calc. 1,25.] [BHĀG. P. 5,26,16.]
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) bringen zu, versetzen in (einen Zustand): *yena vaśaṃ praṇītāḥ* unterworfen
 [BHĀG. P. 7,8,8.] *vidhātrā — bhavānpraṇīto dṛgagocarāṃ daśām*
@@ -168,7 +168,7 @@
 - **EN:** 4) to bring to, reduce to (a state): *yena vaśaṃ praṇītāḥ* subjected
 [BHĀG. P. 7,8,8.] *vidhātrā — bhavānpraṇīto dṛgagocarāṃ daśām*
 [7,2,33.]
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>
 
 **5)** — 5) hervorbringen, bewerkstelligen, ausführen, vollbringen, vollführen: *yatprāṇena prāṇiti yena prāṇaḥ praṇīyate*
 [KENOP. 8.] *tava kṣetre devahūtyāṃ praṇeṣye tattvasaṃhitām*
@@ -228,7 +228,7 @@
 [H. 413.]
 [H. an.]
 [MED.]
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>
 
 **6)** — 6) feststellen, einsetzen, lehren; verfassen: *dyūte purāṇairvyavahāraḥ praṇītastatrātyayo nāsti na saṃprahāraḥ*
 [MBH. 2,1977.] *triṃśanmuhūrtaṃ tu bhavedahaśca rātriśca saṃkhyā munibhiḥ praṇītā*
@@ -273,7 +273,7 @@
 [MBH. 1,591.] *kramaṃ praṇīya śikṣāṃ ca praṇayitvā sa gālavaḥ*
 [12,13263.] Schol. to [P. 2,4,21.] [VOP.] Einl. *śāstraṃ ca yasyośanasā praṇītam*
 [PAÑCAT. V,76.] [ŚAṂK.] to [BṚH. ĀR. UP. S. 302.] [PRAB. 28,2.] [28,1.] [MÜLLER, St. 197.] [Verz. d. Oxf. H. No. 380.] [MADHUS.] in [Ind. St. 1,18,1.] [KULL.] to [M. 1,5.] *manupraṇītatve 'sya śāstrasya* ders. to [M. 1,4.]
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>
 
 **7)** — 7) seine Zuneigung —, seine Freundschaft gegen Jmd an den Tag legen: *praṇayantu bhavanto māṃ yatheṣṭamabhimantritāḥ*
 [MBH. 2,1288.] *praṇayasva yathāśraddhaṃ rājankiṃ karavāṇi te*
@@ -291,7 +291,7 @@
 [3,2160.] *praṇayiṣyati*
 [12,9529.] *dadāni kiṃ cāpi manaḥpraṇītaṃ priyātithestava* probably what the heart holds dear
 [13,3503.]
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>
 
 **desid-pass)** — Vgl. *praṇaya, ˚ṇayana, ˚ṇayanīya, ˚ṇāyya, ˚ṇī, ˚ṇetar, ṇeya*.* duṣpraṇīta* . — desid. hinführen wollen: *pra yaṃ rāye ninīṣasi*
 [ṚV. 8,92,4.]
@@ -305,9 +305,9 @@
 
 - **RU:** — Vgl. *praṇaya, ˚ṇayana, ˚ṇayanīya, ˚ṇāyya, ˚ṇī, ˚ṇetar, ṇeya*.* duṣpraṇīta* . — desid. желать вести куда-либо: *pra yaṃ rāye ninīṣasi*
 [ṚV. 8,92,4.]
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>
 
 **nom)** — Vgl. *praṇinīṣeṇya* .
 
 - **RU:** — Vgl. *praṇinīṣeṇya* .
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>

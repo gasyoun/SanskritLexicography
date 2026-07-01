@@ -19,7 +19,7 @@ Sch. как _n._ nom. act.
 Sch. as _n._ nom. act.
 [P. 3,3,161.] [166.] *adhīṣṭaḥ* (sic) *satkārapūrvako vyāpāraḥ*
 [161], Sch.
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>
 
 **closing)** — Vgl. *adhyeṣaṇa* .
 - **EN:** — Vgl. *adhyeṣaṇa*.
@@ -27,4 +27,4 @@ Sch. as _n._ nom. act.
 **cross-ref)** — Vgl. *adhyeṣaṇa* .
 
 - **RU:** — Vgl. *adhyeṣaṇa* .
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>

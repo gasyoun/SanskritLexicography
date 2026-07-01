@@ -18,21 +18,21 @@
 — *sam*
  sense 2) to be deleted and its examples combined with
  sense 1).
-  <sub>DCS 2376 · attested</sub>
+  <sub>attested</sub>
 
 **entführen)** — *pari* entführen
 [ṚV. 6,4,6.]
 
 - **RU:** — *pari* похищать, уводить
 [ṚV. 6,4,6.]
-  <sub>DCS 2376 · attested</sub>
+  <sub>attested</sub>
 
 **sense-group-9)** — *atipra*
 [ĀŚV. ŚR. 2,6,9. 19,1.]
 
 - **RU:** — *atipra*
 [ĀŚV. ŚR. 2,6,9. 19,1.]
-  <sub>DCS 2376 · attested</sub>
+  <sub>attested</sub>
 
 **2-strikethrough)** — *sam*
  2) zu streichen und die Beispiele mit
@@ -41,4 +41,4 @@
 - **RU:** — *sam*
  2) следует вычеркнуть и примеры с
  объединить с 1).
-  <sub>DCS 2376 · attested</sub>
+  <sub>attested</sub>

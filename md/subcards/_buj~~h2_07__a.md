@@ -7,4 +7,4 @@
 
 - **RU:** — *ā* s. *ābhogi* и vgl. *ābhojin* в *bhujagābhojin* .
 - **EN:** — *ā* s. *ābhogi* and vgl. *ābhojin* in *bhujagābhojin* .
-  <sub>DCS 23 · attested</sub>
+  <sub>attested</sub>

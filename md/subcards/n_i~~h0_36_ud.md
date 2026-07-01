@@ -91,7 +91,7 @@ als Beispiel wird in den Scholien *daṇḍamunnayate* er erhebt den Stock aufge
 [KĀTY. ŚR. 9,3,10.] to place upon, to lay upon: *pumāṃsamunnayetprājñaḥ śayana tapta āyase*
 [MBH. 12,6105.] According to [P. 1,3,36] and [VOP. 23,28] *nī* appears in the Bed. *utsañjana* (P.) or *utkṣepa* ([VOP.]) always as med.;
 as an example the Scholiasts cite *daṇḍamunnayate* he raises the stick.
-  <sub>DCS 2376 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) act. med. aus —, aufschöpfen, vollschöpfen: *(somam) vana unnayadhvam*
 [ṚV. 2,14,9.]
@@ -115,7 +115,7 @@ as an example the Scholiasts cite *daṇḍamunnayate* he raises the stick.
 [12,4,2,6.] [6,1,27.] [TS. 3,1,2,4.] [6,2,4,1.] [AIT. BR. 6,9.] *yatraitāṃścamasānunnayeyuḥ*
 [7,33.] [ŚĀṄKH. ŚR. 7,4,1.] *unnīta* _n._ drawing out, filling: *yadyekasminnunnīte yadi dvayoḥ*
 [AIT. BR. 7,5.]
-  <sub>DCS 2376 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) wegführen (das Kalb von der Mutter)
 [TS. 1,6,11,3.]
@@ -142,7 +142,7 @@ as an example the Scholiasts cite *daṇḍamunnayate* he raises the stick.
 [3,1438.] [10756.] *badhāyonnīyamāneṣu* to lead away to death
 [12,9561.] *daivenaikatra nītānāmunnītānāṃ svakarmabhiḥ* led apart in different directions, separated
 [BHĀG. P. 7,2,21.]
-  <sub>DCS 2376 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) auseinanderstreifen, schlichten: *(darbhapiñjūlībhiḥ) trirunnayet*
 [GṚHYASAṂGR. 1,93.]
@@ -151,7 +151,7 @@ as an example the Scholiasts cite *daṇḍamunnayate* he raises the stick.
 [GṚHYASAṂGR. 1,93.]
 - **EN:** — 4) to smooth apart, to arrange: *(darbhapiñjūlībhiḥ) trirunnayet*
 [GṚHYASAṂGR. 1,93.]
-  <sub>DCS 2376 · attested</sub>
+  <sub>attested</sub>
 
 **5)** — 5) viell. ausquetschen (ein Geschwür): *paruṣairākṣipasyevaṃ vraṇaṃ pūtimivonnayan*
 [MBH. 5,2776.]
@@ -160,7 +160,7 @@ as an example the Scholiasts cite *daṇḍamunnayate* he raises the stick.
 [MBH. 5,2776.]
 - **EN:** — 5) viell. to squeeze out (an abscess): *paruṣairākṣipasyevaṃ vraṇaṃ pūtimivonnayan*
 [MBH. 5,2776.]
-  <sub>DCS 2376 · attested</sub>
+  <sub>attested</sub>
 
 **6)** — 6) anstimmen: *unnīta* als Erkl. von *udañcita* in *udañcitapañcasarāga*
 Schol. zu [GĪT. 1,39.]
@@ -169,7 +169,7 @@ Schol. zu [GĪT. 1,39.]
 Schol. к [GĪT. 1,39.]
 - **EN:** — 6) to intone: *unnīta* as Erkl. of *udañcita* in *udañcitapañcasarāga*
 Schol. to [GĪT. 1,39.]
-  <sub>DCS 2376 · attested</sub>
+  <sub>attested</sub>
 
 **7)** — 7) herausbringen, hinter Etwas kommen, ausspüren, erschliessen: *tasya padamunnīya*
 [MBH. 3,12444.] *tato rājñāṃ carairāptaiḥ pravṛttirudanīyata*
@@ -199,7 +199,7 @@ Schol. to [GĪT. 1,39.]
 [SĀH. D. 37,14.] *iti pratiśabdādunnīyate*
 [KULL.] to [M. 1,1] (S. 5, Z. 4). *prāḍvivāko vakṣyamāṇena śapathena satyamunnayet* ders. to [M. 8,109.]
 [252.]
-  <sub>DCS 2376 · attested</sub>
+  <sub>attested</sub>
 
 **desid)** — Vgl. *unnaya* fg., *unnāya, unnī* fgg. — desid. herauszuführen beabsichtigen: *eṣa hyeva sādhu karma kārayati taṃ yamebhyo lokebhya unninīṣate*
 [KAUṢ. UP.] bei [WIND. Sancara 113,1] v. u.
@@ -208,4 +208,4 @@ Schol. to [GĪT. 1,39.]
 [KAUṢ. UP.] у [WIND. Sancara 113,1] v. u.
 - **EN:** — Vgl. *unnaya* fg., *unnāya, unnī* fgg. — desid. to intend to lead out: *eṣa hyeva sādhu karma kārayati taṃ yamebhyo lokebhya unninīṣate*
 [KAUṢ. UP.] at [WIND. Sancara 113,1] v. u.
-  <sub>DCS 2376 · attested</sub>
+  <sub>attested</sub>

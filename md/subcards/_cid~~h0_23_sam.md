@@ -48,7 +48,7 @@
 [BHAG. 4,11.]
 [BHĀG. P. 1,15,31.] [3,7,15.] *praśnam* to settle a question
 [4,29,52.]
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **sam-1)** — *sam*
  1) abschneiden, abhauen; zerschneiden, spalten, durchbohren: *lomāni*
@@ -81,4 +81,4 @@
 [MBH. 1,8311.]
 [BHĀG. P. 3,3,17.] [4,6,2.] [10,18.] *saṃchidyantau ca gātrāṇi* рубя друг другу члены тела
 [MBH. 7,7918.]
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>

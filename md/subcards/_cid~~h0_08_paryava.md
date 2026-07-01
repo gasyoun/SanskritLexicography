@@ -10,4 +10,4 @@
 [AIT. BR. 3,19.]
 - **EN:** — *paryava* to sever all around on both sides: *ubhayata enaṃ viśaḥ paryavacchinadānīti*
 [AIT. BR. 3,19.]
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>

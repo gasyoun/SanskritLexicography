@@ -8,4 +8,4 @@
 - **RU:** — *api* med. стремиться вслед, пытаться настичь: *asya vrateṣvapi soma iṣyate* [ṚV. 9,69,1.]
 - **EN:** — *api* med. to strive after, to try to catch up with: *asya vrateṣvapi soma iṣyate*
 [ṚV. 9,69,1.]
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>

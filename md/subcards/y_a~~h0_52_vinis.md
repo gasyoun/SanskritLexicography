@@ -61,10 +61,10 @@
 [585.] *yathā mātrā kṛtāstasmād* (*hṛdayāt*) *upadeśā viniryayuḥ*
 [KATHĀS. 12,81.] *viniryāti* (in Gegens. to *samāyāti) sadā lakṣmīrgajabhuktakapitthavat*
 [Spr. 3177.]
-  <sub>DCS 41 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — Vgl. *viniryāṇa* .
 
 - **RU:** — Vgl. *viniryāṇa* .
 - **EN:** — Vgl. *viniryāṇa*.
-  <sub>DCS 41 · attested</sub>
+  <sub>attested</sub>

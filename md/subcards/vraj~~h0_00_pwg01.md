@@ -10,7 +10,7 @@
 [YĀJÑ. 3,196.]
 - **EN:** — 5) with *punar* to return to this life
 [YĀJÑ. 3,196.]
-  <sub>DCS 1202 · attested</sub>
+  <sub>attested</sub>
 
 **6)** — 6) an eine eigentliche Bewegung wird in folgenden Verbindungen gar nicht mehr gedacht: *yadi jīvanvrajeta saḥ* so v. a. mit dem Leben davonkommen
 [R. 4,13,36.] *taṃ vinā ko vrajetsukham* so v. a. sich wohl fühlen
@@ -22,10 +22,10 @@
 - **EN:** — 6) the sense of actual motion is no longer present at all in the following combinations: *yadi jīvanvrajeta saḥ* so v. a. to escape with one's life
 [R. 4,13,36.] *taṃ vinā ko vrajetsukham* so v. a. to feel well
 [HARIV. 15815.]
-  <sub>DCS 1202 · attested</sub>
+  <sub>attested</sub>
 
 **cf)** — Vgl. *durvrajita* .
 
 - **RU:** — Vgl. *durvrajita* .
 - **EN:** — Vgl. *durvrajita* .
-  <sub>DCS 1202 · lexicographic</sub>
+  <sub>lexicographic</sub>

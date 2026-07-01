@@ -29,7 +29,7 @@
 [Spr. 491.] to drive away, to chase off: *madayāpitalajjā*
 [RAGH. 9,27.] to alleviate (an illness)
 [SUŚR. 1,30,21.]
-  <sub>DCS 5678 · attested</sub>
+  <sub>attested</sub>
 
 **caus-2)** — 2) verstreichen lassen; zubringen (eine Zeit): *nāyaṃ yāpayituṃ* (so die [ed. Bomb.]) *kālo vidyate mādhava kvācit*
 [MBH. 6,4334.] *(rātrim) uṣṇairvirahajanitairaśrubhiryāpayantī*
@@ -47,7 +47,7 @@
 [MEGH. 87.]
 [MĀLAV. 28,15.]
 [PAÑCAT. 183,24.]
-  <sub>DCS 5678 · attested</sub>
+  <sub>attested</sub>
 
 **caus-3)** — 3) gelangen lassen zu, theilhaft werden lassen; mit dopp. acc.: *yāpito yena pītasalilo* *(sāgaraḥ) 'maraśriyam*
 [VARĀH. BṚH. S. 12,3.]
@@ -56,7 +56,7 @@
 [VARĀH. BṚH. S. 12,3.]
 - **EN:** — 3) to cause to arrive at, to cause to partake of; with dopp. acc.: *yāpito yena pītasalilo* *(sāgaraḥ) 'maraśriyam*
 [VARĀH. BṚH. S. 12,3.]
-  <sub>DCS 5678 · attested</sub>
+  <sub>attested</sub>
 
 **caus-4)** — 4) *yāpitāyāḥ*
 [DAŚAK. 83,9] ([BENF. Chr. 194,4]) wohl fehlerhaft für *pāyitāyāḥ* (caus. von 1. *pā*).
@@ -66,14 +66,14 @@
 - **EN:** — 4) *yāpitāyāḥ*
 [DAŚAK. 83,9] ([BENF. Chr. 194,4]) probably erroneous for *pāyitāyāḥ* (caus. of 1. *pā*).
 — Vgl. *yāpaka* fgg.
-  <sub>DCS 5678 · attested</sub>
+  <sub>attested</sub>
 
 **caus-head)** — caus. *yāpayati*
 
 - **RU:** — caus. *yāpayati*
-  <sub>DCS 5678 · attested</sub>
+  <sub>attested</sub>
 
 **caus-addendum)** — Vgl. *yāpaka* fgg.
 
 - **RU:** — Vgl. *yāpaka* fgg.
-  <sub>DCS 5678 · attested</sub>
+  <sub>attested</sub>

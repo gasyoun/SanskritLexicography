@@ -31,7 +31,7 @@
 [HARIV. 11245.] *yamo vaivasvatasya niryātayati duṣkṛtam . hṛdi sthitaḥ karmasākṣī kṣetrajño yasya tuṣyati ..*
 [Spr. 2404.] to fetch out, bring forth: *gṛhāt*
 [R. 6,96,5.]
-  <sub>DCS 9672 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) herausgeben, schenken, ausliefern, zurückgeben: *nivṛtteṣu ca megheṣu niryātya jagato jalam*
 [HARIV. 4013.] *niryātya mahiṣaṃ tasya*
@@ -61,7 +61,7 @@
 [R. GORR. 1,71,23.] [2,117,7.] [5,37,8.] [66,24.] [26.] [89,56.] [6,16,69.] [94,21.] [7,30,26.] [98,6.] [8.] med. [5,76,18.] [7,59,10.] [MṚCCH. 25,9.] *vairam* to return an enmity, take revenge: *rāmalakṣmaṇayorvairaṃ svayaṃ niryātayāmi vai*
 [R. 6,33,4.] [3,60,33.]
 [MBH. 2,2660.]
-  <sub>DCS 9672 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) verbringen, verleben: *caturdaśa samā vīra vane niryātitāstvayā*
 [R. 6,104,26.]
@@ -70,10 +70,10 @@
 [R. 6,104,26.]
 - **EN:** — 3) to pass, spend (time): *caturdaśa samā vīra vane niryātitāstvayā*
 [R. 6,104,26.]
-  <sub>DCS 9672 · attested</sub>
+  <sub>attested</sub>
 
 **deriv)** — Vgl. *niryātaka* fg. und *niryātya* .
 
 - **RU:** — Vgl. *niryātaka* fg. und *niryātya* .
 - **EN:** — Vgl. *niryātaka* fg. and *niryātya* .
-  <sub>DCS 9672 · lexicographic</sub>
+  <sub>lexicographic</sub>

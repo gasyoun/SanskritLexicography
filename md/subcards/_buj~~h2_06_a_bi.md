@@ -10,4 +10,4 @@
 [ŚĀṄKH. ŚR. 16,21,21.]
 - **EN:** — *abhi* to be useful to someone (acc.), to serve: *ime lokā anyo'nyamabhibhuñjanti*
 [ŚĀṄKH. ŚR. 16,21,21.]
-  <sub>DCS 2938 · attested</sub>
+  <sub>attested</sub>

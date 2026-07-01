@@ -43,7 +43,7 @@
 [3,13,23.] pass. *mīmāṃsyate*
 [ŚAṂK.] to [BṚH. ĀR. UP. S. 318.] *etadviditaṃ mīmāṃsitam*
 [ŚAT. BR. 14,4,2,29.] *amīmāṃsitakarmaṇām*
-  <sub>DCS 4704 · attested</sub>
+  <sub>attested</sub>
 
 **2)** [BHĀG. P. 6,5,37.] in Frage stellen, bezweifeln: *tatsarvameva putraste na mīmāṃseta karhicit*
 [MBH. 1,3878.] mit loc. der Sache, in Beziehung auf welche die Befähigung oder Zulassung einer Person fraglich ist: *yaṃ pātre vā talpe vā mīmāṃseran*
@@ -69,7 +69,7 @@
 
 - **RU:** — Vgl. *mīmāṃsā, mīmāṃsya* .
 - **EN:** — Vgl. *mīmāṃsā, mīmāṃsya* .
-  <sub>DCS 4704 · attested</sub>
+  <sub>attested</sub>
 
 **desid_doubt)** [BHĀG. P. 6,5,37.] in Frage stellen, bezweifeln: *tatsarvameva putraste na mīmāṃseta karhicit*
 [MBH. 1,3878.] mit loc. der Sache, in Beziehung auf welche die Befähigung oder Zulassung einer Person fraglich ist: *yaṃ pātre vā talpe vā mīmāṃseran*
@@ -92,4 +92,4 @@
 [KĀṬH. 27,2.] *vivāhe mīmāṃsyamānāḥ*
 [ĀŚV. ŚR. 11,2.] *mīmāṃsita* тот, в отношении которого имеются сомнения: *na dviṣato 'nnamaśnīyānna mīmāṃsitasya na mīmāṃsamānasya* сомнительного и нерешённого
 [AV. 9,6,24.]
-  <sub>DCS 4704 · attested</sub>
+  <sub>attested</sub>

@@ -9,4 +9,4 @@
 - **RU:** — *abhisam* возникать, появляться: *abhisaṃjātaharṣa*
 [HARIV. 13778.]
 - **EN:** — *abhisam* to arise, to appear: *abhisaṃjātaharṣa* [HARIV. 13778.]
-  <sub>DCS 9250 · attested</sub>
+  <sub>attested</sub>

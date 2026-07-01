@@ -31,7 +31,7 @@
 [HARIV. 2683.] *pārthasya śarajālāni viniṣpetuḥ sahasraśaḥ*
 [MBH. 4,2001.] [9,2690.] *sāyakāścāpamaṇḍalāt . viniṣpetuḥ*
 [R. 3,31,19.] *viniṣpatitanetra*
-  <sub>DCS 3124 · attested</sub>
+  <sub>attested</sub>
 
 **2)** [6,76,18.] sich aus dem Staube machen, davonlaufen: *śaśavacca (śaravacca*
 [MBH. 12,5272]) *viniṣpatet*
@@ -43,4 +43,4 @@
 - **EN:** [6,76,18.] to make off, take to one's heels, run away: *śaśavacca (śaravacca*
 [MBH. 12,5272]) *viniṣpatet*
 [M. 7,106.]
-  <sub>DCS 3124 · attested</sub>
+  <sub>attested</sub>

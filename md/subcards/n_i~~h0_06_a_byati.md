@@ -10,4 +10,4 @@
 [KAUŚ. 41. 49.]
 - **EN:** — *abhyati* to mix in, admix (?): *saṃpātān*
 [KAUŚ. 41. 49.]
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>

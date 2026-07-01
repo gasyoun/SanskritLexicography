@@ -10,4 +10,4 @@
 [R. 5,51,13.]
 - **EN:** — *sam* to perish: *ikṣvākuvaṃśe saṃnaṣṭe*
 [R. 5,51,13.]
-  <sub>DCS 1422 · attested</sub>
+  <sub>attested</sub>

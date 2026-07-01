@@ -13,4 +13,4 @@
 - **EN:** — *abhisam*, partic. *˚mata* honoured, esteemed: *vṛddhābhi˚*
 [Spr. 2619.] *sarvalokābhi˚*
 [MĀRK. P. 75,10.]
-  <sub>DCS 4704 · attested</sub>
+  <sub>attested</sub>

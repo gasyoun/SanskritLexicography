@@ -22,4 +22,4 @@
 [VS. 34,6.] *guṇānnenīyate buddhirbuddhirevendriyāṇyapi . manaḥṣaṣṭhāni sarvāṇi buddhyabhāve kuto guṇāḥ ..*
 [MBH. 12,8989.] The same passage also
 [7082] and [10502] with the variant *guṇair* st. *guṇān* at the beginning.
-  <sub>DCS 2376 · attested</sub>
+  <sub>attested</sub>

@@ -9,4 +9,4 @@
 **ava-pa-main)** — *ava* s. *avapāna* .
 
 - **RU:** — *ava* s. *avapāna*.
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>

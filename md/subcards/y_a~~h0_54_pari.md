@@ -52,7 +52,7 @@
 [6,63,2.] *agniḥ sahasrā pari yāti gonām*
 [10,80,5.] "to go around" i.e. v. a. to avoid: *yayā pariyāsyaṃhaḥ*
 [6,37,4.]
-  <sub>DCS 34 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — Vgl. *pariyāṇa* fgg. — caus. Jmd umherwandeln —, die Runde machen lassen: *purohitaṃ taṃ pariyāpya (= prasthāpya*
 [NĪLAK.]) [MBH. 1,7205.] — *pariyāpayamāṇa*
@@ -64,4 +64,4 @@
 - **EN:** — Vgl. *pariyāṇa* fgg. — caus. to make someone wander about —, to have someone make the rounds: *purohitaṃ taṃ pariyāpya (= prasthāpya*
 [NĪLAK.]) [MBH. 1,7205.] — *pariyāpayamāṇa*
 [KĀŚ.] to [P. 8,4,29.]
-  <sub>DCS 34 · attested</sub>
+  <sub>attested</sub>

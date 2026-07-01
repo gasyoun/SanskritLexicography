@@ -10,4 +10,4 @@
 [R. 2,35,26.]
 - **EN:** — *samanu* to be born similar to Someone (acc.): *pitṝnsamanujāyante narā mātaramaṅganāḥ*
 [R. 2,35,26.]
-  <sub>DCS 9250 · attested</sub>
+  <sub>attested</sub>

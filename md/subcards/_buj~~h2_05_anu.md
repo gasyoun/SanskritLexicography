@@ -13,7 +13,7 @@
 - **EN:** — *anu*
  1) to enjoy the recompense for something (acc.): *eko 'nubhuṅkte sukṛ- tamekaḥ eva ca duṣkṛtam*
 [Spr. 3822.]
-  <sub>DCS 2938 · attested</sub>
+  <sub>attested</sub>
 
 **anu-2-enjoy)** — 2) geniessen: *durvinayavṛkṣaphalamanu- bhuṅkṣva*
 [PAÑCAT. 259,15.] *bhogān*
@@ -31,7 +31,7 @@
 [BHĀG. P. 7,10,10.] *anvabhuṅkta — candrikām*
 [RAGH. 19,39.] *maṇḍanānmaṇḍanamanvabhuṅkta* she partook of one ornament after another
 [KUMĀRAS. 7,5.]
-  <sub>DCS 2938 · attested</sub>
+  <sub>attested</sub>
 
 **anu-3-traverse)** — 3) durchlaufen (in astr. Sinne): *(aṅgārakaḥ) tribhistribhiḥ pakṣairekaikaśo rāśīndvādaśānubhuṅkte*
 [BHĀG. P. 5,22,14.]
@@ -40,4 +40,4 @@
 [BHĀG. P. 5,22,14.]
 - **EN:** — 3) to traverse (in astr. sense): *(aṅgārakaḥ) tribhistribhiḥ pakṣairekaikaśo rāśīndvādaśānubhuṅkte*
 [BHĀG. P. 5,22,14.]
-  <sub>DCS 2938 · attested</sub>
+  <sub>attested</sub>

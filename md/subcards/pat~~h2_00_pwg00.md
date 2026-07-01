@@ -13,7 +13,7 @@
 - **EN:** 3. *pat*¦, *patyate*
 [NAIGH. 2,21.]
 [DHĀTUP. 26,50] (v. l. for *tap*).
-  <sub>DCS 3124 · attested</sub>
+  <sub>attested</sub>
 
 **1)** 1) theilhaftig sein, mächtig sein, verfügen über; habhaft werden, innehaben, haben, potiri; mit acc.: *ugraṃ tatpatyate śavaḥ*
 [ṚV. 1,84,9.] [2,1,8.] [3,36,4.] [10,23,2.] *vasūni*
@@ -61,7 +61,7 @@
 [ṚV. 3,54,11.] *indurdeveṣu patyate* is a companion of the gods
 [9,45,4.] *indro mahnā pūrvahūtāvapatyata*
 [10,113,7.]
-  <sub>DCS 3124 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) taugen für, dienen zu (dat.): *iyamāsutiścārurmadāya patyate*
 [ṚV. 8,1,26.] *ayaṃ hi ta amartya induratyo na patyate*
@@ -76,7 +76,7 @@
 [ṚV. 8,1,26.] *ayaṃ hi ta amartya induratyo na patyate*
 [10,144,1.] *vṛcīvantaḥ śarave patyamānāḥ*
 [6,27,6.] [10,27,6.]
-  <sub>DCS 3124 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) sein (taugen als Etwas): *tryanīkaḥ patyate mahināvān*
 [ṚV. 3,56,3.] *yaḥ patyate vṛṣabho vṛṣṇyāvān*
@@ -88,7 +88,7 @@
 - **EN:** — 3) to be (to serve as something): *tryanīkaḥ patyate mahināvān*
 [ṚV. 3,56,3.] *yaḥ patyate vṛṣabho vṛṣṇyāvān*
 [6,22,1.]
-  <sub>DCS 3124 · attested</sub>
+  <sub>attested</sub>
 
 **caus)** — *abhi* innehaben: *ayaṃ viśvā abhi śriyo 'gnirdeveṣu patyate*
 [ṚV. 8,91,9.] *abhi priyaṃ rekṇaḥ patyamānaḥ*
@@ -100,4 +100,4 @@
 - **EN:** — *abhi* to possess, to hold: *ayaṃ viśvā abhi śriyo 'gnirdeveṣu patyate*
 [ṚV. 8,91,9.] *abhi priyaṃ rekṇaḥ patyamānaḥ*
 [10,132,3.]
-  <sub>DCS 3124 · attested</sub>
+  <sub>attested</sub>

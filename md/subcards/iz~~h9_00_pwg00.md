@@ -22,7 +22,7 @@
 - **EN:** — 3)
 [VARĀH. BṚH. S. 53,16.]
 [SARVADARŚANAS. 141. 9.] Add further "to accept".
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4)
  b) *na tvātmanaḥ saṃpradānaṃ dhanaratnavadiṣyate*
@@ -56,7 +56,7 @@
 **head)** I. 3. *iṣ*¦ *iṣ*
 
 - **RU:** I. 3. *iṣ*¦ *iṣ*
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>
 
 **2))** 2) *te neṣurvaradānam*
 [HARIV. 7967.] *neṣustadvaradānam* die neuere Ausg. *anājñaptastu saumitre praveṣṭuṃ necchayāmyaham (icchayāmi = icchāmi!)*
@@ -65,7 +65,7 @@
 - **RU:** 2) *te neṣurvaradānam*
 [HARIV. 7967.] *neṣustadvaradānam* новейшая Ausg. *anājñaptastu saumitre praveṣṭuṃ necchayāmyaham (icchayāmi = icchāmi!)*
 [R. 7,59,1,25.]
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>
 
 **4b))** — 4)
  b) *na tvātmanaḥ saṃpradānaṃ dhanaratnavadiṣyate*
@@ -74,14 +74,14 @@
 - **RU:** — 4)
  b) *na tvātmanaḥ saṃpradānaṃ dhanaratnavadiṣyate*
 [Spr. 4293.]
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>
 
 **4c))** — c)
 [SARVADARŚANAS. 61,16.]
 
 - **RU:** — c)
 [SARVADARŚANAS. 61,16.]
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>
 
 **untersuchen)** *anu* untersuchen
 [KATHĀS. 112,150.] — caus. suchen: *atiramaṇīye kāvye 'pi piśuno dūṣaṇamanveṣayati . atiramaṇīye vapuṣi vraṇamiva makṣikānikaraḥ ..*
@@ -90,7 +90,7 @@
 - **RU:** *anu* исследовать
 [KATHĀS. 112,150.] — caus. искать: *atiramaṇīye kāvye 'pi piśuno dūṣaṇamanveṣayati . atiramaṇīye vapuṣi vraṇamiva makṣikānikaraḥ ..*
 [Spr. 3409.]
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>
 
 **wünschen)** — *abhi* wünschen, wollen, beabsichtigen; mit infin.
 [KATHĀS. 106,126.] *abhīṣṭavarṣin* erwünschten Regen sendend
@@ -99,16 +99,16 @@
 - **RU:** — *abhi* желать, хотеть, намереваться; с infin.
 [KATHĀS. 106,126.] *abhīṣṭavarṣin* посылающий желанный дождь
 [Spr. 1915.]
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>
 
 **cross_1)** — *prati* vgl. *pratīcchaka* .
 
 - **RU:** — *prati* vgl. *pratīcchaka* .
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>
 
 **suchen_nachtrag)** — *vi* suchen
 [TBR. 2,7,13,2.]
 
 - **RU:** — *vi* искать
 [TBR. 2,7,13,2.]
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>

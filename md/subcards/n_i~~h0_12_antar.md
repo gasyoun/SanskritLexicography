@@ -13,4 +13,4 @@
 - **EN:** — *antar*, *antarṇayati*
 [SIDDH. K.] on [P. 1,4,65] in the Calc. Ausg.; instead of this example, however, the complete edition of the
 [SIDDH. K. 109,b,11] has *antarbhavāṇi* .
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>

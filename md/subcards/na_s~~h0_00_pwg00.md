@@ -283,4 +283,4 @@
 [N. 17,7.] *sa naśyeta mṛṣā vadan* to perish
 [MBH. 1,3414.] [3,10701.] *yāvanna naṅkṣyāmahe*
 [BHĀG. P. 4,17,11.]
-  <sub>DCS 1422 · attested</sub>
+  <sub>attested</sub>

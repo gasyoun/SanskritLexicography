@@ -22,7 +22,7 @@
 [AV. 5,20,2.] [6,112,3.] *carmaṇī*
 [LĀṬY. 3,10,11.] *śarkarānsvayamātṛṇṇāṃ śaṇarajjubhyāṃ vibadhya dhārayati* grasping by cords
 [KAUŚ. 72.]
-  <sub>DCS 57 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) *vibaddha* in's Stocken gerathen
 [SUŚR. 2,409,12.] verstopft
@@ -40,10 +40,10 @@
 [411,11.] — *vibaddha* im gaṇa *ṛśyādi* zu [P. 4,2,80.]
 *vibadhnanti* bei
 [MÜLLER, SL. 178] erroneous for *nibadhnanti*.
-  <sub>DCS 57 · attested</sub>
+  <sub>attested</sub>
 
 **deriv)** — Vgl. *vibandha* .
 
 - **RU:** — Vgl. *vibandha* .
 - **EN:** — Vgl. *vibandha*.
-  <sub>DCS 57 · attested</sub>
+  <sub>attested</sub>

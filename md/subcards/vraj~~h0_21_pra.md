@@ -97,7 +97,7 @@
 [M. 8,363] (fem.). [407.] [BURNOUF, Intr. 168, N. 2.] [HIT. 64,4.] *gṛhāt*
 [BHĀG. P. 2,1,16.] *vanam*
 [3,33,21.]
-  <sub>DCS 222 · attested</sub>
+  <sub>attested</sub>
 
 **caus_1)** — Vgl. *pravrajana, pravrajita, pravrajyā* (auch
 [MAITRYUP. 6,28]), *pravrāj* fgg., *pravrājin* . — caus. *pravrājayati* (*pravraja˚*
@@ -139,7 +139,7 @@
 [BURNOUF, Intr. 46.] probably here *pravrājayitum*
 [MBH. 13,446.] *vidhivatsvocitaṃ karma tyājayitum*
 [NILAK.]
-  <sub>DCS 222 · attested</sub>
+  <sub>attested</sub>
 
 **caus_3)** — 3) *pravrājita*
 [MBH. 6,3142] fehlerhaft für *pravrajita*, wie die [ed. Bomb.] liest.
@@ -148,13 +148,13 @@
 [MBH. 6,3142] ошибочно вместо *pravrajita*, как читает [ed. Bomb.].
 - **EN:** — 3) *pravrājita*
 [MBH. 6,3142] erroneous for *pravrajita*, as [ed. Bomb.] reads.
-  <sub>DCS 222 · attested</sub>
+  <sub>attested</sub>
 
 **caus_add)** — Vgl. *pravrājana* . — desid. vom caus. s. *pravivrājayiṣu* .
 
 - **RU:** — Vgl. *pravrājana* . — desid. от caus. s. *pravivrājayiṣu* .
 - **EN:** — Vgl. *pravrājana* . — desid. from caus. s. *pravivrājayiṣu* .
-  <sub>DCS 222 · attested</sub>
+  <sub>attested</sub>
 
 **pravraj-caus-head)** — Vgl. *pravrajana, pravrajita, pravrajyā* (auch
 [MAITRYUP. 6,28]), *pravrāj* fgg., *pravrājin* . — caus. *pravrājayati* (*pravraja˚*
@@ -163,7 +163,7 @@
 - **RU:** — Vgl. *pravrajana, pravrajita, pravrajyā* (также
 [MAITRYUP. 6,28]), *pravrāj* fgg., *pravrājin* . — caus. *pravrājayati* (*pravraja˚*
 [R. 6,82,121] ошибочно).
-  <sub>DCS 222 · attested</sub>
+  <sub>attested</sub>
 
 **pravraj-caus-1)** 1) Jmd (acc.) verbannen
 [MBH. 2,2674.] [3,2041.] *viṣayāt*
@@ -186,4 +186,4 @@
 [MBH. 1,170.] [5,756.]
 [R. 2,63,3.]
 [R. GORR. 2,8,27.] [58,28.]
-  <sub>DCS 222 · attested</sub>
+  <sub>attested</sub>

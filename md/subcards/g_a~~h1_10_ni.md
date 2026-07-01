@@ -13,7 +13,7 @@
 - **EN:** — *ni*
  1) to accompany with song: *vīṇāmeva vādayanto nigāyantaḥ*
 [ŚAT. BR. 3,2,4,6.]
-  <sub>DCS 8 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) singen, verkünden: *tathā ca śrutayo bahvyo nigītā nigameṣvapi*
 [M. 9,19.]
@@ -22,4 +22,4 @@
 [M. 9,19.]
 - **EN:** — 2) to sing, proclaim: *tathā ca śrutayo bahvyo nigītā nigameṣvapi*
 [M. 9,19.]
-  <sub>DCS 8 · attested</sub>
+  <sub>attested</sub>

@@ -58,7 +58,7 @@
 [MBH. 12,3470.] *na cāsya niyamādbuddhirapayāti mahātmanaḥ* does not desist from
 [9,2310.] *nāpayāti*
 [5,7486] erroneous for *nopayāti*, as the [ed. Bomb.] reads.
-  <sub>DCS 103 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — Vgl. *apayātavya* fg. — caus. entführen, rauben
 [BHĀG. P. 9,10,11.]
@@ -67,4 +67,4 @@
 [BHĀG. P. 9,10,11.]
 - **EN:** — Vgl. *apayātavya* fg. — caus. to abduct, to carry off, to rob
 [BHĀG. P. 9,10,11.]
-  <sub>DCS 103 · attested</sub>
+  <sub>attested</sub>

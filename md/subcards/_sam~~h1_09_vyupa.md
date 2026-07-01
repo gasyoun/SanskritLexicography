@@ -19,4 +19,4 @@
 [5,2363.] *tattamo vyupaśaśāma*
 [7,9427.] *na cāpi vairaṃ vaireṇa vyupaśāmyati*
 [Spr. (II) 3233.] Vgl. *vyupaśama*.
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>

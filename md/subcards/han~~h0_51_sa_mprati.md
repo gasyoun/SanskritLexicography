@@ -10,4 +10,4 @@
 [CARAKA 10,7.]
 - **EN:** — *saṃprati* pass. "to knock against each other": *vāyuḥ saṃpratihanyate*
 [CARAKA 10,7.]
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>

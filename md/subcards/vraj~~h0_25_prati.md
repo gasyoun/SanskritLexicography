@@ -10,4 +10,4 @@
 [BHAṬṬ. 8,96.]
 - **EN:** — *prati* to return home: *mandirāya*
 [BHAṬṬ. 8,96.]
-  <sub>DCS 1202 · attested</sub>
+  <sub>attested</sub>

@@ -25,10 +25,10 @@
 [R. 2,71,1.] [7,23,1,89.] *yuddhāya*
 [6,27,19.] *vadhāyāsya*
 [3,28,16.]
-  <sub>DCS 23 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — Vgl. *abhiniryāṇa* .
 
 - **RU:** — Vgl. *abhiniryāṇa* .
 - **EN:** — Vgl. *abhiniryāṇa* .
-  <sub>DCS 23 · attested</sub>
+  <sub>attested</sub>

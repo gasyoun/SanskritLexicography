@@ -7,7 +7,7 @@
 
 - **RU:** — *ā*
 - **EN:** — *ā*
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **1)** 1) abreissen, abschneiden, zerschneiden, zerbrechen: *kṛtyākṛtaḥ prajāṃ naḍamivā cchindhi vārṣikam*
 [AV. 4,19,1.] [7,74,2.] [12,5,51.] *tṛṇam*
@@ -43,7 +43,7 @@
 [MṚCCH. 131,17.]
 [BHĀG. P. 9,15,33.] *jagadācchidya dhāvat*
 [3,21,18.]
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) herausnehmen: *pādāvācchidyotkrāmati tasmādu haitatpretamāhurācchedyasyeti*
 [ŚAT. BR. 10,5,2,13.] *sa yathā *
@@ -67,7 +67,7 @@
 [3,3,2,8.] [8,1,8.] *hiraṇyaṃ sahasācchidya*
 [KĀTY. ŚR. 7,8,27.] *asimācchidya*
 [DAŚAK. 117,4.]
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) abziehen, entfernen: *asminyathāvatsakhi vartamānā bhartāramācchetsyasi kāminībhyaḥ*
 [MBH. 3,14710.] *karmāntarārjitebhyaḥ svargādilokebhya ācchinatti* abschneiden von, ausschliessen von
@@ -79,7 +79,7 @@
 - **EN:** — 3) to withdraw, remove: *asminyathāvatsakhi vartamānā bhartāramācchetsyasi kāminībhyaḥ*
 [MBH. 3,14710.] *karmāntarārjitebhyaḥ svargādilokebhya ācchinatti* to cut off from, exclude from
 [KULL.] to [M. 4,219.]
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) entreissen, wegnehmen, rauben: *kṛtāntena . ācchidya mama mandāyā nīyase*
 [HARIV. 4836.] *(havyam) jātavedomukhānmāyī miṣatāmācchinatti naḥ*
@@ -106,7 +106,7 @@
 [MṚCCH. 165,7.]
 [PAÑCAT. 222,4.]
 [BHĀG. P. 6,7,39.] [8,19,32.]
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **5)** — 5) nicht beachten, keine Rücksicht auf Etwas nehmen: *yattvāṃ saṃcodayati me vaca ācchidya*
 [R. 2,24,33.] *yathā ca manye durjīvamevaṃ na sukaraṃ dhruvam . ācchidya putre niryāte kauśalyā yatra jīvati ..* dessenungeachtet, dass der Sohn fortgegangen ist,
@@ -118,4 +118,4 @@
 - **EN:** — 5) to disregard, pay no heed to something: *yattvāṃ saṃcodayati me vaca ācchidya*
 [R. 2,24,33.] *yathā ca manye durjīvamevaṃ na sukaraṃ dhruvam . ācchidya putre niryāte kauśalyā yatra jīvati ..* notwithstanding that the son has gone away,
 [57,20.]
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>

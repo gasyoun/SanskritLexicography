@@ -22,4 +22,4 @@
 [173,3.] [AV. 8,2,8.] *adhi no brūtaṃ pṛtanāsūgrau*
 [4,28,7.] [8,2.] [27,1.] [VS. 15,1.] [17,52.] *yadbrāhmaṇaścāvrāhmaṇaśca praśnameyātāṃ brāhmaṇāyādhibrūyāt*
 [TS. 2,5,11,9.]
-  <sub>DCS 9786 · attested</sub>
+  <sub>attested</sub>

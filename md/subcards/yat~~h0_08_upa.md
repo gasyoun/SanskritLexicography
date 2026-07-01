@@ -8,4 +8,4 @@
 - **RU:** — *upa* med. касаться, относиться к: *idaṃ nvimaṃ sa pāpmā nopayatate* [ŚAT. BR. 8,5,1,7.]
 - **EN:** *upa* med. to concern, to pertain to: *idaṃ nvimaṃ sa pāpmā nopayatate*
 [ŚAT. BR. 8,5,1,7.]
-  <sub>DCS 9672 · attested</sub>
+  <sub>attested</sub>

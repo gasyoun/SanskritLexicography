@@ -10,4 +10,4 @@
 [P. 7,3,56], Schol.
 - **EN:** — desid. *jighīṣati*
 [P. 7,3,56], Schol.
-  <sub>DCS 23914 · attested</sub>
+  <sub>attested</sub>

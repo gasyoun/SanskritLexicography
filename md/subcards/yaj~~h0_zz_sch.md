@@ -7,4 +7,4 @@
 
 - **RU:** yaj¦ + ˚vi особо чтить, [H] XLVI,64.
 - **EN:** yaj¦ + ˚vi to worship in a particularly special manner, [H] XLVI,64.
-  <sub>DCS 6777 · attested</sub>
+  <sub>attested</sub>

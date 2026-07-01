@@ -10,4 +10,4 @@
 [MBH. 12,8157.]
 - **EN:** — *paryā* to complete a circuit, go around: *kālastu paryāgāt*
 [MBH. 12,8157.]
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>

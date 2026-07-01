@@ -9,4 +9,4 @@
 - **RU:** — *anūd* допивать за другим
 [ŚAT. BR. 3,7,1,29. fgg.]
 - **EN:** — *anūd* to drink up after another [ŚAT. BR. 3,7,1,29. fgg.]
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>

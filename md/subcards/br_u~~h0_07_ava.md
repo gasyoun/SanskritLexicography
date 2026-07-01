@@ -7,4 +7,4 @@
 
 - **RU:** — *ava* s. *anavabrava* .
 - **EN:** — *ava* s. *anavabrava* .
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>

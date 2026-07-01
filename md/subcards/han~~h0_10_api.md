@@ -10,4 +10,4 @@
 [TS. 2,1,5,3.]
 - **EN:** *api* "to drive off, drive away": *sūtum*
 [TS. 2,1,5,3.]
-  <sub>DCS 5 · attested</sub>
+  <sub>attested</sub>

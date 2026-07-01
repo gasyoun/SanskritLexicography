@@ -7,4 +7,4 @@
 
 - **RU:** **1.** *śam*¦ с *ni* VI. угасать [DHARMAŚARM. 13,41].
 - **EN:** **1.** *śam*¦ with *ni* VI. to be extinguished [DHARMAŚARM. 13,41].
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>

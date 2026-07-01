@@ -10,4 +10,4 @@
 [R. GORR. 1,56,27.]
 - **EN:** — *pravi* to be ruined, to perish: *tasmāttvaṃ pravinaṅkṣyase*
 [R. GORR. 1,56,27.]
-  <sub>DCS 1422 · attested</sub>
+  <sub>attested</sub>

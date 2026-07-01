@@ -7,7 +7,7 @@
 
 - **RU:** — *vi*
 - **EN:** — *vi*
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **1)** 1) zerreissen, zerbrechen, spalten, trennen, unterbrechen: *yathā nakulo vicchidya saṃdadhātyahiṃ punaḥ . evā kāmasya vicchinnaṃ saṃ dhehi vīryāvati ..*
 [AV. 6,139,5.] *(śūlam) vicicchide haririṣubhiḥ sahasradhā*
@@ -121,7 +121,7 @@
 [PRAB. 33,10.] with interruptions: *tatrādvitīyavastuni vicchidya vicchidyāntarindriyavṛttipravāho dhyānam*
 ([BALL.]: on separate occasions [instead of being uninterruptedly so])
 [VEDĀNTAS. (Allah.) No. 134.]
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) sich spalten: *reto 'sya vicchindyāt*
 [TS. 5,6,8,5.]
@@ -130,7 +130,7 @@
 [TS. 5,6,8,5.]
 - **EN:** — 2) to split (intrans.): *reto 'sya vicchindyāt*
 [TS. 5,6,8,5.]
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) *vicchinna = kuṭila* krumm
 [H. an. 3,416.]
@@ -139,7 +139,7 @@
 [H. an. 3,416.]
 - **EN:** — 3) *vicchinna = kuṭila* crooked
 [H. an. 3,416.]
-  <sub>DCS 2209 · lexicographic</sub>
+  <sub>lexicographic</sub>
 
 **4)** — 4) *vicchinna = samālabdha* gesalbt
 [TRIK. 3,3,262.]
@@ -154,10 +154,10 @@
 [TRIK. 3,3,262.]
 [H. an.]
 [MED. n. 132.]
-  <sub>DCS 2209 · lexicographic</sub>
+  <sub>lexicographic</sub>
 
 **caus)** — Vgl. *vicchitti* fgg.
 
 - **RU:** — Vgl. *vicchitti* fgg.
 - **EN:** — Vgl. *vicchitti* fgg.
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>

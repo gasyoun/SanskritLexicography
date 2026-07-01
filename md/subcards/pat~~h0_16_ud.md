@@ -105,7 +105,7 @@
 [ŚAT. BR. 3,1,2,16.] [8,2,14.] *garbhādutpatite jantau* to issue from the womb
 [HIT. I,170.] to escape, get away: *(mṛgaḥ) vyādhānāṃ śaragocarādatijavenotpatya* (v. l. for *utplulya*)
 [Spr. 923.]
-  <sub>DCS 398 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) sich erheben so v. a. entstehen: *ārtijaṃ mahāśabdaṃ brāhmaṇasya niveśane . bhṛśamutpatitam*
 [MBH. 1,6111.] *mṛgapaterunnādo lokabhayaṃkara udapatat*
@@ -120,7 +120,7 @@
 [MBH. 1,6111.] *mṛgapaterunnādo lokabhayaṃkara udapatat*
 [BHĀG. P. 5,8,1.] *śokamutpatitam*
 [3,4,23.]
-  <sub>DCS 398 · attested</sub>
+  <sub>attested</sub>
 
 **caus)** — Vgl. *utpata* fgg., *utpatitar* fgg., *utpāta* . — caus. auffliegen machen: *(uṣāḥ) utpātayati pakṣiṇaḥ*
 [ṚV. 1,48,5.] aufsteigen machen: *tvaco dhūmaṃ paryutpātayāsi*
@@ -147,4 +147,4 @@
 [AV. 12,3,53.] поднимать: *tairdaṇḍako mṛta iva jñātvā saṃskāraṇāyotpātitaḥ*
 [Verz. d. Oxf. H. 156,a,26.] — desid. желать взлететь: *udapipatiṣat*
 [ŚAT. BR. 10,2,1,1.]
-  <sub>DCS 398 · attested</sub>
+  <sub>attested</sub>

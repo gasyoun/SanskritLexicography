@@ -19,4 +19,4 @@ schützen: *ko 'smānatra vane rakṣayiṣyati*
 to protect: *ko 'smānatra vane rakṣayiṣyati*
 [PAÑCAT. 70,13.] to preserve: *svākāraṃ rakṣayedyastu sa bhṛtyo 'rho mahībhujām*
 [Spr. 1367.]
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>

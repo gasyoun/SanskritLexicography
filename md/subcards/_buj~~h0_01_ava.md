@@ -13,4 +13,4 @@
 - **EN:** — *ava* to bend inward
 [KAUŚ. 19.] *bhagnāvabhugnabhūyiṣṭhaiḥ (drumaiḥ)* bent down
 [MBH. 1,5891.]
-  <sub>DCS 2938 · attested</sub>
+  <sub>attested</sub>

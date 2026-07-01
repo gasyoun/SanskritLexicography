@@ -10,4 +10,4 @@
 [MBH. 13,7368.]
 - **EN:** — *parisam* to express oneself jointly about someone: *taṃ rākṣasāśca* (so the [ed. Bomb.]) *parisaṃvadanti rāyaspoṣaḥ sa vijigīṣurekaḥ*
 [MBH. 13,7368.]
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>

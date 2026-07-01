@@ -25,4 +25,4 @@
 [R. GORR. 2,33,7.] *pṛṣṭhato 'nuprayātāni* (with act. Bed.)
 [43,23] ([45,22] [SCHL.]). *anuprayāta* accompanied by
 [KUMĀRAS. 3,23.] [52.]
-  <sub>DCS 13 · attested</sub>
+  <sub>attested</sub>

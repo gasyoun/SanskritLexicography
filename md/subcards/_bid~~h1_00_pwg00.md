@@ -31,7 +31,7 @@ Sch. *iṅgudīphala˚ (upala)* breaking, crushing
 [PAÑCAR. 4,3,108.] [H. 10.] *dṛṣṭalakṣya˚* hitting, striking
 [RAGH. 1,61.] *agha˚* scattering, putting to flight
 [BHĀG. P. 3,15,23.] Vgl. *aśma˚, giri˚, gotra˚, takra˚, tamo˚, naga˚, puṭa˚, pura˚, puṣpadanta˚, pūrbhid˚, brahma˚* .
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **2a)** — 2) _f._
  a) concret Spalter, Verwunder: *bhinatpuro na bhido adevīḥ* du durchbohrtest die dämonischen Durchbohrer, wie ihre Burgen,
@@ -43,7 +43,7 @@ Sch. *iṅgudīphala˚ (upala)* breaking, crushing
 - **EN:** — 2) _f._
  a) concret splitter, wounder: *bhinatpuro na bhido adevīḥ* thou didst pierce the demonic piercers, as their fortresses,
 [ṚV. 1,174,8.]
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **2b)** — b) Spaltung, Scheidung
 [BHĀG. P. 6,16,47.] *bhaktyā paramayābhidā* die keine Scheidung kennt
@@ -70,4 +70,4 @@ Sch. *iṅgudīphala˚ (upala)* breaking, crushing
 [314.] *vṛkṣa˚*
 [349.] *karañja˚*
 [421.] [H. 780.] [807.] [898.]
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>

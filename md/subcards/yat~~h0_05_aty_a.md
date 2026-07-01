@@ -8,4 +8,4 @@
 - **RU:** — *atyā* med. очень (*ati* _adv._) стараться ради (loc.), быть весьма озабоченным чем-либо [DAŚAK. 64,7.]
 - **EN:** *atyā* med. to endeavour greatly (*ati* _adv._) after (loc.), to be very intent upon
 [DAŚAK. 64,7.]
-  <sub>DCS 9672 · attested</sub>
+  <sub>attested</sub>

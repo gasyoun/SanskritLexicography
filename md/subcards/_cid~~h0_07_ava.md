@@ -7,7 +7,7 @@
 
 - **RU:** — *ava*
 - **EN:** — *ava*
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **1)** 1) abtrennen, scheiden: *ava vā eṣa suvargāllokācchidyate*
 [TS. 2,2,5,4.] [3,2,1,1.] [2.]
@@ -22,7 +22,7 @@
 [TS. 2,2,5,4.] [3,2,1,1.] [2.]
 [BĀLAB. 33.] *anavacchinna* undifferentiated
 [YOGAS. 2,31.]
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) voneinanderreissen, aus seinem Zusammenhange reissen, unterbrechen: *avacchinna*
 [LĀṬY. 10,3,13.] *vanavṛkṣāvacchinnākāśayoḥ, vanavṛkṣatadavacchinnākāśayoḥ*
@@ -37,10 +37,10 @@
 [LĀṬY. 10,3,13.] *vanavṛkṣāvacchinnākāśayoḥ, vanavṛkṣatadavacchinnākāśayoḥ*
 [VEDĀNTAS. (Allah.) No. 34.] *dikkālānavacchinnāya — śāntāya tejase*
 [BHARTṚ. 2,1.]
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **caus)** — Vgl. *avaccheda* fgg.
 
 - **RU:** — Vgl. *avaccheda* fgg.
 - **EN:** — Vgl. *avaccheda* fgg.
-  <sub>DCS 2209 · lexicographic</sub>
+  <sub>lexicographic</sub>

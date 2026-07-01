@@ -10,4 +10,4 @@
 [MBH. 3,10654.]
 - **EN:** *āvi* (!) to strike upon, beat upon: *yo vai darpāt — parvatamāvihanti . tasyaiva pāṇiḥ sanakho vidīryate*
 [MBH. 3,10654.]
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>

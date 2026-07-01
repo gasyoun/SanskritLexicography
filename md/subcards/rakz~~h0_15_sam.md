@@ -79,10 +79,10 @@
 [Spr. 530.] *ātmanaśca pareṣāṃ ca vṛttiṃ saṃrakṣa* keep safe
 [MBH. 13,3080.] to store, keep in safekeeping: *taddānavaśarīraṃ te saṃrakṣya sthāpitaṃ mayā*
 [KATHĀS. 45,50.]
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — Vgl. *saṃrakṣaṇa* fgg.
 
 - **RU:** — Vgl. *saṃrakṣaṇa* fgg.
 - **EN:** — Vgl. *saṃrakṣaṇa* fgg.
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>

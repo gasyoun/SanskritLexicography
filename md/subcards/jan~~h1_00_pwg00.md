@@ -19,7 +19,7 @@
 - **EN:** — *abhi*
  1) *svaṃ tu karmābhijāyate* his birth (d. i. the manner in which he is born) is determined by his own deeds, depends on s. a Th.
 [Spr. 4314.]
-  <sub>DCS 9250 · attested</sub>
+  <sub>attested</sub>
 
 **II.6.b)** — 2) *na sa bhūyo 'bhijāyate* der erlebt keine Wiedergeburt
 [BHĀG. 13,23.] [Spr. 3063.] Z. 2 lies 2,147 st. 2,247. — caus. von Neuem hervorrufen, beleben: *abhijñānamabhijanayitum*
@@ -31,7 +31,7 @@
 - **EN:** — 2) *na sa bhūyo 'bhijāyate* he who experiences no rebirth
 [BHĀG. 13,23.] [Spr. 3063.] Z. 2 read 2,147 st. 2,247. — caus. to call forth anew, to revive: *abhijñānamabhijanayitum*
 [SARVADARŚANAS. 117,7.]
-  <sub>DCS 9250 · attested</sub>
+  <sub>attested</sub>
 
 **III.1)** — *upa*
  1)
@@ -52,7 +52,7 @@
 [ĀŚV. ŚR. 11,4,7.]
 [WEBER, JYOT. 95.] *upajāta* newly added
 [AV. PRĀT. 4,10.] Schol. to [12. 46. 53.]
-  <sub>DCS 9250 · attested</sub>
+  <sub>attested</sub>
 
 **III.2)** — 2) *upajāyate* entsteht als Folge
 [SARVADARŚANAS. 2,7. 3,20.] Z. 9. fg. [MBH. 9,3482] ist zu streichen, da daselbst mit der [ed. Bomb.] *upayātam* gehet nach zu lesen ist.
@@ -61,7 +61,7 @@
 [SARVADARŚANAS. 2,7. 3,20.] Z. 9. fg. [MBH. 9,3482] следует вычеркнуть, так как там с [ed. Bomb.] *upayātam* следует за надлежит читать.
 - **EN:** — 2) *upajāyate* arises as a consequence
 [SARVADARŚANAS. 2,7. 3,20.] Z. 9. fg. [MBH. 9,3482] is to be deleted, since there [ed. Bomb.] *upayātam* goes after is to be read.
-  <sub>DCS 9250 · attested</sub>
+  <sub>attested</sub>
 
 **III.4)** — 4) *tena nārada nārīṇāṃ satītvamupajāyate* darum giebt es Keuschheit bei den Frauen
 [Spr. 3308.] — caus. *prajāmevāsmā upajanayati*
@@ -79,18 +79,18 @@
 [PAÑCAV. BR. 19,3,3.] to cause, occasion
 [SARVADARŚANAS. 140,10.] *saṃśleṣamupajanayati* so v. a. tries to embrace her
 [MĀLAV. 54,10.]
-  <sub>DCS 9250 · attested</sub>
+  <sub>attested</sub>
 
 **I (corrigendum))** *jan*¦ I.
 [Sp. 17, Z. 7] lies *ajanayamaherādhi* .
 
 - **RU:** *jan*¦ I.
 [Sp. 17, Z. 7] читай *ajanayamaherādhi* .
-  <sub>DCS 9250 · attested</sub>
+  <sub>attested</sub>
 
 **II.6 (corrigendum))** II. 6) vgl. *yo yasya jāyate vadhyaḥ* wem Jemand schon von der Geburt an als Schlachtopfer bestimmt ist
 [Spr. 2559.]
 
 - **RU:** II. 6) vgl. *yo yasya jāyate vadhyaḥ* тот, кому кто-л. уже от рождения предназначен в жертву
 [Spr. 2559.]
-  <sub>DCS 9250 · attested</sub>
+  <sub>attested</sub>

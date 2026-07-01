@@ -10,4 +10,4 @@
 [MBH. 4,1198.] *prītyābravīda˚* [ed. Bomb.]
 - **EN:** — *pratyā* to answer someone (acc.): *pratyābravīdarjunam*
 [MBH. 4,1198.] *prītyābravīda˚* [ed. Bomb.]
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>

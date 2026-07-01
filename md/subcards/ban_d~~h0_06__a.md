@@ -67,7 +67,7 @@
 [MBH. 10,71.] *dṛṣṭipāśaurivābaddhau*
 [KATHĀS. 34,103.] *bahumānena cābaddhāḥ*
 [BHĀG. P. 8,9,23.]
-  <sub>DCS 2655 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) verbinden, zusammenfügen: *vātābaddhābhavanmeghāḥ* (für *vātābaddhā abhavan)* zusammengeballt
 [MBH. 3,9970.] *ābaddhāñjali* die hohlen Hände zusammengefügt habend
@@ -79,7 +79,7 @@
 - **EN:** — 2) "to join, put together": *vātābaddhābhavanmeghāḥ* (for *vātābaddhā abhavan)* "clenched, balled together"
 [MBH. 3,9970.] *ābaddhāñjali* "having one's cupped hands joined together"
 [DAŚAK.] in [BENF. Chr. 199,14.]
-  <sub>DCS 2655 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) festhalten: *(brāhmaṇam) kaṇṭhe *
 
@@ -94,7 +94,7 @@
 
 * vābadhya vāsasā* thus v. a. "to hold fast by the collar"
 [M. 11,205]; vgl. u. simpl. 3.
-  <sub>DCS 2655 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) heften, richten (den Blick, den Geist): *syandanābaddhadṛṣṭi*
 [RAGH. 1,40.] *tadekābaddhamānasā*
@@ -106,7 +106,7 @@
 - **EN:** — 4) "to fix, direct" (the gaze, the mind): *syandanābaddhadṛṣṭi*
 [RAGH. 1,40.] *tadekābaddhamānasā*
 [KATHĀS. 15,85.]
-  <sub>DCS 2655 · attested</sub>
+  <sub>attested</sub>
 
 **5)** — 5) bewirken, hervorbringen, bilden; an sich hervorbringen, äussern, zeigen: *(tamisram) ābaddharekhamabhito ravimañjarībhiḥ*
 [GĪT. 11,12.] *ābaddhamāla* (zugleich mit angebundenen Kränzen)
@@ -130,10 +130,10 @@
 [BHAṬṬ. 3,30.] *ābaddhavepathu* thus v. a. "trembling"
 [KIR. 5,33.] *ābaddhasāraṇau (karau)*
 [KATHĀS. 6,57.]
-  <sub>DCS 2655 · attested</sub>
+  <sub>attested</sub>
 
 **6)** — Vgl. *ābaddha, ābandha* fg.
 
 - **RU:** — Vgl. *ābaddha, ābandha* fg.
 - **EN:** — Vgl. *ābaddha, ābandha* fg.
-  <sub>DCS 2655 · attested</sub>
+  <sub>attested</sub>

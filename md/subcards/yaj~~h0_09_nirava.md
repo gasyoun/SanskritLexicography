@@ -10,4 +10,4 @@
 [KĀṬH. 21,6.]
 - **EN:** — *nirava* to settle with, satisfy in relation to (abl.): *ṛtubhya eva rudraṃ niravayajate*
 [KĀṬH. 21,6.]
-  <sub>DCS 6777 · attested</sub>
+  <sub>attested</sub>

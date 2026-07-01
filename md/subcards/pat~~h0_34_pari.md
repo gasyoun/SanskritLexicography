@@ -40,7 +40,7 @@
 [R. GORR. 2,84,9.] *paripetuḥ kabandhāṅkāṃ kṣitim*
 [6,94,5.] *paripatañjhaṃkārajhañjhāmarut* viell. so v. a. whirlwind or also a downrushing wind
 [AMAR. 48.]
-  <sub>DCS 56 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) herunterspringen: *rathāt*
 [MBH. 7,557.] sich stürzen auf: *tataḥ paryapatannugrā nivātakavacā mayi*
@@ -58,7 +58,7 @@
 [ARJ. 8,30.] to fall: *paryapatanbhūmau jānubhiste hayottamāḥ*
 [MBH. 3,2791.] *(yuvatiḥ) patitorasi* (d. i. *patitā u˚*)
 [GĪT. 7,19.]
-  <sub>DCS 56 · attested</sub>
+  <sub>attested</sub>
 
 **caus)** — Vgl. *paripatana* . — caus. niederfallen machen, herunterschiessen: *dhvajaṃ sāṃyamaneścāpi so 'ṣṭābhiḥ paryapātayat*
 [MBH. 6,2687.] abschiessen: *sapta caiva pṛṣatkāṃśca śvetāśve paryapātayat*
@@ -73,4 +73,4 @@
 [MBH. 6,2687.] to discharge, shoot off: *sapta caiva pṛṣatkāṃśca śvetāśve paryapātayat*
 [1852], to plunge into: *īdṛśe vyavahārāgnau mantribhiḥ paripātitāḥ*
 [MṚCCH. 155,8.]
-  <sub>DCS 56 · attested</sub>
+  <sub>attested</sub>

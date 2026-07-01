@@ -44,7 +44,7 @@
 [DAŚAK.] в [BENF. Chr. 187,3.] *pādaiḥ śanairāpatataḥ* медленно приближаясь пешком
 [BHAṬṬ. 3,48.] *prabaladvīpinamāpatantamuccaiḥ* в высоте d. i. бросаясь прыжком Inschr. в
 [Journ. of the Am. Or. S. 7,11, Śl. 40.]
-  <sub>DCS 400 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) herabfallen
 [RĀJA-TAR. 3,202.] fallen in, auf: *mṛtyorāsyamāpāti*
@@ -55,7 +55,7 @@
 [RĀJA-TAR. 3,202.] падать в, на: *mṛtyorāsyamāpāti*
 [ŚĀṄKH. BR. 14,2.] *tatra kāṣṭhaṃ kuṭhāreṇa pāṭyamānaṃ vidhervaśāt . āpatya tasya jaṅghāyāṃ bhittvāntaḥ praviveśa tat ..*
 [KATHĀS. 28,157.]
-  <sub>DCS 400 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) unerwartet zum Vorschein kommen, — sich einstellen, — sich ereignen, Jmd (gen.) zustossen, unerwartet zu Theil werden, — treffen: *dvayoraikyamāpatitam*
 [SĀH. D. 24,6.] *karmamadhye yā iṣṭayo vrātapatīyādyāśca āpatanti tā anuṣṭheyāḥ*
@@ -94,7 +94,7 @@ Schol. к [KĀTY. ŚR. 1067,5.] *nūnaṃ janmāntarakṛtaṃ pāpamāpatitaṃ
 [KATHĀS. 20,213.] [22,239.]
 [PRAB. 64,6.] *aho cirādetadasmākaṃ mahadbhojanamāpatitam*
 [PAÑCAT. 21,12.]
-  <sub>DCS 400 · attested</sub>
+  <sub>attested</sub>
 
 **Caus./intens. addendum)** — Vgl. *āpatana, āpati* fg., *āpāta* fgg. — 1. caus. (*patayati*) hinzufliegen zu: *venanti venāḥ patayantyā diśaḥ*
 [ṚV. 10,64,2.] — 2. caus. (*pātayati*) fallen machen, niederwerfen: *(tam) ūra āpātya*
@@ -109,4 +109,4 @@ Schol. к [KĀTY. ŚR. 1067,5.] *nūnaṃ janmāntarakṛtaṃ pāpamāpatitaṃ
 [HARIV. 5598.] *nāsramāpātayejjātu* проливать слёзы
 [M. 3,229.] — intens. многократно прилетать: *avairahatyāyedamā papatyāt* (!)
 [AV. 6,29,3.]
-  <sub>DCS 400 · attested</sub>
+  <sub>attested</sub>

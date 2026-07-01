@@ -16,4 +16,4 @@ Schol. zu [P. 1,2,10.] *cāṇḍālasya yiyakṣataḥ*
 Schol. to [P. 1,2,10.] *cāṇḍālasya yiyakṣataḥ*
 [R. GORR. 1,61,14.] *yiyakṣamāṇa*
 [MBH. 2,59.]
-  <sub>DCS 6777 · attested</sub>
+  <sub>attested</sub>

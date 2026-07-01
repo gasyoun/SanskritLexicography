@@ -10,4 +10,4 @@
 [ṚV. 5,31,3.]
 - **EN:** — *udā* to come forth from, to issue from: *udyatsahaḥ sahasa ājaniṣṭa*
 [ṚV. 5,31,3.]
-  <sub>DCS 9250 · attested</sub>
+  <sub>attested</sub>

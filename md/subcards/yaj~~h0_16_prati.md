@@ -10,4 +10,4 @@
 [ŚAT. BR. 4,6,8,19.]
 - **EN:** — *prati* to sacrifice in return, to sacrifice on the other side: *ājyenetare pratiyajanta āsate*
 [ŚAT. BR. 4,6,8,19.]
-  <sub>DCS 6777 · attested</sub>
+  <sub>attested</sub>

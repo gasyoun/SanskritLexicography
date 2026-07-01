@@ -13,7 +13,7 @@
 - **EN:** — caus. *ghātayati* (causative of *ghāta*)
 [P. 7,3,32.] [54.]
 [VOP. 18,25.]
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **1)** 1) tödten lassen; tödten, umbringen; züchtigen, bestrafen überh.: *kaṃ ghātayati hanti kam*
 [BHAG. 2,21.]
@@ -72,7 +72,7 @@ Ermordung berichten
 
 death to report
 [P. 3,1,26], Vārtt. 2, Schol.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) Etwas zu Grunde richten: *pṛthivīm*
 [MBH. 3,1917.] *parakāryam*
@@ -84,10 +84,10 @@ death to report
 - **EN:** — 2) to ruin something: *pṛthivīm*
 [MBH. 3,1917.] *parakāryam*
 [Spr. (II) 3660], v. l.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **passive-note)** — Vgl. *ghātaka* u. s. w.
 
 - **RU:** — Vgl. *ghātaka* u. s. w.
 - **EN:** — Vgl. *ghātaka* u. s. w.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>

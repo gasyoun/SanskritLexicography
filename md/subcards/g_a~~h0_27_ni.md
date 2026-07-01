@@ -13,7 +13,7 @@
 - **EN:** — *ni*
  1) to enter, nestle into, fit closely: *yudhyamānā śaraiḥ — dhvajinī nyagāt . anyo'nyam*
 [MBH. 6,1886.]
-  <sub>DCS 8 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) gerathen in: *eno mā ni gām*
 [ṚV. 10,128,4.] *mā daṃpatī pautramaghaṃ ni gātām*
@@ -25,4 +25,4 @@
 - **EN:** — 2) to fall into, get into: *eno mā ni gām*
 [ṚV. 10,128,4.] *mā daṃpatī pautramaghaṃ ni gātām*
 [AV. 12,3,14.]
-  <sub>DCS 8 · attested</sub>
+  <sub>attested</sub>

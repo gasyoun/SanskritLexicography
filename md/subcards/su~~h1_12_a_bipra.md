@@ -17,4 +17,4 @@
 - **RU:** — *abhipra* гнать туда, к: *yadenāmabhiprasuvanti nadyaḥ*
 [NIR. 9,26.] *˚sūta* побуждённый, призванный
 [11,12.]
-  <sub>DCS 14088 · attested</sub>
+  <sub>attested</sub>

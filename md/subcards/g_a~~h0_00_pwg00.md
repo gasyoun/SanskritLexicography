@@ -134,7 +134,7 @@ einer Wurzel *gī*)
 [77], Sch. *adhunaiṣo 'bhijinnāma yogo mauhūrtiko 'gāt* 'has come'
 [BHĀG. P. 3,18,27.] *anyadā jagati rāma ityayaṃ śabda uccarita eva māmagāt* 'came to me'; so v. a. 'came to me'
 [RAGH. 11,73.]
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) in einen Zustand gerathen, theilhaft werden: *siddhimagāt*
 [MBH. 3,10697.] *harṣam*
@@ -170,7 +170,7 @@ einer Wurzel *gī*)
 [BHAṬṬ. 4,13.] *vivekadṛśvatvam*
 [2,46.] *dyunivāsabhūyam*
 [3,21.]
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **desid)** desid. *jigīṣati* zu gehen verlangen: *gatiṃ jigīṣataḥ pādau ruruhāte 'bhikāmikām*
 [BHĀG. P. 2,10,25.]
@@ -182,4 +182,4 @@ einer Wurzel *gī*)
 
 - **RU:** — desid. *jigīṣati* желать идти: *gatiṃ jigīṣataḥ pādau ruruhāte 'bhikāmikām*
 [BHĀG. P. 2,10,25.]
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>

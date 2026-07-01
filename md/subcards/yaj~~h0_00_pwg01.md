@@ -79,7 +79,7 @@
 [BHAG. 17,11.] *aśvamedhādayo yajñāstvayeṣṭāḥ*
 [MĀRK. P. 15,54.] *sarvavedāḥ sa yeneṣṭho yāgaḥ sarvasvadakṣiṇaḥ*
 [AK. 2,7,9.]
-  <sub>DCS 6777 · attested</sub>
+  <sub>attested</sub>
 
 **1c)** — c) mit dat. der Person und acc. der Sache: *mahyaṃ yajantu*
 ([AV.] *yajantām) mama yāni havyā*
@@ -97,7 +97,7 @@
 [ṚV. 10,128,4.] with loc. of the person
 [MAITRYUP. 6,9.] the person in acc. with *prati*
 [R. 2,107,11.]
-  <sub>DCS 6777 · attested</sub>
+  <sub>attested</sub>
 
 **1d)** — d) opfern so v. a. hingeben: *yajantībhiḥ svavigrahān*
 [BHAṬṬ. 8,49.]
@@ -106,7 +106,7 @@
 [BHAṬṬ. 8,49.]
 - **EN:** — d) to sacrifice in the sense of to surrender, give up: *yajantībhiḥ svavigrahān*
 [BHAṬṬ. 8,49.]
-  <sub>DCS 6777 · attested</sub>
+  <sub>attested</sub>
 
 **1e)** — e) med. verehren, opfern um Etwas (acc.): *sakhyam*
 [ṚV. 7,36,5.]
@@ -115,7 +115,7 @@
 [ṚV. 7,36,5.]
 - **EN:** — e) med. to worship, sacrifice for the sake of something (acc.): *sakhyam*
 [ṚV. 7,36,5.]
-  <sub>DCS 6777 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) im Ritual durch die Yājyā — Strophe zum Opfer einladen: *catasro devatā yajati*
 [ŚAT. BR. 1,9,2,6.] [4,4,5,16.]
@@ -127,10 +127,10 @@
 - **EN:** — 2) in ritual usage, to invite to sacrifice by means of the Yājyā — verse: *catasro devatā yajati*
 [ŚAT. BR. 1,9,2,6.] [4,4,5,16.]
 [ŚĀṄKH. ŚR. 7,4,3. 10,7,9.]
-  <sub>DCS 6777 · attested</sub>
+  <sub>attested</sub>
 
 **cross-ref)** — Vgl. 2. *aniṣṭa* und 2. *iṣṭa* .
 
 - **RU:** — Vgl. 2. *aniṣṭa* und 2. *iṣṭa* .
 - **EN:** — Vgl. 2. *aniṣṭa* and 2. *iṣṭa* .
-  <sub>DCS 6777 · attested</sub>
+  <sub>attested</sub>

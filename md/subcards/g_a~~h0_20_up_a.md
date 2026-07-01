@@ -19,4 +19,4 @@
 [ṚV. 3,56,2.] *ābhirhi māyā upa dasyumāgāt*
 [10,73,5.] *tadutāpyāhuḥ sāmnainamupāgāditi sādhunainamupāgādityeva*
 [CHĀND. UP. 2,1,2.]
-  <sub>DCS 1 · attested</sub>
+  <sub>attested</sub>

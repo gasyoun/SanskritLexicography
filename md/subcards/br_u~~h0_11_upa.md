@@ -13,7 +13,7 @@
 - **EN:** — *upa* med. (attested only once act.)
  1) to speak to Jmd. (acc.): *yamo 'haṃ tvāmupabruve*
 [MBH. 12,7228.]
-  <sub>DCS 22 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) bittend ansprechen um (dat.), anrufen; zureden, bereden zu
 [ṚV. 1,77,3.] [179,5.] *(dyāvāpṛthivī) upa bruve namasā yajñe asmin*
@@ -46,4 +46,4 @@
 [5,22,11.] act.: *upo harīṇāṃ patiṃ dakṣaṃ pṛñcantamabravam . nūnaṃ śrudhi stuvato aśvyasya*
 [ṚV. 8,24,14.]
 [ŚAT. BR. 9,3,3,11.]
-  <sub>DCS 22 · attested</sub>
+  <sub>attested</sub>

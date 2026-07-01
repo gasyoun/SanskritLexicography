@@ -10,4 +10,4 @@
 [MBH. 12,10583.]
 - **EN:** — *samupa* dass.: *śabdaḥ samupaśāmyati*
 [MBH. 12,10583.]
-  <sub>DCS 2 · attested</sub>
+  <sub>attested</sub>

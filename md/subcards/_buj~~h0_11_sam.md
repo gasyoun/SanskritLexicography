@@ -10,4 +10,4 @@
 [BHAṬṬ. 4,42.]
 - **EN:** — *sam*, partic. *saṃbhugna* bent together
 [BHAṬṬ. 4,42.]
-  <sub>DCS 2938 · attested</sub>
+  <sub>attested</sub>

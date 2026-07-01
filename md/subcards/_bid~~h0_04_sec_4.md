@@ -25,4 +25,4 @@ Sch.
 [VOP. 20,22.] to split, to hew into repeatedly: *bhūyastaṃ bebhidāṃ cakre nakhatuṇḍāyudhaḥ khagaḥ*
 [BHAṬṬ. 5,105.] *tasyāpyabebhidiṣṭāsau mūrdhānaṃ muṣṭināṅgadaḥ*
 [15,116.]
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>

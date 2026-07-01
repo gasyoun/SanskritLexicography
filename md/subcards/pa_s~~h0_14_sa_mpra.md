@@ -23,7 +23,7 @@
 - **EN:** *saṃpra* to see, perceive, behold: *yadyuṣmāniha — vimuktānsaṃprapaśyāmi*
 [MBH. 3,15050.] [7,6194.] *jīvo niṣkrāntamātmānaṃ śarīrātsaṃprapaśyati*
 [14,581.] *tatsarvaṃ dharmavīryeṇa yathāvatsaṃprapaśyati*
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>
 
 **2)** [R. 1,3,4.] ansehen, betrachten: *tathā ca vidvāṃsastaṃ saṃprapaśyanti buddhyā*
 - **EN:** [R. 1,3,4.] to look at, regard: *tathā ca vidvāṃsastaṃ saṃprapaśyanti buddhyā*

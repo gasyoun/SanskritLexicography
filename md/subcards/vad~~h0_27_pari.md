@@ -28,7 +28,7 @@
 [ŚĀṄKH. BR. 6,4.] *prajāpatim*
 [PAÑCAV. BR. 4,9,14.] *ādityameva te pari vadanti sarve*
 [AV. 10,8,17.] [12,4,49.]
-  <sub>DCS 20 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) sich nachtheilig über Jmd auslassen, Jmd tadeln
 [Spr. 134.]
@@ -40,10 +40,10 @@
 - **EN:** — 2) to speak disparagingly of someone, to censure someone
 [Spr. 134.]
 [MBH. 12,4869.] [13,4992.] med. [3,14686.] [5,1338.]
-  <sub>DCS 20 · attested</sub>
+  <sub>attested</sub>
 
 **caus)** — Vgl. *parivāda* fgg.
 
 - **RU:** — Vgl. *parivāda* fgg.
 - **EN:** — Vgl. *parivāda* fgg.
-  <sub>DCS 20 · attested</sub>
+  <sub>attested</sub>

@@ -10,4 +10,4 @@
 [KATHĀS. 52,120.] [58,8.]
 - **EN:** — *abhyā* to rush upon, to attack
 [KATHĀS. 52,120.] [58,8.]
-  <sub>DCS 3124 · attested</sub>
+  <sub>attested</sub>

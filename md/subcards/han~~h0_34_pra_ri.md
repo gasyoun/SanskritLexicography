@@ -32,7 +32,7 @@
 [P. 2,3,56], Schol. *brahmadviṣaste praṇihanmi*
 [BHAṬṬ. 2,35.] [8,121.] uncertain whether gen. or acc.
 [Spr. (II) 4680.]
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) stärker senken: die Hand
 [VS. PRĀT. 1,124.] tiefer als Anudātta sprechen
@@ -44,7 +44,7 @@
 - **EN:** — 2) to lower more strongly: the hand
 [VS. PRĀT. 1,124.] to speak lower than Anudātta
 [4,137.]
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) partic. *˚hata = dviṣṭa, pratiskhalita* und *baddha*
 [MED. t. 207.]
@@ -53,4 +53,4 @@
 [MED. t. 207.]
 - **EN:** — 3) partic. *˚hata = dviṣṭa, pratiskhalita* and *baddha*
 [MED. t. 207.]
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>

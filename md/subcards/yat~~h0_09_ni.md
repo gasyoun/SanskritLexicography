@@ -10,4 +10,4 @@
 [ṚV. 1,186,11.]
 - **EN:** — *ni* med. to arrive at, reach: *ni yā deveṣu yatate vasūyuḥ*
 [ṚV. 1,186,11.]
-  <sub>DCS 2 · attested</sub>
+  <sub>attested</sub>

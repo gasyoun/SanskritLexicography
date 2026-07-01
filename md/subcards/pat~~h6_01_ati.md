@@ -13,4 +13,4 @@
 - **EN:** — *ati*
  3) to go beyond, to not fall under (a concept, a category): *yadi śiṃśapā vṛkṣatvamatipatet svātmānameva jahyāt*
 [SARVADARŚANAS. 8,2. 3.]
-  <sub>DCS 3124 · attested</sub>
+  <sub>attested</sub>

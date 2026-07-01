@@ -31,7 +31,7 @@
 [Spr. 776.] *prabaddhavilūna*
 [P. 4,1,52], Vārtt. 3. *vākprabaddho hi saṃsāraḥ* chained to one's word, dependent on the word
 [MBH. 12,7804.]
-  <sub>DCS 35 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) unterdrücken, hemmen: *prabaddhamūtra* an Harnverhaltung leidend
 [SUŚR. 1,198,20.]
@@ -40,7 +40,7 @@
 [SUŚR. 1,198,20.]
 - **EN:** — 2) to suppress, check: *prabaddhamūtra* suffering from retention of urine
 [SUŚR. 1,198,20.]
-  <sub>DCS 35 · attested</sub>
+  <sub>attested</sub>
 
 **caus-intro)** — Vgl. *prabaddhar* fgg.
 —
@@ -95,7 +95,7 @@
 [ŚAṂK.] zu [BṚH. ĀR. UP. S. 270.] *svāmino yasyoparyāsthā pratibaddhā*
 [PAÑCAT. ed. orn. 60,24.] *āśāpratibaddhacitta*
 [31,6.]
-  <sub>DCS 35 · attested</sub>
+  <sub>attested</sub>
 
 **caus-3)** — 3) verschliessen, abschneiden: *pratibadhnāti hi śreyaḥ pūjyapūjāvyatikramaḥ*
 [RAGH. 1,79.] *asya svargaprāptiranena duṣkṛtena pratibadhyate*
@@ -110,7 +110,7 @@
 [RAGH. 1,79.] *asya svargaprāptiranena duṣkṛtena pratibadhyate*
 [KULL.] zu [M. 9,254.] *pratibaddhaprasara*
 [MALLIN.] zu [KUMĀRAS. 3,12.]
-  <sub>DCS 35 · attested</sub>
+  <sub>attested</sub>
 
 **caus-4)** — 4) Jmd von sich weisen, fern halten von sich: *pratyabadhnāccārthapatim*
 [DAŚAK.] in [BENF. Chr. 190,6.] *paraiḥ pratibadhyamāno 'pi*
@@ -131,7 +131,7 @@
 [MBH. 8,2108.] *pratibaddha = manohata, pratihata, hata*
 [AK. 3,1,41.]
 [H. 439.]
-  <sub>DCS 35 · attested</sub>
+  <sub>attested</sub>
 
 **caus-5)** — 5) *pratibaddha* verwickelt, schwer zu lösen
 [VARĀH. BṚH. S. 2,1.]
@@ -140,18 +140,18 @@
 [VARĀH. BṚH. S. 2,1.]
 - **EN:** — 5) *pratibaddha* entangled, hard to resolve
 [VARĀH. BṚH. S. 2,1.]
-  <sub>DCS 35 · attested</sub>
+  <sub>attested</sub>
 
 **deriv)** — Vgl. *pratibadhya (pratibandhya)* fgg.
 
 - **RU:** — Vgl. *pratibadhya (pratibandhya)* fgg.
 - **EN:** — Vgl. *pratibadhya (pratibandhya)* fgg.
-  <sub>DCS 35 · attested</sub>
+  <sub>attested</sub>
 
 **Nachtrag-1 (T97))** — Vgl. *prabaddhar* fgg.
 
 - **RU:** — Vgl. *prabaddhar* fgg.
-  <sub>DCS 35 · attested</sub>
+  <sub>attested</sub>
 
 **Nachtrag-1a (T98–T99-1) anbinden)** —
  1) *prati* anbinden: *vṛkṣe nāvaṃ pratibadhnīṣva* binde dein Schiff an einen Baum
@@ -190,4 +190,4 @@
 [ŚAṂK.] к [BṚH. ĀR. UP. S. 253.] *mṛtyu˚* подверженный смерти
 [98.] *rasāntareṣu pratibaddharāgam* так: созвучный, гармонирующий
 [KUMĀRAS. 7,91.]
-  <sub>DCS 35 · attested</sub>
+  <sub>attested</sub>

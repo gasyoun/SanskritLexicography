@@ -52,7 +52,7 @@ P. [YĀJÑ. 2,248.] *bhinna* дробь, дробное число
 P., less than one
 P. [YĀJÑ. 2,248.] *bhinna* a fraction, a fractional number
 [COLEBR. Alg. 13.]
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) spalten so v. a. öffnen; blühen machen; pass. sich öffnen: *khānīmāni bhittvā*
 [MAITRYUP. 2,6.] *bibhide niviḍo 'pi muṣṭiḥ*
@@ -100,7 +100,7 @@ P. [YĀJÑ. 2,248.] *bhinna* a fraction, a fractional number
 [MBH. 1,7006.]
 [Spr. 2529] (Conj.). in the passage *bhinnebhamauktikāpūrṇapāṇiḥ siṃhaḥ*
 [RĀJA-TAR. 4,176] *bhinna* means, however, not "rutting" but "lacerated."
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) lösen, pass. sich lösen, aufgehen: *prasthānabhinnāṃ na babandha nīvīm*
 [RAGH. 7,9.] *tatastau tu jaṭā* (so die [ed. Bomb.] und
@@ -133,7 +133,7 @@ P. [YĀJÑ. 2,248.] *bhinna* a fraction, a fractional number
 *vacāṃsi yogagrathitāni sādho na naḥ kṣamaṃ te manasāpi bhettum* to disentangle
 [BHĀG. P. 5,10,19.] *tacchlokakūṭamadyāpi grathitaṃ sudṛḍhaṃ mune . bhettuṃ na śakyate 'rthasya gūḍhatvāt*
 [MBH. 1,82.]
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **5)** — 5) unterbrechen, stören: *tayordvāḥsthaḥ samayaṃ lakṣmaṇo 'bhinat*
 [RAGH. 15,94.] *teṣāṃ na bhinnā mudaḥ*
@@ -154,7 +154,7 @@ P. [YĀJÑ. 2,248.] *bhinna* a fraction, a fractional number
 [MBH. 13,7544. fg.] Vgl. *bhinnavṛtta*. * bhrūbhaṅgabhinnatilaka* so v. a. obliterated
 [MĀLAV. 67.]
 [DAŚAK.] in [BENF. Chr. 199,5.]
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **6)** — 6) brechen so v. a. verrathen: *bhindantyavamatā mantram*
 [M. 7,150.]
@@ -181,7 +181,7 @@ P. [YĀJÑ. 2,248.] *bhinna* a fraction, a fractional number
 [Spr. 2113.]
 [KĀM. NĪTIS. 11,53.] *na rahasyaṃ bhetsyati*
 [DAŚAK.] in [BENF. Chr. 197,20.]
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **7)** — 7) spalten, theilen so v. a. entzweien: *dūta eva hi saṃdhatte bhinattyeva ca saṃhatān . dūtastatkurute karma bhidyante yena vā na vā ..*
 [M. 7,66.] *jalavatparvatāñchatrūnbhindyādanupalakṣitaḥ*
@@ -211,7 +211,7 @@ P. [YĀJÑ. 2,248.] *bhinna* a fraction, a fractional number
 [KĀM. NĪTIS. 17,25. 19,2.] [KATHĀS. 34,210.] *dānabhinna* made to defect by gifts, bribed
 [Spr. 4956.] pass. to separate oneself from, to keep aloof from (instr.): *dveṣyairapakṣairahitaiśca tasya bhidyasva nityaṃ kuhakoddhataiśca*
 [MBH. 3,14718.]
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **8)** — 8) Jmd mit sich selbst entzweien, irre machen, umstimmen: *mahānto 'pi hi bhidyante strībhiradbhirivācalāḥ*
 [Spr. 2102.] *evaṃ viprakṛto rājanvalirbhagavatāsuraḥ . bhidyamāno 'pyabhinnātmā pratyāha*
@@ -226,7 +226,7 @@ P. [YĀJÑ. 2,248.] *bhinna* a fraction, a fractional number
 [Spr. 2102.] *evaṃ viprakṛto rājanvalirbhagavatāsuraḥ . bhidyamāno 'pyabhinnātmā pratyāha*
 [BHĀG. P. 8,22,1.] Vgl. *vāgbhirbhedyo hi kātaraḥ*
 [Spr. 199.]
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **9)** — 9) ändern; pass. sich ändern: *na — bhindanti mandāṃ gatim*
 [KUMĀRAS. 1,11.] *yathemā nadyaḥ syandamānāḥ samudrāyaṇāḥ samudraṃ prāpyāstaṃ gacchanti bhidyete tāsāṃ nāmarūpe*
@@ -268,7 +268,7 @@ P. [YĀJÑ. 2,248.] *bhinna* a fraction, a fractional number
 [MEGH. 82.] *chāyābhinnasphaṭikaviśada*
 [63.] *bhinno rāgaḥ kisalarucāmājyadhūmodgamena* ad
 [ŚĀK. 14.]
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **10)** — 10) unterscheiden, einen Unterschied machen; pass. verschieden sein. sich unterscheiden von (abl.): *ityanye bhindanti*
 [H. 309.]
@@ -340,4 +340,4 @@ Sch. *jaganmitho bhinnamabhinnamīśvarāt*
 Schol. to [P. 1,1,14.] [2,1.] [4,6.] [NĪLAK. 160.] different, so v. a. deviating from the usual, the normal: *bhinnavartman* so v. a. one who has left the right path
 [Spr. 1707.] *bhinnacāritradarśana*
 [R. GORR. 2,118,7.] Vgl. *nātibhinna*.
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>

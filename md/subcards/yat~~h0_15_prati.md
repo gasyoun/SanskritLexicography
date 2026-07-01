@@ -17,7 +17,7 @@
 [ŚAT. BR. 9,2,3,3.] *āśramapīḍā yathā na bhaviṣyati tathā pratiyatiṣyāmahe*
 (v. l. for *prayati˚*)
 [ŚĀK. 18,14.]
-  <sub>DCS 1 · attested</sub>
+  <sub>attested</sub>
 
 **2)** [ŚĀK. 18,14.] — caus. zurückgeben, erwiedern: *vairāṇi, vairam* so v. a. Rache nehmen
 [MBH. 3,14728.] [9,3256.]
@@ -26,10 +26,10 @@
 [MBH. 3,14728.] [9,3256.]
 - **EN:** — caus. to give back, return, requite: *vairāṇi, vairam*; so v. a. to take revenge
 [MBH. 3,14728.] [9,3256.]
-  <sub>DCS 1 · attested</sub>
+  <sub>attested</sub>
 
 **deriv)** — Vgl. *pratiyātana* .
 
 - **RU:** — Vgl. *pratiyātana* .
 - **EN:** — Vgl. *pratiyātana* .
-  <sub>DCS 1 · lexicographic</sub>
+  <sub>lexicographic</sub>

@@ -13,4 +13,4 @@
 - **EN:** — *ā* to long for, to desire to come to someone: *ā manyethāmā gataṃ kaccidevaiḥ*
 [ṚV. 3,58,4.] *juhurāṇā cidaśvinā manyethām*
 [8,26,5.]
-  <sub>DCS 4704 · attested</sub>
+  <sub>attested</sub>

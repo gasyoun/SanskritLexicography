@@ -17,9 +17,9 @@ zu durchbrechen —, zu sprengen beabsichtigen: *anīkam*
  to intend to break through, to intend to burst: *anīkam*
 [MBH. 7,1480.] [1624.]
 — Vgl. *bibhitsā* fg.
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **desid-2)** — Vgl. *bibhitsā* fg.
 
 - **RU:** — Vgl. *bibhitsā* fg.
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>

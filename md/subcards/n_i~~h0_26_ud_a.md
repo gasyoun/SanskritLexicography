@@ -19,7 +19,7 @@
 [ŚAT. BR. 5,1,4,5.] *patnīm*
 [4,4,2,17.] [2,5,2,20.] [13,2,8,3.] *tānunnetodānayet (avabhṛthāt)*
 [LĀṬY. 4,4,13.]
-  <sub>DCS 60 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) med. in die Höhe bringen, erhöhen (bildl.): *udāneṣye 'tha vā yaśaḥ*
 [BHAṬṬ. 8,21.]
@@ -28,4 +28,4 @@
 [BHAṬṬ. 8,21.]
 - **EN:** — 2) med. to raise up, elevate (bildl.): *udāneṣye 'tha vā yaśaḥ*
 [BHAṬṬ. 8,21.]
-  <sub>DCS 60 · attested</sub>
+  <sub>attested</sub>

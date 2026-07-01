@@ -10,4 +10,4 @@
 [SIDDH. K.] к [P. 2,1,69.]
 - **EN:** — *vi* . partic. in *bhuktavibhukta* gaṇa *śākapārthivādi* from
 [SIDDH. K.] to [P. 2,1,69.]
-  <sub>DCS 8 · attested</sub>
+  <sub>attested</sub>

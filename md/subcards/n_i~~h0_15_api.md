@@ -20,7 +20,7 @@
 [AIT. BR. 1,8.] *sa evainamapathātpanthāmapinayati*
 [TS. 2,2,2,1.] *devalokaṃ yajamānamapinayati*
 [ŚAT. BR. 1,8,3,11.] [20.] [12,4,4,1.] [8,1,21.] led (thus v. a. near to death): *yadi ha vā apinīta iva yajamāno bhavati*
-  <sub>DCS 12 · attested</sub>
+  <sub>attested</sub>
 
 **2)** [AIT. BR. 2,2.] versetzen in: *gavāmevainaṃ nyāyamapinīya*
 [TS. 2,2,8,2.]

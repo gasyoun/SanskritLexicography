@@ -34,7 +34,7 @@
 [ŚIŚ. 9,69.] *puṣpadantoditāṃ kathām*
 [KATHĀS. 7,39.] _n._ that which is spoken, speech, words
 [H. ś. 81.] [VARĀH. BṚH. S. 51,1.] [BHĀG. P. 4,7,6.]
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **1a-beta)** — β) angeredet, angesprochen: *ityuditaḥ sa tayā*
 [KATHĀS. 26,183.]
@@ -49,7 +49,7 @@
 [KATHĀS. 26,183.]
 [ŚIŚ. 9,61.]
 [BHĀG. P. 6,7,26.]
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **1b)** — b) mittheilen, verkünden, angeben, besprechen, sprechen über: *atha māgadharājāno bhāvinyo ye vadāmi te*
 [BHĀG. P. 9,22,44.] *yaṃ vadanti tamobhūtā dharmamatadvidaḥ*
@@ -106,7 +106,7 @@
 [M. 2,9.] [4,14.] [155.] [11,203.]
 [YĀJÑ. 1,154.] taught so v. a. received, correct; compar. *uditatara* so v. a. *iṣṭatara*
 [ŚĀṄKH. BR. 19,2.]
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **1c)** — c) ankündigen,
 
@@ -139,7 +139,7 @@ to foretell, to indicate: *yugapatprāptau parāmṛddhiṃ vadanti*
 [H. 568], Sch.
 *antaḥsthe 'ṅge* (*spṛṣṭe*) *svajana uditaḥ* indicated
 [VARĀH. BṚH. S. 51,25.]
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **1d)** — d) behaupten, annehmen: *śamārthinaḥ kālagatiṃ vadanti*
 [MBH. 13,25.] *śatamekādhikameke sahasramapare vadanti ketūnām*
@@ -157,7 +157,7 @@ to foretell, to indicate: *yugapatprāptau parāmṛddhiṃ vadanti*
 [VARĀH. BṚH. S. 11,5.] [21,5.] [23,4.]
 [PRAB. 112,15.]
 [SARVADARŚANAS. 126,14.]
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **1e)** — e) bezeichnen als, erklären für, nennen: *svargo loka iti yaṃ vadanti*
 [AV. 11,1,7.]
@@ -199,7 +199,7 @@ to foretell, to indicate: *yugapatprāptau parāmṛddhiṃ vadanti*
 [ŚRUT. 25.]
 [Spr. 2660.] [2707.] [2711.] [2887.] [3657.] Kār. to [P. 2,1,32.] [VARĀH. BṚH. S. 68,116.] [BHĀG. P. 2,4,21.] [3,1,10.] *taduparāgamiti vadanti lokāḥ*
 [5,24,3.]
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **1f)** — f) die Stimme ertönen lassen (von Vögeln
 u. s. w.); tönen, schallen, klingen: *vayo vadantaḥ*
@@ -244,7 +244,7 @@ u. s. w.); to sound, resound, ring: *vayo vadantaḥ*
 [KĀṬH. 34,5.]
 [KAUŚ. 84.] *vṛṣṭiḥ*
 [MAITRYUP. 6,22.]
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) med.
 - **EN:** — 2) med.
@@ -293,7 +293,7 @@ u. s. w.); to sound, resound, ring: *vayo vadantaḥ*
 [ṚV. 10,109,4.] *devā brahmannavadanta*
 [TS. 3,5,7,2.] to contend over: *manaśca ha vai vākcāhaṃbhadra ūdāte*
 [ŚAT. BR. 1,4,5,8.]
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **2c)** — c) sich nennen, sich ausgeben für: *turīye haiva saṃgrahitāro vadante*
 [AIT. BR. 2,25.]
@@ -302,7 +302,7 @@ u. s. w.); to sound, resound, ring: *vayo vadantaḥ*
 [AIT. BR. 2,25.]
 - **EN:** — c) to call oneself, to pass oneself off as: *turīye haiva saṃgrahitāro vadante*
 [AIT. BR. 2,25.]
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **2d)** — d) *bhāsane*
 [P. 1,3,47.] *jñāne* ebend. und
@@ -323,7 +323,7 @@ u. s. w.); to sound, resound, ring: *vayo vadantaḥ*
 [P.], Sch. *pāṇinirvadate*
 [VOP.] *laṅkāṃ samāviśadrātrau vadamāno 'ridurgamām* so v. a. triumphant
 [BHAṬṬ. 8,27.]
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **2) Medialformen: a) sagen, sprechen)** — 2) med.
  a) sagen, sprechen: *vadasva yatte vādyam*
@@ -358,4 +358,4 @@ u. s. w.); to sound, resound, ring: *vayo vadantaḥ*
 [BHĀG. P. 3,7,23.] [10,2.] [8,1,1.] [5,12.] [14,1.] *tadvadadhvaṃ varānsarve*
 [R. 7,36,9.] *vadasvainaṃ tattvavo mama* указывать so v. a. называть по имени
 [HARIV. 9996.]
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>

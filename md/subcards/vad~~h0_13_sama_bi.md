@@ -16,4 +16,4 @@
 [MBH. 13,276.]
 [R. 2,115,8.] *vasudevasya pādau*
 [HARIV. 5735.]
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>

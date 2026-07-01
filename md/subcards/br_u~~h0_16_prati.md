@@ -43,7 +43,7 @@
 [VID. 297.]
 [BHĀG. P. 3,2,3.] with a double acc.: *kimahaṃ taṃ pratibrūyām*
 [R. 5,29,12.]
-  <sub>DCS 44 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) med. antworten so v. a. (Angriffe u. s. w.) zurückgeben: *tvayā prati bruve yajā*
 [ṚV. 7,31,6.] *prati śvasantaṃ bruvīmahi*
@@ -55,7 +55,7 @@
 - **EN:** — 2) med. to answer, hence also v. a. (attacks u. s. w.) to return, requite: *tvayā prati bruve yajā*
 [ṚV. 7,31,6.] *prati śvasantaṃ bruvīmahi*
 [8,21,11.] [81,32.]
-  <sub>DCS 44 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) verweigern, abschlagen *tathāpi na pratibrūyāṃ gurubhiḥ prārthitaṃ kiyat*
 [BHĀG. P. 6,7,37.]
@@ -64,4 +64,4 @@
 [BHĀG. P. 6,7,37.]
 - **EN:** — 3) to refuse, deny, decline *tathāpi na pratibrūyāṃ gurubhiḥ prārthitaṃ kiyat*
 [BHĀG. P. 6,7,37.]
-  <sub>DCS 44 · attested</sub>
+  <sub>attested</sub>

@@ -27,7 +27,7 @@
 [R. 1,20,17.] [61,6.] [7.] [2,33,20.] [75,45.] [4,27,9.] [5,15,37.] [71,7.]
 [VARĀH. BṚH. S. 78,23] = [93,3.] [KATHĀS. 4,25.] [RĀJA-TAR. 5,211.] one who has made his escape
 [PAÑCAT. 89,20.]
-  <sub>DCS 1422 · attested</sub>
+  <sub>attested</sub>
 
 **pra+naś.caus)** [VET. in LA. 22,11.] — caus. verschwinden machen: *chāyāmiva pra tānsūryaḥ parikrāmannanīnaśat* [AV. 8,6,8.] *gāṇḍīvaśabdena praṇāśaya tatra vai balam* [MBH. 7,327.] [HARIV. 8877.] *pāpmānaṃ me praṇāśaya* [BHĀG. P. 8,16,27.] vergehen machen: *yajamānam* [ŚAT. BR. 5,2,2,20.] verloren gehen lassen so v. a. unbelohnt lassen: *kṛtakṛtyasya bhṛtyasya kṛtaṃ naiva praṇāśayet* [HIT. IV,9.]
 
@@ -39,4 +39,4 @@
 [BHĀG. P. 8,16,27.] to cause to pass away: *yajamānam*
 [ŚAT. BR. 5,2,2,20.] to allow to be lost so v. a. to leave unrewarded: *kṛtakṛtyasya bhṛtyasya kṛtaṃ naiva praṇāśayet*
 [HIT. IV,9.]
-  <sub>DCS 1422 · attested</sub>
+  <sub>attested</sub>

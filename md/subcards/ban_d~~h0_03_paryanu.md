@@ -7,4 +7,4 @@
 
 - **RU:** — *paryanu* s. *paryanubandha*.
 - **EN:** — *paryanu* s. *paryanubandha*.
-  <sub>DCS 2655 · attested</sub>
+  <sub>attested</sub>

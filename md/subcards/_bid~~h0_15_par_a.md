@@ -10,4 +10,4 @@
 [MBH. 7,9379.] [8,481.]
 - **EN:** — *parā* to pierce through, to wound: *śaraiścainam — parābhinat*
 [MBH. 7,9379.] [8,481.]
-  <sub>DCS 11 · attested</sub>
+  <sub>attested</sub>

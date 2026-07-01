@@ -10,4 +10,4 @@
 [KATHĀS. 18,132.]
 - **EN:** — *abhyupā* to come up to, to approach
 [KATHĀS. 18,132.]
-  <sub>DCS 1 · attested</sub>
+  <sub>attested</sub>

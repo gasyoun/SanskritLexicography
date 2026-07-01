@@ -13,4 +13,4 @@
 - **EN:** — *abhyud* to rise over, rise before: *yadadya kacca vṛtrahannudagā abhi sūrya*
 [ṚV. 8,82,4.] *anuddhṛtamabhyudagāt*
 [ŚAT. BR. 12,4,4,7.]
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>

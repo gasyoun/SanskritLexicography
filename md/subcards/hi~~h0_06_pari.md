@@ -13,4 +13,4 @@
 - **EN:** — *pari* to convey to a place, transport: *yāṃ vāṃ hotrāṃ parihinomi* (
 [AV. PRĀT. 3,88]) *medhayā*
 [ṚV. 7,104,6.]
-  <sub>DCS 23914 · attested</sub>
+  <sub>attested</sub>

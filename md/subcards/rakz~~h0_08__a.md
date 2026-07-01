@@ -16,10 +16,10 @@
 [ṚV. 7,50,1.] *dvārāṇi yantrairārakṣitāni*
 [MBH. 15,186.] *bharatārakṣitaṃ putrarājyam*
 [R. 2,52,58.]
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **caus)** — Vgl. *ārakṣa* fgg.
 
 - **RU:** — Vgl. *ārakṣa* fgg.
 - **EN:** — Vgl. *ārakṣa* fgg.
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>

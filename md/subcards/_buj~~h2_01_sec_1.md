@@ -66,7 +66,7 @@
 [Spr. 1103], v. l.
 - **EN:** — 2) *bhuñjāpayati*
 [Spr. 1103], v. l.
-  <sub>DCS 2938 · lexicographic</sub>
+  <sub>lexicographic</sub>
 
 **caus.1)** 1) *bhojayati* (
 [P. 1,3,87.]
@@ -121,4 +121,4 @@
 [Spr. 1103.] позволять кому-либо наслаждаться чем-либо: *(daṃpatī) bhogāniṣṭān — bhojayāmāsa* ad
 [MEGH. 113.] *bhojayiṣyāmi bhavatīṃ bhuvanatrayam*
 [BHAṬṬ. 8,83.] Vgl. *bhojanīya* .
-  <sub>DCS 2938 · attested</sub>
+  <sub>attested</sub>

@@ -13,4 +13,4 @@
 - **EN:** — intens. *panīpatyate, panīpatīti*
 [P. 7,4,84.]
 [VOP. 20,7.]
-  <sub>DCS 3124 · attested</sub>
+  <sub>attested</sub>

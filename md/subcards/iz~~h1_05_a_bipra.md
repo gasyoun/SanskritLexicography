@@ -9,4 +9,4 @@
 - **EN:** — *abhipra* to call upon, to command: *devānāmenaṃ ghoraiḥ krūraiḥ praiṣairabhipreṣyāmi*
 [AV. 16,7,2.] in the liturg. sense: *tasmānnānabhipreṣitamadhvaryuṇā kiṃ cana kriyate*
 [ŚAT. BR. 4,6,7,19.]
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>

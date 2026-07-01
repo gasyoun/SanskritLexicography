@@ -46,4 +46,4 @@
 [RAGH. 13,40.]
 [ṚT. 3,23.]
 [DHŪRTAS. 67,5. 68,15.]
-  <sub>DCS 40 · attested</sub>
+  <sub>attested</sub>

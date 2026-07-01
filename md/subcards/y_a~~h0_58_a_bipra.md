@@ -31,10 +31,10 @@
 [25,43.] to attack: *abhiprayāmi saṃgrāme yadahaṃ yuddhadurmadān*
 [MBH. 4,1381.] *paraṃ cābhiprayātasya cakraṃ tasya mahātmanaḥ . bhaviṣyati cāpratihataṃ satataṃ cakravartinaḥ ..*
 [1,2983.]
-  <sub>DCS 38 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — Vgl. *abhiprayāyam, abhiprayāyin* .
 
 - **RU:** — Vgl. *abhiprayāyam, abhiprayāyin* .
 - **EN:** — Vgl. *abhiprayāyam, abhiprayāyin*.
-  <sub>DCS 38 · attested</sub>
+  <sub>attested</sub>

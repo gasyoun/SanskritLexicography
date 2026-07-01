@@ -26,7 +26,7 @@
 
 * ca tairapi (yatnairapi* [ed. Bomb.]) *kṛtā kālena paribhidyate*
 [MBH. 13,7543.]
-  <sub>DCS 7 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) verändern, entstellen: *paribhinnasvara*
 [MBH. 12,5362.]
@@ -35,15 +35,15 @@
 [MBH. 12,5362.]
 - **EN:** — 2) to alter, to disfigure: *paribhinnasvara*
 [MBH. 12,5362.]
-  <sub>DCS 7 · attested</sub>
+  <sub>attested</sub>
 
 **nom)** — Vgl. *paribhedaka* .
 
 - **RU:** — Vgl. *paribhedaka* .
 - **EN:** — Vgl. *paribhedaka* .
-  <sub>DCS 7 · attested</sub>
+  <sub>attested</sub>
 
 **intro)** — *pari*
 
 - **RU:** — *pari*
-  <sub>DCS 7 · attested</sub>
+  <sub>attested</sub>

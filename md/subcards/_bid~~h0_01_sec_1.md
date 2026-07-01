@@ -25,7 +25,7 @@
 [HARIV. 11905.] *anayormahānnisargopajātaḥ snehaḥ kathaṃ bhedayituṃ śakyaḥ* to destroy, dissolve
 [HIT. 67,2.] *bhedita = bhinna*
 [AK. 3,2,50.]
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **caus-2)** — 2) theilen: *ṣoḍaśabheditāḥ* sechszehnfach getheilt, in 16 Arten zerfallend
 [SĀH. D. 18,112.] Könnte auch _adj._ von *ṣoḍaśa — bheda* sein.
@@ -34,7 +34,7 @@
 [SĀH. D. 18,112.] Могло бы также быть _adj._ от *ṣoḍaśa — bheda*.
 - **EN:** — 2) to divide: *ṣoḍaśabheditāḥ* divided sixteenfold, falling into 16 kinds
 [SĀH. D. 18,112.] Could also be _adj._ from *ṣoḍaśa — bheda*.
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>
 
 **caus-3)** — 3) entzweien mit Andern oder mit sich, Jmd irre machen, auf seine Seite hinüberziehen
 [MBH. 1,1358.] [7399.] [13,555.] [558.] *suśliṣṭānapi* (so die neuere Ausg.) *lokeṣu bhedayan*
@@ -64,4 +64,4 @@
 [MBH. 5,2835.]
 [R. GORR. 2,18,15.] [77,2.] *tamṛṣiṃ kauśikaṃ rambhe bhedayasva (= kāmotpādanena tapasaścālaya* Schol.) *tapasvinam* so v. a. proceed
 [R. SCHL. 1,64,7.]
-  <sub>DCS 2113 · attested</sub>
+  <sub>attested</sub>

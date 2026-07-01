@@ -7,4 +7,4 @@
 
 - **RU:** — *prativi* s. *prativighāta* .
 - **EN:** *prativi* s. *prativighāta*.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>

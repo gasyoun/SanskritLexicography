@@ -10,4 +10,4 @@
 [KAUŚ. 20.]
 - **EN:** — *pratyava* to bend back: *rṭabhān*
 [KAUŚ. 20.]
-  <sub>DCS 2938 · attested</sub>
+  <sub>attested</sub>

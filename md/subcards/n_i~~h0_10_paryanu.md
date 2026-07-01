@@ -10,4 +10,4 @@
 [R. 6,112,110.]
 - **EN:** — *paryanu* to give someone many kind words, to entreat urgently: *sarvātmanā paryanunīyamāno yadā na saumitririyāya yogam*
 [R. 6,112,110.]
-  <sub>DCS 1 · attested</sub>
+  <sub>attested</sub>

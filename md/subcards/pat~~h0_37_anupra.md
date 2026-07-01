@@ -13,4 +13,4 @@
 - **EN:** — *anupra* to fly toward, fly along: *pra vāṃ vayo vapuṣe 'nu paptan*
 [ṚV. 6,63,6.] *gehānuprapātam, gehaṃ gehamanuprapātam, gehamanuprapātamanuprapātam* _adv._ probably hastening from house to house (differently u. *anuprapāta*)
 [P. 4,3,56], Sch.
-  <sub>DCS 3124 · attested</sub>
+  <sub>attested</sub>

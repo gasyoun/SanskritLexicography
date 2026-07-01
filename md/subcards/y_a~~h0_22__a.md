@@ -169,7 +169,7 @@
 [3466.] *māmeva caitānyāyānti mahāratnāni*
 [KATHĀS. 53,63.] "to enter into —, to merge into" (acc.)
 [BHĀG. P. 9,20,27.]
-  <sub>DCS 1239 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) in einen Zustand, eine Lage, ein Verhältniss kommen, — gerathen; theilhaft werden, erlangen; mit acc.: *vaśam*
 [SUŚR. 1,149,14.] *bandhanam*
@@ -274,7 +274,7 @@
 [Spr. 357.] [3572.] *pañcatvam*
 [KATHĀS. 34,20.] [41,12.]
 [RĀJA-TAR. 5,376.]
-  <sub>DCS 1239 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) hervorgehen, resultiren
 [SARVADARŚANAS. 25,4. 79,9.]
@@ -283,7 +283,7 @@
 [SARVADARŚANAS. 25,4. 79,9.]
 - **EN:** — 3) "to result, to follow as a consequence"
 [SARVADARŚANAS. 25,4. 79,9.]
-  <sub>DCS 1239 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) angehen, sich für Jmd (gen.) schicken; mit infin.: *vaktuṃ nāyāti rājendra etayorniyamasthayoḥ . arvāṅniśīthāt*
 [MBH. 2,831.]
@@ -292,10 +292,10 @@
 [MBH. 2,831.]
 - **EN:** — 4) "to concern, to be fitting for someone" (gen.) "to be becoming"; with infin.: *vaktuṃ nāyāti rājendra etayorniyamasthayoḥ . arvāṅniśīthāt*
 [MBH. 2,831.]
-  <sub>DCS 1239 · attested</sub>
+  <sub>attested</sub>
 
 **etymology/cross-ref)** — Vgl. *āyāta* fgg., *kramāyāta, mārgāyāta* . — caus. s. *āyāpana* .
 
 - **RU:** — Vgl. *āyāta* fgg., *kramāyāta, mārgāyāta* . — caus. s. *āyāpana* .
 - **EN:** — Vgl. *āyāta* fgg., *kramāyāta, mārgāyāta* . — caus. s. *āyāpana* .
-  <sub>DCS 1239 · attested</sub>
+  <sub>attested</sub>

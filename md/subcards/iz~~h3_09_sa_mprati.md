@@ -13,4 +13,4 @@
 
 - **RU:** — *saṃprati* соглашаться, давать согласие: *saṃpratīccha me*
 [R. 1,52,13.]
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>

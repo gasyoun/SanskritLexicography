@@ -9,4 +9,4 @@
 **ni_erlöschen)** 1. śam mit ni erlöschen, [Dharmaśarm. 13,41.] {part=,seq=25149,type=,n=2}
 
 - **RU:** 1. śam с ni: угасать, [Dharmaśarm. 13,41.] {part=,seq=25149,type=,n=2}
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>

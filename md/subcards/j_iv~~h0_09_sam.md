@@ -13,7 +13,7 @@
 - **EN:** — *sam*
  1) to live together: *mayā patyā saṃ jīva śaradaḥ śatam*
 [AV. 14,1,52.]
-  <sub>DCS 23 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) leben: *yasyai nikramaṇe ghṛtaṃ prajāḥ saṃjīvantīḥ pibanti*
 [TS. 1,7,2,4.]
@@ -40,7 +40,7 @@
 
 * saṃjīvedbāhmaṇo na vā*
 [MBH. 12,2917.]
-  <sub>DCS 23 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) zum Leben zurückkehren, wieder lebendig werden
 [ŚAT. BR. 3,8,2,27.] [9,4,2,17.]
@@ -94,10 +94,10 @@
 [RAGH. 12,74.] *mama vācamimāṃ prasuptāṃ saṃjīvayati*
 [BHĀG. P. 4,9,6.] to keep someone alive, nourish: *krītānnaḥ sa divārātraṃ prāṇinaḥ samajīvayat*
 [RĀJA. 2,28.]
-  <sub>DCS 23 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — Vgl. *saṃjīvana, saṃjijīvayiṣu* .
 
 - **RU:** — Vgl. *saṃjīvana, saṃjijīvayiṣu* .
 - **EN:** — Vgl. *saṃjīvana, saṃjijīvayiṣu*.
-  <sub>DCS 23 · attested</sub>
+  <sub>attested</sub>

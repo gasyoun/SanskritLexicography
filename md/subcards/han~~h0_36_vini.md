@@ -33,7 +33,7 @@
 [10,44,43.] to strike down: *mahāstrāṇi*
 [MBH. 6,2674.] uneig.: *manāṃsi naḥ*
 [12,395.]
-  <sub>DCS 222 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) erschlagen, erlegen, tödten
 [MBH. 1,525.] [2246.] [2837.] [2,867.] [4,364.]
@@ -51,7 +51,7 @@
 [HARIV. 13629.]
 [R. GORR. 2,28,8.] [5,78,6.] [6,30,38.]
 [KĀM. NĪTIS. 7,2. 15,37.] [Spr. (II) 1421.] [7092.] [BHĀG. P. 4,26,10.]
-  <sub>DCS 222 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) zerstören, zu Grunde richten, zu Nichte machen
 [VARĀH. BṚH. S. 4,13.] [6,10.] [33,22.] [39,5.] [104,59.] *tūstāni*
@@ -72,7 +72,7 @@
 [MBH. 3,12155.] *tṛṣṇām*
 [Spr. (II) 379.] *śleṣmāṇam*
 [1992], v. l.
-  <sub>DCS 222 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) partic. *˚hata*
 - **EN:** — 4) partic. *˚hata*
@@ -89,7 +89,7 @@
 - **EN:** a) struck down: *śakti*
 [MBH. 6,3678] (*˚hitā* [ed. Calc.]). struck, touched: *ulkayā śikhinā vāgastyaḥ*
 [VARĀH. BṚH. S. 12,21.]
-  <sub>DCS 222 · attested</sub>
+  <sub>attested</sub>
 
 **4b)** — b) erschlagen, getödtet, geschlachtet
 [MBH. 1,1474.] [3,2546.] [4,362.] [5,7095.] [15,368.]
@@ -116,7 +116,7 @@
 [Spr. (II) 3694.] [7419.]
 [MĀRK. P. 127,25.]
 [BHĀG. P. 6,9,54.] [7,2,1.]
-  <sub>DCS 222 · attested</sub>
+  <sub>attested</sub>
 
 **4c)** — c) zu Grunde gerichtet, zu Nichte gemacht: *˚ripuroga*
 [VARĀH. BṚH. S. 104,43.] *tamas*
@@ -131,4 +131,4 @@
 [VARĀH. BṚH. S. 104,43.] *tamas*
 [MBH. 1,85.] *ājñā* thus v. a. not followed, not obeyed
 [R. 5,21,11.]
-  <sub>DCS 222 · attested</sub>
+  <sub>attested</sub>

@@ -13,7 +13,7 @@ Z. 3 hinzuzufügen: (*ā*) *yeje*
 - **EN:** 1. *yaj*¦
 to be added to Z. 3: (*ā*) *yeje*
 [KĀŚ.] on [P. 6,4,120.]
-  <sub>DCS 6777 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — *anupra* med. verehren
 [ṚV. 6,36,2.]
@@ -22,4 +22,4 @@ to be added to Z. 3: (*ā*) *yeje*
 [ṚV. 6,36,2.]
 - **EN:** — *anupra* med. to worship
 [ṚV. 6,36,2.]
-  <sub>DCS 6777 · attested</sub>
+  <sub>attested</sub>

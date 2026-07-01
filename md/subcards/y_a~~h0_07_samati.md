@@ -10,4 +10,4 @@
 [R. 1,19,1.]
 - **EN:** — *samati* to elapse, to pass away (of time): *ṛtūnāṃ ṣaṭsamatyayuḥ*
 [R. 1,19,1.]
-  <sub>DCS 2 · attested</sub>
+  <sub>attested</sub>

@@ -221,7 +221,7 @@
 [8297.] [4,397] (med.).
 [5,1880.] [R. 5,87,10.] [ṚT. 1,4.] [RAGH. 7,45.] [MEGH. 54.] ad [18.] [Spr. (II) 2723.] [(I) 2940.] [RĀJA-TAR. 4,125.] [BHĀG. P. 7,9,25.]Inschr. in [Journ. of the Am. Or. S. 7,25, Śl. 3.] *aśamitanakha* so v. a. not kept in order, neglected
 [MEGH. 89], v. l. for *aniyamitanakha* .
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 **caus.1b)** — b) euphemistisch so v. a. zum Tode bringen; Jmd aus dem Wege räumen, unschädlich machen, vernichten: *prajāṃ paśūn*
 [TS. 3,1,3,2.] *vainateyaśamitasya bhoginaḥ*
@@ -263,7 +263,7 @@
 *saṃgrāme lalāṭaṃtapaṃ ravim*
 [BHAṬṬ. 6,99.] *prācīm* to submit oneself
 [KATHĀS. 19,89.]
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 **caus.1c)** — c) sich beruhigen so v. a. abstehen von Etwas
 [MBH. 1,7023.]
@@ -272,7 +272,7 @@
 [MBH. 1,7023.]
 - **EN:** — c) to calm oneself, so v. a. to desist from something
 [MBH. 1,7023.]
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 **caus.2)** — 2) *śāmayati* (
 [VOP. 18,24]) aus metrischen Rücksichten: *droṇāstram — aśāmayat* (am Ende eines Śloka)
@@ -293,7 +293,7 @@
 [9,633.] pass. *śāmyatām*
 [R. 5,41,4.]
 [MĀRK. P. 114,33] in the Bed. be removed from the way, be rendered harmless perhaps erroneous for *śamyatām* .
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>
 
 **1)** 1) *śamayati* (hier und da auch med. aus metrischen Rücksichten)
 [DHĀTUP. 19,70.]
@@ -312,4 +312,4 @@
 [VOP. 24,5.] partic. *śamita* (по
 [P. 7,2,27.]
 [VOP. 26,114] и лексикографам, якобы также *śānta*).
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>

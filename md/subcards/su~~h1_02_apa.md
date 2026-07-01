@@ -25,4 +25,4 @@
 [100,8.] *yattatraino apa tatsuvāmi*
 [AV. 6,119,3.]
 [VS. 35,11.]
-  <sub>DCS 14088 · attested</sub>
+  <sub>attested</sub>

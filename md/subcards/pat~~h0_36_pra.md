@@ -100,7 +100,7 @@
 [MBH. 6,1978.] [4350.] [HARIV. 13502.] [R. 1,9,15] ([14] [GORR.]). [3,26,24.] [PAÑCAT. 120,11.] [BHĀG. P. 6,14,49.] [SADDH. P. 4,16,a.] *unnataḥ prapatati*
 [Spr. 568.] to fall into so v. a. to get into: *durjanavāgrase prapatitaḥ*
 [Spr. 754], v. l.
-  <sub>DCS 189 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) einer Sache (abl.) verlustig gehen: *prapatedyaśaso dīptāt*
 [MBH. 14,2737.]
@@ -109,7 +109,7 @@
 [MBH. 14,2737.]
 - **EN:** — 2) to be deprived of, lose (abl.): *prapatedyaśaso dīptāt*
 [MBH. 14,2737.]
-  <sub>DCS 189 · attested</sub>
+  <sub>attested</sub>
 
 **caus)** — Vgl. *prapatana, prapāta* . — caus. davonfliegen machen
 [AV. 19,50,4.]
@@ -141,4 +141,4 @@
 [13,2047.] — desid. желать умчаться: *preva pipatiṣati manasā muhurā vartate punaḥ*
 [AV. 12,2,52.] — intens. выскакивать, стрелой вырываться: *adha jihvā pāpatīti pra vṛṣṇo goṣuyudho nāśaniḥ sṛjānā*
 [ṚV. 6,6,5.]
-  <sub>DCS 189 · attested</sub>
+  <sub>attested</sub>

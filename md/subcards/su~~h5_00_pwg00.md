@@ -37,7 +37,7 @@ on [P. 1,4,57.] [VOP. 1,8.] treat of the euphonic changes of the word (*ṣu, �
 [H. 1535], Schol. [MED.] *bhṛśa, anumati, kṛcchra, samṛddhi*
 [MED.] *anāyāsa*
 [BHAR.] on [AK.] according to [ŚKDR.]
-  <sub>DCS 14088 · lexicographic</sub>
+  <sub>lexicographic</sub>
 
 **6.1)** 1) selbständig; nie am Versanfang; im
 [AV.] selten und meist in Verbindung mit *u*.* u ṣu*
@@ -202,7 +202,7 @@ on [P. 1,4,57.] [VOP. 1,8.] treat of the euphonic changes of the word (*ṣu, �
 [176,1.] *cintya* and *vicārya*
 [Spr. (II) 7100.] *snātvā*
 [WEBER, KṚṢṆAJ. 291.]
-  <sub>DCS 14088 · attested</sub>
+  <sub>attested</sub>
 
 **6.2)** — 2) am Anfange eines comp. vor Adjectiven und Substantiven (über solche compp. handelt
 [P. 1,4,94.] [2,1,6.] [5,4,69.] [6,2,117. fgg.] [145.] [172. fgg.] [195.] [7,1,68.] [8,1,67. fg.] Vārtt. 4 zu [1,4,60.] Vārtt. 1 der [SAUNĀGA] zu [2,2,18.] [VOP. 6,88]). *svalaṃkṛta* schön geschmückt
@@ -268,4 +268,4 @@ leicht auszuführen, *sulabha* (s. d.) leicht zu erlangen, *susaṃtoṣa* (s. d
 [M. 7,31.] *sulalāṭa* "having a beautiful forehead"
 [R. 1,1,12.] *sukara* (s. d.) 
 "easy to carry out", *sulabha* (s. d.) "easy to obtain", *susaṃtoṣa* (s. d.) "easy to satisfy." — *su* stands to the demonstrative *sa* probably as *ku* to the interrogative *ka*. Vgl. *sutarām*.
-  <sub>DCS 14088 · attested</sub>
+  <sub>attested</sub>

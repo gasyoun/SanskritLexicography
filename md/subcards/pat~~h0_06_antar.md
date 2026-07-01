@@ -7,4 +7,4 @@
 
 - **RU:** — *antar* s. *antaḥpāta, antaḥpātya* .
 - **EN:** — *antar* s. *antaḥpāta, antaḥpātya* .
-  <sub>DCS 3124 · attested</sub>
+  <sub>attested</sub>

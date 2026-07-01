@@ -72,14 +72,14 @@ Schol. under [P. 6,4,73] and [SIDDH. K. 222,a] here, but can readily be referred
 [ṚV. 8,3,10.]
 [VS. 23,15.] *cakṣuṣā cana saṃnaśe*
 [VĀLAKH. 6,5.]
-  <sub>DCS 1422 · attested</sub>
+  <sub>attested</sub>
 
 **2 (upa-))** — *accha* herbeikommen: *acchā nakṣi dyumattamaṃ rayiṃ dāḥ*
 [ṚV. 5,24,2.]
 
 - **RU:** — *accha* приходить, являться: *acchā nakṣi dyumattamaṃ rayiṃ dāḥ*
 [ṚV. 5,24,2.]
-  <sub>DCS 1422 · attested</sub>
+  <sub>attested</sub>
 
 **3 (abhi-))** — *abhi* erreichen, erlangen, treffen: *naśadabhi draviṇaṃ dīdhyānaḥ*
 [ṚV. 4,23,4.] *mā no dīrghā abhi naśantamisrāḥ*
@@ -90,21 +90,21 @@ Schol. under [P. 6,4,73] and [SIDDH. K. 222,a] here, but can readily be referred
 [ṚV. 4,23,4.] *mā no dīrghā abhi naśantamisrāḥ*
 [2,27,14.] *mā no rakṣo abhi naḍyātumāvatām*
 [7,104,23.] [8,20,16.]
-  <sub>DCS 1422 · attested</sub>
+  <sub>attested</sub>
 
 **4 (pari-))** — *ud* erreichen: *uttaraṃ sumnamunnaśam*
 [ṚV. 2,23,8.] [1,164,22.]
 
 - **RU:** — *ud* достигать: *uttaraṃ sumnamunnaśam*
 [ṚV. 2,23,8.] [1,164,22.]
-  <sub>DCS 1422 · attested</sub>
+  <sub>attested</sub>
 
 **5 (sam-))** — *pari* dass.: *nahi te antaḥ śavasaḥ parīṇaśe*
 [ṚV. 1,54,1.]
 
 - **RU:** — *pari* dass.: *nahi te antaḥ śavasaḥ parīṇaśe*
 [ṚV. 1,54,1.]
-  <sub>DCS 1422 · attested</sub>
+  <sub>attested</sub>
 
 **6 (ā-))** — *pra* erreichen, treffen: *pra tamindra naśīmahi rayim*
 [ṚV. 8,6,9.] *pra vaḥ sa dhītaye naśat*
@@ -123,7 +123,7 @@ Schol. under [P. 6,4,73] and [SIDDH. K. 222,a] here, but can readily be referred
 *mā vo durmatiriha pra ṇaṅnaḥ*
 [ṚV. 7,56,9.] [94,8.] *mā pra ṇaktasya no vadhaḥ*
 [2,23,12.] [1,18,3.]
-  <sub>DCS 1422 · attested</sub>
+  <sub>attested</sub>
 
 **7 (pra-))** — *vi* erreichen: *āpaścidasya vi naśantyartham*
 [ṚV. 10,27,20.] *āmāsu pūrṣu paro apramṛṣyaṃ nārātayo vi naśannānṛtāni*
@@ -132,7 +132,7 @@ Schol. under [P. 6,4,73] and [SIDDH. K. 222,a] here, but can readily be referred
 - **RU:** — *vi* достигать: *āpaścidasya vi naśantyartham*
 [ṚV. 10,27,20.] *āmāsu pūrṣu paro apramṛṣyaṃ nārātayo vi naśannānṛtāni*
 [2,35,6.]
-  <sub>DCS 1422 · attested</sub>
+  <sub>attested</sub>
 
 **8 (vi-))** — *sam* dass.: *so asya mahimā na saṃnaśe*
 [ṚV. 8,3,10.]
@@ -143,4 +143,4 @@ Schol. under [P. 6,4,73] and [SIDDH. K. 222,a] here, but can readily be referred
 [ṚV. 8,3,10.]
 [VS. 23,15.] *cakṣuṣā cana saṃnaśe*
 [VĀLAKH. 6,5.]
-  <sub>DCS 1422 · attested</sub>
+  <sub>attested</sub>

@@ -10,4 +10,4 @@
 [KAUŚ. 76.]
 - **EN:** — *nis* to stride out, go forth
 [KAUŚ. 76.]
-  <sub>DCS 1202 · attested</sub>
+  <sub>attested</sub>

@@ -10,4 +10,4 @@
 [BHAṬṬ. 8,90.]
 - **EN:** — *adhi* to escape: *kuto 'dhiyāsyasi krūra nihatastena pattribhiḥ*
 [BHAṬṬ. 8,90.]
-  <sub>DCS 5678 · attested</sub>
+  <sub>attested</sub>

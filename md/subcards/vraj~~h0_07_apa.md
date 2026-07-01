@@ -10,4 +10,4 @@
 [ĀŚV. ŚR. 8,13,11.]
 - **EN:** — *apa* to go away
 [ĀŚV. ŚR. 8,13,11.]
-  <sub>DCS 1202 · attested</sub>
+  <sub>attested</sub>

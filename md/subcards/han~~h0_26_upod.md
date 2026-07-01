@@ -11,4 +11,4 @@
 
 wishing to illustrate by an example
 [ŚAṂK.] for [BṚH. ĀR. UP. S. 195.]
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>

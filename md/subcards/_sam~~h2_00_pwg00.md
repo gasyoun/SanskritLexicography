@@ -19,4 +19,4 @@
 [NIR. 1,10] (= *hinasti* D.). To cause someone harm: *mā naḥ śamnīthāḥ kathā naḥ śamnīṣa iti*
 [KĀṬH. 10,7.]
 — Vgl. 2. *śam* caus. 1) b}).
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>

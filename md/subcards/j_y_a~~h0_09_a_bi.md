@@ -33,6 +33,37 @@
 [BENF. Chr. 15,5.] *ahamakṣeṣvabhijñātaḥ pṛthivyāmapi . hṛdayajñaḥ* bekannt als
 [MBH. 2,1763.] *māmabhijānāsi — mithyāpralāpinam* halten für
 [1,3337.]
+
+- **RU:** — *abhi*
+ 1) познавать, узнавать; замечать, воспринимать; знать, ведать: *nābhyajānannalam*
+[MBH. 3,2201.] [2212.]
+[R. 3,68,42.] [4,5,10] [12,29.] *rāmo yadabhijānīyādabhijñānaṃ prayaccha me*
+[5,36,9.] [BHĀG. P. 1,4,33.] *sa tā giraḥ — nābhyajānata*
+[MBH. 18,64.] *prahārānnābhijānāti yo 'ṅgacchedamathāpi vā*
+[SUŚR. 1,113,3.] *tadabhijñāya*
+[BHĀG. P. 4,19,26.] *asurebhyaḥ — bhayaṃ yo nābhijānāti*
+[R. 6,94,15.] *mālyagandhānalaṃkārānvastrāṇi vividhāni ca . etānyevābhijānāti* разбираться в чём-л., смыслить в чём-л.
+[MBH. 4,76.] *utthānamabhijānanti sarvabhūtāni*
+[3,1207.] *bhavānimamindradyumnaṃ rājānamabhijānāti*
+[13339.] *buddhvābhijānāmi — na mādṛśī tvāmabhibhāṣṭumarhati*
+[15603.] *ahaṃ hi nābhijānāmi bhavedevaṃ na veti vā*
+[2821.] *kimetannābhijānīmaḥ*
+[HARIV. 9618.] *bhaktyā māmabhijānāti yāvānyaścāsmi tattvataḥ*
+[BHAG. 18,55.] *iti māṃ yo 'bhijānāti*
+[4,14.] *nābhijānāti māmebhyaḥ param*
+[7,13.] *abhijñāya sudevaṃ tam* после того как он в нём Sudeva узнал (признал)
+[MBH. 3,2684.] *tatra no nābhijānīyurvasato manujāḥ kvacit*
+[17433.] *nābhijajñe sa nṛpatirduhitrarthe samāgatam*
+[2875.] *sa āgacchanneva svapatirityabhijñātaḥ*
+[ŚUK. 45,4.] *iha tvāṃ nābhijānāti bālamevāpavāhitam* он не знает, что ты здесь,
+[HARIV. 9237.] *ahaṃ tamabhijānāmi hṛtaṃ śyenena mūṣikam* я знаю, что он был похищен,
+[MBH. 1,8396.] *atithiṃ samanuprāptamabhijānantu*
+[13,1447.] *sairiṃdhrīmabhijānīṣva — devarūpiṇīm*
+
+[3,2604.] [2684.] [16757.] *nābhijānāti me — śālvagataṃ manaḥ*
+[BENF. Chr. 15,5.] *ahamakṣeṣvabhijñātaḥ pṛthivyāmapi . hṛdayajñaḥ* известный как
+[MBH. 2,1763.] *māmabhijānāsi — mithyāpralāpinam* считать за, принимать за
+[1,3337.]
 - **EN:** — *abhi*
  1) to recognize; to notice, perceive; to know, be aware of: *nābhyajānannalam*
 [MBH. 3,2201.] [2212.]
@@ -63,20 +94,34 @@
 [BENF. Chr. 15,5.] *ahamakṣeṣvabhijñātaḥ pṛthivyāmapi . hṛdayajñaḥ* known as
 [MBH. 2,1763.] *māmabhijānāsi — mithyāpralāpinam* to hold to be
 [1,3337.]
+  <sub>attested</sub>
 
 **2)** — 2) anerkennen, gutheissen, einräumen, zugeben: *yadannaṃ nābhijānāti yadbhojyaṃ nābhinandati tatsarvaṃ varjayāmyaham*
 [MBH. 13,5871.] *śubhaṃ vā yadi vā pāpaṃ yena vākyamudīritam . satyamityabhijānāti sa loke puruṣottamaḥ ..*
 [R. 4,30,12.] *evamuktastu rājā sa tathyamityabhijajñavān*
 [MBH. 1,3420.] *na putramabhijānāmi tvayi jātam* ich erkenne das von dir geborene Kind nicht als meinen Sohn an
 [3060.]
+
+- **RU:** — 2) признавать, одобрять, допускать, соглашаться: *yadannaṃ nābhijānāti yadbhojyaṃ nābhinandati tatsarvaṃ varjayāmyaham*
+[MBH. 13,5871.] *śubhaṃ vā yadi vā pāpaṃ yena vākyamudīritam . satyamityabhijānāti sa loke puruṣottamaḥ ..*
+[R. 4,30,12.] *evamuktastu rājā sa tathyamityabhijajñavān*
+[MBH. 1,3420.] *na putramabhijānāmi tvayi jātam* я не признаю рождённое тобою дитя своим сыном
+[3060.]
 - **EN:** — 2) to acknowledge, approve, concede, admit: *yadannaṃ nābhijānāti yadbhojyaṃ nābhinandati tatsarvaṃ varjayāmyaham*
 [MBH. 13,5871.] *śubhaṃ vā yadi vā pāpaṃ yena vākyamudīritam . satyamityabhijānāti sa loke puruṣottamaḥ ..*
 [R. 4,30,12.] *evamuktastu rājā sa tathyamityabhijajñavān*
 [MBH. 1,3420.] *na putramabhijānāmi tvayi jātam* I do not acknowledge the child born of you as my son
 [3060.]
+  <sub>attested</sub>
 
 **3)** — 3) sich erinnern dass; mit blossem fut. st. des imperf., oder mit *yad* und imperf.; wenn die Erinnerung sich auf zwei mit einander in Verbindung stehende Ereignisse erstreckt, kann sowohl mit als ohne *yad* imperf. oder fut. stehen.
 [P. 3,2,112] — [114.] *abhijānāsi devadatta kāśmīreṣu vatsyāmaḥ . abhijānāsi devadatta yatkāśmīreṣvavasāma . abhijānāsi devadatta (yat) kāśmīreṣu vatsyāmastatraudanaṃ bhokṣyāmahe* (oder *avasāma* und *abhuñjmahi*)
+Sch. *saṃbhaviṣyāva ekasyāmabhijānāsi mātari*
+[BHAṬṬ. 6,138.] *avasāva najendreṣu yatpāsyāvo madhūni ca . abhijānīhi tatsarvam*
+[139.]
+
+- **RU:** — 3) вспоминать, что; с простым fut. st. imperf., или с *yad* и imperf.; если воспоминание относится к двум взаимосвязанным событиям, может стоять как с *yad* imperf. или fut., так и без него.
+[P. 3,2,112] — [114.] *abhijānāsi devadatta kāśmīreṣu vatsyāmaḥ . abhijānāsi devadatta yatkāśmīreṣvavasāma . abhijānāsi devadatta (yat) kāśmīreṣu vatsyāmastatraudanaṃ bhokṣyāmahe* (или *avasāma* и *abhuñjmahi*)
 Sch. *saṃbhaviṣyāva ekasyāmabhijānāsi mātari*
 [BHAṬṬ. 6,138.] *avasāva najendreṣu yatpāsyāvo madhūni ca . abhijānīhi tatsarvam*
 [139.]
@@ -85,6 +130,10 @@ Sch. *saṃbhaviṣyāva ekasyāmabhijānāsi mātari*
 Sch. *saṃbhaviṣyāva ekasyāmabhijānāsi mātari*
 [BHAṬṬ. 6,138.] *avasāva najendreṣu yatpāsyāvo madhūni ca . abhijānīhi tatsarvam*
 [139.]
+  <sub>attested</sub>
 
 **4)** — Vgl. *abhijña* fg.
+
+- **RU:** — Vgl. *abhijña* fg.
 - **EN:** — Vgl. *abhijña* fg.
+  <sub>attested</sub>

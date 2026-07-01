@@ -12,43 +12,43 @@
 - **RU:** **1.** √*chid*¦, *chinatti, chintte* (*chindet* [KṢURIKOP. 14. 19])
 — 1〉 срезать, -рубать, -бивать, -рывать, -грызать, -кусывать, разрезать, -рубать, -рывать, раскалывать, пробуравливать. *saṃdhim* пробить отверстие в стене. Pass. разломать, разорвать (intrans.). *chinna* отрезанный u. s. w.; разорванный, -резанный; надрезанный, d. h. снабжённый перетяжками [217,6].
 - **EN:** — 1〉 to cut off, hew off, strike off, tear off, gnaw off, bite off, cut through, hew through, tear through, split, pierce. *saṃdhim* to make a hole in the wall. Pass. to break, to tear (intrans.). *chinna* cut off u. s. w.; torn open, cut open; incised, d. h. provided with notches/constrictions [217,6].
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2〉 scheiden, trennen, — von (Abl., ausnahmsweise Instr.). *chinna* unterbrochen, nicht zusammenhängend. *˚chinna* auch begrenzt —, eingeschlossen von [Spr. 1229].
 
 - **RU:** — 2〉 разлучать, отделять, — от (Abl., исключительно Instr.). *chinna* прерванный, не связный. *˚chinna* также ограниченный —, замкнутый [Spr. 1229].
 - **EN:** — 2〉 to separate, to sever, — from (Abl., exceptionally Instr.). *chinna* interrupted, not continuous. *˚chinna* also bounded by, enclosed by [Spr. 1229].
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3〉 ablösen, -sondern, herausnehmen.
 
 - **RU:** — 3〉 отделять, обособлять, извлекать.
 - **EN:** — 3〉 to detach, to separate out, to extract.
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4〉 unterbrechen, stören.
 
 - **RU:** — 4〉 прерывать, нарушать.
 - **EN:** — 4〉 to interrupt, to disturb.
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **5)** — 5〉 vernichten, zu Grunde richten, zerstören, entfernen. *ṛṇam* so v. a. eine Schuld tilgen. Pass. verschwinden [287,26]. *chinna* verschwunden, nicht mehr da seiend. *kiṃ naśchinnam* so v. a. was büssen wir dabei ein? was machen wir uns daraus?
 
 - **RU:** — 5〉 уничтожать, губить, разрушать, устранять. *ṛṇam* так v. a. уплатить долг. Pass. исчезать [287,26]. *chinna* исчезнувший, более не существующий. *kiṃ naśchinnam* так v. a. что мы при этом теряем? что нам до этого?
 - **EN:** — 5〉 to annihilate, to ruin, to destroy, to remove. *ṛṇam* so v. a. to discharge a debt. Pass. to disappear [287,26]. *chinna* vanished, no longer present. *kiṃ naśchinnam* so v. a. what do we forfeit thereby? what do we care about it?
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **6)** — 6〉 theilen, dividiren.
 
 - **RU:** — 6〉 делить, производить деление.
 - **EN:** — 6〉 to divide, to divide (arithmetically).
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **7)** — 7〉 **chinna* am Ende eines Comp. herabgekommen —, entkräftet —, ermüdet durch oder von.
 
 - **RU:** — 7〉 **chinna* в конце Comp. павший —, обессиленный —, утомлённый от чего-л. или чем-л.
 - **EN:** — 7〉 **chinna* at the end of a Comp. reduced by, weakened by, exhausted by or from.
-  <sub>DCS 2209 · lexicographic</sub>
+  <sub>lexicographic</sub>
 
 **caus-header)** — Caus. *chedayati*
 - **EN:** — Caus. *chedayati*
@@ -63,37 +63,37 @@
 
 - **RU:** — Desid. в *cicchitsu*.
 - **EN:** — Desid. in *cicchitsu*.
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **intens-header)** — *Intens. *cecchidīti* und *cecchidyate*.
 
 - **RU:** — *Intens. *cecchidīti* и *cecchidyate*.
 - **EN:** — *Intens. *cecchidīti* and *cecchidyate*.
-  <sub>DCS 2209 · lexicographic</sub>
+  <sub>lexicographic</sub>
 
 **ati)** — Mit *ati*, *˚cchinna* zu stark aufgeschnitten [SUŚR. 2,19,1]. zu stark zerhauen, — verwundet [MBH. 12,96,15].
 
 - **RU:** — Mit *ati*, *˚cchinna* чрезмерно надрезанный [SUŚR. 2,19,1]. чрезмерно изрубленный, — израненный [MBH. 12,96,15].
 - **EN:** — With *ati*, *˚cchinna* cut too deeply [SUŚR. 2,19,1]. too deeply hewn, — wounded [MBH. 12,96,15].
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **ava)** — Mit *antar* abschneiden, intercludere [28,7].
 
 - **RU:** — Mit *antar* срезать, отрезать (intercludere) [28,7].
 - **EN:** — With *antar* to cut off, intercludere [28,7].
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **apa)** — Mit *apa* abspalten, abtrennen.
 
 - **RU:** — Mit *apa* откалывать, отделять.
 - **EN:** — With *apa* to split off, to sever.
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **abhi)** — Mit *samapa* abschneiden [ŚULBAS. 3,72].
 
 - **RU:** — Mit *samapa* срезать [ŚULBAS. 3,72].
 - **EN:** — With *samapa* to cut off [ŚULBAS. 3,72].
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **apa2)** — Mit *ava* Jmd von sich weisen, zurückstossen [KĀD. 2,87,8]. Pass. getrennt —, geschieden werden von (Abl.). — *avacchinna*
 - **EN:** — With *ava* to repel someone from oneself, to push away [KĀD. 2,87,8]. Pass. to become separated, divided from (Abl.). — *avacchinna*
@@ -111,7 +111,7 @@
 
 - **RU:** — Mit *paryava* отделять со всех сторон.
 - **EN:** — With *paryava* to sever on all sides.
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **pra-header)** — Mit *vyava*
 - **EN:** — With *vyava*
@@ -162,19 +162,19 @@
 
 - **RU:** — Mit *avā* вырывать из (Abl.).
 - **EN:** — With *avā* to wrest out of (Abl.).
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **upa)** — Mit *upā* mit sich fortziehen, entreissen.
 
 - **RU:** — Mit *upā* увлекать за собой, вырывать.
 - **EN:** — With *upā* to drag away with oneself, to wrest away.
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **sam-header)** — Mit *samā* dass.
 
 - **RU:** — Mit *samā* dass.
 - **EN:** — With *samā* dass.
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **ni-header)** — Mit *ud*
 - **EN:** — With *ud*
@@ -192,13 +192,13 @@
 
 - **RU:** — Caus. искоренять, уничтожать или заставлять уничтожать.
 - **EN:** — Caus. to extirpate, to annihilate or to cause to be annihilated.
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **prati)** — Mit *vyud* Pass. mit den Personalendungen des Act. zu Nichte werden, eine Unterbrechung erleiden, aufhören. *vyucchinna* zu Ende gegangen.
 
 - **RU:** — Mit *vyud* Pass. с личными окончаниями Act. сводиться к нулю, подвергаться перерыву, прекращаться. *vyucchinna* завершившийся.
 - **EN:** — With *vyud* Pass. with the personal endings of the Act. to come to nothing, to suffer an interruption, to cease. *vyucchinna* come to an end.
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **ud2-header)** — Mit *samud*
 - **EN:** — With *samud*
@@ -225,7 +225,7 @@
 
 - **RU:** — Mit *vipari* обрезать со всех сторон, подрезать, разрезать.
 - **EN:** — With *vipari* to cut off on all sides, to trim, to cut through.
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **vi2-header)** — Mit *pra*
 - **EN:** — With *pra*
@@ -243,13 +243,13 @@
 
 - **RU:** — *Caus. от Intens. *pracecchidayya*.
 - **EN:** — *Caus. from Intens. *pracecchidayya*.
-  <sub>DCS 2209 · lexicographic</sub>
+  <sub>lexicographic</sub>
 
 **ni2)** — Mit *saṃpra* zerschneiden, -hauen, spalten.
 
 - **RU:** — Mit *saṃpra* разрезать, -рубать, раскалывать.
 - **EN:** — With *saṃpra* to cut apart, to hew apart, to split.
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **ava2-header)** — Mit *prati*
 - **EN:** — With *prati*
@@ -308,13 +308,13 @@
 
 - **RU:** — b〉 губящий, уничтожающий, устраняющий.
 - **EN:** — b〉 ruining, annihilating, removing.
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **2-2)** — 2〉 _m._ Divisor, Nenner eines Bruchs.
 
 - **RU:** — 2〉 _m._ делитель, знаменатель дроби.
 - **EN:** — 2〉 _m._ divisor, denominator of a fraction.
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **2-3a)** — 3〉 _f._
 — a〉 das Abschneiden, Abhauen. *śirasām* [BĀLAR. 249,12].
@@ -323,25 +323,25 @@
 — a〉 срезание, срубание. *śirasām* [BĀLAR. 249,12].
 - **EN:** — 3〉 _f._
 — a〉 the cutting off, the hewing off. *śirasām* [BĀLAR. 249,12].
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **2-3b)** — b〉 am Ende eines Comp. das zu Nichte Machen.
 
 - **RU:** — b〉 в конце Comp. уничтожение.
 - **EN:** — b〉 at the end of a Comp. the annihilation.
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **vipra)** √*chid*¦ mit *vipra* trennen [ĀPAST. ŚR. 10,15,12]. [19,14].
 
 - **RU:** √*chid*¦ mit *vipra* разлучать, отделять [ĀPAST. ŚR. 10,15,12]. [19,14].
 - **EN:** √*chid*¦ with *vipra* to separate [ĀPAST. ŚR. 10,15,12]. [19,14].
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **1)** **1.** √*chid*¦, *chindatprāṇi* (Nomin.) ein grasfressendes Thier [ĀPAST. ŚR. 9,13,1]. [16,8].
 
 - **RU:** **1.** √*chid*¦, *chindatprāṇi* (Nomin.) травоядное животное [ĀPAST. ŚR. 9,13,1]. [16,8].
 - **EN:** **1.** √*chid*¦, *chindatprāṇi* (Nomin.) a grass-eating animal [ĀPAST. ŚR. 9,13,1]. [16,8].
-  <sub>DCS 2209 · lexicographic</sub>
+  <sub>lexicographic</sub>
 
 **II-6)** **1.** √*chid*¦ II. 6. Auch lösen, entscheiden (einen Zweifel) [MBH. 1,71,17].
 — Mit *vipra* 4.
@@ -350,7 +350,7 @@
 — Mit *vipra* 4.
 - **EN:** **1.** √*chid*¦ II. 6. Also to resolve, to decide (a doubt) [MBH. 1,71,17].
 — With *vipra* 4.
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **Kaus.)** — Caus. *chedayati*
 — 1〉 abschneiden —, abhauen —, zerhauen lassen.
@@ -359,7 +359,7 @@
 - **RU:** — Caus. *chedayati*
 — 1〉 велеть срезать —, срубать —, разрубать.
 — 2〉 срезать, срубать.
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **Mit upa)** — Mit *ava* Jmd von sich weisen, zurückstossen [KĀD. 2,87,8]. Pass. getrennt —, geschieden werden von (Abl.). — *avacchinna*
 — 1〉 unterbrochen.
@@ -370,7 +370,7 @@
 — 1〉 прерванный.
 — 2〉 ограниченный —, замкнутый (предшествующим в Comp.) [260,30]. [261,5].
 — 3〉 определённый, точно установленный, понятийно определённый.
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **Mit pra)** — Mit *vyava*
 — 1〉 abschneiden.
@@ -387,7 +387,7 @@
 — 4〉 прерывать.
 — 5〉 разграничивать, точно определять [BHĀG. P. 4,29,45].
 — 6〉 решаться на (*prati*).
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **Mit vi)** — Mit *ā*
 — 1〉 abreissen, -schneiden, zerschneiden, -brechen.
@@ -406,7 +406,7 @@
 — 5〉 прерывать.
 — 6〉 удалять, уничтожать.
 — 7〉 не замечать, не принимать во внимание.
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **Mit prati + vi / vi + prati)** — Mit *ud*
 — 1〉 ausschneiden, abschneiden, — von (Abl.) [AV. PAIPP. 20,2,2].
@@ -417,7 +417,7 @@
 — 1〉 вырезать, срезать, — от (Abl.) [AV. PAIPP. 20,2,2].
 — 2〉 искоренять, губить, уничтожать, готовить кому-л. гибель. *ucchinna* о человеке — v. a. погибший, жалкий.
 — 3〉 вмешиваться, нарушая что-л., препятствовать, прерывать. Pass. быть остановленным —, прерванным, прекращаться, иссякать, недоставать.
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **Mit vi + pra)** — Mit *samud*
 — 1〉 ausreissen, zerreissen.
@@ -426,7 +426,7 @@
 - **RU:** — Mit *samud*
 — 1〉 вырывать, разрывать.
 — 2〉 искоренять, уничтожать, сводить к нулю. *samucchinna* утраченный.
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **Mit sam + vi)** — Mit *pari*
 — 1〉 auf beiden Seiten abschneiden, beschneiden; — Getraide schneiden [KĀRAṆḌ. 71,7].
@@ -437,7 +437,7 @@
 — 1〉 обрезать с обеих сторон, подрезать; — злаки жать [KĀRAṆḌ. 71,7].
 — 2〉 разграничивать со всех сторон, точно определять, — обозначать, верно оценивать, удостоверяться в чём-л. *paricchinna* ограниченный.
 — 3〉 *paricchinna* расщеплённый, поэтому v. a. многообразно являющийся.
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **Mit pra + sam)** — Mit *pra*
 — 1〉 abreissen, -schneiden, zerschneiden, -hauen, spalten, durchbohren.
@@ -448,7 +448,7 @@
 — 1〉 обрывать, -резать, разрезать, -рубать, раскалывать, пробуравливать.
 — 2〉 вырывать, отнимать.
 — Caus. велеть срезать.
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **Mit ud + sam)** — Mit *prati*
 — 1〉 abreissen, -schneiden.
@@ -457,7 +457,7 @@
 - **RU:** — Mit *prati*
 — 1〉 обрывать, -резать.
 — 2〉 рубя, раскалывая u. s. w. отвечать кому-л. (Acc.).
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **Mit vi + ud)** — Mit *vi*
 — 1〉 zerreissen, -brechen, spalten.
@@ -478,7 +478,7 @@
 — 6〉 *vicchinna*
 — a〉 *кривой.
 — b〉 *умащённый (*samālabdha*).
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **Mit ā + vi + ud)** — Mit *sam*
 — 1〉 abschneiden, -hauen, zerschneiden, spalten, durchbohren. *saṃchidyantau* (v. l. *saṃchindantau*) *ca gātrāṇi* sich gegenseitig Glieder abhauend.
@@ -487,7 +487,7 @@
 - **RU:** — Mit *sam*
 — 1〉 срезать, -рубать, разрезать, раскалывать, пробуравливать. *saṃchidyantau* (v. l. *saṃchindantau*) *ca gātrāṇi* взаимно отрубая члены.
 — 2〉 разрешать (сомнение), решать (вопрос).
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **1a)** **2.** *chid*¦
 — 1〉 _Adj._ am Ende eines Comp.
@@ -496,4 +496,4 @@
 - **RU:** **2.** *chid*¦
 — 1〉 _Adj._ в конце Comp.
 — a〉 срезающий, разрезающий, -ламывающий, -рывающий, раскалывающий, пробуравливающий.
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>

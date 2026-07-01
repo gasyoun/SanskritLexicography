@@ -10,4 +10,4 @@
 [ŚAT. BR. 7,3,2,1.] [2.]
 - **EN:** — *samava* caus. placare: *citiṃ samavaśamayanti*
 [ŚAT. BR. 7,3,2,1.] [2.]
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>

@@ -190,7 +190,7 @@
 [R. 1,4,15.]
 [BHĀG. P. 3,15,18.] *vākyāni mama gāthābhirgāyamānāḥ*
 [N. 24,22.] — *gīta*
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **PPP.1)** 1) _adj._ gesungen, in gebundener Rede verkündet, besungen
 [TRIK. 3,3,155.]
@@ -223,7 +223,7 @@
 [MBH.] in [BENF. Chr. 22,24.] [VARĀH. BṚH. S. 47,23.] *caturbhiryaḥ padairgīto maharṣiṇā — śokaḥ*
 [R. 1,2,43.]
 [ŚĀK. 47.]
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **PPP.2a)** — 2) _f._ *ā*
  a) (sc. *upaniṣad*) eine von einem inspirirten Weisen in gebundener Rede verkündete Lehre, s. *agastya˚, bhagavad˚, rāma˚, śiva˚*.
@@ -235,7 +235,7 @@
 - **EN:** — 2) _f._ *ā*
  a) (sc. *upaniṣad*) a teaching proclaimed in verse by an inspired sage, s. *agastya˚, bhagavad˚, rāma˚, śiva˚*.
 Under *gītā* the *bhagavadgītā* is meant by [PRAB. 104,13. 17. 105,8].
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **PPP.2b)** — b) N. eines Metrums (4 Mal ⏑ ⏑ – ⏑ – ⏑ ⏑ – ⏑ – ⏑ ⏑ – ⏑ – ⏑ ⏑ – ⏑ –)
 [COLEBR. Misc. Ess. II,163] ([XV,4]).
@@ -244,7 +244,7 @@ Under *gītā* the *bhagavadgītā* is meant by [PRAB. 104,13. 17. 105,8].
 [COLEBR. Misc. Ess. II,163] ([XV,4]).
 - **EN:** — b) N. name of a metre (4 times ⏑ ⏑ – ⏑ – ⏑ ⏑ – ⏑ – ⏑ ⏑ – ⏑ – ⏑ ⏑ – ⏑ –)
 [COLEBR. Misc. Ess. II,163] ([XV,4]).
-  <sub>DCS 1930 · lexicographic</sub>
+  <sub>lexicographic</sub>
 
 **PPP.3)** — 3) _n._ Gesang
 [AK. 1,1,6,4.]
@@ -337,4 +337,4 @@ Under *gītā* the *bhagavadgītā* is meant by [PRAB. 104,13. 17. 105,8].
 [VOP. 20,4.] *jegīyante sma gandharvāḥ*
 [MBH. 12,12200.] *jegīyate* pass.
 [VARĀH. BṚH. S. 19,18.]
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>

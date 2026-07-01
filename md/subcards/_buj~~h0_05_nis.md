@@ -28,4 +28,4 @@
 [1,99,2.] *nirbhugne netre* twisted eyes
 [2,402,11. 17.] *śmaśāne — nirbhugnasragvibhūṣite* bent
 [MBH. 13,6406.]
-  <sub>DCS 2938 · attested</sub>
+  <sub>attested</sub>

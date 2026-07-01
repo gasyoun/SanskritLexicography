@@ -13,4 +13,4 @@
 - **EN:** — *adhi* to lead away from (abl.): *mā naḥ pathaḥ pitryādadhi dūraṃ naiṣṭa*
 [ṚV. 8,30,3.] *yadasya manyuradhinīyamānaḥ śṛṇāti vīLu* led beyond the usual measure, heightened, surpassed
 [10,89,6.]
-  <sub>DCS 1 · attested</sub>
+  <sub>attested</sub>

@@ -10,4 +10,4 @@
 [AV. 18,4,50.]
 - **EN:** — *upasaṃparā* to lead away together to: *pitṛbhya upasaṃparāṇayādimān*
 [AV. 18,4,50.]
-  <sub>DCS 2376 · attested</sub>
+  <sub>attested</sub>

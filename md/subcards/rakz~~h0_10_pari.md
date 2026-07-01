@@ -97,10 +97,10 @@
 [HARIV. 6811.] to avoid
 [SUŚR. 2,15,12.] med. with gen. to avoid someone, to contrive that one does not meet with someone
 [R. 5,73,20.]
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>
 
 **caus)** — Vgl. *parirakṣaka* fgg.
 
 - **RU:** — Vgl. *parirakṣaka* fgg.
 - **EN:** — Vgl. *parirakṣaka* fgg.
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>

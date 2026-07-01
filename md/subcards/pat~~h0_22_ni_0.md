@@ -76,7 +76,7 @@
 [PRAB. 95,18.] *tato niśīthe sahasā nipatyaivodyatāyudhā . caurasenā sumahatī sārthaṃ veṣṭayati sma tam ..*
 [KATHĀS. 29,117.] to plunge into: *iha (saṃsāre) viṣayāmiṣalālasa mānasamārjāra mā nipata*
 [Spr. 1170.]
-  <sub>DCS 899 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) niederfallen, niederstürzen, umfallen, fallen: *himaṃ nipatati*
 [ṢAḌV. BR. 5,9.] [KAUŚ. 65. 83.] [VARĀH. BṚH. S. 27,c,8.] *aśaniḥ — nipatati*
@@ -172,7 +172,7 @@
 [MEGH. 83], v. l. *nipatanti dṛṣṭiviśikhā yāvannendīvarākṣīṇām*
 [PRAB. 7,4.] *tasmin — nipeturantaḥkaraṇairnarendrā dehaiḥ sthitāḥ kevalamāsaneṣu*
 [RAGH. 6,11.]
-  <sub>DCS 899 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) gerathen in: *(ākhuḥ) nipatito naktaṃ mukhe bhoginaḥ*
 [BHARTṚ. 2,82.] *eko bahūnāṃ mūrkhāṇaṃ madhye nipatito budhaḥ*
@@ -184,7 +184,7 @@
 - **EN:** — 3) to fall into, get into: *(ākhuḥ) nipatito naktaṃ mukhe bhoginaḥ*
 [BHARTṚ. 2,82.] *eko bahūnāṃ mūrkhāṇaṃ madhye nipatito budhaḥ*
 [KATHĀS. 32,56.]
-  <sub>DCS 899 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) sich einfügen, zu stehen kommen, seinen Platz erhalten: *nipātā uccāvaceṣvartheṣu nipatanti*
 [NIR. 1,4.] [11.] *sarvata evābhyarhitaṃ pūrvaṃ nipatati* zu [P. 2,2,34.]
@@ -193,7 +193,7 @@
 [NIR. 1,4.] [11.] *sarvata evābhyarhitaṃ pūrvaṃ nipatati* к [P. 2,2,34.]
 - **EN:** — 4) to fit in, come to stand, receive one's place: *nipātā uccāvaceṣvartheṣu nipatanti*
 [NIR. 1,4.] [11.] *sarvata evābhyarhitaṃ pūrvaṃ nipatati* zu [P. 2,2,34.]
-  <sub>DCS 899 · attested</sub>
+  <sub>attested</sub>
 
 **5)** — 5) einfallen, eintreffen, sich einstellen, eintreten
 [SUŚR. 1,5,9.] *tasminnipatite vyādhau*
@@ -217,7 +217,7 @@
 [Spr. 452.] *sakṛdaṃśo nipatati*
 [M. 9,47.] to fall to someone, so v. a. to fall to one's share: *kalikaluṣakṛtāni yāni loke mayi nipatantu vimucyatāṃ tu lokaḥ*
 [KUMĀRILA] bei [MÜLLER, SL. 80.]
-  <sub>DCS 899 · attested</sub>
+  <sub>attested</sub>
 
 **6)** — 6) zu Schanden werden, zu Nichte gehen: *mā te svako 'rtho nipateta mohāt*
 [MBH. 4,2126.] *ṛddhiṃ nipatitāmiva*
@@ -232,7 +232,7 @@
 [MBH. 4,2126.] *ṛddhiṃ nipatitāmiva*
 [R. 5,18,7.] *(sadma) sadyo nipatitānandam*
 [2,65,28.]
-  <sub>DCS 899 · attested</sub>
+  <sub>attested</sub>
 
 **caus1)** — Vgl. *nipatana, nipāta, nipātin* . — caus.
  1) niederfallen machen, herabwerfen, herabschleudern, fällen, umwerfen, werfen in, auf: *ni ṣīṃ vṛtrasya marmaṇi -vajramindro apīpatat*
@@ -322,4 +322,4 @@ v. a. to strike
 [MBH. 4,1325.] to discharge, so v. a. to spit out: *guḍena vardhitaḥ śleṣmā sukhaṃ vṛddhyā nipātyate*
 [Spr. 438.] (the gaze) to let fall, direct upon: *yadyeṣa mayi susnigdhāṃ dṛṣṭimadya nipātayet*
 [MĀRK. P. 61,41.]
-  <sub>DCS 899 · attested</sub>
+  <sub>attested</sub>

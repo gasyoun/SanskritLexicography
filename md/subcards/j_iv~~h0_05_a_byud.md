@@ -10,4 +10,4 @@
 [MBH. 5,4538.]
 - **EN:** *abhyud* 'to live as head, as protector of others': *svabāhubalamāśritya yo 'bhyujjīvati mānavaḥ . sa loke labhate kīrtiṃ paratra ca śubhāṃ gatim ..*
 [MBH. 5,4538.]
-  <sub>DCS 2223 · attested</sub>
+  <sub>attested</sub>

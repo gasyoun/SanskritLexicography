@@ -184,7 +184,7 @@
 [YOGAYĀTRĀ 2,22] in [Ind. St. 10,170.] [VARĀH. BṚH. S. 85,9.] of animals
 [86,16.] [R. 2,34,50.] [3,12,13.] [17,18.] [18,21.] [BRAHMA-P. in LA. (III) 52,17.] *˚rutaceṣṭita*
 [VARĀH. BṚH. S. 86,52.] Vgl. *praśama* fg. and *praśān* fgg.; to *praśām* is to be added the passage: *arurvai puruṣasyākṣi praśānmameti* sore is the man's eye, whole (painless) mine
-  <sub>DCS 323 · attested</sub>
+  <sub>attested</sub>
 
 **pra — caus./trans.)** [ŚAT. BR. 3,1,3,10.] — caus. beruhigen, beschwichtigen; stillen, aufhören machen, löschen: *sāntvena*
 [M. 8,391.]
@@ -272,7 +272,7 @@
 [HARIV. 11939.] *praśamita* приведённый в покой так v. a. обезвреженный, уничтоженный
 [MBH. 3,2031.] *praśamitaripu*
 [MṚCCH. 178,12.]
-  <sub>DCS 323 · attested</sub>
+  <sub>attested</sub>
 
 **note — Dehnung des Wurzelvocals)** [RAGH. 1,61.] Mit Dehnung des Wurzelvocals: *praśāmita (rajaḥ śoṇitena)*
 [MBH. 9,633.] hier aus metrischer Rücksicht, ohne alle Veranlassung dagegen in den folgenden Stellen: *praśāmyamāna* beschwichtigt werdend
@@ -291,4 +291,4 @@
 [NĪLAK.], таким образом, относится к 4. *śam*) *nagaram* подчиняться, отвоёвывать обратно
 [MBH. 3,12196.] *praśāmita*
 [HARIV. 11939.] Vgl. *praśamana* .
-  <sub>DCS 323 · attested</sub>
+  <sub>attested</sub>

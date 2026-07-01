@@ -50,7 +50,7 @@
 [MALLIN.] к [ŚIŚ. 11,64] со ссылкой на
 [AK. 3,5,9], где, однако, наши Ausgg. *'ho hī* st. *hi hau* читают. *śoke*
 [ŚABDAR.] в [ŚKDR.] Никогда в начале предложения.
-  <sub>DCS 23914 · attested</sub>
+  <sub>attested</sub>
 
 **1)** 1) begründend und bestätigend: denn, ja, nämlich: *indavo vāmuśanti hi*
 [ṚV. 1,2,4.] [15,2.] [3.] [24,4.] *vadhīrhi dasyum*
@@ -233,4 +233,4 @@ u. s. w. [ṚV. 1,25,1.] [109,1.] [6,1,1.] [2,1.] [AV. 4,14,1.] [5,13,1.] *katha
 [SARVADARŚANAS. 99,5. 14.] в двух следующих друг за другом предложениях: *gatvā hi varayiṣye tvāṃ mano hi mama tāṃ gatam*
 [MBH. 3,2241.]
 [R. 1,64,19.]
-  <sub>DCS 23914 · attested</sub>
+  <sub>attested</sub>

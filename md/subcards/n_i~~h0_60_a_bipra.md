@@ -18,4 +18,4 @@
 [ṚV. 1,31,18.] to carry over (fire to the altar): *jajvāla lokasthitaye sa rājā yathādhvare *
 * vahnirabhipraṇītaḥ*
 [BHAṬṬ. 1,4.]
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>

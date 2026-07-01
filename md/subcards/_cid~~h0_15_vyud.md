@@ -7,7 +7,7 @@
 
 - **RU:** — *vyud* pass. mit den Personalendungen des act.
 - **EN:** — *vyud* pass. with the personal endings of act.
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **1)** 1) sich ablösen, abbrechen: *ubhayatra prasaktasya dharme cādharma eva ca . phalārthamūlaṃ vyucchidyettena nandanti śatravaḥ ..*
 [MBH. 12,3923.]
@@ -16,7 +16,7 @@
 [MBH. 12,3923.]
 - **EN:** 1) to become detached, break off: *ubhayatra prasaktasya dharme cādharma eva ca . phalārthamūlaṃ vyucchidyettena nandanti śatravaḥ ..*
 [MBH. 12,3923.]
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) eine Unterbrechung erleiden, aufhören: *vinaṣṭe ca mamānuje . piṇḍaḥ pitṝṇāṃ vyucchidyet*
 [MBH. 1,6188.] *kīrtirme vyucchinnā* hat ihr Ende erreicht
@@ -43,4 +43,4 @@
 [HARIV. 2355.] *˚pṛthupravṛtti*
 [VIKR. 110.] *tatraikāvayavaṃ dhyāyedavyucchinnena cetasā*
 [BHĀG. P. 2,1,19.]
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>

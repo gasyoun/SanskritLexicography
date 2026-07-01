@@ -52,7 +52,7 @@
 [BHĀG. P. 3,19,24.] *upadraṣṭāram*
 [NṚS. TĀP. UP.] in [Ind. St. 9,166.] *pauruṣīṃ gatim* to arrive at
 [BHĀG. P. 8,22,25.]
-  <sub>DCS 1202 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) zurückkommen, heimkehren: *sa tvamāyudhamādāya kṣipramāvraja*
 [R. 2,31,31.] *puram*
@@ -85,4 +85,4 @@
 [BHĀG. P. 3,30,35.] *purīm*
 [10,52,5.] *sattram*
 [89,14.]
-  <sub>DCS 1202 · attested</sub>
+  <sub>attested</sub>

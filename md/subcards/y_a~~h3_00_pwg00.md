@@ -13,4 +13,4 @@
 
 - **RU:** 4. *yā*¦ _f._ к 2. *ya*; следовало бы добавить Bed. *lakṣmī*
 [H. 226.]
-  <sub>DCS 5678 · lexicographic</sub>
+  <sub>lexicographic</sub>

@@ -16,4 +16,4 @@
 [H.] they fill their own
 [TBR. 1,4,5,2.]
 [ŚAT. BR. 4,4,2,17.] [KĀTY. ŚR. 10,6,20.] [9,31.]
-  <sub>DCS 2376 · attested</sub>
+  <sub>attested</sub>

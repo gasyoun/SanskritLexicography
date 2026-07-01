@@ -13,4 +13,4 @@
 
 - **RU:** — *anu* pass. гибнуть вслед (за другим): *hatamevānuhanyate* так v. a. то, что гибнет, уже прежде погибло
 [MBH. 12,8107.]
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>

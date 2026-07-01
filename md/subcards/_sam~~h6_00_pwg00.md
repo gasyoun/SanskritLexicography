@@ -16,4 +16,4 @@
 [VĀMANA 5,2,76.]
 — *anuni*
 [PAT. a. a. O. 1,16,b.]
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>

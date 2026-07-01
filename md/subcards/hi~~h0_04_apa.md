@@ -10,4 +10,4 @@
 [BHĀG. P. 10,33,40.]
 - **EN:** — *apa* to throw off, to free oneself from: *hṛdrogam*
 [BHĀG. P. 10,33,40.]
-  <sub>DCS 23914 · attested</sub>
+  <sub>attested</sub>

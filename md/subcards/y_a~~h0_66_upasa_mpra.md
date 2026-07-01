@@ -10,4 +10,4 @@
 [VS. 15,53.]
 - **EN:** — *upasaṃpra* {to go to, go forth}
 [VS. 15,53.]
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>

@@ -16,7 +16,7 @@
  1) to lead down (into the water): *avabhṛtham*
 [AIT. BR. 7,17.]
 [ŚAT. BR. 5,1,4,5.]
-  <sub>DCS 8 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) eingiessen: *(somam) droṇakalaśamabhyavanināya*
 [AIT. BR. 7,17.]
@@ -25,4 +25,4 @@
 [AIT. BR. 7,17.]
 - **EN:** — 2) to pour in: *(somam) droṇakalaśamabhyavanināya*
 [AIT. BR. 7,17.]
-  <sub>DCS 8 · attested</sub>
+  <sub>attested</sub>

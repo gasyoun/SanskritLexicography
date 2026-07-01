@@ -19,4 +19,4 @@
 [7,57,7.] [2,24,12.] [3,22,3.] [39,1.] [10,6,4.] *ā no acchā jigātana*
 [5,59,6.] *pra saptagumṛtadhītiṃ sumedhāṃ bṛhaspatiṃ matiracchā jigāti*
 [10,47,6.]
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>

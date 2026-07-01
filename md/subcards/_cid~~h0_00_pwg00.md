@@ -202,7 +202,7 @@ Sch.; *ciccheda* and *cicchide, cicchidvaṃs*
 [VARĀH. BṚH. S. 29,23.] *indradhanus (acchinna)*
 [34,3.] *rekhāḥ*
 [67,50.] [68,14.]
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) scheiden, trennen: *chinatti kṛṣyā gordhanādyaṃ kravyādanuvartate*
 [AV. 12,3,37.] [5,38.] [43.] *nāsmādgaṇaśchidyate*
@@ -229,7 +229,7 @@ Sch.; *ciccheda* and *cicchide, cicchidvaṃs*
 [ŚĀṄKH. ŚR. 1,5,9. 4,13,3.] to detach, isolate, extract: *śṛṅgīva ṭaṅkacchinnamanaḥśilaḥ*
 [RAGH. 12,80.] *(kṛṣṇamṛgam) pakvaṃ samājñāya niṣṭaptaṃ chinnaśoṇitam*
 [R. 2,56,23.]
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) unterbrechen, stören: *chinne ca gatikarmaṇi*
 [HARIV. 16258.] *madhyāhnārkatāpacchinnadṛṣṭi*
@@ -241,7 +241,7 @@ Sch.; *ciccheda* and *cicchide, cicchidvaṃs*
 - **EN:** — 3) to interrupt, disturb: *chinne ca gatikarmaṇi*
 [HARIV. 16258.] *madhyāhnārkatāpacchinnadṛṣṭi*
 [MṚCCH. 119,19.]
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) vernichten, zu Grunde richten, zerstören, entfernen: *bāhūnivataunmā cchetsīḥ* (lies *chai˚*)
 [MBH. 2,1942.] *tataśchetsyati nārācairjagatsarvaṃ sarākṣasam*
@@ -292,7 +292,7 @@ Sch.; *ciccheda* and *cicchide, cicchidvaṃs*
 [HARIV. 7730.] *ṛṇaṃ chittvā* to discharge a debt
 
 [RĀJA-TAR. 6,16.]
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **5)** — 5) *chinna* heruntergekommen, entkräftet, ermüdet: *strī˚, bhāra˚, mārga˚*
 [VYUTP. 209.]
@@ -301,13 +301,13 @@ Sch.; *ciccheda* and *cicchide, cicchidvaṃs*
 [VYUTP. 209.]
 - **EN:** — 5) *chinna* brought low, enfeebled, exhausted: *strī˚, bhāra˚, mārga˚*
 [VYUTP. 209.]
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **cross-ref)** — Vgl. *bhid* .
 
 - **RU:** — Vgl. *bhid* .
 - **EN:** — Vgl. *bhid* .
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **header)** *chid*¦, *chinatti* und *chintte*
 [DHĀTUP. 29,3.] *chinddhi (chindhi)*
@@ -336,4 +336,4 @@ Sch.; *ciccheda* und *cicchide, cicchidvaṃs*
 [P. 7,2,67], Sch.;
 *chetsyati* Kār 3 aus
 [SIDDH. K.] zu [P. 7,2,10]; *chittvā, chettum; acchedi, chinna* .
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>

@@ -13,4 +13,4 @@
 - **EN:** — *saṃpra* to be lost, to disappear: *ghoratvaṃ saṃpraṇaśyati*
 [MBH. 3,13781.] *saṃpranaṣṭe kalau*
 [2847.]
-  <sub>DCS 1422 · attested</sub>
+  <sub>attested</sub>

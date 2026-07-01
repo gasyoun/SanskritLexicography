@@ -19,4 +19,4 @@
 * syāttannigadet*
 [ĀŚV. ŚR. 10,7,3. 4. 6.] *yathāniśāntam* so v. a. in the accepted customary manner
 [7,12,13. fg. 8,3,22.]
-  <sub>DCS 20 · attested</sub>
+  <sub>attested</sub>

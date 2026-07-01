@@ -16,7 +16,7 @@
 [BRĀHMAṆA] runs counter to the whole of ancient usage; originally either: sprinkle the waters! or = *preṣya*). med.: *ye vāsmiṃ chuklamīṣire* to hurl, to throw
 [AV. 5,19,3.] Here, perhaps, may also belong, as aor.: *stomairiṣemāgnaye* with praises we wish to Agni sprinkle for the u. s. w. (butter u. s. w.) or else amount to as much as *stomāniṣema*
 [ṚV. 8,44,27.] — partic. *iṣita*
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>
 
 **PPP-1)** 1) bewegt, getrieben; ausgestossen (von der Stimme); von einem Schiff [ṚV. 1,182,6.] Feuer durch Wind [10,91,7.] *vācaḥ* [AV. 10,8,33.] *yebhirvāta iṣita pravāti* [35.] *yannakṣatraṃ patati jātavedaḥ somena rājñā iṣitaṃ parastāt* geschleudert (von Sternschnuppen) [KAUŚ. 128.]
 
@@ -27,7 +27,7 @@
 [AV. 10,8,33.] *yebhirvāta iṣita pravāti*
 [35.] *yannakṣatraṃ patati jātavedaḥ somena rājñā iṣitaṃ parastāt* hurled (of shooting stars)
 [KAUŚ. 128.]
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>
 
 **PPP-2)** — 2) zur Eile getrieben, gesandt; eilig: *indrasya dūtīriṣitā carāmi* [ṚV. 10,108,2.] [165,1.] [2.] *virabharadiṣitaḥ śyeno adhvare* [11,4.] *gavyangrāma iṣita indrajūtaḥ* [3,33,11.] *sa tatkṛdhīṣitastūyamagne* [6,5,6.] [AV. 6,116,2.]
 
@@ -37,7 +37,7 @@
 [11,4.] *gavyangrāma iṣita indrajūtaḥ*
 [3,33,11.] *sa tatkṛdhīṣitastūyamagne*
 [6,5,6.] [AV. 6,116,2.]
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>
 
 **PPP-3)** — 3) bewogen, aufgemuntert, aufgefordert: *devānyakṣadiṣito yajīyān* [ṚV. 3,4,3.] [3,2.] [6,11,1.] [VS. 21,61.] *asya pātaṃ dhiyeṣitā* [ṚV. 3,12,1.] [32,4.] [16.] *divo no * * vṛṣṭimiṣito rirīhi* [10,98,10.] [6,49,10.] [7,33,13.] *jyeṣṭhaṃ mātā sūnave bhāgamādhādanvasya ketamiṣitaṃ savitrā* [2,38,5.] *iṣitā daivyā hotāro bhadravācyāya preṣito mānuṣaḥ sūktavākāya* [ŚAT. BR. 1,8,3,10.] *manasā vā iṣitā vāgvadati* [AIT. BR. 2,5.] [KENOP. 1.]
 
@@ -53,10 +53,10 @@
 [ŚAT. BR. 1,8,3,10.] *manasā vā iṣitā vāgvadati*
 [AIT. BR. 2,5.]
 [KENOP. 1.]
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>
 
 **final)** — Vgl. *aśveṣita, indreṣita, deveṣita, puruṣeṣita, martyeṣita, yuṣmeṣita, rajeṣita, śuneṣita* .
 
 - **RU:** — Vgl. *aśveṣita, indreṣita, deveṣita, puruṣeṣita, martyeṣita, yuṣmeṣita, rajeṣita, śuneṣita* .
 - **EN:** — Vgl. *aśveṣita, indreṣita, deveṣita, puruṣeṣita, martyeṣita, yuṣmeṣita, rajeṣita, śuneṣita* .
-  <sub>DCS 5402 · attested</sub>
+  <sub>attested</sub>

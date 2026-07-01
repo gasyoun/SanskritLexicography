@@ -22,4 +22,4 @@
 [R. GORR. 2,68,44.] *bāla eva hi mātulyaṃ bharato nāyitastvayā*
 [7,24.] *rakṣāṃsyanāyayadūrdhvalokaṃ kapibhiḥ*
 [VOP. 5,5.]
-  <sub>DCS 2376 · attested</sub>
+  <sub>attested</sub>

@@ -34,7 +34,7 @@
 [MBH. 5,4704.] *bhrūkuṭīm*
 [R. 3,35,76.] *padāni saṃhanyante* are joined, join together
 [ŚAṂK.] into [BṚH. ĀR. UP. S. 73.]
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) zusammenballen: *saṃhantyapo divyā mārutaḥ* ballt zusammen zu Hagel
 [SUŚR. 1,264,18.] pass. sich ballen, fest —, consistent werden: *śaraḥ samahanyata*
@@ -49,7 +49,7 @@
 [SUŚR. 1,264,18.] pass. to clump, become firm, compact: *śaraḥ samahanyata*
 [ŚAT. BR. 10,6,5,2.] *kṛṣṇāyasasyeva ca te saṃhatya hṛdayaṃ kṛtam*, hence v. a. your heart is as if hammered together out of iron
 [MBH. 5,4580.]
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) zusammensetzen, — fügen: *āsandīm*
 [ŚĀṄKH. ŚR. 17,2,6.]
@@ -58,7 +58,7 @@
 [ŚĀṄKH. ŚR. 17,2,6.]
 - **EN:** — 3) to put together, join together: *āsandīm*
 [ŚĀṄKH. ŚR. 17,2,6.]
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) aufeinander stossen: *saṃ yaddhananta manyubhirjanāsaḥ*
 [ṚV. 7,56,22.]
@@ -67,7 +67,7 @@
 [ṚV. 7,56,22.]
 - **EN:** — 4) to collide, strike against one another: *saṃ yaddhananta manyubhirjanāsaḥ*
 [ṚV. 7,56,22.]
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **5)** — 5) zerschlagen, brechen: *purā puraṃ samidaṃ haṃsyojasā*
 [ṚV. 1,53,7.]
@@ -76,7 +76,7 @@
 [ṚV. 1,53,7.]
 - **EN:** — 5) to smash, break: *purā puraṃ samidaṃ haṃsyojasā*
 [ṚV. 1,53,7.]
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **6)** — 6) absol. *saṃhatya* sich zusammenthuend, in Gemeinschaft, vereint, zusammen: *jīvāmaḥ*
 [MBH. 5,922.] *sa saṃhatya nihantvyaḥ*
@@ -109,7 +109,7 @@ Schol. into [KAP. 1,104.] [SĀH. D. 9,9.] *a˚*
 [BHĀG. P. 3,26,50.] *pāpaiḥ sahāyaiḥ saṃhatya* in union with
 [MBH. 5,4398.] *saṃhatyānyo'nyam*
 [BHĀG. P. 1,7,30.] [2,5,33.]
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **7)** — 7) partic. *saṃhata*
 - **EN:** — 7) partic. *saṃhata*
@@ -259,7 +259,7 @@ Schol. into [P. 2,3,56.] [SARVADARŚANAS. 143,20.] *˚cārin*
 [AK. 3,2,25.]
 [H. 1472.] *yūnaḥ paramasaṃhatān*
 [MBH. 3,14653.]
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **7c)** — c) stark, intensiv: *kṣuta*
 [VARĀH. BṚH. S. 68,63.]
@@ -268,7 +268,7 @@ Schol. into [P. 2,3,56.] [SARVADARŚANAS. 143,20.] *˚cārin*
 [VARĀH. BṚH. S. 68,63.]
 - **EN:** — c) strong, intense: *kṣuta*
 [VARĀH. BṚH. S. 68,63.]
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **7d)** — d) Bez. eines best. Geruchs
 [MBH. 12,6848.] [14,1409.] eines best. Tons
@@ -280,7 +280,7 @@ Schol. into [P. 2,3,56.] [SARVADARŚANAS. 143,20.] *˚cārin*
 - **EN:** — d) Bez. of a best. smell
 [MBH. 12,6848.] [14,1409.] of a best. tone
 [1420.], hence probably v. a. compounded.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **sam+han — 7a)** — 7) partic. *saṃhata*
  a) an —, auf einander gelegt, zusammengefügt, geschlossen, zusammenstossend, anschliessend, eng verbunden
@@ -383,4 +383,4 @@ Schol. к [P. 2,3,56.] [SARVADARŚANAS. 143,20.] *˚cārin*
 [M. 7,165.] *harayo golāṅgūlarkṣasaṃhatāḥ*
 [R. 4,23,4.]
 [KĀM. NĪTIS. 13,88.] [KATHĀS. 34,195.] [MĀRK. P. 102,2.] [BHĀG. P. 11,18,27.]
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>

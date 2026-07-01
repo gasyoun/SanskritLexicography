@@ -16,4 +16,4 @@
 [R. 2,1,15.] *vidyāsu*
 [R. 6,11,10.] *kasyāṃ kalāyāmabhivinīte bhavatyau*
 [MĀLAV. 66,6.]
-  <sub>DCS 2376 · attested</sub>
+  <sub>attested</sub>

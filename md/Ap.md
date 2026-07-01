@@ -1,6 +1,6 @@
 # āp
 
-_PWG article — 44 sub-card(s), 211 sense(s) · RU 130/211 · EN 192/211_
+_PWG article — 44 sub-card(s), 211 sense(s) · RU 152/211 · EN 192/211_
 
 ## āp
 
@@ -230,6 +230,14 @@ Sch. on [ŚĀK. 97.] *āptavacana* the statement of a competent witness
 [RAGH. 12,52.] *māturāptāṃśca bāndhavān*
 [M. 5,101.] *āptabandhubhiḥ*
 [DEV. 1,19.]
+
+- **RU:** 6) близкий, родственный, дружественный, доверенный; _m._ родственник, друг, доверенное лицо (vgl. *āpi*)
+[MED. t. 3] (*sva*).
+[M. 2,109.] [8,64.]
+[YĀJÑ. 1,28.] [2,71.]
+[RAGH. 12,52.] *māturāptāṃśca bāndhavān*
+[M. 5,101.] *āptabandhubhiḥ*
+[DEV. 1,19.]
 - **EN:** — 6) close, related, befriended, intimate; _m._ a relative, friend, intimate (vgl. *āpi*)
 [MED. t. 3] (*sva*).
 [M. 2,109.] [8,64.]
@@ -237,35 +245,72 @@ Sch. on [ŚĀK. 97.] *āptavacana* the statement of a competent witness
 [RAGH. 12,52.] *māturāptāṃśca bāndhavān*
 [M. 5,101.] *āptabandhubhiḥ*
 [DEV. 1,19.]
+  <sub>attested</sub>
 
 **compound-note)** — Vgl. *anāpta* . — caus. *āpayati*; gerund. mit praepp. *āpayya* oder *āpya*
+[P. 6,4,57.]
+[VOP. 26,215.]
+
+- **RU:** Vgl. *anāpta*. — caus. *āpayati*; gerund. с praepp. *āpayya* или *āpya*
 [P. 6,4,57.]
 [VOP. 26,215.]
 - **EN:** — Vgl. *anāpta*. — caus. *āpayati*; gerund. with praepp. *āpayya* or *āpya*
 [P. 6,4,57.]
 [VOP. 26,215.]
+  <sub>attested</sub>
 
 **caus-1)** 1) erreichen lassen: *atraiva mā bhagavānmohāntamāpīpipat* (ungramm. aor. für *āpipat*; in der Mādhy.-Rec.: *āpīpadat* von *pad*)
 [BṚH. ĀR. UP. 4,5,14.]
+
+- **RU:** 1) давать/заставлять достигнуть: *atraiva mā bhagavānmohāntamāpīpipat* (ungramm. aor. вместо *āpipat*; в Mādhy.-Rec.: *āpīpadat* от *pad*)
+[BṚH. ĀR. UP. 4,5,14.]
 - **EN:** 1) to cause to reach: *atraiva mā bhagavānmohāntamāpīpipat* (ungramm. aor. for *āpipat*; in the Mādhy.-Rec.: *āpīpadat* of *pad*)
 [BṚH. ĀR. UP. 4,5,14.]
+  <sub>attested</sub>
 
 **caus-2)** — 2) Jmd Etwas erlangen lassen: *āpayato vai tāvanyo'nyasya kāmam*
 [CHĀND. UP. 1,1,6.]
+
+- **RU:** 2) давать/заставлять кого-л. получить что-л.: *āpayato vai tāvanyo'nyasya kāmam*
+[CHĀND. UP. 1,1,6.]
 - **EN:** — 2) to cause someone to obtain something: *āpayato vai tāvanyo'nyasya kāmam*
 [CHĀND. UP. 1,1,6.]
+  <sub>attested</sub>
 
 **caus-3)** — 3) Jmd Etwas abgeben, zu fühlen geben: *āpayituṃ bhūpamāha yaugaṃdharāyaṇaḥ*
 [KATHĀS. 17,32.]
+
+- **RU:** 3) давать почувствовать кому-л. что-л., доставлять: *āpayituṃ bhūpamāha yaugaṃdharāyaṇaḥ*
+[KATHĀS. 17,32.]
 - **EN:** — 3) to deal out something to someone, to make someone feel something: *āpayituṃ bhūpamāha yaugaṃdharāyaṇaḥ*
 [KATHĀS. 17,32.]
+  <sub>attested</sub>
 
 **caus-4)** — 4) = *āp*
 [DHĀTUP. 34,32.] — desid. *īpsati*
 [P. 7,4,55.]
+[VOP. 19,10.] zu erreichen, zu erlangen streben: *sukṛtāṃ lokamīpsan*
+[AV. 9,5,12.]
+[ŚAT. BR. 10,1,2,1.] [12,1,1,1.] [13,1,2,9.] *viśiṣṭaṃ balamīpsantyā*
+[MBH. 1,1090.] *tasya pārthivatāmīpse*
+[2,1007.] *tvadvadhamīpsamānāḥ*
+[3,13191.] ved. *apsanta*
+[ṚV. 1,100,5] : *tamapsanta śavasa utsaveṣu naro naramavase* . — partic. *īpsita*
+
+- **RU:** 4) = *āp*
+[DHĀTUP. 34,32.] — desid. *īpsati*
+[P. 7,4,55.]
+[VOP. 19,10.] стремиться достигнуть, стремиться получить: *sukṛtāṃ lokamīpsan*
+[AV. 9,5,12.]
+[ŚAT. BR. 10,1,2,1.] [12,1,1,1.] [13,1,2,9.] *viśiṣṭaṃ balamīpsantyā*
+[MBH. 1,1090.] *tasya pārthivatāmīpse*
+[2,1007.] *tvadvadhamīpsamānāḥ*
+[3,13191.] ved. *apsanta*
+[ṚV. 1,100,5]: *tamapsanta śavasa utsaveṣu naro naramavase*. — partic. *īpsita*
 - **EN:** — 4) = *āp*
 [DHĀTUP. 34,32.] — desid. *īpsati*
 [P. 7,4,55.]
+  <sub>attested</sub>
 
 **desid-ptc)** [VOP. 19,10.] zu erreichen, zu erlangen streben: *sukṛtāṃ lokamīpsan*
 [AV. 9,5,12.]
@@ -298,6 +343,23 @@ Sch. on [ŚĀK. 97.] *āptavacana* the statement of a competent witness
 [RAGH. 1,79.] [3,1.] [5.] *sidhyatyetattavepsitam*
 [KATHĀS. 22,170.] *prāpsyasi cepsitam*
 [VID. 247.]
+
+- **RU:** 1) тот или то, что желают иметь, вожделеют, желанный, приятный, милый: *pratigṛhyepsitaṃ daṇḍam*
+[M. 2,48.] *kasyāsau yasyāhaṃ dūta īpsitaḥ*
+[N. 3,2.] *īpsitāmīpsito nātha kiṃ māṃ na pratibhāṣase*
+[12,15.] [R. 1,4,18.] [4,28,3.] [P. 1,4,27.] [MEGH. 112.] [VID. 93.] *śriyā durāpaḥ kathamīpsito bhavet*
+[ŚĀK. 62.] *īpsito naranārīṇām*
+[N. 1,4.]
+[R. 4,27,22.] *vidadhe kāmadhukkāmānyasya yasyepsitānyathā*
+[VIŚV. 3,1.] *labheta kāmānmanasā yathepsitān*
+[MBH. 3,161.] *yathepsitam* _adv._ по желанию
+[AK. 2,9,57.]
+[H. 1505.]
+[BHAṬṬ. 2,28.] _n._ желание, стремление: *tava prasādādbhavatu — mamepsitam*
+[VIŚV. 5,18.]
+[RAGH. 1,79.] [3,1.] [5.] *sidhyatyetattavepsitam*
+[KATHĀS. 22,170.] *prāpsyasi cepsitam*
+[VID. 247.]
 - **EN:** 1) the one whom or the thing that one wishes to have, desires, wished-for, agreeable, dear: *pratigṛhyepsitaṃ daṇḍam*
 [M. 2,48.] *kasyāsau yasyāhaṃ dūta īpsitaḥ*
 [N. 3,2.] *īpsitāmīpsito nātha kiṃ māṃ na pratibhāṣase*
@@ -314,15 +376,21 @@ Sch. on [ŚĀK. 97.] *āptavacana* the statement of a competent witness
 [RAGH. 1,79.] [3,1.] [5.] *sidhyatyetattavepsitam*
 [KATHĀS. 22,170.] *prāpsyasi cepsitam*
 [VID. 247.]
+  <sub>attested</sub>
 
 **desid-2)** — 2) von einer Autorität festgesetzt, anerkannt: *asyāḥ paiśācyāḥ prakṛtiḥ śaurasenīpsitā*
 Sch. zu [VARARUCI 10,2] in [LASSEN, Institutt. 7.] — desid. vom caus. zu erreichen streben: *rātrīrāpipayipanti sa yadi rātrīrāpipayiṣet*
 [ŚAT. BR. 2,6,3,11.]
+
+- **RU:** 2) установленный, признанный авторитетом: *asyāḥ paiśācyāḥ prakṛtiḥ śaurasenīpsitā*
+Sch. к [VARARUCI 10,2] в [LASSEN, Institutt. 7.] — desid. от caus. стремиться достигнуть: *rātrīrāpipayipanti sa yadi rātrīrāpipayiṣet*
+[ŚAT. BR. 2,6,3,11.]
 - **EN:** — 2) fixed, recognized by an authority: *asyāḥ paiśācyāḥ prakṛtiḥ śaurasenīpsitā*
 Sch. on [VARARUCI 10,2] in [LASSEN, Institutt. 7.] — desid. from caus. to strive to reach: *rātrīrāpipayipanti sa yadi rātrīrāpipayiṣet*
 [ŚAT. BR. 2,6,3,11.]
+  <sub>attested</sub>
 
-## abhi-āp
+## abhi + āp
 
 `_ap~~h0_01_a_bi`
 
@@ -343,6 +411,31 @@ Sch. on [VARARUCI 10,2] in [LASSEN, Institutt. 7.] — desid. from caus. to stri
 
 *abhīpsantī*
 [M. 5,156.] med. : *abhīpsate 'nāmayameva teṣām*
+[MBH. 5,17.] *abhīpsita* gewünscht, erwünscht, genehm, lieb
+[AK. 3,2,3.] [61.] *manasā yadabhīpsitam*
+[VIŚV. 15,11.] *ādānam — dānaṃ ca — abhīpsitānāmarthānām*
+[M. 7,204.]
+
+- **RU:** *abhi* доходить до чего-л., достигать
+[ŚAT. BR. 7,4,1,43.] *yatrābhyāpnoti tadabhimṛśya*
+[9,1,2,16.] [13,6,2,20.] Vgl. *abhīpatas*. — caus. доводить до цели: *āte vā recayati na vābhyāpayati*
+[ŚAT. BR. 9,5,2,3.] [1,1,1,15.] [21.] [10,1,3,8.] [10.] [4,3,6.] — desid. стремиться получить, желать чего-л., хотеть; act.: *taṃ kṛtsnaṃ samrāṅguṇamabhīpsati*
+[MBH. 2,534.] *tvāṃ putraṃ cāpyabhīpsāmaḥ*
+[3,14458.] *yadi — yajñaṃ prāptumabhīpsasi*
+[2,632.] *śuddhimabhīpsatā*
+[M. 5,136.] [12,105.] *brahmalokamabhīpsataḥ*
+[YĀJÑ. 1,111.] *yogamabhīpsatā*
+[3,110.] *senāpatimabhīpsantaḥ*
+[R. 1,38,1.] *abhīpsatī*
+[MBH. 1,6469.]
+[R. 2,35,19.]
+
+*abhīpsantī*
+[M. 5,156.] med.: *abhīpsate 'nāmayameva teṣām*
+[MBH. 5,17.] *abhīpsita* желанный, вожделенный, приятный, милый
+[AK. 3,2,3.] [61.] *manasā yadabhīpsitam*
+[VIŚV. 15,11.] *ādānam — dānaṃ ca — abhīpsitānāmarthānām*
+[M. 7,204.]
 - **EN:** — *abhi* to reach up to something, to attain
 [ŚAT. BR. 7,4,1,43.] *yatrābhyāpnoti tadabhimṛśya*
 [9,1,2,16.] [13,6,2,20.] Vgl. *abhīpatas*. — caus. to bring to the goal: *āte vā recayati na vābhyāpayati*
@@ -359,6 +452,7 @@ Sch. on [VARARUCI 10,2] in [LASSEN, Institutt. 7.] — desid. from caus. to stri
 
 *abhīpsantī*
 [M. 5,156.] med.: *abhīpsate 'nāmayameva teṣām*
+  <sub>attested</sub>
 
 **ppp)** [MBH. 5,17.] *abhīpsita* gewünscht, erwünscht, genehm, lieb
 [AK. 3,2,3.] [61.] *manasā yadabhīpsitam*
@@ -470,15 +564,19 @@ Sch. on [VARARUCI 10,2] in [LASSEN, Institutt. 7.] — desid. from caus. to stri
 [M. 9,209.] *anavāptacakṣuḥphalo 'si*
 [ŚĀK. 25,1.]
 
-## pratyava-āp
+## pratyavaāp
 
 `_ap~~h0_03_pratyava`
 
 
 **1)** — *pratyava* wiedererlangen
 [ŚIŚUP. 5,40.]
+
+- **RU:** *pratyava* вновь обретать, вновь получать
+[ŚIŚUP. 5,40.]
 - **EN:** — *pratyava* to regain
 [ŚIŚUP. 5,40.]
+  <sub>attested</sub>
 
 ## samava-āp
 
@@ -1325,7 +1423,7 @@ Sch. on [VARARUCI 10,2] in [LASSEN, Institutt. 7.] — desid. from caus. to stri
 [R. 3,75,17.]
   <sub>DCS 1 · attested</sub>
 
-## saṃpra-āp
+## saṃprāp
 
 `_ap~~h0_14_sa_mpra`
 
@@ -1345,6 +1443,22 @@ Sch. on [VARARUCI 10,2] in [LASSEN, Institutt. 7.] — desid. from caus. to stri
 [R. 3,42,6.] [18,2.]
 [MBH. 3,2852.] *tvaksaṃprāpta* sich auf die Haut erstreckend
 [SUŚR. 2,64,8.]
+
+- **RU:** — *saṃpra*
+ 1) достигать, доходить до, встречать, наталкиваться на: *etadvā etābhirdevā ātaḥ saṃprāpnuvan*
+[ŚAT. BR. 9,2,3,13.] [23.] [29.] *saṃprāpyainam (ātmānam)*
+[MUṆḌ. UP. 3,2,5.] *pṛṣatkāḥ saṃprāpuḥ — śaravyam*
+[RAGH. 7,42.] *bharadvājasya saṃprāpadāśramam*
+[R. 6,109,1.] *pāraṃ saṃprāpa vidyānām*
+[KATHĀS. 2,2.] [20,39.] *jīvansaṃprāpsyasi kṣmāntam*
+[PAÑCAT. III,49.] [VID. 23.] *saṃprāpthā vinayena*
+[BHAṬṬ. 6,68.] *saṃprāpta* с pass. Bed.: *vṛddhavyāghreṇa saṃprāptaḥ pathiko sa mṛto yathā*
+[HIT. I,4.] *yo 'pi me* (мной) *nirjane 'raṇye saṃprāpto 'yaṃ janārṇavaḥ*
+[N. 13,16.] *asaṃprāpte karmaṇi* если объект не достигнут
+[P. 2,3,12], Vārtt. 3. с act. Bed.: *saṃprāpto 'haṃ tamāśramam*
+[R. 3,42,6.] [18,2.]
+[MBH. 3,2852.] *tvaksaṃprāpta* распространяющийся по коже
+[SUŚR. 2,64,8.]
 - **EN:** — *saṃpra*
  1) to reach, arrive at, meet with: *etadvā etābhirdevā ātaḥ saṃprāpnuvan*
 [ŚAT. BR. 9,2,3,13.] [23.] [29.] *saṃprāpyainam (ātmānam)*
@@ -1360,6 +1474,7 @@ Sch. on [VARARUCI 10,2] in [LASSEN, Institutt. 7.] — desid. from caus. to stri
 [R. 3,42,6.] [18,2.]
 [MBH. 3,2852.] *tvaksaṃprāpta* extending over the skin
 [SUŚR. 2,64,8.]
+  <sub>attested</sub>
 
 **2)** — 2) erlangen, sich zuziehen: *saṃprāpnuvanti duḥkhāni tāsu tāsviha yoniṣu*
 [M. 12,74.] *āpadam*
@@ -1372,6 +1487,18 @@ Sch. on [VARARUCI 10,2] in [LASSEN, Institutt. 7.] — desid. from caus. to stri
 [R. 4,17,20.] *so 'yaṃ te — bandhupraṇāśaḥ saṃprāptaḥ*
 [BRĀHMAṆ. 1,23.] mit act. Bed.: *vaiṣamyamapi saṃprāptāḥ*
 [N. 18,8.]
+
+- **RU:** — 2) получать, обретать, навлекать на себя: *saṃprāpnuvanti duḥkhāni tāsu tāsviha yoniṣu*
+[M. 12,74.] *āpadam*
+[PAÑCAT. II,21.] *parābhūtim*
+[201.] *parāṃ mudam*
+[KATHĀS. 23,15.] *mahākratuṃ saṃprāpnuhi* (понимается как приобретение; vgl. *śataṃ kratūnāmapavighnamāpa saḥ*
+[RAGH. 3,38]) [MBH. 2,1227.] *saṃprāpsyante — vinodam*
+[ŚĀNTIŚ. 4,17.] *mṛtaiḥ saṃprāpyate śreyaḥ*
+[PAÑCAT. I,344.] [347.] *saṃprāpta* с pass. Bed.: *pūrveṇa mama māṃdhātrā saṃprāptaṃ vyasanaṃ mahat*
+[R. 4,17,20.] *so 'yaṃ te — bandhupraṇāśaḥ saṃprāptaḥ*
+[BRĀHMAṆ. 1,23.] с act. Bed.: *vaiṣamyamapi saṃprāptāḥ*
+[N. 18,8.]
 - **EN:** — 2) to obtain, incur (upon oneself): *saṃprāpnuvanti duḥkhāni tāsu tāsviha yoniṣu*
 [M. 12,74.] *āpadam*
 [PAÑCAT. II,21.] *parābhūtim*
@@ -1383,6 +1510,7 @@ Sch. on [VARARUCI 10,2] in [LASSEN, Institutt. 7.] — desid. from caus. to stri
 [R. 4,17,20.] *so 'yaṃ te — bandhupraṇāśaḥ saṃprāptaḥ*
 [BRĀHMAṆ. 1,23.] with act. Bed.: *vaiṣamyamapi saṃprāptāḥ*
 [N. 18,8.]
+  <sub>attested</sub>
 
 **3)** — 3) *saṃprāpta* angelangt, gekommen: *saṃprāptāya tvatithaye pradadyādāsanodake*
 [M. 3,99.] [9,141.]
@@ -1393,6 +1521,16 @@ Sch. on [VARARUCI 10,2] in [LASSEN, Institutt. 7.] — desid. from caus. to stri
 [VID. 202.] *tadidaṃ saṃprāptaṃ yanmayā pūrvamīkṣitam*
 [R. 6,93,13.] — caus. erreichen machen: *saṃprāpipan*
 [ŚAT. BR. 2,2,2,7.]
+
+- **RU:** — 3) *saṃprāpta* прибывший, пришедший: *saṃprāptāya tvatithaye pradadyādāsanodake*
+[M. 3,99.] [9,141.]
+[INDṚ. 5,4.] [HIḌ. 2,24. 4,27.] [R. 1,20,5.] [41,28.] [4,2,20.] [ŚĀK. 61,7.] [BHAṬṬ. 6,100.] *ayaṃ sa kālaḥ saṃprāptaḥ*
+[R. 3,22,4.] [42,6.] [2,77,1.] [4,27,2.]
+[ARJ. 3,18.] *aparedyuḥ saṃprāpte*
+[MBH. 3,2566.] *tasya vāro 'dya saṃprāptastatra gantum*
+[VID. 202.] *tadidaṃ saṃprāptaṃ yanmayā pūrvamīkṣitam*
+[R. 6,93,13.] — caus. побуждать достигнуть, доводить до: *saṃprāpipan*
+[ŚAT. BR. 2,2,2,7.]
 - **EN:** — 3) *saṃprāpta* arrived, come: *saṃprāptāya tvatithaye pradadyādāsanodake*
 [M. 3,99.] [9,141.]
 [INDṚ. 5,4.] [HIḌ. 2,24. 4,27.] [R. 1,20,5.] [41,28.] [4,2,20.] [ŚĀK. 61,7.] [BHAṬṬ. 6,100.] *ayaṃ sa kālaḥ saṃprāptaḥ*
@@ -1402,8 +1540,9 @@ Sch. on [VARARUCI 10,2] in [LASSEN, Institutt. 7.] — desid. from caus. to stri
 [VID. 202.] *tadidaṃ saṃprāptaṃ yanmayā pūrvamīkṣitam*
 [R. 6,93,13.] — caus. to cause to reach: *saṃprāpipan*
 [ŚAT. BR. 2,2,2,7.]
+  <sub>attested</sub>
 
-## anusaṃpra-āp
+## anusaṃprāp
 
 `_ap~~h0_15_anusa_mpra`
 
@@ -1414,19 +1553,32 @@ Sch. on [VARARUCI 10,2] in [LASSEN, Institutt. 7.] — desid. from caus. to stri
 [4,22.] *duḥkhaṃ māmanusaṃprāptam*
 [1,4708.] *anusaṃprāptaḥ sthānam*
 [3,1883.] [R. 3,68,7.]
+
+- **RU:** — *anusaṃpra*
+ 1) достигать, прибывать к: *araṇyamanusaṃprāpya*
+[MBH. 1,5243.] *virāṭamanusaṃprāpya rājānam*
+[4,22.] *duḥkhaṃ māmanusaṃprāptam*
+[1,4708.] *anusaṃprāptaḥ sthānam*
+[3,1883.] [R. 3,68,7.]
 - **EN:** — *anusaṃpra*
  1) to reach, arrive at: *araṇyamanusaṃprāpya*
 [MBH. 1,5243.] *virāṭamanusaṃprāpya rājānam*
 [4,22.] *duḥkhaṃ māmanusaṃprāptam*
 [1,4708.] *anusaṃprāptaḥ sthānam*
 [3,1883.] [R. 3,68,7.]
+  <sub>attested</sub>
 
 **2)** — 2) *anusaṃprāpta* angelangt, gekommen
+[R. 2,65,11.] *tadidaṃ me 'nusaṃprāptaṃ devi duḥkhaṃ svayaṃkṛtam*
+[DAŚ. 1,11.]
+
+- **RU:** — 2) *anusaṃprāpta* прибывший, пришедший
 [R. 2,65,11.] *tadidaṃ me 'nusaṃprāptaṃ devi duḥkhaṃ svayaṃkṛtam*
 [DAŚ. 1,11.]
 - **EN:** — 2) *anusaṃprāpta* arrived, come
 [R. 2,65,11.] *tadidaṃ me 'nusaṃprāptaṃ devi duḥkhaṃ svayaṃkṛtam*
 [DAŚ. 1,11.]
+  <sub>attested</sub>
 
 ## abhisampra+āp
 
@@ -2226,46 +2378,79 @@ Schol.!) [HARIV. 3964.] *paryāptamaśru muñcāmi* "abundant, plentiful"
  2)
 Z. 6 [M. 1,63] ist *apus* von *pā* schützen gemeint. — partic. *āpta* dividirt
 [SŪRYAS. 1,52. 60. 2,28. 57. 61. 64. fg. 3,10. 22.]
+
+- **RU:** *āp*¦
+ 2)
+Z. 6 [M. 1,63] имеется в виду *apus* от *pā* защищать. — partic. *āpta* разделённый
+[SŪRYAS. 1,52. 60. 2,28. 57. 61. 64. fg. 3,10. 22.]
 - **EN:** *āp*¦
  2)
 Z. 6 [M. 1,63] is *apus* meant from *pā* "to protect". — partic. *āpta* "divided"
 [SŪRYAS. 1,52. 60. 2,28. 57. 61. 64. fg. 3,10. 22.]
+  <sub>attested</sub>
 
 **2-cont)** — *ava* durch Division erhalten
 [SŪRYAS. 2,32. 3,9. 12,59.]
+
+- **RU:** — *ava* получаемый посредством деления
+[SŪRYAS. 2,32. 3,9. 12,59.]
 - **EN:** — *ava* "obtained by division"
 [SŪRYAS. 2,32. 3,9. 12,59.]
+  <sub>lexicographic</sub>
 
 **1)** — *pra*
  2) mit infin. bekommen zu: *khādituṃ prāpyate yābat*
 [Spr. (II) 7515.] — partic. *prāpta*
+
+- **RU:** — *pra*
+ 2) с infin. получать в качестве: *khādituṃ prāpyate yābat*
+[Spr. (II) 7515.] — partic. *prāpta*
 - **EN:** — *pra*
  2) with infin. "to get to": *khādituṃ prāpyate yābat*
 [Spr. (II) 7515.] — partic. *prāpta*
+  <sub>attested</sub>
 
 **4)** 4) *tejaḥkṣamāyaśaḥ˚* so v. a. versehen mit
 [R. ed. Bomb. 1,7,8.]
+
+- **RU:** 4) *tejaḥkṣamāyaśaḥ˚* так v. a. снабжённый чем-л.
+[R. ed. Bomb. 1,7,8.]
 - **EN:** 4) *tejaḥkṣamāyaśaḥ˚* so v. a. "provided with"
 [R. ed. Bomb. 1,7,8.]
+  <sub>attested</sub>
 
 **4-cont)** — *saṃparipra* desid. s. *saṃpariprepsu* .
+
+- **RU:** — *saṃparipra* desid. s. *saṃpariprepsu* .
 - **EN:** — *saṃparipra* desid. s. *saṃpariprepsu*.
+  <sub>attested</sub>
 
 **1-sub)** — *sam* caus.
+ 1)
+[KAUṢ. UP. 2,15.]
+
+- **RU:** — *sam* caus.
  1)
 [KAUṢ. UP. 2,15.]
 - **EN:** — *sam* caus.
  1)
 [KAUṢ. UP. 2,15.]
+  <sub>attested</sub>
 
 **3)** — *parisam*
 Z. 3 *pratyekaṃ parisamāpyate* so v. a. erstreckt sich auf Jedes, gehört zu Jedem; vgl.
 [PAT. a. a. O. 1,48,b.] *ṣaṭprabhṛtiṣu hyekaśeṣaḥ parisamāpyate* erstreckt sich auf
 [2,317,a.]
+
+- **RU:** — *parisam*
+Z. 3 *pratyekaṃ parisamāpyate* так v. a. распространяется на всё, относится ко всему; vgl.
+[PAT. a. a. O. 1,48,b.] *ṣaṭprabhṛtiṣu hyekaśeṣaḥ parisamāpyate* распространяется на
+[2,317,a.]
 - **EN:** — *parisam*
 Z. 3 *pratyekaṃ parisamāpyate* so v. a. "extends to everything, belongs to everything"; vgl.
 [PAT. a. a. O. 1,48,b.] *ṣaṭprabhṛtiṣu hyekaśeṣaḥ parisamāpyate* "extends to"
 [2,317,a.]
+  <sub>attested</sub>
 
 ## āp
 

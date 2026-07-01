@@ -16,7 +16,7 @@
 [M. 8,219.] to make objections, to contradict
 [KULL.] to [M. 12,110.] *tanmandāravatīdevīrūpaṃ nātra visaṃvadet*
 [KATHĀS. 101,82.]
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **caus-1)** — Vgl. *visaṃvāda* . — caus.
  1) Jmdes Unzufriedenheit erregen: *lakṣmaṇena na visaṃvāditaḥ kaścit*
@@ -28,7 +28,7 @@
 - **EN:** — Vgl. *visaṃvāda* . — caus.
  1) to provoke someone's dissatisfaction: *lakṣmaṇena na visaṃvāditaḥ kaścit*
 [R. 6,24,27.]
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **caus-2)** — 2) nicht bewähren: *avisaṃvāditapauruṣa*
 [MĀRK. P. 133,16.] *ramaṇīokkhu avahī vihiṇā visaṃvādido*
@@ -40,4 +40,4 @@
 - **EN:** — 2) to fail to prove, not to bear out: *avisaṃvāditapauruṣa*
 [MĀRK. P. 133,16.] *ramaṇīokkhu avahī vihiṇā visaṃvādido*
 [ŚĀK. 84,21.]
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>

@@ -22,4 +22,4 @@
 [KULL.] on [M. 2,7.] [Verz. d. Oxf. H. No. 24.] "to discuss"
 [No. 358.] Schol. on [KĀTY. ŚR. 1056,6.] [1059,2], v. u. *viṣayasyānupādānādviṣayyupanibadhyate . yatra sātiśayoktiḥ syāt*
 [PRATĀPAR. 84,b,6.]
-  <sub>DCS 20 · attested</sub>
+  <sub>attested</sub>

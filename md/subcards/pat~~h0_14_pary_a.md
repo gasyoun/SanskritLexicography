@@ -13,4 +13,4 @@
 - **EN:** — *paryā* to hasten away, speed off: *kuravo bhayapīḍitāḥ . vīkṣamāṇā diśaḥ sarvāḥ paryāpetuḥ sahasraśaḥ ..*
 [MBH. 8,4964.] *ādāya śivikāṃ tāraḥ sa tu paryāpatatpuraḥ*
 [R. 4,24,21.]
-  <sub>DCS 1 · attested</sub>
+  <sub>attested</sub>

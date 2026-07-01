@@ -287,7 +287,7 @@ _PWG article — 26 sub-card(s), 163 sense(s) · RU 65/163 · EN 120/163_
 [N. 17,7.] *sa naśyeta mṛṣā vadan* to perish
 [MBH. 1,3414.] [3,10701.] *yāvanna naṅkṣyāmahe*
 [BHĀG. P. 4,17,11.]
-  <sub>DCS 1422 · attested</sub>
+  <sub>attested</sub>
 
 ## naś
 
@@ -403,7 +403,7 @@ to let go, not to retain in memory
 [HARIV. 10087.] [1167.] *nāśayate cittam*
 [VĀYU-P.] in [Verz. d. Oxf. H. 50,b,26.] The aor. in the Bed. of simpl.: *mā vyāghrā nīnaśurvanāt* to disappear from
 [MBH. 5,862]; vgl. u. *vi* .
-  <sub>DCS 1422 · attested</sub>
+  <sub>attested</sub>
 
 ## naś
 
@@ -417,7 +417,7 @@ to let go, not to retain in memory
 [P. 7,1,60.] [2,45]; s. *ninaṅkṣu* .
 - **EN:** — desid. *ninaśiṣyati* and *ninaṅkṣati*
 [P. 7,1,60.] [2,45]; s. *ninaṅkṣu* .
-  <sub>DCS 1422 · attested</sub>
+  <sub>attested</sub>
 
 ## naś
 
@@ -428,7 +428,7 @@ to let go, not to retain in memory
 
 - **RU:** — *anu* s. *anunāśa* .
 - **EN:** — *anu* s. *anunāśa* .
-  <sub>DCS 1422 · attested</sub>
+  <sub>attested</sub>
 
 ## naś
 
@@ -442,7 +442,7 @@ to let go, not to retain in memory
 [ŚĀṄKH. BR. 30,5.]
 - **EN:** — *apa* to take oneself off, to make oneself scarce: *apanaśya dhiktvā jālmāstu*
 [ŚĀṄKH. BR. 30,5.]
-  <sub>DCS 1422 · attested</sub>
+  <sub>attested</sub>
 
 ## naś
 
@@ -456,7 +456,7 @@ to let go, not to retain in memory
 [MBH. 5,7090.]
 - **EN:** — *vyapa* caus. to drive away, expel: *yaste yuddhamayaṃ darpaṃ kāmaṃ ca vyapanāśayet*
 [MBH. 5,7090.]
-  <sub>DCS 1422 · attested</sub>
+  <sub>attested</sub>
 
 ## naś
 
@@ -470,7 +470,7 @@ to let go, not to retain in memory
 [MBH. 4,1728.]
 - **EN:** — *ava* to disappear, to pass away: *avaneśuḥ kurūṇāṃ hi vīryāṇyarjunajādbhayāt*
 [MBH. 4,1728.]
-  <sub>DCS 1422 · attested</sub>
+  <sub>attested</sub>
 
 ## naś
 
@@ -496,7 +496,7 @@ to let go, not to retain in memory
 - **RU:** — *nis*, partic. *nirnaṣṭa* (*na* остаётся без изменений, поскольку *śa* перешло в *ṣa*) пропавший, исчезнувший: *˚nāmakṛtya (mahīpāla)*
 [RĀJA-TAR. 1,83.] *˚kaṇṭakakula*
 [6,367.]
-  <sub>DCS 1422 · attested</sub>
+  <sub>attested</sub>
 
 **nis-naś-2)** — caus. austreiben, vertreiben: *niṣkravyādamanīnaśam*
 [ṚV. 10,162,2.]
@@ -505,7 +505,7 @@ to let go, not to retain in memory
 - **RU:** — caus. выгонять, изгонять: *niṣkravyādamanīnaśam*
 [ṚV. 10,162,2.]
 [AV. 1,23,2.] [3.]
-  <sub>DCS 1422 · attested</sub>
+  <sub>attested</sub>
 
 ## naś
 
@@ -519,7 +519,7 @@ to let go, not to retain in memory
 [P. 8,4,36], Sch.
 - **EN:** — *pari*, *pariṇaśyati, parinaṣṭa*
 [P. 8,4,36], Sch.
-  <sub>DCS 1422 · attested</sub>
+  <sub>attested</sub>
 
 ## pra+naś
 
@@ -550,7 +550,7 @@ to let go, not to retain in memory
 [R. 1,20,17.] [61,6.] [7.] [2,33,20.] [75,45.] [4,27,9.] [5,15,37.] [71,7.]
 [VARĀH. BṚH. S. 78,23] = [93,3.] [KATHĀS. 4,25.] [RĀJA-TAR. 5,211.] one who has made his escape
 [PAÑCAT. 89,20.]
-  <sub>DCS 1422 · attested</sub>
+  <sub>attested</sub>
 
 **pra+naś.caus)** [VET. in LA. 22,11.] — caus. verschwinden machen: *chāyāmiva pra tānsūryaḥ parikrāmannanīnaśat* [AV. 8,6,8.] *gāṇḍīvaśabdena praṇāśaya tatra vai balam* [MBH. 7,327.] [HARIV. 8877.] *pāpmānaṃ me praṇāśaya* [BHĀG. P. 8,16,27.] vergehen machen: *yajamānam* [ŚAT. BR. 5,2,2,20.] verloren gehen lassen so v. a. unbelohnt lassen: *kṛtakṛtyasya bhṛtyasya kṛtaṃ naiva praṇāśayet* [HIT. IV,9.]
 
@@ -562,7 +562,7 @@ to let go, not to retain in memory
 [BHĀG. P. 8,16,27.] to cause to pass away: *yajamānam*
 [ŚAT. BR. 5,2,2,20.] to allow to be lost so v. a. to leave unrewarded: *kṛtakṛtyasya bhṛtyasya kṛtaṃ naiva praṇāśayet*
 [HIT. IV,9.]
-  <sub>DCS 1422 · attested</sub>
+  <sub>attested</sub>
 
 ## naś
 
@@ -576,7 +576,7 @@ to let go, not to retain in memory
 [ŚAT. BR. 6,7,2,16.] [4,11.] [9,4,4,11.]
 - **EN:** — *atipra* to be deprived of something (acc.): *nedimāṃ lokānatipraṇaśyāni*
 [ŚAT. BR. 6,7,2,16.] [4,11.] [9,4,4,11.]
-  <sub>DCS 1422 · attested</sub>
+  <sub>attested</sub>
 
 ## vipra+naś
 
@@ -615,14 +615,14 @@ to be lost, i.e. to be ineffectual, to bear no fruit
 [R. 3,55,6.] *sarvathā vipranaṣṭāste — nahi vipro gatiṃ teṣāṃ vāsaṃ vāpi*
 [MBH. 4,877.] — caus. to cause to be lost
 [SADDH. P. 4,23,b.]
-  <sub>DCS 1422 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — caus. verloren gehen lassen
 [SADDH. P. 4,23,b.]
 
 - **RU:** — caus. заставлять исчезать, приводить к утрате
 [SADDH. P. 4,23,b.]
-  <sub>DCS 1422 · attested</sub>
+  <sub>attested</sub>
 
 ## sampra+naś
 
@@ -639,7 +639,7 @@ to be lost, i.e. to be ineffectual, to bear no fruit
 - **EN:** — *saṃpra* to be lost, to disappear: *ghoratvaṃ saṃpraṇaśyati*
 [MBH. 3,13781.] *saṃpranaṣṭe kalau*
 [2847.]
-  <sub>DCS 1422 · attested</sub>
+  <sub>attested</sub>
 
 ## vinaś
 
@@ -799,7 +799,7 @@ to be lost, i.e. to be ineffectual, to bear no fruit
 [MBH. 4,426.] [5,767.]
 [R. 2,110,30]; vgl. the caus. from simpl. — desid. from caus. *vināśayiṣitaḥ* (without Redupl.!)
 [DAŚAK. 112,3] v. u.
-  <sub>DCS 596 · attested</sub>
+  <sub>attested</sub>
 
 **2)** [2,64.] [YĀJÑ. 2,59.] [268.] — caus. verschwinden machen, vertreiben, vernichten, verderben, zu Grunde richten, umbringen: *tvaṃ pura indra vyojasā nāśayadhyai*
 [ṚV. 8,86,14.] [1,55,6.] *aśastīrvi hi nīnaśaḥ*
@@ -864,7 +864,7 @@ to be lost, i.e. to be ineffectual, to bear no fruit
 [MBH. 4,426.] [5,767.]
 [R. 2,110,30]; vgl. caus. от simpl. — desid. от caus. *vināśayiṣitaḥ* (без Redupl.!)
 [DAŚAK. 112,3] v. u.
-  <sub>DCS 596 · attested</sub>
+  <sub>attested</sub>
 
 ## anuvi+naś
 
@@ -887,7 +887,7 @@ to be lost, i.e. to be ineffectual, to bear no fruit
 [ŚAT. BR. 14,5,4,12.] [7,3,13.] *prajāśca tasya kṣīyante tataḥ so 'nuvinaśyati*
 [MBH. 12,3400.] *kāmānusārī puruṣaḥ kāmānanuvinaśyati*
 [6503.]
-  <sub>DCS 4 · attested</sub>
+  <sub>attested</sub>
 
 ## pravi+naś
 
@@ -901,7 +901,7 @@ to be lost, i.e. to be ineffectual, to bear no fruit
 [R. GORR. 1,56,27.]
 - **EN:** — *pravi* to be ruined, to perish: *tasmāttvaṃ pravinaṅkṣyase*
 [R. GORR. 1,56,27.]
-  <sub>DCS 1422 · attested</sub>
+  <sub>attested</sub>
 
 ## sam+naś
 
@@ -915,7 +915,7 @@ to be lost, i.e. to be ineffectual, to bear no fruit
 [R. 5,51,13.]
 - **EN:** — *sam* to perish: *ikṣvākuvaṃśe saṃnaṣṭe*
 [R. 5,51,13.]
-  <sub>DCS 1422 · attested</sub>
+  <sub>attested</sub>
 
 ## naś
 
@@ -929,7 +929,7 @@ to be lost, i.e. to be ineffectual, to bear no fruit
 [P. 8,2,63], Sch.
 [VOP. 3,149.]
 — Vgl. *jīva˚* .
-  <sub>DCS 1422 · attested</sub>
+  <sub>attested</sub>
 
 ## naś
 
@@ -1005,14 +1005,14 @@ Schol. under [P. 6,4,73] and [SIDDH. K. 222,a] here, but can readily be referred
 [ṚV. 8,3,10.]
 [VS. 23,15.] *cakṣuṣā cana saṃnaśe*
 [VĀLAKH. 6,5.]
-  <sub>DCS 1422 · attested</sub>
+  <sub>attested</sub>
 
 **2 (upa-))** — *accha* herbeikommen: *acchā nakṣi dyumattamaṃ rayiṃ dāḥ*
 [ṚV. 5,24,2.]
 
 - **RU:** — *accha* приходить, являться: *acchā nakṣi dyumattamaṃ rayiṃ dāḥ*
 [ṚV. 5,24,2.]
-  <sub>DCS 1422 · attested</sub>
+  <sub>attested</sub>
 
 **3 (abhi-))** — *abhi* erreichen, erlangen, treffen: *naśadabhi draviṇaṃ dīdhyānaḥ*
 [ṚV. 4,23,4.] *mā no dīrghā abhi naśantamisrāḥ*
@@ -1023,21 +1023,21 @@ Schol. under [P. 6,4,73] and [SIDDH. K. 222,a] here, but can readily be referred
 [ṚV. 4,23,4.] *mā no dīrghā abhi naśantamisrāḥ*
 [2,27,14.] *mā no rakṣo abhi naḍyātumāvatām*
 [7,104,23.] [8,20,16.]
-  <sub>DCS 1422 · attested</sub>
+  <sub>attested</sub>
 
 **4 (pari-))** — *ud* erreichen: *uttaraṃ sumnamunnaśam*
 [ṚV. 2,23,8.] [1,164,22.]
 
 - **RU:** — *ud* достигать: *uttaraṃ sumnamunnaśam*
 [ṚV. 2,23,8.] [1,164,22.]
-  <sub>DCS 1422 · attested</sub>
+  <sub>attested</sub>
 
 **5 (sam-))** — *pari* dass.: *nahi te antaḥ śavasaḥ parīṇaśe*
 [ṚV. 1,54,1.]
 
 - **RU:** — *pari* dass.: *nahi te antaḥ śavasaḥ parīṇaśe*
 [ṚV. 1,54,1.]
-  <sub>DCS 1422 · attested</sub>
+  <sub>attested</sub>
 
 **6 (ā-))** — *pra* erreichen, treffen: *pra tamindra naśīmahi rayim*
 [ṚV. 8,6,9.] *pra vaḥ sa dhītaye naśat*
@@ -1056,7 +1056,7 @@ Schol. under [P. 6,4,73] and [SIDDH. K. 222,a] here, but can readily be referred
 *mā vo durmatiriha pra ṇaṅnaḥ*
 [ṚV. 7,56,9.] [94,8.] *mā pra ṇaktasya no vadhaḥ*
 [2,23,12.] [1,18,3.]
-  <sub>DCS 1422 · attested</sub>
+  <sub>attested</sub>
 
 **7 (pra-))** — *vi* erreichen: *āpaścidasya vi naśantyartham*
 [ṚV. 10,27,20.] *āmāsu pūrṣu paro apramṛṣyaṃ nārātayo vi naśannānṛtāni*
@@ -1065,7 +1065,7 @@ Schol. under [P. 6,4,73] and [SIDDH. K. 222,a] here, but can readily be referred
 - **RU:** — *vi* достигать: *āpaścidasya vi naśantyartham*
 [ṚV. 10,27,20.] *āmāsu pūrṣu paro apramṛṣyaṃ nārātayo vi naśannānṛtāni*
 [2,35,6.]
-  <sub>DCS 1422 · attested</sub>
+  <sub>attested</sub>
 
 **8 (vi-))** — *sam* dass.: *so asya mahimā na saṃnaśe*
 [ṚV. 8,3,10.]
@@ -1076,7 +1076,7 @@ Schol. under [P. 6,4,73] and [SIDDH. K. 222,a] here, but can readily be referred
 [ṚV. 8,3,10.]
 [VS. 23,15.] *cakṣuṣā cana saṃnaśe*
 [VĀLAKH. 6,5.]
-  <sub>DCS 1422 · attested</sub>
+  <sub>attested</sub>
 
 ## naś
 
@@ -1099,19 +1099,19 @@ Schol. under [P. 6,4,73] and [SIDDH. K. 222,a] here, but can readily be referred
 — *nis* vgl. *nirnāśana* fg.
 — *pravi*, ˚*naṣṭaharṣa* disappeared
 [R. 2,47,19] according to the reading of [ed. Bomb.]
-  <sub>DCS 1422 · lexicographic</sub>
+  <sub>lexicographic</sub>
 
 **2 (upasarga-1))** — *nis* vgl. *nirnāśana* fg.
 
 - **RU:** — *nis* vgl. *nirnāśana* fg.
-  <sub>DCS 1422 · attested</sub>
+  <sub>attested</sub>
 
 **3 (upasarga-2))** — *pravi*, ˚*naṣṭaharṣa* verschwunden
 [R. 2,47,19] nach der Lesart der [ed. Bomb.]
 
 - **RU:** — *pravi*, ˚*naṣṭaharṣa* исчезнувший
 [R. 2,47,19] по чтению [ed. Bomb.]
-  <sub>DCS 1422 · attested</sub>
+  <sub>attested</sub>
 
 ## naś
 
@@ -1134,7 +1134,7 @@ Z. 2. fg. *ānak* is referred by
 Schol. under [P. 6,4,73] to *naś, ānaṭ*
 
 [SIDDH. K. 222,a,2] to *aś*.
-  <sub>DCS 1422 · lexicographic</sub>
+  <sub>lexicographic</sub>
 
 ## naś
 
@@ -1148,7 +1148,7 @@ Schol. under [P. 6,4,73] to *naś, ānaṭ*
 [HARIV. 4167] по чтению новейших Ausg.
 - **EN:** 1. *naś*¦ with *vi, vyanaśat* with caus. Bed.
 [HARIV. 4167] according to the reading of the more recent Ausg.
-  <sub>DCS 1422 · attested</sub>
+  <sub>attested</sub>
 
 ## naś
 
@@ -1364,7 +1364,7 @@ Schol. under [P. 6,4,73] to *naś, ānaṭ*
 **III)** *naś*¦ Caus. III. *ausstossen aus der Gemeinde. Vgl. *nāśitasaṃgraha*. Im Aor. abkommen von (Abl.). *mādharmyānnīnaśaḥ pathaḥ* [MBH. 3,52,15] = [R. GORR. 1,24,9]. — Mit *pra* III. *mārgapranaṣṭa* vom Wege abgekommen [JĀTAKAM. 6]. — Mit *vipra* III. *˚naṣṭa* der sich verirrt hat [JĀTAKAM. 6,24].
 
 - **RU:** *naś*¦ Caus. III. *исключать из общины. Vgl. *nāśitasaṃgraha*. В Aor. отступать от (Abl.). *mādharmyānnīnaśaḥ pathaḥ* [MBH. 3,52,15] = [R. GORR. 1,24,9]. — С *pra* III. *mārgapranaṣṭa* сбившийся с пути [JĀTAKAM. 6]. — С *vipra* III. *˚naṣṭa* заблудившийся [JĀTAKAM. 6,24].
-  <sub>DCS 1422 · attested</sub>
+  <sub>attested</sub>
 
 ## naś
 
@@ -1449,127 +1449,127 @@ Schol. under [P. 6,4,73] to *naś, ānaṭ*
 **NWS 1)** *naś (=pṭ naś 1)* [Gen , unsp] ( náśyati, rarely °te and naśati IV P, rarely I P ) to come to nothing, be frustrated or unsuccessful. MānDhŚ , Mbh , Kāvya(MW) . Kaus. ( nāśayati , ep. also ° te ): to give up. Mbh , Kāvya(MW) , Pañcat
 
 - **RU:** *naś (=pṭ naś 1)* [Gen , unsp] ( náśyati, реже °te и naśati IV P, реже I P ) сходить на нет, быть несостоявшимся или безуспешным. MānDhŚ , Mbh , Kāvya(MW) . Kaus. ( nāśayati , ep. также ° te ): отказываться, бросать. Mbh , Kāvya(MW) , Pañcat [NWS: MW : 532]
-  <sub>DCS 1422 · attested</sub>
+  <sub>attested</sub>
 
 **NWS 2)** [Ved , unsp] verloren gehen, sich verlieren, abhanden kommen. verschwinden, sich davon machen. verschwinden, vergehen, umkommen. Kaus: vertreiben, forttreiben
 
 - **RU:** [Ved , unsp] пропадать, теряться, пропадать бесследно. исчезать, скрываться прочь. исчезать, гибнуть, погибать. Kaus: прогонять, изгонять [NWS: Graßmann 1873 (1996) : 717]
-  <sub>DCS 1422 · attested</sub>
+  <sub>attested</sub>
 
 **NWS 3)** [Ved , unsp] ( I, IV ) verschwinden, zu Grunde gehen. Kaus: verschwinden machen, vernichten
 
 - **RU:** [Ved , unsp] ( I, IV ) исчезать, погибать. Kaus: заставлять исчезнуть, уничтожать [NWS: Windisch 1883 : 130]
-  <sub>DCS 1422 · attested</sub>
+  <sub>attested</sub>
 
 **NWS 4)** [Ved , unsp] ( IV P ) verloren (zugrunde) gehen, verschwinden, schwinden. ṚV 10,97,11 . naṣṭá : verloren. ṚV 1,116,23 . Kaus: verschwinden machen, vertreiben. ṚV 1,50,11
 
 - **RU:** [Ved , unsp] ( IV P ) пропадать (погибать), исчезать, убывать. ṚV 10,97,11 . naṣṭá : потерянный. ṚV 1,116,23 . Kaus: заставлять исчезнуть, прогонять. ṚV 1,50,11 [NWS: Geldner 1907 : 97]
-  <sub>DCS 1422 · attested</sub>
+  <sub>attested</sub>
 
 **NWS 5)** [Śā , Soc] Kaus: to banish, to send into exile (as a punishment for certain crimes). ĀpDhS 2.26.21
 
 - **RU:** [Śā , Soc] Kaus: изгонять, ссылать (в качестве наказания за определённые преступления). ĀpDhS 2.26.21 [NWS: Olivelle 2015 : 210]
-  <sub>DCS 1422 · attested</sub>
+  <sub>attested</sub>
 
 **NWS 6)** [Śā , Med] be lost, perish. Hoernle 1893-1912 (II) 34.147 . Kaus: cure. Hoernle 1893-1912 (II) 31.86
 
 - **RU:** [Śā , Med] теряться, погибать. Hoernle 1893-1912 (II) 34.147 . Kaus: излечивать. Hoernle 1893-1912 (II) 31.86 [NWS: Hoernle 1908 : 284]
-  <sub>DCS 1422 · attested</sub>
+  <sub>attested</sub>
 
 **NWS 7)** *+ upa (° naśyati ): perishes. śukhāv 4.13 .* [Buddh , unsp (s.v. upa - naśyati )] naṣṭa , Adj: lost, lost property. MānDhŚ 8.32 . Śā , Soc ; Olivelle 2015 : 210 (s.v. naṣṭa )
 
 - **RU:** *+ upa (° naśyati ): perishes. śukhāv 4.13 .* [Buddh , unsp (s.v. upa - naśyati )] naṣṭa , Adj: потерянный, утраченное имущество. MānDhŚ 8.32 . Śā , Soc ; Olivelle 2015 : 210 (s.v. naṣṭa ) [NWS: Olivelle 2015 : 210 (s.v. naṣṭa)]
-  <sub>DCS 1422 · attested</sub>
+  <sub>attested</sub>
 
 **NWS 8)** *– a) (applied to semen or menses), eḷhausted, suppressed; b) lost. ḥoernle 1893-1912 (īī) 40.284 , ḥoernle 1893-1912 (īV) 192.3 .* [Śā , Med] + nís , Kaus: vertreiben, austreiben. Ved , unsp
 
 - **RU:** *– a) (applied to semen or menses), eḷhausted, suppressed; b) lost. ḥoernle 1893-1912 (īī) 40.284 , ḥoernle 1893-1912 (īV) 192.3 .* [Śā , Med] + nís , Kaus: прогонять, выгонять. Ved , unsp [NWS: Graßmann 1873 (1996) : 717]
-  <sub>DCS 1422 · attested</sub>
+  <sub>attested</sub>
 
 **NWS 9)** *+ pra : verschṭinden, sich verlieren, sich verstecken in (ākk). ṚV 10,146,1 .* [Ved , unsp] – ( praṇaṣṭa , Adj): of or relating to lost property. MānDhŚ 8.33 ; naś ( naṣṭa ) . Śā , Soc ; Olivelle 2015 : 266 (s.v. praṇaṣṭa )
 
 - **RU:** *+ pra : verschṭinden, sich verlieren, sich verstecken in (ākk). ṚV 10,146,1 .* [Ved , unsp] – ( praṇaṣṭa , Adj): относящийся к утраченному имуществу. MānDhŚ 8.33 ; naś ( naṣṭa ) . Śā , Soc ; Olivelle 2015 : 266 (s.v. praṇaṣṭa ) [NWS: Olivelle 2015 : 266 (s.v. praṇaṣṭa)]
-  <sub>DCS 1422 · attested</sub>
+  <sub>attested</sub>
 
 **NWS 10)** *– ( pranaṣṭa , ādj): lost, lost property. ṃāndhhŚ 8.30 ; naś ( naṣṭa ) .* [Śā , Soc (s.v. pranaṣṭa )] – ( praṇaśyati ): cure. Hoernle 1893-1912 (III) 184.64 . Śā , Med ; Hoernle 1908 : 296 (s.v. pra - ṇaś )
 
 - **RU:** *– ( pranaṣṭa , ādj): lost, lost property. ṃāndhhŚ 8.30 ; naś ( naṣṭa ) .* [Śā , Soc (s.v. pranaṣṭa )] – ( praṇaśyati ): излечивать. Hoernle 1893-1912 (III) 184.64 . Śā , Med ; Hoernle 1908 : 296 (s.v. pra - ṇaś ) [NWS: Hoernle 1908 : 296 (s.v. pra - ṇaś)]
-  <sub>DCS 1422 · attested</sub>
+  <sub>attested</sub>
 
 **NWS 11)** *– ( pranaṣṭa ): impaired, vitiated. ḥoernle 1893-1912 (īī) 44.358 .* [Śā , Med (s.v. pranaṣṭa )] + prá : verloren gehen, sich verlieren. Ved , unsp
 
 - **RU:** *– ( pranaṣṭa ): impaired, vitiated. ḥoernle 1893-1912 (īī) 44.358 .* [Śā , Med (s.v. pranaṣṭa )] + prá : пропадать, теряться. Ved , unsp [NWS: Graßmann 1873 (1996) : 717]
-  <sub>DCS 1422 · attested</sub>
+  <sub>attested</sub>
 
 **NWS 12)** *+ pravi (khaus): to destroy completely. śthbh, ś. 81, Z. 10 .* [Reg , unsp] + vi : verschwinden machen, vernichten. Ved , unsp
 
 - **RU:** *+ pravi (khaus): to destroy completely. śthbh, ś. 81, Z. 10 .* [Reg , unsp] + vi : заставлять исчезнуть, уничтожать. Ved , unsp [NWS: Windisch 1883 : 130]
-  <sub>DCS 1422 · attested</sub>
+  <sub>attested</sub>
 
 **NWS 13)** *– , khaus: verjagen, auseinandertreiben. ṚV 8,14,15 .* [Ved , unsp] – to be cured. Hoernle 1893-1912 (II) 53.546 . Śā , Med ; Hoernle 1908 : 321 (s.v. vi - naś )
 
 - **RU:** *– , khaus: verjagen, auseinandertreiben. ṚV 8,14,15 .* [Ved , unsp] – излечиваться. Hoernle 1893-1912 (II) 53.546 . Śā , Med ; Hoernle 1908 : 321 (s.v. vi - naś ) [NWS: Hoernle 1908 : 321 (s.v. vi - naś)]
-  <sub>DCS 1422 · attested</sub>
+  <sub>attested</sub>
 
 **NWS 14)** *– , khaus: cure. ḥoernle 1893-1912 (īīī) 181.9 .* [Śā , Med (s.v. vi - naś )] – (° nāśaya -, ° nāśe -): beschädigen. AbhisDh § 11.2.10B4 . Buddh , unsp
 
 - **RU:** *– , khaus: cure. ḥoernle 1893-1912 (īīī) 181.9 .* [Śā , Med (s.v. vi - naś )] – (° nāśaya -, ° nāśe -): повреждать. AbhisDh § 11.2.10B4 . Buddh , unsp [NWS: Karashima 2012 : 481 (s.v. vi - nāśaya -)]
-  <sub>DCS 1422 · attested</sub>
+  <sub>attested</sub>
 
 **NWS 15)** *– to be deṛormed. ṇajaśekharasuri 1935, ś. 47, Z. 32 .* [Jin , unsp , 1349 A.D. , Delhi (s.v. vi + naś )] + ví : 1) verlustig gehen (e. Sache (Abl)), sie nicht erlangen; 2) wirkungslos bleiben, vereitelt werden; 3) untergehen; 4) Kaus: vertilgen, zerstören; 5) Kaus: auseinander treiben. Ved , unsp
 
 - **RU:** *– to be deṛormed. ṇajaśekharasuri 1935, ś. 47, Z. 32 .* [Jin , unsp , 1349 A.D. , Delhi (s.v. vi + naś )] + ví : 1) лишаться (чего-л. (Abl)), не обретать этого; 2) оставаться без действия, быть тщетным; 3) погибать; 4) Kaus: истреблять, разрушать; 5) Kaus: рассеивать. Ved , unsp [NWS: Graßmann 1873 (1996) : 717]
-  <sub>DCS 1422 · attested</sub>
+  <sub>attested</sub>
 
 **NWS 16)** *+ vi ( vinaṣṭa ): spoilt, corrupted. ṃāndhhŚ , ñ(ṃṭh) .* [Gen , unsp (s.v. vinaṣṭa )] + vipra : ( vipraṇāśayati ) causes or allows to be wasted. SaddhP 107.13 . Buddh , unsp ; BHSD : 492 (s.v. vipraṇāśayati )
 
 - **RU:** *+ vi ( vinaṣṭa ): spoilt, corrupted. ṃāndhhŚ , ñ(ṃṭh) .* [Gen , unsp (s.v. vinaṣṭa )] + vipra : ( vipraṇāśayati ) вызывает или допускает растрату. SaddhP 107.13 . Buddh , unsp ; BHSD : 492 (s.v. vipraṇāśayati ) [NWS: BHSD : 492 (s.v. vipraṇāśayati)]
-  <sub>DCS 1422 · attested</sub>
+  <sub>attested</sub>
 
 **NWS 17)** [ naṣṭa ] elided or dropped. lupta . Abhyankar 1986 : 215 (s.v. naṣṭa )
 
 - **RU:** [ naṣṭa ] элидированный или выпавший. lupta . Abhyankar 1986 : 215 (s.v. naṣṭa ) [NWS: Abhyankar 1986 : 215 (s.v. naṣṭa)]
-  <sub>DCS 1422 · lexicographic</sub>
+  <sub>lexicographic</sub>
 
 **NWS 18)** *naś (=pṭ naś 3)* [Ved , unsp] jemand (Akk) erreichen, zu ihm gelangen. [ von lebenden Wesen. ] jemand (Akk) (in seinen Eigenschaften) erreichen, ihm gleichkommen, die Eigenschaft (Akk) e. andern erreichen. etwas (Akk) erlangen. jemand (Akk) treffen, ihn erreichen. [ theils sinnlich (vom Beile), theils bildlich (von Unglück, Missgunst, Glück usw). ]
 
 - **RU:** *naś (=pṭ naś 3)* [Ved , unsp] достигать кого-л. (Akk), приходить к нему. [ о живых существах. ] достигать кого-л. (Akk) в его свойствах, сравниваться с ним, достигать свойства (Akk) другого. обретать что-л. (Akk). настигать кого-л. (Akk), достигать его. [ отчасти буквально (о топоре), отчасти образно (о несчастье, зависти, удаче и т. п.). ] [NWS: Graßmann 1873 (1996) : 718]
-  <sub>DCS 1422 · attested</sub>
+  <sub>attested</sub>
 
 **NWS 19)** [Ved , unsp] ( náśate ) to come near. ṚV I,165,9
 
 - **RU:** [Ved , unsp] ( náśate ) приближаться, подходить. ṚV I,165,9 [NWS: Vedic Hymns I : 488]
-  <sub>DCS 1422 · attested</sub>
+  <sub>attested</sub>
 
 **NWS 20)** [Ved , unsp] ( I U ) erreichen, fertig bringen, zustande bringen. ṚV 10,70,9 . heranreichen an, gleichkommen. ṚV 8,70,3 . kommen zu, zuteil werden. ṚV 7,32,21 . erlangen von (Lok). ṚV 2,14,8 . erwischen, sich bemächtigen; ergreifen, befallen. ṚV 6,28,3 , ṚV 6,3,2
 
 - **RU:** [Ved , unsp] ( I U ) достигать, осуществлять, добиваться. ṚV 10,70,9 . приближаться, сравниваться. ṚV 8,70,3 . приходить к, доставаться. ṚV 7,32,21 . обретать от (Lok). ṚV 2,14,8 . настигать, овладевать; захватывать, поражать. ṚV 6,28,3 , ṚV 6,3,2 [NWS: Geldner 1907 : 98]
-  <sub>DCS 1422 · attested</sub>
+  <sub>attested</sub>
 
 **NWS 21)** *+ áccha : herbeikommen.* [Ved , unsp] + anu : erlangen. ṚV 1,163,7 . Ved , unsp
 
 - **RU:** *+ áccha : herbeikommen.* [Ved , unsp] + anu : обретать. ṚV 1,163,7 . Ved , unsp [NWS: Geldner 1907 : 98]
-  <sub>DCS 1422 · attested</sub>
+  <sub>attested</sub>
 
 **NWS 22)** *+ abhi : a) erlangen, bekommen; b) beṛallen, kommen über. ṚV 4,23,4 , ṚV 7,104,23 .* [Ved , unsp] + abhí : 1) jemand (Akk) erreichen, zu ihm gelangen (eigentlich und bildlich); 2) etwas (Akk) erlangen. Ved , unsp
 
 - **RU:** *+ abhi : a) erlangen, bekommen; b) beṛallen, kommen über. ṚV 4,23,4 , ṚV 7,104,23 .* [Ved , unsp] + abhí : 1) достигать кого-л. (Akk), приходить к нему (буквально и образно); 2) обретать что-л. (Akk). Ved , unsp [NWS: Graßmann 1873 (1996) : 718]
-  <sub>DCS 1422 · attested</sub>
+  <sub>attested</sub>
 
 **NWS 23)** *+ ā́ : hingelangen ṣu (ākk).* [Ved , unsp] + ud : hinaufreichen (+ Akk). ṚV 10,8,1 . Ved , unsp
 
 - **RU:** *+ ā́ : hingelangen ṣu (ākk).* [Ved , unsp] + ud : достигать ввысь (+ Akk). ṚV 10,8,1 . Ved , unsp [NWS: Geldner 1907 (N) : 231]
-  <sub>DCS 1422 · attested</sub>
+  <sub>attested</sub>
 
 **NWS 24)** *+ úd : 1) erreichen, hinreichen bis (ākk); 2) erlangen (ākk).* [Ved , unsp] + pári : 1) erreichen, hinreichen bis. Ved , unsp
 
 - **RU:** *+ úd : 1) erreichen, hinreichen bis (ākk); 2) erlangen (ākk).* [Ved , unsp] + pári : 1) достигать, простираться до. Ved , unsp [NWS: Graßmann 1873 (1996) : 718]
-  <sub>DCS 1422 · attested</sub>
+  <sub>attested</sub>
 
 **NWS 25)** *+ pra : kommen. ṚV 10,108,1 .* [Ved , unsp] + prá : 1) jemand (Akk) treffen, erreichen, theils sinnlich (von der Keule), theils bildlich; 2) erlangen. Ved , unsp
 
 - **RU:** *+ pra : kommen. ṚV 10,108,1 .* [Ved , unsp] + prá : 1) настигать кого-л. (Akk), достигать его, отчасти буквально (о дубине), отчасти образно; 2) обретать. Ved , unsp [NWS: Graßmann 1873 (1996) : 718]
-  <sub>DCS 1422 · attested</sub>
+  <sub>attested</sub>
 
 ## naś
 
@@ -1591,19 +1591,19 @@ Schol. under [P. 6,4,73] to *naś, ānaṭ*
 **NWS 26)** *+ vi : erreichen, dringen bis ṣu. ṚV 2,35,6 .* [Ved , unsp] + ví : erreichen, hingelangen zu (Akk). Ved , unsp
 
 - **RU:** *+ vi : erreichen, dringen bis ṣu. ṚV 2,35,6 .* [Ved , unsp] + ví : достигать, добираться до (Akk). Ved , unsp [NWS: Graßmann 1873 (1996) : 718]
-  <sub>DCS 1422 · attested</sub>
+  <sub>attested</sub>
 
 **NWS 27)** *+ sam : ganṣ erreichen; vollenden. ṚV 8,55,5 , ṚV 3,30,12 .* [Ved , unsp] + sám : 1) erreichen, gleichkommen (Akk); 2) erreichen (Akk) (mit dem Auge). Ved , unsp
 
 - **RU:** *+ sam : ganṣ erreichen; vollenden. ṚV 8,55,5 , ṚV 3,30,12 .* [Ved , unsp] + sám : 1) достигать, сравниваться (Akk); 2) достигать (Akk) (взором). Ved , unsp [NWS: Graßmann 1873 (1996) : 718]
-  <sub>DCS 1422 · attested</sub>
+  <sub>attested</sub>
 
 **NWS 28)** *náś* [Ved , unsp] Subst f die Nacht, vgl nákta usw. Der Schlusskonsonant ist nicht sicher festzustellen, er könnte auch k, g, ja vielleicht kh sein; doch sprechen für die angenommene Form die wahrscheinlich aus ihr entstandenen späteren Formen niś , niśā
 
 - **RU:** *náś* [Ved , unsp] Subst f ночь, ср. nákta и др. Конечный согласный не поддаётся точному установлению, он мог бы быть также k, g или даже kh; однако в пользу предполагаемой формы свидетельствуют вероятно возникшие из неё более поздние формы niś , niśā [NWS: Graßmann 1873 (1996) : 719]
-  <sub>DCS 1422 · lexicographic</sub>
+  <sub>lexicographic</sub>
 
 **NWS 29)** *naśāy* [Ved , unsp] ( I U ) kommen zu. ṚV 10,40,6 . Geldner 1907 : 98 (s.v. naś )
 
 - **RU:** *naśāy* [Ved , unsp] ( I U ) приходить к. ṚV 10,40,6 . Geldner 1907 : 98 (s.v. naś ) [NWS: Geldner 1907 : 98 (s.v. naś)]
-  <sub>DCS 1422 · attested</sub>
+  <sub>attested</sub>

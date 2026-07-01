@@ -7,4 +7,4 @@
 
 - **RU:** 3. *paś*¦, *pāśayati* s. *pāśay* .
 - **EN:** 3. *paś*¦, *pāśayati* s. *pāśay*.
-  <sub>DCS 4733 · lexicographic</sub>
+  <sub>lexicographic</sub>

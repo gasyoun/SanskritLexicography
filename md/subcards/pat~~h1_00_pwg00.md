@@ -7,4 +7,4 @@
 
 - **RU:** 2. *pat*¦ (= 1. *pat*) летящий, падающий; s. *akṣi˚* .
 - **EN:** 2. *pat*¦ (= 1. *pat*) flying, falling; s. *akṣi˚* .
-  <sub>DCS 3124 · attested</sub>
+  <sub>attested</sub>

@@ -16,7 +16,7 @@
  1) to become confused, to get out of proper order: *asurī prātaḥsavanamavāleṭtadvyamādyat*
 [AIT. BR. 2,22.] *vimatta* ebend. in rut: *mataṅgaja*
 [KIR. 5,47.]
-  <sub>DCS 4 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) irre machen, aus der Lage bringen: *asurānvyamadan*
 [ŚĀṄKH. BR. 22,6.] *yajamānāḥ pāpmānaṃ vimadanti* ebend. — caus. confundere: *vi ta īrṣyāmamīmadam*
@@ -34,4 +34,4 @@
 [AV. 7,74,3.] *vimadita*
 [KĀṬH. 29,1] = *vimatta*
 [AIT. BR. 2,22.]
-  <sub>DCS 4 · attested</sub>
+  <sub>attested</sub>

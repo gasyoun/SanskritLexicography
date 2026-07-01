@@ -40,7 +40,7 @@
 [10,39,39.] *velām*
 [45,38.] *tatra*
 [7,8,37.]
-  <sub>DCS 1202 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) Jmd nachgehen, folgen
 [R. 5,20,13.]
@@ -49,4 +49,4 @@
 [R. 5,20,13.]
 - **EN:** — 2) to follow someone, go after
 [R. 5,20,13.]
-  <sub>DCS 1202 · attested</sub>
+  <sub>attested</sub>

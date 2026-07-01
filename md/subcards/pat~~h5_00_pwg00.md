@@ -7,4 +7,4 @@
 
 - **RU:** **1.** *pat*¦ [vgl. ] с *pari* Z. 13. 14. Читай: *˚patitorasi* и *˚patitā u˚*.
 - **EN:** **1.** *pat*¦ [vgl. ] with *pari* Z. 13. 14. Read: *˚patitorasi* and *˚patitā u˚*.
-  <sub>DCS 3124 · attested</sub>
+  <sub>attested</sub>

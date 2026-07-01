@@ -240,374 +240,374 @@
 **2)** — 2〉 niederschlagen, tödten.
 
 - **RU:** — 2〉 сражать, убивать.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3〉 *prahata*
 
 - **RU:** — 3〉 *prahata*
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **3a)** — a〉 geschlagen, getroffen.
 
 - **RU:** — a〉 поражённый, задетый.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **3b)** — b〉 angeschlagen (Trommel u. s. w.).
 
 - **RU:** — b〉 ударяемый (барабан u. s. w.).
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **3c)** — c〉 zerhauen, zerschlagen.
 
 - **RU:** — c〉 разрубленный, разбитый.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **3d)** — d〉 angehauen oder abgehauen (Baum).
 
 - **RU:** — d〉 надрубленный или срубленный (дерево).
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **3e)** — e〉 erschlagen.
 
 - **RU:** — e〉 убитый.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **3f)** — f〉 = *śāstravid* [GAL.] Vgl. *aprahata*.
 
 - **RU:** — f〉 = *śāstravid* [GAL.] Vgl. *aprahata*.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **mit-T7-1)** — Mit *abhipra*
 — 1〉 überwältigen.
 
 - **RU:** — Mit *abhipra*
 — 1〉 одолевать, побеждать.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **mit-T7-2)** — 2〉 *abhiprahata* verwundet (Baum).
 
 - **RU:** — 2〉 *abhiprahata* повреждённый (дерево).
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **mit-T9-T10-T11-T12)** — Mit *nipra* mit Gen. Vgl. *niṣpra*.
 
 - **RU:** — Mit *nipra* mit Gen. Vgl. *niṣpra*.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **mit-T13-T14-T15)** — Mit *niṣpra* niederschlagen, tödten; mit Gen. [ŚIŚ. 14,82].
 
 - **RU:** — Mit *niṣpra* сражать, убивать; mit Gen. [ŚIŚ. 14,82].
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **mit-T16-T17-T20)** — Mit *vipra*, *viprahata* geschlagen (ein Heer), getroffen, mitgenommen. Vgl. *aviprahata* [Nachtr. 2].
 
 - **RU:** — Mit *vipra*, *viprahata* разбитый (войско), поражённый, пострадавший. Vgl. *aviprahata* [Nachtr. 2].
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **mit-T21-1)** — Mit *prati*
 — 1〉 schlagen gegen (Gen.), losfahren auf Jmd (Acc.).
 
 - **RU:** — Mit *prati*
 — 1〉 бить в (Gen.), нападать на кого-л. (Acc.).
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **mit-T21-2)** — 2〉 niederschlagen [MBH. 12,230,9].
 
 - **RU:** — 2〉 сражать [MBH. 12,230,9].
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **mit-T21-3)** — 3〉 zerschlagen, brechen.
 
 - **RU:** — 3〉 разбивать, ломать.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **mit-T21-4)** — 4〉 anspiessen.
 
 - **RU:** — 4〉 насаживать на кол/вертел.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **mit-T21-5)** — 5〉 zurückschlagen, abwehren, sich wehren gegen, fernhalten, verscheuchen, hemmen, aufhalten, vereiteln. *ājñām* so v. a. sich um Jmds Befehle nicht kümmern [ŚIŚ. 16,80].
 
 - **RU:** — 5〉 отбивать, отражать, защищаться от, держать на расстоянии, отгонять, сдерживать, останавливать, расстраивать. *ājñām* так v. a. не считаться с чьими-л. приказаниями [ŚIŚ. 16,80].
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **mit-T21-6)** — 6〉 Pass. mit Abl. fern gehalten werden von, verlustig gehen.
 
 - **RU:** — 6〉 Pass. mit Abl. быть отстранённым от, лишаться.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **mit-T21-7)** — 7〉 Absol. *pratihatya* in entgegengesetzter Richtung.
 
 - **RU:** — 7〉 Absol. *pratihatya* в противоположном направлении.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **mit-T21-8)** — 8〉 *pratihata*
 
 - **RU:** — 8〉 *pratihata*
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **mit-T21-8a)** — a〉 wogegen Etwas schlägt.
 
 - **RU:** — a〉 то, обо что что-л. ударяется.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **mit-T21-8b)** — b〉 anschlagend an (Loc. oder im Comp. vorangehend).
 
 - **RU:** — b〉 ударяющийся о (Loc. или предшествующий в Comp.).
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **mit-T21-8c)** — c〉 zurückgeschlagen, abgewehrt (〔105,8〕), zurückgewiesen, abgewiesen, gehemmt, aufgehalten, unterblieben.
 
 - **RU:** — c〉 отражённый, отбитый (〔105,8〕), отвергнутый, отклонённый, сдержанный, остановленный, не случившийся.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **mit-T21-8d)** — d〉 in seiner Function gehemmt, von den Augen so v. a. geblendet, von den Zähnen so v. a. stumpf (von Säuren).
 
 - **RU:** — d〉 нарушенный в своей функции,отказывающий; о глазах так v. a. ослеплённый; о зубах так v. a. притуплённый (от кислот).
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **mit-T21-8e)** — e〉 feindselig in *pratihatadhī*.
 
 - **RU:** — e〉 враждебный в *pratihatadhī*.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **mit-T21-8f)** — f〉 in seinen Erwartungen getäuscht.
 
 - **RU:** — f〉 обманутый в своих ожиданиях.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **mit-T21-8g)** — g〉 schlechte Lesart für *prahita*. Vgl. *apratihata*.
 
 - **RU:** — g〉 ошибочное чтение вместо *prahita*. Vgl. *apratihata*.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **mit-T21-T41-T43)** — Caus. s. u. *ghātay*.
 
 - **RU:** — Caus. s. u. *ghātay*.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **mit-T44-T45)** — Mit *saṃprati* Pass. sich stossen.
 
 - **RU:** — Mit *saṃprati* Pass. сталкиваться.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **mit-T46-1)** — Mit *vi*
 — 1〉 zerschlagen, zerbrechen, zerstören.
 
 - **RU:** — Mit *vi*
 — 1〉 разбивать, ломать, разрушать.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **mit-T46-2)** — 2〉 aus einandertreiben.
 
 - **RU:** — 2〉 рассеивать, разгонять.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **mit-T46-3)** — 3〉 auseinanderschlagen, so v. a. ausstrecken (ein Fell).
 
 - **RU:** — 3〉 разбивать врозь, так v. a. растягивать (шкуру).
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **mit-T46-4)** — 4〉 abreissen.
 
 - **RU:** — 4〉 отрывать.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **mit-T46-5)** — 5〉 lösen (Flechten).
 
 - **RU:** — 5〉 распускать (косы).
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **mit-T46-6)** — 6〉 abschlagen, abwehren, sich wehren gegen.
 
 - **RU:** — 6〉 отражать, отбивать, защищаться от.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **mit-T46-7)** — 7〉 stören, hemmen, unterdrücken.
 
 - **RU:** — 7〉 нарушать, препятствовать, подавлять.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **mit-T46-8)** — 8〉 vorenthalten.
 
 - **RU:** — 8〉 утаивать, не давать.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **mit-T46-9)** — 9〉 zu Nichte machen [ŚIŚ. 12,67. 14,8. 19,49].
 
 - **RU:** — 9〉 уничтожать, сводить на нет [ŚIŚ. 12,67. 14,8. 19,49].
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **mit-T46-10)** — 10〉 Pass.
 
 - **RU:** — 10〉 Pass.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **mit-T46-10a)** — a〉 von keinem Nutzen sein.
 
 - **RU:** — a〉 быть бесполезным.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **mit-T46-10b)** — b〉 sich quälen, sich Sorge machen, sich unnütz abmühen.
 
 - **RU:** — b〉 терзаться, беспокоиться, напрасно изнурять себя.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **mit-T46-11)** — 11〉 häufig fehlerhaft für *nihan*.
 
 - **RU:** — 11〉 часто ошибочно вместо *nihan*.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **mit-T46-12)** — 12〉 *vihata*
 
 - **RU:** — 12〉 *vihata*
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **mit-T46-12a)** — a〉 aufgerissen, aufgewühlt.
 
 - **RU:** — a〉 взрытый, взбороздённый.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **mit-T46-12b)** — b〉 herausgeschlagen aus (Abl.).
 
 - **RU:** — b〉 выбитый из (Abl.).
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **mit-T46-12c)** — c〉 getroffen, heimgesucht.
 
 - **RU:** — c〉 поражённый, постигнутый (бедой).
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **mit-T46-12d)** — d〉 zurückgewiesen, angewiesen (Person).
 
 - **RU:** — d〉 отклонённый, отосланный (о лице).
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **mit-T46-12e)** — e〉 abgeschlagen, abgewehrt.
 
 - **RU:** — e〉 отражённый, отбитый.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **mit-T46-12f)** — f〉 gestört, gehemmt.
 
 - **RU:** — f〉 нарушенный, остановленный.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **T53-T55)** — Caus. s. u. *ghātay*.
 
 - **RU:** — Caus. s. u. *ghātay*.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **T56-T57-desid)** — Desid. stören —, hemmen wollen.
 
 - **RU:** — Desid. желать нарушить, желать остановить.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **T57-T59-caus)** — Intens. (*vijījahi* ?) Jmd (Acc.) ein Leid zufügen.
 
 - **RU:** — Intens. (*vijījahi* ?) причинять кому-л. (Acc.) вред, наносить ущерб.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **mit-T60-T64)** — Mit *anuvi*, *˚hanti* [MBH. 12,56,51] nach [KERN] fehlerhaft für *anuvahanti*.
 
 - **RU:** — Mit *anuvi*, *˚hanti* [MBH. 12,56,51] по [KERN] ошибочно вместо *anuvahanti*.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **mit-T65-T66)** — Mit *āvi* (!) hauen auf (Acc.).
 
 - **RU:** — Mit *āvi* (!) рубить по (Acc.).
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **mit-T67-T68)** — Mit *pravi*, *pravihata* zurück-, in die Flucht geschlagen.
 
 - **RU:** — Mit *pravi*, *pravihata* отброшенный, обращённый в бегство.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **mit-T69-T70)** — Mit *prativi* in *prativighāta*.
 
 - **RU:** — Mit *prativi* в *prativighāta*.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **mit-T71-1)** — Mit *sam*
 — 1〉 zuklappen, zusammenlegen, schliessen.
 
 - **RU:** — Mit *sam*
 — 1〉 захлопывать, складывать, закрывать.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **mit-T71-2)** — 2〉 zusammenballen; Pass. sich ballen, fest —, consistent werden. *pṛthivyādibhāvena* zu Erde u. s. w. [ŚAṂK. zu BĀDAR. 2,2,18]. *kṛṣṇāyasasyeva* *ca* *te* *saṃhatyā* *hṛdayaṃ* *kṛtam* so v. a. dein Herz ist gleichsam aus Eisen zusammengehämmert.
 
 - **RU:** — 2〉 сжимать в комок, скатывать; Pass. сжиматься, становиться плотным, твердеть. *pṛthivyādibhāvena* на землю u. s. w. [ŚAṂK. zu BĀDAR. 2,2,18]. *kṛṣṇāyasasyeva* *ca* *te* *saṃhatyā* *hṛdayaṃ* *kṛtam* так v. a. твоё сердце словно выковано из железа.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **mit-T71-3)** — 3〉 zusammensetzen, -fügen. Pass. verbunden werden, sich verbinden.
 
 - **RU:** — 3〉 составлять, соединять. Pass. быть соединённым, соединяться.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **mit-T71-4)** — 4〉 Med. aufeinanderstossen, zusammenstossen mit (Instr.) [ṚV. 9,14,4].
 
 - **RU:** — 4〉 Med. сталкиваться, столкнуться с (Instr.) [ṚV. 9,14,4].
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **mit-T71-5)** — 5〉 zerschlagen, zerbrechen.
 
 - **RU:** — 5〉 разбивать, ломать.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **mit-T71-6)** — 6〉 Absol. *saṃhatya* (auch mit *anyo'nyam*) sich zusammen thuend, in Gemeinschaft, vereint, zusammen, im Verein mit (Instr.).
 
 - **RU:** — 6〉 Absol. *saṃhatya* (auch mit *anyo'nyam*) действуя сообща, совместно, объединённо, вместе, в союзе с (Instr.).
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **mit-T71-7)** — 7〉 *saṃhata*
 
 - **RU:** — 7〉 *saṃhata*
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **mit-T71-7a)** — a〉 an —, auf einander gelegt, zusammengefügt, geschlossen, zusammenstossend, an schliessend, eng verbunden, — mit (Instr.), zusammenhängend, zusammenhaltend, einen Haufen bildend.
 
 - **RU:** — a〉 наложенный друг на друга, соединённый, сомкнутый, соприкасающийся, примыкающий, тесно связанный, — с (Instr.), связный, нераздельный, образующий кучу.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **mit-T71-7b)** — b〉 fest —, compact geworden, fest, hart, compact (〔73,12〕); von festem, compacten Gliederbau.
 
 - **RU:** — b〉 ставший плотным, твёрдый, жёсткий, компактный (〔73,12〕); крепкого, плотного телосложения.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **mit-T71-7c)** — c〉 stark, intensiv.
 
 - **RU:** — c〉 сильный, интенсивный.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **mit-T71-7d)** — d〉 als Bez. eines best. Geruchs und Tons intensiv oder zusammengesetzt.
 
 - **RU:** — d〉 как Bez. best. запаха и звука — интенсивный или сложный.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **T95-T96)** — Caus. in *saṃghātana*.
 
 - **RU:** — Caus. в *saṃghātana*.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **mit-T97-1)** — Mit *abhisam*
 — 1〉 Absol. *abhisaṃhatya* sich zusammenthuend, in Gemeinschaft, vereint.
 
 - **RU:** — Mit *abhisam*
 — 1〉 Absol. *abhisaṃhatya* действуя сообща, совместно, объединённо.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **mit-T97-2)** — 2〉 *abhisaṃhata* angegriffen, befeindet.
 
 - **RU:** — 2〉 *abhisaṃhata* атакованный, враждебно встреченный.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **mit-T101-T105)** — Mit *pratisam*, *anyo'nyapratisaṃhatau* mit einander verbunden. *pratisaṃhata* auch schlechte v. l. für *pratisaṃhṛta*.
 
 - **RU:** — Mit *pratisam*, *anyo'nyapratisaṃhatau* связанный друг с другом. *pratisaṃhata* также ошибочное v. l. вместо *pratisaṃhṛta*.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **mit-T106-T107)** — Mit *visam*, *visaṃhata* aus der festen Verbindung gebracht, gelockert.
 
 - **RU:** — Mit *visam*, *visaṃhata* выведенный из прочного соединения, ослабленный.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>

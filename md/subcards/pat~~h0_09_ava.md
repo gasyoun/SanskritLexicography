@@ -31,7 +31,7 @@
 [HARIV. 9455.] *phalairvṛkṣāvapatitaiḥ*
 [R. 2,28,12.] *keśakīṭāvapatita* upon which a head-louse has fallen
 [MBH. 13,1577]; vgl. u. *pad* with *ava* . Vgl. *avapāta* .
-  <sub>DCS 25 · attested</sub>
+  <sub>attested</sub>
 
 **2_caus)** — caus. niederwerfen: *laghūnunnamayanbhāvāngurūnapyavapātayan (prabhañjanaḥ)*
 [KATHĀS. 25,42.] Vgl. *avapātana* .
@@ -40,4 +40,4 @@
 [KATHĀS. 25,42.] Vgl. *avapātana* .
 - **EN:** — caus. to throw down: *laghūnunnamayanbhāvāngurūnapyavapātayan (prabhañjanaḥ)*
 [KATHĀS. 25,42.] Vgl. *avapātana* .
-  <sub>DCS 25 · attested</sub>
+  <sub>attested</sub>

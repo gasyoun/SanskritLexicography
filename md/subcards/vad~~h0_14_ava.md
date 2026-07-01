@@ -7,7 +7,7 @@
 
 - **RU:** — *ava*
 - **EN:** — *ava*
-  <sub>DCS 12 · attested</sub>
+  <sub>attested</sub>
 
 **1)** 1) durch Nachrede Abbruch thun, herabsetzen: *mā śriyo 'vavādiṣmeti duravavadaṃ hi śreyasaḥ*
 [AIT. BR. 5,22.]
@@ -16,7 +16,7 @@
 [AIT. BR. 5,22.]
 - **EN:** 1) to damage by disparagement, to depreciate: *mā śriyo 'vavādiṣmeti duravavadaṃ hi śreyasaḥ*
 [AIT. BR. 5,22.]
-  <sub>DCS 12 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) unterweisen: *asmābhirapyanye bodhisattvā avavaditāḥ* (!)
 [SADDH. P. 4,6,a.]
@@ -25,10 +25,10 @@
 [SADDH. P. 4,6,a.]
 - **EN:** — 2) to instruct: *asmābhirapyanye bodhisattvā avavaditāḥ* (!)
 [SADDH. P. 4,6,a.]
-  <sub>DCS 12 · attested</sub>
+  <sub>attested</sub>
 
 **caus)** — Vgl. *avavada* fgg., *avavāda* .
 
 - **RU:** — Vgl. *avavada* fgg., *avavāda* .
 - **EN:** — Vgl. *avavada* fgg., *avavāda* .
-  <sub>DCS 12 · attested</sub>
+  <sub>attested</sub>

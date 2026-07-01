@@ -94,7 +94,7 @@
 [MĀRK. P. 26,32.] *tadetadbhārataṃ nāma kavibhistūpajīvyate . udayaprepsubhirbhṛtyairabhijāta iveśvaraḥ ..*
 [MBH. 1,308.] *(śrīḥ) bhavadbhiścopajīvitā*
 [18,137.]
-  <sub>DCS 225 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) leben von, für so v. a. betreiben, üben: *na tadā brāhmaṇaḥ kaścitsvadharmamupajīvati*
 [MBH. 3,12840.] *dharmaṃ purāṇamupajīvanti*
@@ -118,7 +118,7 @@
 [MBH. 4,200.] *nopajīveta jīvikām*
 [BHĀG. P. 7,13,7.] *tathā hyasyotthitā buddhirmānuṣyamupajīvitum* to live as a human being
 [HARIV. 4383.]
-  <sub>DCS 225 · attested</sub>
+  <sub>attested</sub>
 
 **note)** Vgl. *upajīvaka* fgg.
 - **EN:** Vgl. *upajīvaka* fgg.
@@ -126,4 +126,4 @@
 **Nachtr.)** — Vgl. *upajīvaka* fgg.
 
 - **RU:** — Vgl. *upajīvaka* fgg.
-  <sub>DCS 225 · attested</sub>
+  <sub>attested</sub>

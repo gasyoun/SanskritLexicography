@@ -43,7 +43,7 @@
 [3,16857.] {to move} (of heavenly bodies): *(pathā) yenāsau saṃprayāsyati*
 [SŪRYAS. 6,16.] *nakharaiḥ saṃprayātaḥ* {proceeding with the claws, making use of the claws}
 [MBH. 12,8863.]
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) (zusammen) in ein Verhältniss, eine Lage, einen Zustand gerathen: *samatām*
 [VARĀH. BṚH. S. 17,2.] *ucchritīḥ*
@@ -55,4 +55,4 @@
 - **EN:** — 2) (to enter together into a relation, situation, or state): *samatām*
 [VARĀH. BṚH. S. 17,2.] *ucchritīḥ*
 [MĀRK. P. 121,28.]
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>

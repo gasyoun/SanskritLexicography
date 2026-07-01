@@ -16,7 +16,7 @@
  1) to speak to someone (acc.): *śiraḥ prati vāmaśvyaṃ vadat*
 [ṚV. 1,119,9.] [8,45,5.] *maṇḍūkau māṃ prati vadataḥ*
 [KAUŚ. 96.]
-  <sub>DCS 13 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) antworten
 [MBH. 13,1452.]
@@ -49,7 +49,7 @@
 [BHAṬṬ. 2,28.] *rājñā ca pratyavādi saḥ*
 [15,9.] *iti pratyuditā* (to rebuff Comm.) *yāmyā dūtāḥ*
 [BHĀG. P. 6,2,21.]
-  <sub>DCS 13 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) nachsprechen, wiederholen: *sa cāpi tatpratyavadadyathoktam*
 [KAṬHOP. 1,15.]
@@ -61,7 +61,7 @@
 - **EN:** — 3) to repeat after, to repeat: *sa cāpi tatpratyavadadyathoktam*
 [KAṬHOP. 1,15.]
 [MBH. 5,4635.]
-  <sub>DCS 13 · attested</sub>
+  <sub>attested</sub>
 
 **caus)** — Vgl. *prativāda* fg. — intens. partic. *prativāvadat* widerredend
 [AIT. BR. 2,3.]
@@ -70,4 +70,4 @@
 [AIT. BR. 2,3.]
 - **EN:** — Vgl. *prativāda* fg. — intens. partic. *prativāvadat* contradicting
 [AIT. BR. 2,3.]
-  <sub>DCS 13 · attested</sub>
+  <sub>attested</sub>

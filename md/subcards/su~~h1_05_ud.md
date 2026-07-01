@@ -13,4 +13,4 @@
 
 - **RU:** — *ud* велеть идти вверх: *ūrdhvāmeva varuṇamenimutsuvati*
 [KĀṬH. 19,5.]
-  <sub>DCS 14088 · attested</sub>
+  <sub>attested</sub>

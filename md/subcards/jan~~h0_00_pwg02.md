@@ -21,4 +21,4 @@
 [ṚV. 4,5,5.] *taṃ taṃ lokaṃ jāyate tāṃśca kāmān*
 [MUṆḌ. UP. 3,1,10.]
 [ŚAṂK.] имеет *jayate* (от *ji*), которое он объясняет через *prāpnoti*. — *jāta* s. bes.
-  <sub>DCS 9250 · attested</sub>
+  <sub>attested</sub>

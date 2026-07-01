@@ -10,4 +10,4 @@
 [GOBH. 1,5,27.]
 - **EN:** — desid. to intend to say, to intend to speak: *satyaṃ vivadiṣet*
 [GOBH. 1,5,27.]
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>

@@ -22,4 +22,4 @@
 [ŚAT. BR. 11,5,3,8.]
 [KĀTY. ŚR. 25,5,29.]
 [KAUŚ. 136.]
-  <sub>DCS 3 · attested</sub>
+  <sub>attested</sub>

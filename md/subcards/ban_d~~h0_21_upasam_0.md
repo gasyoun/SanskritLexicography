@@ -63,7 +63,7 @@
 [HALĀY. 2,375.] *brahmāstreṇa ca bandho vai māruteḥ*
 [R. GORR. 1,4,84.] *baddhau tu śarabandhena bhrātarau raṇamūrdhani*
 [6,20,18.] [5,44,13.] [15.] [MBH. 3,16466.]
-  <sub>DCS 2655 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) das Fangen, Einfangen: *gaja˚*
 [RAGH. 16,2.] *śakunibandhavyasanin*
@@ -96,7 +96,7 @@
 [HARIV. 3294.] *vandhānmokṣayatu mām*
 [14368.] [MĀLAV. 75.] [RĀJA-TAR. 3,121.] *˚mudrā*
 [4,179.]
-  <sub>DCS 2655 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) das Binden, Zusammenfügen in den verschiedensten Verbindungen (s. u. *bandh* 2.): *setorbandhaḥ, setu˚* die Errichtung eines Dammes, — einer Brücke
 [Spr. 2989.]
@@ -171,7 +171,7 @@
 [36]
 [RATIM.] and [SMARADĪP.] in the [ŚKDR.] [Verz. d. Oxf. H. 85,b,48.] *kathā˚* "the tying together of the narrative" thus v. a. "introduction"
 [MBH. 1,59] in the Unterschr.
-  <sub>DCS 2655 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) das Heften, Richten: *deśe nābhicakranāsāgrādau cittasya bandhaḥ*
 [Verz. d. Oxf. H. 236,b, N.]
@@ -180,7 +180,7 @@
 [Verz. d. Oxf. H. 236,b, N.]
 - **EN:** — 4) "the fixing, directing": *deśe nābhicakranāsāgrādau cittasya bandhaḥ*
 [Verz. d. Oxf. H. 236,b, N.]
-  <sub>DCS 2655 · attested</sub>
+  <sub>attested</sub>
 
 **5)** — 5) Verbindung, Verkehr: *ata eva santo nīcabandhaṃ varjayanti*
 [PAÑCAT. 60,19.]
@@ -189,7 +189,7 @@
 [PAÑCAT. 60,19.]
 - **EN:** — 5) "connection, intercourse": *ata eva santo nīcabandhaṃ varjayanti*
 [PAÑCAT. 60,19.]
-  <sub>DCS 2655 · attested</sub>
+  <sub>attested</sub>
 
 **6)** — 6) in der Philos. Gebundenheit (im Gegens. zu *mukti, mokṣa* Erlösung)
 [ŚVETĀŚV. UP. 6,16.] [KAP. 1,56. 87. 156. 3,24.] [BHAG. 18,30.] [SĀṂKHYAK. 44.] [NĪLAK. 10. 15. 19. 63.] [VṚDDHA-CĀṆ. 13,12.] [Verz. d. Oxf. H. 228,a, N.] [BHĀG. P. 4,30,19.] [MĀRK. P. 29,1.] [95,3.] [6.] [15.] [17.] ist im Sāṃkhya dreifach: *prakṛti˚, vaikārika˚, dakṣiṇā˚*
@@ -207,7 +207,7 @@
 [TATTVAS. 46.] Vgl. *karmabandha*
 [BHAG. 2,39.] *janma˚*
 [51.]
-  <sub>DCS 2655 · attested</sub>
+  <sub>attested</sub>
 
 **7)** — 7) das Bekommen, bei-sich-zur-Erscheinung-Bringen, Aeusserung: *adehabandhāya* um nicht ferner einen Körper anzunehmen
 [RAGH. 18,6.] *bhūyastanutyajāṃ nāsti śarīrabandhaḥ*
@@ -234,7 +234,7 @@
 [RAGH. 18,51.] *abhilāṣa˚*
 [6,81.] *lalitavibhramabandhavicakṣaṇa*
 [9,35.]
-  <sub>DCS 2655 · attested</sub>
+  <sub>attested</sub>
 
 **8)** — 8) Band, Fessel
 [H. an. 2,242.]
@@ -295,7 +295,7 @@
 [RĀJA-TAR. 3,122.] *dharmabandhena baddho 'smi*
 [R. 2,106,8.] *satya˚* _adj._ "for whom truth is a fetter, who holds fast to truth"
 [MBH. 1,6779.]
-  <sub>DCS 2655 · attested</sub>
+  <sub>attested</sub>
 
 **9)** — 9) Sehne (am Körper): *pīvaraśca suvarṇaśca dṛḍhabandhaśca jāyate (mārjāraḥ)*
 [MBH. 5,5437.]
@@ -304,7 +304,7 @@
 [MBH. 5,5437.]
 - **EN:** — 9) "sinew" (on the body): *pīvaraśca suvarṇaśca dṛḍhabandhaśca jāyate (mārjāraḥ)*
 [MBH. 5,5437.]
-  <sub>DCS 2655 · attested</sub>
+  <sub>attested</sub>
 
 **10)** — 10) Einfassung, Behälter: *ādhārastvambhasāṃ bandhaḥ*
 [H. 1096.]
@@ -313,7 +313,7 @@
 [H. 1096.]
 - **EN:** — 10) "setting/border, receptacle": *ādhārastvambhasāṃ bandhaḥ*
 [H. 1096.]
-  <sub>DCS 2655 · attested</sub>
+  <sub>attested</sub>
 
 **11)** — 11) Pfand oder vielmehr Verpfändung (vgl. *bandhaka)*
 [H. an.] [MED.]
@@ -322,7 +322,7 @@
 [H. an.] [MED.]
 - **EN:** — 11) "pledge" or rather "pledging" (vgl. *bandhaka)*
 [H. an.] [MED.]
-  <sub>DCS 2655 · attested</sub>
+  <sub>attested</sub>
 
 **12)** {T235}— 12) Körper
 [H. 564.]
@@ -331,11 +331,11 @@
 [H. 564.]
 - **EN:** — 12) "body"
 [H. 564.]
-  <sub>DCS 2655 · attested</sub>
+  <sub>attested</sub>
 
 **etym)** — *upasam* daranbinden: *vetasaśākhopasaṃbaddhā bhavati*
 [TBR. 3,8,4,3.] *bandha* (von *bandh)* _m._ gaṇa *uñchādi (karaṇe* d. i. in der Bed. Band) zu [P. 6,1,160.]
 
 - **RU:** — *upasam* привязывать: *vetasaśākhopasaṃbaddhā bhavati*
 [TBR. 3,8,4,3.] *bandha* (от *bandh)* _m._ gaṇa *uñchādi (karaṇe* d. i. в знач. Bed. связь, лента) к [P. 6,1,160.]
-  <sub>DCS 2655 · attested</sub>
+  <sub>attested</sub>

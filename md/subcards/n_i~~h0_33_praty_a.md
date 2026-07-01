@@ -49,7 +49,7 @@
 *trailokyamidamavyayam . pratyānayasva*
 [12928.] *evamindrāya bhagavānpratyānīya triviṣṭapam*
 [BHĀG. P. 8,23,4.]
-  <sub>DCS 2376 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) wieder zugiessen, nachgiessen: *apaḥ pratyānayati*
 [ŚAT. BR. 2,3,1,16.] [1,7,1,18.] [14,2,2,40.]
@@ -64,4 +64,4 @@
 [ŚAT. BR. 2,3,1,16.] [1,7,1,18.] [14,2,2,40.]
 [KAUŚ. 62. 109.] — desid. to attempt to restore to order: *apanītaṃ sunītena yo 'rthaṃ pratyāninīṣate*
 [MBH. 5,1499.]
-  <sub>DCS 2376 · attested</sub>
+  <sub>attested</sub>

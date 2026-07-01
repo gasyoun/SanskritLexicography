@@ -16,4 +16,4 @@
 [ṚV. 3,53,5.]
 [AV. 18,3,14.] — caus.
 [KAUŚ. 88.]
-  <sub>DCS 3 · attested</sub>
+  <sub>attested</sub>

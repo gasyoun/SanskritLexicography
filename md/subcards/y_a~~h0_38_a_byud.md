@@ -10,4 +10,4 @@
 [MBH. 6,5217.] *abhyudyato* st. *abhyudyāto* [ed. Bomb.]
 - **EN:** — *abhyud* to rise up against someone
 [MBH. 6,5217.] *abhyudyato* st. *abhyudyāto* [ed. Bomb.]
-  <sub>DCS 13 · attested</sub>
+  <sub>attested</sub>

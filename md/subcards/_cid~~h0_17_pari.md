@@ -7,7 +7,7 @@
 
 - **RU:** — *pari*
 - **EN:** — *pari*
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **1)** 1) auf beiden Seiten abschneiden, beschneiden: *amūlaṃ vā ubhayataḥ paricchinnaṃ rakṣaḥ*
 [ŚAT. BR. 1,1,2,4.] [3,1,3,13.] *tṛṇam*
@@ -19,7 +19,7 @@
 - **EN:** 1) to cut off on both sides, to trim: *amūlaṃ vā ubhayataḥ paricchinnaṃ rakṣaḥ*
 [ŚAT. BR. 1,1,2,4.] [3,1,3,13.] *tṛṇam*
 [LĀṬY. 2,1,6.]
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) abschneiden: *vāsaso 'rdhaṃ paricchidya*
 [MBH. 3,2593.] zerschneiden, verstümmeln: *te nipetuḥ paricchinnā bhūmau rāmasya sāyakaiḥ*
@@ -31,7 +31,7 @@
 - **EN:** — 2) to cut off: *vāsaso 'rdhaṃ paricchidya*
 [MBH. 3,2593.] to cut up, mutilate: *te nipetuḥ paricchinnā bhūmau rāmasya sāyakaiḥ*
 [R. 3,32,26.]
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) abscheiden, absondern: *śatena śatena vatsānpāyayati payaḥ . śatena paricchidyetyarthaḥ*
 [SIDDH. K.] zu [P. 2,3,27.]
@@ -40,7 +40,7 @@
 [SIDDH. K.] zu [P. 2,3,27.]
 - **EN:** — 3) to separate off, to segregate: *śatena śatena vatsānpāyayati payaḥ . śatena paricchidyetyarthaḥ*
 [SIDDH. K.] to [P. 2,3,27.]
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) nach allen Seiten abgrenzen, genau bestimmen, genau angeben, richtig abschätzen, sich Gewissheit über Etwas oder Jmd verschaffen
 [Z. d. d. m. G. 7,310, N. 1.] [P. 2,1,28], Sch. *yasya na cānubandhi yaśaḥ paricchettumiyattayālam*
@@ -82,10 +82,10 @@ Sch. zu [KAP. 1,28. 49. 50.] [VEDĀNTAS. (Allah.) No. 36.]
 [BHĀG. P. 3,10,12] ([BURN.]: apparaît â l'existence avec ses divisions, par la volonté de l'Être suprême). *paricchinna* delimited, restricted: *paricchinnaṃ na sarvopādānam*
 [KAP. 1,77.]
 Sch. to [KAP. 1,28. 49. 50.] [VEDĀNTAS. (Allah.) No. 36.]
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>
 
 **caus)** — Vgl. *paricchitti* u. s. w.
 
 - **RU:** — Vgl. *paricchitti* u. s. w.
 - **EN:** — Vgl. *paricchitti* u. s. w.
-  <sub>DCS 2209 · attested</sub>
+  <sub>attested</sub>

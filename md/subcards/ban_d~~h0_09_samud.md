@@ -10,4 +10,4 @@
 [MBH. 4,1545.]
 - **EN:** — *samud* "to bind fast": *ātmānaṃ kaḥ samudbadhya kaṇṭhe baddhvā mahāśilām . samudraṃ pratareddorbhyām*
 [MBH. 4,1545.]
-  <sub>DCS 1 · attested</sub>
+  <sub>attested</sub>

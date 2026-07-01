@@ -13,4 +13,4 @@
 - **EN:** 1. *mad*¦
  1) *mādyati yastena (jñānena)* one who lets himself be intoxicated by
 [Spr. (II) 2454.]
-  <sub>DCS 63834 · attested</sub>
+  <sub>attested</sub>

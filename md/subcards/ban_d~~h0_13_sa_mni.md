@@ -17,7 +17,7 @@
 
 - **RU:** — Vgl. *saṃnibandha* u. s. w.
 - **EN:** — Vgl. *saṃnibandha* u. s. w.
-  <sub>DCS 3 · attested</sub>
+  <sub>attested</sub>
 
 **1))** — *saṃni*, partic. *saṃnibaddha* geknüpft an, hängend an, abhängend von: *saṃsāre saṃnibaddhānāṃ nigaḍacchedakartarī*
 [BRAHMAVAIV. P.] in [Verz. d. Oxf. H. 20,b,8.] *bharate saṃnibaddhāḥ sma śaunike paśavo yathā*
@@ -28,4 +28,4 @@
 [BRAHMAVAIV. P.] в [Verz. d. Oxf. H. 20,b,8.] *bharate saṃnibaddhāḥ sma śaunike paśavo yathā*
 [R. 2,48,25.] усеянный чем-л.: *krīḍāśca* (места для игр) *nānādrumasaṃnibaddhāḥ*
 [MBH. 3,12318.]
-  <sub>DCS 3 · attested</sub>
+  <sub>attested</sub>

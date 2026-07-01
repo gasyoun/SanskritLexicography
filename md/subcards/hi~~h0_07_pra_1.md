@@ -10,7 +10,7 @@
 [MBH. 4,69.]
 - **EN:** — e) sent to (loc.); thus v. a. charged with the care of —, entrusted with — : *ahaṃ hi satataṃ goṣu bhavatā prahitaḥ purā*
 [MBH. 4,69.]
-  <sub>DCS 434 · attested</sub>
+  <sub>attested</sub>
 
 **10)** — 10) partic. *prahitavant* der ausgesandt hat, st. des verbi finiti
 [R. 4,32,12.]
@@ -37,10 +37,10 @@
 [119,a.] *prajighāpa˚*
 
 [P.] [ed. Calc.] [7,3,56.]
-  <sub>DCS 434 · attested</sub>
+  <sub>attested</sub>
 
 **caus_desid)** — Vgl. *prahāyya, prahitaṃgama, prahetar* fgg.
 
 - **RU:** — Vgl. *prahāyya, prahitaṃgama, prahetar* fgg.
 - **EN:** — Vgl. *prahāyya, prahitaṃgama, prahetar* fgg.
-  <sub>DCS 434 · attested</sub>
+  <sub>attested</sub>

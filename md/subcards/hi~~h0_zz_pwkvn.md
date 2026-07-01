@@ -7,4 +7,4 @@
 
 - **RU:** **1.** *hi*¦ с *anupra* VII. *˚hita* выпущенный (стрелой), отстреленный [KIR. 17,93].
 - **EN:** **1.** *hi*¦ with *anupra* VII. *˚hita* shot off, discharged [KIR. 17,93].
-  <sub>DCS 23914 · attested</sub>
+  <sub>attested</sub>

@@ -10,4 +10,4 @@
 [AIT. BR. 3,28.]
 - **EN:** — *anuparyā* to come back again to: *vittaṃ nāvakṣarāṇyanuparyāguriti*
 [AIT. BR. 3,28.]
-  <sub>DCS 1 · attested</sub>
+  <sub>attested</sub>

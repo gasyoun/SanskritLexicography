@@ -42,18 +42,18 @@
 [CHĀND. UP. 1,5,2. 4.] *tadetadgāthayābhigītam*
 [ŚAT. BR. 13,5,4,2. fgg.] *(gāyanau) rājadhānīṣu rājñāṃ ca samājeṣvabhyagāyatām*
 [R. 1,4,24.]
-  <sub>DCS 138 · attested</sub>
+  <sub>attested</sub>
 
 **deriv)** — Vgl. *abhigeṣṇa* .
 
 - **RU:** — Vgl. *abhigeṣṇa* .
 - **EN:** — Vgl. *abhigeṣṇa* .
-  <sub>DCS 138 · attested</sub>
+  <sub>attested</sub>
 
 **prefix_marker)** — *abhi*
 
 - **RU:** — *abhi*
-  <sub>DCS 138 · attested</sub>
+  <sub>attested</sub>
 
 **1a)** 1) Jmd (acc.) zusingen, zurufen: *(yūnaḥ) abhi sobhare girā . gāya gā iva carkṛṣat*
 [ṚV. 8,20,19.] *indram*
@@ -64,16 +64,16 @@
 [ṚV. 8,20,19.] *indram*
 [32,13.] [46,14.] *punānam*
 [9,105,1.] *apaghnanneṣi pavamāna śatrūnpriyāṃ na jāro abhigīta induḥ*
-  <sub>DCS 138 · attested</sub>
+  <sub>attested</sub>
 
 **1b)** [96,23.] mit seinem Gesange erfüllen: *bhṛṅgarājābhigītāni (vanāni)*
 
 - **RU:** [96,23.] наполнять своим пением: *bhṛṅgarājābhigītāni (vanāni)*
-  <sub>DCS 138 · attested</sub>
+  <sub>attested</sub>
 
 **1c)** [R. 6,15,11.] incantare: *indragāthābhirvai devā asurānabhigāyāthainānatyāyan*
 [AIT. BR. 6,32.]
 
 - **RU:** [R. 6,15,11.] incantare, завораживать пением: *indragāthābhirvai devā asurānabhigāyāthainānatyāyan*
 [AIT. BR. 6,32.]
-  <sub>DCS 138 · attested</sub>
+  <sub>attested</sub>

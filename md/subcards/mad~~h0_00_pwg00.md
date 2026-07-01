@@ -39,7 +39,7 @@ Schol. zu [P. 3,1,34.] [4,7.] [94.] [97]), *amandiṣus, (pra) mamandat, (abhipr
 [NAIGH. 1,16.] = *arcati*
 [3,14.] *stutimodasvapnagatiṣu*
 [DHĀTUP. 2,12.] according to others also *kāntau* and *jāḍye*.
-  <sub>DCS 63834 · attested</sub>
+  <sub>attested</sub>
 
 **1)** 1) act., selten med. (von *mand* dagegen nur med.) sich freuen, fröhlich sein, sich ergötzen, schwelgen in, sich wohlbefinden bei, sich gütlich thun an oder in Etwas (instr., gen., loc., selten acc.); sich in Etwas berauschen: *rayiṃ yena vayaṃ madema*
 [ṚV. 7,1,24.] [4,42,10.] *rāyā madema tanvā3 tanā ca*
@@ -198,7 +198,7 @@ Schol. zu [P. 3,1,34.] [4,7.] [94.] [97]), *amandiṣus, (pra) mamandat, (abhipr
 [43,4.] *mandamānaḥ* joyful
 [6,67,5.] [1,51,11.] [122,13.] *asminno adya savane mandadhyai*.
 [4,16,2.] [VĀLAKH. 4,2. 8,7,14.]
-  <sub>DCS 63834 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) namentlich zur Bezeichnung des Freudenlebens der Götter und Seligen: selig sein: *yatra devāso madanti*
 [ṚV. 8,29,7.] [3,6,8.] *yatra devayavo madanti*
@@ -219,7 +219,7 @@ Schol. zu [P. 3,1,34.] [4,7.] [94.] [97]), *amandiṣus, (pra) mamandat, (abhipr
 [10,14,10.] [17,8.] *yatra devaiḥ sadhamādaṃ madema*
 [TBR. 3,1,1,10] in [Z. f. d. K. d. M. 7,269.] *yadvā śakra parāvati samudre adhi mandase*
 [ṚV. 8,12,17.]
-  <sub>DCS 63834 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) das Wallen des Wassers wird als Lustigkeit bezeichnet: *apāmūrmirmadanniva stoma indrājirāyate* lustig wie die Wasserwelle
 [ṚV. 8,14,10.] *madantībhirmārjayante nirhyagniḥ śītena vāyati* kochendes Wasser
@@ -246,7 +246,7 @@ Schol. zu [P. 3,1,34.] [4,7.] [94.] [97]), *amandiṣus, (pra) mamandat, (abhipr
 [KAUŚ. 103.]
 [Ind. St. 9,215.] *āpo devya ṛṣīṇāṃ viśvadhātryo divya madantyo yāḥ śaṃkarā dharmadhātryaḥ* (so the more recent Ausg.)
 [HARIV. 7794.]
-  <sub>DCS 63834 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) schlafen (nach
 [MAHĪDH.]): *agne tvaṃ su jāgṛhi vayaṃ su mandiṣīmahi*
@@ -256,7 +256,7 @@ Schol. zu [P. 3,1,34.] [4,7.] [94.] [97]), *amandiṣus, (pra) mamandat, (abhipr
 [VS. 4,14.] было бы достаточно: мы хотим устроиться удобно.
 - **EN:** — 4) to sleep (according to [MAHĪDH.]): *agne tvaṃ su jāgṛhi vayaṃ su mandiṣīmahi*
 [VS. 4,14.] it would suffice: we wish to make ourselves comfortable.
-  <sub>DCS 63834 · lexicographic</sub>
+  <sub>lexicographic</sub>
 
 **5)** — 5) trans. erfreuen, ergötzen, erheitern; berauschen: *sa tvāmadadvṛṣā madaḥ*
 [ṚV. 1,80,2.] [84,5.] *soma indraṃ mamāda*
@@ -292,7 +292,7 @@ Schol. zu [P. 3,1,34.] [4,7.] [94.] [97]), *amandiṣus, (pra) mamandat, (abhipr
 [165,11.] *avīvṛdhadvo amṛtā amandīt*
 [8,69,10.] [VĀLAKH. 2,2.] *yuvatirmamanduṣī*
 [ṚV. 5,61,9.]
-  <sub>DCS 63834 · attested</sub>
+  <sub>attested</sub>
 
 **6)** — 6) partic. *matta* freudigerregt, ausgelassen vor Freude
 [AK. 3,2,52.]
@@ -388,4 +388,4 @@ Schol. zu [P. 3,1,34.] [4,7.] [94.] [97]), *amandiṣus, (pra) mamandat, (abhipr
 [MBH. 1,6005.] [7671.] [12,4259.] *nitya˚*
 [R. 1,6,24.] [3,52,46.]
 [Spr. 1233.] [1638.] [2091] — [2093.] [RAGH. 12,93.]
-  <sub>DCS 63834 · attested</sub>
+  <sub>attested</sub>

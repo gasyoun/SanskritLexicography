@@ -61,7 +61,7 @@
 [22,13.] *indre bhujaṃ śaśamānāsa āśata*
 [92,7.] *ātmanā bhujamaśnutām* so v. a. may he rejoice in his life
 [AV. 8,2,8.]
-  <sub>DCS 2938 · attested</sub>
+  <sub>attested</sub>
 
 **2a)** — 2) _adj._ am Ende eines comp.
  a) geniessend, essend
@@ -142,7 +142,7 @@
 [H. 4.] *kāśyaṣī˚*
 [RĀJA-TAR. 1,45.] Exceptionally not compounded with its obj.: *na prakāmabhujaḥ śrāddhe*
 [RAGH. 1,66]; vgl. *agra˚* .
-  <sub>DCS 2938 · attested</sub>
+  <sub>attested</sub>
 
 **2b)** — b) den Lohn für Etwas geniessend: *kilviṣa˚*
 [MĀRK. P. 29,30.]
@@ -151,7 +151,7 @@
 [MĀRK. P. 29,30.]
 - **EN:** — b) enjoying the reward for something: *kilviṣa˚*
 [MĀRK. P. 29,30.]
-  <sub>DCS 2938 · attested</sub>
+  <sub>attested</sub>
 
 **2c)** — c) Nutzen bringend, frommend: *viśva˚*
 [MAITRYUP. 5,1. 6. 9.]
@@ -160,7 +160,7 @@
 [MAITRYUP. 5,1. 6. 9.]
 - **EN:** — c) bringing benefit, being profitable: *viśva˚*
 [MAITRYUP. 5,1. 6. 9.]
-  <sub>DCS 2938 · attested</sub>
+  <sub>attested</sub>
 
 **2d)** — d) durchlaufend, erfüllend: *vyakta˚ (kāla)*
 [BHĀG. P. 3,11,3.] *aviśeṣa˚ (kāla)* 4.
@@ -172,7 +172,7 @@
 — Vgl. *a˚, agra˚, anna˚, amṛta˚, kaṇa˚, kaṇṭaka˚*
 ([HIT. 121,16]). *kravya˚, kṣiti˚, kṣitilava˚, kṣauṇī˚, kṣmā˚, jagatī˚, taru˚, deha˚, dhārā˚, pāṇi˚, piśita˚, puru˚, pṛthivī˚, pṛthvī˚, phaṇi˚, vali˚, bahu˚* (also
 [SUŚR. 2,542. 5]), *bhāga˚, bhikṣā˚, bhujaṃga˚, bhū˚, bhūmi˚, bheka˚, bhaikṣa˚, mita˚, yajña˚, yajñāṃśa˚, lepa˚, vetana˚, stana˚, havirbhuj, haviṣya˚* .
-  <sub>DCS 2938 · attested</sub>
+  <sub>attested</sub>
 
 **nachtr)** — Vgl. *a˚, agra˚, anna˚, amṛta˚, kaṇa˚, kaṇṭaka˚*
 ([HIT. 121,16]). *kravya˚, kṣiti˚, kṣitilava˚, kṣauṇī˚, kṣmā˚, jagatī˚, taru˚, deha˚, dhārā˚, pāṇi˚, piśita˚, puru˚, pṛthivī˚, pṛthvī˚, phaṇi˚, vali˚, bahu˚* (auch
@@ -181,4 +181,4 @@
 - **RU:** — Vgl. *a˚, agra˚, anna˚, amṛta˚, kaṇa˚, kaṇṭaka˚*
 ([HIT. 121,16]). *kravya˚, kṣiti˚, kṣitilava˚, kṣauṇī˚, kṣmā˚, jagatī˚, taru˚, deha˚, dhārā˚, pāṇi˚, piśita˚, puru˚, pṛthivī˚, pṛthvī˚, phaṇi˚, vali˚, bahu˚* (также
 [SUŚR. 2,542. 5]), *bhāga˚, bhikṣā˚, bhujaṃga˚, bhū˚, bhūmi˚, bheka˚, bhaikṣa˚, mita˚, yajña˚, yajñāṃśa˚, lepa˚, vetana˚, stana˚, havirbhuj, haviṣya˚* .
-  <sub>DCS 2938 · attested</sub>
+  <sub>attested</sub>

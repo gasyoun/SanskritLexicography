@@ -18,4 +18,4 @@
 [ṚV. 7,83,8.]
 [AIT. BR. 2,31.] *baddho vā pariyatto vendraṃ trātāramupadhāvati*
 [TS. 2,2,7,5.]
-  <sub>DCS 6 · attested</sub>
+  <sub>attested</sub>

@@ -13,4 +13,4 @@
 - **EN:** — *pratyā* to go back, return: *yeneto gaccheyuranyena pratyāvrajeyuḥ*
 [LĀṬY. 4,4,17. 1,5,12. 6,11. 4,9,4.]
 [ĀŚV. GṚHY. 4,5,10. 6,4.]
-  <sub>DCS 1202 · attested</sub>
+  <sub>attested</sub>

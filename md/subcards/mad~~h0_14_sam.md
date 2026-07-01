@@ -11,7 +11,7 @@
 - **EN:** — *sam*
  1) to delight oneself together with others: *yaḥ suṣvāṇebhirmadati saṃ ha vīraiḥ*
 [ṚV. 4,29,2.]
-  <sub>DCS 19 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) mit Etwas d. h. an Etwas sich ergötzen: *samandhasā mamadaḥ pṛṣṭhyena*
 [ṚV. 4,20,4.] *rāyaspoṣeṇa samiṣā madema*
@@ -50,7 +50,7 @@
 [1,1369.] [HARIV. 4548.] *matāntara˚*
 [Verz. d. Oxf. H. 255,b,20.] in rut (Elephant): *(tam) abhyadravata saṃmatto (saṃmato* [ed. Bomb.]) *vane mattamiva dvipam*
 [MBH. 6,5428.]
-  <sub>DCS 19 · attested</sub>
+  <sub>attested</sub>
 
 **caus)** — Vgl. *saṃmada, saṃmāda* . — caus. in heitere Stimmung versetzen; betrunken machen: *devikāśca devīścobhayīryajñe samamādayam*
 [AIT. BR. 3,48.] med. begeistert oder betrunken sein: *sameva tṛtīyasavane mādayante*
@@ -62,9 +62,9 @@
 - **EN:** — Vgl. *saṃmada, saṃmāda* . — caus. to put into a cheerful mood; to make drunk: *devikāśca devīścobhayīryajñe samamādayam*
 [AIT. BR. 3,48.] med. to be inspired or drunk: *sameva tṛtīyasavane mādayante*
 [6,11.]
-  <sub>DCS 19 · attested</sub>
+  <sub>attested</sub>
 
 **head-ref)** — *sam*
 
 - **RU:** — *sam*
-  <sub>DCS 19 · attested</sub>
+  <sub>attested</sub>

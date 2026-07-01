@@ -19,7 +19,7 @@
 [ṚV. 1,116,8.] [118,7.] *kvainamavabhṛthamavaneṣyasi*
 [ŚAT. BR. 11,7,2,7.] *aśvānapo 'vanīyamānān*
 [KĀTY. ŚR. 14,3,3.]
-  <sub>DCS 202 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) abgiessen, herabgiessen, darübergiessen
 [AV. 7,94,1.]
@@ -52,4 +52,4 @@
 [CHĀND. UP. 5,2,4.] — This usage cannot be attested in later texts, since *nāvanīta*
 [MBH. 5,7319] = [BENF. Chr. 43,29] _adj._ from *navanīta* .
 — Vgl. *avanaya, ˚nayana, ˚nāya* .
-  <sub>DCS 202 · attested</sub>
+  <sub>attested</sub>

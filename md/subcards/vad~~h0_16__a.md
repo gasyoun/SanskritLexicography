@@ -37,4 +37,4 @@
 [TS. 1,1,5,2.]
 [ŚAT. BR. 1,1,4,18.]
 [LĀṬY. 3,11,3. 4,2,3.]
-  <sub>DCS 49 · attested</sub>
+  <sub>attested</sub>

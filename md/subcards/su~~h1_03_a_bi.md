@@ -20,16 +20,16 @@
 
 - **RU:** — *abhi*, *˚ṣuvati, abhyaṣuvat*
 [P. 8,3,63.] [65.] посвящать для (acc.): *oṣadhīḥ*
-  <sub>DCS 14088 · attested</sub>
+  <sub>attested</sub>
 
 **aBi+su sense 2 — begaben mit)** [ŚAT. BR. 5,2,3,9.] begaben mit: *pāpmanaivainamabhiṣuvati*
 
 - **RU:** [ŚAT. BR. 5,2,3,9.] наделять чем-л.: *pāpmanaivainamabhiṣuvati*
-  <sub>DCS 14088 · attested</sub>
+  <sub>attested</sub>
 
 **aBi+su (addendum))** [KĀṬH. 13,2.] — desid. *˚susūṣati*
 [P. 8,3,64], Vārtt. 1, Schol.
 
 - **RU:** [KĀṬH. 13,2.] — desid. *˚susūṣati*
 [P. 8,3,64], Vārtt. 1, Schol.
-  <sub>DCS 14088 · attested</sub>
+  <sub>attested</sub>

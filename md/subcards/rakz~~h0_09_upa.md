@@ -10,4 +10,4 @@
 [VOP. 8,73.]
 - **EN:** — *upa* s. *uparakṣaṇa; prani, ˚rakṣati*
 [VOP. 8,73.]
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>

@@ -10,4 +10,4 @@
 [MBH. 12,2036.]
 - **EN:** *anuvi* to disturb, hinder: *kāryāṇi*
 [MBH. 12,2036.]
-  <sub>DCS 1 · attested</sub>
+  <sub>attested</sub>

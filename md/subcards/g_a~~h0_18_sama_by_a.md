@@ -13,7 +13,7 @@
 - **EN:** — *samabhyā*
  1) to come near, approach: *brāhmaṇakṣatriyādyaṃ ca cāturvarṇyaṃ purāddrutam . darśanepsu samabhyāgāt*
 [MBH. 1,5328.]
-  <sub>DCS 4 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) Jmd treffen, heimsuchen: *vyasanaṃ vaḥ samabhyāgāt*
 [MBH. 2,2597.]
@@ -22,4 +22,4 @@
 [MBH. 2,2597.]
 - **EN:** — 2) to meet, befall someone: *vyasanaṃ vaḥ samabhyāgāt*
 [MBH. 2,2597.]
-  <sub>DCS 4 · attested</sub>
+  <sub>attested</sub>

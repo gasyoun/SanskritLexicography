@@ -13,4 +13,4 @@
 - **EN:** — desid. *rirakṣiṣati* to intend to protect from (abl.): *rirakṣiṣantaḥ*
 [MBH. 5,2368.] [6,3760] (*rira˚* to be read).
 [4695.]
-  <sub>DCS 1930 · attested</sub>
+  <sub>attested</sub>

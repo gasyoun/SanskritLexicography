@@ -19,4 +19,4 @@
 [ŚĀṄKH. BR. 8,9.] *abhyabhi somānunnayanti* they draw again and again after Soma
 [PAÑCAV. BR. 18,5,14.]
 [LĀṬY. 8,10,12.]
-  <sub>DCS 2376 · attested</sub>
+  <sub>attested</sub>

@@ -359,7 +359,7 @@ _PWG article — 78 sub-card(s), 749 sense(s) · RU 600/749 · EN 629/749_
 [279.] [Spr. (II) 3216.] — In astron. so v. a. to touch: *divasakaramulkāśanividyuto yadā hanyuḥ*
 [VARĀH. BṚH. S. 3,33.] *manaḥ* to wound the heart
 [Spr. (II) 1277] = [1282.]
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **gram-intro)** *han*¦, *hanti*
 [DHĀTUP. 24,2] (*hiṃsāgatyoḥ*).* hathas, hatas, ghnanti*
@@ -440,7 +440,7 @@ _PWG article — 78 sub-card(s), 749 sense(s) · RU 600/749 · EN 629/749_
 [VOP. 3,153.] Превращение *na* в *ṇa*
 [8,22.] Отсутствие соединительного гласного *i* Kār. 4 из
 [SIDDH. K.] к [P. 7,2,10.] О сочетании с *kaṇe* и *manas* s. u. *manas* .
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 ## han
 
@@ -607,7 +607,7 @@ u. s. w. [11,40.] *parahitam*
 [544.] so v. a. to hinder, prevent
 [RĀJA-TAR. 5,253.] *vighnaiḥ sahasraguṇitairapi hanyamānāḥ*
 [Spr. (II) 4342], v. l.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) (die Trommel) schlagen
 [AV. 20,132,9.]
@@ -631,7 +631,7 @@ u. s. w. [11,40.] *parahitam*
 [BHĀG. P. 7,8,36] (pass.).
 [PAÑCAT. 21,2.] [10]; vgl. *bherīghnant* . (a liquid) to beat, churn: *hanyādyāvadghanatvaṃ samupāgatam*
 [VARĀH. BṚH. S. 55,25.]
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) ein Geschoss werfen auf (gen.): *jahi vadharvanuṣo martyasya*
 [ṚV. 4,22,9.] [7,25,3]; vgl. unter *nis* .
@@ -640,7 +640,7 @@ u. s. w. [11,40.] *parahitam*
 [ṚV. 4,22,9.] [7,25,3]; vgl. под *nis* .
 - **EN:** — 4) to hurl a missile at (gen.): *jahi vadharvanuṣo martyasya*
 [ṚV. 4,22,9.] [7,25,3]; vgl. under *nis* .
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **5)** — 5) an sich unterdrücken, aufgeben, fahren lassen: *vyathāṃ jahi*
 [MBH. 1,6145.] *jahi saṃtāpamātmanaḥ*
@@ -670,7 +670,7 @@ u. s. w. [11,40.] *parahitam*
 [Spr. (II) 2597.] *vaiklavyam*
 [BHĀG. P. 1,13,42.] *āsuraṃ bhāvam*
 [7,8,10.] the conjecture lies near that this *jahi* stands for *jahihi* (from *hā*).
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **6)** — 6) partic. *hata*
 
@@ -754,7 +754,7 @@ u. s. w. [11,40.] *parahitam*
 [Spr. (II) 567]; vgl. [3902.] *śarajjyotsnāhate tamasi*
 [6413.] [VARĀH. BṚH. S. 43,33.] insbes. at the beginning of a adj. comp.: *˚kaṇṭaka*
 [MBH. 3,3049.] *˚kilbiṣa*
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **6a)** a) geschlagen; getroffen, erschlagen, vernichtet
 [ṚV. 1,104,3.] [10,86,18.] [113,7.]
@@ -913,7 +913,7 @@ u. s. w. [11,40.] *parahitam*
 [Spr. (II) 567]; vgl. [3902.] *śarajjyotsnāhate tamasi*
 [6413.] [VARĀH. BṚH. S. 43,33.] insbes. в начале adj. comp.: *˚kaṇṭaka*
 [MBH. 3,3049.] *˚kilbiṣa*
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 ## han
 
@@ -1204,7 +1204,7 @@ Schol.
 [TRIK. 3,1,25.]
 [ARYABH. 2,7. 19.] [Journ. of the Am. Or. S. 6,558.] [VARĀH. BṚH. S. 8,20.] [BṚH. 7,4. 26 (24),8.] [GAṆIT.] [MADHYAM. 4.]
 — Vgl. *ahata, ayo˚, putra˚, mano˚, yūtha˚, vāta˚, sadyo˚, su˚* и *vadh*.
-  <sub>DCS 10052 · mixed</sub>
+  <sub>mixed</sub>
 
 ## han
 
@@ -1221,7 +1221,7 @@ Schol.
 - **EN:** — caus. *ghātayati* (causative of *ghāta*)
 [P. 7,3,32.] [54.]
 [VOP. 18,25.]
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **1)** 1) tödten lassen; tödten, umbringen; züchtigen, bestrafen überh.: *kaṃ ghātayati hanti kam*
 [BHAG. 2,21.]
@@ -1280,7 +1280,7 @@ Ermordung berichten
 
 death to report
 [P. 3,1,26], Vārtt. 2, Schol.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) Etwas zu Grunde richten: *pṛthivīm*
 [MBH. 3,1917.] *parakāryam*
@@ -1292,13 +1292,13 @@ death to report
 - **EN:** — 2) to ruin something: *pṛthivīm*
 [MBH. 3,1917.] *parakāryam*
 [Spr. (II) 3660], v. l.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **passive-note)** — Vgl. *ghātaka* u. s. w.
 
 - **RU:** — Vgl. *ghātaka* u. s. w.
 - **EN:** — Vgl. *ghātaka* u. s. w.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 ## han
 
@@ -1347,7 +1347,7 @@ death to report
 
 - **RU:** — Vgl. *jighāṃsaka* fgg.
 - **EN:** — Vgl. *jighāṃsaka* fgg.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **desid-head)** — desid. *jighāṃsati*
 [P. 6,4,16.] [7,3,55.]
@@ -1386,7 +1386,7 @@ death to report
 [HARIV. 9281.] *jighāṃsita*
 [KATHĀS. 36,91.]
 [DAŚAK. 172,13.]
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 ## han
 
@@ -1427,7 +1427,7 @@ death to report
 - **RU:** — intens. *jaṅghanāni, ˚nat, ˚nāva, jaṅghananta, jaṅghnat* и *jaṅghanat* partic. *(ā) jaṅghanti; ghanighnat*. бить, ударять, так v. a. наступать на: *pṛthivyāḥ sānau jaṅghananta pāṇibhiḥ*
 [ṚV. 2,31,2.] *pavyā rathasya*
 [1,88,2.] *pṛthivīm*
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **intens-2)** [10,119,10.] treffen, erschlagen: *vṛtram*
 [3,53,11.] [6,16,34.] *pavamānasya jaṅghnato (jighnato* [SV.])
@@ -1436,7 +1436,7 @@ death to report
 - **RU:** поражать, убивать: *vṛtram*
 [3,53,11.] [6,16,34.] *pavamānasya jaṅghnato (jighnato* [SV.])
 *hareścandrā asṛkṣata*
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **intens-3)** [9,66,25.] vernichten: *tamāṃsi* [24.] *ghanighnadduritā*
 [90,6.] — *jaṅghanīti* und *jaṅghanti, jaṅghatas, jaṅghnati* und *jaṅghanati*
@@ -1451,7 +1451,7 @@ death to report
 [P. 7,4,30], Vārtt. *jaṅghanyate*
 [P. 7,3,55], Schol. [VOP. 20,8.] *jaṅghanyamāna* с pass. Bed. терзаемый, мучимый
 [MUṆḌ. UP. 1,2,8.]
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 ## han
 
@@ -1468,7 +1468,7 @@ death to report
 - **EN:** — *ati*, partic. *˚hata*
  1) fastened, affixed: *tasya hṛdaye pādāvatihatau*
 [ŚAT. BR. 10,5,2,13.]
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) zu Grunde gerichtet: *vyāyāmātihata*
 [CARAKA 10,9.] — desid. entkommen wollen
@@ -1480,7 +1480,7 @@ death to report
 - **EN:** — 2) ruined, destroyed: *vyāyāmātihata*
 [CARAKA 10,9.] — desid. to wish to escape
 [AIT. UP. 3,3.] perhaps *atyajigāṃsat* st. *atyajighāṃsat* should be read.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 ## han
 
@@ -1494,13 +1494,13 @@ death to report
 [P. 1,3,15], Schol. [VOP. 23,55. fg.] отражать удар, наносить ответный удар против кого-л. (acc.): *vyatighnatī ghnantam*
 - **EN:** *vyati* act.
 [P. 1,3,15], Schol. [VOP. 23,55. fg.] to strike back, deliver a counter-blow against someone (acc.): *vyatighnatī ghnantam*
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **2)** [BHAṬṬ. 8,5.] sich gegenseitig schlagen, feindlich einander gegenüberstehen: *anyo'nyasya vyatighnatāṃ matānām*
 
 - **RU:** [BHAṬṬ. 8,5.] бить друг друга, враждебно противостоять друг другу: *anyo'nyasya vyatighnatāṃ matānām*
 - **EN:** to strike one another, stand opposed to one another in hostility: *anyo'nyasya vyatighnatāṃ matānām*
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **3)** [NAIṢ. 17,79.] sich wehren: *vyatyaghnannatrirakṣitāḥ*
 [MBH. 13,7301] (*vyaghnannatrisurakṣitāḥ* [ed. Bomb.]).
@@ -1509,7 +1509,7 @@ death to report
 [MBH. 13,7301] (*vyaghnannatrisurakṣitāḥ* [ed. Bomb.]).
 - **EN:** to defend oneself: *vyatyaghnannatrirakṣitāḥ*
 [MBH. 13,7301] (*vyaghnannatrisurakṣitāḥ* [ed. Bomb.]).
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 ## han
 
@@ -1526,7 +1526,7 @@ death to report
 
 - **RU:** — *anu* pass. гибнуть вслед (за другим): *hatamevānuhanyate* так v. a. то, что гибнет, уже прежде погибло
 [MBH. 12,8107.]
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 ## han
 
@@ -1544,7 +1544,7 @@ death to report
 
 - **RU:** — Vgl. *antarghaṇa* fgg. и *antarhaṇana* fg.
 - **EN:** — Vgl. *antarghaṇa* fgg. and *antarhaṇana* fg.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **antar-1)** — *antar*, *antarhatya* (= *madhye hatvā*
 [SIDDH. K.]) [P. 1,4,65], Schol. *antarhaṇyate*
@@ -1553,7 +1553,7 @@ death to report
 - **RU:** — *antar*, *antarhatya* (= *madhye hatvā*
 [SIDDH. K.]) [P. 1,4,65], Schol. *antarhaṇyate*
 [8,4,24], Schol.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 ## apahan
 
@@ -1676,7 +1676,7 @@ death to report
 [BHĀG. P. 10,44,27.] *kāṣṭhakūṭāpahatacakṣus* gouged out, dug out
 [PAÑCAT. 81,25.] *˚cetana*
 [KATHĀS. 84,8] probably only a mistake for *apahṛta˚*.
-  <sub>DCS 526 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) ausschlagen, aushülsen (Reis)
 [KAUŚ. 2.] *anapahata*
@@ -1688,7 +1688,7 @@ death to report
 - **EN:** — 2) to hull, husk (rice)
 [KAUŚ. 2.] *anapahata*
 [19. 25.]
-  <sub>DCS 526 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) ausschiessen (als werthlos): *apahatā* von einer Kuh (krank Comm.)
 [KĀTY. ŚR. 15,3,34.]
@@ -1697,18 +1697,18 @@ death to report
 [KĀTY. ŚR. 15,3,34.]
 - **EN:** — 3) to reject, cull out (as worthless): *apahatā* of a cow (that is sick Comm.)
 [KĀTY. ŚR. 15,3,34.]
-  <sub>DCS 526 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — Vgl. *apaghana* fgg. und *apaha* fgg. — desid. s. *apajighāṃsu* .
 
 - **RU:** — Vgl. *apaghana* fgg. und *apaha* fgg. — desid. s. *apajighāṃsu* .
 - **EN:** — Vgl. *apaghana* fgg. and *apaha* fgg. — desid. s. *apajighāṃsu*.
-  <sub>DCS 526 · attested</sub>
+  <sub>attested</sub>
 
 **prefix-header)** — *apa*
 
 - **RU:** — *apa*
-  <sub>DCS 526 · attested</sub>
+  <sub>attested</sub>
 
 ## vyapahan
 
@@ -1722,7 +1722,7 @@ death to report
 [SĀH. D. 308,5.]
 - **EN:** *vyapa* "to ward off, prevent": *na samāsoktibuddhiṃ vyapahantumīśaḥ*
 [SĀH. D. 308,5.]
-  <sub>DCS 2 · attested</sub>
+  <sub>attested</sub>
 
 ## apihan
 
@@ -1736,7 +1736,7 @@ death to report
 [TS. 2,1,5,3.]
 - **EN:** *api* "to drive off, drive away": *sūtum*
 [TS. 2,1,5,3.]
-  <sub>DCS 5 · attested</sub>
+  <sub>attested</sub>
 
 ## han
 
@@ -1847,7 +1847,7 @@ death to report
 [Spr. (II) 6696.] *talānāmabhihanyatām* (= *abhihanyamānānām)*
 [MBH. 6,2514.] *abhyahanmṛgān* slain
 [3,14056.]
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) anschlagen eine Trommel u. s. w.: *śaṅkhāśca bheryaśca* u. s. w. *abhyahanyanta*
 [BHAG. 1,13.]
@@ -1862,7 +1862,7 @@ death to report
 [BHAG. 1,13.]
 [MBH. 6,1535.]
 [R. GORR. 2,82,2.]
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) treffen so v. a. befallen, heimsuchen: *ajīrṇairabhihanyante te devāḥ*
 [MBH. 13,4375.] *duṣṭairbhūtaiḥ*
@@ -1874,19 +1874,19 @@ death to report
 - **EN:** — 3) to hit, hence v. a. to befall, afflict: *ajīrṇairabhihanyante te devāḥ*
 [MBH. 13,4375.] *duṣṭairbhūtaiḥ*
 [MĀRK. P. 43,32.] [WILSON, SĀṂKHYAK. S. 89.]
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **4-intro)** — 4) partic.
 
 - **RU:** — 4) partic.
 - **EN:** — 4) partic.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **4a-intro)** a) *abhihata*
 
 - **RU:** a) *abhihata*
 - **EN:** a) *abhihata*
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **4a.alpha)** α) getroffen, geschlagen, gestossen
 [AV. 11,10,22.]
@@ -1961,7 +1961,7 @@ death to report
 [ŚIKṢĀ 11.] attacked
 [R. 1,34,30.] *siṃhābhihata iva dvipaḥ*
 [5,4,8.]
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **4a.beta)** — β) angeschlagen: Trommel
 u. s. w. [R. 2,81,2.] [VARĀH. BṚH. S. 46,61.]
@@ -1970,7 +1970,7 @@ u. s. w. [R. 2,81,2.] [VARĀH. BṚH. S. 46,61.]
 u. s. w. [R. 2,81,2.] [VARĀH. BṚH. S. 46,61.]
 - **EN:** — β) struck (of a drum): drum
 u. s. w. [R. 2,81,2.] [VARĀH. BṚH. S. 46,61.]
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **4a.gamma)** — γ) getroffen so v. a. heimgesucht, behaftet mit: *˚rogaśokādyaiḥ śarīram*
 [MAITRYUP. 1,3.] *śāpena*
@@ -2009,7 +2009,7 @@ u. s. w. [R. 2,81,2.] [VARĀH. BṚH. S. 46,61.]
 [R. 5,65,1.] *śokavegābhihata*
 [Spr. (II) 6885.] = *abhibhūta*
 [COLEBR.] and [LOIS.] on [AK. 3,1,40.]
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **4b)** — b) *abhighāta* beschädigt: *manuṣyeṣvabhighāteṣu, goṣvabhighātāsu*
 [SĀMAVIDH. BR. 1,8,13.]
@@ -2018,7 +2018,7 @@ u. s. w. [R. 2,81,2.] [VARĀH. BṚH. S. 46,61.]
 [SĀMAVIDH. BR. 1,8,13.]
 - **EN:** — b) *abhighāta* damaged: *manuṣyeṣvabhighāteṣu, goṣvabhighātāsu*
 [SĀMAVIDH. BR. 1,8,13.]
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **final)** — Vgl. *abhighāta* fgg. und *sarvāṅgābhihata* . — caus. partic. *˚ghātita* getroffen: *śarābhi˚*
 [MBH. 8,4319.] — desid. treffen —,
@@ -2036,12 +2036,12 @@ niederschlagen wollen
 
 wishing to strike down
 [ṚV. 7,59,8.]
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **prefix-header)** — *abhi*
 
 - **RU:** — *abhi*
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 ## avahan
 
@@ -2080,7 +2080,7 @@ wishing to strike down
 [VARĀH. BṚH. S. 89,1.] *yathā śailasya mahataḥ śailenaivāvajaghnataḥ*
 (= *avahanyamānasya* [NĪLAK.], one might conjecture *avahanyataḥ*; vgl. [6,2514])
 [MBH. 4,1424.]
-  <sub>DCS 64 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) zurückschlagen, — stossen; verscheuchen, abwehren: *śardhaḥ*
 [ṚV. 1,133,3.] *brahmadviṣaḥ*
@@ -2101,7 +2101,7 @@ wishing to strike down
 [KAUŚ. 70.]
 [ĀŚV. GṚHY. 2,4,14.] *duritam*
 [ŚĀK. 83], v. l.
-  <sub>DCS 64 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) ausschlagen, dreschen
 [ṚV. 1,191,2.] Körner
@@ -2122,7 +2122,7 @@ wishing to strike down
 [ŚAT. BR. 2,4,2,9.] [6,1,8.]
 [KĀTY. ŚR. 1,10,13] (partic. *avahata*).
 [2,4,14.] [4,1,5.] [GOBH. 1,7,4. 3,7,5.] [KAUŚ. 2. 61. 87.] [ĀŚV. ŚR. 2,6,7. 8.] [BHĀG. P. 11,9,6.] [8.] [MADHUS.] in [Ind. St. 1,15,1.]
-  <sub>DCS 64 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — Vgl. *avaghāta, avahanana, avahantar* der niederschlägt, abwehrt
 [ṚV. 4,25,6.] — caus. dreschen lassen: *(tām) vrīhīnavaghātayet*
@@ -2137,12 +2137,12 @@ wishing to strike down
 [ṚV. 4,25,6.] — caus. to have (something) threshed: *(tām) vrīhīnavaghātayet*
 [ŚAT. BR. 14,9,4,12.] — intens. to strike back: *ava jaṅghanīhi*
 [AV. 5,20,8.]
-  <sub>DCS 64 · attested</sub>
+  <sub>attested</sub>
 
 **prefix-header)** — *ava*
 
 - **RU:** — *ava*
-  <sub>DCS 64 · attested</sub>
+  <sub>attested</sub>
 
 ## adhyavahan
 
@@ -2156,13 +2156,13 @@ wishing to strike down
 [TBR. 3,2,5,6.]
 - **EN:** *adhyava* "to thresh upon something": *kṛṣṇājine haviḥ*
 [TBR. 3,2,5,6.]
-  <sub>DCS 1 · attested</sub>
+  <sub>attested</sub>
 
 **2 (deriv.))** — Vgl. *adhyavahanana* .
 
 - **RU:** — Vgl. *adhyavahanana* .
 - **EN:** — Vgl. *adhyavahanana*.
-  <sub>DCS 1 · attested</sub>
+  <sub>attested</sub>
 
 ## anvavahan
 
@@ -2176,7 +2176,7 @@ wishing to strike down
 [ŚAT. BR. 3,3,4,16.]
 - **EN:** *anvava* "to hit, strike"
 [ŚAT. BR. 3,3,4,16.]
-  <sub>DCS 1 · attested</sub>
+  <sub>attested</sub>
 
 ## pratyavahan
 
@@ -2189,7 +2189,7 @@ wishing to strike down
 - **RU:** — *pratyava* отражать, давать сдачи: *prati śvasantamava* (лучше, вероятно, *pratiśvasantamava) dānavaṃ han*
 [ṚV. 5,29,4.]
 - **EN:** — *pratyava* "to strike back": *prati śvasantamava* (better probably *pratiśvasantamava) dānavaṃ han* [ṚV. 5,29,4.])
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>
 
 ## āhan
 
@@ -2275,7 +2275,7 @@ Schol. *āghnīya*
 [P. 3,1,108], Vārtt., Schol.
 - **EN:** — *ā*
  1) "to strike —, knock against" (loc. acc.): *āsya vajramadhi sānau jaghāna* [ṚV. 1,32,7.] [AV. 11,9,14.] *pāṇinorasi* [12,5,48.] [19,32,2.] *uraḥ padbhiḥ* [TS. 3,1,4,3.] *ūrūn* [ĀŚV. GṚHY. 4,6,3.] *dṛṣadupale* [KĀTY. ŚR. 2,4,15.] [21,3,30.] [25,7,34.] [Spr. (II) 5217.] *(varāhaḥ) āhatya syandanaṃ rājñaḥ* [KATHĀS. 11,45.] [32,81.] *kareṇa* [18,164.] [19,96.] [ŚĀK. 173], v. l. *pādena* [KATHĀS. 18,249.] [26,86.] *cañcvā* [22,223.] [BHĀG. P. 5,26,32.] *mūrdhnā* [Z. d. d. m. G. 27,70.] *gadayā* [HARIV. 5067.] [BHĀG. P. 8,10,56.] *nārācaiḥ, bāṇena, śaraiḥ* [MBH. 3,15750.] [MĀRK. P. 21,6.] [89,27.] *khaḍgena* [KATHĀS. 44,145] (may also be *han* simpl.). *kṣurikayā* [42,47.] *sarṣapaiḥ* "to hit" [68,53.] "to attack, fall upon": *śatrum* [VOP. 23,19.] [R. 7,8,17.] *siṃho nipatyāhanti dehinaḥ* [RĀJA-TAR. 4,444.] *durjayānkariṇaḥ siṃhavasāsiktairmahāgajaiḥ . āhanyāt* [KĀM. NĪTIS. 19,60.] med. "to strike upon": *ājaghne viṣamavilocanasya vakṣaḥ* [BHĀRAVI] in [SIDDH. K. 164,a,13.] *āhadhvaṃ mā raghūttamam* [BHAṬṬ.] ebend.*gadayārātiṃ dakṣiṇasyāṃ bhruvi — ājaghne* [BHĀG. P. 3,18,17.] intrans., or when the object is a part of one's own body [P. 1,3,28] together with Vārtt. [VOP. 23,17.] *āhate śiraḥ* "he strikes himself on the head" Schol. *āghnīya* [PAT.] to [P. 1,1,62.] *āhata* and *aghāniṣṭa, āhasatām, āhasata* Schol. to [P. 1,2,14.] [2,4,44.] [VOP. 23,18.] [24,12.] *āghnāna* "flapping about" (a bird) [BHAṬṬ. 5,102.] *āghnāna iva saṃdīptairalātaiḥ* [8,15.] *tato 'hamevāghnīya* (the following *iti* is to be struck out) "then I would do myself harm" [DAŚAK. 91,15.] — *āghnate dasyuhatyāya* ved. [P. 3,1,108], Vārtt., Schol.
-  <sub>DCS 529 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) befestigen: *stenaṃ drupade*
 [AV. 19,47,9.] *rāṣṭraṃ viśi*
@@ -2285,7 +2285,7 @@ Schol. *āghnīya*
 [AV. 19,47,9.] *rāṣṭraṃ viśi*
 [ŚAT. BR. 13,2,9,6.]
 - **EN:** — 2) "to fasten": *stenaṃ drupade* [AV. 19,47,9.] *rāṣṭraṃ viśi* [ŚAT. BR. 13,2,9,6.]
-  <sub>DCS 529 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) schlagen die Trommel
 u. s. w. [TS. 7,5,9,3.] [ŚAT. BR. 5,1,5,7.] [17.] [KAUŚ. 16.] [KATHĀS. 47,44.] [BHAṬṬ. 1,27.] [17,7.] *ghaṇṭām*
@@ -2303,7 +2303,7 @@ u. s. w. [TS. 7,5,9,3.] [ŚAT. BR. 5,1,5,7.] [17.] [KAUŚ. 16.] [KATHĀS. 47,44.
 
 вместо *etānyo hanti* .
 - **EN:** — 3) "to beat" the drum u. s. w. [TS. 7,5,9,3.] [ŚAT. BR. 5,1,5,7.] [17.] [KAUŚ. 16.] [KATHĀS. 47,44.] [BHAṬṬ. 1,27.] [17,7.] *ghaṇṭām* [KULL.] for [M. 10,33.] — *dārūṇyāhatya* [KATHĀS. 119,176] erroneous for *dārūṇyāhṛtya; etānyāhanti* [Verz. d. Oxf. H. 25,a, N. 2] for *etānyo hanti*.
-  <sub>DCS 529 · attested</sub>
+  <sub>attested</sub>
 
 **4 intro)** — 4) partic. *āhata*
 - **EN:** — 4) partic. *āhata*
@@ -2368,7 +2368,7 @@ u. s. w. [TS. 7,5,9,3.] [ŚAT. BR. 5,1,5,7.] [17.] [KAUŚ. 16.] [KATHĀS. 47,44.
 [ŚAT. BR. 14,6,9,31.] *grāhāhata ibhaḥ* раненый
 [BHĀG. P. 3,18,6.]
 - **EN:** a) "struck, knocked, hit" [TRIK. 3,3,149.] [H. an. 3,245. fg.] [MED. t. 90.] *astraṃ brahmadaṇḍāstrāhatam* [R. GORR. 1,57,5.] *gajadantāhatā vṛkṣāḥ* [2,105,10.] *śarāhata* [3,50,20.] [66,26.] [69,24.] *pādapaiḥ* [4,18,2.] *vajrāhata* [48,22.] [5,28,4.] *jānubhiḥ* [63,19.] [6,82,98.] [RAGH. 4,23.] [12,77.] [KUMĀRAS. 4,25.] [Spr. (II) 1625.] [4041.] [5206.] [5855.] [6018.] [VARĀH. BṚH. S. 54,54.] [BṚH. 25 (23),6.] [KATHĀS. 24,180.] [54,204.] [RĀJA-TAR. 4,639.] [BHĀG. P. 3,13,27.] [19,16.] [26.] [6,2,15.] [11,11.] [8,11,10. fg.] [9,15,27.] [PAÑCAT. 48,13.] *anyo'nyairāhatā ūrmayaḥ* [R. 5,74,36.] *dhārā paraśoḥ* "struck against, collided with" [Spr. (II) 5540.] *phālāhataṃ kṣetram* "torn up by the plough", hence v. a. "ploughed" [YĀJÑ. 2,158.] *anilāhata* "struck by the wind — set in motion" [R. 5,21,1.] [KUMĀRAS. 4,30.] [Spr. (II) 4228.] [KATHĀS. 18,121.] [22,221.] [MĀRK. P. 32,26.] [99,8.] [BHĀG. P. 1,5,14.] [8,10,48.] [PRAB. 23,2.] *jyotiṣkaṇāhataśmaśru* "struck by sparks", hence v. a. "scorched" (*āhata = dagdha* [H. an.]) [RAGH. 15,52.] "struck", hence v. a. "affected to its detriment" (in astronomy); generally hence v. a. "visited, damaged": *śṛṅge* (of the moon) *kujenāhate* [VARĀH. BṚH. S. 4,21.] *kṣititanayatrividhādbhutāhate bhe* [23,10.] *hṛdi śokena* [MBH. 5,7446.] *yakṣmāhata* [13,1584.] *dṛṣṭiviṣāhata* [KATHĀS. 33,65.] *vṛkṣa* "torn open" [ŚAT. BR. 14,6,9,31.] *grāhāhata ibhaḥ* "wounded" [BHĀG. P. 3,18,6.]
-  <sub>DCS 529 · attested</sub>
+  <sub>attested</sub>
 
 **4b)** — b) befestigt: *akṣa*
 [ṚV. 10,85,12.]
@@ -2380,7 +2380,7 @@ u. s. w. [TS. 7,5,9,3.] [ŚAT. BR. 5,1,5,7.] [17.] [KAUŚ. 16.] [KATHĀS. 47,44.
 [AV. 1,11,4.] *śaṅkavaḥ*
 [10,8,4.]
 - **EN:** — b) "fastened": *akṣa* [ṚV. 10,85,12.] [AV. 1,11,4.] *śaṅkavaḥ* [10,8,4.]
-  <sub>DCS 529 · attested</sub>
+  <sub>attested</sub>
 
 **4c)** — c) angeschlagen, in Bewegung gesetzt. *anāhatā kampati me dhanurjyā*
 [MBH. 5,1909.] eine Trommel u. s. w.: *anāhatā dundubhayo vineduḥ*
@@ -2394,7 +2394,7 @@ u. s. w. [TS. 7,5,9,3.] [ŚAT. BR. 5,1,5,7.] [17.] [KAUŚ. 16.] [KATHĀS. 47,44.
 [SIDDH. K.] к [P. 6,2,48.] _m._ = *ānaka* барабан
 [MED.]
 - **EN:** — c) "struck up, set in motion." *anāhatā kampati me dhanurjyā* [MBH. 5,1909.] a drum u. s. w.: *anāhatā dundubhayo vineduḥ* [7241.] [14,2395.] [HARIV. 3322.] [8056.] [10296.] [R. 5,74,37.] [MEGH. 67.] [RAGH. 17,11.] [Spr. (II) 1316.] [PAÑCAT. ed. orn. 57,14.] *anāhato nadati devadattaḥ* (a conch) [SIDDH. K.] to [P. 6,2,48.] _m._ = *ānaka* "drum" [MED.]
-  <sub>DCS 529 · attested</sub>
+  <sub>attested</sub>
 
 **4d)** — d) gehämmert: *ghanāhataṃ suvarṇam*
 [Spr. (II) 4074.]
@@ -2416,7 +2416,7 @@ u. s. w. [TS. 7,5,9,3.] [ŚAT. BR. 5,1,5,7.] [17.] [KAUŚ. 16.] [KATHĀS. 47,44.
 [P. 5,2,120.]
 [RĀJA-TAR. 3,103.]
 - **EN:** — d) "hammered": *ghanāhataṃ suvarṇam* [Spr. (II) 4074.] [MBH. 2,2091] (*ahata* [NĪLAK.]). "coined" or "stamped" [AK. 2,9,92.] [TRIK. 3,3,319.] [H. 1046.] [P. 5,2,120.] [RĀJA-TAR. 3,103.]
-  <sub>DCS 529 · attested</sub>
+  <sub>attested</sub>
 
 **4e)** — e) zu Nichte gemacht, vereitelt: *jyotsnābhirandhakāraḥ*
 [BHĀG. P. 3,28,21.] *rājyābhiṣecanaṃ daivāt (= daivena)*
@@ -2432,7 +2432,7 @@ u. s. w. [TS. 7,5,9,3.] [ŚAT. BR. 5,1,5,7.] [17.] [KAUŚ. 16.] [KATHĀS. 47,44.
 [BHĀG. P. 3,9,10.] *agnidhūmāhatavarcas*
 [8,7,14.]
 - **EN:** — e) "brought to nought, thwarted": *jyotsnābhirandhakāraḥ* [BHĀG. P. 3,28,21.] *rājyābhiṣecanaṃ daivāt (= daivena)* [R. 2,23,20.] *śāntibhiḥ* [VARĀH. BṚH. S. 46,5.] *daivāhatārtharacana* [BHĀG. P. 3,9,10.] *agnidhūmāhatavarcas* [8,7,14.]
-  <sub>DCS 529 · attested</sub>
+  <sub>attested</sub>
 
 ## āhan
 
@@ -2457,7 +2457,7 @@ u. s. w. [TS. 7,5,9,3.] [ŚAT. BR. 5,1,5,7.] [17.] [KAUŚ. 16.] [KATHĀS. 47,44.
 [VARĀH. BṚH. S. 8,22.] [81,9.]
 [ĀRYABH. 4,28. 30.]
 - **EN:** — f) "multiplied" [AK. 3,2,38.] [TRIK. 3,3,149.] [H. 1483.] [H. an.] [MED.] [VARĀH. BṚH. S. 8,22.] [81,9.] [ĀRYABH. 4,28. 30.]
-  <sub>DCS 529 · attested</sub>
+  <sub>attested</sub>
 
 **4g)** — g) ungereimt (vgl. *vyāhata*)
 [AK. 1,1,5,21.]
@@ -2471,7 +2471,7 @@ u. s. w. [TS. 7,5,9,3.] [ŚAT. BR. 5,1,5,7.] [17.] [KAUŚ. 16.] [KATHĀS. 47,44.
 [H. an.]
 [MED.]
 - **EN:** — g) "absurd, incongruous" (vgl. *vyāhata*) [AK. 1,1,5,21.] [TRIK.] [H. an.] [MED.]
-  <sub>DCS 529 · attested</sub>
+  <sub>attested</sub>
 
 **4h)** — h) getroffen heisst ein Visarga, wenn er mit einem vorangehenden *a* zu *o* geworden ist,
 [SĀH. D. 219,4.] [17.] — *chalāhata*
@@ -2481,7 +2481,7 @@ u. s. w. [TS. 7,5,9,3.] [ŚAT. BR. 5,1,5,7.] [17.] [KAUŚ. 16.] [KATHĀS. 47,44.
 [SĀH. D. 219,4.] [17.] — *chalāhata*
 [KATHĀS. 49,102] ошибочно вместо *chalādṛta* .
 - **EN:** — h) "struck" is what a Visarga is called "when, together with a preceding" *a*, "it has become" *o*, [SĀH. D. 219,4.] [17.] — *chalāhata* [KATHĀS. 49,102] erroneous for *chalādṛta*.
-  <sub>DCS 529 · attested</sub>
+  <sub>attested</sub>
 
 **intens.)** — Vgl. *anāhata* (in der Bed. 2. auch
 [PAÑCAR. 1,3,70]), *āghāta* fg., *āhata* fgg., *svāhata* . — intens. schlagen auf: *ā jaṅghanti sānveṣām*
@@ -2493,7 +2493,7 @@ u. s. w. [TS. 7,5,9,3.] [ŚAT. BR. 5,1,5,7.] [17.] [KAUŚ. 16.] [KATHĀS. 47,44.
 [ṚV. 6,75,13.]
 [NIR. 9,20.]
 - **EN:** — Vgl. *anāhata* (in the Bed. 2. also [PAÑCAR. 1,3,70]), *āghāta* fg., *āhata* fgg., *svāhata*. — intens. "to strike upon": *ā jaṅghanti sānveṣām* [ṚV. 6,75,13.] [NIR. 9,20.]
-  <sub>DCS 529 · attested</sub>
+  <sub>attested</sub>
 
 ## apāhan
 
@@ -2506,7 +2506,7 @@ u. s. w. [TS. 7,5,9,3.] [ŚAT. BR. 5,1,5,7.] [17.] [KAUŚ. 16.] [KATHĀS. 47,44.
 - **RU:** — *apā* отбивать, отражать удар: *asurān*
 [ṢAḌV. BR. 4,5.]
 - **EN:** — *apā* "to strike back": *asurān* [ṢAḌV. BR. 4,5.]
-  <sub>DCS 3 · attested</sub>
+  <sub>attested</sub>
 
 ## abhyāhan
 
@@ -2527,7 +2527,7 @@ u. s. w. [TS. 7,5,9,3.] [ŚAT. BR. 5,1,5,7.] [17.] [KAUŚ. 16.] [KATHĀS. 47,44.
 [CHĀND. UP. 6,11,1.] *ghanā anyo'nyamabhyāhanituṃ pravṛttā vaneṣu nāgā iva* сталкиваться друг с другом
 [HARIV. 8785.] — partic. *abhyāhata*
 - **EN:** — *abhyā* "to hit": *śatrūn* [ṚV. 9,85,2.] *suśarmāṇaṃ śarairabhyāhanat* [MBH. 4,1102.] *abhyājaghne* [3,11956.] *vṛkṣasya yo mūle 'bhyāhanyāt* "to deal a blow with the axe" [CHĀND. UP. 6,11,1.] *ghanā anyo'nyamabhyāhanituṃ pravṛttā vaneṣu nāgā iva* "to strike against one another" [HARIV. 8785.] — partic. *abhyāhata*
-  <sub>DCS 48 · attested</sub>
+  <sub>attested</sub>
 
 **1pp)** 1) getroffen: *śaraiḥ*
 [MBH. 1,8223.] [3,745.] [5,7315.] *śastraiḥ*
@@ -2551,7 +2551,7 @@ u. s. w. [TS. 7,5,9,3.] [ŚAT. BR. 5,1,5,7.] [17.] [KAUŚ. 16.] [KATHĀS. 47,44.
 [RAGH. 14,33.] *timirābhyāhatā niśā* так v. a. кромешная тьма
 [R. 2,114,2] ([125,2] [GORR.]).
 - **EN:** 1) "struck": *śaraiḥ* [MBH. 1,8223.] [3,745.] [5,7315.] *śastraiḥ* [KATHĀS. 69,126.] *mālayā* "beaten" [66,24.] *salilena salilam* [R. 1,44,26.] "damaged": eye [SUŚR. 2,357,17.] "struck", hence v. a. "unpleasantly affected, visited (with misfortune)": *mṛtyunā* [MBH. 12,6530.] [Spr. (II) 4953.] *hṛdayaṃ kīrtiviparyayeṇa* [RAGH. 14,33.] *timirābhyāhatā niśā*, hence v. a. "pitch-dark" [R. 2,114,2] ([125,2] [GORR.]).
-  <sub>DCS 48 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) gehemmt, gehindert: *˚karmavṛtti*
 [BHAṬṬ. 1,17.] *sadānabhyāhataiśvaryaḥ*
@@ -2567,13 +2567,13 @@ u. s. w. [TS. 7,5,9,3.] [ŚAT. BR. 5,1,5,7.] [17.] [KAUŚ. 16.] [KATHĀS. 47,44.
 [MĀRK. P. 122,5.] *anabhyāhatamāśrāvayanniva* беспрепятственный
 [ĀŚV. ŚR. 4,15,11.]
 - **EN:** — 2) "hampered, hindered": *˚karmavṛtti* [BHAṬṬ. 1,17.] *sadānabhyāhataiśvaryaḥ* (thus to be read st. *sadā ābhyā˚*) [MĀRK. P. 122,5.] *anabhyāhatamāśrāvayanniva* "unhindered" [ĀŚV. ŚR. 4,15,11.]
-  <sub>DCS 48 · attested</sub>
+  <sub>attested</sub>
 
 **intens.)** — Vgl. *abhyāghāta* fg.
 
 - **RU:** — Vgl. *abhyāghāta* fg.
 - **EN:** — Vgl. *abhyāghāta* fg.
-  <sub>DCS 48 · attested</sub>
+  <sub>attested</sub>
 
 ## udāhan
 
@@ -2586,7 +2586,7 @@ u. s. w. [TS. 7,5,9,3.] [ŚAT. BR. 5,1,5,7.] [17.] [KAUŚ. 16.] [KATHĀS. 47,44.
 - **RU:** — *udā* бряцать, играть (на лире): *vīṇāgāthī dakṣiṇata uttaramandrāmudāghnan*
 [ŚAT. BR. 13,4,2,8.] [3,5.]
 - **EN:** — *udā* "to strike up, play" (on the lyre): *vīṇāgāthī dakṣiṇata uttaramandrāmudāghnan* [ŚAT. BR. 13,4,2,8.] [3,5.]
-  <sub>DCS 2 · attested</sub>
+  <sub>attested</sub>
 
 ## upāhan
 
@@ -2599,7 +2599,7 @@ u. s. w. [TS. 7,5,9,3.] [ŚAT. BR. 5,1,5,7.] [17.] [KAUŚ. 16.] [KATHĀS. 47,44.
 - **RU:** — *upā* ударять по: *ūrūn*
 [ŚAT. BR. 2,6,2,12.] [15.]
 - **EN:** — *upā* "to strike upon": *ūrūn* [ŚAT. BR. 2,6,2,12.] [15.]
-  <sub>DCS 2 · attested</sub>
+  <sub>attested</sub>
 
 ## pratyāhan
 
@@ -2618,7 +2618,7 @@ u. s. w. [TS. 7,5,9,3.] [ŚAT. BR. 5,1,5,7.] [17.] [KAUŚ. 16.] [KATHĀS. 47,44.
 [RAGH. 2,41.] *śāsana* отвергнутый, отклонённый
 [HARIV. 3899.]
 - **EN:** — *pratyā* "to ward off, to defend oneself against a thing" (acc.) [AV. 8,10,30. fgg.] med.: *pratyājaghne tadastraṃ guhyakāstreṇa* [MBH. 5,7173.] *pratyāhatāstra* [RAGH. 2,41.] *śāsana* "repelled, rejected from oneself" [HARIV. 3899.]
-  <sub>DCS 18 · attested</sub>
+  <sub>attested</sub>
 
 ## vyāhan
 
@@ -2632,7 +2632,7 @@ u. s. w. [TS. 7,5,9,3.] [ŚAT. BR. 5,1,5,7.] [17.] [KAUŚ. 16.] [KATHĀS. 47,44.
 [BHĀG. P. 10,76,26.]
 - **EN:** — *vyā*
  1) "to strike": *maurvyā vyāhatya* [BHĀG. P. 10,76,26.]
-  <sub>DCS 28 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) treffen so v. a. heimsuchen: *naivaṃ virahaduḥkhena vayaṃ vyāghānitā smahe*
 [BHAṬṬ. 22,20.]
@@ -2640,7 +2640,7 @@ u. s. w. [TS. 7,5,9,3.] [ŚAT. BR. 5,1,5,7.] [17.] [KAUŚ. 16.] [KATHĀS. 47,44.
 - **RU:** — 2) поражать так v. a. посещать бедой, карать: *naivaṃ virahaduḥkhena vayaṃ vyāghānitā smahe*
 [BHAṬṬ. 22,20.]
 - **EN:** — 2) "to hit", hence v. a. "to visit (with affliction)": *naivaṃ virahaduḥkhena vayaṃ vyāghānitā smahe* [BHAṬṬ. 22,20.]
-  <sub>DCS 28 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) hemmen, hindern: *abhiprāyaṃ vyāhantum*
 [R. 2,10,32.] *ratnasya ratnatvam*
@@ -2654,7 +2654,7 @@ u. s. w. [TS. 7,5,9,3.] [ŚAT. BR. 5,1,5,7.] [17.] [KAUŚ. 16.] [KATHĀS. 47,44.
 [SUŚR. 2,513,4.]
 [RAGH. 9,55.]
 - **EN:** — 3) "to hamper, hinder": *abhiprāyaṃ vyāhantum* [R. 2,10,32.] *ratnasya ratnatvam* [SĀH. D. 3,19.] *vyāhanyamāna* [SUŚR. 2,513,4.] [RAGH. 9,55.]
-  <sub>DCS 28 · attested</sub>
+  <sub>attested</sub>
 
 **4 intro)** — 4) partic. *vyāhata*
 - **EN:** — 4) partic. *vyāhata*
@@ -2667,7 +2667,7 @@ u. s. w. [TS. 7,5,9,3.] [ŚAT. BR. 5,1,5,7.] [17.] [KAUŚ. 16.] [KATHĀS. 47,44.
  a) поражённый, толкнутый: *padā*
 [Spr. (II) 3251.]
 - **EN:** — a) "struck, knocked": *padā* [Spr. (II) 3251.]
-  <sub>DCS 28 · attested</sub>
+  <sub>attested</sub>
 
 **4b)** — b) zurückgeschlagen: *mahāstra*
 [KATHĀS. 115,39.] abgewiesen, zurückgewiesen
@@ -2687,7 +2687,7 @@ u. s. w. [TS. 7,5,9,3.] [ŚAT. BR. 5,1,5,7.] [17.] [KAUŚ. 16.] [KATHĀS. 47,44.
 [R. 7,36,23.]
 [RAGH. 2,5.] [19,57.] [ed. Calc. 1,19.] [PRAB. 30,3.] [33,6.] [MĀRK. P. 116,5.] [BHĀG. P. 4,9,22.] [15,16.] [5,1,29.] [6,17,2.] [9,15,18. fg.] [18,46.] [23,25.] [10,8,36.] [11,2,23.] [PAÑCAT. 16,1] ([ed. orn. 13,7]). [SARVADARŚANAS. 79,17.]
 - **EN:** — b) "beaten back": *mahāstra* [KATHĀS. 115,39.] "repulsed, rejected" [NIDĀNAS. 6,12] in [Ind. St. 10,145.] *yāṣṭīkavyāhato hariḥ* [BHAṬṬ. 5,24.] "hampered, hindered": *abhiṣeka* [R. 2,22,25] ([19,20] [GORR.]). *a˚* [MBH. 12,6863.] [R. 7,36,23.] [RAGH. 2,5.] [19,57.] [ed. Calc. 1,19.] [PRAB. 30,3.] [33,6.] [MĀRK. P. 116,5.] [BHĀG. P. 4,9,22.] [15,16.] [5,1,29.] [6,17,2.] [9,15,18. fg.] [18,46.] [23,25.] [10,8,36.] [11,2,23.] [PAÑCAT. 16,1] ([ed. orn. 13,7]). [SARVADARŚANAS. 79,17.]
-  <sub>DCS 28 · attested</sub>
+  <sub>attested</sub>
 
 **4c)** — c) im Widerspruch stehend: *dharmasya vividhā gatiḥ*
 [MBH. 14,1348.] *karman*
@@ -2703,12 +2703,12 @@ u. s. w. [TS. 7,5,9,3.] [ŚAT. BR. 5,1,5,7.] [17.] [KAUŚ. 16.] [KATHĀS. 47,44.
 [SĀH. D. 227,3.] — [MBH. 1,3687] ошибочно вместо *vyāhṛta* (так [ed. Bomb.]) Vgl. *vyāghāta, vyāhati, vyāhantavya* . — caus. задерживать, препятствовать, расстраивать: *kratuśraddhāṃ vyāghātayitum*
 [MBH. 1,8109.]
 - **EN:** — c) "standing in contradiction": *dharmasya vividhā gatiḥ* [MBH. 14,1348.] *karman* [R. 2,106,17] ([113,12] [GORR.]). [SARVADARŚANAS. 78,14.] Comm. to [NYĀYAS. 1,1,32.] [SĀH. D. 576.] *a˚* [NĪLAK. 21.] *vyāhatatva* [SĀH. D. 227,3.] — [MBH. 1,3687] erroneous for *vyāhṛta* (thus [ed. Bomb.]) Vgl. *vyāghāta, vyāhati, vyāhantavya*. — caus. "to hamper, hinder, thwart": *kratuśraddhāṃ vyāghātayitum* [MBH. 1,8109.]
-  <sub>DCS 28 · attested</sub>
+  <sub>attested</sub>
 
 **intro)** — *vyā*
 
 - **RU:** — *vyā*
-  <sub>DCS 28 · attested</sub>
+  <sub>attested</sub>
 
 ## prativyāhan
 
@@ -2719,7 +2719,7 @@ u. s. w. [TS. 7,5,9,3.] [ŚAT. BR. 5,1,5,7.] [17.] [KAUŚ. 16.] [KATHĀS. 47,44.
 
 - **RU:** — *prativyā* мнимо [MBH. 12,3724], так как с [ed. Bomb.] *pratigāhanti* st. *prativyāhanti* следует читать.
 - **EN:** — *prativyā* apparently [MBH. 12,3724], since with the [ed. Bomb.] *pratigāhanti* st. *prativyāhanti* is to be read.
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>
 
 ## samāhan
 
@@ -2731,13 +2731,13 @@ u. s. w. [TS. 7,5,9,3.] [ŚAT. BR. 5,1,5,7.] [17.] [KAUŚ. 16.] [KATHĀS. 47,44.
 - **RU:** — *samā* 1) ударять, бить вместе: *dṛṣadau* [TS. 1,6,9,3.] *dṛṣadupale* Comm. [1,111,3.] [ŚAT. BR. 1,1,4,13.] [18.] *uccaiḥ samāhantavai* [TBR. 3,2,5,9.] попадать, ударять в, по: *śaṅkhaṃ jatrudeśe samāhanat* [MBH. 6,1705.] *nāgānsamāhatya bāṇāḥ* [9,1329.] *hastam* [3,15655.] *padā* [15644.] *ratham* [HARIV. 15331.] *jānubhyāṃ samājaghne* [MBH. 1,6291.] *jvalitāśca maholkā vai samāhatya (˚hṛtya* [ed. Calc.]) *divākaram . nipetuḥ* [6,4527.] *kāṃścideṇānsamājaghne śaktyā* поражать [1,2835.] врубаться в: *sainyaṃ samāhanyāt* [Spr. (II) 675.] [KĀM. NĪTIS. 17,40. 19,55.] *samāhatya raṇe 'nyo'nyam* [MBH. 6,4169.] сталкиваться с: *rathā rathaiḥ samājaghnuḥ* (лучше *samājagmuḥ* [ed. Bomb.]) [4,1044.]
 - **EN:** — *samā*
  1) "to strike together, clash": *dṛṣadau* [TS. 1,6,9,3.] *dṛṣadupale* Comm. [1,111,3.] [ŚAT. BR. 1,1,4,13.] [18.] *uccaiḥ samāhantavai* [TBR. 3,2,5,9.] "to hit, strike against, upon": *śaṅkhaṃ jatrudeśe samāhanat* [MBH. 6,1705.] *nāgānsamāhatya bāṇāḥ* [9,1329.] *hastam* [3,15655.] *padā* [15644.] *ratham* [HARIV. 15331.] *jānubhyāṃ samājaghne* [MBH. 1,6291.] *jvalitāśca maholkā vai samāhatya (˚hṛtya* [ed. Calc.]) *divākaram . nipetuḥ* [6,4527.] *kāṃścideṇānsamājaghne śaktyā* "to slay" [1,2835.] "to hew into": *sainyaṃ samāhanyāt* [Spr. (II) 675.] [KĀM. NĪTIS. 17,40. 19,55.] *samāhatya raṇe 'nyo'nyam* [MBH. 6,4169.] "to collide with": *rathā rathaiḥ samājaghnuḥ* (better *samājagmuḥ* [ed. Bomb.]) [4,1044.]
-  <sub>DCS 103 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) anschlagen (eine Trommel) [TBR. 1,3,6,2.] [MBH. 7,8346.] [HARIV. 2668] (mit der neueren Ausg. *samājaghnus* st. *samāhanyus* zu lesen). *samājaghne* [MBH. 1,7941.]
 
 - **RU:** — 2) ударять (в барабан) [TBR. 1,3,6,2.] [MBH. 7,8346.] [HARIV. 2668] (с новейшим Ausg. *samājaghnus* st. *samāhanyus* следует читать). *samājaghne* [MBH. 1,7941.]
 - **EN:** — 2) "to strike up" (a drum) [TBR. 1,3,6,2.] [MBH. 7,8346.] [HARIV. 2668] (with the more recent Ausg. *samājaghnus* st. *samāhanyus* to be read). *samājaghne* [MBH. 1,7941.]
-  <sub>DCS 103 · attested</sub>
+  <sub>attested</sub>
 
 **3 intro)** — 3) partic. *samāhata*
 - **EN:** — 3) partic. *samāhata*
@@ -2752,24 +2752,24 @@ u. s. w. [TS. 7,5,9,3.] [ŚAT. BR. 5,1,5,7.] [17.] [KAUŚ. 16.] [KATHĀS. 47,44.
 
 - **RU:** — b) поражённый, ударенный: *śuṣkāśani˚* [HARIV. 4263.] [9867.] *astreṇa* [R. 1,32,17] ([33,17] [GORR.]). [2,9,51.] [R. GORR. 2,20,39.] [7,21,30.] [PAÑCAT. 120,10.] *dṛḍhadaṇḍa˚* [Spr. (II) 4041.] *gajakarṇa˚* [4749.] *khuranemi˚* [R. 2,103,39.] *rakṣobala˚* [MBH. 4,463.] *agnerāhavanīyasya prabhayā* [HARIV. 10448.] *vātavega˚* [R. 7,37,5,23.] [MĀRK. P. 122,17.] *nītimantrapavanaiḥ* [HIT. III,147.] *pravarṣaghanadhārānipāta˚* [PAÑCAT. 93,2.] *vyādhibhiḥ* [MBH. 1,3726.] *tīvraśoka˚* [3,10493.] [12261.] [14,1814.] [R. 2,44,16.] [57,6.]
 - **EN:** — b) "hit, struck": *śuṣkāśani˚* [HARIV. 4263.] [9867.] *astreṇa* [R. 1,32,17] ([33,17] [GORR.]). [2,9,51.] [R. GORR. 2,20,39.] [7,21,30.] [PAÑCAT. 120,10.] *dṛḍhadaṇḍa˚* [Spr. (II) 4041.] *gajakarṇa˚* [4749.] *khuranemi˚* [R. 2,103,39.] *rakṣobala˚* [MBH. 4,463.] *agnerāhavanīyasya prabhayā* [HARIV. 10448.] *vātavega˚* [R. 7,37,5,23.] [MĀRK. P. 122,17.] *nītimantrapavanaiḥ* [HIT. III,147.] *pravarṣaghanadhārānipāta˚* [PAÑCAT. 93,2.] *vyādhibhiḥ* [MBH. 1,3726.] *tīvraśoka˚* [3,10493.] [12261.] [14,1814.] [R. 2,44,16.] [57,6.]
-  <sub>DCS 103 · attested</sub>
+  <sub>attested</sub>
 
 **3c)** — c) angeschlagen: eine Trommel [Spr. (II) 1316.] [KATHĀS. 20,226] (fälschlich *˚hṛta*).
 
 - **RU:** — c) ударенный: барабан [Spr. (II) 1316.] [KATHĀS. 20,226] (ошибочно *˚hṛta*).
 - **EN:** — c) "struck up": a drum [Spr. (II) 1316.] [KATHĀS. 20,226] (wrongly *˚hṛta*).
-  <sub>DCS 103 · attested</sub>
+  <sub>attested</sub>
 
 **note)** — Vgl. *samāghāta* .
 
 - **RU:** — Vgl. *samāghāta* .
 - **EN:** — Vgl. *samāghāta*.
-  <sub>DCS 103 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) partic. *samāhata* a) zusammengeschlagen: *talaiḥ samāhataiḥ* [ARJ. 3,40] (*samāgataiḥ* [MBH. 3,11974]). zusammengefügt, verbunden [NIR. 1,1.]
 
 - **RU:** — 3) partic. *samāhata* a) сбитый вместе: *talaiḥ samāhataiḥ* [ARJ. 3,40] (*samāgataiḥ* [MBH. 3,11974]). соединённый, связанный [NIR. 1,1.]
-  <sub>DCS 103 · attested</sub>
+  <sub>attested</sub>
 
 ## udhan
 
@@ -2790,7 +2790,7 @@ u. s. w. [TS. 7,5,9,3.] [ŚAT. BR. 5,1,5,7.] [17.] [KAUŚ. 16.] [KATHĀS. 47,44.
 [ŚAT. BR. 1,8,3,14.] *grahān*
 [4,2,4,19.] thus v. a. to root out: *uddhantyasāvavanikaṇṭakaṃ saptakṛtva urudhāraparaśvadhena*
 [BHĀG. P. 2,7,22.]
-  <sub>DCS 6 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) ausschlagen (einen Graben u. s. w.), aufwerfen, aufschütten: der Eber [ŚAT. BR. 14,1,2,11.] *vedim* [TS. 2,2,10,5.] [5,2,3,2.] [6,6,4,1.] [TBR. 1,2,1,1.] [3,2,9,9.] *adhidevanam* Comm. [1,66,19.] [ĀPAST. 2,25,12] (*uddhatya* st. *uddhṛtya* zu lesen).
 
@@ -2800,7 +2800,7 @@ u. s. w. [TS. 7,5,9,3.] [ŚAT. BR. 5,1,5,7.] [17.] [KAUŚ. 16.] [KATHĀS. 47,44.
 [TS. 2,2,10,5.] [5,2,3,2.] [6,6,4,1.]
 [TBR. 1,2,1,1.] [3,2,9,9.] *adhidevanam*
 Comm. [1,66,19.] [ĀPAST. 2,25,12] (to be read *uddhatya* st. *uddhṛtya*).
-  <sub>DCS 6 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) med. sich erhängen: *uddhaniṣye* [R. 3,51,40] (*ābandhiṣye* [ed. Bomb.] [45,36]). *ātmānamuddhatya* (so ist vielleicht zu lesen) [PAÑCAT. 135,3.] — *uddhatya* [HARIV. 4408] fehlerhaft für *uddhṛtya* .
 
@@ -2810,13 +2810,13 @@ Comm. [1,66,19.] [ĀPAST. 2,25,12] (to be read *uddhatya* st. *uddhṛtya*).
 [45,36]). *ātmānamuddhatya* (this is perhaps the correct reading)
 [PAÑCAT. 135,3.] — *uddhatya*
 [HARIV. 4408] erroneous for *uddhṛtya*.
-  <sub>DCS 6 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) partic. *uddhata* a) aufgewirbelt (vgl. *uddhuta, uddhūta*): Staub [R. 5,73,63.] [ṚT. 1,10.] [ŚĀK. 8.] [KATHĀS. 14,13.]
 
 - **RU:** — 4) partic. *uddhata* a) взметённый вверх (vgl. *uddhuta, uddhūta*): пыль [R. 5,73,63.] [ṚT. 1,10.] [ŚĀK. 8.] [KATHĀS. 14,13.]
 - **EN:** — 4) partic. *uddhata*
-  <sub>DCS 6 · attested</sub>
+  <sub>attested</sub>
 
 **4a)** a) aufgewirbelt (vgl. *uddhuta, uddhūta*): Staub
 [R. 5,73,63.]
@@ -2848,14 +2848,14 @@ Comm. [1,66,19.] [ĀPAST. 2,25,12] (to be read *uddhatya* st. *uddhṛtya*).
 [BHAṬṬ. 9,7.] drawn out, — fetched out: *jalānmatsyau*
 [R. 2,53,32] (correctly *uddhṛta* [ed. Bomb.]). *garuḍeneva hradinyuddhatapannagā*
 [47,17] (*uddhṛta˚* [ed. Bomb.]).
-  <sub>DCS 6 · attested</sub>
+  <sub>attested</sub>
 
 **4c)** — c) angeschlagen: *vīṇā* [KĀTY. ŚR. 21,3,7.]
 
 - **RU:** — c) ударенный: *vīṇā* [KĀTY. ŚR. 21,3,7.]
 - **EN:** — c) struck against, knocked: *vīṇā*
 [KĀTY. ŚR. 21,3,7.]
-  <sub>DCS 6 · attested</sub>
+  <sub>attested</sub>
 
 **4d)** — d) gesteigert, heftig, intensiv [HALĀY. 4,59.] *manyu* [R. 4,36,21.] *dhvani* [ṚT. 2,1.] *hasita* [Spr. (II) 800.] *nṛtya* [DAŚAR. 1,10.] *yuddha* [KATHĀS. 74,82.] [BHĀG. P. 4,25,42.] [KUSUM. 27,12.] [PAÑCAT. 93,2] (Lesart unsicher).
 
@@ -2869,7 +2869,7 @@ Comm. [1,66,19.] [ĀPAST. 2,25,12] (to be read *uddhatya* st. *uddhṛtya*).
 [KATHĀS. 74,82.]
 [BHĀG. P. 4,25,42.]
 [KUSUM. 27,12.] [PAÑCAT. 93,2] (reading uncertain).
-  <sub>DCS 6 · attested</sub>
+  <sub>attested</sub>
 
 **4e)** — e) hochfahrend, stolz, übermüthig [H. 431.] [R. GORR. 1,14,43.] [NĀṬYAŚ. 18,73.] [Spr. (II) 1239.] [KATHĀS. 44,58.] [48,73.] [MĀRK. P. 17,8.] *dṛṅmanovāgbhiḥ* 14. *dorbhyāṃ brahmavareṇa ca* pochend auf [BHĀG. P. 3,17,19.] *vīryaśauryaśriyā* [11,6,29.] *akṣavadhoddhata* [RAGH. 12,63.] *dhīroddhata* (d. i. *dhīra* und zugleich *uddhata*) [BHAR. NĀṬYAŚ. 34,4. 5.] [DAŚAR. 2,2. 5.] [SĀH. D. 65.] *uddhataṃ vākyam* [Spr. (II) 5248.] [5903.] *veṣa* [5617.] *dhīroddhatā gatiḥ* [UTTARAR. 111,18 (151,2).] *anuddhata* nicht stolz, bescheiden, anspruchlos [KĀM. NĪTIS. 18,33.] *samṛddhibhiḥ* [Spr. (II) 4556.] [VARĀH. BṚH. S. 75,7.] *˚manas* [R. 2,6,22.] *veṣa* [SUŚR. 1,30,2.] *uddhatatva* _n._ hochfahrendes Wesen (Verwegenheit Comm.) [MAITRYUP. 3,5.]
 
@@ -2891,7 +2891,7 @@ Comm. [1,66,19.] [ĀPAST. 2,25,12] (to be read *uddhatya* st. *uddhṛtya*).
 [R. 2,6,22.] *veṣa*
 [SUŚR. 1,30,2.] *uddhatatva* _n._ arrogant nature (presumption Comm.)
 [MAITRYUP. 3,5.]
-  <sub>DCS 6 · attested</sub>
+  <sub>attested</sub>
 
 **4f)** — f) strotzend —, voll von (instr. oder im comp. vorangehend): *krodhaviṣoddhata* [MBH. 4,753.] *madoddhata* [R. 4,9,10] (*maho˚* gedr.). [KUMĀRAS. 3,31.] [Spr. (II) 4671.] [PAÑCAT. 224,8.] [254,8.] *dhanamadoddhata* [KATHĀS. 18,129.] *yauvanamadoddhata* [277.] *baloddhata* [Spr. (II) 815.]
 
@@ -2905,7 +2905,7 @@ Comm. [1,66,19.] [ĀPAST. 2,25,12] (to be read *uddhatya* st. *uddhṛtya*).
 [KATHĀS. 18,129.] *yauvanamadoddhata*
 [277.] *baloddhata*
 [Spr. (II) 815.]
-  <sub>DCS 6 · attested</sub>
+  <sub>attested</sub>
 
 **4g)** — g) in Bewegung versetzt, erregt (die v. l. oft richtiger *uddhuta):* das Meer [MBH. 1,5469.] [6,1644.] *mahāmeghaḥ śvasanena* [R. 6,108,1.] *˚saṭa* [RAGH. 9,60.] [ṚT. 2,8.] *vātoddhatāmbudhara* [VARĀH. BṚH. S. 19,20.] *veṇavo 'niloddhatāḥ* [AK. 2,4,5,27.] [PAÑCAT. 21,2.] *kṛṣṇabāṇāgniruddhato (uddhūto* die neuere Ausg.) *vivṛddhiṃ paramāṃ gataḥ* [HARIV. 10575.] *vātoddhato vahniḥ* [VARĀH. BṚH. S. 19,7.] so v. a. zum Vorschein gekommen: *riṣṭāni* [SUŚR. 1,102,18.]
 
@@ -2922,27 +2922,27 @@ v. l., often more correctly *uddhuta):*; the sea
 [HARIV. 10575.] *vātoddhato vahniḥ*
 [VARĀH. BṚH. S. 19,7.] thus v. a. come into view, appeared: *riṣṭāni*
 [SUŚR. 1,102,18.]
-  <sub>DCS 6 · attested</sub>
+  <sub>attested</sub>
 
 **4h)** — h) gehemmt, gehindert (= *atyantaṃ hataḥ* Comm.) [R. 2,45,30.]
 
 - **RU:** — h) сдержанный, задержанный (= *atyantaṃ hataḥ* Comm.) [R. 2,45,30.]
 - **EN:** — h) checked, hindered (= *atyantaṃ hataḥ* Comm.)
 [R. 2,45,30.]
-  <sub>DCS 6 · attested</sub>
+  <sub>attested</sub>
 
 **4i)** — i) _m._ N. pr. eines Esels [PAÑCAT. 247,25.]
 
 - **RU:** — i) _m._ N. pr. осла [PAÑCAT. 247,25.]
 - **EN:** — i) _m._ N. pr. of a donkey
 [PAÑCAT. 247,25.]
-  <sub>DCS 6 · attested</sub>
+  <sub>attested</sub>
 
 **5)** — Vgl. *udgha, udghana, udghāta* fg., *uddhati, madoddhata, rathoddhatā, siṃhoddhatā* .
 
 - **RU:** — Vgl. *udgha, udghana, udghāta* fg., *uddhati, madoddhata, rathoddhatā, siṃhoddhatā* .
 - **EN:** — Vgl. *udgha, udghana, udghāta* fg., *uddhati, madoddhata, rathoddhatā, siṃhoddhatā*.
-  <sub>DCS 6 · attested</sub>
+  <sub>attested</sub>
 
 ## upodhan
 
@@ -2957,7 +2957,7 @@ v. l., often more correctly *uddhuta):*; the sea
 
 wishing to illustrate by an example
 [ŚAṂK.] for [BṚH. ĀR. UP. S. 195.]
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>
 
 ## samudhan
 
@@ -2969,7 +2969,7 @@ wishing to illustrate by an example
 - **RU:** — *samud*, partic. *samuddhata = samudgīrṇa* [H. an. 4,128.]
 - **EN:** *samud*, partic. *samuddhata = samudgīrṇa*
 [H. an. 4,128.]
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>
 
 **1)** 1) aufgewirbelt: Staub [HARIV. 13668] (*samutthita* die neuere Ausg.). [R. 6,19,12.]
 
@@ -2977,7 +2977,7 @@ wishing to illustrate by an example
 - **EN:** 1) whirled up: dust
 [HARIV. 13668] (*samutthita* the more recent Ausg.).
 [R. 6,19,12.]
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) aufgehoben: *˚patāka* [HARIV. 16253] (*samucchrita˚* die neuere Ausg.). *˚lāṅgūla* [HIT. ed. JOHNS. 1614] (*samunnata˚* SCHL. [76,6]). hoch gehend: *˚taraṃgiṇī gaṅgā* [MBH. 5,5757.] *unnatasānusamuddhatā jāhnavī* hoch auf — fliessend [KIR. 5,15.]
 
@@ -2988,7 +2988,7 @@ wishing to illustrate by an example
 running high: *˚taraṃgiṇī gaṅgā*
 [MBH. 5,5757.] *unnatasānusamuddhatā jāhnavī* flowing up high
 [KIR. 5,15.]
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) gesteigert, heftig, intensiv: *tejas* [R. 1,38,16.] *rathaghoṣa* [MBH. 13,1978.] *lavaṇajalasamuddhatasvana* wie das Meer heftig tosend [8,1212.] —
 
@@ -2997,7 +2997,7 @@ running high: *˚taraṃgiṇī gaṅgā*
 [R. 1,38,16.] *rathaghoṣa*
 [MBH. 13,1978.] *lavaṇajalasamuddhatasvana* roaring violently like the sea
 [8,1212.] —
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) hochfahrend, stolz, übermüthig [AK. 3,1,23.] [H. an. 4,128.]
 
@@ -3005,7 +3005,7 @@ running high: *˚taraṃgiṇī gaṅgā*
 - **EN:** 4) haughty, proud, arrogant
 [AK. 3,1,23.]
 [H. an. 4,128.]
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>
 
 **5)** — 5) strotzend, voll von: *lomaharṣa˚* [R. 5,17,35.] *sahajacāpaladoṣa˚* [ŚIŚ. 2,117] (= *dṛpta* [MALLIN.]).
 
@@ -3014,7 +3014,7 @@ running high: *˚taraṃgiṇī gaṅgā*
 [R. 5,17,35.] *sahajacāpaladoṣa˚*
 [ŚIŚ. 2,117] (= *dṛpta*
 [MALLIN.]).
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>
 
 **6)** — 6) herausgenommen: *puṣkaraṃ hradādagastyena* (richtiger *samuddhṛtam* [ed. Bomb.]) [MBH. 13,4544.] *˚nidhāna* [R. 2,33,18] (richtiger *samuddhṛta˚* [ed. Bomb.] und [GORR.]).
 
@@ -3023,7 +3023,7 @@ running high: *˚taraṃgiṇī gaṅgā*
 [MBH. 13,4544.] *˚nidhāna*
 [R. 2,33,18] (more correctly *samuddhṛta˚* [ed. Bomb.] and
 [GORR.]).
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>
 
 **7)** — 7) in Bewegung versetzt, erregt (richtiger *samuddhuta): ūrubhujavegena samudraḥ* [R. 5,3,37.] *pakṣavātasamuddhatā puṣpavṛṣṭayaḥ* [10,12.] *˚marut* [UTTARAR. 95,11 (124,10).]
 
@@ -3032,13 +3032,13 @@ running high: *˚taraṃgiṇī gaṅgā*
 [R. 5,3,37.] *pakṣavātasamuddhatā puṣpavṛṣṭayaḥ*
 [10,12.] *˚marut*
 [UTTARAR. 95,11 (124,10).]
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>
 
 **cross-ref)** — Vgl. *vimatisamudghātin* .
 
 - **RU:** — Vgl. *vimatisamudghātin* .
 - **EN:** Vgl. *vimatisamudghātin*.
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>
 
 ## upahan
 
@@ -3076,7 +3076,7 @@ running high: *˚taraṃgiṇī gaṅgā*
 [P. 3,4,48], Schol. of the striking d. h. alighting of a bird: *kapotaścedāgāramupahanyāt*
 [ĀŚV. GṚHY. 3,7,7.] *mārjāravatpoṣakaṃ copahaṃsi* thus v. a. to scratch
 [MBH. 2,2123.]
-  <sub>DCS 474 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) anstecken, an die Spitze eines Stabes u. s. w. fassen, antupfen
 [TBR. 1,1,3,6.] *kumbhyai darvyā*
@@ -3106,7 +3106,7 @@ running high: *˚taraṃgiṇī gaṅgā*
 [ŚĀṄKH. ŚR. 4,21,8.] *ājyameva saṃskṛtyopaghātaṃ juhuyāt* picking out piece by piece
 [GOBH. 1,9,24.]
 [ŚAT. BR. 5,2,2,4.] [4,4.] [14,9,4,18.] [23.]
-  <sub>DCS 474 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) einstecken, befestigen: *mayūkhān*
 [TS. 2,3,1,5.]
@@ -3115,7 +3115,7 @@ running high: *˚taraṃgiṇī gaṅgā*
 [TS. 2,3,1,5.]
 - **EN:** — 3) to insert, fasten: *mayūkhān*
 [TS. 2,3,1,5.]
-  <sub>DCS 474 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) störend treffen, hemmen; beeinträchtigen, beschädigen: *prajananam*
 [AIT. BR. 3,11.] *akṣāṇāṃ vagnumupajighnamānaḥ*
@@ -3163,7 +3163,7 @@ running high: *˚taraṃgiṇī gaṅgā*
 [SUŚR. 1,38,16.] *svabhāvaḥ*
 [BHĀG. P. 2,10,41.] *mama pratijñāmupahantum* to bring to disgrace
 [HARIV. 7209.]
-  <sub>DCS 474 · attested</sub>
+  <sub>attested</sub>
 
 **5)** — 5) anstossen, stecken bleiben im Recitiren u. s. w., fehlen: *adhīyannupahanyāt*
 [AIT. BR. 3,35.]
@@ -3175,13 +3175,13 @@ running high: *˚taraṃgiṇī gaṅgā*
 - **EN:** — 5) to stumble, get stuck while reciting u. s. w., to fail: *adhīyannupahanyāt*
 [AIT. BR. 3,35.]
 [ŚĀṄKH. BR. 26,3. 27,1.] med. [TS. 7,3,1,1.] [2.]
-  <sub>DCS 474 · attested</sub>
+  <sub>attested</sub>
 
 **6)** — 6) partic. *upahata*
 
 - **RU:** — 6) partic. *upahata*
 - **EN:** — 6) partic. *upahata*
-  <sub>DCS 474 · attested</sub>
+  <sub>attested</sub>
 
 **6a)** a) belegt, bestreut: *āsanāni dvidarbhopahatāni*
 [DEVALA] bei [KULL.] zu [M. 3,208.]
@@ -3190,7 +3190,7 @@ running high: *˚taraṃgiṇī gaṅgā*
 [DEVALA] при [KULL.] к [M. 3,208.]
 - **EN:** a) covered, strewn with: *āsanāni dvidarbhopahatāni*
 [DEVALA] in [KULL.] to [M. 3,208.]
-  <sub>DCS 474 · attested</sub>
+  <sub>attested</sub>
 
 **6b)** — b) erschlagen
 [UTTARAR. 133,11 (176,8).] *anupahatakruṣṭa* der nicht weiss, was Schlagen und Schmähen heisst (*upahata* und *kruṣṭa* wohl als nomm. act. zu fassen)
@@ -3202,7 +3202,7 @@ running high: *˚taraṃgiṇī gaṅgā*
 - **EN:** — b) slain
 [UTTARAR. 133,11 (176,8).] *anupahatakruṣṭa* who does not know what striking and reviling mean (*upahata* and *kruṣṭa* probably to be taken as nomm. act.)
 [Lot. de la b. l. 603.]
-  <sub>DCS 474 · attested</sub>
+  <sub>attested</sub>
 
 **6c)** — c) behaftet (mit einem Uebel), heimgesucht, hart mitgenommen, beschädigt, verdorben, besudelt: *rakṣāṃsi devaiḥ*
 [ŚAT. BR. 7,3,2,6.] *grāmaścauraiḥ*
@@ -3415,7 +3415,7 @@ running high: *˚taraṃgiṇī gaṅgā*
 [VARĀH. BṚH. S. 16,37.] *upahatātman* downcast, sad
 [KATHĀS. 114,100.] *anupahatātmaka* of good cheer
 [27,130.]
-  <sub>DCS 474 · attested</sub>
+  <sub>attested</sub>
 
 ## upahan
 
@@ -3429,13 +3429,13 @@ running high: *˚taraṃgiṇī gaṅgā*
 [Spr. (II) 4310.]
 - **EN:** d) uncontested: *vidhi*
 [Spr. (II) 4310.]
-  <sub>DCS 474 · attested</sub>
+  <sub>attested</sub>
 
 **cross-ref)** — Vgl. *upaghāta* fgg., *upaghna, upahatnu* fgg., *daivopahataka, dhūmopahata, nirupahata* .
 
 - **RU:** — Vgl. *upaghāta* fgg., *upaghna, upahatnu* fgg., *daivopahataka, dhūmopahata, nirupahata* .
 - **EN:** Vgl. *upaghāta* fgg., *upaghna, upahatnu* fgg., *daivopahataka, dhūmopahata, nirupahata*.
-  <sub>DCS 474 · attested</sub>
+  <sub>attested</sub>
 
 ## samupahan
 
@@ -3449,7 +3449,7 @@ running high: *˚taraṃgiṇī gaṅgā*
 [Spr. (II) 4753.]
 - **EN:** *samupa*, partic. *˚hata* damaged, clouded: *˚mati*
 [Spr. (II) 4753.]
-  <sub>DCS 1 · attested</sub>
+  <sub>attested</sub>
 
 ## nihan
 
@@ -3520,7 +3520,7 @@ running high: *˚taraṃgiṇī gaṅgā*
 [MBH. 4,1680.] *śirāṃsi viśikhairnyahanam*
 [3,12220.] *nighnandviṣatāṃ manāṃsi*
 [15653.]
-  <sub>DCS 2228 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) anschlagen die Trommel: *koṇairbheryo nijaghnire* (pass.)
 [BHAṬṬ. 14,2.]
@@ -3529,7 +3529,7 @@ running high: *˚taraṃgiṇī gaṅgā*
 [BHAṬṬ. 14,2.]
 - **EN:** — 3) to strike, the drum: *koṇairbheryo nijaghnire* (pass.)
 [BHAṬṬ. 14,2.]
-  <sub>DCS 2228 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) fällen, niederschlagen, erschlagen, tödten
 [ṚV. 2,13,8.] *vajreṇa śuṣṇam*
@@ -3709,7 +3709,7 @@ Schol. *nighnāna* able to strike down
 [BHAṬṬ. 5,81.] *stambo yena nihanyate* is cut down —, mown down
 [AK. 3,3,35.] *daivaṃ nihatya* thus v. a. overcoming
 [Spr. (II) 1255.]
-  <sub>DCS 2228 · attested</sub>
+  <sub>attested</sub>
 
 **5)** — 5) zerstören, zu Grunde richten, in's Verderben bringen, vernichten, vertreiben: *śaravarṣam*
 [MBH. 7,9345.] *astramastreṇa*
@@ -3766,7 +3766,7 @@ Schol. *nighnāna* able to strike down
 [DAŚAK. 91,15.] *balam*
 [BHAṬṬ. 8,20.] *vayaṃ bhṛśaṃ tatra mahānilāmbubhirhanyamānāḥ* being visited, afflicted
 [BHĀG. P. 10,80,38.]
-  <sub>DCS 2228 · attested</sub>
+  <sub>attested</sub>
 
 ## nihan
 
@@ -3783,7 +3783,7 @@ Schol. *nighnāna* able to strike down
 - **EN:** — 6) to fall upon: *prajāsu nihatyeva sahasānnamatsyataḥ*
 [KĀTY. ŚR. 4,15,16.] with gen.: *śuddhahastau brāhmaṇasyānihatyaitaṃ svargaṃ sukṛtāpītam* with pure hands, as those who have not laid hands on a Brahman,
 [AV. 12,3,44.]
-  <sub>DCS 2228 · attested</sub>
+  <sub>attested</sub>
 
 **7)** — 7) heften an (loc.): *yathā puṃsaḥ striyāṃ nihanyate manaḥ* haftet an
 [AV. 6,70,1.]
@@ -3792,7 +3792,7 @@ Schol. *nighnāna* able to strike down
 [AV. 6,70,1.]
 - **EN:** — 7) to attach to, fix upon (loc.): *yathā puṃsaḥ striyāṃ nihanyate manaḥ* is attached to
 [AV. 6,70,1.]
-  <sub>DCS 2228 · attested</sub>
+  <sub>attested</sub>
 
 **8)** — 8) senken: *pakṣau bhūmyām*
 [AV. 6,8,2.] *(hastam) tiryaṅnihatya*
@@ -3807,7 +3807,7 @@ Schol. *nighnāna* able to strike down
 [AV. 6,8,2.] *(hastam) tiryaṅnihatya*
 [VS. PRĀT. 1,123.] *ṛjum*
 [124.]
-  <sub>DCS 2228 · attested</sub>
+  <sub>attested</sub>
 
 **9)** — 9) mit gesenktem Tone d. i. mit dem Anudātta sprechen
 [ṚV. PRĀT. 11,27.]
@@ -3825,7 +3825,7 @@ Schol. *nighnāna* able to strike down
 [Ind. St. 4,174. 330.]
 [ĀŚV. ŚR. 7,11,5.]
 [P. 8,1,35], Schol.
-  <sub>DCS 2228 · attested</sub>
+  <sub>attested</sub>
 
 **10)** — 10) multipliciren Comm. zu [ĀRYABH. 4,25]
 u. s. w.
@@ -3834,13 +3834,13 @@ u. s. w.
 u. s. w.
 - **EN:** — 10) to multiply Comm. by [ĀRYABH. 4,25]
 u. s. w.
-  <sub>DCS 2228 · attested</sub>
+  <sub>attested</sub>
 
 **11)** — 11) partic. *nihata*
 
 - **RU:** — 11) partic. *nihata*
 - **EN:** — 11) partic. *nihata*
-  <sub>DCS 2228 · attested</sub>
+  <sub>attested</sub>
 
 **11a)** a) geschleudert: *vajra*
 [ṚV. 6,27,4.] niedergeschlagen: *yugāntāgni˚ (meru)*
@@ -3888,7 +3888,7 @@ u. s. w.
 [KATHĀS. 25,197.]
 [RĀJA-TAR. 2,94.] [4,329.] [5,335.] [414.] [434.]
 [BHĀG. P. 1,15,7.] [5,14,22.] [7,10,25.]
-  <sub>DCS 2228 · attested</sub>
+  <sub>attested</sub>
 
 **11b)** — b) zerstört, zu Grunde gerichtet, vernichtet: *tripura*
 [MBH. 3,1703.] *deśa*
@@ -3918,7 +3918,7 @@ u. s. w.
 [KATHĀS. 50,66.] *yogyatā*
 [Spr. (II) 6516.] *pradoṣe panthāḥ* gone, thus v. a. no longer to be seen
 [4254.]
-  <sub>DCS 2228 · attested</sub>
+  <sub>attested</sub>
 
 **11c)** — c) mit dem Anudātta gesprochen
 [Ind. St. 4,366.] Kār. 1 aus
@@ -3933,7 +3933,7 @@ _n._ [4.]
 [Ind. St. 4,366.] Kār. 1 out
 [SIDDH. K.] to [P. 7,2,10.] Comm. to [TS. PRĀT. 19,3.] *˚tva*
 _n._ [4.]
-  <sub>DCS 2228 · attested</sub>
+  <sub>attested</sub>
 
 **11d)** — d) fehlerhaft für *nihita*
 [R. 2,82,16] (*nihita* [ed. Bomb.]).
@@ -3963,7 +3963,7 @@ read)
 [MBH. 1,5792.] *nighātayiṣyanyudhi yātudhānān*
 [BHAṬṬ. 2,21.] — intens. *nighanighnat* hurling
 [ṚV. 1,55,5.]
-  <sub>DCS 2228 · attested</sub>
+  <sub>attested</sub>
 
 ## abhi-ni-han
 
@@ -3980,7 +3980,7 @@ read)
 - **EN:** — *abhini*
  1) to pierce, impale, spit (on something)
 [ṚV. 1,162,11.]
-  <sub>DCS 10 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) schlagen auf: *anyo'nyamabhinighnatāṃ śarāṇām*
 [R. 6,81,25.] *dundubhīn* die Trommeln
@@ -4007,7 +4007,7 @@ read)
 [MBH. 3,332.] *yathā śailasya mahataḥ śailenaivābhinighnataḥ*
 [4,1424] according to a reading noted by
 [NĪLAK.].
-  <sub>DCS 10 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) partic. *˚hata* Bez. eines Svarita, der sonst *˚hita* heisst,
 [AV. PRĀT. 20,4.] [10.] Comm. zu [8.]
@@ -4016,7 +4016,7 @@ read)
 [AV. PRĀT. 20,4.] [10.] Comm. к [8.]
 - **EN:** — 3) partic. *˚hata* Bez. of a Svarita, which otherwise is called *˚hita*,
 [AV. PRĀT. 20,4.] [10.] Comm. to [8.]
-  <sub>DCS 10 · attested</sub>
+  <sub>attested</sub>
 
 ## upa-ni-han
 
@@ -4033,7 +4033,7 @@ read)
 - **EN:** — *upani* to put on, attach to, place beside: *methīm*
 [ŚAT. BR. 3,5,3,21.]
 [KĀTY. ŚR. 8,4,7.]
-  <sub>DCS 3 · attested</sub>
+  <sub>attested</sub>
 
 ## pari-ṇi-han
 
@@ -4056,7 +4056,7 @@ read)
 [ŚAT. BR. 13,8,4,1.]
 - **EN:** 1) to set around, fence in by piercing/staking around: *śaṅkubhiḥ*
 [ŚAT. BR. 13,8,4,1.]
-  <sub>DCS 4 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) schlagen: *urāṃsi parinighnantyaḥ* (so beide Ausgg.)
 [MBH. 3,12261.]
@@ -4065,7 +4065,7 @@ read)
 [MBH. 3,12261.]
 - **EN:** — 2) to strike: *urāṃsi parinighnantyaḥ* (thus both Ausgg.)
 [MBH. 3,12261.]
-  <sub>DCS 4 · attested</sub>
+  <sub>attested</sub>
 
 ## pra-ṇi-han
 
@@ -4101,7 +4101,7 @@ read)
 [P. 2,3,56], Schol. *brahmadviṣaste praṇihanmi*
 [BHAṬṬ. 2,35.] [8,121.] uncertain whether gen. or acc.
 [Spr. (II) 4680.]
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) stärker senken: die Hand
 [VS. PRĀT. 1,124.] tiefer als Anudātta sprechen
@@ -4113,7 +4113,7 @@ read)
 - **EN:** — 2) to lower more strongly: the hand
 [VS. PRĀT. 1,124.] to speak lower than Anudātta
 [4,137.]
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) partic. *˚hata = dviṣṭa, pratiskhalita* und *baddha*
 [MED. t. 207.]
@@ -4122,7 +4122,7 @@ read)
 [MED. t. 207.]
 - **EN:** — 3) partic. *˚hata = dviṣṭa, pratiskhalita* and *baddha*
 [MED. t. 207.]
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 ## prati-ni-han
 
@@ -4139,7 +4139,7 @@ read)
 - **EN:** — *pratini* to aim/deal a blow against: *vṛtrasya yadvadhena ni tvaṃ pratyānaṃ jaghantha*
 [ṚV. 1,52,15.] *andhake pratinihate*
 [MBH. 7,6726.]
-  <sub>DCS 1 · attested</sub>
+  <sub>attested</sub>
 
 ## vi-ni-han
 
@@ -4176,7 +4176,7 @@ read)
 [10,44,43.] to strike down: *mahāstrāṇi*
 [MBH. 6,2674.] uneig.: *manāṃsi naḥ*
 [12,395.]
-  <sub>DCS 222 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) erschlagen, erlegen, tödten
 [MBH. 1,525.] [2246.] [2837.] [2,867.] [4,364.]
@@ -4194,7 +4194,7 @@ read)
 [HARIV. 13629.]
 [R. GORR. 2,28,8.] [5,78,6.] [6,30,38.]
 [KĀM. NĪTIS. 7,2. 15,37.] [Spr. (II) 1421.] [7092.] [BHĀG. P. 4,26,10.]
-  <sub>DCS 222 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) zerstören, zu Grunde richten, zu Nichte machen
 [VARĀH. BṚH. S. 4,13.] [6,10.] [33,22.] [39,5.] [104,59.] *tūstāni*
@@ -4215,7 +4215,7 @@ read)
 [MBH. 3,12155.] *tṛṣṇām*
 [Spr. (II) 379.] *śleṣmāṇam*
 [1992], v. l.
-  <sub>DCS 222 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) partic. *˚hata*
 - **EN:** — 4) partic. *˚hata*
@@ -4232,7 +4232,7 @@ read)
 - **EN:** a) struck down: *śakti*
 [MBH. 6,3678] (*˚hitā* [ed. Calc.]). struck, touched: *ulkayā śikhinā vāgastyaḥ*
 [VARĀH. BṚH. S. 12,21.]
-  <sub>DCS 222 · attested</sub>
+  <sub>attested</sub>
 
 **4b)** — b) erschlagen, getödtet, geschlachtet
 [MBH. 1,1474.] [3,2546.] [4,362.] [5,7095.] [15,368.]
@@ -4259,7 +4259,7 @@ read)
 [Spr. (II) 3694.] [7419.]
 [MĀRK. P. 127,25.]
 [BHĀG. P. 6,9,54.] [7,2,1.]
-  <sub>DCS 222 · attested</sub>
+  <sub>attested</sub>
 
 **4c)** — c) zu Grunde gerichtet, zu Nichte gemacht: *˚ripuroga*
 [VARĀH. BṚH. S. 104,43.] *tamas*
@@ -4274,7 +4274,7 @@ read)
 [VARĀH. BṚH. S. 104,43.] *tamas*
 [MBH. 1,85.] *ājñā* thus v. a. not followed, not obeyed
 [R. 5,21,11.]
-  <sub>DCS 222 · attested</sub>
+  <sub>attested</sub>
 
 ## saṃ-ni-han
 
@@ -4294,7 +4294,7 @@ read)
 [HARIV. 12538.] slain
 [MBH. 6,5549.] [7,5816.] [8,4556.] — partic. *˚hata*
 [1,8300] erroneous for *˚hita*, as the [ed. Bomb.] reads. Vgl. *saṃnihatī* fg.
-  <sub>DCS 4 · attested</sub>
+  <sub>attested</sub>
 
 ## nis-han
 
@@ -4343,7 +4343,7 @@ read)
 [MBH. 8,849.]
 [BHĀG. P. 4,14,34.] [6,9,18] the Bombay [edition] reads Ausgg., more correctly *nijaghnus*.* nirhatya*
 [RĀJA-TAR. 5,432] probably erroneous for *nirhṛtya*.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) loswerfen auf (mit gen. wie auch sonst bei Verbis des Zielens): *mahato *
 
@@ -4358,7 +4358,7 @@ read)
 
 * nirmṛgasya vadharjaghāna*
 [ṚV. 5,32,3.]
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **caus-intro)** — Vgl. *ulkānirhata* unter *ulkā, nirghāta* fgg. und *ānirhata* . — caus.
 - **EN:** — Vgl. *ulkānirhata* under *ulkā, nirghāta* fgg. and *ānirhata*. — caus.
@@ -4375,7 +4375,7 @@ read)
 [MBH. 1,5792.]
 - **EN:** — 2) to kill: *spaśairnirghātayetsarvān* (thus [ed. Bomb.])
 [MBH. 1,5792.]
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **caus-note)** — Vgl. *ulkānirhata* unter *ulkā, nirghāta* fgg. und *ānirhata* . — caus.
  1) *nirghātayati* herausschaffen: *śalyam*
@@ -4384,7 +4384,7 @@ read)
 - **RU:** — Vgl. *ulkānirhata* под *ulkā, nirghāta* fgg. и *ānirhata*. — caus.
  1) *nirghātayati* выносить, удалять: *śalyam*
 [SUŚR. 1,100,12. 102,9.]
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 ## ati-nis-han
 
@@ -4398,7 +4398,7 @@ read)
 [ṚV. PRĀT. 3,18.]
 - **EN:** — *atinis* to draw apart excessively: the Svarita
 [ṚV. PRĀT. 3,18.]
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 ## adhi-nis-han
 
@@ -4412,7 +4412,7 @@ read)
 [ṚV. 1,80,4.]
 - **EN:** — *adhinis* to exterminate, wipe out from: *nirindra bhūmyā adhi vṛtraṃ jaghantha*
 [ṚV. 1,80,4.]
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 ## parinis+han
 
@@ -4426,7 +4426,7 @@ read)
 [AV. 3,2,4.]
 - **EN:** — *parinis* to drive out, expel: *yadeṣāṃ hṛdi tadeṣāṃ pari nirjahi*
 [AV. 3,2,4.]
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 ## vinis+han
 
@@ -4440,7 +4440,7 @@ read)
 [AV. 7,52,2.]
 - **EN:** — *vinis*, partic. *vinirhata* "destroyed, annihilated"
 [AV. 7,52,2.]
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 ## parā+han
 
@@ -4466,7 +4466,7 @@ read)
 [4,16,7.] to strike off: the head
 [6,26,3.] *parāhanaddrauṇivarāṅgabhūṣaṇam*
 [MBH. 8,812.]
-  <sub>DCS 36 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) betasten: *yadvo 'śuddhāḥ parājaghnuḥ*
 [VS. 1,13.]
@@ -4481,7 +4481,7 @@ read)
 [VS. 1,13.]
 [ŚAT. BR. 1,1,3,12.] *somam*
 [3,3,2,2.] [9,4,1.]
-  <sub>DCS 36 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) partic. *˚hata = āviddha*
 [MED. dh. 28.]
@@ -4504,7 +4504,7 @@ read)
 [H. 265.]
 - **EN:** — 3) partic. *˚hata = āviddha*
 [MED. dh. 28.]
-  <sub>DCS 36 · attested</sub>
+  <sub>attested</sub>
 
 **3a)** a) ab-, weggeschlagen, vertrieben: *payodā vāyuvegaparāhatāḥ*
 [MBH. 3,12889.] *daivaṃ matpauruṣaparāhatam*
@@ -4527,7 +4527,7 @@ read)
 **cross-ref)** — Vgl. *parāhati* .
 
 - **RU:** — Vgl. *parāhati* .
-  <sub>DCS 36 · attested</sub>
+  <sub>attested</sub>
 
 ## pari+han
 
@@ -4541,7 +4541,7 @@ read)
 [P. 8,4,22. fg.]
 - **EN:** — *pari*, when the *na* of the root passes into *ṇa*
 [P. 8,4,22. fg.]
-  <sub>DCS 12 · attested</sub>
+  <sub>attested</sub>
 
 **1)** 1) umwinden: *bhogaiḥ*
 [KĀṬH. 13,4.]
@@ -4553,7 +4553,7 @@ read)
 - **EN:** 1) "to wind around": *bhogaiḥ*
 [KĀṬH. 13,4.]
 [ŚĀṄKH. ŚR. 16,18,14.]
-  <sub>DCS 12 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) ersticken: das Feuer
 [ŚAT. BR. 10,5,2,6.]
@@ -4562,7 +4562,7 @@ read)
 [ŚAT. BR. 10,5,2,6.]
 - **EN:** — 2) "to smother, choke": the fire
 [ŚAT. BR. 10,5,2,6.]
-  <sub>DCS 12 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) pass. einen Wandel erfahren: *prakṛtiḥ sā mama parā na kvacitparihanyate (prati˚* [ed. Bomb.])
 [MBH. 13,6329.] sich legen, vergehen: *utsāhaḥ parihanyate*
@@ -4577,7 +4577,7 @@ read)
 [MBH. 13,6329.] "to subside, pass away": *utsāhaḥ parihanyate*
 [Spr. (II) 3769], v. l. for *parihīyate* . — Instead of *pari bādho jahī mṛdhaḥ*
 [ṚV. 8,45,40], *paribādho* is to be conjectured.
-  <sub>DCS 12 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) partic. *˚hata*
 [ŚĀK. 69,12] (v. l. *pratihata*) und
@@ -4592,13 +4592,13 @@ read)
 [ŚĀK. 69,12] (v. l. *pratihata*) and
 [GĪT. 5,13], erroneous for *˚hṛta* (thus
 [GĪT.] in [HAEB.]).
-  <sub>DCS 12 · attested</sub>
+  <sub>attested</sub>
 
 **note)** — Vgl. *parighātin* und *duṣparihantu* .
 
 - **RU:** — Vgl. *parighātin* и *duṣparihantu* .
 - **EN:** — Vgl. *parighātin* and *duṣparihantu* .
-  <sub>DCS 12 · attested</sub>
+  <sub>attested</sub>
 
 ## abhipari+han
 
@@ -4612,7 +4612,7 @@ read)
 [ŚAT. BR. 10,4,4,1.]
 - **EN:** — *abhipari* "to encompass on all sides, overpower": *prajāpatiṃ mṛtyuḥ*
 [ŚAT. BR. 10,4,4,1.]
-  <sub>DCS 1 · attested</sub>
+  <sub>attested</sub>
 
 ## pra+han
 
@@ -4698,7 +4698,7 @@ u. s. w. [MEGH. 65.] [RAGH. 19,14.] [KATHĀS. 10,171.] [107,49.] [109,152.] [118
 [H. 940.] "slain"
 [KĀM. NĪTIS. 13,68] (vgl. [78]). [PAÑCAR. 4,3,117.] _n._ "blow, stroke": *jaṅghā˚* gaṇa *akṣadyūtādi*
 to [P. 4,4,19.]
-  <sub>DCS 51 · attested</sub>
+  <sub>attested</sub>
 
 **note)** — Vgl. *prahaṇana, prahan, prahantar* fg. — desid.: *etenāsmāllokātprajighāṃsanyajeta*
 [ŚĀṄKH. ŚR. 16,22,10] wohl fehlerhaft für *prajigāṃsan* .
@@ -4707,7 +4707,7 @@ to [P. 4,4,19.]
 [ŚĀṄKH. ŚR. 16,22,10] вероятно ошибочно вместо *prajigāṃsan* .
 - **EN:** — Vgl. *prahaṇana, prahan, prahantar* fg. — desid.: *etenāsmāllokātprajighāṃsanyajeta*
 [ŚĀṄKH. ŚR. 16,22,10], probably erroneous for *prajigāṃsan* .
-  <sub>DCS 51 · attested</sub>
+  <sub>attested</sub>
 
 ## abhipra+han
 
@@ -4730,7 +4730,7 @@ v. l.).
 [ŚAT. BR. 14,7,1,12.] partic. *˚hata* "wounded": tree
 [SUŚR. 1,327,4] (*abhihata*
 v. l.).
-  <sub>DCS 3 · attested</sub>
+  <sub>attested</sub>
 
 ## nipra+han
 
@@ -4744,7 +4744,7 @@ v. l.).
 [P. 2,3,56], Schol.
 - **EN:** — *nipra* with gen.: *caurasya niprahanti*
 [P. 2,3,56], Schol.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 ## vipra+han
 
@@ -4770,7 +4770,7 @@ v. l.).
 [5697.] [MBH. 7,3236.] *a˚* "untrodden": forest
 [R. 1,26,12.], road
 [3,74,4.]
-  <sub>DCS 9 · attested</sub>
+  <sub>attested</sub>
 
 ## pratihan
 
@@ -4793,7 +4793,7 @@ v. l.).
 [PAÑCAV. BR. 13,11,10.] to rush upon someone (acc.): *bhallaiḥ* u. s. w. *pratyaghnanmām*
 [MBH. 3,12217.] *indramasurānpratijaghnuṣam*
 [7,1120.]
-  <sub>DCS 245 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) wiederschlagen: *pratihanyāddhataḥ*
 [MBH. 3,1091.]
@@ -4808,7 +4808,7 @@ v. l.).
 [MBH. 3,1091.]
 [Spr. (II) 151.] [5611.] *pratihantuṃ* (so to be read with the [ed. Bomb.]) *na cecchati hantāram*
 [MBH. 12,8437.]
-  <sub>DCS 245 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) zerschlagen, brechen: *parṣān*
 [ṚV. 10,48,7.]
@@ -4823,7 +4823,7 @@ v. l.).
 [ṚV. 10,48,7.]
 [NIR. 3,10.] *abhimātim*
 [ṚV. 8,25,15.]
-  <sub>DCS 245 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) anspiessen: *sṛke yattvā pratyahandeva ekaḥ*
 [ṚV. 1,32,12.]
@@ -4832,7 +4832,7 @@ v. l.).
 [ṚV. 1,32,12.]
 - **EN:** — 4) to pierce, spit (on a stake): *sṛke yattvā pratyahandeva ekaḥ*
 [ṚV. 1,32,12.]
-  <sub>DCS 245 · attested</sub>
+  <sub>attested</sub>
 
 **5)** — 5) Jmd oder Etwas zurückschlagen, abwehren, sich wehren gegen
 [RAGH. 9,60.]
@@ -4904,7 +4904,7 @@ v. l.).
 [R. 2,52,24] ([49,18] [GORR.]). *yauvarājyābhiṣecanam* to thwart, foil
 [R. GORR. 2,20,25.] *pratihaṃsi mamājñām*
 [7,59,14.]
-  <sub>DCS 245 · attested</sub>
+  <sub>attested</sub>
 
 **6)** — 6) pass. mit abl. fern gehalten werden von, verlustig gehen: *niḥśreyasāt*
 [WINDISCHMANN, Sancara 94.]
@@ -4913,7 +4913,7 @@ v. l.).
 [WINDISCHMANN, Sancara 94.]
 - **EN:** — 6) pass. with abl. to be kept away from, to be deprived of: *niḥśreyasāt*
 [WINDISCHMANN, Sancara 94.]
-  <sub>DCS 245 · attested</sub>
+  <sub>attested</sub>
 
 **7)** — 7) absol. *˚hatya* in entgegengesetzter Richtung: *kṛṣati*
 [KAUŚ. 20.]
@@ -4922,7 +4922,7 @@ v. l.).
 [KAUŚ. 20.]
 - **EN:** — 7) absol. *˚hatya* in the opposite direction: *kṛṣati*
 [KAUŚ. 20.]
-  <sub>DCS 245 · attested</sub>
+  <sub>attested</sub>
 
 **8intro)** — 8) partic. *˚hata*
 - **EN:** — 8) partic. *˚hata*
@@ -5132,7 +5132,7 @@ v. l.).
 [KATHĀS. 123,226.] persons
 [MBH. 13,6840.]
 [KATHĀS. 42,86.] [49,247.] [Verz. d. Oxf. H. 247,b, No. 624.]
-  <sub>DCS 245 · attested</sub>
+  <sub>attested</sub>
 
 **8)** — 8) partic. *˚hata*
  a) wogegen Etwas schlägt: *tīvrāghātapratihatataruskandha*
@@ -5151,7 +5151,7 @@ v. l.).
 [ŚĀK. 50.] *arkaraśmi˚ (vaḍabhī)*
 [R. 3,61,9.] = *pratiskhalita*
 [H. an. 4,113.]
-  <sub>DCS 245 · attested</sub>
+  <sub>attested</sub>
 
 ## pratihan
 
@@ -5165,7 +5165,7 @@ v. l.).
 [PĀR. GṚHY. 2,1.]
 - **EN:** — c) "elapsed, expired": *tṛtīye* (sc. *saṃvatsare) vāpratihate*
 [PĀR. GṚHY. 2,1.]
-  <sub>DCS 245 · attested</sub>
+  <sub>attested</sub>
 
 **8d)** — d) beschränkt, dumm: *˚dhī* _adj._
 [Spr. (II) 2047.]
@@ -5174,7 +5174,7 @@ v. l.).
 [Spr. (II) 2047.]
 - **EN:** — d) "limited, stupid": *˚dhī* _adj._
 [Spr. (II) 2047.]
-  <sub>DCS 245 · attested</sub>
+  <sub>attested</sub>
 
 **8e)** — e) verhasst
 [TRIK. 3,3,170.]
@@ -5186,7 +5186,7 @@ v. l.).
 - **EN:** — e) "hated, odious"
 [TRIK. 3,3,170.]
 [H. an.], where *syāddviṣṭe* st. *khādhiṣṭhe* is to be read.
-  <sub>DCS 245 · attested</sub>
+  <sub>attested</sub>
 
 **8f)** — f) in seinen Erwartungen getäuscht
 [AK. 3,1,41.]
@@ -5198,7 +5198,7 @@ v. l.).
 - **EN:** — f) "disappointed in one's expectations"
 [AK. 3,1,41.]
 [H. 439.]
-  <sub>DCS 245 · attested</sub>
+  <sub>attested</sub>
 
 **8g)** — g) = *hṛṣṭa*
 [TRIK. 3,3,105.] = *hṛṣita* von Zähnen d. i. stumpf (von Säuren)
@@ -5210,7 +5210,7 @@ v. l.).
 - **EN:** — g) = *hṛṣṭa*
 [TRIK. 3,3,105.] = *hṛṣita*, of teeth d. i. "blunted" (by acids)
 [P. 7,2,29], Vārtt. 2, Schol.
-  <sub>DCS 245 · attested</sub>
+  <sub>attested</sub>
 
 **8h)** — h) schlechte Lesart für *prahita*
 [H. 1492.] — caus. Jmd abwehren: *kaḥ pārthaṃ pratighātayet*
@@ -5222,13 +5222,13 @@ v. l.).
 - **EN:** — h) poor reading for *prahita*
 [H. 1492.] — caus. "to ward off someone": *kaḥ pārthaṃ pratighātayet*
 [MBH. 7,6993.]
-  <sub>DCS 245 · attested</sub>
+  <sub>attested</sub>
 
 **note)** — Vgl. *pratigha* fgg., *pratighna* und *pratihati* fgg.
 
 - **RU:** — Vgl. *pratigha* fgg., *pratighna* и *pratihati* fgg.
 - **EN:** — Vgl. *pratigha* fgg., *pratighna* and *pratihati* fgg.
-  <sub>DCS 245 · attested</sub>
+  <sub>attested</sub>
 
 ## sampratihan
 
@@ -5242,7 +5242,7 @@ v. l.).
 [CARAKA 10,7.]
 - **EN:** — *saṃprati* pass. "to knock against each other": *vāyuḥ saṃpratihanyate*
 [CARAKA 10,7.]
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>
 
 ## vihan
 
@@ -5292,7 +5292,7 @@ v. l.).
 [TBR. 2,7,18,1.] to tear off: *kuśyau*
 [1,5,10,7.] [ŚAT. BR. 14,7,1,10.] *tūstāni* to loosen the braids
 [P. 3,1,21], Schol. [VOP. 21,17.]
-  <sub>DCS 177 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) auseinander schlagen so v. a. ausstrecken: ein Fell
 [ṚV. 5,85,1.] *śaṅkubhiḥ*
@@ -5304,7 +5304,7 @@ v. l.).
 - **EN:** — 2) to beat apart, hence v. a. to stretch out: a hide
 [ṚV. 5,85,1.] *śaṅkubhiḥ*
 [ŚAT. BR. 2,1,1,10.]
-  <sub>DCS 177 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) abschlagen, abwehren, sich wehren gegen: *talaprahārairanyāṃśca vyahanat*
 [MBH. 3,11117.] [13,73001] (nach der Lesart der [ed. Bomb.]). *yadi pratīpaṃ daivaṃ te na vihanyām*
@@ -5316,7 +5316,7 @@ v. l.).
 - **EN:** — 3) to beat off, ward off, defend oneself against: *talaprahārairanyāṃśca vyahanat*
 [MBH. 3,11117.] [13,73001] (according to the reading of the [ed. Bomb.]). *yadi pratīpaṃ daivaṃ te na vihanyām*
 [R. GORR. 2,20,32.]
-  <sub>DCS 177 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) stören, hemmen, unterdrücken, aufheben: *rakṣāṃsi kratūn*
 [BHAṬṬ. 1,19.] *pāpam*
@@ -5391,7 +5391,7 @@ Schol. к [VS. PRĀT. 4,185.] [SARVADARŚANAS. 130,20. 161,17.] *rājyaṃ kurū
 Schol. to [VS. PRĀT. 4,185.] [SARVADARŚANAS. 130,20. 161,17.] *rājyaṃ kurūṇāmanayādvihaṃsi*, hence v. a. to withhold
 [MBH. 5,5033.] *padmānyaśokapuṣpāṇi dṛṣṭvā dṛṣṭirvihanyate* (further) seeing is abolished, hence v. a. becomes useless, since there is then nothing more to see
 [R. 3,79,28.]
-  <sub>DCS 177 · attested</sub>
+  <sub>attested</sub>
 
 **5)** — 5) pass. sich quälen, sich Sorge machen: *alābhe na vihanyeta lābhaścainaṃ na harṣayet*
 [MBH. 12,9976.] *kimidaṃ tvaṃ vihanyase (vimuhyase* die neuere Ausg.)
@@ -5418,7 +5418,7 @@ Schol. to [VS. PRĀT. 4,185.] [SARVADARŚANAS. 130,20. 161,17.] *rājyaṃ kurū
 [NĪLAK.]), hence v. a. you needlessly rack your brains over it
 [HARIV. 8825.] *mā vihanyata gacchata*
 [MBH. 3,15138.]
-  <sub>DCS 177 · attested</sub>
+  <sub>attested</sub>
 
 **6)** — 6) partic. *vihata*
 - **EN:** — 6) partic. *vihata*
@@ -5453,7 +5453,7 @@ Schol. to [VS. PRĀT. 4,185.] [SARVADARŚANAS. 130,20. 161,17.] *rājyaṃ kurū
 *vajra˚*
 [ŚAT. BR. 8,2,3,14.] knocked out: *gadā karāt*
 [BHĀG. P. 3,19,3.]
-  <sub>DCS 177 · attested</sub>
+  <sub>attested</sub>
 
 **6b)** — b) getroffen, heimgesucht: *rambheva vāyuvihatā*
 [BHĀG. P. 10,60,24.] *daivena*
@@ -5474,7 +5474,7 @@ Schol. to [VS. PRĀT. 4,185.] [SARVADARŚANAS. 130,20. 161,17.] *rājyaṃ kurū
 [11,29,3.] *daiva˚* (Gegens. *rakṣita*)
 [Spr. (II) 3902.] *cittamakāmavihatam*
 [BHĀG. P. 10,80,29.]
-  <sub>DCS 177 · attested</sub>
+  <sub>attested</sub>
 
 **6c)** — c) abgeschlagen, abgewehrt: *astra*
 [R. 5,44,14.] *aśmavarṣa*
@@ -5537,7 +5537,7 @@ Schol. to [VS. PRĀT. 4,185.] [SARVADARŚANAS. 130,20. 161,17.] *rājyaṃ kurū
 [10,50.] [10,25,1.] *a˚* unhindered, unstoppable: *cakra*
 [BHĀG. P. 2,7,20.] *gati*
 [9,7,23.] [MEGH. 10.]
-  <sub>DCS 177 · attested</sub>
+  <sub>attested</sub>
 
 **6d)** — d) *a˚* an dem Nichts auszusetzen ist: Weib
 [KAURAP. 33.] = *strīguṇairakhaṇḍitā*
@@ -5549,7 +5549,7 @@ Schol.
 - **EN:** — d) *a˚* in whom there is nothing to find fault with: a woman
 [KAURAP. 33.] = *strīguṇairakhaṇḍitā*
 Schol.
-  <sub>DCS 177 · attested</sub>
+  <sub>attested</sub>
 
 **7)** — 7) *vi — han* fehlerhaft für *ni — han* (wie die
 v. l. fast überall hat)
@@ -5582,7 +5582,7 @@ v. l. has almost everywhere)
 [86,23] (*mṛta* [ed. Bomb.]). — caus.
  1) to strike: *parasainyaṃ vighātayet (vināśayet*
 v. l.) [Spr. (II) 2822.]
-  <sub>DCS 177 · attested</sub>
+  <sub>attested</sub>
 
 ## vihan
 
@@ -5596,7 +5596,7 @@ v. l.) [Spr. (II) 2822.]
 [MBH. 13,6720] по чтению [ed. Bomb.]
 - **EN:** 2) to torment, plague; med.
 [MBH. 13,6720] according to the reading of the [ed. Bomb.]
-  <sub>DCS 177 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) hemmen, unterbrechen: *śrautāgnihotrahomān*
 [KULL.] zu [M. 5,84.] — desid. stören —, hemmen wollen: *karma vijighāṃsatā*
@@ -5611,13 +5611,13 @@ v. l.) [Spr. (II) 2822.]
 [KULL.] of [M. 5,84.] — desid. to want to disturb —, to hinder: *karma vijighāṃsatā*
 [BHĀG. P. 4,19,31.] — intens. (?) to inflict a hurt upon someone: *mā sattvāni vijījahi*
 [MBH. 7,2383.]
-  <sub>DCS 177 · attested</sub>
+  <sub>attested</sub>
 
 **closing)** — Vgl. *vighāta* fgg., *vighna, vijighāṃsu, vihati* fgg., *vaihatya* .
 
 - **RU:** — Vgl. *vighāta* fgg., *vighna, vijighāṃsu, vihati* fgg., *vaihatya* .
 - **EN:** Vgl. *vighāta* fgg., *vighna, vijighāṃsu, vihati* fgg., *vaihatya*.
-  <sub>DCS 177 · attested</sub>
+  <sub>attested</sub>
 
 ## anuvihan
 
@@ -5631,7 +5631,7 @@ v. l.) [Spr. (II) 2822.]
 [MBH. 12,2036.]
 - **EN:** *anuvi* to disturb, hinder: *kāryāṇi*
 [MBH. 12,2036.]
-  <sub>DCS 1 · attested</sub>
+  <sub>attested</sub>
 
 ## āvihan
 
@@ -5645,7 +5645,7 @@ v. l.) [Spr. (II) 2822.]
 [MBH. 3,10654.]
 - **EN:** *āvi* (!) to strike upon, beat upon: *yo vai darpāt — parvatamāvihanti . tasyaiva pāṇiḥ sanakho vidīryate*
 [MBH. 3,10654.]
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>
 
 ## han
 
@@ -5659,7 +5659,7 @@ v. l.) [Spr. (II) 2822.]
 [MBH. 8,4110.]
 - **EN:** *pravi*, partic. *˚hata* beaten back —, put to flight: *sainya*
 [MBH. 8,4110.]
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 ## han
 
@@ -5670,7 +5670,7 @@ v. l.) [Spr. (II) 2822.]
 
 - **RU:** — *prativi* s. *prativighāta* .
 - **EN:** *prativi* s. *prativighāta*.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 ## han
 
@@ -5708,7 +5708,7 @@ v. l.) [Spr. (II) 2822.]
 [MBH. 5,4704.] *bhrūkuṭīm*
 [R. 3,35,76.] *padāni saṃhanyante* are joined, join together
 [ŚAṂK.] into [BṚH. ĀR. UP. S. 73.]
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) zusammenballen: *saṃhantyapo divyā mārutaḥ* ballt zusammen zu Hagel
 [SUŚR. 1,264,18.] pass. sich ballen, fest —, consistent werden: *śaraḥ samahanyata*
@@ -5723,7 +5723,7 @@ v. l.) [Spr. (II) 2822.]
 [SUŚR. 1,264,18.] pass. to clump, become firm, compact: *śaraḥ samahanyata*
 [ŚAT. BR. 10,6,5,2.] *kṛṣṇāyasasyeva ca te saṃhatya hṛdayaṃ kṛtam*, hence v. a. your heart is as if hammered together out of iron
 [MBH. 5,4580.]
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) zusammensetzen, — fügen: *āsandīm*
 [ŚĀṄKH. ŚR. 17,2,6.]
@@ -5732,7 +5732,7 @@ v. l.) [Spr. (II) 2822.]
 [ŚĀṄKH. ŚR. 17,2,6.]
 - **EN:** — 3) to put together, join together: *āsandīm*
 [ŚĀṄKH. ŚR. 17,2,6.]
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) aufeinander stossen: *saṃ yaddhananta manyubhirjanāsaḥ*
 [ṚV. 7,56,22.]
@@ -5741,7 +5741,7 @@ v. l.) [Spr. (II) 2822.]
 [ṚV. 7,56,22.]
 - **EN:** — 4) to collide, strike against one another: *saṃ yaddhananta manyubhirjanāsaḥ*
 [ṚV. 7,56,22.]
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **5)** — 5) zerschlagen, brechen: *purā puraṃ samidaṃ haṃsyojasā*
 [ṚV. 1,53,7.]
@@ -5750,7 +5750,7 @@ v. l.) [Spr. (II) 2822.]
 [ṚV. 1,53,7.]
 - **EN:** — 5) to smash, break: *purā puraṃ samidaṃ haṃsyojasā*
 [ṚV. 1,53,7.]
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **6)** — 6) absol. *saṃhatya* sich zusammenthuend, in Gemeinschaft, vereint, zusammen: *jīvāmaḥ*
 [MBH. 5,922.] *sa saṃhatya nihantvyaḥ*
@@ -5783,7 +5783,7 @@ Schol. into [KAP. 1,104.] [SĀH. D. 9,9.] *a˚*
 [BHĀG. P. 3,26,50.] *pāpaiḥ sahāyaiḥ saṃhatya* in union with
 [MBH. 5,4398.] *saṃhatyānyo'nyam*
 [BHĀG. P. 1,7,30.] [2,5,33.]
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **7)** — 7) partic. *saṃhata*
 - **EN:** — 7) partic. *saṃhata*
@@ -5933,7 +5933,7 @@ Schol. into [P. 2,3,56.] [SARVADARŚANAS. 143,20.] *˚cārin*
 [AK. 3,2,25.]
 [H. 1472.] *yūnaḥ paramasaṃhatān*
 [MBH. 3,14653.]
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **7c)** — c) stark, intensiv: *kṣuta*
 [VARĀH. BṚH. S. 68,63.]
@@ -5942,7 +5942,7 @@ Schol. into [P. 2,3,56.] [SARVADARŚANAS. 143,20.] *˚cārin*
 [VARĀH. BṚH. S. 68,63.]
 - **EN:** — c) strong, intense: *kṣuta*
 [VARĀH. BṚH. S. 68,63.]
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **7d)** — d) Bez. eines best. Geruchs
 [MBH. 12,6848.] [14,1409.] eines best. Tons
@@ -5954,7 +5954,7 @@ Schol. into [P. 2,3,56.] [SARVADARŚANAS. 143,20.] *˚cārin*
 - **EN:** — d) Bez. of a best. smell
 [MBH. 12,6848.] [14,1409.] of a best. tone
 [1420.], hence probably v. a. compounded.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **sam+han — 7a)** — 7) partic. *saṃhata*
  a) an —, auf einander gelegt, zusammengefügt, geschlossen, zusammenstossend, anschliessend, eng verbunden
@@ -6057,7 +6057,7 @@ Schol. к [P. 2,3,56.] [SARVADARŚANAS. 143,20.] *˚cārin*
 [M. 7,165.] *harayo golāṅgūlarkṣasaṃhatāḥ*
 [R. 4,23,4.]
 [KĀM. NĪTIS. 13,88.] [KATHĀS. 34,195.] [MĀRK. P. 102,2.] [BHĀG. P. 11,18,27.]
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 ## han
 
@@ -6068,7 +6068,7 @@ Schol. к [P. 2,3,56.] [SARVADARŚANAS. 143,20.] *˚cārin*
 
 - **RU:** — Vgl. *saṃhat* fgg., *saṃhantar, saṃgha, saṃghāta, sāṃhatya, adrisaṃhata, vajra˚, su˚* .
 - **EN:** Vgl. *saṃhat* fgg., *saṃhantar, saṃgha, saṃghāta, sāṃhatya, adrisaṃhata, vajra˚, su˚*.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 ## han
 
@@ -6085,7 +6085,7 @@ Schol. к [P. 2,3,56.] [SARVADARŚANAS. 143,20.] *˚cārin*
 - **EN:** *abhisam*, absol. *abhisaṃhatya* joining together, in company, united
 [MBH. 2,800.] [8,3029.] partic. *abhisaṃhata* attacked, treated with hostility
 [BHĀG. P. 8,11,1.]
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 ## han
 
@@ -6102,7 +6102,7 @@ Schol. к [P. 2,3,56.] [SARVADARŚANAS. 143,20.] *˚cārin*
 - **EN:** *pratisam*, partic. *anyo'nyapratisaṃhatau* joined with one another
 [MBH. 9,249] (*anyo'nyamabhisaṃśritau* [ed. Bomb.]). instead of *pratisaṃhata*
 [12,8275], [ed. Bomb.] reads *˚hṛta*.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 ## han
 
@@ -6119,7 +6119,7 @@ v. l.).
 - **EN:** — *visam*, partic. *visaṃhata* brought out of firm connection, loosened
 [SUŚR. 1,305,12] (*˚hita*
 v. l.).
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 ## han
 
@@ -6169,7 +6169,7 @@ v. l.).
 [3,36,23.] [VARĀH. BṚH. S. 3,18.] [31.] [37.] [4,5.] [5,30.] [9,26.] [10,3.] [20.] [34,19.] [37,3.] [47,12.] [101,13.] [104,23.] [31.] [BṚH. 23,1.] [ŚUK. in LA. (III) 34,14.] [BHĀG. P. 1,7,18.] [38. fgg.] [4,17,13.] [6,11,13. fg.] [18,36.] [11,5,33.] _f._ *˚ghnī*
 [3,15,23.] [20,5.]
 — Vgl. *adṛṣṭa˚, abhogdhan, amitra˚, amīva˚, ari˚, aśasti˚, ahi˚, kṛṣṭi˚, cakṣurhan, jyeṣṭha˚, tamo˚, dasyu˚, durṇāma˚, dhātu˚, nṛ˚, para˚, paśu˚, pāpa˚, pārāvata˚, pitṛ˚, punarhan, pura˚, puro˚, pṛśni˚, bali˚, brahma˚, bhaga˚, bhaganetra˚, bhagākṣi˚, bhujaṃga˚, bhūri˚, bhrātṛvya˚, bhrūṇa˚, makha˚, matsya˚, madhu˚, mano˚, mātṛ˚, māna˚, mitra˚, muṣṭi˚, mṛga˚, yajña˚, yaśo˚, yātu˚, rakṣo˚, valavṛtra˚, vasarhan, vāta˚, vāyu˚, vihaṃga˚, vīra˚, vṛtti˚, vṛtra˚, śata˚, śatru˚, śarya˚, satrā˚, sapatna˚, sapta˚, sarpa˚, sasya˚, sāta˚, svara˚* .
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 ## han
 
@@ -6183,7 +6183,7 @@ v. l.).
 [PAT. a. a. O. 1,247,a.]
 - **EN:** 1. *han*¦ with *vyati* to kill together: *˚hanyante dasyavaḥ*
 [PAT. a. a. O. 1,247,a.]
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — *anu* nachher —, darauf tödten ebend.
 [1,29,a.]
@@ -6192,7 +6192,7 @@ v. l.).
 [1,29,a.]
 - **EN:** — *anu* to kill afterwards, thereupon ebend.
 [1,29,a.]
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **3.1)** — *antar*, *antarhaṇyādrobhyo gāḥ* ebend.
 [1,296,a.]
@@ -6201,7 +6201,7 @@ v. l.).
 [1,296,a.]
 - **EN:** — *antar*, *antarhaṇyādrobhyo gāḥ* ebend.
 [1,296,a.]
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **3.2)** — *ā*
  3) ertönen lassen, aussprechen ebend.
@@ -6220,19 +6220,19 @@ v. l.).
 - **EN:** — *upod* caus. to bring up for discussion, to introduce, broach
 [NĪLAK.] to [MBH. 1,6.] *hananīyaka* _adj._ by *hananīy*
 [PAT. a. a. O. 7,118,a.]
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **1 (cont.))** — *ā*
 
 - **RU:** — *ā*
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **3)** 3) ertönen lassen, aussprechen ebend.
 [7,78,b. 79,a.]
 
 - **RU:** 3) заставлять звучать, произносить ebend.
 [7,78,b. 79,a.]
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 ## han
 
@@ -6243,606 +6243,606 @@ v. l.).
 
 - **RU:** **1.** √*han*¦, *hanti* (*jahi* Imperat., *jahīhi* [смешивается с **2.** *hā*] [R. ed. Bomb. 4,24,33]), *hananti* st. *ghnanti* [SAṂSK. K. 95,a,2]. *hana* st. *jahi* [129,a,7]. *vyapahanat* [R. ed. Bomb. 3,51,18]. *hate* (3. Sg. Med.), *jighnate*, *jighnat* Partic. [SV.]
 - **EN:** **1.** √*han*¦, *hanti* (*jahi* Imperat., *jahīhi* [confused with **2.** *hā*] [R. ed. Bomb. 4,24,33]), *hananti* st. *ghnanti* [SAṂSK. K. 95,a,2]. *hana* st. *jahi* [129,a,7]. *vyapahanat* [R. ed. Bomb. 3,51,18]. *hate* (3. Sg. Med.), *jighnate*, *jighnat* Partic. [SV.]
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **1)** — 1〉 schlagen (mit Acc.), — auf (Loc.), hämmern, die Trommel —, einen Spielball —, eine Flüssigkeit schlagen (klopfen).
 
 - **RU:** — 1〉 бить (с Acc.), — по (Loc.), колотить, бить в барабан, бить мячом, бить (взбивать) жидкость.
 - **EN:** — 1〉 to strike, beat (with Acc.), — upon (Loc.), to hammer — the drum, a ball in play —, to beat (strike, pound) a liquid.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2〉 abschlagen, herunterschlagen.
 
 - **RU:** — 2〉 отбивать, сбивать (вниз).
 - **EN:** — 2〉 to knock off, strike down.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3〉 zurückschlagen, abwehren.
 
 - **RU:** — 3〉 отражать удар, отбивать, отвращать.
 - **EN:** — 3〉 to strike back, ward off.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4〉 treffen.
 
 - **RU:** — 4〉 попадать (в цель), поражать.
 - **EN:** — 4〉 to hit.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **5)** — 5〉 ein Geschoss werfen auf (Gen. oder Dat.).
 
 - **RU:** — 5〉 метать снаряд в (Gen. или Dat.).
 - **EN:** — 5〉 to hurl a missile at (Gen. or Dat.).
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **6)** — 6〉 niederschlagen, tödlich treffen, tödten, erschlagen, erlegen.
 
 - **RU:** — 6〉 сражать, смертельно поражать, убивать, сразить наповал, валить.
 - **EN:** — 6〉 to strike down, deal a deadly blow, kill, slay, fell.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **7)** — 7〉 tödten so v. a. mit dem Tode bestrafen, hinrichten lassen.
 
 - **RU:** — 7〉 казнить, а именно v. a. карать смертью, предавать казни.
 - **EN:** — 7〉 to kill so v. a. to punish with death, have executed.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **8)** — 8〉 verletzen vom einem Hunde gesagt, so v. a. beissen.
 
 - **RU:** — 8〉 кусать, ранить — говорится о собаке, а именно v. a. кусать.
 - **EN:** — 8〉 to injure, said of a dog, so v. a. to bite.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **9)** — 9〉 in der Astronomie so v. a. berühren.
 
 - **RU:** — 9〉 в астрономии: v. a. касаться.
 - **EN:** — 9〉 in astronomy so v. a. to touch.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **10)** — 10〉 unangenehm berührend, verletzen, wehethun.
 
 - **RU:** — 10〉 причинять неприятное ощущение, задевать, причинять боль.
 - **EN:** — 10〉 touching unpleasantly, to hurt, to cause pain.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **11)** — 11〉 zu Falle —, inʼs Verderben bringen, schädigen, zu Grunde richten, vernichten überh. zerstören.
 
 - **RU:** — 11〉 низвергать, губить, вредить, уничтожать überh. разрушать.
 - **EN:** — 11〉 to bring to ruin —, to destruction, to harm, to ruin utterly, annihilate überh. destroy.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **12)** — 12〉 hindern, verhindern.
 
 - **RU:** — 12〉 препятствовать, мешать.
 - **EN:** — 12〉 to hinder, prevent.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **13)** — 13〉 an sich unterdrücken, aufgeben, fahren lassen [60,13].
 
 - **RU:** — 13〉 подавлять в себе, отказываться от, оставлять [60,13].
 - **EN:** — 13〉 to suppress within oneself, give up, let go [60,13].
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **14)** — 14〉 *hata*
 
 - **RU:** — 14〉 *hata*
 - **EN:** — 14〉 *hata*
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **14a)** — a〉 geschlagen (auch von einer Trommel).
 
 - **RU:** — a〉 ударенный, побитый (также о барабане).
 - **EN:** — a〉 struck (also of a drum).
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **14b)** — b〉 abgeschlagen (Kopf), ausgeschlagen (Auge).
 
 - **RU:** — b〉 отрубленный (голова), выбитый (глаз).
 - **EN:** — b〉 struck off (head), knocked out (eye).
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **14c)** — c〉 aufgewirbelt, erregt (Staub).
 
 - **RU:** — c〉 взметённый, поднятый (пыль).
 - **EN:** — c〉 whirled up, stirred up (dust).
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **14d)** — d〉 getroffen, — von (Instr. oder im Comp. vorangehend).
 
 - **RU:** — d〉 поражённый, — чем-л. (Instr. или в Comp. предшествующем).
 - **EN:** — d〉 hit, struck — by (Instr. or preceding in the Comp.).
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **14e)** — e〉 getroffen von, so v. a. heimgesucht —, gequält —, mitgenommen von, zu kämpfen habend mit (Instr. oder im Comp. vorangehend).
 
 - **RU:** — e〉 поражённый чем-л., а именно v. a. постигнутый —, мучимый —, страдающий от, вынужденный бороться с (Instr. или в Comp. предшествующем).
 - **EN:** — e〉 struck by, so v. a. afflicted —, tormented —, taken a toll on by, having to contend with (Instr. or preceding in the Comp.).
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **14f)** — f〉 getödtet, erschlagen.
 
 - **RU:** — f〉 убитый, сражённый.
 - **EN:** — f〉 killed, slain.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **14g)** — g〉 in der Astronomie so v. a. berührt.
 
 - **RU:** — g〉 в астрономии: v. a. затронутый, в соединении.
 - **EN:** — g〉 in astronomy so v. a. touched.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **14h)** — h〉 _f._ so v. a. fututa.
 
 - **RU:** — h〉 _f._ а именно v. a. fututa.
 - **EN:** — h〉 _f._ so v. a. fututa.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **14i)** — i〉 verletzt (auch in übertragener Bed.) [127,28]. [59,22].
 
 - **RU:** — i〉 раненый, задетый (также в переносном Bed.) [127,28]. [59,22].
 - **EN:** — i〉 injured (also in a transferred Bed.) [127,28]. [59,22].
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **14k)** — k〉 vernichtet, zu Grunde gerichtet, dahin (insbes. am Anfange eines adj. Comp.); verloren von Personen, so v. a. an Allem verzweifelnd.
 
 - **RU:** — k〉 уничтоженный, погублённый, погибший (insbes. в начале adj. Comp.); пропавший о людях, а именно v. a. отчаявшийся во всём.
 - **EN:** — k〉 annihilated, ruined, gone (insbes. at the beginning of a adj. Comp.); lost, of persons, so v. a. despairing of everything.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **14l)** — l〉 so v. a. werthlos, von keinen Nutzen.
 
 - **RU:** — l〉 а именно v. a. никчёмный, бесполезный.
 - **EN:** — l〉 so v. a. worthless, of no use.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **14m)** — m〉 mangelhaft [SĀH. D. 200,15].
 
 - **RU:** — m〉 ущербный, неполный [SĀH. D. 200,15].
 - **EN:** — m〉 deficient, defective [SĀH. D. 200,15].
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **14n)** — n〉 nichtsnutzig, verwünscht [HARṢAC. 157,18]. **brāhmaṇihatā* (so!) eine nichtsnutzige Brahmanin.
 
 - **RU:** — n〉 негодный, проклятый [HARṢAC. 157,18]. **brāhmaṇihatā* (так!) никчёмная брахманка.
 - **EN:** — n〉 worthless, accursed [HARṢAC. 157,18]. **brāhmaṇihatā* (sic!) a worthless Brahmin woman.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **14o)** — o〉 betroffen, hintergangen [177,20].
 
 - **RU:** — o〉 обманутый, введённый в заблуждение [177,20].
 - **EN:** — o〉 struck, deceived [177,20].
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **14p)** — p〉 gekommen um (_Adv._ auf *tas*). *dṛṣṭi˚* dem Anblick entzogen.
 
 - **RU:** — p〉 лишившийся (_Adv._ на *tas*). *dṛṣṭi˚* скрытый от взора.
 - **EN:** — p〉 having lost (_Adv._ for *tas*). *dṛṣṭi˚* withdrawn from sight.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **14q)** — q〉 multiplicirt.
 
 - **RU:** — q〉 умноженный.
 - **EN:** — q〉 multiplied.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **15)** — Caus. s. u. *ghātay*.
 
 - **RU:** — Caus. s. u. *ghātay*.
 - **EN:** — Caus. s. u. *ghātay*.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **16)** — Desid. *jighāṃsati* (metrisch auch Med.). treffen —, niederschlagen —, tödten —, vernichten wollen [DAŚAK. 14,18].
 
 - **RU:** — Desid. *jighāṃsati* (метрически также Med.). желать поразить —, сразить —, убить —, уничтожить [DAŚAK. 14,18].
 - **EN:** — Desid. *jighāṃsati* (metrically also Med.). desiderative: to wish to hit —, strike down —, kill —, annihilate [DAŚAK. 14,18].
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **17.intro)** — Intens. (*jaṅkhanti*, *jaṅghanat*, *jaṅghananta*, *jaṅghanāni*, **jaṅghanīti*, *jaṅghanyate* [mit passiver Bed.], **jeghnīyate*; Partic. *jaṅghanat*, *jaṅghnat* und *ghanighnat*)
 
 - **RU:** — Intens. (*jaṅkhanti*, *jaṅghanat*, *jaṅghananta*, *jaṅghanāni*, **jaṅghanīti*, *jaṅghanyate* [с пассивным Bed.], **jeghnīyate*; Partic. *jaṅghanat*, *jaṅghnat* и *ghanighnat*)
 - **EN:** — Intens. (*jaṅkhanti*, *jaṅghanat*, *jaṅghananta*, *jaṅghanāni*, **jaṅghanīti*, *jaṅghanyate* [with passive Bed.], **jeghnīyate*; Partic. *jaṅghanat*, *jaṅghnat* and *ghanighnat*)
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **17.1)** — 1〉 treten auf (Loc. oder Acc.).
 
 - **RU:** — 1〉 топтать, наступать на (Loc. или Acc.).
 - **EN:** — 1〉 to step on, tread on (Loc. or Acc.).
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **17.2)** — 2〉 treffen, erschlagen.
 
 - **RU:** — 2〉 поражать, убивать.
 - **EN:** — 2〉 to hit, slay.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **17.3)** — 3〉 plagen, quälen.
 
 - **RU:** — 3〉 мучить, терзать.
 - **EN:** — 3〉 to plague, torment.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **17.4)** — 4〉 vernichten.
 
 - **RU:** — 4〉 уничтожать.
 - **EN:** — 4〉 to annihilate.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **ati.intro)** — Mit *ati*
 
 - **RU:** — С *ati*
 - **EN:** — With *ati*
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **ati.1)** — 1〉 scheinbar [ĀPAST. ŚR. 6,14,12], da hier *ati* zum vorangehenden *tad* gehört; vgl. [MAITR. S. 1,8,6 (123,4. fgg.)].
 
 - **RU:** — 1〉 по видимости [ĀPAST. ŚR. 6,14,12], так как здесь *ati* относится к предшествующему *tad*; vgl. [MAITR. S. 1,8,6 (123,4. fgg.)].
 - **EN:** — 1〉 apparently [ĀPAST. ŚR. 6,14,12], since here *ati* belongs to the preceding *tad*; vgl. [MAITR. S. 1,8,6 (123,4. fgg.)].
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **ati.2)** — 2〉 *atihata*
 
 - **RU:** — 2〉 *atihata*
 - **EN:** — 2〉 *atihata*
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **ati.2a)** — a〉 angesteckt —, befestigt an (Loc.).
 
 - **RU:** — a〉 прикреплённый —, привязанный к (Loc.).
 - **EN:** — a〉 attached to —, fastened to (Loc.).
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **ati.2b)** — b〉 zu Grunde gerichtet.
 
 - **RU:** — b〉 погублённый, уничтоженный.
 - **EN:** — b〉 ruined, brought to ruin.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **ati.note)** — Desid. entkommen wollen. Vielleicht ist *atyajigāṃsat* statt *atyajighāṃsat* zu lesen.
 
 - **RU:** — Desid. желать вырваться, спастись бегством. Быть может, следует читать *atyajigāṃsat* вместо *atyajighāṃsat*.
 - **EN:** — Desid. to wish to escape. Perhaps *atyajigāṃsat* is to be read instead of *atyajighāṃsat*.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **anu.intro)** — Mit *vyati*
 
 - **RU:** — С *vyati*
 - **EN:** — With *vyati*
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **anu.1)** — 1〉 zurückschlagen, einen Gegenschlag führen gegen Jmd (Acc.).
 
 - **RU:** — 1〉 наносить ответный удар, давать отпор (Acc.).
 - **EN:** — 1〉 to strike back, deal a counter-blow against someone (Acc.).
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **anu.2)** — 2〉 sich wehren.
 
 - **RU:** — 2〉 защищаться, обороняться.
 - **EN:** — 2〉 to defend oneself.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **anu.3)** — 3〉 *gemeinsam tödten.
 
 - **RU:** — 3〉 *убивать сообща.
 - **EN:** — 3〉 *to kill together, jointly.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **anu.4)** — 4〉 sich gegenseitig schlagen, feindlich einander gegenüberstehn.
 
 - **RU:** — 4〉 бить друг друга, противостоять друг другу враждебно.
 - **EN:** — 4〉 to strike one another, to stand opposed to each other as enemies.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **anv-anu)** — Mit *anu* nachher —, darauf tödten —, vernichten. *hatamevānuhanyate* so v. a. was zu Nichte wird war schon zu Nichte geworden.
 
 - **RU:** — С *anu* убивать —, уничтожать после, вслед за тем. *hatamevānuhanyate* а именно v. a. то, что гибнет, уже погибло.
 - **EN:** — With *anu* to kill —, annihilate afterwards, thereupon. *hatamevānuhanyate* so v. a. what comes to naught had already come to naught.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **apa)** — Mit **antar* etwa ausscheiden aus (Abl.).
 
 - **RU:** — С **antar* приблизительно выбывать, выходить из (Abl.).
 - **EN:** — With **antar* approximately to withdraw from, drop out of (Abl.).
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **apa2.intro)** — Mit *apa*
 
 - **RU:** — С *apa*
 - **EN:** — With *apa*
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **apa2.1)** — 1〉 wegschlagen, wegstossen; abtreiben, abwehren, verscheuchend, vertreiben. Häufig Med. (von sich abstossen u. s. w.) [21,10]. [12]. [21].
 
 - **RU:** — 1〉 отгонять ударом, отталкивать; отгонять, отражать, отпугивать, изгонять. Часто Med. (отстранять от себя u. s. w.) [21,10]. [12]. [21].
 - **EN:** — 1〉 to strike away, push away; to drive off, ward off, drive away, expel. Frequently Med. (to push away from oneself u. s. w.) [21,10]. [12]. [21].
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **apa2.2)** — 2〉 ausschlagen, aushülsen (Korn).
 
 - **RU:** — 2〉 вымолачивать, обмолачивать (зерно).
 - **EN:** — 2〉 to thresh out, hull (grain).
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **apa2.3)** — 3〉 fehlerhaft für *abhi* [UTTARAR. 90,19].
 
 - **RU:** — 3〉 ошибочно вместо *abhi* [UTTARAR. 90,19].
 - **EN:** — 3〉 erroneous for *abhi* [UTTARAR. 90,19].
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **apa2.4)** — 4〉 *apahata*
 
 - **RU:** — 4〉 *apahata*
 - **EN:** — 4〉 *apahata*
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **apa2.4a)** — a〉 abgehauen (Kopf), ausgeschlagen (Auge).
 
 - **RU:** — a〉 отрубленный (голова), выбитый (глаз).
 - **EN:** — a〉 cut off (head), knocked out (eye).
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **apa2.4b)** — b〉 weggeschlagen, abgetrieben, verscheucht, vertrieben [21,20].
 
 - **RU:** — b〉 отогнанный, изгнанный, отпуганный, прогнанный [21,20].
 - **EN:** — b〉 struck away, driven off, chased away, expelled [21,20].
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **apa2.4c)** — c〉 ausgeschossen (als werthlos).
 
 - **RU:** — c〉 отбракованный (как негодный).
 - **EN:** — c〉 rejected, cast out (as worthless).
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **apa2.4d)** — d〉 vereitelt.
 
 - **RU:** — d〉 расстроенный, сорванный.
 - **EN:** — d〉 thwarted, foiled.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **apa2.4e)** — e〉 [KATHĀS. 84,8] fehlerhaft für *apahṛta*.
 
 - **RU:** — e〉 [KATHĀS. 84,8] ошибочно вместо *apahṛta*.
 - **EN:** — e〉 [KATHĀS. 84,8] erroneous for *apahṛta*.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **apa2.note)** — Desid. in *apajighāṃsu*.
 
 - **RU:** — Desid. в *apajighāṃsu*.
 - **EN:** — Desid. in *apajighāṃsu*.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **ava)** — Intens. wegschlagen, verscheuchen [SV. II. 6,3,1,5].
 
 - **RU:** — Intens. отгонять, прогонять [SV. II. 6,3,1,5].
 - **EN:** — Intens. to strike away, chase off [SV. II. 6,3,1,5].
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **aa.intro)** — Mit *vyapa*
 
 - **RU:** — С *vyapa*
 - **EN:** — With *vyapa*
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **aa.1)** — 1〉 anschlagen [R. ed. Bomb. 3,51,18].
 
 - **RU:** — 1〉 ударять, задевать [R. ed. Bomb. 3,51,18].
 - **EN:** — 1〉 to strike against [R. ed. Bomb. 3,51,18].
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **aa.2)** — 2〉 wehren, verhindern.
 
 - **RU:** — 2〉 отражать, препятствовать.
 - **EN:** — 2〉 to ward off, prevent.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **aa-aa)** — Mit *api* hindern, vertreiben.
 
 - **RU:** — С *api* мешать, прогонять.
 - **EN:** — With *api* to hinder, drive away.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **aabhi.intro)** — Mit *abhi*
 
 - **RU:** — С *abhi*
 - **EN:** — With *abhi*
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **aabhi.1)** — 1〉 treffen mit Schlag oder Wurf, schlagen auf (Acc. [Spr. 7839]. [ŚIŚ. 14,73]), einschlagen in (Acc.), hinstossen.
 
 - **RU:** — 1〉 поражать ударом или броском, бить по (Acc. [Spr. 7839]. [ŚIŚ. 14,73]), врезаться в (Acc.), ударять, сшибать.
 - **EN:** — 1〉 to hit with a blow or a throw, to strike upon (Acc. [Spr. 7839]. [ŚIŚ. 14,73]), to strike into (Acc.), to push at, thrust.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **aabhi.2)** — 2〉 erlegen.
 
 - **RU:** — 2〉 сражать, валить (добычу/противника).
 - **EN:** — 2〉 to fell, slay.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **aabhi.3)** — 3〉 eine Trommel schlagen ([291,24]), eine Muschel ertönen lassen.
 
 - **RU:** — 3〉 бить в барабан ([291,24]), заставлять звучать раковину.
 - **EN:** — 3〉 to beat a drum ([291,24]), to sound a conch.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **aabhi.4)** — 4〉 Pass. befallen —, heimgesucht werden von (Instr.).
 
 - **RU:** — 4〉 Pass. быть постигнутым —, страдать от (Instr.).
 - **EN:** — 4〉 Pass. to be afflicted —, beset by (Instr.).
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **aabhi.5)** — 5〉 *abhihata*
 
 - **RU:** — 5〉 *abhihata*
 - **EN:** — 5〉 *abhihata*
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **aabhi.5a)** — a〉 getroffen, geschlagen, gestossen. *kopamarudabhihata* [ŚIŚ. 15,84 (50)].
 
 - **RU:** — a〉 поражённый, ударенный, толчком сбитый. *kopamarudabhihata* [ŚIŚ. 15,84 (50)].
 - **EN:** — a〉 hit, struck, pushed. *kopamarudabhihata* [ŚIŚ. 15,84 (50)].
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **aabhi.5b)** — b〉 angeschlagen (von einer Trommel und andern musikalischen Instrumenten).
 
 - **RU:** — b〉 ударенный (о барабане и других музыкальных инструментах).
 - **EN:** — b〉 struck up (of a drum and other musical instruments).
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **aabhi.5c)** — c〉 zerschlagen, zerbrochen [ŚIŚ. 20,25].
 
 - **RU:** — c〉 разбитый, сломанный [ŚIŚ. 20,25].
 - **EN:** — c〉 smashed, broken [ŚIŚ. 20,25].
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **aabhi.5d)** — d〉 angegriffen.
 
 - **RU:** — d〉 атакованный, подвергшийся нападению.
 - **EN:** — d〉 attacked.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **aabhi.5e)** — e〉 in der Astronomie so v. a. berührt.
 
 - **RU:** — e〉 в астрономии: v. a. затронутый, в соединении.
 - **EN:** — e〉 in astronomy so v. a. touched.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **aabhi.5f)** — f〉 sich stossend an (Loc.).
 
 - **RU:** — f〉 ударяющийся о (Loc.).
 - **EN:** — f〉 striking against, colliding with (Loc.).
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **aabhi.5g)** — g〉 getroffen von, so v. a. heimgesucht von, behaftet mit (Instr. oder im Comp. vorangehend). Caus. s. u. *ghātay*.
 
 - **RU:** — g〉 поражённый чем-л., а именно v. a. постигнутый, одержимый (Instr. или в Comp. предшествующем). Caus. s. u. *ghātay*.
 - **EN:** — g〉 struck by, so v. a. afflicted by, beset with (Instr. or preceding in the Comp.). Caus. s. u. *ghātay*.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **aabhi.desid)** — Desid. treffen —, niederschlagen wollen.
 
 - **RU:** — Desid. желать поразить —, сразить.
 - **EN:** — Desid. desiderative: to wish to hit —, strike down.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **aapa)** — Mit *samabhi* schlagen auf (Acc.), treffen [R. ed. Bomb. 4,19,20]. *hṛdi samabhihanyamānaḥ* [JĀTAKAM. 26].
 
 - **RU:** — С *samabhi* бить по (Acc.), поражать [R. ed. Bomb. 4,19,20]. *hṛdi samabhihanyamānaḥ* [JĀTAKAM. 26].
 - **EN:** — With *samabhi* to strike upon (Acc.), to hit [R. ed. Bomb. 4,19,20]. *hṛdi samabhihanyamānaḥ* [JĀTAKAM. 26].
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **ni.intro)** — Mit *ava*
 
 - **RU:** — С *ava*
 - **EN:** — With *ava*
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **ni.1)** — 1〉 herab —, niederschlagen, stürzen.
 
 - **RU:** — 1〉 сбивать вниз, повергать, низвергать.
 - **EN:** — 1〉 to strike down —, fell, hurl down.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **ni.2)** — 2〉 von oben herab treffen.
 
 - **RU:** — 2〉 поражать сверху вниз.
 - **EN:** — 2〉 to strike from above downward.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **ni.3)** — 3〉 schlagen auf oder gegen (Acc.). Statt *āvajaghnatas* (= *avahanyamānasya* [NĪLAK.]) [MBH. 4,45,30]. liest [ed. Vardh. 4,43,30] *avajaghnuṣas*. Vgl. u. *abhini* 2〉.
 
 - **RU:** — 3〉 бить по или о (Acc.). Вместо *āvajaghnatas* (= *avahanyamānasya* [NĪLAK.]) [MBH. 4,45,30]. читает [ed. Vardh. 4,43,30] *avajaghnuṣas*. Vgl. u. *abhini* 2〉.
 - **EN:** — 3〉 to strike on or against (Acc.). Instead of *āvajaghnatas* (= *avahanyamānasya* [NĪLAK.]) [MBH. 4,45,30]. [ed. Vardh. 4,43,30] reads *avajaghnuṣas*. Vgl. u. *abhini* 2〉.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **ni.4)** — 4〉 zurückschlagen, — stossen; verscheuchen, abwehren.
 
 - **RU:** — 4〉 отбивать, отталкивать; прогонять, отражать.
 - **EN:** — 4〉 to strike back, push back; to drive away, ward off.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **ni.5)** — 5〉 ausschlagen, dreschen.
 
 - **RU:** — 5〉 вымолачивать, молотить.
 - **EN:** — 5〉 to thresh out, thresh.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **ni.6)** — 6〉 *avahata*
 
 - **RU:** — 6〉 *avahata*
 - **EN:** — 6〉 *avahata*
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **ni.6a)** — a〉 niedergeschlagen.
 
 - **RU:** — a〉 поверженный, сбитый.
 - **EN:** — a〉 struck down.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **ni.6b)** — b〉 gedroschen.
 
 - **RU:** — b〉 вымолоченный.
 - **EN:** — b〉 threshed.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **ni.note)** — Caus. s. u. *ghātay*.
 
 - **RU:** — Caus. s. u. *ghātay*.
 - **EN:** — Caus. s. u. *ghātay*.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **prati.intro)** — Intens. zurückschlagen.
 
 - **RU:** — Intens. отражать удар.
 - **EN:** — Intens. to strike back.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **vi)** — Mit *adhyava* dreschen auf (Loc.).
 
 - **RU:** — С *adhyava* молотить по (Loc.).
 - **EN:** — With *adhyava* to thresh upon (Loc.).
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **vi2)** — Mit *anvava* treffen.
 
 - **RU:** — С *anvava* поражать.
 - **EN:** — With *anvava* to hit.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **sam1)** — Mit *abhyava* schlagen, stossen auf (Dat.) [MAITR. S. 1,10,16 (156,3)].
 
 - **RU:** — С *abhyava* бить, ударять по (Dat.) [MAITR. S. 1,10,16 (156,3)].
 - **EN:** — With *abhyava* to strike, push against (Dat.) [MAITR. S. 1,10,16 (156,3)].
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **sam2)** — Mit *pratyava* zurückschlagen.
 
 - **RU:** — С *pratyava* отражать удар, давать отпор.
 - **EN:** — With *pratyava* to strike back.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **sam3.intro)** — Mit *ā*
 
 - **RU:** — С *ā*
 - **EN:** — With *ā*
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **sam3.1)** — 1〉 schlagen —, stossen auf (Loc. oder Acc.), treffen. Med. sich (sibi) schlagen auf (Acc.) und um sich schlagen.
 
 - **RU:** — 1〉 бить —, ударять по (Loc. или Acc.), попадать. Med. ударять (себе) по (Acc.) и наносить удары вокруг.
 - **EN:** — 1〉 to strike —, push against (Loc. or Acc.), to hit. Med. to strike oneself (sibi) upon (Acc.) and to lash out around oneself.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **sam3.2)** — 2〉 die Trommel schlagen, ein musikalisches Instrument ertönen lassen; auch aussprechen.
 
 - **RU:** — 2〉 бить в барабан, заставлять звучать музыкальный инструмент; также произносить.
 - **EN:** — 2〉 to beat the drum, to sound a musical instrument; also to utter, pronounce.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **prefix-ava-form)** — Caus. s. u. *ghātay*.
 
 - **RU:** — Caus. s. u. *ghātay*.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 ## han
 
@@ -6853,121 +6853,121 @@ v. l.).
 
 - **RU:** — 3〉 нападать, атаковать.
 - **EN:** 3) to attack, assail.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4〉 Med. sich ein Leid anthun.
 
 - **RU:** — 4〉 Med. причинять себе вред, наносить себе ущерб.
 - **EN:** 4) Med. to do oneself an injury.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **5)** — 5〉 befestigen.
 
 - **RU:** — 5〉 укреплять.
 - **EN:** 5) to fasten, fix.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **6)** — 6〉 *āhatya* [KATHĀS. 119,17] fehlerhaft für *āhṛtya* *etānyāhanti* [Verz. d. Oxf. H. 25,a, N. 2] für *etānyo* *hanti*.
 
 - **RU:** — 6〉 *āhatya* [KATHĀS. 119,17] ошибочно вместо *āhṛtya* *etānyāhanti* [Verz. d. Oxf. H. 25,a, N. 2] вместо *etānyo* *hanti*.
 - **EN:** 6) *āhatya* [KATHĀS. 119,17] erroneous for *āhṛtya* *etānyāhanti* [Verz. d. Oxf. H. 25,a, N. 2] for *etānyo* *hanti*.
-  <sub>DCS 10052 · lexicographic</sub>
+  <sub>lexicographic</sub>
 
 **7)** — 7〉 *āhata*
 
 - **RU:** — 7〉 *āhata*
 - **EN:** 7) *āhata*
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **7a)** — a〉 geschlagen, gehämmert, gestossen, getroffen. *anilāhata* vom Winde getroffen, — bewegt; *jyotiṣkaṇāhata* von Funken getroffen, so v. a. angebrannt.
 
 - **RU:** — a〉 ударенный, прокованный, толчёный, поражённый. *anilāhata* поражённый ветром, — движимый ветром; *jyotiṣkaṇāhata* поражённый искрами, и потому v. a. подожжённый.
 - **EN:** a) struck, hammered, knocked, hit. *anilāhata* struck by the wind, set in motion; *jyotiṣkaṇāhata* struck by sparks, hence v. a. scorched, kindled.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **7b)** — b〉 angeschlagen (eine Trommel [ŚIŚ. 11,2]), in Bewegung gesetzt, zum Tönen gebracht (ein musikalisches Instrument).
 
 - **RU:** — b〉 ударенный (барабан [ŚIŚ. 11,2]), приведённый в движение, заставленный звучать (музыкальный инструмент).
 - **EN:** b) struck (a drum [ŚIŚ. 11,2]), set in motion, made to sound (a musical instrument).
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **7c)** — c〉 geschlagen, so v. a. geprägt oder gestempelt.
 
 - **RU:** — c〉 ударенный, и потому v. a. чеканенный или штампованный.
 - **EN:** c) struck, hence v. a. coined or stamped.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **7d)** — d〉 verwundet, angerissen (Baum). *phālāhata* vom Pfluge angerissen, so v. a. gepflügt.
 
 - **RU:** — d〉 поранённый, надрезанный (дерево). *phālāhata* задетый плугом, и потому v. a. вспаханный.
 - **EN:** d) wounded, torn into (a tree). *phālāhata* torn into by the plough, hence v. a. ploughed.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **7e)** — e〉 aufgewirbelt (Staub) [ŚIŚ. 17,53].
 
 - **RU:** — e〉 взвихренный (пыль) [ŚIŚ. 17,53].
 - **EN:** e) whirled up (dust) [ŚIŚ. 17,53].
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **7f)** — f〉 befestigt.
 
 - **RU:** — f〉 укреплённый.
 - **EN:** f) fastened, fixed.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **7g)** — g〉 getroffen, so v. a. zum Schaden berührt (in der Astronomie); überh. so v. a. heimgesucht, geschädigt.
 
 - **RU:** — g〉 поражённый, и потому v. a. вредоносно затронутый (в астрономии); überh. и потому v. a. поражённый бедствием, повреждённый.
 - **EN:** g) struck, hence v. a. adversely affected (in astronomy); überh. hence v. a. afflicted, harmed.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **7h)** — h〉 überzogen, — bestreut mit (im Comp. vorangehend) [VĀSAV. 165,4].
 
 - **RU:** — h〉 покрытый, — усыпанный (в Comp. предшествующем) [VĀSAV. 165,4].
 - **EN:** h) overspread, sprinkled with (preceding Comp.) [VĀSAV. 165,4].
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **7i)** — i〉 zu Nichte gemacht, vereitelt.
 
 - **RU:** — i〉 уничтоженный, расстроенный.
 - **EN:** i) brought to naught, thwarted.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **7k)** — k〉 multiplicirt.
 
 - **RU:** — k〉 умноженный (в математике).
 - **EN:** k) multiplied.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **7l)** — l〉 getroffen heisst ein Visarga, wenn er mit einem vorangehenden *a* zu *o* geworden ist. Vgl. *upahata*.
 
 - **RU:** — l〉 «поражённым» называется Visarga, когда он с предшествующим *a* превратился в *o*. Vgl. *upahata*.
 - **EN:** l) a Visarga is called "struck" (hata) when together with a preceding *a* it has become *o*. Vgl. *upahata*.
-  <sub>DCS 10052 · lexicographic</sub>
+  <sub>lexicographic</sub>
 
 **7m)** — m〉 ungereimt.
 
 - **RU:** — m〉 несуразный, нелепый.
 - **EN:** m) incongruous, absurd.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **7n)** — n〉 *chalāhata* [KATHĀS. 49,10] fehlerhaft für *chalādṛta*.
 
 - **RU:** — n〉 *chalāhata* [KATHĀS. 49,10] ошибочно вместо *chalādṛta*.
 - **EN:** n) *chalāhata* [KATHĀS. 49,10] erroneous for *chalādṛta*.
-  <sub>DCS 10052 · lexicographic</sub>
+  <sub>lexicographic</sub>
 
 **8-prefix-list1)** — Intens. schlagen auf.
 
 - **RU:** — Intens. ударять по.
 - **EN:** Intens. to strike upon.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **8-prefix-list2)** — Mit *apā* zurückschlagen.
 
 - **RU:** — С *apā* отбивать, отражать удар.
 - **EN:** With *apā* to strike back, beat back.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **9-intro)** — Mit *abhyā*
 - **EN:** With *abhyā*
@@ -6979,49 +6979,49 @@ v. l.).
 
 - **RU:** — 2〉 *abhyāhata*
 - **EN:** 2) *abhyāhata*
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **9.2a)** — a〉 geschlagen, getroffen.
 
 - **RU:** — a〉 ударенный, поражённый.
 - **EN:** a) struck, hit.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **9.2b)** — b〉 beschädigt (Auge).
 
 - **RU:** — b〉 повреждённый (глаз).
 - **EN:** b) damaged, injured (eye).
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **9.2c)** — c〉 getroffen, so v. a. unangenehm berührt, heimgesucht. *timirābhyāhatā* *niśā* so v. a. eine stockfinstere Nacht.
 
 - **RU:** — c〉 поражённый, и потому v. a. неприятно задетый, поражённый бедствием. *timirābhyāhatā* *niśā* и потому v. a. кромешная ночь.
 - **EN:** c) struck, hence v. a. unpleasantly affected, afflicted. *timirābhyāhatā* *niśā*, hence v. a. a pitch-dark night.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **9.2d)** — d〉 gehemmt, gehindert.
 
 - **RU:** — d〉 задержанный, остановленный.
 - **EN:** d) checked, hindered.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **9-misc1)** — Mit *udā* anschlagen, spielen (auf der Laute); mit Acc. der Weise.
 
 - **RU:** — С *udā* ударять, играть (на лютне); с Acc. — на этот лад.
 - **EN:** With *udā* to strike up, play (on the lute); with Acc. the melody.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **9-misc2)** — Mit *upā* schlagen auf.
 
 - **RU:** — С *upā* ударять по.
 - **EN:** With *upā* to strike upon.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **9-misc3)** — Mit *nirā*, *˚ghnan* [TĀṆḌYA-BR. 9,1,1] fehlerhaft für *niraghnan*.
 
 - **RU:** — С *nirā*, *˚ghnan* [TĀṆḌYA-BR. 9,1,1] ошибочно вместо *niraghnan*.
 - **EN:** With *nirā*, *˚ghnan* [TĀṆḌYA-BR. 9,1,1] erroneous for *niraghnan*.
-  <sub>DCS 10052 · lexicographic</sub>
+  <sub>lexicographic</sub>
 
 **10-intro)** — Mit *pratyā*
 - **EN:** With *pratyā*
@@ -7033,19 +7033,19 @@ v. l.).
 
 - **RU:** — 2〉 *pratyāhata*
 - **EN:** 2) *pratyāhata*
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **10.2a)** — a〉 abgewehrt, zurückgeschlagen.
 
 - **RU:** — a〉 отражённый, отбитый.
 - **EN:** a) warded off, beaten back.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **10.2b)** — b〉 von sich gewiesen, zurückgewiesen [JĀTAKAM. 28].
 
 - **RU:** — b〉 отвергнутый, отклонённый [JĀTAKAM. 28].
 - **EN:** b) rejected, repelled [JĀTAKAM. 28].
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **11-intro)** — Mit *vyā*
 - **EN:** With *vyā*
@@ -7057,67 +7057,67 @@ v. l.).
 
 - **RU:** — 2〉 поражать, и потому v. a. карать, насылать бедствие.
 - **EN:** 2) to hit, hence v. a. to afflict.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **11.3)** — 3〉 hemmen, hindern.
 
 - **RU:** — 3〉 задерживать, препятствовать.
 - **EN:** 3) to check, hinder.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **11.4)** — 4〉 *vyāhata*
 
 - **RU:** — 4〉 *vyāhata*
 - **EN:** 4) *vyāhata*
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **11.4a)** — a〉 gestossen, getroffen.
 
 - **RU:** — a〉 толчёный, поражённый.
 - **EN:** a) pushed, struck.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **11.4b)** — b〉 zurückgeschlagen.
 
 - **RU:** — b〉 отражённый.
 - **EN:** b) beaten back.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **11.4c)** — c〉 zurückgewiesen.
 
 - **RU:** — c〉 отвергнутый, отклонённый.
 - **EN:** c) rejected.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **11.4d)** — d〉 gehemmt, gehindert [ŚIŚ. 16,83].
 
 - **RU:** — d〉 задержанный, воспрепятствованный [ŚIŚ. 16,83].
 - **EN:** d) checked, hindered [ŚIŚ. 16,83].
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **11.4e)** — e〉 im Widerspruch stehend.
 
 - **RU:** — e〉 противоречащий, находящийся в противоречии.
 - **EN:** e) standing in contradiction.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **11.4f)** — f〉 [MBH. 1,368] fehlerhaft für *vyāhṛta*.
 
 - **RU:** — f〉 [MBH. 1,368] ошибочно вместо *vyāhṛta*.
 - **EN:** f) [MBH. 1,368] erroneous for *vyāhṛta*.
-  <sub>DCS 10052 · lexicographic</sub>
+  <sub>lexicographic</sub>
 
 **11-misc1)** — Caus. s. u. *ghātay*.
 
 - **RU:** — Caus. s. u. *ghātay*.
 - **EN:** Caus. s. u. *ghātay*.
-  <sub>DCS 10052 · lexicographic</sub>
+  <sub>lexicographic</sub>
 
 **11-misc2)** — Mit *prativyā* nur scheinbar [MBH. 12,3724], da hier *pratigāhanti* die richtige Lesart ist.
 
 - **RU:** — С *prativyā* лишь по видимости [MBH. 12,3724], так как здесь правильным чтением является *pratigāhanti*.
 - **EN:** With *prativyā* only apparently [MBH. 12,3724], since here *pratigāhanti* is the correct reading.
-  <sub>DCS 10052 · lexicographic</sub>
+  <sub>lexicographic</sub>
 
 **12-intro)** — Mit *samā*
 - **EN:** With *samā*
@@ -7129,55 +7129,55 @@ v. l.).
 
 - **RU:** — 2〉 поражать, ударять по или об.
 - **EN:** 2) to hit, strike upon or against.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **12.3)** — 3〉 erlegen.
 
 - **RU:** — 3〉 убивать (зверя), поражать насмерть.
 - **EN:** 3) to slay, fell.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **12.4)** — 4〉 zusammenstossen mit (Instr.). v. l. besser *samājagmus* st. *samājaghnus*.
 
 - **RU:** — 4〉 сталкиваться с (Instr.). v. l. лучше *samājagmus* st. *samājaghnus*.
 - **EN:** 4) to collide with (Instr.). v. l. better *samājagmus* st. *samājaghnus*.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **12.5)** — 5〉 anschlagen (eine Trommel).
 
 - **RU:** — 5〉 ударять (в барабан).
 - **EN:** 5) to strike (a drum).
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **12.6)** — 6〉 *samāhata*
 
 - **RU:** — 6〉 *samāhata*
 - **EN:** 6) *samāhata*
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **12.6a)** — a〉 zusammengeschlagen.
 
 - **RU:** — a〉 сбитый вместе, сколоченный.
 - **EN:** a) struck together.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **12.6b)** — b〉 zusammengefügt, verbunden.
 
 - **RU:** — b〉 соединённый, связанный.
 - **EN:** b) joined together, connected.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **12.6c)** — c〉 geschlagen, getroffen,
 
 - **RU:** — c〉 ударенный, поражённый,
 - **EN:** c) struck, hit,
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **12.6d)** — d〉 angeschlagen (eine Trommel).
 
 - **RU:** — d〉 ударенный (барабан).
 - **EN:** d) struck (a drum).
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **13-intro)** — Mit *ud*
 - **EN:** With *ud*
@@ -7189,115 +7189,115 @@ v. l.).
 
 - **RU:** — 2〉 искоренять, уничтожать.
 - **EN:** 2) to extirpate, root out.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **13.3)** — 3〉 ausschlagen (einen Graben u. s. w.), aufwerfen, aufschütten [Comm. zu NYĀYAM. 10,1,1].
 
 - **RU:** — 3〉 вырубать (ров u. s. w.), насыпать, нагромождать [Comm. zu NYĀYAM. 10,1,1].
 - **EN:** 3) to dig out, throw up (a ditch u. s. w.), heap up, throw up [Comm. zu NYĀYAM. 10,1,1].
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **13.4)** — 4〉 Med. sich erhängen.
 
 - **RU:** — 4〉 Med. вешаться, повеситься.
 - **EN:** 4) Med. to hang oneself.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **13.5)** — 5〉 *uddhatya* [HARIV. 4408] fehlerhaft für *uddhṛtya*.
 
 - **RU:** — 5〉 *uddhatya* [HARIV. 4408] ошибочно вместо *uddhṛtya*.
 - **EN:** 5) *uddhatya* [HARIV. 4408] erroneous for *uddhṛtya*.
-  <sub>DCS 10052 · lexicographic</sub>
+  <sub>lexicographic</sub>
 
 **13.6)** — 6〉 *uddhata*
 
 - **RU:** — 6〉 *uddhata*
 - **EN:** 6) *uddhata*
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **13.6a)** — a〉 aufgewirbelt (Staub) [ŚIŚ. 15,113 (79)].
 
 - **RU:** — a〉 взвихренный (пыль) [ŚIŚ. 15,113 (79)].
 - **EN:** a) whirled up (dust) [ŚIŚ. 15,113 (79)].
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **13.6b)** — b〉 erhöht, hervorragend über (Abl.), angeschwollen, hoch gehend (Wasser, Fluss [168,15]. [ŚIŚ. 12,53]), hoch in der Luft schwebend, auf —, in die Höhe gehoben.
 
 - **RU:** — b〉 возвышенный, выдающийся над (Abl.), разлившийся, высоко поднявшийся (вода, река [168,15]. [ŚIŚ. 12,53]), высоко парящий в воздухе, поднятый вверх.
 - **EN:** b) raised, projecting above (Abl.), swollen, running high (water, a river [168,15]. [ŚIŚ. 12,53]), hovering high in the air, lifted up.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **13.6c)** — c〉 ausgegraben.
 
 - **RU:** — c〉 вырытый, откопанный.
 - **EN:** c) dug out, excavated.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **13.6d)** — d〉 angeschlagen (eine Laute).
 
 - **RU:** — d〉 ударенный (лютня).
 - **EN:** d) struck (a lute).
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **13.6e)** — e〉 zum Vorschein gekommen.
 
 - **RU:** — e〉 появившийся, обнаружившийся.
 - **EN:** e) come into view, appeared.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **13.6f)** — f〉 gehemmt, gehindert.
 
 - **RU:** — f〉 задержанный, остановленный.
 - **EN:** f) checked, hindered.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **13.6g)** — g〉 gesteigert, heftig, in tensiv.
 
 - **RU:** — g〉 усиленный, бурный, интенсивный.
 - **EN:** g) intensified, violent, intense.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **13.6h)** — h〉 hochfahrend, stolz, übermüthig.
 
 - **RU:** — h〉 высокомерный, гордый, самонадеянный.
 - **EN:** h) haughty, proud, arrogant.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **13.6i)** — i〉 strotzend —, voll von (Instr. oder im Comp. vorgehend) [ŚIŚ. 17,58].
 
 - **RU:** — i〉 переполненный, полный чего-либо (Instr. или в Comp. предшествующем) [ŚIŚ. 17,58].
 - **EN:** i) teeming with, full of (Instr. or preceding in Comp.) [ŚIŚ. 17,58].
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **13.6k)** — k〉 in Bewegung versetzt, erregt. Richtiger *uddhuta* oder *uddhūta*.
 
 - **RU:** — k〉 приведённый в движение, возбуждённый. Правильнее *uddhuta* или *uddhūta*.
 - **EN:** k) set in motion, agitated. More correctly *uddhuta* or *uddhūta*.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **13.6l)** — l〉 heraus gezogen, herausgeholt aus (Abl.). richtig v. l. *uddhṛta*.
 
 - **RU:** — l〉 извлечённый, вынутый из (Abl.). Правильно v. l. *uddhṛta*.
 - **EN:** l) drawn out, fetched out of (Abl.). Correctly v. l. *uddhṛta*.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **13-misc1)** — Mit *upod* in *upodghāta*.
 
 - **RU:** — С *upod* в *upodghāta*.
 - **EN:** With *upod* in *upodghāta*.
-  <sub>DCS 10052 · lexicographic</sub>
+  <sub>lexicographic</sub>
 
 **13-misc2)** — Caus. s. u. *ghātay*.
 
 - **RU:** — Caus. s. u. *ghātay*.
 - **EN:** Caus. s. u. *ghātay*.
-  <sub>DCS 10052 · lexicographic</sub>
+  <sub>lexicographic</sub>
 
 **13-misc3)** — Desid. zur Sprache bringen —, erläutern wollen.
 
 - **RU:** — Desid. желать высказать, желать разъяснить.
 - **EN:** Desid. to bring up for discussion, to wish to elucidate.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **14-intro)** — Mit *samud*, *samuddhata*
 - **EN:** With *samud*, *samuddhata*
@@ -7309,43 +7309,43 @@ v. l.).
 
 - **RU:** — 2〉 высоко поднявшийся, разлившийся (вода), высоко (в Comp. предшествующем) текущий, выпрямленный, поднятый.
 - **EN:** 2) running high, swollen (water), flowing high up (preceding in Comp.), erected, lifted up.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **14.3)** — 3〉 gesteigert, heftig, intensiv [JĀTAKAM. 8,63].
 
 - **RU:** — 3〉 усиленный, бурный, интенсивный [JĀTAKAM. 8,63].
 - **EN:** 3) intensified, violent, intense [JĀTAKAM. 8,63].
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **14.4)** — 4〉 hochfahrend, stolz, übermüthig.
 
 - **RU:** — 4〉 высокомерный, гордый, самонадеянный.
 - **EN:** 4) haughty, proud, arrogant.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **14.5)** — 5〉 strotzend, voll von (im Comp. vorangehend).
 
 - **RU:** — 5〉 переполненный, полный чего-либо (в Comp. предшествующем).
 - **EN:** 5) teeming with, full of (preceding in Comp.).
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **14.6)** — 6〉 in Bewegung versetzt, erregt. Richtiger wohl *samuddhuta*.
 
 - **RU:** — 6〉 приведённый в движение, возбуждённый. Правильнее, вероятно, *samuddhuta*.
 - **EN:** 6) set in motion, agitated. Probably more correctly *samuddhuta*.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **14.7)** — 7〉 herausgenommen, — aus (Abl.). Richtig *samuddhṛta*.
 
 - **RU:** — 7〉 вынутый, извлечённый из (Abl.). Правильно *samuddhṛta*.
 - **EN:** 7) taken out, out of (Abl.). Correctly *samuddhṛta*.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **14.8)** — 8〉 herbeigeschossen, herbeigeflogen [NĪLAK. zu MBH. 12,342,114]. Der Text *samuddhūta* v. l. *samudbhūta*.
 
 - **RU:** — 8〉 примчавшийся, прилетевший [NĪLAK. zu MBH. 12,342,114]. Текст *samuddhūta* v. l. *samudbhūta*.
 - **EN:** 8) shot forth, flown hither [NĪLAK. zu MBH. 12,342,114]. The text *samuddhūta* v. l. *samudbhūta*.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **15-intro)** — Mit *upa*
 - **EN:** With *upa*
@@ -7357,109 +7357,109 @@ v. l.).
 
 - **RU:** — 2〉 о птице: садиться на (Acc.).
 - **EN:** 2) of a bird, to alight upon, settle on (Acc.).
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **15.3)** — 3〉 von einer Katze so v. a. kratzen.
 
 - **RU:** — 3〉 о кошке: и потому v. a. царапать.
 - **EN:** 3) of a cat, hence v. a. to scratch.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **15.4)** — 4〉 anstecken, an die Spitze eines Stabes u. s. w. fassen, antupfen.
 
 - **RU:** — 4〉 насаживать, брать на острие жезла u. s. w., слегка касаться.
 - **EN:** 4) to attach, take hold of, touch lightly at the tip of a staff u. s. w..
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **15.5)** — 5〉 einstecken, befestigen.
 
 - **RU:** — 5〉 вставлять, закреплять.
 - **EN:** 5) to insert, fasten.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **15.6)** — 6〉 störend treffen, hemmen; beeinträchtigen, beschädigen, zu Schanden machen.
 
 - **RU:** — 6〉 встречать помехой, задерживать; ущемлять, повреждать, разрушать.
 - **EN:** 6) to strike disruptively, check; impair, damage, bring to ruin.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **15.7)** — 7〉 anstossen, stecken bleiben im Recitiren u. s. w. fehlen.
 
 - **RU:** — 7〉 запинаться, останавливаться при чтении вслух u. s. w., ошибаться.
 - **EN:** 7) to stumble, get stuck in reciting u. s. w., to fail.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **15.8)** — 8〉 *upahata*
 
 - **RU:** — 8〉 *upahata*
 - **EN:** 8) *upahata*
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **15.8a)** — a〉 berührt [ĀPAST. 1,15,16. 21,27].
 
 - **RU:** — a〉 затронутый, задетый [ĀPAST. 1,15,16. 21,27].
 - **EN:** a) touched [ĀPAST. 1,15,16. 21,27].
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **15.8b)** — b〉 belegt, bestreut.
 
 - **RU:** — b〉 покрытый, усыпанный.
 - **EN:** b) covered, strewn over.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **abhi-han-1)** — Mit *abhyā*
 — 1〉 treffen. *vṛkṣasya* *mūle* so v. a. einen Schlag mit der Axt auf die Wurzel eines Baumes thun. Mit *anyo'nyam* auf einander stossen.
 
 - **RU:** — С *abhyā*
 — 1〉 поражать. *vṛkṣasya* *mūle* и потому v. a. нанести удар топором по корню дерева. С *anyo'nyam* сталкиваться друг с другом.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **prati-han-1)** — Mit *pratyā*
 — 1〉 abwehren, sich einer ache (Acc.) erwehren.
 
 - **RU:** — С *pratyā*
 — 1〉 отражать, защищаться от чего-либо (Acc.).
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **vi-han-1)** — Mit *vyā*
 — 1〉 schlagen, losschlagen [VĀSAV. 143,2].
 
 - **RU:** — С *vyā*
 — 1〉 ударять, наносить удар [VĀSAV. 143,2].
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **sam-han-1)** — Mit *samā*
 — 1〉 anschlagen, zusammenschlagen.
 
 - **RU:** — С *samā*
 — 1〉 ударять, сталкивать вместе.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **ud-han-1)** — Mit *ud*
 — 1〉 hinauf —, hinaustreiben, — drängen, — heben, verdrängen.
 
 - **RU:** — С *ud*
 — 1〉 гнать вверх, теснить вверх, поднимать, вытеснять.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **ud-han-note)** — Caus. s. u. *ghātay*.
 
 - **RU:** — Caus. s. u. *ghātay*.
-  <sub>DCS 10052 · lexicographic</sub>
+  <sub>lexicographic</sub>
 
 **udud-han-1)** — Mit *samud*, *samuddhata*
 — 1〉 aufgewirbelt (Staub).
 
 - **RU:** — С *samud*, *samuddhata*
 — 1〉 взвихренный (пыль).
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **ni-han-1)** — Mit *upa*
 — 1〉 schlagen —, stossen auf, berühren.
 
 - **RU:** — С *upa*
 — 1〉 ударять по, толкать на, прикасаться к.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 ## han
 
@@ -7470,43 +7470,43 @@ v. l.).
 
 - **RU:** — c〉 убитый.
 - **EN:** c) slain.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **d)** — d〉 behaftet (mit einem Uebel), heimgesucht, hart mitgenommen, beschädigt, verdorben, besudelt, überwältigt —, hingerissen von. *daivena* vom Schicksal geplagt, — verfolgt; ohne *daivena* dass.
 
 - **RU:** — d〉 поражённый (каким-либо злом), посещённый бедой, жестоко пострадавший, повреждённый, испорченный, осквернённый, охваченный —, увлечённый. *daivena* преследуемый судьбой, — гонимый ею; без *daivena* dass.
 - **EN:** d) afflicted (with an evil), visited, hard hit, damaged, ruined, sullied, overpowered by, carried away by. *daivena* plagued, pursued by fate; without *daivena* dass.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **e)** — e〉 niedergeschlagen, entmuthigt.
 
 - **RU:** — e〉 подавленный, павший духом.
 - **EN:** e) downcast, discouraged.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **f)** — f〉 verdorben, verführt.
 
 - **RU:** — f〉 испорченный, совращённый.
 - **EN:** f) corrupted, seduced.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **g)** — g〉 bestritten in *anupahata* [Nachtr. 6].
 
 - **RU:** — g〉 оспариваемый в *anupahata* [Nachtr. 6].
 - **EN:** g) disputed, in *anupahata* [Nachtr. 6]
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **h)** — h〉 berührt heisst ein Visarga, wenn er mit einem vorangehenden *a* zu *ā* geworden ist, [KĀVYAPR. 154,10] Vgl. *āhata*.
 
 - **RU:** — h〉 затронутый — так называется Visarga, когда он с предшествующим *a* стал *ā*,%} [KĀVYAPR. 154,10] Vgl. *āhata*.
 - **EN:** h) a Visarga is called "touched" when together with a preceding *a* it has become *ā*, [KĀVYAPR. 154,10] Vgl. *āhata*.
-  <sub>DCS 10052 · lexicographic</sub>
+  <sub>lexicographic</sub>
 
 **misc1)** — Mit *samupa*, *˚hata* beschädigt, getrübt (Einsicht).
 
 - **RU:** — Mit *samupa*, *˚hata* повреждённый, помрачённый (рассудок).
 - **EN:** With *samupa*, *˚hata* impaired, clouded (insight, understanding).
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **16-intro)** — Mit *ni*
 - **EN:** With *ni*
@@ -7518,169 +7518,169 @@ v. l.).
 
 - **RU:** — 2〉 толкать в или на (Loc.), метать, — на (Loc.).
 - **EN:** 2) to thrust into or upon (Loc.), to hurl at (Loc.).
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **16.3)** — 3〉 treffen (mit einem Geschosse); auch in übertragener Bed. *manāṃsi*.
 
 - **RU:** — 3〉 поражать (снарядом); также в переносном Bed. *manāṃsi*.
 - **EN:** 3) to hit (with a missile); also in transferred Bed. *manāṃsi*.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **16.4)** — 4〉 aufschlagen. *padas* die Füsse, so v. a. stampfen.
 
 - **RU:** — 4〉 ударять (о поверхность). *padas* ноги, так v. a. топать.
 - **EN:** 4) to strike upon, beat. *padas* the feet, hence v. a. to stamp.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **16.5)** — 5〉 schlagen —, losschlagen auf (Acc.); herfallen über, sich vergreifen an (mit Loc. oder Gen.).
 
 - **RU:** — 5〉 бить —, набрасываться на (Acc.); нападать на, посягать на (с Loc. или Gen.).
 - **EN:** 5) to strike, lash out at (Acc.); to fall upon, lay hands on (with Loc. or Gen.).
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **16.6)** — 6〉 anschlagen (die Trommel).
 
 - **RU:** — 6〉 ударять (в барабан).
 - **EN:** 6) to strike (the drum).
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **16.7)** — 7〉 anschlagen mit (Instr.) an (Acc.), so v. a. berühren.
 
 - **RU:** — 7〉 ударять (Instr.) о (Acc.), так v. a. касаться.
 - **EN:** 7) to strike with (Instr.) against (Acc.), hence v. a. to touch.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **16.8)** — 8〉 fällen, nieder schlagen, erschlagen, tödten; Auch von Planeten im Planetenkampf.
 
 - **RU:** — 8〉 повергать, сражать, убивать, умерщвлять; также о планетах в планетной битве.
 - **EN:** 8) to fell, strike down, slay, kill; also of planets in planetary conflict.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **16.9)** — 9〉 niederhauen, so v. a. mähen.
 
 - **RU:** — 9〉 рубить, косить; так v. a. косить.
 - **EN:** 9) to cut down, hence v. a. to mow.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **16.10)** — 10〉 überwältigen.
 
 - **RU:** — 10〉 одолевать.
 - **EN:** 10) to overpower.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **16.11)** — 11〉 züchtigen.
 
 - **RU:** — 11〉 наказывать.
 - **EN:** 11) to chastise.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **16.12)** — 12〉 heimsuchen.
 
 - **RU:** — 12〉 насылать беду на, поражать.
 - **EN:** 12) to afflict, visit.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **16.13)** — 13〉 zerstören, zu Grunde richten, inʼs Verderben bringen, vernichten ([TS. 3,1,1,3]), vertreiben.
 
 - **RU:** — 13〉 разрушать, приводить к гибели, губить, уничтожать ([TS. 3,1,1,3]), изгонять.
 - **EN:** 13) to destroy, ruin, bring to perdition, annihilate ([TS. 3,1,1,3]), drive away.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **16.14)** — 14〉 heften an (Loc.).
 
 - **RU:** — 14〉 прикреплять к (Loc.).
 - **EN:** 14) to fasten to, affix to (Loc.).
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **16.15)** — 15〉 senken (die Flügel, Hände).
 
 - **RU:** — 15〉 опускать (крылья, руки).
 - **EN:** 15) to lower (the wings, the hands).
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **16.16)** — 16〉 mit gesenkten Tone —, d. i. mit dem Anudātta sprechen.
 
 - **RU:** — 16〉 произносить с пониженным тоном —, d. i. с Anudātta.
 - **EN:** 16) to speak with lowered tone, d. i. with the Anudātta.
-  <sub>DCS 10052 · lexicographic</sub>
+  <sub>lexicographic</sub>
 
 **16.17)** — 17〉 multipliciren.
 
 - **RU:** — 17〉 умножать.
 - **EN:** 17) to multiply.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **16.18)** — 18〉 *nihata*
 
 - **RU:** — 18〉 *nihata*
 - **EN:** 18) *nihata*
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **16.18a)** — a〉 geschleudert.
 
 - **RU:** — a〉 брошенный, метнутый.
 - **EN:** a) hurled.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **16.18b)** — b〉 getroffen; auch in übertragener Bed.
 
 - **RU:** — b〉 поражённый; также в переносном Bed.
 - **EN:** b) hit; also in transferred Bed.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **16.18c)** — c〉 niedergeschlagen. Auch von Planeten im Planetenkampf.
 
 - **RU:** — c〉 поверженный. Также о планетах в планетной битве.
 - **EN:** c) struck down. Also of planets in planetary conflict.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **16.18d)** — d〉 erschlagen, niedergemacht, geschlachtet, getödtet.
 
 - **RU:** — d〉 убитый, уничтоженный, заколотый, умерщвлённый.
 - **EN:** d) slain, cut down, slaughtered, killed.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **16.18e)** — e〉 zerstört, zu Grunde gerichtet, vernichtet [Spr. 7767].
 
 - **RU:** — e〉 разрушенный, погублённый, уничтоженный [Spr. 7767].
 - **EN:** e) destroyed, ruined, annihilated [Spr. 7767].
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **16.18f)** — f〉 niedergeschmettert, verloren (von Personen) [94,10]. [22].
 
 - **RU:** — f〉 сражённый наповал, погибший (о лицах) [94,10]. [22].
 - **EN:** f) crushed, lost (of persons) [94,10]. [22].
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **16.18g)** — g〉 dahin seiend, so v. a. nicht mehr zu sehen (weg).
 
 - **RU:** — g〉 исчезнувший,% так v. a. {%более не видимый (прочь).
 - **EN:** g) being gone, hence v. a. no longer to be seen (away).
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **16.18h)** — h〉 mit dem Anudātta gesprochen.
 
 - **RU:** — h〉 произнесённый с Anudātta.
 - **EN:** h) spoken with the Anudātta.
-  <sub>DCS 10052 · lexicographic</sub>
+  <sub>lexicographic</sub>
 
 **16.18i)** — i〉 fehlerhaft für *nihita* wie auch diesen fehlerhaft für *nihata* steht.
 
 - **RU:** — i〉 ошибочно вместо *nihita*, как и этот ошибочно стоит вместо *nihata* .
 - **EN:** i) erroneous for *nihita*, just as this in turn stands erroneously for *nihata* .
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **16-misc1)** — Caus. s. u. *ghātay*.
 
 - **RU:** — Caus. s. u. *ghātay*.
 - **EN:** Caus. s. u. *ghātay*.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **16-misc2)** — Intens. schleudern.
 
 - **RU:** — Intens. метать.
 - **EN:** Intens. to hurl.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **17-intro)** — Mit *abhini*
 - **EN:** With *abhini*
@@ -7692,31 +7692,31 @@ v. l.).
 
 - **RU:** — 2〉 бить —, рубить по (Acc.) *abhinighnant* Partic. с пассивным Bed. [MBH. 4,45,30], v. l. Vgl. u. *ava* 3〉.
 - **EN:** 2) to strike, hew at (Acc.) *abhinighnant* Partic. with passive Bed. [MBH. 4,45,30], v. l. Vgl. u. *ava* 3).
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **17.3)** — 3〉 die Trommel schlagen.
 
 - **RU:** — 3〉 бить в барабан.
 - **EN:** 3) to strike the drum.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **17.4)** — 4〉 sich schlagen —, sich ziehen nach (Acc.) [ĀPAST. ŚR. 9,20,10].
 
 - **RU:** — 4〉 устремляться —, направляться к (Acc.) [ĀPAST. ŚR. 9,20,10].
 - **EN:** 4) to strike out toward, betake oneself toward (Acc.) [ĀPAST. ŚR. 9,20,10].
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **17.5)** — 5〉 *abhinihata* Bez. eines Svarita, der sonst *abhinihita* heisst,
 
 - **RU:** — 5〉 *abhinihata* Bez. одного Svarita, который иначе называется *abhinihita*,
 - **EN:** 5) *abhinihata* Bez. of a Svarita, otherwise called *abhinihita*,
-  <sub>DCS 10052 · lexicographic</sub>
+  <sub>lexicographic</sub>
 
 **17-misc1)** — Mit *upani* anstecken, bestecken [KĀTY. ŚR. 8,4,10].
 
 - **RU:** — Mit *upani* насаживать, утыкать [KĀTY. ŚR. 8,4,10].
 - **EN:** With *upani* to pierce, stick into [KĀTY. ŚR. 8,4,10].
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **18-intro)** — Mit *pariṇi* (auch *parini*)
 - **EN:** With *pariṇi* (also *parini*)
@@ -7728,7 +7728,7 @@ v. l.).
 
 - **RU:** — 2〉 бить.
 - **EN:** 2) to strike.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **19-intro)** — Mit *praṇi*
 - **EN:** With *praṇi*
@@ -7740,25 +7740,25 @@ v. l.).
 
 - **RU:** — 2〉 опускать ещё ниже (руку).
 - **EN:** 2) to lower more strongly (the hand).
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **19.3)** — 3〉 tiefer als Anudātta sprechen.
 
 - **RU:** — 3〉 произносить ниже, чем Anudātta.
 - **EN:** 3) to speak lower than Anudātta.
-  <sub>DCS 10052 · lexicographic</sub>
+  <sub>lexicographic</sub>
 
 **19.4)** — 4〉 *praṇihata* = *dviṣṭa* *pratiskhalita* und *baddha*
 
 - **RU:** — 4〉 *praṇihata* = *dviṣṭa* *pratiskhalita* und *baddha*
 - **EN:** 4) *praṇihata* = *dviṣṭa* *pratiskhalita* and *baddha*
-  <sub>DCS 10052 · lexicographic</sub>
+  <sub>lexicographic</sub>
 
 **20)** — Mit *pratini* einen Streich führen gegen (Acc.). *pratinihata* mit pass. Bed.
 
 - **RU:** — Mit *pratini* наносить удар по (Acc.). *pratinihata* mit pass. Bed.
 - **EN:** With *pratini* to deal a blow against (Acc.). *pratinihata* with pass. Bed.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **21-intro)** — Mit *vini*
 - **EN:** With *vini*
@@ -7770,55 +7770,55 @@ v. l.).
 
 - **RU:** — 2〉 {%повергать, сражать,% также в переносном Bed. *manāṃsi*
 - **EN:** 2) to strike down, also in transferred Bed. *manāṃsi*
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **21.3)** — 3〉 erschlagen, erlegen, tödten [ŚIŚ. 16,14,85].
 
 - **RU:** — 3〉 убивать, поражать, умерщвлять [ŚIŚ. 16,14,85].
 - **EN:** 3) to slay, fell, kill [ŚIŚ. 16,14,85].
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **21.4)** — 4〉 zerstören, zu Grunde richten, zu Nichte machen.
 
 - **RU:** — 4〉 разрушать, губить, уничтожать.
 - **EN:** 4) to destroy, ruin, bring to naught.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **21.5)** — 5〉 *vinihata*
 
 - **RU:** — 5〉 *vinihata*
 - **EN:** 5) *vinihata*
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **21.5a)** — a〉 niedergeschlagen.
 
 - **RU:** — a〉 поверженный.
 - **EN:** a) struck down.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **21.5b)** — b〉 getroffen, berührt.
 
 - **RU:** — b〉 поражённый, задетый.
 - **EN:** b) hit, touched.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **21.5c)** — c〉 erschlagen, getödtet, geschlachtet.
 
 - **RU:** — c〉 убитый, умерщвлённый, заколотый.
 - **EN:** c) slain, killed, slaughtered.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **21.5d)** — d〉 zu Grunde gerichtet, zu Nichte gemacht.
 
 - **RU:** — d〉 погублённый, уничтоженный.
 - **EN:** d) ruined, brought to naught.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **21.5e)** — e〉 von einem Befehl so v. a. nicht befolgt.
 
 - **RU:** — e〉 о приказании так v. a. не исполненный.
 - **EN:** e) of a command, hence v. a. not obeyed.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **22-intro)** — Mit *saṃni*
 - **EN:** With *saṃni*
@@ -7830,13 +7830,13 @@ v. l.).
 
 - **RU:** — 2〉 убивать.
 - **EN:** 2) to slay.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **22.3)** — 3〉 *sāṃnihata* [MBH. 1,830] fehlerhaft für *saṃnihita*.
 
 - **RU:** — 3〉 *sāṃnihata* [MBH. 1,830] ошибочно вместо *saṃnihita*.
 - **EN:** 3) *sāṃnihata* [MBH. 1,830] erroneous for *saṃnihita*.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **23-intro)** — Mit *nis*
 - **EN:** With *nis*
@@ -7848,61 +7848,61 @@ v. l.).
 
 - **RU:** — 2〉 изгонять, устранять, уничтожать [ĀPAST. 1,24,25. 28,18. 29,1].
 - **EN:** 2) to drive away, remove, bring to naught [ĀPAST. 1,24,25. 28,18. 29,1].
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **23.3)** — 3〉 erschlagen. [MBH. 8,849]. [BHĀG. P. 4,14,34.] [6,9,18] hat die v. l. besser *ni* statt *nis*
 
 - **RU:** — 3〉 убивать. [MBH. 8,849]. [BHĀG. P. 4,14,34.] [6,9,18] в v. l. лучше *ni* вместо *nis*
 - **EN:** 3) to slay. [MBH. 8,849]. [BHĀG. P. 4,14,34.] [6,9,18] has the v. l. better *ni* instead of *nis*
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **23.4)** — 4〉 loswerfen auf (Gen.).
 
 - **RU:** — 4〉 бросать на (Gen.).
 - **EN:** 4) to discharge, let fly at (Gen.).
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **23.5)** — 5〉 vernichten.
 
 - **RU:** — 5〉 уничтожать.
 - **EN:** 5) to annihilate.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **23.6)** — 6〉 *nirhatya* [RĀJAT. 5,432] wohl fehlerhaft für *nirhṛtya*.
 
 - **RU:** — 6〉 *nirhatya* [RĀJAT. 5,432] вероятно ошибочно вместо *nirhṛtya*.
 - **EN:** 6) *nirhatya* [RĀJAT. 5,432] probably erroneous for *nirhṛtya*.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **23-misc1)** — Caus. s. u. *ghātay*.
 
 - **RU:** — Caus. s. u. *ghātay*.
 - **EN:** Caus. s. u. *ghātay*.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **23-misc2)** — Mit *atinis* übermässig auseinanderziehen (den Svarita).
 
 - **RU:** — Mit *atinis* чрезмерно растягивать (Svarita).
 - **EN:** With *atinis* to draw apart excessively (the Svarita).
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **23-misc3)** — Mit *adhinis* vertilgen von (Abl.).
 
 - **RU:** — Mit *adhinis* истреблять из (Abl.).
 - **EN:** With *adhinis* to exterminate from (Abl.).
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **23-misc4)** — Mit *parinis* austreiben.
 
 - **RU:** — Mit *parinis* изгонять.
 - **EN:** With *parinis* to drive out, expel.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **23-misc5)** — Mit *vinis*, *vinirhata* vernichtet.
 
 - **RU:** — Mit *vinis*, *vinirhata* уничтоженный.
 - **EN:** With *vinis*, *vinirhata* annihilated.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **24-intro)** — Mit *parā*
 - **EN:** With *parā*
@@ -7914,43 +7914,43 @@ v. l.).
 
 - **RU:** — 2〉 отрубать (голову).
 - **EN:** 2) to strike off (the head).
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **24.3)** — 3〉 betasten.
 
 - **RU:** — 3〉 ощупывать.
 - **EN:** 3) to feel, touch, grope at.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **24.4)** — 4〉 *parāhata*
 
 - **RU:** — 4〉 *parāhata*
 - **EN:** 4) *parāhata*
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **24.4a)** — a〉 ab-, weggeschlagen, vertrieben.
 
 - **RU:** — a〉 отбитый, прогнанный.
 - **EN:** a) struck off, struck away, driven off.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **24.4b)** — b〉 abgewandt.
 
 - **RU:** — b〉 отвёрнутый, отклонённый.
 - **EN:** b) turned away, averted.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **24.4c)** — c〉 im Widerspruch stehend.
 
 - **RU:** — c〉 противоречащий.
 - **EN:** c) standing in contradiction.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **24.4d)** — d〉 abgeschlagen, so v. a. widerlegt [NYĀYAM. 1,1,26].
 
 - **RU:** — d〉 отражённый,% так v. a. {%опровергнутый [NYĀYAM. 1,1,26].
 - **EN:** d) struck off, hence v. a. refuted [NYĀYAM. 1,1,26].
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **25-intro)** — Mit *pari*
 - **EN:** With *pari*
@@ -7962,7 +7962,7 @@ v. l.).
 
 - **RU:** — 2〉 гасить, заглушать (огонь).
 - **EN:** 2) to smother, choke out (the fire).
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **25.3)** — 3〉 Pass.
 - **EN:** 3) Pass.
@@ -7974,25 +7974,25 @@ v. l.).
 
 - **RU:** — b〉 утихать, проходить.
 - **EN:** b) to subside, pass away.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **25.4)** — 4〉 statt *pari* *bādho* *jahī* *mṛdhaḥ* [ṚV. 8,45,10] ist *paribādho* zu vermuthen.
 
 - **RU:** — 4〉 вместо *pari* *bādho* *jahī* *mṛdhaḥ* [ṚV. 8,45,10] следует предположить *paribādho*.
 - **EN:** 4) instead of *pari* *bādho* *jahī* *mṛdhaḥ* [ṚV. 8,45,10], *paribādho* is to be conjectured.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **25.5)** — 5〉 *parihata* fehlerhaft für *parihṛta*.
 
 - **RU:** — 5〉 *parihata* ошибочно вместо *parihṛta*.
 - **EN:** 5) *parihata* erroneous for *parihṛta*.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **26)** — Mit *abhipari* rings umfassen, bewältigen.
 
 - **RU:** — Mit *abhipari* охватывать со всех сторон, одолевать.
 - **EN:** With *abhipari* to encompass entirely, overcome.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **27-intro)** — Mit *pra*
 - **EN:** With *pra*
@@ -8005,82 +8005,82 @@ v. l.).
 
 - **RU:** — Mit *ni*
 — 1〉 вбивать.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **Mit {T45} — 1)** — Mit *abhini*
 — 1〉 anstecken, anspiessen.
 
 - **RU:** — Mit *abhini*
 — 1〉 насаживать, нанизывать.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **Mit {T63} — 1)** — Mit *pariṇi* (auch *parini*)
 — 1〉 umstecken. |
 
 - **RU:** — Mit *pariṇi* (auch *parini*)
 — 1〉 обвешивать, усыпать (украшениями). |
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **Mit {T65} — 1)** — Mit *praṇi*
 — 1〉 zu Grunde richten, zu Nichte machen; mit Acc. oder Gen.
 
 - **RU:** — Mit *praṇi*
 — 1〉 губить, уничтожать; с Acc. или Gen.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **Mit {T78} — 1)** — Mit *vini*
 — 1〉 schlagen.
 
 - **RU:** — Mit *vini*
 — 1〉 бить.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **Mit {T84} — 1)** — Mit *saṃni*
 — 1〉 losschlagen auf Jmd.
 
 - **RU:** — Mit *saṃni*
 — 1〉 набрасываться на кого-л., ударять.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **Mit {T88} — 1)** — Mit *nis*
 — 1〉 weg-, hinausschlagen, ausschlagen (Augen, Zähne).
 
 - **RU:** — Mit *nis*
 — 1〉 выбивать, вышибать (глаза, зубы).
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **{T100} {T101} {T102})** — Caus. s. u. *ghātay*.
 
 - **RU:** — Caus. s. u. *ghātay*.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **Mit {T110} — 1)** — Mit *parā*
 — 1〉 wegschleudern, umstürzen.
 
 - **RU:** — Mit *parā*
 — 1〉 отбрасывать, опрокидывать.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **Mit {T114} — 1)** — Mit *pari*
 — 1〉 umwinden.
 
 - **RU:** — Mit *pari*
 — 1〉 обвивать.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **Mit {T114} — 3a)** — 3〉 Pass.
 — a〉 einen Wandel erfahren.
 
 - **RU:** — 3〉 Pass.
 — a〉 претерпевать перемену.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **Mit {T125} — 1)** — Mit *pra*
 — 1〉 schlagen, losschlagen auf (Acc., angeblich auch Gen.).
 
 - **RU:** — Mit *pra*
 — 1〉 бить, набрасываться на (Acc., якобы также Gen.).
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 ## han
 
@@ -8324,377 +8324,377 @@ v. l.).
 **2)** — 2〉 niederschlagen, tödten.
 
 - **RU:** — 2〉 сражать, убивать.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3〉 *prahata*
 
 - **RU:** — 3〉 *prahata*
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **3a)** — a〉 geschlagen, getroffen.
 
 - **RU:** — a〉 поражённый, задетый.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **3b)** — b〉 angeschlagen (Trommel u. s. w.).
 
 - **RU:** — b〉 ударяемый (барабан u. s. w.).
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **3c)** — c〉 zerhauen, zerschlagen.
 
 - **RU:** — c〉 разрубленный, разбитый.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **3d)** — d〉 angehauen oder abgehauen (Baum).
 
 - **RU:** — d〉 надрубленный или срубленный (дерево).
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **3e)** — e〉 erschlagen.
 
 - **RU:** — e〉 убитый.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **3f)** — f〉 = *śāstravid* [GAL.] Vgl. *aprahata*.
 
 - **RU:** — f〉 = *śāstravid* [GAL.] Vgl. *aprahata*.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **mit-T7-1)** — Mit *abhipra*
 — 1〉 überwältigen.
 
 - **RU:** — Mit *abhipra*
 — 1〉 одолевать, побеждать.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **mit-T7-2)** — 2〉 *abhiprahata* verwundet (Baum).
 
 - **RU:** — 2〉 *abhiprahata* повреждённый (дерево).
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **mit-T9-T10-T11-T12)** — Mit *nipra* mit Gen. Vgl. *niṣpra*.
 
 - **RU:** — Mit *nipra* mit Gen. Vgl. *niṣpra*.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **mit-T13-T14-T15)** — Mit *niṣpra* niederschlagen, tödten; mit Gen. [ŚIŚ. 14,82].
 
 - **RU:** — Mit *niṣpra* сражать, убивать; mit Gen. [ŚIŚ. 14,82].
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **mit-T16-T17-T20)** — Mit *vipra*, *viprahata* geschlagen (ein Heer), getroffen, mitgenommen. Vgl. *aviprahata* [Nachtr. 2].
 
 - **RU:** — Mit *vipra*, *viprahata* разбитый (войско), поражённый, пострадавший. Vgl. *aviprahata* [Nachtr. 2].
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **mit-T21-1)** — Mit *prati*
 — 1〉 schlagen gegen (Gen.), losfahren auf Jmd (Acc.).
 
 - **RU:** — Mit *prati*
 — 1〉 бить в (Gen.), нападать на кого-л. (Acc.).
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **mit-T21-2)** — 2〉 niederschlagen [MBH. 12,230,9].
 
 - **RU:** — 2〉 сражать [MBH. 12,230,9].
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **mit-T21-3)** — 3〉 zerschlagen, brechen.
 
 - **RU:** — 3〉 разбивать, ломать.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **mit-T21-4)** — 4〉 anspiessen.
 
 - **RU:** — 4〉 насаживать на кол/вертел.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **mit-T21-5)** — 5〉 zurückschlagen, abwehren, sich wehren gegen, fernhalten, verscheuchen, hemmen, aufhalten, vereiteln. *ājñām* so v. a. sich um Jmds Befehle nicht kümmern [ŚIŚ. 16,80].
 
 - **RU:** — 5〉 отбивать, отражать, защищаться от, держать на расстоянии, отгонять, сдерживать, останавливать, расстраивать. *ājñām* так v. a. не считаться с чьими-л. приказаниями [ŚIŚ. 16,80].
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **mit-T21-6)** — 6〉 Pass. mit Abl. fern gehalten werden von, verlustig gehen.
 
 - **RU:** — 6〉 Pass. mit Abl. быть отстранённым от, лишаться.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **mit-T21-7)** — 7〉 Absol. *pratihatya* in entgegengesetzter Richtung.
 
 - **RU:** — 7〉 Absol. *pratihatya* в противоположном направлении.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **mit-T21-8)** — 8〉 *pratihata*
 
 - **RU:** — 8〉 *pratihata*
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **mit-T21-8a)** — a〉 wogegen Etwas schlägt.
 
 - **RU:** — a〉 то, обо что что-л. ударяется.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **mit-T21-8b)** — b〉 anschlagend an (Loc. oder im Comp. vorangehend).
 
 - **RU:** — b〉 ударяющийся о (Loc. или предшествующий в Comp.).
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **mit-T21-8c)** — c〉 zurückgeschlagen, abgewehrt (〔105,8〕), zurückgewiesen, abgewiesen, gehemmt, aufgehalten, unterblieben.
 
 - **RU:** — c〉 отражённый, отбитый (〔105,8〕), отвергнутый, отклонённый, сдержанный, остановленный, не случившийся.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **mit-T21-8d)** — d〉 in seiner Function gehemmt, von den Augen so v. a. geblendet, von den Zähnen so v. a. stumpf (von Säuren).
 
 - **RU:** — d〉 нарушенный в своей функции,отказывающий; о глазах так v. a. ослеплённый; о зубах так v. a. притуплённый (от кислот).
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **mit-T21-8e)** — e〉 feindselig in *pratihatadhī*.
 
 - **RU:** — e〉 враждебный в *pratihatadhī*.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **mit-T21-8f)** — f〉 in seinen Erwartungen getäuscht.
 
 - **RU:** — f〉 обманутый в своих ожиданиях.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **mit-T21-8g)** — g〉 schlechte Lesart für *prahita*. Vgl. *apratihata*.
 
 - **RU:** — g〉 ошибочное чтение вместо *prahita*. Vgl. *apratihata*.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **mit-T21-T41-T43)** — Caus. s. u. *ghātay*.
 
 - **RU:** — Caus. s. u. *ghātay*.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **mit-T44-T45)** — Mit *saṃprati* Pass. sich stossen.
 
 - **RU:** — Mit *saṃprati* Pass. сталкиваться.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **mit-T46-1)** — Mit *vi*
 — 1〉 zerschlagen, zerbrechen, zerstören.
 
 - **RU:** — Mit *vi*
 — 1〉 разбивать, ломать, разрушать.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **mit-T46-2)** — 2〉 aus einandertreiben.
 
 - **RU:** — 2〉 рассеивать, разгонять.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **mit-T46-3)** — 3〉 auseinanderschlagen, so v. a. ausstrecken (ein Fell).
 
 - **RU:** — 3〉 разбивать врозь, так v. a. растягивать (шкуру).
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **mit-T46-4)** — 4〉 abreissen.
 
 - **RU:** — 4〉 отрывать.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **mit-T46-5)** — 5〉 lösen (Flechten).
 
 - **RU:** — 5〉 распускать (косы).
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **mit-T46-6)** — 6〉 abschlagen, abwehren, sich wehren gegen.
 
 - **RU:** — 6〉 отражать, отбивать, защищаться от.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **mit-T46-7)** — 7〉 stören, hemmen, unterdrücken.
 
 - **RU:** — 7〉 нарушать, препятствовать, подавлять.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **mit-T46-8)** — 8〉 vorenthalten.
 
 - **RU:** — 8〉 утаивать, не давать.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **mit-T46-9)** — 9〉 zu Nichte machen [ŚIŚ. 12,67. 14,8. 19,49].
 
 - **RU:** — 9〉 уничтожать, сводить на нет [ŚIŚ. 12,67. 14,8. 19,49].
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **mit-T46-10)** — 10〉 Pass.
 
 - **RU:** — 10〉 Pass.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **mit-T46-10a)** — a〉 von keinem Nutzen sein.
 
 - **RU:** — a〉 быть бесполезным.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **mit-T46-10b)** — b〉 sich quälen, sich Sorge machen, sich unnütz abmühen.
 
 - **RU:** — b〉 терзаться, беспокоиться, напрасно изнурять себя.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **mit-T46-11)** — 11〉 häufig fehlerhaft für *nihan*.
 
 - **RU:** — 11〉 часто ошибочно вместо *nihan*.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **mit-T46-12)** — 12〉 *vihata*
 
 - **RU:** — 12〉 *vihata*
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **mit-T46-12a)** — a〉 aufgerissen, aufgewühlt.
 
 - **RU:** — a〉 взрытый, взбороздённый.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **mit-T46-12b)** — b〉 herausgeschlagen aus (Abl.).
 
 - **RU:** — b〉 выбитый из (Abl.).
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **mit-T46-12c)** — c〉 getroffen, heimgesucht.
 
 - **RU:** — c〉 поражённый, постигнутый (бедой).
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **mit-T46-12d)** — d〉 zurückgewiesen, angewiesen (Person).
 
 - **RU:** — d〉 отклонённый, отосланный (о лице).
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **mit-T46-12e)** — e〉 abgeschlagen, abgewehrt.
 
 - **RU:** — e〉 отражённый, отбитый.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **mit-T46-12f)** — f〉 gestört, gehemmt.
 
 - **RU:** — f〉 нарушенный, остановленный.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **T53-T55)** — Caus. s. u. *ghātay*.
 
 - **RU:** — Caus. s. u. *ghātay*.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **T56-T57-desid)** — Desid. stören —, hemmen wollen.
 
 - **RU:** — Desid. желать нарушить, желать остановить.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **T57-T59-caus)** — Intens. (*vijījahi* ?) Jmd (Acc.) ein Leid zufügen.
 
 - **RU:** — Intens. (*vijījahi* ?) причинять кому-л. (Acc.) вред, наносить ущерб.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **mit-T60-T64)** — Mit *anuvi*, *˚hanti* [MBH. 12,56,51] nach [KERN] fehlerhaft für *anuvahanti*.
 
 - **RU:** — Mit *anuvi*, *˚hanti* [MBH. 12,56,51] по [KERN] ошибочно вместо *anuvahanti*.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **mit-T65-T66)** — Mit *āvi* (!) hauen auf (Acc.).
 
 - **RU:** — Mit *āvi* (!) рубить по (Acc.).
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **mit-T67-T68)** — Mit *pravi*, *pravihata* zurück-, in die Flucht geschlagen.
 
 - **RU:** — Mit *pravi*, *pravihata* отброшенный, обращённый в бегство.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **mit-T69-T70)** — Mit *prativi* in *prativighāta*.
 
 - **RU:** — Mit *prativi* в *prativighāta*.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **mit-T71-1)** — Mit *sam*
 — 1〉 zuklappen, zusammenlegen, schliessen.
 
 - **RU:** — Mit *sam*
 — 1〉 захлопывать, складывать, закрывать.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **mit-T71-2)** — 2〉 zusammenballen; Pass. sich ballen, fest —, consistent werden. *pṛthivyādibhāvena* zu Erde u. s. w. [ŚAṂK. zu BĀDAR. 2,2,18]. *kṛṣṇāyasasyeva* *ca* *te* *saṃhatyā* *hṛdayaṃ* *kṛtam* so v. a. dein Herz ist gleichsam aus Eisen zusammengehämmert.
 
 - **RU:** — 2〉 сжимать в комок, скатывать; Pass. сжиматься, становиться плотным, твердеть. *pṛthivyādibhāvena* на землю u. s. w. [ŚAṂK. zu BĀDAR. 2,2,18]. *kṛṣṇāyasasyeva* *ca* *te* *saṃhatyā* *hṛdayaṃ* *kṛtam* так v. a. твоё сердце словно выковано из железа.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **mit-T71-3)** — 3〉 zusammensetzen, -fügen. Pass. verbunden werden, sich verbinden.
 
 - **RU:** — 3〉 составлять, соединять. Pass. быть соединённым, соединяться.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **mit-T71-4)** — 4〉 Med. aufeinanderstossen, zusammenstossen mit (Instr.) [ṚV. 9,14,4].
 
 - **RU:** — 4〉 Med. сталкиваться, столкнуться с (Instr.) [ṚV. 9,14,4].
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **mit-T71-5)** — 5〉 zerschlagen, zerbrechen.
 
 - **RU:** — 5〉 разбивать, ломать.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **mit-T71-6)** — 6〉 Absol. *saṃhatya* (auch mit *anyo'nyam*) sich zusammen thuend, in Gemeinschaft, vereint, zusammen, im Verein mit (Instr.).
 
 - **RU:** — 6〉 Absol. *saṃhatya* (auch mit *anyo'nyam*) действуя сообща, совместно, объединённо, вместе, в союзе с (Instr.).
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **mit-T71-7)** — 7〉 *saṃhata*
 
 - **RU:** — 7〉 *saṃhata*
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **mit-T71-7a)** — a〉 an —, auf einander gelegt, zusammengefügt, geschlossen, zusammenstossend, an schliessend, eng verbunden, — mit (Instr.), zusammenhängend, zusammenhaltend, einen Haufen bildend.
 
 - **RU:** — a〉 наложенный друг на друга, соединённый, сомкнутый, соприкасающийся, примыкающий, тесно связанный, — с (Instr.), связный, нераздельный, образующий кучу.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **mit-T71-7b)** — b〉 fest —, compact geworden, fest, hart, compact (〔73,12〕); von festem, compacten Gliederbau.
 
 - **RU:** — b〉 ставший плотным, твёрдый, жёсткий, компактный (〔73,12〕); крепкого, плотного телосложения.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **mit-T71-7c)** — c〉 stark, intensiv.
 
 - **RU:** — c〉 сильный, интенсивный.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **mit-T71-7d)** — d〉 als Bez. eines best. Geruchs und Tons intensiv oder zusammengesetzt.
 
 - **RU:** — d〉 как Bez. best. запаха и звука — интенсивный или сложный.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **T95-T96)** — Caus. in *saṃghātana*.
 
 - **RU:** — Caus. в *saṃghātana*.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **mit-T97-1)** — Mit *abhisam*
 — 1〉 Absol. *abhisaṃhatya* sich zusammenthuend, in Gemeinschaft, vereint.
 
 - **RU:** — Mit *abhisam*
 — 1〉 Absol. *abhisaṃhatya* действуя сообща, совместно, объединённо.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **mit-T97-2)** — 2〉 *abhisaṃhata* angegriffen, befeindet.
 
 - **RU:** — 2〉 *abhisaṃhata* атакованный, враждебно встреченный.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **mit-T101-T105)** — Mit *pratisam*, *anyo'nyapratisaṃhatau* mit einander verbunden. *pratisaṃhata* auch schlechte v. l. für *pratisaṃhṛta*.
 
 - **RU:** — Mit *pratisam*, *anyo'nyapratisaṃhatau* связанный друг с другом. *pratisaṃhata* также ошибочное v. l. вместо *pratisaṃhṛta*.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **mit-T106-T107)** — Mit *visam*, *visaṃhata* aus der festen Verbindung gebracht, gelockert.
 
 - **RU:** — Mit *visam*, *visaṃhata* выведенный из прочного соединения, ослабленный.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 ## han
 
@@ -8705,13 +8705,13 @@ v. l.).
 
 - **RU:** **2.** *˚han*¦ _Adj._ (_f._ *˚ghnī*) бьющий, убивающий, убийца, губящий, уничтожающий, отгоняющий u. s. w.
 - **EN:** **2.** *˚han*¦ _Adj._ (_f._ *˚ghnī*) striking, killing, a slayer, ruining, destroying, driving away u. s. w.
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **109)** **1.** √*han*¦ mit **samava* aus dem Wege räumen, wegschaffen [MAHĀVY. 126].
 
 - **RU:** **1.** √*han*¦ mit **samava* устранять, убирать с дороги [MAHĀVY. 126].
 - **EN:** **1.** √*han*¦ with **samava* to remove out of the way, get rid of [MAHĀVY. 126].
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 ## han
 
@@ -8729,22 +8729,22 @@ v. l.).
 
 - **RU:** han¦ ˚gehen, [S I,351,6.] {part=,seq=27777,type=,n=8}
 - **EN:** han¦ ˚to go, [S I,351,6.] {part=,seq=27777,type=,n=8}
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **intens-jeghnīyate)** han¦ , Intens. *jeghnīyate, [Kaṃs. IV,17]d (vijeghnīyatām).
 
 - **RU:** han¦ , Intens. *jeghnīyate, [Kaṃs. IV,17]d (vijeghnīyatām).
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **mit-vyati)** — Mit vyati, *gegenseitig töten, [H 43,8.]
 
 - **RU:** — Mit vyati, *взаимно убивать, [H 43,8.]
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **mit-samava)** — Mit *samava, aus dem Wege räumen, wegschaffen, [Mahāvy. 126.]
 
 - **RU:** — Mit *samava, устранять, убирать с дороги, [Mahāvy. 126.]
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **mit-ani)** — Mit ˚āni, vernichten, 
 
@@ -8753,17 +8753,17 @@ v. l.).
 - **RU:** — Mit ˚āni, уничтожать, 
 
  [H 50,45.]
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **mit-nipra-1)** — Mit *nipra, abschlagen, [Śrīk. 18,27];
 
 - **RU:** — Mit *nipra, отбивать, [Śrīk. 18,27];
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **mit-nipra-2)** töten, [Uttarar. V,31]d ed. [Lakṣmaṇasūri]. {part=,seq=27776,type=,n=1}
 
 - **RU:** убивать, [Uttarar. V,31]d ed. [Lakṣmaṇasūri]. {part=,seq=27776,type=,n=1}
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 ## han
 
@@ -8774,4 +8774,4 @@ v. l.).
 
 - **RU:** **1.** *han*¦ mit **samava* устранять, убирать с дороги [MAHĀVY. 126].
 - **EN:** **1.** *han*¦ with **samava* to remove out of the way, get rid of [MAHĀVY. 126].
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>

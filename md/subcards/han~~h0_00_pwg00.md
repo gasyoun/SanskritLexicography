@@ -355,7 +355,7 @@
 [279.] [Spr. (II) 3216.] — In astron. so v. a. to touch: *divasakaramulkāśanividyuto yadā hanyuḥ*
 [VARĀH. BṚH. S. 3,33.] *manaḥ* to wound the heart
 [Spr. (II) 1277] = [1282.]
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>
 
 **gram-intro)** *han*¦, *hanti*
 [DHĀTUP. 24,2] (*hiṃsāgatyoḥ*).* hathas, hatas, ghnanti*
@@ -436,4 +436,4 @@
 [VOP. 3,153.] Превращение *na* в *ṇa*
 [8,22.] Отсутствие соединительного гласного *i* Kār. 4 из
 [SIDDH. K.] к [P. 7,2,10.] О сочетании с *kaṇe* и *manas* s. u. *manas* .
-  <sub>DCS 10052 · attested</sub>
+  <sub>attested</sub>

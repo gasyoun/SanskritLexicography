@@ -7,4 +7,4 @@
 
 - **RU:** **1.** *nī*¦ [vgl. ] Z. 8. Читай: {11,2,6,1} st. {11,26,1}.
 - **EN:** **1.** *nī*¦ [vgl. ] Z. 8. Read: {11,2,6,1} st. {11,26,1}.
-  <sub>DCS 2376 · attested</sub>
+  <sub>attested</sub>

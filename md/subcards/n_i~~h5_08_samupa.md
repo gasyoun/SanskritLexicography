@@ -13,4 +13,4 @@ Schol.
 - **EN:** — *samupa*, *taṃ yajñaṃ samupānayan* brought the offering
 [R. 7,86,6.] = *avedayan, smṛtavantaḥ*
 Schol.
-  <sub>DCS 12 · attested</sub>
+  <sub>attested</sub>

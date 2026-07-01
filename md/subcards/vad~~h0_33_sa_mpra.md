@@ -7,13 +7,13 @@
 
 - **RU:** — *saṃpra* громко произносить: *purā vāgbhyaḥ saṃpravaditoḥ*
 - **EN:** — *saṃpra* to pronounce aloud: *purā vāgbhyaḥ saṃpravaditoḥ*
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **1b)** [PAÑCAV. BR. 21,3,5.] gemeinschaftlich die Stimme ertönen lassen: *saṃpravadanti kukkuṭāḥ*
 
 - **RU:** [PAÑCAV. BR. 21,3,5.] совместно издавать звуки, дружно подавать голос: *saṃpravadanti kukkuṭāḥ*
 - **EN:** [PAÑCAV. BR. 21,3,5.] to let the voice resound together: *saṃpravadanti kukkuṭāḥ*
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>
 
 **1c)** [Ind. St. 8,418.]
 [P. 1,3,48], Sch.
@@ -28,4 +28,4 @@
 [P. 1,3,48], Sch.
 [VOP. 23,41.] med. to converse: *saṃpravadante brāhmaṇāḥ* ebend. *saṃpravadamānājjanāt*
 [BHAṬṬ. 8,28.]
-  <sub>DCS 3918 · attested</sub>
+  <sub>attested</sub>

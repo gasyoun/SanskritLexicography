@@ -11,79 +11,79 @@ _PWG article — 28 sub-card(s), 189 sense(s) · RU 159/189 · EN 92/189_
 
 - **RU:** *yat*¦, *yatati* и *yatate* (только последнее после [DHĀTUP. 2,29]), *yatamāna, yatāna* и *yatāna; yetire, yatiṣyate, ayatiṣṭa*; 1) act. присоединять, прилагать; соединять: *janaṃ na mitro yatati bruvāṇaḥ* [ṚV. 7,36,2.] *hataṃ ca śatrūnyatataṃ ca mitriṇaḥ* [8,35,12.] *yuvaṃ mitremaṃ janaṃ yatathaḥ saṃ ca nayathaḥ* [5,65,6.] [48,5.]
 - **EN:** *yat*¦, *yatati* and *yatate* (only the latter after [DHĀTUP. 2,29]), *yatamāna, yatāna* and *yatāna; yetire, yatiṣyate, ayatiṣṭa*; 1) act. to join, attach to one another; to connect: *janaṃ na mitro yatati bruvāṇaḥ* [ṚV. 7,36,2.] *hataṃ ca śatrūnyatataṃ ca mitriṇaḥ* [8,35,12.] *yuvaṃ mitremaṃ janaṃ yatathaḥ saṃ ca nayathaḥ* [5,65,6.] [48,5.]
-  <sub>DCS 9672 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) med. sich anschliessen, — anreihen; in Reihen ziehen: *haṃsā iva śreṇiśo yatānāḥ* [ṚV. 3,8,9] (vgl. [1,163,10.]). *śravasyavo na pṛtanāsu yetire* [1,85,8.] [5,33,10.] [59,2.] *viśo na yuktā uṣaso yatante* [7,79,2.] [10,13,2.] [5.] *anupūrvaṃ yatamānāḥ* [18,6.] [77,2.] [8,43,4.] Auch act. etwa so v. a. in einer Reihe —, auf einer Stufe stehen: *nakirdevebhiryatatho mahitvā* [6,67,10.]
 
 - **RU:** — 2) med. присоединяться, выстраиваться в ряд; двигаться рядами: *haṃsā iva śreṇiśo yatānāḥ* [ṚV. 3,8,9] (vgl. [1,163,10.]). *śravasyavo na pṛtanāsu yetire* [1,85,8.] [5,33,10.] [59,2.] *viśo na yuktā uṣaso yatante* [7,79,2.] [10,13,2.] [5.] *anupūrvaṃ yatamānāḥ* [18,6.] [77,2.] [8,43,4.] Также act. примерно так v. a. стоять в ряду —, находиться на одном уровне: *nakirdevebhiryatatho mahitvā* [6,67,10.]
 - **EN:** 2) med. to join in line, fall in behind; to march in rows, draw up in rank: *haṃsā iva śreṇiśo yatānāḥ* [ṚV. 3,8,9] (vgl. [1,163,10.]). *śravasyavo na pṛtanāsu yetire* [1,85,8.] [5,33,10.] [59,2.] *viśo na yuktā uṣaso yatante* [7,79,2.] [10,13,2.] [5.] *anupūrvaṃ yatamānāḥ* [18,6.] [77,2.] [8,43,4.] Also act. approximately in the sense of v. a. to stand in a row, to be on a par: *nakirdevebhiryatatho mahitvā* [6,67,10.]
-  <sub>DCS 9672 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) med. sich verbinden, — vereinigen, zusammentreffen mit (instr.): *vaiśvānaro yatate sūryeṇa* [ṚV. 1,98,1.] *(uṣāsaḥ) yatamānā raśmibhiḥ sūryasya* [123,12.] [5,4,4.] [10,62,11.] *pari vāmiṣaḥ purūcīrīyurgīrbhiryatamānāḥ* [3,58,8.] [10,113,7.] *kṣatreṇāgne svāyuḥ saṃ rabhasva mitreṇāgne mitradheye yatasva* ([P. 5,4,36], Vārtt. 3, Sch.) [VS. 27,5.] [7,45.] [10,29.] *piturna putraḥ kratubhiryatānaḥ* wie ein Sohn des Vaters Willen sich fügend [ṚV. 9,97,30.]
 
 - **RU:** — 3) med. соединяться, — сливаться, встречаться с (instr.): *vaiśvānaro yatate sūryeṇa* [ṚV. 1,98,1.] *(uṣāsaḥ) yatamānā raśmibhiḥ sūryasya* [123,12.] [5,4,4.] [10,62,11.] *pari vāmiṣaḥ purūcīrīyurgīrbhiryatamānāḥ* [3,58,8.] [10,113,7.] *kṣatreṇāgne svāyuḥ saṃ rabhasva mitreṇāgne mitradheye yatasva* ([P. 5,4,36], Vārtt. 3, Sch.) [VS. 27,5.] [7,45.] [10,29.] *piturna putraḥ kratubhiryatānaḥ* как сын, подчиняющийся воле отца [ṚV. 9,97,30.]
 - **EN:** 3) med. to join, unite, meet with (instr.): *vaiśvānaro yatate sūryeṇa* [ṚV. 1,98,1.] *(uṣāsaḥ) yatamānā raśmibhiḥ sūryasya* [123,12.] [5,4,4.] [10,62,11.] *pari vāmiṣaḥ purūcīrīyurgīrbhiryatamānāḥ* [3,58,8.] [10,113,7.] *kṣatreṇāgne svāyuḥ saṃ rabhasva mitreṇāgne mitradheye yatasva* ([P. 5,4,36], Vārtt. 3, Sch.) [VS. 27,5.] [7,45.] [10,29.] *piturna putraḥ kratubhiryatānaḥ* complying with the father's will as a son [ṚV. 9,97,30.]
-  <sub>DCS 9672 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) med. sich zu vereinigen suchen mit (loc.), zu erreichen suchen (einen Ort), zustreben, auf Etwas zuhalten: *divi svano yatate* [ṚV. 10,75,3.] *mahaḥ pārthive sadane yatasva* [1,169,6.] [TBR. 1,4,6,2.] [TS. 2,2,6,1.] *antarikṣe yatasva* [5,6,1,4.] [ŚAT. BR. 12,2,3,1.]
 
 - **RU:** — 4) med. стремиться соединиться с (loc.), стремиться достичь (какого-либо места), устремляться, двигаться к чему-либо: *divi svano yatate* [ṚV. 10,75,3.] *mahaḥ pārthive sadane yatasva* [1,169,6.] [TBR. 1,4,6,2.] [TS. 2,2,6,1.] *antarikṣe yatasva* [5,6,1,4.] [ŚAT. BR. 12,2,3,1.]
 - **EN:** 4) med. to seek to unite oneself with (loc.), to seek to reach (a place), to strive towards, to make for something: *divi svano yatate* [ṚV. 10,75,3.] *mahaḥ pārthive sadane yatasva* [1,169,6.] [TBR. 1,4,6,2.] [TS. 2,2,6,1.] *antarikṣe yatasva* [5,6,1,4.] [ŚAT. BR. 12,2,3,1.]
-  <sub>DCS 9672 · attested</sub>
+  <sub>attested</sub>
 
 **5)** — 5) med. (aus metrischen Rücksichten auch act.) streben nach, sich bemühen um, bedacht sein auf, sich ganz einer Sache hingeben:
 
 - **RU:** — 5) med. (из метрических соображений также act.) стремиться к, прилагать усилия для, быть озабоченным чем-либо, всецело отдаваться чему-либо:
 - **EN:** 5) med. (for metrical reasons also act.) to strive after, to endeavour, to be intent upon, to devote oneself wholly to something:
-  <sub>DCS 9672 · attested</sub>
+  <sub>attested</sub>
 
 **5a)** a) mit loc.: *yatadhvaṃ nalamārgaṇe* [MBH. 3,2727.] *hitānudarśane* [R. 5,76,22.] [BHĀG. P. 3,25,26.] *jīvitahṛtau* [Spr. 1140.] *dviṣatāṃ vadhe* [R. 3,71,16.] *piturvinigrahe* [R. GORR. 2,20,46.] [BHAṬṬ. 5,29.] *saṃsiddhau* [BHAG. 6,43.] *arthasidbhau dharme yatitumarhasi* [R. GORR. 2,20,11.] [MBH. 4,680.] *siddhe 'nyathārthe na yateta* [BHĀG. P. 2,2,3.] *nalasyānayane yata* [MBH. 3,2722.] [MĀRK. P. 69,26.] [126,3.] [132,10.] *yatiṣyati mahābhaye* [R. 4,14,29.] *svādvanne na tu yatyatām* (impers.) [Spr. 795.]
 
 - **RU:** a) с loc.: *yatadhvaṃ nalamārgaṇe* [MBH. 3,2727.] *hitānudarśane* [R. 5,76,22.] [BHĀG. P. 3,25,26.] *jīvitahṛtau* [Spr. 1140.] *dviṣatāṃ vadhe* [R. 3,71,16.] *piturvinigrahe* [R. GORR. 2,20,46.] [BHAṬṬ. 5,29.] *saṃsiddhau* [BHAG. 6,43.] *arthasidbhau dharme yatitumarhasi* [R. GORR. 2,20,11.] [MBH. 4,680.] *siddhe 'nyathārthe na yateta* [BHĀG. P. 2,2,3.] *nalasyānayane yata* [MBH. 3,2722.] [MĀRK. P. 69,26.] [126,3.] [132,10.] *yatiṣyati mahābhaye* [R. 4,14,29.] *svādvanne na tu yatyatām* (impers.) [Spr. 795.]
 - **EN:** a) with loc.: *yatadhvaṃ nalamārgaṇe* [MBH. 3,2727.] *hitānudarśane* [R. 5,76,22.] [BHĀG. P. 3,25,26.] *jīvitahṛtau* [Spr. 1140.] *dviṣatāṃ vadhe* [R. 3,71,16.] *piturvinigrahe* [R. GORR. 2,20,46.] [BHAṬṬ. 5,29.] *saṃsiddhau* [BHAG. 6,43.] *arthasidbhau dharme yatitumarhasi* [R. GORR. 2,20,11.] [MBH. 4,680.] *siddhe 'nyathārthe na yateta* [BHĀG. P. 2,2,3.] *nalasyānayane yata* [MBH. 3,2722.] [MĀRK. P. 69,26.] [126,3.] [132,10.] *yatiṣyati mahābhaye* [R. 4,14,29.] *svādvanne na tu yatyatām* (impers.) [Spr. 795.]
-  <sub>DCS 9672 · attested</sub>
+  <sub>attested</sub>
 
 **5b)** — b) mit dat.: *yateta tatprāptyai* [YĀJÑ. 1,351.] *yatiṣye vaḥ sakhīpratyānayanāya* [VIKR. 5,16.] [MĀLAV. 9,3.] *tasya nāśāya* [Spr. 95.] *paramārthasiddhyai* [1901.] [BHAG. 7,3.] [HARIV. 15636.] *jarāmaraṇamokṣāya* [BHAG. 7,29.] [MBH. 5,5957.] [KATHĀS. 27,40.] *udayāya* [RAGH. 9,7.] *apunarmṛtāya* [BHĀG. P. 5,19,25.] *bhūtyai* (Conj.) [Spr. 3413.] *arthāya* [4121.] *lābhāya* [KĀM. NĪTIS. 1,17.] *śreyase* [ŚĀK. 113,3.]
 
 - **RU:** — б) с dat.: *yateta tatprāptyai* [YĀJÑ. 1,351.] *yatiṣye vaḥ sakhīpratyānayanāya* [VIKR. 5,16.] [MĀLAV. 9,3.] *tasya nāśāya* [Spr. 95.] *paramārthasiddhyai* [1901.] [BHAG. 7,3.] [HARIV. 15636.] *jarāmaraṇamokṣāya* [BHAG. 7,29.] [MBH. 5,5957.] [KATHĀS. 27,40.] *udayāya* [RAGH. 9,7.] *apunarmṛtāya* [BHĀG. P. 5,19,25.] *bhūtyai* (Conj.) [Spr. 3413.] *arthāya* [4121.] *lābhāya* [KĀM. NĪTIS. 1,17.] *śreyase* [ŚĀK. 113,3.]
 - **EN:** b) with dat.: *yateta tatprāptyai* [YĀJÑ. 1,351.] *yatiṣye vaḥ sakhīpratyānayanāya* [VIKR. 5,16.] [MĀLAV. 9,3.] *tasya nāśāya* [Spr. 95.] *paramārthasiddhyai* [1901.] [BHAG. 7,3.] [HARIV. 15636.] *jarāmaraṇamokṣāya* [BHAG. 7,29.] [MBH. 5,5957.] [KATHĀS. 27,40.] *udayāya* [RAGH. 9,7.] *apunarmṛtāya* [BHĀG. P. 5,19,25.] *bhūtyai* (Conj.) [Spr. 3413.] *arthāya* [4121.] *lābhāya* [KĀM. NĪTIS. 1,17.] *śreyase* [ŚĀK. 113,3.]
-  <sub>DCS 9672 · attested</sub>
+  <sub>attested</sub>
 
 **5c)** — c) mit gen.: *tasyānnasya* ([NILAK.] ergänzt *dāne*) [MBH. 1,8085.]
 
 - **RU:** — в) с gen.: *tasyānnasya* ([NILAK.] дополняется *dāne*) [MBH. 1,8085.]
 - **EN:** c) with gen.: *tasyānnasya* ([NILAK.] supplies *dāne*) [MBH. 1,8085.]
-  <sub>DCS 9672 · attested</sub>
+  <sub>attested</sub>
 
 **5d)** — d) mit *arthe, arthāya, artham, hetos, pratiḥ mitrārthe bāndhavārthe ca buddhimānyatate sadā* [Spr. 2205.] *mamāyaṃ nūnamarthāya yatamānaḥ* [R. 3,73,2.] *tadartham* [Spr. 2582.] *mokṣārtham* [MBH. 1,1591.] *svargārthaṃ na yatiṣyanti* [HARIV. 7273.] *so 'haṃ yātiṣye* (lies *yatiṣye) putrārtham* [MĀRK. P. 121,39.] *dharmārthaṃ yatatām* (gen. pl.) [Spr. 4258.] *śāpāntahetostasyā na kiṃ yate* [KATHĀS. 121,153.] *kathaṃ yatiṣye bhojanaṃ prati* [92,29.]
 
 - **RU:** — г) с *arthe, arthāya, artham, hetos, pratiḥ mitrārthe bāndhavārthe ca buddhimānyatate sadā* [Spr. 2205.] *mamāyaṃ nūnamarthāya yatamānaḥ* [R. 3,73,2.] *tadartham* [Spr. 2582.] *mokṣārtham* [MBH. 1,1591.] *svargārthaṃ na yatiṣyanti* [HARIV. 7273.] *so 'haṃ yātiṣye* (читать *yatiṣye) putrārtham* [MĀRK. P. 121,39.] *dharmārthaṃ yatatām* (gen. pl.) [Spr. 4258.] *śāpāntahetostasyā na kiṃ yate* [KATHĀS. 121,153.] *kathaṃ yatiṣye bhojanaṃ prati* [92,29.]
 - **EN:** d) with *arthe, arthāya, artham, hetos, pratiḥ mitrārthe bāndhavārthe ca buddhimānyatate sadā* [Spr. 2205.] *mamāyaṃ nūnamarthāya yatamānaḥ* [R. 3,73,2.] *tadartham* [Spr. 2582.] *mokṣārtham* [MBH. 1,1591.] *svargārthaṃ na yatiṣyanti* [HARIV. 7273.] *so 'haṃ yātiṣye* (read *yatiṣye) putrārtham* [MĀRK. P. 121,39.] *dharmārthaṃ yatatām* (gen. pl.) [Spr. 4258.] *śāpāntahetostasyā na kiṃ yate* [KATHĀS. 121,153.] *kathaṃ yatiṣye bhojanaṃ prati* [92,29.]
-  <sub>DCS 9672 · attested</sub>
+  <sub>attested</sub>
 
 **5e)** — e) mit acc.: *yatante prāṇipīḍanam* [HARIV. 14603.] *rākṣasā duṣṭabhāvā hi yatante vikriyāṃ vane* [R. 3,49,56.] *yatasvānyatamaṃ raṇam* so v. a. mache dich gefasst auf [35,60.] Vgl. u.
 
 - **RU:** — д) с acc.: *yatante prāṇipīḍanam* [HARIV. 14603.] *rākṣasā duṣṭabhāvā hi yatante vikriyāṃ vane* [R. 3,49,56.] *yatasvānyatamaṃ raṇam* так v. a. приготовься к [35,60.] Vgl. u.
 - **EN:** e) with acc.: *yatante prāṇipīḍanam* [HARIV. 14603.] *rākṣasā duṣṭabhāvā hi yatante vikriyāṃ vane* [R. 3,49,56.] *yatasvānyatamaṃ raṇam* thus v. a. prepare yourself for [35,60.] Vgl. u.
-  <sub>DCS 9672 · attested</sub>
+  <sub>attested</sub>
 
 **5f)** — f) mit infin. [M. 9,6.] [MBH. 1,6360.] [3,2637.] [R. GORR. 2,13,14.] [3,23,22.] [RAGH. 5,17.] [25.] [KUMĀRAS. 2,59.] [KATHĀS. 5,128.] [19,51.] [RĀJA-TAR. 1,159.] [3,282.] [6,334.] [BHĀG. P. 3,24,28.] [BHAṬṬ. 15,58.]
 
 - **RU:** — е) с infin. [M. 9,6.] [MBH. 1,6360.] [3,2637.] [R. GORR. 2,13,14.] [3,23,22.] [RAGH. 5,17.] [25.] [KUMĀRAS. 2,59.] [KATHĀS. 5,128.] [19,51.] [RĀJA-TAR. 1,159.] [3,282.] [6,334.] [BHĀG. P. 3,24,28.] [BHAṬṬ. 15,58.]
 - **EN:** f) with infin. [M. 9,6.] [MBH. 1,6360.] [3,2637.] [R. GORR. 2,13,14.] [3,23,22.] [RAGH. 5,17.] [25.] [KUMĀRAS. 2,59.] [KATHĀS. 5,128.] [19,51.] [RĀJA-TAR. 1,159.] [3,282.] [6,334.] [BHĀG. P. 3,24,28.] [BHAṬṬ. 15,58.]
-  <sub>DCS 9672 · attested</sub>
+  <sub>attested</sub>
 
 **5g)** — g) ohne Ergänzung sich anstrengen, alle seine Kräfte anwenden, Sorge tragen, auf seiner Hut sein, sich vorsehen: *yatamānā vanaṃ rājangahanaṃ pratipedire* [MBH. 1,5877.] [3,8814.] [R. 1,63,22.] [3,34,21.] [26.] [44,27.] [SUŚR. 2,23,8.] *tathā nityaṃ yateyātām — yathā na* [M. 9,102.] [DAŚAK.] in [BENF. Chr. 185,12.] [PRAB. 91,4.] [BHAṬṬ. 12,4.] act.: *yatato hyapi — puruṣasya — indriyāṇi pramāthīni haranti prasabhaṃ manaḥ* [BHAG. 2,60.] [7,3.] [9,14.] [MBH. 5,3313.] [HARIV. 15637.] [BHĀG. P. 1,6,21.] [4,8,32.] [23,10.] [5,18,27.] [6,2,35.] [10,30,20.] [CAURAP. 30.]
 
 - **RU:** — ж) без дополнения напрягать усилия, применять все свои силы, проявлять заботу, быть начеку, остерегаться: *yatamānā vanaṃ rājangahanaṃ pratipedire* [MBH. 1,5877.] [3,8814.] [R. 1,63,22.] [3,34,21.] [26.] [44,27.] [SUŚR. 2,23,8.] *tathā nityaṃ yateyātām — yathā na* [M. 9,102.] [DAŚAK.] в [BENF. Chr. 185,12.] [PRAB. 91,4.] [BHAṬṬ. 12,4.] act.: *yatato hyapi — puruṣasya — indriyāṇi pramāthīni haranti prasabhaṃ manaḥ* [BHAG. 2,60.] [7,3.] [9,14.] [MBH. 5,3313.] [HARIV. 15637.] [BHĀG. P. 1,6,21.] [4,8,32.] [23,10.] [5,18,27.] [6,2,35.] [10,30,20.] [CAURAP. 30.]
 - **EN:** g) without complement — to exert oneself, to apply all one's strength, to take care, to be on one's guard, to take precautions: *yatamānā vanaṃ rājangahanaṃ pratipedire* [MBH. 1,5877.] [3,8814.] [R. 1,63,22.] [3,34,21.] [26.] [44,27.] [SUŚR. 2,23,8.] *tathā nityaṃ yateyātām — yathā na* [M. 9,102.] [DAŚAK.] in [BENF. Chr. 185,12.] [PRAB. 91,4.] [BHAṬṬ. 12,4.] act.: *yatato hyapi — puruṣasya — indriyāṇi pramāthīni haranti prasabhaṃ manaḥ* [BHAG. 2,60.] [7,3.] [9,14.] [MBH. 5,3313.] [HARIV. 15637.] [BHĀG. P. 1,6,21.] [4,8,32.] [23,10.] [5,18,27.] [6,2,35.] [10,30,20.] [CAURAP. 30.]
-  <sub>DCS 9672 · attested</sub>
+  <sub>attested</sub>
 
 **5h-alpha)** — h) partic. α) *yatta* bedacht auf: *pṛtanāsu* so v. a. kampfbereit [MBH. 3,4010.] *raṇe* [5,7139.] [6,1738.] *saṃyuge* [R. 7,29,13.] *cittavijaye* [BHĀG. P. 7,15,30.] *prajāvivṛddhaye* [6,5,5.] *yatto (yatno* die neuere Ausg.) *'bhūdrakṣāṃ prati* [HARIV. 9118.] mit infin. [MBH. 3,14944.] zu Allem vorbereitet, der seine Maassregeln getroffen hat, auf seiner Hut seiend, sich vorsehend: *śapto 'si mama putreṇa yatto bhava mahīpate* [MBH. 1,1976.] [3,790.] [4,1282.] [1291.] [R. 1,32,6.] [7.] [2,55,18.] [93,24] ([102,26] [GORR.]). [97,13] ([106,9] [GORR.]). [BHĀG. P. 4,10,22.] [8,7,2.] [10,1.] [9,2,3.] mit pass. Bed. besorgt —, gelenkt von: *ratha* [MBH. 2,2011.] [5,1703.] *harayaḥ* [3,12111.] [WESTERGAARD] stellt dieses *yatta* zu *yam*; an der ersten und dritten Stelle würde *yata* nicht zum Metrum passen; vgl. unter — *abhisam*.
 
 - **RU:** — з) partic. α) *yatta* озабоченный чем-либо, помышляющий о: *pṛtanāsu* так v. a. готовый к бою [MBH. 3,4010.] *raṇe* [5,7139.] [6,1738.] *saṃyuge* [R. 7,29,13.] *cittavijaye* [BHĀG. P. 7,15,30.] *prajāvivṛddhaye* [6,5,5.] *yatto (yatno* более новое Ausg.) *'bhūdrakṣāṃ prati* [HARIV. 9118.] с infin. [MBH. 3,14944.] готовый ко всему, принявший меры предосторожности, находящийся начеку, остерегающийся: *śapto 'si mama putreṇa yatto bhava mahīpate* [MBH. 1,1976.] [3,790.] [4,1282.] [1291.] [R. 1,32,6.] [7.] [2,55,18.] [93,24] ([102,26] [GORR.]). [97,13] ([106,9] [GORR.]). [BHĀG. P. 4,10,22.] [8,7,2.] [10,1.] [9,2,3.] с pass. Bed. руководимый —, направляемый: *ratha* [MBH. 2,2011.] [5,1703.] *harayaḥ* [3,12111.] [WESTERGAARD] относит это *yatta* к *yam*; на первом и третьем месте *yata* не подошло бы по метру; vgl. под — *abhisam*.
 - **EN:** h) partic. α) *yatta* intent upon: *pṛtanāsu* thus v. a. ready for battle [MBH. 3,4010.] *raṇe* [5,7139.] [6,1738.] *saṃyuge* [R. 7,29,13.] *cittavijaye* [BHĀG. P. 7,15,30.] *prajāvivṛddhaye* [6,5,5.] *yatto (yatno* the later Ausg.) *'bhūdrakṣāṃ prati* [HARIV. 9118.] with infin. [MBH. 3,14944.] prepared for everything, one who has taken his measures, being on his guard, taking precautions: *śapto 'si mama putreṇa yatto bhava mahīpate* [MBH. 1,1976.] [3,790.] [4,1282.] [1291.] [R. 1,32,6.] [7.] [2,55,18.] [93,24] ([102,26] [GORR.]). [97,13] ([106,9] [GORR.]). [BHĀG. P. 4,10,22.] [8,7,2.] [10,1.] [9,2,3.] with pass. Bed. concerned with, directed by: *ratha* [MBH. 2,2011.] [5,1703.] *harayaḥ* [3,12111.] [WESTERGAARD] assigns this *yatta* to *yam*; in the first and third passage *yata* would not fit the metre; vgl. under — *abhisam*.
-  <sub>DCS 9672 · attested</sub>
+  <sub>attested</sub>
 
 ## yat
 
@@ -97,7 +97,7 @@ _PWG article — 28 sub-card(s), 189 sense(s) · RU 159/189 · EN 92/189_
 [MBH. 1,5570.] *apanetuṃ ca yatito na caiva śakito mayā*
 [6015.] impers.: *yatitaṃ vai mayā pūrvaṃ vettha brāhmaṇi tattathā . kṣemaṃ yatastato gantum* I was intent upon it
 [6128.]
-  <sub>DCS 9672 · attested</sub>
+  <sub>attested</sub>
 
 **6)** — 6) med. feindlich zusammengerathen: *ta ugrāso vṛṣaṇa ugrabāhavo nakiṣṭanūṣu yetire* greifen sich nicht unter einander selbst an [ṚV. 8,20,12.] *saṃ jānate na yatante mithaste* [7,76,5.] im Kampfe liegen [AIT. BR. 1,14.] [8,10.] *devāsurā yattā āsan* [KĀṬH. 37,11.]
 
@@ -107,7 +107,7 @@ _PWG article — 28 sub-card(s), 189 sense(s) · RU 159/189 · EN 92/189_
 [7,76,5.] to be engaged in battle
 [AIT. BR. 1,14.] [8,10.] *devāsurā yattā āsan*
 [KĀṬH. 37,11.]
-  <sub>DCS 9672 · attested</sub>
+  <sub>attested</sub>
 
 ## yat
 
@@ -119,7 +119,7 @@ _PWG article — 28 sub-card(s), 189 sense(s) · RU 159/189 · EN 92/189_
 - **RU:** — caus. *yātayati* [DHĀTUP. 33,62] (*nikāropaskārayoḥ*, по другим *nirākāra* и *kheda* st. *nikāra*).
 - **EN:** caus. *yātayati*
 [DHĀTUP. 33,62] (*nikāropaskārayoḥ*, according to others *nirākāra* and *kheda* st. *nikāra*).
-  <sub>DCS 9672 · attested</sub>
+  <sub>attested</sub>
 
 **1)** 1) verbünden, vereinigen: *dvā janā yātayannantarīyate* [ṚV. 9,86,42.] *mitro janānyātayati bruvāṇaḥ* [3,59,1.]; vgl. *yātayajjana* . med. sich verbünden: *ayātayanta kṣitayo navagvāḥ* [ṚV. 1,33,6.]
 
@@ -128,21 +128,21 @@ _PWG article — 28 sub-card(s), 189 sense(s) · RU 159/189 · EN 92/189_
 [ṚV. 9,86,42.] *mitro janānyātayati bruvāṇaḥ*
 [3,59,1.]; vgl. *yātayajjana*. med. to ally oneself: *ayātayanta kṣitayo navagvāḥ*
 [ṚV. 1,33,6.]
-  <sub>DCS 9672 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) anfügen, anbringen: *āyātane pṛṣṭhāni yātayati* [PAÑCAV. BR. 13,10,16]; vgl. *vi* caus.
 
 - **RU:** — 2) присоединять, прикреплять: *āyātane pṛṣṭhāni yātayati* [PAÑCAV. BR. 13,10,16]; vgl. *vi* caus.
 - **EN:** 2) to attach, to affix: *āyātane pṛṣṭhāni yātayati*
 [PAÑCAV. BR. 13,10,16]; vgl. *vi* caus.
-  <sub>DCS 9672 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) Jmd (gen.) Etwas (acc.) an's Herz legen: *madīyeṣveva lekheṣu tatrabhavatastvāmuddiśya sabhājanāni yātayiṣyāmaḥ* [MĀLAV. 74,10.]
 
 - **RU:** — 3) поручать кому-либо (gen.) что-либо (acc.) принять близко к сердцу: *madīyeṣveva lekheṣu tatrabhavatastvāmuddiśya sabhājanāni yātayiṣyāmaḥ* [MĀLAV. 74,10.]
 - **EN:** 3) to impress something (acc.) upon someone's (gen.) heart: *madīyeṣveva lekheṣu tatrabhavatastvāmuddiśya sabhājanāni yātayiṣyāmaḥ*
 [MĀLAV. 74,10.]
-  <sub>DCS 9672 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) vergelten (lohnen oder strafen): *evā hi tvāmṛtuthā yātayantaṃ maghā viprebhyo dadataṃ śṛṇomi* [ṚV. 5,32,12.] *janāya yātayanniṣaḥ . vṛṣṭiṃ divaḥ pari * * srava* [9,39,2.] *kadā ṛtacidyātayāse* [5,3,9.] *uṣa ṛṇeva yātaya* [10,127,7.]; vgl. *ṛṇayāt, yo 'pagurātai śatena yātayāt (= kleśayet* Comm.) [TS. 2,6,10,2.] *kilbiṣaṃ nu mā yātayanniti* damit man es nicht als Fehler rüge [AIT. BR. 1,13.] *yo na yātayate vairam* vergelten, erwiedern [MBH. 3,1383.] *ayātayitvā vairāṇi* [1382.] *vairaṃ te yātitaṃ* (*pātitaṃ* [ed. Bomb.]) *mayā* [13,567.] *yatrābalā balinaṃ yātayanti* [4858.] med. den Lohn für Etwas empfangen: *tatra tvāhaṃ hastinaṃ yātayiṣye* so v. a. dort werde ich dir den Elephanten abtreten [4856.] [4858.] [4860] u. s. w. *tatrāhaṃ te bhavane bhūritejaso rājannimaṃ hastinaṃ yātayiṣye* [4880.]
 
@@ -162,21 +162,21 @@ _PWG article — 28 sub-card(s), 189 sense(s) · RU 159/189 · EN 92/189_
 [4858.] med. to receive recompense for something: *tatra tvāhaṃ hastinaṃ yātayiṣye* thus v. a. there I shall cede the elephant to you
 [4856.] [4858.] [4860] u. s. w. *tatrāhaṃ te bhavane bhūritejaso rājannimaṃ hastinaṃ yātayiṣye*
 [4880.]
-  <sub>DCS 9672 · attested</sub>
+  <sub>attested</sub>
 
 **5)** — 5) sich bemühen lassen (nach [SĀY.]) [AIT. BR. 1,14.] —
 
 - **RU:** — 5) заставлять прилагать усилия (согласно [SĀY.]) [AIT. BR. 1,14.] —
 - **EN:** 5) to cause to exert oneself (according to
 [SĀY.]) [AIT. BR. 1,14.] —
-  <sub>DCS 9672 · attested</sub>
+  <sub>attested</sub>
 
 **6)** — 6) kämpfen lassen [TBR. 1,5,2,4], wo mit dem Comm. *yātayet* (= *prayatnaṃ kārayet)* st. *pātayet* zu lesen ist.
 
 - **RU:** — 6) заставлять сражаться [TBR. 1,5,2,4], где с Comm. *yātayet* (= *prayatnaṃ kārayet)* st. *pātayet* следует читать.
 - **EN:** 6) to cause to fight
 [TBR. 1,5,2,4], where with the Comm. *yātayet* (= *prayatnaṃ kārayet)* st. *pātayet* is to be read.
-  <sub>DCS 9672 · attested</sub>
+  <sub>attested</sub>
 
 **7)** — 7) Jmd peinigen, quälen (vgl. *yātanā*), act. [BHĀG. P. 5,26,31. fg.] [6,1,22.] med.: *ātmānaṃ yātayate* [5,26,18.] *yātyamāna* pass. [8.]
 
@@ -185,7 +185,7 @@ _PWG article — 28 sub-card(s), 189 sense(s) · RU 159/189 · EN 92/189_
 [BHĀG. P. 5,26,31. fg.] [6,1,22.] med.: *ātmānaṃ yātayate*
 [5,26,18.] *yātyamāna* pass.
 [8.]
-  <sub>DCS 9672 · attested</sub>
+  <sub>attested</sub>
 
 ## yat
 
@@ -197,7 +197,7 @@ _PWG article — 28 sub-card(s), 189 sense(s) · RU 159/189 · EN 92/189_
 - **RU:** — *adhi* нанизывать в ряд: *vakṣassu rukmā adhi yetire śubhe* [ṚV. 1,64,4.] — caus. med. соединяться с: *adha bhramasta urviyā vi bhāti yātayamāno adhi sānu pṛśneḥ* достигающий [ṚV. 6,6,4.]
 - **EN:** *adhi* to string in a row: *vakṣassu rukmā adhi yetire śubhe*
 [ṚV. 1,64,4.]
-  <sub>DCS 9672 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — caus. med. sich vereinigen mit: *adha bhramasta urviyā vi bhāti yātayamāno adhi sānu pṛśneḥ* erreichend
 [ṚV. 6,6,4.]
@@ -214,7 +214,7 @@ _PWG article — 28 sub-card(s), 189 sense(s) · RU 159/189 · EN 92/189_
 - **RU:** — *anu* med. устремляться, достигать до (acc.): *anu janānyatate pañca dhīraḥ* [ṚV. 9,92,3.]
 - **EN:** *anu* med. to strive towards, to reach to (acc.): *anu janānyatate pañca dhīraḥ*
 [ṚV. 9,92,3.]
-  <sub>DCS 9672 · attested</sub>
+  <sub>attested</sub>
 
 ## āyat
 
@@ -233,7 +233,7 @@ _PWG article — 28 sub-card(s), 189 sense(s) · RU 159/189 · EN 92/189_
 [ṚV. 3,16,4.] partic.: *svāyāṃ diśyāyattam*
 [ŚAT. BR. 9,3,4,13.] *antamāyattā*
 [14,4,3,10.] The partic. *āyatta* has moreover the following Bedd.
-  <sub>DCS 140 · attested</sub>
+  <sub>attested</sub>
 
 **PPP-1)** 1) abhängig von, beruhend auf, zu Jmdes Verfügung stehend (die Ergänzung im loc., gen. oder im comp. vorangehend) [AK. 3,1,16.] *amātye daṇḍa āyatto daṇḍe vainayikī kriyā . nṛpatau koṣarāṣṭre ca dūte saṃdhiviparyayau ..* [M. 7,65.] [205.] [Spr. 5274.] [MBH. 14,2084.] [2351.] [HARIV. 5021.] [R. 1,53,14. fg.] ([54,15. fg.] [GORR.]). [2,45,28.] [MEGH. 16.] [KATHĀS. 46,180.] *tavāyattāḥ prajāścemāḥ* [R. GORR. 2,2,26.] *prāvṛṭkālasya cānnamāyattam* [VARĀH. BṚH. S. 21,1.] [KATHĀS. 46,19.] [MĀRK. P. 72,21.] [126,3.] [4.] [7.] [HIT. 84,5.] *vidadhe tasyāyattaṃ nijaṃ dhanam* stellte es zu seiner Verfügung [RĀJA-TAR. 5,83.] *cakṣurāyattā* [MAITRYUP. 6,6.] [R. 1,4,29.] [5,86,12.] [ŚĀK. 92.] [Spr. 1431.] [2263.] [5384.] [VṚDDHACĀṆ. 13,14.] [KĀM. NĪTIS. 5,77. 18,20] (*mitrāyatte* zu lesen) [DAŚAR. 2,40.] [MĀRK. P. 126,5.] [LA. (II) 90,13.] [KATHĀS. 18,136.] [20,151.] [52,211.] [53,7.] [RĀJA-TAR. 4,491.] [Ind. St. 2,305,1.] [PAÑCAT. 85,17.] [HIT. 52,9.] [130,3.] [HIT. ed. JOHNS. 1086.] [DAŚAK.] in [BENF. Chr. 197,19.] [H. 918.] [VOP. 7,85.] *madekāyattatāṃ gatā* [KATHĀS. 32,171.] *īśvarecchāyattatva* [SARVADARŚANAS. 79,14.] ohne Ergänzung [R. 7,38,9.] [DAŚAR. 2,22.] *āyattīkṛta* [RĀJA-TAR. 4,680.] Vgl. *anāyatta, parāyatta, svāyatta*.
 
@@ -266,7 +266,7 @@ _PWG article — 28 sub-card(s), 189 sense(s) · RU 159/189 · EN 92/189_
 [R. 7,38,9.]
 [DAŚAR. 2,22.] *āyattīkṛta*
 [RĀJA-TAR. 4,680.] Vgl. *anāyatta, parāyatta, svāyatta*.
-  <sub>DCS 140 · attested</sub>
+  <sub>attested</sub>
 
 **PPP-2)** — 2) sich anstrengend, sich bemühend: *paramāyattāḥ* [BHĀG. P. 8,7,5.] auf seiner Hut seiend, sich vorsehend [R. 7,19,10.] *dhanurāyattamuttamam* so v. a. bereit stehend [109,7.]
 
@@ -275,7 +275,7 @@ _PWG article — 28 sub-card(s), 189 sense(s) · RU 159/189 · EN 92/189_
 [BHĀG. P. 8,7,5.] being on one's guard, being cautious
 [R. 7,19,10.] *dhanurāyattamuttamam* thus v. a. standing ready
 [109,7.]
-  <sub>DCS 140 · attested</sub>
+  <sub>attested</sub>
 
 **caus)** — Vgl. *āyatana, āyatti* . — caus. act. anlangen machen in: *svarge loke* [ŚAT. BR. 11,5,2,10.] [AIT. BR. 2,34.] irrig als Erklärung von *yātayati* [NIR. 10,22.] = *karmasu pravartayati* [DURGA.]
 
@@ -285,7 +285,7 @@ _PWG article — 28 sub-card(s), 189 sense(s) · RU 159/189 · EN 92/189_
 [AIT. BR. 2,34.] erroneously as an explanation of *yātayati*
 [NIR. 10,22.] = *karmasu pravartayati*
 [DURGA.]
-  <sub>DCS 140 · attested</sub>
+  <sub>attested</sub>
 
 ## yat
 
@@ -297,7 +297,7 @@ _PWG article — 28 sub-card(s), 189 sense(s) · RU 159/189 · EN 92/189_
 - **RU:** — *atyā* med. очень (*ati* _adv._) стараться ради (loc.), быть весьма озабоченным чем-либо [DAŚAK. 64,7.]
 - **EN:** *atyā* med. to endeavour greatly (*ati* _adv._) after (loc.), to be very intent upon
 [DAŚAK. 64,7.]
-  <sub>DCS 9672 · attested</sub>
+  <sub>attested</sub>
 
 ## yat
 
@@ -315,7 +315,7 @@ in or at; with loc. or acc.: *aśve vai sarvā devatā anvāyattāḥ*
 [12,7,2,19.] [14,5,2,3.] *darvyaṃ pitaro 'nvāyattāḥ*
 [6,8,9.] [CHĀND. UP. 1,10,9. fgg. 11,4. fgg. 2,9,2.]
 *etā eva* (*diśaḥ*) *hotrakā anvāyattāḥ*
-  <sub>DCS 9672 · attested</sub>
+  <sub>attested</sub>
 
 **2)** [ĀŚV. ŚR. 10,10,10.] — caus. anreihen, folgen lassen; in Verbindung bringen, sich betheiligen lassen: mit loc. oder acc.: *devatā evāsminnanvāyātayati* [TBR. 3,8,7,3.] [ŚAT. BR. 13,1,2,9.] *chandāṃsi yajñamanvāyātayati* [3,4,1,23.] [ŚĀṄKH. BR. 12,7. 24,5.] [ĀŚV. ŚR. 4,11,5.] *puroLāśeṣu havīṃṣyanvāyātayeyuḥ* [9,2,22.] [ŚĀṄKH. ŚR. 12,9,8. 13,20,9. 14,3,1. 5,5.]
 
@@ -325,7 +325,7 @@ in or at; with loc. or acc.: *aśve vai sarvā devatā anvāyattāḥ*
 [ŚAT. BR. 13,1,2,9.] *chandāṃsi yajñamanvāyātayati*
 [3,4,1,23.] [ŚĀṄKH. BR. 12,7. 24,5.] [ĀŚV. ŚR. 4,11,5.] *puroLāśeṣu havīṃṣyanvāyātayeyuḥ*
 [9,2,22.] [ŚĀṄKH. ŚR. 12,9,8. 13,20,9. 14,3,1. 5,5.]
-  <sub>DCS 9672 · attested</sub>
+  <sub>attested</sub>
 
 ## yat
 
@@ -338,7 +338,7 @@ in or at; with loc. or acc.: *aśve vai sarvā devatā anvāyattāḥ*
 - **EN:** *samā*, partic. *˚yatta* resting upon, dependent on (loc.): *āsāṃ prāṇāḥ samāyattā mama cātraikaputrake*
 [MBH. 3,10484.] [7,5458.]
 [R. 7,35,30.]
-  <sub>DCS 9672 · attested</sub>
+  <sub>attested</sub>
 
 ## yat
 
@@ -350,7 +350,7 @@ in or at; with loc. or acc.: *aśve vai sarvā devatā anvāyattāḥ*
 - **RU:** — *upa* med. касаться, относиться к: *idaṃ nvimaṃ sa pāpmā nopayatate* [ŚAT. BR. 8,5,1,7.]
 - **EN:** *upa* med. to concern, to pertain to: *idaṃ nvimaṃ sa pāpmā nopayatate*
 [ŚAT. BR. 8,5,1,7.]
-  <sub>DCS 9672 · attested</sub>
+  <sub>attested</sub>
 
 ## ni+yat
 
@@ -364,7 +364,7 @@ in or at; with loc. or acc.: *aśve vai sarvā devatā anvāyattāḥ*
 [ṚV. 1,186,11.]
 - **EN:** — *ni* med. to arrive at, reach: *ni yā deveṣu yatate vasūyuḥ*
 [ṚV. 1,186,11.]
-  <sub>DCS 2 · attested</sub>
+  <sub>attested</sub>
 
 ## nis+yat
 
@@ -399,7 +399,7 @@ in or at; with loc. or acc.: *aśve vai sarvā devatā anvāyattāḥ*
 [HARIV. 11245.] *yamo vaivasvatasya niryātayati duṣkṛtam . hṛdi sthitaḥ karmasākṣī kṣetrajño yasya tuṣyati ..*
 [Spr. 2404.] to fetch out, bring forth: *gṛhāt*
 [R. 6,96,5.]
-  <sub>DCS 9672 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) herausgeben, schenken, ausliefern, zurückgeben: *nivṛtteṣu ca megheṣu niryātya jagato jalam*
 [HARIV. 4013.] *niryātya mahiṣaṃ tasya*
@@ -429,7 +429,7 @@ in or at; with loc. or acc.: *aśve vai sarvā devatā anvāyattāḥ*
 [R. GORR. 1,71,23.] [2,117,7.] [5,37,8.] [66,24.] [26.] [89,56.] [6,16,69.] [94,21.] [7,30,26.] [98,6.] [8.] med. [5,76,18.] [7,59,10.] [MṚCCH. 25,9.] *vairam* to return an enmity, take revenge: *rāmalakṣmaṇayorvairaṃ svayaṃ niryātayāmi vai*
 [R. 6,33,4.] [3,60,33.]
 [MBH. 2,2660.]
-  <sub>DCS 9672 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) verbringen, verleben: *caturdaśa samā vīra vane niryātitāstvayā*
 [R. 6,104,26.]
@@ -438,13 +438,13 @@ in or at; with loc. or acc.: *aśve vai sarvā devatā anvāyattāḥ*
 [R. 6,104,26.]
 - **EN:** — 3) to pass, spend (time): *caturdaśa samā vīra vane niryātitāstvayā*
 [R. 6,104,26.]
-  <sub>DCS 9672 · attested</sub>
+  <sub>attested</sub>
 
 **deriv)** — Vgl. *niryātaka* fg. und *niryātya* .
 
 - **RU:** — Vgl. *niryātaka* fg. und *niryātya* .
 - **EN:** — Vgl. *niryātaka* fg. and *niryātya* .
-  <sub>DCS 9672 · lexicographic</sub>
+  <sub>lexicographic</sub>
 
 ## pratinis+yat
 
@@ -457,13 +457,13 @@ in or at; with loc. or acc.: *aśve vai sarvā devatā anvāyattāḥ*
 - **RU:** — *pratinis* caus. снова выдавать, возвращать обратно
 [MBH. 3,13183.]
 - **EN:** — *pratinis* caus. to deliver up again, give back: [MBH. 3,13183.]
-  <sub>DCS 9672 · attested</sub>
+  <sub>attested</sub>
 
 **deriv)** — Vgl. *pratiniryātana* .
 
 - **RU:** — Vgl. *pratiniryātana* .
 - **EN:** — Vgl. *pratiniryātana* .
-  <sub>DCS 9672 · lexicographic</sub>
+  <sub>lexicographic</sub>
 
 ## pari+yat
 
@@ -485,7 +485,7 @@ in or at; with loc. or acc.: *aśve vai sarvā devatā anvāyattāḥ*
 [ṚV. 7,83,8.]
 [AIT. BR. 2,31.] *baddho vā pariyatto vendraṃ trātāramupadhāvati*
 [TS. 2,2,7,5.]
-  <sub>DCS 6 · attested</sub>
+  <sub>attested</sub>
 
 ## pra+yat
 
@@ -528,13 +528,13 @@ in or at; with loc. or acc.: *aśve vai sarvā devatā anvāyattāḥ*
 [SUŚR. 2,32,18.]
 [ŚĀK. 18,14.] *prayattamanvicchati śūlinaṃ manaḥ* striving, wholly intent upon the matter
 [Spr. 4591.]
-  <sub>DCS 127 · attested</sub>
+  <sub>attested</sub>
 
 **deriv)** — Vgl. *prayatitavya* fgg.
 
 - **RU:** — Vgl. *prayatitavya* fgg.
 - **EN:** — Vgl. *prayatitavya* fgg.
-  <sub>DCS 127 · lexicographic</sub>
+  <sub>lexicographic</sub>
 
 **1b)** [TBR. 2,8,2,2.] sich bestreben, sich bemühen um, bedacht sein auf, sich befleissigen; med. und act. (aus metrischen Rücksichten) mit loc.
 [ĀŚV. ŚR. 4,12,3.]
@@ -597,14 +597,14 @@ in or at; with loc. or acc.: *aśve vai sarvā devatā anvāyattāḥ*
 [R. 3,35,17.] *prayatiṣye tathā rājanyathā śreyo bhaviṣyati*
 [MBH. 1,2085.]
 [SUŚR. 2,32,18.]
-  <sub>DCS 127 · attested</sub>
+  <sub>attested</sub>
 
 **1c)** [ŚĀK. 18,14.] *prayattamanvicchati śūlinaṃ manaḥ* sich bestrebend, ganz bei der Sache seiend
 [Spr. 4591.]
 
 - **RU:** [ŚĀK. 18,14.] *prayattamanvicchati śūlinaṃ manaḥ* стремящийся, всецело поглощённый делом
 [Spr. 4591.]
-  <sub>DCS 127 · attested</sub>
+  <sub>attested</sub>
 
 ## saṃpra+yat
 
@@ -618,7 +618,7 @@ in or at; with loc. or acc.: *aśve vai sarvā devatā anvāyattāḥ*
 [KĀM. NĪTIS. 10,41.]
 - **EN:** — *saṃpra* med. to make effort for, be intent upon: *siddhaye*
 [KĀM. NĪTIS. 10,41.]
-  <sub>DCS 9672 · attested</sub>
+  <sub>attested</sub>
 
 ## prati+yat
 
@@ -639,7 +639,7 @@ in or at; with loc. or acc.: *aśve vai sarvā devatā anvāyattāḥ*
 [ŚAT. BR. 9,2,3,3.] *āśramapīḍā yathā na bhaviṣyati tathā pratiyatiṣyāmahe*
 (v. l. for *prayati˚*)
 [ŚĀK. 18,14.]
-  <sub>DCS 1 · attested</sub>
+  <sub>attested</sub>
 
 **2)** [ŚĀK. 18,14.] — caus. zurückgeben, erwiedern: *vairāṇi, vairam* so v. a. Rache nehmen
 [MBH. 3,14728.] [9,3256.]
@@ -648,13 +648,13 @@ in or at; with loc. or acc.: *aśve vai sarvā devatā anvāyattāḥ*
 [MBH. 3,14728.] [9,3256.]
 - **EN:** — caus. to give back, return, requite: *vairāṇi, vairam*; so v. a. to take revenge
 [MBH. 3,14728.] [9,3256.]
-  <sub>DCS 1 · attested</sub>
+  <sub>attested</sub>
 
 **deriv)** — Vgl. *pratiyātana* .
 
 - **RU:** — Vgl. *pratiyātana* .
 - **EN:** — Vgl. *pratiyātana* .
-  <sub>DCS 1 · lexicographic</sub>
+  <sub>lexicographic</sub>
 
 ## vi+yat
 
@@ -673,7 +673,7 @@ in or at; with loc. or acc.: *aśve vai sarvā devatā anvāyattāḥ*
 - **EN:** — caus.
  1) to string together, attach, fit in: *trivṛtameva yajñamukhe viyātayati*
 [TS. 5,1,1,3.] [3,2.] [3.]
-  <sub>DCS 2 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) büssen: *tadātmanā prajayā piśācā vi yātayantām*
 [AV. 5,29,6.]
@@ -682,7 +682,7 @@ in or at; with loc. or acc.: *aśve vai sarvā devatā anvāyattāḥ*
 [AV. 5,29,6.]
 - **EN:** — 2) to atone for, expiate: *tadātmanā prajayā piśācā vi yātayantām*
 [AV. 5,29,6.]
-  <sub>DCS 2 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) peinigen, quälen: *taṃ yamaḥ pāpakarmāṇaṃ viyātayati*
 [Spr. 2405.]
@@ -691,14 +691,14 @@ in or at; with loc. or acc.: *aśve vai sarvā devatā anvāyattāḥ*
 [Spr. 2405.]
 - **EN:** — 3) to torment, afflict: *taṃ yamaḥ pāpakarmāṇaṃ viyātayati*
 [Spr. 2405.]
-  <sub>DCS 2 · attested</sub>
+  <sub>attested</sub>
 
 **introductory-gloss)** — *vi* med. etwa in verschiedene Reihen bringen
 [AV. 18,1,17.] — caus.
 
 - **RU:** — *vi* med. приблизительно располагать в различные ряды
 [AV. 18,1,17.] — caus.
-  <sub>DCS 2 · attested</sub>
+  <sub>attested</sub>
 
 ## adhi+vi+yat
 
@@ -712,7 +712,7 @@ in or at; with loc. or acc.: *aśve vai sarvā devatā anvāyattāḥ*
 [KĀṬH. 24,8. 26,10. 29,9. 37,16.]
 - **EN:** — *adhivi* caus. to string together, attach, fit in:
 [KĀṬH. 24,8. 26,10. 29,9. 37,16.]
-  <sub>DCS 9672 · attested</sub>
+  <sub>attested</sub>
 
 ## sam+yat
 
@@ -729,7 +729,7 @@ in or at; with loc. or acc.: *aśve vai sarvā devatā anvāyattāḥ*
 - **EN:** — *sam*
  1) act. to unite, join together: *saṃ śrudhīyataścidyatatho mahitvā*
 [ṚV. 6,67,3.]
-  <sub>DCS 9672 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) med. sich aneinander reihen: *saṃ śūraṇāso divyāso atyāḥ . haṃsā iva śreṇiśo yatante*
 [ṚV. 1,163,10.] *saṃ dānucitrā uṣaso yatantam*
@@ -741,7 +741,7 @@ in or at; with loc. or acc.: *aśve vai sarvā devatā anvāyattāḥ*
 - **EN:** — 2) med. to range oneself alongside one another, fall into line: *saṃ śūraṇāso divyāso atyāḥ . haṃsā iva śreṇiśo yatante*
 [ṚV. 1,163,10.] *saṃ dānucitrā uṣaso yatantam*
 [5,59,8.]
-  <sub>DCS 9672 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) med. sich vereinigen, zusammentreffen, sich verbinden mit: *saṃ bhānunā yatate sūryasya*
 [ṚV. 5,37,1.] *saṃ raśmibhiryatate darśato rathaḥ*
@@ -753,7 +753,7 @@ in or at; with loc. or acc.: *aśve vai sarvā devatā anvāyattāḥ*
 - **EN:** — 3) med. to unite, come together, associate with: *saṃ bhānunā yatate sūryasya*
 [ṚV. 5,37,1.] *saṃ raśmibhiryatate darśato rathaḥ*
 [9,111,3.]
-  <sub>DCS 9672 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) med. an einander gerathen, in Streit kommen: *saṃ yanmahī mithatī spardhamāne tanūrucā śūrasātā yataite*
 [ṚV. 7,93,5.]
@@ -789,7 +789,7 @@ in or at; with loc. or acc.: *aśve vai sarvā devatā anvāyattāḥ*
 [CHĀND. UP. 1,2,1.] *saṃgrāmaṃ saṃyatiṣyamāṇaḥ*
 [AIT. BR. 8,10.] *saṃgrāme saṃyatte*
 [TS. 2,2,8,2.]
-  <sub>DCS 9672 · attested</sub>
+  <sub>attested</sub>
 
 **5)** — 5) *saṃyatta* vorbereitet, ganz bei der Sache seiend, der seine Maassregeln getroffen hat, auf der Hut seiend, sich vorsehend: *samare*
 [MBH. 7,5179.] *tathā yudhyeta saṃyatto*
@@ -819,13 +819,13 @@ in or at; with loc. or acc.: *aśve vai sarvā devatā anvāyattāḥ*
 [HARIV. 15389] (*susaṃpanna* the later Ausg.).
 [BHĀG. P. 8,7,2] (according to the reading of the [ed. Bomb.]). *a˚*
 [6,28.]
-  <sub>DCS 9672 · attested</sub>
+  <sub>attested</sub>
 
 **deriv)** — Vgl. *asaṃyatta* .
 
 - **RU:** — Vgl. *asaṃyatta* .
 - **EN:** — Vgl. *asaṃyatta* .
-  <sub>DCS 9672 · lexicographic</sub>
+  <sub>lexicographic</sub>
 
 ## aBisam+yat
 
@@ -845,7 +845,7 @@ in or at; with loc. or acc.: *aśve vai sarvā devatā anvāyattāḥ*
 [MBH. 7,5173.] *abhisaṃpanna* [ed. Bomb.]; *˚saṃyata* would not suit the metre; vgl. simpl.
  5) h)
  α) at the end.
-  <sub>DCS 9672 · attested</sub>
+  <sub>attested</sub>
 
 ## pratisam+yat
 
@@ -861,7 +861,7 @@ in or at; with loc. or acc.: *aśve vai sarvā devatā anvāyattāḥ*
 [MBH. 7,3534.]
 - **EN:** — *pratisam* med. to combat, fight against: [ŚAT. BR. 11,4,1,3.] partic. *˚yatta* fully prepared, — equipped
 [MBH. 7,3534.]
-  <sub>DCS 9672 · attested</sub>
+  <sub>attested</sub>
 
 ## yat
 
@@ -875,7 +875,7 @@ in or at; with loc. or acc.: *aśve vai sarvā devatā anvāyattāḥ*
 — *anvā* vgl. *anvāyātya* выше.
 - **EN:** *yat*¦ to be added at the end: vgl. *ayatant* .
 — *anvā* vgl. *anvāyātya* above.
-  <sub>DCS 9672 · attested</sub>
+  <sub>attested</sub>
 
 ## yat
 
@@ -887,47 +887,47 @@ in or at; with loc. or acc.: *aśve vai sarvā devatā anvāyattāḥ*
 
 - **RU:** √*yat*¦, *yatati*, *˚te*
 — 1〉 Act. приводить в порядок (строй и ряд), присоединять, прилагать одно к другому, связывать.
-  <sub>DCS 9672 · attested</sub>
+  <sub>attested</sub>
 
 **PW_root_2)** — 2〉 Act. Schritt halten, in einer Reihe —, auf einer Stufe stehen —, wetteifern mit (Instr.).
 
 - **RU:** — 2〉 Act. идти в ногу, стоять в одном ряду —, на одном уровне —, соперничать с (Instr.).
-  <sub>DCS 9672 · attested</sub>
+  <sub>attested</sub>
 
 **PW_root_3)** — 3〉 Med. sich anschliessen, — anreihen, in Reihen ziehen.
 
 - **RU:** — 3〉 Med. присоединяться, выстраиваться в ряд, двигаться рядами.
-  <sub>DCS 9672 · attested</sub>
+  <sub>attested</sub>
 
 **PW_root_4)** — 4〉 Med. sich verbinden, — vereinigen, zusammentreffen mit (Instr.). *kratubhiḥ* so v. a. sich in Jmds (Gen.) Willen fügen.
 
 - **RU:** — 4〉 Med. соединяться, объединяться, встречаться с (Instr.). *kratubhiḥ* так v. a. подчиняться чьей-либо (Gen.) воле.
-  <sub>DCS 9672 · attested</sub>
+  <sub>attested</sub>
 
 **PW_root_5)** — 5〉 Med. feindlich zusammengerathen, im Kampfe liegen.
 
 - **RU:** — 5〉 Med. враждебно столкнуться, находиться в бою.
-  <sub>DCS 9672 · attested</sub>
+  <sub>attested</sub>
 
 **PW_root_6)** — 6〉 Med. sich zu vereinigen suchen mit (Loc.), zu erreichen suchen (einen Ort). zustreben, auf Etwas zuhalten.
 
 - **RU:** — 6〉 Med. стремиться соединиться с (Loc.), стремиться достичь (какого-либо места). устремляться к чему-либо.
-  <sub>DCS 9672 · attested</sub>
+  <sub>attested</sub>
 
 **PW_root_7)** — 7〉 Med. (metrisch auch Act.) streben nach, sich bemühen um, bedacht sein auf, sich einer Sache ganz hingeben; die Ergänzung im Loc., Dat., Acc., Gen. (einmal), *˚arthe*, *˚arthāya* (auch mit Gen.), *˚artham*, *˚hetos*, im Acc. mit *prati* oder ein Infin. ([GAUT.]) ohne Ergänzung sich anstrengen, alle seine Kräfte anwenden, Sorge tragen, auf seiner Hut sein, sich vorsehen.
 
 - **RU:** — 7〉 Med. (метрически также Act.) стремиться к, прилагать усилия к, быть озабоченным, всецело отдаваться чему-либо; дополнение в Loc., Dat., Acc., Gen. (единожды), *˚arthe*, *˚arthāya* (также с Gen.), *˚artham*, *˚hetos*, в Acc. с *prati* или Infin. ([GAUT.]) без дополнения напрягать силы, прилагать все усилия, проявлять заботу, быть начеку, остерегаться.
-  <sub>DCS 9672 · attested</sub>
+  <sub>attested</sub>
 
 **PW_root_8)** — 8〉 Med. sich gefasst machen auf (Acc.).
 
 - **RU:** — 8〉 Med. готовиться к (Acc.).
-  <sub>DCS 9672 · attested</sub>
+  <sub>attested</sub>
 
 **PW_root_9)** — 9〉 Partic.
 
 - **RU:** — 9〉 Partic.
-  <sub>DCS 9672 · attested</sub>
+  <sub>attested</sub>
 
 **PW_root_9a)** — a〉 *yatta*
 — α〉 Pl. im Kampfe liegend.
@@ -938,77 +938,77 @@ in or at; with loc. or acc.: *aśve vai sarvā devatā anvāyattāḥ*
 — α〉 Pl. находящийся в бою.
 — β〉 озабоченный, готовый к; дополнение в Loc., Dat. или Acc. с *prati*. Без дополнения готовый ко всему, принявший меры, находящийся начеку, остерегающийся.
 — γ〉 управляемый (колесница, кони).
-  <sub>DCS 9672 · attested</sub>
+  <sub>attested</sub>
 
 **PW_root_9b)** — b〉 *yatita* mit einem Infin. derjenige, den zu — man sich bemüht hat. _n._ impers. mit Infin. man (Instr.) ist darauf bedacht gewesen.
 
 - **RU:** — b〉 *yatita* с Infin. тот, о ком заботились. _n._ impers. с Infin. было проявлено усердие (Instr.).
-  <sub>DCS 9672 · attested</sub>
+  <sub>attested</sub>
 
 **PW_causative_intro)** — Caus. *yātayati*, *˚te*
 
 - **RU:** — Caus. *yātayati*, *˚te*
-  <sub>DCS 9672 · attested</sub>
+  <sub>attested</sub>
 
 **PW_caus_1)** — 1〉 Act. in Ordnung stellen, vereinigen; Med. sich verbünden.
 
 - **RU:** — 1〉 Act. приводить в порядок, соединять; Med. вступать в союз.
-  <sub>DCS 9672 · attested</sub>
+  <sub>attested</sub>
 
 **PW_caus_2)** — 2〉 Act. anfügen, anbringen.
 
 - **RU:** — 2〉 Act. прилагать, прикреплять.
-  <sub>DCS 9672 · attested</sub>
+  <sub>attested</sub>
 
 **PW_caus_3)** — 3〉 Act. kämpfen lassen [AIT. BR. 1,14].
 
 - **RU:** — 3〉 Act. заставлять сражаться [AIT. BR. 1,14].
-  <sub>DCS 9672 · attested</sub>
+  <sub>attested</sub>
 
 **PW_caus_4)** — 4〉 Act. Jmd (Gen.) Etwas (Acc.) anʼs Herz legen.
 
 - **RU:** — 4〉 Act. внушать кому-либо (Gen.) что-либо (Acc.).
-  <sub>DCS 9672 · attested</sub>
+  <sub>attested</sub>
 
 **PW_caus_5)** — 5〉 Act. Med. (ausnahmsweise) ausgleichen, vergelten (lohnen oder strafen), erwidern (eine Feindseligkeit). *kilbiṣam* als Fehler rügen.
 
 - **RU:** — 5〉 Act. Med. (в виде исключения) уравнивать, воздавать (вознаграждать или наказывать), отвечать (на враждебность). *kilbiṣam* порицать как ошибку.
-  <sub>DCS 9672 · attested</sub>
+  <sub>attested</sub>
 
 **PW_caus_6)** — 6〉 Med. Jmd (Acc. oder Gen.) Etwas (Acc.) abtreten.
 
 - **RU:** — 6〉 Med. уступать кому-либо (Acc. или Gen.) что-либо (Acc.).
-  <sub>DCS 9672 · attested</sub>
+  <sub>attested</sub>
 
 **PW_caus_7)** — 7〉 Act. Med. Jmd peinigen, quälen. — Nach dem [DHĀTUP.] *nikāre* (*nirākāre*, *khede*) und *upaskāre* *yātiṣye* [MĀRK. P. 121,39] fehlerhaft für *yatiṣye*.
 
 - **RU:** — 7〉 Act. Med. мучить, терзать кого-либо. — По [DHĀTUP.] *nikāre* (*nirākāre*, *khede*) и *upaskāre* *yātiṣye* [MĀRK. P. 121,39] ошибочно вместо *yatiṣye*.
-  <sub>DCS 9672 · attested</sub>
+  <sub>attested</sub>
 
 **PW_alam)** — Mit *adhi* Med. sich einen Schmuck (Acc.) anlegen auf (Loc.).
 
 - **RU:** — С *adhi* Med. надевать на себя украшение (Acc.) на (Loc.).
-  <sub>DCS 9672 · attested</sub>
+  <sub>attested</sub>
 
 **PW_adhi)** — Caus. Med. einem Ort (Acc.) erreichen.
 
 - **RU:** — Caus. Med. достигать какого-либо места (Acc.).
-  <sub>DCS 9672 · attested</sub>
+  <sub>attested</sub>
 
 **PW_abhi)** — Mit *anu* Med. zu —, hinstreben zu (Acc.).
 
 - **RU:** — С *anu* Med. стремиться к (Acc.).
-  <sub>DCS 9672 · attested</sub>
+  <sub>attested</sub>
 
 **PW_ava_intro)** — Mit *ā*
 
 - **RU:** — С *ā*
-  <sub>DCS 9672 · attested</sub>
+  <sub>attested</sub>
 
 **PW_ava_1)** — 1〉 anlangen, eintreten in, Fuss fassen, wohnen, bleiben, — in oder bei (Loc.), hinstreben zu (Dat.).
 
 - **RU:** — 1〉 прибывать, вступать в, закрепляться, жить, оставаться — в или при (Loc.), стремиться к (Dat.).
-  <sub>DCS 9672 · attested</sub>
+  <sub>attested</sub>
 
 **PW_ava_2)** — 2〉 *āyatta*
 — a〉 sich befindend in (Loc. oder Acc.)
@@ -1023,7 +1023,7 @@ in or at; with loc. or acc.: *aśve vai sarvā devatā anvāyattāḥ*
 — c〉 напрягающий силы, прилагающий усилия.
 — d〉 находящийся начеку, остерегающийся.
 — e〉 стоящий наготове.
-  <sub>DCS 9672 · attested</sub>
+  <sub>attested</sub>
 
 **PW_ava_caus)** — Caus. Act.
 — 1〉 anlangen machen in (Loc.).
@@ -1032,209 +1032,209 @@ in or at; with loc. or acc.: *aśve vai sarvā devatā anvāyattāḥ*
 - **RU:** — Caus. Act.
 — 1〉 доставлять в (Loc.).
 — 2〉 как объяснение *yātayati* по Comm. = *karmasu pravartayati*.
-  <sub>DCS 9672 · attested</sub>
+  <sub>attested</sub>
 
 **PW_pra_atyanta)** — Mit *atyā* Med. sich sehr bemühen um, sehr bedacht sein auf (Loc.)
 
 - **RU:** — С *atyā* Med. весьма усердно стремиться к, быть весьма озабоченным (Loc.)
-  <sub>DCS 9672 · attested</sub>
+  <sub>attested</sub>
 
 **PW_anuyat)** — Mit *anvā*, *anvāyatta* betheiligt bei, verbunden mit, in Beziehung stehend zu, abhängig von, beruhend —, sich erstreckend auf, vorhanden in oder bei; mit Loc. oder Acc.
 
 - **RU:** — С *anvā*, *anvāyatta* причастный к, связанный с, находящийся в отношении к, зависящий от, основывающийся —, распространяющийся на, наличествующий в или при; с Loc. или Acc.
-  <sub>DCS 9672 · attested</sub>
+  <sub>attested</sub>
 
 **PW_anuyat_caus)** — Caus. Act. anreihen, folgen lassen; in Verbindung bringen, sich betheiligen lassen; mit Loc. oder Acc. [MĀN. GṚHY. 2,2. fgg.] [ĀPAST. ŚR. 6,30,12]. Comm. zu [29,8].
 
 - **RU:** — Caus. Act. выстраивать в ряд, заставлять следовать; приводить в связь, привлекать к участию; с Loc. или Acc. [MĀN. GṚHY. 2,2. fgg.] [ĀPAST. ŚR. 6,30,12]. Comm. к [29,8].
-  <sub>DCS 9672 · attested</sub>
+  <sub>attested</sub>
 
 **PW_paryat_intro)** — Mit *vyā* Caus. Act.
 
 - **RU:** — С *vyā* Caus. Act.
-  <sub>DCS 9672 · attested</sub>
+  <sub>attested</sub>
 
 **PW_paryat_1)** — 1〉 geordnet hinstellen [ĀPAST. ŚR. 15,6,5].
 
 - **RU:** — 1〉 упорядоченно расставлять [ĀPAST. ŚR. 15,6,5].
-  <sub>DCS 9672 · attested</sub>
+  <sub>attested</sub>
 
 **PW_paryat_2)** — 2〉 gesondert befestigen an (Loc.) [ĀPAST. ŚR. 15,6,17. 18].
 
 - **RU:** — 2〉 отдельно закреплять при (Loc.) [ĀPAST. ŚR. 15,6,17. 18].
-  <sub>DCS 9672 · attested</sub>
+  <sub>attested</sub>
 
 **PW_antar)** — Mit *samā*, *˚yatta* beruhend auf, abhängig von (Loc.).
 
 - **RU:** — С *samā*, *˚yatta* основывающийся на, зависящий от (Loc.).
-  <sub>DCS 9672 · attested</sub>
+  <sub>attested</sub>
 
 **PW_paribhavat)** — Mit *upa* Med. betreffen.
 
 - **RU:** — С *upa* Med. касаться, относиться к.
-  <sub>DCS 9672 · attested</sub>
+  <sub>attested</sub>
 
 **PW_prat_anvat)** — Mit *ni* Med. anlangen bei (Loc.)
 
 - **RU:** — С *ni* Med. прибывать к (Loc.)
-  <sub>DCS 9672 · attested</sub>
+  <sub>attested</sub>
 
 **PW_nis_intro)** — Mit *nis* Caus.
 
 - **RU:** — С *nis* Caus.
-  <sub>DCS 9672 · attested</sub>
+  <sub>attested</sub>
 
 **PW_nis_1)** — 1〉 fortreissen, fortschaffen, wegführen.
 
 - **RU:** — 1〉 уносить, увозить, уводить.
-  <sub>DCS 9672 · attested</sub>
+  <sub>attested</sub>
 
 **PW_nis_2)** — 2〉 herausholen, herbeischaffen, — aus (Abl.).
 
 - **RU:** — 2〉 извлекать, добывать — из (Abl.).
-  <sub>DCS 9672 · attested</sub>
+  <sub>attested</sub>
 
 **PW_nis_3)** — 3〉 herausgeben, schenken ([LALIT. 474,13]. [SADDH. P. 91,b]. [KĀRAṆḌ. 36,17. 49,1]), ausliefern, zurückgeben.
 
 - **RU:** — 3〉 отдавать, дарить ([LALIT. 474,13]. [SADDH. P. 91,b]. [KĀRAṆḌ. 36,17. 49,1]), выдавать, возвращать.
-  <sub>DCS 9672 · attested</sub>
+  <sub>attested</sub>
 
 **PW_nis_4)** — 4〉 *vairam* eine Feindschaft erwidern, Rache nehmen.
 
 - **RU:** — 4〉 *vairam* отвечать на враждебность, мстить.
-  <sub>DCS 9672 · attested</sub>
+  <sub>attested</sub>
 
 **PW_nis_5)** — 5〉 verbringen, verleben.
 
 - **RU:** — 5〉 проводить, переживать [время].
-  <sub>DCS 9672 · attested</sub>
+  <sub>attested</sub>
 
 **PW_anirnis)** — Mit *pratinis* Caus. wieder ausliefern, zurückgeben.
 
 - **RU:** — С *pratinis* Caus. снова выдавать, возвращать.
-  <sub>DCS 9672 · attested</sub>
+  <sub>attested</sub>
 
 **PW_pari_nis)** — Mit *pari* umstellen, umringen. *pariyatta* umstellt.
 
 - **RU:** — С *pari* окружать, обступать. *pariyatta* окружённый.
-  <sub>DCS 9672 · attested</sub>
+  <sub>attested</sub>
 
 **PW_pra_intro)** — Mit *pra*
 
 - **RU:** — С *pra*
-  <sub>DCS 9672 · attested</sub>
+  <sub>attested</sub>
 
 **PW_pra_1)** — 1〉 Med. einwirken.
 
 - **RU:** — 1〉 Med. воздействовать.
-  <sub>DCS 9672 · attested</sub>
+  <sub>attested</sub>
 
 **PW_pra_2)** — 2〉 Med. Act. (metrisch) sich bestreben, sich bemühen um, bedacht sein auf, sich befleissigen; die Ergänzung im Loc., Dat., Acc., *arthai, artham, haitos* oder im Infin. *prayatta* sich bestrebend, ganz bei der Sache seiend; *prayatita* _n._ impers.
 
 - **RU:** — 2〉 Med. Act. (метрически) стремиться, прилагать усилия к, быть озабоченным, усердствовать; дополнение в Loc., Dat., Acc., *arthai, artham, haitos* или в Infin. *prayatta* стремящийся, всецело поглощённый делом; *prayatita* _n._ impers.
-  <sub>DCS 9672 · attested</sub>
+  <sub>attested</sub>
 
 **PW_prati_comb)** — Mit *saṃpra* Med. sich bemühen um, bedacht sein auf (Dat.).
 
 - **RU:** — С *saṃpra* Med. прилагать усилия к, быть озабоченным (Dat.).
-  <sub>DCS 9672 · attested</sub>
+  <sub>attested</sub>
 
 **PW_prati_intro)** — Mit *prati* entgegenwirken, mit Acc.
 
 - **RU:** — С *prati* противодействовать,{ с Acc.
-  <sub>DCS 9672 · attested</sub>
+  <sub>attested</sub>
 
 **PW_prati_2)** — Caus. erwidern. *vairāṇi, vairam* so v. a. Rache nehmen.
 
 - **RU:** — Caus. отвечать. *vairāṇi, vairam* так v. a. мстить.
-  <sub>DCS 9672 · attested</sub>
+  <sub>attested</sub>
 
 **PW_viyat)** — Mit *vi* Med. etwa in verschiedene Reihen bringen.
 
 - **RU:** — С *vi* Med. приблизительно распределять по различным рядам.
-  <sub>DCS 9672 · attested</sub>
+  <sub>attested</sub>
 
 **PW_vi_intro)** — Caus.
 
 - **RU:** — Caus.
-  <sub>DCS 9672 · attested</sub>
+  <sub>attested</sub>
 
 **PW_vi_1)** — 1〉 anreihen, anbringen.
 
 - **RU:** — 1〉 прилагать, прикреплять.
-  <sub>DCS 9672 · attested</sub>
+  <sub>attested</sub>
 
 **PW_vi_2)** — 2〉 büssen.
 
 - **RU:** — 2〉 искупать.
-  <sub>DCS 9672 · attested</sub>
+  <sub>attested</sub>
 
 **PW_vi_3)** — 3〉 peinigen, quälen.
 
 - **RU:** — 3〉 мучить, терзать.
-  <sub>DCS 9672 · attested</sub>
+  <sub>attested</sub>
 
 **PW_anviyat)** — Mit *adhivi* Caus. anreihen, anbringen.
 
 - **RU:** — С *adhivi* Caus. выстраивать в ряд, прикреплять.
-  <sub>DCS 9672 · attested</sub>
+  <sub>attested</sub>
 
 **PW_sam_intro)** — Mit *sam*
 
 - **RU:** — С *sam*
-  <sub>DCS 9672 · attested</sub>
+  <sub>attested</sub>
 
 **PW_sam_1)** — 1〉 Act. vereinigen.
 
 - **RU:** — 1〉 Act. соединять.
-  <sub>DCS 9672 · attested</sub>
+  <sub>attested</sub>
 
 **PW_sam_2)** — 2〉 Med. sich aneinander reihen.
 
 - **RU:** — 2〉 Med. выстраиваться в ряд.
-  <sub>DCS 9672 · attested</sub>
+  <sub>attested</sub>
 
 **PW_sam_3)** — 3〉 Med. sich vereinigen, zusammentreffen, sich verbinden mit (Instr.).
 
 - **RU:** — 3〉 Med. соединяться, встречаться, вступать в связь с (Instr.).
-  <sub>DCS 9672 · attested</sub>
+  <sub>attested</sub>
 
 **PW_sam_4)** — 4〉 Med. an einander gerathen, in Streit kommen. *saṃgrāmam* einen Kampf beginnen. *saṃyatta* Pl. in Streit gerathen, *saṃgrāmai saṃyattai* beim Ausbruch des Kampfes [TS. 2,1,3,1.] [2.] [8,4].
 
 - **RU:** — 4〉 Med. столкнуться, вступить в борьбу. *saṃgrāmam* начать бой. *saṃyatta* Pl. вступить в конфликт, *saṃgrāmai saṃyattai* при начале сражения [TS. 2,1,3,1.] [2.] [8,4].
-  <sub>DCS 9672 · attested</sub>
+  <sub>attested</sub>
 
 **PW_sam_5)** — 5〉 *saṃyatta* vorbereitet, ganz bei der Sache seiend, seine Maassregeln getroffen habend, auf der Hut seiend, sich vorsehend.
 
 - **RU:** — 5〉 *saṃyatta* готовый, всецело поглощённый делом, принявший меры, находящийся начеку, остерегающийся.
-  <sub>DCS 9672 · attested</sub>
+  <sub>attested</sub>
 
 **PW_abhi_sam)** — Mit *abhisam*, *˚saṃyatta* besorgt, gelenkt (Rosse).
 
 - **RU:** — С *abhisam*, *˚saṃyatta* управляемый, направляемый (кони).
-  <sub>DCS 9672 · attested</sub>
+  <sub>attested</sub>
 
 **PW_pratiyat_intro)** — Mit *pratisam*
 
 - **RU:** — С *pratisam*
-  <sub>DCS 9672 · attested</sub>
+  <sub>attested</sub>
 
 **PW_pratiyat_1)** — 1〉 Med. bekämpfen.
 
 - **RU:** — 1〉 Med. бороться против, противостоять.
-  <sub>DCS 9672 · attested</sub>
+  <sub>attested</sub>
 
 **PW_pratiyat_2)** — 2〉 *˚saṃyatta* vollkommen vorbereitet, — gerüstet.
 
 - **RU:** — 2〉 *˚saṃyatta* совершенно готовый, — снаряжённый.
-  <sub>DCS 9672 · attested</sub>
+  <sub>attested</sub>
 
 **PW_root2_intro)** √*yat*¦ Caus. vgl. [ROTH] in [Z. d. d. m. G. 41,676].
 — Mit *anvā* V. sich bei Etwas betheiligen [ŚĀṄKH. BR. 23,5].
 
 - **RU:** √*yat*¦ Caus. vgl. [ROTH] в [Z. d. d. m. G. 41,676].
 — С *anvā* V. принимать участие в чём-либо [ŚĀṄKH. BR. 23,5].
-  <sub>DCS 9672 · attested</sub>
+  <sub>attested</sub>
 
 ## yat
 
@@ -1250,12 +1250,12 @@ in or at; with loc. or acc.: *aśve vai sarvā devatā anvāyattāḥ*
 **SCH-anvA)** yat¦ [Kaus.] vgl. Roth, [ZDMG 41,676.] — Mit anvā sich bei etwas beteiligen, [Śāṅkh. Br. 23,5.] {part=,seq=22390,type=,n=1}
 
 - **RU:** yat¦ [Kaus.] ср. Roth, [ZDMG 41,676.] — С anvā участвовать в чём-л., [Śāṅkh. Br. 23,5.]
-  <sub>DCS 9672 · attested</sub>
+  <sub>attested</sub>
 
 **SCH-satyam)** yat¦ satyam s. unter satya. {part=,seq=22391,type=,n=3}
 
 - **RU:** yat¦ satyam см. под satya.
-  <sub>DCS 9672 · lexicographic</sub>
+  <sub>lexicographic</sub>
 
 ## yat
 
@@ -1266,7 +1266,7 @@ in or at; with loc. or acc.: *aśve vai sarvā devatā anvāyattāḥ*
 
 - **RU:** *yat*¦ Caus. vgl. [ROTH] в [Z. d. d. m. G. 41,676]. — С *anvā* V. участвовать в чём-л. [ŚĀṄKH. BR. 23,5].
 - **EN:** *yat* Caus. vgl. [ROTH] in [Z. d. d. m. G. 41,676]. — With *anvā* V.: to take part in something [ŚĀṄKH. BR. 23,5].
-  <sub>DCS 9672 · attested</sub>
+  <sub>attested</sub>
 
 ## yat
 
@@ -1351,127 +1351,127 @@ in or at; with loc. or acc.: *aśve vai sarvā devatā anvāyattāḥ*
 **NWS-01)** *yat* [Gen , unsp] ( yátate I Ā ) march or fly together or in line. ṚV . to conform or comply with (instr). ṚV . Caus (or cl. X, yātáyati or ° te ): to strive to obtain anything (acc) from (abl). Mālav
 
 - **RU:** [NWS:] *yat* ( yátate I Ā ) маршировать или лететь вместе или в строю. ṚV. подчиняться, соглашаться с (Instr.). ṚV. Caus. (или кл. X, yātáyati или °te): стремиться получить что-л. (Acc.) от (Abl.). Mālav MW : 840
-  <sub>DCS 9672 · attested</sub>
+  <sub>attested</sub>
 
 **NWS-02)** [Gen , unsp] (se) diriger. [ polysémie ambivalente à partir de. Renou 1997, S. 58 . ]
 
 - **RU:** [NWS:] (se) diriger — направляться. [полисемия, неоднозначно исходящая из. Renou 1997, S. 58.] Renou 1997 : 1009
-  <sub>DCS 9672 · attested</sub>
+  <sub>attested</sub>
 
 **NWS-03)** [Ved , unsp] Akt und Kaus: Menschen (Akk) verbinden, vereinigen, verbünden (zu Freundschaft oder Bündniss). med: verbunden gehen, in geschlossenen Reihen ziehen (nebeneinander oder hintereinander). med: sich vereinigen mit (Instr). med: zusammen stimmen mit (Instr). wetteifern mit (Instr). med: miteinander im Streite sein. med: in Streit gerathen mit (Lok). med: auf e. Ort (Lok, Akk) oder e. Menschen (Akk) zustreben, ihn zu erreichen suchen. sich anstrengen. [ enthalten in áyatat . ] Kaus med: sich verbünden. Kaus: jemandem (Dat) etwas (Akk) darreichen. Schulden (Akk) einziehen. Kaus: vergelten
 
 - **RU:** [NWS:] Act. и Caus.: людей (Acc.) соединять, объединять, заключать в союз (в дружбу или союзничество). Med.: идти объединёнными, двигаться в сомкнутых рядах (рядом или один за другим). Med.: объединяться с (Instr.). Med.: соглашаться с (Instr.). Соперничать с (Instr.). Med.: находиться в ссоре друг с другом. Med.: вступать в столкновение с (Loc.). Med.: устремляться к месту (Loc., Acc.) или к человеку (Acc.), стараться его достичь. Прилагать усилия. [содержится в áyatat.] Caus. med.: вступать в союз. Caus.: преподносить кому-л. (Dat.) что-л. (Acc.). Взыскивать долги (Acc.). Caus.: воздавать. Graßmann 1873 (1996) : 1079
-  <sub>DCS 9672 · attested</sub>
+  <sub>attested</sub>
 
 **NWS-04)** [Ved , unsp] ( I ) sich anstrengen. Kaus: a) zur Thätigkeit anspornen; b) vergelten (= apagamaya (Sāyaṇa)). ṚV 3,59,1 , ṚV 10,127,7
 
 - **RU:** [NWS:] (I) прилагать усилия. Caus.: a) побуждать к деятельности; b) воздавать (= apagamaya (Sāyaṇa)). ṚV 3,59,1, ṚV 10,127,7. Hillebrandt 1885 : 110
-  <sub>DCS 9672 · attested</sub>
+  <sub>attested</sub>
 
 **NWS-05)** [Ved , unsp] ( I ) P: zum Nacheifern reizen, e. gutes Beispiel geben. ṚV 7,36,2 . Ā: a) eifern, wetteifern mit (Instr); in Eifer geraten über, eifersüchtig sein auf (Lok); eifern um (Akk), sich streitig machen; b) sich beeifern, der Erste sein wollen, ungeduldig sein auf, sich drängen zu (Lok); c) sich beeifern, vorwärts streben, dringen, eilen, in Eile kommen (ziehen); aufmarschieren, antreten. ṚV 10,62,11 , ṚV 8,20,12 , ṚV 10,113,7 , ṚV 1,85,8 , ṚV 10,75,3 , ṚV 10,18,6 . Kaus: a) U: anspornen, aneifern; b) P: zu zahlen veranlassen (+ zu supplierendem ṛṇam ). ṚV 3,59,1 , ṚV 5,32,12 , ṚV 10,127,7 , ṚV 5,3,9
 
 - **RU:** [NWS:] (I) P.: побуждать к соперничеству, подавать добрый пример. ṚV 7,36,2. Ā.: a) ревностно стараться, соперничать с (Instr.); приходить в рвение по поводу чего-л., завидовать (Loc.); бороться за (Acc.), оспаривать; b) стараться, хотеть быть первым, нетерпеливо стремиться к, теснить к (Loc.); c) усердно стремиться, рваться вперёд, торопиться, спешить (идти); выстраиваться в строй, вступать в строй. ṚV 10,62,11, ṚV 8,20,12, ṚV 10,113,7, ṚV 1,85,8, ṚV 10,75,3, ṚV 10,18,6. Caus.: a) U.: подстёгивать, воодушевлять; b) P.: понуждать к уплате (+ ṛṇam, подразумеваемое). ṚV 3,59,1, ṚV 5,32,12, ṚV 10,127,7, ṚV 5,3,9. Geldner 1907 : 140
-  <sub>DCS 9672 · attested</sub>
+  <sub>attested</sub>
 
 **NWS-06)** *+ adhi , Ā: anlegen, anstecken. ṚV 1,64,4 .* [Ved , unsp] + ádhi : 1) med: sich etwas (Akk) anlegen (zum Schmucke); 2) Kaus med: e. Ort (Akk) erreichen. Ved , unsp
 
 - **RU:** [NWS:] *+ adhi , Ā: anlegen, anstecken. ṚV 1,64,4 .* + ádhi: 1) med.: надевать на себя что-л. (Acc.) (в качестве украшения); 2) Caus. med.: достигать места (Acc.). Graßmann 1873 (1996) : 1079
-  <sub>DCS 9672 · attested</sub>
+  <sub>attested</sub>
 
 **NWS-07)** *+ ánu , med: hinstreben ṣu (ākk).* [Ved , unsp] + abhyā , Kaus.: „ saṃśleṣay -". BaudhŚS XI.11 . Ved , unsp
 
 - **RU:** [NWS:] *+ ánu , med: hinstreben ṣu (ākk).* + abhyā, Caus.: «saṃśleṣay-». BaudhŚS XI.11. Renou 1934 : 192 (s.v. abhyāyat -)
-  <sub>DCS 9672 · attested</sub>
+  <sub>attested</sub>
 
 **NWS-08)** *+ ā́ : 1) ṭo (Lok) ṝuss ṛassen, ṭeilen, auch im bildlichen śinne; 2) med: nebeneinander gehen; 3) med: hinstreben ṣu (dhat).* [Ved , unsp] + upa , moy.: „ bādh -"; var. upāyat -. Caland 1926, p. 175 . Ved , unsp
 
 - **RU:** [NWS:] *+ ā́ : 1) ṭo (Lok) ṝuss ṛassen, ṭeilen, auch im bildlichen śinne; 2) med: nebeneinander gehen; 3) med: hinstreben ṣu (dhat).* + upa, moy.: «bādh-»; вариант upāyat-. Caland 1926, p. 175. Renou 1934 : 262 (s.v. upayat -)
-  <sub>DCS 9672 · attested</sub>
+  <sub>attested</sub>
 
 **NWS-09)** *+ ṛ́ṇā : śchulden eintreiben, bhusse (śtraṛgeld) einṛordern, ghenugtuung ṛordern. ṚV 10,127,7 .* [Ved , unsp] + ní , med: hingelangen zu (Lok). Ved , unsp
 
 - **RU:** [NWS:] *+ ṛ́ṇā : śchulden eintreiben, bhusse (śtraṛgeld) einṛordern, ghenugtuung ṛordern. ṚV 10,127,7 .* + ní, med.: достигать, приходить к (Loc.). Graßmann 1873 (1996) : 1079
-  <sub>DCS 9672 · attested</sub>
+  <sub>attested</sub>
 
 **NWS-10)** *+ nis , khaus ( niryātayati ): to ṛorgive, pardon, set ṛree.* [Gen , unsp (s.v. niryat )] – ( niryātayati , ° teti ; also ° dayati ) gives, presents [act., with acc. of thing, dat. or gen. of person; pass., with instr., rarely gen., of giver, also, rarely, recipient in nom., both giver and gift instr.]; ( niryātita , ppp.) [generally the gift is nom., the giver instr., and the recipient gen. (dat.), or loc.]. SaddhP 108.11 , Mvu i.295.15 . Buddh , unsp ; BHSD : 303 (s.v. niryātayati )
 
 - **RU:** [NWS:] *+ nis , khaus ( niryātayati ): to ṛorgive, pardon, set ṛree.* (niryātayati, °teti; также °dayati) — давать, преподносить [Act., с Acc. вещи, Dat. или Gen. лица; Pass., с Instr., редко Gen. дающего, также, редко, получатель в Nom., и дающий и дар в Instr.]; (niryātita, ppp.) [как правило, дар в Nom., дающий в Instr., получатель в Gen. (Dat.) или Loc.]. SaddhP 108.11, Mvu i.295.15. BHSD : 303 (s.v. niryātayati)
-  <sub>DCS 9672 · attested</sub>
+  <sub>attested</sub>
 
 **NWS-11)** *– ( niryātita ): given. chīī 2.1 (īndeḷ) .* [Epigr , unsp (s.v. niryātita )] + pari , ( páriyatta ): umringt. ṚV 7,83,8 . Ved , unsp
 
 - **RU:** [NWS:] *– ( niryātita ): given. chīī 2.1 (īndeḷ) .* + pari, (páriyatta): окружённый. ṚV 7,83,8. Hillebrandt 1885 : 110
-  <sub>DCS 9672 · attested</sub>
+  <sub>attested</sub>
 
 **NWS-12)** *– umstellen, umṣingeln. ṚV 7,83,8 .* [Ved , unsp] + pári : umstellen, umringen (Akk). Ved , unsp
 
 - **RU:** [NWS:] *– umstellen, umṣingeln. ṚV 7,83,8 .* + pári: окружать, обступать (Acc.). Graßmann 1873 (1996) : 1079
-  <sub>DCS 9672 · attested</sub>
+  <sub>attested</sub>
 
 **NWS-13)** *+ paryā , khaus. bhaudhŚś ḹīV.32 .* [Ved , unsp (s.v. paryāyat -)] + prati : (° yatta , ppp.) prepared, made. Mvu i.24.13 . Buddh , unsp ; BHSD : 367 (s.v. pratiyatta )
 
 - **RU:** [NWS:] *+ paryā , khaus. bhaudhŚś ḹīV.32 .* + prati: (°yatta, ppp.) приготовленный, сделанный. Mvu i.24.13. BHSD : 367 (s.v. pratiyatta)
-  <sub>DCS 9672 · attested</sub>
+  <sub>attested</sub>
 
 **NWS-14)** *+ vi : to make special eṛṛort ṛor. chāṇaṬ ad khā ī.12 .* [Śā , Soc (s.v. viyatati )] – to arrange for, to provide. KA 1.11.20 . Śā , Soc ; Kangle 1969 : 333 (s.v. viyat )
 
 - **RU:** [NWS:] *+ vi : to make special eṛṛort ṛor. chāṇaṬ ad khā ī.12 .* — устраивать, обеспечивать. KA 1.11.20. Kangle 1969 : 333 (s.v. viyat)
-  <sub>DCS 9672 · attested</sub>
+  <sub>attested</sub>
 
 **NWS-15)** *+ sam : encounter (rarely ‘as ṛriends’, generally ‘as enemies’), contend, engage in contest or striṛe. ṚV , bh(ṃṭh) , chhū .* [Gen , unsp (s.v. saṃyat )] – wetteifern mit (Instr), zu gleichen suchen. ṚV 5,37,1 . Ved , unsp
 
 - **RU:** [NWS:] *+ sam : encounter (rarely ‘as ṛriends’, generally ‘as enemies’), contend, engage in contest or striṛe. ṚV , bh(ṃṭh) , chhū .* — соперничать с (Instr.), стараться сравняться. ṚV 5,37,1. Geldner 1907 : 140
-  <sub>DCS 9672 · attested</sub>
+  <sub>attested</sub>
 
 **NWS-16)** *– (+ acc. oṛ content).* [Ved , unsp (s.v. saṃyat -)] + sám : 1) Menschen (Akk) vereinigen; 2) med: sich aneinander reihen; 3) med: sich vereinen od. zusammentreffen mit (Instr); 4) med: mit einander in Streit gerathen. Ved , unsp
 
 - **RU:** [NWS:] *– (+ acc. oṛ content).* + sám: 1) объединять людей (Acc.); 2) med.: выстраиваться в ряд; 3) med.: объединяться или встречаться с (Instr.); 4) med.: вступать в ссору друг с другом. Graßmann 1873 (1996) : 1079
-  <sub>DCS 9672 · attested</sub>
+  <sub>attested</sub>
 
 **NWS-17)** [Gen , unsp] [ yatta ] endeavoured, striven. Mbh , Kāvya(MW) . engaged in, intent upon, prepared for, ready to. R , Hariv . + loc., dat., acc. or inf. with prati . watchful, cautious. MW : 841 (s.v. yatta )
 
 - **RU:** [NWS:] [yatta] прилагавший усилия, старавшийся. Mbh, Kāvya(MW). занятый, сосредоточенный на, готовый к. R, Hariv. + Loc., Dat., Acc. или Inf. с prati. осторожный, бдительный. MW : 841 (s.v. yatta)
-  <sub>DCS 9672 · attested</sub>
+  <sub>attested</sub>
 
 **NWS-18)** *yat* [Ved , unsp] das Suff ya
 
 - **RU:** [NWS:] *yat* суффикс ya. Windisch 1883 : 146
-  <sub>DCS 9672 · lexicographic</sub>
+  <sub>lexicographic</sub>
 
 **NWS-19)** [Ved , unsp] sich eifrig bemühen zu (+ Ptz). ṚV 1,95,7
 
 - **RU:** [NWS:] усердно стараться (+ прич.). ṚV 1,95,7. Geldner 1907 (N) : 234
-  <sub>DCS 9672 · attested</sub>
+  <sub>attested</sub>
 
 **NWS-20)** [Śā , Ling] kṛtya ya . Pāṇ III.1.97 . taddhita ya . Pāṇ IV.1.137
 
 - **RU:** [NWS:] kṛtya ya. Pāṇ III.1.97. taddhita ya. Pāṇ IV.1.137. Böhtlingk 1840 : 513
-  <sub>DCS 9672 · lexicographic</sub>
+  <sub>lexicographic</sub>
 
 **NWS-21)** [Śā , Ling] kṛt (kṛtya) yà . Pāṇ 3,1,97 . taddh. yà . Pāṇ 4,1,137 . Böhtlingk 1887 : *176 > Śā , Ling > [ ya t] dissyllabic kṛt (kṛtya) suffix − ́ya or polysyllabic kṛt (kṛtya) suffix −− yá . Pāṇ 3.1.97 . dissyllabic taddhita −́ ya or polysyllabic taddhita −− yá . Pāṇ 4.1.137
 
 - **RU:** [NWS:] kṛt (kṛtya) yà. Pāṇ 3,1,97. taddh. yà. Pāṇ 4,1,137. Böhtlingk 1887: *176 > [ya t] двусложный kṛt (kṛtya) суффикс −́ya или многосложный kṛt (kṛtya) суффикс −−yá. Pāṇ 3.1.97. Двусложный taddhita −́ya или многосложный taddhita −−yá. Pāṇ 4.1.137. Katre 1968f (2) : 460
-  <sub>DCS 9672 · lexicographic</sub>
+  <sub>lexicographic</sub>
 
 **NWS-22)** [Śā , Ling] ya Bed. 6
 
 - **RU:** [NWS:] ya Bed. 6. Abhyankar 1986 : 312
-  <sub>DCS 9672 · lexicographic</sub>
+  <sub>lexicographic</sub>
 
 **NWS-23)** [Śā , Ling] [yaT] may be added as a svārthika suffix. MBh on Pāṇ 5.4.30
 
 - **RU:** [NWS:] [yaT] может добавляться как svārthika суффикс. MBh on Pāṇ 5.4.30. Roodbergen 2009 : 145
-  <sub>DCS 9672 · lexicographic</sub>
+  <sub>lexicographic</sub>
 
 **NWS-24)** [Jin , unsp] Indekl till. PPS, Introduction S. 29, Z. 13
 
 - **RU:** [NWS:] Indekl. до, вплоть до. PPS, Introduction S. 29, Z. 13. SJS 10 : 185
-  <sub>DCS 9672 · attested</sub>
+  <sub>attested</sub>
 
 **NWS-25)** *ya* [Buddh , unsp] [ yat khalu , or yaṃ khalu ] with a 2d (or polite 3d) person form of jñā (regularly opt.): please be informed; allow me to inform you. [ a courteous introduction to a statement made usually to a king or the like. Mvu ii.454.1 . ] BHSD : 442 (s.v. yat khalu )
 
 - **RU:** [NWS:] *ya* [yat khalu или yaṃ khalu] с формой 2-го (или вежливого 3-го) лица jñā (обычно opt.): примите к сведению; позвольте вас уведомить. [вежливое введение к высказыванию, обращённому обычно к царю или подобному лицу. Mvu ii.454.1.] BHSD : 442 (s.v. yat khalu)
-  <sub>DCS 9672 · attested</sub>
+  <sub>attested</sub>
 
 ## yat
 
@@ -1484,4 +1484,4 @@ in or at; with loc. or acc.: *aśve vai sarvā devatā anvāyattāḥ*
 **NWS:26)** [NWS: BHSD : 442 (s.v. yat tu)] [Buddh , unsp] [ yat tu ] read yan nu . MSV . BHSD : 442 (s.v. yat tu )
 
 - **RU:** [NWS:] [Buddh, unsp] [ yat tu ] читать yan nu . MSV . BHSD : 442 (s.v. yat tu)
-  <sub>DCS 9672 · attested</sub>
+  <sub>attested</sub>

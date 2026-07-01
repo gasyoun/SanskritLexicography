@@ -22,7 +22,7 @@
 [HARIV. 4791.]
 [R. 2,68,45.] [3,46,12.] [13.] *tamaṣyapanayet* to remove (from a ceremony)
 [M. 3,242.]
-  <sub>DCS 226 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) rauben,
 
@@ -53,7 +53,7 @@ to steal, to carry off, to drag away: *apanītāsmi bhīṣmeṇa*
 [R. GORR. 2,117,7.] *dhātuḥ suptaśaktermukhebhyaḥ śrutigaṇamapanītam*
 [BHĀG. P. 8,24,61.] *yadi bhāṇḍānyapanayetkākaḥ*
 [VARĀH. BṚH. S. 94,13.]
-  <sub>DCS 226 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) verscheuchen, entfernen, wegnehmen, wegschaffen: *śatrūnapaneṣyāmi*
 [BHAṬṬ. 16,30.] *yantram*
@@ -122,7 +122,7 @@ Schol. on [P. 8,4,63], Vārtt. *darpaṃ tasya*
 [PRAB. 59,11.] *śuklapaṭasya śauklyaṃ rāgeṇa*
 Schol. on [KAP. 1,10.] [KIR. 5,46.] *hṛdayāt* to put something out of one's mind: *brahmahatyākṛtaṃ pāpaṃ hṛdayādapanīyatām* so v. a. do not think that you have incurred the guilt of a Brahmin's murder,
 [DAŚ. 1,47.]
-  <sub>DCS 226 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) (Fesseln, Kleider, Schmucksachen) abnehmen, abziehen, ablegen: *caraṇānnigaḍamapanaya*
 [MṚCCH. 109,15.] *apanītasaṃyamana*
@@ -167,7 +167,7 @@ Schol. on [KAP. 1,10.] [KIR. 5,46.] *hṛdayāt* to put something out of one's m
 [7697.] [MṚCCH. 15,6.] [VIKR. 27,8.] [RAGH. 4,64.] [ṚT. 4,15.] [VARĀH. BṚH. S. 47,54.] *apanītaprāgveśa*
 [RĀJA-TAR. 3,229.] *apanayitvā mālyābharaṇānyapanayitvā mṛdukāni vastrāṇi*
 [SADDH. P. 4,19,b.]
-  <sub>DCS 226 · attested</sub>
+  <sub>attested</sub>
 
 **5)** — 5) ausziehen, gewinnen aus: *tāpasā iṅgudībhyastailamapanayanti dīpārtham*
 Schol. zu [ŚĀK. 14.]
@@ -176,7 +176,7 @@ Schol. zu [ŚĀK. 14.]
 Schol. zu [ŚĀK. 14.]
 - **EN:** — 5) to extract, to win from: *tāpasā iṅgudībhyastailamapanayanti dīpārtham*
 Schol. on [ŚĀK. 14.]
-  <sub>DCS 226 · attested</sub>
+  <sub>attested</sub>
 
 **6)** — 6) läugnen, in Abrede stellen: *nirdiśya vā deśādikaṃ naitanmayā nirdiṣṭamiti apanayati*
 [KULL.] zu [M. 8,53.] *yaḥ pratyarthī yatparimāṇadhanamapanayati* ders.
@@ -188,7 +188,7 @@ zu [59.]
 - **EN:** — 6) to deny, to disavow: *nirdiśya vā deśādikaṃ naitanmayā nirdiṣṭamiti apanayati*
 [KULL.] on [M. 8,53.] *yaḥ pratyarthī yatparimāṇadhanamapanayati* ders.
 on [59.]
-  <sub>DCS 226 · attested</sub>
+  <sub>attested</sub>
 
 **7)** — 7) ausnehmen, ausschliessen (aus einer Regel)
 Schol. zu [ṚV. PRĀT. 11,4.]
@@ -197,7 +197,7 @@ Schol. zu [ṚV. PRĀT. 11,4.]
 Schol. zu [ṚV. PRĀT. 11,4.]
 - **EN:** — 7) to except, to exclude (from a rule)
 Schol. on [ṚV. PRĀT. 11,4.]
-  <sub>DCS 226 · attested</sub>
+  <sub>attested</sub>
 
 **8)** — 8) *apanīta* abgeführt von so v. a. im Widerspruch stehend mit: *tattvadharmāpanītasya dṛśyate karmaṇaḥ phalam*
 [R. 3,55,40.]
@@ -206,7 +206,7 @@ Schol. on [ṚV. PRĀT. 11,4.]
 [R. 3,55,40.]
 - **EN:** — 8) *apanīta* deviated from, hence v. a. in contradiction to: *tattvadharmāpanītasya dṛśyate karmaṇaḥ phalam*
 [R. 3,55,40.]
-  <sub>DCS 226 · attested</sub>
+  <sub>attested</sub>
 
 **9)** — 9) *apanīta* schlecht ausgeführt, verpfuscht: *apanītaṃ sunītena yo 'rthaṃ pratyāninīṣate*
 [MBH. 5,1499.] _n._ ein unkluges —, schlechtes Benehmen
@@ -232,7 +232,7 @@ Schol. on [ṚV. PRĀT. 11,4.]
 [MBH. 5,1499.] _n._ неразумное —, дурное поведение
 [6,585.] [7,8294.] [13,4640.] [R. 3,66,24.] Собственно сюда не относится, так как слово разлагается на *apa + nīta* (vgl. 2. *apanaya*). — Bed. от *apanīyate*
 [BHĀG. P. 5,18,33] нам не вполне ясно.
-  <sub>DCS 226 · attested</sub>
+  <sub>attested</sub>
 
 **Desid./Nachtrag)** — Vgl. *apanaya, ˚nayana* . — desid. zu entfernen wünschen: *andhatamasamandhakāreṇāpaninīṣati*
 [PRAB. 108,18.] *imāṃ śaṅkāmapaninīṣan*
@@ -241,4 +241,4 @@ Schol. on [ṚV. PRĀT. 11,4.]
 - **RU:** — Vgl. *apanaya, ˚nayana* . — desid. желать удалить: *andhatamasamandhakāreṇāpaninīṣati*
 [PRAB. 108,18.] *imāṃ śaṅkāmapaninīṣan*
 [KULL.] zu [M. 1,27.]
-  <sub>DCS 226 · attested</sub>
+  <sub>attested</sub>

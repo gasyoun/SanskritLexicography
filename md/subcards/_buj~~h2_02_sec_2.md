@@ -26,7 +26,7 @@
 [NIR. 7,13.]
 [SUŚR. 1,242,1. 244,15.]
 [PAÑCAR. 4,3,202]), *bubhukṣu* .
-  <sub>DCS 2938 · lexicographic</sub>
+  <sub>lexicographic</sub>
 
 **desid.1)** — desid. zu essen wünschen, hungrig sein: *annaṃ bubhukṣamāṇaḥ*
 [MBH. 13,5009.] *rājanme dīyatāmannaṃ sagaṇāya bubhukṣate*
@@ -37,4 +37,4 @@
 [MBH. 13,5009.] *rājanme dīyatāmannaṃ sagaṇāya bubhukṣate*
 [BHĀG. P. 9,21,8.] желать наслаждаться: *na sa rājyaṃ bubhukṣati*
 [MBH. 1,5667.]
-  <sub>DCS 2938 · attested</sub>
+  <sub>attested</sub>

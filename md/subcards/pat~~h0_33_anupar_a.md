@@ -13,4 +13,4 @@
 
 - **RU:** *anuparā* лететь рядом с кем-либо, мчаться рядом: *indro vāyumanuparāpatat*
 [AIT. BR. 2,25.]
-  <sub>DCS 1 · attested</sub>
+  <sub>attested</sub>

@@ -10,4 +10,4 @@
 [MBH. 4,1669], однако с [ed. Bomb.] следует читать *so 'pyapayā˚*.
 - **EN:** — *abhyapa* apparently in the passage *so 'bhyapayājjavena*
 [MBH. 4,1669], where however *so 'pyapayā˚* is to be read with the [ed. Bomb.].
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>

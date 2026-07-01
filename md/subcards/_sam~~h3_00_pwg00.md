@@ -76,4 +76,4 @@
 [HARIV. 1012.]
 [MĀRK. P. 14,63.] — *niśamyamāna* with act. Bed. and gen.
 [R. ed. Bomb. 2,66,10.] Vgl. *niśamana, niśāma, niśāmana* .
-  <sub>DCS 1847 · attested</sub>
+  <sub>attested</sub>

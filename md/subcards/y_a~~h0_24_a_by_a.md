@@ -16,4 +16,4 @@
 [MBH. 2,1213.] [3,246.] [12305.] *puram*
 [R. GORR. 1,68,16.] [2,73,14.] [MĀRK. P. 125,47.] "to someone"
 [MBH. 1,562.]
-  <sub>DCS 29 · attested</sub>
+  <sub>attested</sub>

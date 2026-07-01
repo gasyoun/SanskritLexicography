@@ -7,4 +7,4 @@
 
 - **RU:** *pā*¦ с *ud* (Nachträge), vgl. — место, приведённое под 1. *pā* с *ud*.
 - **EN:** *pā*¦ with *ud* (Addenda), vgl. the passage cited under 1. *pā* with *ud*.
-  <sub>DCS 5704 · attested</sub>
+  <sub>attested</sub>

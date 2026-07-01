@@ -10,4 +10,4 @@
 [SUŚR. 2,353,12.]
 - **EN:** — *vinis* to push to one side: *vāmenākṣi vinirbhujya hastena*
 [SUŚR. 2,353,12.]
-  <sub>DCS 2938 · attested</sub>
+  <sub>attested</sub>
