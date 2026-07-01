@@ -49,10 +49,17 @@ Dates are working-throughput; wall-clock adds weekends/rate-limit pauses. **Cost
 ~140k × $0.03–0.05 ≈ **$4,200–7,000** at intro rates (Batch API halves this for the noun bulk).
 
 ### ⚠️ Timeline risks
-- **RU schema NOT relaxed.** The StructuredOutput cap fix (per-sense `required` → 3 fields) was
-  applied **EN-path only**; RU keeps the strict 7-field schema, so RU giant-head cards will cap
-  the same way. **Before the bulk RU run, apply the same careful relaxation to RU and/or wire the
-  head-splitter** (`_pilot_gen_merged.py --root-split`), or budget for a residual + requeue tail.
+- ~~**RU schema NOT relaxed.**~~ **DONE 2026-07-01** — the StructuredOutput-cap relaxation
+  (per-sense `required` → `[tag, german, <field>]`, the 4 annotator fields optional) is now
+  applied to **both** the RU and EN paths in `gen_opt_harness2.py`, with the RU validation gate
+  (`validate_final_card_schema.py`) and the canonical `schemas/pwg_ru_final_card.schema.json`
+  relaxed to match (annotator fields validated only when present; selftest passes). RU giant-head
+  cards now validate with the same fix, so the RU bulk run starts clean (no repeat of the
+  2-requeue-round waste). Trade-off: on the few giant cards recovered only via the relaxation,
+  some annotator metadata (equivalence_type/source_type/stratum/differentia) may be absent (the
+  model still fills them on most cards; they are re-derivable). For **zero** metadata loss on the
+  giant heads, additionally wire the head-splitter (`_pilot_gen_merged.py --root-split`, lower
+  `HEAD_CIT_BUDGET`) so each part satisfies the full schema.
 - The FU1 30 roots are the *worst case* (verb-heavy, dense heads); the noun bulk of the dict is
   cheaper and faster per card, so these estimates are conservative for the full sweep.
 - Max **weekly caps** throttle sustained 24/7; the realistic sustained regime is the 8–16 h/day band.
