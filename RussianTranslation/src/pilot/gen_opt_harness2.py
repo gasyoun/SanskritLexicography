@@ -468,8 +468,14 @@ async function selfHeal(k) {
   const senses = []
   for (let i = 0; i < frs.length; i++) {
     const prompt = PREAMBLE + GRAMMAR + CONV_TR + '\\n\\n=== CARD ' + k + ' (fragment ' + (i + 1) + '/' + frs.length + ') ===\\n--- masked German (translatable only; {Tn}=masked span) ---\\n' + frs[i].skeleton
-    const res = await agent(prompt, { label: 'heal:' + k + '#' + (i + 1), phase: 'Translate', schema: CARDS_SCHEMA, model: '%(model)s', tools: [] })
-    const card = res && Array.isArray(res.cards) && res.cards[0]
+    // Per-fragment retry: a fragment is tiny, so retry it a few times before giving up on
+    // the whole card. Without this, one flaky fragment sinks a multi-fragment heal (the
+    // brU/man misses in the live test — 1 of 13/11 fragments failed under all-or-nothing).
+    let card = null
+    for (let att = 0; att < 3 && !card; att++) {
+      const res = await agent(prompt, { label: 'heal:' + k + '#' + (i + 1) + (att ? '(r' + att + ')' : ''), phase: 'Translate', schema: CARDS_SCHEMA, model: '%(model)s', tools: [] })
+      card = (res && Array.isArray(res.cards) && res.cards[0]) || null
+    }
     if (!card) return null
     const ph = (PHF[k] || [])[i] || []
     for (const rec of (card.records || [])) for (const s of (rec.senses || [])) {
