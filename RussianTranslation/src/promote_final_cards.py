@@ -168,10 +168,11 @@ def main():
     ap.add_argument('--dry-run', action='store_true')
     ap.add_argument('--no-backup', action='store_true')
     ap.add_argument('--merge', action='store_true',
-                    help='MERGE into the existing store by headword (key1): replace only the '
-                         'roots present in THIS run, keep every other root. Use for a per-root '
-                         'catch-up — the default full overwrite WIPES any root whose wf_output '
-                         'file is no longer on disk (the gam-RU loss mode).')
+                    help='MERGE into the existing store by SUB-CARD: replace only the sub-cards '
+                         'present in THIS run, keep every other row (including a root\'s already-'
+                         'translated sub-cards not in this run). Use for a per-root catch-up — the '
+                         'default full overwrite WIPES any root whose wf_output file is no longer '
+                         'on disk (the gam-RU loss mode).')
     args = ap.parse_args()
 
     paths = sorted(glob.glob(os.path.join(ROOT, args.glob)))
@@ -205,11 +206,15 @@ def main():
         print('  output was overwritten; re-run that root and re-run this script to complete it):')
         print('  ' + ', '.join('%s(%d)' % (r, per_root[r]['cards']) for r in thin))
 
-    # --merge: keep every root NOT in this run; replace only the promoted roots. Guards
-    # against the full-overwrite wipe when only a subset of wf_output files is on disk.
+    # --merge: replace only the SUB-CARDS present in this run, keep every other row.
+    # Sub-card granularity (not root) is deliberate: a per-root CATCH-UP promotes only the
+    # missing sub-cards, which are disjoint from the ones already in the store — a root-level
+    # replace would delete the existing sub-cards (the exact gam-RU loss we are fixing).
+    # Guards against the full-overwrite wipe when only a subset of wf_output files is on disk.
     kept = 0
     if args.merge and os.path.exists(args.store):
-        promoted_roots = {r['key1'] for r in rows}
+        promoted_subs = {r['subcard'] for r in rows}
+        touched_roots = {r['key1'] for r in rows}
         keep_rows = []
         with open(args.store, encoding='utf-8') as f:
             for line in f:
@@ -217,11 +222,11 @@ def main():
                 if not line:
                     continue
                 e = json.loads(line)
-                if e.get('key1') not in promoted_roots:
+                if e.get('subcard') not in promoted_subs:
                     keep_rows.append(e)
         kept = len(keep_rows)
-        print('\nMERGE: replacing %d root(s) %s; keeping %d row(s) from other roots'
-              % (len(promoted_roots), sorted(promoted_roots), kept))
+        print('\nMERGE: replacing %d sub-card(s) across root(s) %s; keeping %d existing row(s)'
+              % (len(promoted_subs), sorted(touched_roots), kept))
         rows = keep_rows + rows
 
     if args.dry_run:
