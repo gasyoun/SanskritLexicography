@@ -1,7 +1,11 @@
 # Renou language-state tagging
 
+<p align="right"><sub>Created: 24-06-2026 · Last updated: 01-07-2026</sub></p>
+
 Every dictionary headword/sense is classified into one of **Louis Renou's five
-states of Sanskrit** (*Histoire de la langue sanskrite*, 1956 — the five chapters),
+states of Sanskrit** (*Histoire de la langue sanskrite*, 1956 — the five chapters;
+[source PDF](https://github.com/gasyoun/VisualDCS/blob/main/docs/Histoire_de_la_langue_sanskrite_Renou_Louis.pdf),
+[verified table of contents](https://github.com/gasyoun/VisualDCS/blob/main/docs/Renou_1956_structure.md)),
 from **four independent, provenance-tagged signals**. The state is *diachronic /
 register* ("which Sanskrit is this attested in"), not semantic, and a word is
 **multi-label** (attested across eras carries all applicable states).
@@ -150,6 +154,19 @@ reads an inscription marker in the `<ls>` text (PWG `Inschr.`, MW/Apte `Inscr.`)
 `renou_sigla.SIGLUM_REGISTER` (+ `bhs`→`bauddha` wholesale). Only `hors_inde` stays 0
 (no source). Registers do **not** affect the state fields — the axis is complete.
 
+**Attestation-level register (corpus provenance, done).** The two routes above are
+**headword-level** (one register set per dictionary entry). [`renou_corpus_map.py`](src/renou_corpus_map.py)
+adds a third, **attestation-level** route: it resolves each `corpus_lexicon.jsonl` pairing's
+`genre` onto the same 20-register lattice (reusing `renou_register._genre_register`, plus a
+work-slug override for RV-vs-AV Saṃhitā and Buddhist kāvya, plus a supplement for corpus-only
+genres — Upaniṣad, commentary, darśana, tantra, kāma). Full coverage, no unmapped genres.
+`corpus_provenance.py --renou <form>` tags each Russian rendering with its register(s) and a
+per-query register profile; `renou_corpus_map.py` alone prints corpus-wide register counts
+(epic 61.0 %, rgveda 14.4 %, atharva 5.6 %, kavya 3.9 %, smrti 3.6 %, upanisad 3.5 %, karika
+2.6 %, katha 2.0 %, tantra 1.2 %, bhasya 1.2 %, bauddha 1.1 %, over all 1,091,528 aligned
+pairs). This is the register axis grounded in actual parallel-corpus usage rather than a
+dictionary's `<ls>` sigla — full write-up in [`CORPUS_PROVENANCE.md`](CORPUS_PROVENANCE.md#renou-register-layer-attestation-level).
+
 ## Use cases
 
 Both axes are per-sense, multi-label, and provenance-graded, so they answer queries a
@@ -185,6 +202,22 @@ flat headword list can't. Join any `{code}.renou.jsonl` to the Russian cards by 
 - **Headword genre profile** — the register set shows which text-types actually use a word
   (drama vs epic vs commentary), independent of its date.
 
+**Attestation-level register — *which register is this specific rendering from?***
+- **Per-sense register instead of per-headword** — `python src/corpus_provenance.py <form>
+  --renou` answers "which register does *this* Russian meaning belong to?" grounded in the
+  actual verse it was mined from, finer-grained than the headword-level `renou_register`
+  (a headword can span several registers; a single attestation sits in exactly one text).
+- **Corroborate or contest a dictionary's `<ls>` register** — compare a headword's
+  `renou_register` (from citation sigla) against its attestations' corpus registers; agreement
+  strengthens trust, disagreement flags a citation worth checking.
+- **Register×period distribution studies** — `renou_corpus_map.py`'s corpus-wide counts
+  (epic 61 %, ṛgveda 14.4 %, kāvya 3.9 %, bhāṣya 1.2 %, …) give a real-usage baseline to
+  compare against headword-level register coverage — where do dictionaries over/under-cite
+  a register relative to how often it's actually attested?
+- **Ground a translation choice in a cited register** — when justifying a `pwg_ru` style
+  pick, cite not just "this is a kāvya word" but the specific attested register of the
+  Russian rendering used, traceable to `work:passage`.
+
 The two axes compose: `(state, register, provenance)` is an evidence-graded coordinate per
 sense — e.g. *akṣobhya* = `III·V` / `purana·tantra·bauddha` / all-four-signals = "an Epic-
 and-Buddhist word, used in Purāṇa/Tantra/Buddhist registers, maximally corroborated." Six
@@ -218,37 +251,149 @@ Individual stages are also runnable standalone (`tag_dict_from_source.py CODE`,
 
 | Path | Committed? | What |
 |---|---|---|
-| `renou.py` | ✓ | state resolver + min-support policy (`filter_dcs_states`, `filter_dcs_registers`) |
-| `renou_sigla.py` | ✓ | Apte/Benfey/BHS siglum→state **and** `SIGLUM_REGISTER` (inline-dict register route) |
-| `renou_register.py` | ✓ | register axis: canonical `REGISTERS` lattice + `<ls>` register routes (`ls_registers`, dedicated `epig`) |
-| `build_ls_map.py`, `build_ls_map_mw.py` | ✓ | build the `<ls>` source maps |
-| `ls_source_map.json`, `ls_source_map_mw.json` | ✓ | curated source → state + genre/name (drives both axes) |
-| `build_dcs_renou.py` | ✓ | scan DCS corpus → lemma index: per-state `state_support` **and** per-register `register_support` |
-| `tag_dict_from_source.py`, `tag_mw_from_source.py` | ✓ | per-dict tagger — emits both `renou_*` (state) and `renou_register*` |
-| `enrich_renou_dcs.py`, `enrich_renou_bhs.py`, `enrich_renou_wisdomlib.py` | ✓ | the DCS / BHS / wisdomlib state enrichers (pass registers through) |
-| `annotate_renou.py`, `add_corpus_renou.py` | ✓ | per-sense card backfill; raw-text corpus augmenter |
-| `renou_pipeline.py` | ✓ | the driver (this system's entry point) |
-| `renou_portrait.py` | ✓ | editor badge: state label + register sub-label + low-info flags + oldest-sense reorder |
-| `renou_audit.py` | ✓ | inter-signal agreement audit — state over-tag suspects **and** register mode |
-| `dcs_lemma_renou.json`, `{code}.renou.jsonl`, `*_renou*.jsonl`, `renou_audit_report.md` | gitignored | derived indices + audit report (regenerated) |
+| [`renou.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/renou.py) | ✓ | state resolver + min-support policy (`filter_dcs_states`, `filter_dcs_registers`) |
+| [`renou_sigla.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/renou_sigla.py) | ✓ | Apte/Benfey/BHS siglum→state **and** `SIGLUM_REGISTER` (inline-dict register route) |
+| [`renou_register.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/renou_register.py) | ✓ | register axis: canonical `REGISTERS` lattice + `<ls>` register routes (`ls_registers`, dedicated `epig`) |
+| [`build_ls_map.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/build_ls_map.py), [`build_ls_map_mw.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/build_ls_map_mw.py) | ✓ | build the `<ls>` source maps |
+| [`ls_source_map.json`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/ls_source_map.json), [`ls_source_map_mw.json`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/ls_source_map_mw.json) | ✓ | curated source → state + genre/name (drives both axes) |
+| [`build_dcs_renou.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/build_dcs_renou.py) | ✓ | scan DCS corpus → lemma index: per-state `state_support` **and** per-register `register_support` |
+| [`tag_dict_from_source.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/tag_dict_from_source.py), [`tag_mw_from_source.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/tag_mw_from_source.py) | ✓ | per-dict tagger — emits both `renou_*` (state) and `renou_register*` |
+| [`enrich_renou_dcs.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/enrich_renou_dcs.py), [`enrich_renou_bhs.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/enrich_renou_bhs.py), [`enrich_renou_wisdomlib.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/enrich_renou_wisdomlib.py) | ✓ | the DCS / BHS / wisdomlib state enrichers (pass registers through) |
+| [`annotate_renou.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/annotate_renou.py), [`add_corpus_renou.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/add_corpus_renou.py) | ✓ | per-sense card backfill; raw-text corpus augmenter |
+| [`renou_pipeline.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/renou_pipeline.py) | ✓ | the driver (this system's entry point) |
+| [`renou_portrait.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/renou_portrait.py) | ✓ | editor badge: state label + register sub-label + low-info flags + oldest-sense reorder |
+| [`renou_audit.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/renou_audit.py) | ✓ | inter-signal agreement audit — state over-tag suspects **and** register mode |
+| [`renou_corpus_map.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/renou_corpus_map.py) | ✓ | attestation-level register: `corpus_lexicon.jsonl` genre → the 20-register lattice; corpus-wide register stats |
+| `dcs_lemma_renou.json`, `{code}.renou.jsonl`, `*_renou*.jsonl`, `renou_audit_report.md` | gitignored | derived indices + audit report (regenerated, not on GitHub) |
 
 The wisdomlib fetcher itself (`definitions.py`, producing `word_traditions.jsonl`)
 lives in the **SamudraManthanam** repo (`web/corpus_builder/wisdomlib/`); it is
 Cloudflare-gated per-IP, so the `wl` layer is partial (run gently from a residential
 connection). See that repo's wisdomlib README.
 
-## Provenance example
+## Provenance examples
 
+Ten actual records, **simple → tough**, pulled live from `pwg.renou.jsonl` /
+`mw.renou.jsonl` (2026-06-25 build). Each ends with a one-line conclusion — what
+that record teaches about the tagging system, not just what it says.
+
+**1. `aṃśakaraṇa` (PWG) — the floor case: one state, one signal, no register.**
 ```json
-{"iast": "akṣobhya",
- "renou_enriched": ["III","V"],
- "renou_provenance": {"III": ["dcs"], "V": ["dcs","bhs","wl"]},
- "renou_register": ["purana","tantra","bauddha"],
- "renou_register_provenance": {"purana": ["dcs"], "tantra": ["dcs"], "bauddha": ["dcs"]}}
+{"iast": "aṃśakaraṇa", "renou_enriched": ["IV"],
+ "renou_provenance": {"IV": ["ls"]}, "renou_register": [], "renou_register_provenance": {}}
 ```
-The actual MW record. Two orthogonal axes. **State:** `akṣobhya` is Epic (III) by corpus
-attestation, and Buddhist (V) by three signals — corpus, the BHS register, and
-wisdomlib's tradition tag (MW happens not to cite a Buddhist text for it; in the BHS
-dictionary the `ls` citation route fires too). **Register:** used in the Purāṇa, Tantra,
-and Buddhist registers (all by corpus). The fields are independent — the register set is
-never derived from the state, and vice versa.
+*Conclusion:* the minimum viable tag — a single `<ls>` citation (KAVIKALPADRUMA) puts it
+in Classical, nothing else fires because nothing else is attested. No register because
+no genre/citation signal maps to one. This is what most of the corpus looks like.
+
+**2. `agnitā` (PWG) — two states, two independent single-source signals, one register.**
+```json
+{"iast": "agnitā", "renou_enriched": ["I","IV"],
+ "renou_provenance": {"I": ["ls"], "IV": ["dcs"]},
+ "renou_register": ["brahmana"], "renou_register_provenance": {"brahmana": ["ls"]}}
+```
+*Conclusion:* the `<ls>` citation (Śatapatha Brāhmaṇa) plants state I *and* the register
+`brahmana` in one shot; `dcs` independently adds IV from later corpus attestation. Two
+signals agreeing on *nothing* in common is normal — they cover different eras, not the
+same claim twice.
+
+**3. `akaca` (PWG) — a state resting on the single weakest signal, alone.**
+```json
+{"iast": "akaca", "renou_enriched": ["V"],
+ "renou_provenance": {"V": ["bhs"]}, "renou_register": []}
+```
+*Conclusion:* `bhs`-only V is explicitly the weakest tier in the trust ladder (register
+attestation, not a semantic Buddhist claim — Edgerton's BHS dictionary happens to include
+this word). Trust grading means: don't read "V" here as "this is a Buddhist term," read
+it as "a word also found in the Buddhist-Sanskrit lexicographic tradition."
+
+**4. `akarā` (PWG) — one strong state next to one weak state, same entry.**
+```json
+{"iast": "akarā", "renou_enriched": ["IV","V"],
+ "renou_provenance": {"IV": ["ls"], "V": ["bhs"]}, "renou_register": []}
+```
+*Conclusion:* a card is never uniformly trustworthy — IV here is lexicographer-cited
+(strong), V is register-only (weak). A consumer has to grade *per state*, not per entry;
+collapsing this to "III states, done" would hide that half the tag is much softer than
+the other half.
+
+**5. `akāra` "the letter a" (PWG) — the homograph-collapse case named in the audit.**
+```json
+{"iast": "akāra", "renou_enriched": ["I","II","III","IV","V"],
+ "renou_provenance": {"I": ["dcs"], "II": ["dcs"], "III": ["ls","dcs"], "IV": ["dcs"], "V": ["dcs","bhs"]},
+ "renou_register": ["brahmana","upanisad","sutra","vyakarana","epic","purana","tantra","smrti","karika","bhasya","bauddha"]}
+```
+*Conclusion:* the `<ls>` citation only supports III (Manu, Bhagavadgītā); `dcs` inflates
+all five states because the DCS index is keyed by bare lemma, and *every* text that
+happens to name the letter "a" — across all eras — collapses onto this one entry. This
+is the exact mechanism `renou_audit.py` was built to catch (Validation, above) — a
+maximal I–V span here is a red flag, not a rich attestation.
+
+**6. `api` (PWG) — the named over-tag suspect, at full scale.**
+```json
+{"iast": "api", "renou_enriched": ["I","II","III","IV","V"],
+ "renou_provenance": {"I": ["ls","dcs"], "II": ["ls","dcs"], "III": ["ls","dcs"], "IV": ["ls","dcs"], "V": ["dcs","bhs"]},
+ "renou_register": ["rgveda","atharva","yajus","brahmana","upanisad","sutra","vyakarana","epic",
+                     "purana","tantra","smrti","karika","bhasya","katha","natya","kavya","bauddha"]}
+```
+*Conclusion:* unlike `akāra`, this maximal span is *not* a collapse artifact — `api` is a
+genuinely era-neutral particle with dense `ls` corroboration on four of five states (the
+audit's own example list: `ca, eva, api, idam` …). `renou_portrait` flags this as
+`renou_low_info: True` precisely so a UI de-emphasises a "this word spans I–V" badge that
+is true but tells an editor nothing.
+
+**7. `akheditva` (MW) — register with no corpus route at all: the dedicated Jaina path.**
+```json
+{"iast": "akheditva", "renou_enriched": ["V"],
+ "renou_provenance": {"V": ["ls"]},
+ "renou_register": ["jaina"], "renou_register_provenance": {"jaina": ["ls"]}}
+```
+*Conclusion:* `jaina` has exactly one route in the whole system — MW's own `Jain`/`Kalpas`
+citation sigla — because `dcs`'s genre labels never distinguish Jaina texts. Where `dcs`
+is silent, the register axis still works, but only as strong as the one signal behind it.
+
+**8. `akratu` (MW) — the register axis citing a commentary, independent of the state axis.**
+```json
+{"iast": "akratu", "renou_enriched": ["I","IV"],
+ "renou_provenance": {"I": ["ls","dcs"], "IV": ["ls","dcs"]},
+ "renou_register": ["rgveda","atharva","upanisad","sutra","bhasya"],
+ "renou_register_provenance": {"bhasya": ["ls"], "rgveda": ["ls","dcs"]}}
+```
+*Conclusion:* `bhasya` fires here because MW cites a commentary siglum (Sāyaṇa-class) for
+this word, wholly separate from the `rgveda` register the same word also carries — one
+headword, cited in both the Vedic hymn tradition *and* the scholiast tradition that glosses
+it, exactly the kind of cross-register profile the axis was built to expose.
+
+**9. `akṣayanīvī` (MW) — a register with *zero* state: the axes' independence at its limit.**
+```json
+{"iast": "akṣayanīvī", "renou_enriched": [], "renou_provenance": {},
+ "renou_register": ["epig"], "renou_register_provenance": {"epig": ["ls"]}}
+```
+*Conclusion:* "perpetual endowment," an epigraphic donative term — the dedicated `epig`
+detector (an `Inscr.` marker in the `<ls>` text) fires with **no Renou state at all**,
+because inscriptions aren't one of the five chapters. This is the cleanest proof that
+register is not derived from state: an entry can have a rich register and an empty state,
+or vice versa.
+
+**10. `gam` vs. `gamemahi` (MW headword vs. corpus attestation) — the toughest case: two
+axes, two independent systems, disagreeing on purpose.**
+```json
+// headword-level (mw.renou.jsonl) — the root, maximally frequent, low-info by construction
+{"iast": "gam", "renou_enriched": ["I","II","III","IV","V"],
+ "renou_register": ["rgveda","atharva","yajus","brahmana","upanisad","sutra","vyakarana",
+                     "epic","purana","tantra","smrti","karika","bhasya","katha","natya","kavya","bauddha"]}
+// attestation-level (corpus_provenance.py gamemahi --renou) — one specific inflected form
+gamemahi -> соединимся      (n=1)  register: atharva   source: 01_atharvaveda:1.4
+gamemahi -> да соединимся   (n=1)  register: atharva   source: 07_atharvaveda:10.4
+gamemahi -> повстречаться   (n=1)  register: rgveda    source: 07_rigveda:81.2
+gamemahi -> хотим встретиться (n=1) register: rgveda   source: 06_rigveda:54.2
+```
+*Conclusion:* the headword `gam` carries all 17 registers — true, but useless (it is the
+`renou_low_info` case at its most extreme, same mechanism as `api` above). The specific
+form `gamemahi` narrows that to exactly two registers, each traceable to an exact verse
+and a specific published Russian rendering. This is the whole point of the attestation-level
+layer in [`CORPUS_PROVENANCE.md`](CORPUS_PROVENANCE.md#renou-register-layer-attestation-level):
+per-*sense* register beats per-*headword* register, and it composes with the state axis the
+same way — independent, provenance-graded, and only as informative as the evidence actually is.
+
+<p align="right"><sub>Dr. Mārcis Gasūns</sub></p>
