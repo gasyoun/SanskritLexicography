@@ -17,6 +17,11 @@ Gates (per non-null card -> record -> sense, comparing `german` vs `english`):
     MISSING-EN english empty while german had gloss prose to translate [coverage]
     DUP        two senses in one record share identical english       [sense-duplicate]
 
+  markup-loss (pwg_ru/DharmaMitra crosswalk, FU1_PLAN.md; SOFT, never blocks --strict):
+    MARKUP-LOSS {%..%} gloss-wrapper / <div> pairs dropped while the prose survives —
+                the dominant EN residual per FABLE_JUDGE_S7 (~47% of rows); tracked here so
+                it stops riding on judge samples, per that memo's planned gate.
+
   EN-specific semantic (what replaces the RU checks; SOFT QA signals):
     DE-RESIDUE untranslated German left in the english gloss prose (umlaut/eszett or an
                unambiguous German token: und, der, eig., überh., übertr., ...)
@@ -52,6 +57,8 @@ DEFAULT_MW_TM = os.path.join(SRC, 'mw_en_tm.json')
 LS = re.compile(r'<ls\b')
 SAN = re.compile(r'\{#.*?#\}', re.S)
 AB = re.compile(r'<(?:ab|lex|lang)\b')
+GLOSS = re.compile(r'\{%.*?%\}', re.S)
+DIVTAG = re.compile(r'<div\b')
 CYR = re.compile(r'[Ѐ-ӿ]')
 LS_SPAN = re.compile(r'<ls[^>]*>.*?</ls>', re.S)
 TAG = re.compile(r'<[^>]+>')
@@ -123,6 +130,11 @@ def audit_sense(german, english):
     sab, oab = len(AB.findall(g)), len(AB.findall(e))
     if sab > 0 and (sab - oab) >= 2:
         hard.append('AB-LOSS(%d/%d)' % (oab, sab))
+
+    smk = len(GLOSS.findall(g)) + len(DIVTAG.findall(g))
+    omk = len(GLOSS.findall(e)) + len(DIVTAG.findall(e))
+    if smk > 0 and omk < smk:
+        soft.append('MARKUP-LOSS(%d/%d)' % (omk, smk))
 
     ep = prose(e)
     if CYR.search(ep):

@@ -484,6 +484,16 @@ def markup_sigla_risks(sense, russian, german, grammar, tag):
     if TAG_TOKEN.search(russian) and russian.count('<') != russian.count('>'):
         add_risk(risks, 'broken_markup_token',
                  'Russian field has unbalanced angle brackets around markup', tag=tag)
+    # markup-loss (pwg_ru/DharmaMitra crosswalk, FU1_PLAN.md): the {%..%} gloss-wrapper pair
+    # itself gets dropped while the underlying prose is still translated correctly — distinct
+    # from untranslated_braced_german_gloss above (which fires when the wrapper survives but
+    # its content wasn't rendered). Soft/low severity: meaning is intact, only the wrapper is
+    # gone, so it never blocks the gate.
+    sgloss, dgloss = len(BRACED_GLOSS.findall(german or '')), len(BRACED_GLOSS.findall(russian or ''))
+    if sgloss > 0 and dgloss < sgloss:
+        add_risk(risks, 'markup_wrapper_dropped',
+                 'braced gloss wrapper {%%..%%} dropped: %d source vs %d target' % (sgloss, dgloss),
+                 tag=tag)
     return risks
 
 
