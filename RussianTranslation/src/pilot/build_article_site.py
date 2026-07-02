@@ -239,6 +239,7 @@ def load_en_full(root):
 def make_sense(tag, de, ru, en, dcs, src):
     return {
         'tag': str(tag), 'has_ru': bool(ru), 'has_en': bool(en),
+        'de_raw': de or '',   # raw DE source (keeps <ls n=..>); not emitted, used for citation analysis
         'de_html': _render(de, 'html'), 'ru_html': _render(ru, 'html'), 'en_html': _render(en, 'html'),
         'de_md': _render(de, 'md'), 'ru_md': _render(ru, 'md'), 'en_md': _render(en, 'md'),
         'dcs': dcs_count(dcs), 'src': src or '',
