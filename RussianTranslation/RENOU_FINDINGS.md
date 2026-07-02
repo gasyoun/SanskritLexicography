@@ -118,6 +118,29 @@ tool [`src/nominal_style.py`](src/nominal_style.py). This is the strongest singl
 the project: a named 1956 thesis confirmed at corpus scale, with the predicted mechanism
 (participle/nominal rise) visible in the same numbers.
 
+## F6. Every 19th/20th-century dictionary under-cites the epic relative to actual usage — **[data]**
+
+H4 (dictionary citation bias): the corpus baseline puts **epic at 61.0%** of all attested
+usage — by far the largest register, ~4× rgveda (14.4%), ~16× kāvya (3.9%). Compared
+against each dictionary's own `<ls>`-citation register profile (entry-level shares, log2
+bias = log2(citation_share / usage_share), 1,000-rep bootstrap CI), **the epic is
+under-cited in all 8 dictionaries without exception** — PWG log2 = −1.65, MW −2.24, PW
+−4.21, AP −2.54, AP90 −2.34, BEN −0.97, SCH −6.62, BHS −6.86 (all CIs exclude zero).
+Rgveda is under-cited in 7/7 dictionaries where the comparison is reachable. Kāvya runs
+the other way in 5/8 dictionaries (PWG +1.37, MW +0.26, AP +1.11, AP90 +1.90, BEN +2.13 —
+over-cited relative to usage) and under-cited in the 3 sparsest citation profiles (PW,
+SCH, BHS). This is a direct, deterministic measurement of Renou's philological-taste
+hypothesis: the great narrative bulk of the tradition is comparatively invisible to
+19th-century lexicographic citation practice, while classical kāvya is disproportionately
+foregrounded in the citation-dense dictionaries. Full tables, method, and limitations
+(units differ — entry-level citation vs attestation-level usage; instance-level citation
+counts not recoverable from the current tagger index — the acceptance criterion's
+cross-unit sign check is partial pending that data):
+[RENOU_H4_CITATION_BIAS.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/RENOU_H4_CITATION_BIAS.md);
+tool [src/renou_h4_citation_bias.py](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/renou_h4_citation_bias.py);
+figures [research/figures/renou/h4_citation_vs_usage_{dict}.svg](https://github.com/gasyoun/SanskritLexicography/tree/master/RussianTranslation/research/figures/renou).
+Computed by Sonnet 5 (`claude-sonnet-5`).
+
 ---
 
 ## Reproducibility
