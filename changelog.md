@@ -9,6 +9,17 @@ then **cut a new version every time the changelog is updated** (promote
 
 ## [Unreleased]
 
+## [0.0.37] - 2026-07-02
+
+### Changed — FINDINGS.md: § signs + right-aligned small Source lines
+- Every finding number now carries the paragraph sign (`### §16. …`, mirrored in the index;
+  anchors unchanged — GitHub strips `§` from slugs). Every **Source** paragraph is right-aligned
+  small type via `<div align="right">` + `<sub>` — the one **sanctioned HTML** in the FINDINGS
+  registries (grey text is impossible on GitHub around clickable links; right+small is the
+  agreed stand-in). Same treatment in
+  [`Uprava/FINDINGS.md`](https://github.com/gasyoun/Uprava/blob/main/FINDINGS.md) (§1–§8).
+  The global no-HTML-in-md rule, the md-hygiene skill, and memory carry the matching carve-out.
+
 ## [0.0.36] - 2026-07-02
 
 ### Changed — FINDINGS.md: numbered findings + Source as own paragraph
