@@ -23,14 +23,15 @@ do), and a blockquoted (`> `) **Source** paragraph linking the exact statement a
 with a `— repo · date` tag — the `>` gives the Source line its left indent and muted rendering
 in plain Markdown; no HTML in this file, ever. Keep findings grounded (a number, a file, a
 probe), never a hunch. **Numbers are append-only:** a new finding takes the next free number
-(currently §42) whatever its section, so existing numbers never shift; when a finding is later
+(currently §43) whatever its section, so existing numbers never shift; when a finding is later
 refuted or superseded, strike it and say why — never reuse its number.
 
 ## Index
 
 **Grammar & morphology data**
 
-- [§1. Whitney accent-mobility rules are machine-encodable](#1-whitney-accent-mobility-rules-are-machine-encodable) — the Zaliznyak a–f accent axis is an encoding task, not a missing source; VedaWeb 2.0 validates.
+- [§1. Whitney accent-mobility rules are machine-encodable](#1-whitney-accent-mobility-rules-are-machine-encodable) — the Zaliznyak a–f accent axis is an encoding task, not a missing source; VedaWeb 2.0 validates. **Encoded 02-07-2026** → WhitneyRoots `crosswalk/accent_rules.json`.
+- [§42. Whitney self-contradicts on derivative ī-stem gen.pl accent](#42-whitney-self-contradicts-on-derivative-ī-stem-genpl-accent) — §320 "not thrown forward" vs §319a RV "usually" shifts vs §356's own printed nadī́nām; encode as a per-lemma variant, not a rule.
 - [§2. Homonym token-splitting has a hard morphological ceiling](#2-homonym-token-splitting-has-a-hard-morphological-ceiling) — only 5 of 38 DCS-lumped groups are gaṇa-splittable; the rest need gloss adjudication.
 - [§3. The Warnemyr scrape union-smears homonym classes](#3-the-warnemyr-scrape-union-smears-homonym-classes) — local Whitney class files merge homonyms' classes; derive from the live paradigm pages.
 - [§4. PWG nominal grammar compresses into 335 paradigm tokens](#4-pwg-nominal-grammar-compresses-into-335-paradigm-tokens) — 98,639 of 123,366 entries carry a Zaliznyak-style token.
@@ -116,6 +117,11 @@ Lubotsky) at the same locations, and bulk `GET /api/resources/{id}/export`. So p
 collect attested inflected+accented forms, bucket by morphology, and validate a generated paradigm.
 **CC BY 4.0**, in-ecosystem (C-SALT/CDSL). The accent axis is *unblocked and de-risked* — only the
 Whitney-rule encoding + the join remain. (The legacy `/rigveda/api/search` is superseded by 2.0.)
+**Status 02-07-2026: the encoding is DONE** — Fable 5 (`claude-fable-5`) formalized the rules as
+[`crosswalk/accent_rules.json`](https://github.com/gasyoun/WhitneyRoots/blob/main/crosswalk/accent_rules.json)
+(18 rules, 19-cell matrix, 16 lexical exceptions, recorded calls D1–D11) with a Sonnet-runnable
+[validation spec](https://github.com/gasyoun/WhitneyRoots/blob/main/docs/ACCENT_VALIDATION_SPEC.md);
+only the validation run + the a–f emission remain. One contradiction found → §42.
 
 > **Source:** [`ZALIZNYAK_INDEX.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/ZALIZNYAK_INDEX.md)
 > §"Vedic accent mobility" + `WhitneyRoots/src/whitney_sections.json` §§315–319 — RussianTranslation · 2026-06-29
@@ -167,6 +173,24 @@ tie 2 / ON 1) showed injecting it does NOT improve DE→RU translation, so portr
 
 > **Source:** [`ZALIZNYAK_INDEX.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/ZALIZNYAK_INDEX.md)
 > (+ `src/headword_index.tsv`, `src/reverse_paradigm_index.json`) — RussianTranslation · 2026-06-29
+
+### §42. Whitney self-contradicts on derivative ī-stem gen.pl accent
+
+**Whitney's Grammar gives THREE mutually incompatible answers for the genitive-plural accent of
+derivative oxytone ī/ū-stems — the cell must be encoded as a per-lemma variant, never a rule.**
+Evidence (all read verbatim from the ingested `WhitneyRoots/src/whitney_sections.json` during the
+02-07-2026 accent-axis encoding): **§320** — derivative long-vowel stems behave like short-vowel
+stems "save that the tone is not thrown forward upon the ending in gen. plural"; **§319a** — "In
+RV., even derivative ī-stems show usually the same shift: thus, bahvīnā́m"; **§356** — Whitney's
+own Vedic paradigm prints `rathī́nām, nadī́nām, tanū́nām` (no shift). The rest of the accent system
+encoded cleanly: 18 rules, only this one cell is internally contradictory.
+Implication: any accent generator must treat derivative ī/ū gen.pl as free variation pending
+corpus adjudication — the [ACCENT_VALIDATION_SPEC](https://github.com/gasyoun/WhitneyRoots/blob/main/docs/ACCENT_VALIDATION_SPEC.md)
+marks it a measurement target (report the empirical `-īnā́m` vs `-ī́nām` split by lemma type,
+adjective bahvī́-type vs noun nadī́-type). Do not "fix" the disagreement by picking a side.
+
+> **Source:** [`crosswalk/accent_rules.json`](https://github.com/gasyoun/WhitneyRoots/blob/main/crosswalk/accent_rules.json)
+> R13/D3 (+ R14) — WhitneyRoots · 2026-07-02, Fable 5 (`claude-fable-5`)
 
 ## Corpus & parallel-text data
 
