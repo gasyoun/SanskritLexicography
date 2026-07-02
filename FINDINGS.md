@@ -154,6 +154,31 @@ a probe), never a hunch. When a finding is later refuted or superseded, strike i
   **Source:** csl-guides/.ai_state.md + csl-apidev/.ai_state.md (the `agni`/`agniH` resolver note); markup per
   [`v02/ap90/ap90.txt`](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/ap90/ap90.txt). — csl-guides / csl-apidev / csl-orig · 2026-06
 
+- **~9 % of "typo" headword corrections in the early dictionaries are really COLLISIONS — the
+  correct spelling already exists as its own separate entry, so a `<k1>` respell would create a
+  duplicate headword or clobber apparatus, not fix a typo.**
+  Evidence: source-verification of all 122 SanskritSpellCheck FILE-FIRST candidates vs `csl-orig`
+  (02-07-2026): 11/122 are dual-listings — YAT 5 (wrong+right both attested, often cross-referenced
+  "Idem": `vizwABU/vizWABU` even share an identical gloss 10 L-ids apart), MW 2 (`kattfRa` already
+  exists at L42680 beside `kattfna`; `Bawwaraka` short-a is an `L.`-sourced lexicographers' variant),
+  PWG 2 (the `duzWu` "entry" is an errata note about an *unrelated* correction; `pfzwavanDu`/`pfzwabanDu`
+  both independently glossed), PW 1 (`*hemana` is Böhtlingk's own `*`-marked constructed form). Plus
+  1 more (`YAT RiS`) is Dhātupāṭha ṇopadeśa root notation, not a typo. Full verdicts:
+  [`file_first_verified.tsv`](https://github.com/drdhaval2785/SanskritSpellCheck/blob/master/corrections_draft/file_first_verified.tsv).
+  Implication: never bulk-respell a headword-correction list — a filing must offer a third,
+  *editorial* category (merge vs respell vs leave) for collision pairs; check whether the "right"
+  form already exists as its own entry before proposing any respell.
+  **Source:** [`VERIFICATION_2026_07.md`](https://github.com/drdhaval2785/SanskritSpellCheck/blob/master/corrections_draft/VERIFICATION_2026_07.md) — SanskritSpellCheck · 2026-07
+
+- **A verified correction queue DECAYS against the live `csl-orig` — upstream fixes land between
+  triage and filing.**
+  Evidence: 1 of 122 FILE-FIRST candidates (`SHS kARqapfzwa→kARqapfzWa`, triaged June 2026) was
+  already fixed upstream by 02-07-2026 — the correct form exists as its own entry (id 9855), the
+  wrong form is gone. ~1 week of queue age ≈ 0.8 % decay on this batch.
+  Implication: re-verify every candidate against the current `csl-orig` immediately before filing
+  or applying; a stale row filed upstream reads as bot noise to the maintainers.
+  **Source:** [`file_first_verified.tsv`](https://github.com/drdhaval2785/SanskritSpellCheck/blob/master/corrections_draft/file_first_verified.tsv) (SHS DROP row) — SanskritSpellCheck · 2026-07
+
 ## Encoding & normalization
 
 - **IAST Unicode collides and lossily normalises if you're naïve.**
