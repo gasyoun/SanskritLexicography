@@ -3,11 +3,11 @@
 `pa_s~~h0_zz_pw00`
 
 
-**1)** — 1〉 sehen, sehen können, das Augenlicht haben. Mit *na* nicht sehen, blind sein [Spr. 7826].
+**1)** — 1〉 sehen, sehen können, das Augenlicht haben. Mit *na* nicht sehen, blind sein [Spr. 7826](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7826).
 
-- **RU:** — 1〉 видеть, быть способным видеть, иметь зрение. С *na* не видеть, быть слепым [Spr. 7826].
+- **RU:** — 1〉 видеть, быть способным видеть, иметь зрение. С *na* не видеть, быть слепым [Spr. 7826](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7826).
 - **EN:** **1.** √*paś*; only present stem *paśya* Act. Med. (mostly metrical).
-— 1) to see, to be able to see, to have the use of one's eyes. With *na* not to see, to be blind [Spr. 7826].
+— 1) to see, to be able to see, to have the use of one's eyes. With *na* not to see, to be blind [Spr. 7826](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7826).
   <sub>attested</sub>
 
 **2)** — 2〉 sehen erblicken, wahrnehmen, bemerken, gewahrwerden.
@@ -261,10 +261,10 @@
 - **EN:** — 3) to direct one's thoughts toward.
   <sub>attested</sub>
 
-**45)** — 4〉 kennen, erkennen, — als (mit doppeltem Acc.). — *paripaśyate* [PAÑCAT. 199,10]. Fehlerhaft für *˚pacyate*.
+**45)** — 4〉 kennen, erkennen, — als (mit doppeltem Acc.). — *paripaśyate* [PAÑCAT. 199,10](https://sanskrit-lexicon-scans.github.io/pantankose/app2?199,10). Fehlerhaft für *˚pacyate*.
 
-- **RU:** — 4〉 знать, узнавать, — как (с двойным Acc.). — *paripaśyate* [PAÑCAT. 199,10]. Ошибочно вместо *˚pacyate*.
-- **EN:** — 4) to know, to recognize, — as (with double Acc.). — *paripaśyate* [PAÑCAT. 199,10]. Erroneous for *˚pacyate*.
+- **RU:** — 4〉 знать, узнавать, — как (с двойным Acc.). — *paripaśyate* [PAÑCAT. 199,10](https://sanskrit-lexicon-scans.github.io/pantankose/app2?199,10). Ошибочно вместо *˚pacyate*.
+- **EN:** — 4) to know, to recognize, — as (with double Acc.). — *paripaśyate* [PAÑCAT. 199,10](https://sanskrit-lexicon-scans.github.io/pantankose/app2?199,10). Erroneous for *˚pacyate*.
   <sub>attested</sub>
 
 **46)** — Mit *pra*
@@ -326,10 +326,10 @@
 - **EN:** — 10) to have right insight.
   <sub>attested</sub>
 
-**56)** — 11〉 halten für, mit doppeltem Acc. [Spr. 7764].
+**56)** — 11〉 halten für, mit doppeltem Acc. [Spr. 7764](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7764).
 
-- **RU:** — 11〉 считать, принимать за, с двойным Acc. [Spr. 7764].
-- **EN:** — 11) to take for, with double Acc. [Spr. 7764].
+- **RU:** — 11〉 считать, принимать за, с двойным Acc. [Spr. 7764](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7764).
+- **EN:** — 11) to take for, with double Acc. [Spr. 7764](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7764).
   <sub>attested</sub>
 
 **57)** — Mit *abhipra* (*pra-abhi*). hinausschauen auf, sich umsehen nach.
@@ -488,10 +488,10 @@
 - **EN:** — With *prasam* to take properly into consideration [MĀN. ŚR. 1,1,1].
   <sub>attested</sub>
 
-**1)** **2.** *paś*¦ _f._ Blick oder Auge Nur *paḍbhis* [ṚV. 4,2,12].
+**1)** **2.** *paś*¦ _f._ Blick oder Auge Nur *paḍbhis* [ṚV. 4,2,12](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.002.html#rv04.002.12).
 
-- **RU:** **2.** *paś*¦ _f._ взгляд или глаз Только *paḍbhis* [ṚV. 4,2,12].
-- **EN:** 2. *paś*; _f._ glance or eye. Only *paḍbhis* [ṚV. 4,2,12].
+- **RU:** **2.** *paś*¦ _f._ взгляд или глаз Только *paḍbhis* [ṚV. 4,2,12](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.002.html#rv04.002.12).
+- **EN:** 2. *paś*; _f._ glance or eye. Only *paḍbhis* [ṚV. 4,2,12](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.002.html#rv04.002.12).
   <sub>attested</sub>
 
 **1)** **3.** √*paś*¦, *pāśayati* s. !√*pāśay*.

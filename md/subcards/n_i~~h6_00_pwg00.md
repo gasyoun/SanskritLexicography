@@ -11,7 +11,7 @@
 - **EN:** 1. *nī*¦ with *abhi*, partic. *˚nīta* attainable and *anabhinīta* unattainable
 [PAT. a. a. O. 3,95,a.]
 — *pari* to abduct, carry off
-[ṚV. 6,4,6.]
+[ṚV. 6,4,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.004.html#rv06.004.06)
 — *atipra*
 [ĀŚV. ŚR. 2,6,9. 19,1.]
 
@@ -21,10 +21,10 @@
   <sub>attested</sub>
 
 **entführen)** — *pari* entführen
-[ṚV. 6,4,6.]
+[ṚV. 6,4,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.004.html#rv06.004.06)
 
 - **RU:** — *pari* похищать, уводить
-[ṚV. 6,4,6.]
+[ṚV. 6,4,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.004.html#rv06.004.06)
   <sub>attested</sub>
 
 **sense-group-9)** — *atipra*

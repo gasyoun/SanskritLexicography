@@ -3,14 +3,14 @@
 `_bid~~h0_zz_pw00`
 
 
-**root-header)** **1.** √*bhid*¦, *bhadati*, *bhinatti*; ausnahmsweise auch Med. (*bhindāna* [ṚV. 6,27,6]).
+**root-header)** **1.** √*bhid*¦, *bhadati*, *bhinatti*; ausnahmsweise auch Med. (*bhindāna* [ṚV. 6,27,6](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.027.html#rv06.027.06)).
 
-- **RU:** **1.** √*bhid*¦, *bhadati*, *bhinatti*; в виде исключения также Med. (*bhindāna* [ṚV. 6,27,6]).
+- **RU:** **1.** √*bhid*¦, *bhadati*, *bhinatti*; в виде исключения также Med. (*bhindāna* [ṚV. 6,27,6](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.027.html#rv06.027.06)).
   <sub>attested</sub>
 
-**1)** — 1〉 spalten, einbrechen, ein Loch in Etwas schlagen, durchstechen, durchbrechen, zersprengen, aufreissen, -schlitzen. *setum*, *maryādām*, *sthitim*, *velām* einen Damm, Schranken, das Ufer durchbrechen. Ein Planet oder Komet durchbricht eines Stern, wenn er durch ihn durchgeht. Pass. *bhidyate*, *˚ti* (metrisch, aber auch bei [BAUDH.] im [Comm. zu ĀPAST. ŚR. 5,29,12]; *bhindatām* [MBH. 6,4125] fehlerhaft für *bhidyatām*) auch in intransit. Bed. bersten. *bhinna* zerschlagen, zerbrochen u. s. w.
+**1)** — 1〉 spalten, einbrechen, ein Loch in Etwas schlagen, durchstechen, durchbrechen, zersprengen, aufreissen, -schlitzen. *setum*, *maryādām*, *sthitim*, *velām* einen Damm, Schranken, das Ufer durchbrechen. Ein Planet oder Komet durchbricht eines Stern, wenn er durch ihn durchgeht. Pass. *bhidyate*, *˚ti* (metrisch, aber auch bei [BAUDH.] im [Comm. zu ĀPAST. ŚR. 5,29,12]; *bhindatām* [MBH. 6,4125](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.4125) fehlerhaft für *bhidyatām*) auch in intransit. Bed. bersten. *bhinna* zerschlagen, zerbrochen u. s. w.
 
-- **RU:** 1〉 расщеплять, взламывать, пробивать отверстие в чём-либо, прокалывать, прорывать, взрывать, разрывать, разрезать. *setum*, *maryādām*, *sthitim*, *velām* прорывать плотину, преграды, берег. Планета или комета «прорывает» звезду, когда проходит сквозь неё. Pass. *bhidyate*, *˚ti* (метрически, но также у [BAUDH.] в [Comm. zu ĀPAST. ŚR. 5,29,12]; *bhindatām* [MBH. 6,4125] ошибочно вместо *bhidyatām*), также в intransit. Bed. трескаться, лопаться. *bhinna* разбитый, сломанный u. s. w.
+- **RU:** 1〉 расщеплять, взламывать, пробивать отверстие в чём-либо, прокалывать, прорывать, взрывать, разрывать, разрезать. *setum*, *maryādām*, *sthitim*, *velām* прорывать плотину, преграды, берег. Планета или комета «прорывает» звезду, когда проходит сквозь неё. Pass. *bhidyate*, *˚ti* (метрически, но также у [BAUDH.] в [Comm. zu ĀPAST. ŚR. 5,29,12]; *bhindatām* [MBH. 6,4125](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.4125) ошибочно вместо *bhidyatām*), также в intransit. Bed. трескаться, лопаться. *bhinna* разбитый, сломанный u. s. w.
   <sub>attested</sub>
 
 **2)** — 2〉 brechen in übertr. Bed. so v. a. vertreiben, verschwinden —, zu Nichte machen; Pass. zu Nichte werden. *bhinna* zu Nichte gemacht [104,27].
@@ -78,9 +78,9 @@
 - **RU:** — Caus. *bhedayati*
   <sub>attested</sub>
 
-**caus-1)** — 1〉 spalten, brechen, zerschlagen [MBH. 3,135,52].
+**caus-1)** — 1〉 spalten, brechen, zerschlagen [MBH. 3,135,52](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?3,135,52).
 
-- **RU:** 1〉 раскалывать, ломать, разбивать [MBH. 3,135,52].
+- **RU:** 1〉 раскалывать, ломать, разбивать [MBH. 3,135,52](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?3,135,52).
   <sub>attested</sub>
 
 **caus-2)** — 2〉 zerstören, zu Nichte machen.
@@ -128,9 +128,9 @@
 - **RU:** 1〉 раскалывать вдоль, разрезать вдоль.
   <sub>attested</sub>
 
-**pref-ava-2)** — 2〉 Pass. sich öffnen. — *ko 'nubhindyāt* [MBH. 2,2483] fehlerhaft für *ko nu bhi˚*.
+**pref-ava-2)** — 2〉 Pass. sich öffnen. — *ko 'nubhindyāt* [MBH. 2,2483](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2483) fehlerhaft für *ko nu bhi˚*.
 
-- **RU:** 2〉 Pass. открываться. — *ko 'nubhindyāt* [MBH. 2,2483] ошибочно вместо *ko nu bhi˚*.
+- **RU:** 2〉 Pass. открываться. — *ko 'nubhindyāt* [MBH. 2,2483](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2483) ошибочно вместо *ko nu bhi˚*.
   <sub>attested</sub>
 
 **pref-abhi)** — Mit *antar* auf Verrath sinnen [DAŚAK. 19,8].
@@ -193,9 +193,9 @@
 - **RU:** a〉 предавать.
   <sub>attested</sub>
 
-**pref-pra-5b)** — b〉 versehen —, ausgestattet mit (im Comp. vorangehend) [BHĀG. P. 3,2,5]. [PAÑCAR. 4,6,7].
+**pref-pra-5b)** — b〉 versehen —, ausgestattet mit (im Comp. vorangehend) [BHĀG. P. 3,2,5](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,2,5). [PAÑCAR. 4,6,7](https://sanskrit-lexicon-scans.github.io/pancar/app1?4,6,7).
 
-- **RU:** b〉 снабжённый, наделённый (в Comp. предшествующем) [BHĀG. P. 3,2,5]. [PAÑCAR. 4,6,7].
+- **RU:** b〉 снабжённый, наделённый (в Comp. предшествующем) [BHĀG. P. 3,2,5](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,2,5). [PAÑCAR. 4,6,7](https://sanskrit-lexicon-scans.github.io/pancar/app1?4,6,7).
   <sub>attested</sub>
 
 **pref-prati-pra)** — Mit *prod*, *prodbhinna* hervorgeschossen, hervorgebrochen.
@@ -268,9 +268,9 @@
 - **RU:** 2〉 *vinirbhinna* открывшийся.
   <sub>attested</sub>
 
-**pref-pra-vi)** — Mit *parā* durchbohren, verwunden [ŚAT. BR. 5,3,5,29].
+**pref-pra-vi)** — Mit *parā* durchbohren, verwunden [ŚAT. BR. 5,3,5,29](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?5,3,5,29).
 
-- **RU:** С *parā* пронзать, ранить [ŚAT. BR. 5,3,5,29].
+- **RU:** С *parā* пронзать, ранить [ŚAT. BR. 5,3,5,29](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?5,3,5,29).
   <sub>attested</sub>
 
 **pref-sam-header)** — Mit *pari* Pass. durchbrochen werden in übertr. Bed. *paribhinna*

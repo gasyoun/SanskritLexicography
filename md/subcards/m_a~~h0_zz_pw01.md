@@ -93,8 +93,8 @@
 **§ati2)** — 2〉 abmessen; Pass. gemessen —, bestimmt werden [ĀRYABH. 3,1].
 - **EN:** — 2) "to measure off;" Pass. "to be measured —, to be determined" [ĀRYABH. 3,1].
 
-**§ati3)** — 3〉 sich von Jmd oder Etwas (Acc.) eine Vorstellung machen, sich Etwas (auch Gen. [BHĀG. P.]) denken, — als oder wie (Acc. mit *iva* oder *yathā*; [MBH. 12,51,8] ist *vayḥ* zu *mghasya* zu ergänzen). *anumita* wovon man sich eine Vorstellung gebildet hat, was man sich gedacht hat.
-- **EN:** — 3) "to form an idea of someone or something" (Acc.), "to think something" (also Gen. [BHĀG. P.]) "— to be or as" (Acc. with *iva* or *yathā*; [MBH. 12,51,8] is to be supplied with *vayḥ* to *mghasya*). *anumita* "that of which one has formed an idea, what one has thought".
+**§ati3)** — 3〉 sich von Jmd oder Etwas (Acc.) eine Vorstellung machen, sich Etwas (auch Gen. [BHĀG. P.]) denken, — als oder wie (Acc. mit *iva* oder *yathā*; [MBH. 12,51,8](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,51,8) ist *vayḥ* zu *mghasya* zu ergänzen). *anumita* wovon man sich eine Vorstellung gebildet hat, was man sich gedacht hat.
+- **EN:** — 3) "to form an idea of someone or something" (Acc.), "to think something" (also Gen. [BHĀG. P.]) "— to be or as" (Acc. with *iva* or *yathā*; [MBH. 12,51,8](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,51,8) is to be supplied with *vayḥ* to *mghasya*). *anumita* "that of which one has formed an idea, what one has thought".
 
 **§ati4)** — 4〉 aus Etwas (Abl. oder Instr.) schliessen auf (Acc.), erschliessen, folgern, schliessen, dass ist (mit doppelten Acc.). Praes. nur in den reduplicirten Formen (*anumimīran* [Comm. zu JAIM. 1,3,2]) und *anuminoti* (s. u. **1.** *mi* mit *anu*). *anumita* geschlossen, gefolgert.
 - **EN:** — 4) "to infer something from something" (Abl. or Instr.) "to" (Acc.), "to deduce, to conclude, to infer that it is" (with double Acc.). Praes. only in the reduplicated forms (*anumimīran* [Comm. zu JAIM. 1,3,2]) and *anuminoti* (s. u. **1.** *mi* with *anu*). *anumita* "concluded, inferred".
@@ -102,8 +102,8 @@
 **§ati5)** — Caus. bewirken, dass man auf Etwas (Acc.) schliesst, — dass man Etwas folgert, beweisen [KĀD. 148,19].
 - **EN:** — Caus. "to bring it about that one infers something" (Acc.) "— that one concludes something, to prove" [KĀD. 148,19].
 
-**§abhi)** — Mit *apa* abmessen [AV. 18,2,40. 19,57,6] (Conj.).
-- **EN:** — With *apa* "to measure off" [AV. 18,2,40. 19,57,6] (Conj.).
+**§abhi)** — Mit *apa* abmessen [AV. 18,2,40. 19,57,6](https://sanskrit-lexicon.github.io/avlinks/avhymns/av18.002.html#av18.002.40) (Conj.).
+- **EN:** — With *apa* "to measure off" [AV. 18,2,40. 19,57,6](https://sanskrit-lexicon.github.io/avlinks/avhymns/av18.002.html#av18.002.40) (Conj.).
 
 **§anu1)** — Mit *abhi* darauf messen [ĀPAST. ŚR. 12,9,3].
 - **EN:** — With *abhi* "to measure thereupon" [ĀPAST. ŚR. 12,9,3].
@@ -147,8 +147,8 @@
 **§ava-intro)** — Mit *nis*
 - **EN:** — With *nis*
 
-**§ava1)** — 1〉 ausmessen [AV. 18,2,42].
-- **EN:** — 1) "to measure out" [AV. 18,2,42].
+**§ava1)** — 1〉 ausmessen [AV. 18,2,42](https://sanskrit-lexicon.github.io/avlinks/avhymns/av18.002.html#av18.002.42).
+- **EN:** — 1) "to measure out" [AV. 18,2,42](https://sanskrit-lexicon.github.io/avlinks/avhymns/av18.002.html#av18.002.42).
 
 **§ava2)** — 2〉 herausbilden, herstellen, machen aus (Abl. oder Instr.), verfertigen, bauen, schaffen, bilden überh.
 - **EN:** — 2) "to form out of, produce, make out of" (Abl. or Instr.), "to fashion, build, create, form" überh.
@@ -255,8 +255,8 @@
 **§pra-intro)** — Mit *pra*
 - **EN:** — With *pra*
 
-**§pra1)** — 1〉 messen, abmmessen, abschätzen [AV. 18,2,39]. [SUŚR. 2,151,21]. *pramita*
-- **EN:** — 1) "to measure, measure off, assess" [AV. 18,2,39]. [SUŚR. 2,151,21]. *pramita*
+**§pra1)** — 1〉 messen, abmmessen, abschätzen [AV. 18,2,39](https://sanskrit-lexicon.github.io/avlinks/avhymns/av18.002.html#av18.002.39). [SUŚR. 2,151,21]. *pramita*
+- **EN:** — 1) "to measure, measure off, assess" [AV. 18,2,39](https://sanskrit-lexicon.github.io/avlinks/avhymns/av18.002.html#av18.002.39). [SUŚR. 2,151,21]. *pramita*
 
 **§pra1a)** — a〉 gemessen; am Ende eines Comp. so und so viel messend, so und so gross u. s. w. *māsa˚* so v. a. einmal im Monat vorkommend.
 - **EN:** — a) "measured;" at the end of a Comp. "measuring so and so much, so and so great" u. s. w. *māsa˚* so v. a. "occurring once a month".
@@ -446,9 +446,9 @@
 - **RU:** — 2〉 отмерять; Pass. быть измеренным —, определённым [ĀRYABH. 3,1].
   <sub>DCS 4955 · attested</sub>
 
-**ava-3〉)** — 3〉 sich von Jmd oder Etwas (Acc.) eine Vorstellung machen, sich Etwas (auch Gen. [BHĀG. P.]) denken, — als oder wie (Acc. mit *iva* oder *yathā*; [MBH. 12,51,8] ist *vayḥ* zu *mghasya* zu ergänzen). *anumita* wovon man sich eine Vorstellung gebildet hat, was man sich gedacht hat.
+**ava-3〉)** — 3〉 sich von Jmd oder Etwas (Acc.) eine Vorstellung machen, sich Etwas (auch Gen. [BHĀG. P.]) denken, — als oder wie (Acc. mit *iva* oder *yathā*; [MBH. 12,51,8](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,51,8) ist *vayḥ* zu *mghasya* zu ergänzen). *anumita* wovon man sich eine Vorstellung gebildet hat, was man sich gedacht hat.
 
-- **RU:** — 3〉 составить себе представление о ком-либо или о чём-либо (Acc.), думать о чём-либо (также Gen. [BHĀG. P.]) — как или подобно (Acc. с *iva* или *yathā*; к [MBH. 12,51,8] надо домыслить *vayḥ* в смысле *mghasya*). *anumita* о чём составлено представление, что было мысленно представлено.
+- **RU:** — 3〉 составить себе представление о ком-либо или о чём-либо (Acc.), думать о чём-либо (также Gen. [BHĀG. P.]) — как или подобно (Acc. с *iva* или *yathā*; к [MBH. 12,51,8](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,51,8) надо домыслить *vayḥ* в смысле *mghasya*). *anumita* о чём составлено представление, что было мысленно представлено.
   <sub>DCS 4955 · attested</sub>
 
 **ava-4〉)** — 4〉 aus Etwas (Abl. oder Instr.) schliessen auf (Acc.), erschliessen, folgern, schliessen, dass ist (mit doppelten Acc.). Praes. nur in den reduplicirten Formen (*anumimīran* [Comm. zu JAIM. 1,3,2]) und *anuminoti* (s. u. **1.** *mi* mit *anu*). *anumita* geschlossen, gefolgert.
@@ -461,9 +461,9 @@
 - **RU:** — Caus. заставлять умозаключать о чём-либо (Acc.), — заставлять делать вывод, доказывать [KĀD. 148,19].
   <sub>DCS 4955 · attested</sub>
 
-**a-head)** — Mit *apa* abmessen [AV. 18,2,40. 19,57,6] (Conj.).
+**a-head)** — Mit *apa* abmessen [AV. 18,2,40. 19,57,6](https://sanskrit-lexicon.github.io/avlinks/avhymns/av18.002.html#av18.002.40) (Conj.).
 
-- **RU:** — С *apa* отмерять [AV. 18,2,40. 19,57,6] (Conj.).
+- **RU:** — С *apa* отмерять [AV. 18,2,40. 19,57,6](https://sanskrit-lexicon.github.io/avlinks/avhymns/av18.002.html#av18.002.40) (Conj.).
   <sub>DCS 4955 · attested</sub>
 
 **adhi-head)** — Mit *abhi* darauf messen [ĀPAST. ŚR. 12,9,3].
@@ -536,9 +536,9 @@
 - **RU:** — С *nis*
   <sub>DCS 4955 · attested</sub>
 
-**ni-1〉)** — 1〉 ausmessen [AV. 18,2,42].
+**ni-1〉)** — 1〉 ausmessen [AV. 18,2,42](https://sanskrit-lexicon.github.io/avlinks/avhymns/av18.002.html#av18.002.42).
 
-- **RU:** — 1〉 вымерять [AV. 18,2,42].
+- **RU:** — 1〉 вымерять [AV. 18,2,42](https://sanskrit-lexicon.github.io/avlinks/avhymns/av18.002.html#av18.002.42).
   <sub>DCS 4955 · attested</sub>
 
 **ni-2〉)** — 2〉 herausbilden, herstellen, machen aus (Abl. oder Instr.), verfertigen, bauen, schaffen, bilden überh.
@@ -716,9 +716,9 @@
 - **RU:** — С *pra*
   <sub>DCS 4955 · attested</sub>
 
-**pra-mA-1〉)** — 1〉 messen, abmmessen, abschätzen [AV. 18,2,39]. [SUŚR. 2,151,21]. *pramita*
+**pra-mA-1〉)** — 1〉 messen, abmmessen, abschätzen [AV. 18,2,39](https://sanskrit-lexicon.github.io/avlinks/avhymns/av18.002.html#av18.002.39). [SUŚR. 2,151,21]. *pramita*
 
-- **RU:** — 1〉 мерить, отмерять, оценивать [AV. 18,2,39]. [SUŚR. 2,151,21]. *pramita*
+- **RU:** — 1〉 мерить, отмерять, оценивать [AV. 18,2,39](https://sanskrit-lexicon.github.io/avlinks/avhymns/av18.002.html#av18.002.39). [SUŚR. 2,151,21]. *pramita*
   <sub>DCS 4955 · attested</sub>
 
 **pra-mA-1a〉)** — a〉 gemessen; am Ende eines Comp. so und so viel messend, so und so gross u. s. w. *māsa˚* so v. a. einmal im Monat vorkommend.

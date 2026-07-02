@@ -8,14 +8,14 @@
 - **EN:** — With *pra* Med.
 — 1〉 to set before, to offer.
 
-**pra+dhā–2)** — 2〉 aussenden (Späher) [ṚV. 7,61,3].
-- **EN:** — 2〉 to send out (spies) [ṚV. 7,61,3].
+**pra+dhā–2)** — 2〉 aussenden (Späher) [ṚV. 7,61,3](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.061.html#rv07.061.03).
+- **EN:** — 2〉 to send out (spies) [ṚV. 7,61,3](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.061.html#rv07.061.03).
 
 **pra+dhā–3)** — 3〉 sich einer Sache (Acc.) hingeben [LALIT. 499,9]. — *prahita* und *saṃprahita* gehören zu *hi*.
 - **EN:** — 3〉 to devote oneself to something (Acc.) [LALIT. 499,9]. — *prahita* and *saṃprahita* belong to *hi*.
 
-**pra+dhā–note)** — Caus. *pradhāpita* [MBH. 9,1074] fehlerhaft für *pradhāvita*.
-- **EN:** — Caus. *pradhāpita* [MBH. 9,1074] erroneously for *pradhāvita*.
+**pra+dhā–note)** — Caus. *pradhāpita* [MBH. 9,1074](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.1074) fehlerhaft für *pradhāvita*.
+- **EN:** — Caus. *pradhāpita* [MBH. 9,1074](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.1074) erroneously for *pradhāvita*.
 
 **abhi+dhā–1)** — Mit *prati*
 — 1〉 ansetzen, wie der ansetzen, einsetzen.
@@ -72,8 +72,8 @@
 **vi+dhā–6)** — 6〉 an den Tag legen, zeigen (einen Gemüthszustand, eine Art und Weise der Benehmens) [146,6]. [170,28].
 - **EN:** — 6〉 to display, to show (a state of mind, a manner of conduct) [146,6]. [170,28].
 
-**vi+dhā–7)** — 7〉 finden, ausfindig machen (ein Mittel) [48,23]. [159,8]. [MBH. 3,76,38]. [R. 3,40,33].
-- **EN:** — 7〉 to find, to discover (a means) [48,23]. [159,8]. [MBH. 3,76,38]. [R. 3,40,33].
+**vi+dhā–7)** — 7〉 finden, ausfindig machen (ein Mittel) [48,23]. [159,8]. [MBH. 3,76,38](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?3,76,38). [R. 3,40,33](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,40,33).
+- **EN:** — 7〉 to find, to discover (a means) [48,23]. [159,8]. [MBH. 3,76,38](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?3,76,38). [R. 3,40,33](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,40,33).
 
 **vi+dhā–8)** — 8〉 schaffen, hervorbringen, bilden, gründen, bauen, errichten, anlegen, verfassen.
 - **EN:** — 8〉 to create, to produce, to form, to found, to build, to erect, to lay out, to compose.
@@ -87,8 +87,8 @@
 **vi+dhā–11)** — 11〉 machen zu, reddere; mit doppeltem Acc.
 - **EN:** — 11〉 to make into, reddere; with double Acc.
 
-**vi+dhā–12)** — 12〉 mit Etwas oder Jmd (Acc.) es so machen —, dahin bringen, dass (*yathā*) [MBH. 4,29,8]. [R. 2,38,17].
-- **EN:** — 12〉 to manage with something or someone (Acc.) so as to bring it about that (*yathā*) [MBH. 4,29,8]. [R. 2,38,17].
+**vi+dhā–12)** — 12〉 mit Etwas oder Jmd (Acc.) es so machen —, dahin bringen, dass (*yathā*) [MBH. 4,29,8](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?4,29,8). [R. 2,38,17](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,38,17).
+- **EN:** — 12〉 to manage with something or someone (Acc.) so as to bring it about that (*yathā*) [MBH. 4,29,8](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?4,29,8). [R. 2,38,17](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,38,17).
 
 **vi+dhā–13)** — 13〉 legen auf (Loc.) hinstellen (*agratas, adhas*), stecken —, legen in (Loc.). *hṛdaye* so v. a. dem Herzen einprägen.
 - **EN:** — 13〉 to lay upon (Loc.), to place (*agratas, adhas*), to put into, to lay in (Loc.). *hṛdaye* and so v. a. to impress upon the heart.
@@ -102,8 +102,8 @@
 **vi+dhā–16)** — 16〉 *vihita* ausgestattet —, versehen mit (Instr.).
 - **EN:** — 16〉 *vihita* equipped with, provided with (Instr.).
 
-**vi+dhā–17)** — 17〉 [MBH. 4,155] fehlerhaft für *ni* [MĀRK. P. 41,20]. [PAÑCAD. 186,8. 237,12] für *pi* (*api*).
-- **EN:** — 17〉 [MBH. 4,155] erroneously for *ni* [MĀRK. P. 41,20]. [PAÑCAD. 186,8. 237,12] for *pi* (*api*).
+**vi+dhā–17)** — 17〉 [MBH. 4,155](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.155) fehlerhaft für *ni* [MĀRK. P. 41,20](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?41,20). [PAÑCAD. 186,8. 237,12] für *pi* (*api*).
+- **EN:** — 17〉 [MBH. 4,155](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.155) erroneously for *ni* [MĀRK. P. 41,20](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?41,20). [PAÑCAD. 186,8. 237,12] for *pi* (*api*).
 
 **vi+dhā–caus)** — Caus. hinlegen lassen. Desid. (*˚dhitsati, ˚dhitsate*)
 - **EN:** — Caus. to cause to lay down. Desid. (*˚dhitsati, ˚dhitsate*)
@@ -117,8 +117,8 @@
 **vi+dhā–des–3)** — 3〉 ausfindig machen wollen (ein Mittel).
 - **EN:** — 3〉 to wish to discover (a means).
 
-**vi+dhā–des–4)** — 4〉 daran denken sich Etwas zu verschaffen [Spr. 212].
-- **EN:** — 4〉 to think of procuring something for oneself [Spr. 212].
+**vi+dhā–des–4)** — 4〉 daran denken sich Etwas zu verschaffen [Spr. 212](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?212).
+- **EN:** — 4〉 to think of procuring something for oneself [Spr. 212](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?212).
 
 **vi+dhā–des–5)** — 5〉 beabsichtigen zu vollbringen, — bewerkstelligen, beabsichtigen überh. *vidhitsamāna* bestimmte Zwecke verfolgend, selbstsüchtig.
 - **EN:** — 5〉 to intend to accomplish, to intend to bring about, to have an intention überh. *vidhitsamāna* pursuing particular ends, self-seeking.
@@ -199,14 +199,14 @@
 **sam+dhā–3)** — 3〉 betreiben, einrichten, Sorge für Etwas tragen, sich Etwas angelegen sein lassen.
 - **EN:** — 3〉 to attend to, to arrange, to take care of something, to apply oneself to something.
 
-**sam+dhā–4)** — 4〉 *mānasam* den Geist aufrecht erhalten, guten Muths sein [Spr. 6641].
-- **EN:** — 4〉 *mānasam* to keep one's spirit upright, to be of good courage [Spr. 6641].
+**sam+dhā–4)** — 4〉 *mānasam* den Geist aufrecht erhalten, guten Muths sein [Spr. 6641](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?6641).
+- **EN:** — 4〉 *mānasam* to keep one's spirit upright, to be of good courage [Spr. 6641](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?6641).
 
 **sam+dhā–5)** — 5〉 gebrauchen, anwenden; mit Acc.
 - **EN:** — 5〉 to use, to employ; with Acc.
 
-**sam+dhā–6)** — 6〉 Gebrauch von Etwas (Instr.) machen [PAÑCAT. 12,21].
-- **EN:** — 6〉 to make use of something (Instr.) [PAÑCAT. 12,21].
+**sam+dhā–6)** — 6〉 Gebrauch von Etwas (Instr.) machen [PAÑCAT. 12,21](https://sanskrit-lexicon-scans.github.io/pantankose/app2?12,21).
+- **EN:** — 6〉 to make use of something (Instr.) [PAÑCAT. 12,21](https://sanskrit-lexicon-scans.github.io/pantankose/app2?12,21).
 
 **sam+dhā–7)** — 7〉 machen zu, mit doppeltem Acc. [NAIṢ. 8,16].
 - **EN:** — 7〉 to make into, with double Acc. [NAIṢ. 8,16].
@@ -214,16 +214,16 @@
 **sam+dhā–8)** — 8〉 aufstellen, auslegen (Schlingen); man hätte *saṃni* erwartet.
 - **EN:** — 8〉 to set up, to lay out (snares); one would have expected *saṃni*.
 
-**sam+dhā–9)** — 9〉 [MBH. 2,1510] fehlerhaft für *saṃni*, wie [ed. Bomb.] liest.
-- **EN:** — 9〉 [MBH. 2,1510] erroneously for *saṃni*, as [ed. Bomb.] reads.
+**sam+dhā–9)** — 9〉 [MBH. 2,1510](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1510) fehlerhaft für *saṃni*, wie [ed. Bomb.] liest.
+- **EN:** — 9〉 [MBH. 2,1510](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1510) erroneously for *saṃni*, as [ed. Bomb.] reads.
 
 **sam+dhā–caus)** — Caus. Jmd Sorge tragen —, walten lassen [KĀD. 2,108,19].
 - **EN:** — Caus. to cause someone to take care, to have someone manage [KĀD. 2,108,19].
 
 **saṃ+dhā–1)** — Mit *sam*
-— 1〉 zusammensetzen, -reihen, -knüpfen, -nähen, vereinigen, verbinden, — mit (Instr.), schliessen (die Augen, eine Wunde). *dhanurvāṇena* den Bogen mit dem Pfeile verbinden; mit Weglassung von «Pfeil» oder «Bogen» ([ṚV. 5,54,2]) dass. oder zielen. Pass. sich vereinigen, sich verbinden mit (Instr.), so v. a. in den Besitz kommen von. *vācam* Worte wechseln mit (Instr.) *manas* den Geist zusammen fassen, so v. a. sich sammeln. *saṃhita* verbunden, — mit, in Verbindung stehend mit, begleitet von, versehen mit (im Comp. vorangehend) [ĀPAST. 1,22,1]. in Beziehung stehend zu, betreffend; übereinstimmend mit, hervorgerufen durch.
+— 1〉 zusammensetzen, -reihen, -knüpfen, -nähen, vereinigen, verbinden, — mit (Instr.), schliessen (die Augen, eine Wunde). *dhanurvāṇena* den Bogen mit dem Pfeile verbinden; mit Weglassung von «Pfeil» oder «Bogen» ([ṚV. 5,54,2](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.054.html#rv05.054.02)) dass. oder zielen. Pass. sich vereinigen, sich verbinden mit (Instr.), so v. a. in den Besitz kommen von. *vācam* Worte wechseln mit (Instr.) *manas* den Geist zusammen fassen, so v. a. sich sammeln. *saṃhita* verbunden, — mit, in Verbindung stehend mit, begleitet von, versehen mit (im Comp. vorangehend) [ĀPAST. 1,22,1]. in Beziehung stehend zu, betreffend; übereinstimmend mit, hervorgerufen durch.
 - **EN:** — With *sam*
-— 1〉 to put together, to join in series, to fasten together, to sew together, to unite, to connect, to connect with (Instr.), to close (the eyes, a wound). *dhanurvāṇena* to join the bow with the arrow; with omission of 'arrow' or 'bow' ([ṚV. 5,54,2]) dass. or to aim. Pass. to unite, to ally oneself with (Instr.), and so v. a. to come into possession of. *vācam* to exchange words with (Instr.) *manas* to collect one's mind, and so v. a. to compose oneself. *saṃhita* joined, connected with, in connection with, accompanied by, provided with (preceding in Comp.) [ĀPAST. 1,22,1]. standing in relation to, concerning; in accordance with, produced by.
+— 1〉 to put together, to join in series, to fasten together, to sew together, to unite, to connect, to connect with (Instr.), to close (the eyes, a wound). *dhanurvāṇena* to join the bow with the arrow; with omission of 'arrow' or 'bow' ([ṚV. 5,54,2](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.054.html#rv05.054.02)) dass. or to aim. Pass. to unite, to ally oneself with (Instr.), and so v. a. to come into possession of. *vācam* to exchange words with (Instr.) *manas* to collect one's mind, and so v. a. to compose oneself. *saṃhita* joined, connected with, in connection with, accompanied by, provided with (preceding in Comp.) [ĀPAST. 1,22,1]. standing in relation to, concerning; in accordance with, produced by.
 
 **saṃ+dhā–2)** — 2〉 herstellen, wieder —, wieder gut machen.
 - **EN:** — 2〉 to restore, to repair, to make good again.
@@ -243,8 +243,8 @@
 **saṃ+dhā–7)** — 7〉 Med. zusammenführen, so v. a. versöhnen.
 - **EN:** — 7〉 Med. to bring together, and so v. a. to reconcile.
 
-**saṃ+dhā–8)** — 8〉 *übereinkommen, sich verbinden —, sich vertragen —, sich aussöhnen mit (Instr., ausnahmsweise Acc.) [MBH. 5,95,23]. Ausnahmsweise Act. *saṃhita* in freundschaftlichem Verhältniss stehend mit (Instr. oder *Instr. mit *saha*).
-- **EN:** — 8〉 *to come to an agreement, to ally oneself with, to come to terms with, to reconcile oneself with (Instr., exceptionally Acc.) [MBH. 5,95,23]. Exceptionally Act. *saṃhita* standing in a friendly relation with (Instr. or *Instr. with *saha*).
+**saṃ+dhā–8)** — 8〉 *übereinkommen, sich verbinden —, sich vertragen —, sich aussöhnen mit (Instr., ausnahmsweise Acc.) [MBH. 5,95,23](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?5,95,23). Ausnahmsweise Act. *saṃhita* in freundschaftlichem Verhältniss stehend mit (Instr. oder *Instr. mit *saha*).
+- **EN:** — 8〉 *to come to an agreement, to ally oneself with, to come to terms with, to reconcile oneself with (Instr., exceptionally Acc.) [MBH. 5,95,23](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?5,95,23). Exceptionally Act. *saṃhita* standing in a friendly relation with (Instr. or *Instr. with *saha*).
 
 **saṃ+dhā–9)** — 9〉 *Jmd verwickeln in (Loc.).
 - **EN:** — 9〉 *to entangle someone in (Loc.).
@@ -261,8 +261,8 @@
 **saṃ+dhā–13)** — 13〉 Med. Gebrauch machen von (Instr.).
 - **EN:** — 13〉 Med. to make use of (Instr.).
 
-**saṃ+dhā–14)** — 14〉 *saṃdhāya* [MBH. 3,15726] fehlerhaft für *saṃyāya*. Zu *ātmasaṃhita* [KĀM. NĪTIS. 9,68] vgl. Comm.
-- **EN:** — 14〉 *saṃdhāya* [MBH. 3,15726] erroneously for *saṃyāya*. To *ātmasaṃhita* [KĀM. NĪTIS. 9,68] vgl. Comm.
+**saṃ+dhā–14)** — 14〉 *saṃdhāya* [MBH. 3,15726](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15726) fehlerhaft für *saṃyāya*. Zu *ātmasaṃhita* [KĀM. NĪTIS. 9,68] vgl. Comm.
+- **EN:** — 14〉 *saṃdhāya* [MBH. 3,15726](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15726) erroneously for *saṃyāya*. To *ātmasaṃhita* [KĀM. NĪTIS. 9,68] vgl. Comm.
 
 **saṃ+dhā–des)** — Desid. (*˚dhitsati*) zusammensetzen —, herstellen wollen.
 - **EN:** — Desid. (*˚dhitsati*) to wish to put together, to wish to restore.

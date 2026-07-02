@@ -7,295 +7,324 @@ _PWG article — 32 sub-card(s), 217 sense(s) · RU 154/217 · EN 197/217_
 `_cid~~h0_00_pwg00`
 
 
-**head)** 1. *chid*¦, *chinatti* und *chintte*
-[DHĀTUP. 29,3.] *chinddhi (chindhi)*
-[P. 6,4,101.] [2.] pl. imperf. *acchinad* und *acchinas*
-[8,2,75]; *chinadai* (ved.); *chindeta(!)*
+1. *chid*¦, *chinatti* und *chintte*
+[DHĀTUP. 29,3.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=29) *chinddhi (chindhi)*
+[P. 6,4,101.](https://ashtadhyayi.com/sutraani/6/4/101) [2.](https://ashtadhyayi.com/sutraani/6/4/2) pl. imperf. *acchinad* und *acchinas*
+[8,2,75](https://ashtadhyayi.com/sutraani/8/2/75); *chinadai* (ved.); *chindeta(!)*
 [KṢURIKOPAN.] in [Ind. St. 2,172. fg.]; *acchidat* und *acchaitsīt*
-[P. 3,1,57.]
+[P. 3,1,57.](https://ashtadhyayi.com/sutraani/3/1/57)
 
 *chedma* (ved.), *chitsi* (ved.), *acchitta, acchitthās (chitthās* ved.)
-[P. 3,1,57], [Sch. 8,2,26],
+[P. 3,1,57](https://ashtadhyayi.com/sutraani/3/1/57), [Sch. 8,2,26],
 Sch.; *ciccheda* und *cicchide, cicchidvaṃs*
-[P. 7,2,67], Sch.;
+[P. 7,2,67](https://ashtadhyayi.com/sutraani/7/2/67), Sch.;
 *chetsyati* Kār 3 aus
-[SIDDH. K.] zu [P. 7,2,10]; *chittvā, chettum; acchedi, chinna* .
+[SIDDH. K.] zu [P. 7,2,10](https://ashtadhyayi.com/sutraani/7/2/10); *chittvā, chettum; acchedi, chinna* .
 - **EN:** 1. *chid*¦, *chinatti* and *chintte*
-[DHĀTUP. 29,3.] *chinddhi (chindhi)*
-[P. 6,4,101.] [2.] pl. imperf. *acchinad* and *acchinas*
-[8,2,75]; *chinadai* (ved.); *chindeta(!)*
+[DHĀTUP. 29,3.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=29) *chinddhi (chindhi)*
+[P. 6,4,101.](https://ashtadhyayi.com/sutraani/6/4/101) [2.](https://ashtadhyayi.com/sutraani/6/4/2) pl. imperf. *acchinad* and *acchinas*
+[8,2,75](https://ashtadhyayi.com/sutraani/8/2/75); *chinadai* (ved.); *chindeta(!)*
 [KṢURIKOPAN.] in [Ind. St. 2,172. fg.]; *acchidat* and *acchaitsīt*
-[P. 3,1,57.]
+[P. 3,1,57.](https://ashtadhyayi.com/sutraani/3/1/57)
 
 *chedma* (ved.), *chitsi* (ved.), *acchitta, acchitthās (chitthās* ved.)
-[P. 3,1,57], [Sch. 8,2,26],
+[P. 3,1,57](https://ashtadhyayi.com/sutraani/3/1/57), [Sch. 8,2,26],
 Sch.; *ciccheda* and *cicchide, cicchidvaṃs*
-[P. 7,2,67], Sch.;
+[P. 7,2,67](https://ashtadhyayi.com/sutraani/7/2/67), Sch.;
 *chetsyati* Kār 3 from
-[SIDDH. K.] to [P. 7,2,10]; *chittvā, chettum; acchedi, chinna* .
+[SIDDH. K.] to [P. 7,2,10](https://ashtadhyayi.com/sutraani/7/2/10); *chittvā, chettum; acchedi, chinna* .
+
+*chid*¦, *chinatti* und *chintte*
+[DHĀTUP. 29,3.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=29) *chinddhi (chindhi)*
+[P. 6,4,101.](https://ashtadhyayi.com/sutraani/6/4/101) [2.](https://ashtadhyayi.com/sutraani/6/4/2) pl. imperf. *acchinad* und *acchinas*
+[8,2,75](https://ashtadhyayi.com/sutraani/8/2/75); *chinadai* (ved.); *chindeta(!)*
+[KṢURIKOPAN.] in [Ind. St. 2,172. fg.]; *acchidat* und *acchaitsīt*
+[P. 3,1,57.](https://ashtadhyayi.com/sutraani/3/1/57)
+
+*chedma* (ved.), *chitsi* (ved.), *acchitta, acchitthās (chitthās* ved.)
+[P. 3,1,57](https://ashtadhyayi.com/sutraani/3/1/57), [Sch. 8,2,26],
+Sch.; *ciccheda* und *cicchide, cicchidvaṃs*
+[P. 7,2,67](https://ashtadhyayi.com/sutraani/7/2/67), Sch.;
+*chetsyati* Kār 3 aus
+[SIDDH. K.] zu [P. 7,2,10](https://ashtadhyayi.com/sutraani/7/2/10); *chittvā, chettum; acchedi, chinna* .
+
+- **RU:** *chid*¦, *chinatti* und *chintte*
+[DHĀTUP. 29,3.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=29) *chinddhi (chindhi)*
+[P. 6,4,101.](https://ashtadhyayi.com/sutraani/6/4/101) [2.](https://ashtadhyayi.com/sutraani/6/4/2) pl. imperf. *acchinad* und *acchinas*
+[8,2,75](https://ashtadhyayi.com/sutraani/8/2/75); *chinadai* (ved.); *chindeta(!)*
+[KṢURIKOPAN.] in [Ind. St. 2,172. fg.]; *acchidat* und *acchaitsīt*
+[P. 3,1,57.](https://ashtadhyayi.com/sutraani/3/1/57)
+
+*chedma* (ved.), *chitsi* (ved.), *acchitta, acchitthās (chitthās* ved.)
+[P. 3,1,57](https://ashtadhyayi.com/sutraani/3/1/57), [Sch. 8,2,26],
+Sch.; *ciccheda* und *cicchide, cicchidvaṃs*
+[P. 7,2,67](https://ashtadhyayi.com/sutraani/7/2/67), Sch.;
+*chetsyati* Kār 3 aus
+[SIDDH. K.] zu [P. 7,2,10](https://ashtadhyayi.com/sutraani/7/2/10); *chittvā, chettum; acchedi, chinna* .
+  <sub>attested</sub>
 
 **1)** 1) abschneiden, abhauen, abschlagen, abreissen, zerschneiden, zerhauen, zerreissen, spalten, durchbohren: *mā tantuśchedi vayato dhiyaṃ me*
-[ṚV. 2,28,5.] [1,109,3.] *caritraṃ hi verivācchedi parṇam*
-[116,15.] *chinattu somaḥ śiro asya*
-[AV. 5,29,10.] [6,50,1.]
-[ŚAT. BR. 14,1,1,26.] [12,2,2,2.] [3,9,1,2.] [2,1,28.]
-[VS. 8,61.] *loma*
-[TBR. 1,3,10,7.] *parṇaśākhām*
-[KĀTY. ŚR. 4,2,1.]
+[ṚV. 2,28,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.028.html#rv02.028.05) [1,109,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.109.html#rv01.109.03) *caritraṃ hi verivācchedi parṇam*
+[116,15.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.116.html#rv01.116.15) *chinattu somaḥ śiro asya*
+[AV. 5,29,10.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av05.029.html#av05.029.10) [6,50,1.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av06.050.html#av06.050.01)
+[ŚAT. BR. 14,1,1,26.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,1,1,26) [12,2,2,2.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?12,2,2,2) [3,9,1,2.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,9,1,2) [2,1,28.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,2,1,28)
+[VS. 8,61.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?8,61) *loma*
+[TBR. 1,3,10,7.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?1,3,10,7) *parṇaśākhām*
+[KĀTY. ŚR. 4,2,1.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?4,2,1)
 [LĀṬY. 9,2,26.] *chinnaṃ saṃ dhehyoṣadhe*
-[AV. 4,12,5.] *asthi*
-[1.] — *nacchindyānnakhalomāni*
-[M. 4,69.]
-[BHĀG. P. 6,18,46.] *na cchindyātkarajaistṛṇam*
-[M. 4,70.] *vṛkṣāṃstathauṣadhīṃścāpi cchindanti*
-[MBH. 3,13827.]
-[R. 2,80,6.]
-[PAÑCAT. III,260.] *chinnadruma*
-[HIT. 34,21.] *chinnamūlā iva drumāḥ*
-[R. 3,26,24.] *chittvā jaṭām*
-[1,1,86.] *acchindannuttamāṅgāni*
-[MBH. 3,12163.] *śirāṃsyapi sa cicchide*
-[HARIV. 8867.] *teṣāṃ chittvā nṛpo hastau*
-[M. 9,276.]
-[R. 1,28,16.] [3,75,33.] *jihvām*
-[YĀJÑ. 2,302.]
-[KATHĀS. 2,13.]
+[AV. 4,12,5.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av04.012.html#av04.012.05) *asthi*
+[1.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av04.012.html#av04.012.01) — *nacchindyānnakhalomāni*
+[M. 4,69.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,69)
+[BHĀG. P. 6,18,46.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,18,46) *na cchindyātkarajaistṛṇam*
+[M. 4,70.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,70) *vṛkṣāṃstathauṣadhīṃścāpi cchindanti*
+[MBH. 3,13827.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13827)
+[R. 2,80,6.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,80,6)
+[PAÑCAT. III,260.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?3,260) *chinnadruma*
+[HIT. 34,21.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?34,21) *chinnamūlā iva drumāḥ*
+[R. 3,26,24.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,26,24) *chittvā jaṭām*
+[1,1,86.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,1,86) *acchindannuttamāṅgāni*
+[MBH. 3,12163.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12163) *śirāṃsyapi sa cicchide*
+[HARIV. 8867.](https://sanskrit-lexicon-scans.github.io/hariv?8867) *teṣāṃ chittvā nṛpo hastau*
+[M. 9,276.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,276)
+[R. 1,28,16.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,28,16) [3,75,33.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,75,33) *jihvām*
+[YĀJÑ. 2,302.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,302)
+[KATHĀS. 2,13.](https://sanskrit-lexicon-scans.github.io/kss/index.html?2,13)
 [VET. 26,6.] *chinnahasta*
 [KAP. 4,7.]
-[VID. 72.] [214.] [246.] *chittvā vastrārdham*
-[N. 17,36.] [10,19.] *mṛtyupāśāṃśchinatti*
+[VID. 72.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?72) [214.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?214) [246.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?246) *chittvā vastrārdham*
+[N. 17,36.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?17,36) [10,19.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?10,19) *mṛtyupāśāṃśchinatti*
 [ŚVETĀŚV. UP. 4,15.]
-[PAÑCAT. II,86.] [108,10.] [HIT. 15,9.] [43,17.] [VET. 5,7.] *snehapāśamimaṃ chindhi*
-[BHĀG. P. 1,8,41.] *śūlaṃ mūle sa cicchide*
-[MBH. 1,4327.] *nainaṃ chindanti śastrāṇi*
-[BHAG. 2,23.] *dhanurasyāśu cicchide*
-[MBH. 8,3121.] *(tānāśugaiḥ) dvidhā tridhā cācchinam*
-[3,820.] *khaḍgān* u. s. w. *śatadhā taiḥ — ahamacchidam*
+[PAÑCAT. II,86.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?2,86) [108,10.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?108,10) [HIT. 15,9.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?15,9) [43,17.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?43,17) [VET. 5,7.] *snehapāśamimaṃ chindhi*
+[BHĀG. P. 1,8,41.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,8,41) *śūlaṃ mūle sa cicchide*
+[MBH. 1,4327.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4327) *nainaṃ chindanti śastrāṇi*
+[BHAG. 2,23.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?2,23) *dhanurasyāśu cicchide*
+[MBH. 8,3121.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.3121) *(tānāśugaiḥ) dvidhā tridhā cācchinam*
+[3,820.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.820) *khaḍgān* u. s. w. *śatadhā taiḥ — ahamacchidam*
 [ARJ. 7,21.]
-[R. 1,46,23.] *anyo'nyaṃ chindatāṃ śastraiḥ*
-[MBH. 1,1173.] *sārathiṃ daśabhiścāsya dhvajaṃ caikena cicchide*
-[6,5591.] [HARIV. 6857.] [BHĀG. P. 6,10,15.] *te chinnavarmāvaraṇāśchinnabhinnāḥ śarāhatāḥ*
-[R. 3,32,30.] *nāmitro vinikarttavyo nāticchedyaḥ kathaṃ ca na . jīvitaṃ hyapyaticchinnaḥ saṃtyajecca kadācana ..*
-[MBH. 12,3571.] *anyatara pārśvāvaśiṣṭaṃ (asthi) chinnam*
+[R. 1,46,23.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,46,23) *anyo'nyaṃ chindatāṃ śastraiḥ*
+[MBH. 1,1173.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1173) *sārathiṃ daśabhiścāsya dhvajaṃ caikena cicchide*
+[6,5591.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.5591) [HARIV. 6857.](https://sanskrit-lexicon-scans.github.io/hariv?6857) [BHĀG. P. 6,10,15.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,10,15) *te chinnavarmāvaraṇāśchinnabhinnāḥ śarāhatāḥ*
+[R. 3,32,30.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,32,30) *nāmitro vinikarttavyo nāticchedyaḥ kathaṃ ca na . jīvitaṃ hyapyaticchinnaḥ saṃtyajecca kadācana ..*
+[MBH. 12,3571.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3571) *anyatara pārśvāvaśiṣṭaṃ (asthi) chinnam*
 [SUŚR. 1,301,11.] *chinnaṃ rohati cāsinā*
-[PAÑCAT. III,112.] *chinattyanyānmaṇīṃstu tat (vajram)*
-[RĀJA-TAR. 4,51.] *hatvā chittvā ca bhittvā ca*
-[M. 3,33.] *saṃdhim* ein Loch in die Mauer schlagen
-[9,276.] pass. zerbrechen, zerreissen (instrans.): *yadi rathāṅgaṃ śīryeta cchidyeta vā*
+[PAÑCAT. III,112.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?3,112) *chinattyanyānmaṇīṃstu tat (vajram)*
+[RĀJA-TAR. 4,51.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,51) *hatvā chittvā ca bhittvā ca*
+[M. 3,33.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,33) *saṃdhim* ein Loch in die Mauer schlagen
+[9,276.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,276) pass. zerbrechen, zerreissen (instrans.): *yadi rathāṅgaṃ śīryeta cchidyeta vā*
 [ŚĀṄKH. GṚHY. 1,15.] *chinnanāsya*
-[M. 8,291.] *chinna* aufgerissen, aufgeschnitten von Wunden
+[M. 8,291.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,291) *chinna* aufgerissen, aufgeschnitten von Wunden
 [SUŚR. 2,18,3.] *aticchinna*
 [19,1.] abgebrochen, unterbrochen, nicht zusammenhängend: *abhra*
-[BHAG. 6,36.]
-[R. 3,50,12.]
-[VARĀH. BṚH. S. 29,23.] *indradhanus (acchinna)*
-[34,3.] *rekhāḥ*
-[67,50.] [68,14.]
+[BHAG. 6,36.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?6,36)
+[R. 3,50,12.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,50,12)
+[VARĀH. BṚH. S. 29,23.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?29,23) *indradhanus (acchinna)*
+[34,3.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?34,3) *rekhāḥ*
+[67,50.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?67,50) [68,14.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?68,14)
 
 - **RU:** 1) отрезать, отрубать, отсекать, отрывать, разрезать, разрубать, разрывать, раскалывать, пробивать насквозь: *mā tantuśchedi vayato dhiyaṃ me*
-[ṚV. 2,28,5.] [1,109,3.] *caritraṃ hi verivācchedi parṇam*
-[116,15.] *chinattu somaḥ śiro asya*
-[AV. 5,29,10.] [6,50,1.]
-[ŚAT. BR. 14,1,1,26.] [12,2,2,2.] [3,9,1,2.] [2,1,28.]
-[VS. 8,61.] *loma*
-[TBR. 1,3,10,7.] *parṇaśākhām*
-[KĀTY. ŚR. 4,2,1.]
+[ṚV. 2,28,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.028.html#rv02.028.05) [1,109,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.109.html#rv01.109.03) *caritraṃ hi verivācchedi parṇam*
+[116,15.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.116.html#rv01.116.15) *chinattu somaḥ śiro asya*
+[AV. 5,29,10.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av05.029.html#av05.029.10) [6,50,1.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av06.050.html#av06.050.01)
+[ŚAT. BR. 14,1,1,26.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,1,1,26) [12,2,2,2.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?12,2,2,2) [3,9,1,2.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,9,1,2) [2,1,28.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,2,1,28)
+[VS. 8,61.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?8,61) *loma*
+[TBR. 1,3,10,7.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?1,3,10,7) *parṇaśākhām*
+[KĀTY. ŚR. 4,2,1.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?4,2,1)
 [LĀṬY. 9,2,26.] *chinnaṃ saṃ dhehyoṣadhe*
-[AV. 4,12,5.] *asthi*
-[1.] — *nacchindyānnakhalomāni*
-[M. 4,69.]
-[BHĀG. P. 6,18,46.] *na cchindyātkarajaistṛṇam*
-[M. 4,70.] *vṛkṣāṃstathauṣadhīṃścāpi cchindanti*
-[MBH. 3,13827.]
-[R. 2,80,6.]
-[PAÑCAT. III,260.] *chinnadruma*
-[HIT. 34,21.] *chinnamūlā iva drumāḥ*
-[R. 3,26,24.] *chittvā jaṭām*
-[1,1,86.] *acchindannuttamāṅgāni*
-[MBH. 3,12163.] *śirāṃsyapi sa cicchide*
-[HARIV. 8867.] *teṣāṃ chittvā nṛpo hastau*
-[M. 9,276.]
-[R. 1,28,16.] [3,75,33.] *jihvām*
-[YĀJÑ. 2,302.]
-[KATHĀS. 2,13.]
+[AV. 4,12,5.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av04.012.html#av04.012.05) *asthi*
+[1.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av04.012.html#av04.012.01) — *nacchindyānnakhalomāni*
+[M. 4,69.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,69)
+[BHĀG. P. 6,18,46.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,18,46) *na cchindyātkarajaistṛṇam*
+[M. 4,70.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,70) *vṛkṣāṃstathauṣadhīṃścāpi cchindanti*
+[MBH. 3,13827.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13827)
+[R. 2,80,6.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,80,6)
+[PAÑCAT. III,260.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?3,260) *chinnadruma*
+[HIT. 34,21.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?34,21) *chinnamūlā iva drumāḥ*
+[R. 3,26,24.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,26,24) *chittvā jaṭām*
+[1,1,86.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,1,86) *acchindannuttamāṅgāni*
+[MBH. 3,12163.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12163) *śirāṃsyapi sa cicchide*
+[HARIV. 8867.](https://sanskrit-lexicon-scans.github.io/hariv?8867) *teṣāṃ chittvā nṛpo hastau*
+[M. 9,276.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,276)
+[R. 1,28,16.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,28,16) [3,75,33.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,75,33) *jihvām*
+[YĀJÑ. 2,302.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,302)
+[KATHĀS. 2,13.](https://sanskrit-lexicon-scans.github.io/kss/index.html?2,13)
 [VET. 26,6.] *chinnahasta*
 [KAP. 4,7.]
-[VID. 72.] [214.] [246.] *chittvā vastrārdham*
-[N. 17,36.] [10,19.] *mṛtyupāśāṃśchinatti*
+[VID. 72.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?72) [214.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?214) [246.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?246) *chittvā vastrārdham*
+[N. 17,36.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?17,36) [10,19.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?10,19) *mṛtyupāśāṃśchinatti*
 [ŚVETĀŚV. UP. 4,15.]
-[PAÑCAT. II,86.] [108,10.] [HIT. 15,9.] [43,17.] [VET. 5,7.] *snehapāśamimaṃ chindhi*
-[BHĀG. P. 1,8,41.] *śūlaṃ mūle sa cicchide*
-[MBH. 1,4327.] *nainaṃ chindanti śastrāṇi*
-[BHAG. 2,23.] *dhanurasyāśu cicchide*
-[MBH. 8,3121.] *(tānāśugaiḥ) dvidhā tridhā cācchinam*
-[3,820.] *khaḍgān* u. s. w. *śatadhā taiḥ — ahamacchidam*
+[PAÑCAT. II,86.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?2,86) [108,10.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?108,10) [HIT. 15,9.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?15,9) [43,17.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?43,17) [VET. 5,7.] *snehapāśamimaṃ chindhi*
+[BHĀG. P. 1,8,41.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,8,41) *śūlaṃ mūle sa cicchide*
+[MBH. 1,4327.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4327) *nainaṃ chindanti śastrāṇi*
+[BHAG. 2,23.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?2,23) *dhanurasyāśu cicchide*
+[MBH. 8,3121.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.3121) *(tānāśugaiḥ) dvidhā tridhā cācchinam*
+[3,820.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.820) *khaḍgān* u. s. w. *śatadhā taiḥ — ahamacchidam*
 [ARJ. 7,21.]
-[R. 1,46,23.] *anyo'nyaṃ chindatāṃ śastraiḥ*
-[MBH. 1,1173.] *sārathiṃ daśabhiścāsya dhvajaṃ caikena cicchide*
-[6,5591.] [HARIV. 6857.] [BHĀG. P. 6,10,15.] *te chinnavarmāvaraṇāśchinnabhinnāḥ śarāhatāḥ*
-[R. 3,32,30.] *nāmitro vinikarttavyo nāticchedyaḥ kathaṃ ca na . jīvitaṃ hyapyaticchinnaḥ saṃtyajecca kadācana ..*
-[MBH. 12,3571.] *anyatara pārśvāvaśiṣṭaṃ (asthi) chinnam*
+[R. 1,46,23.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,46,23) *anyo'nyaṃ chindatāṃ śastraiḥ*
+[MBH. 1,1173.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1173) *sārathiṃ daśabhiścāsya dhvajaṃ caikena cicchide*
+[6,5591.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.5591) [HARIV. 6857.](https://sanskrit-lexicon-scans.github.io/hariv?6857) [BHĀG. P. 6,10,15.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,10,15) *te chinnavarmāvaraṇāśchinnabhinnāḥ śarāhatāḥ*
+[R. 3,32,30.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,32,30) *nāmitro vinikarttavyo nāticchedyaḥ kathaṃ ca na . jīvitaṃ hyapyaticchinnaḥ saṃtyajecca kadācana ..*
+[MBH. 12,3571.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3571) *anyatara pārśvāvaśiṣṭaṃ (asthi) chinnam*
 [SUŚR. 1,301,11.] *chinnaṃ rohati cāsinā*
-[PAÑCAT. III,112.] *chinattyanyānmaṇīṃstu tat (vajram)*
-[RĀJA-TAR. 4,51.] *hatvā chittvā ca bhittvā ca*
-[M. 3,33.] *saṃdhim* пробить отверстие в стене
-[9,276.] pass. разбить, разорвать (instrans.): *yadi rathāṅgaṃ śīryeta cchidyeta vā*
+[PAÑCAT. III,112.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?3,112) *chinattyanyānmaṇīṃstu tat (vajram)*
+[RĀJA-TAR. 4,51.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,51) *hatvā chittvā ca bhittvā ca*
+[M. 3,33.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,33) *saṃdhim* пробить отверстие в стене
+[9,276.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,276) pass. разбить, разорвать (instrans.): *yadi rathāṅgaṃ śīryeta cchidyeta vā*
 [ŚĀṄKH. GṚHY. 1,15.] *chinnanāsya*
-[M. 8,291.] *chinna* разорванный, вскрытый от ран
+[M. 8,291.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,291) *chinna* разорванный, вскрытый от ран
 [SUŚR. 2,18,3.] *aticchinna*
 [19,1.] прерванный, прекратившийся, не связный: *abhra*
-[BHAG. 6,36.]
-[R. 3,50,12.]
-[VARĀH. BṚH. S. 29,23.] *indradhanus (acchinna)*
-[34,3.] *rekhāḥ*
-[67,50.] [68,14.]
+[BHAG. 6,36.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?6,36)
+[R. 3,50,12.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,50,12)
+[VARĀH. BṚH. S. 29,23.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?29,23) *indradhanus (acchinna)*
+[34,3.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?34,3) *rekhāḥ*
+[67,50.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?67,50) [68,14.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?68,14)
 - **EN:** 1) to cut off, hew off, strike off, tear off, cut through, hew through, tear asunder, split, pierce: *mā tantuśchedi vayato dhiyaṃ me*
-[ṚV. 2,28,5.] [1,109,3.] *caritraṃ hi verivācchedi parṇam*
-[116,15.] *chinattu somaḥ śiro asya*
-[AV. 5,29,10.] [6,50,1.]
-[ŚAT. BR. 14,1,1,26.] [12,2,2,2.] [3,9,1,2.] [2,1,28.]
-[VS. 8,61.] *loma*
-[TBR. 1,3,10,7.] *parṇaśākhām*
-[KĀTY. ŚR. 4,2,1.]
+[ṚV. 2,28,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.028.html#rv02.028.05) [1,109,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.109.html#rv01.109.03) *caritraṃ hi verivācchedi parṇam*
+[116,15.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.116.html#rv01.116.15) *chinattu somaḥ śiro asya*
+[AV. 5,29,10.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av05.029.html#av05.029.10) [6,50,1.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av06.050.html#av06.050.01)
+[ŚAT. BR. 14,1,1,26.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,1,1,26) [12,2,2,2.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?12,2,2,2) [3,9,1,2.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,9,1,2) [2,1,28.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,2,1,28)
+[VS. 8,61.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?8,61) *loma*
+[TBR. 1,3,10,7.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?1,3,10,7) *parṇaśākhām*
+[KĀTY. ŚR. 4,2,1.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?4,2,1)
 [LĀṬY. 9,2,26.] *chinnaṃ saṃ dhehyoṣadhe*
-[AV. 4,12,5.] *asthi*
-[1.] — *nacchindyānnakhalomāni*
-[M. 4,69.]
-[BHĀG. P. 6,18,46.] *na cchindyātkarajaistṛṇam*
-[M. 4,70.] *vṛkṣāṃstathauṣadhīṃścāpi cchindanti*
-[MBH. 3,13827.]
-[R. 2,80,6.]
-[PAÑCAT. III,260.] *chinnadruma*
-[HIT. 34,21.] *chinnamūlā iva drumāḥ*
-[R. 3,26,24.] *chittvā jaṭām*
-[1,1,86.] *acchindannuttamāṅgāni*
-[MBH. 3,12163.] *śirāṃsyapi sa cicchide*
-[HARIV. 8867.] *teṣāṃ chittvā nṛpo hastau*
-[M. 9,276.]
-[R. 1,28,16.] [3,75,33.] *jihvām*
-[YĀJÑ. 2,302.]
-[KATHĀS. 2,13.]
+[AV. 4,12,5.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av04.012.html#av04.012.05) *asthi*
+[1.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av04.012.html#av04.012.01) — *nacchindyānnakhalomāni*
+[M. 4,69.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,69)
+[BHĀG. P. 6,18,46.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,18,46) *na cchindyātkarajaistṛṇam*
+[M. 4,70.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,70) *vṛkṣāṃstathauṣadhīṃścāpi cchindanti*
+[MBH. 3,13827.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13827)
+[R. 2,80,6.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,80,6)
+[PAÑCAT. III,260.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?3,260) *chinnadruma*
+[HIT. 34,21.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?34,21) *chinnamūlā iva drumāḥ*
+[R. 3,26,24.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,26,24) *chittvā jaṭām*
+[1,1,86.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,1,86) *acchindannuttamāṅgāni*
+[MBH. 3,12163.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12163) *śirāṃsyapi sa cicchide*
+[HARIV. 8867.](https://sanskrit-lexicon-scans.github.io/hariv?8867) *teṣāṃ chittvā nṛpo hastau*
+[M. 9,276.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,276)
+[R. 1,28,16.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,28,16) [3,75,33.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,75,33) *jihvām*
+[YĀJÑ. 2,302.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,302)
+[KATHĀS. 2,13.](https://sanskrit-lexicon-scans.github.io/kss/index.html?2,13)
 [VET. 26,6.] *chinnahasta*
 [KAP. 4,7.]
-[VID. 72.] [214.] [246.] *chittvā vastrārdham*
-[N. 17,36.] [10,19.] *mṛtyupāśāṃśchinatti*
+[VID. 72.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?72) [214.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?214) [246.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?246) *chittvā vastrārdham*
+[N. 17,36.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?17,36) [10,19.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?10,19) *mṛtyupāśāṃśchinatti*
 [ŚVETĀŚV. UP. 4,15.]
-[PAÑCAT. II,86.] [108,10.] [HIT. 15,9.] [43,17.] [VET. 5,7.] *snehapāśamimaṃ chindhi*
-[BHĀG. P. 1,8,41.] *śūlaṃ mūle sa cicchide*
-[MBH. 1,4327.] *nainaṃ chindanti śastrāṇi*
-[BHAG. 2,23.] *dhanurasyāśu cicchide*
-[MBH. 8,3121.] *(tānāśugaiḥ) dvidhā tridhā cācchinam*
-[3,820.] *khaḍgān* u. s. w. *śatadhā taiḥ — ahamacchidam*
+[PAÑCAT. II,86.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?2,86) [108,10.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?108,10) [HIT. 15,9.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?15,9) [43,17.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?43,17) [VET. 5,7.] *snehapāśamimaṃ chindhi*
+[BHĀG. P. 1,8,41.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,8,41) *śūlaṃ mūle sa cicchide*
+[MBH. 1,4327.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4327) *nainaṃ chindanti śastrāṇi*
+[BHAG. 2,23.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?2,23) *dhanurasyāśu cicchide*
+[MBH. 8,3121.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.3121) *(tānāśugaiḥ) dvidhā tridhā cācchinam*
+[3,820.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.820) *khaḍgān* u. s. w. *śatadhā taiḥ — ahamacchidam*
 [ARJ. 7,21.]
-[R. 1,46,23.] *anyo'nyaṃ chindatāṃ śastraiḥ*
-[MBH. 1,1173.] *sārathiṃ daśabhiścāsya dhvajaṃ caikena cicchide*
-[6,5591.] [HARIV. 6857.] [BHĀG. P. 6,10,15.] *te chinnavarmāvaraṇāśchinnabhinnāḥ śarāhatāḥ*
-[R. 3,32,30.] *nāmitro vinikarttavyo nāticchedyaḥ kathaṃ ca na . jīvitaṃ hyapyaticchinnaḥ saṃtyajecca kadācana ..*
-[MBH. 12,3571.] *anyatara pārśvāvaśiṣṭaṃ (asthi) chinnam*
+[R. 1,46,23.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,46,23) *anyo'nyaṃ chindatāṃ śastraiḥ*
+[MBH. 1,1173.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1173) *sārathiṃ daśabhiścāsya dhvajaṃ caikena cicchide*
+[6,5591.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.5591) [HARIV. 6857.](https://sanskrit-lexicon-scans.github.io/hariv?6857) [BHĀG. P. 6,10,15.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,10,15) *te chinnavarmāvaraṇāśchinnabhinnāḥ śarāhatāḥ*
+[R. 3,32,30.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,32,30) *nāmitro vinikarttavyo nāticchedyaḥ kathaṃ ca na . jīvitaṃ hyapyaticchinnaḥ saṃtyajecca kadācana ..*
+[MBH. 12,3571.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3571) *anyatara pārśvāvaśiṣṭaṃ (asthi) chinnam*
 [SUŚR. 1,301,11.] *chinnaṃ rohati cāsinā*
-[PAÑCAT. III,112.] *chinattyanyānmaṇīṃstu tat (vajram)*
-[RĀJA-TAR. 4,51.] *hatvā chittvā ca bhittvā ca*
-[M. 3,33.] *saṃdhim* to breach a wall
-[9,276.] pass. to break, tear asunder (instrans.): *yadi rathāṅgaṃ śīryeta cchidyeta vā*
+[PAÑCAT. III,112.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?3,112) *chinattyanyānmaṇīṃstu tat (vajram)*
+[RĀJA-TAR. 4,51.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,51) *hatvā chittvā ca bhittvā ca*
+[M. 3,33.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,33) *saṃdhim* to breach a wall
+[9,276.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,276) pass. to break, tear asunder (instrans.): *yadi rathāṅgaṃ śīryeta cchidyeta vā*
 [ŚĀṄKH. GṚHY. 1,15.] *chinnanāsya*
-[M. 8,291.] *chinna* torn open, cut open by wounds
+[M. 8,291.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,291) *chinna* torn open, cut open by wounds
 [SUŚR. 2,18,3.] *aticchinna*
 [19,1.] broken off, interrupted, incoherent: *abhra*
-[BHAG. 6,36.]
-[R. 3,50,12.]
-[VARĀH. BṚH. S. 29,23.] *indradhanus (acchinna)*
-[34,3.] *rekhāḥ*
-[67,50.] [68,14.]
+[BHAG. 6,36.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?6,36)
+[R. 3,50,12.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,50,12)
+[VARĀH. BṚH. S. 29,23.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?29,23) *indradhanus (acchinna)*
+[34,3.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?34,3) *rekhāḥ*
+[67,50.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?67,50) [68,14.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?68,14)
   <sub>attested</sub>
 
 **2)** — 2) scheiden, trennen: *chinatti kṛṣyā gordhanādyaṃ kravyādanuvartate*
-[AV. 12,3,37.] [5,38.] [43.] *nāsmādgaṇaśchidyate*
-[ŚAT. BR. 14,5,1,10.] *asyopasadyāṃ mā chaitsītprajayā paśubhiśca* (instr. st. abl.)
-[9,4,23.] *mā chitthā asmāllokāt*
-[AV. 8,1,4.] *chitsi*
+[AV. 12,3,37.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av12.003.html#av12.003.37) [5,38.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av12.005.html#av12.005.38) [43.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av12.005.html#av12.005.43) *nāsmādgaṇaśchidyate*
+[ŚAT. BR. 14,5,1,10.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,5,1,10) *asyopasadyāṃ mā chaitsītprajayā paśubhiśca* (instr. st. abl.)
+[9,4,23.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,9,4,23) *mā chitthā asmāllokāt*
+[AV. 8,1,4.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av08.001.html#av08.001.04) *chitsi*
 [ŚĀṄKH. ŚR. 1,5,9. 4,13,3.] ablösen, absondern, herausnehmen: *śṛṅgīva ṭaṅkacchinnamanaḥśilaḥ*
-[RAGH. 12,80.] *(kṛṣṇamṛgam) pakvaṃ samājñāya niṣṭaptaṃ chinnaśoṇitam*
-[R. 2,56,23.]
+[RAGH. 12,80.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?12,80) *(kṛṣṇamṛgam) pakvaṃ samājñāya niṣṭaptaṃ chinnaśoṇitam*
+[R. 2,56,23.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,56,23)
 
 - **RU:** 2) разлучать, отделять: *chinatti kṛṣyā gordhanādyaṃ kravyādanuvartate*
-[AV. 12,3,37.] [5,38.] [43.] *nāsmādgaṇaśchidyate*
-[ŚAT. BR. 14,5,1,10.] *asyopasadyāṃ mā chaitsītprajayā paśubhiśca* (instr. st. abl.)
-[9,4,23.] *mā chitthā asmāllokāt*
-[AV. 8,1,4.] *chitsi*
+[AV. 12,3,37.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av12.003.html#av12.003.37) [5,38.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av12.005.html#av12.005.38) [43.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av12.005.html#av12.005.43) *nāsmādgaṇaśchidyate*
+[ŚAT. BR. 14,5,1,10.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,5,1,10) *asyopasadyāṃ mā chaitsītprajayā paśubhiśca* (instr. st. abl.)
+[9,4,23.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,9,4,23) *mā chitthā asmāllokāt*
+[AV. 8,1,4.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av08.001.html#av08.001.04) *chitsi*
 [ŚĀṄKH. ŚR. 1,5,9. 4,13,3.] отделять, обособлять, извлекать: *śṛṅgīva ṭaṅkacchinnamanaḥśilaḥ*
-[RAGH. 12,80.] *(kṛṣṇamṛgam) pakvaṃ samājñāya niṣṭaptaṃ chinnaśoṇitam*
-[R. 2,56,23.]
+[RAGH. 12,80.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?12,80) *(kṛṣṇamṛgam) pakvaṃ samājñāya niṣṭaptaṃ chinnaśoṇitam*
+[R. 2,56,23.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,56,23)
 - **EN:** — 2) to separate, divide: *chinatti kṛṣyā gordhanādyaṃ kravyādanuvartate*
-[AV. 12,3,37.] [5,38.] [43.] *nāsmādgaṇaśchidyate*
-[ŚAT. BR. 14,5,1,10.] *asyopasadyāṃ mā chaitsītprajayā paśubhiśca* (instr. st. abl.)
-[9,4,23.] *mā chitthā asmāllokāt*
-[AV. 8,1,4.] *chitsi*
+[AV. 12,3,37.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av12.003.html#av12.003.37) [5,38.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av12.005.html#av12.005.38) [43.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av12.005.html#av12.005.43) *nāsmādgaṇaśchidyate*
+[ŚAT. BR. 14,5,1,10.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,5,1,10) *asyopasadyāṃ mā chaitsītprajayā paśubhiśca* (instr. st. abl.)
+[9,4,23.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,9,4,23) *mā chitthā asmāllokāt*
+[AV. 8,1,4.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av08.001.html#av08.001.04) *chitsi*
 [ŚĀṄKH. ŚR. 1,5,9. 4,13,3.] to detach, isolate, extract: *śṛṅgīva ṭaṅkacchinnamanaḥśilaḥ*
-[RAGH. 12,80.] *(kṛṣṇamṛgam) pakvaṃ samājñāya niṣṭaptaṃ chinnaśoṇitam*
-[R. 2,56,23.]
+[RAGH. 12,80.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?12,80) *(kṛṣṇamṛgam) pakvaṃ samājñāya niṣṭaptaṃ chinnaśoṇitam*
+[R. 2,56,23.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,56,23)
   <sub>attested</sub>
 
 **3)** — 3) unterbrechen, stören: *chinne ca gatikarmaṇi*
-[HARIV. 16258.] *madhyāhnārkatāpacchinnadṛṣṭi*
+[HARIV. 16258.](https://sanskrit-lexicon-scans.github.io/hariv?16258) *madhyāhnārkatāpacchinnadṛṣṭi*
 [MṚCCH. 119,19.]
 
 - **RU:** 3) прерывать, нарушать: *chinne ca gatikarmaṇi*
-[HARIV. 16258.] *madhyāhnārkatāpacchinnadṛṣṭi*
+[HARIV. 16258.](https://sanskrit-lexicon-scans.github.io/hariv?16258) *madhyāhnārkatāpacchinnadṛṣṭi*
 [MṚCCH. 119,19.]
 - **EN:** — 3) to interrupt, disturb: *chinne ca gatikarmaṇi*
-[HARIV. 16258.] *madhyāhnārkatāpacchinnadṛṣṭi*
+[HARIV. 16258.](https://sanskrit-lexicon-scans.github.io/hariv?16258) *madhyāhnārkatāpacchinnadṛṣṭi*
 [MṚCCH. 119,19.]
   <sub>attested</sub>
 
 **4)** — 4) vernichten, zu Grunde richten, zerstören, entfernen: *bāhūnivataunmā cchetsīḥ* (lies *chai˚*)
-[MBH. 2,1942.] *tataśchetsyati nārācairjagatsarvaṃ sarākṣasam*
-[R. 3,70,20.] *(śataghnīm) āśāṃ ca suradviṣāṃ — vāṇaiściccheda*
-[RAGH. 12,96.] *pratiṣṭhām*
-[ŚAT. BR. 10,5,2,5.] *chidyante sarvasaṃśayāḥ*
+[MBH. 2,1942.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1942) *tataśchetsyati nārācairjagatsarvaṃ sarākṣasam*
+[R. 3,70,20.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,70,20) *(śataghnīm) āśāṃ ca suradviṣāṃ — vāṇaiściccheda*
+[RAGH. 12,96.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?12,96) *pratiṣṭhām*
+[ŚAT. BR. 10,5,2,5.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?10,5,2,5) *chidyante sarvasaṃśayāḥ*
 [MUṆḌ. UP. 2,2,8.] *etaṃ me saṃśayaṃ sarvaṃ chettumarhati*
-[MBH. 1,6890.] *saṃdehaṃ me — tattvataśchettumarhasi*
-[3,4030.] *geharatiṃ chinatti*
-[BHĀG. P. 3,5,11.] *chindyādasaṅgaśastreṇa spṛhām*
-[2,1,15.] *kriyāṃ nīlapurāṇoktāmacchindannāgamadviṣaḥ*
-[RĀJA-TAR. 1,178.] *tṛṣṇāṃ chinattyātmanaḥ*
-[PAÑCAT. II,128.] [BHARTṚ. 2,70.] *duḥkhaṃ chindyāmahaṃ te vai*
+[MBH. 1,6890.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6890) *saṃdehaṃ me — tattvataśchettumarhasi*
+[3,4030.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.4030) *geharatiṃ chinatti*
+[BHĀG. P. 3,5,11.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,5,11) *chindyādasaṅgaśastreṇa spṛhām*
+[2,1,15.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,1,15) *kriyāṃ nīlapurāṇoktāmacchindannāgamadviṣaḥ*
+[RĀJA-TAR. 1,178.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?1,178) *tṛṣṇāṃ chinattyātmanaḥ*
+[PAÑCAT. II,128.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?2,128) [BHARTṚ. 2,70.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app2?2,70) *duḥkhaṃ chindyāmahaṃ te vai*
 [MBH.] in [BENF. Chr. 12,25.] *kautūhalaṃ naḥ paramaṃ tacchindhi*
-[HARIV. 7730.] *ṛṇaṃ chittvā* eine Schuld tilgen
+[HARIV. 7730.](https://sanskrit-lexicon-scans.github.io/hariv?7730) *ṛṇaṃ chittvā* eine Schuld tilgen
 
-[RĀJA-TAR. 6,16.]
+[RĀJA-TAR. 6,16.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?6,16)
 
 - **RU:** 4) уничтожать, погублять, разрушать, устранять: *bāhūnivataunmā cchetsīḥ* (lege *chai˚*)
-[MBH. 2,1942.] *tataśchetsyati nārācairjagatsarvaṃ sarākṣasam*
-[R. 3,70,20.] *(śataghnīm) āśāṃ ca suradviṣāṃ — vāṇaiściccheda*
-[RAGH. 12,96.] *pratiṣṭhām*
-[ŚAT. BR. 10,5,2,5.] *chidyante sarvasaṃśayāḥ*
+[MBH. 2,1942.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1942) *tataśchetsyati nārācairjagatsarvaṃ sarākṣasam*
+[R. 3,70,20.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,70,20) *(śataghnīm) āśāṃ ca suradviṣāṃ — vāṇaiściccheda*
+[RAGH. 12,96.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?12,96) *pratiṣṭhām*
+[ŚAT. BR. 10,5,2,5.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?10,5,2,5) *chidyante sarvasaṃśayāḥ*
 [MUṆḌ. UP. 2,2,8.] *etaṃ me saṃśayaṃ sarvaṃ chettumarhati*
-[MBH. 1,6890.] *saṃdehaṃ me — tattvataśchettumarhasi*
-[3,4030.] *geharatiṃ chinatti*
-[BHĀG. P. 3,5,11.] *chindyādasaṅgaśastreṇa spṛhām*
-[2,1,15.] *kriyāṃ nīlapurāṇoktāmacchindannāgamadviṣaḥ*
-[RĀJA-TAR. 1,178.] *tṛṣṇāṃ chinattyātmanaḥ*
-[PAÑCAT. II,128.] [BHARTṚ. 2,70.] *duḥkhaṃ chindyāmahaṃ te vai*
+[MBH. 1,6890.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6890) *saṃdehaṃ me — tattvataśchettumarhasi*
+[3,4030.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.4030) *geharatiṃ chinatti*
+[BHĀG. P. 3,5,11.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,5,11) *chindyādasaṅgaśastreṇa spṛhām*
+[2,1,15.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,1,15) *kriyāṃ nīlapurāṇoktāmacchindannāgamadviṣaḥ*
+[RĀJA-TAR. 1,178.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?1,178) *tṛṣṇāṃ chinattyātmanaḥ*
+[PAÑCAT. II,128.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?2,128) [BHARTṚ. 2,70.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app2?2,70) *duḥkhaṃ chindyāmahaṃ te vai*
 [MBH.] in [BENF. Chr. 12,25.] *kautūhalaṃ naḥ paramaṃ tacchindhi*
-[HARIV. 7730.] *ṛṇaṃ chittvā* погасить долг
+[HARIV. 7730.](https://sanskrit-lexicon-scans.github.io/hariv?7730) *ṛṇaṃ chittvā* погасить долг
 
-[RĀJA-TAR. 6,16.]
+[RĀJA-TAR. 6,16.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?6,16)
 - **EN:** — 4) to annihilate, ruin, destroy, remove: *bāhūnivataunmā cchetsīḥ* (read *chai˚*)
-[MBH. 2,1942.] *tataśchetsyati nārācairjagatsarvaṃ sarākṣasam*
-[R. 3,70,20.] *(śataghnīm) āśāṃ ca suradviṣāṃ — vāṇaiściccheda*
-[RAGH. 12,96.] *pratiṣṭhām*
-[ŚAT. BR. 10,5,2,5.] *chidyante sarvasaṃśayāḥ*
+[MBH. 2,1942.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1942) *tataśchetsyati nārācairjagatsarvaṃ sarākṣasam*
+[R. 3,70,20.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,70,20) *(śataghnīm) āśāṃ ca suradviṣāṃ — vāṇaiściccheda*
+[RAGH. 12,96.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?12,96) *pratiṣṭhām*
+[ŚAT. BR. 10,5,2,5.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?10,5,2,5) *chidyante sarvasaṃśayāḥ*
 [MUṆḌ. UP. 2,2,8.] *etaṃ me saṃśayaṃ sarvaṃ chettumarhati*
-[MBH. 1,6890.] *saṃdehaṃ me — tattvataśchettumarhasi*
-[3,4030.] *geharatiṃ chinatti*
-[BHĀG. P. 3,5,11.] *chindyādasaṅgaśastreṇa spṛhām*
-[2,1,15.] *kriyāṃ nīlapurāṇoktāmacchindannāgamadviṣaḥ*
-[RĀJA-TAR. 1,178.] *tṛṣṇāṃ chinattyātmanaḥ*
-[PAÑCAT. II,128.] [BHARTṚ. 2,70.] *duḥkhaṃ chindyāmahaṃ te vai*
+[MBH. 1,6890.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6890) *saṃdehaṃ me — tattvataśchettumarhasi*
+[3,4030.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.4030) *geharatiṃ chinatti*
+[BHĀG. P. 3,5,11.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,5,11) *chindyādasaṅgaśastreṇa spṛhām*
+[2,1,15.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,1,15) *kriyāṃ nīlapurāṇoktāmacchindannāgamadviṣaḥ*
+[RĀJA-TAR. 1,178.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?1,178) *tṛṣṇāṃ chinattyātmanaḥ*
+[PAÑCAT. II,128.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?2,128) [BHARTṚ. 2,70.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app2?2,70) *duḥkhaṃ chindyāmahaṃ te vai*
 [MBH.] in [BENF. Chr. 12,25.] *kautūhalaṃ naḥ paramaṃ tacchindhi*
-[HARIV. 7730.] *ṛṇaṃ chittvā* to discharge a debt
+[HARIV. 7730.](https://sanskrit-lexicon-scans.github.io/hariv?7730) *ṛṇaṃ chittvā* to discharge a debt
 
-[RĀJA-TAR. 6,16.]
+[RĀJA-TAR. 6,16.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?6,16)
   <sub>attested</sub>
 
 **5)** — 5) *chinna* heruntergekommen, entkräftet, ermüdet: *strī˚, bhāra˚, mārga˚*
@@ -313,35 +342,6 @@ Sch.; *ciccheda* and *cicchide, cicchidvaṃs*
 - **EN:** — Vgl. *bhid* .
   <sub>attested</sub>
 
-**header)** *chid*¦, *chinatti* und *chintte*
-[DHĀTUP. 29,3.] *chinddhi (chindhi)*
-[P. 6,4,101.] [2.] pl. imperf. *acchinad* und *acchinas*
-[8,2,75]; *chinadai* (ved.); *chindeta(!)*
-[KṢURIKOPAN.] in [Ind. St. 2,172. fg.]; *acchidat* und *acchaitsīt*
-[P. 3,1,57.]
-
-*chedma* (ved.), *chitsi* (ved.), *acchitta, acchitthās (chitthās* ved.)
-[P. 3,1,57], [Sch. 8,2,26],
-Sch.; *ciccheda* und *cicchide, cicchidvaṃs*
-[P. 7,2,67], Sch.;
-*chetsyati* Kār 3 aus
-[SIDDH. K.] zu [P. 7,2,10]; *chittvā, chettum; acchedi, chinna* .
-
-- **RU:** *chid*¦, *chinatti* und *chintte*
-[DHĀTUP. 29,3.] *chinddhi (chindhi)*
-[P. 6,4,101.] [2.] pl. imperf. *acchinad* und *acchinas*
-[8,2,75]; *chinadai* (ved.); *chindeta(!)*
-[KṢURIKOPAN.] in [Ind. St. 2,172. fg.]; *acchidat* und *acchaitsīt*
-[P. 3,1,57.]
-
-*chedma* (ved.), *chitsi* (ved.), *acchitta, acchitthās (chitthās* ved.)
-[P. 3,1,57], [Sch. 8,2,26],
-Sch.; *ciccheda* und *cicchide, cicchidvaṃs*
-[P. 7,2,67], Sch.;
-*chetsyati* Kār 3 aus
-[SIDDH. K.] zu [P. 7,2,10]; *chittvā, chettum; acchedi, chinna* .
-  <sub>attested</sub>
-
 ## chid
 
 `_cid~~h0_01_sec_1`
@@ -354,45 +354,45 @@ Sch.; *ciccheda* und *cicchide, cicchidvaṃs*
   <sub>attested</sub>
 
 **caus-1)** 1) abschneiden, abhauen
-[DHĀTUP. 35,80] (*ched*).* mūle*
+[DHĀTUP. 35,80](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=35) (*ched*).* mūle*
 [ŚĀṄKH. ŚR. 17,1,8. 15.]
 [GOBH. 4,2,9.] *nābhināḍīm*
 [SUŚR. 1,369,1.] *yanme bāhumacicchidaḥ*
-[MBH. 7,5954.] *chedita*
-[H. 1490.]
+[MBH. 7,5954.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.5954) *chedita*
+[H. 1490.](https://sanskrit-lexicon-scans.github.io/abch2/app1?1490)
 
 - **RU:** 1) срезать, срубать
-[DHĀTUP. 35,80] (*ched*).* mūle*
+[DHĀTUP. 35,80](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=35) (*ched*).* mūle*
 [ŚĀṄKH. ŚR. 17,1,8. 15.]
 [GOBH. 4,2,9.] *nābhināḍīm*
 [SUŚR. 1,369,1.] *yanme bāhumacicchidaḥ*
-[MBH. 7,5954.] *chedita*
-[H. 1490.]
+[MBH. 7,5954.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.5954) *chedita*
+[H. 1490.](https://sanskrit-lexicon-scans.github.io/abch2/app1?1490)
 - **EN:** 1) to cut off, hew off:
-[DHĀTUP. 35,80] (*ched*).* mūle*
+[DHĀTUP. 35,80](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=35) (*ched*).* mūle*
 [ŚĀṄKH. ŚR. 17,1,8. 15.]
 [GOBH. 4,2,9.] *nābhināḍīm*
 [SUŚR. 1,369,1.] *yanme bāhumacicchidaḥ*
-[MBH. 7,5954.] *chedita*
-[H. 1490.]
+[MBH. 7,5954.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.5954) *chedita*
+[H. 1490.](https://sanskrit-lexicon-scans.github.io/abch2/app1?1490)
   <sub>attested</sub>
 
 **caus-2)** — 2) abschneiden —, abhauen —, zerhauen lassen: *dvāvoṣṭhau chedayennṛpaḥ*
-[M. 8,282.] *hastau*
-[283.] *aṅgulī*
-[277.] *(tam) chedayellavaśaḥ kṣuraiḥ*
-[292.]
+[M. 8,282.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,282) *hastau*
+[283.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,283) *aṅgulī*
+[277.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,277) *(tam) chedayellavaśaḥ kṣuraiḥ*
+[292.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,292)
 
 - **RU:** — 2) велеть срезать, велеть срубить, велеть разрубить: *dvāvoṣṭhau chedayennṛpaḥ*
-[M. 8,282.] *hastau*
-[283.] *aṅgulī*
-[277.] *(tam) chedayellavaśaḥ kṣuraiḥ*
-[292.]
+[M. 8,282.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,282) *hastau*
+[283.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,283) *aṅgulī*
+[277.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,277) *(tam) chedayellavaśaḥ kṣuraiḥ*
+[292.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,292)
 - **EN:** — 2) to cause to cut off —, hew off —, hew asunder: *dvāvoṣṭhau chedayennṛpaḥ*
-[M. 8,282.] *hastau*
-[283.] *aṅgulī*
-[277.] *(tam) chedayellavaśaḥ kṣuraiḥ*
-[292.]
+[M. 8,282.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,282) *hastau*
+[283.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,283) *aṅgulī*
+[277.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,277) *(tam) chedayellavaśaḥ kṣuraiḥ*
+[292.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,292)
   <sub>attested</sub>
 
 ## chid
@@ -401,18 +401,18 @@ Sch.; *ciccheda* und *cicchide, cicchidvaṃs*
 
 
 **intens-head)** — intens. *cecchidīti*
-[P. 7,4,65], Sch.
+[P. 7,4,65](https://ashtadhyayi.com/sutraani/7/4/65), Sch.
 *cecchidyate*
-[83], Vārtt. 2, Sch. ([ed. Calc.])
+[83](https://ashtadhyayi.com/sutraani/7/4/83), Vārtt. 2, Sch. ([ed. Calc.])
 
 - **RU:** — intens. *cecchidīti*
-[P. 7,4,65], Sch.
+[P. 7,4,65](https://ashtadhyayi.com/sutraani/7/4/65), Sch.
 *cecchidyate*
-[83], Vārtt. 2, Sch. ([ed. Calc.])
+[83](https://ashtadhyayi.com/sutraani/7/4/83), Vārtt. 2, Sch. ([ed. Calc.])
 - **EN:** — intens. *cecchidīti*
-[P. 7,4,65], Sch.
+[P. 7,4,65](https://ashtadhyayi.com/sutraani/7/4/65), Sch.
 *cecchidyate*
-[83], Vārtt. 2, Sch. ([ed. Calc.])
+[83](https://ashtadhyayi.com/sutraani/7/4/83), Vārtt. 2, Sch. ([ed. Calc.])
   <sub>attested</sub>
 
 ## chid
@@ -446,12 +446,12 @@ Sch.; *ciccheda* und *cicchide, cicchidvaṃs*
 
 
 **1)** — *antar* abschneiden, intercludere: *taṃ tu tvā mā girau santamudakamantaśchaitsīt*
-[ŚAT. BR. 1,8,1,6.]
+[ŚAT. BR. 1,8,1,6.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,8,1,6)
 
 - **RU:** — *antar* отрезать, отсекать, intercludere: *taṃ tu tvā mā girau santamudakamantaśchaitsīt*
-[ŚAT. BR. 1,8,1,6.]
+[ŚAT. BR. 1,8,1,6.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,8,1,6)
 - **EN:** — *antar* to cut off, intercludere: *taṃ tu tvā mā girau santamudakamantaśchaitsīt*
-[ŚAT. BR. 1,8,1,6.]
+[ŚAT. BR. 1,8,1,6.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,8,1,6)
   <sub>attested</sub>
 
 ## chid
@@ -460,24 +460,24 @@ Sch.; *ciccheda* und *cicchide, cicchidvaṃs*
 
 
 **1)** — *apa* abspalten, abtrennen: *śakalam*
-[ŚAT. BR. 3,6,4,11.]
-[KĀTY. ŚR. 3,2,5.] *antāpacchinna*
-Schol. zu [KĀTY. ŚR. 3,7,17.] [8,2.] *etasyai vā eṣāpacchidyaiṣaiva punarbhavani*
-[ŚAT. BR. 5,3,4,9.] *ājarasaṃ hāsmai vājinaṃ nāpacchidyate* wird ihm nicht entzogen
-[AIT. BR. 1,13.]
+[ŚAT. BR. 3,6,4,11.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,6,4,11)
+[KĀTY. ŚR. 3,2,5.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?3,2,5) *antāpacchinna*
+Schol. zu [KĀTY. ŚR. 3,7,17.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?3,7,17) [8,2.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?3,8,2) *etasyai vā eṣāpacchidyaiṣaiva punarbhavani*
+[ŚAT. BR. 5,3,4,9.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?5,3,4,9) *ājarasaṃ hāsmai vājinaṃ nāpacchidyate* wird ihm nicht entzogen
+[AIT. BR. 1,13.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?1,13)
 
 - **RU:** — *apa* отщеплять, отделять: *śakalam*
-[ŚAT. BR. 3,6,4,11.]
-[KĀTY. ŚR. 3,2,5.] *antāpacchinna*
-Schol. zu [KĀTY. ŚR. 3,7,17.] [8,2.] *etasyai vā eṣāpacchidyaiṣaiva punarbhavani*
-[ŚAT. BR. 5,3,4,9.] *ājarasaṃ hāsmai vājinaṃ nāpacchidyate* не отнимается у него
-[AIT. BR. 1,13.]
+[ŚAT. BR. 3,6,4,11.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,6,4,11)
+[KĀTY. ŚR. 3,2,5.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?3,2,5) *antāpacchinna*
+Schol. zu [KĀTY. ŚR. 3,7,17.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?3,7,17) [8,2.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?3,8,2) *etasyai vā eṣāpacchidyaiṣaiva punarbhavani*
+[ŚAT. BR. 5,3,4,9.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?5,3,4,9) *ājarasaṃ hāsmai vājinaṃ nāpacchidyate* не отнимается у него
+[AIT. BR. 1,13.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?1,13)
 - **EN:** — *apa* to split off, sever: *śakalam*
-[ŚAT. BR. 3,6,4,11.]
-[KĀTY. ŚR. 3,2,5.] *antāpacchinna*
-Schol. to [KĀTY. ŚR. 3,7,17.] [8,2.] *etasyai vā eṣāpacchidyaiṣaiva punarbhavani*
-[ŚAT. BR. 5,3,4,9.] *ājarasaṃ hāsmai vājinaṃ nāpacchidyate* is not taken from him
-[AIT. BR. 1,13.]
+[ŚAT. BR. 3,6,4,11.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,6,4,11)
+[KĀTY. ŚR. 3,2,5.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?3,2,5) *antāpacchinna*
+Schol. to [KĀTY. ŚR. 3,7,17.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?3,7,17) [8,2.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?3,8,2) *etasyai vā eṣāpacchidyaiṣaiva punarbhavani*
+[ŚAT. BR. 5,3,4,9.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?5,3,4,9) *ājarasaṃ hāsmai vājinaṃ nāpacchidyate* is not taken from him
+[AIT. BR. 1,13.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?1,13)
   <sub>attested</sub>
 
 **caus)** — Vgl. *apaccheda* .
@@ -491,23 +491,23 @@ Schol. to [KĀTY. ŚR. 3,7,17.] [8,2.] *etasyai vā eṣāpacchidyaiṣaiva puna
 `_cid~~h0_07_ava`
 
 
-**head)** — *ava*
+— *ava*
 
 - **RU:** — *ava*
 - **EN:** — *ava*
   <sub>attested</sub>
 
 **1)** 1) abtrennen, scheiden: *ava vā eṣa suvargāllokācchidyate*
-[TS. 2,2,5,4.] [3,2,1,1.] [2.]
+[TS. 2,2,5,4.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?2,2,5,4) [3,2,1,1.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?3,2,1,1) [2.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?3,2,1,2)
 [BĀLAB. 33.] *anavacchinna* ununterschieden
 [YOGAS. 2,31.]
 
 - **RU:** 1) отрезать, разделять: *ava vā eṣa suvargāllokācchidyate*
-[TS. 2,2,5,4.] [3,2,1,1.] [2.]
+[TS. 2,2,5,4.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?2,2,5,4) [3,2,1,1.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?3,2,1,1) [2.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?3,2,1,2)
 [BĀLAB. 33.] *anavacchinna* нераздельный
 [YOGAS. 2,31.]
 - **EN:** 1) to sever, separate: *ava vā eṣa suvargāllokācchidyate*
-[TS. 2,2,5,4.] [3,2,1,1.] [2.]
+[TS. 2,2,5,4.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?2,2,5,4) [3,2,1,1.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?3,2,1,1) [2.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?3,2,1,2)
 [BĀLAB. 33.] *anavacchinna* undifferentiated
 [YOGAS. 2,31.]
   <sub>attested</sub>
@@ -515,16 +515,16 @@ Schol. to [KĀTY. ŚR. 3,7,17.] [8,2.] *etasyai vā eṣāpacchidyaiṣaiva puna
 **2)** — 2) voneinanderreissen, aus seinem Zusammenhange reissen, unterbrechen: *avacchinna*
 [LĀṬY. 10,3,13.] *vanavṛkṣāvacchinnākāśayoḥ, vanavṛkṣatadavacchinnākāśayoḥ*
 [VEDĀNTAS. (Allah.) No. 34.] *dikkālānavacchinnāya — śāntāya tejase*
-[BHARTṚ. 2,1.]
+[BHARTṚ. 2,1.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app2?2,1)
 
 - **RU:** — 2) разрывать, вырывать из связи, прерывать: *avacchinna*
 [LĀṬY. 10,3,13.] *vanavṛkṣāvacchinnākāśayoḥ, vanavṛkṣatadavacchinnākāśayoḥ*
 [VEDĀNTAS. (Allah.) No. 34.] *dikkālānavacchinnāya — śāntāya tejase*
-[BHARTṚ. 2,1.]
+[BHARTṚ. 2,1.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app2?2,1)
 - **EN:** — 2) to tear apart, wrench from its context, interrupt: *avacchinna*
 [LĀṬY. 10,3,13.] *vanavṛkṣāvacchinnākāśayoḥ, vanavṛkṣatadavacchinnākāśayoḥ*
 [VEDĀNTAS. (Allah.) No. 34.] *dikkālānavacchinnāya — śāntāya tejase*
-[BHARTṚ. 2,1.]
+[BHARTṚ. 2,1.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app2?2,1)
   <sub>attested</sub>
 
 **caus)** — Vgl. *avaccheda* fgg.
@@ -539,12 +539,12 @@ Schol. to [KĀTY. ŚR. 3,7,17.] [8,2.] *etasyai vā eṣāpacchidyaiṣaiva puna
 
 
 **1)** — *paryava* auf beiden Seiten rings abtrennen: *ubhayata enaṃ viśaḥ paryavacchinadānīti*
-[AIT. BR. 3,19.]
+[AIT. BR. 3,19.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?3,19)
 
 - **RU:** — *paryava* отрезать кругом с обеих сторон: *ubhayata enaṃ viśaḥ paryavacchinadānīti*
-[AIT. BR. 3,19.]
+[AIT. BR. 3,19.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?3,19)
 - **EN:** — *paryava* to sever all around on both sides: *ubhayata enaṃ viśaḥ paryavacchinadānīti*
-[AIT. BR. 3,19.]
+[AIT. BR. 3,19.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?3,19)
   <sub>attested</sub>
 
 ## chid
@@ -552,7 +552,7 @@ Schol. to [KĀTY. ŚR. 3,7,17.] [8,2.] *etasyai vā eṣāpacchidyaiṣaiva puna
 `_cid~~h0_09_vyava`
 
 
-**head)** — *vyava*
+— *vyava*
 
 - **RU:** — *vyava*
 - **EN:** — *vyava*
@@ -568,60 +568,60 @@ Schol. to [KĀTY. ŚR. 3,7,17.] [8,2.] *etasyai vā eṣāpacchidyaiṣaiva puna
   <sub>attested</sub>
 
 **2)** — 2) abschneiden, abtrennen, scheiden: *vyavacchidya tu rājānam — rathānīkena mahatā sarvataḥ paryavārayat* nachdem er ihn (von den Andern) abgeschnitten hatte
-[MBH. 7,1166.] *viśaṃ kṣatrādvyavacchindyāt*
-[ŚAT. BR. 12,7,3,15.] *rāṣṭrāt*
-[13,1,6,3.] *yadevāsyātra kāmānāṃ vyavacchidyate*
-[6,6,4,11.] [ŚĀṄKH. ŚR. 2,12,10. 11.] *vyavacchinna* unterschieden
+[MBH. 7,1166.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.1166) *viśaṃ kṣatrādvyavacchindyāt*
+[ŚAT. BR. 12,7,3,15.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?12,7,3,15) *rāṣṭrāt*
+[13,1,6,3.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?13,1,6,3) *yadevāsyātra kāmānāṃ vyavacchidyate*
+[6,6,4,11.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?6,6,4,11) [ŚĀṄKH. ŚR. 2,12,10. 11.] *vyavacchinna* unterschieden
 [TARKASAM̃GR. 58.] = *bhinna*
-[TRIK. 3,1,18.]
+[TRIK. 3,1,18.](https://sanskrit-lexicon-scans.github.io/medini/app2?3,1,18)
 
 - **RU:** 2) отрезать, отделять, разлучать: *vyavacchidya tu rājānam — rathānīkena mahatā sarvataḥ paryavārayat* отрезав его (от остальных)
-[MBH. 7,1166.] *viśaṃ kṣatrādvyavacchindyāt*
-[ŚAT. BR. 12,7,3,15.] *rāṣṭrāt*
-[13,1,6,3.] *yadevāsyātra kāmānāṃ vyavacchidyate*
-[6,6,4,11.] [ŚĀṄKH. ŚR. 2,12,10. 11.] *vyavacchinna* отличённый, различённый
+[MBH. 7,1166.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.1166) *viśaṃ kṣatrādvyavacchindyāt*
+[ŚAT. BR. 12,7,3,15.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?12,7,3,15) *rāṣṭrāt*
+[13,1,6,3.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?13,1,6,3) *yadevāsyātra kāmānāṃ vyavacchidyate*
+[6,6,4,11.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?6,6,4,11) [ŚĀṄKH. ŚR. 2,12,10. 11.] *vyavacchinna* отличённый, различённый
 [TARKASAM̃GR. 58.] = *bhinna*
-[TRIK. 3,1,18.]
+[TRIK. 3,1,18.](https://sanskrit-lexicon-scans.github.io/medini/app2?3,1,18)
 - **EN:** — 2) to cut off, sever, separate: *vyavacchidya tu rājānam — rathānīkena mahatā sarvataḥ paryavārayat* after he had cut him off (from the others)
-[MBH. 7,1166.] *viśaṃ kṣatrādvyavacchindyāt*
-[ŚAT. BR. 12,7,3,15.] *rāṣṭrāt*
-[13,1,6,3.] *yadevāsyātra kāmānāṃ vyavacchidyate*
-[6,6,4,11.] [ŚĀṄKH. ŚR. 2,12,10. 11.] *vyavacchinna* distinguished
+[MBH. 7,1166.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.1166) *viśaṃ kṣatrādvyavacchindyāt*
+[ŚAT. BR. 12,7,3,15.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?12,7,3,15) *rāṣṭrāt*
+[13,1,6,3.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?13,1,6,3) *yadevāsyātra kāmānāṃ vyavacchidyate*
+[6,6,4,11.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?6,6,4,11) [ŚĀṄKH. ŚR. 2,12,10. 11.] *vyavacchinna* distinguished
 [TARKASAM̃GR. 58.] = *bhinna*
-[TRIK. 3,1,18.]
+[TRIK. 3,1,18.](https://sanskrit-lexicon-scans.github.io/medini/app2?3,1,18)
   <sub>attested</sub>
 
 **3)** — 3) voneinanderreissen, auseinanderthun; unterbrechen: *(śaram) śravaṇāntamupānīya vyavacchinnena muṣṭinā*
-[R. 3,50,17.] *mantraliṅgairvyavacchinnaṃ bhajanto na viduḥ param*
-[BHĀG. P. 4,29,45.] *avyavacchinna* ununterbrochen, in Verbind. mit *saṃtata*
-[ŚAT. BR. 1,3,5,13.] [16.] [7,2,4.] [9,3,3.] [7,4,2,20.]
-[AIT. BR. 1,11.] *avyavacchinnadhāraughaiḥ samudraughasamairghanaiḥ*
-[HARIV. 3580.] *avyavacchinnapiṇḍitaiḥ (śaraiḥ)* _adv._
-[MBH. 7,4746.]
+[R. 3,50,17.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,50,17) *mantraliṅgairvyavacchinnaṃ bhajanto na viduḥ param*
+[BHĀG. P. 4,29,45.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,29,45) *avyavacchinna* ununterbrochen, in Verbind. mit *saṃtata*
+[ŚAT. BR. 1,3,5,13.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,3,5,13) [16.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,3,5,16) [7,2,4.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,7,2,4) [9,3,3.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,9,3,3) [7,4,2,20.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?7,4,2,20)
+[AIT. BR. 1,11.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?1,11) *avyavacchinnadhāraughaiḥ samudraughasamairghanaiḥ*
+[HARIV. 3580.](https://sanskrit-lexicon-scans.github.io/hariv?3580) *avyavacchinnapiṇḍitaiḥ (śaraiḥ)* _adv._
+[MBH. 7,4746.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.4746)
 
 - **RU:** 3) разрывать, разлучать; прерывать: *(śaram) śravaṇāntamupānīya vyavacchinnena muṣṭinā*
-[R. 3,50,17.] *mantraliṅgairvyavacchinnaṃ bhajanto na viduḥ param*
-[BHĀG. P. 4,29,45.] *avyavacchinna* непрерывный, in Verbind. mit *saṃtata*
-[ŚAT. BR. 1,3,5,13.] [16.] [7,2,4.] [9,3,3.] [7,4,2,20.]
-[AIT. BR. 1,11.] *avyavacchinnadhāraughaiḥ samudraughasamairghanaiḥ*
-[HARIV. 3580.] *avyavacchinnapiṇḍitaiḥ (śaraiḥ)* _adv._
-[MBH. 7,4746.]
+[R. 3,50,17.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,50,17) *mantraliṅgairvyavacchinnaṃ bhajanto na viduḥ param*
+[BHĀG. P. 4,29,45.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,29,45) *avyavacchinna* непрерывный, in Verbind. mit *saṃtata*
+[ŚAT. BR. 1,3,5,13.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,3,5,13) [16.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,3,5,16) [7,2,4.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,7,2,4) [9,3,3.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,9,3,3) [7,4,2,20.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?7,4,2,20)
+[AIT. BR. 1,11.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?1,11) *avyavacchinnadhāraughaiḥ samudraughasamairghanaiḥ*
+[HARIV. 3580.](https://sanskrit-lexicon-scans.github.io/hariv?3580) *avyavacchinnapiṇḍitaiḥ (śaraiḥ)* _adv._
+[MBH. 7,4746.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.4746)
 - **EN:** — 3) to tear apart, put asunder; to interrupt: *(śaram) śravaṇāntamupānīya vyavacchinnena muṣṭinā*
-[R. 3,50,17.] *mantraliṅgairvyavacchinnaṃ bhajanto na viduḥ param*
-[BHĀG. P. 4,29,45.] *avyavacchinna* uninterrupted, in Verbind. with *saṃtata*
-[ŚAT. BR. 1,3,5,13.] [16.] [7,2,4.] [9,3,3.] [7,4,2,20.]
-[AIT. BR. 1,11.] *avyavacchinnadhāraughaiḥ samudraughasamairghanaiḥ*
-[HARIV. 3580.] *avyavacchinnapiṇḍitaiḥ (śaraiḥ)* _adv._
-[MBH. 7,4746.]
+[R. 3,50,17.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,50,17) *mantraliṅgairvyavacchinnaṃ bhajanto na viduḥ param*
+[BHĀG. P. 4,29,45.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,29,45) *avyavacchinna* uninterrupted, in Verbind. with *saṃtata*
+[ŚAT. BR. 1,3,5,13.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,3,5,13) [16.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,3,5,16) [7,2,4.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,7,2,4) [9,3,3.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,9,3,3) [7,4,2,20.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?7,4,2,20)
+[AIT. BR. 1,11.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?1,11) *avyavacchinnadhāraughaiḥ samudraughasamairghanaiḥ*
+[HARIV. 3580.](https://sanskrit-lexicon-scans.github.io/hariv?3580) *avyavacchinnapiṇḍitaiḥ (śaraiḥ)* _adv._
+[MBH. 7,4746.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.4746)
   <sub>attested</sub>
 
 **4)** — 4) sich zu (*prati*) Etwas entscheiden: *iti vyavacchidya sa pāṇḍaveyaḥ prāyopaveśaṃ prati*
-[BHĀG. P. 1,19,7.]
+[BHĀG. P. 1,19,7.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,19,7)
 
 - **RU:** 4) принять решение в пользу (*prati*) чего-либо: *iti vyavacchidya sa pāṇḍaveyaḥ prāyopaveśaṃ prati*
-[BHĀG. P. 1,19,7.]
+[BHĀG. P. 1,19,7.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,19,7)
 - **EN:** — 4) to decide upon (*prati*) something: *iti vyavacchidya sa pāṇḍaveyaḥ prāyopaveśaṃ prati*
-[BHĀG. P. 1,19,7.]
+[BHĀG. P. 1,19,7.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,19,7)
   <sub>attested</sub>
 
 **caus)** — Vgl. *vyavaccheda* .
@@ -635,121 +635,121 @@ Schol. to [KĀTY. ŚR. 3,7,17.] [8,2.] *etasyai vā eṣāpacchidyaiṣaiva puna
 `_cid~~h0_10__a`
 
 
-**head)** — *ā*
+— *ā*
 
 - **RU:** — *ā*
 - **EN:** — *ā*
   <sub>attested</sub>
 
 **1)** 1) abreissen, abschneiden, zerschneiden, zerbrechen: *kṛtyākṛtaḥ prajāṃ naḍamivā cchindhi vārṣikam*
-[AV. 4,19,1.] [7,74,2.] [12,5,51.] *tṛṇam*
-[ŚAT. BR. 1,9,2,16.] [2,4,2,17.] [3,5,2,18.] *kuśīm*
-[6,2,10.] *āchinna* abgerissen
-[KĀTY. ŚR. 4,1,11.] *ye cācchindanti vṛṣaṇān*
-[MBH. 12,9377.] *ākramya mānuṣaṃ kaṇṭhamācchidya dhamanīmapi*
-[1,5936.] *āchetsyāmyahametasya dhanurjyāmapi cāhave*
-[4,1967.] *ācchinnaṃ dhanuriva nirguṇam*
+[AV. 4,19,1.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av04.019.html#av04.019.01) [7,74,2.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av07.074.html#av07.074.02) [12,5,51.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av12.005.html#av12.005.51) *tṛṇam*
+[ŚAT. BR. 1,9,2,16.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,9,2,16) [2,4,2,17.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,4,2,17) [3,5,2,18.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,5,2,18) *kuśīm*
+[6,2,10.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,6,2,10) *āchinna* abgerissen
+[KĀTY. ŚR. 4,1,11.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?4,1,11) *ye cācchindanti vṛṣaṇān*
+[MBH. 12,9377.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.9377) *ākramya mānuṣaṃ kaṇṭhamācchidya dhamanīmapi*
+[1,5936.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5936) *āchetsyāmyahametasya dhanurjyāmapi cāhave*
+[4,1967.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1967) *ācchinnaṃ dhanuriva nirguṇam*
 [MṚCCH. 131,17.]
-[BHĀG. P. 9,15,33.] *jagadācchidya dhāvat*
-[3,21,18.]
+[BHĀG. P. 9,15,33.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,15,33) *jagadācchidya dhāvat*
+[3,21,18.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,21,18)
 
 - **RU:** 1) обрывать, отрезать, разрезать, разламывать: *kṛtyākṛtaḥ prajāṃ naḍamivā cchindhi vārṣikam*
-[AV. 4,19,1.] [7,74,2.] [12,5,51.] *tṛṇam*
-[ŚAT. BR. 1,9,2,16.] [2,4,2,17.] [3,5,2,18.] *kuśīm*
-[6,2,10.] *āchinna* оборванный
-[KĀTY. ŚR. 4,1,11.] *ye cācchindanti vṛṣaṇān*
-[MBH. 12,9377.] *ākramya mānuṣaṃ kaṇṭhamācchidya dhamanīmapi*
-[1,5936.] *āchetsyāmyahametasya dhanurjyāmapi cāhave*
-[4,1967.] *ācchinnaṃ dhanuriva nirguṇam*
+[AV. 4,19,1.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av04.019.html#av04.019.01) [7,74,2.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av07.074.html#av07.074.02) [12,5,51.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av12.005.html#av12.005.51) *tṛṇam*
+[ŚAT. BR. 1,9,2,16.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,9,2,16) [2,4,2,17.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,4,2,17) [3,5,2,18.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,5,2,18) *kuśīm*
+[6,2,10.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,6,2,10) *āchinna* оборванный
+[KĀTY. ŚR. 4,1,11.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?4,1,11) *ye cācchindanti vṛṣaṇān*
+[MBH. 12,9377.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.9377) *ākramya mānuṣaṃ kaṇṭhamācchidya dhamanīmapi*
+[1,5936.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5936) *āchetsyāmyahametasya dhanurjyāmapi cāhave*
+[4,1967.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1967) *ācchinnaṃ dhanuriva nirguṇam*
 [MṚCCH. 131,17.]
-[BHĀG. P. 9,15,33.] *jagadācchidya dhāvat*
-[3,21,18.]
+[BHĀG. P. 9,15,33.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,15,33) *jagadācchidya dhāvat*
+[3,21,18.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,21,18)
 - **EN:** 1) to tear off, cut off, cut through, break: *kṛtyākṛtaḥ prajāṃ naḍamivā cchindhi vārṣikam*
-[AV. 4,19,1.] [7,74,2.] [12,5,51.] *tṛṇam*
-[ŚAT. BR. 1,9,2,16.] [2,4,2,17.] [3,5,2,18.] *kuśīm*
-[6,2,10.] *āchinna* torn off
-[KĀTY. ŚR. 4,1,11.] *ye cācchindanti vṛṣaṇān*
-[MBH. 12,9377.] *ākramya mānuṣaṃ kaṇṭhamācchidya dhamanīmapi*
-[1,5936.] *āchetsyāmyahametasya dhanurjyāmapi cāhave*
-[4,1967.] *ācchinnaṃ dhanuriva nirguṇam*
+[AV. 4,19,1.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av04.019.html#av04.019.01) [7,74,2.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av07.074.html#av07.074.02) [12,5,51.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av12.005.html#av12.005.51) *tṛṇam*
+[ŚAT. BR. 1,9,2,16.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,9,2,16) [2,4,2,17.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,4,2,17) [3,5,2,18.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,5,2,18) *kuśīm*
+[6,2,10.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,6,2,10) *āchinna* torn off
+[KĀTY. ŚR. 4,1,11.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?4,1,11) *ye cācchindanti vṛṣaṇān*
+[MBH. 12,9377.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.9377) *ākramya mānuṣaṃ kaṇṭhamācchidya dhamanīmapi*
+[1,5936.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5936) *āchetsyāmyahametasya dhanurjyāmapi cāhave*
+[4,1967.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1967) *ācchinnaṃ dhanuriva nirguṇam*
 [MṚCCH. 131,17.]
-[BHĀG. P. 9,15,33.] *jagadācchidya dhāvat*
-[3,21,18.]
+[BHĀG. P. 9,15,33.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,15,33) *jagadācchidya dhāvat*
+[3,21,18.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,21,18)
   <sub>attested</sub>
 
 **2)** — 2) herausnehmen: *pādāvācchidyotkrāmati tasmādu haitatpretamāhurācchedyasyeti*
-[ŚAT. BR. 10,5,2,13.] *sa yathā *
+[ŚAT. BR. 10,5,2,13.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?10,5,2,13) *sa yathā *
 
 * grasitamanuhāyācchidya parāsye devaṃ tat*
-[3,3,2,8.] [8,1,8.] *hiraṇyaṃ sahasācchidya*
-[KĀTY. ŚR. 7,8,27.] *asimācchidya*
+[3,3,2,8.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,3,2,8) [8,1,8.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,8,1,8) *hiraṇyaṃ sahasācchidya*
+[KĀTY. ŚR. 7,8,27.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?7,8,27) *asimācchidya*
 [DAŚAK. 117,4.]
 
 - **RU:** — 2) извлекать: *pādāvācchidyotkrāmati tasmādu haitatpretamāhurācchedyasyeti*
-[ŚAT. BR. 10,5,2,13.] *sa yathā *
+[ŚAT. BR. 10,5,2,13.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?10,5,2,13) *sa yathā *
 
 * grasitamanuhāyācchidya parāsye devaṃ tat*
-[3,3,2,8.] [8,1,8.] *hiraṇyaṃ sahasācchidya*
-[KĀTY. ŚR. 7,8,27.] *asimācchidya*
+[3,3,2,8.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,3,2,8) [8,1,8.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,8,1,8) *hiraṇyaṃ sahasācchidya*
+[KĀTY. ŚR. 7,8,27.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?7,8,27) *asimācchidya*
 [DAŚAK. 117,4.]
 - **EN:** — 2) to take out, extract: *pādāvācchidyotkrāmati tasmādu haitatpretamāhurācchedyasyeti*
-[ŚAT. BR. 10,5,2,13.] *sa yathā *
+[ŚAT. BR. 10,5,2,13.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?10,5,2,13) *sa yathā *
 
 * grasitamanuhāyācchidya parāsye devaṃ tat*
-[3,3,2,8.] [8,1,8.] *hiraṇyaṃ sahasācchidya*
-[KĀTY. ŚR. 7,8,27.] *asimācchidya*
+[3,3,2,8.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,3,2,8) [8,1,8.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,8,1,8) *hiraṇyaṃ sahasācchidya*
+[KĀTY. ŚR. 7,8,27.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?7,8,27) *asimācchidya*
 [DAŚAK. 117,4.]
   <sub>attested</sub>
 
 **3)** — 3) abziehen, entfernen: *asminyathāvatsakhi vartamānā bhartāramācchetsyasi kāminībhyaḥ*
-[MBH. 3,14710.] *karmāntarārjitebhyaḥ svargādilokebhya ācchinatti* abschneiden von, ausschliessen von
-[KULL.] zu [M. 4,219.]
+[MBH. 3,14710.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14710) *karmāntarārjitebhyaḥ svargādilokebhya ācchinatti* abschneiden von, ausschliessen von
+[KULL.] zu [M. 4,219.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,219)
 
 - **RU:** — 3) отстранять, удалять: *asminyathāvatsakhi vartamānā bhartāramācchetsyasi kāminībhyaḥ*
-[MBH. 3,14710.] *karmāntarārjitebhyaḥ svargādilokebhya ācchinatti* отрезать от, исключать из
-[KULL.] zu [M. 4,219.]
+[MBH. 3,14710.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14710) *karmāntarārjitebhyaḥ svargādilokebhya ācchinatti* отрезать от, исключать из
+[KULL.] zu [M. 4,219.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,219)
 - **EN:** — 3) to withdraw, remove: *asminyathāvatsakhi vartamānā bhartāramācchetsyasi kāminībhyaḥ*
-[MBH. 3,14710.] *karmāntarārjitebhyaḥ svargādilokebhya ācchinatti* to cut off from, exclude from
-[KULL.] to [M. 4,219.]
+[MBH. 3,14710.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14710) *karmāntarārjitebhyaḥ svargādilokebhya ācchinatti* to cut off from, exclude from
+[KULL.] to [M. 4,219.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,219)
   <sub>attested</sub>
 
 **4)** — 4) entreissen, wegnehmen, rauben: *kṛtāntena . ācchidya mama mandāyā nīyase*
-[HARIV. 4836.] *(havyam) jātavedomukhānmāyī miṣatāmācchinatti naḥ*
-[KUMĀRAS. 2,46.] *rājaputrīrimāḥ śatam . ācchidya rājñāṃ gehebhyaḥ parivāraṃ nyadhānmama ..*
-[KATHĀS. 11,54.] *ācchidya sarvaṃ ca dhanaṃ kurubhyaḥ*
-[MBH. 4,2147.] [2159.] [2240.] [1489.] [3,1392.] [5,4924.] [12,2580.] [13,3180.]
+[HARIV. 4836.](https://sanskrit-lexicon-scans.github.io/hariv?4836) *(havyam) jātavedomukhānmāyī miṣatāmācchinatti naḥ*
+[KUMĀRAS. 2,46.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?2,46) *rājaputrīrimāḥ śatam . ācchidya rājñāṃ gehebhyaḥ parivāraṃ nyadhānmama ..*
+[KATHĀS. 11,54.](https://sanskrit-lexicon-scans.github.io/kss/index.html?11,54) *ācchidya sarvaṃ ca dhanaṃ kurubhyaḥ*
+[MBH. 4,2147.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.2147) [2159.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.2159) [2240.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.2240) [1489.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1489) [3,1392.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1392) [5,4924.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.4924) [12,2580.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.2580) [13,3180.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3180)
 [MṚCCH. 165,7.]
-[PAÑCAT. 222,4.]
-[BHĀG. P. 6,7,39.] [8,19,32.]
+[PAÑCAT. 222,4.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?222,4)
+[BHĀG. P. 6,7,39.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,7,39) [8,19,32.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,19,32)
 
 - **RU:** — 4) вырывать, отнимать, похищать: *kṛtāntena . ācchidya mama mandāyā nīyase*
-[HARIV. 4836.] *(havyam) jātavedomukhānmāyī miṣatāmācchinatti naḥ*
-[KUMĀRAS. 2,46.] *rājaputrīrimāḥ śatam . ācchidya rājñāṃ gehebhyaḥ parivāraṃ nyadhānmama ..*
-[KATHĀS. 11,54.] *ācchidya sarvaṃ ca dhanaṃ kurubhyaḥ*
-[MBH. 4,2147.] [2159.] [2240.] [1489.] [3,1392.] [5,4924.] [12,2580.] [13,3180.]
+[HARIV. 4836.](https://sanskrit-lexicon-scans.github.io/hariv?4836) *(havyam) jātavedomukhānmāyī miṣatāmācchinatti naḥ*
+[KUMĀRAS. 2,46.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?2,46) *rājaputrīrimāḥ śatam . ācchidya rājñāṃ gehebhyaḥ parivāraṃ nyadhānmama ..*
+[KATHĀS. 11,54.](https://sanskrit-lexicon-scans.github.io/kss/index.html?11,54) *ācchidya sarvaṃ ca dhanaṃ kurubhyaḥ*
+[MBH. 4,2147.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.2147) [2159.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.2159) [2240.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.2240) [1489.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1489) [3,1392.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1392) [5,4924.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.4924) [12,2580.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.2580) [13,3180.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3180)
 [MṚCCH. 165,7.]
-[PAÑCAT. 222,4.]
-[BHĀG. P. 6,7,39.] [8,19,32.]
+[PAÑCAT. 222,4.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?222,4)
+[BHĀG. P. 6,7,39.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,7,39) [8,19,32.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,19,32)
 - **EN:** — 4) to wrest away, take away, rob: *kṛtāntena . ācchidya mama mandāyā nīyase*
-[HARIV. 4836.] *(havyam) jātavedomukhānmāyī miṣatāmācchinatti naḥ*
-[KUMĀRAS. 2,46.] *rājaputrīrimāḥ śatam . ācchidya rājñāṃ gehebhyaḥ parivāraṃ nyadhānmama ..*
-[KATHĀS. 11,54.] *ācchidya sarvaṃ ca dhanaṃ kurubhyaḥ*
-[MBH. 4,2147.] [2159.] [2240.] [1489.] [3,1392.] [5,4924.] [12,2580.] [13,3180.]
+[HARIV. 4836.](https://sanskrit-lexicon-scans.github.io/hariv?4836) *(havyam) jātavedomukhānmāyī miṣatāmācchinatti naḥ*
+[KUMĀRAS. 2,46.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?2,46) *rājaputrīrimāḥ śatam . ācchidya rājñāṃ gehebhyaḥ parivāraṃ nyadhānmama ..*
+[KATHĀS. 11,54.](https://sanskrit-lexicon-scans.github.io/kss/index.html?11,54) *ācchidya sarvaṃ ca dhanaṃ kurubhyaḥ*
+[MBH. 4,2147.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.2147) [2159.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.2159) [2240.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.2240) [1489.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1489) [3,1392.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1392) [5,4924.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.4924) [12,2580.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.2580) [13,3180.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3180)
 [MṚCCH. 165,7.]
-[PAÑCAT. 222,4.]
-[BHĀG. P. 6,7,39.] [8,19,32.]
+[PAÑCAT. 222,4.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?222,4)
+[BHĀG. P. 6,7,39.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,7,39) [8,19,32.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,19,32)
   <sub>attested</sub>
 
 **5)** — 5) nicht beachten, keine Rücksicht auf Etwas nehmen: *yattvāṃ saṃcodayati me vaca ācchidya*
-[R. 2,24,33.] *yathā ca manye durjīvamevaṃ na sukaraṃ dhruvam . ācchidya putre niryāte kauśalyā yatra jīvati ..* dessenungeachtet, dass der Sohn fortgegangen ist,
-[57,20.]
+[R. 2,24,33.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,24,33) *yathā ca manye durjīvamevaṃ na sukaraṃ dhruvam . ācchidya putre niryāte kauśalyā yatra jīvati ..* dessenungeachtet, dass der Sohn fortgegangen ist,
+[57,20.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,57,20)
 
 - **RU:** — 5) не обращать внимания, не считаться с чем-либо: *yattvāṃ saṃcodayati me vaca ācchidya*
-[R. 2,24,33.] *yathā ca manye durjīvamevaṃ na sukaraṃ dhruvam . ācchidya putre niryāte kauśalyā yatra jīvati ..* невзирая на то, что сын ушёл,
-[57,20.]
+[R. 2,24,33.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,24,33) *yathā ca manye durjīvamevaṃ na sukaraṃ dhruvam . ācchidya putre niryāte kauśalyā yatra jīvati ..* невзирая на то, что сын ушёл,
+[57,20.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,57,20)
 - **EN:** — 5) to disregard, pay no heed to something: *yattvāṃ saṃcodayati me vaca ācchidya*
-[R. 2,24,33.] *yathā ca manye durjīvamevaṃ na sukaraṃ dhruvam . ācchidya putre niryāte kauśalyā yatra jīvati ..* notwithstanding that the son has gone away,
-[57,20.]
+[R. 2,24,33.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,24,33) *yathā ca manye durjīvamevaṃ na sukaraṃ dhruvam . ācchidya putre niryāte kauśalyā yatra jīvati ..* notwithstanding that the son has gone away,
+[57,20.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,57,20)
   <sub>attested</sub>
 
 ## chid
@@ -758,12 +758,12 @@ Schol. to [KĀTY. ŚR. 3,7,17.] [8,2.] *etasyai vā eṣāpacchidyaiṣaiva puna
 
 
 **1)** — *avā* entreissen: *daityahastādavācchidya*
-[VIKR. 15.]
+[VIKR. 15.](https://sanskrit-lexicon-scans.github.io/vikramor/app1?15)
 
 - **RU:** — *avā* вырывать, отнимать: *daityahastādavācchidya*
-[VIKR. 15.]
+[VIKR. 15.](https://sanskrit-lexicon-scans.github.io/vikramor/app1?15)
 - **EN:** — *avā* to wrest away: *daityahastādavācchidya*
-[VIKR. 15.]
+[VIKR. 15.](https://sanskrit-lexicon-scans.github.io/vikramor/app1?15)
   <sub>attested</sub>
 
 ## chid
@@ -772,12 +772,12 @@ Schol. to [KĀTY. ŚR. 3,7,17.] [8,2.] *etasyai vā eṣāpacchidyaiṣaiva puna
 
 
 **1)** — *upā* mit sich fortziehen, entreissen: *muktastato yadi bandhāddevadatta upācchinatti tasmādapi viṣṇumitraḥ*
-[BHĀG. P. 5,14,24.]
+[BHĀG. P. 5,14,24.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,14,24)
 
 - **RU:** — *upā* увлекать за собой, вырывать: *muktastato yadi bandhāddevadatta upācchinatti tasmādapi viṣṇumitraḥ*
-[BHĀG. P. 5,14,24.]
+[BHĀG. P. 5,14,24.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,14,24)
 - **EN:** — *upā* to drag away with oneself, wrest away: *muktastato yadi bandhāddevadatta upācchinatti tasmādapi viṣṇumitraḥ*
-[BHĀG. P. 5,14,24.]
+[BHĀG. P. 5,14,24.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,14,24)
   <sub>attested</sub>
 
 ## chid
@@ -786,12 +786,12 @@ Schol. to [KĀTY. ŚR. 3,7,17.] [8,2.] *etasyai vā eṣāpacchidyaiṣaiva puna
 
 
 **1)** — *samā* dass.: *kālarātryā samācchidya nītaḥ*
-[R. 6,8,17.]
+[R. 6,8,17.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,8,17)
 
 - **RU:** — *samā* dass.: *kālarātryā samācchidya nītaḥ*
-[R. 6,8,17.]
+[R. 6,8,17.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,8,17)
 - **EN:** — *samā* dass.: *kālarātryā samācchidya nītaḥ*
-[R. 6,8,17.]
+[R. 6,8,17.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,8,17)
   <sub>attested</sub>
 
 ## chid
@@ -801,83 +801,83 @@ Schol. to [KĀTY. ŚR. 3,7,17.] [8,2.] *etasyai vā eṣāpacchidyaiṣaiva puna
 
 **1)** — *ud*
  1) ausschneiden, abschneiden: *nocchindyādātmano mūlaṃ pareṣāṃ cātitṛṣṇayā*
-[MBH. 7,139.]
+[MBH. 7,139.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.139)
 
 - **RU:** — *ud*
  1) вырезать, отрезать: *nocchindyādātmano mūlaṃ pareṣāṃ cātitṛṣṇayā*
-[MBH. 7,139.]
+[MBH. 7,139.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.139)
 - **EN:** — *ud*
  1) to cut out, cut off: *nocchindyādātmano mūlaṃ pareṣāṃ cātitṛṣṇayā*
-[MBH. 7,139.]
+[MBH. 7,139.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.139)
   <sub>attested</sub>
 
 **2)** — 2) ausrotten, zu Grunde richten, vernichten, Jmd den Untergang bereiten
-[AV. 7,113,1.] *ucchidyamāneṣu bhṛguṣu*
-[MBH. 1,6811.] [16,20.] *kiṃ vā ripūṃstava guruḥ svayamucchinatti*
-[RAGH. 5,71.] [2,23.]
-[PAÑCAT. 155,12.] *ucchidyamānaṃ rāmeṇa bharataṃ trātumarhasi*
-[R. GORR. 2,7,30.] [MBH. 12,2612.] [DAŚAK.] in [BENF. Chr. 197,15.] *duḥkhatrayam*
+[AV. 7,113,1.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av07.113.html#av07.113.01) *ucchidyamāneṣu bhṛguṣu*
+[MBH. 1,6811.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6811) [16,20.](https://sanskrit-lexicon-scans.github.io/mbhcalc?16.20) *kiṃ vā ripūṃstava guruḥ svayamucchinatti*
+[RAGH. 5,71.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?5,71) [2,23.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?2,23)
+[PAÑCAT. 155,12.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?155,12) *ucchidyamānaṃ rāmeṇa bharataṃ trātumarhasi*
+[R. GORR. 2,7,30.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,7,30) [MBH. 12,2612.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.2612) [DAŚAK.] in [BENF. Chr. 197,15.] *duḥkhatrayam*
 Sch. in [WILS.] [SĀṂKHYAK. S. 10.] *ucchettuṃ prabhavati yanna saptasaptistannaiśaṃ timiramapākaroti candraḥ*
-[ŚĀK. 157.] *ucchinna* (neben *vinaṣṭa*) zu Grunde gegangen, verworfen, erbärmlich
+[ŚĀK. 157.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?157) *ucchinna* (neben *vinaṣṭa*) zu Grunde gegangen, verworfen, erbärmlich
 [MṚCCH. 34,15.]
 
 - **RU:** — 2) искоренять, уничтожать, истреблять, готовить кому-л. гибель
-[AV. 7,113,1.] *ucchidyamāneṣu bhṛguṣu*
-[MBH. 1,6811.] [16,20.] *kiṃ vā ripūṃstava guruḥ svayamucchinatti*
-[RAGH. 5,71.] [2,23.]
-[PAÑCAT. 155,12.] *ucchidyamānaṃ rāmeṇa bharataṃ trātumarhasi*
-[R. GORR. 2,7,30.] [MBH. 12,2612.] [DAŚAK.] in [BENF. Chr. 197,15.] *duḥkhatrayam*
+[AV. 7,113,1.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av07.113.html#av07.113.01) *ucchidyamāneṣu bhṛguṣu*
+[MBH. 1,6811.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6811) [16,20.](https://sanskrit-lexicon-scans.github.io/mbhcalc?16.20) *kiṃ vā ripūṃstava guruḥ svayamucchinatti*
+[RAGH. 5,71.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?5,71) [2,23.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?2,23)
+[PAÑCAT. 155,12.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?155,12) *ucchidyamānaṃ rāmeṇa bharataṃ trātumarhasi*
+[R. GORR. 2,7,30.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,7,30) [MBH. 12,2612.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.2612) [DAŚAK.] in [BENF. Chr. 197,15.] *duḥkhatrayam*
 Sch. in [WILS.] [SĀṂKHYAK. S. 10.] *ucchettuṃ prabhavati yanna saptasaptistannaiśaṃ timiramapākaroti candraḥ*
-[ŚĀK. 157.] *ucchinna* (neben *vinaṣṭa*) погибший, отвергнутый, жалкий
+[ŚĀK. 157.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?157) *ucchinna* (neben *vinaṣṭa*) погибший, отвергнутый, жалкий
 [MṚCCH. 34,15.]
 - **EN:** — 2) to extirpate, ruin, destroy, bring about someone's downfall
-[AV. 7,113,1.] *ucchidyamāneṣu bhṛguṣu*
-[MBH. 1,6811.] [16,20.] *kiṃ vā ripūṃstava guruḥ svayamucchinatti*
-[RAGH. 5,71.] [2,23.]
-[PAÑCAT. 155,12.] *ucchidyamānaṃ rāmeṇa bharataṃ trātumarhasi*
-[R. GORR. 2,7,30.] [MBH. 12,2612.] [DAŚAK.] in [BENF. Chr. 197,15.] *duḥkhatrayam*
+[AV. 7,113,1.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av07.113.html#av07.113.01) *ucchidyamāneṣu bhṛguṣu*
+[MBH. 1,6811.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6811) [16,20.](https://sanskrit-lexicon-scans.github.io/mbhcalc?16.20) *kiṃ vā ripūṃstava guruḥ svayamucchinatti*
+[RAGH. 5,71.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?5,71) [2,23.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?2,23)
+[PAÑCAT. 155,12.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?155,12) *ucchidyamānaṃ rāmeṇa bharataṃ trātumarhasi*
+[R. GORR. 2,7,30.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,7,30) [MBH. 12,2612.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.2612) [DAŚAK.] in [BENF. Chr. 197,15.] *duḥkhatrayam*
 Sch. in [WILS.] [SĀṂKHYAK. S. 10.] *ucchettuṃ prabhavati yanna saptasaptistannaiśaṃ timiramapākaroti candraḥ*
-[ŚĀK. 157.] *ucchinna* (beside *vinaṣṭa*) ruined, rejected, wretched
+[ŚĀK. 157.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?157) *ucchinna* (beside *vinaṣṭa*) ruined, rejected, wretched
 [MṚCCH. 34,15.]
   <sub>attested</sub>
 
 **3)** — 3) störend in Etwas eingreifen, hemmen, unterbrechen: *tamucchindyāmasya kāmaṃ kathaṃ nu yamasādane*
-[MBH. 1,4891.] *kaccinnyāyānanucchidya kośaste 'bhiprapūryate*
-[15,678.] *ete hi (sthāyino bhāvāḥ) eteṣvantarā utpadyamānaistaistairviruddhairaviruddhaiśca bhāvairanucchinnāḥ pratyuta paripuṣṭā eva*
-[SĀH. D. 76,9.] pass. gehemmt, — unterbrochen werden, aufhören, ausgehen, mangeln: *nocchidyeranyathā kriyāḥ*
-[MBH. 1,930.] *arthena tu vihīnasya puruṣasyālpamedhasaḥ . ucchidyante kriyāḥ sarvā grīṣme kusarito yathā ..*
-[PAÑCAT. II,92.] *tṛṇāni bhūmirudakaṃ vākcaturthī ca sūnṛtā . etānyapi satāṃ gehe nocchidyante kadā ca na ..*
-[M. 3,101.] *aviveko yuktitaḥ śravaṇataśca na bādhyate nocchidyate*
+[MBH. 1,4891.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4891) *kaccinnyāyānanucchidya kośaste 'bhiprapūryate*
+[15,678.](https://sanskrit-lexicon-scans.github.io/mbhcalc?15.678) *ete hi (sthāyino bhāvāḥ) eteṣvantarā utpadyamānaistaistairviruddhairaviruddhaiśca bhāvairanucchinnāḥ pratyuta paripuṣṭā eva*
+[SĀH. D. 76,9.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?76,9) pass. gehemmt, — unterbrochen werden, aufhören, ausgehen, mangeln: *nocchidyeranyathā kriyāḥ*
+[MBH. 1,930.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.930) *arthena tu vihīnasya puruṣasyālpamedhasaḥ . ucchidyante kriyāḥ sarvā grīṣme kusarito yathā ..*
+[PAÑCAT. II,92.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?2,92) *tṛṇāni bhūmirudakaṃ vākcaturthī ca sūnṛtā . etānyapi satāṃ gehe nocchidyante kadā ca na ..*
+[M. 3,101.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,101) *aviveko yuktitaḥ śravaṇataśca na bādhyate nocchidyate*
 Sch. zu [KAP. 1,60.] *anucchidyamānatayāvasthānāt*
-[SĀH. D. 75,2.]
+[SĀH. D. 75,2.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?75,2)
 
 - **RU:** — 3) вмешиваться, нарушая что-л., задерживать, прерывать: *tamucchindyāmasya kāmaṃ kathaṃ nu yamasādane*
-[MBH. 1,4891.] *kaccinnyāyānanucchidya kośaste 'bhiprapūryate*
-[15,678.] *ete hi (sthāyino bhāvāḥ) eteṣvantarā utpadyamānaistaistairviruddhairaviruddhaiśca bhāvairanucchinnāḥ pratyuta paripuṣṭā eva*
-[SĀH. D. 76,9.] pass. быть задержанным, — прерванным, прекращаться, иссякать, недоставать: *nocchidyeranyathā kriyāḥ*
-[MBH. 1,930.] *arthena tu vihīnasya puruṣasyālpamedhasaḥ . ucchidyante kriyāḥ sarvā grīṣme kusarito yathā ..*
-[PAÑCAT. II,92.] *tṛṇāni bhūmirudakaṃ vākcaturthī ca sūnṛtā . etānyapi satāṃ gehe nocchidyante kadā ca na ..*
-[M. 3,101.] *aviveko yuktitaḥ śravaṇataśca na bādhyate nocchidyate*
+[MBH. 1,4891.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4891) *kaccinnyāyānanucchidya kośaste 'bhiprapūryate*
+[15,678.](https://sanskrit-lexicon-scans.github.io/mbhcalc?15.678) *ete hi (sthāyino bhāvāḥ) eteṣvantarā utpadyamānaistaistairviruddhairaviruddhaiśca bhāvairanucchinnāḥ pratyuta paripuṣṭā eva*
+[SĀH. D. 76,9.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?76,9) pass. быть задержанным, — прерванным, прекращаться, иссякать, недоставать: *nocchidyeranyathā kriyāḥ*
+[MBH. 1,930.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.930) *arthena tu vihīnasya puruṣasyālpamedhasaḥ . ucchidyante kriyāḥ sarvā grīṣme kusarito yathā ..*
+[PAÑCAT. II,92.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?2,92) *tṛṇāni bhūmirudakaṃ vākcaturthī ca sūnṛtā . etānyapi satāṃ gehe nocchidyante kadā ca na ..*
+[M. 3,101.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,101) *aviveko yuktitaḥ śravaṇataśca na bādhyate nocchidyate*
 Sch. zu [KAP. 1,60.] *anucchidyamānatayāvasthānāt*
-[SĀH. D. 75,2.]
+[SĀH. D. 75,2.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?75,2)
 - **EN:** — 3) to interfere disruptively with something, to impede, interrupt: *tamucchindyāmasya kāmaṃ kathaṃ nu yamasādane*
-[MBH. 1,4891.] *kaccinnyāyānanucchidya kośaste 'bhiprapūryate*
-[15,678.] *ete hi (sthāyino bhāvāḥ) eteṣvantarā utpadyamānaistaistairviruddhairaviruddhaiśca bhāvairanucchinnāḥ pratyuta paripuṣṭā eva*
-[SĀH. D. 76,9.] pass. to be impeded, — interrupted, to cease, run out, be lacking: *nocchidyeranyathā kriyāḥ*
-[MBH. 1,930.] *arthena tu vihīnasya puruṣasyālpamedhasaḥ . ucchidyante kriyāḥ sarvā grīṣme kusarito yathā ..*
-[PAÑCAT. II,92.] *tṛṇāni bhūmirudakaṃ vākcaturthī ca sūnṛtā . etānyapi satāṃ gehe nocchidyante kadā ca na ..*
-[M. 3,101.] *aviveko yuktitaḥ śravaṇataśca na bādhyate nocchidyate*
+[MBH. 1,4891.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4891) *kaccinnyāyānanucchidya kośaste 'bhiprapūryate*
+[15,678.](https://sanskrit-lexicon-scans.github.io/mbhcalc?15.678) *ete hi (sthāyino bhāvāḥ) eteṣvantarā utpadyamānaistaistairviruddhairaviruddhaiśca bhāvairanucchinnāḥ pratyuta paripuṣṭā eva*
+[SĀH. D. 76,9.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?76,9) pass. to be impeded, — interrupted, to cease, run out, be lacking: *nocchidyeranyathā kriyāḥ*
+[MBH. 1,930.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.930) *arthena tu vihīnasya puruṣasyālpamedhasaḥ . ucchidyante kriyāḥ sarvā grīṣme kusarito yathā ..*
+[PAÑCAT. II,92.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?2,92) *tṛṇāni bhūmirudakaṃ vākcaturthī ca sūnṛtā . etānyapi satāṃ gehe nocchidyante kadā ca na ..*
+[M. 3,101.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,101) *aviveko yuktitaḥ śravaṇataśca na bādhyate nocchidyate*
 Sch. to [KAP. 1,60.] *anucchidyamānatayāvasthānāt*
-[SĀH. D. 75,2.]
+[SĀH. D. 75,2.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?75,2)
   <sub>attested</sub>
 
 **caus)** — Vgl. *ucchitti, ucchettar* fgg. — caus. ausrotten, vernichten oder vernichten lassen: *prātaḥ sakalānyapi sattvānyucchedayiṣyāmi*
-[PAÑCAT. 55,12.]
+[PAÑCAT. 55,12.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?55,12)
 
 - **RU:** — Vgl. *ucchitti, ucchettar* fgg. — caus. искоренять, уничтожать или велеть уничтожить: *prātaḥ sakalānyapi sattvānyucchedayiṣyāmi*
-[PAÑCAT. 55,12.]
+[PAÑCAT. 55,12.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?55,12)
 - **EN:** — Vgl. *ucchitti, ucchettar* fgg. — caus. to extirpate, destroy or to cause to be destroyed: *prātaḥ sakalānyapi sattvānyucchedayiṣyāmi*
-[PAÑCAT. 55,12.]
+[PAÑCAT. 55,12.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?55,12)
   <sub>attested</sub>
 
 ## chid
@@ -892,39 +892,39 @@ Sch. to [KAP. 1,60.] *anucchidyamānatayāvasthānāt*
   <sub>attested</sub>
 
 **1)** 1) sich ablösen, abbrechen: *ubhayatra prasaktasya dharme cādharma eva ca . phalārthamūlaṃ vyucchidyettena nandanti śatravaḥ ..*
-[MBH. 12,3923.]
+[MBH. 12,3923.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3923)
 
 - **RU:** 1) отрываться, обламываться: *ubhayatra prasaktasya dharme cādharma eva ca . phalārthamūlaṃ vyucchidyettena nandanti śatravaḥ ..*
-[MBH. 12,3923.]
+[MBH. 12,3923.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3923)
 - **EN:** 1) to become detached, break off: *ubhayatra prasaktasya dharme cādharma eva ca . phalārthamūlaṃ vyucchidyettena nandanti śatravaḥ ..*
-[MBH. 12,3923.]
+[MBH. 12,3923.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3923)
   <sub>attested</sub>
 
 **2)** — 2) eine Unterbrechung erleiden, aufhören: *vinaṣṭe ca mamānuje . piṇḍaḥ pitṝṇāṃ vyucchidyet*
-[MBH. 1,6188.] *kīrtirme vyucchinnā* hat ihr Ende erreicht
-[3,13332.] *avyucchinna* ununterbrochen: *karā dinakṛtaḥ — avyucchinnā ṛjavaḥ*
-[VARĀH. BṚH. S. 29,11.] *saubhrātra*
-[MBH. 3,355.] *ghoṣa*
-[HARIV. 2355.] *˚pṛthupravṛtti*
-[VIKR. 110.] *tatraikāvayavaṃ dhyāyedavyucchinnena cetasā*
-[BHĀG. P. 2,1,19.]
+[MBH. 1,6188.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6188) *kīrtirme vyucchinnā* hat ihr Ende erreicht
+[3,13332.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13332) *avyucchinna* ununterbrochen: *karā dinakṛtaḥ — avyucchinnā ṛjavaḥ*
+[VARĀH. BṚH. S. 29,11.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?29,11) *saubhrātra*
+[MBH. 3,355.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.355) *ghoṣa*
+[HARIV. 2355.](https://sanskrit-lexicon-scans.github.io/hariv?2355) *˚pṛthupravṛtti*
+[VIKR. 110.](https://sanskrit-lexicon-scans.github.io/vikramor/app1?110) *tatraikāvayavaṃ dhyāyedavyucchinnena cetasā*
+[BHĀG. P. 2,1,19.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,1,19)
 
 - **RU:** 2) претерпевать перерыв, прекращаться: *vinaṣṭe ca mamānuje . piṇḍaḥ pitṝṇāṃ vyucchidyet*
-[MBH. 1,6188.] *kīrtirme vyucchinnā* достигло своего конца
-[3,13332.] *avyucchinna* непрерывный: *karā dinakṛtaḥ — avyucchinnā ṛjavaḥ*
-[VARĀH. BṚH. S. 29,11.] *saubhrātra*
-[MBH. 3,355.] *ghoṣa*
-[HARIV. 2355.] *˚pṛthupravṛtti*
-[VIKR. 110.] *tatraikāvayavaṃ dhyāyedavyucchinnena cetasā*
-[BHĀG. P. 2,1,19.]
+[MBH. 1,6188.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6188) *kīrtirme vyucchinnā* достигло своего конца
+[3,13332.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13332) *avyucchinna* непрерывный: *karā dinakṛtaḥ — avyucchinnā ṛjavaḥ*
+[VARĀH. BṚH. S. 29,11.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?29,11) *saubhrātra*
+[MBH. 3,355.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.355) *ghoṣa*
+[HARIV. 2355.](https://sanskrit-lexicon-scans.github.io/hariv?2355) *˚pṛthupravṛtti*
+[VIKR. 110.](https://sanskrit-lexicon-scans.github.io/vikramor/app1?110) *tatraikāvayavaṃ dhyāyedavyucchinnena cetasā*
+[BHĀG. P. 2,1,19.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,1,19)
 - **EN:** — 2) to suffer an interruption, to cease: *vinaṣṭe ca mamānuje . piṇḍaḥ pitṝṇāṃ vyucchidyet*
-[MBH. 1,6188.] *kīrtirme vyucchinnā* has reached its end
-[3,13332.] *avyucchinna* uninterrupted: *karā dinakṛtaḥ — avyucchinnā ṛjavaḥ*
-[VARĀH. BṚH. S. 29,11.] *saubhrātra*
-[MBH. 3,355.] *ghoṣa*
-[HARIV. 2355.] *˚pṛthupravṛtti*
-[VIKR. 110.] *tatraikāvayavaṃ dhyāyedavyucchinnena cetasā*
-[BHĀG. P. 2,1,19.]
+[MBH. 1,6188.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6188) *kīrtirme vyucchinnā* has reached its end
+[3,13332.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13332) *avyucchinna* uninterrupted: *karā dinakṛtaḥ — avyucchinnā ṛjavaḥ*
+[VARĀH. BṚH. S. 29,11.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?29,11) *saubhrātra*
+[MBH. 3,355.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.355) *ghoṣa*
+[HARIV. 2355.](https://sanskrit-lexicon-scans.github.io/hariv?2355) *˚pṛthupravṛtti*
+[VIKR. 110.](https://sanskrit-lexicon-scans.github.io/vikramor/app1?110) *tatraikāvayavaṃ dhyāyedavyucchinnena cetasā*
+[BHĀG. P. 2,1,19.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,1,19)
   <sub>attested</sub>
 
 ## chid
@@ -943,17 +943,17 @@ Sch. to [KAP. 1,60.] *anucchidyamānatayāvasthānāt*
 
 * (vāsana* garment and *vāsanā = mithyājñāna*)
 [PRAB. 50,12.] to tear out and at the same time to ruin: *saṃghātavānyathā veṇurniviḍo veṇubhirvṛtaḥ . na śakyaḥ sa samucchettuṃ durbalo 'pi tathā nṛpaḥ ..*
-[PAÑCAT. III,57] (vgl. [HIT. IV,26]). to extirpate, destroy: *ye samuccicchidurjñātīn*
-[MBH. 5,2727.] [12,3797.]
+[PAÑCAT. III,57](https://sanskrit-lexicon-scans.github.io/pantankose/app1?3,57) (vgl. [HIT. IV,26](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?4,26)). to extirpate, destroy: *ye samuccicchidurjñātīn*
+[MBH. 5,2727.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.2727) [12,3797.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3797)
   <sub>attested</sub>
 
 **2)** [PRAB. 50,12.] ausreissen und zugleich zu Grunde richten: *saṃghātavānyathā veṇurniviḍo veṇubhirvṛtaḥ . na śakyaḥ sa samucchettuṃ durbalo 'pi tathā nṛpaḥ ..*
-[PAÑCAT. III,57] (vgl. [HIT. IV,26]). ausrotten, vernichten: *ye samuccicchidurjñātīn*
-[MBH. 5,2727.] [12,3797.]
+[PAÑCAT. III,57](https://sanskrit-lexicon-scans.github.io/pantankose/app1?3,57) (vgl. [HIT. IV,26](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?4,26)). ausrotten, vernichten: *ye samuccicchidurjñātīn*
+[MBH. 5,2727.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.2727) [12,3797.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3797)
 
 - **RU:** [PRAB. 50,12.] вырывать с корнем и вместе с тем погублять: *saṃghātavānyathā veṇurniviḍo veṇubhirvṛtaḥ . na śakyaḥ sa samucchettuṃ durbalo 'pi tathā nṛpaḥ ..*
-[PAÑCAT. III,57] (vgl. [HIT. IV,26]). искоренять, уничтожать: *ye samuccicchidurjñātīn*
-[MBH. 5,2727.] [12,3797.]
+[PAÑCAT. III,57](https://sanskrit-lexicon-scans.github.io/pantankose/app1?3,57) (vgl. [HIT. IV,26](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?4,26)). искоренять, уничтожать: *ye samuccicchidurjñātīn*
+[MBH. 5,2727.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.2727) [12,3797.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3797)
   <sub>attested</sub>
 
 ## chid
@@ -968,76 +968,76 @@ Sch. to [KAP. 1,60.] *anucchidyamānatayāvasthānāt*
   <sub>attested</sub>
 
 **1)** 1) auf beiden Seiten abschneiden, beschneiden: *amūlaṃ vā ubhayataḥ paricchinnaṃ rakṣaḥ*
-[ŚAT. BR. 1,1,2,4.] [3,1,3,13.] *tṛṇam*
+[ŚAT. BR. 1,1,2,4.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,1,2,4) [3,1,3,13.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,1,3,13) *tṛṇam*
 [LĀṬY. 2,1,6.]
 
 - **RU:** 1) обрезать с обеих сторон, подрезать: *amūlaṃ vā ubhayataḥ paricchinnaṃ rakṣaḥ*
-[ŚAT. BR. 1,1,2,4.] [3,1,3,13.] *tṛṇam*
+[ŚAT. BR. 1,1,2,4.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,1,2,4) [3,1,3,13.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,1,3,13) *tṛṇam*
 [LĀṬY. 2,1,6.]
 - **EN:** 1) to cut off on both sides, to trim: *amūlaṃ vā ubhayataḥ paricchinnaṃ rakṣaḥ*
-[ŚAT. BR. 1,1,2,4.] [3,1,3,13.] *tṛṇam*
+[ŚAT. BR. 1,1,2,4.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,1,2,4) [3,1,3,13.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,1,3,13) *tṛṇam*
 [LĀṬY. 2,1,6.]
   <sub>attested</sub>
 
 **2)** — 2) abschneiden: *vāsaso 'rdhaṃ paricchidya*
-[MBH. 3,2593.] zerschneiden, verstümmeln: *te nipetuḥ paricchinnā bhūmau rāmasya sāyakaiḥ*
-[R. 3,32,26.]
+[MBH. 3,2593.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2593) zerschneiden, verstümmeln: *te nipetuḥ paricchinnā bhūmau rāmasya sāyakaiḥ*
+[R. 3,32,26.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,32,26)
 
 - **RU:** 2) отрезать: *vāsaso 'rdhaṃ paricchidya*
-[MBH. 3,2593.] разрезать, уродовать (членовредительство): *te nipetuḥ paricchinnā bhūmau rāmasya sāyakaiḥ*
-[R. 3,32,26.]
+[MBH. 3,2593.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2593) разрезать, уродовать (членовредительство): *te nipetuḥ paricchinnā bhūmau rāmasya sāyakaiḥ*
+[R. 3,32,26.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,32,26)
 - **EN:** — 2) to cut off: *vāsaso 'rdhaṃ paricchidya*
-[MBH. 3,2593.] to cut up, mutilate: *te nipetuḥ paricchinnā bhūmau rāmasya sāyakaiḥ*
-[R. 3,32,26.]
+[MBH. 3,2593.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2593) to cut up, mutilate: *te nipetuḥ paricchinnā bhūmau rāmasya sāyakaiḥ*
+[R. 3,32,26.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,32,26)
   <sub>attested</sub>
 
 **3)** — 3) abscheiden, absondern: *śatena śatena vatsānpāyayati payaḥ . śatena paricchidyetyarthaḥ*
-[SIDDH. K.] zu [P. 2,3,27.]
+[SIDDH. K.] zu [P. 2,3,27.](https://ashtadhyayi.com/sutraani/2/3/27)
 
 - **RU:** 3) отделять, обособлять: *śatena śatena vatsānpāyayati payaḥ . śatena paricchidyetyarthaḥ*
-[SIDDH. K.] zu [P. 2,3,27.]
+[SIDDH. K.] zu [P. 2,3,27.](https://ashtadhyayi.com/sutraani/2/3/27)
 - **EN:** — 3) to separate off, to segregate: *śatena śatena vatsānpāyayati payaḥ . śatena paricchidyetyarthaḥ*
-[SIDDH. K.] to [P. 2,3,27.]
+[SIDDH. K.] to [P. 2,3,27.](https://ashtadhyayi.com/sutraani/2/3/27)
   <sub>attested</sub>
 
 **4)** — 4) nach allen Seiten abgrenzen, genau bestimmen, genau angeben, richtig abschätzen, sich Gewissheit über Etwas oder Jmd verschaffen
-[Z. d. d. m. G. 7,310, N. 1.] [P. 2,1,28], Sch. *yasya na cānubandhi yaśaḥ paricchettumiyattayālam*
-[RAGH. 6,77.]
-[RĀJA-TAR. 4,206.] *gatiḥ śakyā paricchettuṃ na hyadbhutavidhervidheḥ*
-[VID. 199.] *madhyasthā bhagavatī nau guṇadoṣataḥ paricchettumarhati*
-[MĀLAV. 13,20.] *paricchinnaprabhāvarddhirna mayā na ca viṣṇunā*
-[KUMĀRAS. 2,58.] *kathaṃ nāma prāṇina ātmānaṃ paraṃ cāparicchidya śaktitaḥ parāpakārairvartante*
-[PAÑCAT. 161,24.] *parātmanoḥ paricchidya śaktyādīnāṃ balābalam*
-[RAGH. 17,59.] *(tam) śīrṣacchedyaṃ paricchidya* nachdem er sich vergewissert hatte, dass dieser verdiene den Kopf zu verlieren,
-[15,51.] *viśvaṃ vai brahmatanmātraṃ saṃsthitaṃ viṣṇumāyayā . īśvareṇa paricchinnaṃ kālenāvyaktamūrtinā ..*
-[BHĀG. P. 3,10,12] ([BURN.]: apparaît â l'existence avec ses divisions, par la volonté de l'Être suprême). *paricchinna* begrenzt, beschränkt: *paricchinnaṃ na sarvopādānam*
+[Z. d. d. m. G. 7,310, N. 1.] [P. 2,1,28](https://ashtadhyayi.com/sutraani/2/1/28), Sch. *yasya na cānubandhi yaśaḥ paricchettumiyattayālam*
+[RAGH. 6,77.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?6,77)
+[RĀJA-TAR. 4,206.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,206) *gatiḥ śakyā paricchettuṃ na hyadbhutavidhervidheḥ*
+[VID. 199.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?199) *madhyasthā bhagavatī nau guṇadoṣataḥ paricchettumarhati*
+[MĀLAV. 13,20.](https://sanskrit-lexicon-scans.github.io/malavikagni/app2?13,20) *paricchinnaprabhāvarddhirna mayā na ca viṣṇunā*
+[KUMĀRAS. 2,58.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?2,58) *kathaṃ nāma prāṇina ātmānaṃ paraṃ cāparicchidya śaktitaḥ parāpakārairvartante*
+[PAÑCAT. 161,24.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?161,24) *parātmanoḥ paricchidya śaktyādīnāṃ balābalam*
+[RAGH. 17,59.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?17,59) *(tam) śīrṣacchedyaṃ paricchidya* nachdem er sich vergewissert hatte, dass dieser verdiene den Kopf zu verlieren,
+[15,51.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?15,51) *viśvaṃ vai brahmatanmātraṃ saṃsthitaṃ viṣṇumāyayā . īśvareṇa paricchinnaṃ kālenāvyaktamūrtinā ..*
+[BHĀG. P. 3,10,12](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,10,12) ([BURN.]: apparaît â l'existence avec ses divisions, par la volonté de l'Être suprême). *paricchinna* begrenzt, beschränkt: *paricchinnaṃ na sarvopādānam*
 [KAP. 1,77.]
 Sch. zu [KAP. 1,28. 49. 50.] [VEDĀNTAS. (Allah.) No. 36.]
 
 - **RU:** 4) точно ограничивать со всех сторон, точно определять, точно указывать, правильно оценивать, удостоверяться в чём-либо или в ком-либо
-[Z. d. d. m. G. 7,310, N. 1.] [P. 2,1,28], Sch. *yasya na cānubandhi yaśaḥ paricchettumiyattayālam*
-[RAGH. 6,77.]
-[RĀJA-TAR. 4,206.] *gatiḥ śakyā paricchettuṃ na hyadbhutavidhervidheḥ*
-[VID. 199.] *madhyasthā bhagavatī nau guṇadoṣataḥ paricchettumarhati*
-[MĀLAV. 13,20.] *paricchinnaprabhāvarddhirna mayā na ca viṣṇunā*
-[KUMĀRAS. 2,58.] *kathaṃ nāma prāṇina ātmānaṃ paraṃ cāparicchidya śaktitaḥ parāpakārairvartante*
-[PAÑCAT. 161,24.] *parātmanoḥ paricchidya śaktyādīnāṃ balābalam*
-[RAGH. 17,59.] *(tam) śīrṣacchedyaṃ paricchidya* удостоверившись в том, что тот заслуживает казни,
-[15,51.] *viśvaṃ vai brahmatanmātraṃ saṃsthitaṃ viṣṇumāyayā . īśvareṇa paricchinnaṃ kālenāvyaktamūrtinā ..*
-[BHĀG. P. 3,10,12] ([BURN.]: «предстаёт к существованию со своими делениями, по воле Высшего Существа»). *paricchinna* ограниченный, стеснённый: *paricchinnaṃ na sarvopādānam*
+[Z. d. d. m. G. 7,310, N. 1.] [P. 2,1,28](https://ashtadhyayi.com/sutraani/2/1/28), Sch. *yasya na cānubandhi yaśaḥ paricchettumiyattayālam*
+[RAGH. 6,77.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?6,77)
+[RĀJA-TAR. 4,206.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,206) *gatiḥ śakyā paricchettuṃ na hyadbhutavidhervidheḥ*
+[VID. 199.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?199) *madhyasthā bhagavatī nau guṇadoṣataḥ paricchettumarhati*
+[MĀLAV. 13,20.](https://sanskrit-lexicon-scans.github.io/malavikagni/app2?13,20) *paricchinnaprabhāvarddhirna mayā na ca viṣṇunā*
+[KUMĀRAS. 2,58.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?2,58) *kathaṃ nāma prāṇina ātmānaṃ paraṃ cāparicchidya śaktitaḥ parāpakārairvartante*
+[PAÑCAT. 161,24.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?161,24) *parātmanoḥ paricchidya śaktyādīnāṃ balābalam*
+[RAGH. 17,59.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?17,59) *(tam) śīrṣacchedyaṃ paricchidya* удостоверившись в том, что тот заслуживает казни,
+[15,51.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?15,51) *viśvaṃ vai brahmatanmātraṃ saṃsthitaṃ viṣṇumāyayā . īśvareṇa paricchinnaṃ kālenāvyaktamūrtinā ..*
+[BHĀG. P. 3,10,12](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,10,12) ([BURN.]: «предстаёт к существованию со своими делениями, по воле Высшего Существа»). *paricchinna* ограниченный, стеснённый: *paricchinnaṃ na sarvopādānam*
 [KAP. 1,77.]
 Sch. zu [KAP. 1,28. 49. 50.] [VEDĀNTAS. (Allah.) No. 36.]
 - **EN:** — 4) to delimit on all sides, to determine precisely, to specify exactly, to estimate correctly, to ascertain something or to obtain certainty about someone
-[Z. d. d. m. G. 7,310, N. 1.] [P. 2,1,28], Sch. *yasya na cānubandhi yaśaḥ paricchettumiyattayālam*
-[RAGH. 6,77.]
-[RĀJA-TAR. 4,206.] *gatiḥ śakyā paricchettuṃ na hyadbhutavidhervidheḥ*
-[VID. 199.] *madhyasthā bhagavatī nau guṇadoṣataḥ paricchettumarhati*
-[MĀLAV. 13,20.] *paricchinnaprabhāvarddhirna mayā na ca viṣṇunā*
-[KUMĀRAS. 2,58.] *kathaṃ nāma prāṇina ātmānaṃ paraṃ cāparicchidya śaktitaḥ parāpakārairvartante*
-[PAÑCAT. 161,24.] *parātmanoḥ paricchidya śaktyādīnāṃ balābalam*
-[RAGH. 17,59.] *(tam) śīrṣacchedyaṃ paricchidya* having ascertained that this one deserved to lose his head,
-[15,51.] *viśvaṃ vai brahmatanmātraṃ saṃsthitaṃ viṣṇumāyayā . īśvareṇa paricchinnaṃ kālenāvyaktamūrtinā ..*
-[BHĀG. P. 3,10,12] ([BURN.]: apparaît â l'existence avec ses divisions, par la volonté de l'Être suprême). *paricchinna* delimited, restricted: *paricchinnaṃ na sarvopādānam*
+[Z. d. d. m. G. 7,310, N. 1.] [P. 2,1,28](https://ashtadhyayi.com/sutraani/2/1/28), Sch. *yasya na cānubandhi yaśaḥ paricchettumiyattayālam*
+[RAGH. 6,77.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?6,77)
+[RĀJA-TAR. 4,206.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,206) *gatiḥ śakyā paricchettuṃ na hyadbhutavidhervidheḥ*
+[VID. 199.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?199) *madhyasthā bhagavatī nau guṇadoṣataḥ paricchettumarhati*
+[MĀLAV. 13,20.](https://sanskrit-lexicon-scans.github.io/malavikagni/app2?13,20) *paricchinnaprabhāvarddhirna mayā na ca viṣṇunā*
+[KUMĀRAS. 2,58.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?2,58) *kathaṃ nāma prāṇina ātmānaṃ paraṃ cāparicchidya śaktitaḥ parāpakārairvartante*
+[PAÑCAT. 161,24.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?161,24) *parātmanoḥ paricchidya śaktyādīnāṃ balābalam*
+[RAGH. 17,59.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?17,59) *(tam) śīrṣacchedyaṃ paricchidya* having ascertained that this one deserved to lose his head,
+[15,51.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?15,51) *viśvaṃ vai brahmatanmātraṃ saṃsthitaṃ viṣṇumāyayā . īśvareṇa paricchinnaṃ kālenāvyaktamūrtinā ..*
+[BHĀG. P. 3,10,12](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,10,12) ([BURN.]: apparaît â l'existence avec ses divisions, par la volonté de l'Être suprême). *paricchinna* delimited, restricted: *paricchinnaṃ na sarvopādānam*
 [KAP. 1,77.]
 Sch. to [KAP. 1,28. 49. 50.] [VEDĀNTAS. (Allah.) No. 36.]
   <sub>attested</sub>
@@ -1054,12 +1054,12 @@ Sch. to [KAP. 1,28. 49. 50.] [VEDĀNTAS. (Allah.) No. 36.]
 
 
 **1)** — *vipari* ringsherum abschneiden, beschneiden, zerschneiden: *viparicchinnamūlo 'pi na viṣīdet*
-[MBH. 5,4513.]
+[MBH. 5,4513.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.4513)
 
 - **RU:** — *vipari* обрезать кругом, подрезать, разрезать: *viparicchinnamūlo 'pi na viṣīdet*
-[MBH. 5,4513.]
+[MBH. 5,4513.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.4513)
 - **EN:** — *vipari* to cut off all around, to trim, to cut up: *viparicchinnamūlo 'pi na viṣīdet*
-[MBH. 5,4513.]
+[MBH. 5,4513.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.4513)
   <sub>attested</sub>
 
 ## chid
@@ -1071,80 +1071,80 @@ Sch. to [KAP. 1,28. 49. 50.] [VEDĀNTAS. (Allah.) No. 36.]
 - **EN:** — *pra*
 
 **1)** 1) abreissen, abschneiden; zerschneiden, zerhauen, spalten, durchbohren: *tāṃstvaṃ pra cchindhi varaṇa purā diṣṭātpurāyuṣaḥ*
-[AV. 10,3,16.] [12,5,51.] *śīrṣāṇi*
-[ŚAT. BR. 1,6,3,2.] [5,5,4,3.] *parṇam*
-[1,7,1,1.] *grīvāḥ*
-[2,1,2,16.] Haar
+[AV. 10,3,16.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av10.003.html#av10.003.16) [12,5,51.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av12.005.html#av12.005.51) *śīrṣāṇi*
+[ŚAT. BR. 1,6,3,2.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,6,3,2) [5,5,4,3.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?5,5,4,3) *parṇam*
+[1,7,1,1.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,7,1,1) *grīvāḥ*
+[2,1,2,16.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,1,2,16) Haar
 [ĀŚV. GṚHY. 1,17.]
 [PĀR. GṚHY. 2,1.] *barhiṣaḥ pracchedaṃ harati*
-[KĀTY. ŚR. 8,2,22.] *latāvitānagulmāṃśca śalākākuśaparvatān . kecitkuṭhāraiṣṭaṅkaiśca dātraiśca pracicchiduḥ ..*
-[R. GORR. 2,87,9.] *praciccheda muṣṭideśe mahaddhanuḥ*
-[MBH. 6,3709.] *śūlaśaktiparaśvadhān . bhallairvṛtraḥ praciccheda*
-[HARIV. 13580.]
-[MBH. 3,11710.] *patākāṃ cakragoptārau sarvopakaraṇāni ca . laghuhastaḥ praciccheda*
-[7,1628.] *tilaśaḥ*
-[7863.]
+[KĀTY. ŚR. 8,2,22.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?8,2,22) *latāvitānagulmāṃśca śalākākuśaparvatān . kecitkuṭhāraiṣṭaṅkaiśca dātraiśca pracicchiduḥ ..*
+[R. GORR. 2,87,9.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,87,9) *praciccheda muṣṭideśe mahaddhanuḥ*
+[MBH. 6,3709.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.3709) *śūlaśaktiparaśvadhān . bhallairvṛtraḥ praciccheda*
+[HARIV. 13580.](https://sanskrit-lexicon-scans.github.io/hariv?13580)
+[MBH. 3,11710.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11710) *patākāṃ cakragoptārau sarvopakaraṇāni ca . laghuhastaḥ praciccheda*
+[7,1628.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.1628) *tilaśaḥ*
+[7863.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.7863)
 - **EN:** 1) to tear off, cut off; to cut up, hew asunder, split, pierce: *tāṃstvaṃ pra cchindhi varaṇa purā diṣṭātpurāyuṣaḥ*
-[AV. 10,3,16.] [12,5,51.] *śīrṣāṇi*
-[ŚAT. BR. 1,6,3,2.] [5,5,4,3.] *parṇam*
-[1,7,1,1.] *grīvāḥ*
-[2,1,2,16.] hair
+[AV. 10,3,16.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av10.003.html#av10.003.16) [12,5,51.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av12.005.html#av12.005.51) *śīrṣāṇi*
+[ŚAT. BR. 1,6,3,2.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,6,3,2) [5,5,4,3.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?5,5,4,3) *parṇam*
+[1,7,1,1.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,7,1,1) *grīvāḥ*
+[2,1,2,16.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,1,2,16) hair
 [ĀŚV. GṚHY. 1,17.]
 [PĀR. GṚHY. 2,1.] *barhiṣaḥ pracchedaṃ harati*
-[KĀTY. ŚR. 8,2,22.] *latāvitānagulmāṃśca śalākākuśaparvatān . kecitkuṭhāraiṣṭaṅkaiśca dātraiśca pracicchiduḥ ..*
-[R. GORR. 2,87,9.] *praciccheda muṣṭideśe mahaddhanuḥ*
-[MBH. 6,3709.] *śūlaśaktiparaśvadhān . bhallairvṛtraḥ praciccheda*
-[HARIV. 13580.]
-[MBH. 3,11710.] *patākāṃ cakragoptārau sarvopakaraṇāni ca . laghuhastaḥ praciccheda*
-[7,1628.] *tilaśaḥ*
-[7863.]
+[KĀTY. ŚR. 8,2,22.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?8,2,22) *latāvitānagulmāṃśca śalākākuśaparvatān . kecitkuṭhāraiṣṭaṅkaiśca dātraiśca pracicchiduḥ ..*
+[R. GORR. 2,87,9.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,87,9) *praciccheda muṣṭideśe mahaddhanuḥ*
+[MBH. 6,3709.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.3709) *śūlaśaktiparaśvadhān . bhallairvṛtraḥ praciccheda*
+[HARIV. 13580.](https://sanskrit-lexicon-scans.github.io/hariv?13580)
+[MBH. 3,11710.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11710) *patākāṃ cakragoptārau sarvopakaraṇāni ca . laghuhastaḥ praciccheda*
+[7,1628.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.1628) *tilaśaḥ*
+[7863.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.7863)
 
 **2)** — 2) entreissen, entziehen: *tatra devāḥ prayacchanti rājyāni vividhāni ca . śubhaiḥ karmabhirārabdhāḥ pracchindantyaśubheṣu ca ..*
-[MBH. 12,9770.] — caus. abschneiden lassen: *mahātmanaḥ . karau pracchedayāmāsa*
-[MBH. 12,686.] *pravṛddhānāṃ vṛkṣāṇāṃ śākhāṃ pracchedayettathā*
-[2637.]
+[MBH. 12,9770.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.9770) — caus. abschneiden lassen: *mahātmanaḥ . karau pracchedayāmāsa*
+[MBH. 12,686.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.686) *pravṛddhānāṃ vṛkṣāṇāṃ śākhāṃ pracchedayettathā*
+[2637.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.2637)
 
 - **RU:** — 2) вырывать, отнимать: *tatra devāḥ prayacchanti rājyāni vividhāni ca . śubhaiḥ karmabhirārabdhāḥ pracchindantyaśubheṣu ca ..*
-[MBH. 12,9770.] — caus. велеть отрезать: *mahātmanaḥ . karau pracchedayāmāsa*
-[MBH. 12,686.] *pravṛddhānāṃ vṛkṣāṇāṃ śākhāṃ pracchedayettathā*
-[2637.]
+[MBH. 12,9770.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.9770) — caus. велеть отрезать: *mahātmanaḥ . karau pracchedayāmāsa*
+[MBH. 12,686.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.686) *pravṛddhānāṃ vṛkṣāṇāṃ śākhāṃ pracchedayettathā*
+[2637.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.2637)
 - **EN:** — 2) to snatch away, wrest from: *tatra devāḥ prayacchanti rājyāni vividhāni ca . śubhaiḥ karmabhirārabdhāḥ pracchindantyaśubheṣu ca ..*
-[MBH. 12,9770.] — caus. to cause to be cut off: *mahātmanaḥ . karau pracchedayāmāsa*
-[MBH. 12,686.] *pravṛddhānāṃ vṛkṣāṇāṃ śākhāṃ pracchedayettathā*
-[2637.]
+[MBH. 12,9770.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.9770) — caus. to cause to be cut off: *mahātmanaḥ . karau pracchedayāmāsa*
+[MBH. 12,686.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.686) *pravṛddhānāṃ vṛkṣāṇāṃ śākhāṃ pracchedayettathā*
+[2637.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.2637)
   <sub>attested</sub>
 
 **pra-1)** — *pra*
  1) abreissen, abschneiden; zerschneiden, zerhauen, spalten, durchbohren: *tāṃstvaṃ pra cchindhi varaṇa purā diṣṭātpurāyuṣaḥ*
-[AV. 10,3,16.] [12,5,51.] *śīrṣāṇi*
-[ŚAT. BR. 1,6,3,2.] [5,5,4,3.] *parṇam*
-[1,7,1,1.] *grīvāḥ*
-[2,1,2,16.] Haar
+[AV. 10,3,16.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av10.003.html#av10.003.16) [12,5,51.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av12.005.html#av12.005.51) *śīrṣāṇi*
+[ŚAT. BR. 1,6,3,2.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,6,3,2) [5,5,4,3.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?5,5,4,3) *parṇam*
+[1,7,1,1.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,7,1,1) *grīvāḥ*
+[2,1,2,16.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,1,2,16) Haar
 [ĀŚV. GṚHY. 1,17.]
 [PĀR. GṚHY. 2,1.] *barhiṣaḥ pracchedaṃ harati*
-[KĀTY. ŚR. 8,2,22.] *latāvitānagulmāṃśca śalākākuśaparvatān . kecitkuṭhāraiṣṭaṅkaiśca dātraiśca pracicchiduḥ ..*
-[R. GORR. 2,87,9.] *praciccheda muṣṭideśe mahaddhanuḥ*
-[MBH. 6,3709.] *śūlaśaktiparaśvadhān . bhallairvṛtraḥ praciccheda*
-[HARIV. 13580.]
-[MBH. 3,11710.] *patākāṃ cakragoptārau sarvopakaraṇāni ca . laghuhastaḥ praciccheda*
-[7,1628.] *tilaśaḥ*
-[7863.]
+[KĀTY. ŚR. 8,2,22.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?8,2,22) *latāvitānagulmāṃśca śalākākuśaparvatān . kecitkuṭhāraiṣṭaṅkaiśca dātraiśca pracicchiduḥ ..*
+[R. GORR. 2,87,9.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,87,9) *praciccheda muṣṭideśe mahaddhanuḥ*
+[MBH. 6,3709.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.3709) *śūlaśaktiparaśvadhān . bhallairvṛtraḥ praciccheda*
+[HARIV. 13580.](https://sanskrit-lexicon-scans.github.io/hariv?13580)
+[MBH. 3,11710.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11710) *patākāṃ cakragoptārau sarvopakaraṇāni ca . laghuhastaḥ praciccheda*
+[7,1628.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.1628) *tilaśaḥ*
+[7863.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.7863)
 
 - **RU:** — *pra*
  1) отрывать, отрезать; разрезать, разрубать, раскалывать, пробивать насквозь: *tāṃstvaṃ pra cchindhi varaṇa purā diṣṭātpurāyuṣaḥ*
-[AV. 10,3,16.] [12,5,51.] *śīrṣāṇi*
-[ŚAT. BR. 1,6,3,2.] [5,5,4,3.] *parṇam*
-[1,7,1,1.] *grīvāḥ*
-[2,1,2,16.] Haar
+[AV. 10,3,16.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av10.003.html#av10.003.16) [12,5,51.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av12.005.html#av12.005.51) *śīrṣāṇi*
+[ŚAT. BR. 1,6,3,2.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,6,3,2) [5,5,4,3.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?5,5,4,3) *parṇam*
+[1,7,1,1.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,7,1,1) *grīvāḥ*
+[2,1,2,16.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,1,2,16) Haar
 [ĀŚV. GṚHY. 1,17.]
 [PĀR. GṚHY. 2,1.] *barhiṣaḥ pracchedaṃ harati*
-[KĀTY. ŚR. 8,2,22.] *latāvitānagulmāṃśca śalākākuśaparvatān . kecitkuṭhāraiṣṭaṅkaiśca dātraiśca pracicchiduḥ ..*
-[R. GORR. 2,87,9.] *praciccheda muṣṭideśe mahaddhanuḥ*
-[MBH. 6,3709.] *śūlaśaktiparaśvadhān . bhallairvṛtraḥ praciccheda*
-[HARIV. 13580.]
-[MBH. 3,11710.] *patākāṃ cakragoptārau sarvopakaraṇāni ca . laghuhastaḥ praciccheda*
-[7,1628.] *tilaśaḥ*
-[7863.]
+[KĀTY. ŚR. 8,2,22.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?8,2,22) *latāvitānagulmāṃśca śalākākuśaparvatān . kecitkuṭhāraiṣṭaṅkaiśca dātraiśca pracicchiduḥ ..*
+[R. GORR. 2,87,9.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,87,9) *praciccheda muṣṭideśe mahaddhanuḥ*
+[MBH. 6,3709.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.3709) *śūlaśaktiparaśvadhān . bhallairvṛtraḥ praciccheda*
+[HARIV. 13580.](https://sanskrit-lexicon-scans.github.io/hariv?13580)
+[MBH. 3,11710.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11710) *patākāṃ cakragoptārau sarvopakaraṇāni ca . laghuhastaḥ praciccheda*
+[7,1628.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.1628) *tilaśaḥ*
+[7863.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.7863)
   <sub>attested</sub>
 
 ## chid
@@ -1153,12 +1153,12 @@ Sch. to [KAP. 1,28. 49. 50.] [VEDĀNTAS. (Allah.) No. 36.]
 
 
 **1)** — *saṃpra* zerschneiden, zerhauen, spalten: *tataḥ śastrāṇi śūlāni niśitāni sahasraśaḥ . astravīryeṇa mahatā ditijaḥ saṃpracicchide ..*
-[HARIV. 13613.]
+[HARIV. 13613.](https://sanskrit-lexicon-scans.github.io/hariv?13613)
 
 - **RU:** — *saṃpra* разрезать, разрубать, раскалывать: *tataḥ śastrāṇi śūlāni niśitāni sahasraśaḥ . astravīryeṇa mahatā ditijaḥ saṃpracicchide ..*
-[HARIV. 13613.]
+[HARIV. 13613.](https://sanskrit-lexicon-scans.github.io/hariv?13613)
 - **EN:** — *saṃpra* to cut up, hew asunder, split: *tataḥ śastrāṇi śūlāni niśitāni sahasraśaḥ . astravīryeṇa mahatā ditijaḥ saṃpracicchide ..*
-[HARIV. 13613.]
+[HARIV. 13613.](https://sanskrit-lexicon-scans.github.io/hariv?13613)
   <sub>attested</sub>
 
 ## chid
@@ -1169,16 +1169,16 @@ Sch. to [KAP. 1,28. 49. 50.] [VEDĀNTAS. (Allah.) No. 36.]
 **1)** — *prati* abreissen, abschneiden: *tṛṇamubhayataḥ praticchidya*
 (v. l. *pracchidya*)
 [ŚĀṄKH. ŚR. 1,6,6.] mit Zerhauen, Spalten u. s. w. Jmd (acc.) antworten: *tāṃśca sātyakiḥ . nārācaiḥ praticiccheda*
-[MBH. 7,4848.]
+[MBH. 7,4848.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.4848)
 
 - **RU:** — *prati* отрывать, отрезать: *tṛṇamubhayataḥ praticchidya*
 (v. l. *pracchidya*)
 [ŚĀṄKH. ŚR. 1,6,6.] отвечать кому-л. (acc.) разрубанием, раскалыванием u. s. w.: *tāṃśca sātyakiḥ . nārācaiḥ praticiccheda*
-[MBH. 7,4848.]
+[MBH. 7,4848.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.4848)
 - **EN:** — *prati* to tear off, cut off: *tṛṇamubhayataḥ praticchidya*
 (v. l. *pracchidya*)
 [ŚĀṄKH. ŚR. 1,6,6.] to answer someone (acc.) with hewing, splitting u. s. w.: *tāṃśca sātyakiḥ . nārācaiḥ praticiccheda*
-[MBH. 7,4848.]
+[MBH. 7,4848.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.4848)
   <sub>attested</sub>
 
 ## chid
@@ -1193,113 +1193,113 @@ Sch. to [KAP. 1,28. 49. 50.] [VEDĀNTAS. (Allah.) No. 36.]
   <sub>attested</sub>
 
 **1)** 1) zerreissen, zerbrechen, spalten, trennen, unterbrechen: *yathā nakulo vicchidya saṃdadhātyahiṃ punaḥ . evā kāmasya vicchinnaṃ saṃ dhehi vīryāvati ..*
-[AV. 6,139,5.] *(śūlam) vicicchide haririṣubhiḥ sahasradhā*
-[BHĀG. P. 8,11,31.] *vicchidya tau śarairvīrau nikumbham*
-[HARIV. 8530.] *vi vā etasya *
+[AV. 6,139,5.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av06.139.html#av06.139.05) *(śūlam) vicicchide haririṣubhiḥ sahasradhā*
+[BHĀG. P. 8,11,31.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,11,31) *vicchidya tau śarairvīrau nikumbham*
+[HARIV. 8530.](https://sanskrit-lexicon-scans.github.io/hariv?8530) *vi vā etasya *
 
 * yajñaśchidyate*
-[TS. 1,5,4,3.] [7,1,5.] [7,1,5,5.]
-[ŚAT. BR. 4,5,2,10.] [7,1,2,11.] *prāṇam*
-[8,1,1,6.] [14,4,3,22.] [CHĀND. UP. 6,7,1.] *vicchidyamāne 'pi kule* zu Grunde richten
-[BHAṬṬ. 3,52.] *vicchinna = vibhakta*
-[TRIK. 3,3,362.]
-[H. an. 3,416.]
-[MED. n. 132.] auseinandergerissen, nicht zusammenhängend, getrennt; unterbrochen, gestört: *vicchinnamṛditasrajaḥ*
-[R. 5,13,36.] *yadardhe vicchinnaṃ bhavati kṛtasaṃdhānamiva tat*
-[ŚĀK. 9.] *kiraṇāḥ*
-[VARĀH. BṚH. S. 29,9.] *rekhāḥ*
-[67,76.] *vicchinnabalakarmabhiḥ*
-[RĀJA-TAR. 1,179.] *˚prasarā vidyā*
-[5,32.] *˚dhūmaprasara*
-[RAGH. 16,20.] *karman*
-[BHARTṚ. 1,95.] *timirapraveśavicchinnā (dṛṣṭiḥ)*
+[TS. 1,5,4,3.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?1,5,4,3) [7,1,5.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?1,7,1,5) [7,1,5,5.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?7,1,5,5)
+[ŚAT. BR. 4,5,2,10.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?4,5,2,10) [7,1,2,11.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?7,1,2,11) *prāṇam*
+[8,1,1,6.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?8,1,1,6) [14,4,3,22.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,4,3,22) [CHĀND. UP. 6,7,1.] *vicchidyamāne 'pi kule* zu Grunde richten
+[BHAṬṬ. 3,52.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?3,52) *vicchinna = vibhakta*
+[TRIK. 3,3,362.](https://sanskrit-lexicon-scans.github.io/medini/app2?3,3,362)
+[H. an. 3,416.](https://sanskrit-lexicon-scans.github.io/anekarthasamgraha/app1?3,416)
+[MED. n. 132.](https://sanskrit-lexicon-scans.github.io/medini/app1?n,132) auseinandergerissen, nicht zusammenhängend, getrennt; unterbrochen, gestört: *vicchinnamṛditasrajaḥ*
+[R. 5,13,36.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,13,36) *yadardhe vicchinnaṃ bhavati kṛtasaṃdhānamiva tat*
+[ŚĀK. 9.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?9) *kiraṇāḥ*
+[VARĀH. BṚH. S. 29,9.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?29,9) *rekhāḥ*
+[67,76.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?67,76) *vicchinnabalakarmabhiḥ*
+[RĀJA-TAR. 1,179.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?1,179) *˚prasarā vidyā*
+[5,32.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,32) *˚dhūmaprasara*
+[RAGH. 16,20.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?16,20) *karman*
+[BHARTṚ. 1,95.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app2?1,95) *timirapraveśavicchinnā (dṛṣṭiḥ)*
 [MṚCCH. 14,13.] *mahābhāṣya* fehlend, nicht mehr vorhanden
-[RĀJA-TAR. 4,487.] *vicchinneṣu pathiṣu* als die Pfade nicht mehr zusammenhingen, dem Auge in ihrer ganzen Ausdehnung nicht mehr sichtbar waren,
+[RĀJA-TAR. 4,487.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,487) *vicchinneṣu pathiṣu* als die Pfade nicht mehr zusammenhingen, dem Auge in ihrer ganzen Ausdehnung nicht mehr sichtbar waren,
 [AMAR. 74.] *avicchinna* ununterbrochen: *avicchinnāntaragṛhā (purī)*
-[R. 1,5,9.] *camū, gaṅgā*
-[RĀJA-TAR. 4,514.] *udakadhārā*
+[R. 1,5,9.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,5,9) *camū, gaṅgā*
+[RĀJA-TAR. 4,514.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,514) *udakadhārā*
 [ĀŚV. GṚHY. 2,8. 4,6.]
 [ŚĀṄKH. GṚHY. 1,9.] *vātāḥ*
-[HARIV. 9874.] *maitrī*
-[BHARTṚ. 1,96.] *aśruvega*
-[R. 4,5,17.] *manogati*
-[BHĀG. P. 3,29,11.] *saṃskārāḥ*
-[7,11,13.] *pāta*
+[HARIV. 9874.](https://sanskrit-lexicon-scans.github.io/hariv?9874) *maitrī*
+[BHARTṚ. 1,96.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app2?1,96) *aśruvega*
+[R. 4,5,17.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,5,17) *manogati*
+[BHĀG. P. 3,29,11.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,29,11) *saṃskārāḥ*
+[7,11,13.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,11,13) *pāta*
 [DAŚAK.] in [BENF. Chr. 179,16.] *vicchidya* _adv._ getrennt von (abl.): *kāmādvicchidya kvacinnigūḍhaḥ pracarati*
 [PRAB. 33,10.] mit Unterbrechungen: *tatrādvitīyavastuni vicchidya vicchidyāntarindriyavṛttipravāho dhyānam*
 ([BALL.]: on separate occasions [instead of being uninterruptedly so])
 [VEDĀNTAS. (Allah.) No. 134.]
 
 - **RU:** 1) разрывать, разламывать, раскалывать, разлучать, прерывать: *yathā nakulo vicchidya saṃdadhātyahiṃ punaḥ . evā kāmasya vicchinnaṃ saṃ dhehi vīryāvati ..*
-[AV. 6,139,5.] *(śūlam) vicicchide haririṣubhiḥ sahasradhā*
-[BHĀG. P. 8,11,31.] *vicchidya tau śarairvīrau nikumbham*
-[HARIV. 8530.] *vi vā etasya *
+[AV. 6,139,5.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av06.139.html#av06.139.05) *(śūlam) vicicchide haririṣubhiḥ sahasradhā*
+[BHĀG. P. 8,11,31.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,11,31) *vicchidya tau śarairvīrau nikumbham*
+[HARIV. 8530.](https://sanskrit-lexicon-scans.github.io/hariv?8530) *vi vā etasya *
 
 * yajñaśchidyate*
-[TS. 1,5,4,3.] [7,1,5.] [7,1,5,5.]
-[ŚAT. BR. 4,5,2,10.] [7,1,2,11.] *prāṇam*
-[8,1,1,6.] [14,4,3,22.] [CHĀND. UP. 6,7,1.] *vicchidyamāne 'pi kule* погублять
-[BHAṬṬ. 3,52.] *vicchinna = vibhakta*
-[TRIK. 3,3,362.]
-[H. an. 3,416.]
-[MED. n. 132.] разорванный, несвязный, разделённый; прерванный, нарушенный: *vicchinnamṛditasrajaḥ*
-[R. 5,13,36.] *yadardhe vicchinnaṃ bhavati kṛtasaṃdhānamiva tat*
-[ŚĀK. 9.] *kiraṇāḥ*
-[VARĀH. BṚH. S. 29,9.] *rekhāḥ*
-[67,76.] *vicchinnabalakarmabhiḥ*
-[RĀJA-TAR. 1,179.] *˚prasarā vidyā*
-[5,32.] *˚dhūmaprasara*
-[RAGH. 16,20.] *karman*
-[BHARTṚ. 1,95.] *timirapraveśavicchinnā (dṛṣṭiḥ)*
+[TS. 1,5,4,3.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?1,5,4,3) [7,1,5.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?1,7,1,5) [7,1,5,5.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?7,1,5,5)
+[ŚAT. BR. 4,5,2,10.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?4,5,2,10) [7,1,2,11.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?7,1,2,11) *prāṇam*
+[8,1,1,6.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?8,1,1,6) [14,4,3,22.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,4,3,22) [CHĀND. UP. 6,7,1.] *vicchidyamāne 'pi kule* погублять
+[BHAṬṬ. 3,52.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?3,52) *vicchinna = vibhakta*
+[TRIK. 3,3,362.](https://sanskrit-lexicon-scans.github.io/medini/app2?3,3,362)
+[H. an. 3,416.](https://sanskrit-lexicon-scans.github.io/anekarthasamgraha/app1?3,416)
+[MED. n. 132.](https://sanskrit-lexicon-scans.github.io/medini/app1?n,132) разорванный, несвязный, разделённый; прерванный, нарушенный: *vicchinnamṛditasrajaḥ*
+[R. 5,13,36.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,13,36) *yadardhe vicchinnaṃ bhavati kṛtasaṃdhānamiva tat*
+[ŚĀK. 9.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?9) *kiraṇāḥ*
+[VARĀH. BṚH. S. 29,9.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?29,9) *rekhāḥ*
+[67,76.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?67,76) *vicchinnabalakarmabhiḥ*
+[RĀJA-TAR. 1,179.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?1,179) *˚prasarā vidyā*
+[5,32.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,32) *˚dhūmaprasara*
+[RAGH. 16,20.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?16,20) *karman*
+[BHARTṚ. 1,95.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app2?1,95) *timirapraveśavicchinnā (dṛṣṭiḥ)*
 [MṚCCH. 14,13.] *mahābhāṣya* отсутствующий, более не существующий
-[RĀJA-TAR. 4,487.] *vicchinneṣu pathiṣu* когда пути более не были непрерывны, не были видны глазу во всей своей протяжённости,
+[RĀJA-TAR. 4,487.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,487) *vicchinneṣu pathiṣu* когда пути более не были непрерывны, не были видны глазу во всей своей протяжённости,
 [AMAR. 74.] *avicchinna* непрерывный: *avicchinnāntaragṛhā (purī)*
-[R. 1,5,9.] *camū, gaṅgā*
-[RĀJA-TAR. 4,514.] *udakadhārā*
+[R. 1,5,9.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,5,9) *camū, gaṅgā*
+[RĀJA-TAR. 4,514.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,514) *udakadhārā*
 [ĀŚV. GṚHY. 2,8. 4,6.]
 [ŚĀṄKH. GṚHY. 1,9.] *vātāḥ*
-[HARIV. 9874.] *maitrī*
-[BHARTṚ. 1,96.] *aśruvega*
-[R. 4,5,17.] *manogati*
-[BHĀG. P. 3,29,11.] *saṃskārāḥ*
-[7,11,13.] *pāta*
+[HARIV. 9874.](https://sanskrit-lexicon-scans.github.io/hariv?9874) *maitrī*
+[BHARTṚ. 1,96.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app2?1,96) *aśruvega*
+[R. 4,5,17.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,5,17) *manogati*
+[BHĀG. P. 3,29,11.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,29,11) *saṃskārāḥ*
+[7,11,13.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,11,13) *pāta*
 [DAŚAK.] in [BENF. Chr. 179,16.] *vicchidya* _adv._ отдельно от (abl.): *kāmādvicchidya kvacinnigūḍhaḥ pracarati*
 [PRAB. 33,10.] с перерывами: *tatrādvitīyavastuni vicchidya vicchidyāntarindriyavṛttipravāho dhyānam*
 ([BALL.]: «в отдельные случаи [вместо того чтобы быть непрерывным]»)
 [VEDĀNTAS. (Allah.) No. 134.]
 - **EN:** 1) to tear asunder, break apart, split, separate, interrupt: *yathā nakulo vicchidya saṃdadhātyahiṃ punaḥ . evā kāmasya vicchinnaṃ saṃ dhehi vīryāvati ..*
-[AV. 6,139,5.] *(śūlam) vicicchide haririṣubhiḥ sahasradhā*
-[BHĀG. P. 8,11,31.] *vicchidya tau śarairvīrau nikumbham*
-[HARIV. 8530.] *vi vā etasya *
+[AV. 6,139,5.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av06.139.html#av06.139.05) *(śūlam) vicicchide haririṣubhiḥ sahasradhā*
+[BHĀG. P. 8,11,31.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,11,31) *vicchidya tau śarairvīrau nikumbham*
+[HARIV. 8530.](https://sanskrit-lexicon-scans.github.io/hariv?8530) *vi vā etasya *
 
 * yajñaśchidyate*
-[TS. 1,5,4,3.] [7,1,5.] [7,1,5,5.]
-[ŚAT. BR. 4,5,2,10.] [7,1,2,11.] *prāṇam*
-[8,1,1,6.] [14,4,3,22.] [CHĀND. UP. 6,7,1.] *vicchidyamāne 'pi kule* to ruin
-[BHAṬṬ. 3,52.] *vicchinna = vibhakta*
-[TRIK. 3,3,362.]
-[H. an. 3,416.]
-[MED. n. 132.] torn asunder, not cohering, separated; interrupted, disturbed: *vicchinnamṛditasrajaḥ*
-[R. 5,13,36.] *yadardhe vicchinnaṃ bhavati kṛtasaṃdhānamiva tat*
-[ŚĀK. 9.] *kiraṇāḥ*
-[VARĀH. BṚH. S. 29,9.] *rekhāḥ*
-[67,76.] *vicchinnabalakarmabhiḥ*
-[RĀJA-TAR. 1,179.] *˚prasarā vidyā*
-[5,32.] *˚dhūmaprasara*
-[RAGH. 16,20.] *karman*
-[BHARTṚ. 1,95.] *timirapraveśavicchinnā (dṛṣṭiḥ)*
+[TS. 1,5,4,3.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?1,5,4,3) [7,1,5.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?1,7,1,5) [7,1,5,5.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?7,1,5,5)
+[ŚAT. BR. 4,5,2,10.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?4,5,2,10) [7,1,2,11.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?7,1,2,11) *prāṇam*
+[8,1,1,6.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?8,1,1,6) [14,4,3,22.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,4,3,22) [CHĀND. UP. 6,7,1.] *vicchidyamāne 'pi kule* to ruin
+[BHAṬṬ. 3,52.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?3,52) *vicchinna = vibhakta*
+[TRIK. 3,3,362.](https://sanskrit-lexicon-scans.github.io/medini/app2?3,3,362)
+[H. an. 3,416.](https://sanskrit-lexicon-scans.github.io/anekarthasamgraha/app1?3,416)
+[MED. n. 132.](https://sanskrit-lexicon-scans.github.io/medini/app1?n,132) torn asunder, not cohering, separated; interrupted, disturbed: *vicchinnamṛditasrajaḥ*
+[R. 5,13,36.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,13,36) *yadardhe vicchinnaṃ bhavati kṛtasaṃdhānamiva tat*
+[ŚĀK. 9.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?9) *kiraṇāḥ*
+[VARĀH. BṚH. S. 29,9.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?29,9) *rekhāḥ*
+[67,76.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?67,76) *vicchinnabalakarmabhiḥ*
+[RĀJA-TAR. 1,179.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?1,179) *˚prasarā vidyā*
+[5,32.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,32) *˚dhūmaprasara*
+[RAGH. 16,20.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?16,20) *karman*
+[BHARTṚ. 1,95.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app2?1,95) *timirapraveśavicchinnā (dṛṣṭiḥ)*
 [MṚCCH. 14,13.] *mahābhāṣya* absent, no longer present
-[RĀJA-TAR. 4,487.] *vicchinneṣu pathiṣu* when the paths no longer cohered, were no longer visible to the eye in their full extent,
+[RĀJA-TAR. 4,487.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,487) *vicchinneṣu pathiṣu* when the paths no longer cohered, were no longer visible to the eye in their full extent,
 [AMAR. 74.] *avicchinna* uninterrupted: *avicchinnāntaragṛhā (purī)*
-[R. 1,5,9.] *camū, gaṅgā*
-[RĀJA-TAR. 4,514.] *udakadhārā*
+[R. 1,5,9.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,5,9) *camū, gaṅgā*
+[RĀJA-TAR. 4,514.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,514) *udakadhārā*
 [ĀŚV. GṚHY. 2,8. 4,6.]
 [ŚĀṄKH. GṚHY. 1,9.] *vātāḥ*
-[HARIV. 9874.] *maitrī*
-[BHARTṚ. 1,96.] *aśruvega*
-[R. 4,5,17.] *manogati*
-[BHĀG. P. 3,29,11.] *saṃskārāḥ*
-[7,11,13.] *pāta*
+[HARIV. 9874.](https://sanskrit-lexicon-scans.github.io/hariv?9874) *maitrī*
+[BHARTṚ. 1,96.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app2?1,96) *aśruvega*
+[R. 4,5,17.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,5,17) *manogati*
+[BHĀG. P. 3,29,11.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,29,11) *saṃskārāḥ*
+[7,11,13.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,11,13) *pāta*
 [DAŚAK.] in [BENF. Chr. 179,16.] *vicchidya* _adv._ separated from (abl.): *kāmādvicchidya kvacinnigūḍhaḥ pracarati*
 [PRAB. 33,10.] with interruptions: *tatrādvitīyavastuni vicchidya vicchidyāntarindriyavṛttipravāho dhyānam*
 ([BALL.]: on separate occasions [instead of being uninterruptedly so])
@@ -1307,36 +1307,36 @@ Sch. to [KAP. 1,28. 49. 50.] [VEDĀNTAS. (Allah.) No. 36.]
   <sub>attested</sub>
 
 **2)** — 2) sich spalten: *reto 'sya vicchindyāt*
-[TS. 5,6,8,5.]
+[TS. 5,6,8,5.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?5,6,8,5)
 
 - **RU:** 2) раскалываться: *reto 'sya vicchindyāt*
-[TS. 5,6,8,5.]
+[TS. 5,6,8,5.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?5,6,8,5)
 - **EN:** — 2) to split (intrans.): *reto 'sya vicchindyāt*
-[TS. 5,6,8,5.]
+[TS. 5,6,8,5.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?5,6,8,5)
   <sub>attested</sub>
 
 **3)** — 3) *vicchinna = kuṭila* krumm
-[H. an. 3,416.]
+[H. an. 3,416.](https://sanskrit-lexicon-scans.github.io/anekarthasamgraha/app1?3,416)
 
 - **RU:** 3) *vicchinna = kuṭila* кривой
-[H. an. 3,416.]
+[H. an. 3,416.](https://sanskrit-lexicon-scans.github.io/anekarthasamgraha/app1?3,416)
 - **EN:** — 3) *vicchinna = kuṭila* crooked
-[H. an. 3,416.]
+[H. an. 3,416.](https://sanskrit-lexicon-scans.github.io/anekarthasamgraha/app1?3,416)
   <sub>lexicographic</sub>
 
 **4)** — 4) *vicchinna = samālabdha* gesalbt
-[TRIK. 3,3,262.]
+[TRIK. 3,3,262.](https://sanskrit-lexicon-scans.github.io/medini/app2?3,3,262)
 [H. an.]
-[MED. n. 132.]
+[MED. n. 132.](https://sanskrit-lexicon-scans.github.io/medini/app1?n,132)
 
 - **RU:** 4) *vicchinna = samālabdha* умащённый, намазанный
-[TRIK. 3,3,262.]
+[TRIK. 3,3,262.](https://sanskrit-lexicon-scans.github.io/medini/app2?3,3,262)
 [H. an.]
-[MED. n. 132.]
+[MED. n. 132.](https://sanskrit-lexicon-scans.github.io/medini/app1?n,132)
 - **EN:** — 4) *vicchinna = samālabdha* anointed
-[TRIK. 3,3,262.]
+[TRIK. 3,3,262.](https://sanskrit-lexicon-scans.github.io/medini/app2?3,3,262)
 [H. an.]
-[MED. n. 132.]
+[MED. n. 132.](https://sanskrit-lexicon-scans.github.io/medini/app1?n,132)
   <sub>lexicographic</sub>
 
 **caus)** — Vgl. *vicchitti* fgg.
@@ -1354,80 +1354,80 @@ Sch. to [KAP. 1,28. 49. 50.] [VEDĀNTAS. (Allah.) No. 36.]
 - **EN:** — *sam*
 
 **1)** 1) abschneiden, abhauen; zerschneiden, spalten, durchbohren: *lomāni*
-[AV. 12,5,68.] *asināsūntsamacchidan* (so kann man vermuthen st. *asunā*)
-[6,104,1.] *bhujam — saṃchinnam*
-[MBH. 5,2909.] *saṃchidya bandhanam*
-[1,2242.] [3,543.] [BHĀG. P. 1,15,40.] [VID. 239.] *māṃsāni*
-[MBH. 13,2071.] *saṃchinnāśca paraśvadhaiḥ*
-[6,1790.] *śaraiḥ — saṃchidyamānānāṃ kavacānām*
-[4,2004.] *vāṇaughānsaṃciccheda*
-[3,707.] [5,7199.] *taccakram — saṃcicchiduranekadhā*
-[7,1929.] *(varāham) vāṇena saṃchindhi*
-[HARIV. 15438.]
-[MBH. 1,8311.]
-[BHĀG. P. 3,3,17.] [4,6,2.] [10,18.] *saṃchidyantau ca gātrāṇi* sich gegenseitig Glieder abhauend
-[MBH. 7,7918.]
+[AV. 12,5,68.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av12.005.html#av12.005.68) *asināsūntsamacchidan* (so kann man vermuthen st. *asunā*)
+[6,104,1.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av06.104.html#av06.104.01) *bhujam — saṃchinnam*
+[MBH. 5,2909.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.2909) *saṃchidya bandhanam*
+[1,2242.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2242) [3,543.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.543) [BHĀG. P. 1,15,40.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,15,40) [VID. 239.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?239) *māṃsāni*
+[MBH. 13,2071.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.2071) *saṃchinnāśca paraśvadhaiḥ*
+[6,1790.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.1790) *śaraiḥ — saṃchidyamānānāṃ kavacānām*
+[4,2004.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.2004) *vāṇaughānsaṃciccheda*
+[3,707.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.707) [5,7199.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7199) *taccakram — saṃcicchiduranekadhā*
+[7,1929.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.1929) *(varāham) vāṇena saṃchindhi*
+[HARIV. 15438.](https://sanskrit-lexicon-scans.github.io/hariv?15438)
+[MBH. 1,8311.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8311)
+[BHĀG. P. 3,3,17.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,3,17) [4,6,2.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,6,2) [10,18.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,10,18) *saṃchidyantau ca gātrāṇi* sich gegenseitig Glieder abhauend
+[MBH. 7,7918.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.7918)
 - **EN:** 1) to cut off, hew off; to cut up, split, pierce: *lomāni*
-[AV. 12,5,68.] *asināsūntsamacchidan* (so one may conjecture st. *asunā*)
-[6,104,1.] *bhujam — saṃchinnam*
-[MBH. 5,2909.] *saṃchidya bandhanam*
-[1,2242.] [3,543.] [BHĀG. P. 1,15,40.] [VID. 239.] *māṃsāni*
-[MBH. 13,2071.] *saṃchinnāśca paraśvadhaiḥ*
-[6,1790.] *śaraiḥ — saṃchidyamānānāṃ kavacānām*
-[4,2004.] *vāṇaughānsaṃciccheda*
-[3,707.] [5,7199.] *taccakram — saṃcicchiduranekadhā*
-[7,1929.] *(varāham) vāṇena saṃchindhi*
-[HARIV. 15438.]
-[MBH. 1,8311.]
-[BHĀG. P. 3,3,17.] [4,6,2.] [10,18.] *saṃchidyantau ca gātrāṇi* cutting off each other's limbs
-[MBH. 7,7918.]
+[AV. 12,5,68.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av12.005.html#av12.005.68) *asināsūntsamacchidan* (so one may conjecture st. *asunā*)
+[6,104,1.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av06.104.html#av06.104.01) *bhujam — saṃchinnam*
+[MBH. 5,2909.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.2909) *saṃchidya bandhanam*
+[1,2242.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2242) [3,543.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.543) [BHĀG. P. 1,15,40.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,15,40) [VID. 239.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?239) *māṃsāni*
+[MBH. 13,2071.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.2071) *saṃchinnāśca paraśvadhaiḥ*
+[6,1790.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.1790) *śaraiḥ — saṃchidyamānānāṃ kavacānām*
+[4,2004.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.2004) *vāṇaughānsaṃciccheda*
+[3,707.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.707) [5,7199.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7199) *taccakram — saṃcicchiduranekadhā*
+[7,1929.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.1929) *(varāham) vāṇena saṃchindhi*
+[HARIV. 15438.](https://sanskrit-lexicon-scans.github.io/hariv?15438)
+[MBH. 1,8311.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8311)
+[BHĀG. P. 3,3,17.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,3,17) [4,6,2.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,6,2) [10,18.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,10,18) *saṃchidyantau ca gātrāṇi* cutting off each other's limbs
+[MBH. 7,7918.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.7918)
 
 **2)** — 2) *saṃśayam* einen Zweifel zerschneiden, entfernen
-[BHAG. 4,11.]
-[BHĀG. P. 1,15,31.] [3,7,15.] *praśnam* eine Frage erledigen
-[4,29,52.]
+[BHAG. 4,11.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?4,11)
+[BHĀG. P. 1,15,31.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,15,31) [3,7,15.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,7,15) *praśnam* eine Frage erledigen
+[4,29,52.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,29,52)
 
 - **RU:** — 2) *saṃśayam* разрубить сомнение, устранить его
-[BHAG. 4,11.]
-[BHĀG. P. 1,15,31.] [3,7,15.] *praśnam* разрешить вопрос
-[4,29,52.]
+[BHAG. 4,11.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?4,11)
+[BHĀG. P. 1,15,31.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,15,31) [3,7,15.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,7,15) *praśnam* разрешить вопрос
+[4,29,52.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,29,52)
 - **EN:** — 2) *saṃśayam* to cut through a doubt, to remove (a doubt)
-[BHAG. 4,11.]
-[BHĀG. P. 1,15,31.] [3,7,15.] *praśnam* to settle a question
-[4,29,52.]
+[BHAG. 4,11.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?4,11)
+[BHĀG. P. 1,15,31.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,15,31) [3,7,15.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,7,15) *praśnam* to settle a question
+[4,29,52.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,29,52)
   <sub>attested</sub>
 
 **sam-1)** — *sam*
  1) abschneiden, abhauen; zerschneiden, spalten, durchbohren: *lomāni*
-[AV. 12,5,68.] *asināsūntsamacchidan* (so kann man vermuthen st. *asunā*)
-[6,104,1.] *bhujam — saṃchinnam*
-[MBH. 5,2909.] *saṃchidya bandhanam*
-[1,2242.] [3,543.] [BHĀG. P. 1,15,40.] [VID. 239.] *māṃsāni*
-[MBH. 13,2071.] *saṃchinnāśca paraśvadhaiḥ*
-[6,1790.] *śaraiḥ — saṃchidyamānānāṃ kavacānām*
-[4,2004.] *vāṇaughānsaṃciccheda*
-[3,707.] [5,7199.] *taccakram — saṃcicchiduranekadhā*
-[7,1929.] *(varāham) vāṇena saṃchindhi*
-[HARIV. 15438.]
-[MBH. 1,8311.]
-[BHĀG. P. 3,3,17.] [4,6,2.] [10,18.] *saṃchidyantau ca gātrāṇi* sich gegenseitig Glieder abhauend
-[MBH. 7,7918.]
+[AV. 12,5,68.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av12.005.html#av12.005.68) *asināsūntsamacchidan* (so kann man vermuthen st. *asunā*)
+[6,104,1.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av06.104.html#av06.104.01) *bhujam — saṃchinnam*
+[MBH. 5,2909.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.2909) *saṃchidya bandhanam*
+[1,2242.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2242) [3,543.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.543) [BHĀG. P. 1,15,40.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,15,40) [VID. 239.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?239) *māṃsāni*
+[MBH. 13,2071.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.2071) *saṃchinnāśca paraśvadhaiḥ*
+[6,1790.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.1790) *śaraiḥ — saṃchidyamānānāṃ kavacānām*
+[4,2004.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.2004) *vāṇaughānsaṃciccheda*
+[3,707.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.707) [5,7199.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7199) *taccakram — saṃcicchiduranekadhā*
+[7,1929.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.1929) *(varāham) vāṇena saṃchindhi*
+[HARIV. 15438.](https://sanskrit-lexicon-scans.github.io/hariv?15438)
+[MBH. 1,8311.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8311)
+[BHĀG. P. 3,3,17.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,3,17) [4,6,2.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,6,2) [10,18.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,10,18) *saṃchidyantau ca gātrāṇi* sich gegenseitig Glieder abhauend
+[MBH. 7,7918.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.7918)
 
 - **RU:** — *sam*
  1) отрезать, отсекать; разрезать, раскалывать, пронзать: *lomāni*
-[AV. 12,5,68.] *asināsūntsamacchidan* (so kann man vermuthen st. *asunā*)
-[6,104,1.] *bhujam — saṃchinnam*
-[MBH. 5,2909.] *saṃchidya bandhanam*
-[1,2242.] [3,543.] [BHĀG. P. 1,15,40.] [VID. 239.] *māṃsāni*
-[MBH. 13,2071.] *saṃchinnāśca paraśvadhaiḥ*
-[6,1790.] *śaraiḥ — saṃchidyamānānāṃ kavacānām*
-[4,2004.] *vāṇaughānsaṃciccheda*
-[3,707.] [5,7199.] *taccakram — saṃcicchiduranekadhā*
-[7,1929.] *(varāham) vāṇena saṃchindhi*
-[HARIV. 15438.]
-[MBH. 1,8311.]
-[BHĀG. P. 3,3,17.] [4,6,2.] [10,18.] *saṃchidyantau ca gātrāṇi* рубя друг другу члены тела
-[MBH. 7,7918.]
+[AV. 12,5,68.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av12.005.html#av12.005.68) *asināsūntsamacchidan* (so kann man vermuthen st. *asunā*)
+[6,104,1.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av06.104.html#av06.104.01) *bhujam — saṃchinnam*
+[MBH. 5,2909.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.2909) *saṃchidya bandhanam*
+[1,2242.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2242) [3,543.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.543) [BHĀG. P. 1,15,40.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,15,40) [VID. 239.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?239) *māṃsāni*
+[MBH. 13,2071.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.2071) *saṃchinnāśca paraśvadhaiḥ*
+[6,1790.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.1790) *śaraiḥ — saṃchidyamānānāṃ kavacānām*
+[4,2004.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.2004) *vāṇaughānsaṃciccheda*
+[3,707.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.707) [5,7199.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7199) *taccakram — saṃcicchiduranekadhā*
+[7,1929.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.1929) *(varāham) vāṇena saṃchindhi*
+[HARIV. 15438.](https://sanskrit-lexicon-scans.github.io/hariv?15438)
+[MBH. 1,8311.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8311)
+[BHĀG. P. 3,3,17.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,3,17) [4,6,2.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,6,2) [10,18.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,10,18) *saṃchidyantau ca gātrāṇi* рубя друг другу члены тела
+[MBH. 7,7918.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.7918)
   <sub>attested</sub>
 
 ## chid
@@ -1440,52 +1440,52 @@ Sch. to [KAP. 1,28. 49. 50.] [VEDĀNTAS. (Allah.) No. 36.]
 
 **1a)** 2. *chid*¦ (= 1. *chid*)
  1) _adj._ am Ende eines comp.
-[P. 3,2,61.]
+[P. 3,2,61.](https://ashtadhyayi.com/sutraani/3/2/61)
  a) abschneidend, zerschneidend, zerbrechend, zerreissend, spaltend, durchbohrend: *(śarāḥ) tanucchidaḥ*
-[MBH. 7,4656.] *vācaśca hṛdayacchidaḥ*
-[R. 5,37,10.] *marmacchido vedanāḥ*
+[MBH. 7,4656.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.4656) *vācaśca hṛdayacchidaḥ*
+[R. 5,37,10.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,37,10) *marmacchido vedanāḥ*
 [ŚĀNTIŚ. 1,16.] Vgl. *ukha˚, keśa˚, pakṣa˚, vana˚* .
 
 - **RU:** 2. *chid*¦ (= 1. *chid*)
  1) _adj._ в конце comp.
-[P. 3,2,61.]
+[P. 3,2,61.](https://ashtadhyayi.com/sutraani/3/2/61)
  a) срезающий, разрезающий, разламывающий, разрывающий, раскалывающий, пробуравливающий: *(śarāḥ) tanucchidaḥ*
-[MBH. 7,4656.] *vācaśca hṛdayacchidaḥ*
-[R. 5,37,10.] *marmacchido vedanāḥ*
+[MBH. 7,4656.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.4656) *vācaśca hṛdayacchidaḥ*
+[R. 5,37,10.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,37,10) *marmacchido vedanāḥ*
 [ŚĀNTIŚ. 1,16.] Vgl. *ukha˚, keśa˚, pakṣa˚, vana˚* .
 - **EN:** 1) _adj._ at the end of a comp.
-[P. 3,2,61.]
+[P. 3,2,61.](https://ashtadhyayi.com/sutraani/3/2/61)
  a) cutting off, cutting up, breaking, tearing asunder, splitting, piercing: *(śarāḥ) tanucchidaḥ*
-[MBH. 7,4656.] *vācaśca hṛdayacchidaḥ*
-[R. 5,37,10.] *marmacchido vedanāḥ*
+[MBH. 7,4656.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.4656) *vācaśca hṛdayacchidaḥ*
+[R. 5,37,10.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,37,10) *marmacchido vedanāḥ*
 [ŚĀNTIŚ. 1,16.] Vgl. *ukha˚, keśa˚, pakṣa˚, vana˚* .
   <sub>attested</sub>
 
 **1b)** — b) zu-Grunde richtend, vernichtend, entfernend: *jīvita˚*
-[MBH. 5,1809.]
-[HARIV. 4774.] *maruto vātyantakhedacchidaḥ*
-[BHARTṚ. 1,46.] *sadvṛjina˚*
-[BHĀG. P. 2,4,13.] *bhava˚*
-[6,35.] *duḥkha˚*
-[4,8,23.] *mārgeṇādhvaklamacchidā*
-[VID. 33.] Vgl. *darpa˚, paṅka˚* .
+[MBH. 5,1809.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1809)
+[HARIV. 4774.](https://sanskrit-lexicon-scans.github.io/hariv?4774) *maruto vātyantakhedacchidaḥ*
+[BHARTṚ. 1,46.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app2?1,46) *sadvṛjina˚*
+[BHĀG. P. 2,4,13.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,4,13) *bhava˚*
+[6,35.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,6,35) *duḥkha˚*
+[4,8,23.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,8,23) *mārgeṇādhvaklamacchidā*
+[VID. 33.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?33) Vgl. *darpa˚, paṅka˚* .
 
 - **RU:** — b) губящий, уничтожающий, устраняющий: *jīvita˚*
-[MBH. 5,1809.]
-[HARIV. 4774.] *maruto vātyantakhedacchidaḥ*
-[BHARTṚ. 1,46.] *sadvṛjina˚*
-[BHĀG. P. 2,4,13.] *bhava˚*
-[6,35.] *duḥkha˚*
-[4,8,23.] *mārgeṇādhvaklamacchidā*
-[VID. 33.] Vgl. *darpa˚, paṅka˚* .
+[MBH. 5,1809.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1809)
+[HARIV. 4774.](https://sanskrit-lexicon-scans.github.io/hariv?4774) *maruto vātyantakhedacchidaḥ*
+[BHARTṚ. 1,46.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app2?1,46) *sadvṛjina˚*
+[BHĀG. P. 2,4,13.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,4,13) *bhava˚*
+[6,35.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,6,35) *duḥkha˚*
+[4,8,23.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,8,23) *mārgeṇādhvaklamacchidā*
+[VID. 33.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?33) Vgl. *darpa˚, paṅka˚* .
 - **EN:** — b) ruining, destroying, removing: *jīvita˚*
-[MBH. 5,1809.]
-[HARIV. 4774.] *maruto vātyantakhedacchidaḥ*
-[BHARTṚ. 1,46.] *sadvṛjina˚*
-[BHĀG. P. 2,4,13.] *bhava˚*
-[6,35.] *duḥkha˚*
-[4,8,23.] *mārgeṇādhvaklamacchidā*
-[VID. 33.] Vgl. *darpa˚, paṅka˚* .
+[MBH. 5,1809.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1809)
+[HARIV. 4774.](https://sanskrit-lexicon-scans.github.io/hariv?4774) *maruto vātyantakhedacchidaḥ*
+[BHARTṚ. 1,46.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app2?1,46) *sadvṛjina˚*
+[BHĀG. P. 2,4,13.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,4,13) *bhava˚*
+[6,35.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,6,35) *duḥkha˚*
+[4,8,23.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,8,23) *mārgeṇādhvaklamacchidā*
+[VID. 33.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?33) Vgl. *darpa˚, paṅka˚* .
   <sub>attested</sub>
 
 **3)** — 3) _m._ Divisor; Nenner eines Bruchs
@@ -1514,22 +1514,22 @@ Sch. to [KAP. 1,28. 49. 50.] [VEDĀNTAS. (Allah.) No. 36.]
 - **EN:** 2) *udanvacchinnā bhūḥ* so v. a. bounded, delimited
   <sub>attested</sub>
 
-**2-cit)** [Spr. 461.]
+**2-cit)** [Spr. 461.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?461)
 
-- **RU:** [Spr. 461.]
-- **EN:** [Spr. 461.]
+- **RU:** [Spr. 461.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?461)
+- **EN:** [Spr. 461.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?461)
   <sub>attested</sub>
 
 **3)** — 3) *acchinnaṃ lokasya hasitaṃ tvabhūt* ununterbrochen
-[KATHĀS. 61,47.] *kiṃ naśchinnam* was stört es uns? was geht es uns an? was machen wir uns daraus?
-[Spr. 2130.]
+[KATHĀS. 61,47.](https://sanskrit-lexicon-scans.github.io/kss/index.html?61,47) *kiṃ naśchinnam* was stört es uns? was geht es uns an? was machen wir uns daraus?
+[Spr. 2130.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2130)
 
 - **RU:** — 3) *acchinnaṃ lokasya hasitaṃ tvabhūt* «непрерывный»
-[KATHĀS. 61,47.] *kiṃ naśchinnam* — «что нам до этого? что нам с того? что нам за дело?»
-[Spr. 2130.]
+[KATHĀS. 61,47.](https://sanskrit-lexicon-scans.github.io/kss/index.html?61,47) *kiṃ naśchinnam* — «что нам до этого? что нам с того? что нам за дело?»
+[Spr. 2130.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2130)
 - **EN:** — 3) *acchinnaṃ lokasya hasitaṃ tvabhūt* uninterrupted
-[KATHĀS. 61,47.] *kiṃ naśchinnam* what does it matter to us? what does it concern us? what do we care about it?
-[Spr. 2130.]
+[KATHĀS. 61,47.](https://sanskrit-lexicon-scans.github.io/kss/index.html?61,47) *kiṃ naśchinnam* what does it matter to us? what does it concern us? what do we care about it?
+[Spr. 2130.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2130)
   <sub>attested</sub>
 
 **3-ref)** [MALLIN.] zu [KIR. 2,7.] [SARVADARŚANAS. 27,13.]
@@ -1541,16 +1541,16 @@ Sch. to [KAP. 1,28. 49. 50.] [VEDĀNTAS. (Allah.) No. 36.]
 **4)** — 4) *śrutirātmaśaraṇyānāṃ vyasanaṃ no chinatti kim*
 [LA. (II) 90,22.] *saṃśayam*
 [SŪRYAS. 12,9.] *tāvatpayo 'khilam . tattasyāśchinnam* verschwunden, nicht mehr da seiend
-[KATHĀS. 61,47.]
+[KATHĀS. 61,47.](https://sanskrit-lexicon-scans.github.io/kss/index.html?61,47)
 
 - **RU:** — 4) *śrutirātmaśaraṇyānāṃ vyasanaṃ no chinatti kim*
 [LA. (II) 90,22.] *saṃśayam*
 [SŪRYAS. 12,9.] *tāvatpayo 'khilam . tattasyāśchinnam* — «исчезнувший, более не существующий»
-[KATHĀS. 61,47.]
+[KATHĀS. 61,47.](https://sanskrit-lexicon-scans.github.io/kss/index.html?61,47)
 - **EN:** — 4) *śrutirātmaśaraṇyānāṃ vyasanaṃ no chinatti kim*
 [LA. (II) 90,22.] *saṃśayam*
 [SŪRYAS. 12,9.] *tāvatpayo 'khilam . tattasyāśchinnam* vanished, no longer present
-[KATHĀS. 61,47.]
+[KATHĀS. 61,47.](https://sanskrit-lexicon-scans.github.io/kss/index.html?61,47)
   <sub>attested</sub>
 
 **6)** — 6) theilen, dividiren
@@ -1563,12 +1563,12 @@ Sch. to [KAP. 1,28. 49. 50.] [VEDĀNTAS. (Allah.) No. 36.]
   <sub>attested</sub>
 
 **caus-1)** 1)
-[Spr. 4540.]
+[Spr. 4540.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4540)
 
 - **RU:** 1)
-[Spr. 4540.]
+[Spr. 4540.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4540)
 - **EN:** 1)
-[Spr. 4540.]
+[Spr. 4540.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4540)
   <sub>attested</sub>
 
 **caus-ppp)** — *ava*
@@ -1584,7 +1584,7 @@ Sch. to [KAP. 1,28. 49. 50.] [VEDĀNTAS. (Allah.) No. 36.]
 [21.] Hierher auch die Stellen
 [BĀLAB. 33] und [YOGAS. 2,31] unter
  1) und
-[VEDĀNTAS. (Allah.) No. 34] und [BHARTṚ. 2,1] unter 2); *dikkālānavacchinna* dem Raum und der Zeit nicht angehörig, nicht unter die Kategorien von Raum und Zeit fallend.
+[VEDĀNTAS. (Allah.) No. 34] und [BHARTṚ. 2,1](https://sanskrit-lexicon-scans.github.io/bhartrhari/app2?2,1) unter 2); *dikkālānavacchinna* dem Raum und der Zeit nicht angehörig, nicht unter die Kategorien von Raum und Zeit fallend.
 
 - **RU:** 3) *avacchinna* — «определённый, точно установленный, понятийно ограниченный»: *ṣoḍaśasaṃkhyāvacchinno gaṇaḥ ṣoḍaśakaḥ*
 [SARVADARŚANAS. 148,21.] [NĪLAK. 205. 225. 238. 242. 244. 170. fg.] *tādātmyasaṃbandhāvacchinnapratiyogiko 'nyo'nyābhāvaḥ*
@@ -1593,7 +1593,7 @@ Sch. to [KAP. 1,28. 49. 50.] [VEDĀNTAS. (Allah.) No. 36.]
 [21.] Сюда же относятся места
 [BĀLAB. 33] и [YOGAS. 2,31] под
  1) и
-[VEDĀNTAS. (Allah.) No. 34] и [BHARTṚ. 2,1] под 2); *dikkālānavacchinna* — «не принадлежащий пространству и времени, не подпадающий под категории пространства и времени».
+[VEDĀNTAS. (Allah.) No. 34] и [BHARTṚ. 2,1](https://sanskrit-lexicon-scans.github.io/bhartrhari/app2?2,1) под 2); *dikkālānavacchinna* — «не принадлежащий пространству и времени, не подпадающий под категории пространства и времени».
 - **EN:** 3) *avacchinna* determinate, precise, conceptually delimited: *ṣoḍaśasaṃkhyāvacchinno gaṇaḥ ṣoḍaśakaḥ*
 [SARVADARŚANAS. 148,21.] [NĪLAK. 205. 225. 238. 242. 244. 170. fg.] *tādātmyasaṃbandhāvacchinnapratiyogiko 'nyo'nyābhāvaḥ*
 [TARKAS. 58.] *anavacchinna*
@@ -1601,46 +1601,46 @@ Sch. to [KAP. 1,28. 49. 50.] [VEDĀNTAS. (Allah.) No. 36.]
 [21.] To this heading also belong the passages
 [BĀLAB. 33] and [YOGAS. 2,31] under
  1) and
-[VEDĀNTAS. (Allah.) No. 34] and [BHARTṚ. 2,1] under 2); *dikkālānavacchinna* not belonging to space and time, not falling under the categories of space and time.
+[VEDĀNTAS. (Allah.) No. 34] and [BHARTṚ. 2,1](https://sanskrit-lexicon-scans.github.io/bhartrhari/app2?2,1) under 2); *dikkālānavacchinna* not belonging to space and time, not falling under the categories of space and time.
   <sub>attested</sub>
 
 **des-1)** — *ā*
  1)
-Z. 4 [MBH. 12,9377] liest die [ed. Bomb.] *ye ca cchindanti vṛṣaṇān* .
+Z. 4 [MBH. 12,9377](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.9377) liest die [ed. Bomb.] *ye ca cchindanti vṛṣaṇān* .
 
 - **RU:** — *ā*
  1)
-Z. 4 [MBH. 12,9377] — [ed. Bomb.] читает *ye ca cchindanti vṛṣaṇān* .
+Z. 4 [MBH. 12,9377](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.9377) — [ed. Bomb.] читает *ye ca cchindanti vṛṣaṇān* .
 - **EN:** — *ā*
  1)
-Z. 4 [MBH. 12,9377] reads the [ed. Bomb.] *ye ca cchindanti vṛṣaṇān* .
+Z. 4 [MBH. 12,9377](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.9377) reads the [ed. Bomb.] *ye ca cchindanti vṛṣaṇān* .
   <sub>attested</sub>
 
 **des-3)** — 3) entfernen, zu Nichte machen: *yenācchinnaṃ tattamaḥ* (so die [ed. Bomb.])
-[MBH. 13,7362.]
+[MBH. 13,7362.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.7362)
 
 - **RU:** — 3) удалять, уничтожать: *yenācchinnaṃ tattamaḥ* (так [ed. Bomb.])
-[MBH. 13,7362.]
+[MBH. 13,7362.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.7362)
 - **EN:** — 3) to remove, to annihilate: *yenācchinnaṃ tattamaḥ* (so the [ed. Bomb.])
-[MBH. 13,7362.]
+[MBH. 13,7362.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.7362)
   <sub>attested</sub>
 
 **des-4)** — 4) *ācchinnadāradraviṇāḥ*
-[BHĀG. P. 12,2,9.]
+[BHĀG. P. 12,2,9.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?12,2,9)
 
 - **RU:** — 4) *ācchinnadāradraviṇāḥ*
-[BHĀG. P. 12,2,9.]
+[BHĀG. P. 12,2,9.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?12,2,9)
 - **EN:** — 4) *ācchinnadāradraviṇāḥ*
-[BHĀG. P. 12,2,9.]
+[BHĀG. P. 12,2,9.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?12,2,9)
   <sub>attested</sub>
 
 **des-6)** — 6) unterbrechen: *kathāmācchidya*
-[KATHĀS. 61,94.]
+[KATHĀS. 61,94.](https://sanskrit-lexicon-scans.github.io/kss/index.html?61,94)
 
 - **RU:** — 6) прерывать: *kathāmācchidya*
-[KATHĀS. 61,94.]
+[KATHĀS. 61,94.](https://sanskrit-lexicon-scans.github.io/kss/index.html?61,94)
 - **EN:** — 6) to interrupt: *kathāmācchidya*
-[KATHĀS. 61,94.]
+[KATHĀS. 61,94.](https://sanskrit-lexicon-scans.github.io/kss/index.html?61,94)
   <sub>attested</sub>
 
 **des-ppp)** — *samud*, *samucchinna* verloren gegangen: *racanā*
@@ -1655,24 +1655,24 @@ Z. 4 [MBH. 12,9377] reads the [ed. Bomb.] *ye ca cchindanti vṛṣaṇān* .
 **intens-4)** — *pari*
  4)
 [Z. 11] *paricchinna*
-[BHĀG. P. 3,10,12] erklärt der
+[BHĀG. P. 3,10,12](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,10,12) erklärt der
 Schol. durch *pṛthakprakāśita*.* aparicchinna* unbegrenzt, unbeschränkt
-[Spr. 3473.]
+[Spr. 3473.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3473)
 [SARVADARŚANAS. 53,2.]
 
 - **RU:** — *pari*
  4)
 [Z. 11] *paricchinna*
-[BHĀG. P. 3,10,12] — объясняет
+[BHĀG. P. 3,10,12](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,10,12) — объясняет
 Schol. посредством *pṛthakprakāśita*.* aparicchinna* — «неограниченный, безграничный»
-[Spr. 3473.]
+[Spr. 3473.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3473)
 [SARVADARŚANAS. 53,2.]
 - **EN:** — *pari*
  4)
 [Z. 11] *paricchinna*
-[BHĀG. P. 3,10,12] is explained by the
+[BHĀG. P. 3,10,12](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,10,12) is explained by the
 Schol. through *pṛthakprakāśita*.* aparicchinna* unlimited, unrestricted
-[Spr. 3473.]
+[Spr. 3473.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3473)
 [SARVADARŚANAS. 53,2.]
   <sub>attested</sub>
 
@@ -1759,10 +1759,10 @@ Z. 2 read [M.] st. [MBH.]
 - **EN:** — 1〉 to cut off, hew off, strike off, tear off, gnaw off, bite off, cut through, hew through, tear through, split, pierce. *saṃdhim* to make a hole in the wall. Pass. to break, to tear (intrans.). *chinna* cut off u. s. w.; torn open, cut open; incised, d. h. provided with notches/constrictions [217,6].
   <sub>attested</sub>
 
-**2)** — 2〉 scheiden, trennen, — von (Abl., ausnahmsweise Instr.). *chinna* unterbrochen, nicht zusammenhängend. *˚chinna* auch begrenzt —, eingeschlossen von [Spr. 1229].
+**2)** — 2〉 scheiden, trennen, — von (Abl., ausnahmsweise Instr.). *chinna* unterbrochen, nicht zusammenhängend. *˚chinna* auch begrenzt —, eingeschlossen von [Spr. 1229](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1229).
 
-- **RU:** — 2〉 разлучать, отделять, — от (Abl., исключительно Instr.). *chinna* прерванный, не связный. *˚chinna* также ограниченный —, замкнутый [Spr. 1229].
-- **EN:** — 2〉 to separate, to sever, — from (Abl., exceptionally Instr.). *chinna* interrupted, not continuous. *˚chinna* also bounded by, enclosed by [Spr. 1229].
+- **RU:** — 2〉 разлучать, отделять, — от (Abl., исключительно Instr.). *chinna* прерванный, не связный. *˚chinna* также ограниченный —, замкнутый [Spr. 1229](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1229).
+- **EN:** — 2〉 to separate, to sever, — from (Abl., exceptionally Instr.). *chinna* interrupted, not continuous. *˚chinna* also bounded by, enclosed by [Spr. 1229](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1229).
   <sub>attested</sub>
 
 **3)** — 3〉 ablösen, -sondern, herausnehmen.
@@ -1816,10 +1816,10 @@ Z. 2 read [M.] st. [MBH.]
 - **EN:** — *Intens. *cecchidīti* and *cecchidyate*.
   <sub>lexicographic</sub>
 
-**ati)** — Mit *ati*, *˚cchinna* zu stark aufgeschnitten [SUŚR. 2,19,1]. zu stark zerhauen, — verwundet [MBH. 12,96,15].
+**ati)** — Mit *ati*, *˚cchinna* zu stark aufgeschnitten [SUŚR. 2,19,1]. zu stark zerhauen, — verwundet [MBH. 12,96,15](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,96,15).
 
-- **RU:** — Mit *ati*, *˚cchinna* чрезмерно надрезанный [SUŚR. 2,19,1]. чрезмерно изрубленный, — израненный [MBH. 12,96,15].
-- **EN:** — With *ati*, *˚cchinna* cut too deeply [SUŚR. 2,19,1]. too deeply hewn, — wounded [MBH. 12,96,15].
+- **RU:** — Mit *ati*, *˚cchinna* чрезмерно надрезанный [SUŚR. 2,19,1]. чрезмерно изрубленный, — израненный [MBH. 12,96,15](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,96,15).
+- **EN:** — With *ati*, *˚cchinna* cut too deeply [SUŚR. 2,19,1]. too deeply hewn, — wounded [MBH. 12,96,15](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,96,15).
   <sub>attested</sub>
 
 **ava)** — Mit *antar* abschneiden, intercludere [28,7].
@@ -1873,8 +1873,8 @@ Z. 2 read [M.] st. [MBH.]
 **pra-4)** — 4〉 unterbrechen.
 - **EN:** — 4〉 to interrupt.
 
-**pra-5)** — 5〉 abgrenzen, genau bestimmen [BHĀG. P. 4,29,45].
-- **EN:** — 5〉 to delimit, to determine precisely [BHĀG. P. 4,29,45].
+**pra-5)** — 5〉 abgrenzen, genau bestimmen [BHĀG. P. 4,29,45](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,29,45).
+- **EN:** — 5〉 to delimit, to determine precisely [BHĀG. P. 4,29,45](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,29,45).
 
 **pra-6)** — 6〉 sich entscheiden zu (*prati*).
 - **EN:** — 6〉 to decide upon (*prati*).
@@ -2088,12 +2088,12 @@ Z. 2 read [M.] st. [MBH.]
 - **EN:** **1.** √*chid*¦, *chindatprāṇi* (Nomin.) a grass-eating animal [ĀPAST. ŚR. 9,13,1]. [16,8].
   <sub>lexicographic</sub>
 
-**II-6)** **1.** √*chid*¦ II. 6. Auch lösen, entscheiden (einen Zweifel) [MBH. 1,71,17].
+**II-6)** **1.** √*chid*¦ II. 6. Auch lösen, entscheiden (einen Zweifel) [MBH. 1,71,17](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?1,71,17).
 — Mit *vipra* 4.
 
-- **RU:** **1.** √*chid*¦ II. 6. Также разрешать, решать (сомнение) [MBH. 1,71,17].
+- **RU:** **1.** √*chid*¦ II. 6. Также разрешать, решать (сомнение) [MBH. 1,71,17](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?1,71,17).
 — Mit *vipra* 4.
-- **EN:** **1.** √*chid*¦ II. 6. Also to resolve, to decide (a doubt) [MBH. 1,71,17].
+- **EN:** **1.** √*chid*¦ II. 6. Also to resolve, to decide (a doubt) [MBH. 1,71,17](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?1,71,17).
 — With *vipra* 4.
   <sub>attested</sub>
 
@@ -2122,7 +2122,7 @@ Z. 2 read [M.] st. [MBH.]
 — 2〉 abschneiden, abtrennen, scheiden, — von (Abl.).
 — 3〉 von einander reissen, aus e. thun.
 — 4〉 unterbrechen.
-— 5〉 abgrenzen, genau bestimmen [BHĀG. P. 4,29,45].
+— 5〉 abgrenzen, genau bestimmen [BHĀG. P. 4,29,45](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,29,45).
 — 6〉 sich entscheiden zu (*prati*).
 
 - **RU:** — Mit *vyava*
@@ -2130,7 +2130,7 @@ Z. 2 read [M.] st. [MBH.]
 — 2〉 срезать, отделять, разлучать, — от (Abl.).
 — 3〉 разрывать, вырывать из e..
 — 4〉 прерывать.
-— 5〉 разграничивать, точно определять [BHĀG. P. 4,29,45].
+— 5〉 разграничивать, точно определять [BHĀG. P. 4,29,45](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,29,45).
 — 6〉 решаться на (*prati*).
   <sub>attested</sub>
 
@@ -2283,10 +2283,10 @@ Z. 2 read [M.] st. [MBH.]
 - **EN:** **1.** *chid*¦, *chindatprāṇi* (Nomin.) a grass-eating animal [ĀPAST. ŚR. 9,13,1]. [16,8].
   <sub>lexicographic</sub>
 
-**II-6)** **1.** *chid*¦ II. 6. Auch lösen, entscheiden (einen Zweifel) [MBH. 1,71,17]. — Mit *vipra* 4.
+**II-6)** **1.** *chid*¦ II. 6. Auch lösen, entscheiden (einen Zweifel) [MBH. 1,71,17](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?1,71,17). — Mit *vipra* 4.
 
-- **RU:** **1.** *chid*¦ II. 6. Также — «разрешать, решать» (сомнение) [MBH. 1,71,17]. — С *vipra* 4.
-- **EN:** **1.** *chid*¦ II. 6. Also to resolve, to decide (a doubt) [MBH. 1,71,17]. — With *vipra* 4.
+- **RU:** **1.** *chid*¦ II. 6. Также — «разрешать, решать» (сомнение) [MBH. 1,71,17](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?1,71,17). — С *vipra* 4.
+- **EN:** **1.** *chid*¦ II. 6. Also to resolve, to decide (a doubt) [MBH. 1,71,17](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?1,71,17). — With *vipra* 4.
   <sub>attested</sub>
 
 ## chid

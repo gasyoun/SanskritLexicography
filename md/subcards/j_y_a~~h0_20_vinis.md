@@ -4,10 +4,10 @@
 
 
 **1)** — *vinis* dass.: *api yatra svaḥ pāṇirna vinirjñāyate*
-[ŚAT. BR. 14,7,1,5.]
+[ŚAT. BR. 14,7,1,5.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,7,1,5)
 
 - **RU:** — *vinis* dass.: *api yatra svaḥ pāṇirna vinirjñāyate*
-[ŚAT. BR. 14,7,1,5.]
+[ŚAT. BR. 14,7,1,5.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,7,1,5)
 - **EN:** — *vinis* dass.: *api yatra svaḥ pāṇirna vinirjñāyate*
-[ŚAT. BR. 14,7,1,5.]
+[ŚAT. BR. 14,7,1,5.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,7,1,5)
   <sub>DCS 0 · attested</sub>

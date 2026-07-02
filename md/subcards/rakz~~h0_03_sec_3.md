@@ -4,13 +4,13 @@
 
 
 **intens)** — intens.: *rakṣā ṇo agne tava rakṣaṇebhī rārakṣāṇaḥ sumakha prīṇānaḥ* der fleissig gehütet —, beobachtet wird
-[ṚV. 4,3,14.] fleissig hütend
+[ṚV. 4,3,14.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.003.html#rv04.003.14) fleissig hütend
 [SĀY.]
 
 - **RU:** — intens.: *rakṣā ṇo agne tava rakṣaṇebhī rārakṣāṇaḥ sumakha prīṇānaḥ* тщательно охраняемый —, неустанно блюдомый
-[ṚV. 4,3,14.] неустанно охраняющий
+[ṚV. 4,3,14.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.003.html#rv04.003.14) неустанно охраняющий
 [SĀY.]
 - **EN:** — intens.: *rakṣā ṇo agne tava rakṣaṇebhī rārakṣāṇaḥ sumakha prīṇānaḥ* that is diligently tended —, watched
-[ṚV. 4,3,14.] diligently tending
+[ṚV. 4,3,14.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.003.html#rv04.003.14) diligently tending
 [SĀY.]
   <sub>attested</sub>

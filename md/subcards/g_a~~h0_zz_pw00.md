@@ -3,11 +3,11 @@
 `g_a~~h0_zz_pw00`
 
 
-**1)** **1.** √*gā*¦, *jigāti*, **jagāti* (**jagāyāt*), **gāti* ([NAIGH. 2,14]) und **gāte*
+**1)** **1.** √*gā*¦, *jigāti*, **jagāti* (**jagāyāt*), **gāti* ([NAIGH. 2,14](https://sanskrit-lexicon-scans.github.io/nirukta/app2?2,14)) und **gāte*
 — 1〉 kommen.
 
-- **RU:** **1.** √*gā*¦, *jigāti*, **jagāti* (**jagāyāt*), **gāti* ([NAIGH. 2,14]) und **gāte* — 1〉 приходить.
-- **EN:** 1. √*gā*, *jigāti*, **jagāti* (**jagāyāt*), **gāti* ([NAIGH. 2,14]) and **gāte* — 1〉 to come.
+- **RU:** **1.** √*gā*¦, *jigāti*, **jagāti* (**jagāyāt*), **gāti* ([NAIGH. 2,14](https://sanskrit-lexicon-scans.github.io/nirukta/app2?2,14)) und **gāte* — 1〉 приходить.
+- **EN:** 1. √*gā*, *jigāti*, **jagāti* (**jagāyāt*), **gāti* ([NAIGH. 2,14](https://sanskrit-lexicon-scans.github.io/nirukta/app2?2,14)) and **gāte* — 1〉 to come.
   <sub>attested</sub>
 
 **2)** — 2〉 kommen —, hingehen zu oder nach, zugehen auf, sich hinwenden zu; mit Acc. oder Loc.
@@ -16,16 +16,16 @@
 - **EN:** — 2〉 to come to, go towards or to, advance upon, turn oneself towards; with Acc. or Loc.
   <sub>attested</sub>
 
-**3)** — 3〉 nachgehen, verfolgen [ṚV. 4,3,13. 10,18,4].
+**3)** — 3〉 nachgehen, verfolgen [ṚV. 4,3,13. 10,18,4](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.003.html#rv04.003.13).
 
-- **RU:** — 3〉 преследовать, следовать за [ṚV. 4,3,13. 10,18,4].
-- **EN:** — 3〉 to go after, pursue [ṚV. 4,3,13. 10,18,4].
+- **RU:** — 3〉 преследовать, следовать за [ṚV. 4,3,13. 10,18,4](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.003.html#rv04.003.13).
+- **EN:** — 3〉 to go after, pursue [ṚV. 4,3,13. 10,18,4](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.003.html#rv04.003.13).
   <sub>attested</sub>
 
-**4)** — 4〉 zu Jmd (Dat.) kommen, so v. a. sich einstellen bei [ṚV. 8,45,32]. Jmd (Acc.) zukommen (von einem Namen).
+**4)** — 4〉 zu Jmd (Dat.) kommen, so v. a. sich einstellen bei [ṚV. 8,45,32](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.045.html#rv08.045.32). Jmd (Acc.) zukommen (von einem Namen).
 
-- **RU:** — 4〉 приходить к кому-л. (Dat.), так v. a. — появляться при [ṚV. 8,45,32]. доставаться кому-л. (Acc.) (об имени).
-- **EN:** — 4〉 to come to someone (Dat.), hence v. a. to present oneself with [ṚV. 8,45,32]. To fall to someone's share (Acc.) (of a name).
+- **RU:** — 4〉 приходить к кому-л. (Dat.), так v. a. — появляться при [ṚV. 8,45,32](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.045.html#rv08.045.32). доставаться кому-л. (Acc.) (об имени).
+- **EN:** — 4〉 to come to someone (Dat.), hence v. a. to present oneself with [ṚV. 8,45,32](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.045.html#rv08.045.32). To fall to someone's share (Acc.) (of a name).
   <sub>attested</sub>
 
 **5)** — 5〉 in einen Zustand, eine Lage, ein Verhältniss (Acc.) kommen, theilhaftig werden.
@@ -34,10 +34,10 @@
 - **EN:** — 5〉 to come into a state, condition, or relation (Acc.), to partake of.
   <sub>attested</sub>
 
-**6)** — 6〉 aufbrechen, davon —, fortgehen [ṚV. 10,108,9]. mit Abl. woher und Loc. wohin.
+**6)** — 6〉 aufbrechen, davon —, fortgehen [ṚV. 10,108,9](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.108.html#rv10.108.09). mit Abl. woher und Loc. wohin.
 
-- **RU:** — 6〉 отправляться, уходить, удаляться [ṚV. 10,108,9]. с Abl. — откуда и Loc. — куда.
-- **EN:** — 6〉 to set out, go away, depart [ṚV. 10,108,9]. with Abl. whence and Loc. whither.
+- **RU:** — 6〉 отправляться, уходить, удаляться [ṚV. 10,108,9](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.108.html#rv10.108.09). с Abl. — откуда и Loc. — куда.
+- **EN:** — 6〉 to set out, go away, depart [ṚV. 10,108,9](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.108.html#rv10.108.09). with Abl. whence and Loc. whither.
   <sub>attested</sub>
 
 **7)** — 7〉 zu Ende gehen [NAIṢ. 8,109].
@@ -46,10 +46,10 @@
 - **EN:** — 7〉 to come to an end [NAIṢ. 8,109].
   <sub>attested</sub>
 
-**8)** — 8〉 gehen, wandeln [ṚV. 8,2,39]. mit Acc. oder Instr. ([ṚV. 8,5,39]) des Weges.
+**8)** — 8〉 gehen, wandeln [ṚV. 8,2,39](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.002.html#rv08.002.39). mit Acc. oder Instr. ([ṚV. 8,5,39](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.005.html#rv08.005.39)) des Weges.
 
-- **RU:** — 8〉 идти, странствовать [ṚV. 8,2,39]. с Acc. или Instr. ([ṚV. 8,5,39]) пути.
-- **EN:** — 8〉 to go, walk [ṚV. 8,2,39]. with Acc. or Instr. ([ṚV. 8,5,39]) of the way.
+- **RU:** — 8〉 идти, странствовать [ṚV. 8,2,39](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.002.html#rv08.002.39). с Acc. или Instr. ([ṚV. 8,5,39](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.005.html#rv08.005.39)) пути.
+- **EN:** — 8〉 to go, walk [ṚV. 8,2,39](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.002.html#rv08.002.39). with Acc. or Instr. ([ṚV. 8,5,39](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.005.html#rv08.005.39)) of the way.
   <sub>attested</sub>
 
 **desid)** — Desid. *jigīṣati* zu gehen verlangen.
@@ -191,8 +191,8 @@
 — 1〉 einen Umlauf vollbringen.
 - **EN:** — With *paryā* — 1〉 to complete a circuit.
 
-**pari_2)** — 2〉 einer Sache (Acc.) nachgehen sich beschäftigen mit [ṚV. 1,88,4].
-- **EN:** — 2〉 to pursue a matter (Acc.), to occupy oneself with [ṚV. 1,88,4].
+**pari_2)** — 2〉 einer Sache (Acc.) nachgehen sich beschäftigen mit [ṚV. 1,88,4](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.088.html#rv01.088.04).
+- **EN:** — 2〉 to pursue a matter (Acc.), to occupy oneself with [ṚV. 1,88,4](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.088.html#rv01.088.04).
 
 **pary-ā)** — Mit *anuparyā* wieder zurückkommen zu (Acc.).
 - **EN:** — With *anuparyā* to come back again to (Acc.).
@@ -235,11 +235,11 @@
 - **EN:** — With *parā* to step aside, depart, flee; with the Acc. whither.
 
 **sam_1)** — Mit *pari*
-— 1〉 umhergehen [ṚV. 5,15,4]. umgehen, umwandeln, umkreisen; durchfliegen.
-- **EN:** — With *pari* — 1〉 to go about [ṚV. 5,15,4]. to go around, circumambulate, circle; to fly through.
+— 1〉 umhergehen [ṚV. 5,15,4](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.015.html#rv05.015.04). umgehen, umwandeln, umkreisen; durchfliegen.
+- **EN:** — With *pari* — 1〉 to go about [ṚV. 5,15,4](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.015.html#rv05.015.04). to go around, circumambulate, circle; to fly through.
 
-**sam_2)** — 2〉 eingehen in (Acc.) [VS. 40,8] = [ĪŚOP. 8].
-- **EN:** — 2〉 to enter into (Acc.) [VS. 40,8] = [ĪŚOP. 8].
+**sam_2)** — 2〉 eingehen in (Acc.) [VS. 40,8](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?40,8) = [ĪŚOP. 8].
+- **EN:** — 2〉 to enter into (Acc.) [VS. 40,8](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?40,8) = [ĪŚOP. 8].
 
 **sam_3)** — 3〉 über Jmd (Acc.) kommen, heimsuchen.
 - **EN:** — 3〉 to come upon someone (Acc.), to befall.
@@ -250,8 +250,8 @@
 **sam_5)** — 5〉 nicht beachten, überhören.
 - **EN:** — 5〉 to disregard, pass over in silence.
 
-**sam_6)** — 6〉 nicht dahinterkommen, — erkennen [BHĀG. P. 2,6,35].
-- **EN:** — 6〉 to fail to grasp, fail to recognise [BHĀG. P. 2,6,35].
+**sam_6)** — 6〉 nicht dahinterkommen, — erkennen [BHĀG. P. 2,6,35](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,6,35).
+- **EN:** — 6〉 to fail to grasp, fail to recognise [BHĀG. P. 2,6,35](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,6,35).
 
 **sam-pari)** — Mit *anupari* durchgehen, durchwandern.
 - **EN:** — With *anupari* to go through, traverse.
@@ -266,11 +266,11 @@
 **pra-pra_2)** — 2〉 fortgehen, sich auf und davon machen von (Abl.) [17,10. fgg.] (Conj.).
 - **EN:** — 2〉 to depart, make off from (Abl.) [17,10. fgg.] (Conj.).
 
-**pra-pra_3)** — 3〉 mit *antar* ein-, hinein gehen [ṚV. 8,48,2].
-- **EN:** — 3〉 with *antar* to enter, go in [ṚV. 8,48,2].
+**pra-pra_3)** — 3〉 mit *antar* ein-, hinein gehen [ṚV. 8,48,2](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.048.html#rv08.048.02).
+- **EN:** — 3〉 with *antar* to enter, go in [ṚV. 8,48,2](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.048.html#rv08.048.02).
 
-**pra-apa)** — Mit *apapra* fortgehen, weichen [ṚV. 1,113,16].
-- **EN:** — With *apapra* to depart, retreat [ṚV. 1,113,16].
+**pra-apa)** — Mit *apapra* fortgehen, weichen [ṚV. 1,113,16](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.113.html#rv01.113.16).
+- **EN:** — With *apapra* to depart, retreat [ṚV. 1,113,16](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.113.html#rv01.113.16).
 
 **abhi-sam)** — Mit *upapra* herbeikommen, hintreten zu (Acc.).
 - **EN:** — With *upapra* to come near, step up to (Acc.).
@@ -509,9 +509,9 @@
 - **RU:** — С *paryā* — 1〉 совершать оборот (круговращение).
   <sub>attested</sub>
 
-**Mit T102-2)** — 2〉 einer Sache (Acc.) nachgehen sich beschäftigen mit [ṚV. 1,88,4].
+**Mit T102-2)** — 2〉 einer Sache (Acc.) nachgehen sich beschäftigen mit [ṚV. 1,88,4](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.088.html#rv01.088.04).
 
-- **RU:** — 2〉 заниматься чем-л. (Acc.), посвящать себя [ṚV. 1,88,4].
+- **RU:** — 2〉 заниматься чем-л. (Acc.), посвящать себя [ṚV. 1,88,4](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.088.html#rv01.088.04).
   <sub>attested</sub>
 
 **Mit T105)** — Mit *anuparyā* wieder zurückkommen zu (Acc.).
@@ -574,14 +574,14 @@
 - **RU:** — С *parā*: уходить в сторону, удаляться, бежать; с Acc. — куда.
   <sub>attested</sub>
 
-**Mit T125-1)** — Mit *pari* — 1〉 umhergehen [ṚV. 5,15,4]. umgehen, umwandeln, umkreisen; durchfliegen.
+**Mit T125-1)** — Mit *pari* — 1〉 umhergehen [ṚV. 5,15,4](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.015.html#rv05.015.04). umgehen, umwandeln, umkreisen; durchfliegen.
 
-- **RU:** — С *pari* — 1〉 обходить вокруг [ṚV. 5,15,4]. обходить, окружать, облетать; пролетать насквозь.
+- **RU:** — С *pari* — 1〉 обходить вокруг [ṚV. 5,15,4](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.015.html#rv05.015.04). обходить, окружать, облетать; пролетать насквозь.
   <sub>attested</sub>
 
-**Mit T125-2)** — 2〉 eingehen in (Acc.) [VS. 40,8] = [ĪŚOP. 8].
+**Mit T125-2)** — 2〉 eingehen in (Acc.) [VS. 40,8](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?40,8) = [ĪŚOP. 8].
 
-- **RU:** — 2〉 входить в (Acc.) [VS. 40,8] = [ĪŚOP. 8].
+- **RU:** — 2〉 входить в (Acc.) [VS. 40,8](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?40,8) = [ĪŚOP. 8].
   <sub>attested</sub>
 
 **Mit T125-3)** — 3〉 über Jmd (Acc.) kommen, heimsuchen.
@@ -599,9 +599,9 @@
 - **RU:** — 5〉 не замечать, пропускать мимо ушей.
   <sub>attested</sub>
 
-**Mit T125-6)** — 6〉 nicht dahinterkommen, — erkennen [BHĀG. P. 2,6,35].
+**Mit T125-6)** — 6〉 nicht dahinterkommen, — erkennen [BHĀG. P. 2,6,35](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,6,35).
 
-- **RU:** — 6〉 не понимать, не распознавать [BHĀG. P. 2,6,35].
+- **RU:** — 6〉 не понимать, не распознавать [BHĀG. P. 2,6,35](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,6,35).
   <sub>attested</sub>
 
 **Mit T133)** — Mit *anupari* durchgehen, durchwandern.
@@ -624,14 +624,14 @@
 - **RU:** — 2〉 уходить, убираться от (Abl.) [17,10. fgg.] (Conj.).
   <sub>attested</sub>
 
-**Mit T135-3)** — 3〉 mit *antar* ein-, hinein gehen [ṚV. 8,48,2].
+**Mit T135-3)** — 3〉 mit *antar* ein-, hinein gehen [ṚV. 8,48,2](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.048.html#rv08.048.02).
 
-- **RU:** — 3〉 с *antar*: входить, вступать [ṚV. 8,48,2].
+- **RU:** — 3〉 с *antar*: входить, вступать [ṚV. 8,48,2](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.048.html#rv08.048.02).
   <sub>attested</sub>
 
-**Mit T142)** — Mit *apapra* fortgehen, weichen [ṚV. 1,113,16].
+**Mit T142)** — Mit *apapra* fortgehen, weichen [ṚV. 1,113,16](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.113.html#rv01.113.16).
 
-- **RU:** — С *apapra*: уходить, отступать [ṚV. 1,113,16].
+- **RU:** — С *apapra*: уходить, отступать [ṚV. 1,113,16](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.113.html#rv01.113.16).
   <sub>attested</sub>
 
 **Mit T144)** — Mit *upapra* herbeikommen, hintreten zu (Acc.).

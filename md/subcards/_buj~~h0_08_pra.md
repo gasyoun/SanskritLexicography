@@ -5,15 +5,15 @@
 
 **pra-1)** — *pra* beugen: *dakṣiṇaṃ jānu prabhujya juhoti*
 [KAUŚ. 1.]
-[KĀṬH.] beim Schol. zu [KĀTY. ŚR. 10,7,4.] [PAÑCAV. BR. 20,2,4.] *prabhugna*
-[P. 8,4,29], Sch.
+[KĀṬH.] beim Schol. zu [KĀTY. ŚR. 10,7,4.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?10,7,4) [PAÑCAV. BR. 20,2,4.] *prabhugna*
+[P. 8,4,29](https://ashtadhyayi.com/sutraani/8/4/29), Sch.
 
 - **RU:** — *pra* «сгибать, нагибать»: *dakṣiṇaṃ jānu prabhujya juhoti*
 [KAUŚ. 1.]
-[KĀṬH.] «подогнув ноги при Schol., к [KĀTY. ŚR. 10,7,4.]» [PAÑCAV. BR. 20,2,4.] *prabhugna*
-[P. 8,4,29], Sch.
+[KĀṬH.] «подогнув ноги при Schol., к [KĀTY. ŚR. 10,7,4.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?10,7,4)» [PAÑCAV. BR. 20,2,4.] *prabhugna*
+[P. 8,4,29](https://ashtadhyayi.com/sutraani/8/4/29), Sch.
 - **EN:** — *pra* to bend, bow: *dakṣiṇaṃ jānu prabhujya juhoti*
 [KAUŚ. 1.]
-[KĀṬH.] at Schol. to [KĀTY. ŚR. 10,7,4.] [PAÑCAV. BR. 20,2,4.] *prabhugna*
-[P. 8,4,29], Sch.
+[KĀṬH.] at Schol. to [KĀTY. ŚR. 10,7,4.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?10,7,4) [PAÑCAV. BR. 20,2,4.] *prabhugna*
+[P. 8,4,29](https://ashtadhyayi.com/sutraani/8/4/29), Sch.
   <sub>attested</sub>

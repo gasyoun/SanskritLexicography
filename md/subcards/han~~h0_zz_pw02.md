@@ -117,10 +117,10 @@
 - **EN:** 12) to afflict, visit.
   <sub>attested</sub>
 
-**16.13)** — 13〉 zerstören, zu Grunde richten, inʼs Verderben bringen, vernichten ([TS. 3,1,1,3]), vertreiben.
+**16.13)** — 13〉 zerstören, zu Grunde richten, inʼs Verderben bringen, vernichten ([TS. 3,1,1,3](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?3,1,1,3)), vertreiben.
 
-- **RU:** — 13〉 разрушать, приводить к гибели, губить, уничтожать ([TS. 3,1,1,3]), изгонять.
-- **EN:** 13) to destroy, ruin, bring to perdition, annihilate ([TS. 3,1,1,3]), drive away.
+- **RU:** — 13〉 разрушать, приводить к гибели, губить, уничтожать ([TS. 3,1,1,3](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?3,1,1,3)), изгонять.
+- **EN:** 13) to destroy, ruin, bring to perdition, annihilate ([TS. 3,1,1,3](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?3,1,1,3)), drive away.
   <sub>attested</sub>
 
 **16.14)** — 14〉 heften an (Loc.).
@@ -177,10 +177,10 @@
 - **EN:** d) slain, cut down, slaughtered, killed.
   <sub>attested</sub>
 
-**16.18e)** — e〉 zerstört, zu Grunde gerichtet, vernichtet [Spr. 7767].
+**16.18e)** — e〉 zerstört, zu Grunde gerichtet, vernichtet [Spr. 7767](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7767).
 
-- **RU:** — e〉 разрушенный, погублённый, уничтоженный [Spr. 7767].
-- **EN:** e) destroyed, ruined, annihilated [Spr. 7767].
+- **RU:** — e〉 разрушенный, погублённый, уничтоженный [Spr. 7767](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7767).
+- **EN:** e) destroyed, ruined, annihilated [Spr. 7767](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7767).
   <sub>attested</sub>
 
 **16.18f)** — f〉 niedergeschmettert, verloren (von Personen) [94,10]. [22].
@@ -225,10 +225,10 @@
 **17.1)** — 1〉 anstecken, anspiessen.
 - **EN:** 1) to skewer, pierce, impale.
 
-**17.2)** — 2〉 schlagen —, einhauen auf (Acc.) *abhinighnant* Partic. mit passiver Bed. [MBH. 4,45,30], v. l. Vgl. u. *ava* 3〉.
+**17.2)** — 2〉 schlagen —, einhauen auf (Acc.) *abhinighnant* Partic. mit passiver Bed. [MBH. 4,45,30](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?4,45,30), v. l. Vgl. u. *ava* 3〉.
 
-- **RU:** — 2〉 бить —, рубить по (Acc.) *abhinighnant* Partic. с пассивным Bed. [MBH. 4,45,30], v. l. Vgl. u. *ava* 3〉.
-- **EN:** 2) to strike, hew at (Acc.) *abhinighnant* Partic. with passive Bed. [MBH. 4,45,30], v. l. Vgl. u. *ava* 3).
+- **RU:** — 2〉 бить —, рубить по (Acc.) *abhinighnant* Partic. с пассивным Bed. [MBH. 4,45,30](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?4,45,30), v. l. Vgl. u. *ava* 3〉.
+- **EN:** 2) to strike, hew at (Acc.) *abhinighnant* Partic. with passive Bed. [MBH. 4,45,30](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?4,45,30), v. l. Vgl. u. *ava* 3).
   <sub>attested</sub>
 
 **17.3)** — 3〉 die Trommel schlagen.
@@ -249,10 +249,10 @@
 - **EN:** 5) *abhinihata* Bez. of a Svarita, otherwise called *abhinihita*,
   <sub>lexicographic</sub>
 
-**17-misc1)** — Mit *upani* anstecken, bestecken [KĀTY. ŚR. 8,4,10].
+**17-misc1)** — Mit *upani* anstecken, bestecken [KĀTY. ŚR. 8,4,10](https://sanskrit-lexicon-scans.github.io/katyasr/app1?8,4,10).
 
-- **RU:** — Mit *upani* насаживать, утыкать [KĀTY. ŚR. 8,4,10].
-- **EN:** With *upani* to pierce, stick into [KĀTY. ŚR. 8,4,10].
+- **RU:** — Mit *upani* насаживать, утыкать [KĀTY. ŚR. 8,4,10](https://sanskrit-lexicon-scans.github.io/katyasr/app1?8,4,10).
+- **EN:** With *upani* to pierce, stick into [KĀTY. ŚR. 8,4,10](https://sanskrit-lexicon-scans.github.io/katyasr/app1?8,4,10).
   <sub>attested</sub>
 
 **18-intro)** — Mit *pariṇi* (auch *parini*)
@@ -369,10 +369,10 @@
 - **EN:** 2) to slay.
   <sub>attested</sub>
 
-**22.3)** — 3〉 *sāṃnihata* [MBH. 1,830] fehlerhaft für *saṃnihita*.
+**22.3)** — 3〉 *sāṃnihata* [MBH. 1,830](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.830) fehlerhaft für *saṃnihita*.
 
-- **RU:** — 3〉 *sāṃnihata* [MBH. 1,830] ошибочно вместо *saṃnihita*.
-- **EN:** 3) *sāṃnihata* [MBH. 1,830] erroneous for *saṃnihita*.
+- **RU:** — 3〉 *sāṃnihata* [MBH. 1,830](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.830) ошибочно вместо *saṃnihita*.
+- **EN:** 3) *sāṃnihata* [MBH. 1,830](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.830) erroneous for *saṃnihita*.
   <sub>attested</sub>
 
 **23-intro)** — Mit *nis*
@@ -387,10 +387,10 @@
 - **EN:** 2) to drive away, remove, bring to naught [ĀPAST. 1,24,25. 28,18. 29,1].
   <sub>attested</sub>
 
-**23.3)** — 3〉 erschlagen. [MBH. 8,849]. [BHĀG. P. 4,14,34.] [6,9,18] hat die v. l. besser *ni* statt *nis*
+**23.3)** — 3〉 erschlagen. [MBH. 8,849](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.849). [BHĀG. P. 4,14,34.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,14,34) [6,9,18](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,9,18) hat die v. l. besser *ni* statt *nis*
 
-- **RU:** — 3〉 убивать. [MBH. 8,849]. [BHĀG. P. 4,14,34.] [6,9,18] в v. l. лучше *ni* вместо *nis*
-- **EN:** 3) to slay. [MBH. 8,849]. [BHĀG. P. 4,14,34.] [6,9,18] has the v. l. better *ni* instead of *nis*
+- **RU:** — 3〉 убивать. [MBH. 8,849](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.849). [BHĀG. P. 4,14,34.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,14,34) [6,9,18](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,9,18) в v. l. лучше *ni* вместо *nis*
+- **EN:** 3) to slay. [MBH. 8,849](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.849). [BHĀG. P. 4,14,34.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,14,34) [6,9,18](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,9,18) has the v. l. better *ni* instead of *nis*
   <sub>attested</sub>
 
 **23.4)** — 4〉 loswerfen auf (Gen.).
@@ -405,10 +405,10 @@
 - **EN:** 5) to annihilate.
   <sub>attested</sub>
 
-**23.6)** — 6〉 *nirhatya* [RĀJAT. 5,432] wohl fehlerhaft für *nirhṛtya*.
+**23.6)** — 6〉 *nirhatya* [RĀJAT. 5,432](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,432) wohl fehlerhaft für *nirhṛtya*.
 
-- **RU:** — 6〉 *nirhatya* [RĀJAT. 5,432] вероятно ошибочно вместо *nirhṛtya*.
-- **EN:** 6) *nirhatya* [RĀJAT. 5,432] probably erroneous for *nirhṛtya*.
+- **RU:** — 6〉 *nirhatya* [RĀJAT. 5,432](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,432) вероятно ошибочно вместо *nirhṛtya*.
+- **EN:** 6) *nirhatya* [RĀJAT. 5,432](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,432) probably erroneous for *nirhṛtya*.
   <sub>attested</sub>
 
 **23-misc1)** — Caus. s. u. *ghātay*.
@@ -513,10 +513,10 @@
 - **EN:** b) to subside, pass away.
   <sub>attested</sub>
 
-**25.4)** — 4〉 statt *pari* *bādho* *jahī* *mṛdhaḥ* [ṚV. 8,45,10] ist *paribādho* zu vermuthen.
+**25.4)** — 4〉 statt *pari* *bādho* *jahī* *mṛdhaḥ* [ṚV. 8,45,10](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.045.html#rv08.045.10) ist *paribādho* zu vermuthen.
 
-- **RU:** — 4〉 вместо *pari* *bādho* *jahī* *mṛdhaḥ* [ṚV. 8,45,10] следует предположить *paribādho*.
-- **EN:** 4) instead of *pari* *bādho* *jahī* *mṛdhaḥ* [ṚV. 8,45,10], *paribādho* is to be conjectured.
+- **RU:** — 4〉 вместо *pari* *bādho* *jahī* *mṛdhaḥ* [ṚV. 8,45,10](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.045.html#rv08.045.10) следует предположить *paribādho*.
+- **EN:** 4) instead of *pari* *bādho* *jahī* *mṛdhaḥ* [ṚV. 8,45,10](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.045.html#rv08.045.10), *paribādho* is to be conjectured.
   <sub>attested</sub>
 
 **25.5)** — 5〉 *parihata* fehlerhaft für *parihṛta*.

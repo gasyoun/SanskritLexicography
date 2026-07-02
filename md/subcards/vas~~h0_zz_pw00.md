@@ -3,8 +3,8 @@
 `vas~~h0_zz_pw00`
 
 
-**1)** **1.** √*vas*¦ enklitischer Acc., Dat., Gen. und Instr. Pl. ([HARIV. 2233]. [BHĀG. P. 6,4,13]) des Pronomens der 2ten Person.
-- **EN:** **1.** √*vas*¦ enclitic Acc., Dat., Gen. and Instr. Pl. ([HARIV. 2233]. [BHĀG. P. 6,4,13]) of the pronoun of the 2nd person.
+**1)** **1.** √*vas*¦ enklitischer Acc., Dat., Gen. und Instr. Pl. ([HARIV. 2233](https://sanskrit-lexicon-scans.github.io/hariv?2233). [BHĀG. P. 6,4,13](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,4,13)) des Pronomens der 2ten Person.
+- **EN:** **1.** √*vas*¦ enclitic Acc., Dat., Gen. and Instr. Pl. ([HARIV. 2233](https://sanskrit-lexicon-scans.github.io/hariv?2233). [BHĀG. P. 6,4,13](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,4,13)) of the pronoun of the 2nd person.
 
 **2.intro)** **2.** √*vas*¦ *ucchati*
 - **EN:** **2.** √*vas*¦ *ucchati*
@@ -12,14 +12,14 @@
 **2.1)** — 1〉 illucescere, hell werden, — sein, leuchten (vom Lichte des anbrechenden Morgens, vom Hellwerden der Nacht u. s. w.).
 - **EN:** — 1〉 illucescere, to grow bright, — to be bright, to shine (of the light of breaking morning, of the night growing bright u. s. w.).
 
-**2.2)** — 2〉 durch Leuchten Etwas bringen [ṚV. 1,113,17].
-- **EN:** — 2〉 to bring something by shining [ṚV. 1,113,17].
+**2.2)** — 2〉 durch Leuchten Etwas bringen [ṚV. 1,113,17](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.113.html#rv01.113.17).
+- **EN:** — 2〉 to bring something by shining [ṚV. 1,113,17](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.113.html#rv01.113.17).
 
 **2.3)** — 3〉 mit *dūre* wegleuchten.
 - **EN:** — 3〉 with *dūre* to shine away, drive away by shining.
 
-**2.4)** — 4〉 *ucchantu* [AV. 3,12,4] vielleicht fehlerhaft für *ukṣantu*.
-- **EN:** — 4〉 *ucchantu* [AV. 3,12,4], perhaps erroneous for *ukṣantu*.
+**2.4)** — 4〉 *ucchantu* [AV. 3,12,4](https://sanskrit-lexicon.github.io/avlinks/avhymns/av03.012.html#av03.012.04) vielleicht fehlerhaft für *ukṣantu*.
+- **EN:** — 4〉 *ucchantu* [AV. 3,12,4](https://sanskrit-lexicon.github.io/avlinks/avhymns/av03.012.html#av03.012.04), perhaps erroneous for *ukṣantu*.
 
 **2.5)** — 5〉 **uṣita* hell geworden.
 - **EN:** — 5〉 **uṣita* grown bright.

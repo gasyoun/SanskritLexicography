@@ -9,10 +9,10 @@
 - **EN:** 1. *yā* — Caus. to maintain, to rear, raise [DIVYĀVAD. 499,1]; to be well, fare well [93,6. 150,16. 196,18. 471,4].
   <sub>attested</sub>
 
-**vyati)** — Mit *vyatī* V. *˚yāta = vyatikramya gataḥ* [R. ed. Bomb. 3,69,4].
+**vyati)** — Mit *vyatī* V. *˚yāta = vyatikramya gataḥ* [R. ed. Bomb. 3,69,4](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,69,4).
 
-- **RU:** — С *vyatī* V. *˚yāta = vyatikramya gataḥ* [R. ed. Bomb. 3,69,4].
-- **EN:** — With *vyatī* V. *˚yāta = vyatikramya gataḥ* [R. ed. Bomb. 3,69,4].
+- **RU:** — С *vyatī* V. *˚yāta = vyatikramya gataḥ* [R. ed. Bomb. 3,69,4](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,69,4).
+- **EN:** — With *vyatī* V. *˚yāta = vyatikramya gataḥ* [R. ed. Bomb. 3,69,4](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,69,4).
   <sub>attested</sub>
 
 **abhi)** — Mit *abhi* V. fahren über (Acc.) [ĀPAST. GṚHY. 5,24].

@@ -3,10 +3,10 @@
 `vi_s~~h0_zz_pw03`
 
 
-**ni-intro)** — Caus. eintreten lassen, hineinbringen (an seinen Platz [CARAKA. 6,30]), hineinführen in (Acc. oder Loc.) [HARIV. 2,47,45]. *vyasane* inʼs Unglück bringen [Spr. 6320] (Conj.). *saṃpraveśita* so v. a. inʼs Land wieder eingelassen (Gegensatz *nirvāsita* ve bannt). *saṃpraveśya* [RĀJAT. 4,32] fehlerhaft für *˚viśya*.
+**ni-intro)** — Caus. eintreten lassen, hineinbringen (an seinen Platz [CARAKA. 6,30]), hineinführen in (Acc. oder Loc.) [HARIV. 2,47,45](https://sanskrit-lexicon-scans.github.io/hariv?2). *vyasane* inʼs Unglück bringen [Spr. 6320](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?6320) (Conj.). *saṃpraveśita* so v. a. inʼs Land wieder eingelassen (Gegensatz *nirvāsita* ve bannt). *saṃpraveśya* [RĀJAT. 4,32](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,32) fehlerhaft für *˚viśya*.
 
-- **RU:** — Caus. побуждать вступить, вводить внутрь (на его место [CARAKA. 6,30]), вводить, вести внутрь (Acc. или Loc.) [HARIV. 2,47,45]. *vyasane* вводить, ввергать в несчастье [Spr. 6320] (Conj.). *saṃpraveśita* так v. a. вновь впущенный в страну (в противоположность *nirvāsita* изгнанному). *saṃpraveśya* [RĀJAT. 4,32] ошибочно вместо *˚viśya*.
-- **EN:** — Caus. to let enter, bring in (to its place [CARAKA. 6,30]), to lead into (Acc. or Loc.) [HARIV. 2,47,45]. *vyasane* to bring into misfortune [Spr. 6320] (Conj.). *saṃpraveśita* thus v. a. readmitted into the land (opposite *nirvāsita* banished). *saṃpraveśya* [RĀJAT. 4,32] erroneous for *˚viśya*.
+- **RU:** — Caus. побуждать вступить, вводить внутрь (на его место [CARAKA. 6,30]), вводить, вести внутрь (Acc. или Loc.) [HARIV. 2,47,45](https://sanskrit-lexicon-scans.github.io/hariv?2). *vyasane* вводить, ввергать в несчастье [Spr. 6320](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?6320) (Conj.). *saṃpraveśita* так v. a. вновь впущенный в страну (в противоположность *nirvāsita* изгнанному). *saṃpraveśya* [RĀJAT. 4,32](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,32) ошибочно вместо *˚viśya*.
+- **EN:** — Caus. to let enter, bring in (to its place [CARAKA. 6,30]), to lead into (Acc. or Loc.) [HARIV. 2,47,45](https://sanskrit-lexicon-scans.github.io/hariv?2). *vyasane* to bring into misfortune [Spr. 6320](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?6320) (Conj.). *saṃpraveśita* thus v. a. readmitted into the land (opposite *nirvāsita* banished). *saṃpraveśya* [RĀJAT. 4,32](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,32) erroneous for *˚viśya*.
   <sub>attested</sub>
 
 **ni-anu)** — Mit *vi* eingehen in (Acc.).
@@ -15,10 +15,10 @@
 - **EN:** — With *vi* to enter into (Acc.).
   <sub>attested</sub>
 
-**ni-note)** — Caus. [HARIV. 5910]. wo aber mit der anderen Ausg. [2,49,9] *viveśatuḥ* (metrisch für *viviśatuḥ*) st. *viveśitau* zu lesen ist.
+**ni-note)** — Caus. [HARIV. 5910](https://sanskrit-lexicon-scans.github.io/hariv?5910). wo aber mit der anderen Ausg. [2,49,9](https://sanskrit-lexicon-scans.github.io/hariv?2) *viveśatuḥ* (metrisch für *viviśatuḥ*) st. *viveśitau* zu lesen ist.
 
-- **RU:** — Caus. [HARIV. 5910], где, однако, при другом Ausg. [2,49,9] *viveśatuḥ* (метрически вместо *viviśatuḥ*) следует читать st. *viveśitau*.
-- **EN:** — Caus. [HARIV. 5910]. where however with the other Ausg. [2,49,9] *viveśatuḥ* (metrically for *viviśatuḥ*) st. *viveśitau* is to be read.
+- **RU:** — Caus. [HARIV. 5910](https://sanskrit-lexicon-scans.github.io/hariv?5910), где, однако, при другом Ausg. [2,49,9](https://sanskrit-lexicon-scans.github.io/hariv?2) *viveśatuḥ* (метрически вместо *viviśatuḥ*) следует читать st. *viveśitau*.
+- **EN:** — Caus. [HARIV. 5910](https://sanskrit-lexicon-scans.github.io/hariv?5910). where however with the other Ausg. [2,49,9](https://sanskrit-lexicon-scans.github.io/hariv?2) *viveśatuḥ* (metrically for *viviśatuḥ*) st. *viveśitau* is to be read.
   <sub>attested</sub>
 
 **ni-vi)** — Mit *anuvi* sich da und dort niederlassen, — einfinden; mit Acc. [MAITR. S. 2,4,7. 8].

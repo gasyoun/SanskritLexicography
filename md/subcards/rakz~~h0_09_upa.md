@@ -4,10 +4,10 @@
 
 
 **1)** — *upa* s. *uparakṣaṇa; prani, ˚rakṣati*
-[VOP. 8,73.]
+[VOP. 8,73.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,73)
 
 - **RU:** — *upa* s. *uparakṣaṇa; prani, ˚rakṣati*
-[VOP. 8,73.]
+[VOP. 8,73.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,73)
 - **EN:** — *upa* s. *uparakṣaṇa; prani, ˚rakṣati*
-[VOP. 8,73.]
+[VOP. 8,73.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,73)
   <sub>attested</sub>

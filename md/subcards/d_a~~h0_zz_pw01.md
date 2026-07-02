@@ -8,9 +8,9 @@
 - **RU:** — 1〉 давать, передавать. Только *prādāya* и *prādātum* (v. l. *pradātum*).
   <sub>DCS 12366 · attested</sub>
 
-**2)** — 2〉 Act. darbringen. *namaḥ* [ṚV. 5,49,5].
+**2)** — 2〉 Act. darbringen. *namaḥ* [ṚV. 5,49,5](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.049.html#rv05.049.05).
 
-- **RU:** — 2〉 Act. подносить, приносить в дар. *namaḥ* [ṚV. 5,49,5].
+- **RU:** — 2〉 Act. подносить, приносить в дар. *namaḥ* [ṚV. 5,49,5](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.049.html#rv05.049.05).
   <sub>DCS 12366 · attested</sub>
 
 **mit_T8)** — Mit *pratyā* Med.
@@ -33,9 +33,9 @@
 - **RU:** — 3〉 извлекать из (Abl.).
   <sub>DCS 12366 · attested</sub>
 
-**mit_T8_4)** — 4〉 wiederholen, erwiedern [AV. 10,1,27].
+**mit_T8_4)** — 4〉 wiederholen, erwiedern [AV. 10,1,27](https://sanskrit-lexicon.github.io/avlinks/avhymns/av10.001.html#av10.001.27).
 
-- **RU:** — 4〉 повторять, отвечать [AV. 10,1,27].
+- **RU:** — 4〉 повторять, отвечать [AV. 10,1,27](https://sanskrit-lexicon.github.io/avlinks/avhymns/av10.001.html#av10.001.27).
   <sub>DCS 12366 · attested</sub>
 
 **mit_T13)** — Mit *vyā* Act. Med. mit und ohne *mukham* den Mund auseinanderthun, aufsperren, öffnen. Act. auch *eine Oeffnung bewirken in, öffnen überh. Med. *den Mund eines Andern öffnen, bewirken, dass Jmd den Mund öffnet. *vyātta* und *vyāditā* geöffnet (Mund).
@@ -123,9 +123,9 @@
 - **RU:** — С *upa*
   <sub>DCS 12366 · attested</sub>
 
-**mit_T35_1)** — 1〉 neben Jmd aufstellen. *upadadyamāna* [ṚV. 6,49,13].
+**mit_T35_1)** — 1〉 neben Jmd aufstellen. *upadadyamāna* [ṚV. 6,49,13](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.049.html#rv06.049.13).
 
-- **RU:** — 1〉 ставить рядом с кем-либо. *upadadyamāna* [ṚV. 6,49,13].
+- **RU:** — 1〉 ставить рядом с кем-либо. *upadadyamāna* [ṚV. 6,49,13](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.049.html#rv06.049.13).
   <sub>DCS 12366 · attested</sub>
 
 **mit_T35_2)** — 2〉 auf sich nehmen (als Last). Nur *upadadya*.

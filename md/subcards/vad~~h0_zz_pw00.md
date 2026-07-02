@@ -53,9 +53,9 @@
 - **RU:** — h〉 издавать голос (также с добавлением *vācam*) (о птицах u. s. w.); звучать, греметь, звенеть.
   <sub>attested</sub>
 
-**1i)** — i〉 *a*.*v*.*ad*.*as* [ṚV. 3,30,5] vielleicht fehlerhaft für *ava* *das* (von *dar*).
+**1i)** — i〉 *a*.*v*.*ad*.*as* [ṚV. 3,30,5](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.030.html#rv03.030.05) vielleicht fehlerhaft für *ava* *das* (von *dar*).
 
-- **RU:** — i〉 *a*.*v*.*ad*.*as* [ṚV. 3,30,5] возможно, ошибочно вместо *ava* *das* (от *dar*).
+- **RU:** — i〉 *a*.*v*.*ad*.*as* [ṚV. 3,30,5](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.030.html#rv03.030.05) возможно, ошибочно вместо *ava* *das* (от *dar*).
   <sub>attested</sub>
 
 **2)** — 2〉 Med.
@@ -83,9 +83,9 @@
 - **RU:** — d〉 спорить о (Loc.).
   <sub>attested</sub>
 
-**2e)** — e〉 Ansprüche machen auf (Loc.) [AIT. BR. 2,25,6]. Diese Bed. ist wohl mit *yatna* [P. 1,3,47] gemeint.
+**2e)** — e〉 Ansprüche machen auf (Loc.) [AIT. BR. 2,25,6](https://sanskrit-lexicon-scans.github.io/aitbr_auf/app1?2,25,6). Diese Bed. ist wohl mit *yatna* [P. 1,3,47](https://ashtadhyayi.com/sutraani/1/3/47) gemeint.
 
-- **RU:** — e〉 претендовать на (Loc.) [AIT. BR. 2,25,6]. Эта Bed., по всей видимости, имеет в виду *yatna* [P. 1,3,47].
+- **RU:** — e〉 претендовать на (Loc.) [AIT. BR. 2,25,6](https://sanskrit-lexicon-scans.github.io/aitbr_auf/app1?2,25,6). Эта Bed., по всей видимости, имеет в виду *yatna* [P. 1,3,47](https://ashtadhyayi.com/sutraani/1/3/47).
   <sub>attested</sub>
 
 **2f)** — f〉 wohl *eine Autorität sein —, hervorstechen, sich auszeichnen in (Loc.).
@@ -492,7 +492,7 @@
 - **RU:** — c〉 просить.
   <sub>attested</sub>
 
-**abhi3-1d)** — d〉 in der dunkelen Stelle [ṚV. 4,5,8] zieht [SĀY.] *upa* zum Acc.
+**abhi3-1d)** — d〉 in der dunkelen Stelle [ṚV. 4,5,8](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.005.html#rv04.005.08) zieht [SĀY.] *upa* zum Acc.
 
-- **RU:** — d〉 в тёмном месте [ṚV. 4,5,8] [SĀY.] *upa* относит к Acc.
+- **RU:** — d〉 в тёмном месте [ṚV. 4,5,8](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.005.html#rv04.005.08) [SĀY.] *upa* относит к Acc.
   <sub>attested</sub>

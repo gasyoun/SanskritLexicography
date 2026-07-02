@@ -72,10 +72,10 @@
 
 **11-ppp)** — 11〉 *viṣṭa*
 — a〉 eingegangen —, enthalten in (Acc. oder Loc.).
-— b〉 erfüllt —, verbunden mit (Instr.) [TS. 4,4,5,1.] [2]. [NYĀYAS. 3,1,68]. — Statt des unverständlichen *te viśantaṃ mudā yuktāḥ* [MBH. 7,1551] ([ed. Vardh. 7,35,13]) liest [ed. Bomb. 7,36,13] *te viṃśatipade (!) yattāḥ*.
+— b〉 erfüllt —, verbunden mit (Instr.) [TS. 4,4,5,1.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?4,4,5,1) [2](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?4,4,5,2). [NYĀYAS. 3,1,68]. — Statt des unverständlichen *te viśantaṃ mudā yuktāḥ* [MBH. 7,1551](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.1551) ([ed. Vardh. 7,35,13]) liest [ed. Bomb. 7,36,13] *te viṃśatipade (!) yattāḥ*.
 - **EN:** — 11) *viṣṭa*
 — a) entered into —, contained in (Acc. or Loc.).
-— b) filled with —, joined with (Instr.) [TS. 4,4,5,1.] [2]. [NYĀYAS. 3,1,68]. — Instead of the unintelligible *te viśantaṃ mudā yuktāḥ* [MBH. 7,1551] ([ed. Vardh. 7,35,13]), [ed. Bomb. 7,36,13] reads *te viṃśatipade (!) yattāḥ*.
+— b) filled with —, joined with (Instr.) [TS. 4,4,5,1.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?4,4,5,1) [2](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?4,4,5,2). [NYĀYAS. 3,1,68]. — Instead of the unintelligible *te viśantaṃ mudā yuktāḥ* [MBH. 7,1551](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.1551) ([ed. Vardh. 7,35,13]), [ed. Bomb. 7,36,13] reads *te viṃśatipade (!) yattāḥ*.
 
 **caus)** — Caus. *veśayati*
 — 1〉 eingehen machen in (Acc.).
@@ -120,14 +120,14 @@
 — 1〉 eingehen, eintreten, sich niederlassen in oder unter, eindringen in (Acc., ausnahmsweise Loc.). *kham*, *gaganam* u. s. w. sich in die Luft erheben. *gṛheṣvāviśantaḥ pumāṃsaḥ* so v. a. Haushälter. Oefters ist *gṛham* oder dgl. zu ergänzen; auch heimkehren.
 — 2〉 geschlechtlichen Umgang haben mit einem Weibe (Acc.).
 — 3〉 sich nahe herbeimachen zu (Acc.), kommen.
-— 4〉 sich niederlassen —, sich setzen auf (Acc.) zu [Spr. 1478].
+— 4〉 sich niederlassen —, sich setzen auf (Acc.) zu [Spr. 1478](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1478).
 — 5〉 fahren in, Besitz nehmen von, sich Jmds bemächtigen (von bösen Geistern, Gemüthszuständen, Leiden u. s. w.); mit Acc. [73,7].
 — 6〉 in einen Zustand —, in ein Verhältniss eintreten, gerathen in (Acc.). *rūpāṇi* so v. a. Farben annehmen, *rājyam* die Herrschaft antreten.
 - **EN:** — With *ā*
 — 1) to enter, go in, settle down in or among, penetrate into (Acc., exceptionally Loc.). *kham*, *gaganam* u. s. w. to rise into the air. *gṛheṣvāviśantaḥ pumāṃsaḥ* thus v. a. householder. Often *gṛham* or dgl. is to be supplied; also: to return home.
 — 2) to have sexual intercourse with a woman (Acc.).
 — 3) to approach closely to (Acc.), to come.
-— 4) to settle —, sit down upon (Acc.) for [Spr. 1478].
+— 4) to settle —, sit down upon (Acc.) for [Spr. 1478](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1478).
 — 5) to enter into, take possession of, seize someone (of evil spirits, states of mind, ailments u. s. w.); with Acc. [73,7].
 — 6) to enter a state —, fall into a relation (Acc.). *rūpāṇi* thus v. a. to take on colours, *rājyam* to assume sovereignty.
 
@@ -140,7 +140,7 @@
 — b〉 mit pass. Bed.
 — α〉 bewohnt —, erfüllt von (Instr. oder im Comp. vorangehend).
 — β〉 getroffen von (einem Pfeile, Instr. oder im Comp. vorangehend).
-— γ〉 ergriffen —, besessen —, befallen —, überwältigt —, in der Gewalt stehend von (Instr. oder im Comp. vorangehend), behaftet mit. *rogāviṣṭa* [ĀPAST. 2,26,16]. Ohne Ergänzung von einem bösen Geiste besessen. — *āviśya* [KATHĀS. 45,6] fehlerhaft für *āveśya*.
+— γ〉 ergriffen —, besessen —, befallen —, überwältigt —, in der Gewalt stehend von (Instr. oder im Comp. vorangehend), behaftet mit. *rogāviṣṭa* [ĀPAST. 2,26,16]. Ohne Ergänzung von einem bösen Geiste besessen. — *āviśya* [KATHĀS. 45,6](https://sanskrit-lexicon-scans.github.io/kss/index.html?45,6) fehlerhaft für *āveśya*.
 - **EN:** — 7) *āviṣṭa*
 — a) with act. Bed.
 — α) gone in, penetrated, lodged in (Loc., Acc. [[AIT. ĀR. 136,15]], or preceded by the Comp.).
@@ -150,7 +150,7 @@
 — b) with pass. Bed.
 — α) inhabited by —, filled with (Instr. or preceded by the Comp.).
 — β) struck by (an arrow, Instr. or preceded by the Comp.).
-— γ) seized by —, possessed by —, afflicted by —, overpowered by —, in the power of (Instr. or preceded by the Comp.), affected with. *rogāviṣṭa* [ĀPAST. 2,26,16]. Without complement: possessed by an evil spirit. — *āviśya* [KATHĀS. 45,6] erroneous for *āveśya*.
+— γ) seized by —, possessed by —, afflicted by —, overpowered by —, in the power of (Instr. or preceded by the Comp.), affected with. *rogāviṣṭa* [ĀPAST. 2,26,16]. Without complement: possessed by an evil spirit. — *āviśya* [KATHĀS. 45,6](https://sanskrit-lexicon-scans.github.io/kss/index.html?45,6) erroneous for *āveśya*.
 
 **a-caus)** — Caus.
 — 1〉 eingehen machen, hineinbringen, hineinschieben, hineinlassen, hineinfahren lassen, — in (Loc. oder ausnahmsweise Acc.).
@@ -275,20 +275,20 @@
 
 **vi-ppp)** — 9〉 *upaviṣṭa*
 — a〉 sich gesetzt habend, sitzend. Wie *upaviṣṭavān* auch als Verbum fin.
-— b〉 *prāyam*, *prāya˚* oder *anaśana˚* sich dem Tode durch Hungern geweiht habend, auf diese Weise ruhig den Tod erwartend. Das einfache *upaviṣṭa* in derselben Bed. — *upaviśya* [HARIV. 4568] fehlerhaft für *upaveśya*.
+— b〉 *prāyam*, *prāya˚* oder *anaśana˚* sich dem Tode durch Hungern geweiht habend, auf diese Weise ruhig den Tod erwartend. Das einfache *upaviṣṭa* in derselben Bed. — *upaviśya* [HARIV. 4568](https://sanskrit-lexicon-scans.github.io/hariv?4568) fehlerhaft für *upaveśya*.
 - **EN:** — 9) *upaviṣṭa*
 — a) having sat down, sitting. Like *upaviṣṭavān* also used as a verb fin.
-— b) *prāyam*, *prāya˚*, or *anaśana˚*: having devoted oneself to death by starvation, in this way calmly awaiting death. The simple *upaviṣṭa* in the same Bed. — *upaviśya* [HARIV. 4568] erroneous for *upaveśya*.
+— b) *prāyam*, *prāya˚*, or *anaśana˚*: having devoted oneself to death by starvation, in this way calmly awaiting death. The simple *upaviṣṭa* in the same Bed. — *upaviśya* [HARIV. 4568](https://sanskrit-lexicon-scans.github.io/hariv?4568) erroneous for *upaveśya*.
 
 **vi-caus)** — Caus.
 — 1〉 Jmd (Acc.) sich setzen lassen, sitzen heissen, — auf (Loc.) [KĀD. 247,13 (403,14)].
 — 2〉 niedersetzen in, bringen an einem Ort (Loc.).
-— 3〉 Jmd veranlassen per anum von sich zu geben, mit doppeltem Acc. [CARAKA. 6,10. 18]. [BHĀVAPR. 4,4]. — *upaveśya* [PAÑCAT. 147,6] fehlerhaft für *upaviśya*.
+— 3〉 Jmd veranlassen per anum von sich zu geben, mit doppeltem Acc. [CARAKA. 6,10. 18]. [BHĀVAPR. 4,4]. — *upaveśya* [PAÑCAT. 147,6](https://sanskrit-lexicon-scans.github.io/pantankose/app2?147,6) fehlerhaft für *upaviśya*.
 — Mit *adhyupa* sich darauf setzen.
 - **EN:** — Caus.
 — 1) to make someone (Acc.) sit down, bid sit, — upon (Loc.) [KĀD. 247,13 (403,14)].
 — 2) to set down in —, bring to a place (Loc.).
-— 3) to cause someone to void per anum, with double Acc. [CARAKA. 6,10. 18]. [BHĀVAPR. 4,4]. — *upaveśya* [PAÑCAT. 147,6] erroneous for *upaviśya*.
+— 3) to cause someone to void per anum, with double Acc. [CARAKA. 6,10. 18]. [BHĀVAPR. 4,4]. — *upaveśya* [PAÑCAT. 147,6](https://sanskrit-lexicon-scans.github.io/pantankose/app2?147,6) erroneous for *upaviśya*.
 — With *adhyupa*: to seat oneself thereon.
 
 **1-body)** — 1〉 sich niederlassen, hineintreten —, eingehen —, einziehen —, sich hineinbegeben —, hineinschlüpfen —, eindringen —, versinken —, aufgehen in (Loc. oder Acc.); auch mit hinzugefügtem *antar* ([299,26]). *agnim* u. s. w. den Scheiterhaufen besteigen. In der Astr. in Conjunction kommen mit (Acc.). Ohne Ergänzung hineintreten inʼs Haus u. s. w., auftreten auf der Schaubühne, erscheinen.
@@ -306,9 +306,9 @@
 - **RU:** — a〉 вошедший в —, содержащийся в (Acc. или Loc.).
   <sub>attested</sub>
 
-**11b)** — b〉 erfüllt —, verbunden mit (Instr.) [TS. 4,4,5,1.] [2]. [NYĀYAS. 3,1,68]. — Statt des unverständlichen *te viśantaṃ mudā yuktāḥ* [MBH. 7,1551] ([ed. Vardh. 7,35,13]) liest [ed. Bomb. 7,36,13] *te viṃśatipade (!) yattāḥ*.
+**11b)** — b〉 erfüllt —, verbunden mit (Instr.) [TS. 4,4,5,1.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?4,4,5,1) [2](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?4,4,5,2). [NYĀYAS. 3,1,68]. — Statt des unverständlichen *te viśantaṃ mudā yuktāḥ* [MBH. 7,1551](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.1551) ([ed. Vardh. 7,35,13]) liest [ed. Bomb. 7,36,13] *te viṃśatipade (!) yattāḥ*.
 
-- **RU:** — b〉 исполненный —, соединённый с (Instr.) [TS. 4,4,5,1.] [2]. [NYĀYAS. 3,1,68]. — Вместо непонятного *te viśantaṃ mudā yuktāḥ* [MBH. 7,1551] ([ed. Vardh. 7,35,13]) [ed. Bomb. 7,36,13] читает *te viṃśatipade (!) yattāḥ*.
+- **RU:** — b〉 исполненный —, соединённый с (Instr.) [TS. 4,4,5,1.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?4,4,5,1) [2](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?4,4,5,2). [NYĀYAS. 3,1,68]. — Вместо непонятного *te viśantaṃ mudā yuktāḥ* [MBH. 7,1551](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.1551) ([ed. Vardh. 7,35,13]) [ed. Bomb. 7,36,13] читает *te viṃśatipade (!) yattāḥ*.
   <sub>attested</sub>
 
 **caus-head)** — Caus. *veśayati*
@@ -376,9 +376,9 @@
 - **RU:** — 3〉 приближаться к (Acc.), приходить.
   <sub>attested</sub>
 
-**aa-4)** — 4〉 sich niederlassen —, sich setzen auf (Acc.) zu [Spr. 1478].
+**aa-4)** — 4〉 sich niederlassen —, sich setzen auf (Acc.) zu [Spr. 1478](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1478).
 
-- **RU:** — 4〉 усаживаться —, садиться на (Acc.) для [Spr. 1478].
+- **RU:** — 4〉 усаживаться —, садиться на (Acc.) для [Spr. 1478](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1478).
   <sub>attested</sub>
 
 **aa-5)** — 5〉 fahren in, Besitz nehmen von, sich Jmds bemächtigen (von bösen Geistern, Gemüthszuständen, Leiden u. s. w.); mit Acc. [73,7].
@@ -436,9 +436,9 @@
 - **RU:** — β〉 поражённый (стрелой, Instr. или с предшествующим Comp.).
   <sub>attested</sub>
 
-**aa-7b-gamma)** — γ〉 ergriffen —, besessen —, befallen —, überwältigt —, in der Gewalt stehend von (Instr. oder im Comp. vorangehend), behaftet mit. *rogāviṣṭa* [ĀPAST. 2,26,16]. Ohne Ergänzung von einem bösen Geiste besessen. — *āviśya* [KATHĀS. 45,6] fehlerhaft für *āveśya*.
+**aa-7b-gamma)** — γ〉 ergriffen —, besessen —, befallen —, überwältigt —, in der Gewalt stehend von (Instr. oder im Comp. vorangehend), behaftet mit. *rogāviṣṭa* [ĀPAST. 2,26,16]. Ohne Ergänzung von einem bösen Geiste besessen. — *āviśya* [KATHĀS. 45,6](https://sanskrit-lexicon-scans.github.io/kss/index.html?45,6) fehlerhaft für *āveśya*.
 
-- **RU:** — γ〉 охваченный —, одержимый —, поражённый —, побеждённый —, находящийся во власти (Instr. или с предшествующим Comp.), поражённый. *rogāviṣṭa* [ĀPAST. 2,26,16]. Без дополнения одержимый злым духом. — *āviśya* [KATHĀS. 45,6] ошибочно вместо *āveśya*.
+- **RU:** — γ〉 охваченный —, одержимый —, поражённый —, побеждённый —, находящийся во власти (Instr. или с предшествующим Comp.), поражённый. *rogāviṣṭa* [ĀPAST. 2,26,16]. Без дополнения одержимый злым духом. — *āviśya* [KATHĀS. 45,6](https://sanskrit-lexicon-scans.github.io/kss/index.html?45,6) ошибочно вместо *āveśya*.
   <sub>attested</sub>
 
 **aa-caus-head)** — Caus.
@@ -671,9 +671,9 @@
 - **RU:** — a〉 севший, сидящий. Как *upaviṣṭavān*, также в качестве глагола fin.
   <sub>attested</sub>
 
-**nisad-9b)** — b〉 *prāyam*, *prāya˚* oder *anaśana˚* sich dem Tode durch Hungern geweiht habend, auf diese Weise ruhig den Tod erwartend. Das einfache *upaviṣṭa* in derselben Bed. — *upaviśya* [HARIV. 4568] fehlerhaft für *upaveśya*.
+**nisad-9b)** — b〉 *prāyam*, *prāya˚* oder *anaśana˚* sich dem Tode durch Hungern geweiht habend, auf diese Weise ruhig den Tod erwartend. Das einfache *upaviṣṭa* in derselben Bed. — *upaviśya* [HARIV. 4568](https://sanskrit-lexicon-scans.github.io/hariv?4568) fehlerhaft für *upaveśya*.
 
-- **RU:** — b〉 *prāyam*, *prāya˚* или *anaśana˚* обрёкший себя на смерть голодом, спокойно ожидая таким образом смерти. Простое *upaviṣṭa* в том же Bed. — *upaviśya* [HARIV. 4568] ошибочно вместо *upaveśya*.
+- **RU:** — b〉 *prāyam*, *prāya˚* или *anaśana˚* обрёкший себя на смерть голодом, спокойно ожидая таким образом смерти. Простое *upaviṣṭa* в том же Bed. — *upaviśya* [HARIV. 4568](https://sanskrit-lexicon-scans.github.io/hariv?4568) ошибочно вместо *upaveśya*.
   <sub>attested</sub>
 
 **nisad-caus-head)** — Caus.
@@ -691,9 +691,9 @@
 - **RU:** — 2〉 усаживать в, доставлять в некое место (Loc.).
   <sub>attested</sub>
 
-**nisad-caus-3)** — 3〉 Jmd veranlassen per anum von sich zu geben, mit doppeltem Acc. [CARAKA. 6,10. 18]. [BHĀVAPR. 4,4]. — *upaveśya* [PAÑCAT. 147,6] fehlerhaft für *upaviśya*.
+**nisad-caus-3)** — 3〉 Jmd veranlassen per anum von sich zu geben, mit doppeltem Acc. [CARAKA. 6,10. 18]. [BHĀVAPR. 4,4]. — *upaveśya* [PAÑCAT. 147,6](https://sanskrit-lexicon-scans.github.io/pantankose/app2?147,6) fehlerhaft für *upaviśya*.
 
-- **RU:** — 3〉 побуждать кого-либо испражниться, с двойным Acc. [CARAKA. 6,10. 18]. [BHĀVAPR. 4,4]. — *upaveśya* [PAÑCAT. 147,6] ошибочно вместо *upaviśya*.
+- **RU:** — 3〉 побуждать кого-либо испражниться, с двойным Acc. [CARAKA. 6,10. 18]. [BHĀVAPR. 4,4]. — *upaveśya* [PAÑCAT. 147,6](https://sanskrit-lexicon-scans.github.io/pantankose/app2?147,6) ошибочно вместо *upaviśya*.
   <sub>attested</sub>
 
 **final)** — Mit *adhyupa* sich darauf setzen.

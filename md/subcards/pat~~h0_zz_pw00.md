@@ -69,10 +69,10 @@
 - **EN:** — 1〉 to cause to fly, to hurl, to fling — at (Loc.).
   <sub>attested</sub>
 
-**caus-2)** — 2〉 fallen machen, — lassen, eine Axt, ein Messer u. s. w. fallen lassen, so v. a. damit einen Schlag —, einen Schnitt verursachen. Das Worauf im Loc., Gen. oder Gen. mit *upari*. *ātmānam* sich niederwerfen. *yattayā — vaktre 'syāḥ svāṅgulyo daśa pātitāḥ* so v. a. dass sie mit allen zehn Fingern auf ihr Gesicht schlug [114,32]. *daṇḍam* auch so v. a. Strafe verhängen über (Loc.), *jalam* so v. a. Wasser auf die Erde giessen, *jalaṃ netrāmbhyām* so v. a. Thränen vergiessen, *aśrūṇi* so v. a. Thränen hervorrufen [Spr. 7786]. *sathānāt* Jmd von seiner Stelle stürzen.
+**caus-2)** — 2〉 fallen machen, — lassen, eine Axt, ein Messer u. s. w. fallen lassen, so v. a. damit einen Schlag —, einen Schnitt verursachen. Das Worauf im Loc., Gen. oder Gen. mit *upari*. *ātmānam* sich niederwerfen. *yattayā — vaktre 'syāḥ svāṅgulyo daśa pātitāḥ* so v. a. dass sie mit allen zehn Fingern auf ihr Gesicht schlug [114,32]. *daṇḍam* auch so v. a. Strafe verhängen über (Loc.), *jalam* so v. a. Wasser auf die Erde giessen, *jalaṃ netrāmbhyām* so v. a. Thränen vergiessen, *aśrūṇi* so v. a. Thränen hervorrufen [Spr. 7786](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7786). *sathānāt* Jmd von seiner Stelle stürzen.
 
-- **RU:** 2〉 заставлять падать, ронять, ронять топор, нож u. s. w., так v. a. наносить удар, делать разрез. Предмет, на который роняют, — в Loc., Gen. или Gen. с *upari*. *ātmānam* простираться ниц. *yattayā — vaktre 'syāḥ svāṅgulyo daśa pātitāḥ* так v. a. что она ударила себя по лицу всеми десятью пальцами [114,32]. *daṇḍam* также так v. a. налагать наказание на (Loc.), *jalam* так v. a. лить воду на землю, *jalaṃ netrāmbhyām* так v. a. проливать слёзы, *aśrūṇi* так v. a. вызывать слёзы [Spr. 7786]. *sathānāt* низвергать кого-л. с его места.
-- **EN:** — 2〉 to cause to fall, to let fall, to let an axe, a knife u. s. w. fall, thus v. a. thereby to cause a blow — a cut. The object upon which expressed in Loc., Gen. or Gen. with *upari*. *ātmānam* to prostrate oneself. *yattayā — vaktre 'syāḥ svāṅgulyo daśa pātitāḥ* thus v. a. so that she struck her face with all ten fingers [114,32]. *daṇḍam* also thus v. a. to impose punishment upon (Loc.), *jalam* thus v. a. to pour water upon the earth, *jalaṃ netrāmbhyām* thus v. a. to shed tears, *aśrūṇi* thus v. a. to cause tears [Spr. 7786]. *sathānāt* to cast someone down from their position.
+- **RU:** 2〉 заставлять падать, ронять, ронять топор, нож u. s. w., так v. a. наносить удар, делать разрез. Предмет, на который роняют, — в Loc., Gen. или Gen. с *upari*. *ātmānam* простираться ниц. *yattayā — vaktre 'syāḥ svāṅgulyo daśa pātitāḥ* так v. a. что она ударила себя по лицу всеми десятью пальцами [114,32]. *daṇḍam* также так v. a. налагать наказание на (Loc.), *jalam* так v. a. лить воду на землю, *jalaṃ netrāmbhyām* так v. a. проливать слёзы, *aśrūṇi* так v. a. вызывать слёзы [Spr. 7786](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7786). *sathānāt* низвергать кого-л. с его места.
+- **EN:** — 2〉 to cause to fall, to let fall, to let an axe, a knife u. s. w. fall, thus v. a. thereby to cause a blow — a cut. The object upon which expressed in Loc., Gen. or Gen. with *upari*. *ātmānam* to prostrate oneself. *yattayā — vaktre 'syāḥ svāṅgulyo daśa pātitāḥ* thus v. a. so that she struck her face with all ten fingers [114,32]. *daṇḍam* also thus v. a. to impose punishment upon (Loc.), *jalam* thus v. a. to pour water upon the earth, *jalaṃ netrāmbhyām* thus v. a. to shed tears, *aśrūṇi* thus v. a. to cause tears [Spr. 7786](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7786). *sathānāt* to cast someone down from their position.
   <sub>attested</sub>
 
 **caus-3)** — 3〉 hinabwerfen, abschlagen (den Kopf), ausschlagen (Zähne), niederwerfen, niederhauen, umwerfen, werfen in (Acc. oder Loc.).
@@ -271,22 +271,22 @@
 - **EN:** — 2〉 to drag someone down (to hell) with oneself.
   <sub>attested</sub>
 
-**anu2)** — Mit *pra* = *anu* hinfliegen [ṚV. 6,63,6].
+**anu2)** — Mit *pra* = *anu* hinfliegen [ṚV. 6,63,6](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.063.html#rv06.063.06).
 
-- **RU:** С *pra* = *anu* лететь [ṚV. 6,63,6].
-- **EN:** — With *pra* = *anu* to fly toward [ṚV. 6,63,6].
+- **RU:** С *pra* = *anu* лететь [ṚV. 6,63,6](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.063.html#rv06.063.06).
+- **EN:** — With *pra* = *anu* to fly toward [ṚV. 6,63,6](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.063.html#rv06.063.06).
   <sub>attested</sub>
 
-**apa)** — Mit *vi* = *anu* davonfliegen nach (Acc.) [AV. 7,43,1].
+**apa)** — Mit *vi* = *anu* davonfliegen nach (Acc.) [AV. 7,43,1](https://sanskrit-lexicon.github.io/avlinks/avhymns/av07.043.html#av07.043.01).
 
-- **RU:** С *vi* = *anu* улетать к (Acc.) [AV. 7,43,1].
-- **EN:** — With *vi* = *anu* to fly away toward (Acc.) [AV. 7,43,1].
+- **RU:** С *vi* = *anu* улетать к (Acc.) [AV. 7,43,1](https://sanskrit-lexicon.github.io/avlinks/avhymns/av07.043.html#av07.043.01).
+- **EN:** — With *vi* = *anu* to fly away toward (Acc.) [AV. 7,43,1](https://sanskrit-lexicon.github.io/avlinks/avhymns/av07.043.html#av07.043.01).
   <sub>attested</sub>
 
-**abhi-simple)** — Mit *antar* hineinfliegen in (Loc.) [ṚV. 4,16,17].
+**abhi-simple)** — Mit *antar* hineinfliegen in (Loc.) [ṚV. 4,16,17](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.016.html#rv04.016.17).
 
-- **RU:** С *antar* влетать в (Loc.) [ṚV. 4,16,17].
-- **EN:** — With *antar* to fly into (Loc.) [ṚV. 4,16,17].
+- **RU:** С *antar* влетать в (Loc.) [ṚV. 4,16,17](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.016.html#rv04.016.17).
+- **EN:** — With *antar* to fly into (Loc.) [ṚV. 4,16,17](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.016.html#rv04.016.17).
   <sub>attested</sub>
 
 **abhi-header)** — Mit *abhi*
@@ -327,16 +327,16 @@
 
 **abhi-caus-header)** 
 
-**abhi-caus-1)** — 1〉 mit Etwas (Instr.) nach Etwas werfen [TBR. 3,2,8,10].
+**abhi-caus-1)** — 1〉 mit Etwas (Instr.) nach Etwas werfen [TBR. 3,2,8,10](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?3,2,8,10).
 
-- **RU:** 1〉 бросать что-л. (Instr.) в кого-л. [TBR. 3,2,8,10].
-- **EN:** — 1〉 to throw something (Instr.) at something [TBR. 3,2,8,10].
+- **RU:** 1〉 бросать что-л. (Instr.) в кого-л. [TBR. 3,2,8,10](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?3,2,8,10).
+- **EN:** — 1〉 to throw something (Instr.) at something [TBR. 3,2,8,10](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?3,2,8,10).
   <sub>attested</sub>
 
-**abhi-caus-2)** — 2〉 werfen —, schleudern auf (Dat. oder Loc.) [MBH. 3,101,4].
+**abhi-caus-2)** — 2〉 werfen —, schleudern auf (Dat. oder Loc.) [MBH. 3,101,4](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?3,101,4).
 
-- **RU:** 2〉 бросать, метать на (Dat. или Loc.) [MBH. 3,101,4].
-- **EN:** — 2〉 to throw — to hurl at (Dat. or Loc.) [MBH. 3,101,4].
+- **RU:** 2〉 бросать, метать на (Dat. или Loc.) [MBH. 3,101,4](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?3,101,4).
+- **EN:** — 2〉 to throw — to hurl at (Dat. or Loc.) [MBH. 3,101,4](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?3,101,4).
   <sub>attested</sub>
 
 **abhi-caus-3)** — 3〉 hinwerfen, hinabwerfen.
@@ -378,10 +378,10 @@
 - **EN:** — With *ā*
   <sub>attested</sub>
 
-**upa-1)** — 1〉 herbeifliegen, hinfliegen zu (Acc.), herbeieilen, heraustürzen, -kommen. *ā papatyāt* Opt. Perf. [AV. 6,29,3].
+**upa-1)** — 1〉 herbeifliegen, hinfliegen zu (Acc.), herbeieilen, heraustürzen, -kommen. *ā papatyāt* Opt. Perf. [AV. 6,29,3](https://sanskrit-lexicon.github.io/avlinks/avhymns/av06.029.html#av06.029.03).
 
-- **RU:** 1〉 прилетать, лететь к (Acc.), спешить, стремительно выбегать, являться. *ā papatyāt* Opt. Perf. [AV. 6,29,3].
-- **EN:** — 1〉 to fly toward, to fly up to (Acc.), to rush up, to come rushing out — to come. *ā papatyāt* Opt. Perf. [AV. 6,29,3].
+- **RU:** 1〉 прилетать, лететь к (Acc.), спешить, стремительно выбегать, являться. *ā papatyāt* Opt. Perf. [AV. 6,29,3](https://sanskrit-lexicon.github.io/avlinks/avhymns/av06.029.html#av06.029.03).
+- **EN:** — 1〉 to fly toward, to fly up to (Acc.), to rush up, to come rushing out — to come. *ā papatyāt* Opt. Perf. [AV. 6,29,3](https://sanskrit-lexicon.github.io/avlinks/avhymns/av06.029.html#av06.029.03).
   <sub>attested</sub>
 
 **upa-2)** — 2〉 fallen in oder auf (Acc. oder Loc.).
@@ -526,10 +526,10 @@
 - **EN:** — 2〉 to lift up.
   <sub>attested</sub>
 
-**ut-caus-3)** — 3〉 *udapātayat* [KATHĀS. 72,86] fehlerhaft für *˚pāṭayat*.
+**ut-caus-3)** — 3〉 *udapātayat* [KATHĀS. 72,86](https://sanskrit-lexicon-scans.github.io/kss/index.html?72,86) fehlerhaft für *˚pāṭayat*.
 
-- **RU:** 3〉 *udapātayat* [KATHĀS. 72,86] ошибочно вместо *˚pāṭayat*.
-- **EN:** — 3〉 *udapātayat* [KATHĀS. 72,86] erroneously for *˚pāṭayat*.
+- **RU:** 3〉 *udapātayat* [KATHĀS. 72,86](https://sanskrit-lexicon-scans.github.io/kss/index.html?72,86) ошибочно вместо *˚pāṭayat*.
+- **EN:** — 3〉 *udapātayat* [KATHĀS. 72,86](https://sanskrit-lexicon-scans.github.io/kss/index.html?72,86) erroneously for *˚pāṭayat*.
   <sub>attested</sub>
 
 **ut-desid)** — Desid. auffliegen wollen.

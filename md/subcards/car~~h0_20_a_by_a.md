@@ -5,23 +5,23 @@
 
 **1)** — *abhyā*
  1) herankommen: *viśo adevīrabhyā3carantīḥ*
-[ṚV. 8,85,15.]
+[ṚV. 8,85,15.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.085.html#rv08.085.15)
 
 - **RU:** — *abhyā*
  1) подходить, приближаться: *viśo adevīrabhyā3carantīḥ*
-[ṚV. 8,85,15.]
+[ṚV. 8,85,15.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.085.html#rv08.085.15)
 - **EN:** — *abhyā*
  1) to come up to, approach: *viśo adevīrabhyā3carantīḥ*
-[ṚV. 8,85,15.]
+[ṚV. 8,85,15.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.085.html#rv08.085.15)
   <sub>attested</sub>
 
 **2)** — 2) üben, vollziehen: *ya eva prathamaḥ kalpastamevābhyācaransaha*
-[MBH. 12,9719.]
+[MBH. 12,9719.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.9719)
 
 - **RU:** — 2) совершать, исполнять: *ya eva prathamaḥ kalpastamevābhyācaransaha*
-[MBH. 12,9719.]
+[MBH. 12,9719.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.9719)
 - **EN:** — 2) to practise, perform: *ya eva prathamaḥ kalpastamevābhyācaransaha*
-[MBH. 12,9719.]
+[MBH. 12,9719.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.9719)
 — Vgl. *abhyācāra*.
   <sub>attested</sub>
 

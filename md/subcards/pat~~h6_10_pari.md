@@ -5,12 +5,12 @@
 
 **1)** — *pari*
  1) sich tummeln
-[Spr. 3371.]
+[Spr. 3371.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3371)
 
 - **RU:** — *pari*
- 1) носиться, резвиться [Spr. 3371.]
+ 1) носиться, резвиться [Spr. 3371.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3371)
 - **EN:** — *pari*
- 1) to move about, gambol [Spr. 3371.]
+ 1) to move about, gambol [Spr. 3371.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3371)
   <sub>attested</sub>
 
 **2)** — 2)

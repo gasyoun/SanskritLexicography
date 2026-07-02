@@ -50,10 +50,10 @@
 - **EN:** With *abhinis* Act. to assert with reference to (Acc.).
   <sub>attested</sub>
 
-**prefix_apa2)** — Mit *parā* Act. wegsprechen [AV. 6,29,3].
+**prefix_apa2)** — Mit *parā* Act. wegsprechen [AV. 6,29,3](https://sanskrit-lexicon.github.io/avlinks/avhymns/av06.029.html#av06.029.03).
 
-- **RU:** С *parā* Act. — отговаривать, устранять словами [AV. 6,29,3].
-- **EN:** With *parā* Act. to talk away, to deny by speech [AV. 6,29,3].
+- **RU:** С *parā* Act. — отговаривать, устранять словами [AV. 6,29,3](https://sanskrit-lexicon.github.io/avlinks/avhymns/av06.029.html#av06.029.03).
+- **EN:** With *parā* Act. to talk away, to deny by speech [AV. 6,29,3](https://sanskrit-lexicon.github.io/avlinks/avhymns/av06.029.html#av06.029.03).
   <sub>attested</sub>
 
 **prefix_abhi3)** — Mit *abhiparā* anreden.
@@ -318,10 +318,10 @@
 - **EN:** With *upasam* in *upasaṃvāda*.
   <sub>attested</sub>
 
-**prefix_anu_sam)** — Mit *parisam* Act. sich gemeinschaftlich über Jmd (Acc.) äussern [MBH. 13,159,15].
+**prefix_anu_sam)** — Mit *parisam* Act. sich gemeinschaftlich über Jmd (Acc.) äussern [MBH. 13,159,15](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?13,159,15).
 
-- **RU:** С *parisam* Act. — совместно высказываться о ком-либо (Acc.) [MBH. 13,159,15].
-- **EN:** With *parisam* Act. to express oneself collectively about someone (Acc.) [MBH. 13,159,15].
+- **RU:** С *parisam* Act. — совместно высказываться о ком-либо (Acc.) [MBH. 13,159,15](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?13,159,15).
+- **EN:** With *parisam* Act. to express oneself collectively about someone (Acc.) [MBH. 13,159,15](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?13,159,15).
   <sub>attested</sub>
 
 **prefix_prati_sam2)** — Mit *pratisam* Med. sich mit Jmd (Acc.) einverstanden erklären.

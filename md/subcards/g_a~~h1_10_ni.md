@@ -5,21 +5,21 @@
 
 **1)** — *ni*
  1) mit Gesang begleiten: *vīṇāmeva vādayanto nigāyantaḥ*
-[ŚAT. BR. 3,2,4,6.]
+[ŚAT. BR. 3,2,4,6.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,2,4,6)
 
 - **RU:** — *ni*
  1) сопровождать пением: *vīṇāmeva vādayanto nigāyantaḥ*
-[ŚAT. BR. 3,2,4,6.]
+[ŚAT. BR. 3,2,4,6.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,2,4,6)
 - **EN:** — *ni*
  1) to accompany with song: *vīṇāmeva vādayanto nigāyantaḥ*
-[ŚAT. BR. 3,2,4,6.]
+[ŚAT. BR. 3,2,4,6.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,2,4,6)
   <sub>attested</sub>
 
 **2)** — 2) singen, verkünden: *tathā ca śrutayo bahvyo nigītā nigameṣvapi*
-[M. 9,19.]
+[M. 9,19.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,19)
 
 - **RU:** — 2) петь, возвещать: *tathā ca śrutayo bahvyo nigītā nigameṣvapi*
-[M. 9,19.]
+[M. 9,19.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,19)
 - **EN:** — 2) to sing, proclaim: *tathā ca śrutayo bahvyo nigītā nigameṣvapi*
-[M. 9,19.]
+[M. 9,19.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,19)
   <sub>attested</sub>

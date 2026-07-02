@@ -4,10 +4,10 @@
 
 
 **1)** — *upā* hinzufliegen zu: *haṃsāviva patatamā sutā upa*
-[ṚV. 5,78,1.]
+[ṚV. 5,78,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.078.html#rv05.078.01)
 
 - **RU:** — *upā* подлетать к: *haṃsāviva patatamā sutā upa*
-[ṚV. 5,78,1.]
+[ṚV. 5,78,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.078.html#rv05.078.01)
 - **EN:** — *upā* to fly toward: *haṃsāviva patatamā sutā upa*
-[ṚV. 5,78,1.]
+[ṚV. 5,78,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.078.html#rv05.078.01)
   <sub>attested</sub>

@@ -28,7 +28,10 @@ h2.root{font-size:26px;margin:0 0 2px}.meta{color:var(--mut);font-size:13px;marg
 .de{margin-bottom:6px}.tr{padding-top:6px;margin-top:6px;border-top:1px dashed var(--line)}
 .lbl{font-size:10px;letter-spacing:.05em;color:#fff;background:var(--mut);border-radius:3px;padding:0 5px;text-transform:uppercase;margin-right:6px;vertical-align:1px}
 i.sa{font-style:italic;color:var(--sa)}
-.ls{color:var(--mut);font-size:.92em}.ab{font-style:italic;color:var(--mut)}.lex{font-variant:small-caps;color:var(--mut)}
+.ls{color:var(--mut);font-size:.92em}
+a.ls{color:var(--accent);font-size:.92em;text-decoration:none;border-bottom:1px dotted var(--accent)}
+a.ls:hover{text-decoration:underline;border-bottom-color:transparent}
+.ab{font-style:italic;color:var(--mut)}.lex{font-variant:small-caps;color:var(--mut)}
 .badges{margin-top:6px}.badge{display:inline-block;font-size:11px;color:var(--mut);border:1px solid var(--line);border-radius:10px;padding:0 7px;margin-right:5px}
 .na{color:var(--mut);font-style:italic}
 /* language switch: show German always as reference in ru/en; German-only in de mode */
@@ -67,8 +70,9 @@ function renderBody(r){
   h+='<div class="sub"><h3 class="iast">'+esc(sub.iast||sub.h||sub.key)+'</h3><div class="k">'+esc(sub.key)+'</div></div>';
   sub.senses.forEach(function(s){
    var b='';if(s.dcs!=null)b+='<span class="badge">DCS '+s.dcs+'</span>';if(s.src)b+='<span class="badge">'+s.src+'</span>';
+   var tg=(s.tag==='header'||s.tag==='head')?'':'<span class="tag">'+esc(s.tag)+')</span>';
    h+='<div class="sense">'
-    +'<div class="de"><span class="tag">'+esc(s.tag)+')</span><span class="lbl">DE</span>'+esc(s.de_html)+'</div>'
+    +'<div class="de">'+tg+'<span class="lbl">DE</span>'+esc(s.de_html)+'</div>'
     +trBlock('ru','RU',s.ru_html)+trBlock('en','EN',s.en_html)
     +(b?'<div class="badges">'+b+'</div>':'')+'</div>';
   });

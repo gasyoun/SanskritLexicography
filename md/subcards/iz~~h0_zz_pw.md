@@ -23,14 +23,14 @@
 **6)** — 6〉 vordringen, zustreben, hinstreben zu (Dat. Loc.).
 - **EN:** — 6) to press forward, strive toward, tend toward (Dat. Loc.).
 
-**7)** — 7〉 *eṣate* suchen [BHĀG. P. 3,13,44.] [9,4,52].
-- **EN:** — 7) *eṣate* to seek [BHĀG. P. 3,13,44.] [9,4,52].
+**7)** — 7〉 *eṣate* suchen [BHĀG. P. 3,13,44.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,13,44) [9,4,52](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,4,52).
+- **EN:** — 7) *eṣate* to seek [BHĀG. P. 3,13,44.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,13,44) [9,4,52](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,4,52).
 
 **8 (with prefix))** — Mit *prādhi* in *prādhyeṣaṇa*.
 - **EN:** — With *prādhi* in *prādhyeṣaṇa*.
 
-**9 (with prefix anu))** — Mit *anu*, *anviṣati* ([MBH. 3,271,38]), *anveṣati, ˚te* und *anviṣyati, ˚te* hinterhergehen, nachgehen, suchen, sich umsehen nach [39,3]. [130,24]. [MBH. 1,125,24]. [ŚĀK. 32,13]. durchsuchen.
-- **EN:** — With *anu*, *anviṣati* ([MBH. 3,271,38]), *anveṣati, ˚te* and *anviṣyati, ˚te* to follow after, go in pursuit, seek, look about for [39,3]. [130,24]. [MBH. 1,125,24]. [ŚĀK. 32,13]. to search through.
+**9 (with prefix anu))** — Mit *anu*, *anviṣati* ([MBH. 3,271,38](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?3,271,38)), *anveṣati, ˚te* und *anviṣyati, ˚te* hinterhergehen, nachgehen, suchen, sich umsehen nach [39,3]. [130,24]. [MBH. 1,125,24](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?1,125,24). [ŚĀK. 32,13](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?32,13). durchsuchen.
+- **EN:** — With *anu*, *anviṣati* ([MBH. 3,271,38](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?3,271,38)), *anveṣati, ˚te* and *anviṣyati, ˚te* to follow after, go in pursuit, seek, look about for [39,3]. [130,24]. [MBH. 1,125,24](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?1,125,24). [ŚĀK. 32,13](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?32,13). to search through.
 
 **10 (with prefix))** — Mit *samanu* (*iṣyati*) aufsuchen [BĀLAR. 107,22].
 - **EN:** — With *samanu* (*iṣyati*) to seek out [BĀLAR. 107,22].
@@ -38,8 +38,8 @@
 **11 (with prefix))** — Mit *api* Med. nachstreben, nachzukommen suchen; mit Loc.
 - **EN:** — With *api* Med. to strive after, try to attain; with Loc.
 
-**12 (with prefix))** — Mit *pari* (*eṣati*) herumsuchen nach [MBH. 13,85,19]. Med. [SADDH. P. 34,b.]
-- **EN:** — With *pari* (*eṣati*) to search around for [MBH. 13,85,19]. Med. [SADDH. P. 34,b.]
+**12 (with prefix))** — Mit *pari* (*eṣati*) herumsuchen nach [MBH. 13,85,19](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?13,85,19). Med. [SADDH. P. 34,b.]
+- **EN:** — With *pari* (*eṣati*) to search around for [MBH. 13,85,19](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?13,85,19). Med. [SADDH. P. 34,b.]
 
 **13 (with prefix))** — Caus. dass. [SADDH. P. 4,18,b. 31,b.]
 - **EN:** — Caus. dass. [SADDH. P. 4,18,b. 31,b.]
@@ -150,15 +150,15 @@
 **4g)** — g〉 ohne Ergänzung wollen, geneigt —, einverstanden sein. Mit *na* nicht einverstanden sein, sich weigern [42,13].
 - **EN:** — g) absolutely, to be willing, inclined, in agreement. With *na* to disagree, refuse [42,13].
 
-**5)** — 5〉 nach Belieben wählen [M. 8,384].
-- **EN:** — 5) to choose at will [M. 8,384].
+**5)** — 5〉 nach Belieben wählen [M. 8,384](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,384).
+- **EN:** — 5) to choose at will [M. 8,384](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,384).
 
 **6)** — 6〉 anerkennen, nehmen, statuiren [238,9]. mit zwei Acc. dafür halten, dass Etwas sei.
 - **EN:** — 6) to acknowledge, accept, posit [238,9]; with two Acc. to hold that something is (so-and-so).
 
-**7 (passive))** — Pass. *iṣyate* (*iṣyati* [MBH. 3,59] fehlerhaft)
+**7 (passive))** — Pass. *iṣyate* (*iṣyati* [MBH. 3,59](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.59) fehlerhaft)
 — 1〉 gewünscht —, gern gesehen werden. *jñāpayitumiṣyamāṇaḥ* von dem man Etwas zu wissen thun will [222,33].
-- **EN:** — Pass. *iṣyate* (*iṣyati* [MBH. 3,59] incorrectly)
+- **EN:** — Pass. *iṣyate* (*iṣyati* [MBH. 3,59](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.59) incorrectly)
 — 1) to be wished for, to be welcome. *jñāpayitumiṣyamāṇaḥ* of whom one wishes to learn something [222,33].
 
 **8)** — 2〉 verlangt —, gefordert werden, vorgeschrieben sein.
@@ -175,8 +175,8 @@
 - **EN:** — Caus.
 — 1) *eṣayati* to sound out, probe [SUŚR. 2,7,15].
 
-**12)** — 2〉 *icchayāmi* [R. 7,59,1]. [25] = *icchāmi* ich bin Willens.
-- **EN:** — 2) *icchayāmi* [R. 7,59,1]. [25] = *icchāmi* I am minded to.
+**12)** — 2〉 *icchayāmi* [R. 7,59,1](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,59,1). [25](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,59,25) = *icchāmi* ich bin Willens.
+- **EN:** — 2) *icchayāmi* [R. 7,59,1](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,59,1). [25](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,59,25) = *icchāmi* I am minded to.
 
 **13 (with prefix))** — Mit *adhi*, Partic. *adhīṣṭa* um Unterweisung freundlich angegangen (Lehrer).
 - **EN:** — With *adhi*, Partic. *adhīṣṭa* kindly approached for instruction (a teacher).
@@ -198,8 +198,8 @@
 **18 (with prefix))** — Mit *samanu* durchsuchen.
 - **EN:** — With *samanu* to search through.
 
-**19 (with prefix))** — Mit *antar* herbeiwünschen, begehren [ṚV. 8,61,3].
-- **EN:** — With *antar* to wish for, desire [ṚV. 8,61,3].
+**19 (with prefix))** — Mit *antar* herbeiwünschen, begehren [ṚV. 8,61,3](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.061.html#rv08.061.03).
+- **EN:** — With *antar* to wish for, desire [ṚV. 8,61,3](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.061.html#rv08.061.03).
 
 **20 (with prefix))** — Mit *abhi*
 — 1〉 aufsuchen, erstreben.
@@ -209,16 +209,16 @@
 **21)** — 2〉 wünschen, wollen, beabsichtigen; mit Infin.
 - **EN:** — 2) to wish, want, intend; with Infin.
 
-**22 (PPP iṣṭa))** — Partic. *abhīṣṭa* erstrebt, erwünscht, genehm, lieb; _m._ Liebling, Geliebter. *˚varṣin* erwünschten Regen sendend [Spr. 4345]. *˚tama* _Adj._ überaus lieb.
-- **EN:** — Partic. *abhīṣṭa* striven for, desired, welcome, dear; _m._ darling, beloved. *˚varṣin* sending desired rain [Spr. 4345]. *˚tama* _Adj._ exceedingly dear.
+**22 (PPP iṣṭa))** — Partic. *abhīṣṭa* erstrebt, erwünscht, genehm, lieb; _m._ Liebling, Geliebter. *˚varṣin* erwünschten Regen sendend [Spr. 4345](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4345). *˚tama* _Adj._ überaus lieb.
+- **EN:** — Partic. *abhīṣṭa* striven for, desired, welcome, dear; _m._ darling, beloved. *˚varṣin* sending desired rain [Spr. 4345](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4345). *˚tama* _Adj._ exceedingly dear.
 
 **23 (with prefix))** — Mit *pari* herumsuchen nach (Acc.) [CHĀND. UP. 1,11,2] (*paryaiṣiṣam* zu lesen).
 - **EN:** — With *pari* to search around for (Acc.) [CHĀND. UP. 1,11,2] (*paryaiṣiṣam* to be read).
 
 **24 (with prefix))** — Mit *prati*
-— 1〉 suchen [ṚV. 10,129,4].
+— 1〉 suchen [ṚV. 10,129,4](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.129.html#rv10.129.04).
 - **EN:** — With *prati*
-— 1) to seek [ṚV. 10,129,4].
+— 1) to seek [ṚV. 10,129,4](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.129.html#rv10.129.04).
 
 **25)** — 2〉 entgegennehmen, empfangen von (Gen.) [68,32].
 - **EN:** — 2) to receive, accept from (Gen.) [68,32].
@@ -258,21 +258,21 @@
 **1)** **1.** √*iṣ*¦ mit *upa* hinstreben zu (Acc.) [MAITR. S. 1,2,14] ([KĀṬH. 3,3]. [KAP. S. 2,10]. [MĀN. ŚR. 1,8,2]).
 - **EN:** **1.** √*iṣ*¦ with *upa* to press toward (Acc.) [MAITR. S. 1,2,14] ([KĀṬH. 3,3]. [KAP. S. 2,10]. [MĀN. ŚR. 1,8,2]).
 
-**1)** **4.** √*iṣ*¦ 2〉 [HARIV. 2,72,52] nach [NĪLAK.]
-- **EN:** **4.** √*iṣ*¦ 2) [HARIV. 2,72,52] after [NĪLAK.]
+**1)** **4.** √*iṣ*¦ 2〉 [HARIV. 2,72,52](https://sanskrit-lexicon-scans.github.io/hariv?2) nach [NĪLAK.]
+- **EN:** **4.** √*iṣ*¦ 2) [HARIV. 2,72,52](https://sanskrit-lexicon-scans.github.io/hariv?2) after [NĪLAK.]
 
 **1)** **1.** √*iṣ*¦ mit *atipra* darüber hinaus auffordern [ĀPAST. ŚR. 12,27,6]. [14,34,4]. [VAITĀN.]
 - **EN:** **1.** √*iṣ*¦ with *atipra* to call upon further, beyond [ĀPAST. ŚR. 12,27,6]. [14,34,4]. [VAITĀN.]
 
-**1)** **1.** √*iṣ*¦ mit *samanu* I. durchsuchen. *samanveṣitum* [R. ed. Bomb. 3,67,7].
+**1)** **1.** √*iṣ*¦ mit *samanu* I. durchsuchen. *samanveṣitum* [R. ed. Bomb. 3,67,7](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,67,7).
 — Mit *upa* 2.
 — Mit *atipra* 5.
-- **EN:** **1.** √*iṣ*¦ with *samanu* I. to search through. *samanveṣitum* [R. ed. Bomb. 3,67,7].
+- **EN:** **1.** √*iṣ*¦ with *samanu* I. to search through. *samanveṣitum* [R. ed. Bomb. 3,67,7](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,67,7).
 — With *upa* 2.
 — With *atipra* 5.
 
-**1)** **3.** √*iṣ*¦ mit passivisch aufzufassendem Infinitiv: *samudraṃ netumicchāmi bhavadbhiḥ* ich wünsche von Euch anʼs Meer geführt zu werden [R. ed. Bomb. 4,58,33]. [56,21]. Zu 4〉e〉β〉 gehört *pratikūlitumicchāmi na hi vākyamidaṃ tvayā* [3,24,13].
-- **EN:** **3.** √*iṣ*¦ with an infinitive to be taken passively: *samudraṃ netumicchāmi bhavadbhiḥ* I wish to be led by you to the sea [R. ed. Bomb. 4,58,33]. [56,21]. To 4)e)β) belongs *pratikūlitumicchāmi na hi vākyamidaṃ tvayā* [3,24,13].
+**1)** **3.** √*iṣ*¦ mit passivisch aufzufassendem Infinitiv: *samudraṃ netumicchāmi bhavadbhiḥ* ich wünsche von Euch anʼs Meer geführt zu werden [R. ed. Bomb. 4,58,33](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,58,33). [56,21](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,56,21). Zu 4〉e〉β〉 gehört *pratikūlitumicchāmi na hi vākyamidaṃ tvayā* [3,24,13](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,24,13).
+- **EN:** **3.** √*iṣ*¦ with an infinitive to be taken passively: *samudraṃ netumicchāmi bhavadbhiḥ* I wish to be led by you to the sea [R. ed. Bomb. 4,58,33](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,58,33). [56,21](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,56,21). To 4)e)β) belongs *pratikūlitumicchāmi na hi vākyamidaṃ tvayā* [3,24,13](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,24,13).
 
 **1)** **4.** √*iṣ*¦ I. 3.
 - **EN:** **4.** √*iṣ*¦ I. 3.

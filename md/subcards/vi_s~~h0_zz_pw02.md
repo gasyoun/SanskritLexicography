@@ -75,10 +75,10 @@
 - **EN:** — 5) to insert into (Loc.).
   <sub>attested</sub>
 
-**caus-6)** — 6〉 aufsetzen, auflegen, anlegen; das Worauf oder Woran im Loc. [Spr. 7770].
+**caus-6)** — 6〉 aufsetzen, auflegen, anlegen; das Worauf oder Woran im Loc. [Spr. 7770](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7770).
 
-- **RU:** — 6〉 надевать, накладывать, прилаживать; «на что» выражено в Loc. [Spr. 7770].
-- **EN:** — 6) to put on, lay on, apply; the whereon or whereat with Loc. [Spr. 7770].
+- **RU:** — 6〉 надевать, накладывать, прилаживать; «на что» выражено в Loc. [Spr. 7770](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7770).
+- **EN:** — 6) to put on, lay on, apply; the whereon or whereat with Loc. [Spr. 7770](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7770).
   <sub>attested</sub>
 
 **caus-7)** — 7〉 anbringen, anwenden.
@@ -297,10 +297,10 @@
 - **EN:** — d) enjoyed.
   <sub>attested</sub>
 
-**caus-aa-5e)** — e〉 gewonnen, erarbeitet [GAUT.] — *nirviśantyāṃ* [MBH. 13,345] fehlerhaft für *nivi˚*.
+**caus-aa-5e)** — e〉 gewonnen, erarbeitet [GAUT.] — *nirviśantyāṃ* [MBH. 13,345](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.345) fehlerhaft für *nivi˚*.
 
-- **RU:** — e〉 добытый, заработанный [GAUT.] — *nirviśantyāṃ* [MBH. 13,345] ошибочно вместо *nivi˚*.
-- **EN:** — e) won, earned [GAUT.] — *nirviśantyāṃ* [MBH. 13,345] erroneous for *nivi˚*.
+- **RU:** — e〉 добытый, заработанный [GAUT.] — *nirviśantyāṃ* [MBH. 13,345](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.345) ошибочно вместо *nivi˚*.
+- **EN:** — e) won, earned [GAUT.] — *nirviśantyāṃ* [MBH. 13,345](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.345) erroneous for *nivi˚*.
   <sub>attested</sub>
 
 **caus-aa-6)** — Desid. eine gemeinsame Wohnung beziehen wollen.
@@ -345,10 +345,10 @@
 - **EN:** — 3) to have sexual intercourse (of either sex), with Acc.
   <sub>attested</sub>
 
-**pra-4)** — 4〉 an Etwas gehen, obliegen, sich einer Sache hingeben; mit Acc., seltener Loc. ([Spr. 77]). *piṇḍīm*, *tarpaṇam* so v. a. annehmen, geniessen [229,12].
+**pra-4)** — 4〉 an Etwas gehen, obliegen, sich einer Sache hingeben; mit Acc., seltener Loc. ([Spr. 77](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?77)). *piṇḍīm*, *tarpaṇam* so v. a. annehmen, geniessen [229,12].
 
-- **RU:** — 4〉 приступать к чему-л., заниматься —, предаваться чему-л.; с Acc., реже Loc. ([Spr. 77]). *piṇḍīm*, *tarpaṇam* так v. a. принимать, вкушать [229,12].
-- **EN:** — 4) to set about something, attend to, devote oneself to a matter; with Acc., more rarely Loc. ([Spr. 77]). *piṇḍīm*, *tarpaṇam* thus v. a. to take up, enjoy [229,12].
+- **RU:** — 4〉 приступать к чему-л., заниматься —, предаваться чему-л.; с Acc., реже Loc. ([Spr. 77](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?77)). *piṇḍīm*, *tarpaṇam* так v. a. принимать, вкушать [229,12].
+- **EN:** — 4) to set about something, attend to, devote oneself to a matter; with Acc., more rarely Loc. ([Spr. 77](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?77)). *piṇḍīm*, *tarpaṇam* thus v. a. to take up, enjoy [229,12].
   <sub>attested</sub>
 
 **pra-5)** — 5〉 in Jmd (Acc.) hineingehen, so v. a. in ihm aufgehen, gegen ihn verschwinden, vor ihm ganz in den Schatten treten.
@@ -593,10 +593,10 @@
 - **EN:** — 3) to keep close to someone, associate with (Acc.).
   <sub>attested</sub>
 
-**upa-4)** — 4〉 *saṃpraviśya* [RĀJAT. 6,36] fehlerhaft für *˚veśya*; vgl. [Spr. 6320].
+**upa-4)** — 4〉 *saṃpraviśya* [RĀJAT. 6,36](https://sanskrit-lexicon-scans.github.io/rajatar/app1?6,36) fehlerhaft für *˚veśya*; vgl. [Spr. 6320](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?6320).
 
-- **RU:** — 4〉 *saṃpraviśya* [RĀJAT. 6,36] ошибочно вместо *˚veśya*; vgl. [Spr. 6320].
-- **EN:** — 4) *saṃpraviśya* [RĀJAT. 6,36] erroneous for *˚veśya*; vgl. [Spr. 6320].
+- **RU:** — 4〉 *saṃpraviśya* [RĀJAT. 6,36](https://sanskrit-lexicon-scans.github.io/rajatar/app1?6,36) ошибочно вместо *˚veśya*; vgl. [Spr. 6320](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?6320).
+- **EN:** — 4) *saṃpraviśya* [RĀJAT. 6,36](https://sanskrit-lexicon-scans.github.io/rajatar/app1?6,36) erroneous for *˚veśya*; vgl. [Spr. 6320](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?6320).
   <sub>attested</sub>
 
 **Mit-aa-intro)** — Caus.

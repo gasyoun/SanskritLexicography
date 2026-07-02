@@ -9,8 +9,8 @@
 **intro)** **2.** √*ās*¦, *āste* ep. auch *āsate* und *āsti*.
 - **EN:** **2.** √*ās*¦, *āste* ep. also *āsate* and *āsti*.
 
-**1)** — 1〉 sitzen, sich setzen, — auf (Loc.; Acc. nur scheinbar. [VIKR. 27,16] zu interpungiren: *etadāsanam āsyatām*. Eben so [R. ed. Bomb. 1,72,15]).
-- **EN:** — 1〉 to sit, to sit down, — on (Loc.; Acc. only apparently. [VIKR. 27,16] to be punctuated: *etadāsanam āsyatām*. Likewise [R. ed. Bomb. 1,72,15]).
+**1)** — 1〉 sitzen, sich setzen, — auf (Loc.; Acc. nur scheinbar. [VIKR. 27,16](https://sanskrit-lexicon-scans.github.io/vikramor/app2?27,16) zu interpungiren: *etadāsanam āsyatām*. Eben so [R. ed. Bomb. 1,72,15](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?1,72,15)).
+- **EN:** — 1〉 to sit, to sit down, — on (Loc.; Acc. only apparently. [VIKR. 27,16](https://sanskrit-lexicon-scans.github.io/vikramor/app2?27,16) to be punctuated: *etadāsanam āsyatām*. Likewise [R. ed. Bomb. 1,72,15](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?1,72,15)).
 
 **2)** — 2〉 seinen Sitz haben, wohnen, weilen, seinen Wohnsitz aufschlagen, sich niederlassen, ein Lager beziehen, — in (Loc. und *Acc.). Auch von Zuständen, die in diesem Falle persönlich gedacht werden.
 - **EN:** — 2〉 to have one's seat , to dwell, to abide, to take up one's residence, to settle, to make camp, — in (Loc. and *Acc.). Also of states which in this case are conceived as personified.
@@ -21,8 +21,8 @@
 **4)** — 4〉 ruhen, liegen (von Thieren und leblosen Körpern).
 - **EN:** — 4〉 to rest, to lie (of animals and inanimate bodies).
 
-**5)** — 5〉 sitzen, so v. a. festsitzen, nicht herunterfallen [Spr. 7253].
-- **EN:** — 5〉 to sit, so v. a. to sit fast, not to fall down [Spr. 7253].
+**5)** — 5〉 sitzen, so v. a. festsitzen, nicht herunterfallen [Spr. 7253](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7253).
+- **EN:** — 5〉 to sit, so v. a. to sit fast, not to fall down [Spr. 7253](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7253).
 
 **6)** — 6〉 stillsitzen, verweilen, verbleiben, verharren. *sanmārge* auf dem rechten Pfade [146,5].
 - **EN:** — 6〉 to sit still, to linger, to remain, to abide. *sanmārge* on the right path [146,5].
@@ -36,14 +36,14 @@
 **9)** — 9〉 längere Zeit in einer best. Lage sich befinden, sich verhalten, — wie. Die nähere Bestimmung ein Partic., _Adj._ oder Subst. im Nom. (oder im Instr. bei impersonaler Redeweise), ein Absol. oder _Adv._ *sukham* oder *sukhena* sich wohl befinden. *duḥkham* betrübt dastehen [327,15].
 - **EN:** — 9〉 to be, for a longer time, in a best. condition, to behave, fare, — like. The closer determination [is] a Partic., _Adj._ or Subst. in the Nom. (or in the Instr. in impersonal usage), a Absol. or _Adv._ *sukham* or *sukhena* to be well, to fare well. *duḥkham* to stand there grieved [327,15].
 
-**10)** — 10〉 gereichen zu (Dat.) [Spr. 4859].
-- **EN:** — 10〉 to redound to, to tend to (Dat.) [Spr. 4859].
+**10)** — 10〉 gereichen zu (Dat.) [Spr. 4859](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4859).
+- **EN:** — 10〉 to redound to, to tend to (Dat.) [Spr. 4859](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4859).
 
 **11)** — 11〉 esse alicujus (Gen.) [39,6].
 - **EN:** — 11〉 esse alicujus (Gen.) [39,6].
 
-**12)** — 12〉 Imperat. weg damit, genug —, schweigen wir davon, nedum [Spr. 7744]. [KĀD. 228,10. 11. 250,6. II,61,9]. [VIKRAMĀṄKAC. 3,30] (wo *samastamāstām* zu lesen ist). *tathā yathā* — so dass nicht mehr die Rede sein kann (konnte) von.
-- **EN:** — 12〉 Imperat. away with it, enough of —, let us be silent about it, much less [Spr. 7744]. [KĀD. 228,10. 11. 250,6. II,61,9]. [VIKRAMĀṄKAC. 3,30] (where *samastamāstām* is to be read). *tathā yathā* — so that there can (could) no longer be talk of.
+**12)** — 12〉 Imperat. weg damit, genug —, schweigen wir davon, nedum [Spr. 7744](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7744). [KĀD. 228,10. 11. 250,6. II,61,9]. [VIKRAMĀṄKAC. 3,30] (wo *samastamāstām* zu lesen ist). *tathā yathā* — so dass nicht mehr die Rede sein kann (konnte) von.
+- **EN:** — 12〉 Imperat. away with it, enough of —, let us be silent about it, much less [Spr. 7744](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7744). [KĀD. 228,10. 11. 250,6. II,61,9]. [VIKRAMĀṄKAC. 3,30] (where *samastamāstām* is to be read). *tathā yathā* — so that there can (could) no longer be talk of.
 
 **caus-intro)** — Caus. *āsayati* sitzen heissen.
 - **EN:** — Caus. *āsayati* to bid sit, to make sit.
@@ -54,8 +54,8 @@
 **adhi-intro)** — Mit *adhi*
 - **EN:** — With *adhi*
 
-**adhi.1)** — 1〉 sitzen —, sich setzen —, (von Thieren) liegen —, sich legen auf (Acc.). *adhastacchiṃśapāyāḥ* (so ist wohl zu lesen) unterhalb [R. 5,57,6].
-- **EN:** — 1〉 to sit —, to sit down —, (of animals) to lie —, to lie down on (Acc.). *adhastacchiṃśapāyāḥ* (this is probably to be read) below [R. 5,57,6].
+**adhi.1)** — 1〉 sitzen —, sich setzen —, (von Thieren) liegen —, sich legen auf (Acc.). *adhastacchiṃśapāyāḥ* (so ist wohl zu lesen) unterhalb [R. 5,57,6](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,57,6).
+- **EN:** — 1〉 to sit —, to sit down —, (of animals) to lie —, to lie down on (Acc.). *adhastacchiṃśapāyāḥ* (this is probably to be read) below [R. 5,57,6](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,57,6).
 
 **adhi.2)** — 2〉 seinen Aufenthaltsort haben oder nehmen, bewohnen, seinen Sitz haben oder aufschlagen (auch von einem Herrscher), beziehen (eine Wohnung); mit Acc. Auch mit *yatra* wo.
 - **EN:** — 2〉 to have or take one's abode, to inhabit, to have or set up one's seat (also of a ruler), to move into (a dwelling); with Acc. Also with *yatra* where.
@@ -105,8 +105,8 @@
 **anv.3)** — 3〉 einer religiösen Ceremonie (Acc.) obliegen.
 - **EN:** — 3〉 to be occupied with a religious ceremony (Acc.).
 
-**abhi)** — Mit *antar* sich setzen in (Acc.) [ṚV. 9,78,3].
-- **EN:** — With *antar* to sit down in (Acc.) [ṚV. 9,78,3].
+**abhi)** — Mit *antar* sich setzen in (Acc.) [ṚV. 9,78,3](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.078.html#rv09.078.03).
+- **EN:** — With *antar* to sit down in (Acc.) [ṚV. 9,78,3](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.078.html#rv09.078.03).
 
 **ava-intro)** — Mit *ud*
 - **EN:** — With *ud*
@@ -138,8 +138,8 @@
 **upa.6)** — 6〉 sich nähern, — hinbegeben —, gelangen zu (Acc.).
 - **EN:** — 6〉 to approach, — to betake oneself to —, to arrive at (Acc.).
 
-**upa.7)** — 7〉 obliegen, sich zu thun machen mit, pflegen, ausführen, ausüben; mit Acc. *arthān* dem Gelde fröhnen [Spr. 7688].
-- **EN:** — 7〉 to be occupied with, to busy oneself with, to practice, to perform, to carry out; with Acc. *arthān* to indulge in money [Spr. 7688].
+**upa.7)** — 7〉 obliegen, sich zu thun machen mit, pflegen, ausführen, ausüben; mit Acc. *arthān* dem Gelde fröhnen [Spr. 7688](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7688).
+- **EN:** — 7〉 to be occupied with, to busy oneself with, to practice, to perform, to carry out; with Acc. *arthān* to indulge in money [Spr. 7688](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7688).
 
 **upa.8)** — 8〉 sich unterziehen, erleiden, theilhaftig werden.
 - **EN:** — 8〉 to undergo, to suffer, to become partaker of.
@@ -162,8 +162,8 @@
 **upa.14)** — 14〉 dafür halten, — erkennen.
 - **EN:** — 14〉 to hold for, — to recognize as.
 
-**upa.15)** — 15〉 eine Zeit (Acc.) zubringen [R. 1,36,1] ([35,1]. [ed. Bomb.]).
-- **EN:** — 15〉 to spend a time (Acc.) [R. 1,36,1] ([35,1]. [ed. Bomb.]).
+**upa.15)** — 15〉 eine Zeit (Acc.) zubringen [R. 1,36,1](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,36,1) ([35,1]. [ed. Bomb.]).
+- **EN:** — 15〉 to spend a time (Acc.) [R. 1,36,1](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,36,1) ([35,1]. [ed. Bomb.]).
 
 **pari-intro)** — Mit *paryupa*
 - **EN:** — With *paryupa*
@@ -183,14 +183,14 @@
 **pari.5)** — 5〉 Jmd dienend nahen, Ehre erzeigen, verehren, huldigen.
 - **EN:** — 5〉 to approach someone in service, to show honour, to revere, to pay homage.
 
-**pari.6)** — 6〉 Etwas (Acc.) ruhig ansehen [Spr. 3530].
-- **EN:** — 6〉 to look on calmly at something (Acc.) [Spr. 3530].
+**pari.6)** — 6〉 Etwas (Acc.) ruhig ansehen [Spr. 3530](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3530).
+- **EN:** — 6〉 to look on calmly at something (Acc.) [Spr. 3530](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3530).
 
 **pra-intro)** — Mit *samupa*
 - **EN:** — With *samupa*
 
-**pra.1)** — 1〉 dasitzen [86,27]. [R. 2,105,1].
-- **EN:** — 1〉 to sit there [86,27]. [R. 2,105,1].
+**pra.1)** — 1〉 dasitzen [86,27]. [R. 2,105,1](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,105,1).
+- **EN:** — 1〉 to sit there [86,27]. [R. 2,105,1](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,105,1).
 
 **pra.2)** — 2〉 obliegen, ausüben, verrichten.
 - **EN:** — 2〉 to be occupied with, to practise, to perform.
@@ -204,8 +204,8 @@
 **pari2.1)** — 1〉 herumsitzen, sich um Jmd (Acc.) sammeln.
 - **EN:** — 1〉 to sit around, to gather around someone (Acc.).
 
-**pari2.2)** — 2〉 sich bemühen um (Acc.) [ṚV. 10,40,7].
-- **EN:** — 2〉 to take pains over (Acc.) [ṚV. 10,40,7].
+**pari2.2)** — 2〉 sich bemühen um (Acc.) [ṚV. 10,40,7](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.040.html#rv10.040.07).
+- **EN:** — 2〉 to take pains over (Acc.) [ṚV. 10,40,7](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.040.html#rv10.040.07).
 
 **pari2.3)** — 3〉 sitzen —, unthätig bleiben.
 - **EN:** — 3〉 to sit —, to remain inactive.
@@ -231,14 +231,14 @@
 **sam.5)** — 5〉 obliegen, mit Acc.
 - **EN:** — 5〉 to be occupied with, with Acc.
 
-**sam.6)** — 6〉 dasitzen —, sich benehmen wie (*iva*) [Spr. 5558].
-- **EN:** — 6〉 to sit there —, to behave like (*iva*) [Spr. 5558].
+**sam.6)** — 6〉 dasitzen —, sich benehmen wie (*iva*) [Spr. 5558](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?5558).
+- **EN:** — 6〉 to sit there —, to behave like (*iva*) [Spr. 5558](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?5558).
 
-**sam.7)** — 7〉 dasitzen, so v. a. verblüfft sein, sich nicht zu helfen wissen [R. 7,106,7].
-- **EN:** — 7〉 to sit there, so v. a. to be baffled, not to know how to help oneself [R. 7,106,7].
+**sam.7)** — 7〉 dasitzen, so v. a. verblüfft sein, sich nicht zu helfen wissen [R. 7,106,7](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,106,7).
+- **EN:** — 7〉 to sit there, so v. a. to be baffled, not to know how to help oneself [R. 7,106,7](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,106,7).
 
-**sam.8)** — 8〉 achten auf, anerkennen; mit Acc. [Spr. 1337].
-- **EN:** — 8〉 to pay heed to, to acknowledge; with Acc. [Spr. 1337].
+**sam.8)** — 8〉 achten auf, anerkennen; mit Acc. [Spr. 1337](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1337).
+- **EN:** — 8〉 to pay heed to, to acknowledge; with Acc. [Spr. 1337](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1337).
 
 **sam.9)** — 9〉 es aufnehmen mit, gewachsen sein, widerstehen; mit Acc.
 - **EN:** — 9〉 to take up against, to be a match for, to withstand; with Acc.
@@ -258,8 +258,8 @@
 **v.adhi1)** — Mit *anu* 1〉 sich in Jmds (Gen.) Nähe aufhalten [HEMĀDRI 1,35,20].
 - **EN:** — With *anu* 1〉 to stay in someone's (Gen.) vicinity [HEMĀDRI 1,35,20].
 
-**anu.1)** **2.** √*ās*¦ I. 1. Mit *avasthānam* sich niederlassen an einem Orte [R. ed. Bomb. 4,54,16] (*āsiṣyasi*).
-- **EN:** **2.** √*ās*¦ I. 1. With *avasthānam* to settle down in a place [R. ed. Bomb. 4,54,16] (*āsiṣyasi*).
+**anu.1)** **2.** √*ās*¦ I. 1. Mit *avasthānam* sich niederlassen an einem Orte [R. ed. Bomb. 4,54,16](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,54,16) (*āsiṣyasi*).
+- **EN:** **2.** √*ās*¦ I. 1. With *avasthānam* to settle down in a place [R. ed. Bomb. 4,54,16](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,54,16) (*āsiṣyasi*).
 
 **anu.ref)** — Mit *anu* I. 1.
 - **EN:** — With *anu* I. 1.

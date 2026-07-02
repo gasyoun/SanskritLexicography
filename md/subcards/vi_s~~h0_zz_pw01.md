@@ -156,10 +156,10 @@
 - **EN:** — 7) to settle down, so v. a. to found a household, to marry (of a man) [214,1].
   <sub>attested</sub>
 
-**ni-vi-8)** — 8〉 gegründet werden (von einer Stadt). Dreimal in der Verbindung *dvāravatyāṃ niviśantyām* ([MBH. 13,70,2]).
+**ni-vi-8)** — 8〉 gegründet werden (von einer Stadt). Dreimal in der Verbindung *dvāravatyāṃ niviśantyām* ([MBH. 13,70,2](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?13,70,2)).
 
-- **RU:** — 8〉 быть основанным (о городе). Трижды в сочетании *dvāravatyāṃ niviśantyām* ([MBH. 13,70,2]).
-- **EN:** — 8) to be founded (of a city). Three times in the combination *dvāravatyāṃ niviśantyām* ([MBH. 13,70,2]).
+- **RU:** — 8〉 быть основанным (о городе). Трижды в сочетании *dvāravatyāṃ niviśantyām* ([MBH. 13,70,2](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?13,70,2)).
+- **EN:** — 8) to be founded (of a city). Three times in the combination *dvāravatyāṃ niviśantyām* ([MBH. 13,70,2](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?13,70,2)).
   <sub>attested</sub>
 
 **ni-vi-9)** — 9〉 sich hinwenden zu, sich richten auf (Loc., vom Geiste).
@@ -258,10 +258,10 @@
 - **EN:** — k) founded, established.
   <sub>attested</sub>
 
-**ni-vi-14-l)** — l〉 bezogen, eingenommen (ein Platz), bewohnt, angebaut [215,10]. [HARIV. 5171]. *antarniviṣṭapada* _Adj._ so v. a. im Herzen sich festgesetzt habend.
+**ni-vi-14-l)** — l〉 bezogen, eingenommen (ein Platz), bewohnt, angebaut [215,10]. [HARIV. 5171](https://sanskrit-lexicon-scans.github.io/hariv?5171). *antarniviṣṭapada* _Adj._ so v. a. im Herzen sich festgesetzt habend.
 
-- **RU:** — l〉 занятый, захваченный (о месте), обитаемый, возделанный [215,10]. [HARIV. 5171]. *antarniviṣṭapada* _Adj._ так v. a. укоренившийся в сердце.
-- **EN:** — l) occupied, taken (a place), inhabited, settled [215,10]. [HARIV. 5171]. *antarniviṣṭapada* _Adj._ so v. a. having lodged itself firmly in the heart.
+- **RU:** — l〉 занятый, захваченный (о месте), обитаемый, возделанный [215,10]. [HARIV. 5171](https://sanskrit-lexicon-scans.github.io/hariv?5171). *antarniviṣṭapada* _Adj._ так v. a. укоренившийся в сердце.
+- **EN:** — l) occupied, taken (a place), inhabited, settled [215,10]. [HARIV. 5171](https://sanskrit-lexicon-scans.github.io/hariv?5171). *antarniviṣṭapada* _Adj._ so v. a. having lodged itself firmly in the heart.
   <sub>attested</sub>
 
 **ni-vi-14-m)** — m〉 begonnen.
@@ -432,10 +432,10 @@
 - **EN:** — 2) to immerse oneself in, to give oneself over entirely; with Acc.
   <sub>attested</sub>
 
-**pra-ni-vi-3)** — 3〉 auf seinem Kopf bestehen [MBH. 5,77,17].
+**pra-ni-vi-3)** — 3〉 auf seinem Kopf bestehen [MBH. 5,77,17](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?5,77,17).
 
-- **RU:** — 3〉 упорно стоять на своём [MBH. 5,77,17].
-- **EN:** — 3) to insist stubbornly, to be set in one's head [MBH. 5,77,17].
+- **RU:** — 3〉 упорно стоять на своём [MBH. 5,77,17](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?5,77,17).
+- **EN:** — 3) to insist stubbornly, to be set in one's head [MBH. 5,77,17](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?5,77,17).
   <sub>attested</sub>
 
 **pra-ni-vi-4)** — 4〉 Jmdm (Loc.) zukommen (Gegensatz abgehen) [224,23].
@@ -462,16 +462,16 @@
 - **EN:** — a) with pass. Bed.
   <sub>attested</sub>
 
-**pra-ni-vi-6a-alpha)** — α〉 (worin Etwas gedrungen ist) aufgetrieben, aufgedunsen, gewölbt [R. 2,9,33].
+**pra-ni-vi-6a-alpha)** — α〉 (worin Etwas gedrungen ist) aufgetrieben, aufgedunsen, gewölbt [R. 2,9,33](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,9,33).
 
-- **RU:** — α〉 (во что нечто проникло) вздутый, распухший, выпуклый [R. 2,9,33].
-- **EN:** — α) (into which something has penetrated) swollen, puffed up, vaulted [R. 2,9,33].
+- **RU:** — α〉 (во что нечто проникло) вздутый, распухший, выпуклый [R. 2,9,33](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,9,33).
+- **EN:** — α) (into which something has penetrated) swollen, puffed up, vaulted [R. 2,9,33](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,9,33).
   <sub>attested</sub>
 
-**pra-ni-vi-6a-beta)** — β〉 worin man (Instr.) sich versetzt hat, dem man sich ganz hingegeben hat [MBH. 8,82,31].
+**pra-ni-vi-6a-beta)** — β〉 worin man (Instr.) sich versetzt hat, dem man sich ganz hingegeben hat [MBH. 8,82,31](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?8,82,31).
 
-- **RU:** — β〉 во что кто-л. (Instr.) погрузился, чему всецело предался [MBH. 8,82,31].
-- **EN:** — β) into which one (Instr.) has placed oneself, to which one has given oneself entirely [MBH. 8,82,31].
+- **RU:** — β〉 во что кто-л. (Instr.) погрузился, чему всецело предался [MBH. 8,82,31](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?8,82,31).
+- **EN:** — β) into which one (Instr.) has placed oneself, to which one has given oneself entirely [MBH. 8,82,31](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?8,82,31).
   <sub>attested</sub>
 
 **pra-ni-vi-6a-gamma)** — γ〉 durchdrungen —, in Beschlag genommen von (Instr.).

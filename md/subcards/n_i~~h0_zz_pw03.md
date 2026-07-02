@@ -9,16 +9,16 @@
 - **EN:** **2.** *˚nī*¦ _Adj._ leading, guiding u. s. w..
   <sub>attested</sub>
 
-**13 — note)** **1.** √*nī*¦ 13〉 [CAPPELLER] vermuthet, dass [P. 1,3,36] die Bed. eine Autorität sein im Auge gehabt hätte.
+**13 — note)** **1.** √*nī*¦ 13〉 [CAPPELLER] vermuthet, dass [P. 1,3,36](https://ashtadhyayi.com/sutraani/1/3/36) die Bed. eine Autorität sein im Auge gehabt hätte.
 
-- **RU:** **1.** √*nī*¦ 13〉 [CAPPELLER] предполагает, что [P. 1,3,36] имел в виду значение Bed. быть авторитетом.
-- **EN:** **1.** √*nī*¦ 13〉 [CAPPELLER] supposes that [P. 1,3,36] may have had Bed. as an authority in mind.
+- **RU:** **1.** √*nī*¦ 13〉 [CAPPELLER] предполагает, что [P. 1,3,36](https://ashtadhyayi.com/sutraani/1/3/36) имел в виду значение Bed. быть авторитетом.
+- **EN:** **1.** √*nī*¦ 13〉 [CAPPELLER] supposes that [P. 1,3,36](https://ashtadhyayi.com/sutraani/1/3/36) may have had Bed. as an authority in mind.
   <sub>attested</sub>
 
-**with T9)** **1.** √*nī*¦ mit *vyava* einzeln eingiessen [ŚAT. BR. 5,1,2,19]. [ĀPAST. ŚR. 11,6,3]. [12,27,8]. [13,8,2].
+**with T9)** **1.** √*nī*¦ mit *vyava* einzeln eingiessen [ŚAT. BR. 5,1,2,19](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?5,1,2,19). [ĀPAST. ŚR. 11,6,3]. [12,27,8]. [13,8,2].
 
-- **RU:** **1.** √*nī*¦ с *vyava* вливать по отдельности [ŚAT. BR. 5,1,2,19]. [ĀPAST. ŚR. 11,6,3]. [12,27,8]. [13,8,2].
-- **EN:** **1.** √*nī*¦ with *vyava* to pour in singly, one by one [ŚAT. BR. 5,1,2,19]. [ĀPAST. ŚR. 11,6,3]. [12,27,8]. [13,8,2].
+- **RU:** **1.** √*nī*¦ с *vyava* вливать по отдельности [ŚAT. BR. 5,1,2,19](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?5,1,2,19). [ĀPAST. ŚR. 11,6,3]. [12,27,8]. [13,8,2].
+- **EN:** **1.** √*nī*¦ with *vyava* to pour in singly, one by one [ŚAT. BR. 5,1,2,19](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?5,1,2,19). [ĀPAST. ŚR. 11,6,3]. [12,27,8]. [13,8,2].
   <sub>attested</sub>
 
 **with T14)** — Mit *samava* 1〉 zusammenführen, vereinigen. — 2〉 zusammengiessen.
@@ -27,10 +27,10 @@
 - **EN:** — With *samava* 1〉 to bring together, unite. — 2〉 to pour together.
   <sub>attested</sub>
 
-**with T15)** — Mit *upa*, zu *upanayati* [ŚAT. BR. 2,3,2,2] vgl. [OLDENBERG] in [KUHNʼs Z. 27,281].
+**with T15)** — Mit *upa*, zu *upanayati* [ŚAT. BR. 2,3,2,2](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,3,2,2) vgl. [OLDENBERG] in [KUHNʼs Z. 27,281].
 
-- **RU:** С *upa*, к *upanayati* [ŚAT. BR. 2,3,2,2] vgl. [OLDENBERG] в [KUHNʼs Z. 27,281].
-- **EN:** — With *upa*, on *upanayati* [ŚAT. BR. 2,3,2,2] vgl. [OLDENBERG] in [KUHNʼs Z. 27,281].
+- **RU:** С *upa*, к *upanayati* [ŚAT. BR. 2,3,2,2](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,3,2,2) vgl. [OLDENBERG] в [KUHNʼs Z. 27,281].
+- **EN:** — With *upa*, on *upanayati* [ŚAT. BR. 2,3,2,2](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,3,2,2) vgl. [OLDENBERG] in [KUHNʼs Z. 27,281].
   <sub>attested</sub>
 
 **with T21)** — Mit *abhipra* auch hinführen zu (Acc.).

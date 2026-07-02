@@ -495,10 +495,10 @@
 - **EN:** — 3) to set in motion, to set going.
   <sub>attested</sub>
 
-**p19_4)** — 4〉 *lokapravāhitam* [MBH. 6,191] fehlerhaft für *˚pravāhinam*.
+**p19_4)** — 4〉 *lokapravāhitam* [MBH. 6,191](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.191) fehlerhaft für *˚pravāhinam*.
 
-- **RU:** — 4) *lokapravāhitam* [MBH. 6,191] ошибочно вместо *˚pravāhinam*.
-- **EN:** — 4) *lokapravāhitam* [MBH. 6,191] erroneous for *˚pravāhinam*.
+- **RU:** — 4) *lokapravāhitam* [MBH. 6,191](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.191) ошибочно вместо *˚pravāhinam*.
+- **EN:** — 4) *lokapravāhitam* [MBH. 6,191](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.191) erroneous for *˚pravāhinam*.
   <sub>lexicographic</sub>
 
 **p20_note)** — Mit *atipra* darüber hinaus führen, — ziehen.
@@ -537,10 +537,10 @@
 - **EN:** — With *saṃpra* in *saṃpravāha*.
   <sub>attested</sub>
 
-**p24_note)** — Mit *prati* entgegenführen. *pratyasya vaha* [TS. 1,5,3,1] fehlerhaft; vgl. [VS. 3,8].
+**p24_note)** — Mit *prati* entgegenführen. *pratyasya vaha* [TS. 1,5,3,1](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?1,5,3,1) fehlerhaft; vgl. [VS. 3,8](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?3,8).
 
-- **RU:** — С *prati* вести навстречу. *pratyasya vaha* [TS. 1,5,3,1] ошибочно; vgl. [VS. 3,8].
-- **EN:** — With *prati* to lead to meet, to lead towards. *pratyasya vaha* [TS. 1,5,3,1] erroneous; vgl. [VS. 3,8].
+- **RU:** — С *prati* вести навстречу. *pratyasya vaha* [TS. 1,5,3,1](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?1,5,3,1) ошибочно; vgl. [VS. 3,8](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?3,8).
+- **EN:** — With *prati* to lead to meet, to lead towards. *pratyasya vaha* [TS. 1,5,3,1](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?1,5,3,1) erroneous; vgl. [VS. 3,8](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?3,8).
   <sub>lexicographic</sub>
 
 **p25_intro)** — Mit *vi*

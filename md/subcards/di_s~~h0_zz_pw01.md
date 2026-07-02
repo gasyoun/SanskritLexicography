@@ -48,10 +48,10 @@
 - **EN:** — 6〉 to instruct —, teach —, inform someone [140,7]. [257,31]. to teach someone something (with double Acc.).
   <sub>DCS 4018 · attested</sub>
 
-**with anvā 7)** — 7〉 befehlen —, herrschen über (Acc.). — *upadiṣṭa* [HARIV. 8438] fehlerhaft für *upaviṣṭa*.
+**with anvā 7)** — 7〉 befehlen —, herrschen über (Acc.). — *upadiṣṭa* [HARIV. 8438](https://sanskrit-lexicon-scans.github.io/hariv?8438) fehlerhaft für *upaviṣṭa*.
 
-- **RU:** — 7〉 повелевать, властвовать над (Acc.). — *upadiṣṭa* [HARIV. 8438] fehlerhaft für *upaviṣṭa*.
-- **EN:** — 7〉 to command —, rule over (Acc.). — *upadiṣṭa* [HARIV. 8438] erroneous for *upaviṣṭa*.
+- **RU:** — 7〉 повелевать, властвовать над (Acc.). — *upadiṣṭa* [HARIV. 8438](https://sanskrit-lexicon-scans.github.io/hariv?8438) fehlerhaft für *upaviṣṭa*.
+- **EN:** — 7〉 to command —, rule over (Acc.). — *upadiṣṭa* [HARIV. 8438](https://sanskrit-lexicon-scans.github.io/hariv?8438) erroneous for *upaviṣṭa*.
   <sub>DCS 4018 · attested</sub>
 
 **with abhinir 1)** — Mit *pratyupa*
@@ -84,10 +84,10 @@
 - **EN:** — 2〉 to teach someone something, so v. a. to let become partaker of; with double Acc.
   <sub>DCS 4018 · attested</sub>
 
-**with samā)** — Mit *ni* in *nideśa nidiṣṭa* [PAÑCAT. 235,21] fehlerhaft für *nirdiṣṭa*.
+**with samā)** — Mit *ni* in *nideśa nidiṣṭa* [PAÑCAT. 235,21](https://sanskrit-lexicon-scans.github.io/pantankose/app2?235,21) fehlerhaft für *nirdiṣṭa*.
 
-- **RU:** — С *ni* в *nideśa nidiṣṭa* [PAÑCAT. 235,21] fehlerhaft für *nirdiṣṭa*.
-- **EN:** — With *ni* in *nideśa nidiṣṭa* [PAÑCAT. 235,21] erroneous for *nirdiṣṭa*.
+- **RU:** — С *ni* в *nideśa nidiṣṭa* [PAÑCAT. 235,21](https://sanskrit-lexicon-scans.github.io/pantankose/app2?235,21) fehlerhaft für *nirdiṣṭa*.
+- **EN:** — With *ni* in *nideśa nidiṣṭa* [PAÑCAT. 235,21](https://sanskrit-lexicon-scans.github.io/pantankose/app2?235,21) erroneous for *nirdiṣṭa*.
   <sub>DCS 4018 · attested</sub>
 
 **with ā 1)** — Mit *nis*
@@ -228,10 +228,10 @@
 — 1〉 to indicate, specify, declare as existing, assume.
   <sub>DCS 4018 · attested</sub>
 
-**with sam 2)** — 2〉 ausersehen [TBR. 3,2,3,4].
+**with sam 2)** — 2〉 ausersehen [TBR. 3,2,3,4](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?3,2,3,4).
 
-- **RU:** — 2〉 избирать, намечать [TBR. 3,2,3,4].
-- **EN:** — 2〉 to single out, select [TBR. 3,2,3,4].
+- **RU:** — 2〉 избирать, намечать [TBR. 3,2,3,4](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?3,2,3,4).
+- **EN:** — 2〉 to single out, select [TBR. 3,2,3,4](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?3,2,3,4).
   <sub>DCS 4018 · attested</sub>
 
 **with anu 1)** — Mit *pra*
@@ -255,10 +255,10 @@
 - **EN:** — 3〉 to direct, summon, urge someone.
   <sub>DCS 4018 · attested</sub>
 
-**with anu 4)** — 4〉 zuweisen, zutheilen, zukommen lassen, gewähren [MBH. 1,170,37].
+**with anu 4)** — 4〉 zuweisen, zutheilen, zukommen lassen, gewähren [MBH. 1,170,37](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?1,170,37).
 
-- **RU:** — 4〉 назначать, наделять, предоставлять, даровать [MBH. 1,170,37].
-- **EN:** — 4〉 to allot, apportion, let fall to, grant [MBH. 1,170,37].
+- **RU:** — 4〉 назначать, наделять, предоставлять, даровать [MBH. 1,170,37](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?1,170,37).
+- **EN:** — 4〉 to allot, apportion, let fall to, grant [MBH. 1,170,37](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?1,170,37).
   <sub>DCS 4018 · attested</sub>
 
 **with anu note1)** — Caus. Jmd auffordern, antreiben.
@@ -294,19 +294,19 @@
 - **EN:** — 2〉 to specify and prove with certainty.
   <sub>DCS 4018 · attested</sub>
 
-**with nis 3)** — 3〉 Jmd anweisen, unterweisen. — *saṃpradiśya* [MBH. 5,7208] fehlerhaft für *˚daśya*.
+**with nis 3)** — 3〉 Jmd anweisen, unterweisen. — *saṃpradiśya* [MBH. 5,7208](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7208) fehlerhaft für *˚daśya*.
 
-- **RU:** — 3〉 наставлять кого-л., обучать. — *saṃpradiśya* [MBH. 5,7208] fehlerhaft für *˚daśya*.
-- **EN:** — 3〉 to direct, instruct someone. — *saṃpradiśya* [MBH. 5,7208] erroneous for *˚daśya*.
+- **RU:** — 3〉 наставлять кого-л., обучать. — *saṃpradiśya* [MBH. 5,7208](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7208) fehlerhaft für *˚daśya*.
+- **EN:** — 3〉 to direct, instruct someone. — *saṃpradiśya* [MBH. 5,7208](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7208) erroneous for *˚daśya*.
   <sub>DCS 4018 · attested</sub>
 
 **with pra 1)** — Mit *prati* Caus.
-— 1〉 anzeigen, bezeichnen, angeben [MBH. 12,365,9].
+— 1〉 anzeigen, bezeichnen, angeben [MBH. 12,365,9](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,365,9).
 
 - **RU:** — С *prati* Caus.
-— 1〉 указывать, обозначать, сообщать [MBH. 12,365,9].
+— 1〉 указывать, обозначать, сообщать [MBH. 12,365,9](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,365,9).
 - **EN:** — With *prati* Caus.
-— 1〉 to indicate, designate, specify [MBH. 12,365,9].
+— 1〉 to indicate, designate, specify [MBH. 12,365,9](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,365,9).
   <sub>DCS 4018 · attested</sub>
 
 **with pra 2)** — 2〉 gestehen, beichten [KĀRAṆḌ. 31,5].
@@ -354,10 +354,10 @@
 - **EN:** — 6〉 to depute someone with a charge to someone (Dat.).
   <sub>DCS 4018 · attested</sub>
 
-**with prati note)** — Caus. Jmd auffordern eine Erklärung zu geben, sich über Etwas auszusprechen. v. l. ([MBH. 14,17,5]) *saṃcodita* st. *saṃdeśita*.
+**with prati note)** — Caus. Jmd auffordern eine Erklärung zu geben, sich über Etwas auszusprechen. v. l. ([MBH. 14,17,5](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?14,17,5)) *saṃcodita* st. *saṃdeśita*.
 
-- **RU:** — Caus. просить кого-л. дать объяснение, высказаться о чём-л.. v. l. ([MBH. 14,17,5]) *saṃcodita* st. *saṃdeśita*.
-- **EN:** — Caus. to call upon someone to give an explanation, to declare oneself about something. v. l. ([MBH. 14,17,5]) *saṃcodita* st. *saṃdeśita*.
+- **RU:** — Caus. просить кого-л. дать объяснение, высказаться о чём-л.. v. l. ([MBH. 14,17,5](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?14,17,5)) *saṃcodita* st. *saṃdeśita*.
+- **EN:** — Caus. to call upon someone to give an explanation, to declare oneself about something. v. l. ([MBH. 14,17,5](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?14,17,5)) *saṃcodita* st. *saṃdeśita*.
   <sub>DCS 4018 · attested</sub>
 
 **with vyā)** — Mit *anusam* überweisen.

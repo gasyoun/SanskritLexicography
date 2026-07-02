@@ -3,10 +3,10 @@
 `han~~h0_zz_pw00`
 
 
-**intro)** **1.** √*han*¦, *hanti* (*jahi* Imperat., *jahīhi* [mit **2.** *hā* verwechselt] [R. ed. Bomb. 4,24,33]), *hananti* st. *ghnanti* [SAṂSK. K. 95,a,2]. *hana* st. *jahi* [129,a,7]. *vyapahanat* [R. ed. Bomb. 3,51,18]. *hate* (3. Sg. Med.), *jighnate*, *jighnat* Partic. [SV.]
+**intro)** **1.** √*han*¦, *hanti* (*jahi* Imperat., *jahīhi* [mit **2.** *hā* verwechselt] [R. ed. Bomb. 4,24,33](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,24,33)), *hananti* st. *ghnanti* [SAṂSK. K. 95,a,2]. *hana* st. *jahi* [129,a,7]. *vyapahanat* [R. ed. Bomb. 3,51,18](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,51,18). *hate* (3. Sg. Med.), *jighnate*, *jighnat* Partic. [SV.]
 
-- **RU:** **1.** √*han*¦, *hanti* (*jahi* Imperat., *jahīhi* [смешивается с **2.** *hā*] [R. ed. Bomb. 4,24,33]), *hananti* st. *ghnanti* [SAṂSK. K. 95,a,2]. *hana* st. *jahi* [129,a,7]. *vyapahanat* [R. ed. Bomb. 3,51,18]. *hate* (3. Sg. Med.), *jighnate*, *jighnat* Partic. [SV.]
-- **EN:** **1.** √*han*¦, *hanti* (*jahi* Imperat., *jahīhi* [confused with **2.** *hā*] [R. ed. Bomb. 4,24,33]), *hananti* st. *ghnanti* [SAṂSK. K. 95,a,2]. *hana* st. *jahi* [129,a,7]. *vyapahanat* [R. ed. Bomb. 3,51,18]. *hate* (3. Sg. Med.), *jighnate*, *jighnat* Partic. [SV.]
+- **RU:** **1.** √*han*¦, *hanti* (*jahi* Imperat., *jahīhi* [смешивается с **2.** *hā*] [R. ed. Bomb. 4,24,33](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,24,33)), *hananti* st. *ghnanti* [SAṂSK. K. 95,a,2]. *hana* st. *jahi* [129,a,7]. *vyapahanat* [R. ed. Bomb. 3,51,18](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,51,18). *hate* (3. Sg. Med.), *jighnate*, *jighnat* Partic. [SV.]
+- **EN:** **1.** √*han*¦, *hanti* (*jahi* Imperat., *jahīhi* [confused with **2.** *hā*] [R. ed. Bomb. 4,24,33](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,24,33)), *hananti* st. *ghnanti* [SAṂSK. K. 95,a,2]. *hana* st. *jahi* [129,a,7]. *vyapahanat* [R. ed. Bomb. 3,51,18](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,51,18). *hate* (3. Sg. Med.), *jighnate*, *jighnat* Partic. [SV.]
   <sub>attested</sub>
 
 **1)** — 1〉 schlagen (mit Acc.), — auf (Loc.), hämmern, die Trommel —, einen Spielball —, eine Flüssigkeit schlagen (klopfen).
@@ -159,10 +159,10 @@
 - **EN:** — l〉 so v. a. worthless, of no use.
   <sub>attested</sub>
 
-**14m)** — m〉 mangelhaft [SĀH. D. 200,15].
+**14m)** — m〉 mangelhaft [SĀH. D. 200,15](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?200,15).
 
-- **RU:** — m〉 ущербный, неполный [SĀH. D. 200,15].
-- **EN:** — m〉 deficient, defective [SĀH. D. 200,15].
+- **RU:** — m〉 ущербный, неполный [SĀH. D. 200,15](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?200,15).
+- **EN:** — m〉 deficient, defective [SĀH. D. 200,15](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?200,15).
   <sub>attested</sub>
 
 **14n)** — n〉 nichtsnutzig, verwünscht [HARṢAC. 157,18]. **brāhmaṇihatā* (so!) eine nichtsnutzige Brahmanin.
@@ -363,10 +363,10 @@
 - **EN:** — d〉 thwarted, foiled.
   <sub>attested</sub>
 
-**apa2.4e)** — e〉 [KATHĀS. 84,8] fehlerhaft für *apahṛta*.
+**apa2.4e)** — e〉 [KATHĀS. 84,8](https://sanskrit-lexicon-scans.github.io/kss/index.html?84,8) fehlerhaft für *apahṛta*.
 
-- **RU:** — e〉 [KATHĀS. 84,8] ошибочно вместо *apahṛta*.
-- **EN:** — e〉 [KATHĀS. 84,8] erroneous for *apahṛta*.
+- **RU:** — e〉 [KATHĀS. 84,8](https://sanskrit-lexicon-scans.github.io/kss/index.html?84,8) ошибочно вместо *apahṛta*.
+- **EN:** — e〉 [KATHĀS. 84,8](https://sanskrit-lexicon-scans.github.io/kss/index.html?84,8) erroneous for *apahṛta*.
   <sub>attested</sub>
 
 **apa2.note)** — Desid. in *apajighāṃsu*.
@@ -387,10 +387,10 @@
 - **EN:** — With *vyapa*
   <sub>attested</sub>
 
-**aa.1)** — 1〉 anschlagen [R. ed. Bomb. 3,51,18].
+**aa.1)** — 1〉 anschlagen [R. ed. Bomb. 3,51,18](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,51,18).
 
-- **RU:** — 1〉 ударять, задевать [R. ed. Bomb. 3,51,18].
-- **EN:** — 1〉 to strike against [R. ed. Bomb. 3,51,18].
+- **RU:** — 1〉 ударять, задевать [R. ed. Bomb. 3,51,18](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,51,18).
+- **EN:** — 1〉 to strike against [R. ed. Bomb. 3,51,18](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,51,18).
   <sub>attested</sub>
 
 **aa.2)** — 2〉 wehren, verhindern.
@@ -411,10 +411,10 @@
 - **EN:** — With *abhi*
   <sub>attested</sub>
 
-**aabhi.1)** — 1〉 treffen mit Schlag oder Wurf, schlagen auf (Acc. [Spr. 7839]. [ŚIŚ. 14,73]), einschlagen in (Acc.), hinstossen.
+**aabhi.1)** — 1〉 treffen mit Schlag oder Wurf, schlagen auf (Acc. [Spr. 7839](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7839). [ŚIŚ. 14,73]), einschlagen in (Acc.), hinstossen.
 
-- **RU:** — 1〉 поражать ударом или броском, бить по (Acc. [Spr. 7839]. [ŚIŚ. 14,73]), врезаться в (Acc.), ударять, сшибать.
-- **EN:** — 1〉 to hit with a blow or a throw, to strike upon (Acc. [Spr. 7839]. [ŚIŚ. 14,73]), to strike into (Acc.), to push at, thrust.
+- **RU:** — 1〉 поражать ударом или броском, бить по (Acc. [Spr. 7839](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7839). [ŚIŚ. 14,73]), врезаться в (Acc.), ударять, сшибать.
+- **EN:** — 1〉 to hit with a blow or a throw, to strike upon (Acc. [Spr. 7839](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7839). [ŚIŚ. 14,73]), to strike into (Acc.), to push at, thrust.
   <sub>attested</sub>
 
 **aabhi.2)** — 2〉 erlegen.
@@ -489,10 +489,10 @@
 - **EN:** — Desid. desiderative: to wish to hit —, strike down.
   <sub>attested</sub>
 
-**aapa)** — Mit *samabhi* schlagen auf (Acc.), treffen [R. ed. Bomb. 4,19,20]. *hṛdi samabhihanyamānaḥ* [JĀTAKAM. 26].
+**aapa)** — Mit *samabhi* schlagen auf (Acc.), treffen [R. ed. Bomb. 4,19,20](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,19,20). *hṛdi samabhihanyamānaḥ* [JĀTAKAM. 26].
 
-- **RU:** — С *samabhi* бить по (Acc.), поражать [R. ed. Bomb. 4,19,20]. *hṛdi samabhihanyamānaḥ* [JĀTAKAM. 26].
-- **EN:** — With *samabhi* to strike upon (Acc.), to hit [R. ed. Bomb. 4,19,20]. *hṛdi samabhihanyamānaḥ* [JĀTAKAM. 26].
+- **RU:** — С *samabhi* бить по (Acc.), поражать [R. ed. Bomb. 4,19,20](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,19,20). *hṛdi samabhihanyamānaḥ* [JĀTAKAM. 26].
+- **EN:** — With *samabhi* to strike upon (Acc.), to hit [R. ed. Bomb. 4,19,20](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,19,20). *hṛdi samabhihanyamānaḥ* [JĀTAKAM. 26].
   <sub>attested</sub>
 
 **ni.intro)** — Mit *ava*
@@ -513,10 +513,10 @@
 - **EN:** — 2〉 to strike from above downward.
   <sub>attested</sub>
 
-**ni.3)** — 3〉 schlagen auf oder gegen (Acc.). Statt *āvajaghnatas* (= *avahanyamānasya* [NĪLAK.]) [MBH. 4,45,30]. liest [ed. Vardh. 4,43,30] *avajaghnuṣas*. Vgl. u. *abhini* 2〉.
+**ni.3)** — 3〉 schlagen auf oder gegen (Acc.). Statt *āvajaghnatas* (= *avahanyamānasya* [NĪLAK.]) [MBH. 4,45,30](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?4,45,30). liest [ed. Vardh. 4,43,30] *avajaghnuṣas*. Vgl. u. *abhini* 2〉.
 
-- **RU:** — 3〉 бить по или о (Acc.). Вместо *āvajaghnatas* (= *avahanyamānasya* [NĪLAK.]) [MBH. 4,45,30]. читает [ed. Vardh. 4,43,30] *avajaghnuṣas*. Vgl. u. *abhini* 2〉.
-- **EN:** — 3〉 to strike on or against (Acc.). Instead of *āvajaghnatas* (= *avahanyamānasya* [NĪLAK.]) [MBH. 4,45,30]. [ed. Vardh. 4,43,30] reads *avajaghnuṣas*. Vgl. u. *abhini* 2〉.
+- **RU:** — 3〉 бить по или о (Acc.). Вместо *āvajaghnatas* (= *avahanyamānasya* [NĪLAK.]) [MBH. 4,45,30](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?4,45,30). читает [ed. Vardh. 4,43,30] *avajaghnuṣas*. Vgl. u. *abhini* 2〉.
+- **EN:** — 3〉 to strike on or against (Acc.). Instead of *āvajaghnatas* (= *avahanyamānasya* [NĪLAK.]) [MBH. 4,45,30](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?4,45,30). [ed. Vardh. 4,43,30] reads *avajaghnuṣas*. Vgl. u. *abhini* 2〉.
   <sub>attested</sub>
 
 **ni.4)** — 4〉 zurückschlagen, — stossen; verscheuchen, abwehren.

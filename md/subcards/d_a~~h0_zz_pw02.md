@@ -6,11 +6,11 @@
 **T161-T162)** **2.** *dā*¦ _m._ Geber. Häufig am Ende eines Comp. _Adj._ gebend, verleihend.
 - **EN:** 2. *dā* _m._ giver. Frequently at the end of a Comp. _Adj._ giving, bestowing.
 
-**T163-T164)** **3.** √*dā*¦, *dāti, dyati*; Partic. *dina*, *dita*, **dāta*, *˚tta*; abschneiden, mähen. *dita* [BHĀG. P. 6,6,23] = *khaṇḍita* (Comm.) zerstückelt, verkleinert. *˚dina* getheilt in.
-- **EN:** 3. √*dā*, *dāti, dyati*; Partic. *dina*, *dita*, **dāta*, *˚tta*; to cut off, to mow. *dita* [BHĀG. P. 6,6,23] = *khaṇḍita* (Comm.) cut to pieces, diminished. *˚dina* divided into.
+**T163-T164)** **3.** √*dā*¦, *dāti, dyati*; Partic. *dina*, *dita*, **dāta*, *˚tta*; abschneiden, mähen. *dita* [BHĀG. P. 6,6,23](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,6,23) = *khaṇḍita* (Comm.) zerstückelt, verkleinert. *˚dina* getheilt in.
+- **EN:** 3. √*dā*, *dāti, dyati*; Partic. *dina*, *dita*, **dāta*, *˚tta*; to cut off, to mow. *dita* [BHĀG. P. 6,6,23](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,6,23) = *khaṇḍita* (Comm.) cut to pieces, diminished. *˚dina* divided into.
 
-**T165)** — Pass. *dīyate* wohl wehmüthig gestimmt sein [BHOJA-PR. 51,5]. [RĀJAT. 8,492].
-- **EN:** — Pass. *dīyate* probably to be in a wistful/melancholy mood [BHOJA-PR. 51,5]. [RĀJAT. 8,492].
+**T165)** — Pass. *dīyate* wohl wehmüthig gestimmt sein [BHOJA-PR. 51,5]. [RĀJAT. 8,492](https://sanskrit-lexicon-scans.github.io/rajatarcalc/app1?8,492).
+- **EN:** — Pass. *dīyate* probably to be in a wistful/melancholy mood [BHOJA-PR. 51,5]. [RĀJAT. 8,492](https://sanskrit-lexicon-scans.github.io/rajatarcalc/app1?8,492).
 
 **T166)** — *Desid. *ditsati*.
 - **EN:** — *Desid. *ditsati*.
@@ -41,8 +41,8 @@ Caus. *avadāpayate* to have divided off.
 **T176)** — Mit *paryava* ringsum Stücke abtrennen von (Acc.).
 - **EN:** — With *paryava* to cut pieces off all around from (Acc.).
 
-**T177)** — Mit *pratyava* je weiter abtheilen [TBR. 3,7,5,5].
-- **EN:** — With *pratyava* to divide off further and further [TBR. 3,7,5,5].
+**T177)** — Mit *pratyava* je weiter abtheilen [TBR. 3,7,5,5](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?3,7,5,5).
+- **EN:** — With *pratyava* to divide off further and further [TBR. 3,7,5,5](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?3,7,5,5).
 
 **T178)** — Mit *vyava* vertheilen.
 - **EN:** — With *vyava* to distribute.
@@ -137,8 +137,8 @@ Caus. *avadāpayate* to have divided off.
 **T216)** — Mit *vyava*, *˚dāyate* sich hell verbreiten. *˚dāta* (_f._ *ī*) glänzend weiss [TAITT. ĀR. 1,9,1. 17,1. 2].
 - **EN:** — With *vyava*, *˚dāyate* to spread brightly. *˚dāta* (_f._ *ī*) shining white [TAITT. ĀR. 1,9,1. 17,1. 2].
 
-**T217)** — Mit *ā*. Hierher zieht [NĪLAK.] *ādāyamāna* (= *parīkṣamāṇa* prüfend, untersuchend) [MBH. 1,187,25]. Wir haben die Form zu **1.** *dā* gestellt.
-- **EN:** — With *ā*. [NĪLAK.] assigns here *ādāyamāna* (= *parīkṣamāṇa* testing, examining) [MBH. 1,187,25]. We have placed the form under **1.** *dā*.
+**T217)** — Mit *ā*. Hierher zieht [NĪLAK.] *ādāyamāna* (= *parīkṣamāṇa* prüfend, untersuchend) [MBH. 1,187,25](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?1,187,25). Wir haben die Form zu **1.** *dā* gestellt.
+- **EN:** — With *ā*. [NĪLAK.] assigns here *ādāyamāna* (= *parīkṣamāṇa* testing, examining) [MBH. 1,187,25](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?1,187,25). We have placed the form under **1.** *dā*.
 
 **T220-T221)** **8.** **dā*¦ _f._ das Reinigen.
 - **EN:** 8. **dā* _f._ the purifying.
@@ -149,8 +149,8 @@ Caus. *avadāpayate* to have divided off.
 **T227-T229)** **1.** √*dā*¦ mit *ā*, *ātta*, so zu betonen.
 - **EN:** 1. √*dā* with *ā*, *ātta*, to be accented thus.
 
-**T230-T234)** **2.** *dā*¦, [ṚV. 6,16,26] gehört zu **2.** *dāś*; s. weiter unten.
-- **EN:** 2. *dā*, [ṚV. 6,16,26] belongs under **2.** *dāś*; s. further below.
+**T230-T234)** **2.** *dā*¦, [ṚV. 6,16,26](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.016.html#rv06.016.26) gehört zu **2.** *dāś*; s. weiter unten.
+- **EN:** 2. *dā*, [ṚV. 6,16,26](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.016.html#rv06.016.26) belongs under **2.** *dāś*; s. further below.
 
 **T235-T242)** **1.** √*dā*¦ mit *ā* III. 5.
 — Mit *upā* III. *anupādāya* Absol. sich nicht an die Welt klammernd [DIVYĀVAD. 655,4].

@@ -4,12 +4,12 @@
 
 
 **praṇi+dā)** — *praṇi*, ˚*dadāti*
-[P. 1,1,20], [Sch. 8,4,17],
+[P. 1,1,20](https://ashtadhyayi.com/sutraani/1/1/20), [Sch. 8,4,17],
 Sch.
-[VOP. 8,22.] [10,9.]
+[VOP. 8,22.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,22) [10,9.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?10,9)
 
 - **RU:** — *praṇi*, ˚*dadāti*
-[P. 1,1,20], [Sch. 8,4,17],
+[P. 1,1,20](https://ashtadhyayi.com/sutraani/1/1/20), [Sch. 8,4,17],
 Sch.
-[VOP. 8,22.] [10,9.]
+[VOP. 8,22.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,22) [10,9.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?10,9)
   <sub>DCS 2 · attested</sub>

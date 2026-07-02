@@ -39,10 +39,10 @@
 - **EN:** — With *upa* to fly toward, to hasten to (Acc. or Loc.).
   <sub>attested</sub>
 
-**mit_T4)** — Mit *ā — upa* hinzufliegen zu (Acc.) [ṚV. 5,78,1].
+**mit_T4)** — Mit *ā — upa* hinzufliegen zu (Acc.) [ṚV. 5,78,1](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.078.html#rv05.078.01).
 
-- **RU:** — Mit *ā — upa* подлетать к (Acc.) [ṚV. 5,78,1].
-- **EN:** — With *ā — upa* to fly up to (Acc.) [ṚV. 5,78,1].
+- **RU:** — Mit *ā — upa* подлетать к (Acc.) [ṚV. 5,78,1](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.078.html#rv05.078.01).
+- **EN:** — With *ā — upa* to fly up to (Acc.) [ṚV. 5,78,1](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.078.html#rv05.078.01).
   <sub>attested</sub>
 
 **mit_T7_1)** — 1〉 herabfliegen, sich niederlassen, sich herabstürzen, sich herablassen, — auf (Loc.). *pādayoḥ* sich Jmd (Gen.) zu Füssen werfen. *nabhonipatita* vom Himmel herabgeflogen.
@@ -329,10 +329,10 @@
 — 1〉 to cause to fall out.
   <sub>attested</sub>
 
-**mit_T103_caus_2)** — 2〉 *niṣpātita* [R. 2,75,15] fehlerhaft für *niṣpādita*; *niryātita* [ed. Bomb.]
+**mit_T103_caus_2)** — 2〉 *niṣpātita* [R. 2,75,15](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,75,15) fehlerhaft für *niṣpādita*; *niryātita* [ed. Bomb.]
 
-- **RU:** — 2〉 *niṣpātita* [R. 2,75,15] fehlerhaft für *niṣpādita*; *niryātita* [ed. Bomb.]
-- **EN:** — 2〉 *niṣpātita* [R. 2,75,15] erroneously for *niṣpādita*; *niryātita* [ed. Bomb.]
+- **RU:** — 2〉 *niṣpātita* [R. 2,75,15](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,75,15) fehlerhaft für *niṣpādita*; *niryātita* [ed. Bomb.]
+- **EN:** — 2〉 *niṣpātita* [R. 2,75,15](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,75,15) erroneously for *niṣpādita*; *niryātita* [ed. Bomb.]
   <sub>attested</sub>
 
 **mit_T109_1)** — 1〉 ausfliegen zu (Acc.).
@@ -492,10 +492,10 @@
 - **EN:** — 2〉 to pursue, to chase.
   <sub>attested</sub>
 
-**mit_T136_caus_3)** — 3〉 abwerfen [MBH. 7,36,33].
+**mit_T136_caus_3)** — 3〉 abwerfen [MBH. 7,36,33](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?7,36,33).
 
-- **RU:** — 3〉 сбрасывать [MBH. 7,36,33].
-- **EN:** — 3〉 to throw off [MBH. 7,36,33].
+- **RU:** — 3〉 сбрасывать [MBH. 7,36,33](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?7,36,33).
+- **EN:** — 3〉 to throw off [MBH. 7,36,33](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?7,36,33).
   <sub>attested</sub>
 
 **desid)** — Desid. (*pra — pipatiṣati*) davoneilen wollen.

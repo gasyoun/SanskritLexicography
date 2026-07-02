@@ -5,7 +5,7 @@
 
 **3)** — *ava*
  3) *nanvātmanyavadhīyatām* man richte doch die Aufmerksamkeit auf
-[Spr. 1412.]
+[Spr. 1412.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1412)
 - **EN:** — *ava*
  3) *nanvātmanyavadhīyatām* let one direct one's attention upon
-[Spr. 1412.]
+[Spr. 1412.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1412)

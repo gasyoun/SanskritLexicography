@@ -46,12 +46,12 @@
   <sub>attested</sub>
 
 **pra-1)** — Mit *pra*
-— 1〉 aufbrechen, hingehen zu (Acc. oder Loc.). Mit folgendem *antar* hineindringen in (Acc.) [ṚV. 10,42,8]
+— 1〉 aufbrechen, hingehen zu (Acc. oder Loc.). Mit folgendem *antar* hineindringen in (Acc.) [ṚV. 10,42,8](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.042.html#rv10.042.08)
 
 - **RU:** — С *pra*
-— 1) отправляться, идти к (Acc. или Loc.). Со следующим *antar* проникать в (Acc.) [ṚV. 10,42,8]
+— 1) отправляться, идти к (Acc. или Loc.). Со следующим *antar* проникать в (Acc.) [ṚV. 10,42,8](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.042.html#rv10.042.08)
 - **EN:** — With *pra*
-— 1) to set out, go to (Acc. or Loc.). With following *antar* to penetrate into (Acc.) [ṚV. 10,42,8]
+— 1) to set out, go to (Acc. or Loc.). With following *antar* to penetrate into (Acc.) [ṚV. 10,42,8](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.042.html#rv10.042.08)
   <sub>attested</sub>
 
 **pra-2)** — 2〉 schreiten zu, gehen an (Acc.).
@@ -60,10 +60,10 @@
 - **EN:** — 2) to proceed to, go about (Acc.).
   <sub>attested</sub>
 
-**pra-3)** — 3〉 gelangen zu, theilhaftig werden [ṚV. 8,8,10].
+**pra-3)** — 3〉 gelangen zu, theilhaftig werden [ṚV. 8,8,10](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.008.html#rv08.008.10).
 
-- **RU:** — 3) достигать, становиться причастным [ṚV. 8,8,10].
-- **EN:** — 3) to arrive at, partake of [ṚV. 8,8,10].
+- **RU:** — 3) достигать, становиться причастным [ṚV. 8,8,10](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.008.html#rv08.008.10).
+- **EN:** — 3) to arrive at, partake of [ṚV. 8,8,10](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.008.html#rv08.008.10).
   <sub>attested</sub>
 
 **pra-4)** — 4〉 **pragata* auseinanderstehend.
@@ -79,12 +79,12 @@
   <sub>attested</sub>
 
 **prati-1)** — Mit *prati*
-— 1〉 entgegenkommen [ṚV. 5,41,18]. entgegengehen.
+— 1〉 entgegenkommen [ṚV. 5,41,18](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.041.html#rv05.041.18). entgegengehen.
 
 - **RU:** — С *prati*
-— 1) идти навстречу [ṚV. 5,41,18]. выходить навстречу.
+— 1) идти навстречу [ṚV. 5,41,18](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.041.html#rv05.041.18). выходить навстречу.
 - **EN:** — With *prati*
-— 1) to come to meet [ṚV. 5,41,18]; to go to meet.
+— 1) to come to meet [ṚV. 5,41,18](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.041.html#rv05.041.18); to go to meet.
   <sub>attested</sub>
 
 **prati-2)** — 2〉 zurück-, heimkehren, — nach oder in (Acc.).
@@ -157,10 +157,10 @@
 - **EN:** — b) to come together —, present oneself at (Loc.).
   <sub>attested</sub>
 
-**sam-1c)** — c〉 theilhaftig werden, mit Instr. [ṚV. 5,42,18. 7,81,2].
+**sam-1c)** — c〉 theilhaftig werden, mit Instr. [ṚV. 5,42,18. 7,81,2](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.042.html#rv05.042.18).
 
-- **RU:** — c) становиться причастным, с Instr. [ṚV. 5,42,18. 7,81,2].
-- **EN:** — c) to partake of, with Instr. [ṚV. 5,42,18. 7,81,2].
+- **RU:** — c) становиться причастным, с Instr. [ṚV. 5,42,18. 7,81,2](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.042.html#rv05.042.18).
+- **EN:** — c) to partake of, with Instr. [ṚV. 5,42,18. 7,81,2](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.042.html#rv05.042.18).
   <sub>attested</sub>
 
 **sam-1d)** — d〉 abscheiden, sterben.
@@ -169,10 +169,10 @@
 - **EN:** — d) to depart, die.
   <sub>attested</sub>
 
-**sam-1e)** — e〉 zusammenpassen, zutreffen, entsprechen. *saṃgata* zutreffend, übereinstimmend mit (im Comp. vorangehend zu [Spr. 1539]).
+**sam-1e)** — e〉 zusammenpassen, zutreffen, entsprechen. *saṃgata* zutreffend, übereinstimmend mit (im Comp. vorangehend zu [Spr. 1539](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1539)).
 
-- **RU:** — e) соответствовать, совпадать, отвечать. *saṃgata* соответствующий, согласующийся с (в Comp., предшествующем к [Spr. 1539]).
-- **EN:** — e) to fit together, apply, correspond. *saṃgata* applicable, agreeing with (preceding in the Comp. to [Spr. 1539]).
+- **RU:** — e) соответствовать, совпадать, отвечать. *saṃgata* соответствующий, согласующийся с (в Comp., предшествующем к [Spr. 1539](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1539)).
+- **EN:** — e) to fit together, apply, correspond. *saṃgata* applicable, agreeing with (preceding in the Comp. to [Spr. 1539](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1539)).
   <sub>attested</sub>
 
 **sam-1f)** — f〉 mit Acc.
@@ -192,10 +192,10 @@
 — a) to go to, visit.
 — b) to have carnal intercourse with.
 
-**sam-3)** — 3〉 *samgata* eingeschrumpft. Statt *saṃgatam* [R. 3,25,7] liest [ed. Bomb. 3,19,10] besser *samgatāḥ* zusammengekommen.
+**sam-3)** — 3〉 *samgata* eingeschrumpft. Statt *saṃgatam* [R. 3,25,7](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,25,7) liest [ed. Bomb. 3,19,10] besser *samgatāḥ* zusammengekommen.
 
-- **RU:** — 3) *samgata* сморщенный, съёжившийся. Вместо *saṃgatam* [R. 3,25,7] [ed. Bomb. 3,19,10] читает лучше *samgatāḥ* сошедшийся.
-- **EN:** — 3) *samgata* shrunk. Instead of *saṃgatam* [R. 3,25,7] [ed. Bomb. 3,19,10] reads better *samgatāḥ* come together.
+- **RU:** — 3) *samgata* сморщенный, съёжившийся. Вместо *saṃgatam* [R. 3,25,7](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,25,7) [ed. Bomb. 3,19,10] читает лучше *samgatāḥ* сошедшийся.
+- **EN:** — 3) *samgata* shrunk. Instead of *saṃgatam* [R. 3,25,7](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,25,7) [ed. Bomb. 3,19,10] reads better *samgatāḥ* come together.
   <sub>attested</sub>
 
 **sam-caus-1)** — Caus.
@@ -225,10 +225,10 @@
 - **EN:** — 4) to let pass over to (Loc.), hand over.
   <sub>attested</sub>
 
-**sam-caus-5)** — 5〉 tödten (nach [NĪLAK.]) [MBH. 5,142,9].
+**sam-caus-5)** — 5〉 tödten (nach [NĪLAK.]) [MBH. 5,142,9](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?5,142,9).
 
-- **RU:** — 5) убивать (по [NĪLAK.]) [MBH. 5,142,9].
-- **EN:** — 5) to kill (according to [NĪLAK.]) [MBH. 5,142,9].
+- **RU:** — 5) убивать (по [NĪLAK.]) [MBH. 5,142,9](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?5,142,9).
+- **EN:** — 5) to kill (according to [NĪLAK.]) [MBH. 5,142,9](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?5,142,9).
   <sub>attested</sub>
 
 **sam-des-1)** — *Desid.

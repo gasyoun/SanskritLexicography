@@ -105,10 +105,10 @@
 - **EN:** — With *abhisam* to press simultaneously for (Acc.).
   <sub>attested</sub>
 
-**= 1.su, caused/impelled)** **2.** √*su*¦ = **1.** *sū*. Davon *sauti* (erst [ŚAT. BR.]) und *suhi* (v. l. *sūhi*). Partic. *suta* veranlasst, angetrieben ([ŚAT. BR. 9,3,4,5.] [4,3,12.] [13]).
+**= 1.su, caused/impelled)** **2.** √*su*¦ = **1.** *sū*. Davon *sauti* (erst [ŚAT. BR.]) und *suhi* (v. l. *sūhi*). Partic. *suta* veranlasst, angetrieben ([ŚAT. BR. 9,3,4,5.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?9,3,4,5) [4,3,12.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?9,4,3,12) [13](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?9,4,3,13)).
 
-- **RU:** **2.** √*su*¦ = **1.** *sū*. Отсюда *sauti* (лишь [ŚAT. BR.]) и *suhi* (v. l. *sūhi*). Partic. *suta* побуждённый, подстрекнутый ([ŚAT. BR. 9,3,4,5.] [4,3,12.] [13]).
-- **EN:** **2.** √*su* = **1.** *sū*. From it *sauti* (only [ŚAT. BR.]) and *suhi* (v. l. *sūhi*). Partic. *suta* caused, impelled ([ŚAT. BR. 9,3,4,5.] [4,3,12.] [13]).
+- **RU:** **2.** √*su*¦ = **1.** *sū*. Отсюда *sauti* (лишь [ŚAT. BR.]) и *suhi* (v. l. *sūhi*). Partic. *suta* побуждённый, подстрекнутый ([ŚAT. BR. 9,3,4,5.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?9,3,4,5) [4,3,12.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?9,4,3,12) [13](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?9,4,3,13)).
+- **EN:** **2.** √*su* = **1.** *sū*. From it *sauti* (only [ŚAT. BR.]) and *suhi* (v. l. *sūhi*). Partic. *suta* caused, impelled ([ŚAT. BR. 9,3,4,5.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?9,3,4,5) [4,3,12.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?9,4,3,12) [13](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?9,4,3,13)).
   <sub>attested</sub>
 
 **cross-reference)** **3.** *su*¦ _Adj._ in *dāvasu*.

@@ -3,6 +3,18 @@
 `p_a~~h0_zz_pw`
 
 
+**3.** √*pā*¦, *pāti*
+
+- **RU:** **3.** √*pā*¦, *pāti*
+- **EN:** **3.** √*pā*¦, *pāti*
+  <sub>attested</sub>
+
+**5.** √*pā*¦, *pipīte* (3, Pl. *pipate*) mit *ud* sich auflehnen, aufbegehren gegen, sich feindlich entgegenstellen. Partic. *utpipāna*.
+
+- **RU:** **5.** √*pā*¦, *pipīte* (3, Pl. *pipate*) с *ud* восставать, противиться, враждебно противостоять. Partic. *utpipāna*.
+- **EN:** **5.** √*pā*¦, *pipīte* (3, Pl. *pipate*) with *ud* to rebel, revolt against, oppose in a hostile manner. Partic. *utpipāna*.
+  <sub>attested</sub>
+
 **1)** **1.** *pā*¦, Präsensstämme: *pā, pip* (ganz vereinzelt) und *pib*; Act., seltener Med.; Absol. *pītvā*, **˚pāya* und *˚pīya*; *pīyate* pass.
 - **EN:** **1.** *pā*¦, present stems: *pā, pip* (quite isolated) and *pib*; Act., more rarely Med.; Absol. *pītvā*, **˚pāya* and *˚pīya*; *pīyate* pass.
 
@@ -69,10 +81,10 @@
 - **EN:** — β〉 soaked, dipped in oil (weapon).
   <sub>attested</sub>
 
-**4c)** — c〉 [MBH. 12,1722] fehlerhaft für *prīta*; [BHĀG. P. 7,9,32] ist *˚ātmanipītanidraḥ* zu verbinden.
+**4c)** — c〉 [MBH. 12,1722](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.1722) fehlerhaft für *prīta*; [BHĀG. P. 7,9,32](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,9,32) ist *˚ātmanipītanidraḥ* zu verbinden.
 
-- **RU:** — c〉 [MBH. 12,1722] ошибочно вместо *prīta*; [BHĀG. P. 7,9,32] следует соединять с *˚ātmanipītanidraḥ*.
-- **EN:** — c〉 [MBH. 12,1722] erroneously for *prīta*; [BHĀG. P. 7,9,32] is to be read with *˚ātmanipītanidraḥ*.
+- **RU:** — c〉 [MBH. 12,1722](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.1722) ошибочно вместо *prīta*; [BHĀG. P. 7,9,32](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,9,32) следует соединять с *˚ātmanipītanidraḥ*.
+- **EN:** — c〉 [MBH. 12,1722](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.1722) erroneously for *prīta*; [BHĀG. P. 7,9,32](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,9,32) is to be read with *˚ātmanipītanidraḥ*.
   <sub>attested</sub>
 
 **caus)** — Caus. *pāyayati, ˚te* (*pāpayati* fehlerhaft) tränken, zu trinken geben; mit doppeltem Acc. ([CARAKA. 6,11]) oder mit partitivem Gen. (nur in der älteren Sprache) des Trankes: Jmd (Instr.) saugen lassen an (Acc.) *pāyita*
@@ -99,10 +111,10 @@
 - **EN:** — 3〉 watered, thus v. a. dipped in (preceding in Comp.).
   <sub>attested</sub>
 
-**desid)** — Desid. *pipāsati* und *pipīṣati* (nur im [ṚV.]) Etwas trinken wollen, durstig sein. *pipāsant* ([ŚĀK. 72]) und *pipāsita* durstig.
+**desid)** — Desid. *pipāsati* und *pipīṣati* (nur im [ṚV.]) Etwas trinken wollen, durstig sein. *pipāsant* ([ŚĀK. 72](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?72)) und *pipāsita* durstig.
 
-- **RU:** — Desid. *pipāsati* и *pipīṣati* (только в [ṚV.]) хотеть пить что-л., испытывать жажду. *pipāsant* ([ŚĀK. 72]) и *pipāsita* жаждущий.
-- **EN:** — Desid. *pipāsati* and *pipīṣati* (only in [ṚV.]) to wish to drink something, to be thirsty. *pipāsant* ([ŚĀK. 72]) and *pipāsita* thirsty.
+- **RU:** — Desid. *pipāsati* и *pipīṣati* (только в [ṚV.]) хотеть пить что-л., испытывать жажду. *pipāsant* ([ŚĀK. 72](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?72)) и *pipāsita* жаждущий.
+- **EN:** — Desid. *pipāsati* and *pipīṣati* (only in [ṚV.]) to wish to drink something, to be thirsty. *pipāsant* ([ŚĀK. 72](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?72)) and *pipāsita* thirsty.
   <sub>attested</sub>
 
 **desid-caus)** — Desid. vom Caus. *pipāyayiṣati* zu trinken zu geben beabsichtigen.
@@ -123,10 +135,10 @@
 - **EN:** — 1〉 to drink greedily or repeatedly.
   <sub>attested</sub>
 
-**intens-2)** — 2〉 gierig —, wiederholt getrunken werden ([Spr. 7744]) gierig gesogen werden.
+**intens-2)** — 2〉 gierig —, wiederholt getrunken werden ([Spr. 7744](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7744)) gierig gesogen werden.
 
-- **RU:** — 2〉 жадно или многократно выпиваться ([Spr. 7744]), жадно всасываться.
-- **EN:** — 2〉 to be drunk greedily or repeatedly ([Spr. 7744]), to be greedily sucked.
+- **RU:** — 2〉 жадно или многократно выпиваться ([Spr. 7744](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7744)), жадно всасываться.
+- **EN:** — 2〉 to be drunk greedily or repeatedly ([Spr. 7744](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7744)), to be greedily sucked.
   <sub>attested</sub>
 
 **preverb-ā-caus)** — Mit *ati* Caus. in grosser Menge Jmd Etwas zu trinken geben, mit doppeltem Acc.
@@ -231,16 +243,16 @@
 - **EN:** — With *samā* to imbibe, suck out.
   <sub>attested</sub>
 
-**preverb-upa)** — Mit *ud*, *utpibante* [ŚAT. BR. 5,2,4,7.] [11] fehlerhaft für *utpipateḥ* vgl. **5.** *pā*.
+**preverb-upa)** — Mit *ud*, *utpibante* [ŚAT. BR. 5,2,4,7.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?5,2,4,7) [11](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?5,2,4,11) fehlerhaft für *utpipateḥ* vgl. **5.** *pā*.
 
-- **RU:** — С *ud*, *utpibante* [ŚAT. BR. 5,2,4,7.] [11] ошибочно вместо *utpipateḥ* vgl. **5.** *pā*.
-- **EN:** — With *ud*, *utpibante* [ŚAT. BR. 5,2,4,7.] [11] erroneously for *utpipateḥ* vgl. **5.** *pā*.
+- **RU:** — С *ud*, *utpibante* [ŚAT. BR. 5,2,4,7.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?5,2,4,7) [11](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?5,2,4,11) ошибочно вместо *utpipateḥ* vgl. **5.** *pā*.
+- **EN:** — With *ud*, *utpibante* [ŚAT. BR. 5,2,4,7.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?5,2,4,7) [11](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?5,2,4,11) erroneously for *utpipateḥ* vgl. **5.** *pā*.
   <sub>attested</sub>
 
-**preverb-pari)** — Mit *anūd* Med. herfallen über, sich stürzen auf (Acc.) [ŚAT. BR. 3,7,1,29. fgg.] Also gleichfalls Verwechselung mit **5.** *pā*
+**preverb-pari)** — Mit *anūd* Med. herfallen über, sich stürzen auf (Acc.) [ŚAT. BR. 3,7,1,29. fgg.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,7,1,29) Also gleichfalls Verwechselung mit **5.** *pā*
 
-- **RU:** — С *anūd* Med. набрасываться на, устремляться на (Acc.) [ŚAT. BR. 3,7,1,29. fgg.]. Следовательно, также смешение с **5.** *pā*
-- **EN:** — With *anūd* Med. to fall upon, rush at (Acc.) [ŚAT. BR. 3,7,1,29. fgg.] Also likewise a confusion with **5.** *pā*
+- **RU:** — С *anūd* Med. набрасываться на, устремляться на (Acc.) [ŚAT. BR. 3,7,1,29. fgg.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,7,1,29). Следовательно, также смешение с **5.** *pā*
+- **EN:** — With *anūd* Med. to fall upon, rush at (Acc.) [ŚAT. BR. 3,7,1,29. fgg.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,7,1,29) Also likewise a confusion with **5.** *pā*
   <sub>attested</sub>
 
 **preverb-pra-caus)** — Mit *upa* Caus. tränken {{MĀN.ŚR.1,2,5.8,3.3,5.Gṛhj.->[MĀN. ŚR. 1,2,5. 8,3. 3,5]. [MĀN. GṚHY. 2,4]||20160107|Dhaval Patel, Jim Funderburk.|https://github.com/sanskrit-lexicon/CORRECTIONS/issues/236|Inferred}}.
@@ -261,10 +273,10 @@
 - **EN:** — 1〉 to drink in, sip, drink at.
   <sub>attested</sub>
 
-**preverb-vi-2)** — 2〉 einsaugen. so v. a. absorbiren verschwinden machen [BHĀG. P. 7,9,32]. (*˚ātmanipīta˚* zu verbinden).
+**preverb-vi-2)** — 2〉 einsaugen. so v. a. absorbiren verschwinden machen [BHĀG. P. 7,9,32](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,9,32). (*˚ātmanipīta˚* zu verbinden).
 
-- **RU:** — 2〉 всасывать. Так v. a. поглощать, заставлять исчезнуть [BHĀG. P. 7,9,32]. (*˚ātmanipīta˚* следует соединять).
-- **EN:** — 2〉 to imbibe. thus v. a. to absorb, cause to disappear [BHĀG. P. 7,9,32]. (*˚ātmanipīta˚* to be read together).
+- **RU:** — 2〉 всасывать. Так v. a. поглощать, заставлять исчезнуть [BHĀG. P. 7,9,32](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,9,32). (*˚ātmanipīta˚* следует соединять).
+- **EN:** — 2〉 to imbibe. thus v. a. to absorb, cause to disappear [BHĀG. P. 7,9,32](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,9,32). (*˚ātmanipīta˚* to be read together).
   <sub>attested</sub>
 
 **preverb-vi-caus)** — Caus. einschlürfen lassen.
@@ -297,10 +309,10 @@
 - **EN:** — 1〉 to drink before and after someone (Acc.).
   <sub>attested</sub>
 
-**preverb-pari2-2)** — 2〉 austrinken, aussaugen, ausrauchen *paripītadhūpavarti* [KĀD. 18,6]. *upaniṣadaḥ paripītāḥ* so v. a. durchstudirt [Spr. 7772].
+**preverb-pari2-2)** — 2〉 austrinken, aussaugen, ausrauchen *paripītadhūpavarti* [KĀD. 18,6]. *upaniṣadaḥ paripītāḥ* so v. a. durchstudirt [Spr. 7772](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7772).
 
-- **RU:** — 2〉 выпивать до дна, высасывать, выкуривать *paripītadhūpavarti* [KĀD. 18,6]. *upaniṣadaḥ paripītāḥ* так v. a. основательно изученный [Spr. 7772].
-- **EN:** — 2〉 to drink up, suck out, smoke out *paripītadhūpavarti* [KĀD. 18,6]. *upaniṣadaḥ paripītāḥ* thus v. a. thoroughly studied [Spr. 7772].
+- **RU:** — 2〉 выпивать до дна, высасывать, выкуривать *paripītadhūpavarti* [KĀD. 18,6]. *upaniṣadaḥ paripītāḥ* так v. a. основательно изученный [Spr. 7772](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7772).
+- **EN:** — 2〉 to drink up, suck out, smoke out *paripītadhūpavarti* [KĀD. 18,6]. *upaniṣadaḥ paripītāḥ* thus v. a. thoroughly studied [Spr. 7772](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7772).
   <sub>attested</sub>
 
 **preverb-pari2-3)** — 3〉 benehmen, entziehen [KĀD. 90,13].
@@ -345,10 +357,10 @@
 - **EN:** — 1〉 to drink up, drink one's fill.
   <sub>attested</sub>
 
-**preverb-ut-2)** — 2〉 heraus trinken aus (Abl.) [VS. 19,73].
+**preverb-ut-2)** — 2〉 heraus trinken aus (Abl.) [VS. 19,73](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?19,73).
 
-- **RU:** — 2〉 вытягивать питьё из (Abl.) [VS. 19,73].
-- **EN:** — 2〉 to drink out from (Abl.) [VS. 19,73].
+- **RU:** — 2〉 вытягивать питьё из (Abl.) [VS. 19,73](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?19,73).
+- **EN:** — 2〉 to drink out from (Abl.) [VS. 19,73](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?19,73).
   <sub>attested</sub>
 
 **preverb-sam3)** — Mit *sam* Act. zusammen hineintrinken Med. zusammen trinken.
@@ -369,12 +381,6 @@
 - **EN:** **2.** *˚pā*¦ _Adj._ drinking.
   <sub>attested</sub>
 
-**head)** **3.** √*pā*¦, *pāti*
-
-- **RU:** **3.** √*pā*¦, *pāti*
-- **EN:** **3.** √*pā*¦, *pāti*
-  <sub>attested</sub>
-
 **1)** — 1〉 bewachen, bewahren, schützen, schirmen, hüten, — vor (Abl.) die Erde, das Land
 
 - **RU:** — 1〉 охранять, оберегать, защищать, укрывать, беречь — от (Abl.) землю, страну
@@ -393,10 +399,10 @@
 - **EN:** — With *adhi* in *˚pa* and *˚pā*.
   <sub>attested</sub>
 
-**preverb-upa)** — Mit *anu*, *˚pāhi* zu [Spr. 2597] wohl nur fehlerhaft für *˚yāhi*.
+**preverb-upa)** — Mit *anu*, *˚pāhi* zu [Spr. 2597](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2597) wohl nur fehlerhaft für *˚yāhi*.
 
-- **RU:** — С *anu*, *˚pāhi* к [Spr. 2597] — вероятно, лишь ошибочно вместо *˚yāhi*.
-- **EN:** — With *anu*, *˚pāhi* for [Spr. 2597] probably only erroneously for *˚yāhi*.
+- **RU:** — С *anu*, *˚pāhi* к [Spr. 2597](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2597) — вероятно, лишь ошибочно вместо *˚yāhi*.
+- **EN:** — With *anu*, *˚pāhi* for [Spr. 2597](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2597) probably only erroneously for *˚yāhi*.
   <sub>attested</sub>
 
 **preverb-pari)** — Mit *abhi*
@@ -469,12 +475,6 @@
 
 - **RU:** **4.** *˚pā*¦ _Adj._ охраняющий, оберегающий, защищающий u. s. w.
 - **EN:** **4.** *˚pā*¦ _Adj._ watching, guarding, protecting u. s. w.
-  <sub>attested</sub>
-
-**head)** **5.** √*pā*¦, *pipīte* (3, Pl. *pipate*) mit *ud* sich auflehnen, aufbegehren gegen, sich feindlich entgegenstellen. Partic. *utpipāna*.
-
-- **RU:** **5.** √*pā*¦, *pipīte* (3, Pl. *pipate*) с *ud* восставать, противиться, враждебно противостоять. Partic. *utpipāna*.
-- **EN:** **5.** √*pā*¦, *pipīte* (3, Pl. *pipate*) with *ud* to rebel, revolt against, oppose in a hostile manner. Partic. *utpipāna*.
   <sub>attested</sub>
 
 **preverb-pari)** — Mit *anūd* herfallen über, sich stürzen auf (Acc.) Vgl. **1.** *pā* mit *anūd*

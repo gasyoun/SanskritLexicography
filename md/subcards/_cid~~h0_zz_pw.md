@@ -14,10 +14,10 @@
 - **EN:** — 1〉 to cut off, hew off, strike off, tear off, gnaw off, bite off, cut through, hew through, tear through, split, pierce. *saṃdhim* to make a hole in the wall. Pass. to break, to tear (intrans.). *chinna* cut off u. s. w.; torn open, cut open; incised, d. h. provided with notches/constrictions [217,6].
   <sub>attested</sub>
 
-**2)** — 2〉 scheiden, trennen, — von (Abl., ausnahmsweise Instr.). *chinna* unterbrochen, nicht zusammenhängend. *˚chinna* auch begrenzt —, eingeschlossen von [Spr. 1229].
+**2)** — 2〉 scheiden, trennen, — von (Abl., ausnahmsweise Instr.). *chinna* unterbrochen, nicht zusammenhängend. *˚chinna* auch begrenzt —, eingeschlossen von [Spr. 1229](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1229).
 
-- **RU:** — 2〉 разлучать, отделять, — от (Abl., исключительно Instr.). *chinna* прерванный, не связный. *˚chinna* также ограниченный —, замкнутый [Spr. 1229].
-- **EN:** — 2〉 to separate, to sever, — from (Abl., exceptionally Instr.). *chinna* interrupted, not continuous. *˚chinna* also bounded by, enclosed by [Spr. 1229].
+- **RU:** — 2〉 разлучать, отделять, — от (Abl., исключительно Instr.). *chinna* прерванный, не связный. *˚chinna* также ограниченный —, замкнутый [Spr. 1229](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1229).
+- **EN:** — 2〉 to separate, to sever, — from (Abl., exceptionally Instr.). *chinna* interrupted, not continuous. *˚chinna* also bounded by, enclosed by [Spr. 1229](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1229).
   <sub>attested</sub>
 
 **3)** — 3〉 ablösen, -sondern, herausnehmen.
@@ -71,10 +71,10 @@
 - **EN:** — *Intens. *cecchidīti* and *cecchidyate*.
   <sub>lexicographic</sub>
 
-**ati)** — Mit *ati*, *˚cchinna* zu stark aufgeschnitten [SUŚR. 2,19,1]. zu stark zerhauen, — verwundet [MBH. 12,96,15].
+**ati)** — Mit *ati*, *˚cchinna* zu stark aufgeschnitten [SUŚR. 2,19,1]. zu stark zerhauen, — verwundet [MBH. 12,96,15](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,96,15).
 
-- **RU:** — Mit *ati*, *˚cchinna* чрезмерно надрезанный [SUŚR. 2,19,1]. чрезмерно изрубленный, — израненный [MBH. 12,96,15].
-- **EN:** — With *ati*, *˚cchinna* cut too deeply [SUŚR. 2,19,1]. too deeply hewn, — wounded [MBH. 12,96,15].
+- **RU:** — Mit *ati*, *˚cchinna* чрезмерно надрезанный [SUŚR. 2,19,1]. чрезмерно изрубленный, — израненный [MBH. 12,96,15](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,96,15).
+- **EN:** — With *ati*, *˚cchinna* cut too deeply [SUŚR. 2,19,1]. too deeply hewn, — wounded [MBH. 12,96,15](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,96,15).
   <sub>attested</sub>
 
 **ava)** — Mit *antar* abschneiden, intercludere [28,7].
@@ -128,8 +128,8 @@
 **pra-4)** — 4〉 unterbrechen.
 - **EN:** — 4〉 to interrupt.
 
-**pra-5)** — 5〉 abgrenzen, genau bestimmen [BHĀG. P. 4,29,45].
-- **EN:** — 5〉 to delimit, to determine precisely [BHĀG. P. 4,29,45].
+**pra-5)** — 5〉 abgrenzen, genau bestimmen [BHĀG. P. 4,29,45](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,29,45).
+- **EN:** — 5〉 to delimit, to determine precisely [BHĀG. P. 4,29,45](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,29,45).
 
 **pra-6)** — 6〉 sich entscheiden zu (*prati*).
 - **EN:** — 6〉 to decide upon (*prati*).
@@ -343,12 +343,12 @@
 - **EN:** **1.** √*chid*¦, *chindatprāṇi* (Nomin.) a grass-eating animal [ĀPAST. ŚR. 9,13,1]. [16,8].
   <sub>lexicographic</sub>
 
-**II-6)** **1.** √*chid*¦ II. 6. Auch lösen, entscheiden (einen Zweifel) [MBH. 1,71,17].
+**II-6)** **1.** √*chid*¦ II. 6. Auch lösen, entscheiden (einen Zweifel) [MBH. 1,71,17](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?1,71,17).
 — Mit *vipra* 4.
 
-- **RU:** **1.** √*chid*¦ II. 6. Также разрешать, решать (сомнение) [MBH. 1,71,17].
+- **RU:** **1.** √*chid*¦ II. 6. Также разрешать, решать (сомнение) [MBH. 1,71,17](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?1,71,17).
 — Mit *vipra* 4.
-- **EN:** **1.** √*chid*¦ II. 6. Also to resolve, to decide (a doubt) [MBH. 1,71,17].
+- **EN:** **1.** √*chid*¦ II. 6. Also to resolve, to decide (a doubt) [MBH. 1,71,17](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?1,71,17).
 — With *vipra* 4.
   <sub>attested</sub>
 
@@ -377,7 +377,7 @@
 — 2〉 abschneiden, abtrennen, scheiden, — von (Abl.).
 — 3〉 von einander reissen, aus e. thun.
 — 4〉 unterbrechen.
-— 5〉 abgrenzen, genau bestimmen [BHĀG. P. 4,29,45].
+— 5〉 abgrenzen, genau bestimmen [BHĀG. P. 4,29,45](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,29,45).
 — 6〉 sich entscheiden zu (*prati*).
 
 - **RU:** — Mit *vyava*
@@ -385,7 +385,7 @@
 — 2〉 срезать, отделять, разлучать, — от (Abl.).
 — 3〉 разрывать, вырывать из e..
 — 4〉 прерывать.
-— 5〉 разграничивать, точно определять [BHĀG. P. 4,29,45].
+— 5〉 разграничивать, точно определять [BHĀG. P. 4,29,45](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,29,45).
 — 6〉 решаться на (*prati*).
   <sub>attested</sub>
 

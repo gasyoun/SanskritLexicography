@@ -18,8 +18,8 @@
 **T197)** — Mit *api* und Acc.
 - **EN:** — With *api* and Acc.
 
-**T198)** — 1〉 eingehen —, eintreten in, hingehen zu, betreten (einen Weg) [ṚV. 10,2,3] (mit vorangehendem *ā*). eingehen in, so v. a. sich auflösen in [ŚAṂK. zu BĀDAR. 2,1,9].
-- **EN:** — 1〉 to enter —, step into, go toward, set foot on (a path) [ṚV. 10,2,3] (with *ā* preceding). To enter into, thus v. a. to dissolve into [ŚAṂK. zu BĀDAR. 2,1,9].
+**T198)** — 1〉 eingehen —, eintreten in, hingehen zu, betreten (einen Weg) [ṚV. 10,2,3](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.002.html#rv10.002.03) (mit vorangehendem *ā*). eingehen in, so v. a. sich auflösen in [ŚAṂK. zu BĀDAR. 2,1,9].
+- **EN:** — 1〉 to enter —, step into, go toward, set foot on (a path) [ṚV. 10,2,3](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.002.html#rv10.002.03) (with *ā* preceding). To enter into, thus v. a. to dissolve into [ŚAṂK. zu BĀDAR. 2,1,9].
 
 **T199)** — 2〉 gelangen zu, theilhaftig werden.
 - **EN:** — 2〉 to attain to, become a partaker of.
@@ -45,11 +45,11 @@
 **T206)** — 4〉 Jmd (Acc.) finden, antreffen.
 - **EN:** — 4〉 to find, come upon someone (Acc.).
 
-**T207)** — 5〉 fleischlich beiwohnen (von beiden Geschlechtern), mit Acc. [Spr. 7842].
-- **EN:** — 5〉 to have carnal intercourse with (of both sexes), with Acc. [Spr. 7842].
+**T207)** — 5〉 fleischlich beiwohnen (von beiden Geschlechtern), mit Acc. [Spr. 7842](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7842).
+- **EN:** — 5〉 to have carnal intercourse with (of both sexes), with Acc. [Spr. 7842](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7842).
 
-**T208)** — 6〉 sich machen an, sich hingeben. *cintām* [MBH. 9,42,10].
-- **EN:** — 6〉 to set about, give oneself over to. *cintām* [MBH. 9,42,10].
+**T208)** — 6〉 sich machen an, sich hingeben. *cintām* [MBH. 9,42,10](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?9,42,10).
+- **EN:** — 6〉 to set about, give oneself over to. *cintām* [MBH. 9,42,10](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?9,42,10).
 
 **T209)** — 7〉 erlangen, erwerben, theilhaftig werden. *nidrāmabhigataḥ* so v. a. eingeschlafen.
 - **EN:** — 7〉 to attain, acquire, become a partaker of. *nidrāmabhigataḥ* thus v. a. fallen asleep.
@@ -84,8 +84,8 @@
 **T219)** — 3〉 erlangen.
 - **EN:** — 3〉 to attain.
 
-**T220)** — 4〉 zu Etwas gelangen, reich oder mächtig werden [TS. 6,6,5,3.] [4].
-- **EN:** — 4〉 to attain to something, become rich or powerful [TS. 6,6,5,3.] [4].
+**T220)** — 4〉 zu Etwas gelangen, reich oder mächtig werden [TS. 6,6,5,3.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?6,6,5,3) [4](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?6,6,5,4).
+- **EN:** — 4〉 to attain to something, become rich or powerful [TS. 6,6,5,3.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?6,6,5,3) [4](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?6,6,5,4).
 
 **T221)** — 5〉 gehen an, unternehmen.
 - **EN:** — 5〉 to set about, undertake.
@@ -123,17 +123,17 @@
 **T232)** — Mit *ā*
 - **EN:** — With *ā*
 
-**T233)** — 1〉 herbeikommen, sich einstellen, kommen, — von (Abl.), — zu, in oder nach, treten an oder zu; mit Acc. oder Loc. *iha* [78,20]. *atra* [151,19]. Mit nachfolgendem *accha* [ṚV. 7,18,4].
-- **EN:** — 1〉 to come hither, present oneself, come, — from (Abl.), — to, into or toward, step up to or unto; with Acc. or Loc. *iha* [78,20]. *atra* [151,19]. With *accha* following [ṚV. 7,18,4].
+**T233)** — 1〉 herbeikommen, sich einstellen, kommen, — von (Abl.), — zu, in oder nach, treten an oder zu; mit Acc. oder Loc. *iha* [78,20]. *atra* [151,19]. Mit nachfolgendem *accha* [ṚV. 7,18,4](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.018.html#rv07.018.04).
+- **EN:** — 1〉 to come hither, present oneself, come, — from (Abl.), — to, into or toward, step up to or unto; with Acc. or Loc. *iha* [78,20]. *atra* [151,19]. With *accha* following [ṚV. 7,18,4](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.018.html#rv07.018.04).
 
 **T234)** — 2〉 wiederkommen, zurückkehren. Gewöhnlich mit *punar* [21,27]. [29,25].
 - **EN:** — 2〉 to come again, return. Usually with *punar* [21,27]. [29,25].
 
-**T235)** — 3〉 zusammenkommen mit (Instr.) [MBH. 3,68,34].
-- **EN:** — 3〉 to come together with (Instr.) [MBH. 3,68,34].
+**T235)** — 3〉 zusammenkommen mit (Instr.) [MBH. 3,68,34](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?3,68,34).
+- **EN:** — 3〉 to come together with (Instr.) [MBH. 3,68,34](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?3,68,34).
 
-**T236)** — 4〉 erreichen, treffen, zu Theil werden. *adṛṣṭaṃ bhayaṃ tvāmāgamiṣyati* [39,1]. Mit vorangehendem *acchā* [ṚV. 8,929].
-- **EN:** — 4〉 to reach, meet, fall to one's share. *adṛṣṭaṃ bhayaṃ tvāmāgamiṣyati* [39,1]. With *acchā* preceding [ṚV. 8,929].
+**T236)** — 4〉 erreichen, treffen, zu Theil werden. *adṛṣṭaṃ bhayaṃ tvāmāgamiṣyati* [39,1]. Mit vorangehendem *acchā* [ṚV. 8,929](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.929.html#rv08.929.01).
+- **EN:** — 4〉 to reach, meet, fall to one's share. *adṛṣṭaṃ bhayaṃ tvāmāgamiṣyati* [39,1]. With *acchā* preceding [ṚV. 8,929](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.929.html#rv08.929.01).
 
 **T237)** — 5〉 in einen Zustand eingehen, — gerathen, sich hingeben.
 - **EN:** — 5〉 to enter —, fall into, give oneself over to a state.
@@ -147,8 +147,8 @@
 **T240)** — a〉 herbeigekommen, gekommen (auch von der Zeit), — in oder zu (Acc., Loc. oder im Comp. vorangehend). Auch in Comp. mit dem Orte woher.
 - **EN:** — a〉 come hither, come (also of time), — into or to (Acc., Loc. or preceding in the Comp.). Also in Comp. with the place whence.
 
-**T241)** — b〉 zur Welt gekommen [Spr. 6533].
-- **EN:** — b〉 come into the world, born [Spr. 6533].
+**T241)** — b〉 zur Welt gekommen [Spr. 6533](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?6533).
+- **EN:** — b〉 come into the world, born [Spr. 6533](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?6533).
 
 **T242)** — c〉 zurückgekommen, wiedergekehrt. Gewöhnlich mit *punar*.
 - **EN:** — c〉 come back, returned. Usually with *punar*.
@@ -186,8 +186,8 @@
 **T253)** — 3〉 Kunde von Etwas (Acc.) erhalten, — sich verschaffen [GOBH. 1,5,12]. (Med.). [CARAKA. 1,8].
 - **EN:** — 3〉 to receive news of something (Acc.), — to procure it for oneself [GOBH. 1,5,12]. (Med.). [CARAKA. 1,8].
 
-**T254)** — 4〉 Etwas (Acc.) von Jmd (Abl.) lernen [222,10]. [RAGH. 10,72]. [Spr. 4213]. *āgamita* in Comp. mit dem Lehrer.
-- **EN:** — 4〉 to learn something (Acc.) from someone (Abl.) [222,10]. [RAGH. 10,72]. [Spr. 4213]. *āgamita* in Comp. with the teacher.
+**T254)** — 4〉 Etwas (Acc.) von Jmd (Abl.) lernen [222,10]. [RAGH. 10,72](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?10,72). [Spr. 4213](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4213). *āgamita* in Comp. mit dem Lehrer.
+- **EN:** — 4〉 to learn something (Acc.) from someone (Abl.) [222,10]. [RAGH. 10,72](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?10,72). [Spr. 4213](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4213). *āgamita* in Comp. with the teacher.
 
 **T255)** — 5〉 Med. die Zeit kommen lassen, abwarten, sich gedulden.
 - **EN:** — 5〉 Med. to let the time come, wait out, be patient.
@@ -213,8 +213,8 @@
 **T262)** — Mit *abhyā*
 - **EN:** — With *abhyā*
 
-**T263)** — 1〉 herbeikommen, kommen —, treten zu, besuchen. *˚gata* herbeigekommen, gekommen (auch von der Zeit), — zu oder nach (Acc.) *poṣaṇābhyāgata* gekommen um sich zu mästen [MBH. 13,71,31]. *kramāt* so v. a. ererbt.
-- **EN:** — 1〉 to come hither, come —, step up to, visit. *˚gata* come hither, come (also of time), — to or toward (Acc.) *poṣaṇābhyāgata* come in order to fatten oneself [MBH. 13,71,31]. *kramāt* thus v. a. inherited.
+**T263)** — 1〉 herbeikommen, kommen —, treten zu, besuchen. *˚gata* herbeigekommen, gekommen (auch von der Zeit), — zu oder nach (Acc.) *poṣaṇābhyāgata* gekommen um sich zu mästen [MBH. 13,71,31](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?13,71,31). *kramāt* so v. a. ererbt.
+- **EN:** — 1〉 to come hither, come —, step up to, visit. *˚gata* come hither, come (also of time), — to or toward (Acc.) *poṣaṇābhyāgata* come in order to fatten oneself [MBH. 13,71,31](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?13,71,31). *kramāt* thus v. a. inherited.
 
 **T264)** — 2〉 in einen Zustand —, in ein Verhältniss gerathen.
 - **EN:** — 2〉 to fall into a state —, into a relation.
@@ -225,8 +225,8 @@
 **T266)** Mit *punar* zurückkehren.
 - **EN:** With *punar* to return.
 
-**T267)** — Mit *avā* unternehmen, anstellen [ṚV. 3,31,14].
-- **EN:** — With *avā* to undertake, carry out [ṚV. 3,31,14].
+**T267)** — Mit *avā* unternehmen, anstellen [ṚV. 3,31,14](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.031.html#rv03.031.14).
+- **EN:** — With *avā* to undertake, carry out [ṚV. 3,31,14](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.031.html#rv03.031.14).
 
 **T268)** — Mit *samudā*, *˚gata* am Ende eines Comp. etwa hervorragend in.
 - **EN:** — With *samudā*, *˚gata* at the end of a Comp. approximately excelling in.
@@ -249,8 +249,8 @@
 **T274)** — 5〉 sich einstellen, zufallen, zu Theil werden.
 - **EN:** — 5〉 to present itself, fall to, become one's share.
 
-**T275)** — Mit *abhyupā*, *˚gata* gekommen zu oder in. *vyasanāya* so v. a. Unglück verheissend genaht (Schicksal) [R. GORR. 2,20,9].
-- **EN:** — With *abhyupā*, *˚gata* come to or into. *vyasanāya* thus v. a. approached portending misfortune (fate) [R. GORR. 2,20,9].
+**T275)** — Mit *abhyupā*, *˚gata* gekommen zu oder in. *vyasanāya* so v. a. Unglück verheissend genaht (Schicksal) [R. GORR. 2,20,9](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,20,9).
+- **EN:** — With *abhyupā*, *˚gata* come to or into. *vyasanāya* thus v. a. approached portending misfortune (fate) [R. GORR. 2,20,9](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,20,9).
 
 **T276)** — Mit *paryupā*, *˚gata* Pl. um Jmd herum stehend.
 - **EN:** — With *paryupā*, *˚gata* Pl. standing around someone.
@@ -279,8 +279,8 @@
 **T284)** — 1〉 den Kreislauf vollendet habend, abgelaufen.
 - **EN:** — 1〉 having completed the cycle, elapsed.
 
-**T285)** — 2〉 inveteratus [MBH. 5,48,89].
-- **EN:** — 2〉 inveteratus [MBH. 5,48,89].
+**T285)** — 2〉 inveteratus [MBH. 5,48,89](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?5,48,89).
+- **EN:** — 2〉 inveteratus [MBH. 5,48,89](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?5,48,89).
 
 **T286)** — 3〉 wieder inʼs Leben gekommen.
 - **EN:** — 3〉 come back to life.
@@ -328,9 +328,9 @@
 - **RU:** — С *api* и Acc.
   <sub>attested</sub>
 
-**pw_198_1)** — 1〉 eingehen —, eintreten in, hingehen zu, betreten (einen Weg) [ṚV. 10,2,3] (mit vorangehendem *ā*). eingehen in, so v. a. sich auflösen in [ŚAṂK. zu BĀDAR. 2,1,9].
+**pw_198_1)** — 1〉 eingehen —, eintreten in, hingehen zu, betreten (einen Weg) [ṚV. 10,2,3](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.002.html#rv10.002.03) (mit vorangehendem *ā*). eingehen in, so v. a. sich auflösen in [ŚAṂK. zu BĀDAR. 2,1,9].
 
-- **RU:** — 1〉 входить —, вступать в, направляться к, вступать на (путь) [ṚV. 10,2,3] (с предшествующим *ā*). входить в, так v. a. растворяться в [ŚAṂK. zu BĀDAR. 2,1,9].
+- **RU:** — 1〉 входить —, вступать в, направляться к, вступать на (путь) [ṚV. 10,2,3](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.002.html#rv10.002.03) (с предшествующим *ā*). входить в, так v. a. растворяться в [ŚAṂK. zu BĀDAR. 2,1,9].
   <sub>attested</sub>
 
 **pw_199_2)** — 2〉 gelangen zu, theilhaftig werden.
@@ -373,14 +373,14 @@
 - **RU:** — 4〉 находить —, заставать кого-л. (Acc.).
   <sub>attested</sub>
 
-**pw_207_5)** — 5〉 fleischlich beiwohnen (von beiden Geschlechtern), mit Acc. [Spr. 7842].
+**pw_207_5)** — 5〉 fleischlich beiwohnen (von beiden Geschlechtern), mit Acc. [Spr. 7842](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7842).
 
-- **RU:** — 5〉 иметь плотскую связь (о обоих полах), с Acc. [Spr. 7842].
+- **RU:** — 5〉 иметь плотскую связь (о обоих полах), с Acc. [Spr. 7842](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7842).
   <sub>attested</sub>
 
-**pw_208_6)** — 6〉 sich machen an, sich hingeben. *cintām* [MBH. 9,42,10].
+**pw_208_6)** — 6〉 sich machen an, sich hingeben. *cintām* [MBH. 9,42,10](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?9,42,10).
 
-- **RU:** — 6〉 приниматься за, предаваться. *cintām* [MBH. 9,42,10].
+- **RU:** — 6〉 приниматься за, предаваться. *cintām* [MBH. 9,42,10](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?9,42,10).
   <sub>attested</sub>
 
 **pw_209_7)** — 7〉 erlangen, erwerben, theilhaftig werden. *nidrāmabhigataḥ* so v. a. eingeschlafen.
@@ -438,9 +438,9 @@
 - **RU:** — 3〉 обретать.
   <sub>attested</sub>
 
-**pw_220_4)** — 4〉 zu Etwas gelangen, reich oder mächtig werden [TS. 6,6,5,3.] [4].
+**pw_220_4)** — 4〉 zu Etwas gelangen, reich oder mächtig werden [TS. 6,6,5,3.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?6,6,5,3) [4](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?6,6,5,4).
 
-- **RU:** — 4〉 достигать чего-л., становиться богатым или могущественным [TS. 6,6,5,3.] [4].
+- **RU:** — 4〉 достигать чего-л., становиться богатым или могущественным [TS. 6,6,5,3.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?6,6,5,3) [4](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?6,6,5,4).
   <sub>attested</sub>
 
 **pw_221_5)** — 5〉 gehen an, unternehmen.
@@ -503,9 +503,9 @@
 - **RU:** — С *ā*
   <sub>attested</sub>
 
-**pw_233_1)** — 1〉 herbeikommen, sich einstellen, kommen, — von (Abl.), — zu, in oder nach, treten an oder zu; mit Acc. oder Loc. *iha* [78,20]. *atra* [151,19]. Mit nachfolgendem *accha* [ṚV. 7,18,4].
+**pw_233_1)** — 1〉 herbeikommen, sich einstellen, kommen, — von (Abl.), — zu, in oder nach, treten an oder zu; mit Acc. oder Loc. *iha* [78,20]. *atra* [151,19]. Mit nachfolgendem *accha* [ṚV. 7,18,4](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.018.html#rv07.018.04).
 
-- **RU:** — 1〉 приходить, являться, приходить — от (Abl.), — к, в или в направлении, вступать в или подступать к; с Acc. или Loc. *iha* [78,20]. *atra* [151,19]. С последующим *accha* [ṚV. 7,18,4].
+- **RU:** — 1〉 приходить, являться, приходить — от (Abl.), — к, в или в направлении, вступать в или подступать к; с Acc. или Loc. *iha* [78,20]. *atra* [151,19]. С последующим *accha* [ṚV. 7,18,4](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.018.html#rv07.018.04).
   <sub>attested</sub>
 
 **pw_234_2)** — 2〉 wiederkommen, zurückkehren. Gewöhnlich mit *punar* [21,27]. [29,25].
@@ -513,14 +513,14 @@
 - **RU:** — 2〉 приходить снова, возвращаться. Обычно с *punar* [21,27]. [29,25].
   <sub>attested</sub>
 
-**pw_235_3)** — 3〉 zusammenkommen mit (Instr.) [MBH. 3,68,34].
+**pw_235_3)** — 3〉 zusammenkommen mit (Instr.) [MBH. 3,68,34](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?3,68,34).
 
-- **RU:** — 3〉 сходиться с (Instr.) [MBH. 3,68,34].
+- **RU:** — 3〉 сходиться с (Instr.) [MBH. 3,68,34](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?3,68,34).
   <sub>attested</sub>
 
-**pw_236_4)** — 4〉 erreichen, treffen, zu Theil werden. *adṛṣṭaṃ bhayaṃ tvāmāgamiṣyati* [39,1]. Mit vorangehendem *acchā* [ṚV. 8,929].
+**pw_236_4)** — 4〉 erreichen, treffen, zu Theil werden. *adṛṣṭaṃ bhayaṃ tvāmāgamiṣyati* [39,1]. Mit vorangehendem *acchā* [ṚV. 8,929](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.929.html#rv08.929.01).
 
-- **RU:** — 4〉 достигать, попадать, доставаться в удел. *adṛṣṭaṃ bhayaṃ tvāmāgamiṣyati* [39,1]. С предшествующим *acchā* [ṚV. 8,929].
+- **RU:** — 4〉 достигать, попадать, доставаться в удел. *adṛṣṭaṃ bhayaṃ tvāmāgamiṣyati* [39,1]. С предшествующим *acchā* [ṚV. 8,929](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.929.html#rv08.929.01).
   <sub>attested</sub>
 
 **pw_237_5)** — 5〉 in einen Zustand eingehen, — gerathen, sich hingeben.
@@ -543,9 +543,9 @@
 - **RU:** — a〉 пришедший (также о времени), — в или к (Acc., Loc. или предшествующее в Comp.). Также в Comp. с местом откуда.
   <sub>attested</sub>
 
-**pw_241_b)** — b〉 zur Welt gekommen [Spr. 6533].
+**pw_241_b)** — b〉 zur Welt gekommen [Spr. 6533](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?6533).
 
-- **RU:** — b〉 родившийся на свет [Spr. 6533].
+- **RU:** — b〉 родившийся на свет [Spr. 6533](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?6533).
   <sub>attested</sub>
 
 **pw_242_c)** — c〉 zurückgekommen, wiedergekehrt. Gewöhnlich mit *punar*.
@@ -608,9 +608,9 @@
 - **RU:** — 3〉 получать —, добывать себе весть о чём-л. (Acc.) [GOBH. 1,5,12]. (Med.). [CARAKA. 1,8].
   <sub>attested</sub>
 
-**pw_254_4)** — 4〉 Etwas (Acc.) von Jmd (Abl.) lernen [222,10]. [RAGH. 10,72]. [Spr. 4213]. *āgamita* in Comp. mit dem Lehrer.
+**pw_254_4)** — 4〉 Etwas (Acc.) von Jmd (Abl.) lernen [222,10]. [RAGH. 10,72](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?10,72). [Spr. 4213](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4213). *āgamita* in Comp. mit dem Lehrer.
 
-- **RU:** — 4〉 учиться чему-л. (Acc.) у кого-л. (Abl.) [222,10]. [RAGH. 10,72]. [Spr. 4213]. *āgamita* в Comp. с учителем.
+- **RU:** — 4〉 учиться чему-л. (Acc.) у кого-л. (Abl.) [222,10]. [RAGH. 10,72](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?10,72). [Spr. 4213](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4213). *āgamita* в Comp. с учителем.
   <sub>attested</sub>
 
 **pw_255_5)** — 5〉 Med. die Zeit kommen lassen, abwarten, sich gedulden.
@@ -653,9 +653,9 @@
 - **RU:** — С *abhyā*
   <sub>attested</sub>
 
-**pw_263_1)** — 1〉 herbeikommen, kommen —, treten zu, besuchen. *˚gata* herbeigekommen, gekommen (auch von der Zeit), — zu oder nach (Acc.) *poṣaṇābhyāgata* gekommen um sich zu mästen [MBH. 13,71,31]. *kramāt* so v. a. ererbt.
+**pw_263_1)** — 1〉 herbeikommen, kommen —, treten zu, besuchen. *˚gata* herbeigekommen, gekommen (auch von der Zeit), — zu oder nach (Acc.) *poṣaṇābhyāgata* gekommen um sich zu mästen [MBH. 13,71,31](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?13,71,31). *kramāt* so v. a. ererbt.
 
-- **RU:** — 1〉 приходить, приходить — к, вступать к, посещать. *˚gata* пришедший (также о времени), — к или в направлении (Acc.) *poṣaṇābhyāgata* пришедший, чтобы откормиться [MBH. 13,71,31]. *kramāt* так v. a. унаследованный.
+- **RU:** — 1〉 приходить, приходить — к, вступать к, посещать. *˚gata* пришедший (также о времени), — к или в направлении (Acc.) *poṣaṇābhyāgata* пришедший, чтобы откормиться [MBH. 13,71,31](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?13,71,31). *kramāt* так v. a. унаследованный.
   <sub>attested</sub>
 
 **pw_264_2)** — 2〉 in einen Zustand —, in ein Verhältniss gerathen.
@@ -673,9 +673,9 @@
 - **RU:** С *punar* возвращаться.
   <sub>attested</sub>
 
-**pw_267)** — Mit *avā* unternehmen, anstellen [ṚV. 3,31,14].
+**pw_267)** — Mit *avā* unternehmen, anstellen [ṚV. 3,31,14](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.031.html#rv03.031.14).
 
-- **RU:** — С *avā* предпринимать, устраивать [ṚV. 3,31,14].
+- **RU:** — С *avā* предпринимать, устраивать [ṚV. 3,31,14](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.031.html#rv03.031.14).
   <sub>attested</sub>
 
 **pw_268)** — Mit *samudā*, *˚gata* am Ende eines Comp. etwa hervorragend in.
@@ -713,9 +713,9 @@
 - **RU:** — 5〉 наступать, доставаться, выпадать на долю.
   <sub>attested</sub>
 
-**pw_275)** — Mit *abhyupā*, *˚gata* gekommen zu oder in. *vyasanāya* so v. a. Unglück verheissend genaht (Schicksal) [R. GORR. 2,20,9].
+**pw_275)** — Mit *abhyupā*, *˚gata* gekommen zu oder in. *vyasanāya* so v. a. Unglück verheissend genaht (Schicksal) [R. GORR. 2,20,9](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,20,9).
 
-- **RU:** — С *abhyupā*, *˚gata* пришедший к или в. *vyasanāya* так v. a. приблизившийся, суля несчастье (о судьбе) [R. GORR. 2,20,9].
+- **RU:** — С *abhyupā*, *˚gata* пришедший к или в. *vyasanāya* так v. a. приблизившийся, суля несчастье (о судьбе) [R. GORR. 2,20,9](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,20,9).
   <sub>attested</sub>
 
 **pw_276)** — Mit *paryupā*, *˚gata* Pl. um Jmd herum stehend.
@@ -763,9 +763,9 @@
 - **RU:** — 1〉 завершивший круговорот, истёкший.
   <sub>attested</sub>
 
-**pw_285_2)** — 2〉 inveteratus [MBH. 5,48,89].
+**pw_285_2)** — 2〉 inveteratus [MBH. 5,48,89](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?5,48,89).
 
-- **RU:** — 2〉 inveteratus [MBH. 5,48,89].
+- **RU:** — 2〉 inveteratus [MBH. 5,48,89](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?5,48,89).
   <sub>attested</sub>
 
 **pw_286_3)** — 3〉 wieder inʼs Leben gekommen.

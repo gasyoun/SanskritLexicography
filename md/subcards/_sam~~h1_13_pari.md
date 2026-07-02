@@ -4,10 +4,10 @@
 
 
 **pari)** — *pari* caus. beschwichtigen, aufhören machen: *kalikaluṣaṃ janayatu pariśamitam*
-[GĪT. 7,20.]
+[GĪT. 7,20.](https://sanskrit-lexicon-scans.github.io/gitagov/app1?7,20)
 
 - **RU:** — *pari* caus. умиротворять, заставить прекратить: *kalikaluṣaṃ janayatu pariśamitam*
-[GĪT. 7,20.]
+[GĪT. 7,20.](https://sanskrit-lexicon-scans.github.io/gitagov/app1?7,20)
 - **EN:** — *pari* caus. to appease, cause to cease: *kalikaluṣaṃ janayatu pariśamitam*
-[GĪT. 7,20.]
+[GĪT. 7,20.](https://sanskrit-lexicon-scans.github.io/gitagov/app1?7,20)
   <sub>attested</sub>

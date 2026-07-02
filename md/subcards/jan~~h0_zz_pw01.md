@@ -9,10 +9,10 @@
 - **EN:** With *upapra*, to be born in addition to (Acc.).
   <sub>attested</sub>
 
-**prefix2)** — Mit *prapra* stets aufʼs Neue entstehen [ṚV. 5,58,5].
+**prefix2)** — Mit *prapra* stets aufʼs Neue entstehen [ṚV. 5,58,5](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.058.html#rv05.058.05).
 
-- **RU:** — С *prapra* возникать всякий раз заново [ṚV. 5,58,5].
-- **EN:** With *prapra*, to come into existence ever anew [ṚV. 5,58,5].
+- **RU:** — С *prapra* возникать всякий раз заново [ṚV. 5,58,5](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.058.html#rv05.058.05).
+- **EN:** With *prapra*, to come into existence ever anew [ṚV. 5,58,5](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.058.html#rv05.058.05).
   <sub>attested</sub>
 
 **prefix3-intro)** — Mit *saṃpra*

@@ -18,10 +18,10 @@
 **3)** — Mit *sam* 4〉 mit oder ohne *ātmānam* seinem Leben ein Ende machen [ĀPAST. 1,25,2]. [7].
 - **EN:** — With *sam* 4) with or without *ātmānam* to put an end to one's life [ĀPAST. 1,25,2]. [7].
 
-**1)** √*āp*¦ mit *vi*, *vyāpta* 4〉 in Allem enthalten, überallhin verbreitet [Ind. St. 9,137]. Superl. *˚tama* [146]. *vyāptadeha* [ŚIŚ. 18,5] nach dem Comm. = *sarvāṅgīna*. Nach [MED. t. 57] ist *vyāpta* auch = *khyāta*.
+**1)** √*āp*¦ mit *vi*, *vyāpta* 4〉 in Allem enthalten, überallhin verbreitet [Ind. St. 9,137]. Superl. *˚tama* [146]. *vyāptadeha* [ŚIŚ. 18,5] nach dem Comm. = *sarvāṅgīna*. Nach [MED. t. 57](https://sanskrit-lexicon-scans.github.io/medini/app1?t,57) ist *vyāpta* auch = *khyāta*.
 
-- **RU:** √*āp*¦ mit *vi*, *vyāpta* 4〉 содержащийся во всём, распространённый повсюду [Ind. St. 9,137]. Superl. *˚tama* [146]. *vyāptadeha* [ŚIŚ. 18,5] nach dem Comm. = *sarvāṅgīna*. Nach [MED. t. 57] ist *vyāpta* auch = *khyāta*.
-- **EN:** √*āp* with *vi*, *vyāpta* 4) contained in everything, spread everywhere [Ind. St. 9,137]. Superl. *˚tama* [146]. *vyāptadeha* [ŚIŚ. 18,5] according to Comm. = *sarvāṅgīna*. According to [MED. t. 57], *vyāpta* is also = *khyāta*.
+- **RU:** √*āp*¦ mit *vi*, *vyāpta* 4〉 содержащийся во всём, распространённый повсюду [Ind. St. 9,137]. Superl. *˚tama* [146]. *vyāptadeha* [ŚIŚ. 18,5] nach dem Comm. = *sarvāṅgīna*. Nach [MED. t. 57](https://sanskrit-lexicon-scans.github.io/medini/app1?t,57) ist *vyāpta* auch = *khyāta*.
+- **EN:** √*āp* with *vi*, *vyāpta* 4) contained in everything, spread everywhere [Ind. St. 9,137]. Superl. *˚tama* [146]. *vyāptadeha* [ŚIŚ. 18,5] according to Comm. = *sarvāṅgīna*. According to [MED. t. 57](https://sanskrit-lexicon-scans.github.io/medini/app1?t,57), *vyāpta* is also = *khyāta*.
   <sub>DCS 2328 · attested</sub>
 
 **idx1)** √*āp*¦ mit *anu* Desid. 3.

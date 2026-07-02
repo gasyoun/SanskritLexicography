@@ -15,10 +15,10 @@
 - **EN:** **3.** √*pat*¦, *patyate* s. !√*paty*.
   <sub>attested</sub>
 
-**mit_T8)** **1.** √*pat*¦ mit *abhyud* Caus. auffliegen machen zu (Acc.) [ŚAT. BR. 1,8,2,14].
+**mit_T8)** **1.** √*pat*¦ mit *abhyud* Caus. auffliegen machen zu (Acc.) [ŚAT. BR. 1,8,2,14](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,8,2,14).
 
-- **RU:** **1.** √*pat*¦ mit *abhyud* Caus. заставлять взлетать к (Acc.) [ŚAT. BR. 1,8,2,14].
-- **EN:** **1.** √*pat*¦ with *abhyud* Caus. to cause to fly up to (Acc.) [ŚAT. BR. 1,8,2,14].
+- **RU:** **1.** √*pat*¦ mit *abhyud* Caus. заставлять взлетать к (Acc.) [ŚAT. BR. 1,8,2,14](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,8,2,14).
+- **EN:** **1.** √*pat*¦ with *abhyud* Caus. to cause to fly up to (Acc.) [ŚAT. BR. 1,8,2,14](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,8,2,14).
   <sub>attested</sub>
 
 **mit_T12_1)** — Mit *abhisam* 1〉 hinfliegen, hineilen zu, stürzen auf (Acc.) — 2〉 einherfliegen.

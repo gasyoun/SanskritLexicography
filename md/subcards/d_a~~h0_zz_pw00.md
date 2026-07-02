@@ -3,9 +3,9 @@
 `d_a~~h0_zz_pw00`
 
 
-**Präsensstämme)** **1.** √*dā*¦, Präsensstämme; *dadā* (Acc.), *dad* (Act. Med.), *dada* (Act. Med.), *dā, dāya* (nur *ādāyamāna* [MBH. 1,187,25]) und *dadāya* (nur Partic. *ādadāyant* [MUṆḌ. UP.]), Partic. *datta, ˚dāta, ˚dita* (s. u. *vyā*) und *˚tta*
+**Präsensstämme)** **1.** √*dā*¦, Präsensstämme; *dadā* (Acc.), *dad* (Act. Med.), *dada* (Act. Med.), *dā, dāya* (nur *ādāyamāna* [MBH. 1,187,25](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?1,187,25)) und *dadāya* (nur Partic. *ādadāyant* [MUṆḌ. UP.]), Partic. *datta, ˚dāta, ˚dita* (s. u. *vyā*) und *˚tta*
 
-- **RU:** **1.** √*dā*¦, основы настоящего времени; *dadā* (Acc.), *dad* (Act. Med.), *dada* (Act. Med.), *dā, dāya* (только *ādāyamāna* [MBH. 1,187,25]) и *dadāya* (только Partic. *ādadāyant* [MUṆḌ. UP.]), Partic. *datta, ˚dāta, ˚dita* (s. u. *vyā*) и *˚tta*
+- **RU:** **1.** √*dā*¦, основы настоящего времени; *dadā* (Acc.), *dad* (Act. Med.), *dada* (Act. Med.), *dā, dāya* (только *ādāyamāna* [MBH. 1,187,25](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?1,187,25)) и *dadāya* (только Partic. *ādadāyant* [MUṆḌ. UP.]), Partic. *datta, ˚dāta, ˚dita* (s. u. *vyā*) и *˚tta*
   <sub>DCS 12366 · attested</sub>
 
 **1)** — 1〉 geben, schenken, hingeben; mit Acc. oder partitivem Gen. der Sache und Dat., Gen. oder Loc. der Person. *kanyām* eine Tochter Jmd zur Frau (*bhāryām*, das jedoch gewöhnlich fehlt) geben. *datta* von einem Sohne, so v. a. von andern Eltern, überlassen.
@@ -118,9 +118,9 @@
 - **RU:** — 3〉 платить. **dāyita* = *dāyita*. С Abl. требовать от.
   <sub>DCS 12366 · attested</sub>
 
-**Kaus.4)** — 4〉 zurückzugeben, wiederzuverschaffen [RĀJAT. 6,50]. Auch so v. a. zurückfordern.
+**Kaus.4)** — 4〉 zurückzugeben, wiederzuverschaffen [RĀJAT. 6,50](https://sanskrit-lexicon-scans.github.io/rajatar/app1?6,50). Auch so v. a. zurückfordern.
 
-- **RU:** — 4〉 возвращать, восстанавливать [RĀJAT. 6,50]. Также так v. a. требовать обратно.
+- **RU:** — 4〉 возвращать, восстанавливать [RĀJAT. 6,50](https://sanskrit-lexicon-scans.github.io/rajatar/app1?6,50). Также так v. a. требовать обратно.
   <sub>DCS 12366 · attested</sub>
 
 **Kaus.5)** — 5〉 mitzutheilen, zu hören zu geben, auszusprechen, zu sprechen [216,15].
@@ -128,9 +128,9 @@
 - **RU:** — 5〉 сообщать, давать услышать, произносить, говорить [216,15].
   <sub>DCS 12366 · attested</sub>
 
-**Kaus.6)** — 6〉 hinzustellen, vorzuschieben [KATHĀS. 12,160]. aufzulegen —, aufzutragen auf (Loc.).
+**Kaus.6)** — 6〉 hinzustellen, vorzuschieben [KATHĀS. 12,160](https://sanskrit-lexicon-scans.github.io/kss/index.html?12,160). aufzulegen —, aufzutragen auf (Loc.).
 
-- **RU:** — 6〉 ставить, выдвигать вперёд [KATHĀS. 12,160]. накладывать —, наносить на (Loc.).
+- **RU:** — 6〉 ставить, выдвигать вперёд [KATHĀS. 12,160](https://sanskrit-lexicon-scans.github.io/kss/index.html?12,160). накладывать —, наносить на (Loc.).
   <sub>DCS 12366 · attested</sub>
 
 **Kaus.7)** — 7〉 zu thun, zu vollbringen, auszuführen, zu veranstalten. Auch so v. a. Jmd (Gen.) Etwas (Acc.) auftragen und Etwas erzwingen.
@@ -208,9 +208,9 @@
 - **RU:** — С *abhyava* вкладывать в (Loc.) [{{CARARA->CARAKA||20160103|Dhaval Patel, Jim Funderburk.|https://github.com/sanskrit-lexicon/CORRECTIONS/issues/216|It is not a typo. Print error.}}. 3,7].
   <sub>DCS 12366 · attested</sub>
 
-**mit ā (ādā))** — Mit *ā* gewöhnlich Med., Partic. *ātta, ādatta* nur [HARIV. 11811].
+**mit ā (ādā))** — Mit *ā* gewöhnlich Med., Partic. *ātta, ādatta* nur [HARIV. 11811](https://sanskrit-lexicon-scans.github.io/hariv?11811).
 
-- **RU:** — С *ā* обычно Med., Partic. *ātta, ādatta* только [HARIV. 11811].
+- **RU:** — С *ā* обычно Med., Partic. *ātta, ādatta* только [HARIV. 11811](https://sanskrit-lexicon-scans.github.io/hariv?11811).
   <sub>DCS 12366 · attested</sub>
 
 **ādā.1)** — 1〉 in Empfang nehmen, erhalten, in Besitz nehmen, empfangen von (Loc., Instr. oder Abl.). *garbham* eine Leibesfrucht empfangen.
@@ -373,9 +373,9 @@
 - **RU:** — 3〉 брать с собой. *upādāya* в сопровождении, вместе с; с Acc.
   <sub>DCS 12366 · attested</sub>
 
-**upādā.4)** — 4〉 ergreifen, in die Hand nehmen, fassen, auffangen (Feuer); pflücken, lesen, auflesen [MBH. 7,23,22]. [Chr. 121,25]. schöpfen (Wasser). *śulāgre* so v. a. stecken auf [R. 3,7,7].
+**upādā.4)** — 4〉 ergreifen, in die Hand nehmen, fassen, auffangen (Feuer); pflücken, lesen, auflesen [MBH. 7,23,22](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?7,23,22). [Chr. 121,25]. schöpfen (Wasser). *śulāgre* so v. a. stecken auf [R. 3,7,7](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,7,7).
 
-- **RU:** — 4〉 схватывать, брать в руку, хватать, улавливать (огонь); срывать, собирать, подбирать [MBH. 7,23,22]. [Chr. 121,25]. черпать (воду). *śulāgre* так v. a. насаживать на [R. 3,7,7].
+- **RU:** — 4〉 схватывать, брать в руку, хватать, улавливать (огонь); срывать, собирать, подбирать [MBH. 7,23,22](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?7,23,22). [Chr. 121,25]. черпать (воду). *śulāgre* так v. a. насаживать на [R. 3,7,7](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,7,7).
   <sub>DCS 12366 · attested</sub>
 
 **upādā.5)** — 5〉 anlegen, annehmen (einen Körper).
@@ -403,9 +403,9 @@
 - **RU:** — 9〉 понимать, рассматривать. *upādhatsva* v. l. за *upādatsva*.
   <sub>DCS 12366 · attested</sub>
 
-**upādā.10)** — 10〉 hinzunehmen, einschliessen, einrechnen. *upādāya* mit Einschluss von, zugleich mit, ausser, nächst; mit Acc. [R. ed. Bomb. 1,5,1]. [{{CARARA->CARAKA||20160103|Dhaval Patel, Jim Funderburk.|https://github.com/sanskrit-lexicon/CORRECTIONS/issues/216|It is not a typo. Print error.}}. 4,8]. *garbhaśayyām* schon von dem Augenblicke an, dass man im Mutterleibe liegt. *nadīṃ nairañjanām* vom Flusse N. an [LALIT. 341,12]. Könnte also auch zu 12〉 gezogen werden.
+**upādā.10)** — 10〉 hinzunehmen, einschliessen, einrechnen. *upādāya* mit Einschluss von, zugleich mit, ausser, nächst; mit Acc. [R. ed. Bomb. 1,5,1](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?1,5,1). [{{CARARA->CARAKA||20160103|Dhaval Patel, Jim Funderburk.|https://github.com/sanskrit-lexicon/CORRECTIONS/issues/216|It is not a typo. Print error.}}. 4,8]. *garbhaśayyām* schon von dem Augenblicke an, dass man im Mutterleibe liegt. *nadīṃ nairañjanām* vom Flusse N. an [LALIT. 341,12]. Könnte also auch zu 12〉 gezogen werden.
 
-- **RU:** — 10〉 прибавлять, включать, учитывать в числе. *upādāya* включая, вместе с, помимо, рядом с; с Acc. [R. ed. Bomb. 1,5,1]. [{{CARARA->CARAKA||20160103|Dhaval Patel, Jim Funderburk.|https://github.com/sanskrit-lexicon/CORRECTIONS/issues/216|It is not a typo. Print error.}}. 4,8]. *garbhaśayyām* уже с того момента, как находишься в материнском чреве. *nadīṃ nairañjanām* от реки N. вплоть до [LALIT. 341,12]. Может быть поэтому также отнесено к 12〉.
+- **RU:** — 10〉 прибавлять, включать, учитывать в числе. *upādāya* включая, вместе с, помимо, рядом с; с Acc. [R. ed. Bomb. 1,5,1](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?1,5,1). [{{CARARA->CARAKA||20160103|Dhaval Patel, Jim Funderburk.|https://github.com/sanskrit-lexicon/CORRECTIONS/issues/216|It is not a typo. Print error.}}. 4,8]. *garbhaśayyām* уже с того момента, как находишься в материнском чреве. *nadīṃ nairañjanām* от реки N. вплоть до [LALIT. 341,12]. Может быть поэтому также отнесено к 12〉.
   <sub>DCS 12366 · attested</sub>
 
 **upādā.11)** — 11〉 in Anwendung bringen, verwenden, brauchen [ŚAṂK. zu BĀDAR. 2,1,18 (S. 461)]. *upādāya* mit Hülfe von, vermittelst; mit Acc.
@@ -418,9 +418,9 @@
 - **RU:** — 12〉 приступать, браться за, начинать. С Infin. начинать. *upādāya* начиная от —; vgl. u. 10〉.
   <sub>DCS 12366 · attested</sub>
 
-**upādā.13)** — 13〉 sich einem Gefühl, einer Stimmung hingeben. *śokam* ([MBH. 7,9,8]), *harṣam, anukampām*.
+**upādā.13)** — 13〉 sich einem Gefühl, einer Stimmung hingeben. *śokam* ([MBH. 7,9,8](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?7,9,8)), *harṣam, anukampām*.
 
-- **RU:** — 13〉 предаваться чувству, настроению. *śokam* ([MBH. 7,9,8]), *harṣam, anukampām*.
+- **RU:** — 13〉 предаваться чувству, настроению. *śokam* ([MBH. 7,9,8](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?7,9,8)), *harṣam, anukampām*.
   <sub>DCS 12366 · attested</sub>
 
 **upādā.14)** — 14〉 abthun, abschliessen. *upātta* abgethan [ĀPAST. 1,12,5].
@@ -468,9 +468,9 @@
 - **RU:** — 4〉 надевать, водружать.
   <sub>DCS 12366 · attested</sub>
 
-**samdā.5)** — 5〉 brauchen. *samupādāya* mit Hülfe von, vermittelst; mit Acc. [R. 2,25,25].
+**samdā.5)** — 5〉 brauchen. *samupādāya* mit Hülfe von, vermittelst; mit Acc. [R. 2,25,25](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,25,25).
 
-- **RU:** — 5〉 употреблять. *samupādāya* с помощью, посредством; с Acc. [R. 2,25,25].
+- **RU:** — 5〉 употреблять. *samupādāya* с помощью, посредством; с Acc. [R. 2,25,25](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,25,25).
   <sub>DCS 12366 · attested</sub>
 
 **mit vi)** — Mit *paryā*.

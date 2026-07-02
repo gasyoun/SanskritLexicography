@@ -4,13 +4,13 @@
 
 
 **1)** — intens. *śaṃśanti, śaṃśāntas*
-[P. 6,4,15], Schol. vollständig erlöschen: *tejāṃsi śaṃśamāṃ cakruḥ*
-[BHAṬṬ. 14,67.]
+[P. 6,4,15](https://ashtadhyayi.com/sutraani/6/4/15), Schol. vollständig erlöschen: *tejāṃsi śaṃśamāṃ cakruḥ*
+[BHAṬṬ. 14,67.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?14,67)
 
 - **RU:** — intens. *śaṃśanti, śaṃśāntas*
-[P. 6,4,15], Schol. полностью угасать: *tejāṃsi śaṃśamāṃ cakruḥ*
-[BHAṬṬ. 14,67.]
+[P. 6,4,15](https://ashtadhyayi.com/sutraani/6/4/15), Schol. полностью угасать: *tejāṃsi śaṃśamāṃ cakruḥ*
+[BHAṬṬ. 14,67.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?14,67)
 - **EN:** — intens. *śaṃśanti, śaṃśāntas*
-[P. 6,4,15], Schol. to be completely extinguished: *tejāṃsi śaṃśamāṃ cakruḥ*
-[BHAṬṬ. 14,67.]
+[P. 6,4,15](https://ashtadhyayi.com/sutraani/6/4/15), Schol. to be completely extinguished: *tejāṃsi śaṃśamāṃ cakruḥ*
+[BHAṬṬ. 14,67.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?14,67)
   <sub>attested</sub>

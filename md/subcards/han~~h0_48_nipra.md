@@ -4,10 +4,10 @@
 
 
 **1)** — *nipra* mit gen.: *caurasya niprahanti*
-[P. 2,3,56], Schol.
+[P. 2,3,56](https://ashtadhyayi.com/sutraani/2/3/56), Schol.
 
 - **RU:** — *nipra* с gen.: *caurasya niprahanti*
-[P. 2,3,56], Schol.
+[P. 2,3,56](https://ashtadhyayi.com/sutraani/2/3/56), Schol.
 - **EN:** — *nipra* with gen.: *caurasya niprahanti*
-[P. 2,3,56], Schol.
+[P. 2,3,56](https://ashtadhyayi.com/sutraani/2/3/56), Schol.
   <sub>attested</sub>

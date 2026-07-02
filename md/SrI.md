@@ -8,59 +8,59 @@ _PWG article — 1 sub-card(s), 78 sense(s) · RU 78/78 · EN 0/78_
 
 
 **1)** 1. *śrī*¦ (= *śrā), śrīṇāti, śrīṇīte (pāke)*
-[DHĀTUP. 33,1.] *taṃ dhānābhiraśrīṇāttaṃ śṛtaṃ bhūtamajuhot*
-[TS. 6,5,9,1.] [2.]
-[VS. 6,18.]
+[DHĀTUP. 33,1.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=33) *taṃ dhānābhiraśrīṇāttaṃ śṛtaṃ bhūtamajuhot*
+[TS. 6,5,9,1.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?6,5,9,1) [2.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?6,5,9,2)
+[VS. 6,18.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?6,18)
 [PAÑCAV. BR. 8,2,10. 11] (= *apacat* Comm.). *gharmam*
-[AV. 4,1,2.]
+[AV. 4,1,2.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av04.001.html#av04.001.02)
 
 - **RU:** 1. *śrī*¦ (= *śrā), śrīṇāti, śrīṇīte (pāke)*
-[DHĀTUP. 33,1.] *taṃ dhānābhiraśrīṇāttaṃ śṛtaṃ bhūtamajuhot*
-[TS. 6,5,9,1.] [2.]
-[VS. 6,18.]
+[DHĀTUP. 33,1.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=33) *taṃ dhānābhiraśrīṇāttaṃ śṛtaṃ bhūtamajuhot*
+[TS. 6,5,9,1.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?6,5,9,1) [2.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?6,5,9,2)
+[VS. 6,18.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?6,18)
 [PAÑCAV. BR. 8,2,10. 11] (= *apacat* Comm.). *gharmam*
-[AV. 4,1,2.]
+[AV. 4,1,2.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av04.001.html#av04.001.02)
 [глагольный корень; PW редакция: √śrā = 1. √śrī «варить»]
   <sub>attested</sub>
 
 **2 (addenda, keyed to sense 1))** 2. *śrī*¦, *śrīṇāti, aśiśrayus* mengen, mischen,
 κεράννυμι: *somam*
-[ṚV. 1,84,11.] [8,2,11.] *gobhiḥ*
-[9,46,4.] [71,4.] [107,2.] [8,2,3.] *payasaiva me somaṃ śrīṇan*
-[TS. 6,4,8,1.]
+[ṚV. 1,84,11.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.084.html#rv01.084.11) [8,2,11.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.002.html#rv08.002.11) *gobhiḥ*
+[9,46,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.046.html#rv09.046.04) [71,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.071.html#rv09.071.04) [107,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.107.html#rv09.107.02) [8,2,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.002.html#rv08.002.03) *payasaiva me somaṃ śrīṇan*
+[TS. 6,4,8,1.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?6,4,8,1)
 [PAÑCAV. BR. 18,4,2. 4.]
-[ŚAT. BR. 4,1,4,8.] [4,2,13.] [12,7,3,19.] med. [ṚV. 8,90,9.] *gobhiḥ śrīṇānaḥ*
-[9,109,17.] [24,1.] *ubhe sarpiṣo darvī śrīṇīṣa āsani*
-[5,6,9.] partic. *śrīta*
-[8,2,28.] *gobhiḥ śrīto madāya kam*
-[71,5.] [9.] [109,15.] Vgl. *gośrīta* . — *śrīṇan*
-[ṚV. 1,68,1] [8.] unter 1. *śri* .
+[ŚAT. BR. 4,1,4,8.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?4,1,4,8) [4,2,13.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?4,4,2,13) [12,7,3,19.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?12,7,3,19) med. [ṚV. 8,90,9.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.090.html#rv08.090.09) *gobhiḥ śrīṇānaḥ*
+[9,109,17.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.109.html#rv09.109.17) [24,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.024.html#rv09.024.01) *ubhe sarpiṣo darvī śrīṇīṣa āsani*
+[5,6,9.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.006.html#rv05.006.09) partic. *śrīta*
+[8,2,28.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.002.html#rv08.002.28) *gobhiḥ śrīto madāya kam*
+[71,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.071.html#rv08.071.05) [9.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.071.html#rv08.071.09) [109,15.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.109.html#rv08.109.15) Vgl. *gośrīta* . — *śrīṇan*
+[ṚV. 1,68,1](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.068.html#rv01.068.01) [8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.068.html#rv01.068.08) unter 1. *śri* .
 — *abhi* dass.
-[ṚV. 9,1,9.] *madhunā payaḥ*
-[11,2.] [6.] [65,26.] [84,5.] [86,17.] [93,3.] *abhiśrīṇanpayaḥ payasābhi gonām*
-[97,43.] Vgl. auch unter 1. *śri* mit *abhi* und *abhiśrī* .
+[ṚV. 9,1,9.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.001.html#rv09.001.09) *madhunā payaḥ*
+[11,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.011.html#rv09.011.02) [6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.011.html#rv09.011.06) [65,26.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.065.html#rv09.065.26) [84,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.084.html#rv09.084.05) [86,17.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.086.html#rv09.086.17) [93,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.093.html#rv09.093.03) *abhiśrīṇanpayaḥ payasābhi gonām*
+[97,43.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.097.html#rv09.097.43) Vgl. auch unter 1. *śri* mit *abhi* und *abhiśrī* .
 — *ā* med.: *ā yaḥ śaryābhistuvinṛmṇo asyāśrīṇītādiśaṃ gabhastau*
-[ṚV. 10,61,3.]
+[ṚV. 10,61,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.061.html#rv10.061.03)
 — *sam* s. unter 1. *śri* mit *sam* .
 
 - **RU:** 2. *śrī*¦, *śrīṇāti, aśiśrayus* «мешать, смешивать»,
 κεράννυμι: *somam*
-[ṚV. 1,84,11.] [8,2,11.] *gobhiḥ*
-[9,46,4.] [71,4.] [107,2.] [8,2,3.] *payasaiva me somaṃ śrīṇan*
-[TS. 6,4,8,1.]
+[ṚV. 1,84,11.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.084.html#rv01.084.11) [8,2,11.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.002.html#rv08.002.11) *gobhiḥ*
+[9,46,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.046.html#rv09.046.04) [71,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.071.html#rv09.071.04) [107,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.107.html#rv09.107.02) [8,2,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.002.html#rv08.002.03) *payasaiva me somaṃ śrīṇan*
+[TS. 6,4,8,1.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?6,4,8,1)
 [PAÑCAV. BR. 18,4,2. 4.]
-[ŚAT. BR. 4,1,4,8.] [4,2,13.] [12,7,3,19.] med. [ṚV. 8,90,9.] *gobhiḥ śrīṇānaḥ*
-[9,109,17.] [24,1.] *ubhe sarpiṣo darvī śrīṇīṣa āsani*
-[5,6,9.] partic. *śrīta*
-[8,2,28.] *gobhiḥ śrīto madāya kam*
-[71,5.] [9.] [109,15.] Vgl. *gośrīta* . — *śrīṇan*
-[ṚV. 1,68,1] [8.] см. под 1. *śri* .
+[ŚAT. BR. 4,1,4,8.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?4,1,4,8) [4,2,13.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?4,4,2,13) [12,7,3,19.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?12,7,3,19) med. [ṚV. 8,90,9.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.090.html#rv08.090.09) *gobhiḥ śrīṇānaḥ*
+[9,109,17.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.109.html#rv09.109.17) [24,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.024.html#rv09.024.01) *ubhe sarpiṣo darvī śrīṇīṣa āsani*
+[5,6,9.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.006.html#rv05.006.09) partic. *śrīta*
+[8,2,28.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.002.html#rv08.002.28) *gobhiḥ śrīto madāya kam*
+[71,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.071.html#rv08.071.05) [9.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.071.html#rv08.071.09) [109,15.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.109.html#rv08.109.15) Vgl. *gośrīta* . — *śrīṇan*
+[ṚV. 1,68,1](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.068.html#rv01.068.01) [8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.068.html#rv01.068.08) см. под 1. *śri* .
 — *abhi* dass.
-[ṚV. 9,1,9.] *madhunā payaḥ*
-[11,2.] [6.] [65,26.] [84,5.] [86,17.] [93,3.] *abhiśrīṇanpayaḥ payasābhi gonām*
-[97,43.] Vgl. также под 1. *śri* с *abhi* и *abhiśrī* .
+[ṚV. 9,1,9.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.001.html#rv09.001.09) *madhunā payaḥ*
+[11,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.011.html#rv09.011.02) [6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.011.html#rv09.011.06) [65,26.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.065.html#rv09.065.26) [84,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.084.html#rv09.084.05) [86,17.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.086.html#rv09.086.17) [93,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.093.html#rv09.093.03) *abhiśrīṇanpayaḥ payasābhi gonām*
+[97,43.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.097.html#rv09.097.43) Vgl. также под 1. *śri* с *abhi* и *abhiśrī* .
 — *ā* med.: *ā yaḥ śaryābhistuvinṛmṇo asyāśrīṇītādiśaṃ gabhastau*
-[ṚV. 10,61,3.]
+[ṚV. 10,61,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.061.html#rv10.061.03)
 — *sam* s. см. под 1. *śri* с *sam* .
   <sub>attested</sub>
 
@@ -77,24 +77,24 @@ _PWG article — 1 sub-card(s), 78 sense(s) · RU 78/78 · EN 0/78_
 **0 (грамматич. заметка))** 5. *śrī*¦ (nom. *śrīs*
 *)Nach Einigen auch *śrī* vgl.
 [RAKṢITA] bei [UJJVAL.] zu [UṆĀDIS. 2,57] und Randglosse
-zu [H. 226.]
-[UṆĀDIS. 2,57. Vārtt 1] zu [P. 3,2,178.] [VOP. 26,71.] Declination
-[3,80.] [82.] *śrīṇām* ved., klass. auch *śriyām*
-[P. 7,1,56.] behält am Ende eines adj. comp. die Lange
-[1,2,48], Schol. neutr. *˚śri*
-[H. 59.] *˚śrī*
-[BHĀG. P. 3,18,2.]
+zu [H. 226.](https://sanskrit-lexicon-scans.github.io/abch2/app1?226)
+[UṆĀDIS. 2,57. Vārtt 1] zu [P. 3,2,178.](https://ashtadhyayi.com/sutraani/3/2/178) [VOP. 26,71.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?26,71) Declination
+[3,80.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?3,80) [82.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?3,82) *śrīṇām* ved., klass. auch *śriyām*
+[P. 7,1,56.](https://ashtadhyayi.com/sutraani/7/1/56) behält am Ende eines adj. comp. die Lange
+[1,2,48](https://ashtadhyayi.com/sutraani/1/2/48), Schol. neutr. *˚śri*
+[H. 59.](https://sanskrit-lexicon-scans.github.io/abch2/app1?59) *˚śrī*
+[BHĀG. P. 3,18,2.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,18,2)
 
 - **RU:** 5. *śrī*¦ (nom. *śrīs*
 *) По мнению некоторых, также *śrī* vgl.
 [RAKṢITA] у [UJJVAL.] к [UṆĀDIS. 2,57] и глосса на полях
-к [H. 226.]
-[UṆĀDIS. 2,57. Vārtt 1] к [P. 3,2,178.] [VOP. 26,71.] склонение
-[3,80.] [82.] *śrīṇām* ved., в классическом также *śriyām*
-[P. 7,1,56.] сохраняет в конце adj. comp. долготу
-[1,2,48], Schol. neutr. *˚śri*
-[H. 59.] *˚śrī*
-[BHĀG. P. 3,18,2.]
+к [H. 226.](https://sanskrit-lexicon-scans.github.io/abch2/app1?226)
+[UṆĀDIS. 2,57. Vārtt 1] к [P. 3,2,178.](https://ashtadhyayi.com/sutraani/3/2/178) [VOP. 26,71.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?26,71) склонение
+[3,80.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?3,80) [82.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?3,82) *śrīṇām* ved., в классическом также *śriyām*
+[P. 7,1,56.](https://ashtadhyayi.com/sutraani/7/1/56) сохраняет в конце adj. comp. долготу
+[1,2,48](https://ashtadhyayi.com/sutraani/1/2/48), Schol. neutr. *˚śri*
+[H. 59.](https://sanskrit-lexicon-scans.github.io/abch2/app1?59) *˚śrī*
+[BHĀG. P. 3,18,2.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,18,2)
   <sub>attested</sub>
 
 **1)** f
@@ -104,10 +104,10 @@ zu [H. 226.]
 
 **1a)** 1) _f._
  a) schönes Ansehen, Schönheit, Pracht; Putz, Zierde, Prunk; = *śobhā*
-[TRIK. 3,3,373.]
-[H. 1512.]
-[an. 1,12. fg.]
-[MED. r. 1.] [HALĀY. 5,27.] [VIŚVA] bei [UJJVAL.] = *prabhā*
+[TRIK. 3,3,373.](https://sanskrit-lexicon-scans.github.io/medini/app2?3,3,373)
+[H. 1512.](https://sanskrit-lexicon-scans.github.io/abch2/app1?1512)
+[an. 1,12. fg.](https://sanskrit-lexicon-scans.github.io/anekarthasamgraha/app1?1,12)
+[MED. r. 1.](https://sanskrit-lexicon-scans.github.io/medini/app1?r,1) [HALĀY. 5,27.](https://sanskrit-lexicon-scans.github.io/armh2/app1?5,27) [VIŚVA] bei [UJJVAL.] = *prabhā*
 [DHAR.] im [ŚKDR.] = *veṣopakaraṇa*
 [H. an.] st. dessen *vidhopakaraṇa* (zwei Bedd.)
 [MED.] und *rekhopakaraṇa*
@@ -115,75 +115,75 @@ zu [H. 226.]
 [MED.] [VIŚVA]; st. dessen *veṣa* (auch
 [TRIK.]) und *racanā*
 [H. an.] *mināti śriyaṃ jarimā tanūnām*
-[ṚV. 1,179,1.] *samu śriyā nāsatyā sacethe*
-[116,17.] [117,13.] *viśvā vaḥ śrīradhi tanūṣu pipiśe*
-[5,57,6.] [7,69,4.] *samo devairuta śriyā*
-[6,48,19.] *adhi śriyaṃ śukrapiśaṃ dadhāne*
-[10,110,6.] *sūryasya*
-[1,122,2.] *samiddhasyāgne vande tava śriyam*
-[5,28,4.] [2,10,1.] *śriye cidā vāvṛdhuḥ*
-[5,55,3.] [7,72,1.] *śriyaṃ vayo jaritṛbhyo dadhāti*
-[9,94,4.] *śriye maryāso añjīrakṛṇvata*
-[10,77,2.] [VS. 9,8.] *śriyai*
-[19,92.] [20,3.] *kīrtiḥ śrīrvākca nārīṇām* ist Kṛṣṇa
-[BHAG. 10,34.]
-[MBH. 3,1806.] [2081.] [2146.]
-[R. 5,14,32.]
-[Spr. (II) 2131.] [2617.]
-[RĀJA-TAR. 1,245.]
-[BHĀG. P. 1,11,26.] *vaiṣṇavī*
-[3,16,28.] *rūpa˚*
-[KATHĀS. 10,32.] *ānana˚*
-[MEGH. 66.] *amalaśekhara˚*
-[KUMĀRAS. 7,32.] [Verz. d. Oxf. H. 188,a,13.] *śriyaṃ puṣyatyayaṃ giriḥ*
-[R. 2,94,10] ([103,10] [GORR.]). *bhānu˚*
-[RĀJA-TAR. 3,387.] *sarasaḥ*
-[KATHĀS. 46,89.] *vana˚*
-[R. GORR. 2,99,4.] [RAGH. 3,8.] [36.] *puṣpa˚*
-[Spr. (II) 1753.] [5777], v. l.
-[MEGH. 93.]
-[BHĀG. P. 3,21,40.] [8,2,14.]
+[ṚV. 1,179,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.179.html#rv01.179.01) *samu śriyā nāsatyā sacethe*
+[116,17.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.116.html#rv01.116.17) [117,13.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.117.html#rv01.117.13) *viśvā vaḥ śrīradhi tanūṣu pipiśe*
+[5,57,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.057.html#rv05.057.06) [7,69,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.069.html#rv07.069.04) *samo devairuta śriyā*
+[6,48,19.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.048.html#rv06.048.19) *adhi śriyaṃ śukrapiśaṃ dadhāne*
+[10,110,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.110.html#rv10.110.06) *sūryasya*
+[1,122,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.122.html#rv01.122.02) *samiddhasyāgne vande tava śriyam*
+[5,28,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.028.html#rv05.028.04) [2,10,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.010.html#rv02.010.01) *śriye cidā vāvṛdhuḥ*
+[5,55,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.055.html#rv05.055.03) [7,72,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.072.html#rv07.072.01) *śriyaṃ vayo jaritṛbhyo dadhāti*
+[9,94,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.094.html#rv09.094.04) *śriye maryāso añjīrakṛṇvata*
+[10,77,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.077.html#rv10.077.02) [VS. 9,8.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?9,8) *śriyai*
+[19,92.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?19,92) [20,3.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?20,3) *kīrtiḥ śrīrvākca nārīṇām* ist Kṛṣṇa
+[BHAG. 10,34.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?10,34)
+[MBH. 3,1806.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1806) [2081.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2081) [2146.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2146)
+[R. 5,14,32.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,14,32)
+[Spr. (II) 2131.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2131) [2617.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2617)
+[RĀJA-TAR. 1,245.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?1,245)
+[BHĀG. P. 1,11,26.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,11,26) *vaiṣṇavī*
+[3,16,28.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,16,28) *rūpa˚*
+[KATHĀS. 10,32.](https://sanskrit-lexicon-scans.github.io/kss/index.html?10,32) *ānana˚*
+[MEGH. 66.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?66) *amalaśekhara˚*
+[KUMĀRAS. 7,32.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?7,32) [Verz. d. Oxf. H. 188,a,13.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?188) *śriyaṃ puṣyatyayaṃ giriḥ*
+[R. 2,94,10](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,94,10) ([103,10](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,103,10) [GORR.]). *bhānu˚*
+[RĀJA-TAR. 3,387.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?3,387) *sarasaḥ*
+[KATHĀS. 46,89.](https://sanskrit-lexicon-scans.github.io/kss/index.html?46,89) *vana˚*
+[R. GORR. 2,99,4.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,99,4) [RAGH. 3,8.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?3,8) [36.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?3,36) *puṣpa˚*
+[Spr. (II) 1753.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1753) [5777](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5777), v. l.
+[MEGH. 93.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?93)
+[BHĀG. P. 3,21,40.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,21,40) [8,2,14.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,2,14)
 [LA. (III) 91,22.] [DHŪRTAS. 92,6.] *phala˚*
-[KATHĀS. 18,368.]
-[RĀJA-TAR. 1,239.] *madhukara˚*
-[MEGH. 48.] *madhu˚*
-[VIKR. 26.] *śiśira˚*
-[Spr. (II) 4228.] *yauvana˚*
-[993.] [5827.] *˚vihīnāni kuṭumbibhavanāni*
-[R. 2,71,34.] *alaṃkāra˚*
-[ŚĀK. 10,6.]
-[BHĀG. P. 4,25,22.] *pihitaiva śriyaṃ dhatte *
+[KATHĀS. 18,368.](https://sanskrit-lexicon-scans.github.io/kss/index.html?18,368)
+[RĀJA-TAR. 1,239.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?1,239) *madhukara˚*
+[MEGH. 48.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?48) *madhu˚*
+[VIKR. 26.](https://sanskrit-lexicon-scans.github.io/vikramor/app1?26) *śiśira˚*
+[Spr. (II) 4228.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4228) *yauvana˚*
+[993.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?993) [5827.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5827) *˚vihīnāni kuṭumbibhavanāni*
+[R. 2,71,34.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,71,34) *alaṃkāra˚*
+[ŚĀK. 10,6.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?10,6)
+[BHĀG. P. 4,25,22.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,25,22) *pihitaiva śriyaṃ dhatte *
 
 * paddhatiḥ puṇyakarmaṇām*
-[Spr. (II) 4085.] *hrīśriyau*
+[Spr. (II) 4085.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4085) *hrīśriyau*
 [SUŚR. 1,114,16.] *śriyau* Schönheit und Wohlfahrt
 [NAIṢ. 3,36.] pl. : *yuvorviśvā adhi śriyaḥ*
-[ṚV. 1,139,3.] [8,91,9.] *anīkeṣvadhi śriyaḥ*
-[20,12.] [28,5.] [81,20.] [1,85,2.] [166,10.] [2,1,12.] [3,38,4.] [44,2.] *saraḥ˚*
-[Spr. (II) 3818.] *sarvartu˚*
-[BHĀG. P. 3,15,16.] [5,24,10.] *yauvana˚*
-[Spr. (II) 6419.] am Ende eines adj. comp.
-[KUMĀRAS. 2,2.]
+[ṚV. 1,139,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.139.html#rv01.139.03) [8,91,9.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.091.html#rv08.091.09) *anīkeṣvadhi śriyaḥ*
+[20,12.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.020.html#rv08.020.12) [28,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.028.html#rv08.028.05) [81,20.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.081.html#rv08.081.20) [1,85,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.085.html#rv01.085.02) [166,10.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.166.html#rv01.166.10) [2,1,12.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.001.html#rv02.001.12) [3,38,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.038.html#rv03.038.04) [44,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.044.html#rv03.044.02) *saraḥ˚*
+[Spr. (II) 3818.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3818) *sarvartu˚*
+[BHĀG. P. 3,15,16.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,15,16) [5,24,10.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,24,10) *yauvana˚*
+[Spr. (II) 6419.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6419) am Ende eines adj. comp.
+[KUMĀRAS. 2,2.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?2,2)
 [NAIṢ. 22,45.]
-[KATHĀS. 18,353.]
+[KATHĀS. 18,353.](https://sanskrit-lexicon-scans.github.io/kss/index.html?18,353)
 [DHŪRTAS. 69,9.]
-[H. 59.]
-[BHĀG. P. 1,11,13.] [20.] [3,18,2.] [23,50.] [4,6,21.] — dat. *śriye* und *śriyai* (vgl. *śriyase*) in _adv._ Weise schön, hübsch; lieblich, gefällig: *śriye chando na smayate vibhātī*
-[ṚV. 1,92,6.] *adhi śriye duhitā sūryasya rathaṃ tasthau* prangend
-[6,63,5.] *udu śriya uṣaso rocamānā asthuḥ* schön leuchtend
-[64,1.] [7,67,2.] *śriye harivāndadhe hastayorvajram* wohlgefällig
-[1,81,4.] *śriye kaṃ vo adhi tanūṣu vāśīḥ* hübsch zu schauen sind an euch die Schwerter
-[88,3.] [4,5,15.] [10,5.] *śriye na gāva upa somamasthu*;
-[41,8.] *śubhrā vyañjata śriye* putzen sich hübsch heraus
-[8,7,25.] *samyañco 'smā ime lokāḥ śriyai dīdyati*
-[AIT. BR. 1,8.]
+[H. 59.](https://sanskrit-lexicon-scans.github.io/abch2/app1?59)
+[BHĀG. P. 1,11,13.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,11,13) [20.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,11,20) [3,18,2.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,18,2) [23,50.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,23,50) [4,6,21.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,6,21) — dat. *śriye* und *śriyai* (vgl. *śriyase*) in _adv._ Weise schön, hübsch; lieblich, gefällig: *śriye chando na smayate vibhātī*
+[ṚV. 1,92,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.092.html#rv01.092.06) *adhi śriye duhitā sūryasya rathaṃ tasthau* prangend
+[6,63,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.063.html#rv06.063.05) *udu śriya uṣaso rocamānā asthuḥ* schön leuchtend
+[64,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.064.html#rv06.064.01) [7,67,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.067.html#rv07.067.02) *śriye harivāndadhe hastayorvajram* wohlgefällig
+[1,81,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.081.html#rv01.081.04) *śriye kaṃ vo adhi tanūṣu vāśīḥ* hübsch zu schauen sind an euch die Schwerter
+[88,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.088.html#rv01.088.03) [4,5,15.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.005.html#rv04.005.15) [10,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.010.html#rv04.010.05) *śriye na gāva upa somamasthu*;
+[41,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.041.html#rv04.041.08) *śubhrā vyañjata śriye* putzen sich hübsch heraus
+[8,7,25.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.007.html#rv08.007.25) *samyañco 'smā ime lokāḥ śriyai dīdyati*
+[AIT. BR. 1,8.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?1,8)
 
 - **RU:** 1) _f._
  a) «прекрасный вид, красота, роскошь; убранство, украшение, великолепие»; = *śobhā*
-[TRIK. 3,3,373.]
-[H. 1512.]
-[an. 1,12. fg.]
-[MED. r. 1.] [HALĀY. 5,27.] [VIŚVA] у [UJJVAL.] = *prabhā*
+[TRIK. 3,3,373.](https://sanskrit-lexicon-scans.github.io/medini/app2?3,3,373)
+[H. 1512.](https://sanskrit-lexicon-scans.github.io/abch2/app1?1512)
+[an. 1,12. fg.](https://sanskrit-lexicon-scans.github.io/anekarthasamgraha/app1?1,12)
+[MED. r. 1.](https://sanskrit-lexicon-scans.github.io/medini/app1?r,1) [HALĀY. 5,27.](https://sanskrit-lexicon-scans.github.io/armh2/app1?5,27) [VIŚVA] у [UJJVAL.] = *prabhā*
 [DHAR.] в [ŚKDR.] = *veṣopakaraṇa*
 [H. an.] st. чьё *vidhopakaraṇa* (два Bedd.)
 [MED.] и *rekhopakaraṇa*
@@ -191,319 +191,319 @@ zu [H. 226.]
 [MED.] [VIŚVA]; st. чьё *veṣa* (также
 [TRIK.]) и *racanā*
 [H. an.] *mināti śriyaṃ jarimā tanūnām*
-[ṚV. 1,179,1.] *samu śriyā nāsatyā sacethe*
-[116,17.] [117,13.] *viśvā vaḥ śrīradhi tanūṣu pipiśe*
-[5,57,6.] [7,69,4.] *samo devairuta śriyā*
-[6,48,19.] *adhi śriyaṃ śukrapiśaṃ dadhāne*
-[10,110,6.] *sūryasya*
-[1,122,2.] *samiddhasyāgne vande tava śriyam*
-[5,28,4.] [2,10,1.] *śriye cidā vāvṛdhuḥ*
-[5,55,3.] [7,72,1.] *śriyaṃ vayo jaritṛbhyo dadhāti*
-[9,94,4.] *śriye maryāso añjīrakṛṇvata*
-[10,77,2.] [VS. 9,8.] *śriyai*
-[19,92.] [20,3.] *kīrtiḥ śrīrvākca nārīṇām* есть Kṛṣṇa
-[BHAG. 10,34.]
-[MBH. 3,1806.] [2081.] [2146.]
-[R. 5,14,32.]
-[Spr. (II) 2131.] [2617.]
-[RĀJA-TAR. 1,245.]
-[BHĀG. P. 1,11,26.] *vaiṣṇavī*
-[3,16,28.] *rūpa˚*
-[KATHĀS. 10,32.] *ānana˚*
-[MEGH. 66.] *amalaśekhara˚*
-[KUMĀRAS. 7,32.] [Verz. d. Oxf. H. 188,a,13.] *śriyaṃ puṣyatyayaṃ giriḥ*
-[R. 2,94,10] ([103,10] [GORR.]). *bhānu˚*
-[RĀJA-TAR. 3,387.] *sarasaḥ*
-[KATHĀS. 46,89.] *vana˚*
-[R. GORR. 2,99,4.] [RAGH. 3,8.] [36.] *puṣpa˚*
-[Spr. (II) 1753.] [5777], v. l.
-[MEGH. 93.]
-[BHĀG. P. 3,21,40.] [8,2,14.]
+[ṚV. 1,179,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.179.html#rv01.179.01) *samu śriyā nāsatyā sacethe*
+[116,17.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.116.html#rv01.116.17) [117,13.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.117.html#rv01.117.13) *viśvā vaḥ śrīradhi tanūṣu pipiśe*
+[5,57,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.057.html#rv05.057.06) [7,69,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.069.html#rv07.069.04) *samo devairuta śriyā*
+[6,48,19.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.048.html#rv06.048.19) *adhi śriyaṃ śukrapiśaṃ dadhāne*
+[10,110,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.110.html#rv10.110.06) *sūryasya*
+[1,122,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.122.html#rv01.122.02) *samiddhasyāgne vande tava śriyam*
+[5,28,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.028.html#rv05.028.04) [2,10,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.010.html#rv02.010.01) *śriye cidā vāvṛdhuḥ*
+[5,55,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.055.html#rv05.055.03) [7,72,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.072.html#rv07.072.01) *śriyaṃ vayo jaritṛbhyo dadhāti*
+[9,94,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.094.html#rv09.094.04) *śriye maryāso añjīrakṛṇvata*
+[10,77,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.077.html#rv10.077.02) [VS. 9,8.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?9,8) *śriyai*
+[19,92.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?19,92) [20,3.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?20,3) *kīrtiḥ śrīrvākca nārīṇām* есть Kṛṣṇa
+[BHAG. 10,34.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?10,34)
+[MBH. 3,1806.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1806) [2081.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2081) [2146.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2146)
+[R. 5,14,32.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,14,32)
+[Spr. (II) 2131.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2131) [2617.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2617)
+[RĀJA-TAR. 1,245.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?1,245)
+[BHĀG. P. 1,11,26.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,11,26) *vaiṣṇavī*
+[3,16,28.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,16,28) *rūpa˚*
+[KATHĀS. 10,32.](https://sanskrit-lexicon-scans.github.io/kss/index.html?10,32) *ānana˚*
+[MEGH. 66.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?66) *amalaśekhara˚*
+[KUMĀRAS. 7,32.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?7,32) [Verz. d. Oxf. H. 188,a,13.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?188) *śriyaṃ puṣyatyayaṃ giriḥ*
+[R. 2,94,10](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,94,10) ([103,10](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,103,10) [GORR.]). *bhānu˚*
+[RĀJA-TAR. 3,387.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?3,387) *sarasaḥ*
+[KATHĀS. 46,89.](https://sanskrit-lexicon-scans.github.io/kss/index.html?46,89) *vana˚*
+[R. GORR. 2,99,4.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,99,4) [RAGH. 3,8.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?3,8) [36.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?3,36) *puṣpa˚*
+[Spr. (II) 1753.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1753) [5777](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5777), v. l.
+[MEGH. 93.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?93)
+[BHĀG. P. 3,21,40.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,21,40) [8,2,14.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,2,14)
 [LA. (III) 91,22.] [DHŪRTAS. 92,6.] *phala˚*
-[KATHĀS. 18,368.]
-[RĀJA-TAR. 1,239.] *madhukara˚*
-[MEGH. 48.] *madhu˚*
-[VIKR. 26.] *śiśira˚*
-[Spr. (II) 4228.] *yauvana˚*
-[993.] [5827.] *˚vihīnāni kuṭumbibhavanāni*
-[R. 2,71,34.] *alaṃkāra˚*
-[ŚĀK. 10,6.]
-[BHĀG. P. 4,25,22.] *pihitaiva śriyaṃ dhatte *
+[KATHĀS. 18,368.](https://sanskrit-lexicon-scans.github.io/kss/index.html?18,368)
+[RĀJA-TAR. 1,239.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?1,239) *madhukara˚*
+[MEGH. 48.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?48) *madhu˚*
+[VIKR. 26.](https://sanskrit-lexicon-scans.github.io/vikramor/app1?26) *śiśira˚*
+[Spr. (II) 4228.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4228) *yauvana˚*
+[993.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?993) [5827.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5827) *˚vihīnāni kuṭumbibhavanāni*
+[R. 2,71,34.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,71,34) *alaṃkāra˚*
+[ŚĀK. 10,6.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?10,6)
+[BHĀG. P. 4,25,22.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,25,22) *pihitaiva śriyaṃ dhatte *
 
 * paddhatiḥ puṇyakarmaṇām*
-[Spr. (II) 4085.] *hrīśriyau*
+[Spr. (II) 4085.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4085) *hrīśriyau*
 [SUŚR. 1,114,16.] *śriyau* «красота и благополучие»
 [NAIṢ. 3,36.] pl. : *yuvorviśvā adhi śriyaḥ*
-[ṚV. 1,139,3.] [8,91,9.] *anīkeṣvadhi śriyaḥ*
-[20,12.] [28,5.] [81,20.] [1,85,2.] [166,10.] [2,1,12.] [3,38,4.] [44,2.] *saraḥ˚*
-[Spr. (II) 3818.] *sarvartu˚*
-[BHĀG. P. 3,15,16.] [5,24,10.] *yauvana˚*
-[Spr. (II) 6419.] в конце adj. comp.
-[KUMĀRAS. 2,2.]
+[ṚV. 1,139,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.139.html#rv01.139.03) [8,91,9.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.091.html#rv08.091.09) *anīkeṣvadhi śriyaḥ*
+[20,12.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.020.html#rv08.020.12) [28,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.028.html#rv08.028.05) [81,20.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.081.html#rv08.081.20) [1,85,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.085.html#rv01.085.02) [166,10.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.166.html#rv01.166.10) [2,1,12.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.001.html#rv02.001.12) [3,38,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.038.html#rv03.038.04) [44,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.044.html#rv03.044.02) *saraḥ˚*
+[Spr. (II) 3818.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3818) *sarvartu˚*
+[BHĀG. P. 3,15,16.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,15,16) [5,24,10.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,24,10) *yauvana˚*
+[Spr. (II) 6419.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6419) в конце adj. comp.
+[KUMĀRAS. 2,2.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?2,2)
 [NAIṢ. 22,45.]
-[KATHĀS. 18,353.]
+[KATHĀS. 18,353.](https://sanskrit-lexicon-scans.github.io/kss/index.html?18,353)
 [DHŪRTAS. 69,9.]
-[H. 59.]
-[BHĀG. P. 1,11,13.] [20.] [3,18,2.] [23,50.] [4,6,21.] — dat. *śriye* и *śriyai* (vgl. *śriyase*) в _adv._ образом «красивый, прекрасный; милый, приятный»: *śriye chando na smayate vibhātī*
-[ṚV. 1,92,6.] *adhi śriye duhitā sūryasya rathaṃ tasthau* «блистающий»
-[6,63,5.] *udu śriya uṣaso rocamānā asthuḥ* «прекрасно сияющий»
-[64,1.] [7,67,2.] *śriye harivāndadhe hastayorvajram* «приятный»
-[1,81,4.] *śriye kaṃ vo adhi tanūṣu vāśīḥ* «прекрасны на вид у вас мечи»
-[88,3.] [4,5,15.] [10,5.] *śriye na gāva upa somamasthu*;
-[41,8.] *śubhrā vyañjata śriye* «прекрасно украшают себя»
-[8,7,25.] *samyañco 'smā ime lokāḥ śriyai dīdyati*
-[AIT. BR. 1,8.]
+[H. 59.](https://sanskrit-lexicon-scans.github.io/abch2/app1?59)
+[BHĀG. P. 1,11,13.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,11,13) [20.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,11,20) [3,18,2.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,18,2) [23,50.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,23,50) [4,6,21.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,6,21) — dat. *śriye* и *śriyai* (vgl. *śriyase*) в _adv._ образом «красивый, прекрасный; милый, приятный»: *śriye chando na smayate vibhātī*
+[ṚV. 1,92,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.092.html#rv01.092.06) *adhi śriye duhitā sūryasya rathaṃ tasthau* «блистающий»
+[6,63,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.063.html#rv06.063.05) *udu śriya uṣaso rocamānā asthuḥ* «прекрасно сияющий»
+[64,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.064.html#rv06.064.01) [7,67,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.067.html#rv07.067.02) *śriye harivāndadhe hastayorvajram* «приятный»
+[1,81,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.081.html#rv01.081.04) *śriye kaṃ vo adhi tanūṣu vāśīḥ* «прекрасны на вид у вас мечи»
+[88,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.088.html#rv01.088.03) [4,5,15.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.005.html#rv04.005.15) [10,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.010.html#rv04.010.05) *śriye na gāva upa somamasthu*;
+[41,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.041.html#rv04.041.08) *śubhrā vyañjata śriye* «прекрасно украшают себя»
+[8,7,25.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.007.html#rv08.007.25) *samyañco 'smā ime lokāḥ śriyai dīdyati*
+[AIT. BR. 1,8.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?1,8)
   <sub>attested</sub>
 
 **1b)** — b) Wohlgefallen, Befriedigung: *śriye manāṃsi devāso akran*
-[ṚV. 6,44,8.] *upa stomānturasya darśathaḥ śriye*
-[8,26,4.] *tava śriye vyajihīta parvataḥ* dir zu Gefallen
-[2,23,18.] *vaśānāṃ bhavathā saha śriyā*
-[3,60,4.] *mārutaṃ gaṇaṃ saścata śriye*
-[1,64,12.] [9,104,1.] *smasi vāṃ saṃdṛśi śriye* euch zu Gefallen stehen wir vor euch
-[5,74,6.] *śriye te pṛśnirupasecanī bhūcchriye darviḥ*
-[10,105,10.] [VS. 19,46.] [TBR. 1,2,1,26.] *devaṃ tvā devebhyaḥ śriyā uddharāmi*
+[ṚV. 6,44,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.044.html#rv06.044.08) *upa stomānturasya darśathaḥ śriye*
+[8,26,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.026.html#rv08.026.04) *tava śriye vyajihīta parvataḥ* dir zu Gefallen
+[2,23,18.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.023.html#rv02.023.18) *vaśānāṃ bhavathā saha śriyā*
+[3,60,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.060.html#rv03.060.04) *mārutaṃ gaṇaṃ saścata śriye*
+[1,64,12.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.064.html#rv01.064.12) [9,104,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.104.html#rv09.104.01) *smasi vāṃ saṃdṛśi śriye* euch zu Gefallen stehen wir vor euch
+[5,74,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.074.html#rv05.074.06) *śriye te pṛśnirupasecanī bhūcchriye darviḥ*
+[10,105,10.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.105.html#rv10.105.10) [VS. 19,46.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?19,46) [TBR. 1,2,1,26.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?1,2,1,26) *devaṃ tvā devebhyaḥ śriyā uddharāmi*
 [ĀŚV. ŚR. 2,2,2.]
 
 - **RU:** — b) «благоволение, удовлетворение»: *śriye manāṃsi devāso akran*
-[ṚV. 6,44,8.] *upa stomānturasya darśathaḥ śriye*
-[8,26,4.] *tava śriye vyajihīta parvataḥ* «тебе в угоду»
-[2,23,18.] *vaśānāṃ bhavathā saha śriyā*
-[3,60,4.] *mārutaṃ gaṇaṃ saścata śriye*
-[1,64,12.] [9,104,1.] *smasi vāṃ saṃdṛśi śriye* «вам в угоду мы предстоим»
-[5,74,6.] *śriye te pṛśnirupasecanī bhūcchriye darviḥ*
-[10,105,10.] [VS. 19,46.] [TBR. 1,2,1,26.] *devaṃ tvā devebhyaḥ śriyā uddharāmi*
+[ṚV. 6,44,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.044.html#rv06.044.08) *upa stomānturasya darśathaḥ śriye*
+[8,26,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.026.html#rv08.026.04) *tava śriye vyajihīta parvataḥ* «тебе в угоду»
+[2,23,18.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.023.html#rv02.023.18) *vaśānāṃ bhavathā saha śriyā*
+[3,60,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.060.html#rv03.060.04) *mārutaṃ gaṇaṃ saścata śriye*
+[1,64,12.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.064.html#rv01.064.12) [9,104,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.104.html#rv09.104.01) *smasi vāṃ saṃdṛśi śriye* «вам в угоду мы предстоим»
+[5,74,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.074.html#rv05.074.06) *śriye te pṛśnirupasecanī bhūcchriye darviḥ*
+[10,105,10.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.105.html#rv10.105.10) [VS. 19,46.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?19,46) [TBR. 1,2,1,26.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?1,2,1,26) *devaṃ tvā devebhyaḥ śriyā uddharāmi*
 [ĀŚV. ŚR. 2,2,2.]
   <sub>attested</sub>
 
 **1c)** — c) Wohlfahrt, Glück, Reichthum; ausgezeichnete Lage und Stellung, Herrlichkeit; = *saṃpad, saṃpatti, vibhūti*
-[AK. 2,8,2,50.]
+[AK. 2,8,2,50.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?2,8,2,50)
 [TRIK.]
-[H. 357.]
+[H. 357.](https://sanskrit-lexicon-scans.github.io/abch2/app1?357)
 [MED.] = *trivargasaṃpatti* (nach
 [ŚKDR.] zwei Bedd.)
 [H. an.] [MED.] [VIŚVA] a. a. O. = *vṛddhi* und *siddhi*
 [ŚABDAR.] im [ŚKDR.] = *adhikāra* und *kīrti*
 [DHAR.] ebend.= *aiśvarya* ved. Comm. *śrīśca lakṣmīśca*
-[VS. 31,22.] [32,16.] *śriyāṃ mā dhehi bhūtyām*
-[AV. 12,1,63.] *kṣatra, śrī*
-[6,54,1.] [73,1.] [9,5,31.] *draviṇa, śrī*
-[10,6,26.] [11,1,12.] [21.] *śrī, dharma*
-[12,5,7.] *satya, śrī, yaśas* 2. *pratīcyeṣāṃ śrīragāt bhadrā bhūtvā parā bhaviṣyanti* ihr Glück ging rückwärts
-[TBR. 1,1,4,4.]
-[AIT. BR. 1,30.] [3,7.] [5,22.] [7,15.] [17.] *āditya iva śriyāṃ pratiṣṭhitastapati*
-[34.] [8,5.] [6.] [9.] [12.] [TBR. 3,10,9,6.] *apa vā etasmācchrī rāṣṭraṃ krāmati*
-[9,14,1.] *yo 'laṃ śriyai sansadṛṅksamānaiḥ syāt*
-[TS. 2,2,8,6.] [5,1,8,6.] [6,1,10,3.] [7,2,7,3.] *avartimeva pāpmānamapahatya śriyaṃ gacchati*
-[4,2,1.] [4,1.] *yaśas, annādya, śrī*
-[ŚAT. BR. 1,6,3,8.] [2,1,3,7.] [2,3,6.] [8,6,2,1.] [13,1,5,1.] [4.] [2,6,3.] [9,3.] *śrīyaśasāni*
-[12,8,3,1.] *puṣṭi, rāddhi, śrī*
+[VS. 31,22.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?31,22) [32,16.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?32,16) *śriyāṃ mā dhehi bhūtyām*
+[AV. 12,1,63.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av12.001.html#av12.001.63) *kṣatra, śrī*
+[6,54,1.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av06.054.html#av06.054.01) [73,1.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av06.073.html#av06.073.01) [9,5,31.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av09.005.html#av09.005.31) *draviṇa, śrī*
+[10,6,26.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av10.006.html#av10.006.26) [11,1,12.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av11.001.html#av11.001.12) [21.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av11.001.html#av11.001.21) *śrī, dharma*
+[12,5,7.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av12.005.html#av12.005.07) *satya, śrī, yaśas* 2. *pratīcyeṣāṃ śrīragāt bhadrā bhūtvā parā bhaviṣyanti* ihr Glück ging rückwärts
+[TBR. 1,1,4,4.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?1,1,4,4)
+[AIT. BR. 1,30.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?1,30) [3,7.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?3,7) [5,22.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?5,22) [7,15.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?7,15) [17.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?7,17) *āditya iva śriyāṃ pratiṣṭhitastapati*
+[34.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?7,34) [8,5.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?8,5) [6.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?8,6) [9.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?8,9) [12.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?8,12) [TBR. 3,10,9,6.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?3,10,9,6) *apa vā etasmācchrī rāṣṭraṃ krāmati*
+[9,14,1.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?3,9,14,1) *yo 'laṃ śriyai sansadṛṅksamānaiḥ syāt*
+[TS. 2,2,8,6.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?2,2,8,6) [5,1,8,6.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?5,1,8,6) [6,1,10,3.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?6,1,10,3) [7,2,7,3.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?7,2,7,3) *avartimeva pāpmānamapahatya śriyaṃ gacchati*
+[4,2,1.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?7,4,2,1) [4,1.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?7,4,4,1) *yaśas, annādya, śrī*
+[ŚAT. BR. 1,6,3,8.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,6,3,8) [2,1,3,7.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,1,3,7) [2,3,6.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,2,3,6) [8,6,2,1.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?8,6,2,1) [13,1,5,1.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?13,1,5,1) [4.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?13,1,5,4) [2,6,3.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?13,2,6,3) [9,3.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?13,2,9,3) *śrīyaśasāni*
+[12,8,3,1.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?12,8,3,1) *puṣṭi, rāddhi, śrī*
 [LĀṬY. 3,11,3.]
 [ĀŚV. ŚR. 11,4,8.]
 [GṚHY. 1,24,29. 4,9,4.] [KAUŚ. 3. 9. 101. 106.] [KAUṢ. UP. 1,5.] *śriyā deyam* so v. a. nach den Vermögensverhältnissen
 [TAITT. UP. 1,11,3.] *śriyaṃ pratyaṅmukho bhuṅkte*
-[M. 2,52.] *karmāṇyārabhamāṇaṃ hi puruṣaṃ śrīrniṣevate*
-[M. 9,300.]
-[MBH. 1,7761.] [13,309. fg.] *svagṛhaṃ ˚vivarjitam*
-[R. 2,72,3.] *labheta vā prārthayitā na vā śriyaṃ śriyā durāpaḥ kathamīpsito bhavet*
-[ŚĀK. 62.] [91,14.] *śrīrmaṅgalātprabhavati*
-[Spr. 5087.] *na dātuṃ nopabhoktuṃ vā śaknoti kṛpaṇaḥ śriyam*
-[(II) 3282.] *yadīcchecchriyamātmanaḥ*
-[3387.] [3562.] *pañca ˚sahacāriṇaḥ*
-[3758.] *˚bhājana*
-[3842.] [4978.] [VARĀH. BṚH. S. 45,6.] [53,88.] [124.] [KATHĀS. 18,134.] *kośe baddhā kṛtā yena calāpi śrīrbhujārpitā*
-[43,21.] *puṣṭā*
-[M. 4,231.]
-[VARĀH. BṚH. S. 62,1.] *suvipulā*
-[MBH. 3,2302.] = *kośa* Schatz
-[BHĀG. P. 9,10,17.] *artha˚, bhoga˚*
-[KATHĀS. 54,163.] *etayornipuṇaṃ vedmi nāhaṃ bhedaṃ śriyoḥ* 164. *śakrasya* Herrlichkeit, Majestät
-[Spr. (II) 3589.] *lokapālāḥ ˚lakṣaṇotsargavinītaveṣāḥ*
-[KUMĀRAS. 7,45.] *amara˚*
-[VARĀH. BṚH. S. 12,3.] die glänzende Stellung und Macht eines Fürsten: *śrī, vijaya*
+[M. 2,52.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,52) *karmāṇyārabhamāṇaṃ hi puruṣaṃ śrīrniṣevate*
+[M. 9,300.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,300)
+[MBH. 1,7761.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7761) [13,309. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.309) *svagṛhaṃ ˚vivarjitam*
+[R. 2,72,3.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,72,3) *labheta vā prārthayitā na vā śriyaṃ śriyā durāpaḥ kathamīpsito bhavet*
+[ŚĀK. 62.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?62) [91,14.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?91,14) *śrīrmaṅgalātprabhavati*
+[Spr. 5087.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?5087) *na dātuṃ nopabhoktuṃ vā śaknoti kṛpaṇaḥ śriyam*
+[(II) 3282.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3282) *yadīcchecchriyamātmanaḥ*
+[3387.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3387) [3562.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3562) *pañca ˚sahacāriṇaḥ*
+[3758.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3758) *˚bhājana*
+[3842.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3842) [4978.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4978) [VARĀH. BṚH. S. 45,6.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?45,6) [53,88.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?53,88) [124.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?53,124) [KATHĀS. 18,134.](https://sanskrit-lexicon-scans.github.io/kss/index.html?18,134) *kośe baddhā kṛtā yena calāpi śrīrbhujārpitā*
+[43,21.](https://sanskrit-lexicon-scans.github.io/kss/index.html?43,21) *puṣṭā*
+[M. 4,231.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,231)
+[VARĀH. BṚH. S. 62,1.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?62,1) *suvipulā*
+[MBH. 3,2302.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2302) = *kośa* Schatz
+[BHĀG. P. 9,10,17.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,10,17) *artha˚, bhoga˚*
+[KATHĀS. 54,163.](https://sanskrit-lexicon-scans.github.io/kss/index.html?54,163) *etayornipuṇaṃ vedmi nāhaṃ bhedaṃ śriyoḥ* 164. *śakrasya* Herrlichkeit, Majestät
+[Spr. (II) 3589.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3589) *lokapālāḥ ˚lakṣaṇotsargavinītaveṣāḥ*
+[KUMĀRAS. 7,45.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?7,45) *amara˚*
+[VARĀH. BṚH. S. 12,3.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?12,3) die glänzende Stellung und Macht eines Fürsten: *śrī, vijaya*
 [BHĀG. 18,78.] *˚pratāpa*
-[MBH. 4,2285.]
+[MBH. 4,2285.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.2285)
 
 *śrīśca rājye pratiṣṭhitā*
-[12,2254.] [R. 2,21,15.] [36,30.] [55,16.] *śrīśca tvāṃ vṛṇute padmā* (personif.)
-[70,12.] [79,15.] [84,5.] [RAGH. 3,36.] [8,13. fg.] [12,2.] [6.] [13.] [104.] [17,46.] [18,52] (*˚bhuvau*).* vidyullekhā kanakaruciśrīrvitānaṃ mamābhram* so v. a. königliche Insignien
-[VIKR. 76.] *parā*
-[Spr. (II) 688.] [2633.] [3399.] [5548.] [5894.] *pradīptā*
-[VARĀH. BṚH. S. 50,23.] *śriyo bhājaḥ* hochangesehene, vornehme Leute
-[68,64.] *mohāndhamavivekaṃ hi śrīścirāya na sevate*
-[KATHĀS. 49,223.]
-[RĀJA-TAR. 3,126.] [4,49.] [610.] *˚mada*
-[1,354.] [BHĀG. P. 10,73,20.] *bubhuje ca śriyaṃ svṛddhām*
-[8,15,36.] *yauvarājya˚*
-[VIKR. 161.] *˚yuta (munīśa)* almus R. Einl. — plur.: *śriyo vai parjanyo varṣati*
-[ŚAT. BR. 12,4,1,11.] *śrīśca prajñāṃ ca vidhehi naḥ*
+[12,2254.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.2254) [R. 2,21,15.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,21,15) [36,30.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,36,30) [55,16.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,55,16) *śrīśca tvāṃ vṛṇute padmā* (personif.)
+[70,12.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,70,12) [79,15.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,79,15) [84,5.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,84,5) [RAGH. 3,36.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?3,36) [8,13. fg.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?8,13) [12,2.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?12,2) [6.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?12,6) [13.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?12,13) [104.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?12,104) [17,46.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?17,46) [18,52](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?18,52) (*˚bhuvau*).* vidyullekhā kanakaruciśrīrvitānaṃ mamābhram* so v. a. königliche Insignien
+[VIKR. 76.](https://sanskrit-lexicon-scans.github.io/vikramor/app1?76) *parā*
+[Spr. (II) 688.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?688) [2633.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2633) [3399.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3399) [5548.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5548) [5894.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5894) *pradīptā*
+[VARĀH. BṚH. S. 50,23.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?50,23) *śriyo bhājaḥ* hochangesehene, vornehme Leute
+[68,64.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?68,64) *mohāndhamavivekaṃ hi śrīścirāya na sevate*
+[KATHĀS. 49,223.](https://sanskrit-lexicon-scans.github.io/kss/index.html?49,223)
+[RĀJA-TAR. 3,126.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?3,126) [4,49.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,49) [610.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,610) *˚mada*
+[1,354.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?1,354) [BHĀG. P. 10,73,20.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,73,20) *bubhuje ca śriyaṃ svṛddhām*
+[8,15,36.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,15,36) *yauvarājya˚*
+[VIKR. 161.](https://sanskrit-lexicon-scans.github.io/vikramor/app1?161) *˚yuta (munīśa)* almus R. Einl. — plur.: *śriyo vai parjanyo varṣati*
+[ŚAT. BR. 12,4,1,11.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?12,4,1,11) *śrīśca prajñāṃ ca vidhehi naḥ*
 [PRAŚNOP. 2,13.] *śriyo dolālolāḥ*
-[Spr. 3035.] [5022.] [Spr. (II) 3110.] [3698.] *śrīṇāṃ dānaṃ rasaḥ paraḥ*
-[4049.] *prāptāḥ śriyaḥ*
-[4327.] [KATHĀS. 56,385.] *anyanṛpa˚*
-[23,70.] Am Ende eines adj. comp.: *pṛthu˚*
-[MBH. 3,2446.]
-[RAGH. 1,93.] [2,74.] *pūrṇa˚*
-[Spr. (II) 2156.] *śrī* sg. und pl. im Wortspiel mit *strī*
-[Spr. (II) 313.] [4628.] [5996.] pl. [395.] [4200.] [(I) 5126.]
+[Spr. 3035.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3035) [5022.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?5022) [Spr. (II) 3110.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3110) [3698.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3698) *śrīṇāṃ dānaṃ rasaḥ paraḥ*
+[4049.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4049) *prāptāḥ śriyaḥ*
+[4327.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4327) [KATHĀS. 56,385.](https://sanskrit-lexicon-scans.github.io/kss/index.html?56,385) *anyanṛpa˚*
+[23,70.](https://sanskrit-lexicon-scans.github.io/kss/index.html?23,70) Am Ende eines adj. comp.: *pṛthu˚*
+[MBH. 3,2446.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2446)
+[RAGH. 1,93.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?1,93) [2,74.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?2,74) *pūrṇa˚*
+[Spr. (II) 2156.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2156) *śrī* sg. und pl. im Wortspiel mit *strī*
+[Spr. (II) 313.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?313) [4628.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4628) [5996.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5996) pl. [395.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?395) [4200.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4200) [(I) 5126.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?5126)
 
 - **RU:** — c) «благополучие, счастье, богатство; выдающееся положение и статус, великолепие»; = *saṃpad, saṃpatti, vibhūti*
-[AK. 2,8,2,50.]
+[AK. 2,8,2,50.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?2,8,2,50)
 [TRIK.]
-[H. 357.]
+[H. 357.](https://sanskrit-lexicon-scans.github.io/abch2/app1?357)
 [MED.] = *trivargasaṃpatti* (по
 [ŚKDR.] два Bedd.)
 [H. an.] [MED.] [VIŚVA] a. a. O. = *vṛddhi* и *siddhi*
 [ŚABDAR.] в [ŚKDR.] = *adhikāra* и *kīrti*
 [DHAR.] ebend.= *aiśvarya* ved. Comm. *śrīśca lakṣmīśca*
-[VS. 31,22.] [32,16.] *śriyāṃ mā dhehi bhūtyām*
-[AV. 12,1,63.] *kṣatra, śrī*
-[6,54,1.] [73,1.] [9,5,31.] *draviṇa, śrī*
-[10,6,26.] [11,1,12.] [21.] *śrī, dharma*
-[12,5,7.] *satya, śrī, yaśas* 2. *pratīcyeṣāṃ śrīragāt bhadrā bhūtvā parā bhaviṣyanti* «их счастье пошло на убыль»
-[TBR. 1,1,4,4.]
-[AIT. BR. 1,30.] [3,7.] [5,22.] [7,15.] [17.] *āditya iva śriyāṃ pratiṣṭhitastapati*
-[34.] [8,5.] [6.] [9.] [12.] [TBR. 3,10,9,6.] *apa vā etasmācchrī rāṣṭraṃ krāmati*
-[9,14,1.] *yo 'laṃ śriyai sansadṛṅksamānaiḥ syāt*
-[TS. 2,2,8,6.] [5,1,8,6.] [6,1,10,3.] [7,2,7,3.] *avartimeva pāpmānamapahatya śriyaṃ gacchati*
-[4,2,1.] [4,1.] *yaśas, annādya, śrī*
-[ŚAT. BR. 1,6,3,8.] [2,1,3,7.] [2,3,6.] [8,6,2,1.] [13,1,5,1.] [4.] [2,6,3.] [9,3.] *śrīyaśasāni*
-[12,8,3,1.] *puṣṭi, rāddhi, śrī*
+[VS. 31,22.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?31,22) [32,16.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?32,16) *śriyāṃ mā dhehi bhūtyām*
+[AV. 12,1,63.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av12.001.html#av12.001.63) *kṣatra, śrī*
+[6,54,1.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av06.054.html#av06.054.01) [73,1.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av06.073.html#av06.073.01) [9,5,31.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av09.005.html#av09.005.31) *draviṇa, śrī*
+[10,6,26.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av10.006.html#av10.006.26) [11,1,12.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av11.001.html#av11.001.12) [21.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av11.001.html#av11.001.21) *śrī, dharma*
+[12,5,7.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av12.005.html#av12.005.07) *satya, śrī, yaśas* 2. *pratīcyeṣāṃ śrīragāt bhadrā bhūtvā parā bhaviṣyanti* «их счастье пошло на убыль»
+[TBR. 1,1,4,4.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?1,1,4,4)
+[AIT. BR. 1,30.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?1,30) [3,7.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?3,7) [5,22.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?5,22) [7,15.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?7,15) [17.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?7,17) *āditya iva śriyāṃ pratiṣṭhitastapati*
+[34.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?7,34) [8,5.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?8,5) [6.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?8,6) [9.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?8,9) [12.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?8,12) [TBR. 3,10,9,6.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?3,10,9,6) *apa vā etasmācchrī rāṣṭraṃ krāmati*
+[9,14,1.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?3,9,14,1) *yo 'laṃ śriyai sansadṛṅksamānaiḥ syāt*
+[TS. 2,2,8,6.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?2,2,8,6) [5,1,8,6.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?5,1,8,6) [6,1,10,3.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?6,1,10,3) [7,2,7,3.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?7,2,7,3) *avartimeva pāpmānamapahatya śriyaṃ gacchati*
+[4,2,1.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?7,4,2,1) [4,1.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?7,4,4,1) *yaśas, annādya, śrī*
+[ŚAT. BR. 1,6,3,8.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,6,3,8) [2,1,3,7.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,1,3,7) [2,3,6.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,2,3,6) [8,6,2,1.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?8,6,2,1) [13,1,5,1.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?13,1,5,1) [4.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?13,1,5,4) [2,6,3.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?13,2,6,3) [9,3.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?13,2,9,3) *śrīyaśasāni*
+[12,8,3,1.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?12,8,3,1) *puṣṭi, rāddhi, śrī*
 [LĀṬY. 3,11,3.]
 [ĀŚV. ŚR. 11,4,8.]
 [GṚHY. 1,24,29. 4,9,4.] [KAUŚ. 3. 9. 101. 106.] [KAUṢ. UP. 1,5.] *śriyā deyam* так v. a. «сообразно имущественному положению»
 [TAITT. UP. 1,11,3.] *śriyaṃ pratyaṅmukho bhuṅkte*
-[M. 2,52.] *karmāṇyārabhamāṇaṃ hi puruṣaṃ śrīrniṣevate*
-[M. 9,300.]
-[MBH. 1,7761.] [13,309. fg.] *svagṛhaṃ ˚vivarjitam*
-[R. 2,72,3.] *labheta vā prārthayitā na vā śriyaṃ śriyā durāpaḥ kathamīpsito bhavet*
-[ŚĀK. 62.] [91,14.] *śrīrmaṅgalātprabhavati*
-[Spr. 5087.] *na dātuṃ nopabhoktuṃ vā śaknoti kṛpaṇaḥ śriyam*
-[(II) 3282.] *yadīcchecchriyamātmanaḥ*
-[3387.] [3562.] *pañca ˚sahacāriṇaḥ*
-[3758.] *˚bhājana*
-[3842.] [4978.] [VARĀH. BṚH. S. 45,6.] [53,88.] [124.] [KATHĀS. 18,134.] *kośe baddhā kṛtā yena calāpi śrīrbhujārpitā*
-[43,21.] *puṣṭā*
-[M. 4,231.]
-[VARĀH. BṚH. S. 62,1.] *suvipulā*
-[MBH. 3,2302.] = *kośa* «сокровище»
-[BHĀG. P. 9,10,17.] *artha˚, bhoga˚*
-[KATHĀS. 54,163.] *etayornipuṇaṃ vedmi nāhaṃ bhedaṃ śriyoḥ* 164. *śakrasya* «великолепие, величие»
-[Spr. (II) 3589.] *lokapālāḥ ˚lakṣaṇotsargavinītaveṣāḥ*
-[KUMĀRAS. 7,45.] *amara˚*
-[VARĀH. BṚH. S. 12,3.] «блистательное положение и власть государя»: *śrī, vijaya*
+[M. 2,52.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,52) *karmāṇyārabhamāṇaṃ hi puruṣaṃ śrīrniṣevate*
+[M. 9,300.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,300)
+[MBH. 1,7761.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7761) [13,309. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.309) *svagṛhaṃ ˚vivarjitam*
+[R. 2,72,3.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,72,3) *labheta vā prārthayitā na vā śriyaṃ śriyā durāpaḥ kathamīpsito bhavet*
+[ŚĀK. 62.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?62) [91,14.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?91,14) *śrīrmaṅgalātprabhavati*
+[Spr. 5087.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?5087) *na dātuṃ nopabhoktuṃ vā śaknoti kṛpaṇaḥ śriyam*
+[(II) 3282.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3282) *yadīcchecchriyamātmanaḥ*
+[3387.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3387) [3562.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3562) *pañca ˚sahacāriṇaḥ*
+[3758.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3758) *˚bhājana*
+[3842.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3842) [4978.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4978) [VARĀH. BṚH. S. 45,6.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?45,6) [53,88.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?53,88) [124.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?53,124) [KATHĀS. 18,134.](https://sanskrit-lexicon-scans.github.io/kss/index.html?18,134) *kośe baddhā kṛtā yena calāpi śrīrbhujārpitā*
+[43,21.](https://sanskrit-lexicon-scans.github.io/kss/index.html?43,21) *puṣṭā*
+[M. 4,231.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,231)
+[VARĀH. BṚH. S. 62,1.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?62,1) *suvipulā*
+[MBH. 3,2302.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2302) = *kośa* «сокровище»
+[BHĀG. P. 9,10,17.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,10,17) *artha˚, bhoga˚*
+[KATHĀS. 54,163.](https://sanskrit-lexicon-scans.github.io/kss/index.html?54,163) *etayornipuṇaṃ vedmi nāhaṃ bhedaṃ śriyoḥ* 164. *śakrasya* «великолепие, величие»
+[Spr. (II) 3589.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3589) *lokapālāḥ ˚lakṣaṇotsargavinītaveṣāḥ*
+[KUMĀRAS. 7,45.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?7,45) *amara˚*
+[VARĀH. BṚH. S. 12,3.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?12,3) «блистательное положение и власть государя»: *śrī, vijaya*
 [BHĀG. 18,78.] *˚pratāpa*
-[MBH. 4,2285.]
+[MBH. 4,2285.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.2285)
 
 *śrīśca rājye pratiṣṭhitā*
-[12,2254.] [R. 2,21,15.] [36,30.] [55,16.] *śrīśca tvāṃ vṛṇute padmā* (personif.)
-[70,12.] [79,15.] [84,5.] [RAGH. 3,36.] [8,13. fg.] [12,2.] [6.] [13.] [104.] [17,46.] [18,52] (*˚bhuvau*).* vidyullekhā kanakaruciśrīrvitānaṃ mamābhram* так v. a. «царские регалии»
-[VIKR. 76.] *parā*
-[Spr. (II) 688.] [2633.] [3399.] [5548.] [5894.] *pradīptā*
-[VARĀH. BṚH. S. 50,23.] *śriyo bhājaḥ* «высокоуважаемые, знатные люди»
-[68,64.] *mohāndhamavivekaṃ hi śrīścirāya na sevate*
-[KATHĀS. 49,223.]
-[RĀJA-TAR. 3,126.] [4,49.] [610.] *˚mada*
-[1,354.] [BHĀG. P. 10,73,20.] *bubhuje ca śriyaṃ svṛddhām*
-[8,15,36.] *yauvarājya˚*
-[VIKR. 161.] *˚yuta (munīśa)* «almus» Р. Einl. — plur.: *śriyo vai parjanyo varṣati*
-[ŚAT. BR. 12,4,1,11.] *śrīśca prajñāṃ ca vidhehi naḥ*
+[12,2254.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.2254) [R. 2,21,15.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,21,15) [36,30.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,36,30) [55,16.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,55,16) *śrīśca tvāṃ vṛṇute padmā* (personif.)
+[70,12.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,70,12) [79,15.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,79,15) [84,5.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,84,5) [RAGH. 3,36.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?3,36) [8,13. fg.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?8,13) [12,2.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?12,2) [6.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?12,6) [13.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?12,13) [104.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?12,104) [17,46.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?17,46) [18,52](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?18,52) (*˚bhuvau*).* vidyullekhā kanakaruciśrīrvitānaṃ mamābhram* так v. a. «царские регалии»
+[VIKR. 76.](https://sanskrit-lexicon-scans.github.io/vikramor/app1?76) *parā*
+[Spr. (II) 688.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?688) [2633.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2633) [3399.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3399) [5548.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5548) [5894.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5894) *pradīptā*
+[VARĀH. BṚH. S. 50,23.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?50,23) *śriyo bhājaḥ* «высокоуважаемые, знатные люди»
+[68,64.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?68,64) *mohāndhamavivekaṃ hi śrīścirāya na sevate*
+[KATHĀS. 49,223.](https://sanskrit-lexicon-scans.github.io/kss/index.html?49,223)
+[RĀJA-TAR. 3,126.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?3,126) [4,49.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,49) [610.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,610) *˚mada*
+[1,354.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?1,354) [BHĀG. P. 10,73,20.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,73,20) *bubhuje ca śriyaṃ svṛddhām*
+[8,15,36.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,15,36) *yauvarājya˚*
+[VIKR. 161.](https://sanskrit-lexicon-scans.github.io/vikramor/app1?161) *˚yuta (munīśa)* «almus» Р. Einl. — plur.: *śriyo vai parjanyo varṣati*
+[ŚAT. BR. 12,4,1,11.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?12,4,1,11) *śrīśca prajñāṃ ca vidhehi naḥ*
 [PRAŚNOP. 2,13.] *śriyo dolālolāḥ*
-[Spr. 3035.] [5022.] [Spr. (II) 3110.] [3698.] *śrīṇāṃ dānaṃ rasaḥ paraḥ*
-[4049.] *prāptāḥ śriyaḥ*
-[4327.] [KATHĀS. 56,385.] *anyanṛpa˚*
-[23,70.] В конце adj. comp.: *pṛthu˚*
-[MBH. 3,2446.]
-[RAGH. 1,93.] [2,74.] *pūrṇa˚*
-[Spr. (II) 2156.] *śrī* sg. и pl. в игре слов с *strī*
-[Spr. (II) 313.] [4628.] [5996.] pl. [395.] [4200.] [(I) 5126.]
+[Spr. 3035.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3035) [5022.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?5022) [Spr. (II) 3110.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3110) [3698.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3698) *śrīṇāṃ dānaṃ rasaḥ paraḥ*
+[4049.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4049) *prāptāḥ śriyaḥ*
+[4327.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4327) [KATHĀS. 56,385.](https://sanskrit-lexicon-scans.github.io/kss/index.html?56,385) *anyanṛpa˚*
+[23,70.](https://sanskrit-lexicon-scans.github.io/kss/index.html?23,70) В конце adj. comp.: *pṛthu˚*
+[MBH. 3,2446.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2446)
+[RAGH. 1,93.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?1,93) [2,74.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?2,74) *pūrṇa˚*
+[Spr. (II) 2156.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2156) *śrī* sg. и pl. в игре слов с *strī*
+[Spr. (II) 313.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?313) [4628.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4628) [5996.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5996) pl. [395.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?395) [4200.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4200) [(I) 5126.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?5126)
   <sub>attested</sub>
 
 **1d)** — d) personif. als Göttin der Schönheit, insbes. aber der Wohlfahrt, = *lakṣmī*
-[AK. 1,1,1,22.]
-[TRIK. 1,1,41.] [3,3,373.]
-[H. 226.]
+[AK. 1,1,1,22.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?1,1,1,22)
+[TRIK. 1,1,41.](https://sanskrit-lexicon-scans.github.io/medini/app2?1,1,41) [3,3,373.](https://sanskrit-lexicon-scans.github.io/medini/app2?3,3,373)
+[H. 226.](https://sanskrit-lexicon-scans.github.io/abch2/app1?226)
 [H. an.]
 [MED.]
-[HĀR. 224.]
-[HALĀY. 1,31.] [VIŚVA] a. a. O. *prajāpatirvai prajāḥ sṛjamāno 'tapyata . tasmācchrāntāttepānācchrīrudakrāmatsā dīpyamānā bhrājamānā lelāyantyatiṣṭhat*
-u. s. w. [ŚAT. BR. 11,4,3,1. fgg.] *ucchīrṣake śriyai kuryāt (balim)*
-[M. 3,89.] *āyatalocanā*
-[MBH. 3,2084.] *lokakāntā*
-[2664.] *˚paricaya*
-[Spr. 2664.] *śriyā hmabhīkṣṇaṃ saṃvāsaḥ*
-[5085.] *devī*
-[(II) 3768.] *viṣṇorlalāṭātkamalaṃ sauvarṇamabhavattadā . śrīḥ saṃbhūtā yato devī patnī dharmasya dhīmataḥ ..*
-[MBH. 12,2252. fg.]
-[HARIV. 5419.] [6092. fgg.] [6615.] [7740.] [9498.] *tāstvāṃ paricariṣyanti śriyamapsaraso yathā*
-[R. 5,22,32.] *padmahīnāmiva śriyam*
-[3,52,22.] [RAGH. 10,8.] *parasparavirodhinyoḥ śrīsarasvatyoḥ*
-[Spr. (II) 3941.]
-[KATHĀS. 18,204.]
-[RĀJA-TAR. 5,425.] wohnt auf dem Meru
-[R. 1,1,32] ([34] [GORR.]). *rāmalakṣmaṇayormadhye sītā rājati te snuṣā . viṣṇuvāsavayormadhye padmā śrīriva rūpiṇī ..*
-[R. GORR. 2,60,13.] [KATHĀS. 7,60.] *˚kavaca*
-[Verz. d. Oxf. H. 94,a,42.] *˚mantra*
-[93,b,19.]
-[105,b,16. fg.]
-[MBH. 1,1146.] [1148.]
-[HARIV. 4603. fgg.] [12187.]
-[R. 1,45,43.]
+[HĀR. 224.](https://sanskrit-lexicon-scans.github.io/medini/app3?224)
+[HALĀY. 1,31.](https://sanskrit-lexicon-scans.github.io/armh2/app1?1,31) [VIŚVA] a. a. O. *prajāpatirvai prajāḥ sṛjamāno 'tapyata . tasmācchrāntāttepānācchrīrudakrāmatsā dīpyamānā bhrājamānā lelāyantyatiṣṭhat*
+u. s. w. [ŚAT. BR. 11,4,3,1. fgg.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?11,4,3,1) *ucchīrṣake śriyai kuryāt (balim)*
+[M. 3,89.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,89) *āyatalocanā*
+[MBH. 3,2084.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2084) *lokakāntā*
+[2664.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2664) *˚paricaya*
+[Spr. 2664.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2664) *śriyā hmabhīkṣṇaṃ saṃvāsaḥ*
+[5085.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?5085) *devī*
+[(II) 3768.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3768) *viṣṇorlalāṭātkamalaṃ sauvarṇamabhavattadā . śrīḥ saṃbhūtā yato devī patnī dharmasya dhīmataḥ ..*
+[MBH. 12,2252. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.2252)
+[HARIV. 5419.](https://sanskrit-lexicon-scans.github.io/hariv?5419) [6092. fgg.](https://sanskrit-lexicon-scans.github.io/hariv?6092) [6615.](https://sanskrit-lexicon-scans.github.io/hariv?6615) [7740.](https://sanskrit-lexicon-scans.github.io/hariv?7740) [9498.](https://sanskrit-lexicon-scans.github.io/hariv?9498) *tāstvāṃ paricariṣyanti śriyamapsaraso yathā*
+[R. 5,22,32.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,22,32) *padmahīnāmiva śriyam*
+[3,52,22.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,52,22) [RAGH. 10,8.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?10,8) *parasparavirodhinyoḥ śrīsarasvatyoḥ*
+[Spr. (II) 3941.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3941)
+[KATHĀS. 18,204.](https://sanskrit-lexicon-scans.github.io/kss/index.html?18,204)
+[RĀJA-TAR. 5,425.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,425) wohnt auf dem Meru
+[R. 1,1,32](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,1,32) ([34](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,1,34) [GORR.]). *rāmalakṣmaṇayormadhye sītā rājati te snuṣā . viṣṇuvāsavayormadhye padmā śrīriva rūpiṇī ..*
+[R. GORR. 2,60,13.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,60,13) [KATHĀS. 7,60.](https://sanskrit-lexicon-scans.github.io/kss/index.html?7,60) *˚kavaca*
+[Verz. d. Oxf. H. 94,a,42.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?94) *˚mantra*
+[93,b,19.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?93)
+[105,b,16. fg.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?105)
+[MBH. 1,1146.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1146) [1148.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1148)
+[HARIV. 4603. fgg.](https://sanskrit-lexicon-scans.github.io/hariv?4603) [12187.](https://sanskrit-lexicon-scans.github.io/hariv?12187)
+[R. 1,45,43.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,45,43)
 [VP. 76. fgg.]
-[Spr. (II) 5897.] *jaladhisutā*
+[Spr. (II) 5897.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5897) *jaladhisutā*
 [DHŪRTAS. 77,1.] *devī śrīrjanakātmajā* Sītā als Śrī
-[Spr. (II) 2955.] Tochter Bhṛgu's von der Khyāti und Gattin Nārāyaṇa's
+[Spr. (II) 2955.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2955) Tochter Bhṛgu's von der Khyāti und Gattin Nārāyaṇa's
 [VP. 59. fg.]
-[MĀRK. P. 52,15.]
-[BHĀG. P. 4,1,43.] *kāmabhavananivāsinīṃ ca śriyaṃ rudantīmapaśyat*
+[MĀRK. P. 52,15.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?52,15)
+[BHĀG. P. 4,1,43.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,1,43) *kāmabhavananivāsinīṃ ca śriyaṃ rudantīmapaśyat*
 [LALIT. ed. Calc. 378,12.] als Mutter des Darpa
-[MĀRK. P. 50,25.] Śrī ist Herrin des Karaṇa Vaṇija
-[VARĀH. BṚH. S. 99,4.] *śriyaḥ putrāḥ* heissen Ziegen mit best. guten Merkmalen
-[65,9.] Bed.
+[MĀRK. P. 50,25.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?50,25) Śrī ist Herrin des Karaṇa Vaṇija
+[VARĀH. BṚH. S. 99,4.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?99,4) *śriyaḥ putrāḥ* heissen Ziegen mit best. guten Merkmalen
+[65,9.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?65,9) Bed.
  c) und
  d) lassen sich häufig nicht scheiden.
 
 - **RU:** — d) personif. «как богиня красоты», insbes. однако der Wohlfahrt → «также богиня благополучия», = *lakṣmī*
-[AK. 1,1,1,22.]
-[TRIK. 1,1,41.] [3,3,373.]
-[H. 226.]
+[AK. 1,1,1,22.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?1,1,1,22)
+[TRIK. 1,1,41.](https://sanskrit-lexicon-scans.github.io/medini/app2?1,1,41) [3,3,373.](https://sanskrit-lexicon-scans.github.io/medini/app2?3,3,373)
+[H. 226.](https://sanskrit-lexicon-scans.github.io/abch2/app1?226)
 [H. an.]
 [MED.]
-[HĀR. 224.]
-[HALĀY. 1,31.] [VIŚVA] a. a. O. *prajāpatirvai prajāḥ sṛjamāno 'tapyata . tasmācchrāntāttepānācchrīrudakrāmatsā dīpyamānā bhrājamānā lelāyantyatiṣṭhat*
-u. s. w. [ŚAT. BR. 11,4,3,1. fgg.] *ucchīrṣake śriyai kuryāt (balim)*
-[M. 3,89.] *āyatalocanā*
-[MBH. 3,2084.] *lokakāntā*
-[2664.] *˚paricaya*
-[Spr. 2664.] *śriyā hmabhīkṣṇaṃ saṃvāsaḥ*
-[5085.] *devī*
-[(II) 3768.] *viṣṇorlalāṭātkamalaṃ sauvarṇamabhavattadā . śrīḥ saṃbhūtā yato devī patnī dharmasya dhīmataḥ ..*
-[MBH. 12,2252. fg.]
-[HARIV. 5419.] [6092. fgg.] [6615.] [7740.] [9498.] *tāstvāṃ paricariṣyanti śriyamapsaraso yathā*
-[R. 5,22,32.] *padmahīnāmiva śriyam*
-[3,52,22.] [RAGH. 10,8.] *parasparavirodhinyoḥ śrīsarasvatyoḥ*
-[Spr. (II) 3941.]
-[KATHĀS. 18,204.]
-[RĀJA-TAR. 5,425.] обитает на Meru
-[R. 1,1,32] ([34] [GORR.]). *rāmalakṣmaṇayormadhye sītā rājati te snuṣā . viṣṇuvāsavayormadhye padmā śrīriva rūpiṇī ..*
-[R. GORR. 2,60,13.] [KATHĀS. 7,60.] *˚kavaca*
-[Verz. d. Oxf. H. 94,a,42.] *˚mantra*
-[93,b,19.]
-[105,b,16. fg.]
-[MBH. 1,1146.] [1148.]
-[HARIV. 4603. fgg.] [12187.]
-[R. 1,45,43.]
+[HĀR. 224.](https://sanskrit-lexicon-scans.github.io/medini/app3?224)
+[HALĀY. 1,31.](https://sanskrit-lexicon-scans.github.io/armh2/app1?1,31) [VIŚVA] a. a. O. *prajāpatirvai prajāḥ sṛjamāno 'tapyata . tasmācchrāntāttepānācchrīrudakrāmatsā dīpyamānā bhrājamānā lelāyantyatiṣṭhat*
+u. s. w. [ŚAT. BR. 11,4,3,1. fgg.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?11,4,3,1) *ucchīrṣake śriyai kuryāt (balim)*
+[M. 3,89.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,89) *āyatalocanā*
+[MBH. 3,2084.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2084) *lokakāntā*
+[2664.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2664) *˚paricaya*
+[Spr. 2664.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2664) *śriyā hmabhīkṣṇaṃ saṃvāsaḥ*
+[5085.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?5085) *devī*
+[(II) 3768.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3768) *viṣṇorlalāṭātkamalaṃ sauvarṇamabhavattadā . śrīḥ saṃbhūtā yato devī patnī dharmasya dhīmataḥ ..*
+[MBH. 12,2252. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.2252)
+[HARIV. 5419.](https://sanskrit-lexicon-scans.github.io/hariv?5419) [6092. fgg.](https://sanskrit-lexicon-scans.github.io/hariv?6092) [6615.](https://sanskrit-lexicon-scans.github.io/hariv?6615) [7740.](https://sanskrit-lexicon-scans.github.io/hariv?7740) [9498.](https://sanskrit-lexicon-scans.github.io/hariv?9498) *tāstvāṃ paricariṣyanti śriyamapsaraso yathā*
+[R. 5,22,32.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,22,32) *padmahīnāmiva śriyam*
+[3,52,22.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,52,22) [RAGH. 10,8.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?10,8) *parasparavirodhinyoḥ śrīsarasvatyoḥ*
+[Spr. (II) 3941.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3941)
+[KATHĀS. 18,204.](https://sanskrit-lexicon-scans.github.io/kss/index.html?18,204)
+[RĀJA-TAR. 5,425.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,425) обитает на Meru
+[R. 1,1,32](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,1,32) ([34](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,1,34) [GORR.]). *rāmalakṣmaṇayormadhye sītā rājati te snuṣā . viṣṇuvāsavayormadhye padmā śrīriva rūpiṇī ..*
+[R. GORR. 2,60,13.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,60,13) [KATHĀS. 7,60.](https://sanskrit-lexicon-scans.github.io/kss/index.html?7,60) *˚kavaca*
+[Verz. d. Oxf. H. 94,a,42.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?94) *˚mantra*
+[93,b,19.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?93)
+[105,b,16. fg.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?105)
+[MBH. 1,1146.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1146) [1148.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1148)
+[HARIV. 4603. fgg.](https://sanskrit-lexicon-scans.github.io/hariv?4603) [12187.](https://sanskrit-lexicon-scans.github.io/hariv?12187)
+[R. 1,45,43.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,45,43)
 [VP. 76. fgg.]
-[Spr. (II) 5897.] *jaladhisutā*
+[Spr. (II) 5897.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5897) *jaladhisutā*
 [DHŪRTAS. 77,1.] *devī śrīrjanakātmajā* Sītā как Śrī
-[Spr. (II) 2955.] дочь Bhṛgu's от Khyāti и супруга Nārāyaṇa's
+[Spr. (II) 2955.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2955) дочь Bhṛgu's от Khyāti и супруга Nārāyaṇa's
 [VP. 59. fg.]
-[MĀRK. P. 52,15.]
-[BHĀG. P. 4,1,43.] *kāmabhavananivāsinīṃ ca śriyaṃ rudantīmapaśyat*
+[MĀRK. P. 52,15.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?52,15)
+[BHĀG. P. 4,1,43.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,1,43) *kāmabhavananivāsinīṃ ca śriyaṃ rudantīmapaśyat*
 [LALIT. ed. Calc. 378,12.] как мать Darpa
-[MĀRK. P. 50,25.] Śrī есть владычица Karaṇa Vaṇija
-[VARĀH. BṚH. S. 99,4.] *śriyaḥ putrāḥ* называются «козы с best. добрыми приметами»
-[65,9.] Bed.
+[MĀRK. P. 50,25.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?50,25) Śrī есть владычица Karaṇa Vaṇija
+[VARĀH. BṚH. S. 99,4.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?99,4) *śriyaḥ putrāḥ* называются «козы с best. добрыми приметами»
+[65,9.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?65,9) Bed.
  c) и
  d) часто неразличимы.
   <sub>attested</sub>
@@ -512,36 +512,36 @@ u. s. w. [ŚAT. BR. 11,4,3,1. fgg.] *ucchīrṣake śriyai kuryāt (balim)*
 [PRAYOGASĀRA] im [ŚKDR.] *˚rāma*
 [WEBER, RĀMAT. UP. 344. fg. 350. 359.] *˚rāmacandra*
 [345. 350. 354.] *˚malli*
-[H. 49.] *˚dravyavardhanaḥ (avantiko nṛpaḥ)*
-[VARĀH. BṚH. S. 86,2.] *˚prabhākaravarman*
-[RĀJA-TAR. 5,30.] *˚kīrtivarmadeva*
+[H. 49.](https://sanskrit-lexicon-scans.github.io/abch2/app1?49) *˚dravyavardhanaḥ (avantiko nṛpaḥ)*
+[VARĀH. BṚH. S. 86,2.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?86,2) *˚prabhākaravarman*
+[RĀJA-TAR. 5,30.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,30) *˚kīrtivarmadeva*
 [PRAB. 2,9.]
 [DHŪRTAS. 66,16.] zwischen dem Personennamen und *caraṇa, pāda* Fuss: *bhagavadbhirnīlakaṇṭhabhāratīśrīcaraṇaiḥ*
 [SARVADARŚANAS. 172,1. 2.] — *˚pañcarātra*
 [55,18.] *purī ˚viśālā*
-[MEGH. 31.] *˚kāñcī*
-[Verz. d. Oxf. H. 221,a, No. 534.]
+[MEGH. 31.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?31) *˚kāñcī*
+[Verz. d. Oxf. H. 221,a, No. 534.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?221)
 
 - **RU:** — e) в начале личных имён (богов и людей), названий книг, местностей u. s. w. как выражение «высокого положения», которое занимают лица u. s. w.. *devaṃ guruṃ gurusthānaṃ kṣetraṃ kṣetrādhidevatām . siddhaṃ siddhādhikārāṃśca śrīpūrvaṃ samudīrayet ..*
 [PRAYOGASĀRA] в [ŚKDR.] *˚rāma*
 [WEBER, RĀMAT. UP. 344. fg. 350. 359.] *˚rāmacandra*
 [345. 350. 354.] *˚malli*
-[H. 49.] *˚dravyavardhanaḥ (avantiko nṛpaḥ)*
-[VARĀH. BṚH. S. 86,2.] *˚prabhākaravarman*
-[RĀJA-TAR. 5,30.] *˚kīrtivarmadeva*
+[H. 49.](https://sanskrit-lexicon-scans.github.io/abch2/app1?49) *˚dravyavardhanaḥ (avantiko nṛpaḥ)*
+[VARĀH. BṚH. S. 86,2.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?86,2) *˚prabhākaravarman*
+[RĀJA-TAR. 5,30.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,30) *˚kīrtivarmadeva*
 [PRAB. 2,9.]
 [DHŪRTAS. 66,16.] между личным именем и *caraṇa, pāda* «стопа»: *bhagavadbhirnīlakaṇṭhabhāratīśrīcaraṇaiḥ*
 [SARVADARŚANAS. 172,1. 2.] — *˚pañcarātra*
 [55,18.] *purī ˚viśālā*
-[MEGH. 31.] *˚kāñcī*
-[Verz. d. Oxf. H. 221,a, No. 534.]
+[MEGH. 31.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?31) *˚kāñcī*
+[Verz. d. Oxf. H. 221,a, No. 534.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?221)
   <sub>attested</sub>
 
 **1f)** — f) am Ende von Personennamen: *devyaḥ śrīśabdalāñchitāḥ* (z. B. *sadbhāva˚*)
-[RĀJA-TAR. 3,353.] [WASSILJEW 267.]
+[RĀJA-TAR. 3,353.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?3,353) [WASSILJEW 267.]
 
 - **RU:** — f) в конце личных имён: *devyaḥ śrīśabdalāñchitāḥ* (z. B. *sadbhāva˚*)
-[RĀJA-TAR. 3,353.] [WASSILJEW 267.]
+[RĀJA-TAR. 3,353.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?3,353) [WASSILJEW 267.]
   <sub>attested</sub>
 
 **1g)** — g) =
@@ -560,17 +560,17 @@ u. s. w. [ŚAT. BR. 11,4,3,1. fgg.] *ucchīrṣake śriyai kuryāt (balim)*
   <sub>lexicographic</sub>
 
 **1h)** — h) Gewürznelke
-[AK. 2,6,3,27.]
-[H. 646.] Pinus longifolia
+[AK. 2,6,3,27.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?2,6,3,27)
+[H. 646.](https://sanskrit-lexicon-scans.github.io/abch2/app1?646) Pinus longifolia
 [H. an.] [MED.] das Harz der Pinus longifolia
-[VIŚVA] a. a. O. [VARĀH. BṚH. S. 77,11.] [16.] [28.] Aegle Marmelos (aus *śrīphala* geschlossen), = *vṛddhināmauṣadha* und Lotusblüthe (*kamala*)
+[VIŚVA] a. a. O. [VARĀH. BṚH. S. 77,11.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?77,11) [16.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?77,16) [28.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?77,28) Aegle Marmelos (aus *śrīphala* geschlossen), = *vṛddhināmauṣadha* und Lotusblüthe (*kamala*)
 [RĀJAN.] im [ŚKDR.]
 
 - **RU:** — h) «гвоздика (пряность)»
-[AK. 2,6,3,27.]
-[H. 646.] «Pinus longifolia»
+[AK. 2,6,3,27.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?2,6,3,27)
+[H. 646.](https://sanskrit-lexicon-scans.github.io/abch2/app1?646) «Pinus longifolia»
 [H. an.] [MED.] «смола Pinus longifolia»
-[VIŚVA] a. a. O. [VARĀH. BṚH. S. 77,11.] [16.] [28.] «Aegle Marmelos» (заключено из *śrīphala*), = *vṛddhināmauṣadha* и «цветок лотоса» (*kamala*)
+[VIŚVA] a. a. O. [VARĀH. BṚH. S. 77,11.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?77,11) [16.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?77,16) [28.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?77,28) «Aegle Marmelos» (заключено из *śrīphala*), = *vṛddhināmauṣadha* и «цветок лотоса» (*kamala*)
 [RĀJAN.] в [ŚKDR.]
   <sub>lexicographic</sub>
 
@@ -593,37 +593,37 @@ u. s. w. [ŚAT. BR. 11,4,3,1. fgg.] *ucchīrṣake śriyai kuryāt (balim)*
 
 **1k)** — k) N. pr.
  α) einer buddhistischen Göttin
-[TRIK. 1,1,17.]
+[TRIK. 1,1,17.](https://sanskrit-lexicon-scans.github.io/medini/app2?1,1,17)
 — β) der Mutter des 17ten Arhant's der gegenwärtigen Avasarpiṇī (Kunthu's)
-[H. 40.]
+[H. 40.](https://sanskrit-lexicon-scans.github.io/abch2/app1?40)
 — γ) einer Tochter des Fürsten Suśarman
-[KATHĀS. 7,60.]
+[KATHĀS. 7,60.](https://sanskrit-lexicon-scans.github.io/kss/index.html?7,60)
 
 - **RU:** — k) N. pr., имя собств.
  α) буддийской богини
-[TRIK. 1,1,17.]
+[TRIK. 1,1,17.](https://sanskrit-lexicon-scans.github.io/medini/app2?1,1,17)
 — β) матери 17-го Arhant's нынешней Avasarpiṇī (Kunthu's)
-[H. 40.]
+[H. 40.](https://sanskrit-lexicon-scans.github.io/abch2/app1?40)
 — γ) дочери государя Suśarman
-[KATHĀS. 7,60.]
+[KATHĀS. 7,60.](https://sanskrit-lexicon-scans.github.io/kss/index.html?7,60)
   <sub>lexicographic</sub>
 
 **2)** — 2) _m._ N. eines musikalischen Rāga
 [ŚKDR.]
 — Vgl. *apa˚, gata˚, jaya˚* (Siegesglück, Siegesgöttin auch
-[RAGH. 4,41.] [12,93.]
-[RĀJA-TAR. 1,63]), *jina˚, darśata˚, ghṛta˚, niḥ˚, brahma˚, bhadra˚, bhūpāla˚, mañju˚, madhu˚, marya˚, mahā˚, mukha˚, rāja˚, rājya˚* (fürstliche Würde, — Stellung
-[R. 2,21,2.]
-[RAGH. 17,25]), *vijaya˚, veda˚, veṣa˚, śānta˚, śiva˚, śruta˚, saṃbhṛta˚, su˚, śreman, śreyaṃs, śreṣṭha* und
+[RAGH. 4,41.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?4,41) [12,93.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?12,93)
+[RĀJA-TAR. 1,63](https://sanskrit-lexicon-scans.github.io/rajatar/app1?1,63)), *jina˚, darśata˚, ghṛta˚, niḥ˚, brahma˚, bhadra˚, bhūpāla˚, mañju˚, madhu˚, marya˚, mahā˚, mukha˚, rāja˚, rājya˚* (fürstliche Würde, — Stellung
+[R. 2,21,2.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,21,2)
+[RAGH. 17,25](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?17,25)), *vijaya˚, veda˚, veṣa˚, śānta˚, śiva˚, śruta˚, saṃbhṛta˚, su˚, śreman, śreyaṃs, śreṣṭha* und
 κρείων.
 
 - **RU:** — 2) _m._ N. музыкального Rāga
 [ŚKDR.]
 — Vgl. *apa˚, gata˚, jaya˚* («победное счастье, богиня победы», также
-[RAGH. 4,41.] [12,93.]
-[RĀJA-TAR. 1,63]), *jina˚, darśata˚, ghṛta˚, niḥ˚, brahma˚, bhadra˚, bhūpāla˚, mañju˚, madhu˚, marya˚, mahā˚, mukha˚, rāja˚, rājya˚* («княжеское достоинство, — положение»
-[R. 2,21,2.]
-[RAGH. 17,25]), *vijaya˚, veda˚, veṣa˚, śānta˚, śiva˚, śruta˚, saṃbhṛta˚, su˚, śreman, śreyaṃs, śreṣṭha* и
+[RAGH. 4,41.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?4,41) [12,93.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?12,93)
+[RĀJA-TAR. 1,63](https://sanskrit-lexicon-scans.github.io/rajatar/app1?1,63)), *jina˚, darśata˚, ghṛta˚, niḥ˚, brahma˚, bhadra˚, bhūpāla˚, mañju˚, madhu˚, marya˚, mahā˚, mukha˚, rāja˚, rājya˚* («княжеское достоинство, — положение»
+[R. 2,21,2.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,21,2)
+[RAGH. 17,25](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?17,25)), *vijaya˚, veda˚, veṣa˚, śānta˚, śiva˚, śruta˚, saṃbhṛta˚, su˚, śreman, śreyaṃs, śreṣṭha* и
 κρείων.
   <sub>mixed</sub>
 
@@ -650,20 +650,20 @@ Z. 7 lies 3036 st. 2664.
 — С *abhi* Act. и *ā* Med. dass.
   <sub>attested</sub>
 
-**PW-3)** **3.** √*śrī*¦ = **1.** *śri*; vom Simplex nur *śrīṇānt* Licht verbreitend [ṚV. 1,68,1].
-— Mit *abhi* (*˚śrīṇāti*) herbeiführen, verschaffen [TBR. 1,2,6,7].
+**PW-3)** **3.** √*śrī*¦ = **1.** *śri*; vom Simplex nur *śrīṇānt* Licht verbreitend [ṚV. 1,68,1](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.068.html#rv01.068.01).
+— Mit *abhi* (*˚śrīṇāti*) herbeiführen, verschaffen [TBR. 1,2,6,7](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?1,2,6,7).
 — Mit *sam* (*saṃśrīṇāti*) zusammenfügen, verbinden mit (Instr.), so v. a. theilhaftig machen [TĀṆḌYA-BR. 9,6,7. 14,3. 22. 16,12,4. 18,11,1].
 
-- **RU:** **3.** √*śrī*¦ = **1.** *śri*; от простой формы только *śrīṇānt* «распространяющий свет» [ṚV. 1,68,1].
-— С *abhi* (*˚śrīṇāti*) «доставлять, обеспечивать» [TBR. 1,2,6,7].
+- **RU:** **3.** √*śrī*¦ = **1.** *śri*; от простой формы только *śrīṇānt* «распространяющий свет» [ṚV. 1,68,1](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.068.html#rv01.068.01).
+— С *abhi* (*˚śrīṇāti*) «доставлять, обеспечивать» [TBR. 1,2,6,7](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?1,2,6,7).
 — С *sam* (*saṃśrīṇāti*) «соединять, связывать с» (Instr.), так v. a. «делать причастным» [TĀṆḌYA-BR. 9,6,7. 14,3. 22. 16,12,4. 18,11,1].
   <sub>attested</sub>
 
 **PW-4-1)** **4.** *śrī*¦
-— 1〉 _f._ Mischung [ṚV. 4,41,8].
+— 1〉 _f._ Mischung [ṚV. 4,41,8](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.041.html#rv04.041.08).
 
 - **RU:** **4.** *śrī*¦
-— 1〉 _f._ «смешение» [ṚV. 4,41,8].
+— 1〉 _f._ «смешение» [ṚV. 4,41,8](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.041.html#rv04.041.08).
   <sub>attested</sub>
 
 **PW-4-2)** — 2〉 _Adj._ = **1.** *śrī*, **2.** *śrī* und **3.** *śrī*.

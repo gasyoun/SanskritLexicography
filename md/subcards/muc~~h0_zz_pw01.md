@@ -255,10 +255,10 @@
 - **EN:** — 5) to leave a place.
   <sub>DCS 3914 · attested</sub>
 
-**15.6)** — 6〉 Jmd oder Etwas fahren lassen, Jmd im sich lassen ([Spr. 7709]), aufgeben. *prāṇān* die Lebensgeister fahren lassen, so v. a. sterben. *vimukta* im Stich gelassen von (im Comp. vorangehend), fahren gelassen, aufgegeben (insbes. am Anfange eines adj. Comp. [120,23]).
+**15.6)** — 6〉 Jmd oder Etwas fahren lassen, Jmd im sich lassen ([Spr. 7709](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7709)), aufgeben. *prāṇān* die Lebensgeister fahren lassen, so v. a. sterben. *vimukta* im Stich gelassen von (im Comp. vorangehend), fahren gelassen, aufgegeben (insbes. am Anfange eines adj. Comp. [120,23]).
 
-- **RU:** — 6〉 бросать кого-л. или что-л., оставлять кого-л. на произвол судьбы ([Spr. 7709]), отказываться. *prāṇān* испустить жизненные силы, так v. a. умирать. *vimukta* брошенный, покинутый (в Comp. предшествующем), оставленный, покинутый (insbes. в начале adj. Comp. [120,23]).
-- **EN:** — 6) to let go of someone or something, to abandon someone ([Spr. 7709]), to give up. *prāṇān* "to let go of the vital spirits", thus v. a. "to die". *vimukta* "abandoned by" (in the Comp. preceding), "let go, given up" (insbes. at the beginning of a adj. Comp. [120,23]).
+- **RU:** — 6〉 бросать кого-л. или что-л., оставлять кого-л. на произвол судьбы ([Spr. 7709](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7709)), отказываться. *prāṇān* испустить жизненные силы, так v. a. умирать. *vimukta* брошенный, покинутый (в Comp. предшествующем), оставленный, покинутый (insbes. в начале adj. Comp. [120,23]).
+- **EN:** — 6) to let go of someone or something, to abandon someone ([Spr. 7709](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7709)), to give up. *prāṇān* "to let go of the vital spirits", thus v. a. "to die". *vimukta* "abandoned by" (in the Comp. preceding), "let go, given up" (insbes. at the beginning of a adj. Comp. [120,23]).
   <sub>DCS 3914 · attested</sub>
 
 **15.7)** — 7〉 aufgeben, vermeiden.

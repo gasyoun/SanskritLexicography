@@ -33,8 +33,8 @@
 **pw00-9)** — 9〉 gehen —, sich machen an, üben, treiben, vollziehen, sich hingeben, angelegen sein lassen, obliegen, beobachten; mit Acc. *tapasā* mit Kasteiungen behandeln, so v. a. kasteien.
 - **EN:** — 9) to set about —, take up, practise, pursue, perform, devote oneself to, attend to, be engaged in, observe; with Acc. *tapasā* to treat with mortifications, thus v. a. to mortify (oneself).
 
-**pw00-10)** — 10〉 bewirken, hervorbringen, verursachen [MBH. 1,153,17]. [HARIV. 6790]. [Spr. 3474].
-- **EN:** — 10) to effect, bring about, cause [MBH. 1,153,17]. [HARIV. 6790]. [Spr. 3474].
+**pw00-10)** — 10〉 bewirken, hervorbringen, verursachen [MBH. 1,153,17](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?1,153,17). [HARIV. 6790](https://sanskrit-lexicon-scans.github.io/hariv?6790). [Spr. 3474](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3474).
+- **EN:** — 10) to effect, bring about, cause [MBH. 1,153,17](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?1,153,17). [HARIV. 6790](https://sanskrit-lexicon-scans.github.io/hariv?6790). [Spr. 3474](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3474).
 
 **pw00-11)** — 11〉 zu sich nehmen, verzehren, fressen; mit Acc. Ohne Object weiden [142,14].
 - **EN:** — 11) to take in, consume, eat, devour; with Acc. Without an object, to graze [142,14].
@@ -66,8 +66,8 @@
 **pw00-caus-6)** — 6〉 fressen lassen, mit doppeltem Acc. [ŚAṂK. zu BĀDAR. 2,2,5].
 - **EN:** — 6) to let graze/devour, with double Acc. [ŚAṂK. zu BĀDAR. 2,2,5].
 
-**pw00-caus-7)** — 7〉 so v. a. den Beischlaf verüben lassen [M. 8,362].
-- **EN:** — 7) thus v. a. to cause sexual intercourse to be carried out [M. 8,362].
+**pw00-caus-7)** — 7〉 so v. a. den Beischlaf verüben lassen [M. 8,362](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,362).
+- **EN:** — 7) thus v. a. to cause sexual intercourse to be carried out [M. 8,362](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,362).
 
 **pw00-caus-8)** — 8〉 sich durch Jmd (Instr.) Kunde verschaffen von (Acc.).
 - **EN:** — 8) to obtain knowledge of (Acc.) through someone (Instr.).
@@ -90,8 +90,8 @@
 **pw00-intens)** — Intens. *carcarīti, cañcūryate* (mit act. und pass. Bed.), *cañcūryant*, **cañcurīti*, **cañcūrti* sich schnell-, sich wiederholt bewegen, herumstreichen, durchstreichen (mit Acc.), herumstreichen in (Loc.) [KĀRAṆḌ. 53,1]. Nach den Grammatikern einen Tadel involvirend.
 - **EN:** — Intens. *carcarīti, cañcūryate* (with act. and pass. Bed.), *cañcūryant*, **cañcurīti*, **cañcūrti* to move quickly —, move repeatedly, roam about, roam through (with Acc.), roam about in (Loc.) [KĀRAṆḌ. 53,1]. According to the grammarians this involves a censure (intensive).
 
-**pw00-anu1)** — Mit *accha* hinwandern zu (Acc.) [ṚV. 3,57,3. 8,49,2. 9,1,5].
-- **EN:** — With *accha* (anu) to wander toward (Acc.) [ṚV. 3,57,3. 8,49,2. 9,1,5].
+**pw00-anu1)** — Mit *accha* hinwandern zu (Acc.) [ṚV. 3,57,3. 8,49,2. 9,1,5](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.057.html#rv03.057.03).
+- **EN:** — With *accha* (anu) to wander toward (Acc.) [ṚV. 3,57,3. 8,49,2. 9,1,5](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.057.html#rv03.057.03).
 
 **pw00-ati-head)** — Mit *ati*
 - **EN:** — With *ati* (ati)
@@ -216,8 +216,8 @@
 **pw00-a-3)** — 3〉 betreten, besuchen ([CARAKA. 6,2]), bewohnen.
 - **EN:** — 3) to step onto, visit ([CARAKA. 6,2]), inhabit.
 
-**pw00-a-4)** — 4〉 sich an Jmd (Acc.) wenden (in einer Angelegenheit) [Spr. 5631].
-- **EN:** — 4) to turn to someone (Acc.) (in a matter) [Spr. 5631].
+**pw00-a-4)** — 4〉 sich an Jmd (Acc.) wenden (in einer Angelegenheit) [Spr. 5631](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?5631).
+- **EN:** — 4) to turn to someone (Acc.) (in a matter) [Spr. 5631](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?5631).
 
 **pw00-a-5)** — 5〉 gebrauchen [ĀPAST. 1,8,11]. anwenden.
 - **EN:** — 5) to use [ĀPAST. 1,8,11]. to apply.
@@ -234,23 +234,23 @@
 **pw00-a-9)** — 9〉 gehen an, thun, üben, treiben, begehen, vollbringen, bewerkstelligen; mit Acc. [KĀD. 85,15]. Ohne Object es thun.
 - **EN:** — 9) to set about, do, practise, pursue, commit, accomplish, bring about; with Acc. [KĀD. 85,15]. Without an object, to do it.
 
-**pw00-a-10)** — 10〉 daran gehen, beginnen; mit Infin. [Spr. 7177].
-- **EN:** — 10) to set about it, begin; with Infin. [Spr. 7177].
+**pw00-a-10)** — 10〉 daran gehen, beginnen; mit Infin. [Spr. 7177](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7177).
+- **EN:** — 10) to set about it, begin; with Infin. [Spr. 7177](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7177).
 
-**pw00-a-11)** — 11〉 für richtig erklären, vorschreiben [225,12]. [ṚV. PRĀT. 11,32]. [ŚĀK. 108,22], v. l.
-- **EN:** — 11) to declare correct, prescribe [225,12]. [ṚV. PRĀT. 11,32]. [ŚĀK. 108,22], v. l.
+**pw00-a-11)** — 11〉 für richtig erklären, vorschreiben [225,12]. [ṚV. PRĀT. 11,32]. [ŚĀK. 108,22](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?108,22), v. l.
+- **EN:** — 11) to declare correct, prescribe [225,12]. [ṚV. PRĀT. 11,32]. [ŚĀK. 108,22](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?108,22), v. l.
 
-**pw00-a-12)** — 12〉 verzehren (von Ameisen) [BHĀG. P. 7,3,15].
-- **EN:** — 12) to consume (of ants) [BHĀG. P. 7,3,15].
+**pw00-a-12)** — 12〉 verzehren (von Ameisen) [BHĀG. P. 7,3,15](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,3,15).
+- **EN:** — 12) to consume (of ants) [BHĀG. P. 7,3,15](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,3,15).
 
 **pw00-a-13)** — 13〉 inʼs Feuer werfen.
 - **EN:** — 13) to throw into the fire.
 
-**pw00-a-pp)** — Caus. *ācarayati* [PAÑCAT. IV,24] fehlerhaft; vgl. [Spr. 5664].
-- **EN:** — Caus. *ācarayati* [PAÑCAT. IV,24] faulty; vgl. [Spr. 5664].
+**pw00-a-pp)** — Caus. *ācarayati* [PAÑCAT. IV,24](https://sanskrit-lexicon-scans.github.io/pantankose/app1?4,24) fehlerhaft; vgl. [Spr. 5664](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?5664).
+- **EN:** — Caus. *ācarayati* [PAÑCAT. IV,24](https://sanskrit-lexicon-scans.github.io/pantankose/app1?4,24) faulty; vgl. [Spr. 5664](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?5664).
 
-**pw00-a-caus2)** — Mit *adhyā* gebrauchen [M. 2,119]; vgl. [ĀPAST. 1,8,11].
-- **EN:** — With *adhyā* to use [M. 2,119]; vgl. [ĀPAST. 1,8,11] (causative).
+**pw00-a-caus2)** — Mit *adhyā* gebrauchen [M. 2,119](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,119); vgl. [ĀPAST. 1,8,11].
+- **EN:** — With *adhyā* to use [M. 2,119](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,119); vgl. [ĀPAST. 1,8,11] (causative).
 
 **pw00-ut-head)** — Mit *abhyā*
 - **EN:** — With *abhyā* (ud)

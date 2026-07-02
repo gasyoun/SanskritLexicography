@@ -4,8 +4,8 @@
 
 
 **1)** — *paryava* ringsum Stücke abtrennen: *(puroḍāśam) samantaṃ paryavadyati*
-[TS. 2,3,7,4.]
+[TS. 2,3,7,4.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?2,3,7,4)
 
 - **RU:** — *paryava* кругом отрезать куски: *(puroḍāśam) samantaṃ paryavadyati*
-[TS. 2,3,7,4.]
+[TS. 2,3,7,4.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?2,3,7,4)
   <sub>DCS 12366 · attested</sub>

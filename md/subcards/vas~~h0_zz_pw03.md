@@ -75,10 +75,10 @@
 - **EN:** **5.** √*vas* ¦ with *vi* 6)a) read = 5)b) and add [VASIṢṬHA 27,17].
   <sub>lexicographic</sub>
 
-**2_vi)** **2.** √*vas*¦ mit *vi* VI. Aor. *vyavāṭ* [MAITR. S. 3,4,9 (57,5)]. Vgl. [AV. 8,1,21].
+**2_vi)** **2.** √*vas*¦ mit *vi* VI. Aor. *vyavāṭ* [MAITR. S. 3,4,9 (57,5)]. Vgl. [AV. 8,1,21](https://sanskrit-lexicon.github.io/avlinks/avhymns/av08.001.html#av08.001.21).
 
-- **RU:** **2.** √*vas*¦ с *vi* VI. Aor. *vyavāṭ* [MAITR. S. 3,4,9 (57,5)]. Vgl. [AV. 8,1,21].
-- **EN:** **2.** √*vas* ¦ with *vi* VI. Aor. *vyavāṭ* [MAITR. S. 3,4,9 (57,5)]. Vgl. [AV. 8,1,21].
+- **RU:** **2.** √*vas*¦ с *vi* VI. Aor. *vyavāṭ* [MAITR. S. 3,4,9 (57,5)]. Vgl. [AV. 8,1,21](https://sanskrit-lexicon.github.io/avlinks/avhymns/av08.001.html#av08.001.21).
+- **EN:** **2.** √*vas* ¦ with *vi* VI. Aor. *vyavāṭ* [MAITR. S. 3,4,9 (57,5)]. Vgl. [AV. 8,1,21](https://sanskrit-lexicon.github.io/avlinks/avhymns/av08.001.html#av08.001.21).
   <sub>attested</sub>
 
 **2_vi_b)** — Mit *abhivi* VI. 6.
@@ -87,10 +87,10 @@
 - **EN:** — With *abhivi* VI. 6.
   <sub>attested</sub>
 
-**5_vi)** **5.** √*vas*¦ VI. Aor. *avāksam* (so alle Hdschrr. nach [AUFRECHT]) [AIT. BR. 1,28,16] im Wortspiel mit *vāk* st. *avātsam* (so [HAUG]). 2〉 mit Acc. des Weibes [MBH. 13,4,10].
+**5_vi)** **5.** √*vas*¦ VI. Aor. *avāksam* (so alle Hdschrr. nach [AUFRECHT]) [AIT. BR. 1,28,16](https://sanskrit-lexicon-scans.github.io/aitbr_auf/app1?1,28,16) im Wortspiel mit *vāk* st. *avātsam* (so [HAUG]). 2〉 mit Acc. des Weibes [MBH. 13,4,10](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?13,4,10).
 
-- **RU:** **5.** √*vas*¦ VI. Aor. *avāksam* (так все Hdschrr. по [AUFRECHT]) [AIT. BR. 1,28,16] в игре слов с *vāk* st. *avātsam* (так [HAUG]). 2〉 с Acc. женщины [MBH. 13,4,10].
-- **EN:** **5.** √*vas* ¦ VI. Aor. *avāksam* (thus all Hdschrr. after [AUFRECHT]) [AIT. BR. 1,28,16] in a pun with *vāk* st. *avātsam* (thus [HAUG]). 2) with Acc. of the woman [MBH. 13,4,10].
+- **RU:** **5.** √*vas*¦ VI. Aor. *avāksam* (так все Hdschrr. по [AUFRECHT]) [AIT. BR. 1,28,16](https://sanskrit-lexicon-scans.github.io/aitbr_auf/app1?1,28,16) в игре слов с *vāk* st. *avātsam* (так [HAUG]). 2〉 с Acc. женщины [MBH. 13,4,10](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?13,4,10).
+- **EN:** **5.** √*vas* ¦ VI. Aor. *avāksam* (thus all Hdschrr. after [AUFRECHT]) [AIT. BR. 1,28,16](https://sanskrit-lexicon-scans.github.io/aitbr_auf/app1?1,28,16) in a pun with *vāk* st. *avātsam* (thus [HAUG]). 2) with Acc. of the woman [MBH. 13,4,10](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?13,4,10).
   <sub>attested</sub>
 
 **5_vi_b)** — Mit *vi* VI. 6.

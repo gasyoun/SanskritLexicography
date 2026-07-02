@@ -18,8 +18,8 @@
 **5)** — Mit *sam*, *saṃśruta* zusammengeflossen.
 - **EN:** — With *sam*, *saṃśruta* "flowed together, confluent".
 
-**1)** √*śru*¦ VI. *śuśrāva* mit pass. Bed. [R. 7,27,23].
-- **EN:** √*śru*¦ VI. *śuśrāva* with pass. Bed. [R. 7,27,23].
+**1)** √*śru*¦ VI. *śuśrāva* mit pass. Bed. [R. 7,27,23](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,27,23).
+- **EN:** √*śru*¦ VI. *śuśrāva* with pass. Bed. [R. 7,27,23](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,27,23).
 
 **2)** — Mit *upa* VI. geloben [JĀTAKAM. 31].
 - **EN:** — With *upa* VI. "to vow, promise" [JĀTAKAM. 31].
@@ -52,10 +52,10 @@
 - **RU:** — С *sam*, *saṃśruta* слившийся вместе, стёкшийся.
   <sub>DCS 10514 · attested</sub>
 
-**Nachtrag VI mit upa)** **1.** √*śru*¦ VI. *śuśrāva* mit pass. Bed. [R. 7,27,23].
+**Nachtrag VI mit upa)** **1.** √*śru*¦ VI. *śuśrāva* mit pass. Bed. [R. 7,27,23](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,27,23).
 — Mit *upa* VI. geloben [JĀTAKAM. 31].
 
-- **RU:** **1.** √*śru* VI. *śuśrāva* с pass. Bed. [R. 7,27,23].
+- **RU:** **1.** √*śru* VI. *śuśrāva* с pass. Bed. [R. 7,27,23](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,27,23).
 — С *upa* VI. давать обет, обещаться [JĀTAKAM. 31].
   <sub>DCS 10514 · attested</sub>
 

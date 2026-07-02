@@ -5,11 +5,11 @@
 
 **1)** *vas*¦
  1) *kriyāsiddhiḥ sattve vasati mahatāṃ nopakaraṇe* beruht auf
-[Spr. (II) 5712] = [6145.]
+[Spr. (II) 5712](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5712) = [6145.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6145)
 — *adhi* caus.
 - **EN:** *vas*
  1) *kriyāsiddhiḥ sattve vasati mahatāṃ nopakaraṇe* is based on
-[Spr. (II) 5712] = [6145.]
+[Spr. (II) 5712](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5712) = [6145.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6145)
 — *adhi* caus.
 
 **2)** 2) zu streichen; vgl. *vāsay* mit *adhi* .
@@ -29,7 +29,7 @@
 
 **5)** 5. *vas*¦
  1) *kriyāsiddhiḥ sattve vasati mahatāṃ nopakaraṇe* beruht auf
-[Spr. (II) 5712] = [6145.]
+[Spr. (II) 5712](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5712) = [6145.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6145)
 — *adhi* caus.
  2) zu streichen; vgl. *vāsay* mit *adhi* .
 — *ni*
@@ -40,7 +40,7 @@
 
 - **RU:** 5. *vas*¦
  1) *kriyāsiddhiḥ sattve vasati mahatāṃ nopakaraṇe* основано на
-[Spr. (II) 5712] = [6145.]
+[Spr. (II) 5712](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5712) = [6145.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6145)
 — *adhi* caus.
  2) вычеркнуть; vgl. *vāsay* с *adhi* .
 — *ni*

@@ -69,10 +69,10 @@
 **§ni1)** — 1〉 durch Tausch vergüten, heimgeben. Nur *apabhitya*.
 - **EN:** — 1) "to compensate by exchange, to give back". Only *apabhitya*.
 
-**§ni2)** — 2〉 *abwechseln. *apamitya* *yācate* oder *yācitvāpamayate* er bettelt abwechselnd [P. 3,4,19, Sch.]
+**§ni2)** — 2〉 *abwechseln. *apamitya* *yācate* oder *yācitvāpamayate* er bettelt abwechselnd [P. 3,4,19, Sch.](https://ashtadhyayi.com/sutraani/3/4/19)
 
-- **RU:** 2〉 *чередоваться. *apamitya* *yācate* или *yācitvāpamayate* он попрошайничает поочерёдно [P. 3,4,19, Sch.]
-- **EN:** — 2) *"to alternate". *apamitya* *yācate* or *yācitvāpamayate* "he begs by turns" [P. 3,4,19, Sch.]
+- **RU:** 2〉 *чередоваться. *apamitya* *yācate* или *yācitvāpamayate* он попрошайничает поочерёдно [P. 3,4,19, Sch.](https://ashtadhyayi.com/sutraani/3/4/19)
+- **EN:** — 2) *"to alternate". *apamitya* *yācate* or *yācitvāpamayate* "he begs by turns" [P. 3,4,19, Sch.](https://ashtadhyayi.com/sutraani/3/4/19)
   <sub>DCS 4955 · attested</sub>
 
 **§ni3)** — *Desid. *apamitsate*.
@@ -99,10 +99,10 @@
 - **EN:** — With *vini* in *˚maya*.
   <sub>DCS 4955 · attested</sub>
 
-**§other3)** — Mit *vi* Pl. etwa sich gegenseitig abwechseln [ṚV. 10,40,10]. v. l. [AV.]
+**§other3)** — Mit *vi* Pl. etwa sich gegenseitig abwechseln [ṚV. 10,40,10](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.040.html#rv10.040.10). v. l. [AV.]
 
-- **RU:** — Mit *vi* Pl. приблизительно «чередоваться взаимно» [ṚV. 10,40,10]. v. l. [AV.]
-- **EN:** — With *vi* Pl. approximately "to alternate with one another" [ṚV. 10,40,10]. v. l. [AV.]
+- **RU:** — Mit *vi* Pl. приблизительно «чередоваться взаимно» [ṚV. 10,40,10](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.040.html#rv10.040.10). v. l. [AV.]
+- **EN:** — With *vi* Pl. approximately "to alternate with one another" [ṚV. 10,40,10](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.040.html#rv10.040.10). v. l. [AV.]
   <sub>DCS 4955 · attested</sub>
 
 **§1)** **7.** *mā*¦ in einigen Formen von **1.** *mi* und **1.** *mī*.
@@ -111,10 +111,10 @@
 - **EN:** **7.** *mā* — in some forms of **1.** *mi* and **1.** *mī*.
   <sub>DCS 4955 · lexicographic</sub>
 
-**§1)** **8.** *mā*¦ Monat im Loc. *māsa* [TS. 7,4,2,2].
+**§1)** **8.** *mā*¦ Monat im Loc. *māsa* [TS. 7,4,2,2](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?7,4,2,2).
 
-- **RU:** *mā* месяц в Loc. *māsa* [TS. 7,4,2,2].
-- **EN:** **8.** *mā* — "month" in the Loc. *māsa* [TS. 7,4,2,2].
+- **RU:** *mā* месяц в Loc. *māsa* [TS. 7,4,2,2](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?7,4,2,2).
+- **EN:** **8.** *mā* — "month" in the Loc. *māsa* [TS. 7,4,2,2](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?7,4,2,2).
   <sub>DCS 4955 · attested</sub>
 
 **§15)** **3.** √*mā*¦ 15〉 *mita* neben *saṃmita* [MAITR. S. 2,11,1 (140,4)].
@@ -123,8 +123,8 @@
 - **EN:** **3.** √*mā* — 15) *mita* alongside *saṃmita* [MAITR. S. 2,11,1 (140,4)].
   <sub>DCS 4955 · attested</sub>
 
-**§15ni)** — Mit *ā* 1〉 bilden, hervorbringen [ṚV. 3,38,7]. — 2〉 herbeischaffen [ṚV. 10,56,2].
-- **EN:** — With *ā* 1) "to form, to bring forth" [ṚV. 3,38,7]. — 2) "to procure, fetch" [ṚV. 10,56,2].
+**§15ni)** — Mit *ā* 1〉 bilden, hervorbringen [ṚV. 3,38,7](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.038.html#rv03.038.07). — 2〉 herbeischaffen [ṚV. 10,56,2](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.056.html#rv10.056.02).
+- **EN:** — With *ā* 1) "to form, to bring forth" [ṚV. 3,38,7](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.038.html#rv03.038.07). — 2) "to procure, fetch" [ṚV. 10,56,2](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.056.html#rv10.056.02).
 
 **§15other)** — Mit *sam*, *saṃmita* [MAITR. S. 2,11,1 (140,4)].
 
@@ -132,10 +132,10 @@
 - **EN:** — With *sam*, *saṃmita* [MAITR. S. 2,11,1 (140,4)].
   <sub>DCS 4955 · attested</sub>
 
-**§1)** **1.** *mā*¦ mit Präs. damit nicht [R. GORR. 1,65,21]. *purā mā* mit Präs. so v. a. sonst, andernfalls [3,68,44]. *mā gantumarhasi* st. *na ga˚* metrisch [2,116,5].
+**§1)** **1.** *mā*¦ mit Präs. damit nicht [R. GORR. 1,65,21](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,65,21). *purā mā* mit Präs. so v. a. sonst, andernfalls [3,68,44](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,68,44). *mā gantumarhasi* st. *na ga˚* metrisch [2,116,5](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,116,5).
 
-- **RU:** *mā* с Präs. чтобы не [R. GORR. 1,65,21]. *purā mā* с Präs., так что v. a. иначе, в противном случае [3,68,44]. *mā gantumarhasi* st. *na ga˚* метрически вместо [2,116,5].
-- **EN:** **1.** *mā* — with Präs. "in order that not" [R. GORR. 1,65,21]. *purā mā* with Präs. so v. a. "otherwise, else" [3,68,44]. *mā gantumarhasi* st. *na ga˚* metrically [2,116,5].
+- **RU:** *mā* с Präs. чтобы не [R. GORR. 1,65,21](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,65,21). *purā mā* с Präs., так что v. a. иначе, в противном случае [3,68,44](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,68,44). *mā gantumarhasi* st. *na ga˚* метрически вместо [2,116,5](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,116,5).
+- **EN:** **1.** *mā* — with Präs. "in order that not" [R. GORR. 1,65,21](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,65,21). *purā mā* with Präs. so v. a. "otherwise, else" [3,68,44](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,68,44). *mā gantumarhasi* st. *na ga˚* metrically [2,116,5](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,116,5).
   <sub>DCS 4955 · attested</sub>
 
 **§v5)** **3.** √*mā*¦ V. 5.
@@ -175,12 +175,12 @@
 1〉 воздавать посредством обмена, возвращать. Только *apabhitya*.
   <sub>DCS 4955 · attested</sub>
 
-**mit T60 — 1)** — Mit *ā* 1〉 bilden, hervorbringen [ṚV. 3,38,7].
+**mit T60 — 1)** — Mit *ā* 1〉 bilden, hervorbringen [ṚV. 3,38,7](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.038.html#rv03.038.07).
 
-- **RU:** — Mit *ā* 1〉 создавать, производить [ṚV. 3,38,7].
+- **RU:** — Mit *ā* 1〉 создавать, производить [ṚV. 3,38,7](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.038.html#rv03.038.07).
   <sub>DCS 4955 · attested</sub>
 
-**mit T60 — 2)** — 2〉 herbeischaffen [ṚV. 10,56,2].
+**mit T60 — 2)** — 2〉 herbeischaffen [ṚV. 10,56,2](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.056.html#rv10.056.02).
 
-- **RU:** 2〉 добывать, доставлять [ṚV. 10,56,2].
+- **RU:** 2〉 добывать, доставлять [ṚV. 10,56,2](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.056.html#rv10.056.02).
   <sub>DCS 4955 · attested</sub>

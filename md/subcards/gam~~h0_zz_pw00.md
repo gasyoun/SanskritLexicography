@@ -3,8 +3,8 @@
 `gam~~h0_zz_pw00`
 
 
-**root-header)** √*gam*¦, *ganti, gamati* ([NAIGH. 2,14]) und *gacchati* (nur dieses in der klass. Sprache); Act. und Med.
-- **EN:** √*gam*¦, *ganti, gamati* ([NAIGH. 2,14]) and *gacchati* (only this in the klass. language); Act. and Med.
+**root-header)** √*gam*¦, *ganti, gamati* ([NAIGH. 2,14](https://sanskrit-lexicon-scans.github.io/nirukta/app2?2,14)) und *gacchati* (nur dieses in der klass. Sprache); Act. und Med.
+- **EN:** √*gam*¦, *ganti, gamati* ([NAIGH. 2,14](https://sanskrit-lexicon-scans.github.io/nirukta/app2?2,14)) and *gacchati* (only this in the klass. language); Act. and Med.
 
 **1)** — 1〉 kommen.
 - **EN:** — 1) to come.
@@ -15,8 +15,8 @@
 **3)** — 3〉 zu einem Weibe (Acc.) gehen, so v. a. beiwohnen. *paśūn* mit Vieh Unzucht treiben. Ohne Object den Beischlaf vollziehen.
 - **EN:** — 3) to go to a woman (Acc.), i.e. to have intercourse with her. v. a. to cohabit with. *paśūn* to commit bestiality with cattle. Without an object, to perform coitus.
 
-**4)** — 4〉 in einen Zustand, eine Lage, ein Verhältniss (Acc.) kommen, gerathen; theilhaftig werden, erlangen; mit Acc. oder Loc. ([ṚV. 1,83,1. 86,3. 2,25,4. 7,32,10. 8,46,9]. [VĀLAKH. 3,5]).
-- **EN:** — 4) to come, to fall into a state, a condition, a relationship (Acc.); to become partaker of, to attain; with Acc. or Loc. ([ṚV. 1,83,1. 86,3. 2,25,4. 7,32,10. 8,46,9]. [VĀLAKH. 3,5]).
+**4)** — 4〉 in einen Zustand, eine Lage, ein Verhältniss (Acc.) kommen, gerathen; theilhaftig werden, erlangen; mit Acc. oder Loc. ([ṚV. 1,83,1. 86,3. 2,25,4. 7,32,10. 8,46,9](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.083.html#rv01.083.01). [VĀLAKH. 3,5]).
+- **EN:** — 4) to come, to fall into a state, a condition, a relationship (Acc.); to become partaker of, to attain; with Acc. or Loc. ([ṚV. 1,83,1. 86,3. 2,25,4. 7,32,10. 8,46,9](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.083.html#rv01.083.01). [VĀLAKH. 3,5]).
 
 **5)** — 5〉 aufbrechen, davon-, fortgehen. *ugrāya tapase* um strenge Kasteiungen zu üben [71,16].
 - **EN:** — 5) to set out, to go away, to depart. *ugrāya tapase* in order to practise severe austerities [71,16].
@@ -66,8 +66,8 @@
 **ppp-g)** — g〉 verflossen, -gangen, -strichen.
 - **EN:** — g) elapsed, passed, gone by.
 
-**ppp-h)** — h〉 verschwunden, gewichen, verloren, dahin seiend, nicht mehr vorhanden. *kariṇaḥ kiṃ gataṃ bhavet*. so v. a. was verlöre dabei der Elephant? [Spr. 7865]. Ueberaus häufig am Anfange eines adj. Comp.
-- **EN:** — h) vanished, receded, lost, gone, no longer present. *kariṇaḥ kiṃ gataṃ bhavet*. i.e. v. a. what would the elephant lose thereby? [Spr. 7865]. Exceedingly common at the beginning of a adj. Comp.
+**ppp-h)** — h〉 verschwunden, gewichen, verloren, dahin seiend, nicht mehr vorhanden. *kariṇaḥ kiṃ gataṃ bhavet*. so v. a. was verlöre dabei der Elephant? [Spr. 7865](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7865). Ueberaus häufig am Anfange eines adj. Comp.
+- **EN:** — h) vanished, receded, lost, gone, no longer present. *kariṇaḥ kiṃ gataṃ bhavet*. i.e. v. a. what would the elephant lose thereby? [Spr. 7865](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7865). Exceedingly common at the beginning of a adj. Comp.
 
 **ppp-i)** — i〉 hervorgegangen aus (Abl. oder im Comp. vorangehend).
 - **EN:** — i) arisen from (Abl. or preceding in the Comp.).
@@ -81,14 +81,14 @@
 **ppp2-header)** — 2〉 mit pass. Bed.
 - **EN:** — 2) with pass. Bed.
 
-**ppp2-a)** — a〉 begangen, betreten [ṚV. 7,57,3].
-- **EN:** — a) trodden, traversed [ṚV. 7,57,3].
+**ppp2-a)** — a〉 begangen, betreten [ṚV. 7,57,3](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.057.html#rv07.057.03).
+- **EN:** — a) trodden, traversed [ṚV. 7,57,3](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.057.html#rv07.057.03).
 
 **ppp2-b)** — b〉 erreicht, erlangt in *˚pāra, ˚śri, ˚śrī*.
 - **EN:** — b) reached, attained in *˚pāra, ˚śri, ˚śrī*.
 
-**caus2-header)** — Caus. *gamayati* ([ṚV. 5,5,10] *gā˚*, aber nur in der Saṃhitā), *gmayate*
-- **EN:** — Caus. *gamayati* ([ṚV. 5,5,10] *gā˚*, but only in the Saṃhitā), *gmayate*
+**caus2-header)** — Caus. *gamayati* ([ṚV. 5,5,10](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.005.html#rv05.005.10) *gā˚*, aber nur in der Saṃhitā), *gmayate*
+- **EN:** — Caus. *gamayati* ([ṚV. 5,5,10](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.005.html#rv05.005.10) *gā˚*, but only in the Saṃhitā), *gmayate*
 
 **caus2-1)** — 1〉 Jmd (Acc.) kommen lassen, herbeiführen, führen, hinführen —, befördern —, bringen zu oder nach (Acc., Dat. oder Loc.).
 - **EN:** — 1) to make someone (Acc.) come, to bring about, to lead, to conduct to —, to convey —, to bring to or towards (Acc., Dat. or Loc.).
@@ -102,8 +102,8 @@
 **caus2-4)** — 4〉 Jmd weggehen heissen, fortschicken.
 - **EN:** — 4) to bid someone go away, to send off.
 
-**caus2-5)** — 5〉 hingehen lassen, so v. a. sterben — *gamita* gestorben [MBH. 12,29,149].
-- **EN:** — 5) to let pass away, i.e. v. a. to die — *gamita* dead [MBH. 12,29,149].
+**caus2-5)** — 5〉 hingehen lassen, so v. a. sterben — *gamita* gestorben [MBH. 12,29,149](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,29,149).
+- **EN:** — 5) to let pass away, i.e. v. a. to die — *gamita* dead [MBH. 12,29,149](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,29,149).
 
 **caus2-6)** — 6〉 verfliessen lassen, zubringen (eine Zeit).
 - **EN:** — 6) to let elapse, to spend (a time).
@@ -153,8 +153,8 @@
 **ati-1)** — 1〉 verfliessen, vergehen. *˚gata* verflossen.
 - **EN:** — 1) to elapse, to pass. *˚gata* elapsed.
 
-**ati-2)** — 2〉 übergehen, überspringen; mit Acc. — [MBH. 9,2367] fehlerhaft für *abhi*.
-- **EN:** — 2) to pass over, to skip; with Acc. — [MBH. 9,2367] erroneous for *abhi*.
+**ati-2)** — 2〉 übergehen, überspringen; mit Acc. — [MBH. 9,2367](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.2367) fehlerhaft für *abhi*.
+- **EN:** — 2) to pass over, to skip; with Acc. — [MBH. 9,2367](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.2367) erroneous for *abhi*.
 
 **ati-3)** — Mit *upāti* gehen über (einen Fluss).
 - **EN:** — With *upāti* to go across (a river).
@@ -177,8 +177,8 @@
 **abhi-2)** — 2〉 einem Weibe (Acc.) beiwohnen.
 - **EN:** — 2) to have intercourse with a woman (Acc.).
 
-**abhi-3)** — 3〉 gehen —, sich machen an [24,32]. *virodham* Streit anfangen [Spr. 3453].
-- **EN:** — 3) to go to —, to set about [24,32]. *virodham* to start a quarrel [Spr. 3453].
+**abhi-3)** — 3〉 gehen —, sich machen an [24,32]. *virodham* Streit anfangen [Spr. 3453](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3453).
+- **EN:** — 3) to go to —, to set about [24,32]. *virodham* to start a quarrel [Spr. 3453](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3453).
 
 **abhi-4)** — 4〉 kommen zu, erlangen, erhalten, theilhaftig werden. *bartāram* zu einem Manne kommen, einen M. nehmen. *kanyām, dārān* zur Frau nehmen, heirathen. *˚gata* mit act. (!) und pass. Bed.
 - **EN:** — 4) to come to, to attain, to receive, to become partaker of. *bartāram* to come to a man, to take a M.. *kanyām, dārān* to take as wife, to marry. *˚gata* with act. (!) and pass. Bed.
@@ -246,8 +246,8 @@
 **anuga-6a)** — a〉 folgsam, nachgiebig, willfährig [256,32]. [KĀD. 2,123,13].
 - **EN:** — a) obedient, compliant, submissive [256,32]. [KĀD. 2,123,13].
 
-**anuga-6b)** — b〉 am Ende eines Comp. sich richtend nach, entsprechend, gemäss [105,21]. [211,23]. [MBH. 3,315,24]. [R. 4,24,3]. [PAÑCAT. 218,8].
-- **EN:** — b) at the end of a Comp., conforming to, corresponding to, according to [105,21]. [211,23]. [MBH. 3,315,24]. [R. 4,24,3]. [PAÑCAT. 218,8].
+**anuga-6b)** — b〉 am Ende eines Comp. sich richtend nach, entsprechend, gemäss [105,21]. [211,23]. [MBH. 3,315,24](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?3,315,24). [R. 4,24,3](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,24,3). [PAÑCAT. 218,8](https://sanskrit-lexicon-scans.github.io/pantankose/app2?218,8).
+- **EN:** — b) at the end of a Comp., conforming to, corresponding to, according to [105,21]. [211,23]. [MBH. 3,315,24](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?3,315,24). [R. 4,24,3](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,24,3). [PAÑCAT. 218,8](https://sanskrit-lexicon-scans.github.io/pantankose/app2?218,8).
 
 **anuga-6c)** — c〉 nachgeahmt [106,22].
 - **EN:** — c) imitated [106,22].
@@ -264,8 +264,8 @@
 **anuga-caus-header)** — Caus.
 - **EN:** — Caus.
 
-**anuga-caus-1)** — 1〉 begleiten [MĀLAV. 20].
-- **EN:** — 1) to accompany [MĀLAV. 20].
+**anuga-caus-1)** — 1〉 begleiten [MĀLAV. 20](https://sanskrit-lexicon-scans.github.io/malavikagni/app1?20).
+- **EN:** — 1) to accompany [MĀLAV. 20](https://sanskrit-lexicon-scans.github.io/malavikagni/app1?20).
 
 **anuga-caus-2)** — 2〉 auslöschen.
 - **EN:** — 2) to extinguish.

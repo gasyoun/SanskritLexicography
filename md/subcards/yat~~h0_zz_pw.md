@@ -81,9 +81,9 @@
 - **RU:** — 2〉 Act. прилагать, прикреплять.
   <sub>attested</sub>
 
-**PW_caus_3)** — 3〉 Act. kämpfen lassen [AIT. BR. 1,14].
+**PW_caus_3)** — 3〉 Act. kämpfen lassen [AIT. BR. 1,14](https://sanskrit-lexicon-scans.github.io/aitbr/app1?1,14).
 
-- **RU:** — 3〉 Act. заставлять сражаться [AIT. BR. 1,14].
+- **RU:** — 3〉 Act. заставлять сражаться [AIT. BR. 1,14](https://sanskrit-lexicon-scans.github.io/aitbr/app1?1,14).
   <sub>attested</sub>
 
 **PW_caus_4)** — 4〉 Act. Jmd (Gen.) Etwas (Acc.) anʼs Herz legen.
@@ -101,9 +101,9 @@
 - **RU:** — 6〉 Med. уступать кому-либо (Acc. или Gen.) что-либо (Acc.).
   <sub>attested</sub>
 
-**PW_caus_7)** — 7〉 Act. Med. Jmd peinigen, quälen. — Nach dem [DHĀTUP.] *nikāre* (*nirākāre*, *khede*) und *upaskāre* *yātiṣye* [MĀRK. P. 121,39] fehlerhaft für *yatiṣye*.
+**PW_caus_7)** — 7〉 Act. Med. Jmd peinigen, quälen. — Nach dem [DHĀTUP.] *nikāre* (*nirākāre*, *khede*) und *upaskāre* *yātiṣye* [MĀRK. P. 121,39](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?121,39) fehlerhaft für *yatiṣye*.
 
-- **RU:** — 7〉 Act. Med. мучить, терзать кого-либо. — По [DHĀTUP.] *nikāre* (*nirākāre*, *khede*) и *upaskāre* *yātiṣye* [MĀRK. P. 121,39] ошибочно вместо *yatiṣye*.
+- **RU:** — 7〉 Act. Med. мучить, терзать кого-либо. — По [DHĀTUP.] *nikāre* (*nirākāre*, *khede*) и *upaskāre* *yātiṣye* [MĀRK. P. 121,39](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?121,39) ошибочно вместо *yatiṣye*.
   <sub>attested</sub>
 
 **PW_alam)** — Mit *adhi* Med. sich einen Schmuck (Acc.) anlegen auf (Loc.).
@@ -320,9 +320,9 @@
 - **RU:** — 3〉 Med. соединяться, встречаться, вступать в связь с (Instr.).
   <sub>attested</sub>
 
-**PW_sam_4)** — 4〉 Med. an einander gerathen, in Streit kommen. *saṃgrāmam* einen Kampf beginnen. *saṃyatta* Pl. in Streit gerathen, *saṃgrāmai saṃyattai* beim Ausbruch des Kampfes [TS. 2,1,3,1.] [2.] [8,4].
+**PW_sam_4)** — 4〉 Med. an einander gerathen, in Streit kommen. *saṃgrāmam* einen Kampf beginnen. *saṃyatta* Pl. in Streit gerathen, *saṃgrāmai saṃyattai* beim Ausbruch des Kampfes [TS. 2,1,3,1.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?2,1,3,1) [2.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?2,1,3,2) [8,4](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?2,1,8,4).
 
-- **RU:** — 4〉 Med. столкнуться, вступить в борьбу. *saṃgrāmam* начать бой. *saṃyatta* Pl. вступить в конфликт, *saṃgrāmai saṃyattai* при начале сражения [TS. 2,1,3,1.] [2.] [8,4].
+- **RU:** — 4〉 Med. столкнуться, вступить в борьбу. *saṃgrāmam* начать бой. *saṃyatta* Pl. вступить в конфликт, *saṃgrāmai saṃyattai* при начале сражения [TS. 2,1,3,1.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?2,1,3,1) [2.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?2,1,3,2) [8,4](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?2,1,8,4).
   <sub>attested</sub>
 
 **PW_sam_5)** — 5〉 *saṃyatta* vorbereitet, ganz bei der Sache seiend, seine Maassregeln getroffen habend, auf der Hut seiend, sich vorsehend.

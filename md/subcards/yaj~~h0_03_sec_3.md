@@ -4,10 +4,10 @@
 
 
 **intens)** — intens. *yāyajyate, yāyajīti*
-Schol. zu [P. 7,4,83.]
+Schol. zu [P. 7,4,83.](https://ashtadhyayi.com/sutraani/7/4/83)
 
 - **RU:** — intens. *yāyajyate, yāyajīti*
-Schol. zu [P. 7,4,83.]
+Schol. zu [P. 7,4,83.](https://ashtadhyayi.com/sutraani/7/4/83)
 - **EN:** — intens. *yāyajyate, yāyajīti*
-Schol. to [P. 7,4,83.]
+Schol. to [P. 7,4,83.](https://ashtadhyayi.com/sutraani/7/4/83)
   <sub>lexicographic</sub>

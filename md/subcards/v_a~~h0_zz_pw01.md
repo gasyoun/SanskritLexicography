@@ -20,8 +20,8 @@
 **ā-)** — Mit *ā* einweben, reihen (z. B. Perlen an eine Schnur), — an (Loc.), durchziehen. *ota* eingewoben, angereiht, — an (Loc.), durchgezogen durch (Loc.), durchzogen von (Instr.).
 - **EN:** — With *ā* to weave in, to string (z. B. pearls onto a cord), — onto (Loc.), to thread through. *ota* woven in, strung, — onto (Loc.), threaded through (Loc.), interwoven with (Instr.).
 
-**ud-)** — Mit *samā* Med. anreihen, aufreihen auf (Loc.). *samota* [AV. 11,5,24].
-- **EN:** — With *samā* Med. to string, to thread onto (Loc.). *samota* [AV. 11,5,24].
+**ud-)** — Mit *samā* Med. anreihen, aufreihen auf (Loc.). *samota* [AV. 11,5,24](https://sanskrit-lexicon.github.io/avlinks/avhymns/av11.005.html#av11.005.24).
+- **EN:** — With *samā* Med. to string, to thread onto (Loc.). *samota* [AV. 11,5,24](https://sanskrit-lexicon.github.io/avlinks/avhymns/av11.005.html#av11.005.24).
 
 **ud-2)** — Mit *ud* hinaufbinden, aufhängen [AIT. ĀR. 405,8]. Partic. *uduta*.
 - **EN:** — With *ud* to bind up, to hang up [AIT. ĀR. 405,8]. Partic. *uduta*.

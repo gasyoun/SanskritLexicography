@@ -4,10 +4,10 @@
 
 
 **1)** — *vyati*, ˚*jājñadhvam, ˚jajñidhve, ˚jajñiṣe, ˚jajñiṣva*
-[KĀŚ.] zu [P. 7,2,77.] [78.] [VOP. 23,55.]
+[KĀŚ.] zu [P. 7,2,77.](https://ashtadhyayi.com/sutraani/7/2/77) [78.](https://ashtadhyayi.com/sutraani/7/2/78) [VOP. 23,55.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?23,55)
 
 - **RU:** — *vyati*, ˚*jājñadhvam, ˚jajñidhve, ˚jajñiṣe, ˚jajñiṣva*
-[KĀŚ.] к [P. 7,2,77.] [78.] [VOP. 23,55.]
+[KĀŚ.] к [P. 7,2,77.](https://ashtadhyayi.com/sutraani/7/2/77) [78.](https://ashtadhyayi.com/sutraani/7/2/78) [VOP. 23,55.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?23,55)
 - **EN:** — *vyati*, ˚*jājñadhvam, ˚jajñidhve, ˚jajñiṣe, ˚jajñiṣva*
-[KĀŚ.] to [P. 7,2,77.] [78.] [VOP. 23,55.]
+[KĀŚ.] to [P. 7,2,77.](https://ashtadhyayi.com/sutraani/7/2/77) [78.](https://ashtadhyayi.com/sutraani/7/2/78) [VOP. 23,55.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?23,55)
   <sub>attested</sub>

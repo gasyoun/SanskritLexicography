@@ -4,9 +4,9 @@
 
 
 **1)** — *udā* anschlagen, spielen (auf der Leier): *vīṇāgāthī dakṣiṇata uttaramandrāmudāghnan*
-[ŚAT. BR. 13,4,2,8.] [3,5.]
+[ŚAT. BR. 13,4,2,8.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?13,4,2,8) [3,5.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?13,4,3,5)
 
 - **RU:** — *udā* бряцать, играть (на лире): *vīṇāgāthī dakṣiṇata uttaramandrāmudāghnan*
-[ŚAT. BR. 13,4,2,8.] [3,5.]
-- **EN:** — *udā* "to strike up, play" (on the lyre): *vīṇāgāthī dakṣiṇata uttaramandrāmudāghnan* [ŚAT. BR. 13,4,2,8.] [3,5.]
+[ŚAT. BR. 13,4,2,8.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?13,4,2,8) [3,5.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?13,4,3,5)
+- **EN:** — *udā* "to strike up, play" (on the lyre): *vīṇāgāthī dakṣiṇata uttaramandrāmudāghnan* [ŚAT. BR. 13,4,2,8.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?13,4,2,8) [3,5.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?13,4,3,5)
   <sub>attested</sub>

@@ -16,10 +16,10 @@
   <sub>DCS 4861 · attested</sub>
 
 **2)** — 2) veranlassen zu (dat.): *anu pra yeje jana ojo asya satrā dadhire anu vīryāya*
-[ṚV. 6,36,2.]
+[ṚV. 6,36,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.036.html#rv06.036.02)
 
 - **RU:** — 2) побуждать к (dat.): *anu pra yeje jana ojo asya satrā dadhire anu vīryāya*
-[ṚV. 6,36,2.]
+[ṚV. 6,36,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.036.html#rv06.036.02)
 - **EN:** — 2) to cause to (i.e. dat.): *anu pra yeje jana ojo asya satrā dadhire anu vīryāya*
-[ṚV. 6,36,2.]
+[ṚV. 6,36,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.036.html#rv06.036.02)
   <sub>DCS 4861 · attested</sub>

@@ -130,18 +130,18 @@ With *punar* dass. *jīvita* 'revived again'.
   <sub>attested</sub>
 
 **upajiv)** — Mit *upa*
-— 1〉 seinen Lebensunterhalt haben [33,7]. leben von, bestehen durch, erhalten werden von, Nutzen ziehen aus, benutzen, gebrauchen; mit Acc., ausnahmsweise mit Gen. oder Instr. ([Spr. 7865]). *upajīvya* Absol. in Abhängigkeit vom wegen; mit Acc. [Comm. zu NYĀYAM. 9,4,6. 10,1,11. 2,14].
+— 1〉 seinen Lebensunterhalt haben [33,7]. leben von, bestehen durch, erhalten werden von, Nutzen ziehen aus, benutzen, gebrauchen; mit Acc., ausnahmsweise mit Gen. oder Instr. ([Spr. 7865](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7865)). *upajīvya* Absol. in Abhängigkeit vom wegen; mit Acc. [Comm. zu NYĀYAM. 9,4,6. 10,1,11. 2,14].
 
 - **RU:** — С *upa*
-— 1〉 иметь средства к существованию [33,7]. жить от, существовать благодаря, содержаться за счёт, извлекать пользу из, использовать, пользоваться; с Acc., в виде исключения с Gen. или Instr. ([Spr. 7865]). *upajīvya* Absol. в зависимости от, по причине; с Acc. [Comm. zu NYĀYAM. 9,4,6. 10,1,11. 2,14].
+— 1〉 иметь средства к существованию [33,7]. жить от, существовать благодаря, содержаться за счёт, извлекать пользу из, использовать, пользоваться; с Acc., в виде исключения с Gen. или Instr. ([Spr. 7865](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7865)). *upajīvya* Absol. в зависимости от, по причине; с Acc. [Comm. zu NYĀYAM. 9,4,6. 10,1,11. 2,14].
 - **EN:** — With *upa*
-— 1〉 to have one's livelihood [33,7]. To live off, to subsist by, to be maintained by, to draw profit from, to use, to employ; with Acc., exceptionally with Gen. or Instr. ([Spr. 7865]). *upajīvya* Absol. in dependence on account of; with Acc. [Comm. zu NYĀYAM. 9,4,6. 10,1,11. 2,14].
+— 1〉 to have one's livelihood [33,7]. To live off, to subsist by, to be maintained by, to draw profit from, to use, to employ; with Acc., exceptionally with Gen. or Instr. ([Spr. 7865](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7865)). *upajīvya* Absol. in dependence on account of; with Acc. [Comm. zu NYĀYAM. 9,4,6. 10,1,11. 2,14].
   <sub>attested</sub>
 
-**upajiv2)** — 2〉 leben von oder für, so v. a. betreiben, üben. *vṛttim* einen Lebensunterhalt erwählen [M. 4,200]. *jīvikām* dass. *mānuṣyam* als Mensch leben, die Menschennatur erwählen.
+**upajiv2)** — 2〉 leben von oder für, so v. a. betreiben, üben. *vṛttim* einen Lebensunterhalt erwählen [M. 4,200](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,200). *jīvikām* dass. *mānuṣyam* als Mensch leben, die Menschennatur erwählen.
 
-- **RU:** — 2〉 жить от или ради, так v. a. заниматься, упражняться. *vṛttim* избрать источник средств к существованию [M. 4,200]. *jīvikām* dass. *mānuṣyam* жить как человек, избрать человеческую природу.
-- **EN:** — 2〉 to live off or for, thus v. a. 'to pursue, practise'. *vṛttim* 'to choose a livelihood' [M. 4,200]. *jīvikām* dass. *mānuṣyam* 'to live as a human being, to choose human nature'.
+- **RU:** — 2〉 жить от или ради, так v. a. заниматься, упражняться. *vṛttim* избрать источник средств к существованию [M. 4,200](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,200). *jīvikām* dass. *mānuṣyam* жить как человек, избрать человеческую природу.
+- **EN:** — 2〉 to live off or for, thus v. a. 'to pursue, practise'. *vṛttim* 'to choose a livelihood' [M. 4,200](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,200). *jīvikām* dass. *mānuṣyam* 'to live as a human being, to choose human nature'.
   <sub>attested</sub>
 
 **upajiv3)** — Caus. Nutzen von Jmd ziehen, Jmd ausbeuten; mit Acc.
@@ -202,8 +202,8 @@ With *punar* dass. *jīvita* 'revived again'.
 **adhi-caus)** √*jīv*¦ mit *adhi* Caus. beleben [DHARMAŚARM. 15,1].
 - **EN:** √*jīv*¦ with *adhi* Caus. to animate [DHARMAŚARM. 15,1].
 
-**abhi2)** — Mit *abhi* glücklicher im Leben sich befinden als (Abl.) [R. ed. Bomb. 3,34,19].
-- **EN:** — With *abhi* to be more fortunate in life than (Abl.) [R. ed. Bomb. 3,34,19].
+**abhi2)** — Mit *abhi* glücklicher im Leben sich befinden als (Abl.) [R. ed. Bomb. 3,34,19](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,34,19).
+- **EN:** — With *abhi* to be more fortunate in life than (Abl.) [R. ed. Bomb. 3,34,19](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,34,19).
 
 **caus. 1)** — Caus. *jīvayati* (episch auch Med.)
 — 1〉 lebendig machen, beleben. *jīvita* belebt, lebendig gemacht [63,11]. [123,1].
@@ -265,8 +265,8 @@ With *punar* dass. *jīvita* 'revived again'.
   <sub>attested</sub>
 
 **PW 2nd record — adhi- caus.)** √*jīv*¦ mit *adhi* Caus. beleben [DHARMAŚARM. 15,1].
-— Mit *abhi* glücklicher im Leben sich befinden als (Abl.) [R. ed. Bomb. 3,34,19].
+— Mit *abhi* glücklicher im Leben sich befinden als (Abl.) [R. ed. Bomb. 3,34,19](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,34,19).
 
 - **RU:** √*jīv*¦ с *adhi* Caus. оживлять [DHARMAŚARM. 15,1].
-— С *abhi* жить счастливее, чем (Abl.) [R. ed. Bomb. 3,34,19].
+— С *abhi* жить счастливее, чем (Abl.) [R. ed. Bomb. 3,34,19](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,34,19).
   <sub>attested</sub>

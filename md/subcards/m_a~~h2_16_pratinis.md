@@ -4,9 +4,9 @@
 
 
 **1)** — *pratinis* bilden, verfertigen: *īśānahetoḥ pratinirmitāṃ tāṃ (śaktim) tvaṣṭrā*
-[MBH. 9,908.]
+[MBH. 9,908.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.908)
 
 - **RU:** — *pratinis* образовывать, изготовлять: *īśānahetoḥ pratinirmitāṃ tāṃ (śaktim) tvaṣṭrā*
-[MBH. 9,908.]
-- **EN:** — *pratinis* to form, to fashion: *īśānahetoḥ pratinirmitāṃ tāṃ (śaktim) tvaṣṭrā* [MBH. 9,908.]
+[MBH. 9,908.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.908)
+- **EN:** — *pratinis* to form, to fashion: *īśānahetoḥ pratinirmitāṃ tāṃ (śaktim) tvaṣṭrā* [MBH. 9,908.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.908)
   <sub>DCS 4955 · attested</sub>

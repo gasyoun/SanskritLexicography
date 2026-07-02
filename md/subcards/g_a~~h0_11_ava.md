@@ -5,31 +5,31 @@
 
 **1)** — *ava*
  1) weggehen, abhanden kommen: *mā no dyūte 'va gānmā samityām*
-[AV. 12,3,46.]
+[AV. 12,3,46.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av12.003.html#av12.003.46)
 
 - **RU:** — *ava*
  1) уходить, теряться, пропадать: *mā no dyūte 'va gānmā samityām*
-[AV. 12,3,46.]
+[AV. 12,3,46.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av12.003.html#av12.003.46)
 - **EN:** — *ava*
  1) to go away, to be lost: *mā no dyūte 'va gānmā samityām*
-[AV. 12,3,46.]
+[AV. 12,3,46.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av12.003.html#av12.003.46)
   <sub>attested</sub>
 
 **2)** — 2) hingehen zu, sich vereinigen mit: *sṛjadarṇāṃsyava *
 * yadyudhā gāḥ*
-[ṚV. 1,174,4.] *bhūmirbhūmimavāgāt*
-[KĀTY. ŚR. 25,5,29.] *indurindumavāgāt*
-[12,6.]
+[ṚV. 1,174,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.174.html#rv01.174.04) *bhūmirbhūmimavāgāt*
+[KĀTY. ŚR. 25,5,29.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?25,5,29) *indurindumavāgāt*
+[12,6.](https://sanskrit-lexicon-scans.github.io/katyasr/app2?12,6)
 
 - **RU:** — 2) идти к, соединяться с: *sṛjadarṇāṃsyava *
 * yadyudhā gāḥ*
-[ṚV. 1,174,4.] *bhūmirbhūmimavāgāt*
-[KĀTY. ŚR. 25,5,29.] *indurindumavāgāt*
-[12,6.]
+[ṚV. 1,174,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.174.html#rv01.174.04) *bhūmirbhūmimavāgāt*
+[KĀTY. ŚR. 25,5,29.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?25,5,29) *indurindumavāgāt*
+[12,6.](https://sanskrit-lexicon-scans.github.io/katyasr/app2?12,6)
 - **EN:** — 2) to go to, to unite with: *sṛjadarṇāṃsyava *
 
 * yadyudhā gāḥ*
-[ṚV. 1,174,4.] *bhūmirbhūmimavāgāt*
-[KĀTY. ŚR. 25,5,29.] *indurindumavāgāt*
-[12,6.]
+[ṚV. 1,174,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.174.html#rv01.174.04) *bhūmirbhūmimavāgāt*
+[KĀTY. ŚR. 25,5,29.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?25,5,29) *indurindumavāgāt*
+[12,6.](https://sanskrit-lexicon-scans.github.io/katyasr/app2?12,6)
   <sub>attested</sub>

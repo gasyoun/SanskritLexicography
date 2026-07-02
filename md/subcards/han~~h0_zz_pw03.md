@@ -51,8 +51,8 @@
 **123)** — 1〉 schlagen gegen (Gen.), losfahren auf Jmd (Acc.).
 - **EN:** — 1) to strike against (Gen.), to rush upon someone (Acc.).
 
-**124)** — 2〉 niederschlagen [MBH. 12,230,9].
-- **EN:** — 2) to strike down [MBH. 12,230,9].
+**124)** — 2〉 niederschlagen [MBH. 12,230,9](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,230,9).
+- **EN:** — 2) to strike down [MBH. 12,230,9](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,230,9).
 
 **125)** — 3〉 zerschlagen, brechen.
 - **EN:** — 3) to smash, break.
@@ -171,8 +171,8 @@
 **163)** Intens. (*vijījahi* ?) Jmd (Acc.) ein Leid zufügen.
 - **EN:** Intens. (*vijījahi* ?) to inflict harm on someone (Acc.).
 
-**164)** — Mit *anuvi*, *˚hanti* [MBH. 12,56,51] nach [KERN] fehlerhaft für *anuvahanti*.
-- **EN:** — With *anuvi*, *˚hanti* [MBH. 12,56,51] after [KERN] a faulty reading for *anuvahanti*.
+**164)** — Mit *anuvi*, *˚hanti* [MBH. 12,56,51](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,56,51) nach [KERN] fehlerhaft für *anuvahanti*.
+- **EN:** — With *anuvi*, *˚hanti* [MBH. 12,56,51](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,56,51) after [KERN] a faulty reading for *anuvahanti*.
 
 **165)** — Mit *āvi* (!) hauen auf (Acc.).
 - **EN:** — With *āvi* (!) to hew at (Acc.).
@@ -195,8 +195,8 @@
 **171)** — 3〉 zusammensetzen, -fügen. Pass. verbunden werden, sich verbinden.
 - **EN:** — 3) to put together, join. Pass. to be joined, to unite.
 
-**172)** — 4〉 Med. aufeinanderstossen, zusammenstossen mit (Instr.) [ṚV. 9,14,4].
-- **EN:** — 4) Med. to collide with one another, clash with (Instr.) [ṚV. 9,14,4].
+**172)** — 4〉 Med. aufeinanderstossen, zusammenstossen mit (Instr.) [ṚV. 9,14,4](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.014.html#rv09.014.04).
+- **EN:** — 4) Med. to collide with one another, clash with (Instr.) [ṚV. 9,14,4](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.014.html#rv09.014.04).
 
 **173)** — 5〉 zerschlagen, zerbrechen.
 - **EN:** — 5) to smash, break to pieces.
@@ -311,9 +311,9 @@
 — 1〉 бить в (Gen.), нападать на кого-л. (Acc.).
   <sub>attested</sub>
 
-**mit-T21-2)** — 2〉 niederschlagen [MBH. 12,230,9].
+**mit-T21-2)** — 2〉 niederschlagen [MBH. 12,230,9](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,230,9).
 
-- **RU:** — 2〉 сражать [MBH. 12,230,9].
+- **RU:** — 2〉 сражать [MBH. 12,230,9](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,230,9).
   <sub>attested</sub>
 
 **mit-T21-3)** — 3〉 zerschlagen, brechen.
@@ -508,9 +508,9 @@
 - **RU:** — Intens. (*vijījahi* ?) причинять кому-л. (Acc.) вред, наносить ущерб.
   <sub>attested</sub>
 
-**mit-T60-T64)** — Mit *anuvi*, *˚hanti* [MBH. 12,56,51] nach [KERN] fehlerhaft für *anuvahanti*.
+**mit-T60-T64)** — Mit *anuvi*, *˚hanti* [MBH. 12,56,51](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,56,51) nach [KERN] fehlerhaft für *anuvahanti*.
 
-- **RU:** — Mit *anuvi*, *˚hanti* [MBH. 12,56,51] по [KERN] ошибочно вместо *anuvahanti*.
+- **RU:** — Mit *anuvi*, *˚hanti* [MBH. 12,56,51](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,56,51) по [KERN] ошибочно вместо *anuvahanti*.
   <sub>attested</sub>
 
 **mit-T65-T66)** — Mit *āvi* (!) hauen auf (Acc.).
@@ -545,9 +545,9 @@
 - **RU:** — 3〉 составлять, соединять. Pass. быть соединённым, соединяться.
   <sub>attested</sub>
 
-**mit-T71-4)** — 4〉 Med. aufeinanderstossen, zusammenstossen mit (Instr.) [ṚV. 9,14,4].
+**mit-T71-4)** — 4〉 Med. aufeinanderstossen, zusammenstossen mit (Instr.) [ṚV. 9,14,4](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.014.html#rv09.014.04).
 
-- **RU:** — 4〉 Med. сталкиваться, столкнуться с (Instr.) [ṚV. 9,14,4].
+- **RU:** — 4〉 Med. сталкиваться, столкнуться с (Instr.) [ṚV. 9,14,4](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.014.html#rv09.014.04).
   <sub>attested</sub>
 
 **mit-T71-5)** — 5〉 zerschlagen, zerbrechen.

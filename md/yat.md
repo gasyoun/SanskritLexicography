@@ -7,28 +7,28 @@ _PWG article — 28 sub-card(s), 189 sense(s) · RU 159/189 · EN 92/189_
 `yat~~h0_00_pwg00`
 
 
-**1)** *yat*¦, *yatati* und *yatate* (nur dieses nach [DHĀTUP. 2,29]), *yatamāna, yatāna* und *yatāna; yetire, yatiṣyate, ayatiṣṭa*; 1) act. anschliessen, aneinanderfügen; verbinden: *janaṃ na mitro yatati bruvāṇaḥ* [ṚV. 7,36,2.] *hataṃ ca śatrūnyatataṃ ca mitriṇaḥ* [8,35,12.] *yuvaṃ mitremaṃ janaṃ yatathaḥ saṃ ca nayathaḥ* [5,65,6.] [48,5.]
+**1)** *yat*¦, *yatati* und *yatate* (nur dieses nach [DHĀTUP. 2,29](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=2)), *yatamāna, yatāna* und *yatāna; yetire, yatiṣyate, ayatiṣṭa*; 1) act. anschliessen, aneinanderfügen; verbinden: *janaṃ na mitro yatati bruvāṇaḥ* [ṚV. 7,36,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.036.html#rv07.036.02) *hataṃ ca śatrūnyatataṃ ca mitriṇaḥ* [8,35,12.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.035.html#rv08.035.12) *yuvaṃ mitremaṃ janaṃ yatathaḥ saṃ ca nayathaḥ* [5,65,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.065.html#rv05.065.06) [48,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.048.html#rv05.048.05)
 
-- **RU:** *yat*¦, *yatati* и *yatate* (только последнее после [DHĀTUP. 2,29]), *yatamāna, yatāna* и *yatāna; yetire, yatiṣyate, ayatiṣṭa*; 1) act. присоединять, прилагать; соединять: *janaṃ na mitro yatati bruvāṇaḥ* [ṚV. 7,36,2.] *hataṃ ca śatrūnyatataṃ ca mitriṇaḥ* [8,35,12.] *yuvaṃ mitremaṃ janaṃ yatathaḥ saṃ ca nayathaḥ* [5,65,6.] [48,5.]
-- **EN:** *yat*¦, *yatati* and *yatate* (only the latter after [DHĀTUP. 2,29]), *yatamāna, yatāna* and *yatāna; yetire, yatiṣyate, ayatiṣṭa*; 1) act. to join, attach to one another; to connect: *janaṃ na mitro yatati bruvāṇaḥ* [ṚV. 7,36,2.] *hataṃ ca śatrūnyatataṃ ca mitriṇaḥ* [8,35,12.] *yuvaṃ mitremaṃ janaṃ yatathaḥ saṃ ca nayathaḥ* [5,65,6.] [48,5.]
+- **RU:** *yat*¦, *yatati* и *yatate* (только последнее после [DHĀTUP. 2,29](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=2)), *yatamāna, yatāna* и *yatāna; yetire, yatiṣyate, ayatiṣṭa*; 1) act. присоединять, прилагать; соединять: *janaṃ na mitro yatati bruvāṇaḥ* [ṚV. 7,36,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.036.html#rv07.036.02) *hataṃ ca śatrūnyatataṃ ca mitriṇaḥ* [8,35,12.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.035.html#rv08.035.12) *yuvaṃ mitremaṃ janaṃ yatathaḥ saṃ ca nayathaḥ* [5,65,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.065.html#rv05.065.06) [48,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.048.html#rv05.048.05)
+- **EN:** *yat*¦, *yatati* and *yatate* (only the latter after [DHĀTUP. 2,29](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=2)), *yatamāna, yatāna* and *yatāna; yetire, yatiṣyate, ayatiṣṭa*; 1) act. to join, attach to one another; to connect: *janaṃ na mitro yatati bruvāṇaḥ* [ṚV. 7,36,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.036.html#rv07.036.02) *hataṃ ca śatrūnyatataṃ ca mitriṇaḥ* [8,35,12.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.035.html#rv08.035.12) *yuvaṃ mitremaṃ janaṃ yatathaḥ saṃ ca nayathaḥ* [5,65,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.065.html#rv05.065.06) [48,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.048.html#rv05.048.05)
   <sub>attested</sub>
 
-**2)** — 2) med. sich anschliessen, — anreihen; in Reihen ziehen: *haṃsā iva śreṇiśo yatānāḥ* [ṚV. 3,8,9] (vgl. [1,163,10.]). *śravasyavo na pṛtanāsu yetire* [1,85,8.] [5,33,10.] [59,2.] *viśo na yuktā uṣaso yatante* [7,79,2.] [10,13,2.] [5.] *anupūrvaṃ yatamānāḥ* [18,6.] [77,2.] [8,43,4.] Auch act. etwa so v. a. in einer Reihe —, auf einer Stufe stehen: *nakirdevebhiryatatho mahitvā* [6,67,10.]
+**2)** — 2) med. sich anschliessen, — anreihen; in Reihen ziehen: *haṃsā iva śreṇiśo yatānāḥ* [ṚV. 3,8,9](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.008.html#rv03.008.09) (vgl. [1,163,10.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.163.html#rv01.163.10)). *śravasyavo na pṛtanāsu yetire* [1,85,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.085.html#rv01.085.08) [5,33,10.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.033.html#rv05.033.10) [59,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.059.html#rv05.059.02) *viśo na yuktā uṣaso yatante* [7,79,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.079.html#rv07.079.02) [10,13,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.013.html#rv10.013.02) [5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.013.html#rv10.013.05) *anupūrvaṃ yatamānāḥ* [18,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.018.html#rv10.018.06) [77,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.077.html#rv10.077.02) [8,43,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.043.html#rv08.043.04) Auch act. etwa so v. a. in einer Reihe —, auf einer Stufe stehen: *nakirdevebhiryatatho mahitvā* [6,67,10.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.067.html#rv06.067.10)
 
-- **RU:** — 2) med. присоединяться, выстраиваться в ряд; двигаться рядами: *haṃsā iva śreṇiśo yatānāḥ* [ṚV. 3,8,9] (vgl. [1,163,10.]). *śravasyavo na pṛtanāsu yetire* [1,85,8.] [5,33,10.] [59,2.] *viśo na yuktā uṣaso yatante* [7,79,2.] [10,13,2.] [5.] *anupūrvaṃ yatamānāḥ* [18,6.] [77,2.] [8,43,4.] Также act. примерно так v. a. стоять в ряду —, находиться на одном уровне: *nakirdevebhiryatatho mahitvā* [6,67,10.]
-- **EN:** 2) med. to join in line, fall in behind; to march in rows, draw up in rank: *haṃsā iva śreṇiśo yatānāḥ* [ṚV. 3,8,9] (vgl. [1,163,10.]). *śravasyavo na pṛtanāsu yetire* [1,85,8.] [5,33,10.] [59,2.] *viśo na yuktā uṣaso yatante* [7,79,2.] [10,13,2.] [5.] *anupūrvaṃ yatamānāḥ* [18,6.] [77,2.] [8,43,4.] Also act. approximately in the sense of v. a. to stand in a row, to be on a par: *nakirdevebhiryatatho mahitvā* [6,67,10.]
+- **RU:** — 2) med. присоединяться, выстраиваться в ряд; двигаться рядами: *haṃsā iva śreṇiśo yatānāḥ* [ṚV. 3,8,9](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.008.html#rv03.008.09) (vgl. [1,163,10.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.163.html#rv01.163.10)). *śravasyavo na pṛtanāsu yetire* [1,85,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.085.html#rv01.085.08) [5,33,10.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.033.html#rv05.033.10) [59,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.059.html#rv05.059.02) *viśo na yuktā uṣaso yatante* [7,79,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.079.html#rv07.079.02) [10,13,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.013.html#rv10.013.02) [5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.013.html#rv10.013.05) *anupūrvaṃ yatamānāḥ* [18,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.018.html#rv10.018.06) [77,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.077.html#rv10.077.02) [8,43,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.043.html#rv08.043.04) Также act. примерно так v. a. стоять в ряду —, находиться на одном уровне: *nakirdevebhiryatatho mahitvā* [6,67,10.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.067.html#rv06.067.10)
+- **EN:** 2) med. to join in line, fall in behind; to march in rows, draw up in rank: *haṃsā iva śreṇiśo yatānāḥ* [ṚV. 3,8,9](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.008.html#rv03.008.09) (vgl. [1,163,10.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.163.html#rv01.163.10)). *śravasyavo na pṛtanāsu yetire* [1,85,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.085.html#rv01.085.08) [5,33,10.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.033.html#rv05.033.10) [59,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.059.html#rv05.059.02) *viśo na yuktā uṣaso yatante* [7,79,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.079.html#rv07.079.02) [10,13,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.013.html#rv10.013.02) [5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.013.html#rv10.013.05) *anupūrvaṃ yatamānāḥ* [18,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.018.html#rv10.018.06) [77,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.077.html#rv10.077.02) [8,43,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.043.html#rv08.043.04) Also act. approximately in the sense of v. a. to stand in a row, to be on a par: *nakirdevebhiryatatho mahitvā* [6,67,10.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.067.html#rv06.067.10)
   <sub>attested</sub>
 
-**3)** — 3) med. sich verbinden, — vereinigen, zusammentreffen mit (instr.): *vaiśvānaro yatate sūryeṇa* [ṚV. 1,98,1.] *(uṣāsaḥ) yatamānā raśmibhiḥ sūryasya* [123,12.] [5,4,4.] [10,62,11.] *pari vāmiṣaḥ purūcīrīyurgīrbhiryatamānāḥ* [3,58,8.] [10,113,7.] *kṣatreṇāgne svāyuḥ saṃ rabhasva mitreṇāgne mitradheye yatasva* ([P. 5,4,36], Vārtt. 3, Sch.) [VS. 27,5.] [7,45.] [10,29.] *piturna putraḥ kratubhiryatānaḥ* wie ein Sohn des Vaters Willen sich fügend [ṚV. 9,97,30.]
+**3)** — 3) med. sich verbinden, — vereinigen, zusammentreffen mit (instr.): *vaiśvānaro yatate sūryeṇa* [ṚV. 1,98,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.098.html#rv01.098.01) *(uṣāsaḥ) yatamānā raśmibhiḥ sūryasya* [123,12.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.123.html#rv01.123.12) [5,4,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.004.html#rv05.004.04) [10,62,11.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.062.html#rv10.062.11) *pari vāmiṣaḥ purūcīrīyurgīrbhiryatamānāḥ* [3,58,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.058.html#rv03.058.08) [10,113,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.113.html#rv10.113.07) *kṣatreṇāgne svāyuḥ saṃ rabhasva mitreṇāgne mitradheye yatasva* ([P. 5,4,36](https://ashtadhyayi.com/sutraani/5/4/36), Vārtt. 3, Sch.) [VS. 27,5.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?27,5) [7,45.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?7,45) [10,29.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?10,29) *piturna putraḥ kratubhiryatānaḥ* wie ein Sohn des Vaters Willen sich fügend [ṚV. 9,97,30.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.097.html#rv09.097.30)
 
-- **RU:** — 3) med. соединяться, — сливаться, встречаться с (instr.): *vaiśvānaro yatate sūryeṇa* [ṚV. 1,98,1.] *(uṣāsaḥ) yatamānā raśmibhiḥ sūryasya* [123,12.] [5,4,4.] [10,62,11.] *pari vāmiṣaḥ purūcīrīyurgīrbhiryatamānāḥ* [3,58,8.] [10,113,7.] *kṣatreṇāgne svāyuḥ saṃ rabhasva mitreṇāgne mitradheye yatasva* ([P. 5,4,36], Vārtt. 3, Sch.) [VS. 27,5.] [7,45.] [10,29.] *piturna putraḥ kratubhiryatānaḥ* как сын, подчиняющийся воле отца [ṚV. 9,97,30.]
-- **EN:** 3) med. to join, unite, meet with (instr.): *vaiśvānaro yatate sūryeṇa* [ṚV. 1,98,1.] *(uṣāsaḥ) yatamānā raśmibhiḥ sūryasya* [123,12.] [5,4,4.] [10,62,11.] *pari vāmiṣaḥ purūcīrīyurgīrbhiryatamānāḥ* [3,58,8.] [10,113,7.] *kṣatreṇāgne svāyuḥ saṃ rabhasva mitreṇāgne mitradheye yatasva* ([P. 5,4,36], Vārtt. 3, Sch.) [VS. 27,5.] [7,45.] [10,29.] *piturna putraḥ kratubhiryatānaḥ* complying with the father's will as a son [ṚV. 9,97,30.]
+- **RU:** — 3) med. соединяться, — сливаться, встречаться с (instr.): *vaiśvānaro yatate sūryeṇa* [ṚV. 1,98,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.098.html#rv01.098.01) *(uṣāsaḥ) yatamānā raśmibhiḥ sūryasya* [123,12.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.123.html#rv01.123.12) [5,4,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.004.html#rv05.004.04) [10,62,11.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.062.html#rv10.062.11) *pari vāmiṣaḥ purūcīrīyurgīrbhiryatamānāḥ* [3,58,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.058.html#rv03.058.08) [10,113,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.113.html#rv10.113.07) *kṣatreṇāgne svāyuḥ saṃ rabhasva mitreṇāgne mitradheye yatasva* ([P. 5,4,36](https://ashtadhyayi.com/sutraani/5/4/36), Vārtt. 3, Sch.) [VS. 27,5.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?27,5) [7,45.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?7,45) [10,29.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?10,29) *piturna putraḥ kratubhiryatānaḥ* как сын, подчиняющийся воле отца [ṚV. 9,97,30.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.097.html#rv09.097.30)
+- **EN:** 3) med. to join, unite, meet with (instr.): *vaiśvānaro yatate sūryeṇa* [ṚV. 1,98,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.098.html#rv01.098.01) *(uṣāsaḥ) yatamānā raśmibhiḥ sūryasya* [123,12.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.123.html#rv01.123.12) [5,4,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.004.html#rv05.004.04) [10,62,11.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.062.html#rv10.062.11) *pari vāmiṣaḥ purūcīrīyurgīrbhiryatamānāḥ* [3,58,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.058.html#rv03.058.08) [10,113,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.113.html#rv10.113.07) *kṣatreṇāgne svāyuḥ saṃ rabhasva mitreṇāgne mitradheye yatasva* ([P. 5,4,36](https://ashtadhyayi.com/sutraani/5/4/36), Vārtt. 3, Sch.) [VS. 27,5.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?27,5) [7,45.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?7,45) [10,29.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?10,29) *piturna putraḥ kratubhiryatānaḥ* complying with the father's will as a son [ṚV. 9,97,30.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.097.html#rv09.097.30)
   <sub>attested</sub>
 
-**4)** — 4) med. sich zu vereinigen suchen mit (loc.), zu erreichen suchen (einen Ort), zustreben, auf Etwas zuhalten: *divi svano yatate* [ṚV. 10,75,3.] *mahaḥ pārthive sadane yatasva* [1,169,6.] [TBR. 1,4,6,2.] [TS. 2,2,6,1.] *antarikṣe yatasva* [5,6,1,4.] [ŚAT. BR. 12,2,3,1.]
+**4)** — 4) med. sich zu vereinigen suchen mit (loc.), zu erreichen suchen (einen Ort), zustreben, auf Etwas zuhalten: *divi svano yatate* [ṚV. 10,75,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.075.html#rv10.075.03) *mahaḥ pārthive sadane yatasva* [1,169,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.169.html#rv01.169.06) [TBR. 1,4,6,2.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?1,4,6,2) [TS. 2,2,6,1.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?2,2,6,1) *antarikṣe yatasva* [5,6,1,4.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?5,6,1,4) [ŚAT. BR. 12,2,3,1.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?12,2,3,1)
 
-- **RU:** — 4) med. стремиться соединиться с (loc.), стремиться достичь (какого-либо места), устремляться, двигаться к чему-либо: *divi svano yatate* [ṚV. 10,75,3.] *mahaḥ pārthive sadane yatasva* [1,169,6.] [TBR. 1,4,6,2.] [TS. 2,2,6,1.] *antarikṣe yatasva* [5,6,1,4.] [ŚAT. BR. 12,2,3,1.]
-- **EN:** 4) med. to seek to unite oneself with (loc.), to seek to reach (a place), to strive towards, to make for something: *divi svano yatate* [ṚV. 10,75,3.] *mahaḥ pārthive sadane yatasva* [1,169,6.] [TBR. 1,4,6,2.] [TS. 2,2,6,1.] *antarikṣe yatasva* [5,6,1,4.] [ŚAT. BR. 12,2,3,1.]
+- **RU:** — 4) med. стремиться соединиться с (loc.), стремиться достичь (какого-либо места), устремляться, двигаться к чему-либо: *divi svano yatate* [ṚV. 10,75,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.075.html#rv10.075.03) *mahaḥ pārthive sadane yatasva* [1,169,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.169.html#rv01.169.06) [TBR. 1,4,6,2.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?1,4,6,2) [TS. 2,2,6,1.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?2,2,6,1) *antarikṣe yatasva* [5,6,1,4.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?5,6,1,4) [ŚAT. BR. 12,2,3,1.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?12,2,3,1)
+- **EN:** 4) med. to seek to unite oneself with (loc.), to seek to reach (a place), to strive towards, to make for something: *divi svano yatate* [ṚV. 10,75,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.075.html#rv10.075.03) *mahaḥ pārthive sadane yatasva* [1,169,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.169.html#rv01.169.06) [TBR. 1,4,6,2.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?1,4,6,2) [TS. 2,2,6,1.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?2,2,6,1) *antarikṣe yatasva* [5,6,1,4.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?5,6,1,4) [ŚAT. BR. 12,2,3,1.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?12,2,3,1)
   <sub>attested</sub>
 
 **5)** — 5) med. (aus metrischen Rücksichten auch act.) streben nach, sich bemühen um, bedacht sein auf, sich ganz einer Sache hingeben:
@@ -37,52 +37,52 @@ _PWG article — 28 sub-card(s), 189 sense(s) · RU 159/189 · EN 92/189_
 - **EN:** 5) med. (for metrical reasons also act.) to strive after, to endeavour, to be intent upon, to devote oneself wholly to something:
   <sub>attested</sub>
 
-**5a)** a) mit loc.: *yatadhvaṃ nalamārgaṇe* [MBH. 3,2727.] *hitānudarśane* [R. 5,76,22.] [BHĀG. P. 3,25,26.] *jīvitahṛtau* [Spr. 1140.] *dviṣatāṃ vadhe* [R. 3,71,16.] *piturvinigrahe* [R. GORR. 2,20,46.] [BHAṬṬ. 5,29.] *saṃsiddhau* [BHAG. 6,43.] *arthasidbhau dharme yatitumarhasi* [R. GORR. 2,20,11.] [MBH. 4,680.] *siddhe 'nyathārthe na yateta* [BHĀG. P. 2,2,3.] *nalasyānayane yata* [MBH. 3,2722.] [MĀRK. P. 69,26.] [126,3.] [132,10.] *yatiṣyati mahābhaye* [R. 4,14,29.] *svādvanne na tu yatyatām* (impers.) [Spr. 795.]
+**5a)** a) mit loc.: *yatadhvaṃ nalamārgaṇe* [MBH. 3,2727.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2727) *hitānudarśane* [R. 5,76,22.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,76,22) [BHĀG. P. 3,25,26.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,25,26) *jīvitahṛtau* [Spr. 1140.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1140) *dviṣatāṃ vadhe* [R. 3,71,16.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,71,16) *piturvinigrahe* [R. GORR. 2,20,46.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,20,46) [BHAṬṬ. 5,29.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?5,29) *saṃsiddhau* [BHAG. 6,43.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?6,43) *arthasidbhau dharme yatitumarhasi* [R. GORR. 2,20,11.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,20,11) [MBH. 4,680.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.680) *siddhe 'nyathārthe na yateta* [BHĀG. P. 2,2,3.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,2,3) *nalasyānayane yata* [MBH. 3,2722.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2722) [MĀRK. P. 69,26.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?69,26) [126,3.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?126,3) [132,10.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?132,10) *yatiṣyati mahābhaye* [R. 4,14,29.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,14,29) *svādvanne na tu yatyatām* (impers.) [Spr. 795.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?795)
 
-- **RU:** a) с loc.: *yatadhvaṃ nalamārgaṇe* [MBH. 3,2727.] *hitānudarśane* [R. 5,76,22.] [BHĀG. P. 3,25,26.] *jīvitahṛtau* [Spr. 1140.] *dviṣatāṃ vadhe* [R. 3,71,16.] *piturvinigrahe* [R. GORR. 2,20,46.] [BHAṬṬ. 5,29.] *saṃsiddhau* [BHAG. 6,43.] *arthasidbhau dharme yatitumarhasi* [R. GORR. 2,20,11.] [MBH. 4,680.] *siddhe 'nyathārthe na yateta* [BHĀG. P. 2,2,3.] *nalasyānayane yata* [MBH. 3,2722.] [MĀRK. P. 69,26.] [126,3.] [132,10.] *yatiṣyati mahābhaye* [R. 4,14,29.] *svādvanne na tu yatyatām* (impers.) [Spr. 795.]
-- **EN:** a) with loc.: *yatadhvaṃ nalamārgaṇe* [MBH. 3,2727.] *hitānudarśane* [R. 5,76,22.] [BHĀG. P. 3,25,26.] *jīvitahṛtau* [Spr. 1140.] *dviṣatāṃ vadhe* [R. 3,71,16.] *piturvinigrahe* [R. GORR. 2,20,46.] [BHAṬṬ. 5,29.] *saṃsiddhau* [BHAG. 6,43.] *arthasidbhau dharme yatitumarhasi* [R. GORR. 2,20,11.] [MBH. 4,680.] *siddhe 'nyathārthe na yateta* [BHĀG. P. 2,2,3.] *nalasyānayane yata* [MBH. 3,2722.] [MĀRK. P. 69,26.] [126,3.] [132,10.] *yatiṣyati mahābhaye* [R. 4,14,29.] *svādvanne na tu yatyatām* (impers.) [Spr. 795.]
+- **RU:** a) с loc.: *yatadhvaṃ nalamārgaṇe* [MBH. 3,2727.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2727) *hitānudarśane* [R. 5,76,22.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,76,22) [BHĀG. P. 3,25,26.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,25,26) *jīvitahṛtau* [Spr. 1140.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1140) *dviṣatāṃ vadhe* [R. 3,71,16.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,71,16) *piturvinigrahe* [R. GORR. 2,20,46.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,20,46) [BHAṬṬ. 5,29.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?5,29) *saṃsiddhau* [BHAG. 6,43.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?6,43) *arthasidbhau dharme yatitumarhasi* [R. GORR. 2,20,11.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,20,11) [MBH. 4,680.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.680) *siddhe 'nyathārthe na yateta* [BHĀG. P. 2,2,3.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,2,3) *nalasyānayane yata* [MBH. 3,2722.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2722) [MĀRK. P. 69,26.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?69,26) [126,3.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?126,3) [132,10.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?132,10) *yatiṣyati mahābhaye* [R. 4,14,29.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,14,29) *svādvanne na tu yatyatām* (impers.) [Spr. 795.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?795)
+- **EN:** a) with loc.: *yatadhvaṃ nalamārgaṇe* [MBH. 3,2727.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2727) *hitānudarśane* [R. 5,76,22.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,76,22) [BHĀG. P. 3,25,26.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,25,26) *jīvitahṛtau* [Spr. 1140.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1140) *dviṣatāṃ vadhe* [R. 3,71,16.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,71,16) *piturvinigrahe* [R. GORR. 2,20,46.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,20,46) [BHAṬṬ. 5,29.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?5,29) *saṃsiddhau* [BHAG. 6,43.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?6,43) *arthasidbhau dharme yatitumarhasi* [R. GORR. 2,20,11.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,20,11) [MBH. 4,680.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.680) *siddhe 'nyathārthe na yateta* [BHĀG. P. 2,2,3.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,2,3) *nalasyānayane yata* [MBH. 3,2722.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2722) [MĀRK. P. 69,26.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?69,26) [126,3.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?126,3) [132,10.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?132,10) *yatiṣyati mahābhaye* [R. 4,14,29.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,14,29) *svādvanne na tu yatyatām* (impers.) [Spr. 795.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?795)
   <sub>attested</sub>
 
-**5b)** — b) mit dat.: *yateta tatprāptyai* [YĀJÑ. 1,351.] *yatiṣye vaḥ sakhīpratyānayanāya* [VIKR. 5,16.] [MĀLAV. 9,3.] *tasya nāśāya* [Spr. 95.] *paramārthasiddhyai* [1901.] [BHAG. 7,3.] [HARIV. 15636.] *jarāmaraṇamokṣāya* [BHAG. 7,29.] [MBH. 5,5957.] [KATHĀS. 27,40.] *udayāya* [RAGH. 9,7.] *apunarmṛtāya* [BHĀG. P. 5,19,25.] *bhūtyai* (Conj.) [Spr. 3413.] *arthāya* [4121.] *lābhāya* [KĀM. NĪTIS. 1,17.] *śreyase* [ŚĀK. 113,3.]
+**5b)** — b) mit dat.: *yateta tatprāptyai* [YĀJÑ. 1,351.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?1,351) *yatiṣye vaḥ sakhīpratyānayanāya* [VIKR. 5,16.](https://sanskrit-lexicon-scans.github.io/vikramor/app2?5,16) [MĀLAV. 9,3.](https://sanskrit-lexicon-scans.github.io/malavikagni/app2?9,3) *tasya nāśāya* [Spr. 95.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?95) *paramārthasiddhyai* [1901.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1901) [BHAG. 7,3.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?7,3) [HARIV. 15636.](https://sanskrit-lexicon-scans.github.io/hariv?15636) *jarāmaraṇamokṣāya* [BHAG. 7,29.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?7,29) [MBH. 5,5957.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.5957) [KATHĀS. 27,40.](https://sanskrit-lexicon-scans.github.io/kss/index.html?27,40) *udayāya* [RAGH. 9,7.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?9,7) *apunarmṛtāya* [BHĀG. P. 5,19,25.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,19,25) *bhūtyai* (Conj.) [Spr. 3413.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3413) *arthāya* [4121.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4121) *lābhāya* [KĀM. NĪTIS. 1,17.] *śreyase* [ŚĀK. 113,3.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?113,3)
 
-- **RU:** — б) с dat.: *yateta tatprāptyai* [YĀJÑ. 1,351.] *yatiṣye vaḥ sakhīpratyānayanāya* [VIKR. 5,16.] [MĀLAV. 9,3.] *tasya nāśāya* [Spr. 95.] *paramārthasiddhyai* [1901.] [BHAG. 7,3.] [HARIV. 15636.] *jarāmaraṇamokṣāya* [BHAG. 7,29.] [MBH. 5,5957.] [KATHĀS. 27,40.] *udayāya* [RAGH. 9,7.] *apunarmṛtāya* [BHĀG. P. 5,19,25.] *bhūtyai* (Conj.) [Spr. 3413.] *arthāya* [4121.] *lābhāya* [KĀM. NĪTIS. 1,17.] *śreyase* [ŚĀK. 113,3.]
-- **EN:** b) with dat.: *yateta tatprāptyai* [YĀJÑ. 1,351.] *yatiṣye vaḥ sakhīpratyānayanāya* [VIKR. 5,16.] [MĀLAV. 9,3.] *tasya nāśāya* [Spr. 95.] *paramārthasiddhyai* [1901.] [BHAG. 7,3.] [HARIV. 15636.] *jarāmaraṇamokṣāya* [BHAG. 7,29.] [MBH. 5,5957.] [KATHĀS. 27,40.] *udayāya* [RAGH. 9,7.] *apunarmṛtāya* [BHĀG. P. 5,19,25.] *bhūtyai* (Conj.) [Spr. 3413.] *arthāya* [4121.] *lābhāya* [KĀM. NĪTIS. 1,17.] *śreyase* [ŚĀK. 113,3.]
+- **RU:** — б) с dat.: *yateta tatprāptyai* [YĀJÑ. 1,351.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?1,351) *yatiṣye vaḥ sakhīpratyānayanāya* [VIKR. 5,16.](https://sanskrit-lexicon-scans.github.io/vikramor/app2?5,16) [MĀLAV. 9,3.](https://sanskrit-lexicon-scans.github.io/malavikagni/app2?9,3) *tasya nāśāya* [Spr. 95.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?95) *paramārthasiddhyai* [1901.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1901) [BHAG. 7,3.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?7,3) [HARIV. 15636.](https://sanskrit-lexicon-scans.github.io/hariv?15636) *jarāmaraṇamokṣāya* [BHAG. 7,29.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?7,29) [MBH. 5,5957.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.5957) [KATHĀS. 27,40.](https://sanskrit-lexicon-scans.github.io/kss/index.html?27,40) *udayāya* [RAGH. 9,7.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?9,7) *apunarmṛtāya* [BHĀG. P. 5,19,25.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,19,25) *bhūtyai* (Conj.) [Spr. 3413.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3413) *arthāya* [4121.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4121) *lābhāya* [KĀM. NĪTIS. 1,17.] *śreyase* [ŚĀK. 113,3.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?113,3)
+- **EN:** b) with dat.: *yateta tatprāptyai* [YĀJÑ. 1,351.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?1,351) *yatiṣye vaḥ sakhīpratyānayanāya* [VIKR. 5,16.](https://sanskrit-lexicon-scans.github.io/vikramor/app2?5,16) [MĀLAV. 9,3.](https://sanskrit-lexicon-scans.github.io/malavikagni/app2?9,3) *tasya nāśāya* [Spr. 95.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?95) *paramārthasiddhyai* [1901.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1901) [BHAG. 7,3.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?7,3) [HARIV. 15636.](https://sanskrit-lexicon-scans.github.io/hariv?15636) *jarāmaraṇamokṣāya* [BHAG. 7,29.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?7,29) [MBH. 5,5957.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.5957) [KATHĀS. 27,40.](https://sanskrit-lexicon-scans.github.io/kss/index.html?27,40) *udayāya* [RAGH. 9,7.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?9,7) *apunarmṛtāya* [BHĀG. P. 5,19,25.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,19,25) *bhūtyai* (Conj.) [Spr. 3413.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3413) *arthāya* [4121.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4121) *lābhāya* [KĀM. NĪTIS. 1,17.] *śreyase* [ŚĀK. 113,3.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?113,3)
   <sub>attested</sub>
 
-**5c)** — c) mit gen.: *tasyānnasya* ([NILAK.] ergänzt *dāne*) [MBH. 1,8085.]
+**5c)** — c) mit gen.: *tasyānnasya* ([NILAK.] ergänzt *dāne*) [MBH. 1,8085.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8085)
 
-- **RU:** — в) с gen.: *tasyānnasya* ([NILAK.] дополняется *dāne*) [MBH. 1,8085.]
-- **EN:** c) with gen.: *tasyānnasya* ([NILAK.] supplies *dāne*) [MBH. 1,8085.]
+- **RU:** — в) с gen.: *tasyānnasya* ([NILAK.] дополняется *dāne*) [MBH. 1,8085.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8085)
+- **EN:** c) with gen.: *tasyānnasya* ([NILAK.] supplies *dāne*) [MBH. 1,8085.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8085)
   <sub>attested</sub>
 
-**5d)** — d) mit *arthe, arthāya, artham, hetos, pratiḥ mitrārthe bāndhavārthe ca buddhimānyatate sadā* [Spr. 2205.] *mamāyaṃ nūnamarthāya yatamānaḥ* [R. 3,73,2.] *tadartham* [Spr. 2582.] *mokṣārtham* [MBH. 1,1591.] *svargārthaṃ na yatiṣyanti* [HARIV. 7273.] *so 'haṃ yātiṣye* (lies *yatiṣye) putrārtham* [MĀRK. P. 121,39.] *dharmārthaṃ yatatām* (gen. pl.) [Spr. 4258.] *śāpāntahetostasyā na kiṃ yate* [KATHĀS. 121,153.] *kathaṃ yatiṣye bhojanaṃ prati* [92,29.]
+**5d)** — d) mit *arthe, arthāya, artham, hetos, pratiḥ mitrārthe bāndhavārthe ca buddhimānyatate sadā* [Spr. 2205.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2205) *mamāyaṃ nūnamarthāya yatamānaḥ* [R. 3,73,2.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,73,2) *tadartham* [Spr. 2582.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2582) *mokṣārtham* [MBH. 1,1591.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1591) *svargārthaṃ na yatiṣyanti* [HARIV. 7273.](https://sanskrit-lexicon-scans.github.io/hariv?7273) *so 'haṃ yātiṣye* (lies *yatiṣye) putrārtham* [MĀRK. P. 121,39.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?121,39) *dharmārthaṃ yatatām* (gen. pl.) [Spr. 4258.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4258) *śāpāntahetostasyā na kiṃ yate* [KATHĀS. 121,153.](https://sanskrit-lexicon-scans.github.io/kss/index.html?121,153) *kathaṃ yatiṣye bhojanaṃ prati* [92,29.](https://sanskrit-lexicon-scans.github.io/kss/index.html?92,29)
 
-- **RU:** — г) с *arthe, arthāya, artham, hetos, pratiḥ mitrārthe bāndhavārthe ca buddhimānyatate sadā* [Spr. 2205.] *mamāyaṃ nūnamarthāya yatamānaḥ* [R. 3,73,2.] *tadartham* [Spr. 2582.] *mokṣārtham* [MBH. 1,1591.] *svargārthaṃ na yatiṣyanti* [HARIV. 7273.] *so 'haṃ yātiṣye* (читать *yatiṣye) putrārtham* [MĀRK. P. 121,39.] *dharmārthaṃ yatatām* (gen. pl.) [Spr. 4258.] *śāpāntahetostasyā na kiṃ yate* [KATHĀS. 121,153.] *kathaṃ yatiṣye bhojanaṃ prati* [92,29.]
-- **EN:** d) with *arthe, arthāya, artham, hetos, pratiḥ mitrārthe bāndhavārthe ca buddhimānyatate sadā* [Spr. 2205.] *mamāyaṃ nūnamarthāya yatamānaḥ* [R. 3,73,2.] *tadartham* [Spr. 2582.] *mokṣārtham* [MBH. 1,1591.] *svargārthaṃ na yatiṣyanti* [HARIV. 7273.] *so 'haṃ yātiṣye* (read *yatiṣye) putrārtham* [MĀRK. P. 121,39.] *dharmārthaṃ yatatām* (gen. pl.) [Spr. 4258.] *śāpāntahetostasyā na kiṃ yate* [KATHĀS. 121,153.] *kathaṃ yatiṣye bhojanaṃ prati* [92,29.]
+- **RU:** — г) с *arthe, arthāya, artham, hetos, pratiḥ mitrārthe bāndhavārthe ca buddhimānyatate sadā* [Spr. 2205.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2205) *mamāyaṃ nūnamarthāya yatamānaḥ* [R. 3,73,2.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,73,2) *tadartham* [Spr. 2582.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2582) *mokṣārtham* [MBH. 1,1591.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1591) *svargārthaṃ na yatiṣyanti* [HARIV. 7273.](https://sanskrit-lexicon-scans.github.io/hariv?7273) *so 'haṃ yātiṣye* (читать *yatiṣye) putrārtham* [MĀRK. P. 121,39.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?121,39) *dharmārthaṃ yatatām* (gen. pl.) [Spr. 4258.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4258) *śāpāntahetostasyā na kiṃ yate* [KATHĀS. 121,153.](https://sanskrit-lexicon-scans.github.io/kss/index.html?121,153) *kathaṃ yatiṣye bhojanaṃ prati* [92,29.](https://sanskrit-lexicon-scans.github.io/kss/index.html?92,29)
+- **EN:** d) with *arthe, arthāya, artham, hetos, pratiḥ mitrārthe bāndhavārthe ca buddhimānyatate sadā* [Spr. 2205.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2205) *mamāyaṃ nūnamarthāya yatamānaḥ* [R. 3,73,2.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,73,2) *tadartham* [Spr. 2582.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2582) *mokṣārtham* [MBH. 1,1591.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1591) *svargārthaṃ na yatiṣyanti* [HARIV. 7273.](https://sanskrit-lexicon-scans.github.io/hariv?7273) *so 'haṃ yātiṣye* (read *yatiṣye) putrārtham* [MĀRK. P. 121,39.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?121,39) *dharmārthaṃ yatatām* (gen. pl.) [Spr. 4258.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4258) *śāpāntahetostasyā na kiṃ yate* [KATHĀS. 121,153.](https://sanskrit-lexicon-scans.github.io/kss/index.html?121,153) *kathaṃ yatiṣye bhojanaṃ prati* [92,29.](https://sanskrit-lexicon-scans.github.io/kss/index.html?92,29)
   <sub>attested</sub>
 
-**5e)** — e) mit acc.: *yatante prāṇipīḍanam* [HARIV. 14603.] *rākṣasā duṣṭabhāvā hi yatante vikriyāṃ vane* [R. 3,49,56.] *yatasvānyatamaṃ raṇam* so v. a. mache dich gefasst auf [35,60.] Vgl. u.
+**5e)** — e) mit acc.: *yatante prāṇipīḍanam* [HARIV. 14603.](https://sanskrit-lexicon-scans.github.io/hariv?14603) *rākṣasā duṣṭabhāvā hi yatante vikriyāṃ vane* [R. 3,49,56.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,49,56) *yatasvānyatamaṃ raṇam* so v. a. mache dich gefasst auf [35,60.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,35,60) Vgl. u.
 
-- **RU:** — д) с acc.: *yatante prāṇipīḍanam* [HARIV. 14603.] *rākṣasā duṣṭabhāvā hi yatante vikriyāṃ vane* [R. 3,49,56.] *yatasvānyatamaṃ raṇam* так v. a. приготовься к [35,60.] Vgl. u.
-- **EN:** e) with acc.: *yatante prāṇipīḍanam* [HARIV. 14603.] *rākṣasā duṣṭabhāvā hi yatante vikriyāṃ vane* [R. 3,49,56.] *yatasvānyatamaṃ raṇam* thus v. a. prepare yourself for [35,60.] Vgl. u.
+- **RU:** — д) с acc.: *yatante prāṇipīḍanam* [HARIV. 14603.](https://sanskrit-lexicon-scans.github.io/hariv?14603) *rākṣasā duṣṭabhāvā hi yatante vikriyāṃ vane* [R. 3,49,56.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,49,56) *yatasvānyatamaṃ raṇam* так v. a. приготовься к [35,60.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,35,60) Vgl. u.
+- **EN:** e) with acc.: *yatante prāṇipīḍanam* [HARIV. 14603.](https://sanskrit-lexicon-scans.github.io/hariv?14603) *rākṣasā duṣṭabhāvā hi yatante vikriyāṃ vane* [R. 3,49,56.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,49,56) *yatasvānyatamaṃ raṇam* thus v. a. prepare yourself for [35,60.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,35,60) Vgl. u.
   <sub>attested</sub>
 
-**5f)** — f) mit infin. [M. 9,6.] [MBH. 1,6360.] [3,2637.] [R. GORR. 2,13,14.] [3,23,22.] [RAGH. 5,17.] [25.] [KUMĀRAS. 2,59.] [KATHĀS. 5,128.] [19,51.] [RĀJA-TAR. 1,159.] [3,282.] [6,334.] [BHĀG. P. 3,24,28.] [BHAṬṬ. 15,58.]
+**5f)** — f) mit infin. [M. 9,6.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,6) [MBH. 1,6360.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6360) [3,2637.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2637) [R. GORR. 2,13,14.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,13,14) [3,23,22.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,23,22) [RAGH. 5,17.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?5,17) [25.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?5,25) [KUMĀRAS. 2,59.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?2,59) [KATHĀS. 5,128.](https://sanskrit-lexicon-scans.github.io/kss/index.html?5,128) [19,51.](https://sanskrit-lexicon-scans.github.io/kss/index.html?19,51) [RĀJA-TAR. 1,159.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?1,159) [3,282.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?3,282) [6,334.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?6,334) [BHĀG. P. 3,24,28.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,24,28) [BHAṬṬ. 15,58.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?15,58)
 
-- **RU:** — е) с infin. [M. 9,6.] [MBH. 1,6360.] [3,2637.] [R. GORR. 2,13,14.] [3,23,22.] [RAGH. 5,17.] [25.] [KUMĀRAS. 2,59.] [KATHĀS. 5,128.] [19,51.] [RĀJA-TAR. 1,159.] [3,282.] [6,334.] [BHĀG. P. 3,24,28.] [BHAṬṬ. 15,58.]
-- **EN:** f) with infin. [M. 9,6.] [MBH. 1,6360.] [3,2637.] [R. GORR. 2,13,14.] [3,23,22.] [RAGH. 5,17.] [25.] [KUMĀRAS. 2,59.] [KATHĀS. 5,128.] [19,51.] [RĀJA-TAR. 1,159.] [3,282.] [6,334.] [BHĀG. P. 3,24,28.] [BHAṬṬ. 15,58.]
+- **RU:** — е) с infin. [M. 9,6.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,6) [MBH. 1,6360.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6360) [3,2637.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2637) [R. GORR. 2,13,14.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,13,14) [3,23,22.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,23,22) [RAGH. 5,17.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?5,17) [25.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?5,25) [KUMĀRAS. 2,59.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?2,59) [KATHĀS. 5,128.](https://sanskrit-lexicon-scans.github.io/kss/index.html?5,128) [19,51.](https://sanskrit-lexicon-scans.github.io/kss/index.html?19,51) [RĀJA-TAR. 1,159.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?1,159) [3,282.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?3,282) [6,334.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?6,334) [BHĀG. P. 3,24,28.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,24,28) [BHAṬṬ. 15,58.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?15,58)
+- **EN:** f) with infin. [M. 9,6.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,6) [MBH. 1,6360.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6360) [3,2637.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2637) [R. GORR. 2,13,14.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,13,14) [3,23,22.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,23,22) [RAGH. 5,17.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?5,17) [25.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?5,25) [KUMĀRAS. 2,59.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?2,59) [KATHĀS. 5,128.](https://sanskrit-lexicon-scans.github.io/kss/index.html?5,128) [19,51.](https://sanskrit-lexicon-scans.github.io/kss/index.html?19,51) [RĀJA-TAR. 1,159.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?1,159) [3,282.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?3,282) [6,334.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?6,334) [BHĀG. P. 3,24,28.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,24,28) [BHAṬṬ. 15,58.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?15,58)
   <sub>attested</sub>
 
-**5g)** — g) ohne Ergänzung sich anstrengen, alle seine Kräfte anwenden, Sorge tragen, auf seiner Hut sein, sich vorsehen: *yatamānā vanaṃ rājangahanaṃ pratipedire* [MBH. 1,5877.] [3,8814.] [R. 1,63,22.] [3,34,21.] [26.] [44,27.] [SUŚR. 2,23,8.] *tathā nityaṃ yateyātām — yathā na* [M. 9,102.] [DAŚAK.] in [BENF. Chr. 185,12.] [PRAB. 91,4.] [BHAṬṬ. 12,4.] act.: *yatato hyapi — puruṣasya — indriyāṇi pramāthīni haranti prasabhaṃ manaḥ* [BHAG. 2,60.] [7,3.] [9,14.] [MBH. 5,3313.] [HARIV. 15637.] [BHĀG. P. 1,6,21.] [4,8,32.] [23,10.] [5,18,27.] [6,2,35.] [10,30,20.] [CAURAP. 30.]
+**5g)** — g) ohne Ergänzung sich anstrengen, alle seine Kräfte anwenden, Sorge tragen, auf seiner Hut sein, sich vorsehen: *yatamānā vanaṃ rājangahanaṃ pratipedire* [MBH. 1,5877.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5877) [3,8814.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8814) [R. 1,63,22.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,63,22) [3,34,21.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,34,21) [26.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,34,26) [44,27.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,44,27) [SUŚR. 2,23,8.] *tathā nityaṃ yateyātām — yathā na* [M. 9,102.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,102) [DAŚAK.] in [BENF. Chr. 185,12.] [PRAB. 91,4.] [BHAṬṬ. 12,4.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?12,4) act.: *yatato hyapi — puruṣasya — indriyāṇi pramāthīni haranti prasabhaṃ manaḥ* [BHAG. 2,60.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?2,60) [7,3.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?7,3) [9,14.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?9,14) [MBH. 5,3313.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.3313) [HARIV. 15637.](https://sanskrit-lexicon-scans.github.io/hariv?15637) [BHĀG. P. 1,6,21.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,6,21) [4,8,32.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,8,32) [23,10.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,23,10) [5,18,27.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,18,27) [6,2,35.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,2,35) [10,30,20.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,30,20) [CAURAP. 30.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app1?30)
 
-- **RU:** — ж) без дополнения напрягать усилия, применять все свои силы, проявлять заботу, быть начеку, остерегаться: *yatamānā vanaṃ rājangahanaṃ pratipedire* [MBH. 1,5877.] [3,8814.] [R. 1,63,22.] [3,34,21.] [26.] [44,27.] [SUŚR. 2,23,8.] *tathā nityaṃ yateyātām — yathā na* [M. 9,102.] [DAŚAK.] в [BENF. Chr. 185,12.] [PRAB. 91,4.] [BHAṬṬ. 12,4.] act.: *yatato hyapi — puruṣasya — indriyāṇi pramāthīni haranti prasabhaṃ manaḥ* [BHAG. 2,60.] [7,3.] [9,14.] [MBH. 5,3313.] [HARIV. 15637.] [BHĀG. P. 1,6,21.] [4,8,32.] [23,10.] [5,18,27.] [6,2,35.] [10,30,20.] [CAURAP. 30.]
-- **EN:** g) without complement — to exert oneself, to apply all one's strength, to take care, to be on one's guard, to take precautions: *yatamānā vanaṃ rājangahanaṃ pratipedire* [MBH. 1,5877.] [3,8814.] [R. 1,63,22.] [3,34,21.] [26.] [44,27.] [SUŚR. 2,23,8.] *tathā nityaṃ yateyātām — yathā na* [M. 9,102.] [DAŚAK.] in [BENF. Chr. 185,12.] [PRAB. 91,4.] [BHAṬṬ. 12,4.] act.: *yatato hyapi — puruṣasya — indriyāṇi pramāthīni haranti prasabhaṃ manaḥ* [BHAG. 2,60.] [7,3.] [9,14.] [MBH. 5,3313.] [HARIV. 15637.] [BHĀG. P. 1,6,21.] [4,8,32.] [23,10.] [5,18,27.] [6,2,35.] [10,30,20.] [CAURAP. 30.]
+- **RU:** — ж) без дополнения напрягать усилия, применять все свои силы, проявлять заботу, быть начеку, остерегаться: *yatamānā vanaṃ rājangahanaṃ pratipedire* [MBH. 1,5877.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5877) [3,8814.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8814) [R. 1,63,22.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,63,22) [3,34,21.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,34,21) [26.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,34,26) [44,27.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,44,27) [SUŚR. 2,23,8.] *tathā nityaṃ yateyātām — yathā na* [M. 9,102.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,102) [DAŚAK.] в [BENF. Chr. 185,12.] [PRAB. 91,4.] [BHAṬṬ. 12,4.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?12,4) act.: *yatato hyapi — puruṣasya — indriyāṇi pramāthīni haranti prasabhaṃ manaḥ* [BHAG. 2,60.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?2,60) [7,3.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?7,3) [9,14.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?9,14) [MBH. 5,3313.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.3313) [HARIV. 15637.](https://sanskrit-lexicon-scans.github.io/hariv?15637) [BHĀG. P. 1,6,21.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,6,21) [4,8,32.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,8,32) [23,10.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,23,10) [5,18,27.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,18,27) [6,2,35.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,2,35) [10,30,20.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,30,20) [CAURAP. 30.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app1?30)
+- **EN:** g) without complement — to exert oneself, to apply all one's strength, to take care, to be on one's guard, to take precautions: *yatamānā vanaṃ rājangahanaṃ pratipedire* [MBH. 1,5877.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5877) [3,8814.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8814) [R. 1,63,22.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,63,22) [3,34,21.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,34,21) [26.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,34,26) [44,27.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,44,27) [SUŚR. 2,23,8.] *tathā nityaṃ yateyātām — yathā na* [M. 9,102.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,102) [DAŚAK.] in [BENF. Chr. 185,12.] [PRAB. 91,4.] [BHAṬṬ. 12,4.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?12,4) act.: *yatato hyapi — puruṣasya — indriyāṇi pramāthīni haranti prasabhaṃ manaḥ* [BHAG. 2,60.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?2,60) [7,3.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?7,3) [9,14.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?9,14) [MBH. 5,3313.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.3313) [HARIV. 15637.](https://sanskrit-lexicon-scans.github.io/hariv?15637) [BHĀG. P. 1,6,21.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,6,21) [4,8,32.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,8,32) [23,10.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,23,10) [5,18,27.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,18,27) [6,2,35.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,2,35) [10,30,20.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,30,20) [CAURAP. 30.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app1?30)
   <sub>attested</sub>
 
-**5h-alpha)** — h) partic. α) *yatta* bedacht auf: *pṛtanāsu* so v. a. kampfbereit [MBH. 3,4010.] *raṇe* [5,7139.] [6,1738.] *saṃyuge* [R. 7,29,13.] *cittavijaye* [BHĀG. P. 7,15,30.] *prajāvivṛddhaye* [6,5,5.] *yatto (yatno* die neuere Ausg.) *'bhūdrakṣāṃ prati* [HARIV. 9118.] mit infin. [MBH. 3,14944.] zu Allem vorbereitet, der seine Maassregeln getroffen hat, auf seiner Hut seiend, sich vorsehend: *śapto 'si mama putreṇa yatto bhava mahīpate* [MBH. 1,1976.] [3,790.] [4,1282.] [1291.] [R. 1,32,6.] [7.] [2,55,18.] [93,24] ([102,26] [GORR.]). [97,13] ([106,9] [GORR.]). [BHĀG. P. 4,10,22.] [8,7,2.] [10,1.] [9,2,3.] mit pass. Bed. besorgt —, gelenkt von: *ratha* [MBH. 2,2011.] [5,1703.] *harayaḥ* [3,12111.] [WESTERGAARD] stellt dieses *yatta* zu *yam*; an der ersten und dritten Stelle würde *yata* nicht zum Metrum passen; vgl. unter — *abhisam*.
+**5h-alpha)** — h) partic. α) *yatta* bedacht auf: *pṛtanāsu* so v. a. kampfbereit [MBH. 3,4010.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.4010) *raṇe* [5,7139.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7139) [6,1738.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.1738) *saṃyuge* [R. 7,29,13.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,29,13) *cittavijaye* [BHĀG. P. 7,15,30.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,15,30) *prajāvivṛddhaye* [6,5,5.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,5,5) *yatto (yatno* die neuere Ausg.) *'bhūdrakṣāṃ prati* [HARIV. 9118.](https://sanskrit-lexicon-scans.github.io/hariv?9118) mit infin. [MBH. 3,14944.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14944) zu Allem vorbereitet, der seine Maassregeln getroffen hat, auf seiner Hut seiend, sich vorsehend: *śapto 'si mama putreṇa yatto bhava mahīpate* [MBH. 1,1976.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1976) [3,790.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.790) [4,1282.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1282) [1291.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1291) [R. 1,32,6.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,32,6) [7.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,32,7) [2,55,18.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,55,18) [93,24](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,93,24) ([102,26](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,102,26) [GORR.]). [97,13](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,97,13) ([106,9](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,106,9) [GORR.]). [BHĀG. P. 4,10,22.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,10,22) [8,7,2.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,7,2) [10,1.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,10,1) [9,2,3.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,2,3) mit pass. Bed. besorgt —, gelenkt von: *ratha* [MBH. 2,2011.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2011) [5,1703.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1703) *harayaḥ* [3,12111.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12111) [WESTERGAARD] stellt dieses *yatta* zu *yam*; an der ersten und dritten Stelle würde *yata* nicht zum Metrum passen; vgl. unter — *abhisam*.
 
-- **RU:** — з) partic. α) *yatta* озабоченный чем-либо, помышляющий о: *pṛtanāsu* так v. a. готовый к бою [MBH. 3,4010.] *raṇe* [5,7139.] [6,1738.] *saṃyuge* [R. 7,29,13.] *cittavijaye* [BHĀG. P. 7,15,30.] *prajāvivṛddhaye* [6,5,5.] *yatto (yatno* более новое Ausg.) *'bhūdrakṣāṃ prati* [HARIV. 9118.] с infin. [MBH. 3,14944.] готовый ко всему, принявший меры предосторожности, находящийся начеку, остерегающийся: *śapto 'si mama putreṇa yatto bhava mahīpate* [MBH. 1,1976.] [3,790.] [4,1282.] [1291.] [R. 1,32,6.] [7.] [2,55,18.] [93,24] ([102,26] [GORR.]). [97,13] ([106,9] [GORR.]). [BHĀG. P. 4,10,22.] [8,7,2.] [10,1.] [9,2,3.] с pass. Bed. руководимый —, направляемый: *ratha* [MBH. 2,2011.] [5,1703.] *harayaḥ* [3,12111.] [WESTERGAARD] относит это *yatta* к *yam*; на первом и третьем месте *yata* не подошло бы по метру; vgl. под — *abhisam*.
-- **EN:** h) partic. α) *yatta* intent upon: *pṛtanāsu* thus v. a. ready for battle [MBH. 3,4010.] *raṇe* [5,7139.] [6,1738.] *saṃyuge* [R. 7,29,13.] *cittavijaye* [BHĀG. P. 7,15,30.] *prajāvivṛddhaye* [6,5,5.] *yatto (yatno* the later Ausg.) *'bhūdrakṣāṃ prati* [HARIV. 9118.] with infin. [MBH. 3,14944.] prepared for everything, one who has taken his measures, being on his guard, taking precautions: *śapto 'si mama putreṇa yatto bhava mahīpate* [MBH. 1,1976.] [3,790.] [4,1282.] [1291.] [R. 1,32,6.] [7.] [2,55,18.] [93,24] ([102,26] [GORR.]). [97,13] ([106,9] [GORR.]). [BHĀG. P. 4,10,22.] [8,7,2.] [10,1.] [9,2,3.] with pass. Bed. concerned with, directed by: *ratha* [MBH. 2,2011.] [5,1703.] *harayaḥ* [3,12111.] [WESTERGAARD] assigns this *yatta* to *yam*; in the first and third passage *yata* would not fit the metre; vgl. under — *abhisam*.
+- **RU:** — з) partic. α) *yatta* озабоченный чем-либо, помышляющий о: *pṛtanāsu* так v. a. готовый к бою [MBH. 3,4010.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.4010) *raṇe* [5,7139.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7139) [6,1738.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.1738) *saṃyuge* [R. 7,29,13.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,29,13) *cittavijaye* [BHĀG. P. 7,15,30.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,15,30) *prajāvivṛddhaye* [6,5,5.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,5,5) *yatto (yatno* более новое Ausg.) *'bhūdrakṣāṃ prati* [HARIV. 9118.](https://sanskrit-lexicon-scans.github.io/hariv?9118) с infin. [MBH. 3,14944.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14944) готовый ко всему, принявший меры предосторожности, находящийся начеку, остерегающийся: *śapto 'si mama putreṇa yatto bhava mahīpate* [MBH. 1,1976.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1976) [3,790.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.790) [4,1282.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1282) [1291.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1291) [R. 1,32,6.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,32,6) [7.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,32,7) [2,55,18.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,55,18) [93,24](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,93,24) ([102,26](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,102,26) [GORR.]). [97,13](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,97,13) ([106,9](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,106,9) [GORR.]). [BHĀG. P. 4,10,22.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,10,22) [8,7,2.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,7,2) [10,1.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,10,1) [9,2,3.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,2,3) с pass. Bed. руководимый —, направляемый: *ratha* [MBH. 2,2011.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2011) [5,1703.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1703) *harayaḥ* [3,12111.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12111) [WESTERGAARD] относит это *yatta* к *yam*; на первом и третьем месте *yata* не подошло бы по метру; vgl. под — *abhisam*.
+- **EN:** h) partic. α) *yatta* intent upon: *pṛtanāsu* thus v. a. ready for battle [MBH. 3,4010.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.4010) *raṇe* [5,7139.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7139) [6,1738.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.1738) *saṃyuge* [R. 7,29,13.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,29,13) *cittavijaye* [BHĀG. P. 7,15,30.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,15,30) *prajāvivṛddhaye* [6,5,5.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,5,5) *yatto (yatno* the later Ausg.) *'bhūdrakṣāṃ prati* [HARIV. 9118.](https://sanskrit-lexicon-scans.github.io/hariv?9118) with infin. [MBH. 3,14944.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14944) prepared for everything, one who has taken his measures, being on his guard, taking precautions: *śapto 'si mama putreṇa yatto bhava mahīpate* [MBH. 1,1976.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1976) [3,790.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.790) [4,1282.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1282) [1291.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1291) [R. 1,32,6.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,32,6) [7.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,32,7) [2,55,18.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,55,18) [93,24](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,93,24) ([102,26](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,102,26) [GORR.]). [97,13](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,97,13) ([106,9](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,106,9) [GORR.]). [BHĀG. P. 4,10,22.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,10,22) [8,7,2.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,7,2) [10,1.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,10,1) [9,2,3.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,2,3) with pass. Bed. concerned with, directed by: *ratha* [MBH. 2,2011.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2011) [5,1703.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1703) *harayaḥ* [3,12111.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12111) [WESTERGAARD] assigns this *yatta* to *yam*; in the first and third passage *yata* would not fit the metre; vgl. under — *abhisam*.
   <sub>attested</sub>
 
 ## yat
@@ -90,22 +90,22 @@ _PWG article — 28 sub-card(s), 189 sense(s) · RU 159/189 · EN 92/189_
 `yat~~h0_00_pwg01`
 
 
-**5h-beta)** — β) *yatita* mit einem infin. derjenige, den zu — man sich bemüht hat (vgl. *śakita): asakṛdyatito hyeṣa hantuṃ vyāghra vane tvayā* [MBH. 1,5570.] *apanetuṃ ca yatito na caiva śakito mayā* [6015.] impers.: *yatitaṃ vai mayā pūrvaṃ vettha brāhmaṇi tattathā . kṣemaṃ yatastato gantum* ich war darauf bedacht [6128.]
+**5h-beta)** — β) *yatita* mit einem infin. derjenige, den zu — man sich bemüht hat (vgl. *śakita): asakṛdyatito hyeṣa hantuṃ vyāghra vane tvayā* [MBH. 1,5570.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5570) *apanetuṃ ca yatito na caiva śakito mayā* [6015.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6015) impers.: *yatitaṃ vai mayā pūrvaṃ vettha brāhmaṇi tattathā . kṣemaṃ yatastato gantum* ich war darauf bedacht [6128.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6128)
 
-- **RU:** — β) *yatita* с infin. тот, о ком заботились —, прилагали усилия ради (vgl. *śakita): asakṛdyatito hyeṣa hantuṃ vyāghra vane tvayā* [MBH. 1,5570.] *apanetuṃ ca yatito na caiva śakito mayā* [6015.] impers.: *yatitaṃ vai mayā pūrvaṃ vettha brāhmaṇi tattathā . kṣemaṃ yatastato gantum* я был озабочен этим [6128.]
+- **RU:** — β) *yatita* с infin. тот, о ком заботились —, прилагали усилия ради (vgl. *śakita): asakṛdyatito hyeṣa hantuṃ vyāghra vane tvayā* [MBH. 1,5570.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5570) *apanetuṃ ca yatito na caiva śakito mayā* [6015.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6015) impers.: *yatitaṃ vai mayā pūrvaṃ vettha brāhmaṇi tattathā . kṣemaṃ yatastato gantum* я был озабочен этим [6128.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6128)
 - **EN:** β) *yatita* with a infin. the one whom one has endeavoured to — (vgl. *śakita): asakṛdyatito hyeṣa hantuṃ vyāghra vane tvayā*
-[MBH. 1,5570.] *apanetuṃ ca yatito na caiva śakito mayā*
-[6015.] impers.: *yatitaṃ vai mayā pūrvaṃ vettha brāhmaṇi tattathā . kṣemaṃ yatastato gantum* I was intent upon it
-[6128.]
+[MBH. 1,5570.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5570) *apanetuṃ ca yatito na caiva śakito mayā*
+[6015.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6015) impers.: *yatitaṃ vai mayā pūrvaṃ vettha brāhmaṇi tattathā . kṣemaṃ yatastato gantum* I was intent upon it
+[6128.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6128)
   <sub>attested</sub>
 
-**6)** — 6) med. feindlich zusammengerathen: *ta ugrāso vṛṣaṇa ugrabāhavo nakiṣṭanūṣu yetire* greifen sich nicht unter einander selbst an [ṚV. 8,20,12.] *saṃ jānate na yatante mithaste* [7,76,5.] im Kampfe liegen [AIT. BR. 1,14.] [8,10.] *devāsurā yattā āsan* [KĀṬH. 37,11.]
+**6)** — 6) med. feindlich zusammengerathen: *ta ugrāso vṛṣaṇa ugrabāhavo nakiṣṭanūṣu yetire* greifen sich nicht unter einander selbst an [ṚV. 8,20,12.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.020.html#rv08.020.12) *saṃ jānate na yatante mithaste* [7,76,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.076.html#rv07.076.05) im Kampfe liegen [AIT. BR. 1,14.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?1,14) [8,10.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?8,10) *devāsurā yattā āsan* [KĀṬH. 37,11.]
 
-- **RU:** — 6) med. вступить во враждебное столкновение: *ta ugrāso vṛṣaṇa ugrabāhavo nakiṣṭanūṣu yetire* не нападают друг на друга [ṚV. 8,20,12.] *saṃ jānate na yatante mithaste* [7,76,5.] находиться в бою [AIT. BR. 1,14.] [8,10.] *devāsurā yattā āsan* [KĀṬH. 37,11.]
+- **RU:** — 6) med. вступить во враждебное столкновение: *ta ugrāso vṛṣaṇa ugrabāhavo nakiṣṭanūṣu yetire* не нападают друг на друга [ṚV. 8,20,12.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.020.html#rv08.020.12) *saṃ jānate na yatante mithaste* [7,76,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.076.html#rv07.076.05) находиться в бою [AIT. BR. 1,14.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?1,14) [8,10.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?8,10) *devāsurā yattā āsan* [KĀṬH. 37,11.]
 - **EN:** 6) med. to come into hostile encounter: *ta ugrāso vṛṣaṇa ugrabāhavo nakiṣṭanūṣu yetire* they do not attack one another
-[ṚV. 8,20,12.] *saṃ jānate na yatante mithaste*
-[7,76,5.] to be engaged in battle
-[AIT. BR. 1,14.] [8,10.] *devāsurā yattā āsan*
+[ṚV. 8,20,12.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.020.html#rv08.020.12) *saṃ jānate na yatante mithaste*
+[7,76,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.076.html#rv07.076.05) to be engaged in battle
+[AIT. BR. 1,14.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?1,14) [8,10.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?8,10) *devāsurā yattā āsan*
 [KĀṬH. 37,11.]
   <sub>attested</sub>
 
@@ -114,20 +114,20 @@ _PWG article — 28 sub-card(s), 189 sense(s) · RU 159/189 · EN 92/189_
 `yat~~h0_01_sec_1`
 
 
-**head)** — caus. *yātayati* [DHĀTUP. 33,62] (*nikāropaskārayoḥ*, nach Andern *nirākāra* und *kheda* st. *nikāra*).
+— caus. *yātayati* [DHĀTUP. 33,62](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=33) (*nikāropaskārayoḥ*, nach Andern *nirākāra* und *kheda* st. *nikāra*).
 
-- **RU:** — caus. *yātayati* [DHĀTUP. 33,62] (*nikāropaskārayoḥ*, по другим *nirākāra* и *kheda* st. *nikāra*).
+- **RU:** — caus. *yātayati* [DHĀTUP. 33,62](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=33) (*nikāropaskārayoḥ*, по другим *nirākāra* и *kheda* st. *nikāra*).
 - **EN:** caus. *yātayati*
-[DHĀTUP. 33,62] (*nikāropaskārayoḥ*, according to others *nirākāra* and *kheda* st. *nikāra*).
+[DHĀTUP. 33,62](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=33) (*nikāropaskārayoḥ*, according to others *nirākāra* and *kheda* st. *nikāra*).
   <sub>attested</sub>
 
-**1)** 1) verbünden, vereinigen: *dvā janā yātayannantarīyate* [ṚV. 9,86,42.] *mitro janānyātayati bruvāṇaḥ* [3,59,1.]; vgl. *yātayajjana* . med. sich verbünden: *ayātayanta kṣitayo navagvāḥ* [ṚV. 1,33,6.]
+**1)** 1) verbünden, vereinigen: *dvā janā yātayannantarīyate* [ṚV. 9,86,42.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.086.html#rv09.086.42) *mitro janānyātayati bruvāṇaḥ* [3,59,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.059.html#rv03.059.01); vgl. *yātayajjana* . med. sich verbünden: *ayātayanta kṣitayo navagvāḥ* [ṚV. 1,33,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.033.html#rv01.033.06)
 
-- **RU:** 1) союзить, объединять: *dvā janā yātayannantarīyate* [ṚV. 9,86,42.] *mitro janānyātayati bruvāṇaḥ* [3,59,1.]; vgl. *yātayajjana*. med. вступать в союз: *ayātayanta kṣitayo navagvāḥ* [ṚV. 1,33,6.]
+- **RU:** 1) союзить, объединять: *dvā janā yātayannantarīyate* [ṚV. 9,86,42.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.086.html#rv09.086.42) *mitro janānyātayati bruvāṇaḥ* [3,59,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.059.html#rv03.059.01); vgl. *yātayajjana*. med. вступать в союз: *ayātayanta kṣitayo navagvāḥ* [ṚV. 1,33,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.033.html#rv01.033.06)
 - **EN:** 1) to ally, to unite: *dvā janā yātayannantarīyate*
-[ṚV. 9,86,42.] *mitro janānyātayati bruvāṇaḥ*
-[3,59,1.]; vgl. *yātayajjana*. med. to ally oneself: *ayātayanta kṣitayo navagvāḥ*
-[ṚV. 1,33,6.]
+[ṚV. 9,86,42.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.086.html#rv09.086.42) *mitro janānyātayati bruvāṇaḥ*
+[3,59,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.059.html#rv03.059.01); vgl. *yātayajjana*. med. to ally oneself: *ayātayanta kṣitayo navagvāḥ*
+[ṚV. 1,33,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.033.html#rv01.033.06)
   <sub>attested</sub>
 
 **2)** — 2) anfügen, anbringen: *āyātane pṛṣṭhāni yātayati* [PAÑCAV. BR. 13,10,16]; vgl. *vi* caus.
@@ -137,54 +137,54 @@ _PWG article — 28 sub-card(s), 189 sense(s) · RU 159/189 · EN 92/189_
 [PAÑCAV. BR. 13,10,16]; vgl. *vi* caus.
   <sub>attested</sub>
 
-**3)** — 3) Jmd (gen.) Etwas (acc.) an's Herz legen: *madīyeṣveva lekheṣu tatrabhavatastvāmuddiśya sabhājanāni yātayiṣyāmaḥ* [MĀLAV. 74,10.]
+**3)** — 3) Jmd (gen.) Etwas (acc.) an's Herz legen: *madīyeṣveva lekheṣu tatrabhavatastvāmuddiśya sabhājanāni yātayiṣyāmaḥ* [MĀLAV. 74,10.](https://sanskrit-lexicon-scans.github.io/malavikagni/app2?74,10)
 
-- **RU:** — 3) поручать кому-либо (gen.) что-либо (acc.) принять близко к сердцу: *madīyeṣveva lekheṣu tatrabhavatastvāmuddiśya sabhājanāni yātayiṣyāmaḥ* [MĀLAV. 74,10.]
+- **RU:** — 3) поручать кому-либо (gen.) что-либо (acc.) принять близко к сердцу: *madīyeṣveva lekheṣu tatrabhavatastvāmuddiśya sabhājanāni yātayiṣyāmaḥ* [MĀLAV. 74,10.](https://sanskrit-lexicon-scans.github.io/malavikagni/app2?74,10)
 - **EN:** 3) to impress something (acc.) upon someone's (gen.) heart: *madīyeṣveva lekheṣu tatrabhavatastvāmuddiśya sabhājanāni yātayiṣyāmaḥ*
-[MĀLAV. 74,10.]
+[MĀLAV. 74,10.](https://sanskrit-lexicon-scans.github.io/malavikagni/app2?74,10)
   <sub>attested</sub>
 
-**4)** — 4) vergelten (lohnen oder strafen): *evā hi tvāmṛtuthā yātayantaṃ maghā viprebhyo dadataṃ śṛṇomi* [ṚV. 5,32,12.] *janāya yātayanniṣaḥ . vṛṣṭiṃ divaḥ pari * * srava* [9,39,2.] *kadā ṛtacidyātayāse* [5,3,9.] *uṣa ṛṇeva yātaya* [10,127,7.]; vgl. *ṛṇayāt, yo 'pagurātai śatena yātayāt (= kleśayet* Comm.) [TS. 2,6,10,2.] *kilbiṣaṃ nu mā yātayanniti* damit man es nicht als Fehler rüge [AIT. BR. 1,13.] *yo na yātayate vairam* vergelten, erwiedern [MBH. 3,1383.] *ayātayitvā vairāṇi* [1382.] *vairaṃ te yātitaṃ* (*pātitaṃ* [ed. Bomb.]) *mayā* [13,567.] *yatrābalā balinaṃ yātayanti* [4858.] med. den Lohn für Etwas empfangen: *tatra tvāhaṃ hastinaṃ yātayiṣye* so v. a. dort werde ich dir den Elephanten abtreten [4856.] [4858.] [4860] u. s. w. *tatrāhaṃ te bhavane bhūritejaso rājannimaṃ hastinaṃ yātayiṣye* [4880.]
+**4)** — 4) vergelten (lohnen oder strafen): *evā hi tvāmṛtuthā yātayantaṃ maghā viprebhyo dadataṃ śṛṇomi* [ṚV. 5,32,12.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.032.html#rv05.032.12) *janāya yātayanniṣaḥ . vṛṣṭiṃ divaḥ pari * * srava* [9,39,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.039.html#rv09.039.02) *kadā ṛtacidyātayāse* [5,3,9.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.003.html#rv05.003.09) *uṣa ṛṇeva yātaya* [10,127,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.127.html#rv10.127.07); vgl. *ṛṇayāt, yo 'pagurātai śatena yātayāt (= kleśayet* Comm.) [TS. 2,6,10,2.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?2,6,10,2) *kilbiṣaṃ nu mā yātayanniti* damit man es nicht als Fehler rüge [AIT. BR. 1,13.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?1,13) *yo na yātayate vairam* vergelten, erwiedern [MBH. 3,1383.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1383) *ayātayitvā vairāṇi* [1382.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1382) *vairaṃ te yātitaṃ* (*pātitaṃ* [ed. Bomb.]) *mayā* [13,567.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.567) *yatrābalā balinaṃ yātayanti* [4858.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4858) med. den Lohn für Etwas empfangen: *tatra tvāhaṃ hastinaṃ yātayiṣye* so v. a. dort werde ich dir den Elephanten abtreten [4856.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4856) [4858.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4858) [4860](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4860) u. s. w. *tatrāhaṃ te bhavane bhūritejaso rājannimaṃ hastinaṃ yātayiṣye* [4880.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4880)
 
-- **RU:** — 4) воздавать (вознаграждать или наказывать): *evā hi tvāmṛtuthā yātayantaṃ maghā viprebhyo dadataṃ śṛṇomi* [ṚV. 5,32,12.] *janāya yātayanniṣaḥ . vṛṣṭiṃ divaḥ pari * * srava* [9,39,2.] *kadā ṛtacidyātayāse* [5,3,9.] *uṣa ṛṇeva yātaya* [10,127,7.]; vgl. *ṛṇayāt, yo 'pagurātai śatena yātayāt (= kleśayet* Comm.) [TS. 2,6,10,2.] *kilbiṣaṃ nu mā yātayanniti* дабы это не поставили в вину [AIT. BR. 1,13.] *yo na yātayate vairam* воздавать, отвечать взаимностью [MBH. 3,1383.] *ayātayitvā vairāṇi* [1382.] *vairaṃ te yātitaṃ* (*pātitaṃ* [ed. Bomb.]) *mayā* [13,567.] *yatrābalā balinaṃ yātayanti* [4858.] med. получать вознаграждение за что-либо: *tatra tvāhaṃ hastinaṃ yātayiṣye* так v. a. там я уступлю тебе слона [4856.] [4858.] [4860] u. s. w. *tatrāhaṃ te bhavane bhūritejaso rājannimaṃ hastinaṃ yātayiṣye* [4880.]
+- **RU:** — 4) воздавать (вознаграждать или наказывать): *evā hi tvāmṛtuthā yātayantaṃ maghā viprebhyo dadataṃ śṛṇomi* [ṚV. 5,32,12.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.032.html#rv05.032.12) *janāya yātayanniṣaḥ . vṛṣṭiṃ divaḥ pari * * srava* [9,39,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.039.html#rv09.039.02) *kadā ṛtacidyātayāse* [5,3,9.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.003.html#rv05.003.09) *uṣa ṛṇeva yātaya* [10,127,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.127.html#rv10.127.07); vgl. *ṛṇayāt, yo 'pagurātai śatena yātayāt (= kleśayet* Comm.) [TS. 2,6,10,2.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?2,6,10,2) *kilbiṣaṃ nu mā yātayanniti* дабы это не поставили в вину [AIT. BR. 1,13.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?1,13) *yo na yātayate vairam* воздавать, отвечать взаимностью [MBH. 3,1383.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1383) *ayātayitvā vairāṇi* [1382.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1382) *vairaṃ te yātitaṃ* (*pātitaṃ* [ed. Bomb.]) *mayā* [13,567.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.567) *yatrābalā balinaṃ yātayanti* [4858.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4858) med. получать вознаграждение за что-либо: *tatra tvāhaṃ hastinaṃ yātayiṣye* так v. a. там я уступлю тебе слона [4856.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4856) [4858.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4858) [4860](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4860) u. s. w. *tatrāhaṃ te bhavane bhūritejaso rājannimaṃ hastinaṃ yātayiṣye* [4880.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4880)
 - **EN:** 4) to requite (reward or punish): *evā hi tvāmṛtuthā yātayantaṃ maghā viprebhyo dadataṃ śṛṇomi*
-[ṚV. 5,32,12.] *janāya yātayanniṣaḥ . vṛṣṭiṃ divaḥ pari *
+[ṚV. 5,32,12.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.032.html#rv05.032.12) *janāya yātayanniṣaḥ . vṛṣṭiṃ divaḥ pari *
 
 * srava*
-[9,39,2.] *kadā ṛtacidyātayāse*
-[5,3,9.] *uṣa ṛṇeva yātaya*
-[10,127,7.]; vgl. *ṛṇayāt, yo 'pagurātai śatena yātayāt (= kleśayet* Comm.)
-[TS. 2,6,10,2.] *kilbiṣaṃ nu mā yātayanniti* so that it not be blamed as a fault
-[AIT. BR. 1,13.] *yo na yātayate vairam* to requite, to return
-[MBH. 3,1383.] *ayātayitvā vairāṇi*
-[1382.] *vairaṃ te yātitaṃ* (*pātitaṃ* [ed. Bomb.]) *mayā*
-[13,567.] *yatrābalā balinaṃ yātayanti*
-[4858.] med. to receive recompense for something: *tatra tvāhaṃ hastinaṃ yātayiṣye* thus v. a. there I shall cede the elephant to you
-[4856.] [4858.] [4860] u. s. w. *tatrāhaṃ te bhavane bhūritejaso rājannimaṃ hastinaṃ yātayiṣye*
-[4880.]
+[9,39,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.039.html#rv09.039.02) *kadā ṛtacidyātayāse*
+[5,3,9.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.003.html#rv05.003.09) *uṣa ṛṇeva yātaya*
+[10,127,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.127.html#rv10.127.07); vgl. *ṛṇayāt, yo 'pagurātai śatena yātayāt (= kleśayet* Comm.)
+[TS. 2,6,10,2.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?2,6,10,2) *kilbiṣaṃ nu mā yātayanniti* so that it not be blamed as a fault
+[AIT. BR. 1,13.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?1,13) *yo na yātayate vairam* to requite, to return
+[MBH. 3,1383.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1383) *ayātayitvā vairāṇi*
+[1382.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1382) *vairaṃ te yātitaṃ* (*pātitaṃ* [ed. Bomb.]) *mayā*
+[13,567.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.567) *yatrābalā balinaṃ yātayanti*
+[4858.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4858) med. to receive recompense for something: *tatra tvāhaṃ hastinaṃ yātayiṣye* thus v. a. there I shall cede the elephant to you
+[4856.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4856) [4858.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4858) [4860](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4860) u. s. w. *tatrāhaṃ te bhavane bhūritejaso rājannimaṃ hastinaṃ yātayiṣye*
+[4880.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4880)
   <sub>attested</sub>
 
-**5)** — 5) sich bemühen lassen (nach [SĀY.]) [AIT. BR. 1,14.] —
+**5)** — 5) sich bemühen lassen (nach [SĀY.]) [AIT. BR. 1,14.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?1,14) —
 
-- **RU:** — 5) заставлять прилагать усилия (согласно [SĀY.]) [AIT. BR. 1,14.] —
+- **RU:** — 5) заставлять прилагать усилия (согласно [SĀY.]) [AIT. BR. 1,14.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?1,14) —
 - **EN:** 5) to cause to exert oneself (according to
-[SĀY.]) [AIT. BR. 1,14.] —
+[SĀY.]) [AIT. BR. 1,14.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?1,14) —
   <sub>attested</sub>
 
-**6)** — 6) kämpfen lassen [TBR. 1,5,2,4], wo mit dem Comm. *yātayet* (= *prayatnaṃ kārayet)* st. *pātayet* zu lesen ist.
+**6)** — 6) kämpfen lassen [TBR. 1,5,2,4](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?1,5,2,4), wo mit dem Comm. *yātayet* (= *prayatnaṃ kārayet)* st. *pātayet* zu lesen ist.
 
-- **RU:** — 6) заставлять сражаться [TBR. 1,5,2,4], где с Comm. *yātayet* (= *prayatnaṃ kārayet)* st. *pātayet* следует читать.
+- **RU:** — 6) заставлять сражаться [TBR. 1,5,2,4](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?1,5,2,4), где с Comm. *yātayet* (= *prayatnaṃ kārayet)* st. *pātayet* следует читать.
 - **EN:** 6) to cause to fight
-[TBR. 1,5,2,4], where with the Comm. *yātayet* (= *prayatnaṃ kārayet)* st. *pātayet* is to be read.
+[TBR. 1,5,2,4](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?1,5,2,4), where with the Comm. *yātayet* (= *prayatnaṃ kārayet)* st. *pātayet* is to be read.
   <sub>attested</sub>
 
-**7)** — 7) Jmd peinigen, quälen (vgl. *yātanā*), act. [BHĀG. P. 5,26,31. fg.] [6,1,22.] med.: *ātmānaṃ yātayate* [5,26,18.] *yātyamāna* pass. [8.]
+**7)** — 7) Jmd peinigen, quälen (vgl. *yātanā*), act. [BHĀG. P. 5,26,31. fg.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,26,31) [6,1,22.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,1,22) med.: *ātmānaṃ yātayate* [5,26,18.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,26,18) *yātyamāna* pass. [8.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,26,8)
 
-- **RU:** — 7) мучить, терзать кого-либо (vgl. *yātanā*), act. [BHĀG. P. 5,26,31. fg.] [6,1,22.] med.: *ātmānaṃ yātayate* [5,26,18.] *yātyamāna* pass. [8.]
+- **RU:** — 7) мучить, терзать кого-либо (vgl. *yātanā*), act. [BHĀG. P. 5,26,31. fg.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,26,31) [6,1,22.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,1,22) med.: *ātmānaṃ yātayate* [5,26,18.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,26,18) *yātyamāna* pass. [8.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,26,8)
 - **EN:** 7) to torment, to harass someone (vgl. *yātanā*), act.
-[BHĀG. P. 5,26,31. fg.] [6,1,22.] med.: *ātmānaṃ yātayate*
-[5,26,18.] *yātyamāna* pass.
-[8.]
+[BHĀG. P. 5,26,31. fg.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,26,31) [6,1,22.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,1,22) med.: *ātmānaṃ yātayate*
+[5,26,18.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,26,18) *yātyamāna* pass.
+[8.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,26,8)
   <sub>attested</sub>
 
 ## yat
@@ -192,28 +192,28 @@ _PWG article — 28 sub-card(s), 189 sense(s) · RU 159/189 · EN 92/189_
 `yat~~h0_02_a_di`
 
 
-**1)** — *adhi* aufreihen: *vakṣassu rukmā adhi yetire śubhe* [ṚV. 1,64,4.] — caus. med. sich vereinigen mit: *adha bhramasta urviyā vi bhāti yātayamāno adhi sānu pṛśneḥ* erreichend [ṚV. 6,6,4.]
+**1)** — *adhi* aufreihen: *vakṣassu rukmā adhi yetire śubhe* [ṚV. 1,64,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.064.html#rv01.064.04) — caus. med. sich vereinigen mit: *adha bhramasta urviyā vi bhāti yātayamāno adhi sānu pṛśneḥ* erreichend [ṚV. 6,6,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.006.html#rv06.006.04)
 
-- **RU:** — *adhi* нанизывать в ряд: *vakṣassu rukmā adhi yetire śubhe* [ṚV. 1,64,4.] — caus. med. соединяться с: *adha bhramasta urviyā vi bhāti yātayamāno adhi sānu pṛśneḥ* достигающий [ṚV. 6,6,4.]
+- **RU:** — *adhi* нанизывать в ряд: *vakṣassu rukmā adhi yetire śubhe* [ṚV. 1,64,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.064.html#rv01.064.04) — caus. med. соединяться с: *adha bhramasta urviyā vi bhāti yātayamāno adhi sānu pṛśneḥ* достигающий [ṚV. 6,6,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.006.html#rv06.006.04)
 - **EN:** *adhi* to string in a row: *vakṣassu rukmā adhi yetire śubhe*
-[ṚV. 1,64,4.]
+[ṚV. 1,64,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.064.html#rv01.064.04)
   <sub>attested</sub>
 
 **2)** — caus. med. sich vereinigen mit: *adha bhramasta urviyā vi bhāti yātayamāno adhi sānu pṛśneḥ* erreichend
-[ṚV. 6,6,4.]
+[ṚV. 6,6,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.006.html#rv06.006.04)
 - **EN:** — caus. med. to unite with: *adha bhramasta urviyā vi bhāti yātayamāno adhi sānu pṛśneḥ* reaching
-[ṚV. 6,6,4.]
+[ṚV. 6,6,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.006.html#rv06.006.04)
 
 ## yat
 
 `yat~~h0_03_anu`
 
 
-**1)** — *anu* med. zustreben, reichen zu (acc.): *anu janānyatate pañca dhīraḥ* [ṚV. 9,92,3.]
+**1)** — *anu* med. zustreben, reichen zu (acc.): *anu janānyatate pañca dhīraḥ* [ṚV. 9,92,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.092.html#rv09.092.03)
 
-- **RU:** — *anu* med. устремляться, достигать до (acc.): *anu janānyatate pañca dhīraḥ* [ṚV. 9,92,3.]
+- **RU:** — *anu* med. устремляться, достигать до (acc.): *anu janānyatate pañca dhīraḥ* [ṚV. 9,92,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.092.html#rv09.092.03)
 - **EN:** *anu* med. to strive towards, to reach to (acc.): *anu janānyatate pañca dhīraḥ*
-[ṚV. 9,92,3.]
+[ṚV. 9,92,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.092.html#rv09.092.03)
   <sub>attested</sub>
 
 ## āyat
@@ -221,69 +221,69 @@ _PWG article — 28 sub-card(s), 189 sense(s) · RU 159/189 · EN 92/189_
 `yat~~h0_04__a`
 
 
-**main)** — *ā* anlangen, erreichen, Fuss fassen, wohnen in (loc.): *kasminnā yatatho jane* [ṚV. 5,47,2.] *ā te bhadrāyāṃ sumatau yatema* [6,1,10.] *ā yadvāṃ yatemahi svarājye* [5,66,6.] *āsmai yatante sakhyāya pūrvīḥ* [10,29,8.] [91,7.] *sahasraṃ prāṇā mayyā yatantām* [AV. 17,1,30.] *ā deveṣu yatata ā suvīrya ā śaṃsa uta nṛṇām* bleiben [ṚV. 3,16,4.] partic.: *svāyāṃ diśyāyattam* [ŚAT. BR. 9,3,4,13.] *antamāyattā* [14,4,3,10.] Das partic. *āyatta* hat noch folgende Bedd.
+**main)** — *ā* anlangen, erreichen, Fuss fassen, wohnen in (loc.): *kasminnā yatatho jane* [ṚV. 5,47,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.047.html#rv05.047.02) *ā te bhadrāyāṃ sumatau yatema* [6,1,10.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.001.html#rv06.001.10) *ā yadvāṃ yatemahi svarājye* [5,66,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.066.html#rv05.066.06) *āsmai yatante sakhyāya pūrvīḥ* [10,29,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.029.html#rv10.029.08) [91,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.091.html#rv10.091.07) *sahasraṃ prāṇā mayyā yatantām* [AV. 17,1,30.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av17.001.html#av17.001.30) *ā deveṣu yatata ā suvīrya ā śaṃsa uta nṛṇām* bleiben [ṚV. 3,16,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.016.html#rv03.016.04) partic.: *svāyāṃ diśyāyattam* [ŚAT. BR. 9,3,4,13.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?9,3,4,13) *antamāyattā* [14,4,3,10.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,4,3,10) Das partic. *āyatta* hat noch folgende Bedd.
 
-- **RU:** — *ā* прибывать, достигать, укрепляться, обитать в (loc.): *kasminnā yatatho jane* [ṚV. 5,47,2.] *ā te bhadrāyāṃ sumatau yatema* [6,1,10.] *ā yadvāṃ yatemahi svarājye* [5,66,6.] *āsmai yatante sakhyāya pūrvīḥ* [10,29,8.] [91,7.] *sahasraṃ prāṇā mayyā yatantām* [AV. 17,1,30.] *ā deveṣu yatata ā suvīrya ā śaṃsa uta nṛṇām* оставаться [ṚV. 3,16,4.] partic.: *svāyāṃ diśyāyattam* [ŚAT. BR. 9,3,4,13.] *antamāyattā* [14,4,3,10.] partic. *āyatta* имеет ещё следующие Bedd.
+- **RU:** — *ā* прибывать, достигать, укрепляться, обитать в (loc.): *kasminnā yatatho jane* [ṚV. 5,47,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.047.html#rv05.047.02) *ā te bhadrāyāṃ sumatau yatema* [6,1,10.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.001.html#rv06.001.10) *ā yadvāṃ yatemahi svarājye* [5,66,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.066.html#rv05.066.06) *āsmai yatante sakhyāya pūrvīḥ* [10,29,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.029.html#rv10.029.08) [91,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.091.html#rv10.091.07) *sahasraṃ prāṇā mayyā yatantām* [AV. 17,1,30.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av17.001.html#av17.001.30) *ā deveṣu yatata ā suvīrya ā śaṃsa uta nṛṇām* оставаться [ṚV. 3,16,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.016.html#rv03.016.04) partic.: *svāyāṃ diśyāyattam* [ŚAT. BR. 9,3,4,13.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?9,3,4,13) *antamāyattā* [14,4,3,10.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,4,3,10) partic. *āyatta* имеет ещё следующие Bedd.
 - **EN:** *ā* to arrive, to reach, to gain a foothold, to dwell in (loc.): *kasminnā yatatho jane*
-[ṚV. 5,47,2.] *ā te bhadrāyāṃ sumatau yatema*
-[6,1,10.] *ā yadvāṃ yatemahi svarājye*
-[5,66,6.] *āsmai yatante sakhyāya pūrvīḥ*
-[10,29,8.] [91,7.] *sahasraṃ prāṇā mayyā yatantām*
-[AV. 17,1,30.] *ā deveṣu yatata ā suvīrya ā śaṃsa uta nṛṇām* to remain
-[ṚV. 3,16,4.] partic.: *svāyāṃ diśyāyattam*
-[ŚAT. BR. 9,3,4,13.] *antamāyattā*
-[14,4,3,10.] The partic. *āyatta* has moreover the following Bedd.
+[ṚV. 5,47,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.047.html#rv05.047.02) *ā te bhadrāyāṃ sumatau yatema*
+[6,1,10.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.001.html#rv06.001.10) *ā yadvāṃ yatemahi svarājye*
+[5,66,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.066.html#rv05.066.06) *āsmai yatante sakhyāya pūrvīḥ*
+[10,29,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.029.html#rv10.029.08) [91,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.091.html#rv10.091.07) *sahasraṃ prāṇā mayyā yatantām*
+[AV. 17,1,30.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av17.001.html#av17.001.30) *ā deveṣu yatata ā suvīrya ā śaṃsa uta nṛṇām* to remain
+[ṚV. 3,16,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.016.html#rv03.016.04) partic.: *svāyāṃ diśyāyattam*
+[ŚAT. BR. 9,3,4,13.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?9,3,4,13) *antamāyattā*
+[14,4,3,10.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,4,3,10) The partic. *āyatta* has moreover the following Bedd.
   <sub>attested</sub>
 
-**PPP-1)** 1) abhängig von, beruhend auf, zu Jmdes Verfügung stehend (die Ergänzung im loc., gen. oder im comp. vorangehend) [AK. 3,1,16.] *amātye daṇḍa āyatto daṇḍe vainayikī kriyā . nṛpatau koṣarāṣṭre ca dūte saṃdhiviparyayau ..* [M. 7,65.] [205.] [Spr. 5274.] [MBH. 14,2084.] [2351.] [HARIV. 5021.] [R. 1,53,14. fg.] ([54,15. fg.] [GORR.]). [2,45,28.] [MEGH. 16.] [KATHĀS. 46,180.] *tavāyattāḥ prajāścemāḥ* [R. GORR. 2,2,26.] *prāvṛṭkālasya cānnamāyattam* [VARĀH. BṚH. S. 21,1.] [KATHĀS. 46,19.] [MĀRK. P. 72,21.] [126,3.] [4.] [7.] [HIT. 84,5.] *vidadhe tasyāyattaṃ nijaṃ dhanam* stellte es zu seiner Verfügung [RĀJA-TAR. 5,83.] *cakṣurāyattā* [MAITRYUP. 6,6.] [R. 1,4,29.] [5,86,12.] [ŚĀK. 92.] [Spr. 1431.] [2263.] [5384.] [VṚDDHACĀṆ. 13,14.] [KĀM. NĪTIS. 5,77. 18,20] (*mitrāyatte* zu lesen) [DAŚAR. 2,40.] [MĀRK. P. 126,5.] [LA. (II) 90,13.] [KATHĀS. 18,136.] [20,151.] [52,211.] [53,7.] [RĀJA-TAR. 4,491.] [Ind. St. 2,305,1.] [PAÑCAT. 85,17.] [HIT. 52,9.] [130,3.] [HIT. ed. JOHNS. 1086.] [DAŚAK.] in [BENF. Chr. 197,19.] [H. 918.] [VOP. 7,85.] *madekāyattatāṃ gatā* [KATHĀS. 32,171.] *īśvarecchāyattatva* [SARVADARŚANAS. 79,14.] ohne Ergänzung [R. 7,38,9.] [DAŚAR. 2,22.] *āyattīkṛta* [RĀJA-TAR. 4,680.] Vgl. *anāyatta, parāyatta, svāyatta*.
+**PPP-1)** 1) abhängig von, beruhend auf, zu Jmdes Verfügung stehend (die Ergänzung im loc., gen. oder im comp. vorangehend) [AK. 3,1,16.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,1,16) *amātye daṇḍa āyatto daṇḍe vainayikī kriyā . nṛpatau koṣarāṣṭre ca dūte saṃdhiviparyayau ..* [M. 7,65.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,65) [205.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,205) [Spr. 5274.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?5274) [MBH. 14,2084.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2084) [2351.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2351) [HARIV. 5021.](https://sanskrit-lexicon-scans.github.io/hariv?5021) [R. 1,53,14. fg.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,53,14) ([54,15. fg.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,54,15) [GORR.]). [2,45,28.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,45,28) [MEGH. 16.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?16) [KATHĀS. 46,180.](https://sanskrit-lexicon-scans.github.io/kss/index.html?46,180) *tavāyattāḥ prajāścemāḥ* [R. GORR. 2,2,26.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,2,26) *prāvṛṭkālasya cānnamāyattam* [VARĀH. BṚH. S. 21,1.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?21,1) [KATHĀS. 46,19.](https://sanskrit-lexicon-scans.github.io/kss/index.html?46,19) [MĀRK. P. 72,21.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?72,21) [126,3.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?126,3) [4.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?126,4) [7.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?126,7) [HIT. 84,5.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?84,5) *vidadhe tasyāyattaṃ nijaṃ dhanam* stellte es zu seiner Verfügung [RĀJA-TAR. 5,83.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,83) *cakṣurāyattā* [MAITRYUP. 6,6.] [R. 1,4,29.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,4,29) [5,86,12.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,86,12) [ŚĀK. 92.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?92) [Spr. 1431.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1431) [2263.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2263) [5384.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?5384) [VṚDDHACĀṆ. 13,14.] [KĀM. NĪTIS. 5,77. 18,20] (*mitrāyatte* zu lesen) [DAŚAR. 2,40.] [MĀRK. P. 126,5.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?126,5) [LA. (II) 90,13.] [KATHĀS. 18,136.](https://sanskrit-lexicon-scans.github.io/kss/index.html?18,136) [20,151.](https://sanskrit-lexicon-scans.github.io/kss/index.html?20,151) [52,211.](https://sanskrit-lexicon-scans.github.io/kss/index.html?52,211) [53,7.](https://sanskrit-lexicon-scans.github.io/kss/index.html?53,7) [RĀJA-TAR. 4,491.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,491) [Ind. St. 2,305,1.] [PAÑCAT. 85,17.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?85,17) [HIT. 52,9.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?52,9) [130,3.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?130,3) [HIT. ed. JOHNS. 1086.] [DAŚAK.] in [BENF. Chr. 197,19.] [H. 918.](https://sanskrit-lexicon-scans.github.io/abch2/app1?918) [VOP. 7,85.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?7,85) *madekāyattatāṃ gatā* [KATHĀS. 32,171.](https://sanskrit-lexicon-scans.github.io/kss/index.html?32,171) *īśvarecchāyattatva* [SARVADARŚANAS. 79,14.] ohne Ergänzung [R. 7,38,9.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,38,9) [DAŚAR. 2,22.] *āyattīkṛta* [RĀJA-TAR. 4,680.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,680) Vgl. *anāyatta, parāyatta, svāyatta*.
 
-- **RU:** 1) зависящий от, покоящийся на, находящийся в чьём-либо распоряжении (дополнение в loc., gen. или в comp. предшествует) [AK. 3,1,16.] *amātye daṇḍa āyatto daṇḍe vainayikī kriyā . nṛpatau koṣarāṣṭre ca dūte saṃdhiviparyayau ..* [M. 7,65.] [205.] [Spr. 5274.] [MBH. 14,2084.] [2351.] [HARIV. 5021.] [R. 1,53,14. fg.] ([54,15. fg.] [GORR.]). [2,45,28.] [MEGH. 16.] [KATHĀS. 46,180.] *tavāyattāḥ prajāścemāḥ* [R. GORR. 2,2,26.] *prāvṛṭkālasya cānnamāyattam* [VARĀH. BṚH. S. 21,1.] [KATHĀS. 46,19.] [MĀRK. P. 72,21.] [126,3.] [4.] [7.] [HIT. 84,5.] *vidadhe tasyāyattaṃ nijaṃ dhanam* предоставил это в его распоряжение [RĀJA-TAR. 5,83.] *cakṣurāyattā* [MAITRYUP. 6,6.] [R. 1,4,29.] [5,86,12.] [ŚĀK. 92.] [Spr. 1431.] [2263.] [5384.] [VṚDDHACĀṆ. 13,14.] [KĀM. NĪTIS. 5,77. 18,20] (*mitrāyatte* следует читать) [DAŚAR. 2,40.] [MĀRK. P. 126,5.] [LA. (II) 90,13.] [KATHĀS. 18,136.] [20,151.] [52,211.] [53,7.] [RĀJA-TAR. 4,491.] [Ind. St. 2,305,1.] [PAÑCAT. 85,17.] [HIT. 52,9.] [130,3.] [HIT. ed. JOHNS. 1086.] [DAŚAK.] в [BENF. Chr. 197,19.] [H. 918.] [VOP. 7,85.] *madekāyattatāṃ gatā* [KATHĀS. 32,171.] *īśvarecchāyattatva* [SARVADARŚANAS. 79,14.] без дополнения [R. 7,38,9.] [DAŚAR. 2,22.] *āyattīkṛta* [RĀJA-TAR. 4,680.] Vgl. *anāyatta, parāyatta, svāyatta*.
+- **RU:** 1) зависящий от, покоящийся на, находящийся в чьём-либо распоряжении (дополнение в loc., gen. или в comp. предшествует) [AK. 3,1,16.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,1,16) *amātye daṇḍa āyatto daṇḍe vainayikī kriyā . nṛpatau koṣarāṣṭre ca dūte saṃdhiviparyayau ..* [M. 7,65.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,65) [205.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,205) [Spr. 5274.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?5274) [MBH. 14,2084.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2084) [2351.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2351) [HARIV. 5021.](https://sanskrit-lexicon-scans.github.io/hariv?5021) [R. 1,53,14. fg.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,53,14) ([54,15. fg.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,54,15) [GORR.]). [2,45,28.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,45,28) [MEGH. 16.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?16) [KATHĀS. 46,180.](https://sanskrit-lexicon-scans.github.io/kss/index.html?46,180) *tavāyattāḥ prajāścemāḥ* [R. GORR. 2,2,26.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,2,26) *prāvṛṭkālasya cānnamāyattam* [VARĀH. BṚH. S. 21,1.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?21,1) [KATHĀS. 46,19.](https://sanskrit-lexicon-scans.github.io/kss/index.html?46,19) [MĀRK. P. 72,21.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?72,21) [126,3.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?126,3) [4.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?126,4) [7.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?126,7) [HIT. 84,5.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?84,5) *vidadhe tasyāyattaṃ nijaṃ dhanam* предоставил это в его распоряжение [RĀJA-TAR. 5,83.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,83) *cakṣurāyattā* [MAITRYUP. 6,6.] [R. 1,4,29.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,4,29) [5,86,12.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,86,12) [ŚĀK. 92.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?92) [Spr. 1431.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1431) [2263.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2263) [5384.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?5384) [VṚDDHACĀṆ. 13,14.] [KĀM. NĪTIS. 5,77. 18,20] (*mitrāyatte* следует читать) [DAŚAR. 2,40.] [MĀRK. P. 126,5.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?126,5) [LA. (II) 90,13.] [KATHĀS. 18,136.](https://sanskrit-lexicon-scans.github.io/kss/index.html?18,136) [20,151.](https://sanskrit-lexicon-scans.github.io/kss/index.html?20,151) [52,211.](https://sanskrit-lexicon-scans.github.io/kss/index.html?52,211) [53,7.](https://sanskrit-lexicon-scans.github.io/kss/index.html?53,7) [RĀJA-TAR. 4,491.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,491) [Ind. St. 2,305,1.] [PAÑCAT. 85,17.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?85,17) [HIT. 52,9.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?52,9) [130,3.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?130,3) [HIT. ed. JOHNS. 1086.] [DAŚAK.] в [BENF. Chr. 197,19.] [H. 918.](https://sanskrit-lexicon-scans.github.io/abch2/app1?918) [VOP. 7,85.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?7,85) *madekāyattatāṃ gatā* [KATHĀS. 32,171.](https://sanskrit-lexicon-scans.github.io/kss/index.html?32,171) *īśvarecchāyattatva* [SARVADARŚANAS. 79,14.] без дополнения [R. 7,38,9.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,38,9) [DAŚAR. 2,22.] *āyattīkṛta* [RĀJA-TAR. 4,680.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,680) Vgl. *anāyatta, parāyatta, svāyatta*.
 - **EN:** 1) dependent on, resting upon, at someone's disposal (the complement preceding in the loc., gen. or in the comp.)
-[AK. 3,1,16.] *amātye daṇḍa āyatto daṇḍe vainayikī kriyā . nṛpatau koṣarāṣṭre ca dūte saṃdhiviparyayau ..*
-[M. 7,65.] [205.]
-[Spr. 5274.]
-[MBH. 14,2084.] [2351.]
-[HARIV. 5021.]
-[R. 1,53,14. fg.]
-([54,15. fg.] [GORR.]). [2,45,28.] [MEGH. 16.] [KATHĀS. 46,180.] *tavāyattāḥ prajāścemāḥ*
-[R. GORR. 2,2,26.] *prāvṛṭkālasya cānnamāyattam*
-[VARĀH. BṚH. S. 21,1.]
-[KATHĀS. 46,19.]
-[MĀRK. P. 72,21.] [126,3.] [4.] [7.]
-[HIT. 84,5.] *vidadhe tasyāyattaṃ nijaṃ dhanam* placed it at his disposal
-[RĀJA-TAR. 5,83.] *cakṣurāyattā*
-[MAITRYUP. 6,6.] [R. 1,4,29.] [5,86,12.] [ŚĀK. 92.] [Spr. 1431.] [2263.] [5384.] [VṚDDHACĀṆ. 13,14.] [KĀM. NĪTIS. 5,77. 18,20] (read *mitrāyatte*)
+[AK. 3,1,16.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,1,16) *amātye daṇḍa āyatto daṇḍe vainayikī kriyā . nṛpatau koṣarāṣṭre ca dūte saṃdhiviparyayau ..*
+[M. 7,65.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,65) [205.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,205)
+[Spr. 5274.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?5274)
+[MBH. 14,2084.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2084) [2351.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2351)
+[HARIV. 5021.](https://sanskrit-lexicon-scans.github.io/hariv?5021)
+[R. 1,53,14. fg.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,53,14)
+([54,15. fg.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,54,15) [GORR.]). [2,45,28.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,45,28) [MEGH. 16.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?16) [KATHĀS. 46,180.](https://sanskrit-lexicon-scans.github.io/kss/index.html?46,180) *tavāyattāḥ prajāścemāḥ*
+[R. GORR. 2,2,26.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,2,26) *prāvṛṭkālasya cānnamāyattam*
+[VARĀH. BṚH. S. 21,1.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?21,1)
+[KATHĀS. 46,19.](https://sanskrit-lexicon-scans.github.io/kss/index.html?46,19)
+[MĀRK. P. 72,21.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?72,21) [126,3.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?126,3) [4.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?126,4) [7.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?126,7)
+[HIT. 84,5.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?84,5) *vidadhe tasyāyattaṃ nijaṃ dhanam* placed it at his disposal
+[RĀJA-TAR. 5,83.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,83) *cakṣurāyattā*
+[MAITRYUP. 6,6.] [R. 1,4,29.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,4,29) [5,86,12.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,86,12) [ŚĀK. 92.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?92) [Spr. 1431.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1431) [2263.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2263) [5384.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?5384) [VṚDDHACĀṆ. 13,14.] [KĀM. NĪTIS. 5,77. 18,20] (read *mitrāyatte*)
 [DAŚAR. 2,40.]
-[MĀRK. P. 126,5.]
+[MĀRK. P. 126,5.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?126,5)
 [LA. (II) 90,13.]
-[KATHĀS. 18,136.] [20,151.] [52,211.] [53,7.]
-[RĀJA-TAR. 4,491.]
+[KATHĀS. 18,136.](https://sanskrit-lexicon-scans.github.io/kss/index.html?18,136) [20,151.](https://sanskrit-lexicon-scans.github.io/kss/index.html?20,151) [52,211.](https://sanskrit-lexicon-scans.github.io/kss/index.html?52,211) [53,7.](https://sanskrit-lexicon-scans.github.io/kss/index.html?53,7)
+[RĀJA-TAR. 4,491.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,491)
 [Ind. St. 2,305,1.]
-[PAÑCAT. 85,17.]
-[HIT. 52,9.] [130,3.] [HIT. ed. JOHNS. 1086.] [DAŚAK.] in [BENF. Chr. 197,19.] [H. 918.] [VOP. 7,85.] *madekāyattatāṃ gatā*
-[KATHĀS. 32,171.] *īśvarecchāyattatva*
+[PAÑCAT. 85,17.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?85,17)
+[HIT. 52,9.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?52,9) [130,3.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?130,3) [HIT. ed. JOHNS. 1086.] [DAŚAK.] in [BENF. Chr. 197,19.] [H. 918.](https://sanskrit-lexicon-scans.github.io/abch2/app1?918) [VOP. 7,85.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?7,85) *madekāyattatāṃ gatā*
+[KATHĀS. 32,171.](https://sanskrit-lexicon-scans.github.io/kss/index.html?32,171) *īśvarecchāyattatva*
 [SARVADARŚANAS. 79,14.] without complement
-[R. 7,38,9.]
+[R. 7,38,9.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,38,9)
 [DAŚAR. 2,22.] *āyattīkṛta*
-[RĀJA-TAR. 4,680.] Vgl. *anāyatta, parāyatta, svāyatta*.
+[RĀJA-TAR. 4,680.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,680) Vgl. *anāyatta, parāyatta, svāyatta*.
   <sub>attested</sub>
 
-**PPP-2)** — 2) sich anstrengend, sich bemühend: *paramāyattāḥ* [BHĀG. P. 8,7,5.] auf seiner Hut seiend, sich vorsehend [R. 7,19,10.] *dhanurāyattamuttamam* so v. a. bereit stehend [109,7.]
+**PPP-2)** — 2) sich anstrengend, sich bemühend: *paramāyattāḥ* [BHĀG. P. 8,7,5.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,7,5) auf seiner Hut seiend, sich vorsehend [R. 7,19,10.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,19,10) *dhanurāyattamuttamam* so v. a. bereit stehend [109,7.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,109,7)
 
-- **RU:** — 2) напрягающий усилия, прилагающий старание: *paramāyattāḥ* [BHĀG. P. 8,7,5.] находящийся начеку, остерегающийся [R. 7,19,10.] *dhanurāyattamuttamam* так v. a. стоящий наготове [109,7.]
+- **RU:** — 2) напрягающий усилия, прилагающий старание: *paramāyattāḥ* [BHĀG. P. 8,7,5.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,7,5) находящийся начеку, остерегающийся [R. 7,19,10.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,19,10) *dhanurāyattamuttamam* так v. a. стоящий наготове [109,7.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,109,7)
 - **EN:** 2) exerting oneself, endeavouring: *paramāyattāḥ*
-[BHĀG. P. 8,7,5.] being on one's guard, being cautious
-[R. 7,19,10.] *dhanurāyattamuttamam* thus v. a. standing ready
-[109,7.]
+[BHĀG. P. 8,7,5.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,7,5) being on one's guard, being cautious
+[R. 7,19,10.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,19,10) *dhanurāyattamuttamam* thus v. a. standing ready
+[109,7.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,109,7)
   <sub>attested</sub>
 
-**caus)** — Vgl. *āyatana, āyatti* . — caus. act. anlangen machen in: *svarge loke* [ŚAT. BR. 11,5,2,10.] [AIT. BR. 2,34.] irrig als Erklärung von *yātayati* [NIR. 10,22.] = *karmasu pravartayati* [DURGA.]
+**caus)** — Vgl. *āyatana, āyatti* . — caus. act. anlangen machen in: *svarge loke* [ŚAT. BR. 11,5,2,10.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?11,5,2,10) [AIT. BR. 2,34.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?2,34) irrig als Erklärung von *yātayati* [NIR. 10,22.](https://sanskrit-lexicon-scans.github.io/nirukta/app1?10,22) = *karmasu pravartayati* [DURGA.]
 
-- **RU:** — Vgl. *āyatana, āyatti*. — caus. act. заставлять прибывать в: *svarge loke* [ŚAT. BR. 11,5,2,10.] [AIT. BR. 2,34.] ошибочно как объяснение *yātayati* [NIR. 10,22.] = *karmasu pravartayati* [DURGA.]
+- **RU:** — Vgl. *āyatana, āyatti*. — caus. act. заставлять прибывать в: *svarge loke* [ŚAT. BR. 11,5,2,10.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?11,5,2,10) [AIT. BR. 2,34.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?2,34) ошибочно как объяснение *yātayati* [NIR. 10,22.](https://sanskrit-lexicon-scans.github.io/nirukta/app1?10,22) = *karmasu pravartayati* [DURGA.]
 - **EN:** Vgl. *āyatana, āyatti*. — caus. act. to cause to arrive in: *svarge loke*
-[ŚAT. BR. 11,5,2,10.]
-[AIT. BR. 2,34.] erroneously as an explanation of *yātayati*
-[NIR. 10,22.] = *karmasu pravartayati*
+[ŚAT. BR. 11,5,2,10.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?11,5,2,10)
+[AIT. BR. 2,34.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?2,34) erroneously as an explanation of *yātayati*
+[NIR. 10,22.](https://sanskrit-lexicon-scans.github.io/nirukta/app1?10,22) = *karmasu pravartayati*
 [DURGA.]
   <sub>attested</sub>
 
@@ -304,26 +304,26 @@ _PWG article — 28 sub-card(s), 189 sense(s) · RU 159/189 · EN 92/189_
 `yat~~h0_06_anv_a`
 
 
-**1)** — *anvā* partic. *˚yatta* betheiligt bei, verbunden mit, in Beziehung stehend zu, abhängig von, beruhend auf, sich erstreckend auf, vorhanden in oder bei; mit loc. oder acc.: *aśve vai sarvā devatā anvāyattāḥ* [TBR. 3,8,7,3.] *sarveṣu lokeṣu mṛtyavo 'nvāyattāḥ* [9,15,1.] [TS. 1,6,11,1.] [ŚAT. BR. 1,6,3,41.] [7,2,7.] [13,1,2,9.] *saṃvatsaraṃ vā annādyamanvāyattam* [12,7,2,19.] [14,5,2,3.] *darvyaṃ pitaro 'nvāyattāḥ* [6,8,9.] [CHĀND. UP. 1,10,9. fgg. 11,4. fgg. 2,9,2.] *etā eva* (*diśaḥ*) *hotrakā anvāyattāḥ*
+**1)** — *anvā* partic. *˚yatta* betheiligt bei, verbunden mit, in Beziehung stehend zu, abhängig von, beruhend auf, sich erstreckend auf, vorhanden in oder bei; mit loc. oder acc.: *aśve vai sarvā devatā anvāyattāḥ* [TBR. 3,8,7,3.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?3,8,7,3) *sarveṣu lokeṣu mṛtyavo 'nvāyattāḥ* [9,15,1.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?3,9,15,1) [TS. 1,6,11,1.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?1,6,11,1) [ŚAT. BR. 1,6,3,41.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,6,3,41) [7,2,7.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,7,2,7) [13,1,2,9.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?13,1,2,9) *saṃvatsaraṃ vā annādyamanvāyattam* [12,7,2,19.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?12,7,2,19) [14,5,2,3.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,5,2,3) *darvyaṃ pitaro 'nvāyattāḥ* [6,8,9.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,6,8,9) [CHĀND. UP. 1,10,9. fgg. 11,4. fgg. 2,9,2.] *etā eva* (*diśaḥ*) *hotrakā anvāyattāḥ*
 
-- **RU:** — *anvā* partic. *˚yatta* причастный к, связанный с, находящийся в отношении к, зависящий от, покоящийся на, распространяющийся на, наличествующий в или при; с loc. или acc.: *aśve vai sarvā devatā anvāyattāḥ* [TBR. 3,8,7,3.] *sarveṣu lokeṣu mṛtyavo 'nvāyattāḥ* [9,15,1.] [TS. 1,6,11,1.] [ŚAT. BR. 1,6,3,41.] [7,2,7.] [13,1,2,9.] *saṃvatsaraṃ vā annādyamanvāyattam* [12,7,2,19.] [14,5,2,3.] *darvyaṃ pitaro 'nvāyattāḥ* [6,8,9.] [CHĀND. UP. 1,10,9. fgg. 11,4. fgg. 2,9,2.] *etā eva* (*diśaḥ*) *hotrakā anvāyattāḥ*
+- **RU:** — *anvā* partic. *˚yatta* причастный к, связанный с, находящийся в отношении к, зависящий от, покоящийся на, распространяющийся на, наличествующий в или при; с loc. или acc.: *aśve vai sarvā devatā anvāyattāḥ* [TBR. 3,8,7,3.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?3,8,7,3) *sarveṣu lokeṣu mṛtyavo 'nvāyattāḥ* [9,15,1.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?3,9,15,1) [TS. 1,6,11,1.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?1,6,11,1) [ŚAT. BR. 1,6,3,41.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,6,3,41) [7,2,7.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,7,2,7) [13,1,2,9.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?13,1,2,9) *saṃvatsaraṃ vā annādyamanvāyattam* [12,7,2,19.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?12,7,2,19) [14,5,2,3.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,5,2,3) *darvyaṃ pitaro 'nvāyattāḥ* [6,8,9.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,6,8,9) [CHĀND. UP. 1,10,9. fgg. 11,4. fgg. 2,9,2.] *etā eva* (*diśaḥ*) *hotrakā anvāyattāḥ*
 - **EN:** *anvā* partic. *˚yatta* involved in, connected with, standing in relation to, dependent on, resting upon, extending over, present
 
 in or at; with loc. or acc.: *aśve vai sarvā devatā anvāyattāḥ*
-[TBR. 3,8,7,3.] *sarveṣu lokeṣu mṛtyavo 'nvāyattāḥ*
-[9,15,1.] [TS. 1,6,11,1.] [ŚAT. BR. 1,6,3,41.] [7,2,7.] [13,1,2,9.] *saṃvatsaraṃ vā annādyamanvāyattam*
-[12,7,2,19.] [14,5,2,3.] *darvyaṃ pitaro 'nvāyattāḥ*
-[6,8,9.] [CHĀND. UP. 1,10,9. fgg. 11,4. fgg. 2,9,2.]
+[TBR. 3,8,7,3.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?3,8,7,3) *sarveṣu lokeṣu mṛtyavo 'nvāyattāḥ*
+[9,15,1.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?3,9,15,1) [TS. 1,6,11,1.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?1,6,11,1) [ŚAT. BR. 1,6,3,41.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,6,3,41) [7,2,7.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,7,2,7) [13,1,2,9.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?13,1,2,9) *saṃvatsaraṃ vā annādyamanvāyattam*
+[12,7,2,19.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?12,7,2,19) [14,5,2,3.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,5,2,3) *darvyaṃ pitaro 'nvāyattāḥ*
+[6,8,9.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,6,8,9) [CHĀND. UP. 1,10,9. fgg. 11,4. fgg. 2,9,2.]
 *etā eva* (*diśaḥ*) *hotrakā anvāyattāḥ*
   <sub>attested</sub>
 
-**2)** [ĀŚV. ŚR. 10,10,10.] — caus. anreihen, folgen lassen; in Verbindung bringen, sich betheiligen lassen: mit loc. oder acc.: *devatā evāsminnanvāyātayati* [TBR. 3,8,7,3.] [ŚAT. BR. 13,1,2,9.] *chandāṃsi yajñamanvāyātayati* [3,4,1,23.] [ŚĀṄKH. BR. 12,7. 24,5.] [ĀŚV. ŚR. 4,11,5.] *puroLāśeṣu havīṃṣyanvāyātayeyuḥ* [9,2,22.] [ŚĀṄKH. ŚR. 12,9,8. 13,20,9. 14,3,1. 5,5.]
+**2)** [ĀŚV. ŚR. 10,10,10.] — caus. anreihen, folgen lassen; in Verbindung bringen, sich betheiligen lassen: mit loc. oder acc.: *devatā evāsminnanvāyātayati* [TBR. 3,8,7,3.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?3,8,7,3) [ŚAT. BR. 13,1,2,9.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?13,1,2,9) *chandāṃsi yajñamanvāyātayati* [3,4,1,23.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,4,1,23) [ŚĀṄKH. BR. 12,7. 24,5.] [ĀŚV. ŚR. 4,11,5.] *puroLāśeṣu havīṃṣyanvāyātayeyuḥ* [9,2,22.] [ŚĀṄKH. ŚR. 12,9,8. 13,20,9. 14,3,1. 5,5.]
 
-- **RU:** [ĀŚV. ŚR. 10,10,10.] — caus. нанизывать в ряд, следовать за; приводить в связь, привлекать к участию: с loc. или acc.: *devatā evāsminnanvāyātayati* [TBR. 3,8,7,3.] [ŚAT. BR. 13,1,2,9.] *chandāṃsi yajñamanvāyātayati* [3,4,1,23.] [ŚĀṄKH. BR. 12,7. 24,5.] [ĀŚV. ŚR. 4,11,5.] *puroLāśeṣu havīṃṣyanvāyātayeyuḥ* [9,2,22.] [ŚĀṄKH. ŚR. 12,9,8. 13,20,9. 14,3,1. 5,5.]
+- **RU:** [ĀŚV. ŚR. 10,10,10.] — caus. нанизывать в ряд, следовать за; приводить в связь, привлекать к участию: с loc. или acc.: *devatā evāsminnanvāyātayati* [TBR. 3,8,7,3.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?3,8,7,3) [ŚAT. BR. 13,1,2,9.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?13,1,2,9) *chandāṃsi yajñamanvāyātayati* [3,4,1,23.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,4,1,23) [ŚĀṄKH. BR. 12,7. 24,5.] [ĀŚV. ŚR. 4,11,5.] *puroLāśeṣu havīṃṣyanvāyātayeyuḥ* [9,2,22.] [ŚĀṄKH. ŚR. 12,9,8. 13,20,9. 14,3,1. 5,5.]
 - **EN:** — caus. to append, to cause to follow; to bring into connection, to cause to participate: with loc. or acc.: *devatā evāsminnanvāyātayati*
-[TBR. 3,8,7,3.]
-[ŚAT. BR. 13,1,2,9.] *chandāṃsi yajñamanvāyātayati*
-[3,4,1,23.] [ŚĀṄKH. BR. 12,7. 24,5.] [ĀŚV. ŚR. 4,11,5.] *puroLāśeṣu havīṃṣyanvāyātayeyuḥ*
+[TBR. 3,8,7,3.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?3,8,7,3)
+[ŚAT. BR. 13,1,2,9.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?13,1,2,9) *chandāṃsi yajñamanvāyātayati*
+[3,4,1,23.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,4,1,23) [ŚĀṄKH. BR. 12,7. 24,5.] [ĀŚV. ŚR. 4,11,5.] *puroLāśeṣu havīṃṣyanvāyātayeyuḥ*
 [9,2,22.] [ŚĀṄKH. ŚR. 12,9,8. 13,20,9. 14,3,1. 5,5.]
   <sub>attested</sub>
 
@@ -332,12 +332,12 @@ in or at; with loc. or acc.: *aśve vai sarvā devatā anvāyattāḥ*
 `yat~~h0_07_sam_a`
 
 
-**1)** — *samā*, partic. *˚yatta* beruhend auf, abhängig von (loc.): *āsāṃ prāṇāḥ samāyattā mama cātraikaputrake* [MBH. 3,10484.] [7,5458.] [R. 7,35,30.]
+**1)** — *samā*, partic. *˚yatta* beruhend auf, abhängig von (loc.): *āsāṃ prāṇāḥ samāyattā mama cātraikaputrake* [MBH. 3,10484.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10484) [7,5458.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.5458) [R. 7,35,30.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,35,30)
 
-- **RU:** — *samā*, partic. *˚yatta* покоящийся на, зависящий от (loc.): *āsāṃ prāṇāḥ samāyattā mama cātraikaputrake* [MBH. 3,10484.] [7,5458.] [R. 7,35,30.]
+- **RU:** — *samā*, partic. *˚yatta* покоящийся на, зависящий от (loc.): *āsāṃ prāṇāḥ samāyattā mama cātraikaputrake* [MBH. 3,10484.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10484) [7,5458.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.5458) [R. 7,35,30.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,35,30)
 - **EN:** *samā*, partic. *˚yatta* resting upon, dependent on (loc.): *āsāṃ prāṇāḥ samāyattā mama cātraikaputrake*
-[MBH. 3,10484.] [7,5458.]
-[R. 7,35,30.]
+[MBH. 3,10484.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10484) [7,5458.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.5458)
+[R. 7,35,30.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,35,30)
   <sub>attested</sub>
 
 ## yat
@@ -345,11 +345,11 @@ in or at; with loc. or acc.: *aśve vai sarvā devatā anvāyattāḥ*
 `yat~~h0_08_upa`
 
 
-**1)** — *upa* med. betreffen: *idaṃ nvimaṃ sa pāpmā nopayatate* [ŚAT. BR. 8,5,1,7.]
+**1)** — *upa* med. betreffen: *idaṃ nvimaṃ sa pāpmā nopayatate* [ŚAT. BR. 8,5,1,7.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?8,5,1,7)
 
-- **RU:** — *upa* med. касаться, относиться к: *idaṃ nvimaṃ sa pāpmā nopayatate* [ŚAT. BR. 8,5,1,7.]
+- **RU:** — *upa* med. касаться, относиться к: *idaṃ nvimaṃ sa pāpmā nopayatate* [ŚAT. BR. 8,5,1,7.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?8,5,1,7)
 - **EN:** *upa* med. to concern, to pertain to: *idaṃ nvimaṃ sa pāpmā nopayatate*
-[ŚAT. BR. 8,5,1,7.]
+[ŚAT. BR. 8,5,1,7.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?8,5,1,7)
   <sub>attested</sub>
 
 ## ni+yat
@@ -358,12 +358,12 @@ in or at; with loc. or acc.: *aśve vai sarvā devatā anvāyattāḥ*
 
 
 **1)** — *ni* med. anlangen bei: *ni yā deveṣu yatate vasūyuḥ*
-[ṚV. 1,186,11.]
+[ṚV. 1,186,11.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.186.html#rv01.186.11)
 
 - **RU:** — *ni* med. прибывать к, достигать: *ni yā deveṣu yatate vasūyuḥ*
-[ṚV. 1,186,11.]
+[ṚV. 1,186,11.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.186.html#rv01.186.11)
 - **EN:** — *ni* med. to arrive at, reach: *ni yā deveṣu yatate vasūyuḥ*
-[ṚV. 1,186,11.]
+[ṚV. 1,186,11.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.186.html#rv01.186.11)
   <sub>attested</sub>
 
 ## nis+yat
@@ -374,70 +374,70 @@ in or at; with loc. or acc.: *aśve vai sarvā devatā anvāyattāḥ*
 **1)** — *nis* caus.
  1) fortreissen, fortschaffen, wegführen: *saṃyujyamānāni niśamya loke niryātyamānāni* (= *nipīḍyamānāni*
 [NILAK.]) *ca sāttvikāni*
-[MBH. 12,13789.] *putro niryātitaḥ krodhāt* (so die neuere Ausg., es ist aber wohl *kroḍāt* zu lesen)
-[HARIV. 4857.] *niryātayata me senām*
-[MBH. 15,610.] *asatīṃ vapuṣṭamāṃ caiva niryātayata me gṛhāt*
-[HARIV. 11245.] *yamo vaivasvatasya niryātayati duṣkṛtam . hṛdi sthitaḥ karmasākṣī kṣetrajño yasya tuṣyati ..*
-[Spr. 2404.] herausholen, herbeischaffen: *gṛhāt*
-[R. 6,96,5.]
+[MBH. 12,13789.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.13789) *putro niryātitaḥ krodhāt* (so die neuere Ausg., es ist aber wohl *kroḍāt* zu lesen)
+[HARIV. 4857.](https://sanskrit-lexicon-scans.github.io/hariv?4857) *niryātayata me senām*
+[MBH. 15,610.](https://sanskrit-lexicon-scans.github.io/mbhcalc?15.610) *asatīṃ vapuṣṭamāṃ caiva niryātayata me gṛhāt*
+[HARIV. 11245.](https://sanskrit-lexicon-scans.github.io/hariv?11245) *yamo vaivasvatasya niryātayati duṣkṛtam . hṛdi sthitaḥ karmasākṣī kṣetrajño yasya tuṣyati ..*
+[Spr. 2404.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2404) herausholen, herbeischaffen: *gṛhāt*
+[R. 6,96,5.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,96,5)
 
 - **RU:** — *nis* caus.
  1) уносить прочь, вывозить, уводить: *saṃyujyamānāni niśamya loke niryātyamānāni* (= *nipīḍyamānāni*
 [NILAK.]) *ca sāttvikāni*
-[MBH. 12,13789.] *putro niryātitaḥ krodhāt* (так более новая Ausg., однако следует, по всей видимости, читать *kroḍāt*)
-[HARIV. 4857.] *niryātayata me senām*
-[MBH. 15,610.] *asatīṃ vapuṣṭamāṃ caiva niryātayata me gṛhāt*
-[HARIV. 11245.] *yamo vaivasvatasya niryātayati duṣkṛtam . hṛdi sthitaḥ karmasākṣī kṣetrajño yasya tuṣyati ..*
-[Spr. 2404.] извлекать, доставлять: *gṛhāt*
-[R. 6,96,5.]
+[MBH. 12,13789.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.13789) *putro niryātitaḥ krodhāt* (так более новая Ausg., однако следует, по всей видимости, читать *kroḍāt*)
+[HARIV. 4857.](https://sanskrit-lexicon-scans.github.io/hariv?4857) *niryātayata me senām*
+[MBH. 15,610.](https://sanskrit-lexicon-scans.github.io/mbhcalc?15.610) *asatīṃ vapuṣṭamāṃ caiva niryātayata me gṛhāt*
+[HARIV. 11245.](https://sanskrit-lexicon-scans.github.io/hariv?11245) *yamo vaivasvatasya niryātayati duṣkṛtam . hṛdi sthitaḥ karmasākṣī kṣetrajño yasya tuṣyati ..*
+[Spr. 2404.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2404) извлекать, доставлять: *gṛhāt*
+[R. 6,96,5.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,96,5)
 - **EN:** — *nis* caus.
  1) to carry off, remove, lead away: *saṃyujyamānāni niśamya loke niryātyamānāni* (= *nipīḍyamānāni*
 [NILAK.]) *ca sāttvikāni*
-[MBH. 12,13789.] *putro niryātitaḥ krodhāt* (so the later Ausg., but it is probably better to read *kroḍāt*)
-[HARIV. 4857.] *niryātayata me senām*
-[MBH. 15,610.] *asatīṃ vapuṣṭamāṃ caiva niryātayata me gṛhāt*
-[HARIV. 11245.] *yamo vaivasvatasya niryātayati duṣkṛtam . hṛdi sthitaḥ karmasākṣī kṣetrajño yasya tuṣyati ..*
-[Spr. 2404.] to fetch out, bring forth: *gṛhāt*
-[R. 6,96,5.]
+[MBH. 12,13789.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.13789) *putro niryātitaḥ krodhāt* (so the later Ausg., but it is probably better to read *kroḍāt*)
+[HARIV. 4857.](https://sanskrit-lexicon-scans.github.io/hariv?4857) *niryātayata me senām*
+[MBH. 15,610.](https://sanskrit-lexicon-scans.github.io/mbhcalc?15.610) *asatīṃ vapuṣṭamāṃ caiva niryātayata me gṛhāt*
+[HARIV. 11245.](https://sanskrit-lexicon-scans.github.io/hariv?11245) *yamo vaivasvatasya niryātayati duṣkṛtam . hṛdi sthitaḥ karmasākṣī kṣetrajño yasya tuṣyati ..*
+[Spr. 2404.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2404) to fetch out, bring forth: *gṛhāt*
+[R. 6,96,5.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,96,5)
   <sub>attested</sub>
 
 **2)** — 2) herausgeben, schenken, ausliefern, zurückgeben: *nivṛtteṣu ca megheṣu niryātya jagato jalam*
-[HARIV. 4013.] *niryātya mahiṣaṃ tasya*
-[KATHĀS. 62,224.]
-[SADDH. P. 4,25.b.] [M. 11,164.] *nyāsam*
-[MBH. 3,16596.] [5,3979. fg.] [4021. fg.]
-[HARIV. 2770.] [4061.] [6778.]
-[R. GORR. 1,71,23.] [2,117,7.] [5,37,8.] [66,24.] [26.] [89,56.] [6,16,69.] [94,21.] [7,30,26.] [98,6.] [8.] med. [5,76,18.] [7,59,10.] [MṚCCH. 25,9.] *vairam* eine Feindschaft erwiedern, Rache nehmen: *rāmalakṣmaṇayorvairaṃ svayaṃ niryātayāmi vai*
-[R. 6,33,4.] [3,60,33.]
-[MBH. 2,2660.]
+[HARIV. 4013.](https://sanskrit-lexicon-scans.github.io/hariv?4013) *niryātya mahiṣaṃ tasya*
+[KATHĀS. 62,224.](https://sanskrit-lexicon-scans.github.io/kss/index.html?62,224)
+[SADDH. P. 4,25.b.] [M. 11,164.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,164) *nyāsam*
+[MBH. 3,16596.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16596) [5,3979. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.3979) [4021. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.4021)
+[HARIV. 2770.](https://sanskrit-lexicon-scans.github.io/hariv?2770) [4061.](https://sanskrit-lexicon-scans.github.io/hariv?4061) [6778.](https://sanskrit-lexicon-scans.github.io/hariv?6778)
+[R. GORR. 1,71,23.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,71,23) [2,117,7.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,117,7) [5,37,8.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,37,8) [66,24.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,66,24) [26.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,66,26) [89,56.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,89,56) [6,16,69.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,16,69) [94,21.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,94,21) [7,30,26.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?7,30,26) [98,6.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?7,98,6) [8.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?7,96,8) med. [5,76,18.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,76,18) [7,59,10.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?7,59,10) [MṚCCH. 25,9.] *vairam* eine Feindschaft erwiedern, Rache nehmen: *rāmalakṣmaṇayorvairaṃ svayaṃ niryātayāmi vai*
+[R. 6,33,4.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,33,4) [3,60,33.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,60,33)
+[MBH. 2,2660.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2660)
 
 - **RU:** — 2) выдавать, дарить, передавать, возвращать: *nivṛtteṣu ca megheṣu niryātya jagato jalam*
-[HARIV. 4013.] *niryātya mahiṣaṃ tasya*
-[KATHĀS. 62,224.]
-[SADDH. P. 4,25.b.] [M. 11,164.] *nyāsam*
-[MBH. 3,16596.] [5,3979. fg.] [4021. fg.]
-[HARIV. 2770.] [4061.] [6778.]
-[R. GORR. 1,71,23.] [2,117,7.] [5,37,8.] [66,24.] [26.] [89,56.] [6,16,69.] [94,21.] [7,30,26.] [98,6.] [8.] med. [5,76,18.] [7,59,10.] [MṚCCH. 25,9.] *vairam* отплатить враждой, отомстить: *rāmalakṣmaṇayorvairaṃ svayaṃ niryātayāmi vai*
-[R. 6,33,4.] [3,60,33.]
-[MBH. 2,2660.]
+[HARIV. 4013.](https://sanskrit-lexicon-scans.github.io/hariv?4013) *niryātya mahiṣaṃ tasya*
+[KATHĀS. 62,224.](https://sanskrit-lexicon-scans.github.io/kss/index.html?62,224)
+[SADDH. P. 4,25.b.] [M. 11,164.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,164) *nyāsam*
+[MBH. 3,16596.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16596) [5,3979. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.3979) [4021. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.4021)
+[HARIV. 2770.](https://sanskrit-lexicon-scans.github.io/hariv?2770) [4061.](https://sanskrit-lexicon-scans.github.io/hariv?4061) [6778.](https://sanskrit-lexicon-scans.github.io/hariv?6778)
+[R. GORR. 1,71,23.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,71,23) [2,117,7.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,117,7) [5,37,8.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,37,8) [66,24.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,66,24) [26.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,66,26) [89,56.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,89,56) [6,16,69.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,16,69) [94,21.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,94,21) [7,30,26.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?7,30,26) [98,6.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?7,98,6) [8.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?7,96,8) med. [5,76,18.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,76,18) [7,59,10.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?7,59,10) [MṚCCH. 25,9.] *vairam* отплатить враждой, отомстить: *rāmalakṣmaṇayorvairaṃ svayaṃ niryātayāmi vai*
+[R. 6,33,4.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,33,4) [3,60,33.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,60,33)
+[MBH. 2,2660.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2660)
 - **EN:** — 2) to give out, bestow, deliver up, give back: *nivṛtteṣu ca megheṣu niryātya jagato jalam*
-[HARIV. 4013.] *niryātya mahiṣaṃ tasya*
-[KATHĀS. 62,224.]
-[SADDH. P. 4,25.b.] [M. 11,164.] *nyāsam*
-[MBH. 3,16596.] [5,3979. fg.] [4021. fg.]
-[HARIV. 2770.] [4061.] [6778.]
-[R. GORR. 1,71,23.] [2,117,7.] [5,37,8.] [66,24.] [26.] [89,56.] [6,16,69.] [94,21.] [7,30,26.] [98,6.] [8.] med. [5,76,18.] [7,59,10.] [MṚCCH. 25,9.] *vairam* to return an enmity, take revenge: *rāmalakṣmaṇayorvairaṃ svayaṃ niryātayāmi vai*
-[R. 6,33,4.] [3,60,33.]
-[MBH. 2,2660.]
+[HARIV. 4013.](https://sanskrit-lexicon-scans.github.io/hariv?4013) *niryātya mahiṣaṃ tasya*
+[KATHĀS. 62,224.](https://sanskrit-lexicon-scans.github.io/kss/index.html?62,224)
+[SADDH. P. 4,25.b.] [M. 11,164.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,164) *nyāsam*
+[MBH. 3,16596.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16596) [5,3979. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.3979) [4021. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.4021)
+[HARIV. 2770.](https://sanskrit-lexicon-scans.github.io/hariv?2770) [4061.](https://sanskrit-lexicon-scans.github.io/hariv?4061) [6778.](https://sanskrit-lexicon-scans.github.io/hariv?6778)
+[R. GORR. 1,71,23.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,71,23) [2,117,7.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,117,7) [5,37,8.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,37,8) [66,24.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,66,24) [26.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,66,26) [89,56.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,89,56) [6,16,69.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,16,69) [94,21.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,94,21) [7,30,26.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?7,30,26) [98,6.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?7,98,6) [8.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?7,96,8) med. [5,76,18.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,76,18) [7,59,10.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?7,59,10) [MṚCCH. 25,9.] *vairam* to return an enmity, take revenge: *rāmalakṣmaṇayorvairaṃ svayaṃ niryātayāmi vai*
+[R. 6,33,4.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,33,4) [3,60,33.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,60,33)
+[MBH. 2,2660.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2660)
   <sub>attested</sub>
 
 **3)** — 3) verbringen, verleben: *caturdaśa samā vīra vane niryātitāstvayā*
-[R. 6,104,26.]
+[R. 6,104,26.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,104,26)
 
 - **RU:** — 3) проводить (время), переживать: *caturdaśa samā vīra vane niryātitāstvayā*
-[R. 6,104,26.]
+[R. 6,104,26.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,104,26)
 - **EN:** — 3) to pass, spend (time): *caturdaśa samā vīra vane niryātitāstvayā*
-[R. 6,104,26.]
+[R. 6,104,26.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,104,26)
   <sub>attested</sub>
 
 **deriv)** — Vgl. *niryātaka* fg. und *niryātya* .
@@ -452,11 +452,11 @@ in or at; with loc. or acc.: *aśve vai sarvā devatā anvāyattāḥ*
 
 
 **1)** — *pratinis* caus. wieder ausliefern, zurückgeben
-[MBH. 3,13183.]
+[MBH. 3,13183.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13183)
 
 - **RU:** — *pratinis* caus. снова выдавать, возвращать обратно
-[MBH. 3,13183.]
-- **EN:** — *pratinis* caus. to deliver up again, give back: [MBH. 3,13183.]
+[MBH. 3,13183.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13183)
+- **EN:** — *pratinis* caus. to deliver up again, give back: [MBH. 3,13183.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13183)
   <sub>attested</sub>
 
 **deriv)** — Vgl. *pratiniryātana* .
@@ -472,19 +472,19 @@ in or at; with loc. or acc.: *aśve vai sarvā devatā anvāyattāḥ*
 
 **1)** — *pari* med. umstellen, umringen
 [PAÑCAV. BR. 7,5,6. 15,3,7.] *dāśarājñe pariyattāya viśvataḥ*
-[ṚV. 7,83,8.]
-[AIT. BR. 2,31.] *baddho vā pariyatto vendraṃ trātāramupadhāvati*
-[TS. 2,2,7,5.]
+[ṚV. 7,83,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.083.html#rv07.083.08)
+[AIT. BR. 2,31.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?2,31) *baddho vā pariyatto vendraṃ trātāramupadhāvati*
+[TS. 2,2,7,5.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?2,2,7,5)
 
 - **RU:** — *pari* med. окружать, оцеплять
 [PAÑCAV. BR. 7,5,6. 15,3,7.] *dāśarājñe pariyattāya viśvataḥ*
-[ṚV. 7,83,8.]
-[AIT. BR. 2,31.] *baddho vā pariyatto vendraṃ trātāramupadhāvati*
-[TS. 2,2,7,5.]
+[ṚV. 7,83,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.083.html#rv07.083.08)
+[AIT. BR. 2,31.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?2,31) *baddho vā pariyatto vendraṃ trātāramupadhāvati*
+[TS. 2,2,7,5.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?2,2,7,5)
 - **EN:** — *pari* med. to surround, encircle: [PAÑCAV. BR. 7,5,6. 15,3,7.] *dāśarājñe pariyattāya viśvataḥ*
-[ṚV. 7,83,8.]
-[AIT. BR. 2,31.] *baddho vā pariyatto vendraṃ trātāramupadhāvati*
-[TS. 2,2,7,5.]
+[ṚV. 7,83,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.083.html#rv07.083.08)
+[AIT. BR. 2,31.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?2,31) *baddho vā pariyatto vendraṃ trātāramupadhāvati*
+[TS. 2,2,7,5.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?2,2,7,5)
   <sub>attested</sub>
 
 ## pra+yat
@@ -496,38 +496,38 @@ in or at; with loc. or acc.: *aśve vai sarvā devatā anvāyattāḥ*
 
 - **RU:** — *pra* med. воздействовать: *pra raśmibhiryatamānāḥ*
 - **EN:** — *pra* med. to act upon, exert influence: *pra raśmibhiryatamānāḥ*
-[TBR. 2,8,2,2.] to strive, make effort for, be intent upon, apply oneself; med. and act. (for metrical reasons) with loc.
+[TBR. 2,8,2,2.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?2,8,2,2) to strive, make effort for, be intent upon, apply oneself; med. and act. (for metrical reasons) with loc.
 [ĀŚV. ŚR. 4,12,3.]
 [LĀṬY. 8,8,1.] *dharme*
-[HARIV. 2870.]
-[R. 1,58,21] ([60,24] [GORR.]). [2,82,10] ([88,10] [GORR.]). [SUŚR. 1,127,14.] [ŚĀK. 113,3], v. l. *prayatettasya rakṣaṇe*
-[MBH. 14,1186.] [3,2726.] [14417] (where with the [ed. Bomb.] *bhede prayatiṣyanti* is to be read).
-[HARIV. 5284.] *mayā — tadvyākhyāyāṃ prayatyate*
-[Verz. d. Oxf. H. 264,a,20.] *ataḥ prayatitaṃ rājye — mayā tava*
-[MBH. 1,5508.] with dat.: *prayatetārthasiddhaye*
-[M. 7,215.] *rājyāya*
-[MBH. 1,3734.] *mokṣāya*
-[3,14944.] with *arthe, artham, hetos*
-[R. 2,39,7.] [3,57,31.]
-[MBH. 4,1205.]
-[HARIV. 1503] (act.). [PRAB. 19,9.] [BHĀG. P. 1,5,18.] with acc.: *dharmārthayogānprayatanti* (so the [ed. Bomb.])
-[MBH. 5,649.] *makhakriyām . prayatante*
-[14,46.] *tasmāttat (yuddhaṃ) prayatāmyaham*
-[HARIV. 8022.] with infin.: *vijetuṃ prayatetārīn*
-[Spr. 3242.]
-[MBH. 14,343. fgg.]
-[RAGH. 8,2.]
-[DAŚAK.] in [BENF. Chr. 196,13.] [BHAṬṬ. 19,15.]
+[HARIV. 2870.](https://sanskrit-lexicon-scans.github.io/hariv?2870)
+[R. 1,58,21](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,58,21) ([60,24](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,60,24) [GORR.]). [2,82,10](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,82,10) ([88,10](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,88,10) [GORR.]). [SUŚR. 1,127,14.] [ŚĀK. 113,3](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?113,3), v. l. *prayatettasya rakṣaṇe*
+[MBH. 14,1186.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.1186) [3,2726.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2726) [14417](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14417) (where with the [ed. Bomb.] *bhede prayatiṣyanti* is to be read).
+[HARIV. 5284.](https://sanskrit-lexicon-scans.github.io/hariv?5284) *mayā — tadvyākhyāyāṃ prayatyate*
+[Verz. d. Oxf. H. 264,a,20.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?264) *ataḥ prayatitaṃ rājye — mayā tava*
+[MBH. 1,5508.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5508) with dat.: *prayatetārthasiddhaye*
+[M. 7,215.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,215) *rājyāya*
+[MBH. 1,3734.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3734) *mokṣāya*
+[3,14944.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14944) with *arthe, artham, hetos*
+[R. 2,39,7.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,39,7) [3,57,31.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,57,31)
+[MBH. 4,1205.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1205)
+[HARIV. 1503](https://sanskrit-lexicon-scans.github.io/hariv?1503) (act.). [PRAB. 19,9.] [BHĀG. P. 1,5,18.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,5,18) with acc.: *dharmārthayogānprayatanti* (so the [ed. Bomb.])
+[MBH. 5,649.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.649) *makhakriyām . prayatante*
+[14,46.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.46) *tasmāttat (yuddhaṃ) prayatāmyaham*
+[HARIV. 8022.](https://sanskrit-lexicon-scans.github.io/hariv?8022) with infin.: *vijetuṃ prayatetārīn*
+[Spr. 3242.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3242)
+[MBH. 14,343. fgg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.343)
+[RAGH. 8,2.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?8,2)
+[DAŚAK.] in [BENF. Chr. 196,13.] [BHAṬṬ. 19,15.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?19,15)
 
 *tatkartuṃ prayatāmyaham*
-[R. 3,68,56.] without complement
-[VARĀH. BṚH. S. 106,2.] *prayatasva yathāvidhi*
-[MBH. 1,4754.] *yathāśakti*
-[R. 3,35,17.] *prayatiṣye tathā rājanyathā śreyo bhaviṣyati*
-[MBH. 1,2085.]
+[R. 3,68,56.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,68,56) without complement
+[VARĀH. BṚH. S. 106,2.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?106,2) *prayatasva yathāvidhi*
+[MBH. 1,4754.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4754) *yathāśakti*
+[R. 3,35,17.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,35,17) *prayatiṣye tathā rājanyathā śreyo bhaviṣyati*
+[MBH. 1,2085.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2085)
 [SUŚR. 2,32,18.]
-[ŚĀK. 18,14.] *prayattamanvicchati śūlinaṃ manaḥ* striving, wholly intent upon the matter
-[Spr. 4591.]
+[ŚĀK. 18,14.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?18,14) *prayattamanvicchati śūlinaṃ manaḥ* striving, wholly intent upon the matter
+[Spr. 4591.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4591)
   <sub>attested</sub>
 
 **deriv)** — Vgl. *prayatitavya* fgg.
@@ -536,74 +536,74 @@ in or at; with loc. or acc.: *aśve vai sarvā devatā anvāyattāḥ*
 - **EN:** — Vgl. *prayatitavya* fgg.
   <sub>lexicographic</sub>
 
-**1b)** [TBR. 2,8,2,2.] sich bestreben, sich bemühen um, bedacht sein auf, sich befleissigen; med. und act. (aus metrischen Rücksichten) mit loc.
+**1b)** [TBR. 2,8,2,2.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?2,8,2,2) sich bestreben, sich bemühen um, bedacht sein auf, sich befleissigen; med. und act. (aus metrischen Rücksichten) mit loc.
 [ĀŚV. ŚR. 4,12,3.]
 [LĀṬY. 8,8,1.] *dharme*
-[HARIV. 2870.]
-[R. 1,58,21] ([60,24] [GORR.]). [2,82,10] ([88,10] [GORR.]). [SUŚR. 1,127,14.] [ŚĀK. 113,3], v. l. *prayatettasya rakṣaṇe*
-[MBH. 14,1186.] [3,2726.] [14417] (wo mit der [ed. Bomb.] *bhede prayatiṣyanti* zu lesen ist).
-[HARIV. 5284.] *mayā — tadvyākhyāyāṃ prayatyate*
-[Verz. d. Oxf. H. 264,a,20.] *ataḥ prayatitaṃ rājye — mayā tava*
-[MBH. 1,5508.] mit dat.: *prayatetārthasiddhaye*
-[M. 7,215.] *rājyāya*
-[MBH. 1,3734.] *mokṣāya*
-[3,14944.] mit *arthe, artham, hetos*
-[R. 2,39,7.] [3,57,31.]
-[MBH. 4,1205.]
-[HARIV. 1503] (act.). [PRAB. 19,9.] [BHĀG. P. 1,5,18.] mit acc.: *dharmārthayogānprayatanti* (so die [ed. Bomb.])
-[MBH. 5,649.] *makhakriyām . prayatante*
-[14,46.] *tasmāttat (yuddhaṃ) prayatāmyaham*
-[HARIV. 8022.] mit infin.: *vijetuṃ prayatetārīn*
-[Spr. 3242.]
-[MBH. 14,343. fgg.]
-[RAGH. 8,2.]
-[DAŚAK.] in [BENF. Chr. 196,13.] [BHAṬṬ. 19,15.]
+[HARIV. 2870.](https://sanskrit-lexicon-scans.github.io/hariv?2870)
+[R. 1,58,21](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,58,21) ([60,24](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,60,24) [GORR.]). [2,82,10](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,82,10) ([88,10](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,88,10) [GORR.]). [SUŚR. 1,127,14.] [ŚĀK. 113,3](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?113,3), v. l. *prayatettasya rakṣaṇe*
+[MBH. 14,1186.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.1186) [3,2726.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2726) [14417](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14417) (wo mit der [ed. Bomb.] *bhede prayatiṣyanti* zu lesen ist).
+[HARIV. 5284.](https://sanskrit-lexicon-scans.github.io/hariv?5284) *mayā — tadvyākhyāyāṃ prayatyate*
+[Verz. d. Oxf. H. 264,a,20.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?264) *ataḥ prayatitaṃ rājye — mayā tava*
+[MBH. 1,5508.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5508) mit dat.: *prayatetārthasiddhaye*
+[M. 7,215.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,215) *rājyāya*
+[MBH. 1,3734.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3734) *mokṣāya*
+[3,14944.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14944) mit *arthe, artham, hetos*
+[R. 2,39,7.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,39,7) [3,57,31.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,57,31)
+[MBH. 4,1205.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1205)
+[HARIV. 1503](https://sanskrit-lexicon-scans.github.io/hariv?1503) (act.). [PRAB. 19,9.] [BHĀG. P. 1,5,18.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,5,18) mit acc.: *dharmārthayogānprayatanti* (so die [ed. Bomb.])
+[MBH. 5,649.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.649) *makhakriyām . prayatante*
+[14,46.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.46) *tasmāttat (yuddhaṃ) prayatāmyaham*
+[HARIV. 8022.](https://sanskrit-lexicon-scans.github.io/hariv?8022) mit infin.: *vijetuṃ prayatetārīn*
+[Spr. 3242.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3242)
+[MBH. 14,343. fgg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.343)
+[RAGH. 8,2.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?8,2)
+[DAŚAK.] in [BENF. Chr. 196,13.] [BHAṬṬ. 19,15.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?19,15)
 
 *tatkartuṃ prayatāmyaham*
-[R. 3,68,56.] ohne Ergänzung
-[VARĀH. BṚH. S. 106,2.] *prayatasva yathāvidhi*
-[MBH. 1,4754.] *yathāśakti*
-[R. 3,35,17.] *prayatiṣye tathā rājanyathā śreyo bhaviṣyati*
-[MBH. 1,2085.]
+[R. 3,68,56.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,68,56) ohne Ergänzung
+[VARĀH. BṚH. S. 106,2.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?106,2) *prayatasva yathāvidhi*
+[MBH. 1,4754.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4754) *yathāśakti*
+[R. 3,35,17.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,35,17) *prayatiṣye tathā rājanyathā śreyo bhaviṣyati*
+[MBH. 1,2085.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2085)
 [SUŚR. 2,32,18.]
 
-- **RU:** [TBR. 2,8,2,2.] стремиться, стараться, прилагать усилия к, заботиться о, усердствовать; med. и act. (из метрических соображений) с loc.
+- **RU:** [TBR. 2,8,2,2.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?2,8,2,2) стремиться, стараться, прилагать усилия к, заботиться о, усердствовать; med. и act. (из метрических соображений) с loc.
 [ĀŚV. ŚR. 4,12,3.]
 [LĀṬY. 8,8,1.] *dharme*
-[HARIV. 2870.]
-[R. 1,58,21] ([60,24] [GORR.]). [2,82,10] ([88,10] [GORR.]). [SUŚR. 1,127,14.] [ŚĀK. 113,3], v. l. *prayatettasya rakṣaṇe*
-[MBH. 14,1186.] [3,2726.] [14417] (где с [ed. Bomb.] следует читать *bhede prayatiṣyanti*).
-[HARIV. 5284.] *mayā — tadvyākhyāyāṃ prayatyate*
-[Verz. d. Oxf. H. 264,a,20.] *ataḥ prayatitaṃ rājye — mayā tava*
-[MBH. 1,5508.] с dat.: *prayatetārthasiddhaye*
-[M. 7,215.] *rājyāya*
-[MBH. 1,3734.] *mokṣāya*
-[3,14944.] с *arthe, artham, hetos*
-[R. 2,39,7.] [3,57,31.]
-[MBH. 4,1205.]
-[HARIV. 1503] (act.). [PRAB. 19,9.] [BHĀG. P. 1,5,18.] с acc.: *dharmārthayogānprayatanti* (так [ed. Bomb.])
-[MBH. 5,649.] *makhakriyām . prayatante*
-[14,46.] *tasmāttat (yuddhaṃ) prayatāmyaham*
-[HARIV. 8022.] с infin.: *vijetuṃ prayatetārīn*
-[Spr. 3242.]
-[MBH. 14,343. fgg.]
-[RAGH. 8,2.]
-[DAŚAK.] в [BENF. Chr. 196,13.] [BHAṬṬ. 19,15.]
+[HARIV. 2870.](https://sanskrit-lexicon-scans.github.io/hariv?2870)
+[R. 1,58,21](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,58,21) ([60,24](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,60,24) [GORR.]). [2,82,10](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,82,10) ([88,10](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,88,10) [GORR.]). [SUŚR. 1,127,14.] [ŚĀK. 113,3](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?113,3), v. l. *prayatettasya rakṣaṇe*
+[MBH. 14,1186.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.1186) [3,2726.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2726) [14417](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14417) (где с [ed. Bomb.] следует читать *bhede prayatiṣyanti*).
+[HARIV. 5284.](https://sanskrit-lexicon-scans.github.io/hariv?5284) *mayā — tadvyākhyāyāṃ prayatyate*
+[Verz. d. Oxf. H. 264,a,20.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?264) *ataḥ prayatitaṃ rājye — mayā tava*
+[MBH. 1,5508.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5508) с dat.: *prayatetārthasiddhaye*
+[M. 7,215.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,215) *rājyāya*
+[MBH. 1,3734.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3734) *mokṣāya*
+[3,14944.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14944) с *arthe, artham, hetos*
+[R. 2,39,7.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,39,7) [3,57,31.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,57,31)
+[MBH. 4,1205.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1205)
+[HARIV. 1503](https://sanskrit-lexicon-scans.github.io/hariv?1503) (act.). [PRAB. 19,9.] [BHĀG. P. 1,5,18.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,5,18) с acc.: *dharmārthayogānprayatanti* (так [ed. Bomb.])
+[MBH. 5,649.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.649) *makhakriyām . prayatante*
+[14,46.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.46) *tasmāttat (yuddhaṃ) prayatāmyaham*
+[HARIV. 8022.](https://sanskrit-lexicon-scans.github.io/hariv?8022) с infin.: *vijetuṃ prayatetārīn*
+[Spr. 3242.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3242)
+[MBH. 14,343. fgg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.343)
+[RAGH. 8,2.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?8,2)
+[DAŚAK.] в [BENF. Chr. 196,13.] [BHAṬṬ. 19,15.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?19,15)
 
 *tatkartuṃ prayatāmyaham*
-[R. 3,68,56.] без дополнения
-[VARĀH. BṚH. S. 106,2.] *prayatasva yathāvidhi*
-[MBH. 1,4754.] *yathāśakti*
-[R. 3,35,17.] *prayatiṣye tathā rājanyathā śreyo bhaviṣyati*
-[MBH. 1,2085.]
+[R. 3,68,56.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,68,56) без дополнения
+[VARĀH. BṚH. S. 106,2.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?106,2) *prayatasva yathāvidhi*
+[MBH. 1,4754.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4754) *yathāśakti*
+[R. 3,35,17.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,35,17) *prayatiṣye tathā rājanyathā śreyo bhaviṣyati*
+[MBH. 1,2085.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2085)
 [SUŚR. 2,32,18.]
   <sub>attested</sub>
 
-**1c)** [ŚĀK. 18,14.] *prayattamanvicchati śūlinaṃ manaḥ* sich bestrebend, ganz bei der Sache seiend
-[Spr. 4591.]
+**1c)** [ŚĀK. 18,14.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?18,14) *prayattamanvicchati śūlinaṃ manaḥ* sich bestrebend, ganz bei der Sache seiend
+[Spr. 4591.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4591)
 
-- **RU:** [ŚĀK. 18,14.] *prayattamanvicchati śūlinaṃ manaḥ* стремящийся, всецело поглощённый делом
-[Spr. 4591.]
+- **RU:** [ŚĀK. 18,14.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?18,14) *prayattamanvicchati śūlinaṃ manaḥ* стремящийся, всецело поглощённый делом
+[Spr. 4591.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4591)
   <sub>attested</sub>
 
 ## saṃpra+yat
@@ -627,27 +627,27 @@ in or at; with loc. or acc.: *aśve vai sarvā devatā anvāyattāḥ*
 
 **1)** — *prati* med.
  1) entgegenwirken: *rakṣāṃsi*
-[ŚAT. BR. 9,2,3,3.] *āśramapīḍā yathā na bhaviṣyati tathā pratiyatiṣyāmahe*
+[ŚAT. BR. 9,2,3,3.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?9,2,3,3) *āśramapīḍā yathā na bhaviṣyati tathā pratiyatiṣyāmahe*
 (v. l. für *prayati˚*)
 
 - **RU:** — *prati* med.
  1) противодействовать: *rakṣāṃsi*
-[ŚAT. BR. 9,2,3,3.] *āśramapīḍā yathā na bhaviṣyati tathā pratiyatiṣyāmahe*
+[ŚAT. BR. 9,2,3,3.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?9,2,3,3) *āśramapīḍā yathā na bhaviṣyati tathā pratiyatiṣyāmahe*
 (v. l. вместо *prayati˚*)
 - **EN:** — *prati* med.
  1) to act against, counteract: *rakṣāṃsi*
-[ŚAT. BR. 9,2,3,3.] *āśramapīḍā yathā na bhaviṣyati tathā pratiyatiṣyāmahe*
+[ŚAT. BR. 9,2,3,3.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?9,2,3,3) *āśramapīḍā yathā na bhaviṣyati tathā pratiyatiṣyāmahe*
 (v. l. for *prayati˚*)
-[ŚĀK. 18,14.]
+[ŚĀK. 18,14.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?18,14)
   <sub>attested</sub>
 
-**2)** [ŚĀK. 18,14.] — caus. zurückgeben, erwiedern: *vairāṇi, vairam* so v. a. Rache nehmen
-[MBH. 3,14728.] [9,3256.]
+**2)** [ŚĀK. 18,14.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?18,14) — caus. zurückgeben, erwiedern: *vairāṇi, vairam* so v. a. Rache nehmen
+[MBH. 3,14728.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14728) [9,3256.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.3256)
 
-- **RU:** [ŚĀK. 18,14.] — caus. возвращать, отвечать: *vairāṇi, vairam* так v. a. мстить
-[MBH. 3,14728.] [9,3256.]
+- **RU:** [ŚĀK. 18,14.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?18,14) — caus. возвращать, отвечать: *vairāṇi, vairam* так v. a. мстить
+[MBH. 3,14728.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14728) [9,3256.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.3256)
 - **EN:** — caus. to give back, return, requite: *vairāṇi, vairam*; so v. a. to take revenge
-[MBH. 3,14728.] [9,3256.]
+[MBH. 3,14728.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14728) [9,3256.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.3256)
   <sub>attested</sub>
 
 **deriv)** — Vgl. *pratiyātana* .
@@ -662,42 +662,42 @@ in or at; with loc. or acc.: *aśve vai sarvā devatā anvāyattāḥ*
 
 
 **0)** — *vi* med. etwa in verschiedene Reihen bringen
-[AV. 18,1,17.]
-- **EN:** — *vi* med. approximately 'to arrange in different rows': [AV. 18,1,17.]
+[AV. 18,1,17.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av18.001.html#av18.001.17)
+- **EN:** — *vi* med. approximately 'to arrange in different rows': [AV. 18,1,17.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av18.001.html#av18.001.17)
 
 **1)** 1) anreihen, anbringen: *trivṛtameva yajñamukhe viyātayati*
-[TS. 5,1,1,3.] [3,2.] [3.]
+[TS. 5,1,1,3.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?5,1,1,3) [3,2.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?5,1,3,2) [3.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?5,1,3,3)
 
 - **RU:** 1) нанизывать, прикреплять: *trivṛtameva yajñamukhe viyātayati*
-[TS. 5,1,1,3.] [3,2.] [3.]
+[TS. 5,1,1,3.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?5,1,1,3) [3,2.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?5,1,3,2) [3.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?5,1,3,3)
 - **EN:** — caus.
  1) to string together, attach, fit in: *trivṛtameva yajñamukhe viyātayati*
-[TS. 5,1,1,3.] [3,2.] [3.]
+[TS. 5,1,1,3.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?5,1,1,3) [3,2.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?5,1,3,2) [3.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?5,1,3,3)
   <sub>attested</sub>
 
 **2)** — 2) büssen: *tadātmanā prajayā piśācā vi yātayantām*
-[AV. 5,29,6.]
+[AV. 5,29,6.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av05.029.html#av05.029.06)
 
 - **RU:** — 2) искупать (вину), отбывать наказание: *tadātmanā prajayā piśācā vi yātayantām*
-[AV. 5,29,6.]
+[AV. 5,29,6.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av05.029.html#av05.029.06)
 - **EN:** — 2) to atone for, expiate: *tadātmanā prajayā piśācā vi yātayantām*
-[AV. 5,29,6.]
+[AV. 5,29,6.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av05.029.html#av05.029.06)
   <sub>attested</sub>
 
 **3)** — 3) peinigen, quälen: *taṃ yamaḥ pāpakarmāṇaṃ viyātayati*
-[Spr. 2405.]
+[Spr. 2405.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2405)
 
 - **RU:** — 3) мучить, терзать: *taṃ yamaḥ pāpakarmāṇaṃ viyātayati*
-[Spr. 2405.]
+[Spr. 2405.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2405)
 - **EN:** — 3) to torment, afflict: *taṃ yamaḥ pāpakarmāṇaṃ viyātayati*
-[Spr. 2405.]
+[Spr. 2405.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2405)
   <sub>attested</sub>
 
 **introductory-gloss)** — *vi* med. etwa in verschiedene Reihen bringen
-[AV. 18,1,17.] — caus.
+[AV. 18,1,17.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av18.001.html#av18.001.17) — caus.
 
 - **RU:** — *vi* med. приблизительно располагать в различные ряды
-[AV. 18,1,17.] — caus.
+[AV. 18,1,17.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av18.001.html#av18.001.17) — caus.
   <sub>attested</sub>
 
 ## adhi+vi+yat
@@ -721,104 +721,104 @@ in or at; with loc. or acc.: *aśve vai sarvā devatā anvāyattāḥ*
 
 **1)** — *sam*
  1) act. vereinigen: *saṃ śrudhīyataścidyatatho mahitvā*
-[ṚV. 6,67,3.]
+[ṚV. 6,67,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.067.html#rv06.067.03)
 
 - **RU:** — *sam*
  1) act. соединять: *saṃ śrudhīyataścidyatatho mahitvā*
-[ṚV. 6,67,3.]
+[ṚV. 6,67,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.067.html#rv06.067.03)
 - **EN:** — *sam*
  1) act. to unite, join together: *saṃ śrudhīyataścidyatatho mahitvā*
-[ṚV. 6,67,3.]
+[ṚV. 6,67,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.067.html#rv06.067.03)
   <sub>attested</sub>
 
 **2)** — 2) med. sich aneinander reihen: *saṃ śūraṇāso divyāso atyāḥ . haṃsā iva śreṇiśo yatante*
-[ṚV. 1,163,10.] *saṃ dānucitrā uṣaso yatantam*
-[5,59,8.]
+[ṚV. 1,163,10.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.163.html#rv01.163.10) *saṃ dānucitrā uṣaso yatantam*
+[5,59,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.059.html#rv05.059.08)
 
 - **RU:** — 2) med. выстраиваться в ряд: *saṃ śūraṇāso divyāso atyāḥ . haṃsā iva śreṇiśo yatante*
-[ṚV. 1,163,10.] *saṃ dānucitrā uṣaso yatantam*
-[5,59,8.]
+[ṚV. 1,163,10.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.163.html#rv01.163.10) *saṃ dānucitrā uṣaso yatantam*
+[5,59,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.059.html#rv05.059.08)
 - **EN:** — 2) med. to range oneself alongside one another, fall into line: *saṃ śūraṇāso divyāso atyāḥ . haṃsā iva śreṇiśo yatante*
-[ṚV. 1,163,10.] *saṃ dānucitrā uṣaso yatantam*
-[5,59,8.]
+[ṚV. 1,163,10.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.163.html#rv01.163.10) *saṃ dānucitrā uṣaso yatantam*
+[5,59,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.059.html#rv05.059.08)
   <sub>attested</sub>
 
 **3)** — 3) med. sich vereinigen, zusammentreffen, sich verbinden mit: *saṃ bhānunā yatate sūryasya*
-[ṚV. 5,37,1.] *saṃ raśmibhiryatate darśato rathaḥ*
-[9,111,3.]
+[ṚV. 5,37,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.037.html#rv05.037.01) *saṃ raśmibhiryatate darśato rathaḥ*
+[9,111,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.111.html#rv09.111.03)
 
 - **RU:** — 3) med. соединяться, встречаться, вступать в союз с: *saṃ bhānunā yatate sūryasya*
-[ṚV. 5,37,1.] *saṃ raśmibhiryatate darśato rathaḥ*
-[9,111,3.]
+[ṚV. 5,37,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.037.html#rv05.037.01) *saṃ raśmibhiryatate darśato rathaḥ*
+[9,111,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.111.html#rv09.111.03)
 - **EN:** — 3) med. to unite, come together, associate with: *saṃ bhānunā yatate sūryasya*
-[ṚV. 5,37,1.] *saṃ raśmibhiryatate darśato rathaḥ*
-[9,111,3.]
+[ṚV. 5,37,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.037.html#rv05.037.01) *saṃ raśmibhiryatate darśato rathaḥ*
+[9,111,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.111.html#rv09.111.03)
   <sub>attested</sub>
 
 **4)** — 4) med. an einander gerathen, in Streit kommen: *saṃ yanmahī mithatī spardhamāne tanūrucā śūrasātā yataite*
-[ṚV. 7,93,5.]
-[AIT. BR. 1,14.] [23.]
-[TBR. 1,5,2,3.] *devāsurāḥ saṃyattā āsan*
-[TS. 1,5,1,1.] *samayatanta*
+[ṚV. 7,93,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.093.html#rv07.093.05)
+[AIT. BR. 1,14.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?1,14) [23.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?1,23)
+[TBR. 1,5,2,3.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?1,5,2,3) *devāsurāḥ saṃyattā āsan*
+[TS. 1,5,1,1.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?1,5,1,1) *samayatanta*
 [ŚĀṄKH. ŚR. 14,23,1.]
-[ŚAT. BR. 1,5,3,17.] [3,5,1,21.]
+[ŚAT. BR. 1,5,3,17.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,5,3,17) [3,5,1,21.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,5,1,21)
 [KĀṬH. 24,10. 25,6.]
 [CHĀND. UP. 1,2,1.] *saṃgrāmaṃ saṃyatiṣyamāṇaḥ*
-[AIT. BR. 8,10.] *saṃgrāme saṃyatte*
-[TS. 2,2,8,2.]
+[AIT. BR. 8,10.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?8,10) *saṃgrāme saṃyatte*
+[TS. 2,2,8,2.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?2,2,8,2)
 
 - **RU:** — 4) med. столкнуться, вступить в борьбу, поссориться: *saṃ yanmahī mithatī spardhamāne tanūrucā śūrasātā yataite*
-[ṚV. 7,93,5.]
-[AIT. BR. 1,14.] [23.]
-[TBR. 1,5,2,3.] *devāsurāḥ saṃyattā āsan*
-[TS. 1,5,1,1.] *samayatanta*
+[ṚV. 7,93,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.093.html#rv07.093.05)
+[AIT. BR. 1,14.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?1,14) [23.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?1,23)
+[TBR. 1,5,2,3.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?1,5,2,3) *devāsurāḥ saṃyattā āsan*
+[TS. 1,5,1,1.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?1,5,1,1) *samayatanta*
 [ŚĀṄKH. ŚR. 14,23,1.]
-[ŚAT. BR. 1,5,3,17.] [3,5,1,21.]
+[ŚAT. BR. 1,5,3,17.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,5,3,17) [3,5,1,21.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,5,1,21)
 [KĀṬH. 24,10. 25,6.]
 [CHĀND. UP. 1,2,1.] *saṃgrāmaṃ saṃyatiṣyamāṇaḥ*
-[AIT. BR. 8,10.] *saṃgrāme saṃyatte*
-[TS. 2,2,8,2.]
+[AIT. BR. 8,10.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?8,10) *saṃgrāme saṃyatte*
+[TS. 2,2,8,2.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?2,2,8,2)
 - **EN:** — 4) med. to come into conflict with one another, enter into strife: *saṃ yanmahī mithatī spardhamāne tanūrucā śūrasātā yataite*
-[ṚV. 7,93,5.]
-[AIT. BR. 1,14.] [23.]
-[TBR. 1,5,2,3.] *devāsurāḥ saṃyattā āsan*
-[TS. 1,5,1,1.] *samayatanta*
+[ṚV. 7,93,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.093.html#rv07.093.05)
+[AIT. BR. 1,14.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?1,14) [23.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?1,23)
+[TBR. 1,5,2,3.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?1,5,2,3) *devāsurāḥ saṃyattā āsan*
+[TS. 1,5,1,1.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?1,5,1,1) *samayatanta*
 [ŚĀṄKH. ŚR. 14,23,1.]
-[ŚAT. BR. 1,5,3,17.] [3,5,1,21.]
+[ŚAT. BR. 1,5,3,17.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,5,3,17) [3,5,1,21.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,5,1,21)
 [KĀṬH. 24,10. 25,6.]
 [CHĀND. UP. 1,2,1.] *saṃgrāmaṃ saṃyatiṣyamāṇaḥ*
-[AIT. BR. 8,10.] *saṃgrāme saṃyatte*
-[TS. 2,2,8,2.]
+[AIT. BR. 8,10.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?8,10) *saṃgrāme saṃyatte*
+[TS. 2,2,8,2.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?2,2,8,2)
   <sub>attested</sub>
 
 **5)** — 5) *saṃyatta* vorbereitet, ganz bei der Sache seiend, der seine Maassregeln getroffen hat, auf der Hut seiend, sich vorsehend: *samare*
-[MBH. 7,5179.] *tathā yudhyeta saṃyatto*
+[MBH. 7,5179.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.5179) *tathā yudhyeta saṃyatto*
 (v. l. für *saṃpanno) vijayeta ripūnyathā*
-[M. 7,200.]
-[HARIV. 8067.]
-[BHĀG. P. 10,44,41.] *su˚*
-[HARIV. 15389] (*susaṃpanna* die neuere Ausg.).
-[BHĀG. P. 8,7,2] (nach der Lesart der [ed. Bomb.]). *a˚*
-[6,28.]
+[M. 7,200.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,200)
+[HARIV. 8067.](https://sanskrit-lexicon-scans.github.io/hariv?8067)
+[BHĀG. P. 10,44,41.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,44,41) *su˚*
+[HARIV. 15389](https://sanskrit-lexicon-scans.github.io/hariv?15389) (*susaṃpanna* die neuere Ausg.).
+[BHĀG. P. 8,7,2](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,7,2) (nach der Lesart der [ed. Bomb.]). *a˚*
+[6,28.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,6,28)
 
 - **RU:** — 5) *saṃyatta* готовый, всецело поглощённый делом, принявший меры, бдительный, осторожный: *samare*
-[MBH. 7,5179.] *tathā yudhyeta saṃyatto*
+[MBH. 7,5179.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.5179) *tathā yudhyeta saṃyatto*
 (v. l. вместо *saṃpanno) vijayeta ripūnyathā*
-[M. 7,200.]
-[HARIV. 8067.]
-[BHĀG. P. 10,44,41.] *su˚*
-[HARIV. 15389] (*susaṃpanna* более поздняя Ausg.).
-[BHĀG. P. 8,7,2] (по чтению [ed. Bomb.]). *a˚*
-[6,28.]
+[M. 7,200.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,200)
+[HARIV. 8067.](https://sanskrit-lexicon-scans.github.io/hariv?8067)
+[BHĀG. P. 10,44,41.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,44,41) *su˚*
+[HARIV. 15389](https://sanskrit-lexicon-scans.github.io/hariv?15389) (*susaṃpanna* более поздняя Ausg.).
+[BHĀG. P. 8,7,2](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,7,2) (по чтению [ed. Bomb.]). *a˚*
+[6,28.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,6,28)
 - **EN:** — 5) *saṃyatta* prepared, wholly intent upon the matter, having taken one's measures, on guard, taking precautions: *samare*
-[MBH. 7,5179.] *tathā yudhyeta saṃyatto*
+[MBH. 7,5179.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.5179) *tathā yudhyeta saṃyatto*
 (v. l. for *saṃpanno) vijayeta ripūnyathā*
-[M. 7,200.]
-[HARIV. 8067.]
-[BHĀG. P. 10,44,41.] *su˚*
-[HARIV. 15389] (*susaṃpanna* the later Ausg.).
-[BHĀG. P. 8,7,2] (according to the reading of the [ed. Bomb.]). *a˚*
-[6,28.]
+[M. 7,200.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,200)
+[HARIV. 8067.](https://sanskrit-lexicon-scans.github.io/hariv?8067)
+[BHĀG. P. 10,44,41.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,44,41) *su˚*
+[HARIV. 15389](https://sanskrit-lexicon-scans.github.io/hariv?15389) (*susaṃpanna* the later Ausg.).
+[BHĀG. P. 8,7,2](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,7,2) (according to the reading of the [ed. Bomb.]). *a˚*
+[6,28.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,6,28)
   <sub>attested</sub>
 
 **deriv)** — Vgl. *asaṃyatta* .
@@ -833,16 +833,16 @@ in or at; with loc. or acc.: *aśve vai sarvā devatā anvāyattāḥ*
 
 
 **5h-alpha)** — *abhisam*, partic. *˚yatta* besorgt, gelenkt von: *hayottamāḥ*
-[MBH. 7,5173.] *abhisaṃpanna* [ed. Bomb.]; *˚saṃyata* würde nicht zum Metrum passen; vgl. simpl.
+[MBH. 7,5173.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.5173) *abhisaṃpanna* [ed. Bomb.]; *˚saṃyata* würde nicht zum Metrum passen; vgl. simpl.
  5) h)
  α) am Ende.
 
 - **RU:** — *abhisam*, partic. *˚yatta* управляемый, направляемый: *hayottamāḥ*
-[MBH. 7,5173.] *abhisaṃpanna* [ed. Bomb.]; *˚saṃyata* не соответствовало бы метру; vgl. simpl.
+[MBH. 7,5173.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.5173) *abhisaṃpanna* [ed. Bomb.]; *˚saṃyata* не соответствовало бы метру; vgl. simpl.
  5) h)
  α) в конце.
 - **EN:** — *abhisam*, partic. *˚yatta* concerned with, directed by: *hayottamāḥ*
-[MBH. 7,5173.] *abhisaṃpanna* [ed. Bomb.]; *˚saṃyata* would not suit the metre; vgl. simpl.
+[MBH. 7,5173.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.5173) *abhisaṃpanna* [ed. Bomb.]; *˚saṃyata* would not suit the metre; vgl. simpl.
  5) h)
  α) at the end.
   <sub>attested</sub>
@@ -853,14 +853,14 @@ in or at; with loc. or acc.: *aśve vai sarvā devatā anvāyattāḥ*
 
 
 **1)** — *pratisam* med. bekämpfen
-[ŚAT. BR. 11,4,1,3.] partic. *˚yatta* vollkommen vorbereitet, — gerüstet
-[MBH. 7,3534.]
+[ŚAT. BR. 11,4,1,3.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?11,4,1,3) partic. *˚yatta* vollkommen vorbereitet, — gerüstet
+[MBH. 7,3534.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.3534)
 
 - **RU:** — *pratisam* med. сражаться с, бороться против
-[ŚAT. BR. 11,4,1,3.] partic. *˚yatta* вполне подготовленный, — вооружённый
-[MBH. 7,3534.]
-- **EN:** — *pratisam* med. to combat, fight against: [ŚAT. BR. 11,4,1,3.] partic. *˚yatta* fully prepared, — equipped
-[MBH. 7,3534.]
+[ŚAT. BR. 11,4,1,3.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?11,4,1,3) partic. *˚yatta* вполне подготовленный, — вооружённый
+[MBH. 7,3534.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.3534)
+- **EN:** — *pratisam* med. to combat, fight against: [ŚAT. BR. 11,4,1,3.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?11,4,1,3) partic. *˚yatta* fully prepared, — equipped
+[MBH. 7,3534.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.3534)
   <sub>attested</sub>
 
 ## yat
@@ -960,9 +960,9 @@ in or at; with loc. or acc.: *aśve vai sarvā devatā anvāyattāḥ*
 - **RU:** — 2〉 Act. прилагать, прикреплять.
   <sub>attested</sub>
 
-**PW_caus_3)** — 3〉 Act. kämpfen lassen [AIT. BR. 1,14].
+**PW_caus_3)** — 3〉 Act. kämpfen lassen [AIT. BR. 1,14](https://sanskrit-lexicon-scans.github.io/aitbr/app1?1,14).
 
-- **RU:** — 3〉 Act. заставлять сражаться [AIT. BR. 1,14].
+- **RU:** — 3〉 Act. заставлять сражаться [AIT. BR. 1,14](https://sanskrit-lexicon-scans.github.io/aitbr/app1?1,14).
   <sub>attested</sub>
 
 **PW_caus_4)** — 4〉 Act. Jmd (Gen.) Etwas (Acc.) anʼs Herz legen.
@@ -980,9 +980,9 @@ in or at; with loc. or acc.: *aśve vai sarvā devatā anvāyattāḥ*
 - **RU:** — 6〉 Med. уступать кому-либо (Acc. или Gen.) что-либо (Acc.).
   <sub>attested</sub>
 
-**PW_caus_7)** — 7〉 Act. Med. Jmd peinigen, quälen. — Nach dem [DHĀTUP.] *nikāre* (*nirākāre*, *khede*) und *upaskāre* *yātiṣye* [MĀRK. P. 121,39] fehlerhaft für *yatiṣye*.
+**PW_caus_7)** — 7〉 Act. Med. Jmd peinigen, quälen. — Nach dem [DHĀTUP.] *nikāre* (*nirākāre*, *khede*) und *upaskāre* *yātiṣye* [MĀRK. P. 121,39](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?121,39) fehlerhaft für *yatiṣye*.
 
-- **RU:** — 7〉 Act. Med. мучить, терзать кого-либо. — По [DHĀTUP.] *nikāre* (*nirākāre*, *khede*) и *upaskāre* *yātiṣye* [MĀRK. P. 121,39] ошибочно вместо *yatiṣye*.
+- **RU:** — 7〉 Act. Med. мучить, терзать кого-либо. — По [DHĀTUP.] *nikāre* (*nirākāre*, *khede*) и *upaskāre* *yātiṣye* [MĀRK. P. 121,39](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?121,39) ошибочно вместо *yatiṣye*.
   <sub>attested</sub>
 
 **PW_alam)** — Mit *adhi* Med. sich einen Schmuck (Acc.) anlegen auf (Loc.).
@@ -1199,9 +1199,9 @@ in or at; with loc. or acc.: *aśve vai sarvā devatā anvāyattāḥ*
 - **RU:** — 3〉 Med. соединяться, встречаться, вступать в связь с (Instr.).
   <sub>attested</sub>
 
-**PW_sam_4)** — 4〉 Med. an einander gerathen, in Streit kommen. *saṃgrāmam* einen Kampf beginnen. *saṃyatta* Pl. in Streit gerathen, *saṃgrāmai saṃyattai* beim Ausbruch des Kampfes [TS. 2,1,3,1.] [2.] [8,4].
+**PW_sam_4)** — 4〉 Med. an einander gerathen, in Streit kommen. *saṃgrāmam* einen Kampf beginnen. *saṃyatta* Pl. in Streit gerathen, *saṃgrāmai saṃyattai* beim Ausbruch des Kampfes [TS. 2,1,3,1.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?2,1,3,1) [2.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?2,1,3,2) [8,4](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?2,1,8,4).
 
-- **RU:** — 4〉 Med. столкнуться, вступить в борьбу. *saṃgrāmam* начать бой. *saṃyatta* Pl. вступить в конфликт, *saṃgrāmai saṃyattai* при начале сражения [TS. 2,1,3,1.] [2.] [8,4].
+- **RU:** — 4〉 Med. столкнуться, вступить в борьбу. *saṃgrāmam* начать бой. *saṃyatta* Pl. вступить в конфликт, *saṃgrāmai saṃyattai* при начале сражения [TS. 2,1,3,1.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?2,1,3,1) [2.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?2,1,3,2) [8,4](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?2,1,8,4).
   <sub>attested</sub>
 
 **PW_sam_5)** — 5〉 *saṃyatta* vorbereitet, ganz bei der Sache seiend, seine Maassregeln getroffen habend, auf der Hut seiend, sich vorsehend.

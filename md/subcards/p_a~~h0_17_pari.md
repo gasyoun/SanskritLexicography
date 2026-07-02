@@ -4,15 +4,15 @@
 
 
 **1a)** — *pari* vor und nach Jmd trinken: *tānvai tvamubhayataḥ paripiba*
-[AIT. BR. 3,30.] austrinken, aussaugen: *mattadvirephaparipītamadhupraseka (kovidāra)*
+[AIT. BR. 3,30.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?3,30) austrinken, aussaugen: *mattadvirephaparipītamadhupraseka (kovidāra)*
 [ṚT. 3,6.] *vāyvarkaparipītāmbu (taḍāga)*
-[R. 4,15,34.] *paripīta* getränkt mit
+[R. 4,15,34.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,15,34) *paripīta* getränkt mit
 [SUŚR. 1,60,5.] *taila˚*
 [2,35,14. 72,14.]
 - **EN:** — *pari* to drink before and after someone: *tānvai tvamubhayataḥ paripiba*
-[AIT. BR. 3,30.] to drink up, to drain: *mattadvirephaparipītamadhupraseka (kovidāra)*
+[AIT. BR. 3,30.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?3,30) to drink up, to drain: *mattadvirephaparipītamadhupraseka (kovidāra)*
 [ṚT. 3,6.] *vāyvarkaparipītāmbu (taḍāga)*
-[R. 4,15,34.] *paripīta* soaked with
+[R. 4,15,34.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,15,34) *paripīta* soaked with
 [SUŚR. 1,60,5.] *taila˚*
 [2,35,14. 72,14.]
 
@@ -27,15 +27,15 @@
 - **RU:** — *pari* пить до и после кого-л.: *tānvai tvamubhayataḥ paripiba*
   <sub>attested</sub>
 
-**2)** [AIT. BR. 3,30.] austrinken, aussaugen: *mattadvirephaparipītamadhupraseka (kovidāra)*
+**2)** [AIT. BR. 3,30.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?3,30) austrinken, aussaugen: *mattadvirephaparipītamadhupraseka (kovidāra)*
 [ṚT. 3,6.] *vāyvarkaparipītāmbu (taḍāga)*
-[R. 4,15,34.] *paripīta* getränkt mit
+[R. 4,15,34.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,15,34) *paripīta* getränkt mit
 [SUŚR. 1,60,5.] *taila˚*
 [2,35,14. 72,14.]
 
-- **RU:** [AIT. BR. 3,30.] выпивать до дна, высасывать: *mattadvirephaparipītamadhupraseka (kovidāra)*
+- **RU:** [AIT. BR. 3,30.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?3,30) выпивать до дна, высасывать: *mattadvirephaparipītamadhupraseka (kovidāra)*
 [ṚT. 3,6.] *vāyvarkaparipītāmbu (taḍāga)*
-[R. 4,15,34.] *paripīta* пропитанный
+[R. 4,15,34.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,15,34) *paripīta* пропитанный
 [SUŚR. 1,60,5.] *taila˚*
 [2,35,14. 72,14.]
   <sub>attested</sub>

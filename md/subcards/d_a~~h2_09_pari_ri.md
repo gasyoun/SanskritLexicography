@@ -4,8 +4,8 @@
 
 
 **1)** — *pariṇi*, *˚dyati*
-[P. 8,4,17], Sch.
+[P. 8,4,17](https://ashtadhyayi.com/sutraani/8/4/17), Sch.
 
 - **RU:** — *pariṇi*, *˚dyati*
-[P. 8,4,17], Sch.
+[P. 8,4,17](https://ashtadhyayi.com/sutraani/8/4/17), Sch.
   <sub>DCS 12366 · attested</sub>

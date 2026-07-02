@@ -4,10 +4,10 @@
 
 
 **1)** — *udā* erheben: *udādāya pṛthivīm*
-[VS. 1,28.]
+[VS. 1,28.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?1,28)
 
 - **RU:** — *udā* поднимать: *udādāya pṛthivīm*
-[VS. 1,28.]
+[VS. 1,28.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?1,28)
   <sub>DCS 7 · attested</sub>
 
 **2)** — Vgl. *udātta* .

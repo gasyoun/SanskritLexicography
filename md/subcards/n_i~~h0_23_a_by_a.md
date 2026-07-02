@@ -4,10 +4,10 @@
 
 
 **1)** — *abhyā* eingiessen, einmengen: *dadhi madhu sarpirātapavarṣyā āpo 'bhyānīya*
-[AIT. BR. 8,17.]
+[AIT. BR. 8,17.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?8,17)
 
 - **RU:** — *abhyā* вливать, примешивать: *dadhi madhu sarpirātapavarṣyā āpo 'bhyānīya*
-[AIT. BR. 8,17.]
+[AIT. BR. 8,17.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?8,17)
 - **EN:** — *abhyā* to pour in, mix in: *dadhi madhu sarpirātapavarṣyā āpo 'bhyānīya*
-[AIT. BR. 8,17.]
+[AIT. BR. 8,17.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?8,17)
   <sub>attested</sub>

@@ -4,12 +4,12 @@
 
 
 **1)** **1.** √*rakṣ*¦ *rakṣati, ˚te* (*rakṣye* Fut. [89,28])
-— 1〉 bewachen, Wache halten, bewahren, beschützen, hüten (auch das Vieh), behüten, in Acht nehmen, schonen, erhalten, erretten, servare, — vor (Abl.), verwahren; sorgfältig achten auf (Acc., ganz ausnahmsweise Loc.), beobachten (ein Gesetz u. s. w.). Das Land —, das Reich beschützen, so v. a. regieren. *rakṣamāṇa* [AV. 13,4,70]. mit passiver Bed. oder fehlerhaft für *rakṣyamāṇa* *rakṣita* bewacht u. s. w. *rakṣitam* _Adv._ wohl verwahrt.
+— 1〉 bewachen, Wache halten, bewahren, beschützen, hüten (auch das Vieh), behüten, in Acht nehmen, schonen, erhalten, erretten, servare, — vor (Abl.), verwahren; sorgfältig achten auf (Acc., ganz ausnahmsweise Loc.), beobachten (ein Gesetz u. s. w.). Das Land —, das Reich beschützen, so v. a. regieren. *rakṣamāṇa* [AV. 13,4,70](https://sanskrit-lexicon.github.io/avlinks/avhymns/av13.004.html#av13.004.70). mit passiver Bed. oder fehlerhaft für *rakṣyamāṇa* *rakṣita* bewacht u. s. w. *rakṣitam* _Adv._ wohl verwahrt.
 
 - **RU:** **1.** √*rakṣ*¦ *rakṣati, ˚te* (*rakṣye* Fut. [89,28])
-— 1〉 стеречь, нести стражу, сохранять, защищать, охранять (в т.ч. скот), оберегать, блюсти, щадить, содержать, спасать, servare, — от (Abl.), хранить; тщательно следить за (Acc., в виде исключения Loc.), соблюдать (закон u. s. w.). Страну —, царство защищать, т.е. v. a. управлять. *rakṣamāṇa* [AV. 13,4,70]. с пассивным Bed. или ошибочно вместо *rakṣyamāṇa* *rakṣita* охраняемый u. s. w. *rakṣitam* _Adv._ надёжно сохранённый.
+— 1〉 стеречь, нести стражу, сохранять, защищать, охранять (в т.ч. скот), оберегать, блюсти, щадить, содержать, спасать, servare, — от (Abl.), хранить; тщательно следить за (Acc., в виде исключения Loc.), соблюдать (закон u. s. w.). Страну —, царство защищать, т.е. v. a. управлять. *rakṣamāṇa* [AV. 13,4,70](https://sanskrit-lexicon.github.io/avlinks/avhymns/av13.004.html#av13.004.70). с пассивным Bed. или ошибочно вместо *rakṣyamāṇa* *rakṣita* охраняемый u. s. w. *rakṣitam* _Adv._ надёжно сохранённый.
 - **EN:** **1.** √*rakṣ*¦ *rakṣati, ˚te* (*rakṣye* Fut. [89,28])
-— 1〉 to watch, keep watch, preserve, protect, guard (also cattle), to tend, take care of, spare, maintain, rescue, servare, — from (Abl.), to keep in safekeeping; to pay careful attention to (Acc., quite exceptionally Loc.), to observe (a law u. s. w.). To protect the land —, the realm, thus v. a. to rule. *rakṣamāṇa* [AV. 13,4,70]. with passive Bed. or erroneously for *rakṣyamāṇa* *rakṣita* guarded u. s. w. *rakṣitam* _Adv._ well kept.
+— 1〉 to watch, keep watch, preserve, protect, guard (also cattle), to tend, take care of, spare, maintain, rescue, servare, — from (Abl.), to keep in safekeeping; to pay careful attention to (Acc., quite exceptionally Loc.), to observe (a law u. s. w.). To protect the land —, the realm, thus v. a. to rule. *rakṣamāṇa* [AV. 13,4,70](https://sanskrit-lexicon.github.io/avlinks/avhymns/av13.004.html#av13.004.70). with passive Bed. or erroneously for *rakṣyamāṇa* *rakṣita* guarded u. s. w. *rakṣitam* _Adv._ well kept.
   <sub>attested</sub>
 
 **2)** — 2〉 in Acht nehmen, so v. a. nicht antasten.
@@ -78,10 +78,10 @@
 - **EN:** — With *samabhi* to preserve, guard, protect.
   <sub>attested</sub>
 
-**prati+err)** — Mit *ava* [MBH. 8,45,43] fehlerhaft. Unter *kṣar* ist *avakṣarantaḥ* st. *avarakṣantaḥ* vermuthet worden, [MBH. ed. Vardh.] liest *atitakṣantaḥ* (!)
+**prati+err)** — Mit *ava* [MBH. 8,45,43](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?8,45,43) fehlerhaft. Unter *kṣar* ist *avakṣarantaḥ* st. *avarakṣantaḥ* vermuthet worden, [MBH. ed. Vardh.] liest *atitakṣantaḥ* (!)
 
-- **RU:** — Mit *ava* [MBH. 8,45,43] ошибочно. Под *kṣar* было предположено *avakṣarantaḥ* st. *avarakṣantaḥ*, [MBH. ed. Vardh.] читает *atitakṣantaḥ* (!)
-- **EN:** — With *ava* [MBH. 8,45,43] erroneous. Under *kṣar* it has been conjectured that *avakṣarantaḥ* st. *avarakṣantaḥ*, [MBH. ed. Vardh.] reads *atitakṣantaḥ* (!)
+- **RU:** — Mit *ava* [MBH. 8,45,43](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?8,45,43) ошибочно. Под *kṣar* было предположено *avakṣarantaḥ* st. *avarakṣantaḥ*, [MBH. ed. Vardh.] читает *atitakṣantaḥ* (!)
+- **EN:** — With *ava* [MBH. 8,45,43](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?8,45,43) erroneous. Under *kṣar* it has been conjectured that *avakṣarantaḥ* st. *avarakṣantaḥ*, [MBH. ed. Vardh.] reads *atitakṣantaḥ* (!)
   <sub>attested</sub>
 
 **sampari+)** — Mit *ā* behüten, beschützen, bewahren, bewachen, — vor (Abl.)

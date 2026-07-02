@@ -4,8 +4,8 @@
 
 
 **1)** — *abhi* geben: *abhyadāt*
-[MBH. 3,13309.]
+[MBH. 3,13309.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13309)
 
 - **RU:** давать: *abhyadāt*
-[MBH. 3,13309.]
+[MBH. 3,13309.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13309)
   <sub>DCS 4 · attested</sub>

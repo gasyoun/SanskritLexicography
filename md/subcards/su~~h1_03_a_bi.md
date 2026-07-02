@@ -4,32 +4,32 @@
 
 
 **1)** — *abhi*, *˚ṣuvati, abhyaṣuvat*
-[P. 8,3,63.] [65.] weihen für (acc.): *oṣadhīḥ*
+[P. 8,3,63.](https://ashtadhyayi.com/sutraani/8/3/63) [65.](https://ashtadhyayi.com/sutraani/8/3/65) weihen für (acc.): *oṣadhīḥ*
 - **EN:** — *abhi*, *˚ṣuvati, abhyaṣuvat*
-[P. 8,3,63.] [65.] "to consecrate for" (acc.): *oṣadhīḥ*
+[P. 8,3,63.](https://ashtadhyayi.com/sutraani/8/3/63) [65.](https://ashtadhyayi.com/sutraani/8/3/65) "to consecrate for" (acc.): *oṣadhīḥ*
 
-**2)** [ŚAT. BR. 5,2,3,9.] begaben mit: *pāpmanaivainamabhiṣuvati*
+**2)** [ŚAT. BR. 5,2,3,9.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?5,2,3,9) begaben mit: *pāpmanaivainamabhiṣuvati*
 [KĀṬH. 13,2.] — desid. *˚susūṣati*
-[P. 8,3,64], Vārtt. 1, Schol.
-- **EN:** [ŚAT. BR. 5,2,3,9.] "to endow with": *pāpmanaivainamabhiṣuvati*
+[P. 8,3,64](https://ashtadhyayi.com/sutraani/8/3/64), Vārtt. 1, Schol.
+- **EN:** [ŚAT. BR. 5,2,3,9.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?5,2,3,9) "to endow with": *pāpmanaivainamabhiṣuvati*
 [KĀṬH. 13,2.] — desid. *˚susūṣati*
-[P. 8,3,64], Vārtt. 1, Schol.
+[P. 8,3,64](https://ashtadhyayi.com/sutraani/8/3/64), Vārtt. 1, Schol.
 
 **aBi+su sense 1 — weihen für)** — *abhi*, *˚ṣuvati, abhyaṣuvat*
-[P. 8,3,63.] [65.] weihen für (acc.): *oṣadhīḥ*
+[P. 8,3,63.](https://ashtadhyayi.com/sutraani/8/3/63) [65.](https://ashtadhyayi.com/sutraani/8/3/65) weihen für (acc.): *oṣadhīḥ*
 
 - **RU:** — *abhi*, *˚ṣuvati, abhyaṣuvat*
-[P. 8,3,63.] [65.] посвящать для (acc.): *oṣadhīḥ*
+[P. 8,3,63.](https://ashtadhyayi.com/sutraani/8/3/63) [65.](https://ashtadhyayi.com/sutraani/8/3/65) посвящать для (acc.): *oṣadhīḥ*
   <sub>attested</sub>
 
-**aBi+su sense 2 — begaben mit)** [ŚAT. BR. 5,2,3,9.] begaben mit: *pāpmanaivainamabhiṣuvati*
+**aBi+su sense 2 — begaben mit)** [ŚAT. BR. 5,2,3,9.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?5,2,3,9) begaben mit: *pāpmanaivainamabhiṣuvati*
 
-- **RU:** [ŚAT. BR. 5,2,3,9.] наделять чем-л.: *pāpmanaivainamabhiṣuvati*
+- **RU:** [ŚAT. BR. 5,2,3,9.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?5,2,3,9) наделять чем-л.: *pāpmanaivainamabhiṣuvati*
   <sub>attested</sub>
 
 **aBi+su (addendum))** [KĀṬH. 13,2.] — desid. *˚susūṣati*
-[P. 8,3,64], Vārtt. 1, Schol.
+[P. 8,3,64](https://ashtadhyayi.com/sutraani/8/3/64), Vārtt. 1, Schol.
 
 - **RU:** [KĀṬH. 13,2.] — desid. *˚susūṣati*
-[P. 8,3,64], Vārtt. 1, Schol.
+[P. 8,3,64](https://ashtadhyayi.com/sutraani/8/3/64), Vārtt. 1, Schol.
   <sub>attested</sub>

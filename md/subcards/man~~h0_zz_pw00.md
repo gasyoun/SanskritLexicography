@@ -16,8 +16,8 @@
 **pw-3)** — Mit *bahu* für viel halten, hochhalten, zu schätzen wissen; mit *laghu* gering halten, — anschlagen; mit *sādhu* für halten, gutheissen, billigen, loben. Bisweilen folgt noch *iti* auf *sādhu*.
 - **EN:** — With *bahu* to esteem highly, hold in high regard, know how to value; with *laghu* to esteem lightly, — rate low; with *sādhu* to hold to be, approve, sanction, praise. Sometimes *iti* still follows *sādhu*.
 
-**pw-4)** — 3〉 sich halten —, gehalten werden —, gelten für, erscheinen als, sich zeigen; das Prädicat. im Nomin. (bisweilen mit folgendem *iva*), ausnahmsweise aber auch im Acc. ([Spr. 7645])
-- **EN:** — 3) to hold oneself —, be held —, pass for, appear as, show oneself; the predicate in the Nomin. (sometimes with following *iva*), but exceptionally also in the Acc. ([Spr. 7645])
+**pw-4)** — 3〉 sich halten —, gehalten werden —, gelten für, erscheinen als, sich zeigen; das Prädicat. im Nomin. (bisweilen mit folgendem *iva*), ausnahmsweise aber auch im Acc. ([Spr. 7645](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7645))
+- **EN:** — 3) to hold oneself —, be held —, pass for, appear as, show oneself; the predicate in the Nomin. (sometimes with following *iva*), but exceptionally also in the Acc. ([Spr. 7645](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7645))
 
 **pw-5)** — 4〉 meinen, so v. a. für gut befinden, Etwas (Acc.) billigen.
 - **EN:** — 4) to think, so v. a. to deem good, to approve of something (Acc.).
@@ -46,11 +46,11 @@
 **pw-13)** — 12〉 *mata*
 - **EN:** — 12) *mata*
 
-**pw-14)** — a〉 erschienend als, geltend —, angesehen werdend für (Nomin., oder ein _Adv._). *bahumata* hoch gehalten, geachtet; *sādhumata* in hoher Achtung stehend bei (Gen.) [MBH. 5,191,11].
-- **EN:** — a) appearing as, passing —, being regarded as (Nomin., or a _Adv._). *bahumata* highly esteemed, respected; *sādhumata* standing in high regard with (Gen.) [MBH. 5,191,11].
+**pw-14)** — a〉 erschienend als, geltend —, angesehen werdend für (Nomin., oder ein _Adv._). *bahumata* hoch gehalten, geachtet; *sādhumata* in hoher Achtung stehend bei (Gen.) [MBH. 5,191,11](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?5,191,11).
+- **EN:** — a) appearing as, passing —, being regarded as (Nomin., or a _Adv._). *bahumata* highly esteemed, respected; *sādhumata* standing in high regard with (Gen.) [MBH. 5,191,11](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?5,191,11).
 
-**pw-15)** — b〉 gut befunden, gebilligt, für angemessen erachtet [Spr. 7623].
-- **EN:** — b) deemed good, approved, considered fitting [Spr. 7623].
+**pw-15)** — b〉 gut befunden, gebilligt, für angemessen erachtet [Spr. 7623](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7623).
+- **EN:** — b) deemed good, approved, considered fitting [Spr. 7623](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7623).
 
 **pw-16)** — c〉 geachtet, geehrt, gern gesehen von (Gen.), hoch angeschlagen.
 - **EN:** — c) respected, honoured, well regarded by (Gen.), highly rated.
@@ -61,8 +61,8 @@
 **pw-18)** — e〉 empfunden, vermuthet [283,32].
 - **EN:** — e) perceived, surmised [283,32].
 
-**pw-19)** — f〉 erkannt, bekannt [MBH. 4,14,8].
-- **EN:** — f) recognized, known [MBH. 4,14,8].
+**pw-19)** — f〉 erkannt, bekannt [MBH. 4,14,8](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?4,14,8).
+- **EN:** — f) recognized, known [MBH. 4,14,8](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?4,14,8).
 
 **pw-20)** — 13〉 *manita*
 - **EN:** — 13) *manita*
@@ -70,8 +70,8 @@
 **pw-21)** — a〉 *gekannt, verstanden.
 - **EN:** — a) *known, understood.
 
-**pw-22)** — b〉 [PAÑCAR. 3,12,20] wohl fehlerhaft.
-- **EN:** — b) [PAÑCAR. 3,12,20], probably erroneous.
+**pw-22)** — b〉 [PAÑCAR. 3,12,20](https://sanskrit-lexicon-scans.github.io/pancar/app1?3,12,20) wohl fehlerhaft.
+- **EN:** — b) [PAÑCAR. 3,12,20](https://sanskrit-lexicon-scans.github.io/pancar/app1?3,12,20), probably erroneous.
 
 **pw-23)** — Caus.
 — 1〉 *mānayati* (metrisch auch Med.) ehren, Ehren erzeigen, Etwas berücksichtigen. Auch mit *ukra, bahu* und *sādhu*. *mānita* geehrt, berücksichtigt.
@@ -112,9 +112,9 @@
 - **EN:** — With *adhi* to esteem highly, hold in high regard.
 
 **pw-31)** — Mit *anu*
-— 1〉 zustimmen, einwillingen; billigen, zugestehen, gestatten, zugeben, gutheissen, anerkennen (mit Acc. [[ṚV. 7,31,7]] oder Infin.; statt des Acc. auch *˚kṛte*), anerkennen als (mit doppeltem Acc.) *anumata* gestattet, erlaubt, genehmigt, gebilligt, anerkannt [VS. 12,70].
+— 1〉 zustimmen, einwillingen; billigen, zugestehen, gestatten, zugeben, gutheissen, anerkennen (mit Acc. [[ṚV. 7,31,7](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.031.html#rv07.031.07)] oder Infin.; statt des Acc. auch *˚kṛte*), anerkennen als (mit doppeltem Acc.) *anumata* gestattet, erlaubt, genehmigt, gebilligt, anerkannt [VS. 12,70](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?12,70).
 - **EN:** — With *anu*
-— 1) to agree, consent; to approve, concede, permit, admit, sanction, acknowledge (with Acc. [[ṚV. 7,31,7]] or Infin.; instead of the Acc. also *˚kṛte*), to acknowledge as (with double Acc.) *anumata* permitted, allowed, granted, approved, acknowledged [VS. 12,70].
+— 1) to agree, consent; to approve, concede, permit, admit, sanction, acknowledge (with Acc. [[ṚV. 7,31,7](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.031.html#rv07.031.07)] or Infin.; instead of the Acc. also *˚kṛte*), to acknowledge as (with double Acc.) *anumata* permitted, allowed, granted, approved, acknowledged [VS. 12,70](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?12,70).
 
 **pw-32)** — 2〉 belieben, gewillt sein. *anumata* gern gesehen, erwünscht.
 - **EN:** — 2) to be pleased, to be willing. *anumata* welcome, desired.
@@ -125,8 +125,8 @@
 **pw-34)** — 4〉 gutheissen. so v. a. sich einer Sache hingeben, befolgen; mit Acc. *anumata* befolgt.
 - **EN:** — 4) to sanction. so v. a. to devote oneself to a matter, to follow; with Acc. *anumata* followed.
 
-**pw-35)** — 5〉 Jmd (Acc.) begünstigen zu (Dat.), so v. a. verhelfen zu [ṚV. 5,46,4].
-- **EN:** — 5) to favour someone (Acc.) toward (Dat.), so v. a. to help one obtain [ṚV. 5,46,4].
+**pw-35)** — 5〉 Jmd (Acc.) begünstigen zu (Dat.), so v. a. verhelfen zu [ṚV. 5,46,4](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.046.html#rv05.046.04).
+- **EN:** — 5) to favour someone (Acc.) toward (Dat.), so v. a. to help one obtain [ṚV. 5,46,4](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.046.html#rv05.046.04).
 
 **pw-36)** — 6〉 Jmd (Acc.) zulassen, anerkennen, — als (Acc.). *anumata* zugelassen —, anerkannt von (im Comp. vorangehend).
 - **EN:** — 6) to admit, acknowledge someone (Acc.) — as (Acc.). *anumata* admitted —, acknowledged by (preceding in the Comp.).
@@ -241,8 +241,8 @@
 **pw-68)** — Mit *ni* halten für, mit doppeltem Acc.
 - **EN:** — With *ni* to hold to be, with double Acc.
 
-**pw-69)** — Mit *pari* übersehen, hintansetzen, vernachlässigen, vergessen [ṚV. 7,93,6. 10,31,2].
-- **EN:** — With *pari* to overlook, to set aside, neglect, forget [ṚV. 7,93,6. 10,31,2].
+**pw-69)** — Mit *pari* übersehen, hintansetzen, vernachlässigen, vergessen [ṚV. 7,93,6. 10,31,2](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.093.html#rv07.093.06).
+- **EN:** — With *pari* to overlook, to set aside, neglect, forget [ṚV. 7,93,6. 10,31,2](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.093.html#rv07.093.06).
 
 **pw-70)** — Mit *pra* ersinnen, aussprechen.
 - **EN:** — With *pra* to devise, to utter.

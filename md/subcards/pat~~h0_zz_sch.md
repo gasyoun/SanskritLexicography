@@ -18,10 +18,10 @@
 - **EN:** With samā, ˚patita having appeared unexpectedly, having presented itself, [Jātakam. 26.]
   <sub>attested</sub>
 
-**abhyud)** Mit abhyud [Kaus.] auffliegen machen zu (Akk.), [Śat. Br. 1,8,3,14.]
+**abhyud)** Mit abhyud [Kaus.] auffliegen machen zu (Akk.), [Śat. Br. 1,8,3,14.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,8,3)
 
-- **RU:** Mit abhyud [Kaus.] заставлять взлетать к (Akk.), [Śat. Br. 1,8,3,14.]
-- **EN:** With abhyud [Kaus.] to cause to fly up to (Acc.), [Śat. Br. 1,8,3,14.]
+- **RU:** Mit abhyud [Kaus.] заставлять взлетать к (Akk.), [Śat. Br. 1,8,3,14.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,8,3)
+- **EN:** With abhyud [Kaus.] to cause to fly up to (Acc.), [Śat. Br. 1,8,3,14.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,8,3)
   <sub>attested</sub>
 
 **prod)** Mit prod ˚sich (vom Sitze) erheben, [Yudh. 6,132.]

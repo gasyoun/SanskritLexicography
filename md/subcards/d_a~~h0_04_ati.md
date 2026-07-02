@@ -5,15 +5,15 @@
 
 **1)** — *ati*
  1) im Geben übertreffen: *adha plāyogirati dāsadanyānāsaṅgo agne daśabhiḥ sahasraiḥ*
-[ṚV. 8,1,38.]
+[ṚV. 8,1,38.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.001.html#rv08.001.38)
 
 - **RU:** 1) превосходить в даянии: *adha plāyogirati dāsadanyānāsaṅgo agne daśabhiḥ sahasraiḥ*
-[ṚV. 8,1,38.]
+[ṚV. 8,1,38.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.001.html#rv08.001.38)
   <sub>DCS 12366 · attested</sub>
 
 **2)** — 2) beim Geben übergehen: *na jīvantamatidadāti*
-[KĀTY. ŚR. 4,1,27.]
+[KĀTY. ŚR. 4,1,27.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?4,1,27)
 
 - **RU:** 2) обойти при раздаче, пропустить при даянии: *na jīvantamatidadāti*
-[KĀTY. ŚR. 4,1,27.]
+[KĀTY. ŚR. 4,1,27.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?4,1,27)
   <sub>DCS 12366 · attested</sub>

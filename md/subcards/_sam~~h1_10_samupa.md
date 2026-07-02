@@ -4,10 +4,10 @@
 
 
 **samupa)** — *samupa* dass.: *śabdaḥ samupaśāmyati*
-[MBH. 12,10583.]
+[MBH. 12,10583.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.10583)
 
 - **RU:** — *samupa* dass.: *śabdaḥ samupaśāmyati*
-[MBH. 12,10583.]
+[MBH. 12,10583.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.10583)
 - **EN:** — *samupa* dass.: *śabdaḥ samupaśāmyati*
-[MBH. 12,10583.]
+[MBH. 12,10583.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.10583)
   <sub>attested</sub>

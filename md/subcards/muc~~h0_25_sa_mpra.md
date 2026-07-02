@@ -13,10 +13,10 @@
   <sub>DCS 10 · attested</sub>
 
 **2 (passive))** [ŚR. 15,27,14.] *saṃpramucya* mit passiver Bed. sich befreiend von
-[ŚAT. BR. 14,7,1,41.]
+[ŚAT. BR. 14,7,1,41.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,7,1,41)
 
 - **RU:** [ŚR. 15,27,14.] *saṃpramucya* с пассивной Bed. освобождаясь от
-[ŚAT. BR. 14,7,1,41.]
+[ŚAT. BR. 14,7,1,41.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,7,1,41)
 - **EN:** [ŚR. 15,27,14.] *saṃpramucya* with passive Bed. "freeing oneself from"
-[ŚAT. BR. 14,7,1,41.]
+[ŚAT. BR. 14,7,1,41.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,7,1,41)
   <sub>DCS 10 · attested</sub>

@@ -11,10 +11,10 @@
 [SUŚR. 2,347,7.]
 
 **2)** — 2) auf Etwas bedacht sein: *anāgatavidhānaṃ ca tasyārthe pravidhīyatām*
-[R. 4,14,29.] *sakhyaṃ mukhyaiḥ sa mantribhiḥ — pravidadhe*
-[RĀJA-TAR. 5,421.] viell. Jmd alle mögliche Aufmerksamkeit bezeigen (voranstellen): *tatastāṃ lakṣmīṃ pravidhāya pradoṣe svagṛhaṃ nināya*
+[R. 4,14,29.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,14,29) *sakhyaṃ mukhyaiḥ sa mantribhiḥ — pravidadhe*
+[RĀJA-TAR. 5,421.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,421) viell. Jmd alle mögliche Aufmerksamkeit bezeigen (voranstellen): *tatastāṃ lakṣmīṃ pravidhāya pradoṣe svagṛhaṃ nināya*
 [ŚUK. 44,14. 15.] [LASSEN] : rem persuasam reddere alii.
 - **EN:** — 2) to be intent on something: *anāgatavidhānaṃ ca tasyārthe pravidhīyatām*
-[R. 4,14,29.] *sakhyaṃ mukhyaiḥ sa mantribhiḥ — pravidadhe*
-[RĀJA-TAR. 5,421.] viell. to show someone every possible attention (to put forward, give priority): *tatastāṃ lakṣmīṃ pravidhāya pradoṣe svagṛhaṃ nināya*
+[R. 4,14,29.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,14,29) *sakhyaṃ mukhyaiḥ sa mantribhiḥ — pravidadhe*
+[RĀJA-TAR. 5,421.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,421) viell. to show someone every possible attention (to put forward, give priority): *tatastāṃ lakṣmīṃ pravidhāya pradoṣe svagṛhaṃ nināya*
 [ŚUK. 44,14. 15.] [LASSEN] : rem persuasam reddere alii.

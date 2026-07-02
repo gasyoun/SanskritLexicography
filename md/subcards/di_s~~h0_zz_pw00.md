@@ -3,16 +3,16 @@
 `di_s~~h0_zz_pw00`
 
 
-**head)** **1.** √*diś*¦ *dideṣṭi, diśati*; selten Med.
+**1.** √*diś*¦ *dideṣṭi, diśati*; selten Med.
 
 - **RU:** **1.** √*diś*¦ *dideṣṭi, diśati*; редко Med.
 - **EN:** **1.** √*diś* *dideṣṭi, diśati*; rarely Med.
   <sub>DCS 4018 · attested</sub>
 
-**1)** — 1〉 zeigen, vor-, aufweisen, sehen lassen [ṚV. 8,82,15]. vorführen (einen Zeugen.)
+**1)** — 1〉 zeigen, vor-, aufweisen, sehen lassen [ṚV. 8,82,15](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.082.html#rv08.082.15). vorführen (einen Zeugen.)
 
-- **RU:** — 1〉 показывать, представлять, демонстрировать [ṚV. 8,82,15]. предъявлять (свидетеля).
-- **EN:** — 1) to show, point out, display, let be seen [ṚV. 8,82,15]; to produce, bring forward (a witness)
+- **RU:** — 1〉 показывать, представлять, демонстрировать [ṚV. 8,82,15](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.082.html#rv08.082.15). предъявлять (свидетеля).
+- **EN:** — 1) to show, point out, display, let be seen [ṚV. 8,82,15](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.082.html#rv08.082.15); to produce, bring forward (a witness)
   <sub>DCS 4018 · attested</sub>
 
 **2)** — 2〉 Jmd (Dat.) Etwas (Acc.) anweisen, zuweisen, assignare, gewähren. *karam* so v. a. Tribut zahlen.
@@ -21,10 +21,10 @@
 - **EN:** — 2) to assign, allot, assignare, grant to someone (Dat.) something (Acc.). *karam* thus v. a. to pay tribute
   <sub>DCS 4018 · attested</sub>
 
-**3)** — 3〉 anordnen, anbefehlen [R. ed. Bomb. 2,82,22]. Mit einem Infin. heissen.
+**3)** — 3〉 anordnen, anbefehlen [R. ed. Bomb. 2,82,22](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?2,82,22). Mit einem Infin. heissen.
 
-- **RU:** — 3〉 распоряжаться, приказывать [R. ed. Bomb. 2,82,22]. С Infin. велеть.
-- **EN:** — 3) to order, command [R. ed. Bomb. 2,82,22]; with a Infin., to bid
+- **RU:** — 3〉 распоряжаться, приказывать [R. ed. Bomb. 2,82,22](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?2,82,22). С Infin. велеть.
+- **EN:** — 3) to order, command [R. ed. Bomb. 2,82,22](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?2,82,22); with a Infin., to bid
   <sub>DCS 4018 · attested</sub>
 
 **4)** — 4〉 Partic. *diṣṭa*
@@ -116,10 +116,10 @@
 - **EN:** — 3) to specify, state in particular [ŚAṂK. zu BĀDAR. 2,1,3]. [Comm. zu NYĀYAM. 7,2,1]
   <sub>DCS 4018 · attested</sub>
 
-**abhinu-head)** — Mit *adhi* überweisen [ṚV. 10,93,15].
+**abhinu-head)** — Mit *adhi* überweisen [ṚV. 10,93,15](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.093.html#rv10.093.15).
 
-- **RU:** — С *adhi* передавать, перепоручать [ṚV. 10,93,15].
-- **EN:** — With *adhi*, to assign over, transfer [ṚV. 10,93,15]
+- **RU:** — С *adhi* передавать, перепоручать [ṚV. 10,93,15](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.093.html#rv10.093.15).
+- **EN:** — With *adhi*, to assign over, transfer [ṚV. 10,93,15](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.093.html#rv10.093.15)
   <sub>DCS 4018 · attested</sub>
 
 **abhi-head)** — Mit *anu*
@@ -174,10 +174,10 @@
 - **EN:** — 2) to indicate, state
   <sub>DCS 4018 · attested</sub>
 
-**ud-3)** — 3〉 fälschlich angeben, vorgeben, vorschützen [KATHĀS. 26,92]. [PRASANNAR. 14,18].
+**ud-3)** — 3〉 fälschlich angeben, vorgeben, vorschützen [KATHĀS. 26,92](https://sanskrit-lexicon-scans.github.io/kss/index.html?26,92). [PRASANNAR. 14,18].
 
-- **RU:** — 3〉 ложно указывать, притворяться, ссылаться под предлогом [KATHĀS. 26,92]. [PRASANNAR. 14,18].
-- **EN:** — 3) to state falsely, pretend, allege as a pretext [KATHĀS. 26,92]. [PRASANNAR. 14,18]
+- **RU:** — 3〉 ложно указывать, притворяться, ссылаться под предлогом [KATHĀS. 26,92](https://sanskrit-lexicon-scans.github.io/kss/index.html?26,92). [PRASANNAR. 14,18].
+- **EN:** — 3) to state falsely, pretend, allege as a pretext [KATHĀS. 26,92](https://sanskrit-lexicon-scans.github.io/kss/index.html?26,92). [PRASANNAR. 14,18]
   <sub>DCS 4018 · attested</sub>
 
 **upa-head)** — Mit *vyapa*
@@ -224,8 +224,8 @@
 **ni-head)** — Mit *ā*
 - **EN:** — With *ā*
 
-**ni-1)** — 1〉 zielen auf, es auf Jmd abgesehen haben, Jmd bedrohen; mit Acc. [ṚV. 9,52,4. 10,133,4. 134,2]. [AV. 6,6,2].
-- **EN:** — 1) to aim at, have designs on someone, threaten someone; with Acc. [ṚV. 9,52,4. 10,133,4. 134,2]. [AV. 6,6,2]
+**ni-1)** — 1〉 zielen auf, es auf Jmd abgesehen haben, Jmd bedrohen; mit Acc. [ṚV. 9,52,4. 10,133,4. 134,2](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.052.html#rv09.052.04). [AV. 6,6,2](https://sanskrit-lexicon.github.io/avlinks/avhymns/av06.006.html#av06.006.02).
+- **EN:** — 1) to aim at, have designs on someone, threaten someone; with Acc. [ṚV. 9,52,4. 10,133,4. 134,2](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.052.html#rv09.052.04). [AV. 6,6,2](https://sanskrit-lexicon.github.io/avlinks/avhymns/av06.006.html#av06.006.02)
 
 **ni-2)** — 2〉 Jmd treffen; Vgl. *ādiśe*.
 
@@ -263,10 +263,10 @@
 - **EN:** — 7) to give the instruction, prescribe, command something. *yānam* thus v. a. to order the carriage, — have it brought
   <sub>DCS 4018 · attested</sub>
 
-**ni-8)** — 8〉 Jmd (Acc.) anweisen, Jmd den Befehl geben, Jmd abordnen; das Wozu im Loc., Dat., Infin. oder mit *˚ārtham*. *mā smaivamādiśa* so v. a. geruhe nicht so zu reden [KATHĀS. 60,118].
+**ni-8)** — 8〉 Jmd (Acc.) anweisen, Jmd den Befehl geben, Jmd abordnen; das Wozu im Loc., Dat., Infin. oder mit *˚ārtham*. *mā smaivamādiśa* so v. a. geruhe nicht so zu reden [KATHĀS. 60,118](https://sanskrit-lexicon-scans.github.io/kss/index.html?60,118).
 
-- **RU:** — 8〉 кому-либо (Acc.) давать указание, отдавать приказ, откомандировывать; цель — в Loc., Dat., Infin. или с *˚ārtham*. *mā smaivamādiśa*, так v. a. «не соблаговоли говорить так» [KATHĀS. 60,118].
-- **EN:** — 8) to instruct someone (Acc.), give someone the command, dispatch someone; the purpose in the Loc., Dat., Infin., or with *˚ārtham*. *mā smaivamādiśa* thus v. a. deign not to speak thus [KATHĀS. 60,118]
+- **RU:** — 8〉 кому-либо (Acc.) давать указание, отдавать приказ, откомандировывать; цель — в Loc., Dat., Infin. или с *˚ārtham*. *mā smaivamādiśa*, так v. a. «не соблаговоли говорить так» [KATHĀS. 60,118](https://sanskrit-lexicon-scans.github.io/kss/index.html?60,118).
+- **EN:** — 8) to instruct someone (Acc.), give someone the command, dispatch someone; the purpose in the Loc., Dat., Infin., or with *˚ārtham*. *mā smaivamādiśa* thus v. a. deign not to speak thus [KATHĀS. 60,118](https://sanskrit-lexicon-scans.github.io/kss/index.html?60,118)
   <sub>DCS 4018 · attested</sub>
 
 **ni-9)** — 9〉 Jmd verweisen in oder nach (Loc.).
@@ -386,10 +386,10 @@
 - **EN:** — With *vyā*
 
 **vi-1)** — Mit *ā*
-— 1〉 zielen auf, es auf Jmd abgesehen haben, Jmd bedrohen; mit Acc. [ṚV. 9,52,4. 10,133,4. 134,2]. [AV. 6,6,2].
+— 1〉 zielen auf, es auf Jmd abgesehen haben, Jmd bedrohen; mit Acc. [ṚV. 9,52,4. 10,133,4. 134,2](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.052.html#rv09.052.04). [AV. 6,6,2](https://sanskrit-lexicon.github.io/avlinks/avhymns/av06.006.html#av06.006.02).
 
 - **RU:** — С *ā*
-— 1〉 целиться в кого-либо, иметь кого-либо в виду, угрожать кому-либо; с Acc. [ṚV. 9,52,4. 10,133,4. 134,2]. [AV. 6,6,2].
+— 1〉 целиться в кого-либо, иметь кого-либо в виду, угрожать кому-либо; с Acc. [ṚV. 9,52,4. 10,133,4. 134,2](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.052.html#rv09.052.04). [AV. 6,6,2](https://sanskrit-lexicon.github.io/avlinks/avhymns/av06.006.html#av06.006.02).
 - **EN:** — 1) to assign, allot, apportion individually überh.
   <sub>DCS 4018 · attested</sub>
 
@@ -434,10 +434,10 @@
 - **EN:** — 1) to assign, allot, apportion
   <sub>DCS 4018 · attested</sub>
 
-**sam-2)** — 2〉 Etwas aussagen, verkünden, Jmd (Dat. oder Gen.) zu wissen thun [PAÑCAT. 231,6]. lehren.
+**sam-2)** — 2〉 Etwas aussagen, verkünden, Jmd (Dat. oder Gen.) zu wissen thun [PAÑCAT. 231,6](https://sanskrit-lexicon-scans.github.io/pantankose/app2?231,6). lehren.
 
-- **RU:** — 2〉 высказываться о чём-либо, возвещать, доводить до сведения кого-либо (Dat. или Gen.) [PAÑCAT. 231,6]. обучать.
-- **EN:** — 2) to state, proclaim something, make known to someone (Dat. or Gen.) [PAÑCAT. 231,6]; to teach
+- **RU:** — 2〉 высказываться о чём-либо, возвещать, доводить до сведения кого-либо (Dat. или Gen.) [PAÑCAT. 231,6](https://sanskrit-lexicon-scans.github.io/pantankose/app2?231,6). обучать.
+- **EN:** — 2) to state, proclaim something, make known to someone (Dat. or Gen.) [PAÑCAT. 231,6](https://sanskrit-lexicon-scans.github.io/pantankose/app2?231,6); to teach
   <sub>DCS 4018 · attested</sub>
 
 **sam-3)** — 3〉 bestimmen, bezeichnen, nennen.

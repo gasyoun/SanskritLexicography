@@ -4,10 +4,10 @@
 
 
 **1)** — *upā* mit sich fortziehen, entreissen: *muktastato yadi bandhāddevadatta upācchinatti tasmādapi viṣṇumitraḥ*
-[BHĀG. P. 5,14,24.]
+[BHĀG. P. 5,14,24.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,14,24)
 
 - **RU:** — *upā* увлекать за собой, вырывать: *muktastato yadi bandhāddevadatta upācchinatti tasmādapi viṣṇumitraḥ*
-[BHĀG. P. 5,14,24.]
+[BHĀG. P. 5,14,24.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,14,24)
 - **EN:** — *upā* to drag away with oneself, wrest away: *muktastato yadi bandhāddevadatta upācchinatti tasmādapi viṣṇumitraḥ*
-[BHĀG. P. 5,14,24.]
+[BHĀG. P. 5,14,24.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,14,24)
   <sub>attested</sub>

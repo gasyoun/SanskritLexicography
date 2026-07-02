@@ -5,10 +5,10 @@
 
 **2)** — *praṇi*
  2) *samyakpraṇihitā ca vāk* eine wohlangebrachte Rede
-[Spr. 3628.]
+[Spr. 3628.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3628)
 - **EN:** — *praṇi*
  2) *samyakpraṇihitā ca vāk* a well-placed speech
-[Spr. 3628.]
+[Spr. 3628.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3628)
 
 **6)** — 6)
 Z. 6. fgg. vgl. *mūlapraṇihita* .

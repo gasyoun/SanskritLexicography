@@ -209,10 +209,10 @@
 - **EN:** c) lacking, being without —; the complement in the Instr.
   <sub>DCS 3071 · attested</sub>
 
-**vi-prati)** — Mit *saṃpra* verlassen [R. ed. Bomb. 4,22,16].
+**vi-prati)** — Mit *saṃpra* verlassen [R. ed. Bomb. 4,22,16](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,22,16).
 
-- **RU:** — С *saṃpra* покидать [R. ed. Bomb. 4,22,16].
-- **EN:** With *saṃpra* to abandon [R. ed. Bomb. 4,22,16].
+- **RU:** — С *saṃpra* покидать [R. ed. Bomb. 4,22,16](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,22,16).
+- **EN:** With *saṃpra* to abandon [R. ed. Bomb. 4,22,16](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,22,16).
   <sub>DCS 3071 · attested</sub>
 
 **vi-intro)** — Mit *prati*
@@ -284,10 +284,10 @@
 - **EN:** a) leaving behind, thus v. a. at a distance of.
   <sub>DCS 3071 · attested</sub>
 
-**sam9b)** — b〉 ohne zu beachten, mit Hintansetzung —, mit Umgehung von zu [Spr. 1225].
+**sam9b)** — b〉 ohne zu beachten, mit Hintansetzung —, mit Umgehung von zu [Spr. 1225](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1225).
 
-- **RU:** — b〉 не принимая во внимание, с пренебрежением —, в обход к [Spr. 1225].
-- **EN:** b) without heeding, with disregard of —, with evasion of, to [Spr. 1225].
+- **RU:** — b〉 не принимая во внимание, с пренебрежением —, в обход к [Spr. 1225](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1225).
+- **EN:** b) without heeding, with disregard of —, with evasion of, to [Spr. 1225](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1225).
   <sub>DCS 3071 · attested</sub>
 
 **sam9c)** — c〉 trotz.

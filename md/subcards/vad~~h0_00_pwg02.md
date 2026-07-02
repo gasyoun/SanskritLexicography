@@ -4,24 +4,24 @@
 
 
 **2e)** — e) sich bewerben um (*yatne*)
-[P. 1,3,47.]
-[VOP. 23,39.] *kṣetre*
+[P. 1,3,47.](https://ashtadhyayi.com/sutraani/1/3/47)
+[VOP. 23,39.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?23,39) *kṣetre*
 [P.], Sch. [VOP.]
 — Vgl. *anudita*, 1. *udya, yathodita, vādya* .
 - **EN:** — e) to lay claim to (*yatne*)
-[P. 1,3,47.]
-[VOP. 23,39.] *kṣetre*
+[P. 1,3,47.](https://ashtadhyayi.com/sutraani/1/3/47)
+[VOP. 23,39.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?23,39) *kṣetre*
 [P.], Sch. [VOP.]
 — Vgl. *anudita*, 1. *udya, yathodita, vādya* .
 
 **2e) sich bewerben um)** — e) sich bewerben um (*yatne*)
-[P. 1,3,47.]
-[VOP. 23,39.] *kṣetre*
+[P. 1,3,47.](https://ashtadhyayi.com/sutraani/1/3/47)
+[VOP. 23,39.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?23,39) *kṣetre*
 [P.], Sch. [VOP.]
 
 - **RU:** — e) добиваться чего-л., домогаться (*yatne*)
-[P. 1,3,47.]
-[VOP. 23,39.] *kṣetre*
+[P. 1,3,47.](https://ashtadhyayi.com/sutraani/1/3/47)
+[VOP. 23,39.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?23,39) *kṣetre*
 [P.], Sch. [VOP.]
   <sub>attested</sub>
 

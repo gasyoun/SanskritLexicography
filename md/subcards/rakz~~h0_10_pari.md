@@ -4,99 +4,99 @@
 
 
 **1)** — *pari* bewachen, bewahren, beschützen, hüten, behüten, in Acht nehmen, erhalten, erretten, servare: *ghraṃsaṃ rakṣantaṃ pari viśvato gayam*
-[ṚV. 5,44,7.] *jighatsubhya imaṃ me pari rakṣata*
-[AV. 8,2,20.] *parirakṣedimāḥ prajāḥ* (*rājā*)
-[M. 7,142.] [MBH. 3,528.] [15708.] [R. GORR. 2,50,5.]
+[ṚV. 5,44,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.044.html#rv05.044.07) *jighatsubhya imaṃ me pari rakṣata*
+[AV. 8,2,20.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av08.002.html#av08.002.20) *parirakṣedimāḥ prajāḥ* (*rājā*)
+[M. 7,142.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,142) [MBH. 3,528.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.528) [15708.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15708) [R. GORR. 2,50,5.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,50,5)
 
 *tāṃ kanyāṃ vāsukiḥ paryarakṣata*
-[MBH. 1,1642.] [1940.] [2948.] [3,14366.] [7,3661.]
-[HARIV. 9085.] [9690.] *parirakṣyamāṇa*
-[BHĀG. P. 5,9,21.] *parirakṣita*
-[24,28.] [9,9,40.] [MBH. 5,6035.] *yoṣitaḥ parirakṣitum* hüten
-[M. 9,10.] *apānaṃ te parjanyaḥ parirakṣatu*
+[MBH. 1,1642.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1642) [1940.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1940) [2948.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2948) [3,14366.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14366) [7,3661.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.3661)
+[HARIV. 9085.](https://sanskrit-lexicon-scans.github.io/hariv?9085) [9690.](https://sanskrit-lexicon-scans.github.io/hariv?9690) *parirakṣyamāṇa*
+[BHĀG. P. 5,9,21.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,9,21) *parirakṣita*
+[24,28.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,24,28) [9,9,40.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,9,40) [MBH. 5,6035.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.6035) *yoṣitaḥ parirakṣitum* hüten
+[M. 9,10.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,10) *apānaṃ te parjanyaḥ parirakṣatu*
 [SUŚR. 1,17,2.] *tadidaṃ parirakṣa vapuḥ*
-[KUMĀRAS. 4,44.] *ātmānaṃ parirakṣasva*
-[MBH. 1,6195.] *śakyastenānumānena paro 'pi parirakṣitum* erhalten —, gerettet werden
-[Spr. 2129.] *parirakṣa asmadīyaprāṇān*
-[PAÑCAT. ed. orn. 58,12.] *ātmānaṃ parirakṣasva purīṃ cemāṃ sarākṣasām*
-[R. 5,88,24.] [23,17.] *sītā ca parirakṣitā* gerettet
-[56,144.] [MṚCCH. 110,17.] *ayodhyāṃ parirakṣati* so v. a. beherrscht
-[R. GORR. 2,109,49.] [HARIV. 733.] [3714.] [Spr. 5063.] [BHĀG. P. 5,4,17.] *madbhujaparirakṣite 'sminvane*
-[PAÑCAT. 30,24.] [215,7.] *nahyeṣa rāghavasyārthe jīvitaṃ parirakṣati* schont
-[R. 6,4,27.] *na sma paśyāmahe kaṃcidyaḥ prāṇānparirakṣati*
-[MBH. 6,4062.] schonen, vor Berührung behüten
+[KUMĀRAS. 4,44.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?4,44) *ātmānaṃ parirakṣasva*
+[MBH. 1,6195.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6195) *śakyastenānumānena paro 'pi parirakṣitum* erhalten —, gerettet werden
+[Spr. 2129.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2129) *parirakṣa asmadīyaprāṇān*
+[PAÑCAT. ed. orn. 58,12.](https://sanskrit-lexicon-scans.github.io/pantankoseorn/app1?58,12) *ātmānaṃ parirakṣasva purīṃ cemāṃ sarākṣasām*
+[R. 5,88,24.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,88,24) [23,17.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,23,17) *sītā ca parirakṣitā* gerettet
+[56,144.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,56,144) [MṚCCH. 110,17.] *ayodhyāṃ parirakṣati* so v. a. beherrscht
+[R. GORR. 2,109,49.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,109,49) [HARIV. 733.](https://sanskrit-lexicon-scans.github.io/hariv?733) [3714.](https://sanskrit-lexicon-scans.github.io/hariv?3714) [Spr. 5063.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?5063) [BHĀG. P. 5,4,17.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,4,17) *madbhujaparirakṣite 'sminvane*
+[PAÑCAT. 30,24.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?30,24) [215,7.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?215,7) *nahyeṣa rāghavasyārthe jīvitaṃ parirakṣati* schont
+[R. 6,4,27.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,4,27) *na sma paśyāmahe kaṃcidyaḥ prāṇānparirakṣati*
+[MBH. 6,4062.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.4062) schonen, vor Berührung behüten
 [SUŚR. 1,98,16.] *śiṣṭaṃ māṃsam — kākebhyaḥ paryarakṣata* aufbewahren
-[R. 2,96,38] ([105,37] [GORR.]). *eṣa cūḍāmaṇirdivyo mayā suparirakṣitaḥ*
-[5,37,7.] *ye viprāḥ — brāhmīṃ vācaṃ parirakṣanti*
-[MBH. 13,4886.] *svadharmaṃ parirakṣatā* treu bewahrend
-[R. 4,24,10.] [5,51,13.] *pratijñām*
-[R. GORR. 2,50,8.] *lokayātrāmimāṃ kṛtsnāṃ parirakṣanta āsate* so v. a. bedacht auf
-[HARIV. 6811.] vermeiden
+[R. 2,96,38](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,96,38) ([105,37](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,105,37) [GORR.]). *eṣa cūḍāmaṇirdivyo mayā suparirakṣitaḥ*
+[5,37,7.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,37,7) *ye viprāḥ — brāhmīṃ vācaṃ parirakṣanti*
+[MBH. 13,4886.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4886) *svadharmaṃ parirakṣatā* treu bewahrend
+[R. 4,24,10.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,24,10) [5,51,13.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,51,13) *pratijñām*
+[R. GORR. 2,50,8.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,50,8) *lokayātrāmimāṃ kṛtsnāṃ parirakṣanta āsate* so v. a. bedacht auf
+[HARIV. 6811.](https://sanskrit-lexicon-scans.github.io/hariv?6811) vermeiden
 [SUŚR. 2,15,12.] med. mit gen. Jmd vermeiden, machen, dass man nicht mit Jmd zusammenkommt
-[R. 5,73,20.]
+[R. 5,73,20.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,73,20)
 
 - **RU:** — *pari* охранять, беречь, защищать, стеречь, опекать, соблюдать, сохранять, спасать, servare: *ghraṃsaṃ rakṣantaṃ pari viśvato gayam*
-[ṚV. 5,44,7.] *jighatsubhya imaṃ me pari rakṣata*
-[AV. 8,2,20.] *parirakṣedimāḥ prajāḥ* (*rājā*)
-[M. 7,142.] [MBH. 3,528.] [15708.] [R. GORR. 2,50,5.]
+[ṚV. 5,44,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.044.html#rv05.044.07) *jighatsubhya imaṃ me pari rakṣata*
+[AV. 8,2,20.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av08.002.html#av08.002.20) *parirakṣedimāḥ prajāḥ* (*rājā*)
+[M. 7,142.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,142) [MBH. 3,528.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.528) [15708.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15708) [R. GORR. 2,50,5.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,50,5)
 
 *tāṃ kanyāṃ vāsukiḥ paryarakṣata*
-[MBH. 1,1642.] [1940.] [2948.] [3,14366.] [7,3661.]
-[HARIV. 9085.] [9690.] *parirakṣyamāṇa*
-[BHĀG. P. 5,9,21.] *parirakṣita*
-[24,28.] [9,9,40.] [MBH. 5,6035.] *yoṣitaḥ parirakṣitum* пасти
-[M. 9,10.] *apānaṃ te parjanyaḥ parirakṣatu*
+[MBH. 1,1642.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1642) [1940.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1940) [2948.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2948) [3,14366.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14366) [7,3661.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.3661)
+[HARIV. 9085.](https://sanskrit-lexicon-scans.github.io/hariv?9085) [9690.](https://sanskrit-lexicon-scans.github.io/hariv?9690) *parirakṣyamāṇa*
+[BHĀG. P. 5,9,21.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,9,21) *parirakṣita*
+[24,28.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,24,28) [9,9,40.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,9,40) [MBH. 5,6035.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.6035) *yoṣitaḥ parirakṣitum* пасти
+[M. 9,10.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,10) *apānaṃ te parjanyaḥ parirakṣatu*
 [SUŚR. 1,17,2.] *tadidaṃ parirakṣa vapuḥ*
-[KUMĀRAS. 4,44.] *ātmānaṃ parirakṣasva*
-[MBH. 1,6195.] *śakyastenānumānena paro 'pi parirakṣitum* быть сохранённым —, спасённым
-[Spr. 2129.] *parirakṣa asmadīyaprāṇān*
-[PAÑCAT. ed. orn. 58,12.] *ātmānaṃ parirakṣasva purīṃ cemāṃ sarākṣasām*
-[R. 5,88,24.] [23,17.] *sītā ca parirakṣitā* спасённый
-[56,144.] [MṚCCH. 110,17.] *ayodhyāṃ parirakṣati* и потому v. a. подвластный, управляемый
-[R. GORR. 2,109,49.] [HARIV. 733.] [3714.] [Spr. 5063.] [BHĀG. P. 5,4,17.] *madbhujaparirakṣite 'sminvane*
-[PAÑCAT. 30,24.] [215,7.] *nahyeṣa rāghavasyārthe jīvitaṃ parirakṣati* щадит
-[R. 6,4,27.] *na sma paśyāmahe kaṃcidyaḥ prāṇānparirakṣati*
-[MBH. 6,4062.] щадить, оберегать от прикосновения
+[KUMĀRAS. 4,44.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?4,44) *ātmānaṃ parirakṣasva*
+[MBH. 1,6195.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6195) *śakyastenānumānena paro 'pi parirakṣitum* быть сохранённым —, спасённым
+[Spr. 2129.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2129) *parirakṣa asmadīyaprāṇān*
+[PAÑCAT. ed. orn. 58,12.](https://sanskrit-lexicon-scans.github.io/pantankoseorn/app1?58,12) *ātmānaṃ parirakṣasva purīṃ cemāṃ sarākṣasām*
+[R. 5,88,24.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,88,24) [23,17.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,23,17) *sītā ca parirakṣitā* спасённый
+[56,144.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,56,144) [MṚCCH. 110,17.] *ayodhyāṃ parirakṣati* и потому v. a. подвластный, управляемый
+[R. GORR. 2,109,49.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,109,49) [HARIV. 733.](https://sanskrit-lexicon-scans.github.io/hariv?733) [3714.](https://sanskrit-lexicon-scans.github.io/hariv?3714) [Spr. 5063.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?5063) [BHĀG. P. 5,4,17.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,4,17) *madbhujaparirakṣite 'sminvane*
+[PAÑCAT. 30,24.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?30,24) [215,7.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?215,7) *nahyeṣa rāghavasyārthe jīvitaṃ parirakṣati* щадит
+[R. 6,4,27.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,4,27) *na sma paśyāmahe kaṃcidyaḥ prāṇānparirakṣati*
+[MBH. 6,4062.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.4062) щадить, оберегать от прикосновения
 [SUŚR. 1,98,16.] *śiṣṭaṃ māṃsam — kākebhyaḥ paryarakṣata* хранить, откладывать
-[R. 2,96,38] ([105,37] [GORR.]). *eṣa cūḍāmaṇirdivyo mayā suparirakṣitaḥ*
-[5,37,7.] *ye viprāḥ — brāhmīṃ vācaṃ parirakṣanti*
-[MBH. 13,4886.] *svadharmaṃ parirakṣatā* верно хранящий
-[R. 4,24,10.] [5,51,13.] *pratijñām*
-[R. GORR. 2,50,8.] *lokayātrāmimāṃ kṛtsnāṃ parirakṣanta āsate* и потому v. a. заботящийся о
-[HARIV. 6811.] избегать
+[R. 2,96,38](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,96,38) ([105,37](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,105,37) [GORR.]). *eṣa cūḍāmaṇirdivyo mayā suparirakṣitaḥ*
+[5,37,7.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,37,7) *ye viprāḥ — brāhmīṃ vācaṃ parirakṣanti*
+[MBH. 13,4886.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4886) *svadharmaṃ parirakṣatā* верно хранящий
+[R. 4,24,10.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,24,10) [5,51,13.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,51,13) *pratijñām*
+[R. GORR. 2,50,8.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,50,8) *lokayātrāmimāṃ kṛtsnāṃ parirakṣanta āsate* и потому v. a. заботящийся о
+[HARIV. 6811.](https://sanskrit-lexicon-scans.github.io/hariv?6811) избегать
 [SUŚR. 2,15,12.] med. с gen. избегать кого-л., сделать так, чтобы не встречаться с кем-л.
-[R. 5,73,20.]
+[R. 5,73,20.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,73,20)
 - **EN:** — *pari* to guard, preserve, protect, tend, take heed, keep, save, servare: *ghraṃsaṃ rakṣantaṃ pari viśvato gayam*
-[ṚV. 5,44,7.] *jighatsubhya imaṃ me pari rakṣata*
-[AV. 8,2,20.] *parirakṣedimāḥ prajāḥ* (*rājā*)
-[M. 7,142.] [MBH. 3,528.] [15708.] [R. GORR. 2,50,5.]
+[ṚV. 5,44,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.044.html#rv05.044.07) *jighatsubhya imaṃ me pari rakṣata*
+[AV. 8,2,20.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av08.002.html#av08.002.20) *parirakṣedimāḥ prajāḥ* (*rājā*)
+[M. 7,142.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,142) [MBH. 3,528.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.528) [15708.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15708) [R. GORR. 2,50,5.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,50,5)
 
 *tāṃ kanyāṃ vāsukiḥ paryarakṣata*
-[MBH. 1,1642.] [1940.] [2948.] [3,14366.] [7,3661.]
-[HARIV. 9085.] [9690.] *parirakṣyamāṇa*
-[BHĀG. P. 5,9,21.] *parirakṣita*
-[24,28.] [9,9,40.] [MBH. 5,6035.] *yoṣitaḥ parirakṣitum* to tend
-[M. 9,10.] *apānaṃ te parjanyaḥ parirakṣatu*
+[MBH. 1,1642.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1642) [1940.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1940) [2948.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2948) [3,14366.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14366) [7,3661.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.3661)
+[HARIV. 9085.](https://sanskrit-lexicon-scans.github.io/hariv?9085) [9690.](https://sanskrit-lexicon-scans.github.io/hariv?9690) *parirakṣyamāṇa*
+[BHĀG. P. 5,9,21.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,9,21) *parirakṣita*
+[24,28.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,24,28) [9,9,40.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,9,40) [MBH. 5,6035.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.6035) *yoṣitaḥ parirakṣitum* to tend
+[M. 9,10.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,10) *apānaṃ te parjanyaḥ parirakṣatu*
 [SUŚR. 1,17,2.] *tadidaṃ parirakṣa vapuḥ*
-[KUMĀRAS. 4,44.] *ātmānaṃ parirakṣasva*
-[MBH. 1,6195.] *śakyastenānumānena paro 'pi parirakṣitum* to be kept —, saved
-[Spr. 2129.] *parirakṣa asmadīyaprāṇān*
-[PAÑCAT. ed. orn. 58,12.] *ātmānaṃ parirakṣasva purīṃ cemāṃ sarākṣasām*
-[R. 5,88,24.] [23,17.] *sītā ca parirakṣitā* saved
-[56,144.] [MṚCCH. 110,17.] *ayodhyāṃ parirakṣati* so v. a. governed
-[R. GORR. 2,109,49.] [HARIV. 733.] [3714.] [Spr. 5063.] [BHĀG. P. 5,4,17.] *madbhujaparirakṣite 'sminvane*
-[PAÑCAT. 30,24.] [215,7.] *nahyeṣa rāghavasyārthe jīvitaṃ parirakṣati* spares
-[R. 6,4,27.] *na sma paśyāmahe kaṃcidyaḥ prāṇānparirakṣati*
-[MBH. 6,4062.] to spare, to protect from contact
+[KUMĀRAS. 4,44.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?4,44) *ātmānaṃ parirakṣasva*
+[MBH. 1,6195.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6195) *śakyastenānumānena paro 'pi parirakṣitum* to be kept —, saved
+[Spr. 2129.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2129) *parirakṣa asmadīyaprāṇān*
+[PAÑCAT. ed. orn. 58,12.](https://sanskrit-lexicon-scans.github.io/pantankoseorn/app1?58,12) *ātmānaṃ parirakṣasva purīṃ cemāṃ sarākṣasām*
+[R. 5,88,24.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,88,24) [23,17.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,23,17) *sītā ca parirakṣitā* saved
+[56,144.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,56,144) [MṚCCH. 110,17.] *ayodhyāṃ parirakṣati* so v. a. governed
+[R. GORR. 2,109,49.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,109,49) [HARIV. 733.](https://sanskrit-lexicon-scans.github.io/hariv?733) [3714.](https://sanskrit-lexicon-scans.github.io/hariv?3714) [Spr. 5063.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?5063) [BHĀG. P. 5,4,17.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,4,17) *madbhujaparirakṣite 'sminvane*
+[PAÑCAT. 30,24.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?30,24) [215,7.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?215,7) *nahyeṣa rāghavasyārthe jīvitaṃ parirakṣati* spares
+[R. 6,4,27.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,4,27) *na sma paśyāmahe kaṃcidyaḥ prāṇānparirakṣati*
+[MBH. 6,4062.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.4062) to spare, to protect from contact
 [SUŚR. 1,98,16.] *śiṣṭaṃ māṃsam — kākebhyaḥ paryarakṣata* to store up
-[R. 2,96,38] ([105,37] [GORR.]). *eṣa cūḍāmaṇirdivyo mayā suparirakṣitaḥ*
-[5,37,7.] *ye viprāḥ — brāhmīṃ vācaṃ parirakṣanti*
-[MBH. 13,4886.] *svadharmaṃ parirakṣatā* faithfully preserving
-[R. 4,24,10.] [5,51,13.] *pratijñām*
-[R. GORR. 2,50,8.] *lokayātrāmimāṃ kṛtsnāṃ parirakṣanta āsate* so v. a. mindful of
-[HARIV. 6811.] to avoid
+[R. 2,96,38](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,96,38) ([105,37](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,105,37) [GORR.]). *eṣa cūḍāmaṇirdivyo mayā suparirakṣitaḥ*
+[5,37,7.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,37,7) *ye viprāḥ — brāhmīṃ vācaṃ parirakṣanti*
+[MBH. 13,4886.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4886) *svadharmaṃ parirakṣatā* faithfully preserving
+[R. 4,24,10.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,24,10) [5,51,13.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,51,13) *pratijñām*
+[R. GORR. 2,50,8.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,50,8) *lokayātrāmimāṃ kṛtsnāṃ parirakṣanta āsate* so v. a. mindful of
+[HARIV. 6811.](https://sanskrit-lexicon-scans.github.io/hariv?6811) to avoid
 [SUŚR. 2,15,12.] med. with gen. to avoid someone, to contrive that one does not meet with someone
-[R. 5,73,20.]
+[R. 5,73,20.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,73,20)
   <sub>attested</sub>
 
 **caus)** — Vgl. *parirakṣaka* fgg.

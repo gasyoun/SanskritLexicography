@@ -8,61 +8,61 @@ _PWG article — 1 sub-card(s), 220 sense(s) · RU 220/220 · EN 0/220_
 
 
 **1)** eig. pron. interr. subst. und _adj._ wer, welcher: *kasya brahmāṇi jujuṣuryuvānaḥ ko adhvare maruta ā vavarta*
-[ṚV. 1,165,2.] *kayā matī kuta etāsa ete* 1. *ko addhā veda ka iha pra vocat*
-[3,54,5.] *kā maryādā vayunā kaddha vāmam*
-[4,5,13.] [5,41,11.] *kadyadūcima*
-[1,161,1.] *ko 'si katamo 'si kasyāsi ko nāmāsi*
-[VS. 7,29.] [48.]
-[ŚAT. BR. 14,6,3,1.] *kiṃ bhūtamadhikaṃ tataḥ*
-[M. 1,95.] *kena hetunā*
-[8,161.] *kastasmāttadapohati*
-[414.] *kā tvaṃ kiṃ ca cikīrṣasi*
+[ṚV. 1,165,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.165.html#rv01.165.02) *kayā matī kuta etāsa ete* 1. *ko addhā veda ka iha pra vocat*
+[3,54,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.054.html#rv03.054.05) *kā maryādā vayunā kaddha vāmam*
+[4,5,13.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.005.html#rv04.005.13) [5,41,11.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.041.html#rv05.041.11) *kadyadūcima*
+[1,161,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.161.html#rv01.161.01) *ko 'si katamo 'si kasyāsi ko nāmāsi*
+[VS. 7,29.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?7,29) [48.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?7,48)
+[ŚAT. BR. 14,6,3,1.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,6,3,1) *kiṃ bhūtamadhikaṃ tataḥ*
+[M. 1,95.](https://sanskrit-lexicon-scans.github.io/manu/index.html?1,95) *kena hetunā*
+[8,161.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,161) *kastasmāttadapohati*
+[414.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,414) *kā tvaṃ kiṃ ca cikīrṣasi*
 
 - **RU:** eig. pron. interr. subst. и _adj._ кто, который: *kasya brahmāṇi jujuṣuryuvānaḥ ko adhvare maruta ā vavarta*
-[ṚV. 1,165,2.] *kayā matī kuta etāsa ete* 1. *ko addhā veda ka iha pra vocat*
-[3,54,5.] *kā maryādā vayunā kaddha vāmam*
-[4,5,13.] [5,41,11.] *kadyadūcima*
-[1,161,1.] *ko 'si katamo 'si kasyāsi ko nāmāsi*
-[VS. 7,29.] [48.]
-[ŚAT. BR. 14,6,3,1.] *kiṃ bhūtamadhikaṃ tataḥ*
-[M. 1,95.] *kena hetunā*
-[8,161.] *kastasmāttadapohati*
-[414.] *kā tvaṃ kiṃ ca cikīrṣasi*
+[ṚV. 1,165,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.165.html#rv01.165.02) *kayā matī kuta etāsa ete* 1. *ko addhā veda ka iha pra vocat*
+[3,54,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.054.html#rv03.054.05) *kā maryādā vayunā kaddha vāmam*
+[4,5,13.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.005.html#rv04.005.13) [5,41,11.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.041.html#rv05.041.11) *kadyadūcima*
+[1,161,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.161.html#rv01.161.01) *ko 'si katamo 'si kasyāsi ko nāmāsi*
+[VS. 7,29.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?7,29) [48.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?7,48)
+[ŚAT. BR. 14,6,3,1.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,6,3,1) *kiṃ bhūtamadhikaṃ tataḥ*
+[M. 1,95.](https://sanskrit-lexicon-scans.github.io/manu/index.html?1,95) *kena hetunā*
+[8,161.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,161) *kastasmāttadapohati*
+[414.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,414) *kā tvaṃ kiṃ ca cikīrṣasi*
   <sub>attested</sub>
 
-**fragment)** [N. 12,51.] *ke vai bhavantaḥ kaścāsau yasyāhaṃ dūta īpsitaḥ . kiṃ ca tadvo mayā kāryam*
-[3,2.] *kasya tvam*
-[11,28.] *pumāṃsaṃ kaṃ na mohayeḥ*
-[MBH. 4,266.] *kā satī ke vayaṃ tava*
-[1,8398.] *kiṃ tat* (sc. *sthānam*) was ist das (für ein Standort)?
-[HIT. 26,11.] *na ca jñāyeta kasya saḥ* und wenn man nicht wüsste, wessen (Sohn) er ist
-[M. 9,170.] *kathyatāṃ kā gatirduḥkhasyeti*
+**fragment)** [N. 12,51.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?12,51) *ke vai bhavantaḥ kaścāsau yasyāhaṃ dūta īpsitaḥ . kiṃ ca tadvo mayā kāryam*
+[3,2.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?3,2) *kasya tvam*
+[11,28.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?11,28) *pumāṃsaṃ kaṃ na mohayeḥ*
+[MBH. 4,266.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.266) *kā satī ke vayaṃ tava*
+[1,8398.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8398) *kiṃ tat* (sc. *sthānam*) was ist das (für ein Standort)?
+[HIT. 26,11.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?26,11) *na ca jñāyeta kasya saḥ* und wenn man nicht wüsste, wessen (Sohn) er ist
+[M. 9,170.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,170) *kathyatāṃ kā gatirduḥkhasyeti*
 [MUDRĀR. 134,15.] Ueber diesen Gebrauch des interr. mit und ohne *iti* s.
-[BÖHTL.] zu [ŚĀK. 3,9.] [10.] *maraṇavyādhiśokānāṃ kimadya nipatiṣyati* was (von den Dreien)
-[HIT. I,3.] *tānnighnatā kiṃ na hataṃ rakṣatā kiṃ na rakṣitam* wer dieses (das Leben) opfert, was hat der nicht vernichtet (d. h. der hat Alles vernichtet)? wer dieses erhält, was hat der nicht erhalten?
-[37.] *tadā labhyaṃ bhavenna kim*
-[42.] *āḥ kastiṣṭha kastiṣṭha* wer bist du? bleibe stehen!
-[ŚĀK. 94,1], v. l. *ke mama dhanvino 'nye* wer sind die andern Bogenträger für mich? (d. i. was vermögen sie gegen mich?)
-[KUMĀRAS. 3,10]; vgl. im Prākrit: *kāo vaṃ bhaṭṭiṇo paṇaapariggahassa*
-[MĀLAV. 40,16.] *kā tumaṃ visajjidavvassa rundhidabvassa vā*
-[ŚĀK. 17,11.] *kāo vaaṃ parittāduṃ* wie vermögen wir zu retten?
+[BÖHTL.] zu [ŚĀK. 3,9.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?3,9) [10.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?3,10) *maraṇavyādhiśokānāṃ kimadya nipatiṣyati* was (von den Dreien)
+[HIT. I,3.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?1,3) *tānnighnatā kiṃ na hataṃ rakṣatā kiṃ na rakṣitam* wer dieses (das Leben) opfert, was hat der nicht vernichtet (d. h. der hat Alles vernichtet)? wer dieses erhält, was hat der nicht erhalten?
+[37.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?1,37) *tadā labhyaṃ bhavenna kim*
+[42.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?1,42) *āḥ kastiṣṭha kastiṣṭha* wer bist du? bleibe stehen!
+[ŚĀK. 94,1](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?94,1), v. l. *ke mama dhanvino 'nye* wer sind die andern Bogenträger für mich? (d. i. was vermögen sie gegen mich?)
+[KUMĀRAS. 3,10](https://sanskrit-lexicon-scans.github.io/kumaras/app1?3,10); vgl. im Prākrit: *kāo vaṃ bhaṭṭiṇo paṇaapariggahassa*
+[MĀLAV. 40,16.](https://sanskrit-lexicon-scans.github.io/malavikagni/app2?40,16) *kā tumaṃ visajjidavvassa rundhidabvassa vā*
+[ŚĀK. 17,11.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?17,11) *kāo vaaṃ parittāduṃ* wie vermögen wir zu retten?
 
-- **RU:** [N. 12,51.] *ke vai bhavantaḥ kaścāsau yasyāhaṃ dūta īpsitaḥ . kiṃ ca tadvo mayā kāryam*
-[3,2.] *kasya tvam*
-[11,28.] *pumāṃsaṃ kaṃ na mohayeḥ*
-[MBH. 4,266.] *kā satī ke vayaṃ tava*
-[1,8398.] *kiṃ tat* (sc. *sthānam*) что это (за место)?
-[HIT. 26,11.] *na ca jñāyeta kasya saḥ* и если бы не знали, чей (сын) он есть
-[M. 9,170.] *kathyatāṃ kā gatirduḥkhasyeti*
+- **RU:** [N. 12,51.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?12,51) *ke vai bhavantaḥ kaścāsau yasyāhaṃ dūta īpsitaḥ . kiṃ ca tadvo mayā kāryam*
+[3,2.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?3,2) *kasya tvam*
+[11,28.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?11,28) *pumāṃsaṃ kaṃ na mohayeḥ*
+[MBH. 4,266.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.266) *kā satī ke vayaṃ tava*
+[1,8398.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8398) *kiṃ tat* (sc. *sthānam*) что это (за место)?
+[HIT. 26,11.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?26,11) *na ca jñāyeta kasya saḥ* и если бы не знали, чей (сын) он есть
+[M. 9,170.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,170) *kathyatāṃ kā gatirduḥkhasyeti*
 [MUDRĀR. 134,15.] Об этом употреблении interr. с *iti* и без него s.
-[BÖHTL.] к [ŚĀK. 3,9.] [10.] *maraṇavyādhiśokānāṃ kimadya nipatiṣyati* что (из трёх)
-[HIT. I,3.] *tānnighnatā kiṃ na hataṃ rakṣatā kiṃ na rakṣitam* кто это (жизнь) приносит в жертву, чего тот не уничтожил (d. h. тот уничтожил всё)? кто это сохраняет, чего тот не сохранил?
-[37.] *tadā labhyaṃ bhavenna kim*
-[42.] *āḥ kastiṣṭha kastiṣṭha* кто ты? остановись!
-[ŚĀK. 94,1], v. l. *ke mama dhanvino 'nye* кто мне другие лучники? (d. i. что они могут против меня?)
-[KUMĀRAS. 3,10]; vgl. в Prākrit: *kāo vaṃ bhaṭṭiṇo paṇaapariggahassa*
-[MĀLAV. 40,16.] *kā tumaṃ visajjidavvassa rundhidabvassa vā*
-[ŚĀK. 17,11.] *kāo vaaṃ parittāduṃ* как нам спасти?
+[BÖHTL.] к [ŚĀK. 3,9.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?3,9) [10.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?3,10) *maraṇavyādhiśokānāṃ kimadya nipatiṣyati* что (из трёх)
+[HIT. I,3.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?1,3) *tānnighnatā kiṃ na hataṃ rakṣatā kiṃ na rakṣitam* кто это (жизнь) приносит в жертву, чего тот не уничтожил (d. h. тот уничтожил всё)? кто это сохраняет, чего тот не сохранил?
+[37.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?1,37) *tadā labhyaṃ bhavenna kim*
+[42.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?1,42) *āḥ kastiṣṭha kastiṣṭha* кто ты? остановись!
+[ŚĀK. 94,1](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?94,1), v. l. *ke mama dhanvino 'nye* кто мне другие лучники? (d. i. что они могут против меня?)
+[KUMĀRAS. 3,10](https://sanskrit-lexicon-scans.github.io/kumaras/app1?3,10); vgl. в Prākrit: *kāo vaṃ bhaṭṭiṇo paṇaapariggahassa*
+[MĀLAV. 40,16.](https://sanskrit-lexicon-scans.github.io/malavikagni/app2?40,16) *kā tumaṃ visajjidavvassa rundhidabvassa vā*
+[ŚĀK. 17,11.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?17,11) *kāo vaaṃ parittāduṃ* как нам спасти?
   <sub>attested</sub>
 
 **1)** [PRAB. 31,18.] *kiṃ kiṃ na karoti*
@@ -70,9 +70,9 @@ _PWG article — 1 sub-card(s), 220 sense(s) · RU 220/220 · EN 0/220_
 - **RU:** [PRAB. 31,18.] *kiṃ kiṃ na karoti*
   <sub>attested</sub>
 
-**2)** [PAÑCAT. I,338.] *kaskaḥ* gaṇa *kaskādi* zu [P. 8,3,48.]
+**2)** [PAÑCAT. I,338.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?1,338) *kaskaḥ* gaṇa *kaskādi* zu [P. 8,3,48.](https://ashtadhyayi.com/sutraani/8/3/48)
 
-- **RU:** [PAÑCAT. I,338.] *kaskaḥ* gaṇa *kaskādi* к [P. 8,3,48.]
+- **RU:** [PAÑCAT. I,338.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?1,338) *kaskaḥ* gaṇa *kaskādi* к [P. 8,3,48.](https://ashtadhyayi.com/sutraani/8/3/48)
   <sub>attested</sub>
 
 **3)** *kāṃskān* oder *kāskān*
@@ -80,39 +80,39 @@ _PWG article — 1 sub-card(s), 220 sense(s) · RU 220/220 · EN 0/220_
 - **RU:** *kāṃskān* или *kāskān*
   <sub>attested</sub>
 
-**4)** [P. 8,3,12.] auch *kānkān*
+**4)** [P. 8,3,12.](https://ashtadhyayi.com/sutraani/8/3/12) auch *kānkān*
 
-- **RU:** [P. 8,3,12.] также *kānkān*
+- **RU:** [P. 8,3,12.](https://ashtadhyayi.com/sutraani/8/3/12) также *kānkān*
   <sub>attested</sub>
 
-**5)** [VOP. 2,35.] Bei einer Doppelfrage in einem und demselben Satze wie im Griechischen und in den slawischen Sprachen: *kena kaṃ paśyet kena kaṃ jighret*
+**5)** [VOP. 2,35.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?2,35) Bei einer Doppelfrage in einem und demselben Satze wie im Griechischen und in den slawischen Sprachen: *kena kaṃ paśyet kena kaṃ jighret*
 
-- **RU:** [VOP. 2,35.] При двойном вопросе в одном и том же предложении, как в греческом и в славянских языках: *kena kaṃ paśyet kena kaṃ jighret*
+- **RU:** [VOP. 2,35.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?2,35) При двойном вопросе в одном и том же предложении, как в греческом и в славянских языках: *kena kaṃ paśyet kena kaṃ jighret*
   <sub>attested</sub>
 
-**6)** [ŚAT. BR. 14,5,4,16.] *kā vāṃ kaṃ varamicchati*
+**6)** [ŚAT. BR. 14,5,4,16.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,5,4,16) *kā vāṃ kaṃ varamicchati*
 
-- **RU:** [ŚAT. BR. 14,5,4,16.] *kā vāṃ kaṃ varamicchati*
+- **RU:** [ŚAT. BR. 14,5,4,16.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,5,4,16) *kā vāṃ kaṃ varamicchati*
   <sub>attested</sub>
 
-**7)** [R. 1,39,12.] *kaḥ kaṃ paritrāyate*
+**7)** [R. 1,39,12.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,39,12) *kaḥ kaṃ paritrāyate*
 
-- **RU:** [R. 1,39,12.] *kaḥ kaṃ paritrāyate*
+- **RU:** [R. 1,39,12.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,39,12) *kaḥ kaṃ paritrāyate*
   <sub>attested</sub>
 
-**8)** [PAÑCAT. III,268.] *prajāsu kaḥ kena pathā prayātītyaśeṣato veditumasti śaktiḥ*
+**8)** [PAÑCAT. III,268.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?3,268) *prajāsu kaḥ kena pathā prayātītyaśeṣato veditumasti śaktiḥ*
 
-- **RU:** [PAÑCAT. III,268.] *prajāsu kaḥ kena pathā prayātītyaśeṣato veditumasti śaktiḥ*
+- **RU:** [PAÑCAT. III,268.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?3,268) *prajāsu kaḥ kena pathā prayātītyaśeṣato veditumasti śaktiḥ*
   <sub>attested</sub>
 
-**9)** [ŚĀK. 153.] *kim* mit einem instr. oder einem gerund. auf *tvā (ya)* was durch dieses? d. i. was liegt daran? wozu dieses?
+**9)** [ŚĀK. 153.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?153) *kim* mit einem instr. oder einem gerund. auf *tvā (ya)* was durch dieses? d. i. was liegt daran? wozu dieses?
 
-- **RU:** [ŚĀK. 153.] *kim* с instr. или с gerund. на *tvā (ya)* что этим (достигается)? d. i. в чём тут дело? к чему это?
+- **RU:** [ŚĀK. 153.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?153) *kim* с instr. или с gerund. на *tvā (ya)* что этим (достигается)? d. i. в чём тут дело? к чему это?
   <sub>attested</sub>
 
-**10)** [H. 1528.]
+**10)** [H. 1528.](https://sanskrit-lexicon-scans.github.io/abch2/app1?1528)
 
-- **RU:** [H. 1528.]
+- **RU:** [H. 1528.](https://sanskrit-lexicon-scans.github.io/abch2/app1?1528)
   <sub>attested</sub>
 
 **11)** [MED. avy. 52] (*niṣedhe*). Die betheiligte Person im gen. *kiṃ vilambena* wozu das Zögern?
@@ -120,39 +120,39 @@ _PWG article — 1 sub-card(s), 220 sense(s) · RU 220/220 · EN 0/220_
 - **RU:** [MED. avy. 52] (*niṣedhe*). Заинтересованное лицо стоит в gen. *kiṃ vilambena* к чему медлить?
   <sub>attested</sub>
 
-**12)** [R. 3,35,35.] *bahunā kiṃ pralāpena*
+**12)** [R. 3,35,35.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,35,35) *bahunā kiṃ pralāpena*
 
-- **RU:** [R. 3,35,35.] *bahunā kiṃ pralāpena*
+- **RU:** [R. 3,35,35.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,35,35) *bahunā kiṃ pralāpena*
   <sub>attested</sub>
 
-**13)** [VIŚV. 3,25.] *kiṃ bahunā* wozu die vielen Worte?
+**13)** [VIŚV. 3,25.](https://sanskrit-lexicon-scans.github.io/bchrest1/app4?3,25) *kiṃ bahunā* wozu die vielen Worte?
 
-- **RU:** [VIŚV. 3,25.] *kiṃ bahunā* к чему многословие?
+- **RU:** [VIŚV. 3,25.](https://sanskrit-lexicon-scans.github.io/bchrest1/app4?3,25) *kiṃ bahunā* к чему многословие?
   <sub>attested</sub>
 
-**14)** [PAÑCAT. 5,3.]
+**14)** [PAÑCAT. 5,3.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?5,3)
 
-- **RU:** [PAÑCAT. 5,3.]
+- **RU:** [PAÑCAT. 5,3.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?5,3)
   <sub>attested</sub>
 
-**15)** [ŚĀK. 25,16.] [39,2.] [70,3.]
+**15)** [ŚĀK. 25,16.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?25,16) [39,2.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?39,2) [70,3.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?70,3)
 
-- **RU:** [ŚĀK. 25,16.] [39,2.] [70,3.]
+- **RU:** [ŚĀK. 25,16.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?25,16) [39,2.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?39,2) [70,3.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?70,3)
   <sub>attested</sub>
 
-**16)** [HIT. Pr. 11] (wechselt mit *ko 'rthaḥ*).
+**16)** [HIT. Pr. 11](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?0,11) (wechselt mit *ko 'rthaḥ*).
 
-- **RU:** [HIT. Pr. 11] (чередуется с *ko 'rthaḥ*).
+- **RU:** [HIT. Pr. 11](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?0,11) (чередуется с *ko 'rthaḥ*).
   <sub>attested</sub>
 
-**1)** [21,3.] *kimanena saṃtatirasti nāstīti* was liegt daran, ob Jemand Nachkommenschaft hat oder nicht?
+**1)** [21,3.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?21,3) *kimanena saṃtatirasti nāstīti* was liegt daran, ob Jemand Nachkommenschaft hat oder nicht?
 
-- **RU:** [21,3.] *kimanena saṃtatirasti nāstīti* какое дело до того, есть ли у кого потомство или нет?
+- **RU:** [21,3.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?21,3) *kimanena saṃtatirasti nāstīti* какое дело до того, есть ли у кого потомство или нет?
   <sub>attested</sub>
 
-**2)** [ŚĀK. 91,7.] *kimanena ciraṃ bhīma jīvatā pāparakṣasā* was liegt daran, dass er noch lange lebt?
+**2)** [ŚĀK. 91,7.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?91,7) *kimanena ciraṃ bhīma jīvatā pāparakṣasā* was liegt daran, dass er noch lange lebt?
 
-- **RU:** [ŚĀK. 91,7.] *kimanena ciraṃ bhīma jīvatā pāparakṣasā* какое дело до того, что он ещё долго живёт?
+- **RU:** [ŚĀK. 91,7.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?91,7) *kimanena ciraṃ bhīma jīvatā pāparakṣasā* какое дело до того, что он ещё долго живёт?
   <sub>attested</sub>
 
 **3)** [HIḌ. 4,45.] *vyādhitasyauṣadhaṃ pathyaṃ nīrujastu kimauṣadhaiḥ*
@@ -160,19 +160,19 @@ _PWG article — 1 sub-card(s), 220 sense(s) · RU 220/220 · EN 0/220_
 - **RU:** [HIḌ. 4,45.] *vyādhitasyauṣadhaṃ pathyaṃ nīrujastu kimauṣadhaiḥ*
   <sub>attested</sub>
 
-**4)** [HIT. I,13.] [PAÑCAT. I,120.] [94,12.] [RAGH. 2,53.] *kiṃ tavānena* was geht dich das an?
+**4)** [HIT. I,13.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?1,13) [PAÑCAT. I,120.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?1,120) [94,12.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?94,12) [RAGH. 2,53.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?2,53) *kiṃ tavānena* was geht dich das an?
 
-- **RU:** [HIT. I,13.] [PAÑCAT. I,120.] [94,12.] [RAGH. 2,53.] *kiṃ tavānena* какое тебе до этого дело?
+- **RU:** [HIT. I,13.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?1,13) [PAÑCAT. I,120.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?1,120) [94,12.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?94,12) [RAGH. 2,53.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?2,53) *kiṃ tavānena* какое тебе до этого дело?
   <sub>attested</sub>
 
-**5)** [P. 3,4,28], Sch.
+**5)** [P. 3,4,28](https://ashtadhyayi.com/sutraani/3/4/28), Sch.
 
-- **RU:** [P. 3,4,28], Sch.
+- **RU:** [P. 3,4,28](https://ashtadhyayi.com/sutraani/3/4/28), Sch.
   <sub>attested</sub>
 
-**6)** [ŚĀK. 123.] *kiṃ te jñātairmūḍha mahādhanurdharaiḥ* was liegt dir daran, sie zu kennen?
+**6)** [ŚĀK. 123.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?123) *kiṃ te jñātairmūḍha mahādhanurdharaiḥ* was liegt dir daran, sie zu kennen?
 
-- **RU:** [ŚĀK. 123.] *kiṃ te jñātairmūḍha mahādhanurdharaiḥ* какое тебе дело знать её?
+- **RU:** [ŚĀK. 123.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?123) *kiṃ te jñātairmūḍha mahādhanurdharaiḥ* какое тебе дело знать её?
   <sub>attested</sub>
 
 **7)** [DRAUP. 7,4.] *kiṃ te yodhairnipātitaiḥ*
@@ -185,29 +185,29 @@ _PWG article — 1 sub-card(s), 220 sense(s) · RU 220/220 · EN 0/220_
 - **RU:** [8,38.] *kiṃ te sūryaṃ nipātya vai* какое тебе дело — низвергнуть солнце?
   <sub>attested</sub>
 
-**9)** [MBH. 13,4628.] *kim* am Anf. eines adj. comp.: *kiṃdevata* welche Gottheit habend?
+**9)** [MBH. 13,4628.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4628) *kim* am Anf. eines adj. comp.: *kiṃdevata* welche Gottheit habend?
 
-- **RU:** [MBH. 13,4628.] *kim* в Anf. adj. comp.: *kiṃdevata* имеющий какое божество?
+- **RU:** [MBH. 13,4628.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4628) *kim* в Anf. adj. comp.: *kiṃdevata* имеющий какое божество?
   <sub>attested</sub>
 
-**10)** [ŚAT. BR. 14,6,9,21]-[25.] *kiṃvīrya*.* kiṃparākrama*
+**10)** [ŚAT. BR. 14,6,9,21](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,6,9,21)-[25.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,6,9,25) *kiṃvīrya*.* kiṃparākrama*
 
-- **RU:** [ŚAT. BR. 14,6,9,21]-[25.] *kiṃvīrya*.* kiṃparākrama*
+- **RU:** [ŚAT. BR. 14,6,9,21](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,6,9,21)-[25.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,6,9,25) *kiṃvīrya*.* kiṃparākrama*
   <sub>attested</sub>
 
-**11)** [R. 3,38,2.] *kiṃrūpa, kiṃprahāra*
+**11)** [R. 3,38,2.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,38,2) *kiṃrūpa, kiṃprahāra*
 
-- **RU:** [R. 3,38,2.] *kiṃrūpa, kiṃprahāra*
+- **RU:** [R. 3,38,2.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,38,2) *kiṃrūpa, kiṃprahāra*
   <sub>attested</sub>
 
-**12)** [PAÑCAT. 258,13.] *kimākhya*
+**12)** [PAÑCAT. 258,13.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?258,13) *kimākhya*
 
-- **RU:** [PAÑCAT. 258,13.] *kimākhya*
+- **RU:** [PAÑCAT. 258,13.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?258,13) *kimākhya*
   <sub>attested</sub>
 
-**13)** [ŚĀK. 104,18.] *kiṃvyāpāra*
+**13)** [ŚĀK. 104,18.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?104,18) *kiṃvyāpāra*
 
-- **RU:** [ŚĀK. 104,18.] *kiṃvyāpāra*
+- **RU:** [ŚĀK. 104,18.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?104,18) *kiṃvyāpāra*
   <sub>attested</sub>
 
 **14)** [ŚĀK. CH. 150,8.] *kiṃnāman*
@@ -215,14 +215,14 @@ _PWG article — 1 sub-card(s), 220 sense(s) · RU 220/220 · EN 0/220_
 - **RU:** [ŚĀK. CH. 150,8.] *kiṃnāman*
   <sub>attested</sub>
 
-**note-1)** [VID. 267.] *kiṃkṣaṇa* der da sagt: was ist ein Augenblick? d. i. der den Augenblick nicht achtet, ebenso *kiṃvarāṭaka*
+**note-1)** [VID. 267.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?267) *kiṃkṣaṇa* der da sagt: was ist ein Augenblick? d. i. der den Augenblick nicht achtet, ebenso *kiṃvarāṭaka*
 
-- **RU:** [VID. 267.] *kiṃkṣaṇa* тот, кто говорит: что такое мгновение? d. i. тот, кто не считается с мгновением, равным образом *kiṃvarāṭaka*
+- **RU:** [VID. 267.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?267) *kiṃkṣaṇa* тот, кто говорит: что такое мгновение? d. i. тот, кто не считается с мгновением, равным образом *kiṃvarāṭaka*
   <sub>attested</sub>
 
-**note-2)** [HIT. II,87.] *kiṃrājan* ein schlechter König (eig. ist das ein König?) und ähnliche compp. werden wir unter *kim* aufführen, da hier *kim* Fragepartikel ist. Sehr verführerisch ist es, in manchen mit *ka* anlautenden Wörtern dieses *ka* als pron. interr. d. i. als Ausdruck der Verwunderung aufzufassen. Wenn wir auch eine solche Art von Zusammensetzung nicht schlechtweg in Abrede zu stellen gedenken, so müssen wir doch darauf aufmerksam machen, dass man mit dieser Erklärungsweise hier und da nach unserer Ansicht zu weit gegangen ist. Vgl.
+**note-2)** [HIT. II,87.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?2,87) *kiṃrājan* ein schlechter König (eig. ist das ein König?) und ähnliche compp. werden wir unter *kim* aufführen, da hier *kim* Fragepartikel ist. Sehr verführerisch ist es, in manchen mit *ka* anlautenden Wörtern dieses *ka* als pron. interr. d. i. als Ausdruck der Verwunderung aufzufassen. Wenn wir auch eine solche Art von Zusammensetzung nicht schlechtweg in Abrede zu stellen gedenken, so müssen wir doch darauf aufmerksam machen, dass man mit dieser Erklärungsweise hier und da nach unserer Ansicht zu weit gegangen ist. Vgl.
 
-- **RU:** [HIT. II,87.] *kiṃrājan* дурной царь (eig. разве это царь?) и подобные compp. мы приведём под *kim*, так как здесь *kim* — вопросительная частица. Весьма соблазнительно в некоторых начинающихся на *ka* словах понимать этот *ka* как pron. interr. d. i., как выражение удивления. Хотя мы и не намерены безусловно отвергать такого рода словосложение, однако должны обратить внимание на то, что при таком объяснении здесь и там, по нашему мнению, заходили слишком далеко. Vgl.
+- **RU:** [HIT. II,87.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?2,87) *kiṃrājan* дурной царь (eig. разве это царь?) и подобные compp. мы приведём под *kim*, так как здесь *kim* — вопросительная частица. Весьма соблазнительно в некоторых начинающихся на *ka* словах понимать этот *ka* как pron. interr. d. i., как выражение удивления. Хотя мы и не намерены безусловно отвергать такого рода словосложение, однако должны обратить внимание на то, что при таком объяснении здесь и там, по нашему мнению, заходили слишком далеко. Vgl.
   <sub>mixed</sub>
 
 **heading)** *kad, kam, kava, kā, ku*. — Das interr. in Verbindung mit verschiedenen Partikeln:
@@ -232,122 +232,122 @@ _PWG article — 1 sub-card(s), 220 sense(s) · RU 220/220 · EN 0/220_
 
 **a)** a) mit *iva* (vgl. u. *iva* 3):
 *kimivaiṣa abhūt*
-[ŚAT. BR. 11,4,1,8.]
+[ŚAT. BR. 11,4,1,8.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?11,4,1,8)
 
 - **RU:** a) с *iva* (vgl. u. *iva* 3):
 *kimivaiṣa abhūt*
-[ŚAT. BR. 11,4,1,8.]
+[ŚAT. BR. 11,4,1,8.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?11,4,1,8)
   <sub>attested</sub>
 
 **b)** — b) mit *u* (vgl. u. 2. *u*, 3,c und 7):
 *ka u tasmai manuṣyo yaḥ*
-[ŚAT. BR. 5,2,2,3.] [10,4,4,3.] *ka u śravat*
-[ṚV. 4,43,1.] *kimu śmaśrūṇi*
-[AIT. BR. 7,13.]
+[ŚAT. BR. 5,2,2,3.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?5,2,2,3) [10,4,4,3.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?10,4,4,3) *ka u śravat*
+[ṚV. 4,43,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.043.html#rv04.043.01) *kimu śmaśrūṇi*
+[AIT. BR. 7,13.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?7,13)
 
 - **RU:** — b) с *u* (vgl. u. 2. *u*, 3,c и 7):
 *ka u tasmai manuṣyo yaḥ*
-[ŚAT. BR. 5,2,2,3.] [10,4,4,3.] *ka u śravat*
-[ṚV. 4,43,1.] *kimu śmaśrūṇi*
-[AIT. BR. 7,13.]
+[ŚAT. BR. 5,2,2,3.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?5,2,2,3) [10,4,4,3.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?10,4,4,3) *ka u śravat*
+[ṚV. 4,43,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.043.html#rv04.043.01) *kimu śmaśrūṇi*
+[AIT. BR. 7,13.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?7,13)
   <sub>attested</sub>
 
 **c)** — c) mit *nāma* wohl: *siṃhaṃ vodhayati ko nāma*
-[PAÑCAT. I,351.] [II,166.] [165,6.] ad. [ŚĀK. 94.] [KATHĀS. 4,133.] [16,9.] [PRAB. 15,16.] [29,13.] [33,17.] *kimiva nāmāyuṣmānamareśvarānnārhati*
-[ŚĀK. 97,15.]
+[PAÑCAT. I,351.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?1,351) [II,166.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?2,166) [165,6.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?165,6) ad. [ŚĀK. 94.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?94) [KATHĀS. 4,133.](https://sanskrit-lexicon-scans.github.io/kss/index.html?4,133) [16,9.](https://sanskrit-lexicon-scans.github.io/kss/index.html?16,9) [PRAB. 15,16.] [29,13.] [33,17.] *kimiva nāmāyuṣmānamareśvarānnārhati*
+[ŚĀK. 97,15.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?97,15)
 
 - **RU:** — в) с *nāma* пожалуй, вероятно: *siṃhaṃ vodhayati ko nāma*
-[PAÑCAT. I,351.] [II,166.] [165,6.] ad. [ŚĀK. 94.] [KATHĀS. 4,133.] [16,9.] [PRAB. 15,16.] [29,13.] [33,17.] *kimiva nāmāyuṣmānamareśvarānnārhati*
-[ŚĀK. 97,15.]
+[PAÑCAT. I,351.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?1,351) [II,166.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?2,166) [165,6.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?165,6) ad. [ŚĀK. 94.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?94) [KATHĀS. 4,133.](https://sanskrit-lexicon-scans.github.io/kss/index.html?4,133) [16,9.](https://sanskrit-lexicon-scans.github.io/kss/index.html?16,9) [PRAB. 15,16.] [29,13.] [33,17.] *kimiva nāmāyuṣmānamareśvarānnārhati*
+[ŚĀK. 97,15.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?97,15)
   <sub>attested</sub>
 
 **d)** — d) mit der Fragepartikel *nu*
-[ṚV. 1,165,13.] [8,45,37.] *ko nvayam*
-[ŚAT. BR. 13,4,1,15.] [14,6,9,34.] *kiṃ nu malaṃ kimajinam*
-[AIT. BR. 7,13.] *ka u nu te mahimanaḥ samasyāsmatpūrva ṛṣayo 'ntamāpuḥ*
-[ṚV. 10,54,3.] *kadū nva1syākṛtam*
-[8,55,9.] *ko nvasminsāṃprataṃ loke guṇavānkaśca vīryavān*
-[R. 1,1,2.] *ko nvetalloke 'sminprathayet*
-[4,1.] *kiṃ nvidamucyate (vanam)* wie heisst dieser (Wald)?
-[26,15.] *kiṃ nu kāryaṃ hatasyeha mama*
-[2,73,2.] [5,15,2.] [3.] *kaṃ nu pṛcchāmi*
-[N. 12,20.] *ko nu me jīvitenārthaḥ*
-[65.] *ko nu khalveṣa niṣidhyate*
-[ŚĀK. 101,19.] [20.] [55,2.] *kiṃ nu khalu syāt*
+[ṚV. 1,165,13.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.165.html#rv01.165.13) [8,45,37.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.045.html#rv08.045.37) *ko nvayam*
+[ŚAT. BR. 13,4,1,15.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?13,4,1,15) [14,6,9,34.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,6,9,34) *kiṃ nu malaṃ kimajinam*
+[AIT. BR. 7,13.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?7,13) *ka u nu te mahimanaḥ samasyāsmatpūrva ṛṣayo 'ntamāpuḥ*
+[ṚV. 10,54,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.054.html#rv10.054.03) *kadū nva1syākṛtam*
+[8,55,9.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.055.html#rv08.055.09) *ko nvasminsāṃprataṃ loke guṇavānkaśca vīryavān*
+[R. 1,1,2.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,1,2) *ko nvetalloke 'sminprathayet*
+[4,1.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,4,1) *kiṃ nvidamucyate (vanam)* wie heisst dieser (Wald)?
+[26,15.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,26,15) *kiṃ nu kāryaṃ hatasyeha mama*
+[2,73,2.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,73,2) [5,15,2.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,15,2) [3.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,15,3) *kaṃ nu pṛcchāmi*
+[N. 12,20.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?12,20) *ko nu me jīvitenārthaḥ*
+[65.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?12,65) *ko nu khalveṣa niṣidhyate*
+[ŚĀK. 101,19.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?101,19) [20.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?101,20) [55,2.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?55,2) *kiṃ nu khalu syāt*
 
 - **RU:** — г) с вопросительной частицей *nu*
-[ṚV. 1,165,13.] [8,45,37.] *ko nvayam*
-[ŚAT. BR. 13,4,1,15.] [14,6,9,34.] *kiṃ nu malaṃ kimajinam*
-[AIT. BR. 7,13.] *ka u nu te mahimanaḥ samasyāsmatpūrva ṛṣayo 'ntamāpuḥ*
-[ṚV. 10,54,3.] *kadū nva1syākṛtam*
-[8,55,9.] *ko nvasminsāṃprataṃ loke guṇavānkaśca vīryavān*
-[R. 1,1,2.] *ko nvetalloke 'sminprathayet*
-[4,1.] *kiṃ nvidamucyate (vanam)* как называется этот (лес)?
-[26,15.] *kiṃ nu kāryaṃ hatasyeha mama*
-[2,73,2.] [5,15,2.] [3.] *kaṃ nu pṛcchāmi*
-[N. 12,20.] *ko nu me jīvitenārthaḥ*
-[65.] *ko nu khalveṣa niṣidhyate*
-[ŚĀK. 101,19.] [20.] [55,2.] *kiṃ nu khalu syāt*
+[ṚV. 1,165,13.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.165.html#rv01.165.13) [8,45,37.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.045.html#rv08.045.37) *ko nvayam*
+[ŚAT. BR. 13,4,1,15.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?13,4,1,15) [14,6,9,34.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,6,9,34) *kiṃ nu malaṃ kimajinam*
+[AIT. BR. 7,13.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?7,13) *ka u nu te mahimanaḥ samasyāsmatpūrva ṛṣayo 'ntamāpuḥ*
+[ṚV. 10,54,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.054.html#rv10.054.03) *kadū nva1syākṛtam*
+[8,55,9.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.055.html#rv08.055.09) *ko nvasminsāṃprataṃ loke guṇavānkaśca vīryavān*
+[R. 1,1,2.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,1,2) *ko nvetalloke 'sminprathayet*
+[4,1.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,4,1) *kiṃ nvidamucyate (vanam)* как называется этот (лес)?
+[26,15.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,26,15) *kiṃ nu kāryaṃ hatasyeha mama*
+[2,73,2.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,73,2) [5,15,2.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,15,2) [3.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,15,3) *kaṃ nu pṛcchāmi*
+[N. 12,20.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?12,20) *ko nu me jīvitenārthaḥ*
+[65.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?12,65) *ko nu khalveṣa niṣidhyate*
+[ŚĀK. 101,19.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?101,19) [20.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?101,20) [55,2.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?55,2) *kiṃ nu khalu syāt*
   <sub>attested</sub>
 
-**f0)** [71,20.]
+**f0)** [71,20.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?71,20)
 
-- **RU:** [71,20.]
+- **RU:** [71,20.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?71,20)
   <sub>attested</sub>
 
 **e)** — e) mit *vā* wohl
-[ŚAT. BR. 13,3,3,6.] *kiṃ te hiḍimba etairvā sukhasuptaiḥ prabodhitaiḥ*
+[ŚAT. BR. 13,3,3,6.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?13,3,3,6) *kiṃ te hiḍimba etairvā sukhasuptaiḥ prabodhitaiḥ*
 [HIḌ. 4,2.] *parivartini saṃsāre mṛtaḥ ko vā na jāyate*
-[BHARTṚ. 2,24.]
-[MEGH. 55.]
-[ŚṚṄGĀRAT. 4.] *dahatu madanaḥ kiṃ vā mṛtyoḥ pareṇa vidhāsyati*
-[SĀH. D. 53,15.] *kacam — punarjīvayituṃ ko vā daivādanyaḥ pragalbhate*
-[RĀJA-TAR. 2,96.] Vgl. u. 3,d.
+[BHARTṚ. 2,24.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app2?2,24)
+[MEGH. 55.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?55)
+[ŚṚṄGĀRAT. 4.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app2?4) *dahatu madanaḥ kiṃ vā mṛtyoḥ pareṇa vidhāsyati*
+[SĀH. D. 53,15.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?53,15) *kacam — punarjīvayituṃ ko vā daivādanyaḥ pragalbhate*
+[RĀJA-TAR. 2,96.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?2,96) Vgl. u. 3,d.
 
 - **RU:** — е) с *vā* «пожалуй, вероятно»
-[ŚAT. BR. 13,3,3,6.] *kiṃ te hiḍimba etairvā sukhasuptaiḥ prabodhitaiḥ*
+[ŚAT. BR. 13,3,3,6.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?13,3,3,6) *kiṃ te hiḍimba etairvā sukhasuptaiḥ prabodhitaiḥ*
 [HIḌ. 4,2.] *parivartini saṃsāre mṛtaḥ ko vā na jāyate*
-[BHARTṚ. 2,24.]
-[MEGH. 55.]
-[ŚṚṄGĀRAT. 4.] *dahatu madanaḥ kiṃ vā mṛtyoḥ pareṇa vidhāsyati*
-[SĀH. D. 53,15.] *kacam — punarjīvayituṃ ko vā daivādanyaḥ pragalbhate*
-[RĀJA-TAR. 2,96.] Vgl. u. 3,d.
+[BHARTṚ. 2,24.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app2?2,24)
+[MEGH. 55.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?55)
+[ŚṚṄGĀRAT. 4.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app2?4) *dahatu madanaḥ kiṃ vā mṛtyoḥ pareṇa vidhāsyati*
+[SĀH. D. 53,15.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?53,15) *kacam — punarjīvayituṃ ko vā daivādanyaḥ pragalbhate*
+[RĀJA-TAR. 2,96.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?2,96) Vgl. u. 3,d.
   <sub>attested</sub>
 
 **f)** — f) mit *svid: kaḥ svidvṛkṣo niṣṭhitaḥ*
-[ṚV. 1,182,7.] *kaṃ svidardham*
-[164,17.] [8,53,8.] *kiṃ svidāsīdadhiṣṭhānam*
-[10,81,2.] *kaḥ svit ka u svit kiṃ svidbheṣajam*
-[VS. 23,9.]
-[ŚAT. BR. 11,2,7,12.] *kiṃ svitsvapnaṅna nimiṣati kiṃ svijjātaṃ na copati . kasya sviddhṛdayaṃ nāsti kiṃ svidvegena vardhate ..*
-[MBH. 3,10648.] [13,295.]
-[ŚĀK. 110.] *kiṃ svit* was mag das sein?
-[R. 2,65,11.] *kiṃ nu svidetatpatati* was mag da wohl fallen?
-[MBH. 1,3571.] *tatremaṃ ka upāsīranka u svidanuśerate*
-[BHĀG. P. 3,7,37.]
+[ṚV. 1,182,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.182.html#rv01.182.07) *kaṃ svidardham*
+[164,17.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.164.html#rv01.164.17) [8,53,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.053.html#rv08.053.08) *kiṃ svidāsīdadhiṣṭhānam*
+[10,81,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.081.html#rv10.081.02) *kaḥ svit ka u svit kiṃ svidbheṣajam*
+[VS. 23,9.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?23,9)
+[ŚAT. BR. 11,2,7,12.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?11,2,7,12) *kiṃ svitsvapnaṅna nimiṣati kiṃ svijjātaṃ na copati . kasya sviddhṛdayaṃ nāsti kiṃ svidvegena vardhate ..*
+[MBH. 3,10648.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10648) [13,295.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.295)
+[ŚĀK. 110.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?110) *kiṃ svit* was mag das sein?
+[R. 2,65,11.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,65,11) *kiṃ nu svidetatpatati* was mag da wohl fallen?
+[MBH. 1,3571.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3571) *tatremaṃ ka upāsīranka u svidanuśerate*
+[BHĀG. P. 3,7,37.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,7,37)
 
-- **RU:** — f) с *svid: kaḥ svidvṛkṣo niṣṭhitaḥ* [ṚV. 1,182,7.] *kaṃ svidardham* [164,17.] [8,53,8.] *kiṃ svidāsīdadhiṣṭhānam* [10,81,2.] *kaḥ svit ka u svit kiṃ svidbheṣajam* [VS. 23,9.] [ŚAT. BR. 11,2,7,12.] *kiṃ svitsvapnaṅna nimiṣati kiṃ svijjātaṃ na copati . kasya sviddhṛdayaṃ nāsti kiṃ svidvegena vardhate ..* [MBH. 3,10648.] [13,295.] [ŚĀK. 110.] *kiṃ svit* «что бы это могло быть?» [R. 2,65,11.] *kiṃ nu svidetatpatati* «что бы там могло выпасть?» [MBH. 1,3571.] *tatremaṃ ka upāsīranka u svidanuśerate* [BHĀG. P. 3,7,37.]
+- **RU:** — f) с *svid: kaḥ svidvṛkṣo niṣṭhitaḥ* [ṚV. 1,182,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.182.html#rv01.182.07) *kaṃ svidardham* [164,17.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.164.html#rv01.164.17) [8,53,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.053.html#rv08.053.08) *kiṃ svidāsīdadhiṣṭhānam* [10,81,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.081.html#rv10.081.02) *kaḥ svit ka u svit kiṃ svidbheṣajam* [VS. 23,9.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?23,9) [ŚAT. BR. 11,2,7,12.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?11,2,7,12) *kiṃ svitsvapnaṅna nimiṣati kiṃ svijjātaṃ na copati . kasya sviddhṛdayaṃ nāsti kiṃ svidvegena vardhate ..* [MBH. 3,10648.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10648) [13,295.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.295) [ŚĀK. 110.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?110) *kiṃ svit* «что бы это могло быть?» [R. 2,65,11.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,65,11) *kiṃ nu svidetatpatati* «что бы там могло выпасть?» [MBH. 1,3571.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3571) *tatremaṃ ka upāsīranka u svidanuśerate* [BHĀG. P. 3,7,37.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,7,37)
   <sub>attested</sub>
 
 **2)** — 2) indef. irgendwer, Jemand, irgendwelcher; meist in negat. Sätzen: *mā kasya yakṣaṃ sadamiddhuro gāḥ*
-[ṚV. 4,3,13.] [5,70,4.] *mā kasmai dhātamabhyamitriṇe naḥ*
-[1,120,8.] *mā kasya no araruṣo dhūrtiḥ pra ṇaṅmartyasya*
-[7,94,8.] *na hi śaśakaviṣāṇaṃ ko 'pi kasmai dadāti*
-[BHARTṚ. 3,99.] *na kasya ko vallabhaḥ*
-[PAÑCAT. II,102.] *nānyo jānāti kaḥ*
-[KATHĀS. 1,56.] *vipākaḥ karmaṇāṃ pretya keṣāṃcidiha jāyate . iha cāmutra vai keṣām* (für Einige)
-[YĀJÑ. 3,133.] *kathaṃ sa puruṣaḥ pārtha kaṃ ghātayati hanti kam*
-[BHAG. 2,21.]
+[ṚV. 4,3,13.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.003.html#rv04.003.13) [5,70,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.070.html#rv05.070.04) *mā kasmai dhātamabhyamitriṇe naḥ*
+[1,120,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.120.html#rv01.120.08) *mā kasya no araruṣo dhūrtiḥ pra ṇaṅmartyasya*
+[7,94,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.094.html#rv07.094.08) *na hi śaśakaviṣāṇaṃ ko 'pi kasmai dadāti*
+[BHARTṚ. 3,99.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app2?3,99) *na kasya ko vallabhaḥ*
+[PAÑCAT. II,102.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?2,102) *nānyo jānāti kaḥ*
+[KATHĀS. 1,56.](https://sanskrit-lexicon-scans.github.io/kss/index.html?1,56) *vipākaḥ karmaṇāṃ pretya keṣāṃcidiha jāyate . iha cāmutra vai keṣām* (für Einige)
+[YĀJÑ. 3,133.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?3,133) *kathaṃ sa puruṣaḥ pārtha kaṃ ghātayati hanti kam*
+[BHAG. 2,21.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?2,21)
 
 - **RU:** — 2) indef. «кто-то, некто, некий, какой-нибудь»; чаще всего в negat. предложениях: *mā kasya yakṣaṃ sadamiddhuro gāḥ*
-[ṚV. 4,3,13.] [5,70,4.] *mā kasmai dhātamabhyamitriṇe naḥ*
-[1,120,8.] *mā kasya no araruṣo dhūrtiḥ pra ṇaṅmartyasya*
-[7,94,8.] *na hi śaśakaviṣāṇaṃ ko 'pi kasmai dadāti*
-[BHARTṚ. 3,99.] *na kasya ko vallabhaḥ*
-[PAÑCAT. II,102.] *nānyo jānāti kaḥ*
-[KATHĀS. 1,56.] *vipākaḥ karmaṇāṃ pretya keṣāṃcidiha jāyate . iha cāmutra vai keṣām* («для некоторых»)
-[YĀJÑ. 3,133.] *kathaṃ sa puruṣaḥ pārtha kaṃ ghātayati hanti kam*
-[BHAG. 2,21.]
+[ṚV. 4,3,13.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.003.html#rv04.003.13) [5,70,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.070.html#rv05.070.04) *mā kasmai dhātamabhyamitriṇe naḥ*
+[1,120,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.120.html#rv01.120.08) *mā kasya no araruṣo dhūrtiḥ pra ṇaṅmartyasya*
+[7,94,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.094.html#rv07.094.08) *na hi śaśakaviṣāṇaṃ ko 'pi kasmai dadāti*
+[BHARTṚ. 3,99.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app2?3,99) *na kasya ko vallabhaḥ*
+[PAÑCAT. II,102.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?2,102) *nānyo jānāti kaḥ*
+[KATHĀS. 1,56.](https://sanskrit-lexicon-scans.github.io/kss/index.html?1,56) *vipākaḥ karmaṇāṃ pretya keṣāṃcidiha jāyate . iha cāmutra vai keṣām* («для некоторых»)
+[YĀJÑ. 3,133.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?3,133) *kathaṃ sa puruṣaḥ pārtha kaṃ ghātayati hanti kam*
+[BHAG. 2,21.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?2,21)
   <sub>attested</sub>
 
 **3)** — 3) zum eigentlichen indef. wird das interrog. durch seine Verbindung mit den Partikeln *ca, cana (ca na), cid, vā, api*; davor erscheint häufig noch das relat. *ya*.
@@ -356,353 +356,353 @@ _PWG article — 1 sub-card(s), 220 sense(s) · RU 220/220 · EN 0/220_
   <sub>attested</sub>
 
 **a)** a) mit *ca* (auch) irgend wer oder welcher, pl. etwelche: *anyāṃśca dantavaktrādīnavadhītkāṃśca ghātayat*
-[BHĀG. P. 3,3,11.] *na ca kena ca*
+[BHĀG. P. 3,3,11.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,3,11) *na ca kena ca*
 (v. l. *cid) dharmeṇa virudhyante prajā imāḥ*
 [MBH.] in [LASSEN, Pent. 68,48. 71,80] (v. l. *ke ca na* st. *kena ca*). Sehr häufig, namentlich in der älteren Sprache, mit vorang. relat. wer oder welcher immer; Jedermann, jeglich; bald relat. indef., bald reines indef.: *ye ke ca pratiśatravaste*
-[AV. 4,22,6.] [5,13,9.] [23,5.] *yo vai kaśca mriyate sa śavaḥ*
-[ŚAT. BR. 13,8,1,1.] [14,4,1,21.] *etarhi ya eva kaśca brahmā bhavati*
-[12,6,1,41.] *yatkiṃ ca pṛthivyāmadhi*
-[ṚV. 5,83,9.] *yāḥ kāśca vīrudhaḥ*
-[AV. 11,4,17.] [7,70,3.] [76,3.]
-[VS. 13,6.] *yasminkasmiṃśca jāyate*
-[AV. 12,4,14.] *yasyai kasyai ca devatāyai*
-[ŚAT. BR. 1,6,3,19.] *tasmādyasmātkasmāccāṅgātprāṇa utkrāmati*
+[AV. 4,22,6.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av04.022.html#av04.022.06) [5,13,9.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av05.013.html#av05.013.09) [23,5.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av05.023.html#av05.023.05) *yo vai kaśca mriyate sa śavaḥ*
+[ŚAT. BR. 13,8,1,1.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?13,8,1,1) [14,4,1,21.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,4,1,21) *etarhi ya eva kaśca brahmā bhavati*
+[12,6,1,41.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?12,6,1,41) *yatkiṃ ca pṛthivyāmadhi*
+[ṚV. 5,83,9.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.083.html#rv05.083.09) *yāḥ kāśca vīrudhaḥ*
+[AV. 11,4,17.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av11.004.html#av11.004.17) [7,70,3.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av07.070.html#av07.070.03) [76,3.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av07.076.html#av07.076.03)
+[VS. 13,6.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?13,6) *yasminkasmiṃśca jāyate*
+[AV. 12,4,14.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av12.004.html#av12.004.14) *yasyai kasyai ca devatāyai*
+[ŚAT. BR. 1,6,3,19.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,6,3,19) *tasmādyasmātkasmāccāṅgātprāṇa utkrāmati*
 [BṚH. ĀR. UP. 1,3,19.] *tasmādyayā kayā ca vidhayā vahvannaṃ prāpnuyāt*
 [TAITT. UP. 3,10,1.] *yā vedabāhyāḥ smṛtayo yāśca kāśca kudṛṣṭayaḥ . sarvāstā niṣphalāḥ*
 
 - **RU:** а) с *ca* (тоже) кто-нибудь или какой-нибудь, pl. некоторый, некий: *anyāṃśca dantavaktrādīnavadhītkāṃśca ghātayat*
-[BHĀG. P. 3,3,11.] *na ca kena ca*
+[BHĀG. P. 3,3,11.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,3,11) *na ca kena ca*
 (v. l. *cid) dharmeṇa virudhyante prajā imāḥ*
 [MBH.] в [LASSEN, Pent. 68,48. 71,80] (v. l. *ke ca na* st. *kena ca*). Весьма часто, особенно в более древнем языке, с vorang. relat. кто бы ни или какой бы ни; всякий, каждый; иной раз relat. indef., иной раз чистое indef.: *ye ke ca pratiśatravaste*
-[AV. 4,22,6.] [5,13,9.] [23,5.] *yo vai kaśca mriyate sa śavaḥ*
-[ŚAT. BR. 13,8,1,1.] [14,4,1,21.] *etarhi ya eva kaśca brahmā bhavati*
-[12,6,1,41.] *yatkiṃ ca pṛthivyāmadhi*
-[ṚV. 5,83,9.] *yāḥ kāśca vīrudhaḥ*
-[AV. 11,4,17.] [7,70,3.] [76,3.]
-[VS. 13,6.] *yasminkasmiṃśca jāyate*
-[AV. 12,4,14.] *yasyai kasyai ca devatāyai*
-[ŚAT. BR. 1,6,3,19.] *tasmādyasmātkasmāccāṅgātprāṇa utkrāmati*
+[AV. 4,22,6.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av04.022.html#av04.022.06) [5,13,9.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av05.013.html#av05.013.09) [23,5.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av05.023.html#av05.023.05) *yo vai kaśca mriyate sa śavaḥ*
+[ŚAT. BR. 13,8,1,1.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?13,8,1,1) [14,4,1,21.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,4,1,21) *etarhi ya eva kaśca brahmā bhavati*
+[12,6,1,41.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?12,6,1,41) *yatkiṃ ca pṛthivyāmadhi*
+[ṚV. 5,83,9.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.083.html#rv05.083.09) *yāḥ kāśca vīrudhaḥ*
+[AV. 11,4,17.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av11.004.html#av11.004.17) [7,70,3.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av07.070.html#av07.070.03) [76,3.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av07.076.html#av07.076.03)
+[VS. 13,6.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?13,6) *yasminkasmiṃśca jāyate*
+[AV. 12,4,14.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av12.004.html#av12.004.14) *yasyai kasyai ca devatāyai*
+[ŚAT. BR. 1,6,3,19.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,6,3,19) *tasmādyasmātkasmāccāṅgātprāṇa utkrāmati*
 [BṚH. ĀR. UP. 1,3,19.] *tasmādyayā kayā ca vidhayā vahvannaṃ prāpnuyāt*
 [TAITT. UP. 3,10,1.] *yā vedabāhyāḥ smṛtayo yāśca kāśca kudṛṣṭayaḥ . sarvāstā niṣphalāḥ*
   <sub>mixed</sub>
 
-**1)** *yāni kāni ca mitrāṇi kartavyāni śatāni ca* ad [HIT. 17,3.] *yatkiṃ ca* [BHĀG. P. 2,6,44.]
+**1)** *yāni kāni ca mitrāṇi kartavyāni śatāni ca* ad [HIT. 17,3.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?17,3) *yatkiṃ ca* [BHĀG. P. 2,6,44.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,6,44)
 
-- **RU:** *yāni kāni ca mitrāṇi kartavyāni śatāni ca* к [HIT. 17,3.] *yatkiṃ ca* [BHĀG. P. 2,6,44.]
+- **RU:** *yāni kāni ca mitrāṇi kartavyāni śatāni ca* к [HIT. 17,3.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?17,3) *yatkiṃ ca* [BHĀG. P. 2,6,44.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,6,44)
   <sub>attested</sub>
 
 **b))** — b) mit *cana (ca* auch
 
 + *na* nicht) auch Niemand, auch Nichts, auch nicht ein: *adṛṣṭāḥ kiṃ caneha vaḥ*
-[ṚV. 1,191,7.] *yasmādindrādbṛhataḥ kiṃ canemṛte*
-[2,16,2.] *sa vibhramanmahīṃ sarvāṃ kvacidāsādya kiṃ ca na*
-[N. 15,15.] Sehr häufig in einem Satze mit einer zweiten negat. Partikel, wodurch die Negation nicht etwa aufgehoben, sondern nur verstärkt wird: *māmīṣāṃ kaṃ canocchiṣaḥ*
-[ṚV. 6,75,16.] [2,16,3.] *nāti paśyati kaścana*
-[AV. 4,5,2.]
-[VS. 23,18.] *yasmājjātaṃ na purā kiṃ canaiva*
-[32,5.] [AV. 4,25,2.] [11,4,25.] *na kiṃ cana*
-[ŚAT. BR. 2,4,1,14.] [14,5,5,18.] *na yuvayoreṣa kiṃ cana* er geht Euch gar Nichts an
-[1,6,3,13.] [14,6,8,1.] — [10,6,5,1.] [14,5,1,21.] *na hīdṛśamanāyuṣyaṃ loke kiṃ ca na vidyate*
+[ṚV. 1,191,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.191.html#rv01.191.07) *yasmādindrādbṛhataḥ kiṃ canemṛte*
+[2,16,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.016.html#rv02.016.02) *sa vibhramanmahīṃ sarvāṃ kvacidāsādya kiṃ ca na*
+[N. 15,15.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?15,15) Sehr häufig in einem Satze mit einer zweiten negat. Partikel, wodurch die Negation nicht etwa aufgehoben, sondern nur verstärkt wird: *māmīṣāṃ kaṃ canocchiṣaḥ*
+[ṚV. 6,75,16.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.075.html#rv06.075.16) [2,16,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.016.html#rv02.016.03) *nāti paśyati kaścana*
+[AV. 4,5,2.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av04.005.html#av04.005.02)
+[VS. 23,18.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?23,18) *yasmājjātaṃ na purā kiṃ canaiva*
+[32,5.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?32,5) [AV. 4,25,2.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av04.025.html#av04.025.02) [11,4,25.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av11.004.html#av11.004.25) *na kiṃ cana*
+[ŚAT. BR. 2,4,1,14.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,4,1,14) [14,5,5,18.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,5,5,18) *na yuvayoreṣa kiṃ cana* er geht Euch gar Nichts an
+[1,6,3,13.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,6,3,13) [14,6,8,1.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,6,8,1) — [10,6,5,1.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?10,6,5,1) [14,5,1,21.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,5,1,21) *na hīdṛśamanāyuṣyaṃ loke kiṃ ca na vidyate*
 
 - **RU:** — b) с *cana (ca* «тоже, также»
 
 + *na* (не...) тоже никто, тоже ничто, тоже ни один: *adṛṣṭāḥ kiṃ caneha vaḥ*
-[ṚV. 1,191,7.] *yasmādindrādbṛhataḥ kiṃ canemṛte*
-[2,16,2.] *sa vibhramanmahīṃ sarvāṃ kvacidāsādya kiṃ ca na*
-[N. 15,15.] Очень часто в одном предложении со второй negat. частицей, при этом отрицание не снимается, а лишь усиливается: *māmīṣāṃ kaṃ canocchiṣaḥ*
-[ṚV. 6,75,16.] [2,16,3.] *nāti paśyati kaścana*
-[AV. 4,5,2.]
-[VS. 23,18.] *yasmājjātaṃ na purā kiṃ canaiva*
-[32,5.] [AV. 4,25,2.] [11,4,25.] *na kiṃ cana*
-[ŚAT. BR. 2,4,1,14.] [14,5,5,18.] *na yuvayoreṣa kiṃ cana* «он вас совершенно не касается»
-[1,6,3,13.] [14,6,8,1.] — [10,6,5,1.] [14,5,1,21.] *na hīdṛśamanāyuṣyaṃ loke kiṃ ca na vidyate*
+[ṚV. 1,191,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.191.html#rv01.191.07) *yasmādindrādbṛhataḥ kiṃ canemṛte*
+[2,16,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.016.html#rv02.016.02) *sa vibhramanmahīṃ sarvāṃ kvacidāsādya kiṃ ca na*
+[N. 15,15.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?15,15) Очень часто в одном предложении со второй negat. частицей, при этом отрицание не снимается, а лишь усиливается: *māmīṣāṃ kaṃ canocchiṣaḥ*
+[ṚV. 6,75,16.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.075.html#rv06.075.16) [2,16,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.016.html#rv02.016.03) *nāti paśyati kaścana*
+[AV. 4,5,2.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av04.005.html#av04.005.02)
+[VS. 23,18.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?23,18) *yasmājjātaṃ na purā kiṃ canaiva*
+[32,5.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?32,5) [AV. 4,25,2.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av04.025.html#av04.025.02) [11,4,25.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av11.004.html#av11.004.25) *na kiṃ cana*
+[ŚAT. BR. 2,4,1,14.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,4,1,14) [14,5,5,18.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,5,5,18) *na yuvayoreṣa kiṃ cana* «он вас совершенно не касается»
+[1,6,3,13.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,6,3,13) [14,6,8,1.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,6,8,1) — [10,6,5,1.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?10,6,5,1) [14,5,1,21.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,5,1,21) *na hīdṛśamanāyuṣyaṃ loke kiṃ ca na vidyate*
   <sub>attested</sub>
 
-**1)** [M. 4,134.] [5,47.] [6,47.] [8,189.] [351.] [9,26.] [11,261.]
-[N. 7,9.] [20,6.] [21,20.]
-[VIŚV. 7,20.] *mā kiṃ ca na śucaḥ*
+**1)** [M. 4,134.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,134) [5,47.](https://sanskrit-lexicon-scans.github.io/manu/index.html?5,47) [6,47.](https://sanskrit-lexicon-scans.github.io/manu/index.html?6,47) [8,189.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,189) [351.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,351) [9,26.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,26) [11,261.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,261)
+[N. 7,9.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?7,9) [20,6.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?20,6) [21,20.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?21,20)
+[VIŚV. 7,20.](https://sanskrit-lexicon-scans.github.io/bchrest1/app4?7,20) *mā kiṃ ca na śucaḥ*
 
-- **RU:** [M. 4,134.] [5,47.] [6,47.] [8,189.] [351.] [9,26.] [11,261.]
-[N. 7,9.] [20,6.] [21,20.]
-[VIŚV. 7,20.] *mā kiṃ ca na śucaḥ*
+- **RU:** [M. 4,134.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,134) [5,47.](https://sanskrit-lexicon-scans.github.io/manu/index.html?5,47) [6,47.](https://sanskrit-lexicon-scans.github.io/manu/index.html?6,47) [8,189.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,189) [351.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,351) [9,26.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,26) [11,261.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,261)
+[N. 7,9.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?7,9) [20,6.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?20,6) [21,20.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?21,20)
+[VIŚV. 7,20.](https://sanskrit-lexicon-scans.github.io/bchrest1/app4?7,20) *mā kiṃ ca na śucaḥ*
   <sub>attested</sub>
 
-**2)** [BHĀG. P. 1,13,39.] In solcher Stellung geht das Gefühl für die in *cana* enthaltene Negation allmählich verloren und man beginnt die Verbindung in dem Sinne von wer oder was es auch sei, irgend ein aufzufassen: *tvadā kaścana hi praketaḥ*
+**2)** [BHĀG. P. 1,13,39.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,13,39) In solcher Stellung geht das Gefühl für die in *cana* enthaltene Negation allmählich verloren und man beginnt die Verbindung in dem Sinne von wer oder was es auch sei, irgend ein aufzufassen: *tvadā kaścana hi praketaḥ*
 
-- **RU:** [BHĀG. P. 1,13,39.] В таком положении ощущение отрицания, содержащегося в *cana*, постепенно утрачивается, и сочетание начинают понимать в смысле «кто» или «кто бы ни был, некий, какой-нибудь»: *tvadā kaścana hi praketaḥ*
+- **RU:** [BHĀG. P. 1,13,39.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,13,39) В таком положении ощущение отрицания, содержащегося в *cana*, постепенно утрачивается, и сочетание начинают понимать в смысле «кто» или «кто бы ни был, некий, какой-нибудь»: *tvadā kaścana hi praketaḥ*
   <sub>attested</sub>
 
-**3)** [ṚV. 3,30,1.] *savituḥ kaccana priyam*
-[5,82,2.] *yatrānibaddho 'pīkṣeta śṛṇuyādvāpi kiṃcana*
-[M. 8,76.] *yadi vaḥ prativrūyāddhi kaścana*
-[N. 17,40.]
-[RAGH. 12,49.]
-[BHĀG. P. 1,5,14.] *kecana* Einige
+**3)** [ṚV. 3,30,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.030.html#rv03.030.01) *savituḥ kaccana priyam*
+[5,82,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.082.html#rv05.082.02) *yatrānibaddho 'pīkṣeta śṛṇuyādvāpi kiṃcana*
+[M. 8,76.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,76) *yadi vaḥ prativrūyāddhi kaścana*
+[N. 17,40.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?17,40)
+[RAGH. 12,49.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?12,49)
+[BHĀG. P. 1,5,14.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,5,14) *kecana* Einige
 
-- **RU:** [ṚV. 3,30,1.] *savituḥ kaccana priyam*
-[5,82,2.] *yatrānibaddho 'pīkṣeta śṛṇuyādvāpi kiṃcana*
-[M. 8,76.] *yadi vaḥ prativrūyāddhi kaścana*
-[N. 17,40.]
-[RAGH. 12,49.]
-[BHĀG. P. 1,5,14.] *kecana* «Некоторые»
+- **RU:** [ṚV. 3,30,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.030.html#rv03.030.01) *savituḥ kaccana priyam*
+[5,82,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.082.html#rv05.082.02) *yatrānibaddho 'pīkṣeta śṛṇuyādvāpi kiṃcana*
+[M. 8,76.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,76) *yadi vaḥ prativrūyāddhi kaścana*
+[N. 17,40.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?17,40)
+[RAGH. 12,49.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?12,49)
+[BHĀG. P. 1,5,14.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,5,14) *kecana* «Некоторые»
   <sub>attested</sub>
 
-**1)** [5,23,4.] *rāśīkṛtān śuṣyamāṇānanyānkāṃścana kāṃścana* etwelche, verschiedene
+**1)** [5,23,4.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,23,4) *rāśīkṛtān śuṣyamāṇānanyānkāṃścana kāṃścana* etwelche, verschiedene
 
-- **RU:** [5,23,4.] *rāśīkṛtān śuṣyamāṇānanyānkāṃścana kāṃścana* некоторые, различные
+- **RU:** [5,23,4.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,23,4) *rāśīkṛtān śuṣyamāṇānanyānkāṃścana kāṃścana* некоторые, различные
   <sub>attested</sub>
 
-**2)** [R. 2,96,34.] Wie *kaśca* in Verbindung mit dem relat.: *ahaṃ caiva hi yaccānyanmamāsti vasu kiṃcana . tatsarvaṃ tava*
+**2)** [R. 2,96,34.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,96,34) Wie *kaśca* in Verbindung mit dem relat.: *ahaṃ caiva hi yaccānyanmamāsti vasu kiṃcana . tatsarvaṃ tava*
 
-- **RU:** [R. 2,96,34.] Как *kaśca* в сочетании с relat.: *ahaṃ caiva hi yaccānyanmamāsti vasu kiṃcana . tatsarvaṃ tava*
+- **RU:** [R. 2,96,34.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,96,34) Как *kaśca* в сочетании с relat.: *ahaṃ caiva hi yaccānyanmamāsti vasu kiṃcana . tatsarvaṃ tava*
   <sub>attested</sub>
 
-**3)** [N. 4,2.] [9,1.] [26,5.] *pratyuvāca tataḥ sādhvī — sārthavāhaṃ ca sārthaṃ ca janā ye tatra kecana*
+**3)** [N. 4,2.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?4,2) [9,1.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?9,1) [26,5.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?26,5) *pratyuvāca tataḥ sādhvī — sārthavāhaṃ ca sārthaṃ ca janā ye tatra kecana*
 
-- **RU:** [N. 4,2.] [9,1.] [26,5.] *pratyuvāca tataḥ sādhvī — sārthavāhaṃ ca sārthaṃ ca janā ye tatra kecana*
+- **RU:** [N. 4,2.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?4,2) [9,1.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?9,1) [26,5.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?26,5) *pratyuvāca tataḥ sādhvī — sārthavāhaṃ ca sārthaṃ ca janā ye tatra kecana*
   <sub>attested</sub>
 
-**4)** [12,91.] *tatsarvaṃ naḥ samācakṣva pṛṣṭo yadiha kiṃcana*
+**4)** [12,91.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?12,91) *tatsarvaṃ naḥ samācakṣva pṛṣṭo yadiha kiṃcana*
 
-- **RU:** [12,91.] *tatsarvaṃ naḥ samācakṣva pṛṣṭo yadiha kiṃcana*
+- **RU:** [12,91.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?12,91) *tatsarvaṃ naḥ samācakṣva pṛṣṭo yadiha kiṃcana*
   <sub>attested</sub>
 
-**5)** [BHĀG. P. 1,4,13.] Als bequemer Ausgang eines Halbverses ist die Verbindung des interr. mit *cana* sehr beliebt. In den Beispielen aus der klassischen Literatur schreiben wir *ca na* bald getrennt, bald verbunden, je nachdem die Negation ihre ursprüngliche Bedeutung bewahrt oder verloren hat. *kiṃcana* verbindet sich mit dem neg. *a* (s. *akiṃcana*) und mit *nis (niṣkiṃcana*
+**5)** [BHĀG. P. 1,4,13.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,4,13) Als bequemer Ausgang eines Halbverses ist die Verbindung des interr. mit *cana* sehr beliebt. In den Beispielen aus der klassischen Literatur schreiben wir *ca na* bald getrennt, bald verbunden, je nachdem die Negation ihre ursprüngliche Bedeutung bewahrt oder verloren hat. *kiṃcana* verbindet sich mit dem neg. *a* (s. *akiṃcana*) und mit *nis (niṣkiṃcana*
 
-- **RU:** [BHĀG. P. 1,4,13.] В качестве удобного окончания полустиха весьма употребительно сочетание interr. с *cana*. В примерах из классической литературы мы пишем *ca na* то раздельно, то слитно, смотря по тому, сохранило ли отрицание своё первоначальное значение или утратило его. *kiṃcana* сочетается с neg. *a* (s. *akiṃcana*) и с *nis (niṣkiṃcana*
+- **RU:** [BHĀG. P. 1,4,13.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,4,13) В качестве удобного окончания полустиха весьма употребительно сочетание interr. с *cana*. В примерах из классической литературы мы пишем *ca na* то раздельно, то слитно, смотря по тому, сохранило ли отрицание своё первоначальное значение или утратило его. *kiṃcana* сочетается с neg. *a* (s. *akiṃcana*) и с *nis (niṣkiṃcana*
   <sub>attested</sub>
 
-**6)** [BHĀG. P. 2,9,6.] [6,3,28]) zu einem adj. comp. in der Bed. Nichts besitzend.
+**6)** [BHĀG. P. 2,9,6.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,9,6) [6,3,28](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,3,28)) zu einem adj. comp. in der Bed. Nichts besitzend.
 
-- **RU:** [BHĀG. P. 2,9,6.] [6,3,28]) в adj. comp. в Bed. Не имеющий ничего.
+- **RU:** [BHĀG. P. 2,9,6.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,9,6) [6,3,28](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,3,28)) в adj. comp. в Bed. Не имеющий ничего.
   <sub>attested</sub>
 
 **c)** — c) mit *cid* wer, was oder welcher immer; irgend ein, ein, Jemand, Etwas: *mā hiṃsiṣṭa pitaraḥ kena cinnaḥ*
-[ṚV. 10,15,6.] *yadasyāḥ kasmai cidbhogāya bālānkaścitprakṛntati*
-[AV. 12,4,7.] [6,20,1.] *anyasteṣāṃ paridhirastu kaścit*
-[ṚV. 1,125,7.] *pṛtanāsu kāsu cit*
-[129,2.] *praṇetāraḥ kasya cidṛtāyoḥ*
-[169,5.] *yaccakṛmā kaccidāgaḥ*
-[185,8.] [2,42,1.] [3,45,1.] *yatte kaścidabravīt*
-[ŚAT. BR. 14,6,10,1.] [12,6,1,6.] [13,8,3,4.] *kāṃ cinmāyāṃ kuryāt*
-[4,3,11.] *kaściddhīraḥ*
+[ṚV. 10,15,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.015.html#rv10.015.06) *yadasyāḥ kasmai cidbhogāya bālānkaścitprakṛntati*
+[AV. 12,4,7.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av12.004.html#av12.004.07) [6,20,1.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av06.020.html#av06.020.01) *anyasteṣāṃ paridhirastu kaścit*
+[ṚV. 1,125,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.125.html#rv01.125.07) *pṛtanāsu kāsu cit*
+[129,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.129.html#rv01.129.02) *praṇetāraḥ kasya cidṛtāyoḥ*
+[169,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.169.html#rv01.169.05) *yaccakṛmā kaccidāgaḥ*
+[185,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.185.html#rv01.185.08) [2,42,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.042.html#rv02.042.01) [3,45,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.045.html#rv03.045.01) *yatte kaścidabravīt*
+[ŚAT. BR. 14,6,10,1.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,6,10,1) [12,6,1,6.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?12,6,1,6) [13,8,3,4.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?13,8,3,4) *kāṃ cinmāyāṃ kuryāt*
+[4,3,11.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?13,4,3,11) *kaściddhīraḥ*
 [KAṬHOP. 4,1.] — *dharmārthaṃ yena dattaṃ syātkasmaicidyācate dhanam*
-[M. 8,212.] *yadi strī yadyavarajaḥ śreyaḥ kiṃcitsamācaret*
-[2,223.] *kasmaicidasmai namaḥ* Verehrung ihm, wer er auch sei,
-[SĀH. D. 7,12.] *prārthayedyadi māṃ kaścit*
-[N. 13,43.] *tatra śuśrāva śabdaṃ vai madhye bhūtasya kasyacit*
+[M. 8,212.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,212) *yadi strī yadyavarajaḥ śreyaḥ kiṃcitsamācaret*
+[2,223.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,223) *kasmaicidasmai namaḥ* Verehrung ihm, wer er auch sei,
+[SĀH. D. 7,12.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?7,12) *prārthayedyadi māṃ kaścit*
+[N. 13,43.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?13,43) *tatra śuśrāva śabdaṃ vai madhye bhūtasya kasyacit*
 
 - **RU:** — в) с *cid* «кто, что» или «какой бы ни было; какой-нибудь, некий, некто, нечто»: *mā hiṃsiṣṭa pitaraḥ kena cinnaḥ*
-[ṚV. 10,15,6.] *yadasyāḥ kasmai cidbhogāya bālānkaścitprakṛntati*
-[AV. 12,4,7.] [6,20,1.] *anyasteṣāṃ paridhirastu kaścit*
-[ṚV. 1,125,7.] *pṛtanāsu kāsu cit*
-[129,2.] *praṇetāraḥ kasya cidṛtāyoḥ*
-[169,5.] *yaccakṛmā kaccidāgaḥ*
-[185,8.] [2,42,1.] [3,45,1.] *yatte kaścidabravīt*
-[ŚAT. BR. 14,6,10,1.] [12,6,1,6.] [13,8,3,4.] *kāṃ cinmāyāṃ kuryāt*
-[4,3,11.] *kaściddhīraḥ*
+[ṚV. 10,15,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.015.html#rv10.015.06) *yadasyāḥ kasmai cidbhogāya bālānkaścitprakṛntati*
+[AV. 12,4,7.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av12.004.html#av12.004.07) [6,20,1.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av06.020.html#av06.020.01) *anyasteṣāṃ paridhirastu kaścit*
+[ṚV. 1,125,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.125.html#rv01.125.07) *pṛtanāsu kāsu cit*
+[129,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.129.html#rv01.129.02) *praṇetāraḥ kasya cidṛtāyoḥ*
+[169,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.169.html#rv01.169.05) *yaccakṛmā kaccidāgaḥ*
+[185,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.185.html#rv01.185.08) [2,42,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.042.html#rv02.042.01) [3,45,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.045.html#rv03.045.01) *yatte kaścidabravīt*
+[ŚAT. BR. 14,6,10,1.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,6,10,1) [12,6,1,6.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?12,6,1,6) [13,8,3,4.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?13,8,3,4) *kāṃ cinmāyāṃ kuryāt*
+[4,3,11.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?13,4,3,11) *kaściddhīraḥ*
 [KAṬHOP. 4,1.] — *dharmārthaṃ yena dattaṃ syātkasmaicidyācate dhanam*
-[M. 8,212.] *yadi strī yadyavarajaḥ śreyaḥ kiṃcitsamācaret*
-[2,223.] *kasmaicidasmai namaḥ* «почтение ему, кто бы он ни был»,
-[SĀH. D. 7,12.] *prārthayedyadi māṃ kaścit*
-[N. 13,43.] *tatra śuśrāva śabdaṃ vai madhye bhūtasya kasyacit*
+[M. 8,212.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,212) *yadi strī yadyavarajaḥ śreyaḥ kiṃcitsamācaret*
+[2,223.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,223) *kasmaicidasmai namaḥ* «почтение ему, кто бы он ни был»,
+[SĀH. D. 7,12.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?7,12) *prārthayedyadi māṃ kaścit*
+[N. 13,43.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?13,43) *tatra śuśrāva śabdaṃ vai madhye bhūtasya kasyacit*
   <sub>attested</sub>
 
-**1)** [14,2.] *sabhāṃ kāṃcidupeyatuḥ*
+**1)** [14,2.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?14,2) *sabhāṃ kāṃcidupeyatuḥ*
 
-- **RU:** [14,2.] *sabhāṃ kāṃcidupeyatuḥ*
+- **RU:** [14,2.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?14,2) *sabhāṃ kāṃcidupeyatuḥ*
   <sub>attested</sub>
 
-**2)** [10,4.] *kenacidarthena*
+**2)** [10,4.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?10,4) *kenacidarthena*
 
-- **RU:** [10,4.] *kenacidarthena*
+- **RU:** [10,4.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?10,4) *kenacidarthena*
   <sub>attested</sub>
 
-**3)** [15,13.] *kasmiṃścitkāraṇāntare*
+**3)** [15,13.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?15,13) *kasmiṃścitkāraṇāntare*
 
-- **RU:** [15,13.] *kasmiṃścitkāraṇāntare*
+- **RU:** [15,13.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?15,13) *kasmiṃścitkāraṇāntare*
   <sub>attested</sub>
 
-**4)** [13,34.] [ŚĀK. 64,11.] [106.] [VID. 18.] [163.] [187.] *yathānyaḥ puruṣaḥ kaścitpalāśairmohito bhavet*
+**4)** [13,34.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?13,34) [ŚĀK. 64,11.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?64,11) [106.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?106) [VID. 18.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?18) [163.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?163) [187.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?187) *yathānyaḥ puruṣaḥ kaścitpalāśairmohito bhavet*
 
-- **RU:** [13,34.] [ŚĀK. 64,11.] [106.] [VID. 18.] [163.] [187.] *yathānyaḥ puruṣaḥ kaścitpalāśairmohito bhavet*
+- **RU:** [13,34.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?13,34) [ŚĀK. 64,11.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?64,11) [106.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?106) [VID. 18.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?18) [163.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?163) [187.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?187) *yathānyaḥ puruṣaḥ kaścitpalāśairmohito bhavet*
   <sub>attested</sub>
 
-**5)** [DAŚ. 1,12.]
+**5)** [DAŚ. 1,12.](https://sanskrit-lexicon-scans.github.io/bchrest1/app2?1,12)
 
-- **RU:** [DAŚ. 1,12.]
+- **RU:** [DAŚ. 1,12.](https://sanskrit-lexicon-scans.github.io/bchrest1/app2?1,12)
   <sub>attested</sub>
 
-**6)** [R. 1,8,8.] *tato 'parasminsaṃprāpte kāle kasmiṃścideva tu*
+**6)** [R. 1,8,8.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,8,8) *tato 'parasminsaṃprāpte kāle kasmiṃścideva tu*
 
-- **RU:** [R. 1,8,8.] *tato 'parasminsaṃprāpte kāle kasmiṃścideva tu*
+- **RU:** [R. 1,8,8.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,8,8) *tato 'parasminsaṃprāpte kāle kasmiṃścideva tu*
   <sub>attested</sub>
 
-**7)** [MBH. 1,1664.] *kiṃcidgrāmāntaraṃ gataḥ*
+**7)** [MBH. 1,1664.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1664) *kiṃcidgrāmāntaraṃ gataḥ*
 
-- **RU:** [MBH. 1,1664.] *kiṃcidgrāmāntaraṃ gataḥ*
+- **RU:** [MBH. 1,1664.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1664) *kiṃcidgrāmāntaraṃ gataḥ*
   <sub>attested</sub>
 
-**8)** [PAÑCAT. 169,7.] *kāṃcitkālam* einige Zeit hindurch
+**8)** [PAÑCAT. 169,7.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?169,7) *kāṃcitkālam* einige Zeit hindurch
 
-- **RU:** [PAÑCAT. 169,7.] *kāṃcitkālam* в течение некоторого времени
+- **RU:** [PAÑCAT. 169,7.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?169,7) *kāṃcitkālam* в течение некоторого времени
   <sub>attested</sub>
 
-**9)** [R. 3,21,31.] *kenacitkālena*
+**9)** [R. 3,21,31.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,21,31) *kenacitkālena*
 
-- **RU:** [R. 3,21,31.] *kenacitkālena*
+- **RU:** [R. 3,21,31.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,21,31) *kenacitkālena*
   <sub>attested</sub>
 
-**10)** [VIŚV. 5,13.] *kasyacitkālasya*
+**10)** [VIŚV. 5,13.](https://sanskrit-lexicon-scans.github.io/bchrest1/app4?5,13) *kasyacitkālasya*
 
-- **RU:** [VIŚV. 5,13.] *kasyacitkālasya*
+- **RU:** [VIŚV. 5,13.](https://sanskrit-lexicon-scans.github.io/bchrest1/app4?5,13) *kasyacitkālasya*
   <sub>attested</sub>
 
-**11)** [ŚĀK. 110,15.] der Eine oder der Andere im Gegens. zu viele oder alle: *manuṣyāṇāṃ sahasreṣu kaścidyatate siddhaye . yatatāmapi siddhānāṃ kaścinmāṃ vetti tattvataḥ ..*
+**11)** [ŚĀK. 110,15.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?110,15) der Eine oder der Andere im Gegens. zu viele oder alle: *manuṣyāṇāṃ sahasreṣu kaścidyatate siddhaye . yatatāmapi siddhānāṃ kaścinmāṃ vetti tattvataḥ ..*
 
-- **RU:** [ŚĀK. 110,15.] тот или иной в Gegens. к многим или всем: *manuṣyāṇāṃ sahasreṣu kaścidyatate siddhaye . yatatāmapi siddhānāṃ kaścinmāṃ vetti tattvataḥ ..*
+- **RU:** [ŚĀK. 110,15.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?110,15) тот или иной в Gegens. к многим или всем: *manuṣyāṇāṃ sahasreṣu kaścidyatate siddhaye . yatatāmapi siddhānāṃ kaścinmāṃ vetti tattvataḥ ..*
   <sub>attested</sub>
 
-**12)** [BHAG. 7,4.] *paropadeśe pāṇḍityaṃ sarveṣāṃ sukaraṃ nṛṇām . dharme svayamanuṣṭhānaṃ kasyacittu mahātmanaḥ ..*
+**12)** [BHAG. 7,4.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?7,4) *paropadeśe pāṇḍityaṃ sarveṣāṃ sukaraṃ nṛṇām . dharme svayamanuṣṭhānaṃ kasyacittu mahātmanaḥ ..*
 
-- **RU:** [BHAG. 7,4.] *paropadeśe pāṇḍityaṃ sarveṣāṃ sukaraṃ nṛṇām . dharme svayamanuṣṭhānaṃ kasyacittu mahātmanaḥ ..*
+- **RU:** [BHAG. 7,4.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?7,4) *paropadeśe pāṇḍityaṃ sarveṣāṃ sukaraṃ nṛṇām . dharme svayamanuṣṭhānaṃ kasyacittu mahātmanaḥ ..*
   <sub>attested</sub>
 
-**13)** [HIT. I,98.] *kaścittaṃ deśaṃ parivarjayet* solche Gegend vermeide Jedermann
+**13)** [HIT. I,98.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?1,98) *kaścittaṃ deśaṃ parivarjayet* solche Gegend vermeide Jedermann
 
-- **RU:** [HIT. I,98.] *kaścittaṃ deśaṃ parivarjayet* такую местность пусть избегает всякий
+- **RU:** [HIT. I,98.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?1,98) *kaścittaṃ deśaṃ parivarjayet* такую местность пусть избегает всякий
   <sub>attested</sub>
 
 **1)** [CĀṆ. 37.] *kecit* etwelche, einige
-[M. 3,53.]
+[M. 3,53.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,53)
 [BRĀHMAṆ. 1,17.]
-[R. 5,91,18.]
-[PAÑCAT. 120,4.]
-[ŚĀK. 27,1.] *padāni gaṇayangaccha svāni naiṣadha kānicit*
+[R. 5,91,18.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,91,18)
+[PAÑCAT. 120,4.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?120,4)
+[ŚĀK. 27,1.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?27,1) *padāni gaṇayangaccha svāni naiṣadha kānicit*
 
-[N. 14,11.] *kaiścidahorātraiḥ* in einigen Tagen
-[12,64.] [R. 1,12,32.] [6,12,9.] In negat. Sätzen: *praviśantaṃ na māṃ kaścidapaśyan* Niemand sah mich hereintreten
-[N. 3,24.] [12,6.] [14.]
-[M. 1,81.] [2,56.] [110.]
-[ŚĀK. 107.] *naiṣa kaścinmayi sthite* dieser vermag nichts
+[N. 14,11.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?14,11) *kaiścidahorātraiḥ* in einigen Tagen
+[12,64.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?12,64) [R. 1,12,32.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,12,32) [6,12,9.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,12,9) In negat. Sätzen: *praviśantaṃ na māṃ kaścidapaśyan* Niemand sah mich hereintreten
+[N. 3,24.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?3,24) [12,6.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?12,6) [14.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?12,14)
+[M. 1,81.](https://sanskrit-lexicon-scans.github.io/manu/index.html?1,81) [2,56.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,56) [110.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,110)
+[ŚĀK. 107.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?107) *naiṣa kaścinmayi sthite* dieser vermag nichts
 [HIḌ. 3,7.] *na kiṃcinna* Nichts nicht d. i. Alles
 
 - **RU:** [CĀṆ. 37.] *kecit* некоторые, несколько
-[M. 3,53.]
+[M. 3,53.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,53)
 [BRĀHMAṆ. 1,17.]
-[R. 5,91,18.]
-[PAÑCAT. 120,4.]
-[ŚĀK. 27,1.] *padāni gaṇayangaccha svāni naiṣadha kānicit*
+[R. 5,91,18.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,91,18)
+[PAÑCAT. 120,4.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?120,4)
+[ŚĀK. 27,1.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?27,1) *padāni gaṇayangaccha svāni naiṣadha kānicit*
 
-[N. 14,11.] *kaiścidahorātraiḥ* через несколько дней
-[12,64.] [R. 1,12,32.] [6,12,9.] В negat. предложениях: *praviśantaṃ na māṃ kaścidapaśyan* Никто не видел, как я вошёл
-[N. 3,24.] [12,6.] [14.]
-[M. 1,81.] [2,56.] [110.]
-[ŚĀK. 107.] *naiṣa kaścinmayi sthite* этот ничего не может
+[N. 14,11.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?14,11) *kaiścidahorātraiḥ* через несколько дней
+[12,64.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?12,64) [R. 1,12,32.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,12,32) [6,12,9.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,12,9) В negat. предложениях: *praviśantaṃ na māṃ kaścidapaśyan* Никто не видел, как я вошёл
+[N. 3,24.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?3,24) [12,6.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?12,6) [14.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?12,14)
+[M. 1,81.](https://sanskrit-lexicon-scans.github.io/manu/index.html?1,81) [2,56.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,56) [110.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,110)
+[ŚĀK. 107.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?107) *naiṣa kaścinmayi sthite* этот ничего не может
 [HIḌ. 3,7.] *na kiṃcinna* Ничто не... не d. i. Всё
   <sub>attested</sub>
 
-**1)** [R. 5,15,12.] *akiṃcid* Nichts (*uktvā*)
+**1)** [R. 5,15,12.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,15,12) *akiṃcid* Nichts (*uktvā*)
 
-- **RU:** [R. 5,15,12.] *akiṃcid* «Ничто» (*uktvā*)
+- **RU:** [R. 5,15,12.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,15,12) *akiṃcid* «Ничто» (*uktvā*)
   <sub>attested</sub>
 
-**2)** [MBH. 13,2334.] [2751.] [2869.] Durch *api* verstärkt: *svārjitaṃ kiṃcidapyasti mayā hi tapasaḥ phalam*
+**2)** [MBH. 13,2334.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.2334) [2751.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.2751) [2869.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.2869) Durch *api* verstärkt: *svārjitaṃ kiṃcidapyasti mayā hi tapasaḥ phalam*
 
-- **RU:** [MBH. 13,2334.] [2751.] [2869.] Усиленное посредством *api*: *svārjitaṃ kiṃcidapyasti mayā hi tapasaḥ phalam*
+- **RU:** [MBH. 13,2334.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.2334) [2751.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.2751) [2869.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.2869) Усиленное посредством *api*: *svārjitaṃ kiṃcidapyasti mayā hi tapasaḥ phalam*
   <sub>attested</sub>
 
-**3)** [VIŚV. 10,14.] *na brāhmaṇakṣatriyayorāpadyapi hi tiṣṭhatoḥ . kasmiṃścidapi vṛttānte śūdrā bhāryopadiśyate*
+**3)** [VIŚV. 10,14.](https://sanskrit-lexicon-scans.github.io/bchrest1/app4?10,14) *na brāhmaṇakṣatriyayorāpadyapi hi tiṣṭhatoḥ . kasmiṃścidapi vṛttānte śūdrā bhāryopadiśyate*
 
-- **RU:** [VIŚV. 10,14.] *na brāhmaṇakṣatriyayorāpadyapi hi tiṣṭhatoḥ . kasmiṃścidapi vṛttānte śūdrā bhāryopadiśyate*
+- **RU:** [VIŚV. 10,14.](https://sanskrit-lexicon-scans.github.io/bchrest1/app4?10,14) *na brāhmaṇakṣatriyayorāpadyapi hi tiṣṭhatoḥ . kasmiṃścidapi vṛttānte śūdrā bhāryopadiśyate*
   <sub>attested</sub>
 
-**4)** [M. 3,14.] [4,83.] [7,6.] *nānivedya prakurvīta bhṛtyaḥ kiṃcidapi* (durchaus Nichts) *svayam*
+**4)** [M. 3,14.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,14) [4,83.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,83) [7,6.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,6) *nānivedya prakurvīta bhṛtyaḥ kiṃcidapi* (durchaus Nichts) *svayam*
 
-- **RU:** [M. 3,14.] [4,83.] [7,6.] *nānivedya prakurvīta bhṛtyaḥ kiṃcidapi* («совершенно ничто») *svayam*
+- **RU:** [M. 3,14.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,14) [4,83.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,83) [7,6.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,6) *nānivedya prakurvīta bhṛtyaḥ kiṃcidapi* («совершенно ничто») *svayam*
   <sub>attested</sub>
 
-**5)** [HIT. II,86.] *kiṃcitkiṃcit* das Eine und Andere, Eines nach dem Andern
+**5)** [HIT. II,86.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?2,86) *kiṃcitkiṃcit* das Eine und Andere, Eines nach dem Andern
 
-- **RU:** [HIT. II,86.] *kiṃcitkiṃcit* «одно и другое, одно за другим»
+- **RU:** [HIT. II,86.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?2,86) *kiṃcitkiṃcit* «одно и другое, одно за другим»
   <sub>attested</sub>
 
-**6)** [BHARTṚ. 2,8.] *kaścit — kaścit, kecit — kecit* (mit *anya* und *apara* wechselnd) der Eine — der Andere, Einige — Andere
+**6)** [BHARTṚ. 2,8.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app2?2,8) *kaścit — kaścit, kecit — kecit* (mit *anya* und *apara* wechselnd) der Eine — der Andere, Einige — Andere
 
-- **RU:** [BHARTṚ. 2,8.] *kaścit — kaścit, kecit — kecit* (чередуясь с *anya* и *apara*) «один — другой, одни — другие»
+- **RU:** [BHARTṚ. 2,8.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app2?2,8) *kaścit — kaścit, kecit — kecit* (чередуясь с *anya* и *apara*) «один — другой, одни — другие»
   <sub>attested</sub>
 
-**7)** [R. 1,4,18. fgg.]
+**7)** [R. 1,4,18. fgg.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,4,18)
 
-- **RU:** [R. 1,4,18. fgg.]
+- **RU:** [R. 1,4,18. fgg.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,4,18)
   <sub>attested</sub>
 
-**8)** [ŚĀK. 80.]
+**8)** [ŚĀK. 80.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?80)
 
-- **RU:** [ŚĀK. 80.]
+- **RU:** [ŚĀK. 80.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?80)
   <sub>attested</sub>
 
-**9)** [N. 12,86.] [87.]
+**9)** [N. 12,86.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?12,86) [87.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?12,87)
 
-- **RU:** [N. 12,86.] [87.]
+- **RU:** [N. 12,86.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?12,86) [87.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?12,87)
   <sub>attested</sub>
 
-**10)** [M. 3,134.] [261.] [9,32.] [11,48.] *kiṃcid* am Anf. eines comp.: *kiṃcijjña* im Gegens. zu *sarvajña*
+**10)** [M. 3,134.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,134) [261.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,261) [9,32.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,32) [11,48.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,48) *kiṃcid* am Anf. eines comp.: *kiṃcijjña* im Gegens. zu *sarvajña*
 
-- **RU:** [M. 3,134.] [261.] [9,32.] [11,48.] *kiṃcid* на Anf. (некоего) comp.: *kiṃcijjña* в Gegens. к *sarvajña*
+- **RU:** [M. 3,134.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,134) [261.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,261) [9,32.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,32) [11,48.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,48) *kiṃcid* на Anf. (некоего) comp.: *kiṃcijjña* в Gegens. к *sarvajña*
   <sub>attested</sub>
 
-**1)** [BHARTṚ. 2,8.] *kiṃcitkālopabhogya*
-[HIT. I,169.] *kiṃcinnimittādapi manaḥsaṃtāpāt* irgend einen Grund habend
-[ŚĀK. 95,14.] Wie *kaśca* und *kaścana* in Verbindung mit dem relat.: *jano yaḥ kaścidahavirmahīyate*
-[ṚV. 1,182,3.] *yo vā idaṃ kaścidbrūyādveda vedeti* Jedermann könnte sagen: ich weiss, ich weiss
-[ŚAT. BR. 14,6,7,5.] *yaḥ kaścitkasyaciddharmo manunā parikīrtitaḥ . sa sarvo 'bhihito vede*
-[M. 2,7.] [4.] [123.] [3,191.] [273.] [4,117.] [5,24.] [9,271.] [12,96.]
-[YĀJÑ. 2,84.]
-[PAÑCAT. 148,10.] *yena kenacidaṅgena hiṃsyeccecchreṣṭhamantyajaḥ . chettavyaṃ tattadevāsya*
-[M. 8,279.] *triṣu lokeṣu yadbhūtaṃ kiṃcitsthāvaraṃ jaṅgamam . sarvasmānnau bhayaṃ na syāt*
+**1)** [BHARTṚ. 2,8.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app2?2,8) *kiṃcitkālopabhogya*
+[HIT. I,169.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?1,169) *kiṃcinnimittādapi manaḥsaṃtāpāt* irgend einen Grund habend
+[ŚĀK. 95,14.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?95,14) Wie *kaśca* und *kaścana* in Verbindung mit dem relat.: *jano yaḥ kaścidahavirmahīyate*
+[ṚV. 1,182,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.182.html#rv01.182.03) *yo vā idaṃ kaścidbrūyādveda vedeti* Jedermann könnte sagen: ich weiss, ich weiss
+[ŚAT. BR. 14,6,7,5.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,6,7,5) *yaḥ kaścitkasyaciddharmo manunā parikīrtitaḥ . sa sarvo 'bhihito vede*
+[M. 2,7.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,7) [4.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,4) [123.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,123) [3,191.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,191) [273.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,273) [4,117.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,117) [5,24.](https://sanskrit-lexicon-scans.github.io/manu/index.html?5,24) [9,271.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,271) [12,96.](https://sanskrit-lexicon-scans.github.io/manu/index.html?12,96)
+[YĀJÑ. 2,84.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,84)
+[PAÑCAT. 148,10.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?148,10) *yena kenacidaṅgena hiṃsyeccecchreṣṭhamantyajaḥ . chettavyaṃ tattadevāsya*
+[M. 8,279.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,279) *triṣu lokeṣu yadbhūtaṃ kiṃcitsthāvaraṃ jaṅgamam . sarvasmānnau bhayaṃ na syāt*
 [SUND. 1,25.]
 
-- **RU:** [BHARTṚ. 2,8.] *kiṃcitkālopabhogya*
-[HIT. I,169.] *kiṃcinnimittādapi manaḥsaṃtāpāt* «имеющий какое-либо основание»
-[ŚĀK. 95,14.] Как *kaśca* и *kaścana* в соединении с relat.: *jano yaḥ kaścidahavirmahīyate*
-[ṚV. 1,182,3.] *yo vā idaṃ kaścidbrūyādveda vedeti* «Каждый мог бы сказать: я знаю, я знаю»
-[ŚAT. BR. 14,6,7,5.] *yaḥ kaścitkasyaciddharmo manunā parikīrtitaḥ . sa sarvo 'bhihito vede*
-[M. 2,7.] [4.] [123.] [3,191.] [273.] [4,117.] [5,24.] [9,271.] [12,96.]
-[YĀJÑ. 2,84.]
-[PAÑCAT. 148,10.] *yena kenacidaṅgena hiṃsyeccecchreṣṭhamantyajaḥ . chettavyaṃ tattadevāsya*
-[M. 8,279.] *triṣu lokeṣu yadbhūtaṃ kiṃcitsthāvaraṃ jaṅgamam . sarvasmānnau bhayaṃ na syāt*
+- **RU:** [BHARTṚ. 2,8.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app2?2,8) *kiṃcitkālopabhogya*
+[HIT. I,169.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?1,169) *kiṃcinnimittādapi manaḥsaṃtāpāt* «имеющий какое-либо основание»
+[ŚĀK. 95,14.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?95,14) Как *kaśca* и *kaścana* в соединении с relat.: *jano yaḥ kaścidahavirmahīyate*
+[ṚV. 1,182,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.182.html#rv01.182.03) *yo vā idaṃ kaścidbrūyādveda vedeti* «Каждый мог бы сказать: я знаю, я знаю»
+[ŚAT. BR. 14,6,7,5.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,6,7,5) *yaḥ kaścitkasyaciddharmo manunā parikīrtitaḥ . sa sarvo 'bhihito vede*
+[M. 2,7.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,7) [4.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,4) [123.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,123) [3,191.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,191) [273.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,273) [4,117.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,117) [5,24.](https://sanskrit-lexicon-scans.github.io/manu/index.html?5,24) [9,271.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,271) [12,96.](https://sanskrit-lexicon-scans.github.io/manu/index.html?12,96)
+[YĀJÑ. 2,84.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,84)
+[PAÑCAT. 148,10.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?148,10) *yena kenacidaṅgena hiṃsyeccecchreṣṭhamantyajaḥ . chettavyaṃ tattadevāsya*
+[M. 8,279.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,279) *triṣu lokeṣu yadbhūtaṃ kiṃcitsthāvaraṃ jaṅgamam . sarvasmānnau bhayaṃ na syāt*
 [SUND. 1,25.]
   <sub>attested</sub>
 
-**f0-1)** [R. 3,55,48.] *yatkiṃcideva* (irgend Etwas) *deyaṃ tu jyāyase*
+**f0-1)** [R. 3,55,48.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,55,48) *yatkiṃcideva* (irgend Etwas) *deyaṃ tu jyāyase*
 
-- **RU:** [R. 3,55,48.] *yatkiṃcideva* (irgend Etwas = «нечто, что-либо») *deyaṃ tu jyāyase*
+- **RU:** [R. 3,55,48.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,55,48) *yatkiṃcideva* (irgend Etwas = «нечто, что-либо») *deyaṃ tu jyāyase*
   <sub>attested</sub>
 
-**f0-2)** [M. 9,115.] [4,228.] [7,137.] *na ye kecit (sākṣyamarhanti)* nicht der erste Beste
+**f0-2)** [M. 9,115.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,115) [4,228.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,228) [7,137.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,137) *na ye kecit (sākṣyamarhanti)* nicht der erste Beste
 
-- **RU:** [M. 9,115.] [4,228.] [7,137.] *na ye kecit (sākṣyamarhanti)* (nicht der erste Beste = «не первый встречный, не кто попало»)
+- **RU:** [M. 9,115.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,115) [4,228.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,228) [7,137.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,137) *na ye kecit (sākṣyamarhanti)* (nicht der erste Beste = «не первый встречный, не кто попало»)
   <sub>attested</sub>
 
-**f0-3)** [8,62.] *saṃtuṣṭo yena kenacit* mit Allem zufrieden
+**f0-3)** [8,62.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,62) *saṃtuṣṭo yena kenacit* mit Allem zufrieden
 
-- **RU:** [8,62.] *saṃtuṣṭo yena kenacit* (mit Allem zufrieden = «довольный всем»)
+- **RU:** [8,62.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,62) *saṃtuṣṭo yena kenacit* (mit Allem zufrieden = «довольный всем»)
   <sub>attested</sub>
 
-**f0-4)** [BHAG. 12,19.]
+**f0-4)** [BHAG. 12,19.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?12,19)
 
-- **RU:** [BHAG. 12,19.]
+- **RU:** [BHAG. 12,19.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?12,19)
   <sub>attested</sub>
 
-**f0-5)** [MBH. 3,4052.] *mama caitāvāllobhaviraho yena svahastasthamapi suvarṇakaṅkaṇaṃ yasmai kasmaiciddātumicchāmi*
+**f0-5)** [MBH. 3,4052.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.4052) *mama caitāvāllobhaviraho yena svahastasthamapi suvarṇakaṅkaṇaṃ yasmai kasmaiciddātumicchāmi*
 
-- **RU:** [MBH. 3,4052.] *mama caitāvāllobhaviraho yena svahastasthamapi suvarṇakaṅkaṇaṃ yasmai kasmaiciddātumicchāmi*
+- **RU:** [MBH. 3,4052.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.4052) *mama caitāvāllobhaviraho yena svahastasthamapi suvarṇakaṅkaṇaṃ yasmai kasmaiciddātumicchāmi*
   <sub>attested</sub>
 
-**f0-note)** [HIT. 11,5.] In den Beispielen aus der klass. Lit. schreiben wir *cid* mit dem pron. verbunden, weil hier die Partikel nur in Verbindung mit dem interr. erscheint.
+**f0-note)** [HIT. 11,5.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?11,5) In den Beispielen aus der klass. Lit. schreiben wir *cid* mit dem pron. verbunden, weil hier die Partikel nur in Verbindung mit dem interr. erscheint.
 
-- **RU:** [HIT. 11,5.] В примерах из классического Lit. мы пишем *cid*, соединённое с pron., поскольку здесь частица появляется только в сочетании с interr..
+- **RU:** [HIT. 11,5.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?11,5) В примерах из классического Lit. мы пишем *cid*, соединённое с pron., поскольку здесь частица появляется только в сочетании с interr..
   <sub>attested</sub>
 
 **f1-d)** — d) mit *vāḥ ke vā na santi* (giebt es nicht etwelche?) *bhuvi tāmarasāvataṃsā haṃsāvalīvalayino jalasaṃniveśāḥ*
@@ -715,64 +715,64 @@ _PWG article — 1 sub-card(s), 220 sense(s) · RU 220/220 · EN 0/220_
 - **RU:** [CĀT. 5.] В сочетании с relat.: *śūdrastu yasminkasminvā (deśe) nivasedvṛttikarṣitaḥ* (an einem beliebigen Orte = «в любом месте, где бы то ни было»)
   <sub>attested</sub>
 
-**f1-note2)** [M. 2,24.] Andere Beispiele stehen uns nicht zu Gebote. *vā* nach dem interr. hat sonst eine andere Bedeutung; vgl. 1,e.
+**f1-note2)** [M. 2,24.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,24) Andere Beispiele stehen uns nicht zu Gebote. *vā* nach dem interr. hat sonst eine andere Bedeutung; vgl. 1,e.
 
-- **RU:** [M. 2,24.] Другими примерами мы не располагаем. *vā* после interr. имеет в остальных случаях иное значение; ср. vgl. 1,e.
+- **RU:** [M. 2,24.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,24) Другими примерами мы не располагаем. *vā* после interr. имеет в остальных случаях иное значение; ср. vgl. 1,e.
   <sub>attested</sub>
 
 **e)** — e) mit *api* Jemand, Etwas, irgend ein, ein. Diese Verbindung ist eine verhältnissmässig junge (MANU kennt sie nicht) und in den späteren Schriften sehr beliebte, ohne dass dadurch die Verbindungen mit *cid* und *cana* ganz ausser Gebrauch kämen. *mithyaitaduktaṃ kenāpi*
 [MBH.] in [BENF. Chr. 60,26.] *sa bhūpatirekadā prāsādārūḍhaḥ pathi gacchatā kenāpi paṭhyamānaṃ ślokadvayaṃ śuśrāva*
-[HIT. 4,7.] *tadatra kenāpi kāraṇena bhavitavyam* daher muss hier irgend ein Grund sein
-[27,19.] *kimapi* (irgend Etwas) *vigaṇayanto vuddhimantaḥ sahante*
-[PAÑCAT. III,40.] *kimapi* (eine) *nagaramāsādyāvasthitaḥ*
-[127,17.] *kenāpyutkṣipateva paśya bhuvanaṃ matpārśvamānīyate*
-[ŚĀK. 167.] [178.] *śeṣaṃ kasyāpi rakṣasi* den Rest bewahrst du wer weiss für wen
-[HIT. I,160.] *kāpyabhikhyā* (ein gewisser, nicht näher zu bezeichnender Glanz) *tayorāsīt*
-[RAGH. 1,46.]
-[KUMĀRAS. 7,18.] *maugdhyavibhūṣaṇasya sahajaḥ ko 'pyeṣa kāntaḥ kramaḥ*
+[HIT. 4,7.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?4,7) *tadatra kenāpi kāraṇena bhavitavyam* daher muss hier irgend ein Grund sein
+[27,19.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?27,19) *kimapi* (irgend Etwas) *vigaṇayanto vuddhimantaḥ sahante*
+[PAÑCAT. III,40.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?3,40) *kimapi* (eine) *nagaramāsādyāvasthitaḥ*
+[127,17.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?127,17) *kenāpyutkṣipateva paśya bhuvanaṃ matpārśvamānīyate*
+[ŚĀK. 167.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?167) [178.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?178) *śeṣaṃ kasyāpi rakṣasi* den Rest bewahrst du wer weiss für wen
+[HIT. I,160.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?1,160) *kāpyabhikhyā* (ein gewisser, nicht näher zu bezeichnender Glanz) *tayorāsīt*
+[RAGH. 1,46.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?1,46)
+[KUMĀRAS. 7,18.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?7,18) *maugdhyavibhūṣaṇasya sahajaḥ ko 'pyeṣa kāntaḥ kramaḥ*
 [AMAR. 43.] *kāpyavasthābhavacchucā*
-[KATHĀS. 4,112.] —
+[KATHĀS. 4,112.](https://sanskrit-lexicon-scans.github.io/kss/index.html?4,112) —
 [AMAR. 46.]
-[KATHĀS. 6,165.]
+[KATHĀS. 6,165.](https://sanskrit-lexicon-scans.github.io/kss/index.html?6,165)
 
 - **RU:** — e) с *api* кто-нибудь, что-нибудь, какой-нибудь, некий, некоторый. Это сочетание сравнительно позднее (MANU его не знает) и весьма излюбленное в более поздних сочинениях, хотя сочетания с *cid* и *cana* от этого полностью из употребления не выходят. *mithyaitaduktaṃ kenāpi*
 [MBH.] в [BENF. Chr. 60,26.] *sa bhūpatirekadā prāsādārūḍhaḥ pathi gacchatā kenāpi paṭhyamānaṃ ślokadvayaṃ śuśrāva*
-[HIT. 4,7.] *tadatra kenāpi kāraṇena bhavitavyam* следовательно, здесь должна быть какая-то причина
-[27,19.] *kimapi* (что-нибудь) *vigaṇayanto vuddhimantaḥ sahante*
-[PAÑCAT. III,40.] *kimapi* (некая) *nagaramāsādyāvasthitaḥ*
-[127,17.] *kenāpyutkṣipateva paśya bhuvanaṃ matpārśvamānīyate*
-[ŚĀK. 167.] [178.] *śeṣaṃ kasyāpi rakṣasi* остаток же сохрани неизвестно для кого
-[HIT. I,160.] *kāpyabhikhyā* (некий, точнее не определимый блеск) *tayorāsīt*
-[RAGH. 1,46.]
-[KUMĀRAS. 7,18.] *maugdhyavibhūṣaṇasya sahajaḥ ko 'pyeṣa kāntaḥ kramaḥ*
+[HIT. 4,7.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?4,7) *tadatra kenāpi kāraṇena bhavitavyam* следовательно, здесь должна быть какая-то причина
+[27,19.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?27,19) *kimapi* (что-нибудь) *vigaṇayanto vuddhimantaḥ sahante*
+[PAÑCAT. III,40.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?3,40) *kimapi* (некая) *nagaramāsādyāvasthitaḥ*
+[127,17.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?127,17) *kenāpyutkṣipateva paśya bhuvanaṃ matpārśvamānīyate*
+[ŚĀK. 167.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?167) [178.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?178) *śeṣaṃ kasyāpi rakṣasi* остаток же сохрани неизвестно для кого
+[HIT. I,160.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?1,160) *kāpyabhikhyā* (некий, точнее не определимый блеск) *tayorāsīt*
+[RAGH. 1,46.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?1,46)
+[KUMĀRAS. 7,18.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?7,18) *maugdhyavibhūṣaṇasya sahajaḥ ko 'pyeṣa kāntaḥ kramaḥ*
 [AMAR. 43.] *kāpyavasthābhavacchucā*
-[KATHĀS. 4,112.] —
+[KATHĀS. 4,112.](https://sanskrit-lexicon-scans.github.io/kss/index.html?4,112) —
 [AMAR. 46.]
-[KATHĀS. 6,165.]
+[KATHĀS. 6,165.](https://sanskrit-lexicon-scans.github.io/kss/index.html?6,165)
   <sub>attested</sub>
 
-**1)** [VID. 5.] [6.] [39.] [43.] [143.] [160.]
-[SĀH. D. 40,10.] *ke 'pi* einige
-[AK. 3,4,1,1.] In Verbindung mit einer Negation: *na hi śaśakaviṣāṇaṃ ko 'pi kasmai dadāti* Niemand
+**1)** [VID. 5.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?5) [6.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?6) [39.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?39) [43.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?43) [143.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?143) [160.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?160)
+[SĀH. D. 40,10.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?40,10) *ke 'pi* einige
+[AK. 3,4,1,1.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,4,1,1) In Verbindung mit einer Negation: *na hi śaśakaviṣāṇaṃ ko 'pi kasmai dadāti* Niemand
 
 giebt Jemand ein Hasenhorn
-[BHARTṚ. 3,99.] *ko 'pi tatpārśvaṃ na bhajate*
-[HIT. 10,9.] [38,12.]
+[BHARTṚ. 3,99.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app2?3,99) *ko 'pi tatpārśvaṃ na bhajate*
+[HIT. 10,9.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?10,9) [38,12.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?38,12)
 — Vgl. *katama, katara, kati, katham, kathā, kad, kadā, kam, kaya, kayā, karhi, kava, kasmāt, kā, ki, kim, ku, kena*.
 
-- **RU:** [VID. 5.] [6.] [39.] [43.] [143.] [160.]
-[SĀH. D. 40,10.] *ke 'pi* некоторые
-[AK. 3,4,1,1.] В сочетании с отрицанием: *na hi śaśakaviṣāṇaṃ ko 'pi kasmai dadāti* никто
+- **RU:** [VID. 5.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?5) [6.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?6) [39.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?39) [43.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?43) [143.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?143) [160.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?160)
+[SĀH. D. 40,10.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?40,10) *ke 'pi* некоторые
+[AK. 3,4,1,1.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,4,1,1) В сочетании с отрицанием: *na hi śaśakaviṣāṇaṃ ko 'pi kasmai dadāti* никто
 
 даёт кто-либо заячий рог
-[BHARTṚ. 3,99.] *ko 'pi tatpārśvaṃ na bhajate*
-[HIT. 10,9.] [38,12.]
+[BHARTṚ. 3,99.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app2?3,99) *ko 'pi tatpārśvaṃ na bhajate*
+[HIT. 10,9.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?10,9) [38,12.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?38,12)
 — Vgl. *katama, katara, kati, katham, kathā, kad, kadā, kam, kaya, kayā, karhi, kava, kasmāt, kā, ki, kim, ku, kena*.
   <sub>attested</sub>
 
-**1)** [MED. k. 14]; Wind; Sonne
+**1)** [MED. k. 14](https://sanskrit-lexicon-scans.github.io/medini/app1?k,14); Wind; Sonne
 
-- **RU:** [MED. k. 14]; «ветер; солнце»
+- **RU:** [MED. k. 14](https://sanskrit-lexicon-scans.github.io/medini/app1?k,14); «ветер; солнце»
   <sub>attested</sub>
 
 **2)** [AK.] [H. an.] [MED.]; Seele, *ātman*
@@ -780,9 +780,9 @@ giebt Jemand ein Hasenhorn
 - **RU:** [AK.] [H. an.] [MED.]; «душа», *ātman*
   <sub>attested</sub>
 
-**3)** [TRIK. 3,3,10.]
+**3)** [TRIK. 3,3,10.](https://sanskrit-lexicon-scans.github.io/medini/app2?3,3,10)
 
-- **RU:** [TRIK. 3,3,10.]
+- **RU:** [TRIK. 3,3,10.](https://sanskrit-lexicon-scans.github.io/medini/app2?3,3,10)
   <sub>attested</sub>
 
 **4)** [H. an.]
@@ -835,55 +835,55 @@ giebt Jemand ein Hasenhorn
   <sub>attested</sub>
 
 **1)** 1) Freude, Glückseligkeit
-[NAIGH. 3,6.]
-[NIR. 2,14.]
-[TRIK. 3,3,10.]
-[H. an. 1,5.]
-[MED. k. 15.] Dieses Wort glaubte man in *aka (nāsmā akaṃ bhavati*
-[TS. 5,3,7,1]) und *nāka (na + aka)* zu finden und schloss daraus vielleicht auf diese Bedeutung; vgl.
+[NAIGH. 3,6.](https://sanskrit-lexicon-scans.github.io/nirukta/app2?3,6)
+[NIR. 2,14.](https://sanskrit-lexicon-scans.github.io/nirukta/app1?2,14)
+[TRIK. 3,3,10.](https://sanskrit-lexicon-scans.github.io/medini/app2?3,3,10)
+[H. an. 1,5.](https://sanskrit-lexicon-scans.github.io/anekarthasamgraha/app1?1,5)
+[MED. k. 15.](https://sanskrit-lexicon-scans.github.io/medini/app1?k,15) Dieses Wort glaubte man in *aka (nāsmā akaṃ bhavati*
+[TS. 5,3,7,1](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?5,3,7,1)) und *nāka (na + aka)* zu finden und schloss daraus vielleicht auf diese Bedeutung; vgl.
 [NIR.] a. a. O. *prāṇo brahma kaṃ khaṃ brahmeti sa hovāca vijānāmyahaṃ yatprāṇo brahma kaṃ ca tu khaṃ ca na vijānāmīti te hocuryadvāva kaṃ tadeva khaṃ yadeva khaṃ tadeva kamiti prāṇaṃ ca hāsmai tadākāśaṃ cocuḥ*
 [CHĀND. UP. 4,10,5.]
 [MAHĀNĀR. UP.] in [Ind. St. 2,94.]
 
 - **RU:** 1) радость, блаженство
-[NAIGH. 3,6.]
-[NIR. 2,14.]
-[TRIK. 3,3,10.]
-[H. an. 1,5.]
-[MED. k. 15.] Полагали, что это слово встречается в *aka (nāsmā akaṃ bhavati*
-[TS. 5,3,7,1]) и *nāka (na + aka)*, и из этого, возможно, заключали о данном значении; vgl.
+[NAIGH. 3,6.](https://sanskrit-lexicon-scans.github.io/nirukta/app2?3,6)
+[NIR. 2,14.](https://sanskrit-lexicon-scans.github.io/nirukta/app1?2,14)
+[TRIK. 3,3,10.](https://sanskrit-lexicon-scans.github.io/medini/app2?3,3,10)
+[H. an. 1,5.](https://sanskrit-lexicon-scans.github.io/anekarthasamgraha/app1?1,5)
+[MED. k. 15.](https://sanskrit-lexicon-scans.github.io/medini/app1?k,15) Полагали, что это слово встречается в *aka (nāsmā akaṃ bhavati*
+[TS. 5,3,7,1](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?5,3,7,1)) и *nāka (na + aka)*, и из этого, возможно, заключали о данном значении; vgl.
 [NIR.] a. a. O. *prāṇo brahma kaṃ khaṃ brahmeti sa hovāca vijānāmyahaṃ yatprāṇo brahma kaṃ ca tu khaṃ ca na vijānāmīti te hocuryadvāva kaṃ tadeva khaṃ yadeva khaṃ tadeva kamiti prāṇaṃ ca hāsmai tadākāśaṃ cocuḥ*
 [CHĀND. UP. 4,10,5.]
 [MAHĀNĀR. UP.] в [Ind. St. 2,94.]
   <sub>lexicographic</sub>
 
 **2)** — 2) Wasser
-[AK.] [TRIK. 1,2,10.] [H. 1069.] [H. an.] [MED.] *so 'rcannacarattasyārcata āpo 'jāyantārcate vai me kamabhūditi tadevārkyasyārkatvam . kaṃ*
+[AK.] [TRIK. 1,2,10.](https://sanskrit-lexicon-scans.github.io/medini/app2?1,2,10) [H. 1069.](https://sanskrit-lexicon-scans.github.io/abch2/app1?1069) [H. an.] [MED.] *so 'rcannacarattasyārcata āpo 'jāyantārcate vai me kamabhūditi tadevārkyasyārkatvam . kaṃ*
 ([ŚAṂK.]: = *udaka* oder *sukha) ha vā asmai bhavati ya evametadarkyasyārkatvaṃ veda ..*
-[ŚAT. BR. 10,6,5,1.] *satyena mābhirakṣa tvaṃ varuṇetyabhiśāpya kam*
-[YĀJÑ. 2,108.] *aviśatkam*
-[BHĀG. P. 3,13,28.] [6,1,42.]
+[ŚAT. BR. 10,6,5,1.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?10,6,5,1) *satyena mābhirakṣa tvaṃ varuṇetyabhiśāpya kam*
+[YĀJÑ. 2,108.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,108) *aviśatkam*
+[BHĀG. P. 3,13,28.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,13,28) [6,1,42.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,1,42)
 [NALOD. 2,4. 41.]
 
 - **RU:** — 2) *вода*
-[AK.] [TRIK. 1,2,10.] [H. 1069.] [H. an.] [MED.] *so 'rcannacarattasyārcata āpo 'jāyantārcate vai me kamabhūditi tadevārkyasyārkatvam . kaṃ*
+[AK.] [TRIK. 1,2,10.](https://sanskrit-lexicon-scans.github.io/medini/app2?1,2,10) [H. 1069.](https://sanskrit-lexicon-scans.github.io/abch2/app1?1069) [H. an.] [MED.] *so 'rcannacarattasyārcata āpo 'jāyantārcate vai me kamabhūditi tadevārkyasyārkatvam . kaṃ*
 ([ŚAṂK.]: = *udaka* или *sukha) ha vā asmai bhavati ya evametadarkyasyārkatvaṃ veda ..*
-[ŚAT. BR. 10,6,5,1.] *satyena mābhirakṣa tvaṃ varuṇetyabhiśāpya kam*
-[YĀJÑ. 2,108.] *aviśatkam*
-[BHĀG. P. 3,13,28.] [6,1,42.]
+[ŚAT. BR. 10,6,5,1.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?10,6,5,1) *satyena mābhirakṣa tvaṃ varuṇetyabhiśāpya kam*
+[YĀJÑ. 2,108.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,108) *aviśatkam*
+[BHĀG. P. 3,13,28.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,13,28) [6,1,42.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,1,42)
 [NALOD. 2,4. 41.]
   <sub>lexicographic</sub>
 
 **3)** — 3) Kopf
-[AK. 3,4,1,5.]
-[H. 566.]
+[AK. 3,4,1,5.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,4,1,5)
+[H. 566.](https://sanskrit-lexicon-scans.github.io/abch2/app1?566)
 [H. an.]
 [MED.] Haar
 [DHAR.] im [ŚKDR.] Vgl. *kaṃdharā* . — Mit denselben Bedeutungen wird das Wort auch als indecl. (*kam*) aufgeführt.
 
 - **RU:** — 3) голова
-[AK. 3,4,1,5.]
-[H. 566.]
+[AK. 3,4,1,5.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,4,1,5)
+[H. 566.](https://sanskrit-lexicon-scans.github.io/abch2/app1?566)
 [H. an.]
 [MED.] волосы
 [DHAR.] в [ŚKDR.] Vgl. *kaṃdharā*. — С теми же значениями слово приводится также как indecl. (*kam*).
@@ -904,23 +904,23 @@ giebt Jemand ein Hasenhorn
 - **RU:** 1) *ke varākāstu mānuṣāḥ* так v. a. о них уже вообще не может быть и речи
   <sub>lexicographic</sub>
 
-**Nachträge (продолжение))** [KATHĀS. 101,62.] mit dem infin.: *nṛpamīkṣitumatra ke vayam* so v. a. welches Anrecht hätten wir den Fürsten zu schauen?
+**Nachträge (продолжение))** [KATHĀS. 101,62.](https://sanskrit-lexicon-scans.github.io/kss/index.html?101,62) mit dem infin.: *nṛpamīkṣitumatra ke vayam* so v. a. welches Anrecht hätten wir den Fürsten zu schauen?
 
-- **RU:** [KATHĀS. 101,62.] с infin.: *nṛpamīkṣitumatra ke vayam* так v. a. какое право имели бы мы взирать на государя?
+- **RU:** [KATHĀS. 101,62.](https://sanskrit-lexicon-scans.github.io/kss/index.html?101,62) с infin.: *nṛpamīkṣitumatra ke vayam* так v. a. какое право имели бы мы взирать на государя?
   <sub>lexicographic</sub>
 
-**Nachträge, corrigendum)** [Spr. 1406.] Sp. 1, Z. 2 v. u. lies 83,7 st. 83,17.
+**Nachträge, corrigendum)** [Spr. 1406.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1406) Sp. 1, Z. 2 v. u. lies 83,7 st. 83,17.
 
-- **RU:** [Spr. 1406.] Sp. 1, Z. 2 v. u.: читай 83,7 st. 83,17.
+- **RU:** [Spr. 1406.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1406) Sp. 1, Z. 2 v. u.: читай 83,7 st. 83,17.
   <sub>lexicographic</sub>
 
 **2)** — 2)
 Z. 5. fg. die Stelle
-[YĀJÑ. 3,133] zu streichen, da hier *vaikeṣām* zu lesen ist; vgl.
-[Spr. 5009.] *nahi kasya priyaḥ ko vā vipriyo vā jagattraye*
-[Spr. 4372.]
+[YĀJÑ. 3,133](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?3,133) zu streichen, da hier *vaikeṣām* zu lesen ist; vgl.
+[Spr. 5009.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?5009) *nahi kasya priyaḥ ko vā vipriyo vā jagattraye*
+[Spr. 4372.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4372)
 
-- **RU:** — 2) Z. 5. fg. место [YĀJÑ. 3,133] следует вычеркнуть, так как здесь надлежит читать *vaikeṣām*; vgl. [Spr. 5009.] *nahi kasya priyaḥ ko vā vipriyo vā jagattraye* [Spr. 4372.]
+- **RU:** — 2) Z. 5. fg. место [YĀJÑ. 3,133](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?3,133) следует вычеркнуть, так как здесь надлежит читать *vaikeṣām*; vgl. [Spr. 5009.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?5009) *nahi kasya priyaḥ ko vā vipriyo vā jagattraye* [Spr. 4372.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4372)
   <sub>lexicographic</sub>
 
 **3)** — 3)
@@ -929,36 +929,36 @@ Z. 5. fg. die Stelle
   <sub>lexicographic</sub>
 
 **b)** b) *pratirathāstu vāhīkā na ca ke ca na madrakāḥ* so v. a. haben Nichts zu bedeuten, sind gar Nichts werth
-[MBH. 8,2108.]
+[MBH. 8,2108.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.2108)
 
-- **RU:** b) *pratirathāstu vāhīkā na ca ke ca na madrakāḥ* так v. a. «ничего не значат, не имеют вовсе никакой цены» [MBH. 8,2108.]
+- **RU:** b) *pratirathāstu vāhīkā na ca ke ca na madrakāḥ* так v. a. «ничего не значат, не имеют вовсе никакой цены» [MBH. 8,2108.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.2108)
   <sub>lexicographic</sub>
 
 **c)** — c) *viṣāṇollikhitaskandhaṃ kācideva (gaurjanayati) gavāṃ patim* nur die eine oder die andere, nur hier und da eine
-[Spr. 932.] *vidyate nahi sa kaścidupāyaḥ sarvalokaparitoṣakaro yaḥ* kein einziges Mittel
-[5196.] *yatkiṃcidapi dātavyaṃ yācitenānasūyayā* worum man auch gebeten wird, das soll man ohne Murren geben,
-[4766.] [Sp. 4, Z. 8] v. u. lies *kaṃcitkālam* . Vgl. *kiṃcid* .
+[Spr. 932.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?932) *vidyate nahi sa kaścidupāyaḥ sarvalokaparitoṣakaro yaḥ* kein einziges Mittel
+[5196.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?5196) *yatkiṃcidapi dātavyaṃ yācitenānasūyayā* worum man auch gebeten wird, das soll man ohne Murren geben,
+[4766.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4766) [Sp. 4, Z. 8] v. u. lies *kaṃcitkālam* . Vgl. *kiṃcid* .
 
-- **RU:** — c) *viṣāṇollikhitaskandhaṃ kācideva (gaurjanayati) gavāṃ patim* «лишь та или иная, лишь то тут, то там одна» [Spr. 932.] *vidyate nahi sa kaścidupāyaḥ sarvalokaparitoṣakaro yaḥ* «ни единого средства» [5196.] *yatkiṃcidapi dātavyaṃ yācitenānasūyayā* «о чём бы ни попросили, то следует давать без ропота», [4766.] [Sp. 4, Z. 8] v. u. читай *kaṃcitkālam*. Vgl. *kiṃcid*.
+- **RU:** — c) *viṣāṇollikhitaskandhaṃ kācideva (gaurjanayati) gavāṃ patim* «лишь та или иная, лишь то тут, то там одна» [Spr. 932.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?932) *vidyate nahi sa kaścidupāyaḥ sarvalokaparitoṣakaro yaḥ* «ни единого средства» [5196.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?5196) *yatkiṃcidapi dātavyaṃ yācitenānasūyayā* «о чём бы ни попросили, то следует давать без ропота», [4766.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4766) [Sp. 4, Z. 8] v. u. читай *kaṃcitkālam*. Vgl. *kiṃcid*.
   <sub>lexicographic</sub>
 
 **d)** — d) *ke vā*
 [CĀT. 5] falsch aufgefasst; vgl.
-[Spr. 737.]
+[Spr. 737.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?737)
 
 - **RU:** — d) *ke vā*
 [CĀT. 5] ошибочно понято; vgl.
-[Spr. 737.]
+[Spr. 737.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?737)
   <sub>mixed</sub>
 
-**1.e)** — e) *martyaḥ ko 'pi* nur dieser oder jener Sterbliche, nur hier und da ein Sterblicher [Spr. 1754.]
+**1.e)** — e) *martyaḥ ko 'pi* nur dieser oder jener Sterbliche, nur hier und da ein Sterblicher [Spr. 1754.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1754)
 
-- **RU:** — e) *martyaḥ ko 'pi* лишь тот или иной смертный, лишь то там, то тут какой-нибудь смертный [Spr. 1754.]
+- **RU:** — e) *martyaḥ ko 'pi* лишь тот или иной смертный, лишь то там, то тут какой-нибудь смертный [Spr. 1754.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1754)
   <sub>attested</sub>
 
-**2 (Nachtrag #5))** 2. *ka*¦ = *prajāpati* [Ind. St. 3,388.] [MBH. 8,1413.] [WEBER, JYOT. 32. fg.] [BHĀG. P. 2,5,30.] [Verz. d. Oxf. H. 104,b,25.] = *brahman* [HALĀY. 5,61.] [Ind. St. 3,212.] [BHĀG. P. 12,13,19.] [20.] Wind [HALĀY.] = *pumaṃs* [AK. 3,4,1,5.] = *puruṣa* (wie *yaḥ, saḥ, eṣaḥ)* [TATTVAS. 19.] N. eines best. Ketu (Kometen) [VARĀH. BṚH. S. 11,37.]
+**2 (Nachtrag #5))** 2. *ka*¦ = *prajāpati* [Ind. St. 3,388.] [MBH. 8,1413.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.1413) [WEBER, JYOT. 32. fg.] [BHĀG. P. 2,5,30.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,5,30) [Verz. d. Oxf. H. 104,b,25.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?104) = *brahman* [HALĀY. 5,61.](https://sanskrit-lexicon-scans.github.io/armh2/app1?5,61) [Ind. St. 3,212.] [BHĀG. P. 12,13,19.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?12,13,19) [20.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?12,13,20) Wind [HALĀY.] = *pumaṃs* [AK. 3,4,1,5.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,4,1,5) = *puruṣa* (wie *yaḥ, saḥ, eṣaḥ)* [TATTVAS. 19.] N. eines best. Ketu (Kometen) [VARĀH. BṚH. S. 11,37.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?11,37)
 
-- **RU:** 2. *ka*¦ = *prajāpati* [Ind. St. 3,388.] [MBH. 8,1413.] [WEBER, JYOT. 32. fg.] [BHĀG. P. 2,5,30.] [Verz. d. Oxf. H. 104,b,25.] = *brahman* [HALĀY. 5,61.] [Ind. St. 3,212.] [BHĀG. P. 12,13,19.] [20.] ветер [HALĀY.] = *pumaṃs* [AK. 3,4,1,5.] = *puruṣa* (как *yaḥ, saḥ, eṣaḥ)* [TATTVAS. 19.] N. некоего best. Ketu (кометы) [VARĀH. BṚH. S. 11,37.]
+- **RU:** 2. *ka*¦ = *prajāpati* [Ind. St. 3,388.] [MBH. 8,1413.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.1413) [WEBER, JYOT. 32. fg.] [BHĀG. P. 2,5,30.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,5,30) [Verz. d. Oxf. H. 104,b,25.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?104) = *brahman* [HALĀY. 5,61.](https://sanskrit-lexicon-scans.github.io/armh2/app1?5,61) [Ind. St. 3,212.] [BHĀG. P. 12,13,19.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?12,13,19) [20.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?12,13,20) ветер [HALĀY.] = *pumaṃs* [AK. 3,4,1,5.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,4,1,5) = *puruṣa* (как *yaḥ, saḥ, eṣaḥ)* [TATTVAS. 19.] N. некоего best. Ketu (кометы) [VARĀH. BṚH. S. 11,37.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?11,37)
   <sub>attested</sub>
 
 **3 (Nachtrag #6))** 3. *ka*¦
@@ -967,32 +967,32 @@ Z. 5. fg. die Stelle
   <sub>attested</sub>
 
 **1)** 1)
-[HALĀY. 5,61.]
+[HALĀY. 5,61.](https://sanskrit-lexicon-scans.github.io/armh2/app1?5,61)
 
 - **RU:** 1)
-[HALĀY. 5,61.]
+[HALĀY. 5,61.](https://sanskrit-lexicon-scans.github.io/armh2/app1?5,61)
   <sub>attested</sub>
 
 **2)** — 2)
-[HALĀY. 3,26. 5,61.]
-[VARĀH. BṚH. S. 104,46.]
-[Spr. 1518.]
+[HALĀY. 3,26. 5,61.](https://sanskrit-lexicon-scans.github.io/armh2/app1?3,26)
+[VARĀH. BṚH. S. 104,46.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?104,46)
+[Spr. 1518.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1518)
 
 - **RU:** — 2)
-[HALĀY. 3,26. 5,61.]
-[VARĀH. BṚH. S. 104,46.]
-[Spr. 1518.]
+[HALĀY. 3,26. 5,61.](https://sanskrit-lexicon-scans.github.io/armh2/app1?3,26)
+[VARĀH. BṚH. S. 104,46.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?104,46)
+[Spr. 1518.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1518)
   <sub>attested</sub>
 
 **3)** — 3) Kopf
-[HALĀY. 5,61.]
-[HARIV. 12189.]
+[HALĀY. 5,61.](https://sanskrit-lexicon-scans.github.io/armh2/app1?5,61)
+[HARIV. 12189.](https://sanskrit-lexicon-scans.github.io/hariv?12189)
 [Ind. St. 8,396.]
 [VARĀH. BṚH. 5,24.]
 
 - **RU:** — 3) голова
-[HALĀY. 5,61.]
-[HARIV. 12189.]
+[HALĀY. 5,61.](https://sanskrit-lexicon-scans.github.io/armh2/app1?5,61)
+[HARIV. 12189.](https://sanskrit-lexicon-scans.github.io/hariv?12189)
 [Ind. St. 8,396.]
 [VARĀH. BṚH. 5,24.]
   <sub>attested</sub>
@@ -1016,9 +1016,9 @@ Z. 5. fg. die Stelle
 - **RU:** — b) в косвенном вопросе. *te ke na jānīmahe* «что это такое, мы не знаем» [169,24].
   <sub>attested</sub>
 
-**2)** — 2〉 als _Pron._ indef. Jemand, irgendwer, was, — welcher. *yatkimakaram* [28,25]. [ŚAT. BR. 1,7,3,19]. Meistens in negativen Sätzen oder in Verbindung mit verschiedenen Partikeln.
+**2)** — 2〉 als _Pron._ indef. Jemand, irgendwer, was, — welcher. *yatkimakaram* [28,25]. [ŚAT. BR. 1,7,3,19](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,7,3,19). Meistens in negativen Sätzen oder in Verbindung mit verschiedenen Partikeln.
 
-- **RU:** — 2〉 в качестве _Pron._ indef. «кто-то, кто-нибудь, что, — который». *yatkimakaram* [28,25]. [ŚAT. BR. 1,7,3,19]. Большей частью в отрицательных предложениях или в сочетании с различными частицами.
+- **RU:** — 2〉 в качестве _Pron._ indef. «кто-то, кто-нибудь, что, — который». *yatkimakaram* [28,25]. [ŚAT. BR. 1,7,3,19](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,7,3,19). Большей частью в отрицательных предложениях или в сочетании с различными частицами.
   <sub>attested</sub>
 
 **2a)** — a〉 mit *ca*. Mit einem vorangehenden Relat. entweder relativ (wer —, welcher immer) oder indef. (wer —, was es auch sei, jedermann, jeglich, jeder beliebige.)
@@ -1041,14 +1041,14 @@ Z. 5. fg. die Stelle
 - **RU:** — β〉 в отрицательных предложениях отрицание тем самым лишь усиливается. *na yuvayoreṣa kiṃ cana* «это вас вовсе не касается» *na ca ke cana madrakāḥ* так v. a. «ничего не значат».
   <sub>attested</sub>
 
-**2bγ)** — γ〉 wer —, was es auch sei; irgend ein. Pl. Einige, wiederholt etwelche, verschiedene. In Verbindung mit *ya* wie *kaśca*; s. 2〉a〉. *yatkiṃcanapralāpin* _Adj._ allerhand Zeug schwatzend [R. 4,17,5].
+**2bγ)** — γ〉 wer —, was es auch sei; irgend ein. Pl. Einige, wiederholt etwelche, verschiedene. In Verbindung mit *ya* wie *kaśca*; s. 2〉a〉. *yatkiṃcanapralāpin* _Adj._ allerhand Zeug schwatzend [R. 4,17,5](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,17,5).
 
-- **RU:** — γ〉 «кто бы ни —, что бы то ни было; какой-нибудь». Pl. «некоторые», повторённое — «некие, различные». В сочетании с *ya*, как *kaśca*; s. 2〉a〉. *yatkiṃcanapralāpin* _Adj._ «болтающий всякую всячину» [R. 4,17,5].
+- **RU:** — γ〉 «кто бы ни —, что бы то ни было; какой-нибудь». Pl. «некоторые», повторённое — «некие, различные». В сочетании с *ya*, как *kaśca*; s. 2〉a〉. *yatkiṃcanapralāpin* _Adj._ «болтающий всякую всячину» [R. 4,17,5](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,17,5).
   <sub>attested</sub>
 
-**c)** — c〉 mit *cid* wer —, was —, welcher immer, jemand, man, Etwas, irgend ein, ein (unbest. Artikel), der Eine oder der Andere, hier und da Einer. Pl. Einige. *kaścit — kaścit*, *ke cit — ke cit* (mit *anya* und *apara* wechselnd) der Eine — der Andere, Einige — Andere. *pakṣiṇaḥ svāhārtkiṃ citkiṃ ciddadati* dieses und jenes, ein Weniges [171,3]. [4]. [Spr. 5188]. *kaṣcitkaṃ citpṛcchati* Jemand frägt einen Andern [Chr. 242,10]. Auch in Comp. *kiṃcidaṅgasparśa* [154,23]. In einem negativen Satze mit der Negation durch Niemand, Nichts, kein wiederzugeben. *nānyenakenacit* mit nichts Anderm [248,11]. *na taiśca kiṃ cit* so v. a. mit diesen ist Nichts anzufangen [Spr. 7641]. *na khalu kiṃ cinna* so v. a. Alles [Chr. 310,31]. Auch in Verbindung mit *ya* wie *kaścaḥ* s. 2〉a〉. *na ye ke citsākṣyamarhanti* so v. a. nicht jeder Beliebige, — der erste Beste.
+**c)** — c〉 mit *cid* wer —, was —, welcher immer, jemand, man, Etwas, irgend ein, ein (unbest. Artikel), der Eine oder der Andere, hier und da Einer. Pl. Einige. *kaścit — kaścit*, *ke cit — ke cit* (mit *anya* und *apara* wechselnd) der Eine — der Andere, Einige — Andere. *pakṣiṇaḥ svāhārtkiṃ citkiṃ ciddadati* dieses und jenes, ein Weniges [171,3]. [4]. [Spr. 5188](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?5188). *kaṣcitkaṃ citpṛcchati* Jemand frägt einen Andern [Chr. 242,10]. Auch in Comp. *kiṃcidaṅgasparśa* [154,23]. In einem negativen Satze mit der Negation durch Niemand, Nichts, kein wiederzugeben. *nānyenakenacit* mit nichts Anderm [248,11]. *na taiśca kiṃ cit* so v. a. mit diesen ist Nichts anzufangen [Spr. 7641](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7641). *na khalu kiṃ cinna* so v. a. Alles [Chr. 310,31]. Auch in Verbindung mit *ya* wie *kaścaḥ* s. 2〉a〉. *na ye ke citsākṣyamarhanti* so v. a. nicht jeder Beliebige, — der erste Beste.
 
-- **RU:** — c〉 с *cid* {кто бы ни —, что бы ни —, какой угодно, кто-то, некто, нечто, какой-нибудь, один} (unbest. артикль), {один или другой, тут и там некий}. Pl. {некоторые}. *kaścit — kaścit*, *ke cit — ke cit* (чередуясь с *anya* и *apara*) {один — другой, некоторые — другие}. *pakṣiṇaḥ svāhārtkiṃ citkiṃ ciddadati* {то и сё, немногое} [171,3]. [4]. [Spr. 5188]. *kaṣcitkaṃ citpṛcchati* {один спрашивает другого} [Chr. 242,10]. Также в Comp. *kiṃcidaṅgasparśa* [154,23]. В отрицательном предложении передаётся отрицанием: никто, ничто, никакой. *nānyenakenacit* {ни с чем другим} [248,11]. *na taiśca kiṃ cit* так v. a. {с этими ничего не поделаешь} [Spr. 7641]. *na khalu kiṃ cinna* так v. a. {всё} [Chr. 310,31]. Также в сочетании с *ya*, как *kaścaḥ* s. 2〉a〉. *na ye ke citsākṣyamarhanti* так v. a. {не всякий попавшийся, — первый встречный}.
+- **RU:** — c〉 с *cid* {кто бы ни —, что бы ни —, какой угодно, кто-то, некто, нечто, какой-нибудь, один} (unbest. артикль), {один или другой, тут и там некий}. Pl. {некоторые}. *kaścit — kaścit*, *ke cit — ke cit* (чередуясь с *anya* и *apara*) {один — другой, некоторые — другие}. *pakṣiṇaḥ svāhārtkiṃ citkiṃ ciddadati* {то и сё, немногое} [171,3]. [4]. [Spr. 5188](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?5188). *kaṣcitkaṃ citpṛcchati* {один спрашивает другого} [Chr. 242,10]. Также в Comp. *kiṃcidaṅgasparśa* [154,23]. В отрицательном предложении передаётся отрицанием: никто, ничто, никакой. *nānyenakenacit* {ни с чем другим} [248,11]. *na taiśca kiṃ cit* так v. a. {с этими ничего не поделаешь} [Spr. 7641](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7641). *na khalu kiṃ cinna* так v. a. {всё} [Chr. 310,31]. Также в сочетании с *ya*, как *kaścaḥ* s. 2〉a〉. *na ye ke citsākṣyamarhanti* так v. a. {не всякий попавшийся, — первый встречный}.
   <sub>lexicographic</sub>
 
 **d)** — d〉 mit *api* (noch nicht bei [MANU]). Jemand, Etwas, irgend ein, ein (unbest. Artikel), ein unbestimmter, — nicht näher zu bezeichnender. *ke 'pi* Einige. *sarvaḥ ko 'pi* Jedermann, wer es auch sei [118,24]. *ko 'pyekaḥ puruṣaḥ* ein Mann [111,13]. *apūrvaḥ ko'pi* ein bisher ganz unbekannter, ein ganz ungewöhnlicher [164,17]. [165,32]. [176,36].
@@ -1056,9 +1056,9 @@ Z. 5. fg. die Stelle
 - **RU:** — d〉 с *api* (ещё не встречается у [MANU]). *кто-то, что-то, некий, некоторый* (unbest. неопределённый артикль), *некий неопределённый, — не подлежащий более точному обозначению*. *ke 'pi* *некоторые*. *sarvaḥ ko 'pi* *всякий, кто бы то ни был* [118,24]. *ko 'pyekaḥ puruṣaḥ* *некий человек* [111,13]. *apūrvaḥ ko'pi* *доселе совершенно неизвестный, совершенно необычный* [164,17]. [165,32]. [176,36].
   <sub>attested</sub>
 
-**e)** — e〉 mit *vā* und vorangehendem *ya* ein beliebiger nur [M. 2,24].
+**e)** — e〉 mit *vā* und vorangehendem *ya* ein beliebiger nur [M. 2,24](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,24).
 
-- **RU:** — e〉 с *vā* и предшествующим *ya* *любой, какой угодно* только [M. 2,24].
+- **RU:** — e〉 с *vā* и предшествующим *ya* *любой, какой угодно* только [M. 2,24](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,24).
   <sub>attested</sub>
 
 **PW)** **2.** *ka*¦
@@ -1081,9 +1081,9 @@ Z. 5. fg. die Stelle
 - **RU:** — α〉 Prajāpati'а или некоего Prajāpati.
   <sub>attested</sub>
 
-**β)** — β〉 Brahmanʼs [Spr. 7804].
+**β)** — β〉 Brahmanʼs [Spr. 7804](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7804).
 
-- **RU:** — β〉 Brahman'а [Spr. 7804].
+- **RU:** — β〉 Brahman'а [Spr. 7804](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7804).
   <sub>attested</sub>
 
 **γ)** — γ〉 Dakṣaʼs.
@@ -1176,14 +1176,14 @@ Z. 5. fg. die Stelle
 - **RU:** — a〉 радость, блаженство.
   <sub>lexicographic</sub>
 
-**b)** — b〉 Wasser [MAITR. S. 1,10,10]. [Spr. 7840].
+**b)** — b〉 Wasser [MAITR. S. 1,10,10]. [Spr. 7840](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7840).
 
-- **RU:** — b〉 вода [MAITR. S. 1,10,10]. [Spr. 7840].
+- **RU:** — b〉 вода [MAITR. S. 1,10,10]. [Spr. 7840](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7840).
   <sub>attested</sub>
 
-**PWG-frag)** — c〉 Kopf [Spr. 7840].
+**PWG-frag)** — c〉 Kopf [Spr. 7840](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7840).
 
-- **RU:** — в) голова [Spr. 7840].
+- **RU:** — в) голова [Spr. 7840](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7840).
   <sub>attested</sub>
 
 **PW-1)** {{Lbody=33306}}
@@ -1206,14 +1206,14 @@ Z. 5. fg. die Stelle
 - **RU:** {{Lbody=78343}}
   <sub>attested</sub>
 
-**PW-5.1)** **1.** *ka*¦ mit *cid* und *cana* II. Bemerkensworth ist die Verbindung *na te kaściddaśarathastvaṃ ca tasya na kaścana* so v. a. du und Daśaratha haben Nichts mit einander zu thun [R. 2,108,10].
+**PW-5.1)** **1.** *ka*¦ mit *cid* und *cana* II. Bemerkensworth ist die Verbindung *na te kaściddaśarathastvaṃ ca tasya na kaścana* so v. a. du und Daśaratha haben Nichts mit einander zu thun [R. 2,108,10](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,108,10).
 
-- **RU:** **1.** *ka* ¦ с *cid* и *cana* II. Примечательно сочетание *na te kaściddaśarathastvaṃ ca tasya na kaścana*, так v. a. ты и Daśaratha не имеют друг с другом ничего общего [R. 2,108,10].
+- **RU:** **1.** *ka* ¦ с *cid* и *cana* II. Примечательно сочетание *na te kaściddaśarathastvaṃ ca tasya na kaścana*, так v. a. ты и Daśaratha не имеют друг с другом ничего общего [R. 2,108,10](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,108,10).
   <sub>attested</sub>
 
-**SCH-add-1)** 1. ka¦ mit cid und cana. Bemerkenswert ist die Verbindung na te kaścid Daśarathas tvaṃ ca tasya na kaścana so v.a. du und Daśaratha haben nichts miteinander zu tun, [R. 2,108,10.]
+**SCH-add-1)** 1. ka¦ mit cid und cana. Bemerkenswert ist die Verbindung na te kaścid Daśarathas tvaṃ ca tasya na kaścana so v.a. du und Daśaratha haben nichts miteinander zu tun, [R. 2,108,10.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,108,10)
 
-- **RU:** 1. ka ¦ с cid и cana. Примечательно сочетание na te kaścid Daśarathas tvaṃ ca tasya na kaścana, то есть примерно «ты и Дашаратха не имеют друг с другом ничего общего», [R. 2,108,10.]
+- **RU:** 1. ka ¦ с cid и cana. Примечательно сочетание na te kaścid Daśarathas tvaṃ ca tasya na kaścana, то есть примерно «ты и Дашаратха не имеют друг с другом ничего общего», [R. 2,108,10.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,108,10)
   <sub>attested</sub>
 
 **SCH-add-2a)** ka¦ m. = *Yama, [Rasas. 4]a (in kapālin = kād Yamān mṛtyoḥ pālayatīti mṛtyuṃjayaḥ).
@@ -1231,9 +1231,9 @@ Z. 5. fg. die Stelle
 - **RU:** — ˚волосы, [Vās. 77,2.] — вода, тоже [Śrīk. 19,23.] — голова, тоже [Yudh. 4,69.]
   <sub>lexicographic</sub>
 
-**PWKVN-1)** **1.** *ka*¦ mit *cid* und *cana* II. Bemerkensworth ist die Verbindung *na te kaściddaśarathastvaṃ ca tasya na kaścana* so v. a. du und Daśaratha haben Nichts mit einander zu thun [R. 2,108,10].
+**PWKVN-1)** **1.** *ka*¦ mit *cid* und *cana* II. Bemerkensworth ist die Verbindung *na te kaściddaśarathastvaṃ ca tasya na kaścana* so v. a. du und Daśaratha haben Nichts mit einander zu thun [R. 2,108,10](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,108,10).
 
-- **RU:** **1.** *ka* ¦ с *cid* и *cana* II. Примечательно сочетание *na te kaściddaśarathastvaṃ ca tasya na kaścana*, так v. a. ты и Daśaratha не имеют друг с другом ничего общего [R. 2,108,10].
+- **RU:** **1.** *ka* ¦ с *cid* и *cana* II. Примечательно сочетание *na te kaściddaśarathastvaṃ ca tasya na kaścana*, так v. a. ты и Daśaratha не имеют друг с другом ничего общего [R. 2,108,10](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,108,10).
   <sub>attested</sub>
 
 **NWS-1)** *ká* [Gen, unsp] Subst m N of a king. Lex(MW). n hair, a head of hair. Lex(MW)

@@ -9,8 +9,8 @@
 **1.1)** — 1〉 Etwas gewinnen, ersiegen, erbeuten (im Kampfe oder Spiele), erwerben, sich (sibi) unterwerfen, erobern.
 - **EN:** — 1〉 to win, gain by fighting, capture (something) (in battle or in play), to acquire, subdue (to oneself, sibi), conquer.
 
-**1.2)** — 2〉 besiegen (im Kampfe, Spiele, Process). *jitatara* [MBH. 10,10,13]. überwinden, -treffen, -flügeln.
-- **EN:** — 2〉 to defeat (in battle, in play, in a lawsuit). *jitatara* [MBH. 10,10,13]. to overcome, to outdo, to outstrip.
+**1.2)** — 2〉 besiegen (im Kampfe, Spiele, Process). *jitatara* [MBH. 10,10,13](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?10,10,13). überwinden, -treffen, -flügeln.
+- **EN:** — 2〉 to defeat (in battle, in play, in a lawsuit). *jitatara* [MBH. 10,10,13](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?10,10,13). to overcome, to outdo, to outstrip.
 
 **1.3)** — 3〉 die Sinne, Leidenschaften, Leiden, Krankheiten u. s. w. besiegen, überwinden, abwenden, ihrer Herr werden. *pipāsām* dem Durst stillen, *vivādān* Streit aufgeben, — vermeiden.
 - **EN:** — 3〉 the senses, passions, sufferings, diseases u. s. w. to conquer, overcome, avert, become master of them. *pipāsām* to quench one's thirst, *vivādān* to give up — avoid — a quarrel.
@@ -30,11 +30,11 @@
 **caus-header)** — Caus.
 - **EN:** — Caus.
 
-**caus.1)** — 1〉 *jāpayati* Jmd Etwas gewinnen machen, mit doppeltem Acc. *ajījapata* Med. [ŚAT. BR. 5,1,5,11.] [12].
-- **EN:** — 1〉 *jāpayati* to cause someone to win something, with a double Acc. *ajījapata* Med. [ŚAT. BR. 5,1,5,11.] [12].
+**caus.1)** — 1〉 *jāpayati* Jmd Etwas gewinnen machen, mit doppeltem Acc. *ajījapata* Med. [ŚAT. BR. 5,1,5,11.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?5,1,5,11) [12](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?5,1,5,12).
+- **EN:** — 1〉 *jāpayati* to cause someone to win something, with a double Acc. *ajījapata* Med. [ŚAT. BR. 5,1,5,11.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?5,1,5,11) [12](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?5,1,5,12).
 
-**caus.2)** — 2〉 Aor. *ajījayat* in der Bed. besiegen [MBH. 7,66,6].
-- **EN:** — 2〉 Aor. *ajījayat* in the Bed. to defeat [MBH. 7,66,6].
+**caus.2)** — 2〉 Aor. *ajījayat* in der Bed. besiegen [MBH. 7,66,6](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?7,66,6).
+- **EN:** — 2〉 Aor. *ajījayat* in the Bed. to defeat [MBH. 7,66,6](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?7,66,6).
 
 **des)** — Desid. *jigīṣati, ˚te* gewinnen —, erlangen —, erobern —, besiegen —, siegen wollen, auf Beute ausgehen.
 - **EN:** — Desid. *jigīṣati, ˚te* to wish to win —, to obtain —, to conquer —, to defeat —, to be victorious, to go after prey.
@@ -105,8 +105,8 @@
 **upa.1)** — 1〉 erwerben, gewinnen, unterwerfen.
 - **EN:** — 1〉 to acquire, to win, to subdue.
 
-**upa.2)** — 2〉 siegreich sein [TBR. 2,4,2,7].
-- **EN:** — 2〉 to be victorious [TBR. 2,4,2,7].
+**upa.2)** — 2〉 siegreich sein [TBR. 2,4,2,7](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?2,4,2,7).
+- **EN:** — 2〉 to be victorious [TBR. 2,4,2,7](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?2,4,2,7).
 
 **upa.caus)** — Caus.
 - **EN:** — Caus.
@@ -156,8 +156,8 @@
 **parā_ji_pass_hdr)** — Mit *parā* gewöhnlich Med.
 - **EN:** — With *parā* usually Med.
 
-**parā.pass.1)** — 1〉 Etwas verlieren, um Etwas gebracht werden; mit Acc. [MBH. 2,65,30].
-- **EN:** — 1〉 to lose something, to be deprived of something; with Acc. [MBH. 2,65,30].
+**parā.pass.1)** — 1〉 Etwas verlieren, um Etwas gebracht werden; mit Acc. [MBH. 2,65,30](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?2,65,30).
+- **EN:** — 1〉 to lose something, to be deprived of something; with Acc. [MBH. 2,65,30](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?2,65,30).
 
 **parā.pass.2)** — 2〉 besiegt werden, unterliegen. *parājita*.
 - **EN:** — 2〉 to be defeated, to succumb. *parājita*.
@@ -192,8 +192,8 @@
 **sam.1)** — 1〉 gewinnen, ersiegen, erobern.
 - **EN:** — 1〉 to win, gain by conquest, conquer.
 
-**sam.2)** — 2〉 besiegen, überwinden (im Kampfe oder Spiele), übertreffen [292,18]. [Spr. 7686].
-- **EN:** — 2〉 to defeat, overcome (in battle or in play), to surpass [292,18]. [Spr. 7686].
+**sam.2)** — 2〉 besiegen, überwinden (im Kampfe oder Spiele), übertreffen [292,18]. [Spr. 7686](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7686).
+- **EN:** — 2〉 to defeat, overcome (in battle or in play), to surpass [292,18]. [Spr. 7686](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7686).
 
 **sam.3)** — 3〉 die Sinne, den Geist besiegen, Heer werden über. *vijitāsana* _Adj._ der mit dem Sitz bald fertig geworden ist, so v. a. dem es einerlei ist, worauf er sitzt.
 - **EN:** — 3〉 the senses, the mind, to conquer, to become master over. *vijitāsana* _Adj._ one who has soon mastered his seat, thus v. a. to whom it is all the same what he sits on.
@@ -216,8 +216,8 @@
 **sam.9)** — 9〉 dem Siege entgegen gehen, siegen wollen.
 - **EN:** — 9〉 to go to meet victory, to wish to be victorious.
 
-**sam.caus)** — Caus. Aor. *vyajījayat* in der Bed. erobern [MBH. 7,62,9].
-- **EN:** — Caus. Aor. *vyajījayat* in the Bed. to conquer [MBH. 7,62,9].
+**sam.caus)** — Caus. Aor. *vyajījayat* in der Bed. erobern [MBH. 7,62,9](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?7,62,9).
+- **EN:** — Caus. Aor. *vyajījayat* in the Bed. to conquer [MBH. 7,62,9](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?7,62,9).
 
 **sam.des_hdr)** — Desid. gewöhnlich Med.
 - **EN:** — Desid. usually Med.
@@ -258,14 +258,14 @@
 **3.2)** — 2〉 _m._ ein Piśāca.
 - **EN:** — 2〉 _m._ a Piśāca.
 
-**1')** **1.** √*ji*¦ Caus. *ajījipata* ihr habt gewinnen lassen [TS. 1,7,8,4].
-- **EN:** **1.** √*ji*¦ Caus. *ajījipata* 'you have let (them) win' [TS. 1,7,8,4].
+**1')** **1.** √*ji*¦ Caus. *ajījipata* ihr habt gewinnen lassen [TS. 1,7,8,4](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?1,7,8,4).
+- **EN:** **1.** √*ji*¦ Caus. *ajījipata* 'you have let (them) win' [TS. 1,7,8,4](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?1,7,8,4).
 
-**1'')** **1.** √*ji*¦ mit *apa* Act. auch abgewinnen; mit *punar* wiedererobern [TS. 6,3,1,1].
-- **EN:** **1.** √*ji*¦ with *apa* Act. also to win from; with *punar* to reconquer [TS. 6,3,1,1].
+**1'')** **1.** √*ji*¦ mit *apa* Act. auch abgewinnen; mit *punar* wiedererobern [TS. 6,3,1,1](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?6,3,1,1).
+- **EN:** **1.** √*ji*¦ with *apa* Act. also to win from; with *punar* to reconquer [TS. 6,3,1,1](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?6,3,1,1).
 
-**corr.hdr)** **1.** *ji*, *jigivaṃs*¦ [TS. 1,7,8,4]. — Caus. II. 3. Z. 2. ist „Med.“ zu streichen.
-- **EN:** **1.** *ji*, *jigivaṃs*¦ [TS. 1,7,8,4]. — Caus. II. 3, line 2: „Med.“ is to be deleted.
+**corr.hdr)** **1.** *ji*, *jigivaṃs*¦ [TS. 1,7,8,4](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?1,7,8,4). — Caus. II. 3. Z. 2. ist „Med.“ zu streichen.
+- **EN:** **1.** *ji*, *jigivaṃs*¦ [TS. 1,7,8,4](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?1,7,8,4). — Caus. II. 3, line 2: „Med.“ is to be deleted.
 
 **corr.1)** — Mit *apa* II. 4.
 - **EN:** — With *apa* II. 4.

@@ -98,8 +98,8 @@
 **5f)** — f〉 unvollständig, mangelhaft, — in Bezug auf (*˚tas*), ungenügend, fehlend, mangelnd, unterblieben. *hīnasvara* _Adj._ so v. a. lautlos. *hīna˚* _Adv._ ungenügend, nicht ganz.
 - **EN:** — f) incomplete, deficient, — with regard to (*˚tas*), insufficient, missing, lacking, omitted. *hīnasvara* _Adj._ so v. a. 'soundless'. *hīna˚* _Adv._ 'insufficient, not whole'.
 
-**5g)** — g〉 ermangelnd, ohne — seiend, beraubt —, frei von (Instr., Abl. Loc., Acc. oder im Comp. vorangehend). *śāktihīnatara* [R. ed. Bomb. 3,30,2].
-- **EN:** — g) lacking, being without —, deprived of —, free from (Instr., Abl. Loc., Acc. or preceding in the Comp.). *śāktihīnatara* [R. ed. Bomb. 3,30,2].
+**5g)** — g〉 ermangelnd, ohne — seiend, beraubt —, frei von (Instr., Abl. Loc., Acc. oder im Comp. vorangehend). *śāktihīnatara* [R. ed. Bomb. 3,30,2](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,30,2).
+- **EN:** — g) lacking, being without —, deprived of —, free from (Instr., Abl. Loc., Acc. or preceding in the Comp.). *śāktihīnatara* [R. ed. Bomb. 3,30,2](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,30,2).
 
 **6)** — 6〉 *jahita* verstossen, verlassen [ĀPAST. ŚR. 9,16,7].
 - **EN:** — 6) *jahita* cast out, abandoned [ĀPAST. ŚR. 9,16,7].
@@ -182,11 +182,11 @@
 **a4a)** — a〉 zurückbleiben, so v. a. das Ziel nicht erreichen.
 - **EN:** — a) to remain behind, so v. a. 'not to reach the goal'.
 
-**a4b)** — b〉 abnehmen, geringer werden. *tejaśca na te tenāpahīyate* und dein Machtglanz wird durch ihn nicht geringer, so v. a. dein M. kann sich mit dem seinigen messen [R. ed. Bomb. 4,66,6].
-- **EN:** — b) to decrease, diminish. *tejaśca na te tenāpahīyate* 'and your power and splendour is not diminished by him', so v. a. 'your M. can match itself with his' [R. ed. Bomb. 4,66,6].
+**a4b)** — b〉 abnehmen, geringer werden. *tejaśca na te tenāpahīyate* und dein Machtglanz wird durch ihn nicht geringer, so v. a. dein M. kann sich mit dem seinigen messen [R. ed. Bomb. 4,66,6](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,66,6).
+- **EN:** — b) to decrease, diminish. *tejaśca na te tenāpahīyate* 'and your power and splendour is not diminished by him', so v. a. 'your M. can match itself with his' [R. ed. Bomb. 4,66,6](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,66,6).
 
-**ud)** — Mit *vyapa* verlassen, aufgeben (nur *˚hāya*) [HARIV. 1,17,17].
-- **EN:** — With *vyapa* to leave, give up (only *˚hāya*) [HARIV. 1,17,17].
+**ud)** — Mit *vyapa* verlassen, aufgeben (nur *˚hāya*) [HARIV. 1,17,17](https://sanskrit-lexicon-scans.github.io/hariv?1).
+- **EN:** — With *vyapa* to leave, give up (only *˚hāya*) [HARIV. 1,17,17](https://sanskrit-lexicon-scans.github.io/hariv?1).
 
 **upa)** — Mit *api*, *apihīna* (?) [MAITR. S. 4,2,11 (34,18)].
 - **EN:** — With *api*, *apihīna* (?) [MAITR. S. 4,2,11 (34,18)].
@@ -224,8 +224,8 @@
 **pari1)** — Mit *samava* (nur *˚hāya*) verlassen, meiden.
 - **EN:** — With *samava* (only *˚hāya*) to leave, avoid.
 
-**pari2)** — Mit *ā* scheinbar [RĀJAT. 4,654], da *kāṅkṣitāpagamā jahuḥ* die richtige Lesart ist.
-- **EN:** — With *ā* apparently [RĀJAT. 4,654], since *kāṅkṣitāpagamā jahuḥ* is the correct reading.
+**pari2)** — Mit *ā* scheinbar [RĀJAT. 4,654](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,654), da *kāṅkṣitāpagamā jahuḥ* die richtige Lesart ist.
+- **EN:** — With *ā* apparently [RĀJAT. 4,654](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,654), since *kāṅkṣitāpagamā jahuḥ* is the correct reading.
 
 **pari3-intro)** — Mit *apā* (metrisch für *apa*), *˚hāya*
 - **EN:** — With *apā* (metrically for *apa*), *˚hāya*
@@ -239,8 +239,8 @@
 **pari3c)** — 3〉 mit Ausnahme von.
 - **EN:** — 3) with the exception of.
 
-**pari4)** — Mit *samud* scheinbar [MBH. 8,2611], da hier *samujjahruḥ* die richtige Lesart ist.
-- **EN:** — With *samud* apparently [MBH. 8,2611], since here *samujjahruḥ* is the correct reading.
+**pari4)** — Mit *samud* scheinbar [MBH. 8,2611](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.2611), da hier *samujjahruḥ* die richtige Lesart ist.
+- **EN:** — With *samud* apparently [MBH. 8,2611](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.2611), since here *samujjahruḥ* is the correct reading.
 
 **pari5)** — Mit *upa* Pass. abnehmen, sich verringern.
 - **EN:** — With *upa* Pass. to decrease, diminish.
@@ -257,8 +257,8 @@
 **pra1b)** — b〉 kommen um (Instr.) [JĀTAKAM. 21,30].
 - **EN:** — b) to come to lose (Instr.) [JĀTAKAM. 21,30].
 
-**pra2)** — 2〉 *nihīna* niedrigen Standes, gemeiner Herkunft, gemein [MBH. 5,133,27.] [134,1]. *˚tara* geringer, schlechter [ĀPAST. 2,5,5].
-- **EN:** — 2) *nihīna* of low rank, common origin, common [MBH. 5,133,27.] [134,1]. *˚tara* 'lesser, worse' [ĀPAST. 2,5,5].
+**pra2)** — 2〉 *nihīna* niedrigen Standes, gemeiner Herkunft, gemein [MBH. 5,133,27.](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?5,133,27) [134,1](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?5,134,1). *˚tara* geringer, schlechter [ĀPAST. 2,5,5].
+- **EN:** — 2) *nihīna* of low rank, common origin, common [MBH. 5,133,27.](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?5,133,27) [134,1](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?5,134,1). *˚tara* 'lesser, worse' [ĀPAST. 2,5,5].
 
 **pra3)** — Mit *nis* in *anirhāṇarca* [Nachtr. 3].
 - **EN:** — With *nis* in *anirhāṇarca* [Nachtr. 3].

@@ -9,10 +9,10 @@
 - **EN:** *gam* with *abhyud* 1) *abhyudgata* risen (sun) [VAJRACCH. 32,17].
   <sub>attested</sub>
 
-**nis-zukommen)** *gam*¦ mit *abhi* Caus. auch zukommen lassen [SĀY.] zu [ṚV. 9,1,4]. — Mit *nis* Caus. auch verlieren, einbüssen [CAMPAKA 396]. [484].
+**nis-zukommen)** *gam*¦ mit *abhi* Caus. auch zukommen lassen [SĀY.] zu [ṚV. 9,1,4](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.001.html#rv09.001.04). — Mit *nis* Caus. auch verlieren, einbüssen [CAMPAKA 396]. [484].
 
-- **RU:** *gam*¦ с *abhi* Caus. также давать причитаться [SĀY.] к [ṚV. 9,1,4]. — С *nis* Caus. также терять, лишаться [CAMPAKA 396]. [484].
-- **EN:** *gam* with *abhi* Caus. also to let accrue to, grant [SĀY.] to [ṚV. 9,1,4]. — With *nis* Caus. also to lose, forfeit [CAMPAKA 396]. [484].
+- **RU:** *gam*¦ с *abhi* Caus. также давать причитаться [SĀY.] к [ṚV. 9,1,4](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.001.html#rv09.001.04). — С *nis* Caus. также терять, лишаться [CAMPAKA 396]. [484].
+- **EN:** *gam* with *abhi* Caus. also to let accrue to, grant [SĀY.] to [ṚV. 9,1,4](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.001.html#rv09.001.04). — With *nis* Caus. also to lose, forfeit [CAMPAKA 396]. [484].
   <sub>attested</sub>
 
 **upanis-block)** *gam*¦ mit *abhi* Caus. II. 5. — Mit *ā* II. *āgamya* Absol. so v. a. für, behufs; mit Acc. [DIVYĀVAD. 95,10]. mit Gen. [405,10]. — Mit *abhyud* II. 3. — Mit *nis* Caus. II. 5. — Mit *upanis* hinausgehen zu (Acc.) [JĀTAKAM. 31].

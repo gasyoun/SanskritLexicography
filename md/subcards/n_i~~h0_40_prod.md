@@ -4,13 +4,13 @@
 
 
 **1)** — *prod* hinaufbringen, erheben, emporheben: *dharādharaṃ pronnīyamānāvanimagradaṃṣṭrayā*
-[BHĀG. P. 3,18,2.] *guṇairudāraiḥ saṃyuktānpronnayenmadhyamādhamān*
+[BHĀG. P. 3,18,2.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,18,2) *guṇairudāraiḥ saṃyuktānpronnayenmadhyamādhamān*
 [KĀM. NĪTIS. 5,69.]
 
 - **RU:** — *prod* доставлять наверх, возвышать, поднимать: *dharādharaṃ pronnīyamānāvanimagradaṃṣṭrayā*
-[BHĀG. P. 3,18,2.] *guṇairudāraiḥ saṃyuktānpronnayenmadhyamādhamān*
+[BHĀG. P. 3,18,2.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,18,2) *guṇairudāraiḥ saṃyuktānpronnayenmadhyamādhamān*
 [KĀM. NĪTIS. 5,69.]
 - **EN:** — *prod* to bring upward, to raise, to lift up: *dharādharaṃ pronnīyamānāvanimagradaṃṣṭrayā*
-[BHĀG. P. 3,18,2.] *guṇairudāraiḥ saṃyuktānpronnayenmadhyamādhamān*
+[BHĀG. P. 3,18,2.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,18,2) *guṇairudāraiḥ saṃyuktānpronnayenmadhyamādhamān*
 [KĀM. NĪTIS. 5,69.]
   <sub>attested</sub>

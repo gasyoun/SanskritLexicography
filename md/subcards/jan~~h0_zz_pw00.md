@@ -48,10 +48,10 @@
 - **EN:** — a) to be engendered —, be born —, be brought forth, to grow, to arise.
   <sub>attested</sub>
 
-**2b)** — b〉 geboren werden als, von Geburt oder Natur sein; mit doppeltem Nom. [51,9]. [Spr. 5643].
+**2b)** — b〉 geboren werden als, von Geburt oder Natur sein; mit doppeltem Nom. [51,9]. [Spr. 5643](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?5643).
 
-- **RU:** — b〉 рождаться как, быть таковым от рождения или от природы; с двойным Nom. [51,9]. [Spr. 5643].
-- **EN:** — b) to be born as, to be by birth or nature; with double Nom. [51,9]. [Spr. 5643].
+- **RU:** — b〉 рождаться как, быть таковым от рождения или от природы; с двойным Nom. [51,9]. [Spr. 5643](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?5643).
+- **EN:** — b) to be born as, to be by birth or nature; with double Nom. [51,9]. [Spr. 5643](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?5643).
   <sub>attested</sub>
 
 **2c)** — c〉 geboren werden —, von der Geburt an bestimmt sein zu (Acc.).
@@ -114,10 +114,10 @@
 - **EN:** — β) arisen —, showing itself on.
   <sub>attested</sub>
 
-**3b)** — b〉 geboren —, von Natur bestimmt zu (Dat.) [ṚV. 4,20,6. 9,94,4].
+**3b)** — b〉 geboren —, von Natur bestimmt zu (Dat.) [ṚV. 4,20,6. 9,94,4](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.020.html#rv04.020.06).
 
-- **RU:** — b〉 рождённый —, предназначенный от природы к (Dat.) [ṚV. 4,20,6. 9,94,4].
-- **EN:** — b) born —, destined by nature for (Dat.) [ṚV. 4,20,6. 9,94,4].
+- **RU:** — b〉 рождённый —, предназначенный от природы к (Dat.) [ṚV. 4,20,6. 9,94,4](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.020.html#rv04.020.06).
+- **EN:** — b) born —, destined by nature for (Dat.) [ṚV. 4,20,6. 9,94,4](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.020.html#rv04.020.06).
   <sub>attested</sub>
 
 **3c)** — c〉 geworden. _n._ impers. mit doppeltem Instr.
@@ -126,10 +126,10 @@
 - **EN:** — c) become. _n._ impers. with double Instr.
   <sub>attested</sub>
 
-**3d)** — d〉 geworden —, gereichend zu (Dat.) [Spr. 2932].
+**3d)** — d〉 geworden —, gereichend zu (Dat.) [Spr. 2932](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2932).
 
-- **RU:** — d〉 ставший —, послуживший к (Dat.) [Spr. 2932].
-- **EN:** — d) become —, redounding to (Dat.) [Spr. 2932].
+- **RU:** — d〉 ставший —, послуживший к (Dat.) [Spr. 2932](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2932).
+- **EN:** — d) become —, redounding to (Dat.) [Spr. 2932](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2932).
   <sub>attested</sub>
 
 **3e)** — e〉 erfolgt, eingetreten, geschehen, verstrichen (Zeit [Ind. St. 15,314]).
@@ -210,10 +210,10 @@
 - **EN:** — 3) *anujāta* one who has undergone the second birth, d. i. who has been received into the doctrine.
   <sub>attested</sub>
 
-**preverb-2-4)** — 4〉 [MBH. 13,48,19] ist in Unordnung; vgl. [M. 10,31.] [32].
+**preverb-2-4)** — 4〉 [MBH. 13,48,19](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?13,48,19) ist in Unordnung; vgl. [M. 10,31.](https://sanskrit-lexicon-scans.github.io/manu/index.html?10,31) [32](https://sanskrit-lexicon-scans.github.io/manu/index.html?10,32).
 
-- **RU:** — 4〉 [MBH. 13,48,19] находится в беспорядке; vgl. [M. 10,31.] [32].
-- **EN:** — 4) [MBH. 13,48,19] is in disorder; vgl. [M. 10,31.] [32].
+- **RU:** — 4〉 [MBH. 13,48,19](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?13,48,19) находится в беспорядке; vgl. [M. 10,31.](https://sanskrit-lexicon-scans.github.io/manu/index.html?10,31) [32](https://sanskrit-lexicon-scans.github.io/manu/index.html?10,32).
+- **EN:** — 4) [MBH. 13,48,19](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?13,48,19) is in disorder; vgl. [M. 10,31.](https://sanskrit-lexicon-scans.github.io/manu/index.html?10,31) [32](https://sanskrit-lexicon-scans.github.io/manu/index.html?10,32).
   <sub>attested</sub>
 
 **preverb-3)** — Mit *samanu* Jmd (Acc.) ähnlich geboren werden.
@@ -246,10 +246,10 @@
 - **EN:** — 1) to be born for something or someone, to be destined from birth for, to be entitled by birth to —, — to have claims on (Acc.). *˚jāta* with act. Bed.
   <sub>attested</sub>
 
-**preverb-6-2)** — 2〉 geboren werden gemäss, — entsprechend; mit Acc. [Spr. 3338].
+**preverb-6-2)** — 2〉 geboren werden gemäss, — entsprechend; mit Acc. [Spr. 3338](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3338).
 
-- **RU:** — 2〉 рождаться сообразно, — соответственно; с Acc. [Spr. 3338].
-- **EN:** — 2) to be born according to —, corresponding to; with Acc. [Spr. 3338].
+- **RU:** — 2〉 рождаться сообразно, — соответственно; с Acc. [Spr. 3338](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3338).
+- **EN:** — 2) to be born according to —, corresponding to; with Acc. [Spr. 3338](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3338).
   <sub>attested</sub>
 
 **preverb-6-3)** — 3〉 zu Etwas (Nom. des Partic. fut. pass.) da sein.
@@ -321,10 +321,10 @@
 - **EN:** — With *samabhi*, to arise.
   <sub>attested</sub>
 
-**preverb-9)** — Mit *ava* falsche Lesart; vgl. [Spr. 5960].
+**preverb-9)** — Mit *ava* falsche Lesart; vgl. [Spr. 5960](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?5960).
 
-- **RU:** — С *ava* ложное чтение; vgl. [Spr. 5960].
-- **EN:** — With *ava*, false reading; vgl. [Spr. 5960].
+- **RU:** — С *ava* ложное чтение; vgl. [Spr. 5960](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?5960).
+- **EN:** — With *ava*, false reading; vgl. [Spr. 5960](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?5960).
   <sub>attested</sub>
 
 **preverb-10)** — Mit *ā* geboren werden, entstehen.
@@ -405,10 +405,10 @@
 - **EN:** — 2) to arise as a consequence.
   <sub>attested</sub>
 
-**preverb-15-3)** — 3〉 geboren werden, entstehen, sich einstellen, zum Vorschein kommen, sich zeigen [KAP. 5,50]. [Spr. 7222]. *˚jāta* entstanden, zum Vorschein gekommen, sich eingestellt habend.
+**preverb-15-3)** — 3〉 geboren werden, entstehen, sich einstellen, zum Vorschein kommen, sich zeigen [KAP. 5,50]. [Spr. 7222](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7222). *˚jāta* entstanden, zum Vorschein gekommen, sich eingestellt habend.
 
-- **RU:** — 3〉 рождаться, возникать, наступать, появляться на свет, проявляться [KAP. 5,50]. [Spr. 7222]. *˚jāta* возникший, появившийся на свет, наступивший.
-- **EN:** — 3) to be born, to arise, to set in, to come to appear, to show itself [KAP. 5,50]. [Spr. 7222]. *˚jāta* having arisen, having come to appear, having set in.
+- **RU:** — 3〉 рождаться, возникать, наступать, появляться на свет, проявляться [KAP. 5,50]. [Spr. 7222](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7222). *˚jāta* возникший, появившийся на свет, наступивший.
+- **EN:** — 3) to be born, to arise, to set in, to come to appear, to show itself [KAP. 5,50]. [Spr. 7222](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7222). *˚jāta* having arisen, having come to appear, having set in.
   <sub>attested</sub>
 
 **preverb-15-4)** — 4〉 widergeboren werden.
@@ -417,10 +417,10 @@
 - **EN:** — 4) to be born again.
   <sub>attested</sub>
 
-**preverb-15-5)** — 5〉 sein [Spr. 3056]. — *upajātam* [MBH. 9,3482] fehlerhaft für *upayātam*.
+**preverb-15-5)** — 5〉 sein [Spr. 3056](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3056). — *upajātam* [MBH. 9,3482](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.3482) fehlerhaft für *upayātam*.
 
-- **RU:** — 5〉 быть [Spr. 3056]. — *upajātam* [MBH. 9,3482] ошибочно вместо *upayātam*.
-- **EN:** — 5) to be [Spr. 3056]. — *upajātam* [MBH. 9,3482] erroneous for *upayātam*.
+- **RU:** — 5〉 быть [Spr. 3056](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3056). — *upajātam* [MBH. 9,3482](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.3482) ошибочно вместо *upayātam*.
+- **EN:** — 5) to be [Spr. 3056](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3056). — *upajātam* [MBH. 9,3482](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.3482) erroneous for *upayātam*.
   <sub>attested</sub>
 
 **preverb-15-caus-head)** — Caus.
@@ -477,10 +477,10 @@
 - **EN:** — With *pari*, *parijāta*
   <sub>attested</sub>
 
-**preverb-18-1)** — 1〉 erzeugt von (Abl.) [AV. 3,6,1].
+**preverb-18-1)** — 1〉 erzeugt von (Abl.) [AV. 3,6,1](https://sanskrit-lexicon.github.io/avlinks/avhymns/av03.006.html#av03.006.01).
 
-- **RU:** — 1〉 порождённый от (Abl.) [AV. 3,6,1].
-- **EN:** — 1) begotten by (Abl.) [AV. 3,6,1].
+- **RU:** — 1〉 порождённый от (Abl.) [AV. 3,6,1](https://sanskrit-lexicon.github.io/avlinks/avhymns/av03.006.html#av03.006.01).
+- **EN:** — 1) begotten by (Abl.) [AV. 3,6,1](https://sanskrit-lexicon.github.io/avlinks/avhymns/av03.006.html#av03.006.01).
   <sub>attested</sub>
 
 **preverb-18-2)** — 2〉 vollkommen ausgebildet; s. *a˚*.
@@ -567,10 +567,10 @@
 - **EN:** — Desid. from the Caus. *prajijanayiṣati* wishing to cause to become a living being.
   <sub>attested</sub>
 
-**preverb-22-head)** — Mit *anupra* nach Etwas geboren werden. *prajām* so v. a. sich immer weiter und weiter fortpflanzen [BHĀG. P. 3,32,20].
+**preverb-22-head)** — Mit *anupra* nach Etwas geboren werden. *prajām* so v. a. sich immer weiter und weiter fortpflanzen [BHĀG. P. 3,32,20](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,32,20).
 
-- **RU:** — С *anupra* рождаться вслед за чем-л.. *prajām* так v. a. размножаться всё далее и далее [BHĀG. P. 3,32,20].
-- **EN:** — With *anupra*, to be born after something. *prajām* so v. a. to propagate itself ever further and further [BHĀG. P. 3,32,20].
+- **RU:** — С *anupra* рождаться вслед за чем-л.. *prajām* так v. a. размножаться всё далее и далее [BHĀG. P. 3,32,20](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,32,20).
+- **EN:** — With *anupra*, to be born after something. *prajām* so v. a. to propagate itself ever further and further [BHĀG. P. 3,32,20](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,32,20).
   <sub>attested</sub>
 
 **preverb-22-caus)** — Caus. nach Etwas geboren werden lassen.
@@ -585,10 +585,10 @@
 - **EN:** — With *apapra*, *˚jātā* one (f.) who has had a miscarriage.
   <sub>attested</sub>
 
-**preverb-24)** — Mit *abhipra* gebären [ṚV. 5,19,1].
+**preverb-24)** — Mit *abhipra* gebären [ṚV. 5,19,1](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.019.html#rv05.019.01).
 
-- **RU:** — С *abhipra* рождать [ṚV. 5,19,1].
-- **EN:** — With *abhipra*, to bear [ṚV. 5,19,1].
+- **RU:** — С *abhipra* рождать [ṚV. 5,19,1](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.019.html#rv05.019.01).
+- **EN:** — With *abhipra*, to bear [ṚV. 5,19,1](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.019.html#rv05.019.01).
   <sub>attested</sub>
 
 **preverb-25)** — Caus. für Etwas erzeugen.

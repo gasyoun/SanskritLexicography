@@ -26,11 +26,11 @@
 [YOGAŚ. 1,52.]
   <sub>DCS 2662 · attested</sub>
 
-**caus)** — *nis* desid. eine gemeinsame Wohnung beziehen wollen: *yogināṃ prāvṛṣi nirvivikṣatām* [BHĀG. P. 1,5,23.]
+**caus)** — *nis* desid. eine gemeinsame Wohnung beziehen wollen: *yogināṃ prāvṛṣi nirvivikṣatām* [BHĀG. P. 1,5,23.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,5,23)
 
-- **RU:** — *nis* desid. желать поселиться в общем жилище: *yogināṃ prāvṛṣi nirvivikṣatām* [BHĀG. P. 1,5,23.]
+- **RU:** — *nis* desid. желать поселиться в общем жилище: *yogināṃ prāvṛṣi nirvivikṣatām* [BHĀG. P. 1,5,23.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,5,23)
 - **EN:** — *nis* desid. to wish to take up a shared dwelling: *yogināṃ prāvṛṣi nirvivikṣatām*
-[BHĀG. P. 1,5,23.]
+[BHĀG. P. 1,5,23.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,5,23)
   <sub>DCS 2662 · attested</sub>
 
 **ppp)** — *abhipra*, partic. *˚viṣṭa* hereingetreten im Gegens. zu *abhiniḥsṛta* [PAT. a. a. O. 4,81,b.]
@@ -42,16 +42,16 @@
 
 **der1)** — *sam*
  1) mit instr.
-[ṚV. 10,56,1.]
+[ṚV. 10,56,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.056.html#rv10.056.01)
 - **EN:** — *sam*
  1) with instr.
-[ṚV. 10,56,1.]
+[ṚV. 10,56,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.056.html#rv10.056.01)
 
-**der2)** — 2) [ṚV. 10,55,2.]
+**der2)** — 2) [ṚV. 10,55,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.055.html#rv10.055.02)
 
-- **RU:** — 2) [ṚV. 10,55,2.]
+- **RU:** — 2) [ṚV. 10,55,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.055.html#rv10.055.02)
 - **EN:** — 2)
-[ṚV. 10,55,2.]
+[ṚV. 10,55,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.055.html#rv10.055.02)
   <sub>DCS 2662 · attested</sub>
 
 **Nachtrag-sep1)** — *abhini*
@@ -69,7 +69,7 @@
 - **RU:** — *sam*
   <sub>DCS 2662 · attested</sub>
 
-**Nachtrag-mit-T23-sense1)** 1) mit instr. [ṚV. 10,56,1.]
+**Nachtrag-mit-T23-sense1)** 1) mit instr. [ṚV. 10,56,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.056.html#rv10.056.01)
 
-- **RU:** 1) с instr. [ṚV. 10,56,1.]
+- **RU:** 1) с instr. [ṚV. 10,56,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.056.html#rv10.056.01)
   <sub>DCS 2662 · attested</sub>

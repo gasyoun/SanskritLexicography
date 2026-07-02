@@ -17,10 +17,10 @@
 
 **6)** — 6)
 Z. 10. fg. *upahita*
-[MBH. 12,5219] bedeutet ein secundäres Gut; s. oben u. *upahita* .
+[MBH. 12,5219](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.5219) bedeutet ein secundäres Gut; s. oben u. *upahita* .
 - **EN:** — 6)
 Z. 10. fg. *upahita*
-[MBH. 12,5219] means a secondary good; s. above u. *upahita* .
+[MBH. 12,5219](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.5219) means a secondary good; s. above u. *upahita* .
 
 **7)** — 7)
 [NĪLAK.] erklärt *upahita* an der ersten Stelle durch *upajapta*, an der zweiten durch *vañcita* .

@@ -104,10 +104,10 @@
 - **EN:** — 13〉 to manifest one's favour, one's friendship towards someone (Acc.).
   <sub>attested</sub>
 
-**with T12 — sense 14)** — 14〉 begehren, wünschen. *manasā yatpraṇītam* was das Herz begehrt [MĀN. GṚHY. 2,13]. *manaḥpraṇīta* dass. [MBH. 13,71,19].
+**with T12 — sense 14)** — 14〉 begehren, wünschen. *manasā yatpraṇītam* was das Herz begehrt [MĀN. GṚHY. 2,13]. *manaḥpraṇīta* dass. [MBH. 13,71,19](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?13,71,19).
 
-- **RU:** 14〉 желать, хотеть. *manasā yatpraṇītam* то, чего желает сердце [MĀN. GṚHY. 2,13]. *manaḥpraṇīta* dass. [MBH. 13,71,19].
-- **EN:** — 14〉 to desire, wish. *manasā yatpraṇītam* what the heart desires [MĀN. GṚHY. 2,13]. *manaḥpraṇīta* dass. [MBH. 13,71,19].
+- **RU:** 14〉 желать, хотеть. *manasā yatpraṇītam* то, чего желает сердце [MĀN. GṚHY. 2,13]. *manaḥpraṇīta* dass. [MBH. 13,71,19](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?13,71,19).
+- **EN:** — 14〉 to desire, wish. *manasā yatpraṇītam* what the heart desires [MĀN. GṚHY. 2,13]. *manaḥpraṇīta* dass. [MBH. 13,71,19](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?13,71,19).
   <sub>attested</sub>
 
 **with T12 — desid.)** — Desid. hinführen wollen zu (Dat.).
@@ -226,10 +226,10 @@
 - **EN:** — 9〉 to chastise, punish.
   <sub>attested</sub>
 
-**with T52 — sense 10)** — 10〉 erziehen, unterrichten, unterweisen. *vinīta* unterrichtet, bewandert in (Loc. oder im Comp. vorangehend); wohlerzogen, gesittet, bescheiden (auch von Reden und vom Anzug). *vīnīta* [MBH. 1,5606] fehlerhaft für *vinīta*.
+**with T52 — sense 10)** — 10〉 erziehen, unterrichten, unterweisen. *vinīta* unterrichtet, bewandert in (Loc. oder im Comp. vorangehend); wohlerzogen, gesittet, bescheiden (auch von Reden und vom Anzug). *vīnīta* [MBH. 1,5606](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5606) fehlerhaft für *vinīta*.
 
-- **RU:** 10〉 воспитывать, обучать, наставлять. *vinīta* обученный, сведущий в (Loc. или в предшествующем Comp.); благовоспитанный, благопристойный, скромный (также о речи и одежде). *vīnīta* [MBH. 1,5606] ошибочно вместо *vinīta*.
-- **EN:** — 10〉 to bring up, instruct, teach. *vinīta* instructed, versed in (Loc. or in the preceding Comp.); well-bred, well-mannered, modest (also of speech and attire). *vīnīta* [MBH. 1,5606] erroneously for *vinīta*.
+- **RU:** 10〉 воспитывать, обучать, наставлять. *vinīta* обученный, сведущий в (Loc. или в предшествующем Comp.); благовоспитанный, благопристойный, скромный (также о речи и одежде). *vīnīta* [MBH. 1,5606](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5606) ошибочно вместо *vinīta*.
+- **EN:** — 10〉 to bring up, instruct, teach. *vinīta* instructed, versed in (Loc. or in the preceding Comp.); well-bred, well-mannered, modest (also of speech and attire). *vīnīta* [MBH. 1,5606](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5606) erroneously for *vinīta*.
   <sub>attested</sub>
 
 **with T52 — sense 11)** — 11〉 anleiten —, veranlassen zu (Dat. Infin.).

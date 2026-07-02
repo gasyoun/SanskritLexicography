@@ -10,12 +10,12 @@
   <sub>attested</sub>
 
 **1)** 1) durch Nachrede Abbruch thun, herabsetzen: *mā śriyo 'vavādiṣmeti duravavadaṃ hi śreyasaḥ*
-[AIT. BR. 5,22.]
+[AIT. BR. 5,22.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?5,22)
 
 - **RU:** 1) порочить молвой, умалять: *mā śriyo 'vavādiṣmeti duravavadaṃ hi śreyasaḥ*
-[AIT. BR. 5,22.]
+[AIT. BR. 5,22.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?5,22)
 - **EN:** 1) to damage by disparagement, to depreciate: *mā śriyo 'vavādiṣmeti duravavadaṃ hi śreyasaḥ*
-[AIT. BR. 5,22.]
+[AIT. BR. 5,22.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?5,22)
   <sub>attested</sub>
 
 **2)** — 2) unterweisen: *asmābhirapyanye bodhisattvā avavaditāḥ* (!)

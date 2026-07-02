@@ -4,13 +4,13 @@
 
 
 **1)** 1)
-[KATHĀS. 55,269.]
+[KATHĀS. 55,269.](https://sanskrit-lexicon-scans.github.io/kss/index.html?55,269)
 
 - **RU:** 1)
-[KATHĀS. 55,269.]
+[KATHĀS. 55,269.](https://sanskrit-lexicon-scans.github.io/kss/index.html?55,269)
 - **EN:** — *pratyabhi*
  1)
-[KATHĀS. 55,269.]
+[KATHĀS. 55,269.](https://sanskrit-lexicon-scans.github.io/kss/index.html?55,269)
   <sub>DCS 5059 · attested</sub>
 
 **2)** — Vgl. *pratyabhijñā* .

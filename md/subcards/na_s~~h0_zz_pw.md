@@ -105,11 +105,11 @@
 **comp.vi_2.2)** — 2〉 zu Grunde gehen, zu Nichte werden, vergehen, verloren —, eitel —, wirkungslos sein. *vinaṣṭa* zu Grunde gegangen, verdorben, schlecht geworden, umgekommen, verloren, so v. a. nicht zu retten.
 - **EN:** — 2〉 to be ruined, come to nothing, perish, be lost —, vain —, without effect. *vinaṣṭa* ruined, spoilt, gone bad, perished, lost, thus v. a. beyond saving.
 
-**comp.vi_2.3)** — 3〉 einer Sache (Abl.) verlustig gehen [ṚV. 9,79,1].
-- **EN:** — 3〉 to be deprived of something (Abl.) [ṚV. 9,79,1].
+**comp.vi_2.3)** — 3〉 einer Sache (Abl.) verlustig gehen [ṚV. 9,79,1](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.079.html#rv09.079.01).
+- **EN:** — 3〉 to be deprived of something (Abl.) [ṚV. 9,79,1](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.079.html#rv09.079.01).
 
-**comp.vi_2.4)** — 4〉 zu Grunde richten, umbringen [HARIV. 2,22,44].
-- **EN:** — 4〉 to ruin, kill [HARIV. 2,22,44].
+**comp.vi_2.4)** — 4〉 zu Grunde richten, umbringen [HARIV. 2,22,44](https://sanskrit-lexicon-scans.github.io/hariv?2).
+- **EN:** — 4〉 to ruin, kill [HARIV. 2,22,44](https://sanskrit-lexicon-scans.github.io/hariv?2).
 
 **comp.vi_Caus)** — Caus.
 - **EN:** — Caus.
@@ -192,8 +192,8 @@
 **comp.sam)** — Mit *sam* dass.
 - **EN:** — With *sam* dass.
 
-**intro)** **1.** √*naś*¦ Caus. III. *ausstossen aus der Gemeinde. Vgl. *nāśitasaṃgraha*. Im Aor. abkommen von (Abl.). *mādharmyānnīnaśaḥ pathaḥ* [MBH. 3,52,15] = [R. GORR. 1,24,9].
-- **EN:** **1.** √*naś*¦ Caus. III. *to expel from the community. Vgl. *nāśitasaṃgraha*. In Aor. to deviate from (Abl.). *mādharmyānnīnaśaḥ pathaḥ* [MBH. 3,52,15] = [R. GORR. 1,24,9].
+**intro)** **1.** √*naś*¦ Caus. III. *ausstossen aus der Gemeinde. Vgl. *nāśitasaṃgraha*. Im Aor. abkommen von (Abl.). *mādharmyānnīnaśaḥ pathaḥ* [MBH. 3,52,15](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?3,52,15) = [R. GORR. 1,24,9](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,24,9).
+- **EN:** **1.** √*naś*¦ Caus. III. *to expel from the community. Vgl. *nāśitasaṃgraha*. In Aor. to deviate from (Abl.). *mādharmyānnīnaśaḥ pathaḥ* [MBH. 3,52,15](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?3,52,15) = [R. GORR. 1,24,9](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,24,9).
 
 **comp.apa)** — Mit *pra* III. *mārgapranaṣṭa* vom Wege abgekommen [JĀTAKAM. 6].
 - **EN:** — With *pra* III. *mārgapranaṣṭa* who has strayed from the path [JĀTAKAM. 6].

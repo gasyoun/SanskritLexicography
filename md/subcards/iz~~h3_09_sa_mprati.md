@@ -4,13 +4,13 @@
 
 
 **1)** — *saṃprati* beistimmen, zusagen: *saṃpratīccha me*
-[R. 1,52,13.]
+[R. 1,52,13.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,52,13)
 - **EN:** — *saṃprati* to assent, to consent: *saṃpratīccha me*
-[R. 1,52,13.]
+[R. 1,52,13.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,52,13)
 
 **1))** — *saṃprati* beistimmen, zusagen: *saṃpratīccha me*
-[R. 1,52,13.]
+[R. 1,52,13.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,52,13)
 
 - **RU:** — *saṃprati* соглашаться, давать согласие: *saṃpratīccha me*
-[R. 1,52,13.]
+[R. 1,52,13.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,52,13)
   <sub>attested</sub>

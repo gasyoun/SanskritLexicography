@@ -5,24 +5,24 @@
 
 **1)** — *samava*
  1) zusammenführen, vereinigen: *prāṇā atraiva samavanīyante*
-[ŚAT. BR. 14,7,2,8.] [6,2,12.]
+[ŚAT. BR. 14,7,2,8.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,7,2,8) [6,2,12.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,6,2,12)
 
 - **RU:** — *samava*
  1) сводить вместе, соединять: *prāṇā atraiva samavanīyante*
-[ŚAT. BR. 14,7,2,8.] [6,2,12.]
+[ŚAT. BR. 14,7,2,8.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,7,2,8) [6,2,12.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,6,2,12)
 - **EN:** — *samava*
  1) to bring together, unite: *prāṇā atraiva samavanīyante*
-[ŚAT. BR. 14,7,2,8.] [6,2,12.]
+[ŚAT. BR. 14,7,2,8.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,7,2,8) [6,2,12.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,6,2,12)
   <sub>attested</sub>
 
 **2)** — 2) zusammengiessen
-[AIT. BR. 2,20.] *saṃsravānhotṛcamase samavanayati*
-[30.] [ŚAT. BR. 5,3,4,27.] [3,9,3,30.] [ĀŚV. GṚHY. 4,7.]
+[AIT. BR. 2,20.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?2,20) *saṃsravānhotṛcamase samavanayati*
+[30.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?2,30) [ŚAT. BR. 5,3,4,27.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?5,3,4,27) [3,9,3,30.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,9,3,30) [ĀŚV. GṚHY. 4,7.]
 
 - **RU:** — 2) сливать вместе
-[AIT. BR. 2,20.] *saṃsravānhotṛcamase samavanayati*
-[30.] [ŚAT. BR. 5,3,4,27.] [3,9,3,30.] [ĀŚV. GṚHY. 4,7.]
+[AIT. BR. 2,20.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?2,20) *saṃsravānhotṛcamase samavanayati*
+[30.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?2,30) [ŚAT. BR. 5,3,4,27.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?5,3,4,27) [3,9,3,30.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,9,3,30) [ĀŚV. GṚHY. 4,7.]
 - **EN:** — 2) to pour together
-[AIT. BR. 2,20.] *saṃsravānhotṛcamase samavanayati*
-[30.] [ŚAT. BR. 5,3,4,27.] [3,9,3,30.] [ĀŚV. GṚHY. 4,7.]
+[AIT. BR. 2,20.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?2,20) *saṃsravānhotṛcamase samavanayati*
+[30.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?2,30) [ŚAT. BR. 5,3,4,27.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?5,3,4,27) [3,9,3,30.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,9,3,30) [ĀŚV. GṚHY. 4,7.]
   <sub>attested</sub>

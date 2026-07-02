@@ -4,6 +4,6 @@
 
 
 **1)** — *ativi* hinaus über (ein Maass) vertheilen: *ya ekaśatavidhamatividhatte*
-[ŚAT. BR. 10,2,3,18.]
+[ŚAT. BR. 10,2,3,18.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?10,2,3,18)
 - **EN:** — *ativi* to distribute beyond (a measure): *ya ekaśatavidhamatividhatte*
-[ŚAT. BR. 10,2,3,18.]
+[ŚAT. BR. 10,2,3,18.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?10,2,3,18)

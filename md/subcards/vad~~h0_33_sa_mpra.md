@@ -16,16 +16,16 @@
   <sub>attested</sub>
 
 **1c)** [Ind. St. 8,418.]
-[P. 1,3,48], Sch.
-[VOP. 23,41.] med. sich unterhalten: *saṃpravadante brāhmaṇāḥ* ebend. *saṃpravadamānājjanāt*
-[BHAṬṬ. 8,28.]
+[P. 1,3,48](https://ashtadhyayi.com/sutraani/1/3/48), Sch.
+[VOP. 23,41.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?23,41) med. sich unterhalten: *saṃpravadante brāhmaṇāḥ* ebend. *saṃpravadamānājjanāt*
+[BHAṬṬ. 8,28.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?8,28)
 
 - **RU:** [Ind. St. 8,418.]
-[P. 1,3,48], Sch.
-[VOP. 23,41.] med. беседовать, разговаривать: *saṃpravadante brāhmaṇāḥ* ebend. *saṃpravadamānājjanāt*
-[BHAṬṬ. 8,28.]
+[P. 1,3,48](https://ashtadhyayi.com/sutraani/1/3/48), Sch.
+[VOP. 23,41.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?23,41) med. беседовать, разговаривать: *saṃpravadante brāhmaṇāḥ* ebend. *saṃpravadamānājjanāt*
+[BHAṬṬ. 8,28.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?8,28)
 - **EN:** [Ind. St. 8,418.]
-[P. 1,3,48], Sch.
-[VOP. 23,41.] med. to converse: *saṃpravadante brāhmaṇāḥ* ebend. *saṃpravadamānājjanāt*
-[BHAṬṬ. 8,28.]
+[P. 1,3,48](https://ashtadhyayi.com/sutraani/1/3/48), Sch.
+[VOP. 23,41.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?23,41) med. to converse: *saṃpravadante brāhmaṇāḥ* ebend. *saṃpravadamānājjanāt*
+[BHAṬṬ. 8,28.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?8,28)
   <sub>attested</sub>

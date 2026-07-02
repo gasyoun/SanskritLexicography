@@ -21,14 +21,14 @@
 **2)** — 2) sich unwohl fühlen: *vyādhīyante*
 ([ŚAṂK.]: *duḥkhino bhavanti) prāṇāḥ* im Gegens. zu *ānandino bhavanti*
 [CHĀND. UP. 7,10,1.] *vyāhita* krank
-[ŚAT. BR. 14,8,11,1]; vgl. *vyādhi* .
+[ŚAT. BR. 14,8,11,1](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,8,11,1); vgl. *vyādhi* .
 
 - **RU:** — 2) чувствовать недомогание, хворать: *vyādhīyante*
 ([ŚAṂK.]: *duḥkhino bhavanti) prāṇāḥ* im Gegens. zu *ānandino bhavanti*
 [CHĀND. UP. 7,10,1.] *vyāhita* больной
-[ŚAT. BR. 14,8,11,1]; vgl. *vyādhi* .
+[ŚAT. BR. 14,8,11,1](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,8,11,1); vgl. *vyādhi* .
 - **EN:** — 2) to feel unwell: *vyādhīyante*
 ([ŚAṂK.]: *duḥkhino bhavanti) prāṇāḥ* in Gegens. as *ānandino bhavanti*
 [CHĀND. UP. 7,10,1.] *vyāhita* sick, ill
-[ŚAT. BR. 14,8,11,1]; vgl. *vyādhi* .
+[ŚAT. BR. 14,8,11,1](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,8,11,1); vgl. *vyādhi* .
   <sub>DCS 4861 · attested</sub>

@@ -4,12 +4,12 @@
 
 
 **1)** — *pratipra*, *anye vā vai nidhimaguptaṃ vindanti na vā prati prajānanti*
-[TS. 5,6,6,2.]
+[TS. 5,6,6,2.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?5,6,6,2)
 
 - **RU:** — *pratipra*, *anye vā vai nidhimaguptaṃ vindanti na vā prati prajānanti*
-[TS. 5,6,6,2.]
+[TS. 5,6,6,2.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?5,6,6,2)
 - **EN:** — *pratipra*, *anye vā vai nidhimaguptaṃ vindanti na vā prati prajānanti*
-[TS. 5,6,6,2.]
+[TS. 5,6,6,2.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?5,6,6,2)
   <sub>DCS 5059 · attested</sub>
 
 **2)** — Vgl. *pratiprajñāti* .

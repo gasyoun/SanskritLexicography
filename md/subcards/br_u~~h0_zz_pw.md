@@ -27,10 +27,10 @@
 - **EN:** — 2) Med. (exceptionally also Act.) to call oneself, give oneself out as (Nomin., exceptionally with *iti*).
   <sub>attested</sub>
 
-**3)** — 3〉 Med. für sich bezeichnen, so v. a. wählen [AIT. BR. 3,21,2].
+**3)** — 3〉 Med. für sich bezeichnen, so v. a. wählen [AIT. BR. 3,21,2](https://sanskrit-lexicon-scans.github.io/aitbr_auf/app1?3,21,2).
 
-- **RU:** — 3〉 Med. обозначать для себя, так v. a. избирать, выбирать [AIT. BR. 3,21,2].
-- **EN:** — 3) Med. to designate for oneself, so v. a. to choose [AIT. BR. 3,21,2].
+- **RU:** — 3〉 Med. обозначать для себя, так v. a. избирать, выбирать [AIT. BR. 3,21,2](https://sanskrit-lexicon-scans.github.io/aitbr_auf/app1?3,21,2).
+- **EN:** — 3) Med. to designate for oneself, so v. a. to choose [AIT. BR. 3,21,2](https://sanskrit-lexicon-scans.github.io/aitbr_auf/app1?3,21,2).
   <sub>attested</sub>
 
 **4)** — 4〉 Med. sich selbst erzählen, von selbst fliessen (von einer Erzählung).
@@ -111,10 +111,10 @@
 - **EN:** — 2) to talk over defensively, to avert by speaking.
   <sub>attested</sub>
 
-**apa3)** — Mit *abhi* schmähen [MBH. 3,268,2]. v. l. *ati*
+**apa3)** — Mit *abhi* schmähen [MBH. 3,268,2](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?3,268,2). v. l. *ati*
 
-- **RU:** — С *abhi* поносить, хулить [MBH. 3,268,2]. v. l. *ati*
-- **EN:** — With *abhi* to revile, abuse [MBH. 3,268,2]. v. l. *ati*
+- **RU:** — С *abhi* поносить, хулить [MBH. 3,268,2](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?3,268,2). v. l. *ati*
+- **EN:** — With *abhi* to revile, abuse [MBH. 3,268,2](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?3,268,2). v. l. *ati*
   <sub>attested</sub>
 
 **aabhi)** — Mit *ava* in *anavabrava*
@@ -135,10 +135,10 @@
 - **EN:** — With *pratyā* to answer someone (Acc.). v. l. *prityābravīn* st. *pratyābravīt*
   <sub>attested</sub>
 
-**aa3)** — Mit *ud* Med. entsagen, aufgeben; mit Acc. oder Gen. [TBR. 1,7,10,6]. [ŚAT. BR. 5,2,2,4]. Vgl. [Comm. zu TS. 2,169].
+**aa3)** — Mit *ud* Med. entsagen, aufgeben; mit Acc. oder Gen. [TBR. 1,7,10,6](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?1,7,10,6). [ŚAT. BR. 5,2,2,4](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?5,2,2,4). Vgl. [Comm. zu TS. 2,169].
 
-- **RU:** — С *ud* Med. отрекаться, отказываться; с Acc. или Gen. [TBR. 1,7,10,6]. [ŚAT. BR. 5,2,2,4]. Vgl. [Comm. zu TS. 2,169].
-- **EN:** — With *ud* Med. to renounce, give up; with Acc. or Gen. [TBR. 1,7,10,6]. [ŚAT. BR. 5,2,2,4]. Vgl. [Comm. zu TS. 2,169].
+- **RU:** — С *ud* Med. отрекаться, отказываться; с Acc. или Gen. [TBR. 1,7,10,6](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?1,7,10,6). [ŚAT. BR. 5,2,2,4](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?5,2,2,4). Vgl. [Comm. zu TS. 2,169].
+- **EN:** — With *ud* Med. to renounce, give up; with Acc. or Gen. [TBR. 1,7,10,6](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?1,7,10,6). [ŚAT. BR. 5,2,2,4](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?5,2,2,4). Vgl. [Comm. zu TS. 2,169].
   <sub>attested</sub>
 
 **upa-intro)** — Mit *upa* Med. (einmal auch Act.)
@@ -189,10 +189,10 @@
 - **EN:** — 2) to utter in praise, to praise.
   <sub>attested</sub>
 
-**pra-3)** — 3〉 zu Jmd (Dat.) freundlich sprechen [ṚV. 1,161,12].
+**pra-3)** — 3〉 zu Jmd (Dat.) freundlich sprechen [ṚV. 1,161,12](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.161.html#rv01.161.12).
 
-- **RU:** — 3〉 дружески обращаться к кому-либо (Dat.) [ṚV. 1,161,12].
-- **EN:** — 3) to speak kindly to someone (Dat.) [ṚV. 1,161,12].
+- **RU:** — 3〉 дружески обращаться к кому-либо (Dat.) [ṚV. 1,161,12](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.161.html#rv01.161.12).
+- **EN:** — 3) to speak kindly to someone (Dat.) [ṚV. 1,161,12](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.161.html#rv01.161.12).
   <sub>attested</sub>
 
 **pra-4)** — 4〉 zu Jmd (Acc.) sprechen, Jmd Etwas sagen, — erzählen (mit doppeltem Acc. [BHAṬṬ.]).

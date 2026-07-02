@@ -4,13 +4,13 @@
 
 
 **1)** — *pratipra*, partic. *˚sūta* wieder verstattet
-Schol. zu [KĀTY. ŚR. 6,6,23.]
+Schol. zu [KĀTY. ŚR. 6,6,23.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?6,6,23)
 - **EN:** — *pratipra*, partic. *˚sūta* "granted again"
-Schol. to [KĀTY. ŚR. 6,6,23.]
+Schol. to [KĀTY. ŚR. 6,6,23.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?6,6,23)
 
 **main)** — *pratipra*, partic. *˚sūta* wieder verstattet
-Schol. zu [KĀTY. ŚR. 6,6,23.]
+Schol. zu [KĀTY. ŚR. 6,6,23.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?6,6,23)
 
 - **RU:** — *pratipra*, partic. *˚sūta* снова дозволенный
-Schol. к [KĀTY. ŚR. 6,6,23.]
+Schol. к [KĀTY. ŚR. 6,6,23.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?6,6,23)
   <sub>attested</sub>

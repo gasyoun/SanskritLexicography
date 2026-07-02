@@ -9,8 +9,8 @@
 **1a)** — 1〉 ohne Object oder mit Acc.
 - **EN:** — 1) without an object or with Acc.
 
-**1a-a)** — a〉 kennen, wissen, bekannt —, vertraut sein, Kenntniss haben von, erkennen, — an (Instr. [235,19]), in Erfahrung bringen, forschen nach, inne werden, merken, kennen lernen, erfahren. *jāne* (eingeschoben) das weiss ich [133,29]. *ka evaṃ jānīte* mit folgendem Fut. wer weiss, ob nicht [Spr. 546]. Mit einer Negation Nichts wissen von auch so v. a. keine Rücksicht nehmen auf und nicht theilhaftig werden. *jñāta* bekannt, gekannt, von dem oder wovon man Etwas weiss, erkannt, bemerkt, kennen gelernt, erfahren.
-- **EN:** — a) to know, have knowledge of, be acquainted —, familiar with, have knowledge of, recognise, — by (Instr. [235,19]); to ascertain, search for, become aware of, notice, get to know, learn, experience. *jāne* (parenthetic) "that I know" [133,29]. *ka evaṃ jānīte* with following Fut. "who knows whether not" [Spr. 546]. With a negation "to know nothing of", also so v. a. "to pay no heed to and not partake of". *jñāta* "known, acknowledged, that of which or about which one knows something, recognised, noticed, become acquainted with, experienced".
+**1a-a)** — a〉 kennen, wissen, bekannt —, vertraut sein, Kenntniss haben von, erkennen, — an (Instr. [235,19]), in Erfahrung bringen, forschen nach, inne werden, merken, kennen lernen, erfahren. *jāne* (eingeschoben) das weiss ich [133,29]. *ka evaṃ jānīte* mit folgendem Fut. wer weiss, ob nicht [Spr. 546](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?546). Mit einer Negation Nichts wissen von auch so v. a. keine Rücksicht nehmen auf und nicht theilhaftig werden. *jñāta* bekannt, gekannt, von dem oder wovon man Etwas weiss, erkannt, bemerkt, kennen gelernt, erfahren.
+- **EN:** — a) to know, have knowledge of, be acquainted —, familiar with, have knowledge of, recognise, — by (Instr. [235,19]); to ascertain, search for, become aware of, notice, get to know, learn, experience. *jāne* (parenthetic) "that I know" [133,29]. *ka evaṃ jānīte* with following Fut. "who knows whether not" [Spr. 546](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?546). With a negation "to know nothing of", also so v. a. "to pay no heed to and not partake of". *jñāta* "known, acknowledged, that of which or about which one knows something, recognised, noticed, become acquainted with, experienced".
 
 **1a-b)** — b〉 anerkennen, gutheissen, billigen.
 - **EN:** — b) to acknowledge, approve, sanction.
@@ -81,8 +81,8 @@
 **4)** — Desid. vom Caus. **jijñāpayiṣati*, **jijñāpa˚* und *jñīpsati* Jmd mit Etwas bekannt machen wollen; mit doppeltem Acc.
 - **EN:** — Desid. from Caus. **jijñāpayiṣati*, **jijñāpa˚* and *jñīpsati* "to wish to make someone acquainted with something"; with double Acc.
 
-**5)** — Mit *ati* scheinbar [BHĀG. P. 12,3,28], wo aber *itijānīhi* zu lesen ist.
-- **EN:** — With *ati* apparently [BHĀG. P. 12,3,28], but where *itijānīhi* is to be read instead.
+**5)** — Mit *ati* scheinbar [BHĀG. P. 12,3,28](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?12,3,28), wo aber *itijānīhi* zu lesen ist.
+- **EN:** — With *ati* apparently [BHĀG. P. 12,3,28](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?12,3,28), but where *itijānīhi* is to be read instead.
 
 **anu)** — Mit *anu*
 - **EN:** — With *anu*
@@ -105,14 +105,14 @@
 **anu-6)** — 6〉 Jmd (Acc.) erlauben fortzugehen, verabschieden, entlassen. *ratham* einen Wagen entlassen, so v. a. fortfahren heissen.
 - **EN:** — 6) to permit someone (Acc.) to depart, to dismiss, send away. *ratham* "to dismiss a carriage"; so v. a. "to bid drive on".
 
-**anu-7)** — 7〉 Etwas verabschieden, so v. a. Lebewohl sagen, verzichten auf [R. 2,42,8].
-- **EN:** — 7) to take leave of something; so v. a. "to say farewell, renounce" [R. 2,42,8].
+**anu-7)** — 7〉 Etwas verabschieden, so v. a. Lebewohl sagen, verzichten auf [R. 2,42,8](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,42,8).
+- **EN:** — 7) to take leave of something; so v. a. "to say farewell, renounce" [R. 2,42,8](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,42,8).
 
 **anu-8)** — 8〉 sich Jmd (Acc.) gnädig erweisen, seine Gewogenheit an den Tag legen.
 - **EN:** — 8) to show oneself gracious to someone (Acc.), to display one's favour.
 
-**anu-9)** — 9〉 scheinbar Jmd bitten, beschwören [R. 2,21,28], wo aber mit der [ed. Bomb.] *sāhaṃ nānujānāmi* zu lesen ist.
-- **EN:** — 9) apparently "to beg —, entreat someone" [R. 2,21,28], but where [ed. Bomb.] *sāhaṃ nānujānāmi* is to be read instead.
+**anu-9)** — 9〉 scheinbar Jmd bitten, beschwören [R. 2,21,28](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,21,28), wo aber mit der [ed. Bomb.] *sāhaṃ nānujānāmi* zu lesen ist.
+- **EN:** — 9) apparently "to beg —, entreat someone" [R. 2,21,28](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,21,28), but where [ed. Bomb.] *sāhaṃ nānujānāmi* is to be read instead.
 
 **anu-atm)** — Caus.
 - **EN:** — Caus.
@@ -252,11 +252,11 @@
 **upa-1)** — 1〉 merken auf, bemerken, inne werden, erfahren, vernehmen, hören; kennen, verstehen; bemerken, dass (mit doppeltem Acc.) [CARAKA. 3,7].
 - **EN:** — 1) to pay heed to, notice, become aware of, learn, hear; know, understand; notice that (with double Acc.) [CARAKA. 3,7].
 
-**upa-2)** — 2〉 halten für (*˚vat* oder Acc.) [Spr. 7273] (wohl *ajñāyi* für *ā˚* zu lesen).
-- **EN:** — 2) to consider as (*˚vat* or Acc.) [Spr. 7273] (probably *ajñāyi* is to be read for *ā˚*).
+**upa-2)** — 2〉 halten für (*˚vat* oder Acc.) [Spr. 7273](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7273) (wohl *ajñāyi* für *ā˚* zu lesen).
+- **EN:** — 2) to consider as (*˚vat* or Acc.) [Spr. 7273](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7273) (probably *ajñāyi* is to be read for *ā˚*).
 
-**upa-3)** — 3〉 *ājajñatus* [HARIV. 2929] fehlerhaft für *ājagmatus*.
-- **EN:** — 3) *ājajñatus* [HARIV. 2929] is erroneous for *ājagmatus*.
+**upa-3)** — 3〉 *ājajñatus* [HARIV. 2929](https://sanskrit-lexicon-scans.github.io/hariv?2929) fehlerhaft für *ājagmatus*.
+- **EN:** — 3) *ājajñatus* [HARIV. 2929](https://sanskrit-lexicon-scans.github.io/hariv?2929) is erroneous for *ājagmatus*.
 
 **upa-caus)** — Caus.
 - **EN:** — Caus.
@@ -291,8 +291,8 @@
 **samava)** — Mit *praṇi* bedenken [BHAṬṬ.]
 - **EN:** — With *praṇi* "to consider, reflect upon" [BHAṬṬ.]
 
-**viprasam)** — Mit *nis* unterscheiden, bestimmen, herausfinden, auffinden [ṚV. 3,31,4].
-- **EN:** — With *nis* "to distinguish, determine, find out, discover" [ṚV. 3,31,4].
+**viprasam)** — Mit *nis* unterscheiden, bestimmen, herausfinden, auffinden [ṚV. 3,31,4](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.031.html#rv03.031.04).
+- **EN:** — With *nis* "to distinguish, determine, find out, discover" [ṚV. 3,31,4](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.031.html#rv03.031.04).
 
 **sam-note)** — Mit *vinis* dass.
 - **EN:** — With *vinis* dass.

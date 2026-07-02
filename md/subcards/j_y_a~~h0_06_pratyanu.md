@@ -4,10 +4,10 @@
 
 
 **1)** — *pratyanu* zurückweisen: *tatsarvaṃ pratyanujñāsīdrāmaḥ — na hi tatpratyagṛhṇātsa kṣatradharmamanusmaran*
-[R. 2,87,16.]
+[R. 2,87,16.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,87,16)
 
 - **RU:** — *pratyanu* отклонять, отвергать: *tatsarvaṃ pratyanujñāsīdrāmaḥ — na hi tatpratyagṛhṇātsa kṣatradharmamanusmaran*
-[R. 2,87,16.]
+[R. 2,87,16.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,87,16)
 - **EN:** — *pratyanu* to reject, refuse: *tatsarvaṃ pratyanujñāsīdrāmaḥ — na hi tatpratyagṛhṇātsa kṣatradharmamanusmaran*
-[R. 2,87,16.]
+[R. 2,87,16.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,87,16)
   <sub>DCS 1 · attested</sub>

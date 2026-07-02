@@ -5,12 +5,12 @@
 
 **1)** — *parā*
  1) vorbei fliegen
-[KATHĀS. 108,43.]
+[KATHĀS. 108,43.](https://sanskrit-lexicon-scans.github.io/kss/index.html?108,43)
 
 - **RU:** — *parā*
- 1) пролетать мимо [KATHĀS. 108,43.]
+ 1) пролетать мимо [KATHĀS. 108,43.](https://sanskrit-lexicon-scans.github.io/kss/index.html?108,43)
 - **EN:** — *parā*
- 1) to fly past [KATHĀS. 108,43.]
+ 1) to fly past [KATHĀS. 108,43.](https://sanskrit-lexicon-scans.github.io/kss/index.html?108,43)
   <sub>attested</sub>
 
 **3)** — 3) ausbleiben, ermangeln zu kommen

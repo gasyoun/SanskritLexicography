@@ -4,10 +4,10 @@
 
 
 **1)** — *samava*, *asamavahitam* _adv._ wohl nicht in unmittelbarer Verbindung mit
-[ŚAT. BR. 9,4,3,15.]
+[ŚAT. BR. 9,4,3,15.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?9,4,3,15)
 
 - **RU:** — *samava*, *asamavahitam* _adv._ пожалуй не в непосредственной связи с
-[ŚAT. BR. 9,4,3,15.]
+[ŚAT. BR. 9,4,3,15.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?9,4,3,15)
 - **EN:** — *samava*, *asamavahitam* _adv._ probably not in immediate connection with
-[ŚAT. BR. 9,4,3,15.]
+[ŚAT. BR. 9,4,3,15.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?9,4,3,15)
   <sub>DCS 4861 · attested</sub>

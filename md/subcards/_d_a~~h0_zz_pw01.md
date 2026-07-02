@@ -36,8 +36,8 @@
 **9)** — 9〉 gebrauchen zu, verwenden bei (Loc.).
 - **EN:** — 9〉 to employ for, use in (Loc.).
 
-**10)** — 10〉 Med. fassen, ergreifen [Spr. 7735].
-- **EN:** — 10〉 Med. to seize, grasp [Spr. 7735].
+**10)** — 10〉 Med. fassen, ergreifen [Spr. 7735](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7735).
+- **EN:** — 10〉 Med. to seize, grasp [Spr. 7735](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7735).
 
 **11)** — 11〉 Med. nehmen, empfangen, erhalten. *garbham* Leibesfrucht empfangen, concipere.
 - **EN:** — 11〉 Med. to take, receive, obtain. *garbham* to conceive an embryo, concipere.
@@ -51,8 +51,8 @@
 **14)** — 14〉 hervorbringen, bewirken, verursachen [324,30]. *sāṃmukhyam* so v. a. sich wenden an. Ausnahmsweise Act.
 - **EN:** — 14〉 to produce, bring about, cause [324,30]. *sāṃmukhyam* hence v. a. to turn to. Exceptionally Act.
 
-**15)** — 15〉 *āhita* [PAÑCAT. 43,4] fehlerhaft für *āvṛta* (so [ed. Bomb.]); *ādhāta* [CAURAP. 16] ebenfalls fehlerhaft.
-- **EN:** — 15〉 *āhita* [PAÑCAT. 43,4] erroneously for *āvṛta* (so [ed. Bomb.]); *ādhāta* [CAURAP. 16] likewise erroneous.
+**15)** — 15〉 *āhita* [PAÑCAT. 43,4](https://sanskrit-lexicon-scans.github.io/pantankose/app2?43,4) fehlerhaft für *āvṛta* (so [ed. Bomb.]); *ādhāta* [CAURAP. 16](https://sanskrit-lexicon-scans.github.io/bhartrhari/app1?16) ebenfalls fehlerhaft.
+- **EN:** — 15〉 *āhita* [PAÑCAT. 43,4](https://sanskrit-lexicon-scans.github.io/pantankose/app2?43,4) erroneously for *āvṛta* (so [ed. Bomb.]); *ādhāta* [CAURAP. 16](https://sanskrit-lexicon-scans.github.io/bhartrhari/app1?16) likewise erroneous.
 
 **Caus.)** — Caus. hinsetzen lassen.
 - **EN:** — Caus. to cause to be placed.
@@ -63,8 +63,8 @@
 **Des.1)** — 1〉 Med. anlegen wollen (Feuer).
 - **EN:** — 1〉 Med. to wish to lay (fire).
 
-**Des.2)** — 2〉 zu ergreifen die Absicht haben. *daṇḍam* so v. a. zu strafen sich anschicken [MBH. 12,83,45].
-- **EN:** — 2〉 to intend to seize. *daṇḍam* hence v. a. to prepare to punish [MBH. 12,83,45].
+**Des.2)** — 2〉 zu ergreifen die Absicht haben. *daṇḍam* so v. a. zu strafen sich anschicken [MBH. 12,83,45](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,83,45).
+- **EN:** — 2〉 to intend to seize. *daṇḍam* hence v. a. to prepare to punish [MBH. 12,83,45](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,83,45).
 
 **Mit agre)** — Mit *atyā* voranstellen, erheben über. Vgl. *atyāhita*.
 - **EN:** — With *atyā*: to place before, raise above. Vgl. *atyāhita*.
@@ -117,14 +117,14 @@
 **ā.1)** — 1〉 anlegen an (Loc.), setzen auf (Loc.). **upāhita* daraufgesetzt.
 - **EN:** — 1〉 to apply to (Loc.), to place upon (Loc.). **upāhita* placed upon.
 
-**ā.2)** — 2〉 Med. ergreifen (*daṇḍam*) [MBH. 12,15,4]. *upādāya* mit sich nehmend, mit (Acc.) [Chr. 28,28].
-- **EN:** — 2〉 Med. to seize (*daṇḍam*) [MBH. 12,15,4]. *upādāya* taking along, with (Acc.) [Chr. 28,28].
+**ā.2)** — 2〉 Med. ergreifen (*daṇḍam*) [MBH. 12,15,4](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,15,4). *upādāya* mit sich nehmend, mit (Acc.) [Chr. 28,28].
+- **EN:** — 2〉 Med. to seize (*daṇḍam*) [MBH. 12,15,4](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,15,4). *upādāya* taking along, with (Acc.) [Chr. 28,28].
 
 **ā.3)** — 3〉 Med. mit *ātmani* bei sich behalten.
 - **EN:** — 3〉 Med. with *ātmani* to keep with oneself.
 
-**ā.4)** — 4〉 Jmd verführen —, verleiten zu; mit doppeltem Acc. *mā — upādadhāḥ* [R. 2,35,28]. *udādadhaḥ* v. l. im Comm. der [Bomb. Ausg.]
-- **EN:** — 4〉 to seduce, lead astray to; with double Acc. *mā — upādadhāḥ* [R. 2,35,28]. *udādadhaḥ* v. l. in the Comm. of the [Bomb. Ausg.]
+**ā.4)** — 4〉 Jmd verführen —, verleiten zu; mit doppeltem Acc. *mā — upādadhāḥ* [R. 2,35,28](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,35,28). *udādadhaḥ* v. l. im Comm. der [Bomb. Ausg.]
+- **EN:** — 4〉 to seduce, lead astray to; with double Acc. *mā — upādadhāḥ* [R. 2,35,28](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,35,28). *udādadhaḥ* v. l. in the Comm. of the [Bomb. Ausg.]
 
 **ā.5)** — 5〉 *upāhita*
 - **EN:** — 5〉 *upāhita*
@@ -162,8 +162,8 @@
 **Mit pari (umlegen, Feuer))** — Mit *abhiparyā* umlegen (mit Feuer).
 - **EN:** — With *abhiparyā*: to lay around (with fire).
 
-**Mit pra)** — Mit *prā*, *pra — āhitaḥ* hingeführt zu (Loc.) [ṚV. 9,64,19].
-- **EN:** — With *prā*, *pra — āhitaḥ* led to (Loc.) [ṚV. 9,64,19].
+**Mit pra)** — Mit *prā*, *pra — āhitaḥ* hingeführt zu (Loc.) [ṚV. 9,64,19](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.064.html#rv09.064.19).
+- **EN:** — With *prā*, *pra — āhitaḥ* led to (Loc.) [ṚV. 9,64,19](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.064.html#rv09.064.19).
 
 **Mit vi)** — Mit *vyā* Pass.
 - **EN:** — With *vyā* Pass.
@@ -225,11 +225,11 @@
 **sam.10f)** — f〉 festsetzen, feststellen, als ausgemacht hinstellen. **samāhita* festgestellt, bewiesen.
 - **EN:** — f〉 to fix, to establish, to assert as settled. **samāhita* established, proven.
 
-**sam.10g)** — g〉 einräumen, zugeben. *samāhita* gutgeheissen; gebilligt [ĀPAST. 1,20,8. 2,29,14]. [HARIV. 11392]. übereinstimmend mit (im Comp. vorangehend) [2225].
-- **EN:** — g〉 to concede, to grant, to admit. *samāhita* approved; accepted [ĀPAST. 1,20,8. 2,29,14]. [HARIV. 11392]. in accordance with (preceding in the Comp.) [2225].
+**sam.10g)** — g〉 einräumen, zugeben. *samāhita* gutgeheissen; gebilligt [ĀPAST. 1,20,8. 2,29,14]. [HARIV. 11392](https://sanskrit-lexicon-scans.github.io/hariv?11392). übereinstimmend mit (im Comp. vorangehend) [2225](https://sanskrit-lexicon-scans.github.io/hariv?2225).
+- **EN:** — g〉 to concede, to grant, to admit. *samāhita* approved; accepted [ĀPAST. 1,20,8. 2,29,14]. [HARIV. 11392](https://sanskrit-lexicon-scans.github.io/hariv?11392). in accordance with (preceding in the Comp.) [2225](https://sanskrit-lexicon-scans.github.io/hariv?2225).
 
-**sam.11)** — 11〉 *samāhita* zu Ende gegangen, abgelaufen [MBH. 1,173,31].
-- **EN:** — 11〉 *samāhita* elapsed, expired [MBH. 1,173,31].
+**sam.11)** — 11〉 *samāhita* zu Ende gegangen, abgelaufen [MBH. 1,173,31](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?1,173,31).
+- **EN:** — 11〉 *samāhita* elapsed, expired [MBH. 1,173,31](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?1,173,31).
 
 **sam.Caus.)** — Desid. (*˚dhitsati*) Jmd (Acc.) dahin an bringen wünschen, dass er sich sammelt, — fasst.
 - **EN:** — Desid. (*˚dhitsati*) to wish that someone (Acc.) collects himself, composes himself.
@@ -267,8 +267,8 @@
 **Mit vi+ud)** — Mit *ud*
 - **EN:** — With *ud*
 
-**vi+ud.1)** — 1〉 auslegen [ṚV. 10,101,12].
-- **EN:** — 1〉 to spread out [ṚV. 10,101,12].
+**vi+ud.1)** — 1〉 auslegen [ṚV. 10,101,12](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.101.html#rv10.101.12).
+- **EN:** — 1〉 to spread out [ṚV. 10,101,12](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.101.html#rv10.101.12).
 
 **vi+ud.2)** — 2〉 aufstellen, aufsetzen, aufbauen. Nur *uddhita*.
 - **EN:** — 2〉 to set up, to erect, to construct. Only *uddhita*.
@@ -294,8 +294,8 @@
 **ni.5)** — 5〉 Jmd (Loc.) Etwas beibringen, lehren.
 - **EN:** — 5〉 to impart something to someone (Loc.), to teach.
 
-**ni.6)** — 6〉 hinzuthun, hinzufügen, — zu, verbinden mit (Loc.) [ŚULBAS. 1,52]. *upahita* sich anschliessend an (Loc.), verbunden mit (im Comp. vorangehend) [MĀLAV. 20].
-- **EN:** — 6〉 to add to, append, join to, connect with (Loc.) [ŚULBAS. 1,52]. *upahita* attached to (Loc.), connected with (preceding in the Comp.) [MĀLAV. 20].
+**ni.6)** — 6〉 hinzuthun, hinzufügen, — zu, verbinden mit (Loc.) [ŚULBAS. 1,52]. *upahita* sich anschliessend an (Loc.), verbunden mit (im Comp. vorangehend) [MĀLAV. 20](https://sanskrit-lexicon-scans.github.io/malavikagni/app1?20).
+- **EN:** — 6〉 to add to, append, join to, connect with (Loc.) [ŚULBAS. 1,52]. *upahita* attached to (Loc.), connected with (preceding in the Comp.) [MĀLAV. 20](https://sanskrit-lexicon-scans.github.io/malavikagni/app1?20).
 
 **ni.7)** — 7〉 anwenden. *kriyā vastūpahitā* auf eine gute Sache verwendete Mühe.
 - **EN:** — 7〉 to apply. *kriyā vastūpahitā* effort applied to a good cause.

@@ -3,10 +3,10 @@
 `g_a~~h0_zz_pw01`
 
 
-**main)** **3.** √*gā*¦ *gāyati, ˚te* (selten), *gāti* und **jigāti* [DHĀTUP. 25,25]. singen, in singendem Tone sprechen, Jmd (Dat.) zusingen, in gebundener Rede verkünden, besingen (mit Acc.), Jmd (Acc.) vorsingen, singend vortragen. Pass. auch genannt werden, heissen. *gīta* gesungen, in gebundener Rede verkündet, besungen.
+**main)** **3.** √*gā*¦ *gāyati, ˚te* (selten), *gāti* und **jigāti* [DHĀTUP. 25,25](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=25). singen, in singendem Tone sprechen, Jmd (Dat.) zusingen, in gebundener Rede verkünden, besingen (mit Acc.), Jmd (Acc.) vorsingen, singend vortragen. Pass. auch genannt werden, heissen. *gīta* gesungen, in gebundener Rede verkündet, besungen.
 
-- **RU:** **3.** √*gā*¦ *gāyati, ˚te* (редко), *gāti* и **jigāti* [DHĀTUP. 25,25]. петь, говорить нараспев, воспевать кому-л. (Dat.), возвещать в стихах, воспевать (с Acc.), петь перед кем-л. (Acc.), исполнять нараспев. Pass. также называться, именоваться. *gīta* спетый, возвещённый в стихах, воспетый.
-- **EN:** 3. √*gā* *gāyati, ˚te* (rare), *gāti* and **jigāti* [DHĀTUP. 25,25]. to sing, to speak in a singing tone, to sing to someone (Dat.), to proclaim in verse, to celebrate in song (with Acc.), to sing before someone (Acc.), to perform in song. Pass. also to be called, to be named. *gīta* sung, proclaimed in verse, celebrated in song.
+- **RU:** **3.** √*gā*¦ *gāyati, ˚te* (редко), *gāti* и **jigāti* [DHĀTUP. 25,25](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=25). петь, говорить нараспев, воспевать кому-л. (Dat.), возвещать в стихах, воспевать (с Acc.), петь перед кем-л. (Acc.), исполнять нараспев. Pass. также называться, именоваться. *gīta* спетый, возвещённый в стихах, воспетый.
+- **EN:** 3. √*gā* *gāyati, ˚te* (rare), *gāti* and **jigāti* [DHĀTUP. 25,25](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=25). to sing, to speak in a singing tone, to sing to someone (Dat.), to proclaim in verse, to celebrate in song (with Acc.), to sing before someone (Acc.), to perform in song. Pass. also to be called, to be named. *gīta* sung, proclaimed in verse, celebrated in song.
   <sub>attested</sub>
 
 **caus)** — Caus. *gāpayati* singen —, besingen lassen.
@@ -100,8 +100,8 @@
   <sub>attested</sub>
 
 **ā-ni_1)** — Mit *ava*, *avagīta*
-— 1〉 oft wiederholt, tritus [RĀJAT. 7,435].
-- **EN:** — With *ava*, *avagīta* — 1〉 often repeated, tritus [RĀJAT. 7,435].
+— 1〉 oft wiederholt, tritus [RĀJAT. 7,435](https://sanskrit-lexicon-scans.github.io/rajatarcalc/app1?7,435).
+- **EN:** — With *ava*, *avagīta* — 1〉 often repeated, tritus [RĀJAT. 7,435](https://sanskrit-lexicon-scans.github.io/rajatarcalc/app1?7,435).
 
 **ā-ni_2)** — 2〉 zum Ueberdruss geworden.
 
@@ -240,10 +240,10 @@
 - **EN:** — 2〉 *_f._ song, verse.
   <sub>lexicographic</sub>
 
-**1)** **5.** *√*gā*¦, *jigāti* (*janmani*) [VOP.] in [DHĀTUP. 25,25].
+**1)** **5.** *√*gā*¦, *jigāti* (*janmani*) [VOP.] in [DHĀTUP. 25,25](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=25).
 
-- **RU:** **5.** *√*gā*¦, *jigāti* (*janmani*) [VOP.] в [DHĀTUP. 25,25].
-- **EN:** 5. *√*gā*, *jigāti* (*janmani*) [VOP.] in [DHĀTUP. 25,25].
+- **RU:** **5.** *√*gā*¦, *jigāti* (*janmani*) [VOP.] в [DHĀTUP. 25,25](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=25).
+- **EN:** 5. *√*gā*, *jigāti* (*janmani*) [VOP.] in [DHĀTUP. 25,25](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=25).
   <sub>lexicographic</sub>
 
 **main)** **1.** √*gā*¦ mit *adhi* Caus. *adhyajīgapat* [HEM. PAR. 1,398].
@@ -258,15 +258,15 @@
 - **EN:** 3. *gā* also to say, speak, — to someone (Acc.) [CAMPAKA 126]. [137]. [338]. [438]. [472]. [UTTAMAC. 107]. [285].
   <sub>attested</sub>
 
-**main)** **3.** √*gā*¦ *gāyati, ˚te* (selten), *gāti* und **jigāti* [DHĀTUP. 25,25]. singen, in singendem Tone sprechen, Jmd (Dat.) zusingen, in gebundener Rede verkünden, besingen (mit Acc.), Jmd (Acc.) vorsingen, singend vortragen. Pass. auch genannt werden, heissen. *gīta* gesungen, in gebundener Rede verkündet, besungen.
+**main)** **3.** √*gā*¦ *gāyati, ˚te* (selten), *gāti* und **jigāti* [DHĀTUP. 25,25](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=25). singen, in singendem Tone sprechen, Jmd (Dat.) zusingen, in gebundener Rede verkünden, besingen (mit Acc.), Jmd (Acc.) vorsingen, singend vortragen. Pass. auch genannt werden, heissen. *gīta* gesungen, in gebundener Rede verkündet, besungen.
 
-- **RU:** **3.** √*gā*¦ *gāyati, ˚te* (редко), *gāti* и **jigāti* [DHĀTUP. 25,25]. петь, говорить нараспев, воспевать кому-л. (Dat.), возвещать в стихах, воспевать (с Acc.), петь перед кем-л. (Acc.), исполнять нараспев. Pass. также называться, именоваться. *gīta* спетый, возвещённый в стихах, воспетый.
-- **EN:** 1. √*gā* II. *jagāyāt* [ṚV. 10,28,1]. — With *adhi* Caus. II. 5. — With *ava* II. to understand, to know [KIR. 12,34]. — With *pra* II. 2〉 read [27,10. fgg.] — With *vi* II. to step between, to separate; with Acc. [ŚĀṄKH. BR. 13,9].
+- **RU:** **3.** √*gā*¦ *gāyati, ˚te* (редко), *gāti* и **jigāti* [DHĀTUP. 25,25](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=25). петь, говорить нараспев, воспевать кому-л. (Dat.), возвещать в стихах, воспевать (с Acc.), петь перед кем-л. (Acc.), исполнять нараспев. Pass. также называться, именоваться. *gīta* спетый, возвещённый в стихах, воспетый.
+- **EN:** 1. √*gā* II. *jagāyāt* [ṚV. 10,28,1](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.028.html#rv10.028.01). — With *adhi* Caus. II. 5. — With *ava* II. to understand, to know [KIR. 12,34]. — With *pra* II. 2〉 read [27,10. fgg.] — With *vi* II. to step between, to separate; with Acc. [ŚĀṄKH. BR. 13,9].
   <sub>attested</sub>
 
-**main)** **3.** √*gā*¦ *gāyati, ˚te* (selten), *gāti* und **jigāti* [DHĀTUP. 25,25]. singen, in singendem Tone sprechen, Jmd (Dat.) zusingen, in gebundener Rede verkünden, besingen (mit Acc.), Jmd (Acc.) vorsingen, singend vortragen. Pass. auch genannt werden, heissen. *gīta* gesungen, in gebundener Rede verkündet, besungen.
+**main)** **3.** √*gā*¦ *gāyati, ˚te* (selten), *gāti* und **jigāti* [DHĀTUP. 25,25](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=25). singen, in singendem Tone sprechen, Jmd (Dat.) zusingen, in gebundener Rede verkünden, besingen (mit Acc.), Jmd (Acc.) vorsingen, singend vortragen. Pass. auch genannt werden, heissen. *gīta* gesungen, in gebundener Rede verkündet, besungen.
 
-- **RU:** **3.** √*gā*¦ *gāyati, ˚te* (редко), *gāti* и **jigāti* [DHĀTUP. 25,25]. петь, говорить нараспев, воспевать кому-л. (Dat.), возвещать в стихах, воспевать (с Acc.), петь перед кем-л. (Acc.), исполнять нараспев. Pass. также называться, именоваться. *gīta* спетый, возвещённый в стихах, воспетый.
+- **RU:** **3.** √*gā*¦ *gāyati, ˚te* (редко), *gāti* и **jigāti* [DHĀTUP. 25,25](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=25). петь, говорить нараспев, воспевать кому-л. (Dat.), возвещать в стихах, воспевать (с Acc.), петь перед кем-л. (Acc.), исполнять нараспев. Pass. также называться, именоваться. *gīta* спетый, возвещённый в стихах, воспетый.
 - **EN:** 3. √*gā* II. 5. — With *ava* II. *˚gīta* weakened (*śoka*) [JĀTAKAM. 2]. become tiresome [10,1].
   <sub>attested</sub>
 
@@ -305,9 +305,9 @@
 - **RU:** — С *ava*, *avagīta*
   <sub>attested</sub>
 
-**pari-anu-/vi-anu- 1))** — 1〉 oft wiederholt, tritus [RĀJAT. 7,435].
+**pari-anu-/vi-anu- 1))** — 1〉 oft wiederholt, tritus [RĀJAT. 7,435](https://sanskrit-lexicon-scans.github.io/rajatarcalc/app1?7,435).
 
-- **RU:** — 1〉 часто повторяемый, tritus [RĀJAT. 7,435].
+- **RU:** — 1〉 часто повторяемый, tritus [RĀJAT. 7,435](https://sanskrit-lexicon-scans.github.io/rajatarcalc/app1?7,435).
   <sub>attested</sub>
 
 **pra- intro)** — Mit *ā*
@@ -365,9 +365,9 @@
 - **RU:** — 1〉 порицать [NAIṢ. 9,13].
   <sub>attested</sub>
 
-**addendum-II-main)** **1.** √*gā*¦ II. *jagāyāt* [ṚV. 10,28,1].
+**addendum-II-main)** **1.** √*gā*¦ II. *jagāyāt* [ṚV. 10,28,1](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.028.html#rv10.028.01).
 
-- **RU:** **1.** √*gā*¦ II. *jagāyāt* [ṚV. 10,28,1].
+- **RU:** **1.** √*gā*¦ II. *jagāyāt* [ṚV. 10,28,1](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.028.html#rv10.028.01).
   <sub>attested</sub>
 
 **addendum-II-ā-)** — Mit *adhi* Caus. II. 5.

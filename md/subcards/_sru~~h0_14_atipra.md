@@ -4,10 +4,10 @@
 
 
 **1)** — *atipra* med. vor Andern bekannt werden
-[ṚV. 10,11,7.]
+[ṚV. 10,11,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.011.html#rv10.011.07)
 
 - **RU:** — *atipra* med. стать известным прежде других
-[ṚV. 10,11,7.]
+[ṚV. 10,11,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.011.html#rv10.011.07)
 - **EN:** *atipra* med. to become known before others
-[ṚV. 10,11,7.]
+[ṚV. 10,11,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.011.html#rv10.011.07)
   <sub>DCS 0 · attested</sub>

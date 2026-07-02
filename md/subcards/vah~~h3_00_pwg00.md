@@ -4,11 +4,11 @@
 
 
 **0)** 1. *vah*¦, intens. *vāvahīti* tragen: *ratnabhāram*
-[Spr. (II) 4053.]
-- **EN:** 1. *vah*, intens. *vāvahīti* to carry, bear: *ratnabhāram* [Spr. (II) 4053.]
+[Spr. (II) 4053.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4053)
+- **EN:** 1. *vah*, intens. *vāvahīti* to carry, bear: *ratnabhāram* [Spr. (II) 4053.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4053)
 
 **1)** *vah*¦, intens. *vāvahīti* tragen: *ratnabhāram*
-[Spr. (II) 4053.]
+[Spr. (II) 4053.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4053)
 — *ati* caus.
  1) vgl.
 [HEM.]
@@ -20,7 +20,7 @@
 — *vi*
 
 - **RU:** *vah*¦, intens. *vāvahīti* «нести, везти»: *ratnabhāram*
-[Spr. (II) 4053.]
+[Spr. (II) 4053.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4053)
 — *ati* caus.
  1) vgl.
 [HEM.]
@@ -43,8 +43,8 @@
 
 **caus1)** — *vi*
  1) wegführen: *oghena vyuhyamānānāṃ* (Conj. für *vyū˚) plavānāṃ srotaso* (so zu lesen) *yathā*
-[Spr. (II) 3820.]
-- **EN:** *vi* 1) to lead away: *oghena vyuhyamānānāṃ* (Conj. for *vyū˚) plavānāṃ srotaso* (to be read thus) *yathā* [Spr. (II) 3820.]
+[Spr. (II) 3820.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3820)
+- **EN:** *vi* 1) to lead away: *oghena vyuhyamānānāṃ* (Conj. for *vyū˚) plavānāṃ srotaso* (to be read thus) *yathā* [Spr. (II) 3820.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3820)
 
 **caus2)** — *saṃvi* med. mit Andern (instr.) eine Ehe eingehen: *saṃvivahante gargaiḥ*
 [PAT. a. a. O. 1,247,a.]
@@ -55,8 +55,8 @@
   <sub>attested</sub>
 
 **2)** 1) wegführen: *oghena vyuhyamānānāṃ* (Conj. für *vyū˚) plavānāṃ srotaso* (so zu lesen) *yathā*
-[Spr. (II) 3820.]
+[Spr. (II) 3820.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3820)
 
 - **RU:** 1) «уводить, увозить прочь»: *oghena vyuhyamānānāṃ* (Conj. вместо *vyū˚) plavānāṃ srotaso* (так следует читать) *yathā*
-[Spr. (II) 3820.]
+[Spr. (II) 3820.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3820)
   <sub>attested</sub>

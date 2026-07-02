@@ -126,8 +126,8 @@
 - **EN:** 2) to make known, proclaim [BHĀG. P.]
   <sub>attested</sub>
 
-**nis-1)** — Caus.— 1〉 Etwas kund thun, verkünden, berichten, seine Meinung aussprechen, verkünden — ([RĀJAT. 3,241]), erklären —, sagen, dass (mit doppeltem Acc.).
-- **EN:** Caus. 1) to make something known, proclaim, report, voice one's opinion, announce — ([RĀJAT. 3,241]), to declare —, say that (with double Acc.).
+**nis-1)** — Caus.— 1〉 Etwas kund thun, verkünden, berichten, seine Meinung aussprechen, verkünden — ([RĀJAT. 3,241](https://sanskrit-lexicon-scans.github.io/rajatar/app1?3,241)), erklären —, sagen, dass (mit doppeltem Acc.).
+- **EN:** Caus. 1) to make something known, proclaim, report, voice one's opinion, announce — ([RĀJAT. 3,241](https://sanskrit-lexicon-scans.github.io/rajatar/app1?3,241)), to declare —, say that (with double Acc.).
 
 **nis-2)** — 2〉 mit Acc. der Person es Jmd begreiflich machen, belehren, zu wissen thun, in Kenntniss setzen, sprechen —, sagen zu, mit einer Bitte oder Frage angehen, — in Betreff von (*˚artham, prati* oder Dat.).
 
@@ -159,10 +159,10 @@
 - **EN:** With *pravi* to know in detail —, to know precisely.
   <sub>attested</sub>
 
-**prati)** — Mit *prativi* erkenntlich sein [Spr. 7256. fg.]
+**prati)** — Mit *prativi* erkenntlich sein [Spr. 7256. fg.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7256)
 
-- **RU:** — С *prativi* быть благодарным [Spr. 7256. fg.]
-- **EN:** With *prativi* to be grateful, recognizant [Spr. 7256. fg.]
+- **RU:** — С *prativi* быть благодарным [Spr. 7256. fg.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7256)
+- **EN:** With *prativi* to be grateful, recognizant [Spr. 7256. fg.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7256)
   <sub>attested</sub>
 
 **sam-1)** — Mit *saṃvi*
@@ -205,10 +205,10 @@
 - **EN:** With *sam* 1) Med. to be of one mind —, to be in concord, to come to agreement, to get along with (Loc., *Instr. or *Acc.).
   <sub>attested</sub>
 
-**sammat-2)** — 2〉 Med. Jmd (Dat.) gehorchen [AIT. BR. 8,25].
+**sammat-2)** — 2〉 Med. Jmd (Dat.) gehorchen [AIT. BR. 8,25](https://sanskrit-lexicon-scans.github.io/aitbr/app1?8,25).
 
-- **RU:** — 2〉 Med. кому-либо (Dat.) повиноваться [AIT. BR. 8,25].
-- **EN:** 2) Med. to obey someone (Dat.) [AIT. BR. 8,25].
+- **RU:** — 2〉 Med. кому-либо (Dat.) повиноваться [AIT. BR. 8,25](https://sanskrit-lexicon-scans.github.io/aitbr/app1?8,25).
+- **EN:** 2) Med. to obey someone (Dat.) [AIT. BR. 8,25](https://sanskrit-lexicon-scans.github.io/aitbr/app1?8,25).
   <sub>attested</sub>
 
 **sammat-3)** — 3〉 Med. Etwas anweisen, bestimmen *˚saṃjñāta* bestimmt zu.
@@ -223,10 +223,10 @@
 - **EN:** 4) Med. to recognize someone.
   <sub>attested</sub>
 
-**sammat-5)** — 5〉 Jmd (Acc.) anweisen, einen Befehl ertheilen; nur *saṃjñāya* [HARIV. 2,66,13].
+**sammat-5)** — 5〉 Jmd (Acc.) anweisen, einen Befehl ertheilen; nur *saṃjñāya* [HARIV. 2,66,13](https://sanskrit-lexicon-scans.github.io/hariv?2).
 
-- **RU:** — 5〉 кому-либо (Acc.) давать указание, отдавать приказ; только *saṃjñāya* [HARIV. 2,66,13].
-- **EN:** 5) to instruct someone (Acc.), to give an order; only *saṃjñāya* [HARIV. 2,66,13].
+- **RU:** — 5〉 кому-либо (Acc.) давать указание, отдавать приказ; только *saṃjñāya* [HARIV. 2,66,13](https://sanskrit-lexicon-scans.github.io/hariv?2).
+- **EN:** 5) to instruct someone (Acc.), to give an order; only *saṃjñāya* [HARIV. 2,66,13](https://sanskrit-lexicon-scans.github.io/hariv?2).
   <sub>attested</sub>
 
 **sammat-6)** — 6〉 *Med. eine Schuld anerkennen.
@@ -316,9 +316,9 @@
 - **RU:** — Caus.
   <sub>attested</sub>
 
-**caus (1))** — 1〉 Etwas kund thun, verkünden, berichten, seine Meinung aussprechen, verkünden — ([RĀJAT. 3,241]), erklären —, sagen, dass (mit doppeltem Acc.).
+**caus (1))** — 1〉 Etwas kund thun, verkünden, berichten, seine Meinung aussprechen, verkünden — ([RĀJAT. 3,241](https://sanskrit-lexicon-scans.github.io/rajatar/app1?3,241)), erklären —, sagen, dass (mit doppeltem Acc.).
 
-- **RU:** — 1〉 оповещать о чём-либо, возвещать, сообщать, высказывать своё мнение, возвещать — ([RĀJAT. 3,241]), объяснять —, говорить, что (с двойным Acc.).
+- **RU:** — 1〉 оповещать о чём-либо, возвещать, сообщать, высказывать своё мнение, возвещать — ([RĀJAT. 3,241](https://sanskrit-lexicon-scans.github.io/rajatar/app1?3,241)), объяснять —, говорить, что (с двойным Acc.).
   <sub>attested</sub>
 
 **causative2-header)** — Caus.

@@ -7,42 +7,42 @@
 
 - **RU:** — *ni*
  1) оседать, располагаться на, при (acc. loc.): *hite mitre nigatānhanti vīrān*
-[ṚV. 10,132,5.] *tamidaṃ nigataṃ sahaḥ*
-[AV. 13,4,12.] наступать, появляться: *yannirṛtirnigacchāt*
-[ṚV. 10,10,11.]
+[ṚV. 10,132,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.132.html#rv10.132.05) *tamidaṃ nigataṃ sahaḥ*
+[AV. 13,4,12.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av13.004.html#av13.004.12) наступать, появляться: *yannirṛtirnigacchāt*
+[ṚV. 10,10,11.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.010.html#rv10.010.11)
 - **EN:** — *ni*
  1) to settle down on, at (acc. loc.): *hite mitre nigatānhanti vīrān*
-[ṚV. 10,132,5.] *tamidaṃ nigataṃ sahaḥ*
-[AV. 13,4,12.] to present itself, occur: *yannirṛtirnigacchāt*
-[ṚV. 10,10,11.]
+[ṚV. 10,132,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.132.html#rv10.132.05) *tamidaṃ nigataṃ sahaḥ*
+[AV. 13,4,12.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av13.004.html#av13.004.12) to present itself, occur: *yannirṛtirnigacchāt*
+[ṚV. 10,10,11.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.010.html#rv10.010.11)
   <sub>DCS 57 · attested</sub>
 
-**2)** inire feminam: *pāpamāhuryaḥ svasāraṃ nigacchāt* [ṚV. 10,10,12.]
+**2)** inire feminam: *pāpamāhuryaḥ svasāraṃ nigacchāt* [ṚV. 10,10,12.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.010.html#rv10.010.12)
 
 - **RU:** — 2) совокупляться с женщиной (inire feminam): *pāpamāhuryaḥ svasāraṃ nigacchāt*
-[ṚV. 10,10,12.]
+[ṚV. 10,10,12.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.010.html#rv10.010.12)
 - **EN:** — 2) inire feminam [to have intercourse with a woman]: *pāpamāhuryaḥ svasāraṃ nigacchāt*
-[ṚV. 10,10,12.]
+[ṚV. 10,10,12.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.010.html#rv10.010.12)
   <sub>DCS 57 · attested</sub>
 
-**3)** gerathen an einen Ort, in einen Zustand: *yatra kva ca kurukṣetrasya nigacchati* [ŚAT. BR. 14,1,1,2.] *uccāvacam* [5,1,19.] *aṇimānam* [7,1,41.] *kṣudham* [TS. 7,2,4,1.] *bahu hi vācā ghoraṃ nigacchati* [ŚAT. BR. 9,3,1,12.] *śāntim* [BHAG. 9,31.] *duḥkhāntam* [18,36.]
+**3)** gerathen an einen Ort, in einen Zustand: *yatra kva ca kurukṣetrasya nigacchati* [ŚAT. BR. 14,1,1,2.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,1,1,2) *uccāvacam* [5,1,19.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,5,1,19) *aṇimānam* [7,1,41.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,7,1,41) *kṣudham* [TS. 7,2,4,1.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?7,2,4,1) *bahu hi vācā ghoraṃ nigacchati* [ŚAT. BR. 9,3,1,12.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?9,3,1,12) *śāntim* [BHAG. 9,31.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?9,31) *duḥkhāntam* [18,36.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?18,36)
 
 - **RU:** — 3) попадать в место, в состояние: *yatra kva ca kurukṣetrasya nigacchati*
-[ŚAT. BR. 14,1,1,2.] *uccāvacam*
-[5,1,19.] *aṇimānam*
-[7,1,41.] *kṣudham*
-[TS. 7,2,4,1.] *bahu hi vācā ghoraṃ nigacchati*
-[ŚAT. BR. 9,3,1,12.] *śāntim*
-[BHAG. 9,31.] *duḥkhāntam*
-[18,36.]
+[ŚAT. BR. 14,1,1,2.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,1,1,2) *uccāvacam*
+[5,1,19.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,5,1,19) *aṇimānam*
+[7,1,41.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,7,1,41) *kṣudham*
+[TS. 7,2,4,1.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?7,2,4,1) *bahu hi vācā ghoraṃ nigacchati*
+[ŚAT. BR. 9,3,1,12.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?9,3,1,12) *śāntim*
+[BHAG. 9,31.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?9,31) *duḥkhāntam*
+[18,36.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?18,36)
 - **EN:** — 3) to arrive at a place, fall into a state: *yatra kva ca kurukṣetrasya nigacchati*
-[ŚAT. BR. 14,1,1,2.] *uccāvacam*
-[5,1,19.] *aṇimānam*
-[7,1,41.] *kṣudham*
-[TS. 7,2,4,1.] *bahu hi vācā ghoraṃ nigacchati*
-[ŚAT. BR. 9,3,1,12.] *śāntim*
-[BHAG. 9,31.] *duḥkhāntam*
-[18,36.]
+[ŚAT. BR. 14,1,1,2.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,1,1,2) *uccāvacam*
+[5,1,19.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,5,1,19) *aṇimānam*
+[7,1,41.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,7,1,41) *kṣudham*
+[TS. 7,2,4,1.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?7,2,4,1) *bahu hi vācā ghoraṃ nigacchati*
+[ŚAT. BR. 9,3,1,12.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?9,3,1,12) *śāntim*
+[BHAG. 9,31.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?9,31) *duḥkhāntam*
+[18,36.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?18,36)
   <sub>DCS 57 · attested</sub>
 
 **4)** eintreten, sich einfügen: *sūtavāke devatā nigacchanti* [ŚĀṄKH. ŚR. 1,16,10. 17,6. 3,8,21. 5,18,7.]

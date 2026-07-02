@@ -15,11 +15,11 @@
 - **EN:** — With *prati* to fly to meet, to hasten to meet; with Acc.
   <sub>attested</sub>
 
-**mit_T7_1)** — 1〉 dahinfliegen [ṚV. 10,96,9]. durchfliegen.
+**mit_T7_1)** — 1〉 dahinfliegen [ṚV. 10,96,9](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.096.html#rv10.096.09). durchfliegen.
 
-- **RU:** — 1〉 лететь вдаль [ṚV. 10,96,9]. пролетать.
+- **RU:** — 1〉 лететь вдаль [ṚV. 10,96,9](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.096.html#rv10.096.09). пролетать.
 - **EN:** — With *vi*
-— 1〉 to fly along [ṚV. 10,96,9]. to fly through.
+— 1〉 to fly along [ṚV. 10,96,9](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.096.html#rv10.096.09). to fly through.
   <sub>attested</sub>
 
 **mit_T7_2)** — 2〉 sich spalten, zerspringen, bersten (vom Kopfe).

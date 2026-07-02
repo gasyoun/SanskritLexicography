@@ -48,10 +48,10 @@
 - **EN:** — With *ni* to bend, to lower.
   <sub>attested</sub>
 
-**preverb-nis)** — Mit *nis* bei Seite legen, — schieben, aus der Stelle rücken, herausschieben aus (Abl. [ṚV. 6,62,6]). *oṣṭhau* die Lippen verziehen. Pass. sich bei Seite drücken, entwischen. *nirbhugna* gebogen, verdreht (Augen).
+**preverb-nis)** — Mit *nis* bei Seite legen, — schieben, aus der Stelle rücken, herausschieben aus (Abl. [ṚV. 6,62,6](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.062.html#rv06.062.06)). *oṣṭhau* die Lippen verziehen. Pass. sich bei Seite drücken, entwischen. *nirbhugna* gebogen, verdreht (Augen).
 
-- **RU:** — С *nis* «откладывать в сторону, отодвигать, смещать с места, выдвигать из» (Abl. [ṚV. 6,62,6]). *oṣṭhau* «кривить губы». Pass. «отклоняться в сторону, ускользать». *nirbhugna* «согнутый, вывернутый» (о глазах).
-- **EN:** — With *nis* to lay aside, to push aside, to displace, to push out of (Abl. [ṚV. 6,62,6]). *oṣṭhau* to distort the lips. Pass. to press to one side, to slip away. *nirbhugna* bent, twisted (of eyes).
+- **RU:** — С *nis* «откладывать в сторону, отодвигать, смещать с места, выдвигать из» (Abl. [ṚV. 6,62,6](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.062.html#rv06.062.06)). *oṣṭhau* «кривить губы». Pass. «отклоняться в сторону, ускользать». *nirbhugna* «согнутый, вывернутый» (о глазах).
+- **EN:** — With *nis* to lay aside, to push aside, to displace, to push out of (Abl. [ṚV. 6,62,6](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.062.html#rv06.062.06)). *oṣṭhau* to distort the lips. Pass. to press to one side, to slip away. *nirbhugna* bent, twisted (of eyes).
   <sub>attested</sub>
 
 **preverb-parā)** — Mit *vinis* bei Seite biegen.
@@ -120,10 +120,10 @@
 - **EN:** — 3〉 Act. to be of benefit to someone (Acc.), to be of advantage, to profit, to serve. Once v. l. Med.
   <sub>attested</sub>
 
-**4-pass-through-time)** — 4〉 in der Astr. durchlaufen, mit Acc. [Spr. 7740] (zugleich geniessen, verzehren) Eine best. Zeit durchlaufen, so v. a. verleben, währen, erfüllen, dauern. — Wird mit *yuj* verwechselt.
+**4-pass-through-time)** — 4〉 in der Astr. durchlaufen, mit Acc. [Spr. 7740](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7740) (zugleich geniessen, verzehren) Eine best. Zeit durchlaufen, so v. a. verleben, währen, erfüllen, dauern. — Wird mit *yuj* verwechselt.
 
-- **RU:** — 4〉 в Astr. «проходить, протекать», с Acc. [Spr. 7740] (одновременно «наслаждаться, расходовать») определённый best. период времени «проживать, длиться, наполнять, продолжаться». — Смешивается с *yuj*.
-- **EN:** — 4〉 in the Astr. to pass through; with Acc. [Spr. 7740] (at the same time to enjoy, to consume) to pass through a best. period of time, thus v. a. to live through, to last, to fulfil, to endure. — Confused with *yuj*.
+- **RU:** — 4〉 в Astr. «проходить, протекать», с Acc. [Spr. 7740](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7740) (одновременно «наслаждаться, расходовать») определённый best. период времени «проживать, длиться, наполнять, продолжаться». — Смешивается с *yuj*.
+- **EN:** — 4〉 in the Astr. to pass through; with Acc. [Spr. 7740](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7740) (at the same time to enjoy, to consume) to pass through a best. period of time, thus v. a. to live through, to last, to fulfil, to endure. — Confused with *yuj*.
   <sub>attested</sub>
 
 **caus-intro)** — Caus. *bhojayati*. *˚te* (metrisch)
@@ -249,8 +249,8 @@
 **preverb-vi-3)** — 3〉 verspeisen, auf-, verzehren [KĀD. 2,118,1]. ([145,6]).
 - **EN:** — 3〉 to eat up, to devour, to consume [KĀD. 2,118,1]. ([145,6]).
 
-**preverb-vi-4)** — 4〉 geniessen, benutzen, gebrauchen. — *paribhujyantam* [MBH. 11,97] fehlerhaft für *˚bhṛjjyantam*. — *paribubhukṣita* s. bes. ([Nachtr. 4])
-- **EN:** — 4〉 to enjoy, to use, to employ. — *paribhujyantam* [MBH. 11,97] erroneously for *˚bhṛjjyantam*. — *paribubhukṣita* s. bes. ([Nachtr. 4])
+**preverb-vi-4)** — 4〉 geniessen, benutzen, gebrauchen. — *paribhujyantam* [MBH. 11,97](https://sanskrit-lexicon-scans.github.io/mbhcalc?11.97) fehlerhaft für *˚bhṛjjyantam*. — *paribubhukṣita* s. bes. ([Nachtr. 4])
+- **EN:** — 4〉 to enjoy, to use, to employ. — *paribhujyantam* [MBH. 11,97](https://sanskrit-lexicon-scans.github.io/mbhcalc?11.97) erroneously for *˚bhṛjjyantam*. — *paribubhukṣita* s. bes. ([Nachtr. 4])
 
 **preverb-sam-intro)** — Mit *pra*
 - **EN:** — With *pra*
@@ -282,8 +282,8 @@
 **preverb-sam3-intro)** — Mit *sam*
 - **EN:** — With *sam*
 
-**preverb-sam3-1)** — 1〉 zusammen geniessen, ein gemeinsames Mahl halten [AV. 3,10,7. 11,2,31]. [ĀPAST. 2,17,9]. (wohl *saṃbhuñjatāṃ* zu lesen).
-- **EN:** — 1〉 to enjoy together, to share a common meal [AV. 3,10,7. 11,2,31]. [ĀPAST. 2,17,9]. (probably to be read *saṃbhuñjatāṃ*).
+**preverb-sam3-1)** — 1〉 zusammen geniessen, ein gemeinsames Mahl halten [AV. 3,10,7. 11,2,31](https://sanskrit-lexicon.github.io/avlinks/avhymns/av03.010.html#av03.010.07). [ĀPAST. 2,17,9]. (wohl *saṃbhuñjatāṃ* zu lesen).
+- **EN:** — 1〉 to enjoy together, to share a common meal [AV. 3,10,7. 11,2,31](https://sanskrit-lexicon.github.io/avlinks/avhymns/av03.010.html#av03.010.07). [ĀPAST. 2,17,9]. (probably to be read *saṃbhuñjatāṃ*).
 
 **preverb-sam3-2)** — 2〉 geniessen, fleischlich geniessen.
 - **EN:** — 2〉 to enjoy, to enjoy carnally.
@@ -375,13 +375,13 @@
 — 1〉 Etwas vorweg essen.
 — 2〉 Jmd (Acc.) beim Essen übergehen, ohne Essen lassen.
 — 3〉 verspeisen, auf-, verzehren [KĀD. 2,118,1]. ([145,6]).
-— 4〉 geniessen, benutzen, gebrauchen. — *paribhujyantam* [MBH. 11,97] fehlerhaft für *˚bhṛjjyantam*. — *paribubhukṣita* s. bes. ([Nachtr. 4])
+— 4〉 geniessen, benutzen, gebrauchen. — *paribhujyantam* [MBH. 11,97](https://sanskrit-lexicon-scans.github.io/mbhcalc?11.97) fehlerhaft für *˚bhṛjjyantam*. — *paribubhukṣita* s. bes. ([Nachtr. 4])
 
 - **RU:** — С *pari*
 — 1〉 «есть заранее, есть прежде других».
 — 2〉 «обходить кого-либо» (Acc.) «при еде, оставлять без угощения».
 — 3〉 «поедать, съедать, пожирать, истреблять» [KĀD. 2,118,1]. ([145,6]).
-— 4〉 «наслаждаться, пользоваться, употреблять». — *paribhujyantam* [MBH. 11,97] ошибочно вместо *˚bhṛjjyantam*. — *paribubhukṣita* s. bes. ([Nachtr. 4])
+— 4〉 «наслаждаться, пользоваться, употреблять». — *paribhujyantam* [MBH. 11,97](https://sanskrit-lexicon-scans.github.io/mbhcalc?11.97) ошибочно вместо *˚bhṛjjyantam*. — *paribubhukṣita* s. bes. ([Nachtr. 4])
   <sub>attested</sub>
 
 **PW3-pari)** — Mit *pra*
@@ -405,13 +405,13 @@
   <sub>attested</sub>
 
 **PW3-sam3)** — Mit *sam*
-— 1〉 zusammen geniessen, ein gemeinsames Mahl halten [AV. 3,10,7. 11,2,31]. [ĀPAST. 2,17,9]. (wohl *saṃbhuñjatāṃ* zu lesen).
+— 1〉 zusammen geniessen, ein gemeinsames Mahl halten [AV. 3,10,7. 11,2,31](https://sanskrit-lexicon.github.io/avlinks/avhymns/av03.010.html#av03.010.07). [ĀPAST. 2,17,9]. (wohl *saṃbhuñjatāṃ* zu lesen).
 — 2〉 geniessen, fleischlich geniessen.
 — 3〉 in der Astr. durchlaufen. *saṃbhukta* [MAṆITTHA] bei [UTPALA zu VARĀH. BṚH. 26 (24),4].
 — Caus. Jmd (Acc.) speisen mit (Instr.).
 
 - **RU:** — С *sam*
-— 1〉 «наслаждаться вместе, держать общую трапезу» [AV. 3,10,7. 11,2,31]. [ĀPAST. 2,17,9]. (вероятно, следует читать *saṃbhuñjatāṃ*).
+— 1〉 «наслаждаться вместе, держать общую трапезу» [AV. 3,10,7. 11,2,31](https://sanskrit-lexicon.github.io/avlinks/avhymns/av03.010.html#av03.010.07). [ĀPAST. 2,17,9]. (вероятно, следует читать *saṃbhuñjatāṃ*).
 — 2〉 «наслаждаться, наслаждаться плотски».
 — 3〉 в Astr. «проходить (период)». *saṃbhukta* [MAṆITTHA] у [UTPALA zu VARĀH. BṚH. 26 (24),4].
 — Caus. «кормить кого-либо» (Acc.) «вместе с» (Instr.).

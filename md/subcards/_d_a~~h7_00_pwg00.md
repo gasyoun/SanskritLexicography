@@ -3,7 +3,7 @@
 `_d_a~~h7_00_pwg00`
 
 
-**head)** 2. *dhā*¦
+2. *dhā*¦
 
 - **RU:** 2. *dhā*¦
   <sub>DCS 4861 · attested</sub>

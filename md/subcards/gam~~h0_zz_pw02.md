@@ -57,10 +57,10 @@
 — 1) to rise upward, rise (of heavenly bodies [314,4]), to lift oneself up, shoot up.
   <sub>attested</sub>
 
-**ud-2)** — 2〉 hervorkommen, -brechen, zum Vorschein kommen. *udgata* hervorgekommen, — aus, hervorkommend aus (Abl. oder im Comp. vorangehend) [Spr. 7795]. zum Vorschein gekommen [Chr. 308,21].
+**ud-2)** — 2〉 hervorkommen, -brechen, zum Vorschein kommen. *udgata* hervorgekommen, — aus, hervorkommend aus (Abl. oder im Comp. vorangehend) [Spr. 7795](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7795). zum Vorschein gekommen [Chr. 308,21].
 
-- **RU:** — 2) появляться, пробиваться, показываться. *udgata* появившийся, — из, появляющийся из (Abl. или в Comp., предшествующем) [Spr. 7795]. показавшийся [Chr. 308,21].
-- **EN:** — 2) to come forth, break forth, come into view. *udgata* come forth from —, coming forth from (Abl., or preceding in the Comp.) [Spr. 7795]; come into view [Chr. 308,21].
+- **RU:** — 2) появляться, пробиваться, показываться. *udgata* появившийся, — из, появляющийся из (Abl. или в Comp., предшествующем) [Spr. 7795](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7795). показавшийся [Chr. 308,21].
+- **EN:** — 2) to come forth, break forth, come into view. *udgata* come forth from —, coming forth from (Abl., or preceding in the Comp.) [Spr. 7795](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7795); come into view [Chr. 308,21].
   <sub>attested</sub>
 
 **ud-3)** — 3〉 hinaus-, fortgehen, schwinden.
@@ -90,10 +90,10 @@
 — 1) to make rise (the sun) [MAHĀBH. 3,28,a.]
   <sub>attested</sub>
 
-**ud-caus-2)** — 2〉 hervorkommen lassen. *uroruhātpayāṃsi* Milch aus der Brust saugen [Spr. 7774].
+**ud-caus-2)** — 2〉 hervorkommen lassen. *uroruhātpayāṃsi* Milch aus der Brust saugen [Spr. 7774](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7774).
 
-- **RU:** — 2) заставлять появляться. *uroruhātpayāṃsi* высасывать молоко из груди [Spr. 7774].
-- **EN:** — 2) to make come forth. *uroruhātpayāṃsi* to suck milk from the breast [Spr. 7774].
+- **RU:** — 2) заставлять появляться. *uroruhātpayāṃsi* высасывать молоко из груди [Spr. 7774](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7774).
+- **EN:** — 2) to make come forth. *uroruhātpayāṃsi* to suck milk from the breast [Spr. 7774](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7774).
   <sub>attested</sub>
 
 **ud-des)** — Mit *apod* Desid. (*˚jigāṃsati*) sich zu entziehen suchen, mit Abl. [22,2].
@@ -186,10 +186,10 @@
 - **EN:** — 2) to confront someone (Acc.) with hostility, fall upon. *adhrameṇa* to treat someone badly.
   <sub>attested</sub>
 
-**sam-3)** — 3〉 feindlich zusammenstossen mit (instr.) [ṚV. 1,53,9].
+**sam-3)** — 3〉 feindlich zusammenstossen mit (instr.) [ṚV. 1,53,9](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.053.html#rv01.053.09).
 
-- **RU:** — 3) враждебно сталкиваться с (instr.) [ṚV. 1,53,9].
-- **EN:** — 3) to clash with in hostility (instr.) [ṚV. 1,53,9].
+- **RU:** — 3) враждебно сталкиваться с (instr.) [ṚV. 1,53,9](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.053.html#rv01.053.09).
+- **EN:** — 3) to clash with in hostility (instr.) [ṚV. 1,53,9](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.053.html#rv01.053.09).
   <sub>attested</sub>
 
 **sam-4)** — 4〉 inire (feminam).
@@ -198,10 +198,10 @@
 - **EN:** — 4) inire (feminam).
   <sub>attested</sub>
 
-**sam-5)** — 5〉 erreichen, treffen, widerfahren, begegnen, zu Theil werden; mit Acc. *upagata* zu Theil geworden [MBH. 13,57,40]. [Spr. 45].
+**sam-5)** — 5〉 erreichen, treffen, widerfahren, begegnen, zu Theil werden; mit Acc. *upagata* zu Theil geworden [MBH. 13,57,40](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?13,57,40). [Spr. 45](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?45).
 
-- **RU:** — 5) достигать, встречать, случаться, попадаться, доставаться в удел; с Acc. *upagata* доставшийся в удел [MBH. 13,57,40]. [Spr. 45].
-- **EN:** — 5) to reach, hit, befall, encounter, fall to one's share; with Acc. *upagata* fallen to one's share [MBH. 13,57,40]. [Spr. 45].
+- **RU:** — 5) достигать, встречать, случаться, попадаться, доставаться в удел; с Acc. *upagata* доставшийся в удел [MBH. 13,57,40](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?13,57,40). [Spr. 45](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?45).
+- **EN:** — 5) to reach, hit, befall, encounter, fall to one's share; with Acc. *upagata* fallen to one's share [MBH. 13,57,40](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?13,57,40). [Spr. 45](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?45).
   <sub>attested</sub>
 
 **sam-6)** — 6〉 einen best. Standpunct erreichen (von Sternen).
@@ -231,12 +231,12 @@
 **sam-ppp)** — *upagata*
 — 1〉 *angrenzend, in der Nähe befindlich.
 — 2〉 *heimgegangen, todt.
-— 3〉 versehen mit. *hemnā* so v. a. in Gold gefasst. *baddhiprayatnopagata* begleitet von [Spr. 3134].
+— 3〉 versehen mit. *hemnā* so v. a. in Gold gefasst. *baddhiprayatnopagata* begleitet von [Spr. 3134](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3134).
 — 4〉 eingeräumt, zugestanden, anerkannt.
 - **EN:** — *upagata*
 — 1) *bordering, situated nearby.
 — 2) *gone home, dead.
-— 3) provided with. *hemnā* thus v. a. set in gold. *baddhiprayatnopagata* accompanied by [Spr. 3134].
+— 3) provided with. *hemnā* thus v. a. set in gold. *baddhiprayatnopagata* accompanied by [Spr. 3134](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3134).
 — 4) conceded, granted, acknowledged.
 
 **sam-caus)** — Caus. herbeikommen lassen.
@@ -533,9 +533,9 @@
 - **RU:** — 2) *преставившийся, мёртвый.
   <sub>lexicographic</sub>
 
-**prati-ppp-3)** — 3〉 versehen mit. *hemnā* so v. a. in Gold gefasst. *baddhiprayatnopagata* begleitet von [Spr. 3134].
+**prati-ppp-3)** — 3〉 versehen mit. *hemnā* so v. a. in Gold gefasst. *baddhiprayatnopagata* begleitet von [Spr. 3134](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3134).
 
-- **RU:** — 3) снабжённый. *hemnā* так v. a. оправленный в золото. *baddhiprayatnopagata* сопровождаемый [Spr. 3134].
+- **RU:** — 3) снабжённый. *hemnā* так v. a. оправленный в золото. *baddhiprayatnopagata* сопровождаемый [Spr. 3134](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3134).
   <sub>attested</sub>
 
 **prati-ppp-4)** — 4〉 eingeräumt, zugestanden, anerkannt.

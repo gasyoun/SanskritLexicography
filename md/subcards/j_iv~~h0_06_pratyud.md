@@ -4,21 +4,21 @@
 
 
 **1)** — *pratyud* wieder aufleben
-[KATHĀS. 4,101.] *tena pratyujjijīva sā*
-[10,97.] [14,81.] — caus. wieder aufleben machen
-[PAÑCAT. 244,2.]
+[KATHĀS. 4,101.](https://sanskrit-lexicon-scans.github.io/kss/index.html?4,101) *tena pratyujjijīva sā*
+[10,97.](https://sanskrit-lexicon-scans.github.io/kss/index.html?10,97) [14,81.](https://sanskrit-lexicon-scans.github.io/kss/index.html?14,81) — caus. wieder aufleben machen
+[PAÑCAT. 244,2.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?244,2)
 
 - **RU:** pratyud+*pratyud* снова оживать, возвращаться к жизни
-[KATHĀS. 4,101.] *tena pratyujjijīva sā*
-[10,97.] [14,81.] — caus. снова оживлять, возвращать к жизни
-[PAÑCAT. 244,2.]
+[KATHĀS. 4,101.](https://sanskrit-lexicon-scans.github.io/kss/index.html?4,101) *tena pratyujjijīva sā*
+[10,97.](https://sanskrit-lexicon-scans.github.io/kss/index.html?10,97) [14,81.](https://sanskrit-lexicon-scans.github.io/kss/index.html?14,81) — caus. снова оживлять, возвращать к жизни
+[PAÑCAT. 244,2.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?244,2)
 - **EN:** *pratyud* 'to revive, come to life again'
-[KATHĀS. 4,101.] *tena pratyujjijīva sā*
+[KATHĀS. 4,101.](https://sanskrit-lexicon-scans.github.io/kss/index.html?4,101) *tena pratyujjijīva sā*
   <sub>attested</sub>
 
-**2)** [10,97.] [14,81.] — caus. wieder aufleben machen
-[PAÑCAT. 244,2.]
-- **EN:** [10,97.] [14,81.] — caus. 'to cause to revive': [PAÑCAT. 244,2.]
+**2)** [10,97.](https://sanskrit-lexicon-scans.github.io/kss/index.html?10,97) [14,81.](https://sanskrit-lexicon-scans.github.io/kss/index.html?14,81) — caus. wieder aufleben machen
+[PAÑCAT. 244,2.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?244,2)
+- **EN:** [10,97.](https://sanskrit-lexicon-scans.github.io/kss/index.html?10,97) [14,81.](https://sanskrit-lexicon-scans.github.io/kss/index.html?14,81) — caus. 'to cause to revive': [PAÑCAT. 244,2.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?244,2)
 
 **note)** — Vgl. *pratyujjīvana* .
 

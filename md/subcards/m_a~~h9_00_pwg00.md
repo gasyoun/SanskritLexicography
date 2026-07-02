@@ -9,14 +9,14 @@
 [PAT. a. a. O. 3,78,b.]
 
 **3 (cont.))** — *sam*, die Stelle
-[ṚV. 3,54,22] u. 2. *śravas*
+[ṚV. 3,54,22](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.054.html#rv03.054.22) u. 2. *śravas*
  2) richtiger erklärt.
 
 - **RU:** — *sam*, место
-[ṚV. 3,54,22] u. 2. *śravas*
+[ṚV. 3,54,22](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.054.html#rv03.054.22) u. 2. *śravas*
  2) правильнее истолковано.
 - **EN:** — *sam*, the passage
-[ṚV. 3,54,22] u. 2. *śravas*
+[ṚV. 3,54,22](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.054.html#rv03.054.22) u. 2. *śravas*
  2) explained more correctly.
   <sub>DCS 4955 · attested</sub>
 

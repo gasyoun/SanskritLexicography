@@ -21,10 +21,10 @@
 - **EN:** 5) to fasten, fix.
   <sub>attested</sub>
 
-**6)** — 6〉 *āhatya* [KATHĀS. 119,17] fehlerhaft für *āhṛtya* *etānyāhanti* [Verz. d. Oxf. H. 25,a, N. 2] für *etānyo* *hanti*.
+**6)** — 6〉 *āhatya* [KATHĀS. 119,17](https://sanskrit-lexicon-scans.github.io/kss/index.html?119,17) fehlerhaft für *āhṛtya* *etānyāhanti* [Verz. d. Oxf. H. 25,a, N. 2](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?25) für *etānyo* *hanti*.
 
-- **RU:** — 6〉 *āhatya* [KATHĀS. 119,17] ошибочно вместо *āhṛtya* *etānyāhanti* [Verz. d. Oxf. H. 25,a, N. 2] вместо *etānyo* *hanti*.
-- **EN:** 6) *āhatya* [KATHĀS. 119,17] erroneous for *āhṛtya* *etānyāhanti* [Verz. d. Oxf. H. 25,a, N. 2] for *etānyo* *hanti*.
+- **RU:** — 6〉 *āhatya* [KATHĀS. 119,17](https://sanskrit-lexicon-scans.github.io/kss/index.html?119,17) ошибочно вместо *āhṛtya* *etānyāhanti* [Verz. d. Oxf. H. 25,a, N. 2](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?25) вместо *etānyo* *hanti*.
+- **EN:** 6) *āhatya* [KATHĀS. 119,17](https://sanskrit-lexicon-scans.github.io/kss/index.html?119,17) erroneous for *āhṛtya* *etānyāhanti* [Verz. d. Oxf. H. 25,a, N. 2](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?25) for *etānyo* *hanti*.
   <sub>lexicographic</sub>
 
 **7)** — 7〉 *āhata*
@@ -105,10 +105,10 @@
 - **EN:** m) incongruous, absurd.
   <sub>attested</sub>
 
-**7n)** — n〉 *chalāhata* [KATHĀS. 49,10] fehlerhaft für *chalādṛta*.
+**7n)** — n〉 *chalāhata* [KATHĀS. 49,10](https://sanskrit-lexicon-scans.github.io/kss/index.html?49,10) fehlerhaft für *chalādṛta*.
 
-- **RU:** — n〉 *chalāhata* [KATHĀS. 49,10] ошибочно вместо *chalādṛta*.
-- **EN:** n) *chalāhata* [KATHĀS. 49,10] erroneous for *chalādṛta*.
+- **RU:** — n〉 *chalāhata* [KATHĀS. 49,10](https://sanskrit-lexicon-scans.github.io/kss/index.html?49,10) ошибочно вместо *chalādṛta*.
+- **EN:** n) *chalāhata* [KATHĀS. 49,10](https://sanskrit-lexicon-scans.github.io/kss/index.html?49,10) erroneous for *chalādṛta*.
   <sub>lexicographic</sub>
 
 **8-prefix-list1)** — Intens. schlagen auf.
@@ -255,10 +255,10 @@
 - **EN:** e) standing in contradiction.
   <sub>attested</sub>
 
-**11.4f)** — f〉 [MBH. 1,368] fehlerhaft für *vyāhṛta*.
+**11.4f)** — f〉 [MBH. 1,368](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.368) fehlerhaft für *vyāhṛta*.
 
-- **RU:** — f〉 [MBH. 1,368] ошибочно вместо *vyāhṛta*.
-- **EN:** f) [MBH. 1,368] erroneous for *vyāhṛta*.
+- **RU:** — f〉 [MBH. 1,368](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.368) ошибочно вместо *vyāhṛta*.
+- **EN:** f) [MBH. 1,368](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.368) erroneous for *vyāhṛta*.
   <sub>lexicographic</sub>
 
 **11-misc1)** — Caus. s. u. *ghātay*.
@@ -267,10 +267,10 @@
 - **EN:** Caus. s. u. *ghātay*.
   <sub>lexicographic</sub>
 
-**11-misc2)** — Mit *prativyā* nur scheinbar [MBH. 12,3724], da hier *pratigāhanti* die richtige Lesart ist.
+**11-misc2)** — Mit *prativyā* nur scheinbar [MBH. 12,3724](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3724), da hier *pratigāhanti* die richtige Lesart ist.
 
-- **RU:** — С *prativyā* лишь по видимости [MBH. 12,3724], так как здесь правильным чтением является *pratigāhanti*.
-- **EN:** With *prativyā* only apparently [MBH. 12,3724], since here *pratigāhanti* is the correct reading.
+- **RU:** — С *prativyā* лишь по видимости [MBH. 12,3724](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3724), так как здесь правильным чтением является *pratigāhanti*.
+- **EN:** With *prativyā* only apparently [MBH. 12,3724](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3724), since here *pratigāhanti* is the correct reading.
   <sub>lexicographic</sub>
 
 **12-intro)** — Mit *samā*
@@ -357,10 +357,10 @@
 - **EN:** 4) Med. to hang oneself.
   <sub>attested</sub>
 
-**13.5)** — 5〉 *uddhatya* [HARIV. 4408] fehlerhaft für *uddhṛtya*.
+**13.5)** — 5〉 *uddhatya* [HARIV. 4408](https://sanskrit-lexicon-scans.github.io/hariv?4408) fehlerhaft für *uddhṛtya*.
 
-- **RU:** — 5〉 *uddhatya* [HARIV. 4408] ошибочно вместо *uddhṛtya*.
-- **EN:** 5) *uddhatya* [HARIV. 4408] erroneous for *uddhṛtya*.
+- **RU:** — 5〉 *uddhatya* [HARIV. 4408](https://sanskrit-lexicon-scans.github.io/hariv?4408) ошибочно вместо *uddhṛtya*.
+- **EN:** 5) *uddhatya* [HARIV. 4408](https://sanskrit-lexicon-scans.github.io/hariv?4408) erroneous for *uddhṛtya*.
   <sub>lexicographic</sub>
 
 **13.6)** — 6〉 *uddhata*

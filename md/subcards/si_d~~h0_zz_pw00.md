@@ -3,7 +3,7 @@
 `si_d~~h0_zz_pw00`
 
 
-**head)** **1.** √*sidh*¦, *sedhati* (*gatikarman*, *śāstre māṅgalye ca*)
+**1.** √*sidh*¦, *sedhati* (*gatikarman*, *śāstre māṅgalye ca*)
 - **EN:** **1.** √*sidh*¦, *sedhati* (*gatikarman*, *śāstre māṅgalye ca*)
 
 **1)** — 1〉 scheuchen, treiben; vertreiben. *siddha* verscheucht.
@@ -90,10 +90,10 @@
 - **EN:** — With *samud* in *samutsedha*.
   <sub>DCS 2028 · attested</sub>
 
-**prefix-9)** — Mit *upa* abwehren, — abhalten von (Abl.) [MBH. 7,42,8]. Richtige *upa* [{{‹ed.› Vardh.->MBH.ed.Vardh.||20160103|Dhaval Patel, Jim Funderburk.|https://github.com/sanskrit-lexicon/CORRECTIONS/issues/216|to match with Bibliography in Preface}} 7,41,8].
+**prefix-9)** — Mit *upa* abwehren, — abhalten von (Abl.) [MBH. 7,42,8](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?7,42,8). Richtige *upa* [{{‹ed.› Vardh.->MBH.ed.Vardh.||20160103|Dhaval Patel, Jim Funderburk.|https://github.com/sanskrit-lexicon/CORRECTIONS/issues/216|to match with Bibliography in Preface}} 7,41,8].
 
-- **RU:** — С *upa* отражать, — удерживать от (Abl.) [MBH. 7,42,8]. Правильно *upa* [{{‹ed.› Vardh.->MBH.ed.Vardh.||20160103|Dhaval Patel, Jim Funderburk.|https://github.com/sanskrit-lexicon/CORRECTIONS/issues/216|to match with Bibliography in Preface}} 7,41,8].
-- **EN:** — With *upa* to ward off, to keep from (Abl.) [MBH. 7,42,8]. Correct *upa* [{{‹ed.› Vardh.->MBH.ed.Vardh.||20160103|Dhaval Patel, Jim Funderburk.|https://github.com/sanskrit-lexicon/CORRECTIONS/issues/216|to match with Bibliography in Preface}} 7,41,8].
+- **RU:** — С *upa* отражать, — удерживать от (Abl.) [MBH. 7,42,8](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?7,42,8). Правильно *upa* [{{‹ed.› Vardh.->MBH.ed.Vardh.||20160103|Dhaval Patel, Jim Funderburk.|https://github.com/sanskrit-lexicon/CORRECTIONS/issues/216|to match with Bibliography in Preface}} 7,41,8].
+- **EN:** — With *upa* to ward off, to keep from (Abl.) [MBH. 7,42,8](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?7,42,8). Correct *upa* [{{‹ed.› Vardh.->MBH.ed.Vardh.||20160103|Dhaval Patel, Jim Funderburk.|https://github.com/sanskrit-lexicon/CORRECTIONS/issues/216|to match with Bibliography in Preface}} 7,41,8].
   <sub>DCS 2028 · attested</sub>
 
 **prefix-10-intro)** — Mit *ni*

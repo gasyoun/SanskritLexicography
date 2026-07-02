@@ -3,7 +3,7 @@
 `si_d~~h0_zz_pw01`
 
 
-**head)** **2.** √*sidh*¦, *sidhyati* (metrisch oder ungenau auch Med.)
+**2.** √*sidh*¦, *sidhyati* (metrisch oder ungenau auch Med.)
 
 - **RU:** **2.** √*sidh*¦, *sidhyati* (метрически или неточно также Med.)
 - **EN:** **2.** √*sidh*¦, *sidhyati* (metrically or loosely also Med.)

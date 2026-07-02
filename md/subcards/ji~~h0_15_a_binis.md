@@ -4,10 +4,10 @@
 
 
 **1)** — *abhinis* besiegen, überwinden: *pāṇḍavenābhinirjitaḥ*
-[MBH. 14,2220.]
+[MBH. 14,2220.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2220)
 
 - **RU:** — *abhinis* побеждать, одолевать: *pāṇḍavenābhinirjitaḥ*
-[MBH. 14,2220.]
+[MBH. 14,2220.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2220)
 - **EN:** — *abhinis* to defeat, overcome: *pāṇḍavenābhinirjitaḥ*
-[MBH. 14,2220.]
+[MBH. 14,2220.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2220)
   <sub>DCS 4090 · attested</sub>

@@ -15,10 +15,10 @@
 - **EN:** — With *abhivi* Med. to come up to (Acc.).
   <sub>attested</sub>
 
-**3)** — Caus. überlegen, reflectiren [NIR. 1,13].
+**3)** — Caus. überlegen, reflectiren [NIR. 1,13](https://sanskrit-lexicon-scans.github.io/nirukta/app1?1,13).
 
-- **RU:** — Caus. обдумывать, размышлять [NIR. 1,13].
-- **EN:** — Caus. to consider, reflect [NIR. 1,13].
+- **RU:** — Caus. обдумывать, размышлять [NIR. 1,13](https://sanskrit-lexicon-scans.github.io/nirukta/app1?1,13).
+- **EN:** — Caus. to consider, reflect [NIR. 1,13](https://sanskrit-lexicon-scans.github.io/nirukta/app1?1,13).
   <sub>attested</sub>
 
 **4)** — Mit *parivi* ringsum ausströmen.
@@ -183,10 +183,10 @@
 - **EN:** — 5) to wander about, stray.
   <sub>attested</sub>
 
-**35)** — Caus. Jmd nachgehen lassen, so v. a. sich unterthänig machen [MBH. 12,301,111].
+**35)** — Caus. Jmd nachgehen lassen, so v. a. sich unterthänig machen [MBH. 12,301,111](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,301,111).
 
-- **RU:** — Caus. заставлять кого-либо следовать за собой, — v. a. подчинять себе [MBH. 12,301,111].
-- **EN:** — Caus. to make someone follow, so v. a. to make subject to oneself [MBH. 12,301,111].
+- **RU:** — Caus. заставлять кого-либо следовать за собой, — v. a. подчинять себе [MBH. 12,301,111](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,301,111).
+- **EN:** — Caus. to make someone follow, so v. a. to make subject to oneself [MBH. 12,301,111](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,301,111).
   <sub>attested</sub>
 
 **36)** — Mit *abhisam* zugehen auf, aufsuchen.

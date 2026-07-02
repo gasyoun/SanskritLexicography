@@ -16,16 +16,16 @@
   <sub>attested</sub>
 
 **4)** — 4) *yo jīvāmītyavagacchati* wer der Meinung ist, dass er lebe,
-[Spr. 4264.] — caus.
+[Spr. 4264.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4264) — caus.
  2)
 [SARVADARŚANAS. 29,12. 119,7.]
 
 - **RU:** — 4) *yo jīvāmītyavagacchati* тот, кто полагает, что он жив,
-[Spr. 4264.] — caus.
+[Spr. 4264.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4264) — caus.
  2)
 [SARVADARŚANAS. 29,12. 119,7.]
 - **EN:** — 4) *yo jīvāmītyavagacchati* one who is of the opinion that he is alive,
-[Spr. 4264.] — caus.
+[Spr. 4264.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4264) — caus.
  2)
 [SARVADARŚANAS. 29,12. 119,7.]
   <sub>attested</sub>

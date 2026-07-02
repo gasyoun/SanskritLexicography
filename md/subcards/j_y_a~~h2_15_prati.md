@@ -4,13 +4,13 @@
 
 
 **2)** 2)
-[AIT. BR. 6,34.]
+[AIT. BR. 6,34.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?6,34)
 
 - **RU:** 2)
-[AIT. BR. 6,34.]
+[AIT. BR. 6,34.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?6,34)
 - **EN:** — *prati*
  2)
-[AIT. BR. 6,34.]
+[AIT. BR. 6,34.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?6,34)
   <sub>DCS 5059 · attested</sub>
 
 **4)** — 4) *tredhaināṃ pratijānate*

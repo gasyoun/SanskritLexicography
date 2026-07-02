@@ -11,13 +11,13 @@
 [SIDDH. K. 166,a,4.]
 
 **2)** — 2) behandeln: *bālānapi ca mārgasthānsāntvena sadudācaran* (lies: *samudā˚*)
-[MBH. 12,1203.]
+[MBH. 12,1203.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.1203)
 - **EN:** — 2) to treat, deal with: *bālānapi ca mārgasthānsāntvena sadudācaran* (read: *samudā˚*)
-[MBH. 12,1203.]
+[MBH. 12,1203.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.1203)
 
 **3)** — 3) thun, vollbringen: *te yadbrūyuḥ — taccaiva samudācara*
-[MBH. 13,3968.]
+[MBH. 13,3968.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3968)
 — Vgl. *samudācāra* .
 - **EN:** — 3) to do, accomplish: *te yadbrūyuḥ — taccaiva samudācara*
-[MBH. 13,3968.]
+[MBH. 13,3968.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3968)
 — Vgl. *samudācāra*.

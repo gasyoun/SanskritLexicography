@@ -4,12 +4,12 @@
 
 
 **1)** — *vipra* auseinandergehen
-[KĀTY. ŚR. 24,6,13.]
+[KĀTY. ŚR. 24,6,13.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?24,6,13)
 
 - **RU:** — *vipra* расходиться
-[KĀTY. ŚR. 24,6,13.]
+[KĀTY. ŚR. 24,6,13.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?24,6,13)
 - **EN:** — *vipra* to go apart, disperse
-[KĀTY. ŚR. 24,6,13.]
+[KĀTY. ŚR. 24,6,13.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?24,6,13)
   <sub>attested</sub>
 
 **2)** — Vgl. *vipravrājin* .

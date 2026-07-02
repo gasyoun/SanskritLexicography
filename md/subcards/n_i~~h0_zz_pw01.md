@@ -75,10 +75,10 @@
 - **EN:** — 2〉 to bring hither, bring here.
   <sub>attested</sub>
 
-**with T17)** — Mit *prā* zuführen, bringen [ṚV. 8,21,9].
+**with T17)** — Mit *prā* zuführen, bringen [ṚV. 8,21,9](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.021.html#rv08.021.09).
 
-- **RU:** — С *prā* подводить, подносить [ṚV. 8,21,9].
-- **EN:** — With *prā* to convey, bring [ṚV. 8,21,9].
+- **RU:** — С *prā* подводить, подносить [ṚV. 8,21,9](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.021.html#rv08.021.09).
+- **EN:** — With *prā* to convey, bring [ṚV. 8,21,9](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.021.html#rv08.021.09).
   <sub>attested</sub>
 
 **with T19 — sense 1)** — Mit *pratyā*
@@ -420,16 +420,16 @@
 - **EN:** — 3〉 to incline, bend.
   <sub>attested</sub>
 
-**with T75 — sense 4)** — 4〉 niedergiessen, hingiessen, ausgiessen (einen Topf) [YĀJÑ. 3,295. fg.] eingiessen.
+**with T75 — sense 4)** — 4〉 niedergiessen, hingiessen, ausgiessen (einen Topf) [YĀJÑ. 3,295. fg.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?3,295) eingiessen.
 
-- **RU:** — 4〉 выливать, проливать (горшок) [YĀJÑ. 3,295. fg.] вливать.
-- **EN:** — 4〉 to pour down, pour forth, pour out (a pot) [YĀJÑ. 3,295. fg.] to pour in.
+- **RU:** — 4〉 выливать, проливать (горшок) [YĀJÑ. 3,295. fg.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?3,295) вливать.
+- **EN:** — 4〉 to pour down, pour forth, pour out (a pot) [YĀJÑ. 3,295. fg.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?3,295) to pour in.
   <sub>attested</sub>
 
-**with T75 — sense 5)** — 5〉 eingehen lassen in (Loc.) [BHĀG. P. 2,2,16].
+**with T75 — sense 5)** — 5〉 eingehen lassen in (Loc.) [BHĀG. P. 2,2,16](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,2,16).
 
-- **RU:** — 5〉 вводить в (Loc.) [BHĀG. P. 2,2,16].
-- **EN:** — 5〉 to cause to enter into (Loc.) [BHĀG. P. 2,2,16].
+- **RU:** — 5〉 вводить в (Loc.) [BHĀG. P. 2,2,16](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,2,16).
+- **EN:** — 5〉 to cause to enter into (Loc.) [BHĀG. P. 2,2,16](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,2,16).
   <sub>attested</sub>
 
 **with T75 — sense 6)** — 6〉 darbringen.

@@ -46,10 +46,10 @@
 - **EN:** 1. √*muc* V. 12) someone (Gen.) escapes, slips away from [JĀTAKAM. 20]. [21,11]. [22].
   <sub>DCS 3914 · attested</sub>
 
-**2)** — Mit *pra* auch sich losmachen von (Gen.), entgehen [R. ed. Bomb. 3,66,11]. *pramukta* frei von (Abl.) [MAHĀVY. 19,47].
+**2)** — Mit *pra* auch sich losmachen von (Gen.), entgehen [R. ed. Bomb. 3,66,11](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,66,11). *pramukta* frei von (Abl.) [MAHĀVY. 19,47].
 
-- **RU:** — С *pra* также освобождаться от (Gen.), избегать [R. ed. Bomb. 3,66,11]. *pramukta* свободный от (Abl.) [MAHĀVY. 19,47].
-- **EN:** — With *pra* also: to free oneself from (Gen.), to escape [R. ed. Bomb. 3,66,11]. *pramukta*: free from (Abl.) [MAHĀVY. 19,47].
+- **RU:** — С *pra* также освобождаться от (Gen.), избегать [R. ed. Bomb. 3,66,11](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,66,11). *pramukta* свободный от (Abl.) [MAHĀVY. 19,47].
+- **EN:** — With *pra* also: to free oneself from (Gen.), to escape [R. ed. Bomb. 3,66,11](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,66,11). *pramukta*: free from (Abl.) [MAHĀVY. 19,47].
   <sub>DCS 3914 · attested</sub>
 
 **3)** — Mit *vi*, *˚mukta* Jmd (Gen.) entkommen [JĀTAKAM. 21]. [23].
@@ -58,10 +58,10 @@
 - **EN:** — With *vi*, *˚mukta*: someone (Gen.) gets away, escapes [JĀTAKAM. 21]. [23].
   <sub>DCS 3914 · attested</sub>
 
-**4)** — Mit *pratisam*, *˚saṃmukta* erlöst, von einem peinlichen Zustande befreit [R. ed. Bomb. 4,59,5].
+**4)** — Mit *pratisam*, *˚saṃmukta* erlöst, von einem peinlichen Zustande befreit [R. ed. Bomb. 4,59,5](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,59,5).
 
-- **RU:** — С *pratisam*, *˚saṃmukta* освобождённый, избавленный от мучительного состояния [R. ed. Bomb. 4,59,5].
-- **EN:** — With *pratisam*, *˚saṃmukta*: released, freed from a painful state/condition [R. ed. Bomb. 4,59,5].
+- **RU:** — С *pratisam*, *˚saṃmukta* освобождённый, избавленный от мучительного состояния [R. ed. Bomb. 4,59,5](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,59,5).
+- **EN:** — With *pratisam*, *˚saṃmukta*: released, freed from a painful state/condition [R. ed. Bomb. 4,59,5](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,59,5).
   <sub>DCS 3914 · attested</sub>
 
 **intro)** **2.** *muc*¦

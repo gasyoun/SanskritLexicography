@@ -14,9 +14,9 @@
 - **EN:** √*jan*¦ with *nis*, *nirjāta* arisen from Abl., [VAJRACCH. 25,4]. [6].
 — With *pratyā* [KAUṢ. UP. 1,2].
 
-**T38-39)** √*jan*¦ mit *pra*, *prajāta* qui semen immisit [KĀTY. ŚR. 20,3,20].
+**T38-39)** √*jan*¦ mit *pra*, *prajāta* qui semen immisit [KĀTY. ŚR. 20,3,20](https://sanskrit-lexicon-scans.github.io/katyasr/app1?20,3,20).
 — Mit *parivi* in der Fortpflanzung übertreffen, mit Acc. [MAITR. S. 2,5,1 (46,15)].
-- **EN:** √*jan*¦ with *pra*, *prajāta* "qui semen immisit" (one who has emitted semen) [KĀTY. ŚR. 20,3,20].
+- **EN:** √*jan*¦ with *pra*, *prajāta* "qui semen immisit" (one who has emitted semen) [KĀTY. ŚR. 20,3,20](https://sanskrit-lexicon-scans.github.io/katyasr/app1?20,3,20).
 — With *parivi* to surpass in propagation, with Acc. [MAITR. S. 2,5,1 (46,15)].
 
 **T40)** √*jan*¦, *nirjāta* (mit *niryāta* wechselnd) bedeutet vollkommen vertraut mit, steht also richtig nach.
@@ -25,13 +25,13 @@
 - **EN:** √*jan*¦, *nirjāta* (alternating with *niryāta*) means "thoroughly familiar with", and so rightly stands after.
   <sub>mixed</sub>
 
-**T41-46)** √*jan*¦ II. 2. *jajñivān* lebte auf, wurde wieder lebendig [MBH. 8,33,31].
+**T41-46)** √*jan*¦ II. 2. *jajñivān* lebte auf, wurde wieder lebendig [MBH. 8,33,31](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?8,33,31).
 — Mit *ava*, *˚jāta* = *apajāta* missrathen [DIVYĀVAD. 2,13].
 — Mit *pratyā* II. 3.
 — Mit *nis* 3. 5.
 — Mit *pra* II. 4.
 — Mit *parivi* 4.
-- **EN:** √*jan*¦ II. 2. *jajñivān* revived, came to life again [MBH. 8,33,31].
+- **EN:** √*jan*¦ II. 2. *jajñivān* revived, came to life again [MBH. 8,33,31](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?8,33,31).
 — With *ava*, *˚jāta* = *apajāta* to turn out badly, to fail [DIVYĀVAD. 2,13].
 — With *pratyā* II. 3.
 — With *nis* 3. 5.
@@ -48,9 +48,9 @@
 - **RU:** — С *pratyā* [KAUṢ. UP. 1,2].
   <sub>mixed</sub>
 
-**1)** √*jan*¦ mit *pra*, *prajāta* qui semen immisit [KĀTY. ŚR. 20,3,20].
+**1)** √*jan*¦ mit *pra*, *prajāta* qui semen immisit [KĀTY. ŚR. 20,3,20](https://sanskrit-lexicon-scans.github.io/katyasr/app1?20,3,20).
 
-- **RU:** √*jan*¦ с *pra*, *prajāta* qui semen immisit [KĀTY. ŚR. 20,3,20].
+- **RU:** √*jan*¦ с *pra*, *prajāta* qui semen immisit [KĀTY. ŚR. 20,3,20](https://sanskrit-lexicon-scans.github.io/katyasr/app1?20,3,20).
   <sub>mixed</sub>
 
 **2)** — Mit *parivi* in der Fortpflanzung übertreffen, mit Acc. [MAITR. S. 2,5,1 (46,15)].
@@ -58,9 +58,9 @@
 - **RU:** — С *parivi* превосходить в деторождении, с Acc. [MAITR. S. 2,5,1 (46,15)].
   <sub>mixed</sub>
 
-**II.2)** √*jan*¦ II. 2. *jajñivān* lebte auf, wurde wieder lebendig [MBH. 8,33,31].
+**II.2)** √*jan*¦ II. 2. *jajñivān* lebte auf, wurde wieder lebendig [MBH. 8,33,31](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?8,33,31).
 
-- **RU:** √*jan*¦ II. 2. *jajñivān* ожил, снова ожил [MBH. 8,33,31].
+- **RU:** √*jan*¦ II. 2. *jajñivān* ожил, снова ожил [MBH. 8,33,31](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?8,33,31).
   <sub>attested</sub>
 
 **ava)** — Mit *ava*, *˚jāta* = *apajāta* missrathen [DIVYĀVAD. 2,13].

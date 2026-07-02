@@ -94,9 +94,9 @@
 - **EN:** — i〉 *śāntaṃ pāpam* (also repeated) may the evil be averted — an exclamation with which one wards off misfortune that an uttered word might cause. *dhik śāntam* so v. a. God forbid! By no means! *śāntam* alone = *śāntaṃ pāpam* and also so v. a. God help me!
   <sub>attested</sub>
 
-**caus_1)** — Caus. *śamayati* (metrisch auch *śāmayati*; Pass. *śāmyate* [auch [VAITĀN. 10,18] und zu [Spr. 6899]] u. s. w. wohl nur fehlerhaft)
+**caus_1)** — Caus. *śamayati* (metrisch auch *śāmayati*; Pass. *śāmyate* [auch [VAITĀN. 10,18] und zu [Spr. 6899](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?6899)] u. s. w. wohl nur fehlerhaft)
 — 1〉 beruhigen, stillen, beschwichtigen.
-- **EN:** — Caus. *śamayati* (metrically also *śāmayati*; Pass. *śāmyate* [also [VAITĀN. 10,18] and to [Spr. 6899]] u. s. w. probably erroneous only)
+- **EN:** — Caus. *śamayati* (metrically also *śāmayati*; Pass. *śāmyate* [also [VAITĀN. 10,18] and to [Spr. 6899](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?6899)] u. s. w. probably erroneous only)
 — 1〉 to calm, still, appease.
 
 **caus_2)** — 2〉 zurechtbringen, einen Fehler —, ein Uebel gut machen, placare.
@@ -174,10 +174,10 @@
 — 1〉 to become calm, still.
   <sub>attested</sub>
 
-**pra_2)** — 2〉 erlöschen [Spr. 7848].
+**pra_2)** — 2〉 erlöschen [Spr. 7848](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7848).
 
-- **RU:** — 2〉 угасать [Spr. 7848].
-- **EN:** — 2〉 to be extinguished [Spr. 7848].
+- **RU:** — 2〉 угасать [Spr. 7848](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7848).
+- **EN:** — 2〉 to be extinguished [Spr. 7848](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7848).
   <sub>attested</sub>
 
 **pra_3)** — 3〉 aufhören, sich legen.
@@ -241,12 +241,12 @@
   <sub>attested</sub>
 
 **vi_1)** — Mit *vyupa*
-— 1〉 sich beruhigen [MBH. 6,121,52].
+— 1〉 sich beruhigen [MBH. 6,121,52](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?6,121,52).
 
 - **RU:** — Mit *vyupa*
-— 1〉 успокаиваться [MBH. 6,121,52].
+— 1〉 успокаиваться [MBH. 6,121,52](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?6,121,52).
 - **EN:** — With *vyupa*
-— 1〉 to calm oneself [MBH. 6,121,52].
+— 1〉 to calm oneself [MBH. 6,121,52](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?6,121,52).
   <sub>attested</sub>
 
 **vi_2)** — 2〉 aufhören, sich legen. *duḥkhaṃ* *vyupaśāntam* [KĀRAṆḌ. 48,9].
@@ -262,12 +262,12 @@
   <sub>attested</sub>
 
 **sam_1a)** — Mit *ni*, *niśānta*
-— 1〉 *beruhigt, ruhig [H. an. 3,271]. [MED. t. 119].
+— 1〉 *beruhigt, ruhig [H. an. 3,271](https://sanskrit-lexicon-scans.github.io/anekarthasamgraha/app1?3,271). [MED. t. 119](https://sanskrit-lexicon-scans.github.io/medini/app1?t,119).
 
 - **RU:** — Mit *ni*, *niśānta*
-— 1〉 *успокоенный, тихий [H. an. 3,271]. [MED. t. 119].
+— 1〉 *успокоенный, тихий [H. an. 3,271](https://sanskrit-lexicon-scans.github.io/anekarthasamgraha/app1?3,271). [MED. t. 119](https://sanskrit-lexicon-scans.github.io/medini/app1?t,119).
 - **EN:** — With *ni*, *niśānta*
-— 1〉 *calmed, calm [H. an. 3,271]. [MED. t. 119].
+— 1〉 *calmed, calm [H. an. 3,271](https://sanskrit-lexicon-scans.github.io/anekarthasamgraha/app1?3,271). [MED. t. 119](https://sanskrit-lexicon-scans.github.io/medini/app1?t,119).
   <sub>attested</sub>
 
 **sam_1b)** — 2〉 hergebracht, üblich.
@@ -521,9 +521,9 @@
 - **RU:** — 3〉 *śānta*
   <sub>attested</sub>
 
-**caus-intro)** — Caus. *śamayati* (metrisch auch *śāmayati*; Pass. *śāmyate* [auch [VAITĀN. 10,18] und zu [Spr. 6899]] u. s. w. wohl nur fehlerhaft)
+**caus-intro)** — Caus. *śamayati* (metrisch auch *śāmayati*; Pass. *śāmyate* [auch [VAITĀN. 10,18] und zu [Spr. 6899](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?6899)] u. s. w. wohl nur fehlerhaft)
 
-- **RU:** — Caus. *śamayati* (metrisch auch *śāmayati*; Pass. *śāmyate* [auch [VAITĀN. 10,18] und zu [Spr. 6899]] u. s. w. wohl nur fehlerhaft)
+- **RU:** — Caus. *śamayati* (metrisch auch *śāmayati*; Pass. *śāmyate* [auch [VAITĀN. 10,18] und zu [Spr. 6899](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?6899)] u. s. w. wohl nur fehlerhaft)
   <sub>attested</sub>
 
 **caus-1)** — 1〉 beruhigen, stillen, beschwichtigen.

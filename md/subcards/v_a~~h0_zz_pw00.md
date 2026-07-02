@@ -50,10 +50,10 @@
 - **EN:** — 7〉 after interrogative and relative _Pronomm._, so v. a. "perhaps, roughly."
   <sub>DCS 25488 · attested</sub>
 
-**1-8)** — 8〉 metrisch statt *ca* und [MBH. 12,324,20.] [25].
+**1-8)** — 8〉 metrisch statt *ca* und [MBH. 12,324,20.](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,324,20) [25](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,324,25).
 
-- **RU:** — 8〉 метрически вместо *ca* и [MBH. 12,324,20.] [25].
-- **EN:** — 8〉 metrically instead of *ca* and [MBH. 12,324,20.] [25].
+- **RU:** — 8〉 метрически вместо *ca* и [MBH. 12,324,20.](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,324,20) [25](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,324,25).
+- **EN:** — 8〉 metrically instead of *ca* and [MBH. 12,324,20.](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,324,20) [25](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,324,25).
   <sub>DCS 25488 · attested</sub>
 
 **1-9)** — 9〉 nach den Lexicographen auch blosser Lückenbüsser.
@@ -215,10 +215,10 @@
 - **EN:** — 2〉 = **3.** *vā*
   <sub>DCS 25488 · attested</sub>
 
-**2-nis)** — Mit *upa* durch Vertrocknen ausgehen, eintrocknen [KĀTY. ŚR. 25,12,10.] [12].
+**2-nis)** — Mit *upa* durch Vertrocknen ausgehen, eintrocknen [KĀTY. ŚR. 25,12,10.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?25,12,10) [12](https://sanskrit-lexicon-scans.github.io/katyasr/app1?25,12,12).
 
-- **RU:** — С *upa* угасать от высыхания, иссыхать [KĀTY. ŚR. 25,12,10.] [12].
-- **EN:** — With *upa* "to go out by drying up, dry out" [KĀTY. ŚR. 25,12,10.] [12].
+- **RU:** — С *upa* угасать от высыхания, иссыхать [KĀTY. ŚR. 25,12,10.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?25,12,10) [12](https://sanskrit-lexicon-scans.github.io/katyasr/app1?25,12,12).
+- **EN:** — With *upa* "to go out by drying up, dry out" [KĀTY. ŚR. 25,12,10.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?25,12,10) [12](https://sanskrit-lexicon-scans.github.io/katyasr/app1?25,12,12).
   <sub>DCS 25488 · attested</sub>
 
 **2-nir)** — Mit *nis*
@@ -242,8 +242,8 @@
 **2-nir-4)** — 4〉 *nirvāṇa*
 - **EN:** — 4〉 *nirvāṇa*
 
-**2-nir-4a)** — a〉 erloschen; von der Sonne so v. a. untergegangen [Spr. 1276].
-- **EN:** — a〉 "extinguished;" of the sun so v. a. "set" [Spr. 1276].
+**2-nir-4a)** — a〉 erloschen; von der Sonne so v. a. untergegangen [Spr. 1276](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1276).
+- **EN:** — a〉 "extinguished;" of the sun so v. a. "set" [Spr. 1276](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1276).
 
 **2-nir-4b)** — b〉 bei dem das Lebenslicht erloschen ist, vollkommen beruhigt, erlöst von den Banden des Lebens.
 - **EN:** — b〉 "one in whom the light of life is extinguished, completely stilled, freed from the bonds of life."
@@ -272,10 +272,10 @@
 **2-nir-caus-5)** — 5〉 zum Nirvāṇa führen [LALIT. 376,8].
 - **EN:** — 5〉 "to lead to" Nirvāṇa [LALIT. 376,8].
 
-**2-nir-anu)** — Mit *anunis* erlöschen nach (Acc.) [Spr. 1276].
+**2-nir-anu)** — Mit *anunis* erlöschen nach (Acc.) [Spr. 1276](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1276).
 
-- **RU:** — С *anunis* угасать вслед за (Acc.) [Spr. 1276].
-- **EN:** — With *anunis* "to be extinguished after" (Acc.) [Spr. 1276].
+- **RU:** — С *anunis* угасать вслед за (Acc.) [Spr. 1276](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1276).
+- **EN:** — With *anunis* "to be extinguished after" (Acc.) [Spr. 1276](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1276).
   <sub>DCS 25488 · attested</sub>
 
 **2-nir-pari)** — Mit *parinis* vollkommen erlöschen, — zur Ruhe gelangen [LALIT. 489,5. 8. 15]. Vgl. *aparinirvāṇa* ([Nachtr. 1]).
@@ -332,10 +332,10 @@
 - **EN:** — With *anuvi* "to blow through in succession or lengthwise."
   <sub>DCS 25488 · attested</sub>
 
-**2-sam2)** — Mit *sam* wehen [MBH. 12,328,37].
+**2-sam2)** — Mit *sam* wehen [MBH. 12,328,37](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,328,37).
 
-- **RU:** — С *sam* веять, дуть [MBH. 12,328,37].
-- **EN:** — With *sam* "to blow" [MBH. 12,328,37].
+- **RU:** — С *sam* веять, дуть [MBH. 12,328,37](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,328,37).
+- **EN:** — With *sam* "to blow" [MBH. 12,328,37](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,328,37).
   <sub>DCS 25488 · attested</sub>
 
 **2-samanu)** — Mit *anusam* der Reihe nach (zusammen) anwehen.
@@ -359,16 +359,16 @@
 - **EN:** — 2〉 Act. ([ĀPAST. 1,12,3]) Med. "to blow." Confusion with **2.** *vā*; likewise further below.
   <sub>DCS 25488 · attested</sub>
 
-**3-3)** — 3〉 verlustig gehen, mit Gen. [ṚV. 8,47,6].
+**3-3)** — 3〉 verlustig gehen, mit Gen. [ṚV. 8,47,6](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.047.html#rv08.047.06).
 
-- **RU:** — 3〉 лишаться, утрачивать, с Gen. [ṚV. 8,47,6].
-- **EN:** — 3〉 "to lose, forfeit," with Gen. [ṚV. 8,47,6].
+- **RU:** — 3〉 лишаться, утрачивать, с Gen. [ṚV. 8,47,6](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.047.html#rv08.047.06).
+- **EN:** — 3〉 "to lose, forfeit," with Gen. [ṚV. 8,47,6](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.047.html#rv08.047.06).
   <sub>DCS 25488 · attested</sub>
 
-**3-4)** — 4〉 *avāyat* [MBH. 9,94] fehlerhaft für *avārayat*.
+**3-4)** — 4〉 *avāyat* [MBH. 9,94](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.94) fehlerhaft für *avārayat*.
 
-- **RU:** — 4〉 *avāyat* [MBH. 9,94] ошибочно вместо *avārayat*.
-- **EN:** — 4〉 *avāyat* [MBH. 9,94], erroneous for *avārayat*.
+- **RU:** — 4〉 *avāyat* [MBH. 9,94](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.94) ошибочно вместо *avārayat*.
+- **EN:** — 4〉 *avāyat* [MBH. 9,94](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.94), erroneous for *avārayat*.
   <sub>DCS 25488 · attested</sub>
 
 **3-5)** — 5〉 *vāna* trocken.
@@ -449,16 +449,16 @@
 - **EN:** **4.** *vā* secondary form of **1.** *van*. *˚vāta* "desired, wished for."
   <sub>DCS 25488 · attested</sub>
 
-**4-a)** — Desid. *vivāsati*, *˚te* (*paricaraṇakarman*) herbeiziehen, gewinnen [ṚV. 1,74,9. 8,31,7. 9,98,4].
+**4-a)** — Desid. *vivāsati*, *˚te* (*paricaraṇakarman*) herbeiziehen, gewinnen [ṚV. 1,74,9. 8,31,7. 9,98,4](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.074.html#rv01.074.09).
 
-- **RU:** — Desid. *vivāsati*, *˚te* (*paricaraṇakarman*) привлекать, добывать, снискивать [ṚV. 1,74,9. 8,31,7. 9,98,4].
-- **EN:** — Desid. *vivāsati*, *˚te* (*paricaraṇakarman*) "to draw hither, win over" [ṚV. 1,74,9. 8,31,7. 9,98,4].
+- **RU:** — Desid. *vivāsati*, *˚te* (*paricaraṇakarman*) привлекать, добывать, снискивать [ṚV. 1,74,9. 8,31,7. 9,98,4](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.074.html#rv01.074.09).
+- **EN:** — Desid. *vivāsati*, *˚te* (*paricaraṇakarman*) "to draw hither, win over" [ṚV. 1,74,9. 8,31,7. 9,98,4](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.074.html#rv01.074.09).
   <sub>DCS 25488 · attested</sub>
 
-**4-a2)** — Mit *accha* Desid. Act. dass. [ṚV. 6,16,12].
+**4-a2)** — Mit *accha* Desid. Act. dass. [ṚV. 6,16,12](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.016.html#rv06.016.12).
 
-- **RU:** — С *accha* Desid. Act. dass. [ṚV. 6,16,12].
-- **EN:** — With *accha* Desid. Act. dass. [ṚV. 6,16,12].
+- **RU:** — С *accha* Desid. Act. dass. [ṚV. 6,16,12](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.016.html#rv06.016.12).
+- **EN:** — With *accha* Desid. Act. dass. [ṚV. 6,16,12](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.016.html#rv06.016.12).
   <sub>DCS 25488 · attested</sub>
 
 **4-ni)** — Mit *ā* Desid.
@@ -545,12 +545,12 @@
   <sub>DCS 25488 · attested</sub>
 
 **mit_ni2_4)** — 4〉 *nirvāṇa*
-— a〉 erloschen; von der Sonne so v. a. untergegangen [Spr. 1276].
+— a〉 erloschen; von der Sonne so v. a. untergegangen [Spr. 1276](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1276).
 — b〉 bei dem das Lebenslicht erloschen ist, vollkommen beruhigt, erlöst von den Banden des Lebens.
 — c〉 *unbeweglich.
 
 - **RU:** — 4〉 *nirvāṇa*
-— a〉 угасший; о солнце так v. a. зашедший [Spr. 1276].
+— a〉 угасший; о солнце так v. a. зашедший [Spr. 1276](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1276).
 — b〉 тот, у кого угас огонь жизни, совершенно успокоившийся, освобождённый от уз существования.
 — c〉 *неподвижный.
   <sub>DCS 25488 · mixed</sub>

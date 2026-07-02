@@ -9,10 +9,10 @@
 - **EN:** — 4) to remain permanently in a position, to be, to undergo; with Acc.
   <sub>attested</sub>
 
-**5)** — 5〉 *na me vairo nivasate* [HARIV. 6049] fehlerhaft für *na me vairaṃ pravasati*.
+**5)** — 5〉 *na me vairo nivasate* [HARIV. 6049](https://sanskrit-lexicon-scans.github.io/hariv?6049) fehlerhaft für *na me vairaṃ pravasati*.
 
-- **RU:** 5) *na me vairo nivasate* [HARIV. 6049] ошибочно вместо *na me vairaṃ pravasati*.
-- **EN:** — 5) *na me vairo nivasate* [HARIV. 6049] erroneous for *na me vairaṃ pravasati*.
+- **RU:** 5) *na me vairo nivasate* [HARIV. 6049](https://sanskrit-lexicon-scans.github.io/hariv?6049) ошибочно вместо *na me vairaṃ pravasati*.
+- **EN:** — 5) *na me vairo nivasate* [HARIV. 6049](https://sanskrit-lexicon-scans.github.io/hariv?6049) erroneous for *na me vairaṃ pravasati*.
   <sub>attested</sub>
 
 **caus_intro)** — Caus.
@@ -63,10 +63,10 @@
 - **EN:** — 2) to dwell in (Loc.).
   <sub>attested</sub>
 
-**caus_aa_su)** — Mit *nis* ausleben, zu Ende leben; mit dem Acc. *vāsam* oder *˚vāsam* [MBH. 3,25,18].
+**caus_aa_su)** — Mit *nis* ausleben, zu Ende leben; mit dem Acc. *vāsam* oder *˚vāsam* [MBH. 3,25,18](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?3,25,18).
 
-- **RU:** — С *nis*: дожить до конца, прожить до конца; с Acc. *vāsam* или *˚vāsam* [MBH. 3,25,18].
-- **EN:** — With *nis* to live out, to live to the end; with the Acc. *vāsam* or *˚vāsam* [MBH. 3,25,18].
+- **RU:** — С *nis*: дожить до конца, прожить до конца; с Acc. *vāsam* или *˚vāsam* [MBH. 3,25,18](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?3,25,18).
+- **EN:** — With *nis* to live out, to live to the end; with the Acc. *vāsam* or *˚vāsam* [MBH. 3,25,18](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?3,25,18).
   <sub>attested</sub>
 
 **caus_nis_intro)** — Caus.
@@ -135,10 +135,10 @@
 **pra_1)** — 1〉 (für die Nacht seine Wohnung verlassen) verreisen, sich entfernen.
 - **EN:** — 1) (to leave one's dwelling for the night) to set out on a journey, to depart.
 
-**pra_2)** — 2〉 verschwinden, aufhören, nicht mehr vorhanden sein [HARIV. 2,50,84. 3,2,30]. Von der Sonne so v. a. nicht mehr scheinen.
+**pra_2)** — 2〉 verschwinden, aufhören, nicht mehr vorhanden sein [HARIV. 2,50,84. 3,2,30](https://sanskrit-lexicon-scans.github.io/hariv?2). Von der Sonne so v. a. nicht mehr scheinen.
 
-- **RU:** 2) исчезать, прекращаться, переставать существовать [HARIV. 2,50,84. 3,2,30]. О солнце так v. a.: более не светить.
-- **EN:** — 2) to disappear, to cease, to be no longer present [HARIV. 2,50,84. 3,2,30]. Of the sun, thus v. a. to shine no more.
+- **RU:** 2) исчезать, прекращаться, переставать существовать [HARIV. 2,50,84. 3,2,30](https://sanskrit-lexicon-scans.github.io/hariv?2). О солнце так v. a.: более не светить.
+- **EN:** — 2) to disappear, to cease, to be no longer present [HARIV. 2,50,84. 3,2,30](https://sanskrit-lexicon-scans.github.io/hariv?2). Of the sun, thus v. a. to shine no more.
   <sub>attested</sub>
 
 **pra_3)** — 3〉 verweilten, sich aufhalten.
@@ -177,10 +177,10 @@
 - **EN:** — c) departed (this life), dead [HARṢAC. 153,9].
   <sub>attested</sub>
 
-**pra_caus)** — Caus. entfernen, Jmd aus seinem Wohnort vertreiben, verbannen. — *˚pravāsitaḥ* [KATHĀS. 73,22] fehlerhaft für *˚pravāsataḥ*.
+**pra_caus)** — Caus. entfernen, Jmd aus seinem Wohnort vertreiben, verbannen. — *˚pravāsitaḥ* [KATHĀS. 73,22](https://sanskrit-lexicon-scans.github.io/kss/index.html?73,22) fehlerhaft für *˚pravāsataḥ*.
 
-- **RU:** — Caus. удалять, изгонять кого-либо из места жительства, ссылать. — *˚pravāsitaḥ* [KATHĀS. 73,22] ошибочно вместо *˚pravāsataḥ*.
-- **EN:** — Caus. to remove, to drive someone from his dwelling-place, to banish. — *˚pravāsitaḥ* [KATHĀS. 73,22] erroneous for *˚pravāsataḥ*.
+- **RU:** — Caus. удалять, изгонять кого-либо из места жительства, ссылать. — *˚pravāsitaḥ* [KATHĀS. 73,22](https://sanskrit-lexicon-scans.github.io/kss/index.html?73,22) ошибочно вместо *˚pravāsataḥ*.
+- **EN:** — Caus. to remove, to drive someone from his dwelling-place, to banish. — *˚pravāsitaḥ* [KATHĀS. 73,22](https://sanskrit-lexicon-scans.github.io/kss/index.html?73,22) erroneous for *˚pravāsataḥ*.
   <sub>attested</sub>
 
 **pra_desid)** — Desid. *pravivatsati* zu verreisen beabsichtigen [ŚIŚ. 15,120 (86)], im Begriff stehen sich wegzubegeben aus (Abl.) [CARAKA. 5,12] (*pravivatsatām* zu lesen).
@@ -369,10 +369,10 @@
 - **EN:** — 2) to come together with someone, to meet.
   <sub>attested</sub>
 
-**abhi_3)** — 3〉 sich aufhalten, seinen Wohnsitz haben, leben an einem Orte (Loc.) [Spr. 7843].
+**abhi_3)** — 3〉 sich aufhalten, seinen Wohnsitz haben, leben an einem Orte (Loc.) [Spr. 7843](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7843).
 
-- **RU:** 3) пребывать, иметь своё местожительство, жить в каком-либо месте (Loc.) [Spr. 7843].
-- **EN:** — 3) to stay, to have one's dwelling, to live in a place (Loc.) [Spr. 7843].
+- **RU:** 3) пребывать, иметь своё местожительство, жить в каком-либо месте (Loc.) [Spr. 7843](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7843).
+- **EN:** — 3) to stay, to have one's dwelling, to live in a place (Loc.) [Spr. 7843](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7843).
   <sub>attested</sub>
 
 **abhi_4)** — 4〉 zubringen, mit Acc. der Zeit.

@@ -4,9 +4,9 @@
 
 
 **1)** — *abhyava* missachten, verschmähen: *yastām (bhikṣām) abhyavamanyate*
-[M. 4,249.]
+[M. 4,249.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,249)
 
 - **RU:** — *abhyava* пренебрегать, презирать: *yastām (bhikṣām) abhyavamanyate*
-[M. 4,249.]
-- **EN:** — *abhyava* to disrespect, to disdain: *yastām (bhikṣām) abhyavamanyate* [M. 4,249.]
+[M. 4,249.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,249)
+- **EN:** — *abhyava* to disrespect, to disdain: *yastām (bhikṣām) abhyavamanyate* [M. 4,249.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,249)
   <sub>attested</sub>

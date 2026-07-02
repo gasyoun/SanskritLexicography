@@ -4,10 +4,10 @@
 
 
 **vyapa+naś)** — *vyapa* caus. vertreiben: *yaste yuddhamayaṃ darpaṃ kāmaṃ ca vyapanāśayet*
-[MBH. 5,7090.]
+[MBH. 5,7090.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7090)
 
 - **RU:** — *vyapa* caus. прогонять, изгонять: *yaste yuddhamayaṃ darpaṃ kāmaṃ ca vyapanāśayet*
-[MBH. 5,7090.]
+[MBH. 5,7090.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7090)
 - **EN:** — *vyapa* caus. to drive away, expel: *yaste yuddhamayaṃ darpaṃ kāmaṃ ca vyapanāśayet*
-[MBH. 5,7090.]
+[MBH. 5,7090.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7090)
   <sub>attested</sub>

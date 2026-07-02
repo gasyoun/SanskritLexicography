@@ -9,8 +9,8 @@
 **pw01-anucar)** — Mit *upanyā* eindringen.
 - **EN:** — With *upanyā* to penetrate, enter.
 
-**pw01-acar)** — Mit *paryā* herbeikommen [AV. 2,34,5].
-- **EN:** — With *paryā* to come up [AV. 2,34,5].
+**pw01-acar)** — Mit *paryā* herbeikommen [AV. 2,34,5](https://sanskrit-lexicon.github.io/avlinks/avhymns/av02.034.html#av02.034.05).
+- **EN:** — With *paryā* to come up [AV. 2,34,5](https://sanskrit-lexicon.github.io/avlinks/avhymns/av02.034.html#av02.034.05).
 
 **pw01-acar-head)** — Mit *samā*
 - **EN:** — With *samā*
@@ -87,8 +87,8 @@
 **pw01-uddhi-2)** — 2〉 sich ehelich vergehen gegen (Acc.), Ehebruch treiben mit (Instr.).
 - **EN:** — 2) to commit adultery against (Acc.), commit adultery with (Instr.).
 
-**pw01-uddhi-3)** — 3〉 begehen, verüben. *mahādoṣam* [MBH. 12,266,38].
-- **EN:** — 3) to commit, perpetrate. *mahādoṣam* [MBH. 12,266,38].
+**pw01-uddhi-3)** — 3〉 begehen, verüben. *mahādoṣam* [MBH. 12,266,38](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,266,38).
+- **EN:** — 3) to commit, perpetrate. *mahādoṣam* [MBH. 12,266,38](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,266,38).
 
 **pw01-udanu2)** — Mit *anuvyud* nach einem Andern hervorgehen.
 - **EN:** — With *anuvyud* to emerge after another.
@@ -108,8 +108,8 @@
 **pw01-upa-1)** — 1〉 herbeikommen, sich nähern, hinzutreten zu (Acc.).
 - **EN:** — 1) to come up, approach, step up to (Acc.).
 
-**pw01-upa-2)** — 2〉 hinzutreten zu Jmd (Acc.) um zu bedienen, Jmd an die Hand gehen, bedienen ([KĀD. 44,9]), aufwarten, — mit (Instr.) etwas Gutem oder Bösem [MBH. 18,3,15].
-- **EN:** — 2) to step up to someone (Acc.) in order to serve, assist someone ([KĀD. 44,9]), wait upon —, with (Instr.) something good or bad [MBH. 18,3,15].
+**pw01-upa-2)** — 2〉 hinzutreten zu Jmd (Acc.) um zu bedienen, Jmd an die Hand gehen, bedienen ([KĀD. 44,9]), aufwarten, — mit (Instr.) etwas Gutem oder Bösem [MBH. 18,3,15](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?18,3,15).
+- **EN:** — 2) to step up to someone (Acc.) in order to serve, assist someone ([KĀD. 44,9]), wait upon —, with (Instr.) something good or bad [MBH. 18,3,15](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?18,3,15).
 
 **pw01-upa-3)** — 3〉 gehen an, unternehmen, angreifen.
 - **EN:** — 3) to set about, undertake, attack.
@@ -273,8 +273,8 @@
 **pw01-vini-11)** — 11〉 ein Verschen machen.
 - **EN:** — 11) to compose a little verse.
 
-**pw01-vini-12)** — 12〉 üben, vollführen, vollbringen [M. 9,302].
-- **EN:** — 12) to practise, carry out, accomplish [M. 9,302].
+**pw01-vini-12)** — 12〉 üben, vollführen, vollbringen [M. 9,302](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,302).
+- **EN:** — 12) to practise, carry out, accomplish [M. 9,302](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,302).
 
 **pw01-vini-13)** — 13〉 abweiden, fressen [BĀLAR. 28,6].
 - **EN:** — 13) to graze off, devour [BĀLAR. 28,6].

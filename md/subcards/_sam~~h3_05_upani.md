@@ -4,10 +4,10 @@
 
 
 **1)** — *upani* dass.: *tadupaniśamya vacaḥ*
-[MBH. 8,1738.]
+[MBH. 8,1738.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.1738)
 
 - **RU:** — *upani* dass.: *tadupaniśamya vacaḥ*
-[MBH. 8,1738.]
+[MBH. 8,1738.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.1738)
 - **EN:** — *upani* dass.: *tadupaniśamya vacaḥ*
-[MBH. 8,1738.]
+[MBH. 8,1738.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.1738)
   <sub>attested</sub>

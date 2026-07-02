@@ -79,10 +79,10 @@
 - **EN:** — m) to bear, s. v. a. to overlook, forgive.
   <sub>attested</sub>
 
-**1n)** — n〉 an sich tragen, so v. a. haben [Spr. 7843].
+**1n)** — n〉 an sich tragen, so v. a. haben [Spr. 7843](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7843).
 
-- **RU:** — n〉 носить на себе, так v. a. иметь [Spr. 7843].
-- **EN:** — n) to bear upon oneself, thus v. a. to have [Spr. 7843].
+- **RU:** — n〉 носить на себе, так v. a. иметь [Spr. 7843](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7843).
+- **EN:** — n) to bear upon oneself, thus v. a. to have [Spr. 7843](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7843).
   <sub>attested</sub>
 
 **1o)** — o〉 sich unterziehen, sich hingeben, sich unterwerfen. *agnim*, *viṣam*. *tulām* sich dem Gottesurtheil mit dem Feuer, dem Gift, der Wage unterwerfen.
@@ -115,10 +115,10 @@
 - **EN:** — s) to spend (a time).
   <sub>attested</sub>
 
-**1t)** — t〉 *sahasā vahan* [HARIV. 4453] fehlerhaft für *manasā japan*.
+**1t)** — t〉 *sahasā vahan* [HARIV. 4453](https://sanskrit-lexicon-scans.github.io/hariv?4453) fehlerhaft für *manasā japan*.
 
-- **RU:** — t〉 *sahasā vahan* [HARIV. 4453] ошибочно вместо *manasā japan*.
-- **EN:** — t) *sahasā vahan* [HARIV. 4453] erroneous for *manasā japan*.
+- **RU:** — t〉 *sahasā vahan* [HARIV. 4453](https://sanskrit-lexicon-scans.github.io/hariv?4453) ошибочно вместо *manasā japan*.
+- **EN:** — t) *sahasā vahan* [HARIV. 4453](https://sanskrit-lexicon-scans.github.io/hariv?4453) erroneous for *manasā japan*.
   <sub>attested</sub>
 
 **2)** — 2〉 intrans.
@@ -179,10 +179,10 @@
 - **EN:** — d) come up, arrived. *ūḍhavayas* _Adj._ thus v. a. grown up, adult.
   <sub>attested</sub>
 
-**3e)** — e〉 geäussert, an den Tag getreten [BHĀG. P. 2,7,25].
+**3e)** — e〉 geäussert, an den Tag getreten [BHĀG. P. 2,7,25](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,7,25).
 
-- **RU:** — e〉 высказанный, проявившийся [BHĀG. P. 2,7,25].
-- **EN:** — e) expressed, brought to light [BHĀG. P. 2,7,25].
+- **RU:** — e〉 высказанный, проявившийся [BHĀG. P. 2,7,25](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,7,25).
+- **EN:** — e) expressed, brought to light [BHĀG. P. 2,7,25](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,7,25).
   <sub>attested</sub>
 
 **4)** — 4〉 *voḍha* geehelicht (*bhāryāśata*).
@@ -290,8 +290,8 @@
 **intens_intro)** — Intens.
 - **EN:** — Intens.
 
-**intens1)** — 1〉 *vānīvāhyate* hinundher führen. *vanīvāhita* [ŚAT. BR. 6,8,1,3].
-- **EN:** — 1) *vānīvāhyate* to lead back and forth. *vanīvāhita* [ŚAT. BR. 6,8,1,3].
+**intens1)** — 1〉 *vānīvāhyate* hinundher führen. *vanīvāhita* [ŚAT. BR. 6,8,1,3](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?6,8,1,3).
+- **EN:** — 1) *vānīvāhyate* to lead back and forth. *vanīvāhita* [ŚAT. BR. 6,8,1,3](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?6,8,1,3).
 
 **intens2)** — 2〉 *vāvahīti* tragen.
 
@@ -376,10 +376,10 @@
 - **EN:** — 3) Med. to take after, to become similar.
   <sub>attested</sub>
 
-**anuved4)** — 4〉 betreiben [MBH. 12,56,51] (nach [KERN] *anuvahanti* St. *anuvihanti* zu lesen).
+**anuved4)** — 4〉 betreiben [MBH. 12,56,51](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,56,51) (nach [KERN] *anuvahanti* St. *anuvihanti* zu lesen).
 
-- **RU:** — 4〉 вести, заниматься [MBH. 12,56,51] (следует читать по [KERN] *anuvahanti* St. *anuvihanti*).
-- **EN:** — 4) to pursue, carry on [MBH. 12,56,51] (to be read after [KERN] *anuvahanti* St. *anuvihanti*).
+- **RU:** — 4〉 вести, заниматься [MBH. 12,56,51](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,56,51) (следует читать по [KERN] *anuvahanti* St. *anuvihanti*).
+- **EN:** — 4) to pursue, carry on [MBH. 12,56,51](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,56,51) (to be read after [KERN] *anuvahanti* St. *anuvihanti*).
   <sub>attested</sub>
 
 **apa_intro)** — Mit *apa*
@@ -483,10 +483,10 @@
 - **EN:** — 4) to lead away, to drive off.
   <sub>attested</sub>
 
-**a8)** — 5〉 herbeifahren (intrans.) [ṚV. 4,14,3. 8,54,6].
+**a8)** — 5〉 herbeifahren (intrans.) [ṚV. 4,14,3. 8,54,6](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.014.html#rv04.014.03).
 
-- **RU:** — 5〉 подъезжать (intrans.) [ṚV. 4,14,3. 8,54,6].
-- **EN:** — 5) to drive up (intrans.) [ṚV. 4,14,3. 8,54,6].
+- **RU:** — 5〉 подъезжать (intrans.) [ṚV. 4,14,3. 8,54,6](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.014.html#rv04.014.03).
+- **EN:** — 5) to drive up (intrans.) [ṚV. 4,14,3. 8,54,6](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.014.html#rv04.014.03).
   <sub>attested</sub>
 
 **a9)** — 6〉 sich ergiessen, fliessen.
@@ -519,10 +519,10 @@
 - **EN:** — With *anvā* to bring near.
   <sub>attested</sub>
 
-**abhini_intro)** — Mit *abhyā* herbeiführen, bringen [ṚV. 1,134,1].
+**abhini_intro)** — Mit *abhyā* herbeiführen, bringen [ṚV. 1,134,1](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.134.html#rv01.134.01).
 
-- **RU:** — С *abhyā* приводить, приносить [ṚV. 1,134,1].
-- **EN:** — With *abhyā* to bring near, to bring [ṚV. 1,134,1].
+- **RU:** — С *abhyā* приводить, приносить [ṚV. 1,134,1](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.134.html#rv01.134.01).
+- **EN:** — With *abhyā* to bring near, to bring [ṚV. 1,134,1](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.134.html#rv01.134.01).
   <sub>attested</sub>
 
 **ud_intro)** — Mit *udā*
@@ -542,17 +542,17 @@
 - **EN:** — 2) to lead up.
   <sub>attested</sub>
 
-**ud3)** — 3〉 heimführen, heirathen (ein Weib) [MBH. 6,119,34].
+**ud3)** — 3〉 heimführen, heirathen (ein Weib) [MBH. 6,119,34](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?6,119,34).
 
-- **RU:** — 3〉 вводить в дом, жениться (на женщине) [MBH. 6,119,34].
-- **EN:** — 3) to lead home, to marry (a woman) [MBH. 6,119,34].
+- **RU:** — 3〉 вводить в дом, жениться (на женщине) [MBH. 6,119,34](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?6,119,34).
+- **EN:** — 3) to lead home, to marry (a woman) [MBH. 6,119,34](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?6,119,34).
   <sub>attested</sub>
 
 **ud_intro2)** — Mit *samudā*
 - **EN:** — With *samudā*
 
-**ud4)** — 1〉 hinausführen, — ziehen [HARIV. 2,89,85].
-- **EN:** — 1) to lead out, — to draw out [HARIV. 2,89,85].
+**ud4)** — 1〉 hinausführen, — ziehen [HARIV. 2,89,85](https://sanskrit-lexicon-scans.github.io/hariv?2).
+- **EN:** — 1) to lead out, — to draw out [HARIV. 2,89,85](https://sanskrit-lexicon-scans.github.io/hariv?2).
 
 **1)** **1.** √*vah*¦, *vahati*, *˚te* (später nur metrisch), *uhīta* (ausnahmsweise), *uhyate* Pass.
 
@@ -560,10 +560,10 @@
   <sub>attested</sub>
 
 **pra_intro)** — Intens.
-— 1〉 *vānīvāhyate* hinundher führen. *vanīvāhita* [ŚAT. BR. 6,8,1,3].
+— 1〉 *vānīvāhyate* hinundher führen. *vanīvāhita* [ŚAT. BR. 6,8,1,3](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?6,8,1,3).
 
 - **RU:** — Intens.
-— 1〉 *vānīvāhyate* водить туда-сюда. *vanīvāhita* [ŚAT. BR. 6,8,1,3].
+— 1〉 *vānīvāhyate* водить туда-сюда. *vanīvāhita* [ŚAT. BR. 6,8,1,3](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?6,8,1,3).
   <sub>attested</sub>
 
 **ati_caus_intro)** — Caus.
@@ -595,8 +595,8 @@
   <sub>attested</sub>
 
 **upa2_intro)** — Mit *samudā*
-— 1〉 hinausführen, — ziehen [HARIV. 2,89,85].
+— 1〉 hinausführen, — ziehen [HARIV. 2,89,85](https://sanskrit-lexicon-scans.github.io/hariv?2).
 
 - **RU:** — С *samudā*
-— 1〉 выводить, — вытягивать [HARIV. 2,89,85].
+— 1〉 выводить, — вытягивать [HARIV. 2,89,85](https://sanskrit-lexicon-scans.github.io/hariv?2).
   <sub>attested</sub>

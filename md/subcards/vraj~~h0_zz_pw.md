@@ -273,9 +273,9 @@
 - **RU:** 2〉 побудить кого-либо странствовать как аскет, — стать монахом [HEM. PAR. 1,300. 337].
   <sub>attested</sub>
 
-**PW-pra-caus-3)** — 3〉 *pravrājita* [MBH. 6,3142] fehlerhaft für *pravrajita*.
+**PW-pra-caus-3)** — 3〉 *pravrājita* [MBH. 6,3142](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.3142) fehlerhaft für *pravrajita*.
 
-- **RU:** 3〉 *pravrājita* [MBH. 6,3142] ошибочно вместо *pravrajita*.
+- **RU:** 3〉 *pravrājita* [MBH. 6,3142](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.3142) ошибочно вместо *pravrajita*.
   <sub>attested</sub>
 
 **PW-anupra-head)** — Mit *anupra* Jmd (Acc.) in die Verbannung folgen.

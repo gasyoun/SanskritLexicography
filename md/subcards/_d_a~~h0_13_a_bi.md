@@ -3,60 +3,60 @@
 `_d_a~~h0_13_a_bi`
 
 
-**1)** — *abhi* 1) dahingeben: *mā kasmai dhātamabhyamitriṇe naḥ* [ṚV. 1,120,8.]
+**1)** — *abhi* 1) dahingeben: *mā kasmai dhātamabhyamitriṇe naḥ* [ṚV. 1,120,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.120.html#rv01.120.08)
 
-- **RU:** — *abhi* 1) отдавать, жертвовать: *mā kasmai dhātamabhyamitriṇe naḥ* [ṚV. 1,120,8.]
+- **RU:** — *abhi* 1) отдавать, жертвовать: *mā kasmai dhātamabhyamitriṇe naḥ* [ṚV. 1,120,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.120.html#rv01.120.08)
 - **EN:** — *abhi*
  1) to give over, to hand over: *mā kasmai dhātamabhyamitriṇe naḥ*
-[ṚV. 1,120,8.]
+[ṚV. 1,120,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.120.html#rv01.120.08)
   <sub>DCS 1334 · attested</sub>
 
-**2)** — 2) richten auf: *yo no abhi hvaro dadhe* [ṚV. 2,23,6.] *namo jyotirlokāya — mahāpuruṣāyābhidhīmahi* [BHĀG. P. 5,23,8.] [8,3,2.] herrichten, anlegen: *abhi vo devīṃ dhiyaṃ dadhidhvaṃ pra vo devatrā vācaṃ kṛṇudhvam* [7,34,9.]
+**2)** — 2) richten auf: *yo no abhi hvaro dadhe* [ṚV. 2,23,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.023.html#rv02.023.06) *namo jyotirlokāya — mahāpuruṣāyābhidhīmahi* [BHĀG. P. 5,23,8.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,23,8) [8,3,2.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,3,2) herrichten, anlegen: *abhi vo devīṃ dhiyaṃ dadhidhvaṃ pra vo devatrā vācaṃ kṛṇudhvam* [7,34,9.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.034.html#rv07.034.09)
 
-- **RU:** — 2) направлять на: *yo no abhi hvaro dadhe* [ṚV. 2,23,6.] *namo jyotirlokāya — mahāpuruṣāyābhidhīmahi* [BHĀG. P. 5,23,8.] [8,3,2.] устраивать, прокладывать: *abhi vo devīṃ dhiyaṃ dadhidhvaṃ pra vo devatrā vācaṃ kṛṇudhvam* [7,34,9.]
+- **RU:** — 2) направлять на: *yo no abhi hvaro dadhe* [ṚV. 2,23,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.023.html#rv02.023.06) *namo jyotirlokāya — mahāpuruṣāyābhidhīmahi* [BHĀG. P. 5,23,8.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,23,8) [8,3,2.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,3,2) устраивать, прокладывать: *abhi vo devīṃ dhiyaṃ dadhidhvaṃ pra vo devatrā vācaṃ kṛṇudhvam* [7,34,9.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.034.html#rv07.034.09)
 - **EN:** — 2) to direct upon: *yo no abhi hvaro dadhe*
-[ṚV. 2,23,6.] *namo jyotirlokāya — mahāpuruṣāyābhidhīmahi*
-[BHĀG. P. 5,23,8.] [8,3,2.] to put in order, to arrange: *abhi vo devīṃ dhiyaṃ dadhidhvaṃ pra vo devatrā vācaṃ kṛṇudhvam*
-[7,34,9.]
+[ṚV. 2,23,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.023.html#rv02.023.06) *namo jyotirlokāya — mahāpuruṣāyābhidhīmahi*
+[BHĀG. P. 5,23,8.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,23,8) [8,3,2.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,3,2) to put in order, to arrange: *abhi vo devīṃ dhiyaṃ dadhidhvaṃ pra vo devatrā vācaṃ kṛṇudhvam*
+[7,34,9.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.034.html#rv07.034.09)
   <sub>DCS 1334 · attested</sub>
 
-**3)** — 3) anlegen, umlegen mit Etwas; umwinden, binden; med., seltener act.: *vāsasā* [AV. 7,37,1.] *raśanābhirdaśabhirabhyadhītām* [ṚV. 10,4,6.] *tenāhamindrajālenāmūntamasābhi dadhāmi sarvān* [AV. 8,8,8.] [4,16,7.] *abhi tvā jarimāhita* (wohl fehlerhaft für *adhita) gāmukṣaṇamiva rajjvā* [3,11,8.] *abhi taṃ nirṛtirdhattāmaśvamivāśvābhidhānyā* [4,36,10.] [8,8,5.] [19,50,5.] *abhi hi raśanayādhita* [VS. 21,46.] [ŚAT. BR. 11,3,1,1.] [14,2,1,8.] *abhihita* angebunden, angeschirrt, angespannt: *yatra vahnirabhihito dudravat* [ṚV. 5,50,4.] [10,85,11.] [AV. 6,63,3.] [9,3,8.] [ŚAT. BR. 3,2,4,18.] [6,3,1,26.]
+**3)** — 3) anlegen, umlegen mit Etwas; umwinden, binden; med., seltener act.: *vāsasā* [AV. 7,37,1.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av07.037.html#av07.037.01) *raśanābhirdaśabhirabhyadhītām* [ṚV. 10,4,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.004.html#rv10.004.06) *tenāhamindrajālenāmūntamasābhi dadhāmi sarvān* [AV. 8,8,8.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av08.008.html#av08.008.08) [4,16,7.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av04.016.html#av04.016.07) *abhi tvā jarimāhita* (wohl fehlerhaft für *adhita) gāmukṣaṇamiva rajjvā* [3,11,8.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av03.011.html#av03.011.08) *abhi taṃ nirṛtirdhattāmaśvamivāśvābhidhānyā* [4,36,10.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av04.036.html#av04.036.10) [8,8,5.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av08.008.html#av08.008.05) [19,50,5.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av19.050.html#av19.050.05) *abhi hi raśanayādhita* [VS. 21,46.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?21,46) [ŚAT. BR. 11,3,1,1.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?11,3,1,1) [14,2,1,8.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,2,1,8) *abhihita* angebunden, angeschirrt, angespannt: *yatra vahnirabhihito dudravat* [ṚV. 5,50,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.050.html#rv05.050.04) [10,85,11.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.085.html#rv10.085.11) [AV. 6,63,3.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av06.063.html#av06.063.03) [9,3,8.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av09.003.html#av09.003.08) [ŚAT. BR. 3,2,4,18.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,2,4,18) [6,3,1,26.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?6,3,1,26)
 
-- **RU:** — 3) надевать, накидывать на что-л.; обвивать, связывать; med., реже act.: *vāsasā* [AV. 7,37,1.] *raśanābhirdaśabhirabhyadhītām* [ṚV. 10,4,6.] *tenāhamindrajālenāmūntamasābhi dadhāmi sarvān* [AV. 8,8,8.] [4,16,7.] *abhi tvā jarimāhita* (по всей видимости, ошибочно вм. *adhita) gāmukṣaṇamiva rajjvā* [3,11,8.] *abhi taṃ nirṛtirdhattāmaśvamivāśvābhidhānyā* [4,36,10.] [8,8,5.] [19,50,5.] *abhi hi raśanayādhita* [VS. 21,46.] [ŚAT. BR. 11,3,1,1.] [14,2,1,8.] *abhihita* привязанный, запряжённый, впряжённый: *yatra vahnirabhihito dudravat* [ṚV. 5,50,4.] [10,85,11.] [AV. 6,63,3.] [9,3,8.] [ŚAT. BR. 3,2,4,18.] [6,3,1,26.]
+- **RU:** — 3) надевать, накидывать на что-л.; обвивать, связывать; med., реже act.: *vāsasā* [AV. 7,37,1.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av07.037.html#av07.037.01) *raśanābhirdaśabhirabhyadhītām* [ṚV. 10,4,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.004.html#rv10.004.06) *tenāhamindrajālenāmūntamasābhi dadhāmi sarvān* [AV. 8,8,8.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av08.008.html#av08.008.08) [4,16,7.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av04.016.html#av04.016.07) *abhi tvā jarimāhita* (по всей видимости, ошибочно вм. *adhita) gāmukṣaṇamiva rajjvā* [3,11,8.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av03.011.html#av03.011.08) *abhi taṃ nirṛtirdhattāmaśvamivāśvābhidhānyā* [4,36,10.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av04.036.html#av04.036.10) [8,8,5.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av08.008.html#av08.008.05) [19,50,5.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av19.050.html#av19.050.05) *abhi hi raśanayādhita* [VS. 21,46.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?21,46) [ŚAT. BR. 11,3,1,1.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?11,3,1,1) [14,2,1,8.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,2,1,8) *abhihita* привязанный, запряжённый, впряжённый: *yatra vahnirabhihito dudravat* [ṚV. 5,50,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.050.html#rv05.050.04) [10,85,11.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.085.html#rv10.085.11) [AV. 6,63,3.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av06.063.html#av06.063.03) [9,3,8.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av09.003.html#av09.003.08) [ŚAT. BR. 3,2,4,18.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,2,4,18) [6,3,1,26.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?6,3,1,26)
 - **EN:** — 3) to put on, to place around something; to wind around, to bind; med., more rarely act.: *vāsasā*
-[AV. 7,37,1.] *raśanābhirdaśabhirabhyadhītām*
-[ṚV. 10,4,6.] *tenāhamindrajālenāmūntamasābhi dadhāmi sarvān*
-[AV. 8,8,8.] [4,16,7.] *abhi tvā jarimāhita* (probably erroneously for *adhita) gāmukṣaṇamiva rajjvā*
-[3,11,8.] *abhi taṃ nirṛtirdhattāmaśvamivāśvābhidhānyā*
-[4,36,10.] [8,8,5.] [19,50,5.] *abhi hi raśanayādhita*
-[VS. 21,46.]
-[ŚAT. BR. 11,3,1,1.] [14,2,1,8.] *abhihita* bound to, harnessed, yoked: *yatra vahnirabhihito dudravat*
-[ṚV. 5,50,4.] [10,85,11.]
-[AV. 6,63,3.] [9,3,8.]
-[ŚAT. BR. 3,2,4,18.] [6,3,1,26.]
+[AV. 7,37,1.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av07.037.html#av07.037.01) *raśanābhirdaśabhirabhyadhītām*
+[ṚV. 10,4,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.004.html#rv10.004.06) *tenāhamindrajālenāmūntamasābhi dadhāmi sarvān*
+[AV. 8,8,8.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av08.008.html#av08.008.08) [4,16,7.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av04.016.html#av04.016.07) *abhi tvā jarimāhita* (probably erroneously for *adhita) gāmukṣaṇamiva rajjvā*
+[3,11,8.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av03.011.html#av03.011.08) *abhi taṃ nirṛtirdhattāmaśvamivāśvābhidhānyā*
+[4,36,10.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av04.036.html#av04.036.10) [8,8,5.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av08.008.html#av08.008.05) [19,50,5.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av19.050.html#av19.050.05) *abhi hi raśanayādhita*
+[VS. 21,46.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?21,46)
+[ŚAT. BR. 11,3,1,1.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?11,3,1,1) [14,2,1,8.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,2,1,8) *abhihita* bound to, harnessed, yoked: *yatra vahnirabhihito dudravat*
+[ṚV. 5,50,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.050.html#rv05.050.04) [10,85,11.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.085.html#rv10.085.11)
+[AV. 6,63,3.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av06.063.html#av06.063.03) [9,3,8.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av09.003.html#av09.003.08)
+[ŚAT. BR. 3,2,4,18.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,2,4,18) [6,3,1,26.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?6,3,1,26)
   <sub>DCS 1334 · attested</sub>
 
-**4)** — 4) belegen, mit Truppen überziehen: *māgadhānabhyadhādbalī* [MBH. 2,1090.]
+**4)** — 4) belegen, mit Truppen überziehen: *māgadhānabhyadhādbalī* [MBH. 2,1090.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1090)
 
-- **RU:** — 4) занимать, наводнять войсками: *māgadhānabhyadhādbalī* [MBH. 2,1090.]
+- **RU:** — 4) занимать, наводнять войсками: *māgadhānabhyadhādbalī* [MBH. 2,1090.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1090)
 - **EN:** — 4) to cover, to overrun with troops: *māgadhānabhyadhādbalī*
-[MBH. 2,1090.]
+[MBH. 2,1090.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1090)
   <sub>DCS 1334 · attested</sub>
 
-**5)** — 5) umfassen so v. a. in Schutz nehmen: *jīvānno abhi dhetanādityāsaḥ purā hathāt* [ṚV. 8,56,5.] [NIR. 6,27.] [NAIGH. 4,3.]
+**5)** — 5) umfassen so v. a. in Schutz nehmen: *jīvānno abhi dhetanādityāsaḥ purā hathāt* [ṚV. 8,56,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.056.html#rv08.056.05) [NIR. 6,27.](https://sanskrit-lexicon-scans.github.io/nirukta/app1?6,27) [NAIGH. 4,3.](https://sanskrit-lexicon-scans.github.io/nirukta/app2?4,3)
 
-- **RU:** — 5) охватывать, так v. a. брать под защиту: *jīvānno abhi dhetanādityāsaḥ purā hathāt* [ṚV. 8,56,5.] [NIR. 6,27.] [NAIGH. 4,3.]
+- **RU:** — 5) охватывать, так v. a. брать под защиту: *jīvānno abhi dhetanādityāsaḥ purā hathāt* [ṚV. 8,56,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.056.html#rv08.056.05) [NIR. 6,27.](https://sanskrit-lexicon-scans.github.io/nirukta/app1?6,27) [NAIGH. 4,3.](https://sanskrit-lexicon-scans.github.io/nirukta/app2?4,3)
 - **EN:** — 5) to embrace, so v. a. to take under one's protection: *jīvānno abhi dhetanādityāsaḥ purā hathāt*
-[ṚV. 8,56,5.]
-[NIR. 6,27.]
-[NAIGH. 4,3.]
+[ṚV. 8,56,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.056.html#rv08.056.05)
+[NIR. 6,27.](https://sanskrit-lexicon-scans.github.io/nirukta/app1?6,27)
+[NAIGH. 4,3.](https://sanskrit-lexicon-scans.github.io/nirukta/app2?4,3)
   <sub>DCS 1334 · attested</sub>
 
-**6)** — 6) an sich ziehen, zu sich zurückziehen: *dadarśa gāṃ* (die Erde) *tatra suṣupsuragre yāṃ jīvadhānīṃ svayamabhyadhatta* [BHĀG. P. 3,13,30.] [BURNOUF] : la terre qu'il avait lui-même renfermée dans son sein. Vgl. *pratyabhiḥ*
+**6)** — 6) an sich ziehen, zu sich zurückziehen: *dadarśa gāṃ* (die Erde) *tatra suṣupsuragre yāṃ jīvadhānīṃ svayamabhyadhatta* [BHĀG. P. 3,13,30.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,13,30) [BURNOUF] : la terre qu'il avait lui-même renfermée dans son sein. Vgl. *pratyabhiḥ*
 
-- **RU:** — 6) привлекать к себе, вбирать в себя: *dadarśa gāṃ* (землю) *tatra suṣupsuragre yāṃ jīvadhānīṃ svayamabhyadhatta* [BHĀG. P. 3,13,30.] [BURNOUF] : la terre qu'il avait lui-même renfermée dans son sein. Vgl. *pratyabhiḥ*
+- **RU:** — 6) привлекать к себе, вбирать в себя: *dadarśa gāṃ* (землю) *tatra suṣupsuragre yāṃ jīvadhānīṃ svayamabhyadhatta* [BHĀG. P. 3,13,30.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,13,30) [BURNOUF] : la terre qu'il avait lui-même renfermée dans son sein. Vgl. *pratyabhiḥ*
 - **EN:** — 6) to draw to oneself, to withdraw into oneself: *dadarśa gāṃ* (the earth) *tatra suṣupsuragre yāṃ jīvadhānīṃ svayamabhyadhatta*
-[BHĀG. P. 3,13,30.] [BURNOUF] : the earth which he himself had enclosed within his bosom. Vgl. *pratyabhiḥ*
+[BHĀG. P. 3,13,30.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,13,30) [BURNOUF] : the earth which he himself had enclosed within his bosom. Vgl. *pratyabhiḥ*
   <sub>DCS 1334 · attested</sub>
 
 **7)** — 7) viell. sich verhalten zu (acc.): *kathaṃ vāhyamabhidhatte (prāṇaḥ) kathamadhyātmam* [PRAŚNOP. 3,1.] Nach [ŚAṂK.] = *dhārayati* .
@@ -66,85 +66,85 @@
 [PRAŚNOP. 3,1.] According to [ŚAṂK.] = *dhārayati* .
   <sub>DCS 1334 · attested</sub>
 
-**8)** — 8) bezeichnen, benennen; pass. bezeichnet —, genannt werden, heissen: *tannāma yenābhidadhāti sattvaṃ tadākhyātaṃ yena bhāvam* [ṚV. PRĀT. 12,5.] *˚dhātum* [P. 4,3,91], Sch. *hariśabdo viṣṇumevābhidhatte* [SĀH. D. 17,15.] [H. 17.] *strī gotrapratyayenābhidhīyate* [P. 4,1,94], Sch. *tatastvāmabhidhāsyanti nāmnā rudra iti prajāḥ* [BHĀG. P. 3,12,10.] *śrutamityabhidhīyate* [ŚĀṄKH. GṚHY. 1,2.] [M. 7,82.] [MBH. 3,12705.] [BHAG. 13,1.] [18,11.] [R. 5,57,14.] [BHĀṢĀP. 105.] *abhihita* bezeichnet, genannt, heissend [M. 3,141.] [ŚĀK. 185.] [ŚRUT. 18.] [SĀH. D. 22,7.]
+**8)** — 8) bezeichnen, benennen; pass. bezeichnet —, genannt werden, heissen: *tannāma yenābhidadhāti sattvaṃ tadākhyātaṃ yena bhāvam* [ṚV. PRĀT. 12,5.] *˚dhātum* [P. 4,3,91](https://ashtadhyayi.com/sutraani/4/3/91), Sch. *hariśabdo viṣṇumevābhidhatte* [SĀH. D. 17,15.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?17,15) [H. 17.](https://sanskrit-lexicon-scans.github.io/abch2/app1?17) *strī gotrapratyayenābhidhīyate* [P. 4,1,94](https://ashtadhyayi.com/sutraani/4/1/94), Sch. *tatastvāmabhidhāsyanti nāmnā rudra iti prajāḥ* [BHĀG. P. 3,12,10.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,12,10) *śrutamityabhidhīyate* [ŚĀṄKH. GṚHY. 1,2.] [M. 7,82.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,82) [MBH. 3,12705.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12705) [BHAG. 13,1.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?13,1) [18,11.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?18,11) [R. 5,57,14.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,57,14) [BHĀṢĀP. 105.] *abhihita* bezeichnet, genannt, heissend [M. 3,141.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,141) [ŚĀK. 185.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?185) [ŚRUT. 18.] [SĀH. D. 22,7.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?22,7)
 
-- **RU:** — 8) обозначать, называть; pass. обозначаться —, называться, именоваться: *tannāma yenābhidadhāti sattvaṃ tadākhyātaṃ yena bhāvam* [ṚV. PRĀT. 12,5.] *˚dhātum* [P. 4,3,91], Sch. *hariśabdo viṣṇumevābhidhatte* [SĀH. D. 17,15.] [H. 17.] *strī gotrapratyayenābhidhīyate* [P. 4,1,94], Sch. *tatastvāmabhidhāsyanti nāmnā rudra iti prajāḥ* [BHĀG. P. 3,12,10.] *śrutamityabhidhīyate* [ŚĀṄKH. GṚHY. 1,2.] [M. 7,82.] [MBH. 3,12705.] [BHAG. 13,1.] [18,11.] [R. 5,57,14.] [BHĀṢĀP. 105.] *abhihita* обозначенный, названный, именуемый [M. 3,141.] [ŚĀK. 185.] [ŚRUT. 18.] [SĀH. D. 22,7.]
+- **RU:** — 8) обозначать, называть; pass. обозначаться —, называться, именоваться: *tannāma yenābhidadhāti sattvaṃ tadākhyātaṃ yena bhāvam* [ṚV. PRĀT. 12,5.] *˚dhātum* [P. 4,3,91](https://ashtadhyayi.com/sutraani/4/3/91), Sch. *hariśabdo viṣṇumevābhidhatte* [SĀH. D. 17,15.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?17,15) [H. 17.](https://sanskrit-lexicon-scans.github.io/abch2/app1?17) *strī gotrapratyayenābhidhīyate* [P. 4,1,94](https://ashtadhyayi.com/sutraani/4/1/94), Sch. *tatastvāmabhidhāsyanti nāmnā rudra iti prajāḥ* [BHĀG. P. 3,12,10.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,12,10) *śrutamityabhidhīyate* [ŚĀṄKH. GṚHY. 1,2.] [M. 7,82.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,82) [MBH. 3,12705.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12705) [BHAG. 13,1.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?13,1) [18,11.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?18,11) [R. 5,57,14.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,57,14) [BHĀṢĀP. 105.] *abhihita* обозначенный, названный, именуемый [M. 3,141.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,141) [ŚĀK. 185.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?185) [ŚRUT. 18.] [SĀH. D. 22,7.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?22,7)
 - **EN:** — 8) to designate, to name; pass. to be designated, to be called, to be named: *tannāma yenābhidadhāti sattvaṃ tadākhyātaṃ yena bhāvam*
 [ṚV. PRĀT. 12,5.] *˚dhātum*
-[P. 4,3,91], Sch.
+[P. 4,3,91](https://ashtadhyayi.com/sutraani/4/3/91), Sch.
 *hariśabdo viṣṇumevābhidhatte*
-[SĀH. D. 17,15.]
-[H. 17.] *strī gotrapratyayenābhidhīyate*
-[P. 4,1,94], Sch.
+[SĀH. D. 17,15.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?17,15)
+[H. 17.](https://sanskrit-lexicon-scans.github.io/abch2/app1?17) *strī gotrapratyayenābhidhīyate*
+[P. 4,1,94](https://ashtadhyayi.com/sutraani/4/1/94), Sch.
 *tatastvāmabhidhāsyanti nāmnā rudra iti prajāḥ*
-[BHĀG. P. 3,12,10.] *śrutamityabhidhīyate*
+[BHĀG. P. 3,12,10.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,12,10) *śrutamityabhidhīyate*
 [ŚĀṄKH. GṚHY. 1,2.]
-[M. 7,82.]
-[MBH. 3,12705.]
-[BHAG. 13,1.] [18,11.]
-[R. 5,57,14.]
+[M. 7,82.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,82)
+[MBH. 3,12705.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12705)
+[BHAG. 13,1.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?13,1) [18,11.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?18,11)
+[R. 5,57,14.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,57,14)
 [BHĀṢĀP. 105.] *abhihita* designated, named, called
-[M. 3,141.]
-[ŚĀK. 185.]
+[M. 3,141.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,141)
+[ŚĀK. 185.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?185)
 [ŚRUT. 18.]
-[SĀH. D. 22,7.]
+[SĀH. D. 22,7.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?22,7)
   <sub>DCS 1334 · attested</sub>
 
-**9)** — 9) angeben, auseinandersetzen, mittheilen, sprechen über, vortragen: *doṣānanabhidhāya* [KULL.] zu [M. 9,73.] *abhidhāsye ca te rājannakṣayyaṃ dravyamuttamam* [MBH. 14,177.] *yaste 'bhyadhāyi samayaḥ* [BHĀG. P. 3,23,10.] *kiṃ mayā kartavyaṃ tadabhidhīyatām* [HIT. 58,22.] [R. 1,55,14.] *sarabhasamabhidhāya kvāpi saṃketabhūmim* [VET. 24,15.] *tattathā vo 'bhidhāsyāmi* [M. 1,42.] *ya idaṃ paramaṃ guhyaṃ madbhakteṣvabhidhāsyati* [BHAG. 18,68.] *saṃdeśamabhyadhāt . harṣāddevyai* [KATHĀS. 9,38.] [BHĀG. P. 2,1,10.] [4,25.] *kabandhabadhamabhyadhuḥ* [BHAṬṬ. 7,78.] *ko 'bhidhāsyati — svayamātmastave kathām* [R. 3,35,22.] *tadvo 'bhidhāsye* [BHĀG. P. 2,10,51.] [TRIK. 3,5,1.] *tasyāsya karmakāṇḍena saṃbandho 'bhidhīyate* [ŚAṂK.] zu [BṚH. ĀR. UP. p. 4.] *dhātuvṛttiḥ — abhidhīyate* [Verz. d. Oxf. H. No. 398.] Etwas sagen, sprechen, aussprechen: *śrutvā śreyo 'bhidhāsyāmi śāpaṃ vā te* [MBH. 14,1563.] [HARIV. 11164.] *maṅgalānyabhidadhyuṣī* [R. 2,16,20.] *abhidhatse ha yadvākyam* [MBH. 1,969.] [R. 2,28,5.] [KATHĀS. 14,88.] *ahamidānīmanṛtamabhidhāsye* [MṚCCH. 53,12.] [PAÑCAT. 192,24.] [ŚIŚ. 9,61.] *abhidhāsyāmi vākyam* [R. 1,53,8.] [MṚCCH. 53,14.] *abhyadhādevam* so sagte er [RĀJA-TAR. 1,219.] [ŚAṂK.] zu [BṚH. ĀR. UP. p. 128.] *tathetyabhidadhe punaḥ* [R. GORR. 2,123,15.] [RAGH. 2,43.] [ŚĀK. 12,12.] [DAŚAK.] in [BENF. Chr. 188,6.] *vāḍhamityabhidhāya* [PAÑCAT. 24,11.] [36,14.] [69,14.] [HIT. 83,14.] [AMAR. 75.] [VID. 187.] [PRAB. 85,17.] *ityabhidhāyi tu kairapi* [RĀJA-TAR. 2,4.] zu Jmd (acc.) sagen, — sprechen; act. [R. 3,40,27.] *prabhavantaṃ padasthaṃ ca paruṣaṃ ko 'bhidhāsyati* [6,12,7.] [KATHĀS. 1,54.] [7,85.] [VID. 156.] [BHAṬṬ. 15,19.] med.: *sa tam — abhyadhattedam* [BHĀG. P. 3,4,24.] *abhihita* angegeben, mitgetheilt, vorgebracht, vorgetragen, worüber oder über wen gesprochen worden ist, gesprochen [M. 2,7.] [3,286.] [5,100.] [6,83.] [97.] [8,266.] [9,181.] [MBH. 4,112.] [13,502.] [BHAG. 2,39.] [VIKR. 43,17.] *so 'yaṃ te 'bhihitastāta bhagavānviśvabhāvanaḥ . samāsena* [BHĀG. P. 2,7,50] *teṣāmuttamābhihitāśiṣām* [R. 2,65,3.] *vākya* [3,51,11.] *sārthikairabhihitam* [PAÑCAT. 8,20.] [72,11.] zu dem gesprochen worden ist: *sā tathyamevābhihitā bhavena* [KUMĀRAS. 3,63.] [MĀLAV. 3,9.]
+**9)** — 9) angeben, auseinandersetzen, mittheilen, sprechen über, vortragen: *doṣānanabhidhāya* [KULL.] zu [M. 9,73.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,73) *abhidhāsye ca te rājannakṣayyaṃ dravyamuttamam* [MBH. 14,177.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.177) *yaste 'bhyadhāyi samayaḥ* [BHĀG. P. 3,23,10.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,23,10) *kiṃ mayā kartavyaṃ tadabhidhīyatām* [HIT. 58,22.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?58,22) [R. 1,55,14.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,55,14) *sarabhasamabhidhāya kvāpi saṃketabhūmim* [VET. 24,15.] *tattathā vo 'bhidhāsyāmi* [M. 1,42.](https://sanskrit-lexicon-scans.github.io/manu/index.html?1,42) *ya idaṃ paramaṃ guhyaṃ madbhakteṣvabhidhāsyati* [BHAG. 18,68.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?18,68) *saṃdeśamabhyadhāt . harṣāddevyai* [KATHĀS. 9,38.](https://sanskrit-lexicon-scans.github.io/kss/index.html?9,38) [BHĀG. P. 2,1,10.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,1,10) [4,25.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,4,25) *kabandhabadhamabhyadhuḥ* [BHAṬṬ. 7,78.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?7,78) *ko 'bhidhāsyati — svayamātmastave kathām* [R. 3,35,22.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,35,22) *tadvo 'bhidhāsye* [BHĀG. P. 2,10,51.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,10,51) [TRIK. 3,5,1.](https://sanskrit-lexicon-scans.github.io/medini/app2?3,5,1) *tasyāsya karmakāṇḍena saṃbandho 'bhidhīyate* [ŚAṂK.] zu [BṚH. ĀR. UP. p. 4.] *dhātuvṛttiḥ — abhidhīyate* [Verz. d. Oxf. H. No. 398.] Etwas sagen, sprechen, aussprechen: *śrutvā śreyo 'bhidhāsyāmi śāpaṃ vā te* [MBH. 14,1563.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.1563) [HARIV. 11164.](https://sanskrit-lexicon-scans.github.io/hariv?11164) *maṅgalānyabhidadhyuṣī* [R. 2,16,20.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,16,20) *abhidhatse ha yadvākyam* [MBH. 1,969.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.969) [R. 2,28,5.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,28,5) [KATHĀS. 14,88.](https://sanskrit-lexicon-scans.github.io/kss/index.html?14,88) *ahamidānīmanṛtamabhidhāsye* [MṚCCH. 53,12.] [PAÑCAT. 192,24.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?192,24) [ŚIŚ. 9,61.] *abhidhāsyāmi vākyam* [R. 1,53,8.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,53,8) [MṚCCH. 53,14.] *abhyadhādevam* so sagte er [RĀJA-TAR. 1,219.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?1,219) [ŚAṂK.] zu [BṚH. ĀR. UP. p. 128.] *tathetyabhidadhe punaḥ* [R. GORR. 2,123,15.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,123,15) [RAGH. 2,43.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?2,43) [ŚĀK. 12,12.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?12,12) [DAŚAK.] in [BENF. Chr. 188,6.] *vāḍhamityabhidhāya* [PAÑCAT. 24,11.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?24,11) [36,14.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?36,14) [69,14.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?69,14) [HIT. 83,14.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?83,14) [AMAR. 75.] [VID. 187.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?187) [PRAB. 85,17.] *ityabhidhāyi tu kairapi* [RĀJA-TAR. 2,4.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?2,4) zu Jmd (acc.) sagen, — sprechen; act. [R. 3,40,27.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,40,27) *prabhavantaṃ padasthaṃ ca paruṣaṃ ko 'bhidhāsyati* [6,12,7.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,12,7) [KATHĀS. 1,54.](https://sanskrit-lexicon-scans.github.io/kss/index.html?1,54) [7,85.](https://sanskrit-lexicon-scans.github.io/kss/index.html?7,85) [VID. 156.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?156) [BHAṬṬ. 15,19.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?15,19) med.: *sa tam — abhyadhattedam* [BHĀG. P. 3,4,24.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,4,24) *abhihita* angegeben, mitgetheilt, vorgebracht, vorgetragen, worüber oder über wen gesprochen worden ist, gesprochen [M. 2,7.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,7) [3,286.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,286) [5,100.](https://sanskrit-lexicon-scans.github.io/manu/index.html?5,100) [6,83.](https://sanskrit-lexicon-scans.github.io/manu/index.html?6,83) [97.](https://sanskrit-lexicon-scans.github.io/manu/index.html?6,97) [8,266.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,266) [9,181.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,181) [MBH. 4,112.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.112) [13,502.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.502) [BHAG. 2,39.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?2,39) [VIKR. 43,17.](https://sanskrit-lexicon-scans.github.io/vikramor/app2?43,17) *so 'yaṃ te 'bhihitastāta bhagavānviśvabhāvanaḥ . samāsena* [BHĀG. P. 2,7,50](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,7,50) *teṣāmuttamābhihitāśiṣām* [R. 2,65,3.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,65,3) *vākya* [3,51,11.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,51,11) *sārthikairabhihitam* [PAÑCAT. 8,20.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?8,20) [72,11.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?72,11) zu dem gesprochen worden ist: *sā tathyamevābhihitā bhavena* [KUMĀRAS. 3,63.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?3,63) [MĀLAV. 3,9.](https://sanskrit-lexicon-scans.github.io/malavikagni/app2?3,9)
 
-- **RU:** — 9) указывать, излагать, сообщать, говорить о, излагать: *doṣānanabhidhāya* [KULL.] к [M. 9,73.] *abhidhāsye ca te rājannakṣayyaṃ dravyamuttamam* [MBH. 14,177.] *yaste 'bhyadhāyi samayaḥ* [BHĀG. P. 3,23,10.] *kiṃ mayā kartavyaṃ tadabhidhīyatām* [HIT. 58,22.] [R. 1,55,14.] *sarabhasamabhidhāya kvāpi saṃketabhūmim* [VET. 24,15.] *tattathā vo 'bhidhāsyāmi* [M. 1,42.] *ya idaṃ paramaṃ guhyaṃ madbhakteṣvabhidhāsyati* [BHAG. 18,68.] *saṃdeśamabhyadhāt . harṣāddevyai* [KATHĀS. 9,38.] [BHĀG. P. 2,1,10.] [4,25.] *kabandhabadhamabhyadhuḥ* [BHAṬṬ. 7,78.] *ko 'bhidhāsyati — svayamātmastave kathām* [R. 3,35,22.] *tadvo 'bhidhāsye* [BHĀG. P. 2,10,51.] [TRIK. 3,5,1.] *tasyāsya karmakāṇḍena saṃbandho 'bhidhīyate* [ŚAṂK.] к [BṚH. ĀR. UP. p. 4.] *dhātuvṛttiḥ — abhidhīyate* [Verz. d. Oxf. H. No. 398.] говорить что-л., произносить, высказывать: *śrutvā śreyo 'bhidhāsyāmi śāpaṃ vā te* [MBH. 14,1563.] [HARIV. 11164.] *maṅgalānyabhidadhyuṣī* [R. 2,16,20.] *abhidhatse ha yadvākyam* [MBH. 1,969.] [R. 2,28,5.] [KATHĀS. 14,88.] *ahamidānīmanṛtamabhidhāsye* [MṚCCH. 53,12.] [PAÑCAT. 192,24.] [ŚIŚ. 9,61.] *abhidhāsyāmi vākyam* [R. 1,53,8.] [MṚCCH. 53,14.] *abhyadhādevam* так он сказал [RĀJA-TAR. 1,219.] [ŚAṂK.] к [BṚH. ĀR. UP. p. 128.] *tathetyabhidadhe punaḥ* [R. GORR. 2,123,15.] [RAGH. 2,43.] [ŚĀK. 12,12.] [DAŚAK.] в [BENF. Chr. 188,6.] *vāḍhamityabhidhāya* [PAÑCAT. 24,11.] [36,14.] [69,14.] [HIT. 83,14.] [AMAR. 75.] [VID. 187.] [PRAB. 85,17.] *ityabhidhāyi tu kairapi* [RĀJA-TAR. 2,4.] говорить кому-л. (acc.) сказать —, говорить; act. [R. 3,40,27.] *prabhavantaṃ padasthaṃ ca paruṣaṃ ko 'bhidhāsyati* [6,12,7.] [KATHĀS. 1,54.] [7,85.] [VID. 156.] [BHAṬṬ. 15,19.] med.: *sa tam — abhyadhattedam* [BHĀG. P. 3,4,24.] *abhihita* указанный, сообщённый, изложенный, представленный, о чём или о ком говорилось, сказанный [M. 2,7.] [3,286.] [5,100.] [6,83.] [97.] [8,266.] [9,181.] [MBH. 4,112.] [13,502.] [BHAG. 2,39.] [VIKR. 43,17.] *so 'yaṃ te 'bhihitastāta bhagavānviśvabhāvanaḥ . samāsena* [BHĀG. P. 2,7,50] *teṣāmuttamābhihitāśiṣām* [R. 2,65,3.] *vākya* [3,51,11.] *sārthikairabhihitam* [PAÑCAT. 8,20.] [72,11.] к кому было обращено слово: *sā tathyamevābhihitā bhavena* [KUMĀRAS. 3,63.] [MĀLAV. 3,9.]
+- **RU:** — 9) указывать, излагать, сообщать, говорить о, излагать: *doṣānanabhidhāya* [KULL.] к [M. 9,73.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,73) *abhidhāsye ca te rājannakṣayyaṃ dravyamuttamam* [MBH. 14,177.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.177) *yaste 'bhyadhāyi samayaḥ* [BHĀG. P. 3,23,10.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,23,10) *kiṃ mayā kartavyaṃ tadabhidhīyatām* [HIT. 58,22.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?58,22) [R. 1,55,14.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,55,14) *sarabhasamabhidhāya kvāpi saṃketabhūmim* [VET. 24,15.] *tattathā vo 'bhidhāsyāmi* [M. 1,42.](https://sanskrit-lexicon-scans.github.io/manu/index.html?1,42) *ya idaṃ paramaṃ guhyaṃ madbhakteṣvabhidhāsyati* [BHAG. 18,68.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?18,68) *saṃdeśamabhyadhāt . harṣāddevyai* [KATHĀS. 9,38.](https://sanskrit-lexicon-scans.github.io/kss/index.html?9,38) [BHĀG. P. 2,1,10.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,1,10) [4,25.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,4,25) *kabandhabadhamabhyadhuḥ* [BHAṬṬ. 7,78.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?7,78) *ko 'bhidhāsyati — svayamātmastave kathām* [R. 3,35,22.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,35,22) *tadvo 'bhidhāsye* [BHĀG. P. 2,10,51.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,10,51) [TRIK. 3,5,1.](https://sanskrit-lexicon-scans.github.io/medini/app2?3,5,1) *tasyāsya karmakāṇḍena saṃbandho 'bhidhīyate* [ŚAṂK.] к [BṚH. ĀR. UP. p. 4.] *dhātuvṛttiḥ — abhidhīyate* [Verz. d. Oxf. H. No. 398.] говорить что-л., произносить, высказывать: *śrutvā śreyo 'bhidhāsyāmi śāpaṃ vā te* [MBH. 14,1563.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.1563) [HARIV. 11164.](https://sanskrit-lexicon-scans.github.io/hariv?11164) *maṅgalānyabhidadhyuṣī* [R. 2,16,20.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,16,20) *abhidhatse ha yadvākyam* [MBH. 1,969.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.969) [R. 2,28,5.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,28,5) [KATHĀS. 14,88.](https://sanskrit-lexicon-scans.github.io/kss/index.html?14,88) *ahamidānīmanṛtamabhidhāsye* [MṚCCH. 53,12.] [PAÑCAT. 192,24.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?192,24) [ŚIŚ. 9,61.] *abhidhāsyāmi vākyam* [R. 1,53,8.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,53,8) [MṚCCH. 53,14.] *abhyadhādevam* так он сказал [RĀJA-TAR. 1,219.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?1,219) [ŚAṂK.] к [BṚH. ĀR. UP. p. 128.] *tathetyabhidadhe punaḥ* [R. GORR. 2,123,15.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,123,15) [RAGH. 2,43.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?2,43) [ŚĀK. 12,12.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?12,12) [DAŚAK.] в [BENF. Chr. 188,6.] *vāḍhamityabhidhāya* [PAÑCAT. 24,11.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?24,11) [36,14.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?36,14) [69,14.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?69,14) [HIT. 83,14.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?83,14) [AMAR. 75.] [VID. 187.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?187) [PRAB. 85,17.] *ityabhidhāyi tu kairapi* [RĀJA-TAR. 2,4.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?2,4) говорить кому-л. (acc.) сказать —, говорить; act. [R. 3,40,27.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,40,27) *prabhavantaṃ padasthaṃ ca paruṣaṃ ko 'bhidhāsyati* [6,12,7.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,12,7) [KATHĀS. 1,54.](https://sanskrit-lexicon-scans.github.io/kss/index.html?1,54) [7,85.](https://sanskrit-lexicon-scans.github.io/kss/index.html?7,85) [VID. 156.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?156) [BHAṬṬ. 15,19.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?15,19) med.: *sa tam — abhyadhattedam* [BHĀG. P. 3,4,24.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,4,24) *abhihita* указанный, сообщённый, изложенный, представленный, о чём или о ком говорилось, сказанный [M. 2,7.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,7) [3,286.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,286) [5,100.](https://sanskrit-lexicon-scans.github.io/manu/index.html?5,100) [6,83.](https://sanskrit-lexicon-scans.github.io/manu/index.html?6,83) [97.](https://sanskrit-lexicon-scans.github.io/manu/index.html?6,97) [8,266.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,266) [9,181.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,181) [MBH. 4,112.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.112) [13,502.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.502) [BHAG. 2,39.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?2,39) [VIKR. 43,17.](https://sanskrit-lexicon-scans.github.io/vikramor/app2?43,17) *so 'yaṃ te 'bhihitastāta bhagavānviśvabhāvanaḥ . samāsena* [BHĀG. P. 2,7,50](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,7,50) *teṣāmuttamābhihitāśiṣām* [R. 2,65,3.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,65,3) *vākya* [3,51,11.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,51,11) *sārthikairabhihitam* [PAÑCAT. 8,20.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?8,20) [72,11.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?72,11) к кому было обращено слово: *sā tathyamevābhihitā bhavena* [KUMĀRAS. 3,63.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?3,63) [MĀLAV. 3,9.](https://sanskrit-lexicon-scans.github.io/malavikagni/app2?3,9)
 - **EN:** — 9) to state, to set forth, to communicate, to speak about, to expound: *doṣānanabhidhāya*
-[KULL.] to [M. 9,73.] *abhidhāsye ca te rājannakṣayyaṃ dravyamuttamam*
-[MBH. 14,177.] *yaste 'bhyadhāyi samayaḥ*
-[BHĀG. P. 3,23,10.] *kiṃ mayā kartavyaṃ tadabhidhīyatām*
-[HIT. 58,22.]
-[R. 1,55,14.] *sarabhasamabhidhāya kvāpi saṃketabhūmim*
+[KULL.] to [M. 9,73.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,73) *abhidhāsye ca te rājannakṣayyaṃ dravyamuttamam*
+[MBH. 14,177.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.177) *yaste 'bhyadhāyi samayaḥ*
+[BHĀG. P. 3,23,10.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,23,10) *kiṃ mayā kartavyaṃ tadabhidhīyatām*
+[HIT. 58,22.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?58,22)
+[R. 1,55,14.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,55,14) *sarabhasamabhidhāya kvāpi saṃketabhūmim*
 [VET. 24,15.] *tattathā vo 'bhidhāsyāmi*
-[M. 1,42.] *ya idaṃ paramaṃ guhyaṃ madbhakteṣvabhidhāsyati*
-[BHAG. 18,68.] *saṃdeśamabhyadhāt . harṣāddevyai*
-[KATHĀS. 9,38.]
-[BHĀG. P. 2,1,10.] [4,25.] *kabandhabadhamabhyadhuḥ*
-[BHAṬṬ. 7,78.] *ko 'bhidhāsyati — svayamātmastave kathām*
-[R. 3,35,22.] *tadvo 'bhidhāsye*
-[BHĀG. P. 2,10,51.]
-[TRIK. 3,5,1.] *tasyāsya karmakāṇḍena saṃbandho 'bhidhīyate*
+[M. 1,42.](https://sanskrit-lexicon-scans.github.io/manu/index.html?1,42) *ya idaṃ paramaṃ guhyaṃ madbhakteṣvabhidhāsyati*
+[BHAG. 18,68.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?18,68) *saṃdeśamabhyadhāt . harṣāddevyai*
+[KATHĀS. 9,38.](https://sanskrit-lexicon-scans.github.io/kss/index.html?9,38)
+[BHĀG. P. 2,1,10.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,1,10) [4,25.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,4,25) *kabandhabadhamabhyadhuḥ*
+[BHAṬṬ. 7,78.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?7,78) *ko 'bhidhāsyati — svayamātmastave kathām*
+[R. 3,35,22.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,35,22) *tadvo 'bhidhāsye*
+[BHĀG. P. 2,10,51.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,10,51)
+[TRIK. 3,5,1.](https://sanskrit-lexicon-scans.github.io/medini/app2?3,5,1) *tasyāsya karmakāṇḍena saṃbandho 'bhidhīyate*
 [ŚAṂK.] to [BṚH. ĀR. UP. p. 4.] *dhātuvṛttiḥ — abhidhīyate*
 [Verz. d. Oxf. H. No. 398.] to say something, to speak, to utter: *śrutvā śreyo 'bhidhāsyāmi śāpaṃ vā te*
-[MBH. 14,1563.]
-[HARIV. 11164.] *maṅgalānyabhidadhyuṣī*
-[R. 2,16,20.] *abhidhatse ha yadvākyam*
-[MBH. 1,969.]
-[R. 2,28,5.]
-[KATHĀS. 14,88.] *ahamidānīmanṛtamabhidhāsye*
+[MBH. 14,1563.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.1563)
+[HARIV. 11164.](https://sanskrit-lexicon-scans.github.io/hariv?11164) *maṅgalānyabhidadhyuṣī*
+[R. 2,16,20.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,16,20) *abhidhatse ha yadvākyam*
+[MBH. 1,969.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.969)
+[R. 2,28,5.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,28,5)
+[KATHĀS. 14,88.](https://sanskrit-lexicon-scans.github.io/kss/index.html?14,88) *ahamidānīmanṛtamabhidhāsye*
 [MṚCCH. 53,12.]
-[PAÑCAT. 192,24.]
+[PAÑCAT. 192,24.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?192,24)
 [ŚIŚ. 9,61.] *abhidhāsyāmi vākyam*
-[R. 1,53,8.]
+[R. 1,53,8.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,53,8)
 [MṚCCH. 53,14.] *abhyadhādevam* so he said
-[RĀJA-TAR. 1,219.]
+[RĀJA-TAR. 1,219.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?1,219)
 [ŚAṂK.] to [BṚH. ĀR. UP. p. 128.] *tathetyabhidadhe punaḥ*
-[R. GORR. 2,123,15.] [RAGH. 2,43.] [ŚĀK. 12,12.] [DAŚAK.] in [BENF. Chr. 188,6.] *vāḍhamityabhidhāya*
-[PAÑCAT. 24,11.] [36,14.] [69,14.]
-[HIT. 83,14.]
+[R. GORR. 2,123,15.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,123,15) [RAGH. 2,43.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?2,43) [ŚĀK. 12,12.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?12,12) [DAŚAK.] in [BENF. Chr. 188,6.] *vāḍhamityabhidhāya*
+[PAÑCAT. 24,11.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?24,11) [36,14.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?36,14) [69,14.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?69,14)
+[HIT. 83,14.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?83,14)
 [AMAR. 75.]
-[VID. 187.]
+[VID. 187.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?187)
 [PRAB. 85,17.] *ityabhidhāyi tu kairapi*
-[RĀJA-TAR. 2,4.] to say, to speak to someone (acc.); act.
-[R. 3,40,27.] *prabhavantaṃ padasthaṃ ca paruṣaṃ ko 'bhidhāsyati*
-[6,12,7.] [KATHĀS. 1,54.] [7,85.] [VID. 156.] [BHAṬṬ. 15,19.]
+[RĀJA-TAR. 2,4.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?2,4) to say, to speak to someone (acc.); act.
+[R. 3,40,27.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,40,27) *prabhavantaṃ padasthaṃ ca paruṣaṃ ko 'bhidhāsyati*
+[6,12,7.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,12,7) [KATHĀS. 1,54.](https://sanskrit-lexicon-scans.github.io/kss/index.html?1,54) [7,85.](https://sanskrit-lexicon-scans.github.io/kss/index.html?7,85) [VID. 156.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?156) [BHAṬṬ. 15,19.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?15,19)
 
 med.: *sa tam — abhyadhattedam*
-[BHĀG. P. 3,4,24.] *abhihita* stated, communicated, put forward, expounded, that which has been spoken about or of whom it has been spoken, spoken
-[M. 2,7.] [3,286.] [5,100.] [6,83.] [97.] [8,266.] [9,181.]
-[MBH. 4,112.] [13,502.]
-[BHAG. 2,39.]
-[VIKR. 43,17.] *so 'yaṃ te 'bhihitastāta bhagavānviśvabhāvanaḥ . samāsena*
-[BHĀG. P. 2,7,50] *teṣāmuttamābhihitāśiṣām*
-[R. 2,65,3.] *vākya*
-[3,51,11.] *sārthikairabhihitam*
-[PAÑCAT. 8,20.] [72,11.] to whom it has been spoken: *sā tathyamevābhihitā bhavena*
-[KUMĀRAS. 3,63.]
-[MĀLAV. 3,9.]
+[BHĀG. P. 3,4,24.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,4,24) *abhihita* stated, communicated, put forward, expounded, that which has been spoken about or of whom it has been spoken, spoken
+[M. 2,7.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,7) [3,286.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,286) [5,100.](https://sanskrit-lexicon-scans.github.io/manu/index.html?5,100) [6,83.](https://sanskrit-lexicon-scans.github.io/manu/index.html?6,83) [97.](https://sanskrit-lexicon-scans.github.io/manu/index.html?6,97) [8,266.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,266) [9,181.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,181)
+[MBH. 4,112.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.112) [13,502.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.502)
+[BHAG. 2,39.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?2,39)
+[VIKR. 43,17.](https://sanskrit-lexicon-scans.github.io/vikramor/app2?43,17) *so 'yaṃ te 'bhihitastāta bhagavānviśvabhāvanaḥ . samāsena*
+[BHĀG. P. 2,7,50](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,7,50) *teṣāmuttamābhihitāśiṣām*
+[R. 2,65,3.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,65,3) *vākya*
+[3,51,11.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,51,11) *sārthikairabhihitam*
+[PAÑCAT. 8,20.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?8,20) [72,11.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?72,11) to whom it has been spoken: *sā tathyamevābhihitā bhavena*
+[KUMĀRAS. 3,63.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?3,63)
+[MĀLAV. 3,9.](https://sanskrit-lexicon-scans.github.io/malavikagni/app2?3,9)
   <sub>DCS 1334 · attested</sub>
 
 **caus)** — Vgl. *abhidhā* fgg., *˚dhānī* fgg., *˚dheya* . — caus. nennen lassen: *sragityabhidhāpayīta* [ĀŚV. GṚHY. 3,8.]

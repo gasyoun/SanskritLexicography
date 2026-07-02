@@ -3,8 +3,11 @@
 `la_b~~h0_zz_pw`
 
 
-**head)** √*labh*¦, *labhate* (*lambhante* u. s. w. fehlerhaft; *alabhanta* auch fehlerhaft für *ālabhanta*), *labhati* (metrisch und ungenau); *labdha* Partic.
+√*labh*¦, *labhate* (*lambhante* u. s. w. fehlerhaft; *alabhanta* auch fehlerhaft für *ālabhanta*), *labhati* (metrisch und ungenau); *labdha* Partic.
 - **EN:** √*labh*¦, *labhate* (*lambhante* u. s. w. faulty; *alabhanta* also faulty for *ālabhanta*), *labhati* (metrical and inexact); *labdha* Partic.
+
+√*labh*¦ mit *prati* V. **˚pratilabdha* so v. a. theilhaftig geworden [MAHĀVY. 30,6]. [33]. [245,575].
+- **EN:** √*labh*¦ with *prati* V. **˚pratilabdha* so v. a. {having become a partaker of} [MAHĀVY. 30,6]. [33]. [245,575].
 
 **1)** — 1〉 erwischen, fassen, sich Jmds bemeistern; antreffen, finden, zu sehen bekommen ([61,29]); Pass. gefunden —, angetroffen werden. *antaram* eine Gelegenheit finden, sich Eingang verschaffen bei, Eindruck machen auf (Gen.); *avakāśam* Platz —, einen freien Spielraum finden, sich Eingang verschaffen, am Platze sein; *kālam* den richtigen Zeitpunct für Etwas (Loc. eines Nom. act.) finden; *padam* Platz finden, so v. a. sich Eingang verschaffen.
 - **EN:** — 1) {to catch, seize, get hold of, take possession of someone; to come upon, find, catch sight of} ([61,29]); Pass. {to be found —, be come upon}. *antaram* {to find an opportunity, gain entry with, make an impression upon} (Gen.); *avakāśam* {to find room —, find free scope, gain entry, be appropriate;} *kālam* {to find the right moment for something} (Loc. of a Nom. act.); *padam* {to find scope,} so v. a. {to gain entry}.
@@ -69,8 +72,8 @@
 **a-3)** — 3〉 das Opferthier fassen und es anbinden, daher auch euphemistisch für schlachten, opfern (ein Opferthier oder ein Thieropfer).
 - **EN:** — 3) {to take hold of} the sacrificial animal and {to bind it,} hence also euphemistically for {to slaughter, to sacrifice} (a sacrificial animal or an animal offering).
 
-**a-4)** — 4〉 anfangen, unternehmen [TBR. 2,2,2,1.] [2].
-- **EN:** — 4) {to begin, undertake} [TBR. 2,2,2,1.] [2].
+**a-4)** — 4〉 anfangen, unternehmen [TBR. 2,2,2,1.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?2,2,2,1) [2](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?2,2,2,2).
+- **EN:** — 4) {to begin, undertake} [TBR. 2,2,2,1.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?2,2,2,1) [2](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?2,2,2,2).
 
 **a-5)** — 5〉 Jmd gewinnen.
 - **EN:** — 5) {to win someone over}.
@@ -78,8 +81,8 @@
 **a-6)** — 6〉 erlangen, theilhaftig werden.
 - **EN:** — 6) {to obtain, become a partaker of}.
 
-**a-7)** — 7〉 *ālalambhe* [RĀJAT. 2,212] fehlerhaft für *ālalambe*.
-- **EN:** — 7) *ālalambhe* [RĀJAT. 2,212] faulty for *ālalambe*.
+**a-7)** — 7〉 *ālalambhe* [RĀJAT. 2,212](https://sanskrit-lexicon-scans.github.io/rajatar/app1?2,212) fehlerhaft für *ālalambe*.
+- **EN:** — 7) *ālalambhe* [RĀJAT. 2,212](https://sanskrit-lexicon-scans.github.io/rajatar/app1?2,212) faulty for *ālalambe*.
 
 **a-caus-head)** — Caus.
 - **EN:** — Caus.
@@ -87,8 +90,8 @@
 **a-caus-1)** — 1〉 anfassen —, berühren lassen.
 - **EN:** — 1) {to cause to take hold of —, to touch}.
 
-**a-caus-2)** — 2〉 beginnen lassen [MAITR. S. 1,8,9 (129,10). 2,1,10 (11,19)]. [TS. 2,2,3,2].
-- **EN:** — 2) {to cause to begin} [MAITR. S. 1,8,9 (129,10). 2,1,10 (11,19)]. [TS. 2,2,3,2].
+**a-caus-2)** — 2〉 beginnen lassen [MAITR. S. 1,8,9 (129,10). 2,1,10 (11,19)]. [TS. 2,2,3,2](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?2,2,3,2).
+- **EN:** — 2) {to cause to begin} [MAITR. S. 1,8,9 (129,10). 2,1,10 (11,19)]. [TS. 2,2,3,2](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?2,2,3,2).
 
 **a-desid-head)** — Desid.
 - **EN:** — Desid.
@@ -126,8 +129,8 @@
 **upa-caus)** — Caus. Jmd tadeln, Jmd Vorwürfe machen.
 - **EN:** — Caus. {to blame someone, to reproach someone}.
 
-**upa-misc)** — Mit *paryā*, *saṃvatsaraṃ paryālabhyante* [MAITR. S. 2,5,2. (49,9)] [TS. 2,1,2,6.] [4,2] ungenau für *saṃ˚ paryā˚*.
-- **EN:** — With *paryā*, *saṃvatsaraṃ paryālabhyante* [MAITR. S. 2,5,2. (49,9)] [TS. 2,1,2,6.] [4,2] inexact for *saṃ˚ paryā˚*.
+**upa-misc)** — Mit *paryā*, *saṃvatsaraṃ paryālabhyante* [MAITR. S. 2,5,2. (49,9)] [TS. 2,1,2,6.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?2,1,2,6) [4,2](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?2,1,4,2) ungenau für *saṃ˚ paryā˚*.
+- **EN:** — With *paryā*, *saṃvatsaraṃ paryālabhyante* [MAITR. S. 2,5,2. (49,9)] [TS. 2,1,2,6.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?2,1,2,6) [4,2](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?2,1,4,2) inexact for *saṃ˚ paryā˚*.
 
 **prati-anu-head)** — Mit *pratyā*
 - **EN:** — With *pratyā*
@@ -168,8 +171,8 @@
 **vi-5)** — 5〉 Pass. auch in der Bed. von 3〉 und 4〉.
 - **EN:** — 5) Pass. also in the Bed. of 3) and 4).
 
-**vi-6)** — 6〉 *upalabdha* [R. 2,40,45] fehlerhaft für *upālabdha*.
-- **EN:** — 6) *upalabdha* [R. 2,40,45] faulty for *upālabdha*.
+**vi-6)** — 6〉 *upalabdha* [R. 2,40,45](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,40,45) fehlerhaft für *upālabdha*.
+- **EN:** — 6) *upalabdha* [R. 2,40,45](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,40,45) faulty for *upālabdha*.
 
 **vi-caus-head)** — Caus.
 - **EN:** — Caus.
@@ -222,8 +225,8 @@
 **pari-1)** — 1〉 Jmd anführen, hintergehen, täuschen ([156,5]. [317,3]), verhöhnen, zum Narren halten. *dharmam* das Gesetz verhöhnen, so v. a. ohne alle Rücksicht verletzen.
 - **EN:** — 1) {to dupe, deceive someone} ([156,5]. [317,3]), {to mock, make a fool of}. *dharmam* {to mock the law,} so v. a. {to violate without any regard}.
 
-**pari-2)** — 2〉 wiedererlangen, wiederbekommen [MBH. 14,58,52]. v. l. *pravi*, richtig wohl *prati*.
-- **EN:** — 2) {to recover, get back} [MBH. 14,58,52]. v. l. *pravi*, probably correctly *prati*.
+**pari-2)** — 2〉 wiedererlangen, wiederbekommen [MBH. 14,58,52](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?14,58,52). v. l. *pravi*, richtig wohl *prati*.
+- **EN:** — 2) {to recover, get back} [MBH. 14,58,52](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?14,58,52). v. l. *pravi*, probably correctly *prati*.
 
 **pra-head)** — Mit *prati*
 - **EN:** — With *prati*
@@ -284,6 +287,3 @@
 
 **sam-misc)** — Desid. in *saṃlipsu*.
 - **EN:** — Desid. in *saṃlipsu*.
-
-**head)** √*labh*¦ mit *prati* V. **˚pratilabdha* so v. a. theilhaftig geworden [MAHĀVY. 30,6]. [33]. [245,575].
-- **EN:** √*labh*¦ with *prati* V. **˚pratilabdha* so v. a. {having become a partaker of} [MAHĀVY. 30,6]. [33]. [245,575].

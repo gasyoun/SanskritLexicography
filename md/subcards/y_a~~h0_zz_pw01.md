@@ -21,10 +21,10 @@
 - **EN:** — With *ud*
   <sub>attested</sub>
 
-**ud1)** — 1〉 aufgehen (von der Sonne) [ṚV. 10,37,3].
+**ud1)** — 1〉 aufgehen (von der Sonne) [ṚV. 10,37,3](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.037.html#rv10.037.03).
 
-- **RU:** — 1〉 восходить (о солнце) [ṚV. 10,37,3].
-- **EN:** 1) to rise (of the sun) [ṚV. 10,37,3].
+- **RU:** — 1〉 восходить (о солнце) [ṚV. 10,37,3](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.037.html#rv10.037.03).
+- **EN:** 1) to rise (of the sun) [ṚV. 10,37,3](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.037.html#rv10.037.03).
   <sub>attested</sub>
 
 **ud2)** — 2〉 hinausgehen —, weggehen von (Abl.).
@@ -63,10 +63,10 @@
 - **EN:** — With *abhyud*, *abhyudyāta* having risen up against someone. v. l. *abhyudyata*.
   <sub>attested</sub>
 
-**abhyud)** — Mit *pratyud* sich erheben und Jmd (Acc., ausnahmsweise Gen.) entgegengehen (in freundlicher oder feindlicher Absicht). *pratyudyāta* mit pass. Bed. [MBH. 7,185,15].
+**abhyud)** — Mit *pratyud* sich erheben und Jmd (Acc., ausnahmsweise Gen.) entgegengehen (in freundlicher oder feindlicher Absicht). *pratyudyāta* mit pass. Bed. [MBH. 7,185,15](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?7,185,15).
 
-- **RU:** — С *pratyud* подняться и выйти навстречу кому-л. (Acc., в виде исключения Gen.) (с дружественным или враждебным намерением). *pratyudyāta* с pass. Bed. [MBH. 7,185,15].
-- **EN:** — With *pratyud*, to rise up and go to meet someone (Acc., exceptionally Gen.) (with friendly or hostile intent). *pratyudyāta* with pass. Bed. [MBH. 7,185,15].
+- **RU:** — С *pratyud* подняться и выйти навстречу кому-л. (Acc., в виде исключения Gen.) (с дружественным или враждебным намерением). *pratyudyāta* с pass. Bed. [MBH. 7,185,15](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?7,185,15).
+- **EN:** — With *pratyud*, to rise up and go to meet someone (Acc., exceptionally Gen.) (with friendly or hostile intent). *pratyudyāta* with pass. Bed. [MBH. 7,185,15](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?7,185,15).
   <sub>attested</sub>
 
 **samud)** — Mit *samud* sich gegen Jmd (Acc.) erheben. *samudyāta* mit act. Bed.
@@ -381,10 +381,10 @@
 - **EN:** 1) to set out, to depart, to start on a journey. *prayāta* having set oneself in motion, going, moving, flying.
   <sub>attested</sub>
 
-**pra2)** — 2〉 gehen —, sich hinbewegen —, fahren zu (Acc., auch mit *accha*, mit Acc. und *prati* und mit Loc., wie *tatra* u. s. w.), von oder aus (Abl.). ziehen gegen (Acc.), gehen —, laufen nach (Acc., von Wegen und Flüssen), gelangen —, kommen in (Acc. [Spr. 7823]). *prayāta* mit act. Bed.
+**pra2)** — 2〉 gehen —, sich hinbewegen —, fahren zu (Acc., auch mit *accha*, mit Acc. und *prati* und mit Loc., wie *tatra* u. s. w.), von oder aus (Abl.). ziehen gegen (Acc.), gehen —, laufen nach (Acc., von Wegen und Flüssen), gelangen —, kommen in (Acc. [Spr. 7823](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7823)). *prayāta* mit act. Bed.
 
-- **RU:** — 2〉 идти —, двигаться —, ехать к (Acc., также с *accha*, с Acc. и *prati* и с Loc., как *tatra* u. s. w.), от или из (Abl.). выступать против (Acc.), идти —, течь по направлению к (Acc., о дорогах и реках), достигать —, приходить в (Acc. [Spr. 7823]). *prayāta* с act. Bed.
-- **EN:** 2) to go —, to move toward —, to travel to (Acc., also with *accha*, with Acc. and *prati* and with Loc., as *tatra* u. s. w.), from or out of (Abl.); to march against (Acc.); to go —, run toward (Acc., of roads and rivers); to reach —, come into (Acc. [Spr. 7823]). *prayāta* with act. Bed.
+- **RU:** — 2〉 идти —, двигаться —, ехать к (Acc., также с *accha*, с Acc. и *prati* и с Loc., как *tatra* u. s. w.), от или из (Abl.). выступать против (Acc.), идти —, течь по направлению к (Acc., о дорогах и реках), достигать —, приходить в (Acc. [Spr. 7823](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7823)). *prayāta* с act. Bed.
+- **EN:** 2) to go —, to move toward —, to travel to (Acc., also with *accha*, with Acc. and *prati* and with Loc., as *tatra* u. s. w.), from or out of (Abl.); to march against (Acc.); to go —, run toward (Acc., of roads and rivers); to reach —, come into (Acc. [Spr. 7823](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7823)). *prayāta* with act. Bed.
   <sub>attested</sub>
 
 **pra3)** — 3〉 = *yā* wandeln, gehen, sich bewegen, fahren.
@@ -393,10 +393,10 @@
 - **EN:** 3) = *yā*, to walk, go, move, travel.
   <sub>attested</sub>
 
-**pra4)** — 4〉 von dannen gehen, vergehen, verschwinden [Spr. 7750]. [7770].
+**pra4)** — 4〉 von dannen gehen, vergehen, verschwinden [Spr. 7750](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7750). [7770](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7770).
 
-- **RU:** — 4〉 уходить прочь, исчезать, пропадать [Spr. 7750]. [7770].
-- **EN:** 4) to go away from there, to pass away, to vanish [Spr. 7750]. [7770].
+- **RU:** — 4〉 уходить прочь, исчезать, пропадать [Spr. 7750](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7750). [7770](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7770).
+- **EN:** 4) to go away from there, to pass away, to vanish [Spr. 7750](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7750). [7770](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7770).
   <sub>attested</sub>
 
 **pra5)** — 5〉 auseinandergehen, -fliegen.
@@ -453,10 +453,10 @@
 - **EN:** — With *anupra*
   <sub>attested</sub>
 
-**abhipra1)** — 1〉 nach Jmd (Acc.) aufbrechen, Jmd begleiten [TBR. 3,7,4,1.] [2]. *anuprayāta* mit act. und pass. Bed.
+**abhipra1)** — 1〉 nach Jmd (Acc.) aufbrechen, Jmd begleiten [TBR. 3,7,4,1.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?3,7,4,1) [2](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?3,7,4,2). *anuprayāta* mit act. und pass. Bed.
 
-- **RU:** — 1〉 отправляться вслед за кем-л. (Acc.), сопровождать кого-л. [TBR. 3,7,4,1.] [2]. *anuprayāta* с act. и pass. Bed.
-- **EN:** 1) to set out after someone (Acc.), to accompany someone [TBR. 3,7,4,1.] [2]. *anuprayāta* with act. and pass. Bed.
+- **RU:** — 1〉 отправляться вслед за кем-л. (Acc.), сопровождать кого-л. [TBR. 3,7,4,1.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?3,7,4,1) [2](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?3,7,4,2). *anuprayāta* с act. и pass. Bed.
+- **EN:** 1) to set out after someone (Acc.), to accompany someone [TBR. 3,7,4,1.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?3,7,4,1) [2](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?3,7,4,2). *anuprayāta* with act. and pass. Bed.
   <sub>attested</sub>
 
 **abhipra2)** — 2〉 den Weg einschlagen nach (Acc.).
@@ -495,10 +495,10 @@
 - **EN:** 3) to attack. *˚yāta* with act. Bed.
   <sub>attested</sub>
 
-**sampra)** — Mit *upapra* herbeikommen, -fahren [ṚV. 7,70,6]. sich aufmachen zu (Acc.).
+**sampra)** — Mit *upapra* herbeikommen, -fahren [ṚV. 7,70,6](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.070.html#rv07.070.06). sich aufmachen zu (Acc.).
 
-- **RU:** — С *upapra* приходить, приезжать [ṚV. 7,70,6]. отправляться к (Acc.).
-- **EN:** — With *upapra*, to come up, — drive up [ṚV. 7,70,6]; to set off toward (Acc.).
+- **RU:** — С *upapra* приходить, приезжать [ṚV. 7,70,6](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.070.html#rv07.070.06). отправляться к (Acc.).
+- **EN:** — With *upapra*, to come up, — drive up [ṚV. 7,70,6](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.070.html#rv07.070.06); to set off toward (Acc.).
   <sub>attested</sub>
 
 **paripra)** — Mit *paripra* umfahren.
@@ -513,10 +513,10 @@
 - **EN:** — With *pratipra*
   <sub>attested</sub>
 
-**prati-pra1)** — 1〉 herbeikommen [ṚV. 7,70,5].
+**prati-pra1)** — 1〉 herbeikommen [ṚV. 7,70,5](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.070.html#rv07.070.05).
 
-- **RU:** — 1〉 приходить [ṚV. 7,70,5].
-- **EN:** 1) to come up [ṚV. 7,70,5].
+- **RU:** — 1〉 приходить [ṚV. 7,70,5](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.070.html#rv07.070.05).
+- **EN:** 1) to come up [ṚV. 7,70,5](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.070.html#rv07.070.05).
   <sub>attested</sub>
 
 **prati-pra2)** — 2〉 heimkehren, — zu oder in (Acc.). *˚yāta* mit act. Bed.

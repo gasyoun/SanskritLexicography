@@ -33,10 +33,10 @@
 - **EN:** — 4) to let loose, set free ([326,9]. [327,20]), to give free rein to the reins (Partic. *mukta*); to release, let go. *padātpadam* with *na* "not to let one foot leave the other," i.e. v. a. not to move from the spot. *ubhayorhastayormuktamannam* thus v. a. food that one does not hold with both hands [VASIṢṬHA 11,25].
   <sub>DCS 3914 · attested</sub>
 
-**5)** — 5〉 einen Platz verlassen. *mukta* verlassen, frei gelassen (Weg). frei gelegt ([MEGH. 41]). *muktā dik* heisst diejenige Weltgegend, welche die Sonne so eben verlassen hat.
+**5)** — 5〉 einen Platz verlassen. *mukta* verlassen, frei gelassen (Weg). frei gelegt ([MEGH. 41](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?41)). *muktā dik* heisst diejenige Weltgegend, welche die Sonne so eben verlassen hat.
 
-- **RU:** — 5〉 покидать место. *mukta* покинутый, оставленный свободным (путь). открытый, незаграждённый ([MEGH. 41]). *muktā dik* означает ту сторону света, которую солнце только что покинуло.
-- **EN:** — 5) to leave a place. *mukta* left, vacated (of a road). laid open ([MEGH. 41]). *muktā dik* denotes that quarter of the world which the sun has just left.
+- **RU:** — 5〉 покидать место. *mukta* покинутый, оставленный свободным (путь). открытый, незаграждённый ([MEGH. 41](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?41)). *muktā dik* означает ту сторону света, которую солнце только что покинуло.
+- **EN:** — 5) to leave a place. *mukta* left, vacated (of a road). laid open ([MEGH. 41](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?41)). *muktā dik* denotes that quarter of the world which the sun has just left.
   <sub>DCS 3914 · attested</sub>
 
 **6)** — 6〉 Jmd oder Etwas fahren lassen, im Stich lassen, aufgeben, ablegen, absetzen ([CAMPAKA. 92]), deponiren ([ebend. 407. 410]). *kalevaram* ([Chr. 55,20]), *deham*, *prāṇān*, *jīvitam* ([315,6]) den Körper, die Lebensgeister, das Leben fahren lassen, in den Tod gehen, sterben. *mukta* fahren gelassen, verlassen, ausgezogen, abgelegt, deponirt ([CAMPAKA. 473]), weggeworfen (Kleider [ĀPAST. 2,21,11]), fahren gelassen, aufgegeben, nicht mehr da seiend, verschwunden (insbes. am Anfange eines adj. Comp.).
@@ -57,10 +57,10 @@
 - **EN:** — 8) to give forth from oneself, i.e. v. a. to bestow; to hand over, deliver [CAMPAKA. 281].
   <sub>DCS 3914 · attested</sub>
 
-**9)** — 9〉 werfen, schleudern, abschiessen, — auf (Loc., Dat., Gen. oder Acc. mit *prati*). *ātmānam* sich stürzen von (Abl.). *mukta* hingeworfen ([MEGH. 84]), geschleudert, abgeschossen. *pādaprahāra* ein versetzter Fusstritt, *ātman* selbst sich gestürzt habend von (Abl.).
+**9)** — 9〉 werfen, schleudern, abschiessen, — auf (Loc., Dat., Gen. oder Acc. mit *prati*). *ātmānam* sich stürzen von (Abl.). *mukta* hingeworfen ([MEGH. 84](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?84)), geschleudert, abgeschossen. *pādaprahāra* ein versetzter Fusstritt, *ātman* selbst sich gestürzt habend von (Abl.).
 
-- **RU:** — 9〉 бросать, метать, пускать, — в (Loc., Dat., Gen. или Acc. с *prati*). *ātmānam* броситься вниз с (Abl.). *mukta* брошенный ([MEGH. 84]), метнутый, выпущенный. *pādaprahāra* нанесённый удар ногой, *ātman* сам бросившийся с (Abl.).
-- **EN:** — 9) to throw, hurl, shoot — at (Loc., Dat., Gen. or Acc. with *prati*). *ātmānam* to hurl oneself down from (Abl.). *mukta* thrown down ([MEGH. 84]), hurled, shot. *pādaprahāra* a kick delivered, *ātman* having hurled oneself from (Abl.).
+- **RU:** — 9〉 бросать, метать, пускать, — в (Loc., Dat., Gen. или Acc. с *prati*). *ātmānam* броситься вниз с (Abl.). *mukta* брошенный ([MEGH. 84](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?84)), метнутый, выпущенный. *pādaprahāra* нанесённый удар ногой, *ātman* сам бросившийся с (Abl.).
+- **EN:** — 9) to throw, hurl, shoot — at (Loc., Dat., Gen. or Acc. with *prati*). *ātmānam* to hurl oneself down from (Abl.). *mukta* thrown down ([MEGH. 84](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?84)), hurled, shot. *pādaprahāra* a kick delivered, *ātman* having hurled oneself from (Abl.).
   <sub>DCS 3914 · attested</sub>
 
 **10)** — 10〉 schicken in (Loc.) *mukta* [CAMPAKA. 230].
@@ -87,10 +87,10 @@
 - **EN:** — a) to be freed —, released from a sin, — from sins, — from the bonds of the world. *muktvā* being released [288,29]. *mukta* freed from a sin ([ĀPAST. 1,24,21]), released from sins, — from the bonds of the world.
   <sub>DCS 3914 · attested</sub>
 
-**12b)** — b〉 lassen von (Abl.) [Spr. 6496].
+**12b)** — b〉 lassen von (Abl.) [Spr. 6496](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?6496).
 
-- **RU:** — b〉 отказываться от (Abl.) [Spr. 6496].
-- **EN:** — b) to let go of (Abl.) [Spr. 6496].
+- **RU:** — b〉 отказываться от (Abl.) [Spr. 6496](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?6496).
+- **EN:** — b) to let go of (Abl.) [Spr. 6496](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?6496).
   <sub>DCS 3914 · attested</sub>
 
 **12c)** — c〉 kommen um (Instr.) [49,30].
@@ -225,10 +225,10 @@
 - **EN:** — Desid. of Caus. *mumocayiṣati* to be willing to release someone from the bonds of the world.
   <sub>DCS 3914 · attested</sub>
 
-**compound-ud)** — Mit *ati* Pass. vermeiden, entgehen; mit Acc. *atimukta* entgangen, mit Acc. [ŚAT. BR. 2,3,2,10].
+**compound-ud)** — Mit *ati* Pass. vermeiden, entgehen; mit Acc. *atimukta* entgangen, mit Acc. [ŚAT. BR. 2,3,2,10](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,3,2,10).
 
-- **RU:** — С *ati* Pass. избегать, уклоняться; с Acc. *atimukta* избегнутый, с Acc. [ŚAT. BR. 2,3,2,10].
-- **EN:** — With *ati* Pass. to avoid, escape; with Acc. *atimukta* escaped, with Acc. [ŚAT. BR. 2,3,2,10].
+- **RU:** — С *ati* Pass. избегать, уклоняться; с Acc. *atimukta* избегнутый, с Acc. [ŚAT. BR. 2,3,2,10](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,3,2,10).
+- **EN:** — With *ati* Pass. to avoid, escape; with Acc. *atimukta* escaped, with Acc. [ŚAT. BR. 2,3,2,10](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,3,2,10).
   <sub>DCS 3914 · attested</sub>
 
 **compound-ud2)** — Desid. *atimokṣate* sich retten vor (Acc.)
@@ -339,10 +339,10 @@
 - **EN:** — 2) to take off. Only Partic. *āmukta* taken off (a garment).
   <sub>DCS 3914 · attested</sub>
 
-**pra3)** — 3〉 werfen, schleudern, — auf (Loc.). den Blick werfen auf Loc. () [MEGH. 35].
+**pra3)** — 3〉 werfen, schleudern, — auf (Loc.). den Blick werfen auf Loc. () [MEGH. 35](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?35).
 
-- **RU:** — 3〉 бросать, метать, — на (Loc.). бросать взгляд на Loc. () [MEGH. 35].
-- **EN:** — 3) to throw, hurl — at (Loc.). to cast one's glance upon Loc. () [MEGH. 35].
+- **RU:** — 3〉 бросать, метать, — на (Loc.). бросать взгляд на Loc. () [MEGH. 35](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?35).
+- **EN:** — 3) to throw, hurl — at (Loc.). to cast one's glance upon Loc. () [MEGH. 35](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?35).
   <sub>DCS 3914 · attested</sub>
 
 **pra4)** — 4〉 *āmukta* fehlerhaft für *āsakta*.
@@ -537,10 +537,10 @@
 - **EN:** — With *adhinis* Pass. to free oneself from (Abl.).
   <sub>DCS 3914 · attested</sub>
 
-**compound-extra4)** — Mit *abhinis*, *abhinirmukta* [BHĀG. P. 11,26,8] und sonst oft fehlerhaft für *abhinirmrukta*.
+**compound-extra4)** — Mit *abhinis*, *abhinirmukta* [BHĀG. P. 11,26,8](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?11,26,8) und sonst oft fehlerhaft für *abhinirmrukta*.
 
-- **RU:** — С *abhinis*, *abhinirmukta* [BHĀG. P. 11,26,8] и в других местах часто ошибочно вместо *abhinirmrukta*.
-- **EN:** — With *abhinis*, *abhinirmukta* [BHĀG. P. 11,26,8] and elsewhere often erroneously for *abhinirmrukta*.
+- **RU:** — С *abhinis*, *abhinirmukta* [BHĀG. P. 11,26,8](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?11,26,8) и в других местах часто ошибочно вместо *abhinirmrukta*.
+- **EN:** — With *abhinis*, *abhinirmukta* [BHĀG. P. 11,26,8](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?11,26,8) and elsewhere often erroneously for *abhinirmrukta*.
   <sub>DCS 3914 · attested</sub>
 
 **compound-vyut-intro)** — Mit *vinis*

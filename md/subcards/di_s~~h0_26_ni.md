@@ -4,12 +4,12 @@
 
 
 **1)** — *ni*, partic. *nidiṣṭa*
-[PAÑCAT. 235,21] fehlerhaft für *nirdiṣṭa* .
+[PAÑCAT. 235,21](https://sanskrit-lexicon-scans.github.io/pantankose/app2?235,21) fehlerhaft für *nirdiṣṭa* .
 
 - **RU:** — *ni*, partic. *nidiṣṭa*
-[PAÑCAT. 235,21] ошибочно вместо *nirdiṣṭa* .
+[PAÑCAT. 235,21](https://sanskrit-lexicon-scans.github.io/pantankose/app2?235,21) ошибочно вместо *nirdiṣṭa* .
 - **EN:** — *ni*, partic. *nidiṣṭa*
-[PAÑCAT. 235,21] erroneous for *nirdiṣṭa* .
+[PAÑCAT. 235,21](https://sanskrit-lexicon-scans.github.io/pantankose/app2?235,21) erroneous for *nirdiṣṭa* .
   <sub>DCS 2 · attested</sub>
 
 **final)** — Vgl. übrigens *nideśa* .

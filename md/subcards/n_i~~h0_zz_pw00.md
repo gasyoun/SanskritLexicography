@@ -8,8 +8,8 @@
 - **EN:** **1.** √*nī*¦, *nayati, ˚te*
 — 1〉 to lead, guide, direct. *agram* to adduce, cite something (Gen.). Also of the horse that draws the chariot.
 
-**2)** — 2〉 abführen, wegführen, fortbringen, fortschaffen; hinführen, hinbringen, hinschaffen, — zu (Acc., Acc. mit *prati* [[PAÑCAT. 96,4]], Dat. oder Loc.).
-- **EN:** — 2〉 to lead away, carry away, remove, convey away; to lead towards, bring to, convey to (Acc., Acc. with *prati* [[PAÑCAT. 96,4]], Dat. or Loc.).
+**2)** — 2〉 abführen, wegführen, fortbringen, fortschaffen; hinführen, hinbringen, hinschaffen, — zu (Acc., Acc. mit *prati* [[PAÑCAT. 96,4](https://sanskrit-lexicon-scans.github.io/pantankose/app2?96,4)], Dat. oder Loc.).
+- **EN:** — 2〉 to lead away, carry away, remove, convey away; to lead towards, bring to, convey to (Acc., Acc. with *prati* [[PAÑCAT. 96,4](https://sanskrit-lexicon-scans.github.io/pantankose/app2?96,4)], Dat. or Loc.).
 
 **3)** — 3〉 Med. und seltener Act. mit sich führen, — nehmen, heimführen (ein Weib).
 - **EN:** — 3〉 Med. and less frequently Act. to take with one, take home, lead home (a wife).
@@ -17,8 +17,8 @@
 **4)** — 4〉 heran-, herbeiziehen [311,13].
 - **EN:** — 4〉 to draw near, draw towards oneself [311,13].
 
-**5)** — 5〉 Jmd oder Etwas (Acc.) in ein Verhältniss, eine Lage, eines Zustand (Acc. einmal auch Loc.) bringen, — versetzen [MBH. 5,36,4]. Mit *˚sāt* verwandeln in.
-- **EN:** — 5〉 to bring or place someone or something (Acc.) into a relation, a situation, a state (Acc. once also Loc.) [MBH. 5,36,4]. With *˚sāt* to transform into.
+**5)** — 5〉 Jmd oder Etwas (Acc.) in ein Verhältniss, eine Lage, eines Zustand (Acc. einmal auch Loc.) bringen, — versetzen [MBH. 5,36,4](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?5,36,4). Mit *˚sāt* verwandeln in.
+- **EN:** — 5〉 to bring or place someone or something (Acc.) into a relation, a situation, a state (Acc. once also Loc.) [MBH. 5,36,4](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?5,36,4). With *˚sāt* to transform into.
 
 **6)** — 6〉 *daṇḍam* den Stock führen, so v. a. Strafe verhängen.
 - **EN:** — 6〉 *daṇḍam* to wield the rod, hence v. a. to inflict punishment.
@@ -38,14 +38,14 @@
 **11)** — 11〉 wegführen, so v. a. ausschliessen von (Abl.).
 - **EN:** — 11〉 to lead away, hence v. a. to exclude from (Abl.).
 
-**12)** — 12〉 Etwas herausbringen, hinter Etwas kommen, feststellen [MBH. 12,132,21]. Mit *anyathā* anders auslegen.
-- **EN:** — 12〉 to bring something out, get to the bottom of something, ascertain [MBH. 12,132,21]. With *anyathā* to interpret differently.
+**12)** — 12〉 Etwas herausbringen, hinter Etwas kommen, feststellen [MBH. 12,132,21](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,132,21). Mit *anyathā* anders auslegen.
+- **EN:** — 12〉 to bring something out, get to the bottom of something, ascertain [MBH. 12,132,21](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,132,21). With *anyathā* to interpret differently.
 
 **13)** — 13〉 *Med. eine Anleitung geben, einführen in (Loc.).
 - **EN:** — 13〉 *Med. to give instruction, to initiate into (Loc.).
 
-**14)** — 14〉 *netum* [MBH. 7,9557] fehlerhaft für *bhettum*.
-- **EN:** — 14〉 *netum* [MBH. 7,9557] corrupt for *bhettum*.
+**14)** — 14〉 *netum* [MBH. 7,9557](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.9557) fehlerhaft für *bhettum*.
+- **EN:** — 14〉 *netum* [MBH. 7,9557](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.9557) corrupt for *bhettum*.
 
 **caus)** — Caus. *nāyayati* Jmd oder Etwas durch Jmd (Instr.) wegführen —, wegtragen lassen zu (Acc.).
 - **EN:** — Caus. *nāyayati* to cause someone or something to be led away or carried away by someone (Instr.) to (Acc.).
@@ -70,8 +70,8 @@
 **desid-6)** — 6〉 herauszubringen versuchen, nachspüren.
 - **EN:** — 6〉 to try to ascertain, to investigate.
 
-**intens)** — Intens. *nenīyate* gefangen führen, in seiner Gewalt haben. Scheinbar mit pass. Bed. [MBH. 12,7082] (12,194,17) und [10502] (12,285,18; es ist aber wie [12,8989] (12,248,16) *guṇān* st. *guṇais* zu lesen.
-- **EN:** — Intens. *nenīyate* to lead captive, to hold in one's power. Apparently with pass. Bed. [MBH. 12,7082] (12,194,17) and [10502] (12,285,18; but it is to be read like [12,8989] (12,248,16) *guṇān* st. *guṇais*.
+**intens)** — Intens. *nenīyate* gefangen führen, in seiner Gewalt haben. Scheinbar mit pass. Bed. [MBH. 12,7082](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.7082) (12,194,17) und [10502](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.10502) (12,285,18; es ist aber wie [12,8989](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.8989) (12,248,16) *guṇān* st. *guṇais* zu lesen.
+- **EN:** — Intens. *nenīyate* to lead captive, to hold in one's power. Apparently with pass. Bed. [MBH. 12,7082](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.7082) (12,194,17) and [10502](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.10502) (12,285,18; but it is to be read like [12,8989](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.8989) (12,248,16) *guṇān* st. *guṇais*.
 
 **pref-abhi)** — Mit *accha* Jmd hinführen —, leiten zu (Acc.).
 - **EN:** — With *accha* to lead or guide someone to (Acc.).
@@ -147,8 +147,8 @@
 **pref-nis-7)** — 7〉 ausnehmen, ausschliessen (aus einer Regel).
 - **EN:** — 7〉 to except, exclude (from a rule).
 
-**pref-nis-8)** — 8〉 erkennen [BHĀG. P. 5,18,33].
-- **EN:** — 8〉 to recognize, discern [BHĀG. P. 5,18,33].
+**pref-nis-8)** — 8〉 erkennen [BHĀG. P. 5,18,33](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,18,33).
+- **EN:** — 8〉 to recognize, discern [BHĀG. P. 5,18,33](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,18,33).
 
 **pref-nis-9)** — 9〉 *apanīta* ausser weggeführt u. s. w. auch abgeführt von, so v. a. im Widerspruch stehend mit (mit Comp. vorangehend) und zu Leide gethan ([LALIT. 162,15]). Vgl. auch *apnīta*.
 - **EN:** — 9〉 *apanīta* besides 'led away' u. s. w. also 'led off from', hence v. a. 'in contradiction with' (preceded by Comp.) and 'done harm to' ([LALIT. 162,15]). Vgl. also *apnīta*.
@@ -203,14 +203,14 @@
 - **EN:** — 4〉 *abhinīta* besides 'brought near' u. s. w.
 — a〉 trained, broken in.
 
-**pref-abhi-ni-4b)** — b〉 geeignet, passend, angemessen [MBH. 12,8,1.] [26,1].
-- **EN:** — b〉 suitable, fitting, appropriate [MBH. 12,8,1.] [26,1].
+**pref-abhi-ni-4b)** — b〉 geeignet, passend, angemessen [MBH. 12,8,1.](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,8,1) [26,1](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,26,1).
+- **EN:** — b〉 suitable, fitting, appropriate [MBH. 12,8,1.](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,8,1) [26,1](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,26,1).
 
 **pref-abhi-ni-4c)** — c〉 wahrscheinlich [MAHĀBH. 3,95,a.] — Nach den Lexicographen = *atisaṃskṛta* oder *saṃskṛta, marṣin* oder *amarṣin*.
 - **EN:** — c〉 probably [MAHĀBH. 3,95,a.] — According to the lexicographers = *atisaṃskṛta* or *saṃskṛta, marṣin* or *amarṣin*.
 
-**pref-prati)** — Mit *prābhi* hinführen zu (Acc.) [ṚV. 1,31,18].
-- **EN:** — With *prābhi* to lead to (Acc.) [ṚV. 1,31,18].
+**pref-prati)** — Mit *prābhi* hinführen zu (Acc.) [ṚV. 1,31,18](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.031.html#rv01.031.18).
+- **EN:** — With *prābhi* to lead to (Acc.) [ṚV. 1,31,18](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.031.html#rv01.031.18).
 
 **pref-pra-ni-1)** — Mit *ava*
 — 1〉 hinab-, hineinführen in (Acc.), hinabstossen.
@@ -274,8 +274,8 @@
 **pref-sam-a)** — Mit *abhyā* eingiessen, einmengen.
 - **EN:** — With *abhyā* to pour in, mix in.
 
-**pref-pra-a)** — Mit *samabhyā* herbeiführen, herführen [MBH. 3,134,6].
-- **EN:** — With *samabhyā* to bring hither, lead hither [MBH. 3,134,6].
+**pref-pra-a)** — Mit *samabhyā* herbeiführen, herführen [MBH. 3,134,6](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?3,134,6).
+- **EN:** — With *samabhyā* to bring hither, lead hither [MBH. 3,134,6](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?3,134,6).
 
 **pref-ud-1)** — Mit *udā*
 — 1〉 herauf-, herausführen (insbes. aus dem Wasser).

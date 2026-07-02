@@ -9,42 +9,42 @@
   <sub>lexicographic</sub>
 
 **1)** 1) _adj._ _f._ *ī*
-[P. 4,1,42.] blauschwarz, schwarz; als _m._ die blauschwarze Farbe, Schwärze
-[AK. 1,1,4,23.]
-[TRIK. 3,3,382.]
-[H. 1397.]
-[an. 2,478.]
-[MED. l. 7.] [P. 5,4,33.] *(rathe) kālāśvayukte*
-[R. 6,67,2.] *kālāḥ kāñcanasaṃnāhāstasmiṃstamasi rākṣasāḥ . samadṛśyanta*
-[19,5.] *kālāni bhūtvā māṃsāni śīryante yasya dehinaḥ*
+[P. 4,1,42.](https://ashtadhyayi.com/sutraani/4/1/42) blauschwarz, schwarz; als _m._ die blauschwarze Farbe, Schwärze
+[AK. 1,1,4,23.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?1,1,4,23)
+[TRIK. 3,3,382.](https://sanskrit-lexicon-scans.github.io/medini/app2?3,3,382)
+[H. 1397.](https://sanskrit-lexicon-scans.github.io/abch2/app1?1397)
+[an. 2,478.](https://sanskrit-lexicon-scans.github.io/anekarthasamgraha/app1?2,478)
+[MED. l. 7.](https://sanskrit-lexicon-scans.github.io/medini/app1?l,7) [P. 5,4,33.](https://ashtadhyayi.com/sutraani/5/4/33) *(rathe) kālāśvayukte*
+[R. 6,67,2.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,67,2) *kālāḥ kāñcanasaṃnāhāstasmiṃstamasi rākṣasāḥ . samadṛśyanta*
+[19,5.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,19,5) *kālāni bhūtvā māṃsāni śīryante yasya dehinaḥ*
 [SUŚR. 1,299,19.] *kālajīmūta*
-[R. 3,55,13.] *kālamegha*
-[4,10,26.] [6,79,13.] [MBH. 1,7184.] [VET. 4,20.] *kālabāla* und *kālabāla*
+[R. 3,55,13.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,55,13) *kālamegha*
+[4,10,26.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,10,26) [6,79,13.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,79,13) [MBH. 1,7184.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7184) [VET. 4,20.] *kālabāla* und *kālabāla*
 [ŚĀNT. 4,4.]
-[MBH. 1,1236.] *tasyāḥ — dīrdhaveṇī — dadṛśe svasitā snigdhā kālī vyālīva mūrdhani*
-[3,16191.] *kālī strī pāṇḍurairdantaiḥ*
-[16,57.] *timirābhyāhatāṃ kālīmaprakāśāṃ niśāmiva*
-[R. 2,114,2.] *pramadā*
-[5,27,17.]
+[MBH. 1,1236.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1236) *tasyāḥ — dīrdhaveṇī — dadṛśe svasitā snigdhā kālī vyālīva mūrdhani*
+[3,16191.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16191) *kālī strī pāṇḍurairdantaiḥ*
+[16,57.](https://sanskrit-lexicon-scans.github.io/mbhcalc?16.57) *timirābhyāhatāṃ kālīmaprakāśāṃ niśāmiva*
+[R. 2,114,2.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,114,2) *pramadā*
+[5,27,17.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,27,17)
 
 - **RU:** 1) _adj._ _f._ *ī*
-[P. 4,1,42.] иссиня-чёрный, чёрный; в качестве _m._ иссиня-чёрный цвет, чернота
-[AK. 1,1,4,23.]
-[TRIK. 3,3,382.]
-[H. 1397.]
-[an. 2,478.]
-[MED. l. 7.] [P. 5,4,33.] *(rathe) kālāśvayukte*
-[R. 6,67,2.] *kālāḥ kāñcanasaṃnāhāstasmiṃstamasi rākṣasāḥ . samadṛśyanta*
-[19,5.] *kālāni bhūtvā māṃsāni śīryante yasya dehinaḥ*
+[P. 4,1,42.](https://ashtadhyayi.com/sutraani/4/1/42) иссиня-чёрный, чёрный; в качестве _m._ иссиня-чёрный цвет, чернота
+[AK. 1,1,4,23.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?1,1,4,23)
+[TRIK. 3,3,382.](https://sanskrit-lexicon-scans.github.io/medini/app2?3,3,382)
+[H. 1397.](https://sanskrit-lexicon-scans.github.io/abch2/app1?1397)
+[an. 2,478.](https://sanskrit-lexicon-scans.github.io/anekarthasamgraha/app1?2,478)
+[MED. l. 7.](https://sanskrit-lexicon-scans.github.io/medini/app1?l,7) [P. 5,4,33.](https://ashtadhyayi.com/sutraani/5/4/33) *(rathe) kālāśvayukte*
+[R. 6,67,2.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,67,2) *kālāḥ kāñcanasaṃnāhāstasmiṃstamasi rākṣasāḥ . samadṛśyanta*
+[19,5.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,19,5) *kālāni bhūtvā māṃsāni śīryante yasya dehinaḥ*
 [SUŚR. 1,299,19.] *kālajīmūta*
-[R. 3,55,13.] *kālamegha*
-[4,10,26.] [6,79,13.] [MBH. 1,7184.] [VET. 4,20.] *kālabāla* и *kālabāla*
+[R. 3,55,13.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,55,13) *kālamegha*
+[4,10,26.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,10,26) [6,79,13.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,79,13) [MBH. 1,7184.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7184) [VET. 4,20.] *kālabāla* и *kālabāla*
 [ŚĀNT. 4,4.]
-[MBH. 1,1236.] *tasyāḥ — dīrdhaveṇī — dadṛśe svasitā snigdhā kālī vyālīva mūrdhani*
-[3,16191.] *kālī strī pāṇḍurairdantaiḥ*
-[16,57.] *timirābhyāhatāṃ kālīmaprakāśāṃ niśāmiva*
-[R. 2,114,2.] *pramadā*
-[5,27,17.]
+[MBH. 1,1236.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1236) *tasyāḥ — dīrdhaveṇī — dadṛśe svasitā snigdhā kālī vyālīva mūrdhani*
+[3,16191.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16191) *kālī strī pāṇḍurairdantaiḥ*
+[16,57.](https://sanskrit-lexicon-scans.github.io/mbhcalc?16.57) *timirābhyāhatāṃ kālīmaprakāśāṃ niśāmiva*
+[R. 2,114,2.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,114,2) *pramadā*
+[5,27,17.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,27,17)
   <sub>attested</sub>
 
 **2)** — 2) _m._
@@ -98,43 +98,43 @@
   <sub>lexicographic</sub>
 
 **2h)** — h) ein Bein. Śiva's
-[H. an.] [H. ś. 45.] [MED.]; vgl. *kālakaṇṭha, mahākāla* und *kālī* Durgā. = Rudra
-[BHĀG. P. 3,12,12.]
+[H. an.] [H. ś. 45.](https://sanskrit-lexicon-scans.github.io/abch2/app2?45) [MED.]; vgl. *kālakaṇṭha, mahākāla* und *kālī* Durgā. = Rudra
+[BHĀG. P. 3,12,12.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,12,12)
 
 - **RU:** — h) Bein. Śiva's
-[H. an.] [H. ś. 45.] [MED.]; vgl. *kālakaṇṭha, mahākāla* и *kālī* Durgā. = Rudra
-[BHĀG. P. 3,12,12.]
+[H. an.] [H. ś. 45.](https://sanskrit-lexicon-scans.github.io/abch2/app2?45) [MED.]; vgl. *kālakaṇṭha, mahākāla* и *kālī* Durgā. = Rudra
+[BHĀG. P. 3,12,12.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,12,12)
   <sub>attested</sub>
 
 **2i)** — i) N. pr. eines Sohnes von Hrada
-[HARIV. 189.] eines Fürsten (*kālayavana*)
-[BHĀG. P. 3,3,10.] eines Bruders des Königs Prasenajit
+[HARIV. 189.](https://sanskrit-lexicon-scans.github.io/hariv?189) eines Fürsten (*kālayavana*)
+[BHĀG. P. 3,3,10.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,3,10) eines Bruders des Königs Prasenajit
 [BURN. Intr. 173.] eines künftigen Buddha
 [Lot. de la b. l. 126.] eines Nāgarāja
 [VYUTP. 85.] eines Rakṣas
-[R. 6,69,12.] eines Feindes von Śiva (s. *kālāsuhṛd*).
+[R. 6,69,12.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,69,12) eines Feindes von Śiva (s. *kālāsuhṛd*).
 
 - **RU:** — i) N. pr. сына Hrada
-[HARIV. 189.] некоего князя (*kālayavana*)
-[BHĀG. P. 3,3,10.] брата царя Prasenajit
+[HARIV. 189.](https://sanskrit-lexicon-scans.github.io/hariv?189) некоего князя (*kālayavana*)
+[BHĀG. P. 3,3,10.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,3,10) брата царя Prasenajit
 [BURN. Intr. 173.] будущего Buddha
 [Lot. de la b. l. 126.] Nāgarāja
 [VYUTP. 85.] Rakṣas
-[R. 6,69,12.] врага Śiva (s. *kālāsuhṛd*).
+[R. 6,69,12.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,69,12) врага Śiva (s. *kālāsuhṛd*).
   <sub>attested</sub>
 
 **2k)** — k) N. pr. eines Berges
-[R. 4,44,21.]
+[R. 4,44,21.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,44,21)
 
 - **RU:** — k) N. pr. горы
-[R. 4,44,21.]
+[R. 4,44,21.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,44,21)
   <sub>attested</sub>
 
 **2l)** — l) N. eines der 9 Schätze bei den Jaina
-[H. 193], Sch.
+[H. 193](https://sanskrit-lexicon-scans.github.io/abch2/app1?193), Sch.
 
 - **RU:** — l) N. одного из 9 сокровищ у Jaina
-[H. 193], Sch.
+[H. 193](https://sanskrit-lexicon-scans.github.io/abch2/app1?193), Sch.
   <sub>lexicographic</sub>
 
 **2m)** — m) myst. Bez. des Buchstabens m
@@ -150,55 +150,55 @@
   <sub>lexicographic</sub>
 
 **3a)** a) N. verschiedener Pflanzen: Indigofera tinctoria Lin.
-[AK. 2,4,3,13.]
+[AK. 2,4,3,13.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?2,4,3,13)
 [H. an.]
 [MED.]; Piper longum Lin.
-[AK. 2,4,3,15]; eine der Ipomoea Turpethum nahe verwandte Pflanze, viell. Ipomoea atropurpurea Chois.
-[AK. 2,4,3,27.]
+[AK. 2,4,3,15](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?2,4,3,15); eine der Ipomoea Turpethum nahe verwandte Pflanze, viell. Ipomoea atropurpurea Chois.
+[AK. 2,4,3,27.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?2,4,3,27)
 [H. an.]
 [MED.]
 [SUŚR. 1,131,19. 2,106,19. 528,16]; Nigella indica Roxb.
-[AK. 2,9,37]; Rubia Munjista (*mañjiṣṭhā, kālameṣikā*) Roxb.
+[AK. 2,9,37](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?2,9,37); Rubia Munjista (*mañjiṣṭhā, kālameṣikā*) Roxb.
 [H. an.] (lies *jiṅgyām*).
 [MED.]; Ruellia longifolia (*kulika*)
 [RATNAM.] im [ŚKDR.]; Physalis flexuosa Lin. (*aśvagandhā*)
 [RĀJAN.] im [ŚKDR.]; Bignonia suaveolens Roxb. (*pāṭalā*)
-[BHĀVAPR.] im [ŚKDR.] Nach dem gaṇa *harītakyādi* zu [P. 4,3,167]
+[BHĀVAPR.] im [ŚKDR.] Nach dem gaṇa *harītakyādi* zu [P. 4,3,167](https://ashtadhyayi.com/sutraani/4/3/167)
 ist *kālā* auch die Frucht der Kālā.
 
 - **RU:** a) N. различных растений: Indigofera tinctoria Lin.
-[AK. 2,4,3,13.]
+[AK. 2,4,3,13.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?2,4,3,13)
 [H. an.]
 [MED.]; Piper longum Lin.
-[AK. 2,4,3,15]; растение, близкородственное Ipomoea Turpethum, viell. Ipomoea atropurpurea Chois.
-[AK. 2,4,3,27.]
+[AK. 2,4,3,15](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?2,4,3,15); растение, близкородственное Ipomoea Turpethum, viell. Ipomoea atropurpurea Chois.
+[AK. 2,4,3,27.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?2,4,3,27)
 [H. an.]
 [MED.]
 [SUŚR. 1,131,19. 2,106,19. 528,16]; Nigella indica Roxb.
-[AK. 2,9,37]; Rubia Munjista (*mañjiṣṭhā, kālameṣikā*) Roxb.
+[AK. 2,9,37](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?2,9,37); Rubia Munjista (*mañjiṣṭhā, kālameṣikā*) Roxb.
 [H. an.] (читай *jiṅgyām*).
 [MED.]; Ruellia longifolia (*kulika*)
 [RATNAM.] в [ŚKDR.]; Physalis flexuosa Lin. (*aśvagandhā*)
 [RĀJAN.] в [ŚKDR.]; Bignonia suaveolens Roxb. (*pāṭalā*)
-[BHĀVAPR.] в [ŚKDR.] По gaṇa *harītakyādi* к [P. 4,3,167]
+[BHĀVAPR.] в [ŚKDR.] По gaṇa *harītakyādi* к [P. 4,3,167](https://ashtadhyayi.com/sutraani/4/3/167)
 *kālā* также плод Kālā.
   <sub>mixed</sub>
 
 **3b)** — b) N. pr. einer Tochter des Dakṣa, der Mutter der Kāleya oder Kālakeya
-[MBH. 1,2520.] [2542.]
-[HARIV. 11521.] [11552.] [12465.] [PADMA-P.] in [VP. 122, N. 19.] Vgl. *kālakā* .
+[MBH. 1,2520.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2520) [2542.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2542)
+[HARIV. 11521.](https://sanskrit-lexicon-scans.github.io/hariv?11521) [11552.](https://sanskrit-lexicon-scans.github.io/hariv?11552) [12465.](https://sanskrit-lexicon-scans.github.io/hariv?12465) [PADMA-P.] in [VP. 122, N. 19.] Vgl. *kālakā* .
 
 - **RU:** — b) N. pr. дочери Dakṣa, матери Kāleya или Kālakeya
-[MBH. 1,2520.] [2542.]
-[HARIV. 11521.] [11552.] [12465.] [PADMA-P.] в [VP. 122, N. 19.] Vgl. *kālakā* .
+[MBH. 1,2520.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2520) [2542.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2542)
+[HARIV. 11521.](https://sanskrit-lexicon-scans.github.io/hariv?11521) [11552.](https://sanskrit-lexicon-scans.github.io/hariv?11552) [12465.](https://sanskrit-lexicon-scans.github.io/hariv?12465) [PADMA-P.] в [VP. 122, N. 19.] Vgl. *kālakā* .
   <sub>attested</sub>
 
 **3c)** — c) ein Bein. der Durgā
-[AK. 1,1,1,32], Sch.;
+[AK. 1,1,1,32](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?1,1,1,32), Sch.;
 vgl. *kālī* .
 
 - **RU:** — c) Bein. Durgā
-[AK. 1,1,1,32], Sch.;
+[AK. 1,1,1,32](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?1,1,1,32), Sch.;
 vgl. *kālī* .
   <sub>lexicographic</sub>
 
@@ -229,10 +229,10 @@ vgl. *kālī* .
   <sub>lexicographic</sub>
 
 **4d-f)** — d) eine schwarz aufziehende Wolkenmasse
-[H. an.] [HĀR. 71.]
+[H. an.] [HĀR. 71.](https://sanskrit-lexicon-scans.github.io/medini/app3?71)
 
 - **RU:** — d) чёрная надвигающаяся масса туч
-[H. an.] [HĀR. 71.]
+[H. an.] [HĀR. 71.](https://sanskrit-lexicon-scans.github.io/medini/app3?71)
   <sub>lexicographic</sub>
 
 **4e-f)** — e) ein best. in Milch vorkommendes Thierchen, = *kṣīrakīṭa*
@@ -252,7 +252,7 @@ vgl. *kālī* .
  δ) Bignonia
 
 suaveolens Roxb.
-[AK. 2,4,2,35], Sch.
+[AK. 2,4,2,35](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?2,4,2,35), Sch.
 
 - **RU:** — f) N. различных растений:
  α) = *kālāñjanī*;
@@ -262,7 +262,7 @@ suaveolens Roxb.
  δ) Bignonia
 
 suaveolens Roxb.
-[AK. 2,4,2,35], Sch.
+[AK. 2,4,2,35](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?2,4,2,35), Sch.
   <sub>lexicographic</sub>
 
 **4g-f)** — g) N. einer der sieben Zungen Agni's
@@ -273,27 +273,27 @@ suaveolens Roxb.
   <sub>attested</sub>
 
 **4h-f)** — h) eine Form der Durgā
-[AK. 1,1,1,32.]
-[H. 203.]
+[AK. 1,1,1,32.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?1,1,1,32)
+[H. 203.](https://sanskrit-lexicon-scans.github.io/abch2/app1?203)
 [H. an.]
 [MED.]
-[MBH. 4,195.]
-[HARIV. 10239.]
-[KUMĀRAS. 7,39.]
+[MBH. 4,195.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.195)
+[HARIV. 10239.](https://sanskrit-lexicon-scans.github.io/hariv?10239)
+[KUMĀRAS. 7,39.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?7,39)
 [DEV. 9,27.] *itthaṃ cemau rajanidivasau dolayandvāvivākṣau kālaḥ kālyā bhuvanaphalake krīḍati prāṇiśāraiḥ*
-[BHARTṚ. 3,43.] Hier wie bei *kāla* als Bein. von Śiva hat man mit dem Begriff der Schwärze wohl auch den der Alles zerstörenden Zeit vor Augen gehabt. Vgl.
+[BHARTṚ. 3,43.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app2?3,43) Hier wie bei *kāla* als Bein. von Śiva hat man mit dem Begriff der Schwärze wohl auch den der Alles zerstörenden Zeit vor Augen gehabt. Vgl.
 [Ind. St. 1,286. 287.] *mahākālī* und *bhadrakālī* .
 
 - **RU:** — h) форма Durgā
-[AK. 1,1,1,32.]
-[H. 203.]
+[AK. 1,1,1,32.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?1,1,1,32)
+[H. 203.](https://sanskrit-lexicon-scans.github.io/abch2/app1?203)
 [H. an.]
 [MED.]
-[MBH. 4,195.]
-[HARIV. 10239.]
-[KUMĀRAS. 7,39.]
+[MBH. 4,195.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.195)
+[HARIV. 10239.](https://sanskrit-lexicon-scans.github.io/hariv?10239)
+[KUMĀRAS. 7,39.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?7,39)
 [DEV. 9,27.] *itthaṃ cemau rajanidivasau dolayandvāvivākṣau kālaḥ kālyā bhuvanaphalake krīḍati prāṇiśāraiḥ*
-[BHARTṚ. 3,43.] Здесь, как и в случае *kāla* как Bein. от Śiva, вместе с понятием черноты, по-видимому, имелось в виду и понятие всеразрушающего времени. Vgl.
+[BHARTṚ. 3,43.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app2?3,43) Здесь, как и в случае *kāla* как Bein. от Śiva, вместе с понятием черноты, по-видимому, имелось в виду и понятие всеразрушающего времени. Vgl.
 [Ind. St. 1,286. 287.] *mahākālī* и *bhadrakālī* .
   <sub>attested</sub>
 
@@ -305,30 +305,30 @@ suaveolens Roxb.
   <sub>lexicographic</sub>
 
 **4k-f)** — k) N. pr. einer Unholdin (vgl. *kālakā*), der Mutter der Kālakeya,
-[HARIV. 11552.]
+[HARIV. 11552.](https://sanskrit-lexicon-scans.github.io/hariv?11552)
 
 - **RU:** — k) N. pr. некой демоницы (vgl. *kālakā*), матери Kālakeya,
-[HARIV. 11552.]
+[HARIV. 11552.](https://sanskrit-lexicon-scans.github.io/hariv?11552)
   <sub>attested</sub>
 
 **4l-f)** — l) N. einer der 16 Vidyādevī
-[H. 239.]
+[H. 239.](https://sanskrit-lexicon-scans.github.io/abch2/app1?239)
 
 - **RU:** — l) N. одной из 16 Vidyādevī
-[H. 239.]
+[H. 239.](https://sanskrit-lexicon-scans.github.io/abch2/app1?239)
   <sub>lexicographic</sub>
 
 **4m-f)** — m) Bein. der Satyavatī, der Gemahlin Śāntanu's und Mutter Kṛṣṇadvaipāyana's
-[TRIK. 2,8,10.]
-[LIA. I,629, N. 1.] [MBH. 1,2209.] [4244.] [BENF. Chr. 6,1.] Mutter Vicitravīrya's, mit dessen Gemahlin Kṛṣṇadvaipāyana die drei Kinder Dhṛtarāṣṭra, Pāṇḍu und Vidura zeugt
-[HARIV. 1825. fg.] Gemahlin Bhīmasena's und Mutter Sarvagata's
-[BHĀG. P. 9,22,30.]
+[TRIK. 2,8,10.](https://sanskrit-lexicon-scans.github.io/medini/app2?2,8,10)
+[LIA. I,629, N. 1.] [MBH. 1,2209.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2209) [4244.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4244) [BENF. Chr. 6,1.] Mutter Vicitravīrya's, mit dessen Gemahlin Kṛṣṇadvaipāyana die drei Kinder Dhṛtarāṣṭra, Pāṇḍu und Vidura zeugt
+[HARIV. 1825. fg.](https://sanskrit-lexicon-scans.github.io/hariv?1825) Gemahlin Bhīmasena's und Mutter Sarvagata's
+[BHĀG. P. 9,22,30.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,22,30)
 
 - **RU:** — m) Bein. Satyavatī, супруги Śāntanu's и матери Kṛṣṇadvaipāyana's
-[TRIK. 2,8,10.]
-[LIA. I,629, N. 1.] [MBH. 1,2209.] [4244.] [BENF. Chr. 6,1.] матери Vicitravīrya's, от брака которой с Kṛṣṇadvaipāyana рождаются трое детей Dhṛtarāṣṭra, Pāṇḍu и Vidura
-[HARIV. 1825. fg.] супруги Bhīmasena's и матери Sarvagata's
-[BHĀG. P. 9,22,30.]
+[TRIK. 2,8,10.](https://sanskrit-lexicon-scans.github.io/medini/app2?2,8,10)
+[LIA. I,629, N. 1.] [MBH. 1,2209.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2209) [4244.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4244) [BENF. Chr. 6,1.] матери Vicitravīrya's, от брака которой с Kṛṣṇadvaipāyana рождаются трое детей Dhṛtarāṣṭra, Pāṇḍu и Vidura
+[HARIV. 1825. fg.](https://sanskrit-lexicon-scans.github.io/hariv?1825) супруги Bhīmasena's и матери Sarvagata's
+[BHĀG. P. 9,22,30.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,22,30)
   <sub>attested</sub>
 
 **4n-f)** — n) mit oder ohne Beis. von *gaṅgā* N. eines Flusses
@@ -370,410 +370,410 @@ suaveolens Roxb.
   <sub>lexicographic</sub>
 
 **1)** 1) ein bestimmter oder richtiger Zeitpunkt; Zeit überh.
-[AK. 1,1,3,1.] [3,4,26,196.]
-[TRIK. 1,1,103.]
-[H. 126.]
-[an. 2,478.]
-[MED. l. 7.] Im [ṚV.] nur an einer Stelle: *uta prahāmatidīvyā jayāti kṛtaṃ yacchvaghnī vicinoti kāle*
-[10,42,9.] [AV. 19,53] und 54 sind Lieder, welche von Macht und Wesen der Zeit handeln, deren Begriff an den der Weltordnung oder des Schicksals streift (vgl. unter 2.). Einigermaassen gebräuchlich wird das Wort (st. des alten *ṛtu*) erst in den
+[AK. 1,1,3,1.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?1,1,3,1) [3,4,26,196.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,4,26,196)
+[TRIK. 1,1,103.](https://sanskrit-lexicon-scans.github.io/medini/app2?1,1,103)
+[H. 126.](https://sanskrit-lexicon-scans.github.io/abch2/app1?126)
+[an. 2,478.](https://sanskrit-lexicon-scans.github.io/anekarthasamgraha/app1?2,478)
+[MED. l. 7.](https://sanskrit-lexicon-scans.github.io/medini/app1?l,7) Im [ṚV.] nur an einer Stelle: *uta prahāmatidīvyā jayāti kṛtaṃ yacchvaghnī vicinoti kāle*
+[10,42,9.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.042.html#rv10.042.09) [AV. 19,53](https://sanskrit-lexicon.github.io/avlinks/avhymns/av19.053.html#av19.053.01) und 54 sind Lieder, welche von Macht und Wesen der Zeit handeln, deren Begriff an den der Weltordnung oder des Schicksals streift (vgl. unter 2.). Einigermaassen gebräuchlich wird das Wort (st. des alten *ṛtu*) erst in den
 [BRĀHMAṆA] : *sa eṣa sviṣṭakṛtaḥ kālaḥ*
-[ŚAT. BR. 1,7,3,3.] [3,8,3,36.] *yadi kāle yadyanākāle 'thaivāśnanti*
-[2,4,2,4.] *juhoti kāla eva*
-[4,5,1,16.] [KĀTY. ŚR. 10,5,14.] [25,7,2.] [ŚVETĀŚV. UP. 4,15.] [M. 2,80.] [3,105.] [7,164.] [204.] [N. 2,17.] [25,1.] [R. 1,77,13.] [2,40,30] [3,4,7.] [SUŚR. 1,124,3.] [PAÑCAT. I,253.] [254.] [ŚĀK. 151.] [RAGH. 3,12.] [12,69.] *kāle kāle*
-[MBH. 1,1680.]
-[RAGH. 4,6.] *svakāle*
-[M. 4,93.] *prāpte kāle*
-[9,307.] *kṣetre kālopapādite*
-[36.] *kāloptāni vījāni*
-[38.] *kālayuktaṃ vacaḥ*
-[R. 5,46,2.] *parjanyaḥ kālavarṣī*
+[ŚAT. BR. 1,7,3,3.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,7,3,3) [3,8,3,36.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,8,3,36) *yadi kāle yadyanākāle 'thaivāśnanti*
+[2,4,2,4.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,4,2,4) *juhoti kāla eva*
+[4,5,1,16.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?4,5,1,16) [KĀTY. ŚR. 10,5,14.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?10,5,14) [25,7,2.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?25,7,2) [ŚVETĀŚV. UP. 4,15.] [M. 2,80.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,80) [3,105.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,105) [7,164.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,164) [204.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,204) [N. 2,17.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?2,17) [25,1.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?25,1) [R. 1,77,13.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,77,13) [2,40,30](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,40,30) [3,4,7.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,4,7) [SUŚR. 1,124,3.] [PAÑCAT. I,253.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?1,253) [254.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?1,254) [ŚĀK. 151.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?151) [RAGH. 3,12.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?3,12) [12,69.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?12,69) *kāle kāle*
+[MBH. 1,1680.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1680)
+[RAGH. 4,6.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?4,6) *svakāle*
+[M. 4,93.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,93) *prāpte kāle*
+[9,307.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,307) *kṣetre kālopapādite*
+[36.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,36) *kāloptāni vījāni*
+[38.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,38) *kālayuktaṃ vacaḥ*
+[R. 5,46,2.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,46,2) *parjanyaḥ kālavarṣī*
 [MṚCCH. 178,10.]
-[PAÑCAT. 149,14.] *nainaṃ purā kālātprāṇo jahāti*
-[ŚAT. BR. 14,5,1,11] (vgl.
-[AIT. BR. 8,25], wo *āyuṣaḥ* st. *kālāt)*.* kālameva pratīkṣeta*
-[M. 6,45.] *kālamanveṣayantau*
-[PAÑCAT. 182,24.] *kālavid*
-[R. 4,32,13.] *kālaṃ gacchati* er gelangt zum Endpunkt (beim coitus)
+[PAÑCAT. 149,14.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?149,14) *nainaṃ purā kālātprāṇo jahāti*
+[ŚAT. BR. 14,5,1,11](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,5,1,11) (vgl.
+[AIT. BR. 8,25](https://sanskrit-lexicon-scans.github.io/aitbr/app1?8,25), wo *āyuṣaḥ* st. *kālāt)*.* kālameva pratīkṣeta*
+[M. 6,45.](https://sanskrit-lexicon-scans.github.io/manu/index.html?6,45) *kālamanveṣayantau*
+[PAÑCAT. 182,24.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?182,24) *kālavid*
+[R. 4,32,13.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,32,13) *kālaṃ gacchati* er gelangt zum Endpunkt (beim coitus)
 [CHĀND. UP. 2,13,1.] die zu Etwas bestimmte —, geeignete Zeit; die Ergänz. im gen., dat., loc., im comp. vorang., im inf. oder im potent. mit *yad*
-([P. 3,3,167.] [168]): *saṃpratiṣṭhāmahe kālaḥ prasthānasya*
-[R. 2,56,2.] *tasya kālo 'yamāgataḥ* dazu ist jetzt die Zeit gekommen
-[VIŚV. 12,9.] *eṣa dvaidhībhāvasya kālaḥ*
-[PAÑCAT. 155,9.] [143,12.]
-[VID. 241.] *nāyaṃ vaktavyasya kālaḥ*
-[PAÑCAT. 194,23.] *na rāma kālaḥ paridevanāya*
-[MBH. 3,10259.] *na kālo 'sti vilambane*
-[R. 6,8,45.] *dakṣiṇākāla*
-[KĀTY. ŚR. 17,2,21] (vgl. *dakṣiṇānāṃ kāle*
-[ŚAT. BR. 7,2,2,21]). *karmakāla*
-[R. 1,65,34.] *kriyākāla*
+([P. 3,3,167.](https://ashtadhyayi.com/sutraani/3/3/167) [168](https://ashtadhyayi.com/sutraani/3/3/168)): *saṃpratiṣṭhāmahe kālaḥ prasthānasya*
+[R. 2,56,2.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,56,2) *tasya kālo 'yamāgataḥ* dazu ist jetzt die Zeit gekommen
+[VIŚV. 12,9.](https://sanskrit-lexicon-scans.github.io/bchrest1/app4?12,9) *eṣa dvaidhībhāvasya kālaḥ*
+[PAÑCAT. 155,9.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?155,9) [143,12.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?143,12)
+[VID. 241.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?241) *nāyaṃ vaktavyasya kālaḥ*
+[PAÑCAT. 194,23.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?194,23) *na rāma kālaḥ paridevanāya*
+[MBH. 3,10259.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10259) *na kālo 'sti vilambane*
+[R. 6,8,45.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,8,45) *dakṣiṇākāla*
+[KĀTY. ŚR. 17,2,21](https://sanskrit-lexicon-scans.github.io/katyasr/app1?17,2,21) (vgl. *dakṣiṇānāṃ kāle*
+[ŚAT. BR. 7,2,2,21](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?7,2,2,21)). *karmakāla*
+[R. 1,65,34.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,65,34) *kriyākāla*
 [SUŚR. 1,5,13.] *paṇakālamamanyata*
-[N. 7,8.]
-[VIKR. 32,15.] [64,18.] *nāyaṃ kālo vilambitum*
-[N. 20,11.]
+[N. 7,8.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?7,8)
+[VIKR. 32,15.](https://sanskrit-lexicon-scans.github.io/vikramor/app2?32,15) [64,18.](https://sanskrit-lexicon-scans.github.io/vikramor/app2?64,18) *nāyaṃ kālo vilambitum*
+[N. 20,11.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?20,11)
 [DRAUP. 3,7.]
-[R. 6,93,23.] *kālo yadbhuñjīta bhavān*
-[P. 3,3,168], Sch.
+[R. 6,93,23.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,93,23) *kālo yadbhuñjīta bhavān*
+[P. 3,3,168](https://ashtadhyayi.com/sutraani/3/3/168), Sch.
 — *kālamāsādya* in Berücksichtigung der Zeitumstände: *kālamāsādya *
 
 * kāryaṃ ca daṇḍaṃ rājā prakalpayet*
-[M. 8,324.] [9,293.] *skandhenāpi vahecchatruṃ kālamāsādya buddhimān*
-[PAÑCAT. III,247.] *kālamāsādya kaṃcana* nach einer Weile: *yathā kāṣṭhaṃ ca kāṣṭhaṃ ca sameyātāṃ mahārṇave . sametya ca vyapeyātāṃ kālamāsādya kaṃcana ..*
-[R. 2,105,24.] — *kālasaṃkhyāṃ na vedmi*
-[PAÑCAT. 242,19.] *kālaṃ kālavibhaktīśca*
-[M. 1,24.] *evaṃ sarvaṃ sa sṛṣṭvedaṃ māṃ cācintyaparākramaḥ . ātmanyantardadhe bhūyaḥ kālaṃ kālena pīḍayan*
-[51.] *kālasyānavasthitatvāt*
-[KĀTY. ŚR. 18,6,31.] *kālāvasthā*
+[M. 8,324.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,324) [9,293.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,293) *skandhenāpi vahecchatruṃ kālamāsādya buddhimān*
+[PAÑCAT. III,247.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?3,247) *kālamāsādya kaṃcana* nach einer Weile: *yathā kāṣṭhaṃ ca kāṣṭhaṃ ca sameyātāṃ mahārṇave . sametya ca vyapeyātāṃ kālamāsādya kaṃcana ..*
+[R. 2,105,24.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,105,24) — *kālasaṃkhyāṃ na vedmi*
+[PAÑCAT. 242,19.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?242,19) *kālaṃ kālavibhaktīśca*
+[M. 1,24.](https://sanskrit-lexicon-scans.github.io/manu/index.html?1,24) *evaṃ sarvaṃ sa sṛṣṭvedaṃ māṃ cācintyaparākramaḥ . ātmanyantardadhe bhūyaḥ kālaṃ kālena pīḍayan*
+[51.](https://sanskrit-lexicon-scans.github.io/manu/index.html?1,51) *kālasyānavasthitatvāt*
+[KĀTY. ŚR. 18,6,31.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?18,6,31) *kālāvasthā*
 [SUŚR. 1,113,14. 151,21.] *aitasmātkālāt*
-[ŚAT. BR. 4,2,4,5.] *ūrdhvaṃ tu kālādetasmāt*
-[M. 9,90.] *etasminneva kāle*
-[N. 2,12.] *anyeṣvapi tu kāleṣu*
-[M. 7,183.] *sarveṣu kāleṣu*
-[R. 1,46,11.] *viṣame kāle*
-[2,88,15.] *kāle śubhe prāpte*
-[N. 5,1.] *tasminnatisukhe kāle*
-[DAŚ. 1,19.] *deśakālau* der rechte Ort und die rechte Zeit, Zeit und Ort
-[M. 3,126.] [7,10.] [16.] [64.] [8,126.] [156.] [157.] *deśe ca kāle ca*
-[233.] [HIT. I,14.] *deśakālajña*
-[N. 8,12.] *kālaṃ kar* eine Zeit festsetzen: *kālaśca kriyatāmasya svapne jāgaraṇe tathā*
-[R. 6,38,29.] Eine andere Bed. von *kālaṃ kar* wird u. 3 besprochen werden. *trikālajña*
-[R. 1,1,8.] *iṣṭapañcakālajña*
-[MBH. 12,12797.] *agnau juhvadubhau kālāvubhau kālāvupaspṛśan* bei Sonnenauf — und Niedergang
-[1,4623.] *ṣaṣṭhe kāle 'hnaḥ* zur 6ten Stunde am Tage d. i. um Mittagszeit
-[VIKR. 20.] *ṣaṣṭhānnakāla* der nur die sechste Esszeit hat d. i. der 5 Mahlzeiten vorübergehen lässt und erst am Abend des 3ten Tages seine Mahlzeit hält; davon nom. abstr. *ṣaṣṭhānnakālatā*
-[M. 11,200.] Gewöhnlich mit Weglassung von *anna* Speise: *caturthakālam* zur vierten Esszeit d. i. am Abend des zweiten Tages
-[109.] *ṣaṣṭhe kāle* am Abend des dritten Tages
-[MBH. 13,5175.] [14,1663.] [1665.] *kadāciddvādaśe kāle kadācidapi ṣoḍaśe . āhāramakarodrājā mūlāni ca phalāni ca ..*
-[1,8118.] Vgl. *caturthakālika* und *aṣṭamakālika* adjj. der erst am Abend des zweiten und vierten Tages seine Mahlzeit hält
-[M. 6,19.] *ṛtukāla* die Zeit der monatlichen Reinigung
-[NIR. 1,19.]
+[ŚAT. BR. 4,2,4,5.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?4,2,4,5) *ūrdhvaṃ tu kālādetasmāt*
+[M. 9,90.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,90) *etasminneva kāle*
+[N. 2,12.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?2,12) *anyeṣvapi tu kāleṣu*
+[M. 7,183.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,183) *sarveṣu kāleṣu*
+[R. 1,46,11.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,46,11) *viṣame kāle*
+[2,88,15.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,88,15) *kāle śubhe prāpte*
+[N. 5,1.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?5,1) *tasminnatisukhe kāle*
+[DAŚ. 1,19.](https://sanskrit-lexicon-scans.github.io/bchrest1/app2?1,19) *deśakālau* der rechte Ort und die rechte Zeit, Zeit und Ort
+[M. 3,126.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,126) [7,10.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,10) [16.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,16) [64.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,64) [8,126.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,126) [156.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,156) [157.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,157) *deśe ca kāle ca*
+[233.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,233) [HIT. I,14.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?1,14) *deśakālajña*
+[N. 8,12.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?8,12) *kālaṃ kar* eine Zeit festsetzen: *kālaśca kriyatāmasya svapne jāgaraṇe tathā*
+[R. 6,38,29.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,38,29) Eine andere Bed. von *kālaṃ kar* wird u. 3 besprochen werden. *trikālajña*
+[R. 1,1,8.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,1,8) *iṣṭapañcakālajña*
+[MBH. 12,12797.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.12797) *agnau juhvadubhau kālāvubhau kālāvupaspṛśan* bei Sonnenauf — und Niedergang
+[1,4623.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4623) *ṣaṣṭhe kāle 'hnaḥ* zur 6ten Stunde am Tage d. i. um Mittagszeit
+[VIKR. 20.](https://sanskrit-lexicon-scans.github.io/vikramor/app1?20) *ṣaṣṭhānnakāla* der nur die sechste Esszeit hat d. i. der 5 Mahlzeiten vorübergehen lässt und erst am Abend des 3ten Tages seine Mahlzeit hält; davon nom. abstr. *ṣaṣṭhānnakālatā*
+[M. 11,200.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,200) Gewöhnlich mit Weglassung von *anna* Speise: *caturthakālam* zur vierten Esszeit d. i. am Abend des zweiten Tages
+[109.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,109) *ṣaṣṭhe kāle* am Abend des dritten Tages
+[MBH. 13,5175.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.5175) [14,1663.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.1663) [1665.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.1665) *kadāciddvādaśe kāle kadācidapi ṣoḍaśe . āhāramakarodrājā mūlāni ca phalāni ca ..*
+[1,8118.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8118) Vgl. *caturthakālika* und *aṣṭamakālika* adjj. der erst am Abend des zweiten und vierten Tages seine Mahlzeit hält
+[M. 6,19.](https://sanskrit-lexicon-scans.github.io/manu/index.html?6,19) *ṛtukāla* die Zeit der monatlichen Reinigung
+[NIR. 1,19.](https://sanskrit-lexicon-scans.github.io/nirukta/app1?1,19)
 [ŚĀṄKH. ŚR. 3,13,47.]
-[M. 5,153.] *āpatkāle*
-[2,241.] *mantrakāle*
-[7,149.] *niśā˚*
-[N. 15,14.] *pradoṣa˚*
-[HIT. 22,1.] *śīta˚, uṣṇa˚*
-[I,186.] *śiśukāla* die Kinderjahre
-[PAÑCAT. 192,3.] *kiyānkālastavaivaṃ sthitasya saṃjātaḥ* wie viel Zeit ist verflossen, seitdem du stehst?
-[242,14.] *evaṃ tasya tāṃ nityaṃ sevamānasya kālo yāti*
-[45,10.] *kāvyaśāstravinodena kālo gacchati dhīmatām*
-[HIT. Pr. 48.] *athaivaṃ gacchati kāle*
-[PAÑCAT. 34,14.] *gacchatā kālena* im Verlauf der Zeit, nach einiger Zeit
-[47,6.] [76,10.] [224,7.] *kāle gacchati* dass.
-[VID. 61.] *evaṃ tena saha sakalāṃ rātriṃ yāvadvigrahaparasya kālo vrajati*
-[PAÑCAT. 117,9.] [163,22.] *tasya ca kṛṣiṃ kurvatastadaiva niṣphalaḥ kālo 'tivartate* die Zeit, welche er auf das Bebauen des Ackers verwendet, geht ihm fruchtlos dahin
-[174,9.] *tasyaivaṃ vartamānasya kālaḥ samabhivartsyati . agniṃ śuśrūṣamāṇasya pitaraṃ ca yaśasvinam ..*
-[R. 1,8,10.] *sa ca vakabālakān — sadaiva bhakṣayankālaṃ nayati*
-[PAÑCAT. 98,10.] *sadaikasthānavihāriṇau kālaṃ nayataḥ*
-[43,2.] *bhakṣaṇapānaviharaṇakriyābhiḥ kālo neyaḥ*
-[25,10.] [HIT. 37,20.] [RAGH. 1,33.] *kālaṃ yāpayati*
-[PAÑCAT. 183,24.] *kva cāyaṃ vihṛtastvayā . kālaḥ*
-[MBH. 1,7.] *nityakālam* stets
-[M. 2,58.] [73.] *dīrghakālam* eine lange Zeit hindurch
-[8,145.] [SUND. 1,10.] [CĀT. 1.] *mahāntaṃ kālam* dass.
-[PAÑCAT. 114,24.] *dīrgheṇa kālena* dass.
+[M. 5,153.](https://sanskrit-lexicon-scans.github.io/manu/index.html?5,153) *āpatkāle*
+[2,241.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,241) *mantrakāle*
+[7,149.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,149) *niśā˚*
+[N. 15,14.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?15,14) *pradoṣa˚*
+[HIT. 22,1.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?22,1) *śīta˚, uṣṇa˚*
+[I,186.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?1,186) *śiśukāla* die Kinderjahre
+[PAÑCAT. 192,3.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?192,3) *kiyānkālastavaivaṃ sthitasya saṃjātaḥ* wie viel Zeit ist verflossen, seitdem du stehst?
+[242,14.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?242,14) *evaṃ tasya tāṃ nityaṃ sevamānasya kālo yāti*
+[45,10.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?45,10) *kāvyaśāstravinodena kālo gacchati dhīmatām*
+[HIT. Pr. 48.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?0,48) *athaivaṃ gacchati kāle*
+[PAÑCAT. 34,14.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?34,14) *gacchatā kālena* im Verlauf der Zeit, nach einiger Zeit
+[47,6.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?47,6) [76,10.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?76,10) [224,7.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?224,7) *kāle gacchati* dass.
+[VID. 61.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?61) *evaṃ tena saha sakalāṃ rātriṃ yāvadvigrahaparasya kālo vrajati*
+[PAÑCAT. 117,9.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?117,9) [163,22.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?163,22) *tasya ca kṛṣiṃ kurvatastadaiva niṣphalaḥ kālo 'tivartate* die Zeit, welche er auf das Bebauen des Ackers verwendet, geht ihm fruchtlos dahin
+[174,9.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?174,9) *tasyaivaṃ vartamānasya kālaḥ samabhivartsyati . agniṃ śuśrūṣamāṇasya pitaraṃ ca yaśasvinam ..*
+[R. 1,8,10.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,8,10) *sa ca vakabālakān — sadaiva bhakṣayankālaṃ nayati*
+[PAÑCAT. 98,10.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?98,10) *sadaikasthānavihāriṇau kālaṃ nayataḥ*
+[43,2.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?43,2) *bhakṣaṇapānaviharaṇakriyābhiḥ kālo neyaḥ*
+[25,10.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?25,10) [HIT. 37,20.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?37,20) [RAGH. 1,33.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?1,33) *kālaṃ yāpayati*
+[PAÑCAT. 183,24.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?183,24) *kva cāyaṃ vihṛtastvayā . kālaḥ*
+[MBH. 1,7.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7) *nityakālam* stets
+[M. 2,58.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,58) [73.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,73) *dīrghakālam* eine lange Zeit hindurch
+[8,145.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,145) [SUND. 1,10.] [CĀT. 1.] *mahāntaṃ kālam* dass.
+[PAÑCAT. 114,24.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?114,24) *dīrgheṇa kālena* dass.
 [SUND. 1,8.] nach langer Zeit
-[R. 1,45,40.] *kālena mahatā* dass.
-[VIŚV. 10,10.] *kālena bahunā*
-[ŚṚṄGĀRAT. 8.] *kenacittvatha kālena* nach einiger Zeit
-[VIŚV. 5,13.] *kālena* im Verlauf der Zeit, mit der Zeit
-[M. 9,246.]
-[MBH. 3,8843.]
-[BHAG. 4,38.]
-[R. 4,15,34.]
-[PAÑCAT. 32,24.]
-[KATHĀS. 4,20.] [6,21.]
-[VID. 16.] [184.] [193.] *dīrghasya kālasya* nach langer Zeit
-[N. 18,1.]
-[M. 8,216.]
-[R. 3,4,37.] [4,8,49.] *kālasya *
+[R. 1,45,40.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,45,40) *kālena mahatā* dass.
+[VIŚV. 10,10.](https://sanskrit-lexicon-scans.github.io/bchrest1/app4?10,10) *kālena bahunā*
+[ŚṚṄGĀRAT. 8.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app2?8) *kenacittvatha kālena* nach einiger Zeit
+[VIŚV. 5,13.](https://sanskrit-lexicon-scans.github.io/bchrest1/app4?5,13) *kālena* im Verlauf der Zeit, mit der Zeit
+[M. 9,246.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,246)
+[MBH. 3,8843.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8843)
+[BHAG. 4,38.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?4,38)
+[R. 4,15,34.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,15,34)
+[PAÑCAT. 32,24.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?32,24)
+[KATHĀS. 4,20.](https://sanskrit-lexicon-scans.github.io/kss/index.html?4,20) [6,21.](https://sanskrit-lexicon-scans.github.io/kss/index.html?6,21)
+[VID. 16.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?16) [184.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?184) [193.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?193) *dīrghasya kālasya* nach langer Zeit
+[N. 18,1.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?18,1)
+[M. 8,216.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,216)
+[R. 3,4,37.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,4,37) [4,8,49.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,8,49) *kālasya *
 
 * mahataḥ* dass.
-[1,17,12.] *kasyacitkālasya* nach einiger Zeit
-[ŚĀK. 110,15.] *kasyacittvatha kālasya*
-[MBH. 1,5299.]
-[HARIV. 6386.]
-[R. 1,26,25.] *kālāt* im Verlauf der Zeit, mit der Zeit
-[M. 8,251.] *kālatas* dass.
-[KATHĀS. 6,101.]
+[1,17,12.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,17,12) *kasyacitkālasya* nach einiger Zeit
+[ŚĀK. 110,15.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?110,15) *kasyacittvatha kālasya*
+[MBH. 1,5299.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5299)
+[HARIV. 6386.](https://sanskrit-lexicon-scans.github.io/hariv?6386)
+[R. 1,26,25.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,26,25) *kālāt* im Verlauf der Zeit, mit der Zeit
+[M. 8,251.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,251) *kālatas* dass.
+[KATHĀS. 6,101.](https://sanskrit-lexicon-scans.github.io/kss/index.html?6,101)
 
 - **RU:** 1) определённый или надлежащий момент времени; время überh.
-[AK. 1,1,3,1.] [3,4,26,196.]
-[TRIK. 1,1,103.]
-[H. 126.]
-[an. 2,478.]
-[MED. l. 7.] В [ṚV.] лишь в одном месте: *uta prahāmatidīvyā jayāti kṛtaṃ yacchvaghnī vicinoti kāle*
-[10,42,9.] [AV. 19,53] и 54 — гимны, трактующие о власти и сущности времени, понятие которого соприкасается с понятием миропорядка или судьбы (см. vgl. под 2.). В известной мере употребительным слово (в форме st. старого *ṛtu*) становится лишь в
+[AK. 1,1,3,1.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?1,1,3,1) [3,4,26,196.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,4,26,196)
+[TRIK. 1,1,103.](https://sanskrit-lexicon-scans.github.io/medini/app2?1,1,103)
+[H. 126.](https://sanskrit-lexicon-scans.github.io/abch2/app1?126)
+[an. 2,478.](https://sanskrit-lexicon-scans.github.io/anekarthasamgraha/app1?2,478)
+[MED. l. 7.](https://sanskrit-lexicon-scans.github.io/medini/app1?l,7) В [ṚV.] лишь в одном месте: *uta prahāmatidīvyā jayāti kṛtaṃ yacchvaghnī vicinoti kāle*
+[10,42,9.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.042.html#rv10.042.09) [AV. 19,53](https://sanskrit-lexicon.github.io/avlinks/avhymns/av19.053.html#av19.053.01) и 54 — гимны, трактующие о власти и сущности времени, понятие которого соприкасается с понятием миропорядка или судьбы (см. vgl. под 2.). В известной мере употребительным слово (в форме st. старого *ṛtu*) становится лишь в
 [BRĀHMAṆA] : *sa eṣa sviṣṭakṛtaḥ kālaḥ*
-[ŚAT. BR. 1,7,3,3.] [3,8,3,36.] *yadi kāle yadyanākāle 'thaivāśnanti*
-[2,4,2,4.] *juhoti kāla eva*
-[4,5,1,16.] [KĀTY. ŚR. 10,5,14.] [25,7,2.] [ŚVETĀŚV. UP. 4,15.] [M. 2,80.] [3,105.] [7,164.] [204.] [N. 2,17.] [25,1.] [R. 1,77,13.] [2,40,30] [3,4,7.] [SUŚR. 1,124,3.] [PAÑCAT. I,253.] [254.] [ŚĀK. 151.] [RAGH. 3,12.] [12,69.] *kāle kāle*
-[MBH. 1,1680.]
-[RAGH. 4,6.] *svakāle*
-[M. 4,93.] *prāpte kāle*
-[9,307.] *kṣetre kālopapādite*
-[36.] *kāloptāni vījāni*
-[38.] *kālayuktaṃ vacaḥ*
-[R. 5,46,2.] *parjanyaḥ kālavarṣī*
+[ŚAT. BR. 1,7,3,3.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,7,3,3) [3,8,3,36.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,8,3,36) *yadi kāle yadyanākāle 'thaivāśnanti*
+[2,4,2,4.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,4,2,4) *juhoti kāla eva*
+[4,5,1,16.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?4,5,1,16) [KĀTY. ŚR. 10,5,14.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?10,5,14) [25,7,2.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?25,7,2) [ŚVETĀŚV. UP. 4,15.] [M. 2,80.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,80) [3,105.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,105) [7,164.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,164) [204.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,204) [N. 2,17.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?2,17) [25,1.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?25,1) [R. 1,77,13.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,77,13) [2,40,30](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,40,30) [3,4,7.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,4,7) [SUŚR. 1,124,3.] [PAÑCAT. I,253.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?1,253) [254.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?1,254) [ŚĀK. 151.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?151) [RAGH. 3,12.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?3,12) [12,69.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?12,69) *kāle kāle*
+[MBH. 1,1680.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1680)
+[RAGH. 4,6.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?4,6) *svakāle*
+[M. 4,93.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,93) *prāpte kāle*
+[9,307.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,307) *kṣetre kālopapādite*
+[36.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,36) *kāloptāni vījāni*
+[38.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,38) *kālayuktaṃ vacaḥ*
+[R. 5,46,2.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,46,2) *parjanyaḥ kālavarṣī*
 [MṚCCH. 178,10.]
-[PAÑCAT. 149,14.] *nainaṃ purā kālātprāṇo jahāti*
-[ŚAT. BR. 14,5,1,11] (vgl.
-[AIT. BR. 8,25], где *āyuṣaḥ* st. *kālāt)*.* kālameva pratīkṣeta*
-[M. 6,45.] *kālamanveṣayantau*
-[PAÑCAT. 182,24.] *kālavid*
-[R. 4,32,13.] *kālaṃ gacchati* он достигает завершения (при coitus)
+[PAÑCAT. 149,14.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?149,14) *nainaṃ purā kālātprāṇo jahāti*
+[ŚAT. BR. 14,5,1,11](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,5,1,11) (vgl.
+[AIT. BR. 8,25](https://sanskrit-lexicon-scans.github.io/aitbr/app1?8,25), где *āyuṣaḥ* st. *kālāt)*.* kālameva pratīkṣeta*
+[M. 6,45.](https://sanskrit-lexicon-scans.github.io/manu/index.html?6,45) *kālamanveṣayantau*
+[PAÑCAT. 182,24.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?182,24) *kālavid*
+[R. 4,32,13.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,32,13) *kālaṃ gacchati* он достигает завершения (при coitus)
 [CHĀND. UP. 2,13,1.] время, определённое —, подходящее для чего-л.; Ergänz. в gen., dat., loc., в comp. vorang., в inf. или в potent. с *yad*
-([P. 3,3,167.] [168]): *saṃpratiṣṭhāmahe kālaḥ prasthānasya*
-[R. 2,56,2.] *tasya kālo 'yamāgataḥ* для этого теперь настало время
-[VIŚV. 12,9.] *eṣa dvaidhībhāvasya kālaḥ*
-[PAÑCAT. 155,9.] [143,12.]
-[VID. 241.] *nāyaṃ vaktavyasya kālaḥ*
-[PAÑCAT. 194,23.] *na rāma kālaḥ paridevanāya*
-[MBH. 3,10259.] *na kālo 'sti vilambane*
-[R. 6,8,45.] *dakṣiṇākāla*
-[KĀTY. ŚR. 17,2,21] (vgl. *dakṣiṇānāṃ kāle*
-[ŚAT. BR. 7,2,2,21]). *karmakāla*
-[R. 1,65,34.] *kriyākāla*
+([P. 3,3,167.](https://ashtadhyayi.com/sutraani/3/3/167) [168](https://ashtadhyayi.com/sutraani/3/3/168)): *saṃpratiṣṭhāmahe kālaḥ prasthānasya*
+[R. 2,56,2.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,56,2) *tasya kālo 'yamāgataḥ* для этого теперь настало время
+[VIŚV. 12,9.](https://sanskrit-lexicon-scans.github.io/bchrest1/app4?12,9) *eṣa dvaidhībhāvasya kālaḥ*
+[PAÑCAT. 155,9.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?155,9) [143,12.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?143,12)
+[VID. 241.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?241) *nāyaṃ vaktavyasya kālaḥ*
+[PAÑCAT. 194,23.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?194,23) *na rāma kālaḥ paridevanāya*
+[MBH. 3,10259.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10259) *na kālo 'sti vilambane*
+[R. 6,8,45.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,8,45) *dakṣiṇākāla*
+[KĀTY. ŚR. 17,2,21](https://sanskrit-lexicon-scans.github.io/katyasr/app1?17,2,21) (vgl. *dakṣiṇānāṃ kāle*
+[ŚAT. BR. 7,2,2,21](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?7,2,2,21)). *karmakāla*
+[R. 1,65,34.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,65,34) *kriyākāla*
 [SUŚR. 1,5,13.] *paṇakālamamanyata*
-[N. 7,8.]
-[VIKR. 32,15.] [64,18.] *nāyaṃ kālo vilambitum*
-[N. 20,11.]
+[N. 7,8.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?7,8)
+[VIKR. 32,15.](https://sanskrit-lexicon-scans.github.io/vikramor/app2?32,15) [64,18.](https://sanskrit-lexicon-scans.github.io/vikramor/app2?64,18) *nāyaṃ kālo vilambitum*
+[N. 20,11.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?20,11)
 [DRAUP. 3,7.]
-[R. 6,93,23.] *kālo yadbhuñjīta bhavān*
-[P. 3,3,168], Sch.
+[R. 6,93,23.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,93,23) *kālo yadbhuñjīta bhavān*
+[P. 3,3,168](https://ashtadhyayi.com/sutraani/3/3/168), Sch.
 — *kālamāsādya* с учётом обстоятельств времени: *kālamāsādya *
 
 * kāryaṃ ca daṇḍaṃ rājā prakalpayet*
-[M. 8,324.] [9,293.] *skandhenāpi vahecchatruṃ kālamāsādya buddhimān*
-[PAÑCAT. III,247.] *kālamāsādya kaṃcana* спустя некоторое время: *yathā kāṣṭhaṃ ca kāṣṭhaṃ ca sameyātāṃ mahārṇave . sametya ca vyapeyātāṃ kālamāsādya kaṃcana ..*
-[R. 2,105,24.] — *kālasaṃkhyāṃ na vedmi*
-[PAÑCAT. 242,19.] *kālaṃ kālavibhaktīśca*
-[M. 1,24.] *evaṃ sarvaṃ sa sṛṣṭvedaṃ māṃ cācintyaparākramaḥ . ātmanyantardadhe bhūyaḥ kālaṃ kālena pīḍayan*
-[51.] *kālasyānavasthitatvāt*
-[KĀTY. ŚR. 18,6,31.] *kālāvasthā*
+[M. 8,324.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,324) [9,293.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,293) *skandhenāpi vahecchatruṃ kālamāsādya buddhimān*
+[PAÑCAT. III,247.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?3,247) *kālamāsādya kaṃcana* спустя некоторое время: *yathā kāṣṭhaṃ ca kāṣṭhaṃ ca sameyātāṃ mahārṇave . sametya ca vyapeyātāṃ kālamāsādya kaṃcana ..*
+[R. 2,105,24.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,105,24) — *kālasaṃkhyāṃ na vedmi*
+[PAÑCAT. 242,19.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?242,19) *kālaṃ kālavibhaktīśca*
+[M. 1,24.](https://sanskrit-lexicon-scans.github.io/manu/index.html?1,24) *evaṃ sarvaṃ sa sṛṣṭvedaṃ māṃ cācintyaparākramaḥ . ātmanyantardadhe bhūyaḥ kālaṃ kālena pīḍayan*
+[51.](https://sanskrit-lexicon-scans.github.io/manu/index.html?1,51) *kālasyānavasthitatvāt*
+[KĀTY. ŚR. 18,6,31.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?18,6,31) *kālāvasthā*
 [SUŚR. 1,113,14. 151,21.] *aitasmātkālāt*
-[ŚAT. BR. 4,2,4,5.] *ūrdhvaṃ tu kālādetasmāt*
-[M. 9,90.] *etasminneva kāle*
-[N. 2,12.] *anyeṣvapi tu kāleṣu*
-[M. 7,183.] *sarveṣu kāleṣu*
-[R. 1,46,11.] *viṣame kāle*
-[2,88,15.] *kāle śubhe prāpte*
-[N. 5,1.] *tasminnatisukhe kāle*
-[DAŚ. 1,19.] *deśakālau* надлежащее место и надлежащее время, время и место
-[M. 3,126.] [7,10.] [16.] [64.] [8,126.] [156.] [157.] *deśe ca kāle ca*
-[233.] [HIT. I,14.] *deśakālajña*
-[N. 8,12.] *kālaṃ kar* назначить время: *kālaśca kriyatāmasya svapne jāgaraṇe tathā*
-[R. 6,38,29.] Другое Bed. слова *kālaṃ kar* будет рассмотрено под u. 3. *trikālajña*
-[R. 1,1,8.] *iṣṭapañcakālajña*
-[MBH. 12,12797.] *agnau juhvadubhau kālāvubhau kālāvupaspṛśan* при восходе и заходе солнца
-[1,4623.] *ṣaṣṭhe kāle 'hnaḥ* в 6-й час дня d. i. в полуденное время
-[VIKR. 20.] *ṣaṣṭhānnakāla* у кого лишь шестой приём пищи d. i. кто пропускает 5 трапез и вкушает пищу лишь вечером третьего дня; отсюда nom. abstr. *ṣaṣṭhānnakālatā*
-[M. 11,200.] Обычно с опущением *anna* пища: *caturthakālam* к четвёртому времени еды d. i. вечером второго дня
-[109.] *ṣaṣṭhe kāle* вечером третьего дня
-[MBH. 13,5175.] [14,1663.] [1665.] *kadāciddvādaśe kāle kadācidapi ṣoḍaśe . āhāramakarodrājā mūlāni ca phalāni ca ..*
-[1,8118.] Vgl. *caturthakālika* и *aṣṭamakālika* adjj. кто принимает пищу лишь вечером второго и четвёртого дня
-[M. 6,19.] *ṛtukāla* время месячного очищения
-[NIR. 1,19.]
+[ŚAT. BR. 4,2,4,5.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?4,2,4,5) *ūrdhvaṃ tu kālādetasmāt*
+[M. 9,90.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,90) *etasminneva kāle*
+[N. 2,12.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?2,12) *anyeṣvapi tu kāleṣu*
+[M. 7,183.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,183) *sarveṣu kāleṣu*
+[R. 1,46,11.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,46,11) *viṣame kāle*
+[2,88,15.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,88,15) *kāle śubhe prāpte*
+[N. 5,1.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?5,1) *tasminnatisukhe kāle*
+[DAŚ. 1,19.](https://sanskrit-lexicon-scans.github.io/bchrest1/app2?1,19) *deśakālau* надлежащее место и надлежащее время, время и место
+[M. 3,126.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,126) [7,10.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,10) [16.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,16) [64.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,64) [8,126.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,126) [156.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,156) [157.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,157) *deśe ca kāle ca*
+[233.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,233) [HIT. I,14.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?1,14) *deśakālajña*
+[N. 8,12.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?8,12) *kālaṃ kar* назначить время: *kālaśca kriyatāmasya svapne jāgaraṇe tathā*
+[R. 6,38,29.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,38,29) Другое Bed. слова *kālaṃ kar* будет рассмотрено под u. 3. *trikālajña*
+[R. 1,1,8.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,1,8) *iṣṭapañcakālajña*
+[MBH. 12,12797.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.12797) *agnau juhvadubhau kālāvubhau kālāvupaspṛśan* при восходе и заходе солнца
+[1,4623.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4623) *ṣaṣṭhe kāle 'hnaḥ* в 6-й час дня d. i. в полуденное время
+[VIKR. 20.](https://sanskrit-lexicon-scans.github.io/vikramor/app1?20) *ṣaṣṭhānnakāla* у кого лишь шестой приём пищи d. i. кто пропускает 5 трапез и вкушает пищу лишь вечером третьего дня; отсюда nom. abstr. *ṣaṣṭhānnakālatā*
+[M. 11,200.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,200) Обычно с опущением *anna* пища: *caturthakālam* к четвёртому времени еды d. i. вечером второго дня
+[109.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,109) *ṣaṣṭhe kāle* вечером третьего дня
+[MBH. 13,5175.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.5175) [14,1663.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.1663) [1665.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.1665) *kadāciddvādaśe kāle kadācidapi ṣoḍaśe . āhāramakarodrājā mūlāni ca phalāni ca ..*
+[1,8118.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8118) Vgl. *caturthakālika* и *aṣṭamakālika* adjj. кто принимает пищу лишь вечером второго и четвёртого дня
+[M. 6,19.](https://sanskrit-lexicon-scans.github.io/manu/index.html?6,19) *ṛtukāla* время месячного очищения
+[NIR. 1,19.](https://sanskrit-lexicon-scans.github.io/nirukta/app1?1,19)
 [ŚĀṄKH. ŚR. 3,13,47.]
-[M. 5,153.] *āpatkāle*
-[2,241.] *mantrakāle*
-[7,149.] *niśā˚*
-[N. 15,14.] *pradoṣa˚*
-[HIT. 22,1.] *śīta˚, uṣṇa˚*
-[I,186.] *śiśukāla* детские годы
-[PAÑCAT. 192,3.] *kiyānkālastavaivaṃ sthitasya saṃjātaḥ* сколько времени прошло с тех пор, как ты стоишь?
-[242,14.] *evaṃ tasya tāṃ nityaṃ sevamānasya kālo yāti*
-[45,10.] *kāvyaśāstravinodena kālo gacchati dhīmatām*
-[HIT. Pr. 48.] *athaivaṃ gacchati kāle*
-[PAÑCAT. 34,14.] *gacchatā kālena* в течение времени, спустя некоторое время
-[47,6.] [76,10.] [224,7.] *kāle gacchati* dass.
-[VID. 61.] *evaṃ tena saha sakalāṃ rātriṃ yāvadvigrahaparasya kālo vrajati*
-[PAÑCAT. 117,9.] [163,22.] *tasya ca kṛṣiṃ kurvatastadaiva niṣphalaḥ kālo 'tivartate* время, которое он тратит на обработку поля, проходит для него бесплодно
-[174,9.] *tasyaivaṃ vartamānasya kālaḥ samabhivartsyati . agniṃ śuśrūṣamāṇasya pitaraṃ ca yaśasvinam ..*
-[R. 1,8,10.] *sa ca vakabālakān — sadaiva bhakṣayankālaṃ nayati*
-[PAÑCAT. 98,10.] *sadaikasthānavihāriṇau kālaṃ nayataḥ*
-[43,2.] *bhakṣaṇapānaviharaṇakriyābhiḥ kālo neyaḥ*
-[25,10.] [HIT. 37,20.] [RAGH. 1,33.] *kālaṃ yāpayati*
-[PAÑCAT. 183,24.] *kva cāyaṃ vihṛtastvayā . kālaḥ*
-[MBH. 1,7.] *nityakālam* постоянно
-[M. 2,58.] [73.] *dīrghakālam* в течение долгого времени
-[8,145.] [SUND. 1,10.] [CĀT. 1.] *mahāntaṃ kālam* dass.
-[PAÑCAT. 114,24.] *dīrgheṇa kālena* dass.
+[M. 5,153.](https://sanskrit-lexicon-scans.github.io/manu/index.html?5,153) *āpatkāle*
+[2,241.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,241) *mantrakāle*
+[7,149.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,149) *niśā˚*
+[N. 15,14.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?15,14) *pradoṣa˚*
+[HIT. 22,1.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?22,1) *śīta˚, uṣṇa˚*
+[I,186.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?1,186) *śiśukāla* детские годы
+[PAÑCAT. 192,3.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?192,3) *kiyānkālastavaivaṃ sthitasya saṃjātaḥ* сколько времени прошло с тех пор, как ты стоишь?
+[242,14.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?242,14) *evaṃ tasya tāṃ nityaṃ sevamānasya kālo yāti*
+[45,10.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?45,10) *kāvyaśāstravinodena kālo gacchati dhīmatām*
+[HIT. Pr. 48.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?0,48) *athaivaṃ gacchati kāle*
+[PAÑCAT. 34,14.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?34,14) *gacchatā kālena* в течение времени, спустя некоторое время
+[47,6.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?47,6) [76,10.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?76,10) [224,7.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?224,7) *kāle gacchati* dass.
+[VID. 61.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?61) *evaṃ tena saha sakalāṃ rātriṃ yāvadvigrahaparasya kālo vrajati*
+[PAÑCAT. 117,9.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?117,9) [163,22.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?163,22) *tasya ca kṛṣiṃ kurvatastadaiva niṣphalaḥ kālo 'tivartate* время, которое он тратит на обработку поля, проходит для него бесплодно
+[174,9.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?174,9) *tasyaivaṃ vartamānasya kālaḥ samabhivartsyati . agniṃ śuśrūṣamāṇasya pitaraṃ ca yaśasvinam ..*
+[R. 1,8,10.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,8,10) *sa ca vakabālakān — sadaiva bhakṣayankālaṃ nayati*
+[PAÑCAT. 98,10.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?98,10) *sadaikasthānavihāriṇau kālaṃ nayataḥ*
+[43,2.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?43,2) *bhakṣaṇapānaviharaṇakriyābhiḥ kālo neyaḥ*
+[25,10.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?25,10) [HIT. 37,20.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?37,20) [RAGH. 1,33.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?1,33) *kālaṃ yāpayati*
+[PAÑCAT. 183,24.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?183,24) *kva cāyaṃ vihṛtastvayā . kālaḥ*
+[MBH. 1,7.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7) *nityakālam* постоянно
+[M. 2,58.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,58) [73.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,73) *dīrghakālam* в течение долгого времени
+[8,145.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,145) [SUND. 1,10.] [CĀT. 1.] *mahāntaṃ kālam* dass.
+[PAÑCAT. 114,24.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?114,24) *dīrgheṇa kālena* dass.
 [SUND. 1,8.] спустя долгое время
-[R. 1,45,40.] *kālena mahatā* dass.
-[VIŚV. 10,10.] *kālena bahunā*
-[ŚṚṄGĀRAT. 8.] *kenacittvatha kālena* спустя некоторое время
-[VIŚV. 5,13.] *kālena* в течение времени, со временем
-[M. 9,246.]
-[MBH. 3,8843.]
-[BHAG. 4,38.]
-[R. 4,15,34.]
-[PAÑCAT. 32,24.]
-[KATHĀS. 4,20.] [6,21.]
-[VID. 16.] [184.] [193.] *dīrghasya kālasya* спустя долгое время
-[N. 18,1.]
-[M. 8,216.]
-[R. 3,4,37.] [4,8,49.] *kālasya *
+[R. 1,45,40.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,45,40) *kālena mahatā* dass.
+[VIŚV. 10,10.](https://sanskrit-lexicon-scans.github.io/bchrest1/app4?10,10) *kālena bahunā*
+[ŚṚṄGĀRAT. 8.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app2?8) *kenacittvatha kālena* спустя некоторое время
+[VIŚV. 5,13.](https://sanskrit-lexicon-scans.github.io/bchrest1/app4?5,13) *kālena* в течение времени, со временем
+[M. 9,246.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,246)
+[MBH. 3,8843.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8843)
+[BHAG. 4,38.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?4,38)
+[R. 4,15,34.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,15,34)
+[PAÑCAT. 32,24.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?32,24)
+[KATHĀS. 4,20.](https://sanskrit-lexicon-scans.github.io/kss/index.html?4,20) [6,21.](https://sanskrit-lexicon-scans.github.io/kss/index.html?6,21)
+[VID. 16.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?16) [184.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?184) [193.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?193) *dīrghasya kālasya* спустя долгое время
+[N. 18,1.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?18,1)
+[M. 8,216.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,216)
+[R. 3,4,37.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,4,37) [4,8,49.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,8,49) *kālasya *
 
 * mahataḥ* dass.
-[1,17,12.] *kasyacitkālasya* спустя некоторое время
-[ŚĀK. 110,15.] *kasyacittvatha kālasya*
-[MBH. 1,5299.]
-[HARIV. 6386.]
-[R. 1,26,25.] *kālāt* в течение времени, со временем
-[M. 8,251.] *kālatas* dass.
-[KATHĀS. 6,101.]
+[1,17,12.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,17,12) *kasyacitkālasya* спустя некоторое время
+[ŚĀK. 110,15.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?110,15) *kasyacittvatha kālasya*
+[MBH. 1,5299.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5299)
+[HARIV. 6386.](https://sanskrit-lexicon-scans.github.io/hariv?6386)
+[R. 1,26,25.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,26,25) *kālāt* в течение времени, со временем
+[M. 8,251.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,251) *kālatas* dass.
+[KATHĀS. 6,101.](https://sanskrit-lexicon-scans.github.io/kss/index.html?6,101)
   <sub>attested</sub>
 
 **2)** — 2) Ereignisse, deren Ursachen sich dem Verstande entziehen, werden, da sie im Verlauf der Zeit geschehen, als unmittelbare Wirkungen der thätig gedachten Zeit aufgefasst. Schon oben u. 1. haben wir zweier Lieder des
 [AV.] gedacht, in denen der Begriff der Zeit an den der Weltordnung oder des Schicksals streift. *na kartā kasyacitkaścinniyoge nāpi ceśvaraḥ . svabhāve vartate kālaḥ kasya kālaḥ parāyaṇaḥ ..*
-[R. 4,24,5. fgg.]
+[R. 4,24,5. fgg.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,24,5)
 [SUŚR. 1,18,18.]
-[BHARTṚ. 3,43.]
+[BHARTṚ. 3,43.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app2?3,43)
 [Verz. d. B. H. No. 948.] *sarve kālena sṛjyante hriyante ca punaḥ punaḥ*
-[MBH. 13,56.] *kālasyāhaṃ vaśānugaḥ*
-[51.] [R. 6,12,1.] *pracodito 'haṃ kālena pannaga tvāmacūcudam*
-[MBH. 13,50.] *ayaṃ rāmastvayaṃ rāma iti kālena coditāḥ . anyo 'nyaṃ samare jaghnuḥ*
-[R. 3,31,47.] *kālacodita*
-[1,1,50.] [3,8,8.] [ARJ. 10,31.] [DRAUP. 8,4.]
+[MBH. 13,56.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.56) *kālasyāhaṃ vaśānugaḥ*
+[51.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.51) [R. 6,12,1.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,12,1) *pracodito 'haṃ kālena pannaga tvāmacūcudam*
+[MBH. 13,50.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.50) *ayaṃ rāmastvayaṃ rāma iti kālena coditāḥ . anyo 'nyaṃ samare jaghnuḥ*
+[R. 3,31,47.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,31,47) *kālacodita*
+[1,1,50.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,1,50) [3,8,8.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,8,8) [ARJ. 10,31.] [DRAUP. 8,4.]
 
 - **RU:** — 2) События, причины которых ускользают от разума, поскольку они совершаются в течение времени, воспринимаются как непосредственные действия времени, мыслимого деятельным. Уже выше u. 1. мы упоминали о двух гимнах
 [AV.], в которых понятие времени соприкасается с понятием миропорядка или судьбы. *na kartā kasyacitkaścinniyoge nāpi ceśvaraḥ . svabhāve vartate kālaḥ kasya kālaḥ parāyaṇaḥ ..*
-[R. 4,24,5. fgg.]
+[R. 4,24,5. fgg.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,24,5)
 [SUŚR. 1,18,18.]
-[BHARTṚ. 3,43.]
+[BHARTṚ. 3,43.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app2?3,43)
 [Verz. d. B. H. No. 948.] *sarve kālena sṛjyante hriyante ca punaḥ punaḥ*
-[MBH. 13,56.] *kālasyāhaṃ vaśānugaḥ*
-[51.] [R. 6,12,1.] *pracodito 'haṃ kālena pannaga tvāmacūcudam*
-[MBH. 13,50.] *ayaṃ rāmastvayaṃ rāma iti kālena coditāḥ . anyo 'nyaṃ samare jaghnuḥ*
-[R. 3,31,47.] *kālacodita*
-[1,1,50.] [3,8,8.] [ARJ. 10,31.] [DRAUP. 8,4.]
+[MBH. 13,56.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.56) *kālasyāhaṃ vaśānugaḥ*
+[51.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.51) [R. 6,12,1.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,12,1) *pracodito 'haṃ kālena pannaga tvāmacūcudam*
+[MBH. 13,50.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.50) *ayaṃ rāmastvayaṃ rāma iti kālena coditāḥ . anyo 'nyaṃ samare jaghnuḥ*
+[R. 3,31,47.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,31,47) *kālacodita*
+[1,1,50.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,1,50) [3,8,8.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,8,8) [ARJ. 10,31.] [DRAUP. 8,4.]
   <sub>attested</sub>
 
 **3)** — 3) die Alles zu Ende führende, vernichtende Zeit; Tod, sowohl der, welcher nur das einzelne Individuum trifft, als auch der, welcher am Ende der Welt Alles zerstört. Nach
 [SUŚR. 1,122,11] der Tod der durch die Zeit, durch's Alter kommt: *tatraikaḥ kālasaṃjñastu śeṣāstvāgantavaḥ smṛtāḥ (mṛtyavaḥ)* . Sehr häufig personificirt mit den Attributen Yama's und mit diesem bisweilen auch identificirt.
-[AK. 1,1,1,54.] [3,4,26,196.]
-[TRIK. 3,3,382.]
-[H. 323.] [184.]
+[AK. 1,1,1,54.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?1,1,1,54) [3,4,26,196.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,4,26,196)
+[TRIK. 3,3,382.](https://sanskrit-lexicon-scans.github.io/medini/app2?3,3,382)
+[H. 323.](https://sanskrit-lexicon-scans.github.io/abch2/app1?323) [184.](https://sanskrit-lexicon-scans.github.io/abch2/app1?184)
 [H. an.]
 [MED.] *kālameyivān* er starb
-[BHĀG. P. 9,9,2.] *kālaṃ kar* sterben
-[MBH. 14,1784.]
-[R. 2,64,52]; vgl. *kālakarman* und *kālakriyā*.* kālasamāyukta* gestorben
-[6,93,23.] *kālasya nayane yuktā yamasya puruṣāśca ye*
-[MBH. 2,343.] *so 'yaṃ vyaktaṃ bhavatāṃ kālahetuḥ*
-[2096.] *sa hi meghācalaprakhyaḥ kālaḥ puruṣavigrahaḥ . varāyudhadharaḥ śrīmānutpapāta vihāyasā ..*
-[R. 5,89,45.] *kālo hi vyasanaprasāritabhujo gṛhṇāti dūrādapi*
-[PAÑCAT. II,21.] *upetya muniveṣo 'tha kālaḥ provāca rāghavam*
-[RAGH. 15,92.] *pitṝṇāṃ (patiṃ) sarvanidhanaṃ kālaṃ vaiśvānaraṃ prabhum*
-[HARIV. 12492.] *kālāyāḥ kālakalpastu gaṇaḥ paramadāruṇaḥ*
-[12465.] *prahrādastu — yuyudhe saha kālena raṇe kāla iva sthitaḥ*
-[13191.] *(nivātakavacāḥ) kālarūpāḥ*
-[MBH. 3,12107.]
+[BHĀG. P. 9,9,2.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,9,2) *kālaṃ kar* sterben
+[MBH. 14,1784.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.1784)
+[R. 2,64,52](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,64,52); vgl. *kālakarman* und *kālakriyā*.* kālasamāyukta* gestorben
+[6,93,23.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,93,23) *kālasya nayane yuktā yamasya puruṣāśca ye*
+[MBH. 2,343.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.343) *so 'yaṃ vyaktaṃ bhavatāṃ kālahetuḥ*
+[2096.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2096) *sa hi meghācalaprakhyaḥ kālaḥ puruṣavigrahaḥ . varāyudhadharaḥ śrīmānutpapāta vihāyasā ..*
+[R. 5,89,45.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,89,45) *kālo hi vyasanaprasāritabhujo gṛhṇāti dūrādapi*
+[PAÑCAT. II,21.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?2,21) *upetya muniveṣo 'tha kālaḥ provāca rāghavam*
+[RAGH. 15,92.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?15,92) *pitṝṇāṃ (patiṃ) sarvanidhanaṃ kālaṃ vaiśvānaraṃ prabhum*
+[HARIV. 12492.](https://sanskrit-lexicon-scans.github.io/hariv?12492) *kālāyāḥ kālakalpastu gaṇaḥ paramadāruṇaḥ*
+[12465.](https://sanskrit-lexicon-scans.github.io/hariv?12465) *prahrādastu — yuyudhe saha kālena raṇe kāla iva sthitaḥ*
+[13191.](https://sanskrit-lexicon-scans.github.io/hariv?13191) *(nivātakavacāḥ) kālarūpāḥ*
+[MBH. 3,12107.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12107)
 [ARJ. 7,5.] *svaṃ rūpaṃ kālarūpābhaṃ bheje vaiśravaṇānujaḥ*
-[R. 3,55,3.] *kālarūpin*
-[4,59,20.] *kālopamau yuddhe*
-[1,22,24.] [RĀJA-TAR. 1,289.] *kālamivolvaṇam*
-[5,148.] *nidrayā kālarūpiṇyā*
-[HARIV. 3237.] *śūnyamāsījjagatsarvaṃ kāleneva hataṃ tadā*
+[R. 3,55,3.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,55,3) *kālarūpin*
+[4,59,20.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,59,20) *kālopamau yuddhe*
+[1,22,24.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,22,24) [RĀJA-TAR. 1,289.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?1,289) *kālamivolvaṇam*
+[5,148.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,148) *nidrayā kālarūpiṇyā*
+[HARIV. 3237.](https://sanskrit-lexicon-scans.github.io/hariv?3237) *śūnyamāsījjagatsarvaṃ kāleneva hataṃ tadā*
 [SUND. 2,18.] *saṃjihīrṣurdurādharṣaṃ kālo lokakṣaye yathā*
-[R. 6,70,35.] *kālasya kālaśca bhavetsa rāmaḥ saṃkṣipya lokāṃśca sṛjedathānyān*
-[3,43,42.] *mṛtyurdaṇḍaṃ sapāśaṃ ca kālaḥ śaktimagṛhṇata*
-[HARIV. 12146.] *khaḍgadaṇḍaṃ dhanuṣpāśaṃ śaraughajaṭharaṃ prabhum . rāmakālamakālena na kālayitumarhasi ..*
-[R. 3,41,26.] *kālapāśa*
-[1,21,13.] [29,9.] [3,31,16.] [35,73.] [45,19.] [5,47,35.] [VIŚV. 6,8.] [9,18.] [MṚCCH. 163,7.] [HIT. 21,11.] *kāladaṇḍa*
-[MBH. 1,984.]
-[R. 3,35,43.]
-[VIŚV. 6,2.] *kālāstra*
-[11.] *kālamudgara*
-[R. 3,54,10.] *kālajihva*
-[MBH. 1,2932.] *kālaviṣa*
-[3,10884.] *kālāgninā yathā pūrvaṃ trailokyaṃ dahyate 'khilam*
-[VIŚV. 15,16.] [6,19.]
-[MBH. 3,10393.] *kālāgnisadṛśaḥ krodhe*
-[R. 1,1,19.] *kālāgnimiva duḥsaham*
-[74,17.] [4,33,32.] [50,9]; vgl. *kālānala* . In Verbindung mit *antaka* (vgl. *kālāntaka*) und *mṛtyu* Tod: *antakaścābhaddogdhā kālo lokaprakālanaḥ*
-[HARIV. 374.] *abhyadhāvata saṃkruddhaḥ prajāḥ kāla ivāntakaḥ*
-[R. 3,7,9.] *mṛtyukālasama*
-[4,37,20.] *kālamṛtyuyugāntābha*
-[31,17.] *yathā yamo yathā mṛtyuryathā kālo yathā vidhiḥ hantāsmi rākṣasānadya*
-[3,69,20.] *kāla* und *mṛtyu* in Yama's *sabhā*
-[MBH. 2,340.] Kāla (kann hier wie im Folgenden auch als Personif. der Zeit oder des Schicksals aufgefasst werden) als
+[R. 6,70,35.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,70,35) *kālasya kālaśca bhavetsa rāmaḥ saṃkṣipya lokāṃśca sṛjedathānyān*
+[3,43,42.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,43,42) *mṛtyurdaṇḍaṃ sapāśaṃ ca kālaḥ śaktimagṛhṇata*
+[HARIV. 12146.](https://sanskrit-lexicon-scans.github.io/hariv?12146) *khaḍgadaṇḍaṃ dhanuṣpāśaṃ śaraughajaṭharaṃ prabhum . rāmakālamakālena na kālayitumarhasi ..*
+[R. 3,41,26.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,41,26) *kālapāśa*
+[1,21,13.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,21,13) [29,9.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,29,9) [3,31,16.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,31,16) [35,73.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,35,73) [45,19.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,45,19) [5,47,35.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,47,35) [VIŚV. 6,8.](https://sanskrit-lexicon-scans.github.io/bchrest1/app4?6,8) [9,18.](https://sanskrit-lexicon-scans.github.io/bchrest1/app4?9,18) [MṚCCH. 163,7.] [HIT. 21,11.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?21,11) *kāladaṇḍa*
+[MBH. 1,984.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.984)
+[R. 3,35,43.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,35,43)
+[VIŚV. 6,2.](https://sanskrit-lexicon-scans.github.io/bchrest1/app4?6,2) *kālāstra*
+[11.](https://sanskrit-lexicon-scans.github.io/bchrest1/app4?6,11) *kālamudgara*
+[R. 3,54,10.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,54,10) *kālajihva*
+[MBH. 1,2932.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2932) *kālaviṣa*
+[3,10884.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10884) *kālāgninā yathā pūrvaṃ trailokyaṃ dahyate 'khilam*
+[VIŚV. 15,16.](https://sanskrit-lexicon-scans.github.io/bchrest1/app4?15,16) [6,19.](https://sanskrit-lexicon-scans.github.io/bchrest1/app4?6,19)
+[MBH. 3,10393.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10393) *kālāgnisadṛśaḥ krodhe*
+[R. 1,1,19.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,1,19) *kālāgnimiva duḥsaham*
+[74,17.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,74,17) [4,33,32.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,33,32) [50,9](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,50,9); vgl. *kālānala* . In Verbindung mit *antaka* (vgl. *kālāntaka*) und *mṛtyu* Tod: *antakaścābhaddogdhā kālo lokaprakālanaḥ*
+[HARIV. 374.](https://sanskrit-lexicon-scans.github.io/hariv?374) *abhyadhāvata saṃkruddhaḥ prajāḥ kāla ivāntakaḥ*
+[R. 3,7,9.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,7,9) *mṛtyukālasama*
+[4,37,20.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,37,20) *kālamṛtyuyugāntābha*
+[31,17.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,31,17) *yathā yamo yathā mṛtyuryathā kālo yathā vidhiḥ hantāsmi rākṣasānadya*
+[3,69,20.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,69,20) *kāla* und *mṛtyu* in Yama's *sabhā*
+[MBH. 2,340.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.340) Kāla (kann hier wie im Folgenden auch als Personif. der Zeit oder des Schicksals aufgefasst werden) als
 
 Devarṣi in Indra's *sabhā*
-[295.] Kāla ein Sohn Dhruva's, des Polarsterns: *dhruvasya putro bhagavānkālo lokaprakālanaḥ* (vgl. oben
-[HARIV. 374]) [1,2585.] [HARIV. 154.] [VP. 120.] *kāla = māṭhara* im Gefolge des Sonnengottes
-[VYĀḌI] zu [H. 103.]
+[295.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.295) Kāla ein Sohn Dhruva's, des Polarsterns: *dhruvasya putro bhagavānkālo lokaprakālanaḥ* (vgl. oben
+[HARIV. 374](https://sanskrit-lexicon-scans.github.io/hariv?374)) [1,2585.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2585) [HARIV. 154.](https://sanskrit-lexicon-scans.github.io/hariv?154) [VP. 120.] *kāla = māṭhara* im Gefolge des Sonnengottes
+[VYĀḌI] zu [H. 103.](https://sanskrit-lexicon-scans.github.io/abch2/app1?103)
 
 - **RU:** — 3) всезавершающее, уничтожающее время; смерть, — как та, что поражает лишь отдельного индивида, так и та, что в конце мира уничтожает всё. По
 [SUŚR. 1,122,11] смерть, приходящая через время, через старость: *tatraikaḥ kālasaṃjñastu śeṣāstvāgantavaḥ smṛtāḥ (mṛtyavaḥ)* . Весьма часто персонифицируется с атрибутами Yama's, а порою и отождествляется с ним.
-[AK. 1,1,1,54.] [3,4,26,196.]
-[TRIK. 3,3,382.]
-[H. 323.] [184.]
+[AK. 1,1,1,54.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?1,1,1,54) [3,4,26,196.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,4,26,196)
+[TRIK. 3,3,382.](https://sanskrit-lexicon-scans.github.io/medini/app2?3,3,382)
+[H. 323.](https://sanskrit-lexicon-scans.github.io/abch2/app1?323) [184.](https://sanskrit-lexicon-scans.github.io/abch2/app1?184)
 [H. an.]
 [MED.] *kālameyivān* он умер
-[BHĀG. P. 9,9,2.] *kālaṃ kar* умирать
-[MBH. 14,1784.]
-[R. 2,64,52]; vgl. *kālakarman* и *kālakriyā*.* kālasamāyukta* умерший
-[6,93,23.] *kālasya nayane yuktā yamasya puruṣāśca ye*
-[MBH. 2,343.] *so 'yaṃ vyaktaṃ bhavatāṃ kālahetuḥ*
-[2096.] *sa hi meghācalaprakhyaḥ kālaḥ puruṣavigrahaḥ . varāyudhadharaḥ śrīmānutpapāta vihāyasā ..*
-[R. 5,89,45.] *kālo hi vyasanaprasāritabhujo gṛhṇāti dūrādapi*
-[PAÑCAT. II,21.] *upetya muniveṣo 'tha kālaḥ provāca rāghavam*
-[RAGH. 15,92.] *pitṝṇāṃ (patiṃ) sarvanidhanaṃ kālaṃ vaiśvānaraṃ prabhum*
-[HARIV. 12492.] *kālāyāḥ kālakalpastu gaṇaḥ paramadāruṇaḥ*
-[12465.] *prahrādastu — yuyudhe saha kālena raṇe kāla iva sthitaḥ*
-[13191.] *(nivātakavacāḥ) kālarūpāḥ*
-[MBH. 3,12107.]
+[BHĀG. P. 9,9,2.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,9,2) *kālaṃ kar* умирать
+[MBH. 14,1784.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.1784)
+[R. 2,64,52](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,64,52); vgl. *kālakarman* и *kālakriyā*.* kālasamāyukta* умерший
+[6,93,23.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,93,23) *kālasya nayane yuktā yamasya puruṣāśca ye*
+[MBH. 2,343.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.343) *so 'yaṃ vyaktaṃ bhavatāṃ kālahetuḥ*
+[2096.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2096) *sa hi meghācalaprakhyaḥ kālaḥ puruṣavigrahaḥ . varāyudhadharaḥ śrīmānutpapāta vihāyasā ..*
+[R. 5,89,45.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,89,45) *kālo hi vyasanaprasāritabhujo gṛhṇāti dūrādapi*
+[PAÑCAT. II,21.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?2,21) *upetya muniveṣo 'tha kālaḥ provāca rāghavam*
+[RAGH. 15,92.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?15,92) *pitṝṇāṃ (patiṃ) sarvanidhanaṃ kālaṃ vaiśvānaraṃ prabhum*
+[HARIV. 12492.](https://sanskrit-lexicon-scans.github.io/hariv?12492) *kālāyāḥ kālakalpastu gaṇaḥ paramadāruṇaḥ*
+[12465.](https://sanskrit-lexicon-scans.github.io/hariv?12465) *prahrādastu — yuyudhe saha kālena raṇe kāla iva sthitaḥ*
+[13191.](https://sanskrit-lexicon-scans.github.io/hariv?13191) *(nivātakavacāḥ) kālarūpāḥ*
+[MBH. 3,12107.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12107)
 [ARJ. 7,5.] *svaṃ rūpaṃ kālarūpābhaṃ bheje vaiśravaṇānujaḥ*
-[R. 3,55,3.] *kālarūpin*
-[4,59,20.] *kālopamau yuddhe*
-[1,22,24.] [RĀJA-TAR. 1,289.] *kālamivolvaṇam*
-[5,148.] *nidrayā kālarūpiṇyā*
-[HARIV. 3237.] *śūnyamāsījjagatsarvaṃ kāleneva hataṃ tadā*
+[R. 3,55,3.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,55,3) *kālarūpin*
+[4,59,20.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,59,20) *kālopamau yuddhe*
+[1,22,24.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,22,24) [RĀJA-TAR. 1,289.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?1,289) *kālamivolvaṇam*
+[5,148.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,148) *nidrayā kālarūpiṇyā*
+[HARIV. 3237.](https://sanskrit-lexicon-scans.github.io/hariv?3237) *śūnyamāsījjagatsarvaṃ kāleneva hataṃ tadā*
 [SUND. 2,18.] *saṃjihīrṣurdurādharṣaṃ kālo lokakṣaye yathā*
-[R. 6,70,35.] *kālasya kālaśca bhavetsa rāmaḥ saṃkṣipya lokāṃśca sṛjedathānyān*
-[3,43,42.] *mṛtyurdaṇḍaṃ sapāśaṃ ca kālaḥ śaktimagṛhṇata*
-[HARIV. 12146.] *khaḍgadaṇḍaṃ dhanuṣpāśaṃ śaraughajaṭharaṃ prabhum . rāmakālamakālena na kālayitumarhasi ..*
-[R. 3,41,26.] *kālapāśa*
-[1,21,13.] [29,9.] [3,31,16.] [35,73.] [45,19.] [5,47,35.] [VIŚV. 6,8.] [9,18.] [MṚCCH. 163,7.] [HIT. 21,11.] *kāladaṇḍa*
-[MBH. 1,984.]
-[R. 3,35,43.]
-[VIŚV. 6,2.] *kālāstra*
-[11.] *kālamudgara*
-[R. 3,54,10.] *kālajihva*
-[MBH. 1,2932.] *kālaviṣa*
-[3,10884.] *kālāgninā yathā pūrvaṃ trailokyaṃ dahyate 'khilam*
-[VIŚV. 15,16.] [6,19.]
-[MBH. 3,10393.] *kālāgnisadṛśaḥ krodhe*
-[R. 1,1,19.] *kālāgnimiva duḥsaham*
-[74,17.] [4,33,32.] [50,9]; vgl. *kālānala* . В сочетании с *antaka* (vgl. *kālāntaka*) и *mṛtyu* смерть: *antakaścābhaddogdhā kālo lokaprakālanaḥ*
-[HARIV. 374.] *abhyadhāvata saṃkruddhaḥ prajāḥ kāla ivāntakaḥ*
-[R. 3,7,9.] *mṛtyukālasama*
-[4,37,20.] *kālamṛtyuyugāntābha*
-[31,17.] *yathā yamo yathā mṛtyuryathā kālo yathā vidhiḥ hantāsmi rākṣasānadya*
-[3,69,20.] *kāla* и *mṛtyu* в Yama's *sabhā*
-[MBH. 2,340.] Kāla (может здесь, как и далее, пониматься и как Personif. времени или судьбы) в качестве
+[R. 6,70,35.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,70,35) *kālasya kālaśca bhavetsa rāmaḥ saṃkṣipya lokāṃśca sṛjedathānyān*
+[3,43,42.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,43,42) *mṛtyurdaṇḍaṃ sapāśaṃ ca kālaḥ śaktimagṛhṇata*
+[HARIV. 12146.](https://sanskrit-lexicon-scans.github.io/hariv?12146) *khaḍgadaṇḍaṃ dhanuṣpāśaṃ śaraughajaṭharaṃ prabhum . rāmakālamakālena na kālayitumarhasi ..*
+[R. 3,41,26.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,41,26) *kālapāśa*
+[1,21,13.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,21,13) [29,9.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,29,9) [3,31,16.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,31,16) [35,73.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,35,73) [45,19.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,45,19) [5,47,35.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,47,35) [VIŚV. 6,8.](https://sanskrit-lexicon-scans.github.io/bchrest1/app4?6,8) [9,18.](https://sanskrit-lexicon-scans.github.io/bchrest1/app4?9,18) [MṚCCH. 163,7.] [HIT. 21,11.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?21,11) *kāladaṇḍa*
+[MBH. 1,984.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.984)
+[R. 3,35,43.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,35,43)
+[VIŚV. 6,2.](https://sanskrit-lexicon-scans.github.io/bchrest1/app4?6,2) *kālāstra*
+[11.](https://sanskrit-lexicon-scans.github.io/bchrest1/app4?6,11) *kālamudgara*
+[R. 3,54,10.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,54,10) *kālajihva*
+[MBH. 1,2932.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2932) *kālaviṣa*
+[3,10884.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10884) *kālāgninā yathā pūrvaṃ trailokyaṃ dahyate 'khilam*
+[VIŚV. 15,16.](https://sanskrit-lexicon-scans.github.io/bchrest1/app4?15,16) [6,19.](https://sanskrit-lexicon-scans.github.io/bchrest1/app4?6,19)
+[MBH. 3,10393.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10393) *kālāgnisadṛśaḥ krodhe*
+[R. 1,1,19.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,1,19) *kālāgnimiva duḥsaham*
+[74,17.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,74,17) [4,33,32.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,33,32) [50,9](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,50,9); vgl. *kālānala* . В сочетании с *antaka* (vgl. *kālāntaka*) и *mṛtyu* смерть: *antakaścābhaddogdhā kālo lokaprakālanaḥ*
+[HARIV. 374.](https://sanskrit-lexicon-scans.github.io/hariv?374) *abhyadhāvata saṃkruddhaḥ prajāḥ kāla ivāntakaḥ*
+[R. 3,7,9.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,7,9) *mṛtyukālasama*
+[4,37,20.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,37,20) *kālamṛtyuyugāntābha*
+[31,17.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,31,17) *yathā yamo yathā mṛtyuryathā kālo yathā vidhiḥ hantāsmi rākṣasānadya*
+[3,69,20.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,69,20) *kāla* и *mṛtyu* в Yama's *sabhā*
+[MBH. 2,340.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.340) Kāla (может здесь, как и далее, пониматься и как Personif. времени или судьбы) в качестве
 
 Devarṣi в Indra's *sabhā*
-[295.] Kāla сын Dhruva's, Полярной звезды: *dhruvasya putro bhagavānkālo lokaprakālanaḥ* (vgl. см. выше
-[HARIV. 374]) [1,2585.] [HARIV. 154.] [VP. 120.] *kāla = māṭhara* в свите бога солнца
-[VYĀḌI] к [H. 103.]
+[295.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.295) Kāla сын Dhruva's, Полярной звезды: *dhruvasya putro bhagavānkālo lokaprakālanaḥ* (vgl. см. выше
+[HARIV. 374](https://sanskrit-lexicon-scans.github.io/hariv?374)) [1,2585.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2585) [HARIV. 154.](https://sanskrit-lexicon-scans.github.io/hariv?154) [VP. 120.] *kāla = māṭhara* в свите бога солнца
+[VYĀḌI] к [H. 103.](https://sanskrit-lexicon-scans.github.io/abch2/app1?103)
   <sub>attested</sub>
 
 **4)** — 4) Zeitalter, Weltalter (= *yuga): tūrye kāle*
-[RĀJA-TAR. 5,73.]
+[RĀJA-TAR. 5,73.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,73)
 
 - **RU:** — 4) век, мировая эпоха (= *yuga): tūrye kāle*
-[RĀJA-TAR. 5,73.]
+[RĀJA-TAR. 5,73.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,73)
   <sub>attested</sub>
 
 **5)** — 5) Zeit so v. a. Zeitmaass; Prosodie: *ekādaśidvādaśinorlaghāvaṣṭamamakṣaram (plabate) . udaye saṃhitākāle*
 [ṚV. PRĀT. 8,21.] *hrasvo dīrghaḥ pluta iti kālato niyamā ṛci*
-[ŚIKṢĀ 11.] [AV. PRĀT. 2,39.] [P. 1,1,70.] [2,27.]
+[ŚIKṢĀ 11.] [AV. PRĀT. 2,39.] [P. 1,1,70.](https://ashtadhyayi.com/sutraani/1/1/70) [2,27.](https://ashtadhyayi.com/sutraani/1/2/27)
 
 - **RU:** — 5) время т. е. v. a. мера времени; просодия: *ekādaśidvādaśinorlaghāvaṣṭamamakṣaram (plabate) . udaye saṃhitākāle*
 [ṚV. PRĀT. 8,21.] *hrasvo dīrghaḥ pluta iti kālato niyamā ṛci*
-[ŚIKṢĀ 11.] [AV. PRĀT. 2,39.] [P. 1,1,70.] [2,27.]
+[ŚIKṢĀ 11.] [AV. PRĀT. 2,39.] [P. 1,1,70.](https://ashtadhyayi.com/sutraani/1/1/70) [2,27.](https://ashtadhyayi.com/sutraani/1/2/27)
   <sub>attested</sub>
 
 **6)** — 6) Abtheilung, Abschnitt
@@ -794,10 +794,10 @@ Devarṣi в Indra's *sabhā*
   <sub>lexicographic</sub>
 
 **1)** 1)
-[KATHĀS. 64,118.]
+[KATHĀS. 64,118.](https://sanskrit-lexicon-scans.github.io/kss/index.html?64,118)
 
 - **RU:** 1)
-[KATHĀS. 64,118.]
+[KATHĀS. 64,118.](https://sanskrit-lexicon-scans.github.io/kss/index.html?64,118)
   <sub>lexicographic</sub>
 
 **2)** — 2)
@@ -806,13 +806,13 @@ Devarṣi в Indra's *sabhā*
   <sub>lexicographic</sub>
 
 **2i)** i) ein Sohn Vasu's (vgl. *kālin)*
-[Verz. d. Oxf. H. 80,b,40.] Verfasser von Mantra
-[101,b,16.] = *aśvaghoṣa*
+[Verz. d. Oxf. H. 80,b,40.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?80) Verfasser von Mantra
+[101,b,16.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?101) = *aśvaghoṣa*
 [WASSILJEW 35. 45. 58. 75. 200.]
 
 - **RU:** i) сын Vasu's (vgl. *kālin)*
-[Verz. d. Oxf. H. 80,b,40.] автор Mantra
-[101,b,16.] = *aśvaghoṣa*
+[Verz. d. Oxf. H. 80,b,40.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?80) автор Mantra
+[101,b,16.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?101) = *aśvaghoṣa*
 [WASSILJEW 35. 45. 58. 75. 200.]
   <sub>attested</sub>
 
@@ -832,12 +832,12 @@ Devarṣi в Indra's *sabhā*
   <sub>attested</sub>
 
 **4h)** — h) N. der Dākṣāyaṇī auf dem Berge Kālañjara
-[Verz. d. Oxf. H. 39,b,4.] ein Aṃśa der Prakṛti
-[23,b,1.] [WILSON, Sel. Works 1,246.]
+[Verz. d. Oxf. H. 39,b,4.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?39) ein Aṃśa der Prakṛti
+[23,b,1.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?23) [WILSON, Sel. Works 1,246.]
 
 - **RU:** — h) N. Dākṣāyaṇī на горе Kālañjara
-[Verz. d. Oxf. H. 39,b,4.] Aṃśa Prakṛti
-[23,b,1.] [WILSON, Sel. Works 1,246.]
+[Verz. d. Oxf. H. 39,b,4.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?39) Aṃśa Prakṛti
+[23,b,1.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?23) [WILSON, Sel. Works 1,246.]
   <sub>lexicographic</sub>
 
 **hdr)** 2. *kāla*¦
@@ -846,21 +846,21 @@ Devarṣi в Indra's *sabhā*
   <sub>lexicographic</sub>
 
 **1)** 1) *yathaiva śṛṅgaṃ goḥ kāle vardhamānasya vardhate* mit der Zeit, allmählich
-[Spr. 4802.] *paritoṣakālāḥ* Zeit so v. a. Gelegenheit
-[3012.] *brāhmaṇastriṣu kāleṣu śastraṃ gṛhṇanna duṣyati . ātmatrāṇe varṇadoṣe durdamyaniyameṣu ca ..*
-[MBH. 12,2950.]
+[Spr. 4802.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4802) *paritoṣakālāḥ* Zeit so v. a. Gelegenheit
+[3012.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3012) *brāhmaṇastriṣu kāleṣu śastraṃ gṛhṇanna duṣyati . ātmatrāṇe varṇadoṣe durdamyaniyameṣu ca ..*
+[MBH. 12,2950.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.2950)
 
 - **RU:** 1) *yathaiva śṛṅgaṃ goḥ kāle vardhamānasya vardhate* со временем, постепенно
-[Spr. 4802.] *paritoṣakālāḥ* время т. е. v. a. случай, повод
-[3012.] *brāhmaṇastriṣu kāleṣu śastraṃ gṛhṇanna duṣyati . ātmatrāṇe varṇadoṣe durdamyaniyameṣu ca ..*
-[MBH. 12,2950.]
+[Spr. 4802.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4802) *paritoṣakālāḥ* время т. е. v. a. случай, повод
+[3012.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3012) *brāhmaṇastriṣu kāleṣu śastraṃ gṛhṇanna duṣyati . ātmatrāṇe varṇadoṣe durdamyaniyameṣu ca ..*
+[MBH. 12,2950.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.2950)
   <sub>attested</sub>
 
 **3)** — 3) *mṛtyukālau*
-[R. 7,22,22.]
+[R. 7,22,22.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,22,22)
 
 - **RU:** — 3) *mṛtyukālau*
-[R. 7,22,22.]
+[R. 7,22,22.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,22,22)
   <sub>attested</sub>
 
 **5)** — 5)
@@ -885,12 +885,12 @@ Schol. к [AV. PRĀT. 4,123. fg.]
   <sub>lexicographic</sub>
 
 **1)** 1) *kālena* von Zeit zu Zeit, dann und wann (Gegens. *pade pade*)
-[Spr. (II) 6900.] zu spät
-[6007.]
+[Spr. (II) 6900.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6900) zu spät
+[6007.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6007)
 
 - **RU:** 1) *kālena* время от времени, иногда (Gegens. *pade pade*)
-[Spr. (II) 6900.] слишком поздно
-[6007.]
+[Spr. (II) 6900.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6900) слишком поздно
+[6007.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6007)
   <sub>attested</sub>
 
 **hdr)** **1.** *kāla*¦
@@ -1198,9 +1198,9 @@ Schol. к [AV. PRĀT. 4,123. fg.]
 - **RU:** — c〉 *mahāntaṃ kālam* в течение долгого Z..
   <sub>attested</sub>
 
-**1d)** — d〉 *kālena* im Verlauf der Z., mit der Z.; zu einer bestimmten Z. [Spr. 1700. fg.] [2857]. [6900] *gacchatā* im Verlauf der Z. [Chr. 107,23]. *dīrgheṇa* eine lange Z. hindurch, nach langer Z. *mahatā* ([41,41]. [52,1]) oder *bahunā* nach Verlauf einer langen Z. *kena cit* nach einiger Z. *tena* zu dieser Z. [76,32].
+**1d)** — d〉 *kālena* im Verlauf der Z., mit der Z.; zu einer bestimmten Z. [Spr. 1700. fg.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1700) [2857](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2857). [6900](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?6900) *gacchatā* im Verlauf der Z. [Chr. 107,23]. *dīrgheṇa* eine lange Z. hindurch, nach langer Z. *mahatā* ([41,41]. [52,1]) oder *bahunā* nach Verlauf einer langen Z. *kena cit* nach einiger Z. *tena* zu dieser Z. [76,32].
 
-- **RU:** — d〉 *kālena* в течение Z., со временем; в определённое Z. [Spr. 1700. fg.] [2857]. [6900] *gacchatā* в течение Z. [Chr. 107,23]. *dīrgheṇa* в течение долгого Z., спустя долгое Z. *mahatā* ([41,41]. [52,1]) или *bahunā* по истечении долгого Z. *kena cit* спустя некоторое Z. *tena* к этому Z. [76,32].
+- **RU:** — d〉 *kālena* в течение Z., со временем; в определённое Z. [Spr. 1700. fg.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1700) [2857](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2857). [6900](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?6900) *gacchatā* в течение Z. [Chr. 107,23]. *dīrgheṇa* в течение долгого Z., спустя долгое Z. *mahatā* ([41,41]. [52,1]) или *bahunā* по истечении долгого Z. *kena cit* спустя некоторое Z. *tena* к этому Z. [76,32].
   <sub>attested</sub>
 
 **1e)** — e〉 *kālāt* und *kālatas* im Verlauf der Z., mit der Z. *kālatas* der Z. nach [ĀPAST.]
@@ -1213,9 +1213,9 @@ Schol. к [AV. PRĀT. 4,123. fg.]
 - **RU:** — f〉 *dīrghasya* или *mahataḥ kālasya* спустя долгое Z. *kasyacit* спустя некоторое Z.
   <sub>attested</sub>
 
-**1g)** — g〉 *kāle* zur rechter Z., zur bestimmten Z., zu gelegener Z.; mit der Z., so v. a. allmählich [Spr. 5168]. *sva˚* zu seiner Z. *prāpte* wenn die Z. gekommen ist. *gacchati* im Verlauf d. Z. *yāte* nach Verlauf einiger Z. *kasmiṃścit* eines Tages [Chr. 41,19]. *kāle kāle* immer zu seiner Z. [57,26]. [92,15]. *prāpteṣu kāleṣu* wenn die Z. da ist, so v. a. wenn Noth am Manne ist [Spr. 7651].
+**1g)** — g〉 *kāle* zur rechter Z., zur bestimmten Z., zu gelegener Z.; mit der Z., so v. a. allmählich [Spr. 5168](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?5168). *sva˚* zu seiner Z. *prāpte* wenn die Z. gekommen ist. *gacchati* im Verlauf d. Z. *yāte* nach Verlauf einiger Z. *kasmiṃścit* eines Tages [Chr. 41,19]. *kāle kāle* immer zu seiner Z. [57,26]. [92,15]. *prāpteṣu kāleṣu* wenn die Z. da ist, so v. a. wenn Noth am Manne ist [Spr. 7651](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7651).
 
-- **RU:** — g〉 *kāle* в надлежащее Z., в определённое Z., в удобное Z.; со Z., т. е. v. a. постепенно [Spr. 5168]. *sva˚* в своё Z. *prāpte* когда наступило Z.. *gacchati* в течение d. Z. *yāte* по истечении некоторого Z. *kasmiṃścit* в один день [Chr. 41,19]. *kāle kāle* всегда в своё Z. [57,26]. [92,15]. *prāpteṣu kāleṣu* когда наступило Z., т. е. v. a. когда есть нужда в человеке [Spr. 7651].
+- **RU:** — g〉 *kāle* в надлежащее Z., в определённое Z., в удобное Z.; со Z., т. е. v. a. постепенно [Spr. 5168](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?5168). *sva˚* в своё Z. *prāpte* когда наступило Z.. *gacchati* в течение d. Z. *yāte* по истечении некоторого Z. *kasmiṃścit* в один день [Chr. 41,19]. *kāle kāle* всегда в своё Z. [57,26]. [92,15]. *prāpteṣu kāleṣu* когда наступило Z., т. е. v. a. когда есть нужда в человеке [Spr. 7651](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7651).
   <sub>attested</sub>
 
 **1h)** — h〉 *kāla˚* zu rechter Z.; mit der Zeit, allmählich.
@@ -1233,9 +1233,9 @@ Schol. к [AV. PRĀT. 4,123. fg.]
 - **RU:** — 3〉 время года [84,5]. [93,15]. [171,9].
   <sub>attested</sub>
 
-**4)** — 4〉 Essenszeit (deren zwei am Tage). *ubhau kālau* so v. a. Morgens und Abends [MBH. 1,119,33]. *ṣaṣṭhe kāle* am Abend des dritten Tages [Chr. 107,27]. *pañcaśate kāle* so v. a. nach 250 Tagen [52,5].
+**4)** — 4〉 Essenszeit (deren zwei am Tage). *ubhau kālau* so v. a. Morgens und Abends [MBH. 1,119,33](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?1,119,33). *ṣaṣṭhe kāle* am Abend des dritten Tages [Chr. 107,27]. *pañcaśate kāle* so v. a. nach 250 Tagen [52,5].
 
-- **RU:** — 4〉 время приёма пищи (их двое в день). *ubhau kālau* т. е. v. a. утром и вечером [MBH. 1,119,33]. *ṣaṣṭhe kāle* вечером третьего дня [Chr. 107,27]. *pañcaśate kāle* т. е. v. a. спустя 250 дней [52,5].
+- **RU:** — 4〉 время приёма пищи (их двое в день). *ubhau kālau* т. е. v. a. утром и вечером [MBH. 1,119,33](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?1,119,33). *ṣaṣṭhe kāle* вечером третьего дня [Chr. 107,27]. *pañcaśate kāle* т. е. v. a. спустя 250 дней [52,5].
   <sub>attested</sub>
 
 **5)** — 5〉 Stunde. *ṣaṣṭhe kāle 'hnaḥ* so v. a. um Mittagszeit.

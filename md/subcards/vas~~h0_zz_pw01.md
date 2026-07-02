@@ -29,8 +29,8 @@
 **PW-7a)** — a〉 zugebracht, verlebt (ein Tag); _n._ impers. geweilt —, die Zeit zugebracht worden (das Wo im Loc.).
 - **EN:** — a) spent, passed (a day); _n._ impers. "having tarried —, the time having been spent" (the where given in the Loc.).
 
-**PW-7b)** — b〉 wohin man sich zurückgezogen hat [Spr. 7686].
-- **EN:** — b) whither one has withdrawn [Spr. 7686].
+**PW-7b)** — b〉 wohin man sich zurückgezogen hat [Spr. 7686](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7686).
+- **EN:** — b) whither one has withdrawn [Spr. 7686](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7686).
 
 **PW-7c)** — c〉 Halt gemacht —, übernachtet —, verweilt —, sich aufgehalten —, irgendwo gelebt habend, abwesend gewesen, seinen Standort habend, gewartet habend ([HEMĀDRI 1,416,13]); der Ort im Loc. oder im Comp. vorangehend, die Zeit im Acc. oder im Comp. vorangehend. Auch mit Hinzufügung von *˚vāsam* und *˚vasatim*.
 - **EN:** — c) having halted —, passed the night —, tarried —, abided —, having lived somewhere, having been absent, having had one's location, having waited ([HEMĀDRI 1,416,13]); the place preceding in the Loc. or in the Comp., the time preceding in the Acc. or in the Comp.. Also with the addition of *˚vāsam* and *˚vasatim*.
@@ -83,8 +83,8 @@
 **PW-ava-1)** — 1〉 einen Ort beziehen, zum Aufenthaltsort nehmen, einen Platz einnehmen ([PRASANNAR. 74,12]), bewohnen; liegen auf; mit Acc.
 - **EN:** — 1) to take up a place, make it one's residence, occupy a spot ([PRASANNAR. 74,12]), inhabit; lie upon; with Acc.
 
-**PW-ava-2)** — 2〉 sich halten an, so v. a. leben von, geniessen; mit Acc. [MBH. 3,120,32].
-- **EN:** — 2) to hold to, so v. a. "to live on, enjoy"; with Acc. [MBH. 3,120,32].
+**PW-ava-2)** — 2〉 sich halten an, so v. a. leben von, geniessen; mit Acc. [MBH. 3,120,32](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?3,120,32).
+- **EN:** — 2) to hold to, so v. a. "to live on, enjoy"; with Acc. [MBH. 3,120,32](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?3,120,32).
 
 **PW-ava-3)** — 3〉 *adhyuṣita*
 - **EN:** — 3) *adhyuṣita*
@@ -134,14 +134,14 @@
 **PW-anu-5)** — 5〉 sich einem Gefühl (Acc.) hingeben [CARAKA. 1,8] (*anuvaset* zu lesen).
 - **EN:** — 5) to give oneself over to a feeling (Acc.) [CARAKA. 1,8] (read *anuvaset*).
 
-**PW-anu-6)** — 6〉 *anuvatsyate* [MBH. 3,1475] fehlerhaft für *anuvartsyate*.
-- **EN:** — 6) *anuvatsyate* [MBH. 3,1475] erroneous for *anuvartsyate*.
+**PW-anu-6)** — 6〉 *anuvatsyate* [MBH. 3,1475](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1475) fehlerhaft für *anuvartsyate*.
+- **EN:** — 6) *anuvatsyate* [MBH. 3,1475](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1475) erroneous for *anuvartsyate*.
 
 **PW-anu-7)** — Caus. das Kalb (Acc.) bei der Mutter belassen [ĀPAST. ŚR. 8,11,14].
 - **EN:** — Caus. to leave the calf (Acc.) with the mother [ĀPAST. ŚR. 8,11,14].
 
-**PW-Caus-anu)** — Mit *samanu* obliegen, befolgen; mit Acc. [HARIV. 3,3,39].
-- **EN:** — With *samanu* "to attend to, follow, observe"; with Acc. [HARIV. 3,3,39].
+**PW-Caus-anu)** — Mit *samanu* obliegen, befolgen; mit Acc. [HARIV. 3,3,39](https://sanskrit-lexicon-scans.github.io/hariv?3).
+- **EN:** — With *samanu* "to attend to, follow, observe"; with Acc. [HARIV. 3,3,39](https://sanskrit-lexicon-scans.github.io/hariv?3).
 
 **PW-anupra-intro)** — Mit *antar*
 - **EN:** — With *antar*
@@ -176,8 +176,8 @@
 **PW-abhi-6)** — 6〉 fleischlich beiwohnen (einer Frau, Acc.).
 - **EN:** — 6) to have carnal intercourse with (a woman, Acc.).
 
-**PW-abhi-7)** — 7〉 statt *māmā vasanti* [AV. 7,79,2] ist wohl *amā va˚* zu lesen; *āvasita* [KATHĀS. 54,12] fehlerhaft für *āvāsita*.
-- **EN:** — 7) instead of *māmā vasanti* [AV. 7,79,2] one should probably read *amā va˚*; *āvasita* [KATHĀS. 54,12] erroneous for *āvāsita*.
+**PW-abhi-7)** — 7〉 statt *māmā vasanti* [AV. 7,79,2](https://sanskrit-lexicon.github.io/avlinks/avhymns/av07.079.html#av07.079.02) ist wohl *amā va˚* zu lesen; *āvasita* [KATHĀS. 54,12](https://sanskrit-lexicon-scans.github.io/kss/index.html?54,12) fehlerhaft für *āvāsita*.
+- **EN:** — 7) instead of *māmā vasanti* [AV. 7,79,2](https://sanskrit-lexicon.github.io/avlinks/avhymns/av07.079.html#av07.079.02) one should probably read *amā va˚*; *āvasita* [KATHĀS. 54,12](https://sanskrit-lexicon-scans.github.io/kss/index.html?54,12) erroneous for *āvāsita*.
 
 **PW-Caus-abhi-intro)** — Caus.
 - **EN:** — Caus.
@@ -236,8 +236,8 @@
 **PW-pra-Caus-2)** — 2〉 verwüsten.
 - **EN:** — 2) to lay waste.
 
-**PW-prati)** — Mit *anūd* Caus. in der Richtung von (Acc.) wegrücken [TBR. 2,1,2,5].
-- **EN:** — With *anūd* Caus. "to move away in the direction of" (Acc.) [TBR. 2,1,2,5].
+**PW-prati)** — Mit *anūd* Caus. in der Richtung von (Acc.) wegrücken [TBR. 2,1,2,5](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?2,1,2,5).
+- **EN:** — With *anūd* Caus. "to move away in the direction of" (Acc.) [TBR. 2,1,2,5](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?2,1,2,5).
 
 **PW-vi1)** — Mit *abhyud* Caus. dass. [MAITR. S. 1,8,4 (119,16)].
 - **EN:** — With *abhyud* Caus. dass. [MAITR. S. 1,8,4 (119,16)].
@@ -275,8 +275,8 @@
 **PW-Caus-sam-intro)** — Caus.
 - **EN:** — Caus.
 
-**PW-Caus-sam-1)** — 1〉 über Nacht behalten, — liegen lassen, aufbewahren [SĀMAV. BR. 3,4,4. fgg.] [TS. 6,3,2,3].
-- **EN:** — 1) to keep overnight, — let lie, preserve [SĀMAV. BR. 3,4,4. fgg.] [TS. 6,3,2,3].
+**PW-Caus-sam-1)** — 1〉 über Nacht behalten, — liegen lassen, aufbewahren [SĀMAV. BR. 3,4,4. fgg.] [TS. 6,3,2,3](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?6,3,2,3).
+- **EN:** — 1) to keep overnight, — let lie, preserve [SĀMAV. BR. 3,4,4. fgg.] [TS. 6,3,2,3](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?6,3,2,3).
 
 **PW-Caus-sam-2)** — 2〉 fasten lassen.
 - **EN:** — 2) to make fast.

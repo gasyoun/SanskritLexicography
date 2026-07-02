@@ -11,6 +11,6 @@
 [SUŚR. 1,47,4.]
 
 **2)** — 2) üben, sich befleissigen: *taṃ dharmam*
-[MBH. 3,10572.]
+[MBH. 3,10572.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10572)
 - **EN:** — 2) to practise, apply oneself to: *taṃ dharmam*
-[MBH. 3,10572.]
+[MBH. 3,10572.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10572)

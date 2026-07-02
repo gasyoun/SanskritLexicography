@@ -12,10 +12,10 @@
 - **EN:** — 2) Med. (Vedic) and Pass. to be heard —, to be perceived — about (Acc.), — from someone (Gen., Abl. or *mukhāt*); to be heard that (something) is u. s. w., to be known as, be called (with predicative Nomin.); to be heard or studied from a teacher, to be taught, to be read in a work (Loc.); to be heard —, thus v. a. to be pronounced —, to be used in speech (of a word). Frequently impers. *śrūyate* one hears or I hear — from someone (Abl.), — about (Gen.); one reads in (Loc.); *śrūyatām* let one hear or hear! (2nd Sg.).
 
 **1-3)** — 3〉 *śuśruvaṃs*
-— a〉 gehört habend ([ṚV. 7,70,5. 10,71,5]), — dass ist u. s. w. (mit doppeltem Acc.) Auch statt des verbi finiti.
+— a〉 gehört habend ([ṚV. 7,70,5. 10,71,5](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.070.html#rv07.070.05)), — dass ist u. s. w. (mit doppeltem Acc.) Auch statt des verbi finiti.
 — b〉 der gehört —, d. i. gelernt hat, ein Studirter.
 - **EN:** — 3) *śuśruvaṃs*
-— a) having heard ([ṚV. 7,70,5. 10,71,5]), — that (something) is u. s. w. (with double Acc.). Also in place of the verbum finitum.
+— a) having heard ([ṚV. 7,70,5. 10,71,5](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.070.html#rv07.070.05)), — that (something) is u. s. w. (with double Acc.). Also in place of the verbum finitum.
 — b) one who has heard —, d. i. learnt, one who is learned.
 
 **1-4)** — 4〉 *śruta*
@@ -49,17 +49,17 @@
 — e) _n._ that which is called out in the ritual.
 
 **desid-1)** — Desid. *śuśrūṣate* (metrisch auch Act.)
-— 1〉 Etwas (Acc.) hören wollen, gern hören ([ĀPAST. 1,6,13]), Jmd (Dat.) gern zuhören. *śuśrūṣita* (!) [ŚAT. BR. 14,9,4,17].
+— 1〉 Etwas (Acc.) hören wollen, gern hören ([ĀPAST. 1,6,13]), Jmd (Dat.) gern zuhören. *śuśrūṣita* (!) [ŚAT. BR. 14,9,4,17](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,9,4,17).
 — 2〉 gehorchen, Jmd seine Aufmerksamkeit bezeigen, zu Jmds Dienst sein (auch von der Bedienung des Feuers); mit Acc., ausnahmsweise mit Gen. Pass. *śuśrūṣyate* bedient werden. *śuśrūṣita* bedient [41,28]. *Desid. vom Caus. *śuśrāvayiṣati* und *śuśrāvayiṣati*.
 - **EN:** — Desid. *śuśrūṣate* (metrically also Act.)
-— 1) to wish to hear something (Acc.), to hear gladly ([ĀPAST. 1,6,13]), to gladly listen to someone (Dat.). *śuśrūṣita* (!) [ŚAT. BR. 14,9,4,17].
+— 1) to wish to hear something (Acc.), to hear gladly ([ĀPAST. 1,6,13]), to gladly listen to someone (Dat.). *śuśrūṣita* (!) [ŚAT. BR. 14,9,4,17](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,9,4,17).
 — 2) to obey, to show attention to someone, to be at someone's service (also of the tending of fire); with Acc., exceptionally with Gen. Pass. *śuśrūṣyate* to be served. *śuśrūṣita* served [41,28]. *Desid. of the Caus. *śuśrāvayiṣati* and *śuśrāvayiṣati*.
 
 **pra)** — Caus. von Desid. *śuśrūṣayati* zu Jmds (Acc.). Dienst sein. Nur [KULL.]
 - **EN:** — Caus. of Desid. *śuśrūṣayati* to be at someone's (Acc.) service. Only [KULL.].
 
-**anu-1)** — Mit *ati* Med. über (Alles) gepriesen werden [ṚV. 8,2,34].
-- **EN:** — With *ati* Med. to be praised over (everything) [ṚV. 8,2,34].
+**anu-1)** — Mit *ati* Med. über (Alles) gepriesen werden [ṚV. 8,2,34](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.002.html#rv08.002.34).
+- **EN:** — With *ati* Med. to be praised over (everything) [ṚV. 8,2,34](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.002.html#rv08.002.34).
 
 **anu-2)** — Mit *anu*
 — 1〉 hören, zu Ohren bekommen von (Acc.). *evamanuśrūyate* so v. a. so wird erzählt [HARṢAC. 2,10]. *anuśruta* gehört von (Gen.).
@@ -83,8 +83,8 @@
 — 1) to hear, perceive, — that (something) is (with double Acc.).
 — 2) *abhiśruta* known.
 
-**abhi-caus)** — Caus. Jmd Etwas hören lassen, zu Jmd (Acc.) sprechen ([AIT. BR. 1,3,14]) über Jmd Etwas sprechen, besprechen; mit doppeltem Acc. oder mit Instr. des Spruches und Acc. der Person.
-- **EN:** — Caus. to let someone hear something, to speak to someone (Acc.) ([AIT. BR. 1,3,14]), to speak about someone/something, to discuss; with double Acc. or with Instr. of the utterance and Acc. of the person.
+**abhi-caus)** — Caus. Jmd Etwas hören lassen, zu Jmd (Acc.) sprechen ([AIT. BR. 1,3,14](https://sanskrit-lexicon-scans.github.io/aitbr_auf/app1?1,3,14)) über Jmd Etwas sprechen, besprechen; mit doppeltem Acc. oder mit Instr. des Spruches und Acc. der Person.
+- **EN:** — Caus. to let someone hear something, to speak to someone (Acc.) ([AIT. BR. 1,3,14](https://sanskrit-lexicon-scans.github.io/aitbr_auf/app1?1,3,14)), to speak about someone/something, to discuss; with double Acc. or with Instr. of the utterance and Acc. of the person.
 
 **aa-1)** — Mit *ā*
 — 1〉 hinhören, horchen, lauschen auf Etwas (Acc.) oder Jmd (Gen. oder Dat.).
@@ -111,13 +111,13 @@
 — 5) to discuss.
 
 **aa-misc)** — *Desid. *āśuśrūṣati*.
-— Mit *abhyā* Caus. Jmd anreden [AIT. BR. 1,3,14]. Vgl. *abhyāśrāvaṇa* [Nachtr. 1].
+— Mit *abhyā* Caus. Jmd anreden [AIT. BR. 1,3,14](https://sanskrit-lexicon-scans.github.io/aitbr_auf/app1?1,3,14). Vgl. *abhyāśrāvaṇa* [Nachtr. 1].
 — Mit *pratyā*, *pratyāśruta* _n._ das im Ritual als Erwiederung Zugerufene.
-— Caus. den rituellen Zuruf beantworten [AV. 9,6,50]. [VAITĀN.] *pratyāśrāvita* _n._ = *pratyāśruta*.
+— Caus. den rituellen Zuruf beantworten [AV. 9,6,50](https://sanskrit-lexicon.github.io/avlinks/avhymns/av09.006.html#av09.006.50). [VAITĀN.] *pratyāśrāvita* _n._ = *pratyāśruta*.
 - **EN:** — *Desid. *āśuśrūṣati*.
-— With *abhyā* Caus. to address someone [AIT. BR. 1,3,14]. Vgl. *abhyāśrāvaṇa* [Nachtr. 1].
+— With *abhyā* Caus. to address someone [AIT. BR. 1,3,14](https://sanskrit-lexicon-scans.github.io/aitbr_auf/app1?1,3,14). Vgl. *abhyāśrāvaṇa* [Nachtr. 1].
 — With *pratyā*, *pratyāśruta* _n._ that which is called out in the ritual as a response.
-— Caus. to answer the ritual call [AV. 9,6,50]. [VAITĀN.] *pratyāśrāvita* _n._ = *pratyāśruta*.
+— Caus. to answer the ritual call [AV. 9,6,50](https://sanskrit-lexicon.github.io/avlinks/avhymns/av09.006.html#av09.006.50). [VAITĀN.] *pratyāśrāvita* _n._ = *pratyāśruta*.
 
 **aa-desid)** — Mit *samā* Caus. Jmd (Acc.). mittheilen, dass ist (mit doppeltem Acc.).
 - **EN:** — With *samā* Caus. to someone (Acc.), to communicate that (something) is (with double Acc.).
@@ -140,15 +140,15 @@
 — 2〉 *pariśruta*
 — a〉 gehört, vernommen, — von (Gen., Instr. oder im Comp. vorangehend), — dass ist (mit doppeltem Nomin.). Auch _n._ impers.
 — b〉 bekannt als, geltend für, gekannt als, genannt (mit prädicativem Nomin.) [83,14].
-— c〉 bekannt, so v. a. berühmt [MBH. 12,49,84].
-— d〉 [MBH. 4,1610] fehlerhaft für *pratiśruta*.
+— c〉 bekannt, so v. a. berühmt [MBH. 12,49,84](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,49,84).
+— d〉 [MBH. 4,1610](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1610) fehlerhaft für *pratiśruta*.
 - **EN:** — With *pari*
 — 1) to hear something, perceive about (Acc.), hear that (something) is (with double Acc.).
 — 2) *pariśruta*
 — a) heard, perceived, — from (Gen., Instr. or preceding in the Comp.), — that (something) is (with double Nomin.). Also _n._ impers.
 — b) known as, passing for, regarded as, called (with predicative Nomin.) [83,14].
-— c) known, thus v. a. famous [MBH. 12,49,84].
-— d) [MBH. 4,1610] erroneous for *pratiśruta*.
+— c) known, thus v. a. famous [MBH. 12,49,84](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,49,84).
+— d) [MBH. 4,1610](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1610) erroneous for *pratiśruta*.
 
 **ni-caus)** — Mit *pra* Med.
 — 1〉 gehört werden, sich hören lassen.
@@ -161,21 +161,21 @@
 - **EN:** — With *atipra* Med. to become known or famous before others.
 
 **pra-ni-1)** — Mit *prati*
-— 1〉 hinhören, sein Ohr leihen ([ṚV. 1,25,20]), — Jmd (Gen. [VAJRACCH. 20,14]); Med. vernehmlich sein [ṚV. 1,169,7]. *pratiśruta* gehört, vernommen.
+— 1〉 hinhören, sein Ohr leihen ([ṚV. 1,25,20](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.025.html#rv01.025.20)), — Jmd (Gen. [VAJRACCH. 20,14]); Med. vernehmlich sein [ṚV. 1,169,7](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.169.html#rv01.169.07). *pratiśruta* gehört, vernommen.
 — 2〉 bejahen, zusagen, versprechen; mit Acc. der Sache und Dat. oder Gen. der Person. *pratiśruta* zugesagt, versprochen. *sā ca pitrā dātuṃ pratiśrutā* so v. a. und der Vater versprach sie zu geben (zur Ehe). Auch _n._ impers. [82,6] *pratiśrute* nachdem die Zusage erfolgt ist. *dātumanena pratiśrute*.
 — 3〉 *pratiśruta* widerhallend.
-— 4〉 *pratiśruta* [HARIV. 1937] fehlerhaft für *pariśruta*.
+— 4〉 *pratiśruta* [HARIV. 1937](https://sanskrit-lexicon-scans.github.io/hariv?1937) fehlerhaft für *pariśruta*.
 - **EN:** — With *prati*
-— 1) to listen closely, lend one's ear ([ṚV. 1,25,20]), — to someone (Gen. [VAJRACCH. 20,14]); Med. to be audible [ṚV. 1,169,7]. *pratiśruta* heard, perceived.
+— 1) to listen closely, lend one's ear ([ṚV. 1,25,20](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.025.html#rv01.025.20)), — to someone (Gen. [VAJRACCH. 20,14]); Med. to be audible [ṚV. 1,169,7](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.169.html#rv01.169.07). *pratiśruta* heard, perceived.
 — 2) to affirm, consent, promise; with Acc. of the thing and Dat. or Gen. of the person. *pratiśruta* consented, promised. *sā ca pitrā dātuṃ pratiśrutā* thus v. a. and the father promised to give her (in marriage). Also _n._ impers. [82,6] *pratiśrute* after the consent has been given. *dātumanena pratiśrute*.
 — 3) *pratiśruta* resounding.
-— 4) *pratiśruta* [HARIV. 1937] erroneous for *pariśruta*.
+— 4) *pratiśruta* [HARIV. 1937](https://sanskrit-lexicon-scans.github.io/hariv?1937) erroneous for *pariśruta*.
 
-**pra-ni-misc)** — Caus. antworten [AV. 9,6,50].
+**pra-ni-misc)** — Caus. antworten [AV. 9,6,50](https://sanskrit-lexicon.github.io/avlinks/avhymns/av09.006.html#av09.006.50).
 — *Desid. *pratiśuśrūṣati*.
 — Mit *saṃprati* Etwas (Acc.) Jmd (Dat.) zusagen, versprechen.
 — Caus. Jmd veranlassen eines Zusage zu machen, Jmd ein Versprechen abnehmen.
-- **EN:** — Caus. to answer [AV. 9,6,50].
+- **EN:** — Caus. to answer [AV. 9,6,50](https://sanskrit-lexicon.github.io/avlinks/avhymns/av09.006.html#av09.006.50).
 — *Desid. *pratiśuśrūṣati*.
 — With *saṃprati* to promise something (Acc.) to someone (Dat.).
 — Caus. to induce someone to give a promise, to extract a promise from someone.

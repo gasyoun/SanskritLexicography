@@ -38,14 +38,14 @@
 [7,78,b. 79,a.]
 
 **3.3)** — *upod* caus. zur Sprache bringen, einleiten
-[NĪLAK.] zu [MBH. 1,6.] *hananīyaka* _adj._ von *hananīy*
+[NĪLAK.] zu [MBH. 1,6.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6) *hananīyaka* _adj._ von *hananīy*
 [PAT. a. a. O. 7,118,a.]
 
 - **RU:** — *upod* caus. излагать, вводить (в речь)
-[NĪLAK.] к [MBH. 1,6.] *hananīyaka* _adj._ от *hananīy*
+[NĪLAK.] к [MBH. 1,6.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6) *hananīyaka* _adj._ от *hananīy*
 [PAT. a. a. O. 7,118,a.]
 - **EN:** — *upod* caus. to bring up for discussion, to introduce, broach
-[NĪLAK.] to [MBH. 1,6.] *hananīyaka* _adj._ by *hananīy*
+[NĪLAK.] to [MBH. 1,6.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6) *hananīyaka* _adj._ by *hananīy*
 [PAT. a. a. O. 7,118,a.]
   <sub>attested</sub>
 

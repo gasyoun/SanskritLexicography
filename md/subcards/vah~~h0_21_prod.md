@@ -4,11 +4,11 @@
 
 
 **1)** — *prod* äussern, an den Tag legen: *bhūteṣu prodvahaṃścānukampām*
-[PAÑCAR. 3,10,3.]
+[PAÑCAR. 3,10,3.](https://sanskrit-lexicon-scans.github.io/pancar/app1?3,10,3)
 
-- **RU:** — *prod* выражать, проявлять: *bhūteṣu prodvahaṃścānukampām* [PAÑCAR. 3,10,3.]
+- **RU:** — *prod* выражать, проявлять: *bhūteṣu prodvahaṃścānukampām* [PAÑCAR. 3,10,3.](https://sanskrit-lexicon-scans.github.io/pancar/app1?3,10,3)
 - **EN:** — *prod* "to express, manifest, display": *bhūteṣu prodvahaṃścānukampām*
-[PAÑCAR. 3,10,3.]
+[PAÑCAR. 3,10,3.](https://sanskrit-lexicon-scans.github.io/pancar/app1?3,10,3)
   <sub>DCS 1857 · attested</sub>
 
 **2)** — Vgl. *prodvāha* .

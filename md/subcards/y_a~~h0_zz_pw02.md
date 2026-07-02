@@ -39,10 +39,10 @@
 - **EN:** — With *vi*
   <sub>attested</sub>
 
-**vi1)** — 1〉 durchfahren, mit dem Wagen —, mit den Rädern durchschneiden [MAITR. S. 1,10,14] (= [KĀṬH. 36,8]. [NIR. 5,5]).
+**vi1)** — 1〉 durchfahren, mit dem Wagen —, mit den Rädern durchschneiden [MAITR. S. 1,10,14] (= [KĀṬH. 36,8]. [NIR. 5,5](https://sanskrit-lexicon-scans.github.io/nirukta/app1?5,5)).
 
-- **RU:** — 1〉 проезжать насквозь, на колеснице —, колёсами прорезать [MAITR. S. 1,10,14] (= [KĀṬH. 36,8]. [NIR. 5,5]).
-- **EN:** 1) to drive through, — to cut through with the chariot —, with the wheels [MAITR. S. 1,10,14] (= [KĀṬH. 36,8]. [NIR. 5,5]).
+- **RU:** — 1〉 проезжать насквозь, на колеснице —, колёсами прорезать [MAITR. S. 1,10,14] (= [KĀṬH. 36,8]. [NIR. 5,5](https://sanskrit-lexicon-scans.github.io/nirukta/app1?5,5)).
+- **EN:** 1) to drive through, — to cut through with the chariot —, with the wheels [MAITR. S. 1,10,14] (= [KĀṬH. 36,8]. [NIR. 5,5](https://sanskrit-lexicon-scans.github.io/nirukta/app1?5,5)).
   <sub>attested</sub>
 
 **vi2)** — 2〉 durchlaufen, -schneiden, zwischen durch gehen, — fahren.
@@ -63,10 +63,10 @@
 - **EN:** 4) to become apostate, to defect [MAITR. S. 2,1,1].
   <sub>attested</sub>
 
-**vi5)** — 5〉 **viyāta* dreist, unverschämt, [AV. 3,31,5] scheint der Text entstellt zu sein.
+**vi5)** — 5〉 **viyāta* dreist, unverschämt, [AV. 3,31,5](https://sanskrit-lexicon.github.io/avlinks/avhymns/av03.031.html#av03.031.05) scheint der Text entstellt zu sein.
 
-- **RU:** — 5〉 **viyāta* дерзкий, бесстыдный, [AV. 3,31,5] текст, по всей видимости, искажён.
-- **EN:** 5) **viyāta*, bold, impudent; [AV. 3,31,5] the text appears to be corrupt.
+- **RU:** — 5〉 **viyāta* дерзкий, бесстыдный, [AV. 3,31,5](https://sanskrit-lexicon.github.io/avlinks/avhymns/av03.031.html#av03.031.05) текст, по всей видимости, искажён.
+- **EN:** 5) **viyāta*, bold, impudent; [AV. 3,31,5](https://sanskrit-lexicon.github.io/avlinks/avhymns/av03.031.html#av03.031.05) the text appears to be corrupt.
   <sub>attested</sub>
 
 **anuvi)** — Mit *abhivi* hinfahren zu (Acc.).
@@ -105,10 +105,10 @@
 - **EN:** 4) to go to — (Acc., also with *prati*).
   <sub>attested</sub>
 
-**sam5)** — 5〉 kommen, herankommen, herbeifahren ([MBH. 3,271,11]). *saṃyāta* herbeigekommen.
+**sam5)** — 5〉 kommen, herankommen, herbeifahren ([MBH. 3,271,11](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?3,271,11)). *saṃyāta* herbeigekommen.
 
-- **RU:** — 5〉 приходить, приближаться, приезжать ([MBH. 3,271,11]). *saṃyāta* прибывший.
-- **EN:** 5) to come, to approach, to drive up ([MBH. 3,271,11]). *saṃyāta* having come up.
+- **RU:** — 5〉 приходить, приближаться, приезжать ([MBH. 3,271,11](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?3,271,11)). *saṃyāta* прибывший.
+- **EN:** 5) to come, to approach, to drive up ([MBH. 3,271,11](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?3,271,11)). *saṃyāta* having come up.
   <sub>attested</sub>
 
 **sam6)** — 6〉 in eines Zustand —, in eine Lage —, in ein Verhältniss treten, theilhaftig werden; mit Acc.
@@ -117,10 +117,10 @@
 - **EN:** 6) to enter into a state —, into a position —, into a relation; to become partaker of; with Acc.
   <sub>attested</sub>
 
-**sam7)** — 7〉 sich richten nach (Acc.). — *saṃyayuḥ* [HARIV. 15,892] fehlerhaft für *khaṃ* *yayuḥ*.
+**sam7)** — 7〉 sich richten nach (Acc.). — *saṃyayuḥ* [HARIV. 15,892](https://sanskrit-lexicon-scans.github.io/hariv?15) fehlerhaft für *khaṃ* *yayuḥ*.
 
-- **RU:** — 7〉 следовать, руководствоваться (Acc.). — *saṃyayuḥ* [HARIV. 15,892] ошибочно вместо *khaṃ* *yayuḥ*.
-- **EN:** 7) to conform to (Acc.). — *saṃyayuḥ* [HARIV. 15,892] erroneous for *khaṃ* *yayuḥ*.
+- **RU:** — 7〉 следовать, руководствоваться (Acc.). — *saṃyayuḥ* [HARIV. 15,892](https://sanskrit-lexicon-scans.github.io/hariv?15) ошибочно вместо *khaṃ* *yayuḥ*.
+- **EN:** 7) to conform to (Acc.). — *saṃyayuḥ* [HARIV. 15,892](https://sanskrit-lexicon-scans.github.io/hariv?15) erroneous for *khaṃ* *yayuḥ*.
   <sub>attested</sub>
 
 **abhisam-intro)** — Mit *anusam*
@@ -159,10 +159,10 @@
 - **EN:** 2) to make for someone (Acc.). *abhisaṃyāta* with act. Bed.
   <sub>attested</sub>
 
-**samprati)** — Mit *upasam* vereint kommen zu (Acc.) [AV. 6,73,1].
+**samprati)** — Mit *upasam* vereint kommen zu (Acc.) [AV. 6,73,1](https://sanskrit-lexicon.github.io/avlinks/avhymns/av06.073.html#av06.073.01).
 
-- **RU:** — С *upasam* приходить совместно к (Acc.) [AV. 6,73,1].
-- **EN:** — With *upasam*, to come together to (Acc.) [AV. 6,73,1].
+- **RU:** — С *upasam* приходить совместно к (Acc.) [AV. 6,73,1](https://sanskrit-lexicon.github.io/avlinks/avhymns/av06.073.html#av06.073.01).
+- **EN:** — With *upasam*, to come together to (Acc.) [AV. 6,73,1](https://sanskrit-lexicon.github.io/avlinks/avhymns/av06.073.html#av06.073.01).
   <sub>attested</sub>
 
 **abhiprati)** — Mit *pratisam* auf Jmd losgehen, Jmd angreifen. *pratisaṃyāta* mit Acc.

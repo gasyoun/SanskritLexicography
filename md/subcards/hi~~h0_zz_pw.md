@@ -3,7 +3,7 @@
 `hi~~h0_zz_pw`
 
 
-**head)** **1.** √*hi*¦ *hinoti* (*gatau vṛddhau*; Med. *hinve* u. s. w.)
+**1.** √*hi*¦ *hinoti* (*gatau vṛddhau*; Med. *hinve* u. s. w.)
 
 - **RU:** **1.** √*hi*¦ *hinoti* (*gatau vṛddhau*; Med. *hinve* u. s. w.)
 - **EN:** **1.** √*hi*¦ *hinoti* (*gatau vṛddhau*; Med. *hinve* u. s. w.)
@@ -66,10 +66,10 @@
 - **EN:** — With *apa* to cast off, free oneself from (Acc.) [BHĀG. P.]
   <sub>attested</sub>
 
-**abhi+)** — Mit *api* herausfordern zu (Loc.) [ṚV. 10,71,5].
+**abhi+)** — Mit *api* herausfordern zu (Loc.) [ṚV. 10,71,5](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.071.html#rv10.071.05).
 
-- **RU:** — Mit *api* вызывать на (Loc.) [ṚV. 10,71,5].
-- **EN:** — With *api* to challenge to (Loc.) [ṚV. 10,71,5].
+- **RU:** — Mit *api* вызывать на (Loc.) [ṚV. 10,71,5](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.071.html#rv10.071.05).
+- **EN:** — With *api* to challenge to (Loc.) [ṚV. 10,71,5](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.071.html#rv10.071.05).
   <sub>attested</sub>
 
 **a+)** — Mit *ā* Med. herbeischaffen.
@@ -92,7 +92,7 @@
 — 5〉 herbei-, hinschaffen zu, liefern, Jmd (Dat.) Etwas zustellen, zukommen lassen.
 — 6〉 Med. da hinfahren.
 — 7〉 = **2.** *hā* mit *pra* verlassen, im Stich lassen [BHĀG. P.]
-— 8〉 *prajidhyati* und *prajighyatu* [AIT. BR. 8,28] wohl fehlerhaft für *prajigāti* und *prajigātu*.
+— 8〉 *prajidhyati* und *prajighyatu* [AIT. BR. 8,28](https://sanskrit-lexicon-scans.github.io/aitbr/app1?8,28) wohl fehlerhaft für *prajigāti* und *prajigātu*.
 — 9〉 *prahita*
 — a〉 angetrieben, angefeuert.
 — b〉 geschleudert, — auf (Loc.).
@@ -111,7 +111,7 @@
 — 5〉 to convey to, deliver to, supply to someone (Dat.) something, cause to reach.
 — 6〉 Med. to travel thither.
 — 7〉 = **2.** *hā* with *pra* to forsake, abandon [BHĀG. P.]
-— 8〉 *prajidhyati* and *prajighyatu* [AIT. BR. 8,28] probably erroneous for *prajigāti* and *prajigātu*.
+— 8〉 *prajidhyati* and *prajighyatu* [AIT. BR. 8,28](https://sanskrit-lexicon-scans.github.io/aitbr/app1?8,28) probably erroneous for *prajigāti* and *prajigātu*.
 — 9〉 *prahita*
 — a〉 driven on, incited.
 — b〉 hurled, shot at (Loc.).
@@ -154,10 +154,10 @@
 
 **sam+)** — Mit *saṃpra*
 — 1〉 schleudern. *˚hita* geschleudert.
-— 2〉 absenden. *saṃprahitavān* [R. ed. Bomb. 4,32,12].
+— 2〉 absenden. *saṃprahitavān* [R. ed. Bomb. 4,32,12](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,32,12).
 - **EN:** — With *saṃpra*
 — 1〉 to hurl. *˚hita* hurled.
-— 2〉 to dispatch. *saṃprahitavān* [R. ed. Bomb. 4,32,12].
+— 2〉 to dispatch. *saṃprahitavān* [R. ed. Bomb. 4,32,12](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,32,12).
 
 **vi+)** — Mit *sam*
 — 1〉 absenden.
@@ -268,9 +268,9 @@
 - **RU:** — 7〉 = **2.** *hā* mit *pra* оставлять, бросать [BHĀG. P.]
   <sub>attested</sub>
 
-**PW-pra-8)** — 8〉 *prajidhyati* und *prajighyatu* [AIT. BR. 8,28] wohl fehlerhaft für *prajigāti* und *prajigātu*.
+**PW-pra-8)** — 8〉 *prajidhyati* und *prajighyatu* [AIT. BR. 8,28](https://sanskrit-lexicon-scans.github.io/aitbr/app1?8,28) wohl fehlerhaft für *prajigāti* und *prajigātu*.
 
-- **RU:** — 8〉 *prajidhyati* und *prajighyatu* [AIT. BR. 8,28] вероятно ошибочно вместо *prajigāti* und *prajigātu*.
+- **RU:** — 8〉 *prajidhyati* und *prajighyatu* [AIT. BR. 8,28](https://sanskrit-lexicon-scans.github.io/aitbr/app1?8,28) вероятно ошибочно вместо *prajigāti* und *prajigātu*.
   <sub>attested</sub>
 
 **PW-pra-9)** — 9〉 *prahita*
@@ -343,9 +343,9 @@
 - **RU:** — 1〉 метать. *˚hita* брошенный.
   <sub>attested</sub>
 
-**PW-sam-2)** — 2〉 absenden. *saṃprahitavān* [R. ed. Bomb. 4,32,12].
+**PW-sam-2)** — 2〉 absenden. *saṃprahitavān* [R. ed. Bomb. 4,32,12](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,32,12).
 
-- **RU:** — 2〉 отправлять. *saṃprahitavān* [R. ed. Bomb. 4,32,12].
+- **RU:** — 2〉 отправлять. *saṃprahitavān* [R. ed. Bomb. 4,32,12](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,32,12).
   <sub>attested</sub>
 
 **PW-mit-su)** — Mit *sam*

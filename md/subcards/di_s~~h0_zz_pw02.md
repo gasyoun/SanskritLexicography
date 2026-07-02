@@ -45,8 +45,8 @@
 **2)** — Mit *samā* III. 3.
 - **EN:** — With *samā* III. 3.
 
-**3)** — Mit *ud* auch abweisen [R. ed. Bomb. 3,46,35].
-- **EN:** — With *ud* also to turn away, repel [R. ed. Bomb. 3,46,35].
+**3)** — Mit *ud* auch abweisen [R. ed. Bomb. 3,46,35](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,46,35).
+- **EN:** — With *ud* also to turn away, repel [R. ed. Bomb. 3,46,35](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,46,35).
 
 **4)** — Mit *sam* III. Abschied nehmen von (Acc.) [DIVYĀVAD. 446,25].
 - **EN:** — With *sam* III. to take leave of (Acc.) [DIVYĀVAD. 446,25].

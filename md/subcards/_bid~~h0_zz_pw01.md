@@ -3,7 +3,7 @@
 `_bid~~h0_zz_pw01`
 
 
-**header)** **2.** *bhid*¦
+**2.** *bhid*¦
 
 - **RU:** **2.** *bhid*¦
   <sub>attested</sub>
@@ -28,9 +28,9 @@
 - **RU:** 2〉 _f._
   <sub>attested</sub>
 
-**2a)** — a〉 Wand [ṚV. 1,174,8]. Vgl. *bhitti*.
+**2a)** — a〉 Wand [ṚV. 1,174,8](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.174.html#rv01.174.08). Vgl. *bhitti*.
 
-- **RU:** a〉 стена [ṚV. 1,174,8]. Vgl. *bhitti*.
+- **RU:** a〉 стена [ṚV. 1,174,8](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.174.html#rv01.174.08). Vgl. *bhitti*.
   <sub>attested</sub>
 
 **2b)** — b〉 Spaltung, Scheidung.

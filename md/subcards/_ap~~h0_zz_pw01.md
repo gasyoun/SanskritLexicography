@@ -129,16 +129,16 @@
 - **EN:** — 4) enclosed in something else, — contained [BHĀṢĀP. 67].
   <sub>DCS 2328 · attested</sub>
 
-**vyā-ppp5)** — 5〉 wohlhabend [AIT. BR. 4,4].
+**vyā-ppp5)** — 5〉 wohlhabend [AIT. BR. 4,4](https://sanskrit-lexicon-scans.github.io/aitbr/app1?4,4).
 
-- **RU:** — 5〉 зажиточный, состоятельный [AIT. BR. 4,4].
-- **EN:** — 5) wealthy [AIT. BR. 4,4].
+- **RU:** — 5〉 зажиточный, состоятельный [AIT. BR. 4,4](https://sanskrit-lexicon-scans.github.io/aitbr/app1?4,4).
+- **EN:** — 5) wealthy [AIT. BR. 4,4](https://sanskrit-lexicon-scans.github.io/aitbr/app1?4,4).
   <sub>DCS 2328 · attested</sub>
 
-**vyā-pass)** — Caus. Partic. *vyāpita* durchdrungen, erfüllt [Spr. 1402].
+**vyā-pass)** — Caus. Partic. *vyāpita* durchdrungen, erfüllt [Spr. 1402](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1402).
 
-- **RU:** — Caus. Partic. *vyāpita* пронизанный, наполненный [Spr. 1402].
-- **EN:** — Caus. Partic. *vyāpita* pervaded, filled [Spr. 1402].
+- **RU:** — Caus. Partic. *vyāpita* пронизанный, наполненный [Spr. 1402](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1402).
+- **EN:** — Caus. Partic. *vyāpita* pervaded, filled [Spr. 1402](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1402).
   <sub>DCS 2328 · attested</sub>
 
 **samanu)** — Mit *abhivi* Absol. *˚vyāpya* bis — (Acc.) inclusive.
@@ -165,10 +165,10 @@
 - **EN:** — 3) to reach up to.
   <sub>DCS 2328 · attested</sub>
 
-**samā-ppp)** — Partic. *samāpta* vollendet, beendigt, zum Abschluss gelangt. — *samāptaḥ* [MBH. 14,2561] fehlerhaft für *mamāptaḥ*.
+**samā-ppp)** — Partic. *samāpta* vollendet, beendigt, zum Abschluss gelangt. — *samāptaḥ* [MBH. 14,2561](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2561) fehlerhaft für *mamāptaḥ*.
 
-- **RU:** — Partic. *samāpta* завершённый, оконченный, доведённый до конца. — *samāptaḥ* [MBH. 14,2561] fehlerhaft für *mamāptaḥ*.
-- **EN:** — Partic. *samāpta* completed, finished, brought to a conclusion. — *samāptaḥ* [MBH. 14,2561] erroneous for *mamāptaḥ*.
+- **RU:** — Partic. *samāpta* завершённый, оконченный, доведённый до конца. — *samāptaḥ* [MBH. 14,2561](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2561) fehlerhaft für *mamāptaḥ*.
+- **EN:** — Partic. *samāpta* completed, finished, brought to a conclusion. — *samāptaḥ* [MBH. 14,2561](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2561) erroneous for *mamāptaḥ*.
   <sub>DCS 2328 · attested</sub>
 
 **samā-caus-intro)** — Caus.
@@ -228,13 +228,13 @@
 **sampra-ppp-intro)** — Partic. *parisamāpta*
 - **EN:** — Partic. *parisamāpta*
 
-**sampra-ppp1)** — 1〉 vollständig beendigt [MBH. 1,223,60].
-- **EN:** — 1) fully finished [MBH. 1,223,60].
+**sampra-ppp1)** — 1〉 vollständig beendigt [MBH. 1,223,60](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?1,223,60).
+- **EN:** — 1) fully finished [MBH. 1,223,60](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?1,223,60).
 
-**sampra-ppp2)** — 2〉 vollendet, so v. a. auf dem Höhepunkt stehend [ŚĀK. 105].
+**sampra-ppp2)** — 2〉 vollendet, so v. a. auf dem Höhepunkt stehend [ŚĀK. 105](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?105).
 
-- **RU:** — 2〉 совершенный, завершённый, так v. a. достигший высшей точки [ŚĀK. 105].
-- **EN:** — 2) completed, so v. a. standing at the high point [ŚĀK. 105].
+- **RU:** — 2〉 совершенный, завершённый, так v. a. достигший высшей точки [ŚĀK. 105](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?105).
+- **EN:** — 2) completed, so v. a. standing at the high point [ŚĀK. 105](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?105).
   <sub>DCS 2328 · attested</sub>
 
 **sampra-caus)** — Caus. vollenden [JĀBĀLOP. S. 444].
@@ -307,8 +307,8 @@
   <sub>DCS 2328 · attested</sub>
 
 **ppp_T61_1)** — Partic. *parisamāpta*
-— 1〉 vollständig beendigt [MBH. 1,223,60].
+— 1〉 vollständig beendigt [MBH. 1,223,60](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?1,223,60).
 
 - **RU:** — Partic. *parisamāpta*
-— 1〉 полностью завершённый [MBH. 1,223,60].
+— 1〉 полностью завершённый [MBH. 1,223,60](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?1,223,60).
   <sub>DCS 2328 · attested</sub>

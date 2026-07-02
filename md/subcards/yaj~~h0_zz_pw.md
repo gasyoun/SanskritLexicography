@@ -10,14 +10,14 @@
 — 1〉 почитать, чтить бога, воздавать ему честь, также с молитвой и приношением, отсюда освящать, жертвовать. В древнем языке как правило Act., когда действует Agni или иной посредник, и Med., когда человек почитает и приносит для себя; позднее Act. об обрядовом жреце, Med. об устроителе жертвоприношения. Исключения, однако, часты.
   <sub>attested</sub>
 
-**1a)** — a〉 mit Acc. des Gottes, Dat. der Person oder des Zweckes, für welchen, und, Instr. der Sache (auch partitivem Gen.) oder des Werkzeuges, womit die Handlung vollzogen wird. *iṣṭa* derjenige, welchem geopfert worden ist. Auch impers. mit Instr. der Person, die das Opfer darbringt, und Instr. des dargebrachten Opfers [YĀJÑ. 1,358].
+**1a)** — a〉 mit Acc. des Gottes, Dat. der Person oder des Zweckes, für welchen, und, Instr. der Sache (auch partitivem Gen.) oder des Werkzeuges, womit die Handlung vollzogen wird. *iṣṭa* derjenige, welchem geopfert worden ist. Auch impers. mit Instr. der Person, die das Opfer darbringt, und Instr. des dargebrachten Opfers [YĀJÑ. 1,358](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?1,358).
 
-- **RU:** — a〉 с Acc. бога, Dat. лица или цели, ради которой, и Instr. предмета (также партитивным Gen.) или орудия, которым совершается действие. *iṣṭa* тот, кому была принесена жертва. Также impers. с Instr. лица, приносящего жертву, и Instr. принесённой жертвы [YĀJÑ. 1,358].
+- **RU:** — a〉 с Acc. бога, Dat. лица или цели, ради которой, и Instr. предмета (также партитивным Gen.) или орудия, которым совершается действие. *iṣṭa* тот, кому была принесена жертва. Также impers. с Instr. лица, приносящего жертву, и Instr. принесённой жертвы [YĀJÑ. 1,358](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?1,358).
   <sub>attested</sub>
 
-**1b)** — b〉 mit Acc. des Opfers, Liedes u. s. w., worin sich die Cultushandlung vollzieht. Opfern und zugleich darbringen, hingeben, schenken [MBH. 13,31,10]. *iṣṭa* geopfert, dargebracht.
+**1b)** — b〉 mit Acc. des Opfers, Liedes u. s. w., worin sich die Cultushandlung vollzieht. Opfern und zugleich darbringen, hingeben, schenken [MBH. 13,31,10](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?13,31,10). *iṣṭa* geopfert, dargebracht.
 
-- **RU:** — b〉 с Acc. жертвы, песнопения u. s. w., в которых совершается культовое действие. Жертвовать и одновременно подносить, отдавать, дарить [MBH. 13,31,10]. *iṣṭa* принесённый в жертву, поднесённый.
+- **RU:** — b〉 с Acc. жертвы, песнопения u. s. w., в которых совершается культовое действие. Жертвовать и одновременно подносить, отдавать, дарить [MBH. 13,31,10](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?13,31,10). *iṣṭa* принесённый в жертву, поднесённый.
   <sub>attested</sub>
 
 **1c)** — c〉 mit Dat., Loc. oder Acc. mit *prati* der Person und Acc. der Sache.
@@ -69,9 +69,9 @@
 — 1〉 совершать Anuyāja [ĀPAST. ŚR. 8,3,10].
   <sub>attested</sub>
 
-**pref-apa-2)** — 2〉 nachher verehren durch (Instr.). — [PAÑCAR. 3,7,17] ist *tadanu* *ya˚* zu trennen.
+**pref-apa-2)** — 2〉 nachher verehren durch (Instr.). — [PAÑCAR. 3,7,17](https://sanskrit-lexicon-scans.github.io/pancar/app1?3,7,17) ist *tadanu* *ya˚* zu trennen.
 
-- **RU:** — 2〉 затем чтить посредством (Instr.). — [PAÑCAR. 3,7,17] следует отделять от *tadanu* *ya˚*.
+- **RU:** — 2〉 затем чтить посредством (Instr.). — [PAÑCAR. 3,7,17](https://sanskrit-lexicon-scans.github.io/pancar/app1?3,7,17) следует отделять от *tadanu* *ya˚*.
   <sub>attested</sub>
 
 **pref-ava)** — Mit *apa* mit einem Opfer vertreiben, wegopfern; Med. durch ein Opfer abkaufen [MANTRABR. 1,2,5].

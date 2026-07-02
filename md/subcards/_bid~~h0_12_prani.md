@@ -4,10 +4,10 @@
 
 
 **1)** — *prani* und *praṇi, ˚bhinatti*
-[P. 8,4,18], Sch.
+[P. 8,4,18](https://ashtadhyayi.com/sutraani/8/4/18), Sch.
 
 - **RU:** — *prani* и *praṇi, ˚bhinatti*
-[P. 8,4,18], Sch.
+[P. 8,4,18](https://ashtadhyayi.com/sutraani/8/4/18), Sch.
 - **EN:** — *prani* and *praṇi, ˚bhinatti*
-[P. 8,4,18], Sch.
+[P. 8,4,18](https://ashtadhyayi.com/sutraani/8/4/18), Sch.
   <sub>attested</sub>

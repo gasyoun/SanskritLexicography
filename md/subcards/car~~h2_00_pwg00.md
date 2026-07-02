@@ -5,26 +5,26 @@
 
 **5)** *car*¦
  5) *parakīyāṃ carati rāsabhe drākṣām* fressen
-[Spr. (II) 5281.]
+[Spr. (II) 5281.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5281)
 
 - **RU:** *car*¦
  5) *parakīyāṃ carati rāsabhe drākṣām* пожирать
-[Spr. (II) 5281.]
+[Spr. (II) 5281.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5281)
 - **EN:** *car*¦
  5) *parakīyāṃ carati rāsabhe drākṣām* "to graze, to feed (of animals)"
-[Spr. (II) 5281.]
+[Spr. (II) 5281.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5281)
   <sub>DCS 4031 · attested</sub>
 
 **6)** — *ā*
  6) mit infin.
-[Spr. (II) 7177.]
+[Spr. (II) 7177.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?7177)
 
 - **RU:** — *ā*
  6) с infin.
-[Spr. (II) 7177.]
+[Spr. (II) 7177.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?7177)
 - **EN:** — *ā*
  6) with infin.
-[Spr. (II) 7177.]
+[Spr. (II) 7177.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?7177)
   <sub>DCS 4031 · attested</sub>
 
 **6b)** — *ud* caus.
