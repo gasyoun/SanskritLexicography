@@ -14,10 +14,12 @@ Quality parity: reuses the FULL production CONV+TR prompt (all HARD RULES, NWS o
 map, Nachträge, microstructure) with a MASKED/BATCHED preamble that overrides only the
 input-format + markup-verbatim specifics ("keep {Tn} verbatim" instead of "{#..#}/<ls>").
 
-Usage:  python src/pilot/gen_opt_harness2.py <root> [--keys=k1,k2] [--budget=12000] [--out=PATH]
-        [--selfheal [--selfheal-budget=12]]   # budget = citation-weighted units (1+<ls>) per heal call
-        [--binary-split]                      # bisect a failing batch instead of flat-retrying it
-        [--output-budget=N]                   # size batches by citation-weighted output, not input bytes
+Usage:  python src/pilot/gen_opt_harness2.py <root> [--keys=k1,k2] [--budget=N] [--out=PATH]
+        [--no-selfheal] [--selfheal-budget=12]  # selfheal ON by default (MG 2026-07-02)
+        [--no-binary-split]                     # binary-split ON by default (MG 2026-07-02)
+        [--output-budget=N|off]                 # citation-weighted batching, DEFAULT 60;
+                                                # 'off' or an explicit --budget=N = byte mode
+        (--selfheal / --binary-split still accepted as no-ops for documented runbooks)
 Writes: src/pilot/run_pilot_wf.opt2.js  (or --out=PATH — use a per-root/per-chat path to
         avoid the gen->copy race when several chats generate harnesses concurrently)
 """
@@ -38,9 +40,11 @@ from safe_filename import safe_name
 from whitney_grammar import grammar_for
 from nominal_grammar import nominal_grammar_for
 
-SELFHEAL = False   # --selfheal: on a card the batch can't translate, auto-split it in-harness
+SELFHEAL = True    # DEFAULT ON since 2026-07-02 (MG decision after the S10 live validation —
+                   #  4/4 vas keys recovered, ji 8->48 senses; ARCHITECTURE_AUDIT_2026-07-02.md).
+                   #  On a card the batch can't translate, auto-split it in-harness
                    #  (deterministic split precomputed here) and translate the fragments, then
-                   #  stitch back — no manual requeue. Default OFF so existing runs are unchanged.
+                   #  stitch back — no manual requeue. --no-selfheal restores the old behavior.
 SELFHEAL_GROUP_BUDGET = 12   # --selfheal-budget=N: fragments are grouped (in document order) into
                    #  this many "citation-weighted units" (1 + <ls> count) per heal agent() call —
                    #  citation count, NOT byte size, drives StructuredOutput complexity, and masking
@@ -51,19 +55,21 @@ SELFHEAL_GROUP_BUDGET = 12   # --selfheal-budget=N: fragments are grouped (in do
                    #  light (low-<ls>) fragments share one call, cutting a 13-fragment card to a
                    #  handful of calls instead of 13, without recombining the dense units that
                    #  caused the original failure.
-BINARY_SPLIT = False   # --binary-split: when a whole batch call fails/comes back malformed (not
-                   #  just individual cards inside it), bisect the still-pending cards into two
-                   #  halves and retry each half recursively (own 2-attempt budget each) instead
-                   #  of re-submitting the identical full batch — isolates a single poison card
-                   #  without re-billing the cards around it. Bottoms out at single cards, which
-                   #  fall through to --selfheal as before. Gated: default OFF, behavior-identical
-                   #  to the pre-existing retry loop when off.
-OUTPUT_BUDGET = None   # --output-budget=N: size the main batches by estimated OUTPUT complexity
-                   #  (citation-weighted units, 1 + <ls> count per card — same metric as
-                   #  --selfheal-budget) instead of INPUT bytes (skeleton+portrait). Input bytes
-                   #  don't predict StructuredOutput failure (TOKEN_LEVER_FINDING_2026-06-30: the
-                   #  portrait-slim byte lever was a non-lever); citation density does. None =
-                   #  unchanged byte-budget behavior.
+BINARY_SPLIT = True   # DEFAULT ON since 2026-07-02 (MG decision): when a whole batch call
+                   #  fails/comes back malformed (not just individual cards inside it), bisect
+                   #  the still-pending cards into two halves and retry each half recursively
+                   #  (own 2-attempt budget each) instead of re-submitting the identical full
+                   #  batch — isolates a single poison card without re-billing the cards around
+                   #  it. Bottoms out at single cards, which fall through to selfheal as before.
+                   #  --no-binary-split restores the flat-retry loop.
+OUTPUT_BUDGET = 60 # DEFAULT 60 citation-weighted units since 2026-07-02 (the S10-validated
+                   #  value): size the main batches by estimated OUTPUT complexity (1 + <ls>
+                   #  count per card — same metric as --selfheal-budget) instead of INPUT bytes
+                   #  (skeleton+portrait). Input bytes don't predict StructuredOutput failure
+                   #  (TOKEN_LEVER_FINDING_2026-06-30: the portrait-slim byte lever was a
+                   #  non-lever); citation density does. Byte mode is still reachable: an
+                   #  EXPLICIT --budget=N (without --output-budget) or --output-budget=off —
+                   #  keeps documented byte-budget invocations (e.g. FU1 --budget=6000) exact.
 
 
 def grammar_text(root):
@@ -144,12 +150,14 @@ def parse_args(argv):
     keylist = None                     # ordered keys (nominal mode preserves order)
     out_path = None                    # --out=PATH overrides the default opt2.js (avoids the
     lang, mw_tm = 'ru', None           # --lang en + --mw-tm=PATH: PWG->English pilot (MG 2026-06-30)
+    budget_explicit = output_explicit = False
     for a in argv[1:]:                 # gen->copy race when several chats generate at once)
         if a.startswith('--keys='):
             keylist = [k for k in a.split('=', 1)[1].split(',') if k]
             keyfilter = set(keylist)
         elif a.startswith('--budget='):
             budget = int(a.split('=', 1)[1])
+            budget_explicit = True
         elif a.startswith('--out='):
             out_path = a.split('=', 1)[1]
         elif a.startswith('--lang='):
@@ -165,13 +173,25 @@ def parse_args(argv):
         elif a == '--no-grammar':
             grammar_on = False
         elif a == '--selfheal':
-            globals()['SELFHEAL'] = True     # gated: default OFF -> existing runs unchanged
+            globals()['SELFHEAL'] = True     # default since 2026-07-02; kept for documented runbooks
+        elif a == '--no-selfheal':
+            globals()['SELFHEAL'] = False
         elif a.startswith('--selfheal-budget='):
             globals()['SELFHEAL_GROUP_BUDGET'] = int(a.split('=', 1)[1])
         elif a == '--binary-split':
-            globals()['BINARY_SPLIT'] = True
+            globals()['BINARY_SPLIT'] = True # default since 2026-07-02; kept for documented runbooks
+        elif a == '--no-binary-split':
+            globals()['BINARY_SPLIT'] = False
         elif a.startswith('--output-budget='):
-            globals()['OUTPUT_BUDGET'] = int(a.split('=', 1)[1])
+            v = a.split('=', 1)[1].strip().lower()
+            globals()['OUTPUT_BUDGET'] = None if v in ('off', '0', 'none') else int(v)
+            output_explicit = True
+    if budget_explicit and not output_explicit:
+        # An explicit --budget=N with no --output-budget means the caller wants BYTE-mode
+        # batching (backward compat: every pre-2026-07-02 documented invocation that tuned
+        # --budget did so under byte semantics — silently reinterpreting it would change
+        # every runbook's batch shape).
+        globals()['OUTPUT_BUDGET'] = None
     if lang not in ('ru', 'en'):
         die('unknown --lang %r (ru|en)' % lang)
     if lang == 'en' and mw_tm is None:
@@ -436,15 +456,31 @@ def build(root, keys, rootmap, budget, lean=False, nws_gate=False,
                         for g in groups]
             phf[k] = [[it['ph'] for it in g] for g in groups]
 
-    # --output-budget=N: size batches by citation-weighted OUTPUT complexity (1 + <ls> per
-    # card) instead of input bytes — bytes don't predict StructuredOutput failure (a dense
-    # card's masked bytes can be small while its sense/citation count is what blows the
-    # retry cap). None (default) keeps the original input-byte budget, byte-identical output.
+    # Pre-split router (MG decision 2026-07-02): a card whose citation-weighted output
+    # complexity (1 + <ls>) alone exceeds the WHOLE per-batch output budget is near-certain
+    # to blow the StructuredOutput retry cap as a whole card (observed: the 125-<ls> pwg00
+    # heads failed even solo — HANDOFF_2026-07-01_pwg_en_fu1_finalize.md), and every one of
+    # those up-to-5 retries is paid-for waste. Route such cards STRAIGHT to the proven
+    # selfheal fragment path at run time instead of letting them fail first. Only cards with
+    # a usable fragment fallback are routed; unsplittable ones keep the old solo-batch try.
+    presplit = []
+    if SELFHEAL and OUTPUT_BUDGET is not None:
+        presplit = [k for k in keys if (1 + inputs[k]['ls']) > OUTPUT_BUDGET and k in frags]
+        for k in presplit:
+            print('  presplit: %s (%d <ls> exceeds output budget %d) -> direct fragment translation'
+                  % (k, inputs[k]['ls'], OUTPUT_BUDGET))
+    batch_keys = [k for k in keys if k not in presplit]
+
+    # --output-budget=N (default 60): size batches by citation-weighted OUTPUT complexity
+    # (1 + <ls> per card) instead of input bytes — bytes don't predict StructuredOutput
+    # failure (a dense card's masked bytes can be small while its sense/citation count is
+    # what blows the retry cap). Byte mode (explicit --budget=N / --output-budget=off)
+    # keeps the original input-byte behavior.
     if OUTPUT_BUDGET is not None:
-        batches = _group_by_budget(keys, lambda k: 1 + inputs[k]['ls'], OUTPUT_BUDGET)
+        batches = _group_by_budget(batch_keys, lambda k: 1 + inputs[k]['ls'], OUTPUT_BUDGET)
     else:
         batches = _group_by_budget(
-            keys, lambda k: len(inputs[k]['skeleton']) + len(inputs[k]['portrait']), budget)
+            batch_keys, lambda k: len(inputs[k]['skeleton']) + len(inputs[k]['portrait']), budget)
 
     # Grammar injection. Root mode: one shared GRAMMAR block (the root conjugation,
     # identical across sub-cards) before CONV_TR; GRAMMARS empty. Nominal mode: each
@@ -472,6 +508,7 @@ def build(root, keys, rootmap, budget, lean=False, nws_gate=False,
         'selfheal': SELFHEAL, 'selfheal_group_budget': SELFHEAL_GROUP_BUDGET if SELFHEAL else None,
         'selfheal_cards': {k: len(v) for k, v in frags.items()} if SELFHEAL else {},
         'binary_split': BINARY_SPLIT, 'output_budget': OUTPUT_BUDGET,
+        'presplit_keys': presplit,
     }
 
     js = """// AUTO-DERIVED v2 (batched + masked, canonical output) from run_pilot_wf.js - root=%(root)s.
@@ -495,6 +532,7 @@ const PH = %(phmaps)s
 const FRAGS = %(frags)s
 const PHF = %(phf)s
 const BINARY_SPLIT = %(binary_split)s
+const PRESPLIT = %(presplit)s
 const META = %(meta)s
 
 const restore = (t, ph) => (t || '').replace(/\\{T(\\d+)\\}/g, (m, n) => (ph[+n - 1] !== undefined ? ph[+n - 1] : m))
@@ -754,11 +792,27 @@ async function translateBatch(batch, bi) {
     return row
   })
 }
-const grouped = await parallel(BATCHES.map((b, i) => () => translateBatch(b, i)))
+// Pre-split lane (MG 2026-07-02): cards routed at GENERATION time straight to the fragment
+// path — their whole-card attempt is a known loss (citation load alone exceeds the whole
+// per-batch output budget; the 125-<ls> pwg00 heads failed the retry cap even solo), so
+// skipping it converts up-to-5 paid retries into zero. Same selfHeal machinery, same
+// partial-credit + missing_fragments contract; presplit:true marks the row's provenance.
+async function healOnly(k) {
+  let c = null
+  try { c = await selfHeal(k) } catch (e) { c = null; noteFail(k, 'selfheal-hard-failure: ' + (e && e.message || e)) }
+  const row = { key: k, card: c || null, judge: null, judge_sonnet: null, escalated: !!c, presplit: true }
+  if (!row.card && FAIL[k]) row.error = FAIL[k]
+  return [row]
+}
+// UNITS pairs each parallel slot with the exact keys it owes rows for, so the accounting
+// backfill below stays index-correct with the presplit lane appended after the batches.
+const UNITS = BATCHES.map((b, i) => ({ keys: b, run: () => translateBatch(b, i) }))
+  .concat(PRESPLIT.map(k => ({ keys: [k], run: () => healOnly(k) })))
+const grouped = await parallel(UNITS.map(u => u.run))
 // TOTAL ACCOUNTING INVARIANT: every selected key appears in `results` exactly once, no
 // matter what failed above. parallel() resolves a thrown thunk to null — flat() would
 // carry that null into results (crashing the summary below and silently dropping the
-// batch's keys at save time). Synthesize accounted null rows for any such batch, then
+// batch's keys at save time). Synthesize accounted null rows for any such unit, then
 // backfill any key that STILL isn't present (belt over suspenders).
 const out = []
 const seen = new Set()
@@ -766,8 +820,8 @@ grouped.forEach((rows, i) => {
   if (Array.isArray(rows)) {
     for (const r of rows) if (r && r.key && !seen.has(r.key)) { out.push(r); seen.add(r.key) }
   } else {
-    log('b' + i + ': batch thunk resolved null — synthesizing accounted rows for its ' + BATCHES[i].length + ' key(s)')
-    for (const k of BATCHES[i]) if (!seen.has(k)) { out.push({ key: k, card: null, judge: null, judge_sonnet: null, escalated: false, error: FAIL[k] || 'batch-thunk-null' }); seen.add(k) }
+    log('u' + i + ': unit thunk resolved null — synthesizing accounted rows for its ' + UNITS[i].keys.length + ' key(s)')
+    for (const k of UNITS[i].keys) if (!seen.has(k)) { out.push({ key: k, card: null, judge: null, judge_sonnet: null, escalated: false, error: FAIL[k] || 'batch-thunk-null' }); seen.add(k) }
   }
 })
 for (const k of META.selected_keys) if (!seen.has(k)) { out.push({ key: k, card: null, judge: null, judge_sonnet: null, escalated: false, error: FAIL[k] || 'unaccounted-key (should be impossible — report this)' }); seen.add(k) }
@@ -781,6 +835,7 @@ const _failures = {}
 for (const r of out) if (!r.card) _failures[r.key] = r.error || FAIL[r.key] || 'unknown'
 const summary = { root: META.root, lang: META.lang, cards: out.length, ok: _ok,
                   null: out.length - _ok, healed: out.filter(r => r.escalated).length,
+                  presplit: PRESPLIT.length,
                   null_keys: out.filter(r => !r.card).map(r => r.key),
                   partial_keys: out.filter(r => r.card && r.card.partial).map(r => r.key),
                   failures: _failures }
@@ -802,7 +857,7 @@ return { meta: META, summary, results: out }
         'batches': json.dumps(batches), 'inputs': json.dumps(inputs, ensure_ascii=True),
         'phmaps': json.dumps(phmaps, ensure_ascii=True), 'meta': json.dumps(meta, ensure_ascii=True),
         'frags': json.dumps(frags, ensure_ascii=True), 'phf': json.dumps(phf, ensure_ascii=True),
-        'binary_split': json.dumps(BINARY_SPLIT),
+        'binary_split': json.dumps(BINARY_SPLIT), 'presplit': json.dumps(presplit),
     }
     for bad in ['readFileSync', 'fileURLToPath', 'import.meta']:
         if bad in js:
