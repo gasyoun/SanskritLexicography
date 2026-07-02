@@ -9,6 +9,17 @@ then **cut a new version every time the changelog is updated** (promote
 
 ## [Unreleased]
 
+## [0.0.38] - 2026-07-02
+
+### Changed — FINDINGS.md: HTML Source styling reverted to plain blockquotes
+- The v0.0.37 `<div align="right">` + `<sub>` Source styling was **rejected on review**
+  ("looks ugly, never repeat") and removed same day. Every **Source** paragraph in
+  [`FINDINGS.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md)
+  (and [`Uprava/FINDINGS.md`](https://github.com/gasyoun/Uprava/blob/main/FINDINGS.md)) is now
+  a plain blockquote `> **Source:** …` — left indent + GitHub's muted rendering, zero HTML.
+  The no-HTML-in-md rule is restored as absolute (global rule, md-hygiene skill, and memory
+  updated with the tested-and-rejected verdict). § numbering from 0.0.37 stays.
+
 ## [0.0.37] - 2026-07-02
 
 ### Changed — FINDINGS.md: § signs + right-aligned small Source lines
