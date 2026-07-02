@@ -434,10 +434,16 @@ PWG_PATTERNS = [
               'https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?$2,$3'),
     LsPattern(r'^(SĀH[.] D[.]) *([0-9]+)',
               'https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?$2'),
-    # Chrestomathie (pw only)
+    # Benfey Chrestomathie (Chr. / BENF. Chr.) -> bchrest2 page viewer (?ipage,
+    # 1-372). PWG cites "Chr. page,line" / "BENF. Chr. page,line"; the viewer
+    # keys on the printed page only (first number), matching the pw mapping.
+    LsPattern(r'^(BENF[.] Chr[.]) *([0-9]+)',
+              'https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?$2',
+              ['pwg']),
+    # Chrestomathie (pw + pwg)
     LsPattern(r'^(Chr[.]) *([0-9]+)',
               'https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?$2',
-              ['pw']),
+              ['pw', 'pwg']),
     # Dhatupatha
     LsPattern(r'^(DHĀTUP[.]) *([0-9]+)(.*)$',
               'https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=$2'),
@@ -1171,6 +1177,26 @@ def generate_href(dict_code: str, n_attribute, visible: str):
         return href_aitareya_brahmana(data1)
 
     return None
+
+
+def link_type(url):
+    """Classify a resolved citation URL by target kind:
+
+      'scan' -> a page-image scan viewer (photographed book pages):
+                sanskrit-lexicon-scans.github.io/* and the Cologne
+                /scans/csl-westergaard Dhātupāṭha viewer.
+      'html' -> a rendered digital-text page:
+                sanskrit-lexicon.github.io/{rv,av}links hymn pages and
+                external ashtadhyayi.com Pāṇini sūtras.
+
+    Returns None for a falsy/unknown URL."""
+    if not url:
+        return None
+    if 'sanskrit-lexicon-scans.github.io' in url or '/scans/' in url:
+        return 'scan'
+    if 'sanskrit-lexicon.github.io' in url or 'ashtadhyayi.com' in url:
+        return 'html'
+    return 'html'
 
 
 # ---------------------------------------------------------------------------

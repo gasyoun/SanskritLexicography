@@ -1,13 +1,17 @@
 {
  "total_distinct_refs": 37951,
- "resolved": 32313,
- "coverage_pct": 85.1,
+ "resolved": 32786,
+ "resolved_scan": 27434,
+ "resolved_html": 5352,
+ "coverage_pct": 86.4,
  "distinct_abbreviations": 699,
  "abbreviations": [
   {
    "abbr": "MBH.",
    "total": 5518,
    "resolved": 5516,
+   "scan": 5516,
+   "html": 0,
    "repos": [
     "mbhbomb",
     "mbhcalc"
@@ -19,6 +23,8 @@
    "abbr": "ṚV.",
    "total": 3507,
    "resolved": 3506,
+   "scan": 0,
+   "html": 3506,
    "repos": [
     "rvlinks"
    ],
@@ -29,6 +35,8 @@
    "abbr": "R.",
    "total": 3156,
    "resolved": 3155,
+   "scan": 3155,
+   "html": 0,
    "repos": [
     "ramayanabom",
     "ramayanagorr",
@@ -41,6 +49,8 @@
    "abbr": "BHĀG. P.",
    "total": 2099,
    "resolved": 2098,
+   "scan": 2098,
+   "html": 0,
    "repos": [
     "bhagp_bom",
     "bhagp_bur"
@@ -52,6 +62,8 @@
    "abbr": "ŚAT. BR.",
    "total": 1660,
    "resolved": 1659,
+   "scan": 1659,
+   "html": 0,
    "repos": [
     "shatapathabr"
    ],
@@ -62,6 +74,8 @@
    "abbr": "M.",
    "total": 1619,
    "resolved": 1618,
+   "scan": 1618,
+   "html": 0,
    "repos": [
     "manu"
    ],
@@ -72,6 +86,8 @@
    "abbr": "KATHĀS.",
    "total": 1475,
    "resolved": 1475,
+   "scan": 1475,
+   "html": 0,
    "repos": [
     "kss"
    ],
@@ -82,6 +98,8 @@
    "abbr": "AV.",
    "total": 1096,
    "resolved": 1095,
+   "scan": 0,
+   "html": 1095,
    "repos": [
     "avlinks"
    ],
@@ -92,6 +110,8 @@
    "abbr": "Spr.",
    "total": 1025,
    "resolved": 1024,
+   "scan": 1024,
+   "html": 0,
    "repos": [
     "boesp1",
     "boesp2"
@@ -103,6 +123,8 @@
    "abbr": "HARIV.",
    "total": 908,
    "resolved": 907,
+   "scan": 907,
+   "html": 0,
    "repos": [
     "hariv"
    ],
@@ -113,6 +135,8 @@
    "abbr": "P.",
    "total": 752,
    "resolved": 751,
+   "scan": 0,
+   "html": 751,
    "repos": [
     "ashtadhyayi.com"
    ],
@@ -123,6 +147,8 @@
    "abbr": "R. GORR.",
    "total": 645,
    "resolved": 645,
+   "scan": 645,
+   "html": 0,
    "repos": [
     "ramayanagorr"
    ],
@@ -133,6 +159,8 @@
    "abbr": "RAGH.",
    "total": 626,
    "resolved": 626,
+   "scan": 626,
+   "html": 0,
    "repos": [
     "raghuvamsa"
    ],
@@ -143,6 +171,8 @@
    "abbr": "RĀJA-TAR.",
    "total": 579,
    "resolved": 579,
+   "scan": 579,
+   "html": 0,
    "repos": [
     "rajatar",
     "rajatarcalc"
@@ -154,6 +184,8 @@
    "abbr": "VARĀH. BṚH. S.",
    "total": 549,
    "resolved": 528,
+   "scan": 528,
+   "html": 0,
    "repos": [
     "brihatsam"
    ],
@@ -164,6 +196,8 @@
    "abbr": "PAÑCAT.",
    "total": 530,
    "resolved": 529,
+   "scan": 529,
+   "html": 0,
    "repos": [
     "pantankose"
    ],
@@ -174,6 +208,8 @@
    "abbr": "Spr. (II)",
    "total": 465,
    "resolved": 465,
+   "scan": 465,
+   "html": 0,
    "repos": [
     "boesp2"
    ],
@@ -184,6 +220,8 @@
    "abbr": "ŚĀK.",
    "total": 459,
    "resolved": 458,
+   "scan": 458,
+   "html": 0,
    "repos": [
     "shakuntala"
    ],
@@ -194,6 +232,8 @@
    "abbr": "BHAṬṬ.",
    "total": 388,
    "resolved": 387,
+   "scan": 387,
+   "html": 0,
    "repos": [
     "bhattikavya"
    ],
@@ -204,6 +244,8 @@
    "abbr": "TS.",
    "total": 370,
    "resolved": 369,
+   "scan": 369,
+   "html": 0,
    "repos": [
     "taittiriyas"
    ],
@@ -214,6 +256,8 @@
    "abbr": "MĀRK. P.",
    "total": 360,
    "resolved": 360,
+   "scan": 360,
+   "html": 0,
    "repos": [
     "markandeyapurana"
    ],
@@ -223,15 +267,21 @@
   {
    "abbr": "Chr.",
    "total": 353,
-   "resolved": 0,
-   "repos": [],
-   "sample_ref": null,
-   "sample_url": null
+   "resolved": 353,
+   "scan": 353,
+   "html": 0,
+   "repos": [
+    "bchrest2"
+   ],
+   "sample_ref": "Chr.197,4",
+   "sample_url": "https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?197"
   },
   {
    "abbr": "KĀTY. ŚR.",
    "total": 320,
    "resolved": 320,
+   "scan": 320,
+   "html": 0,
    "repos": [
     "katyasr"
    ],
@@ -242,6 +292,8 @@
    "abbr": "VOP.",
    "total": 280,
    "resolved": 277,
+   "scan": 277,
+   "html": 0,
    "repos": [
     "mugdhabodha"
    ],
@@ -252,6 +304,8 @@
    "abbr": "SUŚR.",
    "total": 270,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -260,6 +314,8 @@
    "abbr": "AIT. BR.",
    "total": 262,
    "resolved": 261,
+   "scan": 261,
+   "html": 0,
    "repos": [
     "aitbr",
     "aitbr_auf"
@@ -271,6 +327,8 @@
    "abbr": "VS.",
    "total": 249,
    "resolved": 248,
+   "scan": 248,
+   "html": 0,
    "repos": [
     "vajasasa"
    ],
@@ -281,6 +339,8 @@
    "abbr": "HIT.",
    "total": 235,
    "resolved": 234,
+   "scan": 234,
+   "html": 0,
    "repos": [
     "hitopadesha"
    ],
@@ -291,6 +351,8 @@
    "abbr": "YĀJÑ.",
    "total": 232,
    "resolved": 232,
+   "scan": 232,
+   "html": 0,
    "repos": [
     "yajnavalkya"
    ],
@@ -301,6 +363,8 @@
    "abbr": "N.",
    "total": 228,
    "resolved": 228,
+   "scan": 228,
+   "html": 0,
    "repos": [
     "bchrest1"
    ],
@@ -311,6 +375,8 @@
    "abbr": "TBR.",
    "total": 216,
    "resolved": 214,
+   "scan": 214,
+   "html": 0,
    "repos": [
     "taittiriyabr"
    ],
@@ -321,6 +387,8 @@
    "abbr": "BHAG.",
    "total": 206,
    "resolved": 205,
+   "scan": 205,
+   "html": 0,
    "repos": [
     "bhagavadgita"
    ],
@@ -331,6 +399,8 @@
    "abbr": "VID.",
    "total": 177,
    "resolved": 177,
+   "scan": 177,
+   "html": 0,
    "repos": [
     "bchrest1"
    ],
@@ -341,6 +411,8 @@
    "abbr": "CHĀND. UP.",
    "total": 169,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -349,6 +421,8 @@
    "abbr": "PRAB.",
    "total": 164,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -357,6 +431,8 @@
    "abbr": "H.",
    "total": 150,
    "resolved": 149,
+   "scan": 149,
+   "html": 0,
    "repos": [
     "abch2"
    ],
@@ -367,6 +443,8 @@
    "abbr": "AK.",
    "total": 147,
    "resolved": 146,
+   "scan": 146,
+   "html": 0,
    "repos": [
     "amara_dlc"
    ],
@@ -377,6 +455,8 @@
    "abbr": "MṚCCH.",
    "total": 146,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -385,6 +465,8 @@
    "abbr": "KUMĀRAS.",
    "total": 142,
    "resolved": 142,
+   "scan": 142,
+   "html": 0,
    "repos": [
     "kumaras"
    ],
@@ -395,6 +477,8 @@
    "abbr": "GORR.",
    "total": 134,
    "resolved": 133,
+   "scan": 133,
+   "html": 0,
    "repos": [
     "ramayanagorr"
    ],
@@ -405,6 +489,8 @@
    "abbr": "Verz. d. Oxf. H.",
    "total": 130,
    "resolved": 128,
+   "scan": 128,
+   "html": 0,
    "repos": [
     "Oxf_Cat_Aufrecht"
    ],
@@ -415,6 +501,8 @@
    "abbr": "ŚĀṄKH. ŚR.",
    "total": 129,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -423,6 +511,8 @@
    "abbr": "KĀM. NĪTIS.",
    "total": 128,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -430,15 +520,21 @@
   {
    "abbr": "BENF. Chr.",
    "total": 120,
-   "resolved": 0,
-   "repos": [],
-   "sample_ref": null,
-   "sample_url": null
+   "resolved": 120,
+   "scan": 120,
+   "html": 0,
+   "repos": [
+    "bchrest2"
+   ],
+   "sample_ref": "BENF. Chr. 185,10.",
+   "sample_url": "https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?185"
   },
   {
    "abbr": "LĀṬY.",
    "total": 119,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -447,6 +543,8 @@
    "abbr": "MEGH.",
    "total": 119,
    "resolved": 119,
+   "scan": 119,
+   "html": 0,
    "repos": [
     "meghasrnga"
    ],
@@ -457,6 +555,8 @@
    "abbr": "DHĀTUP.",
    "total": 113,
    "resolved": 112,
+   "scan": 112,
+   "html": 0,
    "repos": [
     "www.sanskrit-lexicon.uni-koeln.de"
    ],
@@ -467,6 +567,8 @@
    "abbr": "SĀH. D.",
    "total": 108,
    "resolved": 108,
+   "scan": 108,
+   "html": 0,
    "repos": [
     "sahityadarpana"
    ],
@@ -477,6 +579,8 @@
    "abbr": "KAUŚ.",
    "total": 107,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -485,6 +589,8 @@
    "abbr": "SARVADARŚANAS.",
    "total": 107,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -493,6 +599,8 @@
    "abbr": "VIKR.",
    "total": 102,
    "resolved": 102,
+   "scan": 102,
+   "html": 0,
    "repos": [
     "vikramor"
    ],
@@ -503,6 +611,8 @@
    "abbr": "ĀŚV. GṚHY.",
    "total": 101,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -511,6 +621,8 @@
    "abbr": "Ind. St.",
    "total": 93,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -519,6 +631,8 @@
    "abbr": "PAÑCAV. BR.",
    "total": 89,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -527,6 +641,8 @@
    "abbr": "MĀLAV.",
    "total": 86,
    "resolved": 86,
+   "scan": 86,
+   "html": 0,
    "repos": [
     "malavikagni"
    ],
@@ -537,6 +653,8 @@
    "abbr": "ŚIŚ.",
    "total": 83,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -545,6 +663,8 @@
    "abbr": "DAŚAK.",
    "total": 77,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -553,6 +673,8 @@
    "abbr": "PAÑCAR.",
    "total": 72,
    "resolved": 72,
+   "scan": 72,
+   "html": 0,
    "repos": [
     "pancar"
    ],
@@ -563,6 +685,8 @@
    "abbr": "TRIK.",
    "total": 69,
    "resolved": 68,
+   "scan": 68,
+   "html": 0,
    "repos": [
     "medini"
    ],
@@ -573,6 +697,8 @@
    "abbr": "ṚV. PRĀT.",
    "total": 69,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -581,6 +707,8 @@
    "abbr": "BHARTṚ.",
    "total": 68,
    "resolved": 67,
+   "scan": 67,
+   "html": 0,
    "repos": [
     "bhartrhari"
    ],
@@ -591,6 +719,8 @@
    "abbr": "NIR.",
    "total": 68,
    "resolved": 67,
+   "scan": 67,
+   "html": 0,
    "repos": [
     "nirukta"
    ],
@@ -601,6 +731,8 @@
    "abbr": "ĀŚV. ŚR.",
    "total": 68,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -609,6 +741,8 @@
    "abbr": "GOBH.",
    "total": 65,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -617,6 +751,8 @@
    "abbr": "ĀPAST.",
    "total": 59,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -625,6 +761,8 @@
    "abbr": "KĀṬH.",
    "total": 58,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -633,6 +771,8 @@
    "abbr": "ṚT.",
    "total": 58,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -641,6 +781,8 @@
    "abbr": "HIT. I,",
    "total": 54,
    "resolved": 54,
+   "scan": 54,
+   "html": 0,
    "repos": [
     "hitopadesha"
    ],
@@ -651,6 +793,8 @@
    "abbr": "PAÑCAT. I,",
    "total": 54,
    "resolved": 54,
+   "scan": 54,
+   "html": 0,
    "repos": [
     "pantankose"
    ],
@@ -661,6 +805,8 @@
    "abbr": "R. ed. Bomb.",
    "total": 50,
    "resolved": 49,
+   "scan": 49,
+   "html": 0,
    "repos": [
     "ramayanabom"
    ],
@@ -671,6 +817,8 @@
    "abbr": "GĪT.",
    "total": 48,
    "resolved": 47,
+   "scan": 47,
+   "html": 0,
    "repos": [
     "gitagov"
    ],
@@ -681,6 +829,8 @@
    "abbr": "VET.",
    "total": 45,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -689,6 +839,8 @@
    "abbr": "H. an.",
    "total": 43,
    "resolved": 42,
+   "scan": 42,
+   "html": 0,
    "repos": [
     "anekarthasamgraha"
    ],
@@ -699,6 +851,8 @@
    "abbr": "DAŚ.",
    "total": 42,
    "resolved": 42,
+   "scan": 42,
+   "html": 0,
    "repos": [
     "bchrest1"
    ],
@@ -709,6 +863,8 @@
    "abbr": "KIR.",
    "total": 42,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -717,6 +873,8 @@
    "abbr": "ĀPAST. ŚR.",
    "total": 42,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -725,6 +883,8 @@
    "abbr": "ŚĀṄKH. BR.",
    "total": 41,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -733,6 +893,8 @@
    "abbr": "ARJ.",
    "total": 40,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -741,6 +903,8 @@
    "abbr": "VS. PRĀT.",
    "total": 40,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -749,6 +913,8 @@
    "abbr": "SŪRYAS.",
    "total": 38,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -757,6 +923,8 @@
    "abbr": "VET. in LA. (III)",
    "total": 38,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -765,6 +933,8 @@
    "abbr": "ŚĀṄKH. GṚHY.",
    "total": 38,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -773,6 +943,8 @@
    "abbr": "DHŪRTAS.",
    "total": 36,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -781,6 +953,8 @@
    "abbr": "MAITRYUP.",
    "total": 36,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -789,6 +963,8 @@
    "abbr": "BṚH. ĀR. UP. S.",
    "total": 35,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -797,6 +973,8 @@
    "abbr": "DIVYĀVAD.",
    "total": 35,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -805,6 +983,8 @@
    "abbr": "HALĀY.",
    "total": 35,
    "resolved": 32,
+   "scan": 32,
+   "html": 0,
    "repos": [
     "armh2"
    ],
@@ -815,6 +995,8 @@
    "abbr": "TS. PRĀT.",
    "total": 35,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -823,6 +1005,8 @@
    "abbr": "CARAKA.",
    "total": 34,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -831,6 +1015,8 @@
    "abbr": "MAITR. S.",
    "total": 34,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -839,6 +1025,8 @@
    "abbr": "JĀTAKAM.",
    "total": 33,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -847,6 +1035,8 @@
    "abbr": "KAṬHOP.",
    "total": 33,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -855,6 +1045,8 @@
    "abbr": "KĀD.",
    "total": 33,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -863,6 +1055,8 @@
    "abbr": "NAIṢ.",
    "total": 33,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -871,6 +1065,8 @@
    "abbr": "MED. t.",
    "total": 32,
    "resolved": 32,
+   "scan": 32,
+   "html": 0,
    "repos": [
     "medini"
    ],
@@ -881,6 +1077,8 @@
    "abbr": "SĀV.",
    "total": 31,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -889,6 +1087,8 @@
    "abbr": "BĀLAR.",
    "total": 30,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -897,6 +1097,8 @@
    "abbr": "DRAUP.",
    "total": 30,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -905,6 +1107,8 @@
    "abbr": "MUṆḌ. UP.",
    "total": 30,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -913,6 +1117,8 @@
    "abbr": "PAT. a. a. O.",
    "total": 29,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -921,6 +1127,8 @@
    "abbr": "KAP.",
    "total": 28,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -929,6 +1137,8 @@
    "abbr": "PAÑCAT. III,",
    "total": 28,
    "resolved": 28,
+   "scan": 28,
+   "html": 0,
    "repos": [
     "pantankose"
    ],
@@ -939,6 +1149,8 @@
    "abbr": "VIŚV.",
    "total": 28,
    "resolved": 28,
+   "scan": 28,
+   "html": 0,
    "repos": [
     "bchrest1"
    ],
@@ -949,6 +1161,8 @@
    "abbr": "ŚVETĀŚV. UP.",
    "total": 28,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -957,6 +1171,8 @@
    "abbr": "KAUṢ. UP.",
    "total": 25,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -965,6 +1181,8 @@
    "abbr": "PAÑCAT. ed. orn.",
    "total": 25,
    "resolved": 25,
+   "scan": 25,
+   "html": 0,
    "repos": [
     "pantankoseorn"
    ],
@@ -975,6 +1193,8 @@
    "abbr": "Sp.",
    "total": 25,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -983,6 +1203,8 @@
    "abbr": "VĀLAKH.",
    "total": 25,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -991,6 +1213,8 @@
    "abbr": "BṚH. ĀR. UP.",
    "total": 24,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -999,6 +1223,8 @@
    "abbr": "Divyāvad.",
    "total": 24,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -1007,6 +1233,8 @@
    "abbr": "PĀR. GṚHY.",
    "total": 24,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -1015,6 +1243,8 @@
    "abbr": "SADDH. P.",
    "total": 24,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -1023,6 +1253,8 @@
    "abbr": "Z. d. d. m. G.",
    "total": 24,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -1031,6 +1263,8 @@
    "abbr": "ŚĀK. CH.",
    "total": 24,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -1039,6 +1273,8 @@
    "abbr": "NAIGH.",
    "total": 23,
    "resolved": 22,
+   "scan": 22,
+   "html": 0,
    "repos": [
     "nirukta"
    ],
@@ -1049,6 +1285,8 @@
    "abbr": "TAITT. UP.",
    "total": 23,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -1057,6 +1295,8 @@
    "abbr": "LALIT.",
    "total": 22,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -1065,6 +1305,8 @@
    "abbr": "PAÑCAT. II,",
    "total": 22,
    "resolved": 22,
+   "scan": 22,
+   "html": 0,
    "repos": [
     "pantankose"
    ],
@@ -1075,6 +1317,8 @@
    "abbr": "PRAŚNOP.",
    "total": 22,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -1083,6 +1327,8 @@
    "abbr": "VET. in LA.",
    "total": 22,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -1091,6 +1337,8 @@
    "abbr": "Jātakam.",
    "total": 21,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -1099,6 +1347,8 @@
    "abbr": "SĀṂKHYAK.",
    "total": 21,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -1107,6 +1357,8 @@
    "abbr": "AMAR.",
    "total": 20,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -1115,6 +1367,8 @@
    "abbr": "CAURAP.",
    "total": 20,
    "resolved": 19,
+   "scan": 19,
+   "html": 0,
    "repos": [
     "bhartrhari"
    ],
@@ -1125,6 +1379,8 @@
    "abbr": "KĀRAṆḌ.",
    "total": 20,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -1133,6 +1389,8 @@
    "abbr": "SUND.",
    "total": 20,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -1141,6 +1399,8 @@
    "abbr": "Sch.",
    "total": 20,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -1149,6 +1409,8 @@
    "abbr": "AV. PRĀT.",
    "total": 19,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -1157,6 +1419,8 @@
    "abbr": "HEM. PAR.",
    "total": 18,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -1165,6 +1429,8 @@
    "abbr": "Journ. of the Am. Or. S.",
    "total": 18,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -1173,6 +1439,8 @@
    "abbr": "MAHĀVY.",
    "total": 18,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -1181,6 +1449,8 @@
    "abbr": "ŚRUT.",
    "total": 18,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -1189,6 +1459,8 @@
    "abbr": "INDR.",
    "total": 17,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -1197,6 +1469,8 @@
    "abbr": "MĀLATĪM.",
    "total": 17,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -1205,6 +1479,8 @@
    "abbr": "RAGH. ed. Calc.",
    "total": 17,
    "resolved": 17,
+   "scan": 17,
+   "html": 0,
    "repos": [
     "raghuvamsacalc"
    ],
@@ -1215,6 +1491,8 @@
    "abbr": "ŚAṂK. zu BĀDAR.",
    "total": 17,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -1223,6 +1501,8 @@
    "abbr": "ṢAḌV. BR.",
    "total": 17,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -1231,6 +1511,8 @@
    "abbr": "NALOD.",
    "total": 16,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -1239,6 +1521,8 @@
    "abbr": "R. SCHL.",
    "total": 16,
    "resolved": 16,
+   "scan": 16,
+   "html": 0,
    "repos": [
     "ramayanaschl"
    ],
@@ -1249,6 +1533,8 @@
    "abbr": "UTTARAR.",
    "total": 16,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -1257,6 +1543,8 @@
    "abbr": "VEDĀNTAS. (Allah.) No.",
    "total": 16,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -1265,6 +1553,8 @@
    "abbr": "HEMĀDRI",
    "total": 15,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -1273,6 +1563,8 @@
    "abbr": "HIḌ.",
    "total": 15,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -1281,6 +1573,8 @@
    "abbr": "SCHL.",
    "total": 15,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -1289,6 +1583,8 @@
    "abbr": "PRASANNAR.",
    "total": 14,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -1297,6 +1593,8 @@
    "abbr": "SIDDH. K.",
    "total": 14,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -1305,6 +1603,8 @@
    "abbr": "VAJRACCH.",
    "total": 14,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -1313,6 +1613,8 @@
    "abbr": "VARĀH. BṚH.",
    "total": 14,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -1321,6 +1623,8 @@
    "abbr": "VP.",
    "total": 14,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -1329,6 +1633,8 @@
    "abbr": "GṚHY.",
    "total": 13,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -1337,6 +1643,8 @@
    "abbr": "HIT. Pr.",
    "total": 13,
    "resolved": 13,
+   "scan": 13,
+   "html": 0,
    "repos": [
     "hitopadesha"
    ],
@@ -1347,6 +1655,8 @@
    "abbr": "JAIM.",
    "total": 13,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -1355,6 +1665,8 @@
    "abbr": "KENOP.",
    "total": 13,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -1363,6 +1675,8 @@
    "abbr": "LA. (II)",
    "total": 13,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -1371,6 +1685,8 @@
    "abbr": "Mahāvy.",
    "total": 13,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -1379,6 +1695,8 @@
    "abbr": "UTTARARĀMAC.",
    "total": 13,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -1387,6 +1705,8 @@
    "abbr": "an.",
    "total": 12,
    "resolved": 12,
+   "scan": 12,
+   "html": 0,
    "repos": [
     "anekarthasamgraha"
    ],
@@ -1397,6 +1717,8 @@
    "abbr": "BHĀṢĀP.",
    "total": 11,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -1405,6 +1727,8 @@
    "abbr": "BRAHMA-P. in LA. (III)",
    "total": 11,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -1413,6 +1737,8 @@
    "abbr": "HARṢAC.",
    "total": 11,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -1421,6 +1747,8 @@
    "abbr": "HIT. II,",
    "total": 11,
    "resolved": 11,
+   "scan": 11,
+   "html": 0,
    "repos": [
     "hitopadesha"
    ],
@@ -1431,6 +1759,8 @@
    "abbr": "Z.",
    "total": 11,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -1439,6 +1769,8 @@
    "abbr": "ŚATR.",
    "total": 11,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -1447,6 +1779,8 @@
    "abbr": "BRAHMA-P.",
    "total": 10,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -1455,6 +1789,8 @@
    "abbr": "BṚH.",
    "total": 10,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -1463,6 +1799,8 @@
    "abbr": "GAUT.",
    "total": 10,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -1471,6 +1809,8 @@
    "abbr": "GOP. BR.",
    "total": 10,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -1479,6 +1819,8 @@
    "abbr": "HALL",
    "total": 10,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -1487,6 +1829,8 @@
    "abbr": "LA. (III)",
    "total": 10,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -1495,6 +1839,8 @@
    "abbr": "LALIT. ed. Calc.",
    "total": 10,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -1503,6 +1849,8 @@
    "abbr": "MĀN. GṚHY.",
    "total": 10,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -1511,6 +1859,8 @@
    "abbr": "NĪLAK.",
    "total": 10,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -1519,6 +1869,8 @@
    "abbr": "RĀJAT.",
    "total": 10,
    "resolved": 10,
+   "scan": 10,
+   "html": 0,
    "repos": [
     "rajatar",
     "rajatarcalc"
@@ -1530,6 +1882,8 @@
    "abbr": "TAITT. ĀR.",
    "total": 10,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -1538,6 +1892,8 @@
    "abbr": "CARAKA",
    "total": 9,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -1546,6 +1902,8 @@
    "abbr": "MÜLLER, SL.",
    "total": 9,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -1554,6 +1912,8 @@
    "abbr": "WEBER, KṚṢṆAJ.",
    "total": 9,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -1562,6 +1922,8 @@
    "abbr": "WEBER, RĀMAT. UP.",
    "total": 9,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -1570,6 +1932,8 @@
    "abbr": "ŚR.",
    "total": 9,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -1578,6 +1942,8 @@
    "abbr": "AIT. UP.",
    "total": 8,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -1586,6 +1952,8 @@
    "abbr": "HIT. IV,",
    "total": 8,
    "resolved": 8,
+   "scan": 8,
+   "html": 0,
    "repos": [
     "hitopadesha"
    ],
@@ -1596,6 +1964,8 @@
    "abbr": "MIT.",
    "total": 8,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -1604,6 +1974,8 @@
    "abbr": "Maitr. S.",
    "total": 8,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -1612,6 +1984,8 @@
    "abbr": "NYĀYAS.",
    "total": 8,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -1620,6 +1994,8 @@
    "abbr": "SOM. NALA",
    "total": 8,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -1628,6 +2004,8 @@
    "abbr": "TATTVAS.",
    "total": 8,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -1636,6 +2014,8 @@
    "abbr": "WEBER, JYOT.",
    "total": 8,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -1644,6 +2024,8 @@
    "abbr": "Z. f. d. K. d. M.",
    "total": 8,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -1652,6 +2034,8 @@
    "abbr": "ŚUK.",
    "total": 8,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -1660,6 +2044,8 @@
    "abbr": "ŚUK. in LA.",
    "total": 8,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -1668,6 +2054,8 @@
    "abbr": "ŚĀNTIŚ.",
    "total": 8,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -1676,6 +2064,8 @@
    "abbr": "AIT. ĀR.",
    "total": 7,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -1684,6 +2074,8 @@
    "abbr": "BHĀVAPR.",
    "total": 7,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -1692,6 +2084,8 @@
    "abbr": "BṚH. ĀR. UP. p.",
    "total": 7,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -1700,6 +2094,8 @@
    "abbr": "CAMPAKA",
    "total": 7,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -1708,6 +2104,8 @@
    "abbr": "CHĀND. UP. S.",
    "total": 7,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -1716,6 +2114,8 @@
    "abbr": "CĀṆ.",
    "total": 7,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -1724,6 +2124,8 @@
    "abbr": "DAŚAR.",
    "total": 7,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -1732,6 +2134,8 @@
    "abbr": "HIT. III,",
    "total": 7,
    "resolved": 7,
+   "scan": 7,
+   "html": 0,
    "repos": [
     "hitopadesha"
    ],
@@ -1742,6 +2146,8 @@
    "abbr": "LA.",
    "total": 7,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -1750,6 +2156,8 @@
    "abbr": "S I,",
    "total": 7,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -1758,6 +2166,8 @@
    "abbr": "VĀSAV.",
    "total": 7,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -1766,6 +2176,8 @@
    "abbr": "YOGAŚ.",
    "total": 7,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -1774,6 +2186,8 @@
    "abbr": "Āpast. Śr.",
    "total": 7,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -1782,6 +2196,8 @@
    "abbr": "ĪŚOP.",
    "total": 7,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -1790,6 +2206,8 @@
    "abbr": "ŚṚṄGĀRAT.",
    "total": 7,
    "resolved": 7,
+   "scan": 7,
+   "html": 0,
    "repos": [
     "meghasrnga"
    ],
@@ -1800,6 +2218,8 @@
    "abbr": "BRĀHMAṆ.",
    "total": 6,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -1808,6 +2228,8 @@
    "abbr": "CAMPAKA.",
    "total": 6,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -1816,6 +2238,8 @@
    "abbr": "COLEBR. Misc. Ess.",
    "total": 6,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -1824,6 +2248,8 @@
    "abbr": "DEV.",
    "total": 6,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -1832,6 +2258,8 @@
    "abbr": "H",
    "total": 6,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -1840,6 +2268,8 @@
    "abbr": "HIT. ed. JOHNS.",
    "total": 6,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -1848,6 +2278,8 @@
    "abbr": "Lot. de la b. l.",
    "total": 6,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -1856,6 +2288,8 @@
    "abbr": "MATSYOP.",
    "total": 6,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -1864,6 +2298,8 @@
    "abbr": "MĀN. ŚR.",
    "total": 6,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -1872,6 +2308,8 @@
    "abbr": "Nachtr.",
    "total": 6,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -1880,6 +2318,8 @@
    "abbr": "VAITĀN.",
    "total": 6,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -1888,6 +2328,8 @@
    "abbr": "VET. in LA. (II)",
    "total": 6,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -1896,6 +2338,8 @@
    "abbr": "VYUTP.",
    "total": 6,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -1904,6 +2348,8 @@
    "abbr": "WILSON, SĀṂKHYAK. S.",
    "total": 6,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -1912,6 +2358,8 @@
    "abbr": "ed. orn.",
    "total": 6,
    "resolved": 6,
+   "scan": 6,
+   "html": 0,
    "repos": [
     "pantankoseorn"
    ],
@@ -1922,6 +2370,8 @@
    "abbr": "ŚULBAS.",
    "total": 6,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -1930,6 +2380,8 @@
    "abbr": "BRAHMA-P. in LA.",
    "total": 5,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -1938,6 +2390,8 @@
    "abbr": "BURN. Intr.",
    "total": 5,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -1946,6 +2400,8 @@
    "abbr": "BĀLAB.",
    "total": 5,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -1954,6 +2410,8 @@
    "abbr": "Comm. zu NYĀYAM.",
    "total": 5,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -1962,6 +2420,8 @@
    "abbr": "GṚHYASAṂGR.",
    "total": 5,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -1970,6 +2430,8 @@
    "abbr": "HĀR.",
    "total": 5,
    "resolved": 5,
+   "scan": 5,
+   "html": 0,
    "repos": [
     "medini"
    ],
@@ -1980,6 +2442,8 @@
    "abbr": "KUSUM.",
    "total": 5,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -1988,6 +2452,8 @@
    "abbr": "Kauṭ.",
    "total": 5,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -1996,6 +2462,8 @@
    "abbr": "KĀVYĀD.",
    "total": 5,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -2004,6 +2472,8 @@
    "abbr": "MED. dh.",
    "total": 5,
    "resolved": 5,
+   "scan": 5,
+   "html": 0,
    "repos": [
     "medini"
    ],
@@ -2014,6 +2484,8 @@
    "abbr": "MUIR, ST.",
    "total": 5,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -2022,6 +2494,8 @@
    "abbr": "PAÑCAD.",
    "total": 5,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -2030,6 +2504,8 @@
    "abbr": "PAÑCAT. V,",
    "total": 5,
    "resolved": 5,
+   "scan": 5,
+   "html": 0,
    "repos": [
     "pantankose"
    ],
@@ -2040,6 +2516,8 @@
    "abbr": "SAṂHITOPAN.",
    "total": 5,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -2048,6 +2526,8 @@
    "abbr": "TARKAS.",
    "total": 5,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -2056,6 +2536,8 @@
    "abbr": "UPAG. AV.",
    "total": 5,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -2064,6 +2546,8 @@
    "abbr": "Verz. d. Oxf. H. No.",
    "total": 5,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -2072,6 +2556,8 @@
    "abbr": "VṚDDHA-CĀṆ.",
    "total": 5,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -2080,6 +2566,8 @@
    "abbr": "ĀPAST. GṚHY.",
    "total": 5,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -2088,6 +2576,8 @@
    "abbr": "ŚIKṢĀ",
    "total": 5,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -2096,6 +2586,8 @@
    "abbr": "ŚUK. in LA. (III)",
    "total": 5,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -2104,6 +2596,8 @@
    "abbr": "BHARTṚ. Suppl.",
    "total": 4,
    "resolved": 4,
+   "scan": 4,
+   "html": 0,
    "repos": [
     "bhartrhari"
    ],
@@ -2114,6 +2608,8 @@
    "abbr": "BURNOUF, Intr.",
    "total": 4,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -2122,6 +2618,8 @@
    "abbr": "Comm. zu NYĀYAS.",
    "total": 4,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -2130,6 +2628,8 @@
    "abbr": "Comm. zu ĀPAST. ŚR.",
    "total": 4,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -2138,6 +2638,8 @@
    "abbr": "DHŪRTAS. in LA.",
    "total": 4,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -2146,6 +2648,8 @@
    "abbr": "GHAṬ.",
    "total": 4,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -2154,6 +2658,8 @@
    "abbr": "Harṣac.",
    "total": 4,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -2162,6 +2668,8 @@
    "abbr": "Kir.",
    "total": 4,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -2170,6 +2678,8 @@
    "abbr": "LAGHUJ.",
    "total": 4,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -2178,6 +2688,8 @@
    "abbr": "MAHĀBH.",
    "total": 4,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -2186,6 +2698,8 @@
    "abbr": "MED. <is>avy</is>.",
    "total": 4,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -2194,6 +2708,8 @@
    "abbr": "MED. avy.",
    "total": 4,
    "resolved": 4,
+   "scan": 4,
+   "html": 0,
    "repos": [
     "medini"
    ],
@@ -2204,6 +2720,8 @@
    "abbr": "MED. k.",
    "total": 4,
    "resolved": 4,
+   "scan": 4,
+   "html": 0,
    "repos": [
     "medini"
    ],
@@ -2214,6 +2732,8 @@
    "abbr": "MED. ṭ.",
    "total": 4,
    "resolved": 4,
+   "scan": 4,
+   "html": 0,
    "repos": [
     "medini"
    ],
@@ -2224,6 +2744,8 @@
    "abbr": "MUDRĀR.",
    "total": 4,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -2232,6 +2754,8 @@
    "abbr": "N. (BOPP)",
    "total": 4,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -2240,6 +2764,8 @@
    "abbr": "RĀJAN.",
    "total": 4,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -2248,6 +2774,8 @@
    "abbr": "TĀṆḌYA-BR.",
    "total": 4,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -2256,6 +2784,8 @@
    "abbr": "UṆĀDIS.",
    "total": 4,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -2264,6 +2794,8 @@
    "abbr": "Vajracch.",
    "total": 4,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -2272,6 +2804,8 @@
    "abbr": "{{CARARA->CARAKA||",
    "total": 4,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -2280,6 +2814,8 @@
    "abbr": "Āpast. Gṛhy.",
    "total": 4,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -2288,6 +2824,8 @@
    "abbr": "<is>Kār.</is>",
    "total": 3,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -2296,6 +2834,8 @@
    "abbr": "BAUDH.",
    "total": 3,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -2304,6 +2844,8 @@
    "abbr": "BHĀG.",
    "total": 3,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -2312,6 +2854,8 @@
    "abbr": "BRAHMA-P. in LA. (II)",
    "total": 3,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -2320,6 +2864,8 @@
    "abbr": "BĀDAR.",
    "total": 3,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -2328,6 +2874,8 @@
    "abbr": "CHANDOM.",
    "total": 3,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -2336,6 +2884,8 @@
    "abbr": "CĀT.",
    "total": 3,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -2344,6 +2894,8 @@
    "abbr": "H. ś.",
    "total": 3,
    "resolved": 3,
+   "scan": 3,
+   "html": 0,
    "repos": [
     "abch2"
    ],
@@ -2354,6 +2906,8 @@
    "abbr": "Kaus.",
    "total": 3,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -2362,6 +2916,8 @@
    "abbr": "Kauś.",
    "total": 3,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -2370,6 +2926,8 @@
    "abbr": "LALIT. Calc.",
    "total": 3,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -2378,6 +2936,8 @@
    "abbr": "MED. n.",
    "total": 3,
    "resolved": 3,
+   "scan": 3,
+   "html": 0,
    "repos": [
     "medini"
    ],
@@ -2388,6 +2948,8 @@
    "abbr": "PAÑCAT. ed. orn. I,",
    "total": 3,
    "resolved": 3,
+   "scan": 3,
+   "html": 0,
    "repos": [
     "pantankoseorn"
    ],
@@ -2398,6 +2960,8 @@
    "abbr": "PRATĀPAR.",
    "total": 3,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -2406,6 +2970,8 @@
    "abbr": "PĀRŚVANĀTHAK.",
    "total": 3,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -2414,6 +2980,8 @@
    "abbr": "Pūrṇabh.",
    "total": 3,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -2422,6 +2990,8 @@
    "abbr": "RATIM.",
    "total": 3,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -2430,6 +3000,8 @@
    "abbr": "RATNĀV.",
    "total": 3,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -2438,6 +3010,8 @@
    "abbr": "SAṂSK. K.",
    "total": 3,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -2446,6 +3020,8 @@
    "abbr": "SĀMAV. BR.",
    "total": 3,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -2454,6 +3030,8 @@
    "abbr": "SĀMAVIDH. BR.",
    "total": 3,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -2462,6 +3040,8 @@
    "abbr": "SĀṂKHYAK. S.",
    "total": 3,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -2470,6 +3050,8 @@
    "abbr": "UTTAR.",
    "total": 3,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -2478,6 +3060,8 @@
    "abbr": "VASIṢṬHA",
    "total": 3,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -2486,6 +3070,8 @@
    "abbr": "VEDĀNTAS.",
    "total": 3,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -2494,6 +3080,8 @@
    "abbr": "VEṆĪS.",
    "total": 3,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -2502,6 +3090,8 @@
    "abbr": "VIKRAM.",
    "total": 3,
    "resolved": 3,
+   "scan": 3,
+   "html": 0,
    "repos": [
     "vikramor"
    ],
@@ -2512,6 +3102,8 @@
    "abbr": "VĀMANA",
    "total": 3,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -2520,6 +3112,8 @@
    "abbr": "WEBER, Nakṣ.",
    "total": 3,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -2528,6 +3122,8 @@
    "abbr": "WIND. Sancara",
    "total": 3,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -2536,6 +3132,8 @@
    "abbr": "YOGAS.",
    "total": 3,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -2544,6 +3142,8 @@
    "abbr": "Yudh.",
    "total": 3,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -2552,6 +3152,8 @@
    "abbr": "ed. Bomb.",
    "total": 3,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -2560,6 +3162,8 @@
    "abbr": "ed. Calc.",
    "total": 3,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -2568,6 +3172,8 @@
    "abbr": "ĀRYABH.",
    "total": 3,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -2576,6 +3182,8 @@
    "abbr": "Śat. Br.",
    "total": 3,
    "resolved": 3,
+   "scan": 3,
+   "html": 0,
    "repos": [
     "shatapathabr"
    ],
@@ -2586,6 +3194,8 @@
    "abbr": "AGNI-P.",
    "total": 2,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -2594,6 +3204,8 @@
    "abbr": "BR.)",
    "total": 2,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -2602,6 +3214,8 @@
    "abbr": "BĪJAG.",
    "total": 2,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -2610,6 +3224,8 @@
    "abbr": "COL.",
    "total": 2,
    "resolved": 2,
+   "scan": 2,
+   "html": 0,
    "repos": [
     "amara_col"
    ],
@@ -2620,6 +3236,8 @@
    "abbr": "COLEBR. Alg.",
    "total": 2,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -2628,6 +3246,8 @@
    "abbr": "Comm. zu JAIM.",
    "total": 2,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -2636,6 +3256,8 @@
    "abbr": "Comm. zu KĀTY. ŚR.",
    "total": 2,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -2644,6 +3266,8 @@
    "abbr": "Comm. zu LĀṬY.",
    "total": 2,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -2652,6 +3276,8 @@
    "abbr": "DHARMAŚARM.",
    "total": 2,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -2660,6 +3286,8 @@
    "abbr": "Dharmaśarm.",
    "total": 2,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -2668,6 +3296,8 @@
    "abbr": "Hem. Par.",
    "total": 2,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -2676,6 +3306,8 @@
    "abbr": "KAUṢ. UP. Einl.",
    "total": 2,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -2684,6 +3316,8 @@
    "abbr": "KAṆ.",
    "total": 2,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -2692,6 +3326,8 @@
    "abbr": "KIRĀT.",
    "total": 2,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -2700,6 +3336,8 @@
    "abbr": "KUVALAY.",
    "total": 2,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -2708,6 +3346,8 @@
    "abbr": "KĀTY. ŚR. Comm.",
    "total": 2,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -2716,6 +3356,8 @@
    "abbr": "LIA. I,",
    "total": 2,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -2724,6 +3366,8 @@
    "abbr": "LĀTY.",
    "total": 2,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -2732,6 +3376,8 @@
    "abbr": "MADHYAM.",
    "total": 2,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -2740,6 +3386,8 @@
    "abbr": "MAHĀBH. lith. Ausg.",
    "total": 2,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -2748,6 +3396,8 @@
    "abbr": "MBh.",
    "total": 2,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -2756,6 +3406,8 @@
    "abbr": "MED. p.",
    "total": 2,
    "resolved": 1,
+   "scan": 1,
+   "html": 0,
    "repos": [
     "medini"
    ],
@@ -2766,6 +3418,8 @@
    "abbr": "MUIR, ST. IV,",
    "total": 2,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -2774,6 +3428,8 @@
    "abbr": "MUIR, Sanscrit Texts I,",
    "total": 2,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -2782,6 +3438,8 @@
    "abbr": "Med.",
    "total": 2,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -2790,6 +3448,8 @@
    "abbr": "MĀLAT.",
    "total": 2,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -2798,6 +3458,8 @@
    "abbr": "MĀN.",
    "total": 2,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -2806,6 +3468,8 @@
    "abbr": "MĀRK. P. S.",
    "total": 2,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -2814,6 +3478,8 @@
    "abbr": "NIDĀNAS.",
    "total": 2,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -2822,6 +3488,8 @@
    "abbr": "PARIBH.",
    "total": 2,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -2830,6 +3498,8 @@
    "abbr": "PAÑCAT. IV,",
    "total": 2,
    "resolved": 2,
+   "scan": 2,
+   "html": 0,
    "repos": [
     "pantankose"
    ],
@@ -2840,6 +3510,8 @@
    "abbr": "PISCHEL, Vedische Studien",
    "total": 2,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -2848,6 +3520,8 @@
    "abbr": "R. ed. GORR.",
    "total": 2,
    "resolved": 2,
+   "scan": 2,
+   "html": 0,
    "repos": [
     "ramayanagorr"
    ],
@@ -2858,6 +3532,8 @@
    "abbr": "S II,",
    "total": 2,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -2866,6 +3542,8 @@
    "abbr": "SMARADĪP.",
    "total": 2,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -2874,6 +3552,8 @@
    "abbr": "SOM. NAL.",
    "total": 2,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -2882,6 +3562,8 @@
    "abbr": "SV.",
    "total": 2,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -2890,6 +3572,8 @@
    "abbr": "SV. I,",
    "total": 2,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -2898,6 +3582,8 @@
    "abbr": "SV. II,",
    "total": 2,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -2906,6 +3592,8 @@
    "abbr": "SĀY.",
    "total": 2,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -2914,6 +3602,8 @@
    "abbr": "SĀY. zu ṚV.",
    "total": 2,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -2922,6 +3612,8 @@
    "abbr": "Sūryaś.",
    "total": 2,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -2930,6 +3622,8 @@
    "abbr": "UPAL.",
    "total": 2,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -2938,6 +3632,8 @@
    "abbr": "UTTAMAC.",
    "total": 2,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -2946,6 +3642,8 @@
    "abbr": "VIKRAMĀṄKAC.",
    "total": 2,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -2954,6 +3652,8 @@
    "abbr": "VIVĀDAC.",
    "total": 2,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -2962,6 +3662,8 @@
    "abbr": "VIṢṆUS.",
    "total": 2,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -2970,6 +3672,8 @@
    "abbr": "VOP. S.",
    "total": 2,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -2978,6 +3682,8 @@
    "abbr": "VĀSAVAD.",
    "total": 2,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -2986,6 +3692,8 @@
    "abbr": "Vās.",
    "total": 2,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -2994,6 +3702,8 @@
    "abbr": "WASSILJEW",
    "total": 2,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -3002,6 +3712,8 @@
    "abbr": "WILSON, Sel. Works",
    "total": 2,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -3010,6 +3722,8 @@
    "abbr": "YAJÑAD.",
    "total": 2,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -3018,6 +3732,8 @@
    "abbr": "ebend.",
    "total": 2,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -3026,6 +3742,8 @@
    "abbr": "ed. Vardh.",
    "total": 2,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -3034,6 +3752,8 @@
    "abbr": "{{MBH.",
    "total": 2,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -3042,6 +3762,8 @@
    "abbr": "Ś.",
    "total": 2,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -3050,6 +3772,8 @@
    "abbr": "ŚIŚUP.",
    "total": 2,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -3058,6 +3782,8 @@
    "abbr": "ŚUK. in LA. (II)",
    "total": 2,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -3066,6 +3792,8 @@
    "abbr": "Śiś.",
    "total": 2,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -3074,6 +3802,8 @@
    "abbr": "Śrīk.",
    "total": 2,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -3082,6 +3812,8 @@
    "abbr": "ŚĀNT.",
    "total": 2,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -3090,6 +3822,8 @@
    "abbr": "Śāṅkh. Br.",
    "total": 2,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -3098,6 +3832,8 @@
    "abbr": "ṚV. ANUKR.",
    "total": 2,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -3106,6 +3842,8 @@
    "abbr": "1,111,3.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -3114,6 +3852,8 @@
    "abbr": "1,12,a",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -3122,6 +3862,8 @@
    "abbr": "14",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -3130,6 +3872,8 @@
    "abbr": "15.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -3138,6 +3882,8 @@
    "abbr": "231,16",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -3146,6 +3892,8 @@
    "abbr": "41",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -3154,6 +3902,8 @@
    "abbr": "<is>Śak</is>.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -3162,6 +3912,8 @@
    "abbr": "AJAYA",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -3170,6 +3922,8 @@
    "abbr": "AMṚTAN. UP.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -3178,6 +3932,8 @@
    "abbr": "AMṚTAV. UP.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -3186,6 +3942,8 @@
    "abbr": "ANEKĀRTHAK.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -3194,6 +3952,8 @@
    "abbr": "ARYABH.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -3202,6 +3962,8 @@
    "abbr": "ATHARVAŚ. UP.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -3210,6 +3972,8 @@
    "abbr": "AUFRECHT",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -3218,6 +3982,8 @@
    "abbr": "AUFRECHT, HALĀY.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -3226,6 +3992,8 @@
    "abbr": "AV. PAIPP.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -3234,6 +4002,8 @@
    "abbr": "AV. PARIŚ.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -3242,6 +4012,8 @@
    "abbr": "AV. PRĀYAŚC.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -3250,6 +4022,8 @@
    "abbr": "AŚNA S.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -3258,6 +4032,8 @@
    "abbr": "AŚOKĀVAD.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -3266,6 +4042,8 @@
    "abbr": "AṢṬĀV.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -3274,6 +4052,8 @@
    "abbr": "BALL.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -3282,6 +4062,8 @@
    "abbr": "BENFEY",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -3290,6 +4072,8 @@
    "abbr": "BENFEY.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -3298,6 +4082,8 @@
    "abbr": "BHADRAB.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -3306,6 +4092,8 @@
    "abbr": "BHAR.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -3314,6 +4102,8 @@
    "abbr": "BHAR. NĀṬYAŚ.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -3322,6 +4112,8 @@
    "abbr": "BHOJA-PR.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -3330,6 +4122,8 @@
    "abbr": "BHOJAPRAB.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -3338,6 +4132,8 @@
    "abbr": "BHĀG. P. ed. Bomb.",
    "total": 1,
    "resolved": 1,
+   "scan": 1,
+   "html": 0,
    "repos": [
     "bhagp_bom"
    ],
@@ -3348,6 +4144,8 @@
    "abbr": "BHĀMATĪ",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -3356,6 +4154,8 @@
    "abbr": "BHĀRAVI",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -3364,6 +4164,8 @@
    "abbr": "BHĀTUP.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -3372,6 +4174,8 @@
    "abbr": "BHĀṬṬ.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -3380,6 +4184,8 @@
    "abbr": "BOHLEN",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -3388,6 +4194,8 @@
    "abbr": "BOPP",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -3396,6 +4204,8 @@
    "abbr": "BR.).",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -3404,6 +4214,8 @@
    "abbr": "BRAHMAVAIV. P.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -3412,6 +4224,8 @@
    "abbr": "BRAHMOP. S.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -3420,6 +4234,8 @@
    "abbr": "BRĀHM.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -3428,6 +4244,8 @@
    "abbr": "BRĀHMAṆA",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -3436,6 +4254,8 @@
    "abbr": "BURN.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -3444,6 +4264,8 @@
    "abbr": "BURNOUF",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -3452,6 +4274,8 @@
    "abbr": "Bomb. Ausg.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -3460,6 +4284,8 @@
    "abbr": "BÖHTL.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -3468,6 +4294,8 @@
    "abbr": "BÜHLER'S Ausg. des PAÑCAT.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -3476,6 +4304,8 @@
    "abbr": "Bālar.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -3484,6 +4314,8 @@
    "abbr": "BṚH. ĀR.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -3492,6 +4324,8 @@
    "abbr": "BṚHASP.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -3500,6 +4334,8 @@
    "abbr": "CANDRAKĪRTI",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -3508,6 +4344,8 @@
    "abbr": "CAPPELLER",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -3516,6 +4354,8 @@
    "abbr": "CARAṆAVY.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -3524,6 +4364,8 @@
    "abbr": "CAURAP",
    "total": 1,
    "resolved": 1,
+   "scan": 1,
+   "html": 0,
    "repos": [
     "bhartrhari"
    ],
@@ -3534,6 +4376,8 @@
    "abbr": "COLEBR.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -3542,6 +4386,8 @@
    "abbr": "COLEBR. Misc. Ess. I,",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -3550,6 +4396,8 @@
    "abbr": "COLEBR. Misc. Ess. II,",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -3558,6 +4406,8 @@
    "abbr": "Caraka",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -3566,6 +4416,8 @@
    "abbr": "Comm. zu AIT. ĀR. S.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -3574,6 +4426,8 @@
    "abbr": "Comm. zu AK.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -3582,6 +4436,8 @@
    "abbr": "Comm. zu CARAKA.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -3590,6 +4446,8 @@
    "abbr": "Comm. zu NYĀYAM. S.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -3598,6 +4456,8 @@
    "abbr": "Comm. zu SŪRYAS.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -3606,6 +4466,8 @@
    "abbr": "Comm. zu TBR.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -3614,6 +4476,8 @@
    "abbr": "Comm. zu TS.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -3622,6 +4486,8 @@
    "abbr": "CŪLIKOP.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -3630,6 +4496,8 @@
    "abbr": "DEVALA",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -3638,6 +4506,8 @@
    "abbr": "DH. V.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -3646,6 +4516,8 @@
    "abbr": "DHAR.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -3654,6 +4526,8 @@
    "abbr": "DHARMAŚ.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -3662,6 +4536,8 @@
    "abbr": "DHŪRTAN.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -3670,6 +4546,8 @@
    "abbr": "DURGA",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -3678,6 +4556,8 @@
    "abbr": "DURGA.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -3686,6 +4566,8 @@
    "abbr": "DURGAD.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -3694,6 +4576,8 @@
    "abbr": "DURGĀD.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -3702,6 +4586,8 @@
    "abbr": "Daśak.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -3710,6 +4596,8 @@
    "abbr": "DĀYABH.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -3718,6 +4606,8 @@
    "abbr": "DĪPIKĀ",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -3726,6 +4616,8 @@
    "abbr": "EKĀCṢARAK.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -3734,6 +4626,8 @@
    "abbr": "EKĀKṢARAK.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -3742,6 +4636,8 @@
    "abbr": "FOUC.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -3750,6 +4646,8 @@
    "abbr": "GAL.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -3758,6 +4656,8 @@
    "abbr": "GAUḌAP.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -3766,6 +4666,8 @@
    "abbr": "GAUḌAPĀDA",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -3774,6 +4676,8 @@
    "abbr": "GAṆIT.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -3782,6 +4686,8 @@
    "abbr": "GELDNER",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -3790,6 +4696,8 @@
    "abbr": "GILD.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -3798,6 +4706,8 @@
    "abbr": "GOLD.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -3806,6 +4716,8 @@
    "abbr": "GOLDST.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -3814,6 +4726,8 @@
    "abbr": "GOLĀDHY.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -3822,6 +4736,8 @@
    "abbr": "GOLĀDHY. BHUVANAK.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -3830,6 +4746,8 @@
    "abbr": "GOVINDĀN. S.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -3838,6 +4756,8 @@
    "abbr": "Gopāl.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -3846,6 +4766,8 @@
    "abbr": "HAEB.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -3854,6 +4776,8 @@
    "abbr": "HARAVIJAYA",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -3862,6 +4786,8 @@
    "abbr": "HARIR.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -3870,6 +4796,8 @@
    "abbr": "HARṢAC. (ed. Bomb.)",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -3878,6 +4806,8 @@
    "abbr": "HAUG",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -3886,6 +4816,8 @@
    "abbr": "HEM.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -3894,6 +4826,8 @@
    "abbr": "HILLEBRANDT",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -3902,6 +4836,8 @@
    "abbr": "HIRAṆY. ŚR.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -3910,6 +4846,8 @@
    "abbr": "Hariv.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -3918,6 +4856,8 @@
    "abbr": "Hiraṇy. Śr.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -3926,6 +4866,8 @@
    "abbr": "HĀRĪTA",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -3934,6 +4876,8 @@
    "abbr": "IL.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -3942,6 +4886,8 @@
    "abbr": "INDṚ.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -3950,6 +4896,8 @@
    "abbr": "ITIH.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -3958,6 +4906,8 @@
    "abbr": "Ind.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -3966,6 +4916,8 @@
    "abbr": "J. A. O. S. Procc. Oct.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -3974,6 +4926,8 @@
    "abbr": "JAOS. Proc.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -3982,6 +4936,8 @@
    "abbr": "JAṬĀDH.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -3990,6 +4946,8 @@
    "abbr": "JYOT.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -3998,6 +4956,8 @@
    "abbr": "Journ. of the As. Soc. of B. IV, Pl. XL, Z.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -4006,6 +4966,8 @@
    "abbr": "JĀBĀLOP. S.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -4014,6 +4976,8 @@
    "abbr": "JĀTAKADĪPIKĀ",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -4022,6 +4986,8 @@
    "abbr": "KAIY.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -4030,6 +4996,8 @@
    "abbr": "KAIYY.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -4038,6 +5006,8 @@
    "abbr": "KALPA",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -4046,6 +5016,8 @@
    "abbr": "KAP. S.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -4054,6 +5026,8 @@
    "abbr": "KAPILA",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -4062,6 +5036,8 @@
    "abbr": "KAT.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -4070,6 +5046,8 @@
    "abbr": "KATHOP.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -4078,6 +5056,8 @@
    "abbr": "KAURAP.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -4086,6 +5066,8 @@
    "abbr": "KENOP",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -4094,6 +5076,8 @@
    "abbr": "KERN",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -4102,6 +5086,8 @@
    "abbr": "KOṢṬHĪPR.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -4110,6 +5096,8 @@
    "abbr": "KUHNʼS Z.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -4118,6 +5106,8 @@
    "abbr": "KUHNʼs Z.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -4126,6 +5116,8 @@
    "abbr": "KULL",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -4134,6 +5126,8 @@
    "abbr": "KULL.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -4142,6 +5136,8 @@
    "abbr": "KUMĀRILA",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -4150,6 +5146,8 @@
    "abbr": "Kap.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -4158,6 +5156,8 @@
    "abbr": "Kauṣ. Up.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -4166,6 +5166,8 @@
    "abbr": "Kaśm. Śiv.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -4174,6 +5176,8 @@
    "abbr": "Kaṃs. IV,",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -4182,6 +5186,8 @@
    "abbr": "Kir. I,",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -4190,6 +5196,8 @@
    "abbr": "Kir. IX,",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -4198,6 +5206,8 @@
    "abbr": "Kir. X,",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -4206,6 +5216,8 @@
    "abbr": "Kir. XVI,",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -4214,6 +5226,8 @@
    "abbr": "Kuhn's Z.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -4222,6 +5236,8 @@
    "abbr": "KĀTHOP.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -4230,6 +5246,8 @@
    "abbr": "KĀTY.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -4238,6 +5256,8 @@
    "abbr": "KĀVYA-PR.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -4246,6 +5266,8 @@
    "abbr": "KĀVYAPR.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -4254,6 +5276,8 @@
    "abbr": "KĀŚ.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -4262,6 +5286,8 @@
    "abbr": "Kār.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -4270,6 +5296,8 @@
    "abbr": "Kāty. Śr.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -4278,6 +5306,8 @@
    "abbr": "Kāṭh.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -4286,6 +5316,8 @@
    "abbr": "KŪRMA-P.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -4294,6 +5326,8 @@
    "abbr": "KṚṢIS.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -4302,6 +5336,8 @@
    "abbr": "KṚṢṆAJ.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -4310,6 +5346,8 @@
    "abbr": "KṢURIKOP.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -4318,6 +5356,8 @@
    "abbr": "KṢURIKOPAN.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -4326,6 +5366,8 @@
    "abbr": "LASS.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -4334,6 +5376,8 @@
    "abbr": "LASSEN",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -4342,6 +5386,8 @@
    "abbr": "LASSEN, Institutt.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -4350,6 +5396,8 @@
    "abbr": "LASSEN, Pent.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -4358,6 +5406,8 @@
    "abbr": "LIṄGA-P.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -4366,6 +5416,8 @@
    "abbr": "LOIS.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -4374,6 +5426,8 @@
    "abbr": "Lakṣmaṇasūri",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -4382,6 +5436,8 @@
    "abbr": "M. MÜLLER, Transl.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -4390,6 +5446,8 @@
    "abbr": "MADHUS.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -4398,6 +5456,8 @@
    "abbr": "MAH.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -4406,6 +5466,8 @@
    "abbr": "MAHEŚVARATĪRTHAE",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -4414,6 +5476,8 @@
    "abbr": "MAHĀBH. (K.)",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -4422,6 +5486,8 @@
    "abbr": "MAHĀN.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -4430,6 +5496,8 @@
    "abbr": "MAHĀNĀR. UP.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -4438,6 +5506,8 @@
    "abbr": "MAHĀVASTU",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -4446,6 +5516,8 @@
    "abbr": "MAHĪDH.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -4454,6 +5526,8 @@
    "abbr": "MALLIN.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -4462,6 +5536,8 @@
    "abbr": "MANTRABR.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -4470,6 +5546,8 @@
    "abbr": "MANU",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -4478,6 +5556,8 @@
    "abbr": "MATSYAP.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -4486,6 +5566,8 @@
    "abbr": "MAṆITTHA",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -4494,6 +5576,8 @@
    "abbr": "MBH. ed. Vardh.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -4502,6 +5586,8 @@
    "abbr": "MED.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -4510,6 +5596,8 @@
    "abbr": "MED. Anh.",
    "total": 1,
    "resolved": 1,
+   "scan": 1,
+   "html": 0,
    "repos": [
     "medini"
    ],
@@ -4520,6 +5608,8 @@
    "abbr": "MED. d.",
    "total": 1,
    "resolved": 1,
+   "scan": 1,
+   "html": 0,
    "repos": [
     "medini"
    ],
@@ -4530,6 +5620,8 @@
    "abbr": "MED. l.",
    "total": 1,
    "resolved": 1,
+   "scan": 1,
+   "html": 0,
    "repos": [
     "medini"
    ],
@@ -4540,6 +5632,8 @@
    "abbr": "MED. r.",
    "total": 1,
    "resolved": 1,
+   "scan": 1,
+   "html": 0,
    "repos": [
     "medini"
    ],
@@ -4550,6 +5644,8 @@
    "abbr": "MED. th.",
    "total": 1,
    "resolved": 1,
+   "scan": 1,
+   "html": 0,
    "repos": [
     "medini"
    ],
@@ -4560,6 +5656,8 @@
    "abbr": "MED. y.",
    "total": 1,
    "resolved": 1,
+   "scan": 1,
+   "html": 0,
    "repos": [
     "medini"
    ],
@@ -4570,6 +5668,8 @@
    "abbr": "MED. ś.",
    "total": 1,
    "resolved": 1,
+   "scan": 1,
+   "html": 0,
    "repos": [
     "medini"
    ],
@@ -4580,6 +5680,8 @@
    "abbr": "MED. ḍh.",
    "total": 1,
    "resolved": 1,
+   "scan": 1,
+   "html": 0,
    "repos": [
     "medini"
    ],
@@ -4590,6 +5692,8 @@
    "abbr": "MED. ṣ.",
    "total": 1,
    "resolved": 1,
+   "scan": 1,
+   "html": 0,
    "repos": [
     "medini"
    ],
@@ -4600,6 +5704,8 @@
    "abbr": "MEGH. ed. ST. VI.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -4608,6 +5714,8 @@
    "abbr": "MUDHĀR.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -4616,6 +5724,8 @@
    "abbr": "MUIR, ST. (",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -4624,6 +5734,8 @@
    "abbr": "MUIR, ST. I,",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -4632,6 +5744,8 @@
    "abbr": "MUIR, ST. II,",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -4640,6 +5754,8 @@
    "abbr": "MÜLLER, St.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -4648,6 +5764,8 @@
    "abbr": "MĀRK.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -4656,6 +5774,8 @@
    "abbr": "MĀṆḌ. UP.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -4664,6 +5784,8 @@
    "abbr": "MṚCCH",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -4672,6 +5794,8 @@
    "abbr": "MṚCCH. ed. Calc.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -4680,6 +5804,8 @@
    "abbr": "MṚTYUL. UP.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -4688,6 +5814,8 @@
    "abbr": "NIDĀNA",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -4696,6 +5824,8 @@
    "abbr": "NILAK.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -4704,6 +5834,8 @@
    "abbr": "NIR. XXXIX",
    "total": 1,
    "resolved": 1,
+   "scan": 1,
+   "html": 0,
    "repos": [
     "nirukta"
    ],
@@ -4714,6 +5846,8 @@
    "abbr": "NYĀYAM.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -4722,6 +5856,8 @@
    "abbr": "Naiṣ.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -4730,6 +5866,8 @@
    "abbr": "NĀGĀN.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -4738,6 +5876,8 @@
    "abbr": "NĀRADA",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -4746,6 +5886,8 @@
    "abbr": "NĀṬYAŚ.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -4754,6 +5896,8 @@
    "abbr": "NĪLAK. zu MBH.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -4762,6 +5906,8 @@
    "abbr": "Nīlak.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -4770,6 +5916,8 @@
    "abbr": "NṚS. TĀP. UP.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -4778,6 +5926,8 @@
    "abbr": "OLDENBERG",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -4786,6 +5936,8 @@
    "abbr": "P. Einl.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -4794,6 +5946,8 @@
    "abbr": "PADMA-P.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -4802,6 +5956,8 @@
    "abbr": "PAIṬHĪNASI",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -4810,6 +5966,8 @@
    "abbr": "PARĀŚ.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -4818,6 +5976,8 @@
    "abbr": "PARĀŚARA",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -4826,6 +5986,8 @@
    "abbr": "PAT.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -4834,6 +5996,8 @@
    "abbr": "PAT. zu P.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -4842,6 +6006,8 @@
    "abbr": "PAÑCAT. Bd. I, S.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -4850,6 +6016,8 @@
    "abbr": "PAÑCAT. ed. Bomb.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -4858,6 +6026,8 @@
    "abbr": "PAÑCAT. ed. Bomb. IV,",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -4866,6 +6036,8 @@
    "abbr": "PRASAṄGĀBH.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -4874,6 +6046,8 @@
    "abbr": "PRATYABDAŚ.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -4882,6 +6056,8 @@
    "abbr": "PRAYOGASĀRA",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -4890,6 +6066,8 @@
    "abbr": "PRB.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -4898,6 +6076,8 @@
    "abbr": "PRĀT.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -4906,6 +6086,8 @@
    "abbr": "PURUṢ.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -4914,6 +6096,8 @@
    "abbr": "Pischel, Ved. Stud. I,",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -4922,6 +6106,8 @@
    "abbr": "Pischel, Ved. Studien I,",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -4930,6 +6116,8 @@
    "abbr": "Prabandh.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -4938,6 +6126,8 @@
    "abbr": "Praty. Hṛd.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -4946,6 +6136,8 @@
    "abbr": "PĀR.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -4954,6 +6146,8 @@
    "abbr": "R. Gorr.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -4962,6 +6156,8 @@
    "abbr": "R. III, S.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -4970,6 +6166,8 @@
    "abbr": "R. ed. SCHL.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -4978,6 +6176,8 @@
    "abbr": "R. ed. Ser.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -4986,6 +6186,8 @@
    "abbr": "RAGHUNĀTHAM",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -4994,6 +6196,8 @@
    "abbr": "RAKṢITA",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -5002,6 +6206,8 @@
    "abbr": "RATNAM.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -5010,6 +6216,8 @@
    "abbr": "REGNIER",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -5018,6 +6226,8 @@
    "abbr": "ROTH",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -5026,6 +6236,8 @@
    "abbr": "RUCISTAVA",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -5034,6 +6246,8 @@
    "abbr": "Rasas.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -5042,6 +6256,8 @@
    "abbr": "RĀJ.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -5050,6 +6266,8 @@
    "abbr": "RĀJA.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -5058,6 +6276,8 @@
    "abbr": "SARVAD.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -5066,6 +6286,8 @@
    "abbr": "SAUNĀGA",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -5074,6 +6296,8 @@
    "abbr": "SCHIEFNER",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -5082,6 +6306,8 @@
    "abbr": "SCHLEGEL",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -5090,6 +6316,8 @@
    "abbr": "SCHÜTZ",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -5098,6 +6326,8 @@
    "abbr": "SPAṢṬĀDH.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -5106,6 +6336,8 @@
    "abbr": "ST.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -5114,6 +6346,8 @@
    "abbr": "STENZ.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -5122,6 +6356,8 @@
    "abbr": "STENZLER",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -5130,6 +6366,8 @@
    "abbr": "STENZLER.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -5138,6 +6376,8 @@
    "abbr": "SUPARṆ.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -5146,6 +6386,8 @@
    "abbr": "SV. II.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -5154,6 +6396,8 @@
    "abbr": "Sam. I,",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -5162,6 +6406,8 @@
    "abbr": "Spruch",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -5170,6 +6416,8 @@
    "abbr": "Suśr.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -5178,6 +6426,8 @@
    "abbr": "SĀṂKHYAK. ed.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -5186,6 +6436,8 @@
    "abbr": "SĀṂKHYAPR. S.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -5194,6 +6446,8 @@
    "abbr": "Sāy.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -5202,6 +6456,8 @@
    "abbr": "SŪTRA",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -5210,6 +6466,8 @@
    "abbr": "TAITT. BR.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -5218,6 +6476,8 @@
    "abbr": "TAITT. PRĀT.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -5226,6 +6486,8 @@
    "abbr": "TAITT. PRĀT. <ab>Comm.</ab>",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -5234,6 +6496,8 @@
    "abbr": "TARKASAM̃GR.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -5242,6 +6506,8 @@
    "abbr": "TBR. Comm.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -5250,6 +6516,8 @@
    "abbr": "TR.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -5258,6 +6526,8 @@
    "abbr": "TRIPR.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -5266,6 +6536,8 @@
    "abbr": "TS. Comm.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -5274,6 +6546,8 @@
    "abbr": "TS. II,",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -5282,6 +6556,8 @@
    "abbr": "TS. PRĀT. <ab>Comm.</ab>",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -5290,6 +6566,8 @@
    "abbr": "Text zu Lot. de la b. l.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -5298,6 +6576,8 @@
    "abbr": "TĀRAN.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -5306,6 +6586,8 @@
    "abbr": "UJJVAL.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -5314,6 +6596,8 @@
    "abbr": "UP.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -5322,6 +6606,8 @@
    "abbr": "UPAK.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -5330,6 +6616,8 @@
    "abbr": "UTPALA zu VARĀH. BṚH.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -5338,6 +6626,8 @@
    "abbr": "UTTARAR. ed. Cow.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -5346,6 +6636,8 @@
    "abbr": "Uttamac.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -5354,6 +6646,8 @@
    "abbr": "Uttarar. V,",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -5362,6 +6656,8 @@
    "abbr": "VAIJ.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -5370,6 +6666,8 @@
    "abbr": "VARARUCI",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -5378,6 +6676,8 @@
    "abbr": "VARĀH. BṚH. S. S.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -5386,6 +6686,8 @@
    "abbr": "VARĀH. LAGHUJ.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -5394,6 +6696,8 @@
    "abbr": "VARĀH. YOGAY.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -5402,6 +6706,8 @@
    "abbr": "VARĀH.BṚH. S.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -5410,6 +6716,8 @@
    "abbr": "VIKR. drāv.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -5418,6 +6726,8 @@
    "abbr": "VIŚVA",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -5426,6 +6736,8 @@
    "abbr": "VIŚVA beim Sch.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -5434,6 +6746,8 @@
    "abbr": "VIŚVA.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -5442,6 +6756,8 @@
    "abbr": "VS. S.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -5450,6 +6766,8 @@
    "abbr": "VYĀḌI",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -5458,6 +6776,8 @@
    "abbr": "Verz. d. B. H.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -5466,6 +6786,8 @@
    "abbr": "Verz. d. B. H. No.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -5474,6 +6796,8 @@
    "abbr": "Viṣṇubh. III,",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -5482,6 +6806,8 @@
    "abbr": "VĀCASP.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -5490,6 +6816,8 @@
    "abbr": "VĀGBH.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -5498,6 +6826,8 @@
    "abbr": "VĀGBHAṬĀLAṂKĀRA",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -5506,6 +6836,8 @@
    "abbr": "VĀRĀHA-P.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -5514,6 +6846,8 @@
    "abbr": "VĀYU-P.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -5522,6 +6856,8 @@
    "abbr": "VṚDDHACĀṆ.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -5530,6 +6866,8 @@
    "abbr": "WEBER",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -5538,6 +6876,8 @@
    "abbr": "WEBER S.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -5546,6 +6886,8 @@
    "abbr": "WEST.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -5554,6 +6896,8 @@
    "abbr": "WESTERG.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -5562,6 +6906,8 @@
    "abbr": "WESTERGAARD",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -5570,6 +6916,8 @@
    "abbr": "WILS.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -5578,6 +6926,8 @@
    "abbr": "WILSON'S",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -5586,6 +6936,8 @@
    "abbr": "WILSON, SĀṂKHYAK. p.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -5594,6 +6946,8 @@
    "abbr": "WILSON, ebend. S.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -5602,6 +6956,8 @@
    "abbr": "WINDISCHMANN, Sancara",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -5610,6 +6966,8 @@
    "abbr": "WISE",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -5618,6 +6976,8 @@
    "abbr": "YAJÑADATTAV.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -5626,6 +6986,8 @@
    "abbr": "YANTRĀDHY.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -5634,6 +6996,8 @@
    "abbr": "YOGAYĀTRĀ",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -5642,6 +7006,8 @@
    "abbr": "YĀJN.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -5650,6 +7016,8 @@
    "abbr": "Z. d. d. m. G. IX, LXIV.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -5658,6 +7026,8 @@
    "abbr": "ZDMG",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -5666,6 +7036,8 @@
    "abbr": "ved.).",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -5674,6 +7046,8 @@
    "abbr": "{{BENFEY.,Chr.->BENF.Chr.||",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -5682,6 +7056,8 @@
    "abbr": "{{MEGH.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -5690,6 +7066,8 @@
    "abbr": "{{ŚR.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -5698,6 +7076,8 @@
    "abbr": "{{‹ed.› Vardh.->MBH.ed.Vardh.||",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -5706,6 +7086,8 @@
    "abbr": "Āpast.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -5714,6 +7096,8 @@
    "abbr": "ŚABDAC.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -5722,6 +7106,8 @@
    "abbr": "ŚABDAR.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -5730,6 +7116,8 @@
    "abbr": "ŚAṂK.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -5738,6 +7126,8 @@
    "abbr": "ŚAṂK. zu CHĀND. UP. S.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -5746,6 +7136,8 @@
    "abbr": "ŚIV.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -5754,6 +7146,8 @@
    "abbr": "ŚKDR.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -5762,6 +7156,8 @@
    "abbr": "ŚRUT. (BR.)",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -5770,6 +7166,8 @@
    "abbr": "ŚRUTI",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -5778,6 +7176,8 @@
    "abbr": "ŚRĪPATI",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -5786,6 +7186,8 @@
    "abbr": "ŚUK. ebend.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null
@@ -5794,6 +7196,8 @@
    "abbr": "ṢAḌGURUŚ.",
    "total": 1,
    "resolved": 0,
+   "scan": 0,
+   "html": 0,
    "repos": [],
    "sample_ref": null,
    "sample_url": null

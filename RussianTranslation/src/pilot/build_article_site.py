@@ -135,6 +135,28 @@ def _render(text, mode):
     return t.strip()
 
 
+_A_LS = re.compile(r'<a class=ls href=(\S+) target')   # resolved citation link
+_SPAN_LS = re.compile(r'<span class=ls>')              # unresolved citation
+
+
+def ls_stats(de_html_list):
+    """Count citations across a root's DE (source) senses: total <ls>, how many
+    are linked, and the scan/HTML split. RU/EN mirror the same citations, so the
+    DE surface is the authoritative reference set."""
+    tot = lnk = scan = html = 0
+    for h in de_html_list:
+        for m in _A_LS.finditer(h or ''):
+            tot += 1
+            lnk += 1
+            t = lsr.link_type(m.group(1))
+            if t == 'scan':
+                scan += 1
+            elif t == 'html':
+                html += 1
+        tot += len(_SPAN_LS.findall(h or ''))
+    return {'ls': tot, 'ls_linked': lnk, 'ls_scan': scan, 'ls_html': html}
+
+
 def _root_of(key1):
     return (key1 or '').split('~~')[0]
 
@@ -292,11 +314,14 @@ def build_model():
                 n_ru += 1 if s['has_ru'] else 0
                 n_en += 1 if s['has_en'] else 0
             subcards.append({'key': sub, 'h': h, 'iast': iast, 'senses': senses})
+        st = ls_stats([s['de_html'] for sc in subcards for s in sc['senses']])
         model.append({
             'root': root, 'iast': slp1_iast(root),
             'en_available': bool(en_by_sub), 'ru_available': bool(ru_rows),
             'n_subcards': len(subcards), 'n_senses': n_sense,
             'n_ru_senses': n_ru, 'n_en_senses': n_en,
+            'ls': st['ls'], 'ls_linked': st['ls_linked'],
+            'ls_scan': st['ls_scan'], 'ls_html': st['ls_html'],
             'subcards': subcards,
         })
     return model
@@ -361,6 +386,11 @@ INDEX_HTML = r"""<!doctype html><html lang="ru"><head><meta charset="utf-8">
 #main{flex:1;padding:20px 28px;max-width:900px}
 .iast{font-style:italic}
 h2.root{font-size:26px;margin:0 0 2px}.meta{color:var(--mut);font-size:13px;margin-bottom:14px}
+#arthead{position:relative}
+.lsstats{position:absolute;top:0;right:0;text-align:right;font-size:12px;line-height:1.4;max-width:48%}
+.lsstats .lsn{color:var(--fg)}.lsstats .lsn b{color:var(--accent)}
+.lsstats .lssub{color:var(--mut);font-size:11px}
+@media(max-width:620px){.lsstats{position:static;text-align:left;max-width:none;margin-bottom:8px}}
 .tabs{display:inline-flex;border:1px solid var(--line);border-radius:8px;overflow:hidden;margin-bottom:16px}
 .tabs .tab{border:0;border-right:1px solid var(--line);background:var(--bg);color:var(--fg);padding:6px 16px;cursor:pointer;font-size:14px}
 .tabs .tab:last-child{border-right:0}
@@ -425,7 +455,10 @@ function renderBody(r){
 }
 function renderRoot(r){
  cur=r.root;
- arthead.innerHTML='<h2 class="root iast">'+r.iast+'</h2>'
+ var ls=r.ls||0, lsp=ls?Math.round(100*r.ls_linked/ls):0, lsu=ls-(r.ls_linked||0);
+ var stats=ls?('<div class="lsstats"><div class="lsn"><b>'+ls+'</b> цитат · <b>'+lsp+'%</b> со ссылками</div>'
+  +'<div class="lssub">🖼 сканы '+(r.ls_scan||0)+' · 📄 HTML '+(r.ls_html||0)+' · ✗ без ссылки '+lsu+'</div></div>'):'';
+ arthead.innerHTML=stats+'<h2 class="root iast">'+r.iast+'</h2>'
   +'<div class="meta">PWG-статья · '+r.n_subcards+' под-карт., '+r.n_senses+' знач.'
   +' · <b>RU '+r.n_ru_senses+'/'+r.n_senses+'</b> · EN '+r.n_en_senses+'/'+r.n_senses
   +(r.n_ru_senses<r.n_senses?' <span class="cov low">RU неполный</span>':'')+'</div>'
@@ -481,7 +514,9 @@ def emit(model):
         index['roots'].append({
             'root': r['root'], 'safe': safe, 'iast': r['iast'], 'en_available': r['en_available'],
             'n_subcards': r['n_subcards'], 'n_senses': r['n_senses'],
-            'n_ru_senses': r['n_ru_senses'], 'n_en_senses': r['n_en_senses']})
+            'n_ru_senses': r['n_ru_senses'], 'n_en_senses': r['n_en_senses'],
+            'ls': r['ls'], 'ls_linked': r['ls_linked'],
+            'ls_scan': r['ls_scan'], 'ls_html': r['ls_html']})
         subs = [{'key': s['key'], 'h': s['h'], 'iast': s['iast'], 'senses': [
             {'tag': x['tag'], 'de_html': x['de_html'], 'ru_html': x['ru_html'],
              'en_html': x['en_html'], 'dcs': x['dcs'], 'src': x['src']}
