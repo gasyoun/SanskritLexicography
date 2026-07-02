@@ -9,6 +9,64 @@ then **cut a new version every time the changelog is updated** (promote
 
 ## [Unreleased]
 
+## [0.0.38] - 2026-07-02
+
+### Changed — FINDINGS.md: HTML Source styling reverted to plain blockquotes
+- The v0.0.37 `<div align="right">` + `<sub>` Source styling was **rejected on review**
+  ("looks ugly, never repeat") and removed same day. Every **Source** paragraph in
+  [`FINDINGS.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md)
+  (and [`Uprava/FINDINGS.md`](https://github.com/gasyoun/Uprava/blob/main/FINDINGS.md)) is now
+  a plain blockquote `> **Source:** …` — left indent + GitHub's muted rendering, zero HTML.
+  The no-HTML-in-md rule is restored as absolute (global rule, md-hygiene skill, and memory
+  updated with the tested-and-rejected verdict). § numbering from 0.0.37 stays.
+
+## [0.0.37] - 2026-07-02
+
+### Changed — FINDINGS.md: § signs + right-aligned small Source lines
+- Every finding number now carries the paragraph sign (`### §16. …`, mirrored in the index;
+  anchors unchanged — GitHub strips `§` from slugs). Every **Source** paragraph is right-aligned
+  small type via `<div align="right">` + `<sub>` — the one **sanctioned HTML** in the FINDINGS
+  registries (grey text is impossible on GitHub around clickable links; right+small is the
+  agreed stand-in). Same treatment in
+  [`Uprava/FINDINGS.md`](https://github.com/gasyoun/Uprava/blob/main/FINDINGS.md) (§1–§8).
+  The global no-HTML-in-md rule, the md-hygiene skill, and memory carry the matching carve-out.
+
+## [0.0.36] - 2026-07-02
+
+### Changed — FINDINGS.md: numbered findings + Source as own paragraph
+- Every finding in [`FINDINGS.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md)
+  now carries a paragraph number in its heading (1–40, **append-only** — a new finding takes
+  the next free number, existing numbers never shift, mirrored in the index anchors), and each
+  **Source** line is its own paragraph so it renders on a separate line. Same treatment applied
+  to the [`Uprava/FINDINGS.md`](https://github.com/gasyoun/Uprava/blob/main/FINDINGS.md) infra
+  registry (8 findings).
+
+## [0.0.35] - 2026-07-02
+
+### Changed — FINDINGS.md restructured into an indexed, anchored registry
+- [`FINDINGS.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md):
+  every finding is now a `###` heading with a stable anchor, plus a MEMORY-style one-line
+  index at the top (40 findings) — recall without reading bodies. Dated header + byline
+  added; the intro's `PILOT_LESSONS`/`SHARED_CODE` links upgraded to full blob URLs.
+- Re-sectioned: the four Sanskrit-data findings mis-filed under "Tooling & infra" moved to a
+  new **Etymology & derivation** section / "Dictionary structure & markup"; the CodeQL-has-no-PHP
+  finding moved to [`Uprava/FINDINGS.md`](https://github.com/gasyoun/Uprava/blob/main/FINDINGS.md)
+  (infra registry), leaving a pointer.
+
+### Added — 15 new verified findings from a six-repo sweep
+- Sweep of WhitneyRoots, VisualDCS, SanskritSpellCheck, csl-atlas, csl-apidev, csl-observatory,
+  csl-corrections + this repo (6 parallel Fable 5 `claude-fable-5` Explore agents, then a
+  dedicated Fable 5 fact-check agent re-verified every number against its source file — 12
+  agent-reported inaccuracies corrected before commit). Highlights: DCS `OccId`/`sent_id` non-unique (134,047
+  tokens / 449 sentences dropped pre-fix); UD `Tense=Past` conflates aorist/perfect; homonym
+  token-split ceiling (5/38 gaṇa-splittable); Sa→Ru glossary 86.6 % token coverage; PWG∩MW
+  union = 94,753; MW inherited PWG's apparatus skeleton (0.81 citation-order concordance);
+  gloss-language ortho-drift ∝ reform type (RU 358/1k ≫ DE 10.3 ≫ FR/EN ≤ 0.5 ≫ LA 0);
+  body-text headword mining dead end (38.6 % precision — negative result rescued from a
+  deleted review artifact).
+- Note: tag `v0.0.34` exists (kosha triage, 2026-07-02) without a changelog entry — left as-is;
+  this release is numbered past it.
+
 ## [0.0.33] - 2026-06-29
 
 ### Added — grammar-layer FAIR package + VedaWeb accent-axis probe (follow-up to 0.0.32)
