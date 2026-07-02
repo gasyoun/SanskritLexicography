@@ -9,6 +9,16 @@ then **cut a new version every time the changelog is updated** (promote
 
 ## [Unreleased]
 
+## [0.0.39] - 2026-07-02
+
+### Added — FINDINGS.md: importance labels on every finding
+- Every finding (§1–§43) now carries a 3-level colour dot at the start of its claim line and
+  index entry — 🔴 3 important · 🟠 2 medium · 🟡 1 not that important — mirroring the issue
+  taxonomy's severity palette (minor/medium/hard). Legend + assign-on-append rule added to the
+  schema. Same treatment in
+  [`Uprava/FINDINGS.md`](https://github.com/gasyoun/Uprava/blob/main/FINDINGS.md) (§1–§9).
+  Plain emoji — no HTML; heading anchors untouched (dots live outside the headings).
+
 ## [0.0.38] - 2026-07-02
 
 ### Changed — FINDINGS.md: HTML Source styling reverted to plain blockquotes
