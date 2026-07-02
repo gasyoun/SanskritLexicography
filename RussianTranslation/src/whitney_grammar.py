@@ -152,11 +152,23 @@ def _load():
 
 
 def grammar_for(slp1, homonym=None):
-    """Return the grammar block(s) for an SLP1 root. With homonym, the single match
-    (Whitney homonym index); without, all homonyms (caller disambiguates)."""
+    """Return the grammar block(s) for an SLP1 root. With homonym, ONLY the matching Whitney
+    homonym; without, all homonyms (caller disambiguates).
+
+    Homonym-safety contract: when a specific homonym is requested but this root's Whitney
+    records don't carry it, return an EMPTY list and warn — NEVER fall back to all homonyms.
+    Attaching another homonym's grammar (a different verb, different class/PPP) is a silent
+    wrong-root error, worse than showing no grammar (collides with the siD homonym-safety
+    finding). Roots absent from Whitney entirely return empty silently (no spurious warning)."""
     recs = _load().get(slp1, [])
     if homonym is not None:
-        recs = [r for r in recs if r.get('homonym') == str(homonym)] or recs
+        match = [r for r in recs if r.get('homonym') == str(homonym)]
+        if not match and recs:
+            have = ', '.join(sorted(r.get('homonym') or '?' for r in recs))
+            print('whitney_grammar: root %r has no Whitney homonym %r (has: %s) — returning '
+                  'no grammar rather than a wrong-homonym block' % (slp1, str(homonym), have),
+                  file=sys.stderr)
+        return match
     return recs
 
 
