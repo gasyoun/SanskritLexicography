@@ -2,9 +2,26 @@
 
 _Created: 02-07-2026 · Last updated: 02-07-2026_
 
-**To start this work:** Read
-[`HANDOFF_2026-07-02_pwg_selfheal_tm_then_RU.md`](https://github.com/gasyoun/SanskritLexicography/blob/feat/pwg-en-fu1-phase0/RussianTranslation/HANDOFF_2026-07-02_pwg_selfheal_tm_then_RU.md)
-and execute it.
+## How M.G. runs me (3 steps)
+1. Open a NEW chat with the working directory `C:\Users\user\Documents\GitHub\SanskritLexicography`.
+2. In the model picker select **Opus 4.8** (`claude-opus-4-8`) — the orchestration model (it
+   drives the Workflow: generating harnesses, launching runs, save/harvest, retry + sense-dupe
+   judgment). Generation is pinned INSIDE the harness, not by the picker.
+3. Type exactly (copy-paste-ready):
+
+```
+folder: C:\Users\user\Documents\GitHub\SanskritLexicography · model: Opus 4.8 (claude-opus-4-8)
+Read C:\Users\user\Documents\GitHub\SanskritLexicography\RussianTranslation\HANDOFF_2026-07-02_pwg_selfheal_tm_then_RU.md and execute it.
+```
+
+**Agent, your first action:** (a) confirm the running model is **Opus 4.8 (`claude-opus-4-8`)**
+from THIS session's env block — if it is a different tier, STOP and tell M.G. to switch the
+picker. (b) concurrency check: `git log -3` / `git status` + this repo's
+[`.ai_state.md`](https://github.com/gasyoun/SanskritLexicography/blob/feat/pwg-en-fu1-phase0/RussianTranslation/.ai_state.md)
+WIP — if the RU run is already in progress in another chat (a topic branch ahead, matching WIP
+notes, a just-merged PR), STOP and report instead of duplicating.
+**⚠️ Generation model:** the RU harness uses the `sonnet` alias, which drifted to
+`claude-sonnet-5` on 02-07 — pass `--gen-model-version` to pin it (see project_pwg_ru_max_staged_run).
 
 **Branch:** `feat/pwg-en-fu1-phase0` (off `master`). **⚠️ A second (autonomous) account
 cycles the local checkout across branches mid-session and leaves uncommitted work in it**
