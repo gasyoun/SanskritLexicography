@@ -9,6 +9,24 @@ then **cut a new version every time the changelog is updated** (promote
 
 ## [Unreleased]
 
+## [0.0.42] - 2026-07-02
+
+### Changed — A36 ready to send (Fable S9 pre-submission pass)
+- [`papers/A36_latin_obscena_note.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/papers/A36_latin_obscena_note.md)
+  reaches **5/5 ready-to-send** for *Beiträge zur Geschichte der Sprachwissenschaft*: referee-style
+  review [`papers/A36_review_fable5.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/papers/A36_review_fable5.md)
+  (7 major + 7 minor findings, all applied same pass — history-first retitle, Liddell–Scott /
+  Cambridge-Greek-Lexicon comparandum in §0, Bopp-has-no-√yabh + MW72-etymological-*cunnus*
+  source corrections against csl-orig, Adams register set re-defined, §3c table repaired; every
+  table figure re-verified against the three CSVs). Cover letters (EN/DE) synced.
+  ([PR #74](https://github.com/gasyoun/SanskritLexicography/pull/74)) — Fable 5 (`claude-fable-5`).
+
+### Added — FINDINGS §44
+- Raw Latin-string tallies over gloss text include etymological false positives (MW72's lone
+  *cunnus* glosses a Lithuanian cognate); Bopp lacks √*yabh* entirely — reuse caveats for
+  [`papers/A36_corpus_screen.csv`](https://github.com/gasyoun/SanskritLexicography/blob/master/papers/A36_corpus_screen.csv).
+  ([PR #76](https://github.com/gasyoun/SanskritLexicography/pull/76))
+
 ## [0.0.41] - 2026-07-02
 
 ### Fixed — dashboard: single-snapshot charts no longer render as a floating dot
