@@ -760,6 +760,65 @@ def test_en_gate_strict_has_teeth():
             os.remove(report_path)
 
 
+def test_markup_loss_soft_flag_ru():
+    """S7 rec 1 (RU): a dropped {%..%} gloss wrapper is a SOFT, report-only signal —
+    markup_wrapper_dropped fires at low severity and is NEVER a requeue trigger; a retained
+    side-by-side {%German%} echo (required by the side-by-side convention) must NOT fire it."""
+    from prompt_rule_audit import HIGH_CONFIDENCE_RISKS, semantic_risks
+
+    def risks(german, russian):
+        card = {'card': {'key1': 'x', 'iast': 'x', 'notes': '', 'records': [{
+            'h': 'x', 'grammar': 'ind.', 'senses': [{
+                'tag': '1', 'german': german, 'russian': russian,
+                'equivalence_type': 'explanatory', 'source_type': 'lexicographic',
+                'stratum': '', 'differentia': ''}]}]}}
+        return semantic_risks(card)
+
+    if 'markup_wrapper_dropped' in HIGH_CONFIDENCE_RISKS:
+        fail('markup_wrapper_dropped must stay out of the requeue set (report-only)')
+    dropped = [r for r in risks('{%nachgehen%}', 'следовать за')
+               if r['id'] == 'markup_wrapper_dropped']
+    if not dropped:
+        fail('markup_wrapper_dropped did not fire on a dropped {%..%} wrapper')
+    if dropped[0].get('level') != 'low' or dropped[0].get('high_confidence'):
+        fail('markup_wrapper_dropped must be soft (low, non-high-confidence)')
+    kept = risks('{%herfallen über%}', 'нападать на ({%herfallen über%})')
+    if any(r['id'] == 'markup_wrapper_dropped' for r in kept):
+        fail('markup_wrapper_dropped wrongly fired on a retained side-by-side {%..%} echo')
+
+
+def test_markup_loss_soft_flag_en():
+    """S7 rec 1 (EN): dropped {%..%} gloss wrappers are the dominant EN residual; the EN gate
+    must flag them as SOFT MARKUP-LOSS — counted in the report but never hard, so --strict
+    still exits 0 when MARKUP-LOSS is the only issue on a non-null card."""
+    from audit_window_en import is_hard
+    if is_hard('MARKUP-LOSS'):
+        fail('MARKUP-LOSS must be a SOFT flag, never hard')
+    fixture = {'meta': {'root': 'zz'}, 'results': [
+        {'key': 'zz~~h0_00_pwg00', 'card': {'iast': 'zz', 'records': [
+            {'h': '1', 'senses': [{'tag': '1',
+             'german': '{%to fall upon%} {%to attack%}',
+             'english': 'to fall upon, to attack'}]}]}},
+    ]}
+    with tempfile.NamedTemporaryFile('w', encoding='utf-8', suffix='.json', delete=False) as f:
+        wf_path = f.name
+        json.dump(fixture, f, ensure_ascii=False)
+    report_path = wf_path + '.report.json'
+    en_audit = os.path.join(HERE, 'audit_window_en.py')
+    try:
+        run([sys.executable, en_audit, wf_path, '--no-mw', '--strict', '--report', report_path],
+            expect=0)
+        rep = json.load(open(report_path, encoding='utf-8'))
+        if rep.get('flag_counts', {}).get('MARKUP-LOSS', 0) < 1:
+            fail('EN gate did not count the dropped {%..%} wrappers as MARKUP-LOSS')
+        if rep.get('strict_reasons'):
+            fail('a soft MARKUP-LOSS must not produce a strict failure reason')
+    finally:
+        os.remove(wf_path)
+        if os.path.exists(report_path):
+            os.remove(report_path)
+
+
 def test_ru_coverage_denominator_not_silently_exempt():
     """FL3: a corrupt EN denominator must FAIL the coverage gate (not be silently skipped),
     and a RU root with no denominator must be surfaced as UNVERIFIABLE (the gam 6/127 blind
@@ -896,6 +955,8 @@ def main():
         test_attested_text_signal_redesign,
         test_nws_fp_suppressed,
         test_en_gate_strict_has_teeth,
+        test_markup_loss_soft_flag_ru,
+        test_markup_loss_soft_flag_en,
         test_ru_coverage_denominator_not_silently_exempt,
         test_whitney_homonym_safety,
         test_stale_refusal_preserves_requeue,
