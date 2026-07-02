@@ -1,0 +1,2478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Renou Step-0 pilot review — 70 items</title>
+<style>
+  :root { --bg:#0f1115; --panel:#171a21; --panel2:#1e222b; --text:#e6e6e6; --muted:#9aa0aa;
+          --accent:#5b8cff; --ok:#3fb950; --bad:#f85149; --defer:#d29922; --border:#2a2f3a; }
+  * { box-sizing: border-box; }
+  body { background:var(--bg); color:var(--text); font-family: -apple-system, Segoe UI, Roboto, sans-serif;
+         margin:0; padding:0 0 120px 0; }
+  header.top { position:sticky; top:0; z-index:10; background:var(--panel); border-bottom:1px solid var(--border);
+               padding:14px 20px; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:10px;}
+  header.top h1 { font-size:16px; margin:0; }
+  header.top .sub { color:var(--muted); font-size:12px; }
+  .tally { display:flex; gap:14px; font-size:13px; }
+  .tally span.count { font-weight:700; }
+  .tally .approve { color:var(--ok); } .tally .reject { color:var(--bad); }
+  .tally .defer { color:var(--defer); } .tally .unvoted { color:var(--muted); }
+  .toolbar { padding:10px 20px; display:flex; gap:10px; align-items:center; flex-wrap:wrap; }
+  button.dl { background:var(--accent); color:#fff; border:none; padding:8px 14px; border-radius:6px;
+              cursor:pointer; font-size:13px; }
+  button.dl:hover { opacity:.9; }
+  .filterbar { display:flex; gap:6px; flex-wrap:wrap; }
+  .filterbar button { background:var(--panel2); border:1px solid var(--border); color:var(--text);
+                       padding:6px 10px; border-radius:14px; font-size:12px; cursor:pointer; }
+  .filterbar button.active { border-color:var(--accent); color:var(--accent); }
+  main { max-width:980px; margin:0 auto; padding:10px 20px; }
+  .card { background:var(--panel); border:1px solid var(--border); border-radius:10px; padding:16px;
+          margin-bottom:16px; }
+  .card.voted-approve { border-left:4px solid var(--ok); }
+  .card.voted-reject { border-left:4px solid var(--bad); }
+  .card.voted-defer { border-left:4px solid var(--defer); }
+  .card header { display:flex; justify-content:space-between; align-items:baseline; }
+  .card .hw { font-size:18px; font-weight:700; }
+  .dict-badge { font-size:11px; background:var(--panel2); padding:2px 8px; border-radius:10px;
+                margin-left:8px; color:var(--muted); }
+  .stratum-badge { font-size:11px; color:var(--muted); }
+  .key2 { color:var(--muted); font-size:12px; margin:2px 0 8px; }
+  .question { margin:8px 0 12px; font-size:14px; }
+  .grid { display:grid; grid-template-columns: 1fr 1fr 1fr; gap:12px; margin-bottom:12px; }
+  .panel { background:var(--panel2); border-radius:8px; padding:10px 12px; font-size:13px; }
+  .panel h4 { margin:0 0 6px; font-size:11px; text-transform:uppercase; letter-spacing:.04em; color:var(--muted); }
+  .chip { display:inline-block; background:#263042; border-radius:5px; padding:2px 7px; margin:2px 3px 2px 0;
+          font-size:12px; }
+  .chip.small { font-size:11px; padding:1px 6px; }
+  ul.cites { margin:0; padding-left:18px; }
+  ul.cites li { margin-bottom:3px; }
+  .muted { color:var(--muted); font-style:italic; }
+  .controls { display:flex; align-items:center; gap:8px; }
+  button.vote { border:1px solid var(--border); background:var(--panel2); color:var(--text);
+                padding:7px 12px; border-radius:6px; cursor:pointer; font-size:13px; }
+  button.vote.approve.active { background:var(--ok); border-color:var(--ok); color:#04240b; }
+  button.vote.reject.active { background:var(--bad); border-color:var(--bad); color:#2a0a08; }
+  button.vote.defer.active { background:var(--defer); border-color:var(--defer); color:#2a1d02; }
+  .vote-state { margin-left:6px; font-size:12px; color:var(--muted); }
+  textarea.note { width:100%; margin-top:10px; min-height:44px; background:#11141a; color:var(--text);
+                  border:1px solid var(--border); border-radius:6px; padding:8px; font-size:13px;
+                  font-family:inherit; resize:vertical; }
+  footer.hint { max-width:980px; margin:20px auto; padding:0 20px; color:var(--muted); font-size:12px; }
+  kbd { background:#263042; border-radius:4px; padding:1px 5px; font-size:11px; }
+</style>
+</head>
+<body>
+<header class="top">
+  <div>
+    <h1>Renou Step-0 pilot human validation — 70 items</h1>
+    <div class="sub">Generated 2026-07-02 &middot; sheet_id <code>renou-pilot-2026-07-02</code> &middot;
+      strata A(dcs-only) B(bhs-only V) C(maximal-span) D(single-era dcs_adds) E(controls)</div>
+  </div>
+  <div class="tally" id="tally">
+    <span class="approve">&#9989; <span class="count" id="c-approve">0</span></span>
+    <span class="reject">&#10060; <span class="count" id="c-reject">0</span></span>
+    <span class="defer">&#9208; <span class="count" id="c-defer">0</span></span>
+    <span class="unvoted">&#9711; <span class="count" id="c-unvoted">70</span></span>
+  </div>
+</header>
+<div class="toolbar">
+  <button class="dl" id="downloadBtn">Download decisions.json</button>
+  <div class="filterbar" id="filterbar">
+    <button data-filter="all" class="active">all</button>
+    <button data-filter="A">A</button>
+    <button data-filter="B">B</button>
+    <button data-filter="C">C</button>
+    <button data-filter="D">D</button>
+    <button data-filter="E">E</button>
+    <button data-filter="unvoted">unvoted only</button>
+  </div>
+</div>
+<main id="cards">
+
+  <section class="card" data-id="S0-001" data-stratum="A">
+    <header>
+      <div class="hw">śvapac <span class="dict-badge">PW</span></div>
+      <div class="stratum-badge">A — dcs-only states</div>
+    </header>
+    <div class="key2">key2: Svapac</div>
+    <div class="question">Is state <b>I</b> (I Vedic) justified for <b>śvapac</b> — is the word genuinely attested in that Sanskrit?</div>
+    <div class="grid">
+      <div class="panel">
+        <h4>renou_enriched (all states)</h4>
+        <div><span class="chip small">I</span> <span class="chip small">III</span></div>
+        <h4>renou_provenance (signal per state)</h4>
+        <div><span class="chip">I: dcs</span> <span class="chip">III: dcs</span></div>
+      </div>
+      <div class="panel">
+        <h4>Resolved &lt;ls&gt; citations</h4>
+        <div class="muted">no resolved &lt;ls&gt; citations recovered</div>
+      </div>
+      <div class="panel">
+        <h4>DCS evidence for state I</h4>
+        <div>lemma total: <b>2</b> DCS texts &middot; oldest attestation: <b>Manusmṛti</b> (200) </div><div>this state: confidence <b>medium</b>, n=<b>1</b> texts</div>
+      </div>
+    </div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Approve</button>
+      <button class="vote reject" data-vote="reject">&#10060; Reject</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="S0-002" data-stratum="A">
+    <header>
+      <div class="hw">sru <span class="dict-badge">PW</span></div>
+      <div class="stratum-badge">A — dcs-only states</div>
+    </header>
+    <div class="key2">key2: sru √</div>
+    <div class="question">Is state <b>II</b> (II Pāṇinian) justified for <b>sru</b> — is the word genuinely attested in that Sanskrit?</div>
+    <div class="grid">
+      <div class="panel">
+        <h4>renou_enriched (all states)</h4>
+        <div><span class="chip small">I</span> <span class="chip small">II</span> <span class="chip small">III</span> <span class="chip small">IV</span> <span class="chip small">V</span></div>
+        <h4>renou_provenance (signal per state)</h4>
+        <div><span class="chip">I: dcs</span> <span class="chip">II: dcs</span> <span class="chip">III: dcs</span> <span class="chip">IV: dcs</span> <span class="chip">V: dcs</span></div>
+      </div>
+      <div class="panel">
+        <h4>Resolved &lt;ls&gt; citations</h4>
+        <div class="muted">no resolved &lt;ls&gt; citations recovered</div>
+      </div>
+      <div class="panel">
+        <h4>DCS evidence for state II</h4>
+        <div>lemma total: <b>89</b> DCS texts &middot; oldest attestation: <b>Ṛgveda</b> (-1350) </div><div>this state: confidence <b>medium</b>, n=<b>1</b> texts</div>
+      </div>
+    </div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Approve</button>
+      <button class="vote reject" data-vote="reject">&#10060; Reject</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="S0-003" data-stratum="A">
+    <header>
+      <div class="hw">bhoja <span class="dict-badge">PWG</span></div>
+      <div class="stratum-badge">A — dcs-only states</div>
+    </header>
+    <div class="key2">key2: Boja</div>
+    <div class="question">Is state <b>III</b> (III Epic) justified for <b>bhoja</b> — is the word genuinely attested in that Sanskrit?</div>
+    <div class="grid">
+      <div class="panel">
+        <h4>renou_enriched (all states)</h4>
+        <div><span class="chip small">I</span> <span class="chip small">III</span> <span class="chip small">IV</span></div>
+        <h4>renou_provenance (signal per state)</h4>
+        <div><span class="chip">I: dcs</span> <span class="chip">III: dcs</span> <span class="chip">IV: dcs</span></div>
+      </div>
+      <div class="panel">
+        <h4>Resolved &lt;ls&gt; citations</h4>
+        <div class="muted">no resolved &lt;ls&gt; citations recovered</div>
+      </div>
+      <div class="panel">
+        <h4>DCS evidence for state III</h4>
+        <div>lemma total: <b>19</b> DCS texts &middot; oldest attestation: <b>Ṛgveda</b> (-1350) </div><div>this state: confidence <b>high</b>, n=<b>11</b> texts</div>
+      </div>
+    </div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Approve</button>
+      <button class="vote reject" data-vote="reject">&#10060; Reject</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="S0-004" data-stratum="A">
+    <header>
+      <div class="hw">dāsa <span class="dict-badge">MW</span></div>
+      <div class="stratum-badge">A — dcs-only states</div>
+    </header>
+    <div class="key2">key2: dAsa/</div>
+    <div class="question">Is state <b>IV</b> (IV Classical) justified for <b>dāsa</b> — is the word genuinely attested in that Sanskrit?</div>
+    <div class="grid">
+      <div class="panel">
+        <h4>renou_enriched (all states)</h4>
+        <div><span class="chip small">I</span> <span class="chip small">III</span> <span class="chip small">IV</span> <span class="chip small">V</span></div>
+        <h4>renou_provenance (signal per state)</h4>
+        <div><span class="chip">I: dcs</span> <span class="chip">III: dcs</span> <span class="chip">IV: dcs</span> <span class="chip">V: dcs</span></div>
+      </div>
+      <div class="panel">
+        <h4>Resolved &lt;ls&gt; citations</h4>
+        <ul class="cites"><li><b>L</b> — lexicographers (kośa tradition) (state IV, date 1100)</li></ul>
+      </div>
+      <div class="panel">
+        <h4>DCS evidence for state IV</h4>
+        <div>lemma total: <b>65</b> DCS texts &middot; oldest attestation: <b>Ṛgveda</b> (-1350) </div><div>this state: confidence <b>high</b>, n=<b>26</b> texts</div>
+      </div>
+    </div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Approve</button>
+      <button class="vote reject" data-vote="reject">&#10060; Reject</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="S0-005" data-stratum="A">
+    <header>
+      <div class="hw">gad <span class="dict-badge">PWG</span></div>
+      <div class="stratum-badge">A — dcs-only states</div>
+    </header>
+    <div class="key2">key2: gad</div>
+    <div class="question">Is state <b>V</b> (V Buddhist/Jaina) justified for <b>gad</b> — is the word genuinely attested in that Sanskrit?</div>
+    <div class="grid">
+      <div class="panel">
+        <h4>renou_enriched (all states)</h4>
+        <div><span class="chip small">I</span> <span class="chip small">III</span> <span class="chip small">IV</span> <span class="chip small">V</span></div>
+        <h4>renou_provenance (signal per state)</h4>
+        <div><span class="chip">I: dcs</span> <span class="chip">III: dcs</span> <span class="chip">IV: dcs</span> <span class="chip">V: dcs</span></div>
+      </div>
+      <div class="panel">
+        <h4>Resolved &lt;ls&gt; citations</h4>
+        <div class="muted">no resolved &lt;ls&gt; citations recovered</div>
+      </div>
+      <div class="panel">
+        <h4>DCS evidence for state V</h4>
+        <div>lemma total: <b>56</b> DCS texts &middot; oldest attestation: <b>Atharvaveda (Śaunaka)</b> (-550) </div><div>this state: confidence <b>medium</b>, n=<b>1</b> texts</div>
+      </div>
+    </div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Approve</button>
+      <button class="vote reject" data-vote="reject">&#10060; Reject</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="S0-006" data-stratum="A">
+    <header>
+      <div class="hw">kuṇḍalin <span class="dict-badge">AP</span></div>
+      <div class="stratum-badge">A — dcs-only states</div>
+    </header>
+    <div class="key2">key2: kuRqalin</div>
+    <div class="question">Is state <b>I</b> (I Vedic) justified for <b>kuṇḍalin</b> — is the word genuinely attested in that Sanskrit?</div>
+    <div class="grid">
+      <div class="panel">
+        <h4>renou_enriched (all states)</h4>
+        <div><span class="chip small">I</span> <span class="chip small">III</span> <span class="chip small">IV</span></div>
+        <h4>renou_provenance (signal per state)</h4>
+        <div><span class="chip">I: dcs</span> <span class="chip">III: dcs</span> <span class="chip">IV: dcs</span></div>
+      </div>
+      <div class="panel">
+        <h4>Resolved &lt;ls&gt; citations</h4>
+        <div class="muted">no resolved &lt;ls&gt; citations recovered</div>
+      </div>
+      <div class="panel">
+        <h4>DCS evidence for state I</h4>
+        <div>lemma total: <b>21</b> DCS texts &middot; oldest attestation: <b>Bhāradvājaśrautasūtra</b> (-550) </div><div>this state: confidence <b>medium</b>, n=<b>1</b> texts</div>
+      </div>
+    </div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Approve</button>
+      <button class="vote reject" data-vote="reject">&#10060; Reject</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="S0-007" data-stratum="A">
+    <header>
+      <div class="hw">vikṛti <span class="dict-badge">MW</span></div>
+      <div class="stratum-badge">A — dcs-only states</div>
+    </header>
+    <div class="key2">key2: vi/-kfti</div>
+    <div class="question">Is state <b>II</b> (II Pāṇinian) justified for <b>vikṛti</b> — is the word genuinely attested in that Sanskrit?</div>
+    <div class="grid">
+      <div class="panel">
+        <h4>renou_enriched (all states)</h4>
+        <div><span class="chip small">I</span> <span class="chip small">II</span> <span class="chip small">III</span> <span class="chip small">IV</span> <span class="chip small">V</span></div>
+        <h4>renou_provenance (signal per state)</h4>
+        <div><span class="chip">I: dcs</span> <span class="chip">II: dcs</span> <span class="chip">III: ls+dcs</span> <span class="chip">IV: dcs</span> <span class="chip">V: dcs</span></div>
+      </div>
+      <div class="panel">
+        <h4>Resolved &lt;ls&gt; citations</h4>
+        <ul class="cites"><li><b>VP</b> — Viṣṇu-Purāṇa (state III, date 450)</li></ul>
+      </div>
+      <div class="panel">
+        <h4>DCS evidence for state II</h4>
+        <div>lemma total: <b>63</b> DCS texts &middot; oldest attestation: <b>Aitareyabrāhmaṇa</b> (-800) </div><div>this state: confidence <b>medium</b>, n=<b>1</b> texts</div>
+      </div>
+    </div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Approve</button>
+      <button class="vote reject" data-vote="reject">&#10060; Reject</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="S0-008" data-stratum="A">
+    <header>
+      <div class="hw">ākāśa <span class="dict-badge">BHS</span></div>
+      <div class="stratum-badge">A — dcs-only states</div>
+    </header>
+    <div class="key2">key2: AkASa</div>
+    <div class="question">Is state <b>III</b> (III Epic) justified for <b>ākāśa</b> — is the word genuinely attested in that Sanskrit?</div>
+    <div class="grid">
+      <div class="panel">
+        <h4>renou_enriched (all states)</h4>
+        <div><span class="chip small">I</span> <span class="chip small">III</span> <span class="chip small">IV</span> <span class="chip small">V</span></div>
+        <h4>renou_provenance (signal per state)</h4>
+        <div><span class="chip">I: dcs</span> <span class="chip">III: dcs</span> <span class="chip">IV: dcs</span> <span class="chip">V: ls+dcs</span></div>
+      </div>
+      <div class="panel">
+        <h4>Resolved &lt;ls&gt; citations</h4>
+        <ul class="cites"><li><b>SP</b> — SP (state V, date 200)</li><li><b>Bbh</b> — Bbh (state V, date 200)</li><li><b>KP</b> — KP (state V, date 200)</li></ul>
+      </div>
+      <div class="panel">
+        <h4>DCS evidence for state III</h4>
+        <div>lemma total: <b>139</b> DCS texts &middot; oldest attestation: <b>Aitareyabrāhmaṇa</b> (-800) </div><div>this state: confidence <b>high</b>, n=<b>32</b> texts</div>
+      </div>
+    </div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Approve</button>
+      <button class="vote reject" data-vote="reject">&#10060; Reject</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="S0-009" data-stratum="A">
+    <header>
+      <div class="hw">mṛtyuṃjaya <span class="dict-badge">BEN</span></div>
+      <div class="stratum-badge">A — dcs-only states</div>
+    </header>
+    <div class="key2">key2: mftyuMjaya</div>
+    <div class="question">Is state <b>IV</b> (IV Classical) justified for <b>mṛtyuṃjaya</b> — is the word genuinely attested in that Sanskrit?</div>
+    <div class="grid">
+      <div class="panel">
+        <h4>renou_enriched (all states)</h4>
+        <div><span class="chip small">III</span> <span class="chip small">IV</span></div>
+        <h4>renou_provenance (signal per state)</h4>
+        <div><span class="chip">III: dcs</span> <span class="chip">IV: dcs</span></div>
+      </div>
+      <div class="panel">
+        <h4>Resolved &lt;ls&gt; citations</h4>
+        <div class="muted">no resolved &lt;ls&gt; citations recovered</div>
+      </div>
+      <div class="panel">
+        <h4>DCS evidence for state IV</h4>
+        <div>lemma total: <b>19</b> DCS texts &middot; oldest attestation: <b>Amarakośa</b> (600) </div><div>this state: confidence <b>high</b>, n=<b>15</b> texts</div>
+      </div>
+    </div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Approve</button>
+      <button class="vote reject" data-vote="reject">&#10060; Reject</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="S0-010" data-stratum="A">
+    <header>
+      <div class="hw">pravaṇa <span class="dict-badge">MW</span></div>
+      <div class="stratum-badge">A — dcs-only states</div>
+    </header>
+    <div class="key2">key2: pra-vaRa/</div>
+    <div class="question">Is state <b>V</b> (V Buddhist/Jaina) justified for <b>pravaṇa</b> — is the word genuinely attested in that Sanskrit?</div>
+    <div class="grid">
+      <div class="panel">
+        <h4>renou_enriched (all states)</h4>
+        <div><span class="chip small">I</span> <span class="chip small">III</span> <span class="chip small">IV</span> <span class="chip small">V</span></div>
+        <h4>renou_provenance (signal per state)</h4>
+        <div><span class="chip">I: dcs</span> <span class="chip">III: ls+dcs</span> <span class="chip">IV: ls+dcs</span> <span class="chip">V: dcs</span></div>
+      </div>
+      <div class="panel">
+        <h4>Resolved &lt;ls&gt; citations</h4>
+        <div class="muted">no resolved &lt;ls&gt; citations recovered</div>
+      </div>
+      <div class="panel">
+        <h4>DCS evidence for state V</h4>
+        <div>lemma total: <b>64</b> DCS texts &middot; oldest attestation: <b>Ṛgveda</b> (-1350) </div><div>this state: confidence <b>high</b>, n=<b>4</b> texts</div>
+      </div>
+    </div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Approve</button>
+      <button class="vote reject" data-vote="reject">&#10060; Reject</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="S0-011" data-stratum="A">
+    <header>
+      <div class="hw">mārutī <span class="dict-badge">AP</span></div>
+      <div class="stratum-badge">A — dcs-only states</div>
+    </header>
+    <div class="key2">key2: mArutI</div>
+    <div class="question">Is state <b>I</b> (I Vedic) justified for <b>mārutī</b> — is the word genuinely attested in that Sanskrit?</div>
+    <div class="grid">
+      <div class="panel">
+        <h4>renou_enriched (all states)</h4>
+        <div><span class="chip small">I</span> <span class="chip small">IV</span></div>
+        <h4>renou_provenance (signal per state)</h4>
+        <div><span class="chip">I: dcs</span> <span class="chip">IV: dcs</span></div>
+      </div>
+      <div class="panel">
+        <h4>Resolved &lt;ls&gt; citations</h4>
+        <div class="muted">no resolved &lt;ls&gt; citations recovered</div>
+      </div>
+      <div class="panel">
+        <h4>DCS evidence for state I</h4>
+        <div>lemma total: <b>2</b> DCS texts &middot; oldest attestation: <b>Vārāhaśrautasūtra</b> (-550) </div><div>this state: confidence <b>medium</b>, n=<b>1</b> texts</div>
+      </div>
+    </div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Approve</button>
+      <button class="vote reject" data-vote="reject">&#10060; Reject</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="S0-012" data-stratum="A">
+    <header>
+      <div class="hw">vidhā <span class="dict-badge">MW</span></div>
+      <div class="stratum-badge">A — dcs-only states</div>
+    </header>
+    <div class="key2">key2: vi-DA/</div>
+    <div class="question">Is state <b>II</b> (II Pāṇinian) justified for <b>vidhā</b> — is the word genuinely attested in that Sanskrit?</div>
+    <div class="grid">
+      <div class="panel">
+        <h4>renou_enriched (all states)</h4>
+        <div><span class="chip small">I</span> <span class="chip small">II</span> <span class="chip small">III</span> <span class="chip small">IV</span> <span class="chip small">V</span></div>
+        <h4>renou_provenance (signal per state)</h4>
+        <div><span class="chip">I: ls+dcs</span> <span class="chip">II: dcs</span> <span class="chip">III: dcs</span> <span class="chip">IV: dcs</span> <span class="chip">V: dcs</span></div>
+      </div>
+      <div class="panel">
+        <h4>Resolved &lt;ls&gt; citations</h4>
+        <ul class="cites"><li><b>L</b> — lexicographers (kośa tradition) (state IV, date 1100)</li></ul>
+      </div>
+      <div class="panel">
+        <h4>DCS evidence for state II</h4>
+        <div>lemma total: <b>175</b> DCS texts &middot; oldest attestation: <b>Ṛgveda</b> (-1350) </div><div>this state: confidence <b>high</b>, n=<b>2</b> texts</div>
+      </div>
+    </div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Approve</button>
+      <button class="vote reject" data-vote="reject">&#10060; Reject</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="S0-013" data-stratum="A">
+    <header>
+      <div class="hw">naigameya <span class="dict-badge">PW</span></div>
+      <div class="stratum-badge">A — dcs-only states</div>
+    </header>
+    <div class="key2">key2: nEgameya</div>
+    <div class="question">Is state <b>III</b> (III Epic) justified for <b>naigameya</b> — is the word genuinely attested in that Sanskrit?</div>
+    <div class="grid">
+      <div class="panel">
+        <h4>renou_enriched (all states)</h4>
+        <div><span class="chip small">III</span></div>
+        <h4>renou_provenance (signal per state)</h4>
+        <div><span class="chip">III: dcs</span></div>
+      </div>
+      <div class="panel">
+        <h4>Resolved &lt;ls&gt; citations</h4>
+        <div class="muted">no resolved &lt;ls&gt; citations recovered</div>
+      </div>
+      <div class="panel">
+        <h4>DCS evidence for state III</h4>
+        <div>lemma total: <b>6</b> DCS texts &middot; oldest attestation: <b>Mahābhārata</b> (0) </div><div>this state: confidence <b>high</b>, n=<b>6</b> texts</div>
+      </div>
+    </div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Approve</button>
+      <button class="vote reject" data-vote="reject">&#10060; Reject</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="S0-014" data-stratum="A">
+    <header>
+      <div class="hw">āpya <span class="dict-badge">PWG</span></div>
+      <div class="stratum-badge">A — dcs-only states</div>
+    </header>
+    <div class="key2">key2: A/pya</div>
+    <div class="question">Is state <b>IV</b> (IV Classical) justified for <b>āpya</b> — is the word genuinely attested in that Sanskrit?</div>
+    <div class="grid">
+      <div class="panel">
+        <h4>renou_enriched (all states)</h4>
+        <div><span class="chip small">I</span> <span class="chip small">III</span> <span class="chip small">IV</span> <span class="chip small">V</span></div>
+        <h4>renou_provenance (signal per state)</h4>
+        <div><span class="chip">I: ls+dcs</span> <span class="chip">III: dcs</span> <span class="chip">IV: dcs</span> <span class="chip">V: bhs</span></div>
+      </div>
+      <div class="panel">
+        <h4>Resolved &lt;ls&gt; citations</h4>
+        <div class="muted">no resolved &lt;ls&gt; citations recovered</div>
+      </div>
+      <div class="panel">
+        <h4>DCS evidence for state IV</h4>
+        <div>lemma total: <b>28</b> DCS texts &middot; oldest attestation: <b>Ṛgveda</b> (-1350) </div><div>this state: confidence <b>high</b>, n=<b>16</b> texts</div>
+      </div>
+    </div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Approve</button>
+      <button class="vote reject" data-vote="reject">&#10060; Reject</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="S0-015" data-stratum="A">
+    <header>
+      <div class="hw">dhanū <span class="dict-badge">PW</span></div>
+      <div class="stratum-badge">A — dcs-only states</div>
+    </header>
+    <div class="key2">key2: *DanU *</div>
+    <div class="question">Is state <b>V</b> (V Buddhist/Jaina) justified for <b>dhanū</b> — is the word genuinely attested in that Sanskrit?</div>
+    <div class="grid">
+      <div class="panel">
+        <h4>renou_enriched (all states)</h4>
+        <div><span class="chip small">I</span> <span class="chip small">V</span></div>
+        <h4>renou_provenance (signal per state)</h4>
+        <div><span class="chip">I: dcs</span> <span class="chip">V: dcs</span></div>
+      </div>
+      <div class="panel">
+        <h4>Resolved &lt;ls&gt; citations</h4>
+        <div class="muted">no resolved &lt;ls&gt; citations recovered</div>
+      </div>
+      <div class="panel">
+        <h4>DCS evidence for state V</h4>
+        <div>lemma total: <b>4</b> DCS texts &middot; oldest attestation: <b>Ṛgveda</b> (-1350) </div><div>this state: confidence <b>medium</b>, n=<b>1</b> texts</div>
+      </div>
+    </div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Approve</button>
+      <button class="vote reject" data-vote="reject">&#10060; Reject</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="S0-016" data-stratum="A">
+    <header>
+      <div class="hw">pragāman <span class="dict-badge">AP</span></div>
+      <div class="stratum-badge">A — dcs-only states</div>
+    </header>
+    <div class="key2">key2: pragAman</div>
+    <div class="question">Is state <b>I</b> (I Vedic) justified for <b>pragāman</b> — is the word genuinely attested in that Sanskrit?</div>
+    <div class="grid">
+      <div class="panel">
+        <h4>renou_enriched (all states)</h4>
+        <div><span class="chip small">I</span></div>
+        <h4>renou_provenance (signal per state)</h4>
+        <div><span class="chip">I: dcs</span></div>
+      </div>
+      <div class="panel">
+        <h4>Resolved &lt;ls&gt; citations</h4>
+        <div class="muted">no resolved &lt;ls&gt; citations recovered</div>
+      </div>
+      <div class="panel">
+        <h4>DCS evidence for state I</h4>
+        <div>lemma total: <b>1</b> DCS texts &middot; oldest attestation: <b>Ṛgveda</b> (-1350) </div><div>this state: confidence <b>high</b>, n=<b>1</b> texts</div>
+      </div>
+    </div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Approve</button>
+      <button class="vote reject" data-vote="reject">&#10060; Reject</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="S0-017" data-stratum="A">
+    <header>
+      <div class="hw">udgātṛ <span class="dict-badge">AP</span></div>
+      <div class="stratum-badge">A — dcs-only states</div>
+    </header>
+    <div class="key2">key2: udgAtf,</div>
+    <div class="question">Is state <b>II</b> (II Pāṇinian) justified for <b>udgātṛ</b> — is the word genuinely attested in that Sanskrit?</div>
+    <div class="grid">
+      <div class="panel">
+        <h4>renou_enriched (all states)</h4>
+        <div><span class="chip small">I</span> <span class="chip small">II</span> <span class="chip small">III</span> <span class="chip small">IV</span></div>
+        <h4>renou_provenance (signal per state)</h4>
+        <div><span class="chip">I: dcs</span> <span class="chip">II: dcs</span> <span class="chip">III: dcs</span> <span class="chip">IV: dcs</span></div>
+      </div>
+      <div class="panel">
+        <h4>Resolved &lt;ls&gt; citations</h4>
+        <ul class="cites"><li><b>Rv</b> — Rv (state I, date -1125)</li></ul>
+      </div>
+      <div class="panel">
+        <h4>DCS evidence for state II</h4>
+        <div>lemma total: <b>45</b> DCS texts &middot; oldest attestation: <b>Ṛgveda</b> (-1350) </div><div>this state: confidence <b>medium</b>, n=<b>1</b> texts</div>
+      </div>
+    </div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Approve</button>
+      <button class="vote reject" data-vote="reject">&#10060; Reject</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="S0-018" data-stratum="A">
+    <header>
+      <div class="hw">dhṛt <span class="dict-badge">PW</span></div>
+      <div class="stratum-badge">A — dcs-only states</div>
+    </header>
+    <div class="key2">key2: ˚Dft</div>
+    <div class="question">Is state <b>III</b> (III Epic) justified for <b>dhṛt</b> — is the word genuinely attested in that Sanskrit?</div>
+    <div class="grid">
+      <div class="panel">
+        <h4>renou_enriched (all states)</h4>
+        <div><span class="chip small">I</span> <span class="chip small">III</span> <span class="chip small">IV</span></div>
+        <h4>renou_provenance (signal per state)</h4>
+        <div><span class="chip">I: dcs</span> <span class="chip">III: dcs</span> <span class="chip">IV: dcs</span></div>
+      </div>
+      <div class="panel">
+        <h4>Resolved &lt;ls&gt; citations</h4>
+        <div class="muted">no resolved &lt;ls&gt; citations recovered</div>
+      </div>
+      <div class="panel">
+        <h4>DCS evidence for state III</h4>
+        <div>lemma total: <b>27</b> DCS texts &middot; oldest attestation: <b>Ṛgveda</b> (-1350) </div><div>this state: confidence <b>high</b>, n=<b>6</b> texts</div>
+      </div>
+    </div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Approve</button>
+      <button class="vote reject" data-vote="reject">&#10060; Reject</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="S0-019" data-stratum="A">
+    <header>
+      <div class="hw">agni <span class="dict-badge">SCH</span></div>
+      <div class="stratum-badge">A — dcs-only states</div>
+    </header>
+    <div class="key2">key2: agni/</div>
+    <div class="question">Is state <b>IV</b> (IV Classical) justified for <b>agni</b> — is the word genuinely attested in that Sanskrit?</div>
+    <div class="grid">
+      <div class="panel">
+        <h4>renou_enriched (all states)</h4>
+        <div><span class="chip small">I</span> <span class="chip small">II</span> <span class="chip small">III</span> <span class="chip small">IV</span> <span class="chip small">V</span></div>
+        <h4>renou_provenance (signal per state)</h4>
+        <div><span class="chip">I: dcs</span> <span class="chip">II: dcs</span> <span class="chip">III: dcs</span> <span class="chip">IV: dcs</span> <span class="chip">V: dcs+bhs</span></div>
+      </div>
+      <div class="panel">
+        <h4>Resolved &lt;ls&gt; citations</h4>
+        <div class="muted">no resolved &lt;ls&gt; citations recovered</div>
+      </div>
+      <div class="panel">
+        <h4>DCS evidence for state IV</h4>
+        <div>lemma total: <b>212</b> DCS texts &middot; oldest attestation: <b>Ṛgveda</b> (-1350) </div><div>this state: confidence <b>high</b>, n=<b>102</b> texts</div>
+      </div>
+    </div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Approve</button>
+      <button class="vote reject" data-vote="reject">&#10060; Reject</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="S0-020" data-stratum="A">
+    <header>
+      <div class="hw">svap <span class="dict-badge">PWG</span></div>
+      <div class="stratum-badge">A — dcs-only states</div>
+    </header>
+    <div class="key2">key2: svap</div>
+    <div class="question">Is state <b>V</b> (V Buddhist/Jaina) justified for <b>svap</b> — is the word genuinely attested in that Sanskrit?</div>
+    <div class="grid">
+      <div class="panel">
+        <h4>renou_enriched (all states)</h4>
+        <div><span class="chip small">I</span> <span class="chip small">II</span> <span class="chip small">III</span> <span class="chip small">IV</span> <span class="chip small">V</span></div>
+        <h4>renou_provenance (signal per state)</h4>
+        <div><span class="chip">I: dcs</span> <span class="chip">II: ls+dcs</span> <span class="chip">III: dcs</span> <span class="chip">IV: dcs</span> <span class="chip">V: dcs</span></div>
+      </div>
+      <div class="panel">
+        <h4>Resolved &lt;ls&gt; citations</h4>
+        <ul class="cites"><li><b>VOP</b> — Vopadeva, Mugdhabodha (state II, date 1250)</li></ul>
+      </div>
+      <div class="panel">
+        <h4>DCS evidence for state V</h4>
+        <div>lemma total: <b>120</b> DCS texts &middot; oldest attestation: <b>Ṛgveda</b> (-1350) </div><div>this state: confidence <b>high</b>, n=<b>6</b> texts</div>
+      </div>
+    </div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Approve</button>
+      <button class="vote reject" data-vote="reject">&#10060; Reject</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="S0-021" data-stratum="B">
+    <header>
+      <div class="hw">udāya <span class="dict-badge">PWG</span></div>
+      <div class="stratum-badge">B — bhs-only V</div>
+    </header>
+    <div class="key2">key2: udAya</div>
+    <div class="question">Is state <b>V</b> (V Buddhist/Jaina) justified for <b>udāya</b> — is the word genuinely attested in that Sanskrit?</div>
+    <div class="grid">
+      <div class="panel">
+        <h4>renou_enriched (all states)</h4>
+        <div><span class="chip small">I</span> <span class="chip small">V</span></div>
+        <h4>renou_provenance (signal per state)</h4>
+        <div><span class="chip">I: dcs</span> <span class="chip">V: bhs</span></div>
+      </div>
+      <div class="panel">
+        <h4>Resolved &lt;ls&gt; citations</h4>
+        <div class="muted">no resolved &lt;ls&gt; citations recovered</div>
+      </div>
+      <div class="panel">
+        <h4>DCS evidence for state V</h4>
+        <div>lemma total: <b>1</b> DCS texts &middot; oldest attestation: <b>Ṛgveda</b> (-1350) </div><div>this state: no support entry for this state (below min-support / filtered)</div>
+      </div>
+    </div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Approve</button>
+      <button class="vote reject" data-vote="reject">&#10060; Reject</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="S0-022" data-stratum="B">
+    <header>
+      <div class="hw">ārtha <span class="dict-badge">AP</span></div>
+      <div class="stratum-badge">B — bhs-only V</div>
+    </header>
+    <div class="key2">key2: ArTa</div>
+    <div class="question">Is state <b>V</b> (V Buddhist/Jaina) justified for <b>ārtha</b> — is the word genuinely attested in that Sanskrit?</div>
+    <div class="grid">
+      <div class="panel">
+        <h4>renou_enriched (all states)</h4>
+        <div><span class="chip small">V</span></div>
+        <h4>renou_provenance (signal per state)</h4>
+        <div><span class="chip">V: bhs</span></div>
+      </div>
+      <div class="panel">
+        <h4>Resolved &lt;ls&gt; citations</h4>
+        <div class="muted">no resolved &lt;ls&gt; citations recovered</div>
+      </div>
+      <div class="panel">
+        <h4>DCS evidence for state V</h4>
+        <div class="muted">lemma absent from dcs_lemma_renou.json</div>
+      </div>
+    </div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Approve</button>
+      <button class="vote reject" data-vote="reject">&#10060; Reject</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="S0-023" data-stratum="B">
+    <header>
+      <div class="hw">kāritra <span class="dict-badge">PW</span></div>
+      <div class="stratum-badge">B — bhs-only V</div>
+    </header>
+    <div class="key2">key2: *kAritra *</div>
+    <div class="question">Is state <b>V</b> (V Buddhist/Jaina) justified for <b>kāritra</b> — is the word genuinely attested in that Sanskrit?</div>
+    <div class="grid">
+      <div class="panel">
+        <h4>renou_enriched (all states)</h4>
+        <div><span class="chip small">V</span></div>
+        <h4>renou_provenance (signal per state)</h4>
+        <div><span class="chip">V: bhs</span></div>
+      </div>
+      <div class="panel">
+        <h4>Resolved &lt;ls&gt; citations</h4>
+        <div class="muted">no resolved &lt;ls&gt; citations recovered</div>
+      </div>
+      <div class="panel">
+        <h4>DCS evidence for state V</h4>
+        <div class="muted">lemma absent from dcs_lemma_renou.json</div>
+      </div>
+    </div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Approve</button>
+      <button class="vote reject" data-vote="reject">&#10060; Reject</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="S0-024" data-stratum="B">
+    <header>
+      <div class="hw">piṅgā <span class="dict-badge">MW</span></div>
+      <div class="stratum-badge">B — bhs-only V</div>
+    </header>
+    <div class="key2">key2: pi/NgA</div>
+    <div class="question">Is state <b>V</b> (V Buddhist/Jaina) justified for <b>piṅgā</b> — is the word genuinely attested in that Sanskrit?</div>
+    <div class="grid">
+      <div class="panel">
+        <h4>renou_enriched (all states)</h4>
+        <div><span class="chip small">I</span> <span class="chip small">III</span> <span class="chip small">IV</span> <span class="chip small">V</span></div>
+        <h4>renou_provenance (signal per state)</h4>
+        <div><span class="chip">I: dcs</span> <span class="chip">III: dcs</span> <span class="chip">IV: dcs</span> <span class="chip">V: bhs</span></div>
+      </div>
+      <div class="panel">
+        <h4>Resolved &lt;ls&gt; citations</h4>
+        <div class="muted">no resolved &lt;ls&gt; citations recovered</div>
+      </div>
+      <div class="panel">
+        <h4>DCS evidence for state V</h4>
+        <div>lemma total: <b>4</b> DCS texts &middot; oldest attestation: <b>Ṛgveda</b> (-1350) </div><div>this state: no support entry for this state (below min-support / filtered)</div>
+      </div>
+    </div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Approve</button>
+      <button class="vote reject" data-vote="reject">&#10060; Reject</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="S0-025" data-stratum="B">
+    <header>
+      <div class="hw">niraṅkuśa <span class="dict-badge">AP</span></div>
+      <div class="stratum-badge">B — bhs-only V</div>
+    </header>
+    <div class="key2">key2: niraNkuSa</div>
+    <div class="question">Is state <b>V</b> (V Buddhist/Jaina) justified for <b>niraṅkuśa</b> — is the word genuinely attested in that Sanskrit?</div>
+    <div class="grid">
+      <div class="panel">
+        <h4>renou_enriched (all states)</h4>
+        <div><span class="chip small">III</span> <span class="chip small">IV</span> <span class="chip small">V</span></div>
+        <h4>renou_provenance (signal per state)</h4>
+        <div><span class="chip">III: ls+dcs</span> <span class="chip">IV: ls+dcs</span> <span class="chip">V: bhs</span></div>
+      </div>
+      <div class="panel">
+        <h4>Resolved &lt;ls&gt; citations</h4>
+        <ul class="cites"><li><b>Bhāg</b> — Bhāg (state III, date 950)</li><li><b>Gīt</b> — Gīt (state IV, date 1100)</li><li><b>Sk</b> — Sk (state IV, date 1400)</li><li><b>Bh</b> — Bh (state IV, date 550)</li><li><b>Mu</b> — Mu (state IV, date 400)</li></ul>
+      </div>
+      <div class="panel">
+        <h4>DCS evidence for state V</h4>
+        <div>lemma total: <b>15</b> DCS texts &middot; oldest attestation: <b>Mahābhārata</b> (0) </div><div>this state: no support entry for this state (below min-support / filtered)</div>
+      </div>
+    </div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Approve</button>
+      <button class="vote reject" data-vote="reject">&#10060; Reject</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="S0-026" data-stratum="B">
+    <header>
+      <div class="hw">cukra <span class="dict-badge">PWG</span></div>
+      <div class="stratum-badge">B — bhs-only V</div>
+    </header>
+    <div class="key2">key2: cukra/</div>
+    <div class="question">Is state <b>V</b> (V Buddhist/Jaina) justified for <b>cukra</b> — is the word genuinely attested in that Sanskrit?</div>
+    <div class="grid">
+      <div class="panel">
+        <h4>renou_enriched (all states)</h4>
+        <div><span class="chip small">II</span> <span class="chip small">III</span> <span class="chip small">IV</span> <span class="chip small">V</span></div>
+        <h4>renou_provenance (signal per state)</h4>
+        <div><span class="chip">II: ls</span> <span class="chip">III: ls</span> <span class="chip">IV: ls+dcs</span> <span class="chip">V: bhs</span></div>
+      </div>
+      <div class="panel">
+        <h4>Resolved &lt;ls&gt; citations</h4>
+        <ul class="cites"><li><b>AK</b> — Amarakośa (state IV, date 450)</li><li><b>SUŚR</b> — Suśruta-Saṃhitā (state IV, date 400)</li><li><b>HARIV</b> — Harivaṃśa (state III, date 200)</li><li><b>H. an</b> — Hemacandra, Anekārthasaṃgraha (state IV, date 1150)</li><li><b>H</b> — Hemacandra, Abhidhānacintāmaṇi (state IV, date 1150)</li><li><b>RĀJAN</b> — Rājanighaṇṭu (state IV, date 1300)</li><li><b>ŚKDR</b> — Śabdakalpadruma (= SKD) (state IV, date 1830)</li><li><b>MED</b> — Medinīkośa (state IV, date 1200)</li><li><b>P</b> — Pāṇini, Aṣṭādhyāyī (state II, date -400)</li></ul>
+      </div>
+      <div class="panel">
+        <h4>DCS evidence for state V</h4>
+        <div>lemma total: <b>10</b> DCS texts &middot; oldest attestation: <b>Suśrutasaṃhitā</b> (200) </div><div>this state: no support entry for this state (below min-support / filtered)</div>
+      </div>
+    </div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Approve</button>
+      <button class="vote reject" data-vote="reject">&#10060; Reject</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="S0-027" data-stratum="B">
+    <header>
+      <div class="hw">sārī <span class="dict-badge">PWG</span></div>
+      <div class="stratum-badge">B — bhs-only V</div>
+    </header>
+    <div class="key2">key2: sArI</div>
+    <div class="question">Is state <b>V</b> (V Buddhist/Jaina) justified for <b>sārī</b> — is the word genuinely attested in that Sanskrit?</div>
+    <div class="grid">
+      <div class="panel">
+        <h4>renou_enriched (all states)</h4>
+        <div><span class="chip small">IV</span> <span class="chip small">V</span></div>
+        <h4>renou_provenance (signal per state)</h4>
+        <div><span class="chip">IV: dcs</span> <span class="chip">V: bhs</span></div>
+      </div>
+      <div class="panel">
+        <h4>Resolved &lt;ls&gt; citations</h4>
+        <div class="muted">no resolved &lt;ls&gt; citations recovered</div>
+      </div>
+      <div class="panel">
+        <h4>DCS evidence for state V</h4>
+        <div>lemma total: <b>3</b> DCS texts &middot; oldest attestation: <b>Dhanvantarinighaṇṭu</b> (1050) </div><div>this state: no support entry for this state (below min-support / filtered)</div>
+      </div>
+    </div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Approve</button>
+      <button class="vote reject" data-vote="reject">&#10060; Reject</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="S0-028" data-stratum="B">
+    <header>
+      <div class="hw">anupāta <span class="dict-badge">MW</span></div>
+      <div class="stratum-badge">B — bhs-only V</div>
+    </header>
+    <div class="key2">key2: anu-pAta</div>
+    <div class="question">Is state <b>V</b> (V Buddhist/Jaina) justified for <b>anupāta</b> — is the word genuinely attested in that Sanskrit?</div>
+    <div class="grid">
+      <div class="panel">
+        <h4>renou_enriched (all states)</h4>
+        <div><span class="chip small">IV</span> <span class="chip small">V</span></div>
+        <h4>renou_provenance (signal per state)</h4>
+        <div><span class="chip">IV: dcs</span> <span class="chip">V: bhs</span></div>
+      </div>
+      <div class="panel">
+        <h4>Resolved &lt;ls&gt; citations</h4>
+        <div class="muted">no resolved &lt;ls&gt; citations recovered</div>
+      </div>
+      <div class="panel">
+        <h4>DCS evidence for state V</h4>
+        <div>lemma total: <b>2</b> DCS texts &middot; oldest attestation: <b>Kāmasūtra</b> (350) </div><div>this state: no support entry for this state (below min-support / filtered)</div>
+      </div>
+    </div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Approve</button>
+      <button class="vote reject" data-vote="reject">&#10060; Reject</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="S0-029" data-stratum="B">
+    <header>
+      <div class="hw">gandhāri <span class="dict-badge">PWG</span></div>
+      <div class="stratum-badge">B — bhs-only V</div>
+    </header>
+    <div class="key2">key2: ganDA/ri</div>
+    <div class="question">Is state <b>V</b> (V Buddhist/Jaina) justified for <b>gandhāri</b> — is the word genuinely attested in that Sanskrit?</div>
+    <div class="grid">
+      <div class="panel">
+        <h4>renou_enriched (all states)</h4>
+        <div><span class="chip small">I</span> <span class="chip small">V</span></div>
+        <h4>renou_provenance (signal per state)</h4>
+        <div><span class="chip">I: ls+dcs</span> <span class="chip">V: bhs</span></div>
+      </div>
+      <div class="panel">
+        <h4>Resolved &lt;ls&gt; citations</h4>
+        <ul class="cites"><li><b>AV</b> — Atharvaveda (state I, date -940)</li><li><b>ṚV</b> — Ṛgveda (state I, date -1125)</li></ul>
+      </div>
+      <div class="panel">
+        <h4>DCS evidence for state V</h4>
+        <div>lemma total: <b>3</b> DCS texts &middot; oldest attestation: <b>Ṛgveda</b> (-1350) </div><div>this state: no support entry for this state (below min-support / filtered)</div>
+      </div>
+    </div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Approve</button>
+      <button class="vote reject" data-vote="reject">&#10060; Reject</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="S0-030" data-stratum="B">
+    <header>
+      <div class="hw">balikā <span class="dict-badge">PWG</span></div>
+      <div class="stratum-badge">B — bhs-only V</div>
+    </header>
+    <div class="key2">key2: balikA</div>
+    <div class="question">Is state <b>V</b> (V Buddhist/Jaina) justified for <b>balikā</b> — is the word genuinely attested in that Sanskrit?</div>
+    <div class="grid">
+      <div class="panel">
+        <h4>renou_enriched (all states)</h4>
+        <div><span class="chip small">IV</span> <span class="chip small">V</span></div>
+        <h4>renou_provenance (signal per state)</h4>
+        <div><span class="chip">IV: ls+dcs</span> <span class="chip">V: bhs</span></div>
+      </div>
+      <div class="panel">
+        <h4>Resolved &lt;ls&gt; citations</h4>
+        <ul class="cites"><li><b>RĀJAN</b> — Rājanighaṇṭu (state IV, date 1300)</li><li><b>ŚKDR</b> — Śabdakalpadruma (= SKD) (state IV, date 1830)</li></ul>
+      </div>
+      <div class="panel">
+        <h4>DCS evidence for state V</h4>
+        <div>lemma total: <b>1</b> DCS texts &middot; oldest attestation: <b>Rājanighaṇṭu</b> (1450) </div><div>this state: no support entry for this state (below min-support / filtered)</div>
+      </div>
+    </div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Approve</button>
+      <button class="vote reject" data-vote="reject">&#10060; Reject</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="S0-031" data-stratum="B">
+    <header>
+      <div class="hw">kusumbha <span class="dict-badge">MW</span></div>
+      <div class="stratum-badge">B — bhs-only V</div>
+    </header>
+    <div class="key2">key2: kusumBa</div>
+    <div class="question">Is state <b>V</b> (V Buddhist/Jaina) justified for <b>kusumbha</b> — is the word genuinely attested in that Sanskrit?</div>
+    <div class="grid">
+      <div class="panel">
+        <h4>renou_enriched (all states)</h4>
+        <div><span class="chip small">I</span> <span class="chip small">III</span> <span class="chip small">IV</span> <span class="chip small">V</span></div>
+        <h4>renou_provenance (signal per state)</h4>
+        <div><span class="chip">I: dcs</span> <span class="chip">III: dcs</span> <span class="chip">IV: ls+dcs</span> <span class="chip">V: bhs</span></div>
+      </div>
+      <div class="panel">
+        <h4>Resolved &lt;ls&gt; citations</h4>
+        <ul class="cites"><li><b>L</b> — lexicographers (kośa tradition) (state IV, date 1100)</li></ul>
+      </div>
+      <div class="panel">
+        <h4>DCS evidence for state V</h4>
+        <div>lemma total: <b>28</b> DCS texts &middot; oldest attestation: <b>Vaikhānasaśrautasūtra</b> (-550) </div><div>this state: no support entry for this state (below min-support / filtered)</div>
+      </div>
+    </div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Approve</button>
+      <button class="vote reject" data-vote="reject">&#10060; Reject</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="S0-032" data-stratum="B">
+    <header>
+      <div class="hw">vibaddha <span class="dict-badge">MW</span></div>
+      <div class="stratum-badge">B — bhs-only V</div>
+    </header>
+    <div class="key2">key2: vi-badDa</div>
+    <div class="question">Is state <b>V</b> (V Buddhist/Jaina) justified for <b>vibaddha</b> — is the word genuinely attested in that Sanskrit?</div>
+    <div class="grid">
+      <div class="panel">
+        <h4>renou_enriched (all states)</h4>
+        <div><span class="chip small">V</span></div>
+        <h4>renou_provenance (signal per state)</h4>
+        <div><span class="chip">V: bhs</span></div>
+      </div>
+      <div class="panel">
+        <h4>Resolved &lt;ls&gt; citations</h4>
+        <ul class="cites"><li><b>Suśr</b> — Suśruta-Saṃhitā (state IV, date 400)</li></ul>
+      </div>
+      <div class="panel">
+        <h4>DCS evidence for state V</h4>
+        <div class="muted">lemma absent from dcs_lemma_renou.json</div>
+      </div>
+    </div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Approve</button>
+      <button class="vote reject" data-vote="reject">&#10060; Reject</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="S0-033" data-stratum="B">
+    <header>
+      <div class="hw">mādana <span class="dict-badge">MW</span></div>
+      <div class="stratum-badge">B — bhs-only V</div>
+    </header>
+    <div class="key2">key2: mA/dana</div>
+    <div class="question">Is state <b>V</b> (V Buddhist/Jaina) justified for <b>mādana</b> — is the word genuinely attested in that Sanskrit?</div>
+    <div class="grid">
+      <div class="panel">
+        <h4>renou_enriched (all states)</h4>
+        <div><span class="chip small">I</span> <span class="chip small">IV</span> <span class="chip small">V</span></div>
+        <h4>renou_provenance (signal per state)</h4>
+        <div><span class="chip">I: dcs</span> <span class="chip">IV: ls+dcs</span> <span class="chip">V: bhs</span></div>
+      </div>
+      <div class="panel">
+        <h4>Resolved &lt;ls&gt; citations</h4>
+        <ul class="cites"><li><b>R</b> — Rāmāyaṇa (state III, date 70)</li></ul>
+      </div>
+      <div class="panel">
+        <h4>DCS evidence for state V</h4>
+        <div>lemma total: <b>8</b> DCS texts &middot; oldest attestation: <b>Ṛgveda</b> (-1350) </div><div>this state: no support entry for this state (below min-support / filtered)</div>
+      </div>
+    </div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Approve</button>
+      <button class="vote reject" data-vote="reject">&#10060; Reject</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="S0-034" data-stratum="B">
+    <header>
+      <div class="hw">vidhamā <span class="dict-badge">PWG</span></div>
+      <div class="stratum-badge">B — bhs-only V</div>
+    </header>
+    <div class="key2">key2: viDamA/</div>
+    <div class="question">Is state <b>V</b> (V Buddhist/Jaina) justified for <b>vidhamā</b> — is the word genuinely attested in that Sanskrit?</div>
+    <div class="grid">
+      <div class="panel">
+        <h4>renou_enriched (all states)</h4>
+        <div><span class="chip small">I</span> <span class="chip small">V</span></div>
+        <h4>renou_provenance (signal per state)</h4>
+        <div><span class="chip">I: ls</span> <span class="chip">V: bhs</span></div>
+      </div>
+      <div class="panel">
+        <h4>Resolved &lt;ls&gt; citations</h4>
+        <ul class="cites"><li><b>AV</b> — Atharvaveda (state I, date -940)</li></ul>
+      </div>
+      <div class="panel">
+        <h4>DCS evidence for state V</h4>
+        <div>lemma total: <b>1</b> DCS texts &middot; oldest attestation: <b>Atharvaveda (Śaunaka)</b> (-550) </div><div>this state: no support entry for this state (below min-support / filtered)</div>
+      </div>
+    </div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Approve</button>
+      <button class="vote reject" data-vote="reject">&#10060; Reject</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="S0-035" data-stratum="B">
+    <header>
+      <div class="hw">mahattaraka <span class="dict-badge">SCH</span></div>
+      <div class="stratum-badge">B — bhs-only V</div>
+    </header>
+    <div class="key2">key2: [mahattaraka]</div>
+    <div class="question">Is state <b>V</b> (V Buddhist/Jaina) justified for <b>mahattaraka</b> — is the word genuinely attested in that Sanskrit?</div>
+    <div class="grid">
+      <div class="panel">
+        <h4>renou_enriched (all states)</h4>
+        <div><span class="chip small">IV</span> <span class="chip small">V</span></div>
+        <h4>renou_provenance (signal per state)</h4>
+        <div><span class="chip">IV: dcs</span> <span class="chip">V: bhs</span></div>
+      </div>
+      <div class="panel">
+        <h4>Resolved &lt;ls&gt; citations</h4>
+        <div class="muted">no resolved &lt;ls&gt; citations recovered</div>
+      </div>
+      <div class="panel">
+        <h4>DCS evidence for state V</h4>
+        <div>lemma total: <b>1</b> DCS texts &middot; oldest attestation: <b>Kathāsaritsāgara</b> (1050) </div><div>this state: no support entry for this state (below min-support / filtered)</div>
+      </div>
+    </div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Approve</button>
+      <button class="vote reject" data-vote="reject">&#10060; Reject</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="S0-036" data-stratum="C">
+    <header>
+      <div class="hw">atisarga <span class="dict-badge">BEN</span></div>
+      <div class="stratum-badge">C — maximal-span suspects</div>
+    </header>
+    <div class="key2">key2: atisarga</div>
+    <div class="question">Is state <b>V</b> (V Buddhist/Jaina) justified for <b>atisarga</b> — is the word genuinely attested in that Sanskrit?</div>
+    <div class="grid">
+      <div class="panel">
+        <h4>renou_enriched (all states)</h4>
+        <div><span class="chip small">I</span> <span class="chip small">II</span> <span class="chip small">III</span> <span class="chip small">IV</span> <span class="chip small">V</span></div>
+        <h4>renou_provenance (signal per state)</h4>
+        <div><span class="chip">I: dcs</span> <span class="chip">II: dcs</span> <span class="chip">III: ls+dcs</span> <span class="chip">IV: dcs</span> <span class="chip">V: dcs</span></div>
+      </div>
+      <div class="panel">
+        <h4>Resolved &lt;ls&gt; citations</h4>
+        <ul class="cites"><li><b>Rām</b> — Rām (state III, date 70)</li></ul>
+      </div>
+      <div class="panel">
+        <h4>DCS evidence for state V</h4>
+        <div>lemma total: <b>8</b> DCS texts &middot; oldest attestation: <b>Maitrāyaṇīsaṃhitā</b> (-800) </div><div>this state: confidence <b>high</b>, n=<b>1</b> texts</div>
+      </div>
+    </div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Approve</button>
+      <button class="vote reject" data-vote="reject">&#10060; Reject</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="S0-037" data-stratum="C">
+    <header>
+      <div class="hw">ras <span class="dict-badge">AP90</span></div>
+      <div class="stratum-badge">C — maximal-span suspects</div>
+    </header>
+    <div class="key2">key2: ras</div>
+    <div class="question">Is state <b>V</b> (V Buddhist/Jaina) justified for <b>ras</b> — is the word genuinely attested in that Sanskrit?</div>
+    <div class="grid">
+      <div class="panel">
+        <h4>renou_enriched (all states)</h4>
+        <div><span class="chip small">I</span> <span class="chip small">II</span> <span class="chip small">III</span> <span class="chip small">IV</span> <span class="chip small">V</span></div>
+        <h4>renou_provenance (signal per state)</h4>
+        <div><span class="chip">I: dcs</span> <span class="chip">II: dcs</span> <span class="chip">III: dcs</span> <span class="chip">IV: ls+dcs</span> <span class="chip">V: dcs</span></div>
+      </div>
+      <div class="panel">
+        <h4>Resolved &lt;ls&gt; citations</h4>
+        <ul class="cites"><li><b>R</b> — R (state IV, date 420)</li><li><b>Śi</b> — Śi (state IV, date 650)</li><li><b>Ve</b> — Ve (state IV, date 700)</li><li><b>Gīt</b> — Gīt (state IV, date 1100)</li><li><b>Bv</b> — Bv (state IV, date 1450)</li></ul>
+      </div>
+      <div class="panel">
+        <h4>DCS evidence for state V</h4>
+        <div>lemma total: <b>23</b> DCS texts &middot; oldest attestation: <b>Ṛgvedakhilāni</b> (-1100) </div><div>this state: confidence <b>medium</b>, n=<b>1</b> texts</div>
+      </div>
+    </div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Approve</button>
+      <button class="vote reject" data-vote="reject">&#10060; Reject</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="S0-038" data-stratum="C">
+    <header>
+      <div class="hw">śiśu <span class="dict-badge">MW</span></div>
+      <div class="stratum-badge">C — maximal-span suspects</div>
+    </header>
+    <div class="key2">key2: Si/Su</div>
+    <div class="question">Is state <b>V</b> (V Buddhist/Jaina) justified for <b>śiśu</b> — is the word genuinely attested in that Sanskrit?</div>
+    <div class="grid">
+      <div class="panel">
+        <h4>renou_enriched (all states)</h4>
+        <div><span class="chip small">I</span> <span class="chip small">II</span> <span class="chip small">III</span> <span class="chip small">IV</span> <span class="chip small">V</span></div>
+        <h4>renou_provenance (signal per state)</h4>
+        <div><span class="chip">I: dcs</span> <span class="chip">II: dcs</span> <span class="chip">III: dcs</span> <span class="chip">IV: ls+dcs</span> <span class="chip">V: dcs</span></div>
+      </div>
+      <div class="panel">
+        <h4>Resolved &lt;ls&gt; citations</h4>
+        <ul class="cites"><li><b>L</b> — lexicographers (kośa tradition) (state IV, date 1100)</li></ul>
+      </div>
+      <div class="panel">
+        <h4>DCS evidence for state V</h4>
+        <div>lemma total: <b>72</b> DCS texts &middot; oldest attestation: <b>Ṛgveda</b> (-1350) </div><div>this state: confidence <b>high</b>, n=<b>4</b> texts</div>
+      </div>
+    </div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Approve</button>
+      <button class="vote reject" data-vote="reject">&#10060; Reject</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="S0-039" data-stratum="C">
+    <header>
+      <div class="hw">prabhā <span class="dict-badge">MW</span></div>
+      <div class="stratum-badge">C — maximal-span suspects</div>
+    </header>
+    <div class="key2">key2: praBA/</div>
+    <div class="question">Is state <b>V</b> (V Buddhist/Jaina) justified for <b>prabhā</b> — is the word genuinely attested in that Sanskrit?</div>
+    <div class="grid">
+      <div class="panel">
+        <h4>renou_enriched (all states)</h4>
+        <div><span class="chip small">I</span> <span class="chip small">II</span> <span class="chip small">III</span> <span class="chip small">IV</span> <span class="chip small">V</span></div>
+        <h4>renou_provenance (signal per state)</h4>
+        <div><span class="chip">I: dcs</span> <span class="chip">II: dcs</span> <span class="chip">III: ls+dcs</span> <span class="chip">IV: dcs</span> <span class="chip">V: dcs+bhs</span></div>
+      </div>
+      <div class="panel">
+        <h4>Resolved &lt;ls&gt; citations</h4>
+        <div class="muted">no resolved &lt;ls&gt; citations recovered</div>
+      </div>
+      <div class="panel">
+        <h4>DCS evidence for state V</h4>
+        <div>lemma total: <b>97</b> DCS texts &middot; oldest attestation: <b>Ṛgveda</b> (-1350) </div><div>this state: confidence <b>high</b>, n=<b>7</b> texts</div>
+      </div>
+    </div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Approve</button>
+      <button class="vote reject" data-vote="reject">&#10060; Reject</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="S0-040" data-stratum="C">
+    <header>
+      <div class="hw">āraṇyaka <span class="dict-badge">AP90</span></div>
+      <div class="stratum-badge">C — maximal-span suspects</div>
+    </header>
+    <div class="key2">key2: AraRyaka</div>
+    <div class="question">Is state <b>V</b> (V Buddhist/Jaina) justified for <b>āraṇyaka</b> — is the word genuinely attested in that Sanskrit?</div>
+    <div class="grid">
+      <div class="panel">
+        <h4>renou_enriched (all states)</h4>
+        <div><span class="chip small">I</span> <span class="chip small">II</span> <span class="chip small">III</span> <span class="chip small">IV</span> <span class="chip small">V</span></div>
+        <h4>renou_provenance (signal per state)</h4>
+        <div><span class="chip">I: dcs</span> <span class="chip">II: ls</span> <span class="chip">III: dcs</span> <span class="chip">IV: ls+dcs</span> <span class="chip">V: dcs+bhs</span></div>
+      </div>
+      <div class="panel">
+        <h4>Resolved &lt;ls&gt; citations</h4>
+        <ul class="cites"><li><b>P</b> — P (state II, date -400)</li><li><b>Ś</b> — Ś (state IV, date 420)</li><li><b>R</b> — R (state IV, date 420)</li></ul>
+      </div>
+      <div class="panel">
+        <h4>DCS evidence for state V</h4>
+        <div>lemma total: <b>25</b> DCS texts &middot; oldest attestation: <b>Śāṅkhāyanagṛhyasūtra</b> (-550) </div><div>this state: confidence <b>high</b>, n=<b>2</b> texts</div>
+      </div>
+    </div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Approve</button>
+      <button class="vote reject" data-vote="reject">&#10060; Reject</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="S0-041" data-stratum="C">
+    <header>
+      <div class="hw">vasti <span class="dict-badge">MW</span></div>
+      <div class="stratum-badge">C — maximal-span suspects</div>
+    </header>
+    <div class="key2">key2: vasti/</div>
+    <div class="question">Is state <b>V</b> (V Buddhist/Jaina) justified for <b>vasti</b> — is the word genuinely attested in that Sanskrit?</div>
+    <div class="grid">
+      <div class="panel">
+        <h4>renou_enriched (all states)</h4>
+        <div><span class="chip small">I</span> <span class="chip small">II</span> <span class="chip small">III</span> <span class="chip small">IV</span> <span class="chip small">V</span></div>
+        <h4>renou_provenance (signal per state)</h4>
+        <div><span class="chip">I: dcs</span> <span class="chip">II: dcs</span> <span class="chip">III: dcs</span> <span class="chip">IV: ls+dcs</span> <span class="chip">V: dcs</span></div>
+      </div>
+      <div class="panel">
+        <h4>Resolved &lt;ls&gt; citations</h4>
+        <div class="muted">no resolved &lt;ls&gt; citations recovered</div>
+      </div>
+      <div class="panel">
+        <h4>DCS evidence for state V</h4>
+        <div>lemma total: <b>45</b> DCS texts &middot; oldest attestation: <b>Jaiminīyabrāhmaṇa</b> (-800) </div><div>this state: confidence <b>high</b>, n=<b>3</b> texts</div>
+      </div>
+    </div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Approve</button>
+      <button class="vote reject" data-vote="reject">&#10060; Reject</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="S0-042" data-stratum="C">
+    <header>
+      <div class="hw">deva <span class="dict-badge">MW</span></div>
+      <div class="stratum-badge">C — maximal-span suspects</div>
+    </header>
+    <div class="key2">key2: deva/</div>
+    <div class="question">Is state <b>V</b> (V Buddhist/Jaina) justified for <b>deva</b> — is the word genuinely attested in that Sanskrit?</div>
+    <div class="grid">
+      <div class="panel">
+        <h4>renou_enriched (all states)</h4>
+        <div><span class="chip small">I</span> <span class="chip small">II</span> <span class="chip small">III</span> <span class="chip small">IV</span> <span class="chip small">V</span></div>
+        <h4>renou_provenance (signal per state)</h4>
+        <div><span class="chip">I: dcs</span> <span class="chip">II: dcs</span> <span class="chip">III: dcs</span> <span class="chip">IV: ls+dcs</span> <span class="chip">V: dcs+bhs</span></div>
+      </div>
+      <div class="panel">
+        <h4>Resolved &lt;ls&gt; citations</h4>
+        <div class="muted">no resolved &lt;ls&gt; citations recovered</div>
+      </div>
+      <div class="panel">
+        <h4>DCS evidence for state V</h4>
+        <div>lemma total: <b>202</b> DCS texts &middot; oldest attestation: <b>Ṛgveda</b> (-1350) </div><div>this state: confidence <b>high</b>, n=<b>9</b> texts</div>
+      </div>
+    </div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Approve</button>
+      <button class="vote reject" data-vote="reject">&#10060; Reject</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="S0-043" data-stratum="C">
+    <header>
+      <div class="hw">prī <span class="dict-badge">PWG</span></div>
+      <div class="stratum-badge">C — maximal-span suspects</div>
+    </header>
+    <div class="key2">key2: prI</div>
+    <div class="question">Is state <b>V</b> (V Buddhist/Jaina) justified for <b>prī</b> — is the word genuinely attested in that Sanskrit?</div>
+    <div class="grid">
+      <div class="panel">
+        <h4>renou_enriched (all states)</h4>
+        <div><span class="chip small">I</span> <span class="chip small">II</span> <span class="chip small">III</span> <span class="chip small">IV</span> <span class="chip small">V</span></div>
+        <h4>renou_provenance (signal per state)</h4>
+        <div><span class="chip">I: dcs</span> <span class="chip">II: dcs</span> <span class="chip">III: ls+dcs</span> <span class="chip">IV: ls+dcs</span> <span class="chip">V: dcs</span></div>
+      </div>
+      <div class="panel">
+        <h4>Resolved &lt;ls&gt; citations</h4>
+        <div class="muted">no resolved &lt;ls&gt; citations recovered</div>
+      </div>
+      <div class="panel">
+        <h4>DCS evidence for state V</h4>
+        <div>lemma total: <b>92</b> DCS texts &middot; oldest attestation: <b>Ṛgveda</b> (-1350) </div><div>this state: confidence <b>high</b>, n=<b>4</b> texts</div>
+      </div>
+    </div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Approve</button>
+      <button class="vote reject" data-vote="reject">&#10060; Reject</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="S0-044" data-stratum="C">
+    <header>
+      <div class="hw">nikāya <span class="dict-badge">PW</span></div>
+      <div class="stratum-badge">C — maximal-span suspects</div>
+    </header>
+    <div class="key2">key2: nikAya/</div>
+    <div class="question">Is state <b>V</b> (V Buddhist/Jaina) justified for <b>nikāya</b> — is the word genuinely attested in that Sanskrit?</div>
+    <div class="grid">
+      <div class="panel">
+        <h4>renou_enriched (all states)</h4>
+        <div><span class="chip small">I</span> <span class="chip small">II</span> <span class="chip small">III</span> <span class="chip small">IV</span> <span class="chip small">V</span></div>
+        <h4>renou_provenance (signal per state)</h4>
+        <div><span class="chip">I: dcs</span> <span class="chip">II: dcs</span> <span class="chip">III: dcs</span> <span class="chip">IV: dcs</span> <span class="chip">V: dcs+bhs</span></div>
+      </div>
+      <div class="panel">
+        <h4>Resolved &lt;ls&gt; citations</h4>
+        <div class="muted">no resolved &lt;ls&gt; citations recovered</div>
+      </div>
+      <div class="panel">
+        <h4>DCS evidence for state V</h4>
+        <div>lemma total: <b>24</b> DCS texts &middot; oldest attestation: <b>Maitrāyaṇīsaṃhitā</b> (-800) </div><div>this state: confidence <b>high</b>, n=<b>6</b> texts</div>
+      </div>
+    </div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Approve</button>
+      <button class="vote reject" data-vote="reject">&#10060; Reject</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="S0-045" data-stratum="C">
+    <header>
+      <div class="hw">bhakta <span class="dict-badge">PWG</span></div>
+      <div class="stratum-badge">C — maximal-span suspects</div>
+    </header>
+    <div class="key2">key2: Bakta</div>
+    <div class="question">Is state <b>V</b> (V Buddhist/Jaina) justified for <b>bhakta</b> — is the word genuinely attested in that Sanskrit?</div>
+    <div class="grid">
+      <div class="panel">
+        <h4>renou_enriched (all states)</h4>
+        <div><span class="chip small">I</span> <span class="chip small">II</span> <span class="chip small">III</span> <span class="chip small">IV</span> <span class="chip small">V</span></div>
+        <h4>renou_provenance (signal per state)</h4>
+        <div><span class="chip">I: dcs</span> <span class="chip">II: dcs</span> <span class="chip">III: dcs</span> <span class="chip">IV: dcs</span> <span class="chip">V: dcs+bhs</span></div>
+      </div>
+      <div class="panel">
+        <h4>Resolved &lt;ls&gt; citations</h4>
+        <div class="muted">no resolved &lt;ls&gt; citations recovered</div>
+      </div>
+      <div class="panel">
+        <h4>DCS evidence for state V</h4>
+        <div>lemma total: <b>88</b> DCS texts &middot; oldest attestation: <b>Ṛgveda</b> (-1350) </div><div>this state: confidence <b>high</b>, n=<b>4</b> texts</div>
+      </div>
+    </div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Approve</button>
+      <button class="vote reject" data-vote="reject">&#10060; Reject</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="S0-046" data-stratum="C">
+    <header>
+      <div class="hw">kāla <span class="dict-badge">PWG</span></div>
+      <div class="stratum-badge">C — maximal-span suspects</div>
+    </header>
+    <div class="key2">key2: kAla</div>
+    <div class="question">Is state <b>V</b> (V Buddhist/Jaina) justified for <b>kāla</b> — is the word genuinely attested in that Sanskrit?</div>
+    <div class="grid">
+      <div class="panel">
+        <h4>renou_enriched (all states)</h4>
+        <div><span class="chip small">I</span> <span class="chip small">II</span> <span class="chip small">III</span> <span class="chip small">IV</span> <span class="chip small">V</span></div>
+        <h4>renou_provenance (signal per state)</h4>
+        <div><span class="chip">I: dcs</span> <span class="chip">II: dcs</span> <span class="chip">III: dcs</span> <span class="chip">IV: ls+dcs</span> <span class="chip">V: dcs+bhs</span></div>
+      </div>
+      <div class="panel">
+        <h4>Resolved &lt;ls&gt; citations</h4>
+        <div class="muted">no resolved &lt;ls&gt; citations recovered</div>
+      </div>
+      <div class="panel">
+        <h4>DCS evidence for state V</h4>
+        <div>lemma total: <b>207</b> DCS texts &middot; oldest attestation: <b>Ṛgveda</b> (-1350) </div><div>this state: confidence <b>high</b>, n=<b>8</b> texts</div>
+      </div>
+    </div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Approve</button>
+      <button class="vote reject" data-vote="reject">&#10060; Reject</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="S0-047" data-stratum="C">
+    <header>
+      <div class="hw">utsaṅga <span class="dict-badge">BHS</span></div>
+      <div class="stratum-badge">C — maximal-span suspects</div>
+    </header>
+    <div class="key2">key2: utsaNga</div>
+    <div class="question">Is state <b>IV</b> (IV Classical) justified for <b>utsaṅga</b> — is the word genuinely attested in that Sanskrit?</div>
+    <div class="grid">
+      <div class="panel">
+        <h4>renou_enriched (all states)</h4>
+        <div><span class="chip small">I</span> <span class="chip small">II</span> <span class="chip small">III</span> <span class="chip small">IV</span> <span class="chip small">V</span></div>
+        <h4>renou_provenance (signal per state)</h4>
+        <div><span class="chip">I: dcs</span> <span class="chip">II: dcs</span> <span class="chip">III: dcs</span> <span class="chip">IV: dcs</span> <span class="chip">V: ls+dcs</span></div>
+      </div>
+      <div class="panel">
+        <h4>Resolved &lt;ls&gt; citations</h4>
+        <ul class="cites"><li><b>Mvy</b> — Mvy (state V, date 200)</li></ul>
+      </div>
+      <div class="panel">
+        <h4>DCS evidence for state IV</h4>
+        <div>lemma total: <b>55</b> DCS texts &middot; oldest attestation: <b>Maitrāyaṇīsaṃhitā</b> (-800) </div><div>this state: confidence <b>high</b>, n=<b>28</b> texts</div>
+      </div>
+    </div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Approve</button>
+      <button class="vote reject" data-vote="reject">&#10060; Reject</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="S0-048" data-stratum="C">
+    <header>
+      <div class="hw">kuśā <span class="dict-badge">AP</span></div>
+      <div class="stratum-badge">C — maximal-span suspects</div>
+    </header>
+    <div class="key2">key2: kuSA</div>
+    <div class="question">Is state <b>V</b> (V Buddhist/Jaina) justified for <b>kuśā</b> — is the word genuinely attested in that Sanskrit?</div>
+    <div class="grid">
+      <div class="panel">
+        <h4>renou_enriched (all states)</h4>
+        <div><span class="chip small">I</span> <span class="chip small">II</span> <span class="chip small">III</span> <span class="chip small">IV</span> <span class="chip small">V</span></div>
+        <h4>renou_provenance (signal per state)</h4>
+        <div><span class="chip">I: dcs</span> <span class="chip">II: dcs</span> <span class="chip">III: dcs</span> <span class="chip">IV: dcs</span> <span class="chip">V: bhs</span></div>
+      </div>
+      <div class="panel">
+        <h4>Resolved &lt;ls&gt; citations</h4>
+        <div class="muted">no resolved &lt;ls&gt; citations recovered</div>
+      </div>
+      <div class="panel">
+        <h4>DCS evidence for state V</h4>
+        <div>lemma total: <b>5</b> DCS texts &middot; oldest attestation: <b>Drāhyāyaṇaśrautasūtra</b> (-550) </div><div>this state: no support entry for this state (below min-support / filtered)</div>
+      </div>
+    </div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Approve</button>
+      <button class="vote reject" data-vote="reject">&#10060; Reject</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="S0-049" data-stratum="C">
+    <header>
+      <div class="hw">sattva <span class="dict-badge">MW</span></div>
+      <div class="stratum-badge">C — maximal-span suspects</div>
+    </header>
+    <div class="key2">key2: sat-tva/</div>
+    <div class="question">Is state <b>V</b> (V Buddhist/Jaina) justified for <b>sattva</b> — is the word genuinely attested in that Sanskrit?</div>
+    <div class="grid">
+      <div class="panel">
+        <h4>renou_enriched (all states)</h4>
+        <div><span class="chip small">I</span> <span class="chip small">II</span> <span class="chip small">III</span> <span class="chip small">IV</span> <span class="chip small">V</span></div>
+        <h4>renou_provenance (signal per state)</h4>
+        <div><span class="chip">I: dcs</span> <span class="chip">II: dcs</span> <span class="chip">III: dcs</span> <span class="chip">IV: dcs</span> <span class="chip">V: dcs</span></div>
+      </div>
+      <div class="panel">
+        <h4>Resolved &lt;ls&gt; citations</h4>
+        <div class="muted">no resolved &lt;ls&gt; citations recovered</div>
+      </div>
+      <div class="panel">
+        <h4>DCS evidence for state V</h4>
+        <div>lemma total: <b>135</b> DCS texts &middot; oldest attestation: <b>Maitrāyaṇīsaṃhitā</b> (-800) </div><div>this state: confidence <b>high</b>, n=<b>10</b> texts</div>
+      </div>
+    </div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Approve</button>
+      <button class="vote reject" data-vote="reject">&#10060; Reject</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="S0-050" data-stratum="C">
+    <header>
+      <div class="hw">pura <span class="dict-badge">MW</span></div>
+      <div class="stratum-badge">C — maximal-span suspects</div>
+    </header>
+    <div class="key2">key2: pura</div>
+    <div class="question">Is state <b>V</b> (V Buddhist/Jaina) justified for <b>pura</b> — is the word genuinely attested in that Sanskrit?</div>
+    <div class="grid">
+      <div class="panel">
+        <h4>renou_enriched (all states)</h4>
+        <div><span class="chip small">I</span> <span class="chip small">II</span> <span class="chip small">III</span> <span class="chip small">IV</span> <span class="chip small">V</span></div>
+        <h4>renou_provenance (signal per state)</h4>
+        <div><span class="chip">I: dcs</span> <span class="chip">II: dcs</span> <span class="chip">III: dcs</span> <span class="chip">IV: ls+dcs</span> <span class="chip">V: dcs+bhs</span></div>
+      </div>
+      <div class="panel">
+        <h4>Resolved &lt;ls&gt; citations</h4>
+        <div class="muted">no resolved &lt;ls&gt; citations recovered</div>
+      </div>
+      <div class="panel">
+        <h4>DCS evidence for state V</h4>
+        <div>lemma total: <b>98</b> DCS texts &middot; oldest attestation: <b>Ṛgveda</b> (-1350) </div><div>this state: confidence <b>high</b>, n=<b>5</b> texts</div>
+      </div>
+    </div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Approve</button>
+      <button class="vote reject" data-vote="reject">&#10060; Reject</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="S0-051" data-stratum="D">
+    <header>
+      <div class="hw">pratidoṣam <span class="dict-badge">PWG</span></div>
+      <div class="stratum-badge">D — single-era dcs_adds</div>
+    </header>
+    <div class="key2">key2: pratidoza/m</div>
+    <div class="question">Is state <b>IV</b> (IV Classical) justified for <b>pratidoṣam</b> — is the word genuinely attested in that Sanskrit?</div>
+    <div class="grid">
+      <div class="panel">
+        <h4>renou_enriched (all states)</h4>
+        <div><span class="chip small">I</span> <span class="chip small">IV</span></div>
+        <h4>renou_provenance (signal per state)</h4>
+        <div><span class="chip">I: ls+dcs</span> <span class="chip">IV: dcs</span></div>
+      </div>
+      <div class="panel">
+        <h4>Resolved &lt;ls&gt; citations</h4>
+        <ul class="cites"><li><b>ṚV</b> — Ṛgveda (state I, date -1125)</li></ul>
+      </div>
+      <div class="panel">
+        <h4>DCS evidence for state IV</h4>
+        <div>lemma total: <b>8</b> DCS texts &middot; oldest attestation: <b>Ṛgveda</b> (-1350) </div><div>this state: confidence <b>high</b>, n=<b>7</b> texts</div>
+      </div>
+    </div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Approve</button>
+      <button class="vote reject" data-vote="reject">&#10060; Reject</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="S0-052" data-stratum="D">
+    <header>
+      <div class="hw">jaṭāla <span class="dict-badge">MW</span></div>
+      <div class="stratum-badge">D — single-era dcs_adds</div>
+    </header>
+    <div class="key2">key2: jawAla</div>
+    <div class="question">Is state <b>III</b> (III Epic) justified for <b>jaṭāla</b> — is the word genuinely attested in that Sanskrit?</div>
+    <div class="grid">
+      <div class="panel">
+        <h4>renou_enriched (all states)</h4>
+        <div><span class="chip small">III</span> <span class="chip small">IV</span></div>
+        <h4>renou_provenance (signal per state)</h4>
+        <div><span class="chip">III: dcs</span> <span class="chip">IV: ls+dcs</span></div>
+      </div>
+      <div class="panel">
+        <h4>Resolved &lt;ls&gt; citations</h4>
+        <ul class="cites"><li><b>L</b> — lexicographers (kośa tradition) (state IV, date 1100)</li></ul>
+      </div>
+      <div class="panel">
+        <h4>DCS evidence for state III</h4>
+        <div>lemma total: <b>4</b> DCS texts &middot; oldest attestation: <b>Harṣacarita</b> (562) </div><div>this state: confidence <b>high</b>, n=<b>1</b> texts</div>
+      </div>
+    </div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Approve</button>
+      <button class="vote reject" data-vote="reject">&#10060; Reject</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="S0-053" data-stratum="D">
+    <header>
+      <div class="hw">phenila <span class="dict-badge">MW</span></div>
+      <div class="stratum-badge">D — single-era dcs_adds</div>
+    </header>
+    <div class="key2">key2: Penila</div>
+    <div class="question">Is state <b>III</b> (III Epic) justified for <b>phenila</b> — is the word genuinely attested in that Sanskrit?</div>
+    <div class="grid">
+      <div class="panel">
+        <h4>renou_enriched (all states)</h4>
+        <div><span class="chip small">III</span> <span class="chip small">IV</span></div>
+        <h4>renou_provenance (signal per state)</h4>
+        <div><span class="chip">III: dcs</span> <span class="chip">IV: ls+dcs</span></div>
+      </div>
+      <div class="panel">
+        <h4>Resolved &lt;ls&gt; citations</h4>
+        <ul class="cites"><li><b>L</b> — lexicographers (kośa tradition) (state IV, date 1100)</li></ul>
+      </div>
+      <div class="panel">
+        <h4>DCS evidence for state III</h4>
+        <div>lemma total: <b>19</b> DCS texts &middot; oldest attestation: <b>Mahābhārata</b> (0) </div><div>this state: confidence <b>high</b>, n=<b>7</b> texts</div>
+      </div>
+    </div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Approve</button>
+      <button class="vote reject" data-vote="reject">&#10060; Reject</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="S0-054" data-stratum="D">
+    <header>
+      <div class="hw">kharpara <span class="dict-badge">MW</span></div>
+      <div class="stratum-badge">D — single-era dcs_adds</div>
+    </header>
+    <div class="key2">key2: Karpara</div>
+    <div class="question">Is state <b>III</b> (III Epic) justified for <b>kharpara</b> — is the word genuinely attested in that Sanskrit?</div>
+    <div class="grid">
+      <div class="panel">
+        <h4>renou_enriched (all states)</h4>
+        <div><span class="chip small">III</span> <span class="chip small">IV</span> <span class="chip small">V</span></div>
+        <h4>renou_provenance (signal per state)</h4>
+        <div><span class="chip">III: dcs</span> <span class="chip">IV: ls+dcs</span> <span class="chip">V: bhs</span></div>
+      </div>
+      <div class="panel">
+        <h4>Resolved &lt;ls&gt; citations</h4>
+        <ul class="cites"><li><b>Bhpr</b> — Bhāvaprakāśa (state IV, date 1550)</li></ul>
+      </div>
+      <div class="panel">
+        <h4>DCS evidence for state III</h4>
+        <div>lemma total: <b>26</b> DCS texts &middot; oldest attestation: <b>Rasahṛdayatantra</b> (950) </div><div>this state: confidence <b>high</b>, n=<b>2</b> texts</div>
+      </div>
+    </div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Approve</button>
+      <button class="vote reject" data-vote="reject">&#10060; Reject</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="S0-055" data-stratum="D">
+    <header>
+      <div class="hw">kālakañja <span class="dict-badge">BEN</span></div>
+      <div class="stratum-badge">D — single-era dcs_adds</div>
+    </header>
+    <div class="key2">key2: kAlakaYja</div>
+    <div class="question">Is state <b>I</b> (I Vedic) justified for <b>kālakañja</b> — is the word genuinely attested in that Sanskrit?</div>
+    <div class="grid">
+      <div class="panel">
+        <h4>renou_enriched (all states)</h4>
+        <div><span class="chip small">I</span> <span class="chip small">III</span></div>
+        <h4>renou_provenance (signal per state)</h4>
+        <div><span class="chip">I: dcs</span> <span class="chip">III: ls+dcs</span></div>
+      </div>
+      <div class="panel">
+        <h4>Resolved &lt;ls&gt; citations</h4>
+        <ul class="cites"><li><b>MBh</b> — MBh (state III, date 80)</li></ul>
+      </div>
+      <div class="panel">
+        <h4>DCS evidence for state I</h4>
+        <div>lemma total: <b>2</b> DCS texts &middot; oldest attestation: <b>Taittirīyabrāhmaṇa</b> (-550) </div><div>this state: confidence <b>medium</b>, n=<b>1</b> texts</div>
+      </div>
+    </div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Approve</button>
+      <button class="vote reject" data-vote="reject">&#10060; Reject</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="S0-056" data-stratum="D">
+    <header>
+      <div class="hw">mūtrakṛcchra <span class="dict-badge">PWG</span></div>
+      <div class="stratum-badge">D — single-era dcs_adds</div>
+    </header>
+    <div class="key2">key2: mUtrakfcCra</div>
+    <div class="question">Is state <b>III</b> (III Epic) justified for <b>mūtrakṛcchra</b> — is the word genuinely attested in that Sanskrit?</div>
+    <div class="grid">
+      <div class="panel">
+        <h4>renou_enriched (all states)</h4>
+        <div><span class="chip small">III</span> <span class="chip small">IV</span></div>
+        <h4>renou_provenance (signal per state)</h4>
+        <div><span class="chip">III: dcs</span> <span class="chip">IV: ls+dcs</span></div>
+      </div>
+      <div class="panel">
+        <h4>Resolved &lt;ls&gt; citations</h4>
+        <ul class="cites"><li><b>AK</b> — Amarakośa (state IV, date 450)</li><li><b>H</b> — Hemacandra, Abhidhānacintāmaṇi (state IV, date 1150)</li><li><b>SUŚR</b> — Suśruta-Saṃhitā (state IV, date 400)</li></ul>
+      </div>
+      <div class="panel">
+        <h4>DCS evidence for state III</h4>
+        <div>lemma total: <b>18</b> DCS texts &middot; oldest attestation: <b>Carakasaṃhitā</b> (150) </div><div>this state: confidence <b>medium</b>, n=<b>1</b> texts</div>
+      </div>
+    </div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Approve</button>
+      <button class="vote reject" data-vote="reject">&#10060; Reject</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="S0-057" data-stratum="D">
+    <header>
+      <div class="hw">phalada <span class="dict-badge">MW</span></div>
+      <div class="stratum-badge">D — single-era dcs_adds</div>
+    </header>
+    <div class="key2">key2: Pala—da</div>
+    <div class="question">Is state <b>III</b> (III Epic) justified for <b>phalada</b> — is the word genuinely attested in that Sanskrit?</div>
+    <div class="grid">
+      <div class="panel">
+        <h4>renou_enriched (all states)</h4>
+        <div><span class="chip small">III</span> <span class="chip small">IV</span></div>
+        <h4>renou_provenance (signal per state)</h4>
+        <div><span class="chip">III: dcs</span> <span class="chip">IV: ls+dcs</span></div>
+      </div>
+      <div class="panel">
+        <h4>Resolved &lt;ls&gt; citations</h4>
+        <ul class="cites"><li><b>L</b> — lexicographers (kośa tradition) (state IV, date 1100)</li></ul>
+      </div>
+      <div class="panel">
+        <h4>DCS evidence for state III</h4>
+        <div>lemma total: <b>6</b> DCS texts &middot; oldest attestation: <b>Manusmṛti</b> (200) </div><div>this state: confidence <b>high</b>, n=<b>3</b> texts</div>
+      </div>
+    </div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Approve</button>
+      <button class="vote reject" data-vote="reject">&#10060; Reject</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="S0-058" data-stratum="D">
+    <header>
+      <div class="hw">ambālikā <span class="dict-badge">PWG</span></div>
+      <div class="stratum-badge">D — single-era dcs_adds</div>
+    </header>
+    <div class="key2">key2: ambAlikA</div>
+    <div class="question">Is state <b>I</b> (I Vedic) justified for <b>ambālikā</b> — is the word genuinely attested in that Sanskrit?</div>
+    <div class="grid">
+      <div class="panel">
+        <h4>renou_enriched (all states)</h4>
+        <div><span class="chip small">I</span> <span class="chip small">III</span> <span class="chip small">IV</span></div>
+        <h4>renou_provenance (signal per state)</h4>
+        <div><span class="chip">I: dcs</span> <span class="chip">III: ls+dcs</span> <span class="chip">IV: ls+dcs</span></div>
+      </div>
+      <div class="panel">
+        <h4>Resolved &lt;ls&gt; citations</h4>
+        <ul class="cites"><li><b>ŚKDR</b> — Śabdakalpadruma (= SKD) (state IV, date 1830)</li><li><b>RĀJAN</b> — Rājanighaṇṭu (state IV, date 1300)</li><li><b>MBH</b> — Mahābhārata (state III, date 80)</li></ul>
+      </div>
+      <div class="panel">
+        <h4>DCS evidence for state I</h4>
+        <div>lemma total: <b>11</b> DCS texts &middot; oldest attestation: <b>Śatapathabrāhmaṇa</b> (-800) </div><div>this state: confidence <b>high</b>, n=<b>1</b> texts</div>
+      </div>
+    </div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Approve</button>
+      <button class="vote reject" data-vote="reject">&#10060; Reject</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="S0-059" data-stratum="D">
+    <header>
+      <div class="hw">suṣama <span class="dict-badge">PW</span></div>
+      <div class="stratum-badge">D — single-era dcs_adds</div>
+    </header>
+    <div class="key2">key2: suzama</div>
+    <div class="question">Is state <b>I</b> (I Vedic) justified for <b>suṣama</b> — is the word genuinely attested in that Sanskrit?</div>
+    <div class="grid">
+      <div class="panel">
+        <h4>renou_enriched (all states)</h4>
+        <div><span class="chip small">I</span> <span class="chip small">IV</span></div>
+        <h4>renou_provenance (signal per state)</h4>
+        <div><span class="chip">I: dcs</span> <span class="chip">IV: ls+dcs</span></div>
+      </div>
+      <div class="panel">
+        <h4>Resolved &lt;ls&gt; citations</h4>
+        <div class="muted">no resolved &lt;ls&gt; citations recovered</div>
+      </div>
+      <div class="panel">
+        <h4>DCS evidence for state I</h4>
+        <div>lemma total: <b>8</b> DCS texts &middot; oldest attestation: <b>Śatapathabrāhmaṇa</b> (-800) </div><div>this state: confidence <b>high</b>, n=<b>2</b> texts</div>
+      </div>
+    </div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Approve</button>
+      <button class="vote reject" data-vote="reject">&#10060; Reject</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="S0-060" data-stratum="D">
+    <header>
+      <div class="hw">śreyasa <span class="dict-badge">BEN</span></div>
+      <div class="stratum-badge">D — single-era dcs_adds</div>
+    </header>
+    <div class="key2">key2: Sreyasa</div>
+    <div class="question">Is state <b>IV</b> (IV Classical) justified for <b>śreyasa</b> — is the word genuinely attested in that Sanskrit?</div>
+    <div class="grid">
+      <div class="panel">
+        <h4>renou_enriched (all states)</h4>
+        <div><span class="chip small">III</span> <span class="chip small">IV</span></div>
+        <h4>renou_provenance (signal per state)</h4>
+        <div><span class="chip">III: ls+dcs</span> <span class="chip">IV: dcs</span></div>
+      </div>
+      <div class="panel">
+        <h4>Resolved &lt;ls&gt; citations</h4>
+        <ul class="cites"><li><b>Man</b> — Man (state III, date 150)</li></ul>
+      </div>
+      <div class="panel">
+        <h4>DCS evidence for state IV</h4>
+        <div>lemma total: <b>2</b> DCS texts &middot; oldest attestation: <b>Amarakośa</b> (600) </div><div>this state: confidence <b>high</b>, n=<b>1</b> texts</div>
+      </div>
+    </div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Approve</button>
+      <button class="vote reject" data-vote="reject">&#10060; Reject</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="S0-061" data-stratum="E">
+    <header>
+      <div class="hw">upāñc <span class="dict-badge">MW</span></div>
+      <div class="stratum-badge">E — corroborated controls</div>
+    </header>
+    <div class="key2">key2: upAYc</div>
+    <div class="question">Is state <b>I</b> (I Vedic) justified for <b>upāñc</b> — is the word genuinely attested in that Sanskrit?</div>
+    <div class="grid">
+      <div class="panel">
+        <h4>renou_enriched (all states)</h4>
+        <div><span class="chip small">I</span></div>
+        <h4>renou_provenance (signal per state)</h4>
+        <div><span class="chip">I: ls+dcs</span></div>
+      </div>
+      <div class="panel">
+        <h4>Resolved &lt;ls&gt; citations</h4>
+        <ul class="cites"><li><b>ŚBr</b> — Śatapatha-Brāhmaṇa (state I, date -800)</li></ul>
+      </div>
+      <div class="panel">
+        <h4>DCS evidence for state I</h4>
+        <div>lemma total: <b>1</b> DCS texts &middot; oldest attestation: <b>Śatapathabrāhmaṇa</b> (-800) </div><div>this state: confidence <b>high</b>, n=<b>1</b> texts</div>
+      </div>
+    </div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Approve</button>
+      <button class="vote reject" data-vote="reject">&#10060; Reject</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="S0-062" data-stratum="E">
+    <header>
+      <div class="hw">carṣaṇīsah <span class="dict-badge">MW</span></div>
+      <div class="stratum-badge">E — corroborated controls</div>
+    </header>
+    <div class="key2">key2: carzaRI—sa/h</div>
+    <div class="question">Is state <b>I</b> (I Vedic) justified for <b>carṣaṇīsah</b> — is the word genuinely attested in that Sanskrit?</div>
+    <div class="grid">
+      <div class="panel">
+        <h4>renou_enriched (all states)</h4>
+        <div><span class="chip small">I</span></div>
+        <h4>renou_provenance (signal per state)</h4>
+        <div><span class="chip">I: ls+dcs</span></div>
+      </div>
+      <div class="panel">
+        <h4>Resolved &lt;ls&gt; citations</h4>
+        <ul class="cites"><li><b>RV</b> — Ṛgveda (state I, date -1125)</li></ul>
+      </div>
+      <div class="panel">
+        <h4>DCS evidence for state I</h4>
+        <div>lemma total: <b>1</b> DCS texts &middot; oldest attestation: <b>Ṛgveda</b> (-1350) </div><div>this state: confidence <b>high</b>, n=<b>1</b> texts</div>
+      </div>
+    </div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Approve</button>
+      <button class="vote reject" data-vote="reject">&#10060; Reject</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="S0-063" data-stratum="E">
+    <header>
+      <div class="hw">hariman <span class="dict-badge">PWG</span></div>
+      <div class="stratum-badge">E — corroborated controls</div>
+    </header>
+    <div class="key2">key2: harima/n</div>
+    <div class="question">Is state <b>I</b> (I Vedic) justified for <b>hariman</b> — is the word genuinely attested in that Sanskrit?</div>
+    <div class="grid">
+      <div class="panel">
+        <h4>renou_enriched (all states)</h4>
+        <div><span class="chip small">I</span></div>
+        <h4>renou_provenance (signal per state)</h4>
+        <div><span class="chip">I: ls+dcs</span></div>
+      </div>
+      <div class="panel">
+        <h4>Resolved &lt;ls&gt; citations</h4>
+        <ul class="cites"><li><b>ṚV</b> — Ṛgveda (state I, date -1125)</li><li><b>AV</b> — Atharvaveda (state I, date -940)</li></ul>
+      </div>
+      <div class="panel">
+        <h4>DCS evidence for state I</h4>
+        <div>lemma total: <b>4</b> DCS texts &middot; oldest attestation: <b>Ṛgveda</b> (-1350) </div><div>this state: confidence <b>high</b>, n=<b>4</b> texts</div>
+      </div>
+    </div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Approve</button>
+      <button class="vote reject" data-vote="reject">&#10060; Reject</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="S0-064" data-stratum="E">
+    <header>
+      <div class="hw">ayuja <span class="dict-badge">PWG</span></div>
+      <div class="stratum-badge">E — corroborated controls</div>
+    </header>
+    <div class="key2">key2: ayuja/</div>
+    <div class="question">Is state <b>I</b> (I Vedic) justified for <b>ayuja</b> — is the word genuinely attested in that Sanskrit?</div>
+    <div class="grid">
+      <div class="panel">
+        <h4>renou_enriched (all states)</h4>
+        <div><span class="chip small">I</span></div>
+        <h4>renou_provenance (signal per state)</h4>
+        <div><span class="chip">I: ls+dcs</span></div>
+      </div>
+      <div class="panel">
+        <h4>Resolved &lt;ls&gt; citations</h4>
+        <div class="muted">no resolved &lt;ls&gt; citations recovered</div>
+      </div>
+      <div class="panel">
+        <h4>DCS evidence for state I</h4>
+        <div>lemma total: <b>7</b> DCS texts &middot; oldest attestation: <b>Ṛgveda</b> (-1350) </div><div>this state: confidence <b>high</b>, n=<b>7</b> texts</div>
+      </div>
+    </div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Approve</button>
+      <button class="vote reject" data-vote="reject">&#10060; Reject</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="S0-065" data-stratum="E">
+    <header>
+      <div class="hw">nikṛtin <span class="dict-badge">MW</span></div>
+      <div class="stratum-badge">E — corroborated controls</div>
+    </header>
+    <div class="key2">key2: ni-kftin</div>
+    <div class="question">Is state <b>III</b> (III Epic) justified for <b>nikṛtin</b> — is the word genuinely attested in that Sanskrit?</div>
+    <div class="grid">
+      <div class="panel">
+        <h4>renou_enriched (all states)</h4>
+        <div><span class="chip small">III</span></div>
+        <h4>renou_provenance (signal per state)</h4>
+        <div><span class="chip">III: ls+dcs</span></div>
+      </div>
+      <div class="panel">
+        <h4>Resolved &lt;ls&gt; citations</h4>
+        <ul class="cites"><li><b>MBh</b> — Mahābhārata (state III, date 80)</li></ul>
+      </div>
+      <div class="panel">
+        <h4>DCS evidence for state III</h4>
+        <div>lemma total: <b>1</b> DCS texts &middot; oldest attestation: <b>Mahābhārata</b> (0) </div><div>this state: confidence <b>high</b>, n=<b>1</b> texts</div>
+      </div>
+    </div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Approve</button>
+      <button class="vote reject" data-vote="reject">&#10060; Reject</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="S0-066" data-stratum="E">
+    <header>
+      <div class="hw">āgārika <span class="dict-badge">BHS</span></div>
+      <div class="stratum-badge">E — corroborated controls</div>
+    </header>
+    <div class="key2">key2: AgArika</div>
+    <div class="question">Is state <b>V</b> (V Buddhist/Jaina) justified for <b>āgārika</b> — is the word genuinely attested in that Sanskrit?</div>
+    <div class="grid">
+      <div class="panel">
+        <h4>renou_enriched (all states)</h4>
+        <div><span class="chip small">V</span></div>
+        <h4>renou_provenance (signal per state)</h4>
+        <div><span class="chip">V: ls+dcs</span></div>
+      </div>
+      <div class="panel">
+        <h4>Resolved &lt;ls&gt; citations</h4>
+        <ul class="cites"><li><b>Divy</b> — Divy (state V, date 200)</li><li><b>MSV</b> — MSV (state V, date 200)</li><li><b>Bbh</b> — Bbh (state V, date 200)</li></ul>
+      </div>
+      <div class="panel">
+        <h4>DCS evidence for state V</h4>
+        <div>lemma total: <b>1</b> DCS texts &middot; oldest attestation: <b>Divyāvadāna</b> (0) </div><div>this state: confidence <b>high</b>, n=<b>1</b> texts</div>
+      </div>
+    </div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Approve</button>
+      <button class="vote reject" data-vote="reject">&#10060; Reject</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="S0-067" data-stratum="E">
+    <header>
+      <div class="hw">pāpaśamanī <span class="dict-badge">MW</span></div>
+      <div class="stratum-badge">E — corroborated controls</div>
+    </header>
+    <div class="key2">key2: pApa—SamanI</div>
+    <div class="question">Is state <b>IV</b> (IV Classical) justified for <b>pāpaśamanī</b> — is the word genuinely attested in that Sanskrit?</div>
+    <div class="grid">
+      <div class="panel">
+        <h4>renou_enriched (all states)</h4>
+        <div><span class="chip small">IV</span></div>
+        <h4>renou_provenance (signal per state)</h4>
+        <div><span class="chip">IV: ls+dcs</span></div>
+      </div>
+      <div class="panel">
+        <h4>Resolved &lt;ls&gt; citations</h4>
+        <ul class="cites"><li><b>L</b> — lexicographers (kośa tradition) (state IV, date 1100)</li></ul>
+      </div>
+      <div class="panel">
+        <h4>DCS evidence for state IV</h4>
+        <div>lemma total: <b>1</b> DCS texts &middot; oldest attestation: <b>Rājanighaṇṭu</b> (1450) </div><div>this state: confidence <b>high</b>, n=<b>1</b> texts</div>
+      </div>
+    </div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Approve</button>
+      <button class="vote reject" data-vote="reject">&#10060; Reject</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="S0-068" data-stratum="E">
+    <header>
+      <div class="hw">nāginī <span class="dict-badge">MW</span></div>
+      <div class="stratum-badge">E — corroborated controls</div>
+    </header>
+    <div class="key2">key2: nAginI</div>
+    <div class="question">Is state <b>IV</b> (IV Classical) justified for <b>nāginī</b> — is the word genuinely attested in that Sanskrit?</div>
+    <div class="grid">
+      <div class="panel">
+        <h4>renou_enriched (all states)</h4>
+        <div><span class="chip small">IV</span></div>
+        <h4>renou_provenance (signal per state)</h4>
+        <div><span class="chip">IV: ls+dcs</span></div>
+      </div>
+      <div class="panel">
+        <h4>Resolved &lt;ls&gt; citations</h4>
+        <ul class="cites"><li><b>L</b> — lexicographers (kośa tradition) (state IV, date 1100)</li></ul>
+      </div>
+      <div class="panel">
+        <h4>DCS evidence for state IV</h4>
+        <div>lemma total: <b>13</b> DCS texts &middot; oldest attestation: <b>Rasārṇava</b> (1050) </div><div>this state: confidence <b>high</b>, n=<b>13</b> texts</div>
+      </div>
+    </div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Approve</button>
+      <button class="vote reject" data-vote="reject">&#10060; Reject</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="S0-069" data-stratum="E">
+    <header>
+      <div class="hw">parinimna <span class="dict-badge">PWG</span></div>
+      <div class="stratum-badge">E — corroborated controls</div>
+    </header>
+    <div class="key2">key2: parinimna</div>
+    <div class="question">Is state <b>IV</b> (IV Classical) justified for <b>parinimna</b> — is the word genuinely attested in that Sanskrit?</div>
+    <div class="grid">
+      <div class="panel">
+        <h4>renou_enriched (all states)</h4>
+        <div><span class="chip small">IV</span></div>
+        <h4>renou_provenance (signal per state)</h4>
+        <div><span class="chip">IV: ls+dcs</span></div>
+      </div>
+      <div class="panel">
+        <h4>Resolved &lt;ls&gt; citations</h4>
+        <ul class="cites"><li><b>SUŚR</b> — Suśruta-Saṃhitā (state IV, date 400)</li></ul>
+      </div>
+      <div class="panel">
+        <h4>DCS evidence for state IV</h4>
+        <div>lemma total: <b>1</b> DCS texts &middot; oldest attestation: <b>Suśrutasaṃhitā</b> (200) </div><div>this state: confidence <b>high</b>, n=<b>1</b> texts</div>
+      </div>
+    </div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Approve</button>
+      <button class="vote reject" data-vote="reject">&#10060; Reject</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="S0-070" data-stratum="E">
+    <header>
+      <div class="hw">siṣṇu <span class="dict-badge">MW</span></div>
+      <div class="stratum-badge">E — corroborated controls</div>
+    </header>
+    <div class="key2">key2: sizRu</div>
+    <div class="question">Is state <b>I</b> (I Vedic) justified for <b>siṣṇu</b> — is the word genuinely attested in that Sanskrit?</div>
+    <div class="grid">
+      <div class="panel">
+        <h4>renou_enriched (all states)</h4>
+        <div><span class="chip small">I</span></div>
+        <h4>renou_provenance (signal per state)</h4>
+        <div><span class="chip">I: ls+dcs</span></div>
+      </div>
+      <div class="panel">
+        <h4>Resolved &lt;ls&gt; citations</h4>
+        <ul class="cites"><li><b>RV</b> — Ṛgveda (state I, date -1125)</li></ul>
+      </div>
+      <div class="panel">
+        <h4>DCS evidence for state I</h4>
+        <div>lemma total: <b>1</b> DCS texts &middot; oldest attestation: <b>Ṛgveda</b> (-1350) </div><div>this state: confidence <b>high</b>, n=<b>1</b> texts</div>
+      </div>
+    </div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Approve</button>
+      <button class="vote reject" data-vote="reject">&#10060; Reject</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+</main>
+<footer class="hint">
+  Judgment question per item: is the contested state genuinely attested for this
+  headword in that era of Sanskrit? Approve = justified &middot; Reject = over-tag
+  &middot; Defer = can't tell from the evidence shown. Keyboard: <kbd>a</kbd> approve
+  &middot; <kbd>r</kbd> reject &middot; <kbd>d</kbd> defer &middot; <kbd>&darr;</kbd>/<kbd>&uarr;</kbd>
+  next/prev card. Votes autosave to this browser's localStorage as you click;
+  click "Download decisions.json" when done (or partway — unvoted items are
+  included with decision:null).
+</footer>
+<script>
+(function () {
+  var SHEET_ID = "renou-pilot-2026-07-02";
+  var STORE_KEY = 'review-sheet:' + SHEET_ID;
+  var ids = ["S0-001", "S0-002", "S0-003", "S0-004", "S0-005", "S0-006", "S0-007", "S0-008", "S0-009", "S0-010", "S0-011", "S0-012", "S0-013", "S0-014", "S0-015", "S0-016", "S0-017", "S0-018", "S0-019", "S0-020", "S0-021", "S0-022", "S0-023", "S0-024", "S0-025", "S0-026", "S0-027", "S0-028", "S0-029", "S0-030", "S0-031", "S0-032", "S0-033", "S0-034", "S0-035", "S0-036", "S0-037", "S0-038", "S0-039", "S0-040", "S0-041", "S0-042", "S0-043", "S0-044", "S0-045", "S0-046", "S0-047", "S0-048", "S0-049", "S0-050", "S0-051", "S0-052", "S0-053", "S0-054", "S0-055", "S0-056", "S0-057", "S0-058", "S0-059", "S0-060", "S0-061", "S0-062", "S0-063", "S0-064", "S0-065", "S0-066", "S0-067", "S0-068", "S0-069", "S0-070"];
+  var state = {};
+  try {
+    var saved = JSON.parse(localStorage.getItem(STORE_KEY) || '{}');
+    state = saved || {};
+  } catch (e) { state = {}; }
+
+  function tally() {
+    var c = { approve: 0, reject: 0, defer: 0 };
+    ids.forEach(function (id) {
+      var v = state[id] && state[id].decision;
+      if (v && c.hasOwnProperty(v)) c[v]++;
+    });
+    document.getElementById('c-approve').textContent = c.approve;
+    document.getElementById('c-reject').textContent = c.reject;
+    document.getElementById('c-defer').textContent = c.defer;
+    document.getElementById('c-unvoted').textContent = ids.length - c.approve - c.reject - c.defer;
+  }
+
+  function applyCardUI(card) {
+    var id = card.getAttribute('data-id');
+    var rec = state[id] || {};
+    card.classList.remove('voted-approve', 'voted-reject', 'voted-defer');
+    var buttons = card.querySelectorAll('button.vote');
+    buttons.forEach(function (b) { b.classList.toggle('active', b.getAttribute('data-vote') === rec.decision); });
+    var label = card.querySelector('.vote-state');
+    label.textContent = rec.decision ? rec.decision : 'unvoted';
+    if (rec.decision) card.classList.add('voted-' + rec.decision);
+    var ta = card.querySelector('textarea.note');
+    if (rec.note && !ta.value) ta.value = rec.note;
+  }
+
+  function save() {
+    localStorage.setItem(STORE_KEY, JSON.stringify(state));
+    tally();
+  }
+
+  function vote(id, decision) {
+    state[id] = state[id] || {};
+    state[id].decision = decision;
+    save();
+  }
+
+  function noteChange(id, text) {
+    state[id] = state[id] || {};
+    state[id].note = text;
+    save();
+  }
+
+  document.querySelectorAll('.card').forEach(function (card) {
+    var id = card.getAttribute('data-id');
+    applyCardUI(card);
+    card.querySelectorAll('button.vote').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        vote(id, btn.getAttribute('data-vote'));
+        applyCardUI(card);
+      });
+    });
+    var ta = card.querySelector('textarea.note');
+    ta.addEventListener('input', function () { noteChange(id, ta.value); });
+  });
+
+  tally();
+
+  document.getElementById('downloadBtn').addEventListener('click', function () {
+    var decided = ids.filter(function (id) { return state[id] && state[id].decision; }).length;
+    var payload = {
+      sheet_id: SHEET_ID,
+      generated: "2026-07-02",
+      decided: decided,
+      items: ids.map(function (id) {
+        var rec = state[id] || {};
+        return { id: id, decision: rec.decision || null, note: rec.note || '' };
+      })
+    };
+    var blob = new Blob([JSON.stringify(payload, null, 2)], { type: 'application/json' });
+    var url = URL.createObjectURL(blob);
+    var a = document.createElement('a');
+    a.href = url;
+    a.download = 'decisions.json';
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+  });
+
+  // filters
+  var filterbar = document.getElementById('filterbar');
+  filterbar.addEventListener('click', function (e) {
+    var btn = e.target.closest('button[data-filter]');
+    if (!btn) return;
+    filterbar.querySelectorAll('button').forEach(function (b) { b.classList.remove('active'); });
+    btn.classList.add('active');
+    var f = btn.getAttribute('data-filter');
+    document.querySelectorAll('.card').forEach(function (card) {
+      var show = true;
+      if (f === 'unvoted') {
+        var id = card.getAttribute('data-id');
+        show = !(state[id] && state[id].decision);
+      } else if (f !== 'all') {
+        show = card.getAttribute('data-stratum') === f;
+      }
+      card.style.display = show ? '' : 'none';
+    });
+  });
+
+  // keyboard shortcuts on the currently-focused / nearest-in-view card
+  var cardsEl = Array.prototype.slice.call(document.querySelectorAll('.card'));
+  var activeIdx = 0;
+  function visibleCards() {
+    return cardsEl.filter(function (c) { return c.style.display !== 'none'; });
+  }
+  function scrollToCard(card) {
+    if (card) card.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  }
+  document.addEventListener('keydown', function (e) {
+    if (e.target.tagName === 'TEXTAREA') return;
+    var vis = visibleCards();
+    if (!vis.length) return;
+    if (activeIdx >= vis.length) activeIdx = vis.length - 1;
+    var card = vis[activeIdx];
+    var id = card.getAttribute('data-id');
+    if (e.key === 'a') { vote(id, 'approve'); applyCardUI(card); }
+    else if (e.key === 'r') { vote(id, 'reject'); applyCardUI(card); }
+    else if (e.key === 'd') { vote(id, 'defer'); applyCardUI(card); }
+    else if (e.key === 'ArrowDown') { activeIdx = Math.min(activeIdx + 1, vis.length - 1); scrollToCard(vis[activeIdx]); }
+    else if (e.key === 'ArrowUp') { activeIdx = Math.max(activeIdx - 1, 0); scrollToCard(vis[activeIdx]); }
+    else return;
+    e.preventDefault();
+  });
+})();
+</script>
+</body>
+</html>
