@@ -2,6 +2,14 @@
 
 _Created: 02-07-2026 · Last updated: 02-07-2026_
 
+> **Update 02-07-2026 — audit-churn session closed.** The §3 flags FL1/FL2/FL3/FL5 named
+> for a follow-up "audit-churn (Opus/Fable-tier judgment)" session in §6 are now FIXED and
+> merged: [#82](https://github.com/gasyoun/SanskritLexicography/pull/82) (FL1),
+> [#80](https://github.com/gasyoun/SanskritLexicography/pull/80) (FL2),
+> [#81](https://github.com/gasyoun/SanskritLexicography/pull/81) (FL3),
+> [#79](https://github.com/gasyoun/SanskritLexicography/pull/79) (FL5). FL4/FL8 remain open
+> (EN-track / small PRs). Session model: Opus 4.8 (`claude-opus-4-8`).
+
 **Mission:** M.G. reported the pwg pipeline "failed too often" over the last week — big/dense
 cards not translated even after many retries. A same-day Sonnet 5 (`claude-sonnet-5`) session
 fixed 4 layered bugs ([PR #35](https://github.com/gasyoun/SanskritLexicography/pull/35),
@@ -120,11 +128,11 @@ mission forbids touching translation-quality logic — or its own scoped change)
 
 | # | Site | Issue | Suggested owner/session |
 |---|---|---|---|
-| FL1 | [`whitney_grammar.py:154-160`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/whitney_grammar.py) | `grammar_for(slp1, homonym)` falls back `… or recs`: a nonexistent homonym silently returns ALL homonyms — wrong-root grammar attached; collides with the siD homonym-safety finding | small dedicated PR; touches evidence injection, so validate on a homonym root |
-| FL2 | [`audit_window_en.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/audit_window_en.py) | the EN gate has no teeth: nulls never fail `--strict`; `save_and_audit.py` invokes it non-strict with no `--report`; a crashing sense-dupe subgate counts as clean (`returncode None` is falsy) | EN-track session (pairs with the EN residual re-run) |
-| FL3 | [`ru_coverage.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/ru_coverage.py) | the anti-silent-partial gate is wired to NOTHING (hand-run only), and a corrupt/missing EN denominator silently exempts a root from the very check built after the gam-6/127 incident | wire into `save_and_audit.py` or CI |
-| FL4 | `en_residual_keys.py:27-34` + `en_split_triage.py:66-68` | "done" = ≥1 English sense (a 1/40 card counts as done); a null card with a missing input vanishes from triage entirely | EN-track session |
-| FL5 | [`prompt_rule_audit.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/prompt_rule_audit.py) `has_text_signal()` | Mode-6 false positive (`suspicious_attested_without_text_signal`, 66% of round-2 risks) — requeues that NO model output can clear; 2,152 key-requeues on 06-29 alone | own session; semantic-risk heuristic, needs care |
+| FL1 | [`whitney_grammar.py:154-160`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/whitney_grammar.py) | `grammar_for(slp1, homonym)` falls back `… or recs`: a nonexistent homonym silently returns ALL homonyms — wrong-root grammar attached; collides with the siD homonym-safety finding | **✅ FIXED — [#82](https://github.com/gasyoun/SanskritLexicography/pull/82)** (empty + warning; validated on `vas`) |
+| FL2 | [`audit_window_en.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/audit_window_en.py) | the EN gate has no teeth: nulls never fail `--strict`; `save_and_audit.py` invokes it non-strict with no `--report`; a crashing sense-dupe subgate counts as clean (`returncode None` is falsy) | **✅ FIXED — [#80](https://github.com/gasyoun/SanskritLexicography/pull/80)** (nulls/crash fail `--strict`; strict-by-default in save; report always written) |
+| FL3 | [`ru_coverage.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/ru_coverage.py) | the anti-silent-partial gate is wired to NOTHING (hand-run only), and a corrupt/missing EN denominator silently exempts a root from the very check built after the gam-6/127 incident | **✅ FIXED — [#81](https://github.com/gasyoun/SanskritLexicography/pull/81)** (wired into `save_and_audit.py`; corrupt denom fails, missing denom loud `UNVERIFIABLE`) |
+| FL4 | `en_residual_keys.py:27-34` + `en_split_triage.py:66-68` | "done" = ≥1 English sense (a 1/40 card counts as done); a null card with a missing input vanishes from triage entirely | EN-track session (still open) |
+| FL5 | [`prompt_rule_audit.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/prompt_rule_audit.py) `has_text_signal()` | Mode-6 false positive (`suspicious_attested_without_text_signal`, 66% of round-2 risks) — requeues that NO model output can clear; 2,152 key-requeues on 06-29 alone | **✅ FIXED — [#79](https://github.com/gasyoun/SanskritLexicography/pull/79)** (meaning-claim + lexicographic-signal redesign, 37→6 fires; report-only by construction; reasoning in [`AUDIT_CHURN_FL5.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/AUDIT_CHURN_FL5.md)) |
 | FL6 | [`pwg_mask.py:43-58`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pwg_mask.py) | a truncated final record (missing `<L END>`) is buffered and never yielded — last record silently disappears from every consumer | small PR, low urgency (source file is stable) |
 | FL7 | `corpus_gate.py` evidence loaders | absent evidence jsonl → authority silently removed (degrades safely to LLM-verdict, but "sources not built" and "word uncovered" are indistinguishable); DB errors leave `corpus_examples: []` unmarked | note-only; safe direction |
 | FL8 | singleton status files (`window_status.json`, `audit_window.report.json`) | ANY audit run — including test fixtures — clobbers them; "current status" cannot be trusted without the event log (observed: current status reports a temp-file fixture) | small PR: per-run-id reports or a fixture guard |
