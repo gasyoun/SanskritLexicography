@@ -1,0 +1,980 @@
+{
+ "session": "FABLE_S7 gold-sample judge",
+ "date": "2026-07-02",
+ "judge_model": "Fable 5 (claude-fable-5), main session + 7 inherited-model subagent batches (<=3-wide)",
+ "ru_sample": {
+  "sampler": "src/fidelity_sample.py --n 50 --seed 7 --glob wf_output.s[cd].*.json",
+  "population_cards": 1882,
+  "n": 50,
+  "unit": "card",
+  "verdicts": {
+   "faithful": 28,
+   "acceptable-loss": 20,
+   "unfaithful": 2
+  },
+  "classes": {
+   "markup-loss": 17,
+   "grammar": 2,
+   "addition": 5,
+   "omission": 1
+  }
+ },
+ "en_sample": {
+  "source": "src/gold_sample_en.jsonl (60 rows, seed-42 stratified draw over store en layer) + 8-row seed-7 supplement for naS/yaj from wf_output.en.*.json",
+  "n": 68,
+  "unit": "sense row",
+  "roots": [
+   "Bid",
+   "Buj",
+   "Cid",
+   "DA",
+   "Sam",
+   "gA",
+   "hi",
+   "mad",
+   "naS",
+   "pA",
+   "pat",
+   "rakz",
+   "vad",
+   "vraj",
+   "yaj",
+   "yat"
+  ],
+  "verdicts": {
+   "acceptable-loss": 34,
+   "faithful": 33,
+   "unfaithful": 1
+  },
+  "classes": {
+   "markup-loss": 32,
+   "addition": 3,
+   "mw-tm-contamination": 1,
+   "term-mistranslation": 1
+  }
+ },
+ "overrides": [
+  {
+   "key": "v_a~~h1_18_sam",
+   "agent": "unfaithful",
+   "final": "acceptable-loss",
+   "reason": "German editorial note retained verbatim untranslated - coverage gap, not loss"
+  },
+  {
+   "id": 63,
+   "agent": "faithful",
+   "final": "acceptable-loss",
+   "reason": "batch-1 markup-loss convention"
+  },
+  {
+   "id": 65,
+   "agent": "faithful",
+   "final": "acceptable-loss",
+   "reason": "batch-1 markup-loss convention"
+  },
+  {
+   "id": 67,
+   "agent": "faithful",
+   "final": "acceptable-loss",
+   "reason": "batch-1 markup-loss convention"
+  }
+ ],
+ "ru_verdicts": [
+  {
+   "key": "_cid~~h0_21_prati",
+   "verdict": "faithful",
+   "classes": [],
+   "note": "Glosses and (acc.) marker reordered but semantically exact; markup intact."
+  },
+  {
+   "key": "muc~~h0_28_vi_1",
+   "verdict": "acceptable-loss",
+   "classes": [
+    "markup-loss"
+   ],
+   "note": "sense 0: {%..%} markers dropped around 'отцеплять, распрягать' and 'освобождать кого-либо'; meaning intact."
+  },
+  {
+   "key": "su~~h1_05_ud",
+   "verdict": "faithful",
+   "classes": [],
+   "note": "'aufwärts gehen heissen' = 'велеть идти вверх' exact."
+  },
+  {
+   "key": "vraj~~h0_15_ud",
+   "verdict": "faithful",
+   "classes": [],
+   "note": "Exact rendering; citations byte-identical."
+  },
+  {
+   "key": "ban_d~~h0_00_pwg01",
+   "verdict": "acceptable-loss",
+   "classes": [
+    "grammar",
+    "addition",
+    "markup-loss"
+   ],
+   "note": "sense 1: 'stockend'→'прерывисто' (adverb, slight shift); added 'в сравнении с' glue; <div n=\"1\"> dropped."
+  },
+  {
+   "key": "na_s~~h0_01_sec_1",
+   "verdict": "faithful",
+   "classes": [],
+   "note": "All five caus. glosses rendered exactly; accented SLP1 preserved."
+  },
+  {
+   "key": "pat~~h0_22_ni_1",
+   "verdict": "acceptable-loss",
+   "classes": [
+    "markup-loss"
+   ],
+   "note": "senses 0-2: {%..%} markers dropped around glosses; meanings faithful."
+  },
+  {
+   "key": "_ap~~h0_21_anusam",
+   "verdict": "faithful",
+   "classes": [],
+   "note": "'dazu vollenden, nachher zu Stande bringen' rendered exactly."
+  },
+  {
+   "key": "vraj~~h0_09__a",
+   "verdict": "faithful",
+   "classes": [],
+   "note": "Both senses exact incl. 'das wieder abgeht' = 'которая выходит обратно'."
+  },
+  {
+   "key": "_buj~~h2_01_sec_1",
+   "verdict": "faithful",
+   "classes": [],
+   "note": "Caus. construction note (double acc. / acc.+instr.) rendered exactly."
+  },
+  {
+   "key": "vas~~h13_00_pwg00",
+   "verdict": "faithful",
+   "classes": [],
+   "note": "Sense 0 ni: doublet 'разбил стан / расположился станом' for 'Sitz aufgeschlagen' is harmless; all glosses rendered."
+  },
+  {
+   "key": "vi_s~~h0_34_vini",
+   "verdict": "faithful",
+   "classes": [],
+   "note": "All 15 senses match German semantics; citations and SLP1 intact."
+  },
+  {
+   "key": "_bid~~h0_01_sec_1",
+   "verdict": "faithful",
+   "classes": [],
+   "note": "Glosses accurate incl. caus-3 'entzweien/irre machen'; cap at sense 2 not penalized."
+  },
+  {
+   "key": "m_a~~h2_01_sec_1",
+   "verdict": "faithful",
+   "classes": [],
+   "note": "Causative triple gloss and 'massen aus'/'bauen lassen' rendered correctly; cap respected."
+  },
+  {
+   "key": "muc~~h0_28_vi_0",
+   "verdict": "acceptable-loss",
+   "classes": [
+    "markup-loss"
+   ],
+   "note": "Sense 0: {%..%} markers dropped around 'отцеплять, отвязывать, освобождать' etc.; meaning intact."
+  },
+  {
+   "key": "yaj~~h0_06_apa",
+   "verdict": "faithful",
+   "classes": [],
+   "note": "'mit einem Opfer vertreiben, wegopfern' faithfully rendered; citation intact."
+  },
+  {
+   "key": "h_a~~h1_00_pwg01",
+   "verdict": "faithful",
+   "classes": [],
+   "note": "12 senses semantically faithful; sense 4 slight ellipsis of 'soll...sein' covered by 'Согласно'."
+  },
+  {
+   "key": "pat~~h0_zz_sch",
+   "verdict": "acceptable-loss",
+   "classes": [
+    "markup-loss"
+   ],
+   "note": "Sense 6 drops [Page243.2] marker; sense 2 drops '-x-' artifact; meanings intact."
+  },
+  {
+   "key": "pat~~h0_zz_pwkvn",
+   "verdict": "faithful",
+   "classes": [],
+   "note": "All three senses match; abbreviations, <ls> refs and cross-references '5.' preserved."
+  },
+  {
+   "key": "man~~h0_16_a_bipra",
+   "verdict": "acceptable-loss",
+   "classes": [
+    "markup-loss"
+   ],
+   "note": "Sense 0: {%..%} dropped around 'считать чем-л., принимать за'; meaning of 'halten für' intact."
+  },
+  {
+   "key": "br_u~~h0_zz_pw",
+   "verdict": "acceptable-loss",
+   "classes": [
+    "markup-loss"
+   ],
+   "note": "{%..%} gloss markers dropped throughout (senses 1-47); meanings faithful; harmless doublet renderings (sense 6, 7); spacing slip sense 8."
+  },
+  {
+   "key": "pa_s~~h0_zz_pw01",
+   "verdict": "faithful",
+   "classes": [],
+   "note": "Sigla-only entry, byte-identical; nothing to translate."
+  },
+  {
+   "key": "car~~h0_45_vi_1",
+   "verdict": "faithful",
+   "classes": [],
+   "note": "Glosses and markers preserved; capped tails not penalized; semantics match."
+  },
+  {
+   "key": "pat~~h0_08_sama_bi",
+   "verdict": "acceptable-loss",
+   "classes": [
+    "markup-loss"
+   ],
+   "note": "Sense 0: {%losstürzen auf%} markers dropped; meaning intact."
+  },
+  {
+   "key": "_sam~~h1_17_prati",
+   "verdict": "acceptable-loss",
+   "classes": [
+    "markup-loss"
+   ],
+   "note": "Sense 0: {%erloschen seiend%} markers dropped; 'угасший' correct."
+  },
+  {
+   "key": "la_b~~h0_02_sec_2",
+   "verdict": "faithful",
+   "classes": [],
+   "note": "All 6 desiderative glosses rendered; markers and citations preserved; cap respected."
+  },
+  {
+   "key": "m_a~~h2_12_pra_ri",
+   "verdict": "faithful",
+   "classes": [],
+   "note": "Forms-only entry, byte-identical; nothing to translate."
+  },
+  {
+   "key": "v_a~~h1_18_sam",
+   "verdict": "acceptable-loss",
+   "classes": [
+    "omission"
+   ],
+   "note": "FABLE OVERRIDE (agent said unfaithful): German editorial note '(wo mit der ed. Bomb. ...)' retained VERBATIM untranslated — coverage gap, nothing lost or misrendered."
+  },
+  {
+   "key": "pa_s~~h0_00_pwg00",
+   "verdict": "acceptable-loss",
+   "classes": [
+    "markup-loss"
+   ],
+   "note": "Sense 0: {%..%} markers dropped on both gloss runs; renderings semantically sound."
+  },
+  {
+   "key": "man~~h0_00_pwg02",
+   "verdict": "faithful",
+   "classes": [],
+   "note": "Markers, citations, and Sanskrit preserved; all glosses semantically accurate across senses 0-6."
+  },
+  {
+   "key": "rakz~~h0_00_pwg00",
+   "verdict": "acceptable-loss",
+   "classes": [
+    "markup-loss"
+   ],
+   "note": "s0: all 8 glosses + servare rendered; {%..%} markers dropped with meaning intact"
+  },
+  {
+   "key": "vac~~h0_19_paripra",
+   "verdict": "acceptable-loss",
+   "classes": [
+    "markup-loss"
+   ],
+   "note": "s0: meaning fully preserved; {%..%} gloss markers dropped"
+  },
+  {
+   "key": "d_a~~h0_32_pra",
+   "verdict": "acceptable-loss",
+   "classes": [
+    "markup-loss",
+    "addition"
+   ],
+   "note": "s0: {%..%} markers dropped; extra gloss 'жертвовать' doubles darbringen but stays in its semantic range"
+  },
+  {
+   "key": "_bid~~h0_21_vi",
+   "verdict": "faithful",
+   "classes": [],
+   "note": "all 9 senses semantically exact; markers, citations, section numbers intact"
+  },
+  {
+   "key": "iz~~h1_05_a_bipra",
+   "verdict": "faithful",
+   "classes": [],
+   "note": "auffordern/befehlen rendered accurately; markup and citations intact"
+  },
+  {
+   "key": "j_y_a~~h0_35_a_bisam",
+   "verdict": "faithful",
+   "classes": [],
+   "note": "both glosses match German semantics; markup preserved"
+  },
+  {
+   "key": "yaj~~h0_04_ati",
+   "verdict": "unfaithful",
+   "classes": [
+    "addition"
+   ],
+   "note": "FABLE CONFIRMED: RU adds second unsourced interpretive gloss 'пропустить (кого-либо) при раздаче жертвенного'; German has only 'mit dem Opfer übergehen'"
+  },
+  {
+   "key": "vah~~h0_01_sec_1",
+   "verdict": "unfaithful",
+   "classes": [
+    "addition"
+   ],
+   "note": "FABLE CONFIRMED: s7 'и другими' invents attribution — German credits BENFEY alone; rest faithful"
+  },
+  {
+   "key": "car~~h0_zz_pw02",
+   "verdict": "acceptable-loss",
+   "classes": [
+    "grammar",
+    "addition"
+   ],
+   "note": "s24: dative garbled ('тот, кто Sumantra передал слова'); s33: explanatory '(совокупляться)' added"
+  },
+  {
+   "key": "y_a~~h0_73_upasam",
+   "verdict": "faithful",
+   "classes": [],
+   "note": "vereint kommen zu rendered exactly; markup intact"
+  },
+  {
+   "key": "rakz~~h0_06_a_bi",
+   "verdict": "acceptable-loss",
+   "classes": [
+    "markup-loss"
+   ],
+   "note": "s0: {%..%} markers dropped around gloss; meaning intact, citations byte-identical"
+  },
+  {
+   "key": "vi_s~~h0_23_pratyupa",
+   "verdict": "acceptable-loss",
+   "classes": [],
+   "note": "s0: content reordered/consolidated ahead of citations; all glosses present incl. capped 'entgegentreten' part; meaning intact"
+  },
+  {
+   "key": "_sam~~h3_05_upani",
+   "verdict": "faithful",
+   "classes": [],
+   "note": "only sigla and Sanskrit; nothing translatable lost"
+  },
+  {
+   "key": "gam~~h0_63_sam_0",
+   "verdict": "faithful",
+   "classes": [],
+   "note": "all 6 senses + caus. render German accurately; markers and citations preserved"
+  },
+  {
+   "key": "vi_s~~h0_18_an_upa",
+   "verdict": "faithful",
+   "classes": [],
+   "note": "glosses and birthing-posture note rendered exactly"
+  },
+  {
+   "key": "vad~~h0_10_apa",
+   "verdict": "acceptable-loss",
+   "classes": [
+    "markup-loss"
+   ],
+   "note": "s1-s3,s5,s6: {%..%} markers dropped; s1 'oder' left German; meaning intact throughout"
+  },
+  {
+   "key": "vac~~h0_14_nis",
+   "verdict": "acceptable-loss",
+   "classes": [
+    "markup-loss"
+   ],
+   "note": "s0-s1: {%..%} markers dropped; 'wegsprechen'='отговаривать/изгонять словами' semantically sound"
+  },
+  {
+   "key": "na_s~~h0_00_pwg00",
+   "verdict": "faithful",
+   "classes": [],
+   "note": "grammar-form apparatus and glosses preserved with markers; capped tail excluded"
+  },
+  {
+   "key": "v_a~~h4_00_pwg00",
+   "verdict": "acceptable-loss",
+   "classes": [
+    "markup-loss"
+   ],
+   "note": "s0: {%..%} markers and ¦ headword divider dropped; glosses complete and accurate"
+  },
+  {
+   "key": "d_a~~h2_04_nirava",
+   "verdict": "faithful",
+   "classes": [],
+   "note": "both gloss pairs rendered accurately incl. share-apportioning sense; markers preserved"
+  }
+ ],
+ "en_verdicts": [
+  {
+   "id": 0,
+   "root": "vad",
+   "verdict": "acceptable-loss",
+   "classes": [
+    "markup-loss"
+   ],
+   "note": "'erschallen lassen' = 'to cause to resound' exact; {%..%} markers dropped, meaning intact."
+  },
+  {
+   "id": 1,
+   "root": "gA",
+   "verdict": "acceptable-loss",
+   "classes": [
+    "markup-loss"
+   ],
+   "note": "'besingen' = 'to celebrate in song' faithful; gloss markers dropped; citations byte-identical."
+  },
+  {
+   "id": 2,
+   "root": "Sam",
+   "verdict": "acceptable-loss",
+   "classes": [
+    "markup-loss"
+   ],
+   "note": "Both German glosses rendered exactly; {%..%} markers dropped."
+  },
+  {
+   "id": 3,
+   "root": "Sam",
+   "verdict": "acceptable-loss",
+   "classes": [
+    "markup-loss"
+   ],
+   "note": "All four glosses (Heil/Wohl/Glück/Segen) rendered; markers dropped; case abbreviations kept."
+  },
+  {
+   "id": 4,
+   "root": "Buj",
+   "verdict": "acceptable-loss",
+   "classes": [
+    "markup-loss"
+   ],
+   "note": "Glosses faithful; markers dropped. EN adds caus./act. header beyond visible DE, consistent with tag caus.1."
+  },
+  {
+   "id": 5,
+   "root": "DA",
+   "verdict": "acceptable-loss",
+   "classes": [
+    "markup-loss"
+   ],
+   "note": "'erwiedern, antworten' = 'to reply, to answer'; markers dropped only."
+  },
+  {
+   "id": 6,
+   "root": "pat",
+   "verdict": "acceptable-loss",
+   "classes": [
+    "markup-loss"
+   ],
+   "note": "'niederfliegen zu' = 'to fly down to' exact; markers dropped."
+  },
+  {
+   "id": 7,
+   "root": "yat",
+   "verdict": "acceptable-loss",
+   "classes": [
+    "markup-loss"
+   ],
+   "note": "'an's Herz legen' rendered correctly with gen./acc. roles preserved; leading div and markers dropped."
+  },
+  {
+   "id": 8,
+   "root": "pA",
+   "verdict": "acceptable-loss",
+   "classes": [
+    "markup-loss"
+   ],
+   "note": "All three glosses rendered; leading div and markers dropped."
+  },
+  {
+   "id": 9,
+   "root": "Sam",
+   "verdict": "acceptable-loss",
+   "classes": [
+    "markup-loss"
+   ],
+   "note": "All four glosses rendered faithfully incl. 'v. a.' siglum; markers dropped."
+  },
+  {
+   "id": 10,
+   "root": "vad",
+   "verdict": "acceptable-loss",
+   "classes": [
+    "markup-loss"
+   ],
+   "note": "'to be mutually inconsistent' doubles the single German gloss but same sense; markers dropped."
+  },
+  {
+   "id": 11,
+   "root": "vraj",
+   "verdict": "acceptable-loss",
+   "classes": [
+    "markup-loss"
+   ],
+   "note": "Gloss and 'wohl hierher'='probably here' faithful; markers dropped."
+  },
+  {
+   "id": 12,
+   "root": "mad",
+   "verdict": "acceptable-loss",
+   "classes": [
+    "markup-loss"
+   ],
+   "note": "'schlafen' and editorial remark rendered literally; ls preserved; markers dropped."
+  },
+  {
+   "id": 13,
+   "root": "DA",
+   "verdict": "acceptable-loss",
+   "classes": [
+    "markup-loss"
+   ],
+   "note": "Three glosses faithful; EN adds upasam header line, consistent with subcard; markers dropped."
+  },
+  {
+   "id": 14,
+   "root": "gA",
+   "verdict": "acceptable-loss",
+   "classes": [
+    "markup-loss"
+   ],
+   "note": "Two German verbs -> three English near-synonyms, same sense; markers dropped; Vedic accents intact."
+  },
+  {
+   "id": 15,
+   "root": "hi",
+   "verdict": "acceptable-loss",
+   "classes": [
+    "markup-loss"
+   ],
+   "note": "'dahinfahren' rendered as doublet 'travel away, go forth', same sense; markers dropped."
+  },
+  {
+   "id": 16,
+   "root": "pat",
+   "verdict": "acceptable-loss",
+   "classes": [
+    "markup-loss"
+   ],
+   "note": "'zubringen (die Zeit)' = 'to spend (time)' exact; markers dropped."
+  },
+  {
+   "id": 17,
+   "root": "rakz",
+   "verdict": "faithful",
+   "classes": [],
+   "note": "DE already English, retained verbatim; added NWS citation prefix plausibly from unmasked source."
+  },
+  {
+   "id": 18,
+   "root": "pA",
+   "verdict": "acceptable-loss",
+   "classes": [
+    "markup-loss"
+   ],
+   "note": "All seven German verbs matched one-to-one; markers dropped; citations intact."
+  },
+  {
+   "id": 19,
+   "root": "Bid",
+   "verdict": "faithful",
+   "classes": [],
+   "note": "{%..%} markers preserved; 'geborsten' = 'burst, cracked' within sense; citation intact."
+  },
+  {
+   "id": 20,
+   "root": "DA",
+   "verdict": "faithful",
+   "classes": [],
+   "note": "Cross-reference sigla retained verbatim as required."
+  },
+  {
+   "id": 21,
+   "root": "mad",
+   "verdict": "acceptable-loss",
+   "classes": [
+    "markup-loss"
+   ],
+   "note": "Glosses and lexicographer list faithful; 'insbes. especially' doubles siglum harmlessly; markers dropped."
+  },
+  {
+   "id": 22,
+   "root": "DA",
+   "verdict": "acceptable-loss",
+   "classes": [
+    "markup-loss"
+   ],
+   "note": "'beseitigt' rendered as doublet 'removed, set aside', same sense; markers dropped."
+  },
+  {
+   "id": 23,
+   "root": "pA",
+   "verdict": "acceptable-loss",
+   "classes": [
+    "markup-loss"
+   ],
+   "note": "'getränkt, erfüllt von' = 'steeped in, filled with' faithful; markers dropped."
+  },
+  {
+   "id": 24,
+   "root": "gA",
+   "verdict": "unfaithful",
+   "classes": [
+    "addition",
+    "mw-tm-contamination",
+    "markup-loss"
+   ],
+   "note": "FABLE CONFIRMED: '(of a heavenly body)' added — not in German 'untergehen vor, bei, während einer Handlung'; MW-style parenthetical for astam-gA."
+  },
+  {
+   "id": 25,
+   "root": "DA",
+   "verdict": "acceptable-loss",
+   "classes": [
+    "markup-loss"
+   ],
+   "note": "'bei Seite setzen' = 'to set aside' exact; markers dropped."
+  },
+  {
+   "id": 26,
+   "root": "Cid",
+   "verdict": "faithful",
+   "classes": [],
+   "note": "Both glosses rendered exactly; sigla bracket retained; punctuation normalization only."
+  },
+  {
+   "id": 27,
+   "root": "pat",
+   "verdict": "acceptable-loss",
+   "classes": [
+    "markup-loss"
+   ],
+   "note": "'to outfly, to overtake in flight' both render 'im Fliegen überholen'; same sense; markers dropped."
+  },
+  {
+   "id": 28,
+   "root": "pat",
+   "verdict": "faithful",
+   "classes": [],
+   "note": "Equation row retained byte-identical; nothing to translate."
+  },
+  {
+   "id": 29,
+   "root": "gA",
+   "verdict": "acceptable-loss",
+   "classes": [
+    "markup-loss"
+   ],
+   "note": "Four glosses matched; 'refers to' completes text after cap — not penalized; markers dropped."
+  },
+  {
+   "id": 30,
+   "root": "vad",
+   "verdict": "faithful",
+   "classes": [],
+   "note": "Vgl./fgg. sigla and Sanskrit retained verbatim as required."
+  },
+  {
+   "id": 31,
+   "root": "DA",
+   "verdict": "acceptable-loss",
+   "classes": [
+    "markup-loss"
+   ],
+   "note": "Both glosses faithful with 'after someone' distributed; [Page3-0907] artifact harmless; markers dropped."
+  },
+  {
+   "id": 32,
+   "root": "Bid",
+   "verdict": "acceptable-loss",
+   "classes": [
+    "markup-loss"
+   ],
+   "note": "'verrathen' = 'to betray' exact; markers dropped; citations intact."
+  },
+  {
+   "id": 33,
+   "root": "pat",
+   "verdict": "acceptable-loss",
+   "classes": [
+    "markup-loss"
+   ],
+   "note": "'über etwas hinauskommen' = 'to go beyond something' faithful; {%vyati%} markers dropped."
+  },
+  {
+   "id": 34,
+   "root": "DA",
+   "verdict": "acceptable-loss",
+   "classes": [
+    "addition"
+   ],
+   "note": "EN prepends div header '— {#saMni#}' absent from DE; glosses (steht bevor=is imminent, lies=read) faithful."
+  },
+  {
+   "id": 35,
+   "root": "DA",
+   "verdict": "faithful",
+   "classes": [],
+   "note": "entgegenarbeiten doubled as 'work against, counteract' — harmless; question rendered exactly."
+  },
+  {
+   "id": 36,
+   "root": "pat",
+   "verdict": "faithful",
+   "classes": [],
+   "note": "'dazu eintreten' and 'gelegentlich zur Erwähnung kommen' both rendered accurately; citations intact."
+  },
+  {
+   "id": 37,
+   "root": "mad",
+   "verdict": "faithful",
+   "classes": [],
+   "note": "Identical skeleton row, nothing to translate."
+  },
+  {
+   "id": 38,
+   "root": "gA",
+   "verdict": "faithful",
+   "classes": [],
+   "note": "zurückkehren = to return; Sanskrit and citation byte-identical."
+  },
+  {
+   "id": 39,
+   "root": "yat",
+   "verdict": "acceptable-loss",
+   "classes": [
+    "markup-loss"
+   ],
+   "note": "EN drops leading <div n=\"2\"> wrapper; all glosses and citations otherwise byte-identical."
+  },
+  {
+   "id": 40,
+   "root": "pat",
+   "verdict": "faithful",
+   "classes": [],
+   "note": "'gerathen in' = fall/get into; faithful."
+  },
+  {
+   "id": 41,
+   "root": "Buj",
+   "verdict": "faithful",
+   "classes": [],
+   "note": "'vorweg essen' = eat in advance/first; acc. note preserved."
+  },
+  {
+   "id": 42,
+   "root": "DA",
+   "verdict": "faithful",
+   "classes": [],
+   "note": "All three insert-glosses and immersion gloss rendered; accented Sanskrit preserved; cap-tail ignored."
+  },
+  {
+   "id": 43,
+   "root": "vraj",
+   "verdict": "faithful",
+   "classes": [],
+   "note": "herbeikommen/hinschreiten, herankommend, kommen in, sich begeben zu all rendered correctly."
+  },
+  {
+   "id": 44,
+   "root": "vraj",
+   "verdict": "faithful",
+   "classes": [],
+   "note": "Opposite-direction gloss exact."
+  },
+  {
+   "id": 45,
+   "root": "DA",
+   "verdict": "faithful",
+   "classes": [],
+   "note": "'ganz zudecken' = cover completely."
+  },
+  {
+   "id": 46,
+   "root": "DA",
+   "verdict": "acceptable-loss",
+   "classes": [
+    "addition"
+   ],
+   "note": "EN prepends '— {#anusam#}' div header absent from DE; desid. glosses themselves faithful."
+  },
+  {
+   "id": 47,
+   "root": "DA",
+   "verdict": "faithful",
+   "classes": [],
+   "note": "zurechtmachen/herbeischaffen = prepare/procure."
+  },
+  {
+   "id": 48,
+   "root": "gA",
+   "verdict": "faithful",
+   "classes": [],
+   "note": "Liturgical-singing note and Udgatar etymology rendered accurately; citations intact."
+  },
+  {
+   "id": 49,
+   "root": "pA",
+   "verdict": "acceptable-loss",
+   "classes": [
+    "term-mistranslation"
+   ],
+   "note": "'zu verbinden' means 'to be construed together (as one compound)', not 'to be read with'; minor shift."
+  },
+  {
+   "id": 50,
+   "root": "Buj",
+   "verdict": "faithful",
+   "classes": [],
+   "note": "EN adds homonym number '4.' (masked-context carve-out); 'das Haben, die Habe' = possession, property."
+  },
+  {
+   "id": 51,
+   "root": "DA",
+   "verdict": "faithful",
+   "classes": [],
+   "note": "'wieder' repositioned to second gloss but meaning intact; cross-reference preserved."
+  },
+  {
+   "id": 52,
+   "root": "DA",
+   "verdict": "faithful",
+   "classes": [],
+   "note": "'etwa sich festsetzen' = perhaps to establish oneself/settle; sigla retained."
+  },
+  {
+   "id": 53,
+   "root": "mad",
+   "verdict": "faithful",
+   "classes": [],
+   "note": "'wohl fehlerhaft für' = probably erroneous for."
+  },
+  {
+   "id": 54,
+   "root": "rakz",
+   "verdict": "faithful",
+   "classes": [],
+   "note": "'in Acht nehmen' / 'nicht antasten' rendered adequately; v. a. siglum retained."
+  },
+  {
+   "id": 55,
+   "root": "yat",
+   "verdict": "faithful",
+   "classes": [],
+   "note": "Source already English (BHSD); NWS header prefix is pipeline formatting; content identical."
+  },
+  {
+   "id": 56,
+   "root": "vad",
+   "verdict": "faithful",
+   "classes": [],
+   "note": "'sich unterhalten' = to converse; ebend. retained per carve-out."
+  },
+  {
+   "id": 57,
+   "root": "mad",
+   "verdict": "faithful",
+   "classes": [],
+   "note": "Pure cross-reference, byte-identical."
+  },
+  {
+   "id": 58,
+   "root": "gA",
+   "verdict": "faithful",
+   "classes": [],
+   "note": "'gehen, wandeln' = go, walk; case note on des Weges preserved."
+  },
+  {
+   "id": 59,
+   "root": "yat",
+   "verdict": "faithful",
+   "classes": [],
+   "note": "Cross-reference byte-identical; Vgl./fgg. retained correctly."
+  },
+  {
+   "id": 60,
+   "root": "naS",
+   "verdict": "faithful",
+   "classes": [],
+   "note": "Minimal connective translation only."
+  },
+  {
+   "id": 61,
+   "root": "naS",
+   "verdict": "faithful",
+   "classes": [],
+   "note": "Headword skeleton, byte-identical."
+  },
+  {
+   "id": 62,
+   "root": "naS",
+   "verdict": "faithful",
+   "classes": [],
+   "note": "{#..#} German kept byte-identical as required; '+ ud: hinaufreichen' = reach up to (+ Acc.)."
+  },
+  {
+   "id": 63,
+   "root": "naS",
+   "verdict": "acceptable-loss",
+   "classes": [
+    "markup-loss"
+   ],
+   "note": "FABLE RECONCILED (agent said faithful): 'verloren gehen lassen' = 'cause to be lost' exact, but {%..%} markers dropped — batch-1 convention applied."
+  },
+  {
+   "id": 64,
+   "root": "yaj",
+   "verdict": "faithful",
+   "classes": [],
+   "note": "{#..#} preserved; all seven a-senses rendered; 'herbeischaffen' as 'bring near by sacrifice' defensible for both 5) and 7)."
+  },
+  {
+   "id": 65,
+   "root": "yaj",
+   "verdict": "acceptable-loss",
+   "classes": [
+    "markup-loss"
+   ],
+   "note": "FABLE RECONCILED (agent said faithful): all content rendered, 'eropfert/durch Verehrung gewonnen' pairings swapped but same content; {%..%} markers dropped — batch-1 convention."
+  },
+  {
+   "id": 66,
+   "root": "yaj",
+   "verdict": "faithful",
+   "classes": [],
+   "note": "Etymology skeleton; only connective glue translated; Sanskrit and citations byte-identical."
+  },
+  {
+   "id": 67,
+   "root": "yaj",
+   "verdict": "acceptable-loss",
+   "classes": [
+    "markup-loss"
+   ],
+   "note": "FABLE RECONCILED (agent said faithful): 'vertreiben, wegopfern' merged into 'drive away or expel by means of a sacrifice' — meaning covered; {%..%} markers dropped."
+  }
+ ]
+}
