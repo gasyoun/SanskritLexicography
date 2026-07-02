@@ -1,6 +1,6 @@
 # SAMSAADHANII_INDEX.md — what Amba Kulkarni's SCL toolchain teaches our repos
 
-<p align="right"><sub>Created: 02-07-2026 · Last updated: 02-07-2026</sub></p>
+_Created: 02-07-2026 · Last updated: 02-07-2026_
 
 **Prior-art index (external).** [Amba Kulkarni](https://sanskrit.uohyd.ac.in/faculty/amba/)
 (Prof. & Head, Dept. of Sanskrit Studies, University of Hyderabad) leads
@@ -86,4 +86,4 @@ copying source.
 - **License gate:** live-service call or data cross-check = fine; copying GPL source
   into our repos = ask first.
 
-<p align="right"><sub>Dr. Mārcis Gasūns</sub></p>
+_Dr. Mārcis Gasūns_

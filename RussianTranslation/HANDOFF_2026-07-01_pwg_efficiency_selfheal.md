@@ -1,6 +1,6 @@
 # Handoff — PWG dashboard, RU catch-up, and the self-healing translation harness
 
-<p align="right"><sub>Created: 01-07-2026 · Last updated: 01-07-2026</sub></p>
+_Created: 01-07-2026 · Last updated: 01-07-2026_
 
 **For:** a fresh chat. **Branch:** `feat/pwg-en-fu1-phase0` (off `master`).
 **Orchestration:** Opus 4.8 (`claude-opus-4-8`). **Generation:** EN = Sonnet 5
@@ -91,4 +91,4 @@ Full journal: [`.ai_state.md`](https://github.com/gasyoun/SanskritLexicography/b
 (Dev Notes carry the tier ladder + undone tiers). Prior handoff:
 [`HANDOFF_2026-07-01_pwg_en_fu1_finalize.md`](https://github.com/gasyoun/SanskritLexicography/blob/feat/pwg-en-fu1-phase0/RussianTranslation/HANDOFF_2026-07-01_pwg_en_fu1_finalize.md).
 
-<p align="right"><sub>Dr. Mārcis Gasūns</sub></p>
+_Dr. Mārcis Gasūns_
