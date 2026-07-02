@@ -469,10 +469,28 @@ def build(root, keys, rootmap, budget, lean=False, nws_gate=False,
     # SELFHEAL_GROUP_BUDGET-sized batches, so the JS heal issues one agent() call per GROUP
     # instead of per fragment (a 13-fragment card was costing 13 calls / ~2.2M tok; grouping
     # amortizes the ~30k fixed system-prompt overhead across several fragments per call).
-    frags, phf = {}, {}
+    # --tm fragment reuse: alongside the whole-card cache above, load the per-fragment
+    # sidecar. Each deterministic plan() fragment is content-addressed (its exact chunk
+    # text, header included — see translation_memory.frag_address); a cached fragment is
+    # served WITHOUT an agent() call inside selfHeal, so a partially-failed giant card
+    # re-runs only its still-missing fragments (and a fragment shared byte-for-byte across
+    # a root and its derived noun is reused). Enabled by the same --tm switch; a missing
+    # sidecar is simply a no-op (all fragments translate as before).
+    frag_cache, frag_file = {}, None
+    if tm_path:
+        import translation_memory as _tm
+        frag_file = os.path.join(os.path.dirname(tm_path),
+                                 os.path.basename(_tm.frag_tm_path(lang)))
+        frag_cache = _tm.load_frag_tm(lang, frag_file)
+        if frag_cache:
+            print('  frag-tm: %d cached fragment(s) available from %s'
+                  % (len(frag_cache), os.path.basename(frag_file)))
+
+    frags, phf, frag_tm = {}, {}, {}
     if SELFHEAL:
+        import translation_memory as _tm
         for k in keys:
-            if k in tm_keys:                 # cached — no heal fallback needed
+            if k in tm_keys:                 # cached whole card — no heal fallback needed
                 continue
             pl = split_plan(read_text(input_paths(k)[0]))
             if len(pl) < 2:
@@ -487,13 +505,23 @@ def build(root, keys, rootmap, budget, lean=False, nws_gate=False,
                     # so a batch failure on it is unrecoverable in-harness
                     print('  selfheal: %s fallback DROPPED (fragment mask round-trip lossy)' % k)
                     break
-                fl.append({'skeleton': fsk, 'ls': t.count('<ls'), 'sk': t.count('{#'), 'ph': fph})
+                fsha = _tm.frag_address(lang, t)
+                cached = frag_cache.get(fsha)
+                fl.append({'skeleton': fsk, 'ls': t.count('<ls'), 'sk': t.count('{#'),
+                           'ph': fph, 'fsha': fsha,
+                           'tm': cached.get('senses') if cached else None})
             if not fl:
                 continue
             groups = _group_by_budget(fl, lambda it: 1 + it['ls'], SELFHEAL_GROUP_BUDGET)
-            frags[k] = [[{'skeleton': it['skeleton'], 'ls': it['ls'], 'sk': it['sk']} for it in g]
-                        for g in groups]
+            frags[k] = [[{'skeleton': it['skeleton'], 'ls': it['ls'], 'sk': it['sk'],
+                          'fsha': it['fsha']} for it in g] for g in groups]
             phf[k] = [[it['ph'] for it in g] for g in groups]
+            # FRAG_TM[k]: same group shape, each slot = cached restored senses or null.
+            # Only emitted when this card has at least one cached fragment (keeps the JS lean
+            # and lets the summary count reuse). A fully-cached card heals at ZERO agent calls.
+            gview = [[it['tm'] for it in g] for g in groups]
+            if any(slot for grp in gview for slot in grp):
+                frag_tm[k] = gview
 
     # Pre-split router (MG decision 2026-07-02): a card whose citation-weighted output
     # complexity (1 + <ls>) alone exceeds the WHOLE per-batch output budget is near-certain
@@ -551,6 +579,9 @@ def build(root, keys, rootmap, budget, lean=False, nws_gate=False,
         'presplit_keys': presplit,
         'tm': os.path.basename(tm_path) if tm_path else None,
         'tm_hits': sorted(tm_keys),
+        'frag_tm': os.path.basename(frag_file) if (frag_cache and tm_path) else None,
+        'frag_tm_cards': sorted(frag_tm),
+        'frag_tm_fragments': sum(sum(1 for grp in v for s in grp if s) for v in frag_tm.values()),
     }
 
     js = """// AUTO-DERIVED v2 (batched + masked, canonical output) from run_pilot_wf.js - root=%(root)s.
@@ -579,6 +610,11 @@ const PRESPLIT = %(presplit)s
 // Emitted verbatim as canonical rows with tm:true and NO agent() call — their markup is
 // already restored (they come from the promoted store), so they bypass restore/accept.
 const TM_RESOLVED = %(tm_resolved)s
+// --tm fragment reuse: FRAG_TM[k] mirrors FRAGS[k]'s group shape; each slot is either a
+// cached fragment's ALREADY-RESTORED senses (served with NO agent() call inside selfHeal)
+// or null (translate it). A fully-cached card heals at zero cost; a partial giant card
+// re-runs only its still-missing fragments. Empty ({}) unless --tm found a fragment sidecar.
+const FRAG_TM = %(frag_tm)s
 const META = %(meta)s
 
 const restore = (t, ph) => (t || '').replace(/\\{T(\\d+)\\}/g, (m, n) => (ph[+n - 1] !== undefined ? ph[+n - 1] : m))
@@ -698,38 +734,57 @@ async function healGroup(k, idxs, grp, label) {
 // follow-up can requeue JUST the failed pieces instead of re-running the whole card.
 async function selfHeal(k) {
   const groups = FRAGS[k]; if (!groups || !groups.length) { noteFail(k, 'no-selfheal-fallback (card did not split or a fragment mask was lossy)'); return null }
+  const ftm = FRAG_TM[k] || []            // --tm: per-group cached-senses-or-null, mirrors FRAGS[k]
   const senses = []
   const missingFragments = []   // 'g<gi+1>:f<fi>' identifiers — persisted on the card so a
                                 // targeted requeue of JUST the failed fragments is possible
                                 // from wf_output alone (the inline path previously recorded
                                 // only a count, making a follow-up a full re-run)
+  const fragProv = []           // {fsha, senses} per FRESHLY-resolved fragment — harvested by
+                                // translation_memory.py build-frags into the fragment TM so the
+                                // next run reuses it (ground truth captured at the moment of success)
   for (let gi = 0; gi < groups.length; gi++) {
     const grp = groups[gi]
     const gph = (PHF[k] || [])[gi] || []
+    const gtm = ftm[gi] || []
+    // Fragments already in the TM are served directly (no agent() call); heal only the rest.
+    // A fully-cached group issues zero calls; a partial giant card re-runs only what's missing.
+    const uncached = []
+    for (let i = 0; i < grp.length; i++) { if (!gtm[i]) uncached.push(i) }
     // A hard agent() failure inside healGroup (thrown, not returned — see translateBatch's
     // comment) must be caught HERE, per group: uncaught, it unwinds out of this whole loop and
     // discards every earlier group's already-accumulated senses along with it (observed live —
     // 45 agent calls ran, several groups plausibly succeeded, yet the card still came back with
     // ZERO senses because one later group's hard failure wiped the local `senses` array before
     // selfHeal could return anything).
-    let r = null
-    try { r = await healGroup(k, grp.map((_, i) => i), grp, 'heal:' + k + '#g' + (gi + 1)) }
-    catch (e) { r = null; noteFail(k, 'heal-group-hard-failure g' + (gi + 1) + ': ' + (e && e.message || e)) }
-    if (!r) { for (let i = 0; i < grp.length; i++) missingFragments.push('g' + (gi + 1) + ':f' + i); continue }
+    let r = { resolved: {}, missing: [] }
+    if (uncached.length) {
+      try { r = await healGroup(k, uncached, grp, 'heal:' + k + '#g' + (gi + 1)) }
+      catch (e) { r = { resolved: {}, missing: uncached }; noteFail(k, 'heal-group-hard-failure g' + (gi + 1) + ': ' + (e && e.message || e)) }
+    }
     for (const fi of (r.missing || [])) missingFragments.push('g' + (gi + 1) + ':f' + fi)
     for (let i = 0; i < grp.length; i++) {
+      if (gtm[i]) {
+        // cached senses are ALREADY restored to source markup (validated at their harvest run);
+        // slot them in at their document position — do NOT re-restore (no {Tn} remain).
+        for (const s of gtm[i]) senses.push(s)
+        continue
+      }
       const card = r.resolved[i]
-      if (!card) continue
+      if (!card) continue   // an uncached fragment that never resolved — already in missingFragments
       const ph = gph[i] || []
+      const fsenses = []
       for (const rec of (card.records || [])) for (const s of (rec.senses || [])) {
         if (s.german !== undefined) s.german = restore(s.german, ph)
         if (s.%(field)s !== undefined) s.%(field)s = restore(s.%(field)s, ph)
-        senses.push(s)
+        senses.push(s); fsenses.push(s)
       }
+      if (grp[i].fsha && fsenses.length) fragProv.push({ fsha: grp[i].fsha, senses: fsenses })
     }
   }
   if (!senses.length) { if (!FAIL[k]) noteFail(k, 'selfheal-nothing-resolved'); return null }
   const stitched = { key1: k, records: [{ senses }] }
+  if (fragProv.length) stitched.frag_prov = fragProv
   if (!missingFragments.length) {
     // fidelity check only meaningful on a COMPLETE heal — a partial result legitimately has
     // fewer citations than the source. Per-fragment token checks already gated each piece;
@@ -885,6 +940,7 @@ for (const r of out) if (!r.card) _failures[r.key] = r.error || FAIL[r.key] || '
 const summary = { root: META.root, lang: META.lang, cards: out.length, ok: _ok,
                   null: out.length - _ok, healed: out.filter(r => r.escalated).length,
                   presplit: PRESPLIT.length, tm: out.filter(r => r.tm).length,
+                  frag_tm_fragments: META.frag_tm_fragments || 0,
                   null_keys: out.filter(r => !r.card).map(r => r.key),
                   partial_keys: out.filter(r => r.card && r.card.partial).map(r => r.key),
                   failures: _failures }
@@ -908,6 +964,7 @@ return { meta: META, summary, results: out }
         'frags': json.dumps(frags, ensure_ascii=True), 'phf': json.dumps(phf, ensure_ascii=True),
         'binary_split': json.dumps(BINARY_SPLIT), 'presplit': json.dumps(presplit),
         'tm_resolved': json.dumps(tm_resolved, ensure_ascii=True),
+        'frag_tm': json.dumps(frag_tm, ensure_ascii=True),
     }
     for bad in ['readFileSync', 'fileURLToPath', 'import.meta']:
         if bad in js:

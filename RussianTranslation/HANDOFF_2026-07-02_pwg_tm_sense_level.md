@@ -2,6 +2,15 @@
 
 _Created: 02-07-2026 · Last updated: 02-07-2026_
 
+> ✅ **SPENT — do NOT re-execute (executed 2026-07-02, Opus 4.8 `claude-opus-4-8`).**
+> Fragment-level TM shipped on branch `feat/pwg-tm-fragment-reuse`: `frag_address` +
+> `build_frags`/`load_frag_tm` in `translation_memory.py`, `frag_prov` channel + `FRAG_TM`
+> reuse in `gen_opt_harness2.py`, `window_selftest.py` 25/25, live-proven
+> (`gam~~h0_02_sec_2`: 5 agents/312k tok → **0 agents/0 tok**, card byte-identical). One
+> deliberate deviation from §Suggested-approach step 2: the `plan()` header is NOT stripped —
+> with approach (a) it is real translated source of fragment 0 on both sides, so stripping it
+> would break the address round-trip. Details in `.ai_state.md` (fragment-TM bullet).
+
 **How M.G. runs me:** open a NEW chat with working dir
 `C:\Users\user\Documents\GitHub\SanskritLexicography`, pick **Opus 4.8** (`claude-opus-4-8`) or
 Sonnet 5 in the model picker, and type exactly:
