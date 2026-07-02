@@ -1,5 +1,7 @@
 # FU1 — full DCS-frequency EN run: locked plan (2026-06-30)
 
+_Created: 30-06-2026 · Last updated: 02-07-2026_
+
 Resume spec for the PWG→English **bulk** follow-up (FU1) after FU2 (audit gate) and FU3
 (tri-lingual merge) shipped. **Real Max-quota spend** — run in a Max/Workflow session at
 **≤3-wide concurrency**. All six design decisions below are MG-locked (2026-06-30); do not
@@ -79,6 +81,29 @@ python src/annotate_dcs_freq.py          # re-attach dcs_freq (language-agnostic
    error rate). Emits a blank reviewer sheet (de + en + headword, *MW hidden* to avoid anchoring)
    for MG + one second annotator, then a scorer computing **Cohen κ** and the point error rate
    with CI. Ground truth = faithful-to-German. Output a short METHODS note for the citable layer.
+
+## Failure taxonomy — DharmaMitra crosswalk (documentation only, added 02-07-2026)
+
+MG decision 02-07-2026: adopt DharmaMitra's failure-class vocabulary as shared terminology for this
+rubric, both for internal alignment and — separately — for citation-grade use. Full mapping
+(including which parts are citable vs. not) lives in
+[`TAXONOMY_DHARMAMITRA.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/TAXONOMY_DHARMAMITRA.md).
+No gate semantics change and no judging is re-run — this is vocabulary alignment on the existing
+7-class rubric from the [S7 gold-sample judgment](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/FABLE_JUDGE_S7_2026-07-02.md#failure-classes-all-severities).
+
+| our class | DharmaMitra alias (workshop-form vocabulary, internal use only) | published equivalent (citable: MQM/GEMBA-MQM) |
+|---|---|---|
+| `addition` | hallucinated or invented content | accuracy: addition |
+| `mw-tm-contamination` | hallucinated or invented content (cross-source subtype) | accuracy: addition |
+| `term-mistranslation` | vocabulary/terminology · ambiguous/polysemous terms | terminology / accuracy: mistranslation |
+| `grammar` | grammar and syntax errors | fluency: grammar |
+| `omission` | *(no form counterpart)* | accuracy: omission |
+| `register-drift` | register/tone | fluency: register |
+| `markup-loss` | *(no form or MQM counterpart — our own markup artifact)* | *(none)* |
+
+DharmaMitra's form also names two document-level failure modes we don't yet score at
+sense-row/card granularity — *context awareness across sentences* and *consistency/coherence across
+a passage* — noted as future judge-pass candidates, not applied retroactively to FU1/S7 results.
 
 ## Done criteria
 
