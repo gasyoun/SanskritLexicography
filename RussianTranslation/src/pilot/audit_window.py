@@ -275,7 +275,7 @@ def main():
     if not os.path.exists(wf):
         sys.exit('no workflow output %r' % args.wf_output)
 
-    _payload, wf_meta, _results, keys, null_cards = workflow_payload(wf)
+    _payload, wf_meta, results, keys, null_cards = workflow_payload(wf)
     emit_audit_event(
         'audit_start', root=args.root, state='started',
         summary='audit started for %s (%d workflow keys)' % (os.path.basename(wf), len(keys)),
@@ -420,16 +420,40 @@ def main():
     if collect['returncode'] not in (0, 1):
         crashed.append('collect')
 
+    # Harness-side quality markers (post-#63/#64 wf files): per-row failure reasons on null
+    # cards, and partial:true cards (usable but incomplete — selfheal/autosplit partial
+    # credit). Older wf files carry neither; everything below degrades to empty.
+    partial_cards, failure_reasons = {}, {}
+    for r in results or []:
+        k = r.get('key')
+        if not k:
+            continue
+        c = r.get('card')
+        if c and (c.get('partial') or r.get('partial')):
+            partial_cards[k] = {m: (c.get(m) if c.get(m) is not None else r.get(m))
+                                for m in ('missing_fragments', 'missing_groups', 'total_groups',
+                                          'missing_senses', 'total_senses')
+                                if c.get(m) is not None or r.get(m) is not None}
+        if not c and r.get('error'):
+            failure_reasons[k] = r['error']
+
     report = {'workflow': wf, 'root': args.root, 'keys': keys, 'null_cards': null_cards,
               'workflow_meta': wf_meta, 'stale_check': stale,
               'collect': collect,
-              'gates': gates, 'glue': glue, 'requeue': sorted(requeue), 'crashed': crashed}
+              'gates': gates, 'glue': glue, 'requeue': sorted(requeue), 'crashed': crashed,
+              'partial_cards': partial_cards, 'failure_reasons': failure_reasons}
     # Split the requeue: transient = card came back null (rate-limit/dropout -> cheap re-run
     # at low concurrency); defect = a gate flagged real content on a card that DID translate
     # (needs rework). A null key fails coverage etc. only because it is absent, so it is
     # transient, never a defect. PROCESS_AUDIT_2026-06-29.md rec 3/10.
-    report['requeue_transient'] = sorted(set(null_cards))
-    report['requeue_defect'] = sorted(gate_requeue - set(null_cards))
+    # Refinement: a null whose recorded reason is a fidelity REJECT is retry-RESISTANT by
+    # construction (the model answered; the deterministic guard refused it — observed live
+    # as the Sam/Buj/naS 'stubborn null' loop) -> classify as defect, not transient, so the
+    # cheap-re-run lane stops burning quota on it.
+    fidelity_nulls = {k for k, e in failure_reasons.items()
+                      if e.startswith('fidelity-reject') or e.startswith('stitched-fidelity')}
+    report['requeue_transient'] = sorted(set(null_cards) - fidelity_nulls)
+    report['requeue_defect'] = sorted((gate_requeue - set(null_cards)) | fidelity_nulls)
     report['prompt_rules'] = gates.get('prompt_semantic', {}).get('prompt_rules')
     report['semantic_risks'] = gates.get('prompt_semantic', {}).get('card_risks')
     report['judge_sample_rate'] = args.judge_sample_rate
@@ -447,6 +471,8 @@ def main():
         summary='requeue count %d' % len(report['requeue']),
         data={'requeue_count': len(report['requeue']),
               'requeue': report['requeue'],
+              'partial_cards': sorted(partial_cards),
+              'failure_reasons': failure_reasons,
               'judge_sample_count': report['judge_sample']['sample_count'],
               'judge_sample_seed': report['judge_sample']['seed'],
               'clean_key_count': report['judge_sample']['clean_key_count'],
@@ -471,7 +497,17 @@ def main():
     print('requeue      : %d%s' % (len(report['requeue']),
           '' if not report['requeue'] else ' (' + ', '.join(report['requeue'][:12]) + (', ...' if len(report['requeue']) > 12 else '') + ')'))
     print('  transient  : %d (null cards — cheap re-run at low concurrency)' % len(report.get('requeue_transient') or []))
-    print('  defect     : %d (real content failures — needs rework)' % len(report.get('requeue_defect') or []))
+    print('  defect     : %d (real content failures — needs rework%s)' % (
+        len(report.get('requeue_defect') or []),
+        (', incl. %d retry-resistant fidelity-reject null(s)' % len(fidelity_nulls)) if fidelity_nulls else ''))
+    if partial_cards:
+        print('partial cards: %d (usable but incomplete — missing pieces recorded in report): %s'
+              % (len(partial_cards), ', '.join(sorted(partial_cards)[:8])
+                 + (', ...' if len(partial_cards) > 8 else '')))
+    if failure_reasons:
+        from collections import Counter
+        top = Counter(e.split(':')[0] for e in failure_reasons.values()).most_common()
+        print('null reasons : %s' % ', '.join('%s x%d' % (r, n) for r, n in top))
     print('clean keys   : %d' % report['judge_sample']['clean_key_count'])
     print('judge sample : %d (seed %s)' % (report['judge_sample']['sample_count'], report['judge_sample']['seed']))
     print('report json  : %s' % os.path.relpath(json_path, SRC))
