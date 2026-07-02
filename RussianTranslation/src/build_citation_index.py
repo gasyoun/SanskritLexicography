@@ -41,6 +41,7 @@ OUT_MD = os.path.join(REPO, 'CITATION_SOURCES.md')
 OUT_JSON = os.path.join(REPO, 'release', 'citation_sources.json')
 OUT_UNCOVERED = os.path.join(REPO, 'UNCOVERED_SOURCES.md')
 OUT_UNCOVERED_JSON = os.path.join(REPO, 'release', 'uncovered_sources.json')
+OUT_COMPARISON = os.path.join(REPO, 'COVERAGE_COMPARISON.md')
 
 _LS = re.compile(r'<ls\b([^>]*)>(.*?)</ls>', re.S)
 _N_ATTR = re.compile(r'\bn\s*=\s*"([^"]*)"')
@@ -264,7 +265,7 @@ def occurrence_stats():
     import build_article_site as bas
     model = bas.build_model()
     occ_scan = occ_html = total = labels = 0
-    per = defaultdict(lambda: {'res': 0, 'unres': 0})
+    per = defaultdict(lambda: {'res': 0, 'unres': 0, 'scan': 0, 'html': 0})
     for r in model:
         for sc in r['subcards']:
             for s in sc['senses']:
@@ -280,10 +281,14 @@ def occurrence_stats():
                     t = lsr.link_type(url)
                     if t == 'scan':
                         occ_scan += 1
-                        per[abbr_of(n_attr, vis)]['res'] += 1
+                        g = per[abbr_of(n_attr, vis)]
+                        g['res'] += 1
+                        g['scan'] += 1
                     elif t == 'html':
                         occ_html += 1
-                        per[abbr_of(n_attr, vis)]['res'] += 1
+                        g = per[abbr_of(n_attr, vis)]
+                        g['res'] += 1
+                        g['html'] += 1
                     elif not re.search(r'[0-9]', (n_attr or '') + vis):
                         # <ls> with no coordinate = an edition/cross-ref LABEL
                         # ("ed. Bomb.", "ebend."), never a linkable reference.
@@ -365,11 +370,115 @@ def emit_uncovered(per, occ_scan, occ_html, occ_total, labels):
         f.write('\n'.join(L) + '\n')
 
 
+def emit_comparison(per, occ_scan, occ_html, occ_total, labels):
+    """Side-by-side comparison of COVERED vs UNCOVERED works, by citation
+    frequency (occurrences), plus the coverage frontier — how much occurrence
+    coverage would rise if the top-N uncovered works were digitized."""
+    covered = sorted(((k, v) for k, v in per.items() if v['res'] > 0),
+                     key=lambda kv: -kv[1]['res'])
+    uncovered = sorted(((k, v['unres']) for k, v in per.items()
+                        if v['res'] == 0 and v['unres'] > 0), key=lambda kv: -kv[1])
+    occ_resolved = occ_scan + occ_html
+    un_total = sum(n for _, n in uncovered)
+
+    def pct(n):
+        return 100 * n / occ_total if occ_total else 0
+
+    data = {
+        'occurrences_total': occ_total,
+        'covered': occ_resolved, 'covered_scan': occ_scan, 'covered_html': occ_html,
+        'uncovered': un_total, 'noncoordinate_labels': labels,
+        'covered_works': len(covered), 'uncovered_works': len(uncovered),
+        'top_covered': [{'abbr': k, 'occ': v['res'], 'scan': v['scan'], 'html': v['html']}
+                        for k, v in covered[:50]],
+        'top_uncovered': [{'abbr': k, 'occ': n} for k, n in uncovered[:50]],
+    }
+    with open(os.path.join(REPO, 'release', 'coverage_comparison.json'),
+              'w', encoding='utf-8', newline='\n') as f:
+        json.dump(data, f, ensure_ascii=False, indent=1)
+
+    L = []
+    L.append('# PWG citation coverage — covered vs uncovered')
+    L.append('')
+    L.append(GEN_NOTE)
+    L.append('')
+    L.append('A side-by-side of the two halves: citations that resolve to a Cologne '
+             'source (**covered** — see [`CITATION_SOURCES.md`]'
+             '(https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/CITATION_SOURCES.md)) '
+             'vs those that do not (**uncovered** — see [`UNCOVERED_SOURCES.md`]'
+             '(https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/UNCOVERED_SOURCES.md)). '
+             'Everything here is counted by **occurrence** (how often a work is '
+             'actually cited on the displayed DE surface), not distinct references.')
+    L.append('')
+    L.append('## The split')
+    L.append('')
+    L.append('| bucket | occurrences | share |')
+    L.append('|---|---:|---:|')
+    L.append('| **covered** (links out) | %s | %.1f%% |' % (f'{occ_resolved:,}', pct(occ_resolved)))
+    L.append('| &nbsp;&nbsp;• scan (page images) | %s | %.1f%% |' % (f'{occ_scan:,}', pct(occ_scan)))
+    L.append('| &nbsp;&nbsp;• HTML (digital text) | %s | %.1f%% |' % (f'{occ_html:,}', pct(occ_html)))
+    L.append('| **uncovered** (no Cologne target) | %s | %.1f%% |' % (f'{un_total:,}', pct(un_total)))
+    L.append('| non-referential labels (never linkable) | %s | %.1f%% |' % (f'{labels:,}', pct(labels)))
+    L.append('| **total** | %s | 100%% |' % f'{occ_total:,}')
+    L.append('')
+    L.append('%d works are covered; %d works are uncovered. So most *works* are '
+             'uncovered, but the covered ones are the heavily-cited backbone (epics, '
+             'purāṇas, kāvya, the Vedic saṃhitās), so ~%.0f%% of actual citations '
+             'resolve.' % (len(covered), len(uncovered), pct(occ_resolved)))
+    L.append('')
+    L.append('## Most-cited works — covered vs uncovered (top 20 each)')
+    L.append('')
+    L.append('| # | covered work | cites | target | uncovered work | cites |')
+    L.append('|--:|---|--:|---|---|--:|')
+    for i in range(20):
+        if i < len(covered):
+            ck, cv = covered[i]
+            tgt = 'scan' if cv['scan'] >= cv['html'] else 'HTML'
+            if cv['scan'] and cv['html']:
+                tgt = 'scan+HTML'
+            cstr = '%s | %d | %s' % (ck.replace('|', '\\|'), cv['res'], tgt)
+        else:
+            cstr = ' |  | '
+        if i < len(uncovered):
+            uk, un = uncovered[i]
+            ustr = '%s | %d' % (uk.replace('|', '\\|'), un)
+        else:
+            ustr = ' | '
+        L.append('| %d | %s | %s |' % (i + 1, cstr, ustr))
+    L.append('')
+    L.append('## Coverage frontier — value of digitizing the top uncovered works')
+    L.append('')
+    L.append('The uncovered tail is long (%d works) but front-loaded. If the '
+             'most-cited uncovered works gained a Cologne scan, occurrence coverage '
+             '(now %.1f%%) would rise as follows:' % (len(uncovered), pct(occ_resolved)))
+    L.append('')
+    L.append('| digitize top-N uncovered | adds citations | new coverage |')
+    L.append('|---:|---:|---:|')
+    cum = 0
+    marks = [1, 5, 10, 25, 50, 100]
+    for n in marks:
+        if n > len(uncovered):
+            break
+        add = sum(x for _, x in uncovered[:n])
+        newcov = 100 * (occ_resolved + add) / occ_total if occ_total else 0
+        L.append('| %d | +%s | %.1f%% |' % (n, f'{add:,}', newcov))
+    allcov = 100 * (occ_resolved + un_total) / occ_total if occ_total else 0
+    L.append('| all %d | +%s | %.1f%% |' % (len(uncovered), f'{un_total:,}', allcov))
+    L.append('')
+    L.append('_(Ceiling < 100%% because %s occurrences are non-referential `<ls>` '
+             'labels — edition/cross-ref notes with no locus.)_' % f'{labels:,}')
+    L.append('')
+    L.append('_Dr. Mārcis Gasūns_')
+    with open(OUT_COMPARISON, 'w', encoding='utf-8', newline='\n') as f:
+        f.write('\n'.join(L) + '\n')
+
+
 def main():
     groups, total, resolved, counts = build()
     emit(groups, total, resolved, counts)
     occ_scan, occ_html, per, occ_total, labels = occurrence_stats()
     emit_uncovered(per, occ_scan, occ_html, occ_total, labels)
+    emit_comparison(per, occ_scan, occ_html, occ_total, labels)
     occ_resolved = occ_scan + occ_html
     print('citation index: %d distinct refs, %d resolved (%.1f%%), %d abbreviations'
           % (total, resolved, 100 * resolved / total if total else 0, len(groups)))
@@ -383,6 +492,7 @@ def main():
               % (occ_scan / occ_html if occ_html else 0,
                  counts['scan'] / counts['html'] if counts['html'] else 0))
     print('  -> %s' % OUT_UNCOVERED)
+    print('  -> %s' % OUT_COMPARISON)
 
 
 if __name__ == '__main__':
