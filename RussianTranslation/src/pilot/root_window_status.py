@@ -122,7 +122,7 @@ def next_action(root, failures, rootmap_sha=None, all_keys=None, pending_keys=No
             return run_max
         return {
             'action': 'Generate the optimized harness for %s, then run Max Workflow.' % root,
-            'command': 'python src\\pilot\\gen_opt_harness.py %s' % root,
+            'command': 'python src\\pilot\\gen_opt_harness2.py %s' % root,
             'note': meta.get('scope_error') or (
                 meta.get('error') if isinstance(meta, dict) and status and status.get('_error') else ''),
         }
@@ -140,7 +140,7 @@ def next_action(root, failures, rootmap_sha=None, all_keys=None, pending_keys=No
             return run_max
         return {
             'action': 'Regenerate optimized harness for %s and rerun Max Workflow.' % root,
-            'command': 'python src\\pilot\\gen_opt_harness.py %s' % root,
+            'command': 'python src\\pilot\\gen_opt_harness2.py %s' % root,
             'note': meta.get('scope_error') or (meta.get('error') if isinstance(meta, dict) else ''),
         }
     if requeue or state == 'needs_requeue':
@@ -158,7 +158,7 @@ def next_action(root, failures, rootmap_sha=None, all_keys=None, pending_keys=No
             }
         return {
             'action': 'Regenerate optimized harness for %s before continuing the partial window.' % root,
-            'command': 'python src\\pilot\\gen_opt_harness.py %s' % root,
+            'command': 'python src\\pilot\\gen_opt_harness2.py %s' % root,
             'note': partial_meta.get('scope_error') or (partial_meta.get('error') if isinstance(partial_meta, dict) else ''),
         }
     if judge_sample or int(status.get('judge_sample_count') or 0) > 0:
@@ -169,7 +169,7 @@ def next_action(root, failures, rootmap_sha=None, all_keys=None, pending_keys=No
     if not os.path.exists(harness):
         return {
             'action': 'Generate the optimized harness for %s, then run Max Workflow.' % root,
-            'command': 'python src\\pilot\\gen_opt_harness.py %s' % root,
+            'command': 'python src\\pilot\\gen_opt_harness2.py %s' % root,
         }
     return {
         'action': 'Window is mechanically clean; advance to the next frequency root.',

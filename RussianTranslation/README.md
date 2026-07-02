@@ -10,7 +10,7 @@ The current production route is the frequency-window Max workflow documented in
 
 ```powershell
 python src\pilot\root_window_status.py <root>
-python src\pilot\gen_opt_harness.py <root>
+python src\pilot\gen_opt_harness2.py <root>
 # run src\pilot\run_pilot_wf.opt.js in Claude/Max Workflow and save wf_output.json
 python src\pilot\audit_window.py wf_output.json --root <root> --write-requeue
 ```
