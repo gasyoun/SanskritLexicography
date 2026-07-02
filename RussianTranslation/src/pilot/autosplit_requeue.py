@@ -161,14 +161,22 @@ def cmd_merge(root, lang, task_file):
     tree = defaultdict(lambda: defaultdict(dict))
     for fk, info in man.items():
         tree[info['orig']][info['s']][info['p']] = fk
-    results, skipped = [], []
+    results, skipped, partial, missing_frags = [], [], [], {}
     for orig, senses_map in tree.items():
-        frs = [fk for s in senses_map.values() for fk in s.values()]
-        if any(got.get(fk) is None for fk in frs):        # completeness guard
-            skipped.append(orig); continue
-        senses, iast, h = [], None, None
+        # Completeness guard is per SENSE, not per whole card — a giant flat headword (no
+        # rootmap, e.g. large nominal stems like kAla/ka/SrI) can split into 100+ fragments,
+        # where requiring ALL of them to succeed before keeping ANY drives joint success
+        # probability toward zero even at a high per-fragment success rate (0.9^100 << 1%).
+        # Skip only the senses whose fragments are still missing; keep the rest as partial
+        # credit, and persist the missing fragment keys for a targeted follow-up requeue
+        # (not a from-scratch re-run of the whole card).
+        senses, iast, h, missing_si = [], None, None, []
         for si in sorted(senses_map):
             parts = senses_map[si]
+            frs = [parts[pi] for pi in sorted(parts)]
+            if any(got.get(fk) is None for fk in frs):
+                missing_si.append(si)
+                continue
             g_txt, t_txt, tag, extra = [], [], None, {}
             for pi in sorted(parts):
                 card = got[parts[pi]]
@@ -186,20 +194,34 @@ def cmd_merge(root, lang, task_file):
                       field: '\n'.join(x for x in t_txt if x)}
             merged.update({kk: vv for kk, vv in extra.items() if vv is not None})
             senses.append(merged)
-        # post-stitch fidelity: reassembled counts vs the source card
+        if not senses:
+            skipped.append(orig); continue     # nothing at all resolved -> truly skip
+        if missing_si:
+            partial.append(orig)
+            missing_frags[orig] = [fk for si in missing_si for fk in senses_map[si].values()]
+        # post-stitch fidelity: reassembled counts vs the source card. Only meaningful on a
+        # COMPLETE card — a partial merge legitimately has fewer <ls> than the source.
         src = read_text(input_paths(orig)[0])
         got_ls = sum(s['german'].count('<ls') for s in senses)
-        if got_ls != src.count('<ls'):
+        if not missing_si and got_ls != src.count('<ls'):
             print('  ! %s fidelity drift: <ls> %d vs source %d' % (orig, got_ls, src.count('<ls')))
         results.append({'key': orig, 'card': {'key1': orig, 'iast': iast,
-                                              'records': [{'h': h, 'senses': senses}]}})
+                                              'records': [{'h': h, 'senses': senses}]},
+                         'partial': bool(missing_si),
+                         'missing_senses': len(missing_si), 'total_senses': len(senses_map)})
     tag = 'en' if lang == 'en' else 'sc'
     out = os.path.join(REPO, 'wf_output.%s.%s.autosplit.json' % (tag, root))
     meta = {'root': root, 'safe_root': safe_name(root), 'lang': lang,
             'generator': 'autosplit_requeue', 'schema_version': 'pwg_ru.workflow_meta.v1'}
     json.dump({'meta': meta, 'results': results}, open(out, 'w', encoding='utf-8'), ensure_ascii=False)
-    print('stitched %d complete card(s); skipped %d incomplete %s -> %s'
-          % (len(results), len(skipped), skipped or '', out))
+    print('stitched %d card(s) (%d fully complete, %d partial); skipped %d fully-empty %s -> %s'
+          % (len(results), len(results) - len(partial), len(partial), len(skipped), skipped or '', out))
+    if partial:
+        mf = os.path.join(HERE, 'output', 'autosplit_missing_%s_%s.json' % (lang, safe_name(root)))
+        os.makedirs(os.path.dirname(mf), exist_ok=True)
+        json.dump(missing_frags, open(mf, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
+        print('  partial cards: %s -- missing fragment keys written to %s for a follow-up requeue'
+              % (partial, mf))
     print("then: python src/promote_final_cards.py --glob 'wf_output.%s.%s.autosplit.json' --merge"
           % (tag, root))
 
