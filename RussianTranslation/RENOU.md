@@ -1,6 +1,6 @@
 # Renou language-state tagging
 
-<p align="right"><sub>Created: 24-06-2026 · Last updated: 01-07-2026</sub></p>
+_Created: 24-06-2026 · Last updated: 01-07-2026 (archive layer added 01-07-2026)_
 
 Every dictionary headword/sense is classified into one of **Louis Renou's five
 states of Sanskrit** (*Histoire de la langue sanskrite*, 1956 — the five chapters;
@@ -167,10 +167,55 @@ per-query register profile; `renou_corpus_map.py` alone prints corpus-wide regis
 pairs). This is the register axis grounded in actual parallel-corpus usage rather than a
 dictionary's `<ls>` sigla — full write-up in [`CORPUS_PROVENANCE.md`](CORPUS_PROVENANCE.md#renou-register-layer-attestation-level).
 
+## Archive layer — Renou applied to mailing-list discourse
+
+**Location:** The INDOLOGY-L Archive Atlas lives in the `Indology/` subdirectory of [github.com/gasyoun/IndologyScholars](https://github.com/gasyoun/IndologyScholars)
+([local: C:\Users\user\Documents\GitHub\IndologyScholars\Indology](file:///C:\Users\user\Documents\GitHub\IndologyScholars\Indology)).
+It is a **downstream application** that reuses the Renou state/register vocabulary for a **single, defined corpus**:
+40 years of public mailing-list discussion (INDOLOGY-L, 62k+ messages) with a different evidence type (keyword
+matching on subject lines, not lexical/corpus attestation). **Note:** Renou tagging is NOT yet applied to the
+Zograf or Roerich conference datasets also housed in IndologyScholars (in the `conferences/` directory);
+those remain analyzed separately via the parent project's authority-control and topic taxonomy.
+
+**Input.** Subject-line text from every message in the **INDOLOGY-L mailing list archive** (since ~1989).
+A parallel project studying the Zograf and Roerich **conference proceedings** (in the parent IndologyScholars
+repo's `conferences/` directory) is NOT yet tagged with Renou; it uses separate topic taxonomies. The archive
+atlas is deliberately scoped to the one, most complete data source (INDOLOGY-L) to avoid fragmentation.
+
+**Output.** Per-message and per-thread Renou tags (`state`, `register`, `confidence`):
+- Exact keyword match → confidence `high`
+- Fuzzy / substring match → confidence `medium`
+- Absent → no tag (sparse by design)
+
+**Evidence.** A rule table [`renou_subject_rules.csv`](https://gasyoun.github.io/IndologyScholars/IndologyArchive/data/curation/renou_subject_rules.csv)
+maps keyword phrases (e.g., "Vedic", "Ṛgveda", "Buddhist", "commentary") → (state, register, confidence).
+Rules are curated by keyword, not by LLM; the tagger is simple pattern-matching against subject lines.
+
+**Use case.** **Finding discussions**, not dating words. A researcher asking "which INDOLOGY-L threads
+discuss Purāṇic Sanskrit?" or "which conversations mention epigraphic evidence?" can now scan the
+filtered message list and thread summaries. The Renou tagging provides **topical navigation** over
+a 40-year archive that would otherwise require full-text search or manual browsing.
+
+**Coverage.** Currently 6,217 / 62,112 messages (10.01 %) and 3,309 / 24,033 threads (13.77 %) are
+tagged. Most subject lines don't signal a Sanskrit-linguistic category explicitly, so the sparse
+coverage is expected. A blank tag = "not classified by this layer," not "not relevant."
+
+**Relationship to dictionary layer.** The dictionary Renou system (SanskritLexicography, this repo)
+is **canonical**: it defines the five states, twenty registers, and the four-signal evidence scheme
+(LS/DCS/BHS/wisdomlib). The archive layer is a **downstream instantiation** that borrows these
+definitions wholesale but with simpler evidence (keywords) applied to a new corpus (subject lines).
+Both are read-only frontends; curation is rule-based, not LLM-based, so the archive remains fully
+deterministic and auditable.
+
 ## Use cases
 
 Both axes are per-sense, multi-label, and provenance-graded, so they answer queries a
 flat headword list can't. Join any `{code}.renou.jsonl` to the Russian cards by `key1`.
+
+**In the dictionary layer** (this repo, RussianTranslation/):
+
+
+**Dictionary layer — per-word, per-sense, multi-signal:**
 
 **State axis (I–V) — *when* is this Sanskrit?**
 - **Diachronic filter / archaism hunt** — `renou_enriched == ["I"]` (Vedic-only) surfaces
@@ -218,25 +263,63 @@ flat headword list can't. Join any `{code}.renou.jsonl` to the Russian cards by 
   pick, cite not just "this is a kāvya word" but the specific attested register of the
   Russian rendering used, traceable to `work:passage`.
 
+**Archive layer — topical discovery in mailing-list discourse:**
+- **Browse by Sanskrit tradition** — filter INDOLOGY-L threads tagged `state I` (Vedic) or `state V` (Buddhist)
+  to find discussions of interest without scanning all 24k threads. The state classifier answers:
+  "which conversations are about this era?"
+- **Register-specific topic finding** — search for `register bhāṣya` (commentary language) to find
+  technical/scholiast discussions, or `register epig` (inscriptions) to locate numismatic/paleographic threads.
+- **Trend over time** — the [dashboard](https://gasyoun.github.io/IndologyScholars/IndologyArchive/dashboard/index.html)
+  shows which Sanskrit traditions dominate discussion across decades (e.g., "Buddhist Sanskrit topics spiked in 2005").
+- **Hybrid discovery** — combine state + register filters: "Vedic + commentary = threads where classical
+  grammarians discuss Vedic usage" — a rare cross-disciplinary intersection.
+
 **Archive-discourse layer — *where do Renou categories surface in scholarly discussion?***
-- **Mailing-list subject finding aid** — the INDOLOGY-L Archive Atlas applies the same
-  state/register vocabulary to public mailing-list **subject lines**, not dictionary
-  headwords. This is a new downstream use of Renou: it asks where discussions explicitly
-  signal Vedic, Pāṇinian, Epic/Purāṇic/Tantric, Classical, Buddhist/Jaina, or register-
-  specific topics. Live outputs:
-  [`dashboard`](https://gasyoun.github.io/IndologyScholars/IndologyArchive/dashboard/index.html),
-  [`renou_messages.csv`](https://gasyoun.github.io/IndologyScholars/IndologyArchive/data/processed/renou_messages.csv),
-  [`renou_message_matches.csv`](https://gasyoun.github.io/IndologyScholars/IndologyArchive/data/processed/renou_message_matches.csv),
-  [`renou_thread_matches.csv`](https://gasyoun.github.io/IndologyScholars/IndologyArchive/data/processed/renou_thread_matches.csv),
-  [`renou_coverage.csv`](https://gasyoun.github.io/IndologyScholars/IndologyArchive/data/processed/renou_coverage.csv), and
-  editable [`renou_subject_rules.csv`](https://gasyoun.github.io/IndologyScholars/IndologyArchive/data/curation/renou_subject_rules.csv).
-- **Sparse by design.** The atlas currently classifies 6,217 / 62,112 messages (10.01 %)
-  and 3,309 / 24,033 threads (13.77 %) by subject-line evidence. A blank Renou field means
-  "not classified by this layer," not "not relevant to Renou."
-- **Different unit of evidence.** Dictionary Renou tags are per-entry/per-sense and
-  provenance-graded from `<ls>`, DCS, BHS, and wisdomlib. The archive layer is a discourse
-  index: its evidence is the matched subject term, confidence label, archive URL, and thread
-  context. It should be used for finding discussions to read, not for lexical attestation.
+
+Since 2026-06, Renou's five-state and twenty-register taxonomy has been extended beyond
+dictionaries into a **second application domain**: the [INDOLOGY-L Archive Atlas](https://github.com/gasyoun/IndologyScholars)
+(in [C:\Users\user\Documents\GitHub\IndologyScholars](file:///C:\Users\user\Documents\GitHub\IndologyScholars))
+applies the same vocabulary to classify public mailing-list **subject lines**, not dictionary
+headwords. This is a new proof of concept for Renou's **reusability as a discourse-indexing taxonomy**
+across domains beyond lexicography.
+
+**How it works.** The archive tagger runs an evidence matcher over 62,112 messages (24,033 threads)
+from INDOLOGY-L (spanning ~40 years, 1989–2030), scoring subject-line keywords against the same
+five-state + twenty-register coordinate system. A message tagged `III·purana` means "this discussion
+explicitly signals Epic or Purāṇic Sanskrit, detectably via subject-line keywords." The goal is
+**topical discovery**: answering "which threads on the Vedas / on commentarial language / on Buddhist
+Sanskrit am I interested in?" rather than lexical attestation.
+
+**Live outputs** in GitHub Pages ([`gasyoun.github.io/IndologyScholars/IndologyArchive`](https://gasyoun.github.io/IndologyScholars/IndologyArchive)):
+- [`dashboard`](https://gasyoun.github.io/IndologyScholars/IndologyArchive/dashboard/index.html) — interactive chart of state + register coverage across decades
+- [`renou_messages.csv`](https://gasyoun.github.io/IndologyScholars/IndologyArchive/data/processed/renou_messages.csv) — all 6,217 / 62,112 messages with matched state/register
+- [`renou_message_matches.csv`](https://gasyoun.github.io/IndologyScholars/IndologyArchive/data/processed/renou_message_matches.csv) — per-message: matched keywords + source subject line + thread ID
+- [`renou_thread_matches.csv`](https://gasyoun.github.io/IndologyScholars/IndologyArchive/data/processed/renou_thread_matches.csv) — aggregate: thread's dominant state/register + sample messages
+- [`renou_coverage.csv`](https://gasyoun.github.io/IndologyScholars/IndologyArchive/data/processed/renou_coverage.csv) — coverage stats (state I: 418 threads, V: 224 threads, …)
+- editable [`renou_subject_rules.csv`](https://gasyoun.github.io/IndologyScholars/IndologyArchive/data/curation/renou_subject_rules.csv) — the keyword matching rules (tunable, rule-based, not LLM)
+
+**Sparse by design.** The atlas currently classifies 6,217 / 62,112 messages (10.01 %)
+and 3,309 / 24,033 threads (13.77 %) by subject-line evidence. A blank Renou field means
+"not classified by this layer," not "not relevant to Renou" — most discussion titles don't
+signal a Sanskrit-linguistic register explicitly. This is the opposite of dictionary entries,
+where most headwords carry some state/register by construction.
+
+**Different unit of evidence.** Dictionary Renou tags are per-entry/per-sense and
+provenance-graded from `<ls>` citation, DCS corpus, BHS dictionary, and wisdomlib scraped traditions.
+The archive layer is a **discourse index**: its evidence is the **matched subject term** (keyword),
+**confidence label** (exact keyword vs substring vs fuzzy), and the **archive URL + thread context**.
+It should be used for **finding discussions to read**, not for lexical attestation — if you want to know
+which threads discuss Vedic Sanskrit, this is your tool; if you want to know whether a word is Vedic,
+use the dictionary layer instead.
+
+**Relationship to SanskritLexicography.** The dictionary Renou system (this repo, RussianTranslation/)
+is the **canonical** state/register definitions + four-signal annotation scheme (LS/DCS/BHS/wisdomlib).
+The archive application (IndologyScholars) is a **downstream consumer** of that taxonomy: it borrows
+the five states and twenty registers wholesale, instantiates them with a simpler (keyword-based) evidence
+layer, and applies them to a new corpus (mailing-list subject lines). The tagger lives in IndologyScholars;
+the definitions stay here. Both systems are read-only for end users (the dictionary layer, the archive layer);
+curation happens via `renou_subject_rules.csv` (archive keywords) and `ls_source_map.json` + `build_dcs_renou.py`
+(dictionary signals).
 
 The two axes compose: `(state, register, provenance)` is an evidence-graded coordinate per
 sense — e.g. *akṣobhya* = `III·V` / `purana·tantra·bauddha` / all-four-signals = "an Epic-
@@ -416,4 +499,4 @@ layer in [`CORPUS_PROVENANCE.md`](CORPUS_PROVENANCE.md#renou-register-layer-atte
 per-*sense* register beats per-*headword* register, and it composes with the state axis the
 same way — independent, provenance-graded, and only as informative as the evidence actually is.
 
-<p align="right"><sub>Dr. Mārcis Gasūns</sub></p>
+_Dr. Mārcis Gasūns_

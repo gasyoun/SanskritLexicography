@@ -1,0 +1,126 @@
+## dhā
+
+`_d_a~~h0_zz_pw05`
+
+
+**1)** **2.** *dhā*¦
+— 1〉 _Adj._ am Ende eines Comp. in der Bed. eines Nom. ag. von **1.** *dhā*.
+
+- **RU:** **2.** *dhā*¦
+— 1〉 _Adj._ на конце Comp. в Bed. Nom. ag. от **1.** *dhā*.
+  <sub>DCS 4861 · attested</sub>
+
+**2a)** — 2〉 *_m._ Bein.
+— a〉 Brahmanʼs.
+
+- **RU:** — 2〉 *_m._ Bein.
+— a〉 Brahmanʼs.
+  <sub>DCS 4861 · lexicographic</sub>
+
+**2b)** — b〉 Bṛhaspatiʼs.
+
+- **RU:** — b〉 Bṛhaspatiʼs.
+  <sub>DCS 4861 · lexicographic</sub>
+
+**3)** — 3〉 _f._ am Ende eines Comp. Nom. act. von **1.** *dhā*.
+
+- **RU:** — 3〉 _f._ на конце Comp. Nom. act. от **1.** *dhā*.
+  <sub>DCS 4861 · attested</sub>
+
+**main)** **3.** √*dhā*¦, *dhayati, dhītvā, dhīta*; saugen an Etwas oder Etwas (Acc.) trinken; aussaugen (auch in übertr. Bed.), einsaugen, so v. a. ganz sich zu eigen machen. Caus. *dhāpayate* säugen, ernähren.
+
+- **RU:** **3.** √*dhā*¦, *dhayati, dhītvā, dhīta*; сосать что-либо или пить что-либо (Acc.); высасывать (также в übertr. Bed.), всасывать, таким образом v. a. всецело усваивать. Caus. *dhāpayate* кормить грудью, вскармливать.
+  <sub>DCS 4861 · attested</sub>
+
+**Mit {T24})** — Mit *anu* Caus. Act. zum Saugen anlegen.
+
+- **RU:** — Mit *anu* Caus. Act. прикладывать для кормления грудью.
+  <sub>DCS 4861 · attested</sub>
+
+**Mit {T27})** — Mit *nirava* aussaugen [ĀPAST. ŚR. 13,17,5].
+
+- **RU:** — Mit *nirava* высасывать [ĀPAST. ŚR. 13,17,5].
+  <sub>DCS 4861 · attested</sub>
+
+**Mit {T29})** — Mit *ud* in **uddhaya*.
+
+- **RU:** — Mit *ud* в **uddhaya*.
+  <sub>DCS 4861 · attested</sub>
+
+**Mit {T31})** — Mit *upa* Caus. Med. aufsäugen. |
+
+- **RU:** — Mit *upa* Caus. Med. вскармливать грудью. |
+  <sub>DCS 4861 · attested</sub>
+
+**Mit {T34})** — Mit *nis* aussaugen. *nirdhītatama*.
+
+- **RU:** — Mit *nis* высасывать. *nirdhītatama*.
+  <sub>DCS 4861 · attested</sub>
+
+**Mit {T36} und {T37})** — Mit **pariṇi* und **praṇi, ˚dhayati*.
+
+- **RU:** — Mit **pariṇi* und **praṇi, ˚dhayati*.
+  <sub>DCS 4861 · attested</sub>
+
+**Mit {T38})** — Mit *pra* Caus. Act. saugen lassen an (Acc.) [MĀN. GṚHY. 1,17].
+
+- **RU:** — Mit *pra* Caus. Act. давать сосать (Acc.) [MĀN. GṚHY. 1,17].
+  <sub>DCS 4861 · attested</sub>
+
+**Mit {T43})** — Mit *prati* in *˚dha*.
+
+- **RU:** — Mit *prati* в *˚dha*.
+  <sub>DCS 4861 · attested</sub>
+
+**main)** **4.** *dhā*¦ _Adj._ saugend in *payodhā*.
+
+- **RU:** **4.** *dhā*¦ _Adj._ сосущий в *payodhā*.
+  <sub>DCS 4861 · attested</sub>
+
+**Mit {T49} — main)** **1.** √*dhā*¦ mit *vi* Act. sich bemühen um (Dat.) [KIR. 1,3,42].
+
+- **RU:** **1.** √*dhā*¦ mit *vi* Act. стараться, прилагать усилия ради (Dat.) [KIR. 1,3,42].
+  <sub>DCS 4861 · attested</sub>
+
+**Mit {T54} corr)** **1.** √*dhā*¦ mit *abhi*, S. 152, Sp. 1, Z. 2 lies *abhihita*.
+— Mit *abhyupa* 3〉 streiche Med.
+— Mit *abhisam* 1〉 lies (Acc.) st. (Loc.).
+
+- **RU:** **1.** √*dhā*¦ mit *abhi*, S. 152, Sp. 1, Z. 2 читай *abhihita*.
+— Mit *abhyupa* 3〉 вычеркни Med.
+— Mit *abhisam* 1〉 читай (Acc.) st. (Loc.).
+  <sub>DCS 4861 · attested</sub>
+
+**Mit {T63} — main)** **1.** √*dhā*¦ mit *samā*, *samāhita* bei den Rhetorikern so v. a. gedämpft, unterdrückt.
+— Mit *vini* 6〉 *vinihitātman* in der angeführten Stelle bedeutet keine Aufmerksamkeit Jmd (Loc.) schenkend.
+— Mit *sam*, Partic. *saṃhita* und *saṃhita*; s. auch bes.
+
+- **RU:** **1.** √*dhā*¦ mit *samā*, *samāhita* у риторов таким образом v. a. приглушённый, подавленный.
+— Mit *vini* 6〉 *vinihitātman* в приведённом месте означает не уделяющий внимания кому-либо (Loc.).
+— Mit *sam*, Partic. *saṃhita* и *saṃhita*; s. также bes.
+  <sub>DCS 4861 · attested</sub>
+
+**Mit various prefixes — addenda)** **1.** √*dhā*¦ mit *abhi* III. 5.
+— Mit *anvava* III. [ĀPAST. ŚR. 8,11,16]. [GṚHY. 17,5].
+— Mit *samā* III. 6. *Pass. in eine andachtsvolle Stimmung gerathen [MAHĀVY. 81,5].
+— Mit *abhyupa* III. 5.
+— Mit *anuni*, *anunihitāḥ* nacheinander geordnet [MAITR. S. 4,6,7 (89,9)].
+— Mit *vini* III. 6.
+— Mit *saṃpi* schliessen [DIVYĀVAD. 232,19].
+— Mit *pra* III. **cittam* (dieses wohl zu ergänzen) den Geist auf Etwas richten [MAHĀVY. 39,4].
+— Mit *vi* III. 3.
+— Mit *sam* III. 6.
+— Mit *abhisam* III. 5.
+
+- **RU:** **1.** √*dhā*¦ mit *abhi* III. 5.
+— Mit *anvava* III. [ĀPAST. ŚR. 8,11,16]. [GṚHY. 17,5].
+— Mit *samā* III. 6. *Pass. приходить в состояние благоговейного сосредоточения [MAHĀVY. 81,5].
+— Mit *abhyupa* III. 5.
+— Mit *anuni*, *anunihitāḥ* расположенный поочерёдно [MAITR. S. 4,6,7 (89,9)].
+— Mit *vini* III. 6.
+— Mit *saṃpi* запирать [DIVYĀVAD. 232,19].
+— Mit *pra* III. **cittam* (это, по всей видимости, следует добавить) направлять ум на что-либо [MAHĀVY. 39,4].
+— Mit *vi* III. 3.
+— Mit *sam* III. 6.
+— Mit *abhisam* III. 5.
+  <sub>DCS 4861 · attested</sub>

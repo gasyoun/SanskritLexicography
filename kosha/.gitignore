@@ -1,0 +1,66 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+venv/
+ENV/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Database
+*.db
+*.db-shm
+*.db-wal
+unified_dict.db
+
+# Extracted data (large, regenerable)
+dicts_raw.jsonl
+dict_page_map.json
+unified_headwords.json
+
+# Environment
+.env
+.env.local
+
+# Logs
+*.log
+logs/
+
+# Cache
+.pytest_cache/
+.cache/
+*.cache
+
+# Build artifacts
+dist/
+build/
+
+# Large static files (regenerate on deploy)
+docs/js/data/lemmas.json
+docs/js/data/lemmas.json.gz

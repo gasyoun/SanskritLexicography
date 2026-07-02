@@ -1,0 +1,106 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PWG — переводы статей (RU / EN)</title>
+<style>
+:root{--bg:#fff;--fg:#1a1a1a;--mut:#6a6a6a;--line:#e4e4e4;--accent:#7a1f1f;--sa:#0b5;--card:#fafafa}
+@media(prefers-color-scheme:dark){:root{--bg:#161616;--fg:#e8e8e8;--mut:#9a9a9a;--line:#333;--accent:#e6928a;--sa:#7ddda0;--card:#1e1e1e}}
+*{box-sizing:border-box}body{margin:0;font:15px/1.55 -apple-system,Segoe UI,Roboto,sans-serif;color:var(--fg);background:var(--bg)}
+#wrap{display:flex;min-height:100vh}
+#side{width:250px;border-right:1px solid var(--line);padding:10px;overflow-y:auto;height:100vh;position:sticky;top:0}
+#side h1{font-size:15px;margin:4px 6px 8px}
+#q{width:100%;padding:6px 8px;border:1px solid var(--line);border-radius:6px;background:var(--bg);color:var(--fg);margin-bottom:8px}
+.rlink{display:flex;justify-content:space-between;gap:6px;padding:4px 8px;border-radius:6px;cursor:pointer;font-size:14px}
+.rlink:hover{background:var(--card)}.rlink.active{background:var(--accent);color:#fff}
+.rlink .en{font-size:11px;color:var(--mut)}.rlink.active .en{color:#fff}
+.cov{font-size:10px;color:var(--mut)}.cov.low{color:#c46b00;font-weight:600}
+.rlink.active .cov,.rlink.active .cov.low{color:#ffd9a8}
+#main{flex:1;padding:20px 28px;max-width:900px}
+.iast{font-style:italic}
+h2.root{font-size:26px;margin:0 0 2px}.meta{color:var(--mut);font-size:13px;margin-bottom:14px}
+.tabs{display:inline-flex;border:1px solid var(--line);border-radius:8px;overflow:hidden;margin-bottom:16px}
+.tabs .tab{border:0;border-right:1px solid var(--line);background:var(--bg);color:var(--fg);padding:6px 16px;cursor:pointer;font-size:14px}
+.tabs .tab:last-child{border-right:0}
+.tabs .tab.on{background:var(--accent);color:#fff}
+.sub{margin:18px 0;padding-bottom:6px;border-bottom:1px solid var(--line)}
+.sub h3{margin:0 0 2px;font-size:19px}.sub .k{color:var(--mut);font-size:12px;font-family:ui-monospace,monospace}
+.sense{margin:12px 0;padding:10px 12px;background:var(--card);border-radius:8px}
+.tag{font-weight:700;color:var(--accent);margin-right:4px}
+.de{margin-bottom:6px}.tr{padding-top:6px;margin-top:6px;border-top:1px dashed var(--line)}
+.lbl{font-size:10px;letter-spacing:.05em;color:#fff;background:var(--mut);border-radius:3px;padding:0 5px;text-transform:uppercase;margin-right:6px;vertical-align:1px}
+i.sa{font-style:italic;color:var(--sa)}
+.ls{color:var(--mut);font-size:.92em}
+a.ls{color:var(--accent);font-size:.92em;text-decoration:none;border-bottom:1px dotted var(--accent)}
+a.ls:hover{text-decoration:underline;border-bottom-color:transparent}
+.ab{font-style:italic;color:var(--mut)}.lex{font-variant:small-caps;color:var(--mut)}
+.badges{margin-top:6px}.badge{display:inline-block;font-size:11px;color:var(--mut);border:1px solid var(--line);border-radius:10px;padding:0 7px;margin-right:5px}
+.na{color:var(--mut);font-style:italic}
+/* language switch: show German always as reference in ru/en; German-only in de mode */
+#artbody.lang-ru .tr.en{display:none}
+#artbody.lang-en .tr.ru{display:none}
+#artbody.lang-de .tr{display:none}
+#artbody.lang-de .de{font-size:16px}
+#artbody:not(.lang-de) .de{color:var(--mut)}   /* dim the source when a translation is primary */
+#artbody:not(.lang-de) .de i.sa{color:var(--sa)}
+</style></head><body><div id="wrap">
+<nav id="side"><h1>PWG статьи</h1><input id="q" placeholder="фильтр корней…"><div id="list"></div></nav>
+<main id="main"><div id="arthead"></div><div id="artbody" class="lang-ru"><p class="na">Загрузка…</p></div></main></div>
+<script src="articles.js"></script>
+<script>
+var A=window.ARTICLES||{roots:[]}, lang='ru', cur=null;
+var list=document.getElementById('list'), q=document.getElementById('q');
+var arthead=document.getElementById('arthead'), artbody=document.getElementById('artbody');
+function esc(x){return x==null?'':(''+x);}
+function renderList(f){list.innerHTML='';A.roots.filter(function(r){return !f||r.iast.toLowerCase().indexOf(f)>=0||r.root.toLowerCase().indexOf(f)>=0;}).forEach(function(r){
+ var d=document.createElement('div');d.className='rlink'+(cur===r.root?' active':'');
+ var ruf=r.n_senses?Math.round(100*r.n_ru_senses/r.n_senses):0;
+ d.innerHTML='<span class="iast">'+r.iast+'</span><span class="en" title="senses; RU / EN coverage">'+r.n_senses+' <span class="cov'+(ruf<100?' low':'')+'">RU'+ruf+'%</span></span>';
+ d.onclick=function(){cur=r.root;renderList(q.value.toLowerCase());renderRoot(r);};list.appendChild(d);});}
+// Language is a CSS class on #artbody (lang-de|lang-ru|lang-en). All three blocks
+// are always in the DOM; the class shows/hides them, so switching cannot silently no-op.
+function applyLang(){
+ artbody.className='lang-'+lang;
+ var t=document.querySelectorAll('.tab');for(var i=0;i<t.length;i++){t[i].classList.toggle('on',t[i].getAttribute('data-lang')===lang);}
+}
+function trBlock(cls,label,txt){
+ return '<div class="tr '+cls+'"><span class="lbl">'+label+'</span>'+(txt?txt:'<span class="na">— нет / n/a —</span>')+'</div>';
+}
+function renderBody(r){
+ var subs=(window.ROOT||{})[r.root]||[]; var h='';
+ subs.forEach(function(sub){
+  h+='<div class="sub"><h3 class="iast">'+esc(sub.iast||sub.h||sub.key)+'</h3><div class="k">'+esc(sub.key)+'</div></div>';
+  sub.senses.forEach(function(s){
+   var b='';if(s.dcs!=null)b+='<span class="badge">DCS '+s.dcs+'</span>';if(s.src)b+='<span class="badge">'+s.src+'</span>';
+   var tg=(s.tag==='header'||s.tag==='head')?'':'<span class="tag">'+esc(s.tag)+')</span>';
+   h+='<div class="sense">'
+    +'<div class="de">'+tg+'<span class="lbl">DE</span>'+esc(s.de_html)+'</div>'
+    +trBlock('ru','RU',s.ru_html)+trBlock('en','EN',s.en_html)
+    +(b?'<div class="badges">'+b+'</div>':'')+'</div>';
+  });
+ });
+ artbody.innerHTML=h||'<p class="na">нет данных</p>'; applyLang();
+}
+function renderRoot(r){
+ cur=r.root;
+ arthead.innerHTML='<h2 class="root iast">'+r.iast+'</h2>'
+  +'<div class="meta">PWG-статья · '+r.n_subcards+' под-карт., '+r.n_senses+' знач.'
+  +' · <b>RU '+r.n_ru_senses+'/'+r.n_senses+'</b> · EN '+r.n_en_senses+'/'+r.n_senses
+  +(r.n_ru_senses<r.n_senses?' <span class="cov low">RU неполный</span>':'')+'</div>'
+  +'<div class="tabs">'
+  +'<button class="tab" data-lang="de">Deutsch (оригинал)</button>'
+  +'<button class="tab" data-lang="ru">Русский</button>'
+  +'<button class="tab" data-lang="en">English</button></div>';
+ // lazy-load this root's data (window.ROOT[root]) via <script src> — works from file:// too
+ if((window.ROOT||{})[r.root]){renderBody(r);return;}
+ artbody.innerHTML='<p class="na">Загрузка…</p>';
+ var sc=document.createElement('script'); sc.src='roots/'+r.safe+'.js';
+ sc.onload=function(){ if(cur===r.root) renderBody(r); };
+ sc.onerror=function(){ if(cur===r.root) artbody.innerHTML='<p class="na">ошибка загрузки</p>'; };
+ document.head.appendChild(sc);
+}
+// delegated tab handler (survives per-root re-render)
+document.getElementById('main').addEventListener('click',function(e){
+ var b=e.target.closest?e.target.closest('.tab'):null;if(!b)return;lang=b.getAttribute('data-lang');applyLang();
+});
+q.oninput=function(){renderList(q.value.toLowerCase());};
+renderList('');if(A.roots.length){renderList('');renderRoot(A.roots[0]);}
+</script></body></html>

@@ -29,6 +29,11 @@ src/pilot/run_pilot_wf.sc_s*.js
 src/pilot/run_pilot_wf.sc_v*.js
 src/pilot/run_pilot_wf.sc_y*.js
 
+# The generated article site is PUBLISHED to the gh-pages branch (served at
+# https://gasyoun.github.io/SanskritLexicography/). Rebuild with
+# `python src/pilot/build_article_site.py`; publish by copying article_site/ onto gh-pages.
+# (No longer ignored — MG asked for it public, 2026-07-01.)
+
 # Max workflow run output and A/B transcript artifacts (not deliverables)
 wf_output.json
 wf_output.*.json
