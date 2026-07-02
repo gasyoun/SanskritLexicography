@@ -19,14 +19,12 @@ build traps, CodeQL-has-no-PHP; add those there, not here).
 **Schema per finding:** a `###` heading numbered `§N` (the number + heading anchor are the
 finding's stable citation, listed in the index below), then the full **claim** in bold,
 `Evidence:` (the measurement, with numbers / a file + line), `Implication:` (what to do or not
-do), and a right-aligned small **Source** paragraph linking the exact statement and/or code,
-with a `— repo · date` tag. The Source styling (`<div align="right">` + `<sub>`, with blank
-lines so the inner Markdown still renders) is the one **sanctioned HTML** in this file —
-GitHub Markdown cannot right-align otherwise; md-hygiene sweeps must keep it. Keep findings
-grounded (a number, a file, a probe), never a hunch. **Numbers are append-only:** a new
-finding takes the next free number (currently §41) whatever its section, so existing numbers
-never shift; when a finding is later refuted or superseded, strike it and say why — never
-reuse its number.
+do), and a blockquoted (`> `) **Source** paragraph linking the exact statement and/or code,
+with a `— repo · date` tag — the `>` gives the Source line its left indent and muted rendering
+in plain Markdown; no HTML in this file, ever. Keep findings grounded (a number, a file, a
+probe), never a hunch. **Numbers are append-only:** a new finding takes the next free number
+(currently §41) whatever its section, so existing numbers never shift; when a finding is later
+refuted or superseded, strike it and say why — never reuse its number.
 
 ## Index
 
@@ -115,12 +113,8 @@ collect attested inflected+accented forms, bucket by morphology, and validate a 
 **CC BY 4.0**, in-ecosystem (C-SALT/CDSL). The accent axis is *unblocked and de-risked* — only the
 Whitney-rule encoding + the join remain. (The legacy `/rigveda/api/search` is superseded by 2.0.)
 
-<div align="right">
-
-<sub>**Source:** [`ZALIZNYAK_INDEX.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/ZALIZNYAK_INDEX.md)
-§"Vedic accent mobility" + `WhitneyRoots/src/whitney_sections.json` §§315–319 — RussianTranslation · 2026-06-29</sub>
-
-</div>
+> **Source:** [`ZALIZNYAK_INDEX.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/ZALIZNYAK_INDEX.md)
+> §"Vedic accent mobility" + `WhitneyRoots/src/whitney_sections.json` §§315–319 — RussianTranslation · 2026-06-29
 
 ### §2. Homonym token-splitting has a hard morphological ceiling
 
@@ -136,12 +130,8 @@ Implication: token-level homonym frequency beyond these 26+5 requires sense/glos
 not Pāṇinian generation; vidyut-prakriya's right role is paradigm **display + form-validation**
 (advisory, never edits the spine), NOT gaṇa attribution. Show "N (this sense) · M for the lemma".
 
-<div align="right">
-
-<sub>**Source:** [WhitneyRoots `.ai_state.md`](https://github.com/gasyoun/WhitneyRoots/blob/main/.ai_state.md)
-§token-level disambiguation + `crosswalk/token_attribution.json` — WhitneyRoots · 2026-06-14</sub>
-
-</div>
+> **Source:** [WhitneyRoots `.ai_state.md`](https://github.com/gasyoun/WhitneyRoots/blob/main/.ai_state.md)
+> §token-level disambiguation + `crosswalk/token_attribution.json` — WhitneyRoots · 2026-06-14
 
 ### §3. The Warnemyr scrape union-smears homonym classes
 
@@ -156,12 +146,8 @@ never in the asserted class.
 Implication: never read verb class from `Whitney_roots_class-PP.txt` / old `app_data.json`;
 treat any single-valued class on a homonym root as suspect union-smear and re-derive.
 
-<div align="right">
-
-<sub>**Source:** [WhitneyRoots `DESIGN.md` §5](https://github.com/gasyoun/WhitneyRoots/blob/main/DESIGN.md)
-+ `.ai_state.md` §Phase 0 — WhitneyRoots · 2026-06-13</sub>
-
-</div>
+> **Source:** [WhitneyRoots `DESIGN.md` §5](https://github.com/gasyoun/WhitneyRoots/blob/main/DESIGN.md)
+> + `.ai_state.md` §Phase 0 — WhitneyRoots · 2026-06-13
 
 ### §4. PWG nominal grammar compresses into 335 paradigm tokens
 
@@ -175,12 +161,8 @@ Implication: a compact per-word grammar token is feasible for the whole dictiona
 as **structured data only** — a blind A/B (Opus judge, 8 stratified headwords: grammar-OFF 5 /
 tie 2 / ON 1) showed injecting it does NOT improve DE→RU translation, so portraits stay untouched.
 
-<div align="right">
-
-<sub>**Source:** [`ZALIZNYAK_INDEX.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/ZALIZNYAK_INDEX.md)
-(+ `src/headword_index.tsv`, `src/reverse_paradigm_index.json`) — RussianTranslation · 2026-06-29</sub>
-
-</div>
+> **Source:** [`ZALIZNYAK_INDEX.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/ZALIZNYAK_INDEX.md)
+> (+ `src/headword_index.tsv`, `src/reverse_paradigm_index.json`) — RussianTranslation · 2026-06-29
 
 ## Corpus & parallel-text data
 
@@ -195,12 +177,8 @@ Implication: prefix-specific Apresjan evidence is corpus-bound; for the ~80 % th
 defer to the dictionary's own (German) gloss. Do **not** build a sandhi-join lookup
 expecting coverage gains — it's a no-op.
 
-<div align="right">
-
-<sub>**Source:** code [`subcard_portrait()`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/_pilot_gen_merged.py#L237)
-· statement [FREQ_TEST_RUNBOOK.md § Apresjan evidence](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/FREQ_TEST_RUNBOOK.md). — SanskritLexicography/RussianTranslation · 2026-06-24</sub>
-
-</div>
+> **Source:** code [`subcard_portrait()`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/_pilot_gen_merged.py#L237)
+> · statement [FREQ_TEST_RUNBOOK.md § Apresjan evidence](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/FREQ_TEST_RUNBOOK.md). — SanskritLexicography/RussianTranslation · 2026-06-24
 
 ### §6. No printed frequency dictionary of Sanskrit exists
 
@@ -210,11 +188,7 @@ only Hellwig's DCS corpus counts (≈2021) give per-lemma frequency.
 Implication: DCS-frequency headword ordering is a genuine innovation, not a digitisation of
 prior art.
 
-<div align="right">
-
-<sub>**Source:** [A33 note § 1 "The question"](https://github.com/gasyoun/SanskritLexicography/blob/master/papers/A33_sense_ordering_note.md). — SanskritLexicography (A33) · 2026-06-24</sub>
-
-</div>
+> **Source:** [A33 note § 1 "The question"](https://github.com/gasyoun/SanskritLexicography/blob/master/papers/A33_sense_ordering_note.md). — SanskritLexicography (A33) · 2026-06-24
 
 ### §7. DCS lemma data is keyed in two transliterations
 
@@ -224,11 +198,7 @@ Evidence: `VisualDCS/dcs_lemma_summary.json` (`lemmas`, freqBand 1–5) is **SLP
 dates) is **IAST**-keyed.
 Implication: a freq join must transcode SLP1↔IAST for the second; don't assume one scheme.
 
-<div align="right">
-
-<sub>**Source:** [`freq_route.py` header (lines 7–8) + `iast()`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/freq_route.py#L7-L8). — VisualDCS / RussianTranslation · 2026-06-24</sub>
-
-</div>
+> **Source:** [`freq_route.py` header (lines 7–8) + `iast()`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/freq_route.py#L7-L8). — VisualDCS / RussianTranslation · 2026-06-24
 
 ### §8. Unaccented DCS cannot distinguish present class I from VI
 
@@ -241,12 +211,8 @@ total, vs 19 kept distinct-class ones).
 Implication: never write a corpus-derived verb class into reviewed data without a grammar /
 Zaliznyak cross-check.
 
-<div align="right">
-
-<sub>**Source:** [WhitneyRoots `REVIEWER_GUIDE.md`](https://github.com/gasyoun/WhitneyRoots/blob/main/REVIEWER_GUIDE.md)
-+ [`CHANGELOG.md`](https://github.com/gasyoun/WhitneyRoots/blob/main/CHANGELOG.md) (revert of 120). — WhitneyRoots · 2026-06</sub>
-
-</div>
+> **Source:** [WhitneyRoots `REVIEWER_GUIDE.md`](https://github.com/gasyoun/WhitneyRoots/blob/main/REVIEWER_GUIDE.md)
+> + [`CHANGELOG.md`](https://github.com/gasyoun/WhitneyRoots/blob/main/CHANGELOG.md) (revert of 120). — WhitneyRoots · 2026-06
 
 ### §9. DCS OccId and sent_id are not unique keys
 
@@ -261,12 +227,8 @@ with 0 mismatches.
 Implication: never key on `OccId`/`sent_id`; use synthetic surrogates or position-within-text.
 The stable cross-corpus key is `LemmaId`.
 
-<div align="right">
-
-<sub>**Source:** [`DCS_CONLLU_IMPORT_PLAN.md` §M5–M6](https://github.com/gasyoun/VisualDCS/blob/main/src/DCS-data-2026/DCS_CONLLU_IMPORT_PLAN.md)
-+ `reports/m5_validation.md` / `m6_validation.md` — VisualDCS · 2026-06-06</sub>
-
-</div>
+> **Source:** [`DCS_CONLLU_IMPORT_PLAN.md` §M5–M6](https://github.com/gasyoun/VisualDCS/blob/main/src/DCS-data-2026/DCS_CONLLU_IMPORT_PLAN.md)
+> + `reports/m5_validation.md` / `m6_validation.md` — VisualDCS · 2026-06-06
 
 ### §10. DCS UD tense marking conflates aorist and perfect
 
@@ -282,12 +244,8 @@ Implication: aorist-vs-perfect studies must join the 2026 corpus to the 2021 exp
 (code map in `m4_exports.md`) — UD features alone cannot answer; treat participle tense buckets
 as heuristic.
 
-<div align="right">
-
-<sub>**Source:** [`reports/m7_widgets.md` §Caveats](https://github.com/gasyoun/VisualDCS/blob/main/src/DCS-data-2026/reports/m7_widgets.md)
-+ `reports/m4_exports.md` §verb code map — VisualDCS · 2026-06-06</sub>
-
-</div>
+> **Source:** [`reports/m7_widgets.md` §Caveats](https://github.com/gasyoun/VisualDCS/blob/main/src/DCS-data-2026/reports/m7_widgets.md)
+> + `reports/m4_exports.md` §verb code map — VisualDCS · 2026-06-06
 
 ### §11. DCS 2021 and 2026 vintages are not directly comparable
 
@@ -302,12 +260,8 @@ Implication: never compare sentence-level metrics across vintages — use token-
 position-based crosswalks; filter to `text.has_dependencies` for syntax work; weight diachronic
 frequency comparisons by text coverage.
 
-<div align="right">
-
-<sub>**Source:** [`reports/coverage_diff.md`](https://github.com/gasyoun/VisualDCS/blob/main/src/DCS-data-2026/reports/coverage_diff.md)
-+ `reports/m6_validation.md` — VisualDCS · 2026-06-06</sub>
-
-</div>
+> **Source:** [`reports/coverage_diff.md`](https://github.com/gasyoun/VisualDCS/blob/main/src/DCS-data-2026/reports/coverage_diff.md)
+> + `reports/m6_validation.md` — VisualDCS · 2026-06-06
 
 ### §12. A fifth of DCS lemmas have no CDSL headword
 
@@ -320,12 +274,8 @@ are corpus-only (lemmatization targets, causatives, derived forms). Crosswalk bu
 Implication: dictionary-lookup pipelines need a lemmatization / sandhi-analysis fallback for
 roughly a fifth of corpus vocabulary — headword joins alone will not reach it.
 
-<div align="right">
-
-<sub>**Source:** [csl-apidev `simple-search/dcs_xref/readme.md`](https://github.com/sanskrit-lexicon/csl-apidev/blob/master/simple-search/dcs_xref/readme.md)
-+ `.ai_state.md` §DCS-2026 frequency source — csl-apidev · 2026-06-11</sub>
-
-</div>
+> **Source:** [csl-apidev `simple-search/dcs_xref/readme.md`](https://github.com/sanskrit-lexicon/csl-apidev/blob/master/simple-search/dcs_xref/readme.md)
+> + `.ai_state.md` §DCS-2026 frequency source — csl-apidev · 2026-06-11
 
 ### §13. Sa-Ru glossary token coverage plateaus at 86.6 percent
 
@@ -338,12 +288,8 @@ Implication: DCS + vidyut is the workhorse pair for form→lemma resolution; do 
 form-level completeness — the residue is rare forms with little token mass. (Bulk glossary
 data is git-ignored and regenerable.)
 
-<div align="right">
-
-<sub>**Source:** [`glossary/README.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/glossary/README.md)
-(built from `corpus_lexicon.jsonl`) — RussianTranslation · 2026-07-01</sub>
-
-</div>
+> **Source:** [`glossary/README.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/glossary/README.md)
+> (built from `corpus_lexicon.jsonl`) — RussianTranslation · 2026-07-01
 
 ### §14. Renou period-state tagging covers 770k entries in 8 dicts
 
@@ -360,12 +306,8 @@ trusting a `dcs` state; expect closed-class words (`ca`, `idam`) to carry the un
 their homographs' eras — maximal I–V spans, not a usable period signal. 20 register
 subsections are orthogonal to I–V and add stratum granularity.
 
-<div align="right">
-
-<sub>**Source:** [`RENOU.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/RENOU.md)
-(built by `renou_pipeline.py --all`, validated by `renou_audit.py`) — RussianTranslation · 2026-07-01</sub>
-
-</div>
+> **Source:** [`RENOU.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/RENOU.md)
+> (built by `renou_pipeline.py --all`, validated by `renou_audit.py`) — RussianTranslation · 2026-07-01
 
 ## Dictionary structure & markup
 
@@ -378,12 +320,8 @@ intensive/participle/passive of the simple root appear as `<div n="p">— <ab>ca
 Implication: a secondary-stem segmenter keys on the inline `<ab>` label
 (`SEC_DIVP_RE` + a caus/desid/intens/partic/pass/insens label set), not on `<div n="m">`.
 
-<div align="right">
-
-<sub>**Source:** code [`SEC_DIVP_RE` + the comment](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/research/root_segment_proto.py#L28-L34)
-· measured by [`verify_root_glue.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/verify_root_glue.py) (570 split, 0 merged). — csl-orig (pwg) / RussianTranslation · 2026-06-24</sub>
-
-</div>
+> **Source:** code [`SEC_DIVP_RE` + the comment](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/research/root_segment_proto.py#L28-L34)
+> · measured by [`verify_root_glue.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/verify_root_glue.py) (570 split, 0 merged). — csl-orig (pwg) / RussianTranslation · 2026-06-24
 
 ### §16. Giant verb roots sit at non-zero homonym indexes
 
@@ -394,12 +332,8 @@ index > 0 or more than one giant homonym.
 Implication: any per-record split / processing must iterate **all** homonym records, not
 `bufs[0]`, or it silently misses the verb (or drops extra giant homonyms).
 
-<div align="right">
-
-<sub>**Source:** code [`gen_root_split()`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/_pilot_gen_merged.py#L258)
-· audited by [`audit_root_split.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/audit_root_split.py). — csl-orig (pwg) / RussianTranslation · 2026-06-24</sub>
-
-</div>
+> **Source:** code [`gen_root_split()`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/_pilot_gen_merged.py#L258)
+> · audited by [`audit_root_split.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/audit_root_split.py). — csl-orig (pwg) / RussianTranslation · 2026-06-24
 
 ### §17. PWG orders senses genetically, not historically
 
@@ -410,12 +344,8 @@ old→new in 76 % of adjacent pairs but are strictly sorted in only 26 %.
 Implication: don't auto-re-sort senses by date or frequency (it changes the lead sense for
 ~1 in 4 entries and fights the source); surface attestation era as per-sense metadata instead.
 
-<div align="right">
-
-<sub>**Source:** [`sense_order_metrics.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/research/sense_order_metrics.md)
-· [`analyze_sense_order.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/research/analyze_sense_order.py). — SanskritLexicography (A33) · 2026-06-24</sub>
-
-</div>
+> **Source:** [`sense_order_metrics.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/research/sense_order_metrics.md)
+> · [`analyze_sense_order.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/research/analyze_sense_order.py). — SanskritLexicography (A33) · 2026-06-24
 
 ### §18. Vedic-citation density separates the dictionary traditions
 
@@ -426,12 +356,8 @@ Implication: PWG/MW are etymological-genetic with a real historical apparatus; A
 Kochergina are logical-semantic / pedagogical — do not import their sense order into a PWG
 translation.
 
-<div align="right">
-
-<sub>**Source:** [`cross_dict_metrics.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/research/cross_dict_metrics.md)
-· [`analyze_cross_dict.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/research/analyze_cross_dict.py). — SanskritLexicography (A33 cross-dict) · 2026-06-24</sub>
-
-</div>
+> **Source:** [`cross_dict_metrics.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/research/cross_dict_metrics.md)
+> · [`analyze_cross_dict.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/research/analyze_cross_dict.py). — SanskritLexicography (A33 cross-dict) · 2026-06-24
 
 ### §19. SKD and VCP carry essentially zero Western markup
 
@@ -441,12 +367,8 @@ Evidence: ~0 `<ab>`/`<div>`/`<s>`/`<ls>` tags; citations appear via `iti`/quotes
 Implication: any marker-based detector scores SKD/VCP at 0 *by construction* — never read 0
 as "no content"; use the indigenous cues. (Miscalled ≥4×.)
 
-<div align="right">
-
-<sub>**Source:** data [`v02/skd/skd.txt`](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/skd/skd.txt)
-· [`v02/vcp/vcp.txt`](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/vcp/vcp.txt) (grep: no `<ab>`/`<div>`). — SKD / VCP (csl-orig) · 2026-06</sub>
-
-</div>
+> **Source:** data [`v02/skd/skd.txt`](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/skd/skd.txt)
+> · [`v02/vcp/vcp.txt`](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/vcp/vcp.txt) (grep: no `<ab>`/`<div>`). — SKD / VCP (csl-orig) · 2026-06
 
 ### §20. The ls source map recognises 72.4 percent of PWG citations
 
@@ -457,12 +379,8 @@ Evidence: 559,243 of 772,567 `<ls>` keys map to one of 45 dated primary sources
 Implication: dated-citation analyses see the most-cited primary corpus and are conservative
 about the oldest stratum, not biased toward it.
 
-<div align="right">
-
-<sub>**Source:** [`sense_order_metrics.md` § "Foundations check"](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/research/sense_order_metrics.md)
-· [`analyze_sense_order.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/research/analyze_sense_order.py). — RussianTranslation · 2026-06-24</sub>
-
-</div>
+> **Source:** [`sense_order_metrics.md` § "Foundations check"](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/research/sense_order_metrics.md)
+> · [`analyze_sense_order.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/research/analyze_sense_order.py). — RussianTranslation · 2026-06-24
 
 ### §21. PWG citation occurrences track distinct references
 
@@ -483,13 +401,9 @@ occurrence-weight coverage/impact estimates by target type. When counting `<ls>`
 no-coordinate labels (they are not references), and count from the deduplicated display model, not
 the raw DE/RU/EN stores (which multiply each citation ~4× via translation fields + store overlap).
 
-<div align="right">
-
-<sub>**Source:** [`build_citation_index.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/build_citation_index.py)
-→ [`UNCOVERED_SOURCES.md`](https://github.com/sanskrit-lexicon/PWG/blob/main/pwg_ls/pwg_ru_coverage/UNCOVERED_SOURCES.md)
-+ [`CITATION_SOURCES.md`](https://github.com/sanskrit-lexicon/PWG/blob/main/pwg_ls/pwg_ru_coverage/CITATION_SOURCES.md) — SanskritLexicography · 2026-07-02</sub>
-
-</div>
+> **Source:** [`build_citation_index.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/build_citation_index.py)
+> → [`UNCOVERED_SOURCES.md`](https://github.com/sanskrit-lexicon/PWG/blob/main/pwg_ls/pwg_ru_coverage/UNCOVERED_SOURCES.md)
+> + [`CITATION_SOURCES.md`](https://github.com/sanskrit-lexicon/PWG/blob/main/pwg_ls/pwg_ru_coverage/CITATION_SOURCES.md) — SanskritLexicography · 2026-07-02
 
 ### §22. MW has no sense-level div markup
 
@@ -501,12 +415,8 @@ Implication: a sense-segmenter for MW must split on `¦` inside the record, not 
 **not** template MW's flat structure onto subentry-rich dicts (PWG/Apte) or vice-versa — `<div>` depth
 is structural, not a sense boundary, so it over-counts senses.
 
-<div align="right">
-
-<sub>**Source:** measured `grep -c '<div n="m"' / '<L>'` on
-[`v02/mw/mw.txt`](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/mw/mw.txt). — csl-orig (mw) · 2026-06-26</sub>
-
-</div>
+> **Source:** measured `grep -c '<div n="m"' / '<L>'` on
+> [`v02/mw/mw.txt`](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/mw/mw.txt). — csl-orig (mw) · 2026-06-26
 
 ### §23. Apte is three dictionaries; keys differ stem vs nominative
 
@@ -520,12 +430,8 @@ silently misses matches (independently re-hit in csl-guides and csl-apidev).
 Implication: never treat "Apte" as one source — pick AP90 / AP / AE explicitly. For any cross-dict
 headword join, normalise stem↔nominative and join on the `key1` computational key, not `key2`/printed form.
 
-<div align="right">
-
-<sub>**Source:** csl-guides/.ai_state.md + csl-apidev/.ai_state.md (the `agni`/`agniH` resolver note); markup per
-[`v02/ap90/ap90.txt`](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/ap90/ap90.txt). — csl-guides / csl-apidev / csl-orig · 2026-06</sub>
-
-</div>
+> **Source:** csl-guides/.ai_state.md + csl-apidev/.ai_state.md (the `agni`/`agniH` resolver note); markup per
+> [`v02/ap90/ap90.txt`](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/ap90/ap90.txt). — csl-guides / csl-apidev / csl-orig · 2026-06
 
 ### §24. About 9 percent of typo corrections are collisions
 
@@ -544,11 +450,7 @@ Implication: never bulk-respell a headword-correction list — a filing must off
 *editorial* category (merge vs respell vs leave) for collision pairs; check whether the "right"
 form already exists as its own entry before proposing any respell.
 
-<div align="right">
-
-<sub>**Source:** [`VERIFICATION_2026_07.md`](https://github.com/drdhaval2785/SanskritSpellCheck/blob/master/corrections_draft/VERIFICATION_2026_07.md) — SanskritSpellCheck · 2026-07</sub>
-
-</div>
+> **Source:** [`VERIFICATION_2026_07.md`](https://github.com/drdhaval2785/SanskritSpellCheck/blob/master/corrections_draft/VERIFICATION_2026_07.md) — SanskritSpellCheck · 2026-07
 
 ### §25. A verified correction queue decays against live csl-orig
 
@@ -560,11 +462,7 @@ wrong form is gone. ~1 week of queue age ≈ 0.8 % decay on this batch.
 Implication: re-verify every candidate against the current `csl-orig` immediately before filing
 or applying; a stale row filed upstream reads as bot noise to the maintainers.
 
-<div align="right">
-
-<sub>**Source:** [`file_first_verified.tsv`](https://github.com/drdhaval2785/SanskritSpellCheck/blob/master/corrections_draft/file_first_verified.tsv) (SHS DROP row) — SanskritSpellCheck · 2026-07</sub>
-
-</div>
+> **Source:** [`file_first_verified.tsv`](https://github.com/drdhaval2785/SanskritSpellCheck/blob/master/corrections_draft/file_first_verified.tsv) (SHS DROP row) — SanskritSpellCheck · 2026-07
 
 ### §26. Citation density is register-bound, not comparable raw
 
@@ -578,11 +476,7 @@ Implication: never rank dictionaries by raw `<ls>` density — control for citat
 first, or indigenous lexica are misranked as citation-poor when they are among the richest.
 (Generalises the SKD/VCP zero-markup trap to *quantitative* comparisons.)
 
-<div align="right">
-
-<sub>**Source:** [csl-atlas `docs/articles/paper_citation_registers.md`](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/docs/articles/paper_citation_registers.md) — csl-atlas · 2026-06-13</sub>
-
-</div>
+> **Source:** [csl-atlas `docs/articles/paper_citation_registers.md`](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/docs/articles/paper_citation_registers.md) — csl-atlas · 2026-06-13
 
 ### §27. Sense granularity is a family trait, not a diachronic trend
 
@@ -596,11 +490,7 @@ Implication: any cross-dict measure normalised "per sense" (definition length, c
 density) silently encodes school bias unless family-controlled; never read sense counts as
 lexicographic "progress".
 
-<div align="right">
-
-<sub>**Source:** [csl-atlas `docs/articles/paper_sense_inheritance.md`](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/docs/articles/paper_sense_inheritance.md) — csl-atlas · 2026-06-15</sub>
-
-</div>
+> **Source:** [csl-atlas `docs/articles/paper_sense_inheritance.md`](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/docs/articles/paper_sense_inheritance.md) — csl-atlas · 2026-06-15
 
 ### §28. MW inherited the PWG apparatus skeleton, not its prose
 
@@ -617,12 +507,8 @@ Implication: "MW copied Böhtlingk" is true of the apparatus skeleton (headwords
 order, homonym divisions) and false of the content; use citation-sequence concordance — not
 shared errors or headword containment — as the forensic marker of descent.
 
-<div align="right">
-
-<sub>**Source:** [csl-atlas `scripts/forensic/f5_entry_comparison.py`](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/scripts/forensic/f5_entry_comparison.py)
-+ [`docs/articles/article_21_apparatus_not_errors.md` §3.4](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/docs/articles/article_21_apparatus_not_errors.md) — csl-atlas · 2026-06-03</sub>
-
-</div>
+> **Source:** [csl-atlas `scripts/forensic/f5_entry_comparison.py`](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/scripts/forensic/f5_entry_comparison.py)
+> + [`docs/articles/article_21_apparatus_not_errors.md` §3.4](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/docs/articles/article_21_apparatus_not_errors.md) — csl-atlas · 2026-06-03
 
 ### §29. PWG and MW share 94,753 headwords in the union index
 
@@ -634,11 +520,7 @@ both 94,753.
 Implication: consume this asset for any cross-dict join or coverage estimate (the PWG→EN
 pilot's MW translation-memory rides on it); a new pairwise-overlap script is reinvention.
 
-<div align="right">
-
-<sub>**Source:** [`HeadwordLists/union/union_headwords.tsv`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/union/union_headwords.tsv) — SanskritLexicography · 2026-06-26</sub>
-
-</div>
+> **Source:** [`HeadwordLists/union/union_headwords.tsv`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/union/union_headwords.tsv) — SanskritLexicography · 2026-06-26
 
 ### §30. Body-text headword mining is a dead end (38.6 percent precision)
 
@@ -659,13 +541,9 @@ Implication: don't redo headword mining for coverage. A real findability gain ne
 work — a corpus inflected-form→lemma index (DCS) and/or vidyut sandhi/compound splitting —
 which raises findability, not distinct-lemma count.
 
-<div align="right">
-
-<sub>**Source:** csl-atlas broad-headword review session (xhigh /code-review, 2026-06-15), context
-[PR #99](https://github.com/sanskrit-lexicon/csl-atlas/pull/99); index scale per
-[`docs/BROAD_HEADWORD_COVERAGE.md`](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/docs/BROAD_HEADWORD_COVERAGE.md) — csl-atlas · 2026-06-15</sub>
-
-</div>
+> **Source:** csl-atlas broad-headword review session (xhigh /code-review, 2026-06-15), context
+> [PR #99](https://github.com/sanskrit-lexicon/csl-atlas/pull/99); index scale per
+> [`docs/BROAD_HEADWORD_COVERAGE.md`](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/docs/BROAD_HEADWORD_COVERAGE.md) — csl-atlas · 2026-06-15
 
 ### §31. Detector precision stratifies by digitization quality
 
@@ -682,12 +560,8 @@ Implication: point detector effort at poorly-digitised sources; on mature dicts,
 flag as apparatus-until-proven-typo, and check the suppression list before flagging — the FP
 floor cannot be lowered without reading the entry body.
 
-<div align="right">
-
-<sub>**Source:** [SanskritSpellCheck `corrections_draft/README.md`](https://github.com/drdhaval2785/SanskritSpellCheck/blob/master/corrections_draft/README.md)
-+ [`nochange/do_not_file_suppress.txt`](https://github.com/drdhaval2785/SanskritSpellCheck/blob/master/nochange/do_not_file_suppress.txt) — SanskritSpellCheck · 2026-06-24</sub>
-
-</div>
+> **Source:** [SanskritSpellCheck `corrections_draft/README.md`](https://github.com/drdhaval2785/SanskritSpellCheck/blob/master/corrections_draft/README.md)
+> + [`nochange/do_not_file_suppress.txt`](https://github.com/drdhaval2785/SanskritSpellCheck/blob/master/nochange/do_not_file_suppress.txt) — SanskritSpellCheck · 2026-06-24
 
 ### §32. Correction events concentrate in sense text
 
@@ -702,12 +576,8 @@ Implication: "surface error" claims must specify the microstructure location —
 minor-edit rate masks that headword repairs are structural while sense repairs are often tiny
 diacritic fixes; markup errors are a real 17.5 % class, not noise.
 
-<div align="right">
-
-<sub>**Source:** [csl-observatory `reports/obs_t_typology.md`](https://github.com/sanskrit-lexicon/csl-observatory/blob/main/reports/obs_t_typology.md)
-(Axis A table) — csl-observatory · 2026-06-17</sub>
-
-</div>
+> **Source:** [csl-observatory `reports/obs_t_typology.md`](https://github.com/sanskrit-lexicon/csl-observatory/blob/main/reports/obs_t_typology.md)
+> (Axis A table) — csl-observatory · 2026-06-17
 
 ## Etymology & derivation
 
@@ -724,13 +594,9 @@ attribution: MW↔PWG (English √ vs German "Wurzel") 65 %, PWG↔PW 93 %.
 Implication: the Pāṇinian analysis is a stable cross-source signal usable as a consensus/QA oracle;
 Wilson's divergence is a distinct stratum, not noise.
 
-<div align="right">
-
-<sub>**Source:** [`cross_dict_agreement.csv`](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/etymology_stats/cross_dict_agreement.csv)
-+ [PAPER_DRAFT.md](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/etymology_stats/PAPER_DRAFT.md)
-· dashboard https://sanskrit-lexicon.github.io/csl-orig/ — csl-orig · 2026-06-26</sub>
-
-</div>
+> **Source:** [`cross_dict_agreement.csv`](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/etymology_stats/cross_dict_agreement.csv)
+> + [PAPER_DRAFT.md](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/etymology_stats/PAPER_DRAFT.md)
+> · dashboard https://sanskrit-lexicon.github.io/csl-orig/ — csl-orig · 2026-06-26
 
 ### §34. The E abbreviation tag is polysemous across dicts
 
@@ -742,11 +608,7 @@ etymology sources; reading the entry contexts corrected it.
 Implication: never infer content from a shared tag across dicts (generalises the SKD/VCP
 zero-markup trap); validate a marker's *sense* per dictionary before parsing it.
 
-<div align="right">
-
-<sub>**Source:** `csl-orig/v02/{cae,md}/` entry contexts — csl-orig · 2026-06-26</sub>
-
-</div>
+> **Source:** `csl-orig/v02/{cae,md}/` entry contexts — csl-orig · 2026-06-26
 
 ### §35. Root-recovery tiers err on root form, not identity
 
@@ -764,12 +626,8 @@ surface forms keep the thematic `-a` and must NOT seed CANON): 622 variants fold
 guarded so a real distinct root (`kṝ` ≠ `kṛ`) is never collapsed; oracle-join precision then rose 74→83 %,
 nearest-root stays the weakest tier (~66–75 %, genuine wrong-token grabs) and is tagged for downweighting.
 
-<div align="right">
-
-<sub>**Source:** [`nearest_root_audit.json`](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/etymology_stats/nearest_root_audit.json)
-+ [`build_root_normalization.py`](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/etymology_stats/build_root_normalization.py) — csl-orig · 2026-06-26</sub>
-
-</div>
+> **Source:** [`nearest_root_audit.json`](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/etymology_stats/nearest_root_audit.json)
+> + [`build_root_normalization.py`](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/etymology_stats/build_root_normalization.py) — csl-orig · 2026-06-26
 
 ## Encoding & normalization
 
@@ -780,11 +638,7 @@ Evidence: `ś` = `s` + U+0301 (combining acute), which collides with a pitch-acc
 NFD-decompose-then-strip-Mn destroys vowel length (`ā`→`a`) and retroflex dots (`ṣ`→`s`).
 Implication: use a length-preserving `form_key`, not a blanket NFD+strip-combining.
 
-<div align="right">
-
-<sub>**Source:** [`form_key` in sanskrit_util](https://github.com/sanskrit-lexicon/sanskrit-util/blob/main/py/sanskrit_util/__init__.py). — sanskrit-util / shared · 2026-06</sub>
-
-</div>
+> **Source:** [`form_key` in sanskrit_util](https://github.com/sanskrit-lexicon/sanskrit-util/blob/main/py/sanskrit_util/__init__.py). — sanskrit-util / shared · 2026-06
 
 ### §37. BOM state is inconsistent across exports
 
@@ -794,11 +648,7 @@ while its `key2` sibling does not.
 Implication: check `head -c 3` before transforming; preserve the file's existing BOM state on
 write; never silently add/strip one.
 
-<div align="right">
-
-<sub>**Source:** [SanskritLexicography `CLAUDE.md` § "Encoding — BOM is inconsistent"](https://github.com/gasyoun/SanskritLexicography/blob/master/CLAUDE.md). — csl-orig / SanskritLexicography · 2026-06</sub>
-
-</div>
+> **Source:** [SanskritLexicography `CLAUDE.md` § "Encoding — BOM is inconsistent"](https://github.com/gasyoun/SanskritLexicography/blob/master/CLAUDE.md). — csl-orig / SanskritLexicography · 2026-06
 
 ### §38. Injected BOMs crash the hw record parser
 
@@ -814,12 +664,8 @@ Implication: after any batch correction, verify the first 3 bytes of every touch
 error, check encoding before structure. (Complements the BOM-state finding above — this is how
 the BOM gets *introduced* and what it breaks.)
 
-<div align="right">
-
-<sub>**Source:** [csl-corrections `.ai_state.md`](https://github.com/sanskrit-lexicon/csl-corrections/blob/master/.ai_state.md)
-§Dev Notes — csl-corrections · 2026-06-27</sub>
-
-</div>
+> **Source:** [csl-corrections `.ai_state.md`](https://github.com/sanskrit-lexicon/csl-corrections/blob/master/.ai_state.md)
+> §Dev Notes — csl-corrections · 2026-06-27
 
 ### §39. devanagari_to_slp1 mis-routes retroflex la
 
@@ -828,11 +674,7 @@ Evidence: a pre-existing `sanskrit-util` master bug routes ळ via IAST→`x` in
 Implication: low-severity (affects `ocr_verify`), but don't trust ḷa round-trips until fixed
 (fix in progress on branch `feat/deva-to-slp1`).
 
-<div align="right">
-
-<sub>**Source:** [`devanagari_to_slp1` in sanskrit_util](https://github.com/sanskrit-lexicon/sanskrit-util/blob/main/py/sanskrit_util/__init__.py). — sanskrit-util · 2026-06</sub>
-
-</div>
+> **Source:** [`devanagari_to_slp1` in sanskrit_util](https://github.com/sanskrit-lexicon/sanskrit-util/blob/main/py/sanskrit_util/__init__.py). — sanskrit-util · 2026-06
 
 ### §40. Gloss-language spelling drift tracks reform type, not age
 
@@ -849,12 +691,8 @@ Implication: use drift for search-normalization maps in legislated-reform langua
 German 1901/1996 map exists — DTA-harvested, dic-validated); do NOT use it to date English or
 French dictionaries after ~1890 — the signal is regime-bounded, not a universal clock.
 
-<div align="right">
-
-<sub>**Source:** [SanskritSpellCheck `docs/ORTHO_DRIFT_FINDINGS.md`](https://github.com/drdhaval2785/SanskritSpellCheck/blob/master/docs/ORTHO_DRIFT_FINDINGS.md)
-+ `ortho_drift/*_drift_summary.tsv` (per-language tables) — SanskritSpellCheck · 2026-06-26</sub>
-
-</div>
+> **Source:** [SanskritSpellCheck `docs/ORTHO_DRIFT_FINDINGS.md`](https://github.com/drdhaval2785/SanskritSpellCheck/blob/master/docs/ORTHO_DRIFT_FINDINGS.md)
+> + `ortho_drift/*_drift_summary.tsv` (per-language tables) — SanskritSpellCheck · 2026-06-26
 
 ---
 
