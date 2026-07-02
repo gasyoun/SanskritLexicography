@@ -5,14 +5,16 @@ report how many resolve to a Cologne scan page.
 Reads the same stores the article site is built from
 (`pwg_ru_translated.jsonl` DE/RU fields + `wf_output.en.<root>.json` german/
 english), extracts each `<ls n="PREFIX">VISIBLE</ls>` citation, resolves it via
-`ls_resolver` (PWG paths), and writes:
+`ls_resolver` (PWG paths), and writes three reports + their JSON siblings to
+the PWG repo's literary-source area (pwg_ls/pwg_ru_coverage/) when PWG is a
+sibling checkout, else locally; override with --out-dir:
 
-  * RussianTranslation/CITATION_SOURCES.md  -- human-readable index:
-      abbreviation -> scan repo + example URL, occurrences, resolved %
-      + a coverage summary and the top unresolved abbreviations.
-  * RussianTranslation/release/citation_sources.json -- the same data, machine-readable.
+  * CITATION_SOURCES.md    -- abbreviation -> scan/HTML target + coverage summary
+  * UNCOVERED_SOURCES.md   -- most-cited works with no Cologne target
+  * COVERAGE_COMPARISON.md -- covered vs uncovered + coverage frontier + provenance
+  * {citation,uncovered,coverage}_*.json -- the same data, machine-readable
 
-  python src/build_citation_index.py
+  python src/build_citation_index.py [--out-dir DIR]
 """
 import glob
 import json
@@ -37,11 +39,32 @@ import ls_resolver as lsr  # noqa: E402
 
 REPO = os.path.dirname(HERE)                       # RussianTranslation/
 RU_STORE = os.path.join(HERE, 'pwg_ru_translated.jsonl')
-OUT_MD = os.path.join(REPO, 'CITATION_SOURCES.md')
-OUT_JSON = os.path.join(REPO, 'release', 'citation_sources.json')
-OUT_UNCOVERED = os.path.join(REPO, 'UNCOVERED_SOURCES.md')
-OUT_UNCOVERED_JSON = os.path.join(REPO, 'release', 'uncovered_sources.json')
-OUT_COMPARISON = os.path.join(REPO, 'COVERAGE_COMPARISON.md')
+
+# The reports LIVE in the PWG repo (pwg_ls/pwg_ru_coverage — the literary-source
+# work's home) when it is checked out as a sibling; else they fall back to this
+# RussianTranslation dir. Override with `--out-dir`.
+_PWG = os.path.abspath(os.path.join(REPO, '..', '..', 'PWG'))
+_DEFAULT_OUTDIR = (os.path.join(_PWG, 'pwg_ls', 'pwg_ru_coverage')
+                   if os.path.isdir(_PWG) else REPO)
+
+
+def set_outdir(outdir):
+    """Point every report/JSON output at `outdir`."""
+    global OUTDIR, OUT_MD, OUT_JSON, OUT_UNCOVERED, OUT_UNCOVERED_JSON
+    global OUT_COMPARISON, OUT_COMPARISON_JSON
+    OUTDIR = outdir
+    OUT_MD = os.path.join(outdir, 'CITATION_SOURCES.md')
+    OUT_JSON = os.path.join(outdir, 'citation_sources.json')
+    OUT_UNCOVERED = os.path.join(outdir, 'UNCOVERED_SOURCES.md')
+    OUT_UNCOVERED_JSON = os.path.join(outdir, 'uncovered_sources.json')
+    OUT_COMPARISON = os.path.join(outdir, 'COVERAGE_COMPARISON.md')
+    OUT_COMPARISON_JSON = os.path.join(outdir, 'coverage_comparison.json')
+
+
+set_outdir(_DEFAULT_OUTDIR)
+
+# PWG blob base for cross-links between the three reports (their published home).
+PWG_COV_URL = 'https://github.com/sanskrit-lexicon/PWG/blob/main/pwg_ls/pwg_ru_coverage'
 
 _LS = re.compile(r'<ls\b([^>]*)>(.*?)</ls>', re.S)
 _N_ATTR = re.compile(r'\bn\s*=\s*"([^"]*)"')
@@ -206,7 +229,7 @@ def emit(groups, total, resolved, counts):
     L.append('')
     L.append('> The most-cited uncovered works are ranked (by how often each is '
              'actually cited) in [`UNCOVERED_SOURCES.md`]'
-             '(https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/UNCOVERED_SOURCES.md), '
+             '(https://github.com/sanskrit-lexicon/PWG/blob/main/pwg_ls/pwg_ru_coverage/UNCOVERED_SOURCES.md), '
              'regenerated on every build.')
     L.append('')
     L.append('## Abbreviation index')
@@ -393,8 +416,7 @@ def emit_comparison(per, occ_scan, occ_html, occ_total, labels):
                         for k, v in covered[:50]],
         'top_uncovered': [{'abbr': k, 'occ': n} for k, n in uncovered[:50]],
     }
-    with open(os.path.join(REPO, 'release', 'coverage_comparison.json'),
-              'w', encoding='utf-8', newline='\n') as f:
+    with open(OUT_COMPARISON_JSON, 'w', encoding='utf-8', newline='\n') as f:
         json.dump(data, f, ensure_ascii=False, indent=1)
 
     L = []
@@ -404,9 +426,9 @@ def emit_comparison(per, occ_scan, occ_html, occ_total, labels):
     L.append('')
     L.append('A side-by-side of the two halves: citations that resolve to a Cologne '
              'source (**covered** — see [`CITATION_SOURCES.md`]'
-             '(https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/CITATION_SOURCES.md)) '
+             '(https://github.com/sanskrit-lexicon/PWG/blob/main/pwg_ls/pwg_ru_coverage/CITATION_SOURCES.md)) '
              'vs those that do not (**uncovered** — see [`UNCOVERED_SOURCES.md`]'
-             '(https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/UNCOVERED_SOURCES.md)). '
+             '(https://github.com/sanskrit-lexicon/PWG/blob/main/pwg_ls/pwg_ru_coverage/UNCOVERED_SOURCES.md)). '
              'Everything here is counted by **occurrence** (how often a work is '
              'actually cited on the displayed DE surface), not distinct references.')
     L.append('')
@@ -507,7 +529,20 @@ def emit_comparison(per, occ_scan, occ_html, occ_total, labels):
 
 
 def main():
+    import argparse
+    ap = argparse.ArgumentParser()
+    ap.add_argument('--out-dir', help='where to write the reports '
+                    '(default: sibling PWG/pwg_ls/pwg_ru_coverage, else local)')
+    args = ap.parse_args()
+    if args.out_dir:
+        set_outdir(os.path.abspath(args.out_dir))
     groups, total, resolved, counts = build()
+    # Safety guard for unattended/scheduled runs: never overwrite the published
+    # reports with empty output when the (git-ignored) input data is missing.
+    if total == 0:
+        sys.exit('ERROR: 0 citations found — input data (pwg_ru_translated.jsonl / '
+                 'wf_output.en.*.json) missing; refusing to write empty reports.')
+    os.makedirs(OUTDIR, exist_ok=True)
     emit(groups, total, resolved, counts)
     occ_scan, occ_html, per, occ_total, labels = occurrence_stats()
     emit_uncovered(per, occ_scan, occ_html, occ_total, labels)
