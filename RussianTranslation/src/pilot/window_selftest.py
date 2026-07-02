@@ -672,8 +672,29 @@ def test_export_translation_dedup():
         fail('each translation sense must be labelled by its store homonym')
 
 
+def test_en_ab_loss_translatable():
+    """audit_window_en AB-LOSS ignores translatable inline <ab> words (best.=bestimmte,
+    Bed.=Bedeutung) that a faithful translation renders into English, but still fires on a
+    genuine drop of grammatical/bibliographic sigla."""
+    import importlib
+    awe = importlib.import_module('audit_window_en')
+    # 2 <ab>best.</ab> correctly translated to "certain" -> NOT a loss (both dropped, both excused)
+    g = 'a {%eine <ab>best.</ab> Stellung%} and {%<ab>best.</ab> Stellungen%} <ab>vgl.</ab> x'
+    e = 'a "a certain stance" and "certain positions" <ab>vgl.</ab> x'
+    hard, _ = awe.audit_sense(g, e)
+    if any(h.startswith('AB-LOSS') for h in hard):
+        fail('AB-LOSS fired on translated best./best. (should be excused): %s' % hard)
+    # genuine drop of 2 grammatical sigla (intens./desid.) MUST still flag
+    g2 = 'x <ab>med.</ab> a <ab>intens.</ab> b <ab>desid.</ab> c'
+    e2 = 'x <ab>med.</ab> a b c'
+    hard2, _ = awe.audit_sense(g2, e2)
+    if not any(h.startswith('AB-LOSS') for h in hard2):
+        fail('AB-LOSS did NOT fire on a genuine 2-siglum drop (intens./desid.): %s' % hard2)
+
+
 def main():
     tests = [
+        test_en_ab_loss_translatable,
         test_workflow_payload_nested,
         test_sense_dupe_batch_override,
         test_sense_dupe_cross_level_exempt,

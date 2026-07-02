@@ -52,6 +52,34 @@ DEFAULT_MW_TM = os.path.join(SRC, 'mw_en_tm.json')
 LS = re.compile(r'<ls\b')
 SAN = re.compile(r'\{#.*?#\}', re.S)
 AB = re.compile(r'<(?:ab|lex|lang)\b')
+# Content-capturing sibling of AB: (tag, inner-text). Used to skip <ab> whose content is a
+# translatable inline word (not a siglum) from the AB-LOSS survival count.
+AB_SPAN = re.compile(r'<(ab|lex|lang)\b[^>]*>(.*?)</\1>', re.S)
+# Inline German abbreviations that stand for *translatable content words* (adjective / noun /
+# adverb embedded in a gloss), NOT bibliographic sigla (s.u., vgl., Verz.) or grammatical
+# sigla (med., aor., intens., abl.). When the translator renders these into English
+# ("best."->"certain", "Bed."->"sense") the <ab> wrapper is correctly dropped, so they must
+# not count toward AB-LOSS — otherwise a faithful translation trips a hard gate. Only <ab>
+# content is checked; <lex>/<lang> always count. Keep this list tight (content words only).
+TRANSLATABLE_AB = {
+    'best.',    # bestimmt(e)   -> "certain / definite / particular"
+    'bed.',     # Bedeutung     -> "meaning / sense"
+    'eig.',     # eigentlich    -> "properly / strictly"
+    'urspr.',   # ursprünglich  -> "originally"
+    'überh.',   # überhaupt     -> "at all / in general"
+    'übertr.',  # übertragen    -> "figuratively / transferred"
+}
+
+
+def ab_siglum_count(t):
+    """<ab>/<lex>/<lang> count for AB-LOSS, excluding translatable inline <ab> words."""
+    n = len(AB.findall(t or ''))
+    for tag, inner in AB_SPAN.findall(t or ''):
+        if tag == 'ab' and TAG.sub('', inner).strip().lower() in TRANSLATABLE_AB:
+            n -= 1
+    return n
+
+
 CYR = re.compile(r'[Ѐ-ӿ]')
 LS_SPAN = re.compile(r'<ls[^>]*>.*?</ls>', re.S)
 TAG = re.compile(r'<[^>]+>')
@@ -120,7 +148,7 @@ def audit_sense(german, english):
     ssan, osan = len(set(SAN.findall(g))), len(set(SAN.findall(e)))
     if ssan > 0 and osan < ssan * SAN_KEEP and (ssan - osan) >= 2:
         hard.append('SAN-LOSS(%d/%d)' % (osan, ssan))
-    sab, oab = len(AB.findall(g)), len(AB.findall(e))
+    sab, oab = ab_siglum_count(g), ab_siglum_count(e)
     if sab > 0 and (sab - oab) >= 2:
         hard.append('AB-LOSS(%d/%d)' % (oab, sab))
 
