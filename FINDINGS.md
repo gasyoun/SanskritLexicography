@@ -23,7 +23,7 @@ do), and a blockquoted (`> `) **Source** paragraph linking the exact statement a
 with a `— repo · date` tag — the `>` gives the Source line its left indent and muted rendering
 in plain Markdown; no HTML in this file, ever. Keep findings grounded (a number, a file, a
 probe), never a hunch. **Numbers are append-only:** a new finding takes the next free number
-(currently §41) whatever its section, so existing numbers never shift; when a finding is later
+(currently §42) whatever its section, so existing numbers never shift; when a finding is later
 refuted or superseded, strike it and say why — never reuse its number.
 
 ## Index
@@ -82,6 +82,10 @@ refuted or superseded, strike it and say why — never reuse its number.
 - [§38. Injected BOMs crash the hw record parser](#38-injected-boms-crash-the-hw-record-parser) — "init_entries Error 2" is an encoding symptom, not a structure defect.
 - [§39. devanagari_to_slp1 mis-routes retroflex la](#39-devanagari_to_slp1-mis-routes-retroflex-la) — ळ → x instead of L.
 - [§40. Gloss-language spelling drift tracks reform type, not age](#40-gloss-language-spelling-drift-tracks-reform-type-not-age) — legislated ≫ convention ≫ none; the metric saturates post-1890 for English.
+
+**External platforms & services**
+
+- [§41. The Sanskrit dictionary-platform landscape, probed live](#41-the-sanskrit-dictionary-platform-landscape-probed-live) — michaelmeyer.fr = 41 dicts w/ per-sense scan links; Heritage Inria bot-walled; DCS HTTPS broken; VedaWeb → Tekst; Cologne license is BY-**SA**, not NC.
 
 ---
 
@@ -693,6 +697,42 @@ French dictionaries after ~1890 — the signal is regime-bounded, not a universa
 
 > **Source:** [SanskritSpellCheck `docs/ORTHO_DRIFT_FINDINGS.md`](https://github.com/drdhaval2785/SanskritSpellCheck/blob/master/docs/ORTHO_DRIFT_FINDINGS.md)
 > + `ortho_drift/*_drift_summary.tsv` (per-language tables) — SanskritSpellCheck · 2026-06-26
+
+---
+
+## External platforms & services
+
+### §41. The Sanskrit dictionary-platform landscape, probed live
+
+**Twelve dictionary/DH platforms were fetched and feature-profiled on 2026-07-02; several
+widely-assumed "facts" about them are wrong, and four are in degraded/migrating states.**
+
+Evidence (every claim from a same-day fetch; full profiles + feature matrix in
+[kosha/COMPARISON.md](https://github.com/gasyoun/kosha/blob/main/COMPARISON.md)):
+**michaelmeyer.fr/sanskrit is 41 dictionaries** (1832–2000, both MW editions, PWG, PW, ŚKD,
+VCP, Stchoupak, + 7 self-digitized indices) on one page per headword with **per-sense scan
+links for 19 dicts** — not "a fast Apte site"; author = ERC-DHARMA CNRS (his own profile;
+the earlier "Univ. of Geneva" claim was fabricated). **Heritage's Inria host serves an Anubis
+anti-bot wall** to all programmatic clients (UoHyd mirror v3.77 is the reliable endpoint).
+**DCS serves with a broken HTTPS cert** (hostname mismatch; plain HTTP only), full CoNLL-U
+dump on GitHub. **VedaWeb migrated to the Tekst platform**; the original app was archived
+16-02-2026. **spokensanskrit.org 301s to learnsanskrit.cc** (old-domain TLS broken);
+**learnsanskrit.org/dictionary is a hard 404** (exited to Ambuda). **vidyut-kosha has no
+end-user UI anywhere** — developer library only. **Ambuda's dictionary tool = 8 dicts, one at
+a time.** **CDSL has a unified `/simple/` cross-dict search** (scope undocumented). And
+**csl-orig's LICENSE is CC BY-SA 4.0** — Attribution-ShareAlike, commercial use *permitted*;
+"Cologne is non-commercial" is a misconception (verified in the LICENSE file itself).
+
+Implication: cite platform capabilities only from the dated survey, not from reputation;
+integrate Heritage via the UoHyd mirror; treat kosha's differentiation as the composite
+(collapse + morphology + corpus evidence + trilingual + open API + versioned citability),
+since the read-only collapse alone is already built and closed-source; derived Cologne data
+must ship BY-SA — an NC restriction cannot be added to it.
+
+> **Source:** [kosha/COMPARISON.md](https://github.com/gasyoun/kosha/blob/main/COMPARISON.md)
+> (three parallel live-fetch passes, Fable 5 `claude-fable-5`) +
+> [csl-orig/LICENSE](https://github.com/sanskrit-lexicon/csl-orig/blob/master/LICENSE) —
+> kosha · 2026-07-02
 
 ---
 
