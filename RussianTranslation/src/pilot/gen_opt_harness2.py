@@ -19,6 +19,9 @@ Usage:  python src/pilot/gen_opt_harness2.py <root> [--keys=k1,k2] [--budget=N] 
         [--no-binary-split]                     # binary-split ON by default (MG 2026-07-02)
         [--output-budget=N|off]                 # citation-weighted batching, DEFAULT 60;
                                                 # 'off' or an explicit --budget=N = byte mode
+        [--tm[=PATH]]                           # content-addressed translation memory:
+                                                # pre-resolve cards whose source SHA is cached
+                                                # (0 tokens); OFF by default. See translation_memory.py
         (--selfheal / --binary-split still accepted as no-ops for documented runbooks)
 Writes: src/pilot/run_pilot_wf.opt2.js  (or --out=PATH — use a per-root/per-chat path to
         avoid the gen->copy race when several chats generate harnesses concurrently)
@@ -150,6 +153,11 @@ def parse_args(argv):
     keylist = None                     # ordered keys (nominal mode preserves order)
     out_path = None                    # --out=PATH overrides the default opt2.js (avoids the
     lang, mw_tm = 'ru', None           # --lang en + --mw-tm=PATH: PWG->English pilot (MG 2026-06-30)
+    tm = None                          # --tm[=PATH]: content-addressed translation-memory cache;
+                                       #  pre-resolves any card whose source SHA is already in the
+                                       #  TM (zero tokens, no manual --keys scoping). OFF by default
+                                       #  (opt-in; a stale/empty TM is simply a no-op). See
+                                       #  translation_memory.py.
     budget_explicit = output_explicit = False
     for a in argv[1:]:                 # gen->copy race when several chats generate at once)
         if a.startswith('--keys='):
@@ -164,6 +172,12 @@ def parse_args(argv):
             lang = a.split('=', 1)[1].strip().lower()
         elif a.startswith('--mw-tm='):
             mw_tm = a.split('=', 1)[1]
+        elif a == '--tm':
+            tm = '__default__'          # resolved to translation_memory.<lang>.json after the loop
+        elif a.startswith('--tm='):
+            tm = a.split('=', 1)[1]
+        elif a == '--no-tm':
+            tm = None
         elif a == '--lean':
             lean = True
         elif a == '--nws-gate':
@@ -196,7 +210,9 @@ def parse_args(argv):
         die('unknown --lang %r (ru|en)' % lang)
     if lang == 'en' and mw_tm is None:
         mw_tm = os.path.join(SRC, 'mw_en_tm.json')      # default MW translation-memory feed
-    return root, keyfilter, keylist, budget, lean, nws_gate, nominal, grammar_on, out_path, lang, mw_tm
+    if tm == '__default__':
+        tm = os.path.join(os.path.dirname(INP), 'translation_memory.%s.json' % lang)
+    return root, keyfilter, keylist, budget, lean, nws_gate, nominal, grammar_on, out_path, lang, mw_tm, tm
 
 
 def extract_nws(tr):
@@ -357,7 +373,7 @@ def mw_tm_block(root, mw_tm_path):
 
 
 def build(root, keys, rootmap, budget, lean=False, nws_gate=False,
-          nominal=False, grammar_on=True, lang='ru', mw_tm_path=None):
+          nominal=False, grammar_on=True, lang='ru', mw_tm_path=None, tm_path=None):
     field = 'english' if lang == 'en' else 'russian'   # the per-sense translation field
     nws_block = ''
     if lang == 'en':
@@ -424,6 +440,27 @@ def build(root, keys, rootmap, budget, lean=False, nws_gate=False,
         phmaps[k] = ph
         input_hashes[k] = {'raw_sha256': sha256_file(rp), 'portrait_sha256': sha256_file(pp)}
 
+    # --tm: content-addressed pre-resolution. A card whose masked-input SHA is already in the
+    # translation memory is served from cache (ZERO agent() calls) instead of re-translated —
+    # no manual --keys scoping needed. Keyed on input_raw_sha256 (recorded per store row,
+    # recomputed here), so it survives sub-card key renames and can NEVER reuse a stale
+    # translation (changed source -> different SHA -> cache miss -> re-translate). TM-hit keys
+    # are removed from every translate lane below (batches / presplit / selfheal frags).
+    tm_resolved = {}
+    if tm_path and os.path.exists(tm_path):
+        import translation_memory as _tm
+        cache = _tm.load_tm(lang, tm_path)
+        for k in keys:
+            hit = cache.get('%s:%s' % (lang, input_hashes[k]['raw_sha256']))
+            if hit:
+                tm_resolved[k] = hit['card']
+        print('  tm: %d/%d cards pre-resolved from %s (0 tokens)%s'
+              % (len(tm_resolved), len(keys), os.path.basename(tm_path),
+                 '' if tm_resolved else ' — no source-SHA matches (all cards will translate)'))
+    elif tm_path:
+        print('  tm: %s not found — no pre-resolution (run translation_memory.py build)' % tm_path)
+    tm_keys = set(tm_resolved)
+
     # --selfheal: precompute a per-card fragment fallback (deterministic sense/citation split).
     # The JS uses it only for cards the batch could not translate; each fragment is masked here
     # so the in-harness path reuses the same {Tn} restore. Only cards that actually split (>=2
@@ -435,6 +472,8 @@ def build(root, keys, rootmap, budget, lean=False, nws_gate=False,
     frags, phf = {}, {}
     if SELFHEAL:
         for k in keys:
+            if k in tm_keys:                 # cached — no heal fallback needed
+                continue
             pl = split_plan(read_text(input_paths(k)[0]))
             if len(pl) < 2:
                 print('  selfheal: %s has no fallback (card does not split — <2 fragments)' % k)
@@ -465,11 +504,12 @@ def build(root, keys, rootmap, budget, lean=False, nws_gate=False,
     # a usable fragment fallback are routed; unsplittable ones keep the old solo-batch try.
     presplit = []
     if SELFHEAL and OUTPUT_BUDGET is not None:
-        presplit = [k for k in keys if (1 + inputs[k]['ls']) > OUTPUT_BUDGET and k in frags]
+        presplit = [k for k in keys
+                    if k not in tm_keys and (1 + inputs[k]['ls']) > OUTPUT_BUDGET and k in frags]
         for k in presplit:
             print('  presplit: %s (%d <ls> exceeds output budget %d) -> direct fragment translation'
                   % (k, inputs[k]['ls'], OUTPUT_BUDGET))
-    batch_keys = [k for k in keys if k not in presplit]
+    batch_keys = [k for k in keys if k not in presplit and k not in tm_keys]
 
     # --output-budget=N (default 60): size batches by citation-weighted OUTPUT complexity
     # (1 + <ls> per card) instead of input bytes — bytes don't predict StructuredOutput
@@ -509,6 +549,8 @@ def build(root, keys, rootmap, budget, lean=False, nws_gate=False,
         'selfheal_cards': {k: len(v) for k, v in frags.items()} if SELFHEAL else {},
         'binary_split': BINARY_SPLIT, 'output_budget': OUTPUT_BUDGET,
         'presplit_keys': presplit,
+        'tm': os.path.basename(tm_path) if tm_path else None,
+        'tm_hits': sorted(tm_keys),
     }
 
     js = """// AUTO-DERIVED v2 (batched + masked, canonical output) from run_pilot_wf.js - root=%(root)s.
@@ -533,6 +575,10 @@ const FRAGS = %(frags)s
 const PHF = %(phf)s
 const BINARY_SPLIT = %(binary_split)s
 const PRESPLIT = %(presplit)s
+// --tm: cards pre-resolved from the content-addressed translation memory (source-SHA hit).
+// Emitted verbatim as canonical rows with tm:true and NO agent() call — their markup is
+// already restored (they come from the promoted store), so they bypass restore/accept.
+const TM_RESOLVED = %(tm_resolved)s
 const META = %(meta)s
 
 const restore = (t, ph) => (t || '').replace(/\\{T(\\d+)\\}/g, (m, n) => (ph[+n - 1] !== undefined ? ph[+n - 1] : m))
@@ -816,6 +862,9 @@ const grouped = await parallel(UNITS.map(u => u.run))
 // backfill any key that STILL isn't present (belt over suspenders).
 const out = []
 const seen = new Set()
+// TM lane first: pre-resolved cards cost nothing and are already accounted for, so seed
+// them before backfilling the translated units. tm:true marks provenance for the summary.
+for (const k in TM_RESOLVED) { if (!seen.has(k)) { out.push({ key: k, card: TM_RESOLVED[k], judge: null, judge_sonnet: null, escalated: false, tm: true }); seen.add(k) } }
 grouped.forEach((rows, i) => {
   if (Array.isArray(rows)) {
     for (const r of rows) if (r && r.key && !seen.has(r.key)) { out.push(r); seen.add(r.key) }
@@ -835,7 +884,7 @@ const _failures = {}
 for (const r of out) if (!r.card) _failures[r.key] = r.error || FAIL[r.key] || 'unknown'
 const summary = { root: META.root, lang: META.lang, cards: out.length, ok: _ok,
                   null: out.length - _ok, healed: out.filter(r => r.escalated).length,
-                  presplit: PRESPLIT.length,
+                  presplit: PRESPLIT.length, tm: out.filter(r => r.tm).length,
                   null_keys: out.filter(r => !r.card).map(r => r.key),
                   partial_keys: out.filter(r => r.card && r.card.partial).map(r => r.key),
                   failures: _failures }
@@ -858,6 +907,7 @@ return { meta: META, summary, results: out }
         'phmaps': json.dumps(phmaps, ensure_ascii=True), 'meta': json.dumps(meta, ensure_ascii=True),
         'frags': json.dumps(frags, ensure_ascii=True), 'phf': json.dumps(phf, ensure_ascii=True),
         'binary_split': json.dumps(BINARY_SPLIT), 'presplit': json.dumps(presplit),
+        'tm_resolved': json.dumps(tm_resolved, ensure_ascii=True),
     }
     for bad in ['readFileSync', 'fileURLToPath', 'import.meta']:
         if bad in js:
@@ -866,7 +916,7 @@ return { meta: META, summary, results: out }
 
 
 def main():
-    root, keyfilter, keylist, budget, lean, nws_gate, nominal, grammar_on, out_path, lang, mw_tm = parse_args(sys.argv[1:])
+    root, keyfilter, keylist, budget, lean, nws_gate, nominal, grammar_on, out_path, lang, mw_tm, tm = parse_args(sys.argv[1:])
     if nominal:
         # No rootmap: the headword keys ARE the cards, in the order given.
         if not keylist:
@@ -876,7 +926,7 @@ def main():
         rootmap, keys = selected_keys(root, keyfilter)
         if keylist:
             keys = [k for k in keylist if k in set(keys)]
-    js, batches = build(root, keys, rootmap, budget, lean, nws_gate, nominal, grammar_on, lang, mw_tm)
+    js, batches = build(root, keys, rootmap, budget, lean, nws_gate, nominal, grammar_on, lang, mw_tm, tm)
     out = os.path.abspath(out_path) if out_path else os.path.join(REPO, 'src', 'pilot', 'run_pilot_wf.opt2.js')
     # Write LF (not CRLF): the Workflow-tool approval rejects scripts containing
     # raw \r control chars, so a CRLF harness cannot be launched on Windows.

@@ -34,6 +34,10 @@ src/pilot/run_pilot_wf.sc_y*.js
 # `python src/pilot/build_article_site.py`; publish by copying article_site/ onto gh-pages.
 # (No longer ignored — MG asked for it public, 2026-07-01.)
 
+# Translation-memory cache — DERIVED from the local-only store (pwg_ru_translated.jsonl) by
+# translation_memory.py; regenerable, never a deliverable (like the store it comes from).
+src/pilot/translation_memory.*.json
+
 # Max workflow run output and A/B transcript artifacts (not deliverables)
 wf_output.json
 wf_output.*.json
