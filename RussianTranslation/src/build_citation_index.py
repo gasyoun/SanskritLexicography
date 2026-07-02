@@ -468,6 +468,39 @@ def emit_comparison(per, occ_scan, occ_html, occ_total, labels):
     L.append('_(Ceiling < 100%% because %s occurrences are non-referential `<ls>` '
              'labels — edition/cross-ref notes with no locus.)_' % f'{labels:,}')
     L.append('')
+    # Static provenance (historical git facts) — records when/by-whom the coverage
+    # was built, so the "when/who" sits next to the numbers.
+    L.append('## Provenance — when the coverage was built, and by whom')
+    L.append('')
+    L.append('The links express **months-old Cologne work**, mostly *surfaced* (not '
+             'created) in this session. Timeline, oldest first:')
+    L.append('')
+    L.append('| layer | when | who | what | contribution to the covered set |')
+    L.append('|---|---|---|---|---|')
+    L.append('| Page scans | prior years | Cologne Digital Sanskrit Dictionaries project | '
+             'digitised the source editions (~100 `sanskrit-lexicon-scans` repos) | '
+             'the link targets themselves |')
+    L.append('| Resolver mappings | 2026-03 → 2026-05 | `csl-app` maintainers '
+             '(Dictionary-to-Book `<ls>` program) | abbreviation→scan/HTML URL logic in '
+             '`ls_service.dart` (41 commits) + `ls_patterns.dart` (34) — 34 in Mar, 16 in '
+             'Apr, 2 in May 2026, then none | **~98.6%** of covered refs |')
+    L.append('| Chrestomathie mapping | 2026-07-02 | this session | `Chr.` / `BENF. Chr.` → '
+             '`bchrest2` (in the Python port; upstream [csl-app#49]'
+             '(https://github.com/sanskrit-lexicon/csl-app/pull/49) awaiting maintainer '
+             'review) | **+1.4%** (473 refs) |')
+    L.append('| Python port + site application | 2026-07-02 | this session | ported the '
+             'resolver to [`ls_resolver.py`]'
+             '(https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/ls_resolver.py); '
+             'citation links rendered on the site for the **first time** (0 before) | '
+             'made the whole covered set *visible* |')
+    L.append('| Measurement + docs | 2026-07-02 | this session | this comparison + '
+             '`CITATION_SOURCES.md` + `UNCOVERED_SOURCES.md` | — |')
+    L.append('')
+    L.append('In short: the coverage **logic** is the Cologne March–May 2026 effort; this '
+             'session added ~1.4% of the mappings and made the whole set live and measured '
+             'on the site. Site work by Opus 4.8 (`claude-opus-4-8`), with the Dart→Python '
+             'port done by a Sonnet 5 (`claude-sonnet-5`) sub-agent.')
+    L.append('')
     L.append('_Dr. Mārcis Gasūns_')
     with open(OUT_COMPARISON, 'w', encoding='utf-8', newline='\n') as f:
         f.write('\n'.join(L) + '\n')
