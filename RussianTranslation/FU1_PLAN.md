@@ -82,14 +82,29 @@ python src/annotate_dcs_freq.py          # re-attach dcs_freq (language-agnostic
    for MG + one second annotator, then a scorer computing **Cohen κ** and the point error rate
    with CI. Ground truth = faithful-to-German. Output a short METHODS note for the citable layer.
 
-## Failure taxonomy — DharmaMitra crosswalk (documentation only, added 02-07-2026)
+## Failure taxonomy — DharmaMitra crosswalk (added 02-07-2026, wired into the gates 02-07-2026)
 
 MG decision 02-07-2026: adopt DharmaMitra's failure-class vocabulary as shared terminology for this
 rubric, both for internal alignment and — separately — for citation-grade use. Full mapping
 (including which parts are citable vs. not) lives in
 [`TAXONOMY_DHARMAMITRA.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/TAXONOMY_DHARMAMITRA.md).
-No gate semantics change and no judging is re-run — this is vocabulary alignment on the existing
-7-class rubric from the [S7 gold-sample judgment](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/FABLE_JUDGE_S7_2026-07-02.md#failure-classes-all-severities).
+Existing FU1/S7 verdicts are untouched (no re-judging, no re-run) — the table below is now the
+**controlled vocabulary future judge runs are prompted to use** and the classes future audit gates
+mechanically detect, not just documentation:
+
+- **`markup-loss` is now a deterministic soft flag**, not judge-discovered: [`audit_window_en.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/audit_window_en.py)
+  emits `MARKUP-LOSS(n/m)` when `{%..%}`/`<div>` wrapper pairs drop from german→english with the
+  prose intact (the S7-planned gate); [`prompt_rule_audit.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/prompt_rule_audit.py)'s
+  `markup_wrapper_dropped` risk does the RU analog. Both are soft/low-severity — they never fail
+  `--strict` or block promotion, only surface in the audit report.
+- **The judge prompts now require the 7 class names verbatim in `issues`** (`RUBRIC` in
+  [`gen_fidelity_judge.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/gen_fidelity_judge.py)
+  / [`gen_fidelity_judge_en.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/gen_fidelity_judge_en.py)),
+  specifics moved to `note` — a prompt-only change (the `{key, ok, severity, issues, note}` schema
+  is unchanged), so [`fidelity_aggregate.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/fidelity_aggregate.py)'s
+  existing `bad_issue_hist` tally becomes a clean per-class breakdown on the **next** judge run
+  without any aggregator code change. Takes effect starting with the next gold-sample judge pass;
+  it does not retag the S7 verdicts already banked.
 
 | our class | DharmaMitra alias (workshop-form vocabulary, internal use only) | published equivalent (citable: MQM/GEMBA-MQM) |
 |---|---|---|
