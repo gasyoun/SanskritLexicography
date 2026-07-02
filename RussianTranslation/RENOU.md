@@ -1,6 +1,6 @@
 # Renou language-state tagging
 
-_Created: 24-06-2026 · Last updated: 01-07-2026_
+_Created: 24-06-2026 · Last updated: 02-07-2026_
 
 Every dictionary headword/sense is classified into one of **Louis Renou's five
 states of Sanskrit** (*Histoire de la langue sanskrite*, 1956 — the five chapters;
@@ -247,7 +247,11 @@ per-register empirical findings (bhāṣya as Renou's cross-disciplinary syntact
 as a second self-contained lexical world; doctrinal registers = perennial lexicon) are in
 [`RENOU_FINDINGS.md`](RENOU_FINDINGS.md). Renou's **nominal-style** thesis (the finite verb
 receding Vedic→Classical, bhāṣya more nominal than kāvya) is verified on the corpus in
-[`RENOU_NOMINAL_STYLE.md`](RENOU_NOMINAL_STYLE.md).
+[`RENOU_NOMINAL_STYLE.md`](RENOU_NOMINAL_STYLE.md). The forward test programme — seven
+hypotheses (citation bias, Zipf agreement, Vedic survival, MW–PWG lineage, compound
+inflation, register disjointness, pilot human validation) with methods, gates, and the
+visualization workplan — is in
+[RENOU_HYPOTHESES.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/RENOU_HYPOTHESES.md).
 
 ## Reproduce
 
