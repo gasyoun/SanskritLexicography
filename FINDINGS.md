@@ -28,7 +28,7 @@ do), and a blockquoted (`> `) **Source** paragraph linking the exact statement a
 with a `— repo · date` tag — the `>` gives the Source line its left indent and muted rendering
 in plain Markdown; no HTML in this file, ever. Keep findings grounded (a number, a file, a
 probe), never a hunch. **Importance label:** every finding carries a colour dot at the start of its claim line and its index entry — 🔴 3 important · 🟠 2 medium · 🟡 1 not that important — assign one when appending. **Numbers are append-only:** a new finding takes the next free number
-(currently §44) whatever its section, so existing numbers never shift; when a finding is later
+(currently §45) whatever its section, so existing numbers never shift; when a finding is later
 refuted or superseded, strike it and say why — never reuse its number.
 
 ## Index
@@ -75,6 +75,7 @@ refuted or superseded, strike it and say why — never reuse its number.
 - 🟠 [§31. Detector precision stratifies by digitization quality](#31-detector-precision-stratifies-by-digitization-quality) — mature dicts ~0.2 % real flags vs 11–15 % on poorly-digitised ones.
 - 🟡 [§32. Correction events concentrate in sense text](#32-correction-events-concentrate-in-sense-text) — 52.7 % sense / 17.5 % markup / 17.3 % headword over 52k events.
 - 🟠 [§43. SKD/VCP sense/citation fusion is a record-type effect, not a dictionary-level one](#43-skdvcp-sensecitation-fusion-is-a-record-type-effect-not-a-dictionary-level-one) — corpus-scale count inverted the one-lemma *dharma* exemplar's direction; never generalise a citation-register claim from one lemma.
+- 🟠 [§44. Raw Latin-string tallies over gloss text include etymological false positives; Bopp lacks √yabh](#44-raw-latin-string-tallies-over-gloss-text-include-etymological-false-positives-bopp-lacks-yabh) — MW72's lone *cunnus* glosses a Lithuanian cognate, not a headword; BOP has no √*yabh* entry (all *futu-* hits are *futurum*); trust A36's curated CSV, not the raw sweep.
 
 **Etymology & derivation**
 
@@ -792,6 +793,32 @@ count contradicts the exemplar's direction rather than tuned to match it.
 > (A02 revision execution) —
 > [data/lexico/r2_kosa_fusion.json](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/data/lexico/r2_kosa_fusion.json),
 > Sonnet 5 `claude-sonnet-5` · 2026-07-02
+
+### §44. Raw Latin-string tallies over gloss text include etymological false positives; Bopp lacks √yabh
+
+🟠 **Two source-checked caveats on the A36 *obscaena Latine* data that any reuse of
+[`A36_corpus_screen.csv`](https://github.com/gasyoun/SanskritLexicography/blob/master/papers/A36_corpus_screen.csv)
+must respect: (1) a raw obscene-Latin string count over dictionary gloss text picks up
+*etymological apparatus*, not only headword glosses — MW72's single obscene-core hit
+(*cunnus*) glosses the Lithuanian cognate *pís-ti* inside an etymology
+(`mw72.txt` line 215431), so the 1872 Monier-Williams screens zero headwords; (2) Bopp's
+*Glossarium* (BOP) has no √*yabh* entry at all** — `grep '<k1>yaB' bop/bop.txt` = 0, and all
+21 *futu-* matches are *futurum* "future"; the sex-act field is glossed with clinical Latin
+(*maithuna* → *coitus*; under √*gam* "adire virum, feminam, i.e. coire, concumbere").
+
+Evidence: verified against `csl-orig/v02/{mw72,bop,ccs,mw}/`, 02-07-2026, during the A36
+pre-submission pass; every curated figure in the paper's §3/§3a/§3b re-verified exactly
+against [`A36_latin_obscena.csv`](https://github.com/gasyoun/SanskritLexicography/blob/master/papers/A36_latin_obscena.csv)
+(2,104 rows) in the same session.
+
+Implication: **treat `A36_corpus_screen.csv` as raw triage tallies, never as per-dictionary
+screen verdicts** — the curated eleven-dictionary CSV is the hand-vetted truth; and never
+cite "Bopp glosses √*yabh*" (he cannot — the entry does not exist). Any future gloss-register
+sweep should separate etymology/apparatus spans from gloss spans before counting.
+
+> **Source:** [papers/A36_review_fable5.md](https://github.com/gasyoun/SanskritLexicography/blob/master/papers/A36_review_fable5.md)
+> (Major 3–4) + [PR #74](https://github.com/gasyoun/SanskritLexicography/pull/74),
+> Fable 5 `claude-fable-5` · 2026-07-02
 
 ---
 
