@@ -20,6 +20,7 @@ Writes: src/pilot/run_pilot_wf.opt2.js  (or --out=PATH — use a per-root/per-ch
         avoid the gen->copy race when several chats generate harnesses concurrently)
 """
 import datetime
+import hashlib
 import json
 import os
 import re
@@ -27,6 +28,8 @@ import sys
 
 sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
+
+HERE_PILOT = os.path.dirname(os.path.abspath(__file__))     # .../src/pilot (for the TM cache dir)
 
 from window_common import INP, REPO, SRC, input_paths, load_json, read_text, rootmap_path, sha256_file, write_text
 import pwg_mask
@@ -36,6 +39,11 @@ from safe_filename import safe_name
 from whitney_grammar import grammar_for
 from nominal_grammar import nominal_grammar_for
 
+TM_ON = False      # --tm: reuse a fragment's cached translation (content-addressed by source
+                   #  text) instead of re-calling the model; capture new fragments back into the
+                   #  TM (incl. from a card that ultimately nulls, so a retry reuses its good
+                   #  fragments). Default OFF -> existing runs (incl. the autonomous RU account)
+                   #  unchanged. Cache = src/pilot/tm/tm.<lang>.frag.jsonl (gitignored).
 SELFHEAL = False   # --selfheal: on a card the batch can't translate, auto-split it in-harness
                    #  (deterministic split precomputed here) and translate the fragments, then
                    #  stitch back — no manual requeue. Default OFF so existing runs are unchanged.
@@ -153,6 +161,8 @@ def parse_args(argv):
             globals()['SELFHEAL'] = True     # gated: default OFF -> existing runs unchanged
         elif a.startswith('--selfheal-budget='):
             globals()['SELFHEAL_GROUP_BUDGET'] = int(a.split('=', 1)[1])
+        elif a == '--tm':
+            globals()['TM_ON'] = True        # gated: default OFF -> existing runs unchanged
     if lang not in ('ru', 'en'):
         die('unknown --lang %r (ru|en)' % lang)
     if lang == 'en' and mw_tm is None:
@@ -393,7 +403,19 @@ def build(root, keys, rootmap, budget, lean=False, nws_gate=False,
     # SELFHEAL_GROUP_BUDGET-sized batches, so the JS heal issues one agent() call per GROUP
     # instead of per fragment (a 13-fragment card was costing 13 calls / ~2.2M tok; grouping
     # amortizes the ~30k fixed system-prompt overhead across several fragments per call).
-    frags, phf = {}, {}
+    # TM generation key = hash of the ACTUAL prompt text the model sees, so a prompt/rubric
+    # change starts a fresh generation (reuse only if nothing changed). Emitted into meta so
+    # the harvest keys the fragment TM identically. Computed after all tr modifications above.
+    tm_prompt_sha = hashlib.sha256(tr.encode('utf-8')).hexdigest()[:16] if TM_ON else ''
+
+    frags, phf, presolved = {}, {}, {}
+    # --tm: reuse a fragment's cached translation. `presolved` is keyed by fragment POSITION
+    # ("k#gi#i") so both this presolve and the post-run harvest (tm_harvest.py) re-derive the
+    # same source from the same deterministic split — no source text leaks into the harness.
+    tm = None
+    if SELFHEAL and TM_ON:
+        from translation_memory import TM as _TM
+        tm = _TM(lang, tm_prompt_sha, path=os.path.join(HERE_PILOT, 'tm', 'tm.%s.frag.jsonl' % lang))
     if SELFHEAL:
         for k in keys:
             pl = split_plan(read_text(input_paths(k)[0]))
@@ -405,13 +427,20 @@ def build(root, keys, rootmap, budget, lean=False, nws_gate=False,
                 if pwg_mask.restore(fsk, fph) != t:
                     fl = []
                     break                        # give up the fallback if any fragment is lossy
-                fl.append({'skeleton': fsk, 'ls': t.count('<ls'), 'sk': t.count('{#'), 'ph': fph})
+                fl.append({'skeleton': fsk, 'ls': t.count('<ls'), 'sk': t.count('{#'),
+                           'ph': fph, 'src': t})
             if not fl:
                 continue
             groups = _group_by_budget(fl, lambda it: 1 + it['ls'], SELFHEAL_GROUP_BUDGET)
             frags[k] = [[{'skeleton': it['skeleton'], 'ls': it['ls'], 'sk': it['sk']} for it in g]
                         for g in groups]
             phf[k] = [[it['ph'] for it in g] for g in groups]
+            if tm is not None:
+                for gi, g in enumerate(groups):
+                    for i, it in enumerate(g):
+                        cached = tm.get(it['src'])     # restored senses for this exact source, or None
+                        if cached is not None:
+                            presolved['%s#%d#%d' % (k, gi, i)] = cached
 
     batches, cur, sz = [], [], 0
     for k in keys:
@@ -447,7 +476,12 @@ def build(root, keys, rootmap, budget, lean=False, nws_gate=False,
         'input_hashes': input_hashes,
         'selfheal': SELFHEAL, 'selfheal_group_budget': SELFHEAL_GROUP_BUDGET if SELFHEAL else None,
         'selfheal_cards': {k: len(v) for k, v in frags.items()} if SELFHEAL else {},
+        'tm': TM_ON, 'tm_prompt_sha': tm_prompt_sha if TM_ON else None,
+        'tm_presolved': len(presolved) if TM_ON else 0,
     }
+    if TM_ON:
+        print('--tm: %d fragment(s) pre-resolved from cache (skip the model)' % len(presolved),
+              file=sys.stderr)
 
     js = """// AUTO-DERIVED v2 (batched + masked, canonical output) from run_pilot_wf.js - root=%(root)s.
 // Several masked cards per agent call; {Tn} restored to source markup in-JS so the
@@ -470,6 +504,13 @@ const PH = %(phmaps)s
 const FRAGS = %(frags)s
 const PHF = %(phf)s
 const META = %(meta)s
+// --tm reuse: PRESOLVED[k#gi#i] = cached RESTORED senses for a fragment whose source was
+// already translated (served without a model call). HARVEST collects newly-translated
+// fragments (keyed the same way) so a post-run harvest writes them to the TM — including
+// from a card that ultimately nulls, so a retry reuses its good fragments. Both empty
+// unless the harness was generated with --tm.
+const PRESOLVED = %(presolved)s
+const HARVEST = {}
 
 const restore = (t, ph) => (t || '').replace(/\\{T(\\d+)\\}/g, (m, n) => (ph[+n - 1] !== undefined ? ph[+n - 1] : m))
 const countOf = (card, re) => { let n = 0; for (const rec of (card.records || [])) for (const s of (rec.senses || [])) n += ((s.german || '').match(re) || []).length; return n }
@@ -516,36 +557,50 @@ function fragGermanOk(card, frag, ph) {
   }
   return ls === frag.ls && sk === frag.sk
 }
+const fragSensesOf = (card, ph) => {   // restore a fragment card's senses in place, return them
+  const fs = []
+  for (const rec of (card.records || [])) for (const s of (rec.senses || [])) {
+    if (s.german !== undefined) s.german = restore(s.german, ph)
+    if (s.%(field)s !== undefined) s.%(field)s = restore(s.%(field)s, ph)
+    fs.push(s)
+  }
+  return fs
+}
 async function selfHeal(k) {
   const groups = FRAGS[k]; if (!groups || !groups.length) return null
   const senses = []
   for (let gi = 0; gi < groups.length; gi++) {
     const grp = groups[gi]
     const gph = (PHF[k] || [])[gi] || []
-    const resolved = {}
-    let pending = grp.map((_, i) => i)
-    // Retry only the fragments in this group still unresolved — one flaky fragment must not
-    // re-bill the rest of the group (mirrors translateBatch's shrinking-pending pattern; also
-    // fixes the brU/man live-test miss where 1 of 13/11 fragments failed under all-or-nothing).
+    const out = {}   // fragment index -> RESTORED senses (from --tm cache or freshly translated)
+    // --tm: a fragment whose source is already in the TM is served from PRESOLVED (no model
+    // call); the rest go to the model. `out` unifies both for the stitch.
+    let pending = grp.map((_, i) => i).filter(i => {
+      const pk = k + '#' + gi + '#' + i
+      if (PRESOLVED[pk]) { out[i] = PRESOLVED[pk]; return false }
+      return true
+    })
+    // Retry only the fragments still unresolved — one flaky fragment must not re-bill the rest
+    // of the group. Each resolved fragment is restored + harvested AT RESOLVE TIME (into HARVEST),
+    // so even if the card later nulls its good fragments are captured for a --tm retry to reuse.
     for (let att = 0; att < 4 && pending.length; att++) {
       const blocks = pending.map(i => '\\n\\n=== CARD ' + k + '_f' + i + ' (fragment ' + (i + 1) + '/' + grp.length + ' of group ' + (gi + 1) + '/' + groups.length + ') ===\\n--- masked German (translatable only; {Tn}=masked span) ---\\n' + grp[i].skeleton).join('')
       const prompt = PREAMBLE + GRAMMAR + CONV_TR + blocks
       let res = null; try { res = await agent(prompt, { label: 'heal:' + k + '#g' + (gi + 1) + '[' + pending.length + ']' + (att ? '(r' + att + ')' : ''), phase: 'Translate', schema: CARDS_SCHEMA, model: '%(model)s', tools: [] }) } catch (e) { res = null }   // StructuredOutput cap throws -> treat as a failed attempt, retry; never crash the heal
       if (res && Array.isArray(res.cards)) {
-        pending.forEach((fi, idx) => { const c = res.cards[idx]; if (c && fragGermanOk(c, grp[fi], (gph[fi] || []))) resolved[fi] = c })
+        pending.forEach((fi, idx) => {
+          const c = res.cards[idx]
+          if (c && fragGermanOk(c, grp[fi], (gph[fi] || []))) {
+            const fs = fragSensesOf(c, gph[fi] || [])
+            out[fi] = fs
+            HARVEST[k + '#' + gi + '#' + fi] = fs
+          }
+        })
       }
-      pending = pending.filter(fi => !resolved[fi])
+      pending = pending.filter(fi => !out[fi])
     }
-    if (pending.length) return null   // a fragment never resolved -> abandon the heal, never a lossy partial
-    for (let i = 0; i < grp.length; i++) {
-      const card = resolved[i]
-      const ph = gph[i] || []
-      for (const rec of (card.records || [])) for (const s of (rec.senses || [])) {
-        if (s.german !== undefined) s.german = restore(s.german, ph)
-        if (s.%(field)s !== undefined) s.%(field)s = restore(s.%(field)s, ph)
-        senses.push(s)
-      }
-    }
+    if (pending.length) return null   // a fragment never resolved -> abandon (harvested frags kept)
+    for (let i = 0; i < grp.length; i++) for (const s of (out[i] || [])) senses.push(s)
   }
   const stitched = { key1: k, records: [{ senses }] }
   if (countOf(stitched, /<ls\\b/g) !== INPUTS[k].ls || countOf(stitched, /\\{#/g) !== INPUTS[k].sk) return null
@@ -582,8 +637,11 @@ const out = grouped.flat()
 const _ok = out.filter(r => r.card).length
 const summary = { root: META.root, lang: META.lang, cards: out.length, ok: _ok,
                   null: out.length - _ok, healed: out.filter(r => r.escalated).length,
-                  null_keys: out.filter(r => !r.card).map(r => r.key) }
-return { meta: META, summary, results: out }
+                  null_keys: out.filter(r => !r.card).map(r => r.key),
+                  tm_harvested: Object.keys(HARVEST).length, tm_presolved: (META.tm_presolved || 0) }
+// HARVEST (--tm only, else empty) carries freshly-translated fragments keyed "k#gi#i" so a
+// post-run harvest writes them to the fragment TM (tm_harvest.py); empty on non-tm runs.
+return { meta: META, summary, results: out, harvest: HARVEST }
 """ % {
         'root': root, 'field': field, 'tr': json.dumps(tr, ensure_ascii=True),
         # Language-aware meta + model pin. EN path pins Sonnet 5 explicitly
@@ -601,6 +659,7 @@ return { meta: META, summary, results: out }
         'batches': json.dumps(batches), 'inputs': json.dumps(inputs, ensure_ascii=True),
         'phmaps': json.dumps(phmaps, ensure_ascii=True), 'meta': json.dumps(meta, ensure_ascii=True),
         'frags': json.dumps(frags, ensure_ascii=True), 'phf': json.dumps(phf, ensure_ascii=True),
+        'presolved': json.dumps(presolved, ensure_ascii=True),
     }
     for bad in ['readFileSync', 'fileURLToPath', 'import.meta']:
         if bad in js:

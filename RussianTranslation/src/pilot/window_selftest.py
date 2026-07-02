@@ -692,8 +692,33 @@ def test_en_ab_loss_translatable():
         fail('AB-LOSS did NOT fire on a genuine 2-siglum drop (intens./desid.): %s' % hard2)
 
 
+def test_translation_memory():
+    """translation_memory.TM: content-addressed put/get, prompt+lang isolation, fragment
+    values. Locks the reuse cache the harness's --tm path depends on."""
+    import importlib
+    tm_mod = importlib.import_module('translation_memory')
+    with tempfile.TemporaryDirectory() as d:
+        p = os.path.join(d, 'tm.en.jsonl')
+        a = tm_mod.TM('en', 'Pv1', p)
+        if a.get('Wasser') is not None:
+            fail('empty TM returned a hit')
+        if a.put('Wasser', 'water') is not True or a.put('Wasser', 'water') is not False:
+            fail('TM put not idempotent')
+        a.save()
+        if tm_mod.TM('en', 'Pv1', p).get('Wasser') != 'water':
+            fail('TM did not persist/reload')
+        if tm_mod.TM('en', 'Pv2', p).get('Wasser') is not None:
+            fail('TM matched across a changed prompt_sha (should invalidate)')
+        if tm_mod.TM('ru', 'Pv1', p).get('Wasser') is not None:
+            fail('TM matched across languages (should be scoped)')
+        a.put('frag', [{'german': 'g', 'english': 'e'}])       # fragment value = list of senses
+        if a.get('frag') != [{'german': 'g', 'english': 'e'}]:
+            fail('TM did not round-trip a fragment (list) value')
+
+
 def main():
     tests = [
+        test_translation_memory,
         test_en_ab_loss_translatable,
         test_workflow_payload_nested,
         test_sense_dupe_batch_override,
