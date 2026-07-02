@@ -818,8 +818,66 @@ def test_whitney_homonym_safety():
         fail('an unknown root must return empty')
 
 
+def test_translation_memory_addressing():
+    """TM sidecar: content-addressing rules — only sub-cards with one agreed source SHA and a
+    complete translation are cached; SHA-disagreement / missing-translation / no-SHA are
+    skipped (never guessed), and reconstruction rebuilds the wf-card sense shape."""
+    import translation_memory as tm
+    tm.selftest()   # raises AssertionError on any rule violation
+
+
+def test_tm_pre_resolves_cards():
+    """--tm plumbing end-to-end: a card whose source SHA is in the TM is pre-resolved (emitted
+    in TM_RESOLVED, excluded from every translate lane), and the total-accounting invariant
+    (tm ∪ batched ∪ presplit == selected, disjoint) holds. Uses a real root's on-disk inputs."""
+    import gen_opt_harness2 as gh
+    from window_common import rootmap_path, input_paths, sha256_file
+    root = 'gam'
+    rmpath, _ = rootmap_path(root)
+    if not rmpath:
+        return  # inputs not present in this checkout — nothing to assert
+    rootmap, keys = gh.selected_keys(root, None)
+    keys = [k for k in keys if os.path.exists(input_paths(k)[0])][:6]
+    if len(keys) < 3:
+        return
+    cached = keys[:2]
+    fd, tmfile = tempfile.mkstemp(suffix='.json'); os.close(fd)
+    try:
+        entries = {}
+        for k in cached:
+            sha = sha256_file(input_paths(k)[0])
+            entries['ru:%s' % sha] = {'card': {'key1': k, 'iast': None,
+                'records': [{'h': None, 'senses': [{'tag': '1', 'german': 'g', 'russian': 'р',
+                    'equivalence_type': 'equivalent', 'source_type': 'attested',
+                    'stratum': '', 'differentia': ''}]}]}, 'src_key': k}
+        with open(tmfile, 'w', encoding='utf-8') as f:
+            json.dump({'schema': 'pwg.translation_memory.v1', 'lang': 'ru',
+                       'entries': entries}, f, ensure_ascii=False)
+        js, batches = gh.build(root, keys, rootmap, 12000, tm_path=tmfile)
+        import re as _re
+        meta = json.loads(_re.search(r'const META = (\{.*?\})\n', js, _re.S).group(1))
+        tm_hits = set(meta['tm_hits'])
+        if tm_hits != set(cached):
+            fail('TM should pre-resolve exactly the cached keys, got %s' % sorted(tm_hits))
+        batched = {k for b in meta['batches'] for k in b}
+        if tm_hits & batched:
+            fail('a TM-resolved card must not also be in a translate batch')
+        if tm_hits & set(meta['presplit_keys']):
+            fail('a TM-resolved card must not also be in the presplit lane')
+        union = tm_hits | batched | set(meta['presplit_keys'])
+        if union != set(keys):
+            fail('accounting: tm ∪ batched ∪ presplit must equal selected keys')
+    finally:
+        try:
+            os.remove(tmfile)
+        except OSError:
+            pass
+
+
 def main():
     tests = [
+        test_translation_memory_addressing,
+        test_tm_pre_resolves_cards,
         test_workflow_payload_nested,
         test_sense_dupe_batch_override,
         test_sense_dupe_cross_level_exempt,
