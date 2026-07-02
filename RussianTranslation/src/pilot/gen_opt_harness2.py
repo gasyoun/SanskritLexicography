@@ -553,16 +553,31 @@ async function healGroup(k, idxs, grp, label) {
 // precomputed in FRAGS) into fragments, GROUPED into budget-sized batches (fragment-grouping
 // tier), then each group is translated in ONE agent() call (several fragments per call, same
 // multi-card-per-prompt pattern as translateBatch) and the fragments' senses are stitched into
-// one card. Returns the stitched card ONLY if every fragment came back and the whole-card
-// <ls>/{#..#} fidelity holds — never a lossy partial.
+// one card. Groups that never resolve (even solo, after healGroup's own bisection) are SKIPPED,
+// not fatal to the whole card — a giant flat headword with no rootmap (e.g. large nominal
+// stems like kAla/ka/SrI) can need 40+ groups, where requiring every one to succeed drives
+// joint success probability toward zero even at a high per-group success rate. A partial
+// result (missing_groups > 0) is still returned so downstream sense-coverage gates
+// (audit_coverage.py / ru_coverage.py) can measure and flag exactly what's missing — the same
+// philosophy the pipeline already uses for partial per-root RU coverage, just applied within
+// one oversized card. Only returns null if NOTHING resolved at all.
 async function selfHeal(k) {
   const groups = FRAGS[k]; if (!groups || !groups.length) return null
   const senses = []
+  let missingGroups = 0
   for (let gi = 0; gi < groups.length; gi++) {
     const grp = groups[gi]
     const gph = (PHF[k] || [])[gi] || []
-    const resolved = await healGroup(k, grp.map((_, i) => i), grp, 'heal:' + k + '#g' + (gi + 1))
-    if (!resolved) return null   // a fragment never resolved even solo -> abandon the heal, never a lossy partial
+    // A hard agent() failure inside healGroup (thrown, not returned — see translateBatch's
+    // comment) must be caught HERE, per group: uncaught, it unwinds out of this whole loop and
+    // discards every earlier group's already-accumulated senses along with it (observed live —
+    // 45 agent calls ran, several groups plausibly succeeded, yet the card still came back with
+    // ZERO senses because one later group's hard failure wiped the local `senses` array before
+    // selfHeal could return anything).
+    let resolved = null
+    try { resolved = await healGroup(k, grp.map((_, i) => i), grp, 'heal:' + k + '#g' + (gi + 1)) }
+    catch (e) { resolved = null }
+    if (!resolved) { missingGroups++; continue }
     for (let i = 0; i < grp.length; i++) {
       const card = resolved[i]
       const ph = gph[i] || []
@@ -573,8 +588,17 @@ async function selfHeal(k) {
       }
     }
   }
+  if (!senses.length) return null   // nothing at all resolved
   const stitched = { key1: k, records: [{ senses }] }
-  if (countOf(stitched, /<ls\\b/g) !== INPUTS[k].ls || countOf(stitched, /\\{#/g) !== INPUTS[k].sk) return null
+  if (!missingGroups) {
+    // fidelity check only meaningful on a COMPLETE heal — a partial result legitimately has
+    // fewer citations than the source
+    if (countOf(stitched, /<ls\\b/g) !== INPUTS[k].ls || countOf(stitched, /\\{#/g) !== INPUTS[k].sk) return null
+  } else {
+    stitched.partial = true
+    stitched.missing_groups = missingGroups
+    stitched.total_groups = groups.length
+  }
   return stitched
 }
 
@@ -613,21 +637,27 @@ async function resolveGroup(pending, label) {
 }
 async function translateBatch(batch, bi) {
   // A hard agent() failure (e.g. StructuredOutput retry cap exceeded, not just a malformed
-  // response our own retry/heal loops already catch) throws instead of returning — left
-  // unguarded, that rejects this whole batch's promise; parallel() then swaps the entire
-  // batch's slot for `null`, and the summary's `out.filter(r => r.card)` crashes on it
-  // (observed live: one flaky fragment call took down an otherwise-healthy 14-fragment run).
-  // Treat it exactly like an unresolved card — requeue-able, not fatal.
+  // response our own retry/heal loops already catch) throws instead of returning. Guard
+  // resolveGroup AND selfHeal INDEPENDENTLY — a caller that wraps both in one try/catch
+  // (as an earlier version of this fix did) swallows a whole-batch failure before --selfheal
+  // ever runs, which defeats the fallback for exactly the cards that need it most (observed
+  // live: a huge single-card nominal batch hard-failed the main attempt and the heal path,
+  // with its precomputed fragment groups, never even got a chance to run). Both paths degrade
+  // to "unresolved" on a hard failure — requeue-able, not fatal, and selfHeal still gets tried.
+  let resolved = {}, pending = batch.slice()
   try {
-    const { resolved, pending } = await resolveGroup(batch, 'b' + bi)
-    // self-healing tier: split-translate-stitch the cards the batch gave up on (no-op unless
-    // --selfheal populated FRAGS). Runs only for the few still-failing cards.
-    const healed = {}
-    for (const k of pending) { const c = await selfHeal(k); if (c) { resolved[k] = c; healed[k] = 1 } }
-    return batch.map(k => ({ key: k, card: resolved[k] || null, judge: null, judge_sonnet: null, escalated: !!healed[k] }))
-  } catch (e) {
-    return batch.map(k => ({ key: k, card: null, judge: null, judge_sonnet: null, escalated: false, error: String(e && e.message || e) }))
+    const r = await resolveGroup(batch, 'b' + bi)
+    resolved = r.resolved; pending = r.pending
+  } catch (e) { /* fall through to --selfheal below with the full batch still pending */ }
+  // self-healing tier: split-translate-stitch the cards the batch gave up on (no-op unless
+  // --selfheal populated FRAGS). Runs only for the few still-failing cards.
+  const healed = {}
+  for (const k of pending) {
+    let c = null
+    try { c = await selfHeal(k) } catch (e) { c = null }
+    if (c) { resolved[k] = c; healed[k] = 1 }
   }
+  return batch.map(k => ({ key: k, card: resolved[k] || null, judge: null, judge_sonnet: null, escalated: !!healed[k] }))
 }
 const grouped = await parallel(BATCHES.map((b, i) => () => translateBatch(b, i)))
 const out = grouped.flat()
