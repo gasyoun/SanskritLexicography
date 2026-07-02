@@ -87,3 +87,6 @@ glossary/*.tsv
 glossary/md/
 glossary/surface/
 glossary/index.html
+
+# Translation-memory cache (regenerable from stores via tm_build.py)
+src/pilot/tm/
