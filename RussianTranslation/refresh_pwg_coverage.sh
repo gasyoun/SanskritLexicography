@@ -26,8 +26,10 @@ python "$SL/RussianTranslation/src/build_citation_index.py" \
     --out-dir "$WT/pwg_ls/pwg_ru_coverage"
 
 cd "$WT"
-if git diff --quiet -- pwg_ls/pwg_ru_coverage; then
-    echo "coverage unchanged — nothing to publish"
+# -I 'Last regenerated' ignores the date-only stamp so a scheduled run does not
+# open a PR every day just because the "Last regenerated" line changed.
+if git diff --quiet -I 'Last regenerated' -- pwg_ls/pwg_ru_coverage; then
+    echo "coverage unchanged (ignoring date stamp) — nothing to publish"
     cd "$SL"; git -C "$PWG" worktree remove --force "$WT"
     exit 0
 fi
