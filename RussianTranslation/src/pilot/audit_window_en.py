@@ -31,7 +31,9 @@ Gates (per non-null card -> record -> sense, comparing `german` vs `english`):
                (soft cross-check against Monier-Williams, the gold MG chose)
 
 Report-only by default (exit 0). `--strict` exits non-zero if any HARD gate
-(LS/SAN/AB/MISSING-EN/DUP) fires; the soft semantic flags never fail the gate.
+(LS/SAN/AB/MISSING-EN/DUP) fires, if any card came back null (missing EN), or if the
+sense-dupe subgate crashed (a crash is NOT a clean pass); the soft semantic flags never
+fail the gate. Failure reasons are printed and written to `--report`.
 
   python src/pilot/audit_window_en.py wf_output.en.pat.json
   python src/pilot/audit_window_en.py wf_output.en.*.json --strict
@@ -247,7 +249,8 @@ def main():
     ap.add_argument('wf_output', nargs='+',
                     help='one or more wf_output.en.<root>.json files (globs allowed)')
     ap.add_argument('--strict', action='store_true',
-                    help='exit non-zero if any HARD gate (LS/SAN/AB/MISSING-EN/DUP) fires')
+                    help='exit non-zero on any HARD gate (LS/SAN/AB/MISSING-EN/DUP), '
+                         'any null card, or a crashed sense-dupe subgate')
     ap.add_argument('--mw-tm', default=DEFAULT_MW_TM,
                     help='MW translation-memory JSON for the soft cross-check (default: src/mw_en_tm.json)')
     ap.add_argument('--no-mw', action='store_true', help='skip the MW divergence cross-check')
@@ -273,6 +276,8 @@ def main():
     flag_counts = {}
     per_file = []
     hard_keys = set()
+    null_keys = []            # keys that came back with no card (missing EN translation)
+    crashed_files = []        # files where the sense-dupe subgate could not run -> NOT clean
     for path in paths:
         if not os.path.exists(path):
             print('(skip: %s not found)' % path, file=sys.stderr)
@@ -285,6 +290,7 @@ def main():
             row = audit_card(res, tm, do_mw)
             if row['null']:
                 totals['null'] += 1
+                null_keys.append(row.get('key') or '?')
                 continue
             totals['cards'] += 1
             for loc, fl in row['flags']:
@@ -299,7 +305,11 @@ def main():
         # language), so the existing RU tool runs unchanged on the EN wf_output. Called
         # in-process (see run_sense_dupes) to avoid a subprocess spawn per file.
         sd = run_sense_dupes(sense_dupes_mod, path)
-        if sd['returncode']:
+        if sd['returncode'] is None:
+            # A crash / unavailable subgate is NOT a clean pass — record it so --strict fails
+            # instead of a green light on an un-run gate (FL2: "crash != clean").
+            crashed_files.append(os.path.basename(path))
+        elif sd['returncode']:
             flag_counts['SENSE-DUPE'] = flag_counts.get('SENSE-DUPE', 0) + 1
 
         per_file.append({'file': os.path.basename(path), 'flags': file_flags, 'sense_dupe': sd})
@@ -321,15 +331,36 @@ def main():
         print('  no flags')
     hard_total = sum(v for k, v in flag_counts.items() if is_hard(k))
     print('hard flags   : %d  (cards: %d)' % (hard_total, len(hard_keys)))
+    if null_keys:
+        print('null cards   : %d (missing EN — %s%s)' % (
+            len(null_keys), ', '.join(null_keys[:8]), ', ...' if len(null_keys) > 8 else ''))
+    if crashed_files:
+        print('crashed gates: sense-dupe could not run on %s' % ', '.join(crashed_files))
+
+    # --strict must fail on a HARD gate, a null card (missing translation), OR a crashed
+    # subgate — each is a reason the window is not verified clean. Report the reasons.
+    strict_reasons = []
+    if hard_total:
+        strict_reasons.append('%d hard flag(s)' % hard_total)
+    if null_keys:
+        strict_reasons.append('%d null card(s)' % len(null_keys))
+    if crashed_files:
+        strict_reasons.append('%d crashed sense-dupe gate(s)' % len(crashed_files))
 
     if args.report:
+        os.makedirs(os.path.dirname(os.path.abspath(args.report)), exist_ok=True)
         rep = {'totals': totals, 'flag_counts': flag_counts,
-               'hard_keys': sorted(hard_keys), 'files': per_file}
+               'hard_keys': sorted(hard_keys), 'null_keys': null_keys,
+               'crashed_files': crashed_files, 'strict_reasons': strict_reasons,
+               'files': per_file}
         with open(args.report, 'w', encoding='utf-8') as f:
             json.dump(rep, f, ensure_ascii=False, indent=1)
         print('report json  : %s' % args.report)
 
-    sys.exit(1 if (args.strict and hard_total) else 0)
+    if args.strict and strict_reasons:
+        print('STRICT FAIL   : %s' % '; '.join(strict_reasons))
+        sys.exit(1)
+    sys.exit(0)
 
 
 if __name__ == '__main__':

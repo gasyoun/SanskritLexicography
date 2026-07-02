@@ -85,10 +85,16 @@ def main():
     if "--no-audit" in flags:
         return
     # The RU gate (audit_window.py) is .merged.md/RU-specific; the EN track has its own
-    # report-only sibling that audits the wf_output.en.*.json per-sense english fields.
+    # sibling that audits the wf_output.en.*.json per-sense english fields.
     if tag == "en":
+        # Strict-by-default in the save path (FL2): a null/hard/crashed gate must fail the
+        # save rather than slide through as report-only. A machine-readable report is always
+        # written. Pass --lenient to save an EN window without gating.
         audit = os.path.join(HERE, "src", "pilot", "audit_window_en.py")
-        cmd = [sys.executable, audit, out_path]
+        report_path = os.path.join(HERE, "src", "pilot", "output", f"audit_en.{root}.report.json")
+        cmd = [sys.executable, audit, out_path, "--report", report_path]
+        if "--lenient" not in flags:
+            cmd.append("--strict")
     else:
         audit = os.path.join(HERE, "src", "pilot", "audit_window.py")
         cmd = [sys.executable, audit, out_path, "--root", root]

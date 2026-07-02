@@ -730,6 +730,36 @@ def test_export_translation_dedup():
         fail('each translation sense must be labelled by its store homonym')
 
 
+def test_en_gate_strict_has_teeth():
+    """FL2: the EN gate's --strict must FAIL on a null card (missing EN) and write a report;
+    report-only (no --strict) must still exit 0. A null card used to slide through clean."""
+    fixture = {'meta': {'root': 'zz'}, 'results': [
+        {'key': 'zz~~h0_00_pwg00', 'card': {'iast': 'zz', 'records': [
+            {'h': '1', 'senses': [{'tag': '1', 'german': '{%Wasser%}', 'english': 'water'}]}]}},
+        {'key': 'zz~~h0_01_pwg01', 'card': None},
+    ]}
+    with tempfile.NamedTemporaryFile('w', encoding='utf-8', suffix='.json', delete=False) as f:
+        wf_path = f.name
+        json.dump(fixture, f, ensure_ascii=False)
+    report_path = wf_path + '.report.json'
+    en_audit = os.path.join(HERE, 'audit_window_en.py')
+    try:
+        # report-only: exit 0 even with a null card
+        run([sys.executable, en_audit, wf_path, '--no-mw'], expect=0)
+        # strict: null card must fail, and the report must record it
+        run([sys.executable, en_audit, wf_path, '--no-mw', '--strict', '--report', report_path],
+            expect=1)
+        rep = json.load(open(report_path, encoding='utf-8'))
+        if 'zz~~h0_01_pwg01' not in (rep.get('null_keys') or []):
+            fail('EN gate report did not record the null key')
+        if not rep.get('strict_reasons'):
+            fail('EN gate report did not record a strict failure reason')
+    finally:
+        os.remove(wf_path)
+        if os.path.exists(report_path):
+            os.remove(report_path)
+
+
 def main():
     tests = [
         test_workflow_payload_nested,
@@ -749,6 +779,7 @@ def main():
         test_report_only_risks_never_requeue,
         test_attested_text_signal_redesign,
         test_nws_fp_suppressed,
+        test_en_gate_strict_has_teeth,
         test_stale_refusal_preserves_requeue,
         test_release_manifest_hash_validation,
     ]
