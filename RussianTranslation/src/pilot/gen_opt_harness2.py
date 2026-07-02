@@ -530,7 +530,7 @@ async function selfHeal(k) {
     for (let att = 0; att < 4 && pending.length; att++) {
       const blocks = pending.map(i => '\\n\\n=== CARD ' + k + '_f' + i + ' (fragment ' + (i + 1) + '/' + grp.length + ' of group ' + (gi + 1) + '/' + groups.length + ') ===\\n--- masked German (translatable only; {Tn}=masked span) ---\\n' + grp[i].skeleton).join('')
       const prompt = PREAMBLE + GRAMMAR + CONV_TR + blocks
-      const res = await agent(prompt, { label: 'heal:' + k + '#g' + (gi + 1) + '[' + pending.length + ']' + (att ? '(r' + att + ')' : ''), phase: 'Translate', schema: CARDS_SCHEMA, model: '%(model)s', tools: [] })
+      let res = null; try { res = await agent(prompt, { label: 'heal:' + k + '#g' + (gi + 1) + '[' + pending.length + ']' + (att ? '(r' + att + ')' : ''), phase: 'Translate', schema: CARDS_SCHEMA, model: '%(model)s', tools: [] }) } catch (e) { res = null }   // StructuredOutput cap throws -> treat as a failed attempt, retry; never crash the heal
       if (res && Array.isArray(res.cards)) {
         pending.forEach((fi, idx) => { const c = res.cards[idx]; if (c && fragGermanOk(c, grp[fi], (gph[fi] || []))) resolved[fi] = c })
       }
@@ -563,7 +563,7 @@ async function translateBatch(batch, bi) {
     // (full mode: NWS_RULE is '' and the NWS rule already lives inside CONV_TR).
     const nws = (NWS_RULE && pending.some(k => INPUTS[k].nws)) ? ('\\n\\n' + NWS_RULE + '\\n') : ''
     const prompt = PREAMBLE + GRAMMAR + CONV_TR + nws + pending.map(cardBlock).join('')
-    const res = await agent(prompt, { label: 'b' + bi + '[' + pending.length + ']' + (attempt ? '(retry)' : ''), phase: 'Translate', schema: CARDS_SCHEMA, model: '%(model)s', tools: [] })
+    let res = null; try { res = await agent(prompt, { label: 'b' + bi + '[' + pending.length + ']' + (attempt ? '(retry)' : ''), phase: 'Translate', schema: CARDS_SCHEMA, model: '%(model)s', tools: [] }) } catch (e) { res = null }   // StructuredOutput cap throws on a card even after retries -> null this attempt so selfHeal engages and the batch returns clean null cards, never crashing the whole workflow
     if (res && Array.isArray(res.cards)) {
       pending.forEach((k, i) => { const c = accept(res.cards[i], k); if (c) resolved[k] = c })
     }
