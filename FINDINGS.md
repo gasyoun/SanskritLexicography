@@ -23,7 +23,7 @@ do), and a blockquoted (`> `) **Source** paragraph linking the exact statement a
 with a `— repo · date` tag — the `>` gives the Source line its left indent and muted rendering
 in plain Markdown; no HTML in this file, ever. Keep findings grounded (a number, a file, a
 probe), never a hunch. **Numbers are append-only:** a new finding takes the next free number
-(currently §43) whatever its section, so existing numbers never shift; when a finding is later
+(currently §44) whatever its section, so existing numbers never shift; when a finding is later
 refuted or superseded, strike it and say why — never reuse its number.
 
 ## Index
@@ -69,6 +69,7 @@ refuted or superseded, strike it and say why — never reuse its number.
 - [§30. Body-text headword mining is a dead end (38.6 percent precision)](#30-body-text-headword-mining-is-a-dead-end-386-percent-precision) — the 376k broad index is near-ceiling; measured negative result.
 - [§31. Detector precision stratifies by digitization quality](#31-detector-precision-stratifies-by-digitization-quality) — mature dicts ~0.2 % real flags vs 11–15 % on poorly-digitised ones.
 - [§32. Correction events concentrate in sense text](#32-correction-events-concentrate-in-sense-text) — 52.7 % sense / 17.5 % markup / 17.3 % headword over 52k events.
+- [§43. SKD/VCP sense/citation fusion is a record-type effect, not a dictionary-level one](#43-skdvcp-sensecitation-fusion-is-a-record-type-effect-not-a-dictionary-level-one) — corpus-scale count inverted the one-lemma *dharma* exemplar's direction; never generalise a citation-register claim from one lemma.
 
 **Etymology & derivation**
 
@@ -757,6 +758,35 @@ must ship BY-SA — an NC restriction cannot be added to it.
 > (three parallel live-fetch passes, Fable 5 `claude-fable-5`) +
 > [csl-orig/LICENSE](https://github.com/sanskrit-lexicon/csl-orig/blob/master/LICENSE) —
 > kosha · 2026-07-02
+
+### §43. SKD/VCP sense/citation fusion is a record-type effect, not a dictionary-level one
+
+A corpus-scale classifier over every SKD and VCP *iti*-unit
+([`build-r2-kosa-fusion.mjs`](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/scripts/build-r2-kosa-fusion.mjs))
+was built to promote a single hand-picked exemplar — *dharma* in Śabdakalpadruma (SKD)
+fuses its synonym-run into its own authority citation, *ity Amaraḥ*; *dharma* in
+Vācaspatya (VCP) keeps them structurally separate — to a full-corpus count. The
+exemplar's *direction* did **not** survive the scale-up: SKD splits close to evenly
+between fused and separable authority-marked units (53.3%/46.7%), while VCP skews
+*toward* fusion (77.6%), the opposite of what the single lemma suggested. The reason
+is registral, not a classifier bug: VCP's *dharma* entry is not a short synonym list
+at all but an extended Mīmāṃsā argument that threads its citation sigla (`BA0`,
+`sU0`, …) through paragraphs of discursive prose, so a citation's preceding unit is
+rarely short there — while SKD mixes short encyclopaedic entries (which do fuse, like
+*dharma*) with plenty of its own short citation-only units (46.7% separable).
+
+Implication: **never trust a one-lemma exemplar to characterise a whole dictionary's
+citation register** in this corpus — SKD and VCP both contain both patterns, in
+different proportions driven by entry length/genre (short nominal gloss vs. discursive
+commentary), not by a fixed per-dictionary convention. Any future "dictionary X marks
+citations this way" claim in this project should be corpus-counted before it is
+generalised, exactly as this one was, and reported honestly even when the corpus
+count contradicts the exemplar's direction rather than tuned to match it.
+
+> **Source:** [csl-atlas PR #184](https://github.com/sanskrit-lexicon/csl-atlas/pull/184)
+> (A02 revision execution) —
+> [data/lexico/r2_kosa_fusion.json](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/data/lexico/r2_kosa_fusion.json),
+> Sonnet 5 `claude-sonnet-5` · 2026-07-02
 
 ---
 
