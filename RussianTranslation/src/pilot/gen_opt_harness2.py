@@ -368,8 +368,11 @@ def mw_tm_block(root, mw_tm_path):
     if not tm:
         return ''
     return ('=== MW REFERENCE (English translation memory — Monier-Williams\' own glosses for '
-            'this root; candidate vocabulary, ADJUDICATE against the German + corpus, follow '
-            'PWG\'s sense order, do not copy blindly) ===\n%s\n\n' % tm)
+            'this root; TERMINOLOGY CROSS-CHECK ONLY: candidate vocabulary to confirm the WORDING '
+            'of a sense the German already attests. ADJUDICATE against the German + corpus, follow '
+            'PWG\'s sense order, do not copy blindly. NEVER copy an MW phrase, parenthetical, or '
+            'sense into the English unless the German licenses it — if MW has detail the German '
+            'lacks (e.g. a domain note "(as heavenly bodies)"), OMIT it) ===\n%s\n\n' % tm)
 
 
 def build(root, keys, rootmap, budget, lean=False, nws_gate=False,
