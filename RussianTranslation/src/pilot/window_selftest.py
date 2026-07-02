@@ -933,10 +933,85 @@ def test_tm_pre_resolves_cards():
             pass
 
 
+def test_frag_tm_reuse():
+    """Fragment-level --tm: a card that plan()-splits into >=2 fragments, with ONE fragment
+    in the fragment sidecar, emits a FRAG_TM group-shape mirroring FRAGS where exactly the
+    cached fragment slot is filled (served at runtime with NO agent call) and the rest are
+    null. The card itself stays in a translate lane (reuse is inside selfHeal, not card
+    removal), so the whole-card accounting invariant is untouched."""
+    import re as _re
+    import gen_opt_harness2 as gh
+    import translation_memory as tm
+    from autosplit_requeue import plan as split_plan
+    from window_common import rootmap_path, input_paths, read_text
+    root = 'gam'
+    rmpath, _ = rootmap_path(root)
+    if not rmpath:
+        return  # inputs not present in this checkout — nothing to assert
+    rootmap, keys = gh.selected_keys(root, None)
+    keys = [k for k in keys if os.path.exists(input_paths(k)[0])]
+    # pick the first card that actually splits into >=2 deterministic fragments
+    target, plan0 = None, None
+    for k in keys:
+        pl = split_plan(read_text(input_paths(k)[0]))
+        if len(pl) >= 2:
+            target, plan0 = k, pl
+            break
+    if not target:
+        return
+    d = tempfile.mkdtemp()
+    try:
+        # card-level TM: empty (so `target` is NOT a whole-card hit); fragment sidecar caches
+        # exactly plan0[0]. The sidecar MUST sit next to the card TM under the exact basename.
+        tmfile = os.path.join(d, 'translation_memory.ru.json')
+        with open(tmfile, 'w', encoding='utf-8') as f:
+            json.dump({'schema': 'pwg.translation_memory.v1', 'lang': 'ru', 'entries': {}}, f)
+        fsha0 = tm.frag_address('ru', plan0[0][2])
+        senses0 = [{'tag': '1', 'german': plan0[0][2][:20], 'russian': 'кэш',
+                    'equivalence_type': 'equivalent', 'source_type': 'attested',
+                    'stratum': '', 'differentia': ''}]
+        with open(os.path.join(d, 'translation_memory.frag.ru.jsonl'), 'w', encoding='utf-8') as f:
+            f.write(json.dumps({'schema': 'pwg.translation_memory.frag.v1', 'lang': 'ru',
+                                'fsha': fsha0, 'src_key': target, 'senses': senses0},
+                               ensure_ascii=False) + '\n')
+        js, _batches = gh.build(root, [target], rootmap, 12000, tm_path=tmfile)
+
+        def const(name):
+            return json.loads(_re.search(r'^const %s = (.*)$' % name, js, _re.M).group(1))
+        meta = const('META')
+        frags, frag_tm = const('FRAGS'), const('FRAG_TM')
+        if target not in frag_tm:
+            fail('the card with a cached fragment must appear in FRAG_TM')
+        if target not in meta.get('frag_tm_cards', []):
+            fail('meta.frag_tm_cards must list the reusing card')
+        if meta.get('frag_tm_fragments') != 1:
+            fail('exactly one fragment should be cached, got %r' % meta.get('frag_tm_fragments'))
+        # shape mirrors FRAGS exactly
+        gv, fv = frags[target], frag_tm[target]
+        if [len(g) for g in gv] != [len(g) for g in fv]:
+            fail('FRAG_TM group shape must mirror FRAGS')
+        filled = [(gi, fi) for gi, g in enumerate(fv) for fi, slot in enumerate(g) if slot]
+        if filled != [(0, 0)]:
+            fail('only the first fragment (the cached one) must be filled, got %s' % filled)
+        # the filled slot carries the cached senses; its FRAGS sibling carries the matching fsha
+        if fv[0][0][0]['russian'] != 'кэш':
+            fail('cached fragment slot must carry the sidecar senses')
+        if gv[0][0].get('fsha') != fsha0:
+            fail('FRAGS fragment must carry the content address used for the cache lookup')
+        # whole-card accounting: reuse happens INSIDE selfHeal, so the card is still owed by a
+        # translate lane (batch or presplit), never silently dropped.
+        batched = {k for b in meta['batches'] for k in b}
+        if target not in (batched | set(meta['presplit_keys'])):
+            fail('a fragment-reusing card must still be owed by a translate lane')
+    finally:
+        shutil.rmtree(d, ignore_errors=True)
+
+
 def main():
     tests = [
         test_translation_memory_addressing,
         test_tm_pre_resolves_cards,
+        test_frag_tm_reuse,
         test_workflow_payload_nested,
         test_sense_dupe_batch_override,
         test_sense_dupe_cross_level_exempt,
