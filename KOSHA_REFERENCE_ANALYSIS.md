@@ -2,6 +2,15 @@
 
 _Created: 02-07-2026 · Last updated: 02-07-2026_
 
+> **⚠️ Triage banner (02-07-2026).** Source-criticism caveats: "Michaël Meyer
+> (scholar, University of Geneva)" is unsourced; "Measured latency ~30–80ms
+> (curl test, 2026-07-02)" has no recorded test artifact; the
+> sanskritdictionary.com architecture section is labeled *inferred* but the
+> feature matrix then restates those inferences as fact, and its author
+> attribution is speculation. The "nightly rebuild" target here contradicts the
+> (invalid) "monthly" lock elsewhere — cadence is an open decision. See
+> [KOSHA_FOLDER_SETUP.md](https://github.com/gasyoun/SanskritLexicography/blob/master/KOSHA_FOLDER_SETUP.md).
+
 This document summarizes the architectural and UX patterns from two mature Sanskrit dictionary platforms, extracted for reuse in kosha modernization.
 
 ---

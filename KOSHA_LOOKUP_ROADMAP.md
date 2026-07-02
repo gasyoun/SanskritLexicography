@@ -2,6 +2,16 @@
 
 _Created: 02-07-2026 · Last updated: 02-07-2026_
 
+> **⚠️ Triage banner (02-07-2026).** See
+> [KOSHA_FOLDER_SETUP.md](https://github.com/gasyoun/SanskritLexicography/blob/master/KOSHA_FOLDER_SETUP.md)
+> for the audit and locked meta-decisions. This doc's **16-week / 50–63
+> person-day plan was never reconciled** with the 11-week plan in
+> KOSHA_IMPLEMENTATION_PLAN (different phase content, different totals) — the
+> reuse-first mandate (M3) supersedes both. "Confirmed via curl latency" claims
+> here have no recorded test artifact — treat all latency figures as estimates.
+> The five companion docs promised at the end (DATA_SCHEMA, API_SPEC, etc.)
+> were never generated.
+
 ## Strategic Goal
 
 Enhance samskrtam.ru/kosha lookup speed and feature depth by analyzing two reference implementations (**michaelmeyer.fr/sanskrit** and **sanskritdictionary.com**) and integrating proven patterns from the Cologne Sanskrit Lexicon ecosystem while preserving the Samudra Manthanam architecture.

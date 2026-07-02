@@ -9,6 +9,36 @@ then **cut a new version every time the changelog is updated** (promote
 
 ## [Unreleased]
 
+## [0.0.34] - 2026-07-02
+
+### Changed — kosha planning corpus triaged to truth (audit + 4 locked meta-decisions)
+- **Audit**: a same-day fact-check of the 12 kosha docs against the filesystem found the
+  scaffold's "✅ Ready" pipeline scripts nonexistent, plus fabricated data claims
+  (invented `<pc>` semantics / "MW vol. 5, p. 32" on a single-volume dictionary, invented
+  `cologne.archive.org` + Sanskrit-Heritage endpoints, IAST mislabeled SLP1, 5 conflicting
+  timelines, ~6× understated budget, an "archived" decisions doc with all six blanks empty).
+- [KOSHA_FOLDER_SETUP.md](https://github.com/gasyoun/SanskritLexicography/blob/master/KOSHA_FOLDER_SETUP.md)
+  rewritten as the honest status doc; records meta-decisions **M1–M4** (02-07-2026): docs-to-truth;
+  application code in a **dedicated repo** (this repo's charter forbids source code); **reuse-first**
+  (csl-apidev C-SALT *Kosh* API, csl-websanlexicon, `ls_resolver.py`, sanskrit-util, morphology
+  glossary, existing 323,426-row union headword index); kosha gets its **own** GitHub Pages
+  (this repo's `gh-pages` stays with the PWG article site).
+- [KOSHA_DECISIONS_NEEDED.md](https://github.com/gasyoun/SanskritLexicography/blob/master/KOSHA_DECISIONS_NEEDED.md)
+  blanks filled with the real decisions; cadence + etymology scope marked OPEN.
+- Triage banners + inline corrections across the other six strategy docs (real `<pc>` formats
+  per dict, real endpoints, current headword counts, VedaWeb/Lexonomy URLs fixed,
+  union-headwords "to generate" → "already exists").
+
+### Added
+- [KOSHA_DEPLOYMENT.md](https://github.com/gasyoun/SanskritLexicography/blob/master/KOSHA_DEPLOYMENT.md) —
+  salvage of the deleted `kosha/DEPLOYMENT.md` + API contract from `kosha/README.md`, with four
+  config defects fixed (systemd `Type=notify`→`exec`, nginx nested locations missing `proxy_pass`,
+  wrong `WorkingDirectory`, force-push "fix" removed).
+
+### Removed
+- `kosha/` application scaffold (empty directories + stub `main.py` + duplicated docs) — deleted
+  until code is real; recoverable from git history.
+
 ## [0.0.33] - 2026-06-29
 
 ### Added — grammar-layer FAIR package + VedaWeb accent-axis probe (follow-up to 0.0.32)

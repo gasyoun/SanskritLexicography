@@ -2,6 +2,19 @@
 
 _Created: 02-07-2026 · Last updated: 02-07-2026_
 
+> **⚠️ Triage banner (02-07-2026).** Defects on record: this doc "locks"
+> decisions and then asks six open questions about them (Q1–Q6, never
+> answered — see
+> [KOSHA_DECISIONS_NEEDED.md](https://github.com/gasyoun/SanskritLexicography/blob/master/KOSHA_DECISIONS_NEEDED.md)
+> for the answers now recorded); its cadence lock ("real-time if no perf
+> penalty") contradicts the other docs; its timeline (MVP 4 wks / full 10 wks,
+> phases shifted one week early) is off-by-one vs every sibling doc; the ✅
+> glyphs on phase tasks mark unbuilt work; and the five companion docs promised
+> at the end were never generated. Superseded on architecture by the
+> meta-decisions in
+> [KOSHA_FOLDER_SETUP.md](https://github.com/gasyoun/SanskritLexicography/blob/master/KOSHA_FOLDER_SETUP.md).
+> The translator-workflow analysis itself (the core of this doc) remains valid.
+
 ## Your Decisions (Locked)
 
 | Decision | Your Choice | Implication |
