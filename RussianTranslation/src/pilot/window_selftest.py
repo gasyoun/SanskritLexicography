@@ -760,6 +760,47 @@ def test_en_gate_strict_has_teeth():
             os.remove(report_path)
 
 
+def test_ru_coverage_denominator_not_silently_exempt():
+    """FL3: a corrupt EN denominator must FAIL the coverage gate (not be silently skipped),
+    and a RU root with no denominator must be surfaced as UNVERIFIABLE (the gam 6/127 blind
+    spot), never exempted."""
+    import io
+    import contextlib
+    import ru_coverage
+    with tempfile.TemporaryDirectory() as tmp:
+        with open(os.path.join(tmp, 'wf_output.en.aa.json'), 'w', encoding='utf-8') as f:
+            f.write(json.dumps({'meta': {'selected_keys': ['aa~~h0_00_pwg00']}}))
+        with open(os.path.join(tmp, 'wf_output.en.bb.json'), 'w', encoding='utf-8') as f:
+            f.write('{ broken json')
+        store = os.path.join(tmp, 'store.jsonl')
+        with open(store, 'w', encoding='utf-8') as f:
+            f.write(json.dumps({'key1': 'aa', 'subcard': 'aa~~h0_00_pwg00'}) + '\n')
+            f.write(json.dumps({'key1': 'cc', 'subcard': 'cc~~h0_00_pwg00'}) + '\n')
+        old_repo, old_store, old_argv = ru_coverage.REPO, ru_coverage.RU_STORE, sys.argv
+        ru_coverage.REPO, ru_coverage.RU_STORE = tmp, store
+        try:
+            intended, corrupt = ru_coverage.intended_by_root()
+            if not any(r == 'bb' for r, _ in corrupt):
+                fail('corrupt EN denominator not detected')
+            if 'aa' not in intended:
+                fail('valid EN denominator dropped')
+            sys.argv = ['ru_coverage']
+            buf = io.StringIO()
+            rc = 0
+            try:
+                with contextlib.redirect_stdout(buf):
+                    ru_coverage.main()
+            except SystemExit as e:
+                rc = e.code if isinstance(e.code, int) else 1
+            out = buf.getvalue()
+            if rc != 1:
+                fail('ru_coverage did not FAIL on a corrupt EN denominator (silent exemption)')
+            if 'UNVERIFIABLE' not in out:
+                fail('a RU root with no EN denominator was not surfaced as UNVERIFIABLE')
+        finally:
+            ru_coverage.REPO, ru_coverage.RU_STORE, sys.argv = old_repo, old_store, old_argv
+
+
 def main():
     tests = [
         test_workflow_payload_nested,
@@ -780,6 +821,7 @@ def main():
         test_attested_text_signal_redesign,
         test_nws_fp_suppressed,
         test_en_gate_strict_has_teeth,
+        test_ru_coverage_denominator_not_silently_exempt,
         test_stale_refusal_preserves_requeue,
         test_release_manifest_hash_validation,
     ]

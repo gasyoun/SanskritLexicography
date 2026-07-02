@@ -102,6 +102,18 @@ def main():
         print(f"({os.path.basename(audit)} not found — saved only)")
         return
     p = subprocess.run(cmd, text=True, encoding="utf-8")
+
+    # RU path: also run the anti-silent-partial coverage gate for this root (FL3). Advisory
+    # (--warn-only) because it reads the promoted store (pwg_ru_translated.jsonl), which this
+    # save has not updated yet — so it reflects the root's CURRENT store completeness and
+    # surfaces a known-partial or unverifiable root (the gam 6/127 blind spot) without failing
+    # the save. A corrupt/missing EN denominator is reported loudly, never silently exempted.
+    if tag != "en":
+        cov = os.path.join(HERE, "src", "pilot", "ru_coverage.py")
+        if os.path.exists(cov):
+            print("\n=== RU coverage (advisory, current store) ===")
+            subprocess.run([sys.executable, cov, "--root", root, "--warn-only"],
+                           text=True, encoding="utf-8")
     sys.exit(p.returncode)
 
 
