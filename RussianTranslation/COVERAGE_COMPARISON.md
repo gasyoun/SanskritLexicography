@@ -58,4 +58,18 @@ The uncovered tail is long (446 works) but front-loaded. If the most-cited uncov
 
 _(Ceiling < 100% because 1,883 occurrences are non-referential `<ls>` labels — edition/cross-ref notes with no locus.)_
 
+## Provenance — when the coverage was built, and by whom
+
+The links express **months-old Cologne work**, mostly *surfaced* (not created) in this session. Timeline, oldest first:
+
+| layer | when | who | what | contribution to the covered set |
+|---|---|---|---|---|
+| Page scans | prior years | Cologne Digital Sanskrit Dictionaries project | digitised the source editions (~100 `sanskrit-lexicon-scans` repos) | the link targets themselves |
+| Resolver mappings | 2026-03 → 2026-05 | `csl-app` maintainers (Dictionary-to-Book `<ls>` program) | abbreviation→scan/HTML URL logic in `ls_service.dart` (41 commits) + `ls_patterns.dart` (34) — 34 in Mar, 16 in Apr, 2 in May 2026, then none | **~98.6%** of covered refs |
+| Chrestomathie mapping | 2026-07-02 | this session | `Chr.` / `BENF. Chr.` → `bchrest2` (in the Python port; upstream [csl-app#49](https://github.com/sanskrit-lexicon/csl-app/pull/49) awaiting maintainer review) | **+1.4%** (473 refs) |
+| Python port + site application | 2026-07-02 | this session | ported the resolver to [`ls_resolver.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/ls_resolver.py); citation links rendered on the site for the **first time** (0 before) | made the whole covered set *visible* |
+| Measurement + docs | 2026-07-02 | this session | this comparison + `CITATION_SOURCES.md` + `UNCOVERED_SOURCES.md` | — |
+
+In short: the coverage **logic** is the Cologne March–May 2026 effort; this session added ~1.4% of the mappings and made the whole set live and measured on the site. Site work by Opus 4.8 (`claude-opus-4-8`), with the Dart→Python port done by a Sonnet 5 (`claude-sonnet-5`) sub-agent.
+
 _Dr. Mārcis Gasūns_
