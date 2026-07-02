@@ -36,7 +36,10 @@ src/pilot/run_pilot_wf.sc_y*.js
 
 # Translation-memory cache — DERIVED from the local-only store (pwg_ru_translated.jsonl) by
 # translation_memory.py; regenerable, never a deliverable (like the store it comes from).
+# The card cache is *.json; the fragment sidecar (harvested from wf_output frag_prov) is
+# translation_memory.frag.<lang>.jsonl — both regenerable, neither a deliverable.
 src/pilot/translation_memory.*.json
+src/pilot/translation_memory.frag.*.jsonl
 
 # Max workflow run output and A/B transcript artifacts (not deliverables)
 wf_output.json
