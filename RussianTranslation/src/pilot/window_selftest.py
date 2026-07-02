@@ -801,6 +801,23 @@ def test_ru_coverage_denominator_not_silently_exempt():
             ru_coverage.REPO, ru_coverage.RU_STORE, sys.argv = old_repo, old_store, old_argv
 
 
+def test_whitney_homonym_safety():
+    """FL1: requesting a Whitney homonym a root lacks must return EMPTY, never fall back to
+    ALL homonyms — attaching a different homonym's grammar is a silent wrong-root error."""
+    from whitney_grammar import grammar_for
+    all_vas = grammar_for('vas')
+    if len(all_vas) < 2:
+        return  # whitney_grammar.json unbuilt in this env — nothing to assert
+    first = all_vas[0]['homonym']
+    exact = grammar_for('vas', first)
+    if len(exact) != 1 or exact[0]['homonym'] != first:
+        fail('an exact homonym request must return only that homonym')
+    if grammar_for('vas', '999') != []:
+        fail('a nonexistent homonym must return empty, not fall back to all homonyms')
+    if grammar_for('zzqqx_no_such_root', '1') != []:
+        fail('an unknown root must return empty')
+
+
 def main():
     tests = [
         test_workflow_payload_nested,
@@ -822,6 +839,7 @@ def main():
         test_nws_fp_suppressed,
         test_en_gate_strict_has_teeth,
         test_ru_coverage_denominator_not_silently_exempt,
+        test_whitney_homonym_safety,
         test_stale_refusal_preserves_requeue,
         test_release_manifest_hash_validation,
     ]
