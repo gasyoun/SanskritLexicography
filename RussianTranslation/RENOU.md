@@ -124,11 +124,11 @@ registers a flat I–V tag cannot express — all twenty of them, e.g. `épigrap
 (Ch. II, p. 94) or `bhāṣya` = commentary language (Ch. IV, p. 133, with its own grammar),
 but equally the drama, the narrative, the Purāṇa, the grammarians' norm: each is a register,
 not a period, and fits none of the five states as such. The verified book structure is in
-[`../../VisualDCS/docs/Renou_1956_structure.md`](../../VisualDCS/docs/Renou_1956_structure.md);
+[`VisualDCS/docs/Renou_1956_structure.md`](https://github.com/gasyoun/VisualDCS/blob/main/docs/Renou_1956_structure.md);
 the full design (orthogonal, multi-label, ~20-register lattice, combined detectors) is
-in [`RENOU_SUBSECTIONS_PLAN.md`](RENOU_SUBSECTIONS_PLAN.md). The **full catalog of all 20
+in [`RENOU_SUBSECTIONS_PLAN.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/RENOU_SUBSECTIONS_PLAN.md). The **full catalog of all 20
 registers** (Renou subsection + page, coverage, detector route) is in
-[`RENOU_REGISTERS.md`](RENOU_REGISTERS.md).
+[`RENOU_REGISTERS.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/RENOU_REGISTERS.md).
 
 **Built — two routes (additive; the state axis is unchanged).** Every entry carries an
 orthogonal **`renou_register`** + `renou_register_provenance`:
@@ -155,7 +155,7 @@ reads an inscription marker in the `<ls>` text (PWG `Inschr.`, MW/Apte `Inscr.`)
 (no source). Registers do **not** affect the state fields — the axis is complete.
 
 **Attestation-level register (corpus provenance, done).** The two routes above are
-**headword-level** (one register set per dictionary entry). [`renou_corpus_map.py`](src/renou_corpus_map.py)
+**headword-level** (one register set per dictionary entry). [`renou_corpus_map.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/renou_corpus_map.py)
 adds a third, **attestation-level** route: it resolves each `corpus_lexicon.jsonl` pairing's
 `genre` onto the same 20-register lattice (reusing `renou_register._genre_register`, plus a
 work-slug override for RV-vs-AV Saṃhitā and Buddhist kāvya, plus a supplement for corpus-only
@@ -165,7 +165,7 @@ per-query register profile; `renou_corpus_map.py` alone prints corpus-wide regis
 (epic 61.0 %, rgveda 14.4 %, atharva 5.6 %, kavya 3.9 %, smrti 3.6 %, upanisad 3.5 %, karika
 2.6 %, katha 2.0 %, tantra 1.2 %, bhasya 1.2 %, bauddha 1.1 %, over all 1,091,528 aligned
 pairs). This is the register axis grounded in actual parallel-corpus usage rather than a
-dictionary's `<ls>` sigla — full write-up in [`CORPUS_PROVENANCE.md`](CORPUS_PROVENANCE.md#renou-register-layer-attestation-level).
+dictionary's `<ls>` sigla — full write-up in [`CORPUS_PROVENANCE.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/CORPUS_PROVENANCE.md#renou-register-layer-attestation-level).
 
 ## Use cases
 
@@ -189,7 +189,7 @@ flat headword list can't. Join any `{code}.renou.jsonl` to the Russian cards by 
 - **Build a register glossary** — `renou_glossary.py REGISTER` filters `renou_register`
   to one code for a **kāvya** poetic lexicon, a **bauddha** Buddhist glossary, a **jaina**
   Jaina glossary, or the **bhāṣya** scholastic/meta-language vocabulary. Shipped examples
-  in [`glossaries/`](glossaries/README.md): épigraphique (709 words, **68 % corpus-absent**),
+  in [`glossaries/`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/glossaries/README.md): épigraphique (709 words, **68 % corpus-absent**),
   bhāṣya (14,498), jaina (286).
 - **Epigraphic vocabulary** — `epig` isolates the donative/administrative/regional terms
   inscriptions use (`akṣayanīvī` "perpetual endowment", regional names) — a ready feed for
@@ -242,12 +242,12 @@ The two axes compose: `(state, register, provenance)` is an evidence-graded coor
 sense — e.g. *akṣobhya* = `III·V` / `purana·tantra·bauddha` / all-four-signals = "an Epic-
 and-Buddhist word, used in Purāṇa/Tantra/Buddhist registers, maximally corroborated." Six
 **cross-axis slices** (Vedic-in-commentary, born-in-kāvya, the grammatical meta-language, …)
-are worked through with anatomy + examples in [`RENOU_CROSSAXIS.md`](RENOU_CROSSAXIS.md); the
+are worked through with anatomy + examples in [`RENOU_CROSSAXIS.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/RENOU_CROSSAXIS.md); the
 per-register empirical findings (bhāṣya as Renou's cross-disciplinary syntactic register; BHS
 as a second self-contained lexical world; doctrinal registers = perennial lexicon) are in
-[`RENOU_FINDINGS.md`](RENOU_FINDINGS.md). Renou's **nominal-style** thesis (the finite verb
+[`RENOU_FINDINGS.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/RENOU_FINDINGS.md). Renou's **nominal-style** thesis (the finite verb
 receding Vedic→Classical, bhāṣya more nominal than kāvya) is verified on the corpus in
-[`RENOU_NOMINAL_STYLE.md`](RENOU_NOMINAL_STYLE.md). The forward test programme — seven
+[`RENOU_NOMINAL_STYLE.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/RENOU_NOMINAL_STYLE.md). The forward test programme — seven
 hypotheses (citation bias, Zipf agreement, Vedic survival, MW–PWG lineage, compound
 inflation, register disjointness, pilot human validation) with methods, gates, and the
 visualization workplan — is in
@@ -416,7 +416,7 @@ gamemahi -> хотим встретиться (n=1) register: rgveda   source: 0
 `renou_low_info` case at its most extreme, same mechanism as `api` above). The specific
 form `gamemahi` narrows that to exactly two registers, each traceable to an exact verse
 and a specific published Russian rendering. This is the whole point of the attestation-level
-layer in [`CORPUS_PROVENANCE.md`](CORPUS_PROVENANCE.md#renou-register-layer-attestation-level):
+layer in [`CORPUS_PROVENANCE.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/CORPUS_PROVENANCE.md#renou-register-layer-attestation-level):
 per-*sense* register beats per-*headword* register, and it composes with the state axis the
 same way — independent, provenance-graded, and only as informative as the evidence actually is.
 

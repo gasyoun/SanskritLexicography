@@ -1,10 +1,12 @@
 # Nominal vs verbal style — Renou's thesis, measured on the corpus
 
+_Created: 26-06-2026 · Last updated: 02-07-2026_
+
 Renou's *Histoire de la langue sanskrite* (1956) makes the **rise of the nominal style at
 the expense of the finite verb** its central diachronic claim. That claim is about *running
 text*, so — unlike the register tags, which sit on headwords — it can be **verified directly**
 on the POS-annotated DCS corpus. This note states what Renou says, defines the measure, and
-reports the result. Tool: [`src/nominal_style.py`](src/nominal_style.py).
+reports the result. Tool: [`src/nominal_style.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/nominal_style.py).
 
 ## 1. What Renou says
 
@@ -135,5 +137,7 @@ cd RussianTranslation/src
 python nominal_style.py          # state + register finite-verb tables (corpus scan ~2-3 min)
 python nominal_style.py --texts  # per-text finite-verb %, lowest first
 ```
-See [`RENOU_FINDINGS.md`](RENOU_FINDINGS.md) (F1, F5) and the data note
-[`papers/A34_renou_register_note.md`](../../papers/A34_renou_register_note.md).
+See [`RENOU_FINDINGS.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/RENOU_FINDINGS.md) (F1, F5) and the data note
+[`papers/A34_renou_register_note.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/papers/A34_renou_register_note.md).
+
+_Dr. Mārcis Gasūns_

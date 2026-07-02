@@ -1,9 +1,11 @@
 # Plan — Renou subsections as an orthogonal *register* axis
 
-Extends the flat five-state model (`RENOU.md`) with Renou's **subsections** — the
+_Created: 25-06-2026 · Last updated: 02-07-2026_
+
+Extends the flat five-state model ([`RENOU.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/RENOU.md)) with Renou's **subsections** — the
 linguistically-distinct registers inside each chapter. Ground truth: the verified
 table des matières in
-[`../../VisualDCS/docs/Renou_1956_structure.md`](../../VisualDCS/docs/Renou_1956_structure.md).
+[`VisualDCS/docs/Renou_1956_structure.md`](https://github.com/gasyoun/VisualDCS/blob/main/docs/Renou_1956_structure.md).
 Motivating gap: **`épigraphique`** (Ch. II, p. 94) and **`bhāṣya`** = commentary
 language (Ch. IV, p. 133–145, *with its own grammar*) are real registers a flat I–V
 tag cannot express, and `bhāṣya` in particular "does not fit" any of the five states.
@@ -167,3 +169,5 @@ signal is the weakest, exactly as with states.
 - **Don't let registers leak into states.** The two axes stay separate fields; the
   state pipeline and its audited min-support behaviour are unchanged. Registers are
   purely additive.
+
+_Dr. Mārcis Gasūns_
