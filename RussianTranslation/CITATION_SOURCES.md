@@ -17,6 +17,8 @@ Every `<ls>` literary-source citation in the PWG article corpus (the roots publi
 
 > **Coverage is target-limited, not resolver-limited.** The resolver implements essentially the full mapping set the Cologne app itself supports; most unresolved references cite works the Cologne project has **not digitized** (no scan repository exists — e.g. Suśruta, most Upaniṣads, the Śrauta/Gṛhya sūtras, several chrestomathies), so they cannot be linked from anywhere.
 
+> The most-cited uncovered works are ranked (by how often each is actually cited) in [`UNCOVERED_SOURCES.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/UNCOVERED_SOURCES.md), regenerated on every build.
+
 ## Abbreviation index
 
 | abbreviation | refs | resolved | scan | HTML | target | example |

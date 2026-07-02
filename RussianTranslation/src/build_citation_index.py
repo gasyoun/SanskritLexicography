@@ -19,7 +19,7 @@ import json
 import os
 import re
 import sys
-from collections import defaultdict
+from collections import Counter, defaultdict
 
 sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
@@ -32,6 +32,8 @@ REPO = os.path.dirname(HERE)                       # RussianTranslation/
 RU_STORE = os.path.join(HERE, 'pwg_ru_translated.jsonl')
 OUT_MD = os.path.join(REPO, 'CITATION_SOURCES.md')
 OUT_JSON = os.path.join(REPO, 'release', 'citation_sources.json')
+OUT_UNCOVERED = os.path.join(REPO, 'UNCOVERED_SOURCES.md')
+OUT_UNCOVERED_JSON = os.path.join(REPO, 'release', 'uncovered_sources.json')
 
 _LS = re.compile(r'<ls\b([^>]*)>(.*?)</ls>', re.S)
 _N_ATTR = re.compile(r'\bn\s*=\s*"([^"]*)"')
@@ -194,6 +196,11 @@ def emit(groups, total, resolved, counts):
              'Upaniṣads, the Śrauta/Gṛhya sūtras, several chrestomathies), so they '
              'cannot be linked from anywhere.')
     L.append('')
+    L.append('> The most-cited uncovered works are ranked (by how often each is '
+             'actually cited) in [`UNCOVERED_SOURCES.md`]'
+             '(https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/UNCOVERED_SOURCES.md), '
+             'regenerated on every build.')
+    L.append('')
     L.append('## Abbreviation index')
     L.append('')
     L.append('| abbreviation | refs | resolved | scan | HTML | target | example |')
@@ -227,13 +234,148 @@ def emit(groups, total, resolved, counts):
         f.write('\n'.join(L) + '\n')
 
 
+# ---------------------------------------------------------------------------
+# Occurrence analysis (how OFTEN each source is cited, vs how many DISTINCT refs)
+# ---------------------------------------------------------------------------
+# The distinct-ref counts above measure the *reference set*. To measure how
+# often a source is actually cited we count every <ls> as it appears in the
+# displayed corpus. That corpus is the build_article_site union model (RU∪EN
+# deduplicated per sense) — counting the raw stores instead would multiply by
+# the DE/RU/EN fields and the store overlap. We read the raw DE source per
+# displayed sense (de_raw), which keeps the <ls n="..."> attribute, so a bare
+# continuation inherits its parent work and grouping uses the true prefix.
+
+
+def occurrence_stats():
+    """Count every <ls> as it appears on the displayed DE surface (occurrences).
+
+    Returns (occ_scan, occ_html, per, total) where per[abbr] = {'res','unres'}
+    occurrence counts. An abbreviation with res==0 is *truly uncovered* (no
+    occurrence resolves anywhere → no Cologne target); res>0 with unres>0 is a
+    resolution edge-case (the work is digitized, a few refs are malformed)."""
+    sys.path.insert(0, os.path.join(HERE, 'pilot'))
+    import build_article_site as bas
+    model = bas.build_model()
+    occ_scan = occ_html = total = labels = 0
+    per = defaultdict(lambda: {'res': 0, 'unres': 0})
+    for r in model:
+        for sc in r['subcards']:
+            for s in sc['senses']:
+                for m in _LS.finditer(s.get('de_raw') or ''):
+                    total += 1
+                    nm = _N_ATTR.search(m.group(1) or '')
+                    n_attr = nm.group(1) if nm else None
+                    vis = (m.group(2) or '').strip()
+                    try:
+                        url = lsr.generate_href('pwg', n_attr, vis)
+                    except Exception:
+                        url = None
+                    t = lsr.link_type(url)
+                    if t == 'scan':
+                        occ_scan += 1
+                        per[abbr_of(n_attr, vis)]['res'] += 1
+                    elif t == 'html':
+                        occ_html += 1
+                        per[abbr_of(n_attr, vis)]['res'] += 1
+                    elif not re.search(r'[0-9]', (n_attr or '') + vis):
+                        # <ls> with no coordinate = an edition/cross-ref LABEL
+                        # ("ed. Bomb.", "ebend."), never a linkable reference.
+                        labels += 1
+                    else:
+                        per[abbr_of(n_attr, vis)]['unres'] += 1
+    return occ_scan, occ_html, per, total, labels
+
+
+def emit_uncovered(per, occ_scan, occ_html, occ_total, labels):
+    """Live list of the most-cited sources with NO link, most frequent first.
+
+    `per[abbr] = {'res','unres'}`. Truly-uncovered = res==0 (no target exists);
+    edge-cases (res>0, unres>0) are listed separately — the work is digitized,
+    only some refs are malformed."""
+    uncovered = {k: v['unres'] for k, v in per.items() if v['res'] == 0 and v['unres'] > 0}
+    edge = {k: v['unres'] for k, v in per.items() if v['res'] > 0 and v['unres'] > 0}
+    rows = sorted(uncovered.items(), key=lambda kv: (-kv[1], kv[0]))
+    un_total = sum(uncovered.values())
+    occ_resolved = occ_scan + occ_html
+    data = {
+        'occurrences_total': occ_total,
+        'occurrences_linked': occ_resolved,
+        'occurrences_scan': occ_scan, 'occurrences_html': occ_html,
+        'occurrences_uncovered': un_total,
+        'occurrences_noncoordinate_labels': labels,
+        'distinct_uncovered_works': len(uncovered),
+        'uncovered': [{'abbr': k, 'occurrences': n} for k, n in rows],
+        'edge_case_misses': [{'abbr': k, 'unresolved': n}
+                             for k, n in sorted(edge.items(), key=lambda kv: -kv[1])],
+    }
+    with open(OUT_UNCOVERED_JSON, 'w', encoding='utf-8', newline='\n') as f:
+        json.dump(data, f, ensure_ascii=False, indent=1)
+
+    L = []
+    L.append('# PWG uncovered citation sources — most-cited works with no link')
+    L.append('')
+    L.append('<p align="right"><sub>Created: 02-07-2026 · Last updated: 02-07-2026</sub></p>')
+    L.append('')
+    L.append('Works cited by `<ls>` in the PWG article corpus that **have no Cologne '
+             'target at all** — *no* occurrence resolves, because no scan repo exists '
+             'in the [`sanskrit-lexicon-scans`](https://github.com/orgs/sanskrit-lexicon-scans/repositories) '
+             'org (or the abbreviation is a grammatical authority / cross-reference, '
+             'not a citable text). Ranked by **how often the work is actually cited** '
+             '(occurrences on the displayed DE surface), most-cited first — so the top '
+             'rows are the highest-value targets should Cologne ever digitize them. '
+             'Regenerated on every build by [`build_citation_index.py`]'
+             '(https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/build_citation_index.py).')
+    L.append('')
+    L.append('Of **%s** citation occurrences on the site, **%s** link out '
+             '(%s scan + %s HTML) and **%s (%.1f%%)** stay unlinked. The unlinked '
+             'ones are **%d truly-uncovered works** below (%s occurrences), plus %d '
+             'edge-case misses in otherwise-covered works (see end) and %s '
+             'non-coordinate `<ls>` labels (edition/cross-ref notes like '
+             '"ed. Bomb.", never linkable).'
+             % (f'{occ_total:,}', f'{occ_resolved:,}', f'{occ_scan:,}', f'{occ_html:,}',
+                f'{occ_total - occ_resolved:,}', 100 * (occ_total - occ_resolved) / occ_total if occ_total else 0,
+                len(uncovered), f'{un_total:,}', sum(edge.values()), f'{labels:,}'))
+    L.append('')
+    L.append('| rank | source (abbreviation) | citations |')
+    L.append('|---:|---|---:|')
+    for i, (k, n) in enumerate(rows, 1):
+        L.append('| %d | %s | %d |' % (i, k.replace('|', '\\|'), n))
+    L.append('')
+    if edge:
+        L.append('## Edge-case misses (work IS digitized; some refs malformed)')
+        L.append('')
+        L.append('These abbreviations resolve for most citations — the counts below '
+                 'are individual references with a malformed/unusual coordinate that '
+                 'the resolver could not parse. Not "uncovered".')
+        L.append('')
+        L.append('| source | unresolved refs |')
+        L.append('|---|---:|')
+        for k, n in sorted(edge.items(), key=lambda kv: -kv[1]):
+            L.append('| %s | %d |' % (k.replace('|', '\\|'), n))
+        L.append('')
+    L.append('<p align="right"><sub>Dr. Mārcis Gasūns</sub></p>')
+    with open(OUT_UNCOVERED, 'w', encoding='utf-8', newline='\n') as f:
+        f.write('\n'.join(L) + '\n')
+
+
 def main():
     groups, total, resolved, counts = build()
     emit(groups, total, resolved, counts)
+    occ_scan, occ_html, per, occ_total, labels = occurrence_stats()
+    emit_uncovered(per, occ_scan, occ_html, occ_total, labels)
+    occ_resolved = occ_scan + occ_html
     print('citation index: %d distinct refs, %d resolved (%.1f%%), %d abbreviations'
           % (total, resolved, 100 * resolved / total if total else 0, len(groups)))
     print('  -> %s' % OUT_MD)
     print('  -> %s' % OUT_JSON)
+    print('occurrences (displayed DE surface): %d total, %d linked '
+          '(scan %d / HTML %d), %d unlinked'
+          % (occ_total, occ_resolved, occ_scan, occ_html, occ_total - occ_resolved))
+    if occ_resolved:
+        print('  scan:HTML by occurrence = %.1f : 1  (by distinct ref = %.1f : 1)'
+              % (occ_scan / occ_html if occ_html else 0,
+                 counts['scan'] / counts['html'] if counts['html'] else 0))
+    print('  -> %s' % OUT_UNCOVERED)
 
 
 if __name__ == '__main__':

@@ -244,6 +244,25 @@ a probe), never a hunch. When a finding is later refuted or superseded, strike i
   **Source:** [`nearest_root_audit.json`](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/etymology_stats/nearest_root_audit.json)
   + [`build_root_normalization.py`](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/etymology_stats/build_root_normalization.py) — csl-orig · 2026-06-26
 
+- **PWG `<ls>` citation usage frequency ≈ distinct-reference frequency — HTML-target works are NOT cited disproportionately more than scan-target works.**
+  Evidence: across the displayed PWG article corpus ([gasyoun.github.io/SanskritLexicography](https://gasyoun.github.io/SanskritLexicography/))
+  the `<ls>` citations number **50,065 occurrences** vs **37,951 distinct references** — mean ~1.32
+  citations per distinct reference (most appear exactly once). Splitting resolved links by target
+  kind, the **scan : HTML ratio is 4.9 : 1 by occurrence vs 5.1 : 1 by distinct reference**: HTML-target
+  works (only ṚV., AV., P. — Rigveda / Atharvaveda / Pāṇini resolve to rendered digital text rather
+  than a page scan) are re-cited only marginally more per reference (1.32×) than scan works (1.26×),
+  *not* an order of magnitude more (a plausible-sounding hypothesis that the data refutes). Occurrence
+  coverage 83.2 % (41,642 / 50,065 link out = 34,560 scan + 7,082 HTML); the 16.8 % unlinked = 6,505
+  occurrences of 446 truly-uncovered works + 1,883 non-coordinate `<ls>` labels (edition/cross-ref
+  notes like "ed. Bomb.", never linkable) + 35 edge-case parse misses.
+  Implication: distinct-reference counts are a faithful proxy for citation frequency here — do not
+  occurrence-weight coverage/impact estimates by target type. When counting `<ls>`, exclude
+  no-coordinate labels (they are not references), and count from the deduplicated display model, not
+  the raw DE/RU/EN stores (which multiply each citation ~4× via translation fields + store overlap).
+  **Source:** [`build_citation_index.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/build_citation_index.py)
+  → [`UNCOVERED_SOURCES.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/UNCOVERED_SOURCES.md)
+  + [`CITATION_SOURCES.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/CITATION_SOURCES.md) — SanskritLexicography · 2026-07-02
+
 ---
 
 _Started 2026-06-26 (relocated from `Uprava/FINDINGS.md`, which now holds **non-Sanskrit**
