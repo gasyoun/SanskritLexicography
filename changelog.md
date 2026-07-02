@@ -9,6 +9,15 @@ then **cut a new version every time the changelog is updated** (promote
 
 ## [Unreleased]
 
+## [0.0.41] - 2026-07-02
+
+### Fixed — dashboard: single-snapshot charts no longer render as a floating dot
+- With only one monthly snapshot, each tracked-metric chart drew a lone centered dot in an
+  empty box (looked broken). Single-snapshot metrics now render as a stat card (big value +
+  "trend line appears with the next monthly refresh"); real multi-point series gain min/max
+  axis labels, first/last month labels, gridlines, and an emphasized last point. Both states
+  browser-verified (the multi-point branch against a synthetic two-snapshot series).
+
 ## [0.0.40] - 2026-07-02
 
 ### Added — FINDINGS dashboard (recurring visualization of the registry)
