@@ -8,6 +8,22 @@ See also: [METHODOLOGY_REVIEW.md](METHODOLOGY_REVIEW.md) (where we want to go),
 [failures/FAILURE_GALLERY.md](failures/FAILURE_GALLERY.md) (what went wrong and
 how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
+## 2026-07-02
+
+### Renou hypothesis-testing programme (H1–H7) — spec locked
+- **[RENOU_HYPOTHESES.md](RENOU_HYPOTHESES.md)** — executable specification for seven
+  hypotheses on the Renou tagging system, written for fresh-session (Sonnet-tier)
+  execution: H4 dictionary citation bias (first, no gate), Step-0 pilot human
+  validation (70 entries, 5 contested strata, interactive review sheet), H6 Zipf
+  agreement (principled `renou_low_info` threshold), H1 Vedic survival curves,
+  H5 MW–PWG citation-lineage containment, H3 register disjointness, H2 compound
+  inflation (cross-repo, VisualDCS). Three-track visualization workplan
+  (audit-report charts → paper figures → gated GH-Pages portrait demo). Locked
+  MG decisions 02-07-2026: destination = pwg_ru infrastructure + citation-bias
+  study, findings paper later; pilot-size validation; all hypotheses in order.
+  Spec authored by Fable 5 (`claude-fable-5`); execution tier per step in the doc.
+- [RENOU.md](RENOU.md) links the programme from its cross-axis section.
+
 ## 2026-06-29
 
 ### Structured grammar layer — nominal grammar, Zaliznyak index, reverse dictionary
