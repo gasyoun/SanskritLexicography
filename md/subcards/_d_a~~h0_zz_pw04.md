@@ -23,8 +23,8 @@
 **abhi+saṃ+dhā–5)** — 5〉 Jmd gemeinsam anerkennen, anerkennen überh. *sarvalokābhisaṃhita* von aller Welt anerkannt [MBH. 12,132,1](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,132,1).
 - **EN:** — 5〉 to acknowledge someone together, to recognise überh. *sarvalokābhisaṃhita* acknowledged by all the world [MBH. 12,132,1](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,132,1).
 
-**abhi+saṃ+dhā–6)** — 6〉 sich über Etwas vorher verständigen, vorher über Etwas übereinkommen; mit Acc. [191,17]. [R. 5,82,5](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,82,5) (wo wohl *anyo'nyenābhi˚* zu verbinden ist).
-- **EN:** — 6〉 to come to a prior understanding about something, to agree beforehand about something; with Acc. [191,17]. [R. 5,82,5](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,82,5) (where *anyo'nyenābhi˚* is probably to be taken together).
+**abhi+saṃ+dhā–6)** — 6〉 sich über Etwas vorher verständigen, vorher über Etwas übereinkommen; mit Acc. [191,17](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?191). [R. 5,82,5](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,82,5) (wo wohl *anyo'nyenābhi˚* zu verbinden ist).
+- **EN:** — 6〉 to come to a prior understanding about something, to agree beforehand about something; with Acc. [191,17](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?191). [R. 5,82,5](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,82,5) (where *anyo'nyenābhi˚* is probably to be taken together).
 
 **abhi+saṃ+dhā–7)** — 7〉 Jmd in seine Gewalt bekommen, sich unterthan machen, in Abhängigkeit halten.
 - **EN:** — 7〉 to get someone into one's power, to make subordinate to oneself, to keep in dependence.

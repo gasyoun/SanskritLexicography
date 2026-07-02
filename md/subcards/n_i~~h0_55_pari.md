@@ -50,7 +50,7 @@
 [PAÑCAT. 261,8.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?261,8) [10.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?261,10)
 [HIT. 63,20.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?63,20) [21.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?63,21)
 [RĀJA-TAR. 3,436.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?3,436)
-[DAŚAK.] in [BENF. Chr. 201,3.] [KATHĀS. 18,80.](https://sanskrit-lexicon-scans.github.io/kss/index.html?18,80) [322.](https://sanskrit-lexicon-scans.github.io/kss/index.html?18,322) *pariṇinye tāṃ gāndharvavidhinā* 220. *(tena) guptaṃ gāndharvavidhinā pariṇītā*
+[DAŚAK.] in [BENF. Chr. 201,3.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?201) [KATHĀS. 18,80.](https://sanskrit-lexicon-scans.github.io/kss/index.html?18,80) [322.](https://sanskrit-lexicon-scans.github.io/kss/index.html?18,322) *pariṇinye tāṃ gāndharvavidhinā* 220. *(tena) guptaṃ gāndharvavidhinā pariṇītā*
 [7,82.](https://sanskrit-lexicon-scans.github.io/kss/index.html?7,82) [10,180.](https://sanskrit-lexicon-scans.github.io/kss/index.html?10,180) [ŚĀK. 71.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?71) [65,23.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?65,23) [HIT. 28,3.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?28,3) [VET. in LA. 20. 8.]
 
 - **RU:** — 2) insbes. обводить пару или невесту вокруг огня (как свадебный обряд): *pradakṣiṇaṃ tau pragṛhītapāṇī parīṇayāmāsa sa vedapāragaḥ*
@@ -61,7 +61,7 @@
 [PAÑCAT. 261,8.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?261,8) [10.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?261,10)
 [HIT. 63,20.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?63,20) [21.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?63,21)
 [RĀJA-TAR. 3,436.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?3,436)
-[DAŚAK.] in [BENF. Chr. 201,3.] [KATHĀS. 18,80.](https://sanskrit-lexicon-scans.github.io/kss/index.html?18,80) [322.](https://sanskrit-lexicon-scans.github.io/kss/index.html?18,322) *pariṇinye tāṃ gāndharvavidhinā* 220. *(tena) guptaṃ gāndharvavidhinā pariṇītā*
+[DAŚAK.] in [BENF. Chr. 201,3.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?201) [KATHĀS. 18,80.](https://sanskrit-lexicon-scans.github.io/kss/index.html?18,80) [322.](https://sanskrit-lexicon-scans.github.io/kss/index.html?18,322) *pariṇinye tāṃ gāndharvavidhinā* 220. *(tena) guptaṃ gāndharvavidhinā pariṇītā*
 [7,82.](https://sanskrit-lexicon-scans.github.io/kss/index.html?7,82) [10,180.](https://sanskrit-lexicon-scans.github.io/kss/index.html?10,180) [ŚĀK. 71.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?71) [65,23.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?65,23) [HIT. 28,3.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?28,3) [VET. in LA. 20. 8.]
 - **EN:** — 2) insbes. to lead a couple or a bride around the fire (as a wedding ceremony): *pradakṣiṇaṃ tau pragṛhītapāṇī parīṇayāmāsa sa vedapāragaḥ*
 [MBH. 1,7340.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7340) *tau daṃpatī triḥ pariṇīya vahnim (purodhāḥ)*
@@ -71,7 +71,7 @@
 [PAÑCAT. 261,8.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?261,8) [10.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?261,10)
 [HIT. 63,20.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?63,20) [21.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?63,21)
 [RĀJA-TAR. 3,436.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?3,436)
-[DAŚAK.] in [BENF. Chr. 201,3.] [KATHĀS. 18,80.](https://sanskrit-lexicon-scans.github.io/kss/index.html?18,80) [322.](https://sanskrit-lexicon-scans.github.io/kss/index.html?18,322) *pariṇinye tāṃ gāndharvavidhinā* 220. *(tena) guptaṃ gāndharvavidhinā pariṇītā*
+[DAŚAK.] in [BENF. Chr. 201,3.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?201) [KATHĀS. 18,80.](https://sanskrit-lexicon-scans.github.io/kss/index.html?18,80) [322.](https://sanskrit-lexicon-scans.github.io/kss/index.html?18,322) *pariṇinye tāṃ gāndharvavidhinā* 220. *(tena) guptaṃ gāndharvavidhinā pariṇītā*
 [7,82.](https://sanskrit-lexicon-scans.github.io/kss/index.html?7,82) [10,180.](https://sanskrit-lexicon-scans.github.io/kss/index.html?10,180) [ŚĀK. 71.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?71) [65,23.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?65,23) [HIT. 28,3.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?28,3) [VET. in LA. 20. 8.]
   <sub>attested</sub>
 

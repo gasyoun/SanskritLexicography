@@ -201,10 +201,10 @@
 - **EN:** — 6) to hurl, shoot at (Loc.).
   <sub>attested</sub>
 
-**caus-ava-7)** — 7〉 anheften, anlegen, legen auf (Loc.) [64,29]. *lekhye* so v. a. auf einem Documente verzeichnen [KĀTY.]
+**caus-ava-7)** — 7〉 anheften, anlegen, legen auf (Loc.) [64,29](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?64). *lekhye* so v. a. auf einem Documente verzeichnen [KĀTY.]
 
-- **RU:** — 7〉 прикреплять, накладывать, класть на (Loc.) [64,29]. *lekhye* так v. a. записывать на документе [KĀTY.]
-- **EN:** — 7) to fasten, apply, lay upon (Loc.) [64,29]. *lekhye* thus v. a. to record on a document [KĀTY.]
+- **RU:** — 7〉 прикреплять, накладывать, класть на (Loc.) [64,29](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?64). *lekhye* так v. a. записывать на документе [KĀTY.]
+- **EN:** — 7) to fasten, apply, lay upon (Loc.) [64,29](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?64). *lekhye* thus v. a. to record on a document [KĀTY.]
   <sub>attested</sub>
 
 **caus-ava-8)** — 8〉 anlegen, gründen (eine Stadt).
@@ -345,10 +345,10 @@
 - **EN:** — 3) to have sexual intercourse (of either sex), with Acc.
   <sub>attested</sub>
 
-**pra-4)** — 4〉 an Etwas gehen, obliegen, sich einer Sache hingeben; mit Acc., seltener Loc. ([Spr. 77](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?77)). *piṇḍīm*, *tarpaṇam* so v. a. annehmen, geniessen [229,12].
+**pra-4)** — 4〉 an Etwas gehen, obliegen, sich einer Sache hingeben; mit Acc., seltener Loc. ([Spr. 77](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?77)). *piṇḍīm*, *tarpaṇam* so v. a. annehmen, geniessen [229,12](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?229).
 
-- **RU:** — 4〉 приступать к чему-л., заниматься —, предаваться чему-л.; с Acc., реже Loc. ([Spr. 77](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?77)). *piṇḍīm*, *tarpaṇam* так v. a. принимать, вкушать [229,12].
-- **EN:** — 4) to set about something, attend to, devote oneself to a matter; with Acc., more rarely Loc. ([Spr. 77](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?77)). *piṇḍīm*, *tarpaṇam* thus v. a. to take up, enjoy [229,12].
+- **RU:** — 4〉 приступать к чему-л., заниматься —, предаваться чему-л.; с Acc., реже Loc. ([Spr. 77](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?77)). *piṇḍīm*, *tarpaṇam* так v. a. принимать, вкушать [229,12](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?229).
+- **EN:** — 4) to set about something, attend to, devote oneself to a matter; with Acc., more rarely Loc. ([Spr. 77](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?77)). *piṇḍīm*, *tarpaṇam* thus v. a. to take up, enjoy [229,12](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?229).
   <sub>attested</sub>
 
 **pra-5)** — 5〉 in Jmd (Acc.) hineingehen, so v. a. in ihm aufgehen, gegen ihn verschwinden, vor ihm ganz in den Schatten treten.
@@ -473,10 +473,10 @@
 - **EN:** — 5) to put someone into a state (Acc.).
   <sub>attested</sub>
 
-**prac-6)** — 6〉 niederschreiben [215,8].
+**prac-6)** — 6〉 niederschreiben [215,8](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?215).
 
-- **RU:** — 6〉 записывать [215,8].
-- **EN:** — 6) to write down [215,8].
+- **RU:** — 6〉 записывать [215,8](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?215).
+- **EN:** — 6) to write down [215,8](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?215).
   <sub>attested</sub>
 
 **prac-7)** — 7〉 einführen —, einweihen in (Acc.).
@@ -515,10 +515,10 @@
 - **EN:** — With *anupra*
   <sub>attested</sub>
 
-**anupra-1)** — 1〉 eingehen, eintreten, eindringen, fahren in, sich begeben unter (Acc., seltener Loc.). *anupraviṣṭa* mit act. (auch *praviṣṭaḥ — anu*) und pass. ([127,26]) Bed. *anyo'nyānupraviṣṭāni* in einander befindlich, *pathikasārthamanupraviṣṭaḥ* so v. a. schloss sich den Reisenden an.
+**anupra-1)** — 1〉 eingehen, eintreten, eindringen, fahren in, sich begeben unter (Acc., seltener Loc.). *anupraviṣṭa* mit act. (auch *praviṣṭaḥ — anu*) und pass. ([127,26](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?127)) Bed. *anyo'nyānupraviṣṭāni* in einander befindlich, *pathikasārthamanupraviṣṭaḥ* so v. a. schloss sich den Reisenden an.
 
-- **RU:** — 1〉 входить, вступать, проникать, попадать в, направляться под (Acc., реже Loc.). *anupraviṣṭa* с act. (также *praviṣṭaḥ — anu*) и pass. ([127,26]) Bed. *anyo'nyānupraviṣṭāni* находящиеся друг в друге, *pathikasārthamanupraviṣṭaḥ* так v. a. присоединился к путникам.
-- **EN:** — 1) to go in, enter, penetrate, pass into, betake oneself under (Acc., more rarely Loc.). *anupraviṣṭa* with act. (also *praviṣṭaḥ — anu*) and pass. ([127,26]) Bed. *anyo'nyānupraviṣṭāni* situated one within another, *pathikasārthamanupraviṣṭaḥ* thus v. a. joined the travelers.
+- **RU:** — 1〉 входить, вступать, проникать, попадать в, направляться под (Acc., реже Loc.). *anupraviṣṭa* с act. (также *praviṣṭaḥ — anu*) и pass. ([127,26](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?127)) Bed. *anyo'nyānupraviṣṭāni* находящиеся друг в друге, *pathikasārthamanupraviṣṭaḥ* так v. a. присоединился к путникам.
+- **EN:** — 1) to go in, enter, penetrate, pass into, betake oneself under (Acc., more rarely Loc.). *anupraviṣṭa* with act. (also *praviṣṭaḥ — anu*) and pass. ([127,26](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?127)) Bed. *anyo'nyānupraviṣṭāni* situated one within another, *pathikasārthamanupraviṣṭaḥ* thus v. a. joined the travelers.
   <sub>attested</sub>
 
 **anupra-2)** — 2〉 nach Jmd in ein Haus, in ein Gemach treten, zu Jmd hereintreten; mit Acc. der Person. *kṛṣṇasyānupraviṣṭaḥ* nach Kṛṣṇa eingetreten.

@@ -24,10 +24,10 @@
 - **EN:** — c) to destine —, to make into (Dat.).
   <sub>attested</sub>
 
-**1d)** — d〉 erzeugen als, bewirken dass ist; mit doppeltem Acc. [329,6].
+**1d)** — d〉 erzeugen als, bewirken dass ist; mit doppeltem Acc. [329,6](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?329).
 
-- **RU:** — d〉 порождать в качестве, делать так, что становится; с двойным Acc. [329,6].
-- **EN:** — d) to engender as, to bring about that (something) is; with double Acc. [329,6].
+- **RU:** — d〉 порождать в качестве, делать так, что становится; с двойным Acc. [329,6](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?329).
+- **EN:** — d) to engender as, to bring about that (something) is; with double Acc. [329,6](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?329).
   <sub>attested</sub>
 
 **1e)** — e〉 schaffen, verschaffen.
@@ -48,10 +48,10 @@
 - **EN:** — a) to be engendered —, be born —, be brought forth, to grow, to arise.
   <sub>attested</sub>
 
-**2b)** — b〉 geboren werden als, von Geburt oder Natur sein; mit doppeltem Nom. [51,9]. [Spr. 5643](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?5643).
+**2b)** — b〉 geboren werden als, von Geburt oder Natur sein; mit doppeltem Nom. [51,9](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?51). [Spr. 5643](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?5643).
 
-- **RU:** — b〉 рождаться как, быть таковым от рождения или от природы; с двойным Nom. [51,9]. [Spr. 5643](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?5643).
-- **EN:** — b) to be born as, to be by birth or nature; with double Nom. [51,9]. [Spr. 5643](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?5643).
+- **RU:** — b〉 рождаться как, быть таковым от рождения или от природы; с двойным Nom. [51,9](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?51). [Spr. 5643](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?5643).
+- **EN:** — b) to be born as, to be by birth or nature; with double Nom. [51,9](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?51). [Spr. 5643](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?5643).
   <sub>attested</sub>
 
 **2c)** — c〉 geboren werden —, von der Geburt an bestimmt sein zu (Acc.).
@@ -72,10 +72,10 @@
 - **EN:** — e) to become, to be — the predicate standing in Nom.
   <sub>attested</sub>
 
-**2f)** — f〉 *werden zu, verwandelt werden in (Dat.) [229,3].
+**2f)** — f〉 *werden zu, verwandelt werden in (Dat.) [229,3](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?229).
 
-- **RU:** — f〉 *становиться кем/чем-л., превращаться в (Dat.) [229,3].
-- **EN:** — f) *to become, to be transformed into (Dat.) [229,3].
+- **RU:** — f〉 *становиться кем/чем-л., превращаться в (Dat.) [229,3](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?229).
+- **EN:** — f) *to become, to be transformed into (Dat.) [229,3](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?229).
   <sub>attested</sub>
 
 **2g)** — g〉 erfolgen, eintreten, Statt finden.
@@ -273,10 +273,10 @@
 - **EN:** — 5) to be born again, to arise anew.
   <sub>attested</sub>
 
-**preverb-6-6)** — 6〉 werden [102,13]. — zu (Nom.).
+**preverb-6-6)** — 6〉 werden [102,13](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?102). — zu (Nom.).
 
-- **RU:** — 6〉 становиться [102,13]. — кем/чем-л. (Nom.).
-- **EN:** — 6) to become [102,13]. — into (Nom.).
+- **RU:** — 6〉 становиться [102,13](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?102). — кем/чем-л. (Nom.).
+- **EN:** — 6) to become [102,13](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?102). — into (Nom.).
   <sub>attested</sub>
 
 **preverb-6-7)** — 7〉 *abhijāta*

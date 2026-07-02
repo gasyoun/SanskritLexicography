@@ -15,7 +15,7 @@
 [ŚAT. BR. 2,5,4,6.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,5,4,6) [1,4,2,7.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,4,2,7) partic.: *viprānumadita*
 [TS. 2,5,9,1.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?2,5,9,1)
 [ĀŚV. ŚR. 1,3.] Statt *anumatta*
-[DAŚAK.] in [BENF. Chr. 200,14] ist einfach *anunmatta* zu lesen.
+[DAŚAK.] in [BENF. Chr. 200,14](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?200) ist einfach *anunmatta* zu lesen.
 
 - **RU:** — *anu* встречать с выражением радости или сопровождать с ликованием, восклицать в знак приветствия, приветствовать радостными возгласами; с acc.: *(savitā) rebhairudetyanumadyamānaḥ*
 [ṚV. 7,63,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.063.html#rv07.063.03) [10,98,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.098.html#rv10.098.08) *jayantaṃ tvānu devā madantu*
@@ -29,7 +29,7 @@
 [ŚAT. BR. 2,5,4,6.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,5,4,6) [1,4,2,7.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,4,2,7) partic.: *viprānumadita*
 [TS. 2,5,9,1.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?2,5,9,1)
 [ĀŚV. ŚR. 1,3.] Вместо *anumatta*
-[DAŚAK.] в [BENF. Chr. 200,14] следует просто читать *anunmatta*.
+[DAŚAK.] в [BENF. Chr. 200,14](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?200) следует просто читать *anunmatta*.
 - **EN:** — *anu* to receive or accompany with demonstrations of joy, to cheer, to shout with joy; with acc.: *(savitā) rebhairudetyanumadyamānaḥ*
 [ṚV. 7,63,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.063.html#rv07.063.03) [10,98,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.098.html#rv10.098.08) *jayantaṃ tvānu devā madantu*
 [6,75,18.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.075.html#rv06.075.18) *tvāṃ śardho madatyanu mārutam*
@@ -42,7 +42,7 @@
 [ŚAT. BR. 2,5,4,6.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,5,4,6) [1,4,2,7.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,4,2,7) partic.: *viprānumadita*
 [TS. 2,5,9,1.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?2,5,9,1)
 [ĀŚV. ŚR. 1,3.] Instead of *anumatta*
-[DAŚAK.] in [BENF. Chr. 200,14] one should simply read *anunmatta*.
+[DAŚAK.] in [BENF. Chr. 200,14](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?200) one should simply read *anunmatta*.
   <sub>attested</sub>
 
 **cross-ref)** — Vgl. *anumādya* .

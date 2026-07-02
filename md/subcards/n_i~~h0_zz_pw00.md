@@ -14,8 +14,8 @@
 **3)** — 3〉 Med. und seltener Act. mit sich führen, — nehmen, heimführen (ein Weib).
 - **EN:** — 3〉 Med. and less frequently Act. to take with one, take home, lead home (a wife).
 
-**4)** — 4〉 heran-, herbeiziehen [311,13].
-- **EN:** — 4〉 to draw near, draw towards oneself [311,13].
+**4)** — 4〉 heran-, herbeiziehen [311,13](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?311).
+- **EN:** — 4〉 to draw near, draw towards oneself [311,13](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?311).
 
 **5)** — 5〉 Jmd oder Etwas (Acc.) in ein Verhältniss, eine Lage, eines Zustand (Acc. einmal auch Loc.) bringen, — versetzen [MBH. 5,36,4](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?5,36,4). Mit *˚sāt* verwandeln in.
 - **EN:** — 5〉 to bring or place someone or something (Acc.) into a relation, a situation, a state (Acc. once also Loc.) [MBH. 5,36,4](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?5,36,4). With *˚sāt* to transform into.
@@ -121,8 +121,8 @@
 **pref-sam-upa)** — Mit *paryanu* Jmd (Acc.) viele freundliche Worte geben, sehr bitten.
 - **EN:** — With *paryanu* to give someone (Acc.) many friendly words, to entreat earnestly.
 
-**pref-abhi-upa)** — Mit *pratyanu* Jmd in Bezug auf Etwas gute Worte geben; mit doppeltem Acc. [41,4]. [43,17]. Jmd zum Nachgeben bringen.
-- **EN:** — With *pratyanu* to give someone kind words regarding something; with double Acc. [41,4]. [43,17]. To bring someone to yield, to persuade someone.
+**pref-abhi-upa)** — Mit *pratyanu* Jmd in Bezug auf Etwas gute Worte geben; mit doppeltem Acc. [41,4](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?41). [43,17](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?43). Jmd zum Nachgeben bringen.
+- **EN:** — With *pratyanu* to give someone kind words regarding something; with double Acc. [41,4](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?41). [43,17](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?43). To bring someone to yield, to persuade someone.
 
 **pref-nis-1)** — Mit *apa*
 — 1〉 wegführen, abführen, entfernen.
@@ -257,8 +257,8 @@
 **pref-a-9)** — 9〉 anbringen, anwenden, an den Tag legen, zeigen. v. l. *ā-dha*.
 - **EN:** — 9〉 to apply, employ, manifest, demonstrate. v. l. *ā-dha*.
 
-**pref-a-caus)** — Caus. (ausnahmsweise Med.) herbeiführen —, herbeikommen —, herbeibringen lassen [130,14]. *ānāpayitum* fehlerhaft für *ānāyayitum*.
-- **EN:** — Caus. (exceptionally Med.) to cause to come here, to have brought here [130,14]. *ānāpayitum* corrupt for *ānāyayitum*.
+**pref-a-caus)** — Caus. (ausnahmsweise Med.) herbeiführen —, herbeikommen —, herbeibringen lassen [130,14](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?130). *ānāpayitum* fehlerhaft für *ānāyayitum*.
+- **EN:** — Caus. (exceptionally Med.) to cause to come here, to have brought here [130,14](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?130). *ānāpayitum* corrupt for *ānāyayitum*.
 
 **pref-a-desid)** — Desid. herbeizubringen die Absicht haben.
 - **EN:** — Desid. to intend to bring hither.

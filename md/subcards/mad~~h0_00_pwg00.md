@@ -310,7 +310,7 @@ Schol. zu [P. 3,1,34.](https://ashtadhyayi.com/sutraani/3/1/34) [4,7.](https://a
 [ṚT. 6,14.] *protphullamālatīmakarandasāndrāmodamattamadhukara*
 [DHŪRTAS. in LA. 69,4.] *aiśvarya˚*
 [ŚĀK. 66,4.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?66,4) *artha˚*
-[DAŚAK.] in [BENF. Chr. 193,20.] *prabhā˚ (candra)*
+[DAŚAK.] in [BENF. Chr. 193,20.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?193) *prabhā˚ (candra)*
 [Spr. 3866.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3866) *vidyudbhrāntisamastakāntikalanāmattāstadā toyadāḥ*
 [VARĀH. BṚH. S. 27,7.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?27,7) berauscht, freudig erregt (von Thieren aller Art während der Brunstzeit), brünstig: *nākālamattāḥ khagapannagāśca mṛgadvipāḥ śailamṛgāśca loke*
 [Spr. 4379.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4379) *krauñca*
@@ -342,7 +342,7 @@ Schol. zu [P. 3,1,34.](https://ashtadhyayi.com/sutraani/3/1/34) [4,7.](https://a
 [ṚT. 6,14.] *protphullamālatīmakarandasāndrāmodamattamadhukara*
 [DHŪRTAS. in LA. 69,4.] *aiśvarya˚*
 [ŚĀK. 66,4.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?66,4) *artha˚*
-[DAŚAK.] в [BENF. Chr. 193,20.] *prabhā˚ (candra)*
+[DAŚAK.] в [BENF. Chr. 193,20.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?193) *prabhā˚ (candra)*
 [Spr. 3866.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3866) *vidyudbhrāntisamastakāntikalanāmattāstadā toyadāḥ*
 [VARĀH. BṚH. S. 27,7.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?27,7) опьянённый, радостно возбуждённый (о животных всех видов в период течки), находящийся в течке: *nākālamattāḥ khagapannagāśca mṛgadvipāḥ śailamṛgāśca loke*
 [Spr. 4379.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4379) *krauñca*
@@ -373,7 +373,7 @@ Schol. zu [P. 3,1,34.](https://ashtadhyayi.com/sutraani/3/1/34) [4,7.](https://a
 [ṚT. 6,14.] *protphullamālatīmakarandasāndrāmodamattamadhukara*
 [DHŪRTAS. in LA. 69,4.] *aiśvarya˚*
 [ŚĀK. 66,4.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?66,4) *artha˚*
-[DAŚAK.] in [BENF. Chr. 193,20.] *prabhā˚ (candra)*
+[DAŚAK.] in [BENF. Chr. 193,20.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?193) *prabhā˚ (candra)*
 [Spr. 3866.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3866) *vidyudbhrāntisamastakāntikalanāmattāstadā toyadāḥ*
 [VARĀH. BṚH. S. 27,7.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?27,7) intoxicated, joyfully excited (of all kinds of animals during the rutting season), in rut: *nākālamattāḥ khagapannagāśca mṛgadvipāḥ śailamṛgāśca loke*
 [Spr. 4379.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4379) *krauñca*

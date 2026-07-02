@@ -1144,7 +1144,7 @@ nicht hierher, da mit
 [BHAG. 2,62.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?2,62) *dehe 'sminprakāśa upajāyate . jñānaṃ yadā*
 [14,11.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?14,11) [MBH. 2,2590.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2590) [3,114.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.114) [1293.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1293) [R. 3,69,5.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,69,5) [6,82,7.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,82,7) [PAÑCAT. I,154.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?1,154) [HIT. I,61.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?1,61) [BHĀG. P. 6,14,2.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,14,2) *upajātamupaplavyaṃ saha gāṇḍīvadhanvanā*
 [MBH. 9,3482.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.3482) *tatkṣaṇopajātayā pratibhayā*
-[DAŚAK.] in [BENF. Chr. 194,15.] *upajātaviśvāsa* _adj._ bei dem sich Vertrauen eingestellt hat
+[DAŚAK.] in [BENF. Chr. 194,15.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?194) *upajātaviśvāsa* _adj._ bei dem sich Vertrauen eingestellt hat
 [HIT. 42,6.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?42,6) *˚kheda*
 [MṚCCH. 157,21.] *˚sādhvasa*
 [ṚT. 2,9.] *˚krodha*
@@ -1162,7 +1162,7 @@ nicht hierher, da mit
 [BHAG. 2,62.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?2,62) *dehe 'sminprakāśa upajāyate . jñānaṃ yadā*
 [14,11.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?14,11) [MBH. 2,2590.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2590) [3,114.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.114) [1293.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1293) [R. 3,69,5.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,69,5) [6,82,7.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,82,7) [PAÑCAT. I,154.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?1,154) [HIT. I,61.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?1,61) [BHĀG. P. 6,14,2.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,14,2) *upajātamupaplavyaṃ saha gāṇḍīvadhanvanā*
 [MBH. 9,3482.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.3482) *tatkṣaṇopajātayā pratibhayā*
-[DAŚAK.] in [BENF. Chr. 194,15.] *upajātaviśvāsa* _adj._ в ком возникло доверие
+[DAŚAK.] in [BENF. Chr. 194,15.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?194) *upajātaviśvāsa* _adj._ в ком возникло доверие
 [HIT. 42,6.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?42,6) *˚kheda*
 [MṚCCH. 157,21.] *˚sādhvasa*
 [ṚT. 2,9.] *˚krodha*
@@ -1179,7 +1179,7 @@ nicht hierher, da mit
 [BHAG. 2,62.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?2,62) *dehe 'sminprakāśa upajāyate . jñānaṃ yadā*
 [14,11.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?14,11) [MBH. 2,2590.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2590) [3,114.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.114) [1293.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1293) [R. 3,69,5.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,69,5) [6,82,7.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,82,7) [PAÑCAT. I,154.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?1,154) [HIT. I,61.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?1,61) [BHĀG. P. 6,14,2.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,14,2) *upajātamupaplavyaṃ saha gāṇḍīvadhanvanā*
 [MBH. 9,3482.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.3482) *tatkṣaṇopajātayā pratibhayā*
-[DAŚAK.] in [BENF. Chr. 194,15.] *upajātaviśvāsa* _adj._ in whom trust has arisen
+[DAŚAK.] in [BENF. Chr. 194,15.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?194) *upajātaviśvāsa* _adj._ in whom trust has arisen
 [HIT. 42,6.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?42,6) *˚kheda*
 [MṚCCH. 157,21.] *˚sādhvasa*
 [ṚT. 2,9.] *˚krodha*
@@ -1399,7 +1399,7 @@ nicht hierher, da mit
 [ŚĀṄKH. GṚHY. 3,10. 5,7.] *sā — prajajñe — kumāram*
 [MBH. 1,1927.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1927) [2624.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2624) [2629.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2629) [3423.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3423) [6072.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6072) *prajāyantesutānnāryaḥ*
 [3,13639.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13639) *kanyām — prājāyata*
-[BENF. Chr. 50,14.] *na prajāsyati*
+[BENF. Chr. 50,14.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?50) *na prajāsyati*
 [MBH. 1,4526.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4526) [3,14765.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14765) *nārī prajaniṣyamāṇā* der Zeit des Gebärens nahe
 [SUŚR. 1,368,7.] *prajātā* die da geboren hat
 [AK. 2,6,1,6.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?2,6,1,6)
@@ -1434,7 +1434,7 @@ nicht hierher, da mit
 [ŚĀṄKH. GṚHY. 3,10. 5,7.] *sā — prajajñe — kumāram*
 [MBH. 1,1927.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1927) [2624.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2624) [2629.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2629) [3423.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3423) [6072.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6072) *prajāyantesutānnāryaḥ*
 [3,13639.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13639) *kanyām — prājāyata*
-[BENF. Chr. 50,14.] *na prajāsyati*
+[BENF. Chr. 50,14.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?50) *na prajāsyati*
 [MBH. 1,4526.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4526) [3,14765.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14765) *nārī prajaniṣyamāṇā* близкая к сроку родов
 [SUŚR. 1,368,7.] *prajātā* та, что родила
 [AK. 2,6,1,6.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?2,6,1,6)
@@ -1468,7 +1468,7 @@ nicht hierher, da mit
 [ŚĀṄKH. GṚHY. 3,10. 5,7.] *sā — prajajñe — kumāram*
 [MBH. 1,1927.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1927) [2624.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2624) [2629.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2629) [3423.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3423) [6072.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6072) *prajāyantesutānnāryaḥ*
 [3,13639.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13639) *kanyām — prājāyata*
-[BENF. Chr. 50,14.] *na prajāsyati*
+[BENF. Chr. 50,14.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?50) *na prajāsyati*
 [MBH. 1,4526.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4526) [3,14765.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14765) *nārī prajaniṣyamāṇā* near the time of giving birth
 [SUŚR. 1,368,7.] *prajātā* she who has given birth
 [AK. 2,6,1,6.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?2,6,1,6)
@@ -2155,10 +2155,10 @@ nicht hierher, da mit
 - **EN:** — c) to destine —, to make into (Dat.).
   <sub>attested</sub>
 
-**1d)** — d〉 erzeugen als, bewirken dass ist; mit doppeltem Acc. [329,6].
+**1d)** — d〉 erzeugen als, bewirken dass ist; mit doppeltem Acc. [329,6](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?329).
 
-- **RU:** — d〉 порождать в качестве, делать так, что становится; с двойным Acc. [329,6].
-- **EN:** — d) to engender as, to bring about that (something) is; with double Acc. [329,6].
+- **RU:** — d〉 порождать в качестве, делать так, что становится; с двойным Acc. [329,6](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?329).
+- **EN:** — d) to engender as, to bring about that (something) is; with double Acc. [329,6](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?329).
   <sub>attested</sub>
 
 **1e)** — e〉 schaffen, verschaffen.
@@ -2179,10 +2179,10 @@ nicht hierher, da mit
 - **EN:** — a) to be engendered —, be born —, be brought forth, to grow, to arise.
   <sub>attested</sub>
 
-**2b)** — b〉 geboren werden als, von Geburt oder Natur sein; mit doppeltem Nom. [51,9]. [Spr. 5643](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?5643).
+**2b)** — b〉 geboren werden als, von Geburt oder Natur sein; mit doppeltem Nom. [51,9](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?51). [Spr. 5643](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?5643).
 
-- **RU:** — b〉 рождаться как, быть таковым от рождения или от природы; с двойным Nom. [51,9]. [Spr. 5643](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?5643).
-- **EN:** — b) to be born as, to be by birth or nature; with double Nom. [51,9]. [Spr. 5643](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?5643).
+- **RU:** — b〉 рождаться как, быть таковым от рождения или от природы; с двойным Nom. [51,9](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?51). [Spr. 5643](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?5643).
+- **EN:** — b) to be born as, to be by birth or nature; with double Nom. [51,9](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?51). [Spr. 5643](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?5643).
   <sub>attested</sub>
 
 **2c)** — c〉 geboren werden —, von der Geburt an bestimmt sein zu (Acc.).
@@ -2203,10 +2203,10 @@ nicht hierher, da mit
 - **EN:** — e) to become, to be — the predicate standing in Nom.
   <sub>attested</sub>
 
-**2f)** — f〉 *werden zu, verwandelt werden in (Dat.) [229,3].
+**2f)** — f〉 *werden zu, verwandelt werden in (Dat.) [229,3](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?229).
 
-- **RU:** — f〉 *становиться кем/чем-л., превращаться в (Dat.) [229,3].
-- **EN:** — f) *to become, to be transformed into (Dat.) [229,3].
+- **RU:** — f〉 *становиться кем/чем-л., превращаться в (Dat.) [229,3](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?229).
+- **EN:** — f) *to become, to be transformed into (Dat.) [229,3](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?229).
   <sub>attested</sub>
 
 **2g)** — g〉 erfolgen, eintreten, Statt finden.
@@ -2404,10 +2404,10 @@ nicht hierher, da mit
 - **EN:** — 5) to be born again, to arise anew.
   <sub>attested</sub>
 
-**preverb-6-6)** — 6〉 werden [102,13]. — zu (Nom.).
+**preverb-6-6)** — 6〉 werden [102,13](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?102). — zu (Nom.).
 
-- **RU:** — 6〉 становиться [102,13]. — кем/чем-л. (Nom.).
-- **EN:** — 6) to become [102,13]. — into (Nom.).
+- **RU:** — 6〉 становиться [102,13](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?102). — кем/чем-л. (Nom.).
+- **EN:** — 6) to become [102,13](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?102). — into (Nom.).
   <sub>attested</sub>
 
 **preverb-6-7)** — 7〉 *abhijāta*

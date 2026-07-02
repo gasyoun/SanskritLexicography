@@ -104,20 +104,20 @@ _PWG article — 39 sub-card(s), 156 sense(s) · RU 104/156 · EN 144/156_
 [Lot. de la b. l. 334.] *ābhugna* gebogen, gekrümmt
 [RAGH. 1,83.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?1,83)
 [PAÑCAR. 3,6,11.](https://sanskrit-lexicon-scans.github.io/pancar/app1?3,6,11) zur Seite gedrängt
-[DAŚAK.] in [BENF. Chr. 198,21.]
+[DAŚAK.] in [BENF. Chr. 198,21.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?198)
 — Vgl. *ābhoga* .
 
 - **RU:** — *ā* вгибать, подгибать: *paryaṅkamābhujya* (сидеть) со скрещенными (подогнутыми) ногами
 [Lot. de la b. l. 334.] *ābhugna* согнутый, изогнутый
 [RAGH. 1,83.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?1,83)
 [PAÑCAR. 3,6,11.](https://sanskrit-lexicon-scans.github.io/pancar/app1?3,6,11) оттеснённый в сторону
-[DAŚAK.] in [BENF. Chr. 198,21.]
+[DAŚAK.] in [BENF. Chr. 198,21.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?198)
 — Vgl. *ābhoga* .
 - **EN:** — *ā* to bend inward: *paryaṅkamābhujya* (to sit) with legs folded under
 [Lot. de la b. l. 334.] *ābhugna* bent, curved
 [RAGH. 1,83.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?1,83)
 [PAÑCAR. 3,6,11.](https://sanskrit-lexicon-scans.github.io/pancar/app1?3,6,11) pushed to one side
-[DAŚAK.] in [BENF. Chr. 198,21.]
+[DAŚAK.] in [BENF. Chr. 198,21.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?198)
 — Vgl. *ābhoga* .
   <sub>attested</sub>
 
@@ -991,7 +991,7 @@ u. s. w. [M. 8,146. fg.](https://sanskrit-lexicon-scans.github.io/manu/index.htm
 gebrauchend
 [M. 4,202.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,202) *upabhuktaṃ yathā vāsaḥ*
 [R. 3,37,19.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,37,19)
-[DAŚAK.] in [BENF. Chr. 189,21.] *rāṣṭram* so v. a. Abgaben im Reiche erheben
+[DAŚAK.] in [BENF. Chr. 189,21.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?189) *rāṣṭram* so v. a. Abgaben im Reiche erheben
 [Spr. 2951.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2951) *dharmavāṇijakā hyete ye dharmamupabhuñjate* leben von
 [MBH. 13,7595.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.7595) *tayopabhujyamānāṃ purīm* so v. a. beherrscht
 [BHĀG. P. 4,28,4.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,28,4) Jmd benutzen: *ahaṃ ca kururājyaṃ ca yatheṣṭamupabhujyatām*
@@ -1050,7 +1050,7 @@ gebrauchend
 употребляя
 [M. 4,202.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,202) *upabhuktaṃ yathā vāsaḥ*
 [R. 3,37,19.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,37,19)
-[DAŚAK.] в [BENF. Chr. 189,21.] *rāṣṭram* так v. a. взимать подати в государстве
+[DAŚAK.] в [BENF. Chr. 189,21.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?189) *rāṣṭram* так v. a. взимать подати в государстве
 [Spr. 2951.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2951) *dharmavāṇijakā hyete ye dharmamupabhuñjate* жить от
 [MBH. 13,7595.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.7595) *tayopabhujyamānāṃ purīm* так v. a. управляет
 [BHĀG. P. 4,28,4.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,28,4) пользоваться кем-либо: *ahaṃ ca kururājyaṃ ca yatheṣṭamupabhujyatām*
@@ -1107,7 +1107,7 @@ gebrauchend
 employing
 [M. 4,202.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,202) *upabhuktaṃ yathā vāsaḥ*
 [R. 3,37,19.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,37,19)
-[DAŚAK.] in [BENF. Chr. 189,21.] *rāṣṭram* so v. a. to levy taxes in the realm
+[DAŚAK.] in [BENF. Chr. 189,21.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?189) *rāṣṭram* so v. a. to levy taxes in the realm
 [Spr. 2951.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2951) *dharmavāṇijakā hyete ye dharmamupabhuñjate* to live from
 [MBH. 13,7595.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.7595) *tayopabhujyamānāṃ purīm* so v. a. governed
 [BHĀG. P. 4,28,4.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,28,4) to make use of someone: *ahaṃ ca kururājyaṃ ca yatheṣṭamupabhujyatām*

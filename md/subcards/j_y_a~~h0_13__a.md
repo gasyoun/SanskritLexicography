@@ -83,7 +83,7 @@ brother's command
 [HARIV. 8005.](https://sanskrit-lexicon-scans.github.io/hariv?8005) *yathājñāpayati devaḥ*
 [HIT. 92,1.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?92,1)
 [ŚĀK. 61,14](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?61,14), v. l.
-[DAŚAK.] in [BENF. Chr. 188,8.] *yathājñāpayase*
+[DAŚAK.] in [BENF. Chr. 188,8.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?188) *yathājñāpayase*
 [MBH. 2,2567.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2567) *kimājñāpayanti*
 [ŚĀK. 28,12.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?28,12) *yadājñāpayati bhagavān*
 [112,17.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?112,17) [7,22.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?7,22) [61,14.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?61,14) [HIT. 98,21.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?98,21) [R. 2,52,23.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,52,23) [3,18,11.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,18,11) *yogamājñāpayaṃ tatra janasya*
@@ -120,7 +120,7 @@ brother's command
 [HARIV. 8005.](https://sanskrit-lexicon-scans.github.io/hariv?8005) *yathājñāpayati devaḥ*
 [HIT. 92,1.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?92,1)
 [ŚĀK. 61,14](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?61,14), v. l.
-[DAŚAK.] в [BENF. Chr. 188,8.] *yathājñāpayase*
+[DAŚAK.] в [BENF. Chr. 188,8.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?188) *yathājñāpayase*
 [MBH. 2,2567.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2567) *kimājñāpayanti*
 [ŚĀK. 28,12.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?28,12) *yadājñāpayati bhagavān*
 [112,17.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?112,17) [7,22.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?7,22) [61,14.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?61,14) [HIT. 98,21.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?98,21) [R. 2,52,23.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,52,23) [3,18,11.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,18,11) *yogamājñāpayaṃ tatra janasya*
@@ -156,7 +156,7 @@ brother's command
 [HARIV. 8005.](https://sanskrit-lexicon-scans.github.io/hariv?8005) *yathājñāpayati devaḥ*
 [HIT. 92,1.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?92,1)
 [ŚĀK. 61,14](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?61,14), v. l.
-[DAŚAK.] in [BENF. Chr. 188,8.] *yathājñāpayase*
+[DAŚAK.] in [BENF. Chr. 188,8.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?188) *yathājñāpayase*
 [MBH. 2,2567.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2567) *kimājñāpayanti*
 [ŚĀK. 28,12.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?28,12) *yadājñāpayati bhagavān*
 [112,17.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?112,17) [7,22.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?7,22) [61,14.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?61,14) [HIT. 98,21.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?98,21) [R. 2,52,23.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,52,23) [3,18,11.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,18,11) *yogamājñāpayaṃ tatra janasya*

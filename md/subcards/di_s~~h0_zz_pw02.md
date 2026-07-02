@@ -4,14 +4,14 @@
 
 
 **1)** **2.** *diś*¦ _f._
-— 1〉 Richtung, Himmelsrichtung, Himmelsgegend. *diśi diśi* allerwärts, nach allen Richtungen hin [172,8]. Pl. so v. a. alle Himmelsgegenden und die ganze Welt ([LA. 89,13]). Von einem Erschrockenen heisst es, dass er nach allen Himmelsgegenden aussehe [320,14]. *diśo 'ntāt* Es werden 4,5,6,7,8,9 ([SUPARṆ. 28,3]) und 10 Himmelsrichtungen angenommen. *etā daśa diśaḥ* elliptisch so v. a. alle Wege stehen dir offen, gehe wohin dir beliebt. *diśāṃ vrataṃ daśānugānam* Name eines Sāman.
-- **EN:** **2.** *diś* _f._ — 1) direction, cardinal point, quarter of the sky. *diśi diśi* everywhere, in all directions [172,8]. Pl. thus v. a. all the quarters of the sky and the whole world ([LA. 89,13]). Of a frightened person it is said that he looks about in all directions [320,14]. *diśo 'ntāt* 4, 5, 6, 7, 8, 9 ([SUPARṆ. 28,3]) and 10 cardinal points are assumed. *etā daśa diśaḥ* elliptically thus v. a. all roads lie open to you, go wherever you please. *diśāṃ vrataṃ daśānugānam* name of a Sāman.
+— 1〉 Richtung, Himmelsrichtung, Himmelsgegend. *diśi diśi* allerwärts, nach allen Richtungen hin [172,8](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?172). Pl. so v. a. alle Himmelsgegenden und die ganze Welt ([LA. 89,13]). Von einem Erschrockenen heisst es, dass er nach allen Himmelsgegenden aussehe [320,14](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?320). *diśo 'ntāt* Es werden 4,5,6,7,8,9 ([SUPARṆ. 28,3]) und 10 Himmelsrichtungen angenommen. *etā daśa diśaḥ* elliptisch so v. a. alle Wege stehen dir offen, gehe wohin dir beliebt. *diśāṃ vrataṃ daśānugānam* Name eines Sāman.
+- **EN:** **2.** *diś* _f._ — 1) direction, cardinal point, quarter of the sky. *diśi diśi* everywhere, in all directions [172,8](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?172). Pl. thus v. a. all the quarters of the sky and the whole world ([LA. 89,13]). Of a frightened person it is said that he looks about in all directions [320,14](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?320). *diśo 'ntāt* 4, 5, 6, 7, 8, 9 ([SUPARṆ. 28,3]) and 10 cardinal points are assumed. *etā daśa diśaḥ* elliptically thus v. a. all roads lie open to you, go wherever you please. *diśāṃ vrataṃ daśānugānam* name of a Sāman.
 
 **2)** — 2〉 Bez. der Zahl zehn.
 - **EN:** — 2) Bez. of the number ten.
 
-**3)** — 3〉 Gegend, Ort [113,32].
-- **EN:** — 3) region, place [113,32].
+**3)** — 3〉 Gegend, Ort [113,32](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?113).
+- **EN:** — 3) region, place [113,32](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?113).
 
 **4)** — 4〉 Raum (neben *kāla* Zeit) [KAP. 2,12].
 - **EN:** — 4) space (alongside *kāla* time) [KAP. 2,12].

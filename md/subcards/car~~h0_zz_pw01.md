@@ -15,14 +15,14 @@
 **pw01-acar-head)** — Mit *samā*
 - **EN:** — With *samā*
 
-**pw01-acar-1)** — 1〉 verfahren, zu Werke gehen [163,30]. — gegen (Loc.).
-- **EN:** — 1) to proceed, go about it [163,30]. — toward (Loc.).
+**pw01-acar-1)** — 1〉 verfahren, zu Werke gehen [163,30](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?163). — gegen (Loc.).
+- **EN:** — 1) to proceed, go about it [163,30](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?163). — toward (Loc.).
 
 **pw01-acar-2)** — 2〉 verkehren mit (Instr.) [GAUT. 21,3].
 - **EN:** — 2) to associate with (Instr.) [GAUT. 21,3].
 
-**pw01-acar-3)** — 3〉 gehen an, thun, üben, verrichten, vollbringen, -an Jmd (Loc.) [143,6]. *āhāram* sich nähren von (Instr.). *dūrāt* weit wegthun.
-- **EN:** — 3) to set about, do, practise, perform, accomplish, — to someone (Loc.) [143,6]. *āhāram* to feed on (Instr.). *dūrāt* to put far away.
+**pw01-acar-3)** — 3〉 gehen an, thun, üben, verrichten, vollbringen, -an Jmd (Loc.) [143,6](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?143). *āhāram* sich nähren von (Instr.). *dūrāt* weit wegthun.
+- **EN:** — 3) to set about, do, practise, perform, accomplish, — to someone (Loc.) [143,6](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?143). *āhāram* to feed on (Instr.). *dūrāt* to put far away.
 
 **pw01-anucar2)** — Mit *anusamā* der Reihe nach vollziehen, — vollbringen.
 - **EN:** — With *anusamā* to perform —, accomplish in succession.
@@ -33,8 +33,8 @@
 **pw01-ut-1)** — 1〉 aufgehen (von der Sonne), sich erheben, hervorgehen.
 - **EN:** — 1) to rise (of the sun), arise, emerge.
 
-**pw01-ut-2)** — 2〉 ertönen [291,25].
-- **EN:** — 2) to resound [291,25].
+**pw01-ut-2)** — 2〉 ertönen [291,25](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?291).
+- **EN:** — 2) to resound [291,25](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?291).
 
 **pw01-ut-3)** — 3〉 gravitätisch einherschreiten.
 - **EN:** — 3) to stride along gravely/majestically.
@@ -240,8 +240,8 @@
 **pw01-vini-head)** — Mit *vi*
 - **EN:** — With *vi* (vi-nis)
 
-**pw01-vini-1)** — 1〉 nach verschiedenen Seiten sich hinausbewegen, hinausstreben, sich verbreiten; vom Winde [61,30]. [219,26].
-- **EN:** — 1) to move outward in various directions, push outward, spread; of the wind [61,30]. [219,26].
+**pw01-vini-1)** — 1〉 nach verschiedenen Seiten sich hinausbewegen, hinausstreben, sich verbreiten; vom Winde [61,30](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?61). [219,26](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?219).
+- **EN:** — 1) to move outward in various directions, push outward, spread; of the wind [61,30](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?61). [219,26](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?219).
 
 **pw01-vini-2)** — 2〉 ausrücken, einen Ausfall —, einen Angriff machen.
 - **EN:** — 2) to march out, make a sortie —, make an attack.
@@ -261,8 +261,8 @@
 **pw01-vini-7)** — 7〉 auftreten, zu Werke gehen, verfahren.
 - **EN:** — 7) to appear, go about it, proceed.
 
-**pw01-vini-8)** — 8〉 leben, sein Leben zubringen [217,21].
-- **EN:** — 8) to live, pass one's life [217,21].
+**pw01-vini-8)** — 8〉 leben, sein Leben zubringen [217,21](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?217).
+- **EN:** — 8) to live, pass one's life [217,21](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?217).
 
 **pw01-vini-9)** — 9〉 verkehren —, Umgang pflegen mit (Instr.).
 - **EN:** — 9) to associate with —, keep company with (Instr.).
@@ -291,8 +291,8 @@
 **pw01-vini-caus-3)** — 3〉 in Gedanken hinundher gehen lassen, erwägen, gegen einander abwägen, in Betracht ziehen, prüfen, nachdenken.
 - **EN:** — 3) to turn over in one's mind, weigh up, balance against each other, take into consideration, examine, ponder.
 
-**pw01-vini-caus-4)** — 4〉 in Zweifel ziehen, Bedenken tragen, mit der Entscheidung zögern. *˚cāritā* zweifelhaft [68,26].
-- **EN:** — 4) to call into doubt, have scruples, hesitate with the decision. *˚cāritā* doubtful [68,26].
+**pw01-vini-caus-4)** — 4〉 in Zweifel ziehen, Bedenken tragen, mit der Entscheidung zögern. *˚cāritā* zweifelhaft [68,26](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?68).
+- **EN:** — 4) to call into doubt, have scruples, hesitate with the decision. *˚cāritā* doubtful [68,26](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?68).
 
 **pw01-vini-caus-5)** — 5〉 herausbringen, dahinterkommen, feststellen. *˚cārita* fest stehend.
 - **EN:** — 5) to find out, get to the bottom of, ascertain. *˚cārita* firmly established.

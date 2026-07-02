@@ -113,7 +113,7 @@
 [MBH. 12,4114.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.4114) med. [BHĀG. P. 1,5,27.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,5,27) mit *sādhu* die richtige Einsicht haben
 [M. 7,25.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,25)
 [MBH. 4,1583.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1583)
-[DAŚAK.] in [BENF. Chr. 182,17.] ohne *sādhu* dass.
+[DAŚAK.] in [BENF. Chr. 182,17.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?182) ohne *sādhu* dass.
 [BHAG. 2,69.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?2,69) [5,5.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?5,5) [13,27.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?13,27) [29.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?13,29) [18,16.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?18,16) med. [MBH. 7,4251.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.4251) — *paśyāmi* ich sehe es, ich bin davon überzeugt mitten in den Satz eingeschoben: *tādṛgrūpaṃ ca paśyāmi vidyotayati me gṛham*
 [N. 13,25.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?13,25) Häufig wird *paśya*, um die Aufmerksamkeit zu erregen, interjectionsartig in den Satz eingeschoben oder vorangestellt: *kenāpyutkṣipateva paśya bhuvanaṃ matpārśvamānīyate*
 [ŚĀK. 167.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?167) [7.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?7)
@@ -231,7 +231,7 @@ z. B. [ŚĀK. 5,16.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?5,
 [MBH. 12,4114.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.4114) med. [BHĀG. P. 1,5,27.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,5,27) с *sādhu* иметь верное понимание
 [M. 7,25.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,25)
 [MBH. 4,1583.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1583)
-[DAŚAK.] в [BENF. Chr. 182,17.] без *sādhu* dass.
+[DAŚAK.] в [BENF. Chr. 182,17.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?182) без *sādhu* dass.
 [BHAG. 2,69.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?2,69) [5,5.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?5,5) [13,27.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?13,27) [29.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?13,29) [18,16.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?18,16) med. [MBH. 7,4251.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.4251) — *paśyāmi* «я это вижу, я в этом убеждён», вставленное в середину предложения: *tādṛgrūpaṃ ca paśyāmi vidyotayati me gṛham*
 Часто [N. 13,25.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?13,25) *paśya*, чтобы привлечь внимание, вставляется в предложение или ставится в начале наподобие междометия: *kenāpyutkṣipateva paśya bhuvanaṃ matpārśvamānīyate*
 [ŚĀK. 167.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?167) [7.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?7)
@@ -418,7 +418,7 @@ z. B. [ŚĀK. 5,16.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?5,
 
 **1l)** [M. 7,25.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,25)
 [MBH. 4,1583.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1583)
-[DAŚAK.] in [BENF. Chr. 182,17.] ohne *sādhu* dass.
+[DAŚAK.] in [BENF. Chr. 182,17.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?182) ohne *sādhu* dass.
 [BHAG. 2,69.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?2,69) [5,5.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?5,5) [13,27.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?13,27) [29.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?13,29) [18,16.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?18,16) med. [MBH. 7,4251.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.4251) — *paśyāmi* ich sehe es, ich bin davon überzeugt mitten in den Satz eingeschoben: *tādṛgrūpaṃ ca paśyāmi vidyotayati me gṛham*
 [N. 13,25.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?13,25) Häufig wird *paśya*, um die Aufmerksamkeit zu erregen, interjectionsartig in den Satz eingeschoben oder vorangestellt: *kenāpyutkṣipateva paśya bhuvanaṃ matpārśvamānīyate*
 [ŚĀK. 167.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?167) [7.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?7)
@@ -430,7 +430,7 @@ Sch. *paśya* leitet in prosaischen Schriften häufig einen Vers ein,
 z. B. [ŚĀK. 5,16.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?5,16) [17.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?5,17) [24,8.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?24,8) [27,6.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?27,6) [30,15.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?30,15) [97,15.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?97,15) [111,13.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?111,13) [20.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?111,20)
 - **EN:** [M. 7,25.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,25)
 [MBH. 4,1583.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1583)
-[DAŚAK.] in [BENF. Chr. 182,17.] without *sādhu* dass.
+[DAŚAK.] in [BENF. Chr. 182,17.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?182) without *sādhu* dass.
 [BHAG. 2,69.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?2,69) [5,5.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?5,5) [13,27.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?13,27) [29.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?13,29) [18,16.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?18,16) med. [MBH. 7,4251.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.4251) — *paśyāmi* I see it, I am convinced of it inserted into the middle of the sentence: *tādṛgrūpaṃ ca paśyāmi vidyotayati me gṛham*
 [N. 13,25.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?13,25) Frequently *paśya* is inserted into, or placed before, the sentence interjection-like, in order to draw attention: *kenāpyutkṣipateva paśya bhuvanaṃ matpārśvamānīyate*
 [ŚĀK. 167.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?167) [7.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?7)

@@ -66,20 +66,20 @@
 **vi+dhā–4)** — 4〉 zertheilen.
 - **EN:** — 4〉 to divide up, to separate.
 
-**vi+dhā–5)** — 5〉 anordnen, vorschreiben, festsetzen, bestimmen. Pass. bestimmt sein für (Gen.) [195,24]. gelten für (Nom.). *devaiḥsa me bhartā vihitaḥ* er ist von den Göttern mir zum Gatten bestimmt worden.
-- **EN:** — 5〉 to ordain, to prescribe, to fix, to determine. Pass. to be destined for (Gen.) [195,24]. to count as (Nom.). *devaiḥsa me bhartā vihitaḥ* he has been destined for me as husband by the gods.
+**vi+dhā–5)** — 5〉 anordnen, vorschreiben, festsetzen, bestimmen. Pass. bestimmt sein für (Gen.) [195,24](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?195). gelten für (Nom.). *devaiḥsa me bhartā vihitaḥ* er ist von den Göttern mir zum Gatten bestimmt worden.
+- **EN:** — 5〉 to ordain, to prescribe, to fix, to determine. Pass. to be destined for (Gen.) [195,24](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?195). to count as (Nom.). *devaiḥsa me bhartā vihitaḥ* he has been destined for me as husband by the gods.
 
-**vi+dhā–6)** — 6〉 an den Tag legen, zeigen (einen Gemüthszustand, eine Art und Weise der Benehmens) [146,6]. [170,28].
-- **EN:** — 6〉 to display, to show (a state of mind, a manner of conduct) [146,6]. [170,28].
+**vi+dhā–6)** — 6〉 an den Tag legen, zeigen (einen Gemüthszustand, eine Art und Weise der Benehmens) [146,6](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?146). [170,28](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?170).
+- **EN:** — 6〉 to display, to show (a state of mind, a manner of conduct) [146,6](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?146). [170,28](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?170).
 
-**vi+dhā–7)** — 7〉 finden, ausfindig machen (ein Mittel) [48,23]. [159,8]. [MBH. 3,76,38](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?3,76,38). [R. 3,40,33](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,40,33).
-- **EN:** — 7〉 to find, to discover (a means) [48,23]. [159,8]. [MBH. 3,76,38](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?3,76,38). [R. 3,40,33](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,40,33).
+**vi+dhā–7)** — 7〉 finden, ausfindig machen (ein Mittel) [48,23](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?48). [159,8](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?159). [MBH. 3,76,38](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?3,76,38). [R. 3,40,33](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,40,33).
+- **EN:** — 7〉 to find, to discover (a means) [48,23](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?48). [159,8](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?159). [MBH. 3,76,38](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?3,76,38). [R. 3,40,33](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,40,33).
 
 **vi+dhā–8)** — 8〉 schaffen, hervorbringen, bilden, gründen, bauen, errichten, anlegen, verfassen.
 - **EN:** — 8〉 to create, to produce, to form, to found, to build, to erect, to lay out, to compose.
 
-**vi+dhā–9)** — 9〉 zurechtmachen, herbeischaffen [73,25].
-- **EN:** — 9〉 to prepare, to procure [73,25].
+**vi+dhā–9)** — 9〉 zurechtmachen, herbeischaffen [73,25](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?73).
+- **EN:** — 9〉 to prepare, to procure [73,25](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?73).
 
 **vi+dhā–10)** — 10〉 vollbringen, verrichten, bewerkstelligen, bereiten, verursachen, einrichten, machen, thun. *mantram* Rath halten; *rājyam* die Herrschaft führen, sich der H. bemächtigen, regieren; *sacivatām* die Würde eines Ministers bekleiden. *maitryam* Freundschaft schliessen; *saṃdhim* Frieden schl.; *kalaham* Streit beginnen. *saṃgrāmam* eine Schlacht liefern; *cumbanam* küssen; *kiṃ vidhīyatāṃ tena* was fängt man damit an?
 - **EN:** — 10〉 to accomplish, to perform, to bring about, to prepare, to cause, to arrange, to make, to do. *mantram* to hold counsel; *rājyam* to hold sway, to seize power over H., to rule; *sacivatām* to hold the dignity of a minister. *maitryam* to conclude friendship; *saṃdhim* to make peace schl.; *kalaham* to begin a quarrel. *saṃgrāmam* to give battle; *cumbanam* to kiss; *kiṃ vidhīyatāṃ tena* what is one to do with it?
@@ -146,8 +146,8 @@
 **anu+dhā–4)** — 4〉 nachher bewirken.
 - **EN:** — 4〉 to bring about subsequently.
 
-**anu+dhā–5)** — 5〉 bewirken, bewerkstelligen. [171,22].
-- **EN:** — 5〉 to bring about, to accomplish. [171,22].
+**anu+dhā–5)** — 5〉 bewirken, bewerkstelligen. [171,22](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?171).
+- **EN:** — 5〉 to bring about, to accomplish. [171,22](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?171).
 
 **anu+dhā–6)** — 6〉 Act. Etwas (Acc.) zur Richtschnur nehmen, sich leiten lassen durch (Acc.) [HARṢAC. 1,8]. Pass. sich richten nach (Acc. oder Gen.). *˚hita* sich richtend nach (Gen.).
 - **EN:** — 6〉 Act. to take something (Acc.) as a guiding rule, to let oneself be guided by (Acc.) [HARṢAC. 1,8]. Pass. to act in accordance with (Acc. or Gen.). *˚hita* acting in accordance with (Gen.).
@@ -255,8 +255,8 @@
 **saṃ+dhā–11)** — 11〉 Jmd Etwas zufügen. *sāhāyyam* Jmd Beistand leisten.
 - **EN:** — 11〉 to inflict something on someone. *sāhāyyam* to render assistance to someone.
 
-**saṃ+dhā–12)** — 12〉 Med. Stand halten gegen Jmd (Acc.), es mit Jmd aufnehmen können [251,4].
-- **EN:** — 12〉 Med. to hold one's ground against someone (Acc.), to be able to hold one's own against someone [251,4].
+**saṃ+dhā–12)** — 12〉 Med. Stand halten gegen Jmd (Acc.), es mit Jmd aufnehmen können [251,4](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?251).
+- **EN:** — 12〉 Med. to hold one's ground against someone (Acc.), to be able to hold one's own against someone [251,4](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?251).
 
 **saṃ+dhā–13)** — 13〉 Med. Gebrauch machen von (Instr.).
 - **EN:** — 13〉 Med. to make use of (Instr.).

@@ -832,7 +832,7 @@ to work toward the king remaining true to his word,
 [ŚAT. BR. 3,1,3,13.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,1,3,13) [1,2,3,2.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,2,3,2) *tvaṃ bhā anu cara*
 [ṚV. 8,1,28.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.001.html#rv08.001.28) — *gaṅgāmanu cacāra (anuca˚?)*
 [MBH. 1,3889.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3889) *lokānanucaransarvān*
-[2,144.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.144) [3,8485.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8485) [13,1434.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1434) [R. 1,59,19.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,59,19) [3,68,37.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,68,37) [BHĀG. P. 3,4,9.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,4,9) [6,5,22.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,5,22) [14,14.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,14,14) [DAŚAK.] in [BENF. Chr. 188,23.] *ṛṣisaṃghānucarita (āśrama)*
+[2,144.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.144) [3,8485.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8485) [13,1434.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1434) [R. 1,59,19.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,59,19) [3,68,37.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,68,37) [BHĀG. P. 3,4,9.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,4,9) [6,5,22.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,5,22) [14,14.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,14,14) [DAŚAK.] in [BENF. Chr. 188,23.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?188) *ṛṣisaṃghānucarita (āśrama)*
 [R. 3,11,16.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,11,16) *golāṅgulānucarita (citrakūṭa)*
 [2,54,28.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,54,28) [3,55,21.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,55,21) [79,40.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,79,40) *anucaritaṃ rathaiḥ*
 [5,12,22.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,12,22) *śāśvatī khalu te kītirlokānanucariṣyati*
@@ -850,14 +850,14 @@ to work toward the king remaining true to his word,
 [ŚAT. BR. 3,1,3,13.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,1,3,13) [1,2,3,2.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,2,3,2) *tvaṃ bhā anu cara*
 [ṚV. 8,1,28.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.001.html#rv08.001.28) — *gaṅgāmanu cacāra (anuca˚?)*
 [MBH. 1,3889.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3889) *lokānanucaransarvān*
-[2,144.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.144) [3,8485.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8485) [13,1434.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1434) [R. 1,59,19.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,59,19) [3,68,37.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,68,37) [BHĀG. P. 3,4,9.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,4,9) [6,5,22.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,5,22) [14,14.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,14,14) [DAŚAK.] in [BENF. Chr. 188,23.] *ṛṣisaṃghānucarita (āśrama)*
+[2,144.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.144) [3,8485.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8485) [13,1434.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1434) [R. 1,59,19.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,59,19) [3,68,37.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,68,37) [BHĀG. P. 3,4,9.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,4,9) [6,5,22.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,5,22) [14,14.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,14,14) [DAŚAK.] in [BENF. Chr. 188,23.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?188) *ṛṣisaṃghānucarita (āśrama)*
 [R. 3,11,16.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,11,16) *golāṅgulānucarita (citrakūṭa)*
 [2,54,28.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,54,28) [3,55,21.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,55,21) [79,40.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,79,40) *anucaritaṃ rathaiḥ*
 [5,12,22.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,12,22) *śāśvatī khalu te kītirlokānanucariṣyati*
 [2,85,13.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,85,13) *śriyamanucaratīm*
 [BHĀG. P. 4,31,22.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,31,22) *patimanvacarat*
 [MBH. 4,652. fgg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.652)
-- **EN:** — *anu* 1) to move along — through, to traverse, to pass through; to go after, to pursue, to follow: *yamasya dūtau carato * * janā anu* [ṚV. 10,14,12.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.014.html#rv10.014.12) [AV. 7,57,1.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av07.057.html#av07.057.01) *panthām* [ṚV. 5,51,15.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.051.html#rv05.051.15) *(puruṣaḥ) rakṣo 'ntarikṣamanucarati* [ŚAT. BR. 3,1,3,13.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,1,3,13) [1,2,3,2.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,2,3,2) *tvaṃ bhā anu cara* [ṚV. 8,1,28.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.001.html#rv08.001.28) — *gaṅgāmanu cacāra (anuca˚?)* [MBH. 1,3889.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3889) *lokānanucaransarvān* [2,144.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.144) [3,8485.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8485) [13,1434.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1434) [R. 1,59,19.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,59,19) [3,68,37.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,68,37) [BHĀG. P. 3,4,9.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,4,9) [6,5,22.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,5,22) [14,14.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,14,14) [DAŚAK.] in [BENF. Chr. 188,23.] *ṛṣisaṃghānucarita (āśrama)* [R. 3,11,16.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,11,16) *golāṅgulānucarita (citrakūṭa)* [2,54,28.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,54,28) [3,55,21.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,55,21) [79,40.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,79,40) *anucaritaṃ rathaiḥ* [5,12,22.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,12,22) *śāśvatī khalu te kītirlokānanucariṣyati* [2,85,13.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,85,13) *śriyamanucaratīm* [BHĀG. P. 4,31,22.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,31,22) *patimanvacarat* [MBH. 4,652. fgg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.652)
+- **EN:** — *anu* 1) to move along — through, to traverse, to pass through; to go after, to pursue, to follow: *yamasya dūtau carato * * janā anu* [ṚV. 10,14,12.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.014.html#rv10.014.12) [AV. 7,57,1.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av07.057.html#av07.057.01) *panthām* [ṚV. 5,51,15.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.051.html#rv05.051.15) *(puruṣaḥ) rakṣo 'ntarikṣamanucarati* [ŚAT. BR. 3,1,3,13.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,1,3,13) [1,2,3,2.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,2,3,2) *tvaṃ bhā anu cara* [ṚV. 8,1,28.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.001.html#rv08.001.28) — *gaṅgāmanu cacāra (anuca˚?)* [MBH. 1,3889.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3889) *lokānanucaransarvān* [2,144.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.144) [3,8485.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8485) [13,1434.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1434) [R. 1,59,19.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,59,19) [3,68,37.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,68,37) [BHĀG. P. 3,4,9.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,4,9) [6,5,22.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,5,22) [14,14.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,14,14) [DAŚAK.] in [BENF. Chr. 188,23.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?188) *ṛṣisaṃghānucarita (āśrama)* [R. 3,11,16.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,11,16) *golāṅgulānucarita (citrakūṭa)* [2,54,28.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,54,28) [3,55,21.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,55,21) [79,40.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,79,40) *anucaritaṃ rathaiḥ* [5,12,22.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,12,22) *śāśvatī khalu te kītirlokānanucariṣyati* [2,85,13.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,85,13) *śriyamanucaratīm* [BHĀG. P. 4,31,22.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,31,22) *patimanvacarat* [MBH. 4,652. fgg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.652)
   <sub>DCS 93 · attested</sub>
 
 **2)** — 2) zugehen auf, zustreben, zu erreichen suchen: *anvagraṃ carati*
@@ -1617,7 +1617,7 @@ v. l. *baddhvā) kṛtvā dvāropaveśanam . yatrārthī dāpyate 'rthaṃ sva�
 [MBH. 3,869.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.869) *āhāramekaparṇena ekaparṇā samācarat* nährte sich von einem einzigen Blatte
 [HARIV. 945.](https://sanskrit-lexicon-scans.github.io/hariv?945) *rājendratvam*
 [5992. fg.](https://sanskrit-lexicon-scans.github.io/hariv?5992) *kaṣṭāni tapāṃsi mahānti dānāni dāruṇāni yuddhāni bhīmāni samudralaṅghanādīni*
-[DAŚAK.] в [BENF. Chr. 183,1.] *dūrādāvasathānmūtraṃ dūrātpādāvasecanam . ucchiṣṭānnaṃ niṣekaṃ ca dūrādeva samācaret ..* fern hinthun
+[DAŚAK.] в [BENF. Chr. 183,1.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?183) *dūrādāvasathānmūtraṃ dūrātpādāvasecanam . ucchiṣṭānnaṃ niṣekaṃ ca dūrādeva samācaret ..* fern hinthun
 [M. 4,151.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,151)
 — Vgl. *samācara* u. s. w.
 
@@ -1660,7 +1660,7 @@ v. l. *baddhvā) kṛtvā dvāropaveśanam . yatrārthī dāpyate 'rthaṃ sva�
 [MBH. 3,869.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.869) *āhāramekaparṇena ekaparṇā samācarat* питался одним-единственным листом
 [HARIV. 945.](https://sanskrit-lexicon-scans.github.io/hariv?945) *rājendratvam*
 [5992. fg.](https://sanskrit-lexicon-scans.github.io/hariv?5992) *kaṣṭāni tapāṃsi mahānti dānāni dāruṇāni yuddhāni bhīmāni samudralaṅghanādīni*
-[DAŚAK.] в [BENF. Chr. 183,1.] *dūrādāvasathānmūtraṃ dūrātpādāvasecanam . ucchiṣṭānnaṃ niṣekaṃ ca dūrādeva samācaret ..* отдалить
+[DAŚAK.] в [BENF. Chr. 183,1.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?183) *dūrādāvasathānmūtraṃ dūrātpādāvasecanam . ucchiṣṭānnaṃ niṣekaṃ ca dūrādeva samācaret ..* отдалить
 [M. 4,151.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,151)
 — Vgl. *samācara* u. s. w.
 - **EN:** — 2) to set about, do, practise, perform, accomplish a thing: *śubhaṃ karma*
@@ -1702,7 +1702,7 @@ v. l. *baddhvā) kṛtvā dvāropaveśanam . yatrārthī dāpyate 'rthaṃ sva�
 [MBH. 3,869.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.869) *āhāramekaparṇena ekaparṇā samācarat* who lived on a single leaf
 [HARIV. 945.](https://sanskrit-lexicon-scans.github.io/hariv?945) *rājendratvam*
 [5992. fg.](https://sanskrit-lexicon-scans.github.io/hariv?5992) *kaṣṭāni tapāṃsi mahānti dānāni dāruṇāni yuddhāni bhīmāni samudralaṅghanādīni*
-[DAŚAK.] in [BENF. Chr. 183,1.] *dūrādāvasathānmūtraṃ dūrātpādāvasecanam . ucchiṣṭānnaṃ niṣekaṃ ca dūrādeva samācaret ..* to put far away, banish
+[DAŚAK.] in [BENF. Chr. 183,1.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?183) *dūrādāvasathānmūtraṃ dūrātpādāvasecanam . ucchiṣṭānnaṃ niṣekaṃ ca dūrādeva samācaret ..* to put far away, banish
 [M. 4,151.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,151)
 — Vgl. *samācara* u. s. w.
   <sub>DCS 472 · attested</sub>
@@ -2074,7 +2074,7 @@ Sch. to [JAIM. 1,2,19.] [SĀH. D. 9,1.](https://sanskrit-lexicon-scans.github.io
 [13,5284.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.5284) *kṛtrimasaṃvidhābhiḥ*
 [RAGH. 14,17.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?14,17) *snānena bhojanairvastraiḥ*
 [VID. 252.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?252) *mitratvenopacaritasya*
-[DAŚAK.] in [BENF. Chr. 199,21.] *na yuktaṃ bhavatāhamanṛtenopacaritum*
+[DAŚAK.] in [BENF. Chr. 199,21.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?199) *na yuktaṃ bhavatāhamanṛtenopacaritum*
 [MBH. 1,769.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.769) *anṛtenopacīrṇo hi hanyādeva*
 [4,104.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.104) *nikṛtyopacaranvadhyaḥ*
 [3,467.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.467) med. [13,3037.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3037) [3487.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3487) *tairupacaryamāṇā hanyuḥ sametāndhṛtarāṣṭrasutān* unterstützt
@@ -2100,7 +2100,7 @@ Sch. to [JAIM. 1,2,19.] [SĀH. D. 9,1.](https://sanskrit-lexicon-scans.github.io
 [13,5284.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.5284) *kṛtrimasaṃvidhābhiḥ*
 [RAGH. 14,17.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?14,17) *snānena bhojanairvastraiḥ*
 [VID. 252.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?252) *mitratvenopacaritasya*
-[DAŚAK.] в [BENF. Chr. 199,21.] *na yuktaṃ bhavatāhamanṛtenopacaritum*
+[DAŚAK.] в [BENF. Chr. 199,21.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?199) *na yuktaṃ bhavatāhamanṛtenopacaritum*
 [MBH. 1,769.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.769) *anṛtenopacīrṇo hi hanyādeva*
 [4,104.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.104) *nikṛtyopacaranvadhyaḥ*
 [3,467.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.467) med. [13,3037.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3037) [3487.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3487) *tairupacaryamāṇā hanyuḥ sametāndhṛtarāṣṭrasutān* поддерживаем
@@ -2125,7 +2125,7 @@ Sch. to [JAIM. 1,2,19.] [SĀH. D. 9,1.](https://sanskrit-lexicon-scans.github.io
 [13,5284.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.5284) *kṛtrimasaṃvidhābhiḥ*
 [RAGH. 14,17.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?14,17) *snānena bhojanairvastraiḥ*
 [VID. 252.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?252) *mitratvenopacaritasya*
-[DAŚAK.] in [BENF. Chr. 199,21.] *na yuktaṃ bhavatāhamanṛtenopacaritum*
+[DAŚAK.] in [BENF. Chr. 199,21.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?199) *na yuktaṃ bhavatāhamanṛtenopacaritum*
 [MBH. 1,769.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.769) *anṛtenopacīrṇo hi hanyādeva*
 [4,104.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.104) *nikṛtyopacaranvadhyaḥ*
 [3,467.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.467) med. [13,3037.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3037) [3487.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3487) *tairupacaryamāṇā hanyuḥ sametāndhṛtarāṣṭrasutān* supported
@@ -2986,7 +2986,7 @@ set hand to the liturgical proceedings
 [8,187.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,187) [401.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,401) *mitrāmitraṃ vicārayet*
 [MBH. 12,3826.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3826) *pareṣāmātmanaścaiva yo vicārya balābalam*
 [PAÑCAT. III,87.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?3,87) *pakṣadvayaṃ bhāṣye vicāritam*
-[KAIY.] zu [P. 7,1,30.](https://ashtadhyayi.com/sutraani/7/1/30) [MBH. 1,4370.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4370) [12,11954.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.11954) [BENF. Chr. 15,6.] [P. 8,2,97.](https://ashtadhyayi.com/sutraani/8/2/97) [BHARTṚ. 1,18.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app2?1,18) [PAÑCAT. 191,10.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?191,10) [GAUḌAP.] zu [SĀṂKHYAK. 69.] *suvicārya*
+[KAIY.] zu [P. 7,1,30.](https://ashtadhyayi.com/sutraani/7/1/30) [MBH. 1,4370.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4370) [12,11954.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.11954) [BENF. Chr. 15,6.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?15) [P. 8,2,97.](https://ashtadhyayi.com/sutraani/8/2/97) [BHARTṚ. 1,18.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app2?1,18) [PAÑCAT. 191,10.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?191,10) [GAUḌAP.] zu [SĀṂKHYAK. 69.] *suvicārya*
 [MED. Anh. 3. 4.](https://sanskrit-lexicon-scans.github.io/medini/app1?anh,3) Ohne obj. *vyacīcaram*
 [DAŚAK. 103, ult.] *śakra āste vicārayan* hin und her denkend
 [MBH. 5,255.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.255)
@@ -3006,7 +3006,7 @@ set hand to the liturgical proceedings
 [8,187.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,187) [401.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,401) *mitrāmitraṃ vicārayet*
 [MBH. 12,3826.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3826) *pareṣāmātmanaścaiva yo vicārya balābalam*
 [PAÑCAT. III,87.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?3,87) *pakṣadvayaṃ bhāṣye vicāritam*
-[KAIY.] к [P. 7,1,30.](https://ashtadhyayi.com/sutraani/7/1/30) [MBH. 1,4370.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4370) [12,11954.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.11954) [BENF. Chr. 15,6.] [P. 8,2,97.](https://ashtadhyayi.com/sutraani/8/2/97) [BHARTṚ. 1,18.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app2?1,18) [PAÑCAT. 191,10.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?191,10) [GAUḌAP.] к [SĀṂKHYAK. 69.] *suvicārya*
+[KAIY.] к [P. 7,1,30.](https://ashtadhyayi.com/sutraani/7/1/30) [MBH. 1,4370.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4370) [12,11954.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.11954) [BENF. Chr. 15,6.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?15) [P. 8,2,97.](https://ashtadhyayi.com/sutraani/8/2/97) [BHARTṚ. 1,18.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app2?1,18) [PAÑCAT. 191,10.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?191,10) [GAUḌAP.] к [SĀṂKHYAK. 69.] *suvicārya*
 [MED. Anh. 3. 4.](https://sanskrit-lexicon-scans.github.io/medini/app1?anh,3) Без obj. *vyacīcaram*
 [DAŚAK. 103, ult.] *śakra āste vicārayan* размышляя туда и сюда
 [MBH. 5,255.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.255)
@@ -3025,7 +3025,7 @@ set hand to the liturgical proceedings
 [8,187.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,187) [401.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,401) *mitrāmitraṃ vicārayet*
 [MBH. 12,3826.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3826) *pareṣāmātmanaścaiva yo vicārya balābalam*
 [PAÑCAT. III,87.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?3,87) *pakṣadvayaṃ bhāṣye vicāritam*
-[KAIY.] on [P. 7,1,30.](https://ashtadhyayi.com/sutraani/7/1/30) [MBH. 1,4370.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4370) [12,11954.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.11954) [BENF. Chr. 15,6.] [P. 8,2,97.](https://ashtadhyayi.com/sutraani/8/2/97) [BHARTṚ. 1,18.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app2?1,18) [PAÑCAT. 191,10.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?191,10) [GAUḌAP.] on [SĀṂKHYAK. 69.] *suvicārya*
+[KAIY.] on [P. 7,1,30.](https://ashtadhyayi.com/sutraani/7/1/30) [MBH. 1,4370.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4370) [12,11954.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.11954) [BENF. Chr. 15,6.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?15) [P. 8,2,97.](https://ashtadhyayi.com/sutraani/8/2/97) [BHARTṚ. 1,18.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app2?1,18) [PAÑCAT. 191,10.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?191,10) [GAUḌAP.] on [SĀṂKHYAK. 69.] *suvicārya*
 [MED. Anh. 3. 4.](https://sanskrit-lexicon-scans.github.io/medini/app1?anh,3) Without obj. *vyacīcaram*
 [DAŚAK. 103, ult.] *śakra āste vicārayan* reflecting back and forth
 [MBH. 5,255.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.255)
@@ -3120,16 +3120,16 @@ ziehen, Bedenken tragen, mit der Entscheidung zögern: *antyaṃ padaṃ vicāry
 **1)** — *anuvi*
  1) durchhinschreiten: *urugāyamabhayaṃ tasya tā anu gāvo martyasya vi caranti yajvanaḥ*
 [ṚV. 6,28,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.028.html#rv06.028.04) *tadgṛhamanuvicaran*
-[DAŚAK.] in [BENF. Chr. 201,13.]
+[DAŚAK.] in [BENF. Chr. 201,13.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?201)
 
 - **RU:** — *anuvi*
  1) проходить насквозь: *urugāyamabhayaṃ tasya tā anu gāvo martyasya vi caranti yajvanaḥ*
 [ṚV. 6,28,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.028.html#rv06.028.04) *tadgṛhamanuvicaran*
-[DAŚAK.] в [BENF. Chr. 201,13.]
+[DAŚAK.] в [BENF. Chr. 201,13.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?201)
 - **EN:** — *anuvi*
  1) to stride through, pace through: *urugāyamabhayaṃ tasya tā anu gāvo martyasya vi caranti yajvanaḥ*
 [ṚV. 6,28,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.028.html#rv06.028.04) *tadgṛhamanuvicaran*
-[DAŚAK.] in [BENF. Chr. 201,13.]
+[DAŚAK.] in [BENF. Chr. 201,13.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?201)
   <sub>DCS 10 · attested</sub>
 
 **2)** — 2) hingehen zu: *vi ṣū cara svadhā anu kṛṣṭīnāmanvāhuvaḥ*
@@ -4285,8 +4285,8 @@ vgl. u. 2. *mārga* 2) f).
 **pw00-2)** — 2〉 durchwandern, durchstreichen, durchlaufen; mit Acc.
 - **EN:** — 2) to wander through, roam through, traverse; with Acc.
 
-**pw00-3)** — 3〉 entlang-, nachgehen; mit Acc. [85,2].
-- **EN:** — 3) to go along, follow after; with Acc. [85,2].
+**pw00-3)** — 3〉 entlang-, nachgehen; mit Acc. [85,2](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?85).
+- **EN:** — 3) to go along, follow after; with Acc. [85,2](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?85).
 
 **pw00-4)** — 4〉 sich aufführen, — verhalten, — benehmen, verfahren, handeln, verfahren mit Jmd (Instr. oder Loc.).
 - **EN:** — 4) to conduct oneself, — behave, — comport oneself, proceed, act, deal with someone (Instr. or Loc.).
@@ -4309,8 +4309,8 @@ vgl. u. 2. *mārga* 2) f).
 **pw00-10)** — 10〉 bewirken, hervorbringen, verursachen [MBH. 1,153,17](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?1,153,17). [HARIV. 6790](https://sanskrit-lexicon-scans.github.io/hariv?6790). [Spr. 3474](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3474).
 - **EN:** — 10) to effect, bring about, cause [MBH. 1,153,17](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?1,153,17). [HARIV. 6790](https://sanskrit-lexicon-scans.github.io/hariv?6790). [Spr. 3474](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3474).
 
-**pw00-11)** — 11〉 zu sich nehmen, verzehren, fressen; mit Acc. Ohne Object weiden [142,14].
-- **EN:** — 11) to take in, consume, eat, devour; with Acc. Without an object, to graze [142,14].
+**pw00-11)** — 11〉 zu sich nehmen, verzehren, fressen; mit Acc. Ohne Object weiden [142,14](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?142).
+- **EN:** — 11) to take in, consume, eat, devour; with Acc. Without an object, to graze [142,14](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?142).
 
 **pw00-12)** — 12〉 machen zu, mit doppeltem Acc.
 - **EN:** — 12) to make into, with double Acc.
@@ -4480,8 +4480,8 @@ vgl. u. 2. *mārga* 2) f).
 **pw00-a-head)** — Mit *ā*
 - **EN:** — With *ā* (ā)
 
-**pw00-a-1)** — 1〉 herbeikommen zu, sich nähern; mit Acc. [93,6].
-- **EN:** — 1) to come up to, approach; with Acc. [93,6].
+**pw00-a-1)** — 1〉 herbeikommen zu, sich nähern; mit Acc. [93,6](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?93).
+- **EN:** — 1) to come up to, approach; with Acc. [93,6](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?93).
 
 **pw00-a-2)** — 2〉 hierher, d. i. zur Erde führen (von einem Wege).
 - **EN:** — 2) to lead hither, d. i. lead to the ground (of a path).
@@ -4510,8 +4510,8 @@ vgl. u. 2. *mārga* 2) f).
 **pw00-a-10)** — 10〉 daran gehen, beginnen; mit Infin. [Spr. 7177](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7177).
 - **EN:** — 10) to set about it, begin; with Infin. [Spr. 7177](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7177).
 
-**pw00-a-11)** — 11〉 für richtig erklären, vorschreiben [225,12]. [ṚV. PRĀT. 11,32]. [ŚĀK. 108,22](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?108,22), v. l.
-- **EN:** — 11) to declare correct, prescribe [225,12]. [ṚV. PRĀT. 11,32]. [ŚĀK. 108,22](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?108,22), v. l.
+**pw00-a-11)** — 11〉 für richtig erklären, vorschreiben [225,12](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?225). [ṚV. PRĀT. 11,32]. [ŚĀK. 108,22](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?108,22), v. l.
+- **EN:** — 11) to declare correct, prescribe [225,12](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?225). [ṚV. PRĀT. 11,32]. [ŚĀK. 108,22](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?108,22), v. l.
 
 **pw00-a-12)** — 12〉 verzehren (von Ameisen) [BHĀG. P. 7,3,15](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,3,15).
 - **EN:** — 12) to consume (of ants) [BHĀG. P. 7,3,15](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,3,15).
@@ -4593,14 +4593,14 @@ vgl. u. 2. *mārga* 2) f).
 **pw01-acar-head)** — Mit *samā*
 - **EN:** — With *samā*
 
-**pw01-acar-1)** — 1〉 verfahren, zu Werke gehen [163,30]. — gegen (Loc.).
-- **EN:** — 1) to proceed, go about it [163,30]. — toward (Loc.).
+**pw01-acar-1)** — 1〉 verfahren, zu Werke gehen [163,30](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?163). — gegen (Loc.).
+- **EN:** — 1) to proceed, go about it [163,30](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?163). — toward (Loc.).
 
 **pw01-acar-2)** — 2〉 verkehren mit (Instr.) [GAUT. 21,3].
 - **EN:** — 2) to associate with (Instr.) [GAUT. 21,3].
 
-**pw01-acar-3)** — 3〉 gehen an, thun, üben, verrichten, vollbringen, -an Jmd (Loc.) [143,6]. *āhāram* sich nähren von (Instr.). *dūrāt* weit wegthun.
-- **EN:** — 3) to set about, do, practise, perform, accomplish, — to someone (Loc.) [143,6]. *āhāram* to feed on (Instr.). *dūrāt* to put far away.
+**pw01-acar-3)** — 3〉 gehen an, thun, üben, verrichten, vollbringen, -an Jmd (Loc.) [143,6](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?143). *āhāram* sich nähren von (Instr.). *dūrāt* weit wegthun.
+- **EN:** — 3) to set about, do, practise, perform, accomplish, — to someone (Loc.) [143,6](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?143). *āhāram* to feed on (Instr.). *dūrāt* to put far away.
 
 **pw01-anucar2)** — Mit *anusamā* der Reihe nach vollziehen, — vollbringen.
 - **EN:** — With *anusamā* to perform —, accomplish in succession.
@@ -4611,8 +4611,8 @@ vgl. u. 2. *mārga* 2) f).
 **pw01-ut-1)** — 1〉 aufgehen (von der Sonne), sich erheben, hervorgehen.
 - **EN:** — 1) to rise (of the sun), arise, emerge.
 
-**pw01-ut-2)** — 2〉 ertönen [291,25].
-- **EN:** — 2) to resound [291,25].
+**pw01-ut-2)** — 2〉 ertönen [291,25](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?291).
+- **EN:** — 2) to resound [291,25](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?291).
 
 **pw01-ut-3)** — 3〉 gravitätisch einherschreiten.
 - **EN:** — 3) to stride along gravely/majestically.
@@ -4818,8 +4818,8 @@ vgl. u. 2. *mārga* 2) f).
 **pw01-vini-head)** — Mit *vi*
 - **EN:** — With *vi* (vi-nis)
 
-**pw01-vini-1)** — 1〉 nach verschiedenen Seiten sich hinausbewegen, hinausstreben, sich verbreiten; vom Winde [61,30]. [219,26].
-- **EN:** — 1) to move outward in various directions, push outward, spread; of the wind [61,30]. [219,26].
+**pw01-vini-1)** — 1〉 nach verschiedenen Seiten sich hinausbewegen, hinausstreben, sich verbreiten; vom Winde [61,30](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?61). [219,26](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?219).
+- **EN:** — 1) to move outward in various directions, push outward, spread; of the wind [61,30](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?61). [219,26](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?219).
 
 **pw01-vini-2)** — 2〉 ausrücken, einen Ausfall —, einen Angriff machen.
 - **EN:** — 2) to march out, make a sortie —, make an attack.
@@ -4839,8 +4839,8 @@ vgl. u. 2. *mārga* 2) f).
 **pw01-vini-7)** — 7〉 auftreten, zu Werke gehen, verfahren.
 - **EN:** — 7) to appear, go about it, proceed.
 
-**pw01-vini-8)** — 8〉 leben, sein Leben zubringen [217,21].
-- **EN:** — 8) to live, pass one's life [217,21].
+**pw01-vini-8)** — 8〉 leben, sein Leben zubringen [217,21](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?217).
+- **EN:** — 8) to live, pass one's life [217,21](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?217).
 
 **pw01-vini-9)** — 9〉 verkehren —, Umgang pflegen mit (Instr.).
 - **EN:** — 9) to associate with —, keep company with (Instr.).
@@ -4869,8 +4869,8 @@ vgl. u. 2. *mārga* 2) f).
 **pw01-vini-caus-3)** — 3〉 in Gedanken hinundher gehen lassen, erwägen, gegen einander abwägen, in Betracht ziehen, prüfen, nachdenken.
 - **EN:** — 3) to turn over in one's mind, weigh up, balance against each other, take into consideration, examine, ponder.
 
-**pw01-vini-caus-4)** — 4〉 in Zweifel ziehen, Bedenken tragen, mit der Entscheidung zögern. *˚cāritā* zweifelhaft [68,26].
-- **EN:** — 4) to call into doubt, have scruples, hesitate with the decision. *˚cāritā* doubtful [68,26].
+**pw01-vini-caus-4)** — 4〉 in Zweifel ziehen, Bedenken tragen, mit der Entscheidung zögern. *˚cāritā* zweifelhaft [68,26](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?68).
+- **EN:** — 4) to call into doubt, have scruples, hesitate with the decision. *˚cāritā* doubtful [68,26](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?68).
 
 **pw01-vini-caus-5)** — 5〉 herausbringen, dahinterkommen, feststellen. *˚cārita* fest stehend.
 - **EN:** — 5) to find out, get to the bottom of, ascertain. *˚cārita* firmly established.

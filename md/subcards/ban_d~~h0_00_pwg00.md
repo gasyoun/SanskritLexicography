@@ -74,7 +74,7 @@
 [6,63,3.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av06.063.html#av06.063.03) [121,2.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av06.121.html#av06.121.02) *paśuḥ*
 [9,6,6.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av09.006.html#av09.006.06) *pāśairbadhyate vāruṇairbhṛśam*
 [M. 8,82.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,82) *abadhye*
-[DAŚAK.] in [BENF. Chr. 194,14.] [MBH. 2,238.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.238) [KATHĀS. 33,114.](https://sanskrit-lexicon-scans.github.io/kss/index.html?33,114) [Spr. 237.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?237) *nahi cūḍāmaṇiḥ pāde — badhyate*
+[DAŚAK.] in [BENF. Chr. 194,14.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?194) [MBH. 2,238.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.238) [KATHĀS. 33,114.](https://sanskrit-lexicon-scans.github.io/kss/index.html?33,114) [Spr. 237.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?237) *nahi cūḍāmaṇiḥ pāde — badhyate*
 [3307](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3307), v. l. *balirbabandhe*
 [BHAṬṬ. 2,39.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?2,39) *lauhabandhairbabandhe mano me*
 [14,56.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?14,56) *badhyante nipuṇairagādhasalilānmatsyāḥ *
@@ -96,7 +96,7 @@
 [MBH. 5,7125.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7125) *kathaṃ nu cīraṃ badhnanti munayaḥ vanavāsinaḥ*
 [R. 2,37,12.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,37,12)
 [AK. 2,8,2,31.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?2,8,2,31)
-[DAŚAK.] in [BENF. Chr. 201,4.] [BHAṬṬ. 14,7.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?14,7) *rajjuṃ baddhvātha vā kaṇṭhe*
+[DAŚAK.] in [BENF. Chr. 201,4.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?201) [BHAṬṬ. 14,7.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?14,7) *rajjuṃ baddhvātha vā kaṇṭhe*
 [R. 2,74,29.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,74,29) pass. in dieser Bed.: *srajaṃ tadā badhyati*
 [HARIV. 13088.](https://sanskrit-lexicon-scans.github.io/hariv?13088) — *baddha* gebunden, gefesselt, angebunden, befestigt; gefangen
 [AK. 3,1,42.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,1,42) [3,2,44.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,2,44) [3,4,14,83.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,4,14,83)
@@ -131,7 +131,7 @@
 [HARIV. 8687.](https://sanskrit-lexicon-scans.github.io/hariv?8687) *˚tūṇa, ˚kakṣa, ˚godha, baddhāṅgulitra, baddhāyudha* u. s. w.
 [MBH. 1,5334.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5334) [5,7131.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7131)
 [MĀLAV. 68,8.](https://sanskrit-lexicon-scans.github.io/malavikagni/app2?68,8)
-[DAŚAK.] in [BENF. Chr. 186,9.] [KATHĀS. 40,2.](https://sanskrit-lexicon-scans.github.io/kss/index.html?40,2) *asibaddha* mit einem Messer umgürtet
+[DAŚAK.] in [BENF. Chr. 186,9.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?186) [KATHĀS. 40,2.](https://sanskrit-lexicon-scans.github.io/kss/index.html?40,2) *asibaddha* mit einem Messer umgürtet
 [ŚĀṄKH. ŚR. 14,22,20.] *talabaddha* (= *baddhatala)*
 [MBH. 6,621.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.621)
 [HARIV. 12529.](https://sanskrit-lexicon-scans.github.io/hariv?12529) [13246.](https://sanskrit-lexicon-scans.github.io/hariv?13246) *paścādbāhubaddha* dem die Hände auf den Rücken gebunden sind
@@ -203,7 +203,7 @@ Schol. zu [24.](https://ashtadhyayi.com/sutraani/2/3/24)
 [6,63,3.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av06.063.html#av06.063.03) [121,2.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av06.121.html#av06.121.02) *paśuḥ*
 [9,6,6.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av09.006.html#av09.006.06) *pāśairbadhyate vāruṇairbhṛśam*
 [M. 8,82.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,82) *abadhye*
-[DAŚAK.] в [BENF. Chr. 194,14.] [MBH. 2,238.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.238) [KATHĀS. 33,114.](https://sanskrit-lexicon-scans.github.io/kss/index.html?33,114) [Spr. 237.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?237) *nahi cūḍāmaṇiḥ pāde — badhyate*
+[DAŚAK.] в [BENF. Chr. 194,14.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?194) [MBH. 2,238.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.238) [KATHĀS. 33,114.](https://sanskrit-lexicon-scans.github.io/kss/index.html?33,114) [Spr. 237.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?237) *nahi cūḍāmaṇiḥ pāde — badhyate*
 [3307](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3307), v. l. *balirbabandhe*
 [BHAṬṬ. 2,39.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?2,39) *lauhabandhairbabandhe mano me*
 [14,56.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?14,56) *badhyante nipuṇairagādhasalilānmatsyāḥ *
@@ -225,7 +225,7 @@ Schol. zu [24.](https://ashtadhyayi.com/sutraani/2/3/24)
 [MBH. 5,7125.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7125) *kathaṃ nu cīraṃ badhnanti munayaḥ vanavāsinaḥ*
 [R. 2,37,12.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,37,12)
 [AK. 2,8,2,31.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?2,8,2,31)
-[DAŚAK.] в [BENF. Chr. 201,4.] [BHAṬṬ. 14,7.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?14,7) *rajjuṃ baddhvātha vā kaṇṭhe*
+[DAŚAK.] в [BENF. Chr. 201,4.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?201) [BHAṬṬ. 14,7.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?14,7) *rajjuṃ baddhvātha vā kaṇṭhe*
 [R. 2,74,29.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,74,29) pass. в этом Bed.: *srajaṃ tadā badhyati*
 [HARIV. 13088.](https://sanskrit-lexicon-scans.github.io/hariv?13088) — *baddha* связанный, закованный в оковы, привязанный, прикреплённый; взятый в плен
 [AK. 3,1,42.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,1,42) [3,2,44.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,2,44) [3,4,14,83.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,4,14,83)
@@ -260,7 +260,7 @@ Schol. zu [24.](https://ashtadhyayi.com/sutraani/2/3/24)
 [HARIV. 8687.](https://sanskrit-lexicon-scans.github.io/hariv?8687) *˚tūṇa, ˚kakṣa, ˚godha, baddhāṅgulitra, baddhāyudha* u. s. w.
 [MBH. 1,5334.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5334) [5,7131.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7131)
 [MĀLAV. 68,8.](https://sanskrit-lexicon-scans.github.io/malavikagni/app2?68,8)
-[DAŚAK.] в [BENF. Chr. 186,9.] [KATHĀS. 40,2.](https://sanskrit-lexicon-scans.github.io/kss/index.html?40,2) *asibaddha* опоясанный ножом
+[DAŚAK.] в [BENF. Chr. 186,9.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?186) [KATHĀS. 40,2.](https://sanskrit-lexicon-scans.github.io/kss/index.html?40,2) *asibaddha* опоясанный ножом
 [ŚĀṄKH. ŚR. 14,22,20.] *talabaddha* (= *baddhatala)*
 [MBH. 6,621.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.621)
 [HARIV. 12529.](https://sanskrit-lexicon-scans.github.io/hariv?12529) [13246.](https://sanskrit-lexicon-scans.github.io/hariv?13246) *paścādbāhubaddha* у кого руки связаны за спиной

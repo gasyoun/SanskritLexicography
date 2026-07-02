@@ -219,7 +219,7 @@
 [4,34,8.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av04.034.html#av04.034.08) [11,1,28.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av11.001.html#av11.001.28) [33.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av11.001.html#av11.001.33) [ŚAT. BR. 2,2,1,14.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,2,1,14) [3,4,1.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,3,4,1) *pratigṛhyā ni dhatte* für sich aufbewahren
 [ṚV. 1,125,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.125.html#rv01.125.01) *sanema ni ca dhīmahi*
 [17,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.017.html#rv01.017.06) — *kvacinmuṣitakaṃ nidhāya*
-[DAŚAK.] in [BENF. Chr. 188,14.] *yaṃ tu paśyennidhiṃ rājā purāṇaṃ nihitaṃ kṣitau*
+[DAŚAK.] in [BENF. Chr. 188,14.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?188) *yaṃ tu paśyennidhiṃ rājā purāṇaṃ nihitaṃ kṣitau*
 [M. 8,38.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,38) *(śamīm) tāmupāruhya nakulo dhanūṃṣi nidadhe svayam*
 [MBH. 4,170.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.170) *yajñapātrāṇi ratnānyābharaṇāni ca . nyadadhuḥ pāṇḍavā rājannāśrame vṛṣaparvaṇaḥ ..*
 [3,11549.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11549) [R. 2,31,31.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,31,31) [5,32,31.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,32,31) *ācaṣṭa bhavatīṃ devīṃ nihitāṃ rāvaṇālaye*
@@ -252,7 +252,7 @@
 [4,34,8.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av04.034.html#av04.034.08) [11,1,28.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av11.001.html#av11.001.28) [33.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av11.001.html#av11.001.33) [ŚAT. BR. 2,2,1,14.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,2,1,14) [3,4,1.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,3,4,1) *pratigṛhyā ni dhatte* хранить у себя
 [ṚV. 1,125,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.125.html#rv01.125.01) *sanema ni ca dhīmahi*
 [17,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.017.html#rv01.017.06) — *kvacinmuṣitakaṃ nidhāya*
-[DAŚAK.] в [BENF. Chr. 188,14.] *yaṃ tu paśyennidhiṃ rājā purāṇaṃ nihitaṃ kṣitau*
+[DAŚAK.] в [BENF. Chr. 188,14.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?188) *yaṃ tu paśyennidhiṃ rājā purāṇaṃ nihitaṃ kṣitau*
 [M. 8,38.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,38) *(śamīm) tāmupāruhya nakulo dhanūṃṣi nidadhe svayam*
 [MBH. 4,170.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.170) *yajñapātrāṇi ratnānyābharaṇāni ca . nyadadhuḥ pāṇḍavā rājannāśrame vṛṣaparvaṇaḥ ..*
 [3,11549.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11549) [R. 2,31,31.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,31,31) [5,32,31.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,32,31) *ācaṣṭa bhavatīṃ devīṃ nihitāṃ rāvaṇālaye*
@@ -284,7 +284,7 @@
 [4,34,8.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av04.034.html#av04.034.08) [11,1,28.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av11.001.html#av11.001.28) [33.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av11.001.html#av11.001.33) [ŚAT. BR. 2,2,1,14.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,2,1,14) [3,4,1.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,3,4,1) *pratigṛhyā ni dhatte* to keep for oneself
 [ṚV. 1,125,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.125.html#rv01.125.01) *sanema ni ca dhīmahi*
 [17,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.017.html#rv01.017.06) — *kvacinmuṣitakaṃ nidhāya*
-[DAŚAK.] in [BENF. Chr. 188,14.] *yaṃ tu paśyennidhiṃ rājā purāṇaṃ nihitaṃ kṣitau*
+[DAŚAK.] in [BENF. Chr. 188,14.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?188) *yaṃ tu paśyennidhiṃ rājā purāṇaṃ nihitaṃ kṣitau*
 [M. 8,38.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,38) *(śamīm) tāmupāruhya nakulo dhanūṃṣi nidadhe svayam*
 [MBH. 4,170.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.170) *yajñapātrāṇi ratnānyābharaṇāni ca . nyadadhuḥ pāṇḍavā rājannāśrame vṛṣaparvaṇaḥ ..*
 [3,11549.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11549) [R. 2,31,31.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,31,31) [5,32,31.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,32,31) *ācaṣṭa bhavatīṃ devīṃ nihitāṃ rāvaṇālaye*

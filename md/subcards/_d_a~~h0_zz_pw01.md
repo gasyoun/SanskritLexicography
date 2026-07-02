@@ -9,11 +9,11 @@
 **Mit ā+pra (prefix group))** — Mit *ā*
 - **EN:** — With *ā*
 
-**1)** — 1〉 hinstellen, legen —, setzen —, bringen in, an oder auf (Loc.), Leibesfrucht hineinlegen in ein Weib (Gen.) [71,9]. Tugenden Jmd (Loc.) einimpfen, dem Blick, den Sinn, die Gedanken richten auf (Loc.), Sorgfalt verwenden auf (*pratipātram*), eine Schuld auf Jmd (Loc.) wälzen, Furcht Jmd (Loc.) einjagen. In der späteren Sprache gewöhnlich Med. *āhita* aufgelegt, hineingelegt (Leibesfrucht [73,6]).
-- **EN:** — 1〉 to place, lay, set, bring in, at, or upon (Loc.); to insert an embryo in a woman (Gen.) [71,9]; to instil virtues into someone (Loc.); to direct the gaze, the mind, the thoughts upon (Loc.); to apply care to (*pratipātram*); to shift a blame onto someone (Loc.); to instil fear into someone (Loc.). In the later language usually Med. *āhita* placed upon, inserted (embryo [73,6]).
+**1)** — 1〉 hinstellen, legen —, setzen —, bringen in, an oder auf (Loc.), Leibesfrucht hineinlegen in ein Weib (Gen.) [71,9](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?71). Tugenden Jmd (Loc.) einimpfen, dem Blick, den Sinn, die Gedanken richten auf (Loc.), Sorgfalt verwenden auf (*pratipātram*), eine Schuld auf Jmd (Loc.) wälzen, Furcht Jmd (Loc.) einjagen. In der späteren Sprache gewöhnlich Med. *āhita* aufgelegt, hineingelegt (Leibesfrucht [73,6](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?73)).
+- **EN:** — 1〉 to place, lay, set, bring in, at, or upon (Loc.); to insert an embryo in a woman (Gen.) [71,9](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?71); to instil virtues into someone (Loc.); to direct the gaze, the mind, the thoughts upon (Loc.); to apply care to (*pratipātram*); to shift a blame onto someone (Loc.); to instil fear into someone (Loc.). In the later language usually Med. *āhita* placed upon, inserted (embryo [73,6](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?73)).
 
-**2)** — 2〉 Holz zulegen (zum Feuer) [37,16]. [20]. [38,5].
-- **EN:** — 2〉 to add wood (to the fire) [37,16]. [20]. [38,5].
+**2)** — 2〉 Holz zulegen (zum Feuer) [37,16](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?37). [20](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?37). [38,5](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?38).
+- **EN:** — 2〉 to add wood (to the fire) [37,16](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?37). [20](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?37). [38,5](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?38).
 
 **3)** — 3〉 einsetzen (im Spiel).
 - **EN:** — 3〉 to stake (in gambling).
@@ -48,8 +48,8 @@
 **13)** — 13〉 zu oder in sich aufnehmen eine Lehre annehmen (buddh.), ein Gelübde auf sich nehmen, — thun (*āhita* gethan), einem Gemüthszustande sich hingeben. Ausnahmsweise Act.
 - **EN:** — 13〉 to receive into or within oneself; to accept a teaching (buddh.); to take upon oneself or make a vow (*āhita* made); to give oneself over to a state of mind. Exceptionally Act.
 
-**14)** — 14〉 hervorbringen, bewirken, verursachen [324,30]. *sāṃmukhyam* so v. a. sich wenden an. Ausnahmsweise Act.
-- **EN:** — 14〉 to produce, bring about, cause [324,30]. *sāṃmukhyam* hence v. a. to turn to. Exceptionally Act.
+**14)** — 14〉 hervorbringen, bewirken, verursachen [324,30](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?324). *sāṃmukhyam* so v. a. sich wenden an. Ausnahmsweise Act.
+- **EN:** — 14〉 to produce, bring about, cause [324,30](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?324). *sāṃmukhyam* hence v. a. to turn to. Exceptionally Act.
 
 **15)** — 15〉 *āhita* [PAÑCAT. 43,4](https://sanskrit-lexicon-scans.github.io/pantankose/app2?43,4) fehlerhaft für *āvṛta* (so [ed. Bomb.]); *ādhāta* [CAURAP. 16](https://sanskrit-lexicon-scans.github.io/bhartrhari/app1?16) ebenfalls fehlerhaft.
 - **EN:** — 15〉 *āhita* [PAÑCAT. 43,4](https://sanskrit-lexicon-scans.github.io/pantankose/app2?43,4) erroneously for *āvṛta* (so [ed. Bomb.]); *ādhāta* [CAURAP. 16](https://sanskrit-lexicon-scans.github.io/bhartrhari/app1?16) likewise erroneous.
@@ -117,8 +117,8 @@
 **ā.1)** — 1〉 anlegen an (Loc.), setzen auf (Loc.). **upāhita* daraufgesetzt.
 - **EN:** — 1〉 to apply to (Loc.), to place upon (Loc.). **upāhita* placed upon.
 
-**ā.2)** — 2〉 Med. ergreifen (*daṇḍam*) [MBH. 12,15,4](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,15,4). *upādāya* mit sich nehmend, mit (Acc.) [Chr. 28,28].
-- **EN:** — 2〉 Med. to seize (*daṇḍam*) [MBH. 12,15,4](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,15,4). *upādāya* taking along, with (Acc.) [Chr. 28,28].
+**ā.2)** — 2〉 Med. ergreifen (*daṇḍam*) [MBH. 12,15,4](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,15,4). *upādāya* mit sich nehmend, mit (Acc.) [Chr. 28,28](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?28).
+- **EN:** — 2〉 Med. to seize (*daṇḍam*) [MBH. 12,15,4](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,15,4). *upādāya* taking along, with (Acc.) [Chr. 28,28](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?28).
 
 **ā.3)** — 3〉 Med. mit *ātmani* bei sich behalten.
 - **EN:** — 3〉 Med. with *ātmani* to keep with oneself.
@@ -195,8 +195,8 @@
 **sam.6)** — 6〉 einsetzen in (Loc.).
 - **EN:** — 6〉 to install in (Loc.).
 
-**sam.7)** — 7〉 vereinigen, verbinden, zusammenhalten. *samāhita* vereinigt —, verbunden —, versehen mit (Instr. oder im Comp. vorangehend). Pl. vereint, versammelt [69,20]. alle insgesammt.
-- **EN:** — 7〉 to unite, join, hold together. *samāhita* united, joined, furnished with (Instr. or preceding in the Comp.). Pl. united, assembled [69,20]. all together.
+**sam.7)** — 7〉 vereinigen, verbinden, zusammenhalten. *samāhita* vereinigt —, verbunden —, versehen mit (Instr. oder im Comp. vorangehend). Pl. vereint, versammelt [69,20](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?69). alle insgesammt.
+- **EN:** — 7〉 to unite, join, hold together. *samāhita* united, joined, furnished with (Instr. or preceding in the Comp.). Pl. united, assembled [69,20](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?69). all together.
 
 **sam.8)** — 8〉 in Ordnung bringen, wieder gut machen.
 - **EN:** — 8〉 to put in order, to restore, to make good again.
@@ -279,8 +279,8 @@
 **Mit ni)** — Mit *upa*
 - **EN:** — With *upa*
 
-**ni.1)** — 1〉 auflegen, anlegen, aufsetzen, legen auf (Loc. [37,30]. [ŚULBAS. 3,47]) oder in (Loc.), stellen (*adhastāt* unter Etwas), stecken —, setzen in (Loc.), auf das Feuer setzen, anlegen, so v. a. anschirren (Rosse). *hṛdi* inʼs Herz schliessen, so v. a. beherzigen. *upāhita* gesetzt auf (im Comp. vorangehend), angelegt, angebracht, hineingesteckt, eingefasst (Edelstein) in (Loc.).
-- **EN:** — 1〉 to lay on, apply, put on, place upon (Loc. [37,30]. [ŚULBAS. 3,47]) or in (Loc.), to set (*adhastāt* beneath something), to insert or place in (Loc.), to set on the fire, to lay, hence v. a. to harness (horses). *hṛdi* to take to heart, hence v. a. to take to heart, to heed. *upāhita* placed upon (preceding in the Comp.), applied, attached, inserted, set (gem) in (Loc.).
+**ni.1)** — 1〉 auflegen, anlegen, aufsetzen, legen auf (Loc. [37,30](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?37). [ŚULBAS. 3,47]) oder in (Loc.), stellen (*adhastāt* unter Etwas), stecken —, setzen in (Loc.), auf das Feuer setzen, anlegen, so v. a. anschirren (Rosse). *hṛdi* inʼs Herz schliessen, so v. a. beherzigen. *upāhita* gesetzt auf (im Comp. vorangehend), angelegt, angebracht, hineingesteckt, eingefasst (Edelstein) in (Loc.).
+- **EN:** — 1〉 to lay on, apply, put on, place upon (Loc. [37,30](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?37). [ŚULBAS. 3,47]) or in (Loc.), to set (*adhastāt* beneath something), to insert or place in (Loc.), to set on the fire, to lay, hence v. a. to harness (horses). *hṛdi* to take to heart, hence v. a. to take to heart, to heed. *upāhita* placed upon (preceding in the Comp.), applied, attached, inserted, set (gem) in (Loc.).
 
 **ni.2)** — 2〉 Etwas sich unterlegen, sich legen auf (Acc.).
 - **EN:** — 2〉 to lay something beneath oneself, to lie down upon (Acc.).
@@ -300,5 +300,5 @@
 **ni.7)** — 7〉 anwenden. *kriyā vastūpahitā* auf eine gute Sache verwendete Mühe.
 - **EN:** — 7〉 to apply. *kriyā vastūpahitā* effort applied to a good cause.
 
-**ni.8)** — 8〉 voraussetzen, supponiren. Nur Pass. und *upahita* vorausgesetzt, bedingt durch (im Comp. vorangehend) [259,1]. [260,1].
-- **EN:** — 8〉 to presuppose, to suppose. Only Pass. and *upahita* presupposed, conditioned by (preceding in the Comp.) [259,1]. [260,1].
+**ni.8)** — 8〉 voraussetzen, supponiren. Nur Pass. und *upahita* vorausgesetzt, bedingt durch (im Comp. vorangehend) [259,1](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?259). [260,1](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?260).
+- **EN:** — 8〉 to presuppose, to suppose. Only Pass. and *upahita* presupposed, conditioned by (preceding in the Comp.) [259,1](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?259). [260,1](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?260).

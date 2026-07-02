@@ -57,14 +57,14 @@
 **prefix-4-1)** — 1〉 antreiben [Comm. zu LĀṬY. 8,6,3].
 - **EN:** — 1〉 to urge on, to drive [Comm. zu LĀṬY. 8,6,3].
 
-**prefix-4-2)** — 2〉 *āsiddha* verhaftet [213,29]. [30,33].
-- **EN:** — 2〉 *āsiddha* arrested [213,29]. [30,33].
+**prefix-4-2)** — 2〉 *āsiddha* verhaftet [213,29](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?213). [30,33](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?30).
+- **EN:** — 2〉 *āsiddha* arrested [213,29](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?213). [30,33](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?30).
 
 **prefix-5-intro)** — Caus. *āsedhayati*
 - **EN:** — Caus. *āsedhayati*
 
-**prefix-5-1)** — 1〉 verhaften lassen [213,27].
-- **EN:** — 1〉 to have arrested [213,27].
+**prefix-5-1)** — 1〉 verhaften lassen [213,27](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?213).
+- **EN:** — 1〉 to have arrested [213,27](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?213).
 
 **prefix-5-2)** — 2〉 anheften [BĀLAR. 208,13].
 - **EN:** — 2〉 to attach, to fasten on [BĀLAR. 208,13].
@@ -111,8 +111,8 @@
 **prefix-10-4)** — 4〉 Etwas verwehren, verbieten, untersagen, sich gegen Etwas erklären, Einspruch erheben; mit Acc. der Sache. *niṣiddha* verwehrt, verboten, untersagt, verboten zu (Infin.).
 - **EN:** — 4〉 to refuse something, to forbid, to prohibit, to declare oneself against something, to raise objection; with Acc. of the matter. *niṣiddha* refused, forbidden, prohibited, forbidden to (Infin.).
 
-**prefix-10-5)** — 5〉 *Etwas verwehren, nicht aufkommen lassen, so v. a. übertreiben (*sadṛśye*) [251,8].
-- **EN:** — 5〉 *to refuse something, not let it arise, thus v. a. to exaggerate (*sadṛśye*) [251,8].
+**prefix-10-5)** — 5〉 *Etwas verwehren, nicht aufkommen lassen, so v. a. übertreiben (*sadṛśye*) [251,8](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?251).
+- **EN:** — 5〉 *to refuse something, not let it arise, thus v. a. to exaggerate (*sadṛśye*) [251,8](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?251).
 
 **prefix-11-intro)** — Caus. *niṣedhayati*
 - **EN:** — Caus. *niṣedhayati*
@@ -216,19 +216,19 @@
 
 **ni-1)** — Mit *ā*
 — 1〉 antreiben [Comm. zu LĀṬY. 8,6,3].
-— 2〉 *āsiddha* verhaftet [213,29]. [30,33].
+— 2〉 *āsiddha* verhaftet [213,29](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?213). [30,33](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?30).
 
 - **RU:** — С *ā*
 — 1〉 понукать [Comm. zu LĀṬY. 8,6,3].
-— 2〉 *āsiddha* задержанный [213,29]. [30,33].
+— 2〉 *āsiddha* задержанный [213,29](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?213). [30,33](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?30).
   <sub>DCS 2028 · attested</sub>
 
 **ni-caus-1)** — Caus. *āsedhayati*
-— 1〉 verhaften lassen [213,27].
+— 1〉 verhaften lassen [213,27](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?213).
 — 2〉 anheften [BĀLAR. 208,13].
 
 - **RU:** — Caus. *āsedhayati*
-— 1〉 велеть задержать [213,27].
+— 1〉 велеть задержать [213,27](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?213).
 — 2〉 прикреплять [BĀLAR. 208,13].
   <sub>DCS 2028 · attested</sub>
 
@@ -246,14 +246,14 @@
 — 2〉 Jmd abwehren, abhalten, abzubringen suchen von Etwas (Abl.), es Jmd (Acc.) verbieten. *niṣiddha* abgewehrt, abgehalten, dem man Etwas untersagt hat. *niṣiddhavant* abgewehrt habend.
 — 3〉 Etwas abwehren [BHAṬṬ.]
 — 4〉 Etwas verwehren, verbieten, untersagen, sich gegen Etwas erklären, Einspruch erheben; mit Acc. der Sache. *niṣiddha* verwehrt, verboten, untersagt, verboten zu (Infin.).
-— 5〉 *Etwas verwehren, nicht aufkommen lassen, so v. a. übertreiben (*sadṛśye*) [251,8].
+— 5〉 *Etwas verwehren, nicht aufkommen lassen, so v. a. übertreiben (*sadṛśye*) [251,8](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?251).
 
 - **RU:** — С *ni*
 — 1〉 прогонять.
 — 2〉 отражать кого-л., удерживать, стремиться отвадить от чего-л. (Abl.), запрещать кому-л. (Acc.). *niṣiddha* отражённый, удерживаемый, которому что-л. запрещено. *niṣiddhavant* отразивший.
 — 3〉 отражать что-л. [BHAṬṬ.]
 — 4〉 запрещать что-л., воспрещать, отклонять, выступать против чего-л., заявлять протест; с Acc. предмета. *niṣiddha* воспрещённый, запрещённый, запрещённый к (Infin.).
-— 5〉 *запрещать что-л., не давать распространяться,/} так v. a. {%преувеличивать (*sadṛśye*) [251,8].
+— 5〉 *запрещать что-л., не давать распространяться,/} так v. a. {%преувеличивать (*sadṛśye*) [251,8](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?251).
   <sub>DCS 2028 · attested</sub>
 
 **prati-caus-1)** — Caus. *niṣedhayati*

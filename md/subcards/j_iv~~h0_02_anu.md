@@ -44,14 +44,14 @@
 
 **4)** — 4) sich in Etwas (acc.) fügen, Jmd Etwas gönnen: *yāṃ tāṃ śriyamasūyāma purā dṛṣṭvā yudhiṣṭhire . adya tāmanujīvāmaḥ*
 [MBH. 7,428.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.428) — caus. Jmd wieder zum Leben bringen
-[DAŚAK.] in [BENF. Chr. 187,9.]
+[DAŚAK.] in [BENF. Chr. 187,9.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?187)
 
 - **RU:** 4) смиряться с чем-л. (acc.), желать кому-л. чего-л.: *yāṃ tāṃ śriyamasūyāma purā dṛṣṭvā yudhiṣṭhire . adya tāmanujīvāmaḥ*
 [MBH. 7,428.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.428) — caus. возвращать кого-л. к жизни
-[DAŚAK.] в [BENF. Chr. 187,9.]
+[DAŚAK.] в [BENF. Chr. 187,9.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?187)
 - **EN:** — 4) to acquiesce in something (acc.) , to grant someone something: *yāṃ tāṃ śriyamasūyāma purā dṛṣṭvā yudhiṣṭhire . adya tāmanujīvāmaḥ*
 [MBH. 7,428.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.428) — caus. to bring someone back to life
-[DAŚAK.] in [BENF. Chr. 187,9.]
+[DAŚAK.] in [BENF. Chr. 187,9.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?187)
   <sub>attested</sub>
 
 **note)** — Vgl. *anujīvin, anujīvya* .

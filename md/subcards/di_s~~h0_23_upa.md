@@ -21,7 +21,7 @@
 [R. 3,75,35.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,75,35) *kenedamupadiṣṭaṃ te mṛtyudvāramapāvṛtam*
 [43,40.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,43,40) [45,3.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,45,3) [2.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,45,2) *upadiṣṭamihecchāmi tāpasyam*
 [MBH. 5,6019.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.6019) *tasya — tvayāpratibhidya rahasyaṃ labdhavyo mokṣa ityupadiśya*
-[DAŚAK.] in [BENF. Chr. 199,22.] *uṣadekṣyāmi te śreyaḥ*
+[DAŚAK.] in [BENF. Chr. 199,22.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?199) *uṣadekṣyāmi te śreyaḥ*
 [MBH. 3,2614.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2614)
 [R. 1,24,11.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,24,11) —
 [ŚAT. BR. 13,4,3,3.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?13,4,3,3)
@@ -51,7 +51,7 @@
 [R. 3,75,35.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,75,35) *kenedamupadiṣṭaṃ te mṛtyudvāramapāvṛtam*
 [43,40.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,43,40) [45,3.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,45,3) [2.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,45,2) *upadiṣṭamihecchāmi tāpasyam*
 [MBH. 5,6019.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.6019) *tasya — tvayāpratibhidya rahasyaṃ labdhavyo mokṣa ityupadiśya*
-[DAŚAK.] в [BENF. Chr. 199,22.] *uṣadekṣyāmi te śreyaḥ*
+[DAŚAK.] в [BENF. Chr. 199,22.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?199) *uṣadekṣyāmi te śreyaḥ*
 [MBH. 3,2614.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2614)
 [R. 1,24,11.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,24,11) —
 [ŚAT. BR. 13,4,3,3.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?13,4,3,3)
@@ -80,7 +80,7 @@
 [R. 3,75,35.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,75,35) *kenedamupadiṣṭaṃ te mṛtyudvāramapāvṛtam*
 [43,40.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,43,40) [45,3.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,45,3) [2.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,45,2) *upadiṣṭamihecchāmi tāpasyam*
 [MBH. 5,6019.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.6019) *tasya — tvayāpratibhidya rahasyaṃ labdhavyo mokṣa ityupadiśya*
-[DAŚAK.] in [BENF. Chr. 199,22.] *uṣadekṣyāmi te śreyaḥ*
+[DAŚAK.] in [BENF. Chr. 199,22.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?199) *uṣadekṣyāmi te śreyaḥ*
 [MBH. 3,2614.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2614)
 [R. 1,24,11.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,24,11) —
 [ŚAT. BR. 13,4,3,3.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?13,4,3,3)
@@ -139,14 +139,14 @@
   <sub>DCS 804 · attested</sub>
 
 **5)** — 5) Jmd (acc.) anweisen. belehren: *vidvānevopadeṣṭavyo nāvidvāṃstu kadā ca na . vānarānupadiśyājñānsthānabhraṃśaṃ yayuḥ khagāḥ ..*
-[HIT. III,5.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?3,5) [DAŚAK.] in [BENF. Chr. 185,1.] [VEDĀNTAS. (Allah.) No. 19.] Mit acc. der Person und acc. der Sache: *ājagāma gharmaḥ priyā veṣamivopadeṣṭum*
+[HIT. III,5.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?3,5) [DAŚAK.] in [BENF. Chr. 185,1.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?185) [VEDĀNTAS. (Allah.) No. 19.] Mit acc. der Person und acc. der Sache: *ājagāma gharmaḥ priyā veṣamivopadeṣṭum*
 [RAGH. 16,43.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?16,43)
 
 - **RU:** — 5) наставлять, обучать кого-л. (acc.): *vidvānevopadeṣṭavyo nāvidvāṃstu kadā ca na . vānarānupadiśyājñānsthānabhraṃśaṃ yayuḥ khagāḥ ..*
-[HIT. III,5.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?3,5) [DAŚAK.] в [BENF. Chr. 185,1.] [VEDĀNTAS. (Allah.) No. 19.] с acc. лица и acc. предмета: *ājagāma gharmaḥ priyā veṣamivopadeṣṭum*
+[HIT. III,5.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?3,5) [DAŚAK.] в [BENF. Chr. 185,1.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?185) [VEDĀNTAS. (Allah.) No. 19.] с acc. лица и acc. предмета: *ājagāma gharmaḥ priyā veṣamivopadeṣṭum*
 [RAGH. 16,43.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?16,43)
 - **EN:** — 5) to instruct, teach someone (acc.): *vidvānevopadeṣṭavyo nāvidvāṃstu kadā ca na . vānarānupadiśyājñānsthānabhraṃśaṃ yayuḥ khagāḥ ..*
-[HIT. III,5.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?3,5) [DAŚAK.] in [BENF. Chr. 185,1.] [VEDĀNTAS. (Allah.) No. 19.] With acc. of the person and acc. of the thing: *ājagāma gharmaḥ priyā veṣamivopadeṣṭum*
+[HIT. III,5.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?3,5) [DAŚAK.] in [BENF. Chr. 185,1.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?185) [VEDĀNTAS. (Allah.) No. 19.] With acc. of the person and acc. of the thing: *ājagāma gharmaḥ priyā veṣamivopadeṣṭum*
 [RAGH. 16,43.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?16,43)
   <sub>DCS 804 · attested</sub>
 

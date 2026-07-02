@@ -13,9 +13,9 @@
 - **RU:** 1〉 расщеплять, взламывать, пробивать отверстие в чём-либо, прокалывать, прорывать, взрывать, разрывать, разрезать. *setum*, *maryādām*, *sthitim*, *velām* прорывать плотину, преграды, берег. Планета или комета «прорывает» звезду, когда проходит сквозь неё. Pass. *bhidyate*, *˚ti* (метрически, но также у [BAUDH.] в [Comm. zu ĀPAST. ŚR. 5,29,12]; *bhindatām* [MBH. 6,4125](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.4125) ошибочно вместо *bhidyatām*), также в intransit. Bed. трескаться, лопаться. *bhinna* разбитый, сломанный u. s. w.
   <sub>attested</sub>
 
-**2)** — 2〉 brechen in übertr. Bed. so v. a. vertreiben, verschwinden —, zu Nichte machen; Pass. zu Nichte werden. *bhinna* zu Nichte gemacht [104,27].
+**2)** — 2〉 brechen in übertr. Bed. so v. a. vertreiben, verschwinden —, zu Nichte machen; Pass. zu Nichte werden. *bhinna* zu Nichte gemacht [104,27](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?104).
 
-- **RU:** 2〉 разрушать, в übertr. Bed., то есть v. a. изгонять, рассеивать, уничтожать; Pass. быть уничтоженным. *bhinna* уничтоженный [104,27].
+- **RU:** 2〉 разрушать, в übertr. Bed., то есть v. a. изгонять, рассеивать, уничтожать; Pass. быть уничтоженным. *bhinna* уничтоженный [104,27](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?104).
   <sub>attested</sub>
 
 **3)** — 3〉 spalten, so v. a. theilen; Pass. getheilt werden, sich theilen. *bhinna* getheilt auch so v. a. nicht ganz, weniger als ein.

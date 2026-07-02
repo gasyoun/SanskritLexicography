@@ -120,8 +120,8 @@
 **§abhini1)** — 1〉 Act. Med. zutheilen, verleihen.
 - **EN:** — 1) Act. Med. "to allot, to bestow".
 
-**§abhini2)** — 2〉 Med. vergleichen mit (Instr.) [249,29]. *upamita* verglichen, gleichgesetzt, gleich ([250,30]).
-- **EN:** — 2) Med. "to compare with" (Instr.) [249,29]. *upamita* "compared, equated, equal" ([250,30]).
+**§abhini2)** — 2〉 Med. vergleichen mit (Instr.) [249,29](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?249). *upamita* verglichen, gleichgesetzt, gleich ([250,30](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?250)).
+- **EN:** — 2) Med. "to compare with" (Instr.) [249,29](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?249). *upamita* "compared, equated, equal" ([250,30](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?250)).
 
 **§abhini3)** — 3〉 Pass. zu Passe kommen, von Nutzen sein.
 - **EN:** — 3) Pass. "to come in handy, to be of use".
@@ -168,8 +168,8 @@
 **§ava7)** — 7〉 *nirmita*
 - **EN:** — 7) *nirmita*
 
-**§ava7a)** — a〉 hergestellt, gemacht, verfertigt, erbaut, geschaffen, gebildet überh. — von (Instr. oder im Comp. vorangehend), — aus (Abl., Instr. [[122,28]. [137,5]. [152,10]] oder im Comp. vorangehend).
-- **EN:** — a) "produced, made, fashioned, built, created, formed" überh. — "by" (Instr. or preceding in the Comp.), — "from" (Abl., Instr. [[122,28]. [137,5]. [152,10]] or preceding in the Comp.).
+**§ava7a)** — a〉 hergestellt, gemacht, verfertigt, erbaut, geschaffen, gebildet überh. — von (Instr. oder im Comp. vorangehend), — aus (Abl., Instr. [[122,28](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?122). [137,5](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?137). [152,10](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?152)] oder im Comp. vorangehend).
+- **EN:** — a) "produced, made, fashioned, built, created, formed" überh. — "by" (Instr. or preceding in the Comp.), — "from" (Abl., Instr. [[122,28](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?122). [137,5](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?137). [152,10](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?152)] or preceding in the Comp.).
 
 **§ava7b)** — b〉 bewirkt.
 - **EN:** — b) "effected".
@@ -491,9 +491,9 @@
 - **RU:** — 1〉 Act. Med. наделять, даровать.
   <sub>DCS 4955 · attested</sub>
 
-**abhi-2〉)** — 2〉 Med. vergleichen mit (Instr.) [249,29]. *upamita* verglichen, gleichgesetzt, gleich ([250,30]).
+**abhi-2〉)** — 2〉 Med. vergleichen mit (Instr.) [249,29](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?249). *upamita* verglichen, gleichgesetzt, gleich ([250,30](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?250)).
 
-- **RU:** — 2〉 Med. сравнивать с (Instr.) [249,29]. *upamita* сравненный, приравненный, равный ([250,30]).
+- **RU:** — 2〉 Med. сравнивать с (Instr.) [249,29](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?249). *upamita* сравненный, приравненный, равный ([250,30](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?250)).
   <sub>DCS 4955 · attested</sub>
 
 **abhi-3〉)** — 3〉 Pass. zu Passe kommen, von Nutzen sein.
@@ -571,9 +571,9 @@
 - **RU:** — 7〉 *nirmita*
   <sub>DCS 4955 · attested</sub>
 
-**ni-7a〉)** — a〉 hergestellt, gemacht, verfertigt, erbaut, geschaffen, gebildet überh. — von (Instr. oder im Comp. vorangehend), — aus (Abl., Instr. [[122,28]. [137,5]. [152,10]] oder im Comp. vorangehend).
+**ni-7a〉)** — a〉 hergestellt, gemacht, verfertigt, erbaut, geschaffen, gebildet überh. — von (Instr. oder im Comp. vorangehend), — aus (Abl., Instr. [[122,28](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?122). [137,5](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?137). [152,10](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?152)] oder im Comp. vorangehend).
 
-- **RU:** — a〉 изготовленный, сделанный, произведённый, возведённый, созданный, образованный überh. — кем (Instr. или в Comp. предшествующем), — из (Abl., Instr. [[122,28]. [137,5]. [152,10]] или в Comp. предшествующем).
+- **RU:** — a〉 изготовленный, сделанный, произведённый, возведённый, созданный, образованный überh. — кем (Instr. или в Comp. предшествующем), — из (Abl., Instr. [[122,28](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?122). [137,5](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?137). [152,10](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?152)] или в Comp. предшествующем).
   <sub>DCS 4955 · attested</sub>
 
 **ni-7b〉)** — b〉 bewirkt.

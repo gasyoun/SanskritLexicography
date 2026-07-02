@@ -19,11 +19,11 @@
 — 6) to authorize someone (Acc.), to give permission for something; s. *asaṃmata*. — *saṃmata* also erroneous for *saṃgata*.
 
 **blk2)** — Caus.
-— 1〉 Jmd ehren, Jmd Ehre erweisen. *saṃmānayitvā* [KĀD. 91,23] fehlerhaft für *mānayitvā*, wie die andere Ausg. [164,15] liest.
+— 1〉 Jmd ehren, Jmd Ehre erweisen. *saṃmānayitvā* [KĀD. 91,23] fehlerhaft für *mānayitvā*, wie die andere Ausg. [164,15](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?164) liest.
 — 2〉 Etwas beachten.
 — 3〉 Jmd (Gen.) Etwas versichern.
 - **EN:** — Caus.
-— 1) to honour someone, to show someone honour. *saṃmānayitvā* [KĀD. 91,23] erroneous for *mānayitvā*, as the other Ausg. [164,15] reads.
+— 1) to honour someone, to show someone honour. *saṃmānayitvā* [KĀD. 91,23] erroneous for *mānayitvā*, as the other Ausg. [164,15](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?164) reads.
 — 2) to pay attention to something.
 — 3) to assure someone (Gen.) of something.
 
@@ -72,9 +72,9 @@
 - **RU:** — Caus.
   <sub>attested</sub>
 
-**upa_caus_1)** — 1〉 Jmd ehren, Jmd Ehre erweisen. *saṃmānayitvā* [KĀD. 91,23] fehlerhaft für *mānayitvā*, wie die andere Ausg. [164,15] liest.
+**upa_caus_1)** — 1〉 Jmd ehren, Jmd Ehre erweisen. *saṃmānayitvā* [KĀD. 91,23] fehlerhaft für *mānayitvā*, wie die andere Ausg. [164,15](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?164) liest.
 
-- **RU:** 1〉 чтить кого-л., оказывать почесть кому-л.. *saṃmānayitvā* [KĀD. 91,23] ошибочно вместо *mānayitvā*, как читает другая Ausg. [164,15].
+- **RU:** 1〉 чтить кого-л., оказывать почесть кому-л.. *saṃmānayitvā* [KĀD. 91,23] ошибочно вместо *mānayitvā*, как читает другая Ausg. [164,15](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?164).
   <sub>attested</sub>
 
 **upa_caus_2)** — 2〉 Etwas beachten.

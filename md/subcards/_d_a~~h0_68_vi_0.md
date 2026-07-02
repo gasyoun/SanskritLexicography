@@ -119,7 +119,7 @@
 [1222.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1222) *yaccānyadapi kartavyaṃ tadvidhatsva*
 [2,2567.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2567) [HARIV. 10449.](https://sanskrit-lexicon-scans.github.io/hariv?10449) *vidhattāṃ bhagavānantam*
 [MBH. 3,12191.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12191) *vihitaṃ yatsurarṣibhiḥ*
-[13,1572.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1572) [PAÑCAT. I,217.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?1,217) [VEDĀNTAS. (Allah.) No. 12.] Schol. zu [KAP. 1,16. Einl.] zu [JAIM.] [DAŚAK.] in [BENF. Chr. 181,4. 185,6.] *svaśabdena yatra guṇavṛddhī vidhīyete*
+[13,1572.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1572) [PAÑCAT. I,217.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?1,217) [VEDĀNTAS. (Allah.) No. 12.] Schol. zu [KAP. 1,16. Einl.] zu [JAIM.] [DAŚAK.] in [BENF. Chr. 181,4. 185,6.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?181) *svaśabdena yatra guṇavṛddhī vidhīyete*
 Schol. zu [P. 1,1,3.](https://ashtadhyayi.com/sutraani/1/1/3) [54.](https://ashtadhyayi.com/sutraani/1/1/54) [KĀŚ.] zu [P. 1,2,33.](https://ashtadhyayi.com/sutraani/1/2/33) *nākāle vihito mṛtyurmartyānām*
 [N. 11,7.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?11,7) *vidhatse svena vīryeṇa śreyo dharmādilakṣaṇam*
 [BHĀG. P. 1,7,24.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,7,24) *śūdrasya tu savarṇaiva nānyā bhāryā vidhīyate*
@@ -150,7 +150,7 @@ Schol. zu [P. 1,1,3.](https://ashtadhyayi.com/sutraani/1/1/3) [54.](https://asht
 [1222.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1222) *yaccānyadapi kartavyaṃ tadvidhatsva*
 [2,2567.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2567) [HARIV. 10449.](https://sanskrit-lexicon-scans.github.io/hariv?10449) *vidhattāṃ bhagavānantam*
 [MBH. 3,12191.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12191) *vihitaṃ yatsurarṣibhiḥ*
-[13,1572.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1572) [PAÑCAT. I,217.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?1,217) [VEDĀNTAS. (Allah.) No. 12.] Schol. zu [KAP. 1,16. Einl.] zu [JAIM.] [DAŚAK.] in [BENF. Chr. 181,4. 185,6.] *svaśabdena yatra guṇavṛddhī vidhīyete*
+[13,1572.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1572) [PAÑCAT. I,217.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?1,217) [VEDĀNTAS. (Allah.) No. 12.] Schol. zu [KAP. 1,16. Einl.] zu [JAIM.] [DAŚAK.] in [BENF. Chr. 181,4. 185,6.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?181) *svaśabdena yatra guṇavṛddhī vidhīyete*
 Schol. zu [P. 1,1,3.](https://ashtadhyayi.com/sutraani/1/1/3) [54.](https://ashtadhyayi.com/sutraani/1/1/54) [KĀŚ.] zu [P. 1,2,33.](https://ashtadhyayi.com/sutraani/1/2/33) *nākāle vihito mṛtyurmartyānām*
 [N. 11,7.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?11,7) *vidhatse svena vīryeṇa śreyo dharmādilakṣaṇam*
 [BHĀG. P. 1,7,24.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,7,24) *śūdrasya tu savarṇaiva nānyā bhāryā vidhīyate*

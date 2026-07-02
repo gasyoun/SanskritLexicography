@@ -9,10 +9,10 @@
 - **EN:** — 3) to draw along with itself, to drive (of the wind).
   <sub>attested</sub>
 
-**y4)** — 4〉 beladen [85,8].
+**y4)** — 4〉 beladen [85,8](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?85).
 
-- **RU:** 4) нагружать [85,8].
-- **EN:** — 4) laden [85,8].
+- **RU:** 4) нагружать [85,8](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?85).
+- **EN:** — 4) laden [85,8](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?85).
   <sub>attested</sub>
 
 **y5)** — 5〉 Pass. getragen werden von, so v. a. reiten auf (Instr.).

@@ -576,7 +576,7 @@ Schol. to [P. 1,1,71.](https://ashtadhyayi.com/sutraani/1/1/71)
 [M. 8,126.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,126)
 [YĀJÑ. 1,353.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?1,353) [367.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?1,367) *daṇḍo 'yaṃ kṣetriyo yena mayyapāti*
 [BHAṬṬ. 4,32.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?4,32) *madāvasannahastapatitena nistriṃśena dvitrāneva hatvā*
-[DAŚAK.] in [BENF. Chr. 194,12.] *āśu śastraṃ pātayet* so v. a. er führe schnell das Messer
+[DAŚAK.] in [BENF. Chr. 194,12.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?194) *āśu śastraṃ pātayet* so v. a. er führe schnell das Messer
 [SUŚR. 1,45,12.] [2,56,5.] *sūtraṃ vetālapātitam* die vom Vet. angelegte Messschnur
 [RĀJA-TAR. 3,349.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?3,349) — *salilaṃ nāśu pātayati* (die Sonne)
 [VARĀH. BṚH. S. 3,22.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?3,22) *pātayākṣān* wirf die Würfel
@@ -649,7 +649,7 @@ den Blick werfen, richten auf: *sarvataścakṣurvane lolamapātayat*
 [M. 8,126.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,126)
 [YĀJÑ. 1,353.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?1,353) [367.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?1,367) *daṇḍo 'yaṃ kṣetriyo yena mayyapāti*
 [BHAṬṬ. 4,32.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?4,32) *madāvasannahastapatitena nistriṃśena dvitrāneva hatvā*
-[DAŚAK.] in [BENF. Chr. 194,12.] *āśu śastraṃ pātayet* so v. a. он быстро проведёт нож
+[DAŚAK.] in [BENF. Chr. 194,12.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?194) *āśu śastraṃ pātayet* so v. a. он быстро проведёт нож
 [SUŚR. 1,45,12.] [2,56,5.] *sūtraṃ vetālapātitam* шнур для измерения, натянутый Vet.
 [RĀJA-TAR. 3,349.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?3,349) — *salilaṃ nāśu pātayati* (солнце)
 [VARĀH. BṚH. S. 3,22.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?3,22) *pātayākṣān* бросай кости
@@ -721,7 +721,7 @@ den Blick werfen, richten auf: *sarvataścakṣurvane lolamapātayat*
 [M. 8,126.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,126)
 [YĀJÑ. 1,353.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?1,353) [367.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?1,367) *daṇḍo 'yaṃ kṣetriyo yena mayyapāti*
 [BHAṬṬ. 4,32.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?4,32) *madāvasannahastapatitena nistriṃśena dvitrāneva hatvā*
-[DAŚAK.] in [BENF. Chr. 194,12.] *āśu śastraṃ pātayet* so v. a. let him quickly draw the knife
+[DAŚAK.] in [BENF. Chr. 194,12.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?194) *āśu śastraṃ pātayet* so v. a. let him quickly draw the knife
 [SUŚR. 1,45,12.] [2,56,5.] *sūtraṃ vetālapātitam* the measuring cord laid out by Vet
 [RĀJA-TAR. 3,349.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?3,349) — *salilaṃ nāśu pātayati* (the sun)
 [VARĀH. BṚH. S. 3,22.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?3,22) *pātayākṣān* throw the dice
@@ -1013,7 +1013,7 @@ Schol. to [JYOT. 27.]
 [MṚCCH. 67,24. 143,22.]
 [BHĀG. P. 2,7,14.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,7,14)
 [ŚIŚ. 9,1.]
-[DAŚAK.] in [BENF. Chr. 194,10.] *ṛtukāle 'bhipatito *
+[DAŚAK.] in [BENF. Chr. 194,10.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?194) *ṛtukāle 'bhipatito *
 
 * madayantyā nivāritaḥ*
 [MBH. 1,6910.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6910) *(vihagaḥ) sītāmabhipapāta*
@@ -1022,7 +1022,7 @@ Schol. to [JYOT. 27.]
 [RAGH. 7,34.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?7,34)
 [R. 2,34,18.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,34,18) [77,10.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,77,10)
 [BHĀG. P. 9,10,20.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,10,20)
-[DAŚAK.] in [BENF. Chr. 200,2.] *sarāṣṭro 'bhyapataddivam*
+[DAŚAK.] in [BENF. Chr. 200,2.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?200) *sarāṣṭro 'bhyapataddivam*
 [MBH. 12,8595.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.8595) *(harīṇām) koṭīśatasahasreṇa laṅkāmabhyapatattadā*
 [3,16347.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16347) [R. 5,9,44.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,9,44) [6,16,76.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,16,76) *(kṣiptā) śaktirabhyapatadvegāllakṣmaṇe* flog in der Richtung des Lakṣmaṇa
 [80,34.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,80,34) herabfallen, herabfallen auf: *putrāṇāṃ tava netrebhyo duḥkhādabhyapatajjalam*
@@ -1043,7 +1043,7 @@ Schol. to [JYOT. 27.]
 [MṚCCH. 67,24. 143,22.]
 [BHĀG. P. 2,7,14.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,7,14)
 [ŚIŚ. 9,1.]
-[DAŚAK.] in [BENF. Chr. 194,10.] *ṛtukāle 'bhipatito *
+[DAŚAK.] in [BENF. Chr. 194,10.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?194) *ṛtukāle 'bhipatito *
 
 * madayantyā nivāritaḥ*
 [MBH. 1,6910.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6910) *(vihagaḥ) sītāmabhipapāta*
@@ -1052,7 +1052,7 @@ Schol. to [JYOT. 27.]
 [RAGH. 7,34.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?7,34)
 [R. 2,34,18.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,34,18) [77,10.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,77,10)
 [BHĀG. P. 9,10,20.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,10,20)
-[DAŚAK.] in [BENF. Chr. 200,2.] *sarāṣṭro 'bhyapataddivam*
+[DAŚAK.] in [BENF. Chr. 200,2.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?200) *sarāṣṭro 'bhyapataddivam*
 [MBH. 12,8595.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.8595) *(harīṇām) koṭīśatasahasreṇa laṅkāmabhyapatattadā*
 [3,16347.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16347) [R. 5,9,44.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,9,44) [6,16,76.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,16,76) *(kṣiptā) śaktirabhyapatadvegāllakṣmaṇe* летел в направлении Lakṣmaṇa
 [80,34.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,80,34) падать вниз, падать на: *putrāṇāṃ tava netrebhyo duḥkhādabhyapatajjalam*
@@ -1072,7 +1072,7 @@ Schol. to [JYOT. 27.]
 [MṚCCH. 67,24. 143,22.]
 [BHĀG. P. 2,7,14.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,7,14)
 [ŚIŚ. 9,1.]
-[DAŚAK.] in [BENF. Chr. 194,10.] *ṛtukāle 'bhipatito *
+[DAŚAK.] in [BENF. Chr. 194,10.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?194) *ṛtukāle 'bhipatito *
 * madayantyā nivāritaḥ*
 [MBH. 1,6910.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6910) *(vihagaḥ) sītāmabhipapāta*
 [R. 2,96,43](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,96,43) ([105,42](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,105,42) [GORR.]). *badhāyābhipapātainān*
@@ -1080,7 +1080,7 @@ Schol. to [JYOT. 27.]
 [RAGH. 7,34.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?7,34)
 [R. 2,34,18.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,34,18) [77,10.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,77,10)
 [BHĀG. P. 9,10,20.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,10,20)
-[DAŚAK.] in [BENF. Chr. 200,2.] *sarāṣṭro 'bhyapataddivam*
+[DAŚAK.] in [BENF. Chr. 200,2.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?200) *sarāṣṭro 'bhyapataddivam*
 [MBH. 12,8595.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.8595) *(harīṇām) koṭīśatasahasreṇa laṅkāmabhyapatattadā*
 [3,16347.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16347) [R. 5,9,44.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,9,44) [6,16,76.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,16,76) *(kṣiptā) śaktirabhyapatadvegāllakṣmaṇe* flew in the direction of Lakṣmaṇa
 [80,34.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,80,34) to fall down, to fall down upon: *putrāṇāṃ tava netrebhyo duḥkhādabhyapatajjalam*
@@ -1213,7 +1213,7 @@ to throw down: *sārathiṃ cābhyapātayat*
 [RAGH. 5,50.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?5,50) [12,44.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?12,44)
 [RĀJA-TAR. 5,259.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,259)
 [BHĀG. P. 3,2,24.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,2,24) [6,1,30.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,1,30)
-[DAŚAK.] in [BENF. Chr. 187,3.] *pādaiḥ śanairāpatataḥ* zu Fusse langsam herbeikommend
+[DAŚAK.] in [BENF. Chr. 187,3.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?187) *pādaiḥ śanairāpatataḥ* zu Fusse langsam herbeikommend
 [BHAṬṬ. 3,48.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?3,48) *prabaladvīpinamāpatantamuccaiḥ* in der Höhe d. i. mit einem Sprunge heranstürzend Inschr. in
 [Journ. of the Am. Or. S. 7,11, Śl. 40.]
 
@@ -1234,7 +1234,7 @@ to throw down: *sārathiṃ cābhyapātayat*
 [RAGH. 5,50.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?5,50) [12,44.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?12,44)
 [RĀJA-TAR. 5,259.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,259)
 [BHĀG. P. 3,2,24.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,2,24) [6,1,30.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,1,30)
-[DAŚAK.] в [BENF. Chr. 187,3.] *pādaiḥ śanairāpatataḥ* медленно приближаясь пешком
+[DAŚAK.] в [BENF. Chr. 187,3.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?187) *pādaiḥ śanairāpatataḥ* медленно приближаясь пешком
 [BHAṬṬ. 3,48.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?3,48) *prabaladvīpinamāpatantamuccaiḥ* в высоте d. i. бросаясь прыжком Inschr. в
 [Journ. of the Am. Or. S. 7,11, Śl. 40.]
   <sub>attested</sub>
@@ -1368,7 +1368,7 @@ Schol. к [KĀTY. ŚR. 1067,5.](https://sanskrit-lexicon-scans.github.io/katyasr
 [MBH. 5,7213.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7213) [7,7293.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.7293) *tatra mallāḥ samāpeturdigbhyo rājansahasraśaḥ*
 [4,339.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.339) *sahasainyāḥ samāpetuḥ*
 [6,1664.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.1664) [HARIV. 316.](https://sanskrit-lexicon-scans.github.io/hariv?316) *samāpeturyatra tiṣṭhati keśavaḥ*
-[14573.](https://sanskrit-lexicon-scans.github.io/hariv?14573) [R. 2,87,6.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,87,6) [DAŚAK.] in [BENF. Chr. 201,6.] *sahasainyāḥ samāpetuḥ putrasya tava vāhinīm*
+[14573.](https://sanskrit-lexicon-scans.github.io/hariv?14573) [R. 2,87,6.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,87,6) [DAŚAK.] in [BENF. Chr. 201,6.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?201) *sahasainyāḥ samāpetuḥ putrasya tava vāhinīm*
 [MBH. 6,1664.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.1664) *tamāttabāṇāsanam — āpatantam*
 [R. 5,42,12.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,42,12)
 [ŚATR. 14,218.] *pavanaḥ pavanābhihato gaganādavanau yadā samāpatati* niederfahren
@@ -1379,7 +1379,7 @@ Schol. к [KĀTY. ŚR. 1067,5.](https://sanskrit-lexicon-scans.github.io/katyasr
 [MBH. 5,7213.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7213) [7,7293.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.7293) *tatra mallāḥ samāpeturdigbhyo rājansahasraśaḥ*
 [4,339.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.339) *sahasainyāḥ samāpetuḥ*
 [6,1664.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.1664) [HARIV. 316.](https://sanskrit-lexicon-scans.github.io/hariv?316) *samāpeturyatra tiṣṭhati keśavaḥ*
-[14573.](https://sanskrit-lexicon-scans.github.io/hariv?14573) [R. 2,87,6.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,87,6) [DAŚAK.] в [BENF. Chr. 201,6.] *sahasainyāḥ samāpetuḥ putrasya tava vāhinīm*
+[14573.](https://sanskrit-lexicon-scans.github.io/hariv?14573) [R. 2,87,6.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,87,6) [DAŚAK.] в [BENF. Chr. 201,6.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?201) *sahasainyāḥ samāpetuḥ putrasya tava vāhinīm*
 [MBH. 6,1664.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.1664) *tamāttabāṇāsanam — āpatantam*
 [R. 5,42,12.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,42,12)
 [ŚATR. 14,218.] *pavanaḥ pavanābhihato gaganādavanau yadā samāpatati* стремительно опускаться
@@ -1389,7 +1389,7 @@ Schol. к [KĀTY. ŚR. 1067,5.](https://sanskrit-lexicon-scans.github.io/katyasr
 [MBH. 5,7213.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7213) [7,7293.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.7293) *tatra mallāḥ samāpeturdigbhyo rājansahasraśaḥ*
 [4,339.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.339) *sahasainyāḥ samāpetuḥ*
 [6,1664.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.1664) [HARIV. 316.](https://sanskrit-lexicon-scans.github.io/hariv?316) *samāpeturyatra tiṣṭhati keśavaḥ*
-[14573.](https://sanskrit-lexicon-scans.github.io/hariv?14573) [R. 2,87,6.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,87,6) [DAŚAK.] in [BENF. Chr. 201,6.] *sahasainyāḥ samāpetuḥ putrasya tava vāhinīm*
+[14573.](https://sanskrit-lexicon-scans.github.io/hariv?14573) [R. 2,87,6.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,87,6) [DAŚAK.] in [BENF. Chr. 201,6.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?201) *sahasainyāḥ samāpetuḥ putrasya tava vāhinīm*
 [MBH. 6,1664.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.1664) *tamāttabāṇāsanam — āpatantam*
 [R. 5,42,12.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,42,12)
 [ŚATR. 14,218.] *pavanaḥ pavanābhihato gaganādavanau yadā samāpatati* to swoop down
@@ -2483,7 +2483,7 @@ Schol. zu [P. 5,2,114.](https://ashtadhyayi.com/sutraani/5/2/114) [2,1,72.](http
 [Spr. 1234.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1234) *striyaḥ sarvā niṣpeturnagarādvahiḥ*
 [ARJ. 10,62.]
 [MBH. 7,807.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.807) [8,2150.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.2150) *bhavanānniṣpatati*
-[14,1836.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.1836) [M. 8,55.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,55) [YĀJÑ. 2,16.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,16) [MBH. 1,1343.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1343) [HARIV. 4521.](https://sanskrit-lexicon-scans.github.io/hariv?4521) [5693.](https://sanskrit-lexicon-scans.github.io/hariv?5693) [13678.](https://sanskrit-lexicon-scans.github.io/hariv?13678) [13681](https://sanskrit-lexicon-scans.github.io/hariv?13681) (med.) [R. 1,46,21.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,46,21) [3,16,17.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,16,17) [31,4.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,31,4) [4,8,48.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,8,48) [9,64.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,9,64) [12,24.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,12,24) [13,40.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,13,40) [41.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,13,41) [14,5.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,14,5) [6.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,14,6) [50,13.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,50,13) [17.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,50,17) [5,15,10.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,15,10) [KĀM. NĪTIS. 12,6.] [DAŚAK.] in [BENF. Chr. 188,14. 198,11.] *badhāya niṣpeturudāyudhāste*
+[14,1836.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.1836) [M. 8,55.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,55) [YĀJÑ. 2,16.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,16) [MBH. 1,1343.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1343) [HARIV. 4521.](https://sanskrit-lexicon-scans.github.io/hariv?4521) [5693.](https://sanskrit-lexicon-scans.github.io/hariv?5693) [13678.](https://sanskrit-lexicon-scans.github.io/hariv?13678) [13681](https://sanskrit-lexicon-scans.github.io/hariv?13681) (med.) [R. 1,46,21.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,46,21) [3,16,17.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,16,17) [31,4.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,31,4) [4,8,48.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,8,48) [9,64.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,9,64) [12,24.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,12,24) [13,40.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,13,40) [41.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,13,41) [14,5.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,14,5) [6.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,14,6) [50,13.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,50,13) [17.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,50,17) [5,15,10.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,15,10) [KĀM. NĪTIS. 12,6.] [DAŚAK.] in [BENF. Chr. 188,14. 198,11.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?188) *badhāya niṣpeturudāyudhāste*
 [MBH. 6,3378.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.3378) *yuddhāya niṣpatet*
 [15,232. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?15.232) *niṣpatya yudhi yudhyasva*
 [R. 6,16,80.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,16,80) *uragasaṃghātāḥ — niṣpetuḥ*
@@ -2514,7 +2514,7 @@ Schol. zu [P. 5,2,114.](https://ashtadhyayi.com/sutraani/5/2/114) [2,1,72.](http
 [Spr. 1234.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1234) *striyaḥ sarvā niṣpeturnagarādvahiḥ*
 [ARJ. 10,62.]
 [MBH. 7,807.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.807) [8,2150.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.2150) *bhavanānniṣpatati*
-[14,1836.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.1836) [M. 8,55.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,55) [YĀJÑ. 2,16.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,16) [MBH. 1,1343.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1343) [HARIV. 4521.](https://sanskrit-lexicon-scans.github.io/hariv?4521) [5693.](https://sanskrit-lexicon-scans.github.io/hariv?5693) [13678.](https://sanskrit-lexicon-scans.github.io/hariv?13678) [13681](https://sanskrit-lexicon-scans.github.io/hariv?13681) (med.) [R. 1,46,21.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,46,21) [3,16,17.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,16,17) [31,4.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,31,4) [4,8,48.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,8,48) [9,64.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,9,64) [12,24.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,12,24) [13,40.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,13,40) [41.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,13,41) [14,5.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,14,5) [6.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,14,6) [50,13.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,50,13) [17.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,50,17) [5,15,10.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,15,10) [KĀM. NĪTIS. 12,6.] [DAŚAK.] в [BENF. Chr. 188,14. 198,11.] *badhāya niṣpeturudāyudhāste*
+[14,1836.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.1836) [M. 8,55.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,55) [YĀJÑ. 2,16.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,16) [MBH. 1,1343.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1343) [HARIV. 4521.](https://sanskrit-lexicon-scans.github.io/hariv?4521) [5693.](https://sanskrit-lexicon-scans.github.io/hariv?5693) [13678.](https://sanskrit-lexicon-scans.github.io/hariv?13678) [13681](https://sanskrit-lexicon-scans.github.io/hariv?13681) (med.) [R. 1,46,21.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,46,21) [3,16,17.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,16,17) [31,4.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,31,4) [4,8,48.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,8,48) [9,64.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,9,64) [12,24.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,12,24) [13,40.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,13,40) [41.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,13,41) [14,5.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,14,5) [6.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,14,6) [50,13.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,50,13) [17.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,50,17) [5,15,10.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,15,10) [KĀM. NĪTIS. 12,6.] [DAŚAK.] в [BENF. Chr. 188,14. 198,11.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?188) *badhāya niṣpeturudāyudhāste*
 [MBH. 6,3378.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.3378) *yuddhāya niṣpatet*
 [15,232. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?15.232) *niṣpatya yudhi yudhyasva*
 [R. 6,16,80.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,16,80) *uragasaṃghātāḥ — niṣpetuḥ*
@@ -2544,7 +2544,7 @@ Schol. zu [P. 5,2,114.](https://ashtadhyayi.com/sutraani/5/2/114) [2,1,72.](http
 [Spr. 1234.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1234) *striyaḥ sarvā niṣpeturnagarādvahiḥ*
 [ARJ. 10,62.]
 [MBH. 7,807.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.807) [8,2150.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.2150) *bhavanānniṣpatati*
-[14,1836.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.1836) [M. 8,55.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,55) [YĀJÑ. 2,16.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,16) [MBH. 1,1343.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1343) [HARIV. 4521.](https://sanskrit-lexicon-scans.github.io/hariv?4521) [5693.](https://sanskrit-lexicon-scans.github.io/hariv?5693) [13678.](https://sanskrit-lexicon-scans.github.io/hariv?13678) [13681](https://sanskrit-lexicon-scans.github.io/hariv?13681) (med.) [R. 1,46,21.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,46,21) [3,16,17.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,16,17) [31,4.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,31,4) [4,8,48.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,8,48) [9,64.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,9,64) [12,24.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,12,24) [13,40.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,13,40) [41.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,13,41) [14,5.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,14,5) [6.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,14,6) [50,13.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,50,13) [17.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,50,17) [5,15,10.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,15,10) [KĀM. NĪTIS. 12,6.] [DAŚAK.] in [BENF. Chr. 188,14. 198,11.] *badhāya niṣpeturudāyudhāste*
+[14,1836.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.1836) [M. 8,55.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,55) [YĀJÑ. 2,16.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,16) [MBH. 1,1343.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1343) [HARIV. 4521.](https://sanskrit-lexicon-scans.github.io/hariv?4521) [5693.](https://sanskrit-lexicon-scans.github.io/hariv?5693) [13678.](https://sanskrit-lexicon-scans.github.io/hariv?13678) [13681](https://sanskrit-lexicon-scans.github.io/hariv?13681) (med.) [R. 1,46,21.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,46,21) [3,16,17.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,16,17) [31,4.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,31,4) [4,8,48.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,8,48) [9,64.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,9,64) [12,24.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,12,24) [13,40.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,13,40) [41.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,13,41) [14,5.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,14,5) [6.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,14,6) [50,13.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,50,13) [17.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,50,17) [5,15,10.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,15,10) [KĀM. NĪTIS. 12,6.] [DAŚAK.] in [BENF. Chr. 188,14. 198,11.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?188) *badhāya niṣpeturudāyudhāste*
 [MBH. 6,3378.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.3378) *yuddhāya niṣpatet*
 [15,232. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?15.232) *niṣpatya yudhi yudhyasva*
 [R. 6,16,80.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,16,80) *uragasaṃghātāḥ — niṣpetuḥ*
@@ -3784,10 +3784,10 @@ Z. 3 read: to split, to shatter st. to cause to fly off u. s. w.
 - **EN:** — 2〉 to descend, to alight, to sink (of the sun), to prostrate oneself, to hurl oneself, to throw oneself upon or into (Loc. or Acc.), — at someone's feet (Loc., exceptionally Acc.) *mūrdhnā* to throw oneself at someone's (Gen.) feet with one's head. *pādayoḥ patitaḥ* and *pādapatita* having thrown oneself at someone's feet.
   <sub>attested</sub>
 
-**3)** — 3〉 herabfallen, fallen in (Acc.) oder auf (Loc. oder *upari* mit Gen.), herabstürzen, zusammenstürzen, einstürzen, umfallen, abfallen, ausfallen. *patita* herabgefallen u. s. w. Am Ende eines Comp. gefallen auf und ausnahmsweise auf ([149,20]).
+**3)** — 3〉 herabfallen, fallen in (Acc.) oder auf (Loc. oder *upari* mit Gen.), herabstürzen, zusammenstürzen, einstürzen, umfallen, abfallen, ausfallen. *patita* herabgefallen u. s. w. Am Ende eines Comp. gefallen auf und ausnahmsweise auf ([149,20](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?149)).
 
-- **RU:** 3〉 падать вниз, падать в (Acc.) или на (Loc. или *upari* с Gen.), низвергаться, обрушиваться, рушиться, опрокидываться, отпадать, выпадать. *patita* упавший u. s. w.. В конце Comp. упавший на и в виде исключения на ([149,20]).
-- **EN:** — 3〉 to fall down, to fall into (Acc.) or upon (Loc. or *upari* with Gen.), to tumble down, to collapse, to cave in, to topple over, to fall off, to drop out. *patita* fallen down u. s. w. At the end of a Comp. fallen upon, and exceptionally upon ([149,20]).
+- **RU:** 3〉 падать вниз, падать в (Acc.) или на (Loc. или *upari* с Gen.), низвергаться, обрушиваться, рушиться, опрокидываться, отпадать, выпадать. *patita* упавший u. s. w.. В конце Comp. упавший на и в виде исключения на ([149,20](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?149)).
+- **EN:** — 3〉 to fall down, to fall into (Acc.) or upon (Loc. or *upari* with Gen.), to tumble down, to collapse, to cave in, to topple over, to fall off, to drop out. *patita* fallen down u. s. w. At the end of a Comp. fallen upon, and exceptionally upon ([149,20](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?149)).
   <sub>attested</sub>
 
 **4)** — 4〉 vom Himmel niederfahren (freiwillig oder gezwungen, von Himmelsbewohnern); das Wohin im Loc. oder Acc. **svargapatita* des Himmels verlustig gegangen.
@@ -3820,10 +3820,10 @@ Z. 3 read: to split, to shatter st. to cause to fly off u. s. w.
 - **EN:** — 8〉 to fall upon, thus v. a. to be directed at, to befall, to fall to someone's share, to break upon (of a misfortune); with Loc.
   <sub>attested</sub>
 
-**9)** — 9〉 gerathen in (Loc.). *patita* gerathen in (Loc. oder im Comp. vorangehend) [121,4]. [135,10]. [186,15]. *madhya˚* so v. a. dazwischen befindlich.
+**9)** — 9〉 gerathen in (Loc.). *patita* gerathen in (Loc. oder im Comp. vorangehend) [121,4](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?121). [135,10](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?135). [186,15](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?186). *madhya˚* so v. a. dazwischen befindlich.
 
-- **RU:** 9〉 попадать в (Loc.). *patita* попавший в (Loc. или в предшествующем Comp.) [121,4]. [135,10]. [186,15]. *madhya˚* так v. a. находящийся посередине.
-- **EN:** — 9〉 to fall into, to get into (Loc.). *patita* to get into (Loc. or in Comp. preceding) [121,4]. [135,10]. [186,15]. *madhya˚* thus v. a. situated between.
+- **RU:** 9〉 попадать в (Loc.). *patita* попавший в (Loc. или в предшествующем Comp.) [121,4](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?121). [135,10](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?135). [186,15](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?186). *madhya˚* так v. a. находящийся посередине.
+- **EN:** — 9〉 to fall into, to get into (Loc.). *patita* to get into (Loc. or in Comp. preceding) [121,4](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?121). [135,10](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?135). [186,15](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?186). *madhya˚* thus v. a. situated between.
   <sub>attested</sub>
 
 **caus-header)** — Caus. *pātayati, ˚te* (metrisch; *patay* s. bes.)
@@ -3838,10 +3838,10 @@ Z. 3 read: to split, to shatter st. to cause to fly off u. s. w.
 - **EN:** — 1〉 to cause to fly, to hurl, to fling — at (Loc.).
   <sub>attested</sub>
 
-**caus-2)** — 2〉 fallen machen, — lassen, eine Axt, ein Messer u. s. w. fallen lassen, so v. a. damit einen Schlag —, einen Schnitt verursachen. Das Worauf im Loc., Gen. oder Gen. mit *upari*. *ātmānam* sich niederwerfen. *yattayā — vaktre 'syāḥ svāṅgulyo daśa pātitāḥ* so v. a. dass sie mit allen zehn Fingern auf ihr Gesicht schlug [114,32]. *daṇḍam* auch so v. a. Strafe verhängen über (Loc.), *jalam* so v. a. Wasser auf die Erde giessen, *jalaṃ netrāmbhyām* so v. a. Thränen vergiessen, *aśrūṇi* so v. a. Thränen hervorrufen [Spr. 7786](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7786). *sathānāt* Jmd von seiner Stelle stürzen.
+**caus-2)** — 2〉 fallen machen, — lassen, eine Axt, ein Messer u. s. w. fallen lassen, so v. a. damit einen Schlag —, einen Schnitt verursachen. Das Worauf im Loc., Gen. oder Gen. mit *upari*. *ātmānam* sich niederwerfen. *yattayā — vaktre 'syāḥ svāṅgulyo daśa pātitāḥ* so v. a. dass sie mit allen zehn Fingern auf ihr Gesicht schlug [114,32](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?114). *daṇḍam* auch so v. a. Strafe verhängen über (Loc.), *jalam* so v. a. Wasser auf die Erde giessen, *jalaṃ netrāmbhyām* so v. a. Thränen vergiessen, *aśrūṇi* so v. a. Thränen hervorrufen [Spr. 7786](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7786). *sathānāt* Jmd von seiner Stelle stürzen.
 
-- **RU:** 2〉 заставлять падать, ронять, ронять топор, нож u. s. w., так v. a. наносить удар, делать разрез. Предмет, на который роняют, — в Loc., Gen. или Gen. с *upari*. *ātmānam* простираться ниц. *yattayā — vaktre 'syāḥ svāṅgulyo daśa pātitāḥ* так v. a. что она ударила себя по лицу всеми десятью пальцами [114,32]. *daṇḍam* также так v. a. налагать наказание на (Loc.), *jalam* так v. a. лить воду на землю, *jalaṃ netrāmbhyām* так v. a. проливать слёзы, *aśrūṇi* так v. a. вызывать слёзы [Spr. 7786](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7786). *sathānāt* низвергать кого-л. с его места.
-- **EN:** — 2〉 to cause to fall, to let fall, to let an axe, a knife u. s. w. fall, thus v. a. thereby to cause a blow — a cut. The object upon which expressed in Loc., Gen. or Gen. with *upari*. *ātmānam* to prostrate oneself. *yattayā — vaktre 'syāḥ svāṅgulyo daśa pātitāḥ* thus v. a. so that she struck her face with all ten fingers [114,32]. *daṇḍam* also thus v. a. to impose punishment upon (Loc.), *jalam* thus v. a. to pour water upon the earth, *jalaṃ netrāmbhyām* thus v. a. to shed tears, *aśrūṇi* thus v. a. to cause tears [Spr. 7786](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7786). *sathānāt* to cast someone down from their position.
+- **RU:** 2〉 заставлять падать, ронять, ронять топор, нож u. s. w., так v. a. наносить удар, делать разрез. Предмет, на который роняют, — в Loc., Gen. или Gen. с *upari*. *ātmānam* простираться ниц. *yattayā — vaktre 'syāḥ svāṅgulyo daśa pātitāḥ* так v. a. что она ударила себя по лицу всеми десятью пальцами [114,32](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?114). *daṇḍam* также так v. a. налагать наказание на (Loc.), *jalam* так v. a. лить воду на землю, *jalaṃ netrāmbhyām* так v. a. проливать слёзы, *aśrūṇi* так v. a. вызывать слёзы [Spr. 7786](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7786). *sathānāt* низвергать кого-л. с его места.
+- **EN:** — 2〉 to cause to fall, to let fall, to let an axe, a knife u. s. w. fall, thus v. a. thereby to cause a blow — a cut. The object upon which expressed in Loc., Gen. or Gen. with *upari*. *ātmānam* to prostrate oneself. *yattayā — vaktre 'syāḥ svāṅgulyo daśa pātitāḥ* thus v. a. so that she struck her face with all ten fingers [114,32](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?114). *daṇḍam* also thus v. a. to impose punishment upon (Loc.), *jalam* thus v. a. to pour water upon the earth, *jalaṃ netrāmbhyām* thus v. a. to shed tears, *aśrūṇi* thus v. a. to cause tears [Spr. 7786](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7786). *sathānāt* to cast someone down from their position.
   <sub>attested</sub>
 
 **caus-3)** — 3〉 hinabwerfen, abschlagen (den Kopf), ausschlagen (Zähne), niederwerfen, niederhauen, umwerfen, werfen in (Acc. oder Loc.).
@@ -3850,10 +3850,10 @@ Z. 3 read: to split, to shatter st. to cause to fly off u. s. w.
 - **EN:** — 3〉 to throw down, to strike off (the head), to knock out (teeth), to knock down, to cut down, to overturn, to throw into (Acc. or Loc.).
   <sub>attested</sub>
 
-**caus-4)** — 4〉 zerfallen lassen. *dvedhā* so v. a. in zwei Theile theilen (in einer Etymologie) [31,14].
+**caus-4)** — 4〉 zerfallen lassen. *dvedhā* so v. a. in zwei Theile theilen (in einer Etymologie) [31,14](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?31).
 
-- **RU:** 4〉 заставлять распадаться. *dvedhā* так v. a. делить на две части (в этимологии) [31,14].
-- **EN:** — 4〉 to cause to fall apart. *dvedhā* thus v. a. to divide into two parts (in an etymology) [31,14].
+- **RU:** 4〉 заставлять распадаться. *dvedhā* так v. a. делить на две части (в этимологии) [31,14](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?31).
+- **EN:** — 4〉 to cause to fall apart. *dvedhā* thus v. a. to divide into two parts (in an etymology) [31,14](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?31).
   <sub>attested</sub>
 
 **caus-5)** — 5〉 hineinwerfen, so v. a. hineinthun, hineingelangen lassen in (Loc.).
@@ -3892,10 +3892,10 @@ Z. 3 read: to split, to shatter st. to cause to fly off u. s. w.
 - **EN:** — 10〉 *arghatas* to deprive a thing of its price, to ruin the price of a S..
   <sub>attested</sub>
 
-**caus-11)** — 11〉 Jmd zu Etwas (Loc.) verleiten [124,21].
+**caus-11)** — 11〉 Jmd zu Etwas (Loc.) verleiten [124,21](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?124).
 
-- **RU:** 11〉 склонять кого-л. к чему-л. (Loc.) [124,21].
-- **EN:** — 11〉 to seduce, to lead someone into something (Loc.) [124,21].
+- **RU:** 11〉 склонять кого-л. к чему-л. (Loc.) [124,21](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?124).
+- **EN:** — 11〉 to seduce, to lead someone into something (Loc.) [124,21](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?124).
   <sub>attested</sub>
 
 **caus-12)** — 12〉 einführen, in Gang bringen.
@@ -4433,16 +4433,16 @@ Z. 3 read: to split, to shatter st. to cause to fly off u. s. w.
 — 1〉 to fly down, to alight, to swoop down, to descend — upon (Loc.). *pādayoḥ* to throw oneself at someone's (Gen.) feet. *nabhonipatita* having flown down from heaven.
   <sub>attested</sub>
 
-**mit_T7_2)** — 2〉 sich stürzen auf, herfallen über (Acc. oder Loc.) [133,11]. [321,4].
+**mit_T7_2)** — 2〉 sich stürzen auf, herfallen über (Acc. oder Loc.) [133,11](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?133). [321,4](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?321).
 
-- **RU:** — 2〉 бросаться на, нападать на (Acc. oder Loc.) [133,11]. [321,4].
-- **EN:** — 2〉 to rush upon, to fall upon (Acc. or Loc.) [133,11]. [321,4].
+- **RU:** — 2〉 бросаться на, нападать на (Acc. oder Loc.) [133,11](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?133). [321,4](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?321).
+- **EN:** — 2〉 to rush upon, to fall upon (Acc. or Loc.) [133,11](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?133). [321,4](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?321).
   <sub>attested</sub>
 
-**mit_T7_3)** — 3〉 sich hineinbegeben in (Loc.) [176,18].
+**mit_T7_3)** — 3〉 sich hineinbegeben in (Loc.) [176,18](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?176).
 
-- **RU:** — 3〉 входить в, погружаться в (Loc.) [176,18].
-- **EN:** — 3〉 to enter into (Loc.) [176,18].
+- **RU:** — 3〉 входить в, погружаться в (Loc.) [176,18](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?176).
+- **EN:** — 3〉 to enter into (Loc.) [176,18](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?176).
   <sub>attested</sub>
 
 **mit_T7_4)** — 4〉 sich ergiessen —, münden in (Loc.).
@@ -4481,10 +4481,10 @@ Z. 3 read: to split, to shatter st. to cause to fly off u. s. w.
 - **EN:** — 9〉 to fall out, so v. a. to be expelled (of a foetus).
   <sub>attested</sub>
 
-**mit_T7_10)** — 10〉 einfallen, eintreffen, sich einstellen, eintreten, auf Jmd fallen, so v. a. Jmd zu Theil werden, treffen; mit Loc. [179,22].
+**mit_T7_10)** — 10〉 einfallen, eintreffen, sich einstellen, eintreten, auf Jmd fallen, so v. a. Jmd zu Theil werden, treffen; mit Loc. [179,22](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?179).
 
-- **RU:** — 10〉 наступать, приходить, случаться, наступить, выпадать на кого-л., так v. a. доставаться кому-л., постигать; mit Loc. [179,22].
-- **EN:** — 10〉 to occur, to arrive, to present itself, to befall, to fall to someone's lot, so v. a. to fall to someone's share, to affect; with Loc. [179,22].
+- **RU:** — 10〉 наступать, приходить, случаться, наступить, выпадать на кого-л., так v. a. доставаться кому-л., постигать; mit Loc. [179,22](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?179).
+- **EN:** — 10〉 to occur, to arrive, to present itself, to befall, to fall to someone's lot, so v. a. to fall to someone's share, to affect; with Loc. [179,22](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?179).
   <sub>attested</sub>
 
 **mit_T7_11)** — 11〉 zu Schanden werden, zu Nichte gehen.
@@ -4498,10 +4498,10 @@ Z. 3 read: to split, to shatter st. to cause to fly off u. s. w.
 - **EN:** — Caus.
 — 1〉 to hurl down, to let fall upon (Loc.), to dash down, to throw — into or upon (Loc.), to cast down, to overturn, to fell, to throw upon (Loc.). *vyasane* to plunge into misfortune.
 
-**mit_T33_caus_2)** — 2〉 hineindrängen, infigere. *daśanānaṅge* die Zähne in den Leib [47,24].
+**mit_T33_caus_2)** — 2〉 hineindrängen, infigere. *daśanānaṅge* die Zähne in den Leib [47,24](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?47).
 
-- **RU:** — 2〉 вонзать, infigere. *daśanānaṅge* зубы в тело [47,24].
-- **EN:** — 2〉 to press into, infigere. *daśanānaṅge* the teeth into the body [47,24].
+- **RU:** — 2〉 вонзать, infigere. *daśanānaṅge* зубы в тело [47,24](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?47).
+- **EN:** — 2〉 to press into, infigere. *daśanānaṅge* the teeth into the body [47,24](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?47).
   <sub>attested</sub>
 
 **mit_T33_caus_3)** — 3〉 auswerfen, so v. a. ausspeien.

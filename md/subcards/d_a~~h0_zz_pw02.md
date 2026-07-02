@@ -119,10 +119,10 @@ Caus. *avadāpayate* to have divided off.
 - **EN:** 7. √*dā*, **dāyati* to purify.
 
 **T209-T211)** — Mit *ava*, *˚dāta*
-— 1〉 glänzend —, blendend weiss [134,13].
+— 1〉 glänzend —, blendend weiss [134,13](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?134).
 — 2〉 geläutert, lauter, rein in übertr. Bed.
 - **EN:** — With *ava*, *˚dāta*
-— 1) shining —, dazzling white [134,13].
+— 1) shining —, dazzling white [134,13](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?134).
 — 2) refined, pure, clean in übertr. Bed.
 
 **T212-T215)** — Mit *paryava*, *˚dāta*

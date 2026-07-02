@@ -88,7 +88,7 @@
 [ṚV. 10,19,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.019.html#rv10.019.07) partic. praet. pass.: *vapraiḥ śvetacayākāraiḥ parikhābhiśca sarvataḥ — adhaḥ parihitāmiva*
 [R. 5,9,15.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,9,15) *svadhayā parihitā*
 [AV. 12,5,3.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av12.005.html#av12.005.03) *nīlavasanārdhorukaparihita*
-[DAŚAK.] in [BENF. Chr. 186,9.]
+[DAŚAK.] in [BENF. Chr. 186,9.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?186)
 
 - **RU:** — 3) облекать, окружать, одевать: act.: *pari tvā dhātsavitā devo varcasā*
 [AV. 13,1,20.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av13.001.html#av13.001.20) *varṇena*
@@ -103,7 +103,7 @@
 [ṚV. 10,19,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.019.html#rv10.019.07) partic. praet. pass.: *vapraiḥ śvetacayākāraiḥ parikhābhiśca sarvataḥ — adhaḥ parihitāmiva*
 [R. 5,9,15.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,9,15) *svadhayā parihitā*
 [AV. 12,5,3.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av12.005.html#av12.005.03) *nīlavasanārdhorukaparihita*
-[DAŚAK.] в [BENF. Chr. 186,9.]
+[DAŚAK.] в [BENF. Chr. 186,9.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?186)
   <sub>DCS 502 · attested</sub>
 
 **4)** — 4) schliessen, Kunstausdruck für den Abschluss der Recitation in der Liturgie: *uttamayā paridadhāti*
@@ -150,7 +150,7 @@ z. B. [AV. 6,55,1](https://sanskrit-lexicon.github.io/avlinks/avhymns/av06.055.h
 [KAUŚ. 54.]
 [PĀR. GṚHY. 2,1. 2.]
 [RĀJA-TAR. 4,669.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,669)
-[DAŚAK.] in [BENF. Chr. 200,7.]
+[DAŚAK.] in [BENF. Chr. 200,7.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?200)
 
 - **RU:** 1) заставлять надевать (кого-л. одежду), одевать кого-л. в; с dopp. acc.: *tārpyaṃ yajamānaṃ paridhāpayati*
 [TBR. 1,3,7,1.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?1,3,7,1)
@@ -159,7 +159,7 @@ z. B. [AV. 6,55,1](https://sanskrit-lexicon.github.io/avlinks/avhymns/av06.055.h
 [KAUŚ. 54.]
 [PĀR. GṚHY. 2,1. 2.]
 [RĀJA-TAR. 4,669.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,669)
-[DAŚAK.] в [BENF. Chr. 200,7.]
+[DAŚAK.] в [BENF. Chr. 200,7.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?200)
   <sub>DCS 502 · attested</sub>
 
 **caus-2)** — 2) umgében, bekleiden mit (instr.): *yena devaṃ savitāraṃ pari devā adhāpayan* (so ist die Lesart herzustellen)

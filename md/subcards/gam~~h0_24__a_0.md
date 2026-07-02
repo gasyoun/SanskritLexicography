@@ -36,7 +36,7 @@
 [VET. 24,3.] *tatra*
 [SUND. 4,21.]
 [N. 7,1.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?7,1) *āgacchethāḥ*
-[MBH.] in [BENF. Chr. 28,16.] *āgam saha* mit Jmd zusammenkommen
+[MBH.] in [BENF. Chr. 28,16.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?28) *āgam saha* mit Jmd zusammenkommen
 [N. 16,30.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?16,30)
 
 - **RU:** — *ā*
@@ -72,7 +72,7 @@
 [VET. 24,3.] *tatra*
 [SUND. 4,21.]
 [N. 7,1.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?7,1) *āgacchethāḥ*
-[MBH.] в [BENF. Chr. 28,16.] *āgam saha* «сойтись с кем-либо»
+[MBH.] в [BENF. Chr. 28,16.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?28) *āgam saha* «сойтись с кем-либо»
 [N. 16,30.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?16,30)
 - **EN:** — *ā*
  1) to come up, arrive, appear; to come to, into, towards; to approach, step up to; to reach, meet with: *viśvo hya1nyo arirājagāma*
@@ -107,7 +107,7 @@
 [VET. 24,3.] *tatra*
 [SUND. 4,21.]
 [N. 7,1.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?7,1) *āgacchethāḥ*
-[MBH.] in [BENF. Chr. 28,16.] *āgam saha* to meet, come together with someone
+[MBH.] in [BENF. Chr. 28,16.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?28) *āgam saha* to meet, come together with someone
 [N. 16,30.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?16,30)
   <sub>attested</sub>
 

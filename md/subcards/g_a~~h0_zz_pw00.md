@@ -100,8 +100,8 @@
 - **EN:** — *Desid. of Caus. *adhijigāpayiṣati* to desire to teach.
 
 **anu_1)** — Mit *anu*
-— 1〉 Jmd nachgehen, folgen, entlang gehen ([93,16]), einen Weg einschlagen; aufsuchen; mit Acc.
-- **EN:** — With *anu* — 1〉 to go after someone, follow, go along ([93,16]), to take a path; to seek out; with Acc.
+— 1〉 Jmd nachgehen, folgen, entlang gehen ([93,16](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?93)), einen Weg einschlagen; aufsuchen; mit Acc.
+- **EN:** — With *anu* — 1〉 to go after someone, follow, go along ([93,16](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?93)), to take a path; to seek out; with Acc.
 
 **anu_2)** — 2〉 befolgen, sich richten nach (Acc.).
 - **EN:** — 2〉 to comply with, conform to (Acc.).
@@ -119,8 +119,8 @@
 **antar_2)** — 2〉 dazwischentreten, trennen —, ausschliessen von (Abl.).
 - **EN:** — 2〉 to step between, separate, exclude from (Abl.).
 
-**apa)** — Mit *apa* weggehen, sich entfernen —, sich fernhalten von (Abl.) [25,9]. [18]. weichen von (Abl.).
-- **EN:** — With *apa* to go away, remove oneself, keep away from (Abl.) [25,9]. [18]. to retreat from (Abl.).
+**apa)** — Mit *apa* weggehen, sich entfernen —, sich fernhalten von (Abl.) [25,9](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?25). [18](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?25). weichen von (Abl.).
+- **EN:** — With *apa* to go away, remove oneself, keep away from (Abl.) [25,9](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?25). [18](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?25). to retreat from (Abl.).
 
 **abhi)** — Mit *api* eingehen, eindringen, sich mischen in (Acc.).
 - **EN:** — With *api* to enter, penetrate, mingle into (Acc.).
@@ -225,11 +225,11 @@
 - **EN:** — 2〉 to cling to (?).
 
 **vi-nis_1)** — Mit *nis*
-— 1〉 hervorkommen, — aus (Abl.) [110,4].
-- **EN:** — With *nis* — 1〉 to come forth, — from (Abl.) [110,4].
+— 1〉 hervorkommen, — aus (Abl.) [110,4](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?110).
+- **EN:** — With *nis* — 1〉 to come forth, — from (Abl.) [110,4](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?110).
 
-**vi-nis_2)** — 2〉 hinausgehen, fortgehen von (Abl.). [132,21]. das Haus verlassen [127,8].
-- **EN:** — 2〉 to go out, depart from (Abl.). [132,21]. to leave the house [127,8].
+**vi-nis_2)** — 2〉 hinausgehen, fortgehen von (Abl.). [132,21](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?132). das Haus verlassen [127,8](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?127).
+- **EN:** — 2〉 to go out, depart from (Abl.). [132,21](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?132). to leave the house [127,8](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?127).
 
 **vi-apa)** — Mit *parā* bei Seite gehen, fortgehen, entfliehen; mit dem Acc. wohin.
 - **EN:** — With *parā* to step aside, depart, flee; with the Acc. whither.
@@ -263,8 +263,8 @@
 — 1〉 vorwärts gehen, vorschreiten, sich in Bewegung setzen, hinschreiten zu (Acc.).
 - **EN:** — With *pra* — 1〉 to go forward, advance, set oneself in motion, stride towards (Acc.).
 
-**pra-pra_2)** — 2〉 fortgehen, sich auf und davon machen von (Abl.) [17,10. fgg.] (Conj.).
-- **EN:** — 2〉 to depart, make off from (Abl.) [17,10. fgg.] (Conj.).
+**pra-pra_2)** — 2〉 fortgehen, sich auf und davon machen von (Abl.) [17,10. fgg.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?17) (Conj.).
+- **EN:** — 2〉 to depart, make off from (Abl.) [17,10. fgg.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?17) (Conj.).
 
 **pra-pra_3)** — 3〉 mit *antar* ein-, hinein gehen [ṚV. 8,48,2](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.048.html#rv08.048.02).
 - **EN:** — 3〉 with *antar* to enter, go in [ṚV. 8,48,2](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.048.html#rv08.048.02).
@@ -369,9 +369,9 @@
 - **RU:** — *Desid. от Caus. *adhijigāpayiṣati*: желать учить.
   <sub>attested</sub>
 
-**Mit T52-1)** — Mit *anu* — 1〉 Jmd nachgehen, folgen, entlang gehen ([93,16]), einen Weg einschlagen; aufsuchen; mit Acc.
+**Mit T52-1)** — Mit *anu* — 1〉 Jmd nachgehen, folgen, entlang gehen ([93,16](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?93)), einen Weg einschlagen; aufsuchen; mit Acc.
 
-- **RU:** — С *anu* — 1〉 следовать за кем-л., идти вдоль ([93,16]), избирать путь; разыскивать; с Acc.
+- **RU:** — С *anu* — 1〉 следовать за кем-л., идти вдоль ([93,16](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?93)), избирать путь; разыскивать; с Acc.
   <sub>attested</sub>
 
 **Mit T52-2)** — 2〉 befolgen, sich richten nach (Acc.).
@@ -399,9 +399,9 @@
 - **RU:** — 2〉 вмешиваться, разлучать, отстранять от (Abl.).
   <sub>attested</sub>
 
-**Mit T62)** — Mit *apa* weggehen, sich entfernen —, sich fernhalten von (Abl.) [25,9]. [18]. weichen von (Abl.).
+**Mit T62)** — Mit *apa* weggehen, sich entfernen —, sich fernhalten von (Abl.) [25,9](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?25). [18](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?25). weichen von (Abl.).
 
-- **RU:** — С *apa*: уходить, удаляться — , держаться вдали от (Abl.) [25,9]. [18]. отступать от (Abl.).
+- **RU:** — С *apa*: уходить, удаляться — , держаться вдали от (Abl.) [25,9](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?25). [18](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?25). отступать от (Abl.).
   <sub>attested</sub>
 
 **Mit T67)** — Mit *api* eingehen, eindringen, sich mischen in (Acc.).
@@ -559,14 +559,14 @@
 - **RU:** — 2〉 прижиматься (?).
   <sub>attested</sub>
 
-**Mit T117-1)** — Mit *nis* — 1〉 hervorkommen, — aus (Abl.) [110,4].
+**Mit T117-1)** — Mit *nis* — 1〉 hervorkommen, — aus (Abl.) [110,4](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?110).
 
-- **RU:** — С *nis* — 1〉 выходить, — из (Abl.) [110,4].
+- **RU:** — С *nis* — 1〉 выходить, — из (Abl.) [110,4](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?110).
   <sub>attested</sub>
 
-**Mit T117-2)** — 2〉 hinausgehen, fortgehen von (Abl.). [132,21]. das Haus verlassen [127,8].
+**Mit T117-2)** — 2〉 hinausgehen, fortgehen von (Abl.). [132,21](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?132). das Haus verlassen [127,8](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?127).
 
-- **RU:** — 2〉 выходить, уходить от (Abl.). [132,21]. покидать дом [127,8].
+- **RU:** — 2〉 выходить, уходить от (Abl.). [132,21](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?132). покидать дом [127,8](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?127).
   <sub>attested</sub>
 
 **Mit T123)** — Mit *parā* bei Seite gehen, fortgehen, entfliehen; mit dem Acc. wohin.
@@ -619,9 +619,9 @@
 - **RU:** — С *pra* — 1〉 идти вперёд, продвигаться, приходить в движение, шагать к (Acc.).
   <sub>attested</sub>
 
-**Mit T135-2)** — 2〉 fortgehen, sich auf und davon machen von (Abl.) [17,10. fgg.] (Conj.).
+**Mit T135-2)** — 2〉 fortgehen, sich auf und davon machen von (Abl.) [17,10. fgg.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?17) (Conj.).
 
-- **RU:** — 2〉 уходить, убираться от (Abl.) [17,10. fgg.] (Conj.).
+- **RU:** — 2〉 уходить, убираться от (Abl.) [17,10. fgg.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?17) (Conj.).
   <sub>attested</sub>
 
 **Mit T135-3)** — 3〉 mit *antar* ein-, hinein gehen [ṚV. 8,48,2](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.048.html#rv08.048.02).

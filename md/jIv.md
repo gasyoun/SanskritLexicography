@@ -438,14 +438,14 @@ _PWG article — 17 sub-card(s), 103 sense(s) · RU 78/103 · EN 84/103_
 
 **4)** — 4) sich in Etwas (acc.) fügen, Jmd Etwas gönnen: *yāṃ tāṃ śriyamasūyāma purā dṛṣṭvā yudhiṣṭhire . adya tāmanujīvāmaḥ*
 [MBH. 7,428.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.428) — caus. Jmd wieder zum Leben bringen
-[DAŚAK.] in [BENF. Chr. 187,9.]
+[DAŚAK.] in [BENF. Chr. 187,9.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?187)
 
 - **RU:** 4) смиряться с чем-л. (acc.), желать кому-л. чего-л.: *yāṃ tāṃ śriyamasūyāma purā dṛṣṭvā yudhiṣṭhire . adya tāmanujīvāmaḥ*
 [MBH. 7,428.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.428) — caus. возвращать кого-л. к жизни
-[DAŚAK.] в [BENF. Chr. 187,9.]
+[DAŚAK.] в [BENF. Chr. 187,9.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?187)
 - **EN:** — 4) to acquiesce in something (acc.) , to grant someone something: *yāṃ tāṃ śriyamasūyāma purā dṛṣṭvā yudhiṣṭhire . adya tāmanujīvāmaḥ*
 [MBH. 7,428.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.428) — caus. to bring someone back to life
-[DAŚAK.] in [BENF. Chr. 187,9.]
+[DAŚAK.] in [BENF. Chr. 187,9.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?187)
   <sub>attested</sub>
 
 **note)** — Vgl. *anujīvin, anujīvya* .
@@ -944,12 +944,12 @@ Schol. — desid. med. [BHĀG. P. 11,7,70.](https://sanskrit-lexicon-scans.githu
 
 
 **1)** √*jīv*¦, *jīvati* (metrisch auch Med.)
-— 1〉 leben, am Leben sein, — bleiben. *jīva jīva* mögest du lange leben! Auch mit dem Acc. *jīvikām, jīvant* und *jīvita* (ausnahmsweise) lebend, lebendig, noch am Leben seiend. *jīvangacchati* so v. a. bleibt am Leben [57,2].
+— 1〉 leben, am Leben sein, — bleiben. *jīva jīva* mögest du lange leben! Auch mit dem Acc. *jīvikām, jīvant* und *jīvita* (ausnahmsweise) lebend, lebendig, noch am Leben seiend. *jīvangacchati* so v. a. bleibt am Leben [57,2](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?57).
 
 - **RU:** √*jīv*¦, *jīvati* (метрически также Med.)
-— 1〉 жить, быть живым, — оставаться в живых. *jīva jīva* да живёшь ты долго! Также с Acc. *jīvikām, jīvant* и *jīvita* (в виде исключения) живущий, живой, ещё живой. *jīvangacchati* так v. a. остаётся в живых [57,2].
+— 1〉 жить, быть живым, — оставаться в живых. *jīva jīva* да живёшь ты долго! Также с Acc. *jīvikām, jīvant* и *jīvita* (в виде исключения) живущий, живой, ещё живой. *jīvangacchati* так v. a. остаётся в живых [57,2](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?57).
 - **EN:** √*jīv*¦, *jīvati* (metrically also Med.)
-— 1〉 to live, be alive, — remain alive. *jīva jīva* 'mayest thou live long!' Also with the Acc. *jīvikām, jīvant* and *jīvita* (exceptionally) 'living, alive, still being alive'. *jīvangacchati* thus v. a. 'remains alive' [57,2].
+— 1〉 to live, be alive, — remain alive. *jīva jīva* 'mayest thou live long!' Also with the Acc. *jīvikām, jīvant* and *jīvita* (exceptionally) 'living, alive, still being alive'. *jīvangacchati* thus v. a. 'remains alive' [57,2](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?57).
   <sub>attested</sub>
 
 **2)** — 2〉 aufleben.
@@ -970,8 +970,8 @@ With *punar* dass. *jīvita* 'revived again'.
 **caus)** — Caus. *jīvayati* (episch auch Med.)
 - **EN:** — Caus. *jīvayati* (also epic Med.)
 
-**caus1)** — 1〉 lebendig machen, beleben. *jīvita* belebt, lebendig gemacht [63,11]. [123,1].
-- **EN:** — 1〉 to make alive, animate. *jīvita* 'animated, made alive' [63,11]. [123,1].
+**caus1)** — 1〉 lebendig machen, beleben. *jīvita* belebt, lebendig gemacht [63,11](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?63). [123,1](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?123).
+- **EN:** — 1〉 to make alive, animate. *jīvita* 'animated, made alive' [63,11](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?63). [123,1](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?123).
 
 **caus2)** — 2〉 Jmd am Leben lassen, Jmds Leben erhalten, so v. a. Jmd nicht sterben lassen und Jmd nicht tödten.
 
@@ -1063,19 +1063,19 @@ With *punar* dass. *jīvita* 'revived again'.
 - **EN:** — With *abhyud* to try to keep oneself alive, to nourish oneself.
   <sub>attested</sub>
 
-**sam-ud)** — Mit *pratyud* wieder aufleben [326,15]. *pratyujjīvita* aufgelebt [KĀD. 2,137,32. 139,1].
+**sam-ud)** — Mit *pratyud* wieder aufleben [326,15](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?326). *pratyujjīvita* aufgelebt [KĀD. 2,137,32. 139,1].
 
-- **RU:** — С *pratyud* снова ожить [326,15]. *pratyujjīvita* ожил [KĀD. 2,137,32. 139,1].
-- **EN:** — With *pratyud* to revive again [326,15]. *pratyujjīvita* 'revived' [KĀD. 2,137,32. 139,1].
+- **RU:** — С *pratyud* снова ожить [326,15](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?326). *pratyujjīvita* ожил [KĀD. 2,137,32. 139,1].
+- **EN:** — With *pratyud* to revive again [326,15](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?326). *pratyujjīvita* 'revived' [KĀD. 2,137,32. 139,1].
   <sub>attested</sub>
 
 **upajiv)** — Mit *upa*
-— 1〉 seinen Lebensunterhalt haben [33,7]. leben von, bestehen durch, erhalten werden von, Nutzen ziehen aus, benutzen, gebrauchen; mit Acc., ausnahmsweise mit Gen. oder Instr. ([Spr. 7865](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7865)). *upajīvya* Absol. in Abhängigkeit vom wegen; mit Acc. [Comm. zu NYĀYAM. 9,4,6. 10,1,11. 2,14].
+— 1〉 seinen Lebensunterhalt haben [33,7](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?33). leben von, bestehen durch, erhalten werden von, Nutzen ziehen aus, benutzen, gebrauchen; mit Acc., ausnahmsweise mit Gen. oder Instr. ([Spr. 7865](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7865)). *upajīvya* Absol. in Abhängigkeit vom wegen; mit Acc. [Comm. zu NYĀYAM. 9,4,6. 10,1,11. 2,14].
 
 - **RU:** — С *upa*
-— 1〉 иметь средства к существованию [33,7]. жить от, существовать благодаря, содержаться за счёт, извлекать пользу из, использовать, пользоваться; с Acc., в виде исключения с Gen. или Instr. ([Spr. 7865](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7865)). *upajīvya* Absol. в зависимости от, по причине; с Acc. [Comm. zu NYĀYAM. 9,4,6. 10,1,11. 2,14].
+— 1〉 иметь средства к существованию [33,7](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?33). жить от, существовать благодаря, содержаться за счёт, извлекать пользу из, использовать, пользоваться; с Acc., в виде исключения с Gen. или Instr. ([Spr. 7865](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7865)). *upajīvya* Absol. в зависимости от, по причине; с Acc. [Comm. zu NYĀYAM. 9,4,6. 10,1,11. 2,14].
 - **EN:** — With *upa*
-— 1〉 to have one's livelihood [33,7]. To live off, to subsist by, to be maintained by, to draw profit from, to use, to employ; with Acc., exceptionally with Gen. or Instr. ([Spr. 7865](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7865)). *upajīvya* Absol. in dependence on account of; with Acc. [Comm. zu NYĀYAM. 9,4,6. 10,1,11. 2,14].
+— 1〉 to have one's livelihood [33,7](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?33). To live off, to subsist by, to be maintained by, to draw profit from, to use, to employ; with Acc., exceptionally with Gen. or Instr. ([Spr. 7865](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7865)). *upajīvya* Absol. in dependence on account of; with Acc. [Comm. zu NYĀYAM. 9,4,6. 10,1,11. 2,14].
   <sub>attested</sub>
 
 **upajiv2)** — 2〉 leben von oder für, so v. a. betreiben, üben. *vṛttim* einen Lebensunterhalt erwählen [M. 4,200](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,200). *jīvikām* dass. *mānuṣyam* als Mensch leben, die Menschennatur erwählen.
@@ -1146,10 +1146,10 @@ With *punar* dass. *jīvita* 'revived again'.
 - **EN:** — With *abhi* to be more fortunate in life than (Abl.) [R. ed. Bomb. 3,34,19](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,34,19).
 
 **caus. 1)** — Caus. *jīvayati* (episch auch Med.)
-— 1〉 lebendig machen, beleben. *jīvita* belebt, lebendig gemacht [63,11]. [123,1].
+— 1〉 lebendig machen, beleben. *jīvita* belebt, lebendig gemacht [63,11](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?63). [123,1](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?123).
 
 - **RU:** — Caus. *jīvayati* (в эпосе также Med.)
-— 1〉 оживлять, делать живым. *jīvita* оживлённый, сделанный живым [63,11]. [123,1].
+— 1〉 оживлять, делать живым. *jīvita* оживлённый, сделанный живым [63,11](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?63). [123,1](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?123).
   <sub>attested</sub>
 
 **desid. T101)** — Desid.

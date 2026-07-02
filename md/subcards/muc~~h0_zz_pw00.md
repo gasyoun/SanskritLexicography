@@ -9,16 +9,16 @@
 - **EN:** **1.** √*muc*; present stems: *muca*, *muṅca*, *macya* (Med.), *mumuc* (*mumoc*) and *mumoca*; Act. Med.
   <sub>DCS 3914 · attested</sub>
 
-**1)** — 1〉 Jmd losmachen, freimachen, befreien, — von (Abl. oder _Adv._ auf *tas* [80,2]); Med. Pass. sich losmachen, sich befreien von (Abl., Instr. und ausnahmsweise Gen.), entrinnen. *mukta* freigelassen, befreit von (Abl. oder Instr.), — *durch (Abl. oder Instr. [231,5]).
+**1)** — 1〉 Jmd losmachen, freimachen, befreien, — von (Abl. oder _Adv._ auf *tas* [80,2](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?80)); Med. Pass. sich losmachen, sich befreien von (Abl., Instr. und ausnahmsweise Gen.), entrinnen. *mukta* freigelassen, befreit von (Abl. oder Instr.), — *durch (Abl. oder Instr. [231,5](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?231)).
 
-- **RU:** — 1〉 освобождать кого-либо, отпускать на свободу, избавлять — от (Abl. или _Adv._ при *tas* [80,2]); Med. Pass. освобождаться, избавляться от (Abl., Instr. и в виде исключения Gen.), спасаться бегством. *mukta* отпущенный на свободу, освобождённый от (Abl. или Instr.), — *посредством (Abl. или Instr. [231,5]).
-- **EN:** — 1) to loose, set free, liberate someone — from (Abl. or _Adv._ on *tas* [80,2]); Med. Pass. to free oneself, become released from (Abl., Instr. and exceptionally Gen.), to escape. *mukta* freed, liberated from (Abl. or Instr.) — *through (Abl. or Instr. [231,5]).
+- **RU:** — 1〉 освобождать кого-либо, отпускать на свободу, избавлять — от (Abl. или _Adv._ при *tas* [80,2](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?80)); Med. Pass. освобождаться, избавляться от (Abl., Instr. и в виде исключения Gen.), спасаться бегством. *mukta* отпущенный на свободу, освобождённый от (Abl. или Instr.), — *посредством (Abl. или Instr. [231,5](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?231)).
+- **EN:** — 1) to loose, set free, liberate someone — from (Abl. or _Adv._ on *tas* [80,2](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?80)); Med. Pass. to free oneself, become released from (Abl., Instr. and exceptionally Gen.), to escape. *mukta* freed, liberated from (Abl. or Instr.) — *through (Abl. or Instr. [231,5](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?231)).
   <sub>DCS 3914 · attested</sub>
 
-**2)** — 2〉 verschonen [81,6].
+**2)** — 2〉 verschonen [81,6](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?81).
 
-- **RU:** — 2〉 щадить [81,6].
-- **EN:** — 2) to spare [81,6].
+- **RU:** — 2〉 щадить [81,6](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?81).
+- **EN:** — 2) to spare [81,6](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?81).
   <sub>DCS 3914 · attested</sub>
 
 **3)** — 3〉 ablösen, abbinden, lösen. *kaṇṭham* die Kehle lösen, so v. a. seine Stimme erheben. *prāṇān* Jmds (Gen.) Lebensgeister lösen, so v. a. Jmd das Leben nehmen. *mukta* losgebunden; abgelöst, herabgefallen (Frucht); aufgelöst, so v. a. erschlafft (die Glieder des Körpers).
@@ -27,10 +27,10 @@
 - **EN:** — 3) to detach, untie, loosen. *kaṇṭham* "to loosen the throat," i.e. v. a. to raise one's voice. *prāṇān* "to loosen someone's (Gen.) vital spirits," i.e. v. a. to take someone's life. *mukta* untied; detached, fallen off (of fruit); relaxed, i.e. v. a. slackened (of the limbs of the body).
   <sub>DCS 3914 · attested</sub>
 
-**4)** — 4〉 loslassen, freilassen ([326,9]. [327,20]), die Zügel schiessen lassen (Partic. *mukta*); entlassen, gehen lassen. *padātpadam* mit *na* den einen Fuss nicht vom andern lassen, so v. a. sich nicht von der Stelle bewegen. *ubhayorhastayormuktamannam* so v. a. Speise, die man nicht mit beiden Händen hält, [VASIṢṬHA 11,25].
+**4)** — 4〉 loslassen, freilassen ([326,9](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?326). [327,20](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?327)), die Zügel schiessen lassen (Partic. *mukta*); entlassen, gehen lassen. *padātpadam* mit *na* den einen Fuss nicht vom andern lassen, so v. a. sich nicht von der Stelle bewegen. *ubhayorhastayormuktamannam* so v. a. Speise, die man nicht mit beiden Händen hält, [VASIṢṬHA 11,25].
 
-- **RU:** — 4〉 отпускать, отпускать на волю ([326,9]. [327,20]), отпускать поводья (Partic. *mukta*); отпускать, давать уйти. *padātpadam* с *na* не отрывать одну ногу от другой, т.е. v. a. не двигаться с места. *ubhayorhastayormuktamannam* т.е. v. a. еда, которую держат не обеими руками, [VASIṢṬHA 11,25].
-- **EN:** — 4) to let loose, set free ([326,9]. [327,20]), to give free rein to the reins (Partic. *mukta*); to release, let go. *padātpadam* with *na* "not to let one foot leave the other," i.e. v. a. not to move from the spot. *ubhayorhastayormuktamannam* thus v. a. food that one does not hold with both hands [VASIṢṬHA 11,25].
+- **RU:** — 4〉 отпускать, отпускать на волю ([326,9](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?326). [327,20](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?327)), отпускать поводья (Partic. *mukta*); отпускать, давать уйти. *padātpadam* с *na* не отрывать одну ногу от другой, т.е. v. a. не двигаться с места. *ubhayorhastayormuktamannam* т.е. v. a. еда, которую держат не обеими руками, [VASIṢṬHA 11,25].
+- **EN:** — 4) to let loose, set free ([326,9](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?326). [327,20](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?327)), to give free rein to the reins (Partic. *mukta*); to release, let go. *padātpadam* with *na* "not to let one foot leave the other," i.e. v. a. not to move from the spot. *ubhayorhastayormuktamannam* thus v. a. food that one does not hold with both hands [VASIṢṬHA 11,25].
   <sub>DCS 3914 · attested</sub>
 
 **5)** — 5〉 einen Platz verlassen. *mukta* verlassen, frei gelassen (Weg). frei gelegt ([MEGH. 41](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?41)). *muktā dik* heisst diejenige Weltgegend, welche die Sonne so eben verlassen hat.
@@ -39,10 +39,10 @@
 - **EN:** — 5) to leave a place. *mukta* left, vacated (of a road). laid open ([MEGH. 41](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?41)). *muktā dik* denotes that quarter of the world which the sun has just left.
   <sub>DCS 3914 · attested</sub>
 
-**6)** — 6〉 Jmd oder Etwas fahren lassen, im Stich lassen, aufgeben, ablegen, absetzen ([CAMPAKA. 92]), deponiren ([ebend. 407. 410]). *kalevaram* ([Chr. 55,20]), *deham*, *prāṇān*, *jīvitam* ([315,6]) den Körper, die Lebensgeister, das Leben fahren lassen, in den Tod gehen, sterben. *mukta* fahren gelassen, verlassen, ausgezogen, abgelegt, deponirt ([CAMPAKA. 473]), weggeworfen (Kleider [ĀPAST. 2,21,11]), fahren gelassen, aufgegeben, nicht mehr da seiend, verschwunden (insbes. am Anfange eines adj. Comp.).
+**6)** — 6〉 Jmd oder Etwas fahren lassen, im Stich lassen, aufgeben, ablegen, absetzen ([CAMPAKA. 92]), deponiren ([ebend. 407. 410]). *kalevaram* ([Chr. 55,20](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?55)), *deham*, *prāṇān*, *jīvitam* ([315,6](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?315)) den Körper, die Lebensgeister, das Leben fahren lassen, in den Tod gehen, sterben. *mukta* fahren gelassen, verlassen, ausgezogen, abgelegt, deponirt ([CAMPAKA. 473]), weggeworfen (Kleider [ĀPAST. 2,21,11]), fahren gelassen, aufgegeben, nicht mehr da seiend, verschwunden (insbes. am Anfange eines adj. Comp.).
 
-- **RU:** — 6〉 бросать кого-либо или что-либо, покидать, отказываться от, снимать с себя, слагать ([CAMPAKA. 92]), класть на хранение ([ebend. 407. 410]). *kalevaram* ([Chr. 55,20]), *deham*, *prāṇān*, *jīvitam* ([315,6]) оставить тело, жизненные силы, жизнь, уйти в смерть, умереть. *mukta* оставленный, покинутый, снятый, сброшенный, отложенный ([CAMPAKA. 473]), выброшенный (одежды [ĀPAST. 2,21,11]), оставленный, оставленный позади, более не существующий, исчезнувший (insbes. в начале adj. Comp.).
-- **EN:** — 6) to let go of, abandon, give up someone or something, lay aside, set down ([CAMPAKA. 92]), deposit ([ebend. 407. 410]). *kalevaram* ([Chr. 55,20]), *deham*, *prāṇān*, *jīvitam* ([315,6]) to give up the body, the vital spirits, life, i.e. to go to death, to die. *mukta* let go, abandoned, taken off, laid aside, deposited ([CAMPAKA. 473]), thrown away (of clothes [ĀPAST. 2,21,11]), given up, abandoned, no longer present, vanished (insbes. at the beginning of a adj. Comp.).
+- **RU:** — 6〉 бросать кого-либо или что-либо, покидать, отказываться от, снимать с себя, слагать ([CAMPAKA. 92]), класть на хранение ([ebend. 407. 410]). *kalevaram* ([Chr. 55,20](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?55)), *deham*, *prāṇān*, *jīvitam* ([315,6](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?315)) оставить тело, жизненные силы, жизнь, уйти в смерть, умереть. *mukta* оставленный, покинутый, снятый, сброшенный, отложенный ([CAMPAKA. 473]), выброшенный (одежды [ĀPAST. 2,21,11]), оставленный, оставленный позади, более не существующий, исчезнувший (insbes. в начале adj. Comp.).
+- **EN:** — 6) to let go of, abandon, give up someone or something, lay aside, set down ([CAMPAKA. 92]), deposit ([ebend. 407. 410]). *kalevaram* ([Chr. 55,20](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?55)), *deham*, *prāṇān*, *jīvitam* ([315,6](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?315)) to give up the body, the vital spirits, life, i.e. to go to death, to die. *mukta* let go, abandoned, taken off, laid aside, deposited ([CAMPAKA. 473]), thrown away (of clothes [ĀPAST. 2,21,11]), given up, abandoned, no longer present, vanished (insbes. at the beginning of a adj. Comp.).
   <sub>DCS 3914 · attested</sub>
 
 **7)** — 7〉 aus sich entlassen, von sich geben, ausstossen, vergiessen (Thränen). *mukta* aus sich entlassen, von sich gegeben, ausgestossen, vergossen (Thränen).
@@ -81,10 +81,10 @@
 - **EN:** — 12) Pass.
   <sub>DCS 3914 · attested</sub>
 
-**12a)** — a〉 befreit —, erlöst werden von einer Sünde, — von den Sünden, — von den Banden der Welt. *muktvā* erlöst seiend [288,29]. *mukta* von einer Sünde befreit ([ĀPAST. 1,24,21]), erlöst von den Sünden, — von den Banden der Welt.
+**12a)** — a〉 befreit —, erlöst werden von einer Sünde, — von den Sünden, — von den Banden der Welt. *muktvā* erlöst seiend [288,29](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?288). *mukta* von einer Sünde befreit ([ĀPAST. 1,24,21]), erlöst von den Sünden, — von den Banden der Welt.
 
-- **RU:** — a〉 быть освобождённым — избавленным от греха, — от грехов, — от уз мирского существования. *muktvā* пребывающий в освобождении [288,29]. *mukta* освобождённый от греха ([ĀPAST. 1,24,21]), избавленный от грехов, — от уз мирского существования.
-- **EN:** — a) to be freed —, released from a sin, — from sins, — from the bonds of the world. *muktvā* being released [288,29]. *mukta* freed from a sin ([ĀPAST. 1,24,21]), released from sins, — from the bonds of the world.
+- **RU:** — a〉 быть освобождённым — избавленным от греха, — от грехов, — от уз мирского существования. *muktvā* пребывающий в освобождении [288,29](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?288). *mukta* освобождённый от греха ([ĀPAST. 1,24,21]), избавленный от грехов, — от уз мирского существования.
+- **EN:** — a) to be freed —, released from a sin, — from sins, — from the bonds of the world. *muktvā* being released [288,29](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?288). *mukta* freed from a sin ([ĀPAST. 1,24,21]), released from sins, — from the bonds of the world.
   <sub>DCS 3914 · attested</sub>
 
 **12b)** — b〉 lassen von (Abl.) [Spr. 6496](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?6496).
@@ -93,10 +93,10 @@
 - **EN:** — b) to let go of (Abl.) [Spr. 6496](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?6496).
   <sub>DCS 3914 · attested</sub>
 
-**12c)** — c〉 kommen um (Instr.) [49,30].
+**12c)** — c〉 kommen um (Instr.) [49,30](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?49).
 
-- **RU:** — c〉 лишаться (Instr.) [49,30].
-- **EN:** — c) to lose, be deprived of (Instr.) [49,30].
+- **RU:** — c〉 лишаться (Instr.) [49,30](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?49).
+- **EN:** — c) to lose, be deprived of (Instr.) [49,30](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?49).
   <sub>DCS 3914 · attested</sub>
 
 **12d)** — d〉 ermangeln, mit Instr. *mukta* ermangelnd, die Ergänzung im Instr. oder im Comp. vorangehend.
@@ -291,10 +291,10 @@
 - **EN:** — 2) to let loose, let go.
   <sub>DCS 3914 · attested</sub>
 
-**ud3)** — 3〉 ablösen, ausziehen; Med. von sich abstreifen, ablegen, abnehmen von (Abl.) [42,30].
+**ud3)** — 3〉 ablösen, ausziehen; Med. von sich abstreifen, ablegen, abnehmen von (Abl.) [42,30](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?42).
 
-- **RU:** — 3〉 снимать, сбрасывать; Med. сбрасывать с себя, снимать, убирать с (Abl.) [42,30].
-- **EN:** — 3) to detach, take off; Med. to strip off from oneself, lay aside, remove from (Abl.) [42,30].
+- **RU:** — 3〉 снимать, сбрасывать; Med. сбрасывать с себя, снимать, убирать с (Abl.) [42,30](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?42).
+- **EN:** — 3) to detach, take off; Med. to strip off from oneself, lay aside, remove from (Abl.) [42,30](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?42).
   <sub>DCS 3914 · attested</sub>
 
 **compound-pari1)** — Mit *vyava* von sich ablösen, ablegen. Nur Absol.

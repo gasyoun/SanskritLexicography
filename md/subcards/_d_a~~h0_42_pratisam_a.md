@@ -16,13 +16,13 @@
   <sub>DCS 4861 · attested</sub>
 
 **2)** — 2) Etwas wieder an seinen Platz stellen, in Ordnung bringen, wiederherstellen: *karṇakuvalayaṃ srastamiti pratisamādadhatī*
-[DAŚAK.] in [BENF. Chr. 196,20.] (*dharmaḥ*) *bādhito 'pi cālpāyāsapratisamāhitaḥ* ebend.
-[182,7.]
+[DAŚAK.] in [BENF. Chr. 196,20.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?196) (*dharmaḥ*) *bādhito 'pi cālpāyāsapratisamāhitaḥ* ebend.
+[182,7.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?182)
 
 - **RU:** — 2) ставить что-либо обратно на своё место, приводить в порядок, восстанавливать: *karṇakuvalayaṃ srastamiti pratisamādadhatī*
-[DAŚAK.] in [BENF. Chr. 196,20.] (*dharmaḥ*) *bādhito 'pi cālpāyāsapratisamāhitaḥ* ebend.
-[182,7.]
+[DAŚAK.] in [BENF. Chr. 196,20.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?196) (*dharmaḥ*) *bādhito 'pi cālpāyāsapratisamāhitaḥ* ebend.
+[182,7.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?182)
 - **EN:** — 2) to put something back in its place, to set in order, to restore: *karṇakuvalayaṃ srastamiti pratisamādadhatī*
-[DAŚAK.] in [BENF. Chr. 196,20.] (*dharmaḥ*) *bādhito 'pi cālpāyāsapratisamāhitaḥ* ebend.
-[182,7.]
+[DAŚAK.] in [BENF. Chr. 196,20.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?196) (*dharmaḥ*) *bādhito 'pi cālpāyāsapratisamāhitaḥ* ebend.
+[182,7.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?182)
   <sub>DCS 4861 · attested</sub>

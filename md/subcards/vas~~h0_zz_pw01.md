@@ -119,8 +119,8 @@
 **PW-anu-intro)** — Mit *anu*
 - **EN:** — With *anu*
 
-**PW-anu-1)** — 1〉 Jmd nachziehen, Jmd an einen Ort folgen; mit Acc. der Person [240,13]. **anūṣita* mit passiver, neutraler und activer Bed.
-- **EN:** — 1) to follow after someone, follow someone to a place; with Acc. of the person [240,13]. **anūṣita* with passive, neuter and active Bed.
+**PW-anu-1)** — 1〉 Jmd nachziehen, Jmd an einen Ort folgen; mit Acc. der Person [240,13](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?240). **anūṣita* mit passiver, neutraler und activer Bed.
+- **EN:** — 1) to follow after someone, follow someone to a place; with Acc. of the person [240,13](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?240). **anūṣita* with passive, neuter and active Bed.
 
 **PW-anu-2)** — 2〉 an einen Ort ziehen, zum Aufenthaltsort wählen.
 - **EN:** — 2) to move to a place, choose it as one's residence.
@@ -221,8 +221,8 @@
 **PW-upani-2)** — 2〉 beziehen, zum Aufenthaltsort erwählen, bewohnen; mit Acc.
 - **EN:** — 2) to move into, choose as one's residence, inhabit; with Acc.
 
-**PW-Caus-upani)** — Caus. Halt machen, sich lagern, sich niederlassen [320,28]. *samāvāsita* mit act. Bed. [VĀSAV. 172,1].
-- **EN:** — Caus. "to halt, encamp, settle down" [320,28]. *samāvāsita* with act. Bed. [VĀSAV. 172,1].
+**PW-Caus-upani)** — Caus. Halt machen, sich lagern, sich niederlassen [320,28](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?320). *samāvāsita* mit act. Bed. [VĀSAV. 172,1].
+- **EN:** — Caus. "to halt, encamp, settle down" [320,28](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?320). *samāvāsita* with act. Bed. [VĀSAV. 172,1].
 
 **PW-pra)** — Mit *ud*, *uduṣita* (Conj.) der das Haus verlassen hat, Asket geworden [HEM. PAR. 5,51].
 - **EN:** — With *ud*, *uduṣita* (Conj.) "who has left the house, become an ascetic" [HEM. PAR. 5,51].

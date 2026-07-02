@@ -58,8 +58,8 @@
 **pw-17)** — d〉 gewollt, beabsichtigt.
 - **EN:** — d) willed, intended.
 
-**pw-18)** — e〉 empfunden, vermuthet [283,32].
-- **EN:** — e) perceived, surmised [283,32].
+**pw-18)** — e〉 empfunden, vermuthet [283,32](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?283).
+- **EN:** — e) perceived, surmised [283,32](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?283).
 
 **pw-19)** — f〉 erkannt, bekannt [MBH. 4,14,8](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?4,14,8).
 - **EN:** — f) recognized, known [MBH. 4,14,8](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?4,14,8).

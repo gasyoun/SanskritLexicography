@@ -117,10 +117,10 @@
 - **EN:** — 8) to hold fast (opposite to give up).
   <sub>attested</sub>
 
-**p4_9)** — 9〉 an sich tragen, haben, besitzen [HEM. PAR. 1,411]. *devīśabdam* den Titel Devī führen [Chr. 328,29].
+**p4_9)** — 9〉 an sich tragen, haben, besitzen [HEM. PAR. 1,411]. *devīśabdam* den Titel Devī führen [Chr. 328,29](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?328).
 
-- **RU:** — 9) носить на себе, иметь, обладать [HEM. PAR. 1,411]. *devīśabdam* носить титул Devī [Chr. 328,29].
-- **EN:** — 9) to bear upon oneself, to have, to possess [HEM. PAR. 1,411]. *devīśabdam* to bear the title Devī [Chr. 328,29].
+- **RU:** — 9) носить на себе, иметь, обладать [HEM. PAR. 1,411]. *devīśabdam* носить титул Devī [Chr. 328,29](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?328).
+- **EN:** — 9) to bear upon oneself, to have, to possess [HEM. PAR. 1,411]. *devīśabdam* to bear the title Devī [Chr. 328,29](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?328).
   <sub>attested</sub>
 
 **p4_10)** — 10〉 äussern, an den Tag legen.
@@ -201,10 +201,10 @@
 - **EN:** — 5) to bear, to endure.
   <sub>attested</sub>
 
-**p6_6)** — 6〉 an sich tragen, haben [319,16] (im Prākrit).
+**p6_6)** — 6〉 an sich tragen, haben [319,16](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?319) (im Prākrit).
 
-- **RU:** — 6) носить на себе, иметь [319,16] (в Prākrit).
-- **EN:** — 6) to bear upon oneself, to have [319,16] (in Prākrit).
+- **RU:** — 6) носить на себе, иметь [319,16](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?319) (в Prākrit).
+- **EN:** — 6) to bear upon oneself, to have [319,16](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?319) (in Prākrit).
   <sub>attested</sub>
 
 **p6_7)** — 7〉 an den Tag legen, äussern.

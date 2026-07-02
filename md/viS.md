@@ -5301,7 +5301,7 @@ u. s. w. [ṚV. 4,50,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04
 
 - **RU:** **1.** √*viś*¦, *viśati*, *te* (в более позднем языке большей частью в метрических текстах)
 - **EN:** **1.** √*viś*¦, *viśati*, *te* (in the later language mostly metrical)
-— 1) to settle down, enter into —, go in —, move in —, betake oneself into —, slip into —, penetrate —, sink into —, be absorbed into (Loc. or Acc.); also with *antar* added ([299,26]). *agnim* u. s. w. to mount the funeral pyre. In the Astr. to come into conjunction with (Acc.). Without complement: to enter the house u. s. w., to appear on the stage, to come forth.
+— 1) to settle down, enter into —, go in —, move in —, betake oneself into —, slip into —, penetrate —, sink into —, be absorbed into (Loc. or Acc.); also with *antar* added ([299,26](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?299)). *agnim* u. s. w. to mount the funeral pyre. In the Astr. to come into conjunction with (Acc.). Without complement: to enter the house u. s. w., to appear on the stage, to come forth.
   <sub>attested</sub>
 
 **1-return)** — Mit *punar* oder *bhūyas* zurückgehen, zurückkehren, — in (Acc.).
@@ -5334,10 +5334,10 @@ u. s. w. [ṚV. 4,50,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04
 - **EN:** — 5) to flow into, stream towards (of army divisions and tributary rivers).
   <sub>attested</sub>
 
-**6)** — 6〉 Jmd (Acc.) zuströmen, zufliessen, kommen (von einem Gedanken [95,4]), zu Theil werden, Jmd treffen.
+**6)** — 6〉 Jmd (Acc.) zuströmen, zufliessen, kommen (von einem Gedanken [95,4](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?95)), zu Theil werden, Jmd treffen.
 
-- **RU:** — 6〉 приходить, притекать, являться к кому-либо (Acc.) (о мысли [95,4]), доставаться, постигать кого-либо.
-- **EN:** — 6) to flow to —, come streaming to someone (Acc.) (of a thought [95,4]), to fall to one's share, befall someone.
+- **RU:** — 6〉 приходить, притекать, являться к кому-либо (Acc.) (о мысли [95,4](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?95)), доставаться, постигать кого-либо.
+- **EN:** — 6) to flow to —, come streaming to someone (Acc.) (of a thought [95,4](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?95)), to fall to one's share, befall someone.
   <sub>attested</sub>
 
 **7)** — 7〉 Jmd (Loc.) zukommen, so v. a. für Jmd dasein, — gehen (impers.).
@@ -5415,14 +5415,14 @@ u. s. w. [ṚV. 4,50,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04
 — 2〉 geschlechtlichen Umgang haben mit einem Weibe (Acc.).
 — 3〉 sich nahe herbeimachen zu (Acc.), kommen.
 — 4〉 sich niederlassen —, sich setzen auf (Acc.) zu [Spr. 1478](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1478).
-— 5〉 fahren in, Besitz nehmen von, sich Jmds bemächtigen (von bösen Geistern, Gemüthszuständen, Leiden u. s. w.); mit Acc. [73,7].
+— 5〉 fahren in, Besitz nehmen von, sich Jmds bemächtigen (von bösen Geistern, Gemüthszuständen, Leiden u. s. w.); mit Acc. [73,7](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?73).
 — 6〉 in einen Zustand —, in ein Verhältniss eintreten, gerathen in (Acc.). *rūpāṇi* so v. a. Farben annehmen, *rājyam* die Herrschaft antreten.
 - **EN:** — With *ā*
 — 1) to enter, go in, settle down in or among, penetrate into (Acc., exceptionally Loc.). *kham*, *gaganam* u. s. w. to rise into the air. *gṛheṣvāviśantaḥ pumāṃsaḥ* thus v. a. householder. Often *gṛham* or dgl. is to be supplied; also: to return home.
 — 2) to have sexual intercourse with a woman (Acc.).
 — 3) to approach closely to (Acc.), to come.
 — 4) to settle —, sit down upon (Acc.) for [Spr. 1478](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1478).
-— 5) to enter into, take possession of, seize someone (of evil spirits, states of mind, ailments u. s. w.); with Acc. [73,7].
+— 5) to enter into, take possession of, seize someone (of evil spirits, states of mind, ailments u. s. w.); with Acc. [73,7](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?73).
 — 6) to enter a state —, fall into a relation (Acc.). *rūpāṇi* thus v. a. to take on colours, *rājyam* to assume sovereignty.
 
 **a-ppp)** — 7〉 *āviṣṭa*
@@ -5585,9 +5585,9 @@ u. s. w. [ṚV. 4,50,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04
 — 3) to cause someone to void per anum, with double Acc. [CARAKA. 6,10. 18]. [BHĀVAPR. 4,4]. — *upaveśya* [PAÑCAT. 147,6](https://sanskrit-lexicon-scans.github.io/pantankose/app2?147,6) erroneous for *upaviśya*.
 — With *adhyupa*: to seat oneself thereon.
 
-**1-body)** — 1〉 sich niederlassen, hineintreten —, eingehen —, einziehen —, sich hineinbegeben —, hineinschlüpfen —, eindringen —, versinken —, aufgehen in (Loc. oder Acc.); auch mit hinzugefügtem *antar* ([299,26]). *agnim* u. s. w. den Scheiterhaufen besteigen. In der Astr. in Conjunction kommen mit (Acc.). Ohne Ergänzung hineintreten inʼs Haus u. s. w., auftreten auf der Schaubühne, erscheinen.
+**1-body)** — 1〉 sich niederlassen, hineintreten —, eingehen —, einziehen —, sich hineinbegeben —, hineinschlüpfen —, eindringen —, versinken —, aufgehen in (Loc. oder Acc.); auch mit hinzugefügtem *antar* ([299,26](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?299)). *agnim* u. s. w. den Scheiterhaufen besteigen. In der Astr. in Conjunction kommen mit (Acc.). Ohne Ergänzung hineintreten inʼs Haus u. s. w., auftreten auf der Schaubühne, erscheinen.
 
-- **RU:** — 1〉 поселяться, входить —, вступать —, вселяться —, проникать внутрь —, вползать —, врываться —, погружаться —, сливаться с (Loc. или Acc.); также с добавлением *antar* ([299,26]). *agnim* u. s. w. всходить на погребальный костёр. В Astr. вступать в соединение с (Acc.). Без дополнения входить в дом u. s. w., выступать на сцене, появляться.
+- **RU:** — 1〉 поселяться, входить —, вступать —, вселяться —, проникать внутрь —, вползать —, врываться —, погружаться —, сливаться с (Loc. или Acc.); также с добавлением *antar* ([299,26](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?299)). *agnim* u. s. w. всходить на погребальный костёр. В Astr. вступать в соединение с (Acc.). Без дополнения входить в дом u. s. w., выступать на сцене, появляться.
   <sub>attested</sub>
 
 **11)** — 11〉 *viṣṭa*
@@ -5675,9 +5675,9 @@ u. s. w. [ṚV. 4,50,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04
 - **RU:** — 4〉 усаживаться —, садиться на (Acc.) для [Spr. 1478](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1478).
   <sub>attested</sub>
 
-**aa-5)** — 5〉 fahren in, Besitz nehmen von, sich Jmds bemächtigen (von bösen Geistern, Gemüthszuständen, Leiden u. s. w.); mit Acc. [73,7].
+**aa-5)** — 5〉 fahren in, Besitz nehmen von, sich Jmds bemächtigen (von bösen Geistern, Gemüthszuständen, Leiden u. s. w.); mit Acc. [73,7](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?73).
 
-- **RU:** — 5〉 вселяться в, овладевать, захватывать кого-либо (о злых духах, душевных состояниях, недугах u. s. w.); с Acc. [73,7].
+- **RU:** — 5〉 вселяться в, овладевать, захватывать кого-либо (о злых духах, душевных состояниях, недугах u. s. w.); с Acc. [73,7](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?73).
   <sub>attested</sub>
 
 **aa-6)** — 6〉 in einen Zustand —, in ein Verhältniss eintreten, gerathen in (Acc.). *rūpāṇi* so v. a. Farben annehmen, *rājyam* die Herrschaft antreten.
@@ -6111,10 +6111,10 @@ u. s. w. [ṚV. 4,50,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04
 - **EN:** — With *ni* Med. (Act. metrically or inexactly)
   <sub>attested</sub>
 
-**ni-vi-1)** — 1〉 hineingehen, heimgehen (inʼs Haus, Lager, Nest), eingehen —, dringen in (Acc. oder Loc.). Von einem Blutegel so v. a. anbeissen [217,33]. *jñeyapade* in den Bereich des Erkennbaren treten, *matau* in den Geist dringen, so v. a. zum Bewusstsein kommen.
+**ni-vi-1)** — 1〉 hineingehen, heimgehen (inʼs Haus, Lager, Nest), eingehen —, dringen in (Acc. oder Loc.). Von einem Blutegel so v. a. anbeissen [217,33](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?217). *jñeyapade* in den Bereich des Erkennbaren treten, *matau* in den Geist dringen, so v. a. zum Bewusstsein kommen.
 
-- **RU:** — 1〉 входить, возвращаться домой (в дом, в стан, в гнездо), проникать —, вторгаться в (Acc. или Loc.). О пиявке так v. a. впиваться, кусать [217,33]. *jñeyapade* вступать в сферу познаваемого, *matau* проникать в разум, так v. a. доходить до сознания.
-- **EN:** — 1) to go in, to go home (into the house, camp, nest), to enter into —, to penetrate into (Acc. or Loc.). Of a leech, so v. a. to bite in [217,33]. *jñeyapade* to enter the realm of the perceptible, *matau* to penetrate into the mind, so v. a. to come into consciousness.
+- **RU:** — 1〉 входить, возвращаться домой (в дом, в стан, в гнездо), проникать —, вторгаться в (Acc. или Loc.). О пиявке так v. a. впиваться, кусать [217,33](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?217). *jñeyapade* вступать в сферу познаваемого, *matau* проникать в разум, так v. a. доходить до сознания.
+- **EN:** — 1) to go in, to go home (into the house, camp, nest), to enter into —, to penetrate into (Acc. or Loc.). Of a leech, so v. a. to bite in [217,33](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?217). *jñeyapade* to enter the realm of the perceptible, *matau* to penetrate into the mind, so v. a. to come into consciousness.
   <sub>attested</sub>
 
 **ni-vi-2)** — 2〉 sich lagern, Halt machen.
@@ -6147,10 +6147,10 @@ u. s. w. [ṚV. 4,50,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04
 - **EN:** — 6) to sink down, to sink.
   <sub>attested</sub>
 
-**ni-vi-7)** — 7〉 sich niederlassen, so v. a. ein Haus gründen, heirathen (vom Manne) [214,1].
+**ni-vi-7)** — 7〉 sich niederlassen, so v. a. ein Haus gründen, heirathen (vom Manne) [214,1](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?214).
 
-- **RU:** — 7〉 поселяться, обосновываться, так v. a. заводить дом, жениться (о мужчине) [214,1].
-- **EN:** — 7) to settle down, so v. a. to found a household, to marry (of a man) [214,1].
+- **RU:** — 7〉 поселяться, обосновываться, так v. a. заводить дом, жениться (о мужчине) [214,1](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?214).
+- **EN:** — 7) to settle down, so v. a. to found a household, to marry (of a man) [214,1](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?214).
   <sub>attested</sub>
 
 **ni-vi-8)** — 8〉 gegründet werden (von einer Stadt). Dreimal in der Verbindung *dvāravatyāṃ niviśantyām* ([MBH. 13,70,2](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?13,70,2)).
@@ -6195,10 +6195,10 @@ u. s. w. [ṚV. 4,50,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04
 - **EN:** — 14) *niviṣṭa*
   <sub>attested</sub>
 
-**ni-vi-14-a)** — a〉 hineingegangen, eingedrungen (auch mit hinzugefügtem *antar*), ruhend in oder auf ([311,17]), steckend an oder in (Loc. oder im Comp. vorangehend).
+**ni-vi-14-a)** — a〉 hineingegangen, eingedrungen (auch mit hinzugefügtem *antar*), ruhend in oder auf ([311,17](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?311)), steckend an oder in (Loc. oder im Comp. vorangehend).
 
-- **RU:** — a〉 вошедший, проникший (также с добавленным *antar*), покоящийся в или на ([311,17]), застрявший у или в (Loc. или предшествующий Comp.).
-- **EN:** — a) having gone in, having penetrated (also with *antar* added), resting in or upon ([311,17]), lodged on or in (Loc. or preceding in Comp.).
+- **RU:** — a〉 вошедший, проникший (также с добавленным *antar*), покоящийся в или на ([311,17](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?311)), застрявший у или в (Loc. или предшествующий Comp.).
+- **EN:** — a) having gone in, having penetrated (also with *antar* added), resting in or upon ([311,17](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?311)), lodged on or in (Loc. or preceding in Comp.).
   <sub>attested</sub>
 
 **ni-vi-14-b)** — b〉 an einem Orte verweilend, sich aufhaltend. *dharmapathe* so v. a. auf dem Pfade des Rechten bleibend.
@@ -6243,10 +6243,10 @@ u. s. w. [ṚV. 4,50,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04
 - **EN:** — h) directed toward (Loc. or preceding in Comp.).
   <sub>attested</sub>
 
-**ni-vi-14-i)** — i〉 obliegend, bedacht auf (Loc.) [55,29].
+**ni-vi-14-i)** — i〉 obliegend, bedacht auf (Loc.) [55,29](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?55).
 
-- **RU:** — i〉 лежащий на обязанности, помышляющий о (Loc.) [55,29].
-- **EN:** — i) being incumbent, intent upon (Loc.) [55,29].
+- **RU:** — i〉 лежащий на обязанности, помышляющий о (Loc.) [55,29](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?55).
+- **EN:** — i) being incumbent, intent upon (Loc.) [55,29](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?55).
   <sub>attested</sub>
 
 **ni-vi-14-k)** — k〉 gegründet, angelegt.
@@ -6255,10 +6255,10 @@ u. s. w. [ṚV. 4,50,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04
 - **EN:** — k) founded, established.
   <sub>attested</sub>
 
-**ni-vi-14-l)** — l〉 bezogen, eingenommen (ein Platz), bewohnt, angebaut [215,10]. [HARIV. 5171](https://sanskrit-lexicon-scans.github.io/hariv?5171). *antarniviṣṭapada* _Adj._ so v. a. im Herzen sich festgesetzt habend.
+**ni-vi-14-l)** — l〉 bezogen, eingenommen (ein Platz), bewohnt, angebaut [215,10](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?215). [HARIV. 5171](https://sanskrit-lexicon-scans.github.io/hariv?5171). *antarniviṣṭapada* _Adj._ so v. a. im Herzen sich festgesetzt habend.
 
-- **RU:** — l〉 занятый, захваченный (о месте), обитаемый, возделанный [215,10]. [HARIV. 5171](https://sanskrit-lexicon-scans.github.io/hariv?5171). *antarniviṣṭapada* _Adj._ так v. a. укоренившийся в сердце.
-- **EN:** — l) occupied, taken (a place), inhabited, settled [215,10]. [HARIV. 5171](https://sanskrit-lexicon-scans.github.io/hariv?5171). *antarniviṣṭapada* _Adj._ so v. a. having lodged itself firmly in the heart.
+- **RU:** — l〉 занятый, захваченный (о месте), обитаемый, возделанный [215,10](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?215). [HARIV. 5171](https://sanskrit-lexicon-scans.github.io/hariv?5171). *antarniviṣṭapada* _Adj._ так v. a. укоренившийся в сердце.
+- **EN:** — l) occupied, taken (a place), inhabited, settled [215,10](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?215). [HARIV. 5171](https://sanskrit-lexicon-scans.github.io/hariv?5171). *antarniviṣṭapada* _Adj._ so v. a. having lodged itself firmly in the heart.
   <sub>attested</sub>
 
 **ni-vi-14-m)** — m〉 begonnen.
@@ -6351,10 +6351,10 @@ u. s. w. [ṚV. 4,50,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04
 - **EN:** — 12) to put on, set on, lay on, put on (also ornaments, articles of clothing), to attach, fasten; the thing on or to which in Loc.
   <sub>attested</sub>
 
-**ni-vi-caus-13)** — 13〉 auftragen (Zeichen u. s. w.) auf (Loc.). *citre* so v. a. malen, *pattre* so v. a. niederschreiben ([216,8]), *nāma svahastena* so v. a. eigenhändig unterschreiben.
+**ni-vi-caus-13)** — 13〉 auftragen (Zeichen u. s. w.) auf (Loc.). *citre* so v. a. malen, *pattre* so v. a. niederschreiben ([216,8](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?216)), *nāma svahastena* so v. a. eigenhändig unterschreiben.
 
-- **RU:** — 13〉 наносить (знак u. s. w.) на (Loc.). *citre* так v. a. рисовать, *pattre* так v. a. записывать ([216,8]), *nāma svahastena* так v. a. подписывать собственноручно.
-- **EN:** — 13) to apply (a mark u. s. w.) to (Loc.). *citre* so v. a. to paint, *pattre* so v. a. to write down ([216,8]), *nāma svahastena* so v. a. to sign with one's own hand.
+- **RU:** — 13〉 наносить (знак u. s. w.) на (Loc.). *citre* так v. a. рисовать, *pattre* так v. a. записывать ([216,8](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?216)), *nāma svahastena* так v. a. подписывать собственноручно.
+- **EN:** — 13) to apply (a mark u. s. w.) to (Loc.). *citre* so v. a. to paint, *pattre* so v. a. to write down ([216,8](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?216)), *nāma svahastena* so v. a. to sign with one's own hand.
   <sub>attested</sub>
 
 **ni-vi-caus-14)** — 14〉 einsetzen in (ein Amt, eine Stellung), als Fürsten einsetzen in; mit Loc. *kare* so v. a. tributpflichtig machen. *karaniveśita* tr. gemacht.
@@ -6363,10 +6363,10 @@ u. s. w. [ṚV. 4,50,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04
 - **EN:** — 14) to install in (an office, a position), to install as ruler in; with Loc. *kare* so v. a. to make tributary. *karaniveśita* made tr..
   <sub>attested</sub>
 
-**ni-vi-caus-15)** — 15〉 Jmd (Loc.) ein Amt, eine Würde (Acc.) übertragend, Etwas übertragen auf Jmd (Loc.) [88,28]. [136,6]. verleihen, geben überh. *nāma* einen Namen.
+**ni-vi-caus-15)** — 15〉 Jmd (Loc.) ein Amt, eine Würde (Acc.) übertragend, Etwas übertragen auf Jmd (Loc.) [88,28](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?88). [136,6](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?136). verleihen, geben überh. *nāma* einen Namen.
 
-- **RU:** — 15〉 передавая кому-л. (Loc.) должность, достоинство (Acc.), возлагая нечто на кого-л. (Loc.) [88,28]. [136,6]. жаловать, давать überh. *nāma* имя.
-- **EN:** — 15) conferring upon someone (Loc.) an office, a dignity (Acc.); to confer something upon someone (Loc.) [88,28]. [136,6]. to bestow, to give überh. *nāma* a name.
+- **RU:** — 15〉 передавая кому-л. (Loc.) должность, достоинство (Acc.), возлагая нечто на кого-л. (Loc.) [88,28](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?88). [136,6](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?136). жаловать, давать überh. *nāma* имя.
+- **EN:** — 15) conferring upon someone (Loc.) an office, a dignity (Acc.); to confer something upon someone (Loc.) [88,28](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?88). [136,6](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?136). to bestow, to give überh. *nāma* a name.
   <sub>attested</sub>
 
 **ni-vi-caus-16)** — 16〉 den Blick, die Gedanken, den Geist richten auf (Loc.).
@@ -6435,10 +6435,10 @@ u. s. w. [ṚV. 4,50,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04
 - **EN:** — 3) to insist stubbornly, to be set in one's head [MBH. 5,77,17](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?5,77,17).
   <sub>attested</sub>
 
-**pra-ni-vi-4)** — 4〉 Jmdm (Loc.) zukommen (Gegensatz abgehen) [224,23].
+**pra-ni-vi-4)** — 4〉 Jmdm (Loc.) zukommen (Gegensatz abgehen) [224,23](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?224).
 
-- **RU:** — 4〉 причитаться кому-л. (Loc.) (противоположность недоставать) [224,23].
-- **EN:** — 4) to fall to someone (Loc.) (opposite abgehen = to be lacking) [224,23].
+- **RU:** — 4〉 причитаться кому-л. (Loc.) (противоположность недоставать) [224,23](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?224).
+- **EN:** — 4) to fall to someone (Loc.) (opposite abgehen = to be lacking) [224,23](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?224).
   <sub>attested</sub>
 
 **pra-ni-vi-5)** — 5〉 zur Anwendung kommen [PARIBH. 58. 62. 63].
@@ -6835,10 +6835,10 @@ u. s. w. [ṚV. 4,50,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04
 - **EN:** — 6) to hurl, shoot at (Loc.).
   <sub>attested</sub>
 
-**caus-ava-7)** — 7〉 anheften, anlegen, legen auf (Loc.) [64,29]. *lekhye* so v. a. auf einem Documente verzeichnen [KĀTY.]
+**caus-ava-7)** — 7〉 anheften, anlegen, legen auf (Loc.) [64,29](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?64). *lekhye* so v. a. auf einem Documente verzeichnen [KĀTY.]
 
-- **RU:** — 7〉 прикреплять, накладывать, класть на (Loc.) [64,29]. *lekhye* так v. a. записывать на документе [KĀTY.]
-- **EN:** — 7) to fasten, apply, lay upon (Loc.) [64,29]. *lekhye* thus v. a. to record on a document [KĀTY.]
+- **RU:** — 7〉 прикреплять, накладывать, класть на (Loc.) [64,29](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?64). *lekhye* так v. a. записывать на документе [KĀTY.]
+- **EN:** — 7) to fasten, apply, lay upon (Loc.) [64,29](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?64). *lekhye* thus v. a. to record on a document [KĀTY.]
   <sub>attested</sub>
 
 **caus-ava-8)** — 8〉 anlegen, gründen (eine Stadt).
@@ -6979,10 +6979,10 @@ u. s. w. [ṚV. 4,50,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04
 - **EN:** — 3) to have sexual intercourse (of either sex), with Acc.
   <sub>attested</sub>
 
-**pra-4)** — 4〉 an Etwas gehen, obliegen, sich einer Sache hingeben; mit Acc., seltener Loc. ([Spr. 77](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?77)). *piṇḍīm*, *tarpaṇam* so v. a. annehmen, geniessen [229,12].
+**pra-4)** — 4〉 an Etwas gehen, obliegen, sich einer Sache hingeben; mit Acc., seltener Loc. ([Spr. 77](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?77)). *piṇḍīm*, *tarpaṇam* so v. a. annehmen, geniessen [229,12](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?229).
 
-- **RU:** — 4〉 приступать к чему-л., заниматься —, предаваться чему-л.; с Acc., реже Loc. ([Spr. 77](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?77)). *piṇḍīm*, *tarpaṇam* так v. a. принимать, вкушать [229,12].
-- **EN:** — 4) to set about something, attend to, devote oneself to a matter; with Acc., more rarely Loc. ([Spr. 77](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?77)). *piṇḍīm*, *tarpaṇam* thus v. a. to take up, enjoy [229,12].
+- **RU:** — 4〉 приступать к чему-л., заниматься —, предаваться чему-л.; с Acc., реже Loc. ([Spr. 77](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?77)). *piṇḍīm*, *tarpaṇam* так v. a. принимать, вкушать [229,12](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?229).
+- **EN:** — 4) to set about something, attend to, devote oneself to a matter; with Acc., more rarely Loc. ([Spr. 77](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?77)). *piṇḍīm*, *tarpaṇam* thus v. a. to take up, enjoy [229,12](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?229).
   <sub>attested</sub>
 
 **pra-5)** — 5〉 in Jmd (Acc.) hineingehen, so v. a. in ihm aufgehen, gegen ihn verschwinden, vor ihm ganz in den Schatten treten.
@@ -7107,10 +7107,10 @@ u. s. w. [ṚV. 4,50,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04
 - **EN:** — 5) to put someone into a state (Acc.).
   <sub>attested</sub>
 
-**prac-6)** — 6〉 niederschreiben [215,8].
+**prac-6)** — 6〉 niederschreiben [215,8](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?215).
 
-- **RU:** — 6〉 записывать [215,8].
-- **EN:** — 6) to write down [215,8].
+- **RU:** — 6〉 записывать [215,8](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?215).
+- **EN:** — 6) to write down [215,8](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?215).
   <sub>attested</sub>
 
 **prac-7)** — 7〉 einführen —, einweihen in (Acc.).
@@ -7149,10 +7149,10 @@ u. s. w. [ṚV. 4,50,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04
 - **EN:** — With *anupra*
   <sub>attested</sub>
 
-**anupra-1)** — 1〉 eingehen, eintreten, eindringen, fahren in, sich begeben unter (Acc., seltener Loc.). *anupraviṣṭa* mit act. (auch *praviṣṭaḥ — anu*) und pass. ([127,26]) Bed. *anyo'nyānupraviṣṭāni* in einander befindlich, *pathikasārthamanupraviṣṭaḥ* so v. a. schloss sich den Reisenden an.
+**anupra-1)** — 1〉 eingehen, eintreten, eindringen, fahren in, sich begeben unter (Acc., seltener Loc.). *anupraviṣṭa* mit act. (auch *praviṣṭaḥ — anu*) und pass. ([127,26](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?127)) Bed. *anyo'nyānupraviṣṭāni* in einander befindlich, *pathikasārthamanupraviṣṭaḥ* so v. a. schloss sich den Reisenden an.
 
-- **RU:** — 1〉 входить, вступать, проникать, попадать в, направляться под (Acc., реже Loc.). *anupraviṣṭa* с act. (также *praviṣṭaḥ — anu*) и pass. ([127,26]) Bed. *anyo'nyānupraviṣṭāni* находящиеся друг в друге, *pathikasārthamanupraviṣṭaḥ* так v. a. присоединился к путникам.
-- **EN:** — 1) to go in, enter, penetrate, pass into, betake oneself under (Acc., more rarely Loc.). *anupraviṣṭa* with act. (also *praviṣṭaḥ — anu*) and pass. ([127,26]) Bed. *anyo'nyānupraviṣṭāni* situated one within another, *pathikasārthamanupraviṣṭaḥ* thus v. a. joined the travelers.
+- **RU:** — 1〉 входить, вступать, проникать, попадать в, направляться под (Acc., реже Loc.). *anupraviṣṭa* с act. (также *praviṣṭaḥ — anu*) и pass. ([127,26](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?127)) Bed. *anyo'nyānupraviṣṭāni* находящиеся друг в друге, *pathikasārthamanupraviṣṭaḥ* так v. a. присоединился к путникам.
+- **EN:** — 1) to go in, enter, penetrate, pass into, betake oneself under (Acc., more rarely Loc.). *anupraviṣṭa* with act. (also *praviṣṭaḥ — anu*) and pass. ([127,26](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?127)) Bed. *anyo'nyānupraviṣṭāni* situated one within another, *pathikasārthamanupraviṣṭaḥ* thus v. a. joined the travelers.
   <sub>attested</sub>
 
 **anupra-2)** — 2〉 nach Jmd in ein Haus, in ein Gemach treten, zu Jmd hereintreten; mit Acc. der Person. *kṛṣṇasyānupraviṣṭaḥ* nach Kṛṣṇa eingetreten.
@@ -7307,10 +7307,10 @@ u. s. w. [ṚV. 4,50,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04
 - **EN:** — 4) to be absorbed in (Loc.).
   <sub>attested</sub>
 
-**ni-sam-5)** — 5〉 sich niederlassen, — niederlegen, — zur Ruhe begeben ([27,19]), mit oder zu seinem Weibe (Instr., Instr. mit *saha* oder mit Dat. [[KAUṢ. UP. 2,10] *saṃvekṣyan* zu lesen]) — auf oder in (Loc. oder *˚upari*), schlafen mit (Instr.), sich lagen auf (Acc.). *saṃviṣṭa* sich hingelegt habend ([Chr. 39,26]), zur Ruhe gegangen, schlafend.
+**ni-sam-5)** — 5〉 sich niederlassen, — niederlegen, — zur Ruhe begeben ([27,19](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?27)), mit oder zu seinem Weibe (Instr., Instr. mit *saha* oder mit Dat. [[KAUṢ. UP. 2,10] *saṃvekṣyan* zu lesen]) — auf oder in (Loc. oder *˚upari*), schlafen mit (Instr.), sich lagen auf (Acc.). *saṃviṣṭa* sich hingelegt habend ([Chr. 39,26](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?39)), zur Ruhe gegangen, schlafend.
 
-- **RU:** — 5〉 располагаться, — ложиться, — отходить ко сну ([27,19]), с или к своей женой (Instr., Instr. с *saha* или с Dat. [следует читать [KAUṢ. UP. 2,10] *saṃvekṣyan*]) — на или в (Loc. или *˚upari*), спать с (Instr.), возлежать на (Acc.). *saṃviṣṭa* возлёгший ([Chr. 39,26]), отошедший ко сну, спящий.
-- **EN:** — 5) to settle down, — lie down, — go to rest ([27,19]), with or unto one's wife (Instr., Instr. with *saha* or with Dat. [to be read [KAUṢ. UP. 2,10] *saṃvekṣyan*]) — on or in (Loc. or *˚upari*), to sleep with (Instr.), to lie upon (Acc.). *saṃviṣṭa* having lain down ([Chr. 39,26]), gone to rest, sleeping.
+- **RU:** — 5〉 располагаться, — ложиться, — отходить ко сну ([27,19](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?27)), с или к своей женой (Instr., Instr. с *saha* или с Dat. [следует читать [KAUṢ. UP. 2,10] *saṃvekṣyan*]) — на или в (Loc. или *˚upari*), спать с (Instr.), возлежать на (Acc.). *saṃviṣṭa* возлёгший ([Chr. 39,26](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?39)), отошедший ко сну, спящий.
+- **EN:** — 5) to settle down, — lie down, — go to rest ([27,19](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?27)), with or unto one's wife (Instr., Instr. with *saha* or with Dat. [to be read [KAUṢ. UP. 2,10] *saṃvekṣyan*]) — on or in (Loc. or *˚upari*), to sleep with (Instr.), to lie upon (Acc.). *saṃviṣṭa* having lain down ([Chr. 39,26](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?39)), gone to rest, sleeping.
   <sub>attested</sub>
 
 **ni-sam-6)** — 6〉 beschlafen, mit Acc. des Weibes.
@@ -7333,10 +7333,10 @@ u. s. w. [ṚV. 4,50,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04
 
 **ni-sam-caus-intro)** 
 
-**ni-sam-caus-1)** — 1〉 sich niederlegen lassen [217,29].
+**ni-sam-caus-1)** — 1〉 sich niederlegen lassen [217,29](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?217).
 
-- **RU:** — 1〉 побуждать, заставлять лечь [217,29].
-- **EN:** — 1) to let lie down [217,29].
+- **RU:** — 1〉 побуждать, заставлять лечь [217,29](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?217).
+- **EN:** — 1) to let lie down [217,29](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?217).
   <sub>attested</sub>
 
 **ni-sam-caus-2)** — 2〉 legen —, setzen auf oder in, bringen in oder nach (Loc.).

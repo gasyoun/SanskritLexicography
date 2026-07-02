@@ -113,20 +113,20 @@
   <sub>attested</sub>
 
 **caus-4)** — 4) Jmd von sich weisen, fern halten von sich: *pratyabadhnāccārthapatim*
-[DAŚAK.] in [BENF. Chr. 190,6.] *paraiḥ pratibadhyamāno 'pi*
+[DAŚAK.] in [BENF. Chr. 190,6.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?190) *paraiḥ pratibadhyamāno 'pi*
 [DURGA] zu [NIR.] bei [MUIR, ST. 2,184.] *pratibaddhāstu bāhīkāḥ* so v. a. mit den B. will man Nichts zu thun haben
 [MBH. 8,2108.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.2108) *pratibaddha = manohata, pratihata, hata*
 [AK. 3,1,41.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,1,41)
 [H. 439.](https://sanskrit-lexicon-scans.github.io/abch2/app1?439)
 
 - **RU:** — 4) отталкивать кого-л. от себя, держать кого-л. вдали от себя: *pratyabadhnāccārthapatim*
-[DAŚAK.] в [BENF. Chr. 190,6.] *paraiḥ pratibadhyamāno 'pi*
+[DAŚAK.] в [BENF. Chr. 190,6.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?190) *paraiḥ pratibadhyamāno 'pi*
 [DURGA] к [NIR.] при [MUIR, ST. 2,184.] *pratibaddhāstu bāhīkāḥ* так: с B. не желают иметь ничего общего
 [MBH. 8,2108.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.2108) *pratibaddha = manohata, pratihata, hata*
 [AK. 3,1,41.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,1,41)
 [H. 439.](https://sanskrit-lexicon-scans.github.io/abch2/app1?439)
 - **EN:** — 4) to repel someone, keep someone at a distance from oneself: *pratyabadhnāccārthapatim*
-[DAŚAK.] in [BENF. Chr. 190,6.] *paraiḥ pratibadhyamāno 'pi*
+[DAŚAK.] in [BENF. Chr. 190,6.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?190) *paraiḥ pratibadhyamāno 'pi*
 [DURGA] zu [NIR.] bei [MUIR, ST. 2,184.] *pratibaddhāstu bāhīkāḥ* so v. a. with the B. one wants to have nothing to do
 [MBH. 8,2108.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.2108) *pratibaddha = manohata, pratihata, hata*
 [AK. 3,1,41.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,1,41)

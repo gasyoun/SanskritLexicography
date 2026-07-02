@@ -9,10 +9,10 @@
 - **EN:** — 4) having obtained, having fallen into (a misfortune).
   <sub>DCS 2328 · attested</sub>
 
-**5)** — 5〉 angelangt, gekommen. (insbes. von Zeitpunkten); herstammend von (Abl.) [197,4].
+**5)** — 5〉 angelangt, gekommen. (insbes. von Zeitpunkten); herstammend von (Abl.) [197,4](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?197).
 
-- **RU:** — 5〉 прибывший, пришедший. (insbes. о моментах времени); происходящий от (Abl.) [197,4].
-- **EN:** — 5) arrived, come. (insbes. of points in time); descended from, derived from (Abl.) [197,4].
+- **RU:** — 5〉 прибывший, пришедший. (insbes. о моментах времени); происходящий от (Abl.) [197,4](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?197).
+- **EN:** — 5) arrived, come. (insbes. of points in time); descended from, derived from (Abl.) [197,4](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?197).
   <sub>DCS 2328 · attested</sub>
 
 **caus)** — Caus. erreichen machen.
@@ -108,8 +108,8 @@
 **vyā-ppp-intro)** — Partic. *vyāpta*
 - **EN:** — Partic. *vyāpta*
 
-**vyā-ppp1)** — 1〉 durchdrungen, erfüllt, angefüllt. *sūryatejasā mukham* so v. a. ganz beschienen von [154,5].
-- **EN:** — 1) pervaded, filled, filled up. *sūryatejasā mukham* so v. a. entirely lit up by [154,5].
+**vyā-ppp1)** — 1〉 durchdrungen, erfüllt, angefüllt. *sūryatejasā mukham* so v. a. ganz beschienen von [154,5](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?154).
+- **EN:** — 1) pervaded, filled, filled up. *sūryatejasā mukham* so v. a. entirely lit up by [154,5](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?154).
 
 **vyā-ppp2)** — 2〉 eingenommen, in Besitz genommen.
 
@@ -150,8 +150,8 @@
 **samā-intro)** — Mit *sam*
 - **EN:** — With *sam*
 
-**samā1)** — 1〉 erlangen, theilhaftig werden. *samāptavant* [91,25].
-- **EN:** — 1) to obtain, to partake of. *samāptavant* [91,25].
+**samā1)** — 1〉 erlangen, theilhaftig werden. *samāptavant* [91,25](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?91).
+- **EN:** — 1) to obtain, to partake of. *samāptavant* [91,25](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?91).
 
 **samā2)** — 2〉 vollenden.
 
@@ -279,17 +279,17 @@
   <sub>DCS 2328 · attested</sub>
 
 **ppp_T22_1)** — Partic. *vyāpta*
-— 1〉 durchdrungen, erfüllt, angefüllt. *sūryatejasā mukham* so v. a. ganz beschienen von [154,5].
+— 1〉 durchdrungen, erfüllt, angefüllt. *sūryatejasā mukham* so v. a. ganz beschienen von [154,5](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?154).
 
 - **RU:** — Partic. *vyāpta*
-— 1〉 пронизанный, наполненный, переполненный. *sūryatejasā mukham* так v. a. целиком освещённый [154,5].
+— 1〉 пронизанный, наполненный, переполненный. *sūryatejasā mukham* так v. a. целиком освещённый [154,5](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?154).
   <sub>DCS 2328 · attested</sub>
 
 **mit_T40_1)** — Mit *sam*
-— 1〉 erlangen, theilhaftig werden. *samāptavant* [91,25].
+— 1〉 erlangen, theilhaftig werden. *samāptavant* [91,25](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?91).
 
 - **RU:** — Mit *sam*
-— 1〉 обретать, становиться причастным. *samāptavant* [91,25].
+— 1〉 обретать, становиться причастным. *samāptavant* [91,25](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?91).
   <sub>DCS 2328 · attested</sub>
 
 **caus_T48_1)** — Caus.

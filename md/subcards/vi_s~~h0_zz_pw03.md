@@ -57,10 +57,10 @@
 - **EN:** — 4) to be absorbed in (Loc.).
   <sub>attested</sub>
 
-**ni-sam-5)** — 5〉 sich niederlassen, — niederlegen, — zur Ruhe begeben ([27,19]), mit oder zu seinem Weibe (Instr., Instr. mit *saha* oder mit Dat. [[KAUṢ. UP. 2,10] *saṃvekṣyan* zu lesen]) — auf oder in (Loc. oder *˚upari*), schlafen mit (Instr.), sich lagen auf (Acc.). *saṃviṣṭa* sich hingelegt habend ([Chr. 39,26]), zur Ruhe gegangen, schlafend.
+**ni-sam-5)** — 5〉 sich niederlassen, — niederlegen, — zur Ruhe begeben ([27,19](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?27)), mit oder zu seinem Weibe (Instr., Instr. mit *saha* oder mit Dat. [[KAUṢ. UP. 2,10] *saṃvekṣyan* zu lesen]) — auf oder in (Loc. oder *˚upari*), schlafen mit (Instr.), sich lagen auf (Acc.). *saṃviṣṭa* sich hingelegt habend ([Chr. 39,26](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?39)), zur Ruhe gegangen, schlafend.
 
-- **RU:** — 5〉 располагаться, — ложиться, — отходить ко сну ([27,19]), с или к своей женой (Instr., Instr. с *saha* или с Dat. [следует читать [KAUṢ. UP. 2,10] *saṃvekṣyan*]) — на или в (Loc. или *˚upari*), спать с (Instr.), возлежать на (Acc.). *saṃviṣṭa* возлёгший ([Chr. 39,26]), отошедший ко сну, спящий.
-- **EN:** — 5) to settle down, — lie down, — go to rest ([27,19]), with or unto one's wife (Instr., Instr. with *saha* or with Dat. [to be read [KAUṢ. UP. 2,10] *saṃvekṣyan*]) — on or in (Loc. or *˚upari*), to sleep with (Instr.), to lie upon (Acc.). *saṃviṣṭa* having lain down ([Chr. 39,26]), gone to rest, sleeping.
+- **RU:** — 5〉 располагаться, — ложиться, — отходить ко сну ([27,19](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?27)), с или к своей женой (Instr., Instr. с *saha* или с Dat. [следует читать [KAUṢ. UP. 2,10] *saṃvekṣyan*]) — на или в (Loc. или *˚upari*), спать с (Instr.), возлежать на (Acc.). *saṃviṣṭa* возлёгший ([Chr. 39,26](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?39)), отошедший ко сну, спящий.
+- **EN:** — 5) to settle down, — lie down, — go to rest ([27,19](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?27)), with or unto one's wife (Instr., Instr. with *saha* or with Dat. [to be read [KAUṢ. UP. 2,10] *saṃvekṣyan*]) — on or in (Loc. or *˚upari*), to sleep with (Instr.), to lie upon (Acc.). *saṃviṣṭa* having lain down ([Chr. 39,26](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?39)), gone to rest, sleeping.
   <sub>attested</sub>
 
 **ni-sam-6)** — 6〉 beschlafen, mit Acc. des Weibes.
@@ -83,10 +83,10 @@
 
 **ni-sam-caus-intro)** 
 
-**ni-sam-caus-1)** — 1〉 sich niederlegen lassen [217,29].
+**ni-sam-caus-1)** — 1〉 sich niederlegen lassen [217,29](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?217).
 
-- **RU:** — 1〉 побуждать, заставлять лечь [217,29].
-- **EN:** — 1) to let lie down [217,29].
+- **RU:** — 1〉 побуждать, заставлять лечь [217,29](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?217).
+- **EN:** — 1) to let lie down [217,29](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?217).
   <sub>attested</sub>
 
 **ni-sam-caus-2)** — 2〉 legen —, setzen auf oder in, bringen in oder nach (Loc.).

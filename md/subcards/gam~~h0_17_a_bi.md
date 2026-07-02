@@ -22,7 +22,7 @@
 [VID. 51.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?51) *tadabhigacchāva vanam*
 [R. 2,96,27.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,96,27) *vidarbhān*
 [N. 2,25.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?2,25) *kurukṣetram*
-[MBH.] in [BENF. Chr. 20,23.] *tatra*
+[MBH.] in [BENF. Chr. 20,23.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?20) *tatra*
 [R. 1,60,11.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,60,11) *abhigatvā(!)*
 [MBH. 3,6068.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.6068) [8141.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8141) med.: *abhyagacchata vaidehīm*
 [R. 3,52,20.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,52,20) [10,1.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,10,1)
@@ -50,7 +50,7 @@
 [VID. 51.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?51) *tadabhigacchāva vanam*
 [R. 2,96,27.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,96,27) *vidarbhān*
 [N. 2,25.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?2,25) *kurukṣetram*
-[MBH.] в [BENF. Chr. 20,23.] *tatra*
+[MBH.] в [BENF. Chr. 20,23.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?20) *tatra*
 [R. 1,60,11.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,60,11) *abhigatvā(!)*
 [MBH. 3,6068.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.6068) [8141.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8141) med.: *abhyagacchata vaidehīm*
 [R. 3,52,20.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,52,20) [10,1.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,10,1)
@@ -77,7 +77,7 @@
 [VID. 51.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?51) *tadabhigacchāva vanam*
 [R. 2,96,27.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,96,27) *vidarbhān*
 [N. 2,25.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?2,25) *kurukṣetram*
-[MBH.] in [BENF. Chr. 20,23.] *tatra*
+[MBH.] in [BENF. Chr. 20,23.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?20) *tatra*
 [R. 1,60,11.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,60,11) *abhigatvā(!)*
 [MBH. 3,6068.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.6068) [8141.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8141) med.: *abhyagacchata vaidehīm*
 [R. 3,52,20.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,52,20) [10,1.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,10,1)

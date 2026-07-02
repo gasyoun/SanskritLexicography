@@ -24,7 +24,7 @@ Schol. zu [P.]), wo übrigens *prapai* zu vermuthen ist. *tataḥ sarve tathetyu
 [RĀJA-TAR. 5,292.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,292)
 [BHĀG. P. 1,13,28.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,13,28) [4,3,12.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,3,12)
 [MĀRK. P. 61,29.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?61,29)
-[DAŚAK.] in [BENF. Chr. 187,15.] [PAÑCAT. 221,12.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?221,12)
+[DAŚAK.] in [BENF. Chr. 187,15.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?187) [PAÑCAT. 221,12.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?221,12)
 
 *rathamāruhya — prayayau javanairhayaiḥ*
 [MBH. 3,2848.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2848) *tataḥ prāyāmahaṃ tena syandanena*
@@ -105,7 +105,7 @@ Schol. zu [P.]), wo übrigens *prapai* zu vermuthen ist. *tataḥ sarve tathetyu
 [RĀJA-TAR. 5,292.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,292)
 [BHĀG. P. 1,13,28.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,13,28) [4,3,12.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,3,12)
 [MĀRK. P. 61,29.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?61,29)
-[DAŚAK.] in [BENF. Chr. 187,15.] [PAÑCAT. 221,12.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?221,12)
+[DAŚAK.] in [BENF. Chr. 187,15.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?187) [PAÑCAT. 221,12.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?221,12)
 
 *rathamāruhya — prayayau javanairhayaiḥ*
 [MBH. 3,2848.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2848) *tataḥ prāyāmahaṃ tena syandanena*
@@ -185,7 +185,7 @@ Schol. for [P.]), where moreover *prapai* is to be conjectured. *tataḥ sarve t
 [RĀJA-TAR. 5,292.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,292)
 [BHĀG. P. 1,13,28.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,13,28) [4,3,12.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,3,12)
 [MĀRK. P. 61,29.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?61,29)
-[DAŚAK.] in [BENF. Chr. 187,15.] [PAÑCAT. 221,12.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?221,12)
+[DAŚAK.] in [BENF. Chr. 187,15.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?187) [PAÑCAT. 221,12.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?221,12)
 
 *rathamāruhya — prayayau javanairhayaiḥ*
 [MBH. 3,2848.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2848) *tataḥ prāyāmahaṃ tena syandanena*

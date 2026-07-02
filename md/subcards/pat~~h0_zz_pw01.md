@@ -52,16 +52,16 @@
 — 1〉 to fly down, to alight, to swoop down, to descend — upon (Loc.). *pādayoḥ* to throw oneself at someone's (Gen.) feet. *nabhonipatita* having flown down from heaven.
   <sub>attested</sub>
 
-**mit_T7_2)** — 2〉 sich stürzen auf, herfallen über (Acc. oder Loc.) [133,11]. [321,4].
+**mit_T7_2)** — 2〉 sich stürzen auf, herfallen über (Acc. oder Loc.) [133,11](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?133). [321,4](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?321).
 
-- **RU:** — 2〉 бросаться на, нападать на (Acc. oder Loc.) [133,11]. [321,4].
-- **EN:** — 2〉 to rush upon, to fall upon (Acc. or Loc.) [133,11]. [321,4].
+- **RU:** — 2〉 бросаться на, нападать на (Acc. oder Loc.) [133,11](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?133). [321,4](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?321).
+- **EN:** — 2〉 to rush upon, to fall upon (Acc. or Loc.) [133,11](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?133). [321,4](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?321).
   <sub>attested</sub>
 
-**mit_T7_3)** — 3〉 sich hineinbegeben in (Loc.) [176,18].
+**mit_T7_3)** — 3〉 sich hineinbegeben in (Loc.) [176,18](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?176).
 
-- **RU:** — 3〉 входить в, погружаться в (Loc.) [176,18].
-- **EN:** — 3〉 to enter into (Loc.) [176,18].
+- **RU:** — 3〉 входить в, погружаться в (Loc.) [176,18](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?176).
+- **EN:** — 3〉 to enter into (Loc.) [176,18](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?176).
   <sub>attested</sub>
 
 **mit_T7_4)** — 4〉 sich ergiessen —, münden in (Loc.).
@@ -100,10 +100,10 @@
 - **EN:** — 9〉 to fall out, so v. a. to be expelled (of a foetus).
   <sub>attested</sub>
 
-**mit_T7_10)** — 10〉 einfallen, eintreffen, sich einstellen, eintreten, auf Jmd fallen, so v. a. Jmd zu Theil werden, treffen; mit Loc. [179,22].
+**mit_T7_10)** — 10〉 einfallen, eintreffen, sich einstellen, eintreten, auf Jmd fallen, so v. a. Jmd zu Theil werden, treffen; mit Loc. [179,22](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?179).
 
-- **RU:** — 10〉 наступать, приходить, случаться, наступить, выпадать на кого-л., так v. a. доставаться кому-л., постигать; mit Loc. [179,22].
-- **EN:** — 10〉 to occur, to arrive, to present itself, to befall, to fall to someone's lot, so v. a. to fall to someone's share, to affect; with Loc. [179,22].
+- **RU:** — 10〉 наступать, приходить, случаться, наступить, выпадать на кого-л., так v. a. доставаться кому-л., постигать; mit Loc. [179,22](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?179).
+- **EN:** — 10〉 to occur, to arrive, to present itself, to befall, to fall to someone's lot, so v. a. to fall to someone's share, to affect; with Loc. [179,22](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?179).
   <sub>attested</sub>
 
 **mit_T7_11)** — 11〉 zu Schanden werden, zu Nichte gehen.
@@ -117,10 +117,10 @@
 - **EN:** — Caus.
 — 1〉 to hurl down, to let fall upon (Loc.), to dash down, to throw — into or upon (Loc.), to cast down, to overturn, to fell, to throw upon (Loc.). *vyasane* to plunge into misfortune.
 
-**mit_T33_caus_2)** — 2〉 hineindrängen, infigere. *daśanānaṅge* die Zähne in den Leib [47,24].
+**mit_T33_caus_2)** — 2〉 hineindrängen, infigere. *daśanānaṅge* die Zähne in den Leib [47,24](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?47).
 
-- **RU:** — 2〉 вонзать, infigere. *daśanānaṅge* зубы в тело [47,24].
-- **EN:** — 2〉 to press into, infigere. *daśanānaṅge* the teeth into the body [47,24].
+- **RU:** — 2〉 вонзать, infigere. *daśanānaṅge* зубы в тело [47,24](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?47).
+- **EN:** — 2〉 to press into, infigere. *daśanānaṅge* the teeth into the body [47,24](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?47).
   <sub>attested</sub>
 
 **mit_T33_caus_3)** — 3〉 auswerfen, so v. a. ausspeien.

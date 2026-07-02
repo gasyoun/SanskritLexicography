@@ -103,7 +103,7 @@
 [ŚĀṄKH. GṚHY. 3,10. 5,7.] *sā — prajajñe — kumāram*
 [MBH. 1,1927.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1927) [2624.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2624) [2629.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2629) [3423.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3423) [6072.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6072) *prajāyantesutānnāryaḥ*
 [3,13639.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13639) *kanyām — prājāyata*
-[BENF. Chr. 50,14.] *na prajāsyati*
+[BENF. Chr. 50,14.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?50) *na prajāsyati*
 [MBH. 1,4526.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4526) [3,14765.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14765) *nārī prajaniṣyamāṇā* der Zeit des Gebärens nahe
 [SUŚR. 1,368,7.] *prajātā* die da geboren hat
 [AK. 2,6,1,6.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?2,6,1,6)
@@ -138,7 +138,7 @@
 [ŚĀṄKH. GṚHY. 3,10. 5,7.] *sā — prajajñe — kumāram*
 [MBH. 1,1927.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1927) [2624.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2624) [2629.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2629) [3423.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3423) [6072.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6072) *prajāyantesutānnāryaḥ*
 [3,13639.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13639) *kanyām — prājāyata*
-[BENF. Chr. 50,14.] *na prajāsyati*
+[BENF. Chr. 50,14.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?50) *na prajāsyati*
 [MBH. 1,4526.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4526) [3,14765.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14765) *nārī prajaniṣyamāṇā* близкая к сроку родов
 [SUŚR. 1,368,7.] *prajātā* та, что родила
 [AK. 2,6,1,6.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?2,6,1,6)
@@ -172,7 +172,7 @@
 [ŚĀṄKH. GṚHY. 3,10. 5,7.] *sā — prajajñe — kumāram*
 [MBH. 1,1927.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1927) [2624.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2624) [2629.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2629) [3423.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3423) [6072.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6072) *prajāyantesutānnāryaḥ*
 [3,13639.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13639) *kanyām — prājāyata*
-[BENF. Chr. 50,14.] *na prajāsyati*
+[BENF. Chr. 50,14.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?50) *na prajāsyati*
 [MBH. 1,4526.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4526) [3,14765.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14765) *nārī prajaniṣyamāṇā* near the time of giving birth
 [SUŚR. 1,368,7.] *prajātā* she who has given birth
 [AK. 2,6,1,6.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?2,6,1,6)

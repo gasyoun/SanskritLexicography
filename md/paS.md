@@ -117,7 +117,7 @@ _PWG article — 27 sub-card(s), 185 sense(s) · RU 132/185 · EN 155/185_
 [MBH. 12,4114.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.4114) med. [BHĀG. P. 1,5,27.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,5,27) mit *sādhu* die richtige Einsicht haben
 [M. 7,25.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,25)
 [MBH. 4,1583.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1583)
-[DAŚAK.] in [BENF. Chr. 182,17.] ohne *sādhu* dass.
+[DAŚAK.] in [BENF. Chr. 182,17.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?182) ohne *sādhu* dass.
 [BHAG. 2,69.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?2,69) [5,5.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?5,5) [13,27.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?13,27) [29.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?13,29) [18,16.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?18,16) med. [MBH. 7,4251.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.4251) — *paśyāmi* ich sehe es, ich bin davon überzeugt mitten in den Satz eingeschoben: *tādṛgrūpaṃ ca paśyāmi vidyotayati me gṛham*
 [N. 13,25.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?13,25) Häufig wird *paśya*, um die Aufmerksamkeit zu erregen, interjectionsartig in den Satz eingeschoben oder vorangestellt: *kenāpyutkṣipateva paśya bhuvanaṃ matpārśvamānīyate*
 [ŚĀK. 167.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?167) [7.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?7)
@@ -235,7 +235,7 @@ z. B. [ŚĀK. 5,16.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?5,
 [MBH. 12,4114.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.4114) med. [BHĀG. P. 1,5,27.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,5,27) с *sādhu* иметь верное понимание
 [M. 7,25.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,25)
 [MBH. 4,1583.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1583)
-[DAŚAK.] в [BENF. Chr. 182,17.] без *sādhu* dass.
+[DAŚAK.] в [BENF. Chr. 182,17.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?182) без *sādhu* dass.
 [BHAG. 2,69.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?2,69) [5,5.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?5,5) [13,27.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?13,27) [29.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?13,29) [18,16.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?18,16) med. [MBH. 7,4251.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.4251) — *paśyāmi* «я это вижу, я в этом убеждён», вставленное в середину предложения: *tādṛgrūpaṃ ca paśyāmi vidyotayati me gṛham*
 Часто [N. 13,25.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?13,25) *paśya*, чтобы привлечь внимание, вставляется в предложение или ставится в начале наподобие междометия: *kenāpyutkṣipateva paśya bhuvanaṃ matpārśvamānīyate*
 [ŚĀK. 167.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?167) [7.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?7)
@@ -422,7 +422,7 @@ z. B. [ŚĀK. 5,16.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?5,
 
 **1l)** [M. 7,25.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,25)
 [MBH. 4,1583.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1583)
-[DAŚAK.] in [BENF. Chr. 182,17.] ohne *sādhu* dass.
+[DAŚAK.] in [BENF. Chr. 182,17.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?182) ohne *sādhu* dass.
 [BHAG. 2,69.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?2,69) [5,5.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?5,5) [13,27.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?13,27) [29.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?13,29) [18,16.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?18,16) med. [MBH. 7,4251.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.4251) — *paśyāmi* ich sehe es, ich bin davon überzeugt mitten in den Satz eingeschoben: *tādṛgrūpaṃ ca paśyāmi vidyotayati me gṛham*
 [N. 13,25.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?13,25) Häufig wird *paśya*, um die Aufmerksamkeit zu erregen, interjectionsartig in den Satz eingeschoben oder vorangestellt: *kenāpyutkṣipateva paśya bhuvanaṃ matpārśvamānīyate*
 [ŚĀK. 167.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?167) [7.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?7)
@@ -434,7 +434,7 @@ Sch. *paśya* leitet in prosaischen Schriften häufig einen Vers ein,
 z. B. [ŚĀK. 5,16.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?5,16) [17.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?5,17) [24,8.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?24,8) [27,6.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?27,6) [30,15.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?30,15) [97,15.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?97,15) [111,13.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?111,13) [20.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?111,20)
 - **EN:** [M. 7,25.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,25)
 [MBH. 4,1583.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1583)
-[DAŚAK.] in [BENF. Chr. 182,17.] without *sādhu* dass.
+[DAŚAK.] in [BENF. Chr. 182,17.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?182) without *sādhu* dass.
 [BHAG. 2,69.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?2,69) [5,5.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?5,5) [13,27.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?13,27) [29.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?13,29) [18,16.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?18,16) med. [MBH. 7,4251.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.4251) — *paśyāmi* I see it, I am convinced of it inserted into the middle of the sentence: *tādṛgrūpaṃ ca paśyāmi vidyotayati me gṛham*
 [N. 13,25.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?13,25) Frequently *paśya* is inserted into, or placed before, the sentence interjection-like, in order to draw attention: *kenāpyutkṣipateva paśya bhuvanaṃ matpārśvamānīyate*
 [ŚĀK. 167.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?167) [7.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?7)
@@ -1628,10 +1628,10 @@ to catch sight of, perceive, see, recognize: *mahānti cānyāni sarāṃsi pār
 - **EN:** — 10) to get to see thus v. a. to experience, to become partaker of.
   <sub>attested</sub>
 
-**11)** — 11〉 ansehen für, erkennen als, halten für, betrachten als; mit doppeltem Acc. Statt des Zweiten Acc. auch _Adv._ auf *vat*. [140,26]; statt des ersten Acc. ausnahmsweise Loc. (v. l. Acc.), statt des zweiten ein _Adv._ auf *vat*.
+**11)** — 11〉 ansehen für, erkennen als, halten für, betrachten als; mit doppeltem Acc. Statt des Zweiten Acc. auch _Adv._ auf *vat*. [140,26](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?140); statt des ersten Acc. ausnahmsweise Loc. (v. l. Acc.), statt des zweiten ein _Adv._ auf *vat*.
 
-- **RU:** — 11〉 считать чем-л., признавать чем-л., принимать за, рассматривать как; с двойным Acc. Вместо второго Acc. также _Adv._ при *vat*. [140,26]; вместо первого Acc. в виде исключения Loc. (v. l. Acc.), вместо второго — _Adv._ при *vat*.
-- **EN:** — 11) to regard as, recognize as, take for, consider as; with double Acc. — in place of the second Acc. also _Adv._ with *vat*. [140,26]; in place of the first Acc. exceptionally Loc. (v. l. Acc.), in place of the second a _Adv._ with *vat*.
+- **RU:** — 11〉 считать чем-л., признавать чем-л., принимать за, рассматривать как; с двойным Acc. Вместо второго Acc. также _Adv._ при *vat*. [140,26](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?140); вместо первого Acc. в виде исключения Loc. (v. l. Acc.), вместо второго — _Adv._ при *vat*.
+- **EN:** — 11) to regard as, recognize as, take for, consider as; with double Acc. — in place of the second Acc. also _Adv._ with *vat*. [140,26](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?140); in place of the first Acc. exceptionally Loc. (v. l. Acc.), in place of the second a _Adv._ with *vat*.
   <sub>attested</sub>
 
 **12)** — 12〉 mit dem geistigen Auge erschauen (von Sehern und Dichtern); daher auch erfinden (z. B. Opfergebräuche). *svapnān* Traumgesichte sehen.
@@ -1640,10 +1640,10 @@ to catch sight of, perceive, see, recognize: *mahānti cānyāni sarāṃsi pār
 - **EN:** — 12) to behold with the spiritual eye (of seers and poets); hence also to invent (z. B. sacrificial rites). *svapnān* to see dream-visions.
   <sub>attested</sub>
 
-**13)** — 13〉 mit und ohne ([16,10]) *sādhu* einsehen, die richtige Einsicht haben.
+**13)** — 13〉 mit und ohne ([16,10](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?16)) *sādhu* einsehen, die richtige Einsicht haben.
 
-- **RU:** — 13〉 с ([16,10]) *sādhu* и без него понимать, иметь правильное разумение.
-- **EN:** — 13) with and without ([16,10]) *sādhu* to perceive, to have right insight.
+- **RU:** — 13〉 с ([16,10](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?16)) *sādhu* и без него понимать, иметь правильное разумение.
+- **EN:** — 13) with and without ([16,10](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?16)) *sādhu* to perceive, to have right insight.
   <sub>attested</sub>
 
 **14)** — 14〉 sehen. so v. a. kennen.

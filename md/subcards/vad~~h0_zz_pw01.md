@@ -259,10 +259,10 @@
 - **EN:** 3〉 Act. to sound together (of musical instruments).
   <sub>attested</sub>
 
-**prefix_sam3_4)** — 4〉 Act. Med. übereinstimmen, zustimmen, seine Zustimmung zu Etwas (Acc. [ŚIŚ. 13,3]) geben; zutreffen, so v. a. zusammen einen Sinn geben [308,6] (im Prākrit). *samudita* allgemein angenommen, gebräuchlich geworden.
+**prefix_sam3_4)** — 4〉 Act. Med. übereinstimmen, zustimmen, seine Zustimmung zu Etwas (Acc. [ŚIŚ. 13,3]) geben; zutreffen, so v. a. zusammen einen Sinn geben [308,6](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?308) (im Prākrit). *samudita* allgemein angenommen, gebräuchlich geworden.
 
-- **RU:** 4〉 Act. Med. — соглашаться, давать своё согласие на что-либо (Acc. [ŚIŚ. 13,3]); соответствовать, так v. a. — совместно составлять смысл [308,6] (в Prākrit). *samudita* — общепринятый, вошедший в употребление.
-- **EN:** 4〉 Act. Med. to agree, to assent, to give one's assent to something (Acc. [ŚIŚ. 13,3]); to be applicable, so v. a. to together make sense [308,6] (in the Prākrit). *samudita* generally accepted, having come into common use.
+- **RU:** 4〉 Act. Med. — соглашаться, давать своё согласие на что-либо (Acc. [ŚIŚ. 13,3]); соответствовать, так v. a. — совместно составлять смысл [308,6](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?308) (в Prākrit). *samudita* — общепринятый, вошедший в употребление.
+- **EN:** 4〉 Act. Med. to agree, to assent, to give one's assent to something (Acc. [ŚIŚ. 13,3]); to be applicable, so v. a. to together make sense [308,6](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?308) (in the Prākrit). *samudita* generally accepted, having come into common use.
   <sub>attested</sub>
 
 **prefix_sam3_5)** — 5〉 Act. Med. sprechen, sagen zu (Acc.) [NAIṢ. 5,12]. *samudita* angeredet.

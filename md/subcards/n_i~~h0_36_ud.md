@@ -176,7 +176,7 @@ Schol. to [GĪT. 1,39.](https://sanskrit-lexicon-scans.github.io/gitagov/app1?1,
 [1,7366.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7366) [RĀJA-TAR. 4,353.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,353) [6,6.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?6,6) *upalabdhamupalakṣaṇaṃ yena tasyāḥ kopanāyāḥ sarasamunnīyate mārgaḥ*
 [VIKR. 57,11.](https://sanskrit-lexicon-scans.github.io/vikramor/app2?57,11) *prakṛtipratyayādyarthaiḥ saṃkīrṇe liṅgamunnayet*
 [AK. 3,3,1.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,3,1) *sā tu tāvatonnītamadabhiprāyā*
-[DAŚAK.] in [BENF. Chr. 200,4.] *ubhayorbhāvamunnīya*
+[DAŚAK.] in [BENF. Chr. 200,4.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?200) *ubhayorbhāvamunnīya*
 [SĀH. D. 37,14.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?37,14) *iti pratiśabdādunnīyate*
 [KULL.] zu [M. 1,1](https://sanskrit-lexicon-scans.github.io/manu/index.html?1,1) (S. 5, Z. 4). *prāḍvivāko vakṣyamāṇena śapathena satyamunnayet* ders. zu [M. 8,109.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,109)
 [252.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,252)
@@ -186,7 +186,7 @@ Schol. to [GĪT. 1,39.](https://sanskrit-lexicon-scans.github.io/gitagov/app1?1,
 [1,7366.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7366) [RĀJA-TAR. 4,353.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,353) [6,6.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?6,6) *upalabdhamupalakṣaṇaṃ yena tasyāḥ kopanāyāḥ sarasamunnīyate mārgaḥ*
 [VIKR. 57,11.](https://sanskrit-lexicon-scans.github.io/vikramor/app2?57,11) *prakṛtipratyayādyarthaiḥ saṃkīrṇe liṅgamunnayet*
 [AK. 3,3,1.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,3,1) *sā tu tāvatonnītamadabhiprāyā*
-[DAŚAK.] в [BENF. Chr. 200,4.] *ubhayorbhāvamunnīya*
+[DAŚAK.] в [BENF. Chr. 200,4.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?200) *ubhayorbhāvamunnīya*
 [SĀH. D. 37,14.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?37,14) *iti pratiśabdādunnīyate*
 [KULL.] к [M. 1,1](https://sanskrit-lexicon-scans.github.io/manu/index.html?1,1) (S. 5, Z. 4). *prāḍvivāko vakṣyamāṇena śapathena satyamunnayet* ders. к [M. 8,109.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,109)
 [252.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,252)
@@ -195,7 +195,7 @@ Schol. to [GĪT. 1,39.](https://sanskrit-lexicon-scans.github.io/gitagov/app1?1,
 [1,7366.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7366) [RĀJA-TAR. 4,353.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,353) [6,6.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?6,6) *upalabdhamupalakṣaṇaṃ yena tasyāḥ kopanāyāḥ sarasamunnīyate mārgaḥ*
 [VIKR. 57,11.](https://sanskrit-lexicon-scans.github.io/vikramor/app2?57,11) *prakṛtipratyayādyarthaiḥ saṃkīrṇe liṅgamunnayet*
 [AK. 3,3,1.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,3,1) *sā tu tāvatonnītamadabhiprāyā*
-[DAŚAK.] in [BENF. Chr. 200,4.] *ubhayorbhāvamunnīya*
+[DAŚAK.] in [BENF. Chr. 200,4.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?200) *ubhayorbhāvamunnīya*
 [SĀH. D. 37,14.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?37,14) *iti pratiśabdādunnīyate*
 [KULL.] to [M. 1,1](https://sanskrit-lexicon-scans.github.io/manu/index.html?1,1) (S. 5, Z. 4). *prāḍvivāko vakṣyamāṇena śapathena satyamunnayet* ders. to [M. 8,109.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,109)
 [252.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,252)

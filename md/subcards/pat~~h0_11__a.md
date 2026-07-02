@@ -20,7 +20,7 @@
 [RAGH. 5,50.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?5,50) [12,44.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?12,44)
 [RĀJA-TAR. 5,259.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,259)
 [BHĀG. P. 3,2,24.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,2,24) [6,1,30.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,1,30)
-[DAŚAK.] in [BENF. Chr. 187,3.] *pādaiḥ śanairāpatataḥ* zu Fusse langsam herbeikommend
+[DAŚAK.] in [BENF. Chr. 187,3.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?187) *pādaiḥ śanairāpatataḥ* zu Fusse langsam herbeikommend
 [BHAṬṬ. 3,48.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?3,48) *prabaladvīpinamāpatantamuccaiḥ* in der Höhe d. i. mit einem Sprunge heranstürzend Inschr. in
 [Journ. of the Am. Or. S. 7,11, Śl. 40.]
 
@@ -41,7 +41,7 @@
 [RAGH. 5,50.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?5,50) [12,44.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?12,44)
 [RĀJA-TAR. 5,259.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,259)
 [BHĀG. P. 3,2,24.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,2,24) [6,1,30.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,1,30)
-[DAŚAK.] в [BENF. Chr. 187,3.] *pādaiḥ śanairāpatataḥ* медленно приближаясь пешком
+[DAŚAK.] в [BENF. Chr. 187,3.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?187) *pādaiḥ śanairāpatataḥ* медленно приближаясь пешком
 [BHAṬṬ. 3,48.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?3,48) *prabaladvīpinamāpatantamuccaiḥ* в высоте d. i. бросаясь прыжком Inschr. в
 [Journ. of the Am. Or. S. 7,11, Śl. 40.]
   <sub>attested</sub>

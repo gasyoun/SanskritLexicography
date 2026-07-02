@@ -11,7 +11,7 @@
 [2,52,78.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,52,78) *pratyāgata*
 [24,32.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,24,32) [MBH. 3,289.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.289) [DRAUP. 8,50.] *raṇātpratyāgataṃ śūram*
 [CĀṆ. 79.] *pratyājagāma nagaram*
-[MBH.] in [BENF. Chr. 62,58.] *punaḥ pratyāgataḥ — gṛhamātmanaḥ*
+[MBH.] in [BENF. Chr. 62,58.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?62) *punaḥ pratyāgataḥ — gṛhamātmanaḥ*
 [INDR. 5. 51.] *snehaḥ pratihato na pratyāgacchati*
 [SUŚR. 2,200,10.] *pratyāgatāsu*
 [RAGH. 14,56.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?14,56) *˚prāṇa*
@@ -26,7 +26,7 @@
 [2,52,78.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,52,78) *pratyāgata*
 [24,32.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,24,32) [MBH. 3,289.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.289) [DRAUP. 8,50.] *raṇātpratyāgataṃ śūram*
 [CĀṆ. 79.] *pratyājagāma nagaram*
-[MBH.] в [BENF. Chr. 62,58.] *punaḥ pratyāgataḥ — gṛhamātmanaḥ*
+[MBH.] в [BENF. Chr. 62,58.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?62) *punaḥ pratyāgataḥ — gṛhamātmanaḥ*
 [INDR. 5. 51.] *snehaḥ pratihato na pratyāgacchati*
 [SUŚR. 2,200,10.] *pratyāgatāsu*
 [RAGH. 14,56.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?14,56) *˚prāṇa*
@@ -41,7 +41,7 @@
 [2,52,78.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,52,78) *pratyāgata*
 [24,32.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,24,32) [MBH. 3,289.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.289) [DRAUP. 8,50.] *raṇātpratyāgataṃ śūram*
 [CĀṆ. 79.] *pratyājagāma nagaram*
-[MBH.] in [BENF. Chr. 62,58.] *punaḥ pratyāgataḥ — gṛhamātmanaḥ*
+[MBH.] in [BENF. Chr. 62,58.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?62) *punaḥ pratyāgataḥ — gṛhamātmanaḥ*
 [INDR. 5. 51.] *snehaḥ pratihato na pratyāgacchati*
 [SUŚR. 2,200,10.] *pratyāgatāsu*
 [RAGH. 14,56.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?14,56) *˚prāṇa*

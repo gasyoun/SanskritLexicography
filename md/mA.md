@@ -2377,11 +2377,11 @@ Z. 8 read 7, 59, 12.
 - **EN:** **1.** *mā* — _Adv._ Conj. "not" (in prohibitive clauses), "that not, would that not, lest, in order that not".
   <sub>DCS 4955 · attested</sub>
 
-**§1.1)** — 1〉 mit Conj. Imperf., insbes. Aor.; ausnahmsweise auch mit Aor. Indic. (mit Augment, namentlich im Epos). Auch *mā mā*; in der Bed. damit nicht auch *yatha mā* und *mā-yathā*. Bemerkenswerth ist der Gebrauch des Wortes im Satze *mā* *bhudāgataḥ* (sollte er nicht in diesem Augenblick gekommen sein?) und in Verbindung mit *katham* (wie sollte nicht sein? u. s. w.). *mā na* mit Aor. Conj. so v. a. Imperativ ohne Negation [109,4]. [5]. [14] ([BHAṬṬ.]).
-- **EN:** — 1) with Conj. Imperf., insbes. Aor.; exceptionally also with Aor. Indic. (with augment, especially in the epic). Also *mā mā*; in the sense "in order that not" also *yatha mā* and *mā-yathā*. Noteworthy is the use of the word in the sentence *mā* *bhudāgataḥ* ("could he not have come at this very moment?") and in connection with *katham* ("how should it not be?" u. s. w.). *mā na* with Aor. Conj. so v. a. imperative without negation [109,4]. [5]. [14] ([BHAṬṬ.]).
+**§1.1)** — 1〉 mit Conj. Imperf., insbes. Aor.; ausnahmsweise auch mit Aor. Indic. (mit Augment, namentlich im Epos). Auch *mā mā*; in der Bed. damit nicht auch *yatha mā* und *mā-yathā*. Bemerkenswerth ist der Gebrauch des Wortes im Satze *mā* *bhudāgataḥ* (sollte er nicht in diesem Augenblick gekommen sein?) und in Verbindung mit *katham* (wie sollte nicht sein? u. s. w.). *mā na* mit Aor. Conj. so v. a. Imperativ ohne Negation [109,4](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?109). [5](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?109). [14](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?109) ([BHAṬṬ.]).
+- **EN:** — 1) with Conj. Imperf., insbes. Aor.; exceptionally also with Aor. Indic. (with augment, especially in the epic). Also *mā mā*; in the sense "in order that not" also *yatha mā* and *mā-yathā*. Noteworthy is the use of the word in the sentence *mā* *bhudāgataḥ* ("could he not have come at this very moment?") and in connection with *katham* ("how should it not be?" u. s. w.). *mā na* with Aor. Conj. so v. a. imperative without negation [109,4](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?109). [5](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?109). [14](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?109) ([BHAṬṬ.]).
 
-**§1.2)** — 2〉 mit Imperat. *mmaivaṃ maivam-bhava* [105,29]. *gaccha vā mā vā* so v. a. gleichviel, ob du gehst oder nicht; ähnlich *bhavatu mā vāstu*, *santu mā santu vā*, *dehi mā dehi vā*, *niryāntu mā yantu vā*. *mā kathaṃ nu bhavatu* wie sollte nicht sein? [BĀLAR. 30,10].
-- **EN:** — 2) with Imperat. *mmaivaṃ maivam-bhava* [105,29]. *gaccha vā mā vā* so v. a. "no matter whether you go or not"; similarly *bhavatu mā vāstu*, *santu mā santu vā*, *dehi mā dehi vā*, *niryāntu mā yantu vā*. *mā kathaṃ nu bhavatu* "how should it not be?" [BĀLAR. 30,10].
+**§1.2)** — 2〉 mit Imperat. *mmaivaṃ maivam-bhava* [105,29](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?105). *gaccha vā mā vā* so v. a. gleichviel, ob du gehst oder nicht; ähnlich *bhavatu mā vāstu*, *santu mā santu vā*, *dehi mā dehi vā*, *niryāntu mā yantu vā*. *mā kathaṃ nu bhavatu* wie sollte nicht sein? [BĀLAR. 30,10].
+- **EN:** — 2) with Imperat. *mmaivaṃ maivam-bhava* [105,29](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?105). *gaccha vā mā vā* so v. a. "no matter whether you go or not"; similarly *bhavatu mā vāstu*, *santu mā santu vā*, *dehi mā dehi vā*, *niryāntu mā yantu vā*. *mā kathaṃ nu bhavatu* "how should it not be?" [BĀLAR. 30,10].
 
 **§1.3)** — 3〉 mit Potent.
 - **EN:** — 3) with Potent.
@@ -2410,8 +2410,8 @@ Z. 8 read 7, 59, 12.
 **§1.11)** — 11〉 *mo* (*mā u*) und nicht (prohibitiv).
 - **EN:** — 11) *mo* (*mā u*) "and not" (prohibitive).
 
-**§1.12)** — 12〉 *mā* *sma* mit Conj., insbes. Aor. (ausnahmsweise auch mit Augment), und Imper. ([58,1]) nicht (prohibitiv) und damit nicht (Aor.). *sma mā-mo* (*mo* [ŚAT. BR.]) *sma* [29,23].
-- **EN:** — 12) *mā* *sma* with Conj., insbes. Aor. (exceptionally also with augment), and Imper. ([58,1]) "not" (prohibitive) and "in order that not" (Aor.). *sma mā-mo* (*mo* [ŚAT. BR.]) *sma* [29,23].
+**§1.12)** — 12〉 *mā* *sma* mit Conj., insbes. Aor. (ausnahmsweise auch mit Augment), und Imper. ([58,1](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?58)) nicht (prohibitiv) und damit nicht (Aor.). *sma mā-mo* (*mo* [ŚAT. BR.]) *sma* [29,23](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?29).
+- **EN:** — 12) *mā* *sma* with Conj., insbes. Aor. (exceptionally also with augment), and Imper. ([58,1](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?58)) "not" (prohibitive) and "in order that not" (Aor.). *sma mā-mo* (*mo* [ŚAT. BR.]) *sma* [29,23](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?29).
 
 **§2)** **2.** √*mā*¦ enklitischer Acc. zu *aham* ich.
 
@@ -2419,14 +2419,14 @@ Z. 8 read 7, 59, 12.
 - **EN:** **2.** √*mā* — enclitic Acc. of *aham* "I".
   <sub>DCS 4955 · attested</sub>
 
-**1〉)** — 1〉 mit Conj. Imperf., insbes. Aor.; ausnahmsweise auch mit Aor. Indic. (mit Augment, namentlich im Epos). Auch *mā mā*; in der Bed. damit nicht auch *yatha mā* und *mā-yathā*. Bemerkenswerth ist der Gebrauch des Wortes im Satze *mā* *bhudāgataḥ* (sollte er nicht in diesem Augenblick gekommen sein?) und in Verbindung mit *katham* (wie sollte nicht sein? u. s. w.). *mā na* mit Aor. Conj. so v. a. Imperativ ohne Negation [109,4]. [5]. [14] ([BHAṬṬ.]).
+**1〉)** — 1〉 mit Conj. Imperf., insbes. Aor.; ausnahmsweise auch mit Aor. Indic. (mit Augment, namentlich im Epos). Auch *mā mā*; in der Bed. damit nicht auch *yatha mā* und *mā-yathā*. Bemerkenswerth ist der Gebrauch des Wortes im Satze *mā* *bhudāgataḥ* (sollte er nicht in diesem Augenblick gekommen sein?) und in Verbindung mit *katham* (wie sollte nicht sein? u. s. w.). *mā na* mit Aor. Conj. so v. a. Imperativ ohne Negation [109,4](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?109). [5](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?109). [14](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?109) ([BHAṬṬ.]).
 
-- **RU:** — 1〉 с Conj. Imperf., insbes. Aor.; в виде исключения также с Aor. Indic. (с аугментом, особенно в эпосе). Также *mā mā*; в Bed. дабы не также *yatha mā* и *mā-yathā*. Примечателен употребление слова в предложении *mā* *bhudāgataḥ* (разве он не мог прийти в этот момент?) и в сочетании с *katham* (как не быть? u. s. w.). *mā na* с Aor. Conj. так v. a. императив без отрицания [109,4]. [5]. [14] ([BHAṬṬ.]).
+- **RU:** — 1〉 с Conj. Imperf., insbes. Aor.; в виде исключения также с Aor. Indic. (с аугментом, особенно в эпосе). Также *mā mā*; в Bed. дабы не также *yatha mā* и *mā-yathā*. Примечателен употребление слова в предложении *mā* *bhudāgataḥ* (разве он не мог прийти в этот момент?) и в сочетании с *katham* (как не быть? u. s. w.). *mā na* с Aor. Conj. так v. a. императив без отрицания [109,4](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?109). [5](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?109). [14](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?109) ([BHAṬṬ.]).
   <sub>DCS 4955 · attested</sub>
 
-**2〉)** — 2〉 mit Imperat. *mmaivaṃ maivam-bhava* [105,29]. *gaccha vā mā vā* so v. a. gleichviel, ob du gehst oder nicht; ähnlich *bhavatu mā vāstu*, *santu mā santu vā*, *dehi mā dehi vā*, *niryāntu mā yantu vā*. *mā kathaṃ nu bhavatu* wie sollte nicht sein? [BĀLAR. 30,10].
+**2〉)** — 2〉 mit Imperat. *mmaivaṃ maivam-bhava* [105,29](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?105). *gaccha vā mā vā* so v. a. gleichviel, ob du gehst oder nicht; ähnlich *bhavatu mā vāstu*, *santu mā santu vā*, *dehi mā dehi vā*, *niryāntu mā yantu vā*. *mā kathaṃ nu bhavatu* wie sollte nicht sein? [BĀLAR. 30,10].
 
-- **RU:** — 2〉 с Imperat. *mmaivaṃ maivam-bhava* [105,29]. *gaccha vā mā vā* так v. a. всё равно, идёшь ты или нет; подобно *bhavatu mā vāstu*, *santu mā santu vā*, *dehi mā dehi vā*, *niryāntu mā yantu vā*. *mā kathaṃ nu bhavatu* как не быть? [BĀLAR. 30,10].
+- **RU:** — 2〉 с Imperat. *mmaivaṃ maivam-bhava* [105,29](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?105). *gaccha vā mā vā* так v. a. всё равно, идёшь ты или нет; подобно *bhavatu mā vāstu*, *santu mā santu vā*, *dehi mā dehi vā*, *niryāntu mā yantu vā*. *mā kathaṃ nu bhavatu* как не быть? [BĀLAR. 30,10].
   <sub>DCS 4955 · attested</sub>
 
 **3〉)** — 3〉 mit Potent.
@@ -2474,9 +2474,9 @@ Z. 8 read 7, 59, 12.
 - **RU:** — 11〉 *mo* (*mā u*) и не (запретительно).
   <sub>DCS 4955 · attested</sub>
 
-**12〉)** — 12〉 *mā* *sma* mit Conj., insbes. Aor. (ausnahmsweise auch mit Augment), und Imper. ([58,1]) nicht (prohibitiv) und damit nicht (Aor.). *sma mā-mo* (*mo* [ŚAT. BR.]) *sma* [29,23].
+**12〉)** — 12〉 *mā* *sma* mit Conj., insbes. Aor. (ausnahmsweise auch mit Augment), und Imper. ([58,1](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?58)) nicht (prohibitiv) und damit nicht (Aor.). *sma mā-mo* (*mo* [ŚAT. BR.]) *sma* [29,23](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?29).
 
-- **RU:** — 12〉 *mā* *sma* с Conj., insbes. Aor. (в виде исключения также с аугментом), и Imper. ([58,1]) не (запретительно) и дабы не (Aor.). *sma mā-mo* (*mo* [ŚAT. BR.]) *sma* [29,23].
+- **RU:** — 12〉 *mā* *sma* с Conj., insbes. Aor. (в виде исключения также с аугментом), и Imper. ([58,1](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?58)) не (запретительно) и дабы не (Aor.). *sma mā-mo* (*mo* [ŚAT. BR.]) *sma* [29,23](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?29).
   <sub>DCS 4955 · attested</sub>
 
 ## mā
@@ -2601,8 +2601,8 @@ Z. 8 read 7, 59, 12.
 **§abhini1)** — 1〉 Act. Med. zutheilen, verleihen.
 - **EN:** — 1) Act. Med. "to allot, to bestow".
 
-**§abhini2)** — 2〉 Med. vergleichen mit (Instr.) [249,29]. *upamita* verglichen, gleichgesetzt, gleich ([250,30]).
-- **EN:** — 2) Med. "to compare with" (Instr.) [249,29]. *upamita* "compared, equated, equal" ([250,30]).
+**§abhini2)** — 2〉 Med. vergleichen mit (Instr.) [249,29](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?249). *upamita* verglichen, gleichgesetzt, gleich ([250,30](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?250)).
+- **EN:** — 2) Med. "to compare with" (Instr.) [249,29](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?249). *upamita* "compared, equated, equal" ([250,30](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?250)).
 
 **§abhini3)** — 3〉 Pass. zu Passe kommen, von Nutzen sein.
 - **EN:** — 3) Pass. "to come in handy, to be of use".
@@ -2649,8 +2649,8 @@ Z. 8 read 7, 59, 12.
 **§ava7)** — 7〉 *nirmita*
 - **EN:** — 7) *nirmita*
 
-**§ava7a)** — a〉 hergestellt, gemacht, verfertigt, erbaut, geschaffen, gebildet überh. — von (Instr. oder im Comp. vorangehend), — aus (Abl., Instr. [[122,28]. [137,5]. [152,10]] oder im Comp. vorangehend).
-- **EN:** — a) "produced, made, fashioned, built, created, formed" überh. — "by" (Instr. or preceding in the Comp.), — "from" (Abl., Instr. [[122,28]. [137,5]. [152,10]] or preceding in the Comp.).
+**§ava7a)** — a〉 hergestellt, gemacht, verfertigt, erbaut, geschaffen, gebildet überh. — von (Instr. oder im Comp. vorangehend), — aus (Abl., Instr. [[122,28](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?122). [137,5](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?137). [152,10](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?152)] oder im Comp. vorangehend).
+- **EN:** — a) "produced, made, fashioned, built, created, formed" überh. — "by" (Instr. or preceding in the Comp.), — "from" (Abl., Instr. [[122,28](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?122). [137,5](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?137). [152,10](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?152)] or preceding in the Comp.).
 
 **§ava7b)** — b〉 bewirkt.
 - **EN:** — b) "effected".
@@ -2972,9 +2972,9 @@ Z. 8 read 7, 59, 12.
 - **RU:** — 1〉 Act. Med. наделять, даровать.
   <sub>DCS 4955 · attested</sub>
 
-**abhi-2〉)** — 2〉 Med. vergleichen mit (Instr.) [249,29]. *upamita* verglichen, gleichgesetzt, gleich ([250,30]).
+**abhi-2〉)** — 2〉 Med. vergleichen mit (Instr.) [249,29](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?249). *upamita* verglichen, gleichgesetzt, gleich ([250,30](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?250)).
 
-- **RU:** — 2〉 Med. сравнивать с (Instr.) [249,29]. *upamita* сравненный, приравненный, равный ([250,30]).
+- **RU:** — 2〉 Med. сравнивать с (Instr.) [249,29](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?249). *upamita* сравненный, приравненный, равный ([250,30](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?250)).
   <sub>DCS 4955 · attested</sub>
 
 **abhi-3〉)** — 3〉 Pass. zu Passe kommen, von Nutzen sein.
@@ -3052,9 +3052,9 @@ Z. 8 read 7, 59, 12.
 - **RU:** — 7〉 *nirmita*
   <sub>DCS 4955 · attested</sub>
 
-**ni-7a〉)** — a〉 hergestellt, gemacht, verfertigt, erbaut, geschaffen, gebildet überh. — von (Instr. oder im Comp. vorangehend), — aus (Abl., Instr. [[122,28]. [137,5]. [152,10]] oder im Comp. vorangehend).
+**ni-7a〉)** — a〉 hergestellt, gemacht, verfertigt, erbaut, geschaffen, gebildet überh. — von (Instr. oder im Comp. vorangehend), — aus (Abl., Instr. [[122,28](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?122). [137,5](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?137). [152,10](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?152)] oder im Comp. vorangehend).
 
-- **RU:** — a〉 изготовленный, сделанный, произведённый, возведённый, созданный, образованный überh. — кем (Instr. или в Comp. предшествующем), — из (Abl., Instr. [[122,28]. [137,5]. [152,10]] или в Comp. предшествующем).
+- **RU:** — a〉 изготовленный, сделанный, произведённый, возведённый, созданный, образованный überh. — кем (Instr. или в Comp. предшествующем), — из (Abl., Instr. [[122,28](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?122). [137,5](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?137). [152,10](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?152)] или в Comp. предшествующем).
   <sub>DCS 4955 · attested</sub>
 
 **ni-7b〉)** — b〉 bewirkt.

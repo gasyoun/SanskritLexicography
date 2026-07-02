@@ -197,7 +197,7 @@
 [HIT. 10,21.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?10,21)
 [KATHĀS. 7,55.](https://sanskrit-lexicon-scans.github.io/kss/index.html?7,55)
 [PRAB. 19,4.] [78,9.]
-[DAŚAK.] in [BENF. Chr. 183,9. 196,1.] *vindhyāṭavyāṃ piśācaṃ tamādiśaddhaneśvaraḥ* verwies ihn in den Vindhya-Wald
+[DAŚAK.] in [BENF. Chr. 183,9. 196,1.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?183) *vindhyāṭavyāṃ piśācaṃ tamādiśaddhaneśvaraḥ* verwies ihn in den Vindhya-Wald
 [KATHĀS. 2,19.](https://sanskrit-lexicon-scans.github.io/kss/index.html?2,19)
 
 - **RU:** — 6) давать кому-л. указание, отдавать приказ, направлять: *ityādideśa mām*
@@ -217,7 +217,7 @@
 [HIT. 10,21.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?10,21)
 [KATHĀS. 7,55.](https://sanskrit-lexicon-scans.github.io/kss/index.html?7,55)
 [PRAB. 19,4.] [78,9.]
-[DAŚAK.] в [BENF. Chr. 183,9. 196,1.] *vindhyāṭavyāṃ piśācaṃ tamādiśaddhaneśvaraḥ* сослал его в Vindhya-лес
+[DAŚAK.] в [BENF. Chr. 183,9. 196,1.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?183) *vindhyāṭavyāṃ piśācaṃ tamādiśaddhaneśvaraḥ* сослал его в Vindhya-лес
 [KATHĀS. 2,19.](https://sanskrit-lexicon-scans.github.io/kss/index.html?2,19)
 - **EN:** — 6) to instruct someone, give a command, dispatch: *ityādideśa mām*
 [R. GORR. 2,58,33.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,58,33) [6,19,74.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,19,74) *anveṣaṇe 'niruddhasya carānādiśa māciram*
@@ -236,7 +236,7 @@
 [HIT. 10,21.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?10,21)
 [KATHĀS. 7,55.](https://sanskrit-lexicon-scans.github.io/kss/index.html?7,55)
 [PRAB. 19,4.] [78,9.]
-[DAŚAK.] into [BENF. Chr. 183,9. 196,1.] *vindhyāṭavyāṃ piśācaṃ tamādiśaddhaneśvaraḥ* banished him into the Vindhya-forest
+[DAŚAK.] into [BENF. Chr. 183,9. 196,1.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?183) *vindhyāṭavyāṃ piśācaṃ tamādiśaddhaneśvaraḥ* banished him into the Vindhya-forest
 [KATHĀS. 2,19.](https://sanskrit-lexicon-scans.github.io/kss/index.html?2,19)
   <sub>DCS 628 · attested</sub>
 

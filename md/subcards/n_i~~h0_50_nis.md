@@ -29,7 +29,7 @@
 
 **2)** — 2) auf s Reine bringen, Etwas herausbringen, hinter Etwas kommen. Etwas zur Entscheidung bringen, sich für Etwas entscheiden: *yo hi kāryaṃ mahāpadi . haṭhenecchati nirṇetum*
 [R. 5,85,11.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,85,11) *kamapyupāyamātmanaiva nirṇīya*
-[DAŚAK.] in [BENF. Chr. 194,19.] *ityetadvyavahārānnirṇetuṃ na śakyate*
+[DAŚAK.] in [BENF. Chr. 194,19.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?194) *ityetadvyavahārānnirṇetuṃ na śakyate*
 [HIT. 73,22.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?73,22) *purāvṛttakathodgāraiḥ kathaṃ nirṇīyate paraḥ*
 [III,105.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?3,105) *nirṇīya śubhalagnaṃ yātrārthaṃ dadātu*
 [94,9.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?94,9) *vastu nirṇīyatāṃ svayam*
@@ -43,7 +43,7 @@
 
 - **RU:** — 2) выяснять, устанавливать, доискиваться до чего-л., доводить до решения, принимать решение о чём-л.: *yo hi kāryaṃ mahāpadi . haṭhenecchati nirṇetum*
 [R. 5,85,11.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,85,11) *kamapyupāyamātmanaiva nirṇīya*
-[DAŚAK.] in [BENF. Chr. 194,19.] *ityetadvyavahārānnirṇetuṃ na śakyate*
+[DAŚAK.] in [BENF. Chr. 194,19.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?194) *ityetadvyavahārānnirṇetuṃ na śakyate*
 [HIT. 73,22.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?73,22) *purāvṛttakathodgāraiḥ kathaṃ nirṇīyate paraḥ*
 [III,105.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?3,105) *nirṇīya śubhalagnaṃ yātrārthaṃ dadātu*
 [94,9.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?94,9) *vastu nirṇīyatāṃ svayam*
@@ -56,7 +56,7 @@
 [ŚAṂK.] zu [BṚH. ĀR. UP. S. 216.]
 - **EN:** — 2) to clear up, to bring something to light, to get to the bottom of something, to bring something to a decision, to decide in favour of something: *yo hi kāryaṃ mahāpadi . haṭhenecchati nirṇetum*
 [R. 5,85,11.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,85,11) *kamapyupāyamātmanaiva nirṇīya*
-[DAŚAK.] in [BENF. Chr. 194,19.] *ityetadvyavahārānnirṇetuṃ na śakyate*
+[DAŚAK.] in [BENF. Chr. 194,19.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?194) *ityetadvyavahārānnirṇetuṃ na śakyate*
 [HIT. 73,22.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?73,22) *purāvṛttakathodgāraiḥ kathaṃ nirṇīyate paraḥ*
 [III,105.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?3,105) *nirṇīya śubhalagnaṃ yātrārthaṃ dadātu*
 [94,9.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?94,9) *vastu nirṇīyatāṃ svayam*

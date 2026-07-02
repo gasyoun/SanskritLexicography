@@ -111,10 +111,10 @@
 - **EN:** 5) to come into a state —, into a position —, into a relation; to fall into; to become partaker of, obtain, find; with Acc. *upayāta* with act. Bed.
   <sub>attested</sub>
 
-**upa6)** — 6〉 sich hingehen, fröhnen; mit Acc. [104,33].
+**upa6)** — 6〉 sich hingehen, fröhnen; mit Acc. [104,33](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?104).
 
-- **RU:** — 6〉 предаваться, отдаваться; с Acc. [104,33].
-- **EN:** 6) to give oneself over to, indulge in; with Acc. [104,33].
+- **RU:** — 6〉 предаваться, отдаваться; с Acc. [104,33](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?104).
+- **EN:** 6) to give oneself over to, indulge in; with Acc. [104,33](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?104).
   <sub>attested</sub>
 
 **abhyupa-intro)** — Mit *abhyupa*
@@ -141,10 +141,10 @@
 - **EN:** — With *upopa*, to reach, — to enter upon (a time); with Acc. *upopayāta* with act. Bed.
   <sub>attested</sub>
 
-**prati2)** — Mit *pratyupa* zurückkehren, — nach oder in; mit Acc. und *prati* ([78,32]) oder mit Loc.
+**prati2)** — Mit *pratyupa* zurückkehren, — nach oder in; mit Acc. und *prati* ([78,32](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?78)) oder mit Loc.
 
-- **RU:** — С *pratyupa* возвращаться, — к или в; с Acc. и *prati* ([78,32]) или с Loc.
-- **EN:** — With *pratyupa*, to return, — to or into; with Acc. and *prati* ([78,32]) or with Loc.
+- **RU:** — С *pratyupa* возвращаться, — к или в; с Acc. и *prati* ([78,32](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?78)) или с Loc.
+- **EN:** — With *pratyupa*, to return, — to or into; with Acc. and *prati* ([78,32](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?78)) or with Loc.
   <sub>attested</sub>
 
 **sam-intro)** — Mit *samupa*
@@ -411,10 +411,10 @@
 - **EN:** 6) to set out on the way, hence v. a. to die. *prayāta* died.
   <sub>attested</sub>
 
-**pra7)** — 7〉 verfliessen, verstreichen. *prayāta* verstrichen, verflossen [139,13].
+**pra7)** — 7〉 verfliessen, verstreichen. *prayāta* verstrichen, verflossen [139,13](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?139).
 
-- **RU:** — 7〉 протекать, проходить (о времени). *prayāta* протёкший, прошедший [139,13].
-- **EN:** 7) to elapse, to pass by. *prayāta* elapsed, passed [139,13].
+- **RU:** — 7〉 протекать, проходить (о времени). *prayāta* протёкший, прошедший [139,13](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?139).
+- **EN:** 7) to elapse, to pass by. *prayāta* elapsed, passed [139,13](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?139).
   <sub>attested</sub>
 
 **pra8)** — 8〉 in einen Zustand —, in eine Lage —, in ein Verhältniss kommen, — gerathen, theilhaftig werden; mit Acc.

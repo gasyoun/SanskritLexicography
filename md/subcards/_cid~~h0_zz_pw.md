@@ -7,11 +7,11 @@
 - **EN:** **1.** √*chid*¦, *chinatti, chintte* (*chindet* [KṢURIKOP. 14. 19])
 
 **1)** **1.** √*chid*¦, *chinatti, chintte* (*chindet* [KṢURIKOP. 14. 19])
-— 1〉 abschneiden, -hauen, -schlagen, -reissen, -nagen, -beissen, zerschneiden, -hauen, -reissen, spalten, durchbohren. *saṃdhim* ein Loch in die Mauer schlagen. Pass. zerbrechen, -reissen (intrans.). *chinna* abgeschnitten u. s. w.; aufgerissen, -schnitten; eingeschnitten, d. h. mit Einschnürungen versehen [217,6].
+— 1〉 abschneiden, -hauen, -schlagen, -reissen, -nagen, -beissen, zerschneiden, -hauen, -reissen, spalten, durchbohren. *saṃdhim* ein Loch in die Mauer schlagen. Pass. zerbrechen, -reissen (intrans.). *chinna* abgeschnitten u. s. w.; aufgerissen, -schnitten; eingeschnitten, d. h. mit Einschnürungen versehen [217,6](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?217).
 
 - **RU:** **1.** √*chid*¦, *chinatti, chintte* (*chindet* [KṢURIKOP. 14. 19])
-— 1〉 срезать, -рубать, -бивать, -рывать, -грызать, -кусывать, разрезать, -рубать, -рывать, раскалывать, пробуравливать. *saṃdhim* пробить отверстие в стене. Pass. разломать, разорвать (intrans.). *chinna* отрезанный u. s. w.; разорванный, -резанный; надрезанный, d. h. снабжённый перетяжками [217,6].
-- **EN:** — 1〉 to cut off, hew off, strike off, tear off, gnaw off, bite off, cut through, hew through, tear through, split, pierce. *saṃdhim* to make a hole in the wall. Pass. to break, to tear (intrans.). *chinna* cut off u. s. w.; torn open, cut open; incised, d. h. provided with notches/constrictions [217,6].
+— 1〉 срезать, -рубать, -бивать, -рывать, -грызать, -кусывать, разрезать, -рубать, -рывать, раскалывать, пробуравливать. *saṃdhim* пробить отверстие в стене. Pass. разломать, разорвать (intrans.). *chinna* отрезанный u. s. w.; разорванный, -резанный; надрезанный, d. h. снабжённый перетяжками [217,6](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?217).
+- **EN:** — 1〉 to cut off, hew off, strike off, tear off, gnaw off, bite off, cut through, hew through, tear through, split, pierce. *saṃdhim* to make a hole in the wall. Pass. to break, to tear (intrans.). *chinna* cut off u. s. w.; torn open, cut open; incised, d. h. provided with notches/constrictions [217,6](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?217).
   <sub>attested</sub>
 
 **2)** — 2〉 scheiden, trennen, — von (Abl., ausnahmsweise Instr.). *chinna* unterbrochen, nicht zusammenhängend. *˚chinna* auch begrenzt —, eingeschlossen von [Spr. 1229](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1229).
@@ -32,10 +32,10 @@
 - **EN:** — 4〉 to interrupt, to disturb.
   <sub>attested</sub>
 
-**5)** — 5〉 vernichten, zu Grunde richten, zerstören, entfernen. *ṛṇam* so v. a. eine Schuld tilgen. Pass. verschwinden [287,26]. *chinna* verschwunden, nicht mehr da seiend. *kiṃ naśchinnam* so v. a. was büssen wir dabei ein? was machen wir uns daraus?
+**5)** — 5〉 vernichten, zu Grunde richten, zerstören, entfernen. *ṛṇam* so v. a. eine Schuld tilgen. Pass. verschwinden [287,26](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?287). *chinna* verschwunden, nicht mehr da seiend. *kiṃ naśchinnam* so v. a. was büssen wir dabei ein? was machen wir uns daraus?
 
-- **RU:** — 5〉 уничтожать, губить, разрушать, устранять. *ṛṇam* так v. a. уплатить долг. Pass. исчезать [287,26]. *chinna* исчезнувший, более не существующий. *kiṃ naśchinnam* так v. a. что мы при этом теряем? что нам до этого?
-- **EN:** — 5〉 to annihilate, to ruin, to destroy, to remove. *ṛṇam* so v. a. to discharge a debt. Pass. to disappear [287,26]. *chinna* vanished, no longer present. *kiṃ naśchinnam* so v. a. what do we forfeit thereby? what do we care about it?
+- **RU:** — 5〉 уничтожать, губить, разрушать, устранять. *ṛṇam* так v. a. уплатить долг. Pass. исчезать [287,26](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?287). *chinna* исчезнувший, более не существующий. *kiṃ naśchinnam* так v. a. что мы при этом теряем? что нам до этого?
+- **EN:** — 5〉 to annihilate, to ruin, to destroy, to remove. *ṛṇam* so v. a. to discharge a debt. Pass. to disappear [287,26](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?287). *chinna* vanished, no longer present. *kiṃ naśchinnam* so v. a. what do we forfeit thereby? what do we care about it?
   <sub>attested</sub>
 
 **6)** — 6〉 theilen, dividiren.
@@ -77,10 +77,10 @@
 - **EN:** — With *ati*, *˚cchinna* cut too deeply [SUŚR. 2,19,1]. too deeply hewn, — wounded [MBH. 12,96,15](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,96,15).
   <sub>attested</sub>
 
-**ava)** — Mit *antar* abschneiden, intercludere [28,7].
+**ava)** — Mit *antar* abschneiden, intercludere [28,7](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?28).
 
-- **RU:** — Mit *antar* срезать, отрезать (intercludere) [28,7].
-- **EN:** — With *antar* to cut off, intercludere [28,7].
+- **RU:** — Mit *antar* срезать, отрезать (intercludere) [28,7](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?28).
+- **EN:** — With *antar* to cut off, intercludere [28,7](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?28).
   <sub>attested</sub>
 
 **apa)** — Mit *apa* abspalten, abtrennen.
@@ -101,8 +101,8 @@
 **apa2-ppp-1)** — 1〉 unterbrochen.
 - **EN:** — 1〉 interrupted.
 
-**apa2-ppp-2)** — 2〉 begrenzt —, eingeschlossen von (im Comp. vorangehend) [260,30]. [261,5].
-- **EN:** — 2〉 bounded by, enclosed by (in the Comp. preceding) [260,30]. [261,5].
+**apa2-ppp-2)** — 2〉 begrenzt —, eingeschlossen von (im Comp. vorangehend) [260,30](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?260). [261,5](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?261).
+- **EN:** — 2〉 bounded by, enclosed by (in the Comp. preceding) [260,30](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?260). [261,5](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?261).
 
 **apa2-ppp-3)** — 3〉 bestimmt, präcisirt, begrifflich definirt.
 - **EN:** — 3〉 determinate, precise, conceptually defined.
@@ -363,12 +363,12 @@
 
 **Mit upa)** — Mit *ava* Jmd von sich weisen, zurückstossen [KĀD. 2,87,8]. Pass. getrennt —, geschieden werden von (Abl.). — *avacchinna*
 — 1〉 unterbrochen.
-— 2〉 begrenzt —, eingeschlossen von (im Comp. vorangehend) [260,30]. [261,5].
+— 2〉 begrenzt —, eingeschlossen von (im Comp. vorangehend) [260,30](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?260). [261,5](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?261).
 — 3〉 bestimmt, präcisirt, begrifflich definirt.
 
 - **RU:** — Mit *ava* отвергать кого-л., отталкивать [KĀD. 2,87,8]. Pass. быть отделённым —, отлучённым от (Abl.). — *avacchinna*
 — 1〉 прерванный.
-— 2〉 ограниченный —, замкнутый (предшествующим в Comp.) [260,30]. [261,5].
+— 2〉 ограниченный —, замкнутый (предшествующим в Comp.) [260,30](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?260). [261,5](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?261).
 — 3〉 определённый, точно установленный, понятийно определённый.
   <sub>attested</sub>
 

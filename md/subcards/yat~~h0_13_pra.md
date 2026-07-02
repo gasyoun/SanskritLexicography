@@ -28,7 +28,7 @@
 [Spr. 3242.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3242)
 [MBH. 14,343. fgg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.343)
 [RAGH. 8,2.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?8,2)
-[DAŚAK.] in [BENF. Chr. 196,13.] [BHAṬṬ. 19,15.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?19,15)
+[DAŚAK.] in [BENF. Chr. 196,13.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?196) [BHAṬṬ. 19,15.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?19,15)
 
 *tatkartuṃ prayatāmyaham*
 [R. 3,68,56.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,68,56) without complement
@@ -68,7 +68,7 @@
 [Spr. 3242.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3242)
 [MBH. 14,343. fgg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.343)
 [RAGH. 8,2.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?8,2)
-[DAŚAK.] in [BENF. Chr. 196,13.] [BHAṬṬ. 19,15.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?19,15)
+[DAŚAK.] in [BENF. Chr. 196,13.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?196) [BHAṬṬ. 19,15.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?19,15)
 
 *tatkartuṃ prayatāmyaham*
 [R. 3,68,56.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,68,56) ohne Ergänzung
@@ -99,7 +99,7 @@
 [Spr. 3242.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3242)
 [MBH. 14,343. fgg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.343)
 [RAGH. 8,2.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?8,2)
-[DAŚAK.] в [BENF. Chr. 196,13.] [BHAṬṬ. 19,15.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?19,15)
+[DAŚAK.] в [BENF. Chr. 196,13.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?196) [BHAṬṬ. 19,15.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?19,15)
 
 *tatkartuṃ prayatāmyaham*
 [R. 3,68,56.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,68,56) без дополнения

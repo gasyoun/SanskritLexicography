@@ -154,7 +154,7 @@
 
 [14.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.14) [1546.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.1546) übereinkommen, sich verbinden mit, sich vertragen mit, sich aussöhnen mit (instr., seltener acc.): *devāśca vā asurāśca samadadhanta*
 [PAÑCAV. BR. 13,6,9. 12,6,8.] *śapathapūrvaṃ tena saṃdhāya*
-[DAŚAK.] in [BENF. Chr. 198,1.] [HARIV. 4174.](https://sanskrit-lexicon-scans.github.io/hariv?4174) [KĀM. NĪTIS. 9,67. 11,2. 5.] *saṃdadhāno hi kāleṣu vigṛhṇaṃścāribhiḥ saha*
+[DAŚAK.] in [BENF. Chr. 198,1.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?198) [HARIV. 4174.](https://sanskrit-lexicon-scans.github.io/hariv?4174) [KĀM. NĪTIS. 9,67. 11,2. 5.] *saṃdadhāno hi kāleṣu vigṛhṇaṃścāribhiḥ saha*
 [R. 6,11,11.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,11,11) *asaṃdadhāno mānādyaḥ samenāpi hato bhṛśam*
 [PAÑCAT. III,13.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?3,13) [MBH. 5,4281.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.4281) [12,2611.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.2611) [KATHĀS. 17,47.](https://sanskrit-lexicon-scans.github.io/kss/index.html?17,47) [BHĀG. P. 4,19,39.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,19,39) *satyadharmavyapetena na saṃdadhyāt*
 [KĀM. NĪTIS. 9,41.] [PAÑCAT. II,30.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?2,30) *saṃdadhīta na cānāryaṃ vigṛhṇīyānna bandhubhiḥ*
@@ -171,7 +171,7 @@
 
 [14.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.14) [1546.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.1546) to agree, ally oneself with, come to terms with, be reconciled with (instr., more rarely acc.): *devāśca vā asurāśca samadadhanta*
 [PAÑCAV. BR. 13,6,9. 12,6,8.] *śapathapūrvaṃ tena saṃdhāya*
-[DAŚAK.] in [BENF. Chr. 198,1.] [HARIV. 4174.](https://sanskrit-lexicon-scans.github.io/hariv?4174) [KĀM. NĪTIS. 9,67. 11,2. 5.] *saṃdadhāno hi kāleṣu vigṛhṇaṃścāribhiḥ saha*
+[DAŚAK.] in [BENF. Chr. 198,1.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?198) [HARIV. 4174.](https://sanskrit-lexicon-scans.github.io/hariv?4174) [KĀM. NĪTIS. 9,67. 11,2. 5.] *saṃdadhāno hi kāleṣu vigṛhṇaṃścāribhiḥ saha*
 [R. 6,11,11.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,11,11) *asaṃdadhāno mānādyaḥ samenāpi hato bhṛśam*
 [PAÑCAT. III,13.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?3,13) [MBH. 5,4281.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.4281) [12,2611.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.2611) [KATHĀS. 17,47.](https://sanskrit-lexicon-scans.github.io/kss/index.html?17,47) [BHĀG. P. 4,19,39.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,19,39) *satyadharmavyapetena na saṃdadhyāt*
 [KĀM. NĪTIS. 9,41.] [PAÑCAT. II,30.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?2,30) *saṃdadhīta na cānāryaṃ vigṛhṇīyānna bandhubhiḥ*

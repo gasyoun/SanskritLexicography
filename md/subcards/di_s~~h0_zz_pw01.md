@@ -42,10 +42,10 @@
 - **EN:** — 5〉 to fix, prescribe.
   <sub>DCS 4018 · attested</sub>
 
-**with anvā 6)** — 6〉 Jmd anweisen, unterweisen, belehren [140,7]. [257,31]. Jmd Etwas beibringen (mit doppeltem Acc.).
+**with anvā 6)** — 6〉 Jmd anweisen, unterweisen, belehren [140,7](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?140). [257,31](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?257). Jmd Etwas beibringen (mit doppeltem Acc.).
 
-- **RU:** — 6〉 наставлять кого-л., поучать, обучать [140,7]. [257,31]. преподавать кому-л. что-л. (с двойным Acc.).
-- **EN:** — 6〉 to instruct —, teach —, inform someone [140,7]. [257,31]. to teach someone something (with double Acc.).
+- **RU:** — 6〉 наставлять кого-л., поучать, обучать [140,7](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?140). [257,31](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?257). преподавать кому-л. что-л. (с двойным Acc.).
+- **EN:** — 6〉 to instruct —, teach —, inform someone [140,7](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?140). [257,31](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?257). to teach someone something (with double Acc.).
   <sub>DCS 4018 · attested</sub>
 
 **with anvā 7)** — 7〉 befehlen —, herrschen über (Acc.). — *upadiṣṭa* [HARIV. 8438](https://sanskrit-lexicon-scans.github.io/hariv?8438) fehlerhaft für *upaviṣṭa*.
@@ -91,18 +91,18 @@
   <sub>DCS 4018 · attested</sub>
 
 **with ā 1)** — Mit *nis*
-— 1〉 hinweisen —, zeigen auf (Acc.) [308,1].
+— 1〉 hinweisen —, zeigen auf (Acc.) [308,1](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?308).
 
 - **RU:** — С *nis*
-— 1〉 указывать на, показывать на (Acc.) [308,1].
+— 1〉 указывать на, показывать на (Acc.) [308,1](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?308).
 - **EN:** — With *nis*
-— 1〉 to point —, show at (Acc.) [308,1].
+— 1〉 to point —, show at (Acc.) [308,1](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?308).
   <sub>DCS 4018 · attested</sub>
 
-**with ā 2)** — 2〉 Jmd (Dat. oder Gen.) Etwas oder Jmd (Acc.) anweisen, zuweisen, bestimmen. *nirdiṣṭa* Jmd (Gen.) zugewiesen, so v. a. unter seinem Schutz stehend [219,5].
+**with ā 2)** — 2〉 Jmd (Dat. oder Gen.) Etwas oder Jmd (Acc.) anweisen, zuweisen, bestimmen. *nirdiṣṭa* Jmd (Gen.) zugewiesen, so v. a. unter seinem Schutz stehend [219,5](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?219).
 
-- **RU:** — 2〉 наставлять кого-л. (Dat. или Gen.), назначать кому-л. что-л. или кого-л. (Acc.). *nirdiṣṭa* кому-л. (Gen.) назначенный, так v. a. находящийся под его защитой [219,5].
-- **EN:** — 2〉 to assign —, allot —, appoint someone (Dat. or Gen.) something or someone (Acc.). *nirdiṣṭa* assigned to someone (Gen.), so v. a. standing under his protection [219,5].
+- **RU:** — 2〉 наставлять кого-л. (Dat. или Gen.), назначать кому-л. что-л. или кого-л. (Acc.). *nirdiṣṭa* кому-л. (Gen.) назначенный, так v. a. находящийся под его защитой [219,5](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?219).
+- **EN:** — 2〉 to assign —, allot —, appoint someone (Dat. or Gen.) something or someone (Acc.). *nirdiṣṭa* assigned to someone (Gen.), so v. a. standing under his protection [219,5](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?219).
   <sub>DCS 4018 · attested</sub>
 
 **with ā 3)** — 3〉 bezeichnen, angeben, näher bestimmen, nennen.
@@ -342,10 +342,10 @@
 - **EN:** — 4〉 to direct someone (Acc.), to issue someone a command, to charge someone, to give someone a direction regarding (*prati*).
   <sub>DCS 4018 · attested</sub>
 
-**with prati 5)** — 5〉 Jmd Etwas anbefehlen, auftragen; mit doppeltem Acc. [60,27].
+**with prati 5)** — 5〉 Jmd Etwas anbefehlen, auftragen; mit doppeltem Acc. [60,27](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?60).
 
-- **RU:** — 5〉 приказывать кому-л. что-л., поручать; с двойным Acc. [60,27].
-- **EN:** — 5〉 to enjoin —, charge someone with something; with double Acc. [60,27].
+- **RU:** — 5〉 приказывать кому-л. что-л., поручать; с двойным Acc. [60,27](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?60).
+- **EN:** — 5〉 to enjoin —, charge someone with something; with double Acc. [60,27](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?60).
   <sub>DCS 4018 · attested</sub>
 
 **with prati 6)** — 6〉 Jmd mit einem Auftrage zu Jmd (Dat.) abordnen.

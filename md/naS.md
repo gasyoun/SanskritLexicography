@@ -324,7 +324,7 @@ _PWG article — 26 sub-card(s), 163 sense(s) · RU 65/163 · EN 120/163_
 lassen, nicht im Gedächtniss behalten
 [MBH. 7,705.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.705) *agnīn* die Feuer ausgehen lassen
 [BHĀG. P. 4,5,15.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,5,15) *kanyām* ein Mädchen schänden
-[KULL.] zu [M. 8,367. fgg.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,367) [DAŚAK.] in [BENF. Chr. 191,10.] Nach [P. 1,3,86](https://ashtadhyayi.com/sutraani/1/3/86) und [VOP. 22,2](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?22,2) stets act.; dass med. haben wir in den folgenden Stellen: *śoko nāśayate dhairyaṃ śoko nāśayate śrutam . śoko nāśayate sarvam*
+[KULL.] zu [M. 8,367. fgg.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,367) [DAŚAK.] in [BENF. Chr. 191,10.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?191) Nach [P. 1,3,86](https://ashtadhyayi.com/sutraani/1/3/86) und [VOP. 22,2](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?22,2) stets act.; dass med. haben wir in den folgenden Stellen: *śoko nāśayate dhairyaṃ śoko nāśayate śrutam . śoko nāśayate sarvam*
 [R. 2,62,15.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,62,15)
 [M. 3,175.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,175) *dāturnāśayate phalam* 177. *kṛtaṃ puruṣakāraṃ hi daivaṃ nāśayate kṣaṇāt*
 [HARIV. 10087.](https://sanskrit-lexicon-scans.github.io/hariv?10087) [1167.](https://sanskrit-lexicon-scans.github.io/hariv?1167) *nāśayate cittam*
@@ -361,7 +361,7 @@ lassen, nicht im Gedächtniss behalten
 не удерживать в памяти
 [MBH. 7,705.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.705) *agnīn* давать огням угаснуть
 [BHĀG. P. 4,5,15.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,5,15) *kanyām* обесчестить девушку
-[KULL.] к [M. 8,367. fgg.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,367) [DAŚAK.] в [BENF. Chr. 191,10.] После [P. 1,3,86](https://ashtadhyayi.com/sutraani/1/3/86) и [VOP. 22,2](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?22,2) всегда act.; что med. — это мы находим в следующих местах: *śoko nāśayate dhairyaṃ śoko nāśayate śrutam . śoko nāśayate sarvam*
+[KULL.] к [M. 8,367. fgg.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,367) [DAŚAK.] в [BENF. Chr. 191,10.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?191) После [P. 1,3,86](https://ashtadhyayi.com/sutraani/1/3/86) и [VOP. 22,2](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?22,2) всегда act.; что med. — это мы находим в следующих местах: *śoko nāśayate dhairyaṃ śoko nāśayate śrutam . śoko nāśayate sarvam*
 [R. 2,62,15.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,62,15)
 [M. 3,175.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,175) *dāturnāśayate phalam* 177. *kṛtaṃ puruṣakāraṃ hi daivaṃ nāśayate kṣaṇāt*
 [HARIV. 10087.](https://sanskrit-lexicon-scans.github.io/hariv?10087) [1167.](https://sanskrit-lexicon-scans.github.io/hariv?1167) *nāśayate cittam*
@@ -397,7 +397,7 @@ lassen, nicht im Gedächtniss behalten
 to let go, not to retain in memory
 [MBH. 7,705.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.705) *agnīn* to let the fires go out
 [BHĀG. P. 4,5,15.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,5,15) *kanyām* to violate a girl
-[KULL.] to [M. 8,367. fgg.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,367) [DAŚAK.] in [BENF. Chr. 191,10.] After [P. 1,3,86](https://ashtadhyayi.com/sutraani/1/3/86) and [VOP. 22,2](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?22,2) always act.; that med. we have in the following passages: *śoko nāśayate dhairyaṃ śoko nāśayate śrutam . śoko nāśayate sarvam*
+[KULL.] to [M. 8,367. fgg.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,367) [DAŚAK.] in [BENF. Chr. 191,10.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?191) After [P. 1,3,86](https://ashtadhyayi.com/sutraani/1/3/86) and [VOP. 22,2](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?22,2) always act.; that med. we have in the following passages: *śoko nāśayate dhairyaṃ śoko nāśayate śrutam . śoko nāśayate sarvam*
 [R. 2,62,15.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,62,15)
 [M. 3,175.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,175) *dāturnāśayate phalam* 177. *kṛtaṃ puruṣakāraṃ hi daivaṃ nāśayate kṣaṇāt*
 [HARIV. 10087.](https://sanskrit-lexicon-scans.github.io/hariv?10087) [1167.](https://sanskrit-lexicon-scans.github.io/hariv?1167) *nāśayate cittam*
@@ -1158,8 +1158,8 @@ Schol. under [P. 6,4,73](https://ashtadhyayi.com/sutraani/6/4/73) to *naś, āna
 **1)** **1.** √*naś*¦, *naśati* und *naśyati*; ausnahmsweise auch Med.
 - **EN:** **1.** √*naś*¦, *naśati* and *naśyati*; exceptionally also Med.
 
-**1.1)** — 1〉 verloren gehen, abhanden kommen, verschwinden, — aus (Abl.), unsichtbar werden, entweichen, entwischen, davon laufen, fliehen, sich scheren. *naṣṭa* verloren gegangen, abhanden gekommen, verschwunden, nicht mehr zu sehen, Jmd (Abl.) aus dem Gesicht gekommen, davon gelaufen, geflohen, — aus (Abl.). *naṣṭam* impers. [299,25]. *naṣṭavant* = *naṣṭa* [57,4].
-- **EN:** — 1〉 to be lost, go missing, disappear, — from (Abl.), to become invisible, slip away, escape, run away, flee, make off. *naṣṭa* lost, gone missing, disappeared, no longer visible, gone from someone's (Abl.) sight, run away, fled, — from (Abl.). *naṣṭam* impers. [299,25]. *naṣṭavant* = *naṣṭa* [57,4].
+**1.1)** — 1〉 verloren gehen, abhanden kommen, verschwinden, — aus (Abl.), unsichtbar werden, entweichen, entwischen, davon laufen, fliehen, sich scheren. *naṣṭa* verloren gegangen, abhanden gekommen, verschwunden, nicht mehr zu sehen, Jmd (Abl.) aus dem Gesicht gekommen, davon gelaufen, geflohen, — aus (Abl.). *naṣṭam* impers. [299,25](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?299). *naṣṭavant* = *naṣṭa* [57,4](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?57).
+- **EN:** — 1〉 to be lost, go missing, disappear, — from (Abl.), to become invisible, slip away, escape, run away, flee, make off. *naṣṭa* lost, gone missing, disappeared, no longer visible, gone from someone's (Abl.) sight, run away, fled, — from (Abl.). *naṣṭam* impers. [299,25](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?299). *naṣṭavant* = *naṣṭa* [57,4](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?57).
 
 **1.2)** — 2〉 vergehen, zu Grunde gehen, zu Nichte werden, ohne Nutzen, — vergeblich —, umsonst da sein. *naṣṭa* zu Grunde gegangen, zu Nichte geworden, beschädigt, verdorben; zu Nichts da seiend, — nützend, es zu Nichts bringend; gekommen um (Abl.); der einen Process verloren hat [MṚCCH. 137,19].
 - **EN:** — 2〉 to perish, be ruined, come to nothing, to be without use, — in vain —, to no purpose. *naṣṭa* ruined, reduced to nothing, damaged, spoilt; being of no account, — of no use, bringing nothing to fruition; having lost (Abl.); one who has lost a lawsuit [MṚCCH. 137,19].

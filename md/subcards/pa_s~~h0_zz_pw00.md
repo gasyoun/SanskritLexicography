@@ -64,10 +64,10 @@
 - **EN:** — 10) to get to see thus v. a. to experience, to become partaker of.
   <sub>attested</sub>
 
-**11)** — 11〉 ansehen für, erkennen als, halten für, betrachten als; mit doppeltem Acc. Statt des Zweiten Acc. auch _Adv._ auf *vat*. [140,26]; statt des ersten Acc. ausnahmsweise Loc. (v. l. Acc.), statt des zweiten ein _Adv._ auf *vat*.
+**11)** — 11〉 ansehen für, erkennen als, halten für, betrachten als; mit doppeltem Acc. Statt des Zweiten Acc. auch _Adv._ auf *vat*. [140,26](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?140); statt des ersten Acc. ausnahmsweise Loc. (v. l. Acc.), statt des zweiten ein _Adv._ auf *vat*.
 
-- **RU:** — 11〉 считать чем-л., признавать чем-л., принимать за, рассматривать как; с двойным Acc. Вместо второго Acc. также _Adv._ при *vat*. [140,26]; вместо первого Acc. в виде исключения Loc. (v. l. Acc.), вместо второго — _Adv._ при *vat*.
-- **EN:** — 11) to regard as, recognize as, take for, consider as; with double Acc. — in place of the second Acc. also _Adv._ with *vat*. [140,26]; in place of the first Acc. exceptionally Loc. (v. l. Acc.), in place of the second a _Adv._ with *vat*.
+- **RU:** — 11〉 считать чем-л., признавать чем-л., принимать за, рассматривать как; с двойным Acc. Вместо второго Acc. также _Adv._ при *vat*. [140,26](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?140); вместо первого Acc. в виде исключения Loc. (v. l. Acc.), вместо второго — _Adv._ при *vat*.
+- **EN:** — 11) to regard as, recognize as, take for, consider as; with double Acc. — in place of the second Acc. also _Adv._ with *vat*. [140,26](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?140); in place of the first Acc. exceptionally Loc. (v. l. Acc.), in place of the second a _Adv._ with *vat*.
   <sub>attested</sub>
 
 **12)** — 12〉 mit dem geistigen Auge erschauen (von Sehern und Dichtern); daher auch erfinden (z. B. Opfergebräuche). *svapnān* Traumgesichte sehen.
@@ -76,10 +76,10 @@
 - **EN:** — 12) to behold with the spiritual eye (of seers and poets); hence also to invent (z. B. sacrificial rites). *svapnān* to see dream-visions.
   <sub>attested</sub>
 
-**13)** — 13〉 mit und ohne ([16,10]) *sādhu* einsehen, die richtige Einsicht haben.
+**13)** — 13〉 mit und ohne ([16,10](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?16)) *sādhu* einsehen, die richtige Einsicht haben.
 
-- **RU:** — 13〉 с ([16,10]) *sādhu* и без него понимать, иметь правильное разумение.
-- **EN:** — 13) with and without ([16,10]) *sādhu* to perceive, to have right insight.
+- **RU:** — 13〉 с ([16,10](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?16)) *sādhu* и без него понимать, иметь правильное разумение.
+- **EN:** — 13) with and without ([16,10](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?16)) *sādhu* to perceive, to have right insight.
   <sub>attested</sub>
 
 **14)** — 14〉 sehen. so v. a. kennen.

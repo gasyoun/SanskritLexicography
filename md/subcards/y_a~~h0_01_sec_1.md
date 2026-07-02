@@ -59,12 +59,12 @@
   <sub>attested</sub>
 
 **caus-4)** — 4) *yāpitāyāḥ*
-[DAŚAK. 83,9] ([BENF. Chr. 194,4]) wohl fehlerhaft für *pāyitāyāḥ* (caus. von 1. *pā*).
+[DAŚAK. 83,9] ([BENF. Chr. 194,4](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?194)) wohl fehlerhaft für *pāyitāyāḥ* (caus. von 1. *pā*).
 
 - **RU:** — 4) *yāpitāyāḥ*
-[DAŚAK. 83,9] ([BENF. Chr. 194,4]) вероятно, ошибочно вместо *pāyitāyāḥ* (caus. от 1. *pā*).
+[DAŚAK. 83,9] ([BENF. Chr. 194,4](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?194)) вероятно, ошибочно вместо *pāyitāyāḥ* (caus. от 1. *pā*).
 - **EN:** — 4) *yāpitāyāḥ*
-[DAŚAK. 83,9] ([BENF. Chr. 194,4]) probably erroneous for *pāyitāyāḥ* (caus. of 1. *pā*).
+[DAŚAK. 83,9] ([BENF. Chr. 194,4](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?194)) probably erroneous for *pāyitāyāḥ* (caus. of 1. *pā*).
 — Vgl. *yāpaka* fgg.
   <sub>attested</sub>
 

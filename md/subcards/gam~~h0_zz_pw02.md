@@ -9,16 +9,16 @@
 - **EN:** — 1) to come together, meet, unite, come together at (Loc.); to come together with —, collide with (*saha, sārdham* or Instr. alone); to have sexual union with (Instr.); of stars, similarly v. a. to come into such a position that one star eclipses the other. *saṃgamaṃ parasparam* to enter into a connection with one another. *samāgata* come together, assembled, united — with (Instr.); collided with (Instr.); standing in conjunction with (Instr.).
   <sub>attested</sub>
 
-**2)** — 2〉 herbeikommen, kommen, kommen zu; mit Acc. oder ([179,25]).
+**2)** — 2〉 herbeikommen, kommen, kommen zu; mit Acc. oder ([179,25](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?179)).
 
-- **RU:** — 2) приходить, идти, приходить к; с Acc. или ([179,25]).
-- **EN:** — 2) to come up, come, come to; with Acc. or ([179,25]).
+- **RU:** — 2) приходить, идти, приходить к; с Acc. или ([179,25](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?179)).
+- **EN:** — 2) to come up, come, come to; with Acc. or ([179,25](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?179)).
   <sub>attested</sub>
 
-**3)** — 3〉 zurückkehren [110,12]. von (Abl.). [150,15].
+**3)** — 3〉 zurückkehren [110,12](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?110). von (Abl.). [150,15](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?150).
 
-- **RU:** — 3) возвращаться [110,12]. от (Abl.). [150,15].
-- **EN:** — 3) to return [110,12]; from (Abl.). [150,15].
+- **RU:** — 3) возвращаться [110,12](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?110). от (Abl.). [150,15](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?150).
+- **EN:** — 3) to return [110,12](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?110); from (Abl.). [150,15](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?150).
   <sub>attested</sub>
 
 **4)** — 4〉 stossen auf, finden; mit Acc.
@@ -49,18 +49,18 @@
   <sub>attested</sub>
 
 **ud-1)** — Mit *ud*
-— 1〉 in die Höhe gehen, aufgehen (von Gestirnen [314,4]), sich erheben, aufschiessen.
+— 1〉 in die Höhe gehen, aufgehen (von Gestirnen [314,4](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?314)), sich erheben, aufschiessen.
 
 - **RU:** — С *ud*
-— 1) подниматься, всходить (о светилах [314,4]), возноситься, вздыматься.
+— 1) подниматься, всходить (о светилах [314,4](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?314)), возноситься, вздыматься.
 - **EN:** — With *ud*
-— 1) to rise upward, rise (of heavenly bodies [314,4]), to lift oneself up, shoot up.
+— 1) to rise upward, rise (of heavenly bodies [314,4](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?314)), to lift oneself up, shoot up.
   <sub>attested</sub>
 
-**ud-2)** — 2〉 hervorkommen, -brechen, zum Vorschein kommen. *udgata* hervorgekommen, — aus, hervorkommend aus (Abl. oder im Comp. vorangehend) [Spr. 7795](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7795). zum Vorschein gekommen [Chr. 308,21].
+**ud-2)** — 2〉 hervorkommen, -brechen, zum Vorschein kommen. *udgata* hervorgekommen, — aus, hervorkommend aus (Abl. oder im Comp. vorangehend) [Spr. 7795](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7795). zum Vorschein gekommen [Chr. 308,21](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?308).
 
-- **RU:** — 2) появляться, пробиваться, показываться. *udgata* появившийся, — из, появляющийся из (Abl. или в Comp., предшествующем) [Spr. 7795](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7795). показавшийся [Chr. 308,21].
-- **EN:** — 2) to come forth, break forth, come into view. *udgata* come forth from —, coming forth from (Abl., or preceding in the Comp.) [Spr. 7795](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7795); come into view [Chr. 308,21].
+- **RU:** — 2) появляться, пробиваться, показываться. *udgata* появившийся, — из, появляющийся из (Abl. или в Comp., предшествующем) [Spr. 7795](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7795). показавшийся [Chr. 308,21](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?308).
+- **EN:** — 2) to come forth, break forth, come into view. *udgata* come forth from —, coming forth from (Abl., or preceding in the Comp.) [Spr. 7795](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7795); come into view [Chr. 308,21](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?308).
   <sub>attested</sub>
 
 **ud-3)** — 3〉 hinaus-, fortgehen, schwinden.
@@ -96,19 +96,19 @@
 - **EN:** — 2) to make come forth. *uroruhātpayāṃsi* to suck milk from the breast [Spr. 7774](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7774).
   <sub>attested</sub>
 
-**ud-des)** — Mit *apod* Desid. (*˚jigāṃsati*) sich zu entziehen suchen, mit Abl. [22,2].
+**ud-des)** — Mit *apod* Desid. (*˚jigāṃsati*) sich zu entziehen suchen, mit Abl. [22,2](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?22).
 
-- **RU:** — С *apod* Desid. (*˚jigāṃsati*) пытаться уклониться, с Abl. [22,2].
-- **EN:** — With *apod* Desid. (*˚jigāṃsati*) to seek to withdraw oneself, with Abl. [22,2].
+- **RU:** — С *apod* Desid. (*˚jigāṃsati*) пытаться уклониться, с Abl. [22,2](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?22).
+- **EN:** — With *apod* Desid. (*˚jigāṃsati*) to seek to withdraw oneself, with Abl. [22,2](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?22).
   <sub>attested</sub>
 
 **upa-1)** — Mit *abhyud*
-— 1〉 aufgehen (vom Monde) [314,7].
+— 1〉 aufgehen (vom Monde) [314,7](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?314).
 
 - **RU:** — С *abhyud*
-— 1) восходить (о луне) [314,7].
+— 1) восходить (о луне) [314,7](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?314).
 - **EN:** — With *abhyud*
-— 1) to rise (of the moon) [314,7].
+— 1) to rise (of the moon) [314,7](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?314).
   <sub>attested</sub>
 
 **upa-2)** — 2〉 hinaus und Jmd (Acc.) entgegen gehen.
@@ -284,10 +284,10 @@
 - **EN:** — 5) to attain, partake of something (Acc.). *abhyupagata* with act. Bed.
   <sub>attested</sub>
 
-**abhi-sam-6)** — 6〉 sich für Etwas erklären, zugestehen, zugeben, einräumen, einwilligen in (Acc.). [327,24].
+**abhi-sam-6)** — 6〉 sich für Etwas erklären, zugestehen, zugeben, einräumen, einwilligen in (Acc.). [327,24](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?327).
 
-- **RU:** — 6) высказываться за что-л., соглашаться, признавать, допускать, изъявлять согласие на (Acc.). [327,24].
-- **EN:** — 6) to declare oneself for something, admit, grant, concede, consent to (Acc.). [327,24].
+- **RU:** — 6) высказываться за что-л., соглашаться, признавать, допускать, изъявлять согласие на (Acc.). [327,24](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?327).
+- **EN:** — 6) to declare oneself for something, admit, grant, concede, consent to (Acc.). [327,24](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?327).
   <sub>attested</sub>
 
 **abhi-sam-caus)** — Caus. Jmd (Acc.) zur Einwilligung bewegen.
@@ -371,12 +371,12 @@
   <sub>attested</sub>
 
 **nis-1)** — Mit *nis*
-— 1〉 hinausgehen, — treten, hervorkommen, von Hause gehen, aufbrechen; das Woher im Abl., das Wohin im Acc. oder Loc. *nirgata* hinausgegangen, hinausgehend u. s. w.; das Wohin im Abl. oder im Comp. vorangehend ([183,31]). Oefters mit pleonastischem *bahis*.
+— 1〉 hinausgehen, — treten, hervorkommen, von Hause gehen, aufbrechen; das Woher im Abl., das Wohin im Acc. oder Loc. *nirgata* hinausgegangen, hinausgehend u. s. w.; das Wohin im Abl. oder im Comp. vorangehend ([183,31](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?183)). Oefters mit pleonastischem *bahis*.
 
 - **RU:** — С *nis*
-— 1) выходить, — выступать, появляться, уходить из дома, отправляться; откуда — в Abl., куда — в Acc. или Loc. *nirgata* вышедший, выходящий u. s. w.; куда — в Abl. или в Comp., предшествующем ([183,31]). Нередко с плеонастическим *bahis*.
+— 1) выходить, — выступать, появляться, уходить из дома, отправляться; откуда — в Abl., куда — в Acc. или Loc. *nirgata* вышедший, выходящий u. s. w.; куда — в Abl. или в Comp., предшествующем ([183,31](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?183)). Нередко с плеонастическим *bahis*.
 - **EN:** — With *nis*
-— 1) to go out —, step out, come forth, leave the house, set out; the whence in the Abl., the whither in the Acc. or Loc. *nirgata* gone out, going out u. s. w.; the whither in the Abl. or preceding in the Comp. ([183,31]). Often with pleonastic *bahis*.
+— 1) to go out —, step out, come forth, leave the house, set out; the whence in the Abl., the whither in the Acc. or Loc. *nirgata* gone out, going out u. s. w.; the whither in the Abl. or preceding in the Comp. ([183,31](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?183)). Often with pleonastic *bahis*.
   <sub>attested</sub>
 
 **nis-2)** — 2〉 hervortreten, -brechen, zum Vorschein kommen.
@@ -422,12 +422,12 @@
   <sub>attested</sub>
 
 **vinis-1)** — Mit *vinis*
-— 1〉 hinausgehen, -treten, hervorkommen, aus dem Hause gehen, fortgehen, aufbrechen; das Woher im Abl., das Wohin im Acc. *vinirgata* hinausgegangen, herauskommend, -tretend, hervor-. [107,4].
+— 1〉 hinausgehen, -treten, hervorkommen, aus dem Hause gehen, fortgehen, aufbrechen; das Woher im Abl., das Wohin im Acc. *vinirgata* hinausgegangen, herauskommend, -tretend, hervor-. [107,4](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?107).
 
 - **RU:** — С *vinis*
-— 1) выходить, -выступать, появляться, уходить из дома, уходить, отправляться; откуда — в Abl., куда — в Acc. *vinirgata* вышедший, выходящий, выступающий, появляющийся. [107,4].
+— 1) выходить, -выступать, появляться, уходить из дома, уходить, отправляться; откуда — в Abl., куда — в Acc. *vinirgata* вышедший, выходящий, выступающий, появляющийся. [107,4](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?107).
 - **EN:** — With *vinis*
-— 1) to go out, step out, come forth, leave the house, go away, set out; the whence in the Abl., the whither in the Acc. *vinirgata* gone out, coming out, stepping out, forth-. [107,4].
+— 1) to go out, step out, come forth, leave the house, go away, set out; the whence in the Abl., the whither in the Acc. *vinirgata* gone out, coming out, stepping out, forth-. [107,4](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?107).
   <sub>attested</sub>
 
 **vinis-2)** — 2〉 sich entfernen (von Sternen), weichen.
@@ -483,12 +483,12 @@
   <sub>attested</sub>
 
 **pari-1)** — Mit *pari*
-— 1〉 umhergehen, umwandeln, umschreiten, umkreisen, durchwandern. *˚gata* durchwandert. [89,19]
+— 1〉 umhergehen, umwandeln, umschreiten, umkreisen, durchwandern. *˚gata* durchwandert. [89,19](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?89)
 
 - **RU:** — С *pari*
-— 1) обходить кругом, обращаться вокруг, обходить, окружать, странствовать по. *˚gata* исхоженный. [89,19]
+— 1) обходить кругом, обращаться вокруг, обходить, окружать, странствовать по. *˚gata* исхоженный. [89,19](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?89)
 - **EN:** — With *pari*
-— 1) to go about, walk around, circumambulate, circle, wander through. *˚gata* wandered through. [89,19]
+— 1) to go about, walk around, circumambulate, circle, wander through. *˚gata* wandered through. [89,19](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?89)
   <sub>attested</sub>
 
 **pari-2)** — 2〉 umschliessen, umgeben. *˚gata* am Ende eines Comp. umschlossen —, umgeben von.

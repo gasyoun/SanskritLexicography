@@ -199,7 +199,7 @@
 [ŚĀK. 4,11.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?4,11) *nisvanaḥ — gītaḥ*
 [R. 3,15,19.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,15,19) *gāthā vāyugītāḥ*
 [M. 9,42.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,42) *gītaḥ śloko mahātmanā*
-[MBH.] in [BENF. Chr. 22,24.] [VARĀH. BṚH. S. 47,23.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?47,23) *caturbhiryaḥ padairgīto maharṣiṇā — śokaḥ*
+[MBH.] in [BENF. Chr. 22,24.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?22) [VARĀH. BṚH. S. 47,23.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?47,23) *caturbhiryaḥ padairgīto maharṣiṇā — śokaḥ*
 [R. 1,2,43.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,2,43)
 [ŚĀK. 47.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?47)
 
@@ -210,7 +210,7 @@
 [ŚĀK. 4,11.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?4,11) *nisvanaḥ — gītaḥ*
 [R. 3,15,19.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,15,19) *gāthā vāyugītāḥ*
 [M. 9,42.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,42) *gītaḥ śloko mahātmanā*
-[MBH.] в [BENF. Chr. 22,24.] [VARĀH. BṚH. S. 47,23.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?47,23) *caturbhiryaḥ padairgīto maharṣiṇā — śokaḥ*
+[MBH.] в [BENF. Chr. 22,24.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?22) [VARĀH. BṚH. S. 47,23.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?47,23) *caturbhiryaḥ padairgīto maharṣiṇā — śokaḥ*
 [R. 1,2,43.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,2,43)
 [ŚĀK. 47.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?47)
 - **EN:** 1) _adj._ sung, proclaimed in verse, celebrated in song
@@ -220,7 +220,7 @@
 [ŚĀK. 4,11.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?4,11) *nisvanaḥ — gītaḥ*
 [R. 3,15,19.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,15,19) *gāthā vāyugītāḥ*
 [M. 9,42.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,42) *gītaḥ śloko mahātmanā*
-[MBH.] in [BENF. Chr. 22,24.] [VARĀH. BṚH. S. 47,23.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?47,23) *caturbhiryaḥ padairgīto maharṣiṇā — śokaḥ*
+[MBH.] in [BENF. Chr. 22,24.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?22) [VARĀH. BṚH. S. 47,23.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?47,23) *caturbhiryaḥ padairgīto maharṣiṇā — śokaḥ*
 [R. 1,2,43.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,2,43)
 [ŚĀK. 47.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?47)
   <sub>attested</sub>

@@ -166,7 +166,7 @@
 [MBH. 4,695.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.695) und [KĀM. NĪTIS. 5,75] (die [ed. Bomb.] des
 [MBH.] und die Scholien zu [KĀM. NĪTIS.]
 haben die richtige Lesart), für *saṃmita* (so die [ed. Calc.] und Bomb.)
-[MBH.] in [BENF. Chr. 32,5.] Vgl. *saṃmati, saṃmāna* . — caus.
+[MBH.] in [BENF. Chr. 32,5.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?32) Vgl. *saṃmati, saṃmāna* . — caus.
 
 - **RU:** — 6) уполномочить кого-либо (acc.), дать разрешение на что-либо: *vikrīṇīte parasya svaṃ yo 'svāmī svāmyasaṃmataḥ*
 [M. 8,197.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,197) Inschr. in
@@ -174,14 +174,14 @@ haben die richtige Lesart), für *saṃmita* (so die [ed. Calc.] und Bomb.)
 [MBH. 4,695.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.695) und [KĀM. NĪTIS. 5,75] (die [ed. Bomb.] des
 [MBH.] und die Scholien zu [KĀM. NĪTIS.]
 haben die richtige Lesart), für *saṃmita* (so die [ed. Calc.] und Bomb.)
-[MBH.] in [BENF. Chr. 32,5.] Vgl. *saṃmati, saṃmāna* . — caus.
+[MBH.] in [BENF. Chr. 32,5.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?32) Vgl. *saṃmati, saṃmāna* . — caus.
 - **EN:** — 6) to authorize, to empower someone (acc.), to give permission for something: *vikrīṇīte parasya svaṃ yo 'svāmī svāmyasaṃmataḥ*
 [M. 8,197.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,197) Inschr. in
 [Journ. of the Am. Or. S. 7,29,2. 33,7.] — *saṃmata* erroneous for *saṃgata*
 [MBH. 4,695.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.695) and [KĀM. NĪTIS. 5,75] (the [ed. Bomb.] of
 [MBH.] and the scholia to [KĀM. NĪTIS.]
 have the correct reading), for *saṃmita* (thus the [ed. Calc.] and Bomb.)
-[MBH.] in [BENF. Chr. 32,5.] Vgl. *saṃmati, saṃmāna* . — caus.
+[MBH.] in [BENF. Chr. 32,5.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?32) Vgl. *saṃmati, saṃmāna* . — caus.
   <sub>attested</sub>
 
 **Caus.1)** 1) Jmd ehren, Jmd Ehre erweisen: *sādhūnsaṃmānayedrājā viparītāṃśca ghātayet*

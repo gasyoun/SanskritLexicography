@@ -129,12 +129,12 @@ _PWG article — 97 sub-card(s), 517 sense(s) · RU 410/517 · EN 447/517_
 [MBH. 1,5990.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5990) *dhruvaṃ tu bharataṃ rāmaḥ — deśāntaraṃ ca nayitā dehāntaramathāpi vā*
 [R. GORR. 2,7,23.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,7,23) *yantā hareḥ — ūrdhvaṃ rathaṃ harisahasrayujaṃ nināya*
 [RAGH. 12,103.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?12,103) *taṃ pravahaṇena nītvā puram*
-[DAŚAK.] in [BENF. Chr. 183,4.] *puradvāraṃ śakaṭena nayet (yaṣṭim)*
+[DAŚAK.] in [BENF. Chr. 183,4.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?183) *puradvāraṃ śakaṭena nayet (yaṣṭim)*
 [VARĀH. BṚH. S. 42 (43),21.] *ātmānaṃ śanaiḥ sūkṣmaṃ (bhagavato rūpaṃ) dhiyā nayet*
 [BHĀG. P. 5,26,39.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,26,39) *tam — neṣyate yamasādanam*
 [MBH. 1,1758.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1758)
 [BHĀG. P. 7,8,6.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,8,6) [2,2,20.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,2,20) *tvāṃ nayai tvatpriyatamam*
-[DAŚAK.] in [BENF. Chr. 187,3.]
+[DAŚAK.] in [BENF. Chr. 187,3.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?187)
 — b) im dat.: *nīyatāṃ paralokāya sādhvayaṃ kulapāṃsanaḥ*
 [MBH. 2,2480](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2480) = [7,6310.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.6310)
 
@@ -180,12 +180,12 @@ a) in the acc.: *grāmamajāṃ nayati*
 [MBH. 1,5990.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5990) *dhruvaṃ tu bharataṃ rāmaḥ — deśāntaraṃ ca nayitā dehāntaramathāpi vā*
 [R. GORR. 2,7,23.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,7,23) *yantā hareḥ — ūrdhvaṃ rathaṃ harisahasrayujaṃ nināya*
 [RAGH. 12,103.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?12,103) *taṃ pravahaṇena nītvā puram*
-[DAŚAK.] in [BENF. Chr. 183,4.] *puradvāraṃ śakaṭena nayet (yaṣṭim)*
+[DAŚAK.] in [BENF. Chr. 183,4.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?183) *puradvāraṃ śakaṭena nayet (yaṣṭim)*
 [VARĀH. BṚH. S. 42 (43),21.] *ātmānaṃ śanaiḥ sūkṣmaṃ (bhagavato rūpaṃ) dhiyā nayet*
 [BHĀG. P. 5,26,39.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,26,39) *tam — neṣyate yamasādanam*
 [MBH. 1,1758.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1758)
 [BHĀG. P. 7,8,6.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,8,6) [2,2,20.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,2,20) *tvāṃ nayai tvatpriyatamam*
-[DAŚAK.] in [BENF. Chr. 187,3.]
+[DAŚAK.] in [BENF. Chr. 187,3.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?187)
 — b) in the dat.: *nīyatāṃ paralokāya sādhvayaṃ kulapāṃsanaḥ*
 [MBH. 2,2480](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2480) = [7,6310.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.6310)
 
@@ -326,12 +326,12 @@ a) in the acc.: *grāmamajāṃ nayati*
 [MBH. 1,5990.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5990) *dhruvaṃ tu bharataṃ rāmaḥ — deśāntaraṃ ca nayitā dehāntaramathāpi vā*
 [R. GORR. 2,7,23.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,7,23) *yantā hareḥ — ūrdhvaṃ rathaṃ harisahasrayujaṃ nināya*
 [RAGH. 12,103.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?12,103) *taṃ pravahaṇena nītvā puram*
-[DAŚAK.] в [BENF. Chr. 183,4.] *puradvāraṃ śakaṭena nayet (yaṣṭim)*
+[DAŚAK.] в [BENF. Chr. 183,4.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?183) *puradvāraṃ śakaṭena nayet (yaṣṭim)*
 [VARĀH. BṚH. S. 42 (43),21.] *ātmānaṃ śanaiḥ sūkṣmaṃ (bhagavato rūpaṃ) dhiyā nayet*
 [BHĀG. P. 5,26,39.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,26,39) *tam — neṣyate yamasādanam*
 [MBH. 1,1758.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1758)
 [BHĀG. P. 7,8,6.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,8,6) [2,2,20.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,2,20) *tvāṃ nayai tvatpriyatamam*
-[DAŚAK.] в [BENF. Chr. 187,3.]
+[DAŚAK.] в [BENF. Chr. 187,3.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?187)
 — b) im dat.: *nīyatāṃ paralokāya sādhvayaṃ kulapāṃsanaḥ*
 [MBH. 2,2480](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2480) = [7,6310.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.6310)
 
@@ -378,12 +378,12 @@ a) in the acc.: *grāmamajāṃ nayati*
 [MBH. 1,5990.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5990) *dhruvaṃ tu bharataṃ rāmaḥ — deśāntaraṃ ca nayitā dehāntaramathāpi vā*
 [R. GORR. 2,7,23.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,7,23) *yantā hareḥ — ūrdhvaṃ rathaṃ harisahasrayujaṃ nināya*
 [RAGH. 12,103.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?12,103) *taṃ pravahaṇena nītvā puram*
-[DAŚAK.] в [BENF. Chr. 183,4.] *puradvāraṃ śakaṭena nayet (yaṣṭim)*
+[DAŚAK.] в [BENF. Chr. 183,4.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?183) *puradvāraṃ śakaṭena nayet (yaṣṭim)*
 [VARĀH. BṚH. S. 42 (43),21.] *ātmānaṃ śanaiḥ sūkṣmaṃ (bhagavato rūpaṃ) dhiyā nayet*
 [BHĀG. P. 5,26,39.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,26,39) *tam — neṣyate yamasādanam*
 [MBH. 1,1758.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1758)
 [BHĀG. P. 7,8,6.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,8,6) [2,2,20.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,2,20) *tvāṃ nayai tvatpriyatamam*
-[DAŚAK.] в [BENF. Chr. 187,3.]
+[DAŚAK.] в [BENF. Chr. 187,3.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?187)
 — b) в dat.: *nīyatāṃ paralokāya sādhvayaṃ kulapāṃsanaḥ*
 [MBH. 2,2480](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2480) = [7,6310.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.6310)
 
@@ -569,14 +569,14 @@ The meaning to bear, endure (Bed.) the word appears to have in the following pas
 **9_spend_time)** — 9) hinbringen, zubringen, verbringen (die Zeit): *cāndrāyaṇairnayetkālam*
 [YĀJÑ. 3,50.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?3,50) *rātrim*
 [312.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?3,312) [MEGH. 2.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?2) [39.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?39) [87.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?87) [ŚĀK. 193.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?193) [RAGH. 1,33.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?1,33) [95.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?1,95) [Spr. 229.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?229) [374.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?374) [378.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?378) [592.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?592) [594.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?594) [KATHĀS. 4,42.](https://sanskrit-lexicon-scans.github.io/kss/index.html?4,42) [5,81.](https://sanskrit-lexicon-scans.github.io/kss/index.html?5,81) [VID. 123.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?123) [275.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?275) [RĀJA-TAR. 4,556.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,556) [PAÑCAT. 43,2.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?43,2) [49,5.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?49,5) *sa ca vakabālakānajātapakṣānapi sadaiva bhakṣayankālaṃ nayati*
-[98,10.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?98,10) [HIT. 37,20.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?37,20) [BHĀG. P. 2,3,17.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,3,17) [4,8,74.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,8,74) [12,14.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,12,14) [6,19,20.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,19,20) [PRAB. 68,15.] [DAŚAK.] in [BENF. Chr. 184,4. 200,16.] [BHAṬṬ. 7,13.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?7,13) [8,26.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?8,26) med. : *yauvanaṃ ye nayante*
+[98,10.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?98,10) [HIT. 37,20.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?37,20) [BHĀG. P. 2,3,17.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,3,17) [4,8,74.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,8,74) [12,14.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,12,14) [6,19,20.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,19,20) [PRAB. 68,15.] [DAŚAK.] in [BENF. Chr. 184,4. 200,16.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?184) [BHAṬṬ. 7,13.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?7,13) [8,26.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?8,26) med. : *yauvanaṃ ye nayante*
 [BHARTṚ. Suppl. 25.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app3?25) *kālaṃ nayamānā*
 [PAÑCAT. 60,25.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?60,25) *sa evaṃ svāntaraṃ ninye yugānāmekasaptatim*
 [BHĀG. P. 3,22,36.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,22,36)
 - **EN:** 9) to pass, spend (time): *cāndrāyaṇairnayetkālam*
 [YĀJÑ. 3,50.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?3,50) *rātrim*
 [312.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?3,312) [MEGH. 2.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?2) [39.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?39) [87.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?87) [ŚĀK. 193.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?193) [RAGH. 1,33.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?1,33) [95.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?1,95) [Spr. 229.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?229) [374.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?374) [378.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?378) [592.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?592) [594.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?594) [KATHĀS. 4,42.](https://sanskrit-lexicon-scans.github.io/kss/index.html?4,42) [5,81.](https://sanskrit-lexicon-scans.github.io/kss/index.html?5,81) [VID. 123.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?123) [275.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?275) [RĀJA-TAR. 4,556.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,556) [PAÑCAT. 43,2.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?43,2) [49,5.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?49,5) *sa ca vakabālakānajātapakṣānapi sadaiva bhakṣayankālaṃ nayati*
-[98,10.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?98,10) [HIT. 37,20.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?37,20) [BHĀG. P. 2,3,17.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,3,17) [4,8,74.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,8,74) [12,14.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,12,14) [6,19,20.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,19,20) [PRAB. 68,15.] [DAŚAK.] in [BENF. Chr. 184,4. 200,16.] [BHAṬṬ. 7,13.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?7,13) [8,26.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?8,26) med.: *yauvanaṃ ye nayante*
+[98,10.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?98,10) [HIT. 37,20.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?37,20) [BHĀG. P. 2,3,17.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,3,17) [4,8,74.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,8,74) [12,14.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,12,14) [6,19,20.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,19,20) [PRAB. 68,15.] [DAŚAK.] in [BENF. Chr. 184,4. 200,16.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?184) [BHAṬṬ. 7,13.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?7,13) [8,26.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?8,26) med.: *yauvanaṃ ye nayante*
 [BHARTṚ. Suppl. 25.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app3?25) *kālaṃ nayamānā*
 [PAÑCAT. 60,25.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?60,25) *sa evaṃ svāntaraṃ ninye yugānāmekasaptatim*
 [BHĀG. P. 3,22,36.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,22,36)
@@ -620,7 +620,7 @@ Schol. — In the passage: *na śaktastāni (asurāṇāṃ trīṇi purāṇi) 
 **9)** — 9) hinbringen, zubringen, verbringen (die Zeit): *cāndrāyaṇairnayetkālam*
 [YĀJÑ. 3,50.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?3,50) *rātrim*
 [312.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?3,312) [MEGH. 2.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?2) [39.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?39) [87.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?87) [ŚĀK. 193.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?193) [RAGH. 1,33.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?1,33) [95.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?1,95) [Spr. 229.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?229) [374.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?374) [378.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?378) [592.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?592) [594.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?594) [KATHĀS. 4,42.](https://sanskrit-lexicon-scans.github.io/kss/index.html?4,42) [5,81.](https://sanskrit-lexicon-scans.github.io/kss/index.html?5,81) [VID. 123.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?123) [275.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?275) [RĀJA-TAR. 4,556.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,556) [PAÑCAT. 43,2.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?43,2) [49,5.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?49,5) *sa ca vakabālakānajātapakṣānapi sadaiva bhakṣayankālaṃ nayati*
-[98,10.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?98,10) [HIT. 37,20.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?37,20) [BHĀG. P. 2,3,17.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,3,17) [4,8,74.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,8,74) [12,14.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,12,14) [6,19,20.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,19,20) [PRAB. 68,15.] [DAŚAK.] в [BENF. Chr. 184,4. 200,16.] [BHAṬṬ. 7,13.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?7,13) [8,26.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?8,26) med. : *yauvanaṃ ye nayante*
+[98,10.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?98,10) [HIT. 37,20.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?37,20) [BHĀG. P. 2,3,17.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,3,17) [4,8,74.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,8,74) [12,14.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,12,14) [6,19,20.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,19,20) [PRAB. 68,15.] [DAŚAK.] в [BENF. Chr. 184,4. 200,16.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?184) [BHAṬṬ. 7,13.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?7,13) [8,26.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?8,26) med. : *yauvanaṃ ye nayante*
 [BHARTṚ. Suppl. 25.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app3?25) *kālaṃ nayamānā*
 [PAÑCAT. 60,25.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?60,25) *sa evaṃ svāntaraṃ ninye yugānāmekasaptatim*
 [BHĀG. P. 3,22,36.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,22,36)
@@ -628,7 +628,7 @@ Schol. — In the passage: *na śaktastāni (asurāṇāṃ trīṇi purāṇi) 
 - **RU:** — 9) проводить, проживать, коротать (время): *cāndrāyaṇairnayetkālam*
 [YĀJÑ. 3,50.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?3,50) *rātrim*
 [312.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?3,312) [MEGH. 2.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?2) [39.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?39) [87.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?87) [ŚĀK. 193.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?193) [RAGH. 1,33.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?1,33) [95.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?1,95) [Spr. 229.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?229) [374.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?374) [378.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?378) [592.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?592) [594.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?594) [KATHĀS. 4,42.](https://sanskrit-lexicon-scans.github.io/kss/index.html?4,42) [5,81.](https://sanskrit-lexicon-scans.github.io/kss/index.html?5,81) [VID. 123.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?123) [275.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?275) [RĀJA-TAR. 4,556.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,556) [PAÑCAT. 43,2.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?43,2) [49,5.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?49,5) *sa ca vakabālakānajātapakṣānapi sadaiva bhakṣayankālaṃ nayati*
-[98,10.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?98,10) [HIT. 37,20.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?37,20) [BHĀG. P. 2,3,17.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,3,17) [4,8,74.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,8,74) [12,14.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,12,14) [6,19,20.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,19,20) [PRAB. 68,15.] [DAŚAK.] в [BENF. Chr. 184,4. 200,16.] [BHAṬṬ. 7,13.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?7,13) [8,26.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?8,26) med. : *yauvanaṃ ye nayante*
+[98,10.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?98,10) [HIT. 37,20.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?37,20) [BHĀG. P. 2,3,17.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,3,17) [4,8,74.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,8,74) [12,14.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,12,14) [6,19,20.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,19,20) [PRAB. 68,15.] [DAŚAK.] в [BENF. Chr. 184,4. 200,16.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?184) [BHAṬṬ. 7,13.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?7,13) [8,26.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?8,26) med. : *yauvanaṃ ye nayante*
 [BHARTṚ. Suppl. 25.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app3?25) *kālaṃ nayamānā*
 [PAÑCAT. 60,25.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?60,25) *sa evaṃ svāntaraṃ ninye yugānāmekasaptatim*
 [BHĀG. P. 3,22,36.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,22,36)
@@ -942,7 +942,7 @@ Schol. — В месте: *na śaktastāni (asurāṇāṃ trīṇi purāṇi) m
 [RAGH. 5,54.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?5,54) [19,38.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?19,38) [43.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?19,43)
 [KATHĀS. 7,47.](https://sanskrit-lexicon-scans.github.io/kss/index.html?7,47)
 [BHĀG. P. 3,14,15.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,14,15) [4,7,1.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,7,1) [14,29.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,14,29) [6,6,1.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,6,1)
-[ŚUK. in LA. 45,8.] [PRAB. 24,3.] [99,1.] [DAŚAK.] in [BENF. Chr. 192,17.] [BHAṬṬ. 5,46.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?5,46) [6,137.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?6,137) *śāpāntāyānunītaḥ* gebeten um
+[ŚUK. in LA. 45,8.] [PRAB. 24,3.] [99,1.] [DAŚAK.] in [BENF. Chr. 192,17.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?192) [BHAṬṬ. 5,46.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?5,46) [6,137.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?6,137) *śāpāntāyānunītaḥ* gebeten um
 [R. 6,82,165.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,82,165) *saṃrambharukṣamiva sundari yadyadāsīttvatsaṃgamena mama tattadivānunītam* ausgesöhnt
 [VIKR. 61.](https://sanskrit-lexicon-scans.github.io/vikramor/app1?61) med.: *anuninye 'tha śanakairvīro 'nunayakovidaḥ*
 [BHĀG. P. 4,26,20.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,26,20) mit dem gen. oder dat. der Person: *na tena te 'nunayāmi*
@@ -962,7 +962,7 @@ Schol. — В месте: *na śaktastāni (asurāṇāṃ trīṇi purāṇi) m
 [RAGH. 5,54.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?5,54) [19,38.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?19,38) [43.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?19,43)
 [KATHĀS. 7,47.](https://sanskrit-lexicon-scans.github.io/kss/index.html?7,47)
 [BHĀG. P. 3,14,15.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,14,15) [4,7,1.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,7,1) [14,29.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,14,29) [6,6,1.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,6,1)
-[ŚUK. in LA. 45,8.] [PRAB. 24,3.] [99,1.] [DAŚAK.] in [BENF. Chr. 192,17.] [BHAṬṬ. 5,46.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?5,46) [6,137.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?6,137) *śāpāntāyānunītaḥ* с просьбой о
+[ŚUK. in LA. 45,8.] [PRAB. 24,3.] [99,1.] [DAŚAK.] in [BENF. Chr. 192,17.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?192) [BHAṬṬ. 5,46.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?5,46) [6,137.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?6,137) *śāpāntāyānunītaḥ* с просьбой о
 [R. 6,82,165.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,82,165) *saṃrambharukṣamiva sundari yadyadāsīttvatsaṃgamena mama tattadivānunītam* умиротворённый
 [VIKR. 61.](https://sanskrit-lexicon-scans.github.io/vikramor/app1?61) med.: *anuninye 'tha śanakairvīro 'nunayakovidaḥ*
 [BHĀG. P. 4,26,20.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,26,20) mit dem gen. oder dat. der Person: *na tena te 'nunayāmi*
@@ -981,7 +981,7 @@ Schol. — В месте: *na śaktastāni (asurāṇāṃ trīṇi purāṇi) m
 [RAGH. 5,54.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?5,54) [19,38.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?19,38) [43.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?19,43)
 [KATHĀS. 7,47.](https://sanskrit-lexicon-scans.github.io/kss/index.html?7,47)
 [BHĀG. P. 3,14,15.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,14,15) [4,7,1.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,7,1) [14,29.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,14,29) [6,6,1.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,6,1)
-[ŚUK. in LA. 45,8.] [PRAB. 24,3.] [99,1.] [DAŚAK.] in [BENF. Chr. 192,17.] [BHAṬṬ. 5,46.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?5,46) [6,137.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?6,137) *śāpāntāyānunītaḥ* entreated for
+[ŚUK. in LA. 45,8.] [PRAB. 24,3.] [99,1.] [DAŚAK.] in [BENF. Chr. 192,17.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?192) [BHAṬṬ. 5,46.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?5,46) [6,137.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?6,137) *śāpāntāyānunītaḥ* entreated for
 [R. 6,82,165.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,82,165) *saṃrambharukṣamiva sundari yadyadāsīttvatsaṃgamena mama tattadivānunītam* reconciled
 [VIKR. 61.](https://sanskrit-lexicon-scans.github.io/vikramor/app1?61) med.: *anuninye 'tha śanakairvīro 'nunayakovidaḥ*
 [BHĀG. P. 4,26,20.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,26,20) with the gen. or dat. of the person: *na tena te 'nunayāmi*
@@ -1580,7 +1580,7 @@ Schol. on [BHAṬṬ.] at [GOLDST.] u. *abhinīta*; its easy understanding
 [KĀTY. ŚR. 9,3,21.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?9,3,21) *uccheṣaṇaṃ valmīkavapāyāmavanayet*
 [TBR. 1,8,6,2.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?1,8,6,2) *manthe saṃpātamavanayet*
 [CHĀND. UP. 5,2,4.] — Diese Verbindung ist später nicht zu belegen, da *nāvanīta*
-[MBH. 5,7319](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7319) = [BENF. Chr. 43,29] _adj._ von *navanīta* ist.
+[MBH. 5,7319](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7319) = [BENF. Chr. 43,29](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?43) _adj._ von *navanīta* ist.
 — Vgl. *avanaya, ˚nayana, ˚nāya* .
 
 - **RU:** — 2) отливать, лить вниз, поливать сверху
@@ -1591,7 +1591,7 @@ Schol. on [BHAṬṬ.] at [GOLDST.] u. *abhinīta*; its easy understanding
 [KĀTY. ŚR. 9,3,21.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?9,3,21) *uccheṣaṇaṃ valmīkavapāyāmavanayet*
 [TBR. 1,8,6,2.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?1,8,6,2) *manthe saṃpātamavanayet*
 [CHĀND. UP. 5,2,4.] — Это словосочетание в более позднее время не засвидетельствовано, так как *nāvanīta*
-[MBH. 5,7319](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7319) = [BENF. Chr. 43,29] _adj._ от *navanīta* .
+[MBH. 5,7319](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7319) = [BENF. Chr. 43,29](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?43) _adj._ от *navanīta* .
 — Vgl. *avanaya, ˚nayana, ˚nāya* .
 - **EN:** — 2) to pour off, to pour down, to pour over
 [AV. 7,94,1.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av07.094.html#av07.094.01)
@@ -1601,7 +1601,7 @@ Schol. on [BHAṬṬ.] at [GOLDST.] u. *abhinīta*; its easy understanding
 [KĀTY. ŚR. 9,3,21.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?9,3,21) *uccheṣaṇaṃ valmīkavapāyāmavanayet*
 [TBR. 1,8,6,2.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?1,8,6,2) *manthe saṃpātamavanayet*
 [CHĀND. UP. 5,2,4.] — This usage cannot be attested in later texts, since *nāvanīta*
-[MBH. 5,7319](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7319) = [BENF. Chr. 43,29] _adj._ from *navanīta* .
+[MBH. 5,7319](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7319) = [BENF. Chr. 43,29](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?43) _adj._ from *navanīta* .
 — Vgl. *avanaya, ˚nayana, ˚nāya* .
   <sub>attested</sub>
 
@@ -1728,7 +1728,7 @@ Schol. on [BHAṬṬ.] at [GOLDST.] u. *abhinīta*; its easy understanding
 [MBH. 3,2811.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2811)
 [R. 1,40,9.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,40,9) [2,82,29](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,82,29) [3,55,52.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,55,52) *ānayiṣyāmi*
 [VET. in LA. 37,10.] — *ānīye*
-[DAŚAK. 85,11] ([BENF. Chr. 195,11]) fehlerhaft für *anīye* .
+[DAŚAK. 85,11] ([BENF. Chr. 195,11](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?195)) fehlerhaft für *anīye* .
 
 - **RU:** — *ā*
  1) привести, — вести, — принести, — нести, — принести, пригласить: *dūrādindramanayannā sutena*
@@ -1776,7 +1776,7 @@ Schol. on [BHAṬṬ.] at [GOLDST.] u. *abhinīta*; its easy understanding
 [MBH. 3,2811.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2811)
 [R. 1,40,9.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,40,9) [2,82,29](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,82,29) [3,55,52.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,55,52) *ānayiṣyāmi*
 [VET. in LA. 37,10.] — *ānīye*
-[DAŚAK. 85,11] ([BENF. Chr. 195,11]) fehlerhaft für *anīye* .
+[DAŚAK. 85,11] ([BENF. Chr. 195,11](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?195)) fehlerhaft für *anīye* .
 - **EN:** — *ā*
  1) to lead, conduct, bring, carry, fetch hither: *dūrādindramanayannā sutena*
 [ṚV. 7,33,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.033.html#rv07.033.02) [10,109,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.109.html#rv10.109.02) *agnim*
@@ -1823,7 +1823,7 @@ Schol. on [BHAṬṬ.] at [GOLDST.] u. *abhinīta*; its easy understanding
 [MBH. 3,2811.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2811)
 [R. 1,40,9.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,40,9) [2,82,29](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,82,29) [3,55,52.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,55,52) *ānayiṣyāmi*
 [VET. in LA. 37,10.] — *ānīye*
-[DAŚAK. 85,11] ([BENF. Chr. 195,11]) erroneously for *anīye* .
+[DAŚAK. 85,11] ([BENF. Chr. 195,11](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?195)) erroneously for *anīye* .
   <sub>attested</sub>
 
 **2)** — 2) eingiessen, einmengen: *harirānītaḥ puruvāro apsu*
@@ -2602,7 +2602,7 @@ Schol. to [GĪT. 1,39.](https://sanskrit-lexicon-scans.github.io/gitagov/app1?1,
 [1,7366.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7366) [RĀJA-TAR. 4,353.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,353) [6,6.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?6,6) *upalabdhamupalakṣaṇaṃ yena tasyāḥ kopanāyāḥ sarasamunnīyate mārgaḥ*
 [VIKR. 57,11.](https://sanskrit-lexicon-scans.github.io/vikramor/app2?57,11) *prakṛtipratyayādyarthaiḥ saṃkīrṇe liṅgamunnayet*
 [AK. 3,3,1.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,3,1) *sā tu tāvatonnītamadabhiprāyā*
-[DAŚAK.] in [BENF. Chr. 200,4.] *ubhayorbhāvamunnīya*
+[DAŚAK.] in [BENF. Chr. 200,4.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?200) *ubhayorbhāvamunnīya*
 [SĀH. D. 37,14.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?37,14) *iti pratiśabdādunnīyate*
 [KULL.] zu [M. 1,1](https://sanskrit-lexicon-scans.github.io/manu/index.html?1,1) (S. 5, Z. 4). *prāḍvivāko vakṣyamāṇena śapathena satyamunnayet* ders. zu [M. 8,109.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,109)
 [252.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,252)
@@ -2612,7 +2612,7 @@ Schol. to [GĪT. 1,39.](https://sanskrit-lexicon-scans.github.io/gitagov/app1?1,
 [1,7366.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7366) [RĀJA-TAR. 4,353.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,353) [6,6.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?6,6) *upalabdhamupalakṣaṇaṃ yena tasyāḥ kopanāyāḥ sarasamunnīyate mārgaḥ*
 [VIKR. 57,11.](https://sanskrit-lexicon-scans.github.io/vikramor/app2?57,11) *prakṛtipratyayādyarthaiḥ saṃkīrṇe liṅgamunnayet*
 [AK. 3,3,1.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,3,1) *sā tu tāvatonnītamadabhiprāyā*
-[DAŚAK.] в [BENF. Chr. 200,4.] *ubhayorbhāvamunnīya*
+[DAŚAK.] в [BENF. Chr. 200,4.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?200) *ubhayorbhāvamunnīya*
 [SĀH. D. 37,14.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?37,14) *iti pratiśabdādunnīyate*
 [KULL.] к [M. 1,1](https://sanskrit-lexicon-scans.github.io/manu/index.html?1,1) (S. 5, Z. 4). *prāḍvivāko vakṣyamāṇena śapathena satyamunnayet* ders. к [M. 8,109.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,109)
 [252.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,252)
@@ -2621,7 +2621,7 @@ Schol. to [GĪT. 1,39.](https://sanskrit-lexicon-scans.github.io/gitagov/app1?1,
 [1,7366.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7366) [RĀJA-TAR. 4,353.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,353) [6,6.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?6,6) *upalabdhamupalakṣaṇaṃ yena tasyāḥ kopanāyāḥ sarasamunnīyate mārgaḥ*
 [VIKR. 57,11.](https://sanskrit-lexicon-scans.github.io/vikramor/app2?57,11) *prakṛtipratyayādyarthaiḥ saṃkīrṇe liṅgamunnayet*
 [AK. 3,3,1.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,3,1) *sā tu tāvatonnītamadabhiprāyā*
-[DAŚAK.] in [BENF. Chr. 200,4.] *ubhayorbhāvamunnīya*
+[DAŚAK.] in [BENF. Chr. 200,4.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?200) *ubhayorbhāvamunnīya*
 [SĀH. D. 37,14.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?37,14) *iti pratiśabdādunnīyate*
 [KULL.] to [M. 1,1](https://sanskrit-lexicon-scans.github.io/manu/index.html?1,1) (S. 5, Z. 4). *prāḍvivāko vakṣyamāṇena śapathena satyamunnayet* ders. to [M. 8,109.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,109)
 [252.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,252)
@@ -2784,7 +2784,7 @@ Schol. to [GĪT. 1,39.](https://sanskrit-lexicon-scans.github.io/gitagov/app1?1,
 [PRAŚNOP. 5,3.] *sauraṃ dhāmopanīyate*
 [YĀJÑ. 3,122.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?3,122) *loke vikuṇṭha upaneṣyati gokulaṃ sma*
 [BHĀG. P. 2,7,31.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,7,31) *enam — caṇḍikāgṛhamupaninyuḥ*
-[5,9,15.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,9,15) [ŚIŚ. 9,72.] [PAÑCAT. 191,2.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?191,2) [DAŚAK.] in [BENF. Chr. 188,13.] *lakṣmīvatīmupanayati striyaṃ ca saḥ* (Venus im 8ten Hause) führt zu, bringt uns
+[5,9,15.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,9,15) [ŚIŚ. 9,72.] [PAÑCAT. 191,2.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?191,2) [DAŚAK.] in [BENF. Chr. 188,13.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?188) *lakṣmīvatīmupanayati striyaṃ ca saḥ* (Venus im 8ten Hause) führt zu, bringt uns
 [VARĀH. BṚH. S. 104,36.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?104,36) *krauñcanādopanītaḥ (kālaḥ)*
 [ṚT. 4,18.] *upanīya ca taṃ yuktaṃ ratham*
 [R. GORR. 2,38,12.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,38,12) [SOM. NAL. 137.] *upanīya tu tatsarvaṃ śanakaiḥ*
@@ -2836,7 +2836,7 @@ Schol. to [GĪT. 1,39.](https://sanskrit-lexicon-scans.github.io/gitagov/app1?1,
 [PRAŚNOP. 5,3.] *sauraṃ dhāmopanīyate*
 [YĀJÑ. 3,122.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?3,122) *loke vikuṇṭha upaneṣyati gokulaṃ sma*
 [BHĀG. P. 2,7,31.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,7,31) *enam — caṇḍikāgṛhamupaninyuḥ*
-[5,9,15.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,9,15) [ŚIŚ. 9,72.] [PAÑCAT. 191,2.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?191,2) [DAŚAK.] в [BENF. Chr. 188,13.] *lakṣmīvatīmupanayati striyaṃ ca saḥ* (Венера в 8-м доме) ведёт к, несёт нам
+[5,9,15.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,9,15) [ŚIŚ. 9,72.] [PAÑCAT. 191,2.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?191,2) [DAŚAK.] в [BENF. Chr. 188,13.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?188) *lakṣmīvatīmupanayati striyaṃ ca saḥ* (Венера в 8-м доме) ведёт к, несёт нам
 [VARĀH. BṚH. S. 104,36.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?104,36) *krauñcanādopanītaḥ (kālaḥ)*
 [ṚT. 4,18.] *upanīya ca taṃ yuktaṃ ratham*
 [R. GORR. 2,38,12.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,38,12) [SOM. NAL. 137.] *upanīya tu tatsarvaṃ śanakaiḥ*
@@ -2887,7 +2887,7 @@ Schol. to [GĪT. 1,39.](https://sanskrit-lexicon-scans.github.io/gitagov/app1?1,
 [PRAŚNOP. 5,3.] *sauraṃ dhāmopanīyate*
 [YĀJÑ. 3,122.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?3,122) *loke vikuṇṭha upaneṣyati gokulaṃ sma*
 [BHĀG. P. 2,7,31.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,7,31) *enam — caṇḍikāgṛhamupaninyuḥ*
-[5,9,15.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,9,15) [ŚIŚ. 9,72.] [PAÑCAT. 191,2.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?191,2) [DAŚAK.] in [BENF. Chr. 188,13.] *lakṣmīvatīmupanayati striyaṃ ca saḥ* (Venus in the 8th house) leads to, brings us
+[5,9,15.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,9,15) [ŚIŚ. 9,72.] [PAÑCAT. 191,2.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?191,2) [DAŚAK.] in [BENF. Chr. 188,13.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?188) *lakṣmīvatīmupanayati striyaṃ ca saḥ* (Venus in the 8th house) leads to, brings us
 [VARĀH. BṚH. S. 104,36.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?104,36) *krauñcanādopanītaḥ (kālaḥ)*
 [ṚT. 4,18.] *upanīya ca taṃ yuktaṃ ratham*
 [R. GORR. 2,38,12.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,38,12) [SOM. NAL. 137.] *upanīya tu tatsarvaṃ śanakaiḥ*
@@ -3231,7 +3231,7 @@ Schol. к [KĀTY. ŚR. 17,3,3.](https://sanskrit-lexicon-scans.github.io/katyasr
 
 **2)** — 2) auf s Reine bringen, Etwas herausbringen, hinter Etwas kommen. Etwas zur Entscheidung bringen, sich für Etwas entscheiden: *yo hi kāryaṃ mahāpadi . haṭhenecchati nirṇetum*
 [R. 5,85,11.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,85,11) *kamapyupāyamātmanaiva nirṇīya*
-[DAŚAK.] in [BENF. Chr. 194,19.] *ityetadvyavahārānnirṇetuṃ na śakyate*
+[DAŚAK.] in [BENF. Chr. 194,19.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?194) *ityetadvyavahārānnirṇetuṃ na śakyate*
 [HIT. 73,22.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?73,22) *purāvṛttakathodgāraiḥ kathaṃ nirṇīyate paraḥ*
 [III,105.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?3,105) *nirṇīya śubhalagnaṃ yātrārthaṃ dadātu*
 [94,9.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?94,9) *vastu nirṇīyatāṃ svayam*
@@ -3245,7 +3245,7 @@ Schol. к [KĀTY. ŚR. 17,3,3.](https://sanskrit-lexicon-scans.github.io/katyasr
 
 - **RU:** — 2) выяснять, устанавливать, доискиваться до чего-л., доводить до решения, принимать решение о чём-л.: *yo hi kāryaṃ mahāpadi . haṭhenecchati nirṇetum*
 [R. 5,85,11.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,85,11) *kamapyupāyamātmanaiva nirṇīya*
-[DAŚAK.] in [BENF. Chr. 194,19.] *ityetadvyavahārānnirṇetuṃ na śakyate*
+[DAŚAK.] in [BENF. Chr. 194,19.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?194) *ityetadvyavahārānnirṇetuṃ na śakyate*
 [HIT. 73,22.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?73,22) *purāvṛttakathodgāraiḥ kathaṃ nirṇīyate paraḥ*
 [III,105.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?3,105) *nirṇīya śubhalagnaṃ yātrārthaṃ dadātu*
 [94,9.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?94,9) *vastu nirṇīyatāṃ svayam*
@@ -3258,7 +3258,7 @@ Schol. к [KĀTY. ŚR. 17,3,3.](https://sanskrit-lexicon-scans.github.io/katyasr
 [ŚAṂK.] zu [BṚH. ĀR. UP. S. 216.]
 - **EN:** — 2) to clear up, to bring something to light, to get to the bottom of something, to bring something to a decision, to decide in favour of something: *yo hi kāryaṃ mahāpadi . haṭhenecchati nirṇetum*
 [R. 5,85,11.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,85,11) *kamapyupāyamātmanaiva nirṇīya*
-[DAŚAK.] in [BENF. Chr. 194,19.] *ityetadvyavahārānnirṇetuṃ na śakyate*
+[DAŚAK.] in [BENF. Chr. 194,19.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?194) *ityetadvyavahārānnirṇetuṃ na śakyate*
 [HIT. 73,22.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?73,22) *purāvṛttakathodgāraiḥ kathaṃ nirṇīyate paraḥ*
 [III,105.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?3,105) *nirṇīya śubhalagnaṃ yātrārthaṃ dadātu*
 [94,9.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?94,9) *vastu nirṇīyatāṃ svayam*
@@ -3390,7 +3390,7 @@ Schol. к [KĀTY. ŚR. 17,3,3.](https://sanskrit-lexicon-scans.github.io/katyasr
 [PAÑCAT. 261,8.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?261,8) [10.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?261,10)
 [HIT. 63,20.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?63,20) [21.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?63,21)
 [RĀJA-TAR. 3,436.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?3,436)
-[DAŚAK.] in [BENF. Chr. 201,3.] [KATHĀS. 18,80.](https://sanskrit-lexicon-scans.github.io/kss/index.html?18,80) [322.](https://sanskrit-lexicon-scans.github.io/kss/index.html?18,322) *pariṇinye tāṃ gāndharvavidhinā* 220. *(tena) guptaṃ gāndharvavidhinā pariṇītā*
+[DAŚAK.] in [BENF. Chr. 201,3.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?201) [KATHĀS. 18,80.](https://sanskrit-lexicon-scans.github.io/kss/index.html?18,80) [322.](https://sanskrit-lexicon-scans.github.io/kss/index.html?18,322) *pariṇinye tāṃ gāndharvavidhinā* 220. *(tena) guptaṃ gāndharvavidhinā pariṇītā*
 [7,82.](https://sanskrit-lexicon-scans.github.io/kss/index.html?7,82) [10,180.](https://sanskrit-lexicon-scans.github.io/kss/index.html?10,180) [ŚĀK. 71.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?71) [65,23.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?65,23) [HIT. 28,3.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?28,3) [VET. in LA. 20. 8.]
 
 - **RU:** — 2) insbes. обводить пару или невесту вокруг огня (как свадебный обряд): *pradakṣiṇaṃ tau pragṛhītapāṇī parīṇayāmāsa sa vedapāragaḥ*
@@ -3401,7 +3401,7 @@ Schol. к [KĀTY. ŚR. 17,3,3.](https://sanskrit-lexicon-scans.github.io/katyasr
 [PAÑCAT. 261,8.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?261,8) [10.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?261,10)
 [HIT. 63,20.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?63,20) [21.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?63,21)
 [RĀJA-TAR. 3,436.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?3,436)
-[DAŚAK.] in [BENF. Chr. 201,3.] [KATHĀS. 18,80.](https://sanskrit-lexicon-scans.github.io/kss/index.html?18,80) [322.](https://sanskrit-lexicon-scans.github.io/kss/index.html?18,322) *pariṇinye tāṃ gāndharvavidhinā* 220. *(tena) guptaṃ gāndharvavidhinā pariṇītā*
+[DAŚAK.] in [BENF. Chr. 201,3.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?201) [KATHĀS. 18,80.](https://sanskrit-lexicon-scans.github.io/kss/index.html?18,80) [322.](https://sanskrit-lexicon-scans.github.io/kss/index.html?18,322) *pariṇinye tāṃ gāndharvavidhinā* 220. *(tena) guptaṃ gāndharvavidhinā pariṇītā*
 [7,82.](https://sanskrit-lexicon-scans.github.io/kss/index.html?7,82) [10,180.](https://sanskrit-lexicon-scans.github.io/kss/index.html?10,180) [ŚĀK. 71.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?71) [65,23.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?65,23) [HIT. 28,3.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?28,3) [VET. in LA. 20. 8.]
 - **EN:** — 2) insbes. to lead a couple or a bride around the fire (as a wedding ceremony): *pradakṣiṇaṃ tau pragṛhītapāṇī parīṇayāmāsa sa vedapāragaḥ*
 [MBH. 1,7340.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7340) *tau daṃpatī triḥ pariṇīya vahnim (purodhāḥ)*
@@ -3411,7 +3411,7 @@ Schol. к [KĀTY. ŚR. 17,3,3.](https://sanskrit-lexicon-scans.github.io/katyasr
 [PAÑCAT. 261,8.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?261,8) [10.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?261,10)
 [HIT. 63,20.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?63,20) [21.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?63,21)
 [RĀJA-TAR. 3,436.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?3,436)
-[DAŚAK.] in [BENF. Chr. 201,3.] [KATHĀS. 18,80.](https://sanskrit-lexicon-scans.github.io/kss/index.html?18,80) [322.](https://sanskrit-lexicon-scans.github.io/kss/index.html?18,322) *pariṇinye tāṃ gāndharvavidhinā* 220. *(tena) guptaṃ gāndharvavidhinā pariṇītā*
+[DAŚAK.] in [BENF. Chr. 201,3.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?201) [KATHĀS. 18,80.](https://sanskrit-lexicon-scans.github.io/kss/index.html?18,80) [322.](https://sanskrit-lexicon-scans.github.io/kss/index.html?18,322) *pariṇinye tāṃ gāndharvavidhinā* 220. *(tena) guptaṃ gāndharvavidhinā pariṇītā*
 [7,82.](https://sanskrit-lexicon-scans.github.io/kss/index.html?7,82) [10,180.](https://sanskrit-lexicon-scans.github.io/kss/index.html?10,180) [ŚĀK. 71.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?71) [65,23.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?65,23) [HIT. 28,3.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?28,3) [VET. in LA. 20. 8.]
   <sub>attested</sub>
 
@@ -5082,8 +5082,8 @@ Schol. *pariṇītam* как nom. act. брак. —
 **3)** — 3〉 Med. und seltener Act. mit sich führen, — nehmen, heimführen (ein Weib).
 - **EN:** — 3〉 Med. and less frequently Act. to take with one, take home, lead home (a wife).
 
-**4)** — 4〉 heran-, herbeiziehen [311,13].
-- **EN:** — 4〉 to draw near, draw towards oneself [311,13].
+**4)** — 4〉 heran-, herbeiziehen [311,13](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?311).
+- **EN:** — 4〉 to draw near, draw towards oneself [311,13](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?311).
 
 **5)** — 5〉 Jmd oder Etwas (Acc.) in ein Verhältniss, eine Lage, eines Zustand (Acc. einmal auch Loc.) bringen, — versetzen [MBH. 5,36,4](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?5,36,4). Mit *˚sāt* verwandeln in.
 - **EN:** — 5〉 to bring or place someone or something (Acc.) into a relation, a situation, a state (Acc. once also Loc.) [MBH. 5,36,4](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?5,36,4). With *˚sāt* to transform into.
@@ -5189,8 +5189,8 @@ Schol. *pariṇītam* как nom. act. брак. —
 **pref-sam-upa)** — Mit *paryanu* Jmd (Acc.) viele freundliche Worte geben, sehr bitten.
 - **EN:** — With *paryanu* to give someone (Acc.) many friendly words, to entreat earnestly.
 
-**pref-abhi-upa)** — Mit *pratyanu* Jmd in Bezug auf Etwas gute Worte geben; mit doppeltem Acc. [41,4]. [43,17]. Jmd zum Nachgeben bringen.
-- **EN:** — With *pratyanu* to give someone kind words regarding something; with double Acc. [41,4]. [43,17]. To bring someone to yield, to persuade someone.
+**pref-abhi-upa)** — Mit *pratyanu* Jmd in Bezug auf Etwas gute Worte geben; mit doppeltem Acc. [41,4](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?41). [43,17](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?43). Jmd zum Nachgeben bringen.
+- **EN:** — With *pratyanu* to give someone kind words regarding something; with double Acc. [41,4](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?41). [43,17](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?43). To bring someone to yield, to persuade someone.
 
 **pref-nis-1)** — Mit *apa*
 — 1〉 wegführen, abführen, entfernen.
@@ -5325,8 +5325,8 @@ Schol. *pariṇītam* как nom. act. брак. —
 **pref-a-9)** — 9〉 anbringen, anwenden, an den Tag legen, zeigen. v. l. *ā-dha*.
 - **EN:** — 9〉 to apply, employ, manifest, demonstrate. v. l. *ā-dha*.
 
-**pref-a-caus)** — Caus. (ausnahmsweise Med.) herbeiführen —, herbeikommen —, herbeibringen lassen [130,14]. *ānāpayitum* fehlerhaft für *ānāyayitum*.
-- **EN:** — Caus. (exceptionally Med.) to cause to come here, to have brought here [130,14]. *ānāpayitum* corrupt for *ānāyayitum*.
+**pref-a-caus)** — Caus. (ausnahmsweise Med.) herbeiführen —, herbeikommen —, herbeibringen lassen [130,14](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?130). *ānāpayitum* fehlerhaft für *ānāyayitum*.
+- **EN:** — Caus. (exceptionally Med.) to cause to come here, to have brought here [130,14](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?130). *ānāpayitum* corrupt for *ānāyayitum*.
 
 **pref-a-desid)** — Desid. herbeizubringen die Absicht haben.
 - **EN:** — Desid. to intend to bring hither.

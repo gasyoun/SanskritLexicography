@@ -208,7 +208,7 @@ Sch. on [P. 1,4,56.](https://ashtadhyayi.com/sutraani/1/4/56) Sch. on [P. 8,2,38
 [RĀJA-TAR. 4,61.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,61) *ekānte vijñāpayāmi*
 [VET. 3,14.]
 [PAÑCAT. 71,25.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?71,25)
-[DAŚAK.] in [BENF. Chr. 180,2.] *anantaraṃ vidhatsvātra vayaṃ vijñāpayāmahe* so v. a. wir bitten darum
+[DAŚAK.] in [BENF. Chr. 180,2.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?180) *anantaraṃ vidhatsvātra vayaṃ vijñāpayāmahe* so v. a. wir bitten darum
 [HARIV. 8541.](https://sanskrit-lexicon-scans.github.io/hariv?8541) Mit dem acc. der Person Jmd Etwas begreiflich machen, belehren, Jmd zu wissen thun, Jmd in Kenntniss setzen, zu Jmd sprechen, Jmd Etwas vortragen, Jmd mit einer Bitte, Frage angehen: *vyeva tvā jñapayiṣyāmi*
 [ŚAT. BR. 14,5,1,15.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,5,1,15) *bhūya eva mā bhagavānvijñāpayatu*
 [CHĀND. UP. 6,5,4.] *ahaṃ svāminaṃ vijñāpya tathā kariṣye yathā svāmī badhaṃ kariṣyati*
@@ -216,7 +216,7 @@ Sch. on [P. 1,4,56.](https://ashtadhyayi.com/sutraani/1/4/56) Sch. on [P. 8,2,38
 [R. 5,63,14.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,63,14)
 [ŚĀK. 61,11.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?61,11)
 [RĀJA-TAR. 4,66.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,66) *bhūṣaṃ carmakaro vyajijñapat*
-[65.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,65) [KATHĀS. 12,7.](https://sanskrit-lexicon-scans.github.io/kss/index.html?12,7) [VID. 125.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?125) [DAŚAK.] in [BENF. Chr. 191,3. 192,20.] *śvaśrūjanaṃ sarvamanukrameṇa vijñāpaya prāpitamatpraṇāmaḥ* (folgen die zusprechenden Worte)
+[65.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,65) [KATHĀS. 12,7.](https://sanskrit-lexicon-scans.github.io/kss/index.html?12,7) [VID. 125.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?125) [DAŚAK.] in [BENF. Chr. 191,3. 192,20.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?191) *śvaśrūjanaṃ sarvamanukrameṇa vijñāpaya prāpitamatpraṇāmaḥ* (folgen die zusprechenden Worte)
 [RAGH. 14,60.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?14,60)
 [VIKR. 3,13.](https://sanskrit-lexicon-scans.github.io/vikramor/app2?3,13) *sarvānvijñāpayāmi vaḥ . nānyathā taddhi kartavyamasmatsnehānukampayā ..*
 [MBH. 3,34.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.34) *devīṃ praṇamya vyajijñapat*
@@ -246,7 +246,7 @@ Sch. on [P. 1,4,56.](https://ashtadhyayi.com/sutraani/1/4/56) Sch. on [P. 8,2,38
 [RĀJA-TAR. 4,61.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,61) *ekānte vijñāpayāmi*
 [VET. 3,14.]
 [PAÑCAT. 71,25.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?71,25)
-[DAŚAK.] in [BENF. Chr. 180,2.] *anantaraṃ vidhatsvātra vayaṃ vijñāpayāmahe* so v. a. "we request this"
+[DAŚAK.] in [BENF. Chr. 180,2.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?180) *anantaraṃ vidhatsvātra vayaṃ vijñāpayāmahe* so v. a. "we request this"
 [HARIV. 8541.](https://sanskrit-lexicon-scans.github.io/hariv?8541) With the acc. of the person: "to make something intelligible to someone, instruct, inform someone, apprise someone, speak to someone, expound something to someone, approach someone with a request or question": *vyeva tvā jñapayiṣyāmi*
 [ŚAT. BR. 14,5,1,15.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,5,1,15) *bhūya eva mā bhagavānvijñāpayatu*
 [CHĀND. UP. 6,5,4.] *ahaṃ svāminaṃ vijñāpya tathā kariṣye yathā svāmī badhaṃ kariṣyati*
@@ -254,7 +254,7 @@ Sch. on [P. 1,4,56.](https://ashtadhyayi.com/sutraani/1/4/56) Sch. on [P. 8,2,38
 [R. 5,63,14.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,63,14)
 [ŚĀK. 61,11.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?61,11)
 [RĀJA-TAR. 4,66.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,66) *bhūṣaṃ carmakaro vyajijñapat*
-[65.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,65) [KATHĀS. 12,7.](https://sanskrit-lexicon-scans.github.io/kss/index.html?12,7) [VID. 125.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?125) [DAŚAK.] in [BENF. Chr. 191,3. 192,20.] *śvaśrūjanaṃ sarvamanukrameṇa vijñāpaya prāpitamatpraṇāmaḥ* (the words addressed to him follow)
+[65.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,65) [KATHĀS. 12,7.](https://sanskrit-lexicon-scans.github.io/kss/index.html?12,7) [VID. 125.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?125) [DAŚAK.] in [BENF. Chr. 191,3. 192,20.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?191) *śvaśrūjanaṃ sarvamanukrameṇa vijñāpaya prāpitamatpraṇāmaḥ* (the words addressed to him follow)
 [RAGH. 14,60.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?14,60)
 [VIKR. 3,13.](https://sanskrit-lexicon-scans.github.io/vikramor/app2?3,13) *sarvānvijñāpayāmi vaḥ . nānyathā taddhi kartavyamasmatsnehānukampayā ..*
 [MBH. 3,34.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.34) *devīṃ praṇamya vyajijñapat*

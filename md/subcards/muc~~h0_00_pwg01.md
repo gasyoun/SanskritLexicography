@@ -23,7 +23,7 @@
 [KIR. 5,38.] *cirasaṃniyataṃ vāṣpaṃ mumocāgnimivāraṇiḥ*
 [R. 2,30,23.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,30,23) *mumoca vāṣpaṃ śanakaiḥ*
 [MBH. 1,6180.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6180) *aśrūṇi mumuce*
-[8447.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8447) [HARIV. 7081.](https://sanskrit-lexicon-scans.github.io/hariv?7081) [R. 2,37,15.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,37,15) [MEGH. 12.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?12) [KATHĀS. 10,178.](https://sanskrit-lexicon-scans.github.io/kss/index.html?10,178) [32,162.](https://sanskrit-lexicon-scans.github.io/kss/index.html?32,162) [DAŚAK.] in [BENF. Chr. 185,10.] *śleṣmāśru bāndhavairmuktam*
+[8447.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8447) [HARIV. 7081.](https://sanskrit-lexicon-scans.github.io/hariv?7081) [R. 2,37,15.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,37,15) [MEGH. 12.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?12) [KATHĀS. 10,178.](https://sanskrit-lexicon-scans.github.io/kss/index.html?10,178) [32,162.](https://sanskrit-lexicon-scans.github.io/kss/index.html?32,162) [DAŚAK.] in [BENF. Chr. 185,10.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?185) *śleṣmāśru bāndhavairmuktam*
 [Spr. 3056.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3056) *mumuce bhūri raktam*
 [MBH. 5,7215.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7215) *śakṛnmūtraṃ ca muñcānāḥ*
 [3,11115.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11115) *apsu śleṣma purīṣaṃ ca mūtraṃ ca muñcatām*
@@ -52,7 +52,7 @@
 [MBH. 3,670.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.670) *bāṇā muktāḥ śilāsviva*
 [MBH. 1,7667.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7667) *bāṇān — mumoca tanaye mama*
 [3,763.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.763) [4,2065.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.2065) [5,7554.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7554) [KATHĀS. 47,81.](https://sanskrit-lexicon-scans.github.io/kss/index.html?47,81) *sā nīlotpalamayamivāpāṅgadāmāṅge mama muñcatī*
-[DAŚAK.] in [BENF. Chr. 184,21.] *gandharvāya mumoca ha . pradīptamastramāgneyam*
+[DAŚAK.] in [BENF. Chr. 184,21.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?184) *gandharvāya mumoca ha . pradīptamastramāgneyam*
 [MBH. 1,6466.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6466) [5,7236.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7236) *vajraṃ mokṣyate te* (auf dich) *mahendraḥ*
 [14,263.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.263) [R. 1,76,6.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,76,6) *sa tāmabibhramadbhīmāṃ (śaktiṃ) vānarendrasya cāmucat*
 [BHAṬṬ. 15,53.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?15,53) *mumoca vajram — triśirasaṃ prati*
@@ -89,7 +89,7 @@
 [KIR. 5,38.] *cirasaṃniyataṃ vāṣpaṃ mumocāgnimivāraṇiḥ*
 [R. 2,30,23.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,30,23) *mumoca vāṣpaṃ śanakaiḥ*
 [MBH. 1,6180.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6180) *aśrūṇi mumuce*
-[8447.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8447) [HARIV. 7081.](https://sanskrit-lexicon-scans.github.io/hariv?7081) [R. 2,37,15.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,37,15) [MEGH. 12.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?12) [KATHĀS. 10,178.](https://sanskrit-lexicon-scans.github.io/kss/index.html?10,178) [32,162.](https://sanskrit-lexicon-scans.github.io/kss/index.html?32,162) [DAŚAK.] в [BENF. Chr. 185,10.] *śleṣmāśru bāndhavairmuktam*
+[8447.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8447) [HARIV. 7081.](https://sanskrit-lexicon-scans.github.io/hariv?7081) [R. 2,37,15.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,37,15) [MEGH. 12.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?12) [KATHĀS. 10,178.](https://sanskrit-lexicon-scans.github.io/kss/index.html?10,178) [32,162.](https://sanskrit-lexicon-scans.github.io/kss/index.html?32,162) [DAŚAK.] в [BENF. Chr. 185,10.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?185) *śleṣmāśru bāndhavairmuktam*
 [Spr. 3056.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3056) *mumuce bhūri raktam*
 [MBH. 5,7215.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7215) *śakṛnmūtraṃ ca muñcānāḥ*
 [3,11115.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11115) *apsu śleṣma purīṣaṃ ca mūtraṃ ca muñcatām*
@@ -118,7 +118,7 @@
 [MBH. 3,670.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.670) *bāṇā muktāḥ śilāsviva*
 [MBH. 1,7667.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7667) *bāṇān — mumoca tanaye mama*
 [3,763.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.763) [4,2065.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.2065) [5,7554.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7554) [KATHĀS. 47,81.](https://sanskrit-lexicon-scans.github.io/kss/index.html?47,81) *sā nīlotpalamayamivāpāṅgadāmāṅge mama muñcatī*
-[DAŚAK.] в [BENF. Chr. 184,21.] *gandharvāya mumoca ha . pradīptamastramāgneyam*
+[DAŚAK.] в [BENF. Chr. 184,21.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?184) *gandharvāya mumoca ha . pradīptamastramāgneyam*
 [MBH. 1,6466.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6466) [5,7236.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7236) *vajraṃ mokṣyate te* (на тебя) *mahendraḥ*
 [14,263.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.263) [R. 1,76,6.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,76,6) *sa tāmabibhramadbhīmāṃ (śaktiṃ) vānarendrasya cāmucat*
 [BHAṬṬ. 15,53.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?15,53) *mumoca vajram — triśirasaṃ prati*
@@ -154,7 +154,7 @@
 [KIR. 5,38.] *cirasaṃniyataṃ vāṣpaṃ mumocāgnimivāraṇiḥ*
 [R. 2,30,23.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,30,23) *mumoca vāṣpaṃ śanakaiḥ*
 [MBH. 1,6180.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6180) *aśrūṇi mumuce*
-[8447.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8447) [HARIV. 7081.](https://sanskrit-lexicon-scans.github.io/hariv?7081) [R. 2,37,15.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,37,15) [MEGH. 12.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?12) [KATHĀS. 10,178.](https://sanskrit-lexicon-scans.github.io/kss/index.html?10,178) [32,162.](https://sanskrit-lexicon-scans.github.io/kss/index.html?32,162) [DAŚAK.] in [BENF. Chr. 185,10.] *śleṣmāśru bāndhavairmuktam*
+[8447.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8447) [HARIV. 7081.](https://sanskrit-lexicon-scans.github.io/hariv?7081) [R. 2,37,15.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,37,15) [MEGH. 12.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?12) [KATHĀS. 10,178.](https://sanskrit-lexicon-scans.github.io/kss/index.html?10,178) [32,162.](https://sanskrit-lexicon-scans.github.io/kss/index.html?32,162) [DAŚAK.] in [BENF. Chr. 185,10.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?185) *śleṣmāśru bāndhavairmuktam*
 [Spr. 3056.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3056) *mumuce bhūri raktam*
 [MBH. 5,7215.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7215) *śakṛnmūtraṃ ca muñcānāḥ*
 [3,11115.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11115) *apsu śleṣma purīṣaṃ ca mūtraṃ ca muñcatām*
@@ -183,7 +183,7 @@
 [MBH. 3,670.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.670) *bāṇā muktāḥ śilāsviva*
 [MBH. 1,7667.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7667) *bāṇān — mumoca tanaye mama*
 [3,763.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.763) [4,2065.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.2065) [5,7554.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7554) [KATHĀS. 47,81.](https://sanskrit-lexicon-scans.github.io/kss/index.html?47,81) *sā nīlotpalamayamivāpāṅgadāmāṅge mama muñcatī*
-[DAŚAK.] in [BENF. Chr. 184,21.] *gandharvāya mumoca ha . pradīptamastramāgneyam*
+[DAŚAK.] in [BENF. Chr. 184,21.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?184) *gandharvāya mumoca ha . pradīptamastramāgneyam*
 [MBH. 1,6466.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6466) [5,7236.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7236) *vajraṃ mokṣyate te* ("upon you") *mahendraḥ*
 [14,263.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.263) [R. 1,76,6.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,76,6) *sa tāmabibhramadbhīmāṃ (śaktiṃ) vānarendrasya cāmucat*
 [BHAṬṬ. 15,53.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?15,53) *mumoca vajram — triśirasaṃ prati*

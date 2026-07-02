@@ -210,10 +210,10 @@
 **pra_caus_1)** — 1〉 beruhigen, stillen, beschwichtigen, placare.
 - **EN:** — 1〉 to calm, still, appease, placare.
 
-**pra_caus_2)** — 2〉 auslöschen (trans.) [290,9].
+**pra_caus_2)** — 2〉 auslöschen (trans.) [290,9](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?290).
 
-- **RU:** — 2〉 гасить (trans.) [290,9].
-- **EN:** — 2〉 to extinguish (trans.) [290,9].
+- **RU:** — 2〉 гасить (trans.) [290,9](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?290).
+- **EN:** — 2〉 to extinguish (trans.) [290,9](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?290).
   <sub>attested</sub>
 
 **pra_caus_3)** — 3〉 abkühlen.

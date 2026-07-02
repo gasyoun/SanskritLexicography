@@ -36,7 +36,7 @@
 [BHAG. 2,62.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?2,62) *dehe 'sminprakāśa upajāyate . jñānaṃ yadā*
 [14,11.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?14,11) [MBH. 2,2590.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2590) [3,114.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.114) [1293.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1293) [R. 3,69,5.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,69,5) [6,82,7.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,82,7) [PAÑCAT. I,154.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?1,154) [HIT. I,61.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?1,61) [BHĀG. P. 6,14,2.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,14,2) *upajātamupaplavyaṃ saha gāṇḍīvadhanvanā*
 [MBH. 9,3482.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.3482) *tatkṣaṇopajātayā pratibhayā*
-[DAŚAK.] in [BENF. Chr. 194,15.] *upajātaviśvāsa* _adj._ bei dem sich Vertrauen eingestellt hat
+[DAŚAK.] in [BENF. Chr. 194,15.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?194) *upajātaviśvāsa* _adj._ bei dem sich Vertrauen eingestellt hat
 [HIT. 42,6.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?42,6) *˚kheda*
 [MṚCCH. 157,21.] *˚sādhvasa*
 [ṚT. 2,9.] *˚krodha*
@@ -54,7 +54,7 @@
 [BHAG. 2,62.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?2,62) *dehe 'sminprakāśa upajāyate . jñānaṃ yadā*
 [14,11.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?14,11) [MBH. 2,2590.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2590) [3,114.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.114) [1293.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1293) [R. 3,69,5.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,69,5) [6,82,7.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,82,7) [PAÑCAT. I,154.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?1,154) [HIT. I,61.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?1,61) [BHĀG. P. 6,14,2.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,14,2) *upajātamupaplavyaṃ saha gāṇḍīvadhanvanā*
 [MBH. 9,3482.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.3482) *tatkṣaṇopajātayā pratibhayā*
-[DAŚAK.] in [BENF. Chr. 194,15.] *upajātaviśvāsa* _adj._ в ком возникло доверие
+[DAŚAK.] in [BENF. Chr. 194,15.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?194) *upajātaviśvāsa* _adj._ в ком возникло доверие
 [HIT. 42,6.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?42,6) *˚kheda*
 [MṚCCH. 157,21.] *˚sādhvasa*
 [ṚT. 2,9.] *˚krodha*
@@ -71,7 +71,7 @@
 [BHAG. 2,62.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?2,62) *dehe 'sminprakāśa upajāyate . jñānaṃ yadā*
 [14,11.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?14,11) [MBH. 2,2590.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2590) [3,114.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.114) [1293.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1293) [R. 3,69,5.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,69,5) [6,82,7.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,82,7) [PAÑCAT. I,154.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?1,154) [HIT. I,61.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?1,61) [BHĀG. P. 6,14,2.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,14,2) *upajātamupaplavyaṃ saha gāṇḍīvadhanvanā*
 [MBH. 9,3482.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.3482) *tatkṣaṇopajātayā pratibhayā*
-[DAŚAK.] in [BENF. Chr. 194,15.] *upajātaviśvāsa* _adj._ in whom trust has arisen
+[DAŚAK.] in [BENF. Chr. 194,15.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?194) *upajātaviśvāsa* _adj._ in whom trust has arisen
 [HIT. 42,6.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?42,6) *˚kheda*
 [MṚCCH. 157,21.] *˚sādhvasa*
 [ṚT. 2,9.] *˚krodha*

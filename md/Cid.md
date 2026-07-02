@@ -288,7 +288,7 @@ Sch.; *ciccheda* und *cicchide, cicchidvaṃs*
 [2,1,15.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,1,15) *kriyāṃ nīlapurāṇoktāmacchindannāgamadviṣaḥ*
 [RĀJA-TAR. 1,178.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?1,178) *tṛṣṇāṃ chinattyātmanaḥ*
 [PAÑCAT. II,128.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?2,128) [BHARTṚ. 2,70.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app2?2,70) *duḥkhaṃ chindyāmahaṃ te vai*
-[MBH.] in [BENF. Chr. 12,25.] *kautūhalaṃ naḥ paramaṃ tacchindhi*
+[MBH.] in [BENF. Chr. 12,25.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?12) *kautūhalaṃ naḥ paramaṃ tacchindhi*
 [HARIV. 7730.](https://sanskrit-lexicon-scans.github.io/hariv?7730) *ṛṇaṃ chittvā* eine Schuld tilgen
 
 [RĀJA-TAR. 6,16.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?6,16)
@@ -305,7 +305,7 @@ Sch.; *ciccheda* und *cicchide, cicchidvaṃs*
 [2,1,15.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,1,15) *kriyāṃ nīlapurāṇoktāmacchindannāgamadviṣaḥ*
 [RĀJA-TAR. 1,178.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?1,178) *tṛṣṇāṃ chinattyātmanaḥ*
 [PAÑCAT. II,128.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?2,128) [BHARTṚ. 2,70.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app2?2,70) *duḥkhaṃ chindyāmahaṃ te vai*
-[MBH.] in [BENF. Chr. 12,25.] *kautūhalaṃ naḥ paramaṃ tacchindhi*
+[MBH.] in [BENF. Chr. 12,25.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?12) *kautūhalaṃ naḥ paramaṃ tacchindhi*
 [HARIV. 7730.](https://sanskrit-lexicon-scans.github.io/hariv?7730) *ṛṇaṃ chittvā* погасить долг
 
 [RĀJA-TAR. 6,16.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?6,16)
@@ -321,7 +321,7 @@ Sch.; *ciccheda* und *cicchide, cicchidvaṃs*
 [2,1,15.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,1,15) *kriyāṃ nīlapurāṇoktāmacchindannāgamadviṣaḥ*
 [RĀJA-TAR. 1,178.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?1,178) *tṛṣṇāṃ chinattyātmanaḥ*
 [PAÑCAT. II,128.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?2,128) [BHARTṚ. 2,70.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app2?2,70) *duḥkhaṃ chindyāmahaṃ te vai*
-[MBH.] in [BENF. Chr. 12,25.] *kautūhalaṃ naḥ paramaṃ tacchindhi*
+[MBH.] in [BENF. Chr. 12,25.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?12) *kautūhalaṃ naḥ paramaṃ tacchindhi*
 [HARIV. 7730.](https://sanskrit-lexicon-scans.github.io/hariv?7730) *ṛṇaṃ chittvā* to discharge a debt
 
 [RĀJA-TAR. 6,16.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?6,16)
@@ -816,7 +816,7 @@ Schol. to [KĀTY. ŚR. 3,7,17.](https://sanskrit-lexicon-scans.github.io/katyasr
 [MBH. 1,6811.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6811) [16,20.](https://sanskrit-lexicon-scans.github.io/mbhcalc?16.20) *kiṃ vā ripūṃstava guruḥ svayamucchinatti*
 [RAGH. 5,71.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?5,71) [2,23.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?2,23)
 [PAÑCAT. 155,12.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?155,12) *ucchidyamānaṃ rāmeṇa bharataṃ trātumarhasi*
-[R. GORR. 2,7,30.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,7,30) [MBH. 12,2612.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.2612) [DAŚAK.] in [BENF. Chr. 197,15.] *duḥkhatrayam*
+[R. GORR. 2,7,30.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,7,30) [MBH. 12,2612.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.2612) [DAŚAK.] in [BENF. Chr. 197,15.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?197) *duḥkhatrayam*
 Sch. in [WILS.] [SĀṂKHYAK. S. 10.] *ucchettuṃ prabhavati yanna saptasaptistannaiśaṃ timiramapākaroti candraḥ*
 [ŚĀK. 157.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?157) *ucchinna* (neben *vinaṣṭa*) zu Grunde gegangen, verworfen, erbärmlich
 [MṚCCH. 34,15.]
@@ -826,7 +826,7 @@ Sch. in [WILS.] [SĀṂKHYAK. S. 10.] *ucchettuṃ prabhavati yanna saptasaptist
 [MBH. 1,6811.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6811) [16,20.](https://sanskrit-lexicon-scans.github.io/mbhcalc?16.20) *kiṃ vā ripūṃstava guruḥ svayamucchinatti*
 [RAGH. 5,71.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?5,71) [2,23.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?2,23)
 [PAÑCAT. 155,12.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?155,12) *ucchidyamānaṃ rāmeṇa bharataṃ trātumarhasi*
-[R. GORR. 2,7,30.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,7,30) [MBH. 12,2612.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.2612) [DAŚAK.] in [BENF. Chr. 197,15.] *duḥkhatrayam*
+[R. GORR. 2,7,30.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,7,30) [MBH. 12,2612.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.2612) [DAŚAK.] in [BENF. Chr. 197,15.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?197) *duḥkhatrayam*
 Sch. in [WILS.] [SĀṂKHYAK. S. 10.] *ucchettuṃ prabhavati yanna saptasaptistannaiśaṃ timiramapākaroti candraḥ*
 [ŚĀK. 157.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?157) *ucchinna* (neben *vinaṣṭa*) погибший, отвергнутый, жалкий
 [MṚCCH. 34,15.]
@@ -835,7 +835,7 @@ Sch. in [WILS.] [SĀṂKHYAK. S. 10.] *ucchettuṃ prabhavati yanna saptasaptist
 [MBH. 1,6811.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6811) [16,20.](https://sanskrit-lexicon-scans.github.io/mbhcalc?16.20) *kiṃ vā ripūṃstava guruḥ svayamucchinatti*
 [RAGH. 5,71.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?5,71) [2,23.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?2,23)
 [PAÑCAT. 155,12.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?155,12) *ucchidyamānaṃ rāmeṇa bharataṃ trātumarhasi*
-[R. GORR. 2,7,30.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,7,30) [MBH. 12,2612.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.2612) [DAŚAK.] in [BENF. Chr. 197,15.] *duḥkhatrayam*
+[R. GORR. 2,7,30.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,7,30) [MBH. 12,2612.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.2612) [DAŚAK.] in [BENF. Chr. 197,15.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?197) *duḥkhatrayam*
 Sch. in [WILS.] [SĀṂKHYAK. S. 10.] *ucchettuṃ prabhavati yanna saptasaptistannaiśaṃ timiramapākaroti candraḥ*
 [ŚĀK. 157.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?157) *ucchinna* (beside *vinaṣṭa*) ruined, rejected, wretched
 [MṚCCH. 34,15.]
@@ -1225,7 +1225,7 @@ Sch. to [KAP. 1,28. 49. 50.] [VEDĀNTAS. (Allah.) No. 36.]
 [R. 4,5,17.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,5,17) *manogati*
 [BHĀG. P. 3,29,11.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,29,11) *saṃskārāḥ*
 [7,11,13.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,11,13) *pāta*
-[DAŚAK.] in [BENF. Chr. 179,16.] *vicchidya* _adv._ getrennt von (abl.): *kāmādvicchidya kvacinnigūḍhaḥ pracarati*
+[DAŚAK.] in [BENF. Chr. 179,16.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?179) *vicchidya* _adv._ getrennt von (abl.): *kāmādvicchidya kvacinnigūḍhaḥ pracarati*
 [PRAB. 33,10.] mit Unterbrechungen: *tatrādvitīyavastuni vicchidya vicchidyāntarindriyavṛttipravāho dhyānam*
 ([BALL.]: on separate occasions [instead of being uninterruptedly so])
 [VEDĀNTAS. (Allah.) No. 134.]
@@ -1263,7 +1263,7 @@ Sch. to [KAP. 1,28. 49. 50.] [VEDĀNTAS. (Allah.) No. 36.]
 [R. 4,5,17.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,5,17) *manogati*
 [BHĀG. P. 3,29,11.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,29,11) *saṃskārāḥ*
 [7,11,13.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,11,13) *pāta*
-[DAŚAK.] in [BENF. Chr. 179,16.] *vicchidya* _adv._ отдельно от (abl.): *kāmādvicchidya kvacinnigūḍhaḥ pracarati*
+[DAŚAK.] in [BENF. Chr. 179,16.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?179) *vicchidya* _adv._ отдельно от (abl.): *kāmādvicchidya kvacinnigūḍhaḥ pracarati*
 [PRAB. 33,10.] с перерывами: *tatrādvitīyavastuni vicchidya vicchidyāntarindriyavṛttipravāho dhyānam*
 ([BALL.]: «в отдельные случаи [вместо того чтобы быть непрерывным]»)
 [VEDĀNTAS. (Allah.) No. 134.]
@@ -1300,7 +1300,7 @@ Sch. to [KAP. 1,28. 49. 50.] [VEDĀNTAS. (Allah.) No. 36.]
 [R. 4,5,17.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,5,17) *manogati*
 [BHĀG. P. 3,29,11.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,29,11) *saṃskārāḥ*
 [7,11,13.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,11,13) *pāta*
-[DAŚAK.] in [BENF. Chr. 179,16.] *vicchidya* _adv._ separated from (abl.): *kāmādvicchidya kvacinnigūḍhaḥ pracarati*
+[DAŚAK.] in [BENF. Chr. 179,16.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?179) *vicchidya* _adv._ separated from (abl.): *kāmādvicchidya kvacinnigūḍhaḥ pracarati*
 [PRAB. 33,10.] with interruptions: *tatrādvitīyavastuni vicchidya vicchidyāntarindriyavṛttipravāho dhyānam*
 ([BALL.]: on separate occasions [instead of being uninterruptedly so])
 [VEDĀNTAS. (Allah.) No. 134.]
@@ -1752,11 +1752,11 @@ Z. 2 read [M.] st. [MBH.]
 - **EN:** **1.** √*chid*¦, *chinatti, chintte* (*chindet* [KṢURIKOP. 14. 19])
 
 **1)** **1.** √*chid*¦, *chinatti, chintte* (*chindet* [KṢURIKOP. 14. 19])
-— 1〉 abschneiden, -hauen, -schlagen, -reissen, -nagen, -beissen, zerschneiden, -hauen, -reissen, spalten, durchbohren. *saṃdhim* ein Loch in die Mauer schlagen. Pass. zerbrechen, -reissen (intrans.). *chinna* abgeschnitten u. s. w.; aufgerissen, -schnitten; eingeschnitten, d. h. mit Einschnürungen versehen [217,6].
+— 1〉 abschneiden, -hauen, -schlagen, -reissen, -nagen, -beissen, zerschneiden, -hauen, -reissen, spalten, durchbohren. *saṃdhim* ein Loch in die Mauer schlagen. Pass. zerbrechen, -reissen (intrans.). *chinna* abgeschnitten u. s. w.; aufgerissen, -schnitten; eingeschnitten, d. h. mit Einschnürungen versehen [217,6](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?217).
 
 - **RU:** **1.** √*chid*¦, *chinatti, chintte* (*chindet* [KṢURIKOP. 14. 19])
-— 1〉 срезать, -рубать, -бивать, -рывать, -грызать, -кусывать, разрезать, -рубать, -рывать, раскалывать, пробуравливать. *saṃdhim* пробить отверстие в стене. Pass. разломать, разорвать (intrans.). *chinna* отрезанный u. s. w.; разорванный, -резанный; надрезанный, d. h. снабжённый перетяжками [217,6].
-- **EN:** — 1〉 to cut off, hew off, strike off, tear off, gnaw off, bite off, cut through, hew through, tear through, split, pierce. *saṃdhim* to make a hole in the wall. Pass. to break, to tear (intrans.). *chinna* cut off u. s. w.; torn open, cut open; incised, d. h. provided with notches/constrictions [217,6].
+— 1〉 срезать, -рубать, -бивать, -рывать, -грызать, -кусывать, разрезать, -рубать, -рывать, раскалывать, пробуравливать. *saṃdhim* пробить отверстие в стене. Pass. разломать, разорвать (intrans.). *chinna* отрезанный u. s. w.; разорванный, -резанный; надрезанный, d. h. снабжённый перетяжками [217,6](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?217).
+- **EN:** — 1〉 to cut off, hew off, strike off, tear off, gnaw off, bite off, cut through, hew through, tear through, split, pierce. *saṃdhim* to make a hole in the wall. Pass. to break, to tear (intrans.). *chinna* cut off u. s. w.; torn open, cut open; incised, d. h. provided with notches/constrictions [217,6](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?217).
   <sub>attested</sub>
 
 **2)** — 2〉 scheiden, trennen, — von (Abl., ausnahmsweise Instr.). *chinna* unterbrochen, nicht zusammenhängend. *˚chinna* auch begrenzt —, eingeschlossen von [Spr. 1229](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1229).
@@ -1777,10 +1777,10 @@ Z. 2 read [M.] st. [MBH.]
 - **EN:** — 4〉 to interrupt, to disturb.
   <sub>attested</sub>
 
-**5)** — 5〉 vernichten, zu Grunde richten, zerstören, entfernen. *ṛṇam* so v. a. eine Schuld tilgen. Pass. verschwinden [287,26]. *chinna* verschwunden, nicht mehr da seiend. *kiṃ naśchinnam* so v. a. was büssen wir dabei ein? was machen wir uns daraus?
+**5)** — 5〉 vernichten, zu Grunde richten, zerstören, entfernen. *ṛṇam* so v. a. eine Schuld tilgen. Pass. verschwinden [287,26](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?287). *chinna* verschwunden, nicht mehr da seiend. *kiṃ naśchinnam* so v. a. was büssen wir dabei ein? was machen wir uns daraus?
 
-- **RU:** — 5〉 уничтожать, губить, разрушать, устранять. *ṛṇam* так v. a. уплатить долг. Pass. исчезать [287,26]. *chinna* исчезнувший, более не существующий. *kiṃ naśchinnam* так v. a. что мы при этом теряем? что нам до этого?
-- **EN:** — 5〉 to annihilate, to ruin, to destroy, to remove. *ṛṇam* so v. a. to discharge a debt. Pass. to disappear [287,26]. *chinna* vanished, no longer present. *kiṃ naśchinnam* so v. a. what do we forfeit thereby? what do we care about it?
+- **RU:** — 5〉 уничтожать, губить, разрушать, устранять. *ṛṇam* так v. a. уплатить долг. Pass. исчезать [287,26](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?287). *chinna* исчезнувший, более не существующий. *kiṃ naśchinnam* так v. a. что мы при этом теряем? что нам до этого?
+- **EN:** — 5〉 to annihilate, to ruin, to destroy, to remove. *ṛṇam* so v. a. to discharge a debt. Pass. to disappear [287,26](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?287). *chinna* vanished, no longer present. *kiṃ naśchinnam* so v. a. what do we forfeit thereby? what do we care about it?
   <sub>attested</sub>
 
 **6)** — 6〉 theilen, dividiren.
@@ -1822,10 +1822,10 @@ Z. 2 read [M.] st. [MBH.]
 - **EN:** — With *ati*, *˚cchinna* cut too deeply [SUŚR. 2,19,1]. too deeply hewn, — wounded [MBH. 12,96,15](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,96,15).
   <sub>attested</sub>
 
-**ava)** — Mit *antar* abschneiden, intercludere [28,7].
+**ava)** — Mit *antar* abschneiden, intercludere [28,7](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?28).
 
-- **RU:** — Mit *antar* срезать, отрезать (intercludere) [28,7].
-- **EN:** — With *antar* to cut off, intercludere [28,7].
+- **RU:** — Mit *antar* срезать, отрезать (intercludere) [28,7](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?28).
+- **EN:** — With *antar* to cut off, intercludere [28,7](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?28).
   <sub>attested</sub>
 
 **apa)** — Mit *apa* abspalten, abtrennen.
@@ -1846,8 +1846,8 @@ Z. 2 read [M.] st. [MBH.]
 **apa2-ppp-1)** — 1〉 unterbrochen.
 - **EN:** — 1〉 interrupted.
 
-**apa2-ppp-2)** — 2〉 begrenzt —, eingeschlossen von (im Comp. vorangehend) [260,30]. [261,5].
-- **EN:** — 2〉 bounded by, enclosed by (in the Comp. preceding) [260,30]. [261,5].
+**apa2-ppp-2)** — 2〉 begrenzt —, eingeschlossen von (im Comp. vorangehend) [260,30](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?260). [261,5](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?261).
+- **EN:** — 2〉 bounded by, enclosed by (in the Comp. preceding) [260,30](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?260). [261,5](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?261).
 
 **apa2-ppp-3)** — 3〉 bestimmt, präcisirt, begrifflich definirt.
 - **EN:** — 3〉 determinate, precise, conceptually defined.
@@ -2108,12 +2108,12 @@ Z. 2 read [M.] st. [MBH.]
 
 **Mit upa)** — Mit *ava* Jmd von sich weisen, zurückstossen [KĀD. 2,87,8]. Pass. getrennt —, geschieden werden von (Abl.). — *avacchinna*
 — 1〉 unterbrochen.
-— 2〉 begrenzt —, eingeschlossen von (im Comp. vorangehend) [260,30]. [261,5].
+— 2〉 begrenzt —, eingeschlossen von (im Comp. vorangehend) [260,30](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?260). [261,5](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?261).
 — 3〉 bestimmt, präcisirt, begrifflich definirt.
 
 - **RU:** — Mit *ava* отвергать кого-л., отталкивать [KĀD. 2,87,8]. Pass. быть отделённым —, отлучённым от (Abl.). — *avacchinna*
 — 1〉 прерванный.
-— 2〉 ограниченный —, замкнутый (предшествующим в Comp.) [260,30]. [261,5].
+— 2〉 ограниченный —, замкнутый (предшествующим в Comp.) [260,30](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?260). [261,5](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?261).
 — 3〉 определённый, точно установленный, понятийно определённый.
   <sub>attested</sub>
 

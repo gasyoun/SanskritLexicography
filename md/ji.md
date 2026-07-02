@@ -244,18 +244,18 @@ _PWG article — 34 sub-card(s), 217 sense(s) · RU 87/217 · EN 184/217_
 [ŚAT. BR. 3,6,1,28.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,6,1,28) *na vai yuṣmākamimaṃ kaścidbrahmodyaṃ jetā*
 [14,6,8,1.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,6,8,1) [12.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,6,8,12) *devane kuśalairjihmairjito rājyaṃ vasūni ca*
 [MBH. 3,2483.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2483) [2258.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2258)
-[DAŚAK.] in [BENF. Chr. 186,3.] [SIDDH. K.] zu [P. 1,4,51.](https://ashtadhyayi.com/sutraani/1/4/51) [VOP. 5,6.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?5,6)
+[DAŚAK.] in [BENF. Chr. 186,3.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?186) [SIDDH. K.] zu [P. 1,4,51.](https://ashtadhyayi.com/sutraani/1/4/51) [VOP. 5,6.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?5,6)
 
 - **RU:** — 4) лишить кого-либо чего-либо, одержать над кем-либо верх в чём-либо, отнять у кого-либо что-либо в игре; с двойным acc.: *tānapyardhamāgnīdhrasya jigyuḥ*
 [ŚAT. BR. 3,6,1,28.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,6,1,28) *na vai yuṣmākamimaṃ kaścidbrahmodyaṃ jetā*
 [14,6,8,1.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,6,8,1) [12.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,6,8,12) *devane kuśalairjihmairjito rājyaṃ vasūni ca*
 [MBH. 3,2483.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2483) [2258.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2258)
-[DAŚAK.] в [BENF. Chr. 186,3.] [SIDDH. K.] к [P. 1,4,51.](https://ashtadhyayi.com/sutraani/1/4/51) [VOP. 5,6.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?5,6)
+[DAŚAK.] в [BENF. Chr. 186,3.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?186) [SIDDH. K.] к [P. 1,4,51.](https://ashtadhyayi.com/sutraani/1/4/51) [VOP. 5,6.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?5,6)
 - **EN:** — 4) To deprive someone of something, to defeat someone in something, to win something from someone in play; with double acc.: *tānapyardhamāgnīdhrasya jigyuḥ*
 [ŚAT. BR. 3,6,1,28.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,6,1,28) *na vai yuṣmākamimaṃ kaścidbrahmodyaṃ jetā*
 [14,6,8,1.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,6,8,1) [12.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,6,8,12) *devane kuśalairjihmairjito rājyaṃ vasūni ca*
 [MBH. 3,2483.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2483) [2258.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2258)
-[DAŚAK.] in [BENF. Chr. 186,3.] [SIDDH. K.] to [P. 1,4,51.](https://ashtadhyayi.com/sutraani/1/4/51) [VOP. 5,6.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?5,6)
+[DAŚAK.] in [BENF. Chr. 186,3.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?186) [SIDDH. K.] to [P. 1,4,51.](https://ashtadhyayi.com/sutraani/1/4/51) [VOP. 5,6.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?5,6)
   <sub>DCS 4090 · attested</sub>
 
 **5)** — 5) ohne obj. siegen, siegreich sein, den Sieg davontragen (im Kampfe u. s. w.), gewinnen (im Spiele): *jeṣāmendra tvayā yujā*
@@ -1690,8 +1690,8 @@ Z. 3 читай *ṛṣīṇāmadhivādamapājayat* .
 **1.6)** — 6〉 ohne Object siegen, siegreich sein, den Sieg davontragen, gewinnen (im Spiele).
 - **EN:** — 6〉 without an object: to be victorious, to be triumphant, to carry off the victory, to win (in play).
 
-**1.7)** — 7〉 oben auf sein, hoch leben. Häufig Praes. st. Imperat. in der Bed. es lebe hoch! *jitamuḍupatinā* so v. a. *jayatūḍupatiḥ* [290,13].
-- **EN:** — 7〉 to be uppermost, to live prosperously. Frequently Praes. st. Imperat. in the Bed. 'long live!' *jitamuḍupatinā* thus v. a. *jayatūḍupatiḥ* [290,13].
+**1.7)** — 7〉 oben auf sein, hoch leben. Häufig Praes. st. Imperat. in der Bed. es lebe hoch! *jitamuḍupatinā* so v. a. *jayatūḍupatiḥ* [290,13](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?290).
+- **EN:** — 7〉 to be uppermost, to live prosperously. Frequently Praes. st. Imperat. in the Bed. 'long live!' *jitamuḍupatinā* thus v. a. *jayatūḍupatiḥ* [290,13](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?290).
 
 **caus-header)** — Caus.
 - **EN:** — Caus.
@@ -1753,8 +1753,8 @@ Z. 3 читай *ṛṣīṇāmadhivādamapājayat* .
 **ā.2)** — 2〉 abhalten, abwenden.
 - **EN:** — 2〉 to keep off, to avert.
 
-**ā.3)** — 3〉 besiegen [105,24].
-- **EN:** — 3〉 to defeat [105,24].
+**ā.3)** — 3〉 besiegen [105,24](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?105).
+- **EN:** — 3〉 to defeat [105,24](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?105).
 
 **ā.des)** — Desid. abgewinnen —, wiedergewinnen wollen.
 - **EN:** — Desid. to wish to win from —, to wish to win back.
@@ -1798,8 +1798,8 @@ Z. 3 читай *ṛṣīṇāmadhivādamapājayat* .
 **pari.1)** — 1〉 gewinnen, ersiegen, erwerben, sich unterwerfen, erobern.
 - **EN:** — 1〉 to win, gain by conquest, acquire, subdue to oneself, conquer.
 
-**pari.2)** — 2〉 besiegen, überwinden, übertreffen [112,25].
-- **EN:** — 2〉 to defeat, overcome, surpass [112,25].
+**pari.2)** — 2〉 besiegen, überwinden, übertreffen [112,25](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?112).
+- **EN:** — 2〉 to defeat, overcome, surpass [112,25](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?112).
 
 **parā)** — Mit *abhinis* besiegen, überwinden.
 - **EN:** — With *abhinis* to defeat, overcome.
@@ -1816,8 +1816,8 @@ Z. 3 читай *ṛṣīṇāmadhivādamapājayat* .
 **prati.1)** — 1〉 gewinnen, ersiegen, erobern.
 - **EN:** — 1〉 to win, gain by conquest, conquer.
 
-**prati.2)** — 2〉 besiegen, überwinden, -treffen. [297,17].
-- **EN:** — 2〉 to defeat, overcome, outdo. [297,17].
+**prati.2)** — 2〉 besiegen, überwinden, -treffen. [297,17](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?297).
+- **EN:** — 2〉 to defeat, overcome, outdo. [297,17](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?297).
 
 **parā_ji_pass_hdr)** — Mit *parā* gewöhnlich Med.
 - **EN:** — With *parā* usually Med.
@@ -1858,8 +1858,8 @@ Z. 3 читай *ṛṣīṇāmadhivādamapājayat* .
 **sam.1)** — 1〉 gewinnen, ersiegen, erobern.
 - **EN:** — 1〉 to win, gain by conquest, conquer.
 
-**sam.2)** — 2〉 besiegen, überwinden (im Kampfe oder Spiele), übertreffen [292,18]. [Spr. 7686](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7686).
-- **EN:** — 2〉 to defeat, overcome (in battle or in play), to surpass [292,18]. [Spr. 7686](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7686).
+**sam.2)** — 2〉 besiegen, überwinden (im Kampfe oder Spiele), übertreffen [292,18](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?292). [Spr. 7686](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7686).
+- **EN:** — 2〉 to defeat, overcome (in battle or in play), to surpass [292,18](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?292). [Spr. 7686](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7686).
 
 **sam.3)** — 3〉 die Sinne, den Geist besiegen, Heer werden über. *vijitāsana* _Adj._ der mit dem Sitz bald fertig geworden ist, so v. a. dem es einerlei ist, worauf er sitzt.
 - **EN:** — 3〉 the senses, the mind, to conquer, to become master over. *vijitāsana* _Adj._ one who has soon mastered his seat, thus v. a. to whom it is all the same what he sits on.

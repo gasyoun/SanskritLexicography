@@ -80,7 +80,7 @@ _PWG article — 23 sub-card(s), 153 sense(s) · RU 110/153 · EN 115/153_
 [12,4,4,6.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?12,4,4,6) [KĀTY. ŚR. 3,6,16.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?3,6,16) [22,8,19.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?22,8,19) — *iti bruvan*
 [M. 2,216.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,216) [3,222. fg.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,222) [5,41.](https://sanskrit-lexicon-scans.github.io/manu/index.html?5,41) *brūhīti brāhmaṇaṃ pṛcchet*
 [8,88.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,88) [YĀJÑ. 2,185.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,185) [HIḌ. 1,25.] [MBH. 2,1414.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1414) [3,12467.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12467) [5,7058.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7058) [7159. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7159) [R. 1,2,19.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,2,19) *brūta kiṃ karavāṇi*
-[14,27.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,14,27) [55,14.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,55,14) [VID. 176.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?176) [286.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?286) [HIT. I,39.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?1,39) [17,17.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?17,17) [VET. in LA. 8,3.] [DAŚAK.] in [BENF. Chr. 185,11. 187,2. 16.] *mṛṣā*
+[14,27.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,14,27) [55,14.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,55,14) [VID. 176.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?176) [286.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?286) [HIT. I,39.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?1,39) [17,17.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?17,17) [VET. in LA. 8,3.] [DAŚAK.] in [BENF. Chr. 185,11. 187,2. 16.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?185) *mṛṣā*
 [M. 8,89.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,89) [263.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,263) *anyathā*
 [90.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,90) *punabravīt* antwortete
 [N. 3,10.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?3,10) *atha kratuṃ prajāpatimabrūvan* sprachen zu
@@ -152,7 +152,7 @@ _PWG article — 23 sub-card(s), 153 sense(s) · RU 110/153 · EN 115/153_
 [12,4,4,6.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?12,4,4,6) [KĀTY. ŚR. 3,6,16.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?3,6,16) [22,8,19.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?22,8,19) — *iti bruvan*
 [M. 2,216.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,216) [3,222. fg.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,222) [5,41.](https://sanskrit-lexicon-scans.github.io/manu/index.html?5,41) *brūhīti brāhmaṇaṃ pṛcchet*
 [8,88.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,88) [YĀJÑ. 2,185.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,185) [HIḌ. 1,25.] [MBH. 2,1414.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1414) [3,12467.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12467) [5,7058.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7058) [7159. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7159) [R. 1,2,19.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,2,19) *brūta kiṃ karavāṇi*
-[14,27.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,14,27) [55,14.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,55,14) [VID. 176.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?176) [286.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?286) [HIT. I,39.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?1,39) [17,17.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?17,17) [VET. in LA. 8,3.] [DAŚAK.] в [BENF. Chr. 185,11. 187,2. 16.] *mṛṣā*
+[14,27.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,14,27) [55,14.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,55,14) [VID. 176.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?176) [286.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?286) [HIT. I,39.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?1,39) [17,17.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?17,17) [VET. in LA. 8,3.] [DAŚAK.] в [BENF. Chr. 185,11. 187,2. 16.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?185) *mṛṣā*
 [M. 8,89.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,89) [263.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,263) *anyathā*
 [90.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,90) *punabravīt* ответил
 [N. 3,10.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?3,10) *atha kratuṃ prajāpatimabrūvan* обратились к
@@ -1094,10 +1094,10 @@ to invite to (gen.): *somāya krītāya prohyamāṇāyānubrūhi*
 - **EN:** — 5) to consider as, — to acknowledge. Also with *tathā* added.
   <sub>attested</sub>
 
-**anu-6)** — 6〉 Med. nachsprechen, auswendig lernen, lernen [33,4].
+**anu-6)** — 6〉 Med. nachsprechen, auswendig lernen, lernen [33,4](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?33).
 
-- **RU:** — 6〉 Med. повторять за кем-либо, учить наизусть, учиться [33,4].
-- **EN:** — 6) Med. to repeat after, learn by heart, learn [33,4].
+- **RU:** — 6〉 Med. повторять за кем-либо, учить наизусть, учиться [33,4](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?33).
+- **EN:** — 6) Med. to repeat after, learn by heart, learn [33,4](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?33).
   <sub>attested</sub>
 
 **apa2-intro)** — Mit *apa*
@@ -1241,8 +1241,8 @@ to invite to (gen.): *somāya krītāya prohyamāṇāyānubrūhi*
 **vi-intro)** — Mit *vi*
 - **EN:** — With *vi*
 
-**vi-1)** — 1〉 sich aussprechen, sich äussern, aussagen, eine Aussage machen ([214,8]) sprechen.
-- **EN:** — 1) to express oneself, state one's views, testify, make a statement ([214,8]), to speak.
+**vi-1)** — 1〉 sich aussprechen, sich äussern, aussagen, eine Aussage machen ([214,8](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?214)) sprechen.
+- **EN:** — 1) to express oneself, state one's views, testify, make a statement ([214,8](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?214)), to speak.
 
 **vi-2)** — 2〉 sich über Etwas (Acc.) aussprechen, über Etwas seine Meinung sagen, eine Frage beantworten ([ĀPAST. 1,32,22]).
 
@@ -1349,10 +1349,10 @@ to invite to (gen.): *somāya krītāya prohyamāṇāyānubrūhi*
   <sub>attested</sub>
 
 **Mit … sich aussprechen 1)** — Mit *vi*
-— 1〉 sich aussprechen, sich äussern, aussagen, eine Aussage machen ([214,8]) sprechen.
+— 1〉 sich aussprechen, sich äussern, aussagen, eine Aussage machen ([214,8](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?214)) sprechen.
 
 - **RU:** — С *vi*
-— 1〉 высказываться, выражаться, утверждать, делать заявление ([214,8]), говорить.
+— 1〉 высказываться, выражаться, утверждать, делать заявление ([214,8](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?214)), говорить.
   <sub>attested</sub>
 
 **Mit … sich unterreden 1)** — Mit *sam*

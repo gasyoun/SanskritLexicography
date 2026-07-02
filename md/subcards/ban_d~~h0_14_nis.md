@@ -22,18 +22,18 @@
 
 Jmd stark zusetzen: *nirbadhnatātimātraṃ ca gālavena*
 [MBH. 5,4116.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.4116) *bhūyo bhūyaśca nirbaddhayā tvayā*
-[DAŚAK.] in [BENF. Chr. 193,3.]
+[DAŚAK.] in [BENF. Chr. 193,3.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?193)
 
 - **RU:** — 2) цепляться за кого-либо, настойчиво обращаться к кому-либо,
 
 сильно досаждать кому-либо: *nirbadhnatātimātraṃ ca gālavena*
 [MBH. 5,4116.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.4116) *bhūyo bhūyaśca nirbaddhayā tvayā*
-[DAŚAK.] в [BENF. Chr. 193,3.]
+[DAŚAK.] в [BENF. Chr. 193,3.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?193)
 - **EN:** — 2) to cling to someone, press hard upon someone,
 
 importune someone urgently: *nirbadhnatātimātraṃ ca gālavena*
 [MBH. 5,4116.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.4116) *bhūyo bhūyaśca nirbaddhayā tvayā*
-[DAŚAK.] in [BENF. Chr. 193,3.]
+[DAŚAK.] in [BENF. Chr. 193,3.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?193)
   <sub>attested</sub>
 
 **caus)** — Vgl. *nirbandha* fgg.

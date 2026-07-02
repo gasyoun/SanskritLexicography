@@ -42,7 +42,7 @@
 [R. 4,5,17.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,5,17) *manogati*
 [BHĀG. P. 3,29,11.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,29,11) *saṃskārāḥ*
 [7,11,13.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,11,13) *pāta*
-[DAŚAK.] in [BENF. Chr. 179,16.] *vicchidya* _adv._ getrennt von (abl.): *kāmādvicchidya kvacinnigūḍhaḥ pracarati*
+[DAŚAK.] in [BENF. Chr. 179,16.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?179) *vicchidya* _adv._ getrennt von (abl.): *kāmādvicchidya kvacinnigūḍhaḥ pracarati*
 [PRAB. 33,10.] mit Unterbrechungen: *tatrādvitīyavastuni vicchidya vicchidyāntarindriyavṛttipravāho dhyānam*
 ([BALL.]: on separate occasions [instead of being uninterruptedly so])
 [VEDĀNTAS. (Allah.) No. 134.]
@@ -80,7 +80,7 @@
 [R. 4,5,17.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,5,17) *manogati*
 [BHĀG. P. 3,29,11.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,29,11) *saṃskārāḥ*
 [7,11,13.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,11,13) *pāta*
-[DAŚAK.] in [BENF. Chr. 179,16.] *vicchidya* _adv._ отдельно от (abl.): *kāmādvicchidya kvacinnigūḍhaḥ pracarati*
+[DAŚAK.] in [BENF. Chr. 179,16.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?179) *vicchidya* _adv._ отдельно от (abl.): *kāmādvicchidya kvacinnigūḍhaḥ pracarati*
 [PRAB. 33,10.] с перерывами: *tatrādvitīyavastuni vicchidya vicchidyāntarindriyavṛttipravāho dhyānam*
 ([BALL.]: «в отдельные случаи [вместо того чтобы быть непрерывным]»)
 [VEDĀNTAS. (Allah.) No. 134.]
@@ -117,7 +117,7 @@
 [R. 4,5,17.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,5,17) *manogati*
 [BHĀG. P. 3,29,11.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,29,11) *saṃskārāḥ*
 [7,11,13.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,11,13) *pāta*
-[DAŚAK.] in [BENF. Chr. 179,16.] *vicchidya* _adv._ separated from (abl.): *kāmādvicchidya kvacinnigūḍhaḥ pracarati*
+[DAŚAK.] in [BENF. Chr. 179,16.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?179) *vicchidya* _adv._ separated from (abl.): *kāmādvicchidya kvacinnigūḍhaḥ pracarati*
 [PRAB. 33,10.] with interruptions: *tatrādvitīyavastuni vicchidya vicchidyāntarindriyavṛttipravāho dhyānam*
 ([BALL.]: on separate occasions [instead of being uninterruptedly so])
 [VEDĀNTAS. (Allah.) No. 134.]

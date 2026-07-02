@@ -24,23 +24,23 @@
 **5)** — 5〉 sitzen, so v. a. festsitzen, nicht herunterfallen [Spr. 7253](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7253).
 - **EN:** — 5〉 to sit, so v. a. to sit fast, not to fall down [Spr. 7253](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7253).
 
-**6)** — 6〉 stillsitzen, verweilen, verbleiben, verharren. *sanmārge* auf dem rechten Pfade [146,5].
-- **EN:** — 6〉 to sit still, to linger, to remain, to abide. *sanmārge* on the right path [146,5].
+**6)** — 6〉 stillsitzen, verweilen, verbleiben, verharren. *sanmārge* auf dem rechten Pfade [146,5](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?146).
+- **EN:** — 6〉 to sit still, to linger, to remain, to abide. *sanmārge* on the right path [146,5](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?146).
 
-**7)** — 7〉 sitzen bleiben, so v. a. das Nachsehen haben [233,11]. [13].
-- **EN:** — 7〉 to remain sitting, so v. a. to be left out, to come away empty-handed [233,11]. [13].
+**7)** — 7〉 sitzen bleiben, so v. a. das Nachsehen haben [233,11](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?233). [13](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?233).
+- **EN:** — 7〉 to remain sitting, so v. a. to be left out, to come away empty-handed [233,11](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?233). [13](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?233).
 
 **8)** — 8〉 in einer heiligen Handlung begriffen sein, einer Zeremonie obliegen, mit Acc. Ueberhaupt obliegen, mit Loc.
 - **EN:** — 8〉 to be engaged in a sacred act, to be occupied with a ceremony, with Acc. In general, to attend to, with Loc.
 
-**9)** — 9〉 längere Zeit in einer best. Lage sich befinden, sich verhalten, — wie. Die nähere Bestimmung ein Partic., _Adj._ oder Subst. im Nom. (oder im Instr. bei impersonaler Redeweise), ein Absol. oder _Adv._ *sukham* oder *sukhena* sich wohl befinden. *duḥkham* betrübt dastehen [327,15].
-- **EN:** — 9〉 to be, for a longer time, in a best. condition, to behave, fare, — like. The closer determination [is] a Partic., _Adj._ or Subst. in the Nom. (or in the Instr. in impersonal usage), a Absol. or _Adv._ *sukham* or *sukhena* to be well, to fare well. *duḥkham* to stand there grieved [327,15].
+**9)** — 9〉 längere Zeit in einer best. Lage sich befinden, sich verhalten, — wie. Die nähere Bestimmung ein Partic., _Adj._ oder Subst. im Nom. (oder im Instr. bei impersonaler Redeweise), ein Absol. oder _Adv._ *sukham* oder *sukhena* sich wohl befinden. *duḥkham* betrübt dastehen [327,15](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?327).
+- **EN:** — 9〉 to be, for a longer time, in a best. condition, to behave, fare, — like. The closer determination [is] a Partic., _Adj._ or Subst. in the Nom. (or in the Instr. in impersonal usage), a Absol. or _Adv._ *sukham* or *sukhena* to be well, to fare well. *duḥkham* to stand there grieved [327,15](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?327).
 
 **10)** — 10〉 gereichen zu (Dat.) [Spr. 4859](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4859).
 - **EN:** — 10〉 to redound to, to tend to (Dat.) [Spr. 4859](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4859).
 
-**11)** — 11〉 esse alicujus (Gen.) [39,6].
-- **EN:** — 11〉 esse alicujus (Gen.) [39,6].
+**11)** — 11〉 esse alicujus (Gen.) [39,6](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?39).
+- **EN:** — 11〉 esse alicujus (Gen.) [39,6](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?39).
 
 **12)** — 12〉 Imperat. weg damit, genug —, schweigen wir davon, nedum [Spr. 7744](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7744). [KĀD. 228,10. 11. 250,6. II,61,9]. [VIKRAMĀṄKAC. 3,30] (wo *samastamāstām* zu lesen ist). *tathā yathā* — so dass nicht mehr die Rede sein kann (konnte) von.
 - **EN:** — 12〉 Imperat. away with it, enough of —, let us be silent about it, much less [Spr. 7744](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7744). [KĀD. 228,10. 11. 250,6. II,61,9]. [VIKRAMĀṄKAC. 3,30] (where *samastamāstām* is to be read). *tathā yathā* — so that there can (could) no longer be talk of.
@@ -126,8 +126,8 @@
 **upa.2)** — 2〉 belagern.
 - **EN:** — 2〉 to besiege.
 
-**upa.3)** — 3〉 sitzen [42,16].
-- **EN:** — 3〉 to sit [42,16].
+**upa.3)** — 3〉 sitzen [42,16](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?42).
+- **EN:** — 3〉 to sit [42,16](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?42).
 
 **upa.4)** — 4〉 zum Aufenthaltsort haben oder erwählen.
 - **EN:** — 4〉 to have or choose as one's abode.
@@ -147,11 +147,11 @@
 **upa.9)** — 9〉 ausharren, in einer Thätigkeit oder einer Lage verharren. Die nähere Bestimmung ein Partic. oder ein Absol.
 - **EN:** — 9〉 to persevere, to remain in an activity or a condition. The closer determination [is] a Partic. or a Absol.
 
-**upa.10)** — 10〉 erwartend dabeisitzen, erwarten, zuwarten [28,4]. das Zuwarten —, Nachsehen haben.
-- **EN:** — 10〉 to sit by waiting, to await, to bide one's time [28,4]. to have to wait —, to be left out.
+**upa.10)** — 10〉 erwartend dabeisitzen, erwarten, zuwarten [28,4](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?28). das Zuwarten —, Nachsehen haben.
+- **EN:** — 10〉 to sit by waiting, to await, to bide one's time [28,4](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?28). to have to wait —, to be left out.
 
-**upa.11)** — 11〉 ehrend oder dienend nahen, verehren, huldigen [179,26].
-- **EN:** — 11〉 to approach in honour or in service, to revere, to pay homage [179,26].
+**upa.11)** — 11〉 ehrend oder dienend nahen, verehren, huldigen [179,26](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?179).
+- **EN:** — 11〉 to approach in honour or in service, to revere, to pay homage [179,26](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?179).
 
 **upa.12)** — 12〉 achten auf Jmd oder Etwas, seine Aufmerksamkeit richten auf, hegen, pflegen.
 - **EN:** — 12〉 to pay heed to someone or something, to direct one's attention to, to cherish, to tend.
@@ -162,8 +162,8 @@
 **upa.14)** — 14〉 dafür halten, — erkennen.
 - **EN:** — 14〉 to hold for, — to recognize as.
 
-**upa.15)** — 15〉 eine Zeit (Acc.) zubringen [R. 1,36,1](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,36,1) ([35,1]. [ed. Bomb.]).
-- **EN:** — 15〉 to spend a time (Acc.) [R. 1,36,1](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,36,1) ([35,1]. [ed. Bomb.]).
+**upa.15)** — 15〉 eine Zeit (Acc.) zubringen [R. 1,36,1](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,36,1) ([35,1](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?35). [ed. Bomb.]).
+- **EN:** — 15〉 to spend a time (Acc.) [R. 1,36,1](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,36,1) ([35,1](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?35). [ed. Bomb.]).
 
 **pari-intro)** — Mit *paryupa*
 - **EN:** — With *paryupa*
@@ -189,8 +189,8 @@
 **pra-intro)** — Mit *samupa*
 - **EN:** — With *samupa*
 
-**pra.1)** — 1〉 dasitzen [86,27]. [R. 2,105,1](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,105,1).
-- **EN:** — 1〉 to sit there [86,27]. [R. 2,105,1](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,105,1).
+**pra.1)** — 1〉 dasitzen [86,27](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?86). [R. 2,105,1](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,105,1).
+- **EN:** — 1〉 to sit there [86,27](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?86). [R. 2,105,1](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,105,1).
 
 **pra.2)** — 2〉 obliegen, ausüben, verrichten.
 - **EN:** — 2〉 to be occupied with, to practise, to perform.
@@ -222,8 +222,8 @@
 **sam.2)** — 2〉 sitzen.
 - **EN:** — 2〉 to sit.
 
-**sam.3)** — 3〉 seinen Sitz —, seinen Aufenthalt haben in (Loc.) [89,14].
-- **EN:** — 3〉 to have one's seat —, one's abode in (Loc.) [89,14].
+**sam.3)** — 3〉 seinen Sitz —, seinen Aufenthalt haben in (Loc.) [89,14](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?89).
+- **EN:** — 3〉 to have one's seat —, one's abode in (Loc.) [89,14](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?89).
 
 **sam.4)** — 4〉 zur Berathung zusammentreten, Rath halten.
 - **EN:** — 4〉 to convene for deliberation, to hold council.
@@ -249,8 +249,8 @@
 **1)** **3.** *ās*¦ wohl _n._ Mund, Angesicht; nur im Abl. und Instr. *āsa ā* mit einer 1sten Person so v. a. von mir aus. *āsā* vorʼs Angesicht hin, von Aller Augen.
 - **EN:** **3.** *ās*¦ probably _n._ mouth, face; only in the Abl. and Instr. *āsa ā* with a 1st person, so v. a. as far as I am concerned, on my part. *āsā* before the face, in everyone's sight.
 
-**1)** **4.** *ās*¦ ved. 3te Sg. von **1.** *as* [19,18].
-- **EN:** **4.** *ās*¦ ved. 3rd Sg. of **1.** *as* [19,18].
+**1)** **4.** *ās*¦ ved. 3te Sg. von **1.** *as* [19,18](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?19).
+- **EN:** **4.** *ās*¦ ved. 3rd Sg. of **1.** *as* [19,18](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?19).
 
 **v9)** **2.** √*ās*¦ 9〉 *kathamāste tātaḥ* so v. a. wie geht es dem Vater? [HARṢAC. 126,9].
 - **EN:** **2.** √*ās*¦ 9〉 *kathamāste tātaḥ* so v. a. how is father faring? [HARṢAC. 126,9].

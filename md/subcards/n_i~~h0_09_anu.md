@@ -46,7 +46,7 @@
 [RAGH. 5,54.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?5,54) [19,38.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?19,38) [43.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?19,43)
 [KATHĀS. 7,47.](https://sanskrit-lexicon-scans.github.io/kss/index.html?7,47)
 [BHĀG. P. 3,14,15.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,14,15) [4,7,1.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,7,1) [14,29.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,14,29) [6,6,1.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,6,1)
-[ŚUK. in LA. 45,8.] [PRAB. 24,3.] [99,1.] [DAŚAK.] in [BENF. Chr. 192,17.] [BHAṬṬ. 5,46.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?5,46) [6,137.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?6,137) *śāpāntāyānunītaḥ* gebeten um
+[ŚUK. in LA. 45,8.] [PRAB. 24,3.] [99,1.] [DAŚAK.] in [BENF. Chr. 192,17.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?192) [BHAṬṬ. 5,46.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?5,46) [6,137.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?6,137) *śāpāntāyānunītaḥ* gebeten um
 [R. 6,82,165.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,82,165) *saṃrambharukṣamiva sundari yadyadāsīttvatsaṃgamena mama tattadivānunītam* ausgesöhnt
 [VIKR. 61.](https://sanskrit-lexicon-scans.github.io/vikramor/app1?61) med.: *anuninye 'tha śanakairvīro 'nunayakovidaḥ*
 [BHĀG. P. 4,26,20.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,26,20) mit dem gen. oder dat. der Person: *na tena te 'nunayāmi*
@@ -66,7 +66,7 @@
 [RAGH. 5,54.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?5,54) [19,38.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?19,38) [43.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?19,43)
 [KATHĀS. 7,47.](https://sanskrit-lexicon-scans.github.io/kss/index.html?7,47)
 [BHĀG. P. 3,14,15.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,14,15) [4,7,1.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,7,1) [14,29.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,14,29) [6,6,1.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,6,1)
-[ŚUK. in LA. 45,8.] [PRAB. 24,3.] [99,1.] [DAŚAK.] in [BENF. Chr. 192,17.] [BHAṬṬ. 5,46.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?5,46) [6,137.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?6,137) *śāpāntāyānunītaḥ* с просьбой о
+[ŚUK. in LA. 45,8.] [PRAB. 24,3.] [99,1.] [DAŚAK.] in [BENF. Chr. 192,17.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?192) [BHAṬṬ. 5,46.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?5,46) [6,137.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?6,137) *śāpāntāyānunītaḥ* с просьбой о
 [R. 6,82,165.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,82,165) *saṃrambharukṣamiva sundari yadyadāsīttvatsaṃgamena mama tattadivānunītam* умиротворённый
 [VIKR. 61.](https://sanskrit-lexicon-scans.github.io/vikramor/app1?61) med.: *anuninye 'tha śanakairvīro 'nunayakovidaḥ*
 [BHĀG. P. 4,26,20.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,26,20) mit dem gen. oder dat. der Person: *na tena te 'nunayāmi*
@@ -85,7 +85,7 @@
 [RAGH. 5,54.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?5,54) [19,38.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?19,38) [43.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?19,43)
 [KATHĀS. 7,47.](https://sanskrit-lexicon-scans.github.io/kss/index.html?7,47)
 [BHĀG. P. 3,14,15.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,14,15) [4,7,1.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,7,1) [14,29.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,14,29) [6,6,1.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,6,1)
-[ŚUK. in LA. 45,8.] [PRAB. 24,3.] [99,1.] [DAŚAK.] in [BENF. Chr. 192,17.] [BHAṬṬ. 5,46.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?5,46) [6,137.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?6,137) *śāpāntāyānunītaḥ* entreated for
+[ŚUK. in LA. 45,8.] [PRAB. 24,3.] [99,1.] [DAŚAK.] in [BENF. Chr. 192,17.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?192) [BHAṬṬ. 5,46.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?5,46) [6,137.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?6,137) *śāpāntāyānunītaḥ* entreated for
 [R. 6,82,165.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,82,165) *saṃrambharukṣamiva sundari yadyadāsīttvatsaṃgamena mama tattadivānunītam* reconciled
 [VIKR. 61.](https://sanskrit-lexicon-scans.github.io/vikramor/app1?61) med.: *anuninye 'tha śanakairvīro 'nunayakovidaḥ*
 [BHĀG. P. 4,26,20.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,26,20) with the gen. or dat. of the person: *na tena te 'nunayāmi*

@@ -28,9 +28,9 @@
 - **RU:** — 4〉 платить (штраф), погашать (долг), давать в виде вознаграждения.
   <sub>DCS 12366 · attested</sub>
 
-**5)** — 5〉 heraus-, wiedergeben (= *punardā*) [101,23].
+**5)** — 5〉 heraus-, wiedergeben (= *punardā*) [101,23](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?101).
 
-- **RU:** — 5〉 отдавать обратно, возвращать (= *punardā*) [101,23].
+- **RU:** — 5〉 отдавать обратно, возвращать (= *punardā*) [101,23](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?101).
   <sub>DCS 12366 · attested</sub>
 
 **6)** — 6〉 darbringen (eine Spende, eine Opfer u. s. w.). *ātmānam* sich opfern. *ātmānaṃ khedāya* so v. a. sich der Betrübniss hingeben.
@@ -48,14 +48,14 @@
 - **RU:** — 8〉 даровать, разрешать, позволять. *prāṇān* или *jīvitam* позволять кому-л. оставаться в живых. *darśanam* явить кому-л. свой облик, показаться, обнаружить себя. Позволить кому-л. (Dat.) (говорится о женщине), так v. a. допустить соитие. С Infin. позволять,| с *na* и Infin. не позволять.
   <sub>DCS 12366 · attested</sub>
 
-**9)** — 9〉 geben, so v. a. reichen, zu halten geben, übergeben. *haste* einhändigen [109,25]. [110,8].
+**9)** — 9〉 geben, so v. a. reichen, zu halten geben, übergeben. *haste* einhändigen [109,25](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?109). [110,8](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?110).
 
-- **RU:** — 9〉 давать,| так v. a. протягивать, давать держать, передавать. *haste* вручать [109,25]. [110,8].
+- **RU:** — 9〉 давать,| так v. a. протягивать, давать держать, передавать. *haste* вручать [109,25](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?109). [110,8](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?110).
   <sub>DCS 12366 · attested</sub>
 
-**10)** — 10〉 legen —, stellen —, setzen auf, an oder in (Loc.), anlegen (auch in medic. Sinne), anbringen [BHĀVAPR. 2,89]. beifügen (bei Ausführung eines Receptes) [ebend.] und [92]. *kare kapolam* die Wange auf die Hand legen, so v. a. die W. mit der H. stützen [KĀRAṆḌ. 64,1]. *argalam* einen Riegel vorschieben, *pāvakam* Feuer anlegen an (Loc.) *agnin* an Jmd (Loc.) das Feuer anlegen, so v. a. verbrennen, *śāram* so v. a. eine Figur (im Spiele) ziehen, *garam* oder *viṣam* Jmd (Gen. [105,24]. [25] oder Acc.!) Gift eingeben.
+**10)** — 10〉 legen —, stellen —, setzen auf, an oder in (Loc.), anlegen (auch in medic. Sinne), anbringen [BHĀVAPR. 2,89]. beifügen (bei Ausführung eines Receptes) [ebend.] und [92]. *kare kapolam* die Wange auf die Hand legen, so v. a. die W. mit der H. stützen [KĀRAṆḌ. 64,1]. *argalam* einen Riegel vorschieben, *pāvakam* Feuer anlegen an (Loc.) *agnin* an Jmd (Loc.) das Feuer anlegen, so v. a. verbrennen, *śāram* so v. a. eine Figur (im Spiele) ziehen, *garam* oder *viṣam* Jmd (Gen. [105,24](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?105). [25](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?105) oder Acc.!) Gift eingeben.
 
-- **RU:** — 10〉 класть —, ставить —, помещать на, к или в (Loc.), прикладывать (также в medic. смысле), прикреплять [BHĀVAPR. 2,89]. добавлять (при приготовлении снадобья) [ebend.] и [92]. *kare kapolam* положить щёку на руку,| так v. a. подпереть W. рукою H. [KĀRAṆḌ. 64,1]. *argalam* задвинуть засов,| *pāvakam* поджечь (Loc.) *agnin* поджечь кого-л. (Loc.), так v. a. сжигать,| *śāram* так v. a. передвинуть фигуру (в игре), *garam* или *viṣam* дать кому-л. (Gen. [105,24]. [25] или Acc.!) яд.
+- **RU:** — 10〉 класть —, ставить —, помещать на, к или в (Loc.), прикладывать (также в medic. смысле), прикреплять [BHĀVAPR. 2,89]. добавлять (при приготовлении снадобья) [ebend.] и [92]. *kare kapolam* положить щёку на руку,| так v. a. подпереть W. рукою H. [KĀRAṆḌ. 64,1]. *argalam* задвинуть засов,| *pāvakam* поджечь (Loc.) *agnin* поджечь кого-л. (Loc.), так v. a. сжигать,| *śāram* так v. a. передвинуть фигуру (в игре), *garam* или *viṣam* дать кому-л. (Gen. [105,24](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?105). [25](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?105) или Acc.!) яд.
   <sub>DCS 12366 · attested</sub>
 
 **11)** — 11〉 seine Schritte, sein Auge, sein Ohr, seine Gedanken richten auf (Loc.).
@@ -123,9 +123,9 @@
 - **RU:** — 4〉 возвращать, восстанавливать [RĀJAT. 6,50](https://sanskrit-lexicon-scans.github.io/rajatar/app1?6,50). Также так v. a. требовать обратно.
   <sub>DCS 12366 · attested</sub>
 
-**Kaus.5)** — 5〉 mitzutheilen, zu hören zu geben, auszusprechen, zu sprechen [216,15].
+**Kaus.5)** — 5〉 mitzutheilen, zu hören zu geben, auszusprechen, zu sprechen [216,15](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?216).
 
-- **RU:** — 5〉 сообщать, давать услышать, произносить, говорить [216,15].
+- **RU:** — 5〉 сообщать, давать услышать, произносить, говорить [216,15](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?216).
   <sub>DCS 12366 · attested</sub>
 
 **Kaus.6)** — 6〉 hinzustellen, vorzuschieben [KATHĀS. 12,160](https://sanskrit-lexicon-scans.github.io/kss/index.html?12,160). aufzulegen —, aufzutragen auf (Loc.).
@@ -228,19 +228,19 @@
 - **RU:** — 3〉 брать обратно, требовать обратно.
   <sub>DCS 12366 · attested</sub>
 
-**ādā.4)** — 4〉 abnehmen von (Abl.) [132,8]. herausnehmen, herausziehen aus (Abl.). [162,10]. [164,22]. trennen —, sondern von (Abl.), abwenden (das Auge).
+**ādā.4)** — 4〉 abnehmen von (Abl.) [132,8](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?132). herausnehmen, herausziehen aus (Abl.). [162,10](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?162). [164,22](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?164). trennen —, sondern von (Abl.), abwenden (das Auge).
 
-- **RU:** — 4〉 снимать с (Abl.) [132,8]. вынимать, вытаскивать из (Abl.). [162,10]. [164,22]. отделять —, разлучать от (Abl.), отвращать (взор).
+- **RU:** — 4〉 снимать с (Abl.) [132,8](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?132). вынимать, вытаскивать из (Abl.). [162,10](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?162). [164,22](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?164). отделять —, разлучать от (Abl.), отвращать (взор).
   <sub>DCS 12366 · attested</sub>
 
-**ādā.5)** — 5〉 mit sich nehmen, — fortziehen. *ādāya* in Begleitung von, mit (Acc.) [24,5]. [30,29].
+**ādā.5)** — 5〉 mit sich nehmen, — fortziehen. *ādāya* in Begleitung von, mit (Acc.) [24,5](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?24). [30,29](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?30).
 
-- **RU:** — 5〉 брать с собой, — уводить. *ādāya* в сопровождении, вместе с (Acc.) [24,5]. [30,29].
+- **RU:** — 5〉 брать с собой, — уводить. *ādāya* в сопровождении, вместе с (Acc.) [24,5](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?24). [30,29](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?30).
   <sub>DCS 12366 · attested</sub>
 
-**ādā.6)** — 6〉 ergreifen, fassen, packen. *skandhena* auf die Schulter nehmen, *bāhvoḥ* in die Arme nehmen [121,32].
+**ādā.6)** — 6〉 ergreifen, fassen, packen. *skandhena* auf die Schulter nehmen, *bāhvoḥ* in die Arme nehmen [121,32](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?121).
 
-- **RU:** — 6〉 схватывать, хватать, брать. *skandhena* взять на плечо,| *bāhvoḥ* взять в объятия [121,32].
+- **RU:** — 6〉 схватывать, хватать, брать. *skandhena* взять на плечо,| *bāhvoḥ* взять в объятия [121,32](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?121).
   <sub>DCS 12366 · attested</sub>
 
 **ādā.7)** — 7〉 anthun, anlegen.
@@ -248,9 +248,9 @@
 - **RU:** — 7〉 надевать, облачаться.
   <sub>DCS 12366 · attested</sub>
 
-**ādā.8)** — 8〉 zu sich nehmen, geniessen [64,19]. Mit oder ohne *daśanaiḥ* benagen [65,19]. [25].
+**ādā.8)** — 8〉 zu sich nehmen, geniessen [64,19](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?64). Mit oder ohne *daśanaiḥ* benagen [65,19](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?65). [25](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?65).
 
-- **RU:** — 8〉 принимать (пищу), вкушать [64,19]. С или без *daśanaiḥ* грызть [65,19]. [25].
+- **RU:** — 8〉 принимать (пищу), вкушать [64,19](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?64). С или без *daśanaiḥ* грызть [65,19](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?65). [25](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?65).
   <sub>DCS 12366 · attested</sub>
 
 **ādā.9)** — 9〉 ergreifen, so v. a. erwählen. *mārgam* oder *paddhatim* einen Weg einschlagen.
@@ -273,9 +273,9 @@
 - **RU:** — 12〉 принимать, одобрять, соглашаться.
   <sub>DCS 12366 · attested</sub>
 
-**ādā.13)** — 13〉 auf sich nehmen, unternehmen, sich einer Sache hingeben ([290,7]. [12]), sich an Etwas machen. *vacanam, vākyam* oder *vacas* das Wort ergreifen, zu reden beginnen. *āhutayaḥ* = *āhutīḥ* so v. a. darbringen.
+**ādā.13)** — 13〉 auf sich nehmen, unternehmen, sich einer Sache hingeben ([290,7](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?290). [12](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?290)), sich an Etwas machen. *vacanam, vākyam* oder *vacas* das Wort ergreifen, zu reden beginnen. *āhutayaḥ* = *āhutīḥ* so v. a. darbringen.
 
-- **RU:** — 13〉 брать на себя, предпринимать, отдаваться чему-л. ([290,7]. [12]), браться за что-л.. *vacanam, vākyam* или *vacas* взять слово, начать говорить. *āhutayaḥ* = *āhutīḥ* так v. a. приносить.
+- **RU:** — 13〉 брать на себя, предпринимать, отдаваться чему-л. ([290,7](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?290). [12](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?290)), браться за что-л.. *vacanam, vākyam* или *vacas* взять слово, начать говорить. *āhutayaḥ* = *āhutīḥ* так v. a. приносить.
   <sub>DCS 12366 · attested</sub>
 
 **ādā.14)** — 14〉 ansetzen, anheben (zu sprechen u. s. w.).
@@ -373,9 +373,9 @@
 - **RU:** — 3〉 брать с собой. *upādāya* в сопровождении, вместе с; с Acc.
   <sub>DCS 12366 · attested</sub>
 
-**upādā.4)** — 4〉 ergreifen, in die Hand nehmen, fassen, auffangen (Feuer); pflücken, lesen, auflesen [MBH. 7,23,22](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?7,23,22). [Chr. 121,25]. schöpfen (Wasser). *śulāgre* so v. a. stecken auf [R. 3,7,7](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,7,7).
+**upādā.4)** — 4〉 ergreifen, in die Hand nehmen, fassen, auffangen (Feuer); pflücken, lesen, auflesen [MBH. 7,23,22](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?7,23,22). [Chr. 121,25](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?121). schöpfen (Wasser). *śulāgre* so v. a. stecken auf [R. 3,7,7](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,7,7).
 
-- **RU:** — 4〉 схватывать, брать в руку, хватать, улавливать (огонь); срывать, собирать, подбирать [MBH. 7,23,22](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?7,23,22). [Chr. 121,25]. черпать (воду). *śulāgre* так v. a. насаживать на [R. 3,7,7](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,7,7).
+- **RU:** — 4〉 схватывать, брать в руку, хватать, улавливать (огонь); срывать, собирать, подбирать [MBH. 7,23,22](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?7,23,22). [Chr. 121,25](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?121). черпать (воду). *śulāgre* так v. a. насаживать на [R. 3,7,7](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,7,7).
   <sub>DCS 12366 · attested</sub>
 
 **upādā.5)** — 5〉 anlegen, annehmen (einen Körper).

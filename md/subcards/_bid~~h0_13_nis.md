@@ -12,7 +12,7 @@
 [MBH. 1,6790.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6790) *nārāyaṇoruṃ nirbhidya*
 [HARIV. 4601.](https://sanskrit-lexicon-scans.github.io/hariv?4601)
 [PRAB. 116,2.]
-[DAŚAK.] in [BENF. Chr. 201,1.] *snehaprasravanirbhinnamudvahantī stanāṃśukam* (so die v. l.)
+[DAŚAK.] in [BENF. Chr. 201,1.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?201) *snehaprasravanirbhinnamudvahantī stanāṃśukam* (so die v. l.)
 [VIKR. 150.](https://sanskrit-lexicon-scans.github.io/vikramor/app1?150) *nirbhidyopari karṇikārakusumānyāśerate ṣaṭpadāḥ*
 [41.](https://sanskrit-lexicon-scans.github.io/vikramor/app1?41) *ekaikaṃ yojanaṃ bhūmernirbhindantaḥ*
 [R. 1,40,15](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,40,15) ([41,16](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,41,16) [GORR.]). *(vyāghragaṇān) nirvibheda ca sāyakaiḥ*
@@ -49,7 +49,7 @@
 [MBH. 1,6790.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6790) *nārāyaṇoruṃ nirbhidya*
 [HARIV. 4601.](https://sanskrit-lexicon-scans.github.io/hariv?4601)
 [PRAB. 116,2.]
-[DAŚAK.] в [BENF. Chr. 201,1.] *snehaprasravanirbhinnamudvahantī stanāṃśukam* (так v. l.)
+[DAŚAK.] в [BENF. Chr. 201,1.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?201) *snehaprasravanirbhinnamudvahantī stanāṃśukam* (так v. l.)
 [VIKR. 150.](https://sanskrit-lexicon-scans.github.io/vikramor/app1?150) *nirbhidyopari karṇikārakusumānyāśerate ṣaṭpadāḥ*
 [41.](https://sanskrit-lexicon-scans.github.io/vikramor/app1?41) *ekaikaṃ yojanaṃ bhūmernirbhindantaḥ*
 [R. 1,40,15](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,40,15) ([41,16](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,41,16) [GORR.]). *(vyāghragaṇān) nirvibheda ca sāyakaiḥ*
@@ -86,7 +86,7 @@
 [MBH. 1,6790.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6790) *nārāyaṇoruṃ nirbhidya*
 [HARIV. 4601.](https://sanskrit-lexicon-scans.github.io/hariv?4601)
 [PRAB. 116,2.]
-[DAŚAK.] in [BENF. Chr. 201,1.] *snehaprasravanirbhinnamudvahantī stanāṃśukam* (so the v. l.)
+[DAŚAK.] in [BENF. Chr. 201,1.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?201) *snehaprasravanirbhinnamudvahantī stanāṃśukam* (so the v. l.)
 [VIKR. 150.](https://sanskrit-lexicon-scans.github.io/vikramor/app1?150) *nirbhidyopari karṇikārakusumānyāśerate ṣaṭpadāḥ*
 [41.](https://sanskrit-lexicon-scans.github.io/vikramor/app1?41) *ekaikaṃ yojanaṃ bhūmernirbhindantaḥ*
 [R. 1,40,15](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,40,15) ([41,16](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,41,16) [GORR.]). *(vyāghragaṇān) nirvibheda ca sāyakaiḥ*
@@ -137,21 +137,21 @@
   <sub>attested</sub>
 
 **4)** — 4) verrathen: *nirbhinnaprāyaṃ rahasyam*
-[DAŚAK.] in [BENF. Chr. 193,8.]
+[DAŚAK.] in [BENF. Chr. 193,8.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?193)
 
 - **RU:** — 4) «предавать, выдавать»: *nirbhinnaprāyaṃ rahasyam*
-[DAŚAK.] в [BENF. Chr. 193,8.]
+[DAŚAK.] в [BENF. Chr. 193,8.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?193)
 - **EN:** — 4) to betray: *nirbhinnaprāyaṃ rahasyam*
-[DAŚAK.] in [BENF. Chr. 193,8.]
+[DAŚAK.] in [BENF. Chr. 193,8.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?193)
   <sub>attested</sub>
 
 **5)** — 5) hinter Etwas kommen: *kāntakāpacāraṃ nirbhidya*
-[DAŚAK.] in [BENF. Chr. 200,20.]
+[DAŚAK.] in [BENF. Chr. 200,20.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?200)
 
 - **RU:** — 5) «дознаться, проникнуть в суть чего-либо»: *kāntakāpacāraṃ nirbhidya*
-[DAŚAK.] в [BENF. Chr. 200,20.]
+[DAŚAK.] в [BENF. Chr. 200,20.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?200)
 - **EN:** — 5) to get to the bottom of something: *kāntakāpacāraṃ nirbhidya*
-[DAŚAK.] in [BENF. Chr. 200,20.]
+[DAŚAK.] in [BENF. Chr. 200,20.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?200)
   <sub>attested</sub>
 
 **nom)** — Vgl. *nirbheda* fg.

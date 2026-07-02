@@ -11,7 +11,7 @@
 [PĀR. GṚHY. 2,6.] *kṛṣṇājinam*
 [AIT. BR. 1,3.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?1,3) *vibhūṣaṇānyunmumucuḥ*
 [BHAṬṬ. 3,22.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?3,22) *unmucya*
-[DAŚAK.] in [BENF. Chr. 187,2.] *unmuktapuṣpacāpo manobhavaḥ*
+[DAŚAK.] in [BENF. Chr. 187,2.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?187) *unmuktapuṣpacāpo manobhavaḥ*
 [KATHĀS. 52,201.](https://sanskrit-lexicon-scans.github.io/kss/index.html?52,201) *bhāvamāsuramunmucya*
 [BHĀG. P. 7,6,24.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,6,24) *ṛṇamunmucya devānāmṛṣīṇāṃ ca* die Schuld abtragen
 [MBH. 13,2200.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.2200) Jmd befreien
@@ -36,7 +36,7 @@
 [PĀR. GṚHY. 2,6.] *kṛṣṇājinam*
 [AIT. BR. 1,3.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?1,3) *vibhūṣaṇānyunmumucuḥ*
 [BHAṬṬ. 3,22.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?3,22) *unmucya*
-[DAŚAK.] в [BENF. Chr. 187,2.] *unmuktapuṣpacāpo manobhavaḥ*
+[DAŚAK.] в [BENF. Chr. 187,2.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?187) *unmuktapuṣpacāpo manobhavaḥ*
 [KATHĀS. 52,201.](https://sanskrit-lexicon-scans.github.io/kss/index.html?52,201) *bhāvamāsuramunmucya*
 [BHĀG. P. 7,6,24.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,6,24) *ṛṇamunmucya devānāmṛṣīṇāṃ ca* уплатить долг
 [MBH. 13,2200.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.2200) освобождать кого-л.
@@ -60,7 +60,7 @@
 [PĀR. GṚHY. 2,6.] *kṛṣṇājinam*
 [AIT. BR. 1,3.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?1,3) *vibhūṣaṇānyunmumucuḥ*
 [BHAṬṬ. 3,22.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?3,22) *unmucya*
-[DAŚAK.] in [BENF. Chr. 187,2.] *unmuktapuṣpacāpo manobhavaḥ*
+[DAŚAK.] in [BENF. Chr. 187,2.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?187) *unmuktapuṣpacāpo manobhavaḥ*
 [KATHĀS. 52,201.](https://sanskrit-lexicon-scans.github.io/kss/index.html?52,201) *bhāvamāsuramunmucya*
 [BHĀG. P. 7,6,24.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,6,24) *ṛṇamunmucya devānāmṛṣīṇāṃ ca* "to discharge the debt"
 [MBH. 13,2200.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.2200) "to free someone"

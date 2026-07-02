@@ -438,7 +438,7 @@ Schol. to [ŚĀK. 20,16.](https://sanskrit-lexicon-scans.github.io/shakuntala/ap
 [KATHĀS. 13,148.](https://sanskrit-lexicon-scans.github.io/kss/index.html?13,148) *nakhapadaṃ stanamaṇḍale yaddattaṃ mayā*
 [CAURAP. 35.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app1?35) *dattvārkasaṃjñitaṃ vindum*
 [SŪRYAS. 10,10.] *śāram* eine Schachfigur ziehen
-[DAŚAK.] in [BENF. Chr. 185,24.] *argalam* einen Riegel vorschieben: *tasyā (mañjūṣāyāḥ) dattvārgalam*
+[DAŚAK.] in [BENF. Chr. 185,24.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?185) *argalam* einen Riegel vorschieben: *tasyā (mañjūṣāyāḥ) dattvārgalam*
 [KATHĀS. 4,60.](https://sanskrit-lexicon-scans.github.io/kss/index.html?4,60) [13,170.](https://sanskrit-lexicon-scans.github.io/kss/index.html?13,170)
 [VID. 218.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?218)
 [RĀJA-TAR. 6,96.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?6,96) *padam* die Schritte irgendwohin richten: *dattvaikam — gṛhaṃ prati padam*
@@ -478,7 +478,7 @@ Schol. to [ŚĀK. 20,16.](https://sanskrit-lexicon-scans.github.io/shakuntala/ap
 [KATHĀS. 13,148.](https://sanskrit-lexicon-scans.github.io/kss/index.html?13,148) *nakhapadaṃ stanamaṇḍale yaddattaṃ mayā*
 [CAURAP. 35.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app1?35) *dattvārkasaṃjñitaṃ vindum*
 [SŪRYAS. 10,10.] *śāram* to move a chess piece
-[DAŚAK.] into [BENF. Chr. 185,24.] *argalam* to push a bolt forward: *tasyā (mañjūṣāyāḥ) dattvārgalam*
+[DAŚAK.] into [BENF. Chr. 185,24.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?185) *argalam* to push a bolt forward: *tasyā (mañjūṣāyāḥ) dattvārgalam*
 [KATHĀS. 4,60.](https://sanskrit-lexicon-scans.github.io/kss/index.html?4,60) [13,170.](https://sanskrit-lexicon-scans.github.io/kss/index.html?13,170)
 [VID. 218.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?218)
 [RĀJA-TAR. 6,96.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?6,96) *padam* to direct one's steps somewhere: *dattvaikam — gṛhaṃ prati padam*
@@ -554,7 +554,7 @@ Schol. to [ŚĀK. 20,16.](https://sanskrit-lexicon-scans.github.io/shakuntala/ap
 [M. 8,192.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,192) [51.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,51) [220.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,220) [365.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,365)
 [YĀJÑ. 2,18.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,18) [26.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,26) bezahlen lassen, einfordern von (abl.): *dāpayeddhanikasyārthamadhamarṇādvibhāvitam*
 [M. 8,47.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,47) zurückzugeben heissen, zurückfordern: *pareṇa tu daśāhasya (taddravyaṃ) na dadyānnāpi dāpayet*
-[223.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,223) [YĀJÑ. 2,269.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,269) [PAÑCAT. 222,14.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?222,14) [DAŚAK.] in [BENF. Chr. 196,13.] [RĀJA-TAR. 5,151.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,151) zu geben veranlassen so v. a. verschaffen: *abhayavacanaṃ ca dāpitam*
+[223.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,223) [YĀJÑ. 2,269.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,269) [PAÑCAT. 222,14.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?222,14) [DAŚAK.] in [BENF. Chr. 196,13.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?196) [RĀJA-TAR. 5,151.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,151) zu geben veranlassen so v. a. verschaffen: *abhayavacanaṃ ca dāpitam*
 [PAÑCAT. 26,1.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?26,1) *mahyaṃ dāpitavittāya kiṃ dadāsi*
 [RĀJA-TAR. 6,50.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?6,50) so v. a. erzwingen: *anye 'pi balavanto me*
 
@@ -580,7 +580,7 @@ auch die Lesart *dāyita* erwähnt.
 [M. 8,192.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,192) [51.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,51) [220.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,220) [365.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,365)
 [YĀJÑ. 2,18.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,18) [26.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,26) to have paid, to exact from (abl.): *dāpayeddhanikasyārthamadhamarṇādvibhāvitam*
 [M. 8,47.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,47) to bid to be given back, to reclaim: *pareṇa tu daśāhasya (taddravyaṃ) na dadyānnāpi dāpayet*
-[223.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,223) [YĀJÑ. 2,269.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,269) [PAÑCAT. 222,14.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?222,14) [DAŚAK.] in [BENF. Chr. 196,13.] [RĀJA-TAR. 5,151.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,151) to cause to be given, so v. a. to procure: *abhayavacanaṃ ca dāpitam*
+[223.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,223) [YĀJÑ. 2,269.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,269) [PAÑCAT. 222,14.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?222,14) [DAŚAK.] in [BENF. Chr. 196,13.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?196) [RĀJA-TAR. 5,151.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,151) to cause to be given, so v. a. to procure: *abhayavacanaṃ ca dāpitam*
 [PAÑCAT. 26,1.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?26,1) *mahyaṃ dāpitavittāya kiṃ dadāsi*
 [RĀJA-TAR. 6,50.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?6,50) so v. a. to force, extort: *anye 'pi balavanto me*
 
@@ -626,7 +626,7 @@ auch die Lesart *dāyita* erwähnt.
 [VARĀH. BṚH. S. 19,10.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?19,10) *varau*
 [R. GORR. 2,8,23.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,8,23) *sarvaṃ me ditsitaṃ tvayā*
 [MBH. 3,15631.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15631) [8627. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8627) *tāṃ (kanyāṃ) cedahaṃ na ditseyam*
-[1,6159.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6159) [13,106.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.106) [DAŚAK.] in [BENF. Chr. 186,23.] *putrayorubhayoreva vadhvau te ditsite mayā*
+[1,6159.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6159) [13,106.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.106) [DAŚAK.] in [BENF. Chr. 186,23.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?186) *putrayorubhayoreva vadhvau te ditsite mayā*
 [R. GORR. 1,70,13.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,70,13) [MBH. 1,4375.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4375) Auch *didāsati* in folg. Stelle: *priyaṃ śraddhe dadataḥ priyaṃ śraddhe didāsataḥ*
 [ṚV. 10,151,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.151.html#rv10.151.02) Fehlerhaft dagegen ist folgende Form: *na mā martyaḥ kaścana dātumarhati viśvakarmanbhauvana māṃ didāsithā ni maṅkṣye 'haṃ salilasya madhye* (die Erde spricht)
 [AIT. BR. 8,21.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?8,21) Obschon
@@ -642,7 +642,7 @@ auch die Lesart *dāyita* erwähnt.
 [VARĀH. BṚH. S. 19,10.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?19,10) *varau*
 [R. GORR. 2,8,23.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,8,23) *sarvaṃ me ditsitaṃ tvayā*
 [MBH. 3,15631.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15631) [8627. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8627) *tāṃ (kanyāṃ) cedahaṃ na ditseyam*
-[1,6159.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6159) [13,106.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.106) [DAŚAK.] in [BENF. Chr. 186,23.] *putrayorubhayoreva vadhvau te ditsite mayā*
+[1,6159.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6159) [13,106.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.106) [DAŚAK.] in [BENF. Chr. 186,23.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?186) *putrayorubhayoreva vadhvau te ditsite mayā*
 [R. GORR. 1,70,13.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,70,13) [MBH. 1,4375.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4375) Also *didāsati* in folg. passage: *priyaṃ śraddhe dadataḥ priyaṃ śraddhe didāsataḥ*
 [ṚV. 10,151,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.151.html#rv10.151.02) Faulty, on the other hand, is the following form: *na mā martyaḥ kaścana dātumarhati viśvakarmanbhauvana māṃ didāsithā ni maṅkṣye 'haṃ salilasya madhye* (the earth speaks)
 [AIT. BR. 8,21.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?8,21) Although
@@ -1119,10 +1119,10 @@ Schol. appear for [JAIM. 1,16.] *ādadāyan*
 
 **causal-note)** — Vgl. *ādadi, ādātar, ādātavya*, 1. *ādāna, annādāya, ādāyin* . — caus. nehmen lassen: *srucāvādāpya*
 [ŚĀṄKH. ŚR. 1,6,16. 5,11,6.] Vgl. *ādāpana* . — desid. med. zu ergreifen im Begriff stehen: *pāṇipallavam — āditsamānasya*
-[DAŚAK.] in [BENF. Chr. 210,11.] Vgl. *āditsu* .
+[DAŚAK.] in [BENF. Chr. 210,11.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?210) Vgl. *āditsu* .
 - **EN:** — Vgl. *ādadi, ādātar, ādātavya*, 1. *ādāna, annādāya, ādāyin* . — caus. to cause to take: *srucāvādāpya*
 [ŚĀṄKH. ŚR. 1,6,16. 5,11,6.] Vgl. *ādāpana* . — desid. med. to be about to seize: *pāṇipallavam — āditsamānasya*
-[DAŚAK.] in [BENF. Chr. 210,11.] Vgl. *āditsu* .
+[DAŚAK.] in [BENF. Chr. 210,11.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?210) Vgl. *āditsu* .
 
 ## anv-ā-dā
 
@@ -2910,8 +2910,8 @@ Z. 7 *datte* auch
 **1.4)** — 4〉 zahlen (eine Geldbusse), abtragen (eine Schuld), als Lohn geben.
 - **EN:** — 4) to pay (a fine), to discharge (a debt), to give as wages.
 
-**1.5)** — 5〉 heraus-, wiedergeben (= *punardā*) [101,23].
-- **EN:** — 5) to give out, give back (= *punardā*) [101,23].
+**1.5)** — 5〉 heraus-, wiedergeben (= *punardā*) [101,23](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?101).
+- **EN:** — 5) to give out, give back (= *punardā*) [101,23](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?101).
 
 **1.6)** — 6〉 darbringen (eine Spende, eine Opfer u. s. w.). *ātmānam* sich opfern. *ātmānaṃ khedāya* so v. a. sich der Betrübniss hingeben.
 - **EN:** — 6) to offer, present (a gift, a sacrifice u. s. w.). *ātmānam* to sacrifice oneself. *ātmānaṃ khedāya* thus v. a. to give oneself over to grief.
@@ -2922,11 +2922,11 @@ Z. 7 *datte* auch
 **1.8)** — 8〉 gewähren, bewilligen, gestatten. *prāṇān* oder *jīvitam* gestatten, dass Jmd am Leben bleibt. *darśanam* Jmd seinen Anblick gewähren, sich sehen lassen, sich zeigen. Jmd (Dat.) gestatten (vom Weibe gesagt) so v. a. den Beischlaf gestatten. Mit einem Infin. lassen, mit *na* und einem Infin. nicht gestatten zu.
 - **EN:** — 8) to grant, allow, permit. *prāṇān* or *jīvitam* to permit that someone remain alive. *darśanam* to grant someone sight of oneself, let oneself be seen, show oneself. To permit someone (Dat.) (said of a woman), thus v. a. to permit intercourse. With a Infin. to let, with *na* and a Infin. not to permit to.
 
-**1.9)** — 9〉 geben, so v. a. reichen, zu halten geben, übergeben. *haste* einhändigen [109,25]. [110,8].
-- **EN:** — 9) to give, thus v. a. to hand, give to hold, hand over. *haste* to deliver into the hand [109,25]. [110,8].
+**1.9)** — 9〉 geben, so v. a. reichen, zu halten geben, übergeben. *haste* einhändigen [109,25](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?109). [110,8](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?110).
+- **EN:** — 9) to give, thus v. a. to hand, give to hold, hand over. *haste* to deliver into the hand [109,25](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?109). [110,8](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?110).
 
-**1.10)** — 10〉 legen —, stellen —, setzen auf, an oder in (Loc.), anlegen (auch in medic. Sinne), anbringen [BHĀVAPR. 2,89]. beifügen (bei Ausführung eines Receptes) [ebend.] und [92]. *kare kapolam* die Wange auf die Hand legen, so v. a. die W. mit der H. stützen [KĀRAṆḌ. 64,1]. *argalam* einen Riegel vorschieben, *pāvakam* Feuer anlegen an (Loc.) *agnin* an Jmd (Loc.) das Feuer anlegen, so v. a. verbrennen, *śāram* so v. a. eine Figur (im Spiele) ziehen, *garam* oder *viṣam* Jmd (Gen. [105,24]. [25] oder Acc.!) Gift eingeben.
-- **EN:** — 10) to lay —, place —, put on, at or in (Loc.), to apply (also in a medic. sense), to affix [BHĀVAPR. 2,89]. to add (in preparing a remedy) [ebend.] and [92]. *kare kapolam* to lay the cheek on the hand, thus v. a. to support the W. with the H. [KĀRAṆḌ. 64,1]. *argalam* to push a bolt forward, *pāvakam* to set fire to (Loc.) *agnin* to set fire to someone (Loc.), thus v. a. to burn, *śāram* thus v. a. to move a piece (in a game), *garam* or *viṣam* to administer poison to someone (Gen. [105,24]. [25] or Acc.!).
+**1.10)** — 10〉 legen —, stellen —, setzen auf, an oder in (Loc.), anlegen (auch in medic. Sinne), anbringen [BHĀVAPR. 2,89]. beifügen (bei Ausführung eines Receptes) [ebend.] und [92]. *kare kapolam* die Wange auf die Hand legen, so v. a. die W. mit der H. stützen [KĀRAṆḌ. 64,1]. *argalam* einen Riegel vorschieben, *pāvakam* Feuer anlegen an (Loc.) *agnin* an Jmd (Loc.) das Feuer anlegen, so v. a. verbrennen, *śāram* so v. a. eine Figur (im Spiele) ziehen, *garam* oder *viṣam* Jmd (Gen. [105,24](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?105). [25](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?105) oder Acc.!) Gift eingeben.
+- **EN:** — 10) to lay —, place —, put on, at or in (Loc.), to apply (also in a medic. sense), to affix [BHĀVAPR. 2,89]. to add (in preparing a remedy) [ebend.] and [92]. *kare kapolam* to lay the cheek on the hand, thus v. a. to support the W. with the H. [KĀRAṆḌ. 64,1]. *argalam* to push a bolt forward, *pāvakam* to set fire to (Loc.) *agnin* to set fire to someone (Loc.), thus v. a. to burn, *śāram* thus v. a. to move a piece (in a game), *garam* or *viṣam* to administer poison to someone (Gen. [105,24](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?105). [25](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?105) or Acc.!).
 
 **1.11)** — 11〉 seine Schritte, sein Auge, sein Ohr, seine Gedanken richten auf (Loc.).
 - **EN:** — 11) to direct one's steps, one's eye, one's ear, one's thoughts toward (Loc.).
@@ -2967,8 +2967,8 @@ Z. 7 *datte* auch
 **caus.4)** — 4〉 zurückzugeben, wiederzuverschaffen [RĀJAT. 6,50](https://sanskrit-lexicon-scans.github.io/rajatar/app1?6,50). Auch so v. a. zurückfordern.
 - **EN:** — 4) to give back, to restore [RĀJAT. 6,50](https://sanskrit-lexicon-scans.github.io/rajatar/app1?6,50). Also thus v. a. to demand back.
 
-**caus.5)** — 5〉 mitzutheilen, zu hören zu geben, auszusprechen, zu sprechen [216,15].
-- **EN:** — 5) to communicate, to let be heard, to utter, to speak [216,15].
+**caus.5)** — 5〉 mitzutheilen, zu hören zu geben, auszusprechen, zu sprechen [216,15](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?216).
+- **EN:** — 5) to communicate, to let be heard, to utter, to speak [216,15](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?216).
 
 **caus.6)** — 6〉 hinzustellen, vorzuschieben [KATHĀS. 12,160](https://sanskrit-lexicon-scans.github.io/kss/index.html?12,160). aufzulegen —, aufzutragen auf (Loc.).
 - **EN:** — 6) to set down, to push forward [KATHĀS. 12,160](https://sanskrit-lexicon-scans.github.io/kss/index.html?12,160). to lay on —, to apply to (Loc.).
@@ -3030,20 +3030,20 @@ Z. 7 *datte* auch
 **a.3)** — 3〉 zurücknehmen, zurückfordern.
 - **EN:** — 3) to take back, demand back.
 
-**a.4)** — 4〉 abnehmen von (Abl.) [132,8]. herausnehmen, herausziehen aus (Abl.). [162,10]. [164,22]. trennen —, sondern von (Abl.), abwenden (das Auge).
-- **EN:** — 4) to take off from (Abl.) [132,8]. to take out, draw out from (Abl.). [162,10]. [164,22]. to separate —, part from (Abl.), to avert (the eye).
+**a.4)** — 4〉 abnehmen von (Abl.) [132,8](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?132). herausnehmen, herausziehen aus (Abl.). [162,10](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?162). [164,22](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?164). trennen —, sondern von (Abl.), abwenden (das Auge).
+- **EN:** — 4) to take off from (Abl.) [132,8](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?132). to take out, draw out from (Abl.). [162,10](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?162). [164,22](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?164). to separate —, part from (Abl.), to avert (the eye).
 
-**a.5)** — 5〉 mit sich nehmen, — fortziehen. *ādāya* in Begleitung von, mit (Acc.) [24,5]. [30,29].
-- **EN:** — 5) to take with oneself, — to draw away. *ādāya* in the company of, with (Acc.) [24,5]. [30,29].
+**a.5)** — 5〉 mit sich nehmen, — fortziehen. *ādāya* in Begleitung von, mit (Acc.) [24,5](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?24). [30,29](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?30).
+- **EN:** — 5) to take with oneself, — to draw away. *ādāya* in the company of, with (Acc.) [24,5](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?24). [30,29](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?30).
 
-**a.6)** — 6〉 ergreifen, fassen, packen. *skandhena* auf die Schulter nehmen, *bāhvoḥ* in die Arme nehmen [121,32].
-- **EN:** — 6) to seize, grasp, take hold of. *skandhena* to take on the shoulder, *bāhvoḥ* to take into the arms [121,32].
+**a.6)** — 6〉 ergreifen, fassen, packen. *skandhena* auf die Schulter nehmen, *bāhvoḥ* in die Arme nehmen [121,32](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?121).
+- **EN:** — 6) to seize, grasp, take hold of. *skandhena* to take on the shoulder, *bāhvoḥ* to take into the arms [121,32](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?121).
 
 **a.7)** — 7〉 anthun, anlegen.
 - **EN:** — 7) to put on, don.
 
-**a.8)** — 8〉 zu sich nehmen, geniessen [64,19]. Mit oder ohne *daśanaiḥ* benagen [65,19]. [25].
-- **EN:** — 8) to take to oneself, partake of, enjoy [64,19]. With or without *daśanaiḥ* to gnaw [65,19]. [25].
+**a.8)** — 8〉 zu sich nehmen, geniessen [64,19](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?64). Mit oder ohne *daśanaiḥ* benagen [65,19](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?65). [25](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?65).
+- **EN:** — 8) to take to oneself, partake of, enjoy [64,19](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?64). With or without *daśanaiḥ* to gnaw [65,19](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?65). [25](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?65).
 
 **a.9)** — 9〉 ergreifen, so v. a. erwählen. *mārgam* oder *paddhatim* einen Weg einschlagen.
 - **EN:** — 9) to seize, thus v. a. to choose. *mārgam* or *paddhatim* to take a path.
@@ -3057,8 +3057,8 @@ Z. 7 *datte* auch
 **a.12)** — 12〉 annehmen, gutheissen, billigen.
 - **EN:** — 12) to accept, approve, sanction.
 
-**a.13)** — 13〉 auf sich nehmen, unternehmen, sich einer Sache hingeben ([290,7]. [12]), sich an Etwas machen. *vacanam, vākyam* oder *vacas* das Wort ergreifen, zu reden beginnen. *āhutayaḥ* = *āhutīḥ* so v. a. darbringen.
-- **EN:** — 13) to take upon oneself, undertake, devote oneself to a thing ([290,7]. [12]), to set about something. *vacanam, vākyam* or *vacas* to take up the word, begin to speak. *āhutayaḥ* = *āhutīḥ* thus v. a. to offer.
+**a.13)** — 13〉 auf sich nehmen, unternehmen, sich einer Sache hingeben ([290,7](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?290). [12](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?290)), sich an Etwas machen. *vacanam, vākyam* oder *vacas* das Wort ergreifen, zu reden beginnen. *āhutayaḥ* = *āhutīḥ* so v. a. darbringen.
+- **EN:** — 13) to take upon oneself, undertake, devote oneself to a thing ([290,7](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?290). [12](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?290)), to set about something. *vacanam, vākyam* or *vacas* to take up the word, begin to speak. *āhutayaḥ* = *āhutīḥ* thus v. a. to offer.
 
 **a.14)** — 14〉 ansetzen, anheben (zu sprechen u. s. w.).
 - **EN:** — 14) to set in, begin (to speak u. s. w.).
@@ -3117,8 +3117,8 @@ Z. 7 *datte* auch
 **upa_a.3)** — 3〉 mit sich nehmen. *upādāya* in Begleitung von, mit; mit Acc.
 - **EN:** — 3) to take with oneself. *upādāya* in the company of, with; with Acc.
 
-**upa_a.4)** — 4〉 ergreifen, in die Hand nehmen, fassen, auffangen (Feuer); pflücken, lesen, auflesen [MBH. 7,23,22](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?7,23,22). [Chr. 121,25]. schöpfen (Wasser). *śulāgre* so v. a. stecken auf [R. 3,7,7](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,7,7).
-- **EN:** — 4) to seize, take in hand, grasp, catch (fire); to pluck, gather, pick up [MBH. 7,23,22](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?7,23,22). [Chr. 121,25]. to draw, ladle (water). *śulāgre* thus v. a. to put on [R. 3,7,7](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,7,7).
+**upa_a.4)** — 4〉 ergreifen, in die Hand nehmen, fassen, auffangen (Feuer); pflücken, lesen, auflesen [MBH. 7,23,22](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?7,23,22). [Chr. 121,25](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?121). schöpfen (Wasser). *śulāgre* so v. a. stecken auf [R. 3,7,7](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,7,7).
+- **EN:** — 4) to seize, take in hand, grasp, catch (fire); to pluck, gather, pick up [MBH. 7,23,22](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?7,23,22). [Chr. 121,25](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?121). to draw, ladle (water). *śulāgre* thus v. a. to put on [R. 3,7,7](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,7,7).
 
 **upa_a.5)** — 5〉 anlegen, annehmen (einen Körper).
 - **EN:** — 5) to assume, take on (a body).
@@ -3279,36 +3279,36 @@ Z. 7 *datte* auch
 
 **T147-T152)** — Mit *parā*, *Partic. *parātta*.
 — 1〉 hingeben, überliefern.
-— 2〉 Jmd preisgeben [34,6].
+— 2〉 Jmd preisgeben [34,6](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?34).
 — 3〉 Etwas preisgeben, so v. a. zu Grunde gehen lassen.
 — 4〉 hingeben für (Dat.), umtauschen.
 — 5〉 Jmd von Etwas ausschliessen.
 - **EN:** — With *parā*, *Partic. *parātta*.
 — 1) to give up, to hand over.
-— 2) to abandon, surrender someone [34,6].
+— 2) to abandon, surrender someone [34,6](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?34).
 — 3) to abandon, sacrifice something, hence v. a. to let perish.
 — 4) to give up for, in exchange for (Dat.), to exchange.
 — 5) to exclude someone from something.
 
 **T153-T156)** — Mit *pari*
-— 1〉 übergeben, überantworten, anvertrauen, niederlegen bei oder in (Dat., Loc. oder Gen.). Partic. *parītta* [82,5].
+— 1〉 übergeben, überantworten, anvertrauen, niederlegen bei oder in (Dat., Loc. oder Gen.). Partic. *parītta* [82,5](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?82).
 — 2〉 verleihen.
 Caus. übergeben lassen.
 - **EN:** — With *pari*
-— 1) to hand over, deliver up, entrust, deposit with or in (Dat., Loc. or Gen.). Partic. *parītta* [82,5].
+— 1) to hand over, deliver up, entrust, deposit with or in (Dat., Loc. or Gen.). Partic. *parītta* [82,5](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?82).
 — 2) to confer, bestow.
 Caus. to have handed over.
 
 **T157-T166)** — Mit *pra* Act. Med. (selten), Partic. *pratta* und *pradatta*.
 — 1〉 hingeben, geben schenken, zur Frau (mit oder ohne *bhāryām*) geben. *pradadet* [HEMĀDRI 1,310,18].
-— 2〉 übergeben, darbringen, darreichen, anbieten [68,24]. *yuddham, dvaṃdvayuddham* Jmd (Dat.) einen Kampf, Zweikampf anbieten, mit — zu kämpfen sich bereit erklären.
+— 2〉 übergeben, darbringen, darreichen, anbieten [68,24](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?68). *yuddham, dvaṃdvayuddham* Jmd (Dat.) einen Kampf, Zweikampf anbieten, mit — zu kämpfen sich bereit erklären.
 — 3〉 abtragen, bezahlen (eine Schuld).
 — 4〉 weggeben, so v. a. verkaufen, mit Instr. des Preises.
 — 5〉 wiedererstatten.
 — 6〉 hingeben, so v. a. abschaffen.
 - **EN:** — With *pra* Act. Med. (rarely), Partic. *pratta* and *pradatta*.
 — 1) to give over, to give, bestow, to give (a woman) in marriage (with or without *bhāryām*). *pradadet* [HEMĀDRI 1,310,18].
-— 2) to hand over, to offer, present, tender [68,24]. *yuddham, dvaṃdvayuddham* to offer someone (Dat.) a fight, a duel, to declare oneself ready to fight with.
+— 2) to hand over, to offer, present, tender [68,24](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?68). *yuddham, dvaṃdvayuddham* to offer someone (Dat.) a fight, a duel, to declare oneself ready to fight with.
 — 3) to pay off, to pay (a debt).
 — 4) to give away, hence v. a. to sell, with Instr. of the price specified.
 — 5) to restore, give back.
@@ -3322,7 +3322,7 @@ Caus.
 — 2〉 zu zahlen veranlassen, sich zahlen lassen.
 — 3〉 zurückzugeben zwingen.
 — 4〉 hineinthun —, hineinlegen lassen in (Loc.), anbringen lassen (*mudrām* einen Stöpsel [BHĀVAPR. 2,101]).
-— 5〉 hineinthun —, hineinlegen in (Loc.) [{{CARARA->CARAKA||20160103|Dhaval Patel, Jim Funderburk.|https://github.com/sanskrit-lexicon/CORRECTIONS/issues/216|It is not a typo. Print error.}}. 6,27]. *vastim* Jmd (Dat.) ein Klystier setzen [8,7].
+— 5〉 hineinthun —, hineinlegen in (Loc.) [{{CARARA->CARAKA||20160103|Dhaval Patel, Jim Funderburk.|https://github.com/sanskrit-lexicon/CORRECTIONS/issues/216|It is not a typo. Print error.}}. 6,27]. *vastim* Jmd (Dat.) ein Klystier setzen [8,7](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?8).
 Desid. Med. zur Frau geben wollen.
 - **EN:** — 7) *prativacaḥ* to give an answer to someone.
 — 8) to grant, allow, permit.
@@ -3332,7 +3332,7 @@ Caus. (causative):
 — 2) to cause to pay, to have something paid.
 — 3) to compel to give back.
 — 4) to have put into —, have placed in (Loc.), to have fitted, applied (*mudrām* a stopper [BHĀVAPR. 2,101]).
-— 5) to put into —, to place in (Loc.) [{{CARARA->CARAKA||20160103|Dhaval Patel, Jim Funderburk.|https://github.com/sanskrit-lexicon/CORRECTIONS/issues/216|It is not a typo. Print error.}}. 6,27]. *vastim* to administer an enema to someone (Dat.) [8,7].
+— 5) to put into —, to place in (Loc.) [{{CARARA->CARAKA||20160103|Dhaval Patel, Jim Funderburk.|https://github.com/sanskrit-lexicon/CORRECTIONS/issues/216|It is not a typo. Print error.}}. 6,27]. *vastim* to administer an enema to someone (Dat.) [8,7](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?8).
 Desid. Med. to wish to give in marriage.
 
 **T174)** — Mit *atipra* hinübergeben.
@@ -3516,10 +3516,10 @@ Caus. *avadāpayate* to have divided off.
 - **EN:** 7. √*dā*, **dāyati* to purify.
 
 **T209-T211)** — Mit *ava*, *˚dāta*
-— 1〉 glänzend —, blendend weiss [134,13].
+— 1〉 glänzend —, blendend weiss [134,13](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?134).
 — 2〉 geläutert, lauter, rein in übertr. Bed.
 - **EN:** — With *ava*, *˚dāta*
-— 1) shining —, dazzling white [134,13].
+— 1) shining —, dazzling white [134,13](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?134).
 — 2) refined, pure, clean in übertr. Bed.
 
 **T212-T215)** — Mit *paryava*, *˚dāta*

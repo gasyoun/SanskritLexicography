@@ -354,18 +354,18 @@ Schol. zu [P. 4,3,80.](https://ashtadhyayi.com/sutraani/4/3/80) [100.](https://a
 [KĀTY. ŚR. 7,2,7.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?7,2,7)
 - **EN:** — *apa* 1) to assign, allot something to someone: *kratvarthamapadiśyānyasmai* [KĀTY. ŚR. 7,2,7.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?7,2,7)
 
-**2)** — 2) Etwas anzeigen, angeben: *apadiśyāpadeśyam* [M. 8,54.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,54) *apadiṣṭapaṭahabhramaṇa* [KATHĀS. 26,92.](https://sanskrit-lexicon-scans.github.io/kss/index.html?26,92) Jmd anzeigen, angeben [DAŚAK.] in [BENF. Chr. 193,4.]
+**2)** — 2) Etwas anzeigen, angeben: *apadiśyāpadeśyam* [M. 8,54.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,54) *apadiṣṭapaṭahabhramaṇa* [KATHĀS. 26,92.](https://sanskrit-lexicon-scans.github.io/kss/index.html?26,92) Jmd anzeigen, angeben [DAŚAK.] in [BENF. Chr. 193,4.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?193)
 
-- **RU:** — 2) указывать на что-либо, сообщать: *apadiśyāpadeśyam* [M. 8,54.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,54) *apadiṣṭapaṭahabhramaṇa* [KATHĀS. 26,92.](https://sanskrit-lexicon-scans.github.io/kss/index.html?26,92) указывать на кого-либо, называть [DAŚAK.] в [BENF. Chr. 193,4.]
-- **EN:** — 2) to point out, indicate something: *apadiśyāpadeśyam* [M. 8,54.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,54) *apadiṣṭapaṭahabhramaṇa* [KATHĀS. 26,92.](https://sanskrit-lexicon-scans.github.io/kss/index.html?26,92) to point out, indicate to someone [DAŚAK.] in [BENF. Chr. 193,4.]
+- **RU:** — 2) указывать на что-либо, сообщать: *apadiśyāpadeśyam* [M. 8,54.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,54) *apadiṣṭapaṭahabhramaṇa* [KATHĀS. 26,92.](https://sanskrit-lexicon-scans.github.io/kss/index.html?26,92) указывать на кого-либо, называть [DAŚAK.] в [BENF. Chr. 193,4.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?193)
+- **EN:** — 2) to point out, indicate something: *apadiśyāpadeśyam* [M. 8,54.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,54) *apadiṣṭapaṭahabhramaṇa* [KATHĀS. 26,92.](https://sanskrit-lexicon-scans.github.io/kss/index.html?26,92) to point out, indicate to someone [DAŚAK.] in [BENF. Chr. 193,4.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?193)
   <sub>DCS 4018 · attested</sub>
 
 **3)** — 3) fälschlich angeben, vorgeben, vorschützen: *mitrakṛtyamapadiśya*
 [RAGH. 19,31.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?19,31) [32.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?19,32) [54.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?19,54) *śiraḥśūlasparśamapadiśan*
-[DAŚAK.] in [BENF. Chr. 190,19.] *amunaitadasmabhyaṃ dattamityapadiśya*
-[193,11.]
+[DAŚAK.] in [BENF. Chr. 190,19.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?190) *amunaitadasmabhyaṃ dattamityapadiśya*
+[193,11.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?193)
 — Vgl. *apadeśa* u. s. w.
-- **EN:** — 3) to falsely allege, pretend, claim as a pretext: *mitrakṛtyamapadiśya* [RAGH. 19,31.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?19,31) [32.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?19,32) [54.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?19,54) *śiraḥśūlasparśamapadiśan* [DAŚAK.] in [BENF. Chr. 190,19.] *amunaitadasmabhyaṃ dattamityapadiśya* [193,11.]
+- **EN:** — 3) to falsely allege, pretend, claim as a pretext: *mitrakṛtyamapadiśya* [RAGH. 19,31.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?19,31) [32.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?19,32) [54.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?19,54) *śiraḥśūlasparśamapadiśan* [DAŚAK.] in [BENF. Chr. 190,19.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?190) *amunaitadasmabhyaṃ dattamityapadiśya* [193,11.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?193)
 — Vgl. *apadeśa* u. s. w.
 
 **apa-header)** — *apa*
@@ -378,9 +378,9 @@ Schol. zu [P. 4,3,80.](https://ashtadhyayi.com/sutraani/4/3/80) [100.](https://a
 - **RU:** 1) назначать, отводить кому-либо что-либо: *kratvarthamapadiśyānyasmai* [KĀTY. ŚR. 7,2,7.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?7,2,7)
   <sub>DCS 4018 · attested</sub>
 
-**apa-3)** — 3) fälschlich angeben, vorgeben, vorschützen: *mitrakṛtyamapadiśya* [RAGH. 19,31.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?19,31) [32.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?19,32) [54.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?19,54) *śiraḥśūlasparśamapadiśan* [DAŚAK.] in [BENF. Chr. 190,19.] *amunaitadasmabhyaṃ dattamityapadiśya* [193,11.]
+**apa-3)** — 3) fälschlich angeben, vorgeben, vorschützen: *mitrakṛtyamapadiśya* [RAGH. 19,31.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?19,31) [32.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?19,32) [54.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?19,54) *śiraḥśūlasparśamapadiśan* [DAŚAK.] in [BENF. Chr. 190,19.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?190) *amunaitadasmabhyaṃ dattamityapadiśya* [193,11.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?193)
 
-- **RU:** — 3) ложно указывать, выдавать [что-либо за что-либо], притворяться: *mitrakṛtyamapadiśya* [RAGH. 19,31.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?19,31) [32.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?19,32) [54.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?19,54) *śiraḥśūlasparśamapadiśan* [DAŚAK.] в [BENF. Chr. 190,19.] *amunaitadasmabhyaṃ dattamityapadiśya* [193,11.]
+- **RU:** — 3) ложно указывать, выдавать [что-либо за что-либо], притворяться: *mitrakṛtyamapadiśya* [RAGH. 19,31.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?19,31) [32.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?19,32) [54.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?19,54) *śiraḥśūlasparśamapadiśan* [DAŚAK.] в [BENF. Chr. 190,19.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?190) *amunaitadasmabhyaṃ dattamityapadiśya* [193,11.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?193)
   <sub>DCS 4018 · attested</sub>
 
 **apa-cross-ref)** — Vgl. *apadeśa* u. s. w.
@@ -404,7 +404,7 @@ Schol. zu [P. 4,3,80.](https://ashtadhyayi.com/sutraani/4/3/80) [100.](https://a
 [BHĀG. P. 5,4,9.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,4,9) [7,3.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,7,3) [17,11.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,17,11)
 [PAT.] zu [P. 1,2,49](https://ashtadhyayi.com/sutraani/1/2/49) ([ed. Calc.]). *īśvara iti vyapadiśyate*
 [VEDĀNTAS. (Allah.) No. 25.] Schol. zu [KAP. 1,151.] *tena puruṣo vadhyate puruṣo mucyate vyapadiśyate* (diese Ausdrucksweise wird gebraucht) *yena saṃsāritvaṃ na vidyate*
-[GAUḌAP.] zu [SĀṂKHYAK. 62.] [KULL.] zu [M. 1,36.](https://sanskrit-lexicon-scans.github.io/manu/index.html?1,36) [49.](https://sanskrit-lexicon-scans.github.io/manu/index.html?1,49) [3,175.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,175) [5,15.](https://sanskrit-lexicon-scans.github.io/manu/index.html?5,15) [9,33.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,33) [173.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,173) [DAŚAK.] in [BENF. Chr. 193,9.]
+[GAUḌAP.] zu [SĀṂKHYAK. 62.] [KULL.] zu [M. 1,36.](https://sanskrit-lexicon-scans.github.io/manu/index.html?1,36) [49.](https://sanskrit-lexicon-scans.github.io/manu/index.html?1,49) [3,175.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,175) [5,15.](https://sanskrit-lexicon-scans.github.io/manu/index.html?5,15) [9,33.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,33) [173.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,173) [DAŚAK.] in [BENF. Chr. 193,9.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?193)
 
 - **RU:** — *vyapa*
  1) представлять, обозначать, называть
@@ -417,8 +417,8 @@ Schol. zu [P. 4,3,80.](https://ashtadhyayi.com/sutraani/4/3/80) [100.](https://a
 [BHĀG. P. 5,4,9.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,4,9) [7,3.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,7,3) [17,11.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,17,11)
 [PAT.] к [P. 1,2,49](https://ashtadhyayi.com/sutraani/1/2/49) ([ed. Calc.]). *īśvara iti vyapadiśyate*
 [VEDĀNTAS. (Allah.) No. 25.] Schol. к [KAP. 1,151.] *tena puruṣo vadhyate puruṣo mucyate vyapadiśyate* (этот оборот употребляется) *yena saṃsāritvaṃ na vidyate*
-[GAUḌAP.] к [SĀṂKHYAK. 62.] [KULL.] к [M. 1,36.](https://sanskrit-lexicon-scans.github.io/manu/index.html?1,36) [49.](https://sanskrit-lexicon-scans.github.io/manu/index.html?1,49) [3,175.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,175) [5,15.](https://sanskrit-lexicon-scans.github.io/manu/index.html?5,15) [9,33.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,33) [173.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,173) [DAŚAK.] в [BENF. Chr. 193,9.]
-- **EN:** — *vyapa* 1) to represent, designate, name [ŚAT. BR. 14,6,5,1.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,6,5,1) *iti tadduhitṛtvena vyapadiśyate* [KUMĀRILA] in [MÜLLER, SL. 529.] *bhrātaraṃ rājarājānaṃ maheśvarasakhaṃ prabhum . dhaneśvaraṃ vyapadiśan* [MBH. 3,16189.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16189) [R. 3,54,24.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,54,24) *kulaṃ vyapadiśan ślādhyam* [35,22.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,35,22) [5,59,3.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,59,3) [6,100,20.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,100,20) *mitraṃ ca māṃ vyapadiśasyaparaṃ ca yāsi* [MṚCCH. 62,11.] *yenedaṃ varṣaṃ bhāratamiti vyapadiśanti* [BHĀG. P. 5,4,9.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,4,9) [7,3.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,7,3) [17,11.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,17,11) [PAT.] on [P. 1,2,49](https://ashtadhyayi.com/sutraani/1/2/49) ([ed. Calc.]). *īśvara iti vyapadiśyate* [VEDĀNTAS. (Allah.) No. 25.] Schol. on [KAP. 1,151.] *tena puruṣo vadhyate puruṣo mucyate vyapadiśyate* (this manner of expression is used) *yena saṃsāritvaṃ na vidyate* [GAUḌAP.] on [SĀṂKHYAK. 62.] [KULL.] on [M. 1,36.](https://sanskrit-lexicon-scans.github.io/manu/index.html?1,36) [49.](https://sanskrit-lexicon-scans.github.io/manu/index.html?1,49) [3,175.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,175) [5,15.](https://sanskrit-lexicon-scans.github.io/manu/index.html?5,15) [9,33.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,33) [173.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,173) [DAŚAK.] in [BENF. Chr. 193,9.]
+[GAUḌAP.] к [SĀṂKHYAK. 62.] [KULL.] к [M. 1,36.](https://sanskrit-lexicon-scans.github.io/manu/index.html?1,36) [49.](https://sanskrit-lexicon-scans.github.io/manu/index.html?1,49) [3,175.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,175) [5,15.](https://sanskrit-lexicon-scans.github.io/manu/index.html?5,15) [9,33.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,33) [173.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,173) [DAŚAK.] в [BENF. Chr. 193,9.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?193)
+- **EN:** — *vyapa* 1) to represent, designate, name [ŚAT. BR. 14,6,5,1.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,6,5,1) *iti tadduhitṛtvena vyapadiśyate* [KUMĀRILA] in [MÜLLER, SL. 529.] *bhrātaraṃ rājarājānaṃ maheśvarasakhaṃ prabhum . dhaneśvaraṃ vyapadiśan* [MBH. 3,16189.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16189) [R. 3,54,24.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,54,24) *kulaṃ vyapadiśan ślādhyam* [35,22.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,35,22) [5,59,3.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,59,3) [6,100,20.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,100,20) *mitraṃ ca māṃ vyapadiśasyaparaṃ ca yāsi* [MṚCCH. 62,11.] *yenedaṃ varṣaṃ bhāratamiti vyapadiśanti* [BHĀG. P. 5,4,9.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,4,9) [7,3.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,7,3) [17,11.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,17,11) [PAT.] on [P. 1,2,49](https://ashtadhyayi.com/sutraani/1/2/49) ([ed. Calc.]). *īśvara iti vyapadiśyate* [VEDĀNTAS. (Allah.) No. 25.] Schol. on [KAP. 1,151.] *tena puruṣo vadhyate puruṣo mucyate vyapadiśyate* (this manner of expression is used) *yena saṃsāritvaṃ na vidyate* [GAUḌAP.] on [SĀṂKHYAK. 62.] [KULL.] on [M. 1,36.](https://sanskrit-lexicon-scans.github.io/manu/index.html?1,36) [49.](https://sanskrit-lexicon-scans.github.io/manu/index.html?1,49) [3,175.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,175) [5,15.](https://sanskrit-lexicon-scans.github.io/manu/index.html?5,15) [9,33.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,33) [173.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,173) [DAŚAK.] in [BENF. Chr. 193,9.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?193)
   <sub>DCS 69 · attested</sub>
 
 **2)** — 2) fälschlich bezeichnen, vorgegeben, vorschützen: *svamāśramapadaṃ tasya vyapadiśyāvidūrataḥ*
@@ -697,7 +697,7 @@ Schol. zu [P. 4,3,80.](https://ashtadhyayi.com/sutraani/4/3/80) [100.](https://a
 [HIT. 10,21.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?10,21)
 [KATHĀS. 7,55.](https://sanskrit-lexicon-scans.github.io/kss/index.html?7,55)
 [PRAB. 19,4.] [78,9.]
-[DAŚAK.] in [BENF. Chr. 183,9. 196,1.] *vindhyāṭavyāṃ piśācaṃ tamādiśaddhaneśvaraḥ* verwies ihn in den Vindhya-Wald
+[DAŚAK.] in [BENF. Chr. 183,9. 196,1.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?183) *vindhyāṭavyāṃ piśācaṃ tamādiśaddhaneśvaraḥ* verwies ihn in den Vindhya-Wald
 [KATHĀS. 2,19.](https://sanskrit-lexicon-scans.github.io/kss/index.html?2,19)
 
 - **RU:** — 6) давать кому-л. указание, отдавать приказ, направлять: *ityādideśa mām*
@@ -717,7 +717,7 @@ Schol. zu [P. 4,3,80.](https://ashtadhyayi.com/sutraani/4/3/80) [100.](https://a
 [HIT. 10,21.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?10,21)
 [KATHĀS. 7,55.](https://sanskrit-lexicon-scans.github.io/kss/index.html?7,55)
 [PRAB. 19,4.] [78,9.]
-[DAŚAK.] в [BENF. Chr. 183,9. 196,1.] *vindhyāṭavyāṃ piśācaṃ tamādiśaddhaneśvaraḥ* сослал его в Vindhya-лес
+[DAŚAK.] в [BENF. Chr. 183,9. 196,1.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?183) *vindhyāṭavyāṃ piśācaṃ tamādiśaddhaneśvaraḥ* сослал его в Vindhya-лес
 [KATHĀS. 2,19.](https://sanskrit-lexicon-scans.github.io/kss/index.html?2,19)
 - **EN:** — 6) to instruct someone, give a command, dispatch: *ityādideśa mām*
 [R. GORR. 2,58,33.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,58,33) [6,19,74.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,19,74) *anveṣaṇe 'niruddhasya carānādiśa māciram*
@@ -736,7 +736,7 @@ Schol. zu [P. 4,3,80.](https://ashtadhyayi.com/sutraani/4/3/80) [100.](https://a
 [HIT. 10,21.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?10,21)
 [KATHĀS. 7,55.](https://sanskrit-lexicon-scans.github.io/kss/index.html?7,55)
 [PRAB. 19,4.] [78,9.]
-[DAŚAK.] into [BENF. Chr. 183,9. 196,1.] *vindhyāṭavyāṃ piśācaṃ tamādiśaddhaneśvaraḥ* banished him into the Vindhya-forest
+[DAŚAK.] into [BENF. Chr. 183,9. 196,1.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?183) *vindhyāṭavyāṃ piśācaṃ tamādiśaddhaneśvaraḥ* banished him into the Vindhya-forest
 [KATHĀS. 2,19.](https://sanskrit-lexicon-scans.github.io/kss/index.html?2,19)
   <sub>DCS 628 · attested</sub>
 
@@ -1609,7 +1609,7 @@ Arjuna's became, 489.
 [R. 3,75,35.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,75,35) *kenedamupadiṣṭaṃ te mṛtyudvāramapāvṛtam*
 [43,40.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,43,40) [45,3.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,45,3) [2.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,45,2) *upadiṣṭamihecchāmi tāpasyam*
 [MBH. 5,6019.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.6019) *tasya — tvayāpratibhidya rahasyaṃ labdhavyo mokṣa ityupadiśya*
-[DAŚAK.] in [BENF. Chr. 199,22.] *uṣadekṣyāmi te śreyaḥ*
+[DAŚAK.] in [BENF. Chr. 199,22.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?199) *uṣadekṣyāmi te śreyaḥ*
 [MBH. 3,2614.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2614)
 [R. 1,24,11.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,24,11) —
 [ŚAT. BR. 13,4,3,3.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?13,4,3,3)
@@ -1639,7 +1639,7 @@ Arjuna's became, 489.
 [R. 3,75,35.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,75,35) *kenedamupadiṣṭaṃ te mṛtyudvāramapāvṛtam*
 [43,40.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,43,40) [45,3.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,45,3) [2.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,45,2) *upadiṣṭamihecchāmi tāpasyam*
 [MBH. 5,6019.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.6019) *tasya — tvayāpratibhidya rahasyaṃ labdhavyo mokṣa ityupadiśya*
-[DAŚAK.] в [BENF. Chr. 199,22.] *uṣadekṣyāmi te śreyaḥ*
+[DAŚAK.] в [BENF. Chr. 199,22.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?199) *uṣadekṣyāmi te śreyaḥ*
 [MBH. 3,2614.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2614)
 [R. 1,24,11.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,24,11) —
 [ŚAT. BR. 13,4,3,3.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?13,4,3,3)
@@ -1668,7 +1668,7 @@ Arjuna's became, 489.
 [R. 3,75,35.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,75,35) *kenedamupadiṣṭaṃ te mṛtyudvāramapāvṛtam*
 [43,40.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,43,40) [45,3.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,45,3) [2.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,45,2) *upadiṣṭamihecchāmi tāpasyam*
 [MBH. 5,6019.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.6019) *tasya — tvayāpratibhidya rahasyaṃ labdhavyo mokṣa ityupadiśya*
-[DAŚAK.] in [BENF. Chr. 199,22.] *uṣadekṣyāmi te śreyaḥ*
+[DAŚAK.] in [BENF. Chr. 199,22.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?199) *uṣadekṣyāmi te śreyaḥ*
 [MBH. 3,2614.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2614)
 [R. 1,24,11.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,24,11) —
 [ŚAT. BR. 13,4,3,3.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?13,4,3,3)
@@ -1727,14 +1727,14 @@ Arjuna's became, 489.
   <sub>DCS 804 · attested</sub>
 
 **5)** — 5) Jmd (acc.) anweisen. belehren: *vidvānevopadeṣṭavyo nāvidvāṃstu kadā ca na . vānarānupadiśyājñānsthānabhraṃśaṃ yayuḥ khagāḥ ..*
-[HIT. III,5.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?3,5) [DAŚAK.] in [BENF. Chr. 185,1.] [VEDĀNTAS. (Allah.) No. 19.] Mit acc. der Person und acc. der Sache: *ājagāma gharmaḥ priyā veṣamivopadeṣṭum*
+[HIT. III,5.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?3,5) [DAŚAK.] in [BENF. Chr. 185,1.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?185) [VEDĀNTAS. (Allah.) No. 19.] Mit acc. der Person und acc. der Sache: *ājagāma gharmaḥ priyā veṣamivopadeṣṭum*
 [RAGH. 16,43.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?16,43)
 
 - **RU:** — 5) наставлять, обучать кого-л. (acc.): *vidvānevopadeṣṭavyo nāvidvāṃstu kadā ca na . vānarānupadiśyājñānsthānabhraṃśaṃ yayuḥ khagāḥ ..*
-[HIT. III,5.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?3,5) [DAŚAK.] в [BENF. Chr. 185,1.] [VEDĀNTAS. (Allah.) No. 19.] с acc. лица и acc. предмета: *ājagāma gharmaḥ priyā veṣamivopadeṣṭum*
+[HIT. III,5.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?3,5) [DAŚAK.] в [BENF. Chr. 185,1.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?185) [VEDĀNTAS. (Allah.) No. 19.] с acc. лица и acc. предмета: *ājagāma gharmaḥ priyā veṣamivopadeṣṭum*
 [RAGH. 16,43.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?16,43)
 - **EN:** — 5) to instruct, teach someone (acc.): *vidvānevopadeṣṭavyo nāvidvāṃstu kadā ca na . vānarānupadiśyājñānsthānabhraṃśaṃ yayuḥ khagāḥ ..*
-[HIT. III,5.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?3,5) [DAŚAK.] in [BENF. Chr. 185,1.] [VEDĀNTAS. (Allah.) No. 19.] With acc. of the person and acc. of the thing: *ājagāma gharmaḥ priyā veṣamivopadeṣṭum*
+[HIT. III,5.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?3,5) [DAŚAK.] in [BENF. Chr. 185,1.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?185) [VEDĀNTAS. (Allah.) No. 19.] With acc. of the person and acc. of the thing: *ājagāma gharmaḥ priyā veṣamivopadeṣṭum*
 [RAGH. 16,43.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?16,43)
   <sub>DCS 804 · attested</sub>
 
@@ -1936,7 +1936,7 @@ Arjuna's became, 489.
 [4,1342.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1342) *nirdiṣṭāṃ kulapatinā — parṇaśālām*
 [RAGH. 1,95.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?1,95)
 [BHĀG. P. 1,17,37.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,17,37) *tvāmeva niradikṣat* angeben, nennen
-[DAŚAK.] in [BENF. Chr. 197,23.] *yathānirdiṣṭaparivāra*
+[DAŚAK.] in [BENF. Chr. 197,23.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?197) *yathānirdiṣṭaparivāra*
 [ŚĀK. 21,2.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?21,2) [102,1.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?102,1)
 [DHŪRTAS. 71,1.] *saṃpāditaśca svāmino mayā yathānirdiṣṭa ādeśaḥ*
 [PRAB. 19,11.] *nāmnā nirdiṣṭā sā vaiśvadevī*
@@ -1966,7 +1966,7 @@ Arjuna's became, 489.
 [4,1342.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1342) *nirdiṣṭāṃ kulapatinā — parṇaśālām*
 [RAGH. 1,95.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?1,95)
 [BHĀG. P. 1,17,37.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,17,37) *tvāmeva niradikṣat* указывать, называть
-[DAŚAK.] в [BENF. Chr. 197,23.] *yathānirdiṣṭaparivāra*
+[DAŚAK.] в [BENF. Chr. 197,23.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?197) *yathānirdiṣṭaparivāra*
 [ŚĀK. 21,2.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?21,2) [102,1.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?102,1)
 [DHŪRTAS. 71,1.] *saṃpāditaśca svāmino mayā yathānirdiṣṭa ādeśaḥ*
 [PRAB. 19,11.] *nāmnā nirdiṣṭā sā vaiśvadevī*
@@ -1995,7 +1995,7 @@ Arjuna's became, 489.
 [4,1342.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1342) *nirdiṣṭāṃ kulapatinā — parṇaśālām*
 [RAGH. 1,95.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?1,95)
 [BHĀG. P. 1,17,37.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,17,37) *tvāmeva niradikṣat* to indicate, name
-[DAŚAK.] in [BENF. Chr. 197,23.] *yathānirdiṣṭaparivāra*
+[DAŚAK.] in [BENF. Chr. 197,23.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?197) *yathānirdiṣṭaparivāra*
 [ŚĀK. 21,2.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?21,2) [102,1.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?102,1)
 [DHŪRTAS. 71,1.] *saṃpāditaśca svāmino mayā yathānirdiṣṭa ādeśaḥ*
 [PRAB. 19,11.] *nāmnā nirdiṣṭā sā vaiśvadevī*
@@ -3232,10 +3232,10 @@ Z. 1 lies *gauramāraṇyamanu* .
 - **EN:** — 5) to determine, designate, name
   <sub>DCS 4018 · attested</sub>
 
-**ni-6)** — 6〉 von Jmd (Acc.) aussagen, vorhersagen [327,33].
+**ni-6)** — 6〉 von Jmd (Acc.) aussagen, vorhersagen [327,33](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?327).
 
-- **RU:** — 6〉 высказываться о ком-либо (Acc.), предсказывать [327,33].
-- **EN:** — 6) to state, predict of someone (Acc.) [327,33]
+- **RU:** — 6〉 высказываться о ком-либо (Acc.), предсказывать [327,33](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?327).
+- **EN:** — 6) to state, predict of someone (Acc.) [327,33](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?327)
   <sub>DCS 4018 · attested</sub>
 
 **ni-7)** — 7〉 die Weisung geben, Etwas vorschreiben, anbefehlen. *yānam* so v. a. den Wagen bestellen, — kommen lassen.
@@ -3271,8 +3271,8 @@ Z. 1 lies *gauramāraṇyamanu* .
 **nis-head)** — Caus.
 - **EN:** — Caus.
 
-**nis-1)** — 1〉 zeigen, anweisen (den Weg) [300,31].
-- **EN:** — 1) to show, point out (the way) [300,31]
+**nis-1)** — 1〉 zeigen, anweisen (den Weg) [300,31](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?300).
+- **EN:** — 1) to show, point out (the way) [300,31](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?300)
 
 **nis-2)** — 2〉 Jmd anzeigen, angeben.
 
@@ -3357,10 +3357,10 @@ Z. 1 lies *gauramāraṇyamanu* .
 - **EN:** — 5) to repel someone, thus v. a. to overcome, defeat
   <sub>DCS 4018 · attested</sub>
 
-**prati-6)** — 6〉 besiegen, so v. a. übertreffen [112,25].
+**prati-6)** — 6〉 besiegen, so v. a. übertreffen [112,25](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?112).
 
-- **RU:** — 6〉 побеждать, так v. a. превосходить [112,25].
-- **EN:** — 6) to defeat, thus v. a. to surpass [112,25]
+- **RU:** — 6〉 побеждать, так v. a. превосходить [112,25](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?112).
+- **EN:** — 6) to defeat, thus v. a. to surpass [112,25](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?112)
   <sub>DCS 4018 · attested</sub>
 
 **vi-head)** — Mit *vyā*
@@ -3551,10 +3551,10 @@ Z. 1 lies *gauramāraṇyamanu* .
   <sub>DCS 4018 · attested</sub>
 
 **vi-pass-1)** — Caus.
-— 1〉 zeigen, anweisen (den Weg) [300,31].
+— 1〉 zeigen, anweisen (den Weg) [300,31](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?300).
 
 - **RU:** — Caus.
-— 1〉 показывать, указывать (путь) [300,31].
+— 1〉 показывать, указывать (путь) [300,31](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?300).
   <sub>DCS 4018 · attested</sub>
 
 **vi-ā-1)** — Mit *vyā*
@@ -3629,10 +3629,10 @@ Z. 1 lies *gauramāraṇyamanu* .
 - **EN:** — 5〉 to fix, prescribe.
   <sub>DCS 4018 · attested</sub>
 
-**with anvā 6)** — 6〉 Jmd anweisen, unterweisen, belehren [140,7]. [257,31]. Jmd Etwas beibringen (mit doppeltem Acc.).
+**with anvā 6)** — 6〉 Jmd anweisen, unterweisen, belehren [140,7](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?140). [257,31](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?257). Jmd Etwas beibringen (mit doppeltem Acc.).
 
-- **RU:** — 6〉 наставлять кого-л., поучать, обучать [140,7]. [257,31]. преподавать кому-л. что-л. (с двойным Acc.).
-- **EN:** — 6〉 to instruct —, teach —, inform someone [140,7]. [257,31]. to teach someone something (with double Acc.).
+- **RU:** — 6〉 наставлять кого-л., поучать, обучать [140,7](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?140). [257,31](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?257). преподавать кому-л. что-л. (с двойным Acc.).
+- **EN:** — 6〉 to instruct —, teach —, inform someone [140,7](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?140). [257,31](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?257). to teach someone something (with double Acc.).
   <sub>DCS 4018 · attested</sub>
 
 **with anvā 7)** — 7〉 befehlen —, herrschen über (Acc.). — *upadiṣṭa* [HARIV. 8438](https://sanskrit-lexicon-scans.github.io/hariv?8438) fehlerhaft für *upaviṣṭa*.
@@ -3678,18 +3678,18 @@ Z. 1 lies *gauramāraṇyamanu* .
   <sub>DCS 4018 · attested</sub>
 
 **with ā 1)** — Mit *nis*
-— 1〉 hinweisen —, zeigen auf (Acc.) [308,1].
+— 1〉 hinweisen —, zeigen auf (Acc.) [308,1](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?308).
 
 - **RU:** — С *nis*
-— 1〉 указывать на, показывать на (Acc.) [308,1].
+— 1〉 указывать на, показывать на (Acc.) [308,1](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?308).
 - **EN:** — With *nis*
-— 1〉 to point —, show at (Acc.) [308,1].
+— 1〉 to point —, show at (Acc.) [308,1](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?308).
   <sub>DCS 4018 · attested</sub>
 
-**with ā 2)** — 2〉 Jmd (Dat. oder Gen.) Etwas oder Jmd (Acc.) anweisen, zuweisen, bestimmen. *nirdiṣṭa* Jmd (Gen.) zugewiesen, so v. a. unter seinem Schutz stehend [219,5].
+**with ā 2)** — 2〉 Jmd (Dat. oder Gen.) Etwas oder Jmd (Acc.) anweisen, zuweisen, bestimmen. *nirdiṣṭa* Jmd (Gen.) zugewiesen, so v. a. unter seinem Schutz stehend [219,5](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?219).
 
-- **RU:** — 2〉 наставлять кого-л. (Dat. или Gen.), назначать кому-л. что-л. или кого-л. (Acc.). *nirdiṣṭa* кому-л. (Gen.) назначенный, так v. a. находящийся под его защитой [219,5].
-- **EN:** — 2〉 to assign —, allot —, appoint someone (Dat. or Gen.) something or someone (Acc.). *nirdiṣṭa* assigned to someone (Gen.), so v. a. standing under his protection [219,5].
+- **RU:** — 2〉 наставлять кого-л. (Dat. или Gen.), назначать кому-л. что-л. или кого-л. (Acc.). *nirdiṣṭa* кому-л. (Gen.) назначенный, так v. a. находящийся под его защитой [219,5](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?219).
+- **EN:** — 2〉 to assign —, allot —, appoint someone (Dat. or Gen.) something or someone (Acc.). *nirdiṣṭa* assigned to someone (Gen.), so v. a. standing under his protection [219,5](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?219).
   <sub>DCS 4018 · attested</sub>
 
 **with ā 3)** — 3〉 bezeichnen, angeben, näher bestimmen, nennen.
@@ -3929,10 +3929,10 @@ Z. 1 lies *gauramāraṇyamanu* .
 - **EN:** — 4〉 to direct someone (Acc.), to issue someone a command, to charge someone, to give someone a direction regarding (*prati*).
   <sub>DCS 4018 · attested</sub>
 
-**with prati 5)** — 5〉 Jmd Etwas anbefehlen, auftragen; mit doppeltem Acc. [60,27].
+**with prati 5)** — 5〉 Jmd Etwas anbefehlen, auftragen; mit doppeltem Acc. [60,27](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?60).
 
-- **RU:** — 5〉 приказывать кому-л. что-л., поручать; с двойным Acc. [60,27].
-- **EN:** — 5〉 to enjoin —, charge someone with something; with double Acc. [60,27].
+- **RU:** — 5〉 приказывать кому-л. что-л., поручать; с двойным Acc. [60,27](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?60).
+- **EN:** — 5〉 to enjoin —, charge someone with something; with double Acc. [60,27](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?60).
   <sub>DCS 4018 · attested</sub>
 
 **with prati 6)** — 6〉 Jmd mit einem Auftrage zu Jmd (Dat.) abordnen.
@@ -3974,14 +3974,14 @@ Z. 1 lies *gauramāraṇyamanu* .
 
 
 **1)** **2.** *diś*¦ _f._
-— 1〉 Richtung, Himmelsrichtung, Himmelsgegend. *diśi diśi* allerwärts, nach allen Richtungen hin [172,8]. Pl. so v. a. alle Himmelsgegenden und die ganze Welt ([LA. 89,13]). Von einem Erschrockenen heisst es, dass er nach allen Himmelsgegenden aussehe [320,14]. *diśo 'ntāt* Es werden 4,5,6,7,8,9 ([SUPARṆ. 28,3]) und 10 Himmelsrichtungen angenommen. *etā daśa diśaḥ* elliptisch so v. a. alle Wege stehen dir offen, gehe wohin dir beliebt. *diśāṃ vrataṃ daśānugānam* Name eines Sāman.
-- **EN:** **2.** *diś* _f._ — 1) direction, cardinal point, quarter of the sky. *diśi diśi* everywhere, in all directions [172,8]. Pl. thus v. a. all the quarters of the sky and the whole world ([LA. 89,13]). Of a frightened person it is said that he looks about in all directions [320,14]. *diśo 'ntāt* 4, 5, 6, 7, 8, 9 ([SUPARṆ. 28,3]) and 10 cardinal points are assumed. *etā daśa diśaḥ* elliptically thus v. a. all roads lie open to you, go wherever you please. *diśāṃ vrataṃ daśānugānam* name of a Sāman.
+— 1〉 Richtung, Himmelsrichtung, Himmelsgegend. *diśi diśi* allerwärts, nach allen Richtungen hin [172,8](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?172). Pl. so v. a. alle Himmelsgegenden und die ganze Welt ([LA. 89,13]). Von einem Erschrockenen heisst es, dass er nach allen Himmelsgegenden aussehe [320,14](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?320). *diśo 'ntāt* Es werden 4,5,6,7,8,9 ([SUPARṆ. 28,3]) und 10 Himmelsrichtungen angenommen. *etā daśa diśaḥ* elliptisch so v. a. alle Wege stehen dir offen, gehe wohin dir beliebt. *diśāṃ vrataṃ daśānugānam* Name eines Sāman.
+- **EN:** **2.** *diś* _f._ — 1) direction, cardinal point, quarter of the sky. *diśi diśi* everywhere, in all directions [172,8](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?172). Pl. thus v. a. all the quarters of the sky and the whole world ([LA. 89,13]). Of a frightened person it is said that he looks about in all directions [320,14](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?320). *diśo 'ntāt* 4, 5, 6, 7, 8, 9 ([SUPARṆ. 28,3]) and 10 cardinal points are assumed. *etā daśa diśaḥ* elliptically thus v. a. all roads lie open to you, go wherever you please. *diśāṃ vrataṃ daśānugānam* name of a Sāman.
 
 **2)** — 2〉 Bez. der Zahl zehn.
 - **EN:** — 2) Bez. of the number ten.
 
-**3)** — 3〉 Gegend, Ort [113,32].
-- **EN:** — 3) region, place [113,32].
+**3)** — 3〉 Gegend, Ort [113,32](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?113).
+- **EN:** — 3) region, place [113,32](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?113).
 
 **4)** — 4〉 Raum (neben *kāla* Zeit) [KAP. 2,12].
 - **EN:** — 4) space (alongside *kāla* time) [KAP. 2,12].

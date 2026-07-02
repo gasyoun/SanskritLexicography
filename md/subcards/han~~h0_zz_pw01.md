@@ -375,10 +375,10 @@
 - **EN:** a) whirled up (dust) [ŚIŚ. 15,113 (79)].
   <sub>attested</sub>
 
-**13.6b)** — b〉 erhöht, hervorragend über (Abl.), angeschwollen, hoch gehend (Wasser, Fluss [168,15]. [ŚIŚ. 12,53]), hoch in der Luft schwebend, auf —, in die Höhe gehoben.
+**13.6b)** — b〉 erhöht, hervorragend über (Abl.), angeschwollen, hoch gehend (Wasser, Fluss [168,15](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?168). [ŚIŚ. 12,53]), hoch in der Luft schwebend, auf —, in die Höhe gehoben.
 
-- **RU:** — b〉 возвышенный, выдающийся над (Abl.), разлившийся, высоко поднявшийся (вода, река [168,15]. [ŚIŚ. 12,53]), высоко парящий в воздухе, поднятый вверх.
-- **EN:** b) raised, projecting above (Abl.), swollen, running high (water, a river [168,15]. [ŚIŚ. 12,53]), hovering high in the air, lifted up.
+- **RU:** — b〉 возвышенный, выдающийся над (Abl.), разлившийся, высоко поднявшийся (вода, река [168,15](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?168). [ŚIŚ. 12,53]), высоко парящий в воздухе, поднятый вверх.
+- **EN:** b) raised, projecting above (Abl.), swollen, running high (water, a river [168,15](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?168). [ŚIŚ. 12,53]), hovering high in the air, lifted up.
   <sub>attested</sub>
 
 **13.6c)** — c〉 ausgegraben.

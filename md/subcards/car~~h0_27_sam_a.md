@@ -57,7 +57,7 @@
 [MBH. 3,869.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.869) *āhāramekaparṇena ekaparṇā samācarat* nährte sich von einem einzigen Blatte
 [HARIV. 945.](https://sanskrit-lexicon-scans.github.io/hariv?945) *rājendratvam*
 [5992. fg.](https://sanskrit-lexicon-scans.github.io/hariv?5992) *kaṣṭāni tapāṃsi mahānti dānāni dāruṇāni yuddhāni bhīmāni samudralaṅghanādīni*
-[DAŚAK.] в [BENF. Chr. 183,1.] *dūrādāvasathānmūtraṃ dūrātpādāvasecanam . ucchiṣṭānnaṃ niṣekaṃ ca dūrādeva samācaret ..* fern hinthun
+[DAŚAK.] в [BENF. Chr. 183,1.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?183) *dūrādāvasathānmūtraṃ dūrātpādāvasecanam . ucchiṣṭānnaṃ niṣekaṃ ca dūrādeva samācaret ..* fern hinthun
 [M. 4,151.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,151)
 — Vgl. *samācara* u. s. w.
 
@@ -100,7 +100,7 @@
 [MBH. 3,869.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.869) *āhāramekaparṇena ekaparṇā samācarat* питался одним-единственным листом
 [HARIV. 945.](https://sanskrit-lexicon-scans.github.io/hariv?945) *rājendratvam*
 [5992. fg.](https://sanskrit-lexicon-scans.github.io/hariv?5992) *kaṣṭāni tapāṃsi mahānti dānāni dāruṇāni yuddhāni bhīmāni samudralaṅghanādīni*
-[DAŚAK.] в [BENF. Chr. 183,1.] *dūrādāvasathānmūtraṃ dūrātpādāvasecanam . ucchiṣṭānnaṃ niṣekaṃ ca dūrādeva samācaret ..* отдалить
+[DAŚAK.] в [BENF. Chr. 183,1.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?183) *dūrādāvasathānmūtraṃ dūrātpādāvasecanam . ucchiṣṭānnaṃ niṣekaṃ ca dūrādeva samācaret ..* отдалить
 [M. 4,151.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,151)
 — Vgl. *samācara* u. s. w.
 - **EN:** — 2) to set about, do, practise, perform, accomplish a thing: *śubhaṃ karma*
@@ -142,7 +142,7 @@
 [MBH. 3,869.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.869) *āhāramekaparṇena ekaparṇā samācarat* who lived on a single leaf
 [HARIV. 945.](https://sanskrit-lexicon-scans.github.io/hariv?945) *rājendratvam*
 [5992. fg.](https://sanskrit-lexicon-scans.github.io/hariv?5992) *kaṣṭāni tapāṃsi mahānti dānāni dāruṇāni yuddhāni bhīmāni samudralaṅghanādīni*
-[DAŚAK.] in [BENF. Chr. 183,1.] *dūrādāvasathānmūtraṃ dūrātpādāvasecanam . ucchiṣṭānnaṃ niṣekaṃ ca dūrādeva samācaret ..* to put far away, banish
+[DAŚAK.] in [BENF. Chr. 183,1.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?183) *dūrādāvasathānmūtraṃ dūrātpādāvasecanam . ucchiṣṭānnaṃ niṣekaṃ ca dūrādeva samācaret ..* to put far away, banish
 [M. 4,151.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,151)
 — Vgl. *samācara* u. s. w.
   <sub>DCS 472 · attested</sub>

@@ -93,10 +93,10 @@
 - **EN:** — 5) to consider as, — to acknowledge. Also with *tathā* added.
   <sub>attested</sub>
 
-**anu-6)** — 6〉 Med. nachsprechen, auswendig lernen, lernen [33,4].
+**anu-6)** — 6〉 Med. nachsprechen, auswendig lernen, lernen [33,4](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?33).
 
-- **RU:** — 6〉 Med. повторять за кем-либо, учить наизусть, учиться [33,4].
-- **EN:** — 6) Med. to repeat after, learn by heart, learn [33,4].
+- **RU:** — 6〉 Med. повторять за кем-либо, учить наизусть, учиться [33,4](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?33).
+- **EN:** — 6) Med. to repeat after, learn by heart, learn [33,4](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?33).
   <sub>attested</sub>
 
 **apa2-intro)** — Mit *apa*
@@ -240,8 +240,8 @@
 **vi-intro)** — Mit *vi*
 - **EN:** — With *vi*
 
-**vi-1)** — 1〉 sich aussprechen, sich äussern, aussagen, eine Aussage machen ([214,8]) sprechen.
-- **EN:** — 1) to express oneself, state one's views, testify, make a statement ([214,8]), to speak.
+**vi-1)** — 1〉 sich aussprechen, sich äussern, aussagen, eine Aussage machen ([214,8](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?214)) sprechen.
+- **EN:** — 1) to express oneself, state one's views, testify, make a statement ([214,8](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?214)), to speak.
 
 **vi-2)** — 2〉 sich über Etwas (Acc.) aussprechen, über Etwas seine Meinung sagen, eine Frage beantworten ([ĀPAST. 1,32,22]).
 
@@ -348,10 +348,10 @@
   <sub>attested</sub>
 
 **Mit … sich aussprechen 1)** — Mit *vi*
-— 1〉 sich aussprechen, sich äussern, aussagen, eine Aussage machen ([214,8]) sprechen.
+— 1〉 sich aussprechen, sich äussern, aussagen, eine Aussage machen ([214,8](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?214)) sprechen.
 
 - **RU:** — С *vi*
-— 1〉 высказываться, выражаться, утверждать, делать заявление ([214,8]), говорить.
+— 1〉 высказываться, выражаться, утверждать, делать заявление ([214,8](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?214)), говорить.
   <sub>attested</sub>
 
 **Mit … sich unterreden 1)** — Mit *sam*

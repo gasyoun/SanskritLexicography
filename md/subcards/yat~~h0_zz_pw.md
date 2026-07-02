@@ -165,9 +165,9 @@
 - **RU:** — С *anvā*, *anvāyatta* причастный к, связанный с, находящийся в отношении к, зависящий от, основывающийся —, распространяющийся на, наличествующий в или при; с Loc. или Acc.
   <sub>attested</sub>
 
-**PW_anuyat_caus)** — Caus. Act. anreihen, folgen lassen; in Verbindung bringen, sich betheiligen lassen; mit Loc. oder Acc. [MĀN. GṚHY. 2,2. fgg.] [ĀPAST. ŚR. 6,30,12]. Comm. zu [29,8].
+**PW_anuyat_caus)** — Caus. Act. anreihen, folgen lassen; in Verbindung bringen, sich betheiligen lassen; mit Loc. oder Acc. [MĀN. GṚHY. 2,2. fgg.] [ĀPAST. ŚR. 6,30,12]. Comm. zu [29,8](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?29).
 
-- **RU:** — Caus. Act. выстраивать в ряд, заставлять следовать; приводить в связь, привлекать к участию; с Loc. или Acc. [MĀN. GṚHY. 2,2. fgg.] [ĀPAST. ŚR. 6,30,12]. Comm. к [29,8].
+- **RU:** — Caus. Act. выстраивать в ряд, заставлять следовать; приводить в связь, привлекать к участию; с Loc. или Acc. [MĀN. GṚHY. 2,2. fgg.] [ĀPAST. ŚR. 6,30,12]. Comm. к [29,8](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?29).
   <sub>attested</sub>
 
 **PW_paryat_intro)** — Mit *vyā* Caus. Act.

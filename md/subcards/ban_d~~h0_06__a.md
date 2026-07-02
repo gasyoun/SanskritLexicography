@@ -71,14 +71,14 @@
 
 **2)** — 2) verbinden, zusammenfügen: *vātābaddhābhavanmeghāḥ* (für *vātābaddhā abhavan)* zusammengeballt
 [MBH. 3,9970.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.9970) *ābaddhāñjali* die hohlen Hände zusammengefügt habend
-[DAŚAK.] in [BENF. Chr. 199,14.]
+[DAŚAK.] in [BENF. Chr. 199,14.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?199)
 
 - **RU:** — 2) «соединять, связывать вместе»: *vātābaddhābhavanmeghāḥ* (вместо *vātābaddhā abhavan)* «сжатый в кулак»
 [MBH. 3,9970.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.9970) *ābaddhāñjali* «сложивший ладони лодочкой»
-[DAŚAK.] в [BENF. Chr. 199,14.]
+[DAŚAK.] в [BENF. Chr. 199,14.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?199)
 - **EN:** — 2) "to join, put together": *vātābaddhābhavanmeghāḥ* (for *vātābaddhā abhavan)* "clenched, balled together"
 [MBH. 3,9970.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.9970) *ābaddhāñjali* "having one's cupped hands joined together"
-[DAŚAK.] in [BENF. Chr. 199,14.]
+[DAŚAK.] in [BENF. Chr. 199,14.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?199)
   <sub>attested</sub>
 
 **3)** — 3) festhalten: *(brāhmaṇam) kaṇṭhe *

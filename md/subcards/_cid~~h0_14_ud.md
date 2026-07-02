@@ -20,7 +20,7 @@
 [MBH. 1,6811.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6811) [16,20.](https://sanskrit-lexicon-scans.github.io/mbhcalc?16.20) *kiṃ vā ripūṃstava guruḥ svayamucchinatti*
 [RAGH. 5,71.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?5,71) [2,23.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?2,23)
 [PAÑCAT. 155,12.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?155,12) *ucchidyamānaṃ rāmeṇa bharataṃ trātumarhasi*
-[R. GORR. 2,7,30.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,7,30) [MBH. 12,2612.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.2612) [DAŚAK.] in [BENF. Chr. 197,15.] *duḥkhatrayam*
+[R. GORR. 2,7,30.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,7,30) [MBH. 12,2612.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.2612) [DAŚAK.] in [BENF. Chr. 197,15.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?197) *duḥkhatrayam*
 Sch. in [WILS.] [SĀṂKHYAK. S. 10.] *ucchettuṃ prabhavati yanna saptasaptistannaiśaṃ timiramapākaroti candraḥ*
 [ŚĀK. 157.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?157) *ucchinna* (neben *vinaṣṭa*) zu Grunde gegangen, verworfen, erbärmlich
 [MṚCCH. 34,15.]
@@ -30,7 +30,7 @@ Sch. in [WILS.] [SĀṂKHYAK. S. 10.] *ucchettuṃ prabhavati yanna saptasaptist
 [MBH. 1,6811.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6811) [16,20.](https://sanskrit-lexicon-scans.github.io/mbhcalc?16.20) *kiṃ vā ripūṃstava guruḥ svayamucchinatti*
 [RAGH. 5,71.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?5,71) [2,23.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?2,23)
 [PAÑCAT. 155,12.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?155,12) *ucchidyamānaṃ rāmeṇa bharataṃ trātumarhasi*
-[R. GORR. 2,7,30.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,7,30) [MBH. 12,2612.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.2612) [DAŚAK.] in [BENF. Chr. 197,15.] *duḥkhatrayam*
+[R. GORR. 2,7,30.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,7,30) [MBH. 12,2612.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.2612) [DAŚAK.] in [BENF. Chr. 197,15.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?197) *duḥkhatrayam*
 Sch. in [WILS.] [SĀṂKHYAK. S. 10.] *ucchettuṃ prabhavati yanna saptasaptistannaiśaṃ timiramapākaroti candraḥ*
 [ŚĀK. 157.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?157) *ucchinna* (neben *vinaṣṭa*) погибший, отвергнутый, жалкий
 [MṚCCH. 34,15.]
@@ -39,7 +39,7 @@ Sch. in [WILS.] [SĀṂKHYAK. S. 10.] *ucchettuṃ prabhavati yanna saptasaptist
 [MBH. 1,6811.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6811) [16,20.](https://sanskrit-lexicon-scans.github.io/mbhcalc?16.20) *kiṃ vā ripūṃstava guruḥ svayamucchinatti*
 [RAGH. 5,71.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?5,71) [2,23.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?2,23)
 [PAÑCAT. 155,12.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?155,12) *ucchidyamānaṃ rāmeṇa bharataṃ trātumarhasi*
-[R. GORR. 2,7,30.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,7,30) [MBH. 12,2612.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.2612) [DAŚAK.] in [BENF. Chr. 197,15.] *duḥkhatrayam*
+[R. GORR. 2,7,30.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,7,30) [MBH. 12,2612.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.2612) [DAŚAK.] in [BENF. Chr. 197,15.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?197) *duḥkhatrayam*
 Sch. in [WILS.] [SĀṂKHYAK. S. 10.] *ucchettuṃ prabhavati yanna saptasaptistannaiśaṃ timiramapākaroti candraḥ*
 [ŚĀK. 157.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?157) *ucchinna* (beside *vinaṣṭa*) ruined, rejected, wretched
 [MṚCCH. 34,15.]

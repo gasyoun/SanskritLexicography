@@ -12,7 +12,7 @@
 [CHĀND. UP. 1,1,8.] *omityagnihotramanujānāti*
 [TAITT. UP. 1,8.] *sthānaṃ tvihānujānīhi prajānāṃ mama ca*
 [BHĀG. P. 3,13,14.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,13,14) *māṃ jātamātrāṃ dhanamitranāmne — anvajānādbhāryāṃ me pitā* zusagen
-[DAŚAK.] in [BENF. Chr. 186,19.] *anvajānāttato dyūtam*
+[DAŚAK.] in [BENF. Chr. 186,19.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?186) *anvajānāttato dyūtam*
 [MBH. 1,136.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.136) *duhitustamabhiprāyamanvajānāt*
 [3,2955.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2955) *abhipretāṃstu me kāmāṃstvamanujñātumarhasi*
 [10024. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10024) [4,799.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.799) [R. 1,57,17.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,57,17) [60,28.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,60,28) [BHĀG. P. 9,3,26.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,3,26) [KULL.] zu [M. 3,108.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,108) [5,70.](https://sanskrit-lexicon-scans.github.io/manu/index.html?5,70) *tato 'nujajñe* (wohl pass.) *gamanaṃ sutasya*
@@ -37,7 +37,7 @@
 [CHĀND. UP. 1,1,8.] *omityagnihotramanujānāti*
 [TAITT. UP. 1,8.] *sthānaṃ tvihānujānīhi prajānāṃ mama ca*
 [BHĀG. P. 3,13,14.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,13,14) *māṃ jātamātrāṃ dhanamitranāmne — anvajānādbhāryāṃ me pitā* соглашаться
-[DAŚAK.] in [BENF. Chr. 186,19.] *anvajānāttato dyūtam*
+[DAŚAK.] in [BENF. Chr. 186,19.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?186) *anvajānāttato dyūtam*
 [MBH. 1,136.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.136) *duhitustamabhiprāyamanvajānāt*
 [3,2955.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2955) *abhipretāṃstu me kāmāṃstvamanujñātumarhasi*
 [10024. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10024) [4,799.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.799) [R. 1,57,17.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,57,17) [60,28.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,60,28) [BHĀG. P. 9,3,26.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,3,26) [KULL.] zu [M. 3,108.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,108) [5,70.](https://sanskrit-lexicon-scans.github.io/manu/index.html?5,70) *tato 'nujajñe* (wohl pass.) *gamanaṃ sutasya*
@@ -61,7 +61,7 @@
 [CHĀND. UP. 1,1,8.] *omityagnihotramanujānāti*
 [TAITT. UP. 1,8.] *sthānaṃ tvihānujānīhi prajānāṃ mama ca*
 [BHĀG. P. 3,13,14.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,13,14) *māṃ jātamātrāṃ dhanamitranāmne — anvajānādbhāryāṃ me pitā* to promise
-[DAŚAK.] in [BENF. Chr. 186,19.] *anvajānāttato dyūtam*
+[DAŚAK.] in [BENF. Chr. 186,19.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?186) *anvajānāttato dyūtam*
 [MBH. 1,136.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.136) *duhitustamabhiprāyamanvajānāt*
 [3,2955.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2955) *abhipretāṃstu me kāmāṃstvamanujñātumarhasi*
 [10024. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10024) [4,799.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.799) [R. 1,57,17.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,57,17) [60,28.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,60,28) [BHĀG. P. 9,3,26.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,3,26) [KULL.] to [M. 3,108.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,108) [5,70.](https://sanskrit-lexicon-scans.github.io/manu/index.html?5,70) *tato 'nujajñe* (probably pass.) *gamanaṃ sutasya*

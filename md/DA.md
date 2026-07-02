@@ -123,7 +123,7 @@ _PWG article — 152 sub-card(s), 957 sense(s) · RU 345/957 · EN 612/957_
 [1222.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1222) *yaccānyadapi kartavyaṃ tadvidhatsva*
 [2,2567.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2567) [HARIV. 10449.](https://sanskrit-lexicon-scans.github.io/hariv?10449) *vidhattāṃ bhagavānantam*
 [MBH. 3,12191.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12191) *vihitaṃ yatsurarṣibhiḥ*
-[13,1572.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1572) [PAÑCAT. I,217.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?1,217) [VEDĀNTAS. (Allah.) No. 12.] Schol. zu [KAP. 1,16. Einl.] zu [JAIM.] [DAŚAK.] in [BENF. Chr. 181,4. 185,6.] *svaśabdena yatra guṇavṛddhī vidhīyete*
+[13,1572.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1572) [PAÑCAT. I,217.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?1,217) [VEDĀNTAS. (Allah.) No. 12.] Schol. zu [KAP. 1,16. Einl.] zu [JAIM.] [DAŚAK.] in [BENF. Chr. 181,4. 185,6.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?181) *svaśabdena yatra guṇavṛddhī vidhīyete*
 Schol. zu [P. 1,1,3.](https://ashtadhyayi.com/sutraani/1/1/3) [54.](https://ashtadhyayi.com/sutraani/1/1/54) [KĀŚ.] zu [P. 1,2,33.](https://ashtadhyayi.com/sutraani/1/2/33) *nākāle vihito mṛtyurmartyānām*
 [N. 11,7.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?11,7) *vidhatse svena vīryeṇa śreyo dharmādilakṣaṇam*
 [BHĀG. P. 1,7,24.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,7,24) *śūdrasya tu savarṇaiva nānyā bhāryā vidhīyate*
@@ -154,7 +154,7 @@ Schol. zu [P. 1,1,3.](https://ashtadhyayi.com/sutraani/1/1/3) [54.](https://asht
 [1222.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1222) *yaccānyadapi kartavyaṃ tadvidhatsva*
 [2,2567.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2567) [HARIV. 10449.](https://sanskrit-lexicon-scans.github.io/hariv?10449) *vidhattāṃ bhagavānantam*
 [MBH. 3,12191.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12191) *vihitaṃ yatsurarṣibhiḥ*
-[13,1572.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1572) [PAÑCAT. I,217.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?1,217) [VEDĀNTAS. (Allah.) No. 12.] Schol. zu [KAP. 1,16. Einl.] zu [JAIM.] [DAŚAK.] in [BENF. Chr. 181,4. 185,6.] *svaśabdena yatra guṇavṛddhī vidhīyete*
+[13,1572.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1572) [PAÑCAT. I,217.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?1,217) [VEDĀNTAS. (Allah.) No. 12.] Schol. zu [KAP. 1,16. Einl.] zu [JAIM.] [DAŚAK.] in [BENF. Chr. 181,4. 185,6.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?181) *svaśabdena yatra guṇavṛddhī vidhīyete*
 Schol. zu [P. 1,1,3.](https://ashtadhyayi.com/sutraani/1/1/3) [54.](https://ashtadhyayi.com/sutraani/1/1/54) [KĀŚ.] zu [P. 1,2,33.](https://ashtadhyayi.com/sutraani/1/2/33) *nākāle vihito mṛtyurmartyānām*
 [N. 11,7.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?11,7) *vidhatse svena vīryeṇa śreyo dharmādilakṣaṇam*
 [BHĀG. P. 1,7,24.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,7,24) *śūdrasya tu savarṇaiva nānyā bhāryā vidhīyate*
@@ -354,7 +354,7 @@ Schol. zu [P. 1,1,3.](https://ashtadhyayi.com/sutraani/1/1/3) [54.](https://asht
 [VIKR. 30.](https://sanskrit-lexicon-scans.github.io/vikramor/app1?30)
 [ŚRUT. 29.] *etān — yathā drāgananyasadṛśānvidadhāsi tathā kāryam*
 [PAÑCAT. 4,25.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?4,25) *putraṃ śayyāyāṃ susthitaṃ vidhāya*
-[238,16.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?238,16) [KATHĀS. 4,48.](https://sanskrit-lexicon-scans.github.io/kss/index.html?4,48) [5,82.](https://sanskrit-lexicon-scans.github.io/kss/index.html?5,82) [6,167.](https://sanskrit-lexicon-scans.github.io/kss/index.html?6,167) [13,196.](https://sanskrit-lexicon-scans.github.io/kss/index.html?13,196) [VID. 59.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?59) [Z. d. d. m. G. 14,574,9.] [RĀJA-TAR. 1,108.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?1,108) [121.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?1,121) [3,93.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?3,93) [5,83.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,83) [169.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,169) [230.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,230) [385.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,385) [BHĀG. P. 1,4,19.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,4,19) [DAŚAK.] in [BENF. Chr. 184,22. 185,16.]
+[238,16.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?238,16) [KATHĀS. 4,48.](https://sanskrit-lexicon-scans.github.io/kss/index.html?4,48) [5,82.](https://sanskrit-lexicon-scans.github.io/kss/index.html?5,82) [6,167.](https://sanskrit-lexicon-scans.github.io/kss/index.html?6,167) [13,196.](https://sanskrit-lexicon-scans.github.io/kss/index.html?13,196) [VID. 59.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?59) [Z. d. d. m. G. 14,574,9.] [RĀJA-TAR. 1,108.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?1,108) [121.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?1,121) [3,93.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?3,93) [5,83.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,83) [169.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,169) [230.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,230) [385.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,385) [BHĀG. P. 1,4,19.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,4,19) [DAŚAK.] in [BENF. Chr. 184,22. 185,16.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?184)
 - **EN:** — 7) to make into, reddere; with the acc. of object and predicate: *pravīṇaḥ preṣaṇādhyakṣo dharmādhyakṣo vidhīyate*
 [CĀṆ. 102. fg.] *tām . gāndharvavidhinā guptaṃ bhāryāṃ vyadhita*
 [KATHĀS. 10,146.](https://sanskrit-lexicon-scans.github.io/kss/index.html?10,146) *nṛpam — punaḥ pārthaṃ vyadhuḥ*
@@ -364,7 +364,7 @@ Schol. zu [P. 1,1,3.](https://ashtadhyayi.com/sutraani/1/1/3) [54.](https://asht
 [VIKR. 30.](https://sanskrit-lexicon-scans.github.io/vikramor/app1?30)
 [ŚRUT. 29.] *etān — yathā drāgananyasadṛśānvidadhāsi tathā kāryam*
 [PAÑCAT. 4,25.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?4,25) *putraṃ śayyāyāṃ susthitaṃ vidhāya*
-[238,16.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?238,16) [KATHĀS. 4,48.](https://sanskrit-lexicon-scans.github.io/kss/index.html?4,48) [5,82.](https://sanskrit-lexicon-scans.github.io/kss/index.html?5,82) [6,167.](https://sanskrit-lexicon-scans.github.io/kss/index.html?6,167) [13,196.](https://sanskrit-lexicon-scans.github.io/kss/index.html?13,196) [VID. 59.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?59) [Z. d. d. m. G. 14,574,9.] [RĀJA-TAR. 1,108.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?1,108) [121.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?1,121) [3,93.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?3,93) [5,83.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,83) [169.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,169) [230.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,230) [385.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,385) [BHĀG. P. 1,4,19.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,4,19) [DAŚAK.] in [BENF. Chr. 184,22. 185,16.]
+[238,16.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?238,16) [KATHĀS. 4,48.](https://sanskrit-lexicon-scans.github.io/kss/index.html?4,48) [5,82.](https://sanskrit-lexicon-scans.github.io/kss/index.html?5,82) [6,167.](https://sanskrit-lexicon-scans.github.io/kss/index.html?6,167) [13,196.](https://sanskrit-lexicon-scans.github.io/kss/index.html?13,196) [VID. 59.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?59) [Z. d. d. m. G. 14,574,9.] [RĀJA-TAR. 1,108.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?1,108) [121.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?1,121) [3,93.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?3,93) [5,83.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,83) [169.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,169) [230.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,230) [385.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,385) [BHĀG. P. 1,4,19.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,4,19) [DAŚAK.] in [BENF. Chr. 184,22. 185,16.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?184)
 
 **8)** — 8) sich Etwas angelegen sein lassen: *tasmādbalaṃ ca koṣaśca* (so ist zu lesen) *nītiścāpi *
 
@@ -840,7 +840,7 @@ to set, place: *tāmagrataḥ — anūparājasya — vidhāya*
 
 [14.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.14) [1546.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.1546) übereinkommen, sich verbinden mit, sich vertragen mit, sich aussöhnen mit (instr., seltener acc.): *devāśca vā asurāśca samadadhanta*
 [PAÑCAV. BR. 13,6,9. 12,6,8.] *śapathapūrvaṃ tena saṃdhāya*
-[DAŚAK.] in [BENF. Chr. 198,1.] [HARIV. 4174.](https://sanskrit-lexicon-scans.github.io/hariv?4174) [KĀM. NĪTIS. 9,67. 11,2. 5.] *saṃdadhāno hi kāleṣu vigṛhṇaṃścāribhiḥ saha*
+[DAŚAK.] in [BENF. Chr. 198,1.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?198) [HARIV. 4174.](https://sanskrit-lexicon-scans.github.io/hariv?4174) [KĀM. NĪTIS. 9,67. 11,2. 5.] *saṃdadhāno hi kāleṣu vigṛhṇaṃścāribhiḥ saha*
 [R. 6,11,11.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,11,11) *asaṃdadhāno mānādyaḥ samenāpi hato bhṛśam*
 [PAÑCAT. III,13.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?3,13) [MBH. 5,4281.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.4281) [12,2611.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.2611) [KATHĀS. 17,47.](https://sanskrit-lexicon-scans.github.io/kss/index.html?17,47) [BHĀG. P. 4,19,39.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,19,39) *satyadharmavyapetena na saṃdadhyāt*
 [KĀM. NĪTIS. 9,41.] [PAÑCAT. II,30.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?2,30) *saṃdadhīta na cānāryaṃ vigṛhṇīyānna bandhubhiḥ*
@@ -857,7 +857,7 @@ to set, place: *tāmagrataḥ — anūparājasya — vidhāya*
 
 [14.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.14) [1546.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.1546) to agree, ally oneself with, come to terms with, be reconciled with (instr., more rarely acc.): *devāśca vā asurāśca samadadhanta*
 [PAÑCAV. BR. 13,6,9. 12,6,8.] *śapathapūrvaṃ tena saṃdhāya*
-[DAŚAK.] in [BENF. Chr. 198,1.] [HARIV. 4174.](https://sanskrit-lexicon-scans.github.io/hariv?4174) [KĀM. NĪTIS. 9,67. 11,2. 5.] *saṃdadhāno hi kāleṣu vigṛhṇaṃścāribhiḥ saha*
+[DAŚAK.] in [BENF. Chr. 198,1.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?198) [HARIV. 4174.](https://sanskrit-lexicon-scans.github.io/hariv?4174) [KĀM. NĪTIS. 9,67. 11,2. 5.] *saṃdadhāno hi kāleṣu vigṛhṇaṃścāribhiḥ saha*
 [R. 6,11,11.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,11,11) *asaṃdadhāno mānādyaḥ samenāpi hato bhṛśam*
 [PAÑCAT. III,13.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?3,13) [MBH. 5,4281.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.4281) [12,2611.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.2611) [KATHĀS. 17,47.](https://sanskrit-lexicon-scans.github.io/kss/index.html?17,47) [BHĀG. P. 4,19,39.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,19,39) *satyadharmavyapetena na saṃdadhyāt*
 [KĀM. NĪTIS. 9,41.] [PAÑCAT. II,30.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?2,30) *saṃdadhīta na cānāryaṃ vigṛhṇīyānna bandhubhiḥ*
@@ -2034,8 +2034,8 @@ Z. 6 read 158, 3.
 **pres-stems)** **1.** *dhā*¦, Präsensstämme: *dadhā* (Act.), *dadh* (Act. Med.), *dadha* (Act. Med.) und *dhā* (Act. Med.); Absol. *dhitvā* ([TS. 7,4,3,1.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?7,4,3,1) [2](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?7,4,3,2)) und *hitvā*; Pass. *dhīyate, ˚dhita* (*dhita* [HARIV. 7799](https://sanskrit-lexicon-scans.github.io/hariv?7799) verdächtig) und *hita* (s. bes.).
 - **EN:** **1.** *dhā*¦, present stems: *dadhā* (Act.), *dadh* (Act. Med.), *dadha* (Act. Med.) and *dhā* (Act. Med.); Absol. *dhitvā* ([TS. 7,4,3,1.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?7,4,3,1) [2](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?7,4,3,2)) and *hitvā*; Pass. *dhīyate, ˚dhita* (*dhita* [HARIV. 7799](https://sanskrit-lexicon-scans.github.io/hariv?7799) dubious) and *hita* (s. bes.).
 
-**1)** — 1〉 setzen, legen, stellen, einfügen, einbringen, — in oder auf (Loc.). *daṇḍam* den Stock legen auf, so v. a. Strafe verhängen über (Loc. oder Gen.). *tatpadavyāṃ padam* den Fuss auf seinen Weg stellen, so v. a. es ihm nachthun, ihm gleichen [251,7]. Meist Act.
-- **EN:** — 1〉 to set, lay, place, insert, bring into — in or upon (Loc.). *daṇḍam* to lay the stick upon, hence v. a. to inflict punishment upon (Loc. or Gen.). *tatpadavyāṃ padam* to set one's foot in his path, hence v. a. to imitate him, to equal him [251,7]. Mostly Act.
+**1)** — 1〉 setzen, legen, stellen, einfügen, einbringen, — in oder auf (Loc.). *daṇḍam* den Stock legen auf, so v. a. Strafe verhängen über (Loc. oder Gen.). *tatpadavyāṃ padam* den Fuss auf seinen Weg stellen, so v. a. es ihm nachthun, ihm gleichen [251,7](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?251). Meist Act.
+- **EN:** — 1〉 to set, lay, place, insert, bring into — in or upon (Loc.). *daṇḍam* to lay the stick upon, hence v. a. to inflict punishment upon (Loc. or Gen.). *tatpadavyāṃ padam* to set one's foot in his path, hence v. a. to imitate him, to equal him [251,7](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?251). Mostly Act.
 
 **2)** — 2〉 hinbringen —, hinschaffen zu (Loc.) *āre* weit wegschaffen [ṚV. 10,35,4](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.035.html#rv10.035.04). Meist Act.
 - **EN:** — 2〉 to bring to, convey to (Loc.); *āre* to remove far away [ṚV. 10,35,4](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.035.html#rv10.035.04). Mostly Act.
@@ -2211,8 +2211,8 @@ Z. 6 read 158, 3.
 **preverb-pari-1)** — 1〉 Jmdm (Dat.) übergeben, dahingeben, überliefern.
 - **EN:** — 1〉 to hand over to someone (Dat.), to give up, to transmit.
 
-**preverb-pari-2)** — 2〉 richten, zurichten [ṚV. 2,23,6. 7](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.023.html#rv02.023.06), [34,9].
-- **EN:** — 2〉 to prepare, to make ready [ṚV. 2,23,6. 7](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.023.html#rv02.023.06), [34,9].
+**preverb-pari-2)** — 2〉 richten, zurichten [ṚV. 2,23,6. 7](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.023.html#rv02.023.06), [34,9](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?34).
+- **EN:** — 2〉 to prepare, to make ready [ṚV. 2,23,6. 7](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.023.html#rv02.023.06), [34,9](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?34).
 
 **preverb-pari-3)** — 3〉 umhüllen, umlegen mit (Instr.), umwinden, binden. Gewöhnlich Med. *abhihita* angebunden, angeschirrt, angespannt.
 - **EN:** — 3〉 to enwrap, to put around (Instr.), to wind around, to bind. Usually Med. *abhihita* bound, harnessed, yoked.
@@ -2232,11 +2232,11 @@ Z. 6 read 158, 3.
 **preverb-pari-8)** — 8〉 bezeichnen, benennen; Pass. bezeichnet —, benannt werden, heissen. *abhihita* bezeichnet, genannt, heissend.
 - **EN:** — 8〉 to denote, to name; Pass. to be denoted, named, called. *abhihita* denoted, named, called.
 
-**preverb-pari-9)** — 9〉 angeben, auseinandersetzen, mittheilen, sprechen über, vortragen, Etwas sagen, sprechen, aussprechen. *abhihita* angegeben, angezeigt [219,27] mitgetheilt, vorgebracht, vorgetragen, gesprochen, worüber oder über wen gesprochen worden ist.
-- **EN:** — 9〉 to indicate, to expound, to communicate, to speak about, to set forth, to say something, to speak, to utter. *abhihita* indicated, shown [219,27] communicated, adduced, set forth, spoken, that about which or about whom something has been spoken.
+**preverb-pari-9)** — 9〉 angeben, auseinandersetzen, mittheilen, sprechen über, vortragen, Etwas sagen, sprechen, aussprechen. *abhihita* angegeben, angezeigt [219,27](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?219) mitgetheilt, vorgebracht, vorgetragen, gesprochen, worüber oder über wen gesprochen worden ist.
+- **EN:** — 9〉 to indicate, to expound, to communicate, to speak about, to set forth, to say something, to speak, to utter. *abhihita* indicated, shown [219,27](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?219) communicated, adduced, set forth, spoken, that about which or about whom something has been spoken.
 
-**preverb-pari-10)** — 10〉 zu Jmd Etwas sagen, — sprechen; mit doppeltem Acc. *abhihita* zu dem Etwas gesagt worden ist [107,21].
-- **EN:** — 10〉 to say something to someone, to speak to; with double Acc. *abhihita* he to whom something has been said [107,21].
+**preverb-pari-10)** — 10〉 zu Jmd Etwas sagen, — sprechen; mit doppeltem Acc. *abhihita* zu dem Etwas gesagt worden ist [107,21](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?107).
+- **EN:** — 10〉 to say something to someone, to speak to; with double Acc. *abhihita* he to whom something has been said [107,21](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?107).
 
 **preverb-pari-caus)** — Caus. Med. nennen lassen.
 - **EN:** — Caus. Med. to have someone named.
@@ -2342,11 +2342,11 @@ Z. 6 read 158, 3.
 **Mit ā+pra (prefix group))** — Mit *ā*
 - **EN:** — With *ā*
 
-**1)** — 1〉 hinstellen, legen —, setzen —, bringen in, an oder auf (Loc.), Leibesfrucht hineinlegen in ein Weib (Gen.) [71,9]. Tugenden Jmd (Loc.) einimpfen, dem Blick, den Sinn, die Gedanken richten auf (Loc.), Sorgfalt verwenden auf (*pratipātram*), eine Schuld auf Jmd (Loc.) wälzen, Furcht Jmd (Loc.) einjagen. In der späteren Sprache gewöhnlich Med. *āhita* aufgelegt, hineingelegt (Leibesfrucht [73,6]).
-- **EN:** — 1〉 to place, lay, set, bring in, at, or upon (Loc.); to insert an embryo in a woman (Gen.) [71,9]; to instil virtues into someone (Loc.); to direct the gaze, the mind, the thoughts upon (Loc.); to apply care to (*pratipātram*); to shift a blame onto someone (Loc.); to instil fear into someone (Loc.). In the later language usually Med. *āhita* placed upon, inserted (embryo [73,6]).
+**1)** — 1〉 hinstellen, legen —, setzen —, bringen in, an oder auf (Loc.), Leibesfrucht hineinlegen in ein Weib (Gen.) [71,9](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?71). Tugenden Jmd (Loc.) einimpfen, dem Blick, den Sinn, die Gedanken richten auf (Loc.), Sorgfalt verwenden auf (*pratipātram*), eine Schuld auf Jmd (Loc.) wälzen, Furcht Jmd (Loc.) einjagen. In der späteren Sprache gewöhnlich Med. *āhita* aufgelegt, hineingelegt (Leibesfrucht [73,6](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?73)).
+- **EN:** — 1〉 to place, lay, set, bring in, at, or upon (Loc.); to insert an embryo in a woman (Gen.) [71,9](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?71); to instil virtues into someone (Loc.); to direct the gaze, the mind, the thoughts upon (Loc.); to apply care to (*pratipātram*); to shift a blame onto someone (Loc.); to instil fear into someone (Loc.). In the later language usually Med. *āhita* placed upon, inserted (embryo [73,6](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?73)).
 
-**2)** — 2〉 Holz zulegen (zum Feuer) [37,16]. [20]. [38,5].
-- **EN:** — 2〉 to add wood (to the fire) [37,16]. [20]. [38,5].
+**2)** — 2〉 Holz zulegen (zum Feuer) [37,16](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?37). [20](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?37). [38,5](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?38).
+- **EN:** — 2〉 to add wood (to the fire) [37,16](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?37). [20](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?37). [38,5](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?38).
 
 **3)** — 3〉 einsetzen (im Spiel).
 - **EN:** — 3〉 to stake (in gambling).
@@ -2381,8 +2381,8 @@ Z. 6 read 158, 3.
 **13)** — 13〉 zu oder in sich aufnehmen eine Lehre annehmen (buddh.), ein Gelübde auf sich nehmen, — thun (*āhita* gethan), einem Gemüthszustande sich hingeben. Ausnahmsweise Act.
 - **EN:** — 13〉 to receive into or within oneself; to accept a teaching (buddh.); to take upon oneself or make a vow (*āhita* made); to give oneself over to a state of mind. Exceptionally Act.
 
-**14)** — 14〉 hervorbringen, bewirken, verursachen [324,30]. *sāṃmukhyam* so v. a. sich wenden an. Ausnahmsweise Act.
-- **EN:** — 14〉 to produce, bring about, cause [324,30]. *sāṃmukhyam* hence v. a. to turn to. Exceptionally Act.
+**14)** — 14〉 hervorbringen, bewirken, verursachen [324,30](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?324). *sāṃmukhyam* so v. a. sich wenden an. Ausnahmsweise Act.
+- **EN:** — 14〉 to produce, bring about, cause [324,30](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?324). *sāṃmukhyam* hence v. a. to turn to. Exceptionally Act.
 
 **15)** — 15〉 *āhita* [PAÑCAT. 43,4](https://sanskrit-lexicon-scans.github.io/pantankose/app2?43,4) fehlerhaft für *āvṛta* (so [ed. Bomb.]); *ādhāta* [CAURAP. 16](https://sanskrit-lexicon-scans.github.io/bhartrhari/app1?16) ebenfalls fehlerhaft.
 - **EN:** — 15〉 *āhita* [PAÑCAT. 43,4](https://sanskrit-lexicon-scans.github.io/pantankose/app2?43,4) erroneously for *āvṛta* (so [ed. Bomb.]); *ādhāta* [CAURAP. 16](https://sanskrit-lexicon-scans.github.io/bhartrhari/app1?16) likewise erroneous.
@@ -2450,8 +2450,8 @@ Z. 6 read 158, 3.
 **ā.1)** — 1〉 anlegen an (Loc.), setzen auf (Loc.). **upāhita* daraufgesetzt.
 - **EN:** — 1〉 to apply to (Loc.), to place upon (Loc.). **upāhita* placed upon.
 
-**ā.2)** — 2〉 Med. ergreifen (*daṇḍam*) [MBH. 12,15,4](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,15,4). *upādāya* mit sich nehmend, mit (Acc.) [Chr. 28,28].
-- **EN:** — 2〉 Med. to seize (*daṇḍam*) [MBH. 12,15,4](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,15,4). *upādāya* taking along, with (Acc.) [Chr. 28,28].
+**ā.2)** — 2〉 Med. ergreifen (*daṇḍam*) [MBH. 12,15,4](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,15,4). *upādāya* mit sich nehmend, mit (Acc.) [Chr. 28,28](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?28).
+- **EN:** — 2〉 Med. to seize (*daṇḍam*) [MBH. 12,15,4](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,15,4). *upādāya* taking along, with (Acc.) [Chr. 28,28](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?28).
 
 **ā.3)** — 3〉 Med. mit *ātmani* bei sich behalten.
 - **EN:** — 3〉 Med. with *ātmani* to keep with oneself.
@@ -2528,8 +2528,8 @@ Z. 6 read 158, 3.
 **sam.6)** — 6〉 einsetzen in (Loc.).
 - **EN:** — 6〉 to install in (Loc.).
 
-**sam.7)** — 7〉 vereinigen, verbinden, zusammenhalten. *samāhita* vereinigt —, verbunden —, versehen mit (Instr. oder im Comp. vorangehend). Pl. vereint, versammelt [69,20]. alle insgesammt.
-- **EN:** — 7〉 to unite, join, hold together. *samāhita* united, joined, furnished with (Instr. or preceding in the Comp.). Pl. united, assembled [69,20]. all together.
+**sam.7)** — 7〉 vereinigen, verbinden, zusammenhalten. *samāhita* vereinigt —, verbunden —, versehen mit (Instr. oder im Comp. vorangehend). Pl. vereint, versammelt [69,20](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?69). alle insgesammt.
+- **EN:** — 7〉 to unite, join, hold together. *samāhita* united, joined, furnished with (Instr. or preceding in the Comp.). Pl. united, assembled [69,20](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?69). all together.
 
 **sam.8)** — 8〉 in Ordnung bringen, wieder gut machen.
 - **EN:** — 8〉 to put in order, to restore, to make good again.
@@ -2612,8 +2612,8 @@ Z. 6 read 158, 3.
 **Mit ni)** — Mit *upa*
 - **EN:** — With *upa*
 
-**ni.1)** — 1〉 auflegen, anlegen, aufsetzen, legen auf (Loc. [37,30]. [ŚULBAS. 3,47]) oder in (Loc.), stellen (*adhastāt* unter Etwas), stecken —, setzen in (Loc.), auf das Feuer setzen, anlegen, so v. a. anschirren (Rosse). *hṛdi* inʼs Herz schliessen, so v. a. beherzigen. *upāhita* gesetzt auf (im Comp. vorangehend), angelegt, angebracht, hineingesteckt, eingefasst (Edelstein) in (Loc.).
-- **EN:** — 1〉 to lay on, apply, put on, place upon (Loc. [37,30]. [ŚULBAS. 3,47]) or in (Loc.), to set (*adhastāt* beneath something), to insert or place in (Loc.), to set on the fire, to lay, hence v. a. to harness (horses). *hṛdi* to take to heart, hence v. a. to take to heart, to heed. *upāhita* placed upon (preceding in the Comp.), applied, attached, inserted, set (gem) in (Loc.).
+**ni.1)** — 1〉 auflegen, anlegen, aufsetzen, legen auf (Loc. [37,30](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?37). [ŚULBAS. 3,47]) oder in (Loc.), stellen (*adhastāt* unter Etwas), stecken —, setzen in (Loc.), auf das Feuer setzen, anlegen, so v. a. anschirren (Rosse). *hṛdi* inʼs Herz schliessen, so v. a. beherzigen. *upāhita* gesetzt auf (im Comp. vorangehend), angelegt, angebracht, hineingesteckt, eingefasst (Edelstein) in (Loc.).
+- **EN:** — 1〉 to lay on, apply, put on, place upon (Loc. [37,30](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?37). [ŚULBAS. 3,47]) or in (Loc.), to set (*adhastāt* beneath something), to insert or place in (Loc.), to set on the fire, to lay, hence v. a. to harness (horses). *hṛdi* to take to heart, hence v. a. to take to heart, to heed. *upāhita* placed upon (preceding in the Comp.), applied, attached, inserted, set (gem) in (Loc.).
 
 **ni.2)** — 2〉 Etwas sich unterlegen, sich legen auf (Acc.).
 - **EN:** — 2〉 to lay something beneath oneself, to lie down upon (Acc.).
@@ -2633,8 +2633,8 @@ Z. 6 read 158, 3.
 **ni.7)** — 7〉 anwenden. *kriyā vastūpahitā* auf eine gute Sache verwendete Mühe.
 - **EN:** — 7〉 to apply. *kriyā vastūpahitā* effort applied to a good cause.
 
-**ni.8)** — 8〉 voraussetzen, supponiren. Nur Pass. und *upahita* vorausgesetzt, bedingt durch (im Comp. vorangehend) [259,1]. [260,1].
-- **EN:** — 8〉 to presuppose, to suppose. Only Pass. and *upahita* presupposed, conditioned by (preceding in the Comp.) [259,1]. [260,1].
+**ni.8)** — 8〉 voraussetzen, supponiren. Nur Pass. und *upahita* vorausgesetzt, bedingt durch (im Comp. vorangehend) [259,1](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?259). [260,1](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?260).
+- **EN:** — 8〉 to presuppose, to suppose. Only Pass. and *upahita* presupposed, conditioned by (preceding in the Comp.) [259,1](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?259). [260,1](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?260).
 
 ## dhā
 
@@ -2677,8 +2677,8 @@ Z. 6 read 158, 3.
 **PW-mit-T10)** — Mit *ni*
 - **EN:** — With *ni*
 
-**PW-mit-T10-1)** — 1〉 niedersetzen, niederlegen, ablegen, hinlegen, hinsetzen, hinstellen, — auf, an oder in (Loc.), hineinlegen, — in (Loc., Loc. mit *antar* oder *˚antar*), Etwas vor Jmd (Dat.) hinlegen. *bhūmau* oder *avaṭe* ([R. 3,8,20](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,8,20)) in die Erde, in eine Grube legen, so v. a. begraben; auf den Kopf (Loc., ausnahmsweise auch Instr.) legen auch so v. a. hoch aufnehmen [152,12]. *manasi* inʼs Herz legen, so v. a. bei sich denken. Pass. auch ruhen —, enthalten sein in (Loc.), übergehen —, sich auflösen in (Loc.) *nihita* niedergesetzt u. s. w., gelagert (ein Heer), steckend —, befindlich in (Loc. oder im Comp. vorangehend) [ĀPAST. 1,22,6].
-- **EN:** — 1〉 to set down, lay down, put aside, lay, seat, place, set — on, at, or in (Loc.), to lay into — in (Loc., Loc. with *antar* or *˚antar*), to lay something before someone (Dat.). *bhūmau* or *avaṭe* ([R. 3,8,20](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,8,20)) to place in the earth, in a pit, thus v. a. to bury; to place on the head (Loc., exceptionally also Instr.), thus also v. a. to take up high [152,12]. *manasi* to lay in the heart, thus v. a. to think to oneself. Pass. also to rest in, be contained in (Loc.), to pass into, to dissolve into (Loc.); *nihita* set down u. s. w., encamped (an army), lodged in, present in (Loc. or preceding in the Comp.) [ĀPAST. 1,22,6].
+**PW-mit-T10-1)** — 1〉 niedersetzen, niederlegen, ablegen, hinlegen, hinsetzen, hinstellen, — auf, an oder in (Loc.), hineinlegen, — in (Loc., Loc. mit *antar* oder *˚antar*), Etwas vor Jmd (Dat.) hinlegen. *bhūmau* oder *avaṭe* ([R. 3,8,20](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,8,20)) in die Erde, in eine Grube legen, so v. a. begraben; auf den Kopf (Loc., ausnahmsweise auch Instr.) legen auch so v. a. hoch aufnehmen [152,12](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?152). *manasi* inʼs Herz legen, so v. a. bei sich denken. Pass. auch ruhen —, enthalten sein in (Loc.), übergehen —, sich auflösen in (Loc.) *nihita* niedergesetzt u. s. w., gelagert (ein Heer), steckend —, befindlich in (Loc. oder im Comp. vorangehend) [ĀPAST. 1,22,6].
+- **EN:** — 1〉 to set down, lay down, put aside, lay, seat, place, set — on, at, or in (Loc.), to lay into — in (Loc., Loc. with *antar* or *˚antar*), to lay something before someone (Dat.). *bhūmau* or *avaṭe* ([R. 3,8,20](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,8,20)) to place in the earth, in a pit, thus v. a. to bury; to place on the head (Loc., exceptionally also Instr.), thus also v. a. to take up high [152,12](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?152). *manasi* to lay in the heart, thus v. a. to think to oneself. Pass. also to rest in, be contained in (Loc.), to pass into, to dissolve into (Loc.); *nihita* set down u. s. w., encamped (an army), lodged in, present in (Loc. or preceding in the Comp.) [ĀPAST. 1,22,6].
 
 **PW-mit-T10-2)** — 2〉 das Auge richten auf (Loc.) den Sinn, die Gedanken richten auf (Dat.), so v. a. beschliessen. *kriyām* Mühe wenden an (Loc.).
 - **EN:** — 2〉 to direct the eye upon (Loc.), to direct the mind, the thoughts upon (Dat.), thus v. a. to resolve, to decide. *kriyām* to bestow effort upon (Loc.).
@@ -2866,8 +2866,8 @@ Z. 6 read 158, 3.
 **PW-mit-T177)** — Mit *saṃni*
 - **EN:** — With *saṃni*
 
-**PW-mit-T177-1)** — 1〉 zusammen niederlegen in oder bei (Loc.), niederlegen, aufheben [218,8]. legen in (Loc.), aufspeichern, ansammeln. In der ältern Sprache Med. *hṛdayasaṃnihita* inʼs Herz gelegt, im Herzen wohnend.
-- **EN:** — 1〉 to lay together in or at (Loc.), to deposit, to preserve [218,8]; to lay in (Loc.), to store up, to accumulate. In the older language Med. *hṛdayasaṃnihita* laid in the heart, dwelling in the heart.
+**PW-mit-T177-1)** — 1〉 zusammen niederlegen in oder bei (Loc.), niederlegen, aufheben [218,8](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?218). legen in (Loc.), aufspeichern, ansammeln. In der ältern Sprache Med. *hṛdayasaṃnihita* inʼs Herz gelegt, im Herzen wohnend.
+- **EN:** — 1〉 to lay together in or at (Loc.), to deposit, to preserve [218,8](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?218); to lay in (Loc.), to store up, to accumulate. In the older language Med. *hṛdayasaṃnihita* laid in the heart, dwelling in the heart.
 
 **PW-mit-T177-2)** — 2〉 in der Nähe —, neben sich hinstellen [GAUT.]
 - **EN:** — 2〉 to place nearby, to set beside oneself [GAUT.]
@@ -2905,8 +2905,8 @@ Z. 6 read 158, 3.
 **PW-mit-T204-1)** — 1〉 Act. Med. herumlegen, -setzen, umlegen. *parihita* herumgesetzt, -gestellt, -stehend.
 - **EN:** — 1〉 Act. Med. to lay around, to place around, to put around. *parihita* placed around, set around, standing around.
 
-**PW-mit-T204-2)** — 2〉 Act. Med. sich umlegen, umnehmen (ein Gewand, einen Schmuck) [311,3]. [320,11]. [12]. Ohne Object sich ein Gewand umlegen. *parihita* umgelegt.
-- **EN:** — 2〉 Act. Med. to wrap around oneself, to put around oneself (a garment, an ornament) [311,3]. [320,11]. [12]. Without object to wrap a garment around oneself. *parihita* wrapped around.
+**PW-mit-T204-2)** — 2〉 Act. Med. sich umlegen, umnehmen (ein Gewand, einen Schmuck) [311,3](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?311). [320,11](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?320). [12](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?320). Ohne Object sich ein Gewand umlegen. *parihita* umgelegt.
+- **EN:** — 2〉 Act. Med. to wrap around oneself, to put around oneself (a garment, an ornament) [311,3](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?311). [320,11](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?320). [12](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?320). Without object to wrap a garment around oneself. *parihita* wrapped around.
 
 **PW-mit-T204-3)** — 3〉 umlegen, umgeben, bekleiden, — mit (Instr.), umzingeln. Gewöhnlich Act. *parihita* umlegt, umgeben.
 - **EN:** — 3〉 to lay around, to surround, to clothe, — with (Instr.), to encircle. Usually Act. *parihita* laid around, surrounded.
@@ -3009,20 +3009,20 @@ Z. 6 read 158, 3.
 **vi+dhā–4)** — 4〉 zertheilen.
 - **EN:** — 4〉 to divide up, to separate.
 
-**vi+dhā–5)** — 5〉 anordnen, vorschreiben, festsetzen, bestimmen. Pass. bestimmt sein für (Gen.) [195,24]. gelten für (Nom.). *devaiḥsa me bhartā vihitaḥ* er ist von den Göttern mir zum Gatten bestimmt worden.
-- **EN:** — 5〉 to ordain, to prescribe, to fix, to determine. Pass. to be destined for (Gen.) [195,24]. to count as (Nom.). *devaiḥsa me bhartā vihitaḥ* he has been destined for me as husband by the gods.
+**vi+dhā–5)** — 5〉 anordnen, vorschreiben, festsetzen, bestimmen. Pass. bestimmt sein für (Gen.) [195,24](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?195). gelten für (Nom.). *devaiḥsa me bhartā vihitaḥ* er ist von den Göttern mir zum Gatten bestimmt worden.
+- **EN:** — 5〉 to ordain, to prescribe, to fix, to determine. Pass. to be destined for (Gen.) [195,24](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?195). to count as (Nom.). *devaiḥsa me bhartā vihitaḥ* he has been destined for me as husband by the gods.
 
-**vi+dhā–6)** — 6〉 an den Tag legen, zeigen (einen Gemüthszustand, eine Art und Weise der Benehmens) [146,6]. [170,28].
-- **EN:** — 6〉 to display, to show (a state of mind, a manner of conduct) [146,6]. [170,28].
+**vi+dhā–6)** — 6〉 an den Tag legen, zeigen (einen Gemüthszustand, eine Art und Weise der Benehmens) [146,6](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?146). [170,28](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?170).
+- **EN:** — 6〉 to display, to show (a state of mind, a manner of conduct) [146,6](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?146). [170,28](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?170).
 
-**vi+dhā–7)** — 7〉 finden, ausfindig machen (ein Mittel) [48,23]. [159,8]. [MBH. 3,76,38](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?3,76,38). [R. 3,40,33](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,40,33).
-- **EN:** — 7〉 to find, to discover (a means) [48,23]. [159,8]. [MBH. 3,76,38](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?3,76,38). [R. 3,40,33](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,40,33).
+**vi+dhā–7)** — 7〉 finden, ausfindig machen (ein Mittel) [48,23](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?48). [159,8](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?159). [MBH. 3,76,38](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?3,76,38). [R. 3,40,33](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,40,33).
+- **EN:** — 7〉 to find, to discover (a means) [48,23](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?48). [159,8](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?159). [MBH. 3,76,38](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?3,76,38). [R. 3,40,33](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,40,33).
 
 **vi+dhā–8)** — 8〉 schaffen, hervorbringen, bilden, gründen, bauen, errichten, anlegen, verfassen.
 - **EN:** — 8〉 to create, to produce, to form, to found, to build, to erect, to lay out, to compose.
 
-**vi+dhā–9)** — 9〉 zurechtmachen, herbeischaffen [73,25].
-- **EN:** — 9〉 to prepare, to procure [73,25].
+**vi+dhā–9)** — 9〉 zurechtmachen, herbeischaffen [73,25](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?73).
+- **EN:** — 9〉 to prepare, to procure [73,25](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?73).
 
 **vi+dhā–10)** — 10〉 vollbringen, verrichten, bewerkstelligen, bereiten, verursachen, einrichten, machen, thun. *mantram* Rath halten; *rājyam* die Herrschaft führen, sich der H. bemächtigen, regieren; *sacivatām* die Würde eines Ministers bekleiden. *maitryam* Freundschaft schliessen; *saṃdhim* Frieden schl.; *kalaham* Streit beginnen. *saṃgrāmam* eine Schlacht liefern; *cumbanam* küssen; *kiṃ vidhīyatāṃ tena* was fängt man damit an?
 - **EN:** — 10〉 to accomplish, to perform, to bring about, to prepare, to cause, to arrange, to make, to do. *mantram* to hold counsel; *rājyam* to hold sway, to seize power over H., to rule; *sacivatām* to hold the dignity of a minister. *maitryam* to conclude friendship; *saṃdhim* to make peace schl.; *kalaham* to begin a quarrel. *saṃgrāmam* to give battle; *cumbanam* to kiss; *kiṃ vidhīyatāṃ tena* what is one to do with it?
@@ -3089,8 +3089,8 @@ Z. 6 read 158, 3.
 **anu+dhā–4)** — 4〉 nachher bewirken.
 - **EN:** — 4〉 to bring about subsequently.
 
-**anu+dhā–5)** — 5〉 bewirken, bewerkstelligen. [171,22].
-- **EN:** — 5〉 to bring about, to accomplish. [171,22].
+**anu+dhā–5)** — 5〉 bewirken, bewerkstelligen. [171,22](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?171).
+- **EN:** — 5〉 to bring about, to accomplish. [171,22](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?171).
 
 **anu+dhā–6)** — 6〉 Act. Etwas (Acc.) zur Richtschnur nehmen, sich leiten lassen durch (Acc.) [HARṢAC. 1,8]. Pass. sich richten nach (Acc. oder Gen.). *˚hita* sich richtend nach (Gen.).
 - **EN:** — 6〉 Act. to take something (Acc.) as a guiding rule, to let oneself be guided by (Acc.) [HARṢAC. 1,8]. Pass. to act in accordance with (Acc. or Gen.). *˚hita* acting in accordance with (Gen.).
@@ -3198,8 +3198,8 @@ Z. 6 read 158, 3.
 **saṃ+dhā–11)** — 11〉 Jmd Etwas zufügen. *sāhāyyam* Jmd Beistand leisten.
 - **EN:** — 11〉 to inflict something on someone. *sāhāyyam* to render assistance to someone.
 
-**saṃ+dhā–12)** — 12〉 Med. Stand halten gegen Jmd (Acc.), es mit Jmd aufnehmen können [251,4].
-- **EN:** — 12〉 Med. to hold one's ground against someone (Acc.), to be able to hold one's own against someone [251,4].
+**saṃ+dhā–12)** — 12〉 Med. Stand halten gegen Jmd (Acc.), es mit Jmd aufnehmen können [251,4](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?251).
+- **EN:** — 12〉 Med. to hold one's ground against someone (Acc.), to be able to hold one's own against someone [251,4](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?251).
 
 **saṃ+dhā–13)** — 13〉 Med. Gebrauch machen von (Instr.).
 - **EN:** — 13〉 Med. to make use of (Instr.).
@@ -3260,8 +3260,8 @@ Z. 6 read 158, 3.
 **abhi+saṃ+dhā–5)** — 5〉 Jmd gemeinsam anerkennen, anerkennen überh. *sarvalokābhisaṃhita* von aller Welt anerkannt [MBH. 12,132,1](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,132,1).
 - **EN:** — 5〉 to acknowledge someone together, to recognise überh. *sarvalokābhisaṃhita* acknowledged by all the world [MBH. 12,132,1](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,132,1).
 
-**abhi+saṃ+dhā–6)** — 6〉 sich über Etwas vorher verständigen, vorher über Etwas übereinkommen; mit Acc. [191,17]. [R. 5,82,5](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,82,5) (wo wohl *anyo'nyenābhi˚* zu verbinden ist).
-- **EN:** — 6〉 to come to a prior understanding about something, to agree beforehand about something; with Acc. [191,17]. [R. 5,82,5](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,82,5) (where *anyo'nyenābhi˚* is probably to be taken together).
+**abhi+saṃ+dhā–6)** — 6〉 sich über Etwas vorher verständigen, vorher über Etwas übereinkommen; mit Acc. [191,17](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?191). [R. 5,82,5](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,82,5) (wo wohl *anyo'nyenābhi˚* zu verbinden ist).
+- **EN:** — 6〉 to come to a prior understanding about something, to agree beforehand about something; with Acc. [191,17](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?191). [R. 5,82,5](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,82,5) (where *anyo'nyenābhi˚* is probably to be taken together).
 
 **abhi+saṃ+dhā–7)** — 7〉 Jmd in seine Gewalt bekommen, sich unterthan machen, in Abhängigkeit halten.
 - **EN:** — 7〉 to get someone into one's power, to make subordinate to oneself, to keep in dependence.
@@ -3464,9 +3464,9 @@ Z. 6 read 158, 3.
 - **RU:** [BHĀG. P. 1,5,39.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,5,39) [M. 4,80.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,80) [R. 5,77,14.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,77,14) *saṃjñām* подать знак [MṚCCH. 104,4. 14.] *ātmānam* принести себя в жертву: *tenātmā dattaḥ* [KATHĀS. 22,227.](https://sanskrit-lexicon-scans.github.io/kss/index.html?22,227) с dat. предмета предаваться чему-л., отдаваться чему-л.: *khedāya kimātmā dīyate tvayā* [5,57.](https://sanskrit-lexicon-scans.github.io/kss/index.html?5,57) *panthānam, mārgam* дать кому-л. дорогу, то есть v. a. дать свободный проход, уступить дорогу [R. 5,94,8.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,94,8) *panthānaṃ cādadadguroḥ* [M. 8,275.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,275) [MEGH. 46.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?46) *yuddham, saṃgrāmam, niyuddham* дать кому-л. сражение, вступить в бой с: *sa niṣkramya dadau yuddhaṃ tebhyaḥ* [MBH. 13,1959.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1959) *dehi yuddhaṃ narapate mamādya* [5,7507.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7507) [LA. 48,8.] [HARIV. 5126.](https://sanskrit-lexicon-scans.github.io/hariv?5126) [5134.](https://sanskrit-lexicon-scans.github.io/hariv?5134) [R. GORR. 1,77,5.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,77,5) [32.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,77,32) [4,9,54.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,9,54) [10,9.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,10,9) [6,82,1.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,82,1) [108,32.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,108,32) *ājñām, ādeśam* дать кому-л. поручение, приказ [R. GORR. 1,74,25.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,74,25) [BRAHMA-P. 55,20. 54,13.] [VET. 29,5.] *saṃdeśam* дать известие, уведомить [KATHĀS. 17,161.](https://sanskrit-lexicon-scans.github.io/kss/index.html?17,161) *āśiṣaḥ* высказать благопожелания [ŚĀK. 49,13.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?49,13) [MĀRK. P. 23,6.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?23,6) *prativacas, prativacanam, pratyuttaram* дать ответ [N. 22,21.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?22,21) [ŚĀK. 67,6.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?67,6) [PAÑCAT. 38,1.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?38,1) [VID. 179.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?179) *śabdam* отозваться, ответить (о вызванном карауле) [VET. 29,11.] *vācam* обратить речь к (dat.) [ŚĀK. 132.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?132) *satyaṃ vacaḥ* говорить правдивую речь [YĀJÑ. 2,200.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,200) *samayam* предложить сравнение [VID. 71.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?71) *śāpam* произнести проклятие: *evaṃ dattvārjune śāpam* [MBH. 3,1867.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1867) [R. 1,60,6](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,60,6) (GORR. [62,6](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,62,6)). [PAÑCAT. 45,6.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?45,6) [KATHĀS. 5,87.](https://sanskrit-lexicon-scans.github.io/kss/index.html?5,87) [17,146.](https://sanskrit-lexicon-scans.github.io/kss/index.html?17,146) [BRAHMA-P. 51,90.] *gālīḥ* [BHARTṚ. 3,99.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app2?3,99) *parirambhaṇam, āliṅganam* в смысле v. a. обнять [GĪT. 3,8.](https://sanskrit-lexicon-scans.github.io/gitagov/app1?3,8) [VID. 141.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?141) *jhampam* сделать прыжок [HIT. 63,15.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?63,15) *anuyātrām* дать провожатых, проводить [VID. 129.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?129) *talaprahāram* нанести удар ладонью, лапой [PAÑCAT. 215,21.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?215,21) *tālam* хлопать в ладоши, отбивать такт [MBH. 1,5939.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5939) [BHAṬṬ. 2,16.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?2,16) *saṃketakam* условиться с кем-л. о встрече [PAÑCAT. 129,1.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?129,1) [7.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?129,7) *prayogam* устроить представление [MĀLAV. 11,17.](https://sanskrit-lexicon-scans.github.io/malavikagni/app2?11,17) *vṛtim* огородить изгородью [KULL.] к [M. 8,240.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,240) *praharakam* (?) стоять на страже [VET. 29,9.] *darśanam, dṛṣṭim* показаться, явиться (иное Bed. от *dṛṣṭiṃ dā* s. u. 2): *mātarmātaḥ kvāsi dehi me priyadarśanam* [PRAB. 43,4.] [ŚṚṄGĀRAT. 15.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app2?15) давать в смысле v. a. вызывать, производить: *śokam* [MBH. 13,1685.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1685) [R. 2,53,21.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,53,21) *mahāṭavīdattadiṅmoha* [KATHĀS. 18,97.](https://sanskrit-lexicon-scans.github.io/kss/index.html?18,97) *taddarśanabhayaṃ dattvā* [4,62.](https://sanskrit-lexicon-scans.github.io/kss/index.html?4,62) [BHAṬṬ. 8,96.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?8,96) *vyasanam* [BHARTṚ. 3,3.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app2?3,3) *vipriyam* [BHĀG. P. 1,14,11.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,14,11) устраивать: *aurdhvadehikam* [MBH. 14,368.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.368) [369.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.369) *śrāddham* [1850.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.1850) [R. 2,108,15](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,108,15) (GORR. [116,24](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,116,24)). совершать: *vratakam* [HARIV. 7932.](https://sanskrit-lexicon-scans.github.io/hariv?7932) [7937.](https://sanskrit-lexicon-scans.github.io/hariv?7937) [7955.](https://sanskrit-lexicon-scans.github.io/hariv?7955) [7956.](https://sanskrit-lexicon-scans.github.io/hariv?7956) С infin. давать делать, то есть v. a. позволять, допускать: *dadau ca taṃ nidhimamṛtasya rakṣituṃ kirīṭine* [MBH. 1,1188.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1188) *na dā* с inf. не допускать, не позволять: *na dāsyāmi samādātuṃ somaṃ kasmaicidapyaham* [1528.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1528) *vāṣpastu na dadātyenāṃ draṣṭum* [ŚĀK. 149.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?149)
   <sub>DCS 12366 · attested</sub>
 
-**2) legen, stellen, thun auf, in; setzen, anlegen, anbringen)** — 2) legen, stellen, thun auf, in; setzen, anlegen, anbringen: *kutapaṃ cāsane dadyāt* [M. 3,234.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,234) *adhikaraṇikamastake hastaṃ dattvā* [MṚCCH. 139,18.] *na te kṣaudraṃ ca dadhi ca brāhmaṇā vedapāragāḥ . mūrdhni mūrdhābhiṣiktasya dadati sma vidhānataḥ ..* [R. 2,26,13.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,26,13) *teṣāṃ dattvā tu hasteṣu sapavitraṃ tilodakam* [M. 3,223.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,223) *tilān — sūryatape dattvā* [PAÑCAT. 121,14.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?121,14) *dadyāccatuṣpathe sūrpe — kṛtākṛtāṃstaṇḍulān* [YĀJÑ. 1,285.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?1,285) *tasya jānu dadau* er setzte ihm das Knie auf den Leib [DRAUP. 9,5.] [MBH. 4,1115.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1115) *nigaḍāni* Fesseln anlegen [MṚCCH. 109,18.] *tacchīghramardhacandro 'sya gale 'smindīyatām* [KATHĀS. 6,59.](https://sanskrit-lexicon-scans.github.io/kss/index.html?6,59) *gopyā dade* ([BURN.]: *gopyādade) tvayi kṛtāgasi dāma* [BHĀG. P. 1,8,31.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,8,31) *pāvakam* Feuer an Etwas legen: *daduste sarvatastūrṇaṃ pāvakaṃ tatra* (dagegen *agnīndā* mit dat. der Person: Jmd das Feuer geben so v. a. ihn verbrennen [M. 5,168.](https://sanskrit-lexicon-scans.github.io/manu/index.html?5,168) oder auch ganz einfach Jmd Feuer geben [YĀJÑ. 2,276](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,276)). medic. auflegen: *kavalikāṃ dattvā vastrapaṭṭena badhnīyāt* [SUŚR. 1,16,9. 66,6. 68,2.] *paṭṭopari kuśāndattvā yathābandhanamācaret* [2,28,8. 17.] *kuśānsamaṃ dattvā* [29,20. 3.] *śunaḥ pādena dattvāṅkaṃ lalāṭe* ein Mal auf die Stirn brennen [KATHĀS. 13,148.](https://sanskrit-lexicon-scans.github.io/kss/index.html?13,148) *nakhapadaṃ stanamaṇḍale yaddattaṃ mayā* [CAURAP. 35.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app1?35) *dattvārkasaṃjñitaṃ vindum* [SŪRYAS. 10,10.] *śāram* eine Schachfigur ziehen [DAŚAK.] in [BENF. Chr. 185,24.] *argalam* einen Riegel vorschieben: *tasyā (mañjūṣāyāḥ) dattvārgalam* [KATHĀS. 4,60.](https://sanskrit-lexicon-scans.github.io/kss/index.html?4,60) [13,170.](https://sanskrit-lexicon-scans.github.io/kss/index.html?13,170) [VID. 218.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?218) [RĀJA-TAR. 6,96.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?6,96) *padam* die Schritte irgendwohin richten: *dattvaikam — gṛhaṃ prati padam* [AMAR. 74.] *dṛṣṭim, dṛśam, akṣi, cakṣurdā* sein Auge richten auf, nach (loc.): *dṛṣṭimadho dadāti* [SĀH. D. 40,14.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?40,14) *mayi dehi dṛṣṭim* [DHŪRTAS. 85,1.] [ŚĀK. 7](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?7), v. l. *kṛṣṇasāre dadaccakṣustvayi ca* [6.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?6) *anyatra dattākṣī* [SĀH. D. 59,6.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?59,6) *kuntyāḥ pṛṣṭhe dṛśaṃ dadau* [KATHĀS. 16,40.](https://sanskrit-lexicon-scans.github.io/kss/index.html?16,40) *karṇam* sein Ohr irgendwohin richten, hinhorchen [3,59.](https://sanskrit-lexicon-scans.github.io/kss/index.html?3,59) [ŚĀK. 8,21.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?8,21) [44,7.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?44,7) *karṇaṃ dadātyabhimukhaṃ mayi bhāṣamāṇe* [30.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?30) *manas* seinen Sinn, seine Gedanken auf Etwas richten: *svadharme ca dadurmanaḥ* [MBH. 12,2526.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.2526) hinzufügen, hinzuthun [PAÑCAT. II,148.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?2,148) [SŪRYAS. 10,5.] addiren (?) [VARĀH. BṚH. 25 (24),11.] [LAGHUJ. 13,2.] Vgl. *dhā* .
+**2) legen, stellen, thun auf, in; setzen, anlegen, anbringen)** — 2) legen, stellen, thun auf, in; setzen, anlegen, anbringen: *kutapaṃ cāsane dadyāt* [M. 3,234.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,234) *adhikaraṇikamastake hastaṃ dattvā* [MṚCCH. 139,18.] *na te kṣaudraṃ ca dadhi ca brāhmaṇā vedapāragāḥ . mūrdhni mūrdhābhiṣiktasya dadati sma vidhānataḥ ..* [R. 2,26,13.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,26,13) *teṣāṃ dattvā tu hasteṣu sapavitraṃ tilodakam* [M. 3,223.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,223) *tilān — sūryatape dattvā* [PAÑCAT. 121,14.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?121,14) *dadyāccatuṣpathe sūrpe — kṛtākṛtāṃstaṇḍulān* [YĀJÑ. 1,285.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?1,285) *tasya jānu dadau* er setzte ihm das Knie auf den Leib [DRAUP. 9,5.] [MBH. 4,1115.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1115) *nigaḍāni* Fesseln anlegen [MṚCCH. 109,18.] *tacchīghramardhacandro 'sya gale 'smindīyatām* [KATHĀS. 6,59.](https://sanskrit-lexicon-scans.github.io/kss/index.html?6,59) *gopyā dade* ([BURN.]: *gopyādade) tvayi kṛtāgasi dāma* [BHĀG. P. 1,8,31.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,8,31) *pāvakam* Feuer an Etwas legen: *daduste sarvatastūrṇaṃ pāvakaṃ tatra* (dagegen *agnīndā* mit dat. der Person: Jmd das Feuer geben so v. a. ihn verbrennen [M. 5,168.](https://sanskrit-lexicon-scans.github.io/manu/index.html?5,168) oder auch ganz einfach Jmd Feuer geben [YĀJÑ. 2,276](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,276)). medic. auflegen: *kavalikāṃ dattvā vastrapaṭṭena badhnīyāt* [SUŚR. 1,16,9. 66,6. 68,2.] *paṭṭopari kuśāndattvā yathābandhanamācaret* [2,28,8. 17.] *kuśānsamaṃ dattvā* [29,20. 3.] *śunaḥ pādena dattvāṅkaṃ lalāṭe* ein Mal auf die Stirn brennen [KATHĀS. 13,148.](https://sanskrit-lexicon-scans.github.io/kss/index.html?13,148) *nakhapadaṃ stanamaṇḍale yaddattaṃ mayā* [CAURAP. 35.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app1?35) *dattvārkasaṃjñitaṃ vindum* [SŪRYAS. 10,10.] *śāram* eine Schachfigur ziehen [DAŚAK.] in [BENF. Chr. 185,24.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?185) *argalam* einen Riegel vorschieben: *tasyā (mañjūṣāyāḥ) dattvārgalam* [KATHĀS. 4,60.](https://sanskrit-lexicon-scans.github.io/kss/index.html?4,60) [13,170.](https://sanskrit-lexicon-scans.github.io/kss/index.html?13,170) [VID. 218.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?218) [RĀJA-TAR. 6,96.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?6,96) *padam* die Schritte irgendwohin richten: *dattvaikam — gṛhaṃ prati padam* [AMAR. 74.] *dṛṣṭim, dṛśam, akṣi, cakṣurdā* sein Auge richten auf, nach (loc.): *dṛṣṭimadho dadāti* [SĀH. D. 40,14.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?40,14) *mayi dehi dṛṣṭim* [DHŪRTAS. 85,1.] [ŚĀK. 7](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?7), v. l. *kṛṣṇasāre dadaccakṣustvayi ca* [6.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?6) *anyatra dattākṣī* [SĀH. D. 59,6.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?59,6) *kuntyāḥ pṛṣṭhe dṛśaṃ dadau* [KATHĀS. 16,40.](https://sanskrit-lexicon-scans.github.io/kss/index.html?16,40) *karṇam* sein Ohr irgendwohin richten, hinhorchen [3,59.](https://sanskrit-lexicon-scans.github.io/kss/index.html?3,59) [ŚĀK. 8,21.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?8,21) [44,7.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?44,7) *karṇaṃ dadātyabhimukhaṃ mayi bhāṣamāṇe* [30.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?30) *manas* seinen Sinn, seine Gedanken auf Etwas richten: *svadharme ca dadurmanaḥ* [MBH. 12,2526.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.2526) hinzufügen, hinzuthun [PAÑCAT. II,148.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?2,148) [SŪRYAS. 10,5.] addiren (?) [VARĀH. BṚH. 25 (24),11.] [LAGHUJ. 13,2.] Vgl. *dhā* .
 
-- **RU:** — 2) класть, ставить, помещать на, в; прикладывать, надевать, прикреплять: *kutapaṃ cāsane dadyāt* [M. 3,234.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,234) *adhikaraṇikamastake hastaṃ dattvā* [MṚCCH. 139,18.] *na te kṣaudraṃ ca dadhi ca brāhmaṇā vedapāragāḥ . mūrdhni mūrdhābhiṣiktasya dadati sma vidhānataḥ ..* [R. 2,26,13.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,26,13) *teṣāṃ dattvā tu hasteṣu sapavitraṃ tilodakam* [M. 3,223.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,223) *tilān — sūryatape dattvā* [PAÑCAT. 121,14.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?121,14) *dadyāccatuṣpathe sūrpe — kṛtākṛtāṃstaṇḍulān* [YĀJÑ. 1,285.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?1,285) *tasya jānu dadau* он прижал ему колено к животу [DRAUP. 9,5.] [MBH. 4,1115.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1115) *nigaḍāni* наложить оковы [MṚCCH. 109,18.] *tacchīghramardhacandro 'sya gale 'smindīyatām* [KATHĀS. 6,59.](https://sanskrit-lexicon-scans.github.io/kss/index.html?6,59) *gopyā dade* ([BURN.]: *gopyādade) tvayi kṛtāgasi dāma* [BHĀG. P. 1,8,31.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,8,31) *pāvakam* поджечь что-л.: *daduste sarvatastūrṇaṃ pāvakaṃ tatra* (напротив, *agnīndā* с dat. лица: дать кому-л. огонь, то есть v. a. сжечь его [M. 5,168.](https://sanskrit-lexicon-scans.github.io/manu/index.html?5,168) или же просто дать кому-л. огонь [YĀJÑ. 2,276](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,276)). medic. накладывать: *kavalikāṃ dattvā vastrapaṭṭena badhnīyāt* [SUŚR. 1,16,9. 66,6. 68,2.] *paṭṭopari kuśāndattvā yathābandhanamācaret* [2,28,8. 17.] *kuśānsamaṃ dattvā* [29,20. 3.] *śunaḥ pādena dattvāṅkaṃ lalāṭe* выжечь клеймо на лбу [KATHĀS. 13,148.](https://sanskrit-lexicon-scans.github.io/kss/index.html?13,148) *nakhapadaṃ stanamaṇḍale yaddattaṃ mayā* [CAURAP. 35.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app1?35) *dattvārkasaṃjñitaṃ vindum* [SŪRYAS. 10,10.] *śāram* сделать ход шахматной фигурой [DAŚAK.] в [BENF. Chr. 185,24.] *argalam* задвинуть засов: *tasyā (mañjūṣāyāḥ) dattvārgalam* [KATHĀS. 4,60.](https://sanskrit-lexicon-scans.github.io/kss/index.html?4,60) [13,170.](https://sanskrit-lexicon-scans.github.io/kss/index.html?13,170) [VID. 218.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?218) [RĀJA-TAR. 6,96.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?6,96) *padam* направить шаги куда-л.: *dattvaikam — gṛhaṃ prati padam* [AMAR. 74.] *dṛṣṭim, dṛśam, akṣi, cakṣurdā* обратить взор на, к (loc.): *dṛṣṭimadho dadāti* [SĀH. D. 40,14.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?40,14) *mayi dehi dṛṣṭim* [DHŪRTAS. 85,1.] [ŚĀK. 7](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?7), v. l. *kṛṣṇasāre dadaccakṣustvayi ca* [6.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?6) *anyatra dattākṣī* [SĀH. D. 59,6.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?59,6) *kuntyāḥ pṛṣṭhe dṛśaṃ dadau* [KATHĀS. 16,40.](https://sanskrit-lexicon-scans.github.io/kss/index.html?16,40) *karṇam* направить слух куда-л., прислушаться [3,59.](https://sanskrit-lexicon-scans.github.io/kss/index.html?3,59) [ŚĀK. 8,21.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?8,21) [44,7.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?44,7) *karṇaṃ dadātyabhimukhaṃ mayi bhāṣamāṇe* [30.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?30) *manas* направить ум, мысли на что-л.: *svadharme ca dadurmanaḥ* [MBH. 12,2526.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.2526) прибавить, добавить [PAÑCAT. II,148.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?2,148) [SŪRYAS. 10,5.] складывать (?): [VARĀH. BṚH. 25 (24),11.] [LAGHUJ. 13,2.] Vgl. *dhā*.
+- **RU:** — 2) класть, ставить, помещать на, в; прикладывать, надевать, прикреплять: *kutapaṃ cāsane dadyāt* [M. 3,234.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,234) *adhikaraṇikamastake hastaṃ dattvā* [MṚCCH. 139,18.] *na te kṣaudraṃ ca dadhi ca brāhmaṇā vedapāragāḥ . mūrdhni mūrdhābhiṣiktasya dadati sma vidhānataḥ ..* [R. 2,26,13.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,26,13) *teṣāṃ dattvā tu hasteṣu sapavitraṃ tilodakam* [M. 3,223.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,223) *tilān — sūryatape dattvā* [PAÑCAT. 121,14.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?121,14) *dadyāccatuṣpathe sūrpe — kṛtākṛtāṃstaṇḍulān* [YĀJÑ. 1,285.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?1,285) *tasya jānu dadau* он прижал ему колено к животу [DRAUP. 9,5.] [MBH. 4,1115.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1115) *nigaḍāni* наложить оковы [MṚCCH. 109,18.] *tacchīghramardhacandro 'sya gale 'smindīyatām* [KATHĀS. 6,59.](https://sanskrit-lexicon-scans.github.io/kss/index.html?6,59) *gopyā dade* ([BURN.]: *gopyādade) tvayi kṛtāgasi dāma* [BHĀG. P. 1,8,31.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,8,31) *pāvakam* поджечь что-л.: *daduste sarvatastūrṇaṃ pāvakaṃ tatra* (напротив, *agnīndā* с dat. лица: дать кому-л. огонь, то есть v. a. сжечь его [M. 5,168.](https://sanskrit-lexicon-scans.github.io/manu/index.html?5,168) или же просто дать кому-л. огонь [YĀJÑ. 2,276](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,276)). medic. накладывать: *kavalikāṃ dattvā vastrapaṭṭena badhnīyāt* [SUŚR. 1,16,9. 66,6. 68,2.] *paṭṭopari kuśāndattvā yathābandhanamācaret* [2,28,8. 17.] *kuśānsamaṃ dattvā* [29,20. 3.] *śunaḥ pādena dattvāṅkaṃ lalāṭe* выжечь клеймо на лбу [KATHĀS. 13,148.](https://sanskrit-lexicon-scans.github.io/kss/index.html?13,148) *nakhapadaṃ stanamaṇḍale yaddattaṃ mayā* [CAURAP. 35.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app1?35) *dattvārkasaṃjñitaṃ vindum* [SŪRYAS. 10,10.] *śāram* сделать ход шахматной фигурой [DAŚAK.] в [BENF. Chr. 185,24.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?185) *argalam* задвинуть засов: *tasyā (mañjūṣāyāḥ) dattvārgalam* [KATHĀS. 4,60.](https://sanskrit-lexicon-scans.github.io/kss/index.html?4,60) [13,170.](https://sanskrit-lexicon-scans.github.io/kss/index.html?13,170) [VID. 218.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?218) [RĀJA-TAR. 6,96.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?6,96) *padam* направить шаги куда-л.: *dattvaikam — gṛhaṃ prati padam* [AMAR. 74.] *dṛṣṭim, dṛśam, akṣi, cakṣurdā* обратить взор на, к (loc.): *dṛṣṭimadho dadāti* [SĀH. D. 40,14.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?40,14) *mayi dehi dṛṣṭim* [DHŪRTAS. 85,1.] [ŚĀK. 7](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?7), v. l. *kṛṣṇasāre dadaccakṣustvayi ca* [6.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?6) *anyatra dattākṣī* [SĀH. D. 59,6.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?59,6) *kuntyāḥ pṛṣṭhe dṛśaṃ dadau* [KATHĀS. 16,40.](https://sanskrit-lexicon-scans.github.io/kss/index.html?16,40) *karṇam* направить слух куда-л., прислушаться [3,59.](https://sanskrit-lexicon-scans.github.io/kss/index.html?3,59) [ŚĀK. 8,21.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?8,21) [44,7.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?44,7) *karṇaṃ dadātyabhimukhaṃ mayi bhāṣamāṇe* [30.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?30) *manas* направить ум, мысли на что-л.: *svadharme ca dadurmanaḥ* [MBH. 12,2526.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.2526) прибавить, добавить [PAÑCAT. II,148.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?2,148) [SŪRYAS. 10,5.] складывать (?): [VARĀH. BṚH. 25 (24),11.] [LAGHUJ. 13,2.] Vgl. *dhā*.
   <sub>DCS 12366 · attested</sub>
 
 **3) empfangen)** — 3) med. empfangen: *ebhirdade vṛṣṇyā pauṃsyāni yebhiraukṣadvṛtrahatyāya vajrī* [ṚV. 10,55,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.055.html#rv10.055.07) *tatrādadiṣṭa pauṃsyam* [SV. I,2,1,4,7.]
@@ -3498,7 +3498,7 @@ geben wollen, zu geben bereit sein: *asmabhyaminna ditsasi*
 [VARĀH. BṚH. S. 19,10.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?19,10) *varau*
 [R. GORR. 2,8,23.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,8,23) *sarvaṃ me ditsitaṃ tvayā*
 [MBH. 3,15631.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15631) [8627. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8627) *tāṃ (kanyāṃ) cedahaṃ na ditseyam*
-[1,6159.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6159) [13,106.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.106) [DAŚAK.] in [BENF. Chr. 186,23.] *putrayorubhayoreva vadhvau te ditsite mayā*
+[1,6159.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6159) [13,106.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.106) [DAŚAK.] in [BENF. Chr. 186,23.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?186) *putrayorubhayoreva vadhvau te ditsite mayā*
 [R. GORR. 1,70,13.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,70,13) [MBH. 1,4375.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4375) Auch *didāsati* in folg. Stelle: *priyaṃ śraddhe dadataḥ priyaṃ śraddhe didāsataḥ*
 [ṚV. 10,151,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.151.html#rv10.151.02) Fehlerhaft dagegen ist folgende Form: *na mā martyaḥ kaścana dātumarhati viśvakarmanbhauvana māṃ didāsithā ni maṅkṣye 'haṃ salilasya madhye* (die Erde spricht)
 [AIT. BR. 8,21.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?8,21) Obschon
@@ -3515,7 +3515,7 @@ geben wollen, zu geben bereit sein: *asmabhyaminna ditsasi*
 [VARĀH. BṚH. S. 19,10.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?19,10) *varau*
 [R. GORR. 2,8,23.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,8,23) *sarvaṃ me ditsitaṃ tvayā*
 [MBH. 3,15631.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15631) [8627. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8627) *tāṃ (kanyāṃ) cedahaṃ na ditseyam*
-[1,6159.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6159) [13,106.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.106) [DAŚAK.] в [BENF. Chr. 186,23.] *putrayorubhayoreva vadhvau te ditsite mayā*
+[1,6159.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6159) [13,106.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.106) [DAŚAK.] в [BENF. Chr. 186,23.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?186) *putrayorubhayoreva vadhvau te ditsite mayā*
 [R. GORR. 1,70,13.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,70,13) [MBH. 1,4375.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4375) Также *didāsati* в folg. месте: *priyaṃ śraddhe dadataḥ priyaṃ śraddhe didāsataḥ*
 [ṚV. 10,151,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.151.html#rv10.151.02) Ошибочна же следующая форма: *na mā martyaḥ kaścana dātumarhati viśvakarmanbhauvana māṃ didāsithā ni maṅkṣye 'haṃ salilasya madhye* (говорит земля)
 [AIT. BR. 8,21.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?8,21) Хотя
@@ -4032,11 +4032,11 @@ Schol. к [JAIM. 1,16.] *ādadāyan*
 
 **caus-desid)** — Vgl. *ādadi, ādātar, ādātavya*, 1. *ādāna, annādāya, ādāyin* . — caus. nehmen lassen: *srucāvādāpya*
 [ŚĀṄKH. ŚR. 1,6,16. 5,11,6.] Vgl. *ādāpana* . — desid. med. zu ergreifen im Begriff stehen: *pāṇipallavam — āditsamānasya*
-[DAŚAK.] in [BENF. Chr. 210,11.] Vgl. *āditsu* .
+[DAŚAK.] in [BENF. Chr. 210,11.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?210) Vgl. *āditsu* .
 
 - **RU:** — Vgl. *ādadi, ādātar, ādātavya*, 1. *ādāna, annādāya, ādāyin* . — caus. понуждать взять: *srucāvādāpya*
 [ŚĀṄKH. ŚR. 1,6,16. 5,11,6.] Vgl. *ādāpana* . — desid. med. намереваться схватить: *pāṇipallavam — āditsamānasya*
-[DAŚAK.] в [BENF. Chr. 210,11.] Vgl. *āditsu* .
+[DAŚAK.] в [BENF. Chr. 210,11.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?210) Vgl. *āditsu* .
   <sub>DCS 3158 · attested</sub>
 
 ## anvādā
@@ -5292,9 +5292,9 @@ Schol. к [KĀTY. ŚR. 263,9.](https://sanskrit-lexicon-scans.github.io/katyasr/
 - **RU:** — 4〉 платить (штраф), погашать (долг), давать в виде вознаграждения.
   <sub>DCS 12366 · attested</sub>
 
-**5)** — 5〉 heraus-, wiedergeben (= *punardā*) [101,23].
+**5)** — 5〉 heraus-, wiedergeben (= *punardā*) [101,23](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?101).
 
-- **RU:** — 5〉 отдавать обратно, возвращать (= *punardā*) [101,23].
+- **RU:** — 5〉 отдавать обратно, возвращать (= *punardā*) [101,23](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?101).
   <sub>DCS 12366 · attested</sub>
 
 **6)** — 6〉 darbringen (eine Spende, eine Opfer u. s. w.). *ātmānam* sich opfern. *ātmānaṃ khedāya* so v. a. sich der Betrübniss hingeben.
@@ -5312,14 +5312,14 @@ Schol. к [KĀTY. ŚR. 263,9.](https://sanskrit-lexicon-scans.github.io/katyasr/
 - **RU:** — 8〉 даровать, разрешать, позволять. *prāṇān* или *jīvitam* позволять кому-л. оставаться в живых. *darśanam* явить кому-л. свой облик, показаться, обнаружить себя. Позволить кому-л. (Dat.) (говорится о женщине), так v. a. допустить соитие. С Infin. позволять,| с *na* и Infin. не позволять.
   <sub>DCS 12366 · attested</sub>
 
-**9)** — 9〉 geben, so v. a. reichen, zu halten geben, übergeben. *haste* einhändigen [109,25]. [110,8].
+**9)** — 9〉 geben, so v. a. reichen, zu halten geben, übergeben. *haste* einhändigen [109,25](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?109). [110,8](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?110).
 
-- **RU:** — 9〉 давать,| так v. a. протягивать, давать держать, передавать. *haste* вручать [109,25]. [110,8].
+- **RU:** — 9〉 давать,| так v. a. протягивать, давать держать, передавать. *haste* вручать [109,25](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?109). [110,8](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?110).
   <sub>DCS 12366 · attested</sub>
 
-**10)** — 10〉 legen —, stellen —, setzen auf, an oder in (Loc.), anlegen (auch in medic. Sinne), anbringen [BHĀVAPR. 2,89]. beifügen (bei Ausführung eines Receptes) [ebend.] und [92]. *kare kapolam* die Wange auf die Hand legen, so v. a. die W. mit der H. stützen [KĀRAṆḌ. 64,1]. *argalam* einen Riegel vorschieben, *pāvakam* Feuer anlegen an (Loc.) *agnin* an Jmd (Loc.) das Feuer anlegen, so v. a. verbrennen, *śāram* so v. a. eine Figur (im Spiele) ziehen, *garam* oder *viṣam* Jmd (Gen. [105,24]. [25] oder Acc.!) Gift eingeben.
+**10)** — 10〉 legen —, stellen —, setzen auf, an oder in (Loc.), anlegen (auch in medic. Sinne), anbringen [BHĀVAPR. 2,89]. beifügen (bei Ausführung eines Receptes) [ebend.] und [92]. *kare kapolam* die Wange auf die Hand legen, so v. a. die W. mit der H. stützen [KĀRAṆḌ. 64,1]. *argalam* einen Riegel vorschieben, *pāvakam* Feuer anlegen an (Loc.) *agnin* an Jmd (Loc.) das Feuer anlegen, so v. a. verbrennen, *śāram* so v. a. eine Figur (im Spiele) ziehen, *garam* oder *viṣam* Jmd (Gen. [105,24](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?105). [25](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?105) oder Acc.!) Gift eingeben.
 
-- **RU:** — 10〉 класть —, ставить —, помещать на, к или в (Loc.), прикладывать (также в medic. смысле), прикреплять [BHĀVAPR. 2,89]. добавлять (при приготовлении снадобья) [ebend.] и [92]. *kare kapolam* положить щёку на руку,| так v. a. подпереть W. рукою H. [KĀRAṆḌ. 64,1]. *argalam* задвинуть засов,| *pāvakam* поджечь (Loc.) *agnin* поджечь кого-л. (Loc.), так v. a. сжигать,| *śāram* так v. a. передвинуть фигуру (в игре), *garam* или *viṣam* дать кому-л. (Gen. [105,24]. [25] или Acc.!) яд.
+- **RU:** — 10〉 класть —, ставить —, помещать на, к или в (Loc.), прикладывать (также в medic. смысле), прикреплять [BHĀVAPR. 2,89]. добавлять (при приготовлении снадобья) [ebend.] и [92]. *kare kapolam* положить щёку на руку,| так v. a. подпереть W. рукою H. [KĀRAṆḌ. 64,1]. *argalam* задвинуть засов,| *pāvakam* поджечь (Loc.) *agnin* поджечь кого-л. (Loc.), так v. a. сжигать,| *śāram* так v. a. передвинуть фигуру (в игре), *garam* или *viṣam* дать кому-л. (Gen. [105,24](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?105). [25](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?105) или Acc.!) яд.
   <sub>DCS 12366 · attested</sub>
 
 **11)** — 11〉 seine Schritte, sein Auge, sein Ohr, seine Gedanken richten auf (Loc.).
@@ -5387,9 +5387,9 @@ Schol. к [KĀTY. ŚR. 263,9.](https://sanskrit-lexicon-scans.github.io/katyasr/
 - **RU:** — 4〉 возвращать, восстанавливать [RĀJAT. 6,50](https://sanskrit-lexicon-scans.github.io/rajatar/app1?6,50). Также так v. a. требовать обратно.
   <sub>DCS 12366 · attested</sub>
 
-**Kaus.5)** — 5〉 mitzutheilen, zu hören zu geben, auszusprechen, zu sprechen [216,15].
+**Kaus.5)** — 5〉 mitzutheilen, zu hören zu geben, auszusprechen, zu sprechen [216,15](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?216).
 
-- **RU:** — 5〉 сообщать, давать услышать, произносить, говорить [216,15].
+- **RU:** — 5〉 сообщать, давать услышать, произносить, говорить [216,15](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?216).
   <sub>DCS 12366 · attested</sub>
 
 **Kaus.6)** — 6〉 hinzustellen, vorzuschieben [KATHĀS. 12,160](https://sanskrit-lexicon-scans.github.io/kss/index.html?12,160). aufzulegen —, aufzutragen auf (Loc.).
@@ -5492,19 +5492,19 @@ Schol. к [KĀTY. ŚR. 263,9.](https://sanskrit-lexicon-scans.github.io/katyasr/
 - **RU:** — 3〉 брать обратно, требовать обратно.
   <sub>DCS 12366 · attested</sub>
 
-**ādā.4)** — 4〉 abnehmen von (Abl.) [132,8]. herausnehmen, herausziehen aus (Abl.). [162,10]. [164,22]. trennen —, sondern von (Abl.), abwenden (das Auge).
+**ādā.4)** — 4〉 abnehmen von (Abl.) [132,8](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?132). herausnehmen, herausziehen aus (Abl.). [162,10](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?162). [164,22](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?164). trennen —, sondern von (Abl.), abwenden (das Auge).
 
-- **RU:** — 4〉 снимать с (Abl.) [132,8]. вынимать, вытаскивать из (Abl.). [162,10]. [164,22]. отделять —, разлучать от (Abl.), отвращать (взор).
+- **RU:** — 4〉 снимать с (Abl.) [132,8](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?132). вынимать, вытаскивать из (Abl.). [162,10](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?162). [164,22](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?164). отделять —, разлучать от (Abl.), отвращать (взор).
   <sub>DCS 12366 · attested</sub>
 
-**ādā.5)** — 5〉 mit sich nehmen, — fortziehen. *ādāya* in Begleitung von, mit (Acc.) [24,5]. [30,29].
+**ādā.5)** — 5〉 mit sich nehmen, — fortziehen. *ādāya* in Begleitung von, mit (Acc.) [24,5](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?24). [30,29](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?30).
 
-- **RU:** — 5〉 брать с собой, — уводить. *ādāya* в сопровождении, вместе с (Acc.) [24,5]. [30,29].
+- **RU:** — 5〉 брать с собой, — уводить. *ādāya* в сопровождении, вместе с (Acc.) [24,5](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?24). [30,29](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?30).
   <sub>DCS 12366 · attested</sub>
 
-**ādā.6)** — 6〉 ergreifen, fassen, packen. *skandhena* auf die Schulter nehmen, *bāhvoḥ* in die Arme nehmen [121,32].
+**ādā.6)** — 6〉 ergreifen, fassen, packen. *skandhena* auf die Schulter nehmen, *bāhvoḥ* in die Arme nehmen [121,32](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?121).
 
-- **RU:** — 6〉 схватывать, хватать, брать. *skandhena* взять на плечо,| *bāhvoḥ* взять в объятия [121,32].
+- **RU:** — 6〉 схватывать, хватать, брать. *skandhena* взять на плечо,| *bāhvoḥ* взять в объятия [121,32](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?121).
   <sub>DCS 12366 · attested</sub>
 
 **ādā.7)** — 7〉 anthun, anlegen.
@@ -5512,9 +5512,9 @@ Schol. к [KĀTY. ŚR. 263,9.](https://sanskrit-lexicon-scans.github.io/katyasr/
 - **RU:** — 7〉 надевать, облачаться.
   <sub>DCS 12366 · attested</sub>
 
-**ādā.8)** — 8〉 zu sich nehmen, geniessen [64,19]. Mit oder ohne *daśanaiḥ* benagen [65,19]. [25].
+**ādā.8)** — 8〉 zu sich nehmen, geniessen [64,19](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?64). Mit oder ohne *daśanaiḥ* benagen [65,19](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?65). [25](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?65).
 
-- **RU:** — 8〉 принимать (пищу), вкушать [64,19]. С или без *daśanaiḥ* грызть [65,19]. [25].
+- **RU:** — 8〉 принимать (пищу), вкушать [64,19](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?64). С или без *daśanaiḥ* грызть [65,19](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?65). [25](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?65).
   <sub>DCS 12366 · attested</sub>
 
 **ādā.9)** — 9〉 ergreifen, so v. a. erwählen. *mārgam* oder *paddhatim* einen Weg einschlagen.
@@ -5537,9 +5537,9 @@ Schol. к [KĀTY. ŚR. 263,9.](https://sanskrit-lexicon-scans.github.io/katyasr/
 - **RU:** — 12〉 принимать, одобрять, соглашаться.
   <sub>DCS 12366 · attested</sub>
 
-**ādā.13)** — 13〉 auf sich nehmen, unternehmen, sich einer Sache hingeben ([290,7]. [12]), sich an Etwas machen. *vacanam, vākyam* oder *vacas* das Wort ergreifen, zu reden beginnen. *āhutayaḥ* = *āhutīḥ* so v. a. darbringen.
+**ādā.13)** — 13〉 auf sich nehmen, unternehmen, sich einer Sache hingeben ([290,7](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?290). [12](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?290)), sich an Etwas machen. *vacanam, vākyam* oder *vacas* das Wort ergreifen, zu reden beginnen. *āhutayaḥ* = *āhutīḥ* so v. a. darbringen.
 
-- **RU:** — 13〉 брать на себя, предпринимать, отдаваться чему-л. ([290,7]. [12]), браться за что-л.. *vacanam, vākyam* или *vacas* взять слово, начать говорить. *āhutayaḥ* = *āhutīḥ* так v. a. приносить.
+- **RU:** — 13〉 брать на себя, предпринимать, отдаваться чему-л. ([290,7](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?290). [12](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?290)), браться за что-л.. *vacanam, vākyam* или *vacas* взять слово, начать говорить. *āhutayaḥ* = *āhutīḥ* так v. a. приносить.
   <sub>DCS 12366 · attested</sub>
 
 **ādā.14)** — 14〉 ansetzen, anheben (zu sprechen u. s. w.).
@@ -5637,9 +5637,9 @@ Schol. к [KĀTY. ŚR. 263,9.](https://sanskrit-lexicon-scans.github.io/katyasr/
 - **RU:** — 3〉 брать с собой. *upādāya* в сопровождении, вместе с; с Acc.
   <sub>DCS 12366 · attested</sub>
 
-**upādā.4)** — 4〉 ergreifen, in die Hand nehmen, fassen, auffangen (Feuer); pflücken, lesen, auflesen [MBH. 7,23,22](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?7,23,22). [Chr. 121,25]. schöpfen (Wasser). *śulāgre* so v. a. stecken auf [R. 3,7,7](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,7,7).
+**upādā.4)** — 4〉 ergreifen, in die Hand nehmen, fassen, auffangen (Feuer); pflücken, lesen, auflesen [MBH. 7,23,22](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?7,23,22). [Chr. 121,25](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?121). schöpfen (Wasser). *śulāgre* so v. a. stecken auf [R. 3,7,7](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,7,7).
 
-- **RU:** — 4〉 схватывать, брать в руку, хватать, улавливать (огонь); срывать, собирать, подбирать [MBH. 7,23,22](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?7,23,22). [Chr. 121,25]. черпать (воду). *śulāgre* так v. a. насаживать на [R. 3,7,7](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,7,7).
+- **RU:** — 4〉 схватывать, брать в руку, хватать, улавливать (огонь); срывать, собирать, подбирать [MBH. 7,23,22](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?7,23,22). [Chr. 121,25](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?121). черпать (воду). *śulāgre* так v. a. насаживать на [R. 3,7,7](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,7,7).
   <sub>DCS 12366 · attested</sub>
 
 **upādā.5)** — 5〉 anlegen, annehmen (einen Körper).
@@ -5932,9 +5932,9 @@ Schol. к [KĀTY. ŚR. 263,9.](https://sanskrit-lexicon-scans.github.io/katyasr/
 - **RU:** — 1〉 отдавать, предавать, передавать.
   <sub>DCS 12366 · attested</sub>
 
-**mit_T50_2)** — 2〉 Jmd preisgeben [34,6].
+**mit_T50_2)** — 2〉 Jmd preisgeben [34,6](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?34).
 
-- **RU:** — 2〉 отдавать кого-либо на произвол [34,6].
+- **RU:** — 2〉 отдавать кого-либо на произвол [34,6](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?34).
   <sub>DCS 12366 · attested</sub>
 
 **mit_T50_3)** — 3〉 Etwas preisgeben, so v. a. zu Grunde gehen lassen.
@@ -5957,9 +5957,9 @@ Schol. к [KĀTY. ŚR. 263,9.](https://sanskrit-lexicon-scans.github.io/katyasr/
 - **RU:** — С *pari*
   <sub>DCS 12366 · attested</sub>
 
-**mit_T56_1)** — 1〉 übergeben, überantworten, anvertrauen, niederlegen bei oder in (Dat., Loc. oder Gen.). Partic. *parītta* [82,5].
+**mit_T56_1)** — 1〉 übergeben, überantworten, anvertrauen, niederlegen bei oder in (Dat., Loc. oder Gen.). Partic. *parītta* [82,5](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?82).
 
-- **RU:** — 1〉 передавать, вручать, доверять, вкладывать у или в (Dat., Loc. или Gen.). Partic. *parītta* [82,5].
+- **RU:** — 1〉 передавать, вручать, доверять, вкладывать у или в (Dat., Loc. или Gen.). Partic. *parītta* [82,5](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?82).
   <sub>DCS 12366 · attested</sub>
 
 **mit_T56_2)** — 2〉 verleihen.
@@ -5982,9 +5982,9 @@ Schol. к [KĀTY. ŚR. 263,9.](https://sanskrit-lexicon-scans.github.io/katyasr/
 - **RU:** — 1〉 отдавать, давать, дарить, в жёны (с или без *bhāryām*) давать. *pradadet* [HEMĀDRI 1,310,18].
   <sub>DCS 12366 · attested</sub>
 
-**mit_T64_2)** — 2〉 übergeben, darbringen, darreichen, anbieten [68,24]. *yuddham, dvaṃdvayuddham* Jmd (Dat.) einen Kampf, Zweikampf anbieten, mit — zu kämpfen sich bereit erklären.
+**mit_T64_2)** — 2〉 übergeben, darbringen, darreichen, anbieten [68,24](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?68). *yuddham, dvaṃdvayuddham* Jmd (Dat.) einen Kampf, Zweikampf anbieten, mit — zu kämpfen sich bereit erklären.
 
-- **RU:** — 2〉 передавать, подносить, вручать, предлагать [68,24]. *yuddham, dvaṃdvayuddham* предлагать кому-либо (Dat.) бой, поединок, объявлять о готовности сразиться с кем-либо.
+- **RU:** — 2〉 передавать, подносить, вручать, предлагать [68,24](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?68). *yuddham, dvaṃdvayuddham* предлагать кому-либо (Dat.) бой, поединок, объявлять о готовности сразиться с кем-либо.
   <sub>DCS 12366 · attested</sub>
 
 **mit_T64_3)** — 3〉 abtragen, bezahlen (eine Schuld).
@@ -6047,9 +6047,9 @@ Schol. к [KĀTY. ŚR. 263,9.](https://sanskrit-lexicon-scans.github.io/katyasr/
 - **RU:** — 4〉 велеть класть в, велеть вкладывать в (Loc.), велеть вставлять (*mudrām* пробку [BHĀVAPR. 2,101]).
   <sub>DCS 12366 · attested</sub>
 
-**mit_T64_caus_5)** — 5〉 hineinthun —, hineinlegen in (Loc.) [{{CARARA->CARAKA||20160103|Dhaval Patel, Jim Funderburk.|https://github.com/sanskrit-lexicon/CORRECTIONS/issues/216|It is not a typo. Print error.}}. 6,27]. *vastim* Jmd (Dat.) ein Klystier setzen [8,7].
+**mit_T64_caus_5)** — 5〉 hineinthun —, hineinlegen in (Loc.) [{{CARARA->CARAKA||20160103|Dhaval Patel, Jim Funderburk.|https://github.com/sanskrit-lexicon/CORRECTIONS/issues/216|It is not a typo. Print error.}}. 6,27]. *vastim* Jmd (Dat.) ein Klystier setzen [8,7](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?8).
 
-- **RU:** — 5〉 класть в, вкладывать в (Loc.) [{{CARARA->CARAKA||20160103|Dhaval Patel, Jim Funderburk.|https://github.com/sanskrit-lexicon/CORRECTIONS/issues/216|It is not a typo. Print error.}}. 6,27]. *vastim* ставить кому-либо (Dat.) клизму [8,7].
+- **RU:** — 5〉 класть в, вкладывать в (Loc.) [{{CARARA->CARAKA||20160103|Dhaval Patel, Jim Funderburk.|https://github.com/sanskrit-lexicon/CORRECTIONS/issues/216|It is not a typo. Print error.}}. 6,27]. *vastim* ставить кому-либо (Dat.) клизму [8,7](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?8).
   <sub>DCS 12366 · attested</sub>
 
 **mit_T64_desid)** — Desid. Med. zur Frau geben wollen.

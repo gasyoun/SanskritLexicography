@@ -16,7 +16,7 @@
 [PRAŚNOP. 5,3.] *sauraṃ dhāmopanīyate*
 [YĀJÑ. 3,122.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?3,122) *loke vikuṇṭha upaneṣyati gokulaṃ sma*
 [BHĀG. P. 2,7,31.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,7,31) *enam — caṇḍikāgṛhamupaninyuḥ*
-[5,9,15.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,9,15) [ŚIŚ. 9,72.] [PAÑCAT. 191,2.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?191,2) [DAŚAK.] in [BENF. Chr. 188,13.] *lakṣmīvatīmupanayati striyaṃ ca saḥ* (Venus im 8ten Hause) führt zu, bringt uns
+[5,9,15.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,9,15) [ŚIŚ. 9,72.] [PAÑCAT. 191,2.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?191,2) [DAŚAK.] in [BENF. Chr. 188,13.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?188) *lakṣmīvatīmupanayati striyaṃ ca saḥ* (Venus im 8ten Hause) führt zu, bringt uns
 [VARĀH. BṚH. S. 104,36.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?104,36) *krauñcanādopanītaḥ (kālaḥ)*
 [ṚT. 4,18.] *upanīya ca taṃ yuktaṃ ratham*
 [R. GORR. 2,38,12.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,38,12) [SOM. NAL. 137.] *upanīya tu tatsarvaṃ śanakaiḥ*
@@ -68,7 +68,7 @@
 [PRAŚNOP. 5,3.] *sauraṃ dhāmopanīyate*
 [YĀJÑ. 3,122.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?3,122) *loke vikuṇṭha upaneṣyati gokulaṃ sma*
 [BHĀG. P. 2,7,31.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,7,31) *enam — caṇḍikāgṛhamupaninyuḥ*
-[5,9,15.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,9,15) [ŚIŚ. 9,72.] [PAÑCAT. 191,2.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?191,2) [DAŚAK.] в [BENF. Chr. 188,13.] *lakṣmīvatīmupanayati striyaṃ ca saḥ* (Венера в 8-м доме) ведёт к, несёт нам
+[5,9,15.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,9,15) [ŚIŚ. 9,72.] [PAÑCAT. 191,2.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?191,2) [DAŚAK.] в [BENF. Chr. 188,13.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?188) *lakṣmīvatīmupanayati striyaṃ ca saḥ* (Венера в 8-м доме) ведёт к, несёт нам
 [VARĀH. BṚH. S. 104,36.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?104,36) *krauñcanādopanītaḥ (kālaḥ)*
 [ṚT. 4,18.] *upanīya ca taṃ yuktaṃ ratham*
 [R. GORR. 2,38,12.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,38,12) [SOM. NAL. 137.] *upanīya tu tatsarvaṃ śanakaiḥ*
@@ -119,7 +119,7 @@
 [PRAŚNOP. 5,3.] *sauraṃ dhāmopanīyate*
 [YĀJÑ. 3,122.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?3,122) *loke vikuṇṭha upaneṣyati gokulaṃ sma*
 [BHĀG. P. 2,7,31.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,7,31) *enam — caṇḍikāgṛhamupaninyuḥ*
-[5,9,15.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,9,15) [ŚIŚ. 9,72.] [PAÑCAT. 191,2.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?191,2) [DAŚAK.] in [BENF. Chr. 188,13.] *lakṣmīvatīmupanayati striyaṃ ca saḥ* (Venus in the 8th house) leads to, brings us
+[5,9,15.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,9,15) [ŚIŚ. 9,72.] [PAÑCAT. 191,2.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?191,2) [DAŚAK.] in [BENF. Chr. 188,13.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?188) *lakṣmīvatīmupanayati striyaṃ ca saḥ* (Venus in the 8th house) leads to, brings us
 [VARĀH. BṚH. S. 104,36.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?104,36) *krauñcanādopanītaḥ (kālaḥ)*
 [ṚT. 4,18.] *upanīya ca taṃ yuktaṃ ratham*
 [R. GORR. 2,38,12.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,38,12) [SOM. NAL. 137.] *upanīya tu tatsarvaṃ śanakaiḥ*

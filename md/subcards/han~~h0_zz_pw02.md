@@ -183,10 +183,10 @@
 - **EN:** e) destroyed, ruined, annihilated [Spr. 7767](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7767).
   <sub>attested</sub>
 
-**16.18f)** — f〉 niedergeschmettert, verloren (von Personen) [94,10]. [22].
+**16.18f)** — f〉 niedergeschmettert, verloren (von Personen) [94,10](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?94). [22](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?94).
 
-- **RU:** — f〉 сражённый наповал, погибший (о лицах) [94,10]. [22].
-- **EN:** f) crushed, lost (of persons) [94,10]. [22].
+- **RU:** — f〉 сражённый наповал, погибший (о лицах) [94,10](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?94). [22](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?94).
+- **EN:** f) crushed, lost (of persons) [94,10](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?94). [22](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?94).
   <sub>attested</sub>
 
 **16.18g)** — g〉 dahin seiend, so v. a. nicht mehr zu sehen (weg).

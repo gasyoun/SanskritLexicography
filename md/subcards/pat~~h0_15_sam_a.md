@@ -8,7 +8,7 @@
 [MBH. 5,7213.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7213) [7,7293.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.7293) *tatra mallāḥ samāpeturdigbhyo rājansahasraśaḥ*
 [4,339.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.339) *sahasainyāḥ samāpetuḥ*
 [6,1664.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.1664) [HARIV. 316.](https://sanskrit-lexicon-scans.github.io/hariv?316) *samāpeturyatra tiṣṭhati keśavaḥ*
-[14573.](https://sanskrit-lexicon-scans.github.io/hariv?14573) [R. 2,87,6.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,87,6) [DAŚAK.] in [BENF. Chr. 201,6.] *sahasainyāḥ samāpetuḥ putrasya tava vāhinīm*
+[14573.](https://sanskrit-lexicon-scans.github.io/hariv?14573) [R. 2,87,6.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,87,6) [DAŚAK.] in [BENF. Chr. 201,6.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?201) *sahasainyāḥ samāpetuḥ putrasya tava vāhinīm*
 [MBH. 6,1664.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.1664) *tamāttabāṇāsanam — āpatantam*
 [R. 5,42,12.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,42,12)
 [ŚATR. 14,218.] *pavanaḥ pavanābhihato gaganādavanau yadā samāpatati* niederfahren
@@ -19,7 +19,7 @@
 [MBH. 5,7213.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7213) [7,7293.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.7293) *tatra mallāḥ samāpeturdigbhyo rājansahasraśaḥ*
 [4,339.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.339) *sahasainyāḥ samāpetuḥ*
 [6,1664.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.1664) [HARIV. 316.](https://sanskrit-lexicon-scans.github.io/hariv?316) *samāpeturyatra tiṣṭhati keśavaḥ*
-[14573.](https://sanskrit-lexicon-scans.github.io/hariv?14573) [R. 2,87,6.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,87,6) [DAŚAK.] в [BENF. Chr. 201,6.] *sahasainyāḥ samāpetuḥ putrasya tava vāhinīm*
+[14573.](https://sanskrit-lexicon-scans.github.io/hariv?14573) [R. 2,87,6.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,87,6) [DAŚAK.] в [BENF. Chr. 201,6.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?201) *sahasainyāḥ samāpetuḥ putrasya tava vāhinīm*
 [MBH. 6,1664.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.1664) *tamāttabāṇāsanam — āpatantam*
 [R. 5,42,12.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,42,12)
 [ŚATR. 14,218.] *pavanaḥ pavanābhihato gaganādavanau yadā samāpatati* стремительно опускаться
@@ -29,7 +29,7 @@
 [MBH. 5,7213.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7213) [7,7293.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.7293) *tatra mallāḥ samāpeturdigbhyo rājansahasraśaḥ*
 [4,339.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.339) *sahasainyāḥ samāpetuḥ*
 [6,1664.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.1664) [HARIV. 316.](https://sanskrit-lexicon-scans.github.io/hariv?316) *samāpeturyatra tiṣṭhati keśavaḥ*
-[14573.](https://sanskrit-lexicon-scans.github.io/hariv?14573) [R. 2,87,6.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,87,6) [DAŚAK.] in [BENF. Chr. 201,6.] *sahasainyāḥ samāpetuḥ putrasya tava vāhinīm*
+[14573.](https://sanskrit-lexicon-scans.github.io/hariv?14573) [R. 2,87,6.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,87,6) [DAŚAK.] in [BENF. Chr. 201,6.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?201) *sahasainyāḥ samāpetuḥ putrasya tava vāhinīm*
 [MBH. 6,1664.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.1664) *tamāttabāṇāsanam — āpatantam*
 [R. 5,42,12.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,42,12)
 [ŚATR. 14,218.] *pavanaḥ pavanābhihato gaganādavanau yadā samāpatati* to swoop down

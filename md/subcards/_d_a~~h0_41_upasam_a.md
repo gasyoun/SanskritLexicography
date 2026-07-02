@@ -12,7 +12,7 @@
 [CHĀND. UP. 4,6,1.] *taṃ* (*aḍgāraṃ*) *tṛṇairupasamādhāya*
 [6,7,5.] *(kalā) annenopasamāhitā*
 [6.] aufstellen, hinstellen an seinen Platz: *upasamādhīyamānapariṇayopakaraṇa* (*bhavana*)
-[DAŚAK.] in [BENF. Chr. 201,9.]
+[DAŚAK.] in [BENF. Chr. 201,9.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?201)
 
 - **RU:** — *upasamā* подкладывать (дрова в огонь)
 [ŚAT. BR. 6,6,4,1.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?6,6,4,1) *idhmam*
@@ -23,7 +23,7 @@
 [CHĀND. UP. 4,6,1.] *taṃ* (*aḍgāraṃ*) *tṛṇairupasamādhāya*
 [6,7,5.] *(kalā) annenopasamāhitā*
 [6.] устанавливать, водружать на своё место: *upasamādhīyamānapariṇayopakaraṇa* (*bhavana*)
-[DAŚAK.] in [BENF. Chr. 201,9.]
+[DAŚAK.] in [BENF. Chr. 201,9.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?201)
 - **EN:** *upasamā* to add (wood to the fire)
 [ŚAT. BR. 6,6,4,1.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?6,6,4,1) *idhmam*
 [KAUŚ. 67.] to lay on, to kindle (fire on the hearth u. s. w.): *mathitvopasamādhāyoddṛtyāhavanīyaṃ yajante*
@@ -33,7 +33,7 @@
 [CHĀND. UP. 4,6,1.] *taṃ* (*aḍgāraṃ*) *tṛṇairupasamādhāya*
 [6,7,5.] *(kalā) annenopasamāhitā*
 [6.] to place upright, to set in its position: *upasamādhīyamānapariṇayopakaraṇa* (*bhavana*)
-[DAŚAK.] in [BENF. Chr. 201,9.]
+[DAŚAK.] in [BENF. Chr. 201,9.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?201)
   <sub>DCS 4861 · attested</sub>
 
 **2)** — Vgl. *upasamādhāna* .

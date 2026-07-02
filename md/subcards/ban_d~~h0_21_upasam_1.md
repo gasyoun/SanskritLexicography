@@ -51,14 +51,14 @@
 [YĀJÑ. 2,171.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,171) Vgl. *guṇa* 1,b.
 — Vgl. *aṅka˚, artha˚* (also
 [VIKR. 32](https://sanskrit-lexicon-scans.github.io/vikramor/app1?32)), *ka˚, kari˚, ku˚, kūṭa˚, keśa˚, dakṣiṇā˚, paṇa˚* (also
-[DAŚAK.] in [BENF. Chr. 183,20. 191,16]), *pattra˚, padma˚, paśu˚, pāṇi˚, pāda˚, prema˚, premā˚, maṇi˚, rajju˚, roma˚, vatsa˚, vastra˚, vātsa˚, veṇī˚, śreṇī˚* .
+[DAŚAK.] in [BENF. Chr. 183,20. 191,16](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?183)), *pattra˚, padma˚, paśu˚, pāṇi˚, pāda˚, prema˚, premā˚, maṇi˚, rajju˚, roma˚, vatsa˚, vastra˚, vātsa˚, veṇī˚, śreṇī˚* .
   <sub>attested</sub>
 
 **Nachtr)** — Vgl. *aṅka˚, artha˚* (auch
 [VIKR. 32](https://sanskrit-lexicon-scans.github.io/vikramor/app1?32)), *ka˚, kari˚, ku˚, kūṭa˚, keśa˚, dakṣiṇā˚, paṇa˚* (auch
-[DAŚAK.] in [BENF. Chr. 183,20. 191,16]), *pattra˚, padma˚, paśu˚, pāṇi˚, pāda˚, prema˚, premā˚, maṇi˚, rajju˚, roma˚, vatsa˚, vastra˚, vātsa˚, veṇī˚, śreṇī˚* .
+[DAŚAK.] in [BENF. Chr. 183,20. 191,16](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?183)), *pattra˚, padma˚, paśu˚, pāṇi˚, pāda˚, prema˚, premā˚, maṇi˚, rajju˚, roma˚, vatsa˚, vastra˚, vātsa˚, veṇī˚, śreṇī˚* .
 
 - **RU:** — Vgl. *aṅka˚, artha˚* (также
 [VIKR. 32](https://sanskrit-lexicon-scans.github.io/vikramor/app1?32)), *ka˚, kari˚, ku˚, kūṭa˚, keśa˚, dakṣiṇā˚, paṇa˚* (также
-[DAŚAK.] в [BENF. Chr. 183,20. 191,16]), *pattra˚, padma˚, paśu˚, pāṇi˚, pāda˚, prema˚, premā˚, maṇi˚, rajju˚, roma˚, vatsa˚, vastra˚, vātsa˚, veṇī˚, śreṇī˚* .
+[DAŚAK.] в [BENF. Chr. 183,20. 191,16](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?183)), *pattra˚, padma˚, paśu˚, pāṇi˚, pāda˚, prema˚, premā˚, maṇi˚, rajju˚, roma˚, vatsa˚, vastra˚, vātsa˚, veṇī˚, śreṇī˚* .
   <sub>attested</sub>

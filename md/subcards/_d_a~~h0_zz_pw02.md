@@ -39,8 +39,8 @@
 **PW-mit-T10)** — Mit *ni*
 - **EN:** — With *ni*
 
-**PW-mit-T10-1)** — 1〉 niedersetzen, niederlegen, ablegen, hinlegen, hinsetzen, hinstellen, — auf, an oder in (Loc.), hineinlegen, — in (Loc., Loc. mit *antar* oder *˚antar*), Etwas vor Jmd (Dat.) hinlegen. *bhūmau* oder *avaṭe* ([R. 3,8,20](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,8,20)) in die Erde, in eine Grube legen, so v. a. begraben; auf den Kopf (Loc., ausnahmsweise auch Instr.) legen auch so v. a. hoch aufnehmen [152,12]. *manasi* inʼs Herz legen, so v. a. bei sich denken. Pass. auch ruhen —, enthalten sein in (Loc.), übergehen —, sich auflösen in (Loc.) *nihita* niedergesetzt u. s. w., gelagert (ein Heer), steckend —, befindlich in (Loc. oder im Comp. vorangehend) [ĀPAST. 1,22,6].
-- **EN:** — 1〉 to set down, lay down, put aside, lay, seat, place, set — on, at, or in (Loc.), to lay into — in (Loc., Loc. with *antar* or *˚antar*), to lay something before someone (Dat.). *bhūmau* or *avaṭe* ([R. 3,8,20](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,8,20)) to place in the earth, in a pit, thus v. a. to bury; to place on the head (Loc., exceptionally also Instr.), thus also v. a. to take up high [152,12]. *manasi* to lay in the heart, thus v. a. to think to oneself. Pass. also to rest in, be contained in (Loc.), to pass into, to dissolve into (Loc.); *nihita* set down u. s. w., encamped (an army), lodged in, present in (Loc. or preceding in the Comp.) [ĀPAST. 1,22,6].
+**PW-mit-T10-1)** — 1〉 niedersetzen, niederlegen, ablegen, hinlegen, hinsetzen, hinstellen, — auf, an oder in (Loc.), hineinlegen, — in (Loc., Loc. mit *antar* oder *˚antar*), Etwas vor Jmd (Dat.) hinlegen. *bhūmau* oder *avaṭe* ([R. 3,8,20](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,8,20)) in die Erde, in eine Grube legen, so v. a. begraben; auf den Kopf (Loc., ausnahmsweise auch Instr.) legen auch so v. a. hoch aufnehmen [152,12](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?152). *manasi* inʼs Herz legen, so v. a. bei sich denken. Pass. auch ruhen —, enthalten sein in (Loc.), übergehen —, sich auflösen in (Loc.) *nihita* niedergesetzt u. s. w., gelagert (ein Heer), steckend —, befindlich in (Loc. oder im Comp. vorangehend) [ĀPAST. 1,22,6].
+- **EN:** — 1〉 to set down, lay down, put aside, lay, seat, place, set — on, at, or in (Loc.), to lay into — in (Loc., Loc. with *antar* or *˚antar*), to lay something before someone (Dat.). *bhūmau* or *avaṭe* ([R. 3,8,20](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,8,20)) to place in the earth, in a pit, thus v. a. to bury; to place on the head (Loc., exceptionally also Instr.), thus also v. a. to take up high [152,12](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?152). *manasi* to lay in the heart, thus v. a. to think to oneself. Pass. also to rest in, be contained in (Loc.), to pass into, to dissolve into (Loc.); *nihita* set down u. s. w., encamped (an army), lodged in, present in (Loc. or preceding in the Comp.) [ĀPAST. 1,22,6].
 
 **PW-mit-T10-2)** — 2〉 das Auge richten auf (Loc.) den Sinn, die Gedanken richten auf (Dat.), so v. a. beschliessen. *kriyām* Mühe wenden an (Loc.).
 - **EN:** — 2〉 to direct the eye upon (Loc.), to direct the mind, the thoughts upon (Dat.), thus v. a. to resolve, to decide. *kriyām* to bestow effort upon (Loc.).
@@ -228,8 +228,8 @@
 **PW-mit-T177)** — Mit *saṃni*
 - **EN:** — With *saṃni*
 
-**PW-mit-T177-1)** — 1〉 zusammen niederlegen in oder bei (Loc.), niederlegen, aufheben [218,8]. legen in (Loc.), aufspeichern, ansammeln. In der ältern Sprache Med. *hṛdayasaṃnihita* inʼs Herz gelegt, im Herzen wohnend.
-- **EN:** — 1〉 to lay together in or at (Loc.), to deposit, to preserve [218,8]; to lay in (Loc.), to store up, to accumulate. In the older language Med. *hṛdayasaṃnihita* laid in the heart, dwelling in the heart.
+**PW-mit-T177-1)** — 1〉 zusammen niederlegen in oder bei (Loc.), niederlegen, aufheben [218,8](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?218). legen in (Loc.), aufspeichern, ansammeln. In der ältern Sprache Med. *hṛdayasaṃnihita* inʼs Herz gelegt, im Herzen wohnend.
+- **EN:** — 1〉 to lay together in or at (Loc.), to deposit, to preserve [218,8](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?218); to lay in (Loc.), to store up, to accumulate. In the older language Med. *hṛdayasaṃnihita* laid in the heart, dwelling in the heart.
 
 **PW-mit-T177-2)** — 2〉 in der Nähe —, neben sich hinstellen [GAUT.]
 - **EN:** — 2〉 to place nearby, to set beside oneself [GAUT.]
@@ -267,8 +267,8 @@
 **PW-mit-T204-1)** — 1〉 Act. Med. herumlegen, -setzen, umlegen. *parihita* herumgesetzt, -gestellt, -stehend.
 - **EN:** — 1〉 Act. Med. to lay around, to place around, to put around. *parihita* placed around, set around, standing around.
 
-**PW-mit-T204-2)** — 2〉 Act. Med. sich umlegen, umnehmen (ein Gewand, einen Schmuck) [311,3]. [320,11]. [12]. Ohne Object sich ein Gewand umlegen. *parihita* umgelegt.
-- **EN:** — 2〉 Act. Med. to wrap around oneself, to put around oneself (a garment, an ornament) [311,3]. [320,11]. [12]. Without object to wrap a garment around oneself. *parihita* wrapped around.
+**PW-mit-T204-2)** — 2〉 Act. Med. sich umlegen, umnehmen (ein Gewand, einen Schmuck) [311,3](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?311). [320,11](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?320). [12](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?320). Ohne Object sich ein Gewand umlegen. *parihita* umgelegt.
+- **EN:** — 2〉 Act. Med. to wrap around oneself, to put around oneself (a garment, an ornament) [311,3](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?311). [320,11](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?320). [12](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?320). Without object to wrap a garment around oneself. *parihita* wrapped around.
 
 **PW-mit-T204-3)** — 3〉 umlegen, umgeben, bekleiden, — mit (Instr.), umzingeln. Gewöhnlich Act. *parihita* umlegt, umgeben.
 - **EN:** — 3〉 to lay around, to surround, to clothe, — with (Instr.), to encircle. Usually Act. *parihita* laid around, surrounded.

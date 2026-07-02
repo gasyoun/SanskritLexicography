@@ -24,7 +24,7 @@
 [ŚAT. BR. 13,2,9,7.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?13,2,9,7) [14,4,1,11.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,4,1,11) [9,1,18.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,9,1,18) *asato mā sadgamaya tamaso mā jyotirgamaya*
 [ŚAT. BR. 14,4,1,30.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,4,1,30) [PRAŚNOP. 4,4.] *tām — samudraṃ gamayiṣyati*
 [MBH. 3,493.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.493) *vaivasvatakṣayam*
-[2,2557.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2557) [DAŚAK.] in [BENF. Chr. 201,13.] *gamayiṣye*
+[2,2557.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2557) [DAŚAK.] in [BENF. Chr. 201,13.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?201) *gamayiṣye*
 [MBH. 3,625.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.625) *gamita* so v. a. *gamito yamakṣayam*
 [12,1042.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.1042) *koṭaram — gamite*
 [MĀLAV. 60.](https://sanskrit-lexicon-scans.github.io/malavikagni/app1?60) *śarīraṃ nihatyāvidyāṃ gamayitvā*
@@ -61,7 +61,7 @@
 [ŚAT. BR. 13,2,9,7.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?13,2,9,7) [14,4,1,11.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,4,1,11) [9,1,18.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,9,1,18) *asato mā sadgamaya tamaso mā jyotirgamaya*
 [ŚAT. BR. 14,4,1,30.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,4,1,30) [PRAŚNOP. 4,4.] *tām — samudraṃ gamayiṣyati*
 [MBH. 3,493.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.493) *vaivasvatakṣayam*
-[2,2557.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2557) [DAŚAK.] в [BENF. Chr. 201,13.] *gamayiṣye*
+[2,2557.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2557) [DAŚAK.] в [BENF. Chr. 201,13.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?201) *gamayiṣye*
 [MBH. 3,625.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.625) *gamita* так v. a. *gamito yamakṣayam*
 [12,1042.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.1042) *koṭaram — gamite*
 [MĀLAV. 60.](https://sanskrit-lexicon-scans.github.io/malavikagni/app1?60) *śarīraṃ nihatyāvidyāṃ gamayitvā*
@@ -97,7 +97,7 @@
 [ŚAT. BR. 13,2,9,7.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?13,2,9,7) [14,4,1,11.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,4,1,11) [9,1,18.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,9,1,18) *asato mā sadgamaya tamaso mā jyotirgamaya*
 [ŚAT. BR. 14,4,1,30.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,4,1,30) [PRAŚNOP. 4,4.] *tām — samudraṃ gamayiṣyati*
 [MBH. 3,493.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.493) *vaivasvatakṣayam*
-[2,2557.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2557) [DAŚAK.] in [BENF. Chr. 201,13.] *gamayiṣye*
+[2,2557.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2557) [DAŚAK.] in [BENF. Chr. 201,13.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?201) *gamayiṣye*
 [MBH. 3,625.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.625) *gamita* so v. a. *gamito yamakṣayam*
 [12,1042.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.1042) *koṭaram — gamite*
 [MĀLAV. 60.](https://sanskrit-lexicon-scans.github.io/malavikagni/app1?60) *śarīraṃ nihatyāvidyāṃ gamayitvā*

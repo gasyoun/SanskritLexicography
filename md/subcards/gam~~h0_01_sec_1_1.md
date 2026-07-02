@@ -73,7 +73,7 @@
 *śakuntalāgatameva cintayati*
 [71,18.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?71,18) *mṛgavatīgataṃ sarvaṃ śaśaṃsa*
 [KATHĀS. 9,36.](https://sanskrit-lexicon-scans.github.io/kss/index.html?9,36)
-[VEDĀNTAS.] in [BENF. Chr. 204,3.]
+[VEDĀNTAS.] in [BENF. Chr. 204,3.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?204)
 
 - **RU:** — i) относящийся к, касающийся; в конце comp.: *vayamapi tāvadbhavatyau sakhīgataṃ pṛcchāmaḥ*
 [ŚĀK. 14,10.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?14,10)
@@ -81,8 +81,8 @@
 *śakuntalāgatameva cintayati*
 [71,18.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?71,18) *mṛgavatīgataṃ sarvaṃ śaśaṃsa*
 [KATHĀS. 9,36.](https://sanskrit-lexicon-scans.github.io/kss/index.html?9,36)
-[VEDĀNTAS.] в [BENF. Chr. 204,3.]
-- **EN:** — i) going to, referring to, relating to; at the end of a comp.: *vayamapi tāvadbhavatyau sakhīgataṃ pṛcchāmaḥ* [ŚĀK. 14,10.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?14,10) *śakuntalāgatameva cintayati* [71,18.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?71,18) *mṛgavatīgataṃ sarvaṃ śaśaṃsa* [KATHĀS. 9,36.](https://sanskrit-lexicon-scans.github.io/kss/index.html?9,36) [VEDĀNTAS.] in [BENF. Chr. 204,3.]
+[VEDĀNTAS.] в [BENF. Chr. 204,3.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?204)
+- **EN:** — i) going to, referring to, relating to; at the end of a comp.: *vayamapi tāvadbhavatyau sakhīgataṃ pṛcchāmaḥ* [ŚĀK. 14,10.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?14,10) *śakuntalāgatameva cintayati* [71,18.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?71,18) *mṛgavatīgataṃ sarvaṃ śaśaṃsa* [KATHĀS. 9,36.](https://sanskrit-lexicon-scans.github.io/kss/index.html?9,36) [VEDĀNTAS.] in [BENF. Chr. 204,3.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?204)
   <sub>attested</sub>
 
 **1k)** — k) betreten, besucht: *bhartṛputragate pathi*

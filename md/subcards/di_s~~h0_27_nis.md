@@ -58,7 +58,7 @@
 [4,1342.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1342) *nirdiṣṭāṃ kulapatinā — parṇaśālām*
 [RAGH. 1,95.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?1,95)
 [BHĀG. P. 1,17,37.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,17,37) *tvāmeva niradikṣat* angeben, nennen
-[DAŚAK.] in [BENF. Chr. 197,23.] *yathānirdiṣṭaparivāra*
+[DAŚAK.] in [BENF. Chr. 197,23.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?197) *yathānirdiṣṭaparivāra*
 [ŚĀK. 21,2.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?21,2) [102,1.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?102,1)
 [DHŪRTAS. 71,1.] *saṃpāditaśca svāmino mayā yathānirdiṣṭa ādeśaḥ*
 [PRAB. 19,11.] *nāmnā nirdiṣṭā sā vaiśvadevī*
@@ -88,7 +88,7 @@
 [4,1342.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1342) *nirdiṣṭāṃ kulapatinā — parṇaśālām*
 [RAGH. 1,95.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?1,95)
 [BHĀG. P. 1,17,37.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,17,37) *tvāmeva niradikṣat* указывать, называть
-[DAŚAK.] в [BENF. Chr. 197,23.] *yathānirdiṣṭaparivāra*
+[DAŚAK.] в [BENF. Chr. 197,23.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?197) *yathānirdiṣṭaparivāra*
 [ŚĀK. 21,2.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?21,2) [102,1.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?102,1)
 [DHŪRTAS. 71,1.] *saṃpāditaśca svāmino mayā yathānirdiṣṭa ādeśaḥ*
 [PRAB. 19,11.] *nāmnā nirdiṣṭā sā vaiśvadevī*
@@ -117,7 +117,7 @@
 [4,1342.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1342) *nirdiṣṭāṃ kulapatinā — parṇaśālām*
 [RAGH. 1,95.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?1,95)
 [BHĀG. P. 1,17,37.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,17,37) *tvāmeva niradikṣat* to indicate, name
-[DAŚAK.] in [BENF. Chr. 197,23.] *yathānirdiṣṭaparivāra*
+[DAŚAK.] in [BENF. Chr. 197,23.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?197) *yathānirdiṣṭaparivāra*
 [ŚĀK. 21,2.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?21,2) [102,1.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?102,1)
 [DHŪRTAS. 71,1.] *saṃpāditaśca svāmino mayā yathānirdiṣṭa ādeśaḥ*
 [PRAB. 19,11.] *nāmnā nirdiṣṭā sā vaiśvadevī*

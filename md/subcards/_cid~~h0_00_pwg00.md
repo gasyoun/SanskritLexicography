@@ -284,7 +284,7 @@ Sch.; *ciccheda* und *cicchide, cicchidvaṃs*
 [2,1,15.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,1,15) *kriyāṃ nīlapurāṇoktāmacchindannāgamadviṣaḥ*
 [RĀJA-TAR. 1,178.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?1,178) *tṛṣṇāṃ chinattyātmanaḥ*
 [PAÑCAT. II,128.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?2,128) [BHARTṚ. 2,70.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app2?2,70) *duḥkhaṃ chindyāmahaṃ te vai*
-[MBH.] in [BENF. Chr. 12,25.] *kautūhalaṃ naḥ paramaṃ tacchindhi*
+[MBH.] in [BENF. Chr. 12,25.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?12) *kautūhalaṃ naḥ paramaṃ tacchindhi*
 [HARIV. 7730.](https://sanskrit-lexicon-scans.github.io/hariv?7730) *ṛṇaṃ chittvā* eine Schuld tilgen
 
 [RĀJA-TAR. 6,16.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?6,16)
@@ -301,7 +301,7 @@ Sch.; *ciccheda* und *cicchide, cicchidvaṃs*
 [2,1,15.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,1,15) *kriyāṃ nīlapurāṇoktāmacchindannāgamadviṣaḥ*
 [RĀJA-TAR. 1,178.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?1,178) *tṛṣṇāṃ chinattyātmanaḥ*
 [PAÑCAT. II,128.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?2,128) [BHARTṚ. 2,70.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app2?2,70) *duḥkhaṃ chindyāmahaṃ te vai*
-[MBH.] in [BENF. Chr. 12,25.] *kautūhalaṃ naḥ paramaṃ tacchindhi*
+[MBH.] in [BENF. Chr. 12,25.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?12) *kautūhalaṃ naḥ paramaṃ tacchindhi*
 [HARIV. 7730.](https://sanskrit-lexicon-scans.github.io/hariv?7730) *ṛṇaṃ chittvā* погасить долг
 
 [RĀJA-TAR. 6,16.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?6,16)
@@ -317,7 +317,7 @@ Sch.; *ciccheda* und *cicchide, cicchidvaṃs*
 [2,1,15.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,1,15) *kriyāṃ nīlapurāṇoktāmacchindannāgamadviṣaḥ*
 [RĀJA-TAR. 1,178.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?1,178) *tṛṣṇāṃ chinattyātmanaḥ*
 [PAÑCAT. II,128.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?2,128) [BHARTṚ. 2,70.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app2?2,70) *duḥkhaṃ chindyāmahaṃ te vai*
-[MBH.] in [BENF. Chr. 12,25.] *kautūhalaṃ naḥ paramaṃ tacchindhi*
+[MBH.] in [BENF. Chr. 12,25.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?12) *kautūhalaṃ naḥ paramaṃ tacchindhi*
 [HARIV. 7730.](https://sanskrit-lexicon-scans.github.io/hariv?7730) *ṛṇaṃ chittvā* to discharge a debt
 
 [RĀJA-TAR. 6,16.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?6,16)

@@ -12,8 +12,8 @@
 **pw00-2)** — 2〉 durchwandern, durchstreichen, durchlaufen; mit Acc.
 - **EN:** — 2) to wander through, roam through, traverse; with Acc.
 
-**pw00-3)** — 3〉 entlang-, nachgehen; mit Acc. [85,2].
-- **EN:** — 3) to go along, follow after; with Acc. [85,2].
+**pw00-3)** — 3〉 entlang-, nachgehen; mit Acc. [85,2](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?85).
+- **EN:** — 3) to go along, follow after; with Acc. [85,2](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?85).
 
 **pw00-4)** — 4〉 sich aufführen, — verhalten, — benehmen, verfahren, handeln, verfahren mit Jmd (Instr. oder Loc.).
 - **EN:** — 4) to conduct oneself, — behave, — comport oneself, proceed, act, deal with someone (Instr. or Loc.).
@@ -36,8 +36,8 @@
 **pw00-10)** — 10〉 bewirken, hervorbringen, verursachen [MBH. 1,153,17](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?1,153,17). [HARIV. 6790](https://sanskrit-lexicon-scans.github.io/hariv?6790). [Spr. 3474](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3474).
 - **EN:** — 10) to effect, bring about, cause [MBH. 1,153,17](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?1,153,17). [HARIV. 6790](https://sanskrit-lexicon-scans.github.io/hariv?6790). [Spr. 3474](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3474).
 
-**pw00-11)** — 11〉 zu sich nehmen, verzehren, fressen; mit Acc. Ohne Object weiden [142,14].
-- **EN:** — 11) to take in, consume, eat, devour; with Acc. Without an object, to graze [142,14].
+**pw00-11)** — 11〉 zu sich nehmen, verzehren, fressen; mit Acc. Ohne Object weiden [142,14](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?142).
+- **EN:** — 11) to take in, consume, eat, devour; with Acc. Without an object, to graze [142,14](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?142).
 
 **pw00-12)** — 12〉 machen zu, mit doppeltem Acc.
 - **EN:** — 12) to make into, with double Acc.
@@ -207,8 +207,8 @@
 **pw00-a-head)** — Mit *ā*
 - **EN:** — With *ā* (ā)
 
-**pw00-a-1)** — 1〉 herbeikommen zu, sich nähern; mit Acc. [93,6].
-- **EN:** — 1) to come up to, approach; with Acc. [93,6].
+**pw00-a-1)** — 1〉 herbeikommen zu, sich nähern; mit Acc. [93,6](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?93).
+- **EN:** — 1) to come up to, approach; with Acc. [93,6](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?93).
 
 **pw00-a-2)** — 2〉 hierher, d. i. zur Erde führen (von einem Wege).
 - **EN:** — 2) to lead hither, d. i. lead to the ground (of a path).
@@ -237,8 +237,8 @@
 **pw00-a-10)** — 10〉 daran gehen, beginnen; mit Infin. [Spr. 7177](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7177).
 - **EN:** — 10) to set about it, begin; with Infin. [Spr. 7177](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7177).
 
-**pw00-a-11)** — 11〉 für richtig erklären, vorschreiben [225,12]. [ṚV. PRĀT. 11,32]. [ŚĀK. 108,22](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?108,22), v. l.
-- **EN:** — 11) to declare correct, prescribe [225,12]. [ṚV. PRĀT. 11,32]. [ŚĀK. 108,22](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?108,22), v. l.
+**pw00-a-11)** — 11〉 für richtig erklären, vorschreiben [225,12](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?225). [ṚV. PRĀT. 11,32]. [ŚĀK. 108,22](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?108,22), v. l.
+- **EN:** — 11) to declare correct, prescribe [225,12](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?225). [ṚV. PRĀT. 11,32]. [ŚĀK. 108,22](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?108,22), v. l.
 
 **pw00-a-12)** — 12〉 verzehren (von Ameisen) [BHĀG. P. 7,3,15](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,3,15).
 - **EN:** — 12) to consume (of ants) [BHĀG. P. 7,3,15](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,3,15).

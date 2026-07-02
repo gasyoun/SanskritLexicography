@@ -25,7 +25,7 @@
 [ŚĀK. 46,7.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?46,7) *mṛgayāṃ nirgato nṛpaḥ*
 [MBH. 3,14055.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14055) *(sainayoḥ) nirgacchamānayoḥ saṃkhye*
 [6,3848.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.3848) in demselben Sinne ohne *saṃkhye*
-[DAŚAK.] in [BENF. Chr. 201,2.] *na kutracidapi nirgatā*
+[DAŚAK.] in [BENF. Chr. 201,2.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?201) *na kutracidapi nirgatā*
 [PAÑCAT. 36,23.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?36,23) *mārgeṣu *
 
 * nirgataḥ*
@@ -61,7 +61,7 @@
 [ŚĀK. 46,7.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?46,7) *mṛgayāṃ nirgato nṛpaḥ*
 [MBH. 3,14055.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14055) *(sainayoḥ) nirgacchamānayoḥ saṃkhye*
 [6,3848.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.3848) в том же смысле без *saṃkhye*
-[DAŚAK.] в [BENF. Chr. 201,2.] *na kutracidapi nirgatā*
+[DAŚAK.] в [BENF. Chr. 201,2.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?201) *na kutracidapi nirgatā*
 [PAÑCAT. 36,23.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?36,23) *mārgeṣu *
 
 * nirgataḥ*
@@ -96,7 +96,7 @@
 [ŚĀK. 46,7.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?46,7) *mṛgayāṃ nirgato nṛpaḥ*
 [MBH. 3,14055.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14055) *(sainayoḥ) nirgacchamānayoḥ saṃkhye*
 [6,3848.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.3848) in the same sense without *saṃkhye*
-[DAŚAK.] in [BENF. Chr. 201,2.] *na kutracidapi nirgatā*
+[DAŚAK.] in [BENF. Chr. 201,2.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?201) *na kutracidapi nirgatā*
 [PAÑCAT. 36,23.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?36,23) *mārgeṣu *
 
 * nirgataḥ*

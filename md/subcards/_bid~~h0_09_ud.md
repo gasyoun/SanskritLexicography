@@ -9,7 +9,7 @@
 [MBH. 5,3563.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.3563) hervorbrechen, hervorschiessen, zum Vorschein kommen; act.: *nastaḥ, cakṣuṣṭaḥ, śrotrata udabhinat*
 [ŚAT. BR. 13,4,4,6. fgg.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?13,4,4,6) pass. dass.: *yāvannodbhidyete* (so zu lesen) *stanau*
 [PAIṬHĪNASI] in [DĀYABH. 273,1.] *udbhidyamānaśramajalapulaka*
-[DAŚAK.] in [BENF. Chr. 199,5.] [BHĀG. P. 5,7,11.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,7,11) *tvatsunītipādapasya puṣpamudbhinnamidam*
+[DAŚAK.] in [BENF. Chr. 199,5.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?199) [BHĀG. P. 5,7,11.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,7,11) *tvatsunītipādapasya puṣpamudbhinnamidam*
 [MĀLAV. 10,14.](https://sanskrit-lexicon-scans.github.io/malavikagni/app2?10,14)
 [KATHĀS. 14,27.](https://sanskrit-lexicon-scans.github.io/kss/index.html?14,27)
 [Spr. 3790.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3790) *udbhinnaromapulakaiḥ*
@@ -35,7 +35,7 @@
 [MBH. 5,3563.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.3563) «прорываться, вырываться, появляться на поверхности»; act.: *nastaḥ, cakṣuṣṭaḥ, śrotrata udabhinat*
 [ŚAT. BR. 13,4,4,6. fgg.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?13,4,4,6) pass. dass.: *yāvannodbhidyete* (так следует читать) *stanau*
 [PAIṬHĪNASI] в [DĀYABH. 273,1.] *udbhidyamānaśramajalapulaka*
-[DAŚAK.] в [BENF. Chr. 199,5.] [BHĀG. P. 5,7,11.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,7,11) *tvatsunītipādapasya puṣpamudbhinnamidam*
+[DAŚAK.] в [BENF. Chr. 199,5.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?199) [BHĀG. P. 5,7,11.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,7,11) *tvatsunītipādapasya puṣpamudbhinnamidam*
 [MĀLAV. 10,14.](https://sanskrit-lexicon-scans.github.io/malavikagni/app2?10,14)
 [KATHĀS. 14,27.](https://sanskrit-lexicon-scans.github.io/kss/index.html?14,27)
 [Spr. 3790.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3790) *udbhinnaromapulakaiḥ*
@@ -60,7 +60,7 @@
 [MBH. 5,3563.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.3563) to break forth, to shoot out, to come to light; act.: *nastaḥ, cakṣuṣṭaḥ, śrotrata udabhinat*
 [ŚAT. BR. 13,4,4,6. fgg.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?13,4,4,6) pass. dass.: *yāvannodbhidyete* (so to be read) *stanau*
 [PAIṬHĪNASI] in [DĀYABH. 273,1.] *udbhidyamānaśramajalapulaka*
-[DAŚAK.] in [BENF. Chr. 199,5.] [BHĀG. P. 5,7,11.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,7,11) *tvatsunītipādapasya puṣpamudbhinnamidam*
+[DAŚAK.] in [BENF. Chr. 199,5.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?199) [BHĀG. P. 5,7,11.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,7,11) *tvatsunītipādapasya puṣpamudbhinnamidam*
 [MĀLAV. 10,14.](https://sanskrit-lexicon-scans.github.io/malavikagni/app2?10,14)
 [KATHĀS. 14,27.](https://sanskrit-lexicon-scans.github.io/kss/index.html?14,27)
 [Spr. 3790.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3790) *udbhinnaromapulakaiḥ*

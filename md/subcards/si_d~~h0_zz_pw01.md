@@ -141,10 +141,10 @@
 - **EN:** — l〉 established, thus v. a. known, — in (preceding in the Comp.). *˚tara* more known, more famous.
   <sub>DCS 2028 · attested</sub>
 
-**11m)** — m〉 wirksam, Zauberkraft besitzend, wunderkräftig (vom leblosen Gegenständen) [CARAKA. 6,1. 9. 12]. *˚tama* [1,3].
+**11m)** — m〉 wirksam, Zauberkraft besitzend, wunderkräftig (vom leblosen Gegenständen) [CARAKA. 6,1. 9. 12]. *˚tama* [1,3](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?1).
 
-- **RU:** — m〉 действенный, обладающий магической силой, чудодейственный (о неодушевлённых предметах) [CARAKA. 6,1. 9. 12]. *˚tama* [1,3].
-- **EN:** — m〉 effective, possessing magical power, miraculous (of inanimate objects) [CARAKA. 6,1. 9. 12]. *˚tama* [1,3].
+- **RU:** — m〉 действенный, обладающий магической силой, чудодейственный (о неодушевлённых предметах) [CARAKA. 6,1. 9. 12]. *˚tama* [1,3](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?1).
+- **EN:** — m〉 effective, possessing magical power, miraculous (of inanimate objects) [CARAKA. 6,1. 9. 12]. *˚tama* [1,3](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?1).
   <sub>DCS 2028 · attested</sub>
 
 **11n)** — n〉 zu Willen seiend, zu Jmds (Gen.). Verfügung stehend (insbes. von Geistern und andern Zaubermitteln).
@@ -186,8 +186,8 @@
 **prefix-1-intro)** — Mit *anu*
 - **EN:** — With *anu*
 
-**prefix-1-1)** — 1〉 in Erfüllung gehen [KĀRAṆḌ. 60,2. 85,15]. Med. (!) [48,8].
-- **EN:** — 1〉 to be fulfilled [KĀRAṆḌ. 60,2. 85,15]. Med. (!) [48,8].
+**prefix-1-1)** — 1〉 in Erfüllung gehen [KĀRAṆḌ. 60,2. 85,15]. Med. (!) [48,8](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?48).
+- **EN:** — 1〉 to be fulfilled [KĀRAṆḌ. 60,2. 85,15]. Med. (!) [48,8](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?48).
 
 **prefix-1-2)** — 2〉 *˚siddha* allmählich zu Stande gekommen.
 
@@ -328,10 +328,10 @@
   <sub>DCS 2028 · attested</sub>
 
 **mit T25 — 1)** — Mit *anu*
-— 1〉 in Erfüllung gehen [KĀRAṆḌ. 60,2. 85,15]. Med. (!) [48,8].
+— 1〉 in Erfüllung gehen [KĀRAṆḌ. 60,2. 85,15]. Med. (!) [48,8](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?48).
 
 - **RU:** — С *anu*
-— 1〉 осуществляться [KĀRAṆḌ. 60,2. 85,15]. Med. (!) [48,8].
+— 1〉 осуществляться [KĀRAṆḌ. 60,2. 85,15]. Med. (!) [48,8](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?48).
   <sub>DCS 2028 · attested</sub>
 
 **mit T30 — 1)** — Mit *abhi* (*˚sidhyati*)

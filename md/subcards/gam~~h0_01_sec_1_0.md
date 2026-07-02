@@ -140,11 +140,11 @@
   <sub>attested</sub>
 
 **1g-gamma)** — γ) im acc. mit *pratiḥ paśya lakṣmaṇa vaidehyā mṛgaṃ prati gatāṃ* (so ist st. *pratigatāṃ* zu lesen) *spṛhām* auf die Gazelle gerichtet
-[R. 3,49,12](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,49,12) und [BENF. Chr. 66,12.]
+[R. 3,49,12](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,49,12) und [BENF. Chr. 66,12.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?66)
 
 - **RU:** — γ) в acc. с *pratiḥ paśya lakṣmaṇa vaidehyā mṛgaṃ prati gatāṃ* (следует читать st. *pratigatāṃ*) *spṛhām* направленный на газель
-[R. 3,49,12](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,49,12) и [BENF. Chr. 66,12.]
-- **EN:** — γ) in the acc. with *pratiḥ paśya lakṣmaṇa vaidehyā mṛgaṃ prati gatāṃ* (thus st. *pratigatāṃ* is to be read) *spṛhām* directed at the gazelle [R. 3,49,12](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,49,12) and [BENF. Chr. 66,12.]
+[R. 3,49,12](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,49,12) и [BENF. Chr. 66,12.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?66)
+- **EN:** — γ) in the acc. with *pratiḥ paśya lakṣmaṇa vaidehyā mṛgaṃ prati gatāṃ* (thus st. *pratigatāṃ* is to be read) *spṛhām* directed at the gazelle [R. 3,49,12](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,49,12) and [BENF. Chr. 66,12.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?66)
   <sub>attested</sub>
 
 **1g-delta)** — δ) im comp. vorangeh.

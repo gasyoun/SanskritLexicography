@@ -29,7 +29,7 @@
 [RAGH. 12,104.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?12,104) [14,29.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?14,29)
 [KATHĀS. 10,208.](https://sanskrit-lexicon-scans.github.io/kss/index.html?10,208) [14,11.](https://sanskrit-lexicon-scans.github.io/kss/index.html?14,11) [18,11.](https://sanskrit-lexicon-scans.github.io/kss/index.html?18,11) [46,248.](https://sanskrit-lexicon-scans.github.io/kss/index.html?46,248)
 [RĀJA-TAR. 5,358.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,358) *lokalocanamānasānuyātā prātiṣṭhata*
-[DAŚAK.] in [BENF. Chr. 190,17.] *kaphānuyāta*
+[DAŚAK.] in [BENF. Chr. 190,17.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?190) *kaphānuyāta*
 [SUŚR. 2,361,15.] *bhartāramanuyā* so v. a. dem Gatten im Tode folgen, sich mit ihm verbrennen lassen
 [Spr. 3485.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3485)
 [RĀJA-TAR. 5,225.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,225) *bhartāramanuyātā*
@@ -72,7 +72,7 @@
 [RAGH. 12,104.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?12,104) [14,29.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?14,29)
 [KATHĀS. 10,208.](https://sanskrit-lexicon-scans.github.io/kss/index.html?10,208) [14,11.](https://sanskrit-lexicon-scans.github.io/kss/index.html?14,11) [18,11.](https://sanskrit-lexicon-scans.github.io/kss/index.html?18,11) [46,248.](https://sanskrit-lexicon-scans.github.io/kss/index.html?46,248)
 [RĀJA-TAR. 5,358.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,358) *lokalocanamānasānuyātā prātiṣṭhata*
-[DAŚAK.] в [BENF. Chr. 190,17.] *kaphānuyāta*
+[DAŚAK.] в [BENF. Chr. 190,17.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?190) *kaphānuyāta*
 [SUŚR. 2,361,15.] *bhartāramanuyā* так v. a. последовать за мужем в смерть, дать себя сжечь вместе с ним
 [Spr. 3485.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3485)
 [RĀJA-TAR. 5,225.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,225) *bhartāramanuyātā*
@@ -114,7 +114,7 @@
 [RAGH. 12,104.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?12,104) [14,29.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?14,29)
 [KATHĀS. 10,208.](https://sanskrit-lexicon-scans.github.io/kss/index.html?10,208) [14,11.](https://sanskrit-lexicon-scans.github.io/kss/index.html?14,11) [18,11.](https://sanskrit-lexicon-scans.github.io/kss/index.html?18,11) [46,248.](https://sanskrit-lexicon-scans.github.io/kss/index.html?46,248)
 [RĀJA-TAR. 5,358.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,358) *lokalocanamānasānuyātā prātiṣṭhata*
-[DAŚAK.] in [BENF. Chr. 190,17.] *kaphānuyāta*
+[DAŚAK.] in [BENF. Chr. 190,17.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?190) *kaphānuyāta*
 [SUŚR. 2,361,15.] *bhartāramanuyā* so v. a. to follow one's husband in death, to have oneself burned with him
 [Spr. 3485.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3485)
 [RĀJA-TAR. 5,225.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,225) *bhartāramanuyātā*

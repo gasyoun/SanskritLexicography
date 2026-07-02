@@ -18,8 +18,8 @@
 **1)** **1.** *pā*¦, Präsensstämme: *pā, pip* (ganz vereinzelt) und *pib*; Act., seltener Med.; Absol. *pītvā*, **˚pāya* und *˚pīya*; *pīyate* pass.
 - **EN:** **1.** *pā*¦, present stems: *pā, pip* (quite isolated) and *pib*; Act., more rarely Med.; Absol. *pītvā*, **˚pāya* and *˚pīya*; *pīyate* pass.
 
-**1)** — 1〉 trinken, einsaugen, einschlürfen; mit Acc. oder partitivem Gen. (nur in der älteren Sprache) des Trankes: Blut einsaugen (vom Schwert und Pfeil gesagt); saugen an ([252,27]) Staub, Rauch einschlucken, einziehen; trinken auch so v. a. geistige Getränke trinken.
-- **EN:** — 1〉 to drink, imbibe, sip; with Acc. or partitive Gen. (only in the older language) of the drink: to suck up blood (said of sword and arrow); to suck at ([252,27]), to swallow, draw in dust, smoke; to drink, and thus v. a. to drink spirituous liquors.
+**1)** — 1〉 trinken, einsaugen, einschlürfen; mit Acc. oder partitivem Gen. (nur in der älteren Sprache) des Trankes: Blut einsaugen (vom Schwert und Pfeil gesagt); saugen an ([252,27](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?252)) Staub, Rauch einschlucken, einziehen; trinken auch so v. a. geistige Getränke trinken.
+- **EN:** — 1〉 to drink, imbibe, sip; with Acc. or partitive Gen. (only in the older language) of the drink: to suck up blood (said of sword and arrow); to suck at ([252,27](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?252)), to swallow, draw in dust, smoke; to drink, and thus v. a. to drink spirituous liquors.
 
 **2)** — 2〉 einsaugen. so v. a. sich zu eigen machen, geniessen: so v. a. sich zu eigen machen, geniessen: mit Augen, Ohren (Instr.) einsaugen. so v. a. sich laben an. *jagatāṃ matam* der Leute Meinungen einsaugen. so v. a. ablauschen.
 
@@ -45,10 +45,10 @@
 - **EN:** — a〉 with pass. Bed.
   <sub>attested</sub>
 
-**4a-alpha)** — α〉 getrunken, eingesogen (auch Wasser durch einen Baum [179,9]), gesogen (Rauch). *pītavant* eingesogen habend [39,9].
+**4a-alpha)** — α〉 getrunken, eingesogen (auch Wasser durch einen Baum [179,9](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?179)), gesogen (Rauch). *pītavant* eingesogen habend [39,9](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?39).
 
-- **RU:** — α〉 выпитый, всосанный (в том числе воду — деревом [179,9]), вобравший (дым). *pītavant* всосавший [39,9].
-- **EN:** — α〉 drunk, imbibed (also water by a tree [179,9]), sucked (smoke). *pītavant* having imbibed [39,9].
+- **RU:** — α〉 выпитый, всосанный (в том числе воду — деревом [179,9](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?179)), вобравший (дым). *pītavant* всосавший [39,9](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?39).
+- **EN:** — α〉 drunk, imbibed (also water by a tree [179,9](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?179)), sucked (smoke). *pītavant* having imbibed [39,9](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?39).
   <sub>attested</sub>
 
 **4a-beta)** — β〉 eingesogen, so v. a. mit den Ohren e.
@@ -213,10 +213,10 @@
 - **EN:** — With *ā*
   <sub>attested</sub>
 
-**preverb-ā-1)** — 1〉 hineintrinken, einschlürfen, trinken ([57,8]) aus (Abl.) oder an (Acc.), austrinken, einsaugen, aussaugen, einziehen (Rauch) [CARAKA. 6,20].
+**preverb-ā-1)** — 1〉 hineintrinken, einschlürfen, trinken ([57,8](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?57)) aus (Abl.) oder an (Acc.), austrinken, einsaugen, aussaugen, einziehen (Rauch) [CARAKA. 6,20].
 
-- **RU:** — 1〉 пить, поглощая; прихлёбывать; пить ([57,8]) из (Abl.) или из/у (Acc.), выпивать до дна, всасывать, высасывать, втягивать (дым) [CARAKA. 6,20].
-- **EN:** — 1〉 to drink in, sip, drink ([57,8]) from (Abl.) or at (Acc.), to drink up, imbibe, suck out, draw in (smoke) [CARAKA. 6,20].
+- **RU:** — 1〉 пить, поглощая; прихлёбывать; пить ([57,8](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?57)) из (Abl.) или из/у (Acc.), выпивать до дна, всасывать, высасывать, втягивать (дым) [CARAKA. 6,20].
+- **EN:** — 1〉 to drink in, sip, drink ([57,8](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?57)) from (Abl.) or at (Acc.), to drink up, imbibe, suck out, draw in (smoke) [CARAKA. 6,20].
   <sub>attested</sub>
 
 **preverb-ā-2)** — 2〉 mit Augen, Ohren (Instr.) einsaugen, so v. a. sich laben an. *āpīyatam* so v. a. man höre.
@@ -503,9 +503,9 @@
 - **EN:** **1.** √*pā*¦ with *upa* Caus. also [ĀPAST. ŚR. 9,18,11].
 — With *nis* line 2, read *niṣpīta*. — Caus. 5.
 
-**PW1_1)** **1.** *pā*¦, Präsensstämme: *pā, pip* (ganz vereinzelt) und *pib*; Act., seltener Med.; Absol. *pītvā*, **˚pāya* und *˚pīya*; *pīyate* pass. — 1〉 trinken, einsaugen, einschlürfen; mit Acc. oder partitivem Gen. (nur in der älteren Sprache) des Trankes: Blut einsaugen (vom Schwert und Pfeil gesagt); saugen an ([252,27]) Staub, Rauch einschlucken, einziehen; trinken auch so v. a. geistige Getränke trinken.
+**PW1_1)** **1.** *pā*¦, Präsensstämme: *pā, pip* (ganz vereinzelt) und *pib*; Act., seltener Med.; Absol. *pītvā*, **˚pāya* und *˚pīya*; *pīyate* pass. — 1〉 trinken, einsaugen, einschlürfen; mit Acc. oder partitivem Gen. (nur in der älteren Sprache) des Trankes: Blut einsaugen (vom Schwert und Pfeil gesagt); saugen an ([252,27](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?252)) Staub, Rauch einschlucken, einziehen; trinken auch so v. a. geistige Getränke trinken.
 
-- **RU:** **1.** *pā*¦, основы настоящего времени: *pā, pip* (крайне редко) и *pib*; Act., реже Med.; Absol. *pītvā*, **˚pāya* и *˚pīya*; *pīyate* pass. — 1〉 пить, всасывать, поглощать; с Acc. или партитивным Gen. (только в более древнем языке) питья: кровь всасывать (говорится о мече и стреле); сосать ([252,27]), пыль, дым заглатывать, втягивать; пить, также v. a. пить хмельные напитки.
+- **RU:** **1.** *pā*¦, основы настоящего времени: *pā, pip* (крайне редко) и *pib*; Act., реже Med.; Absol. *pītvā*, **˚pāya* и *˚pīya*; *pīyate* pass. — 1〉 пить, всасывать, поглощать; с Acc. или партитивным Gen. (только в более древнем языке) питья: кровь всасывать (говорится о мече и стреле); сосать ([252,27](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?252)), пыль, дым заглатывать, втягивать; пить, также v. a. пить хмельные напитки.
   <sub>attested</sub>
 
 **PW1_vi_caus)** — Caus. einschlürfen lassen.

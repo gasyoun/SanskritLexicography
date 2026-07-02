@@ -9,8 +9,8 @@
 **1a)** — 1〉 ohne Object oder mit Acc.
 - **EN:** — 1) without an object or with Acc.
 
-**1a-a)** — a〉 kennen, wissen, bekannt —, vertraut sein, Kenntniss haben von, erkennen, — an (Instr. [235,19]), in Erfahrung bringen, forschen nach, inne werden, merken, kennen lernen, erfahren. *jāne* (eingeschoben) das weiss ich [133,29]. *ka evaṃ jānīte* mit folgendem Fut. wer weiss, ob nicht [Spr. 546](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?546). Mit einer Negation Nichts wissen von auch so v. a. keine Rücksicht nehmen auf und nicht theilhaftig werden. *jñāta* bekannt, gekannt, von dem oder wovon man Etwas weiss, erkannt, bemerkt, kennen gelernt, erfahren.
-- **EN:** — a) to know, have knowledge of, be acquainted —, familiar with, have knowledge of, recognise, — by (Instr. [235,19]); to ascertain, search for, become aware of, notice, get to know, learn, experience. *jāne* (parenthetic) "that I know" [133,29]. *ka evaṃ jānīte* with following Fut. "who knows whether not" [Spr. 546](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?546). With a negation "to know nothing of", also so v. a. "to pay no heed to and not partake of". *jñāta* "known, acknowledged, that of which or about which one knows something, recognised, noticed, become acquainted with, experienced".
+**1a-a)** — a〉 kennen, wissen, bekannt —, vertraut sein, Kenntniss haben von, erkennen, — an (Instr. [235,19](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?235)), in Erfahrung bringen, forschen nach, inne werden, merken, kennen lernen, erfahren. *jāne* (eingeschoben) das weiss ich [133,29](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?133). *ka evaṃ jānīte* mit folgendem Fut. wer weiss, ob nicht [Spr. 546](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?546). Mit einer Negation Nichts wissen von auch so v. a. keine Rücksicht nehmen auf und nicht theilhaftig werden. *jñāta* bekannt, gekannt, von dem oder wovon man Etwas weiss, erkannt, bemerkt, kennen gelernt, erfahren.
+- **EN:** — a) to know, have knowledge of, be acquainted —, familiar with, have knowledge of, recognise, — by (Instr. [235,19](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?235)); to ascertain, search for, become aware of, notice, get to know, learn, experience. *jāne* (parenthetic) "that I know" [133,29](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?133). *ka evaṃ jānīte* with following Fut. "who knows whether not" [Spr. 546](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?546). With a negation "to know nothing of", also so v. a. "to pay no heed to and not partake of". *jñāta* "known, acknowledged, that of which or about which one knows something, recognised, noticed, become acquainted with, experienced".
 
 **1a-b)** — b〉 anerkennen, gutheissen, billigen.
 - **EN:** — b) to acknowledge, approve, sanction.
@@ -21,8 +21,8 @@
 **1a-d)** — d〉 kennen —, erkennen als, wissen —, inne werden —, merken, dass; mit doppeltem Acc.
 - **EN:** — d) to know —, recognise as, be aware —, perceive — that; with double Acc.
 
-**1a-e)** — e〉 Etwas annehmen, supponiren, meinen (*mayā jñātam* ich war der Meinung [KĀD. 2,60,3]), ansehen —, halten für; mit doppeltem Acc. *mṛṣā* Etwas für unwahr halten [308,13]. *jñāta* gehalten für (Nom.), — von (*Gen.).
-- **EN:** — e) to assume, suppose, hold the opinion (*mayā jñātam* "I was of the opinion" [KĀD. 2,60,3]), regard —, consider as; with double Acc. *mṛṣā* "to consider something untrue" [308,13]. *jñāta* "considered as" (Nom.), — "of" (*Gen.).
+**1a-e)** — e〉 Etwas annehmen, supponiren, meinen (*mayā jñātam* ich war der Meinung [KĀD. 2,60,3]), ansehen —, halten für; mit doppeltem Acc. *mṛṣā* Etwas für unwahr halten [308,13](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?308). *jñāta* gehalten für (Nom.), — von (*Gen.).
+- **EN:** — e) to assume, suppose, hold the opinion (*mayā jñātam* "I was of the opinion" [KĀD. 2,60,3]), regard —, consider as; with double Acc. *mṛṣā* "to consider something untrue" [308,13](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?308). *jñāta* "considered as" (Nom.), — "of" (*Gen.).
 
 **1a-f)** — f〉 Jmd vertraulich aufsuchen.
 - **EN:** — f) to visit someone confidentially.
@@ -36,8 +36,8 @@
 **1b-b)** — b〉 sich erinnern.
 - **EN:** — b) to remember.
 
-**1b-c)** — c〉 *Med. wohl es zu thun haben —, sich abgeben mit [235,15. fgg.] *śambhormukunde jānīte* soll = *śaṃbhunā sādhanena mukunde pravartate* sein.
-- **EN:** — c) *Med., probably "to have to do with —, engage with" [235,15. fgg.]; *śambhormukunde jānīte* is said to = *śaṃbhunā sādhanena mukunde pravartate*.
+**1b-c)** — c〉 *Med. wohl es zu thun haben —, sich abgeben mit [235,15. fgg.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?235) *śambhormukunde jānīte* soll = *śaṃbhunā sādhanena mukunde pravartate* sein.
+- **EN:** — c) *Med., probably "to have to do with —, engage with" [235,15. fgg.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?235); *śambhormukunde jānīte* is said to = *śaṃbhunā sādhanena mukunde pravartate*.
 
 **1c)** — 3〉 mit Infin. verstehen zu.
 - **EN:** — 3) with Infin. "to understand how to".
@@ -135,8 +135,8 @@
 **abhyanu)** — Mit *abhyanu*
 - **EN:** — With *abhyanu*
 
-**abhyanu-1)** — 1〉 Etwas (Acc.) Jmd (Gen.) zugestehen, gestatten (mit Infin. [40,15]), zulassen, zugeben, gutheissen, billigen, einräumen, concedere Comm. zu [NYĀYAS. 2,1,11].
-- **EN:** — 1) to concede —, permit something (Acc.) to someone (Gen.) (with Infin. [40,15]); to allow, admit, approve, sanction, grant, concedere Comm. to [NYĀYAS. 2,1,11].
+**abhyanu-1)** — 1〉 Etwas (Acc.) Jmd (Gen.) zugestehen, gestatten (mit Infin. [40,15](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?40)), zulassen, zugeben, gutheissen, billigen, einräumen, concedere Comm. zu [NYĀYAS. 2,1,11].
+- **EN:** — 1) to concede —, permit something (Acc.) to someone (Gen.) (with Infin. [40,15](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?40)); to allow, admit, approve, sanction, grant, concedere Comm. to [NYĀYAS. 2,1,11].
 
 **abhyanu-2)** — 2〉 ermächtigen, eine Erlaubniss ertheilen. *˚jñāta* ermächtigt, der eine Erlaubniss erhalten hat.
 - **EN:** — 2) to authorise, grant permission. *˚jñāta* "authorised, one who has received permission".
@@ -147,8 +147,8 @@
 **abhyanu-4)** — 4〉 sich Jmd (Acc.) gnädig erweisen, seine Gewogenheit an den Tag legen.
 - **EN:** — 4) to show oneself gracious to someone (Acc.), to display one's favour.
 
-**abhyanu-5)** — 5〉 sich verabschieden von (Acc.) [81,20].
-- **EN:** — 5) to take leave of (Acc.) [81,20].
+**abhyanu-5)** — 5〉 sich verabschieden von (Acc.) [81,20](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?81).
+- **EN:** — 5) to take leave of (Acc.) [81,20](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?81).
 
 **abhyanu-caus)** — Caus. sich beurlauben bei, Abschied nehmen von (Acc.).
 - **EN:** — Caus. "to take leave at the hands of, bid farewell to" (Acc.).
@@ -171,8 +171,8 @@
 **sam-anu-3)** — 3〉 ermächtigen, eine Erlaubniss ertheilen, auffordern.
 - **EN:** — 3) to authorise, grant permission, summon.
 
-**sam-anu-4)** — 4〉 entlassen, beurlauben [57,27].
-- **EN:** — 4) to dismiss, grant leave to [57,27].
+**sam-anu-4)** — 4〉 entlassen, beurlauben [57,27](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?57).
+- **EN:** — 4) to dismiss, grant leave to [57,27](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?57).
 
 **sam-anu-5)** — 5〉 sich Jmd (Acc.) gnädig erweisen.
 - **EN:** — 5) to show oneself gracious to someone (Acc.).
@@ -213,8 +213,8 @@
 **abhi-3)** — 3〉 anerkennen, gutheissen, einräumen, zugeben; anerkennen als, mit doppeltem Acc.
 - **EN:** — 3) to acknowledge, approve, grant, admit; to acknowledge as, with double Acc.
 
-**abhi-4)** — 4〉 *sich erinnern, dass [241,9]. [13]. [16. fgg.]
-- **EN:** — 4) *"to remember that" [241,9]. [13]. [16. fgg.]
+**abhi-4)** — 4〉 *sich erinnern, dass [241,9](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?241). [13](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?241). [16. fgg.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?241)
+- **EN:** — 4) *"to remember that" [241,9](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?241). [13](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?241). [16. fgg.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?241)
 
 **abhi-note)** — Caus. in *abhijñāpaka*.
 - **EN:** — Caus. in *abhijñāpaka*.
@@ -222,8 +222,8 @@
 **ava)** — Mit *pratyabhi*
 - **EN:** — With *pratyabhi*
 
-**ava-1)** — 1〉 wiedererkennen, erkennen, merken, verstehen [301,30].
-- **EN:** — 1) to recognise again, recognise, notice, understand [301,30].
+**ava-1)** — 1〉 wiedererkennen, erkennen, merken, verstehen [301,30](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?301).
+- **EN:** — 1) to recognise again, recognise, notice, understand [301,30](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?301).
 
 **ava-2)** — 2〉 wieder zusichkommen, die Besinnung w. erhalten.
 - **EN:** — 2) to come to oneself again, regain consciousness w..
@@ -240,8 +240,8 @@
 **ava2-1)** — 1〉 geringachten, verachten. *˚jñāta* auch wobei man eine Geringachtung an den Tag legt.
 - **EN:** — 1) to disdain, despise. *˚jñāta* also "whereby one displays contempt".
 
-**ava2-2)** — 2〉 geringschätzig herabsehen auf, so v. a. übertreffen [251,3].
-- **EN:** — 2) to look down disdainfully upon; so v. a. "to surpass" [251,3].
+**ava2-2)** — 2〉 geringschätzig herabsehen auf, so v. a. übertreffen [251,3](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?251).
+- **EN:** — 2) to look down disdainfully upon; so v. a. "to surpass" [251,3](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?251).
 
 **ava2-3)** — 3〉 verneinen, verkennen [ŚAṂK. zu BĀDAR. 4,1,13].
 - **EN:** — 3) to deny, misjudge [ŚAṂK. zu BĀDAR. 4,1,13].
@@ -261,8 +261,8 @@
 **upa-caus)** — Caus.
 - **EN:** — Caus.
 
-**upa-caus-1)** — 1〉 befehlen, anbefehlen, über Etwas befehlen, Jmd anweisen, an Jmd (Acc.) einen Befehl richten zu (Dat. oder Loc.). *yathājñāpayati devaḥ* wie der Fürst befiehlt, so v. a. w. d. F. sagt, ja [328,11].
-- **EN:** — 1) to command, order, give command over something, instruct someone, to direct a command to someone (Acc.) for (Dat. or Loc.). *yathājñāpayati devaḥ* "as the prince commands"; so v. a. "w. d. F. says, indeed" [328,11].
+**upa-caus-1)** — 1〉 befehlen, anbefehlen, über Etwas befehlen, Jmd anweisen, an Jmd (Acc.) einen Befehl richten zu (Dat. oder Loc.). *yathājñāpayati devaḥ* wie der Fürst befiehlt, so v. a. w. d. F. sagt, ja [328,11](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?328).
+- **EN:** — 1) to command, order, give command over something, instruct someone, to direct a command to someone (Acc.) for (Dat. or Loc.). *yathājñāpayati devaḥ* "as the prince commands"; so v. a. "w. d. F. says, indeed" [328,11](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?328).
 
 **upa-caus-2)** — 2〉 Jmd (Gen.) versichern, betheuern.
 - **EN:** — 2) to assure —, asseverate to someone (Gen.).

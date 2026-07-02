@@ -11,8 +11,8 @@
 **2)** — 2〉 verstreichen, vergehen, verlaufen, verfliessen. *yāta* verstrichen, zu Ende gegangen.
 - **EN:** — 2〉 "to elapse, pass, run its course, go by" (of time). *yāta* "elapsed, come to an end".
 
-**3)** — 3〉 hingehen, so v. a. zu Grunde gehen, zu Nichte werden [186,7]. *yāta* zu Grunde gegangen.
-- **EN:** — 3〉 "to pass away," so v. a. "to perish, come to naught" [186,7]. *yāta* "perished".
+**3)** — 3〉 hingehen, so v. a. zu Grunde gehen, zu Nichte werden [186,7](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?186). *yāta* zu Grunde gegangen.
+- **EN:** — 3〉 "to pass away," so v. a. "to perish, come to naught" [186,7](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?186). *yāta* "perished".
 
 **4)** — 4〉 gehen, so v. a. von Statten gehen, gelingen, zu Stande kommen. *na yānti vaktum* so v. a. lassen sich nicht ausdrücken [Ind. St. 14,379].
 - **EN:** — 4〉 "to go," so v. a. "to proceed, succeed, come about". *na yānti vaktum* so v. a. "cannot be expressed" [Ind. St. 14,379].
@@ -49,8 +49,8 @@
 **8)** — 8〉 mit *prati* und Acc. in der Richtung von — sich bewegen, marschiren gegen.
 - **EN:** — 8〉 with *prati* and Acc. "to move in the direction of, to march against".
 
-**9)** — 9〉 mit Loc. gehen in, nach oder zu, gelangen zu, sich wenden zu (auch vom Geiste). *yāta* gegangen —, gelangt in oder zu. *kare* in die Hand gelangt; *yātaṃ mayā pādayoḥ* so v. a. ich habe mich (ihr) zu Füssen geworfen [316,31]. *kva tadyātam* so v. a. was ist daraus geworden? wie steht es damit?
-- **EN:** — 9〉 with Loc. "to go into, after" or "to, to arrive at, to turn to" (also of the mind). *yāta* "gone —, arrived in or at". *kare* "come into the hand;" *yātaṃ mayā pādayoḥ* so v. a. "I have thrown myself" (at her) "feet" [316,31]. *kva tadyātam* so v. a. "what has become of it? how does it stand?"
+**9)** — 9〉 mit Loc. gehen in, nach oder zu, gelangen zu, sich wenden zu (auch vom Geiste). *yāta* gegangen —, gelangt in oder zu. *kare* in die Hand gelangt; *yātaṃ mayā pādayoḥ* so v. a. ich habe mich (ihr) zu Füssen geworfen [316,31](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?316). *kva tadyātam* so v. a. was ist daraus geworden? wie steht es damit?
+- **EN:** — 9〉 with Loc. "to go into, after" or "to, to arrive at, to turn to" (also of the mind). *yāta* "gone —, arrived in or at". *kare* "come into the hand;" *yātaṃ mayā pādayoḥ* so v. a. "I have thrown myself" (at her) "feet" [316,31](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?316). *kva tadyātam* so v. a. "what has become of it? how does it stand?"
 
 **10)** — 10〉 mit Dat. hingehen zu, nach (**phalebhyaḥ* nach Früchten gehen), um zu (Nom. act.); Jmd zu Gute kommen.
 - **EN:** — 10〉 with Dat. "to go to, after" (**phalebhyaḥ* "to go after fruits"), "in order to" (Nom. act.); "to redound to someone's benefit".
@@ -65,9 +65,9 @@
 - **EN:** — 13〉 *yāta* sometimes erroneously for *jāta*.
 
 **caus1)** — Caus. *yāpayati*
-— 1〉 Jmd gehen heissen, aufbrechen lassen, — nach (*Acc. [225,24]), zu einem Marsche veranlassen; entlassen.
+— 1〉 Jmd gehen heissen, aufbrechen lassen, — nach (*Acc. [225,24](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?225)), zu einem Marsche veranlassen; entlassen.
 - **EN:** — Caus. *yāpayati*
-— 1〉 "to bid someone go, to let set out — for" (*Acc. [225,24]), "to prompt to a march; to dismiss".
+— 1〉 "to bid someone go, to let set out — for" (*Acc. [225,24](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?225)), "to prompt to a march; to dismiss".
 
 **caus2)** — 2〉 *dṛṣṭim* den Blick gehen lassen, — richten auf (Loc.).
 - **EN:** — 2〉 *dṛṣṭim* "to let one's gaze go, — direct it towards" (Loc.).
@@ -167,8 +167,8 @@
 **preverb_upa_apa2)** — 2〉 verstreichen.
 - **EN:** — 2〉 "to elapse".
 
-**preverb_misc1)** — Mit *api* [AV. 4,37,7](https://sanskrit-lexicon.github.io/avlinks/avhymns/av04.037.html#av04.037.07) fehlerhaft. [Chr. 104,5] ist ist *api yānti* zu trennen.
-- **EN:** — With *api* [AV. 4,37,7](https://sanskrit-lexicon.github.io/avlinks/avhymns/av04.037.html#av04.037.07) erroneous. [Chr. 104,5] is to be separated as *api yānti*.
+**preverb_misc1)** — Mit *api* [AV. 4,37,7](https://sanskrit-lexicon.github.io/avlinks/avhymns/av04.037.html#av04.037.07) fehlerhaft. [Chr. 104,5](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?104) ist ist *api yānti* zu trennen.
+- **EN:** — With *api* [AV. 4,37,7](https://sanskrit-lexicon.github.io/avlinks/avhymns/av04.037.html#av04.037.07) erroneous. [Chr. 104,5](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?104) is to be separated as *api yānti*.
 
 **preverb_a1)** — Mit *abhi*
 — 1〉 adire, zugehen auf, hingehen —, treten —, kommen —, sich hinbegeben zu, sich drohend wenden gegen, begegnen; mit Acc. *svargam* zum Himmel gegen, so v. a. sterben. *abhiyāta* mit act. und pass. Bed. Ohne Object herbeikommen, einen Angriff machen. *abhiyāta* herbeigekommen.
@@ -205,10 +205,10 @@
 - **EN:** — 3〉 "to beg off, to avert".
 
 **preverb_aa1)** — Mit *ā*
-— 1〉 herbei-, herankommen, — aus (Abl.), kommen nach, in oder zu (Acc., ausnahmsweise Loc.); auch mit *accha*, *saṃmukham* entgegenkommen; *abhimukhāyāta* entgegengekommen [133,9]. *astam* untergehen und sterben; *karṇapatham* zu Ohren kommen.
+— 1〉 herbei-, herankommen, — aus (Abl.), kommen nach, in oder zu (Acc., ausnahmsweise Loc.); auch mit *accha*, *saṃmukham* entgegenkommen; *abhimukhāyāta* entgegengekommen [133,9](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?133). *astam* untergehen und sterben; *karṇapatham* zu Ohren kommen.
 Mit *punar* wiederkommen und wiedergeboren werden. *āyāta* mit act. Bed.; auch _n._ impers. mit Instr. des Subjects.
 - **EN:** — With *ā*
-— 1〉 "to come hither —, to draw near, — from" (Abl.), "to come after, into" or "to" (Acc., exceptionally Loc.); also with *accha*, *saṃmukham* "to come to meet;" *abhimukhāyāta* "having come to meet" [133,9]. *astam* "to go down and die;" *karṇapatham* "to come to one's ears".
+— 1〉 "to come hither —, to draw near, — from" (Abl.), "to come after, into" or "to" (Acc., exceptionally Loc.); also with *accha*, *saṃmukham* "to come to meet;" *abhimukhāyāta* "having come to meet" [133,9](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?133). *astam* "to go down and die;" *karṇapatham* "to come to one's ears".
 With *punar* "to come again" and "to be reborn". *āyāta* with act. Bed.; also _n._ impers. with Instr. of the subject.
 
 **preverb_aa2)** — 2〉 eingehen —, aufgehen in (Acc.).
@@ -272,8 +272,8 @@ With *punar* "to come again" and "to be reborn". *āyāta* with act. Bed.; also 
 - **EN:** — With *pratyā*
 — 1〉 "to come back, return, — to" (Acc.).
 
-**preverb_prati2)** — 2〉 entgegengehen [321,5].
-- **EN:** — 2〉 "to go to meet" [321,5].
+**preverb_prati2)** — 2〉 entgegengehen [321,5](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?321).
+- **EN:** — 2〉 "to go to meet" [321,5](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?321).
 
 **preverb_sam1)** — Mit *samā*
 — 1〉 zusammen herbeikommen, zusammenkommen (auch von Wegen), hinzukommen, herantreten, kommen (auch von der Zeit), herangeflogen kommen (von einem Geschoss), aufziehen (von Wolken), hervorkommen aus (Abl.), kommen von (Abl.), nach oder zu (Acc.; auch mit Loc. des Ortes), hingehen nach (Acc.), zugehen auf (Acc.) *samāyāta* mit act. Bed.

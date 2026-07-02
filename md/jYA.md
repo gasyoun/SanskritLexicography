@@ -83,7 +83,7 @@ _PWG article — 65 sub-card(s), 352 sense(s) · RU 218/352 · EN 308/352_
 [P. 3,4,65.](https://ashtadhyayi.com/sutraani/3/4/65)
 Sch. zu [3,1,7.](https://ashtadhyayi.com/sutraani/3/1/7) *na sa jānāti devitum*
 [MBH. 2,1720.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1720) [5,1075.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1075) *na jāne vaktuṃ tvatkarmaitadadbhutamiti*
-[DAŚAK.] in [BENF. Chr. 187,21.] — *na jānāti śvagṛdhrairjagdhimātmanaḥ*
+[DAŚAK.] in [BENF. Chr. 187,21.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?187) — *na jānāti śvagṛdhrairjagdhimātmanaḥ*
 [M. 3,115.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,115) *evaṃ svabhāvaṃ jñātvāsām*
 [9,16.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,16) *jñāsyase balamātmīyam*
 [MBH. 4,1924.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1924) *jñātvā teṣāmabhiprāyam*
@@ -150,7 +150,7 @@ Sch. zu [3,1,7.](https://ashtadhyayi.com/sutraani/3/1/7) *na sa jānāti devitum
 [P. 3,4,65.](https://ashtadhyayi.com/sutraani/3/4/65)
 Sch. to [3,1,7.](https://ashtadhyayi.com/sutraani/3/1/7) *na sa jānāti devitum*
 [MBH. 2,1720.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1720) [5,1075.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1075) *na jāne vaktuṃ tvatkarmaitadadbhutamiti*
-[DAŚAK.] in [BENF. Chr. 187,21.] — *na jānāti śvagṛdhrairjagdhimātmanaḥ*
+[DAŚAK.] in [BENF. Chr. 187,21.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?187) — *na jānāti śvagṛdhrairjagdhimātmanaḥ*
 [M. 3,115.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,115) *evaṃ svabhāvaṃ jñātvāsām*
 [9,16.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,16) *jñāsyase balamātmīyam*
 [MBH. 4,1924.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1924) *jñātvā teṣāmabhiprāyam*
@@ -170,7 +170,7 @@ Sch. to [3,1,7.](https://ashtadhyayi.com/sutraani/3/1/7) *na sa jānāti devitum
 **1a)** [15584.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15584) Mit dem acc. des obj. und praed. Jmd kennen als, wissen, innewerden, merken, dass: *jānīyādasthirāṃ vācamutsiktamanasāṃ tathā*
 [M. 8,71.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,71) [9,295.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,295) *tasya māṃ tanayāṃ sarve jānīta*
 [MBH. 3,2476.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2476) [15605.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15605) [1,5950.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5950) *vāṇān — jānāno 'pyakṣayān*
-[8,796.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.796) [BENF. Chr. 22,17.] [SĀV. 6,34.] *nājñāsiṣamahaṃ pūrvamanityaṃ kālaparyayam*
+[8,796.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.796) [BENF. Chr. 22,17.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?22) [SĀV. 6,34.] *nājñāsiṣamahaṃ pūrvamanityaṃ kālaparyayam*
 [HARIV. 7091.](https://sanskrit-lexicon-scans.github.io/hariv?7091)
 [R. 1,59,2.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,59,2)
 [MEGH. 6.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?6) [81.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?81) *suhṛdaṃ sarvabhūtānāṃ jñātvā mām*
@@ -192,7 +192,7 @@ Sch. to [3,1,7.](https://ashtadhyayi.com/sutraani/3/1/7) *na sa jānāti devitum
 - **EN:** [15584.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15584) With the acc. of the obj. and praed. to know someone as, to know, to become aware, to notice that: *jānīyādasthirāṃ vācamutsiktamanasāṃ tathā*
 [M. 8,71.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,71) [9,295.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,295) *tasya māṃ tanayāṃ sarve jānīta*
 [MBH. 3,2476.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2476) [15605.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15605) [1,5950.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5950) *vāṇān — jānāno 'pyakṣayān*
-[8,796.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.796) [BENF. Chr. 22,17.] [SĀV. 6,34.] *nājñāsiṣamahaṃ pūrvamanityaṃ kālaparyayam*
+[8,796.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.796) [BENF. Chr. 22,17.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?22) [SĀV. 6,34.] *nājñāsiṣamahaṃ pūrvamanityaṃ kālaparyayam*
 [HARIV. 7091.](https://sanskrit-lexicon-scans.github.io/hariv?7091)
 [R. 1,59,2.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,59,2)
 [MEGH. 6.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?6) [81.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?81) *suhṛdaṃ sarvabhūtānāṃ jñātvā mām*
@@ -336,7 +336,7 @@ Sch. *jñāta* known, recognised
 [P. 3,4,65.](https://ashtadhyayi.com/sutraani/3/4/65)
 Sch. zu [3,1,7.](https://ashtadhyayi.com/sutraani/3/1/7) *na sa jānāti devitum*
 [MBH. 2,1720.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1720) [5,1075.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1075) *na jāne vaktuṃ tvatkarmaitadadbhutamiti*
-[DAŚAK.] in [BENF. Chr. 187,21.] — *na jānāti śvagṛdhrairjagdhimātmanaḥ*
+[DAŚAK.] in [BENF. Chr. 187,21.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?187) — *na jānāti śvagṛdhrairjagdhimātmanaḥ*
 [M. 3,115.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,115) *evaṃ svabhāvaṃ jñātvāsām*
 [9,16.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,16) *jñāsyase balamātmīyam*
 [MBH. 4,1924.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1924) *jñātvā teṣāmabhiprāyam*
@@ -403,7 +403,7 @@ Sch. zu [3,1,7.](https://ashtadhyayi.com/sutraani/3/1/7) *na sa jānāti devitum
 [P. 3,4,65.](https://ashtadhyayi.com/sutraani/3/4/65)
 Sch. zu [3,1,7.](https://ashtadhyayi.com/sutraani/3/1/7) *na sa jānāti devitum*
 [MBH. 2,1720.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1720) [5,1075.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1075) *na jāne vaktuṃ tvatkarmaitadadbhutamiti*
-[DAŚAK.] in [BENF. Chr. 187,21.] — *na jānāti śvagṛdhrairjagdhimātmanaḥ*
+[DAŚAK.] in [BENF. Chr. 187,21.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?187) — *na jānāti śvagṛdhrairjagdhimātmanaḥ*
 [M. 3,115.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,115) *evaṃ svabhāvaṃ jñātvāsām*
 [9,16.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,16) *jñāsyase balamātmīyam*
 [MBH. 4,1924.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1924) *jñātvā teṣāmabhiprāyam*
@@ -424,7 +424,7 @@ Sch. zu [3,1,7.](https://ashtadhyayi.com/sutraani/3/1/7) *na sa jānāti devitum
 **sense-1-subframe-acc-pred)** [15584.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15584) Mit dem acc. des obj. und praed. Jmd kennen als, wissen, innewerden, merken, dass: *jānīyādasthirāṃ vācamutsiktamanasāṃ tathā*
 [M. 8,71.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,71) [9,295.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,295) *tasya māṃ tanayāṃ sarve jānīta*
 [MBH. 3,2476.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2476) [15605.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15605) [1,5950.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5950) *vāṇān — jānāno 'pyakṣayān*
-[8,796.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.796) [BENF. Chr. 22,17.] [SĀV. 6,34.] *nājñāsiṣamahaṃ pūrvamanityaṃ kālaparyayam*
+[8,796.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.796) [BENF. Chr. 22,17.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?22) [SĀV. 6,34.] *nājñāsiṣamahaṃ pūrvamanityaṃ kālaparyayam*
 [HARIV. 7091.](https://sanskrit-lexicon-scans.github.io/hariv?7091)
 [R. 1,59,2.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,59,2)
 [MEGH. 6.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?6) [81.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?81) *suhṛdaṃ sarvabhūtānāṃ jñātvā mām*
@@ -438,7 +438,7 @@ Sch. zu [3,1,7.](https://ashtadhyayi.com/sutraani/3/1/7) *na sa jānāti devitum
 - **RU:** [15584.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15584) С acc. obj. и praed. — знать кого-либо как, замечать, осознавать, что: *jānīyādasthirāṃ vācamutsiktamanasāṃ tathā*
 [M. 8,71.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,71) [9,295.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,295) *tasya māṃ tanayāṃ sarve jānīta*
 [MBH. 3,2476.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2476) [15605.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15605) [1,5950.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5950) *vāṇān — jānāno 'pyakṣayān*
-[8,796.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.796) [BENF. Chr. 22,17.] [SĀV. 6,34.] *nājñāsiṣamahaṃ pūrvamanityaṃ kālaparyayam*
+[8,796.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.796) [BENF. Chr. 22,17.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?22) [SĀV. 6,34.] *nājñāsiṣamahaṃ pūrvamanityaṃ kālaparyayam*
 [HARIV. 7091.](https://sanskrit-lexicon-scans.github.io/hariv?7091)
 [R. 1,59,2.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,59,2)
 [MEGH. 6.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?6) [81.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?81) *suhṛdaṃ sarvabhūtānāṃ jñātvā mām*
@@ -852,7 +852,7 @@ Sch. in [WILSON'S] [SĀṂKHYAK. S. 8.] *jijñāsamānā vaidehī tvāṃ māṃ
 [CHĀND. UP. 1,1,8.] *omityagnihotramanujānāti*
 [TAITT. UP. 1,8.] *sthānaṃ tvihānujānīhi prajānāṃ mama ca*
 [BHĀG. P. 3,13,14.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,13,14) *māṃ jātamātrāṃ dhanamitranāmne — anvajānādbhāryāṃ me pitā* zusagen
-[DAŚAK.] in [BENF. Chr. 186,19.] *anvajānāttato dyūtam*
+[DAŚAK.] in [BENF. Chr. 186,19.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?186) *anvajānāttato dyūtam*
 [MBH. 1,136.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.136) *duhitustamabhiprāyamanvajānāt*
 [3,2955.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2955) *abhipretāṃstu me kāmāṃstvamanujñātumarhasi*
 [10024. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10024) [4,799.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.799) [R. 1,57,17.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,57,17) [60,28.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,60,28) [BHĀG. P. 9,3,26.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,3,26) [KULL.] zu [M. 3,108.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,108) [5,70.](https://sanskrit-lexicon-scans.github.io/manu/index.html?5,70) *tato 'nujajñe* (wohl pass.) *gamanaṃ sutasya*
@@ -877,7 +877,7 @@ Sch. in [WILSON'S] [SĀṂKHYAK. S. 8.] *jijñāsamānā vaidehī tvāṃ māṃ
 [CHĀND. UP. 1,1,8.] *omityagnihotramanujānāti*
 [TAITT. UP. 1,8.] *sthānaṃ tvihānujānīhi prajānāṃ mama ca*
 [BHĀG. P. 3,13,14.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,13,14) *māṃ jātamātrāṃ dhanamitranāmne — anvajānādbhāryāṃ me pitā* соглашаться
-[DAŚAK.] in [BENF. Chr. 186,19.] *anvajānāttato dyūtam*
+[DAŚAK.] in [BENF. Chr. 186,19.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?186) *anvajānāttato dyūtam*
 [MBH. 1,136.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.136) *duhitustamabhiprāyamanvajānāt*
 [3,2955.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2955) *abhipretāṃstu me kāmāṃstvamanujñātumarhasi*
 [10024. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10024) [4,799.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.799) [R. 1,57,17.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,57,17) [60,28.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,60,28) [BHĀG. P. 9,3,26.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,3,26) [KULL.] zu [M. 3,108.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,108) [5,70.](https://sanskrit-lexicon-scans.github.io/manu/index.html?5,70) *tato 'nujajñe* (wohl pass.) *gamanaṃ sutasya*
@@ -901,7 +901,7 @@ Sch. in [WILSON'S] [SĀṂKHYAK. S. 8.] *jijñāsamānā vaidehī tvāṃ māṃ
 [CHĀND. UP. 1,1,8.] *omityagnihotramanujānāti*
 [TAITT. UP. 1,8.] *sthānaṃ tvihānujānīhi prajānāṃ mama ca*
 [BHĀG. P. 3,13,14.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,13,14) *māṃ jātamātrāṃ dhanamitranāmne — anvajānādbhāryāṃ me pitā* to promise
-[DAŚAK.] in [BENF. Chr. 186,19.] *anvajānāttato dyūtam*
+[DAŚAK.] in [BENF. Chr. 186,19.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?186) *anvajānāttato dyūtam*
 [MBH. 1,136.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.136) *duhitustamabhiprāyamanvajānāt*
 [3,2955.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2955) *abhipretāṃstu me kāmāṃstvamanujñātumarhasi*
 [10024. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10024) [4,799.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.799) [R. 1,57,17.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,57,17) [60,28.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,60,28) [BHĀG. P. 9,3,26.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,3,26) [KULL.] to [M. 3,108.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,108) [5,70.](https://sanskrit-lexicon-scans.github.io/manu/index.html?5,70) *tato 'nujajñe* (probably pass.) *gamanaṃ sutasya*
@@ -1218,14 +1218,14 @@ Vom intrans. med.: *sarpiṣo 'nujijñāsate* (vgl. simpl. 4) ebend.
 
 **3)** — 3) Jmd entlassen, beurlauben: *śatavarṣoṣitaṃ māṃ hi na tvamabhyanujānithāḥ*
 [MBH. 14,1641.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.1641) *abhyanujñāta*
-[1642.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.1642) [3,1845.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1845) [BENF. Chr. 21,10.] [HARIV. 6467.](https://sanskrit-lexicon-scans.github.io/hariv?6467) [R. 1,2,3.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,2,3) [2,68,11.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,68,11) [3,19,26.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,19,26) [6,97,6.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,97,6) [MṚCCH. 109,25.] [PAÑCAT. 95,22.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?95,22) [BHĀG. P. 1,10,8.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,10,8)
+[1642.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.1642) [3,1845.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1845) [BENF. Chr. 21,10.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?21) [HARIV. 6467.](https://sanskrit-lexicon-scans.github.io/hariv?6467) [R. 1,2,3.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,2,3) [2,68,11.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,68,11) [3,19,26.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,19,26) [6,97,6.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,97,6) [MṚCCH. 109,25.] [PAÑCAT. 95,22.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?95,22) [BHĀG. P. 1,10,8.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,10,8)
 
 - **RU:** — 3) отпускать кого-л., давать отпуск: *śatavarṣoṣitaṃ māṃ hi na tvamabhyanujānithāḥ*
 [MBH. 14,1641.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.1641) *abhyanujñāta*
-[1642.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.1642) [3,1845.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1845) [BENF. Chr. 21,10.] [HARIV. 6467.](https://sanskrit-lexicon-scans.github.io/hariv?6467) [R. 1,2,3.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,2,3) [2,68,11.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,68,11) [3,19,26.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,19,26) [6,97,6.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,97,6) [MṚCCH. 109,25.] [PAÑCAT. 95,22.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?95,22) [BHĀG. P. 1,10,8.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,10,8)
+[1642.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.1642) [3,1845.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1845) [BENF. Chr. 21,10.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?21) [HARIV. 6467.](https://sanskrit-lexicon-scans.github.io/hariv?6467) [R. 1,2,3.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,2,3) [2,68,11.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,68,11) [3,19,26.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,19,26) [6,97,6.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,97,6) [MṚCCH. 109,25.] [PAÑCAT. 95,22.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?95,22) [BHĀG. P. 1,10,8.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,10,8)
 - **EN:** — 3) to dismiss someone, to give leave of absence: *śatavarṣoṣitaṃ māṃ hi na tvamabhyanujānithāḥ*
 [MBH. 14,1641.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.1641) *abhyanujñāta*
-[1642.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.1642) [3,1845.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1845) [BENF. Chr. 21,10.] [HARIV. 6467.](https://sanskrit-lexicon-scans.github.io/hariv?6467) [R. 1,2,3.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,2,3) [2,68,11.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,68,11) [3,19,26.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,19,26) [6,97,6.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,97,6) [MṚCCH. 109,25.] [PAÑCAT. 95,22.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?95,22) [BHĀG. P. 1,10,8.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,10,8)
+[1642.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.1642) [3,1845.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1845) [BENF. Chr. 21,10.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?21) [HARIV. 6467.](https://sanskrit-lexicon-scans.github.io/hariv?6467) [R. 1,2,3.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,2,3) [2,68,11.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,68,11) [3,19,26.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,19,26) [6,97,6.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,97,6) [MṚCCH. 109,25.] [PAÑCAT. 95,22.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?95,22) [BHĀG. P. 1,10,8.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,10,8)
   <sub>DCS 229 · attested</sub>
 
 **4)** — 4) sich Jmd (acc.) gnädig erweisen: *brahmaṇā yo 'bhyanujñātaḥ — kāmarūpadharatvaṃ ca pratipede*
@@ -1481,7 +1481,7 @@ Sch. [VOP. 23,35.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?23,
 [13,1447.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1447) *sairiṃdhrīmabhijānīṣva — devarūpiṇīm*
 
 [3,2604.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2604) [2684.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2684) [16757.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16757) *nābhijānāti me — śālvagataṃ manaḥ*
-[BENF. Chr. 15,5.] *ahamakṣeṣvabhijñātaḥ pṛthivyāmapi . hṛdayajñaḥ* bekannt als
+[BENF. Chr. 15,5.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?15) *ahamakṣeṣvabhijñātaḥ pṛthivyāmapi . hṛdayajñaḥ* bekannt als
 [MBH. 2,1763.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1763) *māmabhijānāsi — mithyāpralāpinam* halten für
 [1,3337.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3337)
 
@@ -1512,7 +1512,7 @@ Sch. [VOP. 23,35.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?23,
 [13,1447.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1447) *sairiṃdhrīmabhijānīṣva — devarūpiṇīm*
 
 [3,2604.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2604) [2684.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2684) [16757.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16757) *nābhijānāti me — śālvagataṃ manaḥ*
-[BENF. Chr. 15,5.] *ahamakṣeṣvabhijñātaḥ pṛthivyāmapi . hṛdayajñaḥ* известный как
+[BENF. Chr. 15,5.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?15) *ahamakṣeṣvabhijñātaḥ pṛthivyāmapi . hṛdayajñaḥ* известный как
 [MBH. 2,1763.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1763) *māmabhijānāsi — mithyāpralāpinam* считать за, принимать за
 [1,3337.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3337)
 - **EN:** — *abhi*
@@ -1542,7 +1542,7 @@ Sch. [VOP. 23,35.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?23,
 [13,1447.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1447) *sairiṃdhrīmabhijānīṣva — devarūpiṇīm*
 
 [3,2604.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2604) [2684.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2684) [16757.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16757) *nābhijānāti me — śālvagataṃ manaḥ*
-[BENF. Chr. 15,5.] *ahamakṣeṣvabhijñātaḥ pṛthivyāmapi . hṛdayajñaḥ* known as
+[BENF. Chr. 15,5.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?15) *ahamakṣeṣvabhijñātaḥ pṛthivyāmapi . hṛdayajñaḥ* known as
 [MBH. 2,1763.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1763) *māmabhijānāsi — mithyāpralāpinam* to hold to be
 [1,3337.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3337)
   <sub>attested</sub>
@@ -1809,7 +1809,7 @@ brother's command
 [HARIV. 8005.](https://sanskrit-lexicon-scans.github.io/hariv?8005) *yathājñāpayati devaḥ*
 [HIT. 92,1.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?92,1)
 [ŚĀK. 61,14](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?61,14), v. l.
-[DAŚAK.] in [BENF. Chr. 188,8.] *yathājñāpayase*
+[DAŚAK.] in [BENF. Chr. 188,8.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?188) *yathājñāpayase*
 [MBH. 2,2567.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2567) *kimājñāpayanti*
 [ŚĀK. 28,12.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?28,12) *yadājñāpayati bhagavān*
 [112,17.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?112,17) [7,22.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?7,22) [61,14.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?61,14) [HIT. 98,21.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?98,21) [R. 2,52,23.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,52,23) [3,18,11.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,18,11) *yogamājñāpayaṃ tatra janasya*
@@ -1846,7 +1846,7 @@ brother's command
 [HARIV. 8005.](https://sanskrit-lexicon-scans.github.io/hariv?8005) *yathājñāpayati devaḥ*
 [HIT. 92,1.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?92,1)
 [ŚĀK. 61,14](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?61,14), v. l.
-[DAŚAK.] в [BENF. Chr. 188,8.] *yathājñāpayase*
+[DAŚAK.] в [BENF. Chr. 188,8.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?188) *yathājñāpayase*
 [MBH. 2,2567.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2567) *kimājñāpayanti*
 [ŚĀK. 28,12.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?28,12) *yadājñāpayati bhagavān*
 [112,17.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?112,17) [7,22.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?7,22) [61,14.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?61,14) [HIT. 98,21.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?98,21) [R. 2,52,23.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,52,23) [3,18,11.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,18,11) *yogamājñāpayaṃ tatra janasya*
@@ -1882,7 +1882,7 @@ brother's command
 [HARIV. 8005.](https://sanskrit-lexicon-scans.github.io/hariv?8005) *yathājñāpayati devaḥ*
 [HIT. 92,1.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?92,1)
 [ŚĀK. 61,14](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?61,14), v. l.
-[DAŚAK.] in [BENF. Chr. 188,8.] *yathājñāpayase*
+[DAŚAK.] in [BENF. Chr. 188,8.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?188) *yathājñāpayase*
 [MBH. 2,2567.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2567) *kimājñāpayanti*
 [ŚĀK. 28,12.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?28,12) *yadājñāpayati bhagavān*
 [112,17.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?112,17) [7,22.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?7,22) [61,14.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?61,14) [HIT. 98,21.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?98,21) [R. 2,52,23.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,52,23) [3,18,11.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,18,11) *yogamājñāpayaṃ tatra janasya*
@@ -3032,7 +3032,7 @@ Sch. on [P. 1,4,56.](https://ashtadhyayi.com/sutraani/1/4/56) Sch. on [P. 8,2,38
 [RĀJA-TAR. 4,61.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,61) *ekānte vijñāpayāmi*
 [VET. 3,14.]
 [PAÑCAT. 71,25.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?71,25)
-[DAŚAK.] in [BENF. Chr. 180,2.] *anantaraṃ vidhatsvātra vayaṃ vijñāpayāmahe* so v. a. wir bitten darum
+[DAŚAK.] in [BENF. Chr. 180,2.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?180) *anantaraṃ vidhatsvātra vayaṃ vijñāpayāmahe* so v. a. wir bitten darum
 [HARIV. 8541.](https://sanskrit-lexicon-scans.github.io/hariv?8541) Mit dem acc. der Person Jmd Etwas begreiflich machen, belehren, Jmd zu wissen thun, Jmd in Kenntniss setzen, zu Jmd sprechen, Jmd Etwas vortragen, Jmd mit einer Bitte, Frage angehen: *vyeva tvā jñapayiṣyāmi*
 [ŚAT. BR. 14,5,1,15.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,5,1,15) *bhūya eva mā bhagavānvijñāpayatu*
 [CHĀND. UP. 6,5,4.] *ahaṃ svāminaṃ vijñāpya tathā kariṣye yathā svāmī badhaṃ kariṣyati*
@@ -3040,7 +3040,7 @@ Sch. on [P. 1,4,56.](https://ashtadhyayi.com/sutraani/1/4/56) Sch. on [P. 8,2,38
 [R. 5,63,14.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,63,14)
 [ŚĀK. 61,11.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?61,11)
 [RĀJA-TAR. 4,66.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,66) *bhūṣaṃ carmakaro vyajijñapat*
-[65.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,65) [KATHĀS. 12,7.](https://sanskrit-lexicon-scans.github.io/kss/index.html?12,7) [VID. 125.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?125) [DAŚAK.] in [BENF. Chr. 191,3. 192,20.] *śvaśrūjanaṃ sarvamanukrameṇa vijñāpaya prāpitamatpraṇāmaḥ* (folgen die zusprechenden Worte)
+[65.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,65) [KATHĀS. 12,7.](https://sanskrit-lexicon-scans.github.io/kss/index.html?12,7) [VID. 125.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?125) [DAŚAK.] in [BENF. Chr. 191,3. 192,20.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?191) *śvaśrūjanaṃ sarvamanukrameṇa vijñāpaya prāpitamatpraṇāmaḥ* (folgen die zusprechenden Worte)
 [RAGH. 14,60.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?14,60)
 [VIKR. 3,13.](https://sanskrit-lexicon-scans.github.io/vikramor/app2?3,13) *sarvānvijñāpayāmi vaḥ . nānyathā taddhi kartavyamasmatsnehānukampayā ..*
 [MBH. 3,34.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.34) *devīṃ praṇamya vyajijñapat*
@@ -3070,7 +3070,7 @@ Sch. on [P. 1,4,56.](https://ashtadhyayi.com/sutraani/1/4/56) Sch. on [P. 8,2,38
 [RĀJA-TAR. 4,61.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,61) *ekānte vijñāpayāmi*
 [VET. 3,14.]
 [PAÑCAT. 71,25.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?71,25)
-[DAŚAK.] in [BENF. Chr. 180,2.] *anantaraṃ vidhatsvātra vayaṃ vijñāpayāmahe* so v. a. "we request this"
+[DAŚAK.] in [BENF. Chr. 180,2.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?180) *anantaraṃ vidhatsvātra vayaṃ vijñāpayāmahe* so v. a. "we request this"
 [HARIV. 8541.](https://sanskrit-lexicon-scans.github.io/hariv?8541) With the acc. of the person: "to make something intelligible to someone, instruct, inform someone, apprise someone, speak to someone, expound something to someone, approach someone with a request or question": *vyeva tvā jñapayiṣyāmi*
 [ŚAT. BR. 14,5,1,15.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,5,1,15) *bhūya eva mā bhagavānvijñāpayatu*
 [CHĀND. UP. 6,5,4.] *ahaṃ svāminaṃ vijñāpya tathā kariṣye yathā svāmī badhaṃ kariṣyati*
@@ -3078,7 +3078,7 @@ Sch. on [P. 1,4,56.](https://ashtadhyayi.com/sutraani/1/4/56) Sch. on [P. 8,2,38
 [R. 5,63,14.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,63,14)
 [ŚĀK. 61,11.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?61,11)
 [RĀJA-TAR. 4,66.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,66) *bhūṣaṃ carmakaro vyajijñapat*
-[65.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,65) [KATHĀS. 12,7.](https://sanskrit-lexicon-scans.github.io/kss/index.html?12,7) [VID. 125.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?125) [DAŚAK.] in [BENF. Chr. 191,3. 192,20.] *śvaśrūjanaṃ sarvamanukrameṇa vijñāpaya prāpitamatpraṇāmaḥ* (the words addressed to him follow)
+[65.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,65) [KATHĀS. 12,7.](https://sanskrit-lexicon-scans.github.io/kss/index.html?12,7) [VID. 125.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?125) [DAŚAK.] in [BENF. Chr. 191,3. 192,20.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?191) *śvaśrūjanaṃ sarvamanukrameṇa vijñāpaya prāpitamatpraṇāmaḥ* (the words addressed to him follow)
 [RAGH. 14,60.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?14,60)
 [VIKR. 3,13.](https://sanskrit-lexicon-scans.github.io/vikramor/app2?3,13) *sarvānvijñāpayāmi vaḥ . nānyathā taddhi kartavyamasmatsnehānukampayā ..*
 [MBH. 3,34.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.34) *devīṃ praṇamya vyajijñapat*
@@ -3899,8 +3899,8 @@ heisst so v. a. werden nicht verehrt
 **1a)** — 1〉 ohne Object oder mit Acc.
 - **EN:** — 1) without an object or with Acc.
 
-**1a-a)** — a〉 kennen, wissen, bekannt —, vertraut sein, Kenntniss haben von, erkennen, — an (Instr. [235,19]), in Erfahrung bringen, forschen nach, inne werden, merken, kennen lernen, erfahren. *jāne* (eingeschoben) das weiss ich [133,29]. *ka evaṃ jānīte* mit folgendem Fut. wer weiss, ob nicht [Spr. 546](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?546). Mit einer Negation Nichts wissen von auch so v. a. keine Rücksicht nehmen auf und nicht theilhaftig werden. *jñāta* bekannt, gekannt, von dem oder wovon man Etwas weiss, erkannt, bemerkt, kennen gelernt, erfahren.
-- **EN:** — a) to know, have knowledge of, be acquainted —, familiar with, have knowledge of, recognise, — by (Instr. [235,19]); to ascertain, search for, become aware of, notice, get to know, learn, experience. *jāne* (parenthetic) "that I know" [133,29]. *ka evaṃ jānīte* with following Fut. "who knows whether not" [Spr. 546](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?546). With a negation "to know nothing of", also so v. a. "to pay no heed to and not partake of". *jñāta* "known, acknowledged, that of which or about which one knows something, recognised, noticed, become acquainted with, experienced".
+**1a-a)** — a〉 kennen, wissen, bekannt —, vertraut sein, Kenntniss haben von, erkennen, — an (Instr. [235,19](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?235)), in Erfahrung bringen, forschen nach, inne werden, merken, kennen lernen, erfahren. *jāne* (eingeschoben) das weiss ich [133,29](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?133). *ka evaṃ jānīte* mit folgendem Fut. wer weiss, ob nicht [Spr. 546](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?546). Mit einer Negation Nichts wissen von auch so v. a. keine Rücksicht nehmen auf und nicht theilhaftig werden. *jñāta* bekannt, gekannt, von dem oder wovon man Etwas weiss, erkannt, bemerkt, kennen gelernt, erfahren.
+- **EN:** — a) to know, have knowledge of, be acquainted —, familiar with, have knowledge of, recognise, — by (Instr. [235,19](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?235)); to ascertain, search for, become aware of, notice, get to know, learn, experience. *jāne* (parenthetic) "that I know" [133,29](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?133). *ka evaṃ jānīte* with following Fut. "who knows whether not" [Spr. 546](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?546). With a negation "to know nothing of", also so v. a. "to pay no heed to and not partake of". *jñāta* "known, acknowledged, that of which or about which one knows something, recognised, noticed, become acquainted with, experienced".
 
 **1a-b)** — b〉 anerkennen, gutheissen, billigen.
 - **EN:** — b) to acknowledge, approve, sanction.
@@ -3911,8 +3911,8 @@ heisst so v. a. werden nicht verehrt
 **1a-d)** — d〉 kennen —, erkennen als, wissen —, inne werden —, merken, dass; mit doppeltem Acc.
 - **EN:** — d) to know —, recognise as, be aware —, perceive — that; with double Acc.
 
-**1a-e)** — e〉 Etwas annehmen, supponiren, meinen (*mayā jñātam* ich war der Meinung [KĀD. 2,60,3]), ansehen —, halten für; mit doppeltem Acc. *mṛṣā* Etwas für unwahr halten [308,13]. *jñāta* gehalten für (Nom.), — von (*Gen.).
-- **EN:** — e) to assume, suppose, hold the opinion (*mayā jñātam* "I was of the opinion" [KĀD. 2,60,3]), regard —, consider as; with double Acc. *mṛṣā* "to consider something untrue" [308,13]. *jñāta* "considered as" (Nom.), — "of" (*Gen.).
+**1a-e)** — e〉 Etwas annehmen, supponiren, meinen (*mayā jñātam* ich war der Meinung [KĀD. 2,60,3]), ansehen —, halten für; mit doppeltem Acc. *mṛṣā* Etwas für unwahr halten [308,13](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?308). *jñāta* gehalten für (Nom.), — von (*Gen.).
+- **EN:** — e) to assume, suppose, hold the opinion (*mayā jñātam* "I was of the opinion" [KĀD. 2,60,3]), regard —, consider as; with double Acc. *mṛṣā* "to consider something untrue" [308,13](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?308). *jñāta* "considered as" (Nom.), — "of" (*Gen.).
 
 **1a-f)** — f〉 Jmd vertraulich aufsuchen.
 - **EN:** — f) to visit someone confidentially.
@@ -3926,8 +3926,8 @@ heisst so v. a. werden nicht verehrt
 **1b-b)** — b〉 sich erinnern.
 - **EN:** — b) to remember.
 
-**1b-c)** — c〉 *Med. wohl es zu thun haben —, sich abgeben mit [235,15. fgg.] *śambhormukunde jānīte* soll = *śaṃbhunā sādhanena mukunde pravartate* sein.
-- **EN:** — c) *Med., probably "to have to do with —, engage with" [235,15. fgg.]; *śambhormukunde jānīte* is said to = *śaṃbhunā sādhanena mukunde pravartate*.
+**1b-c)** — c〉 *Med. wohl es zu thun haben —, sich abgeben mit [235,15. fgg.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?235) *śambhormukunde jānīte* soll = *śaṃbhunā sādhanena mukunde pravartate* sein.
+- **EN:** — c) *Med., probably "to have to do with —, engage with" [235,15. fgg.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?235); *śambhormukunde jānīte* is said to = *śaṃbhunā sādhanena mukunde pravartate*.
 
 **1c)** — 3〉 mit Infin. verstehen zu.
 - **EN:** — 3) with Infin. "to understand how to".
@@ -4025,8 +4025,8 @@ heisst so v. a. werden nicht verehrt
 **abhyanu)** — Mit *abhyanu*
 - **EN:** — With *abhyanu*
 
-**abhyanu-1)** — 1〉 Etwas (Acc.) Jmd (Gen.) zugestehen, gestatten (mit Infin. [40,15]), zulassen, zugeben, gutheissen, billigen, einräumen, concedere Comm. zu [NYĀYAS. 2,1,11].
-- **EN:** — 1) to concede —, permit something (Acc.) to someone (Gen.) (with Infin. [40,15]); to allow, admit, approve, sanction, grant, concedere Comm. to [NYĀYAS. 2,1,11].
+**abhyanu-1)** — 1〉 Etwas (Acc.) Jmd (Gen.) zugestehen, gestatten (mit Infin. [40,15](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?40)), zulassen, zugeben, gutheissen, billigen, einräumen, concedere Comm. zu [NYĀYAS. 2,1,11].
+- **EN:** — 1) to concede —, permit something (Acc.) to someone (Gen.) (with Infin. [40,15](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?40)); to allow, admit, approve, sanction, grant, concedere Comm. to [NYĀYAS. 2,1,11].
 
 **abhyanu-2)** — 2〉 ermächtigen, eine Erlaubniss ertheilen. *˚jñāta* ermächtigt, der eine Erlaubniss erhalten hat.
 - **EN:** — 2) to authorise, grant permission. *˚jñāta* "authorised, one who has received permission".
@@ -4037,8 +4037,8 @@ heisst so v. a. werden nicht verehrt
 **abhyanu-4)** — 4〉 sich Jmd (Acc.) gnädig erweisen, seine Gewogenheit an den Tag legen.
 - **EN:** — 4) to show oneself gracious to someone (Acc.), to display one's favour.
 
-**abhyanu-5)** — 5〉 sich verabschieden von (Acc.) [81,20].
-- **EN:** — 5) to take leave of (Acc.) [81,20].
+**abhyanu-5)** — 5〉 sich verabschieden von (Acc.) [81,20](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?81).
+- **EN:** — 5) to take leave of (Acc.) [81,20](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?81).
 
 **abhyanu-caus)** — Caus. sich beurlauben bei, Abschied nehmen von (Acc.).
 - **EN:** — Caus. "to take leave at the hands of, bid farewell to" (Acc.).
@@ -4061,8 +4061,8 @@ heisst so v. a. werden nicht verehrt
 **sam-anu-3)** — 3〉 ermächtigen, eine Erlaubniss ertheilen, auffordern.
 - **EN:** — 3) to authorise, grant permission, summon.
 
-**sam-anu-4)** — 4〉 entlassen, beurlauben [57,27].
-- **EN:** — 4) to dismiss, grant leave to [57,27].
+**sam-anu-4)** — 4〉 entlassen, beurlauben [57,27](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?57).
+- **EN:** — 4) to dismiss, grant leave to [57,27](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?57).
 
 **sam-anu-5)** — 5〉 sich Jmd (Acc.) gnädig erweisen.
 - **EN:** — 5) to show oneself gracious to someone (Acc.).
@@ -4103,8 +4103,8 @@ heisst so v. a. werden nicht verehrt
 **abhi-3)** — 3〉 anerkennen, gutheissen, einräumen, zugeben; anerkennen als, mit doppeltem Acc.
 - **EN:** — 3) to acknowledge, approve, grant, admit; to acknowledge as, with double Acc.
 
-**abhi-4)** — 4〉 *sich erinnern, dass [241,9]. [13]. [16. fgg.]
-- **EN:** — 4) *"to remember that" [241,9]. [13]. [16. fgg.]
+**abhi-4)** — 4〉 *sich erinnern, dass [241,9](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?241). [13](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?241). [16. fgg.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?241)
+- **EN:** — 4) *"to remember that" [241,9](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?241). [13](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?241). [16. fgg.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?241)
 
 **abhi-note)** — Caus. in *abhijñāpaka*.
 - **EN:** — Caus. in *abhijñāpaka*.
@@ -4112,8 +4112,8 @@ heisst so v. a. werden nicht verehrt
 **ava)** — Mit *pratyabhi*
 - **EN:** — With *pratyabhi*
 
-**ava-1)** — 1〉 wiedererkennen, erkennen, merken, verstehen [301,30].
-- **EN:** — 1) to recognise again, recognise, notice, understand [301,30].
+**ava-1)** — 1〉 wiedererkennen, erkennen, merken, verstehen [301,30](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?301).
+- **EN:** — 1) to recognise again, recognise, notice, understand [301,30](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?301).
 
 **ava-2)** — 2〉 wieder zusichkommen, die Besinnung w. erhalten.
 - **EN:** — 2) to come to oneself again, regain consciousness w..
@@ -4130,8 +4130,8 @@ heisst so v. a. werden nicht verehrt
 **ava2-1)** — 1〉 geringachten, verachten. *˚jñāta* auch wobei man eine Geringachtung an den Tag legt.
 - **EN:** — 1) to disdain, despise. *˚jñāta* also "whereby one displays contempt".
 
-**ava2-2)** — 2〉 geringschätzig herabsehen auf, so v. a. übertreffen [251,3].
-- **EN:** — 2) to look down disdainfully upon; so v. a. "to surpass" [251,3].
+**ava2-2)** — 2〉 geringschätzig herabsehen auf, so v. a. übertreffen [251,3](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?251).
+- **EN:** — 2) to look down disdainfully upon; so v. a. "to surpass" [251,3](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?251).
 
 **ava2-3)** — 3〉 verneinen, verkennen [ŚAṂK. zu BĀDAR. 4,1,13].
 - **EN:** — 3) to deny, misjudge [ŚAṂK. zu BĀDAR. 4,1,13].
@@ -4151,8 +4151,8 @@ heisst so v. a. werden nicht verehrt
 **upa-caus)** — Caus.
 - **EN:** — Caus.
 
-**upa-caus-1)** — 1〉 befehlen, anbefehlen, über Etwas befehlen, Jmd anweisen, an Jmd (Acc.) einen Befehl richten zu (Dat. oder Loc.). *yathājñāpayati devaḥ* wie der Fürst befiehlt, so v. a. w. d. F. sagt, ja [328,11].
-- **EN:** — 1) to command, order, give command over something, instruct someone, to direct a command to someone (Acc.) for (Dat. or Loc.). *yathājñāpayati devaḥ* "as the prince commands"; so v. a. "w. d. F. says, indeed" [328,11].
+**upa-caus-1)** — 1〉 befehlen, anbefehlen, über Etwas befehlen, Jmd anweisen, an Jmd (Acc.) einen Befehl richten zu (Dat. oder Loc.). *yathājñāpayati devaḥ* wie der Fürst befiehlt, so v. a. w. d. F. sagt, ja [328,11](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?328).
+- **EN:** — 1) to command, order, give command over something, instruct someone, to direct a command to someone (Acc.) for (Dat. or Loc.). *yathājñāpayati devaḥ* "as the prince commands"; so v. a. "w. d. F. says, indeed" [328,11](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?328).
 
 **upa-caus-2)** — 2〉 Jmd (Gen.) versichern, betheuern.
 - **EN:** — 2) to assure —, asseverate to someone (Gen.).

@@ -30,7 +30,7 @@
 [13,1447.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1447) *sairiṃdhrīmabhijānīṣva — devarūpiṇīm*
 
 [3,2604.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2604) [2684.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2684) [16757.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16757) *nābhijānāti me — śālvagataṃ manaḥ*
-[BENF. Chr. 15,5.] *ahamakṣeṣvabhijñātaḥ pṛthivyāmapi . hṛdayajñaḥ* bekannt als
+[BENF. Chr. 15,5.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?15) *ahamakṣeṣvabhijñātaḥ pṛthivyāmapi . hṛdayajñaḥ* bekannt als
 [MBH. 2,1763.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1763) *māmabhijānāsi — mithyāpralāpinam* halten für
 [1,3337.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3337)
 
@@ -61,7 +61,7 @@
 [13,1447.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1447) *sairiṃdhrīmabhijānīṣva — devarūpiṇīm*
 
 [3,2604.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2604) [2684.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2684) [16757.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16757) *nābhijānāti me — śālvagataṃ manaḥ*
-[BENF. Chr. 15,5.] *ahamakṣeṣvabhijñātaḥ pṛthivyāmapi . hṛdayajñaḥ* известный как
+[BENF. Chr. 15,5.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?15) *ahamakṣeṣvabhijñātaḥ pṛthivyāmapi . hṛdayajñaḥ* известный как
 [MBH. 2,1763.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1763) *māmabhijānāsi — mithyāpralāpinam* считать за, принимать за
 [1,3337.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3337)
 - **EN:** — *abhi*
@@ -91,7 +91,7 @@
 [13,1447.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1447) *sairiṃdhrīmabhijānīṣva — devarūpiṇīm*
 
 [3,2604.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2604) [2684.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2684) [16757.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16757) *nābhijānāti me — śālvagataṃ manaḥ*
-[BENF. Chr. 15,5.] *ahamakṣeṣvabhijñātaḥ pṛthivyāmapi . hṛdayajñaḥ* known as
+[BENF. Chr. 15,5.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?15) *ahamakṣeṣvabhijñātaḥ pṛthivyāmapi . hṛdayajñaḥ* known as
 [MBH. 2,1763.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1763) *māmabhijānāsi — mithyāpralāpinam* to hold to be
 [1,3337.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3337)
   <sub>attested</sub>

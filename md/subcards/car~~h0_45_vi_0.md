@@ -317,7 +317,7 @@
 [8,187.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,187) [401.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,401) *mitrāmitraṃ vicārayet*
 [MBH. 12,3826.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3826) *pareṣāmātmanaścaiva yo vicārya balābalam*
 [PAÑCAT. III,87.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?3,87) *pakṣadvayaṃ bhāṣye vicāritam*
-[KAIY.] zu [P. 7,1,30.](https://ashtadhyayi.com/sutraani/7/1/30) [MBH. 1,4370.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4370) [12,11954.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.11954) [BENF. Chr. 15,6.] [P. 8,2,97.](https://ashtadhyayi.com/sutraani/8/2/97) [BHARTṚ. 1,18.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app2?1,18) [PAÑCAT. 191,10.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?191,10) [GAUḌAP.] zu [SĀṂKHYAK. 69.] *suvicārya*
+[KAIY.] zu [P. 7,1,30.](https://ashtadhyayi.com/sutraani/7/1/30) [MBH. 1,4370.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4370) [12,11954.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.11954) [BENF. Chr. 15,6.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?15) [P. 8,2,97.](https://ashtadhyayi.com/sutraani/8/2/97) [BHARTṚ. 1,18.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app2?1,18) [PAÑCAT. 191,10.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?191,10) [GAUḌAP.] zu [SĀṂKHYAK. 69.] *suvicārya*
 [MED. Anh. 3. 4.](https://sanskrit-lexicon-scans.github.io/medini/app1?anh,3) Ohne obj. *vyacīcaram*
 [DAŚAK. 103, ult.] *śakra āste vicārayan* hin und her denkend
 [MBH. 5,255.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.255)
@@ -337,7 +337,7 @@
 [8,187.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,187) [401.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,401) *mitrāmitraṃ vicārayet*
 [MBH. 12,3826.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3826) *pareṣāmātmanaścaiva yo vicārya balābalam*
 [PAÑCAT. III,87.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?3,87) *pakṣadvayaṃ bhāṣye vicāritam*
-[KAIY.] к [P. 7,1,30.](https://ashtadhyayi.com/sutraani/7/1/30) [MBH. 1,4370.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4370) [12,11954.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.11954) [BENF. Chr. 15,6.] [P. 8,2,97.](https://ashtadhyayi.com/sutraani/8/2/97) [BHARTṚ. 1,18.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app2?1,18) [PAÑCAT. 191,10.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?191,10) [GAUḌAP.] к [SĀṂKHYAK. 69.] *suvicārya*
+[KAIY.] к [P. 7,1,30.](https://ashtadhyayi.com/sutraani/7/1/30) [MBH. 1,4370.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4370) [12,11954.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.11954) [BENF. Chr. 15,6.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?15) [P. 8,2,97.](https://ashtadhyayi.com/sutraani/8/2/97) [BHARTṚ. 1,18.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app2?1,18) [PAÑCAT. 191,10.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?191,10) [GAUḌAP.] к [SĀṂKHYAK. 69.] *suvicārya*
 [MED. Anh. 3. 4.](https://sanskrit-lexicon-scans.github.io/medini/app1?anh,3) Без obj. *vyacīcaram*
 [DAŚAK. 103, ult.] *śakra āste vicārayan* размышляя туда и сюда
 [MBH. 5,255.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.255)
@@ -356,7 +356,7 @@
 [8,187.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,187) [401.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,401) *mitrāmitraṃ vicārayet*
 [MBH. 12,3826.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3826) *pareṣāmātmanaścaiva yo vicārya balābalam*
 [PAÑCAT. III,87.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?3,87) *pakṣadvayaṃ bhāṣye vicāritam*
-[KAIY.] on [P. 7,1,30.](https://ashtadhyayi.com/sutraani/7/1/30) [MBH. 1,4370.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4370) [12,11954.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.11954) [BENF. Chr. 15,6.] [P. 8,2,97.](https://ashtadhyayi.com/sutraani/8/2/97) [BHARTṚ. 1,18.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app2?1,18) [PAÑCAT. 191,10.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?191,10) [GAUḌAP.] on [SĀṂKHYAK. 69.] *suvicārya*
+[KAIY.] on [P. 7,1,30.](https://ashtadhyayi.com/sutraani/7/1/30) [MBH. 1,4370.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4370) [12,11954.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.11954) [BENF. Chr. 15,6.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?15) [P. 8,2,97.](https://ashtadhyayi.com/sutraani/8/2/97) [BHARTṚ. 1,18.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app2?1,18) [PAÑCAT. 191,10.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?191,10) [GAUḌAP.] on [SĀṂKHYAK. 69.] *suvicārya*
 [MED. Anh. 3. 4.](https://sanskrit-lexicon-scans.github.io/medini/app1?anh,3) Without obj. *vyacīcaram*
 [DAŚAK. 103, ult.] *śakra āste vicārayan* reflecting back and forth
 [MBH. 5,255.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.255)

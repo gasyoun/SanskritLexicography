@@ -66,10 +66,10 @@
 - **EN:** — b〉 to lead a life of joy, to be blessed.
   <sub>attested</sub>
 
-**preverb-abhi)** — Mit *anu* mit Freudebezeugung empfangen oder begleiten, zujubeln, zujauchzen; mit Acc. *anumatta* [BENF. Chr. 200,14] fehlerhaft für *anunmatta*.
+**preverb-abhi)** — Mit *anu* mit Freudebezeugung empfangen oder begleiten, zujubeln, zujauchzen; mit Acc. *anumatta* [BENF. Chr. 200,14](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?200) fehlerhaft für *anunmatta*.
 
-- **RU:** — С *anu* встречать или провожать с выражением радости, ликовать, приветствовать возгласами; с Acc. *anumatta* [BENF. Chr. 200,14] ошибочно вместо *anunmatta*.
-- **EN:** — With *anu* to receive or accompany with expressions of joy, to cheer, to acclaim; with Acc. *anumatta* [BENF. Chr. 200,14] erroneously for *anunmatta*.
+- **RU:** — С *anu* встречать или провожать с выражением радости, ликовать, приветствовать возгласами; с Acc. *anumatta* [BENF. Chr. 200,14](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?200) ошибочно вместо *anunmatta*.
+- **EN:** — With *anu* to receive or accompany with expressions of joy, to cheer, to acclaim; with Acc. *anumatta* [BENF. Chr. 200,14](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?200) erroneously for *anunmatta*.
   <sub>attested</sub>
 
 **preverb-ava-1)** — Mit *abhi*

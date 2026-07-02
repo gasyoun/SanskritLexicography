@@ -1330,24 +1330,24 @@ Sch. on [VARARUCI 10,2] in [LASSEN, Institutt. 7.] — desid. from caus. to stri
 **1)** — *anupra*
  1) einen Ort (acc.) erreichen, auf Jmd stossen, Jmd finden, sich zu Jmd begeben: *pūrvāṃ diśamanuprāpya*
 [VIŚV. 15,1.](https://sanskrit-lexicon-scans.github.io/bchrest1/app4?15,1) *māmanuprāpya*
-[MBH.] in [BENF. Chr. 70,54.] *anuprāpta* mit act. Bedeutung: *nadīṃ gaṅgāmanuprāptāḥ*
+[MBH.] in [BENF. Chr. 70,54.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?70) *anuprāpta* mit act. Bedeutung: *nadīṃ gaṅgāmanuprāptāḥ*
 [MBH. 1,5874.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5874) [3,1833.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1833) [1850.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1850)
 [R. 1,1,30.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,1,30) [2,42,13.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,42,13) [101,10.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,101,10) [3,11,8.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,11,8) [23,26.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,23,26) [74,27.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,74,27) *śaraṇaṃ tvāmanuprāptā*
 [27,9.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,27,9)
 - **EN:** — *anupra*
  1) to reach a place (acc.), to come upon someone, to find someone, to betake oneself to someone: *pūrvāṃ diśamanuprāpya*
 [VIŚV. 15,1.](https://sanskrit-lexicon-scans.github.io/bchrest1/app4?15,1) *māmanuprāpya*
-[MBH.] in [BENF. Chr. 70,54.] *anuprāpta* with act. meaning: *nadīṃ gaṅgāmanuprāptāḥ*
+[MBH.] in [BENF. Chr. 70,54.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?70) *anuprāpta* with act. meaning: *nadīṃ gaṅgāmanuprāptāḥ*
 [MBH. 1,5874.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5874) [3,1833.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1833) [1850.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1850)
 [R. 1,1,30.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,1,30) [2,42,13.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,42,13) [101,10.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,101,10) [3,11,8.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,11,8) [23,26.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,23,26) [74,27.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,74,27) *śaraṇaṃ tvāmanuprāptā*
 [27,9.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,27,9)
 
 **2)** — 2) wiedererlangen, erlangen, sich zuziehen: *sītāmanuprāpya*
 [R. 1,1,80.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,1,80) *bhayaṃ tīvramanuprāptaḥ*
-[MBH.] in [BENF. Chr. 54,11.]
+[MBH.] in [BENF. Chr. 54,11.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?54)
 - **EN:** — 2) to regain, to obtain, to incur: *sītāmanuprāpya*
 [R. 1,1,80.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,1,80) *bhayaṃ tīvramanuprāptaḥ*
-[MBH.] in [BENF. Chr. 54,11.]
+[MBH.] in [BENF. Chr. 54,11.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?54)
 
 **3)** — 3) nachgehen, nachahmen: *līlākhelamanuprāpurmahokṣāstasya vikramam*
 [RAGH. 4,22.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?4,22)
@@ -2167,7 +2167,7 @@ s. [P. 6,4,57](https://ashtadhyayi.com/sutraani/6/4/57)) *sā svastyayanam*
 **1)** — *pari* partic.: *vatsa paryāptametāvadbhīṣmeṇa saha saṃyuge* genug
 [MBH. 5,7302. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7302) *paryāptanayanaḥ śakraḥ sarvairnetrairudaikṣata* eine hinreichende Anzahl von Augen habend (= *saṃprāptanetraphala*
 Schol.!) [HARIV. 3964.](https://sanskrit-lexicon-scans.github.io/hariv?3964) *paryāptamaśru muñcāmi* reichlich
-[DAŚAK.] in [BENF. Chr. 185,10.] *purī tviyaṃ janasyāsya na paryāptā bhaviṣyati* geräumig genug für
+[DAŚAK.] in [BENF. Chr. 185,10.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?185) *purī tviyaṃ janasyāsya na paryāptā bhaviṣyati* geräumig genug für
 [HARIV. 6525.](https://sanskrit-lexicon-scans.github.io/hariv?6525) *kimapāṅgamaparyāptamasminkarmaṇi manyase* meinst du, der äussere Augenwinkel vermöge nicht dieses zu bewirken?
 [Spr. 3940.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3940) mit einem infin.
 [P. 3,4,66.](https://ashtadhyayi.com/sutraani/3/4/66) *paryāptam* _adv._: *narasya kathitāḥ paryāptamaṣṭau guṇāḥ* acht Vorzüge, womit man sich begnügen kann,
@@ -2183,7 +2183,7 @@ Schol.!) [HARIV. 3964.](https://sanskrit-lexicon-scans.github.io/hariv?3964) *pa
 - **RU:** — *pari* partic.: *vatsa paryāptametāvadbhīṣmeṇa saha saṃyuge* «достаточно»
 [MBH. 5,7302. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7302) *paryāptanayanaḥ śakraḥ sarvairnetrairudaikṣata* «имеющий достаточное число глаз» (= *saṃprāptanetraphala*
 Schol.!) [HARIV. 3964.](https://sanskrit-lexicon-scans.github.io/hariv?3964) *paryāptamaśru muñcāmi* «в изобилии»
-[DAŚAK.] в [BENF. Chr. 185,10.] *purī tviyaṃ janasyāsya na paryāptā bhaviṣyati* «достаточно просторный для»
+[DAŚAK.] в [BENF. Chr. 185,10.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?185) *purī tviyaṃ janasyāsya na paryāptā bhaviṣyati* «достаточно просторный для»
 [HARIV. 6525.](https://sanskrit-lexicon-scans.github.io/hariv?6525) *kimapāṅgamaparyāptamasminkarmaṇi manyase* «неужели ты думаешь, что внешний уголок глаза не в состоянии этого произвести?»
 [Spr. 3940.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3940) с infin.
 [P. 3,4,66.](https://ashtadhyayi.com/sutraani/3/4/66) *paryāptam* _adv._: *narasya kathitāḥ paryāptamaṣṭau guṇāḥ* «восемь достоинств, которыми можно довольствоваться»,
@@ -2198,7 +2198,7 @@ Schol.!) [HARIV. 3964.](https://sanskrit-lexicon-scans.github.io/hariv?3964) *pa
 - **EN:** — *pari* partic.: *vatsa paryāptametāvadbhīṣmeṇa saha saṃyuge* "enough"
 [MBH. 5,7302. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7302) *paryāptanayanaḥ śakraḥ sarvairnetrairudaikṣata* "having a sufficient number of eyes" (= *saṃprāptanetraphala*
 Schol.!) [HARIV. 3964.](https://sanskrit-lexicon-scans.github.io/hariv?3964) *paryāptamaśru muñcāmi* "abundant, plentiful"
-[DAŚAK.] in [BENF. Chr. 185,10.] *purī tviyaṃ janasyāsya na paryāptā bhaviṣyati* "spacious enough for"
+[DAŚAK.] in [BENF. Chr. 185,10.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?185) *purī tviyaṃ janasyāsya na paryāptā bhaviṣyati* "spacious enough for"
 [HARIV. 6525.](https://sanskrit-lexicon-scans.github.io/hariv?6525) *kimapāṅgamaparyāptamasminkarmaṇi manyase* "do you mean that the outer corner of the eye is not capable of effecting this?"
 [Spr. 3940.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3940) with a infin.
 [P. 3,4,66.](https://ashtadhyayi.com/sutraani/3/4/66) *paryāptam* _adv._: *narasya kathitāḥ paryāptamaṣṭau guṇāḥ* "eight merits with which one may content oneself",
@@ -2219,16 +2219,16 @@ Schol.!) [HARIV. 3964.](https://sanskrit-lexicon-scans.github.io/hariv?3964) *pa
 
 **9)** — *pra* partic. *prāpta*
  9)
-[MED. t. 32.](https://sanskrit-lexicon-scans.github.io/medini/app1?t,32) [HALĀY. 4,61.](https://sanskrit-lexicon-scans.github.io/armh2/app1?4,61) [DAŚAK.] in [BENF. Chr. 188,4.] — caus. vorbringen, melden, verkünden: *prāpayāsya ca vākyāni yato dūtastvamāgataḥ*
+[MED. t. 32.](https://sanskrit-lexicon-scans.github.io/medini/app1?t,32) [HALĀY. 4,61.](https://sanskrit-lexicon-scans.github.io/armh2/app1?4,61) [DAŚAK.] in [BENF. Chr. 188,4.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?188) — caus. vorbringen, melden, verkünden: *prāpayāsya ca vākyāni yato dūtastvamāgataḥ*
 [R. 7,103,10.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,103,10)
 
 - **RU:** — *pra* partic. *prāpta*
  9)
-[MED. t. 32.](https://sanskrit-lexicon-scans.github.io/medini/app1?t,32) [HALĀY. 4,61.](https://sanskrit-lexicon-scans.github.io/armh2/app1?4,61) [DAŚAK.] в [BENF. Chr. 188,4.] — caus. «представлять, докладывать, возвещать»: *prāpayāsya ca vākyāni yato dūtastvamāgataḥ*
+[MED. t. 32.](https://sanskrit-lexicon-scans.github.io/medini/app1?t,32) [HALĀY. 4,61.](https://sanskrit-lexicon-scans.github.io/armh2/app1?4,61) [DAŚAK.] в [BENF. Chr. 188,4.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?188) — caus. «представлять, докладывать, возвещать»: *prāpayāsya ca vākyāni yato dūtastvamāgataḥ*
 [R. 7,103,10.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,103,10)
 - **EN:** — *pra* partic. *prāpta*
  9)
-[MED. t. 32.](https://sanskrit-lexicon-scans.github.io/medini/app1?t,32) [HALĀY. 4,61.](https://sanskrit-lexicon-scans.github.io/armh2/app1?4,61) [DAŚAK.] in [BENF. Chr. 188,4.] — caus. "to put forward, report, announce": *prāpayāsya ca vākyāni yato dūtastvamāgataḥ*
+[MED. t. 32.](https://sanskrit-lexicon-scans.github.io/medini/app1?t,32) [HALĀY. 4,61.](https://sanskrit-lexicon-scans.github.io/armh2/app1?4,61) [DAŚAK.] in [BENF. Chr. 188,4.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?188) — caus. "to put forward, report, announce": *prāpayāsya ca vākyāni yato dūtastvamāgataḥ*
 [R. 7,103,10.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,103,10)
   <sub>DCS 6022 · attested</sub>
 
@@ -2463,10 +2463,10 @@ Z. 3 *pratyekaṃ parisamāpyate* so v. a. "extends to everything, belongs to ev
 - **EN:** — 4) having obtained, having fallen into (a misfortune).
   <sub>DCS 2328 · attested</sub>
 
-**5)** — 5〉 angelangt, gekommen. (insbes. von Zeitpunkten); herstammend von (Abl.) [197,4].
+**5)** — 5〉 angelangt, gekommen. (insbes. von Zeitpunkten); herstammend von (Abl.) [197,4](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?197).
 
-- **RU:** — 5〉 прибывший, пришедший. (insbes. о моментах времени); происходящий от (Abl.) [197,4].
-- **EN:** — 5) arrived, come. (insbes. of points in time); descended from, derived from (Abl.) [197,4].
+- **RU:** — 5〉 прибывший, пришедший. (insbes. о моментах времени); происходящий от (Abl.) [197,4](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?197).
+- **EN:** — 5) arrived, come. (insbes. of points in time); descended from, derived from (Abl.) [197,4](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?197).
   <sub>DCS 2328 · attested</sub>
 
 **caus)** — Caus. erreichen machen.
@@ -2562,8 +2562,8 @@ Z. 3 *pratyekaṃ parisamāpyate* so v. a. "extends to everything, belongs to ev
 **vyā-ppp-intro)** — Partic. *vyāpta*
 - **EN:** — Partic. *vyāpta*
 
-**vyā-ppp1)** — 1〉 durchdrungen, erfüllt, angefüllt. *sūryatejasā mukham* so v. a. ganz beschienen von [154,5].
-- **EN:** — 1) pervaded, filled, filled up. *sūryatejasā mukham* so v. a. entirely lit up by [154,5].
+**vyā-ppp1)** — 1〉 durchdrungen, erfüllt, angefüllt. *sūryatejasā mukham* so v. a. ganz beschienen von [154,5](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?154).
+- **EN:** — 1) pervaded, filled, filled up. *sūryatejasā mukham* so v. a. entirely lit up by [154,5](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?154).
 
 **vyā-ppp2)** — 2〉 eingenommen, in Besitz genommen.
 
@@ -2604,8 +2604,8 @@ Z. 3 *pratyekaṃ parisamāpyate* so v. a. "extends to everything, belongs to ev
 **samā-intro)** — Mit *sam*
 - **EN:** — With *sam*
 
-**samā1)** — 1〉 erlangen, theilhaftig werden. *samāptavant* [91,25].
-- **EN:** — 1) to obtain, to partake of. *samāptavant* [91,25].
+**samā1)** — 1〉 erlangen, theilhaftig werden. *samāptavant* [91,25](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?91).
+- **EN:** — 1) to obtain, to partake of. *samāptavant* [91,25](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?91).
 
 **samā2)** — 2〉 vollenden.
 
@@ -2733,17 +2733,17 @@ Z. 3 *pratyekaṃ parisamāpyate* so v. a. "extends to everything, belongs to ev
   <sub>DCS 2328 · attested</sub>
 
 **ppp_T22_1)** — Partic. *vyāpta*
-— 1〉 durchdrungen, erfüllt, angefüllt. *sūryatejasā mukham* so v. a. ganz beschienen von [154,5].
+— 1〉 durchdrungen, erfüllt, angefüllt. *sūryatejasā mukham* so v. a. ganz beschienen von [154,5](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?154).
 
 - **RU:** — Partic. *vyāpta*
-— 1〉 пронизанный, наполненный, переполненный. *sūryatejasā mukham* так v. a. целиком освещённый [154,5].
+— 1〉 пронизанный, наполненный, переполненный. *sūryatejasā mukham* так v. a. целиком освещённый [154,5](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?154).
   <sub>DCS 2328 · attested</sub>
 
 **mit_T40_1)** — Mit *sam*
-— 1〉 erlangen, theilhaftig werden. *samāptavant* [91,25].
+— 1〉 erlangen, theilhaftig werden. *samāptavant* [91,25](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?91).
 
 - **RU:** — Mit *sam*
-— 1〉 обретать, становиться причастным. *samāptavant* [91,25].
+— 1〉 обретать, становиться причастным. *samāptavant* [91,25](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?91).
   <sub>DCS 2328 · attested</sub>
 
 **caus_T48_1)** — Caus.

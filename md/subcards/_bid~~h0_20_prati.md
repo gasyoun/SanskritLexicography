@@ -16,12 +16,12 @@
   <sub>attested</sub>
 
 **2)** — 2) verrathen: *apratibhidya rahasyam*
-[DAŚAK.] in [BENF. Chr. 199,21.]
+[DAŚAK.] in [BENF. Chr. 199,21.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?199)
 
 - **RU:** — 2) предавать: *apratibhidya rahasyam*
-[DAŚAK.] in [BENF. Chr. 199,21.]
+[DAŚAK.] in [BENF. Chr. 199,21.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?199)
 - **EN:** — 2) to betray: *apratibhidya rahasyam*
-[DAŚAK.] in [BENF. Chr. 199,21.]
+[DAŚAK.] in [BENF. Chr. 199,21.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?199)
   <sub>attested</sub>
 
 **3)** — 3) seinen Unwillen gegen Jmd (acc.) an den Tag legen

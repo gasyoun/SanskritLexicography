@@ -3193,10 +3193,10 @@ u. s. w.) [MBH. 1,3801.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3801
 - **EN:** — k) to bear, support, thus v. a. to keep alive, sustain.
   <sub>attested</sub>
 
-**1l)** — l〉 ertragen, erdulden [186,25].
+**1l)** — l〉 ertragen, erdulden [186,25](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?186).
 
-- **RU:** — l〉 терпеть, сносить [186,25].
-- **EN:** — l) to bear, endure [186,25].
+- **RU:** — l〉 терпеть, сносить [186,25](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?186).
+- **EN:** — l) to bear, endure [186,25](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?186).
   <sub>attested</sub>
 
 **1m)** — m〉 ertragen, s. v. a. nachsehen, verzeihen.
@@ -3217,10 +3217,10 @@ u. s. w.) [MBH. 1,3801.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3801
 - **EN:** — o) to undergo, to devote oneself to, to submit oneself. *agnim*, *viṣam*. *tulām* to submit oneself to the ordeal by fire, by poison, by the balance.
   <sub>attested</sub>
 
-**1p)** — p〉 empfinden (einen Schmerz) [302,27].
+**1p)** — p〉 empfinden (einen Schmerz) [302,27](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?302).
 
-- **RU:** — p〉 испытывать (боль) [302,27].
-- **EN:** — p) to feel (a pain) [302,27].
+- **RU:** — p〉 испытывать (боль) [302,27](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?302).
+- **EN:** — p) to feel (a pain) [302,27](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?302).
   <sub>attested</sub>
 
 **1q)** — q〉 an den Tag legen, äussern [PAÑCAD. 38] (*avahat* zu lesen).
@@ -3264,10 +3264,10 @@ u. s. w.) [MBH. 1,3801.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3801
 - **EN:** — b) to sail by ship (Instr.), to travel along the water, to swim.
   <sub>attested</sub>
 
-**2c)** — c〉 dahinfahren vom Winde, so v. a. wehen [187,15].
+**2c)** — c〉 dahinfahren vom Winde, so v. a. wehen [187,15](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?187).
 
-- **RU:** — c〉 нестись, лететь о ветре, так v. a. веять [187,15].
-- **EN:** — c) to course along of the wind, thus v. a. to blow [187,15].
+- **RU:** — c〉 нестись, лететь о ветре, так v. a. веять [187,15](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?187).
+- **EN:** — c) to course along of the wind, thus v. a. to blow [187,15](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?187).
   <sub>attested</sub>
 
 **2d)** — d〉 dahinfliessen (von Jahren) [HARṢAC. 28,24].
@@ -3460,10 +3460,10 @@ u. s. w.) [MBH. 1,3801.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3801
 - **EN:** — 2) to transfer, to bring to another place.
   <sub>attested</sub>
 
-**ati6)** — 3〉 glücklich über Etwas (Acc.) hinüberkommen [299,32] (im Prākrit).
+**ati6)** — 3〉 glücklich über Etwas (Acc.) hinüberkommen [299,32](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?299) (im Prākrit).
 
-- **RU:** — 3〉 благополучно преодолеть что-л. (Acc.) перейти [299,32] (в Prākrit).
-- **EN:** — 3) to come safely across something (Acc.) [299,32] (in Prākrit).
+- **RU:** — 3〉 благополучно преодолеть что-л. (Acc.) перейти [299,32](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?299) (в Prākrit).
+- **EN:** — 3) to come safely across something (Acc.) [299,32](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?299) (in Prākrit).
   <sub>attested</sub>
 
 **ati7)** — 4〉 verbringen (eine Zeit) [HEM. PAR. 1,246]. *Mit *vyati* Med. (*vyatihāre*).
@@ -3846,10 +3846,10 @@ u. s. w.) [MBH. 1,3801.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3801
 - **EN:** — 8) to hold fast (opposite to give up).
   <sub>attested</sub>
 
-**p4_9)** — 9〉 an sich tragen, haben, besitzen [HEM. PAR. 1,411]. *devīśabdam* den Titel Devī führen [Chr. 328,29].
+**p4_9)** — 9〉 an sich tragen, haben, besitzen [HEM. PAR. 1,411]. *devīśabdam* den Titel Devī führen [Chr. 328,29](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?328).
 
-- **RU:** — 9) носить на себе, иметь, обладать [HEM. PAR. 1,411]. *devīśabdam* носить титул Devī [Chr. 328,29].
-- **EN:** — 9) to bear upon oneself, to have, to possess [HEM. PAR. 1,411]. *devīśabdam* to bear the title Devī [Chr. 328,29].
+- **RU:** — 9) носить на себе, иметь, обладать [HEM. PAR. 1,411]. *devīśabdam* носить титул Devī [Chr. 328,29](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?328).
+- **EN:** — 9) to bear upon oneself, to have, to possess [HEM. PAR. 1,411]. *devīśabdam* to bear the title Devī [Chr. 328,29](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?328).
   <sub>attested</sub>
 
 **p4_10)** — 10〉 äussern, an den Tag legen.
@@ -3930,10 +3930,10 @@ u. s. w.) [MBH. 1,3801.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3801
 - **EN:** — 5) to bear, to endure.
   <sub>attested</sub>
 
-**p6_6)** — 6〉 an sich tragen, haben [319,16] (im Prākrit).
+**p6_6)** — 6〉 an sich tragen, haben [319,16](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?319) (im Prākrit).
 
-- **RU:** — 6) носить на себе, иметь [319,16] (в Prākrit).
-- **EN:** — 6) to bear upon oneself, to have [319,16] (in Prākrit).
+- **RU:** — 6) носить на себе, иметь [319,16](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?319) (в Prākrit).
+- **EN:** — 6) to bear upon oneself, to have [319,16](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?319) (in Prākrit).
   <sub>attested</sub>
 
 **p6_7)** — 7〉 an den Tag legen, äussern.
@@ -4358,10 +4358,10 @@ u. s. w.) [MBH. 1,3801.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3801
 - **EN:** — 3) to draw along with itself, to drive (of the wind).
   <sub>attested</sub>
 
-**y4)** — 4〉 beladen [85,8].
+**y4)** — 4〉 beladen [85,8](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?85).
 
-- **RU:** 4) нагружать [85,8].
-- **EN:** — 4) laden [85,8].
+- **RU:** 4) нагружать [85,8](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?85).
+- **EN:** — 4) laden [85,8](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?85).
   <sub>attested</sub>
 
 **y5)** — 5〉 Pass. getragen werden von, so v. a. reiten auf (Instr.).

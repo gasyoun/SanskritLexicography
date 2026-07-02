@@ -15,10 +15,10 @@
 - **EN:** — 2〉 to descend, to alight, to sink (of the sun), to prostrate oneself, to hurl oneself, to throw oneself upon or into (Loc. or Acc.), — at someone's feet (Loc., exceptionally Acc.) *mūrdhnā* to throw oneself at someone's (Gen.) feet with one's head. *pādayoḥ patitaḥ* and *pādapatita* having thrown oneself at someone's feet.
   <sub>attested</sub>
 
-**3)** — 3〉 herabfallen, fallen in (Acc.) oder auf (Loc. oder *upari* mit Gen.), herabstürzen, zusammenstürzen, einstürzen, umfallen, abfallen, ausfallen. *patita* herabgefallen u. s. w. Am Ende eines Comp. gefallen auf und ausnahmsweise auf ([149,20]).
+**3)** — 3〉 herabfallen, fallen in (Acc.) oder auf (Loc. oder *upari* mit Gen.), herabstürzen, zusammenstürzen, einstürzen, umfallen, abfallen, ausfallen. *patita* herabgefallen u. s. w. Am Ende eines Comp. gefallen auf und ausnahmsweise auf ([149,20](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?149)).
 
-- **RU:** 3〉 падать вниз, падать в (Acc.) или на (Loc. или *upari* с Gen.), низвергаться, обрушиваться, рушиться, опрокидываться, отпадать, выпадать. *patita* упавший u. s. w.. В конце Comp. упавший на и в виде исключения на ([149,20]).
-- **EN:** — 3〉 to fall down, to fall into (Acc.) or upon (Loc. or *upari* with Gen.), to tumble down, to collapse, to cave in, to topple over, to fall off, to drop out. *patita* fallen down u. s. w. At the end of a Comp. fallen upon, and exceptionally upon ([149,20]).
+- **RU:** 3〉 падать вниз, падать в (Acc.) или на (Loc. или *upari* с Gen.), низвергаться, обрушиваться, рушиться, опрокидываться, отпадать, выпадать. *patita* упавший u. s. w.. В конце Comp. упавший на и в виде исключения на ([149,20](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?149)).
+- **EN:** — 3〉 to fall down, to fall into (Acc.) or upon (Loc. or *upari* with Gen.), to tumble down, to collapse, to cave in, to topple over, to fall off, to drop out. *patita* fallen down u. s. w. At the end of a Comp. fallen upon, and exceptionally upon ([149,20](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?149)).
   <sub>attested</sub>
 
 **4)** — 4〉 vom Himmel niederfahren (freiwillig oder gezwungen, von Himmelsbewohnern); das Wohin im Loc. oder Acc. **svargapatita* des Himmels verlustig gegangen.
@@ -51,10 +51,10 @@
 - **EN:** — 8〉 to fall upon, thus v. a. to be directed at, to befall, to fall to someone's share, to break upon (of a misfortune); with Loc.
   <sub>attested</sub>
 
-**9)** — 9〉 gerathen in (Loc.). *patita* gerathen in (Loc. oder im Comp. vorangehend) [121,4]. [135,10]. [186,15]. *madhya˚* so v. a. dazwischen befindlich.
+**9)** — 9〉 gerathen in (Loc.). *patita* gerathen in (Loc. oder im Comp. vorangehend) [121,4](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?121). [135,10](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?135). [186,15](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?186). *madhya˚* so v. a. dazwischen befindlich.
 
-- **RU:** 9〉 попадать в (Loc.). *patita* попавший в (Loc. или в предшествующем Comp.) [121,4]. [135,10]. [186,15]. *madhya˚* так v. a. находящийся посередине.
-- **EN:** — 9〉 to fall into, to get into (Loc.). *patita* to get into (Loc. or in Comp. preceding) [121,4]. [135,10]. [186,15]. *madhya˚* thus v. a. situated between.
+- **RU:** 9〉 попадать в (Loc.). *patita* попавший в (Loc. или в предшествующем Comp.) [121,4](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?121). [135,10](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?135). [186,15](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?186). *madhya˚* так v. a. находящийся посередине.
+- **EN:** — 9〉 to fall into, to get into (Loc.). *patita* to get into (Loc. or in Comp. preceding) [121,4](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?121). [135,10](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?135). [186,15](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?186). *madhya˚* thus v. a. situated between.
   <sub>attested</sub>
 
 **caus-header)** — Caus. *pātayati, ˚te* (metrisch; *patay* s. bes.)
@@ -69,10 +69,10 @@
 - **EN:** — 1〉 to cause to fly, to hurl, to fling — at (Loc.).
   <sub>attested</sub>
 
-**caus-2)** — 2〉 fallen machen, — lassen, eine Axt, ein Messer u. s. w. fallen lassen, so v. a. damit einen Schlag —, einen Schnitt verursachen. Das Worauf im Loc., Gen. oder Gen. mit *upari*. *ātmānam* sich niederwerfen. *yattayā — vaktre 'syāḥ svāṅgulyo daśa pātitāḥ* so v. a. dass sie mit allen zehn Fingern auf ihr Gesicht schlug [114,32]. *daṇḍam* auch so v. a. Strafe verhängen über (Loc.), *jalam* so v. a. Wasser auf die Erde giessen, *jalaṃ netrāmbhyām* so v. a. Thränen vergiessen, *aśrūṇi* so v. a. Thränen hervorrufen [Spr. 7786](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7786). *sathānāt* Jmd von seiner Stelle stürzen.
+**caus-2)** — 2〉 fallen machen, — lassen, eine Axt, ein Messer u. s. w. fallen lassen, so v. a. damit einen Schlag —, einen Schnitt verursachen. Das Worauf im Loc., Gen. oder Gen. mit *upari*. *ātmānam* sich niederwerfen. *yattayā — vaktre 'syāḥ svāṅgulyo daśa pātitāḥ* so v. a. dass sie mit allen zehn Fingern auf ihr Gesicht schlug [114,32](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?114). *daṇḍam* auch so v. a. Strafe verhängen über (Loc.), *jalam* so v. a. Wasser auf die Erde giessen, *jalaṃ netrāmbhyām* so v. a. Thränen vergiessen, *aśrūṇi* so v. a. Thränen hervorrufen [Spr. 7786](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7786). *sathānāt* Jmd von seiner Stelle stürzen.
 
-- **RU:** 2〉 заставлять падать, ронять, ронять топор, нож u. s. w., так v. a. наносить удар, делать разрез. Предмет, на который роняют, — в Loc., Gen. или Gen. с *upari*. *ātmānam* простираться ниц. *yattayā — vaktre 'syāḥ svāṅgulyo daśa pātitāḥ* так v. a. что она ударила себя по лицу всеми десятью пальцами [114,32]. *daṇḍam* также так v. a. налагать наказание на (Loc.), *jalam* так v. a. лить воду на землю, *jalaṃ netrāmbhyām* так v. a. проливать слёзы, *aśrūṇi* так v. a. вызывать слёзы [Spr. 7786](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7786). *sathānāt* низвергать кого-л. с его места.
-- **EN:** — 2〉 to cause to fall, to let fall, to let an axe, a knife u. s. w. fall, thus v. a. thereby to cause a blow — a cut. The object upon which expressed in Loc., Gen. or Gen. with *upari*. *ātmānam* to prostrate oneself. *yattayā — vaktre 'syāḥ svāṅgulyo daśa pātitāḥ* thus v. a. so that she struck her face with all ten fingers [114,32]. *daṇḍam* also thus v. a. to impose punishment upon (Loc.), *jalam* thus v. a. to pour water upon the earth, *jalaṃ netrāmbhyām* thus v. a. to shed tears, *aśrūṇi* thus v. a. to cause tears [Spr. 7786](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7786). *sathānāt* to cast someone down from their position.
+- **RU:** 2〉 заставлять падать, ронять, ронять топор, нож u. s. w., так v. a. наносить удар, делать разрез. Предмет, на который роняют, — в Loc., Gen. или Gen. с *upari*. *ātmānam* простираться ниц. *yattayā — vaktre 'syāḥ svāṅgulyo daśa pātitāḥ* так v. a. что она ударила себя по лицу всеми десятью пальцами [114,32](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?114). *daṇḍam* также так v. a. налагать наказание на (Loc.), *jalam* так v. a. лить воду на землю, *jalaṃ netrāmbhyām* так v. a. проливать слёзы, *aśrūṇi* так v. a. вызывать слёзы [Spr. 7786](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7786). *sathānāt* низвергать кого-л. с его места.
+- **EN:** — 2〉 to cause to fall, to let fall, to let an axe, a knife u. s. w. fall, thus v. a. thereby to cause a blow — a cut. The object upon which expressed in Loc., Gen. or Gen. with *upari*. *ātmānam* to prostrate oneself. *yattayā — vaktre 'syāḥ svāṅgulyo daśa pātitāḥ* thus v. a. so that she struck her face with all ten fingers [114,32](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?114). *daṇḍam* also thus v. a. to impose punishment upon (Loc.), *jalam* thus v. a. to pour water upon the earth, *jalaṃ netrāmbhyām* thus v. a. to shed tears, *aśrūṇi* thus v. a. to cause tears [Spr. 7786](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7786). *sathānāt* to cast someone down from their position.
   <sub>attested</sub>
 
 **caus-3)** — 3〉 hinabwerfen, abschlagen (den Kopf), ausschlagen (Zähne), niederwerfen, niederhauen, umwerfen, werfen in (Acc. oder Loc.).
@@ -81,10 +81,10 @@
 - **EN:** — 3〉 to throw down, to strike off (the head), to knock out (teeth), to knock down, to cut down, to overturn, to throw into (Acc. or Loc.).
   <sub>attested</sub>
 
-**caus-4)** — 4〉 zerfallen lassen. *dvedhā* so v. a. in zwei Theile theilen (in einer Etymologie) [31,14].
+**caus-4)** — 4〉 zerfallen lassen. *dvedhā* so v. a. in zwei Theile theilen (in einer Etymologie) [31,14](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?31).
 
-- **RU:** 4〉 заставлять распадаться. *dvedhā* так v. a. делить на две части (в этимологии) [31,14].
-- **EN:** — 4〉 to cause to fall apart. *dvedhā* thus v. a. to divide into two parts (in an etymology) [31,14].
+- **RU:** 4〉 заставлять распадаться. *dvedhā* так v. a. делить на две части (в этимологии) [31,14](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?31).
+- **EN:** — 4〉 to cause to fall apart. *dvedhā* thus v. a. to divide into two parts (in an etymology) [31,14](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?31).
   <sub>attested</sub>
 
 **caus-5)** — 5〉 hineinwerfen, so v. a. hineinthun, hineingelangen lassen in (Loc.).
@@ -123,10 +123,10 @@
 - **EN:** — 10〉 *arghatas* to deprive a thing of its price, to ruin the price of a S..
   <sub>attested</sub>
 
-**caus-11)** — 11〉 Jmd zu Etwas (Loc.) verleiten [124,21].
+**caus-11)** — 11〉 Jmd zu Etwas (Loc.) verleiten [124,21](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?124).
 
-- **RU:** 11〉 склонять кого-л. к чему-л. (Loc.) [124,21].
-- **EN:** — 11〉 to seduce, to lead someone into something (Loc.) [124,21].
+- **RU:** 11〉 склонять кого-л. к чему-л. (Loc.) [124,21](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?124).
+- **EN:** — 11〉 to seduce, to lead someone into something (Loc.) [124,21](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?124).
   <sub>attested</sub>
 
 **caus-12)** — 12〉 einführen, in Gang bringen.

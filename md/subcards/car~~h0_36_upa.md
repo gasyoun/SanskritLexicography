@@ -49,7 +49,7 @@
 [13,5284.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.5284) *kṛtrimasaṃvidhābhiḥ*
 [RAGH. 14,17.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?14,17) *snānena bhojanairvastraiḥ*
 [VID. 252.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?252) *mitratvenopacaritasya*
-[DAŚAK.] in [BENF. Chr. 199,21.] *na yuktaṃ bhavatāhamanṛtenopacaritum*
+[DAŚAK.] in [BENF. Chr. 199,21.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?199) *na yuktaṃ bhavatāhamanṛtenopacaritum*
 [MBH. 1,769.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.769) *anṛtenopacīrṇo hi hanyādeva*
 [4,104.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.104) *nikṛtyopacaranvadhyaḥ*
 [3,467.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.467) med. [13,3037.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3037) [3487.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3487) *tairupacaryamāṇā hanyuḥ sametāndhṛtarāṣṭrasutān* unterstützt
@@ -75,7 +75,7 @@
 [13,5284.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.5284) *kṛtrimasaṃvidhābhiḥ*
 [RAGH. 14,17.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?14,17) *snānena bhojanairvastraiḥ*
 [VID. 252.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?252) *mitratvenopacaritasya*
-[DAŚAK.] в [BENF. Chr. 199,21.] *na yuktaṃ bhavatāhamanṛtenopacaritum*
+[DAŚAK.] в [BENF. Chr. 199,21.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?199) *na yuktaṃ bhavatāhamanṛtenopacaritum*
 [MBH. 1,769.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.769) *anṛtenopacīrṇo hi hanyādeva*
 [4,104.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.104) *nikṛtyopacaranvadhyaḥ*
 [3,467.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.467) med. [13,3037.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3037) [3487.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3487) *tairupacaryamāṇā hanyuḥ sametāndhṛtarāṣṭrasutān* поддерживаем
@@ -100,7 +100,7 @@
 [13,5284.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.5284) *kṛtrimasaṃvidhābhiḥ*
 [RAGH. 14,17.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?14,17) *snānena bhojanairvastraiḥ*
 [VID. 252.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?252) *mitratvenopacaritasya*
-[DAŚAK.] in [BENF. Chr. 199,21.] *na yuktaṃ bhavatāhamanṛtenopacaritum*
+[DAŚAK.] in [BENF. Chr. 199,21.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?199) *na yuktaṃ bhavatāhamanṛtenopacaritum*
 [MBH. 1,769.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.769) *anṛtenopacīrṇo hi hanyādeva*
 [4,104.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.104) *nikṛtyopacaranvadhyaḥ*
 [3,467.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.467) med. [13,3037.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3037) [3487.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3487) *tairupacaryamāṇā hanyuḥ sametāndhṛtarāṣṭrasutān* supported

@@ -49,7 +49,7 @@
 [MBH. 3,2811.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2811)
 [R. 1,40,9.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,40,9) [2,82,29](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,82,29) [3,55,52.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,55,52) *ānayiṣyāmi*
 [VET. in LA. 37,10.] — *ānīye*
-[DAŚAK. 85,11] ([BENF. Chr. 195,11]) fehlerhaft für *anīye* .
+[DAŚAK. 85,11] ([BENF. Chr. 195,11](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?195)) fehlerhaft für *anīye* .
 
 - **RU:** — *ā*
  1) привести, — вести, — принести, — нести, — принести, пригласить: *dūrādindramanayannā sutena*
@@ -97,7 +97,7 @@
 [MBH. 3,2811.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2811)
 [R. 1,40,9.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,40,9) [2,82,29](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,82,29) [3,55,52.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,55,52) *ānayiṣyāmi*
 [VET. in LA. 37,10.] — *ānīye*
-[DAŚAK. 85,11] ([BENF. Chr. 195,11]) fehlerhaft für *anīye* .
+[DAŚAK. 85,11] ([BENF. Chr. 195,11](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?195)) fehlerhaft für *anīye* .
 - **EN:** — *ā*
  1) to lead, conduct, bring, carry, fetch hither: *dūrādindramanayannā sutena*
 [ṚV. 7,33,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.033.html#rv07.033.02) [10,109,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.109.html#rv10.109.02) *agnim*
@@ -144,7 +144,7 @@
 [MBH. 3,2811.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2811)
 [R. 1,40,9.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,40,9) [2,82,29](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,82,29) [3,55,52.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,55,52) *ānayiṣyāmi*
 [VET. in LA. 37,10.] — *ānīye*
-[DAŚAK. 85,11] ([BENF. Chr. 195,11]) erroneously for *anīye* .
+[DAŚAK. 85,11] ([BENF. Chr. 195,11](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?195)) erroneously for *anīye* .
   <sub>attested</sub>
 
 **2)** — 2) eingiessen, einmengen: *harirānītaḥ puruvāro apsu*

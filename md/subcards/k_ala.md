@@ -320,13 +320,13 @@ suaveolens Roxb.
 
 **4m-f)** — m) Bein. der Satyavatī, der Gemahlin Śāntanu's und Mutter Kṛṣṇadvaipāyana's
 [TRIK. 2,8,10.](https://sanskrit-lexicon-scans.github.io/medini/app2?2,8,10)
-[LIA. I,629, N. 1.] [MBH. 1,2209.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2209) [4244.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4244) [BENF. Chr. 6,1.] Mutter Vicitravīrya's, mit dessen Gemahlin Kṛṣṇadvaipāyana die drei Kinder Dhṛtarāṣṭra, Pāṇḍu und Vidura zeugt
+[LIA. I,629, N. 1.] [MBH. 1,2209.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2209) [4244.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4244) [BENF. Chr. 6,1.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?6) Mutter Vicitravīrya's, mit dessen Gemahlin Kṛṣṇadvaipāyana die drei Kinder Dhṛtarāṣṭra, Pāṇḍu und Vidura zeugt
 [HARIV. 1825. fg.](https://sanskrit-lexicon-scans.github.io/hariv?1825) Gemahlin Bhīmasena's und Mutter Sarvagata's
 [BHĀG. P. 9,22,30.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,22,30)
 
 - **RU:** — m) Bein. Satyavatī, супруги Śāntanu's и матери Kṛṣṇadvaipāyana's
 [TRIK. 2,8,10.](https://sanskrit-lexicon-scans.github.io/medini/app2?2,8,10)
-[LIA. I,629, N. 1.] [MBH. 1,2209.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2209) [4244.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4244) [BENF. Chr. 6,1.] матери Vicitravīrya's, от брака которой с Kṛṣṇadvaipāyana рождаются трое детей Dhṛtarāṣṭra, Pāṇḍu и Vidura
+[LIA. I,629, N. 1.] [MBH. 1,2209.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2209) [4244.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4244) [BENF. Chr. 6,1.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?6) матери Vicitravīrya's, от брака которой с Kṛṣṇadvaipāyana рождаются трое детей Dhṛtarāṣṭra, Pāṇḍu и Vidura
 [HARIV. 1825. fg.](https://sanskrit-lexicon-scans.github.io/hariv?1825) супруги Bhīmasena's и матери Sarvagata's
 [BHĀG. P. 9,22,30.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,22,30)
   <sub>attested</sub>
@@ -1178,9 +1178,9 @@ Schol. к [AV. PRĀT. 4,123. fg.]
 - **RU:** **2.** *kāla*¦ _m._ (adj. Comp. _f._ *ā* [ṚV. PRĀT. 2,1])
   <sub>lexicographic</sub>
 
-**1)** — 1〉 ein bestimmter oder richtiger Zeitpunct, die zu Etwas (Gen., Dat., Loc., Inf., im Comp. vorangehend oder *Potent. mit *yad*) bestimmte oder geeignete Zeit; Zeit überh. *paraḥ kālaḥ* die höchste Zeit, mit Infin. [77,28].
+**1)** — 1〉 ein bestimmter oder richtiger Zeitpunct, die zu Etwas (Gen., Dat., Loc., Inf., im Comp. vorangehend oder *Potent. mit *yad*) bestimmte oder geeignete Zeit; Zeit überh. *paraḥ kālaḥ* die höchste Zeit, mit Infin. [77,28](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?77).
 
-- **RU:** — 1〉 определённый или надлежащий момент времени, время, определённое или подходящее для чего-л. (Gen., Dat., Loc., Inf., в Comp. предшествующее или *Potent. с *yad*) время überh. *paraḥ kālaḥ* высшее время, с Infin. [77,28].
+- **RU:** — 1〉 определённый или надлежащий момент времени, время, определённое или подходящее для чего-л. (Gen., Dat., Loc., Inf., в Comp. предшествующее или *Potent. с *yad*) время überh. *paraḥ kālaḥ* высшее время, с Infin. [77,28](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?77).
   <sub>attested</sub>
 
 **1a)** — a〉 *kālaṃ kar* eine best. Z. für Etwas (Loc.) festsetzen; vgl. auch u. 12〉.
@@ -1198,9 +1198,9 @@ Schol. к [AV. PRĀT. 4,123. fg.]
 - **RU:** — c〉 *mahāntaṃ kālam* в течение долгого Z..
   <sub>attested</sub>
 
-**1d)** — d〉 *kālena* im Verlauf der Z., mit der Z.; zu einer bestimmten Z. [Spr. 1700. fg.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1700) [2857](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2857). [6900](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?6900) *gacchatā* im Verlauf der Z. [Chr. 107,23]. *dīrgheṇa* eine lange Z. hindurch, nach langer Z. *mahatā* ([41,41]. [52,1]) oder *bahunā* nach Verlauf einer langen Z. *kena cit* nach einiger Z. *tena* zu dieser Z. [76,32].
+**1d)** — d〉 *kālena* im Verlauf der Z., mit der Z.; zu einer bestimmten Z. [Spr. 1700. fg.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1700) [2857](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2857). [6900](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?6900) *gacchatā* im Verlauf der Z. [Chr. 107,23](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?107). *dīrgheṇa* eine lange Z. hindurch, nach langer Z. *mahatā* ([41,41](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?41). [52,1](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?52)) oder *bahunā* nach Verlauf einer langen Z. *kena cit* nach einiger Z. *tena* zu dieser Z. [76,32](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?76).
 
-- **RU:** — d〉 *kālena* в течение Z., со временем; в определённое Z. [Spr. 1700. fg.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1700) [2857](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2857). [6900](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?6900) *gacchatā* в течение Z. [Chr. 107,23]. *dīrgheṇa* в течение долгого Z., спустя долгое Z. *mahatā* ([41,41]. [52,1]) или *bahunā* по истечении долгого Z. *kena cit* спустя некоторое Z. *tena* к этому Z. [76,32].
+- **RU:** — d〉 *kālena* в течение Z., со временем; в определённое Z. [Spr. 1700. fg.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1700) [2857](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2857). [6900](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?6900) *gacchatā* в течение Z. [Chr. 107,23](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?107). *dīrgheṇa* в течение долгого Z., спустя долгое Z. *mahatā* ([41,41](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?41). [52,1](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?52)) или *bahunā* по истечении долгого Z. *kena cit* спустя некоторое Z. *tena* к этому Z. [76,32](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?76).
   <sub>attested</sub>
 
 **1e)** — e〉 *kālāt* und *kālatas* im Verlauf der Z., mit der Z. *kālatas* der Z. nach [ĀPAST.]
@@ -1213,9 +1213,9 @@ Schol. к [AV. PRĀT. 4,123. fg.]
 - **RU:** — f〉 *dīrghasya* или *mahataḥ kālasya* спустя долгое Z. *kasyacit* спустя некоторое Z.
   <sub>attested</sub>
 
-**1g)** — g〉 *kāle* zur rechter Z., zur bestimmten Z., zu gelegener Z.; mit der Z., so v. a. allmählich [Spr. 5168](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?5168). *sva˚* zu seiner Z. *prāpte* wenn die Z. gekommen ist. *gacchati* im Verlauf d. Z. *yāte* nach Verlauf einiger Z. *kasmiṃścit* eines Tages [Chr. 41,19]. *kāle kāle* immer zu seiner Z. [57,26]. [92,15]. *prāpteṣu kāleṣu* wenn die Z. da ist, so v. a. wenn Noth am Manne ist [Spr. 7651](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7651).
+**1g)** — g〉 *kāle* zur rechter Z., zur bestimmten Z., zu gelegener Z.; mit der Z., so v. a. allmählich [Spr. 5168](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?5168). *sva˚* zu seiner Z. *prāpte* wenn die Z. gekommen ist. *gacchati* im Verlauf d. Z. *yāte* nach Verlauf einiger Z. *kasmiṃścit* eines Tages [Chr. 41,19](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?41). *kāle kāle* immer zu seiner Z. [57,26](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?57). [92,15](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?92). *prāpteṣu kāleṣu* wenn die Z. da ist, so v. a. wenn Noth am Manne ist [Spr. 7651](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7651).
 
-- **RU:** — g〉 *kāle* в надлежащее Z., в определённое Z., в удобное Z.; со Z., т. е. v. a. постепенно [Spr. 5168](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?5168). *sva˚* в своё Z. *prāpte* когда наступило Z.. *gacchati* в течение d. Z. *yāte* по истечении некоторого Z. *kasmiṃścit* в один день [Chr. 41,19]. *kāle kāle* всегда в своё Z. [57,26]. [92,15]. *prāpteṣu kāleṣu* когда наступило Z., т. е. v. a. когда есть нужда в человеке [Spr. 7651](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7651).
+- **RU:** — g〉 *kāle* в надлежащее Z., в определённое Z., в удобное Z.; со Z., т. е. v. a. постепенно [Spr. 5168](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?5168). *sva˚* в своё Z. *prāpte* когда наступило Z.. *gacchati* в течение d. Z. *yāte* по истечении некоторого Z. *kasmiṃścit* в один день [Chr. 41,19](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?41). *kāle kāle* всегда в своё Z. [57,26](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?57). [92,15](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?92). *prāpteṣu kāleṣu* когда наступило Z., т. е. v. a. когда есть нужда в человеке [Spr. 7651](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7651).
   <sub>attested</sub>
 
 **1h)** — h〉 *kāla˚* zu rechter Z.; mit der Zeit, allmählich.
@@ -1228,14 +1228,14 @@ Schol. к [AV. PRĀT. 4,123. fg.]
 - **RU:** — 2〉 время, т. е. v. a. случай, повод.
   <sub>attested</sub>
 
-**3)** — 3〉 Jahreszeit [84,5]. [93,15]. [171,9].
+**3)** — 3〉 Jahreszeit [84,5](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?84). [93,15](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?93). [171,9](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?171).
 
-- **RU:** — 3〉 время года [84,5]. [93,15]. [171,9].
+- **RU:** — 3〉 время года [84,5](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?84). [93,15](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?93). [171,9](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?171).
   <sub>attested</sub>
 
-**4)** — 4〉 Essenszeit (deren zwei am Tage). *ubhau kālau* so v. a. Morgens und Abends [MBH. 1,119,33](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?1,119,33). *ṣaṣṭhe kāle* am Abend des dritten Tages [Chr. 107,27]. *pañcaśate kāle* so v. a. nach 250 Tagen [52,5].
+**4)** — 4〉 Essenszeit (deren zwei am Tage). *ubhau kālau* so v. a. Morgens und Abends [MBH. 1,119,33](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?1,119,33). *ṣaṣṭhe kāle* am Abend des dritten Tages [Chr. 107,27](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?107). *pañcaśate kāle* so v. a. nach 250 Tagen [52,5](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?52).
 
-- **RU:** — 4〉 время приёма пищи (их двое в день). *ubhau kālau* т. е. v. a. утром и вечером [MBH. 1,119,33](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?1,119,33). *ṣaṣṭhe kāle* вечером третьего дня [Chr. 107,27]. *pañcaśate kāle* т. е. v. a. спустя 250 дней [52,5].
+- **RU:** — 4〉 время приёма пищи (их двое в день). *ubhau kālau* т. е. v. a. утром и вечером [MBH. 1,119,33](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?1,119,33). *ṣaṣṭhe kāle* вечером третьего дня [Chr. 107,27](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?107). *pañcaśate kāle* т. е. v. a. спустя 250 дней [52,5](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?52).
   <sub>attested</sub>
 
 **5)** — 5〉 Stunde. *ṣaṣṭhe kāle 'hnaḥ* so v. a. um Mittagszeit.
@@ -1248,9 +1248,9 @@ Schol. к [AV. PRĀT. 4,123. fg.]
 - **RU:** — 6〉 век, мировая эпоха.
   <sub>attested</sub>
 
-**7)** — 7〉 Zeitrechnung, Aera. *śaka˚* [218,18]. *śāka˚* [WEBER, JYOT. 101,3].
+**7)** — 7〉 Zeitrechnung, Aera. *śaka˚* [218,18](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?218). *śāka˚* [WEBER, JYOT. 101,3].
 
-- **RU:** — 7〉 летосчисление, эра. *śaka˚* [218,18]. *śāka˚* [WEBER, JYOT. 101,3].
+- **RU:** — 7〉 летосчисление, эра. *śaka˚* [218,18](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?218). *śāka˚* [WEBER, JYOT. 101,3].
   <sub>attested</sub>
 
 **8)** — 8〉 Zeitmaass, Prosodie.

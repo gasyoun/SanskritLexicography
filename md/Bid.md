@@ -515,20 +515,20 @@ P. [YĀJÑ. 2,248.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,
 [Spr. 2526.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2526) *tatastairbhidyate vṛttam* den guten Lebenswandel unterbrechen so v. a. ihn verlassen
 [MBH. 13,7544. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.7544) Vgl. *bhinnavṛtta*.* bhrūbhaṅgabhinnatilaka* so v. a. verwischt
 [MĀLAV. 67.](https://sanskrit-lexicon-scans.github.io/malavikagni/app1?67)
-[DAŚAK.] in [BENF. Chr. 199,5.]
+[DAŚAK.] in [BENF. Chr. 199,5.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?199)
 
 - **RU:** — 5) прерывать, нарушать: *tayordvāḥsthaḥ samayaṃ lakṣmaṇo 'bhinat*
 [RAGH. 15,94.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?15,94) *teṣāṃ na bhinnā mudaḥ*
 [Spr. 2526.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2526) *tatastairbhidyate vṛttam* прерывать добродетельный образ жизни, тем самым v. a. отступать от него
 [MBH. 13,7544. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.7544) Vgl. *bhinnavṛtta*. * bhrūbhaṅgabhinnatilaka*, тем самым v. a. стёрт, изглажен
 [MĀLAV. 67.](https://sanskrit-lexicon-scans.github.io/malavikagni/app1?67)
-[DAŚAK.] в [BENF. Chr. 199,5.]
+[DAŚAK.] в [BENF. Chr. 199,5.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?199)
 - **EN:** — 5) to interrupt, disturb: *tayordvāḥsthaḥ samayaṃ lakṣmaṇo 'bhinat*
 [RAGH. 15,94.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?15,94) *teṣāṃ na bhinnā mudaḥ*
 [Spr. 2526.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2526) *tatastairbhidyate vṛttam* to interrupt virtuous conduct, so v. a. to abandon it
 [MBH. 13,7544. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.7544) Vgl. *bhinnavṛtta*. * bhrūbhaṅgabhinnatilaka* so v. a. obliterated
 [MĀLAV. 67.](https://sanskrit-lexicon-scans.github.io/malavikagni/app1?67)
-[DAŚAK.] in [BENF. Chr. 199,5.]
+[DAŚAK.] in [BENF. Chr. 199,5.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?199)
   <sub>attested</sub>
 
 **6)** — 6) brechen so v. a. verrathen: *bhindantyavamatā mantram*
@@ -538,7 +538,7 @@ P. [YĀJÑ. 2,248.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,
 [R. 4,55,9.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,55,9) *mantravījamidaṃ yatnādrakṣaṇīyaṃ tathā yathā . manāgapi na bhidyeta tadbhinnaṃ na prarohati ..*
 [Spr. 2113.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2113)
 [KĀM. NĪTIS. 11,53.] *na rahasyaṃ bhetsyati*
-[DAŚAK.] in [BENF. Chr. 197,20.]
+[DAŚAK.] in [BENF. Chr. 197,20.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?197)
 
 - **RU:** — 6) нарушать, тем самым v. a. предавать: *bhindantyavamatā mantram*
 [M. 7,150.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,150)
@@ -547,7 +547,7 @@ P. [YĀJÑ. 2,248.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,
 [R. 4,55,9.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,55,9) *mantravījamidaṃ yatnādrakṣaṇīyaṃ tathā yathā . manāgapi na bhidyeta tadbhinnaṃ na prarohati ..*
 [Spr. 2113.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2113)
 [KĀM. NĪTIS. 11,53.] *na rahasyaṃ bhetsyati*
-[DAŚAK.] в [BENF. Chr. 197,20.]
+[DAŚAK.] в [BENF. Chr. 197,20.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?197)
 - **EN:** — 6) to break, so v. a. to betray: *bhindantyavamatā mantram*
 [M. 7,150.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,150)
 [KĀM. NĪTIS. 11,65.] [Spr. 2548.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2548) *ṣaṭkarṇo bhidyate mantraḥ*
@@ -555,7 +555,7 @@ P. [YĀJÑ. 2,248.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,
 [R. 4,55,9.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,55,9) *mantravījamidaṃ yatnādrakṣaṇīyaṃ tathā yathā . manāgapi na bhidyeta tadbhinnaṃ na prarohati ..*
 [Spr. 2113.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2113)
 [KĀM. NĪTIS. 11,53.] *na rahasyaṃ bhetsyati*
-[DAŚAK.] in [BENF. Chr. 197,20.]
+[DAŚAK.] in [BENF. Chr. 197,20.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?197)
   <sub>attested</sub>
 
 **7)** — 7) spalten, theilen so v. a. entzweien: *dūta eva hi saṃdhatte bhinattyeva ca saṃhatān . dūtastatkurute karma bhidyante yena vā na vā ..*
@@ -989,7 +989,7 @@ Sch.
 [MBH. 5,3563.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.3563) hervorbrechen, hervorschiessen, zum Vorschein kommen; act.: *nastaḥ, cakṣuṣṭaḥ, śrotrata udabhinat*
 [ŚAT. BR. 13,4,4,6. fgg.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?13,4,4,6) pass. dass.: *yāvannodbhidyete* (so zu lesen) *stanau*
 [PAIṬHĪNASI] in [DĀYABH. 273,1.] *udbhidyamānaśramajalapulaka*
-[DAŚAK.] in [BENF. Chr. 199,5.] [BHĀG. P. 5,7,11.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,7,11) *tvatsunītipādapasya puṣpamudbhinnamidam*
+[DAŚAK.] in [BENF. Chr. 199,5.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?199) [BHĀG. P. 5,7,11.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,7,11) *tvatsunītipādapasya puṣpamudbhinnamidam*
 [MĀLAV. 10,14.](https://sanskrit-lexicon-scans.github.io/malavikagni/app2?10,14)
 [KATHĀS. 14,27.](https://sanskrit-lexicon-scans.github.io/kss/index.html?14,27)
 [Spr. 3790.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3790) *udbhinnaromapulakaiḥ*
@@ -1015,7 +1015,7 @@ Sch.
 [MBH. 5,3563.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.3563) «прорываться, вырываться, появляться на поверхности»; act.: *nastaḥ, cakṣuṣṭaḥ, śrotrata udabhinat*
 [ŚAT. BR. 13,4,4,6. fgg.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?13,4,4,6) pass. dass.: *yāvannodbhidyete* (так следует читать) *stanau*
 [PAIṬHĪNASI] в [DĀYABH. 273,1.] *udbhidyamānaśramajalapulaka*
-[DAŚAK.] в [BENF. Chr. 199,5.] [BHĀG. P. 5,7,11.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,7,11) *tvatsunītipādapasya puṣpamudbhinnamidam*
+[DAŚAK.] в [BENF. Chr. 199,5.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?199) [BHĀG. P. 5,7,11.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,7,11) *tvatsunītipādapasya puṣpamudbhinnamidam*
 [MĀLAV. 10,14.](https://sanskrit-lexicon-scans.github.io/malavikagni/app2?10,14)
 [KATHĀS. 14,27.](https://sanskrit-lexicon-scans.github.io/kss/index.html?14,27)
 [Spr. 3790.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3790) *udbhinnaromapulakaiḥ*
@@ -1040,7 +1040,7 @@ Sch.
 [MBH. 5,3563.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.3563) to break forth, to shoot out, to come to light; act.: *nastaḥ, cakṣuṣṭaḥ, śrotrata udabhinat*
 [ŚAT. BR. 13,4,4,6. fgg.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?13,4,4,6) pass. dass.: *yāvannodbhidyete* (so to be read) *stanau*
 [PAIṬHĪNASI] in [DĀYABH. 273,1.] *udbhidyamānaśramajalapulaka*
-[DAŚAK.] in [BENF. Chr. 199,5.] [BHĀG. P. 5,7,11.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,7,11) *tvatsunītipādapasya puṣpamudbhinnamidam*
+[DAŚAK.] in [BENF. Chr. 199,5.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?199) [BHĀG. P. 5,7,11.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,7,11) *tvatsunītipādapasya puṣpamudbhinnamidam*
 [MĀLAV. 10,14.](https://sanskrit-lexicon-scans.github.io/malavikagni/app2?10,14)
 [KATHĀS. 14,27.](https://sanskrit-lexicon-scans.github.io/kss/index.html?14,27)
 [Spr. 3790.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3790) *udbhinnaromapulakaiḥ*
@@ -1126,7 +1126,7 @@ Sch.
 [MBH. 1,6790.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6790) *nārāyaṇoruṃ nirbhidya*
 [HARIV. 4601.](https://sanskrit-lexicon-scans.github.io/hariv?4601)
 [PRAB. 116,2.]
-[DAŚAK.] in [BENF. Chr. 201,1.] *snehaprasravanirbhinnamudvahantī stanāṃśukam* (so die v. l.)
+[DAŚAK.] in [BENF. Chr. 201,1.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?201) *snehaprasravanirbhinnamudvahantī stanāṃśukam* (so die v. l.)
 [VIKR. 150.](https://sanskrit-lexicon-scans.github.io/vikramor/app1?150) *nirbhidyopari karṇikārakusumānyāśerate ṣaṭpadāḥ*
 [41.](https://sanskrit-lexicon-scans.github.io/vikramor/app1?41) *ekaikaṃ yojanaṃ bhūmernirbhindantaḥ*
 [R. 1,40,15](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,40,15) ([41,16](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,41,16) [GORR.]). *(vyāghragaṇān) nirvibheda ca sāyakaiḥ*
@@ -1163,7 +1163,7 @@ Sch.
 [MBH. 1,6790.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6790) *nārāyaṇoruṃ nirbhidya*
 [HARIV. 4601.](https://sanskrit-lexicon-scans.github.io/hariv?4601)
 [PRAB. 116,2.]
-[DAŚAK.] в [BENF. Chr. 201,1.] *snehaprasravanirbhinnamudvahantī stanāṃśukam* (так v. l.)
+[DAŚAK.] в [BENF. Chr. 201,1.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?201) *snehaprasravanirbhinnamudvahantī stanāṃśukam* (так v. l.)
 [VIKR. 150.](https://sanskrit-lexicon-scans.github.io/vikramor/app1?150) *nirbhidyopari karṇikārakusumānyāśerate ṣaṭpadāḥ*
 [41.](https://sanskrit-lexicon-scans.github.io/vikramor/app1?41) *ekaikaṃ yojanaṃ bhūmernirbhindantaḥ*
 [R. 1,40,15](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,40,15) ([41,16](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,41,16) [GORR.]). *(vyāghragaṇān) nirvibheda ca sāyakaiḥ*
@@ -1200,7 +1200,7 @@ Sch.
 [MBH. 1,6790.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6790) *nārāyaṇoruṃ nirbhidya*
 [HARIV. 4601.](https://sanskrit-lexicon-scans.github.io/hariv?4601)
 [PRAB. 116,2.]
-[DAŚAK.] in [BENF. Chr. 201,1.] *snehaprasravanirbhinnamudvahantī stanāṃśukam* (so the v. l.)
+[DAŚAK.] in [BENF. Chr. 201,1.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?201) *snehaprasravanirbhinnamudvahantī stanāṃśukam* (so the v. l.)
 [VIKR. 150.](https://sanskrit-lexicon-scans.github.io/vikramor/app1?150) *nirbhidyopari karṇikārakusumānyāśerate ṣaṭpadāḥ*
 [41.](https://sanskrit-lexicon-scans.github.io/vikramor/app1?41) *ekaikaṃ yojanaṃ bhūmernirbhindantaḥ*
 [R. 1,40,15](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,40,15) ([41,16](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,41,16) [GORR.]). *(vyāghragaṇān) nirvibheda ca sāyakaiḥ*
@@ -1251,21 +1251,21 @@ Sch.
   <sub>attested</sub>
 
 **4)** — 4) verrathen: *nirbhinnaprāyaṃ rahasyam*
-[DAŚAK.] in [BENF. Chr. 193,8.]
+[DAŚAK.] in [BENF. Chr. 193,8.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?193)
 
 - **RU:** — 4) «предавать, выдавать»: *nirbhinnaprāyaṃ rahasyam*
-[DAŚAK.] в [BENF. Chr. 193,8.]
+[DAŚAK.] в [BENF. Chr. 193,8.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?193)
 - **EN:** — 4) to betray: *nirbhinnaprāyaṃ rahasyam*
-[DAŚAK.] in [BENF. Chr. 193,8.]
+[DAŚAK.] in [BENF. Chr. 193,8.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?193)
   <sub>attested</sub>
 
 **5)** — 5) hinter Etwas kommen: *kāntakāpacāraṃ nirbhidya*
-[DAŚAK.] in [BENF. Chr. 200,20.]
+[DAŚAK.] in [BENF. Chr. 200,20.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?200)
 
 - **RU:** — 5) «дознаться, проникнуть в суть чего-либо»: *kāntakāpacāraṃ nirbhidya*
-[DAŚAK.] в [BENF. Chr. 200,20.]
+[DAŚAK.] в [BENF. Chr. 200,20.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?200)
 - **EN:** — 5) to get to the bottom of something: *kāntakāpacāraṃ nirbhidya*
-[DAŚAK.] in [BENF. Chr. 200,20.]
+[DAŚAK.] in [BENF. Chr. 200,20.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?200)
   <sub>attested</sub>
 
 **nom)** — Vgl. *nirbheda* fg.
@@ -1564,12 +1564,12 @@ Sch.
   <sub>attested</sub>
 
 **2)** — 2) verrathen: *apratibhidya rahasyam*
-[DAŚAK.] in [BENF. Chr. 199,21.]
+[DAŚAK.] in [BENF. Chr. 199,21.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?199)
 
 - **RU:** — 2) предавать: *apratibhidya rahasyam*
-[DAŚAK.] in [BENF. Chr. 199,21.]
+[DAŚAK.] in [BENF. Chr. 199,21.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?199)
 - **EN:** — 2) to betray: *apratibhidya rahasyam*
-[DAŚAK.] in [BENF. Chr. 199,21.]
+[DAŚAK.] in [BENF. Chr. 199,21.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?199)
   <sub>attested</sub>
 
 **3)** — 3) seinen Unwillen gegen Jmd (acc.) an den Tag legen
@@ -2146,9 +2146,9 @@ Sch. *iṅgudīphala˚ (upala)* breaking, crushing
 - **RU:** 1〉 расщеплять, взламывать, пробивать отверстие в чём-либо, прокалывать, прорывать, взрывать, разрывать, разрезать. *setum*, *maryādām*, *sthitim*, *velām* прорывать плотину, преграды, берег. Планета или комета «прорывает» звезду, когда проходит сквозь неё. Pass. *bhidyate*, *˚ti* (метрически, но также у [BAUDH.] в [Comm. zu ĀPAST. ŚR. 5,29,12]; *bhindatām* [MBH. 6,4125](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.4125) ошибочно вместо *bhidyatām*), также в intransit. Bed. трескаться, лопаться. *bhinna* разбитый, сломанный u. s. w.
   <sub>attested</sub>
 
-**2)** — 2〉 brechen in übertr. Bed. so v. a. vertreiben, verschwinden —, zu Nichte machen; Pass. zu Nichte werden. *bhinna* zu Nichte gemacht [104,27].
+**2)** — 2〉 brechen in übertr. Bed. so v. a. vertreiben, verschwinden —, zu Nichte machen; Pass. zu Nichte werden. *bhinna* zu Nichte gemacht [104,27](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?104).
 
-- **RU:** 2〉 разрушать, в übertr. Bed., то есть v. a. изгонять, рассеивать, уничтожать; Pass. быть уничтоженным. *bhinna* уничтоженный [104,27].
+- **RU:** 2〉 разрушать, в übertr. Bed., то есть v. a. изгонять, рассеивать, уничтожать; Pass. быть уничтоженным. *bhinna* уничтоженный [104,27](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?104).
   <sub>attested</sub>
 
 **3)** — 3〉 spalten, so v. a. theilen; Pass. getheilt werden, sich theilen. *bhinna* getheilt auch so v. a. nicht ganz, weniger als ein.

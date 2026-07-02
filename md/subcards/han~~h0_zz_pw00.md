@@ -81,10 +81,10 @@
 - **EN:** — 12〉 to hinder, prevent.
   <sub>attested</sub>
 
-**13)** — 13〉 an sich unterdrücken, aufgeben, fahren lassen [60,13].
+**13)** — 13〉 an sich unterdrücken, aufgeben, fahren lassen [60,13](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?60).
 
-- **RU:** — 13〉 подавлять в себе, отказываться от, оставлять [60,13].
-- **EN:** — 13〉 to suppress within oneself, give up, let go [60,13].
+- **RU:** — 13〉 подавлять в себе, отказываться от, оставлять [60,13](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?60).
+- **EN:** — 13〉 to suppress within oneself, give up, let go [60,13](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?60).
   <sub>attested</sub>
 
 **14)** — 14〉 *hata*
@@ -141,10 +141,10 @@
 - **EN:** — h〉 _f._ so v. a. fututa.
   <sub>attested</sub>
 
-**14i)** — i〉 verletzt (auch in übertragener Bed.) [127,28]. [59,22].
+**14i)** — i〉 verletzt (auch in übertragener Bed.) [127,28](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?127). [59,22](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?59).
 
-- **RU:** — i〉 раненый, задетый (также в переносном Bed.) [127,28]. [59,22].
-- **EN:** — i〉 injured (also in a transferred Bed.) [127,28]. [59,22].
+- **RU:** — i〉 раненый, задетый (также в переносном Bed.) [127,28](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?127). [59,22](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?59).
+- **EN:** — i〉 injured (also in a transferred Bed.) [127,28](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?127). [59,22](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?59).
   <sub>attested</sub>
 
 **14k)** — k〉 vernichtet, zu Grunde gerichtet, dahin (insbes. am Anfange eines adj. Comp.); verloren von Personen, so v. a. an Allem verzweifelnd.
@@ -171,10 +171,10 @@
 - **EN:** — n〉 worthless, accursed [HARṢAC. 157,18]. **brāhmaṇihatā* (sic!) a worthless Brahmin woman.
   <sub>attested</sub>
 
-**14o)** — o〉 betroffen, hintergangen [177,20].
+**14o)** — o〉 betroffen, hintergangen [177,20](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?177).
 
-- **RU:** — o〉 обманутый, введённый в заблуждение [177,20].
-- **EN:** — o〉 struck, deceived [177,20].
+- **RU:** — o〉 обманутый, введённый в заблуждение [177,20](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?177).
+- **EN:** — o〉 struck, deceived [177,20](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?177).
   <sub>attested</sub>
 
 **14p)** — p〉 gekommen um (_Adv._ auf *tas*). *dṛṣṭi˚* dem Anblick entzogen.
@@ -315,10 +315,10 @@
 - **EN:** — With *apa*
   <sub>attested</sub>
 
-**apa2.1)** — 1〉 wegschlagen, wegstossen; abtreiben, abwehren, verscheuchend, vertreiben. Häufig Med. (von sich abstossen u. s. w.) [21,10]. [12]. [21].
+**apa2.1)** — 1〉 wegschlagen, wegstossen; abtreiben, abwehren, verscheuchend, vertreiben. Häufig Med. (von sich abstossen u. s. w.) [21,10](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?21). [12](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?21). [21](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?21).
 
-- **RU:** — 1〉 отгонять ударом, отталкивать; отгонять, отражать, отпугивать, изгонять. Часто Med. (отстранять от себя u. s. w.) [21,10]. [12]. [21].
-- **EN:** — 1〉 to strike away, push away; to drive off, ward off, drive away, expel. Frequently Med. (to push away from oneself u. s. w.) [21,10]. [12]. [21].
+- **RU:** — 1〉 отгонять ударом, отталкивать; отгонять, отражать, отпугивать, изгонять. Часто Med. (отстранять от себя u. s. w.) [21,10](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?21). [12](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?21). [21](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?21).
+- **EN:** — 1〉 to strike away, push away; to drive off, ward off, drive away, expel. Frequently Med. (to push away from oneself u. s. w.) [21,10](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?21). [12](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?21). [21](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?21).
   <sub>attested</sub>
 
 **apa2.2)** — 2〉 ausschlagen, aushülsen (Korn).
@@ -345,10 +345,10 @@
 - **EN:** — a〉 cut off (head), knocked out (eye).
   <sub>attested</sub>
 
-**apa2.4b)** — b〉 weggeschlagen, abgetrieben, verscheucht, vertrieben [21,20].
+**apa2.4b)** — b〉 weggeschlagen, abgetrieben, verscheucht, vertrieben [21,20](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?21).
 
-- **RU:** — b〉 отогнанный, изгнанный, отпуганный, прогнанный [21,20].
-- **EN:** — b〉 struck away, driven off, chased away, expelled [21,20].
+- **RU:** — b〉 отогнанный, изгнанный, отпуганный, прогнанный [21,20](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?21).
+- **EN:** — b〉 struck away, driven off, chased away, expelled [21,20](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?21).
   <sub>attested</sub>
 
 **apa2.4c)** — c〉 ausgeschossen (als werthlos).
@@ -423,10 +423,10 @@
 - **EN:** — 2〉 to fell, slay.
   <sub>attested</sub>
 
-**aabhi.3)** — 3〉 eine Trommel schlagen ([291,24]), eine Muschel ertönen lassen.
+**aabhi.3)** — 3〉 eine Trommel schlagen ([291,24](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?291)), eine Muschel ertönen lassen.
 
-- **RU:** — 3〉 бить в барабан ([291,24]), заставлять звучать раковину.
-- **EN:** — 3〉 to beat a drum ([291,24]), to sound a conch.
+- **RU:** — 3〉 бить в барабан ([291,24](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?291)), заставлять звучать раковину.
+- **EN:** — 3〉 to beat a drum ([291,24](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?291)), to sound a conch.
   <sub>attested</sub>
 
 **aabhi.4)** — 4〉 Pass. befallen —, heimgesucht werden von (Instr.).

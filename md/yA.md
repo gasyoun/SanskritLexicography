@@ -1023,12 +1023,12 @@ to the ruin of
   <sub>attested</sub>
 
 **caus-4)** — 4) *yāpitāyāḥ*
-[DAŚAK. 83,9] ([BENF. Chr. 194,4]) wohl fehlerhaft für *pāyitāyāḥ* (caus. von 1. *pā*).
+[DAŚAK. 83,9] ([BENF. Chr. 194,4](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?194)) wohl fehlerhaft für *pāyitāyāḥ* (caus. von 1. *pā*).
 
 - **RU:** — 4) *yāpitāyāḥ*
-[DAŚAK. 83,9] ([BENF. Chr. 194,4]) вероятно, ошибочно вместо *pāyitāyāḥ* (caus. от 1. *pā*).
+[DAŚAK. 83,9] ([BENF. Chr. 194,4](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?194)) вероятно, ошибочно вместо *pāyitāyāḥ* (caus. от 1. *pā*).
 - **EN:** — 4) *yāpitāyāḥ*
-[DAŚAK. 83,9] ([BENF. Chr. 194,4]) probably erroneous for *pāyitāyāḥ* (caus. of 1. *pā*).
+[DAŚAK. 83,9] ([BENF. Chr. 194,4](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?194)) probably erroneous for *pāyitāyāḥ* (caus. of 1. *pā*).
 — Vgl. *yāpaka* fgg.
   <sub>attested</sub>
 
@@ -1285,7 +1285,7 @@ to the ruin of
 [RAGH. 12,104.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?12,104) [14,29.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?14,29)
 [KATHĀS. 10,208.](https://sanskrit-lexicon-scans.github.io/kss/index.html?10,208) [14,11.](https://sanskrit-lexicon-scans.github.io/kss/index.html?14,11) [18,11.](https://sanskrit-lexicon-scans.github.io/kss/index.html?18,11) [46,248.](https://sanskrit-lexicon-scans.github.io/kss/index.html?46,248)
 [RĀJA-TAR. 5,358.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,358) *lokalocanamānasānuyātā prātiṣṭhata*
-[DAŚAK.] in [BENF. Chr. 190,17.] *kaphānuyāta*
+[DAŚAK.] in [BENF. Chr. 190,17.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?190) *kaphānuyāta*
 [SUŚR. 2,361,15.] *bhartāramanuyā* so v. a. dem Gatten im Tode folgen, sich mit ihm verbrennen lassen
 [Spr. 3485.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3485)
 [RĀJA-TAR. 5,225.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,225) *bhartāramanuyātā*
@@ -1328,7 +1328,7 @@ to the ruin of
 [RAGH. 12,104.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?12,104) [14,29.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?14,29)
 [KATHĀS. 10,208.](https://sanskrit-lexicon-scans.github.io/kss/index.html?10,208) [14,11.](https://sanskrit-lexicon-scans.github.io/kss/index.html?14,11) [18,11.](https://sanskrit-lexicon-scans.github.io/kss/index.html?18,11) [46,248.](https://sanskrit-lexicon-scans.github.io/kss/index.html?46,248)
 [RĀJA-TAR. 5,358.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,358) *lokalocanamānasānuyātā prātiṣṭhata*
-[DAŚAK.] в [BENF. Chr. 190,17.] *kaphānuyāta*
+[DAŚAK.] в [BENF. Chr. 190,17.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?190) *kaphānuyāta*
 [SUŚR. 2,361,15.] *bhartāramanuyā* так v. a. последовать за мужем в смерть, дать себя сжечь вместе с ним
 [Spr. 3485.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3485)
 [RĀJA-TAR. 5,225.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,225) *bhartāramanuyātā*
@@ -1370,7 +1370,7 @@ to the ruin of
 [RAGH. 12,104.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?12,104) [14,29.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?14,29)
 [KATHĀS. 10,208.](https://sanskrit-lexicon-scans.github.io/kss/index.html?10,208) [14,11.](https://sanskrit-lexicon-scans.github.io/kss/index.html?14,11) [18,11.](https://sanskrit-lexicon-scans.github.io/kss/index.html?18,11) [46,248.](https://sanskrit-lexicon-scans.github.io/kss/index.html?46,248)
 [RĀJA-TAR. 5,358.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,358) *lokalocanamānasānuyātā prātiṣṭhata*
-[DAŚAK.] in [BENF. Chr. 190,17.] *kaphānuyāta*
+[DAŚAK.] in [BENF. Chr. 190,17.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?190) *kaphānuyāta*
 [SUŚR. 2,361,15.] *bhartāramanuyā* so v. a. to follow one's husband in death, to have oneself burned with him
 [Spr. 3485.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3485)
 [RĀJA-TAR. 5,225.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,225) *bhartāramanuyātā*
@@ -3571,7 +3571,7 @@ Schol. zu [P.]), wo übrigens *prapai* zu vermuthen ist. *tataḥ sarve tathetyu
 [RĀJA-TAR. 5,292.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,292)
 [BHĀG. P. 1,13,28.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,13,28) [4,3,12.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,3,12)
 [MĀRK. P. 61,29.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?61,29)
-[DAŚAK.] in [BENF. Chr. 187,15.] [PAÑCAT. 221,12.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?221,12)
+[DAŚAK.] in [BENF. Chr. 187,15.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?187) [PAÑCAT. 221,12.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?221,12)
 
 *rathamāruhya — prayayau javanairhayaiḥ*
 [MBH. 3,2848.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2848) *tataḥ prāyāmahaṃ tena syandanena*
@@ -3652,7 +3652,7 @@ Schol. zu [P.]), wo übrigens *prapai* zu vermuthen ist. *tataḥ sarve tathetyu
 [RĀJA-TAR. 5,292.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,292)
 [BHĀG. P. 1,13,28.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,13,28) [4,3,12.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,3,12)
 [MĀRK. P. 61,29.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?61,29)
-[DAŚAK.] in [BENF. Chr. 187,15.] [PAÑCAT. 221,12.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?221,12)
+[DAŚAK.] in [BENF. Chr. 187,15.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?187) [PAÑCAT. 221,12.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?221,12)
 
 *rathamāruhya — prayayau javanairhayaiḥ*
 [MBH. 3,2848.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2848) *tataḥ prāyāmahaṃ tena syandanena*
@@ -3732,7 +3732,7 @@ Schol. for [P.]), where moreover *prapai* is to be conjectured. *tataḥ sarve t
 [RĀJA-TAR. 5,292.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,292)
 [BHĀG. P. 1,13,28.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,13,28) [4,3,12.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,3,12)
 [MĀRK. P. 61,29.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?61,29)
-[DAŚAK.] in [BENF. Chr. 187,15.] [PAÑCAT. 221,12.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?221,12)
+[DAŚAK.] in [BENF. Chr. 187,15.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?187) [PAÑCAT. 221,12.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?221,12)
 
 *rathamāruhya — prayayau javanairhayaiḥ*
 [MBH. 3,2848.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2848) *tataḥ prāyāmahaṃ tena syandanena*
@@ -4244,7 +4244,7 @@ heimkehren, wiederkehren
 [MBH. 3,1712.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1712) [5,7493.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7493) [7518.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7518)
 [HARIV. 3958.](https://sanskrit-lexicon-scans.github.io/hariv?3958)
 [R. 1,66,6.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,66,6) [3,4,36](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,4,36) [11,17.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,11,17) *tvaṃ na jīvanpratiyāsyasi*
-[59,10.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,59,10) [6,12,13.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,12,13) [7,18,13.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,18,13) [RAGH. 5,18.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?5,18) [DAŚAK.] in [BENF. Chr. 181,17.] *antikamasya guroḥ*
+[59,10.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,59,10) [6,12,13.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,12,13) [7,18,13.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,18,13) [RAGH. 5,18.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?5,18) [DAŚAK.] in [BENF. Chr. 181,17.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?181) *antikamasya guroḥ*
 [RAGH. 8,90.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?8,90) *purīmimām*
 [MBH. 1,6780.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6780) [5,6081.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.6081) [16,171.](https://sanskrit-lexicon-scans.github.io/mbhcalc?16.171)
 [R. 2,52,37](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,52,37) ([51,3](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,51,3) [GORR.]). [5,53,27.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,53,27) [73,50.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,73,50) *gṛhān*
@@ -4266,7 +4266,7 @@ heimkehren, wiederkehren
 [MBH. 3,1712.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1712) [5,7493.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7493) [7518.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7518)
 [HARIV. 3958.](https://sanskrit-lexicon-scans.github.io/hariv?3958)
 [R. 1,66,6.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,66,6) [3,4,36](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,4,36) [11,17.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,11,17) *tvaṃ na jīvanpratiyāsyasi*
-[59,10.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,59,10) [6,12,13.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,12,13) [7,18,13.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,18,13) [RAGH. 5,18.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?5,18) [DAŚAK.] in [BENF. Chr. 181,17.] *antikamasya guroḥ*
+[59,10.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,59,10) [6,12,13.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,12,13) [7,18,13.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,18,13) [RAGH. 5,18.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?5,18) [DAŚAK.] in [BENF. Chr. 181,17.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?181) *antikamasya guroḥ*
 [RAGH. 8,90.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?8,90) *purīmimām*
 [MBH. 1,6780.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6780) [5,6081.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.6081) [16,171.](https://sanskrit-lexicon-scans.github.io/mbhcalc?16.171)
 [R. 2,52,37](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,52,37) ([51,3](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,51,3) [GORR.]). [5,53,27.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,53,27) [73,50.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,73,50) *gṛhān*
@@ -4287,7 +4287,7 @@ heimkehren, wiederkehren
 [MBH. 3,1712.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1712) [5,7493.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7493) [7518.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7518)
 [HARIV. 3958.](https://sanskrit-lexicon-scans.github.io/hariv?3958)
 [R. 1,66,6.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,66,6) [3,4,36](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,4,36) [11,17.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,11,17) *tvaṃ na jīvanpratiyāsyasi*
-[59,10.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,59,10) [6,12,13.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,12,13) [7,18,13.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,18,13) [RAGH. 5,18.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?5,18) [DAŚAK.] in [BENF. Chr. 181,17.] *antikamasya guroḥ*
+[59,10.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,59,10) [6,12,13.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,12,13) [7,18,13.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,18,13) [RAGH. 5,18.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?5,18) [DAŚAK.] in [BENF. Chr. 181,17.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?181) *antikamasya guroḥ*
 [RAGH. 8,90.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?8,90) *purīmimām*
 [MBH. 1,6780.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6780) [5,6081.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.6081) [16,171.](https://sanskrit-lexicon-scans.github.io/mbhcalc?16.171)
 [R. 2,52,37](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,52,37) ([51,3](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,51,3) [GORR.]). [5,53,27.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,53,27) [73,50.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,73,50) *gṛhān*
@@ -4748,8 +4748,8 @@ Z. 4 read 3, 31, 19 st. 3, 31, 9.
 **2)** — 2〉 verstreichen, vergehen, verlaufen, verfliessen. *yāta* verstrichen, zu Ende gegangen.
 - **EN:** — 2〉 "to elapse, pass, run its course, go by" (of time). *yāta* "elapsed, come to an end".
 
-**3)** — 3〉 hingehen, so v. a. zu Grunde gehen, zu Nichte werden [186,7]. *yāta* zu Grunde gegangen.
-- **EN:** — 3〉 "to pass away," so v. a. "to perish, come to naught" [186,7]. *yāta* "perished".
+**3)** — 3〉 hingehen, so v. a. zu Grunde gehen, zu Nichte werden [186,7](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?186). *yāta* zu Grunde gegangen.
+- **EN:** — 3〉 "to pass away," so v. a. "to perish, come to naught" [186,7](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?186). *yāta* "perished".
 
 **4)** — 4〉 gehen, so v. a. von Statten gehen, gelingen, zu Stande kommen. *na yānti vaktum* so v. a. lassen sich nicht ausdrücken [Ind. St. 14,379].
 - **EN:** — 4〉 "to go," so v. a. "to proceed, succeed, come about". *na yānti vaktum* so v. a. "cannot be expressed" [Ind. St. 14,379].
@@ -4786,8 +4786,8 @@ Z. 4 read 3, 31, 19 st. 3, 31, 9.
 **8)** — 8〉 mit *prati* und Acc. in der Richtung von — sich bewegen, marschiren gegen.
 - **EN:** — 8〉 with *prati* and Acc. "to move in the direction of, to march against".
 
-**9)** — 9〉 mit Loc. gehen in, nach oder zu, gelangen zu, sich wenden zu (auch vom Geiste). *yāta* gegangen —, gelangt in oder zu. *kare* in die Hand gelangt; *yātaṃ mayā pādayoḥ* so v. a. ich habe mich (ihr) zu Füssen geworfen [316,31]. *kva tadyātam* so v. a. was ist daraus geworden? wie steht es damit?
-- **EN:** — 9〉 with Loc. "to go into, after" or "to, to arrive at, to turn to" (also of the mind). *yāta* "gone —, arrived in or at". *kare* "come into the hand;" *yātaṃ mayā pādayoḥ* so v. a. "I have thrown myself" (at her) "feet" [316,31]. *kva tadyātam* so v. a. "what has become of it? how does it stand?"
+**9)** — 9〉 mit Loc. gehen in, nach oder zu, gelangen zu, sich wenden zu (auch vom Geiste). *yāta* gegangen —, gelangt in oder zu. *kare* in die Hand gelangt; *yātaṃ mayā pādayoḥ* so v. a. ich habe mich (ihr) zu Füssen geworfen [316,31](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?316). *kva tadyātam* so v. a. was ist daraus geworden? wie steht es damit?
+- **EN:** — 9〉 with Loc. "to go into, after" or "to, to arrive at, to turn to" (also of the mind). *yāta* "gone —, arrived in or at". *kare* "come into the hand;" *yātaṃ mayā pādayoḥ* so v. a. "I have thrown myself" (at her) "feet" [316,31](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?316). *kva tadyātam* so v. a. "what has become of it? how does it stand?"
 
 **10)** — 10〉 mit Dat. hingehen zu, nach (**phalebhyaḥ* nach Früchten gehen), um zu (Nom. act.); Jmd zu Gute kommen.
 - **EN:** — 10〉 with Dat. "to go to, after" (**phalebhyaḥ* "to go after fruits"), "in order to" (Nom. act.); "to redound to someone's benefit".
@@ -4802,9 +4802,9 @@ Z. 4 read 3, 31, 19 st. 3, 31, 9.
 - **EN:** — 13〉 *yāta* sometimes erroneously for *jāta*.
 
 **caus1)** — Caus. *yāpayati*
-— 1〉 Jmd gehen heissen, aufbrechen lassen, — nach (*Acc. [225,24]), zu einem Marsche veranlassen; entlassen.
+— 1〉 Jmd gehen heissen, aufbrechen lassen, — nach (*Acc. [225,24](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?225)), zu einem Marsche veranlassen; entlassen.
 - **EN:** — Caus. *yāpayati*
-— 1〉 "to bid someone go, to let set out — for" (*Acc. [225,24]), "to prompt to a march; to dismiss".
+— 1〉 "to bid someone go, to let set out — for" (*Acc. [225,24](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?225)), "to prompt to a march; to dismiss".
 
 **caus2)** — 2〉 *dṛṣṭim* den Blick gehen lassen, — richten auf (Loc.).
 - **EN:** — 2〉 *dṛṣṭim* "to let one's gaze go, — direct it towards" (Loc.).
@@ -4904,8 +4904,8 @@ Z. 4 read 3, 31, 19 st. 3, 31, 9.
 **preverb_upa_apa2)** — 2〉 verstreichen.
 - **EN:** — 2〉 "to elapse".
 
-**preverb_misc1)** — Mit *api* [AV. 4,37,7](https://sanskrit-lexicon.github.io/avlinks/avhymns/av04.037.html#av04.037.07) fehlerhaft. [Chr. 104,5] ist ist *api yānti* zu trennen.
-- **EN:** — With *api* [AV. 4,37,7](https://sanskrit-lexicon.github.io/avlinks/avhymns/av04.037.html#av04.037.07) erroneous. [Chr. 104,5] is to be separated as *api yānti*.
+**preverb_misc1)** — Mit *api* [AV. 4,37,7](https://sanskrit-lexicon.github.io/avlinks/avhymns/av04.037.html#av04.037.07) fehlerhaft. [Chr. 104,5](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?104) ist ist *api yānti* zu trennen.
+- **EN:** — With *api* [AV. 4,37,7](https://sanskrit-lexicon.github.io/avlinks/avhymns/av04.037.html#av04.037.07) erroneous. [Chr. 104,5](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?104) is to be separated as *api yānti*.
 
 **preverb_a1)** — Mit *abhi*
 — 1〉 adire, zugehen auf, hingehen —, treten —, kommen —, sich hinbegeben zu, sich drohend wenden gegen, begegnen; mit Acc. *svargam* zum Himmel gegen, so v. a. sterben. *abhiyāta* mit act. und pass. Bed. Ohne Object herbeikommen, einen Angriff machen. *abhiyāta* herbeigekommen.
@@ -4942,10 +4942,10 @@ Z. 4 read 3, 31, 19 st. 3, 31, 9.
 - **EN:** — 3〉 "to beg off, to avert".
 
 **preverb_aa1)** — Mit *ā*
-— 1〉 herbei-, herankommen, — aus (Abl.), kommen nach, in oder zu (Acc., ausnahmsweise Loc.); auch mit *accha*, *saṃmukham* entgegenkommen; *abhimukhāyāta* entgegengekommen [133,9]. *astam* untergehen und sterben; *karṇapatham* zu Ohren kommen.
+— 1〉 herbei-, herankommen, — aus (Abl.), kommen nach, in oder zu (Acc., ausnahmsweise Loc.); auch mit *accha*, *saṃmukham* entgegenkommen; *abhimukhāyāta* entgegengekommen [133,9](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?133). *astam* untergehen und sterben; *karṇapatham* zu Ohren kommen.
 Mit *punar* wiederkommen und wiedergeboren werden. *āyāta* mit act. Bed.; auch _n._ impers. mit Instr. des Subjects.
 - **EN:** — With *ā*
-— 1〉 "to come hither —, to draw near, — from" (Abl.), "to come after, into" or "to" (Acc., exceptionally Loc.); also with *accha*, *saṃmukham* "to come to meet;" *abhimukhāyāta* "having come to meet" [133,9]. *astam* "to go down and die;" *karṇapatham* "to come to one's ears".
+— 1〉 "to come hither —, to draw near, — from" (Abl.), "to come after, into" or "to" (Acc., exceptionally Loc.); also with *accha*, *saṃmukham* "to come to meet;" *abhimukhāyāta* "having come to meet" [133,9](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?133). *astam* "to go down and die;" *karṇapatham* "to come to one's ears".
 With *punar* "to come again" and "to be reborn". *āyāta* with act. Bed.; also _n._ impers. with Instr. of the subject.
 
 **preverb_aa2)** — 2〉 eingehen —, aufgehen in (Acc.).
@@ -5009,8 +5009,8 @@ With *punar* "to come again" and "to be reborn". *āyāta* with act. Bed.; also 
 - **EN:** — With *pratyā*
 — 1〉 "to come back, return, — to" (Acc.).
 
-**preverb_prati2)** — 2〉 entgegengehen [321,5].
-- **EN:** — 2〉 "to go to meet" [321,5].
+**preverb_prati2)** — 2〉 entgegengehen [321,5](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?321).
+- **EN:** — 2〉 "to go to meet" [321,5](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?321).
 
 **preverb_sam1)** — Mit *samā*
 — 1〉 zusammen herbeikommen, zusammenkommen (auch von Wegen), hinzukommen, herantreten, kommen (auch von der Zeit), herangeflogen kommen (von einem Geschoss), aufziehen (von Wolken), hervorkommen aus (Abl.), kommen von (Abl.), nach oder zu (Acc.; auch mit Loc. des Ortes), hingehen nach (Acc.), zugehen auf (Acc.) *samāyāta* mit act. Bed.
@@ -5139,10 +5139,10 @@ With *punar* "to come again" and "to be reborn". *āyāta* with act. Bed.; also 
 - **EN:** 5) to come into a state —, into a position —, into a relation; to fall into; to become partaker of, obtain, find; with Acc. *upayāta* with act. Bed.
   <sub>attested</sub>
 
-**upa6)** — 6〉 sich hingehen, fröhnen; mit Acc. [104,33].
+**upa6)** — 6〉 sich hingehen, fröhnen; mit Acc. [104,33](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?104).
 
-- **RU:** — 6〉 предаваться, отдаваться; с Acc. [104,33].
-- **EN:** 6) to give oneself over to, indulge in; with Acc. [104,33].
+- **RU:** — 6〉 предаваться, отдаваться; с Acc. [104,33](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?104).
+- **EN:** 6) to give oneself over to, indulge in; with Acc. [104,33](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?104).
   <sub>attested</sub>
 
 **abhyupa-intro)** — Mit *abhyupa*
@@ -5169,10 +5169,10 @@ With *punar* "to come again" and "to be reborn". *āyāta* with act. Bed.; also 
 - **EN:** — With *upopa*, to reach, — to enter upon (a time); with Acc. *upopayāta* with act. Bed.
   <sub>attested</sub>
 
-**prati2)** — Mit *pratyupa* zurückkehren, — nach oder in; mit Acc. und *prati* ([78,32]) oder mit Loc.
+**prati2)** — Mit *pratyupa* zurückkehren, — nach oder in; mit Acc. und *prati* ([78,32](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?78)) oder mit Loc.
 
-- **RU:** — С *pratyupa* возвращаться, — к или в; с Acc. и *prati* ([78,32]) или с Loc.
-- **EN:** — With *pratyupa*, to return, — to or into; with Acc. and *prati* ([78,32]) or with Loc.
+- **RU:** — С *pratyupa* возвращаться, — к или в; с Acc. и *prati* ([78,32](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?78)) или с Loc.
+- **EN:** — With *pratyupa*, to return, — to or into; with Acc. and *prati* ([78,32](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?78)) or with Loc.
   <sub>attested</sub>
 
 **sam-intro)** — Mit *samupa*
@@ -5439,10 +5439,10 @@ With *punar* "to come again" and "to be reborn". *āyāta* with act. Bed.; also 
 - **EN:** 6) to set out on the way, hence v. a. to die. *prayāta* died.
   <sub>attested</sub>
 
-**pra7)** — 7〉 verfliessen, verstreichen. *prayāta* verstrichen, verflossen [139,13].
+**pra7)** — 7〉 verfliessen, verstreichen. *prayāta* verstrichen, verflossen [139,13](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?139).
 
-- **RU:** — 7〉 протекать, проходить (о времени). *prayāta* протёкший, прошедший [139,13].
-- **EN:** 7) to elapse, to pass by. *prayāta* elapsed, passed [139,13].
+- **RU:** — 7〉 протекать, проходить (о времени). *prayāta* протёкший, прошедший [139,13](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?139).
+- **EN:** 7) to elapse, to pass by. *prayāta* elapsed, passed [139,13](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?139).
   <sub>attested</sub>
 
 **pra8)** — 8〉 in einen Zustand —, in eine Lage —, in ein Verhältniss kommen, — gerathen, theilhaftig werden; mit Acc.

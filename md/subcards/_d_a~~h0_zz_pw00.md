@@ -6,8 +6,8 @@
 **pres-stems)** **1.** *dhā*¦, Präsensstämme: *dadhā* (Act.), *dadh* (Act. Med.), *dadha* (Act. Med.) und *dhā* (Act. Med.); Absol. *dhitvā* ([TS. 7,4,3,1.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?7,4,3,1) [2](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?7,4,3,2)) und *hitvā*; Pass. *dhīyate, ˚dhita* (*dhita* [HARIV. 7799](https://sanskrit-lexicon-scans.github.io/hariv?7799) verdächtig) und *hita* (s. bes.).
 - **EN:** **1.** *dhā*¦, present stems: *dadhā* (Act.), *dadh* (Act. Med.), *dadha* (Act. Med.) and *dhā* (Act. Med.); Absol. *dhitvā* ([TS. 7,4,3,1.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?7,4,3,1) [2](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?7,4,3,2)) and *hitvā*; Pass. *dhīyate, ˚dhita* (*dhita* [HARIV. 7799](https://sanskrit-lexicon-scans.github.io/hariv?7799) dubious) and *hita* (s. bes.).
 
-**1)** — 1〉 setzen, legen, stellen, einfügen, einbringen, — in oder auf (Loc.). *daṇḍam* den Stock legen auf, so v. a. Strafe verhängen über (Loc. oder Gen.). *tatpadavyāṃ padam* den Fuss auf seinen Weg stellen, so v. a. es ihm nachthun, ihm gleichen [251,7]. Meist Act.
-- **EN:** — 1〉 to set, lay, place, insert, bring into — in or upon (Loc.). *daṇḍam* to lay the stick upon, hence v. a. to inflict punishment upon (Loc. or Gen.). *tatpadavyāṃ padam* to set one's foot in his path, hence v. a. to imitate him, to equal him [251,7]. Mostly Act.
+**1)** — 1〉 setzen, legen, stellen, einfügen, einbringen, — in oder auf (Loc.). *daṇḍam* den Stock legen auf, so v. a. Strafe verhängen über (Loc. oder Gen.). *tatpadavyāṃ padam* den Fuss auf seinen Weg stellen, so v. a. es ihm nachthun, ihm gleichen [251,7](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?251). Meist Act.
+- **EN:** — 1〉 to set, lay, place, insert, bring into — in or upon (Loc.). *daṇḍam* to lay the stick upon, hence v. a. to inflict punishment upon (Loc. or Gen.). *tatpadavyāṃ padam* to set one's foot in his path, hence v. a. to imitate him, to equal him [251,7](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?251). Mostly Act.
 
 **2)** — 2〉 hinbringen —, hinschaffen zu (Loc.) *āre* weit wegschaffen [ṚV. 10,35,4](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.035.html#rv10.035.04). Meist Act.
 - **EN:** — 2〉 to bring to, convey to (Loc.); *āre* to remove far away [ṚV. 10,35,4](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.035.html#rv10.035.04). Mostly Act.
@@ -183,8 +183,8 @@
 **preverb-pari-1)** — 1〉 Jmdm (Dat.) übergeben, dahingeben, überliefern.
 - **EN:** — 1〉 to hand over to someone (Dat.), to give up, to transmit.
 
-**preverb-pari-2)** — 2〉 richten, zurichten [ṚV. 2,23,6. 7](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.023.html#rv02.023.06), [34,9].
-- **EN:** — 2〉 to prepare, to make ready [ṚV. 2,23,6. 7](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.023.html#rv02.023.06), [34,9].
+**preverb-pari-2)** — 2〉 richten, zurichten [ṚV. 2,23,6. 7](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.023.html#rv02.023.06), [34,9](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?34).
+- **EN:** — 2〉 to prepare, to make ready [ṚV. 2,23,6. 7](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.023.html#rv02.023.06), [34,9](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?34).
 
 **preverb-pari-3)** — 3〉 umhüllen, umlegen mit (Instr.), umwinden, binden. Gewöhnlich Med. *abhihita* angebunden, angeschirrt, angespannt.
 - **EN:** — 3〉 to enwrap, to put around (Instr.), to wind around, to bind. Usually Med. *abhihita* bound, harnessed, yoked.
@@ -204,11 +204,11 @@
 **preverb-pari-8)** — 8〉 bezeichnen, benennen; Pass. bezeichnet —, benannt werden, heissen. *abhihita* bezeichnet, genannt, heissend.
 - **EN:** — 8〉 to denote, to name; Pass. to be denoted, named, called. *abhihita* denoted, named, called.
 
-**preverb-pari-9)** — 9〉 angeben, auseinandersetzen, mittheilen, sprechen über, vortragen, Etwas sagen, sprechen, aussprechen. *abhihita* angegeben, angezeigt [219,27] mitgetheilt, vorgebracht, vorgetragen, gesprochen, worüber oder über wen gesprochen worden ist.
-- **EN:** — 9〉 to indicate, to expound, to communicate, to speak about, to set forth, to say something, to speak, to utter. *abhihita* indicated, shown [219,27] communicated, adduced, set forth, spoken, that about which or about whom something has been spoken.
+**preverb-pari-9)** — 9〉 angeben, auseinandersetzen, mittheilen, sprechen über, vortragen, Etwas sagen, sprechen, aussprechen. *abhihita* angegeben, angezeigt [219,27](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?219) mitgetheilt, vorgebracht, vorgetragen, gesprochen, worüber oder über wen gesprochen worden ist.
+- **EN:** — 9〉 to indicate, to expound, to communicate, to speak about, to set forth, to say something, to speak, to utter. *abhihita* indicated, shown [219,27](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?219) communicated, adduced, set forth, spoken, that about which or about whom something has been spoken.
 
-**preverb-pari-10)** — 10〉 zu Jmd Etwas sagen, — sprechen; mit doppeltem Acc. *abhihita* zu dem Etwas gesagt worden ist [107,21].
-- **EN:** — 10〉 to say something to someone, to speak to; with double Acc. *abhihita* he to whom something has been said [107,21].
+**preverb-pari-10)** — 10〉 zu Jmd Etwas sagen, — sprechen; mit doppeltem Acc. *abhihita* zu dem Etwas gesagt worden ist [107,21](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?107).
+- **EN:** — 10〉 to say something to someone, to speak to; with double Acc. *abhihita* he to whom something has been said [107,21](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?107).
 
 **preverb-pari-caus)** — Caus. Med. nennen lassen.
 - **EN:** — Caus. Med. to have someone named.

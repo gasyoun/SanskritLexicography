@@ -25,7 +25,7 @@ befreien
 [MĀRK. P. 116,60.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?116,60)
 [PAÑCAT. 192,16.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?192,16)
 [HIT. 43,13.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?43,13)
-[DAŚAK.] in [BENF. Chr. 197,24.] *mṛgaṃ bandhanānmocayitvā*
+[DAŚAK.] in [BENF. Chr. 197,24.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?197) *mṛgaṃ bandhanānmocayitvā*
 [HIT. 23,11.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?23,11)
 [Ind. St. 3,373,6.] *(nauḥ) mocayiṣyati vaḥ sarvānasmaddeśāt*
 [MBH. 1,5850.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5850) *sa kṛcchrānmocayātmānam*
@@ -37,7 +37,7 @@ v. l.) [BHAG. 18,66.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1
 [KATHĀS. 37,159.](https://sanskrit-lexicon-scans.github.io/kss/index.html?37,159) [71,301.](https://sanskrit-lexicon-scans.github.io/kss/index.html?71,301) *vipraṃ mṛtyoramūmucan*
 [BHĀG. P. 6,2,20.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,2,20)
 [PAÑCAT. 242,24.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?242,24)
-[DAŚAK.] in [BENF. Chr. 192,18.] *seyam — nyāyyā mayā mocayituṃ bhavattaḥ*
+[DAŚAK.] in [BENF. Chr. 192,18.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?192) *seyam — nyāyyā mayā mocayituṃ bhavattaḥ*
 [RAGH. 2,55.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?2,55)
 [KATHĀS. 32,172.](https://sanskrit-lexicon-scans.github.io/kss/index.html?32,172) *droṇena* (von Droṇa) *mocayāmāsa pāñcālyam*
 [MBH. 7,3605.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.3605) *(gardabhaḥ) śasyakṣetre mocitaḥ* er liess den Esel los, liess ihn frei einhergehen auf
@@ -66,7 +66,7 @@ v. l.) [BHAG. 18,66.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1
 [MĀRK. P. 116,60.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?116,60)
 [PAÑCAT. 192,16.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?192,16)
 [HIT. 43,13.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?43,13)
-[DAŚAK.] в [BENF. Chr. 197,24.] *mṛgaṃ bandhanānmocayitvā*
+[DAŚAK.] в [BENF. Chr. 197,24.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?197) *mṛgaṃ bandhanānmocayitvā*
 [HIT. 23,11.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?23,11)
 [Ind. St. 3,373,6.] *(nauḥ) mocayiṣyati vaḥ sarvānasmaddeśāt*
 [MBH. 1,5850.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5850) *sa kṛcchrānmocayātmānam*
@@ -78,7 +78,7 @@ v. l.) [BHAG. 18,66.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1
 [KATHĀS. 37,159.](https://sanskrit-lexicon-scans.github.io/kss/index.html?37,159) [71,301.](https://sanskrit-lexicon-scans.github.io/kss/index.html?71,301) *vipraṃ mṛtyoramūmucan*
 [BHĀG. P. 6,2,20.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,2,20)
 [PAÑCAT. 242,24.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?242,24)
-[DAŚAK.] в [BENF. Chr. 192,18.] *seyam — nyāyyā mayā mocayituṃ bhavattaḥ*
+[DAŚAK.] в [BENF. Chr. 192,18.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?192) *seyam — nyāyyā mayā mocayituṃ bhavattaḥ*
 [RAGH. 2,55.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?2,55)
 [KATHĀS. 32,172.](https://sanskrit-lexicon-scans.github.io/kss/index.html?32,172) *droṇena* (от Droṇa) *mocayāmāsa pāñcālyam*
 [MBH. 7,3605.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.3605) *(gardabhaḥ) śasyakṣetre mocitaḥ* он отпустил осла, дал ему свободно ходить по
@@ -106,7 +106,7 @@ liberate"
 [MĀRK. P. 116,60.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?116,60)
 [PAÑCAT. 192,16.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?192,16)
 [HIT. 43,13.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?43,13)
-[DAŚAK.] in [BENF. Chr. 197,24.] *mṛgaṃ bandhanānmocayitvā*
+[DAŚAK.] in [BENF. Chr. 197,24.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?197) *mṛgaṃ bandhanānmocayitvā*
 [HIT. 23,11.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?23,11)
 [Ind. St. 3,373,6.] *(nauḥ) mocayiṣyati vaḥ sarvānasmaddeśāt*
 [MBH. 1,5850.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5850) *sa kṛcchrānmocayātmānam*
@@ -118,7 +118,7 @@ v. l.) [BHAG. 18,66.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1
 [KATHĀS. 37,159.](https://sanskrit-lexicon-scans.github.io/kss/index.html?37,159) [71,301.](https://sanskrit-lexicon-scans.github.io/kss/index.html?71,301) *vipraṃ mṛtyoramūmucan*
 [BHĀG. P. 6,2,20.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,2,20)
 [PAÑCAT. 242,24.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?242,24)
-[DAŚAK.] in [BENF. Chr. 192,18.] *seyam — nyāyyā mayā mocayituṃ bhavattaḥ*
+[DAŚAK.] in [BENF. Chr. 192,18.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?192) *seyam — nyāyyā mayā mocayituṃ bhavattaḥ*
 [RAGH. 2,55.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?2,55)
 [KATHĀS. 32,172.](https://sanskrit-lexicon-scans.github.io/kss/index.html?32,172) *droṇena* "(of" Droṇa) *mocayāmāsa pāñcālyam*
 [MBH. 7,3605.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.3605) *(gardabhaḥ) śasyakṣetre mocitaḥ* "he let the donkey loose, let it go freely upon"

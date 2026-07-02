@@ -251,10 +251,10 @@
 - **EN:** — 5) to determine, designate, name
   <sub>DCS 4018 · attested</sub>
 
-**ni-6)** — 6〉 von Jmd (Acc.) aussagen, vorhersagen [327,33].
+**ni-6)** — 6〉 von Jmd (Acc.) aussagen, vorhersagen [327,33](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?327).
 
-- **RU:** — 6〉 высказываться о ком-либо (Acc.), предсказывать [327,33].
-- **EN:** — 6) to state, predict of someone (Acc.) [327,33]
+- **RU:** — 6〉 высказываться о ком-либо (Acc.), предсказывать [327,33](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?327).
+- **EN:** — 6) to state, predict of someone (Acc.) [327,33](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?327)
   <sub>DCS 4018 · attested</sub>
 
 **ni-7)** — 7〉 die Weisung geben, Etwas vorschreiben, anbefehlen. *yānam* so v. a. den Wagen bestellen, — kommen lassen.
@@ -290,8 +290,8 @@
 **nis-head)** — Caus.
 - **EN:** — Caus.
 
-**nis-1)** — 1〉 zeigen, anweisen (den Weg) [300,31].
-- **EN:** — 1) to show, point out (the way) [300,31]
+**nis-1)** — 1〉 zeigen, anweisen (den Weg) [300,31](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?300).
+- **EN:** — 1) to show, point out (the way) [300,31](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?300)
 
 **nis-2)** — 2〉 Jmd anzeigen, angeben.
 
@@ -376,10 +376,10 @@
 - **EN:** — 5) to repel someone, thus v. a. to overcome, defeat
   <sub>DCS 4018 · attested</sub>
 
-**prati-6)** — 6〉 besiegen, so v. a. übertreffen [112,25].
+**prati-6)** — 6〉 besiegen, so v. a. übertreffen [112,25](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?112).
 
-- **RU:** — 6〉 побеждать, так v. a. превосходить [112,25].
-- **EN:** — 6) to defeat, thus v. a. to surpass [112,25]
+- **RU:** — 6〉 побеждать, так v. a. превосходить [112,25](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?112).
+- **EN:** — 6) to defeat, thus v. a. to surpass [112,25](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?112)
   <sub>DCS 4018 · attested</sub>
 
 **vi-head)** — Mit *vyā*
@@ -570,10 +570,10 @@
   <sub>DCS 4018 · attested</sub>
 
 **vi-pass-1)** — Caus.
-— 1〉 zeigen, anweisen (den Weg) [300,31].
+— 1〉 zeigen, anweisen (den Weg) [300,31](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?300).
 
 - **RU:** — Caus.
-— 1〉 показывать, указывать (путь) [300,31].
+— 1〉 показывать, указывать (путь) [300,31](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?300).
   <sub>DCS 4018 · attested</sub>
 
 **vi-ā-1)** — Mit *vyā*

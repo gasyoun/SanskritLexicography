@@ -123,10 +123,10 @@
 - **EN:** — With *vipra*
   <sub>DCS 3914 · attested</sub>
 
-**9.1)** — 1〉 befreien; Pass. sich befreien von (Abl.) frei ausgehen, nicht bestraft werden [169,10]. *vipramukta* befreit —, frei von (Instr. oder im Comp. vorangehend.)
+**9.1)** — 1〉 befreien; Pass. sich befreien von (Abl.) frei ausgehen, nicht bestraft werden [169,10](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?169). *vipramukta* befreit —, frei von (Instr. oder im Comp. vorangehend.)
 
-- **RU:** — 1〉 освобождать; Pass. освобождаться от (Abl.), выходить безнаказанным [169,10]. *vipramukta* освобождённый —, свободный от (Instr. или в Comp. предшествующем.)
-- **EN:** — 1) to free; Pass. "to free oneself from" (Abl.), "to come off free, go unpunished" [169,10]. *vipramukta* "freed —, free from" (Instr. or in the Comp. preceding).
+- **RU:** — 1〉 освобождать; Pass. освобождаться от (Abl.), выходить безнаказанным [169,10](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?169). *vipramukta* освобождённый —, свободный от (Instr. или в Comp. предшествующем.)
+- **EN:** — 1) to free; Pass. "to free oneself from" (Abl.), "to come off free, go unpunished" [169,10](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?169). *vipramukta* "freed —, free from" (Instr. or in the Comp. preceding).
   <sub>DCS 3914 · attested</sub>
 
 **9.2)** — 2〉 ablösen, abnehmen.
@@ -225,10 +225,10 @@
 - **EN:** — With *vi*
   <sub>DCS 3914 · attested</sub>
 
-**15.1)** — 1〉 ablösen, losbinden, abspannen; Med. an sich oder für sich ablösen. (z. B. die eigenen Pferde abspannen); Med. Pass. sich lösen (auch mit *vitarām*) [24,30], abgehen (von einer Leibesfrucht). *vimukta* ledig, nicht angespannt; aufgebunden, aufgelöst (Haar).
+**15.1)** — 1〉 ablösen, losbinden, abspannen; Med. an sich oder für sich ablösen. (z. B. die eigenen Pferde abspannen); Med. Pass. sich lösen (auch mit *vitarām*) [24,30](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?24), abgehen (von einer Leibesfrucht). *vimukta* ledig, nicht angespannt; aufgebunden, aufgelöst (Haar).
 
-- **RU:** — 1〉 снимать, отвязывать, распрягать; Med. снимать с себя или для себя. (z. B. распрягать собственных лошадей); Med. Pass. развязываться, освобождаться (также с *vitarām*) [24,30], отделяться, выходить (о плоде). *vimukta* свободный, не запряжённый; развязанный, распущенный (волосы).
-- **EN:** — 1) to detach, untie, unharness; Med. "to detach for oneself" or "on one's own account". (z. B., of one's own horses, "to unharness"); Med. Pass. "to come loose" (also with *vitarām*) [24,30], "to come away" (of an unborn fetus). *vimukta* "free, unharnessed; untied, loosened" (hair).
+- **RU:** — 1〉 снимать, отвязывать, распрягать; Med. снимать с себя или для себя. (z. B. распрягать собственных лошадей); Med. Pass. развязываться, освобождаться (также с *vitarām*) [24,30](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?24), отделяться, выходить (о плоде). *vimukta* свободный, не запряжённый; развязанный, распущенный (волосы).
+- **EN:** — 1) to detach, untie, unharness; Med. "to detach for oneself" or "on one's own account". (z. B., of one's own horses, "to unharness"); Med. Pass. "to come loose" (also with *vitarām*) [24,30](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?24), "to come away" (of an unborn fetus). *vimukta* "free, unharnessed; untied, loosened" (hair).
   <sub>DCS 3914 · attested</sub>
 
 **15.2)** — 2〉 Act. Med. abspannen, so v. a. Halt machen, einkehren.
@@ -255,10 +255,10 @@
 - **EN:** — 5) to leave a place.
   <sub>DCS 3914 · attested</sub>
 
-**15.6)** — 6〉 Jmd oder Etwas fahren lassen, Jmd im sich lassen ([Spr. 7709](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7709)), aufgeben. *prāṇān* die Lebensgeister fahren lassen, so v. a. sterben. *vimukta* im Stich gelassen von (im Comp. vorangehend), fahren gelassen, aufgegeben (insbes. am Anfange eines adj. Comp. [120,23]).
+**15.6)** — 6〉 Jmd oder Etwas fahren lassen, Jmd im sich lassen ([Spr. 7709](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7709)), aufgeben. *prāṇān* die Lebensgeister fahren lassen, so v. a. sterben. *vimukta* im Stich gelassen von (im Comp. vorangehend), fahren gelassen, aufgegeben (insbes. am Anfange eines adj. Comp. [120,23](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?120)).
 
-- **RU:** — 6〉 бросать кого-л. или что-л., оставлять кого-л. на произвол судьбы ([Spr. 7709](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7709)), отказываться. *prāṇān* испустить жизненные силы, так v. a. умирать. *vimukta* брошенный, покинутый (в Comp. предшествующем), оставленный, покинутый (insbes. в начале adj. Comp. [120,23]).
-- **EN:** — 6) to let go of someone or something, to abandon someone ([Spr. 7709](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7709)), to give up. *prāṇān* "to let go of the vital spirits", thus v. a. "to die". *vimukta* "abandoned by" (in the Comp. preceding), "let go, given up" (insbes. at the beginning of a adj. Comp. [120,23]).
+- **RU:** — 6〉 бросать кого-л. или что-л., оставлять кого-л. на произвол судьбы ([Spr. 7709](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7709)), отказываться. *prāṇān* испустить жизненные силы, так v. a. умирать. *vimukta* брошенный, покинутый (в Comp. предшествующем), оставленный, покинутый (insbes. в начале adj. Comp. [120,23](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?120)).
+- **EN:** — 6) to let go of someone or something, to abandon someone ([Spr. 7709](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7709)), to give up. *prāṇān* "to let go of the vital spirits", thus v. a. "to die". *vimukta* "abandoned by" (in the Comp. preceding), "let go, given up" (insbes. at the beginning of a adj. Comp. [120,23](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?120)).
   <sub>DCS 3914 · attested</sub>
 
 **15.7)** — 7〉 aufgeben, vermeiden.
@@ -279,10 +279,10 @@
 - **EN:** — 9) to remit, forgive.
   <sub>DCS 3914 · attested</sub>
 
-**15.10)** — 10〉 aus sich entlassen, von sich geben, ausstossen (Laute u. s. w.). *grastam* einen verschluckten (verfinsterten) Himmelskörper wieder von sich geben, so v. a. von, so v. a. sich ergiessend aus (im Comp. vorangehend [292,20]).
+**15.10)** — 10〉 aus sich entlassen, von sich geben, ausstossen (Laute u. s. w.). *grastam* einen verschluckten (verfinsterten) Himmelskörper wieder von sich geben, so v. a. von, so v. a. sich ergiessend aus (im Comp. vorangehend [292,20](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?292)).
 
-- **RU:** — 10〉 испускать, издавать, выбрасывать (звуки u. s. w.). *grastam* снова выпускать проглоченное (затемнённое) небесное тело, так v. a. от, так v. a. изливающийся из (в Comp. предшествующем [292,20]).
-- **EN:** — 10) to emit, give forth, utter (sounds u. s. w.). *grastam* "to release again a swallowed (eclipsed)" heavenly body, thus v. a. "from", thus v. a. "pouring forth from" (in the Comp. preceding [292,20]).
+- **RU:** — 10〉 испускать, издавать, выбрасывать (звуки u. s. w.). *grastam* снова выпускать проглоченное (затемнённое) небесное тело, так v. a. от, так v. a. изливающийся из (в Comp. предшествующем [292,20](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?292)).
+- **EN:** — 10) to emit, give forth, utter (sounds u. s. w.). *grastam* "to release again a swallowed (eclipsed)" heavenly body, thus v. a. "from", thus v. a. "pouring forth from" (in the Comp. preceding [292,20](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?292)).
   <sub>DCS 3914 · attested</sub>
 
 **15.11)** — 11〉 werfen, schleudern, abschiessen, — auf (Loc.). *ātmānam* sich stürzen in (Loc.). *vimukta* geworfen, geschleudert.
@@ -309,10 +309,10 @@
 - **EN:** — 14) Act. with *na* "not to let up, not to rest" (of horses).
   <sub>DCS 3914 · attested</sub>
 
-**15.15)** — 15〉 Pass. verlustig gehen Jmds (Instr.). *praṇais* des Lebens [145,2]. [19]. *vimukta* gekommen um (Instr.), verlustig gegangen.
+**15.15)** — 15〉 Pass. verlustig gehen Jmds (Instr.). *praṇais* des Lebens [145,2](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?145). [19](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?145). *vimukta* gekommen um (Instr.), verlustig gegangen.
 
-- **RU:** — 15〉 Pass. лишаться кого-л. (Instr.). *praṇais* жизни [145,2]. [19]. *vimukta* лишившийся (Instr.), утративший.
-- **EN:** — 15) Pass. "to forfeit someone/something" (Instr.). *praṇais* "of life" [145,2]. [19]. *vimukta* "deprived of" (Instr.), "forfeited".
+- **RU:** — 15〉 Pass. лишаться кого-л. (Instr.). *praṇais* жизни [145,2](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?145). [19](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?145). *vimukta* лишившийся (Instr.), утративший.
+- **EN:** — 15) Pass. "to forfeit someone/something" (Instr.). *praṇais* "of life" [145,2](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?145). [19](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?145). *vimukta* "deprived of" (Instr.), "forfeited".
   <sub>DCS 3914 · attested</sub>
 
 **15.16)** — 16〉 *vimukta*
@@ -333,10 +333,10 @@
 - **EN:** — b) free of all passion.
   <sub>DCS 3914 · attested</sub>
 
-**15.16.c)** — c〉 am Anfange eines adj. Comp. gewichen. *vimuktaśāpa* [108,5] = *śāpavimukta*.
+**15.16.c)** — c〉 am Anfange eines adj. Comp. gewichen. *vimuktaśāpa* [108,5](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?108) = *śāpavimukta*.
 
-- **RU:** — c〉 в начале adj. Comp. отступивший, рассеявшийся. *vimuktaśāpa* [108,5] = *śāpavimukta*.
-- **EN:** — c) at the beginning of a adj. Comp., "departed, gone". *vimuktaśāpa* [108,5] = *śāpavimukta*.
+- **RU:** — c〉 в начале adj. Comp. отступивший, рассеявшийся. *vimuktaśāpa* [108,5](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?108) = *śāpavimukta*.
+- **EN:** — c) at the beginning of a adj. Comp., "departed, gone". *vimuktaśāpa* [108,5](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?108) = *śāpavimukta*.
   <sub>DCS 3914 · attested</sub>
 
 **15.16.d)** — d〉 verbunden mit (im Comp. vorangehend).

@@ -60,7 +60,7 @@
 [BHĀG. P. 5,17,14.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,17,14) *saṃnidhāsye ca te smṛtaḥ*
 [KATHĀS. 5,53.](https://sanskrit-lexicon-scans.github.io/kss/index.html?5,53)
 [VID. 273.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?273) *sa cāhaṃ saha sakhyā dhanamitreṇa tatra saṃnyadhiṣi*
-[DAŚAK.] in [BENF. Chr. 190,9.] *saṃnihita* in der Nähe befindlich, gegenwärtig —, da —, bei der Hand seiend, nahe bevorstehend
+[DAŚAK.] in [BENF. Chr. 190,9.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?190) *saṃnihita* in der Nähe befindlich, gegenwärtig —, da —, bei der Hand seiend, nahe bevorstehend
 [MUṆḌ. UP. 2,2,1.]
 [GOBH. 2,10,41.] *noccaiḥ saṃnihito haset*
 [MBH. 4,130.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.130) *gurau saṃnihite*
@@ -78,7 +78,7 @@
 [BHĀG. P. 5,17,14.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,17,14) *saṃnidhāsye ca te smṛtaḥ*
 [KATHĀS. 5,53.](https://sanskrit-lexicon-scans.github.io/kss/index.html?5,53)
 [VID. 273.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?273) *sa cāhaṃ saha sakhyā dhanamitreṇa tatra saṃnyadhiṣi*
-[DAŚAK.] в [BENF. Chr. 190,9.] *saṃnihita* находящийся вблизи, присутствующий —, имеющийся —, находящийся под рукой, непосредственно предстоящий
+[DAŚAK.] в [BENF. Chr. 190,9.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?190) *saṃnihita* находящийся вблизи, присутствующий —, имеющийся —, находящийся под рукой, непосредственно предстоящий
 [MUṆḌ. UP. 2,2,1.]
 [GOBH. 2,10,41.] *noccaiḥ saṃnihito haset*
 [MBH. 4,130.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.130) *gurau saṃnihite*

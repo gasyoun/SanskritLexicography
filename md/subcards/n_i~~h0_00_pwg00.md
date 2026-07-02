@@ -125,12 +125,12 @@
 [MBH. 1,5990.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5990) *dhruvaṃ tu bharataṃ rāmaḥ — deśāntaraṃ ca nayitā dehāntaramathāpi vā*
 [R. GORR. 2,7,23.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,7,23) *yantā hareḥ — ūrdhvaṃ rathaṃ harisahasrayujaṃ nināya*
 [RAGH. 12,103.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?12,103) *taṃ pravahaṇena nītvā puram*
-[DAŚAK.] in [BENF. Chr. 183,4.] *puradvāraṃ śakaṭena nayet (yaṣṭim)*
+[DAŚAK.] in [BENF. Chr. 183,4.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?183) *puradvāraṃ śakaṭena nayet (yaṣṭim)*
 [VARĀH. BṚH. S. 42 (43),21.] *ātmānaṃ śanaiḥ sūkṣmaṃ (bhagavato rūpaṃ) dhiyā nayet*
 [BHĀG. P. 5,26,39.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,26,39) *tam — neṣyate yamasādanam*
 [MBH. 1,1758.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1758)
 [BHĀG. P. 7,8,6.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,8,6) [2,2,20.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,2,20) *tvāṃ nayai tvatpriyatamam*
-[DAŚAK.] in [BENF. Chr. 187,3.]
+[DAŚAK.] in [BENF. Chr. 187,3.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?187)
 — b) im dat.: *nīyatāṃ paralokāya sādhvayaṃ kulapāṃsanaḥ*
 [MBH. 2,2480](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2480) = [7,6310.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.6310)
 
@@ -176,12 +176,12 @@ a) in the acc.: *grāmamajāṃ nayati*
 [MBH. 1,5990.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5990) *dhruvaṃ tu bharataṃ rāmaḥ — deśāntaraṃ ca nayitā dehāntaramathāpi vā*
 [R. GORR. 2,7,23.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,7,23) *yantā hareḥ — ūrdhvaṃ rathaṃ harisahasrayujaṃ nināya*
 [RAGH. 12,103.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?12,103) *taṃ pravahaṇena nītvā puram*
-[DAŚAK.] in [BENF. Chr. 183,4.] *puradvāraṃ śakaṭena nayet (yaṣṭim)*
+[DAŚAK.] in [BENF. Chr. 183,4.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?183) *puradvāraṃ śakaṭena nayet (yaṣṭim)*
 [VARĀH. BṚH. S. 42 (43),21.] *ātmānaṃ śanaiḥ sūkṣmaṃ (bhagavato rūpaṃ) dhiyā nayet*
 [BHĀG. P. 5,26,39.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,26,39) *tam — neṣyate yamasādanam*
 [MBH. 1,1758.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1758)
 [BHĀG. P. 7,8,6.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,8,6) [2,2,20.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,2,20) *tvāṃ nayai tvatpriyatamam*
-[DAŚAK.] in [BENF. Chr. 187,3.]
+[DAŚAK.] in [BENF. Chr. 187,3.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?187)
 — b) in the dat.: *nīyatāṃ paralokāya sādhvayaṃ kulapāṃsanaḥ*
 [MBH. 2,2480](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2480) = [7,6310.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.6310)
 
@@ -322,12 +322,12 @@ a) in the acc.: *grāmamajāṃ nayati*
 [MBH. 1,5990.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5990) *dhruvaṃ tu bharataṃ rāmaḥ — deśāntaraṃ ca nayitā dehāntaramathāpi vā*
 [R. GORR. 2,7,23.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,7,23) *yantā hareḥ — ūrdhvaṃ rathaṃ harisahasrayujaṃ nināya*
 [RAGH. 12,103.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?12,103) *taṃ pravahaṇena nītvā puram*
-[DAŚAK.] в [BENF. Chr. 183,4.] *puradvāraṃ śakaṭena nayet (yaṣṭim)*
+[DAŚAK.] в [BENF. Chr. 183,4.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?183) *puradvāraṃ śakaṭena nayet (yaṣṭim)*
 [VARĀH. BṚH. S. 42 (43),21.] *ātmānaṃ śanaiḥ sūkṣmaṃ (bhagavato rūpaṃ) dhiyā nayet*
 [BHĀG. P. 5,26,39.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,26,39) *tam — neṣyate yamasādanam*
 [MBH. 1,1758.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1758)
 [BHĀG. P. 7,8,6.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,8,6) [2,2,20.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,2,20) *tvāṃ nayai tvatpriyatamam*
-[DAŚAK.] в [BENF. Chr. 187,3.]
+[DAŚAK.] в [BENF. Chr. 187,3.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?187)
 — b) im dat.: *nīyatāṃ paralokāya sādhvayaṃ kulapāṃsanaḥ*
 [MBH. 2,2480](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2480) = [7,6310.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.6310)
 
@@ -374,12 +374,12 @@ a) in the acc.: *grāmamajāṃ nayati*
 [MBH. 1,5990.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5990) *dhruvaṃ tu bharataṃ rāmaḥ — deśāntaraṃ ca nayitā dehāntaramathāpi vā*
 [R. GORR. 2,7,23.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,7,23) *yantā hareḥ — ūrdhvaṃ rathaṃ harisahasrayujaṃ nināya*
 [RAGH. 12,103.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?12,103) *taṃ pravahaṇena nītvā puram*
-[DAŚAK.] в [BENF. Chr. 183,4.] *puradvāraṃ śakaṭena nayet (yaṣṭim)*
+[DAŚAK.] в [BENF. Chr. 183,4.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?183) *puradvāraṃ śakaṭena nayet (yaṣṭim)*
 [VARĀH. BṚH. S. 42 (43),21.] *ātmānaṃ śanaiḥ sūkṣmaṃ (bhagavato rūpaṃ) dhiyā nayet*
 [BHĀG. P. 5,26,39.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,26,39) *tam — neṣyate yamasādanam*
 [MBH. 1,1758.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1758)
 [BHĀG. P. 7,8,6.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,8,6) [2,2,20.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,2,20) *tvāṃ nayai tvatpriyatamam*
-[DAŚAK.] в [BENF. Chr. 187,3.]
+[DAŚAK.] в [BENF. Chr. 187,3.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?187)
 — b) в dat.: *nīyatāṃ paralokāya sādhvayaṃ kulapāṃsanaḥ*
 [MBH. 2,2480](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2480) = [7,6310.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.6310)
 

@@ -13,9 +13,9 @@
 - **RU:** — 1〉 Act.
   <sub>attested</sub>
 
-**1a)** — a〉 reden, sagen, sprechen, — dass (mit doppeltem Acc. [[76,13]] oder mit *yad*), — ob (*yadi*), — zu Jmd (Acc., Gen. oder Acc. mit *abhi*), — zu Jmd Etwas (mit doppeltem Acc.).
+**1a)** — a〉 reden, sagen, sprechen, — dass (mit doppeltem Acc. [[76,13](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?76)] oder mit *yad*), — ob (*yadi*), — zu Jmd (Acc., Gen. oder Acc. mit *abhi*), — zu Jmd Etwas (mit doppeltem Acc.).
 
-- **RU:** — a〉 говорить, сказать, речь вести, — что (с двойным Acc. [[76,13]] или с *yad*), — ли (*yadi*), — кому-либо (Acc., Gen. или Acc. с *abhi*), — кому-либо что-либо (с двойным Acc.).
+- **RU:** — a〉 говорить, сказать, речь вести, — что (с двойным Acc. [[76,13](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?76)] или с *yad*), — ли (*yadi*), — кому-либо (Acc., Gen. или Acc. с *abhi*), — кому-либо что-либо (с двойным Acc.).
   <sub>attested</sub>
 
 **1b)** — b〉 rathen zu (Acc.).
@@ -33,9 +33,9 @@
 - **RU:** — d〉 сообщать, возвещать, указывать, обсуждать, говорить —, сообщать о, говорить о (Acc.); с Gen. или Loc. лица, к которому обращаются.
   <sub>attested</sub>
 
-**1e)** — e〉 ankündigen, voraussagen, anzeigen, verrathen (von einem leblosen Subject [304,25]), besagen, bezeichnen.
+**1e)** — e〉 ankündigen, voraussagen, anzeigen, verrathen (von einem leblosen Subject [304,25](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?304)), besagen, bezeichnen.
 
-- **RU:** — e〉 возвещать, предвещать, указывать, выдавать (о неодушевлённом подлежащем [304,25]), означать, обозначать.
+- **RU:** — e〉 возвещать, предвещать, указывать, выдавать (о неодушевлённом подлежащем [304,25](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?304)), означать, обозначать.
   <sub>attested</sub>
 
 **1f)** — f〉 behaupten, annehmen.
@@ -103,9 +103,9 @@
 - **RU:** — 3〉 *udita*
   <sub>attested</sub>
 
-**3a)** — a〉 gesagt, gesprochen, — in Betreff von (*prati* [190,7]). *ityudite* impers. [126,13].
+**3a)** — a〉 gesagt, gesprochen, — in Betreff von (*prati* [190,7](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?190)). *ityudite* impers. [126,13](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?126).
 
-- **RU:** — a〉 сказанный, произнесённый, — касательно (*prati* [190,7]). *ityudite* impers. [126,13].
+- **RU:** — a〉 сказанный, произнесённый, — касательно (*prati* [190,7](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?190)). *ityudite* impers. [126,13](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?126).
   <sub>attested</sub>
 
 **3b)** — b〉 angeredet, angesprochen.

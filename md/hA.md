@@ -3281,8 +3281,8 @@ as [P. 1,4,57.](https://ashtadhyayi.com/sutraani/1/4/57) *hā heti rudatī*
 **5a)** — a〉 verlassen.
 - **EN:** — a) left, abandoned.
 
-**5b)** — b〉 *abgekommen von (Abl.) [221,15].
-- **EN:** — b) *departed from, having strayed from (Abl.) [221,15].
+**5b)** — b〉 *abgekommen von (Abl.) [221,15](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?221).
+- **EN:** — b) *departed from, having strayed from (Abl.) [221,15](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?221).
 
 **5c)** — c〉 herabgekommen, in eine schlimme Lage gerathen.
 - **EN:** — c) come down in the world, fallen into a bad state.
@@ -3290,8 +3290,8 @@ as [P. 1,4,57.](https://ashtadhyayi.com/sutraani/1/4/57) *hā heti rudatī*
 **5d)** — d〉 zurückbleibend hinter Anderen, zurückgesetzt, untergeordnet, niedriger stehend, — als (Abl.), nachstehend (dem Range oder der Bildung nach); überh. unter dem normalen Maasse u. s. w. zurückbleibend, klein, gering, schwach, wenig, schlecht u. s. w.; schwächer, geringer —, kleiner als (Abl.). *hīnatara* schlechter.
 - **EN:** — d) remaining behind others, set back, subordinate, standing lower, — than (Abl.), inferior (in rank or education); überh. falling short of the normal measure u. s. w., small, slight, weak, little, bad u. s. w.; weaker, lesser —, smaller than (Abl.). *hīnatara* 'worse'.
 
-**5e)** — e〉 unterlegen, unterliegend (im Process) [214,16].
-- **EN:** — e) defeated, losing (in a lawsuit) [214,16].
+**5e)** — e〉 unterlegen, unterliegend (im Process) [214,16](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?214).
+- **EN:** — e) defeated, losing (in a lawsuit) [214,16](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?214).
 
 **5f)** — f〉 unvollständig, mangelhaft, — in Bezug auf (*˚tas*), ungenügend, fehlend, mangelnd, unterblieben. *hīnasvara* _Adj._ so v. a. lautlos. *hīna˚* _Adv._ ungenügend, nicht ganz.
 - **EN:** — f) incomplete, deficient, — with regard to (*˚tas*), insufficient, missing, lacking, omitted. *hīnasvara* _Adj._ so v. a. 'soundless'. *hīna˚* _Adv._ 'insufficient, not whole'.
@@ -3585,10 +3585,10 @@ as [P. 1,4,57.](https://ashtadhyayi.com/sutraani/1/4/57) *hā heti rudatī*
 **pra1)** — 1〉 verlassen.
 - **EN:** 1) to abandon.
 
-**pra2)** — 2〉 Etwas fahren lassen, aufgeben, entsagen, verletzen (*dharmam* [60,13]), nicht halten (ein Versprechen).
+**pra2)** — 2〉 Etwas fahren lassen, aufgeben, entsagen, verletzen (*dharmam* [60,13](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?60)), nicht halten (ein Versprechen).
 
-- **RU:** — 2〉 отпускать что-л., отказываться, отрекаться, нарушать (*dharmam* [60,13]), не соблюдать (обещание).
-- **EN:** 2) to let something go, to give up, to renounce, to violate (*dharmam* [60,13]), not to keep (a promise).
+- **RU:** — 2〉 отпускать что-л., отказываться, отрекаться, нарушать (*dharmam* [60,13](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?60)), не соблюдать (обещание).
+- **EN:** 2) to let something go, to give up, to renounce, to violate (*dharmam* [60,13](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?60)), not to keep (a promise).
   <sub>DCS 3071 · attested</sub>
 
 **pra3)** — 3〉 entlassen, schleudern.
@@ -3663,10 +3663,10 @@ as [P. 1,4,57.](https://ashtadhyayi.com/sutraani/1/4/57) *hā heti rudatī*
 - **EN:** d) not coming about with something Instr..
   <sub>DCS 3071 · attested</sub>
 
-**pra6e)** — e〉 geschwunden [256,31]. [JĀTAKAM. 22].
+**pra6e)** — e〉 geschwunden [256,31](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?256). [JĀTAKAM. 22].
 
-- **RU:** — e〉 исчезнувший [256,31]. [JĀTAKAM. 22].
-- **EN:** e) vanished [256,31]. [JĀTAKAM. 22].
+- **RU:** — e〉 исчезнувший [256,31](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?256). [JĀTAKAM. 22].
+- **EN:** e) vanished [256,31](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?256). [JĀTAKAM. 22].
   <sub>DCS 3071 · attested</sub>
 
 **pra6f)** — f〉 am Ende eines Comp. ermangelnd, ohne — seiend.
@@ -3973,10 +3973,10 @@ as [P. 1,4,57.](https://ashtadhyayi.com/sutraani/1/4/57) *hā heti rudatī*
 `h_a~~h0_zz_pw03`
 
 
-**interj)** **3.** *hā*¦ Interj. des Schmerzes, des Staunens und des Behagens. Vor und nach einem Voc.; mit folgendem Acc. wehe über! [227,7]. *hā hā*, *hā dhik*, *hā hanta hanta*, *hā kaṣṭam*, *hā dhikkaṣṭam*, *hā hā dhik*, *hā hā kaṣṭam*, *hākaṣṭaśabda* _m._ [KĀD. 2,122,1 (149,18)]
+**interj)** **3.** *hā*¦ Interj. des Schmerzes, des Staunens und des Behagens. Vor und nach einem Voc.; mit folgendem Acc. wehe über! [227,7](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?227). *hā hā*, *hā dhik*, *hā hanta hanta*, *hā kaṣṭam*, *hā dhikkaṣṭam*, *hā hā dhik*, *hā hā kaṣṭam*, *hākaṣṭaśabda* _m._ [KĀD. 2,122,1 (149,18)]
 
-- **RU:** **3.** *hā*¦ Interj. боли, изумления и удовольствия. До и после Voc.; с последующим Acc. горе! [227,7]. *hā hā*, *hā dhik*, *hā hanta hanta*, *hā kaṣṭam*, *hā dhikkaṣṭam*, *hā hā dhik*, *hā hā kaṣṭam*, *hākaṣṭaśabda* _m._ [KĀD. 2,122,1 (149,18)]
-- **EN:** 3. *****hā*¦ Interj. an exclamation of pain, of astonishment, and of satisfaction. Before and after a Voc.; with a following Acc. woe upon! [227,7]. *hā hā*, *hā dhik*, *hā hanta hanta*, *hā kaṣṭam*, *hā dhikkaṣṭam*, *hā hā dhik*, *hā hā kaṣṭam*, *hākaṣṭaśabda* _m._ [KĀD. 2,122,1 (149,18)]
+- **RU:** **3.** *hā*¦ Interj. боли, изумления и удовольствия. До и после Voc.; с последующим Acc. горе! [227,7](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?227). *hā hā*, *hā dhik*, *hā hanta hanta*, *hā kaṣṭam*, *hā dhikkaṣṭam*, *hā hā dhik*, *hā hā kaṣṭam*, *hākaṣṭaśabda* _m._ [KĀD. 2,122,1 (149,18)]
+- **EN:** 3. *****hā*¦ Interj. an exclamation of pain, of astonishment, and of satisfaction. Before and after a Voc.; with a following Acc. woe upon! [227,7](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?227). *hā hā*, *hā dhik*, *hā hanta hanta*, *hā kaṣṭam*, *hā dhikkaṣṭam*, *hā hā dhik*, *hā hā kaṣṭam*, *hākaṣṭaśabda* _m._ [KĀD. 2,122,1 (149,18)]
   <sub>DCS 3071 · attested</sub>
 
 **viprati)** **2.** √*hā*¦ mit *viprati*, *˚hīna* frei von — (im Comp. vorangehend) [DIVYĀVAD. 95,18].

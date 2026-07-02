@@ -1042,12 +1042,12 @@ to protect: *ko 'smānatra vane rakṣayiṣyati*
 `rakz~~h0_zz_pw`
 
 
-**1)** **1.** √*rakṣ*¦ *rakṣati, ˚te* (*rakṣye* Fut. [89,28])
+**1)** **1.** √*rakṣ*¦ *rakṣati, ˚te* (*rakṣye* Fut. [89,28](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?89))
 — 1〉 bewachen, Wache halten, bewahren, beschützen, hüten (auch das Vieh), behüten, in Acht nehmen, schonen, erhalten, erretten, servare, — vor (Abl.), verwahren; sorgfältig achten auf (Acc., ganz ausnahmsweise Loc.), beobachten (ein Gesetz u. s. w.). Das Land —, das Reich beschützen, so v. a. regieren. *rakṣamāṇa* [AV. 13,4,70](https://sanskrit-lexicon.github.io/avlinks/avhymns/av13.004.html#av13.004.70). mit passiver Bed. oder fehlerhaft für *rakṣyamāṇa* *rakṣita* bewacht u. s. w. *rakṣitam* _Adv._ wohl verwahrt.
 
-- **RU:** **1.** √*rakṣ*¦ *rakṣati, ˚te* (*rakṣye* Fut. [89,28])
+- **RU:** **1.** √*rakṣ*¦ *rakṣati, ˚te* (*rakṣye* Fut. [89,28](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?89))
 — 1〉 стеречь, нести стражу, сохранять, защищать, охранять (в т.ч. скот), оберегать, блюсти, щадить, содержать, спасать, servare, — от (Abl.), хранить; тщательно следить за (Acc., в виде исключения Loc.), соблюдать (закон u. s. w.). Страну —, царство защищать, т.е. v. a. управлять. *rakṣamāṇa* [AV. 13,4,70](https://sanskrit-lexicon.github.io/avlinks/avhymns/av13.004.html#av13.004.70). с пассивным Bed. или ошибочно вместо *rakṣyamāṇa* *rakṣita* охраняемый u. s. w. *rakṣitam* _Adv._ надёжно сохранённый.
-- **EN:** **1.** √*rakṣ*¦ *rakṣati, ˚te* (*rakṣye* Fut. [89,28])
+- **EN:** **1.** √*rakṣ*¦ *rakṣati, ˚te* (*rakṣye* Fut. [89,28](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?89))
 — 1〉 to watch, keep watch, preserve, protect, guard (also cattle), to tend, take care of, spare, maintain, rescue, servare, — from (Abl.), to keep in safekeeping; to pay careful attention to (Acc., quite exceptionally Loc.), to observe (a law u. s. w.). To protect the land —, the realm, thus v. a. to rule. *rakṣamāṇa* [AV. 13,4,70](https://sanskrit-lexicon.github.io/avlinks/avhymns/av13.004.html#av13.004.70). with passive Bed. or erroneously for *rakṣyamāṇa* *rakṣita* guarded u. s. w. *rakṣitam* _Adv._ well kept.
   <sub>attested</sub>
 

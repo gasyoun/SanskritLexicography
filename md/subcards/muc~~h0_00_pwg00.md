@@ -61,7 +61,7 @@
 [8.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?8) *muktaśṛṅgāra* ausgezogen, abgelegt
 [PAÑCAT. 36,17.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?36,17) *uṣṇīṣaṃ mumuce*
 [BHAṬṬ. 14,95](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?14,95) soll nach einem Schol. so v. a. *u˚ paridadhe* anlegen bedeuten. *talpe muktairavayavairaśāyiṣi* mit aufgelösten d. i. erschlafften Gliedern
-[DAŚAK.] in [BENF. Chr. 190,19.] *kaṇṭham* die Kehle lösen so v. a. seine Stimme erheben: *kaṇṭhaṃ muñcati ca barhiṇaḥ*
+[DAŚAK.] in [BENF. Chr. 190,19.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?190) *kaṇṭham* die Kehle lösen so v. a. seine Stimme erheben: *kaṇṭhaṃ muñcati ca barhiṇaḥ*
 [MṚCCH. 83,6]; vgl. *muktakaṇṭha*.* prāṇān* Jmdes Lebensgeister lösen so v. a. Jmd das Leben nehmen: *eṣa me muñcatu prāṇānyadi pāpaṃ carāmyaham*
 [MBH. 3,2982. fgg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2982) *padātpadamamuñcantī* den Fuss nicht von der Stelle lösend d. i. bewegend
 [VID. 277.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?277) *vīṇibhirmuktamārgaḥ* den Weg frei machen so v. a. aus dem Wege gehen
@@ -135,7 +135,7 @@ Schol. zu [KAP. 1,94.] *(guṇaiḥ) etairmukto mahīpālaḥ* ermangelnd
 [PAÑCAR. 1,10,83](https://sanskrit-lexicon-scans.github.io/pancar/app1?1,10,83)). verlassen (einen Platz): *na muñcati ca taṃ deśaṃ nāyako yatra dṛśyate*
 [SĀH. D. 60,4.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?60,4) ad [ŚĀK. 78.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?78) [Spr. 2216.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2216) *talaṃ yasya na muñcati . atyantaśītalacchāyā sa cchāyātarurucyate* Cit. beim Schol. zu [ŚĀK. 86.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?86)
 *palitaśāraśikhaṇḍabandhaspṛṣṭamuktabhūmi* _adj._
-[DAŚAK.] in [BENF. Chr. 180,1.] *muñca śayyām*
+[DAŚAK.] in [BENF. Chr. 180,1.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?180) *muñca śayyām*
 [RAGH. 5,66.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?5,66) *ihaiva priyāparibhuktamukte latāvalaye*
 [ŚĀK. 41,17.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?41,17) *muktāsana*
 [63,16.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?63,16) [RAGH. 3,11.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?3,11) *muktarodhonitamba*
@@ -205,7 +205,7 @@ Schol. zu [KAP. 1,94.] *(guṇaiḥ) etairmukto mahīpālaḥ* ermangelnd
 [8.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?8) *muktaśṛṅgāra* снятый, сложенный
 [PAÑCAT. 36,17.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?36,17) *uṣṇīṣaṃ mumuce*
 [BHAṬṬ. 14,95](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?14,95) должно, по одному Schol., означать v. a. *u˚ paridadhe* надевать. *talpe muktairavayavairaśāyiṣi* с распущенными d. i. расслабленными членами
-[DAŚAK.] в [BENF. Chr. 190,19.] *kaṇṭham* разжать горло, так что v. a. возвысить голос: *kaṇṭhaṃ muñcati ca barhiṇaḥ*
+[DAŚAK.] в [BENF. Chr. 190,19.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?190) *kaṇṭham* разжать горло, так что v. a. возвысить голос: *kaṇṭhaṃ muñcati ca barhiṇaḥ*
 [MṚCCH. 83,6]; vgl. *muktakaṇṭha*.* prāṇān* освободить жизненные силы кого-либо, т. е. лишить кого-либо жизни: *eṣa me muñcatu prāṇānyadi pāpaṃ carāmyaham*
 [MBH. 3,2982. fgg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2982) *padātpadamamuñcantī* не сдвигая ноги с места d. i. двигая
 [VID. 277.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?277) *vīṇibhirmuktamārgaḥ* освободить путь, т. е. v. a. уступить дорогу
@@ -279,7 +279,7 @@ Schol. zu [KAP. 1,94.] *(guṇaiḥ) etairmukto mahīpālaḥ* лишённый
 [PAÑCAR. 1,10,83](https://sanskrit-lexicon-scans.github.io/pancar/app1?1,10,83)). покидать (место): *na muñcati ca taṃ deśaṃ nāyako yatra dṛśyate*
 [SĀH. D. 60,4.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?60,4) ad [ŚĀK. 78.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?78) [Spr. 2216.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2216) *talaṃ yasya na muñcati . atyantaśītalacchāyā sa cchāyātarurucyate* Cit. при Schol. zu [ŚĀK. 86.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?86)
 *palitaśāraśikhaṇḍabandhaspṛṣṭamuktabhūmi* _adj._
-[DAŚAK.] в [BENF. Chr. 180,1.] *muñca śayyām*
+[DAŚAK.] в [BENF. Chr. 180,1.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?180) *muñca śayyām*
 [RAGH. 5,66.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?5,66) *ihaiva priyāparibhuktamukte latāvalaye*
 [ŚĀK. 41,17.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?41,17) *muktāsana*
 [63,16.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?63,16) [RAGH. 3,11.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?3,11) *muktarodhonitamba*
@@ -348,7 +348,7 @@ Schol. zu [KAP. 1,94.] *(guṇaiḥ) etairmukto mahīpālaḥ* лишённый
 [8.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?8) *muktaśṛṅgāra* "drawn off, laid aside"
 [PAÑCAT. 36,17.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?36,17) *uṣṇīṣaṃ mumuce*
 [BHAṬṬ. 14,95](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?14,95) is said, according to a Schol., to mean v. a. *u˚ paridadhe* "to put on" in this way. *talpe muktairavayavairaśāyiṣi* "with limbs unstrung" d. i. "slackened"
-[DAŚAK.] in [BENF. Chr. 190,19.] *kaṇṭham* "to loosen the throat", i.e. v. a. "to raise one's voice": *kaṇṭhaṃ muñcati ca barhiṇaḥ*
+[DAŚAK.] in [BENF. Chr. 190,19.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?190) *kaṇṭham* "to loosen the throat", i.e. v. a. "to raise one's voice": *kaṇṭhaṃ muñcati ca barhiṇaḥ*
 [MṚCCH. 83,6]; vgl. *muktakaṇṭha*.* prāṇān* "to loosen someone's life-breaths", i.e. v. a. "to take someone's life": *eṣa me muñcatu prāṇānyadi pāpaṃ carāmyaham*
 [MBH. 3,2982. fgg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2982) *padātpadamamuñcantī* "not loosing the foot from the spot", d. i. "not moving (it)"
 [VID. 277.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?277) *vīṇibhirmuktamārgaḥ* "to clear the way", i.e. v. a. "to get out of the way"
@@ -422,7 +422,7 @@ Schol. to [KAP. 1,94.] *(guṇaiḥ) etairmukto mahīpālaḥ* "lacking"
 [PAÑCAR. 1,10,83](https://sanskrit-lexicon-scans.github.io/pancar/app1?1,10,83)). "to abandon" (a place): *na muñcati ca taṃ deśaṃ nāyako yatra dṛśyate*
 [SĀH. D. 60,4.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?60,4) ad [ŚĀK. 78.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?78) [Spr. 2216.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2216) *talaṃ yasya na muñcati . atyantaśītalacchāyā sa cchāyātarurucyate* Cit. in the Schol. for [ŚĀK. 86.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?86)
 *palitaśāraśikhaṇḍabandhaspṛṣṭamuktabhūmi* _adj._
-[DAŚAK.] in [BENF. Chr. 180,1.] *muñca śayyām*
+[DAŚAK.] in [BENF. Chr. 180,1.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?180) *muñca śayyām*
 [RAGH. 5,66.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?5,66) *ihaiva priyāparibhuktamukte latāvalaye*
 [ŚĀK. 41,17.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?41,17) *muktāsana*
 [63,16.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?63,16) [RAGH. 3,11.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?3,11) *muktarodhonitamba*

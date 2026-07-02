@@ -83,8 +83,8 @@
 **5a)** — a〉 verlassen.
 - **EN:** — a) left, abandoned.
 
-**5b)** — b〉 *abgekommen von (Abl.) [221,15].
-- **EN:** — b) *departed from, having strayed from (Abl.) [221,15].
+**5b)** — b〉 *abgekommen von (Abl.) [221,15](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?221).
+- **EN:** — b) *departed from, having strayed from (Abl.) [221,15](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?221).
 
 **5c)** — c〉 herabgekommen, in eine schlimme Lage gerathen.
 - **EN:** — c) come down in the world, fallen into a bad state.
@@ -92,8 +92,8 @@
 **5d)** — d〉 zurückbleibend hinter Anderen, zurückgesetzt, untergeordnet, niedriger stehend, — als (Abl.), nachstehend (dem Range oder der Bildung nach); überh. unter dem normalen Maasse u. s. w. zurückbleibend, klein, gering, schwach, wenig, schlecht u. s. w.; schwächer, geringer —, kleiner als (Abl.). *hīnatara* schlechter.
 - **EN:** — d) remaining behind others, set back, subordinate, standing lower, — than (Abl.), inferior (in rank or education); überh. falling short of the normal measure u. s. w., small, slight, weak, little, bad u. s. w.; weaker, lesser —, smaller than (Abl.). *hīnatara* 'worse'.
 
-**5e)** — e〉 unterlegen, unterliegend (im Process) [214,16].
-- **EN:** — e) defeated, losing (in a lawsuit) [214,16].
+**5e)** — e〉 unterlegen, unterliegend (im Process) [214,16](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?214).
+- **EN:** — e) defeated, losing (in a lawsuit) [214,16](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?214).
 
 **5f)** — f〉 unvollständig, mangelhaft, — in Bezug auf (*˚tas*), ungenügend, fehlend, mangelnd, unterblieben. *hīnasvara* _Adj._ so v. a. lautlos. *hīna˚* _Adv._ ungenügend, nicht ganz.
 - **EN:** — f) incomplete, deficient, — with regard to (*˚tas*), insufficient, missing, lacking, omitted. *hīnasvara* _Adj._ so v. a. 'soundless'. *hīna˚* _Adv._ 'insufficient, not whole'.

@@ -225,7 +225,7 @@ Schol. to [P. 1,1,71.](https://ashtadhyayi.com/sutraani/1/1/71)
 [M. 8,126.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,126)
 [YĀJÑ. 1,353.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?1,353) [367.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?1,367) *daṇḍo 'yaṃ kṣetriyo yena mayyapāti*
 [BHAṬṬ. 4,32.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?4,32) *madāvasannahastapatitena nistriṃśena dvitrāneva hatvā*
-[DAŚAK.] in [BENF. Chr. 194,12.] *āśu śastraṃ pātayet* so v. a. er führe schnell das Messer
+[DAŚAK.] in [BENF. Chr. 194,12.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?194) *āśu śastraṃ pātayet* so v. a. er führe schnell das Messer
 [SUŚR. 1,45,12.] [2,56,5.] *sūtraṃ vetālapātitam* die vom Vet. angelegte Messschnur
 [RĀJA-TAR. 3,349.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?3,349) — *salilaṃ nāśu pātayati* (die Sonne)
 [VARĀH. BṚH. S. 3,22.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?3,22) *pātayākṣān* wirf die Würfel
@@ -298,7 +298,7 @@ den Blick werfen, richten auf: *sarvataścakṣurvane lolamapātayat*
 [M. 8,126.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,126)
 [YĀJÑ. 1,353.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?1,353) [367.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?1,367) *daṇḍo 'yaṃ kṣetriyo yena mayyapāti*
 [BHAṬṬ. 4,32.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?4,32) *madāvasannahastapatitena nistriṃśena dvitrāneva hatvā*
-[DAŚAK.] in [BENF. Chr. 194,12.] *āśu śastraṃ pātayet* so v. a. он быстро проведёт нож
+[DAŚAK.] in [BENF. Chr. 194,12.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?194) *āśu śastraṃ pātayet* so v. a. он быстро проведёт нож
 [SUŚR. 1,45,12.] [2,56,5.] *sūtraṃ vetālapātitam* шнур для измерения, натянутый Vet.
 [RĀJA-TAR. 3,349.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?3,349) — *salilaṃ nāśu pātayati* (солнце)
 [VARĀH. BṚH. S. 3,22.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?3,22) *pātayākṣān* бросай кости
@@ -370,7 +370,7 @@ den Blick werfen, richten auf: *sarvataścakṣurvane lolamapātayat*
 [M. 8,126.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,126)
 [YĀJÑ. 1,353.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?1,353) [367.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?1,367) *daṇḍo 'yaṃ kṣetriyo yena mayyapāti*
 [BHAṬṬ. 4,32.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?4,32) *madāvasannahastapatitena nistriṃśena dvitrāneva hatvā*
-[DAŚAK.] in [BENF. Chr. 194,12.] *āśu śastraṃ pātayet* so v. a. let him quickly draw the knife
+[DAŚAK.] in [BENF. Chr. 194,12.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?194) *āśu śastraṃ pātayet* so v. a. let him quickly draw the knife
 [SUŚR. 1,45,12.] [2,56,5.] *sūtraṃ vetālapātitam* the measuring cord laid out by Vet
 [RĀJA-TAR. 3,349.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?3,349) — *salilaṃ nāśu pātayati* (the sun)
 [VARĀH. BṚH. S. 3,22.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?3,22) *pātayākṣān* throw the dice

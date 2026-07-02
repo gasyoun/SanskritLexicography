@@ -1974,8 +1974,8 @@ leicht auszuführen, *sulabha* (s. d.) leicht zu erlangen, *susaṃtoṣa* (s. d
 `su~~h0_zz_pw`
 
 
-**headword and conjugation note)** **1.** √*su*¦, *sunoti* (auch Med.), *sunvāna* und *suvāna* (*svāna* zu sprechen und fasst immer passivisch); **suṣuvāṇa* ved. [240,3].
-- **EN:** **1.** √*su*, *sunoti* (also Med.), *sunvāna* and *suvāna* (*svāna* to be pronounced and always taken passively); **suṣuvāṇa* ved. [240,3].
+**headword and conjugation note)** **1.** √*su*¦, *sunoti* (auch Med.), *sunvāna* und *suvāna* (*svāna* zu sprechen und fasst immer passivisch); **suṣuvāṇa* ved. [240,3](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?240).
+- **EN:** **1.** √*su*, *sunoti* (also Med.), *sunvāna* and *suvāna* (*svāna* to be pronounced and always taken passively); **suṣuvāṇa* ved. [240,3](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?240).
 
 **1) to press out, distil (auspressen, keltern))** — 1〉 auspressen, keltern (den Soma).
 - **EN:** — 1) to press out, distil (the Soma).
@@ -2109,10 +2109,10 @@ leicht auszuführen, *sulabha* (s. d.) leicht zu erlangen, *susaṃtoṣa* (s. d
 **addendum marker)** {{Lbody=128531}}
 - **EN:** {{Lbody=128531}}
 
-**1_auspressen)** **1.** √*su*¦, *sunoti* (auch Med.), *sunvāna* und *suvāna* (*svāna* zu sprechen und fasst immer passivisch); **suṣuvāṇa* ved. [240,3].
+**1_auspressen)** **1.** √*su*¦, *sunoti* (auch Med.), *sunvāna* und *suvāna* (*svāna* zu sprechen und fasst immer passivisch); **suṣuvāṇa* ved. [240,3](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?240).
 — 1〉 auspressen, keltern (den Soma).
 
-- **RU:** **1.** √*su*¦, *sunoti* (также Med.), *sunvāna* und *suvāna* (*svāna* произносится и всегда понимается пассивно); **suṣuvāṇa* ved. [240,3].
+- **RU:** **1.** √*su*¦, *sunoti* (также Med.), *sunvāna* und *suvāna* (*svāna* произносится и всегда понимается пассивно); **suṣuvāṇa* ved. [240,3](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?240).
 — 1〉 выжимать, прессовать (Soma).
   <sub>attested</sub>
 

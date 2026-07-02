@@ -42,16 +42,16 @@
 
 **2)** — 2) in seinem Gefolge haben: *na śiṣyānanubadhnīta*
 [BHĀG. P. 7,13,8.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,13,8) *anubaddha* im Gefolge seiend, mit Etwas zusammenhängend, in Verbindung stehend: *anubaddhārthānarthasaṃśayānvicārya*
-[DAŚAK.] in [BENF. Chr. 181,1.] *aho mamopari vidheḥ saṃrambho dāruṇo mahān . nānubadhnāti kuśalam* so v. a. bringt keine Wohlfahrt
+[DAŚAK.] in [BENF. Chr. 181,1.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?181) *aho mamopari vidheḥ saṃrambho dāruṇo mahān . nānubadhnāti kuśalam* so v. a. bringt keine Wohlfahrt
 [MBH. 3,2562.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2562) *he vṛṣala te tathā vikṣepo 'stu yathā hiṃsāmanubadhnāti*
 [P. 6,1,141](https://ashtadhyayi.com/sutraani/6/1/141), Sch.
 
 - **RU:** — 2) «иметь в своей свите»: *na śiṣyānanubadhnīta*
 [BHĀG. P. 7,13,8.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,13,8) *anubaddha* «находящийся в свите, связанный с чем-л., состоящий в связи»: *anubaddhārthānarthasaṃśayānvicārya*
-[DAŚAK.] в [BENF. Chr. 181,1.] *aho mamopari vidheḥ saṃrambho dāruṇo mahān . nānubadhnāti kuśalam* так v. a. «не приносит благополучия»
+[DAŚAK.] в [BENF. Chr. 181,1.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?181) *aho mamopari vidheḥ saṃrambho dāruṇo mahān . nānubadhnāti kuśalam* так v. a. «не приносит благополучия»
 [MBH. 3,2562.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2562) *he vṛṣala te tathā vikṣepo 'stu yathā hiṃsāmanubadhnāti*
 [P. 6,1,141](https://ashtadhyayi.com/sutraani/6/1/141), Sch.
-- **EN:** — 2) to have in one's train: *na śiṣyānanubadhnīta* [BHĀG. P. 7,13,8.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,13,8) *anubaddha* being in the train of, connected with something, standing in relation to *anubaddhārthānarthasaṃśayānvicārya* [DAŚAK.] in [BENF. Chr. 181,1.] *aho mamopari vidheḥ saṃrambho dāruṇo mahān . nānubadhnāti kuśalam* so v. a. brings no welfare [MBH. 3,2562.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2562) *he vṛṣala te tathā vikṣepo 'stu yathā hiṃsāmanubadhnāti* [P. 6,1,141](https://ashtadhyayi.com/sutraani/6/1/141), Sch.
+- **EN:** — 2) to have in one's train: *na śiṣyānanubadhnīta* [BHĀG. P. 7,13,8.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,13,8) *anubaddha* being in the train of, connected with something, standing in relation to *anubaddhārthānarthasaṃśayānvicārya* [DAŚAK.] in [BENF. Chr. 181,1.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?181) *aho mamopari vidheḥ saṃrambho dāruṇo mahān . nānubadhnāti kuśalam* so v. a. brings no welfare [MBH. 3,2562.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2562) *he vṛṣala te tathā vikṣepo 'stu yathā hiṃsāmanubadhnāti* [P. 6,1,141](https://ashtadhyayi.com/sutraani/6/1/141), Sch.
   <sub>attested</sub>
 
 **3)** — 3) äussern, an den Tag legen, hegen, haben: *manuṣyeṇa śauṭīryamanubadhnatā*

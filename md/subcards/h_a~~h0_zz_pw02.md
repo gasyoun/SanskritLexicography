@@ -83,10 +83,10 @@
 **pra1)** — 1〉 verlassen.
 - **EN:** 1) to abandon.
 
-**pra2)** — 2〉 Etwas fahren lassen, aufgeben, entsagen, verletzen (*dharmam* [60,13]), nicht halten (ein Versprechen).
+**pra2)** — 2〉 Etwas fahren lassen, aufgeben, entsagen, verletzen (*dharmam* [60,13](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?60)), nicht halten (ein Versprechen).
 
-- **RU:** — 2〉 отпускать что-л., отказываться, отрекаться, нарушать (*dharmam* [60,13]), не соблюдать (обещание).
-- **EN:** 2) to let something go, to give up, to renounce, to violate (*dharmam* [60,13]), not to keep (a promise).
+- **RU:** — 2〉 отпускать что-л., отказываться, отрекаться, нарушать (*dharmam* [60,13](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?60)), не соблюдать (обещание).
+- **EN:** 2) to let something go, to give up, to renounce, to violate (*dharmam* [60,13](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?60)), not to keep (a promise).
   <sub>DCS 3071 · attested</sub>
 
 **pra3)** — 3〉 entlassen, schleudern.
@@ -161,10 +161,10 @@
 - **EN:** d) not coming about with something Instr..
   <sub>DCS 3071 · attested</sub>
 
-**pra6e)** — e〉 geschwunden [256,31]. [JĀTAKAM. 22].
+**pra6e)** — e〉 geschwunden [256,31](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?256). [JĀTAKAM. 22].
 
-- **RU:** — e〉 исчезнувший [256,31]. [JĀTAKAM. 22].
-- **EN:** e) vanished [256,31]. [JĀTAKAM. 22].
+- **RU:** — e〉 исчезнувший [256,31](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?256). [JĀTAKAM. 22].
+- **EN:** e) vanished [256,31](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?256). [JĀTAKAM. 22].
   <sub>DCS 3071 · attested</sub>
 
 **pra6f)** — f〉 am Ende eines Comp. ermangelnd, ohne — seiend.

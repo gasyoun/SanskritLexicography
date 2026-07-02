@@ -28,13 +28,13 @@ I. 1. *iṣ*¦ *iṣita*
 [BHĀG. P. 12,9,16.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?12,9,16) *iṣito gataḥ prāpta ityarthaḥ iṣu sarpaṇa ityasmāt* Schol.
 — *prādhi* s. *prādhyeṣaṇa* .
 — *anu*, *svagṛhe veśavāṭe dyūtasabhāyāmāpaṇe ca nipuṇamanviṣyannopalabdhavān*
-[DAŚAK.] in [BENF. Chr. 192,10.]
+[DAŚAK.] in [BENF. Chr. 192,10.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?192)
 — *pra*
 - **EN:** — 3) *pariśrameṣita*, hence v. a. afflicted, tormented
 [BHĀG. P. 12,9,16.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?12,9,16) *iṣito gataḥ prāpta ityarthaḥ iṣu sarpaṇa ityasmāt* Schol.
 — *prādhi* s. *prādhyeṣaṇa*.
 — *anu*, *svagṛhe veśavāṭe dyūtasabhāyāmāpaṇe ca nipuṇamanviṣyannopalabdhavān*
-[DAŚAK.] in [BENF. Chr. 192,10.]
+[DAŚAK.] in [BENF. Chr. 192,10.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?192)
 — *pra*
 
 **4)** 1) *sa māṃ praiṣītsuraśreṣṭhaḥ*
@@ -73,10 +73,10 @@ I. 1. *iṣ*¦ *iṣita*
   <sub>attested</sub>
 
 **cross_2)** — *anu*, *svagṛhe veśavāṭe dyūtasabhāyāmāpaṇe ca nipuṇamanviṣyannopalabdhavān*
-[DAŚAK.] in [BENF. Chr. 192,10.]
+[DAŚAK.] in [BENF. Chr. 192,10.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?192)
 
 - **RU:** — *anu*, *svagṛhe veśavāṭe dyūtasabhāyāmāpaṇe ca nipuṇamanviṣyannopalabdhavān*
-[DAŚAK.] в [BENF. Chr. 192,10.]
+[DAŚAK.] в [BENF. Chr. 192,10.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?192)
   <sub>attested</sub>
 
 **cross_3)** — *pra*

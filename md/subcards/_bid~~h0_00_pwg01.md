@@ -140,20 +140,20 @@ P. [YĀJÑ. 2,248.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,
 [Spr. 2526.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2526) *tatastairbhidyate vṛttam* den guten Lebenswandel unterbrechen so v. a. ihn verlassen
 [MBH. 13,7544. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.7544) Vgl. *bhinnavṛtta*.* bhrūbhaṅgabhinnatilaka* so v. a. verwischt
 [MĀLAV. 67.](https://sanskrit-lexicon-scans.github.io/malavikagni/app1?67)
-[DAŚAK.] in [BENF. Chr. 199,5.]
+[DAŚAK.] in [BENF. Chr. 199,5.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?199)
 
 - **RU:** — 5) прерывать, нарушать: *tayordvāḥsthaḥ samayaṃ lakṣmaṇo 'bhinat*
 [RAGH. 15,94.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?15,94) *teṣāṃ na bhinnā mudaḥ*
 [Spr. 2526.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2526) *tatastairbhidyate vṛttam* прерывать добродетельный образ жизни, тем самым v. a. отступать от него
 [MBH. 13,7544. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.7544) Vgl. *bhinnavṛtta*. * bhrūbhaṅgabhinnatilaka*, тем самым v. a. стёрт, изглажен
 [MĀLAV. 67.](https://sanskrit-lexicon-scans.github.io/malavikagni/app1?67)
-[DAŚAK.] в [BENF. Chr. 199,5.]
+[DAŚAK.] в [BENF. Chr. 199,5.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?199)
 - **EN:** — 5) to interrupt, disturb: *tayordvāḥsthaḥ samayaṃ lakṣmaṇo 'bhinat*
 [RAGH. 15,94.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?15,94) *teṣāṃ na bhinnā mudaḥ*
 [Spr. 2526.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2526) *tatastairbhidyate vṛttam* to interrupt virtuous conduct, so v. a. to abandon it
 [MBH. 13,7544. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.7544) Vgl. *bhinnavṛtta*. * bhrūbhaṅgabhinnatilaka* so v. a. obliterated
 [MĀLAV. 67.](https://sanskrit-lexicon-scans.github.io/malavikagni/app1?67)
-[DAŚAK.] in [BENF. Chr. 199,5.]
+[DAŚAK.] in [BENF. Chr. 199,5.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?199)
   <sub>attested</sub>
 
 **6)** — 6) brechen so v. a. verrathen: *bhindantyavamatā mantram*
@@ -163,7 +163,7 @@ P. [YĀJÑ. 2,248.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,
 [R. 4,55,9.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,55,9) *mantravījamidaṃ yatnādrakṣaṇīyaṃ tathā yathā . manāgapi na bhidyeta tadbhinnaṃ na prarohati ..*
 [Spr. 2113.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2113)
 [KĀM. NĪTIS. 11,53.] *na rahasyaṃ bhetsyati*
-[DAŚAK.] in [BENF. Chr. 197,20.]
+[DAŚAK.] in [BENF. Chr. 197,20.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?197)
 
 - **RU:** — 6) нарушать, тем самым v. a. предавать: *bhindantyavamatā mantram*
 [M. 7,150.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,150)
@@ -172,7 +172,7 @@ P. [YĀJÑ. 2,248.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,
 [R. 4,55,9.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,55,9) *mantravījamidaṃ yatnādrakṣaṇīyaṃ tathā yathā . manāgapi na bhidyeta tadbhinnaṃ na prarohati ..*
 [Spr. 2113.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2113)
 [KĀM. NĪTIS. 11,53.] *na rahasyaṃ bhetsyati*
-[DAŚAK.] в [BENF. Chr. 197,20.]
+[DAŚAK.] в [BENF. Chr. 197,20.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?197)
 - **EN:** — 6) to break, so v. a. to betray: *bhindantyavamatā mantram*
 [M. 7,150.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,150)
 [KĀM. NĪTIS. 11,65.] [Spr. 2548.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2548) *ṣaṭkarṇo bhidyate mantraḥ*
@@ -180,7 +180,7 @@ P. [YĀJÑ. 2,248.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,
 [R. 4,55,9.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,55,9) *mantravījamidaṃ yatnādrakṣaṇīyaṃ tathā yathā . manāgapi na bhidyeta tadbhinnaṃ na prarohati ..*
 [Spr. 2113.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2113)
 [KĀM. NĪTIS. 11,53.] *na rahasyaṃ bhetsyati*
-[DAŚAK.] in [BENF. Chr. 197,20.]
+[DAŚAK.] in [BENF. Chr. 197,20.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?197)
   <sub>attested</sub>
 
 **7)** — 7) spalten, theilen so v. a. entzweien: *dūta eva hi saṃdhatte bhinattyeva ca saṃhatān . dūtastatkurute karma bhidyante yena vā na vā ..*

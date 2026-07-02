@@ -1482,13 +1482,13 @@ I. 1. *iṣ*¦ *iṣita*
 [BHĀG. P. 12,9,16.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?12,9,16) *iṣito gataḥ prāpta ityarthaḥ iṣu sarpaṇa ityasmāt* Schol.
 — *prādhi* s. *prādhyeṣaṇa* .
 — *anu*, *svagṛhe veśavāṭe dyūtasabhāyāmāpaṇe ca nipuṇamanviṣyannopalabdhavān*
-[DAŚAK.] in [BENF. Chr. 192,10.]
+[DAŚAK.] in [BENF. Chr. 192,10.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?192)
 — *pra*
 - **EN:** — 3) *pariśrameṣita*, hence v. a. afflicted, tormented
 [BHĀG. P. 12,9,16.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?12,9,16) *iṣito gataḥ prāpta ityarthaḥ iṣu sarpaṇa ityasmāt* Schol.
 — *prādhi* s. *prādhyeṣaṇa*.
 — *anu*, *svagṛhe veśavāṭe dyūtasabhāyāmāpaṇe ca nipuṇamanviṣyannopalabdhavān*
-[DAŚAK.] in [BENF. Chr. 192,10.]
+[DAŚAK.] in [BENF. Chr. 192,10.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?192)
 — *pra*
 
 **4)** 1) *sa māṃ praiṣītsuraśreṣṭhaḥ*
@@ -1527,10 +1527,10 @@ I. 1. *iṣ*¦ *iṣita*
   <sub>attested</sub>
 
 **cross_2)** — *anu*, *svagṛhe veśavāṭe dyūtasabhāyāmāpaṇe ca nipuṇamanviṣyannopalabdhavān*
-[DAŚAK.] in [BENF. Chr. 192,10.]
+[DAŚAK.] in [BENF. Chr. 192,10.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?192)
 
 - **RU:** — *anu*, *svagṛhe veśavāṭe dyūtasabhāyāmāpaṇe ca nipuṇamanviṣyannopalabdhavān*
-[DAŚAK.] в [BENF. Chr. 192,10.]
+[DAŚAK.] в [BENF. Chr. 192,10.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?192)
   <sub>attested</sub>
 
 **cross_3)** — *pra*
@@ -1787,8 +1787,8 @@ Z. 4 v. u. [M. 12,37](https://sanskrit-lexicon-scans.github.io/manu/index.html?1
 **8 (with prefix))** — Mit *prādhi* in *prādhyeṣaṇa*.
 - **EN:** — With *prādhi* in *prādhyeṣaṇa*.
 
-**9 (with prefix anu))** — Mit *anu*, *anviṣati* ([MBH. 3,271,38](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?3,271,38)), *anveṣati, ˚te* und *anviṣyati, ˚te* hinterhergehen, nachgehen, suchen, sich umsehen nach [39,3]. [130,24]. [MBH. 1,125,24](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?1,125,24). [ŚĀK. 32,13](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?32,13). durchsuchen.
-- **EN:** — With *anu*, *anviṣati* ([MBH. 3,271,38](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?3,271,38)), *anveṣati, ˚te* and *anviṣyati, ˚te* to follow after, go in pursuit, seek, look about for [39,3]. [130,24]. [MBH. 1,125,24](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?1,125,24). [ŚĀK. 32,13](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?32,13). to search through.
+**9 (with prefix anu))** — Mit *anu*, *anviṣati* ([MBH. 3,271,38](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?3,271,38)), *anveṣati, ˚te* und *anviṣyati, ˚te* hinterhergehen, nachgehen, suchen, sich umsehen nach [39,3](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?39). [130,24](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?130). [MBH. 1,125,24](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?1,125,24). [ŚĀK. 32,13](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?32,13). durchsuchen.
+- **EN:** — With *anu*, *anviṣati* ([MBH. 3,271,38](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?3,271,38)), *anveṣati, ˚te* and *anviṣyati, ˚te* to follow after, go in pursuit, seek, look about for [39,3](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?39). [130,24](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?130). [MBH. 1,125,24](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?1,125,24). [ŚĀK. 32,13](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?32,13). to search through.
 
 **10 (with prefix))** — Mit *samanu* (*iṣyati*) aufsuchen [BĀLAR. 107,22].
 - **EN:** — With *samanu* (*iṣyati*) to seek out [BĀLAR. 107,22].
@@ -1884,14 +1884,14 @@ Z. 4 v. u. [M. 12,37](https://sanskrit-lexicon-scans.github.io/manu/index.html?1
 **4a)** — a〉 mit Acc.
 - **EN:** — a) with Acc.
 
-**4b)** — b〉 mit zwei Acc. wünschen, dass sei [41,21]. [43,3]. [71,26]. [ĀPAST. 2,23,4. 5].
-- **EN:** — b) with two Acc. to wish that (something) be [41,21]. [43,3]. [71,26]. [ĀPAST. 2,23,4. 5].
+**4b)** — b〉 mit zwei Acc. wünschen, dass sei [41,21](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?41). [43,3](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?43). [71,26](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?71). [ĀPAST. 2,23,4. 5].
+- **EN:** — b) with two Acc. to wish that (something) be [41,21](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?41). [43,3](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?43). [71,26](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?71). [ĀPAST. 2,23,4. 5].
 
-**4c)** — c〉 mit Acc. und Abl. ([90,23]) oder Loc. Etwas von Jmd oder Etwas zu erhalten suchen, erwarten, sich Etwas von Jmd erbitten. Meistens Med.
-- **EN:** — c) with Acc. and Abl. ([90,23]) or Loc. to seek to obtain something from someone or something, to expect, to request something from someone. Mostly Med.
+**4c)** — c〉 mit Acc. und Abl. ([90,23](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?90)) oder Loc. Etwas von Jmd oder Etwas zu erhalten suchen, erwarten, sich Etwas von Jmd erbitten. Meistens Med.
+- **EN:** — c) with Acc. and Abl. ([90,23](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?90)) or Loc. to seek to obtain something from someone or something, to expect, to request something from someone. Mostly Med.
 
-**4d)** — d〉 mit Infin. Willens —, im Begriff sein, im Sinne haben zu. Mit *na* sich weigern zu [212,17].
-- **EN:** — d) with Infin. to be willing to, to be about to, to intend to. With *na* to refuse to [212,17].
+**4d)** — d〉 mit Infin. Willens —, im Begriff sein, im Sinne haben zu. Mit *na* sich weigern zu [212,17](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?212).
+- **EN:** — d) with Infin. to be willing to, to be about to, to intend to. With *na* to refuse to [212,17](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?212).
 
 **4e)** — e〉 mit Acc. und Inf.
 - **EN:** — e) with Acc. and Inf.
@@ -1905,19 +1905,19 @@ Z. 4 v. u. [M. 12,37](https://sanskrit-lexicon-scans.github.io/manu/index.html?1
 **4f)** — f〉 mit Potent. oder Imperat. wünschen, dass. Zu belegen nur Potent. mit *iti*, wobei die Person, von der man Etwas wünscht, im Acc. steht.
 - **EN:** — f) with Potent. or Imperat. to wish, dass. attested only Potent. with *iti*, where the person from whom one desires something stands in the Acc..
 
-**4g)** — g〉 ohne Ergänzung wollen, geneigt —, einverstanden sein. Mit *na* nicht einverstanden sein, sich weigern [42,13].
-- **EN:** — g) absolutely, to be willing, inclined, in agreement. With *na* to disagree, refuse [42,13].
+**4g)** — g〉 ohne Ergänzung wollen, geneigt —, einverstanden sein. Mit *na* nicht einverstanden sein, sich weigern [42,13](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?42).
+- **EN:** — g) absolutely, to be willing, inclined, in agreement. With *na* to disagree, refuse [42,13](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?42).
 
 **5)** — 5〉 nach Belieben wählen [M. 8,384](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,384).
 - **EN:** — 5) to choose at will [M. 8,384](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,384).
 
-**6)** — 6〉 anerkennen, nehmen, statuiren [238,9]. mit zwei Acc. dafür halten, dass Etwas sei.
-- **EN:** — 6) to acknowledge, accept, posit [238,9]; with two Acc. to hold that something is (so-and-so).
+**6)** — 6〉 anerkennen, nehmen, statuiren [238,9](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?238). mit zwei Acc. dafür halten, dass Etwas sei.
+- **EN:** — 6) to acknowledge, accept, posit [238,9](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?238); with two Acc. to hold that something is (so-and-so).
 
 **7 (passive))** — Pass. *iṣyate* (*iṣyati* [MBH. 3,59](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.59) fehlerhaft)
-— 1〉 gewünscht —, gern gesehen werden. *jñāpayitumiṣyamāṇaḥ* von dem man Etwas zu wissen thun will [222,33].
+— 1〉 gewünscht —, gern gesehen werden. *jñāpayitumiṣyamāṇaḥ* von dem man Etwas zu wissen thun will [222,33](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?222).
 - **EN:** — Pass. *iṣyate* (*iṣyati* [MBH. 3,59](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.59) incorrectly)
-— 1) to be wished for, to be welcome. *jñāpayitumiṣyamāṇaḥ* of whom one wishes to learn something [222,33].
+— 1) to be wished for, to be welcome. *jñāpayitumiṣyamāṇaḥ* of whom one wishes to learn something [222,33](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?222).
 
 **8)** — 2〉 verlangt —, gefordert werden, vorgeschrieben sein.
 - **EN:** — 2) to be demanded, required, prescribed.
@@ -1978,8 +1978,8 @@ Z. 4 v. u. [M. 12,37](https://sanskrit-lexicon-scans.github.io/manu/index.html?1
 - **EN:** — With *prati*
 — 1) to seek [ṚV. 10,129,4](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.129.html#rv10.129.04).
 
-**25)** — 2〉 entgegennehmen, empfangen von (Gen.) [68,32].
-- **EN:** — 2) to receive, accept from (Gen.) [68,32].
+**25)** — 2〉 entgegennehmen, empfangen von (Gen.) [68,32](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?68).
+- **EN:** — 2) to receive, accept from (Gen.) [68,32](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?68).
 
 **26)** — 3〉 auffangen in (Loc.) [BĀLAR. 206,12]. [PRASANNAR. 118,23].
 - **EN:** — 3) to catch in (Loc.) [BĀLAR. 206,12]. [PRASANNAR. 118,23].

@@ -79,7 +79,7 @@
 [P. 3,4,65.](https://ashtadhyayi.com/sutraani/3/4/65)
 Sch. zu [3,1,7.](https://ashtadhyayi.com/sutraani/3/1/7) *na sa jānāti devitum*
 [MBH. 2,1720.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1720) [5,1075.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1075) *na jāne vaktuṃ tvatkarmaitadadbhutamiti*
-[DAŚAK.] in [BENF. Chr. 187,21.] — *na jānāti śvagṛdhrairjagdhimātmanaḥ*
+[DAŚAK.] in [BENF. Chr. 187,21.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?187) — *na jānāti śvagṛdhrairjagdhimātmanaḥ*
 [M. 3,115.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,115) *evaṃ svabhāvaṃ jñātvāsām*
 [9,16.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,16) *jñāsyase balamātmīyam*
 [MBH. 4,1924.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1924) *jñātvā teṣāmabhiprāyam*
@@ -146,7 +146,7 @@ Sch. zu [3,1,7.](https://ashtadhyayi.com/sutraani/3/1/7) *na sa jānāti devitum
 [P. 3,4,65.](https://ashtadhyayi.com/sutraani/3/4/65)
 Sch. to [3,1,7.](https://ashtadhyayi.com/sutraani/3/1/7) *na sa jānāti devitum*
 [MBH. 2,1720.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1720) [5,1075.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1075) *na jāne vaktuṃ tvatkarmaitadadbhutamiti*
-[DAŚAK.] in [BENF. Chr. 187,21.] — *na jānāti śvagṛdhrairjagdhimātmanaḥ*
+[DAŚAK.] in [BENF. Chr. 187,21.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?187) — *na jānāti śvagṛdhrairjagdhimātmanaḥ*
 [M. 3,115.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,115) *evaṃ svabhāvaṃ jñātvāsām*
 [9,16.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,16) *jñāsyase balamātmīyam*
 [MBH. 4,1924.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1924) *jñātvā teṣāmabhiprāyam*
@@ -166,7 +166,7 @@ Sch. to [3,1,7.](https://ashtadhyayi.com/sutraani/3/1/7) *na sa jānāti devitum
 **1a)** [15584.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15584) Mit dem acc. des obj. und praed. Jmd kennen als, wissen, innewerden, merken, dass: *jānīyādasthirāṃ vācamutsiktamanasāṃ tathā*
 [M. 8,71.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,71) [9,295.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,295) *tasya māṃ tanayāṃ sarve jānīta*
 [MBH. 3,2476.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2476) [15605.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15605) [1,5950.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5950) *vāṇān — jānāno 'pyakṣayān*
-[8,796.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.796) [BENF. Chr. 22,17.] [SĀV. 6,34.] *nājñāsiṣamahaṃ pūrvamanityaṃ kālaparyayam*
+[8,796.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.796) [BENF. Chr. 22,17.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?22) [SĀV. 6,34.] *nājñāsiṣamahaṃ pūrvamanityaṃ kālaparyayam*
 [HARIV. 7091.](https://sanskrit-lexicon-scans.github.io/hariv?7091)
 [R. 1,59,2.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,59,2)
 [MEGH. 6.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?6) [81.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?81) *suhṛdaṃ sarvabhūtānāṃ jñātvā mām*
@@ -188,7 +188,7 @@ Sch. to [3,1,7.](https://ashtadhyayi.com/sutraani/3/1/7) *na sa jānāti devitum
 - **EN:** [15584.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15584) With the acc. of the obj. and praed. to know someone as, to know, to become aware, to notice that: *jānīyādasthirāṃ vācamutsiktamanasāṃ tathā*
 [M. 8,71.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,71) [9,295.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,295) *tasya māṃ tanayāṃ sarve jānīta*
 [MBH. 3,2476.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2476) [15605.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15605) [1,5950.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5950) *vāṇān — jānāno 'pyakṣayān*
-[8,796.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.796) [BENF. Chr. 22,17.] [SĀV. 6,34.] *nājñāsiṣamahaṃ pūrvamanityaṃ kālaparyayam*
+[8,796.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.796) [BENF. Chr. 22,17.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?22) [SĀV. 6,34.] *nājñāsiṣamahaṃ pūrvamanityaṃ kālaparyayam*
 [HARIV. 7091.](https://sanskrit-lexicon-scans.github.io/hariv?7091)
 [R. 1,59,2.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,59,2)
 [MEGH. 6.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?6) [81.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?81) *suhṛdaṃ sarvabhūtānāṃ jñātvā mām*
@@ -332,7 +332,7 @@ Sch. *jñāta* known, recognised
 [P. 3,4,65.](https://ashtadhyayi.com/sutraani/3/4/65)
 Sch. zu [3,1,7.](https://ashtadhyayi.com/sutraani/3/1/7) *na sa jānāti devitum*
 [MBH. 2,1720.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1720) [5,1075.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1075) *na jāne vaktuṃ tvatkarmaitadadbhutamiti*
-[DAŚAK.] in [BENF. Chr. 187,21.] — *na jānāti śvagṛdhrairjagdhimātmanaḥ*
+[DAŚAK.] in [BENF. Chr. 187,21.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?187) — *na jānāti śvagṛdhrairjagdhimātmanaḥ*
 [M. 3,115.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,115) *evaṃ svabhāvaṃ jñātvāsām*
 [9,16.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,16) *jñāsyase balamātmīyam*
 [MBH. 4,1924.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1924) *jñātvā teṣāmabhiprāyam*
@@ -399,7 +399,7 @@ Sch. zu [3,1,7.](https://ashtadhyayi.com/sutraani/3/1/7) *na sa jānāti devitum
 [P. 3,4,65.](https://ashtadhyayi.com/sutraani/3/4/65)
 Sch. zu [3,1,7.](https://ashtadhyayi.com/sutraani/3/1/7) *na sa jānāti devitum*
 [MBH. 2,1720.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1720) [5,1075.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1075) *na jāne vaktuṃ tvatkarmaitadadbhutamiti*
-[DAŚAK.] in [BENF. Chr. 187,21.] — *na jānāti śvagṛdhrairjagdhimātmanaḥ*
+[DAŚAK.] in [BENF. Chr. 187,21.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?187) — *na jānāti śvagṛdhrairjagdhimātmanaḥ*
 [M. 3,115.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,115) *evaṃ svabhāvaṃ jñātvāsām*
 [9,16.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,16) *jñāsyase balamātmīyam*
 [MBH. 4,1924.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1924) *jñātvā teṣāmabhiprāyam*
@@ -420,7 +420,7 @@ Sch. zu [3,1,7.](https://ashtadhyayi.com/sutraani/3/1/7) *na sa jānāti devitum
 **sense-1-subframe-acc-pred)** [15584.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15584) Mit dem acc. des obj. und praed. Jmd kennen als, wissen, innewerden, merken, dass: *jānīyādasthirāṃ vācamutsiktamanasāṃ tathā*
 [M. 8,71.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,71) [9,295.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,295) *tasya māṃ tanayāṃ sarve jānīta*
 [MBH. 3,2476.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2476) [15605.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15605) [1,5950.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5950) *vāṇān — jānāno 'pyakṣayān*
-[8,796.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.796) [BENF. Chr. 22,17.] [SĀV. 6,34.] *nājñāsiṣamahaṃ pūrvamanityaṃ kālaparyayam*
+[8,796.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.796) [BENF. Chr. 22,17.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?22) [SĀV. 6,34.] *nājñāsiṣamahaṃ pūrvamanityaṃ kālaparyayam*
 [HARIV. 7091.](https://sanskrit-lexicon-scans.github.io/hariv?7091)
 [R. 1,59,2.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,59,2)
 [MEGH. 6.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?6) [81.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?81) *suhṛdaṃ sarvabhūtānāṃ jñātvā mām*
@@ -434,7 +434,7 @@ Sch. zu [3,1,7.](https://ashtadhyayi.com/sutraani/3/1/7) *na sa jānāti devitum
 - **RU:** [15584.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15584) С acc. obj. и praed. — знать кого-либо как, замечать, осознавать, что: *jānīyādasthirāṃ vācamutsiktamanasāṃ tathā*
 [M. 8,71.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,71) [9,295.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,295) *tasya māṃ tanayāṃ sarve jānīta*
 [MBH. 3,2476.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2476) [15605.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15605) [1,5950.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5950) *vāṇān — jānāno 'pyakṣayān*
-[8,796.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.796) [BENF. Chr. 22,17.] [SĀV. 6,34.] *nājñāsiṣamahaṃ pūrvamanityaṃ kālaparyayam*
+[8,796.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.796) [BENF. Chr. 22,17.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?22) [SĀV. 6,34.] *nājñāsiṣamahaṃ pūrvamanityaṃ kālaparyayam*
 [HARIV. 7091.](https://sanskrit-lexicon-scans.github.io/hariv?7091)
 [R. 1,59,2.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,59,2)
 [MEGH. 6.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?6) [81.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?81) *suhṛdaṃ sarvabhūtānāṃ jñātvā mām*

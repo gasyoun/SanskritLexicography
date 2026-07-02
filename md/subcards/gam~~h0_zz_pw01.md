@@ -90,8 +90,8 @@
 **T221)** — 5〉 gehen an, unternehmen.
 - **EN:** — 5〉 to set about, undertake.
 
-**T222)** — 6〉 auf Etwas kommen, — verfallen, in Erfahrung bringen, erfahren von (Abl. [323,28]), bemerken, erkennen, errathen, verstehen, sich von Etwas überzeugen, überzeugt —, der Meinung sein, wissen (*avagacchant* wissentlich [107,29]). *avagata* mit act. und pass. Bed.
-- **EN:** — 6〉 to hit upon something, — fall upon, find out, learn of (Abl. [323,28]), notice, recognize, guess, understand, become convinced of something, convinced —, of the opinion, know (*avagacchant* knowingly [107,29]). *avagata* with act. and pass. Bed.
+**T222)** — 6〉 auf Etwas kommen, — verfallen, in Erfahrung bringen, erfahren von (Abl. [323,28](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?323)), bemerken, erkennen, errathen, verstehen, sich von Etwas überzeugen, überzeugt —, der Meinung sein, wissen (*avagacchant* wissentlich [107,29](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?107)). *avagata* mit act. und pass. Bed.
+- **EN:** — 6〉 to hit upon something, — fall upon, find out, learn of (Abl. [323,28](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?323)), notice, recognize, guess, understand, become convinced of something, convinced —, of the opinion, know (*avagacchant* knowingly [107,29](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?107)). *avagata* with act. and pass. Bed.
 
 **T223)** — 7〉 erkennen für, halten, ansehen, wissen dass; mit zwei Acc. *na tathāsmi yathā māmavagacchasi* so v. a. ich bin nicht so, wie du glaubst. *avagata* mit act. Bed.
 - **EN:** — 7〉 to recognize as, consider, regard, know that; with two Acc. *na tathāsmi yathā māmavagacchasi* thus v. a. I am not as you believe. *avagata* with act. Bed.
@@ -123,17 +123,17 @@
 **T232)** — Mit *ā*
 - **EN:** — With *ā*
 
-**T233)** — 1〉 herbeikommen, sich einstellen, kommen, — von (Abl.), — zu, in oder nach, treten an oder zu; mit Acc. oder Loc. *iha* [78,20]. *atra* [151,19]. Mit nachfolgendem *accha* [ṚV. 7,18,4](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.018.html#rv07.018.04).
-- **EN:** — 1〉 to come hither, present oneself, come, — from (Abl.), — to, into or toward, step up to or unto; with Acc. or Loc. *iha* [78,20]. *atra* [151,19]. With *accha* following [ṚV. 7,18,4](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.018.html#rv07.018.04).
+**T233)** — 1〉 herbeikommen, sich einstellen, kommen, — von (Abl.), — zu, in oder nach, treten an oder zu; mit Acc. oder Loc. *iha* [78,20](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?78). *atra* [151,19](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?151). Mit nachfolgendem *accha* [ṚV. 7,18,4](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.018.html#rv07.018.04).
+- **EN:** — 1〉 to come hither, present oneself, come, — from (Abl.), — to, into or toward, step up to or unto; with Acc. or Loc. *iha* [78,20](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?78). *atra* [151,19](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?151). With *accha* following [ṚV. 7,18,4](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.018.html#rv07.018.04).
 
-**T234)** — 2〉 wiederkommen, zurückkehren. Gewöhnlich mit *punar* [21,27]. [29,25].
-- **EN:** — 2〉 to come again, return. Usually with *punar* [21,27]. [29,25].
+**T234)** — 2〉 wiederkommen, zurückkehren. Gewöhnlich mit *punar* [21,27](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?21). [29,25](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?29).
+- **EN:** — 2〉 to come again, return. Usually with *punar* [21,27](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?21). [29,25](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?29).
 
 **T235)** — 3〉 zusammenkommen mit (Instr.) [MBH. 3,68,34](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?3,68,34).
 - **EN:** — 3〉 to come together with (Instr.) [MBH. 3,68,34](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?3,68,34).
 
-**T236)** — 4〉 erreichen, treffen, zu Theil werden. *adṛṣṭaṃ bhayaṃ tvāmāgamiṣyati* [39,1]. Mit vorangehendem *acchā* [ṚV. 8,929](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.929.html#rv08.929.01).
-- **EN:** — 4〉 to reach, meet, fall to one's share. *adṛṣṭaṃ bhayaṃ tvāmāgamiṣyati* [39,1]. With *acchā* preceding [ṚV. 8,929](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.929.html#rv08.929.01).
+**T236)** — 4〉 erreichen, treffen, zu Theil werden. *adṛṣṭaṃ bhayaṃ tvāmāgamiṣyati* [39,1](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?39). Mit vorangehendem *acchā* [ṚV. 8,929](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.929.html#rv08.929.01).
+- **EN:** — 4〉 to reach, meet, fall to one's share. *adṛṣṭaṃ bhayaṃ tvāmāgamiṣyati* [39,1](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?39). With *acchā* preceding [ṚV. 8,929](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.929.html#rv08.929.01).
 
 **T237)** — 5〉 in einen Zustand eingehen, — gerathen, sich hingeben.
 - **EN:** — 5〉 to enter —, fall into, give oneself over to a state.
@@ -186,8 +186,8 @@
 **T253)** — 3〉 Kunde von Etwas (Acc.) erhalten, — sich verschaffen [GOBH. 1,5,12]. (Med.). [CARAKA. 1,8].
 - **EN:** — 3〉 to receive news of something (Acc.), — to procure it for oneself [GOBH. 1,5,12]. (Med.). [CARAKA. 1,8].
 
-**T254)** — 4〉 Etwas (Acc.) von Jmd (Abl.) lernen [222,10]. [RAGH. 10,72](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?10,72). [Spr. 4213](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4213). *āgamita* in Comp. mit dem Lehrer.
-- **EN:** — 4〉 to learn something (Acc.) from someone (Abl.) [222,10]. [RAGH. 10,72](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?10,72). [Spr. 4213](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4213). *āgamita* in Comp. with the teacher.
+**T254)** — 4〉 Etwas (Acc.) von Jmd (Abl.) lernen [222,10](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?222). [RAGH. 10,72](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?10,72). [Spr. 4213](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4213). *āgamita* in Comp. mit dem Lehrer.
+- **EN:** — 4〉 to learn something (Acc.) from someone (Abl.) [222,10](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?222). [RAGH. 10,72](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?10,72). [Spr. 4213](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4213). *āgamita* in Comp. with the teacher.
 
 **T255)** — 5〉 Med. die Zeit kommen lassen, abwarten, sich gedulden.
 - **EN:** — 5〉 Med. to let the time come, wait out, be patient.
@@ -198,8 +198,8 @@
 **T257)** — Intens. (*āganīganti*) wiederholt sich nähern, mit Acc.
 - **EN:** — Intens. (*āganīganti*) to approach repeatedly, with Acc.
 
-**T258)** — Mit *adhyā* [235,1]. [2]. stossen auf, auffinden.
-- **EN:** — With *adhyā* [235,1]. [2]. to come upon, find.
+**T258)** — Mit *adhyā* [235,1](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?235). [2](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?235). stossen auf, auffinden.
+- **EN:** — With *adhyā* [235,1](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?235). [2](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?235). to come upon, find.
 
 **T259)** — Mit *anvā* hinter Jmd her kommen an einen Ort, nachfolgen, entlang gehen; mit Acc. *anvāgata* mit act. und pass. Bed. Vgl. *ananvāgata*.
 - **EN:** — With *anvā* to come to a place behind someone, follow after, go along; with Acc. *anvāgata* with act. and pass. Bed. Vgl. *ananvāgata*.
@@ -234,8 +234,8 @@
 **T269)** — Mit *upā*
 - **EN:** — With *upā*
 
-**T270)** — 1〉 herbeikommen, hinzutreten, kommen zu oder nach (Acc. oder Loc.). *˚gata* herbeigekommen, gekommen (auch von einer Zeit [116,7]), — um sich unter Jmds Schutz zu stellen.
-- **EN:** — 1〉 to come hither, step up, come to or toward (Acc. or Loc.). *˚gata* come hither, come (also of a time [116,7]), — in order to place oneself under someone's protection.
+**T270)** — 1〉 herbeikommen, hinzutreten, kommen zu oder nach (Acc. oder Loc.). *˚gata* herbeigekommen, gekommen (auch von einer Zeit [116,7](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?116)), — um sich unter Jmds Schutz zu stellen.
+- **EN:** — 1〉 to come hither, step up, come to or toward (Acc. or Loc.). *˚gata* come hither, come (also of a time [116,7](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?116)), — in order to place oneself under someone's protection.
 
 **T271)** — 2〉 zurückkehren.
 - **EN:** — 2〉 to return.
@@ -291,8 +291,8 @@
 **T288)** — Mit *pratyā*
 - **EN:** — With *pratyā*
 
-**T289)** — 1〉 zurück-, wiederkehren, — von (Abl. [291,15]), — zu (Acc.).
-- **EN:** — 1〉 to turn back, return, — from (Abl. [291,15]), — to (Acc.).
+**T289)** — 1〉 zurück-, wiederkehren, — von (Abl. [291,15](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?291)), — zu (Acc.).
+- **EN:** — 1〉 to turn back, return, — from (Abl. [291,15](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?291)), — to (Acc.).
 
 **T290)** — 2〉 wieder zu sich selbst kommen, seine Besinnung wiedererlangen.
 - **EN:** — 2〉 to come to oneself again, regain one's senses.
@@ -448,9 +448,9 @@
 - **RU:** — 5〉 приступать к, предпринимать.
   <sub>attested</sub>
 
-**pw_222_6)** — 6〉 auf Etwas kommen, — verfallen, in Erfahrung bringen, erfahren von (Abl. [323,28]), bemerken, erkennen, errathen, verstehen, sich von Etwas überzeugen, überzeugt —, der Meinung sein, wissen (*avagacchant* wissentlich [107,29]). *avagata* mit act. und pass. Bed.
+**pw_222_6)** — 6〉 auf Etwas kommen, — verfallen, in Erfahrung bringen, erfahren von (Abl. [323,28](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?323)), bemerken, erkennen, errathen, verstehen, sich von Etwas überzeugen, überzeugt —, der Meinung sein, wissen (*avagacchant* wissentlich [107,29](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?107)). *avagata* mit act. und pass. Bed.
 
-- **RU:** — 6〉 доходить до чего-л., — приходить к, узнавать, разузнавать о (Abl. [323,28]), замечать, распознавать, угадывать, понимать, убеждаться в чём-л., быть убеждённым —, быть того мнения, знать (*avagacchant* сознательно [107,29]). *avagata* с act. и pass. Bed.
+- **RU:** — 6〉 доходить до чего-л., — приходить к, узнавать, разузнавать о (Abl. [323,28](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?323)), замечать, распознавать, угадывать, понимать, убеждаться в чём-л., быть убеждённым —, быть того мнения, знать (*avagacchant* сознательно [107,29](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?107)). *avagata* с act. и pass. Bed.
   <sub>attested</sub>
 
 **pw_223_7)** — 7〉 erkennen für, halten, ansehen, wissen dass; mit zwei Acc. *na tathāsmi yathā māmavagacchasi* so v. a. ich bin nicht so, wie du glaubst. *avagata* mit act. Bed.
@@ -503,14 +503,14 @@
 - **RU:** — С *ā*
   <sub>attested</sub>
 
-**pw_233_1)** — 1〉 herbeikommen, sich einstellen, kommen, — von (Abl.), — zu, in oder nach, treten an oder zu; mit Acc. oder Loc. *iha* [78,20]. *atra* [151,19]. Mit nachfolgendem *accha* [ṚV. 7,18,4](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.018.html#rv07.018.04).
+**pw_233_1)** — 1〉 herbeikommen, sich einstellen, kommen, — von (Abl.), — zu, in oder nach, treten an oder zu; mit Acc. oder Loc. *iha* [78,20](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?78). *atra* [151,19](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?151). Mit nachfolgendem *accha* [ṚV. 7,18,4](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.018.html#rv07.018.04).
 
-- **RU:** — 1〉 приходить, являться, приходить — от (Abl.), — к, в или в направлении, вступать в или подступать к; с Acc. или Loc. *iha* [78,20]. *atra* [151,19]. С последующим *accha* [ṚV. 7,18,4](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.018.html#rv07.018.04).
+- **RU:** — 1〉 приходить, являться, приходить — от (Abl.), — к, в или в направлении, вступать в или подступать к; с Acc. или Loc. *iha* [78,20](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?78). *atra* [151,19](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?151). С последующим *accha* [ṚV. 7,18,4](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.018.html#rv07.018.04).
   <sub>attested</sub>
 
-**pw_234_2)** — 2〉 wiederkommen, zurückkehren. Gewöhnlich mit *punar* [21,27]. [29,25].
+**pw_234_2)** — 2〉 wiederkommen, zurückkehren. Gewöhnlich mit *punar* [21,27](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?21). [29,25](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?29).
 
-- **RU:** — 2〉 приходить снова, возвращаться. Обычно с *punar* [21,27]. [29,25].
+- **RU:** — 2〉 приходить снова, возвращаться. Обычно с *punar* [21,27](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?21). [29,25](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?29).
   <sub>attested</sub>
 
 **pw_235_3)** — 3〉 zusammenkommen mit (Instr.) [MBH. 3,68,34](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?3,68,34).
@@ -518,9 +518,9 @@
 - **RU:** — 3〉 сходиться с (Instr.) [MBH. 3,68,34](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?3,68,34).
   <sub>attested</sub>
 
-**pw_236_4)** — 4〉 erreichen, treffen, zu Theil werden. *adṛṣṭaṃ bhayaṃ tvāmāgamiṣyati* [39,1]. Mit vorangehendem *acchā* [ṚV. 8,929](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.929.html#rv08.929.01).
+**pw_236_4)** — 4〉 erreichen, treffen, zu Theil werden. *adṛṣṭaṃ bhayaṃ tvāmāgamiṣyati* [39,1](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?39). Mit vorangehendem *acchā* [ṚV. 8,929](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.929.html#rv08.929.01).
 
-- **RU:** — 4〉 достигать, попадать, доставаться в удел. *adṛṣṭaṃ bhayaṃ tvāmāgamiṣyati* [39,1]. С предшествующим *acchā* [ṚV. 8,929](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.929.html#rv08.929.01).
+- **RU:** — 4〉 достигать, попадать, доставаться в удел. *adṛṣṭaṃ bhayaṃ tvāmāgamiṣyati* [39,1](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?39). С предшествующим *acchā* [ṚV. 8,929](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.929.html#rv08.929.01).
   <sub>attested</sub>
 
 **pw_237_5)** — 5〉 in einen Zustand eingehen, — gerathen, sich hingeben.
@@ -608,9 +608,9 @@
 - **RU:** — 3〉 получать —, добывать себе весть о чём-л. (Acc.) [GOBH. 1,5,12]. (Med.). [CARAKA. 1,8].
   <sub>attested</sub>
 
-**pw_254_4)** — 4〉 Etwas (Acc.) von Jmd (Abl.) lernen [222,10]. [RAGH. 10,72](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?10,72). [Spr. 4213](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4213). *āgamita* in Comp. mit dem Lehrer.
+**pw_254_4)** — 4〉 Etwas (Acc.) von Jmd (Abl.) lernen [222,10](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?222). [RAGH. 10,72](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?10,72). [Spr. 4213](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4213). *āgamita* in Comp. mit dem Lehrer.
 
-- **RU:** — 4〉 учиться чему-л. (Acc.) у кого-л. (Abl.) [222,10]. [RAGH. 10,72](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?10,72). [Spr. 4213](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4213). *āgamita* в Comp. с учителем.
+- **RU:** — 4〉 учиться чему-л. (Acc.) у кого-л. (Abl.) [222,10](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?222). [RAGH. 10,72](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?10,72). [Spr. 4213](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4213). *āgamita* в Comp. с учителем.
   <sub>attested</sub>
 
 **pw_255_5)** — 5〉 Med. die Zeit kommen lassen, abwarten, sich gedulden.
@@ -628,9 +628,9 @@
 - **RU:** — Intens. (*āganīganti*) неоднократно приближаться, с Acc.
   <sub>attested</sub>
 
-**pw_258)** — Mit *adhyā* [235,1]. [2]. stossen auf, auffinden.
+**pw_258)** — Mit *adhyā* [235,1](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?235). [2](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?235). stossen auf, auffinden.
 
-- **RU:** — С *adhyā* [235,1]. [2]. наталкиваться на, обнаруживать.
+- **RU:** — С *adhyā* [235,1](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?235). [2](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?235). наталкиваться на, обнаруживать.
   <sub>attested</sub>
 
 **pw_259)** — Mit *anvā* hinter Jmd her kommen an einen Ort, nachfolgen, entlang gehen; mit Acc. *anvāgata* mit act. und pass. Bed. Vgl. *ananvāgata*.
@@ -688,9 +688,9 @@
 - **RU:** — С *upā*
   <sub>attested</sub>
 
-**pw_270_1)** — 1〉 herbeikommen, hinzutreten, kommen zu oder nach (Acc. oder Loc.). *˚gata* herbeigekommen, gekommen (auch von einer Zeit [116,7]), — um sich unter Jmds Schutz zu stellen.
+**pw_270_1)** — 1〉 herbeikommen, hinzutreten, kommen zu oder nach (Acc. oder Loc.). *˚gata* herbeigekommen, gekommen (auch von einer Zeit [116,7](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?116)), — um sich unter Jmds Schutz zu stellen.
 
-- **RU:** — 1〉 приходить, подступать, приходить к или в направлении (Acc. или Loc.). *˚gata* пришедший (также о времени [116,7]), — чтобы отдаться под чью-л. защиту.
+- **RU:** — 1〉 приходить, подступать, приходить к или в направлении (Acc. или Loc.). *˚gata* пришедший (также о времени [116,7](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?116)), — чтобы отдаться под чью-л. защиту.
   <sub>attested</sub>
 
 **pw_271_2)** — 2〉 zurückkehren.
@@ -783,9 +783,9 @@
 - **RU:** — С *pratyā*
   <sub>attested</sub>
 
-**pw_289_1)** — 1〉 zurück-, wiederkehren, — von (Abl. [291,15]), — zu (Acc.).
+**pw_289_1)** — 1〉 zurück-, wiederkehren, — von (Abl. [291,15](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?291)), — zu (Acc.).
 
-- **RU:** — 1〉 возвращаться, — от (Abl. [291,15]), — к (Acc.).
+- **RU:** — 1〉 возвращаться, — от (Abl. [291,15](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?291)), — к (Acc.).
   <sub>attested</sub>
 
 **pw_290_2)** — 2〉 wieder zu sich selbst kommen, seine Besinnung wiedererlangen.

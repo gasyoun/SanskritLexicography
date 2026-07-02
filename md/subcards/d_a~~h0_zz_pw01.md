@@ -163,9 +163,9 @@
 - **RU:** — 1〉 отдавать, предавать, передавать.
   <sub>DCS 12366 · attested</sub>
 
-**mit_T50_2)** — 2〉 Jmd preisgeben [34,6].
+**mit_T50_2)** — 2〉 Jmd preisgeben [34,6](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?34).
 
-- **RU:** — 2〉 отдавать кого-либо на произвол [34,6].
+- **RU:** — 2〉 отдавать кого-либо на произвол [34,6](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?34).
   <sub>DCS 12366 · attested</sub>
 
 **mit_T50_3)** — 3〉 Etwas preisgeben, so v. a. zu Grunde gehen lassen.
@@ -188,9 +188,9 @@
 - **RU:** — С *pari*
   <sub>DCS 12366 · attested</sub>
 
-**mit_T56_1)** — 1〉 übergeben, überantworten, anvertrauen, niederlegen bei oder in (Dat., Loc. oder Gen.). Partic. *parītta* [82,5].
+**mit_T56_1)** — 1〉 übergeben, überantworten, anvertrauen, niederlegen bei oder in (Dat., Loc. oder Gen.). Partic. *parītta* [82,5](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?82).
 
-- **RU:** — 1〉 передавать, вручать, доверять, вкладывать у или в (Dat., Loc. или Gen.). Partic. *parītta* [82,5].
+- **RU:** — 1〉 передавать, вручать, доверять, вкладывать у или в (Dat., Loc. или Gen.). Partic. *parītta* [82,5](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?82).
   <sub>DCS 12366 · attested</sub>
 
 **mit_T56_2)** — 2〉 verleihen.
@@ -213,9 +213,9 @@
 - **RU:** — 1〉 отдавать, давать, дарить, в жёны (с или без *bhāryām*) давать. *pradadet* [HEMĀDRI 1,310,18].
   <sub>DCS 12366 · attested</sub>
 
-**mit_T64_2)** — 2〉 übergeben, darbringen, darreichen, anbieten [68,24]. *yuddham, dvaṃdvayuddham* Jmd (Dat.) einen Kampf, Zweikampf anbieten, mit — zu kämpfen sich bereit erklären.
+**mit_T64_2)** — 2〉 übergeben, darbringen, darreichen, anbieten [68,24](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?68). *yuddham, dvaṃdvayuddham* Jmd (Dat.) einen Kampf, Zweikampf anbieten, mit — zu kämpfen sich bereit erklären.
 
-- **RU:** — 2〉 передавать, подносить, вручать, предлагать [68,24]. *yuddham, dvaṃdvayuddham* предлагать кому-либо (Dat.) бой, поединок, объявлять о готовности сразиться с кем-либо.
+- **RU:** — 2〉 передавать, подносить, вручать, предлагать [68,24](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?68). *yuddham, dvaṃdvayuddham* предлагать кому-либо (Dat.) бой, поединок, объявлять о готовности сразиться с кем-либо.
   <sub>DCS 12366 · attested</sub>
 
 **mit_T64_3)** — 3〉 abtragen, bezahlen (eine Schuld).
@@ -278,9 +278,9 @@
 - **RU:** — 4〉 велеть класть в, велеть вкладывать в (Loc.), велеть вставлять (*mudrām* пробку [BHĀVAPR. 2,101]).
   <sub>DCS 12366 · attested</sub>
 
-**mit_T64_caus_5)** — 5〉 hineinthun —, hineinlegen in (Loc.) [{{CARARA->CARAKA||20160103|Dhaval Patel, Jim Funderburk.|https://github.com/sanskrit-lexicon/CORRECTIONS/issues/216|It is not a typo. Print error.}}. 6,27]. *vastim* Jmd (Dat.) ein Klystier setzen [8,7].
+**mit_T64_caus_5)** — 5〉 hineinthun —, hineinlegen in (Loc.) [{{CARARA->CARAKA||20160103|Dhaval Patel, Jim Funderburk.|https://github.com/sanskrit-lexicon/CORRECTIONS/issues/216|It is not a typo. Print error.}}. 6,27]. *vastim* Jmd (Dat.) ein Klystier setzen [8,7](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?8).
 
-- **RU:** — 5〉 класть в, вкладывать в (Loc.) [{{CARARA->CARAKA||20160103|Dhaval Patel, Jim Funderburk.|https://github.com/sanskrit-lexicon/CORRECTIONS/issues/216|It is not a typo. Print error.}}. 6,27]. *vastim* ставить кому-либо (Dat.) клизму [8,7].
+- **RU:** — 5〉 класть в, вкладывать в (Loc.) [{{CARARA->CARAKA||20160103|Dhaval Patel, Jim Funderburk.|https://github.com/sanskrit-lexicon/CORRECTIONS/issues/216|It is not a typo. Print error.}}. 6,27]. *vastim* ставить кому-либо (Dat.) клизму [8,7](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?8).
   <sub>DCS 12366 · attested</sub>
 
 **mit_T64_desid)** — Desid. Med. zur Frau geben wollen.

@@ -9,8 +9,8 @@
 √*labh*¦ mit *prati* V. **˚pratilabdha* so v. a. theilhaftig geworden [MAHĀVY. 30,6]. [33]. [245,575].
 - **EN:** √*labh*¦ with *prati* V. **˚pratilabdha* so v. a. {having become a partaker of} [MAHĀVY. 30,6]. [33]. [245,575].
 
-**1)** — 1〉 erwischen, fassen, sich Jmds bemeistern; antreffen, finden, zu sehen bekommen ([61,29]); Pass. gefunden —, angetroffen werden. *antaram* eine Gelegenheit finden, sich Eingang verschaffen bei, Eindruck machen auf (Gen.); *avakāśam* Platz —, einen freien Spielraum finden, sich Eingang verschaffen, am Platze sein; *kālam* den richtigen Zeitpunct für Etwas (Loc. eines Nom. act.) finden; *padam* Platz finden, so v. a. sich Eingang verschaffen.
-- **EN:** — 1) {to catch, seize, get hold of, take possession of someone; to come upon, find, catch sight of} ([61,29]); Pass. {to be found —, be come upon}. *antaram* {to find an opportunity, gain entry with, make an impression upon} (Gen.); *avakāśam* {to find room —, find free scope, gain entry, be appropriate;} *kālam* {to find the right moment for something} (Loc. of a Nom. act.); *padam* {to find scope,} so v. a. {to gain entry}.
+**1)** — 1〉 erwischen, fassen, sich Jmds bemeistern; antreffen, finden, zu sehen bekommen ([61,29](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?61)); Pass. gefunden —, angetroffen werden. *antaram* eine Gelegenheit finden, sich Eingang verschaffen bei, Eindruck machen auf (Gen.); *avakāśam* Platz —, einen freien Spielraum finden, sich Eingang verschaffen, am Platze sein; *kālam* den richtigen Zeitpunct für Etwas (Loc. eines Nom. act.) finden; *padam* Platz finden, so v. a. sich Eingang verschaffen.
+- **EN:** — 1) {to catch, seize, get hold of, take possession of someone; to come upon, find, catch sight of} ([61,29](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?61)); Pass. {to be found —, be come upon}. *antaram* {to find an opportunity, gain entry with, make an impression upon} (Gen.); *avakāśam* {to find room —, find free scope, gain entry, be appropriate;} *kālam* {to find the right moment for something} (Loc. of a Nom. act.); *padam* {to find scope,} so v. a. {to gain entry}.
 
 **2)** — 2〉 erhalten, erlangen, — von (Abl.), — als (Acc.), bekommen, in den Besitz von Etwas gelangen, theilhaftig werden (Pass. zu Theil werden), wiedererlangen.
 - **EN:** — 2) {to receive, obtain, — from} (Abl.), — {as} (Acc.), {to get, come into possession of something, become a partaker of} (Pass. {to fall to one's share}), {to recover}.
@@ -222,8 +222,8 @@
 **pari-head)** — Mit *vipra*
 - **EN:** — With *vipra*
 
-**pari-1)** — 1〉 Jmd anführen, hintergehen, täuschen ([156,5]. [317,3]), verhöhnen, zum Narren halten. *dharmam* das Gesetz verhöhnen, so v. a. ohne alle Rücksicht verletzen.
-- **EN:** — 1) {to dupe, deceive someone} ([156,5]. [317,3]), {to mock, make a fool of}. *dharmam* {to mock the law,} so v. a. {to violate without any regard}.
+**pari-1)** — 1〉 Jmd anführen, hintergehen, täuschen ([156,5](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?156). [317,3](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?317)), verhöhnen, zum Narren halten. *dharmam* das Gesetz verhöhnen, so v. a. ohne alle Rücksicht verletzen.
+- **EN:** — 1) {to dupe, deceive someone} ([156,5](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?156). [317,3](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?317)), {to mock, make a fool of}. *dharmam* {to mock the law,} so v. a. {to violate without any regard}.
 
 **pari-2)** — 2〉 wiedererlangen, wiederbekommen [MBH. 14,58,52](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?14,58,52). v. l. *pravi*, richtig wohl *prati*.
 - **EN:** — 2) {to recover, get back} [MBH. 14,58,52](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?14,58,52). v. l. *pravi*, probably correctly *prati*.

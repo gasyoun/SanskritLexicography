@@ -33,7 +33,7 @@
 lassen, nicht im Gedächtniss behalten
 [MBH. 7,705.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.705) *agnīn* die Feuer ausgehen lassen
 [BHĀG. P. 4,5,15.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,5,15) *kanyām* ein Mädchen schänden
-[KULL.] zu [M. 8,367. fgg.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,367) [DAŚAK.] in [BENF. Chr. 191,10.] Nach [P. 1,3,86](https://ashtadhyayi.com/sutraani/1/3/86) und [VOP. 22,2](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?22,2) stets act.; dass med. haben wir in den folgenden Stellen: *śoko nāśayate dhairyaṃ śoko nāśayate śrutam . śoko nāśayate sarvam*
+[KULL.] zu [M. 8,367. fgg.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,367) [DAŚAK.] in [BENF. Chr. 191,10.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?191) Nach [P. 1,3,86](https://ashtadhyayi.com/sutraani/1/3/86) und [VOP. 22,2](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?22,2) stets act.; dass med. haben wir in den folgenden Stellen: *śoko nāśayate dhairyaṃ śoko nāśayate śrutam . śoko nāśayate sarvam*
 [R. 2,62,15.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,62,15)
 [M. 3,175.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,175) *dāturnāśayate phalam* 177. *kṛtaṃ puruṣakāraṃ hi daivaṃ nāśayate kṣaṇāt*
 [HARIV. 10087.](https://sanskrit-lexicon-scans.github.io/hariv?10087) [1167.](https://sanskrit-lexicon-scans.github.io/hariv?1167) *nāśayate cittam*
@@ -70,7 +70,7 @@ lassen, nicht im Gedächtniss behalten
 не удерживать в памяти
 [MBH. 7,705.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.705) *agnīn* давать огням угаснуть
 [BHĀG. P. 4,5,15.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,5,15) *kanyām* обесчестить девушку
-[KULL.] к [M. 8,367. fgg.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,367) [DAŚAK.] в [BENF. Chr. 191,10.] После [P. 1,3,86](https://ashtadhyayi.com/sutraani/1/3/86) и [VOP. 22,2](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?22,2) всегда act.; что med. — это мы находим в следующих местах: *śoko nāśayate dhairyaṃ śoko nāśayate śrutam . śoko nāśayate sarvam*
+[KULL.] к [M. 8,367. fgg.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,367) [DAŚAK.] в [BENF. Chr. 191,10.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?191) После [P. 1,3,86](https://ashtadhyayi.com/sutraani/1/3/86) и [VOP. 22,2](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?22,2) всегда act.; что med. — это мы находим в следующих местах: *śoko nāśayate dhairyaṃ śoko nāśayate śrutam . śoko nāśayate sarvam*
 [R. 2,62,15.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,62,15)
 [M. 3,175.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,175) *dāturnāśayate phalam* 177. *kṛtaṃ puruṣakāraṃ hi daivaṃ nāśayate kṣaṇāt*
 [HARIV. 10087.](https://sanskrit-lexicon-scans.github.io/hariv?10087) [1167.](https://sanskrit-lexicon-scans.github.io/hariv?1167) *nāśayate cittam*
@@ -106,7 +106,7 @@ lassen, nicht im Gedächtniss behalten
 to let go, not to retain in memory
 [MBH. 7,705.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.705) *agnīn* to let the fires go out
 [BHĀG. P. 4,5,15.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,5,15) *kanyām* to violate a girl
-[KULL.] to [M. 8,367. fgg.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,367) [DAŚAK.] in [BENF. Chr. 191,10.] After [P. 1,3,86](https://ashtadhyayi.com/sutraani/1/3/86) and [VOP. 22,2](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?22,2) always act.; that med. we have in the following passages: *śoko nāśayate dhairyaṃ śoko nāśayate śrutam . śoko nāśayate sarvam*
+[KULL.] to [M. 8,367. fgg.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,367) [DAŚAK.] in [BENF. Chr. 191,10.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?191) After [P. 1,3,86](https://ashtadhyayi.com/sutraani/1/3/86) and [VOP. 22,2](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?22,2) always act.; that med. we have in the following passages: *śoko nāśayate dhairyaṃ śoko nāśayate śrutam . śoko nāśayate sarvam*
 [R. 2,62,15.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,62,15)
 [M. 3,175.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,175) *dāturnāśayate phalam* 177. *kṛtaṃ puruṣakāraṃ hi daivaṃ nāśayate kṣaṇāt*
 [HARIV. 10087.](https://sanskrit-lexicon-scans.github.io/hariv?10087) [1167.](https://sanskrit-lexicon-scans.github.io/hariv?1167) *nāśayate cittam*

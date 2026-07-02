@@ -7,7 +7,7 @@
 
 - **RU:** **1.** √*viś*¦, *viśati*, *te* (в более позднем языке большей частью в метрических текстах)
 - **EN:** **1.** √*viś*¦, *viśati*, *te* (in the later language mostly metrical)
-— 1) to settle down, enter into —, go in —, move in —, betake oneself into —, slip into —, penetrate —, sink into —, be absorbed into (Loc. or Acc.); also with *antar* added ([299,26]). *agnim* u. s. w. to mount the funeral pyre. In the Astr. to come into conjunction with (Acc.). Without complement: to enter the house u. s. w., to appear on the stage, to come forth.
+— 1) to settle down, enter into —, go in —, move in —, betake oneself into —, slip into —, penetrate —, sink into —, be absorbed into (Loc. or Acc.); also with *antar* added ([299,26](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?299)). *agnim* u. s. w. to mount the funeral pyre. In the Astr. to come into conjunction with (Acc.). Without complement: to enter the house u. s. w., to appear on the stage, to come forth.
   <sub>attested</sub>
 
 **1-return)** — Mit *punar* oder *bhūyas* zurückgehen, zurückkehren, — in (Acc.).
@@ -40,10 +40,10 @@
 - **EN:** — 5) to flow into, stream towards (of army divisions and tributary rivers).
   <sub>attested</sub>
 
-**6)** — 6〉 Jmd (Acc.) zuströmen, zufliessen, kommen (von einem Gedanken [95,4]), zu Theil werden, Jmd treffen.
+**6)** — 6〉 Jmd (Acc.) zuströmen, zufliessen, kommen (von einem Gedanken [95,4](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?95)), zu Theil werden, Jmd treffen.
 
-- **RU:** — 6〉 приходить, притекать, являться к кому-либо (Acc.) (о мысли [95,4]), доставаться, постигать кого-либо.
-- **EN:** — 6) to flow to —, come streaming to someone (Acc.) (of a thought [95,4]), to fall to one's share, befall someone.
+- **RU:** — 6〉 приходить, притекать, являться к кому-либо (Acc.) (о мысли [95,4](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?95)), доставаться, постигать кого-либо.
+- **EN:** — 6) to flow to —, come streaming to someone (Acc.) (of a thought [95,4](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?95)), to fall to one's share, befall someone.
   <sub>attested</sub>
 
 **7)** — 7〉 Jmd (Loc.) zukommen, so v. a. für Jmd dasein, — gehen (impers.).
@@ -121,14 +121,14 @@
 — 2〉 geschlechtlichen Umgang haben mit einem Weibe (Acc.).
 — 3〉 sich nahe herbeimachen zu (Acc.), kommen.
 — 4〉 sich niederlassen —, sich setzen auf (Acc.) zu [Spr. 1478](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1478).
-— 5〉 fahren in, Besitz nehmen von, sich Jmds bemächtigen (von bösen Geistern, Gemüthszuständen, Leiden u. s. w.); mit Acc. [73,7].
+— 5〉 fahren in, Besitz nehmen von, sich Jmds bemächtigen (von bösen Geistern, Gemüthszuständen, Leiden u. s. w.); mit Acc. [73,7](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?73).
 — 6〉 in einen Zustand —, in ein Verhältniss eintreten, gerathen in (Acc.). *rūpāṇi* so v. a. Farben annehmen, *rājyam* die Herrschaft antreten.
 - **EN:** — With *ā*
 — 1) to enter, go in, settle down in or among, penetrate into (Acc., exceptionally Loc.). *kham*, *gaganam* u. s. w. to rise into the air. *gṛheṣvāviśantaḥ pumāṃsaḥ* thus v. a. householder. Often *gṛham* or dgl. is to be supplied; also: to return home.
 — 2) to have sexual intercourse with a woman (Acc.).
 — 3) to approach closely to (Acc.), to come.
 — 4) to settle —, sit down upon (Acc.) for [Spr. 1478](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1478).
-— 5) to enter into, take possession of, seize someone (of evil spirits, states of mind, ailments u. s. w.); with Acc. [73,7].
+— 5) to enter into, take possession of, seize someone (of evil spirits, states of mind, ailments u. s. w.); with Acc. [73,7](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?73).
 — 6) to enter a state —, fall into a relation (Acc.). *rūpāṇi* thus v. a. to take on colours, *rājyam* to assume sovereignty.
 
 **a-ppp)** — 7〉 *āviṣṭa*
@@ -291,9 +291,9 @@
 — 3) to cause someone to void per anum, with double Acc. [CARAKA. 6,10. 18]. [BHĀVAPR. 4,4]. — *upaveśya* [PAÑCAT. 147,6](https://sanskrit-lexicon-scans.github.io/pantankose/app2?147,6) erroneous for *upaviśya*.
 — With *adhyupa*: to seat oneself thereon.
 
-**1-body)** — 1〉 sich niederlassen, hineintreten —, eingehen —, einziehen —, sich hineinbegeben —, hineinschlüpfen —, eindringen —, versinken —, aufgehen in (Loc. oder Acc.); auch mit hinzugefügtem *antar* ([299,26]). *agnim* u. s. w. den Scheiterhaufen besteigen. In der Astr. in Conjunction kommen mit (Acc.). Ohne Ergänzung hineintreten inʼs Haus u. s. w., auftreten auf der Schaubühne, erscheinen.
+**1-body)** — 1〉 sich niederlassen, hineintreten —, eingehen —, einziehen —, sich hineinbegeben —, hineinschlüpfen —, eindringen —, versinken —, aufgehen in (Loc. oder Acc.); auch mit hinzugefügtem *antar* ([299,26](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?299)). *agnim* u. s. w. den Scheiterhaufen besteigen. In der Astr. in Conjunction kommen mit (Acc.). Ohne Ergänzung hineintreten inʼs Haus u. s. w., auftreten auf der Schaubühne, erscheinen.
 
-- **RU:** — 1〉 поселяться, входить —, вступать —, вселяться —, проникать внутрь —, вползать —, врываться —, погружаться —, сливаться с (Loc. или Acc.); также с добавлением *antar* ([299,26]). *agnim* u. s. w. всходить на погребальный костёр. В Astr. вступать в соединение с (Acc.). Без дополнения входить в дом u. s. w., выступать на сцене, появляться.
+- **RU:** — 1〉 поселяться, входить —, вступать —, вселяться —, проникать внутрь —, вползать —, врываться —, погружаться —, сливаться с (Loc. или Acc.); также с добавлением *antar* ([299,26](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?299)). *agnim* u. s. w. всходить на погребальный костёр. В Astr. вступать в соединение с (Acc.). Без дополнения входить в дом u. s. w., выступать на сцене, появляться.
   <sub>attested</sub>
 
 **11)** — 11〉 *viṣṭa*
@@ -381,9 +381,9 @@
 - **RU:** — 4〉 усаживаться —, садиться на (Acc.) для [Spr. 1478](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1478).
   <sub>attested</sub>
 
-**aa-5)** — 5〉 fahren in, Besitz nehmen von, sich Jmds bemächtigen (von bösen Geistern, Gemüthszuständen, Leiden u. s. w.); mit Acc. [73,7].
+**aa-5)** — 5〉 fahren in, Besitz nehmen von, sich Jmds bemächtigen (von bösen Geistern, Gemüthszuständen, Leiden u. s. w.); mit Acc. [73,7](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?73).
 
-- **RU:** — 5〉 вселяться в, овладевать, захватывать кого-либо (о злых духах, душевных состояниях, недугах u. s. w.); с Acc. [73,7].
+- **RU:** — 5〉 вселяться в, овладевать, захватывать кого-либо (о злых духах, душевных состояниях, недугах u. s. w.); с Acc. [73,7](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?73).
   <sub>attested</sub>
 
 **aa-6)** — 6〉 in einen Zustand —, in ein Verhältniss eintreten, gerathen in (Acc.). *rūpāṇi* so v. a. Farben annehmen, *rājyam* die Herrschaft antreten.
