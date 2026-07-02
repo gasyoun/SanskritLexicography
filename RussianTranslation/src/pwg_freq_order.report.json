@@ -1,0 +1,14 @@
+{
+  "generator": "build_pwg_freq_order.py",
+  "feed": "..\\..\\..\\kosha\\data\\frequency\\lemma_frequency.tsv",
+  "pwg_headwords": 94074,
+  "matched_in_freq_feed": 38324,
+  "matched_pct": 40.7,
+  "crosscheck_vs_dcs_freq": {
+    "archive_ranked_pwg_headwords": 34036,
+    "also_in_dcs_freq": 33828,
+    "also_in_dcs_freq_pct": 99.4,
+    "adjacent_pair_concordance": 0.722,
+    "note": "concordance = fraction of consecutive archive-ranked PWG headword pairs whose dcs_freq counts are non-increasing; ~1.0 means the two independent DCS extractions rank PWG headwords the same way."
+  }
+}
