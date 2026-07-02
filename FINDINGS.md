@@ -76,6 +76,7 @@ refuted or superseded, strike it and say why — never reuse its number.
 - 🟡 [§32. Correction events concentrate in sense text](#32-correction-events-concentrate-in-sense-text) — 52.7 % sense / 17.5 % markup / 17.3 % headword over 52k events.
 - 🟠 [§43. SKD/VCP sense/citation fusion is a record-type effect, not a dictionary-level one](#43-skdvcp-sensecitation-fusion-is-a-record-type-effect-not-a-dictionary-level-one) — corpus-scale count inverted the one-lemma *dharma* exemplar's direction; never generalise a citation-register claim from one lemma.
 - 🟠 [§44. Raw Latin-string tallies over gloss text include etymological false positives; Bopp lacks √yabh](#44-raw-latin-string-tallies-over-gloss-text-include-etymological-false-positives-bopp-lacks-yabh) — MW72's lone *cunnus* glosses a Lithuanian cognate, not a headword; BOP has no √*yabh* entry (all *futu-* hits are *futurum*); trust A36's curated CSV, not the raw sweep.
+- 🟠 [§45. Siglum prefix-families routinely bundle several distinct works; the diacritic-stripping fold has poisoned keys](#45-siglum-prefix-families-routinely-bundle-several-distinct-works-the-diacritic-stripping-fold-has-poisoned-keys) — 26/50 top families mix 2–6 works (Bhag./BhP., Rajan./Rajat., 5 Śabda-kośas); `samk` fold merges Śaṃk°+Sāṃk°; ~120 pseudo-variants are just unstripped roman numerals; MW unknown-layer tail = only 6.5% of citation weight.
 
 **Etymology & derivation**
 
@@ -818,6 +819,43 @@ sweep should separate etymology/apparatus spans from gloss spans before counting
 
 > **Source:** [papers/A36_review_fable5.md](https://github.com/gasyoun/SanskritLexicography/blob/master/papers/A36_review_fable5.md)
 > (Major 3–4) + [PR #74](https://github.com/gasyoun/SanskritLexicography/pull/74),
+> Fable 5 `claude-fable-5` · 2026-07-02
+
+---
+
+### §45. Siglum prefix-families routinely bundle several distinct works; the diacritic-stripping fold has poisoned keys
+
+🟠 **Adjudicating the top-50 prefix-clustered `<ls>` siglum families (≈52k+ citation mass,
+cross-dict) showed the family→work assumption fails more often than it holds: 26/50 families
+bundle 2–6 distinct works** (Bhag. ≠ BhP.; Rājan. = Rājanighaṇṭu ≠ Rājat.; the `panc` family
+= Pañcatantra + Pañcarātra + Pañcaviṃśa-Br. + Pañcadaṇḍacchattraprabandha; five different
+Śabda- kośas share one prefix), only 12/50 merge cleanly, and 7 of those 12 are not
+abbreviation variants at all but **unstripped trailing roman numerals** (`dhatupxxxii`,
+`paniv`, `mbhi` — ~120 pseudo-members). Two structural traps: (1) the diacritic-stripping
+fold **poisons** keys — `samk` merges Śaṃk° (Śaṃkara) with Sāṃk° (Sāṃkhya-), `kaus`
+collides Kauś./Kauṣ., `sank` collides Śaṅkh-school/Śaṃkara; (2) MW uses *near-identical*
+sigla for different works — `Dharmaś.` (bare, kāvya glosses) = Dharmaśarmābhyudaya while
+`Dharmas.` + section number = Dharmasaṃgraha. Also measured: MW's "unknown-layer" siglum
+tail is 855 distinct base sigla but only **6.5% of citation instances** — a long tail, not
+a coverage wall.
+
+Evidence: 02-07-2026 adjudication of families 1–50 from
+[siglum_family_candidates.csv](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/data/obs/siglum_family_candidates.csv)
+against live `csl-orig/v02` contexts +
+[mwauthorities_init.txt](https://github.com/sanskrit-lexicon/MWS/blob/master/mwauthorities/mwauthorities_init.txt);
+verdict table in
+[SIGLUM_ADJUDICATION_2026-07.md](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/docs/SIGLUM_ADJUDICATION_2026-07.md);
+machine-readable rulings in
+[dict-source-aliases.json](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/src/data/dicts/dict-source-aliases.json).
+
+Implication: **never merge sigla by fold-key or prefix similarity alone** — every merge is a
+per-work identity call; quarantined keys (`samk`, `ratnam`, `burn`, `mahav`) must stay
+unmerged until per-dict raw-form splits exist; and any fold-based join over `<ls>` data
+(frequency tables, layer maps, link resolvers) inherits these collisions silently unless it
+consults the curated alias table.
+
+> **Source:** [csl-atlas#185](https://github.com/sanskrit-lexicon/csl-atlas/pull/185) +
+> [MWS PLANNING_2026-07.md](https://github.com/sanskrit-lexicon/MWS/blob/master/planning/PLANNING_2026-07.md),
 > Fable 5 `claude-fable-5` · 2026-07-02
 
 ---
