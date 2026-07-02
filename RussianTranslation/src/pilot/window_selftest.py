@@ -236,7 +236,7 @@ def test_semantic_risk_checker():
                     'differentia': '',
                 }, {
                     'tag': '3',
-                    'german': 'Schein',
+                    'german': '{%Schein%}',
                     'russian': 'agni der',
                     'equivalence_type': 'equivalent',
                     'source_type': 'attested',
@@ -474,6 +474,9 @@ def test_semantic_review_prioritizer():
 
 
 def test_noisy_source_type_not_requeue():
+    # A sense that DOES assert a meaning ({%..%} gloss span) but is marked attested with no
+    # citation/stratum/lexicographic signal is the genuine review target — it must produce
+    # the hint yet never enter the requeue set (REPORT_ONLY_RISKS, F-gate-nws-fp).
     noisy = {
         'key': 'noisy',
         'card': {
@@ -484,7 +487,7 @@ def test_noisy_source_type_not_requeue():
                 'grammar': 'm.',
                 'senses': [{
                     'tag': '1',
-                    'german': 'Glanz',
+                    'german': '{%Glanz%}',
                     'russian': 'блеск',
                     'equivalence_type': 'equivalent',
                     'source_type': 'attested',
@@ -506,6 +509,61 @@ def test_noisy_source_type_not_requeue():
             fail('source-type review hint became high-confidence/requeue')
     finally:
         os.remove(path)
+
+
+def test_report_only_risks_never_requeue():
+    """The report-only semantic hints must be structurally barred from the requeue set:
+    disjoint from HIGH_CONFIDENCE_RISKS (the only thing requeue_keys is built from)."""
+    from prompt_rule_audit import HIGH_CONFIDENCE_RISKS, REPORT_ONLY_RISKS
+    overlap = REPORT_ONLY_RISKS & HIGH_CONFIDENCE_RISKS
+    if overlap:
+        fail('REPORT_ONLY_RISKS leaked into the requeue-driving set: %s'
+             % ', '.join(sorted(overlap)))
+    if 'suspicious_attested_without_text_signal' not in REPORT_ONLY_RISKS:
+        fail('suspicious_attested_without_text_signal must be report-only')
+
+
+def test_attested_text_signal_redesign():
+    """FL5 redesign of suspicious_attested_without_text_signal:
+    - a pure cross-reference / erratum sense (no {%..%} gloss span) never fires, even with
+      no card-level signal (it asserts no meaning to attest);
+    - a lexicographic citation counts as a text signal for an attested meaning;
+    - a real meaning gloss ({%..%}) marked attested with zero signal still fires (kept)."""
+    def ids_for(sense):
+        card = {'key': 'x', 'card': {'key1': 'x', 'iast': 'x', 'records': [
+            {'h': '1', 'grammar': 'verb', 'senses': [sense]}]}}
+        return {r['id'] for r in semantic_risks(card)}
+
+    FLAG = 'suspicious_attested_without_text_signal'
+
+    # 1) Cross-reference sense: {#paryanu#} <ab>s.</ab> {#paryanubanDa#} — no gloss span.
+    crossref = {'tag': '1', 'german': '<div n="p">— {#paryanu#} <ab>s.</ab> {#paryanubanDa#} .',
+                'russian': '<div n="p">— {#paryanu#} <ab>s.</ab> {#paryanubanDa#} .',
+                'equivalence_type': 'explanatory', 'source_type': 'attested',
+                'stratum': '', 'differentia': ''}
+    if FLAG in ids_for(crossref):
+        fail('cross-reference sense (no meaning claim) wrongly flagged as attested-without-signal')
+
+    # 2) Erratum sense: <ab>Z.</ab> 3 lies ... — no gloss span, editorial correction.
+    erratum = {'tag': 'corr', 'german': '<hom>1.</hom> {#nI#}¦ <ab>Z.</ab> 19. Lies: 3 <ab>st.</ab> 8.<info n="rev"/>',
+               'russian': 'читай: 3 вместо 8', 'equivalence_type': 'explanatory',
+               'source_type': 'attested', 'stratum': '', 'differentia': ''}
+    if FLAG in ids_for(erratum):
+        fail('erratum sense (no meaning claim) wrongly flagged as attested-without-signal')
+
+    # 3) Lexicographic citation grounds an attested meaning gloss -> no flag.
+    lexcite = {'tag': '1', 'german': 'Amarakośa: {%Stern%}', 'russian': 'звезда',
+               'equivalence_type': 'equivalent', 'source_type': 'attested',
+               'stratum': '', 'differentia': ''}
+    if FLAG in ids_for(lexcite):
+        fail('attested meaning with a lexicographic citation wrongly flagged')
+
+    # 4) Genuine target survives: a {%..%} meaning gloss, attested, with no signal at all.
+    genuine = {'tag': '1', 'german': '<lex>adj.</lex> {%sich rasch bewegend, eilend%}',
+               'russian': '<lex>adj.</lex> {%быстро движущийся%}', 'equivalence_type': 'equivalent',
+               'source_type': 'attested', 'stratum': '', 'differentia': ''}
+    if FLAG not in ids_for(genuine):
+        fail('a genuine attested meaning gloss without any signal must still surface the hint')
 
 
 def test_nws_fp_suppressed():
@@ -688,6 +746,8 @@ def main():
         test_german_connective_fix,
         test_semantic_review_prioritizer,
         test_noisy_source_type_not_requeue,
+        test_report_only_risks_never_requeue,
+        test_attested_text_signal_redesign,
         test_nws_fp_suppressed,
         test_stale_refusal_preserves_requeue,
         test_release_manifest_hash_validation,

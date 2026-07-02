@@ -147,6 +147,24 @@ HIGH_CONFIDENCE_RISKS = {
     'foreign_gloss_translated',
 }
 
+# Review-only hints: heuristic semantic flags that surface a card for a HUMAN to eyeball
+# but must NEVER drive a mechanical requeue. Rationale (F-gate-nws-fp, 2026-06-29): the
+# source_type-vs-signal checks are soft cross-checks on a model self-label; a re-translation
+# cannot deterministically clear them, so requeueing on them burns quota on an unclearable
+# loop (2,152 key-requeues on 06-29 alone). The requeue set is built from HIGH_CONFIDENCE_RISKS
+# only (see audit_cards.requeue_keys), so membership here is enforced to stay disjoint from it
+# at module load: if a future edit promotes one of these to high-confidence, this invariant
+# fails loudly instead of silently re-arming the churn loop.
+REPORT_ONLY_RISKS = frozenset({
+    'suspicious_attested_without_text_signal',
+    'suspicious_lexicographic_with_text_signal',
+    'possible_sense_compression',
+    'missing_apresjan_discrimination',
+})
+assert not (REPORT_ONLY_RISKS & HIGH_CONFIDENCE_RISKS), (
+    'REPORT_ONLY_RISKS must never drive a requeue: %s'
+    % ', '.join(sorted(REPORT_ONLY_RISKS & HIGH_CONFIDENCE_RISKS)))
+
 LIVE_MANUAL_COVERAGE = [
     'Apresjan',
     'Hartmann',
@@ -363,6 +381,23 @@ def has_lexicographic_signal(sense):
     return bool(LEXICOGRAPHIC_CITATION.search(citation_blob(sense)))
 
 
+# A translatable meaning claim is marked in the source by a {%...%} gloss span — the
+# pipeline's own convention for "this German is a gloss to render into Russian" (see
+# RETAINED_SPAN / pwg_mask). A sense with NO gloss span asserts no meaning: it is a pure
+# cross-reference ({#x#} <ab>s.</ab> {#y#}), an editorial erratum (<ab>Z.</ab> N lies ...,
+# <info n="rev"/>), or a structural header (desid-/preverb header). Such a sense CANNOT be
+# "attested without text signal" — there is no attested meaning to cite — so the
+# suspicious_attested_without_text_signal hint is gated on this. Measured on the 39 Slice-C
+# known-good wf_output files this cut the flag from 37 fires (all cross-ref/erratum noise)
+# to 6, each a genuine meaning gloss lacking a citation (see AUDIT_CHURN_FL5 memo).
+GLOSS_SPAN = re.compile(r'\{%.*?%\}', re.S)
+
+
+def makes_meaning_claim(sense):
+    """True if the sense carries a {%...%} gloss span, i.e. asserts a translatable meaning."""
+    return bool(GLOSS_SPAN.search(sense.get('german') or ''))
+
+
 def formula_missing(german, russian):
     joined = norm_text(german)
     ru = norm_text(russian)
@@ -521,7 +556,8 @@ def semantic_risks(card_like):
     all_card_senses = [s for rec in (card.get('records') or [])
                        for s in (rec.get('senses') or []) if isinstance(s, dict)]
     card_has_text_signal = any(
-        s.get('source_type') == 'attested' and has_text_signal(s)
+        s.get('source_type') == 'attested'
+        and (has_text_signal(s) or has_lexicographic_signal(s))
         for s in all_card_senses
     )
     for record in card.get('records') or []:
@@ -574,9 +610,18 @@ def semantic_risks(card_like):
                          'fixed śāstric formula appears without expected Russian rendering',
                          tag=tag)
             source_type = sense.get('source_type')
-            if source_type == 'attested' and not has_text_signal(sense) and not card_has_text_signal:
+            # Fire only on a sense that actually asserts a meaning (has a {%...%} gloss span)
+            # yet shows no grounding — literary citation, stratum, NWS owner citation, or a
+            # lexicographic attribution (Amara/Pāṇini/…), any of which counts as a text signal
+            # for an attested meaning. Cross-references / errata / headers make no meaning
+            # claim, so their lack of a citation is expected, not suspicious. REPORT-ONLY: this
+            # is a review hint, never a requeue trigger (see REPORT_ONLY_RISKS).
+            if (source_type == 'attested' and makes_meaning_claim(sense)
+                    and not has_text_signal(sense) and not has_lexicographic_signal(sense)
+                    and not card_has_text_signal):
                 add_risk(risks, 'suspicious_attested_without_text_signal',
-                         'source_type=attested but no text citation or stratum signal found',
+                         'attested meaning gloss without any citation/stratum/lexicographic/'
+                         'owner signal — REVIEW ONLY, not a requeue',
                          tag=tag)
             if source_type == 'lexicographic' and has_text_signal(sense) and not has_lexicographic_signal(sense):
                 add_risk(risks, 'suspicious_lexicographic_with_text_signal',
