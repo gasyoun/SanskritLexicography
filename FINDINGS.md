@@ -67,7 +67,7 @@ refuted or superseded, strike it and say why — never reuse its number.
 - 🔴 [§23. Apte is three dictionaries; keys differ stem vs nominative](#23-apte-is-three-dictionaries-keys-differ-stem-vs-nominative) — agni vs agniH; join on key1.
 - 🔴 [§24. About 9 percent of typo corrections are collisions](#24-about-9-percent-of-typo-corrections-are-collisions) — the "right" form often already exists as its own entry.
 - 🟠 [§25. A verified correction queue decays against live csl-orig](#25-a-verified-correction-queue-decays-against-live-csl-orig) — ~0.8 %/week; re-verify before filing.
-- 🟠 [§26. Citation density is register-bound, not comparable raw](#26-citation-density-is-register-bound-not-comparable-raw) — PWG 4.63 vs MW 1.09 ls/entry; SKD's ~69k citations are iti-register.
+- 🟠 [§26. Citation density is register-bound, not comparable raw](#26-citation-density-is-register-bound-not-comparable-raw) — PWG 4.61 vs MW 1.09 ls/entry; SKD's ~80k citations are iti-register; markup-adjacent `iti` (`<s>iti`) evades a space-preceded counter (KRM ~2/3 hidden).
 - 🟠 [§27. Sense granularity is a family trait, not a diachronic trend](#27-sense-granularity-is-a-family-trait-not-a-diachronic-trend) — r = 0.036 over 135 years; control by school.
 - 🟠 [§28. MW inherited the PWG apparatus skeleton, not its prose](#28-mw-inherited-the-pwg-apparatus-skeleton-not-its-prose) — 0.81 citation-order concordance; gloss length tracks PWG no more than an independent control.
 - 🟠 [§29. PWG and MW share 94,753 headwords in the union index](#29-pwg-and-mw-share-94753-headwords-in-the-union-index) — consume HeadwordLists/union, don't rebuild.
@@ -502,17 +502,25 @@ or applying; a stale row filed upstream reads as bot noise to the maintainers.
 
 ### §26. Citation density is register-bound, not comparable raw
 
-🟠 **Per-entry citation density is register-bound — PWG carries 4.63 `<ls>` per entry vs MW's 1.09,
+🟠 **Per-entry citation density is register-bound — PWG carries 4.61 `<ls>` per entry vs MW's 1.09,
 while the indigenous dicts' citations live in the `iti` register that `<ls>` counting misses
 entirely.**
-Evidence: PWG 570,830 `<ls>` at **4.63/entry** vs MW 311,933 at **1.09/entry** (rates as
-published in the citation-registers paper). SKD carries **69,215 `iti`-citations** and VCP
-22,070 (KRM 3.13/entry) — all scoring zero under an `<ls>` detector.
+Evidence (2026-07 regeneration from the committed artifact
+[`data/obs/citation_registers.json`](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/data/obs/citation_registers.json)):
+PWG 568,730 `<ls>` at **4.61/entry** vs MW 312,160 at **1.09/entry**. SKD carries
+**80,164 `iti`-citations** (1.88/entry), VCP 15,619 (0.31), KRM 12,359 (**6.00/entry**, densest
+in the corpus) — all scoring zero under an `<ls>` detector; 28 of 44 csl-orig dicts have no
+`<ls>` at all.
+**Counting-rule trap (measured 2026-07):** an `iti` counter whose word boundary is
+"preceded by space or quote" misses quotatives that sit directly after markup — KRM wraps
+Sanskrit in `<s>…</s>`, so `<s>iti` hid **~2/3 of its 12,359 citations** (rule saw 4,265) and
+the pre-2026-07 published triple (SKD 69,215 / VCP 22,070 / KRM 6,449) was additionally stale
+against upstream csl-orig fixes. Use "not adjacent to a Latin letter" as the boundary.
 Implication: never rank dictionaries by raw `<ls>` density — control for citation register
 first, or indigenous lexica are misranked as citation-poor when they are among the richest.
 (Generalises the SKD/VCP zero-markup trap to *quantitative* comparisons.)
 
-> **Source:** [csl-atlas `docs/articles/paper_citation_registers.md`](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/docs/articles/paper_citation_registers.md) — csl-atlas · 2026-06-13
+> **Source:** [csl-atlas `docs/articles/paper_citation_registers.md`](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/docs/articles/paper_citation_registers.md) + [csl-atlas PR #187](https://github.com/sanskrit-lexicon/csl-atlas/pull/187) — csl-atlas · 2026-06-13, rev. 2026-07-02
 
 ### §27. Sense granularity is a family trait, not a diachronic trend
 
