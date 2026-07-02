@@ -61,34 +61,37 @@ built this session.
   (content-addressed `sha256(lang|prompt_sha|source)` → translation; prompt_sha scoping =
   auto-invalidate on prompt change) + [`src/pilot/tm_build.py`](https://github.com/gasyoun/SanskritLexicography/blob/feat/pwg-en-fu1-phase0/RussianTranslation/src/pilot/tm_build.py)
   (harvests a sense-level TM from the stores: **EN = 11,377 entries, 3.5% exact-duplicate
-  sources**). `tm/` is gitignored (regenerable). **Run `python src/pilot/tm_build.py ru`
-  before the RU work** to seed the RU TM from the ~10k existing RU cards.
+  sources**). `tm/` is gitignored (regenerable). The reuse is **wired into the harness**
+  (commit `9d46a20`, `--tm` gated OFF by default) + [`tm_harvest.py`](https://github.com/gasyoun/SanskritLexicography/blob/feat/pwg-en-fu1-phase0/RussianTranslation/src/pilot/tm_harvest.py)
+  — see next-step 1. **Run `python src/pilot/tm_build.py ru` before the RU work** to seed
+  the RU sense-TM from the ~10k existing RU cards.
 
 ## DO NEXT — in order
 
-### 1. Wire `--tm` fragment reuse into selfHeal (build this at the START of the RU run)
-The TM core exists; the reuse *mechanism* was deliberately NOT wired this session (it
-touches the shared harness the RU run depends on — do it where it validates against RU).
-Gate it behind a `--tm` flag, **default OFF** (so the autonomous account's runs are
-unchanged). Spec:
-- In the `frags`/`phf` precompute of
-  [`gen_opt_harness2.py`](https://github.com/gasyoun/SanskritLexicography/blob/feat/pwg-en-fu1-phase0/RussianTranslation/src/pilot/gen_opt_harness2.py)
-  (~line 396), keep each fragment's source `t`; compute `sha256(t)`. Emit `FRAGHASH[k]`
-  (groups of hashes) and `PRESOLVED` = `{hash: restored_senses}` for fragments already in
-  the **fragment** TM (`tm.<lang>.frag.jsonl`, keyed by fragment source).
-- In JS `selfHeal`: drop PRESOLVED fragments from `pending` (skip the `agent()` call);
-  at stitch, push their cached senses; for freshly-agent-translated fragments, record
-  `HARVEST[hash] = restoredSenses`. Return `harvest` at top level **even when the card
-  nulls** (so a failed card's *good* fragments are still captured — this is the retry-reuse
-  win: brū burned 860k tokens re-translating 12 good fragments to redo 1).
-- Post-run: ingest `harvest` into the fragment TM.
+### 1. ✅ DONE — `--tm` fragment reuse is wired (commit `9d46a20`)
+Shipped this session, gated behind `--tm` (**default OFF** → the autonomous RU runs and
+every existing run are byte-for-byte unchanged; verified agent/tools-guard parity +
+node-check on the default path). With `--tm`,
+[`gen_opt_harness2.py`](https://github.com/gasyoun/SanskritLexicography/blob/feat/pwg-en-fu1-phase0/RussianTranslation/src/pilot/gen_opt_harness2.py)
+builds `PRESOLVED[k#gi#i]` from the fragment TM (`tm.<lang>.frag.jsonl`) for any fragment
+whose EXACT source is cached; `selfHeal` serves those without a model call and sends only
+uncached fragments to the LLM. Each fresh fragment is harvested AT RESOLVE TIME (survives
+a card-null → a retry reuses it — the brū-waste fix).
+[`tm_harvest.py`](https://github.com/gasyoun/SanskritLexicography/blob/feat/pwg-en-fu1-phase0/RussianTranslation/src/pilot/tm_harvest.py)
+ingests a run's `harvest` back into the TM (re-deriving each fragment source from the same
+deterministic split; no source text travels through the payload). Keyed by the run's
+`tm_prompt_sha`. Validated deterministically (seed 1 jYA fragment → "1 pre-resolved").
+**Usage per --tm run:** generate with `--tm`, run the workflow, `save_and_audit … --merge`,
+then `python src/pilot/tm_harvest.py <task_output_file>` to grow the cache.
 - **Why not `resumeFromRunId`:** it REPLAYS a run verbatim (including the failure) — it
-  does NOT re-attempt a stochastic failure. Fresh-run re-translates everything. Only the
-  TM sidecar gives real fragment reuse. (Do not repeat the resume mistake.)
+  does NOT re-attempt a stochastic failure. Fresh-run re-translates everything. The TM is
+  the only real fragment reuse. (Do not repeat the resume mistake.)
 
 ### 2. RU translation run (the priority)
-Resume the staged PWG→RU work on the hardened harness (`--selfheal`, `--budget=1` for
-multi-key, retry-fresh on stochastic nulls, ≤3-wide roots). Seed `tm_build.py ru` first.
+Resume the staged PWG→RU work on the hardened harness — now with `--selfheal --tm`,
+`--budget=1` for multi-key, retry-fresh on stochastic nulls, ≤3-wide roots. **First seed
+the RU TMs:** `python src/pilot/tm_build.py ru` (sense-level, from the ~10k RU cards); the
+fragment TM fills as `--tm` runs harvest via `tm_harvest.py`.
 Full RU run discipline: the `/pwg-slice` skill and
 [`.ai_state.md`](https://github.com/gasyoun/SanskritLexicography/blob/feat/pwg-en-fu1-phase0/RussianTranslation/.ai_state.md).
 
