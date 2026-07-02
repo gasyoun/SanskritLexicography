@@ -37,6 +37,7 @@ SRC = os.path.dirname(HERE)
 REPO = os.path.dirname(SRC)
 sys.path.insert(0, SRC)
 import corpus_gate as cg  # noqa: E402  (_S2I SLP1->IAST map)
+import ls_resolver as lsr  # noqa: E402  (<ls> citation -> Cologne scan URL; PWG paths)
 
 RU_STORE = os.path.join(SRC, 'pwg_ru_translated.jsonl')
 OUT_DIR = os.path.join(REPO, 'article_site')
@@ -44,7 +45,23 @@ OUT_DIR = os.path.join(REPO, 'article_site')
 _ACCENT = re.compile(r'[\\/^~]')          # Vedic udatta/anudatta/svarita markers
 _SK = re.compile(r'\{#(.*?)#\}', re.S)
 _GL = re.compile(r'\{%(.*?)%\}', re.S)
-_LS = re.compile(r'<ls\b[^>]*>(.*?)</ls>', re.S)
+_LS = re.compile(r'<ls\b([^>]*)>(.*?)</ls>', re.S)
+_N_ATTR = re.compile(r'\bn\s*=\s*"([^"]*)"')
+
+
+def _ls_href(attrs, visible):
+    """Resolve one <ls> citation to a Cologne scan URL (PWG), or None.
+
+    `attrs` is the raw attribute string of the <ls> tag; the `n=` attribute
+    carries the normalized prefix (+ leading coords) that the source uses so
+    bare-number continuation refs (e.g. `4,10,7.` after `AV. 11,4,26.`) resolve
+    against the right work. `visible` is the inner text shown to the reader."""
+    m = _N_ATTR.search(attrs or '')
+    n_attr = m.group(1) if m else None
+    try:
+        return lsr.generate_href('pwg', n_attr, (visible or '').strip())
+    except Exception:
+        return None
 _AB = re.compile(r'<ab\b[^>]*>(.*?)</ab>', re.S)
 _LEX = re.compile(r'<lex\b[^>]*>(.*?)</lex>', re.S)
 _IS = re.compile(r'<is\b[^>]*>(.*?)</is>', re.S)
@@ -76,7 +93,21 @@ def _render(text, mode):
         # (The old generic <[^>]+> strip removed our own generated spans too.)
         LT, GT = '\x01', '\x02'
         t = _SK.sub(lambda m: '%si class=sa%s%s%s/i%s' % (LT, GT, slp1_iast(m.group(1)), LT, GT), t)
-        t = _LS.sub(lambda m: '%sspan class=ls%s%s%s/span%s' % (LT, GT, m.group(1).strip(), LT, GT), t)
+
+        def _ls_html(m):
+            # Resolved citation -> clickable <a class=ls href=..> (scan page);
+            # unresolved -> plain <span class=ls> (kept dim so gaps stay visible).
+            # Attribute values are left unquoted so the later html.escape (which
+            # escapes " ' & < >) cannot mangle them; scan URLs contain none of the
+            # quote/space chars that would require quoting.
+            vis = m.group(2).strip()
+            url = _ls_href(m.group(1), vis)
+            if url:
+                # <a class=ls href=URL target=_blank rel=noopener>VIS</a>
+                return '%sa class=ls href=%s target=_blank rel=noopener%s%s%s/a%s' % (
+                    LT, url, GT, vis, LT, GT)
+            return '%sspan class=ls%s%s%s/span%s' % (LT, GT, vis, LT, GT)
+        t = _LS.sub(_ls_html, t)
         t = _AB.sub(lambda m: '%sspan class=ab%s%s%s/span%s' % (LT, GT, m.group(1).strip(), LT, GT), t)
         t = _LEX.sub(lambda m: '%sspan class=lex%s%s%s/span%s' % (LT, GT, m.group(1).strip(), LT, GT), t)
         t = _IS.sub(lambda m: '%si%s%s%s/i%s' % (LT, GT, m.group(1), LT, GT), t)
@@ -89,7 +120,12 @@ def _render(text, mode):
     else:  # md
         t = _SK.sub(lambda m: '*%s*' % slp1_iast(m.group(1)), t)
         t = _GL.sub(lambda m: m.group(1), t)
-        t = _LS.sub(lambda m: '[%s]' % m.group(1).strip(), t)
+
+        def _ls_md(m):
+            vis = m.group(2).strip()
+            url = _ls_href(m.group(1), vis)
+            return '[%s](%s)' % (vis, url) if url else '[%s]' % vis
+        t = _LS.sub(_ls_md, t)
         t = _AB.sub(lambda m: m.group(1).strip(), t)
         t = _LEX.sub(lambda m: '_%s_' % m.group(1).strip(), t)
         t = _IS.sub(lambda m: m.group(1), t)
@@ -242,6 +278,12 @@ def build_model():
                     dcs=r.get('dcs_freq'), src=r.get('source_type')))
             if not senses:
                 continue
+            # Grammatical head block (tag 'header'/'head') is the entry preamble
+            # (√root, Dhātup. reference, tense stems) and must LEAD the sub-card,
+            # even when the source store lists it after sense 1 (the bug that made
+            # e.g. bandh open on sense 1). Stable sort keeps all other senses in
+            # their original order.
+            senses.sort(key=lambda s: 0 if str(s['tag']).lower() in ('header', 'head') else 1)
             ru0 = ru_sub_rows[0] if ru_sub_rows else None
             iast = (ru0.get('iast') if ru0 else '') or (en_entry.get('iast') if en_entry else '') or ''
             h = (ru0.get('h') if ru0 else '') or (en_entry.get('h') if en_entry else '') or ''
@@ -262,7 +304,9 @@ def build_model():
 
 # ---------------- markdown emitters ----------------
 def sense_md(s, with_en):
-    out = ['', '**%s)** %s' % (s['tag'], s['de_md'])]
+    # The grammatical head block carries no sense number, so drop the "N)" chip.
+    lead = '' if str(s['tag']).lower() in ('header', 'head') else '**%s)** ' % s['tag']
+    out = ['', '%s%s' % (lead, s['de_md'])]
     if s['ru_md']:
         out.append('')
         out.append('- **RU:** %s' % s['ru_md'])
@@ -328,7 +372,10 @@ h2.root{font-size:26px;margin:0 0 2px}.meta{color:var(--mut);font-size:13px;marg
 .de{margin-bottom:6px}.tr{padding-top:6px;margin-top:6px;border-top:1px dashed var(--line)}
 .lbl{font-size:10px;letter-spacing:.05em;color:#fff;background:var(--mut);border-radius:3px;padding:0 5px;text-transform:uppercase;margin-right:6px;vertical-align:1px}
 i.sa{font-style:italic;color:var(--sa)}
-.ls{color:var(--mut);font-size:.92em}.ab{font-style:italic;color:var(--mut)}.lex{font-variant:small-caps;color:var(--mut)}
+.ls{color:var(--mut);font-size:.92em}
+a.ls{color:var(--accent);font-size:.92em;text-decoration:none;border-bottom:1px dotted var(--accent)}
+a.ls:hover{text-decoration:underline;border-bottom-color:transparent}
+.ab{font-style:italic;color:var(--mut)}.lex{font-variant:small-caps;color:var(--mut)}
 .badges{margin-top:6px}.badge{display:inline-block;font-size:11px;color:var(--mut);border:1px solid var(--line);border-radius:10px;padding:0 7px;margin-right:5px}
 .na{color:var(--mut);font-style:italic}
 /* language switch: show German always as reference in ru/en; German-only in de mode */
@@ -367,8 +414,9 @@ function renderBody(r){
   h+='<div class="sub"><h3 class="iast">'+esc(sub.iast||sub.h||sub.key)+'</h3><div class="k">'+esc(sub.key)+'</div></div>';
   sub.senses.forEach(function(s){
    var b='';if(s.dcs!=null)b+='<span class="badge">DCS '+s.dcs+'</span>';if(s.src)b+='<span class="badge">'+s.src+'</span>';
+   var tg=(s.tag==='header'||s.tag==='head')?'':'<span class="tag">'+esc(s.tag)+')</span>';
    h+='<div class="sense">'
-    +'<div class="de"><span class="tag">'+esc(s.tag)+')</span><span class="lbl">DE</span>'+esc(s.de_html)+'</div>'
+    +'<div class="de">'+tg+'<span class="lbl">DE</span>'+esc(s.de_html)+'</div>'
     +trBlock('ru','RU',s.ru_html)+trBlock('en','EN',s.en_html)
     +(b?'<div class="badges">'+b+'</div>':'')+'</div>';
   });
