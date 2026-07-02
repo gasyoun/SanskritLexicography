@@ -68,6 +68,34 @@ EN rows; it is mechanically detectable and mechanically fixable, and should stop
 samples. The untranslated-editorial-note case belongs to the existing `fix_german_connectives`
 family.
 
+### Follow-ups — IMPLEMENTED (2026-07-02, Opus 4.8 `claude-opus-4-8`; A/B generation Sonnet 5 `claude-sonnet-5`)
+
+All three recommendations are delivered (handoff [`OPUS_pwg_s7_quality_gate.md`](https://github.com/gasyoun/Uprava/blob/main/handoffs/OPUS_pwg_s7_quality_gate.md)):
+
+1. **Prompt "translate, don't annotate"** — a HARD RULE added to BOTH the RU template
+   (`run_pilot_wf.js` `TR`, rule 6) and [`src/pilot/tr_en.txt`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/tr_en.txt)
+   (rule 4): render exactly what the German states; never add interpretive glosses, scope
+   qualifiers, or attributions («и другими» / "and others") the source lacks.
+2. **MW-TM guard (EN)** — the injected MW block (`gen_opt_harness2.mw_tm_block`) and
+   `tr_en.txt`'s MW REFERENCE paragraph now state MW is a **terminology cross-check only**:
+   no phrase/parenthetical/sense copied unless the German licenses it (kills the
+   "(of a heavenly body)" leak class).
+3. **`{%..%}`-pair-count soft gate** — the deterministic check the memo asked for **already
+   shipped** in [PR #78](https://github.com/gasyoun/SanskritLexicography/pull/78) (DharmaMitra
+   crosswalk): RU `prompt_rule_audit.markup_wrapper_dropped` (soft/low, never a requeue) +
+   EN `audit_window_en.MARKUP-LOSS` (soft, never fails `--strict`). This session pinned both
+   with `window_selftest.py` fixtures (`test_markup_loss_soft_flag_ru/_en`); suite green.
+
+**A/B validation** (yaj, 7 cards incl. the 208-`<ls>` dense head, old prompt vs new prompt,
+generation Sonnet 5 `claude-sonnet-5`, ≤3-wide, saved to scratch — never promoted). On the 6
+structurally-identical non-partial cards (same 13 German `{%..%}` pairs): marker retention
+**2/13 → 13/13** (drop-rate **85 % → 0 %**); addition-class high-confidence risks
+(`untranslated_braced_german_gloss`) **3 → 0**; coverage **7/7 ok, 0 null** in both arms (no
+regression). The dense head stayed partial in both (self-heal fragment variance, not a prompt
+effect). n is small and generation is stochastic — indicative, not conclusive — but the
+direction is unambiguous and nothing regressed. Ground truth: faithful-to-the-German
+([FU1 decision 6](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/FU1_PLAN.md)).
+
 ## Sampling plan the bulk run must carry (binding for Phase 2)
 
 1. **Re-run `promote_en.py` first** — state finding: the current store
