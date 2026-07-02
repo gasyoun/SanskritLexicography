@@ -22,26 +22,26 @@ pipeline, with article-comparison Russian review work as the secondary track.
 Use the optimized Max Workflow route. Do not run the committed template
 `src/pilot/run_pilot_wf.js` directly for production windows.
 
-Immediate next operator action:
+Immediate next operator action: read the live queue in
+[`.ai_state.md`](.ai_state.md) — do NOT take a hardcoded root list from this
+file (an earlier version pinned `sTA` -> `BU` here long after both completed;
+this doc describes the LOOP, the journal owns the QUEUE).
 
-1. Run the fresh `sTA` Max Workflow using the regenerated optimized harness for
-   the 123-card/citation-batch rootmap.
-2. Save the Max result as `wf_output.json`.
-3. Audit it:
+Per root, after the Workflow run, save + audit in one step (this also refuses
+the requeue-clobbers-full-file overwrite and merges requeues with `--merge`):
 
 ```powershell
-python src\pilot\audit_window.py wf_output.json --root sTA --write-requeue
+python save_and_audit.py <root> <task_output_file> <tag>   # tag: sc / sd / en ...
 ```
 
 If `requeue.keys.txt` is non-empty, build and run the targeted rerun harness:
 
 ```powershell
-python src\pilot\requeue_from_audit.py sTA
+python src\pilot\requeue_from_audit.py <root>            # or --transient / --defect
 ```
 
 If mechanical gates pass and `judge_sample.keys.txt` is non-empty, send only
-that key set to semantic judging. After `sTA` is mechanically clean and judged as
-needed, advance to `BU`.
+that key set to semantic judging.
 
 Canonical loop from the repo root:
 
@@ -56,8 +56,8 @@ python src\pilot\audit_window.py wf_output.json --root <root> --write-requeue
 > The legacy per-card `gen_opt_harness.py` / `run_pilot_wf.opt.js` is deprecated;
 > use `gen_opt_harness2.py` / `run_pilot_wf.opt2.js` for all production windows.
 
-Current queue: finish `sTA` re-batch cleanup, then `BU`, `gam`, `yuj`, `as`,
-`i`, `vid`, `han`.
+Current queue: see [`.ai_state.md`](.ai_state.md) `## Next Steps` — the queue
+lives in the journal, not here.
 
 The generated optimized harness:
 

@@ -1,5 +1,16 @@
 # Pipeline architecture — `pwg_ru` / `mw_ru` (harvest-first)
 
+> **⚠ STALENESS BANNER (added 02-07-2026, S10 architecture audit).** Parts of this
+> document describe the ~2026-06-15 state and are superseded. The canonical operator
+> path is now [`src/pilot/gen_opt_harness2.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/gen_opt_harness2.py)
+> → `run_pilot_wf.opt2.js` (batched+masked, `--selfheal --binary-split --output-budget`),
+> saved via [`save_and_audit.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/save_and_audit.py)
+> and promoted via [`src/promote_final_cards.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/promote_final_cards.py)
+> / [`src/promote_en.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/promote_en.py) —
+> the "Translation runner: TODO" and "Assembly: TODO" sections below are DONE. For the
+> audited, current call-graph see
+> [`ARCHITECTURE_AUDIT_2026-07-02.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/ARCHITECTURE_AUDIT_2026-07-02.md).
+
 > Engineering reference (English) for the shared two-pipeline dictionary
 > translation engine. The editor-facing process notes are
 > [pwg_ru.md](pwg_ru.md) (German→Russian, *planned*) and
@@ -21,14 +32,14 @@ operator path is now the frequency-window Max workflow:
 
 ```powershell
 python src\pilot\root_window_status.py <root>
-python src\pilot\gen_opt_harness.py <root>
-# run src\pilot\run_pilot_wf.opt.js in Claude/Max Workflow and save wf_output.json
+python src\pilot\gen_opt_harness2.py <root>
+# run src\pilot\run_pilot_wf.opt2.js in Claude/Max Workflow, then: python save_and_audit.py <root> <task_output> <tag>
 python src\pilot\audit_window.py wf_output.json --root <root> --write-requeue
 ```
 
 Current source of truth:
 
-- `src/pilot/gen_opt_harness.py` derives the production harness from
+- `src/pilot/gen_opt_harness2.py` derives the production harness from
   `src/pilot/run_pilot_wf.js`, inlines raw/portrait inputs, disables tools for
   translate agents, and embeds rootmap/input hashes.
 - `src/pilot/audit_window.py` is the canonical local acceptance gate. It now
@@ -48,7 +59,7 @@ Current source of truth:
   sections; the card-risk section includes a ranked `review_queue` so humans
   can read the riskiest semantic cases first.
 - The committed `src/pilot/run_pilot_wf.js` is a template. Do not run it
-  directly for production windows; run the generated `run_pilot_wf.opt.js`.
+  directly for production windows; run the generated `run_pilot_wf.opt2.js`.
 - Semantics is deterministic-first locally: cheap semantic-risk patterns are
   flagged before human review, while LLM semantic judging remains only the
   later `judge_sample.keys.txt` spend queue.
