@@ -194,10 +194,21 @@ specific follow-ups (in priority order):
    wiring.
 3. **EN store layer**: re-run `promote_en.py` (S7 leftover; one command + verification).
 
-<a name="live-validation"></a>**Live validation (this session):** the 4 missing `vas` keys
-were re-run through the #63 harness (RU, full stack) via the Workflow tool — result recorded
-in [`.ai_state.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/.ai_state.md)
-(S10 entry) with per-key outcome, the failure ledger's output, and promotion status.
+<a name="live-validation"></a>**Live validation (this session) — PASSED, 4/4.** The 4
+store-missing `vas` keys were re-run through the #63 harness (RU,
+`--selfheal --binary-split --output-budget=60`) via the Workflow tool: summary
+`{cards:4, ok:4, null:0, healed:1, partial_keys:[], failures:{}}` — 15 agent calls,
+~988k tokens, ~16 min. The run exercised the new machinery under real fire: one retry
+returned a literal junk `"test"` card, which **key1-matched acceptance rejected** (the
+pre-fix positional path would have mis-assigned it); one bisection half hard-threw
+`StructuredOutput retry cap (5) exceeded` (the exact Mode-1 throw), was caught, and fell
+through to selfheal; `vas~~h0_zz_pw01` healed across 9 fragment groups to a COMPLETE card.
+All 4 cards merge-saved into `wf_output.sc.vas.json` (7→11 non-null) and merge-promoted
+into the store (10,614→10,771 rows; dated `.SAFE_s10_20260702.keep` backup taken first).
+**Provenance finding:** the harness's `model:'sonnet'` alias resolved to **Sonnet 5
+(`claude-sonnet-5`)** in this runtime — NOT Sonnet 4.6 as during the 2026-06-30 FU1 run;
+promotion used `--gen-model-version claude-sonnet-5`. Any promotion of runs after
+~2026-07-02 must not use the 4.6 default.
 
 ---
 
