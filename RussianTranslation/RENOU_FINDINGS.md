@@ -1,7 +1,9 @@
 # Renou register axis — findings register
 
-Empirical findings from the two-axis tagging ([`RENOU.md`](RENOU.md)), beyond the
-headline épigraphique result of [`papers/A34_renou_register_note.md`](../../papers/A34_renou_register_note.md).
+_Created: 26-06-2026 · Last updated: 02-07-2026_
+
+Empirical findings from the two-axis tagging ([`RENOU.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/RENOU.md)), beyond the
+headline épigraphique result of [`papers/A34_renou_register_note.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/papers/A34_renou_register_note.md).
 Each is marked **[source]** (grounded in Renou's text) or **[data]** (measured over the
 8 Renou-tagged dictionaries). The per-register metrics behind them:
 
@@ -61,7 +63,7 @@ coexists with treating the 20 registers equally by default.
 registers (vs kāvya 19.8 %, nāṭya 23.8 %, epic 21.7 %): a vocabulary **standardised across
 dictionaries**, exactly what a cross-disciplinary technical instrument should be.
 (b) *Syntactic (corpus):* the finite-verb-density count (now done — see F5 /
-[`RENOU_NOMINAL_STYLE.md`](RENOU_NOMINAL_STYLE.md)) puts bhāṣya at **6.25 %** finite verbs,
+[`RENOU_NOMINAL_STYLE.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/RENOU_NOMINAL_STYLE.md)) puts bhāṣya at **6.25 %** finite verbs,
 **below kāvya (7.48 %)** — confirming Renou's exact p. 139 claim that the nominal style
 asserts itself in bhāṣya "plus complètement que dans le style littéraire." (*External
 sources still to read + cite:* Tubb & Boose, *Scholastic Sanskrit*; Speijer's syntax.)
@@ -100,7 +102,7 @@ epic 21.7 %, kāvya 19.8 % at the top, and the śāstric registers — bhāṣya
 **grow and individualise** the lexicon (ornament, synonymy, drama-specific vocabulary one
 dictionary records and the next does not); the technical/doctrinal registers **standardise**
 it. This is the same conservation-vs-invention axis seen in the cross-axis slices
-([`RENOU_CROSSAXIS.md`](RENOU_CROSSAXIS.md) §1–2), now read off the register metrics directly.
+([`RENOU_CROSSAXIS.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/RENOU_CROSSAXIS.md) §1–2), now read off the register metrics directly.
 
 ## F5. The finite verb recedes across the states — Renou's nominalisation, measured — **[source + data]**
 
@@ -113,8 +115,8 @@ the nominal floor is the **philosophical-sūtra / grammar / scholastic / kośa**
 (Nyāyasūtra 0.18 %, Aṣṭādhyāyī 0.57 %, Abhidharmakośa 2.02 %, Amarakośa 2.52 %), the verbal
 ceiling the **Vedic Saṃhitā/Brāhmaṇa** (Taittirīyasaṃhitā 18.5 %) — a 50–100× span. Full
 study, tables, and caveats (the "sūtra" register is verbal because it is the *Vedic ritual*
-sūtra, not the darśana-sūtra): [`RENOU_NOMINAL_STYLE.md`](RENOU_NOMINAL_STYLE.md);
-tool [`src/nominal_style.py`](src/nominal_style.py). This is the strongest single result of
+sūtra, not the darśana-sūtra): [`RENOU_NOMINAL_STYLE.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/RENOU_NOMINAL_STYLE.md);
+tool [`src/nominal_style.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/nominal_style.py). This is the strongest single result of
 the project: a named 1956 thesis confirmed at corpus scale, with the predicted mechanism
 (participle/nominal rise) visible in the same numbers.
 
@@ -151,3 +153,5 @@ sanskrite* (1956), pp. 133, 139 — scan in
 [VisualDCS/docs](https://github.com/gasyoun/VisualDCS/tree/main/docs), print→PDF offset −7.
 These findings feed the A34 data note and may seed a follow-on on register-predicted
 era-spread.
+
+_Dr. Mārcis Gasūns_

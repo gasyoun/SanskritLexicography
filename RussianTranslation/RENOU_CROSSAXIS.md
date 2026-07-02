@@ -1,10 +1,12 @@
 # Cross-axis slices — where Renou's state and register axes compose
 
+_Created: 26-06-2026 · Last updated: 02-07-2026_
+
 The two Renou axes — diachronic **state** (I–V) and **register** (the 20 subsections,
-[`RENOU_REGISTERS.md`](RENOU_REGISTERS.md)) — are orthogonal, so their **intersections and
+[`RENOU_REGISTERS.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/RENOU_REGISTERS.md)) — are orthogonal, so their **intersections and
 differences** name strata neither axis can name alone. This note works through the most
 revealing of them: for each, what it is, how it breaks down, real headwords (glosses abridged from the **Monier-Williams** entry), and what it
-tells us. Companion to the data note [`papers/A34_renou_register_note.md`](../../papers/A34_renou_register_note.md).
+tells us. Companion to the data note [`papers/A34_renou_register_note.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/papers/A34_renou_register_note.md).
 
 **Counting convention.** Each slice's **headline count is the reproducible figure** printed
 by the `renou_glossary.py` command shown — distinct headwords (by IAST) where the condition
@@ -200,8 +202,11 @@ word.
 
 ## Reproducibility
 
-All slices above are regenerable with [`src/renou_glossary.py`](src/renou_glossary.py) using
+All slices above are regenerable with [`src/renou_glossary.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/renou_glossary.py) using
 the printed commands (`--state` / `--exclude-state` / `--and-register` / `--not-register`).
 Anatomy (co-registers, dict-spread) is computed over the canonical `{code}.renou.jsonl`. See
-[`RENOU.md`](RENOU.md) for the tagging system and [`RENOU_REGISTERS.md`](RENOU_REGISTERS.md)
+[`RENOU.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/RENOU.md) for the tagging system and
+[`RENOU_REGISTERS.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/RENOU_REGISTERS.md)
 for the register catalog.
+
+_Dr. Mārcis Gasūns_
