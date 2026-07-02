@@ -9,6 +9,16 @@ then **cut a new version every time the changelog is updated** (promote
 
 ## [Unreleased]
 
+## [0.0.36] - 2026-07-02
+
+### Changed — FINDINGS.md: numbered findings + Source as own paragraph
+- Every finding in [`FINDINGS.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md)
+  now carries a paragraph number in its heading (1–40, **append-only** — a new finding takes
+  the next free number, existing numbers never shift, mirrored in the index anchors), and each
+  **Source** line is its own paragraph so it renders on a separate line. Same treatment applied
+  to the [`Uprava/FINDINGS.md`](https://github.com/gasyoun/Uprava/blob/main/FINDINGS.md) infra
+  registry (8 findings).
+
 ## [0.0.35] - 2026-07-02
 
 ### Changed — FINDINGS.md restructured into an indexed, anchored registry
