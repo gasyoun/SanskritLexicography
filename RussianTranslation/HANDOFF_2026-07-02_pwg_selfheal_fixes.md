@@ -1,6 +1,6 @@
 # Handoff — pwg selfheal/binary-split/output-budget/partial-credit fixes, live-validated
 
-<p align="right"><sub>Created: 02-07-2026 · Last updated: 02-07-2026</sub></p>
+_Created: 02-07-2026 · Last updated: 02-07-2026_
 
 **For:** a fresh chat. **Branch:** work off `master` directly — `feat/pwg-en-fu1-phase0` was
 merged and deleted mid-session (2026-07-01); it no longer exists.
@@ -119,4 +119,4 @@ python src/pilot/build_article_site.py
 Full journal: [`.ai_state.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/.ai_state.md).
 Prior handoff: [`HANDOFF_2026-07-01_pwg_efficiency_selfheal.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/HANDOFF_2026-07-01_pwg_efficiency_selfheal.md).
 
-<p align="right"><sub>Dr. Mārcis Gasūns</sub></p>
+_Dr. Mārcis Gasūns_

@@ -1,6 +1,6 @@
 # Renou language-state tagging
 
-<p align="right"><sub>Created: 24-06-2026 · Last updated: 01-07-2026</sub></p>
+_Created: 24-06-2026 · Last updated: 01-07-2026_
 
 Every dictionary headword/sense is classified into one of **Louis Renou's five
 states of Sanskrit** (*Histoire de la langue sanskrite*, 1956 — the five chapters;
@@ -416,4 +416,4 @@ layer in [`CORPUS_PROVENANCE.md`](CORPUS_PROVENANCE.md#renou-register-layer-atte
 per-*sense* register beats per-*headword* register, and it composes with the state axis the
 same way — independent, provenance-graded, and only as informative as the evidence actually is.
 
-<p align="right"><sub>Dr. Mārcis Gasūns</sub></p>
+_Dr. Mārcis Gasūns_
