@@ -486,8 +486,8 @@ the raw DE/RU/EN stores (which multiply each citation ~4× via translation field
 <div align="right">
 
 <sub>**Source:** [`build_citation_index.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/build_citation_index.py)
-→ [`UNCOVERED_SOURCES.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/UNCOVERED_SOURCES.md)
-+ [`CITATION_SOURCES.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/CITATION_SOURCES.md) — SanskritLexicography · 2026-07-02</sub>
+→ [`UNCOVERED_SOURCES.md`](https://github.com/sanskrit-lexicon/PWG/blob/main/pwg_ls/pwg_ru_coverage/UNCOVERED_SOURCES.md)
++ [`CITATION_SOURCES.md`](https://github.com/sanskrit-lexicon/PWG/blob/main/pwg_ls/pwg_ru_coverage/CITATION_SOURCES.md) — SanskritLexicography · 2026-07-02</sub>
 
 </div>
 
