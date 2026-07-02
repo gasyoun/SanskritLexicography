@@ -11,12 +11,12 @@ Frau Angelika Rüter / Nodus Publikationen (Münster)
 
 Sehr geehrte Frau Professor Haßler, sehr geehrte Frau Rüter,
 
-hiermit möchte ich Ihnen den beigefügten Aufsatz **„Measuring the discretion-screen: a
-metalanguage-relative method for detecting lexicographic euphemism — with the Sanskrit
-*obscaena Latine* as case study"** (deutsch etwa: „Die Vermessung des Diskretionsschirms:
-eine metasprachenrelative Methode zur Erkennung lexikographischer Euphemismen – mit dem
-sanskritischen *obscaena Latine* als Fallstudie") zur Begutachtung für die *Beiträge zur
-Geschichte der Sprachwissenschaft* anbieten.
+hiermit möchte ich Ihnen den beigefügten Aufsatz **„The Latin discretion-screen in
+nineteenth-century Sanskrit lexicography: a history, and a metalanguage-relative method for
+measuring it"** (deutsch etwa: „Der lateinische Diskretionsschirm in der
+Sanskrit-Lexikographie des 19. Jahrhunderts: seine Geschichte und eine metasprachenrelative
+Methode zu seiner Vermessung") zur Begutachtung für die *Beiträge zur Geschichte der
+Sprachwissenschaft* anbieten.
 
 Der Aufsatz beschreibt und vermisst erstmals eine bislang nicht dokumentierte editorische
 Praxis der Sanskrit-Lexikographie des 19. Jahrhunderts: den **Diskretionsschirm**, mit dem
@@ -24,10 +24,12 @@ die Petersburger Schule (Böhtlingk–Roth) und ihre Nachfolger anstößige Stic
 der Volkssprache, sondern auf Lateinisch glossierten – die Wurzel √*yabh* schlicht als
 *futuere* –, sodass der gelehrte Leser folgen konnte, der Laie hingegen nicht. Diese Praxis
 ist das lexikographische Gegenstück zu der bekannteren Gepflogenheit der Loeb Classical
-Library, die obszönen Stellen griechischer Autoren ins Lateinische zu übertragen, und steht
-in bewusstem Gegensatz zur anglophonen Strategie der vollständigen Auslassung, die
-Mugglestone für das *OED* beschrieben hat. Soweit ich sehe, wurde sie bisher weder
-dokumentiert noch quantifiziert.
+Library, die obszönen Stellen griechischer Autoren ins Lateinische zu übertragen — und zu
+den lateinischen Glossen von Liddell–Scott für das obszöne Griechisch, die erst das
+*Cambridge Greek Lexicon* (2021) aufgegeben hat —, und steht in bewusstem Gegensatz zur
+anglophonen Strategie der vollständigen Auslassung, die Mugglestone für das *OED*
+beschrieben hat. Soweit ich sehe, wurde sie für die Sanskrit-Lexikographie bisher nicht
+dokumentiert und für keine Tradition quantifiziert.
 
 Der Beitrag dürfte die Leserschaft der *Beiträge* in zweifacher Hinsicht interessieren.
 Erstens als **Wissenschaftsgeschichte**: Er datiert die Praxis genau – am stärksten bei
@@ -47,7 +49,7 @@ internen Kontrollen validiert wird – ein Ergebnis, das sich m. E. auf jede Tra
 oder Griechisch in den europäischen Volkssprachen; das klassische Chinesisch; das Sanskrit
 in den neuindischen Sprachen).
 
-Der Beitrag ist als Aufsatz bzw. Kurzmitteilung von etwa 6.000–7.000 Wörtern konzipiert; die
+Der Beitrag ist als Aufsatz bzw. Kurzmitteilung von etwa 7.000 Wörtern konzipiert; die
 zugrunde liegenden Datensätze (das vollständige Bedeutungsinventar, das Gegenverzeichnis der
 unverhüllten volkssprachlichen Ausdrücke sowie die korpusweite Erhebung) sind offen
 archiviert und können den Aufsatz begleiten oder als Supplement zitiert werden. Die Arbeit

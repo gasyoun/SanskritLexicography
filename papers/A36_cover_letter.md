@@ -1,6 +1,6 @@
 # Cover letter — submission to *Beiträge zur Geschichte der Sprachwissenschaft*
 
-*(Draft, 2026-06-26. English version; a German version can be supplied — see note at the end.)*
+*(Draft, 2026-07-02. English version; a German version can be supplied — see note at the end.)*
 
 ---
 
@@ -11,10 +11,9 @@ Angelika Rüter / Nodus Publikationen (Münster)
 
 Dear Professor Haßler, dear Ms Rüter,
 
-I should like to submit the enclosed article, **"Measuring the discretion-screen: a
-metalanguage-relative method for detecting lexicographic euphemism — with the Sanskrit
-*obscaena Latine* as case study,"** for consideration in *Beiträge zur Geschichte der
-Sprachwissenschaft*.
+I should like to submit the enclosed article, **"The Latin discretion-screen in
+nineteenth-century Sanskrit lexicography: a history, and a metalanguage-relative method for
+measuring it,"** for consideration in *Beiträge zur Geschichte der Sprachwissenschaft*.
 
 The paper recovers and measures a hitherto undescribed editorial practice in nineteenth-
 century Sanskrit lexicography: the **discretion-screen**, by which the St Petersburg school
@@ -22,9 +21,11 @@ century Sanskrit lexicography: the **discretion-screen**, by which the St Peters
 Latin — the root √*yabh* rendered simply *futuere* — so that the learned reader could follow
 while the lay reader could not. The practice is the lexicographical sibling of the better-
 known Loeb Classical Library habit of printing the obscene passages of Greek authors in
-Latin, and it stands in deliberate contrast to the Anglophone strategy of outright omission
-described by Mugglestone for the *OED*. To my knowledge it has not previously been documented
-or quantified.
+Latin — and of Liddell–Scott's Latin glosses for obscene Greek, only abandoned by the 2021
+*Cambridge Greek Lexicon* — and it stands in deliberate contrast to the Anglophone strategy
+of outright omission described by Mugglestone for the *OED*. To my knowledge it has not
+previously been documented for Sanskrit lexicography, and it has not been quantified for any
+tradition.
 
 The article will, I hope, interest the readership of the *Beiträge* on two counts. First, as
 **historiography of the discipline**: it locates the practice precisely in time — strongest
@@ -42,7 +43,7 @@ tradition whose discretion-screen is written in a prestige language (Latin or Gr
 European vernaculars; Classical Chinese; Sanskrit into the modern Indian languages).
 
 The piece is conceived as a **research article / short communication** of roughly
-6,000–7,000 words; the underlying datasets (the full sense inventory, the blunt-vernacular
+7,000 words; the underlying datasets (the full sense inventory, the blunt-vernacular
 counter-inventory, and the corpus-wide sweep) are openly archived and can accompany the
 article or be cited as a supplement, as you prefer. The work is original, is not under
 consideration elsewhere, and has no competing interests to declare. I am happy to adapt the
@@ -61,7 +62,8 @@ gasyoun@ya.ru · ORCID: 0000-0003-4513-884X
 Italian; the article is submitted in **English**. A **German version of this cover letter**
 accompanies it ([`A36_cover_letter_de.md`](A36_cover_letter_de.md)); a German version of the
 article itself can be prepared on request (the technical terminology — *Diskretionsschirm*,
-*verhüllende Latinisierung*, *Schamwort* — adapts cleanly).
+*Schirmsprache*, *metasprachenrelativ*, *verschleiert* — is already fixed in the German
+letter and adapts cleanly).
 
 **Suggested reviewers / contacts** *(optional, to be completed)*: a historian of Indology /
 Sanskrit lexicography; a historian of nineteenth-century philological practice; a digital-
