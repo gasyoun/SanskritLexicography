@@ -242,13 +242,16 @@ def main():
             continue
         nls = open(rawp, encoding='utf-8').read().count('<ls')
         max_ls = max(max_ls, nls)
-        if s.get('batch_of') and nls > budget:
+        is_citation_batch = s.get('batch_of') and (
+            s.get('batch_count') is not None or s.get('batch_index') is not None)
+        if is_citation_batch and nls > budget:
             over_budget.append((s['subkey'], nls))
 
     batch_errors = []
     groups = defaultdict(list)
     for s in subs:
-        if s.get('batch_of'):
+        if s.get('batch_of') and (
+                s.get('batch_count') is not None or s.get('batch_index') is not None):
             groups[(s.get('hom'), s.get('batch_of'))].append(s)
     for (hom, batch_of), group in sorted(groups.items()):
         counts = {g.get('batch_count') for g in group}
@@ -257,7 +260,16 @@ def main():
                                 % (hom, batch_of, sorted(counts)))
             continue
         count = counts.pop()
-        indexes = sorted(g.get('batch_index') for g in group)
+        if count is None:
+            batch_errors.append('hom %s sense %s missing batch_count metadata'
+                                % (hom, batch_of))
+            continue
+        raw_indexes = [g.get('batch_index') for g in group]
+        if any(i is None for i in raw_indexes):
+            batch_errors.append('hom %s sense %s missing batch_index metadata'
+                                % (hom, batch_of))
+            continue
+        indexes = sorted(raw_indexes)
         if indexes != list(range(count)):
             batch_errors.append('hom %s sense %s indexes %s != 0..%d'
                                 % (hom, batch_of, indexes, count - 1))

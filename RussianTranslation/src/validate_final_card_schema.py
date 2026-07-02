@@ -25,10 +25,12 @@ SCHEMA_ID = 'pwg_ru.final_card.schema.v1'
 RESULT_REQUIRED = {'card', 'judge'}
 CARD_REQUIRED = {'key1', 'iast', 'records', 'notes'}
 RECORD_REQUIRED = {'h', 'grammar', 'senses'}
-SENSE_REQUIRED = {
-    'tag', 'german', 'russian', 'equivalence_type', 'source_type',
-    'stratum', 'differentia',
-}
+# Only tag + source german + the translation are required per sense. The 4
+# annotator fields (equivalence_type, source_type, stratum, differentia) are
+# validated ONLY when present (see validate_sense) — this matches the relaxed
+# generation schema (gen_opt_harness2.py) that lets the citation-dense main-head
+# pwg cards satisfy structured output without burning the retry cap.
+SENSE_REQUIRED = {'tag', 'german', 'russian'}
 JUDGE_REQUIRED = {
     'key1', 'ok', 'severity', 'register_ok', 'sigla_kept', 'coverage_ok',
     'corpus_used', 'discrimination_quality', 'issues', 'note',
@@ -159,11 +161,16 @@ def validate_judge(judge, key1):
 def validate_sense(sense, where):
     need_obj(sense, where)
     need_keys(sense, SENSE_REQUIRED, where)
-    for key in ('tag', 'german', 'russian', 'stratum', 'differentia'):
+    for key in ('tag', 'german', 'russian'):
         need_str(sense, key, where, nonempty=(key == 'tag'))
-    if sense.get('equivalence_type') not in EQ_TYPES:
+    # Annotator fields: validated only when present (relaxed 2026-07-01 so dense
+    # main-head cards recovered under the trimmed generation schema stay valid).
+    for key in ('stratum', 'differentia'):
+        if key in sense:
+            need_str(sense, key, where)
+    if 'equivalence_type' in sense and sense.get('equivalence_type') not in EQ_TYPES:
         fail('%s bad equivalence_type: %r' % (where, sense.get('equivalence_type')))
-    if sense.get('source_type') not in SOURCE_TYPES:
+    if 'source_type' in sense and sense.get('source_type') not in SOURCE_TYPES:
         fail('%s bad source_type: %r' % (where, sense.get('source_type')))
     # Optional apparatus fields (added 2026-06-24, apparatus study). Validated
     # only when present, so existing cards stay valid.

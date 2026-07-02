@@ -4,37 +4,64 @@
   "title": "PWG Russian final translated card with QA verdict",
   "type": "object",
   "additionalProperties": false,
-  "required": ["card", "judge"],
+  "required": [
+    "card",
+    "judge"
+  ],
   "properties": {
     "key": {
       "type": "string",
       "description": "Workflow batch key; when present it must match card.key1."
     },
-    "card": { "$ref": "#/$defs/card" },
-    "judge": { "$ref": "#/$defs/judge" }
+    "card": {
+      "$ref": "#/$defs/card"
+    },
+    "judge": {
+      "$ref": "#/$defs/judge"
+    }
   },
   "$defs": {
     "card": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["key1", "iast", "records", "notes"],
+      "required": [
+        "key1",
+        "iast",
+        "records",
+        "notes"
+      ],
       "properties": {
-        "key1": { "type": "string", "minLength": 1 },
-        "iast": { "type": "string" },
+        "key1": {
+          "type": "string",
+          "minLength": 1
+        },
+        "iast": {
+          "type": "string"
+        },
         "records": {
           "type": "array",
           "minItems": 1,
-          "items": { "$ref": "#/$defs/record" }
+          "items": {
+            "$ref": "#/$defs/record"
+          }
         },
-        "notes": { "type": "string" }
+        "notes": {
+          "type": "string"
+        }
       }
     },
     "record": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["h", "grammar", "senses"],
+      "required": [
+        "h",
+        "grammar",
+        "senses"
+      ],
       "properties": {
-        "h": { "type": "string" },
+        "h": {
+          "type": "string"
+        },
         "grammar": {
           "type": "string",
           "description": "POS/gender as PWG, verbatim where applicable."
@@ -42,7 +69,9 @@
         "senses": {
           "type": "array",
           "minItems": 1,
-          "items": { "$ref": "#/$defs/sense" }
+          "items": {
+            "$ref": "#/$defs/sense"
+          }
         },
         "renou_oldest_sense": {
           "type": "integer",
@@ -57,14 +86,13 @@
       "required": [
         "tag",
         "german",
-        "russian",
-        "equivalence_type",
-        "source_type",
-        "stratum",
-        "differentia"
+        "russian"
       ],
       "properties": {
-        "tag": { "type": "string", "minLength": 1 },
+        "tag": {
+          "type": "string",
+          "minLength": 1
+        },
         "german": {
           "type": "string",
           "description": "The PWG German for this sense, with the source's {#…#} Sanskrit delimiters and <ls>/<ab>/<lex>/<is> markup kept VERBATIM — not stripped to plain text, not transliterated to bare IAST."
@@ -73,8 +101,19 @@
           "type": "string",
           "description": "The Russian rendering in scholarly register."
         },
-        "equivalence_type": { "enum": ["equivalent", "explanatory"] },
-        "source_type": { "enum": ["attested", "lexicographic", "mixed"] },
+        "equivalence_type": {
+          "enum": [
+            "equivalent",
+            "explanatory"
+          ]
+        },
+        "source_type": {
+          "enum": [
+            "attested",
+            "lexicographic",
+            "mixed"
+          ]
+        },
         "stratum": {
           "type": "string",
           "description": "Stratum used, such as Vedic, Epic / early-Classical, Classical, Medieval, or empty."
@@ -89,18 +128,35 @@
         },
         "labels": {
           "type": "array",
-          "items": { "type": "string" },
+          "items": {
+            "type": "string"
+          },
           "uniqueItems": true,
           "description": "OPTIONAL. Diasystem / domain labels in the Kochergina Russian abbreviation set (e.g. грам., миф., бот., мед., астр., филос., юр., воен., поэт., nom. pr.). Maps PWG <ab>/AP90 bracketed domain markers onto Koch's vocabulary. Chronology is NOT carried here — that is the separate Renou stratum/renou fields. Empty/absent when no domain applies. Grounds: apparatus study Dimension 2."
         },
         "renou": {
           "type": "array",
-          "items": { "enum": ["I", "II", "III", "IV", "V"] },
+          "items": {
+            "enum": [
+              "I",
+              "II",
+              "III",
+              "IV",
+              "V"
+            ]
+          },
           "uniqueItems": true,
           "description": "Renou language-state(s) of Sanskrit this sense is attested in, derived deterministically from its <ls> citations (I Vedic, II Pāṇinian, III Epic, IV Classical, V Buddhist/Jaina). Multi-label, ordered I→V. Empty/absent when the sense carries no recognised quotation. Added by annotate_renou.py."
         },
         "renou_oldest": {
-          "enum": ["I", "II", "III", "IV", "V", ""],
+          "enum": [
+            "I",
+            "II",
+            "III",
+            "IV",
+            "V",
+            ""
+          ],
           "description": "The Renou state of this sense's earliest-dated <ls> citation, or empty when no dated citation is present."
         }
       }
@@ -121,15 +177,22 @@
         "note"
       ],
       "properties": {
-        "key1": { "type": "string", "minLength": 1 },
-        "ok": { "type": "boolean" },
+        "key1": {
+          "type": "string",
+          "minLength": 1
+        },
+        "ok": {
+          "type": "boolean"
+        },
         "severity": {
           "type": "integer",
           "minimum": 1,
           "maximum": 5,
           "description": "1 is best, 5 is worst."
         },
-        "register_ok": { "type": "boolean" },
+        "register_ok": {
+          "type": "boolean"
+        },
         "sigla_kept": {
           "type": "boolean",
           "description": "Source sigla and grammar abbreviations remain verbatim."
@@ -138,24 +201,44 @@
           "type": "boolean",
           "description": "Every PWG sense was rendered."
         },
-        "corpus_used": { "type": "boolean" },
+        "corpus_used": {
+          "type": "boolean"
+        },
         "discrimination_quality": {
-          "enum": ["strong", "adequate", "weak", "missing"]
+          "enum": [
+            "strong",
+            "adequate",
+            "weak",
+            "missing"
+          ]
         },
         "issues": {
           "type": "array",
-          "items": { "$ref": "#/$defs/judge_issue" }
+          "items": {
+            "$ref": "#/$defs/judge_issue"
+          }
         },
-        "note": { "type": "string" }
+        "note": {
+          "type": "string"
+        }
       }
     },
     "judge_issue": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["severity", "detail"],
+      "required": [
+        "severity",
+        "detail"
+      ],
       "properties": {
-        "severity": { "type": "integer", "minimum": 1, "maximum": 5 },
-        "detail": { "type": "string" }
+        "severity": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 5
+        },
+        "detail": {
+          "type": "string"
+        }
       }
     }
   }

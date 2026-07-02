@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kosha — Sanskrit Dictionary Lookup</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>kosha</h1>
+            <p class="subtitle">Fast Sanskrit Dictionary Lookup</p>
+        </header>
+
+        <!-- Search interface -->
+        <main>
+            <div class="search-section">
+                <!-- Encoding toggle -->
+                <div class="encoding-controls">
+                    <label>Encoding:</label>
+                    <div class="button-group">
+                        <button class="encoding-btn active" data-encoding="slp1">SLP1</button>
+                        <button class="encoding-btn" data-encoding="iast">IAST</button>
+                        <button class="encoding-btn" data-encoding="devanagari">Devanagari</button>
+                        <button class="encoding-btn" data-encoding="hk">Harvard-Kyoto</button>
+                    </div>
+                </div>
+
+                <!-- Search box -->
+                <div class="search-box">
+                    <input
+                        type="text"
+                        id="lemma-input"
+                        placeholder="Type Sanskrit lemma or form..."
+                        autofocus>
+                    <button id="search-btn" class="btn-primary">Search</button>
+                </div>
+
+                <!-- Grammar toggle -->
+                <div class="controls">
+                    <label>
+                        <input type="checkbox" id="grammar-toggle">
+                        Show full grammar
+                    </label>
+                </div>
+
+                <!-- Status message -->
+                <div id="status" class="status"></div>
+            </div>
+
+            <!-- Results -->
+            <div id="results" class="results"></div>
+
+            <!-- API link (fallback) -->
+            <div id="api-notice" class="notice" style="display:none;">
+                <p>
+                    💡 This entry not in quick cache.
+                    <a href="https://samskrtam.ru/kosha/" target="_blank">Visit full API at samskrtam.ru/kosha</a>
+                    for complete dictionary coverage and real-time search.
+                </p>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <p>
+                <strong>kosha</strong> — Sanskrit Dictionary Lookup Service
+                <br>
+                Data: Cologne Digital Sanskrit Lexicon (CC BY 4.0)
+                <br>
+                <a href="https://github.com/gasyoun/SanskritLexicography/tree/main/kosha">Source Code</a> ·
+                <a href="https://samskrtam.ru/kosha/">Full API</a> ·
+                <a href="https://github.com/gasyoun/SanskritLexicography">GitHub</a>
+            </p>
+        </footer>
+    </div>
+
+    <script src="js/transcode.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

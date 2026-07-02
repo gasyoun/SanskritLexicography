@@ -1,0 +1,172 @@
+## udhan
+
+`han~~h0_25_ud`
+
+
+**1)** — *ud* 1) hinauf —, hinaustreiben, — drängen, — heben: *udva ūrmiḥ * * śamyā hantvāpaḥ* [ṚV. 3,33,13.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.033.html#rv03.033.13) *pradhim* [10,102,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.102.html#rv10.102.07) *pavibhirujjighnanta āpathyo3 na parvatān* schleudern bei Seite wie an der Strasse liegende (Steine u. s. w.) [1,64,11.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.064.html#rv01.064.11) *utpaṇīrhatam* [184,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.184.html#rv01.184.02) *pratiṣṭhāyāḥ* verdrängen [ŚAT. BR. 1,8,3,14.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,8,3,14) *grahān* [4,2,4,19.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?4,2,4,19) so v. a. ausrotten: *uddhantyasāvavanikaṇṭakaṃ saptakṛtva urudhāraparaśvadhena* [BHĀG. P. 2,7,22.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,7,22)
+
+- **RU:** — *ud* 1) гнать вверх, теснить вверх, поднимать: *udva ūrmiḥ * * śamyā hantvāpaḥ* [ṚV. 3,33,13.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.033.html#rv03.033.13) *pradhim* [10,102,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.102.html#rv10.102.07) *pavibhirujjighnanta āpathyo3 na parvatān* отбрасывать в сторону, как лежащие на дороге (камни u. s. w.) [1,64,11.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.064.html#rv01.064.11) *utpaṇīrhatam* [184,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.184.html#rv01.184.02) *pratiṣṭhāyāḥ* вытеснять [ŚAT. BR. 1,8,3,14.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,8,3,14) *grahān* [4,2,4,19.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?4,2,4,19) так v. a. искоренять: *uddhantyasāvavanikaṇṭakaṃ saptakṛtva urudhāraparaśvadhena* [BHĀG. P. 2,7,22.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,7,22)
+- **EN:** — *ud*
+ 1) to drive up —, drive out —, push out —, raise up: *udva ūrmiḥ *
+
+* śamyā hantvāpaḥ*
+[ṚV. 3,33,13.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.033.html#rv03.033.13) *pradhim*
+[10,102,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.102.html#rv10.102.07) *pavibhirujjighnanta āpathyo3 na parvatān* to fling aside, like stones lying by the road (u. s. w.)
+[1,64,11.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.064.html#rv01.064.11) *utpaṇīrhatam*
+[184,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.184.html#rv01.184.02) *pratiṣṭhāyāḥ* to displace
+[ŚAT. BR. 1,8,3,14.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,8,3,14) *grahān*
+[4,2,4,19.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?4,2,4,19) thus v. a. to root out: *uddhantyasāvavanikaṇṭakaṃ saptakṛtva urudhāraparaśvadhena*
+[BHĀG. P. 2,7,22.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,7,22)
+  <sub>attested</sub>
+
+**2)** — 2) ausschlagen (einen Graben u. s. w.), aufwerfen, aufschütten: der Eber [ŚAT. BR. 14,1,2,11.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,1,2,11) *vedim* [TS. 2,2,10,5.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?2,2,10,5) [5,2,3,2.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?5,2,3,2) [6,6,4,1.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?6,6,4,1) [TBR. 1,2,1,1.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?1,2,1,1) [3,2,9,9.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?3,2,9,9) *adhidevanam* Comm. [1,66,19.] [ĀPAST. 2,25,12] (*uddhatya* st. *uddhṛtya* zu lesen).
+
+- **RU:** — 2) выкапывать (ров u. s. w.), насыпать, нагромождать: кабан [ŚAT. BR. 14,1,2,11.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,1,2,11) *vedim* [TS. 2,2,10,5.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?2,2,10,5) [5,2,3,2.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?5,2,3,2) [6,6,4,1.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?6,6,4,1) [TBR. 1,2,1,1.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?1,2,1,1) [3,2,9,9.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?3,2,9,9) *adhidevanam* Comm. [1,66,19.] [ĀPAST. 2,25,12] (*uddhatya* st. *uddhṛtya* следует читать).
+- **EN:** — 2) to dig out (a ditch u. s. w.), to throw up, heap up: the boar
+[ŚAT. BR. 14,1,2,11.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,1,2,11) *vedim*
+[TS. 2,2,10,5.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?2,2,10,5) [5,2,3,2.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?5,2,3,2) [6,6,4,1.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?6,6,4,1)
+[TBR. 1,2,1,1.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?1,2,1,1) [3,2,9,9.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?3,2,9,9) *adhidevanam*
+Comm. [1,66,19.] [ĀPAST. 2,25,12] (to be read *uddhatya* st. *uddhṛtya*).
+  <sub>attested</sub>
+
+**3)** — 3) med. sich erhängen: *uddhaniṣye* [R. 3,51,40](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,51,40) (*ābandhiṣye* [ed. Bomb.] [45,36](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,45,36)). *ātmānamuddhatya* (so ist vielleicht zu lesen) [PAÑCAT. 135,3.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?135,3) — *uddhatya* [HARIV. 4408](https://sanskrit-lexicon-scans.github.io/hariv?4408) fehlerhaft für *uddhṛtya* .
+
+- **RU:** — 3) med. вешаться (о самоубийстве): *uddhaniṣye* [R. 3,51,40](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,51,40) (*ābandhiṣye* [ed. Bomb.] [45,36](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,45,36)). *ātmānamuddhatya* (так, быть может, следует читать) [PAÑCAT. 135,3.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?135,3) — *uddhatya* [HARIV. 4408](https://sanskrit-lexicon-scans.github.io/hariv?4408) ошибочно вместо *uddhṛtya* .
+- **EN:** — 3) med. to hang oneself: *uddhaniṣye*
+[R. 3,51,40](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,51,40) (*ābandhiṣye* [ed. Bomb.]
+[45,36](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,45,36)). *ātmānamuddhatya* (this is perhaps the correct reading)
+[PAÑCAT. 135,3.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?135,3) — *uddhatya*
+[HARIV. 4408](https://sanskrit-lexicon-scans.github.io/hariv?4408) erroneous for *uddhṛtya*.
+  <sub>attested</sub>
+
+**4)** — 4) partic. *uddhata* a) aufgewirbelt (vgl. *uddhuta, uddhūta*): Staub [R. 5,73,63.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,73,63) [ṚT. 1,10.] [ŚĀK. 8.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?8) [KATHĀS. 14,13.](https://sanskrit-lexicon-scans.github.io/kss/index.html?14,13)
+
+- **RU:** — 4) partic. *uddhata* a) взметённый вверх (vgl. *uddhuta, uddhūta*): пыль [R. 5,73,63.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,73,63) [ṚT. 1,10.] [ŚĀK. 8.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?8) [KATHĀS. 14,13.](https://sanskrit-lexicon-scans.github.io/kss/index.html?14,13)
+- **EN:** — 4) partic. *uddhata*
+  <sub>attested</sub>
+
+**4a)** a) aufgewirbelt (vgl. *uddhuta, uddhūta*): Staub
+[R. 5,73,63.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,73,63)
+[ṚT. 1,10.]
+[ŚĀK. 8.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?8)
+[KATHĀS. 14,13.](https://sanskrit-lexicon-scans.github.io/kss/index.html?14,13)
+- **EN:** a) whirled up (vgl. *uddhuta, uddhūta*): dust
+[R. 5,73,63.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,73,63)
+[ṚT. 1,10.]
+[ŚĀK. 8.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?8)
+[KATHĀS. 14,13.](https://sanskrit-lexicon-scans.github.io/kss/index.html?14,13)
+
+**4b)** — b) erhöht, hervorragend über (abl.) [ŚAT. BR. 6,4,4,18.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?6,4,4,18) [10,2,3,1.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?10,2,3,1) [KĀTY. ŚR. 5,4,19.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?5,4,19) [7,9,5.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?7,9,5) [TBR. 2,7,6,2](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?2,7,6,2) (*anuddhata*).* sirā* [SUŚR. 1,279,3.] ausgegraben [KĀTY. ŚR. 7,1,19.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?7,1,19) angeschwollen: *sindhu* [Spr. (II) 2721](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2721), v. l. für *unnata* . hoch in der Luft schwebend: Wolken [Spr. (II) 5563.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5563) auf —, in die Höhe gehoben (richtiger *uddhṛta): ˚grīva* [HARIV. 4290](https://sanskrit-lexicon-scans.github.io/hariv?4290) (*unnata˚* die neuere Ausg.). *˚tṛṇā (haṃsī)* [KATHĀS. 69,136.](https://sanskrit-lexicon-scans.github.io/kss/index.html?69,136) *dhvajapaṭairmarutā namitoddhataiḥ* [114,18.](https://sanskrit-lexicon-scans.github.io/kss/index.html?114,18) *śastra* [Spr. (II) 1240](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1240), v. l. für *uddhṛta*.* anuddhatapāda* [PAÑCAT. 260,13.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?260,13) [18.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?260,18) *lāṅgūla* [BHAṬṬ. 9,7.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?9,7) herausgezogen, — geholt: *jalānmatsyau* [R. 2,53,32](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,53,32) (richtig *uddhṛta* [ed. Bomb.]). *garuḍeneva hradinyuddhatapannagā* [47,17](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,47,17) (*uddhṛta˚* [ed. Bomb.]).
+
+- **RU:** — b) возвышенный, выдающийся над (abl.) [ŚAT. BR. 6,4,4,18.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?6,4,4,18) [10,2,3,1.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?10,2,3,1) [KĀTY. ŚR. 5,4,19.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?5,4,19) [7,9,5.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?7,9,5) [TBR. 2,7,6,2](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?2,7,6,2) (*anuddhata*).* sirā* [SUŚR. 1,279,3.] вырытый [KĀTY. ŚR. 7,1,19.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?7,1,19) опухший: *sindhu* [Spr. (II) 2721](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2721), v. l. вместо *unnata* . высоко парящий в воздухе: облака [Spr. (II) 5563.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5563) поднятый вверх (правильнее *uddhṛta): ˚grīva* [HARIV. 4290](https://sanskrit-lexicon-scans.github.io/hariv?4290) (*unnata˚* новейшее Ausg.). *˚tṛṇā (haṃsī)* [KATHĀS. 69,136.](https://sanskrit-lexicon-scans.github.io/kss/index.html?69,136) *dhvajapaṭairmarutā namitoddhataiḥ* [114,18.](https://sanskrit-lexicon-scans.github.io/kss/index.html?114,18) *śastra* [Spr. (II) 1240](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1240), v. l. вместо *uddhṛta*.* anuddhatapāda* [PAÑCAT. 260,13.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?260,13) [18.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?260,18) *lāṅgūla* [BHAṬṬ. 9,7.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?9,7) вынутый, извлечённый: *jalānmatsyau* [R. 2,53,32](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,53,32) (правильно *uddhṛta* [ed. Bomb.]). *garuḍeneva hradinyuddhatapannagā* [47,17](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,47,17) (*uddhṛta˚* [ed. Bomb.]).
+- **EN:** — b) raised, projecting above (abl.)
+[ŚAT. BR. 6,4,4,18.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?6,4,4,18) [10,2,3,1.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?10,2,3,1)
+[KĀTY. ŚR. 5,4,19.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?5,4,19) [7,9,5.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?7,9,5)
+[TBR. 2,7,6,2](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?2,7,6,2) (*anuddhata*).* sirā*
+[SUŚR. 1,279,3.] dug out
+[KĀTY. ŚR. 7,1,19.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?7,1,19) swollen: *sindhu*
+[Spr. (II) 2721](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2721), v. l. for *unnata* . hovering high in the air: clouds
+[Spr. (II) 5563.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5563) raised up —, lifted on high (more correctly *uddhṛta): ˚grīva*
+[HARIV. 4290](https://sanskrit-lexicon-scans.github.io/hariv?4290) (*unnata˚* the later Ausg.). *˚tṛṇā (haṃsī)*
+[KATHĀS. 69,136.](https://sanskrit-lexicon-scans.github.io/kss/index.html?69,136) *dhvajapaṭairmarutā namitoddhataiḥ*
+[114,18.](https://sanskrit-lexicon-scans.github.io/kss/index.html?114,18) *śastra*
+[Spr. (II) 1240](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1240), v. l. for *uddhṛta*.* anuddhatapāda*
+[PAÑCAT. 260,13.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?260,13) [18.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?260,18) *lāṅgūla*
+[BHAṬṬ. 9,7.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?9,7) drawn out, — fetched out: *jalānmatsyau*
+[R. 2,53,32](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,53,32) (correctly *uddhṛta* [ed. Bomb.]). *garuḍeneva hradinyuddhatapannagā*
+[47,17](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,47,17) (*uddhṛta˚* [ed. Bomb.]).
+  <sub>attested</sub>
+
+**4c)** — c) angeschlagen: *vīṇā* [KĀTY. ŚR. 21,3,7.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?21,3,7)
+
+- **RU:** — c) ударенный: *vīṇā* [KĀTY. ŚR. 21,3,7.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?21,3,7)
+- **EN:** — c) struck against, knocked: *vīṇā*
+[KĀTY. ŚR. 21,3,7.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?21,3,7)
+  <sub>attested</sub>
+
+**4d)** — d) gesteigert, heftig, intensiv [HALĀY. 4,59.](https://sanskrit-lexicon-scans.github.io/armh2/app1?4,59) *manyu* [R. 4,36,21.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,36,21) *dhvani* [ṚT. 2,1.] *hasita* [Spr. (II) 800.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?800) *nṛtya* [DAŚAR. 1,10.] *yuddha* [KATHĀS. 74,82.](https://sanskrit-lexicon-scans.github.io/kss/index.html?74,82) [BHĀG. P. 4,25,42.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,25,42) [KUSUM. 27,12.] [PAÑCAT. 93,2](https://sanskrit-lexicon-scans.github.io/pantankose/app2?93,2) (Lesart unsicher).
+
+- **RU:** — d) усиленный, сильный, интенсивный [HALĀY. 4,59.](https://sanskrit-lexicon-scans.github.io/armh2/app1?4,59) *manyu* [R. 4,36,21.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,36,21) *dhvani* [ṚT. 2,1.] *hasita* [Spr. (II) 800.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?800) *nṛtya* [DAŚAR. 1,10.] *yuddha* [KATHĀS. 74,82.](https://sanskrit-lexicon-scans.github.io/kss/index.html?74,82) [BHĀG. P. 4,25,42.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,25,42) [KUSUM. 27,12.] [PAÑCAT. 93,2](https://sanskrit-lexicon-scans.github.io/pantankose/app2?93,2) (чтение неверно).
+- **EN:** — d) intensified, violent, intense
+[HALĀY. 4,59.](https://sanskrit-lexicon-scans.github.io/armh2/app1?4,59) *manyu*
+[R. 4,36,21.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,36,21) *dhvani*
+[ṚT. 2,1.] *hasita*
+[Spr. (II) 800.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?800) *nṛtya*
+[DAŚAR. 1,10.] *yuddha*
+[KATHĀS. 74,82.](https://sanskrit-lexicon-scans.github.io/kss/index.html?74,82)
+[BHĀG. P. 4,25,42.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,25,42)
+[KUSUM. 27,12.] [PAÑCAT. 93,2](https://sanskrit-lexicon-scans.github.io/pantankose/app2?93,2) (reading uncertain).
+  <sub>attested</sub>
+
+**4e)** — e) hochfahrend, stolz, übermüthig [H. 431.](https://sanskrit-lexicon-scans.github.io/abch2/app1?431) [R. GORR. 1,14,43.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,14,43) [NĀṬYAŚ. 18,73.] [Spr. (II) 1239.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1239) [KATHĀS. 44,58.](https://sanskrit-lexicon-scans.github.io/kss/index.html?44,58) [48,73.](https://sanskrit-lexicon-scans.github.io/kss/index.html?48,73) [MĀRK. P. 17,8.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?17,8) *dṛṅmanovāgbhiḥ* 14. *dorbhyāṃ brahmavareṇa ca* pochend auf [BHĀG. P. 3,17,19.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,17,19) *vīryaśauryaśriyā* [11,6,29.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?11,6,29) *akṣavadhoddhata* [RAGH. 12,63.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?12,63) *dhīroddhata* (d. i. *dhīra* und zugleich *uddhata*) [BHAR. NĀṬYAŚ. 34,4. 5.] [DAŚAR. 2,2. 5.] [SĀH. D. 65.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?65) *uddhataṃ vākyam* [Spr. (II) 5248.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5248) [5903.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5903) *veṣa* [5617.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5617) *dhīroddhatā gatiḥ* [UTTARAR. 111,18 (151,2).] *anuddhata* nicht stolz, bescheiden, anspruchlos [KĀM. NĪTIS. 18,33.] *samṛddhibhiḥ* [Spr. (II) 4556.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4556) [VARĀH. BṚH. S. 75,7.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?75,7) *˚manas* [R. 2,6,22.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,6,22) *veṣa* [SUŚR. 1,30,2.] *uddhatatva* _n._ hochfahrendes Wesen (Verwegenheit Comm.) [MAITRYUP. 3,5.]
+
+- **RU:** — e) надменный, гордый, высокомерный [H. 431.](https://sanskrit-lexicon-scans.github.io/abch2/app1?431) [R. GORR. 1,14,43.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,14,43) [NĀṬYAŚ. 18,73.] [Spr. (II) 1239.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1239) [KATHĀS. 44,58.](https://sanskrit-lexicon-scans.github.io/kss/index.html?44,58) [48,73.](https://sanskrit-lexicon-scans.github.io/kss/index.html?48,73) [MĀRK. P. 17,8.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?17,8) *dṛṅmanovāgbhiḥ* 14. *dorbhyāṃ brahmavareṇa ca* кичащийся [BHĀG. P. 3,17,19.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,17,19) *vīryaśauryaśriyā* [11,6,29.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?11,6,29) *akṣavadhoddhata* [RAGH. 12,63.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?12,63) *dhīroddhata* (d. i. *dhīra* и вместе с тем *uddhata*) [BHAR. NĀṬYAŚ. 34,4. 5.] [DAŚAR. 2,2. 5.] [SĀH. D. 65.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?65) *uddhataṃ vākyam* [Spr. (II) 5248.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5248) [5903.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5903) *veṣa* [5617.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5617) *dhīroddhatā gatiḥ* [UTTARAR. 111,18 (151,2).] *anuddhata* негордый, скромный, непритязательный [KĀM. NĪTIS. 18,33.] *samṛddhibhiḥ* [Spr. (II) 4556.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4556) [VARĀH. BṚH. S. 75,7.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?75,7) *˚manas* [R. 2,6,22.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,6,22) *veṣa* [SUŚR. 1,30,2.] *uddhatatva* _n._ надменный нрав (дерзость Comm.) [MAITRYUP. 3,5.]
+- **EN:** — e) high-flying, proud, arrogant
+[H. 431.](https://sanskrit-lexicon-scans.github.io/abch2/app1?431)
+[R. GORR. 1,14,43.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,14,43)
+[NĀṬYAŚ. 18,73.] [Spr. (II) 1239.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1239) [KATHĀS. 44,58.](https://sanskrit-lexicon-scans.github.io/kss/index.html?44,58) [48,73.](https://sanskrit-lexicon-scans.github.io/kss/index.html?48,73) [MĀRK. P. 17,8.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?17,8) *dṛṅmanovāgbhiḥ* 14. *dorbhyāṃ brahmavareṇa ca* pluming oneself on, presuming on
+[BHĀG. P. 3,17,19.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,17,19) *vīryaśauryaśriyā*
+[11,6,29.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?11,6,29) *akṣavadhoddhata*
+[RAGH. 12,63.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?12,63) *dhīroddhata* (d. i. *dhīra* and at the same time *uddhata*)
+[BHAR. NĀṬYAŚ. 34,4. 5.] [DAŚAR. 2,2. 5.] [SĀH. D. 65.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?65) *uddhataṃ vākyam*
+[Spr. (II) 5248.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5248) [5903.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5903) *veṣa*
+[5617.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5617) *dhīroddhatā gatiḥ*
+[UTTARAR. 111,18 (151,2).] *anuddhata* not proud, modest, unassuming
+[KĀM. NĪTIS. 18,33.] *samṛddhibhiḥ*
+[Spr. (II) 4556.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4556)
+[VARĀH. BṚH. S. 75,7.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?75,7) *˚manas*
+[R. 2,6,22.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,6,22) *veṣa*
+[SUŚR. 1,30,2.] *uddhatatva* _n._ arrogant nature (presumption Comm.)
+[MAITRYUP. 3,5.]
+  <sub>attested</sub>
+
+**4f)** — f) strotzend —, voll von (instr. oder im comp. vorangehend): *krodhaviṣoddhata* [MBH. 4,753.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.753) *madoddhata* [R. 4,9,10](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,9,10) (*maho˚* gedr.). [KUMĀRAS. 3,31.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?3,31) [Spr. (II) 4671.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4671) [PAÑCAT. 224,8.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?224,8) [254,8.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?254,8) *dhanamadoddhata* [KATHĀS. 18,129.](https://sanskrit-lexicon-scans.github.io/kss/index.html?18,129) *yauvanamadoddhata* [277.](https://sanskrit-lexicon-scans.github.io/kss/index.html?18,277) *baloddhata* [Spr. (II) 815.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?815)
+
+- **RU:** — f) переполненный, полный (instr. или предшествующим в comp.): *krodhaviṣoddhata* [MBH. 4,753.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.753) *madoddhata* [R. 4,9,10](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,9,10) (*maho˚* gedr.). [KUMĀRAS. 3,31.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?3,31) [Spr. (II) 4671.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4671) [PAÑCAT. 224,8.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?224,8) [254,8.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?254,8) *dhanamadoddhata* [KATHĀS. 18,129.](https://sanskrit-lexicon-scans.github.io/kss/index.html?18,129) *yauvanamadoddhata* [277.](https://sanskrit-lexicon-scans.github.io/kss/index.html?18,277) *baloddhata* [Spr. (II) 815.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?815)
+- **EN:** — f) bursting with —, full of (instr., or preceding in the comp.): *krodhaviṣoddhata*
+[MBH. 4,753.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.753) *madoddhata*
+[R. 4,9,10](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,9,10) (*maho˚* gedr.).
+[KUMĀRAS. 3,31.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?3,31)
+[Spr. (II) 4671.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4671)
+[PAÑCAT. 224,8.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?224,8) [254,8.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?254,8) *dhanamadoddhata*
+[KATHĀS. 18,129.](https://sanskrit-lexicon-scans.github.io/kss/index.html?18,129) *yauvanamadoddhata*
+[277.](https://sanskrit-lexicon-scans.github.io/kss/index.html?18,277) *baloddhata*
+[Spr. (II) 815.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?815)
+  <sub>attested</sub>
+
+**4g)** — g) in Bewegung versetzt, erregt (die v. l. oft richtiger *uddhuta):* das Meer [MBH. 1,5469.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5469) [6,1644.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.1644) *mahāmeghaḥ śvasanena* [R. 6,108,1.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,108,1) *˚saṭa* [RAGH. 9,60.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?9,60) [ṚT. 2,8.] *vātoddhatāmbudhara* [VARĀH. BṚH. S. 19,20.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?19,20) *veṇavo 'niloddhatāḥ* [AK. 2,4,5,27.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?2,4,5,27) [PAÑCAT. 21,2.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?21,2) *kṛṣṇabāṇāgniruddhato (uddhūto* die neuere Ausg.) *vivṛddhiṃ paramāṃ gataḥ* [HARIV. 10575.](https://sanskrit-lexicon-scans.github.io/hariv?10575) *vātoddhato vahniḥ* [VARĀH. BṚH. S. 19,7.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?19,7) so v. a. zum Vorschein gekommen: *riṣṭāni* [SUŚR. 1,102,18.]
+
+- **RU:** — g) приведённый в движение, взволнованный (v. l. чаще правильнее *uddhuta):* море [MBH. 1,5469.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5469) [6,1644.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.1644) *mahāmeghaḥ śvasanena* [R. 6,108,1.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,108,1) *˚saṭa* [RAGH. 9,60.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?9,60) [ṚT. 2,8.] *vātoddhatāmbudhara* [VARĀH. BṚH. S. 19,20.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?19,20) *veṇavo 'niloddhatāḥ* [AK. 2,4,5,27.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?2,4,5,27) [PAÑCAT. 21,2.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?21,2) *kṛṣṇabāṇāgniruddhato (uddhūto* новейшее Ausg.) *vivṛddhiṃ paramāṃ gataḥ* [HARIV. 10575.](https://sanskrit-lexicon-scans.github.io/hariv?10575) *vātoddhato vahniḥ* [VARĀH. BṚH. S. 19,7.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?19,7) так v. a. появившийся на свет: *riṣṭāni* [SUŚR. 1,102,18.]
+- **EN:** — g) set in motion, agitated (the
+v. l., often more correctly *uddhuta):*; the sea
+[MBH. 1,5469.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5469) [6,1644.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.1644) *mahāmeghaḥ śvasanena*
+[R. 6,108,1.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,108,1) *˚saṭa*
+[RAGH. 9,60.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?9,60)
+[ṚT. 2,8.] *vātoddhatāmbudhara*
+[VARĀH. BṚH. S. 19,20.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?19,20) *veṇavo 'niloddhatāḥ*
+[AK. 2,4,5,27.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?2,4,5,27)
+[PAÑCAT. 21,2.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?21,2) *kṛṣṇabāṇāgniruddhato (uddhūto* the later Ausg.) *vivṛddhiṃ paramāṃ gataḥ*
+[HARIV. 10575.](https://sanskrit-lexicon-scans.github.io/hariv?10575) *vātoddhato vahniḥ*
+[VARĀH. BṚH. S. 19,7.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?19,7) thus v. a. come into view, appeared: *riṣṭāni*
+[SUŚR. 1,102,18.]
+  <sub>attested</sub>
+
+**4h)** — h) gehemmt, gehindert (= *atyantaṃ hataḥ* Comm.) [R. 2,45,30.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,45,30)
+
+- **RU:** — h) сдержанный, задержанный (= *atyantaṃ hataḥ* Comm.) [R. 2,45,30.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,45,30)
+- **EN:** — h) checked, hindered (= *atyantaṃ hataḥ* Comm.)
+[R. 2,45,30.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,45,30)
+  <sub>attested</sub>
+
+**4i)** — i) _m._ N. pr. eines Esels [PAÑCAT. 247,25.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?247,25)
+
+- **RU:** — i) _m._ N. pr. осла [PAÑCAT. 247,25.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?247,25)
+- **EN:** — i) _m._ N. pr. of a donkey
+[PAÑCAT. 247,25.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?247,25)
+  <sub>attested</sub>
+
+**5)** — Vgl. *udgha, udghana, udghāta* fg., *uddhati, madoddhata, rathoddhatā, siṃhoddhatā* .
+
+- **RU:** — Vgl. *udgha, udghana, udghāta* fg., *uddhati, madoddhata, rathoddhatā, siṃhoddhatā* .
+- **EN:** — Vgl. *udgha, udghana, udghāta* fg., *uddhati, madoddhata, rathoddhatā, siṃhoddhatā*.
+  <sub>attested</sub>

@@ -1,6 +1,6 @@
 # Sample — root → Russian (showcase)
 
-<p align="right"><sub>Created: 01-07-2026 · Last updated: 01-07-2026</sub></p>
+_Created: 01-07-2026 · Last updated: 01-07-2026_
 
 Excerpt of the full `root_glossary` (regenerable; see [README.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/glossary/README.md)). Each root aggregates every attested form and prefixed verb-lemma across the 1.09M-token Sa→Ru corpus.
 
@@ -214,4 +214,4 @@ Lemmas rolled up: `dA, AdA, pradA, upAdA, samAdA, paridA, sampradA, upadA, parAd
 - даровал · n=15
 - вручаю · n=15
 
-<p align="right"><sub>Dr. Mārcis Gasūns</sub></p>
+_Dr. Mārcis Gasūns_
