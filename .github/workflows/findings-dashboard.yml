@@ -1,0 +1,53 @@
+# Monthly FINDINGS-dashboard data refresh (registry meta + repo-internal metrics).
+# Platform liveness probes deliberately do NOT run here — several target hosts
+# block GitHub Actions datacenter IPs (Uprava FINDINGS §1); those run monthly
+# from the residential machine via findings_dashboard/monthly_refresh.py.
+name: findings-dashboard
+
+on:
+  schedule:
+    - cron: "17 6 3 * *"   # 3rd of each month, 06:17 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: master
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - name: Build data + timeseries snapshot
+        run: python findings_dashboard/build_findings_data.py
+
+      - name: Commit data to master
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add findings_dashboard/data.json findings_dashboard/timeseries.json
+          git diff --cached --quiet || git commit -m "chore(findings-dashboard): monthly data refresh [skip ci]"
+          git push
+
+      - uses: actions/checkout@v7
+        with:
+          ref: gh-pages
+          path: pages
+
+      - name: Publish to gh-pages/findings/
+        run: |
+          mkdir -p pages/findings
+          cp findings_dashboard/index.html findings_dashboard/data.json findings_dashboard/timeseries.json pages/findings/
+          [ -f findings_dashboard/platform_status.json ] && cp findings_dashboard/platform_status.json pages/findings/ || true
+          cd pages
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add findings
+          git diff --cached --quiet || git commit -m "chore(findings-dashboard): publish monthly refresh"
+          git push

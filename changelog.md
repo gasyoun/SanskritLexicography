@@ -9,6 +9,24 @@ then **cut a new version every time the changelog is updated** (promote
 
 ## [Unreleased]
 
+## [0.0.40] - 2026-07-02
+
+### Added — FINDINGS dashboard (recurring visualization of the registry)
+- New [`findings_dashboard/`](https://github.com/gasyoun/SanskritLexicography/tree/master/findings_dashboard):
+  a single-file dashboard (vanilla JS + inline SVG, no build step) live at
+  <https://gasyoun.github.io/SanskritLexicography/findings/> — importance × section matrix,
+  staleness flags (> 180 days, 🔴-first), monthly time series for the re-measurable findings
+  (§12 DCS→CDSL linkage, §13 glossary coverage, §21 citation coverage, §25 queue decay,
+  registry size), and the §41 platform-liveness board (12 platforms).
+- **Refresh = monthly, mixed:** GitHub Actions cron
+  ([`findings-dashboard.yml`](https://github.com/gasyoun/SanskritLexicography/blob/master/.github/workflows/findings-dashboard.yml),
+  3rd of month) for registry meta + metric collection; a local Task-Scheduler run
+  ([`monthly_refresh.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/findings_dashboard/monthly_refresh.py))
+  for the platform probes, which need residential egress (GHA IPs are blocked by several
+  hosts). Collectors verified against live values (81.4 / 86.6 / 83.2 / 0.82 %).
+- Scope: public SL registry only — the private Uprava infra registry is deliberately excluded.
+- Built by Fable 5 (`claude-fable-5`); page render browser-verified before publish.
+
 ## [0.0.39] - 2026-07-02
 
 ### Added — FINDINGS.md: importance labels on every finding

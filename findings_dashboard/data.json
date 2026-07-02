@@ -1,0 +1,402 @@
+{
+ "generated_at": "2026-07-02T11:50:36Z",
+ "stale_days_threshold": 180,
+ "counts": {
+  "total": 43,
+  "by_importance": {
+   "2": 28,
+   "1": 5,
+   "3": 10
+  },
+  "stale": 0
+ },
+ "findings": [
+  {
+   "n": 1,
+   "title": "Whitney accent-mobility rules are machine-encodable",
+   "section": "Grammar & morphology data",
+   "importance": 2,
+   "evidence_date": "2026-06-29",
+   "age_days": 3,
+   "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#1-whitney-accent-mobility-rules-are-machine-encodable"
+  },
+  {
+   "n": 2,
+   "title": "Homonym token-splitting has a hard morphological ceiling",
+   "section": "Grammar & morphology data",
+   "importance": 2,
+   "evidence_date": "2026-06-14",
+   "age_days": 18,
+   "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#2-homonym-token-splitting-has-a-hard-morphological-ceiling"
+  },
+  {
+   "n": 3,
+   "title": "The Warnemyr scrape union-smears homonym classes",
+   "section": "Grammar & morphology data",
+   "importance": 2,
+   "evidence_date": "2026-06-13",
+   "age_days": 19,
+   "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#3-the-warnemyr-scrape-union-smears-homonym-classes"
+  },
+  {
+   "n": 4,
+   "title": "PWG nominal grammar compresses into 335 paradigm tokens",
+   "section": "Grammar & morphology data",
+   "importance": 1,
+   "evidence_date": "2026-06-29",
+   "age_days": 3,
+   "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#4-pwg-nominal-grammar-compresses-into-335-paradigm-tokens"
+  },
+  {
+   "n": 42,
+   "title": "Whitney self-contradicts on derivative ī-stem gen.pl accent",
+   "section": "Grammar & morphology data",
+   "importance": 2,
+   "evidence_date": "2026-07-02",
+   "age_days": 0,
+   "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#42-whitney-self-contradicts-on-derivative-ī-stem-genpl-accent"
+  },
+  {
+   "n": 5,
+   "title": "The parallel corpus rarely attests prefixed-verb forms",
+   "section": "Corpus & parallel-text data",
+   "importance": 2,
+   "evidence_date": "2026-06-24",
+   "age_days": 8,
+   "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#5-the-parallel-corpus-rarely-attests-prefixed-verb-forms"
+  },
+  {
+   "n": 6,
+   "title": "No printed frequency dictionary of Sanskrit exists",
+   "section": "Corpus & parallel-text data",
+   "importance": 2,
+   "evidence_date": "2026-06-24",
+   "age_days": 8,
+   "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#6-no-printed-frequency-dictionary-of-sanskrit-exists"
+  },
+  {
+   "n": 7,
+   "title": "DCS lemma data is keyed in two transliterations",
+   "section": "Corpus & parallel-text data",
+   "importance": 3,
+   "evidence_date": "2026-06-24",
+   "age_days": 8,
+   "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#7-dcs-lemma-data-is-keyed-in-two-transliterations"
+  },
+  {
+   "n": 8,
+   "title": "Unaccented DCS cannot distinguish present class I from VI",
+   "section": "Corpus & parallel-text data",
+   "importance": 3,
+   "evidence_date": "2026-06",
+   "age_days": 17,
+   "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#8-unaccented-dcs-cannot-distinguish-present-class-i-from-vi"
+  },
+  {
+   "n": 9,
+   "title": "DCS OccId and sent_id are not unique keys",
+   "section": "Corpus & parallel-text data",
+   "importance": 3,
+   "evidence_date": "2026-06-06",
+   "age_days": 26,
+   "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#9-dcs-occid-and-sent_id-are-not-unique-keys"
+  },
+  {
+   "n": 10,
+   "title": "DCS UD tense marking conflates aorist and perfect",
+   "section": "Corpus & parallel-text data",
+   "importance": 2,
+   "evidence_date": "2026-06-06",
+   "age_days": 26,
+   "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#10-dcs-ud-tense-marking-conflates-aorist-and-perfect"
+  },
+  {
+   "n": 11,
+   "title": "DCS 2021 and 2026 vintages are not directly comparable",
+   "section": "Corpus & parallel-text data",
+   "importance": 2,
+   "evidence_date": "2026-06-06",
+   "age_days": 26,
+   "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#11-dcs-2021-and-2026-vintages-are-not-directly-comparable"
+  },
+  {
+   "n": 12,
+   "title": "A fifth of DCS lemmas have no CDSL headword",
+   "section": "Corpus & parallel-text data",
+   "importance": 2,
+   "evidence_date": "2026-06-11",
+   "age_days": 21,
+   "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#12-a-fifth-of-dcs-lemmas-have-no-cdsl-headword"
+  },
+  {
+   "n": 13,
+   "title": "Sa-Ru glossary token coverage plateaus at 86.6 percent",
+   "section": "Corpus & parallel-text data",
+   "importance": 1,
+   "evidence_date": "2026-07-01",
+   "age_days": 1,
+   "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#13-sa-ru-glossary-token-coverage-plateaus-at-866-percent"
+  },
+  {
+   "n": 14,
+   "title": "Renou period-state tagging covers 770k entries in 8 dicts",
+   "section": "Corpus & parallel-text data",
+   "importance": 2,
+   "evidence_date": "2026-07-01",
+   "age_days": 1,
+   "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#14-renou-period-state-tagging-covers-770k-entries-in-8-dicts"
+  },
+  {
+   "n": 15,
+   "title": "PWG encodes secondary stems inline, not in div markup",
+   "section": "Dictionary structure & markup",
+   "importance": 2,
+   "evidence_date": "2026-06-24",
+   "age_days": 8,
+   "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#15-pwg-encodes-secondary-stems-inline-not-in-div-markup"
+  },
+  {
+   "n": 16,
+   "title": "Giant verb roots sit at non-zero homonym indexes",
+   "section": "Dictionary structure & markup",
+   "importance": 3,
+   "evidence_date": "2026-06-24",
+   "age_days": 8,
+   "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#16-giant-verb-roots-sit-at-non-zero-homonym-indexes"
+  },
+  {
+   "n": 17,
+   "title": "PWG orders senses genetically, not historically",
+   "section": "Dictionary structure & markup",
+   "importance": 3,
+   "evidence_date": "2026-06-24",
+   "age_days": 8,
+   "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#17-pwg-orders-senses-genetically-not-historically"
+  },
+  {
+   "n": 18,
+   "title": "Vedic-citation density separates the dictionary traditions",
+   "section": "Dictionary structure & markup",
+   "importance": 2,
+   "evidence_date": "2026-06-24",
+   "age_days": 8,
+   "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#18-vedic-citation-density-separates-the-dictionary-traditions"
+  },
+  {
+   "n": 19,
+   "title": "SKD and VCP carry essentially zero Western markup",
+   "section": "Dictionary structure & markup",
+   "importance": 3,
+   "evidence_date": "2026-06",
+   "age_days": 17,
+   "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#19-skd-and-vcp-carry-essentially-zero-western-markup"
+  },
+  {
+   "n": 20,
+   "title": "The ls source map recognises 72.4 percent of PWG citations",
+   "section": "Dictionary structure & markup",
+   "importance": 2,
+   "evidence_date": "2026-06-24",
+   "age_days": 8,
+   "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#20-the-ls-source-map-recognises-724-percent-of-pwg-citations"
+  },
+  {
+   "n": 21,
+   "title": "PWG citation occurrences track distinct references",
+   "section": "Dictionary structure & markup",
+   "importance": 1,
+   "evidence_date": "2026-07-02",
+   "age_days": 0,
+   "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#21-pwg-citation-occurrences-track-distinct-references"
+  },
+  {
+   "n": 22,
+   "title": "MW has no sense-level div markup",
+   "section": "Dictionary structure & markup",
+   "importance": 2,
+   "evidence_date": "2026-06-26",
+   "age_days": 6,
+   "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#22-mw-has-no-sense-level-div-markup"
+  },
+  {
+   "n": 23,
+   "title": "Apte is three dictionaries; keys differ stem vs nominative",
+   "section": "Dictionary structure & markup",
+   "importance": 3,
+   "evidence_date": "2026-06",
+   "age_days": 17,
+   "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#23-apte-is-three-dictionaries-keys-differ-stem-vs-nominative"
+  },
+  {
+   "n": 24,
+   "title": "About 9 percent of typo corrections are collisions",
+   "section": "Dictionary structure & markup",
+   "importance": 3,
+   "evidence_date": "2026-07",
+   "age_days": -13,
+   "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#24-about-9-percent-of-typo-corrections-are-collisions"
+  },
+  {
+   "n": 25,
+   "title": "A verified correction queue decays against live csl-orig",
+   "section": "Dictionary structure & markup",
+   "importance": 2,
+   "evidence_date": "2026-07",
+   "age_days": -13,
+   "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#25-a-verified-correction-queue-decays-against-live-csl-orig"
+  },
+  {
+   "n": 26,
+   "title": "Citation density is register-bound, not comparable raw",
+   "section": "Dictionary structure & markup",
+   "importance": 2,
+   "evidence_date": "2026-06-13",
+   "age_days": 19,
+   "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#26-citation-density-is-register-bound-not-comparable-raw"
+  },
+  {
+   "n": 27,
+   "title": "Sense granularity is a family trait, not a diachronic trend",
+   "section": "Dictionary structure & markup",
+   "importance": 2,
+   "evidence_date": "2026-06-15",
+   "age_days": 17,
+   "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#27-sense-granularity-is-a-family-trait-not-a-diachronic-trend"
+  },
+  {
+   "n": 28,
+   "title": "MW inherited the PWG apparatus skeleton, not its prose",
+   "section": "Dictionary structure & markup",
+   "importance": 2,
+   "evidence_date": "2026-06-03",
+   "age_days": 29,
+   "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#28-mw-inherited-the-pwg-apparatus-skeleton-not-its-prose"
+  },
+  {
+   "n": 29,
+   "title": "PWG and MW share 94,753 headwords in the union index",
+   "section": "Dictionary structure & markup",
+   "importance": 2,
+   "evidence_date": "2026-06-26",
+   "age_days": 6,
+   "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#29-pwg-and-mw-share-94753-headwords-in-the-union-index"
+  },
+  {
+   "n": 30,
+   "title": "Body-text headword mining is a dead end (38.6 percent precision)",
+   "section": "Dictionary structure & markup",
+   "importance": 3,
+   "evidence_date": "2026-06-15",
+   "age_days": 17,
+   "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#30-body-text-headword-mining-is-a-dead-end-386-percent-precision"
+  },
+  {
+   "n": 31,
+   "title": "Detector precision stratifies by digitization quality",
+   "section": "Dictionary structure & markup",
+   "importance": 2,
+   "evidence_date": "2026-06-24",
+   "age_days": 8,
+   "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#31-detector-precision-stratifies-by-digitization-quality"
+  },
+  {
+   "n": 32,
+   "title": "Correction events concentrate in sense text",
+   "section": "Dictionary structure & markup",
+   "importance": 1,
+   "evidence_date": "2026-06-17",
+   "age_days": 15,
+   "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#32-correction-events-concentrate-in-sense-text"
+  },
+  {
+   "n": 33,
+   "title": "Indigenous dictionaries agree on derivation; Wilson is the outlier",
+   "section": "Etymology & derivation",
+   "importance": 2,
+   "evidence_date": "2026-06-26",
+   "age_days": 6,
+   "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#33-indigenous-dictionaries-agree-on-derivation-wilson-is-the-outlier"
+  },
+  {
+   "n": 34,
+   "title": "The E abbreviation tag is polysemous across dicts",
+   "section": "Etymology & derivation",
+   "importance": 2,
+   "evidence_date": "2026-06-26",
+   "age_days": 6,
+   "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#34-the-e-abbreviation-tag-is-polysemous-across-dicts"
+  },
+  {
+   "n": 35,
+   "title": "Root-recovery tiers err on root form, not identity",
+   "section": "Etymology & derivation",
+   "importance": 2,
+   "evidence_date": "2026-06-26",
+   "age_days": 6,
+   "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#35-root-recovery-tiers-err-on-root-form-not-identity"
+  },
+  {
+   "n": 36,
+   "title": "IAST Unicode collides and normalises lossily",
+   "section": "Encoding & normalization",
+   "importance": 3,
+   "evidence_date": "2026-06",
+   "age_days": 17,
+   "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#36-iast-unicode-collides-and-normalises-lossily"
+  },
+  {
+   "n": 37,
+   "title": "BOM state is inconsistent across exports",
+   "section": "Encoding & normalization",
+   "importance": 2,
+   "evidence_date": "2026-06",
+   "age_days": 17,
+   "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#37-bom-state-is-inconsistent-across-exports"
+  },
+  {
+   "n": 38,
+   "title": "Injected BOMs crash the hw record parser",
+   "section": "Encoding & normalization",
+   "importance": 2,
+   "evidence_date": "2026-06-27",
+   "age_days": 5,
+   "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#38-injected-boms-crash-the-hw-record-parser"
+  },
+  {
+   "n": 39,
+   "title": "devanagari_to_slp1 mis-routes retroflex la",
+   "section": "Encoding & normalization",
+   "importance": 1,
+   "evidence_date": "2026-06",
+   "age_days": 17,
+   "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#39-devanagari_to_slp1-mis-routes-retroflex-la"
+  },
+  {
+   "n": 40,
+   "title": "Gloss-language spelling drift tracks reform type, not age",
+   "section": "Encoding & normalization",
+   "importance": 2,
+   "evidence_date": "2026-06-26",
+   "age_days": 6,
+   "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#40-gloss-language-spelling-drift-tracks-reform-type-not-age"
+  },
+  {
+   "n": 41,
+   "title": "The Sanskrit dictionary-platform landscape, probed live",
+   "section": "External platforms & services",
+   "importance": 2,
+   "evidence_date": "2026-07-02",
+   "age_days": 0,
+   "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#41-the-sanskrit-dictionary-platform-landscape-probed-live"
+  },
+  {
+   "n": 43,
+   "title": "SKD/VCP sense/citation fusion is a record-type effect, not a dictionary-level one",
+   "section": "External platforms & services",
+   "importance": 2,
+   "evidence_date": "2026-07-02",
+   "age_days": 0,
+   "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#43-skdvcp-sensecitation-fusion-is-a-record-type-effect-not-a-dictionary-level-one"
+  }
+ ]
+}

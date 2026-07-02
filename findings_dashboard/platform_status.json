@@ -1,0 +1,96 @@
+{
+ "generated_at": "2026-07-02T11:51:06Z",
+ "probe_host": "residential (local machine)",
+ "results": [
+  {
+   "name": "michaelmeyer.fr (41 dicts)",
+   "url": "https://michaelmeyer.fr/sanskrit",
+   "verdict": "ok",
+   "http": 200,
+   "final_url": "https://michaelmeyer.fr/sanskrit",
+   "ms": 1610
+  },
+  {
+   "name": "CDSL simple search",
+   "url": "https://www.sanskrit-lexicon.uni-koeln.de/simple/",
+   "verdict": "ok",
+   "http": 200,
+   "final_url": "https://www.sanskrit-lexicon.uni-koeln.de/simple/",
+   "ms": 1532
+  },
+  {
+   "name": "CDSL home",
+   "url": "https://www.sanskrit-lexicon.uni-koeln.de/",
+   "verdict": "ok",
+   "http": 200,
+   "final_url": "https://www.sanskrit-lexicon.uni-koeln.de/",
+   "ms": 693
+  },
+  {
+   "name": "Heritage (Inria)",
+   "url": "https://sanskrit.inria.fr/DICO/index.en.html",
+   "verdict": "ok",
+   "http": 200,
+   "final_url": "https://sanskrit.inria.fr/DICO/index.en.html",
+   "ms": 1268
+  },
+  {
+   "name": "Heritage mirror (UoHyd)",
+   "url": "https://sanskrit.uohyd.ac.in/scl/",
+   "verdict": "ok",
+   "http": 200,
+   "final_url": "https://sanskrit.uohyd.ac.in/scl/",
+   "ms": 1556
+  },
+  {
+   "name": "DCS (plain HTTP; cert broken)",
+   "url": "http://www.sanskrit-linguistics.org/dcs/",
+   "verdict": "ok",
+   "http": 200,
+   "final_url": "http://www.sanskrit-linguistics.org/dcs/",
+   "ms": 935
+  },
+  {
+   "name": "VedaWeb (Tekst)",
+   "url": "https://vedaweb.uni-koeln.de/",
+   "verdict": "ok",
+   "http": 200,
+   "final_url": "https://vedaweb.uni-koeln.de/",
+   "ms": 907
+  },
+  {
+   "name": "learnsanskrit.cc",
+   "url": "https://learnsanskrit.cc/",
+   "verdict": "tls-error",
+   "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)"
+  },
+  {
+   "name": "spokensanskrit.org (301 expected)",
+   "url": "https://spokensanskrit.org/",
+   "verdict": "tls-error",
+   "error": "[SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1081)"
+  },
+  {
+   "name": "learnsanskrit.org/dictionary (404 expected)",
+   "url": "https://learnsanskrit.org/dictionary",
+   "verdict": "http-404",
+   "http": 404,
+   "ms": 1218
+  },
+  {
+   "name": "Ambuda dictionaries",
+   "url": "https://ambuda.org/tools/dictionaries",
+   "verdict": "ok",
+   "http": 200,
+   "final_url": "https://ambuda.org/tools/dictionaries/",
+   "ms": 2377
+  },
+  {
+   "name": "sanskritdictionary.com",
+   "url": "https://sanskritdictionary.com/",
+   "verdict": "http-403",
+   "http": 403,
+   "ms": 678
+  }
+ ]
+}
