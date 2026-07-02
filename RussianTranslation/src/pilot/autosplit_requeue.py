@@ -43,7 +43,16 @@ import pwg_mask                                            # noqa: E402
 from safe_filename import safe_name                        # noqa: E402
 
 LS_BUDGET = int(os.environ.get('AUTOSPLIT_LS_BUDGET', '18'))   # max <ls> per fragment (tier 2)
-MANIFEST = os.path.join(HERE, 'output', 'autosplit_manifest.json')
+MANIFEST = os.path.join(HERE, 'output', 'autosplit_manifest.json')   # legacy shared path (pre per-root)
+
+
+def manifest_path(lang, root):
+    """Per-root+lang manifest. The old single shared autosplit_manifest.json was a race:
+    two concurrent sessions running `gen` for different roots overwrote each other's
+    manifest, so the later `merge` silently used the WRONG fragment map — every fragment
+    key missed and the cards were 'skipped' with no hint why (branch/account contention
+    is a documented reality in this repo)."""
+    return os.path.join(HERE, 'output', 'autosplit_manifest_%s_%s.json' % (lang, safe_name(root)))
 
 # A (sub)sense starts at a line like "1)", "— 2)", "<div n="1"> 3)", "a)", "— b)", "α)".
 _SENSE = re.compile(r'^(?:<div[^>]*>)?\s*(?:—\s*)?(?:\d+|[a-zA-Zα-ωΑ-Ω])\s*[\)〉]')
@@ -122,7 +131,8 @@ def cmd_test(root, keys):
 
 
 def cmd_gen(root, lang, keys):
-    os.makedirs(os.path.dirname(MANIFEST), exist_ok=True)
+    mpath = manifest_path(lang, root)
+    os.makedirs(os.path.dirname(mpath), exist_ok=True)
     manifest, fragkeys = {}, []
     for k in keys:
         rp, pp = input_paths(k)
@@ -136,7 +146,7 @@ def cmd_gen(root, lang, keys):
             manifest[fk] = {'orig': k, 's': si, 'p': pi}
             fragkeys.append(fk)
     json.dump({'root': root, 'lang': lang, 'frags': manifest},
-              open(MANIFEST, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
+              open(mpath, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
     out = os.path.join(HERE, 'run_pilot_wf.%s_%s_autosplit.js' % (lang, safe_name(root)))
     # --no-grammar: supplement fragments carry an empty portrait ([]) that nominal grammar
     # lookup can't key on; the fragment header already carries prefix/root context.
@@ -145,13 +155,21 @@ def cmd_gen(root, lang, keys):
                     '--keys=' + ','.join(fragkeys), '--budget=1', '--out=' + out], check=True)
     data = open(out, 'rb').read().replace(b'\r\n', b'\n').replace(b'\r', b'\n')  # LF for Workflow
     open(out, 'wb').write(data)
-    print('\n%d fragment(s) from %d card(s); manifest %s' % (len(fragkeys), len(keys), MANIFEST))
+    print('\n%d fragment(s) from %d card(s); manifest %s' % (len(fragkeys), len(keys), mpath))
     print('RUN via Workflow tool: %s' % out)
 
 
 def cmd_merge(root, lang, task_file):
     field = 'russian' if lang == 'ru' else 'english'
-    man = json.load(open(MANIFEST, encoding='utf-8'))['frags']
+    mpath = manifest_path(lang, root)
+    if not os.path.exists(mpath):
+        mpath = MANIFEST                        # legacy fallback: pre-per-root shared manifest
+        legacy = json.load(open(mpath, encoding='utf-8'))
+        if legacy.get('root') not in (root, safe_name(root)):
+            sys.exit('MANIFEST MISMATCH: %s was generated for root %r, not %r — regenerate '
+                     'with `gen` (the shared legacy manifest is a concurrency race; per-root '
+                     'manifests fix this)' % (mpath, legacy.get('root'), root))
+    man = json.load(open(mpath, encoding='utf-8'))['frags']
     d = json.load(open(task_file, encoding='utf-8'))
     res = d.get('result') or d
     if isinstance(res, str):
@@ -195,7 +213,15 @@ def cmd_merge(root, lang, task_file):
             merged.update({kk: vv for kk, vv in extra.items() if vv is not None})
             senses.append(merged)
         if not senses:
-            skipped.append(orig); continue     # nothing at all resolved -> truly skip
+            # nothing at all resolved — but do NOT let the card exit the recovery funnel
+            # unrecorded: persist its fragment keys exactly like a partial's (previously
+            # they were only console-printed, so a fully-failed card had no
+            # machine-readable requeue trail), and keep an accounted null row in results.
+            skipped.append(orig)
+            missing_frags[orig] = [fk for si in senses_map for fk in senses_map[si].values()]
+            results.append({'key': orig, 'card': None,
+                            'error': 'autosplit-merge: 0/%d senses resolved' % len(senses_map)})
+            continue
         if missing_si:
             partial.append(orig)
             missing_frags[orig] = [fk for si in missing_si for fk in senses_map[si].values()]
@@ -203,25 +229,34 @@ def cmd_merge(root, lang, task_file):
         # COMPLETE card — a partial merge legitimately has fewer <ls> than the source.
         src = read_text(input_paths(orig)[0])
         got_ls = sum(s['german'].count('<ls') for s in senses)
-        if not missing_si and got_ls != src.count('<ls'):
+        drift = (not missing_si) and got_ls != src.count('<ls')
+        if drift:
             print('  ! %s fidelity drift: <ls> %d vs source %d' % (orig, got_ls, src.count('<ls')))
-        results.append({'key': orig, 'card': {'key1': orig, 'iast': iast,
-                                              'records': [{'h': h, 'senses': senses}]},
-                         'partial': bool(missing_si),
-                         'missing_senses': len(missing_si), 'total_senses': len(senses_map)})
+        row = {'key': orig, 'card': {'key1': orig, 'iast': iast,
+                                     'records': [{'h': h, 'senses': senses}]},
+               'partial': bool(missing_si),
+               'missing_senses': len(missing_si), 'total_senses': len(senses_map)}
+        if drift:
+            row['fidelity_drift'] = True       # kept, not dropped — but marked so audits can see it
+        results.append(row)
     tag = 'en' if lang == 'en' else 'sc'
     out = os.path.join(REPO, 'wf_output.%s.%s.autosplit.json' % (tag, root))
+    # selected_keys = the original cards this merge covers — audits reconstruct scope from
+    # it (earlier autosplit outputs carried no key list, so a dropped card was invisible).
     meta = {'root': root, 'safe_root': safe_name(root), 'lang': lang,
-            'generator': 'autosplit_requeue', 'schema_version': 'pwg_ru.workflow_meta.v1'}
+            'generator': 'autosplit_requeue', 'schema_version': 'pwg_ru.workflow_meta.v1',
+            'selected_keys': sorted(tree.keys())}
     json.dump({'meta': meta, 'results': results}, open(out, 'w', encoding='utf-8'), ensure_ascii=False)
-    print('stitched %d card(s) (%d fully complete, %d partial); skipped %d fully-empty %s -> %s'
-          % (len(results), len(results) - len(partial), len(partial), len(skipped), skipped or '', out))
-    if partial:
+    ok = [r for r in results if r.get('card')]
+    print('stitched %d card(s) (%d fully complete, %d partial); %d fully-empty kept as '
+          'accounted nulls %s -> %s'
+          % (len(ok), len(ok) - len(partial), len(partial), len(skipped), skipped or '', out))
+    if missing_frags:
         mf = os.path.join(HERE, 'output', 'autosplit_missing_%s_%s.json' % (lang, safe_name(root)))
         os.makedirs(os.path.dirname(mf), exist_ok=True)
         json.dump(missing_frags, open(mf, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
-        print('  partial cards: %s -- missing fragment keys written to %s for a follow-up requeue'
-              % (partial, mf))
+        print('  partial: %s; fully-failed: %s -- missing fragment keys written to %s '
+              'for a targeted follow-up requeue' % (partial or '-', skipped or '-', mf))
     print("then: python src/promote_final_cards.py --glob 'wf_output.%s.%s.autosplit.json' --merge"
           % (tag, root))
 
