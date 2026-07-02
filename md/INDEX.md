@@ -20,6 +20,8 @@
 - [ji](ji.md) — 217 senses, EN 184
 - [jñā](jYA.md) — 352 senses, EN 308
 - [jīv](jIv.md) — 103 senses, EN 84
+- [ka](ka.md) — 220 senses
+- [kāla](kAla.md) — 194 senses
 - [labh](laB.md) — 174 senses, EN 169
 - [mad](mad.md) — 144 senses, EN 102
 - [man](man.md) — 209 senses, EN 169
@@ -48,3 +50,4 @@
 - [ās](As.md) — 204 senses, EN 193
 - [śam](Sam.md) — 217 senses, EN 164
 - [śru](Sru.md) — 131 senses, EN 118
+- [śrī](SrI.md) — 78 senses
