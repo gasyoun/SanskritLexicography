@@ -500,6 +500,22 @@ const accept = (c, k) => {
 // multi-card-per-prompt pattern as translateBatch) and the fragments' senses are stitched into
 // one card. Returns the stitched card ONLY if every fragment came back and the whole-card
 // <ls>/{#..#} fidelity holds — never a lossy partial.
+// Per-fragment fidelity gate: a fragment counts as "resolved" only if its restored GERMAN
+// reproduces the fragment's source <ls>/{#..#} counts. The whole-card guard (countOf) anchors
+// on german {Tn} survival, so a fragment that returned a card but silently dropped a {Tn}
+// would pass the old truthy-only check yet sink the whole-card stitch — that was the brU miss
+// (13 dense fragments; one dropped a citation on the single batch attempt and was never
+// retried, so the stitch always nulled). Gating here re-queues the SPECIFIC offending fragment
+// for the group's remaining retries instead of accepting a lossy fragment.
+function fragGermanOk(card, frag, ph) {
+  let ls = 0, sk = 0
+  for (const rec of (card.records || [])) for (const s of (rec.senses || [])) {
+    const g = restore(s.german || '', ph)
+    ls += (g.match(/<ls\\b/g) || []).length
+    sk += (g.match(/\\{#/g) || []).length
+  }
+  return ls === frag.ls && sk === frag.sk
+}
 async function selfHeal(k) {
   const groups = FRAGS[k]; if (!groups || !groups.length) return null
   const senses = []
@@ -511,12 +527,12 @@ async function selfHeal(k) {
     // Retry only the fragments in this group still unresolved — one flaky fragment must not
     // re-bill the rest of the group (mirrors translateBatch's shrinking-pending pattern; also
     // fixes the brU/man live-test miss where 1 of 13/11 fragments failed under all-or-nothing).
-    for (let att = 0; att < 3 && pending.length; att++) {
+    for (let att = 0; att < 4 && pending.length; att++) {
       const blocks = pending.map(i => '\\n\\n=== CARD ' + k + '_f' + i + ' (fragment ' + (i + 1) + '/' + grp.length + ' of group ' + (gi + 1) + '/' + groups.length + ') ===\\n--- masked German (translatable only; {Tn}=masked span) ---\\n' + grp[i].skeleton).join('')
       const prompt = PREAMBLE + GRAMMAR + CONV_TR + blocks
       const res = await agent(prompt, { label: 'heal:' + k + '#g' + (gi + 1) + '[' + pending.length + ']' + (att ? '(r' + att + ')' : ''), phase: 'Translate', schema: CARDS_SCHEMA, model: '%(model)s', tools: [] })
       if (res && Array.isArray(res.cards)) {
-        pending.forEach((fi, idx) => { const c = res.cards[idx]; if (c) resolved[fi] = c })
+        pending.forEach((fi, idx) => { const c = res.cards[idx]; if (c && fragGermanOk(c, grp[fi], (gph[fi] || []))) resolved[fi] = c })
       }
       pending = pending.filter(fi => !resolved[fi])
     }
