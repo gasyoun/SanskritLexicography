@@ -52,6 +52,62 @@ copying source.
 
 ---
 
+## Deep dive 02-07-2026 — what the index missed
+
+### 1. The `datasets` repo — gold kāraka treebanks + DCS×Heritage alignment
+
+[github.com/samsaadhanii/datasets](https://github.com/samsaadhanii/datasets) —
+**not code, data** — three folders:
+
+- [`Annotated-data/`](https://github.com/samsaadhanii/datasets/tree/main/Annotated-data)
+  — ~15 human-annotated texts as word-level CSVs (WX notation): **Sundarakāṇḍa
+  (6.5 MB)**, Ṛgveda (4.2 MB), Bhagavadgītā, Kumārasambhava, Raghuvaṃśa, two MBh
+  parvans, Upaniṣads, Aṣṭāṅgahṛdaya, Līlāvatī… Columns: `anvaya_no, word,
+  sandhied_word, morph_analysis, morph_in_context, kaaraka_sambandha,
+  possible_relations, sloka refs`. This is a **gold dependency treebank with
+  disambiguated morphology** — note the morph analysis carries the **verb class
+  (gaṇa)**, e.g. `iR1{karwari;lit;…;xivAxiH}`.
+- [`dcs_sh_alignment/parallel_corpus/`](https://github.com/samsaadhanii/datasets/tree/main/dcs_sh_alignment/parallel_corpus)
+  — **130,270 DCS sentences with ground-truth segmentation** (IAST TSV, 14 MB)
+  from aligning DCS with the Sanskrit Heritage Segmenter; per-sentence graphml
+  segmentation lattices + JSON analyses on Google Drive.
+- [`dcs_sh_alignment/frequencies/`](https://github.com/samsaadhanii/datasets/tree/main/dcs_sh_alignment/frequencies)
+  — word/compound-component frequency tables **plus sandhi-transition frequency
+  tables** (`pada_trans_freq.tsv`, `comp_trans_freq.tsv`) and
+  (stem, inflection, base, derivation) tuple frequencies.
+
+⚠️ **The `datasets` repo has no LICENSE file** — rights unclear; ask upstream
+before redistributing (validation-only local use is the safe default).
+
+### 2. JSON APIs — documented, callable today
+
+[API_DOC.pdf](https://sanskrit.uohyd.ac.in/scl/API_DOC/API_DOC.pdf) documents
+CGI endpoints returning JSON, all accepting `encoding`/`outencoding`
+(WX/SLP/KH/IAST/Unicode/Itrans):
+
+| Tool | Endpoint |
+|---|---|
+| Morphological analyzer | `https://sanskrit.uohyd.ac.in/cgi-bin/scl/morph/morph.cgi` |
+| Sandhi splitter | `https://sanskrit.uohyd.ac.in/cgi-bin/scl/MT/prog/sandhi_splitter/sandhi_splitter.cgi` |
+| Sandhi joiner | `https://sanskrit.uohyd.ac.in/cgi-bin/scl/sandhi/sandhi_json.cgi` |
+| Verb generator | `https://sanskrit.uohyd.ac.in/cgi-bin/scl/skt_gen/verb/verb_gen.cgi` |
+| Noun generator | `https://sanskrit.uohyd.ac.in/cgi-bin/scl/skt_gen/noun/noun_gen.cgi` |
+| Anusaaraka MT (Sa→Hi) | `https://sanskrit.uohyd.ac.in/cgi-bin/scl/MT/anusaaraka.cgi` |
+
+So "call the live service" is not hypothetical — batch adjudication scripts can
+hit these directly (be polite: cache, throttle, identify ourselves).
+
+### 3. Data folders inside the GPL `scl` repo
+
+[`amarakosha/`](https://github.com/samsaadhanii/scl/tree/master/amarakosha),
+[`dhaatupaatha/`](https://github.com/samsaadhanii/scl/tree/master/dhaatupaatha),
+[`kosha_concordance/`](https://github.com/samsaadhanii/scl/tree/master/kosha_concordance)
+live inside the GPL-licensed source repo — the **data** there (synonym graph,
+root concordance) is what we'd diff against; GPL covers the code, but treat the
+data as GPL too until clarified with upstream.
+
+---
+
 ## The five things it actually teaches us
 
 1. **Don't build a Sanskrit morphological analyzer, sandhi splitter, or compound
