@@ -2,6 +2,11 @@
 
 _Created: 26-06-2026 · Last updated: 02-07-2026_
 
+📊 **Live dashboard:** <https://gasyoun.github.io/SanskritLexicography/findings/> —
+importance/section breakdown, staleness flags, monthly time series (§12/§13/§21/§25) and the
+§41 platform-liveness board; refreshed monthly (see
+[findings_dashboard/](https://github.com/gasyoun/SanskritLexicography/tree/master/findings_dashboard)).
+
 Non-obvious, **evidence-backed** facts about the Sanskrit-lexicon data, corpus, dictionary
 structure, encoding, and per-dict tooling — the kind of thing that is expensive to re-discover
 and easy to get wrong by assumption. Distinct from
