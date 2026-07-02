@@ -24,4 +24,10 @@ With PWG checked out as a sibling repo, the generator writes the reports into
 python src/build_citation_index.py
 ```
 
+For an unattended refresh that regenerates **and** opens an auto-merge PR to PWG,
+run [`refresh_pwg_coverage.sh`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/refresh_pwg_coverage.sh)
+(from cron / Task Scheduler on the machine that holds the data). The generator
+aborts if the data is missing, so a bad run can never overwrite the reports with
+empty output.
+
 _Dr. Mārcis Gasūns_

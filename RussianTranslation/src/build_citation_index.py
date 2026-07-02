@@ -536,8 +536,13 @@ def main():
     args = ap.parse_args()
     if args.out_dir:
         set_outdir(os.path.abspath(args.out_dir))
-    os.makedirs(OUTDIR, exist_ok=True)
     groups, total, resolved, counts = build()
+    # Safety guard for unattended/scheduled runs: never overwrite the published
+    # reports with empty output when the (git-ignored) input data is missing.
+    if total == 0:
+        sys.exit('ERROR: 0 citations found — input data (pwg_ru_translated.jsonl / '
+                 'wf_output.en.*.json) missing; refusing to write empty reports.')
+    os.makedirs(OUTDIR, exist_ok=True)
     emit(groups, total, resolved, counts)
     occ_scan, occ_html, per, occ_total, labels = occurrence_stats()
     emit_uncovered(per, occ_scan, occ_html, occ_total, labels)
