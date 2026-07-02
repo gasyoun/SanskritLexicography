@@ -417,13 +417,17 @@ def build(root, keys, rootmap, budget, lean=False, nws_gate=False,
         for k in keys:
             pl = split_plan(read_text(input_paths(k)[0]))
             if len(pl) < 2:
+                print('  selfheal: %s has no fallback (card does not split — <2 fragments)' % k)
                 continue
             fl = []
             for _si, _pi, t in pl:
                 fsk, fph, _ = pwg_mask.mask(t)
                 if pwg_mask.restore(fsk, fph) != t:
                     fl = []
-                    break                        # give up the fallback if any fragment is lossy
+                    # loud, not silent: the card will have NO heal fallback at run time,
+                    # so a batch failure on it is unrecoverable in-harness
+                    print('  selfheal: %s fallback DROPPED (fragment mask round-trip lossy)' % k)
+                    break
                 fl.append({'skeleton': fsk, 'ls': t.count('<ls'), 'sk': t.count('{#'), 'ph': fph})
             if not fl:
                 continue
@@ -495,6 +499,21 @@ const META = %(meta)s
 
 const restore = (t, ph) => (t || '').replace(/\\{T(\\d+)\\}/g, (m, n) => (ph[+n - 1] !== undefined ? ph[+n - 1] : m))
 const countOf = (card, re) => { let n = 0; for (const rec of (card.records || [])) for (const s of (rec.senses || [])) n += ((s.german || '').match(re) || []).length; return n }
+// Failure ledger: key -> last-known reason a card/fragment is unresolved. Every path that
+// nulls a card MUST leave a reason here — a bare null is indistinguishable downstream
+// between a hard agent() throw, a fidelity reject, and the model omitting the card,
+// which is exactly the ambiguity that made a week of failures undiagnosable. Surfaced
+// per-row (results[].error) and in summary.failures.
+const FAIL = {}
+const noteFail = (k, why) => { FAIL[k] = String(why).slice(0, 300) }
+// Masked-token multiset of a text: the {Tn} placeholders it carries, order-insensitive.
+// Two texts with equal token multisets restore to identical citation/markup content.
+const tokensOf = t => ((t || '').match(/\\{T\\d+\\}/g) || []).sort().join(' ')
+const cardTokens = card => { let a = []; for (const rec of (card.records || [])) for (const s of (rec.senses || [])) a = a.concat((s.german || '').match(/\\{T\\d+\\}/g) || []); return a.sort().join(' ') }
+// Index a returned cards[] by its self-declared key1 (the prompt requires key1 to echo the
+// '=== CARD <key> ===' header). Used to match responses by KEY first, position second —
+// positional-only matching silently misassigns every card after an omitted/reordered one.
+const byKey1 = cards => { const m = {}; for (const c of cards) if (c && c.key1 !== undefined && !(c.key1 in m)) m[c.key1] = c; return m }
 function restoreCard(card, k) {
   const ph = PH[k] || []
   for (const rec of (card.records || [])) for (const s of (rec.senses || [])) {
@@ -512,7 +531,11 @@ const accept = (c, k) => {
   c = restoreCard(c, k)
   // Fidelity guard: restored <ls>/{#..#} counts MUST match the source — a mismatch
   // means misalignment / dropped {Tn}. Reject -> deterministic requeue, never emit garbled.
-  if (countOf(c, /<ls\\b/g) !== INPUTS[k].ls || countOf(c, /\\{#/g) !== INPUTS[k].sk) return null
+  const ls = countOf(c, /<ls\\b/g), sk = countOf(c, /\\{#/g)
+  if (ls !== INPUTS[k].ls || sk !== INPUTS[k].sk) {
+    noteFail(k, 'fidelity-reject: <ls> ' + ls + '/' + INPUTS[k].ls + ', {# ' + sk + '/' + INPUTS[k].sk)
+    return null
+  }
   return c
 }
 
@@ -526,27 +549,53 @@ const accept = (c, k) => {
 // fragment never resolved even as a singleton.
 async function healGroup(k, idxs, grp, label) {
   const resolved = {}
+  const fkey = fi => k + '_f' + fi
+  // Accept a returned fragment only if its masked-token multiset matches the fragment's
+  // skeleton — the heal path previously accepted fragments UNCHECKED (the main path's
+  // accept() fidelity guard had no heal-side sibling), so a misaligned/mangled fragment
+  // could be stitched into a partial card with no gate downstream reading it.
+  const acceptFrag = (c, fi) => {
+    if (!c) return false
+    if (cardTokens(c) !== tokensOf(grp[fi].skeleton)) {
+      noteFail(fkey(fi), 'fragment-fidelity-reject: {Tn} multiset mismatch')
+      return false
+    }
+    resolved[fi] = c
+    return true
+  }
   let pending = idxs.slice()
   for (let att = 0; att < 3 && pending.length; att++) {
-    const blocks = pending.map(i => '\\n\\n=== CARD ' + k + '_f' + i + ' (fragment ' + (i + 1) + '/' + grp.length + ') ===\\n--- masked German (translatable only; {Tn}=masked span) ---\\n' + grp[i].skeleton).join('')
+    const blocks = pending.map(i => '\\n\\n=== CARD ' + fkey(i) + ' (fragment ' + (i + 1) + '/' + grp.length + ') ===\\n--- masked German (translatable only; {Tn}=masked span) ---\\n' + grp[i].skeleton).join('')
     const prompt = PREAMBLE + GRAMMAR + CONV_TR + blocks
     const res = await agent(prompt, { label: label + '[' + pending.length + ']' + (att ? '(r' + att + ')' : ''), phase: 'Translate', schema: CARDS_SCHEMA, model: '%(model)s', tools: [] })
     if (res && Array.isArray(res.cards)) {
-      pending.forEach((fi, idx) => { const c = res.cards[idx]; if (c) resolved[fi] = c })
+      const km = byKey1(res.cards)
+      // match by echoed key1 first; fall back to position within the pending set
+      pending.forEach((fi, idx) => { acceptFrag(km[fkey(fi)] !== undefined ? km[fkey(fi)] : res.cards[idx], fi) })
+    } else {
+      pending.forEach(fi => noteFail(fkey(fi), res ? 'malformed-response (no cards[])' : 'agent-returned-null'))
     }
     pending = pending.filter(fi => !resolved[fi])
   }
   if (pending.length > 1) {
     const mid = Math.ceil(pending.length / 2)
+    // Guard each half independently: an unguarded Promise.all rejects wholesale when one
+    // half hard-throws, discarding the OTHER half's already-resolved fragments — the same
+    // one-late-failure-wipes-earlier-work class fixed at the selfHeal and translateBatch
+    // levels (PR #38/#40), recurring inside the bisection itself.
     const [a, b] = await Promise.all([
-      healGroup(k, pending.slice(0, mid), grp, label + '/A'),
-      healGroup(k, pending.slice(mid), grp, label + '/B'),
+      healGroup(k, pending.slice(0, mid), grp, label + '/A').catch(e => { pending.slice(0, mid).forEach(fi => noteFail(fkey(fi), 'heal-hard-failure: ' + (e && e.message || e))); return null }),
+      healGroup(k, pending.slice(mid), grp, label + '/B').catch(e => { pending.slice(mid).forEach(fi => noteFail(fkey(fi), 'heal-hard-failure: ' + (e && e.message || e))); return null }),
     ])
-    if (a) Object.assign(resolved, a)
-    if (b) Object.assign(resolved, b)
+    if (a) Object.assign(resolved, a.resolved)
+    if (b) Object.assign(resolved, b.resolved)
     pending = pending.filter(fi => !resolved[fi])
   }
-  return pending.length ? null : resolved
+  // Partial credit WITHIN the group too: return what resolved plus the exact missing
+  // fragment indices — the old contract (null unless ALL fragments resolved) discarded a
+  // group's resolved siblings over one stubborn fragment, the same all-or-nothing shape
+  // PR #40 removed one level up.
+  return { resolved, missing: pending }
 }
 
 // --selfheal fallback: a card the batch could not translate is split (deterministically,
@@ -560,11 +609,16 @@ async function healGroup(k, idxs, grp, label) {
 // result (missing_groups > 0) is still returned so downstream sense-coverage gates
 // (audit_coverage.py / ru_coverage.py) can measure and flag exactly what's missing — the same
 // philosophy the pipeline already uses for partial per-root RU coverage, just applied within
-// one oversized card. Only returns null if NOTHING resolved at all.
+// one oversized card. Only returns null if NOTHING resolved at all. A partial card carries
+// partial:true + missing_fragments (exact 'gN:fM' ids) + missing_groups/total_groups so a
+// follow-up can requeue JUST the failed pieces instead of re-running the whole card.
 async function selfHeal(k) {
-  const groups = FRAGS[k]; if (!groups || !groups.length) return null
+  const groups = FRAGS[k]; if (!groups || !groups.length) { noteFail(k, 'no-selfheal-fallback (card did not split or a fragment mask was lossy)'); return null }
   const senses = []
-  let missingGroups = 0
+  const missingFragments = []   // 'g<gi+1>:f<fi>' identifiers — persisted on the card so a
+                                // targeted requeue of JUST the failed fragments is possible
+                                // from wf_output alone (the inline path previously recorded
+                                // only a count, making a follow-up a full re-run)
   for (let gi = 0; gi < groups.length; gi++) {
     const grp = groups[gi]
     const gph = (PHF[k] || [])[gi] || []
@@ -574,12 +628,14 @@ async function selfHeal(k) {
     // 45 agent calls ran, several groups plausibly succeeded, yet the card still came back with
     // ZERO senses because one later group's hard failure wiped the local `senses` array before
     // selfHeal could return anything).
-    let resolved = null
-    try { resolved = await healGroup(k, grp.map((_, i) => i), grp, 'heal:' + k + '#g' + (gi + 1)) }
-    catch (e) { resolved = null }
-    if (!resolved) { missingGroups++; continue }
+    let r = null
+    try { r = await healGroup(k, grp.map((_, i) => i), grp, 'heal:' + k + '#g' + (gi + 1)) }
+    catch (e) { r = null; noteFail(k, 'heal-group-hard-failure g' + (gi + 1) + ': ' + (e && e.message || e)) }
+    if (!r) { for (let i = 0; i < grp.length; i++) missingFragments.push('g' + (gi + 1) + ':f' + i); continue }
+    for (const fi of (r.missing || [])) missingFragments.push('g' + (gi + 1) + ':f' + fi)
     for (let i = 0; i < grp.length; i++) {
-      const card = resolved[i]
+      const card = r.resolved[i]
+      if (!card) continue
       const ph = gph[i] || []
       for (const rec of (card.records || [])) for (const s of (rec.senses || [])) {
         if (s.german !== undefined) s.german = restore(s.german, ph)
@@ -588,16 +644,22 @@ async function selfHeal(k) {
       }
     }
   }
-  if (!senses.length) return null   // nothing at all resolved
+  if (!senses.length) { if (!FAIL[k]) noteFail(k, 'selfheal-nothing-resolved'); return null }
   const stitched = { key1: k, records: [{ senses }] }
-  if (!missingGroups) {
+  if (!missingFragments.length) {
     // fidelity check only meaningful on a COMPLETE heal — a partial result legitimately has
-    // fewer citations than the source
-    if (countOf(stitched, /<ls\\b/g) !== INPUTS[k].ls || countOf(stitched, /\\{#/g) !== INPUTS[k].sk) return null
+    // fewer citations than the source. Per-fragment token checks already gated each piece;
+    // this whole-card count is the belt over those suspenders.
+    if (countOf(stitched, /<ls\\b/g) !== INPUTS[k].ls || countOf(stitched, /\\{#/g) !== INPUTS[k].sk) {
+      noteFail(k, 'stitched-fidelity-reject: complete heal, but restored <ls>/{# counts drift from source')
+      return null
+    }
   } else {
     stitched.partial = true
-    stitched.missing_groups = missingGroups
+    stitched.missing_fragments = missingFragments
+    stitched.missing_groups = new Set(missingFragments.map(x => x.split(':')[0])).size
     stitched.total_groups = groups.length
+    log('heal:' + k + ' partial — ' + missingFragments.length + ' fragment(s) missing (' + missingFragments.join(', ') + ')')
   }
   return stitched
 }
@@ -620,15 +682,30 @@ async function resolveGroup(pending, label) {
     const prompt = PREAMBLE + GRAMMAR + CONV_TR + nws + cur.map(cardBlock).join('')
     const res = await agent(prompt, { label: label + '[' + cur.length + ']' + (attempt ? '(retry)' : ''), phase: 'Translate', schema: CARDS_SCHEMA, model: '%(model)s', tools: [] })
     if (res && Array.isArray(res.cards)) {
-      cur.forEach((k, i) => { const c = accept(res.cards[i], k); if (c) resolved[k] = c })
+      // Match responses by their echoed key1 FIRST, position second. Positional-only
+      // matching shifts every card after an omitted/reordered one onto the wrong key;
+      // accept()'s count guard catches MOST such shifts, but two cards with equal
+      // <ls>/{# counts would swap silently — content under the wrong headword.
+      const km = byKey1(res.cards)
+      cur.forEach((k, i) => {
+        const cand = km[k] !== undefined ? km[k] : res.cards[i]
+        if (cand === undefined || cand === null) { noteFail(k, 'missing-from-response'); return }
+        const c = accept(cand, k)
+        if (c) resolved[k] = c
+      })
+    } else {
+      cur.forEach(k => noteFail(k, res ? 'malformed-response (no cards[])' : 'agent-returned-null'))
     }
     cur = cur.filter(k => !resolved[k])
   }
   if (BINARY_SPLIT && cur.length > 1) {
     const mid = Math.ceil(cur.length / 2)
+    // Each half guarded independently — an unguarded Promise.all rejects wholesale on one
+    // half's hard throw and discards the other half's resolved cards (see healGroup).
+    const empty = h => ({ resolved: {}, pending: h })
     const [a, b] = await Promise.all([
-      resolveGroup(cur.slice(0, mid), label + '/A'),
-      resolveGroup(cur.slice(mid), label + '/B'),
+      resolveGroup(cur.slice(0, mid), label + '/A').catch(e => { cur.slice(0, mid).forEach(k => noteFail(k, 'batch-hard-failure: ' + (e && e.message || e))); return empty(cur.slice(0, mid)) }),
+      resolveGroup(cur.slice(mid), label + '/B').catch(e => { cur.slice(mid).forEach(k => noteFail(k, 'batch-hard-failure: ' + (e && e.message || e))); return empty(cur.slice(mid)) }),
     ])
     Object.assign(resolved, a.resolved, b.resolved)
     cur = cur.filter(k => !resolved[k])
@@ -644,30 +721,69 @@ async function translateBatch(batch, bi) {
   // live: a huge single-card nominal batch hard-failed the main attempt and the heal path,
   // with its precomputed fragment groups, never even got a chance to run). Both paths degrade
   // to "unresolved" on a hard failure — requeue-able, not fatal, and selfHeal still gets tried.
-  let resolved = {}, pending = batch.slice()
+  const resolved = {}, healed = {}
   try {
-    const r = await resolveGroup(batch, 'b' + bi)
-    resolved = r.resolved; pending = r.pending
-  } catch (e) { /* fall through to --selfheal below with the full batch still pending */ }
-  // self-healing tier: split-translate-stitch the cards the batch gave up on (no-op unless
-  // --selfheal populated FRAGS). Runs only for the few still-failing cards.
-  const healed = {}
-  for (const k of pending) {
-    let c = null
-    try { c = await selfHeal(k) } catch (e) { c = null }
-    if (c) { resolved[k] = c; healed[k] = 1 }
+    let pending = batch.slice()
+    try {
+      const r = await resolveGroup(batch, 'b' + bi)
+      Object.assign(resolved, r.resolved); pending = r.pending
+    } catch (e) {
+      // fall through to --selfheal below with the full batch still pending
+      log('b' + bi + ': whole-batch hard failure (' + (e && e.message || e) + ') — falling through to selfheal')
+      batch.forEach(k => noteFail(k, 'batch-hard-failure: ' + (e && e.message || e)))
+    }
+    // self-healing tier: split-translate-stitch the cards the batch gave up on (no-op unless
+    // --selfheal populated FRAGS). Runs only for the few still-failing cards.
+    for (const k of pending) {
+      let c = null
+      try { c = await selfHeal(k) } catch (e) { c = null; noteFail(k, 'selfheal-hard-failure: ' + (e && e.message || e)) }
+      if (c) { resolved[k] = c; healed[k] = 1 }
+    }
+  } catch (e) {
+    // ABSOLUTE BACKSTOP — nothing above should throw, but if it does, the batch must
+    // still return one row per input key. An uncaught throw here makes parallel() yield
+    // null for the whole batch slot, and every key in it VANISHES from the results
+    // (save_and_audit.py then drops the null slot on save — the exact silent-loss mode
+    // this harness exists to prevent). Cards resolved before the throw are kept.
+    batch.forEach(k => { if (!resolved[k] && !FAIL[k]) noteFail(k, 'batch-crash: ' + (e && e.message || e)) })
+    log('b' + bi + ': unexpected batch crash (' + (e && e.message || e) + ') — returning accounted rows')
   }
-  return batch.map(k => ({ key: k, card: resolved[k] || null, judge: null, judge_sonnet: null, escalated: !!healed[k] }))
+  return batch.map(k => {
+    const row = { key: k, card: resolved[k] || null, judge: null, judge_sonnet: null, escalated: !!healed[k] }
+    if (!row.card && FAIL[k]) row.error = FAIL[k]
+    return row
+  })
 }
 const grouped = await parallel(BATCHES.map((b, i) => () => translateBatch(b, i)))
-const out = grouped.flat()
+// TOTAL ACCOUNTING INVARIANT: every selected key appears in `results` exactly once, no
+// matter what failed above. parallel() resolves a thrown thunk to null — flat() would
+// carry that null into results (crashing the summary below and silently dropping the
+// batch's keys at save time). Synthesize accounted null rows for any such batch, then
+// backfill any key that STILL isn't present (belt over suspenders).
+const out = []
+const seen = new Set()
+grouped.forEach((rows, i) => {
+  if (Array.isArray(rows)) {
+    for (const r of rows) if (r && r.key && !seen.has(r.key)) { out.push(r); seen.add(r.key) }
+  } else {
+    log('b' + i + ': batch thunk resolved null — synthesizing accounted rows for its ' + BATCHES[i].length + ' key(s)')
+    for (const k of BATCHES[i]) if (!seen.has(k)) { out.push({ key: k, card: null, judge: null, judge_sonnet: null, escalated: false, error: FAIL[k] || 'batch-thunk-null' }); seen.add(k) }
+  }
+})
+for (const k of META.selected_keys) if (!seen.has(k)) { out.push({ key: k, card: null, judge: null, judge_sonnet: null, escalated: false, error: FAIL[k] || 'unaccounted-key (should be impossible — report this)' }); seen.add(k) }
 // Compact summary first so the orchestrator can read counts (ok/null/healed + the exact
 // null keys to requeue) WITHOUT parsing the full results blob. results are still carried
 // for save_and_audit/promote (the workflow runtime can't write files -> must be returned).
+// `failures` maps every null key to its last-known reason; `partial_keys` lists healed
+// cards that carry partial:true (usable but incomplete — see missing_fragments on the card).
 const _ok = out.filter(r => r.card).length
+const _failures = {}
+for (const r of out) if (!r.card) _failures[r.key] = r.error || FAIL[r.key] || 'unknown'
 const summary = { root: META.root, lang: META.lang, cards: out.length, ok: _ok,
                   null: out.length - _ok, healed: out.filter(r => r.escalated).length,
-                  null_keys: out.filter(r => !r.card).map(r => r.key) }
+                  null_keys: out.filter(r => !r.card).map(r => r.key),
+                  partial_keys: out.filter(r => r.card && r.card.partial).map(r => r.key),
+                  failures: _failures }
 return { meta: META, summary, results: out }
 """ % {
         'root': root, 'field': field, 'tr': json.dumps(tr, ensure_ascii=True),
