@@ -4,6 +4,15 @@ _Created: 02-07-2026 · Last updated: 02-07-2026_
 
 **This document distills the six decisions that will shape the entire roadmap. Answer these before Phase 1 begins.**
 
+> **⚠️ Triage note (02-07-2026):** the first version of this file was declared
+> "archived" by other kosha docs while **all six choice blanks were empty** —
+> no decision had ever been recorded here. The blanks below are now filled with
+> what was actually decided during the 02-07-2026 triage (see
+> [KOSHA_FOLDER_SETUP.md](https://github.com/gasyoun/SanskritLexicography/blob/master/KOSHA_FOLDER_SETUP.md)
+> for the four meta-decisions M1–M4). Two structural mismatches are flagged
+> inline: the previously "locked" audience (*Translators*) and cadence
+> (*Monthly*) were never among the options offered here.
+
 ---
 
 ## Decision 1: Primary User Audience
@@ -23,7 +32,10 @@ _Created: 02-07-2026 · Last updated: 02-07-2026_
 - **Scholar-first** → Prioritize Phases 1–2, invest heavily in Phase 4
 - **Hybrid** → All phases needed; complexity increases; timeline ~14 weeks
 
-**Your choice:** _______________
+**Your choice:** **Translators > Learners > Scholars** (02-07-2026). *Mismatch:
+"Translators" was not an offered persona — it appeared only as a parenthetical
+inside "Learner". Recorded here as the canonical answer; UI-wise this is
+closest to Hybrid with the fast path tuned for translation lookups.*
 
 ---
 
@@ -46,7 +58,9 @@ _Created: 02-07-2026 · Last updated: 02-07-2026_
 - **Extended** → Better learner experience (Apte = learner dict); slower builds
 - **Maximal** → Scholarly gold standard; overkill for most users; slower performance
 
-**Your choice:** _______________
+**Your choice:** **Maximal as ambition** (all Cologne + Russian dicts + KEWA +
+morphology + corpus, per the original locked table); **MVP scope = MW + PWG +
+AP90** (02-07-2026).
 
 ---
 
@@ -67,7 +81,10 @@ _Created: 02-07-2026 · Last updated: 02-07-2026_
 - **Nightly** → Sweet spot; users see corrections within a day; simple to implement
 - **Real-Time** → Academic standard; adds infrastructure complexity; watch out for race conditions
 
-**Your choice:** _______________
+**Your choice:** **OPEN — leaning Nightly Batch** (02-07-2026). *Mismatch: the
+previously "locked" cadence was "Monthly batch rebuild (nightly cron)" — both
+self-contradictory and never among the options above. Decide when the build
+pipeline is real.*
 
 ---
 
@@ -88,7 +105,11 @@ _Created: 02-07-2026 · Last updated: 02-07-2026_
 - **Cologne forms** → Recommended; covers 80% of learner needs; manageable index size
 - **Corpus forms** → Scholarly gold; but means form A might pull up 50 verses and user still doesn't know why; softer signal (verse-level, not per-word)
 
-**Your choice:** _______________
+**Your choice:** **Cologne forms + corpus forms via reuse** (02-07-2026, follows
+from meta-decision M3): consume the existing
+[RussianTranslation/glossary/](https://github.com/gasyoun/SanskritLexicography/tree/master/RussianTranslation/glossary)
+form→lemma layer (DCS + vidyut.kosha fallback, 86.6 % token coverage) instead
+of live Sanskrit Heritage API calls. No new morphology engine.
 
 ---
 
@@ -113,7 +134,10 @@ _Created: 02-07-2026 · Last updated: 02-07-2026_
 - **With citations** → Excellent; adds hyperlinks to corpus evidence
 - **Maximal** → Ideal; but technically complex (git blame across dict files)
 
-**Your choice:** _______________
+**Your choice:** **OPEN — "Links only" first** (02-07-2026), reusing the
+existing Cologne etymology-extraction assets (10-dict derivation extractors,
+shared affix + dhātu tables) rather than new extraction. Deeper tiers deferred
+past MVP.
 
 ---
 
@@ -136,7 +160,11 @@ _Created: 02-07-2026 · Last updated: 02-07-2026_
 - **Hybrid CDN** → Best of both; top-10k cached @ edge, rest API-backed; complexity tradeoff worth it
 - **Microservice** → Overkill unless kosha traffic scales to millions/day; cleaner separation but more ops
 
-**Your choice:** _______________
+**Your choice:** **Static Export + Single API hybrid, in kosha's own repo**
+(02-07-2026, meta-decision M4): a dedicated repo with its own GitHub Pages for
+the static cache tier, plus samskrtam.ru for the full API. *Not*
+`gasyoun.github.io/SanskritLexicography/…` — this repo's Pages already serves
+the PWG article site from `gh-pages` and one repo gets one Pages site.
 
 ---
 
@@ -144,27 +172,24 @@ _Created: 02-07-2026 · Last updated: 02-07-2026_
 
 | Decision | Chosen Option | Rationale |
 |----------|---|---|
-| 1. User Audience | | |
-| 2. Dictionary Scope | | |
-| 3. Update Cadence | | |
-| 4. Morphology Depth | | |
-| 5. Etymology Scope | | |
-| 6. Deployment Target | | |
+| 1. User Audience | Translators > Learners > Scholars | Primary consumer is the PWG→RU/EN translation workflow |
+| 2. Dictionary Scope | Maximal (ambition) / MW + PWG + AP90 (MVP) | Full coverage later; ship the classic trio first |
+| 3. Update Cadence | OPEN — leaning Nightly | "Monthly" lock was invalid (not an option, self-contradictory) |
+| 4. Morphology Depth | Cologne + corpus forms **via existing glossary** | M3 reuse-first: 86.6 % coverage already built |
+| 5. Etymology Scope | OPEN — Links-only first | Reuse Cologne etymology extractors; defer deeper tiers |
+| 6. Deployment Target | Own repo + Pages (static) + samskrtam.ru (API) | M4: this repo's Pages is taken by the article site |
 
 ---
 
 ## What Happens Next
 
-Once you fill in the six decisions above, I will generate:
-
-1. **Phase-by-phase implementation plan** (specific tasks, dependencies, file changes)
-2. **Data schema** (SQLite table definitions, JSON structure)
-3. **API contract** (OpenAPI spec with examples)
-4. **UI mockups** (Figma-style wireframes or HTML prototypes)
-5. **Testing checklist** (acceptance criteria per phase)
-6. **Timeline with milestones** (realistic estimates given your choices)
-
-**Estimated time to first decision deadline:** ~2 hours (you can skip if defaults are acceptable)
+The decisions above feed the reuse-first re-plan of Phase 1 — see the "Next
+steps" section of
+[KOSHA_FOLDER_SETUP.md](https://github.com/gasyoun/SanskritLexicography/blob/master/KOSHA_FOLDER_SETUP.md).
+The implementation plan
+([KOSHA_IMPLEMENTATION_PLAN.md](https://github.com/gasyoun/SanskritLexicography/blob/master/KOSHA_IMPLEMENTATION_PLAN.md))
+exists but predates these answers and the 02-07-2026 audit — treat its
+timelines and code sketches as drafts to be reconciled, not specs to code from.
 
 ---
 

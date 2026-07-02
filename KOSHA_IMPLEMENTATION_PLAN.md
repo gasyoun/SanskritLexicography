@@ -2,6 +2,27 @@
 
 _Created: 02-07-2026 · Last updated: 02-07-2026_
 
+> **⚠️ Triage banner (02-07-2026).** Treat this plan as a **draft to reconcile,
+> not a spec to code from** — see
+> [KOSHA_FOLDER_SETUP.md](https://github.com/gasyoun/SanskritLexicography/blob/master/KOSHA_FOLDER_SETUP.md)
+> for the audit and the four locked meta-decisions. Specific poisons in this
+> file (some fixed inline, marked; the rest flagged here):
+> - The ✅ glyphs in "Deliverables" blocks mark **aspirations, not completed
+>   work** — nothing in this plan has been built.
+> - Every `page_info.split(',')` parser is wrong for PWG (`<pc>1-0001`,
+>   hyphen) and AP90 (`<pc>0001-a`); MW `<pc>` is page,column in a
+>   single-volume work — "vol. 5, p. 32" examples are impossible.
+> - `"slp1_key": "bandh"` -style examples are IAST mislabeled as SLP1 (SLP1 is
+>   `banD`).
+> - Task 1.1.3 rebuilds the union headword index that already exists
+>   ([HeadwordLists/union/union_headwords.tsv](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/union/union_headwords.tsv), 323,426 rows).
+> - Morphology via live Sanskrit Heritage calls is superseded by the existing
+>   [RussianTranslation/glossary/](https://github.com/gasyoun/SanskritLexicography/tree/master/RussianTranslation/glossary) (86.6 % coverage).
+> - The Phase 1 acceptance "300k+ entries with page metadata" assumes 100 %
+>   `<pc>` coverage and the wrong formats — re-derive after per-dict checks.
+> - Timelines conflict across docs (5/11 vs 4/10 vs 16 weeks); person-day and
+>   budget arithmetic is broken (see KOSHA_START_HERE banner).
+
 ## Overview
 
 **Timeline:** 11 weeks  
@@ -389,7 +410,12 @@ import requests
 import json
 from functools import lru_cache
 
-HERITAGE_API = "https://sanskrit.inria.fr/api/morphoanalysis"
+# Corrected 02-07-2026: the original "https://sanskrit.inria.fr/api/morphoanalysis"
+# does not exist. The working endpoint (already integrated in
+# SamudraManthanam/web/app/services/morph_service.py) is:
+HERITAGE_API = "https://sanskrit.inria.fr/cgi-bin/SKT/sktlex.cgi"
+# NB: per meta-decision M3, prefer the local RussianTranslation/glossary/
+# form->lemma layer (86.6% coverage) over live Heritage calls entirely.
 
 @lru_cache(maxsize=10000)
 def expand_form(form_slp1: str):
@@ -927,22 +953,26 @@ Query Cologne server for available scans + URL patterns.
 Output: scan_config.json
 """
 
-COLOGNE_SCAN_BASE = "https://cologne.archive.org/dictionaries"  # TBD: confirm with Cologne
+# Corrected 02-07-2026: "cologne.archive.org" does not exist. Real scans are
+# served from sanskrit-lexicon.uni-koeln.de via csl-websanlexicon
+# serveimg/servepdf — and URL construction is already implemented in
+# RussianTranslation/src/ls_resolver.py; use it instead of this config.
+COLOGNE_SCAN_BASE = "https://www.sanskrit-lexicon.uni-koeln.de"
 
 SCAN_CONFIG = {
     'mw': {
         'name': 'Monier-Williams Sanskrit-English Dictionary',
         'edition': '1899 (2nd ed.)',
-        'volumes': 7,
+        'volumes': 1,  # corrected: MW 1899 is single-volume (was fabricated as 7)
         'scan_source': 'cologne',
-        'url_pattern': f'{COLOGNE_SCAN_BASE}/mw/vol{{volume}}/page{{page:04d}}.jpg'
+        'url_pattern': None  # resolve via ls_resolver.py; <pc> is page,column
     },
     'pwg': {
         'name': 'Böhtlingk & Roth Großes Petersburger Wörterbuch',
         'edition': '1875',
-        'volumes': 6,
+        'volumes': 7,  # corrected: PWG has 7 volumes (was 6); <pc> is vol-page with hyphen
         'scan_source': 'cologne',
-        'url_pattern': f'{COLOGNE_SCAN_BASE}/pwg/vol{{volume}}/page{{page:04d}}.jpg'
+        'url_pattern': None  # resolve via ls_resolver.py
     },
     'ap90': {
         'name': 'Apte Practical Sanskrit-English Dictionary',

@@ -2,6 +2,24 @@
 
 _Created: 02-07-2026 · Last updated: 02-07-2026_
 
+> **⚠️ Triage banner (02-07-2026).** Best doc of the set on prior art, but four
+> critical assets were missing and are now mandated by meta-decision M3
+> (reuse-first, see
+> [KOSHA_FOLDER_SETUP.md](https://github.com/gasyoun/SanskritLexicography/blob/master/KOSHA_FOLDER_SETUP.md)):
+>
+> 1. **[csl-websanlexicon](https://github.com/sanskrit-lexicon/csl-websanlexicon)** —
+>    the *production* CDSL web frontend (`getword`/`servepdf`/`serveimg`); the
+>    existing dictionary lookup service this plan would otherwise rebuild blind.
+> 2. **[csl-apidev](https://github.com/sanskrit-lexicon/csl-apidev)** — has the
+>    C-SALT "**Kosh**" API already integrated for MW (`api1/salt_*.php`,
+>    `doc/salt_*.md`) plus simple-search and word-frequency assets. A service
+>    named *kosha* must build on, not beside, the existing *Kosh* integration.
+> 3. **[RussianTranslation/src/ls_resolver.py](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/ls_resolver.py)** —
+>    scan-link resolution, in this very repo, live on the PWG article site.
+> 4. **[RussianTranslation/glossary/](https://github.com/gasyoun/SanskritLexicography/tree/master/RussianTranslation/glossary)** —
+>    form→lemma morphology (DCS + vidyut.kosha fallback, 86.6 % token
+>    coverage); use this instead of live Sanskrit Heritage API calls.
+
 ---
 
 ## Part A: Your Own Repos — What's Already Built
@@ -42,9 +60,9 @@ _Created: 02-07-2026 · Last updated: 02-07-2026_
 
 **What's here:**
 - ✅ **Union headword lists** (`HeadwordLists/`): 
-  - MW unique headwords (193,978)
-  - PWG unique headwords (106,085)
-  - Intersection/union files
+  - MW unique headwords (194,084 current in `now-2026/`; 193,978 was the 2014-era snapshot)
+  - PWG unique headwords (106,082 current; 106,085 was the 2014-era count)
+  - **The union index already exists**: [HeadwordLists/union/union_headwords.tsv](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/union/union_headwords.tsv) — 323,426 rows with `slp1/iast/n_dicts/dicts/gender`, built by [HeadwordLists/build_union.py](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/build_union.py)
   - Homonym disambiguation files
 - ✅ **Russian translation of MW** (`RussianTranslation/mw_ru.md` + output data)
   - 287,358 translated cards
@@ -200,11 +218,13 @@ _Created: 02-07-2026 · Last updated: 02-07-2026_
 
 ### Vedaweb (External)
 
-**URL:** `https://vedaweb.uni-zurich.ch/`
+**URL:** <https://vedaweb.uni-koeln.de/> *(corrected 02-07-2026 — the earlier
+"vedaweb.uni-zurich.ch" was invented; VedaWeb is a **Cologne** project)*
 
 **What it provides:**
-- ✅ Rigveda with accents (Zaliznyak system)
-- ✅ Per-word morphology (Cologne DCS)
+- ✅ Rigveda with Vedic accents *(not "Zaliznyak system" — that was a confusion
+  with the unrelated Zaliznyak grammatical-index work)*
+- ✅ Per-word morphology (annotated at **UZH**, not "Cologne DCS")
 - ✅ Hyperlinked dictionary entries (to C-SALT MW)
 
 **Reuse plan:**
@@ -216,7 +236,7 @@ _Created: 02-07-2026 · Last updated: 02-07-2026_
 
 ### Lexonomy (Lexical Database Tool)
 
-**URL:** `https://lexonomy.ds.uzh.ch/`
+**URL:** <https://www.lexonomy.eu/> *(corrected 02-07-2026 — "lexonomy.ds.uzh.ch" was invented)*
 
 **What it provides:**
 - ✅ Open-source lexical database software
@@ -273,7 +293,12 @@ _Created: 02-07-2026 · Last updated: 02-07-2026_
    }
    ```
 
-2. **`union_headwords.tsv`** — from HeadwordLists
+2. ~~**`union_headwords.tsv`** — from HeadwordLists~~ **DO NOT GENERATE — it
+   already exists**:
+   [HeadwordLists/union/union_headwords.tsv](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/union/union_headwords.tsv)
+   (323,426 rows, `slp1/iast/n_dicts/dicts/gender` — near-identical schema to
+   the sketch below). Consume it; add a frequency-band column from VisualDCS
+   if needed.
    ```
    slp1_key   iast        dict_coverage       frequency_band
    dharma     dharma      mw,pwg,ap90         common

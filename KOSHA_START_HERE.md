@@ -2,6 +2,20 @@
 
 _Created: 02-07-2026 · Last updated: 02-07-2026_
 
+> **⚠️ Triage banner (02-07-2026).** This doc predates the same-day audit. Read
+> [KOSHA_FOLDER_SETUP.md](https://github.com/gasyoun/SanskritLexicography/blob/master/KOSHA_FOLDER_SETUP.md)
+> first — it records the four locked meta-decisions (docs-to-truth; code in a
+> **dedicated repo**, not here; **reuse-first** over csl-apidev/Kosh,
+> csl-websanlexicon, `ls_resolver.py`, sanskrit-util, the morphology glossary,
+> the existing union headword index; kosha gets its **own** GitHub Pages).
+> Known defects kept below for the record: the timeline (5/11 wks) conflicts
+> with three other docs (4/10, 16 wks, "Week 6" checklists); "~39 person-days"
+> vs "~35 days" disagree internally; the "$3k–5k" budget is ~6× understated at
+> the stated rates; "333k lemmas / 347k entries / 300k+ scan_links" are
+> unsupported numbers (the real 12-dict union is 323,426 rows and already
+> exists); `pytest.ini` never existed; the kosha/ scaffold it points to was
+> deleted. Timeline and cost figures here are historical, not binding.
+
 ## Your Vision
 
 **Transform samskrtam.ru/kosha into a translator-first Sanskrit dictionary lookup service**, combining the speed of michaelmeyer.fr (~50ms) with the features of sanskritdictionary.com (encoding toggle, form lookup, multi-dict view), backed by all Cologne dictionaries + KEWA etymology + Cologne scan archives.
@@ -25,7 +39,7 @@ _Created: 02-07-2026 · Last updated: 02-07-2026_
 | **Grammar display** | Toggle: default Minimal (case/number/gender), can activate Full (paradigm + syntactic notes) |
 | **Corpus attestation** | Show: links to SamudraManthanam + statistics + inline preview (top 3 verses) |
 | **Russian dicts** | Kochergina (primary) + Knauer + Kossovich + Frish + Smirnov (skip mw_ru) |
-| **Update cadence** | Monthly batches (nightly cron rebuild) |
+| **Update cadence** | ~~Monthly batches (nightly cron rebuild)~~ — self-contradictory; cadence is OPEN, leaning nightly (see [KOSHA_DECISIONS_NEEDED.md](https://github.com/gasyoun/SanskritLexicography/blob/master/KOSHA_DECISIONS_NEEDED.md) D3) |
 | **Scholarly metadata** | Include persistent IDs (lemma URIs) + provenance (csl-orig version, correction batch date) |
 | **Scans** | Cologne server; external links first (Phase 2b) → self-hosted fallback (Phase 5) |
 
@@ -35,23 +49,23 @@ _Created: 02-07-2026 · Last updated: 02-07-2026_
 
 ### Start with These (Foundational)
 
-1. **[KOSHA_IMPLEMENTATION_PLAN.md](C:\Users\user\Documents\GitHub\SanskritLexicography\KOSHA_IMPLEMENTATION_PLAN.md)** ← **READ THIS FIRST**
+1. **[KOSHA_IMPLEMENTATION_PLAN.md](https://github.com/gasyoun/SanskritLexicography/blob/master/KOSHA_IMPLEMENTATION_PLAN.md)** ← **READ THIS FIRST**
    - Week-by-week breakdown (Weeks 1–11)
    - Specific tasks with code snippets
    - MVP = 5 weeks; Full = 11 weeks
    - Ready to assign to developer
 
-2. **[KOSHA_LOOKUP_ROADMAP.md](C:\Users\user\Documents\GitHub\SanskritLexicography\KOSHA_LOOKUP_ROADMAP.md)**
+2. **[KOSHA_LOOKUP_ROADMAP.md](https://github.com/gasyoun/SanskritLexicography/blob/master/KOSHA_LOOKUP_ROADMAP.md)**
    - Strategic overview (michaelmeyer.fr vs sanskritdictionary.com)
    - Current bottlenecks (samskrtam.ru)
    - Phase descriptions + deliverables
 
-3. **[KOSHA_TRANSLATOR_SPEC.md](C:\Users\user\Documents\GitHub\SanskritLexicography\KOSHA_TRANSLATOR_SPEC.md)**
+3. **[KOSHA_TRANSLATOR_SPEC.md](https://github.com/gasyoun/SanskritLexicography/blob/master/KOSHA_TRANSLATOR_SPEC.md)**
    - Translator workflow analysis
    - How translators use dictionaries (real-world example)
    - Phase 1–5 prioritization by translator value
 
-4. **[KOSHA_SCANS_INTEGRATION.md](C:\Users\user\Documents\GitHub\SanskritLexicography\KOSHA_SCANS_INTEGRATION.md)**
+4. **[KOSHA_SCANS_INTEGRATION.md](https://github.com/gasyoun/SanskritLexicography/blob/master/KOSHA_SCANS_INTEGRATION.md)**
    - Complete scan-linking specification
    - Page metadata in csl-orig (`<pc>` tags)
    - Cologne server integration
@@ -59,12 +73,12 @@ _Created: 02-07-2026 · Last updated: 02-07-2026_
 
 ### Reference & Technical Details
 
-5. **[KOSHA_REFERENCE_ANALYSIS.md](C:\Users\user\Documents\GitHub\SanskritLexicography\KOSHA_REFERENCE_ANALYSIS.md)**
+5. **[KOSHA_REFERENCE_ANALYSIS.md](https://github.com/gasyoun/SanskritLexicography/blob/master/KOSHA_REFERENCE_ANALYSIS.md)**
    - Feature-by-feature comparison (michaelmeyer.fr vs sanskritdictionary.com)
    - What to adopt, what to skip
    - Hybrid approach recommendation
 
-6. **[KOSHA_REUSABLE_ASSETS.md](C:\Users\user\Documents\GitHub\SanskritLexicography\KOSHA_REUSABLE_ASSETS.md)**
+6. **[KOSHA_REUSABLE_ASSETS.md](https://github.com/gasyoun/SanskritLexicography/blob/master/KOSHA_REUSABLE_ASSETS.md)**
    - Your existing repos (SamudraManthanam, SanskritLexicography, sanskrit-util)
    - External resources (Sanskrit Heritage, Vedaweb, csl-atlas)
    - Data files to generate
@@ -75,7 +89,7 @@ _Created: 02-07-2026 · Last updated: 02-07-2026_
 
 ### For You (Project Owner)
 
-- [ ] **Read [KOSHA_IMPLEMENTATION_PLAN.md](C:\Users\user\Documents\GitHub\SanskritLexicography\KOSHA_IMPLEMENTATION_PLAN.md)** (30 min)
+- [ ] **Read [KOSHA_IMPLEMENTATION_PLAN.md](https://github.com/gasyoun/SanskritLexicography/blob/master/KOSHA_IMPLEMENTATION_PLAN.md)** (30 min)
 - [ ] **Confirm Cologne scan URL patterns** (contact Cologne team)
   - Which dicts have digitized scans?
   - What's the URL format? (e.g., `https://cologne.archive.org/dicts/mw/vol5/page32.jpg`)
@@ -315,7 +329,7 @@ SanskritLexicography/
 
 ## Ready to Start?
 
-**Next action:** Assign Phase 1 to a Python engineer. They can start immediately with [KOSHA_IMPLEMENTATION_PLAN.md](C:\Users\user\Documents\GitHub\SanskritLexicography\KOSHA_IMPLEMENTATION_PLAN.md).
+**Next action:** Assign Phase 1 to a Python engineer. They can start immediately with [KOSHA_IMPLEMENTATION_PLAN.md](https://github.com/gasyoun/SanskritLexicography/blob/master/KOSHA_IMPLEMENTATION_PLAN.md).
 
 **In parallel:** You contact Cologne team for scan URLs.
 

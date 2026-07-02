@@ -2,6 +2,18 @@
 
 _Created: 02-07-2026 · Last updated: 02-07-2026_
 
+> **⚠️ Triage banner (02-07-2026).** The original version of this doc invented
+> its central data claim — the `<pc>` example and "volume, page" interpretation
+> below are now corrected against real csl-orig records. Two further points
+> supersede much of Parts II–III: **scan-link resolution is already solved** by
+> [RussianTranslation/src/ls_resolver.py](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/ls_resolver.py)
+> (port of csl-app's `ls_service.dart`, live on the PWG article site) — the
+> `ScanResolver` class sketched here duplicates it; and "does Cologne host
+> scans?" is answered: yes, via csl-websanlexicon's `serveimg`/`servepdf`
+> endpoints. The storage-size table's volume/page figures (MW "7 vols, ~8,000
+> pages") are fabricated — MW 1899 is one volume of ~1,333 pages; PWG is 7
+> volumes, not 6.
+
 ## Strategic Goal
 
 Transform kosha from a lookup tool into a **scholarly gateway to primary sources** (following michaelmeyer.fr model). Every dictionary entry shows a clickable link to the original scanned page, enabling translators and scholars to verify against the printed source.
@@ -15,32 +27,34 @@ Transform kosha from a lookup tool into a **scholarly gateway to primary sources
 **Format:** The `<pc>` tag in csl-orig XML carries page and column information:
 
 ```xml
-<L>1<pc>1,1<k1>a<k2>a<h>1<e>1
-<s>a</s> ¦ the first letter...
-<LEND>
-
-<L>523<pc>5,32<k1>bandh<k2>bandh<e>1
-<s>bandh</s> ¦ 9 P. (badhnāti, babandha, abhāṃtsīt...)
-<LEND>
+<!-- Real MW records (mws.xml) — corrected 02-07-2026; the earlier example
+     "<L>523<pc>5,32<k1>bandh" was invented (L523 is akza at <pc>3,2, and
+     MW has no volumes) -->
+<L>523<pc>3,2<k1>akza ...
+<L>142512<pc>720,1<k1>banD ...
 ```
 
-**Interpretation:**
-- `<pc>5,32` = Volume 5, Page 32
-- Some dicts use `<pc>1,1` (vol 1, page 1)
-- Some use `<pc>page,column` (page and column within page)
+**Interpretation (per-dict, verified):**
+- **MW** `<pc>720,1` = **page 720, column 1** — MW 1899 is a **single volume**;
+  there is no "vol. 5, p. 32"
+- **PWG** `<pc>1-0001` = **volume-page with a hyphen** (7 volumes)
+- **AP90** `<pc>0001-a` = **page-column-letter**
+- Any parser doing `page_info.split(',')` fails on PWG and AP90 — the format
+  must be dispatched per dictionary
 
 **Current state:**
-- ✅ All Cologne dicts in csl-orig carry `<pc>` metadata
 - ✅ Metadata is machine-readable (XML parseable)
+- ⚠️ "All Cologne dicts carry `<pc>`" is an unverified blanket claim — formats
+  differ per dict and coverage is not confirmed to be 100 %; measure per dict
 - ✅ Page numbers are stable (don't change between editions if same scan is used)
 
 ### Which Dictionaries Have Scans Available?
 
 | Dictionary | Edition | Page Metadata | Scans Available? | Source |
 |---|---|---|---|---|
-| **MW** | 1899 (2nd ed.) | ✅ `<pc>vol,page` | Need to check | Cologne server? Internet Archive? |
-| **PWG** | 1875 | ✅ `<pc>vol,page` | Need to check | Cologne server? |
-| **AP90** | 1890 | ✅ `<pc>page` | ✅ Yes (michaelmeyer.fr uses `/ap59/scans/...`) | Internet Archive? |
+| **MW** | 1899 (2nd ed.) | ✅ `<pc>page,column` (1 vol) | ✅ Yes — Cologne `serveimg`/`servepdf` (csl-websanlexicon) | Cologne server |
+| **PWG** | 1875 | ✅ `<pc>vol-page` (hyphen, 7 vols) | ✅ Yes — Cologne server (already linked by `ls_resolver.py` on the article site) | Cologne server |
+| **AP90** | 1890 | ✅ `<pc>page-col-letter` | ⚠️ Unconfirmed — michaelmeyer.fr's `/ap59/scans/` is the **1957–59 revised Apte**, a different edition; not evidence for AP90 | Need to check |
 | **GRA** | 1875 | ✅ `<pc>vol,page` | ⚠️ Unclear | Need to check |
 | **PW** | 1896 | ✅ `<pc>vol,page` | ⚠️ Unclear | Need to check |
 | **CAE** | 1891 | ✅ `<pc>page` | ⚠️ Unclear | Need to check |
