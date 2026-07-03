@@ -1,0 +1,21 @@
+{
+  "schemaVersion": "1.0",
+  "generatedBy": "RussianTranslation/research/analyze_sense_order_null.py",
+  "source": "C:\\Users\\user\\Documents\\GitHub\\csl-orig\\v02\\pwg\\pwg.txt",
+  "entries_>=2_dated_senses": 11882,
+  "sense1_is_oldest": {
+    "observed_pct": 73.5,
+    "null_pct_uniform_permutation": 52.7,
+    "ceiling_pct": 100.0,
+    "span_covered_floor_to_ceiling": 0.44
+  },
+  "kendall_tau_printed_vs_date": {
+    "observed": 0.375,
+    "null_shuffle_mean": -0.001,
+    "null_shuffle_sd": 0.0088,
+    "ceiling": 1.0,
+    "span_covered_floor_to_ceiling": 0.375,
+    "shuffles": 200
+  },
+  "interpretation": "PWG leads with the oldest sense 73.5% of the time vs a date-agnostic floor of 52.7% and a pure-sort ceiling of 100% — covering 44% of the floor→ceiling span. Printed-order/date tau is 0.375 vs a shuffle floor of -0.001 and ceiling 1.0 (38% of the span). Both confirm a REAL but PARTIAL genetic signal: well above date-agnostic chance, well below a strict chronological sort — the quantitative form of A33's 'genetic, not historical'."
+}
