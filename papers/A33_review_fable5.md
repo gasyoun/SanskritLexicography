@@ -8,7 +8,20 @@ _Created: 03-07-2026 · Last updated: 03-07-2026_
 
 ---
 
-## 1. Figure re-verification — all CONFIRMED
+> **Correction (same day, second pass).** §1 below verified the paper against the metrics
+> docs *as first committed* (the 2026-06-24 run). A parallel session's data pass
+> ([PR #103](https://github.com/gasyoun/SanskritLexicography/pull/103)) had already found
+> that the committed scripts' `)`-only sense-delimiter regex never reproduced those
+> figures as committed, fixed it (`[)〉]`), and re-ran on the current source: **every rate
+> reproduces exactly** (73.5 % / τ 0.375 / density 23.4 %) but the **entry counts moved**
+> (13,900 → 11,882 multi-sense entries; 118,528 → 113,012 cited senses; strict-chrono
+> 26.2 → 25.4 %; adjacent 76.3 → 76.8 %), and a chance floor was added (sense-1-oldest
+> 52.7 %, τ ≈ 0). The paper's PWG figures were re-synced to the reproducible values and
+> the floor calibration added in the follow-up PR; the MW column awaits a same-snapshot
+> re-run. §1's "all exact" therefore holds for the rates and the June-state docs, not the
+> current-source Ns.
+
+## 1. Figure re-verification — all CONFIRMED (against the 2026-06-24-state docs; see correction above)
 
 Against [`sense_order_metrics.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/research/sense_order_metrics.md) and [`cross_dict_metrics.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/research/cross_dict_metrics.md) (generators [`analyze_sense_order.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/research/analyze_sense_order.py), [`analyze_cross_dict.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/research/analyze_cross_dict.py)):
 
