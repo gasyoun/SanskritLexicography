@@ -2,24 +2,52 @@
 
 _Created: 03-07-2026 · Last updated: 03-07-2026_
 
-Otto von Böhtlingk's **Indische Sprüche** (2nd ed., St. Petersburg, 1870–1873,
-3 vols.) — ~7,537 Sanskrit gnomic verses / subhāṣitas, each given in Devanāgarī,
-his own German translation, a source citation to the original text (epic,
+## ⚠️ Read this first: canonical editions live elsewhere
+
+Otto von Böhtlingk published **Indische Sprüche** in two editions, and **both
+are already fully digitized, canonical, and live** in the org — this directory
+is a secondary, offline-convenience mirror of one of them, not the source of
+record:
+
+| Edition | Repo | Sayings | Live per-verse URL |
+|---|---|---:|---|
+| 1st ed. (1863–5, 3 vols.) | [`sanskrit-lexicon-scans/boesp1`](https://github.com/sanskrit-lexicon-scans/boesp1) | 5,419 | `app1/?N` — PDF source courtesy **Mārcis Gasūns** |
+| 2nd ed. (1870–73, 3 vols.) | [`sanskrit-lexicon-scans/boesp2`](https://github.com/sanskrit-lexicon-scans/boesp2) | 7,613 | `web1/boesp.html?verse=N` — digitized by Thomas Malten |
+
+Both dictionaries cite this collection internally as `Spr. N`, and **that
+citation crosswalk is already shipped**, not an open task: see
+[`sanskrit-lexicon/PWG#87`](https://github.com/sanskrit-lexicon/PWG/issues/87)
+(closed 2026-05-06). `csl-orig/v02/pwg/pwg.txt` already carries 10,366
+`<ls>`-wrapped `Spr.` citations (6,666 distinct `Spr. N` occurrences; PWK's
+`pwkvn.txt` carries 138), distinguishing 1st-ed. (`Spr. N`) from 2nd-ed.
+(`Spr. (II) N`) references, and `csl-websanlexicon`'s `basicadjust.php`
+already generates the live hrefs. **The 1st edition is the one PWG actually
+cites**, per the issue title — do not assume `Spr. N` resolves against the
+2nd-edition data below.
+
+[Uprava H143](https://github.com/gasyoun/Uprava/blob/main/handoffs/H143_pwg_pwk_indische_sprueche_crosswalk.md)
+was minted to build this crosswalk from scratch and **retracted the same day**
+once the above was found — a genuine prior-art miss (the search that led here
+never checked `funderburkjim`'s personal repos or the `sanskrit-lexicon-scans`
+org). Kept as a retraction record, not an active task.
+
+## What this directory actually is
+
+Otto von Böhtlingk's 2nd-edition **Indische Sprüche** (St. Petersburg,
+1870–1873, 3 vols.) — 7,537 Sanskrit gnomic verses / subhāṣitas (the official
+count is 7,613; see the discrepancy note below), each given in Devanāgarī, his
+own German translation, a source citation to the original text (epic,
 dramatic, or gnomic anthology), and critical-apparatus notes on variant
 readings. Public domain (Böhtlingk d. 1904).
 
-This is a **separate publication from Böhtlingk's dictionaries** (PWG, PWK) —
-not part of the Cologne XML dictionary corpus — but the two are tightly linked:
-both dictionaries cite this collection internally as an attestation source,
-abbreviated `Spr. N` (e.g. `Spr. 1249`):
-
-| Dictionary | `Spr. N` citation count |
-|---|---|
-| PWG (`csl-orig/v02/pwg/pwg.txt`) | 6,666 |
-| PWK (`csl-orig/v02/pwkvn/pwkvn.txt`) | 138 |
-
-See [`H143_pwg_pwk_indische_sprueche_crosswalk.md`](https://github.com/gasyoun/Uprava/blob/main/handoffs/H143_pwg_pwk_indische_sprueche_crosswalk.md)
-for the scoped follow-on that resolves those citations against this dataset.
+Its only real value over `boesp2`'s live site: `boesp2` serves one verse per
+page-load with no bulk export, so this JSONL is useful for offline/bulk local
+queries. It is **not more authoritative** than `boesp2` — `boesp2` comes from
+Thomas Malten's direct digitization; this JSONL comes from a Russian-team
+Excel transcription (`Subhash_Bt.xlsx`) of unclear proofing rigor, and its
+7,537 count is 76 short of `boesp2`'s verified 7,613 (likely a gap or merged
+entries in the underlying spreadsheet — not independently re-verified against
+the scans here).
 
 ## Provenance
 
